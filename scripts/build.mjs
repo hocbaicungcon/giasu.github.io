@@ -51,6 +51,13 @@ export function build(){
  fs.writeFileSync(path.join(out,'assets/posts.json'),JSON.stringify(posts.map(({html,...p})=>p)));
  for(const p of posts){const related=posts.filter(q=>q.slug!==p.slug&&q.category===p.category).slice(0,3);const content=`<main id="main" class="article-wrap wrap"><a class="back" href="../#thu-vien">← Trở về thư viện</a><div class="article-heading"><nav class="eyebrow breadcrumb" aria-label="Đường dẫn bài viết"><a href="../?category=${encodeURIComponent(p.category)}#thu-vien">${esc(p.category)}</a><span aria-hidden="true">/</span><a href="../${p.grade===undefined?'':'?grade='+p.grade}#thu-vien">${gradeLabel(p)}</a><span aria-hidden="true">/</span><a href="../?type=${encodeURIComponent(p.type)}#thu-vien">${esc(p.type)}</a></nav><h1>${esc(p.title)}</h1><p>${esc(p.description)}</p><div class="article-meta">${date(p.date)} <span>·</span> ${p.minutes} phút đọc</div><div class="tags">${p.tags.map(t=>`<a class="tag" href="../?tag=${encodeURIComponent(t)}#thu-vien">#${esc(t)}</a>`).join('')}</div></div>${imported.some(item=>item.exam.slug===p.slug&&item.exam.questions.length)?`<p><a class="primary" href="../de-kiem-tra/${p.slug}.html">Làm đề trực tuyến →</a></p>`:''}<article class="prose">${p.html}</article><div class="article-end">✦ Mỗi bài học, một bước tiến.</div>${related.length?`<section class="related"><h2>Khám phá thêm</h2>${related.map(q=>`<a href="./${q.slug}.html">${esc(q.title)} <span>↗</span></a>`).join('')}</section>`:''}</main>`;fs.writeFileSync(path.join(out,'bai-viet',p.slug+'.html'),shell(p.title,p.description,content,'../'));}
  buildExams(imported,out,shell,text=>marked.parse(text));
+ for(const file of fs.readdirSync(out,{recursive:true}).filter(file=>file.endsWith('.html'))){
+  const htmlPath=path.join(out,file);let html=fs.readFileSync(htmlPath,'utf8');
+  html=html.replace('<nav aria-label="Điều hướng chính">','<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><b class="sr-only">Mở menu</b></button><nav id="site-menu" aria-label="Điều hướng chính">');
+  const assetPrefix=file.includes('/')?'../':'./';
+  html=html.replace('</body>','<button class="go-top" type="button" aria-label="Lên đầu trang" title="Lên đầu trang">↑</button><script src="'+assetPrefix+'assets/menu.js" defer></script><script src="'+assetPrefix+'assets/top.js" defer></script></body>');
+  fs.writeFileSync(htmlPath,html);
+ }
  console.log(`Built ${posts.length} posts into dist/`);return posts;
 }
 if(process.argv[1]===fileURLToPath(import.meta.url))build();
