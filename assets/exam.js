@@ -9,9 +9,10 @@ function answered(q){const a=state.answers[q.id];return q.kind==='truefalse'?Arr
 function progress(){const n=exam.questions.filter(answered).length;$('exam-progress').textContent=`Đã trả lời ${n}/${exam.questions.length} câu`;exam.questions.forEach(q=>$('jump-'+q.id).classList.toggle('answered',answered(q)));}
 function render(){
  $('exam-start').hidden=true;$('exam-session').hidden=false;$('exam-questions').replaceChildren();$('exam-nav').replaceChildren();
- let section='';
+ let section='';let navSection='';let sectionNav;
  for(const [index,q]of exam.questions.entries()){
   if(section!==q.section){section=q.section;const h=document.createElement('h2');h.textContent=section;$('exam-questions').append(h);}
+  if(navSection!==q.section){navSection=q.section;sectionNav=document.createElement('div');sectionNav.className='exam-nav-group';const navTitle=document.createElement('strong');navTitle.textContent=q.section;sectionNav.append(navTitle);$('exam-nav').append(sectionNav);}
   const card=document.createElement('section');card.id=q.id;card.className='exam-question prose';
   const title=document.createElement('h3');title.textContent=q.label;card.append(title);
   const content=document.createElement('div');content.innerHTML=q.question;card.append(content);
@@ -21,7 +22,7 @@ function render(){
   else {const label=document.createElement('label');label.textContent='Câu trả lời của bạn';const text=input('text',q.id,state.answers[q.id]||'');text.autocomplete='off';label.append(text);field.append(label);}
   field.addEventListener('input',event=>{if(state.finished)return;if(Date.now()>=state.deadline){finish(true);return;}if(q.kind==='truefalse'){const values=state.answers[q.id]||Array(q.options.length).fill('');values[Number(event.target.dataset.part)]=event.target.value;state.answers[q.id]=values;}else state.answers[q.id]=event.target.value;save();progress();});
   card.append(field);const review=document.createElement('div');review.className='exam-review';review.hidden=true;card.append(review);$('exam-questions').append(card);
-  const link=document.createElement('a');link.href='#'+q.id;link.id='jump-'+q.id;link.textContent=String(index+1);link.setAttribute('aria-label',`${q.section} — ${q.label}`);$('exam-nav').append(link);
+  const link=document.createElement('a');link.href='#'+q.id;link.id='jump-'+q.id;link.textContent=q.label.replace(/^Câu\s+/i,'');link.setAttribute('aria-label',`${q.section} — ${q.label}`);sectionNav.append(link);
  }
  progress();if(state.finished)showResult();else{tick();if(!state.finished)clock=setInterval(tick,1000);}
 }

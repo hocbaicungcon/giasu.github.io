@@ -56,8 +56,18 @@ export function build(){
   html=html.replace('<nav aria-label="Điều hướng chính">','<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><b class="sr-only">Mở menu</b></button><nav id="site-menu" aria-label="Điều hướng chính">');
   const assetPrefix=file.includes('/')?'../':'./';
   html=html.replace('</body>','<button class="go-top" type="button" aria-label="Lên đầu trang" title="Lên đầu trang">↑</button><script src="'+assetPrefix+'assets/menu.js" defer></script><script src="'+assetPrefix+'assets/top.js" defer></script></body>');
+  const canonicalPath=file==='index.html'?'':file.replace(/\\/g,'/');
+  const canonical='https://giasu.ai.vn/'+canonicalPath;
+  const seoTitle=html.match(/<title>([^<]*)<\/title>/)?.[1]||'gia sư thông minh';
+  const seoDescription=html.match(/<meta name="description" content="([^"]*)">/)?.[1]||'Bài học và bài tập dành cho học sinh lớp 1 đến lớp 12.';
+  const schema=file.startsWith('bai-viet/')?{ '@context':'https://schema.org','@type':'Article',headline:seoTitle.replace(/ · gia sư thông minh$/,''),description:seoDescription,url:canonical,publisher:{'@type':'Organization',name:'gia sư thông minh',logo:{'@type':'ImageObject',url:'https://giasu.ai.vn/hocbaicungcon_round.svg'}}}:{'@context':'https://schema.org','@type':'WebSite',name:'gia sư thông minh',url:'https://giasu.ai.vn/'};
+  const seo=`<link rel="canonical" href="${canonical}"><meta property="og:type" content="${file.startsWith('bai-viet/')?'article':'website'}"><meta property="og:title" content="${seoTitle}"><meta property="og:description" content="${seoDescription}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="https://giasu.ai.vn/hocbaicungcon_round.svg"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="${seoTitle}"><meta name="twitter:description" content="${seoDescription}"><script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>`;
+  html=html.replace('</head>',`${seo}</head>`);
   fs.writeFileSync(htmlPath,html);
  }
+ const pages=fs.readdirSync(out,{recursive:true}).filter(file=>file.endsWith('.html')).map(file=>'https://giasu.ai.vn/'+file.replace(/\\/g,'/')).concat('https://giasu.ai.vn/');
+ fs.writeFileSync(path.join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${[...new Set(pages)].map(url=>`<url><loc>${url}</loc></url>`).join('')}</urlset>`);
+ fs.writeFileSync(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nSitemap: https://giasu.ai.vn/sitemap.xml\n');
  console.log(`Built ${posts.length} posts into dist/`);return posts;
 }
 if(process.argv[1]===fileURLToPath(import.meta.url))build();
