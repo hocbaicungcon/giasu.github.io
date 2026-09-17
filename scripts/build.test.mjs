@@ -25,3 +25,36 @@ test('general posts allow omitted grade and normalize category case',()=>{
  assert.equal(post.category,'Toán học');
  assert.throws(()=>parsePost(source.replace('grade: 10','grade: null'),'loi-lop.md'),/lớp/);
 });
+
+import {convertLatex,stripComments} from './latex.mjs';
+test('LaTeX converts exercises, sections, lists, figures and preserves math',()=>{
+ const source=String.raw`\begin{center}\textbf{{\Huge ĐỀ 001}}\end{center}
+\subsubsection*{Phần I}
+\setcounter{bt}{0}
+\begin{baitap}Tính $\frac{1}{2}$ và $\{x\}$. \textbf{Đúng}?
+\begin{enumerate}[A.]\item $1$\item $2$\end{enumerate}
+\begin{tikzpicture}\draw (0,0)--(1,1);\end{tikzpicture}
+\end{baitap}
+%\begin{baitap}Không hiện\end{baitap}
+\subsubsection*{Phần II}\setcounter{bt}{0}
+\begin{baitap}Vận tốc $\si{m/s}$.\end{baitap}`;
+ const p=convertLatex(source,{renderTikz:()=> '../assets/latex/test.png'});
+ assert.equal(p.title,'ĐỀ 001');assert.equal(p.questions,2);
+ assert.equal((p.body.match(/### Câu 1/g)||[]).length,2);
+ assert.match(p.body,/\*\*A\.\*\*/);assert.match(p.body,/\\frac\{1\}\{2\}/);
+ assert.match(p.body,/\\\{x\\\}/);assert.match(p.body,/\\mathrm\{m\/s\}/);
+ assert.match(p.body,/test.png/);assert.doesNotMatch(p.body,/Không hiện|begin\{baitap/);
+});
+test('LaTeX comments, nested formatting and unsupported commands',()=>{
+ assert.equal(stripComments(String.raw`10\% % hidden`),'10\\% ');
+ assert.match(convertLatex(String.raw`\textbf{Đậm \emph{nghiêng}}`).body,/Đậm/);
+ assert.throws(()=>convertLatex(String.raw`\include{secret}`),/chưa hỗ trợ/);
+ assert.throws(()=>convertLatex(String.raw`\textbf{chưa đóng`),/chưa đóng/);
+});
+test('LaTeX indentation does not become Markdown code blocks',()=>{
+ const converted=convertLatex(String.raw`\begin{baitap}
+    Cho $x^2=1$.
+\end{baitap}`);
+ const post=parsePost(source.split('---\n')[0]+'---\n'+source.split('---\n')[1]+'---\n'+converted.body,'indent.md');
+ assert.doesNotMatch(post.html,/<pre>/);assert.match(post.html,/katex/);
+});
