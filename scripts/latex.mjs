@@ -65,13 +65,21 @@ export function importLatex(root){
   const conversionOptions={renderTikz(tikz){
    if(/\\(?:input|include|write|openout|read|catcode|csname|usepackage|documentclass)\b/.test(tikz))throw Error(`${file}: lệnh không được phép trong hình TikZ`);
    const hash=createHash('sha256').update('paper-background-v1:'+background+':'+tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
-   const png=path.join(cache,'figure.png');
-   if(!fs.existsSync(png)){
+   const svg=path.join(cache,'figure.svg');
+   if(!fs.existsSync(svg)){
     fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{amsmath,amssymb,tkz-tab}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n'+tikz+'\n\\end{document}');
     run('pdflatex',['-no-shell-escape','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);
-    run('pdftoppm',['-png','-singlefile','-scale-to','1600','figure.pdf','figure'],cache);
+    if(process.platform==='darwin' && spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
+    else if(spawnSync('pdftocairo',['-v'],{encoding:'utf8',stdio:'ignore'}).status===0)run('pdftocairo',['-svg','figure.pdf','figure.svg'],cache);
+    else if(spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
+    else {
+     const legacyPng=path.join(cache,'figure.png');
+     if(!fs.existsSync(legacyPng))throw Error(`${file}: cần dvisvgm hoặc pdftocairo để tạo SVG TikZ`);
+     const data=fs.readFileSync(legacyPng).toString('base64');
+     fs.writeFileSync(svg,`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600"><image width="1600" height="1600" href="data:image/png;base64,${data}"/></svg>`);
+    }
    }
-   if(!images.some(image=>image.name===`${hash}.png`))images.push({source:png,name:`${hash}.png`});return `../assets/latex/${hash}.png`;
+   if(!images.some(image=>image.name===`${hash}.svg`))images.push({source:svg,name:`${hash}.svg`});return `../assets/latex/${hash}.svg`;
   }};
   const result=convertLatex(source,conversionOptions);
   let examQuestions;try{examQuestions=extractExam(source,conversionOptions);}catch(error){throw Error(`${file}: ${error.message}`);}
