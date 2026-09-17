@@ -29,7 +29,7 @@ footer{flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
 
 nav.breadcrumb{display:flex;flex-wrap:wrap;gap:8px 12px}nav.breadcrumb a,nav.breadcrumb a:first-child{display:inline;font-size:inherit}nav.breadcrumb a:hover{text-decoration:underline;text-underline-offset:3px}nav.breadcrumb>span{color:var(--muted)}
 
-.prose img[src*="assets/latex/"]{display:block;width:auto;height:auto;max-width:100%;max-height:none;margin:24px auto;object-fit:contain}
+.prose img[src*="assets/latex/"]{display:block;width:auto;min-width:min(100%,320px);height:auto;max-width:100%;max-height:none;margin:24px auto;object-fit:contain}
 
 /* Answer labels already provide list markers in converted LaTeX exercises. */
 .prose ul.answer-options{list-style:none;padding-left:0}
