@@ -44,3 +44,20 @@ nav.breadcrumb{display:flex;flex-wrap:wrap;gap:8px 12px}nav.breadcrumb a,nav.bre
 .exam-toolbar .primary:hover{background:#116e80}
 @media(max-width:620px){.exam-toolbar{gap:10px}.exam-toolbar #exam-progress{order:3;width:100%;font-size:14px}.exam-toolbar .primary{padding:11px 14px}.exam-card .primary,.article-wrap > p > .primary{width:100%}}
 .confetti-canvas{position:fixed;inset:0;z-index:20;pointer-events:none}
+.menu-toggle{display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.go-top{position:fixed;right:24px;bottom:24px;z-index:15;width:48px;height:48px;border:1px solid #b9ddd5;border-radius:50%;background:var(--ink);color:#fff;font-size:26px;line-height:1;box-shadow:0 8px 20px #243b4030;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .2s,transform .2s,visibility .2s}.go-top.is-visible{opacity:1;visibility:visible;transform:translateY(0)}.go-top:hover{background:#116e80;color:#fff;transform:translateY(-2px)}
+@media(max-width:620px){.menu-toggle{display:flex;flex-direction:column;justify-content:center;gap:4px;width:42px;height:42px;margin-left:auto;padding:9px;border:1px solid #c4e1dc;border-radius:8px;background:#edf7f6}.menu-toggle span{display:block;width:22px;height:2px;margin:auto;background:var(--ink);border-radius:2px;transition:transform .2s,opacity .2s}.menu-toggle[aria-expanded=true] span:nth-child(1){transform:translateY(6px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:nth-child(2){opacity:0}.menu-toggle[aria-expanded=true] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}header nav#site-menu{display:none;position:absolute;top:78px;left:16px;right:16px;z-index:10;flex-direction:column;align-items:stretch;gap:0;padding:8px;background:#fff;border:1px solid #d4e8e3;border-radius:10px;box-shadow:0 12px 26px #243b4020}body.menu-open header nav#site-menu{display:flex}header nav#site-menu a{display:block;padding:12px 14px;font-size:15px}header nav#site-menu .nav-pill{margin-top:3px;text-align:center}}
+
+/* Stronger visual separation between the main learning areas. */
+header{box-shadow:0 2px 14px #243b4010}
+.hero{background:linear-gradient(135deg,#ffffff 0%,#f5fbfa 100%);border-radius:0 0 20px 20px}
+.subject-section{background:linear-gradient(135deg,#e6f7f6 0%,#f8f4ec 100%);border-block:1px solid #cfe7e1;box-shadow:0 8px 24px #243b400b}
+.subject-pick>span{border-color:#c4e1dc;box-shadow:0 3px 8px #243b4012}
+.library{background:#fff;border-radius:18px;margin-top:34px;margin-bottom:34px;padding-top:44px;padding-bottom:58px;box-shadow:0 10px 30px #243b400a}
+.card{box-shadow:0 5px 16px #243b4010;border-color:#d7e7e3}
+.card:hover{box-shadow:0 12px 28px #243b4020;border-color:#b8d8d1}
+.about{background:linear-gradient(135deg,#fff0e7 0%,#f2f8f2 100%);border:1px solid #f1d9c7;box-shadow:0 8px 24px #243b400d}
+.article-wrap{background:#fff;border-radius:18px;margin-top:30px;margin-bottom:35px;padding-top:38px;box-shadow:0 10px 30px #243b400a}
+.exam-wrap{background:#fff;border:1px solid #d8e9e4;border-radius:18px;box-shadow:0 10px 30px #243b400c}
+.exam-question{box-shadow:0 4px 14px #243b400c;border-color:#cfe3de}
+@media(max-width:620px){.library{margin-top:20px;border-radius:14px}.article-wrap{margin-top:16px;border-radius:14px}.hero{border-radius:0 0 14px 14px}}
