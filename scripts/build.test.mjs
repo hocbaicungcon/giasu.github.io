@@ -80,3 +80,14 @@ test('missing or ambiguous answers never receive an invented key',()=>{
  assert.equal(gradeExam(extractExam(wrap('')),{}).score,null);
  assert.throws(()=>extractExam(wrap(String.raw`\dapan{D}`)),/hợp lệ/);
 });
+
+test('siunitx units render inside and outside math for imported exams',()=>{
+ const result=convertLatex(String.raw`Quãng đường \SI{50}{\meter}; tốc độ \si{\meter\per\second}; thể tích \SI{144}{\cubic\centi\meter}; $\SI{10}{\centi\meter}\times\SI{16}{\centi\meter}$.`);
+ assert.match(result.body,/\$50\\,\\mathrm\{m\}\$/);
+ assert.ok(result.body.includes(String.raw`$\mathrm{m}/\mathrm{s}$`));
+ assert.ok(result.body.includes(String.raw`$144\,\mathrm{cm}^{3}$`));
+ assert.ok(result.body.includes(String.raw`$10\,\mathrm{cm}\times16\,\mathrm{cm}$`));
+ const post=parsePost(source+'\n\n'+result.body,'units.md');
+ assert.ok(!post.html.includes('katex-error'));
+ assert.throws(()=>convertLatex(String.raw`\SI{1}{\unknownunit}`),/Đơn vị LaTeX chưa hỗ trợ/);
+});
