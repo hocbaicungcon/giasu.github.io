@@ -1,4 +1,4 @@
-# Học bài cùng con
+# Gia sư thông minh
 
 Website chia sẻ bài học, bài tập lớp 1–12, triển khai trên GitHub Pages. Giao diện dùng màu từ `hocbaicungcon_round.svg`. Nội dung được tạo thành HTML tĩnh, công thức được dựng sẵn bằng KaTeX và dùng font lưu cùng website.
 
@@ -87,3 +87,7 @@ Danh sách được khai báo tại `scripts/build.mjs`; dùng đúng tên trong
 - `.github/workflows/pages.yml`: build và triển khai GitHub Pages.
 
 Tài liệu GitHub: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+## Nếu trang công khai hiển thị README thay vì giao diện
+
+Vào **Settings → Pages → Build and deployment → Source**, chuyển từ **Deploy from a branch** sang **GitHub Actions**. Không chọn Jekyll: workflow của dự án dựng trang chủ trong `dist/index.html`. Sau đó chạy **Actions → Build and deploy GitHub Pages → Run workflow** trên nhánh mặc định. Nếu có workflow Jekyll tự tạo riêng, tắt workflow đó để tránh ghi đè bản deploy.
