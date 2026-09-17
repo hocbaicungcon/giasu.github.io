@@ -144,3 +144,53 @@ Câu hỏi, lựa chọn và giải thích hỗ trợ Markdown trong dòng và `
 ### Bài kiến thức chung
 
 Có thể bỏ trường `grade` nếu bài không thuộc riêng lớp nào; website hiển thị **Mọi lớp**. Bài này xuất hiện khi chọn **Tất cả lớp**. Nếu ghi `grade`, vẫn phải là số nguyên từ 1 đến 12. Tên `category` không phân biệt hoa/thường (ví dụ `Công Nghệ` được chuẩn hóa thành `Công nghệ`).
+
+## Tự động nhập bài từ LaTeX
+
+Copy file **UTF-8 `.tex`** vào `post/` rồi commit và push. Workflow tự chuyển sang Markdown, biên dịch các hình TikZ và xuất bản như bài Markdown thông thường. Không cần cài LaTeX trên máy nếu chỉ dùng GitHub Actions.
+
+Ví dụ:
+
+```text
+post/
+  de-001.tex
+  de-001.yml    # tùy chọn: metadata của bài
+```
+
+File `.yml` cùng tên cho phép đặt thông tin bài:
+
+```yaml
+title: 'Đề 001 — Hàm số và cực trị'
+description: 'Đề luyện tập về hàm số.'
+category: 'Toán học'
+grade: 12
+type: 'Bài tập'
+date: '2026-09-17'
+tags: ['toán 12', 'đạo hàm']
+```
+
+Nếu không có `.yml`, hệ thống lấy tiêu đề từ khối `center` có `textbf` hoặc tên file; mặc định môn **Toán học**, loại **Bài tập**, **Mọi lớp**, tags `toán học` và `đề luyện tập`. Ngày lấy từ commit gần nhất của file; file chưa commit dùng ngày sửa file. Có thể đặt ngày cố định trong `.yml`.
+
+- Mỗi `.tex` tạo một bài. Tên file tiếng Việt và khoảng trắng được chuyển thành slug không dấu.
+- Không để `.md` và `.tex` có cùng slug; hệ thống báo lỗi để tránh ghi đè.
+- Markdown được sinh tại `.generated/<slug>.md`, không ghi đè nguồn trong `post/`. Website cũng xuất bản bản Markdown tại `markdown/<slug>.md`.
+- Khi sửa `.tex`, Markdown tự sinh và bài trên web sẽ cập nhật trong lần build tiếp theo. Sửa nguồn `.tex` hoặc `.yml`, không sửa Markdown trong `.generated/`.
+- Muốn chuyển hẳn sang biên tập Markdown: lấy bản `.generated/<slug>.md` vào `post/`, chuyển hình được tham chiếu từ `dist/assets/latex/` sang `assets/latex/`, rồi chuyển file `.tex` ra ngoài `post/`.
+
+### Các cú pháp LaTeX được hỗ trợ
+
+Hỗ trợ cấu trúc giống `post/de-001.tex`: `baitap`, `enumerate` với `item`, tiêu đề `section`/`subsection`/`subsubsection`, `textbf`, `textit`, `emph`, `center`, `minipage`, `multicols`, `setcounter{bt}{0}`, công thức `$...$`, `$$...$$`, `\(...\)`, `\[...\]`, và `\si{m/s}` trong công thức. Mã sau `%` được coi là chú thích; `\%` giữ nguyên ký hiệu phần trăm.
+
+TikZ và bảng `tkz-tab` được biên dịch thành PNG độ phân giải cao, giữ nội dung bản gốc. Các chú thích không được dùng để tự sửa hình hoặc đáp án. Nếu nguồn có sai sót toán học thì bài chuyển đổi cũng giữ nguyên sai sót đó; cần kiểm tra nội dung trước khi đăng.
+
+Đây là bộ chuyển đổi cho cấu trúc đề mẫu, không phải bộ xử lý mọi lệnh LaTeX. Lệnh tùy biến ngoài phạm vi được báo lỗi thay vì âm thầm bỏ nội dung. Preamble của tài liệu đầy đủ không được thực thi; hình dùng các gói `amsmath`, `amssymb`, `tikz`, `tkz-tab` và thư viện `arrows`, `arrows.meta`, `calc`, `patterns`. Chưa hỗ trợ nhập ảnh ngoài bằng `includegraphics`, file con `input/include`, danh sách lồng nhau hay tự suy luận đáp án. Đề không có đáp án được xuất thành câu hỏi tĩnh; muốn chấm tương tác, soạn thêm khối `quiz` trong bài Markdown.
+
+### Theo dõi thư mục trên máy
+
+```sh
+npm run dev
+```
+
+Lệnh này build và phục vụ tại http://localhost:4173, theo dõi thay đổi trong `post/`, `assets/`, `scripts/`. Copy/sửa file sẽ tự build; tải lại trình duyệt để xem kết quả. Dừng máy chủ preview cũ trước nếu cổng 4173 đang được sử dụng.
+
+Để build đề có TikZ trên máy cần `pdflatex`, các gói LaTeX nói trên và `pdftoppm` (Poppler) trong PATH. GitHub Actions đã tự cài các công cụ này khi có file `.tex`. Các lần build sau dùng cache hình trong `.generated/tikz/`; không commit thư mục `.generated/`.
