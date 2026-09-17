@@ -74,7 +74,7 @@ Lời giải và giải thích.
 
 ## Các môn học
 
-Toán học, Tiếng Việt, Ngữ văn, Tiếng Anh, Tự nhiên và Xã hội, Khoa học, Khoa học tự nhiên, Vật lí, Hóa học, Sinh học, Lịch sử và Địa lí, Lịch sử, Địa lí, Đạo đức, Giáo dục công dân, Giáo dục kinh tế và pháp luật, Tin học, Công nghệ, Âm nhạc, Mĩ thuật, Giáo dục thể chất, Hoạt động trải nghiệm.
+Toán học, Tiếng Việt, Ngữ văn, Tiếng Anh, Tự nhiên và Xã hội, Khoa học, Khoa học tự nhiên, Vật lí, Hóa học, Sinh học, Lịch sử và Địa lí, Lịch sử, Địa lí, Đạo đức, Giáo dục công dân, Giáo dục kinh tế và pháp luật, Tin học, CNTT, Công nghệ, Âm nhạc, Mĩ thuật, Giáo dục thể chất, Hoạt động trải nghiệm.
 
 Danh sách được khai báo tại `scripts/build.mjs`; dùng đúng tên trong `category`. Có thể bổ sung môn bằng cách sửa danh sách này.
 
