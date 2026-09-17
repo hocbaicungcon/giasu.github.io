@@ -88,6 +88,20 @@ Danh sách được khai báo tại `scripts/build.mjs`; dùng đúng tên trong
 
 Tài liệu GitHub: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 
+### Cấu hình HTTPS cho `giasu.ai.vn`
+
+Trong nhà cung cấp DNS, tạo các bản ghi:
+
+```text
+@     A      185.199.108.153
+@     A      185.199.109.153
+@     A      185.199.110.153
+@     A      185.199.111.153
+www   CNAME  hocbaicungcon.github.io
+```
+
+Xóa các bản ghi A/CNAME cũ đang trỏ sang hosting khác. Trong GitHub vào **Settings → Pages → Custom domain**, nhập `giasu.ai.vn` và lưu. Chờ DNS cập nhật, sau đó bật **Enforce HTTPS**; GitHub thường cần thêm thời gian để cấp chứng chỉ TLS. Không dùng bản ghi URL redirect cho `@`; domain gốc phải dùng bốn bản ghi A ở trên.
+
 ## Nếu trang công khai hiển thị README thay vì giao diện
 
 Vào **Settings → Pages → Build and deployment → Source**, chuyển từ **Deploy from a branch** sang **GitHub Actions**. Không chọn Jekyll: workflow của dự án dựng trang chủ trong `dist/index.html`. Sau đó chạy **Actions → Build and deploy GitHub Pages → Run workflow** trên nhánh mặc định. Nếu có workflow Jekyll tự tạo riêng, tắt workflow đó để tránh ghi đè bản deploy.

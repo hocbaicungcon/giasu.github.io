@@ -42,6 +42,7 @@ export function build(){
  const imported=importLatex(root);
  const posts=fs.readdirSync(path.join(root,'post')).filter(f=>f.endsWith('.md')).map(f=>parsePost(fs.readFileSync(path.join(root,'post',f),'utf8'),f)).concat(imported.map(p=>parsePost(p.markdown,p.filename))).sort((a,b)=>b.date.localeCompare(a.date)||a.title.localeCompare(b.title,'vi'));
  fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(path.join(out,'bai-viet'),{recursive:true});fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true});fs.cpSync(path.join(root,'node_modules/katex/dist'),path.join(out,'assets/katex'),{recursive:true});fs.copyFileSync(path.join(root,'hocbaicungcon_round.svg'),path.join(out,'hocbaicungcon_round.svg'));fs.copyFileSync(path.join(root,'hocbaicungcon_round.svg'),path.join(out,'favicon.svg'));fs.writeFileSync(path.join(out,'.nojekyll'),'');
+ fs.copyFileSync(path.join(root,'CNAME'),path.join(out,'CNAME'));
  fs.mkdirSync(path.join(out,'assets/latex'),{recursive:true});
  fs.mkdirSync(path.join(out,'markdown'),{recursive:true});
  for(const p of imported){fs.writeFileSync(path.join(out,'markdown',p.filename),p.markdown);for(const img of p.images)fs.copyFileSync(img.source,path.join(out,'assets/latex',img.name));}
