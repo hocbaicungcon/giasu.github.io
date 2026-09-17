@@ -11,6 +11,13 @@ tags: ["công nghệ", "macos", "telex", "máy tính"]
 
 Sử dụng qua rất nhiều phần mềm gõ tiếng Việt cho Macbook, macos từ bộ gõ mặc định của Mac cho tới các bộ gõ tiếng Việt như Openkey, GoTiengViet, EVKey... thì cuối cùng tôi đã tìm thấy phần mềm VietTelex (ViệtTelex / ViếtTelex) là bộ gõ Telex mã nguồn mở miễn phí, được xây dựng trên InputMethodKit của macOS để tích hợp sâu: nhanh, tiện, tối giản, mượt cho mọi app.
 
+
+```youtube
+url: 'https://www.youtube.com/watch?v=jGJhcR3sd_M'
+title: 'Bộ gõ tiếng Việt cho Macbook'
+```
+
+
 ⛔️ QUAN TRỌNG: VietTelex là phần mềm gõ tiếng Việt chạy tốt với Spotlight, texstusio, excel, Chrome, Google Docs... 
 
 ✅ VietTelex (ViệtTelex / ViếtTelex) là bộ gõ Telex mã nguồn mở miễn phí, được xây dựng trên InputMethodKit của macOS để tích hợp sâu: nhanh, tiện, tối giản, mượt cho mọi app.
@@ -25,9 +32,5 @@ Sử dụng qua rất nhiều phần mềm gõ tiếng Việt cho Macbook, macos
 
 3. Chuyển sang ViệtTelex bằng phím 🌐 hoặc ⌃Space. Muốn gõ trong Terminal/iTerm/Chrome thì bật quyền Trợ năng cho VietTelex (Privacy & Security → Accessibility).
 
-    ✅ Cài bộ gõ tiếng Việt cho MacBook, GoTiengViet macOS, Bộ gõ tiếng Việt cho macOS 26 27 Golden Gate, Tải bộ gõ tiếng việt cho macbook, Bộ gõ tiếng Việt cho macOS Tahoe 
 
-```youtube
-url: 'https://www.youtube.com/watch?v=jGJhcR3sd_M'
-title: 'Bộ gõ tiếng Việt cho Macbook'
-```
+✅ Cài bộ gõ tiếng Việt cho MacBook, GoTiengViet macOS, Bộ gõ tiếng Việt cho macOS 26 27 Golden Gate, Tải bộ gõ tiếng việt cho macbook, Bộ gõ tiếng Việt cho macOS Tahoe 
