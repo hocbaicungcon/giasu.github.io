@@ -194,3 +194,40 @@ npm run dev
 Lệnh này build và phục vụ tại http://localhost:4173, theo dõi thay đổi trong `post/`, `assets/`, `scripts/`. Copy/sửa file sẽ tự build; tải lại trình duyệt để xem kết quả. Dừng máy chủ preview cũ trước nếu cổng 4173 đang được sử dụng.
 
 Để build đề có TikZ trên máy cần `pdflatex`, các gói LaTeX nói trên và `pdftoppm` (Poppler) trong PATH. GitHub Actions đã tự cài các công cụ này khi có file `.tex`. Các lần build sau dùng cache hình trong `.generated/tikz/`; không commit thư mục `.generated/`.
+
+## Đề kiểm tra trực tuyến từ LaTeX
+
+Mọi file `.tex` có môi trường `baitap` được thêm vào mục **Đề kiểm tra** (`de-kiem-tra/`). Bài đọc có nút **Làm đề trực tuyến**. Hỗ trợ chọn một đáp án, đúng/sai từng ý, nhập đáp án ngắn, đồng hồ đếm ngược, nộp bài, tự nộp khi hết giờ và xem lời giải. Đề đang làm và kết quả lưu trong trình duyệt hiện tại; tải lại vẫn giữ hạn nộp ban đầu. Khi nội dung đề đổi, bài làm cũ không áp dụng cho phiên bản mới.
+
+Trong **mỗi** `baitap`, đặt lời giải trong `traloi` và ghi đáp án rõ bằng `\dapan{...}`:
+
+```latex
+\begin{baitap}
+Nghiệm của $2x+4=0$ là:
+\begin{enumerate}[A.]
+\item $x=2$.
+\item $x=-2$.
+\end{enumerate}
+\begin{traloi}
+\dapan{B}
+Ta có $2x=-4$, suy ra $x=-2$.
+\end{traloi}
+\end{baitap}
+```
+
+- Trắc nghiệm: `\dapan{B}`; cũng đọc câu rõ ràng `Chọn B.` hoặc `Đáp án: B.` trong lời giải.
+- Đúng/sai: dùng `enumerate[a)]` hoặc phần có tiêu đề `Phần II. ...`, rồi ghi `\dapan{Đ,S,Đ,S}` đúng thứ tự số ý. Chấp nhận `Đúng,Sai,Đúng,Sai`.
+- Trả lời ngắn: câu không có `enumerate`, ghi `\dapan{2,5}`. Hệ thống coi `2,5` và `2.5` tương đương; không tự biến đổi mọi biểu thức toán. Các cách viết khác có thể liệt kê bằng dấu `|`, ví dụ `\dapan{0,5|1/2}`. Trong `dapan` dùng văn bản thuần, không dùng công thức LaTeX có ngoặc nhọn lồng nhau.
+- Công thức và TikZ trong `traloi` được giữ lại, chỉ hiển thị sau khi nộp. Trang đọc đề không hiển thị `traloi`.
+- Thiếu đáp án hoặc lời giải chỉ có diễn giải không xác định được đáp án: vẫn làm đề, nhưng không tính tổng điểm. Từng câu thiếu đáp án được ghi rõ. Không tự giải bài để đoán đáp án.
+
+Đặt thời gian trong `.yml` cùng tên (mặc định 90 phút):
+
+```yaml
+exam:
+  duration: 90
+```
+
+**Quy tắc chấm hiện tại:** mỗi câu có trọng số bằng nhau; đúng/sai tính tỉ lệ ý đúng; tổng quy đổi thang 10. Đây là thang tự luyện của website, không mặc định áp dụng quy tắc chấm thi tốt nghiệp. Câu chưa trả lời tính 0 khi có đáp án.
+
+Thử file `post/de-mau-tuong-tac.tex` và `.yml` để xem ví dụ đủ 3 dạng. Kết quả không gửi về giáo viên, chưa có tài khoản hay bảng xếp hạng chung. GitHub Pages là website tĩnh nên đáp án nằm trong dữ liệu trang: phù hợp tự luyện, không dùng để bảo mật đáp án thi chính thức.

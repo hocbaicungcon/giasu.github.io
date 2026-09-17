@@ -3,6 +3,7 @@ import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import YAML from 'yaml';
+import {extractExam} from './exams.mjs';
 
 function group(s,start){
  if(s[start]!=='{')throw Error('Thiếu dấu { trong LaTeX');
@@ -22,6 +23,7 @@ function commands(s,name,transform){
 export function stripComments(s){return s.split('\n').map(line=>{for(let i=0;i<line.length;i++){if(line[i]==='\\'){i++;continue;}if(line[i]==='%')return line.slice(0,i);}return line;}).join('\n');}
 export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ biên dịch TikZ');}}={}){
  let s=stripComments(source.replace(/\r\n/g,'\n'));
+ s=s.replace(/\\begin\{traloi\}[\s\S]*?\\end\{traloi\}/g,'');
  if(s.includes('\\begin{document}'))s=s.split('\\begin{document}')[1].split('\\end{document}')[0];
  const stored=[];const hold=v=>{const k=`LATEXPLACEHOLDER${stored.length}END`;stored.push(v);return k;};
  s=s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,t=>hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(t)})\n\n`));
@@ -59,7 +61,8 @@ export function importLatex(root){
   const images=[];
   const background=/--paper:\s*#([0-9a-f]{6})\b/i.exec(fs.readFileSync(path.join(root,'assets/style.css'),'utf8'))?.[1];
   if(!background)throw Error('Không tìm thấy màu nền --paper dạng HEX trong style.css');
-  const result=convertLatex(fs.readFileSync(path.join(dir,file),'utf8'),{renderTikz(tikz){
+  const source=fs.readFileSync(path.join(dir,file),'utf8');
+  const conversionOptions={renderTikz(tikz){
    if(/\\(?:input|include|write|openout|read|catcode|csname|usepackage|documentclass)\b/.test(tikz))throw Error(`${file}: lệnh không được phép trong hình TikZ`);
    const hash=createHash('sha256').update('paper-background-v1:'+background+':'+tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
    const png=path.join(cache,'figure.png');
@@ -68,15 +71,19 @@ export function importLatex(root){
     run('pdflatex',['-no-shell-escape','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);
     run('pdftoppm',['-png','-singlefile','-scale-to','1600','figure.pdf','figure'],cache);
    }
-   images.push({source:png,name:`${hash}.png`});return `../assets/latex/${hash}.png`;
-  }});
+   if(!images.some(image=>image.name===`${hash}.png`))images.push({source:png,name:`${hash}.png`});return `../assets/latex/${hash}.png`;
+  }};
+  const result=convertLatex(source,conversionOptions);
+  let examQuestions;try{examQuestions=extractExam(source,conversionOptions);}catch(error){throw Error(`${file}: ${error.message}`);}
   const metadataPath=path.join(dir,stem+'.yml');const custom=fs.existsSync(metadataPath)?YAML.parse(fs.readFileSync(metadataPath,'utf8')):{};
   const git=spawnSync('git',['log','-1','--format=%cs','--',`post/${file}`],{cwd:root,encoding:'utf8'});
   const date=git.stdout?.trim()||fs.statSync(path.join(dir,file)).mtime.toISOString().slice(0,10);
   const meta={title:result.title||stem,description:`Bài tập chuyển từ LaTeX, gồm ${result.questions} câu hỏi.`,category:'Toán học',type:'Bài tập',date,tags:['toán học','đề luyện tập'],...custom};
   const markdown='---\n'+YAML.stringify(meta)+'---\n\n'+result.body+'\n';
   fs.writeFileSync(path.join(generated,slug+'.md'),markdown);
-  results.push({filename:slug+'.md',markdown,images});
+  const duration=custom?.exam?.duration??90;
+  if(!Number.isInteger(duration)||duration<1||duration>600)throw Error(`${file}: exam.duration phải từ 1 đến 600 phút`);
+  results.push({filename:slug+'.md',markdown,images,exam:{slug,title:meta.title,category:meta.category,grade:meta.grade,duration,questions:examQuestions}});
   console.log(`LaTeX: ${file} → ${slug}.md (${result.questions} câu, ${images.length} hình)`);
  }
  return results;

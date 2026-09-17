@@ -58,3 +58,25 @@ test('LaTeX indentation does not become Markdown code blocks',()=>{
  const post=parsePost(source.split('---\n')[0]+'---\n'+source.split('---\n')[1]+'---\n'+converted.body,'indent.md');
  assert.doesNotMatch(post.html,/<pre>/);assert.match(post.html,/katex/);
 });
+
+import {extractExam} from './exams.mjs';
+import {gradeQuestion,gradeExam} from '../assets/exam-core.js';
+import fs from 'node:fs';
+test('exam extracts solutions and three answer types without leaking solutions into prompt',()=>{
+ const source=fs.readFileSync(new URL('../post/de-mau-tuong-tac.tex',import.meta.url),'utf8');const qs=extractExam(source);
+ assert.equal(qs.length,3);assert.deepEqual(qs.map(q=>q.kind),['choice','truefalse','short']);
+ assert.equal(qs[0].answer,'1');assert.deepEqual(qs[1].answer,[true,false,true,false]);assert.deepEqual(qs[2].answer,['2,5']);
+ assert.doesNotMatch(qs[0].question,/suy ra|dapan/);assert.match(qs[0].solution,/suy ra/);
+ assert.doesNotMatch(convertLatex(source).body,/dapan|suy ra/);
+ assert.equal(gradeExam(qs,{q1:'1',q2:['true','false','true','false'],q3:'2.5'}).score,10);
+ assert.equal(gradeQuestion(qs[1],['true','','','']),.25);
+ assert.equal(gradeExam(qs,{}).score,0);
+});
+test('missing or ambiguous answers never receive an invented key',()=>{
+ const wrap=s=>String.raw`\begin{baitap}Test\begin{enumerate}[A.]\item A\item B\end{enumerate}\begin{traloi}${s}\end{traloi}\end{baitap}`;
+ assert.equal(extractExam(wrap('Chọn A.'))[0].answer,'0');
+ assert.equal(extractExam(wrap('Chọn A. Chọn B.'))[0].answer,null);
+ assert.equal(extractExam(wrap('Giải thích chưa có kết luận.'))[0].answer,null);
+ assert.equal(gradeExam(extractExam(wrap('')),{}).score,null);
+ assert.throws(()=>extractExam(wrap(String.raw`\dapan{D}`)),/hợp lệ/);
+});
