@@ -30,7 +30,7 @@ export function parsePost(source, filename) {
  if(!['Bài học','Bài tập'].includes(data.type))throw Error(`${filename}: type phải là Bài học hoặc Bài tập`);
  const slug=path.basename(filename,'.md');
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
- return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:(()=>{try{return marked.parse(match[2]);}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
+ return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:(()=>{try{return marked.parse(match[2]).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
 }
 const gradeLabel=p=>p.grade===undefined?'Mọi lớp':`Lớp ${p.grade}`;
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>','CNTT':'</>'};
