@@ -59,12 +59,15 @@ export function importLatex(root){
   const stem=file.replace(/\.tex$/i,'');const slug=stem.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[đĐ]/g,'d').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   if(!slug||slugs.has(slug))throw Error(`${file}: tên bài trùng hoặc không hợp lệ: ${slug}`);slugs.add(slug);
   const images=[];
-  const background=/--paper:\s*#([0-9a-f]{6})\b/i.exec(fs.readFileSync(path.join(root,'assets/style.css'),'utf8'))?.[1];
-  if(!background)throw Error('Không tìm thấy màu nền --paper dạng HEX trong style.css');
+  // TikZ nằm trong khung bài viết màu trắng, nên dùng đúng màu nền của khung
+  // thay vì màu nền tổng thể của trang (--paper hơi ngả xanh).
+  const css=fs.readFileSync(path.join(root,'assets/style.css'),'utf8');
+  const background=/\.article-wrap\{[^}]*background:#([0-9a-f]{6})\b/i.exec(css)?.[1]||'ffffff';
+  const legacyBackground=/--paper:\s*#([0-9a-f]{6})\b/i.exec(css)?.[1];
   const source=fs.readFileSync(path.join(dir,file),'utf8');
   const conversionOptions={renderTikz(tikz){
    if(/\\(?:input|include|write|openout|read|catcode|csname|usepackage|documentclass)\b/.test(tikz))throw Error(`${file}: lệnh không được phép trong hình TikZ`);
-   const hash=createHash('sha256').update('paper-background-v1:'+background+':'+tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
+   const hash=createHash('sha256').update('article-background-v2:'+background+':'+tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
    const svg=path.join(cache,'figure.svg');
    if(!fs.existsSync(svg)){
     fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{amsmath,amssymb,tkz-tab}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n'+tikz+'\n\\end{document}');
@@ -73,7 +76,8 @@ export function importLatex(root){
     else if(spawnSync('pdftocairo',['-v'],{encoding:'utf8',stdio:'ignore'}).status===0)run('pdftocairo',['-svg','figure.pdf','figure.svg'],cache);
     else if(spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
     else {
-     const legacyPng=path.join(cache,'figure.png');
+     const legacyHash=legacyBackground&&createHash('sha256').update('paper-background-v1:'+legacyBackground+':'+tikz).digest('hex').slice(0,20);
+     const legacyPng=path.join(generated,'tikz',legacyHash||hash,'figure.png');
      if(!fs.existsSync(legacyPng))throw Error(`${file}: cần dvisvgm hoặc pdftocairo để tạo SVG TikZ`);
      const data=fs.readFileSync(legacyPng).toString('base64');
      fs.writeFileSync(svg,`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600"><image width="1600" height="1600" href="data:image/png;base64,${data}"/></svg>`);
