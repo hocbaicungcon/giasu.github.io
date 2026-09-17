@@ -195,7 +195,7 @@ Nếu không có `.yml`, hệ thống lấy tiêu đề từ khối `center` có
 
 Hỗ trợ cấu trúc giống `post/de-001.tex`: `baitap`, `enumerate` với `item`, tiêu đề `section`/`subsection`/`subsubsection`, `textbf`, `textit`, `emph`, `center`, `minipage`, `multicols`, `setcounter{bt}{0}`, công thức `$...$`, `$$...$$`, `\(...\)`, `\[...\]`, và `\si{m/s}` trong công thức. Mã sau `%` được coi là chú thích; `\%` giữ nguyên ký hiệu phần trăm.
 
-TikZ và bảng `tkz-tab` được biên dịch thành PNG độ phân giải cao, giữ nội dung bản gốc. Các chú thích không được dùng để tự sửa hình hoặc đáp án. Nếu nguồn có sai sót toán học thì bài chuyển đổi cũng giữ nguyên sai sót đó; cần kiểm tra nội dung trước khi đăng.
+TikZ và bảng `tkz-tab` được biên dịch thành SVG, giữ độ sắc nét khi phóng to và nội dung bản gốc. Các chú thích không được dùng để tự sửa hình hoặc đáp án. Nếu nguồn có sai sót toán học thì bài chuyển đổi cũng giữ nguyên sai sót đó; cần kiểm tra nội dung trước khi đăng.
 
 Đây là bộ chuyển đổi cho cấu trúc đề mẫu, không phải bộ xử lý mọi lệnh LaTeX. Lệnh tùy biến ngoài phạm vi được báo lỗi thay vì âm thầm bỏ nội dung. Preamble của tài liệu đầy đủ không được thực thi; hình dùng các gói `amsmath`, `amssymb`, `tikz`, `tkz-tab` và thư viện `arrows`, `arrows.meta`, `calc`, `patterns`. Chưa hỗ trợ nhập ảnh ngoài bằng `includegraphics`, file con `input/include`, danh sách lồng nhau hay tự suy luận đáp án. Đề không có đáp án được xuất thành câu hỏi tĩnh; muốn chấm tương tác, soạn thêm khối `quiz` trong bài Markdown.
 
@@ -207,7 +207,7 @@ npm run dev
 
 Lệnh này build và phục vụ tại http://localhost:4173, theo dõi thay đổi trong `post/`, `assets/`, `scripts/`. Copy/sửa file sẽ tự build; tải lại trình duyệt để xem kết quả. Dừng máy chủ preview cũ trước nếu cổng 4173 đang được sử dụng.
 
-Để build đề có TikZ trên máy cần `pdflatex`, các gói LaTeX nói trên và `pdftoppm` (Poppler) trong PATH. GitHub Actions đã tự cài các công cụ này khi có file `.tex`. Các lần build sau dùng cache hình trong `.generated/tikz/`; không commit thư mục `.generated/`.
+Để build đề có TikZ trên máy cần `pdflatex`, các gói LaTeX nói trên và `dvisvgm` (hoặc `pdftocairo`) trong PATH. GitHub Actions đã tự cài `dvisvgm` khi có file `.tex`. Các lần build sau dùng cache hình trong `.generated/tikz/`; không commit thư mục `.generated/`.
 
 ## Đề kiểm tra trực tuyến từ LaTeX
 

@@ -33,7 +33,7 @@ jobs:
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm
       - name: Install dependencies
         run: npm ci
       - name: Test Markdown and mathematics
