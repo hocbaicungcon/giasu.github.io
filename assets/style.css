@@ -44,7 +44,3 @@ nav.breadcrumb{display:flex;flex-wrap:wrap;gap:8px 12px}nav.breadcrumb a,nav.bre
 .exam-toolbar .primary:hover{background:#116e80}
 @media(max-width:620px){.exam-toolbar{gap:10px}.exam-toolbar #exam-progress{order:3;width:100%;font-size:14px}.exam-toolbar .primary{padding:11px 14px}.exam-card .primary,.article-wrap > p > .primary{width:100%}}
 .confetti-canvas{position:fixed;inset:0;z-index:20;pointer-events:none}
-/* Match rendered mathematics to the interface without flattening KaTeX's glyph metrics. */
-.katex{font-size:.98em;font-weight:500;letter-spacing:0}
-.katex .mathnormal,.katex .mathrm,.katex .textsf,.katex .mathit,.katex .mathbf{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.katex .mathbf{font-weight:650}
