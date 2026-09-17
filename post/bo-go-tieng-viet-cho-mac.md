@@ -22,7 +22,16 @@ title: 'Bộ gõ tiếng Việt cho Macbook'
 
 ✅ VietTelex (ViệtTelex / ViếtTelex) là bộ gõ Telex mã nguồn mở miễn phí, được xây dựng trên InputMethodKit của macOS để tích hợp sâu: nhanh, tiện, tối giản, mượt cho mọi app.
 
-✅ Ưu điểm của VIETTELEX - Tối giản: Chỉ Telex, chỉ Unicode dựng sẵn — không tính năng thừa. - Trực quan: Hoạt động đúng như bộ gõ hệ thống, không cần học lại. - Nhanh: ~130 ns/phím, không chạy nền — gõ nhanh cỡ nào cũng mượt. - Sử dụng chuẩn IMKit của macOS: Là bộ gõ thật của hệ thống, không phải ứng dụng chặn phím — tự đổi kiểu gõ theo từng ứng dụng, chính tả, gợi ý từ, hoàn tác hay VoiceOver đều hoạt động đúng. - Luật chính tả được biên dịch sẵn thành máy trạng thái, không cấp phát bộ nhớ khi gõ. Gõ nhanh cỡ nào cũng mượt, không mất hay loạn ký tự. - Gõ được trong Terminal & Chrome: Terminal/iTerm giữ nguyên gợi ý lệnh của shell; thanh địa chỉ Chrome, ô Excel, Spotlight đều gõ đúng — nơi các bộ gõ khác thường vỡ. - Thông minh với tiếng Anh & mã nguồn: Tự khôi phục google, github…; nhận dạng từ viết kiểu camelCase (OmS, JavaScript) để không bỏ dấu nhầm; có chế độ Telex nghiêm ngặt cho lập trình viên. - Nhẹ & riêng tư: Không chạy nền tốn CPU, không kết nối mạng, không thu thập bất kỳ dữ liệu nào.
+✅ Ưu điểm của VIETTELEX:
+
+- Tối giản: Chỉ Telex, chỉ Unicode dựng sẵn — không tính năng thừa. 
+- Trực quan: Hoạt động đúng như bộ gõ hệ thống, không cần học lại. 
+- Nhanh: ~130 ns/phím, không chạy nền — gõ nhanh cỡ nào cũng mượt. 
+- Sử dụng chuẩn IMKit của macOS: Là bộ gõ thật của hệ thống, không phải ứng dụng chặn phím — tự đổi kiểu gõ theo từng ứng dụng, chính tả, gợi ý từ, hoàn tác hay VoiceOver đều hoạt động đúng.
+- Luật chính tả được biên dịch sẵn thành máy trạng thái, không cấp phát bộ nhớ khi gõ. Gõ nhanh cỡ nào cũng mượt, không mất hay loạn ký tự.
+- Gõ được trong Terminal & Chrome: Terminal/iTerm giữ nguyên gợi ý lệnh của shell; thanh địa chỉ Chrome, ô Excel, Spotlight đều gõ đúng — nơi các bộ gõ khác thường vỡ.
+- Thông minh với tiếng Anh & mã nguồn: Tự khôi phục google, github…; nhận dạng từ viết kiểu camelCase (OmS, JavaScript) để không bỏ dấu nhầm; có chế độ Telex nghiêm ngặt cho lập trình viên.
+- Nhẹ & riêng tư: Không chạy nền tốn CPU, không kết nối mạng, không thu thập bất kỳ dữ liệu nào.
 
 ## Cách cài đặt bộ gõ tiếng Việt cho Macbook VietTelex:
 
