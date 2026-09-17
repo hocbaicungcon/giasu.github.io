@@ -1,0 +1,291 @@
+\begin{center}
+	\textbf{{\Huge ĐỀ 006}}\\
+	(Đề khảo sát lần 1 năm 2026 trường Tạ Quang Bửu - HN)
+\end{center}
+\subsubsection*{Phần I. Thí sinh trả lời từ câu 1 đến câu 12, mỗi câu hỏi chọn một phương án.}
+\setcounter{bt}{0}
+\begin{baitap}
+	Cho hình chóp $S.ABC$ có $SA$ vuông góc với mặt phẳng đáy, đáy $ABC$ là tam giác vuông tại $B$. Biết $AB=a$ và $SA=2a$. Khoảng cách từ điểm $A$ đến mặt phẳng $(SBC)$ bằng:
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $\dfrac{2\sqrt{2}a}{3}$.
+			\item $\dfrac{\sqrt{5}a}{3}$.
+			\item $\dfrac{\sqrt{5}a}{5}$.
+			\item $\dfrac{2\sqrt{5}a}{5}$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap}
+	Cho hàm số $f(x)$ có đạo hàm $f'(x)=(x-1)^2(2-x)$. Hàm số $f(x)$ đồng biến trên khoảng nào?
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $(-1;3)$.
+			\item $(2;+\infty)$.
+			\item $(-\infty;2)$.
+			\item $(2;5)$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap}
+	Một xạ thủ lần lượt bắn hai viên đạn vào một bia. Xác suất trúng đích của viên đạn thứ nhất và thứ hai lần lượt là $0{,}8$ và $0{,}7$. Biết rằng kết quả các lần bắn là độc lập với nhau. Xác suất của biến cố ``Cả hai lần bắn đều không trúng đích'' là:
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $0{,}14$.
+			\item $0{,}56$.
+			\item $0{,}06$.
+			\item $0{,}6$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap} %	\textbf{Câu 4.} 
+	Cho hàm số $y=f(x)$ xác định trên tập $\mathbb{R}$ và có đồ thị như hình bên. 		Mệnh đề nào dưới đây đúng?
+	
+	\begin{minipage}{0.7\textwidth}
+	\begin{enumerate}[\quad \bf A.]
+		\item Hàm số đạt cực đại tại $x=0$ và đạt cực tiểu tại $x=2$.
+		\item Hàm số có giá trị lớn nhất bằng $2$ và giá trị nhỏ nhất bằng $-2$.
+		\item Hàm số có giá trị cực tiểu bằng $2$.
+		\item Hàm số có ba điểm cực trị.
+	\end{enumerate}
+	\end{minipage}
+	\begin{minipage}{0.3\textwidth}
+		\begin{center}
+			\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=0.8]
+				% Define coordinate window bounds
+				\def\xmin{-1.5} \def\xmax{3.2}
+				\def\ymin{-2.8} \def\ymax{3.1}
+				
+				% Scope clipping for the function graph
+				\begin{scope}
+					\clip (\xmin,\ymin) rectangle (\xmax,\ymax);
+					% Cubic function y = x^3 - 3x^2 + 2: local max at (0,2), local min at (2,-2)
+					\draw[thick, smooth, samples=200, domain=\xmin:\xmax] 
+					plot(\x, {(\x)^3 - 3*(\x)^2 + 2});
+				\end{scope}
+				
+				% Dashed projection lines for local minimum (2, -2)
+				\draw[dashed, thin] (2,0) -- (2,-2) -- (0,-2);
+				
+				% Axes
+				\draw[->] (\xmin,0) -- (\xmax,0) node[below]{$x$};
+				\draw[->] (0,\ymin) -- (0,\ymax) node[left]{$y$};
+				
+				% Origin and key point labels
+				\fill (0,0) circle (1.5pt) node[below left]{$O$};
+				\node[above left] at (0,2) {$2$};
+				\node[above] at (2,0) {$2$};
+				\node[left] at (0,-2) {$-2$};
+			\end{tikzpicture}
+		\end{center}
+	\end{minipage}
+\end{baitap}
+\begin{baitap}%	\textbf{Câu 5.} 
+	Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác đều cạnh $a$. Cạnh bên $SA=a\sqrt{3}$ và vuông góc với mặt đáy $(ABC)$. Gọi $\varphi$ là góc nhị diện $[S,BC,A]$. Tính $\tan \varphi$.
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $\tan \varphi = \sqrt{3}$.
+			\item $\tan \varphi = \frac{1}{2}$.
+			\item $\tan \varphi = \frac{1}{\sqrt{3}}$.
+			\item $\tan \varphi = 2$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 6.} 
+	Cho hàm số $f(x)$ có bảng biến thiên như sau:
+	\begin{center}
+		\begin{tikzpicture}[scale=.8]
+			\tkzTabInit[lgt=1.5,espcl=2.5]{$x$ / 1, $f'(x)$ / 1, $f(x)$ / 2}{$-\infty$, $1$, $3$, $+\infty$}
+			\tkzTabLine{, +, 0, -, 0, +, }
+			\tkzTabVar{-/ $-\infty$, +/ $2$, -/ $-2$, +/ $+\infty$}
+		\end{tikzpicture}
+	\end{center}
+	Hàm số đã cho đạt cực tiểu tại điểm
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $x=3$.
+			\item $x=2$.
+			\item $x=1$.
+			\item $x=-2$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 7.} 
+	Đạo hàm của hàm số $y=\sin x + \cos 2x$ là:
+	\begin{multicols}{2}
+		\begin{enumerate}[\quad \bf A.]
+			\item $y'=-\cos x + 2\sin 2x$.
+			\item $y'=2\cos 2x$.
+			\item $y'=\cos x - 2\sin 2x$.
+			\item $y'=\cos x + 2\sin 2x$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 8.} 
+	Cho hình lập phương $ABCD.A'B'C'D'$ có $AC=a\sqrt{2}$. Thể tích khối lập phương đó bằng:
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $\frac{2a^3\sqrt{2}}{3}$.
+			\item $\frac{a^3}{3}$.
+			\item $2a^3\sqrt{2}$.
+			\item $a^3$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 9.} 
+	Giá trị lớn nhất của hàm số $y=x^3-3x+2$ trên đoạn $[0;2]$ bằng:
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $4$.
+			\item $2$.
+			\item $0$.
+			\item $5$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 10.} 
+	Phương trình tiếp tuyến của đồ thị $y=x^3+x$ tại điểm $M(1;2)$ là:
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $y=-4x+2$.
+			\item $y=4x-2$.
+			\item $y=-4x+6$.
+			\item $y=4x+2$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+\begin{baitap}%	\textbf{Câu 11.} 
+	Cho hàm số $y=\frac{2x+3}{x-1}$. Khẳng định nào đúng.
+	\begin{enumerate}[\quad \bf A.]
+		\item Hàm số nghịch biến trên các khoảng $(-\infty;1); (1;+\infty)$.
+		\item Hàm số nghịch biến trên khoảng $(-\infty;1) \cup (1;+\infty)$.
+		\item Hàm số nghịch biến trên $\mathbb{R} \setminus \{1\}$.
+		\item Hàm số đồng biến trên $\mathbb{R} \setminus \{1\}$.
+	\end{enumerate}
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 12.} 
+	Cho $A$ và $B$ là hai biến cố xung khắc liên quan đến một phép thử. Biết $P(A)=\frac{1}{2}, P(B)=\frac{1}{3}$, tính $P(A \cup B)$.
+	\begin{multicols}{4}
+		\begin{enumerate}[\quad \bf A.]
+			\item $\frac{5}{6}$.
+			\item $\frac{1}{6}$.
+			\item $1$.
+			\item $\frac{2}{3}$.
+		\end{enumerate}
+	\end{multicols}
+\end{baitap}
+
+\subsubsection*{Phần II. Thí sinh trả lời từ câu 1 đến câu 4, trong ý a), b), c), d) ở mỗi câu câu, thí sinh chọn ĐÚNG hoặc SAI.}
+\setcounter{bt}{0}
+\begin{baitap}
+%	\textbf{Câu 1.} 
+	Cho hàm số $f(x)=2x-4+\frac{2}{x+1}$.
+	\begin{enumerate}[\quad \bf a)]
+		\item Hàm số có đạo hàm $f'(x)=\frac{2(x^2+2x)}{(x+1)^2}$.
+		\item Giá trị nhỏ nhất của hàm số trên khoảng $(-1;+\infty)$ bằng $-2$.
+		\item Điểm cực đại của đồ thị hàm số có tọa độ $(0;-2)$.
+		\item Hàm số $y=f(x)$ có tập xác định là $D=\mathbb{R}\setminus \{-1\}$.
+	\end{enumerate}
+\end{baitap}
+
+\begin{baitap}
+%	\textbf{Câu 2.} 
+	Cho hình chóp $S.ABCD$ có $SA\perp (ABCD)$, đáy $ABCD$ là hình chữ nhật. Biết $AB=a\sqrt{2}, AD=a$ và $SA=a\sqrt{3}$.
+	\begin{enumerate}[\quad \bf a)]
+		\item Thể tích khối chóp $S.ACD$ bằng $\frac{a^3\sqrt{6}}{6}$.
+		\item Khoảng cách từ điểm $A$ đến mặt phẳng $(SBC)$ là $\frac{a\sqrt{30}}{6}$.
+		\item Góc giữa hai mặt phẳng $(SCD)$ và $(ABCD)$ là $\widehat{SDA}$.
+		\item $BC\perp (SAB)$.
+	\end{enumerate}
+\end{baitap}
+
+\begin{baitap}
+%	\textbf{Câu 3.} 
+	Một tổ có $16$ bạn học sinh gồm $7$ nam, $9$ nữ. Chọn ngẫu nhiên từ tổ ra $6$ bạn bất kì.
+	\begin{enumerate}[\quad \bf a)]
+		\item Xác suất để $6$ bạn được chọn có ít nhất $1$ nam là $\frac{9}{11}$.
+		\item Số phần tử của không gian mẫu là $n(\Omega)=C_{16}^6$.
+		\item Xác suất để $6$ bạn được chọn có đúng $2$ nữ là $\frac{45}{286}$.
+		\item Xác suất để 6 bạn được chọn toàn nam là $\frac{1}{114}$.
+	\end{enumerate}
+\end{baitap}
+
+\begin{baitap} %	\textbf{Câu 4.} 
+	Một người đang lái xe máy trên đường hẹp thì phát hiện phía trước có vật cản cách đó \SI{50}{\meter}. Ngay tại thời điểm này, người lái xe bắt đầu đạp phanh. Trong quá trình đạp phanh, xe máy chuyển động theo phương trình $s(t)=-5t^2+30t$, trong đó $s$ (đơn vị mét) là độ dài quãng đường đi được sau khi đạp phanh, $t$ (đơn vị giây) là thời gian tính từ lúc bắt đầu đạp phanh.
+	\begin{enumerate}[\quad \bf a)]
+		\item Tại thời điểm bắt đầu phanh, tốc độ xe máy là \SI{30}{\meter\per\second}.
+		\item Khi xe dừng hẳn, người đó còn cách vật cản \SI{3}{\meter}.
+		\item Kể từ lúc đạp phanh, vận tốc của xe máy giảm dần theo phương trình $v(t)=-10t+30$.
+		\item Kể từ lúc đạp phanh, xe dừng hẳn sau \SI{2}{\second}.
+	\end{enumerate}
+\end{baitap}
+
+
+\subsubsection*{Phần III. Thí sinh trả lời từ câu 1 đến câu 6 (không làm tròn các phép tính trung gian trong các câu từ 1 đến câu 6).}
+\setcounter{bt}{0}
+\begin{baitap}%	\textbf{Câu 1.} 
+	Một lớp ngôn ngữ có $60$ sinh viên trong đó $40$ sinh viên học tiếng Anh, $30$ sinh viên học tiếng Pháp. Biết rằng mỗi sinh viên trong lớp đều phải học ít nhất một ngôn ngữ. Chọn ngẫu nhiên một sinh viên. Tính xác suất của biến cố ``Sinh viên học cả tiếng Anh và tiếng Pháp''. Kết quả làm tròn đến hàng phần trăm.
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 2.} 
+	Một chuyển động có vận tốc được xác định bởi phương trình $v(t)=-t^2+3t-2$ với $t \ge 0$, trong đó $t$ tính bằng giây và $v$ tính bằng \si{\meter\per\second}. Kể từ giây thứ bao nhiêu trở đi thì vận tốc của vật giảm?
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 3.} 
+	Cho hàm số $y=x^3-4x^2+5x+2$. Hàm số có điểm cực đại và điểm cực tiểu lần lượt là $x_1, x_2$. Tính giá trị biểu thức $A=x_1-3x_2$.
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 4.} 
+	Cho hàm số $y=x-\ln x$. Tích của giá trị lớn nhất và giá trị nhỏ nhất của hàm số trên đoạn $\left[\frac{1}{2};e\right]$ bằng $ae+b$. Tính $2026a-2027b$.
+\end{baitap}
+
+\begin{baitap}%	\textbf{Câu 5.} 
+	Cho hình chóp $S.ABCD$ có đáy là hình thang vuông tại $A$ và $D$, $AB=3a, CD=a$, $SA$ vuông góc với mặt phẳng $(ABCD)$. Biết góc giữa đường thẳng $SD$ và mặt phẳng $(ABCD)$ bằng $60^\circ$ và khoảng cách từ $B$ đến $(SCD)$ bằng $\frac{a\sqrt{3}}{2}$. Thể tích khối chóp $S.ABCD$ là $\frac{m}{n}\sqrt{3}a^3$ trong đó $m,n$ là hai số nguyên dương và phân số $\frac{m}{n}$ tối giản. Tính $m+n$.
+\end{baitap}
+
+\begin{baitap}
+%	\textbf{Câu 6.} 
+	Cho một tấm bìa hình chữ nhật có kích thước $\SI{10}{\centi\meter} \times \SI{16}{\centi\meter}$. Từ tấm bìa đó, người ta cắt bỏ bốn hình vuông bằng nhau ở bốn góc (hình vuông bị cắt bỏ có độ dài cạnh là $x$ \si{\centi\meter}) rồi gập lại thành một chiếc hộp có dạng hình hộp chữ nhật không có nắp. Biết thể tích của chiếc hộp đó bằng \SI{144}{\cubic\centi\meter}. Tìm $x$.
+	%!<\usetikzlibrary{calc}>
+	
+\begin{center}
+		\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=0.65]
+		% Define main parameters
+		\def\w{8}   % Total width (16 units scaled)
+		\def\h{5}   % Total height (10 units scaled)
+		\def\x{1}   % Cutout dimension x
+		
+		% Define outer corner points
+		\coordinate (A) at (0,0);
+		\coordinate (B) at (\w,0);
+		\coordinate (C) at (\w,\h);
+		\coordinate (D) at (0,\h);
+		
+		% Draw outer boundary rectangle
+		\draw[thick] (A) -- (B) -- (C) -- (D) -- cycle;
+		
+		% Internal grid/folding lines extending across the rectangle
+		\draw[thick] (\x,0) -- (\x,\h);
+		\draw[thick] (\w-\x,0) -- (\w-\x,\h);
+		\draw[thick] (0,\x) -- (\w,\x);
+		\draw[thick] (0,\h-\x) -- (\w,\h-\x);
+		
+		% Dimension Labels
+		\node[below] at (\w/2, 0) {$16$};
+		\node[left] at (0, \h/2) {$10$};
+		
+		\node[above] at (\x/2, \h) {$x$};
+		\node[above] at (\w-\x/2, \h) {$x$};
+		\node[right] at (\w, \h-\x/2) {$x$};
+		\node[right] at (\w, \x/2) {$x$};
+	\end{tikzpicture}
+\end{center}
+\end{baitap}
