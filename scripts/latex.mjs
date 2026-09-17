@@ -21,6 +21,16 @@ function commands(s,name,transform){
  return out+s.slice(last);
 }
 export function stripComments(s){return s.split('\n').map(line=>{for(let i=0;i<line.length;i++){if(line[i]==='\\'){i++;continue;}if(line[i]==='%')return line.slice(0,i);}return line;}).join('\n');}
+function convertUnits(text){
+ const unitMath=unit=>unit.split(/\\per\b/).map(part=>{
+  let power=part.includes('\\cubic')?3:part.includes('\\square')?2:null;
+  part=part.replace(/\\(?:cubic|square)\b/g,'');
+  const symbols={meter:'m',metre:'m',second:'s',gram:'g',liter:'L',litre:'L',centi:'c',milli:'m',kilo:'k',hour:'h',minute:'min'};
+  part=part.replace(/\\([a-zA-Z]+)/g,(command,name)=>{if(!(name in symbols))throw Error(`Đơn vị LaTeX chưa hỗ trợ: ${command}`);return symbols[name];});
+  return `\\mathrm{${part}}${power?`^{${power}}`:''}`;
+ }).join('/');
+ return text.replace(/\\SI\{([^{}]*)\}\{([^{}]*)\}/g,(_,value,unit)=>`${value}\\,${unitMath(unit)}`).replace(/\\si\{([^{}]*)\}/g,(_,unit)=>unitMath(unit));
+}
 export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ biên dịch TikZ');}}={}){
  let s=stripComments(source.replace(/\r\n/g,'\n'));
  s=s.replace(/\\begin\{traloi\}[\s\S]*?\\end\{traloi\}/g,'');
@@ -28,7 +38,8 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
  const stored=[];const hold=v=>{const k=`LATEXPLACEHOLDER${stored.length}END`;stored.push(v);return k;};
  s=s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,t=>hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(t)})\n\n`));
  s=s.replace(/\\\[([\s\S]*?)\\\]/g,(_,m)=>`$$\n${m}\n$$`).replace(/\\\(([\s\S]*?)\\\)/g,(_,m)=>`$${m}$`);
- s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.replace(/\\SI\{([^{}]*)\}\{([^{}]*)\}/g,'$1\\,\\mathrm{$2}').replace(/\\si\{([^{}]*)\}/g,'\\mathrm{$1}')));
+ s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(convertUnits(m)));
+ s=s.replace(/\\SI\{[^{}]*\}\{[^{}]*\}|\\si\{[^{}]*\}/g,m=>hold(`$${convertUnits(m)}$`));
  s=s.replace(/\\setcounter\{bt\}\{0\}/g,'LATEXRESETCOUNTER');
  s=s.replace(/\\setlist(?:\[[^\]]*\])?\{[^\n]*\}/g,'');
  s=s.replace(/\\begin\{(?:minipage|multicols)\}(?:\[[^\]]*\])?\{[^}]*\}/g,'').replace(/\\end\{(?:minipage|multicols)\}/g,'');
