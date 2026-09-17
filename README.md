@@ -140,3 +140,7 @@ explanation: 'Hai nửa cộng lại bằng một: $1/2+1/2=1$.'
 `answers` liệt kê các cách trả lời được chấp nhận; luôn đặt giá trị trong dấu nháy. Hệ thống bỏ khoảng trắng thừa và không phân biệt chữ hoa/thường, nhưng vẫn phân biệt dấu tiếng Việt. Không tự biến đổi biểu thức toán hoặc chấm bài tự luận; hãy liệt kê các cách viết tương đương nếu cần. Dùng dấu nháy đơn cho chuỗi LaTeX có dấu `\` để YAML giữ nguyên công thức.
 
 Câu hỏi, lựa chọn và giải thích hỗ trợ Markdown trong dòng và `$...$`. Kết quả chỉ hiển thị trong phiên hiện tại, tải lại trang sẽ xóa lựa chọn; không gửi điểm về máy chủ. Đáp án có trong HTML nên tính năng phù hợp để tự luyện, không dùng làm bài thi bảo mật. Xem ví dụ hoạt động trong `post/ham-so-bac-hai.md`.
+
+### Bài kiến thức chung
+
+Có thể bỏ trường `grade` nếu bài không thuộc riêng lớp nào; website hiển thị **Mọi lớp**. Bài này xuất hiện khi chọn **Tất cả lớp**. Nếu ghi `grade`, vẫn phải là số nguyên từ 1 đến 12. Tên `category` không phân biệt hoa/thường (ví dụ `Công Nghệ` được chuẩn hóa thành `Công nghệ`).
