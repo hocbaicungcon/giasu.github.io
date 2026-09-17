@@ -91,3 +91,52 @@ Tài liệu GitHub: https://docs.github.com/en/pages/getting-started-with-github
 ## Nếu trang công khai hiển thị README thay vì giao diện
 
 Vào **Settings → Pages → Build and deployment → Source**, chuyển từ **Deploy from a branch** sang **GitHub Actions**. Không chọn Jekyll: workflow của dự án dựng trang chủ trong `dist/index.html`. Sau đó chạy **Actions → Build and deploy GitHub Pages → Run workflow** trên nhánh mặc định. Nếu có workflow Jekyll tự tạo riêng, tắt workflow đó để tránh ghi đè bản deploy.
+
+## Nhúng video YouTube
+
+Chèn khối `youtube` ở bất kỳ vị trí nào trong bài. Thay URL mẫu bằng video bài giảng của bạn (video mẫu bên dưới là video giới thiệu trình phát của YouTube, không phải bài học):
+
+````markdown
+```youtube
+url: 'https://www.youtube.com/watch?v=M7lc1UVf-VE'
+title: 'Tên video bài giảng'
+```
+````
+
+Hỗ trợ URL `youtube.com/watch?v=...`, `youtu.be/...`, `/shorts/...`, `/embed/...` hoặc ID video 11 ký tự. Khung video tự co theo màn hình, không tự phát, có nút toàn màn hình và liên kết mở trên YouTube. Video phải công khai hoặc không công khai có cho phép nhúng; video riêng tư, bị xóa hoặc bị chủ sở hữu chặn nhúng sẽ không phát được. Tham số thời gian trong URL hiện không được áp dụng. Cần Internet để xem video.
+
+## Câu hỏi tương tác
+
+Chèn nhiều khối `quiz` trong cùng bài. Mỗi câu chấm độc lập, có phản hồi, giải thích và nút làm lại.
+
+### Trắc nghiệm một đáp án
+
+````markdown
+```quiz
+type: choice
+question: 'Nghiệm của $2x+4=0$ là bao nhiêu?'
+options:
+  - '$x=2$'
+  - '$x=-2$'
+  - '$x=0$'
+answer: 2
+explanation: 'Chuyển vế được $2x=-4$, nên $x=-2$.'
+```
+````
+
+`answer` là vị trí đáp án đúng, bắt đầu từ **1**. `options` cần ít nhất hai lựa chọn.
+
+### Nhập đáp án ngắn
+
+````markdown
+```quiz
+type: text
+question: 'Tính $1/2+1/2$.'
+answers: ['1', '1.0', '1,0']
+explanation: 'Hai nửa cộng lại bằng một: $1/2+1/2=1$.'
+```
+````
+
+`answers` liệt kê các cách trả lời được chấp nhận; luôn đặt giá trị trong dấu nháy. Hệ thống bỏ khoảng trắng thừa và không phân biệt chữ hoa/thường, nhưng vẫn phân biệt dấu tiếng Việt. Không tự biến đổi biểu thức toán hoặc chấm bài tự luận; hãy liệt kê các cách viết tương đương nếu cần. Dùng dấu nháy đơn cho chuỗi LaTeX có dấu `\` để YAML giữ nguyên công thức.
+
+Câu hỏi, lựa chọn và giải thích hỗ trợ Markdown trong dòng và `$...$`. Kết quả chỉ hiển thị trong phiên hiện tại, tải lại trang sẽ xóa lựa chọn; không gửi điểm về máy chủ. Đáp án có trong HTML nên tính năng phù hợp để tự luyện, không dùng làm bài thi bảo mật. Xem ví dụ hoạt động trong `post/ham-so-bac-hai.md`.
