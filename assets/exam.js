@@ -27,9 +27,17 @@ function render(){
 }
 function tick(){const seconds=Math.max(0,Math.ceil((state.deadline-Date.now())/1000));$('exam-timer').textContent=`${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;if(!seconds)finish(true);}
 function finish(expired=false){if(!state||state.finished)return;if(!expired){const blank=exam.questions.filter(q=>!answered(q)).length;if(!confirm(blank?`Còn ${blank} câu chưa hoàn thành. Bạn muốn nộp bài?`:'Bạn muốn nộp bài và xem kết quả?'))return;}state.finished=expired?state.deadline:Date.now();state.expired=expired;save();clearInterval(clock);showResult();$('exam-result').focus();}
+function confetti(){
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+ const canvas=document.createElement('canvas');canvas.className='confetti-canvas';document.body.append(canvas);
+ const ctx=canvas.getContext('2d'),colors=['#42caea','#fd827b','#f6c978','#75c7a5','#8f9ee8'],pieces=[];
+ const resize=()=>{canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);};resize();addEventListener('resize',resize,{once:true});
+ for(let i=0;i<110;i++)pieces.push({x:innerWidth/2+(Math.random()-.5)*160,y:innerHeight*.22+(Math.random()-.5)*45,vx:(Math.random()-.5)*8,vy:Math.random()*-8-3,w:Math.random()*8+5,h:Math.random()*13+7,r:Math.random()*Math.PI,c:colors[i%colors.length]});
+ const started=performance.now();function frame(now){ctx.clearRect(0,0,innerWidth,innerHeight);for(const p of pieces){p.x+=p.vx;p.vy+=.18;p.y+=p.vy;p.r+=.12;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillStyle=p.c;ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);ctx.restore();}if(now-started<3600)requestAnimationFrame(frame);else canvas.remove();}requestAnimationFrame(frame);
+}
 function showResult(){
  clearInterval(clock);const result=gradeExam(exam.questions,state.answers);
- $('exam-result').hidden=false;$('submit-exam').hidden=true;$('exam-timer').textContent=state.expired?'Đã hết giờ':'Đã nộp bài';
+ $('exam-result').hidden=false;$('submit-exam').hidden=true;$('exam-timer').textContent=state.expired?'Đã hết giờ':'Đã nộp bài';if(!state.expired&&!state.confettiShown){state.confettiShown=true;save();confetti();}
  $('score').textContent=result.complete?`Điểm: ${result.score.toFixed(2)}/10`:'Đề chưa đủ đáp án nên chưa tính tổng điểm. Xem phản hồi từng câu bên dưới.';
  const seconds=Math.max(0,Math.min(exam.duration*60,Math.floor((state.finished-state.started)/1000)));$('elapsed').textContent=`Thời gian làm bài: ${Math.floor(seconds/60)} phút ${seconds%60} giây.`;
  exam.questions.forEach((q,i)=>{const card=$(q.id);card.querySelectorAll('input').forEach(el=>el.disabled=true);const review=card.querySelector('.exam-review');review.hidden=false;review.replaceChildren();const status=document.createElement('strong');status.textContent=result.scores[i]===null?'Chưa có đáp án':result.scores[i]===1?'Chính xác':result.scores[i]===0?'Chưa đúng hoặc chưa trả lời':`Đúng ${Math.round(result.scores[i]*q.options.length)}/${q.options.length} ý`;review.append(status);
