@@ -4,11 +4,17 @@ import { fileURLToPath } from 'node:url';
 import { marked } from 'marked';
 import katex from 'katex';
 import YAML from 'yaml';
+import {renderVideo,renderQuiz} from './interactive.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'dist');
 export const subjects = ['Toán học','Tiếng Việt','Ngữ văn','Tiếng Anh','Tự nhiên và Xã hội','Khoa học','Khoa học tự nhiên','Vật lí','Hóa học','Sinh học','Lịch sử và Địa lí','Lịch sử','Địa lí','Đạo đức','Giáo dục công dân','Giáo dục kinh tế và pháp luật','Tin học','Công nghệ','Âm nhạc','Mĩ thuật','Giáo dục thể chất','Hoạt động trải nghiệm'];
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 marked.use({extensions:[{name:'mathBlock',level:'block',start:s=>s.indexOf('$$'),tokenizer(s){const m=/^\$\$\s*\n?([\s\S]+?)\$\$(?:\n|$)/.exec(s);if(m)return {type:'mathBlock',raw:m[0],text:m[1]};},renderer:t=>katex.renderToString(t.text,{displayMode:true,throwOnError:true})},{name:'mathInline',level:'inline',start:s=>s.indexOf('$'),tokenizer(s){const m=/^\$(?!\$)((?:\\.|[^$\n])+?)\$/.exec(s);if(m)return {type:'mathInline',raw:m[0],text:m[1]};},renderer:t=>katex.renderToString(t.text,{throwOnError:true})}]});
+marked.use({renderer:{code(token){
+ if(token.lang==='youtube')return renderVideo(token.text);
+ if(token.lang==='quiz')return renderQuiz(token.text,text=>marked.parseInline(text));
+ return false;
+}}});
 export function parsePost(source, filename) {
  const match=/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/.exec(source);
  if(!match)throw Error(`${filename}: thiếu thông tin đầu bài (front matter)`);
@@ -21,11 +27,11 @@ export function parsePost(source, filename) {
  if(!['Bài học','Bài tập'].includes(data.type))throw Error(`${filename}: type phải là Bài học hoặc Bài tập`);
  const slug=path.basename(filename,'.md');
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
- return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:marked.parse(match[2])};
+ return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:(()=>{try{return marked.parse(match[2]);}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
 }
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>'};
 const date=s=>new Date(s+'T00:00:00Z').toLocaleDateString('vi-VN',{timeZone:'UTC'});
-function shell(title,description,body,prefix='./') {return `<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · gia sư thông minh</title><meta name="description" content="${esc(description)}"><meta name="theme-color" content="#42caea"><link rel="icon" type="image/svg+xml" sizes="any" href="${prefix}favicon.svg"><link rel="stylesheet" href="${prefix}assets/style.css"><link rel="stylesheet" href="${prefix}assets/katex/katex.min.css"></head><body><a class="skip" href="#main">Đến nội dung</a><header><div class="nav wrap"><a class="brand" href="${prefix}"><img src="${prefix}hocbaicungcon_round.svg" alt="" width="46" height="46"><span>gia sư <b>thông minh<span class="dot">.</span></b></span></a><nav aria-label="Điều hướng chính"><a href="${prefix}#thu-vien">Thư viện bài học</a><a href="${prefix}#mon-hoc">Môn học</a><a class="nav-pill" href="${prefix}#gioi-thieu">Cùng con học tốt <span>↗</span></a></nav></div></header>${body}<footer class="wrap"><a class="brand small" href="${prefix}">gia sư thông minh<span class="dot">.</span></a><p>Mỗi bài học, một bước tiến.</p><a class="footer-link" href="https://amthanhnhapkhau.com.vn/danh-muc/phong-hop/thiet-bi-may-tro-giang/">Loa - Micro Trợ Giảng</a></footer></body></html>`;}
+function shell(title,description,body,prefix='./') {return `<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · gia sư thông minh</title><meta name="description" content="${esc(description)}"><meta name="theme-color" content="#42caea"><link rel="icon" type="image/svg+xml" sizes="any" href="${prefix}favicon.svg"><link rel="stylesheet" href="${prefix}assets/style.css"><link rel="stylesheet" href="${prefix}assets/katex/katex.min.css"></head><body><a class="skip" href="#main">Đến nội dung</a><header><div class="nav wrap"><a class="brand" href="${prefix}"><img src="${prefix}hocbaicungcon_round.svg" alt="" width="46" height="46"><span>gia sư <b>thông minh<span class="dot">.</span></b></span></a><nav aria-label="Điều hướng chính"><a href="${prefix}#thu-vien">Thư viện bài học</a><a href="${prefix}#mon-hoc">Môn học</a><a class="nav-pill" href="${prefix}#gioi-thieu">Cùng con học tốt <span>↗</span></a></nav></div></header>${body}<script src="${prefix}assets/lesson.js" defer></script><footer class="wrap"><a class="brand small" href="${prefix}">gia sư thông minh<span class="dot">.</span></a><p>Mỗi bài học, một bước tiến.</p><a class="footer-link" href="https://amthanhnhapkhau.com.vn/danh-muc/phong-hop/thiet-bi-may-tro-giang/">loa - micro trợ giảng</a></footer></body></html>`;}
 function card(p,i){return `<article class="card" data-slug="${p.slug}"><a class="card-link" href="./bai-viet/${p.slug}.html"><div class="card-art tone-${i%4}" aria-hidden="true"><span class="art-label">${esc(p.category)}</span><span class="art-symbol">${icons[p.category]||'✧'}</span><span class="art-grade">${String(p.grade).padStart(2,'0')}<small>LỚP</small></span></div><div class="card-content"><div class="eyebrow"><span>${esc(p.type)}</span><span>•</span><span>Lớp ${p.grade}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.description)}</p></div></a><div class="card-bottom"><div class="tags">${p.tags.slice(0,2).map(t=>`<button class="tag" data-tag="${esc(t)}">#${esc(t)}</button>`).join('')}</div><span>${p.minutes} phút đọc ↗</span></div></article>`;}
 export function build(){
  const posts=fs.readdirSync(path.join(root,'post')).filter(f=>f.endsWith('.md')).map(f=>parsePost(fs.readFileSync(path.join(root,'post',f),'utf8'),f)).sort((a,b)=>b.date.localeCompare(a.date)||a.title.localeCompare(b.title,'vi'));

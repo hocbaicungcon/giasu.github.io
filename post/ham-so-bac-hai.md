@@ -43,3 +43,23 @@ Tìm đỉnh của parabol $y=2x^2-4x+1$.
 **Gợi ý:** Tính hoành độ đỉnh trước, sau đó thay vào hàm số.
 
 **Đáp án:** $I(1,-1)$.
+
+## 5. Luyện tập tương tác
+
+```quiz
+type: choice
+question: 'Đỉnh của parabol $y=x^2-4x+3$ là điểm nào?'
+options:
+  - '$I(2,-1)$'
+  - '$I(-2,1)$'
+  - '$I(2,3)$'
+answer: 1
+explanation: 'Ta có $x_I=-b/(2a)=2$. Thay $x=2$ vào hàm số được $y_I=-1$.'
+```
+
+```quiz
+type: text
+question: 'Trục đối xứng của $y=2x^2-4x+1$ là $x=a$. Nhập giá trị của $a$.'
+answers: ['1', '1,0', '1.0']
+explanation: 'Hoành độ đỉnh là $a=-(-4)/(2\times2)=1$, nên trục đối xứng là $x=1$.'
+```
