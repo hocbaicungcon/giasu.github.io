@@ -18,3 +18,10 @@ test('invalid interactive blocks report filename',()=>{
   assert.throws(()=>parsePost(source+'\n\n```'+block+'\n```','loi.md'),/loi.md/);
  }
 });
+
+test('general posts allow omitted grade and normalize category case',()=>{
+ const post=parsePost(source.replace('grade: 10\n','').replace('category: Toán học','category: " TOÁN HỌC "'),'kien-thuc-chung.md');
+ assert.equal(post.grade,undefined);
+ assert.equal(post.category,'Toán học');
+ assert.throws(()=>parsePost(source.replace('grade: 10','grade: null'),'loi-lop.md'),/lớp/);
+});
