@@ -1,10 +1,10 @@
 ---
 title: "Bộ gõ tiếng Việt cho Macbook"
 description: "Bộ gõ tiếng Việt cho Macbook VietTelex"
-category: "Công Nghệ"
+category: "CNTT"
 type: "Bài học"
 date: "2026-09-17"
-tags: ["công nghệ", "macos", "telex"]
+tags: ["công nghệ", "macos", "telex", "máy tính"]
 ---
 
 ## Bộ gõ tiếng Việt cho Macbook
