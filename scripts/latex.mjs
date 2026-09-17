@@ -26,7 +26,7 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
  const stored=[];const hold=v=>{const k=`LATEXPLACEHOLDER${stored.length}END`;stored.push(v);return k;};
  s=s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,t=>hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(t)})\n\n`));
  s=s.replace(/\\\[([\s\S]*?)\\\]/g,(_,m)=>`$$\n${m}\n$$`).replace(/\\\(([\s\S]*?)\\\)/g,(_,m)=>`$${m}$`);
- s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.replace(/\\si\{([^{}]*)\}/g,'\\mathrm{$1}')));
+ s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.replace(/\\SI\{([^{}]*)\}\{([^{}]*)\}/g,'$1\\,\\mathrm{$2}').replace(/\\si\{([^{}]*)\}/g,'\\mathrm{$1}')));
  s=s.replace(/\\setcounter\{bt\}\{0\}/g,'LATEXRESETCOUNTER');
  s=s.replace(/\\setlist(?:\[[^\]]*\])?\{[^\n]*\}/g,'');
  s=s.replace(/\\begin\{(?:minipage|multicols)\}(?:\[[^\]]*\])?\{[^}]*\}/g,'').replace(/\\end\{(?:minipage|multicols)\}/g,'');
@@ -57,12 +57,14 @@ export function importLatex(root){
   const stem=file.replace(/\.tex$/i,'');const slug=stem.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[đĐ]/g,'d').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   if(!slug||slugs.has(slug))throw Error(`${file}: tên bài trùng hoặc không hợp lệ: ${slug}`);slugs.add(slug);
   const images=[];
+  const background=/--paper:\s*#([0-9a-f]{6})\b/i.exec(fs.readFileSync(path.join(root,'assets/style.css'),'utf8'))?.[1];
+  if(!background)throw Error('Không tìm thấy màu nền --paper dạng HEX trong style.css');
   const result=convertLatex(fs.readFileSync(path.join(dir,file),'utf8'),{renderTikz(tikz){
    if(/\\(?:input|include|write|openout|read|catcode|csname|usepackage|documentclass)\b/.test(tikz))throw Error(`${file}: lệnh không được phép trong hình TikZ`);
-   const hash=createHash('sha256').update(tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
+   const hash=createHash('sha256').update('paper-background-v1:'+background+':'+tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
    const png=path.join(cache,'figure.png');
    if(!fs.existsSync(png)){
-    fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{amsmath,amssymb,tkz-tab}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\begin{document}\n'+tikz+'\n\\end{document}');
+    fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{amsmath,amssymb,tkz-tab}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n'+tikz+'\n\\end{document}');
     run('pdflatex',['-no-shell-escape','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);
     run('pdftoppm',['-png','-singlefile','-scale-to','1600','figure.pdf','figure'],cache);
    }
