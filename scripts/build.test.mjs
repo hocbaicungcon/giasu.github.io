@@ -1,5 +1,21 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+test('new exam LaTeX constructs render as numbers, lists, tables and display math',()=>{
+ const input=String.raw`In \num{8000} tờ, $\num{3600}$ mỗi giờ.
+\begin{itemize}\item Một $x$.\item Hai.\end{itemize}
+\begin{tabular}{|c|r|}\hline Khối lượng & $[150;155)$ \\\hline Số quả & 2 \\\hline\end{tabular}
+Đơn vị $\si{\milli\gram/(\liter\cdot\hour)}$.
+Trước $$f(v)=\frac{8}{v}$$ Sau.`;
+ const converted=convertLatex(input).body;
+ assert.ok(converted.includes('8000'));
+ assert.ok(converted.includes('$3600$'));
+ assert.match(converted,/Trước\n\n\$\$\nf\(v\)/);
+ const html=parsePost(source+'\n\n'+converted,'new-exam.md').html;
+ assert.match(html,/<ul>/);assert.match(html,/<table>/);assert.match(html,/<td[^>]*>2<\/td>/);
+ assert.match(html,/katex-display/);assert.match(html,/Sau\./);
+ assert.doesNotMatch(html,/katex-error/);
+ assert.throws(()=>convertLatex(String.raw`\begin{tabular}{cc}A & B & C\end{tabular}`),/số ô/);
+});
 import {parsePost,build} from './build.mjs';
 const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategory: Toán học\ngrade: 10\ntype: Bài học\ndate: "2026-09-17"\ntags: [toán 10]\n---\nCông thức $x_1 + x_2$.\n\n$$\n\\frac{a}{b} = x^2\n$$\n\n```js\nconst cost = "$5";\n```';
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
