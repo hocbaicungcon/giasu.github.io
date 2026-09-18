@@ -29,6 +29,8 @@ footer{flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
 
 nav.breadcrumb{display:flex;flex-wrap:wrap;gap:8px 12px}nav.breadcrumb a,nav.breadcrumb a:first-child{display:inline;font-size:inherit}nav.breadcrumb a:hover{text-decoration:underline;text-underline-offset:3px}nav.breadcrumb>span{color:var(--muted)}
 
+@media(max-width:620px){footer.wrap{flex-direction:column;flex-wrap:nowrap;justify-content:center;align-items:center;gap:12px;padding-block:28px;text-align:center}footer.wrap>p,footer.wrap>a{margin:0;max-width:100%}footer.wrap>.brand{justify-content:center}}
+
 .prose img[src*="assets/latex/"]{display:block;width:auto;min-width:min(100%,320px);height:auto;max-width:100%;max-height:none;margin:24px auto;object-fit:contain}
 
 /* Answer labels already provide list markers in converted LaTeX exercises. */
