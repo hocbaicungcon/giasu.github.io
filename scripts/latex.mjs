@@ -22,11 +22,12 @@ function commands(s,name,transform){
 }
 export function stripComments(s){return s.split('\n').map(line=>{for(let i=0;i<line.length;i++){if(line[i]==='\\'){i++;continue;}if(line[i]==='%')return line.slice(0,i);}return line;}).join('\n');}
 function convertUnits(text){
+ text=text.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
  const unitMath=unit=>unit.split(/\\per\b/).map(part=>{
   let power=part.includes('\\cubic')?3:part.includes('\\square')?2:null;
   part=part.replace(/\\(?:cubic|square)\b/g,'');
   const symbols={meter:'m',metre:'m',second:'s',gram:'g',liter:'L',litre:'L',centi:'c',milli:'m',kilo:'k',hour:'h',minute:'min'};
-  part=part.replace(/\\([a-zA-Z]+)/g,(command,name)=>{if(!(name in symbols))throw Error(`Đơn vị LaTeX chưa hỗ trợ: ${command}`);return symbols[name];});
+  part=part.replace(/\\([a-zA-Z]+)/g,(command,name)=>{if(name==='cdot')return '\\cdot ';if(!(name in symbols))throw Error(`Đơn vị LaTeX chưa hỗ trợ: ${command}`);return symbols[name];});
   return `\\mathrm{${part}}${power?`^{${power}}`:''}`;
  }).join('/');
  return text.replace(/\\SI\{([^{}]*)\}\{([^{}]*)\}/g,(_,value,unit)=>`${value}\\,${unitMath(unit)}`).replace(/\\si\{([^{}]*)\}/g,(_,unit)=>unitMath(unit));
@@ -38,7 +39,8 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
  const stored=[];const hold=v=>{const k=`LATEXPLACEHOLDER${stored.length}END`;stored.push(v);return k;};
  s=s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,t=>hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(t)})\n\n`));
  s=s.replace(/\\\[([\s\S]*?)\\\]/g,(_,m)=>`$$\n${m}\n$$`).replace(/\\\(([\s\S]*?)\\\)/g,(_,m)=>`$${m}$`);
- s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(convertUnits(m)));
+ s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.startsWith('$$')?`\n\n$$\n${convertUnits(m.slice(2,-2)).trim()}\n$$\n\n`:convertUnits(m)));
+ s=s.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
  s=s.replace(/\\SI\{[^{}]*\}\{[^{}]*\}|\\si\{[^{}]*\}/g,m=>hold(`$${convertUnits(m)}$`));
  s=s.replace(/\\setcounter\{bt\}\{0\}/g,'LATEXRESETCOUNTER');
  s=s.replace(/\\setlist(?:\[[^\]]*\])?\{[^\n]*\}/g,'');
@@ -53,6 +55,17 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
  s=s.replace(/\\begin\{enumerate\}(?:\[([^\]]*)\])?([\s\S]*?)\\end\{enumerate\}/g,(_,style,body)=>{
   if(body.includes('\\begin{enumerate}'))throw Error('Danh sách LaTeX lồng nhau chưa hỗ trợ');
   const lower=style?.includes('a)');let n=0;return '\n\n'+body.split(/\\item\s*/).filter(x=>x.trim()).map(item=>`- **${String.fromCharCode((lower?97:65)+n++)}${lower?')':'.'}** ${item.trim()}`).join('\n\n')+'\n\n';
+ });
+ s=s.replace(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/g,(_,body)=>{
+  if(body.includes('\\begin{itemize}'))throw Error('Danh sách LaTeX lồng nhau chưa hỗ trợ');
+  return '\n\n'+body.split(/\\item\s*/).filter(x=>x.trim()).map(x=>`- ${x.trim()}`).join('\n\n')+'\n\n';
+ });
+ s=s.replace(/\\begin\{tabular\}\{([|lcr\s]+)\}([\s\S]*?)\\end\{tabular\}/g,(_,spec,body)=>{
+  const align=[...spec].filter(c=>/[lcr]/.test(c)).map(c=>c==='c'?':---:':c==='r'?'---:':':---');
+  const rows=body.replace(/\\hline\b/g,'').split(/\\\\/).map(r=>r.trim()).filter(Boolean).map(r=>r.split(/(?<!\\)&/).map(c=>c.trim().replace(/\\&/g,'&').replace(/\|/g,'&#124;')));
+  if(!rows.length||rows.some(r=>r.length!==align.length))throw Error('Bảng tabular có số ô không khớp số cột');
+  const row=r=>`| ${r.join(' | ')} |`;
+  return '\n\n'+[row(rows[0]),row(align),...rows.slice(1).map(row)].join('\n')+'\n\n';
  });
  s=s.replace(/\\(?:vspace|hspace)\*?\{[^}]*\}/g,'').replace(/\\(?:quad|qquad|noindent)\b/g,' ').replace(/\\%/g,'%');
  s=s.replace(/[{}]/g,'');
