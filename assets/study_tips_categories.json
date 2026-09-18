@@ -1,0 +1,146 @@
+[
+    {
+        "category_count": 10,
+        "category_des": "Put your books and materials down and stretch for a minute or two.",
+        "category_name": "Steps to Effective Study",
+        "id": 1
+    },
+    {
+        "category_count": 25,
+        "category_des": "Leave and study at the library if your home or dorm setting is too distracting.",
+        "category_name": "Study Setting",
+        "id": 2
+    },
+    {
+        "category_count": 120,
+        "category_des": "A straight back chair, that isn’t too comfortable, is the best to study in. You don’t want to get too cozy!",
+        "category_name": "Fast and Effective Study Tips",
+        "id": 3
+    },
+    {
+        "category_count": 25,
+        "category_des": "Carry flash cards and use for a few minutes when quiet time is available, for example when waiting in line.",
+        "category_name": "Remember Fast and More Tips",
+        "id": 4
+    },
+    {
+        "category_count": 25,
+        "category_des": "Impose an Electronic Lockdown when studying for tests: no phone, Internet, television, or iPod.",
+        "category_name": "Exam Preparation Tips",
+        "id": 5
+    },
+    {
+        "category_count": 15,
+        "category_des": "Remember to write your name on the exam paper. You would not believe how many people have forgotten to do it!",
+        "category_name": "Success on the Exam Day Tips",
+        "id": 6
+    },
+    {
+        "category_count": 25,
+        "category_des": "Use color–coded sticky notes to remember vocabulary, main ideas or examples when you review notes.",
+        "category_name": "Lecture Tips",
+        "id": 7
+    },
+    {
+        "category_count": 25,
+        "category_des": "Define a purpose for reading and then select a strategy for that purpose. Ask, “Should I survey, skim, or read closely?”",
+        "category_name": "Reading Tips",
+        "id": 8
+    },
+    {
+        "category_count": 25,
+        "category_des": "Write for brief periods, perhaps 20 to 40 minutes; take a short 5– to 10– minute break, then resume writing.",
+        "category_name": "Writing Tips",
+        "id": 9
+    },
+    {
+        "category_count": 25,
+        "category_des": "Look for answers in other test questions when taking a multiple–choice examination.",
+        "category_name": "Test Taking Tips",
+        "id": 10
+    },
+    {
+        "category_count": 22,
+        "category_des": "Start with the 100 most common words.",
+        "category_name": "Learn any Languages Tips",
+        "id": 11
+    },
+    {
+        "category_count": 25,
+        "category_des": "Set study goals to help focus your attention for specific periods—monitoring your progress helps to reinforce your efforts.",
+        "category_name": "Focus Skill Tips",
+        "id": 12
+    },
+    {
+        "category_count": 25,
+        "category_des": "Clear your working space so that items do not dissuade or distract you from studying - or go to the library.",
+        "category_name": "Stress Management Tips",
+        "id": 13
+    },
+    {
+        "category_count": 25,
+        "category_des": "Schedule hour–by–hour, course–by–course study time. Check off each topic as completed, smile, and enjoy a break.",
+        "category_name": "Time Management Tips",
+        "id": 14
+    },
+    {
+        "category_count": 25,
+        "category_des": "Store pens pencils, staples, tape and other supplies in mugs or containers for easy access.",
+        "category_name": "Organization Skill Tips",
+        "id": 15
+    },
+    {
+        "category_count": 15,
+        "category_des": "Walk, bike, or skate to school or use stairs rather than an elevator.",
+        "category_name": "Wellness Tips",
+        "id": 16
+    },
+    {
+        "category_count": 15,
+        "category_des": "List people or resources that have helped you in the past, reconnect with them and tell them how you are doing.",
+        "category_name": "Reaching Out Tips",
+        "id": 17
+    },
+    {
+        "category_count": 15,
+        "category_des": "Schedule visits to a physician to renew prescriptions for chronic physical, emotional or attention–related difficulties.",
+        "category_name": "Life Skills Tips",
+        "id": 18
+    },
+    {
+        "category_count": 21,
+        "category_des": "Analyze, Then Write\nEssay prompts on the new SAT ask you to analyze an argument presented in a passage. The graders want to see that you fully grasp the author's point and can write a clear explanation of how he or she builds the argument. You have fifty minutes for the essay, and you should spend a good 10-15 minutes making sure you understand exactly what the author is saying and how you'll outline your essay based on your analysis.",
+        "category_name": "Sat Tips and Tricks",
+        "id": 19
+    },
+    {
+        "category_count": 27,
+        "category_des": "No turning back.\n\nCheck if you have all the things you need to take for the GRE.",
+        "category_name": "Tips To Ace The GRE",
+        "id": 20
+    },
+    {
+        "category_count": 10,
+        "category_des": "Use The Supplements That Come With Your Textbook. Textbook publishers have enriched modern publications with extra material (such as CD-ROMs or online modules) that can be used to help students gain extra practice in math. Some of these materials may also include a solution or explanation guide, which can help you with working through math problems on your own.",
+        "category_name": "Math Study Tips",
+        "id": 21
+    },
+    {
+        "category_count": 10,
+        "category_des": "Draw and label diagrams. Sketching a diagram of a biological process can be a simpler way to learn the concept than just reading about it",
+        "category_name": "Study for Biology",
+        "id": 22
+    },
+    {
+        "category_count": 4,
+        "category_des": "Study? But here’s the important part: invite a friend from your class to join you",
+        "category_name": "Tips for the Lazy Student",
+        "id": 23
+    },
+    {
+        "category_count": 45,
+        "category_des": "Excellence is to do a common thing in an uncommon way.",
+        "category_name": "Study Quotes",
+        "id": 24
+    }
+]

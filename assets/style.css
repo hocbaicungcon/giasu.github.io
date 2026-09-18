@@ -77,3 +77,33 @@ header{box-shadow:0 2px 14px #243b4010}
 .exam-toolbar{gap:6px;padding:10px 12px}.exam-toolbar #exam-progress{margin-inline:4px}.exam-question fieldset{margin:8px 0}.exam-question .quiz-option{gap:8px;padding:8px 10px;margin:6px 0}.exam-question .truefalse-row{padding:9px 0}
 .brand-name{color:#1598b3;font-weight:800}
 .nav-pill{background:#d8f1ef;border:1px solid #b6ddd8;box-shadow:0 4px 12px #243b4012;color:#146d76}.nav-pill:hover{background:#c7e9e7;color:#0e5c67}
+/* Tăng tương phản giữa các khu vực, vẫn giữ bảng màu của logo. */
+:root{--muted:#5f7478;--line:#cbdedb;--paper:#f4f8f6}
+header{border-bottom-color:#bfd6d2;box-shadow:0 3px 16px #243b4018}.hero{background:linear-gradient(135deg,#fff 0%,#eaf7f5 100%)}.subject-section{background:linear-gradient(135deg,#d5f0ee 0%,#f7eadf 100%);border-color:#b7d9d4}.library{box-shadow:0 12px 34px #243b4015}.card{border-color:#c5dcd7;box-shadow:0 6px 18px #243b4018}.about{border-color:#e7c8b2;box-shadow:0 10px 28px #243b4018}.article-wrap,.exam-wrap{box-shadow:0 12px 34px #243b4015;border-color:#bfd9d4}.category.active{background:#d3eeee;color:#0b6d7c}.tag{background:#e2f0ed;color:#456f70}.exam-question{border-color:#bdd7d1;box-shadow:0 5px 18px #243b4016}
+/* Góc giải trí: cùng bảng màu xanh ngọc và cam của website. */
+.fun-page{padding-top:36px;padding-bottom:60px;min-height:65vh}.fun-page h1{font-size:clamp(30px,5vw,46px);margin:22px 0 12px}.fun-page>.breadcrumb{display:flex;flex-wrap:wrap;gap:8px}.fun-intro{color:var(--muted);max-width:720px}.fun-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:30px 0 44px}.fun-tile{display:flex;justify-content:space-between;gap:12px;padding:24px;border:1px solid #9fcfca;border-radius:16px;background:#ddf1ee;color:#165c64;font-weight:750;text-decoration:none}.fun-tile:hover{background:#c7e9e5}.fun-player{max-width:850px;margin:28px auto;background:#fff;border:1px solid #b7d4ce;border-top:5px solid #168798;border-radius:20px;padding:30px;box-shadow:0 10px 30px #243b4012}.fun-filters{display:flex;flex-wrap:wrap;gap:16px}.fun-filters label{display:grid;gap:6px;flex:1;min-width:0;font-weight:650}.fun-filters select,.riddle-form input{width:100%;min-width:0;background:#fff;border:1px solid #9dbfbb;border-radius:10px;padding:12px;font:inherit;color:inherit}.fun-count,.fun-help{font-size:.85rem;color:var(--muted)}.fun-content{padding:24px;background:#edf7f4;border-radius:14px;overflow-wrap:anywhere}.fun-content .fun-text{white-space:pre-line;line-height:1.8;margin:16px 0;font-size:1.12rem}.fun-content blockquote{border:0;padding:0;font-size:1.4rem!important;font-weight:550}.fun-author{text-align:right;color:#126779;font-weight:650}.fun-label{display:inline-block;font-size:.8rem;font-weight:700;color:#146574;background:#d2eae5;padding:4px 12px;border-radius:30px}.fun-content h2{font-size:1.6rem;line-height:1.35}.jokes{border-top-color:#c77543}.jokes .fun-content{background:#fff7eb;border-left:4px solid #d79258}.jokes .fun-text{font-size:1rem}.tips .fun-content{background:#eef2fb}.riddle-form{display:grid;gap:12px;margin-top:24px}.riddle-form button{justify-self:start}.riddle-result{padding:16px;margin-top:16px;border-radius:12px;border:1px solid #6bb6a4;background:#e7f6ee}.riddle-result.incorrect{background:#fff0e6;border-color:#d7a47a}.riddle-result p{margin-bottom:0;white-space:pre-line}.fun-next{margin-top:22px}.fun-error{color:#a22f24}.fun-player button:disabled{opacity:.55;cursor:wait}.fun-page .back{display:inline-block;margin-top:16px}footer .footer-quote{flex:1;max-width:520px;white-space:normal;text-align:center;line-height:1.6;font-size:.85rem;overflow-wrap:anywhere}footer{gap:24px}.fun-player :focus-visible,.fun-tile:focus-visible{outline:3px solid #167e91;outline-offset:3px}
+@media(max-width:620px){.fun-page{padding-top:24px}.fun-tiles{grid-template-columns:1fr;gap:10px}.fun-tile{padding:18px}.fun-player{padding:16px;border-radius:14px;margin:24px 0}.fun-content{padding:16px}.fun-filters{flex-direction:column}.fun-content .fun-text{font-size:1rem}.fun-content blockquote{font-size:1.15rem!important}.fun-next{width:100%;justify-content:center}footer .footer-quote{flex:auto;width:100%;max-width:100%}}
+/* Màu vui tươi cho câu đố và truyện, nét thư thái cho danh ngôn. */
+.fun-player.riddles{border-color:#81cbd6;border-top-color:#1598b3;background:linear-gradient(145deg,#e2f8fb,#fffdf3 75%);box-shadow:0 8px 0 #c5e9ec,0 16px 32px #16788a12}
+.riddles .fun-content{background:#fff8d9;border:2px dashed #d5b754;border-radius:22px 22px 22px 6px;color:#51441e}
+.riddles .fun-text{font-weight:650}
+.riddles .primary{background:#147e92;color:#fff;border:1px solid #0d6c80;box-shadow:0 4px 0 #0c5a69}
+.riddles .primary:hover{background:#106a7c}
+.riddles .fun-next{background:#ffe199;color:#514019;border-color:#d1a743;box-shadow:0 4px 0 #d1a743}
+.riddles .fun-next:hover{background:#ffd477}
+.riddles .riddle-form input{border-color:#80bec7}
+.fun-player.jokes{border-color:#e6af87;border-top-color:#e87e58;background:linear-gradient(145deg,#fff0df,#fff8ef 70%,#fce5e0);box-shadow:0 8px 0 #f2d1bb,0 16px 32px #9c572012}
+.jokes .fun-content{background:#fffdf5;border:1px solid #e8c999;border-left:5px solid #edac40;border-radius:8px 22px 22px 22px}
+.jokes .fun-content h2{color:#984025;font-weight:800}
+.jokes .fun-label{background:#ffdf98;color:#62450e}
+.jokes .primary{background:#ad482b;color:#fff;border:1px solid #933a22;box-shadow:0 4px 0 #81341e}
+.jokes .primary:hover{background:#943b24}
+.jokes .fun-filters select{border-color:#d5ac88}
+.fun-tile[href$="do-vui-tieng-anh.html"]{background:#d8f4f8;border-color:#8bcbd5;color:#116677}
+.fun-tile[href$="truyen-cuoi-tieng-anh.html"]{background:#ffe5c6;border-color:#e0b17c;color:#874522}
+.fun-tile[href$="do-vui-tieng-anh.html"]:hover{background:#bdeaf1}
+.fun-tile[href$="truyen-cuoi-tieng-anh.html"]:hover{background:#ffd5a4}
+.quotes .fun-content{background:linear-gradient(135deg,#f3f8f4,#fff8ec);border:1px solid #d5dfce;padding:32px}
+.quotes .fun-content blockquote.fun-text{font-family:Georgia,'Palatino Linotype','Book Antiqua',serif;font-size:clamp(1.4rem,2.6vw,1.85rem)!important;font-style:italic;font-weight:400;line-height:1.65;letter-spacing:.01em;color:#315e60;padding-left:20px;border-left:3px solid #d5ac67;margin:26px 0}
+.quotes .fun-author{font-size:.95rem;letter-spacing:.03em;color:#866133}
+@media(max-width:620px){.quotes .fun-content{padding:20px 16px}.quotes .fun-content blockquote.fun-text{padding-left:14px;font-size:1.35rem!important}.riddles .primary,.jokes .primary{margin-bottom:4px}}

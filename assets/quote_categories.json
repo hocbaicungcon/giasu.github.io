@@ -1,0 +1,92 @@
+[
+    {
+        "_id": 1,
+        "is_favourite": 1,
+        "name": "Friendship & Family"
+    },
+    {
+        "_id": 2,
+        "is_favourite": 1,
+        "name": "Wisdom"
+    },
+    {
+        "_id": 3,
+        "is_favourite": 1,
+        "name": "Love"
+    },
+    {
+        "_id": 4,
+        "is_favourite": 1,
+        "name": "Work & Success"
+    },
+    {
+        "_id": 5,
+        "is_favourite": 1,
+        "name": "Undefined"
+    },
+    {
+        "_id": 6,
+        "is_favourite": 1,
+        "name": "Motivation & Inspiration"
+    },
+    {
+        "_id": 7,
+        "is_favourite": 1,
+        "name": "Faith & Religion"
+    },
+    {
+        "_id": 8,
+        "is_favourite": 1,
+        "name": "Truth & Peace"
+    },
+    {
+        "_id": 9,
+        "is_favourite": 1,
+        "name": "Politics & Leadership"
+    },
+    {
+        "_id": 10,
+        "is_favourite": 1,
+        "name": "Humour"
+    },
+    {
+        "_id": 11,
+        "is_favourite": 1,
+        "name": "Knowledge & Education"
+    },
+    {
+        "_id": 12,
+        "is_favourite": 1,
+        "name": "War & Evil"
+    },
+    {
+        "_id": 13,
+        "is_favourite": 1,
+        "name": "Life & Age"
+    },
+    {
+        "_id": 14,
+        "is_favourite": 1,
+        "name": "Fear & Death"
+    },
+    {
+        "_id": 15,
+        "is_favourite": 1,
+        "name": "Kindness & Happiness"
+    },
+    {
+        "_id": 16,
+        "is_favourite": 1,
+        "name": "Failure"
+    },
+    {
+        "_id": 17,
+        "is_favourite": 1,
+        "name": "Music & Art"
+    },
+    {
+        "_id": 18,
+        "is_favourite": 1,
+        "name": "People & Humanity"
+    }
+]
