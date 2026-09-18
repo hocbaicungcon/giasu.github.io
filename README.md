@@ -4,7 +4,7 @@ Website chia sẻ bài học, bài tập lớp 1–12, triển khai trên GitHub
 
 ## Đăng bài Giải trí
 
-Thêm tệp Markdown vào `post/` với thông tin như dưới đây. Bài tự xuất hiện tại `/giai-tri/` và trong thư viện. Có thể bỏ `grade` để dành cho mọi lớp; `type` có thể là `Giai thoại` hoặc `Câu đố`. Các khối `quiz` tương tác vẫn sử dụng như bài học.
+Thêm tệp Markdown vào `post/` với thông tin như dưới đây. Bài tự xuất hiện tại `/giai-tri/` và trong thư viện. Có thể bỏ `grade` để dành cho mọi lớp; `type` có thể là `Giai thoại`, `Câu đố`, `Khám phá`, `Thí nghiệm vui`, `Lịch sử khoa học` hoặc `Mẹo học tập`. Các khối `quiz` tương tác vẫn sử dụng như bài học.
 
 ```yaml
 ---

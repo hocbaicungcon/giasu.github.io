@@ -28,7 +28,7 @@ export function parsePost(source, filename) {
  if(!/^\d{4}-\d{2}-\d{2}$/.test(data.date)||Number.isNaN(Date.parse(data.date))||new Date(data.date).toISOString().slice(0,10)!==data.date)throw Error(`${filename}: ngày không hợp lệ`);
  if(!Array.isArray(data.tags)||!data.tags.length||data.tags.some(t=>typeof t!=='string'||!t.trim()))throw Error(`${filename}: tags phải là danh sách chuỗi`);
  if(data.grade!==undefined&&(!Number.isInteger(data.grade)||data.grade<1||data.grade>12))throw Error(`${filename}: lớp phải từ 1 đến 12`);
- if(!['Bài học','Bài tập','Giai thoại','Câu đố'].includes(data.type))throw Error(`${filename}: type phải là Bài học, Bài tập, Giai thoại hoặc Câu đố`);
+ if(!['Bài học','Bài tập','Giai thoại','Câu đố','Khám phá','Thí nghiệm vui','Lịch sử khoa học','Mẹo học tập'].includes(data.type))throw Error(`${filename}: type bài viết không được hỗ trợ`);
  const slug=path.basename(filename,'.md');
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
  return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:(()=>{try{return marked.parse(match[2]).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
