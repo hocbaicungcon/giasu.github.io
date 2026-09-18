@@ -74,5 +74,6 @@ header{box-shadow:0 2px 14px #243b4010}
 .hero h1 .hero-accent{color:#1598b3}
 .exam-toolbar #exam-timer{min-width:0;padding:2px 0;border-radius:0;background:transparent;color:var(--ink);font-size:22px;box-shadow:none;letter-spacing:.5px}.exam-toolbar #exam-timer::before{font-size:16px;margin-right:5px;color:#d88665}
 @media(max-width:620px){.wrap{padding-left:14px;padding-right:14px}.exam-wrap{padding-left:14px;padding-right:14px}.exam-toolbar #exam-timer{font-size:20px}.exam-toolbar{padding:10px 12px}}
+.exam-toolbar{gap:6px;padding:10px 12px}.exam-toolbar #exam-progress{margin-inline:4px}.exam-question fieldset{margin:8px 0}.exam-question .quiz-option{gap:8px;padding:8px 10px;margin:6px 0}.exam-question .truefalse-row{padding:9px 0}
 .brand-name{color:#1598b3;font-weight:800}
 .nav-pill{background:#d8f1ef;border:1px solid #b6ddd8;box-shadow:0 4px 12px #243b4012;color:#146d76}.nav-pill:hover{background:#c7e9e7;color:#0e5c67}
