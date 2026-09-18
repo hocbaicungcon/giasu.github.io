@@ -43,7 +43,7 @@ export function buildEntertainment(root,out,shell,posts,card) {
  const renderCards = list => list.map((p,i)=>card(p,i).replaceAll('./bai-viet/','../bai-viet/').replace(/<button class="tag" data-tag="([^"]*)">([\s\S]*?)<\/button>/g,(_,tag,label)=>`<a class="tag" href="../?tag=${encodeURIComponent(tag)}#thu-vien">${label}</a>`)).join('');
  const fun=posts.filter(p=>p.category==='Giải trí');
  fs.mkdirSync(path.join(out,'giai-tri'),{recursive:true});
- const write=(slug,title,content)=>fs.writeFileSync(path.join(out,'giai-tri',slug+'.html'),shell(title,`${title}: khám phá và học điều mới cùng gia sư thông minh.`,`<main id="main" class="wrap fun-page"><nav class="breadcrumb" aria-label="Đường dẫn"><a href="../">Trang chủ</a> / <a href="./">Giải trí</a>${slug==='index'?'':` / <span>${title}</span>`}</nav><h1>${title}</h1>${content}</main>`,'../'));
+ const write=(slug,title,content)=>fs.writeFileSync(path.join(out,'giai-tri',slug+'.html'),shell(title,`${title}: khám phá và học điều mới cùng gia sư thông minh.`,`<main id="main" class="wrap fun-page fun-${slug}"><nav class="breadcrumb" aria-label="Đường dẫn"><a href="../">Trang chủ</a> / <a href="./">Giải trí</a>${slug==='index'?'':` / <span>${title}</span>`}</nav><h1>${title}</h1>${content}</main>`,'../'));
  write('index','Giải trí',`<p>Một khoảng nghỉ nhỏ, thêm nhiều điều thú vị.</p><div class="fun-tiles">${links}</div><h2>Bài viết để khám phá</h2><div class="cards">${renderCards(fun)}</div>`);
  for(const [slug,label,kind] of activities){
   if(!data[kind]){const list=fun.filter(p=>p.type===kind);write(slug,label,`<div class="cards">${renderCards(list)}</div>${list.length?'':'<p>Chưa có bài viết. Hãy quay lại sau nhé.</p>'}`);continue;}

@@ -107,3 +107,36 @@ header{border-bottom-color:#bfd6d2;box-shadow:0 3px 16px #243b4018}.hero{backgro
 .quotes .fun-content blockquote.fun-text{font-family:Georgia,'Palatino Linotype','Book Antiqua',serif;font-size:clamp(1.4rem,2.6vw,1.85rem)!important;font-style:italic;font-weight:400;line-height:1.65;letter-spacing:.01em;color:#315e60;padding-left:20px;border-left:3px solid #d5ac67;margin:26px 0}
 .quotes .fun-author{font-size:.95rem;letter-spacing:.03em;color:#866133}
 @media(max-width:620px){.quotes .fun-content{padding:20px 16px}.quotes .fun-content blockquote.fun-text{padding-left:14px;font-size:1.35rem!important}.riddles .primary,.jokes .primary{margin-bottom:4px}}
+/* Mỗi chuyên mục một sắc độ, giữ chữ đậm dễ đọc. */
+.fun-count{display:none}
+.fun-filters:not(:empty){margin-bottom:20px}
+.riddles .fun-content .fun-text{font-size:1.25rem;line-height:1.75}
+.fun-tile[href$="cau-do-iq.html"]{background:#eae4f6;border-color:#beb0dc;color:#605080}
+.fun-tile[href$="chuyen-vui.html"]{background:#fbe1e5;border-color:#dfabb8;color:#934659}
+.fun-tile[href$="danh-ngon.html"]{background:#fff0cb;border-color:#d9bf80;color:#7a5a20}
+.fun-tile[href$="meo-hoc-tap.html"]{background:#dcf1e6;border-color:#9bcbb0;color:#28664b}
+.fun-tile[href$="cau-do-iq.html"]:hover{background:#ddd3ef}
+.fun-tile[href$="chuyen-vui.html"]:hover{background:#f6cdd6}
+.fun-tile[href$="danh-ngon.html"]:hover{background:#ffe6aa}
+.fun-tile[href$="meo-hoc-tap.html"]:hover{background:#c8e8d7}
+.fun-page:has(.quotes) h1{color:#7a5a20}
+.fun-player.quotes{border-color:#ddca96;border-top-color:#b78d3e;background:#fffdf6}
+.quotes .fun-content{background:#fff7e3;border-color:#e4d4a9}
+.quotes .primary{background:#806022;color:#fff}.quotes .primary:hover{background:#694e1b}
+.fun-page:has(.tips) h1{color:#28664b}
+.fun-player.tips{border-color:#a7cfb8;border-top-color:#438968;background:#f6fcf8}
+.tips .fun-content{background:#e2f3e9}.tips .fun-label{background:#c7e7d4;color:#245b42}
+.tips .primary{background:#317452;color:#fff}.tips .primary:hover{background:#255d41}
+.fun-page:has(.riddles) h1{color:#116677}.fun-page:has(.jokes) h1{color:#984025}
+.fun-cau-do-iq h1{color:#605080}
+.fun-cau-do-iq .card-art{background:#eae4f6;color:#605080}
+.fun-chuyen-vui h1{color:#934659}
+.fun-chuyen-vui .card-art{background:#fbe1e5;color:#934659}
+@media(max-width:620px){
+ .wrap{padding-left:8px;padding-right:8px}
+ .article-wrap,.exam-wrap{padding-left:8px;padding-right:8px}
+ .fun-player{padding:10px;margin:20px 0}
+ .fun-content,.quotes .fun-content{padding:14px 10px}
+ .riddles .fun-content .fun-text{font-size:1.15rem}
+ .fun-filters:not(:empty){margin-bottom:14px}
+}
