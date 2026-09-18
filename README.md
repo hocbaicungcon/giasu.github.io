@@ -115,7 +115,7 @@ Lời giải và giải thích.
 
 ## Các môn học
 
-Toán học, Tiếng Việt, Ngữ văn, Tiếng Anh, Tự nhiên và Xã hội, Khoa học, Khoa học tự nhiên, Vật lí, Hóa học, Sinh học, Lịch sử và Địa lí, Lịch sử, Địa lí, Đạo đức, Giáo dục công dân, Giáo dục kinh tế và pháp luật, Tin học, CNTT, Công nghệ, Âm nhạc, Mĩ thuật, Giáo dục thể chất, Hoạt động trải nghiệm.
+Toán học, Tiếng Việt, Ngữ văn, Tiếng Anh, Tự nhiên và Xã hội, Khoa học, Khoa học tự nhiên, Vật lí, Hóa học, Sinh học, Lịch sử và Địa lí, Lịch sử, Địa lí, Đạo đức, Giáo dục KTPL, Tin học, CNTT, Công nghệ, Âm nhạc, Mĩ thuật, Giáo dục thể chất, Hoạt động trải nghiệm.
 
 Danh sách được khai báo tại `scripts/build.mjs`; dùng đúng tên trong `category`. Có thể bổ sung môn bằng cách sửa danh sách này.
 
@@ -288,3 +288,13 @@ exam:
 **Quy tắc chấm hiện tại:** mỗi câu có trọng số bằng nhau; đúng/sai tính tỉ lệ ý đúng; tổng quy đổi thang 10. Đây là thang tự luyện của website, không mặc định áp dụng quy tắc chấm thi tốt nghiệp. Câu chưa trả lời tính 0 khi có đáp án.
 
 Thử file `post/de-mau-tuong-tac.tex` và `.yml` để xem ví dụ đủ 3 dạng. Kết quả không gửi về giáo viên, chưa có tài khoản hay bảng xếp hạng chung. GitHub Pages là website tĩnh nên đáp án nằm trong dữ liệu trang: phù hợp tự luyện, không dùng để bảo mật đáp án thi chính thức.
+# Nội dung Giải trí từ database
+
+Các trang trong `giai-tri/` được tạo tự động khi build từ `assets/riddles.csv`, `quotes.json`, `quote_authors.json`, `quote_categories.json`, `study_tips.json`, `study_tips_categories.json` và `jokes.json`. Giữ nguyên cấu trúc trường và ID liên kết khi cập nhật dữ liệu.
+
+- CSV câu đố không có dòng tiêu đề, gồm 2 cột: câu hỏi, đáp án. Ô chứa dấu phẩy hoặc xuống dòng phải đặt trong dấu ngoặc kép theo chuẩn CSV.
+- Danh ngôn lọc đồng thời theo tác giả và danh mục; mẹo học tập theo danh mục; truyện cười theo trường `cat`.
+- Nút tiếp theo chọn ngẫu nhiên, tránh lặp ngay nội dung vừa xem. Đáp án đố vui so khớp chữ sau khi bỏ dấu câu, khoảng trắng và khác biệt chữ hoa; không chấm theo ngữ nghĩa.
+- Footer lấy danh ngôn từ `quotes.json`, tránh lặp câu trước khi tải lại trong cùng phiên trình duyệt.
+- Build chia dữ liệu thành nhóm 50 mục, trình duyệt chỉ tải nhóm cần hiển thị. Nội dung tiếng Anh giữ nguyên từ nguồn; nên rà soát nội dung trước khi xuất bản cho học sinh.
+- Bài Markdown có category `Giải trí`, type `Câu đố` vào mục Câu đố IQ; type `Giai thoại` vào Chuyện vui. Các loại bài khác vẫn xuất hiện trên trang Giải trí tổng hợp.

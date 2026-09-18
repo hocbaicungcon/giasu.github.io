@@ -1,0 +1,3022 @@
+[
+    {
+        "category_id": 1,
+        "content": "Put your books and materials down and stretch for a minute or two.",
+        "id": 1
+    },
+    {
+        "category_id": 1,
+        "content": "Sit down, put your head down, and take 4 deep breaths.",
+        "id": 2
+    },
+    {
+        "category_id": 1,
+        "content": "Sit up, close your eyes and imagine being in a pleasant place where you feel relaxed.",
+        "id": 3
+    },
+    {
+        "category_id": 1,
+        "content": "Keep your eyes closed and switch scenes. Imagine a situation in which you had an academic success. Congratulate yourself for a job well done.",
+        "id": 4
+    },
+    {
+        "category_id": 1,
+        "content": "Open your eyes and find your assignment. Say, “Now I’m ready to work for about 15 or 20 minutes.”",
+        "id": 5
+    },
+    {
+        "category_id": 1,
+        "content": "Read the assignment, Ask, “What questions, problems or tasks are assigned?”",
+        "id": 6
+    },
+    {
+        "category_id": 1,
+        "content": "Work for 15 to 20 minutes using your books, papers, or other materials.",
+        "id": 7
+    },
+    {
+        "category_id": 1,
+        "content": "Take a few minutes to stretch, breathe deeply, rest your eyes, and have a healthy snack or drink.",
+        "id": 8
+    },
+    {
+        "category_id": 1,
+        "content": "Review and recognize your effort and progress.",
+        "id": 9
+    },
+    {
+        "category_id": 1,
+        "content": "Resume work.",
+        "id": 10
+    },
+    {
+        "category_id": 2,
+        "content": "Leave and study at the library if your home or dorm setting is too distracting.",
+        "id": 11
+    },
+    {
+        "category_id": 2,
+        "content": "Stop the distractions; impose an Electronic Lockdown by turning off email, text messages, phones and music.",
+        "id": 12
+    },
+    {
+        "category_id": 2,
+        "content": "Study your most difficult courses in locations where there is no computer  or television.",
+        "id": 13
+    },
+    {
+        "category_id": 2,
+        "content": "Brighten the study space; make it inviting and appealing, but not distracting.",
+        "id": 14
+    },
+    {
+        "category_id": 2,
+        "content": "Change your location to stay alert and on track. Early in the day, go to a coffee shop, later to a library.",
+        "id": 15
+    },
+    {
+        "category_id": 2,
+        "content": "Select a non–distracting location to study. Make it a habit to go to this place at the same time each day.",
+        "id": 16
+    },
+    {
+        "category_id": 2,
+        "content": "Select a location in which there is access to healthy snacks and comfortable places to relax or walk.",
+        "id": 17
+    },
+    {
+        "category_id": 2,
+        "content": "Avoid studying on a bed or overstuffed chair since it tends to be too comfortable, especially if you are already tired.",
+        "id": 18
+    },
+    {
+        "category_id": 2,
+        "content": "Find a study buddy who will help you get to the library or other non–distracting location.",
+        "id": 19
+    },
+    {
+        "category_id": 2,
+        "content": "Use a fan or other white noise if the study setting is too quiet and you find it difficult to maintain your focus.",
+        "id": 20
+    },
+    {
+        "category_id": 2,
+        "content": "Use a watch or timer to help stick to a productive study schedule. Include a break every 20 to 40 minutes of study.",
+        "id": 21
+    },
+    {
+        "category_id": 2,
+        "content": "Move your location if it becomes too distracting to concentrate—even if you are with friends.",
+        "id": 22
+    },
+    {
+        "category_id": 2,
+        "content": "Find a location in which you can stand and perhaps, write on a white board, especially when memorizing facts and details.",
+        "id": 23
+    },
+    {
+        "category_id": 2,
+        "content": "Remind others whose phones ring incessantly to put their phones on vibrate or study somewhere else.",
+        "id": 24
+    },
+    {
+        "category_id": 2,
+        "content": "Take a short nap when you’re too tired to learn. Just put your head down on a desk for a few minutes.",
+        "id": 25
+    },
+    {
+        "category_id": 2,
+        "content": "Clear the desk clutter so you can focus. You might need to throw a tablecloth over the mess so it is not distracting.",
+        "id": 26
+    },
+    {
+        "category_id": 2,
+        "content": "Plan to have periodic stretch breaks and eye rests when working on a computer for long periods.",
+        "id": 27
+    },
+    {
+        "category_id": 2,
+        "content": "Post a checklist of assignments in a visible place to help you remember what you need to do.",
+        "id": 28
+    },
+    {
+        "category_id": 2,
+        "content": "Buy your study supplies at the beginning of the semester so that your materials are easily accessible.",
+        "id": 29
+    },
+    {
+        "category_id": 2,
+        "content": "Create an inviting study setting by using refreshing scents such as evergreen or lemon zest.",
+        "id": 30
+    },
+    {
+        "category_id": 2,
+        "content": "Keep yourself motivated by posting a graph on your book or computer to show number of problems you complete.",
+        "id": 31
+    },
+    {
+        "category_id": 2,
+        "content": "Have a pair of earplugs or ear buds available in case things get noisy and you can’t change study locations.",
+        "id": 32
+    },
+    {
+        "category_id": 2,
+        "content": "Find a secret study location that is out of the path of friends who distract you when you are trying to focus.",
+        "id": 33
+    },
+    {
+        "category_id": 2,
+        "content": "Post motivating illustrations and slogans to help you start working on your most difficult courses.",
+        "id": 34
+    },
+    {
+        "category_id": 2,
+        "content": "Wear a special study hat or visor to trigger your study and focus time, and to screen out visual distractions.",
+        "id": 35
+    },
+    {
+        "category_id": 3,
+        "content": "Don’t do all your studying the night before. Instead spread it out, review class materials several times a week, and focus on one topic at a time.",
+        "id": 36
+    },
+    {
+        "category_id": 3,
+        "content": "Find a comfortable place to study with good lighting and few distractions. Avoid studying in bed, as it will be too tempting to take a nap.",
+        "id": 37
+    },
+    {
+        "category_id": 3,
+        "content": "Take short breaks frequently. Your memory retains information that you study at the beginning and the end better than in the middle.",
+        "id": 38
+    },
+    {
+        "category_id": 3,
+        "content": "The best way to study is to focus for between 40-90 minutes, then take a 10-minute break where you do some kind of exercise. Regular exercise helps with concentration.",
+        "id": 39
+    },
+    {
+        "category_id": 3,
+        "content": "Be a hermit! A few weeks before the exam, it may be necessary to isolate yourself from your friends, stop watching television, etc.",
+        "id": 40
+    },
+    {
+        "category_id": 3,
+        "content": "Get plenty of sleep. Generally people need at least 8 hours of sleep per night. Your brain needs this time to recover and organize information to strengthen its memory.",
+        "id": 41
+    },
+    {
+        "category_id": 3,
+        "content": "Keep a calendar or planner and mark it with important dates, like exams and assignment due dates.",
+        "id": 42
+    },
+    {
+        "category_id": 3,
+        "content": "At least once a week, read through your notes from class. Consistently reading about the subject can help you to understand and remember better.",
+        "id": 43
+    },
+    {
+        "category_id": 3,
+        "content": "Before lectures, look over the notes from the previous class and read the course material pertaining to the lecture, so that you can anticipate the main ideas that the instructor will cover.",
+        "id": 44
+    },
+    {
+        "category_id": 3,
+        "content": "Carefully choose what you do during your down time. Relaxing your mind is important during study breaks, but TV and video games don’t allow the mind to relax properly.",
+        "id": 45
+    },
+    {
+        "category_id": 3,
+        "content": "When you’re studying, it helps to keep in mind your reasons for working hard, like a course grade or career you’re working towards.",
+        "id": 46
+    },
+    {
+        "category_id": 3,
+        "content": "Ask questions! Don’t be shy about asking to have something explained in a different way, so you can understand it better.",
+        "id": 47
+    },
+    {
+        "category_id": 3,
+        "content": "Set clear goals. This will help to motivate you, as you’ll want to achieve the goals you set out for yourself.",
+        "id": 48
+    },
+    {
+        "category_id": 3,
+        "content": "Repetition! It’s true that practice makes perfect. Read your notes over and over until you remember the information well.",
+        "id": 49
+    },
+    {
+        "category_id": 3,
+        "content": "Meet deadlines! If an assignment is due by a specific date, meet that due date! Late submissions are often penalized and will impact your grade.",
+        "id": 50
+    },
+    {
+        "category_id": 3,
+        "content": "Get things done early. Start assignments as soon as they are given. Work first and have fun when you’re finished.",
+        "id": 51
+    },
+    {
+        "category_id": 3,
+        "content": "You can easily pace yourself by following tips like starting early, creating a study schedule, and taking breaks when necessary.",
+        "id": 52
+    },
+    {
+        "category_id": 3,
+        "content": "Keep up with your readings! Even if you just skim the main ideas or summary of each chapter before a lecture.",
+        "id": 53
+    },
+    {
+        "category_id": 3,
+        "content": "Buy small index cards and write small bullet points to help jog your memory. Carry these around at all times, and use them in your free time.",
+        "id": 54
+    },
+    {
+        "category_id": 3,
+        "content": "Want more Study Tips? Go back and Unlock more Study Tips! Unlock and get new tips with every update!",
+        "id": 55
+    },
+    {
+        "category_id": 3,
+        "content": "Eliminate everything that might be a distraction. Make sure there’s nothing nearby that might tempt you to lose focus.",
+        "id": 56
+    },
+    {
+        "category_id": 3,
+        "content": "Getting up to look for needed supplies will break your concentration. Make sure that you have everything you need before you begin studying.",
+        "id": 57
+    },
+    {
+        "category_id": 3,
+        "content": "If something unexpected happens, revise your schedule so that you stay on track as much as possible.",
+        "id": 58
+    },
+    {
+        "category_id": 3,
+        "content": "Avoid distractions by sitting at the front of the classroom, and away from disruptive classmates.",
+        "id": 59
+    },
+    {
+        "category_id": 3,
+        "content": "Make sure to study the most difficult material when you are most alert, and do the easier stuff when you aren’t quite as focused.",
+        "id": 60
+    },
+    {
+        "category_id": 3,
+        "content": "Protect your studying time/environment by making a “Do Not Disturb” sign, or by studying in a private place where you can concentrate best.",
+        "id": 61
+    },
+    {
+        "category_id": 3,
+        "content": "It’s important to write a list of all things that you need to study. Plan carefully and specifically.",
+        "id": 62
+    },
+    {
+        "category_id": 3,
+        "content": "Always take notes for the same class in the same notebook. Keeping related materials consolidated helps with organization.",
+        "id": 63
+    },
+    {
+        "category_id": 3,
+        "content": "Before going to bed each night, revise the summary notes on a topic. You will be amazed at how much you’ll remember.",
+        "id": 64
+    },
+    {
+        "category_id": 3,
+        "content": "Good lighting and temperature are essential. If it’s too hot, it will be more difficult to concentrate, so it’s better if the temperature is a little cool.",
+        "id": 65
+    },
+    {
+        "category_id": 3,
+        "content": "Do not move onto the next paragraph of a textbook until you understand the previous one. Reviewing something immediately will help your understanding.",
+        "id": 66
+    },
+    {
+        "category_id": 3,
+        "content": "Time management is essential. Make sure you’re studying key ideas and avoid absorbing useless information.",
+        "id": 67
+    },
+    {
+        "category_id": 3,
+        "content": "Understand your study topics! If you don’t understand a concept that you will be tested on, then you won’t be happy with your grade.",
+        "id": 68
+    },
+    {
+        "category_id": 3,
+        "content": "Create a flexible study plan. The closer you get to your exams, the more concrete your study plan should be, but allow for some changes.",
+        "id": 69
+    },
+    {
+        "category_id": 3,
+        "content": "Create a system that allows you to color code material, that’s going to be on the exam, by what’s most important, less important, etc. This will help you focus and prioritize.",
+        "id": 70
+    },
+    {
+        "category_id": 3,
+        "content": "If you find it hard to take notes quickly, then stick to key points and go over examples and extra information with a classmate later.",
+        "id": 71
+    },
+    {
+        "category_id": 3,
+        "content": "The fastest way to take in new information is by reading. You can read a lot faster than a person can talk.",
+        "id": 72
+    },
+    {
+        "category_id": 3,
+        "content": "Pulling an all-nighter won’t help. By the time you arrive for the exam, you’ll be so tired that it will affect your work/memory.",
+        "id": 73
+    },
+    {
+        "category_id": 3,
+        "content": "Use A3 paper to construct mind maps/spider diagrams. Add color and small pictures to visualize the text and absorb the knowledge by using both sides of your brain.",
+        "id": 74
+    },
+    {
+        "category_id": 3,
+        "content": "Even though you use your computer for almost all assignments, the Internet is still the worst distraction. Make sure to limit your Internet time, and focus on your studies.",
+        "id": 75
+    },
+    {
+        "category_id": 3,
+        "content": "Studying at the same time everyday helps. Most people find it more effective to study during the day, rather than at night, because they can concentrate better.",
+        "id": 76
+    },
+    {
+        "category_id": 3,
+        "content": "Eat plenty of fruits like blueberries and apples, which reduce the level of toxins in your bloodstream and improve memory function.",
+        "id": 77
+    },
+    {
+        "category_id": 3,
+        "content": "If you’re stressed about your exams, meditation can help you keep calm and reduce pre-exam anxiety. It can improve focus, as it improves both your mental and physical health.",
+        "id": 78
+    },
+    {
+        "category_id": 3,
+        "content": "Relate every study topic to your life, and try to solve your own questions relating to the topic.",
+        "id": 79
+    },
+    {
+        "category_id": 3,
+        "content": "Use a tape recorder. This is especially handy on test review days when instructors share what material may be on the exam.",
+        "id": 80
+    },
+    {
+        "category_id": 3,
+        "content": "Have someone test you on the material to find out what your weakest and strongest areas are. You can use the review questions at the end of each chapter, practice tests, or other materials.",
+        "id": 81
+    },
+    {
+        "category_id": 3,
+        "content": "While studying, instead of drinking energy drinks drink plenty of water and the occasional cup of coffee. This will help you stay hydrated and maintain a high level of cognitive function and energy.",
+        "id": 82
+    },
+    {
+        "category_id": 3,
+        "content": "Talk to your lecturer about the things you don’t understand, and actively participate in study groups.",
+        "id": 83
+    },
+    {
+        "category_id": 3,
+        "content": "Study guides aren’t always comprehensive, as they are usually just suggestions of the main concepts to learn. Use your study guide for its intended purpose: a guide.",
+        "id": 84
+    },
+    {
+        "category_id": 3,
+        "content": "Make sure you understand the material well, don’t just memorize information.",
+        "id": 85
+    },
+    {
+        "category_id": 3,
+        "content": "Have all of your study materials in front of you: lecture notes, course textbooks, study guides and any other relevant material.",
+        "id": 86
+    },
+    {
+        "category_id": 3,
+        "content": "If you always start ahead of schedule, you’ll never be cramming the night before an exam. You’ll almost always perform better this way.",
+        "id": 87
+    },
+    {
+        "category_id": 3,
+        "content": "Study aloud for at least one hour everyday, record yourself and listen to it afterward. This will help to improve your memory of the content.",
+        "id": 88
+    },
+    {
+        "category_id": 3,
+        "content": "Visual aids can be helpful when revising. At the start of a topic, challenge yourself to write down everything you already know about a topic, and then highlight where the gaps lie. That way, you can recognize what you need to focus on most.",
+        "id": 89
+    },
+    {
+        "category_id": 3,
+        "content": "Avoid comparing yourself to others, because you’ll usually just end up feeling bad about yourself.",
+        "id": 90
+    },
+    {
+        "category_id": 3,
+        "content": "It’s easier to focus if you adapt to studying by quizzing yourself, creating acronyms or rewarding yourself for a job well done.",
+        "id": 91
+    },
+    {
+        "category_id": 3,
+        "content": "Switching up your subjects is a helpful way to learn everything for your exams. It will prevent you from getting burnt out on any individual subject.",
+        "id": 92
+    },
+    {
+        "category_id": 3,
+        "content": "Ask for feedback. If you don’t understand why you got a poor grade on an assignment, talk to your instructor about what you could have done better.",
+        "id": 93
+    },
+    {
+        "category_id": 3,
+        "content": "If you have a lot on your mind, take a moment to write about it and put it aside. This will help to clear your mind so you can focus on your studies.",
+        "id": 94
+    },
+    {
+        "category_id": 3,
+        "content": "Make sure to study at least 40 minutes at a time! 10 minutes here and there just won’t cut it.",
+        "id": 95
+    },
+    {
+        "category_id": 3,
+        "content": "Eating something with protein before studying will make you sharper and more alert. In contrast, going with no food or eating something high in carbohydrates will slow you down and make your mind sluggish.",
+        "id": 96
+    },
+    {
+        "category_id": 3,
+        "content": "Take into account the amount of time you spend traveling to and from school each day. This can add up to a lot of time that you could have used to read or study.",
+        "id": 97
+    },
+    {
+        "category_id": 3,
+        "content": "Don’t study later than the time you usually go to bed, as you may fall asleep. Instead try studying in the afternoon or early evening.",
+        "id": 98
+    },
+    {
+        "category_id": 3,
+        "content": "Reduce your sugar intake. Sugar disrupts concentration.",
+        "id": 99
+    },
+    {
+        "category_id": 3,
+        "content": "Organizing class materials is one of the most important study tips. Use sticky notes to remember important textbook pages and make flash cards for key terms.",
+        "id": 100
+    },
+    {
+        "category_id": 3,
+        "content": "Listening to relaxing music, such as classical or jazz, can relieve some of the boredom of studying.",
+        "id": 101
+    },
+    {
+        "category_id": 3,
+        "content": "Creating a compare/contrast chart is helpful when studying complex theories and models, or for studying multiple theories in a single chapter.",
+        "id": 102
+    },
+    {
+        "category_id": 3,
+        "content": "Splitting the material into chunks can be beneficial. That way, you keep track of what you’ve accomplished, instead of looking at the big picture and getting overwhelmed.",
+        "id": 103
+    },
+    {
+        "category_id": 3,
+        "content": "Motivation is an important factor that will help you to study well. This is not a complicated art or unusual technique. It is as simple as remembering to feed yourself daily.",
+        "id": 104
+    },
+    {
+        "category_id": 3,
+        "content": "Reward yourself for studying. This will keep you going.",
+        "id": 105
+    },
+    {
+        "category_id": 3,
+        "content": "If you study a little bit everyday you’ll be continually reviewing things in your mind. This helps you to understand information, and helps to avoid the stress of last minute cramming.",
+        "id": 106
+    },
+    {
+        "category_id": 3,
+        "content": "You could try reading your notes aloud and discussing them with other people. You might want to even record an audio of key points and play it back for yourself.",
+        "id": 107
+    },
+    {
+        "category_id": 3,
+        "content": "Set reminder alarms. Having regular reminders keeps you accountable and on track.",
+        "id": 108
+    },
+    {
+        "category_id": 3,
+        "content": "Sometimes you can’t force yourself to have the right mindset, and during these times you should simply avoid studying.",
+        "id": 109
+    },
+    {
+        "category_id": 3,
+        "content": "Focus on the exam. Knowing the material is only part of it. Do as many mock exams as possible to practice timing and question types.",
+        "id": 110
+    },
+    {
+        "category_id": 3,
+        "content": "Set time limits! Before you start your study session, have a look at your to do list and give yourself a set time for each task.",
+        "id": 111
+    },
+    {
+        "category_id": 3,
+        "content": "Try to be positive! When studying, remind yourself of your skills and abilities.",
+        "id": 112
+    },
+    {
+        "category_id": 3,
+        "content": "If you prepare your own study materials then you’ll learn what you have studied twice: once when you make the study materials, and again when you use them to study.",
+        "id": 113
+    },
+    {
+        "category_id": 3,
+        "content": "If you are a visual learner, it can help to create diagrams to visualize how the concepts you are learning relate to one another.",
+        "id": 114
+    },
+    {
+        "category_id": 3,
+        "content": "Decide what to study beforehand. This means mapping out what you’ll study, when and for how long. Once you’ve set a schedule, stick to it!",
+        "id": 115
+    },
+    {
+        "category_id": 3,
+        "content": "Whether you are a freshman or a senior, these study hacks can make your life easier, and will improve your grades.",
+        "id": 116
+    },
+    {
+        "category_id": 3,
+        "content": "Only listen to music that improves your focus.",
+        "id": 117
+    },
+    {
+        "category_id": 3,
+        "content": "Quiz yourself! Once you feel like you understand a concept or a topic, it’s important to test yourself.",
+        "id": 118
+    },
+    {
+        "category_id": 3,
+        "content": "A straight back chair, that isn’t too comfortable, is the best to study in. You don’t want to get too cozy!",
+        "id": 119
+    },
+    {
+        "category_id": 3,
+        "content": "Get creative with online study tools. Try using study tools to help you study better and find what works best for you.",
+        "id": 120
+    },
+    {
+        "category_id": 3,
+        "content": "Avoid daydreaming by asking yourself questions about the material as you study.",
+        "id": 121
+    },
+    {
+        "category_id": 3,
+        "content": "Memory games, or mnemonic devices, are methods for remembering pieces of information using a simple association of common words.",
+        "id": 122
+    },
+    {
+        "category_id": 3,
+        "content": "The old age adage, practice makes perfect, is true. You can practice by yourself by testing yourself with either practice exams, past quizzes, or flash cards (depending what kind of course it is and what’s available).",
+        "id": 123
+    },
+    {
+        "category_id": 3,
+        "content": "Make sure you are studying in a clean, quiet and orderly room. Keep anything and everything away from where you are that may cause you to get distracted.",
+        "id": 124
+    },
+    {
+        "category_id": 3,
+        "content": "Turn on the light. Studying in a dark room is not recommended.",
+        "id": 125
+    },
+    {
+        "category_id": 3,
+        "content": "Consider turning the TV off. This tip varies depending on the individual. Some prefer studying in a tranquil environment devoid of any noise, whereas others prefer studying while listening to music, leaving the TV on at a low volume, etc.",
+        "id": 126
+    },
+    {
+        "category_id": 3,
+        "content": "Decide if music is right for you. Music's effect on memory performance varies between individuals.",
+        "id": 127
+    },
+    {
+        "category_id": 3,
+        "content": "Get plenty of rest the night before.",
+        "id": 128
+    },
+    {
+        "category_id": 3,
+        "content": "Eat a healthy, light meal. Eat a balanced breakfast full of lean protein, vegetables, omega-3 fatty acids, and antioxidants. A sample breakfast might include a spinach omelet with smoked salmon, whole wheat toast, and a banana.",
+        "id": 129
+    },
+    {
+        "category_id": 3,
+        "content": "It is a good idea to eat a mint or two before the exam, because some scientists say that it boost memory for a little while.",
+        "id": 130
+    },
+    {
+        "category_id": 3,
+        "content": "Get to the exam room with time to spare. Give yourself at least five or 10 minutes to gather your thoughts before starting the exam.",
+        "id": 131
+    },
+    {
+        "category_id": 3,
+        "content": "Anyone can concentrate on study if one gets interested in it.When you will study subjects with interest and enthusiasm you will get best out of it.",
+        "id": 132
+    },
+    {
+        "category_id": 3,
+        "content": "Don't study when you're really tired. It's better to get a good night's sleep after studying for a short time, than to push on at two in the morning. ",
+        "id": 133
+    },
+    {
+        "category_id": 3,
+        "content": "Always study when you have the chance. Don't let your mind tell you that you don't want to study.",
+        "id": 134
+    },
+    {
+        "category_id": 3,
+        "content": "Study for your learning style. If you're a visual learner, using pictures can help. Auditory learners should record themselves saying notes and recite it afterwards. If you are a physical person lecture to yourself (out loud) while also using your hands or moving around; this way it will be easier for you to memorize.",
+        "id": 135
+    },
+    {
+        "category_id": 3,
+        "content": "Different subjects call for different studying. If it's math you're studying for, work on the problems. Don't just read over it like you would for a history class, because you can actually do math, but you can seldom do history.",
+        "id": 136
+    },
+    {
+        "category_id": 3,
+        "content": "Think of your teacher. Ask yourself: What is my teacher most likely to ask on the exam? What materials should I focus on to give myself the best chance of knowing what I need to know? And etc.",
+        "id": 137
+    },
+    {
+        "category_id": 3,
+        "content": "If you need help, ask someone who is good at these subjects. Friends, family, teachers are all good options. If you don't understand what the person helping you is communicating, don't be afraid to ask them to elaborate.",
+        "id": 138
+    },
+    {
+        "category_id": 3,
+        "content": "Make sure you actually pay attention in class. You wouldn't want to miss something that will be tested.",
+        "id": 139
+    },
+    {
+        "category_id": 3,
+        "content": "Before you start studying you have to get a good focus on the objectives of your work.",
+        "id": 140
+    },
+    {
+        "category_id": 3,
+        "content": "Anything you read... Don't just read it. Understand it fully then you'll not need to read it again.",
+        "id": 141
+    },
+    {
+        "category_id": 3,
+        "content": "Do some research on the exam. Finding out who is writing the exam can be helpful. This way, you might be able to understand what sort of questions will be used.",
+        "id": 142
+    },
+    {
+        "category_id": 3,
+        "content": "Budget your time wisely to ensure that you cover all the topics covered in the exam.",
+        "id": 143
+    },
+    {
+        "category_id": 3,
+        "content": "Write yourself a study guide. Go through your notes and rewrite the most important information.",
+        "id": 144
+    },
+    {
+        "category_id": 3,
+        "content": "Take breaks. You need some time to have fun and it is better to revise when you are feeling relaxed than to exhaust yourself studying all day!",
+        "id": 145
+    },
+    {
+        "category_id": 3,
+        "content": "Think positive but work hard. Never think you won't be able to pass the exam. Always think positive. If you say you can: you can. If you say you can't: you can't. ",
+        "id": 146
+    },
+    {
+        "category_id": 3,
+        "content": "Working with other people can help you cover gaps in your own knowledge and also help you remember more information, since you may have to explain things to them or have conversations about the topic.",
+        "id": 147
+    },
+    {
+        "category_id": 3,
+        "content": "Do not study a subject only once. If you have more time you can revise for your studies twice or thrice, but only if you have a lot of time and have revised for all your other subjects at least once.",
+        "id": 148
+    },
+    {
+        "category_id": 3,
+        "content": "Don't include too many snacks in your daily study routine because you might end up gaining weight instead of knowledge!",
+        "id": 149
+    },
+    {
+        "category_id": 3,
+        "content": "When you are done studying,take time to evaluate how successful you have been.",
+        "id": 150
+    },
+    {
+        "category_id": 3,
+        "content": "Always create a plan before you start studying. Remember that this plan has to be achievable.",
+        "id": 151
+    },
+    {
+        "category_id": 3,
+        "content": "An exam is only an exam. If you fail this one it's not the end of the world. Just try harder on the next one.",
+        "id": 152
+    },
+    {
+        "category_id": 3,
+        "content": "Studying in one's room may not be the best place if there's access to personal belongings and/or media devices.",
+        "id": 153
+    },
+    {
+        "category_id": 3,
+        "content": "Studying with a disciplined friend can be very effective. Having a fellow student to call with questions about assignments or difficult concepts can be extremely useful.",
+        "id": 154
+    },
+    {
+        "category_id": 3,
+        "content": "By keeping a written schedule of academic assignments, extracurricular, and social activities, you will be more likely to be organized and aware.",
+        "id": 155
+    },
+    {
+        "category_id": 4,
+        "content": "Create your own flashcards. Save time by using free flashcard makers available on the Internet.",
+        "id": 156
+    },
+    {
+        "category_id": 4,
+        "content": "First, learn a general concept, second, learn a few facts and details, and third, identify a few examples.",
+        "id": 157
+    },
+    {
+        "category_id": 4,
+        "content": "Distribute learning time. It is best to memorize during brief periods rather than to try to learn everything at one time.",
+        "id": 158
+    },
+    {
+        "category_id": 4,
+        "content": "Don’t sit for hours. Walk around and say the information aloud. Use a white board or flip chart to write and test your memory.",
+        "id": 159
+    },
+    {
+        "category_id": 4,
+        "content": "Don’t just re-copy lecture notes. Highlight a topic and then write key phrases or lists in your own words.",
+        "id": 160
+    },
+    {
+        "category_id": 4,
+        "content": "Use visual aids when you memorize; first say the main idea or facts aloud, then sketch a diagram or create a chart.",
+        "id": 161
+    },
+    {
+        "category_id": 4,
+        "content": "Carry flash cards and use for a few minutes when quiet time is available, for example when waiting in line.",
+        "id": 162
+    },
+    {
+        "category_id": 4,
+        "content": "Use or create rhymes and songs to remember formulas or detailed information.",
+        "id": 163
+    },
+    {
+        "category_id": 4,
+        "content": "Use memory cues by employing key words and symbols to remind you of important details.",
+        "id": 164
+    },
+    {
+        "category_id": 4,
+        "content": "Ensure retention with immediate and delayed review. Periodically recite and/or write information to test your recall.",
+        "id": 165
+    },
+    {
+        "category_id": 4,
+        "content": "Create mental pictures to identify the critical components of a concept. For example, visualize the process of digestion.",
+        "id": 166
+    },
+    {
+        "category_id": 4,
+        "content": "Use humor and association to help focus on and remember meaningless lists of facts.",
+        "id": 167
+    },
+    {
+        "category_id": 4,
+        "content": "Become aware of the ways in which you memorize and remember best. Try different methods for different subjects.",
+        "id": 168
+    },
+    {
+        "category_id": 4,
+        "content": "Before trying to memorize information, recite or write it your own words. This helps you to store and retrieve it more easily.",
+        "id": 169
+    },
+    {
+        "category_id": 4,
+        "content": "Associate new with previously learned information. This enhances your ability to learn, integrate and retain it.",
+        "id": 170
+    },
+    {
+        "category_id": 4,
+        "content": "Access and retrieve information you learn by organizing it, creating images, making charts and using mnemonics.",
+        "id": 171
+    },
+    {
+        "category_id": 4,
+        "content": "Enhance learning and retention by tracing with your finger the spelling of difficult vocabulary or formula.",
+        "id": 172
+    },
+    {
+        "category_id": 4,
+        "content": "Use a whole body approach to memorization by marching, clapping, or singing information.",
+        "id": 173
+    },
+    {
+        "category_id": 4,
+        "content": "Increase memory efficiency by categorizing and labeling information into meaningful groups.",
+        "id": 174
+    },
+    {
+        "category_id": 4,
+        "content": "Increase the amount of information you remember after studying - review information within 24 to 48 hours.",
+        "id": 175
+    },
+    {
+        "category_id": 4,
+        "content": "Study small segments since short–term memory can hold about seven units of information at one time.",
+        "id": 176
+    },
+    {
+        "category_id": 4,
+        "content": "Review weekly since facts stay in short–term memory only about 15 seconds before loss or transfer to working memory.",
+        "id": 177
+    },
+    {
+        "category_id": 4,
+        "content": "Remember to engage in active learning. Visualize information to help move it from short– to long–term memory.",
+        "id": 178
+    },
+    {
+        "category_id": 4,
+        "content": "Organize and rehearse information to strengthen connections between short– and long–term memories.",
+        "id": 179
+    },
+    {
+        "category_id": 4,
+        "content": "Find a study buddy, ask each other questions, and without notes, answer quickly from memory.",
+        "id": 180
+    },
+    {
+        "category_id": 5,
+        "content": "Effective and consistent study helps you to show what you know and avoid excessive test stress.",
+        "id": 181
+    },
+    {
+        "category_id": 5,
+        "content": "Identify 1 topic per week to teach someone else. Keep sessions under 40 minutes and include a few minutes for review.",
+        "id": 182
+    },
+    {
+        "category_id": 5,
+        "content": "Create practice tests with true/false, fill in and multiple–choice questions covering each lecture or text chapter.",
+        "id": 183
+    },
+    {
+        "category_id": 5,
+        "content": "Record the date you complete each assignment and take a quiz about the concepts and problems you completed.",
+        "id": 184
+    },
+    {
+        "category_id": 5,
+        "content": "Test yourself by writing summaries, facts, examples or diagrams without looking at notes or text.",
+        "id": 185
+    },
+    {
+        "category_id": 5,
+        "content": "When studying, first take an untimed practice test provided by the instructor or in chapters of the text.",
+        "id": 186
+    },
+    {
+        "category_id": 5,
+        "content": "Take a timed, practice test in a room similar to the one in which you will be tested.",
+        "id": 187
+    },
+    {
+        "category_id": 5,
+        "content": "Request that study group members create and discuss different types of test questions and answers.",
+        "id": 188
+    },
+    {
+        "category_id": 5,
+        "content": "Schedule time to reread chapter introductions, summaries, vocabulary lists and illustrations prior to tests.",
+        "id": 189
+    },
+    {
+        "category_id": 5,
+        "content": "Find a study buddy and create practice questions about main ideas, facts and examples. Test each other each week.",
+        "id": 190
+    },
+    {
+        "category_id": 5,
+        "content": "Use a whiteboard to summarize and review formulae and facts, then check accuracy and completeness.",
+        "id": 191
+    },
+    {
+        "category_id": 5,
+        "content": "Separate parts of the course that require memorization of facts versus analysis of concepts or problem solving.",
+        "id": 192
+    },
+    {
+        "category_id": 5,
+        "content": "Review the results of past tests to identify your error pattern. For example, do you always miss those Except items?",
+        "id": 193
+    },
+    {
+        "category_id": 5,
+        "content": "Consider hiring a tutor if you miss main idea questions or if you fall behind with several incomplete assignments.",
+        "id": 194
+    },
+    {
+        "category_id": 5,
+        "content": "Impose an Electronic Lockdown when studying for tests: no phone, Internet, television, or iPod.",
+        "id": 195
+    },
+    {
+        "category_id": 5,
+        "content": "Divide and conquer by dividing larger assignments into smaller learning  chunks. You’ll learn faster and better.",
+        "id": 196
+    },
+    {
+        "category_id": 5,
+        "content": "Limit your efforts to memorize tedious facts and formulae to 20–minute periods so that you stay alert and effective.",
+        "id": 197
+    },
+    {
+        "category_id": 5,
+        "content": "Clear your working space so that items do not dissuade or distract you from studying—or go to the library.",
+        "id": 198
+    },
+    {
+        "category_id": 5,
+        "content": "Go to your instructor’s office hours to help identify test topics or questions or study strategies.",
+        "id": 199
+    },
+    {
+        "category_id": 5,
+        "content": "Create flash cards for definitions, facts, and formulae. Include diagrams to facilitate memory.",
+        "id": 200
+    },
+    {
+        "category_id": 5,
+        "content": "Buy Blue Books and calculator batteries at the beginning of the semester so you’re prepared and calm on test days.",
+        "id": 201
+    },
+    {
+        "category_id": 5,
+        "content": "Don’t forget to get enough sleep before tests. Fatigue leads to poor focus and memory.",
+        "id": 202
+    },
+    {
+        "category_id": 5,
+        "content": "Get ready for test breaks by buying healthy snacks such as dry fruits and nuts.",
+        "id": 203
+    },
+    {
+        "category_id": 5,
+        "content": "Alternate study with brief exercise periods. Even running up and down stairs helps break the study stress.",
+        "id": 204
+    },
+    {
+        "category_id": 5,
+        "content": "Review past tests to identify items you did and didn’t do correctly. Discuss patterns with instructor or tutor.",
+        "id": 205
+    },
+    {
+        "category_id": 6,
+        "content": "Wake up early so that you do not need to rush through having breakfast and getting ready.",
+        "id": 206
+    },
+    {
+        "category_id": 6,
+        "content": "Check the venue and time of the exam to make sure that you have not confused the day/time/venue.",
+        "id": 207
+    },
+    {
+        "category_id": 6,
+        "content": "Have a balanced breakfast and eat nothing risky (probably not the best day to have a super-hot curry!). Bananas are always a good option.",
+        "id": 208
+    },
+    {
+        "category_id": 6,
+        "content": "Before leaving home, check that you have everything that you will need – ID, stationery, map to the exam venue, etc.",
+        "id": 209
+    },
+    {
+        "category_id": 6,
+        "content": "Head to the exam with plenty of time. A lot of unexpected events can happen on your way there and you do not want to be late!",
+        "id": 210
+    },
+    {
+        "category_id": 6,
+        "content": "If there are people around who are panicking, avoid them. They are not doing you any favour!",
+        "id": 211
+    },
+    {
+        "category_id": 6,
+        "content": "Go to the toilet before the exam starts. Exams can be quite long and there is no time to waste.",
+        "id": 212
+    },
+    {
+        "category_id": 6,
+        "content": "Remember to write your name on the exam paper. You would not believe how many people have forgotten to do it!",
+        "id": 213
+    },
+    {
+        "category_id": 6,
+        "content": "Read all the questions carefully before starting and quickly plan how much time to allocate to each.",
+        "id": 214
+    },
+    {
+        "category_id": 6,
+        "content": "Start answering the questions that you feel most confident about. There is no need to answer the questions in order.",
+        "id": 215
+    },
+    {
+        "category_id": 6,
+        "content": "If your brain freezes, just start writing anything and you will soon start remembering more details.",
+        "id": 216
+    },
+    {
+        "category_id": 6,
+        "content": "Don’t spend more time than you planned on a particular section/question or you might run out of time to answer other questions and gain those extra marks! Also,  leave any questions that you are unsure about for the end.",
+        "id": 217
+    },
+    {
+        "category_id": 6,
+        "content": "Don’t be afraid to ask the examiner if you are not clear on a question.",
+        "id": 218
+    },
+    {
+        "category_id": 6,
+        "content": "Use every minute of the exam and if you have time left, review your answers before handing back the paper.",
+        "id": 219
+    },
+    {
+        "category_id": 6,
+        "content": "Stay calm, you have done your homework and have nothing to fear!",
+        "id": 220
+    },
+    {
+        "category_id": 7,
+        "content": "Preview the text before the lecture. Write or diagram a summary. Develop questions to answer during the lecture.",
+        "id": 221
+    },
+    {
+        "category_id": 7,
+        "content": "Prepare your note taking paper by writing questions that you think might be addressed during the lecture.",
+        "id": 222
+    },
+    {
+        "category_id": 7,
+        "content": "Ask permission to stand up if you can’t sit and focus for a long lecture. Say,“When I stand, I won’t disturb anyone.”",
+        "id": 223
+    },
+    {
+        "category_id": 7,
+        "content": "Sit close to the speaker to stay involved and attentive, this helps you hear the information accurately and avoid distraction.",
+        "id": 224
+    },
+    {
+        "category_id": 7,
+        "content": "Do not assume that because you have hand outs or PowerPoint slides, you don’t need to take lecture notes or review.",
+        "id": 225
+    },
+    {
+        "category_id": 7,
+        "content": "Add contextual comments or sketch doodles in your notes to emphasize facts, reflect attitudes, or illustrate new terms.",
+        "id": 226
+    },
+    {
+        "category_id": 7,
+        "content": "Audio record lectures in difficult courses; note the counter number on the bottom of the page for easy access and review.",
+        "id": 227
+    },
+    {
+        "category_id": 7,
+        "content": "Record the number of each PowerPoint slide in your notes for easy access and review.",
+        "id": 228
+    },
+    {
+        "category_id": 7,
+        "content": "Take mini breaks of 1 to 2 minutes during a lecture to maintain focus and concentration. Take a few deep breaths and stretch.",
+        "id": 229
+    },
+    {
+        "category_id": 7,
+        "content": "Focus on the definitions of key terms and concentrate on learning a few facts during the lecture.",
+        "id": 230
+    },
+    {
+        "category_id": 7,
+        "content": "Write a summary of main ideas at the end of each lecture, and then add a few facts and examples.",
+        "id": 231
+    },
+    {
+        "category_id": 7,
+        "content": "Draw a diagram, chart, map or timeline to summarize information presented in the lecture.",
+        "id": 232
+    },
+    {
+        "category_id": 7,
+        "content": "Use the lecture notes as a guide to the most important aspects of the course, learning the main ideas, facts, and examples.",
+        "id": 233
+    },
+    {
+        "category_id": 7,
+        "content": "Study a little each day and review the previous day’s lecture before beginning a new topic.",
+        "id": 234
+    },
+    {
+        "category_id": 7,
+        "content": "Review and edit your notes within 24 to 48 hours of the lecture. This enhances comprehension and memory.",
+        "id": 235
+    },
+    {
+        "category_id": 7,
+        "content": "Don’t read and reread your notes. Identify important points, repeat and write the information in your own words.",
+        "id": 236
+    },
+    {
+        "category_id": 7,
+        "content": "Use color–coded sticky notes to remember vocabulary, main ideas or examples when you review notes.",
+        "id": 237
+    },
+    {
+        "category_id": 7,
+        "content": "Enlarge slides that illustrate complicated material so they are easier to read and learn in segments.",
+        "id": 238
+    },
+    {
+        "category_id": 7,
+        "content": "Edit your notes by referring to texts and other reading, then, consolidate information by creating charts or diagrams.",
+        "id": 239
+    },
+    {
+        "category_id": 7,
+        "content": "Relate and integrate the information from lectures and discussions to textbook and supplemental reading; why is it important?",
+        "id": 240
+    },
+    {
+        "category_id": 7,
+        "content": "Listen to a podcast of a lecture while walking or exercising. Write key ideas or facts when you stop the activity.",
+        "id": 241
+    },
+    {
+        "category_id": 7,
+        "content": "Test your retention of lecture material by visualizing graphics, reciting main ideas and then writing notes from memory.",
+        "id": 242
+    },
+    {
+        "category_id": 7,
+        "content": "Use lecture notes to identify questions that you can ask in discussions or address during office hours.",
+        "id": 243
+    },
+    {
+        "category_id": 7,
+        "content": "Convert the title of each lecture into one or more questions. Use these questions to generate topics for papers.",
+        "id": 244
+    },
+    {
+        "category_id": 7,
+        "content": "Use your lecture notes to create short–answer and multiple–choice questions. Use these to locate details and prepare for tests.",
+        "id": 245
+    },
+    {
+        "category_id": 8,
+        "content": "Take time to relax before you read; stretch and take a few deep breathes, then energize by visualizing a past success.",
+        "id": 246
+    },
+    {
+        "category_id": 8,
+        "content": "View reading as a method of processing information rather than a mechanical act of reading each word.",
+        "id": 247
+    },
+    {
+        "category_id": 8,
+        "content": "Create a mental image about the information you read. Remember that one picture is worth a thousand words.",
+        "id": 248
+    },
+    {
+        "category_id": 8,
+        "content": "Take frequent, brief breaks to relax. Read for 25 minutes; take a 5–minute break. Take four deep breaths and a few stretches.",
+        "id": 249
+    },
+    {
+        "category_id": 8,
+        "content": "Summarize out loud the main ideas that you learn. Schedule 3 to 5 minutes for every 30 minutes you study.",
+        "id": 250
+    },
+    {
+        "category_id": 8,
+        "content": "Take a few minutes after you read a selection to write a brief summary and then add two facts and examples.",
+        "id": 251
+    },
+    {
+        "category_id": 8,
+        "content": "Create short quizzes to test your understanding of the material you have read for each assignment.",
+        "id": 252
+    },
+    {
+        "category_id": 8,
+        "content": "Learn the elements of a diagram and then recreate it from memory on a blank page. Check accuracy and edit, if necessary.",
+        "id": 253
+    },
+    {
+        "category_id": 8,
+        "content": "Turn the bold titles of the chapter into questions. Answer by writing notes in the margin. Focus on main ideas, then on facts.",
+        "id": 254
+    },
+    {
+        "category_id": 8,
+        "content": "Use standard abbreviations or create your own when writing notes based on textbooks or articles.",
+        "id": 255
+    },
+    {
+        "category_id": 8,
+        "content": "Highlight text only after you say or rephrase and then write it in your own words in the margins, endnotes, or note cards.",
+        "id": 256
+    },
+    {
+        "category_id": 8,
+        "content": "Read when you are most rested and alert—and least distracted. You’ll learn faster, greater, and enjoy better retention.",
+        "id": 257
+    },
+    {
+        "category_id": 8,
+        "content": "View vocabulary as a basic building block of comprehension and use illustrations to help understand and memorize meaning. ",
+        "id": 258
+    },
+    {
+        "category_id": 8,
+        "content": "Focus attention by reading to answer questions or searching for key words and phrases. Repeat information in your own words.",
+        "id": 259
+    },
+    {
+        "category_id": 8,
+        "content": "Define a purpose for reading and then select a strategy for that purpose. Ask, “Should I survey, skim, or read closely?”",
+        "id": 260
+    },
+    {
+        "category_id": 8,
+        "content": "Create diagrams and charts after you read a selection. This enhances your comprehension and retention.",
+        "id": 261
+    },
+    {
+        "category_id": 8,
+        "content": "Read an assignment or article and discuss with a study partner the main ideas, facts, and implications.",
+        "id": 262
+    },
+    {
+        "category_id": 8,
+        "content": "Distinguish between reading to understand a concept and memorizing the information for use later.",
+        "id": 263
+    },
+    {
+        "category_id": 8,
+        "content": "Generate questions from the lecture titles. This provides a purpose for reading and an overview of the material.",
+        "id": 264
+    },
+    {
+        "category_id": 8,
+        "content": "Read the introduction, illustrations and summary as a preview of the assignment and recite the main ideas in your own words.",
+        "id": 265
+    },
+    {
+        "category_id": 8,
+        "content": "Increase reading rate by reading newspaper articles rapidly to answer  the questions “who, what, where, when, why?”",
+        "id": 266
+    },
+    {
+        "category_id": 8,
+        "content": "Increase reading rate by reading an interesting and easy novel for 15 minutes each day. Focus on plot and character.",
+        "id": 267
+    },
+    {
+        "category_id": 8,
+        "content": "Do word and crossword puzzles to improve vocabulary and word usage. Use the dictionary to learn unfamiliar words.",
+        "id": 268
+    },
+    {
+        "category_id": 8,
+        "content": "Read the front page of a newspaper each day and discuss with a friend the main ideas and a few facts about one article.",
+        "id": 269
+    },
+    {
+        "category_id": 8,
+        "content": "Read a newspaper article and then listen to the radio and television versions. Compare the amount of background and detail.",
+        "id": 270
+    },
+    {
+        "category_id": 9,
+        "content": "Read the assignment, relate it to the syllabus, then, list ways it reflects the objectives of the course.",
+        "id": 271
+    },
+    {
+        "category_id": 9,
+        "content": "Review your lecture notes to identify main ideas that involve the writing assignment. Generate a few questions.",
+        "id": 272
+    },
+    {
+        "category_id": 9,
+        "content": "Generate questions to answer in a paper and write key words or ideas to  answer each question.",
+        "id": 273
+    },
+    {
+        "category_id": 9,
+        "content": "Answer each question to address in your paper by writing the main idea, a further explanation, two facts, and an example.",
+        "id": 274
+    },
+    {
+        "category_id": 9,
+        "content": "Get ready to write by allowing time to brainstorm. Use images or just begin writing notes about a word or idea.",
+        "id": 275
+    },
+    {
+        "category_id": 9,
+        "content": "Trigger creativity by finding quotes related to important vocabulary words in your course or assignment.",
+        "id": 276
+    },
+    {
+        "category_id": 9,
+        "content": "Work with a partner or small group to consider and flesh out ideas for papers and projects.",
+        "id": 277
+    },
+    {
+        "category_id": 9,
+        "content": "Before setting pen to page, allow 5 to 10 minutes to review your ideas, perhaps creating a diagram or chart.",
+        "id": 278
+    },
+    {
+        "category_id": 9,
+        "content": "Only engage in brainstorming activities when you are rested and alert. Fatigue reduces rather than enhances creativity.",
+        "id": 279
+    },
+    {
+        "category_id": 9,
+        "content": "Separate your brainstorming activities from times during which you analyze, outline, or write your ideas.",
+        "id": 280
+    },
+    {
+        "category_id": 9,
+        "content": "Write for brief periods, perhaps 20 to 40 minutes; take a short 5– to 10– minute break, then resume writing.",
+        "id": 281
+    },
+    {
+        "category_id": 9,
+        "content": "Plan to complete a paper or presentation at least one day prior to the due date to allow for final editing.",
+        "id": 282
+    },
+    {
+        "category_id": 9,
+        "content": "Use a template or software program to write your bibliography so that all the information is formatted accurately.",
+        "id": 283
+    },
+    {
+        "category_id": 9,
+        "content": "Know what you want to say before you write. Ask a question and answer it aloud before you write.",
+        "id": 284
+    },
+    {
+        "category_id": 9,
+        "content": "Read each sentence aloud to spot spelling and grammar mistakes as well as excess wording.",
+        "id": 285
+    },
+    {
+        "category_id": 9,
+        "content": "Check that you have sufficient facts, citations, and examples to support each major point of your paper.",
+        "id": 286
+    },
+    {
+        "category_id": 9,
+        "content": "Always give proper credit for another’s work by using direct quotes and citing author, date, publisher and page numbers.",
+        "id": 287
+    },
+    {
+        "category_id": 9,
+        "content": "Date and back up every revision of your paper on a thumb or external drive or email it to yourself.",
+        "id": 288
+    },
+    {
+        "category_id": 9,
+        "content": "Pose questions and discuss the answers using a voice recorder. Write after you listen to the recording.",
+        "id": 289
+    },
+    {
+        "category_id": 9,
+        "content": "Make a timeline and check off writing activities such as time to think, brainstorm, write, revise and edit.",
+        "id": 290
+    },
+    {
+        "category_id": 9,
+        "content": "Get feedback from your instructor about a proposed paper. Discuss your proposed topic, questions to address and references.",
+        "id": 291
+    },
+    {
+        "category_id": 9,
+        "content": "Begin by answering one question, even if it is in the middle of the paper. This spurs action and avoids writer’s block.",
+        "id": 292
+    },
+    {
+        "category_id": 9,
+        "content": "Cool down before you begin to begin to write. Visualize a successful experience; take 2 to 4 deep breaths and stretch.",
+        "id": 293
+    },
+    {
+        "category_id": 9,
+        "content": "After breaks, gear up before restarting. Review notes, visualize the completed paper, and identify a small goal.",
+        "id": 294
+    },
+    {
+        "category_id": 9,
+        "content": "Check your organization by marking the main idea sentence of each paragraph with a colored pencil.",
+        "id": 295
+    },
+    {
+        "category_id": 10,
+        "content": "Prevent panic and remain calm during tests by taking four deep breaths and a few stretches every 15 minutes.",
+        "id": 296
+    },
+    {
+        "category_id": 10,
+        "content": "Don’t spend too much time on any one question. This ensures that you finish the test and get the most points possible.",
+        "id": 297
+    },
+    {
+        "category_id": 10,
+        "content": "Review the test to find the easiest questions. This reduces stress and allows time to avoid silly mistakes.",
+        "id": 298
+    },
+    {
+        "category_id": 10,
+        "content": "Awake early before a test to make sure you eat a healthy breakfast and feel refreshed.",
+        "id": 299
+    },
+    {
+        "category_id": 10,
+        "content": "Review the results of tests so you can practice the subjects or types of questions on which you did least well.",
+        "id": 300
+    },
+    {
+        "category_id": 10,
+        "content": "Arrive early so you can take time to calm down, organize your materials and focus on the task.",
+        "id": 301
+    },
+    {
+        "category_id": 10,
+        "content": "Take a few deep breaths, stretch and evoke a positive image if you begin to panic. Go on to another question.",
+        "id": 302
+    },
+    {
+        "category_id": 10,
+        "content": "Plan your time by counting the number of questions and points. Pace yourself by doing the easiest questions first.",
+        "id": 303
+    },
+    {
+        "category_id": 10,
+        "content": "Read each test question carefully and completely before answering it. Circle keywords or phrases in possible choices.",
+        "id": 304
+    },
+    {
+        "category_id": 10,
+        "content": "Read the directions slowly and carefully before beginning the test. Check the number of points allotted to each question.",
+        "id": 305
+    },
+    {
+        "category_id": 10,
+        "content": "Before starting the test, jot down memory aids, equations, formulas, time lines or other material you might forget.",
+        "id": 306
+    },
+    {
+        "category_id": 10,
+        "content": "Draw diagrams, mind maps or timeliness to jog your memory if you begin to panic or lose focus.",
+        "id": 307
+    },
+    {
+        "category_id": 10,
+        "content": "Look for answers in other test questions when taking a multiple–choice examination.",
+        "id": 308
+    },
+    {
+        "category_id": 10,
+        "content": "Answer each question in your head before looking at the multiple choices. This helps to eliminate some choices.",
+        "id": 309
+    },
+    {
+        "category_id": 10,
+        "content": "Read all answers to multiple–choice questions before selecting one. This helps to find the best answer.",
+        "id": 310
+    },
+    {
+        "category_id": 10,
+        "content": "Mark questions that you can’t answer immediately and return to them when you finish the test.",
+        "id": 311
+    },
+    {
+        "category_id": 10,
+        "content": "Look for qualifiers, such as all, most or never. Such key words may indicate a false statement in a true/false question.",
+        "id": 312
+    },
+    {
+        "category_id": 10,
+        "content": "Say definitions without looking at the text. Explain vocabulary in your own words to prepare for essay tests.",
+        "id": 313
+    },
+    {
+        "category_id": 10,
+        "content": "On essay tests, convert each question into several smaller questions and devote a paragraph to each question.",
+        "id": 314
+    },
+    {
+        "category_id": 10,
+        "content": "Use key words to organize essays; for a sequence, use terms such as first, second, third, or before, during, after.",
+        "id": 315
+    },
+    {
+        "category_id": 10,
+        "content": "Use the word PERSIA to recall Political, Economic, Religious, Social, Industrial, and Arts topics when writing essay tests.",
+        "id": 316
+    },
+    {
+        "category_id": 10,
+        "content": "If there is no penalty for guessing, answer all questions even if you need to guess.",
+        "id": 317
+    },
+    {
+        "category_id": 10,
+        "content": "Circle key words in an essay question to clarify your purpose. Is it to compare and contrast, or analyze and exemplify?",
+        "id": 318
+    },
+    {
+        "category_id": 10,
+        "content": "Separate the thinking and writing aspects of essay development by drawing a diagram or mind map or making an outline.",
+        "id": 319
+    },
+    {
+        "category_id": 10,
+        "content": "Ensure that your answers are legible when writing essays or calculations problems. Write slowly and check accuracy.",
+        "id": 320
+    },
+    {
+        "category_id": 11,
+        "content": "Conversation, Conversation, Conversation.\nIf there’s a “secret” or “hack” to learning a new language, it’s this: hours and hours of awkward and strenuous conversation with people better than you in that language. An hour of conversation (with corrections and a dictionary for reference) is as good as five hours in a classroom and 10 hours with a language course by yourself.",
+        "id": 321
+    },
+    {
+        "category_id": 11,
+        "content": "Intensity of study trumps length of study.\nWhat I mean by this is that studying a language four hours a day for two weeks will be more beneficial for you than studying one hour a day for two months. This is one reason why so many people take language classes in school and never remember anything. It’s because they only study 3-4 hours per week and often the classes are separated by multiple days.",
+        "id": 322
+    },
+    {
+        "category_id": 11,
+        "content": "Classes suck and are an inefficient use of time and money.\nAll things considered, you get a really poor return for your time and effort in group classes. There are two problems. The first is that the class moves at the pace of its slowest student. The second is that language learning is a fairly personal process — everyone naturally learns some words or topics easier than others, therefore a class is not going to be able to address each student’s personal needs as well or in a timely fashion.",
+        "id": 323
+    },
+    {
+        "category_id": 11,
+        "content": "Start with the 100 most common words.\nNot all vocabulary is made the same. Some gives you a better return on investment than others. For instance, when I lived in Buenos Aires, I met a guy who had been studying with Rosetta Stone for months (not recommended). I had been working on and off with a tutor for a few weeks, but I was surprised by how he could not follow even the most basic of conversations despite months of study and living there.",
+        "id": 324
+    },
+    {
+        "category_id": 11,
+        "content": "Carry a pocket dictionary.\nThis made a much bigger difference than I expected. I carry an English-Spanish dictionary app on my phone and I used it all the time when I live in Spanish-speaking countries. My first two weeks in Brazil, I was lazy and kept forgetting to download an English-Portuguese application. I struggled in my conversations A LOT during those two weeks, despite knowing basic Portuguese.",
+        "id": 325
+    },
+    {
+        "category_id": 11,
+        "content": "Keep practicing in your head.\nThe other use for your dictionary is that you can practice while going about your day and not talking to anyone. Challenge yourself to think in the new language. We all have monologues running in our head, and typically they run in our native tongue. You can continue to practice and construct sentences and fake conversations in your head in a new language. In fact, this sort of visualization leads to much easier conversations when you actually have them. For instance, you can envision and practice a conversation about a topic you’re likely to have before you actually have it. You can begin to think about how you would describe your job and explain why you’re in the foreign country in the new language. Inevitably, those questions will come up and you’ll be ready to answer them.",
+        "id": 326
+    },
+    {
+        "category_id": 11,
+        "content": "You’re going to say a lot of stupid things. Accept it.\nWhen I was first learning Spanish, I once told a group of people that Americans put a lot of condoms in their food. Later, I told a girl that basketball makes me horny. Um, yeah… It’s going to happen. Trust me.",
+        "id": 327
+    },
+    {
+        "category_id": 11,
+        "content": "Figure out pronunciation patterns.\nAll Latin-based languages will have similar pronunciation patterns based on Latin words. For instance, any word that ends in “-tion” in English will almost always end in “-ción” in Spanish and “-ção” in Portuguese. English-speakers are notorious for simply adding “-o” “-e” or “-a” to the end of English words to say Spanish words they don’t know. But stereotypes aside, it’s surprising how often it’s correct. “Destiny” is “destino,” “motive” is “motivo,” “part” is “parte” and so on. In Russian, case endings always rhyme with one another, so if you are talking about a feminine noun (such as “Zhen-shee-na”), then you know that the adjectives and adverbs will usually rhyme with its ending (“krasee-vaya” as opposed to “krasee-vee”).",
+        "id": 328
+    },
+    {
+        "category_id": 11,
+        "content": "Use audio and online courses for the first 100 words and basic grammar.\nAfter that they should only be used for reference and nothing more.",
+        "id": 329
+    },
+    {
+        "category_id": 11,
+        "content": "After the first 100 words, focus on becoming conversational.\nStudies have shown that the most common 100 words in any language account for 50% of all spoken communication. The most common 1,000 words account for 80% of all spoken communication. The most common 3,000 words account for 99% of communication. In other words, there are some serious diminishing returns from learning more vocabulary. I probably only know 500-1,000 words in Spanish and in most conversations I never have to stop and look a word up in my phone.",
+        "id": 330
+    },
+    {
+        "category_id": 11,
+        "content": "Aim for the brain melt.\nYou know how when you do a lot of intellectually-intensive work for hours and hours on end, at some point your brain just feels like a lump of gravy? Shoot for that moment when learning languages. Until you’ve reached brain-gravy stage, you probably aren’t maximizing your time or effort. In the beginning, you’ll hit mind-melt within an hour or two. Later on, it may take an entire night of hanging out with locals before it happens. But when it happens, it’s a very good thing.",
+        "id": 331
+    },
+    {
+        "category_id": 11,
+        "content": "“How do you say X?” is the most important sentence you can possibly learn. Learn it early and use it often.",
+        "id": 332
+    },
+    {
+        "category_id": 11,
+        "content": "One-on-one tutoring is the best and most efficient use of time.\nIt’s also usually the most expensive use of time, depending on the language and country. But if you have the money, grabbing a solid tutor and sitting with him or her for a few hours every day is the fastest way to learn a new language I’ve ever found.",
+        "id": 333
+    },
+    {
+        "category_id": 11,
+        "content": "Date someone who speaks the target language and not your native language.\nTalk about investment and motivation. You’ll be fluent in a month. And best of all, if you make them mad or do something wrong, you can claim that it was lost in translation.",
+        "id": 334
+    },
+    {
+        "category_id": 11,
+        "content": "If you can’t find someone cute who will put up with you, find a language buddy online.\nThere are a number of websites of foreigners who want to learn English who would be willing to trade practice time in their native language for practice in yours.",
+        "id": 335
+    },
+    {
+        "category_id": 11,
+        "content": "Facebook chat + Google Translate = Winning.",
+        "id": 336
+    },
+    {
+        "category_id": 11,
+        "content": "When you learn a new word, try to use it a few times right away.\nWhen you stop and look up a new word in conversation, make a point to use it in the next two or three sentences you say. Language learning studies show that you need to hit a certain amount of repetitions of saying a word within one minute of learning it, one hour of learning it, one day, etc. Try to use it immediately a few times and then use it again later in the day. Chances are it’ll stick.",
+        "id": 337
+    },
+    {
+        "category_id": 11,
+        "content": "TV shows, movies, newspapers and magazines are a good supplementation.\nBut they should not be mistaken or replacements for legitimate practice.",
+        "id": 338
+    },
+    {
+        "category_id": 11,
+        "content": "Most people are helpful, let them help.\nIf you’re in a foreign country and making a complete ass out of yourself trying to buy something at the grocery store, ask random people for help. Point to something and ask how to say it. Ask them questions. Most people are friendly and willing to help you out. Learning a language is not for shy people.",
+        "id": 339
+    },
+    {
+        "category_id": 11,
+        "content": "There will be a lot of ambiguity and miscommunication.\nFact of the matter is that for many, many words, the translations are not direct.",
+        "id": 340
+    },
+    {
+        "category_id": 11,
+        "content": "These are the phases you go through.\nFirst, you’re able to speak a little and understand nothing. Then you’re able to understand far more than you speak. Then you become conversational, but it requires quite a bit of mental effort. After that, you’re able to speak and understand without conscious mental effort (i.e., you don’t have to translate words into your native tongue in your mind). Once you’re able to speak and listen without thinking about it, you’ll begin to actually think in the foreign language itself without effort. Once this happens, you’re really hitting a high level.",
+        "id": 341
+    },
+    {
+        "category_id": 11,
+        "content": "Finally, find a way to make it fun.\nAs with anything, if you’re going to stick to it, you have to find a way to make it fun. Find people you enjoy talking to. Go to events where you can practice while doing something fun. Don’t just sit in a classroom in front of a book, or you’re likely to burn out fairly quickly. Talk about personal topics which you care about. Find out about the person you’re talking to. Make it a personal, life experience, or else you’re going to be in for a long, unenjoyable process which will likely end up in you forgetting everything you learned.",
+        "id": 342
+    },
+    {
+        "category_id": 12,
+        "content": "Remember, the better your focus, the better your ability to learn and retain information.",
+        "id": 343
+    },
+    {
+        "category_id": 12,
+        "content": "Understand that an average person can learn and accomplish a great deal in a brief time when focused on a task.",
+        "id": 344
+    },
+    {
+        "category_id": 12,
+        "content": "Identify times when you are most alert and attentive, then work on your most challenging courses.",
+        "id": 345
+    },
+    {
+        "category_id": 12,
+        "content": "Work intensely for a brief period; take a break and then review before you move on.",
+        "id": 346
+    },
+    {
+        "category_id": 12,
+        "content": "Improve study efficiency by identifying your best practices. When and where do you focus best when completing assignments?",
+        "id": 347
+    },
+    {
+        "category_id": 12,
+        "content": "Keep track of the time it takes to complete different types of assignments. Ask, “Am I studying when I’m too tired or stressed?”",
+        "id": 348
+    },
+    {
+        "category_id": 12,
+        "content": "Curb ineffective hyper focus. When you work too long on a project, you dissipate your energy and accomplish little.",
+        "id": 349
+    },
+    {
+        "category_id": 12,
+        "content": "Enhance focus and productivity by clarifying instructions and criteria for tests, papers, presentations, and projects.",
+        "id": 350
+    },
+    {
+        "category_id": 12,
+        "content": "Stop interruptions by alerting others about the times you are unavailable because you are studying.",
+        "id": 351
+    },
+    {
+        "category_id": 12,
+        "content": "Keep a study group focused and targeted by using an agenda or questions to address. Assign someone the role of timekeeper.",
+        "id": 352
+    },
+    {
+        "category_id": 12,
+        "content": "To curb interruptions, hang a sign on your door such as “Genius at work. Please do not disturb.”",
+        "id": 353
+    },
+    {
+        "category_id": 12,
+        "content": "To stop distractions and interruptions, sit facing a wall, and study away from doorways and windows.",
+        "id": 354
+    },
+    {
+        "category_id": 12,
+        "content": "Impose an Electronic Lockdown when you need to read or study difficult material. Turn off the phone, television, and iPod.",
+        "id": 355
+    },
+    {
+        "category_id": 12,
+        "content": "If you can’t study in total quiet, use a form of white noise such as a fan or soft music.",
+        "id": 356
+    },
+    {
+        "category_id": 12,
+        "content": "Identify places in which there are few distractions and go there to study for your most difficult courses.",
+        "id": 357
+    },
+    {
+        "category_id": 12,
+        "content": "Stretch, get a healthy snack, or take a quick nap when you feel sluggish; a break and rest renews mental energy and focus.",
+        "id": 358
+    },
+    {
+        "category_id": 12,
+        "content": "There is a psychological advantage to studying a particular course in the same place regularly. A routine helps trigger focus.",
+        "id": 359
+    },
+    {
+        "category_id": 12,
+        "content": "Understand that the amount of time you can spend on each subject varies with your interest and the difficulty of the course.",
+        "id": 360
+    },
+    {
+        "category_id": 12,
+        "content": "Set study goals to help focus your attention for specific periods—monitoring your progress helps to reinforce your efforts.",
+        "id": 361
+    },
+    {
+        "category_id": 12,
+        "content": "Vary your study activities to avoid boredom and loss of focus. Mix the easier with more difficult problems and take breaks.",
+        "id": 362
+    },
+    {
+        "category_id": 12,
+        "content": "Get at least 7 hours of sleep to give you the mental and physical energy needed to concentrate in lectures and when reading.",
+        "id": 363
+    },
+    {
+        "category_id": 12,
+        "content": "Identify and use your preferred learning style. Using your strengths makes it easier to focus and progress.",
+        "id": 364
+    },
+    {
+        "category_id": 12,
+        "content": "Use positive distractions such as listening to a song to warm up prior to studying. Ease into a focused study state.",
+        "id": 365
+    },
+    {
+        "category_id": 12,
+        "content": "Increase your ability to focus if you are upset. Take 5 minutes to write concerns or questions. Then shift into a work mode.",
+        "id": 366
+    },
+    {
+        "category_id": 12,
+        "content": "Give yourself a high five after a session in which you focus and learn. Recognize and reward yourself for a job well done.",
+        "id": 367
+    },
+    {
+        "category_id": 13,
+        "content": "Effective and consistent study helps you to show what you know and avoid excessive test stress.",
+        "id": 368
+    },
+    {
+        "category_id": 13,
+        "content": "Identify 1 topic per week to teach someone else. Keep sessions under 40 minutes and include a few minutes for review.",
+        "id": 369
+    },
+    {
+        "category_id": 13,
+        "content": "Create: practice tests with true/false, fill in and multiple–choice questions covering each lecture or text chapter.",
+        "id": 370
+    },
+    {
+        "category_id": 13,
+        "content": "Record: the date you complete each assignment and take a quiz about the concepts and problems you completed.",
+        "id": 371
+    },
+    {
+        "category_id": 13,
+        "content": "Test yourself by writing summaries, facts, examples or diagrams without looking at notes or text.",
+        "id": 372
+    },
+    {
+        "category_id": 13,
+        "content": "When studying, first take an untimed practice test provided by the instructor or in chapters of the text.",
+        "id": 373
+    },
+    {
+        "category_id": 13,
+        "content": "Take a timed, practice test in a room similar to the one in which you will be tested.",
+        "id": 374
+    },
+    {
+        "category_id": 13,
+        "content": "Request that study group members create and discuss different types of test questions and answers.",
+        "id": 375
+    },
+    {
+        "category_id": 13,
+        "content": "Schedule time to reread chapter introductions, summaries, vocabulary lists and illustrations prior to tests.",
+        "id": 376
+    },
+    {
+        "category_id": 13,
+        "content": "Find a study buddy and create practice questions about main ideas, facts and examples. Test each other each week.",
+        "id": 377
+    },
+    {
+        "category_id": 13,
+        "content": "Use a whiteboard to summarize and review formulae and facts, then check accuracy and completeness.",
+        "id": 378
+    },
+    {
+        "category_id": 13,
+        "content": "Separate parts of the course that require memorization of facts versus analysis of concepts or problem solving.",
+        "id": 379
+    },
+    {
+        "category_id": 13,
+        "content": "Review the results of past tests to identify your error pattern. For example, do you always miss those Except items?",
+        "id": 380
+    },
+    {
+        "category_id": 13,
+        "content": "Stress Management:Consider hiring a tutor if you miss main idea questions or if you fall behind with several incomplete assignments.",
+        "id": 381
+    },
+    {
+        "category_id": 13,
+        "content": "Impose an Electronic Lockdown when studying for tests: no phone, Internet, television, or iPod.",
+        "id": 382
+    },
+    {
+        "category_id": 13,
+        "content": "Divide and conquer by dividing larger assignments into smaller learning  chunks. You’ll learn faster and better.",
+        "id": 383
+    },
+    {
+        "category_id": 13,
+        "content": "Limit your efforts to memorize tedious facts and formulae to 20–minute periods so that you stay alert and effective.",
+        "id": 384
+    },
+    {
+        "category_id": 13,
+        "content": "Clear your working space so that items do not dissuade or distract you from studying - or go to the library.",
+        "id": 385
+    },
+    {
+        "category_id": 13,
+        "content": "Go to your instructor’s office hours to help identify test topics or questions or study strategies.",
+        "id": 386
+    },
+    {
+        "category_id": 13,
+        "content": "Create flash cards for definitions, facts, and formulae. Include diagrams to facilitate memory.",
+        "id": 387
+    },
+    {
+        "category_id": 13,
+        "content": "Buy Blue Books and calculator batteries at the beginning of the semester so you’re prepared and calm on test days.",
+        "id": 388
+    },
+    {
+        "category_id": 13,
+        "content": "Don’t forget to get enough sleep before tests. Fatigue leads to poor focus and memory.",
+        "id": 389
+    },
+    {
+        "category_id": 13,
+        "content": "Get ready for test breaks by buying healthy snacks such as dry fruits and nuts.",
+        "id": 390
+    },
+    {
+        "category_id": 13,
+        "content": "Alternate study with brief exercise periods. Even running up and down stairs helps break the study stress.",
+        "id": 391
+    },
+    {
+        "category_id": 13,
+        "content": "Review past tests to identify items you did and didn’t do correctly. Discuss patterns with instructor or tutor.",
+        "id": 392
+    },
+    {
+        "category_id": 14,
+        "content": "Tailor communication method to the recipient; for example, text message a too–talkative person.",
+        "id": 393
+    },
+    {
+        "category_id": 14,
+        "content": "Use kitchen timers to help maintain a study schedule. Observe how long you study before losing focus.",
+        "id": 394
+    },
+    {
+        "category_id": 14,
+        "content": "Schedule all major academic and personal events on a semester calendar. This may prevent becoming overwhelmed.",
+        "id": 395
+    },
+    {
+        "category_id": 14,
+        "content": "Develop effective study routines. For example, begin to study four days a week at 7 PM. Stop studying when tired.",
+        "id": 396
+    },
+    {
+        "category_id": 14,
+        "content": "Color code long– versus short–term goals and schedule their completion date on a calendar or phone.",
+        "id": 397
+    },
+    {
+        "category_id": 14,
+        "content": "Make school and study your priority. You may need to resign from volunteer or extra curricular activities.",
+        "id": 398
+    },
+    {
+        "category_id": 14,
+        "content": "Take 5 minutes to think about and note “to do” tasks for the next day before you stop studying or go to bed.",
+        "id": 399
+    },
+    {
+        "category_id": 14,
+        "content": "Use a planner to record your daily or weekly schedule. Post the daily schedule on your computer if you are forgetful.",
+        "id": 400
+    },
+    {
+        "category_id": 14,
+        "content": "List things to do, schedule on a calendar, and then check off each task as it is completed.",
+        "id": 401
+    },
+    {
+        "category_id": 14,
+        "content": "Brainstorm tasks to be done and then group items according to categories; nice vs. necessary or urgent vs. can wait.",
+        "id": 402
+    },
+    {
+        "category_id": 14,
+        "content": "Estimate or “guess–timate” the time required to complete a task and then record the actual time to complete it.",
+        "id": 403
+    },
+    {
+        "category_id": 14,
+        "content": "Develop a master semester schedule that includes exams and deadlines. Go to office hours if you might need help.",
+        "id": 404
+    },
+    {
+        "category_id": 14,
+        "content": "Prepare materials and place in a backpack or tote before you go to bed. This saves time and reduces hassle.",
+        "id": 405
+    },
+    {
+        "category_id": 14,
+        "content": "Plan your telephone contacts with friends and family. Schedule a  NO  CALL period during study time.",
+        "id": 406
+    },
+    {
+        "category_id": 14,
+        "content": "Schedule hour–by–hour, course–by–course study time. Check off each topic as completed, smile, and enjoy a break.",
+        "id": 407
+    },
+    {
+        "category_id": 14,
+        "content": "Develop a routine that allows for study and leisure. You need rest time to enhance attention and maintain motivation.",
+        "id": 408
+    },
+    {
+        "category_id": 14,
+        "content": "Warm up with a 5–minute break as a study warm–up; do a few stretches, take some deep breaths, and have a healthy drink or snack.",
+        "id": 409
+    },
+    {
+        "category_id": 14,
+        "content": "Remember to schedule intense, but brief 40–minute study times between classes at non–distracting locations.",
+        "id": 410
+    },
+    {
+        "category_id": 14,
+        "content": "Identify your peak learning times; schedule study times when you are most alert and able to focus and memorize.",
+        "id": 411
+    },
+    {
+        "category_id": 14,
+        "content": "Don’t tackle routine tasks until after study. For example, alphabetizing references or filing articles.",
+        "id": 412
+    },
+    {
+        "category_id": 14,
+        "content": "Try out your schedule for at least one week. This provides a realistic picture of what you actually get done.",
+        "id": 413
+    },
+    {
+        "category_id": 14,
+        "content": "Evaluate your schedule. Ask, “Did I over– or underestimate the time required to study a course? Any conflicts?”",
+        "id": 414
+    },
+    {
+        "category_id": 14,
+        "content": "Review the effectiveness of your weekly schedule and continuously adjust in order to increase your study efficiency.",
+        "id": 415
+    },
+    {
+        "category_id": 14,
+        "content": "Identify the time conflicts that challenge the quantity or quality of your study time. Studying when alert and relaxed.",
+        "id": 416
+    },
+    {
+        "category_id": 14,
+        "content": "Consider a study warm–up by doing some easier tasks before attacking material that is more difficult.",
+        "id": 417
+    },
+    {
+        "category_id": 15,
+        "content": "Use separate, color–coded binders or folders for each course.",
+        "id": 418
+    },
+    {
+        "category_id": 15,
+        "content": "Create a computer–based filing system to store supplemental readings and resources.",
+        "id": 419
+    },
+    {
+        "category_id": 15,
+        "content": "Schedule a regular time each week to delete or archive emails, newsletters, and other communication.",
+        "id": 420
+    },
+    {
+        "category_id": 15,
+        "content": "Purchase Blue Books or exam materials at the beginning of the semester to prevent problems on the day of the test.",
+        "id": 421
+    },
+    {
+        "category_id": 15,
+        "content": "Store pens pencils, staples, tape and other supplies in mugs or containers for easy access.",
+        "id": 422
+    },
+    {
+        "category_id": 15,
+        "content": "Designate a place to store credit card receipts in wallet or backpack.",
+        "id": 423
+    },
+    {
+        "category_id": 15,
+        "content": "Purchase a few memory sticks and back up work daily so that you don’t lose drafts of papers or projects.",
+        "id": 424
+    },
+    {
+        "category_id": 15,
+        "content": "Purchase an external drive to have a complete backup of reading assignments, papers, or projects.",
+        "id": 425
+    },
+    {
+        "category_id": 15,
+        "content": "Post due dates and instructions for each course’s assignments on a bulletin board or closet.",
+        "id": 426
+    },
+    {
+        "category_id": 15,
+        "content": "Clear the clutter on a desk or other workplace to reduce distractions and save time accessing materials.",
+        "id": 427
+    },
+    {
+        "category_id": 15,
+        "content": "Assemble or file papers and other materials at least once a week to increase control and efficiency.",
+        "id": 428
+    },
+    {
+        "category_id": 15,
+        "content": "Schedule one day a month to go to office hours or work with the instructor, teaching assistant or lab supervisor.",
+        "id": 429
+    },
+    {
+        "category_id": 15,
+        "content": "Check that work areas have ample and comfortable lighting. This increases your study energy and endurance.",
+        "id": 430
+    },
+    {
+        "category_id": 15,
+        "content": "Use helpful ideas from friends about the ways they organize their course materials, supplies and responsibilities.",
+        "id": 431
+    },
+    {
+        "category_id": 15,
+        "content": "Engage in a weekly, 5–minute self–dialogue to list the best ways you organized materials and space for better studying.",
+        "id": 432
+    },
+    {
+        "category_id": 15,
+        "content": "Prepare ways in which you will congratulate and reward yourself for staying organized and on target with your studies.",
+        "id": 433
+    },
+    {
+        "category_id": 15,
+        "content": "Post signs to remind you of the steps to follow when studying or writing a paper.",
+        "id": 434
+    },
+    {
+        "category_id": 15,
+        "content": "Keep a checklist of assignments and identify resources or materials to assemble prior to beginning your work.",
+        "id": 435
+    },
+    {
+        "category_id": 15,
+        "content": "Attend office hours to discuss the best ways to organize materials and approach the material for courses.",
+        "id": 436
+    },
+    {
+        "category_id": 15,
+        "content": "Keep a list or journal of lessons learned about organization of study materials and strategies. Review every 2 weeks.",
+        "id": 437
+    },
+    {
+        "category_id": 15,
+        "content": "Use online, print or audio resources to find tips about organization and storage of supplies, books and materials.",
+        "id": 438
+    },
+    {
+        "category_id": 15,
+        "content": "Use sketches and diagrams to specify the process and tasks needed to complete a long–term project.",
+        "id": 439
+    },
+    {
+        "category_id": 15,
+        "content": "Specify the plans for your day or for projects by talking into an audio recorder. If needed, make notes.",
+        "id": 440
+    },
+    {
+        "category_id": 15,
+        "content": "Use a file cabinet or milk crate to store materials for each course. Label or color code each for easy access.",
+        "id": 441
+    },
+    {
+        "category_id": 15,
+        "content": "Say directions aloud to keep you focused when following steps to complete a task or project.",
+        "id": 442
+    },
+    {
+        "category_id": 16,
+        "content": "Drink between 6 to 8 glasses of water daily to avoid symptoms of dehydration such as weakness, headaches and constipation.",
+        "id": 443
+    },
+    {
+        "category_id": 16,
+        "content": "Get at least 6 to 8 hours of sleep 4 to 5 days a week. Fatigue is the enemy of mental energy and alertness.",
+        "id": 444
+    },
+    {
+        "category_id": 16,
+        "content": "Take short naps of not more than 20 minutes in the late afternoon when energy and focus wane.",
+        "id": 445
+    },
+    {
+        "category_id": 16,
+        "content": "Avoid high intake of caffeine since it can trigger headaches, irritability, restlessness, and mild insomnia.",
+        "id": 446
+    },
+    {
+        "category_id": 16,
+        "content": "Avoid excessive sugar; an initial energy rush may soon be followed by tiredness, headaches and increases in hunger levels.",
+        "id": 447
+    },
+    {
+        "category_id": 16,
+        "content": "Incorporate some exercise within a total recreation plan. Exercise with a friend or join a running group.",
+        "id": 448
+    },
+    {
+        "category_id": 16,
+        "content": "Combine easy chores such as folding laundry with social chores such as talking on the telephone.",
+        "id": 449
+    },
+    {
+        "category_id": 16,
+        "content": "Balance physical and mental tasks; use a short study break to pack a lunch or open mail.",
+        "id": 450
+    },
+    {
+        "category_id": 16,
+        "content": "Walk, bike, or skate to school or use stairs rather than an elevator.",
+        "id": 451
+    },
+    {
+        "category_id": 16,
+        "content": "Use your lunch hour wisely: eat for 30, walk for 20, and rest for 10 minutes.",
+        "id": 452
+    },
+    {
+        "category_id": 16,
+        "content": "Locate and understand the services provided by the Student Health Clinic. Identify services that may be useful for you.",
+        "id": 453
+    },
+    {
+        "category_id": 16,
+        "content": "Locate the services available from counseling or housing centers to help with potential personal problems and crises.",
+        "id": 454
+    },
+    {
+        "category_id": 16,
+        "content": "React to any pinpricks of awareness that relate to your overuse or abuse of alcohol or drugs. If you think you are, you are!",
+        "id": 455
+    },
+    {
+        "category_id": 16,
+        "content": "Avoid the state of constant overwhelm. Balance your need to volunteer and be involved in groups with your need to study.",
+        "id": 456
+    },
+    {
+        "category_id": 16,
+        "content": "Get a yearly physical check up, but call if you notice changes in headaches, sleeplessness, irritability or appetite.",
+        "id": 457
+    },
+    {
+        "category_id": 17,
+        "content": "Identify possible academic or personal pitfalls and reflect about who can help you to avoid them.",
+        "id": 458
+    },
+    {
+        "category_id": 17,
+        "content": "Go to office hours on a regular basis, especially with your two most difficult courses.",
+        "id": 459
+    },
+    {
+        "category_id": 17,
+        "content": "List people or resources that have helped you in the past, reconnect with them and tell them how you are doing.",
+        "id": 460
+    },
+    {
+        "category_id": 17,
+        "content": "Call, write or visit others to tell them the ways in which they have helped you.",
+        "id": 461
+    },
+    {
+        "category_id": 17,
+        "content": "View any requests for help as a sign of strength and courage. When difficulties persist, reach out for the help of an expert.",
+        "id": 462
+    },
+    {
+        "category_id": 17,
+        "content": "Use a card case or PDA to store information about campus–based resources and counselors.",
+        "id": 463
+    },
+    {
+        "category_id": 17,
+        "content": "Ask a classmate or friend to be a study buddy if you need motivation or structure when it is time to study.",
+        "id": 464
+    },
+    {
+        "category_id": 17,
+        "content": "Plan ahead and schedule visits or calls to advising, counseling or mental health professionals throughout the semester.",
+        "id": 465
+    },
+    {
+        "category_id": 17,
+        "content": "Visit special interest clubs or social groups to enhance personal growth, camaraderie and fun.",
+        "id": 466
+    },
+    {
+        "category_id": 17,
+        "content": "Consider contacting campus–based spiritual or religious organizations to find solace and support.",
+        "id": 467
+    },
+    {
+        "category_id": 17,
+        "content": "Keep in touch with family and friends by scheduling once a week or month calls or by sending brief, group emails.",
+        "id": 468
+    },
+    {
+        "category_id": 17,
+        "content": "Subscribe to the school and community papers so that you are aware of special events and positive distractions.",
+        "id": 469
+    },
+    {
+        "category_id": 17,
+        "content": "Acknowledge probable difficult times such as the anniversary of a tragedy and plan to be with supportive people.",
+        "id": 470
+    },
+    {
+        "category_id": 17,
+        "content": "Find volunteering opportunities. Donating your time, even for one hour per month, can uplift spirits and renew energy.",
+        "id": 471
+    },
+    {
+        "category_id": 17,
+        "content": "Use vacation and holiday breaks to renew friendships and share recreational or relaxing times.",
+        "id": 472
+    },
+    {
+        "category_id": 18,
+        "content": "Stock up on supplies and sundries at a discount store. Go with a friend to a discount store for 30 minutes, once a month.",
+        "id": 473
+    },
+    {
+        "category_id": 18,
+        "content": "Shop ahead for foods and snacks and prepare meals over the weekend.",
+        "id": 474
+    },
+    {
+        "category_id": 18,
+        "content": "Make large portions, then store or freeze leftovers in plastic containers for later use.",
+        "id": 475
+    },
+    {
+        "category_id": 18,
+        "content": "Just say no if asked to go to happy hour during the week. The rule is, “No partying during the week.”",
+        "id": 476
+    },
+    {
+        "category_id": 18,
+        "content": "Initiate conversations with others in class to find possible study buddies.",
+        "id": 477
+    },
+    {
+        "category_id": 18,
+        "content": "Pair up with a buddy and set aside time to get the laundry done at least once a week.",
+        "id": 478
+    },
+    {
+        "category_id": 18,
+        "content": "Schedule visits to a physician to renew prescriptions for chronic physical, emotional or attention–related difficulties.",
+        "id": 479
+    },
+    {
+        "category_id": 18,
+        "content": "Designate locations to store financial, legal and health records, receipts, and reports.",
+        "id": 480
+    },
+    {
+        "category_id": 18,
+        "content": "Maintain a card case or file of cards related to experts and resources that you need.",
+        "id": 481
+    },
+    {
+        "category_id": 18,
+        "content": "Designate a closet door upon which you tape emergency information including family contacts and health insurance numbers.",
+        "id": 482
+    },
+    {
+        "category_id": 18,
+        "content": "Schedule one day a month to pay bills, review credit card statements, and tend to other financial matters.",
+        "id": 483
+    },
+    {
+        "category_id": 18,
+        "content": "Request that a family member or trusted friend have copies of legal, financial or health reports in case of loss or fire.",
+        "id": 484
+    },
+    {
+        "category_id": 18,
+        "content": "Schedule payment deadlines on a yearly calendar for lease, auto or health insurance or homeowner policy.",
+        "id": 485
+    },
+    {
+        "category_id": 18,
+        "content": "Don’t skip breakfast or lunch. Buy boxes of healthy bars or freeze sandwiches so that meals are ready when you need them.",
+        "id": 486
+    },
+    {
+        "category_id": 18,
+        "content": "Regulate alcohol, drugs, gambling, gaming or socializing so you stay healthy, get enough sleep and have energy to study.",
+        "id": 487
+    },
+    {
+        "category_id": 19,
+        "content": "Follow the Fundamental Rule\nThe most important rule to remember for the SAT is that there is only one correct answer for each question, and you should be able to eliminate all the others. This means that your number one strategy on the test is process of elimination. If you're struggling with a question, try to find reasons to rule out most of the answers rather than reasons why certain options could work.\nLearn to be extremely picky about which answers to eliminate. This especially applies to the Reading and Writing sections. If a question seems subjective, keep reminding yourself that it’s an illusion. All incorrect choices are incorrect for good reasons, and it’s your job to find those reasons until you narrow your answers down to one possibility.",
+        "id": 488
+    },
+    {
+        "category_id": 19,
+        "content": "Always Understand Your Mistakes\nThis is vital if you want to see dramatic improvements. If you take the time to understand each mistake you make on practice questions, why you made it, and what you will do to avoid it in the future, you’re virtually guaranteed a good score on the test.\nMistakes usually fall into one of four categories:\n1. Content weakness\n2. Time pressure\n3. Question comprehension issue\n4. Careless error\nAfter you finish a practice test, catalog all the questions you answer incorrectly so you can work on detecting error patterns. Did you consistently answer a particular type of math question wrong (content weakness)? Did you keep missing the words “except” or “least” (careless error) in questions? Did you consistently miss questions at the end of sections (time pressure)?\nWhatever your issues, you have to understand them completely so you can fix the problems you’re having and see positive changes in your scores!",
+        "id": 489
+    },
+    {
+        "category_id": 19,
+        "content": "Pay Attention to Connotation and Context\nThis tip is critical for answering tough questions in the Reading section. Look for words that indicate positive or negative connotation in the part of the passage that the question references. This can help you to eliminate at least a couple of choices even if you have no idea which of the remaining choices is correct.\nContext is also very important! Don’t just look at the exact line that is referenced in the question  - look at the sentences around it too. Look for contrast words such as “however”, “rather than” or “still”. You should also pay attention to strong adjectives that might help you to determine connotation.",
+        "id": 490
+    },
+    {
+        "category_id": 19,
+        "content": "Use Find the Evidence Questions to Your Advantage\nThe new SAT contains questions that ask you to choose an excerpt from the passage that serves as the best evidence for your answer to the previous question. These new questions can help you tremendously in identifying mistakes and clearing up ambiguities. For example, say you've picked out two answers that you think could be correct for a reading question. If the next question is one that asks you to identify the best evidence for your answer, you can read through all the options it gives you and see which choice makes the most direct connection to one of your two potential responses. In almost every case, it will become abundantly clear which of the two choices is correct because only that one will have a corresponding tidbit of direct evidence tucked away in one of the answer choices for the find the evidence question.",
+        "id": 491
+    },
+    {
+        "category_id": 19,
+        "content": "Read Passages Strategically\nTry to nail down a good passage reading strategy for the SAT before test day. This will save you time and stress later. There are a few methods you might use depending on how comfortable you are with the test and where you are in your reading comprehension skills.\nMethod #1: Skim the Passage First\nThis is the method I would be most inclined to recommend. You can get a sense of the main ideas of the passage without wasting too much time reading it closely. To skim effectively, just read the introductory paragraph, conclusion paragraph, and first and last sentences of each body paragraph.\nMethod #2: Skip Straight to the Questions\nBecause the SAT gives you line numbers for questions on the Reading section, skipping the passage altogether can be an effective initial strategy. If you do this, you should answer questions about small details in the passage first, so you end up reading a bit of the passage while answering questions. Then, when you move on to main idea questions later, you’ll already have a solid sense of the message of the passage as a whole.\nMethod #3: Read the Passage in Full\nIf you’re both a quick and thorough reader, you might be able to pull this off without any problems. Just make sure it’s not slowing you down. There's more material to read on the new SAT, so this strategy might be less feasible than it was in the past. If you're reading this way and find you can save a few minutes (and not lose any points) by using one of the other methods, then you should do that instead. It’s always better to have extra time at the end so you can double check your answers!",
+        "id": 492
+    },
+    {
+        "category_id": 19,
+        "content": "Don’t Ignore Passage Introductions\nAt the beginning of every passage on the SAT, there is a little italicized blurb giving you a bit of context about the passage and its author. This introductory blurb contains valuable information, and if you skip it, you could miss out on easy points. At the very least, it gives you context for what you’re about to read so you aren't too confused about who’s who or where the passage is set. Even if your method of attack for SAT passages is to skip straight to the questions, you should still make a point of reading the italicized intro before you do anything else.\n",
+        "id": 493
+    },
+    {
+        "category_id": 19,
+        "content": "Get Interested in the Passages\nIf you want to retain information as you’re reading passages on the SAT, the best way to do it is to force yourself to engage with the material. Treat this as a learning experience, not a chore, and you’ll find it much easier to remember what happened in the passage. If your brain is in “wow, interesting” mode rather than “blah, blah, just have to get to the questions” mode, you’ll have a more pleasant experience on the test and a better time answering the questions overall.",
+        "id": 494
+    },
+    {
+        "category_id": 19,
+        "content": "Look for Direct Evidence\nThough questions on SAT reading may sometimes seem subjective, the reality is that you should always be able to find direct evidence in the passage or chart you are referencing to support your answers. Even inference questions, which ask you to look beyond the literal facts in the passage, will be backed up by logical deductions that can be made from the evidence that is presented. This is a situation where you might end up looking beyond the sentence referenced in the question to find the evidence you need. It's always in there somewhere!\nIf you’re thinking about choosing an answer that seems like it could be correct, but you can’t find any evidence for it, hold off. Any answer that can’t be backed up by specific information in the passage has to be incorrect.",
+        "id": 495
+    },
+    {
+        "category_id": 19,
+        "content": "Focus on Filling Content Gaps First\nIf you have problems with basic math skills, it doesn’t matter how many practice questions you do - you’re going to have to dig deeper to see improvement. If you notice you’re missing practice SAT Math questions because you are uncomfortable in a certain content area, work on your content weaknesses before you do anything else. This is the fastest way to dramatically improve your scores. You can go from here to fix other types of mistakes that are more surface-level (such as reading questions wrong or basic carelessness).",
+        "id": 496
+    },
+    {
+        "category_id": 19,
+        "content": "Re-Solve Questions You Missed Before Looking at the Answer Explanations\nThis is the best way to make sure you truly understand how to solve questions you initially messed up on the Math section. It’s one thing to read the answer explanation and say “oh, of course, that’s how you solve it,\" but it’s a completely different matter to work out the problem yourself. The process will stick in your mind much better if you have gone through it rather than just reading about it. Look at what the correct answer choice should be and try to get there yourself before you read the explanation.",
+        "id": 497
+    },
+    {
+        "category_id": 19,
+        "content": "Underline Key Parts of the Question\nYou should use this tip on the math section if you've been missing questions by accidentally solving for the wrong value. Underline what you need to find in the question so you don’t get confused during the calculation process.\nSometimes math questions ask you to solve for a value that necessitates solving for something else along the way. That something else will often be one of the incorrect answer choices (though this sort of tricky incorrect answer choice is less likely to show up on the new SAT). Many students accidentally pick the trick answer choice because they lose track of the value that they were originally supposed to find. You can avoid this by underlining relevant parts of the question to maintain your focus.",
+        "id": 498
+    },
+    {
+        "category_id": 19,
+        "content": "Memorize Formulas\nAlthough the SAT math section does provide you with a list of formulas, you’ll lose time and momentum by constantly turning back to reference them. It's best to have all the formulas memorized beforehand. Check out our article on the formulas you need to know for the SAT Math section to make sure you’re prepared.",
+        "id": 499
+    },
+    {
+        "category_id": 19,
+        "content": "Memorize Grammar Rules\nThe SAT Writing section has a specific standardized approach to grammar, so it’s useful to memorize the rules to reduce confusion. Even if you think you're pretty good at grammar, it’s not always enough to just go by what \"looks right\" to you.\nIf you’re not used to some of the more archaic grammar rules tested on the SAT, you should memorize them. This will prevent you from accidentally choosing NO CHANGE for phrases that have errors according to the SAT's formal grammar guidelines. Check out this article for a review of all the grammar rules you’ll see on the SAT!",
+        "id": 500
+    },
+    {
+        "category_id": 19,
+        "content": "Be Careful with NO CHANGE Answers\nIf you notice that you’re answering NO CHANGE for lots questions on the Writing section, you should go back and double check your answers. NO CHANGE will only be the answer for 20 percent or less of the questions where it's an option. If you’re choosing it more than that, you might be missing something. Be sure to verify it again before you commit. On the flip side, you also shouldn't be overly worried about choosing NO CHANGE. It will inevitably be the correct answer a few times, so don't get too caught up in second guessing yourself.",
+        "id": 501
+    },
+    {
+        "category_id": 19,
+        "content": "Analyze, Then Write\nEssay prompts on the new SAT ask you to analyze an argument presented in a passage. The graders want to see that you fully grasp the author's point and can write a clear explanation of how he or she builds the argument. You have fifty minutes for the essay, and you should spend a good 10-15 minutes making sure you understand exactly what the author is saying and how you'll outline your essay based on your analysis.",
+        "id": 502
+    },
+    {
+        "category_id": 19,
+        "content": "Use Specific Evidence\nDon't just describe how the author builds the argument in your own words; prove your points with specific examples. When you're first reading through the passage, underline sentences or phrases that provide evidence of the author's persuasive techniques. Direct quotes should be used in your essay to reinforce the most important points.",
+        "id": 503
+    },
+    {
+        "category_id": 19,
+        "content": "Get Ready the Night Before\nOn the morning of the test, you'll inevitably be nervous. There's a lot of stuff you need to bring to the SAT, and you don't want to forget something at the last minute while you're distracted by your nerves.\nHere's a checklist to ensure that this doesn't happen:\n- Admission ticket\n- Photo ID\n- #2 pencils and eraser\n- Calculator\nWe also recommend that you bring snacks and water as well as a watch to monitor your pacing. Just put everything in your bag the day before. Don't procrastinate!",
+        "id": 504
+    },
+    {
+        "category_id": 19,
+        "content": "Skip Difficult Questions\nThis is a key tip if you struggle with time pressure on the SAT. If you're having trouble with a question, skip it and move on before you waste too much time. Lingering on hard questions could cost you easy points if it means you’re not getting to questions later in the section.\nFor the Math and Reading sections, don’t spend more than a minute trying to figure out each question.\nFor the Writing section, don’t spend more than 30 seconds.\nCircle any questions that you skip so that they’re easier for you to pick out when you go back through the section. You might find that after you’ve answered the rest of the questions, you’ll feel less pressure and be able to think more clearly on questions that initially stumped you.\nIf you still can't figure out the answer, take a guess! The new SAT has no guessing penalty, so it's always better to guess than to leave a question blank.",
+        "id": 505
+    },
+    {
+        "category_id": 19,
+        "content": "Bubble at the End\nA good way to save a few minutes of time is to fill in all your answers at the end of the section. Circle your choices in your test booklet as you go along, then go back and bubble them in when you’re done with the section. With this tip, you’ll avoid going back and forth between your test booklet and answer sheet, which is not very efficient and adds a few seconds to your time for each question. \nMake sure you only use this strategy if you already know you're capable of finishing the section with at least 3-5 minutes to spare! It would be terrible to answer all the questions in your booklet and not have time to fill in your choices on the answer sheet.",
+        "id": 506
+    },
+    {
+        "category_id": 19,
+        "content": "Double Check Your Answers\nWhile it's tempting to take a rest if you have extra time at the end of an SAT section, you should always double check your answers first. When you initially make your way through each section, circle questions that you’re unsure about so you can double check strategically.\nIf you have lots of extra time, you might even go through and check every single one of your answers. This way you’ll pick up on any careless mistakes you might have made if you were rushing or missed a key word in a question.",
+        "id": 507
+    },
+    {
+        "category_id": 19,
+        "content": "Stay Calm\nAbove all, keep a cool head on the test. If you see a question you don’t understand, don’t let it psych you out. Just keep going. You might need to skip some questions at first, and that’s ok. Though there is a lot of pressure to finish each section on time, there's nothing wrong with doing the questions out of order. Look at each section with fresh eyes, and try not to dwell on what you might have gotten wrong earlier in the test.",
+        "id": 508
+    },
+    {
+        "category_id": 20,
+        "content": "Make a list of target universities\nBefore you finish your test, you will be asked to choose four universities to which you can send your test scores for free. The computer shows you a list of universities along with the respective countries and states. Normal students start thinking of universities then. But because you are a pro, you must have already figured these out before entering the test center. This won’t take much time, and you can do it on the morning of the test day during breakfast. You already know your target universities. Search for them online, and remember the country/state they are in. If you do this, it won’t take a minute during the test to give your list to the computer. Also, contrary to what most students think, you don’t have to remember college codes. Names will do.",
+        "id": 509
+    },
+    {
+        "category_id": 20,
+        "content": "Visit the test center the previous day\nUnless your test center is in another city, in which case you can’t really help it, we recommend that you visit the test center a day before, so you’ll not only save time, but also know when to start so as to reach in time. Students usually underestimate the power of traffic. You wouldn’t want to end up late at the test center, would you? So, it is better to figure out how far the test center is from where you live, and how busy the traffic usually is, and when you need to start off so you can reach on time. If you’re taking the bus/metro/subway, better check schedules and avoid hurrying in the last minute.",
+        "id": 510
+    },
+    {
+        "category_id": 20,
+        "content": "Travel with a friend.\nDon’t plan to travel alone. You will be bored, and hence start thinking about the test. It is better if you ask a friend to drop you at the center. A small random chat or a funny discussion will do you a world of good. It will act as a necessary distraction so you won’t be thinking of the exam. Also, it is better if you ask your parents to not accompany you to the test center, because well, they are parents. They are sometimes more worried about the test than you are, and this will definitely affect your mental composure. If you’re asking your friend to go with you, ask them a day or two before. Don’t ask them ten minutes before you start. They may have other plans.",
+        "id": 511
+    },
+    {
+        "category_id": 20,
+        "content": "Stop Studying!\nDon’t study at all, on the previous day. The GRE isn’t your regular college exam, so you can’t cram things. Studying now will only increase the pressure. You have done enough practice till now, and even if you haven’t done enough, one more day won’t help you much. So, it is time to relax and have fun. listen to some music, watch TV, play an outdoor game, take an ice/steam bath. Stay calm and composed before the D-day.",
+        "id": 512
+    },
+    {
+        "category_id": 20,
+        "content": "Read the Rules.\nUse the ETS GRE PowerPrep II software to go through the tutorial guidelines. These will be the exact same guidelines you will see on the test the next day. So, it is better to get acquainted with the tutorial section, as well as the software. Get a feel of how the software works, and learn some shortcuts through the tutorial, so it won’t be new to you during the test. Learning something new just before the first question may also add to the tension.",
+        "id": 513
+    },
+    {
+        "category_id": 20,
+        "content": "Pack up!\nGet all the things required ready the night before the test. Don’t start packing right before you leave the house. Make a note of the things you will need for the test, i.e your ID, any printouts, snacks, bag, etc.",
+        "id": 514
+    },
+    {
+        "category_id": 20,
+        "content": "Keep the alarm busy.\nSet your alarm to at least one hour earlier than normal. You know how lazy you are, and you don’t want to be late for the test. Also, set multiple alarms. Just in case.",
+        "id": 515
+    },
+    {
+        "category_id": 20,
+        "content": "Stretch your body.\nDo some physical exercise or yoga on the morning of the test day. Go to the gym, if you have a membership. Stretch your muscles, but not until you get exhausted.",
+        "id": 516
+    },
+    {
+        "category_id": 20,
+        "content": "Healthy food = Healthy performance.\nEat healthy. You can take your revenge after the test, but this is not the time to gorge on. You don’t want to yawn and feel sleepy during the test. Have some salad, and some fruit juice.",
+        "id": 517
+    },
+    {
+        "category_id": 20,
+        "content": "All play and no work.\nWarm up your brain by solving a puzzle like Sudoku or any logic based game. This will help you put your thinking cap on, without worrying about going wrong. Some might choose to practice a few questions by randomly choosing from books, on the morning of the exam day. Do this if you want to, but it is usually not recommended, because if you cannot solve a question or if you get it wrong, it might upset your mind, which is exactly what we’re trying to avoid before the test.",
+        "id": 518
+    },
+    {
+        "category_id": 20,
+        "content": "Good students don’t cram.\nDon’t study or try to memorize anything on the test day. Leave your books at home. Don’t bring them along to the test center. If you see someone else studying at the test center, which you will, don’t start to panic. Maybe they aren’t as confident as you are, or maybe they didn’t read this article.",
+        "id": 519
+    },
+    {
+        "category_id": 20,
+        "content": "Dress in layers.\nWear layered shirts/tops. The test centers maintain very cold temperatures inside, and you would want to feel warm and comfortable. Since you don’t know how you’ll feel, dress in layers, so it is easy to adjust. Wear a shirt and a turtleneck/jacket over it. If you are feeling warm, you can remove the jacket.",
+        "id": 520
+    },
+    {
+        "category_id": 20,
+        "content": "No turning back.\nCheck if you have all the things you need to take for the GRE. See if you have forgotten anything because you don’t want to go back running once you’re out of your home.",
+        "id": 521
+    },
+    {
+        "category_id": 20,
+        "content": "Punctuality is the best policy.\nReach at least 45 minutes prior to your appointment. The test center needs you to undergo a few processes, which will take some time, depending on the number of test takers. So, it is better if you are in time. If you are done with the processes quickly, you will have some buffer time to relax. Use this time to find out where the nearest bathroom and water cooler are.",
+        "id": 522
+    },
+    {
+        "category_id": 20,
+        "content": "Banish the books!\nDon’t bring any books to the center. The anxiety will compel you to study at the last moment, which is bad for you. You are not allowed to open books inside the testing area, and if they find books in your locker, your scores might be cancelled, even if you haven’t opened them. So, be careful with the books. They are your friends when you’re studying but enemies when you’re giving the test.",
+        "id": 523
+    },
+    {
+        "category_id": 20,
+        "content": "Speak up!\nTalk to the proctor if something isn’t right and if you can do something about it. If you need any special medical attention, or if you need something, ask the proctor before the test begins. Get all your doubts clarified, and enter the testing room with a clear mind.",
+        "id": 524
+    },
+    {
+        "category_id": 20,
+        "content": "Deep Breathing Helps.\nRelax. It is okay to feel stressed when you are at the computer, and the test is about to begin. Do some breathing exercises, and meditate for a minute before the proctor begins your test. Weed out all your negative thoughts. Imagine yourself attending your dream university and feel confident about it.",
+        "id": 525
+    },
+    {
+        "category_id": 20,
+        "content": "Skipping is bad.\nUse the tutorial. Do not skip the tutorial section, even if you know everything about it. Yes, you have already gone though it on PowerPrep the day before, and you are aware of everything about the software. So, why not use the time to relax? The tutorial section is about five minutes long. Five priceless minutes that you can use to relax. Also, a very important thing you must do during the tutorial is, to type something on the keyboard. The keyboard at the test center may be different from what you are normally used to, so it won’t hurt to get used to it. You know how difficult it is to type on your friend’s laptop just because the keys don’t feel right to you? Exactly, my point.",
+        "id": 526
+    },
+    {
+        "category_id": 20,
+        "content": "AWA shouldn’t affect you.\nAlso you already know, you will face the AWA section first. Don’t let the AWA section set the tone for the rest of the test. Sometimes AWA goes great, and you’ll feel extremely confident (or overconfident) about the remaining sections. Sometimes, you may not do well on the AWA and feel gusted about yourself, which affects the other sections. So, stay unaffected by the result. Remember; you are the one who sets the tone, not the AWA.",
+        "id": 527
+    },
+    {
+        "category_id": 20,
+        "content": "Focus on your test.\nDon’t compare yourself with other students. The guy next to you may be typing like there’s no tomorrow or somebody may have taken an early break, or another guy may quit his test and walk out crying (Don’t laugh! Such things do happen). Don’t let such things bother you. Stay focused and think about the test. If you think you are disturbed by the noise around you, you can use the earplugs at your desk and block off the noises around you.",
+        "id": 528
+    },
+    {
+        "category_id": 20,
+        "content": "Don’t be a hater.\nIf you hate Math/Verbal and it is your first section, don’t get disheartened. Think that the worst will be over first, and the best is saved for last. Keep your focus. Also, this is exactly why we ask our students to start off their practice with the section they hate the most. It prepares you for the worst.",
+        "id": 529
+    },
+    {
+        "category_id": 20,
+        "content": "Time’s worth a dime!\nContrary to popular opinion, all questions on the GRE are of the same value. It doesn’t matter if it is an easy question or a very difficult question, they all carry the same mark. So, if you come across a tough one and are not able to figure out how to do it, guess the answer, mark it for review, and move on. Don’t waste time trying to solve a tough one, when you can easily score with the easier ones.",
+        "id": 530
+    },
+    {
+        "category_id": 20,
+        "content": "Ask for additional scratch paper.\nUse the scratch paper to the fullest. Your effectiveness on the GRE depends on how well you use the scratch paper. Remember that one of the most underrated but important test day tips is knowing how to effectively use the scratch paper on the GRE. Also, request for additional paper, if needed. Don’t hesitate.",
+        "id": 531
+    },
+    {
+        "category_id": 20,
+        "content": "Don’t cancel scores!\nDo you want to cancel scores? You’d be irrational if you do. At the end of the test, you will be shown the final score, and then you will be asked if you would like to cancel the score. Most students tend to cancel scores if they don’t get their expected scores. That’s not a good idea at all. You’ve paid a lot of money to prepare for the test, it’d be a shame if your score is not even registered officially. You can always write again, and send that score to your target schools. If you get a low score, so be it. Leave it at that, and don’t choose to send score reports. You can come back home later and think about it. But if you cancel the test outright, you may regret later on. So, don’t cancel your score unless you are really sick.",
+        "id": 532
+    },
+    {
+        "category_id": 20,
+        "content": "Use the break. \nYes, it may not seem like a great advice, but some students simply don’t want to take a break, especially if they’re doing well on the test. This however, does more bad than good to you. The scheduled break is a necessary respite from the tedious testing environment. There are so many factors about the test that make you feel tired. Test anxiety, prolonged concentration, continuous exposure to the computer screen, the cold temperatures, not to mention some of the questions. So, use the break effectively, visit the bathroom, wash your face, have a quick bite or drink some liquids, and come back afresh. The bottom line is, don’t skip it and get stressed out.",
+        "id": 533
+    },
+    {
+        "category_id": 20,
+        "content": "Don’t Rush!\nThere are no brownie points for finishing the test early. So, there is no point in rushing yourself to the finish line. You can, and hence should, stay inside the testing center for the full 3 hours and 45 minutes. You can only get the best bargain from the test if you sit through the exam. Don’t leave early.",
+        "id": 534
+    },
+    {
+        "category_id": 20,
+        "content": "Learn to move on.\nPace yourself. Don’t keep staring at that one troubling question. Here’s a good test day tip for time-management: Because you can mark questions and review them later, devise a proper answering strategy. Divide the available time into three innings (15+10+5 minutes of a total of 30 for Verbal and 15+10+10 minutes of a total of 35 for Math). Start off quickly and solve as many questions as you can during the first innings, and come back and start off again in the second innings, and so on. This helps you understand the urgency of the situation and you won’t find yourself wasting time on difficult questions.",
+        "id": 535
+    },
+    {
+        "category_id": 21,
+        "content": "Remember That Math Is Cumulative. Math courses follow a natural progression – each one builds upon the knowledge you’ve gained and mastered from the previous course. If you are finding it tough to follow new concepts in class, pull out your old math notes and review previous material to refresh yourself. Be sure that you meet the prerequisites before signing up for a class.",
+        "id": 536
+    },
+    {
+        "category_id": 21,
+        "content": "Review Notes The Night Before Class. Hate when a teacher calls on you and you’ve forgotten how to solve a specific problem? Avoid this moment by reviewing your math notes nightly. This will help you determine which concepts or questions you’d like to go over in class the next day.",
+        "id": 537
+    },
+    {
+        "category_id": 21,
+        "content": "Do Homework…Even When It’s Not Assigned. The thought of doing homework every night may seem annoying, but if you want to succeed in math, it is important that you continuously practice and master the problem-solving methods. Use your textbook or online guides to work through math problems on a weekly basis – even when you have no homework assigned.",
+        "id": 538
+    },
+    {
+        "category_id": 21,
+        "content": "Use The Supplements That Come With Your Textbook. Textbook publishers have enriched modern publications with extra material (such as CD-ROMs or online modules) that can be used to help students gain extra practice in math. Some of these materials may also include a solution or explanation guide, which can help you with working through math problems on your own.",
+        "id": 539
+    },
+    {
+        "category_id": 21,
+        "content": "Read Ahead To Stay Ahead. If you want to lessen your in-class workload or the time you spend on homework, use your free time after school or on the weekends to read ahead to the chapters and concepts that will be covered the next time you are in class.",
+        "id": 540
+    },
+    {
+        "category_id": 21,
+        "content": "Review Old Tests and Classroom Examples. The work you do in class, for homework, and on quizzes can offer clues to what your midterm or final exam will look like. Use your old tests and classwork to create a personal study guide for your upcoming exam. Look at the way your teacher frames questions – this is probably how they will appear on your test.",
+        "id": 541
+    },
+    {
+        "category_id": 21,
+        "content": "Learn to Work By the Clock. This is a popular study tip for people taking timed exams; especially standardized tests. If you only have 40 minutes for a 100-point test, then you can optimally spend 4 minutes on each 10-point question. Get information about how long the test will be and which types of questions will be on it. Then plan to attack the easier questions first, leaving yourself enough time to spend on the more challenging ones.",
+        "id": 542
+    },
+    {
+        "category_id": 21,
+        "content": "Maximize Your Resources to Get Help. If you’re having a hard time understanding concepts in class, then be sure to get help outside of class. Ask your friends to create a study group and visit your instructor’s office hours to go over tough problems one-on-one. Attend study and review sessions when your instructor announces them, or hire a private tutor if you need one.",
+        "id": 543
+    },
+    {
+        "category_id": 21,
+        "content": "Talk To Yourself. When you are reviewing problems for an exam, try to explain out loud what strategy and methods you used to get your solutions. These verbal declarations will come in handy during a test when you need to recall the steps you should take to find a solution. Get additional practice by trying this tactic with a friend.",
+        "id": 544
+    },
+    {
+        "category_id": 21,
+        "content": "Use Study Guides For Extra Practice. Are your textbook or class notes not helping you understand what you should be learning in class? Use study guides for standardized exams, such as the ACT, SAT, or DSST, to brush up on old material. Study guides usually come equipped with thorough explanations of how to solve a sample problem, and you can often find free ones online.",
+        "id": 545
+    },
+    {
+        "category_id": 22,
+        "content": "Have a positive attitude towards biologyBiology can be complicated, but it is also very interesting if you take a step back to think about what you’re studying. Having the right attitude can make it more fun to study. It will still be difficult, but if you’re interested in what you’re learning, it won’t feel like such a burden. \n- Think about how your body works. How do your muscles work together to allow you to move? How does your brain communicate with those muscles to tell your body to take a step? It’s very complex, but all of the cells in your body work together to keep you healthy.\n- Biology teaches you all about these processes and how they work. That’s pretty fascinating if you think about it.\n",
+        "id": 546
+    },
+    {
+        "category_id": 22,
+        "content": "Break down complex words into their roots. You might find the vocabulary of biology complicated and difficult to spell. However, most words in this subject come from Latin, and have a prefix and suffix. Knowing the prefixes and suffixes that compose the terms can help you spell difficult words and grasp their meaning. \n- For example, the word \"glucose\" can be separated into two parts, \"gluc\" means sweet, and \"-ose\" means sugar. As \"-ose\" means sugar, you know maltose, sucrose, lactose are sugars as well.\n- The term \"endoplasmic reticulum\" seems difficult. However, if you know \"endo\" means \"within/ inside\", \"plasmic\" means cytoplasm and \"reti\" stands for net, you will know that it is a net-like structure that is found inside the cytoplasm.\n",
+        "id": 547
+    },
+    {
+        "category_id": 22,
+        "content": "Make flashcards for the vocabulary words. Flashcards are one of the best ways to learn the meanings of the many words you’ll come across in biology. You can carry them around with you and study them at any time. In the car on the way to school is a great time to flip through your flashcards. While the process of making flashcards is a helpful way to study, the cards themselves are only useful if you actually study them as well.[3] \n- At the beginning of each new unit, identify the vocabulary words that you don’t know and make flashcards of them.\n- Study these cards all throughout the unit and by the time the test comes, you will know them all!\n",
+        "id": 548
+    },
+    {
+        "category_id": 22,
+        "content": "Draw and label diagrams. Sketching a diagram of a biological process can be a simpler way to learn the concept than just reading about it. If you really understand it, you should be able to draw the entire process and label all of the important aspects. Study the diagrams that are in your textbook as well. Read the captions and truly understand what the diagram is representing and how it relates to the concept you are learning.[4] \n- Many biology courses will start by learning about the cell and the various parts and organelles that makeup the cell. Being able to draw this and label all of the pieces is important.\n- The same goes for many of the cell cycles such as ATP synthesis and the Krebs Cycle. Practice drawing these a few times a week to make sure you have them down before the exam.\n",
+        "id": 549
+    },
+    {
+        "category_id": 22,
+        "content": "Read the textbook before class. Biology is not a subject that can be absorbed in the short period of time you are in class. Reading the material before it is covered in class will give you a head start on the concepts and you’ll know what is coming up. The text will introduce the topics to you and you will get much more out of class if you come prepared to ask questions based on your reading.[5] \n- Refer to your syllabus to know what parts of the book to read before class.\n- Take notes on the material and come to class with questions in hand.\n",
+        "id": 550
+    },
+    {
+        "category_id": 22,
+        "content": "Learn concepts from general to specific. Understanding biology requires that you have a general understanding of the broad concepts before you can really get into the details. Really master the broad topics before trying to comprehend the details of how they work.\n- You need to know that proteins are made from the blueprints of DNA before you can understand how the DNA is read and then translated into these proteins.\n- Outlines are a great way to organize your notes from general to specific.\n",
+        "id": 551
+    },
+    {
+        "category_id": 22,
+        "content": "Answer the questions at the end of each chapter. Biology textbooks have really good questions at the end of each chapter that reinforce the concepts that you need to understand from the material. Try answering the questions and see how many you can get through. Take note of the questions that are more difficult to answer. Revisit your notes on these topics and/or reread that part of the chapter.[7] \n- If you’re having a lot of difficulty answering these questions, seek extra help from your classmates or teacher.\n",
+        "id": 552
+    },
+    {
+        "category_id": 22,
+        "content": "Review your notes within a day of each lecture. Avoid walking out of class and forgetting about everything you just learned. Reviewing your notes later that evening or the next day can help you synthesize what you have learned. When reviewing, ask yourself if everything makes sense. \n- If something stands out that confuses you, reread the material on that concept in your textbook. If it still doesn’t make sense, ask your teacher about it in the next class.\n",
+        "id": 553
+    },
+    {
+        "category_id": 22,
+        "content": "Set aside time specifically for studying biology. Because biology can be difficult for many students, you must put in the time to do well. If you set aside time every night or every other night for biology, you will get into the good habit of frequently studying. You will thank yourself later when you don’t have to cram for the exam because you have been reviewing everything this whole time.\n- Stick to your study schedule and make it a habit. If you skip one day, be sure to get back on track the next day and not let yourself slip into not studying multiple days in a row.\n",
+        "id": 554
+    },
+    {
+        "category_id": 22,
+        "content": "Study old quizzes and exams before tests. If you have access to exams from previous years, try taking them and see how much of you get right. If you don’t have access to these, study your quizzes and previous tests for an idea of the types of questions you will get asked.\n- Answering questions from old tests will give you an idea of what you need to keep studying and what topics you have mastered.\n",
+        "id": 555
+    },
+    {
+        "category_id": 23,
+        "content": "Study with the sound of your own voice\nIf you’re going to class (and you should be), you might as well make the time you spend taking notes count. When you get the due date for a test, record yourself reading your notes that you took in class, and be sure to include any of your own personal commentary to better understand the material. This takes very little time (depending on how fast/slow you read your notes), and then later when you’re walking to and from class, you can pop your earbuds in and listen to the sweet sounds of portable studying. Now any time you are just going about basic, mundane activities – showering, doing laundry, cleaning – can also be spent studying. Multitasking at its finest.",
+        "id": 556
+    },
+    {
+        "category_id": 23,
+        "content": "Put your phone to work\nYou reach for your phone at least a million times a day (that’s a made-up, but potentially realistic statistic), so why not let it help you do some studying? Make your phone background or lock screen into a study guide. Put formulas, keywords, or class material that you need to know front and center. Every time you go to pick up your phone, you’ll be confronted with the study material, and have a very mini-study session available to you in your pocket at all times.",
+        "id": 557
+    },
+    {
+        "category_id": 23,
+        "content": "Leave yourself love study notes\nThe whole point of this one is to get the material in front of your eyes as much as possible. Whether it’s posting some flashcards by your mirror, or keeping some reading material by the toilet (hey, that’s a bit of free time), putting your study material in the places you frequent the most makes you more likely to be reminded of the things you need to know. Not only will this jog your memory, but it will also make the class material front and center, reminding you to be thinking about it and perhaps even nestling itself in your brain for later recall.",
+        "id": 558
+    },
+    {
+        "category_id": 23,
+        "content": "Give new meaning to brain food\nYou have to eat, right? So why not also use that time to study? But here’s the important part: invite a friend from your class to join you. Think of it as an academic meal. You and your classmate will both bring your notes, and then just simply discuss different topics. Highlight or write down a few you want to cover ahead of time (it’d be too much to cover ALL of the material in one sitting) and then just take turns discuss how you have come to understand that material and why it’s important. Turning studying into a simple conversation and dialogue happening while eating won’t feel like studying, and you’ll be integrating it into something you were already planning on doing anyway.",
+        "id": 559
+    },
+    {
+        "category_id": 24,
+        "content": "Excellence is to do a common thing in an uncommon way.\n - Booker T. Washington",
+        "id": 560
+    },
+    {
+        "category_id": 24,
+        "content": "Nothing pains some people more than having to think.\n - Martin Luther King",
+        "id": 561
+    },
+    {
+        "category_id": 24,
+        "content": "The only limit to our realization of tomorrow will be our doubt of today.\n - Franklin D. Roosevelt",
+        "id": 562
+    },
+    {
+        "category_id": 24,
+        "content": "Don’t find fault. Find a remedy.\n - Henry Ford",
+        "id": 563
+    },
+    {
+        "category_id": 24,
+        "content": "Treat your time as if someone is paying for it. Someone is.\n - Richard Moran, Business Consultant",
+        "id": 564
+    },
+    {
+        "category_id": 24,
+        "content": "Failure to prepare is preparing to fail.\n - John Wooden, Basketball Coach",
+        "id": 565
+    },
+    {
+        "category_id": 24,
+        "content": "Happiness lies in the joy of achievement and the thrill of creative effort.\n - Franklin D. Roosevelt",
+        "id": 566
+    },
+    {
+        "category_id": 24,
+        "content": "One problem thoroughly mastered is of more value than many poorly mastered.\n - Booker T. Washington",
+        "id": 567
+    },
+    {
+        "category_id": 24,
+        "content": "Failure is only the opportunity to begin again more intelligently.\n - Henry Ford",
+        "id": 568
+    },
+    {
+        "category_id": 24,
+        "content": "You can’t shake hands with a clenched fist.\n - Golda Meir, Israeli Prime Minister",
+        "id": 569
+    },
+    {
+        "category_id": 24,
+        "content": "The weak can never forgive. Forgiving is the action of the strong.\n - Mahatma Gandhi",
+        "id": 570
+    },
+    {
+        "category_id": 24,
+        "content": "Honest differences are often a healthy sign of progress.\n - Mahatma Gandhi",
+        "id": 571
+    },
+    {
+        "category_id": 24,
+        "content": "Winning isn’t everything, but wanting to win is.\n - Vince Lombardi, Football Coach",
+        "id": 572
+    },
+    {
+        "category_id": 24,
+        "content": "Do not let what you cannot do interfere with what you can do.\n - John Wooden, Basketball Coach",
+        "id": 573
+    },
+    {
+        "category_id": 24,
+        "content": "If you don’t do what’s best for your body, you’re the one who comes up on the short end.\n - Julius Erving, Basketball Player",
+        "id": 574
+    },
+    {
+        "category_id": 24,
+        "content": "Excellence is in the details. Give attention to the details and excellence will come.\n - Perry Paxton, Author",
+        "id": 575
+    },
+    {
+        "category_id": 24,
+        "content": "Presence is more than just being there.\n - Malcolm Forbes, Publisher",
+        "id": 576
+    },
+    {
+        "category_id": 24,
+        "content": "Rest is the sweet sauce of labor.\n - Plutarch",
+        "id": 577
+    },
+    {
+        "category_id": 24,
+        "content": "Nothing is particularly hard if you divide it into small jobs.\n - Henry Ford",
+        "id": 578
+    },
+    {
+        "category_id": 24,
+        "content": "All men make mistakes, but only wise men learn from their mistakes.\n - Winston Churchill",
+        "id": 579
+    },
+    {
+        "category_id": 24,
+        "content": "Anyone who has never made a mistake has never tried anything new.\n - Albert Einstein",
+        "id": 580
+    },
+    {
+        "category_id": 24,
+        "content": "In the end we retain from our studies only that which we practically apply.\n - Johann Wolfgang von Goethe",
+        "id": 581
+    },
+    {
+        "category_id": 24,
+        "content": "Stress is when you wake up screaming and you realize you haven’t fallen asleep yet.\n - Anonymous",
+        "id": 582
+    },
+    {
+        "category_id": 24,
+        "content": "The man who doesn’t read good books has no advantage over the man who can’t read them.\n - Mark Twain",
+        "id": 583
+    },
+    {
+        "category_id": 24,
+        "content": "Concentrate all your thoughts upon the work at hand. The sun’s rays do not burn until brought to a focus.\n - Alexander Graham Bell",
+        "id": 584
+    },
+    {
+        "category_id": 24,
+        "content": "The student who changes the course of history is probably taking an exam.\n - Anonymous",
+        "id": 585
+    },
+    {
+        "category_id": 24,
+        "content": "I was thrown out of college for cheating in a metaphysics exam: I looked into the soul of the boy sitting next to me.\n - Woody Allen",
+        "id": 586
+    },
+    {
+        "category_id": 24,
+        "content": "If you employed study, thinking, and planning time daily, you could use the power that can change your destiny.\n - W. Clement Stone",
+        "id": 587
+    },
+    {
+        "category_id": 24,
+        "content": "I am not a speed–reader. I am a speed understander.\n - Isaac Asimov",
+        "id": 588
+    },
+    {
+        "category_id": 24,
+        "content": "Reading is to the mind what exercise is to the body.\n - Joseph Addison, English Essayist",
+        "id": 589
+    },
+    {
+        "category_id": 24,
+        "content": "I still need more healthy rest in order to work at my best. My health is the main capital I have.\n - Ernest Hemingway",
+        "id": 590
+    },
+    {
+        "category_id": 24,
+        "content": "You most remain focused on your journey to greatness.\n - Les Brown, Speaker",
+        "id": 591
+    },
+    {
+        "category_id": 24,
+        "content": "Follow effective action with quiet reflection. From the quiet reflection will come even more effective action.\n - James Levin, Conductor",
+        "id": 592
+    },
+    {
+        "category_id": 24,
+        "content": "A 2,000–mile journey begins with the first step.\n - Chinese Proverb",
+        "id": 593
+    },
+    {
+        "category_id": 24,
+        "content": "Be the change you want to see in the world.\n - Mahatma Gandhi",
+        "id": 594
+    },
+    {
+        "category_id": 24,
+        "content": "What do we live for, if it is not to make life less difficult for each other?\n - George Eliot",
+        "id": 595
+    },
+    {
+        "category_id": 24,
+        "content": "A man too busy to take care of his health is like a mechanic too busy to take care of his tools.\n - Spanish",
+        "id": 596
+    },
+    {
+        "category_id": 24,
+        "content": "No life ever grows great until it is focused, dedicated and disciplined.\n - Author Unknown",
+        "id": 597
+    },
+    {
+        "category_id": 24,
+        "content": "You cannot help men permanently by doing for them what they could do for themselves.\n - Abraham Lincoln",
+        "id": 598
+    },
+    {
+        "category_id": 24,
+        "content": "Success is not the result of spontaneous combustion. You must first set yourself on fire.\n - Fred Shero, Canadian Hockey Coach",
+        "id": 599
+    },
+    {
+        "category_id": 24,
+        "content": "You will never find time for anything. If you want time, you must make it.\n - Charles Buxton, Brewer",
+        "id": 600
+    },
+    {
+        "category_id": 24,
+        "content": "Curious things, habits. People themselves never knew they had them.\n - Agatha Christie",
+        "id": 601
+    },
+    {
+        "category_id": 24,
+        "content": "This is my answer to the gap between ideas and action; I will write it out.\n - Hortense Calisher, Writer",
+        "id": 602
+    },
+    {
+        "category_id": 24,
+        "content": "Failure is not the worst thing in the world. The very worst is not to try.\n - Anonymous",
+        "id": 603
+    },
+    {
+        "category_id": 24,
+        "content": "Genius is one percent inspiration and ninety–nine percent perspiration.\n - Thomas Alva Edison",
+        "id": 604
+    }
+]
