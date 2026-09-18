@@ -58,6 +58,8 @@ export function build(){
   const htmlPath=path.join(out,file);let html=fs.readFileSync(htmlPath,'utf8');
   html=html.replace('<nav aria-label="Điều hướng chính">','<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><b class="sr-only">Mở menu</b></button><nav id="site-menu" aria-label="Điều hướng chính">');
   const assetPrefix=file.includes('/')?'../':'./';
+  html=html.replace('</head>',`<script src="${assetPrefix}assets/preferences.js"></script></head>`);
+  html=html.replace('</header>',`</header><div class="display-bar"><div class="wrap display-controls" role="group" aria-label="Tùy chỉnh hiển thị"><span>Cỡ chữ</span><button type="button" data-action="less" aria-label="Giảm cỡ chữ">A−</button><button type="button" data-action="reset" title="Cỡ chữ mặc định" aria-label="Khôi phục cỡ chữ mặc định"><span data-size aria-live="polite">100%</span></button><button type="button" data-action="more" aria-label="Tăng cỡ chữ">A+</button><button type="button" data-action="theme" aria-pressed="false">☾ Tối</button></div></div>`);
   html=html.replace('</body>','<button class="go-top" type="button" aria-label="Lên đầu trang" title="Lên đầu trang">↑</button><script src="'+assetPrefix+'assets/menu.js" defer></script><script src="'+assetPrefix+'assets/top.js" defer></script></body>');
   const canonicalPath=file==='index.html'?'':file.replace(/\\/g,'/');
   const canonical='https://giasu.ai.vn/'+canonicalPath;
