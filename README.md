@@ -209,6 +209,8 @@ Lệnh này build và phục vụ tại http://localhost:4173, theo dõi thay đ
 
 Để build đề có TikZ trên máy cần `pdflatex`, các gói LaTeX nói trên và `dvisvgm` (hoặc `pdftocairo`) trong PATH. GitHub Actions đã tự cài `dvisvgm` khi có file `.tex`. Các lần build sau dùng cache hình trong `.generated/tikz/`; không commit thư mục `.generated/`.
 
+GitHub Actions lưu riêng các SVG trong `.generated/tikz/*/figure.svg` giữa các lần chạy. Khi thêm hoặc sửa đề, workflow khôi phục cache gần nhất tương thích; bộ chuyển đổi dùng mã băm nội dung TikZ để tái sử dụng hình cũ và chỉ biên dịch hình chưa có. Cache mới được lưu sau khi job thành công. Khi sửa bộ chuyển đổi, CSS hoặc workflow, cache được tạo lại để tránh dùng hình từ cấu hình cũ. Lần đầu chạy hoặc sau khi xóa cache sẽ biên dịch lại hình. Website vẫn tạo đầy đủ HTML, danh sách bài và sitemap; LaTeX vẫn được cài để xử lý hình mới. Cache chỉ giúp rút ngắn thời gian tạo hình, không thay đổi nội dung `.tex`.
+
 ## Đề kiểm tra trực tuyến từ LaTeX
 
 Mọi file `.tex` có môi trường `baitap` được thêm vào mục **Đề kiểm tra** (`de-kiem-tra/`). Bài đọc có nút **Làm đề trực tuyến**. Hỗ trợ chọn một đáp án, đúng/sai từng ý, nhập đáp án ngắn, đồng hồ đếm ngược, nộp bài, tự nộp khi hết giờ và xem lời giải. Đề đang làm và kết quả lưu trong trình duyệt hiện tại; tải lại vẫn giữ hạn nộp ban đầu. Khi nội dung đề đổi, bài làm cũ không áp dụng cho phiên bản mới.
