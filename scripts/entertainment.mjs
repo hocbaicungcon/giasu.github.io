@@ -1,12 +1,14 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {gamesHTML} from './games.mjs';
 export const activities = [
  ['cau-do-iq','Câu đố IQ','Câu đố'],
- ['do-vui-tieng-anh','Đố vui tiếng Anh','riddles'],
- ['chuyen-vui','Chuyện vui','Giai thoại'],
+ ['do-vui-tieng-anh','English Riddles','riddles'],
+ ['chuyen-vui','Giai thoại','Giai thoại'],
  ['danh-ngon','Danh ngôn','quotes'],
  ['meo-hoc-tap','Study tips','tips'],
- ['truyen-cuoi-tieng-anh','Truyện cười tiếng Anh','jokes']
+ ['truyen-cuoi-tieng-anh','English Jokes','jokes'],
+ ['games','Games','games']
 ];
 export const funMenu = prefix => `<details class="nav-exams"><summary>Giải trí</summary><div class="nav-submenu"><a href="${prefix}giai-tri/">Tất cả nội dung</a>${activities.map(([slug,label])=>`<a href="${prefix}giai-tri/${slug}.html">${label}</a>`).join('')}</div></details>`;
 export function parseCSV(source) {
@@ -35,6 +37,7 @@ export function buildEntertainment(root,out,shell,posts,card) {
  const dir=path.join(out,'assets/fun');fs.mkdirSync(dir,{recursive:true});
  fs.writeFileSync(path.join(dir,'quotes-meta.json'),JSON.stringify({count:data.quotes.length,chunkSize:50}));
  for(const [kind,items] of Object.entries(data)) {
+  fs.writeFileSync(path.join(dir,kind+'-meta.json'),JSON.stringify({count:items.length,chunkSize:50}));
   const index=items.map((x,i)=>({chunk:Math.floor(i/50),offset:i%50,...(x.author?{author:x.author}:{}),...(x.category?{category:x.category}:{})}));
   fs.writeFileSync(path.join(dir,kind+'-index.json'),JSON.stringify(index));
   for(let i=0;i<items.length;i+=50)fs.writeFileSync(path.join(dir,`${kind}-${i/50}.json`),JSON.stringify(items.slice(i,i+50)));
@@ -46,6 +49,7 @@ export function buildEntertainment(root,out,shell,posts,card) {
  const write=(slug,title,content)=>fs.writeFileSync(path.join(out,'giai-tri',slug+'.html'),shell(title,`${title}: khám phá và học điều mới cùng gia sư thông minh.`,`<main id="main" class="wrap fun-page fun-${slug}"><nav class="breadcrumb" aria-label="Đường dẫn"><a href="../">Trang chủ</a> / <a href="./">Giải trí</a>${slug==='index'?'':` / <span>${title}</span>`}</nav><h1>${title}</h1>${content}</main>`,'../'));
  write('index','Giải trí',`<p>Một khoảng nghỉ nhỏ, thêm nhiều điều thú vị.</p><div class="fun-tiles">${links}</div><h2>Bài viết để khám phá</h2><div class="cards">${renderCards(fun)}</div>`);
  for(const [slug,label,kind] of activities){
+  if(kind==='games'){write(slug,label,gamesHTML);continue;}
   if(!data[kind]){const list=fun.filter(p=>p.type===kind);write(slug,label,`<div class="cards">${renderCards(list)}</div>${list.length?'':'<p>Chưa có bài viết. Hãy quay lại sau nhé.</p>'}`);continue;}
   const title=kind==='tips'?'Mẹo học tập':label;
   write(slug,title,`<p class="fun-intro">${kind==='riddles'?'Đọc câu đố, nhập đáp án tiếng Anh rồi kiểm tra.':'Khám phá từng câu chuyện và ý tưởng mới.'} Nội dung giữ nguyên tiếng Anh từ bộ dữ liệu.</p><section class="fun-player ${kind}" data-kind="${kind}"><div class="fun-filters">${kind==='quotes'?'<label>Tác giả<select data-filter="author"><option value="">Tất cả tác giả</option></select></label>':''}${kind!=='riddles'?`<label>${kind==='jokes'?'Thẻ truyện':'Danh mục'}<select data-filter="category"><option value="">Tất cả</option></select></label>`:''}</div><p class="fun-count" role="status"></p><article class="fun-content" aria-busy="true"><p>Đang tải nội dung…</p></article>${kind==='riddles'?'<form class="riddle-form"><label for="riddle-answer">Đáp án của bạn</label><input id="riddle-answer" autocomplete="off" required maxlength="1000" placeholder="Nhập đáp án tiếng Anh…"><button class="primary" type="submit">Kiểm tra đáp án</button></form><div class="riddle-result" role="status" hidden></div><p class="fun-help">So khớp chữ, bỏ qua viết hoa, khoảng trắng và dấu câu. Cách diễn đạt khác có thể chưa được nhận diện.</p>':''}<button class="primary fun-next" type="button">${kind==='tips'?'Mẹo tiếp theo':kind==='jokes'?'Truyện tiếp theo':'Câu tiếp theo'} →</button><p class="fun-error" role="alert" hidden></p><noscript>Bật JavaScript để xem và tương tác với nội dung.</noscript></section><a class="back" href="./">← Khám phá thêm trong Giải trí</a><script type="module" src="../assets/fun.js"></script>`);

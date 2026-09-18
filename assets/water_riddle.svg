@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" width="100%" height="100%" id="water-game-complete-spritesheet">
+  <defs>
+    <style>
+      .bg { fill: #f0f9ff; }
+      .card-box { fill: #ffffff; rx: 16; opacity: 0.85; }
+      .label { font-family: 'Arial Rounded MT Bold', system-ui, sans-serif; font-size: 12px; font-weight: bold; fill: #4b6584; text-anchor: middle; }
+      
+      /* Phong cách Can thủy tinh hoạt họa */
+      .jug-glass { fill: #ffffff; stroke: #45aaf2; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; rx: 12; opacity: 0.95; }
+      .jug-handle { fill: none; stroke: #45aaf2; stroke-width: 6; stroke-linecap: round; }
+      
+      /* Nước phong cách tươi sáng */
+      .water { fill: #2bcbba; opacity: 0.9; }
+      
+      /* Mắt cười ngộ nghĩnh */
+      .eye { fill: #2d98da; }
+      .smile { stroke: #2d98da; stroke-width: 2.5; fill: none; stroke-linecap: round; }
+
+      /* Vạch chia mức nước */
+      .mark-line { stroke: #d1d8e0; stroke-width: 2; stroke-dasharray: 2 3; }
+      .mark-text { font-family: 'Arial Rounded MT Bold', system-ui, sans-serif; font-size: 10px; font-weight: bold; fill: #a5b1c2; }
+    </style>
+
+    <!-- BIỂU TƯỢNG MẶT CƯỜI TỐI GIẢN DÙNG CHUNG -->
+    <g id="face-happy">
+      <circle cx="-8" cy="-3" r="2.5" class="eye"/>
+      <circle cx="8" cy="-3" r="2.5" class="eye"/>
+      <path d="M -6,4 Q 0,10 6,4" class="smile"/>
+    </g>
+  </defs>
+
+  <!-- NỀN TRỜI XANH -->
+  <rect width="1000" height="850" class="bg"/>
+
+  <!-- ================= 1. TRỌN BỘ CÁC CAN DUNG TÍCH (TỪ 1L ĐẾN 10L) ================= -->
+  
+  <!-- CAN 1 LÍT (1L) -->
+  <g id="jug-1l" transform="translate(30, 40)">
+    <rect width="70" height="120" class="card-box"/>
+    <path d="M 5,20 C -6,20 -6,45 5,55" class="jug-handle"/>
+    <rect x="15" y="15" width="40" height="60" class="jug-glass"/>
+    <use href="#face-happy" x="35" y="40"/>
+    <line x1="20" y1="45" x2="50" y2="45" class="mark-line"/><text x="53" y="48" class="mark-text">1L</text>
+    <text x="35" y="100" class="label">#jug-1l</text>
+  </g>
+
+  <!-- CAN 2 LÍT (2L) -->
+  <g id="jug-2l" transform="translate(115, 40)">
+    <rect width="75" height="120" class="card-box"/>
+    <path d="M 5,22 C -8,22 -8,50 5,60" class="jug-handle"/>
+    <rect x="15" y="15" width="45" height="70" class="jug-glass"/>
+    <use href="#face-happy" x="37" y="45"/>
+    <line x1="20" y1="50" x2="55" y2="50" class="mark-line"/><text x="58" y="53" class="mark-text">1L</text>
+    <line x1="20" y1="30" x2="55" y2="30" class="mark-line"/><text x="58" y="33" class="mark-text">2L</text>
+    <text x="37" y="100" class="label">#jug-2l</text>
+  </g>
+
+  <!-- CAN 3 LÍT (3L) -->
+  <g id="jug-3l" transform="translate(205, 40)">
+    <rect width="80" height="130" class="card-box"/>
+    <path d="M 5,22 C -10,22 -10,55 5,65" class="jug-handle"/>
+    <rect x="15" y="15" width="50" height="75" class="jug-glass"/>
+    <use href="#face-happy" x="40" y="45"/>
+    <line x1="20" y1="65" x2="60" y2="65" class="mark-line"/><text x="63" y="68" class="mark-text">1L</text>
+    <line x1="20" y1="45" x2="60" y2="45" class="mark-line"/><text x="63" y="48" class="mark-text">2L</text>
+    <line x1="20" y1="25" x2="60" y2="25" class="mark-line"/><text x="63" y="28" class="mark-text">3L</text>
+    <text x="40" y="110" class="label">#jug-3l</text>
+  </g>
+
+  <!-- CAN 4 LÍT (4L) -->
+  <g id="jug-4l" transform="translate(300, 40)">
+    <rect width="85" height="135" class="card-box"/>
+    <path d="M 3,25 C -12,25 -12,65 3,75" class="jug-handle"/>
+    <rect x="15" y="15" width="55" height="85" class="jug-glass"/>
+    <use href="#face-happy" x="42" y="50"/>
+    <line x1="20" y1="78" x2="65" y2="78" class="mark-line"/><text x="68" y="81" class="mark-text">1L</text>
+    <line x1="20" y1="58" x2="65" y2="58" class="mark-line"/><text x="68" y="61" class="mark-text">2L</text>
+    <line x1="20" y1="38" x2="65" y2="38" class="mark-line"/><text x="68" y="41" class="mark-text">3L</text>
+    <line x1="20" y1="20" x2="65" y2="20" class="mark-line"/><text x="68" y="23" class="mark-text">4L</text>
+    <text x="42" y="118" class="label">#jug-4l</text>
+  </g>
+
+  <!-- ⭐ CAN 5 LÍT (5L - BỔ SUNG KHU VỰC CHUẨN) ⭐ -->
+  <g id="jug-5l" transform="translate(400, 40)">
+    <rect width="90" height="145" class="card-box" stroke="#26de81" stroke-width="2"/>
+    <path d="M 0,30 C -15,30 -15,75 0,85" class="jug-handle"/>
+    <rect x="15" y="15" width="60" height="95" class="jug-glass"/>
+    <use href="#face-happy" x="45" y="55"/>
+    <line x1="20" y1="90" x2="70" y2="90" class="mark-line"/><text x="73" y="93" class="mark-text">1L</text>
+    <line x1="20" y1="72" x2="70" y2="72" class="mark-line"/><text x="73" y="75" class="mark-text">2L</text>
+    <line x1="20" y1="54" x2="70" y2="54" class="mark-line"/><text x="73" y="57" class="mark-text">3L</text>
+    <line x1="20" y1="36" x2="70" y2="36" class="mark-line"/><text x="73" y="39" class="mark-text">4L</text>
+    <line x1="20" y1="20" x2="70" y2="20" class="mark-line"/><text x="73" y="23" class="mark-text">5L</text>
+    <text x="45" y="128" class="label" fill="#20bf6b">#jug-5l (Mới)</text>
+  </g>
+
+  <!-- CAN 8 LÍT (8L) -->
+  <g id="jug-8l" transform="translate(505, 40)">
+    <rect width="100" height="155" class="card-box"/>
+    <path d="M 0,30 C -15,30 -15,80 0,90" class="jug-handle"/>
+    <rect x="15" y="15" width="70" height="105" class="jug-glass"/>
+    <use href="#face-happy" x="50" y="60"/>
+    <line x1="20" y1="95" x2="80" y2="95" class="mark-line"/><text x="83" y="98" class="mark-text">2L</text>
+    <line x1="20" y1="70" x2="80" y2="70" class="mark-line"/><text x="83" y="73" class="mark-text">4L</text>
+    <line x1="20" y1="45" x2="80" y2="45" class="mark-line"/><text x="83" y="48" class="mark-text">6L</text>
+    <line x1="20" y1="22" x2="80" y2="22" class="mark-line"/><text x="83" y="25" class="mark-text">8L</text>
+    <text x="50" y="138" class="label">#jug-8l</text>
+  </g>
+
+  <!-- CAN LỚN 10 LÍT (10L) -->
+  <g id="jug-10l" transform="translate(620, 40)">
+    <rect width="110" height="165" class="card-box"/>
+    <path d="M 0,35 C -18,35 -18,90 0,100" class="jug-handle"/>
+    <rect x="15" y="15" width="80" height="115" class="jug-glass"/>
+    <use href="#face-happy" x="55" y="65"/>
+    <line x1="20" y1="105" x2="90" y2="105" class="mark-line"/><text x="92" y="108" class="mark-text">2L</text>
+    <line x1="20" y1="82" x2="90" y2="82" class="mark-line"/><text x="92" y="85" class="mark-text">4L</text>
+    <line x1="20" y1="60" x2="90" y2="60" class="mark-line"/><text x="92" y="63" class="mark-text">6L</text>
+    <line x1="20" y1="38" x2="90" y2="38" class="mark-line"/><text x="92" y="41" class="mark-text">8L</text>
+    <line x1="20" y1="20" x2="90" y2="20" class="mark-line"/><text x="92" y="23" class="mark-text">10L</text>
+    <text x="55" y="148" class="label">#jug-10l</text>
+  </g>
+
+
+  <!-- ================= 2. BỂ CHỨA & CHƯỚNG NGẠI VẬT ================= -->
+  
+  <!-- BỂ CHỨA TÙY CHỈNH MỤC TIÊU (MỤC TIÊU TÙY CHỈNH BẰNG JS) -->
+  <g id="tank-variable-target" transform="translate(745, 40)">
+    <rect width="225" height="165" class="card-box"/>
+    <rect x="20" y="15" width="185" height="110" fill="#ffffff" stroke="#ffb142" stroke-width="4" rx="14"/>
+    <rect id="tank-water-custom" x="23" y="60" width="179" height="62" class="water" rx="6"/>
+    <line id="target-line" x1="23" y1="40" x2="202" y2="40" stroke="#ff5252" stroke-width="3" stroke-dasharray="4 3"/>
+    <text id="target-text" x="112" y="32" font-family="'Arial Rounded MT Bold', system-ui" font-size="11" fill="#ff5252" font-weight="bold" text-anchor="middle">MỤC TIÊU TÙY CHỈNH</text>
+    <text x="112" y="148" class="label">#tank-variable-target</text>
+  </g>
+
+  <!-- CAN RÒ RỈ (MẤT NƯỚC) -->
+  <g id="obstacle-leaking-jug" transform="translate(30, 220)">
+    <rect width="90" height="150" class="card-box"/>
+    <path d="M 0,35 C -15,35 -15,75 0,85" class="jug-handle"/>
+    <rect x="15" y="20" width="60" height="95" class="jug-glass" stroke="#ff7675"/>
+    <circle cx="70" cy="90" r="3" fill="#ff7675"/>
+    <path d="M 75,95 Q 78,105 75,110 Q 72,105 75,95 Z" fill="#74b9ff"/>
+    <text x="45" y="135" class="label">#leaking-jug</text>
+  </g>
+
+  <!-- CAN CÓ ĐÁ (GIẢM THỂ TÍCH) -->
+  <g id="obstacle-stone-jug" transform="translate(135, 220)">
+    <rect width="90" height="150" class="card-box"/>
+    <rect x="15" y="20" width="60" height="95" class="jug-glass"/>
+    <path d="M 20,110 C 25,90 55,90 70,110 Z" fill="#636e72"/>
+    <text x="45" y="135" class="label">#stone-jug</text>
+  </g>
+
+
+  <!-- ================= 3. DANH SÁCH BẢNG TRUY CẬP TÊN CAN TRONG GAME ================= -->
+  <g transform="translate(30, 400)">
+    <rect width="940" height="410" fill="#ffffff" rx="20" stroke="#0984e3" stroke-width="3"/>
+    <text x="470" y="40" font-family="'Arial Rounded MT Bold', system-ui" font-size="20" font-weight="900" fill="#0984e3" text-anchor="middle">🎮 MÃ ID TẤT CẢ CÁC CAN ĐỂ BẠN LẬP TRÌNH GAME</text>
+
+    <!-- Bảng tra cứu ID -->
+    <g font-family="'Arial Rounded MT Bold', system-ui" font-size="14" fill="#2d3436">
+      <rect x="50" y="65" width="840" height="40" rx="8" fill="#e3f2fd"/>
+      <text x="70" y="90" fill="#1565c0" font-weight="bold">Lấy Can 1 Lít: <tspan fill="#d63031">#jug-1l</tspan></text>
+      <text x="350" y="90" fill="#1565c0" font-weight="bold">Lấy Can 2 Lít: <tspan fill="#d63031">#jug-2l</tspan></text>
+      <text x="630" y="90" fill="#1565c0" font-weight="bold">Lấy Can 3 Lít: <tspan fill="#d63031">#jug-3l</tspan></text>
+
+      <rect x="50" y="115" width="840" height="40" rx="8" fill="#e8f5e9"/>
+      <text x="70" y="140" fill="#2e7d32" font-weight="bold">Lấy Can 4 Lít: <tspan fill="#d63031">#jug-4l</tspan></text>
+      <text x="350" y="140" fill="#2e7d32" font-weight="bold">Lấy Can 5 Lít: <tspan fill="#d63031">#jug-5l</tspan> (Đã có)</text>
+      <text x="630" y="140" fill="#2e7d32" font-weight="bold">Lấy Can 8 Lít: <tspan fill="#d63031">#jug-8l</tspan></text>
+
+      <rect x="50" y="165" width="840" height="40" rx="8" fill="#fff3e0"/>
+      <text x="70" y="190" fill="#e65100" font-weight="bold">Lấy Can 10 Lít: <tspan fill="#d63031">#jug-10l</tspan></text>
+      <text x="350" y="190" fill="#e65100" font-weight="bold">Bể chứa mục tiêu: <tspan fill="#d63031">#tank-variable-target</tspan></text>
+
+      <line x1="50" y1="225" x2="890" y2="225" stroke="#b2bec3" stroke-width="1.5"/>
+
+      <text x="50" y="260" font-size="16" fill="#0984e3" font-weight="bold">💡 Ví dụ kết hợp làm Màn chơi bất kỳ trong JavaScript:</text>
+      <text x="70" y="290">• <tspan fill="#00b894" font-weight="bold">Màn 1 (Dễ):</tspan> Hiện #jug-3l và #jug-5l ➔ Đong 7L nước vào #tank-variable-target</text>
+      <text x="70" y="320">• <tspan fill="#fdcb6e" font-weight="bold">Màn 2 (Trung bình):</tspan> Hiện #jug-4l và #jug-8l ➔ Đong 6L nước vào bể chứa</text>
+      <text x="70" y="350">• <tspan fill="#e17055" font-weight="bold">Màn 3 (Khó):</tspan> Hiện #jug-2l, #jug-5l và #jug-10l ➔ Đong 9L nước với tối đa 6 bước đi</text>
+    </g>
+  </g>
+
+</svg>

@@ -118,7 +118,7 @@ export function importLatex(root){
   if(!Number.isInteger(duration)||duration<1||duration>600)throw Error(`${file}: exam.duration phải từ 1 đến 600 phút`);
   const examInfo=examMetadata(meta,file);
   if(examInfo.mode==='self-review')examQuestions=examQuestions.map(q=>({...q,kind:'proof',answer:null}));
-  results.push({filename:slug+'.md',markdown,images,exam:{slug,title:meta.title,category:meta.category,grade:meta.grade,duration,...examInfo,questions:examQuestions}});
+  results.push({filename:slug+'.md',markdown,images,exam:{slug,date:meta.date,title:meta.title,category:meta.category,grade:meta.grade,duration,...examInfo,questions:examQuestions}});
   console.log(`LaTeX: ${file} → ${slug}.md (${result.questions} câu, ${images.length} hình)`);
  }
  return results;
