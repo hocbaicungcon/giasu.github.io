@@ -2,6 +2,47 @@
 
 Website chia sẻ bài học, bài tập lớp 1–12, triển khai trên GitHub Pages. Giao diện dùng màu từ `hocbaicungcon_round.svg`. Nội dung được tạo thành HTML tĩnh, công thức được dựng sẵn bằng KaTeX và dùng font lưu cùng website.
 
+## Đăng bài Giải trí
+
+Thêm tệp Markdown vào `post/` với thông tin như dưới đây. Bài tự xuất hiện tại `/giai-tri/` và trong thư viện. Có thể bỏ `grade` để dành cho mọi lớp; `type` có thể là `Giai thoại` hoặc `Câu đố`. Các khối `quiz` tương tác vẫn sử dụng như bài học.
+
+```yaml
+---
+title: "Câu đố tư duy: tìm quy luật"
+description: "Một thử thách nhỏ để rèn khả năng suy luận."
+category: Giải trí
+type: Câu đố
+date: "2026-09-18"
+tags: ["câu đố IQ", "tư duy logic"]
+---
+```
+
+Với giai thoại về nhà khoa học, dùng `type: Giai thoại` và các tag như `giai thoại`, `nhà khoa học` hoặc tên nhân vật.
+
+## Đề Toán quốc tế
+
+Giữ nguyên tệp `.tex` theo cấu trúc `baitap` hiện có. Tạo tệp `.yml` cùng tên, bổ sung các trường sau vào metadata tiêu đề, mô tả, ngày và tags thông thường:
+
+```yaml
+category: Toán học
+type: Bài tập
+exam_group: quốc tế
+competition: AMC
+level: AMC 10
+year: 2025
+language: en
+tags: [toán quốc tế, đại số, hình học]
+exam:
+  duration: 75
+  mode: auto
+```
+
+`competition`, `level` và `year` dùng để lọc đề. `language` nhận `vi`, `en`, `vi-en`; trường này mô tả ngôn ngữ nội dung, không tự dịch bài. Không cần `grade` nếu kỳ thi có cấp độ riêng. Đề cũ không có các trường này mặc định thuộc nhóm Việt Nam, tiếng Việt, chấm tự động theo đáp án đã có.
+
+Với đề chứng minh như IMO, đặt `exam.mode: self-review` và thời lượng phù hợp. Người học có thể ghi nháp, đánh dấu hoàn thành trên giấy, lưu tiến độ và đối chiếu lời giải sau khi kết thúc. Chế độ này không chấm điểm. Lời giải tiếp tục lấy từ môi trường `traloi` nếu có; không tự tạo lời giải hoặc đáp án. Đề chưa có lời giải vẫn cho phép tự luyện và hiển thị rõ trạng thái.
+
+Menu **Đề kiểm tra** có các lối vào Tất cả đề, Đề Việt Nam và Toán quốc tế. Trang đề hỗ trợ lọc kỳ thi, năm, cấp độ, ngôn ngữ, lớp, môn và chủ đề; URL giữ bộ lọc để chia sẻ.
+
 ## Chạy trên máy
 
 Cần Node.js 22 và Python 3 (chỉ dùng cho máy chủ xem thử).

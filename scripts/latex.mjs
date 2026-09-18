@@ -4,6 +4,7 @@ import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
 import YAML from 'yaml';
 import {extractExam} from './exams.mjs';
+import {examMetadata} from './exam-metadata.mjs';
 
 function group(s,start){
  if(s[start]!=='{')throw Error('Thiếu dấu { trong LaTeX');
@@ -115,7 +116,9 @@ export function importLatex(root){
   fs.writeFileSync(path.join(generated,slug+'.md'),markdown);
   const duration=custom?.exam?.duration??90;
   if(!Number.isInteger(duration)||duration<1||duration>600)throw Error(`${file}: exam.duration phải từ 1 đến 600 phút`);
-  results.push({filename:slug+'.md',markdown,images,exam:{slug,title:meta.title,category:meta.category,grade:meta.grade,duration,questions:examQuestions}});
+  const examInfo=examMetadata(meta,file);
+  if(examInfo.mode==='self-review')examQuestions=examQuestions.map(q=>({...q,kind:'proof',answer:null}));
+  results.push({filename:slug+'.md',markdown,images,exam:{slug,title:meta.title,category:meta.category,grade:meta.grade,duration,...examInfo,questions:examQuestions}});
   console.log(`LaTeX: ${file} → ${slug}.md (${result.questions} câu, ${images.length} hình)`);
  }
  return results;
