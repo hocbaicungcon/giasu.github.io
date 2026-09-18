@@ -30,10 +30,21 @@ jobs:
           node-version: '22'
           cache: npm
       - name: Install LaTeX tools when posts contain TeX
+        # Keep the tools available even after a cache hit (missing/corrupt images can be rebuilt).
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm
+      - name: Restore and save TikZ SVG cache
+        if: hashFiles('post/*.tex', 'post/*.TEX') != ''
+        uses: actions/cache@v6
+        with:
+          path: .generated/tikz/*/figure.svg
+          # Invalidate when the renderer, styles or build environment changes.
+          key: tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml') }}-${{ hashFiles('post/*.tex', 'post/*.TEX') }}
+          # Reuse unchanged figures when a post is added or edited.
+          restore-keys: |
+            tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml') }}-
       - name: Install dependencies
         run: npm ci
       - name: Test Markdown and mathematics
