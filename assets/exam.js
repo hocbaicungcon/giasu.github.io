@@ -5,7 +5,7 @@ let state=null,clock;
 try{const saved=JSON.parse(localStorage.getItem(key));if(saved&&Number.isFinite(saved.started)&&saved.deadline===saved.started+exam.duration*60000&&saved.answers&&typeof saved.answers==='object'&&!Array.isArray(saved.answers))state=saved;}catch{}
 function save(){try{localStorage.setItem(key,JSON.stringify(state));}catch{$('storage-warning').hidden=false;}}
 function input(type,name,value){const el=document.createElement('input');el.type=type;el.name=name;el.value=value;return el;}
-function answered(q){const a=state.answers[q.id];return q.kind==='truefalse'?Array.isArray(a)&&a.filter(v=>v==='true'||v==='false').length===q.options.length:typeof a==='string'&&a.trim()!=='';}
+function answered(q){if(q.kind==='proof'&&state.completed?.[q.id])return true;const a=state.answers[q.id];return q.kind==='truefalse'?Array.isArray(a)&&a.filter(v=>v==='true'||v==='false').length===q.options.length:typeof a==='string'&&a.trim()!=='';}
 function progress(){const n=exam.questions.filter(answered).length;$('exam-progress').textContent=`Đã trả lời ${n}/${exam.questions.length} câu`;exam.questions.forEach(q=>$('jump-'+q.id).classList.toggle('answered',answered(q)));}
 function render(){
  $('exam-start').hidden=true;$('exam-session').hidden=false;$('exam-questions').replaceChildren();$('exam-nav').replaceChildren();
@@ -17,16 +17,23 @@ function render(){
   const title=document.createElement('h3');title.textContent=q.label;card.append(title);
   const content=document.createElement('div');content.innerHTML=q.question;card.append(content);
   const field=document.createElement('fieldset');const legend=document.createElement('legend');legend.textContent=q.kind==='choice'?'Chọn một đáp án':q.kind==='truefalse'?'Chọn đúng hoặc sai cho từng ý':'Nhập đáp án';field.append(legend);
-  if(q.kind==='choice')q.options.forEach((o,i)=>{const label=document.createElement('label');label.className='quiz-option';const radio=input('radio',q.id,String(i));radio.checked=state.answers[q.id]===String(i);const text=document.createElement('span');text.innerHTML=o;label.append(radio,text);field.append(label);});
+  if(q.kind==='proof'){
+   legend.textContent='Bài tự luyện chứng minh';
+   q.options.forEach(o=>{const text=document.createElement('div');text.innerHTML=o;field.append(text);});
+   const label=document.createElement('label');label.textContent='Ghi chú hoặc hướng giải (có thể làm trên giấy)';
+   const text=document.createElement('textarea');text.name=q.id;text.rows=6;text.value=state.answers[q.id]||'';label.append(text);field.append(label);
+   const done=document.createElement('label');done.className='proof-done';const check=input('checkbox',q.id+'-done','done');check.dataset.done='true';check.checked=Boolean(state.completed?.[q.id]);done.append(check,document.createTextNode('Đã hoàn thành bài trên giấy'));field.append(done);
+  }
+  else if(q.kind==='choice')q.options.forEach((o,i)=>{const label=document.createElement('label');label.className='quiz-option';const radio=input('radio',q.id,String(i));radio.checked=state.answers[q.id]===String(i);const text=document.createElement('span');text.innerHTML=o;label.append(radio,text);field.append(label);});
   else if(q.kind==='truefalse')q.options.forEach((o,i)=>{const row=document.createElement('fieldset');row.className='truefalse-row';const statement=document.createElement('legend');statement.innerHTML=`${String.fromCharCode(97+i)}) ${o}`;row.append(statement);for(const [labelText,value]of [['Đúng','true'],['Sai','false']]){const label=document.createElement('label');const radio=input('radio',q.id+'-'+i,value);radio.dataset.part=i;radio.checked=state.answers[q.id]?.[i]===value;label.append(radio,document.createTextNode(labelText));row.append(label);}field.append(row);});
   else {const label=document.createElement('label');label.textContent='Câu trả lời của bạn';const text=input('text',q.id,state.answers[q.id]||'');text.autocomplete='off';label.append(text);field.append(label);}
-  field.addEventListener('input',event=>{if(state.finished)return;if(Date.now()>=state.deadline){finish(true);return;}if(q.kind==='truefalse'){const values=state.answers[q.id]||Array(q.options.length).fill('');values[Number(event.target.dataset.part)]=event.target.value;state.answers[q.id]=values;}else state.answers[q.id]=event.target.value;save();progress();});
+  field.addEventListener('input',event=>{if(state.finished)return;if(Date.now()>=state.deadline){finish(true);return;}if(event.target.dataset.done){state.completed??={};state.completed[q.id]=event.target.checked;}else if(q.kind==='truefalse'){const values=state.answers[q.id]||Array(q.options.length).fill('');values[Number(event.target.dataset.part)]=event.target.value;state.answers[q.id]=values;}else state.answers[q.id]=event.target.value;save();progress();});
   card.append(field);const review=document.createElement('div');review.className='exam-review';review.hidden=true;card.append(review);$('exam-questions').append(card);
   const link=document.createElement('a');link.href='#'+q.id;link.id='jump-'+q.id;link.textContent=q.label.replace(/^Câu\s+/i,'');link.setAttribute('aria-label',`${q.section} — ${q.label}`);sectionNav.append(link);
  }
  progress();if(state.finished)showResult();else{tick();if(!state.finished)clock=setInterval(tick,1000);}
 }
-function tick(){const seconds=Math.max(0,Math.ceil((state.deadline-Date.now())/1000));$('exam-timer').textContent=`${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;if(!seconds)finish(true);}
+function tick(){const seconds=Math.max(0,Math.ceil((state.deadline-Date.now())/1000));$('exam-timer').textContent=`${Math.floor(seconds/60).toString().padStart(2,'0')}:${(seconds%60).toString().padStart(2,'0')}`;if(exam.duration>15&&seconds<=15*60&&seconds>0){const warning=$('exam-time-warning');warning.hidden=false;if(!state.timeWarningShown){state.timeWarningShown=true;save();warning.scrollIntoView({block:'nearest',behavior:'smooth'});}}if(!seconds)finish(true);}
 function finish(expired=false){if(!state||state.finished)return;if(!expired){const blank=exam.questions.filter(q=>!answered(q)).length;if(!confirm(blank?`Còn ${blank} câu chưa hoàn thành. Bạn muốn nộp bài?`:'Bạn muốn nộp bài và xem kết quả?'))return;}state.finished=expired?state.deadline:Date.now();state.expired=expired;save();clearInterval(clock);showResult();$('exam-result').focus();}
 function confetti(){
  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
@@ -39,9 +46,9 @@ function confetti(){
 function showResult(){
  clearInterval(clock);const result=gradeExam(exam.questions,state.answers);
  $('exam-result').hidden=false;$('submit-exam').hidden=true;$('exam-timer').textContent=state.expired?'Đã hết giờ':'Đã nộp bài';if(!state.expired&&!state.confettiShown){state.confettiShown=true;save();confetti();}
- $('score').textContent=result.complete?`Điểm: ${result.score.toFixed(2)}/10`:'Đề chưa đủ đáp án nên chưa tính tổng điểm. Xem phản hồi từng câu bên dưới.';
+ $('score').textContent=exam.mode==='self-review'?'Đã kết thúc buổi tự luyện. Đối chiếu bài làm với lời giải tham khảo bên dưới; không có điểm tự động.':result.complete?`Điểm: ${result.score.toFixed(2)}/10`:'Đề chưa đủ đáp án nên chưa tính tổng điểm. Xem phản hồi từng câu bên dưới.';
  const seconds=Math.max(0,Math.min(exam.duration*60,Math.floor((state.finished-state.started)/1000)));$('elapsed').textContent=`Thời gian làm bài: ${Math.floor(seconds/60)} phút ${seconds%60} giây.`;
- exam.questions.forEach((q,i)=>{const card=$(q.id);card.querySelectorAll('input').forEach(el=>el.disabled=true);const review=card.querySelector('.exam-review');review.hidden=false;review.replaceChildren();const status=document.createElement('strong');status.textContent=result.scores[i]===null?'Chưa có đáp án':result.scores[i]===1?'Chính xác':result.scores[i]===0?'Chưa đúng hoặc chưa trả lời':`Đúng ${Math.round(result.scores[i]*q.options.length)}/${q.options.length} ý`;review.append(status);
+ exam.questions.forEach((q,i)=>{const card=$(q.id);card.querySelectorAll('input,textarea').forEach(el=>el.disabled=true);const review=card.querySelector('.exam-review');review.hidden=false;review.replaceChildren();const status=document.createElement('strong');status.textContent=q.kind==='proof'?(q.solution?'Tự đối chiếu lời giải':'Chưa có lời giải tham khảo'):result.scores[i]===null?'Chưa có đáp án':result.scores[i]===1?'Chính xác':result.scores[i]===0?'Chưa đúng hoặc chưa trả lời':`Đúng ${Math.round(result.scores[i]*q.options.length)}/${q.options.length} ý`;review.append(status);
  if(q.answer!==null){const answer=document.createElement('p');answer.textContent='Đáp án: '+(q.kind==='choice'?String.fromCharCode(65+Number(q.answer)):q.kind==='truefalse'?q.answer.map((a,j)=>`${String.fromCharCode(97+j)}) ${a?'Đúng':'Sai'}`).join('; '):q.answer.join(' hoặc '));review.append(answer);}
  if(q.solution){const solution=document.createElement('div');solution.innerHTML=q.solution;review.append(solution);}
  });

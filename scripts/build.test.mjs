@@ -1,5 +1,11 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
+test('entertainment posts accept story or puzzle types without a grade',()=>{
+ for(const type of ['Giai thoại','Câu đố']){
+  const p=parsePost(source.replace('Toán học','giải trí').replace('type: Bài học',`type: ${type}`).replace('grade: 10\n',''),'giai-tri.md');
+  assert.equal(p.category,'Giải trí');assert.equal(p.type,type);assert.equal(p.grade,undefined);
+ }
+});
 test('new exam LaTeX constructs render as numbers, lists, tables and display math',()=>{
  const input=String.raw`In \num{8000} tờ, $\num{3600}$ mỗi giờ.
 \begin{itemize}\item Một $x$.\item Hai.\end{itemize}
