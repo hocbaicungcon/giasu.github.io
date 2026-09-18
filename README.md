@@ -295,6 +295,11 @@ Các trang trong `giai-tri/` được tạo tự động khi build từ `assets/
 - CSV câu đố không có dòng tiêu đề, gồm 2 cột: câu hỏi, đáp án. Ô chứa dấu phẩy hoặc xuống dòng phải đặt trong dấu ngoặc kép theo chuẩn CSV.
 - Danh ngôn lọc đồng thời theo tác giả và danh mục; mẹo học tập theo danh mục; truyện cười theo trường `cat`.
 - Nút tiếp theo chọn ngẫu nhiên, tránh lặp ngay nội dung vừa xem. Đáp án đố vui so khớp chữ sau khi bỏ dấu câu, khoảng trắng và khác biệt chữ hoa; không chấm theo ngữ nghĩa.
-- Footer lấy danh ngôn từ `quotes.json`, tránh lặp câu trước khi tải lại trong cùng phiên trình duyệt.
+- Cuối mỗi bài viết (`.article-end`) hiển thị một mẹo từ `study_tips.json`, tránh lặp mẹo vừa xem trong cùng phiên. Footer giữ câu “✦ Mỗi bài học, một bước tiến!”.
 - Build chia dữ liệu thành nhóm 50 mục, trình duyệt chỉ tải nhóm cần hiển thị. Nội dung tiếng Anh giữ nguyên từ nguồn; nên rà soát nội dung trước khi xuất bản cho học sinh.
-- Bài Markdown có category `Giải trí`, type `Câu đố` vào mục Câu đố IQ; type `Giai thoại` vào Chuyện vui. Các loại bài khác vẫn xuất hiện trên trang Giải trí tổng hợp.
+- Bài Markdown có category `Giải trí`, type `Câu đố` vào mục Câu đố IQ; type `Giai thoại` vào mục Giai thoại. Các loại bài khác vẫn xuất hiện trên trang Giải trí tổng hợp.
+- Games tại `giai-tri/games.html` gồm 2048, Sói–Dê–Bắp cải (4 màn), Hai can nước (5 màn) và đoán từ 5 chữ trong 6 lượt. Bộ từ cơ bản chỉnh trong `assets/game-rules.js`; đây là trò chơi độc lập, không dùng dữ liệu của NYTimes. Trạng thái trò chơi chỉ giữ trong lần mở trang hiện tại.
+- Qua sông: bấm nhân vật để lên thuyền, bấm hành khách trên thuyền để xuống, bấm thuyền để đi. Hai can nước: chọn can rồi bấm vòi/cống để đổ đầy/đổ hết, bấm can kia để rót; bấm lại can đang chọn để bỏ chọn. Mục tiêu 7 lít là tổng nước trong hai can 5 lít và 3 lít. Nút chơi lại/màn tiếp theo nằm trong cảnh.
+- Cấu hình màn chơi ở `assets/puzzle-levels.js`. Kiểm tra tự động duyệt các trạng thái để bảo đảm mỗi màn có lời giải trong giới hạn lượt. Các hình trích từ `assets/wolf cabbage sheep.svg` và `assets/water_riddle.svg` khi build; file SVG gốc không bị sửa.
+- Hai nút sắp xếp bài học/đề thi đổi chiều theo tên hoặc ngày đăng (`date` trong metadata), không phải năm diễn ra kỳ thi.
+- Công cụ trong menu lưu mức chữ 80–130% và chế độ sáng/tối trên trình duyệt.

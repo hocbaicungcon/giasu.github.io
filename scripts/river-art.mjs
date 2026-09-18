@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const source=fs.readFileSync(new URL('../assets/wolf cabbage sheep.svg',import.meta.url),'utf8');
+const boxes={farmer:'0 0 120 165',wolf:'-12 20 175 155',sheep:'20 15 150 145',cabbage:'10 20 100 100',boat:'0 0 350 100',oar:'0 0 165 25','bank-left':'0 0 225 155','bank-right':'25 -45 220 200',river:'0 0 370 120'};
+const symbols=Object.entries(boxes).map(([name,box])=>{
+ const group=source.match(new RegExp(`<g id="element-${name}"[^>]*>([\\s\\S]*?)<\\/g>`));
+ if(!group)throw Error(`Thiếu hình ${name} trong wolf cabbage sheep.svg`);
+ return `<symbol id="river-art-${name}" viewBox="${box}"${name==='river'||name.startsWith('bank-')?' preserveAspectRatio="none"':''}>${group[1].replace(/<text\b[^>]*>[\s\S]*?<\/text>/g,'')}</symbol>`;
+}).join('');
+export const riverHTML=`<svg class="river-symbols" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>${symbols}</defs></svg>
+<section class="game-panel" id="game-river" hidden><div class="river-heading"><div><span class="overline">THỬ TÀI QUA SÔNG</span><h2>Sói, Dê và Bắp cải</h2></div><span class="river-counter" id="river-steps">0 lượt</span></div><div class="puzzle-levels"><label for="river-level">Màn chơi</label><select id="river-level"></select></div><p id="river-mission"></p><p class="river-intro">Bấm nhân vật để lên hoặc xuống thuyền, bấm thuyền để qua sông. Đừng để sói ở riêng với dê, hoặc dê ở riêng với bắp cải!</p>
+<div class="river-world" data-side="0"><div class="scene-tools"><button type="button" data-restart="river" aria-label="Chơi lại màn qua sông" title="Chơi lại">↻</button><button type="button" id="river-next" aria-label="Màn qua sông tiếp theo" title="Màn tiếp theo" hidden>→</button></div><svg class="river-landscape" viewBox="0 0 900 400" preserveAspectRatio="none" aria-hidden="true"><rect width="900" height="400" fill="#e5f5f2"/><use href="#river-art-river" x="0" y="175" width="900" height="225" preserveAspectRatio="none"/><use href="#river-art-bank-left" x="0" y="0" width="290" height="330" preserveAspectRatio="none"/><use href="#river-art-bank-right" x="610" y="0" width="290" height="330" preserveAspectRatio="none"/></svg>
+<section class="river-bank bank-left"><div id="river-left" class="river-characters"></div></section><section class="river-bank bank-right"><div id="river-right" class="river-characters"></div></section>
+<div class="river-vessel"><button type="button" id="river-cross" class="river-boat-hit" aria-label="Bấm thuyền để qua sông"></button><svg class="river-farmer" aria-hidden="true"><use href="#river-art-farmer"/></svg><button type="button" id="river-unload" aria-label="Cho hành khách xuống thuyền"><svg class="river-cargo" aria-hidden="true"><use/></svg></button><svg class="river-boat" aria-hidden="true"><use href="#river-art-boat"/></svg><svg class="river-oar" aria-hidden="true"><use href="#river-art-oar"/></svg></div></div>
+<p id="river-status" role="status"></p></section>`;

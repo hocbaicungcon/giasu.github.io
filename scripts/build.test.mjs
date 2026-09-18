@@ -26,7 +26,17 @@ import {parsePost,build} from './build.mjs';
 const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategory: Toán học\ngrade: 10\ntype: Bài học\ndate: "2026-09-17"\ntags: [toán 10]\n---\nCông thức $x_1 + x_2$.\n\n$$\n\\frac{a}{b} = x^2\n$$\n\n```js\nconst cost = "$5";\n```';
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
 test('reject incorrect metadata and malformed mathematics',()=>{assert.throws(()=>parsePost(source.replace('grade: 10','grade: 13'),'thu.md'),/lớp/);assert.throws(()=>parsePost(source.replace('2026-09-17','2026-02-31'),'thu.md'),/ngày/);assert.throws(()=>parsePost(source.replace('Toán học','Không có'),'thu.md'),/môn học/);assert.throws(()=>parsePost(source.replace('x_1 + x_2','\\invalidcommand'),'thu.md'));});
-test('all published posts build',()=>assert.ok(build().every(p => p.slug && p.html)));
+test('all published posts build with menu controls, compact metadata and games',()=>{
+ assert.ok(build().every(p=>p.slug&&p.html));
+ const read=file=>fs.readFileSync(new URL('../dist/'+file,import.meta.url),'utf8');
+ const home=read('index.html');assert.match(home,/<nav id="site-menu"[\s\S]*class="display-controls"[\s\S]*<\/nav>/);assert.doesNotMatch(home,/class="display-bar"|phút đọc/);
+ assert.equal((home.match(/data-sort=/g)||[]).length,2);
+ const articleFile=fs.readdirSync(new URL('../dist/bai-viet/',import.meta.url)).find(f=>f.endsWith('.html'));
+ const article=read('bai-viet/'+articleFile);assert.match(article,/class="article-meta"><time/);assert.match(article,/data-study-tip/);assert.doesNotMatch(article,/data-footer-quote|phút đọc/);assert.match(article,/✦ Mỗi bài học, một bước tiến!/);
+ const examFile=fs.readdirSync(new URL('../dist/de-kiem-tra/',import.meta.url)).find(f=>f.endsWith('.html')&&f!=='index.html');
+ const exam=read('de-kiem-tra/'+examFile);assert.match(exam,/class="exam-meta"/);assert.doesNotMatch(exam.match(/class="exam-meta">([^<]*)/)[1],/Tiếng Việt|Tiếng Anh/);
+ assert.match(read('giai-tri/games.html'),/game-numbers/);assert.match(read('giai-tri/index.html'),/English Riddles/);
+});
 
 test('render interactive blocks and preserve ordinary code',()=>{
  const p=parsePost(source+'\n\n```youtube\nurl: https://youtu.be/M7lc1UVf-VE\ntitle: Video mẫu\n```\n\n```quiz\ntype: choice\nquestion: Tính $1+1$\noptions: ["1", "2"]\nanswer: 2\nexplanation: Hai đơn vị.\n```\n\n```quiz\ntype: text\nquestion: Nhập hai\nanswers: ["2"]\nexplanation: Đáp án 2.\n```','tuong-tac.md');
