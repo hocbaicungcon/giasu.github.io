@@ -1,75 +1,3327 @@
 // Static, solvable puzzles; minimum move counts are checked by the test suite.
 export const riverLevels=[
- {"items":["wolf","goat","cabbage"],"capacity":1,"start":{"person":0,"positions":[0,0,0]},"limit":null,"minimum":7,"description":"Đưa 1 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 1 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","goat","cabbage","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0]},"limit":null,"minimum":5,"description":"Đưa 1 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","goat","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0]},"limit":null,"minimum":5,"description":"Đưa 2 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","goat","goat","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0]},"limit":7,"minimum":3,"description":"Đưa 1 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","goat","goat","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0,0]},"limit":11,"minimum":7,"description":"Đưa 2 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","goat","goat","cabbage","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0,0]},"limit":11,"minimum":7,"description":"Đưa 1 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","goat","cabbage","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0,0]},"limit":11,"minimum":7,"description":"Đưa 2 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","goat","goat","cabbage","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0,0,0]},"limit":11,"minimum":7,"description":"Đưa 2 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","goat","goat","goat","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0]},"limit":7,"minimum":3,"description":"Đưa 1 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","wolf","goat","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0,0]},"limit":11,"minimum":7,"description":"Đưa 3 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","goat","cabbage","cabbage","cabbage"],"capacity":2,"start":{"person":0,"positions":[0,0,0,0,0]},"limit":9,"minimum":7,"description":"Đưa 1 sói, 1 dê và 3 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","goat","goat","goat","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0]},"limit":5,"minimum":3,"description":"Đưa 2 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","goat","goat","goat","cabbage","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0]},"limit":5,"minimum":3,"description":"Đưa 1 sói, 3 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","wolf","goat","goat","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0]},"limit":7,"minimum":5,"description":"Đưa 3 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","goat","goat","cabbage","cabbage","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0]},"limit":7,"minimum":5,"description":"Đưa 1 sói, 2 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","wolf","goat","goat","cabbage","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0,0]},"limit":9,"minimum":7,"description":"Đưa 3 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","goat","goat","cabbage","cabbage","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0,0]},"limit":9,"minimum":7,"description":"Đưa 2 sói, 2 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","goat","goat","goat","cabbage","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0,0]},"limit":9,"minimum":7,"description":"Đưa 2 sói, 3 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","wolf","goat","goat","goat","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0,0]},"limit":9,"minimum":7,"description":"Đưa 3 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."},
- {"items":["wolf","wolf","wolf","goat","goat","goat","cabbage","cabbage","cabbage"],"capacity":3,"start":{"person":0,"positions":[0,0,0,0,0,0,0,0,0]},"limit":9,"minimum":7,"description":"Đưa 3 sói, 3 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."}
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 1,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": null,
+  "minimum": 7,
+  "description": "Đưa 1 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 1 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": null,
+  "minimum": 5,
+  "description": "Đưa 1 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": null,
+  "minimum": 5,
+  "description": "Đưa 2 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 7,
+  "minimum": 3,
+  "description": "Đưa 1 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 11,
+  "minimum": 7,
+  "description": "Đưa 2 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 11,
+  "minimum": 7,
+  "description": "Đưa 1 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 11,
+  "minimum": 7,
+  "description": "Đưa 2 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 11,
+  "minimum": 7,
+  "description": "Đưa 2 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 7,
+  "minimum": 3,
+  "description": "Đưa 1 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 11,
+  "minimum": 7,
+  "description": "Đưa 3 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 9,
+  "minimum": 7,
+  "description": "Đưa 1 sói, 1 dê và 3 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 5,
+  "minimum": 3,
+  "description": "Đưa 2 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 5,
+  "minimum": 3,
+  "description": "Đưa 1 sói, 3 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 7,
+  "minimum": 5,
+  "description": "Đưa 3 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 7,
+  "minimum": 5,
+  "description": "Đưa 1 sói, 2 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 9,
+  "minimum": 7,
+  "description": "Đưa 3 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 9,
+  "minimum": 7,
+  "description": "Đưa 2 sói, 2 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 9,
+  "minimum": 7,
+  "description": "Đưa 2 sói, 3 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 9,
+  "minimum": 7,
+  "description": "Đưa 3 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "limit": 9,
+  "minimum": 7,
+  "description": "Đưa 3 sói, 3 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 1,
+  "limit": 3,
+  "description": "Đưa 1 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 1 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 1 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 1 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 2 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 1 sói, 1 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 1 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 2 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 2 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 3,
+  "limit": 5,
+  "description": "Đưa 3 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 1 sói, 1 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 1 sói, 4 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 2 sói, 1 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 2 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 3 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 4 sói, 1 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 2 sói, 1 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 3 sói, 1 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 5,
+  "limit": 7,
+  "description": "Đưa 4 sói, 1 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 1 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 1 sói, 2 dê và 3 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 1 sói, 4 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 2,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 3 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 2 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 1 sói, 2 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 1 sói, 3 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 1 sói, 4 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 2 sói, 4 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 4 sói, 2 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 1 sói, 3 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 2 sói, 2 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 2 sói, 3 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 3 sói, 1 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 3 sói, 2 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 3 sói, 3 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 4 sói, 1 dê và 3 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 4 sói, 2 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 4 sói, 3 dê và 1 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 2 sói, 3 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "cabbage",
+   "cabbage",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 4 sói, 1 dê và 4 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ },
+ {
+  "items": [
+   "wolf",
+   "wolf",
+   "wolf",
+   "wolf",
+   "goat",
+   "goat",
+   "goat",
+   "cabbage",
+   "cabbage"
+  ],
+  "capacity": 3,
+  "start": {
+   "person": 0,
+   "positions": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "minimum": 7,
+  "limit": 9,
+  "description": "Đưa 4 sói, 3 dê và 2 bắp cải sang sông. Thuyền chở tối đa 3 nhân vật mỗi chuyến (không tính người chèo)."
+ }
 ];
 export const waterLevels=[
- {"caps":[5,3],"mode":"total","target":2,"minimum":3,"limit":null,"description":"Dùng các can 5, 3 lít để có tổng cộng đúng 2 lít."},
- {"caps":[5,3],"mode":"total","target":7,"minimum":5,"limit":null,"description":"Dùng các can 5, 3 lít để có tổng cộng đúng 7 lít."},
- {"caps":[4,3],"mode":"single","target":2,"minimum":4,"limit":null,"description":"Dùng các can 4, 3 lít để có đúng 2 lít trong một can."},
- {"caps":[4,3],"mode":"total","target":5,"minimum":5,"limit":null,"description":"Dùng các can 4, 3 lít để có tổng cộng đúng 5 lít."},
- {"caps":[3,2],"mode":"total","target":1,"minimum":3,"limit":null,"description":"Dùng các can 3, 2 lít để có tổng cộng đúng 1 lít."},
- {"caps":[3,2],"mode":"total","target":4,"minimum":3,"limit":null,"description":"Dùng các can 3, 2 lít để có tổng cộng đúng 4 lít."},
- {"caps":[5,2],"mode":"single","target":1,"minimum":4,"limit":8,"description":"Dùng các can 5, 2 lít để có đúng 1 lít trong một can."},
- {"caps":[5,2],"mode":"total","target":6,"minimum":5,"limit":9,"description":"Dùng các can 5, 2 lít để có tổng cộng đúng 6 lít."},
- {"caps":[8,3],"mode":"total","target":9,"minimum":5,"limit":9,"description":"Dùng các can 8, 3 lít để có tổng cộng đúng 9 lít."},
- {"caps":[8,3],"mode":"single","target":4,"minimum":10,"limit":14,"description":"Dùng các can 8, 3 lít để có đúng 4 lít trong một can."},
- {"caps":[8,5],"mode":"total","target":6,"minimum":7,"limit":11,"description":"Dùng các can 8, 5 lít để có tổng cộng đúng 6 lít."},
- {"caps":[8,5],"mode":"total","target":9,"minimum":11,"limit":15,"description":"Dùng các can 8, 5 lít để có tổng cộng đúng 9 lít."},
- {"caps":[10,3],"mode":"single","target":1,"minimum":6,"limit":10,"description":"Dùng các can 10, 3 lít để có đúng 1 lít trong một can."},
- {"caps":[10,3],"mode":"single","target":5,"minimum":12,"limit":16,"description":"Dùng các can 10, 3 lít để có đúng 5 lít trong một can."},
- {"caps":[10,4],"mode":"single","target":2,"minimum":4,"limit":8,"description":"Dùng các can 10, 4 lít để có đúng 2 lít trong một can."},
- {"caps":[10,4],"mode":"total","target":12,"minimum":5,"limit":9,"description":"Dùng các can 10, 4 lít để có tổng cộng đúng 12 lít."},
- {"caps":[5,4],"mode":"total","target":3,"minimum":5,"limit":9,"description":"Dùng các can 5, 4 lít để có tổng cộng đúng 3 lít."},
- {"caps":[5,4],"mode":"total","target":7,"minimum":7,"limit":11,"description":"Dùng các can 5, 4 lít để có tổng cộng đúng 7 lít."},
- {"caps":[8,4,3],"mode":"single","target":2,"minimum":4,"limit":8,"description":"Dùng các can 8, 4, 3 lít để có đúng 2 lít trong một can."},
- {"caps":[8,4,3],"mode":"total","target":13,"minimum":6,"limit":10,"description":"Dùng các can 8, 4, 3 lít để có tổng cộng đúng 13 lít."},
- {"caps":[5,3,2],"mode":"total","target":6,"minimum":3,"limit":5,"description":"Dùng các can 5, 3, 2 lít để có tổng cộng đúng 6 lít."},
- {"caps":[5,3,2],"mode":"total","target":9,"minimum":4,"limit":6,"description":"Dùng các can 5, 3, 2 lít để có tổng cộng đúng 9 lít."},
- {"caps":[8,5,3],"mode":"total","target":14,"minimum":4,"limit":6,"description":"Dùng các can 8, 5, 3 lít để có tổng cộng đúng 14 lít."},
- {"caps":[8,5,3],"mode":"total","target":12,"minimum":7,"limit":9,"description":"Dùng các can 8, 5, 3 lít để có tổng cộng đúng 12 lít."},
- {"caps":[10,5,3],"mode":"single","target":6,"minimum":4,"limit":6,"description":"Dùng các can 10, 5, 3 lít để có đúng 6 lít trong một can."},
- {"caps":[10,5,3],"mode":"total","target":17,"minimum":6,"limit":8,"description":"Dùng các can 10, 5, 3 lít để có tổng cộng đúng 17 lít."},
- {"caps":[8,3,2],"mode":"total","target":13,"minimum":3,"limit":5,"description":"Dùng các can 8, 3, 2 lít để có tổng cộng đúng 13 lít."},
- {"caps":[8,3,2],"mode":"total","target":12,"minimum":4,"limit":6,"description":"Dùng các can 8, 3, 2 lít để có tổng cộng đúng 12 lít."},
- {"caps":[10,8,3],"mode":"single","target":4,"minimum":4,"limit":6,"description":"Dùng các can 10, 8, 3 lít để có đúng 4 lít trong một can."},
- {"caps":[10,8,3],"mode":"total","target":17,"minimum":5,"limit":7,"description":"Dùng các can 10, 8, 3 lít để có tổng cộng đúng 17 lít."},
- {"caps":[10,4,3],"mode":"total","target":9,"minimum":4,"limit":6,"description":"Dùng các can 10, 4, 3 lít để có tổng cộng đúng 9 lít."},
- {"caps":[10,4,3],"mode":"total","target":15,"minimum":6,"limit":8,"description":"Dùng các can 10, 4, 3 lít để có tổng cộng đúng 15 lít."},
- {"caps":[8,5,2],"mode":"total","target":15,"minimum":3,"limit":5,"description":"Dùng các can 8, 5, 2 lít để có tổng cộng đúng 15 lít."},
- {"caps":[8,5,2],"mode":"total","target":14,"minimum":6,"limit":8,"description":"Dùng các can 8, 5, 2 lít để có tổng cộng đúng 14 lít."},
- {"caps":[10,5,4],"mode":"single","target":9,"minimum":4,"limit":6,"description":"Dùng các can 10, 5, 4 lít để có đúng 9 lít trong một can."},
- {"caps":[10,5,4],"mode":"total","target":17,"minimum":6,"limit":8,"description":"Dùng các can 10, 5, 4 lít để có tổng cộng đúng 17 lít."},
- {"caps":[8,4,3,2],"mode":"total","target":14,"minimum":3,"limit":5,"description":"Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 14 lít."},
- {"caps":[8,4,3,2],"mode":"total","target":16,"minimum":5,"limit":7,"description":"Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 16 lít."},
- {"caps":[10,8,5,3],"mode":"single","target":6,"minimum":4,"limit":6,"description":"Dùng các can 10, 8, 5, 3 lít để có đúng 6 lít trong một can."},
- {"caps":[10,8,5,3],"mode":"total","target":22,"minimum":6,"limit":8,"description":"Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 22 lít."},
- {"caps":[10,5,3,2],"mode":"single","target":4,"minimum":4,"limit":6,"description":"Dùng các can 10, 5, 3, 2 lít để có đúng 4 lít trong một can."},
- {"caps":[10,5,3,2],"mode":"total","target":19,"minimum":5,"limit":7,"description":"Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 19 lít."},
- {"caps":[8,5,4,3],"mode":"total","target":16,"minimum":3,"limit":5,"description":"Dùng các can 8, 5, 4, 3 lít để có tổng cộng đúng 16 lít."},
- {"caps":[8,5,4,3],"mode":"total","target":19,"minimum":5,"limit":7,"description":"Dùng các can 8, 5, 4, 3 lít để có tổng cộng đúng 19 lít."},
- {"caps":[10,8,4,3],"mode":"total","target":17,"minimum":3,"limit":5,"description":"Dùng các can 10, 8, 4, 3 lít để có tổng cộng đúng 17 lít."},
- {"caps":[10,8,4,3],"mode":"total","target":24,"minimum":5,"limit":7,"description":"Dùng các can 10, 8, 4, 3 lít để có tổng cộng đúng 24 lít."},
- {"caps":[10,5,4,3],"mode":"total","target":18,"minimum":3,"limit":5,"description":"Dùng các can 10, 5, 4, 3 lít để có tổng cộng đúng 18 lít."},
- {"caps":[10,5,4,3],"mode":"total","target":21,"minimum":5,"limit":7,"description":"Dùng các can 10, 5, 4, 3 lít để có tổng cộng đúng 21 lít."},
- {"caps":[8,5,3,2],"mode":"total","target":16,"minimum":3,"limit":5,"description":"Dùng các can 8, 5, 3, 2 lít để có tổng cộng đúng 16 lít."},
- {"caps":[8,5,3,2],"mode":"total","target":17,"minimum":5,"limit":7,"description":"Dùng các can 8, 5, 3, 2 lít để có tổng cộng đúng 17 lít."}
+ {
+  "caps": [
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 2,
+  "minimum": 3,
+  "limit": null,
+  "description": "Dùng các can 5, 3 lít để có tổng cộng đúng 2 lít."
+ },
+ {
+  "caps": [
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 7,
+  "minimum": 5,
+  "limit": null,
+  "description": "Dùng các can 5, 3 lít để có tổng cộng đúng 7 lít."
+ },
+ {
+  "caps": [
+   4,
+   3
+  ],
+  "mode": "single",
+  "target": 2,
+  "minimum": 4,
+  "limit": null,
+  "description": "Dùng các can 4, 3 lít để có đúng 2 lít trong một can."
+ },
+ {
+  "caps": [
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 5,
+  "minimum": 5,
+  "limit": null,
+  "description": "Dùng các can 4, 3 lít để có tổng cộng đúng 5 lít."
+ },
+ {
+  "caps": [
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 3,
+  "limit": null,
+  "description": "Dùng các can 3, 2 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 4,
+  "minimum": 3,
+  "limit": null,
+  "description": "Dùng các can 3, 2 lít để có tổng cộng đúng 4 lít."
+ },
+ {
+  "caps": [
+   5,
+   2
+  ],
+  "mode": "single",
+  "target": 1,
+  "minimum": 4,
+  "limit": 8,
+  "description": "Dùng các can 5, 2 lít để có đúng 1 lít trong một can."
+ },
+ {
+  "caps": [
+   5,
+   2
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 5,
+  "limit": 9,
+  "description": "Dùng các can 5, 2 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 5,
+  "limit": 9,
+  "description": "Dùng các can 8, 3 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "single",
+  "target": 4,
+  "minimum": 10,
+  "limit": 14,
+  "description": "Dùng các can 8, 3 lít để có đúng 4 lít trong một can."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 7,
+  "limit": 11,
+  "description": "Dùng các can 8, 5 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 11,
+  "limit": 15,
+  "description": "Dùng các can 8, 5 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "single",
+  "target": 1,
+  "minimum": 6,
+  "limit": 10,
+  "description": "Dùng các can 10, 3 lít để có đúng 1 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "single",
+  "target": 5,
+  "minimum": 12,
+  "limit": 16,
+  "description": "Dùng các can 10, 3 lít để có đúng 5 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   4
+  ],
+  "mode": "single",
+  "target": 2,
+  "minimum": 4,
+  "limit": 8,
+  "description": "Dùng các can 10, 4 lít để có đúng 2 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   4
+  ],
+  "mode": "total",
+  "target": 12,
+  "minimum": 5,
+  "limit": 9,
+  "description": "Dùng các can 10, 4 lít để có tổng cộng đúng 12 lít."
+ },
+ {
+  "caps": [
+   5,
+   4
+  ],
+  "mode": "total",
+  "target": 3,
+  "minimum": 5,
+  "limit": 9,
+  "description": "Dùng các can 5, 4 lít để có tổng cộng đúng 3 lít."
+ },
+ {
+  "caps": [
+   5,
+   4
+  ],
+  "mode": "total",
+  "target": 7,
+  "minimum": 7,
+  "limit": 11,
+  "description": "Dùng các can 5, 4 lít để có tổng cộng đúng 7 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3
+  ],
+  "mode": "single",
+  "target": 2,
+  "minimum": 4,
+  "limit": 8,
+  "description": "Dùng các can 8, 4, 3 lít để có đúng 2 lít trong một can."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 13,
+  "minimum": 6,
+  "limit": 10,
+  "description": "Dùng các can 8, 4, 3 lít để có tổng cộng đúng 13 lít."
+ },
+ {
+  "caps": [
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 5, 3, 2 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 5, 3, 2 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 14,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 14 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 12,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 12 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 6,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3 lít để có đúng 6 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 10, 5, 3 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   8,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 13,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 3, 2 lít để có tổng cộng đúng 13 lít."
+ },
+ {
+  "caps": [
+   8,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 12,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 3, 2 lít để có tổng cộng đúng 12 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   3
+  ],
+  "mode": "single",
+  "target": 4,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 3 lít để có đúng 4 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   3
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 3 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 15,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 15 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   2
+  ],
+  "mode": "total",
+  "target": 15,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5, 2 lít để có tổng cộng đúng 15 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   2
+  ],
+  "mode": "total",
+  "target": 14,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 8, 5, 2 lít để có tổng cộng đúng 14 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   4
+  ],
+  "mode": "single",
+  "target": 9,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 4 lít để có đúng 9 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   4
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 10, 5, 4 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 14,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 14 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 16,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 16 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 6,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có đúng 6 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 22,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 22 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "single",
+  "target": 4,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có đúng 4 lít trong một can."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 19,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 19 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 16,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5, 4, 3 lít để có tổng cộng đúng 16 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 19,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5, 4, 3 lít để có tổng cộng đúng 19 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 8, 4, 3 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 24,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 4, 3 lít để có tổng cộng đúng 24 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 18,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 5, 4, 3 lít để có tổng cộng đúng 18 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 21,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 5, 4, 3 lít để có tổng cộng đúng 21 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 16,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5, 3, 2 lít để có tổng cộng đúng 16 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5, 3, 2 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 5, 3 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "total",
+  "target": 5,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 3 lít để có tổng cộng đúng 5 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 3 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "total",
+  "target": 7,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 3 lít để có tổng cộng đúng 7 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 3 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "total",
+  "target": 3,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5 lít để có tổng cộng đúng 3 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "total",
+  "target": 10,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5 lít để có tổng cộng đúng 10 lít."
+ },
+ {
+  "caps": [
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 5, 4, 3 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 2,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 5, 4, 3 lít để có tổng cộng đúng 2 lít."
+ },
+ {
+  "caps": [
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 12,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 5, 4, 3 lít để có tổng cộng đúng 12 lít."
+ },
+ {
+  "caps": [
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 5, 4, 3 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 16,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 16 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 10,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 10 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 2,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 2 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 8,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 8 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 15,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 15 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 13,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 13 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 18,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 18 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 4,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 4 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 2,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 2 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 7,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 7 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 23,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 23 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 21,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 21 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 16,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 16 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 6,
+  "minimum": 3,
+  "limit": 5,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 6 lít."
+ },
+ {
+  "caps": [
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 1,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 5, 3 lít để có một can chứa đúng 1 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "single",
+  "target": 2,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 3 lít để có một can chứa đúng 2 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "single",
+  "target": 6,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 3 lít để có một can chứa đúng 6 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "single",
+  "target": 4,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 3 lít để có một can chứa đúng 4 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "single",
+  "target": 6,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 3 lít để có một can chứa đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "single",
+  "target": 2,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 5 lít để có một can chứa đúng 2 lít."
+ },
+ {
+  "caps": [
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 10,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 5, 4, 3 lít để có tổng cộng đúng 10 lít."
+ },
+ {
+  "caps": [
+   5,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 11,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 5, 4, 3 lít để có tổng cộng đúng 11 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 6,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 5, 3 lít để có một can chứa đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 1,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 5, 3 lít để có một can chứa đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "single",
+  "target": 2,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 4, 3 lít để có một can chứa đúng 2 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "single",
+  "target": 9,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 4, 3 lít để có một can chứa đúng 9 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 11,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 11 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 16,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 16 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "single",
+  "target": 8,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 4, 3 lít để có một can chứa đúng 8 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "single",
+  "target": 7,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có một can chứa đúng 7 lít."
+ },
+ {
+  "caps": [
+   8,
+   4,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 8, 4, 3, 2 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "single",
+  "target": 9,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có một can chứa đúng 9 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 11,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 11 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "single",
+  "target": 6,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có một can chứa đúng 6 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 20,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 20 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 16,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 16 lít."
+ },
+ {
+  "caps": [
+   10,
+   5,
+   3,
+   2
+  ],
+  "mode": "total",
+  "target": 14,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 5, 3, 2 lít để có tổng cộng đúng 14 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 20,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 20 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 12,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 12 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 4,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có một can chứa đúng 4 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 26,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 26 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 19,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 19 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 1,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có một can chứa đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 14,
+  "minimum": 4,
+  "limit": 6,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 14 lít."
+ },
+ {
+  "caps": [
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 5, 3 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "total",
+  "target": 2,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 3 lít để có tổng cộng đúng 2 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "total",
+  "target": 4,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 3 lít để có tổng cộng đúng 4 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 3 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "total",
+  "target": 11,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5 lít để có tổng cộng đúng 11 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "total",
+  "target": 2,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5 lít để có tổng cộng đúng 2 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 7,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5, 3 lít để có một can chứa đúng 7 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 7,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 7 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 2,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 2 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "single",
+  "target": 5,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 4, 3 lít để có một can chứa đúng 5 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 5,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 5 lít."
+ },
+ {
+  "caps": [
+   10,
+   4,
+   3
+  ],
+  "mode": "total",
+  "target": 12,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 4, 3 lít để có tổng cộng đúng 12 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 9,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có một can chứa đúng 9 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 25,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 25 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 17,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 17 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 4,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 4 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 24,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 24 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 9,
+  "minimum": 5,
+  "limit": 7,
+  "description": "Dùng các can 10, 8, 5, 3 lít để có tổng cộng đúng 9 lít."
+ },
+ {
+  "caps": [
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 4,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 5, 3 lít để có một can chứa đúng 4 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "single",
+  "target": 1,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 8, 3 lít để có một can chứa đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "single",
+  "target": 9,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 10, 3 lít để có một can chứa đúng 9 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "single",
+  "target": 6,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 8, 5 lít để có một can chứa đúng 6 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 15,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 15 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "single",
+  "target": 4,
+  "minimum": 6,
+  "limit": 8,
+  "description": "Dùng các can 8, 5, 3 lít để có một can chứa đúng 4 lít."
+ },
+ {
+  "caps": [
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 4,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 5, 3 lít để có tổng cộng đúng 4 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "total",
+  "target": 10,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 8, 3 lít để có tổng cộng đúng 10 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 8, 3 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "total",
+  "target": 1,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 10, 3 lít để có tổng cộng đúng 1 lít."
+ },
+ {
+  "caps": [
+   10,
+   3
+  ],
+  "mode": "total",
+  "target": 12,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 10, 3 lít để có tổng cộng đúng 12 lít."
+ },
+ {
+  "caps": [
+   8,
+   5
+  ],
+  "mode": "total",
+  "target": 7,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 8, 5 lít để có tổng cộng đúng 7 lít."
+ },
+ {
+  "caps": [
+   8,
+   5,
+   3
+  ],
+  "mode": "total",
+  "target": 4,
+  "minimum": 7,
+  "limit": 9,
+  "description": "Dùng các can 8, 5, 3 lít để có tổng cộng đúng 4 lít."
+ },
+ {
+  "caps": [
+   8,
+   3
+  ],
+  "mode": "single",
+  "target": 7,
+  "minimum": 8,
+  "limit": 10,
+  "description": "Dùng các can 8, 3 lít để có một can chứa đúng 7 lít."
+ }
 ];
