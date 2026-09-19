@@ -14,7 +14,7 @@ export function extractExam(source,options={}){
   const lists=[...text.matchAll(/\\begin\{enumerate\}(?:\[([^\]]*)\])?([\s\S]*?)\\end\{enumerate\}/g)];
   if(lists.length>1)throw Error('Mỗi câu thi chỉ hỗ trợ một danh sách phương án');
   const list=lists[0];const choices=list?list[2].split(/\\item\s*/).filter(x=>x.trim()).map(x=>convertLatex(x,options).body):[];
-  const kind=list?(list[1]?.includes('a)')||/Phần\s+II[.\s]/i.test(section)?'truefalse':'choice'):'short';
+  const kind=/tự\s*luận/i.test(section)?'proof':list?(list[1]?.includes('a)')||/Phần\s+II[.\s]/i.test(section)?'truefalse':'choice'):'short';
   if(list)text=text.replace(list[0],'');
   const explicit=[...solution.matchAll(/\\dapan\{([^{}]*)\}/g)];
   if(explicit.length>1)throw Error('Mỗi traloi chỉ được có một lệnh dapan');
@@ -32,7 +32,7 @@ export function extractExam(source,options={}){
     if(!/^[A-Z]$/i.test(answer)||idx<0||idx>=choices.length)throw Error(`Câu ${number+1}: dapan phải là chữ cái phương án hợp lệ`);
     key=String(idx);
    }else if(kind==='truefalse'){
-    key=answer.split(/[,;]+/).map(x=>x.trim().toLowerCase());
+    key=answer.split(/[,;]+|\s*--+\s*|\s*[–—]\s*/).map(x=>x.trim().toLowerCase());
     const bool={đ:true,đúng:true,d:true,true:true,s:false,sai:false,false:false};
     if(key.length!==choices.length||key.some(x=>!Object.hasOwn(bool,x)))throw Error(`Câu ${number+1}: dapan đúng/sai phải đủ ${choices.length} ý, ví dụ Đ,S,Đ,S`);
     key=key.map(x=>bool[x]);
