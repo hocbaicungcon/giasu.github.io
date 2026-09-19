@@ -32,7 +32,7 @@ $('.river-world').addEventListener('click',event=>{
  if(cargo.includes(i))cargo=cargo.filter(n=>n!==i);
  else if(cargo.length<level().capacity)cargo.push(i);
  else {message('Thuyền đã đủ chỗ. Bấm một hành khách trên thuyền để cho xuống.');return;}
- sound('splash');render();message('Đã chọn '+cargo.length+'/'+level().capacity+' chỗ. Bấm thuyền để qua sông.');
+ sound('move',{volume:.16});render();message('Đã chọn '+cargo.length+'/'+level().capacity+' chỗ. Bấm thuyền để qua sông.');
 });
 export function startRiver(){
  resultScene.clear();clearTimeout(timer);stopRow();stopSounds();state=structuredClone(level().start);steps=0;done=false;crossing=false;cargo=[];
@@ -44,7 +44,7 @@ for(const [id,delta] of [['river-prev',-1],['river-next',1]])$('#'+id).addEventL
 $('#river-cross').addEventListener('click',()=>{
  if(crossing||done)return;const result=riverMove(state,cargo,level());if(result.error)return;
  const duration=matchMedia('(prefers-reduced-motion: reduce)').matches?0:TRIP_MS;
- crossing=true;render();$('.river-world').dataset.side=String(result.state.person);stopRow();stopRow=duration?sound('row'):()=>{};message('Thuyền đang qua sông…');
+ crossing=true;render();$('.river-world').dataset.side=String(result.state.person);stopRow();stopRow=duration?sound('row',{volume:.22}):()=>{};message('Thuyền đang qua sông…');
  timer=setTimeout(()=>{
   stopRow();state=result.state;steps++;crossing=false;cargo=[];const exhausted=level().limit&&steps>=level().limit;
   done=Boolean(result.won||result.lost||exhausted);render();

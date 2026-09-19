@@ -1,7 +1,7 @@
 import {createGameResult} from './game-result.js';
 import {waterLevels,waterMove,waterWon} from './puzzle-levels.js';
 import {sound,stopSounds} from './puzzle-audio.js';
-const $=s=>document.querySelector(s),ACTION_MS=2200;let flowFrame,soundTimer,stopFlow=()=>{};
+const $=s=>document.querySelector(s),ACTION_MS=2200;let flowFrame,soundTimer,flowEndTimer,stopFlow=()=>{};
 $('.water-world').style.setProperty('--pour-duration',(ACTION_MS-450)+'ms');
 let state,steps,selected=null,done=false,busy=false,levelIndex=0,timer;
 try{levelIndex=Math.min(waterLevels.length-1,Math.max(0,parseInt(localStorage.getItem('water-level'),10)||0));}catch{}
@@ -53,10 +53,10 @@ function act(action,destination){
  const duration=matchMedia('(prefers-reduced-motion: reduce)').matches?0:ACTION_MS;
  stream(action==='fill'?$('#water-tap'):source,target,action,destination<selected);
  stopFlow();clearTimeout(soundTimer);
- if(duration)soundTimer=setTimeout(()=>{stopFlow=sound('water',{rate:action==='fill'?1:action==='empty'?.85:.92,volume:action==='fill'?.24:.19,loop:true});},250);
+ if(duration){soundTimer=setTimeout(()=>{if(!$('#game-water').hidden)stopFlow=sound('water',{volume:action==='fill'?.22:.18});},250);flowEndTimer=setTimeout(()=>{stopFlow();$('#water-stream').classList.remove('flowing');},ACTION_MS-200);}
  state=result.state;steps++;render();
  timer=setTimeout(()=>{
-  clearTimeout(soundTimer);stopFlow();cancelAnimationFrame(flowFrame);busy=false;source.classList.remove('is-filling','is-pouring');$('#water-stream').classList.remove('flowing');
+  clearTimeout(soundTimer);clearTimeout(flowEndTimer);stopFlow();cancelAnimationFrame(flowFrame);busy=false;source.classList.remove('is-filling','is-pouring');$('#water-stream').classList.remove('flowing');
   const won=waterWon(state,level()),lost=level().limit&&steps>=level().limit&&!won;done=Boolean(won||lost);
   message(won?'Chính xác! Hoàn thành sau '+steps+' lượt. Bấm → để chơi tiếp.':lost?'Hết lượt. Bấm ↻ để thử lại.':'Bấm vòi, chỗ xả hoặc can nhận để tiếp tục.',won?'won':lost?'lost':'');render();
   if(won||lost)resultScene.show({won,description:won?'Đong nước chính xác sau '+steps+' lượt. Bạn làm tốt lắm!':'Đã hết '+level().limit+' lượt. Thử một cách rót khác nhé!',hasNext:levelIndex<waterLevels.length-1});
@@ -69,7 +69,7 @@ $('.water-jugs').addEventListener('click',event=>{
 });
 $('#water-tap').addEventListener('click',()=>act('fill'));$('#water-drain').addEventListener('click',()=>act('empty'));
 function startWater(){
- resultScene.clear();clearTimeout(soundTimer);stopFlow();cancelAnimationFrame(flowFrame);clearTimeout(timer);stopSounds();state=level().caps.map(()=>0);steps=0;selected=null;done=false;busy=false;$('#water-stream').classList.remove('flowing');
+ resultScene.clear();clearTimeout(soundTimer);clearTimeout(flowEndTimer);stopFlow();cancelAnimationFrame(flowFrame);clearTimeout(timer);stopSounds();state=level().caps.map(()=>0);steps=0;selected=null;done=false;busy=false;$('#water-stream').classList.remove('flowing');
  $('.water-jugs').replaceChildren(...level().caps.map((cap,i)=>{
   const fragment=$('#jug-template-'+cap).content.cloneNode(true),button=fragment.querySelector('button');button.dataset.jug=i;button.style.setProperty('--jug-size',(105+cap*6)+'px');button.style.setProperty('--jug-mobile-size',(88+cap*5)+'px');return button;
  }));
@@ -79,3 +79,5 @@ function startWater(){
 }
 for(const [id,delta] of [['water-prev',-1],['water-next',1]])$('#'+id).addEventListener('click',()=>{levelIndex=Math.max(0,Math.min(waterLevels.length-1,levelIndex+delta));startWater();});
 document.querySelector('[data-restart="water"]').addEventListener('click',startWater);startWater();
+
+document.querySelectorAll('[data-game]').forEach(button=>button.addEventListener('click',()=>{clearTimeout(soundTimer);stopFlow();}));
