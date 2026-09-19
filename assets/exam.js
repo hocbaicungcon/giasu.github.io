@@ -44,11 +44,12 @@ function confetti(){
  const started=performance.now();function frame(now){ctx.clearRect(0,0,innerWidth,innerHeight);for(const p of pieces){p.x+=p.vx;p.vy+=.18;p.y+=p.vy;p.r+=.12;ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillStyle=p.c;ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);ctx.restore();}if(now-started<3600)requestAnimationFrame(frame);else canvas.remove();}requestAnimationFrame(frame);
 }
 function showResult(){
- clearInterval(clock);const result=gradeExam(exam.questions,state.answers);
+ clearInterval(clock);const result=gradeExam(exam.questions,state.answers,exam);
  $('exam-result').hidden=false;$('submit-exam').hidden=true;$('exam-timer').textContent=state.expired?'Đã hết giờ':'Đã nộp bài';if(!state.expired&&!state.confettiShown){state.confettiShown=true;save();confetti();}
  $('score').textContent=exam.mode==='self-review'?'Đã kết thúc buổi tự luyện. Đối chiếu bài làm với lời giải tham khảo bên dưới; không có điểm tự động.':result.complete?`Điểm: ${result.score.toFixed(2)}/10`:'Đề chưa đủ đáp án nên chưa tính tổng điểm. Xem phản hồi từng câu bên dưới.';
  const seconds=Math.max(0,Math.min(exam.duration*60,Math.floor((state.finished-state.started)/1000)));$('elapsed').textContent=`Thời gian làm bài: ${Math.floor(seconds/60)} phút ${seconds%60} giây.`;
  exam.questions.forEach((q,i)=>{const card=$(q.id);card.querySelectorAll('input,textarea').forEach(el=>el.disabled=true);const review=card.querySelector('.exam-review');review.hidden=false;review.replaceChildren();const status=document.createElement('strong');status.textContent=q.kind==='proof'?(q.solution?'Tự đối chiếu lời giải':'Chưa có lời giải tham khảo'):result.scores[i]===null?'Chưa có đáp án':result.scores[i]===1?'Chính xác':result.scores[i]===0?'Chưa đúng hoặc chưa trả lời':`Đúng ${Math.round(result.scores[i]*q.options.length)}/${q.options.length} ý`;review.append(status);
+ if(result.weighted&&result.points[i]!==null){const points=document.createElement('span');points.textContent=' · '+result.points[i].toLocaleString('vi-VN')+' điểm';review.append(points);}
  if(q.answer!==null){const answer=document.createElement('p');answer.textContent='Đáp án: '+(q.kind==='choice'?String.fromCharCode(65+Number(q.answer)):q.kind==='truefalse'?q.answer.map((a,j)=>`${String.fromCharCode(97+j)}) ${a?'Đúng':'Sai'}`).join('; '):q.answer.join(' hoặc '));review.append(answer);}
  if(q.solution){const solution=document.createElement('div');solution.innerHTML=q.solution;review.append(solution);}
  });
