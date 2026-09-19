@@ -16,7 +16,7 @@
 	\end{multicols}
 \begin{traloi}
 	\dapan{A}
-	Có tập xác định của hàm số là $ \mathbb{R}\setminus  \{1\}$ và $ y'=\frac{-5}{(x-1)^2} <0,\forall x\ne 1$. Do đó hàm số nghịch biến trên $ [-1;0] $ và $ \min\limits_{[-1;0]} y=y(0)= -3.$
+	Có tập xác định của hàm số là $ \mathbb{R}\setminus  \{1\}$ và $ y'=\frac{-4}{(x-1)^2} <0,\forall x\ne 1$. Do đó hàm số nghịch biến trên $ [-1;0] $ và $ \min\limits_{[-1;0]} y=y(0)= -3.$
 \end{traloi}
 \end{baitap}
 
@@ -350,7 +350,8 @@
 	\end{multicols}
 	\begin{traloi}
 		\dapan{B} Hàm số $y = f(x + 3) + 2x$ đạt giá trị nhỏ nhất tại điểm $x_0$ thuộc khoảng $(-\infty; -3)$. Dưới đây là các bước giải chi tiết:
-		\item Dựa vào bảng xét dấu đã cho và $f'(0) = 3$, $f'(2) = -2$, ta có bảng biến thiên như sau:
+		\begin{itemize}
+			\item Dựa vào bảng xét dấu đã cho và $f'(0) = 3$, $f'(2) = -2$, ta có bảng biến thiên như sau:
 		\begin{center}
 			\begin{tikzpicture}
 				\tkzTabInit[lgt=2, espcl=2.5]{$x$/1,$f''(x)$/1,$f'(x)+2$/1.5}
@@ -382,6 +383,7 @@
 			\end{tikzpicture}
 		\end{center}
 		Dựa vào bảng biến thiên ta thấy hàm số $g(x)$ đạt giá trị nhỏ nhất tại $x_0<-3$.
+		\end{itemize}
 	\end{traloi}
 \end{baitap}
 
@@ -418,7 +420,7 @@
 		4M \ge |b - a + 1| + |b + 3a + 9| + |-2b - 2a - 2|
 		\]
 		\[
-		\ge |b - a + 1 + b + 3a + 9 - 2b - 2c - 2| = 8
+		\ge |b - a + 1 + b + 3a + 9 - 2b - 2a - 2| = 8
 		\]
 		Suy ra, $ M \geqslant 2 $ hay giá trị nhỏ nhất của $M$ là $2$. Dấu bằng xảy ra khi
 		\[
@@ -647,9 +649,9 @@
 
 \begin{baitap}
 %	\textbf{Câu 5.} 
-	Một xưởng in có $8$ máy in, mỗi máy in được \num{3600} bản in trong một giờ. Chi phí để vận hành một máy in trong mỗi lần in là $50$ nghìn đồng. Chi phí cho $n$ máy in chạy trong một giờ là $60(6n + 10)$ nghìn đồng. Hỏi nếu in \num{50000} tờ quảng cáo thì phải sử dụng bao nhiêu máy in để được lãi nhiều nhất?
+	Một xưởng in có $8$ máy in, mỗi máy in được \num{3600} bản in trong một giờ. Chi phí để vận hành một máy in trong mỗi lần in là $50$ nghìn đồng. Chi phí cho $n$ máy in chạy trong một giờ là $10(6n + 10)$ nghìn đồng. Hỏi nếu in \num{50000} tờ quảng cáo thì phải sử dụng bao nhiêu máy in để được lãi nhiều nhất?
 	\begin{traloi}
-		\dapan{8}
+		\dapan{5}
 		\begin{itemize}
 			\item Chi phí vận hành (cố định) cho $n$ máy in: Chi phí cho mỗi máy là $50$ nghìn đồng, nên chi phí cho $n$ máy là:$$C_1 = 50n \text{ (nghìn đồng)}$$
 		\item Thời gian hoàn thành và chi phí chạy $n$ máy: Một máy in được $3600$ bản/giờ nên $n$ máy in được $3600n$ bản/giờ. Thời gian cần thiết để in xong \num{50000} tờ quảng cáo là:$$t = \dfrac{50000}{3600n} = \dfrac{125}{9n} \text{ (giờ)}$$Chi phí chạy $n$ máy trong thời gian $t$ giờ (với chi phí $10(6n + 10)$ nghìn đồng/giờ):$$C_2 = 10(6n + 10) \cdot \dfrac{125}{9n} = \dfrac{1250(6n + 10)}{9n} = \dfrac{2500}{3} + \dfrac{12500}{9n} \text{ (nghìn đồng)}$$
@@ -690,3 +692,4 @@
 		\dapan{$ -5$} Phương trình tiếp tuyến là $ y=-3x-2 $.
 	\end{traloi}
 \end{baitap}
+
