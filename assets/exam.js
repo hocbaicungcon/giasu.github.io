@@ -18,7 +18,7 @@ function render(){
   const content=document.createElement('div');content.innerHTML=q.question;card.append(content);
   const field=document.createElement('fieldset');const legend=document.createElement('legend');legend.textContent=q.kind==='choice'?'Chọn một đáp án':q.kind==='truefalse'?'Chọn đúng hoặc sai cho từng ý':'Nhập đáp án';field.append(legend);
   if(q.kind==='proof'){
-   legend.textContent='Bài tự luyện chứng minh';
+   legend.textContent='Bài tự luận';
    q.options.forEach(o=>{const text=document.createElement('div');text.innerHTML=o;field.append(text);});
    const label=document.createElement('label');label.textContent='Ghi chú hoặc hướng giải (có thể làm trên giấy)';
    const text=document.createElement('textarea');text.name=q.id;text.rows=6;text.value=state.answers[q.id]||'';label.append(text);field.append(label);
@@ -46,7 +46,7 @@ function confetti(){
 function showResult(){
  clearInterval(clock);const result=gradeExam(exam.questions,state.answers,exam);
  $('exam-result').hidden=false;$('submit-exam').hidden=true;$('exam-timer').textContent=state.expired?'Đã hết giờ':'Đã nộp bài';if(!state.expired&&!state.confettiShown){state.confettiShown=true;save();confetti();}
- $('score').textContent=exam.mode==='self-review'?'Đã kết thúc buổi tự luyện. Đối chiếu bài làm với lời giải tham khảo bên dưới; không có điểm tự động.':result.complete?`Điểm: ${result.score.toFixed(2)}/10`:'Đề chưa đủ đáp án nên chưa tính tổng điểm. Xem phản hồi từng câu bên dưới.';
+ $('score').textContent=exam.mode==='self-review'?'Đã kết thúc buổi tự luyện. Đối chiếu bài làm với lời giải tham khảo bên dưới; không có điểm tự động.':exam.questions.some(q=>q.kind==='proof')?'Đã nộp bài. Xem kết quả từng câu và đối chiếu lời giải phần tự luận bên dưới. Chưa tính tổng điểm vì phần tự luận cần được chấm riêng.':result.complete?`Điểm: ${result.score.toFixed(2)}/10`:'Đề chưa đủ đáp án nên chưa tính tổng điểm. Xem phản hồi từng câu bên dưới.';
  const seconds=Math.max(0,Math.min(exam.duration*60,Math.floor((state.finished-state.started)/1000)));$('elapsed').textContent=`Thời gian làm bài: ${Math.floor(seconds/60)} phút ${seconds%60} giây.`;
  exam.questions.forEach((q,i)=>{const card=$(q.id);card.querySelectorAll('input,textarea').forEach(el=>el.disabled=true);const review=card.querySelector('.exam-review');review.hidden=false;review.replaceChildren();const status=document.createElement('strong');status.textContent=q.kind==='proof'?(q.solution?'Tự đối chiếu lời giải':'Chưa có lời giải tham khảo'):result.scores[i]===null?'Chưa có đáp án':result.scores[i]===1?'Chính xác':result.scores[i]===0?'Chưa đúng hoặc chưa trả lời':`Đúng ${Math.round(result.scores[i]*q.options.length)}/${q.options.length} ý`;review.append(status);
  if(result.weighted&&result.points[i]!==null){const points=document.createElement('span');points.textContent=' · '+result.points[i].toLocaleString('vi-VN')+' điểm';review.append(points);}
