@@ -158,30 +158,6 @@
 	\end{multicols}
 	\begin{traloi}
 		\dapan{C}
-%		Giá trị lớn nhất của hàm số là $\frac{9}{4}$ (hoặc $2,25$). Dưới đây là các bước giải chi tiết:
-%		\begin{itemize}
-%			\item Tập xác định: Điều kiện xác định: $x + 2 \ge 0 \Leftrightarrow  x \ge -2$ nên tập xác định của hàm số là $\mathbb{D} = [-2; +\infty)$.
-%			\item Đạo hàm: $$y' = \dfrac{1}{2\sqrt{x + 2}} - 1 \quad (\forall x > -2)$$
-%			\item Tìm điểm tới hạn: Cho $y' = 0$, ta có:$$\dfrac{1}{2\sqrt{x + 2}} - 1 = 0 \iff 2\sqrt{x + 2} = 1 \iff \sqrt{x + 2} = \dfrac{1}{2}$$$$\iff x + 2 = \dfrac{1}{4} \iff x = -\dfrac{7}{4} \quad (\text{thỏa mãn } x \ge -2)$$
-%			\item Lập bảng biến thiên: 
-%			\begin{center}
-%				\begin{tikzpicture}
-%					\tkzTabInit[lgt=1.2, espcl=2.5]{
-%						$x$/1,
-%						$y'$/1,
-%						$y$/1.5
-%					}{
-%						$-2$,
-%						$-\frac{7}{4}$,
-%						$+\infty$
-%					}
-%					\tkzTabLine{,+,z,-,}
-%					\tkzTabVar{-/$2$, +/$\frac{9}{4}$, -/$-\infty$}
-%				\end{tikzpicture}
-%			\end{center}
-%			Từ bảng biến thiên ta thấy hàm số giá trị lớn nhất tại $x = -\frac{7}{4}$.
-%			\item Kết luận:$$\max y = \dfrac{9}{4} \quad \text{tại } x = -\dfrac{7}{4}$$
-%		\end{itemize}
 	\end{traloi}
 \end{baitap}
 
@@ -197,14 +173,7 @@
 		\end{enumerate}
 	\end{multicols}
 	\begin{traloi}
-		\dapan{D} Giá trị lớn nhất của hàm số là $M = 0$. Dưới đây là các bước giải chi tiết
-		\begin{itemize}
-			\item Tập xác định: Điều kiện xác định: $4 - x \ge 0 \iff x \le 4$ nên tập xác định của hàm số là $D = (-\infty; 4]$.
-			\item \textbf{Cách 1: Đánh giá trực tiếp.}
-			Với mọi $x \in (-\infty; 4]$, ta có:$$\sqrt{4 - x} \ge 0$$Nhân cả hai vế với $-2 < 0$, bất đẳng thức đổi chiều:$$-2\sqrt{4 - x} \le 0 \implies y \le 0$$Dấu "=" xảy ra khi $\sqrt{4 - x} = 0 \iff 4 - x = 0 \iff x = 4$.
-			\item \textbf{Cách 2: Dùng đạo hàm và chiều biến thiên.} Đạo hàm của hàm số với $x < 4$:$$y' = -2 \cdot \dfrac{-1}{2\sqrt{4 - x}} = \dfrac{1}{\sqrt{4 - x}}$$Vì $y' > 0$ với mọi $x \in (-\infty; 4)$, hàm số đồng biến (tăng dần) trên tập xác định. Do đó, giá trị lớn nhất đạt được tại $x = 4$.
-			\item Kết luận:$$M = \max y = 0 \quad \text{tại } x = 4$$
-		\end{itemize}
+		\dapan{D}
 	\end{traloi}
 \end{baitap}
 
@@ -220,78 +189,7 @@
 		\end{enumerate}
 	\end{multicols}
 	\begin{traloi}
-		\dapan{C} Giá trị lớn nhất của hàm số trên khoảng $(-\infty; +\infty)$ là $M = \sqrt{2}$. 
-%		Dưới đây là hai cách giải chi tiết:
-%		\begin{itemize}
-%			\item \textbf{Cách 1: Sử dụng đạo hàm và lập bảng biến thiên.}
-%			
-%			Tập xác định: $D = (-\infty; +\infty)$ vì $x^2 + 1 > 0$ với mọi $x \in \mathbb{R}$. 
-%			
-%			Đạo hàm: $$y' = \dfrac{(x + 1)'\sqrt{x^2 + 1} - (x + 1)\left(\sqrt{x^2 + 1}\right)'}{x^2 + 1}= \dfrac{1 - x}{(x^2 + 1)\sqrt{x^2 + 1}}$$
-%			Tìm điểm tới hạn:$$y' = 0 \iff 1 - x = 0 \iff x = 1$$
-%			Bảng biến thiên: 
-%			\begin{center}
-%				\begin{tikzpicture}
-%					\tkzTabInit[lgt=1.2, espcl=2.5]{
-%						$x$/1,
-%						$y'$/1,
-%						$y$/1.5
-%					}{
-%						$-\infty$,
-%						$1$,
-%						$+\infty$
-%					}
-%					\tkzTabLine{,+,z,-,}
-%					\tkzTabVar{-/$-1$, +/$\sqrt{2}$, -/$1$}
-%				\end{tikzpicture}
-%			\end{center}
-%			Căn cứ vào bảng biến thiên ta có giá trị lớn nhất của hàm số trên $(-\infty; +\infty)$ là $$M = y(1) = \sqrt{2}$$
-%			\item \textbf{Cách 2: Sử dụng bất đẳng thức Bunhiacopxki (giải nhanh).} Áp dụng bất đẳng thức Bunhiacopxki cho hai cặp số $(1; 1)$ và $(x; 1)$:$$(1 \cdot x + 1 \cdot 1)^2 \le (1^2 + 1^2)(x^2 + 1^2)$$$$\iff (x + 1)^2 \le 2(x^2 + 1)$$Chia cả hai vế cho $x^2 + 1 > 0$ rồi lấy căn bậc hai hai vế:$$\dfrac{(x + 1)^2}{x^2 + 1} \le 2 \implies \dfrac{x + 1}{\sqrt{x^2 + 1}} \le \sqrt{2}$$Dấu "=" xảy ra khi $\dfrac{x}{1} = \dfrac{1}{1} \iff x = 1$.Vậy $M = \max y = \sqrt{2}$ tại $x = 1$.
-%		\end{itemize}
-	\end{traloi}
-\end{baitap}
-
-\begin{baitap}
-	%	\textbf{Câu 9.} 
-	Giá trị lớn nhất của hàm số $y = 2x + \dfrac{1}{x}$ khi $x < 0$ là
-	\begin{multicols}{4}
-		\begin{enumerate}
-			\item $2\sqrt{2}$.
-			\item $-2\sqrt{2}$.
-			\item Không tồn tại.
-			\item $4$.
-		\end{enumerate}
-	\end{multicols}
-	\begin{traloi}
-		\dapan{B} Giá trị lớn nhất của hàm số $y = 2x + \frac{1}{x}$ khi $x < 0$ là $-2\sqrt{2}$. 
-%		Dưới đây là hai cách giải chi tiết:
-%		\begin{itemize}
-%			\item \textbf{Cách 1: Sử dụng bất đẳng thức Cô-si (AM-GM)}
-%			
-%			Vì $x < 0$, đặt $t = -x \implies t > 0$. Khi đó, hàm số trở thành:$$y = -2t - \dfrac{1}{t} = -\left(2t + \dfrac{1}{t}\right)$$Áp dụng bất đẳng thức Cô-si cho hai số dương $2t$ và $\dfrac{1}{t}$:$$2t + \dfrac{1}{t} \ge 2\sqrt{2t \cdot \dfrac{1}{t}} = 2\sqrt{2}$$Nhân cả hai vế với $-1 < 0$, bất đẳng thức đổi chiều:$$y = -\left(2t + \dfrac{1}{t}\right) \le -2\sqrt{2}$$
-%			Dấu "=" xảy ra khi: $2t = \frac{1}{t} \Leftrightarrow t=\frac{\sqrt{2}}{2} \quad (\text{do } t > 0)$. Suy ra $x = -t = -\frac{\sqrt{2}}{2}$.
-%			\item \textbf{Cách 2: Sử dụng đạo hàm và xét sự biến thiên}
-%			
-%			Tập xác định: $\mathbb{D} = (-\infty; 0)$. Đạo hàm: $$y' = 2 - \dfrac{1}{x^2} = \dfrac{2x^2 - 1}{x^2}$$
-%			Tìm điểm tới hạn trên $(-\infty; 0)$: $$y' = 0 \iff 2x^2 - 1 = 0 \iff x^2 = \dfrac{1}{2} \iff x = -\dfrac{\sqrt{2}}{2} \quad (\text{do } x < 0)$$
-%			Bảng biến thiên:
-%			\begin{center}
-%				\begin{tikzpicture}
-%					\tkzTabInit[lgt=1.2, espcl=2.5]{
-%						$x$/1,
-%						$y'$/1,
-%						$y$/1.5
-%					}{
-%						$-\infty$,
-%						$-\frac{\sqrt{2}}{2}$,
-%						$0$
-%					}
-%					\tkzTabLine{,+,z,-,}
-%					\tkzTabVar{-/$-\infty$, +/$-2\sqrt{2}$, -/$-\infty$}
-%				\end{tikzpicture}
-%			\end{center}
-%			Căn cứ bảng biến thiên ta có hàm số đạt giá trị lớn nhất tại $ x=-\frac{\sqrt{2}}{2} $ và $$\max\limits_{(-\infty; 0)} y = y\left(-\frac{\sqrt{2}}{2}\right) = -2\sqrt{2}.$$
-%		\end{itemize}
+		\dapan{C}
 	\end{traloi}
 \end{baitap}
 \begin{baitap}
@@ -306,27 +204,7 @@
 		\end{enumerate}
 	\end{multicols}
 	\begin{traloi}
-		\dapan{D} Giá trị lớn nhất của hàm số $f(x) = x(1 - x^2)$ trên khoảng $(0; 1)$ là $\frac{2\sqrt{3}}{9}$.
-%		Dưới đây là hai cách giải chi tiết:
-%		\begin{itemize}
-%			\item Hàm số xác định trên khoảng $(0; 1)$.
-%			\item Khai triển và tính đạo hàm: $$f(x) = x - x^3 \implies f'(x) = 1 - 3x^2$$
-%			\item Tìm điểm tới hạn trên khoảng $(0; 1)$:$$f'(x) = 0 \iff 1 - 3x^2 = 0 \Leftrightarrow  x =\dfrac{\sqrt{3}}{3} \quad (\text{do } x \in (0; 1))$$
-%			\item Bảng biến thiên:
-%			\begin{center}
-%				\begin{tikzpicture}
-%					\tkzTabInit[lgt=1.2, espcl=2.5]{$x$/1,$y'$/1,$y$/1.5}
-%					{
-%						$0$,
-%						$\frac{\sqrt{3}}{3}$,
-%						$1$
-%					}
-%					\tkzTabLine{,+,z,-,}
-%					\tkzTabVar{-/$0$, +/$\frac{2\sqrt{3}}{9}$, -/$0$}
-%				\end{tikzpicture}
-%			\end{center}
-%			\item Kết luận. Căn cứ bảng biến thiên, ta có giá trị lớn nhất:$$\max\limits_{(0; 1)} f(x) = f\left(\dfrac{\sqrt{3}}{3}\right) = \dfrac{2\sqrt{3}}{9}.$$			
-%		\end{itemize}
+		\dapan{D}
 	\end{traloi}
 \end{baitap}
 
@@ -402,39 +280,8 @@
 		\end{enumerate}
 	\end{multicols}
 	\begin{traloi}
-		\dapan{C} Giá trị của $a + 2b$ là $-4$. Dưới đây là các bước giải chi tiết:
-		
-		Vì $ M $ là giá trị lớn nhất nên hiển nhiên $$ M \ge |f(-1)| = |b - a + 1|,\quad M \ge |f(3)| = |b + 3a + 9| .$$
-		Chúng ta sẽ sử dụng bất đẳng thức $|A| + |B| \ge |A+B|$ nhưng $ f(-1)+f(3) $ chưa triệt tiêu hết ẩn để được một hằng số. Vậy ta cần tìm một điểm nữa. 
-		
-		Chúng ta sử dụng một tính chất của hàm bậc hai, nếu $ P(x)=x^2+ax+b$ và lấy hai điểm đối xứng quanh \(m\) là $
-		m-h$ và $ m+h, $ thì \[
-		\begin{aligned}
-			P(m-h)+P(m+h)-2P(m)
-			&=2h^2.
-		\end{aligned}
-		\]Các số hạng chứa \(a,b\) đều triệt tiêu.
-		Áp dụng vào bài này, ta lấy điểm $ x=\frac{-1+3}{2}=1 $, có
-		\[
-		M \ge |f(1)| = |b + a + 1| \Rightarrow 2M \ge |-2b - 2a - 2|.
-		\]
-		Bây giờ, sử dụng bất đẳng thức  $|A| + |B| +|C| \ge |A+B+C|$ ta được
-		\[
-		4M \ge |b - a + 1| + |b + 3a + 9| + |-2b - 2a - 2|
-		\]
-		\[
-		\ge |b - a + 1 + b + 3a + 9 - 2b - 2a - 2| = 8
-		\]
-		Suy ra, $ M \geqslant 2 $ hay giá trị nhỏ nhất của $M$ là $2$. Dấu bằng xảy ra khi
-		\[
-		\begin{cases}
-			|b - a + 1| = 2 \\
-			|b + 3a + 9| = 2  \\
-			|b + a + 1| = 2
-		\end{cases}
-		\] và $ b - a + 1, b + 3a + 9, -2b - 2a - 2 $ cùng dấu. Từ đó tìm được \(a = -2\) và \(b = -1\). Lúc đó, ta có hàm số \(g(x) = x^2 - 2x - 1\) có đỉnh là \(x = 1 \in [-1; 3]\). Giá trị lớn nhất của \(f(x)=\vert{}g(x)\vert{}\) trên đoạn này đúng bằng $ 2 $. 
+		\dapan{C}
 	\end{traloi}
-	%	Để giải bài toán này bằng phương pháp Đa thức Chebyshev (Chebyshev polynomials), chúng ta sử dụng kỹ thuật tịnh tiến biến số để đưa đoạn xét cụ thể \([-1; 3]\) về đoạn chuẩn \([-1; 1]\), nơi các đa thức Chebyshev được định nghĩa. Kết quả cuối cùng thu được vẫn là \(a + 2b = -4\). Dưới đây là lời giải chi tiết theo cách tiếp cận này: 1. Ý tưởng phương phápĐa thức Chebyshev bậc 2 trên đoạn chuẩn \([-1; 1]\) có dạng:\[T_{2}(t)=2t^{2}-1\]Đa thức này có hệ số cao nhất là \[2\] và có tính chất cực tiểu hóa giá trị lớn nhất tuyệt đối. Cụ thể, trong tất cả các đa thức bậc 2 có hệ số cao nhất bằng \[1\] trên đoạn \([-1; 1]\), đa thức \(\frac{1}{2}T_2(t) = t^2 - \frac{1}{2}\) có giá trị lớn nhất tuyệt đối nhỏ nhất, và giá trị đó bằng \[\frac{1}{2}\]. 2. Thực hiện biến đổi (Tịnh tiến đoạn)Bài toán yêu cầu xét trên đoạn \(x \in [-1; 3]\). Ta thực hiện đổi biến tuyến tính để đưa \[x\] về biến \(t \in [-1; 1]\). Đặt:\[x=\frac{3-(-1)}{2}t+\frac{3+(-1)}{2}=2t+1\]Khi \(x \in [-1; 3]\) thì \(t \in [-1; 1]\). Thay \(x = 2t + 1\) vào hàm số bên trong trị tuyệt đối:\[g(x)=x^{2}+ax+b\]\[g(2t+1)=(2t+1)^{2}+a(2t+1)+b\]\[g(2t+1)=4t^{2}+4t+1+2at+a+b\]\[g(2t+1)=4t^{2}+(4+2a)t+(1+a+b)\]3. Áp dụng Đa thức ChebyshevĐể giá trị lớn nhất của \(\vert{}g(2t+1)\vert{}\) trên \([-1; 1]\) đạt giá trị nhỏ nhất, biểu thức bậc 2 theo biến \[t\] phải đồng dạng với đa thức Chebyshev bậc 2 là \(T_2(t) = 2t^2 - 1\). Vì hệ số của \[t^{2}\] ở đây là \[4\], đa thức tối ưu phải có dạng:\[2\cdot T_{2}(t)=2(2t^{2}-1)=4t^{2}-2\]Đồng nhất hệ số của \(g(2t+1)\) với \(4t^2 - 2\), ta thu được hệ phương trình:\[\begin{cases}4+2a=0\quad (\text{hệ số của }t)\\ 1+a+b=-2\quad (\text{hệ số tự do})\end{cases}\]Giải hệ này: Từ phương trình đầu: \(2a = -4 \implies a = -2\)Thay \(a = -2\) vào phương trình sau: \(1 - 2 + b = -2 \implies b = -1\) 4. Tính giá trị biểu thứcKhi \[M\] nhỏ nhất, ta có \(a = -2\) và \(b = -1\).Giá trị của biểu thức cần tìm là:\[a+2b=-2+2(-1)=-4\]Phương pháp đa thức Chebyshev rất mạnh cho các bài toán cực trị dạng này. Bạn có muốn tôi:
 \end{baitap}
 \subsubsection*{Phần II. Thí sinh trả lời từ câu 1 đến câu 4, trong ý a), b), c), d) ở mỗi câu câu, thí sinh chọn ĐÚNG hoặc SAI.}
 \setcounter{bt}{0}\setlist[enumerate,1]{label=\quad\bfseries\alph*)}
@@ -638,15 +485,7 @@
 	%	\textbf{Câu 4.} 
 	Tìm $m$ để hàm số $y = \dfrac{x - m}{mx + 1}$ có giá trị nhỏ nhất trên $[0; 1]$ bằng $-2$.
 	\begin{traloi}
-		\dapan{2} Giá trị của $m$ thỏa mãn yêu cầu bài toán là $m = 2$. Dưới đây là các bước giải chi tiết:
-		\begin{itemize}
-			\item Điều kiện xác định: Để hàm số xác định và liên tục trên đoạn $[0; 1]$, mẫu số phải khác $0$ với mọi $x \in [0; 1]$:$$mx + 1 \neq 0 \quad \forall x \in [0; 1]$$
-			\item Đạo hàm: $$y' = \dfrac{1 \cdot 1 - (-m) \cdot m}{(mx + 1)^2} = \dfrac{m^2 + 1}{(mx + 1)^2}$$ Vì $m^2 + 1 > 0$ với mọi $m \in \mathbb{R}$ nên $y' > 0$ trên tập xác định.
-			\item Tìm $m$: Do $y' > 0$ với mọi $x \in [0; 1]$, hàm số luôn đồng biến (tăng dần) trên đoạn $[0; 1]$. 
-			
-			Do đó, giá trị nhỏ nhất của hàm số trên đoạn $[0; 1]$ đạt được tại $x = 0$:$$\min\limits_{[0; 1]} y = y(0) = \dfrac{0 - m}{m \cdot 0 + 1} = -m$$ Theo bài ra, giá trị nhỏ nhất bằng $-2$:$$-m = -2 \iff m = 2$$
-			\item Thử lại: Với $m = 2$, hàm số trở thành $y = \dfrac{x - 2}{2x + 1}$. Mẫu số $2x + 1 \neq 0 \iff x \neq -\dfrac{1}{2}$ (thỏa mãn xác định và liên tục trên $[0; 1]$).$\min\limits_{[0; 1]} y = y(0) = -2$ (thỏa mãn). Vậy $m = 2$.
-		\end{itemize}
+		\dapan{2}
 	\end{traloi}
 \end{baitap}
 
@@ -655,18 +494,6 @@
 	Một xưởng in có $8$ máy in, mỗi máy in được \num{3600} bản in trong một giờ. Chi phí để vận hành một máy in trong mỗi lần in là $50$ nghìn đồng. Chi phí cho $n$ máy in chạy trong một giờ là $10(6n + 10)$ nghìn đồng. Hỏi nếu in \num{50000} tờ quảng cáo thì phải sử dụng bao nhiêu máy in để được lãi nhiều nhất?
 	\begin{traloi}
 		\dapan{5}
-		\begin{itemize}
-			\item Chi phí vận hành (cố định) cho $n$ máy in: Chi phí cho mỗi máy là $50$ nghìn đồng, nên chi phí cho $n$ máy là:$$C_1 = 50n \text{ (nghìn đồng)}$$
-			\item Thời gian hoàn thành và chi phí chạy $n$ máy: Một máy in được $3600$ bản/giờ nên $n$ máy in được $3600n$ bản/giờ. Thời gian cần thiết để in xong \num{50000} tờ quảng cáo là:$$t = \dfrac{50000}{3600n} = \dfrac{125}{9n} \text{ (giờ)}$$Chi phí chạy $n$ máy trong thời gian $t$ giờ (với chi phí $10(6n + 10)$ nghìn đồng/giờ):$$C_2 = 10(6n + 10) \cdot \dfrac{125}{9n} = \dfrac{1250(6n + 10)}{9n} = \dfrac{2500}{3} + \dfrac{12500}{9n} \text{ (nghìn đồng)}$$
-			\item Lập hàm tổng chi phí $C(n)$:$$C(n) = C_1 + C_2 = 50n + \dfrac{2500}{3} + \dfrac{12500}{9n} \text{ (nghìn đồng)}$$
-			\item Tìm giá trị nhỏ nhất của $C(n)$ trên đoạn $[1; 8]$: Xét hàm số $f(x) = 50x + \dfrac{2500}{3} + \dfrac{12500}{9x}$ trên đoạn $[1; 8]$. Tính đạo hàm:$$f'(x) = 50 - \dfrac{12500}{9x^2}$$ Cho $f'(x) = 0$:$$50 = \dfrac{12500}{9x^2} \implies x = \sqrt{\dfrac{250}{9}} = \dfrac{5\sqrt{10}}{3} \approx 5{,}27$$Nhận xét: Trên khoảng $(1; 5{,}27)$, $f'(x) < 0$ nên hàm số nghịch biến (giảm). Trên khoảng $(5{,}27; 8)$, $f'(x) > 0$ nên hàm số đồng biến (tăng). Do $n$ phải là số nguyên nguyên dương trong đoạn $[1; 8]$, ta so sánh chi phí tại hai điểm nguyên gần $5{,}27$ nhất là $n = 5$ và $n = 6$:
-			
-			Với $n = 5$:$$C(5) = 50(5) + \dfrac{2500}{3} + \dfrac{12500}{9 \cdot 5} = 250 + \dfrac{2500}{3} + \dfrac{2500}{9} = \dfrac{12250}{9} \approx 1361{,}11 \text{ (nghìn đồng)}$$
-			
-			Với $n = 6$:$$C(6) = 50(6) + \dfrac{2500}{3} + \dfrac{12500}{9 \cdot 6} = 300 + \dfrac{2500}{3} + \dfrac{12500}{54} = \dfrac{36850}{27} \approx 1364{,}81 \text{ (nghìn đồng)}$$
-			So sánh $C(5) < C(6)$, vậy chi phí đạt giá trị nhỏ nhất khi $n = 5$.
-		\end{itemize}
-		Kết luận:Để thu được lãi nhiều nhất, xưởng in phải sử dụng $5$ máy in.
 	\end{traloi}
 \end{baitap}
 
@@ -674,18 +501,7 @@
 	%	\textbf{Câu 6.} 
 	Ông An muốn xây một cái bể chứa nước lớn dạng một khối hộp chữ nhật không nắp có thể tích bằng \SI{288}{\cubic\meter}. Đáy bể là hình chữ nhật có chiều dài gấp đôi chiều rộng, giá thuê nhân công để xây bể là \num{500000} đồng/\SI{}{\square\meter}. Nếu ông An biết xác định các kích thước của bể hợp lý thì chi phí thuê nhân công sẽ thấp nhất. Hỏi ông An trả chi phí thấp nhất để xây dựng bể đó là bao nhiêu? (Đơn vị: triệu đồng)
 	\begin{traloi}
-		\dapan{108}	Chi phí thấp nhất để ông An thuê nhân công xây bể là 108 triệu đồng. Dưới đây là các bước giải chi tiết:
-		
-		Gọi kích thước của bể: Chiều rộng đáy bể: $x \text{ (m)}$ với $x > 0$. Chiều dài đáy bể: $2x \text{ (m)}$. Chiều cao bể: $h \text{ (m)}$ với $h > 0$. 
-		
-		Biểu diễn chiều cao $h$ theo $x$: Thể tích bể là $V = 288\text{ m}^3$:$$V = 2x \cdot x \cdot h = 2x^2 h = 288 \implies h = \dfrac{144}{x^2}$$
-		
-		Lập biểu thức diện tích cần xây (bể không nắp):Diện tích các mặt cần xây gồm $1$ mặt đáy và $4$ mặt xung quanh:$$S = (2x \cdot x) + 2(2x \cdot h) + 2(x \cdot h) = 2x^2 + 6xh$$Thay $h = \dfrac{144}{x^2}$ vào biểu thức diện tích $S$:$$S(x) = 2x^2 + 6x \cdot \dfrac{144}{x^2} = 2x^2 + \dfrac{864}{x}$$
-		
-		Tìm giá trị nhỏ nhất của $S(x)$ với $x > 0$:
-		
-		Cách 1: Dùng đạo hàm$$S'(x) = 4x - \dfrac{864}{x^2}$$Cho $S'(x) = 0$:$$4x - \dfrac{864}{x^2} = 0 \iff 4x^3 = 864 \iff x^3 = 216 \iff x = 6\text{ (m)}$$Vì $S'(x) < 0$ khi $x \in (0; 6)$ và $S'(x) > 0$ khi $x \in (6; +\infty)$, nên diện tích $S(x)$ đạt giá trị nhỏ nhất tại $x = 6$:$$S_{\min} = S(6) = 2(6)^2 + \dfrac{864}{6} = 72 + 144 = 216\text{ m}^2$$
-		Cách 2: Dùng bất đẳng thức Cô-si (AM-GM)$$S(x) = 2x^2 + \dfrac{432}{x} + \dfrac{432}{x} \ge 3 \sqrt[3]{2x^2 \cdot \dfrac{432}{x} \cdot \dfrac{432}{x}} = 3 \sqrt[3]{373248} = 3 \cdot 72 = 216\text{ m}^2$$Tính chi phí nhân công thấp nhất:Giá thuê nhân công là $500.000$ đồng/$\text{m}^2 = 0{,}5$ triệu đồng/$\text{m}^2$.$$\text{Chi phí thấp nhất} = 216 \cdot 500.000 = 108.000.000\text{ đồng} = 108\text{ triệu đồng}.$$
+		\dapan{108}
 	\end{traloi}
 \end{baitap}
 
