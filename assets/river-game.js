@@ -19,11 +19,11 @@ function character(i,onBoat=false){
 function render(){
  for(const [side,id] of [[0,'left'],[1,'right']])$('#river-'+id).replaceChildren(...state.positions.map((s,i)=>s===side&&!cargo.includes(i)?character(i):null).filter(Boolean));
  $('#river-cargo').replaceChildren(...cargo.map(i=>character(i,true)));
- $('#river-cross').disabled=done||crossing;$('#river-cross').setAttribute('aria-label','Qua sông, đang chở '+cargo.length+'/'+level().capacity+' nhân vật');
+ $('#river-cross').disabled=done||crossing;$('#river-farmer-cross').disabled=done||crossing;$('#river-cross').setAttribute('aria-label','Qua sông, đang chở '+cargo.length+'/'+level().capacity+' nhân vật');
  $('#river-steps').textContent=steps+(level().limit?'/'+level().limit:'')+' lượt';
  $('.river-world').dataset.side=String(state.person);$('.river-world').classList.toggle('is-crossing',crossing);$('.river-world').classList.toggle('is-crowded',level().items.length>6);
  $('#river-prev').disabled=levelIndex===0;$('#river-next').disabled=levelIndex===riverLevels.length-1;
- $('#river-mission').setAttribute('aria-label','Màn '+(levelIndex+1)+' trên 20. '+$('#river-mission').textContent);
+ $('#river-mission').setAttribute('aria-label','Màn '+(levelIndex+1)+' trên '+riverLevels.length+'. '+$('#river-mission').textContent);
 }
 function message(text,result=''){const status=$('#river-status');status.textContent=text;status.dataset.result=result;}
 $('.river-world').addEventListener('click',event=>{
@@ -57,3 +57,5 @@ $('#river-cross').addEventListener('click',()=>{
   else message('Chọn hành khách hoặc bấm thuyền để đi một mình.');
  },duration);
 });
+
+$('#river-farmer-cross').addEventListener('click',()=>$('#river-cross').click());

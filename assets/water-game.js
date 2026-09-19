@@ -73,7 +73,7 @@ function startWater(){
  $('.water-jugs').replaceChildren(...level().caps.map((cap,i)=>{
   const fragment=$('#jug-template-'+cap).content.cloneNode(true),button=fragment.querySelector('button');button.dataset.jug=i;button.style.setProperty('--jug-size',(105+cap*6)+'px');button.style.setProperty('--jug-mobile-size',(88+cap*5)+'px');return button;
  }));
- $('#water-mission').textContent=level().description+(level().limit?' Hoàn thành trong '+level().limit+' lượt.':' Không giới hạn lượt.');$('#water-mission').setAttribute('aria-label','Màn '+(levelIndex+1)+' trên 50. '+$('#water-mission').textContent);
+ $('#water-mission').textContent=level().description+(level().limit?' Hoàn thành trong '+level().limit+' lượt.':' Không giới hạn lượt.');$('#water-mission').setAttribute('aria-label','Màn '+(levelIndex+1)+' trên '+waterLevels.length+'. '+$('#water-mission').textContent);
  message('Chọn một can để bắt đầu.');render();
  try{localStorage.setItem('water-level',String(levelIndex));}catch{}
 }
