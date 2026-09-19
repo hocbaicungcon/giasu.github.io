@@ -1,14 +1,77 @@
+import {createGameResult} from './game-result.js';
 import {waterLevels,waterMove,waterWon} from './puzzle-levels.js';
-const $=s=>document.querySelector(s),caps=[5,3];let state=[0,0],steps=0,selected=null,done=false,levelIndex=0;
-waterLevels.forEach((level,i)=>$('#water-level').add(new Option(level.name,i)));
-function render(){const level=waterLevels[levelIndex];$('#water-steps').textContent=steps+(level.limit?'/'+level.limit:'')+' lượt';$('#water-total').textContent=`Đang có ${state[0]+state[1]} lít`;$('#water-target').textContent=level.target+' lít'+(level.mode==='single'?' / 1 can':' tổng');
- document.querySelectorAll('[data-jug]').forEach(button=>{const i=Number(button.dataset.jug);button.setAttribute('aria-pressed',String(selected===i));button.setAttribute('aria-label',`Can ${caps[i]} lít, đang có ${state[i]} lít${selected===i?', đang chọn':''}`);button.disabled=done;const rect=button.querySelector('[data-water-fill]'),height=(i===0?89:69)*state[i]/caps[i];rect.setAttribute('height',height);rect.setAttribute('y',(i===0?107:87)-height);button.querySelector('[data-water-volume]').textContent=`${state[i]} / ${caps[i]} lít`;});
- $('#water-tap').disabled=done;$('#water-drain').disabled=done;$('#water-next').hidden=$('#water-status').dataset.result!=='won'||levelIndex===waterLevels.length-1;$('#water-selection').textContent=selected===null?'Bấm vào một can để bắt đầu.':`Đang chọn can ${caps[selected]} lít. Bấm vòi, cống hoặc can còn lại.`;
+import {sound,stopSounds} from './puzzle-audio.js';
+const $=s=>document.querySelector(s),ACTION_MS=2200;let flowFrame;
+$('.water-world').style.setProperty('--pour-duration',(ACTION_MS-450)+'ms');
+let state,steps,selected=null,done=false,busy=false,levelIndex=0,timer;
+try{levelIndex=Math.min(waterLevels.length-1,Math.max(0,parseInt(localStorage.getItem('water-level'),10)||0));}catch{}
+const level=()=>waterLevels[levelIndex];
+const resultScene=createGameResult($('.water-world'),{restart:startWater,next:()=>{if(levelIndex<waterLevels.length-1){levelIndex++;startWater();}}});
+function message(text,result=''){$('#water-status').textContent=text;$('#water-status').dataset.result=result;}
+function render(){
+ $('#water-steps').textContent=steps+(level().limit?'/'+level().limit:'')+' lượt';
+ document.querySelectorAll('[data-jug]').forEach(button=>{
+  const i=Number(button.dataset.jug),cap=level().caps[i];
+  button.setAttribute('aria-pressed',String(selected===i));button.setAttribute('aria-label','Can '+cap+' lít, đang có '+state[i]+' lít'+(selected===i?', đang chọn':''));button.disabled=done||busy;
+  const rect=button.querySelector('[data-water-fill]'),bottom=Number(rect.dataset.bottom),height=Number(rect.dataset.height)*state[i]/cap;
+  rect.setAttribute('height',height);rect.setAttribute('y',bottom-height);
+  button.querySelector('[data-water-volume]').textContent=state[i]+' lít';
+ });
+ $('#water-tap').disabled=done||busy;$('#water-drain').disabled=done||busy;
+ $('#water-prev').disabled=levelIndex===0;$('#water-next').disabled=levelIndex===waterLevels.length-1;
 }
-function act(action){if(done)return;if(selected===null){$('#water-status').textContent='Hãy bấm chọn một can trước nhé.';return;}const result=waterMove(state,action,selected);if(!result.changed){$('#water-status').textContent='Thao tác này không đổi lượng nước và không tính lượt.';return;}state=result.state;steps++;const level=waterLevels[levelIndex],won=waterWon(state,level),lost=level.limit&&steps>=level.limit&&!won;done=Boolean(won||lost);$('#water-status').dataset.result=won?'won':lost?'lost':'';$('#water-status').textContent=won?`Chính xác! Hoàn thành sau ${steps} lượt.${levelIndex<waterLevels.length-1?' Bấm mũi tên trong cảnh để sang màn tiếp.':''}`:lost?'Đã hết lượt. Bấm ↻ trong cảnh để thử lại.':`Can 5 lít: ${state[0]} lít · Can 3 lít: ${state[1]} lít.`;render();}
-document.querySelectorAll('[data-jug]').forEach(button=>button.addEventListener('click',()=>{if(done)return;const index=Number(button.dataset.jug);if(selected!==null&&selected!==index){act('pour');return;}selected=selected===index?null:index;render();}));
+function stream(source,target,action,toLeft){
+ const svg=$('#water-stream'),reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function anchor(button,receiving){
+  const art=button.querySelector('svg'),fill=button.querySelector('[data-water-fill]');
+  let x,y;
+  if(fill){const width=Number(fill.getAttribute('width'));x=receiving?18+width/2:toLeft?18:18+width;y=18;}
+  else if(button.id==='water-tap'){x=104;y=74;}else{x=70;y=75;}
+  const point=new DOMPoint(x,y).matrixTransform(art.getScreenCTM());return point;
+ }
+ function draw(){
+  const world=$('.water-world').getBoundingClientRect(),a=anchor(source,false),b=anchor(target,true);
+  const x1=a.x-world.x,y1=a.y-world.y,x2=b.x-world.x,y2=b.y-world.y;
+  svg.setAttribute('viewBox','0 0 '+world.width+' '+world.height);
+  const d=action==='fill'?'M'+x1+' '+y1+' Q'+x1+' '+y2+' '+x2+' '+y2:'M'+x1+' '+y1+' Q'+(x1+x2)/2+' '+(Math.min(y1,y2)-14)+' '+x2+' '+y2;
+  svg.querySelectorAll('path').forEach(path=>path.setAttribute('d',d));
+  svg.querySelector('.stream-landing').setAttribute('transform','translate('+x2+' '+y2+')');
+  if(!reduced)flowFrame=requestAnimationFrame(draw);
+ }
+ cancelAnimationFrame(flowFrame);draw();svg.classList.add('flowing');
+}
+
+function act(action,destination){
+ if(done||busy)return;if(selected===null){message('Bấm vào một can trước, rồi chọn vòi hoặc chỗ xả.');return;}
+ const result=waterMove(state,action,selected,level().caps,destination);if(!result.changed){message('Lượng nước không thay đổi; không tính lượt.');return;}
+ const source=$('[data-jug="'+selected+'"]'),target=action==='pour'?$('[data-jug="'+destination+'"]'):action==='empty'?$('#water-drain'):source;
+ const from=source.querySelector('svg').getBoundingClientRect(),to=target.querySelector('svg').getBoundingClientRect();
+ source.style.setProperty('--pour-x',action==='empty'?(to.x+to.width/2-from.x-from.width/2-20)+'px':'0px');
+ source.style.setProperty('--pour-y',action==='fill'?'0px':Math.min(-8,(action==='empty'?to.y+to.height*.45:to.y)-from.y-35)+'px');
+ busy=true;source.classList.add(action==='fill'?'is-filling':'is-pouring');source.style.setProperty('--tilt',action==='pour'&&destination<selected?'-22deg':'22deg');
+ message(action==='fill'?'Đang đổ đầy can '+level().caps[selected]+' lít…':action==='empty'?'Đang đổ hết nước…':'Đang rót từ can '+level().caps[selected]+' lít sang can '+level().caps[destination]+' lít…');
+ stream(action==='fill'?$('#water-tap'):source,target,action,destination<selected);sound('water');state=result.state;steps++;render();
+ timer=setTimeout(()=>{
+  cancelAnimationFrame(flowFrame);busy=false;source.classList.remove('is-filling','is-pouring');$('#water-stream').classList.remove('flowing');
+  const won=waterWon(state,level()),lost=level().limit&&steps>=level().limit&&!won;done=Boolean(won||lost);
+  message(won?'Chính xác! Hoàn thành sau '+steps+' lượt. Bấm → để chơi tiếp.':lost?'Hết lượt. Bấm ↻ để thử lại.':'Bấm vòi, chỗ xả hoặc can nhận để tiếp tục.',won?'won':lost?'lost':'');render();
+  if(won||lost)resultScene.show({won,description:won?'Đong nước chính xác sau '+steps+' lượt. Bạn làm tốt lắm!':'Đã hết '+level().limit+' lượt. Thử một cách rót khác nhé!',hasNext:levelIndex<waterLevels.length-1});
+ },matchMedia('(prefers-reduced-motion: reduce)').matches?0:ACTION_MS);
+}
+$('.water-jugs').addEventListener('click',event=>{
+ const button=event.target.closest('[data-jug]');if(!button||done||busy)return;const index=Number(button.dataset.jug);
+ if(selected!==null&&selected!==index){act('pour',index);return;}
+ selected=selected===index?null:index;render();message(selected===null?'Bấm can để chọn.':'Đã chọn can '+level().caps[selected]+' lít. Bấm vòi, chỗ xả hoặc can nhận; bấm lại can để bỏ chọn.');
+});
 $('#water-tap').addEventListener('click',()=>act('fill'));$('#water-drain').addEventListener('click',()=>act('empty'));
-function startWater(){state=[0,0];steps=0;selected=null;done=false;$('#water-mission').textContent=waterLevels[levelIndex].description;$('#water-status').dataset.result='';$('#water-status').textContent='Hai can đang rỗng. Mỗi lần đổ đầy, đổ hết hoặc rót sang tính một lượt.';render();}
-$('#water-level').addEventListener('change',event=>{levelIndex=Number(event.target.value);startWater();});
-$('#water-next').addEventListener('click',()=>{if(levelIndex<waterLevels.length-1){levelIndex++;$('#water-level').value=String(levelIndex);startWater();}});
+function startWater(){
+ resultScene.clear();cancelAnimationFrame(flowFrame);clearTimeout(timer);stopSounds();state=level().caps.map(()=>0);steps=0;selected=null;done=false;busy=false;$('#water-stream').classList.remove('flowing');
+ $('.water-jugs').replaceChildren(...level().caps.map((cap,i)=>{
+  const fragment=$('#jug-template-'+cap).content.cloneNode(true),button=fragment.querySelector('button');button.dataset.jug=i;button.style.setProperty('--jug-size',(105+cap*6)+'px');button.style.setProperty('--jug-mobile-size',(88+cap*5)+'px');return button;
+ }));
+ $('#water-mission').textContent=level().description+(level().limit?' Hoàn thành trong '+level().limit+' lượt.':' Không giới hạn lượt.');$('#water-mission').setAttribute('aria-label','Màn '+(levelIndex+1)+' trên 50. '+$('#water-mission').textContent);
+ message('Chọn một can để bắt đầu.');render();
+ try{localStorage.setItem('water-level',String(levelIndex));}catch{}
+}
+for(const [id,delta] of [['water-prev',-1],['water-next',1]])$('#'+id).addEventListener('click',()=>{levelIndex=Math.max(0,Math.min(waterLevels.length-1,levelIndex+delta));startWater();});
 document.querySelector('[data-restart="water"]').addEventListener('click',startWater);startWater();

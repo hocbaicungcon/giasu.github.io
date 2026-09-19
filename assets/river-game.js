@@ -1,24 +1,59 @@
-import {crossRiver} from './game-rules.js';
-import {riverLevels} from './puzzle-levels.js';
-const $=s=>document.querySelector(s),names={wolf:'Sói',goat:'Dê',cabbage:'Bắp cải'},artNames={wolf:'wolf',goat:'sheep',cabbage:'cabbage'};
-let river,steps,riverDone,passenger='',crossing=false,tripTimer,levelIndex=0;
-riverLevels.forEach((level,i)=>$('#river-level').add(new Option(level.name,i)));
-function renderRiver(){
- const level=riverLevels[levelIndex];
- for(const [side,id] of [[0,'left'],[1,'right']]){const bank=$('#river-'+id);bank.replaceChildren();for(const k of Object.keys(names))if(river[k]===side&&passenger!==k){const button=document.createElement('button');button.type='button';button.className='river-character';button.dataset.passenger=k;button.disabled=side!==river.person||riverDone||crossing;button.setAttribute('aria-label',`${names[k]}, ${side?'bờ bên kia':'bờ xuất phát'}${side===river.person?', bấm để lên thuyền':''}`);const svg=document.createElementNS('http://www.w3.org/2000/svg','svg'),use=document.createElementNS(svg.namespaceURI,'use');svg.setAttribute('aria-hidden','true');use.setAttribute('href','#river-art-'+artNames[k]);svg.append(use);const label=document.createElement('span');label.textContent=names[k];button.append(svg,label);bank.append(button);}}
- $('#river-cross').disabled=riverDone||crossing;$('#river-cross').setAttribute('aria-label',crossing?'Đang qua sông':`Qua sông ${passenger?'cùng '+names[passenger]:'một mình'}`);
- $('#river-steps').textContent=steps+(level.limit?'/'+level.limit:'')+' lượt';$('.river-world').dataset.side=String(river.person);$('.river-world').classList.toggle('is-crossing',crossing);
- $('#river-unload').hidden=!passenger;$('#river-unload').disabled=riverDone||crossing;$('.river-cargo use').setAttribute('href',passenger?'#river-art-'+artNames[passenger]:'#river-art-cabbage');
- $('#river-next').hidden=$('#river-status').dataset.result!=='won'||levelIndex===riverLevels.length-1;
+import {createGameResult} from './game-result.js';
+import {riverLevels,riverMove} from './puzzle-levels.js';
+import {sound,stopSounds} from './puzzle-audio.js';
+const $=s=>document.querySelector(s),names={wolf:'Sói',goat:'Dê',cabbage:'Bắp cải'},art={wolf:'wolf',goat:'sheep',cabbage:'cabbage'};
+const TRIP_MS=2600;
+$('.river-world').style.setProperty('--trip-duration',TRIP_MS+'ms');
+let state,steps,done,cargo=[],crossing=false,timer,levelIndex=0,stopRow=()=>{};
+$('.river-vessel').addEventListener('transitionend',event=>{if(event.target===$('.river-vessel')&&event.propertyName==='left')stopRow();});
+try{levelIndex=Math.min(riverLevels.length-1,Math.max(0,parseInt(localStorage.getItem('river-level'),10)||0));}catch{}
+const level=()=>riverLevels[levelIndex];
+const resultScene=createGameResult($('.river-world'),{restart:startRiver,next:()=>{if(levelIndex<riverLevels.length-1){levelIndex++;startRiver();}}});
+function character(i,onBoat=false){
+ const kind=level().items[i],button=document.createElement('button');
+ button.type='button';button.className=onBoat?'river-passenger':'river-character';button.dataset.passenger=i;
+ button.disabled=done||crossing||(!onBoat&&state.positions[i]!==state.person);
+ button.setAttribute('aria-label',names[kind]+' '+(i+1)+(onBoat?', bấm để xuống thuyền':', bấm để lên thuyền'));
+ button.innerHTML='<svg aria-hidden="true"><use href="#river-art-'+art[kind]+'"/></svg>';return button;
 }
-function selectPassenger(value){if(crossing||riverDone)return;passenger=value;renderRiver();const danger=crossRiver(river,passenger).lost;$('#river-status').textContent=riverLevels[levelIndex].hints&&danger?'Chú ý: nếu đi chuyến này, một cặp nguy hiểm sẽ bị bỏ lại. Hãy đổi hành khách.':passenger?`${names[passenger]} đã lên thuyền. Bấm thuyền để đi, hoặc bấm hành khách để xuống.`:'Thuyền chỉ chở bạn. Bấm thuyền để qua sông.';}
-$('.river-world').addEventListener('click',event=>{const button=event.target.closest('[data-passenger]');if(button&&!button.disabled)selectPassenger(button.dataset.passenger);});
-$('#river-unload').addEventListener('click',()=>selectPassenger(''));
-export function startRiver(){clearTimeout(tripTimer);const level=riverLevels[levelIndex];river={...level.start};steps=0;riverDone=false;crossing=false;passenger='';$('#river-mission').textContent=level.description;$('#river-status').textContent='Bấm vào nhân vật cùng bờ để chọn lên thuyền.';$('#river-status').dataset.result='';renderRiver();}
-$('#river-level').addEventListener('change',event=>{levelIndex=Number(event.target.value);startRiver();});
-$('#river-next').addEventListener('click',()=>{if(levelIndex<riverLevels.length-1){levelIndex++;$('#river-level').value=String(levelIndex);startRiver();}});
+function render(){
+ for(const [side,id] of [[0,'left'],[1,'right']])$('#river-'+id).replaceChildren(...state.positions.map((s,i)=>s===side&&!cargo.includes(i)?character(i):null).filter(Boolean));
+ $('#river-cargo').replaceChildren(...cargo.map(i=>character(i,true)));
+ $('#river-cross').disabled=done||crossing;$('#river-cross').setAttribute('aria-label','Qua sông, đang chở '+cargo.length+'/'+level().capacity+' nhân vật');
+ $('#river-steps').textContent=steps+(level().limit?'/'+level().limit:'')+' lượt';
+ $('.river-world').dataset.side=String(state.person);$('.river-world').classList.toggle('is-crossing',crossing);$('.river-world').classList.toggle('is-crowded',level().items.length>6);
+ $('#river-prev').disabled=levelIndex===0;$('#river-next').disabled=levelIndex===riverLevels.length-1;
+ $('#river-mission').setAttribute('aria-label','Màn '+(levelIndex+1)+' trên 20. '+$('#river-mission').textContent);
+}
+function message(text,result=''){const status=$('#river-status');status.textContent=text;status.dataset.result=result;}
+$('.river-world').addEventListener('click',event=>{
+ const button=event.target.closest('[data-passenger]');if(!button||button.disabled||done||crossing)return;
+ const i=Number(button.dataset.passenger);
+ if(cargo.includes(i))cargo=cargo.filter(n=>n!==i);
+ else if(cargo.length<level().capacity)cargo.push(i);
+ else {message('Thuyền đã đủ chỗ. Bấm một hành khách trên thuyền để cho xuống.');return;}
+ sound('splash');render();message('Đã chọn '+cargo.length+'/'+level().capacity+' chỗ. Bấm thuyền để qua sông.');
+});
+export function startRiver(){
+ resultScene.clear();clearTimeout(timer);stopRow();stopSounds();state=structuredClone(level().start);steps=0;done=false;crossing=false;cargo=[];
+ $('#river-mission').textContent=level().description+(level().limit?' Hoàn thành trong '+level().limit+' lượt.':' Không giới hạn lượt.');
+ message('Bấm nhân vật để lên thuyền, bấm thuyền để đi.');render();
+ try{localStorage.setItem('river-level',String(levelIndex));}catch{}
+}
+for(const [id,delta] of [['river-prev',-1],['river-next',1]])$('#'+id).addEventListener('click',()=>{levelIndex=Math.max(0,Math.min(riverLevels.length-1,levelIndex+delta));startRiver();});
 $('#river-cross').addEventListener('click',()=>{
- if(crossing||riverDone)return;const result=crossRiver(river,passenger);if(result.error)return;
- crossing=true;renderRiver();$('.river-world').dataset.side=String(result.state.person);$('#river-status').textContent='Thuyền đang qua sông…';
- tripTimer=setTimeout(()=>{river=result.state;steps++;crossing=false;passenger='';const exhausted=riverLevels[levelIndex].limit&&steps>=riverLevels[levelIndex].limit;riverDone=Boolean(result.won||result.lost||exhausted);$('#river-status').dataset.result=result.won?'won':riverDone?'lost':'';$('#river-status').textContent=result.won?`Hoàn thành màn ${levelIndex+1} sau ${steps} lượt!${levelIndex<riverLevels.length-1?' Bấm mũi tên trong cảnh để sang màn tiếp theo.':''}`:result.lost?'Một cặp nguy hiểm bị bỏ lại! Bấm ↻ trong cảnh để thử lại.':exhausted?'Hết lượt của màn này. Bấm ↻ trong cảnh để thử lại.':`Đã qua sông ${steps} lượt. Chọn hành khách hoặc bấm thuyền để đi một mình.`;renderRiver();},matchMedia('(prefers-reduced-motion: reduce)').matches?0:650);
+ if(crossing||done)return;const result=riverMove(state,cargo,level());if(result.error)return;
+ const duration=matchMedia('(prefers-reduced-motion: reduce)').matches?0:TRIP_MS;
+ crossing=true;render();$('.river-world').dataset.side=String(result.state.person);stopRow();stopRow=duration?sound('row'):()=>{};message('Thuyền đang qua sông…');
+ timer=setTimeout(()=>{
+  stopRow();state=result.state;steps++;crossing=false;cargo=[];const exhausted=level().limit&&steps>=level().limit;
+  done=Boolean(result.won||result.lost||exhausted);render();
+  if(result.lost){
+   message(names[level().items[result.danger.predator]]+' đã ăn '+names[level().items[result.danger.prey]].toLowerCase()+' khi không có người trông! Bấm ↻ để thử lại.','lost');
+   const predator=$('[data-passenger="'+result.danger.predator+'"]'),prey=$('[data-passenger="'+result.danger.prey+'"]');
+   const a=predator.getBoundingClientRect(),b=prey.getBoundingClientRect();predator.style.setProperty('--chase-x',(b.x-a.x)*.55+'px');predator.style.setProperty('--chase-y',(b.y-a.y)*.55+'px');predator.classList.add('is-munching');prey.classList.add('is-eaten');sound('munch');resultScene.show({won:false,description:$('#river-status').textContent.replace(' Bấm ↻ để thử lại.',' Hãy thử sắp xếp chuyến đi khác nhé!'),delay:1600});
+  }else if(result.won){message('Hoàn thành sau '+steps+' lượt! Bấm → để chơi thử thách tiếp theo.','won');resultScene.show({won:true,description:'Bạn đã đưa cả nhóm sang sông an toàn sau '+steps+' lượt.',hasNext:levelIndex<riverLevels.length-1});}
+  else if(exhausted){message('Hết lượt. Bấm ↻ để thử một cách khác.','lost');resultScene.show({won:false,description:'Bạn đã dùng hết '+level().limit+' lượt. Thử sắp xếp chuyến đi theo cách khác nhé!'});}
+  else message('Chọn hành khách hoặc bấm thuyền để đi một mình.');
+ },duration);
 });

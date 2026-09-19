@@ -19,21 +19,52 @@ test('both sorting directions use names and publication dates',()=>{
  const a={title:'Đề 2',date:'2026-01-01'},b={title:'Đề 10',date:'2026-02-01'};
  assert.ok(compareItems(a,b,'title')<0);assert.ok(compareItems(a,b,'title-desc')>0);assert.ok(compareItems(a,b,'new')>0);assert.ok(compareItems(a,b,'old')<0);
 });
-import {riverLevels,waterLevels,waterMove,waterWon} from '../assets/puzzle-levels.js';
-test('all water levels are reachable within their move limits',()=>{
- for(const level of waterLevels){const queue=[{state:[0,0],steps:0}],seen=new Set(['0,0']);let solved=false;
-  while(queue.length){const {state,steps}=queue.shift();if(waterWon(state,level)){solved=true;break;}if(level.limit&&steps>=level.limit)continue;
-   for(const action of ['fill','empty','pour'])for(const i of [0,1]){const result=waterMove(state,action,i);assert.ok(result.state.every((n,j)=>n>=0&&n<=[5,3][j]));const key=result.state.join(',');if(!seen.has(key)){seen.add(key);queue.push({state:result.state,steps:steps+1});}}
-  }assert.ok(solved,level.name);
+import {riverLevels,waterLevels,waterMove,waterWon,riverMove,riverCargoOptions} from '../assets/puzzle-levels.js';
+test('all 50 water puzzles are distinct and solvable within budget',()=>{
+ assert.equal(waterLevels.length,50);assert.equal(new Set(waterLevels.map(l=>JSON.stringify([l.caps,l.mode,l.target]))).size,50);
+ assert.deepEqual([...new Set(waterLevels.map(l=>l.caps.length))].sort(),[2,3,4]);
+ for(const level of waterLevels){
+  const zero=level.caps.map(()=>0),queue=[{state:zero,steps:0}],seen=new Set([zero.join(',')]);let minimum=null;
+  for(let head=0;head<queue.length;head++){
+   const {state,steps}=queue[head];if(waterWon(state,level)){minimum=steps;break;}
+   for(const action of ['fill','empty','pour'])for(let i=0;i<level.caps.length;i++)for(const j of action==='pour'?level.caps.map((_,k)=>k):[0]){
+    const result=waterMove(state,action,i,level.caps,j);assert.ok(result.state.every((n,k)=>n>=0&&n<=level.caps[k]));
+    if(action==='pour')assert.equal(result.state.reduce((a,b)=>a+b),state.reduce((a,b)=>a+b));
+    const key=result.state.join(',');if(!seen.has(key)){seen.add(key);queue.push({state:result.state,steps:steps+1});}
+   }
+  }
+  assert.equal(minimum,level.minimum,level.description);assert.ok(minimum>0);assert.ok(!level.limit||minimum<=level.limit);
  }
 });
-test('all river levels have a safe solution within budget',()=>{
- for(const level of riverLevels){const queue=[{state:level.start,steps:0}],seen=new Set();let solved=false;
-  while(queue.length){const {state,steps}=queue.shift();if(Object.values(state).every(n=>n===1)){solved=true;break;}if(level.limit&&steps>=level.limit)continue;
-   for(const passenger of ['', 'wolf','goat','cabbage']){const next=crossRiver(state,passenger);if(next.error||next.lost)continue;const key=JSON.stringify(next.state);if(!seen.has(key)){seen.add(key);queue.push({state:next.state,steps:steps+1});}}
-  }assert.ok(solved,level.name);
+test('all 20 river puzzles have safe solutions and valid capacities',()=>{
+ assert.equal(riverLevels.length,20);assert.equal(new Set(riverLevels.map(l=>JSON.stringify([l.items,l.capacity]))).size,20);
+ for(const level of riverLevels){
+  const queue=[{state:level.start,steps:0}],seen=new Set();let minimum=null;
+  for(let head=0;head<queue.length;head++){
+   const {state,steps}=queue[head];if(state.person===1&&state.positions.every(n=>n===1)){minimum=steps;break;}
+   for(const cargo of riverCargoOptions(state,level)){
+    const next=riverMove(state,cargo,level);if(next.error||next.lost)continue;
+    const key=JSON.stringify(next.state);if(!seen.has(key)){seen.add(key);queue.push({state:next.state,steps:steps+1});}
+   }
+  }
+  assert.equal(minimum,level.minimum,level.description);assert.ok(minimum>0);assert.ok(!level.limit||minimum<=level.limit);
  }
 });
-test('pouring conserves water and respects the receiving capacity',()=>{
- assert.deepEqual(waterMove([5,0],'pour',0).state,[2,3]);assert.deepEqual(waterMove([4,3],'pour',1).state,[5,2]);assert.equal(waterMove([5,3],'fill',0).changed,false);
+test('river rules reject overcapacity and identify both predators',()=>{
+ const level=riverLevels[0];assert.equal(riverMove(level.start,[0,1],level).error,true);
+ assert.equal(riverMove(level.start,[0,0],level).error,true);
+ assert.equal(riverMove(level.start,[99],level).error,true);
+ assert.deepEqual(riverMove(level.start,[2],level).danger,{predator:0,prey:1});
+ assert.deepEqual(riverMove(level.start,[0],level).danger,{predator:1,prey:2});
+ let state=level.start;for(const cargo of [[1],[],[0],[1],[2],[],[1]]){const r=riverMove(state,cargo,level);assert.ok(!r.lost);state=r.state;}assert.ok(state.positions.every(n=>n===1));
+});
+test('pouring supports arbitrary destinations and no-op actions',()=>{
+ assert.deepEqual(waterMove([5,0],'pour',0).state,[2,3]);
+ assert.deepEqual(waterMove([4,3],'pour',1).state,[5,2]);
+ assert.equal(waterMove([5,3],'fill',0).changed,false);
+ assert.deepEqual(waterMove([8,0,0],'pour',0,[8,5,3],2).state,[5,0,3]);
+ assert.equal(waterMove([8,0,0],'pour',0,[8,5,3],0).changed,false);
+ assert.equal(waterMove([8,0,0],'pour',0,[8,5,3],99).changed,false);
+ assert.equal(waterMove([8,0,0],'fill',99,[8,5,3]).changed,false);
+ assert.ok(waterWon([2,3,2],{mode:'total',target:7}));
 });
