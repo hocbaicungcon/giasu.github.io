@@ -485,12 +485,9 @@ html[data-theme="dark"] .subject-section .overline{color:#dcc2a4}
 #river-farmer-cross:focus-visible{outline:2px dashed #245f66;outline-offset:3px}
 @media(max-width:620px){#game-river #river-farmer-cross{height:79px;bottom:21px}}
 
-/* Soft, illustrated jugs retain clear volume labels and water levels. */
-.water-world .jug-glass{rx:18px;ry:18px;fill:#f4fcff;stroke:#479cb3;stroke-width:3.5;opacity:1}
-.water-world .jug-handle{stroke:#65afbe;stroke-width:7;stroke-linejoin:round}
-.water-world .water{fill:#58c9ce;opacity:.7;rx:15px;ry:15px}
-.jug-glint,.jug-base-shine{fill:none;stroke:#fff;stroke-width:4;stroke-linecap:round;opacity:.85;pointer-events:none}
-.jug-base-shine{stroke-width:2;opacity:.55}
-.jug-tick{fill:none;stroke:#398a9e;stroke-width:1.5;stroke-linecap:round;opacity:.5}
-.water-world .eye{fill:#316777}
-.water-world .smile{stroke:#316777}
+/* Original SVG shapes and colours, with only lightly rounded corners. */
+.water-world .jug-glass{rx:8px;ry:8px;fill:#fff;stroke:#45aaf2;stroke-width:4;opacity:.95}
+.water-world .jug-handle{stroke:#45aaf2;stroke-width:6;stroke-linecap:round}
+.water-world .water{fill:#2bcbba;opacity:.75;rx:5px;ry:5px}
+.water-world .eye{fill:#2d98da}
+.water-world .smile{stroke:#2d98da}
