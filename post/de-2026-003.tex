@@ -657,10 +657,10 @@
 		\item Thời gian hoàn thành và chi phí chạy $n$ máy: Một máy in được $3600$ bản/giờ nên $n$ máy in được $3600n$ bản/giờ. Thời gian cần thiết để in xong \num{50000} tờ quảng cáo là:$$t = \dfrac{50000}{3600n} = \dfrac{125}{9n} \text{ (giờ)}$$Chi phí chạy $n$ máy trong thời gian $t$ giờ (với chi phí $10(6n + 10)$ nghìn đồng/giờ):$$C_2 = 10(6n + 10) \cdot \dfrac{125}{9n} = \dfrac{1250(6n + 10)}{9n} = \dfrac{2500}{3} + \dfrac{12500}{9n} \text{ (nghìn đồng)}$$
 		\item Lập hàm tổng chi phí $C(n)$:$$C(n) = C_1 + C_2 = 50n + \dfrac{2500}{3} + \dfrac{12500}{9n} \text{ (nghìn đồng)}$$
 		\item Tìm giá trị nhỏ nhất của $C(n)$ trên đoạn $[1; 8]$: Xét hàm số $f(x) = 50x + \dfrac{2500}{3} + \dfrac{12500}{9x}$ trên đoạn $[1; 8]$. Tính đạo hàm:$$f'(x) = 50 - \dfrac{12500}{9x^2}$$ Cho $f'(x) = 0$:$$50 = \dfrac{12500}{9x^2} \implies x = \sqrt{\dfrac{250}{9}} = \dfrac{5\sqrt{10}}{3} \approx 5{,}27$$Nhận xét: Trên khoảng $(1; 5{,}27)$, $f'(x) < 0$ nên hàm số nghịch biến (giảm). Trên khoảng $(5{,}27; 8)$, $f'(x) > 0$ nên hàm số đồng biến (tăng). Do $n$ phải là số nguyên nguyên dương trong đoạn $[1; 8]$, ta so sánh chi phí tại hai điểm nguyên gần $5{,}27$ nhất là $n = 5$ và $n = 6$:
-		\begin{itemize}
-			\item Với $n = 5$:$$C(5) = 50(5) + \dfrac{2500}{3} + \dfrac{12500}{9 \cdot 5} = 250 + \dfrac{2500}{3} + \dfrac{2500}{9} = \dfrac{12250}{9} \approx 1361{,}11 \text{ (nghìn đồng)}$$
-		\item Với $n = 6$:$$C(6) = 50(6) + \dfrac{2500}{3} + \dfrac{12500}{9 \cdot 6} = 300 + \dfrac{2500}{3} + \dfrac{12500}{54} = \dfrac{36850}{27} \approx 1364{,}81 \text{ (nghìn đồng)}$$
-		\end{itemize}
+		
+		Với $n = 5$:$$C(5) = 50(5) + \dfrac{2500}{3} + \dfrac{12500}{9 \cdot 5} = 250 + \dfrac{2500}{3} + \dfrac{2500}{9} = \dfrac{12250}{9} \approx 1361{,}11 \text{ (nghìn đồng)}$$
+		
+		Với $n = 6$:$$C(6) = 50(6) + \dfrac{2500}{3} + \dfrac{12500}{9 \cdot 6} = 300 + \dfrac{2500}{3} + \dfrac{12500}{54} = \dfrac{36850}{27} \approx 1364{,}81 \text{ (nghìn đồng)}$$
 		So sánh $C(5) < C(6)$, vậy chi phí đạt giá trị nhỏ nhất khi $n = 5$.
 		\end{itemize}
 		Kết luận:Để thu được lãi nhiều nhất, xưởng in phải sử dụng $5$ máy in.
@@ -689,7 +689,6 @@
 \begin{baitap}
 	Cho hàm số $y = f(x) = \dfrac{x^2 + x + 2}{x - 1}$. Gọi $M$ là giao điểm của đồ thị hàm số $y = f(x)$ với trục tung. Phương trình tiếp tuyến của đồ thị hàm số $y = f(x)$ tại điểm $M$ là $y = ax +b$ với $ a,b $ là các số nguyên. Tính giá trị của $ a+b.$
 	\begin{traloi}
-		\dapan{$ -5$} Phương trình tiếp tuyến là $ y=-3x-2 $.
+		\dapan{-5} Phương trình tiếp tuyến là $ y=-3x-2 $.
 	\end{traloi}
 \end{baitap}
-
