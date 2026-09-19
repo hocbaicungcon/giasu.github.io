@@ -1,9 +1,9 @@
 let muted=false,active=new Set();
 try{muted=localStorage.getItem('puzzle-muted')==='true';}catch{}
 export function stopSounds(){for(const audio of active){audio.pause();audio.currentTime=0;}active.clear();}
-export function sound(name){
+export function sound(name,options={}){
  if(muted||document.hidden)return ()=>{};
- const audio=new Audio(new URL('./audio/'+name+'.mp3',import.meta.url));audio.volume=name==='munch'?.22:.3;active.add(audio);
+ const audio=new Audio(new URL('./audio/'+name+'.mp3',import.meta.url));audio.volume=options.volume??(name==='munch'?.22:.3);audio.playbackRate=options.rate??1;audio.loop=options.loop??false;active.add(audio);
  const stop=()=>{active.delete(audio);audio.pause();audio.currentTime=0;};
  audio.addEventListener('ended',()=>active.delete(audio),{once:true});
  audio.play().then(()=>{if(!active.has(audio))audio.pause();}).catch(()=>active.delete(audio));

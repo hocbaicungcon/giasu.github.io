@@ -454,3 +454,19 @@ html[data-theme="dark"] .water-jug .jug-below-can{fill:#d1ecec}
 .game-panel .scene-guidance{font-weight:700;letter-spacing:.6px}
 .game-panel .river-world #river-status{text-shadow:0 1px 2px #ffffff60}
 html[data-theme="dark"] .game-panel .river-world #river-status{color:#153f3b;text-shadow:0 1px 2px #ffffff40}
+
+/* Unframed puzzle scenes fill the available page width. */
+#game-river,#game-water,html[data-theme="dark"] :is(#game-river,#game-water){max-width:none;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+#game-river .river-world,#game-water .water-world{width:100%;border:0;border-radius:0;box-shadow:none}
+#game-water .water-jugs{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));align-items:end;justify-items:center;gap:24px;max-width:850px;margin:48px auto 10px}
+#game-water .water-jug{width:100%;max-width:180px;justify-self:center}
+#game-water .water-jug svg{display:block;margin-inline:auto;overflow:visible}
+html[data-theme="dark"] .hero{background:linear-gradient(135deg,#1b3039,#254550)}
+html[data-theme="dark"] .subject-section{background:#30493d;border-block:1px solid #567361}
+html[data-theme="dark"] .subject-row{background:transparent}
+@media(max-width:620px){
+ .hero,html[data-theme="dark"] .hero{border-radius:0}
+ #game-river .river-world,#game-water .water-world{width:calc(100% + 16px);margin-inline:-8px}
+ #game-water .water-jugs{gap:16px 8px}
+ #game-water .water-jugs:has(> :nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
+}
