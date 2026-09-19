@@ -470,3 +470,14 @@ html[data-theme="dark"] .subject-row{background:transparent}
  #game-water .water-jugs{gap:16px 8px}
  #game-water .water-jugs:has(> :nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr));row-gap:40px}
 }
+
+/* Clear separation between the introduction and subject navigation, at every width. */
+.hero,html[data-theme="dark"] .hero{border-radius:0}
+.about,html[data-theme="dark"] .about{border-radius:22px;overflow:hidden}
+.subject-section{background:#f3dfc9;border-block:1px solid #d8b897;box-shadow:none}
+.subject-row{background:transparent}
+.subject-section .overline{color:#856445}
+.subject-picks{flex-wrap:wrap;gap:18px;justify-content:space-evenly}
+html[data-theme="dark"] .subject-section{background:#4b4034;border-color:#79644e}
+html[data-theme="dark"] .subject-section .overline{color:#dcc2a4}
+@media(max-width:620px){.about,html[data-theme="dark"] .about{border-radius:16px}}
