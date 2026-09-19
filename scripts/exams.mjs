@@ -14,7 +14,7 @@ export function extractExam(source,options={}){
   const lists=[...text.matchAll(/\\begin\{enumerate\}(?:\[([^\]]*)\])?([\s\S]*?)\\end\{enumerate\}/g)];
   if(lists.length>1)throw Error('Mỗi câu thi chỉ hỗ trợ một danh sách phương án');
   const list=lists[0];const choices=list?list[2].split(/\\item\s*/).filter(x=>x.trim()).map(x=>convertLatex(x,options).body):[];
-  const kind=/tự\s*luận/i.test(section)?'proof':list?(list[1]?.includes('a)')||/Phần\s+II[.\s]/i.test(section)?'truefalse':'choice'):'short';
+  const kind=/tự\s*luận|trình bày lời giải|Phần\s+(?:IV|4)[.\s]/i.test(section)?'proof':list?(list[1]?.includes('a)')||/Phần\s+II[.\s]/i.test(section)?'truefalse':'choice'):'short';
   if(list)text=text.replace(list[0],'');
   const explicit=[...solution.matchAll(/\\dapan\{([^{}]*)\}/g)];
   if(explicit.length>1)throw Error('Mỗi traloi chỉ được có một lệnh dapan');
