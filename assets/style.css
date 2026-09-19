@@ -140,6 +140,8 @@ header{border-bottom-color:#bfd6d2;box-shadow:0 3px 16px #243b4018}.hero{backgro
  .riddles .fun-content .fun-text{font-size:1.15rem}
  .fun-filters:not(:empty){margin-bottom:14px}
 }
+
+
 .display-bar{border-bottom:1px solid var(--line);background:var(--paper)}
 .display-controls{display:flex;justify-content:flex-end;align-items:center;gap:6px;padding-top:8px;padding-bottom:8px;font-size:14px;flex-wrap:wrap}
 .display-controls button{min-height:38px;min-width:40px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-size:14px}
@@ -232,3 +234,223 @@ html[data-theme="dark"] #game-water{background:#1d3238}html[data-theme="dark"] .
 @media(max-width:620px){.river-bank{top:55px}#game-river #river-unload{height:57px;bottom:28px}.water-world{padding:45px 8px 8px}.water-fixtures{gap:5px}.game-panel .water-fixture{width:75px}.water-fixture svg{height:66px}.water-target strong{font-size:1.05rem}.water-jugs{gap:16px}.water-jug svg{height:160px}.water-jug[data-jug="1"] svg{height:130px}.water-selection{font-size:.75rem}#game-water{padding:16px 10px}}
 @media(prefers-reduced-motion:reduce){.water-world .water{transition:none}}
 #game-water .water-fixture{background:transparent;border:0;box-shadow:none;padding:0;border-radius:0}#game-water .water-jug{background:transparent;border:2px solid transparent;box-shadow:none}#game-water .water-jug[aria-pressed="true"]{background:#ffffff55;border-color:#2b9ab0}#game-water .water-fixture:disabled,#game-water .water-jug:disabled{opacity:1}#game-water .water-fixture svg{filter:drop-shadow(0 2px 1px #22556618)}#game-water .water-fixture:not(:disabled):hover svg{transform:translateY(-3px)}
+
+/* Open introduction and direct-manipulation puzzle scenes. */
+.about{margin:0 auto 45px;padding-block:56px;border:0;border-radius:0;box-shadow:none;background:linear-gradient(135deg,#fff 0%,#eaf7f5 100%);gap:32px}
+.about h2{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;letter-spacing:-.6px}
+html[data-theme="dark"] .about{border:0;box-shadow:none;background:linear-gradient(135deg,#1d3238,#213b40)}
+#river-mission,#water-mission{font-size:1.03rem;font-weight:750;line-height:1.65;background:#e4f3ed;color:#255e55;border-left:4px solid #2e9887;border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0}
+#water-mission{background:#e4f1fa;border-color:#438caf;color:#285971}
+html[data-theme="dark"] #river-mission{background:#294c43;color:#def2e4;border-color:#82baa5}
+html[data-theme="dark"] #water-mission{background:#294650;color:#d9edf7;border-color:#77b4d4}
+.river-world{height:440px}.river-bank{top:62px;width:30%}.river-characters{grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;padding:0}
+#game-river .river-character{display:block;padding:0;min-height:52px;position:relative}
+#game-river .river-character svg{width:100%;height:66px}
+.river-vessel{height:150px;width:34%;left:7%;bottom:20px;transition:left 1s ease-in-out}
+.river-world[data-side="1"] .river-vessel{left:59%}
+.river-farmer{left:1%;width:30%}
+#game-river #river-cross{inset:auto 0 0;height:32%;border-radius:0 0 45% 45%}
+#river-cargo{position:absolute;bottom:42px;left:30%;width:68%;height:80px;display:flex;align-items:end;z-index:5;pointer-events:none}
+#game-river .river-passenger{flex:1;min-width:0;height:78px;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;pointer-events:auto}
+#river-cargo svg{position:static;width:100%;height:100%;filter:drop-shadow(0 2px 1px #0003)}
+#game-river .river-passenger:disabled{opacity:1}
+.is-crossing .river-boat{animation:boat-bob .35s ease-in-out infinite alternate}
+.is-crossing .river-oar{animation:river-row .35s ease-in-out infinite alternate}
+.is-crossing .river-vessel::after{content:"";position:absolute;width:65%;height:15px;bottom:-5px;left:18%;border-bottom:3px solid #c5f4ff;border-radius:50%;animation:wake .5s infinite}
+.is-munching{z-index:4;animation:munch .8s ease-in-out 2}
+.is-eaten{animation:eaten 1.6s ease-in forwards}
+@keyframes boat-bob{to{transform:translateY(4px) rotate(1deg)}}
+@keyframes wake{to{transform:scaleX(1.3);opacity:.15}}
+@keyframes munch{50%{transform:translate(var(--chase-x),var(--chase-y)) rotate(-9deg)}75%{transform:translate(var(--chase-x),var(--chase-y)) rotate(8deg)}}
+@keyframes eaten{40%{transform:scale(1)}65%{transform:scale(.8) rotate(12deg)}100%{transform:scale(0);opacity:0}}
+#game-water{max-width:900px}
+.water-world{padding:52px 18px 20px;min-height:345px}
+.water-decoration{width:70px;height:60px;opacity:.65}
+.water-jugs{gap:12px;margin:28px 0 5px;align-items:end}
+#game-water .water-jug,html[data-theme="dark"] #game-water .water-jug{flex:1;width:auto;max-width:170px;min-width:0;padding:0 4px;border:0;border-radius:0;background:transparent;transition:transform .25s,filter .25s;position:relative}
+#game-water .water-jug svg{height:var(--jug-size,170px);width:100%;transition:transform .45s;transform-origin:50% 80%}
+#game-water .water-jug[aria-pressed="true"],html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"]{border:0;background:transparent;transform:translateY(-14px);filter:drop-shadow(0 8px 6px #238aab55)}
+#game-water .water-jug strong{font-size:.95rem;font-weight:750}
+#game-water .water-jug:focus-visible{outline:2px dashed #218cb1;outline-offset:5px}
+#game-water .water-jug.is-pouring svg{transform:rotate(var(--tilt,22deg)) translateY(-8px)}
+#game-water .water-jug.is-filling svg{animation:jug-fill .8s ease-in-out}
+.water-world .water{transition:height .7s ease-in-out,y .7s ease-in-out}
+#water-stream{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:6;opacity:0}
+#water-stream.flowing{opacity:1}
+#water-stream path{fill:none;stroke:#39b6d9;stroke-width:6;stroke-linecap:round;stroke-dasharray:8 8;animation:water-flow .45s linear infinite}
+@keyframes water-flow{to{stroke-dashoffset:-32}}
+@keyframes jug-fill{50%{transform:translateY(3px) rotate(2deg)}}
+@media(max-width:620px){
+ .about{margin-inline:auto;padding:35px 8px;gap:12px}.about h2{font-size:1.6rem}
+ #river-mission,#water-mission{padding:12px;font-size:.95rem}
+ .river-world{height:450px}.river-world.is-crowded{height:510px}.river-bank{width:32%;top:68px}.river-characters{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #game-river .river-character svg{height:53px;width:100%}
+ .river-vessel{width:43%;left:0;height:130px}.river-world[data-side="1"] .river-vessel{left:56%}
+ #river-cargo{height:68px;bottom:32px;left:28%;width:70%}#game-river .river-passenger{height:62px}
+ .water-world{padding:52px 6px 16px;min-height:310px}.water-jugs{gap:2px}
+ #game-water .water-jug svg{height:var(--jug-mobile-size,135px)}.water-jugs:has(> :nth-child(4)){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px;justify-items:center}
+ .water-jugs:has(> :nth-child(4)) .water-jug{width:100%;max-width:130px}
+ #game-water .water-jug strong{font-size:.85rem}
+}
+@media(prefers-reduced-motion:reduce){
+ .is-crossing .river-boat,.is-crossing .river-vessel::after,.is-munching,.is-eaten,#water-stream path,#game-water .water-jug.is-filling svg{animation:none}
+ #game-water .water-jug,#game-water .water-jug svg,.water-world .water,.river-vessel{transition:none}
+ .is-eaten{opacity:.3}
+}
+/* Calm, rounded navigation with a continuous hover path into submenus. */
+header{position:relative;z-index:20;background:#ffffffed;border-bottom:1px solid #c8e0dd;box-shadow:0 4px 24px #24494e09}
+header .nav{min-height:88px}
+header #site-menu{gap:8px}
+header #site-menu>a:not(.nav-pill),header .nav-exams>summary{padding:10px 12px;border-radius:12px;transition:background .18s,color .18s}
+header .nav-exams>summary{display:flex;align-items:center;gap:9px;list-style:none;cursor:pointer}
+header .nav-exams>summary::-webkit-details-marker{display:none}
+header .nav-exams>summary::after{content:"";width:6px;height:6px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .18s}
+header .nav-exams[open]>summary::after{transform:rotate(225deg) translate(-2px,-1px)}
+header #site-menu>a:not(.nav-pill):hover,header .nav-exams[open]>summary,header .nav-exams>summary:hover{background:#e3f2f1;color:#167481}
+header .nav-exams>summary:focus-visible{outline:2px solid #2699aa;outline-offset:3px}
+header .nav-submenu{top:calc(100% + 8px);min-width:220px;padding:8px;border:1px solid #d1e4df;border-radius:16px;box-shadow:0 16px 40px #193f4926;background:#fff}
+header .nav-submenu::before{content:"";position:absolute;top:-10px;left:0;right:0;height:12px}
+header .nav-submenu a{font-size:.92rem;font-weight:550;border-radius:10px;padding:10px 14px;transition:background .18s,color .18s}
+header .nav-submenu a:hover,header .nav-submenu a:focus-visible{background:#e6f4f1;color:#126b75}
+header .nav-exams[open] .nav-submenu{animation:menu-reveal .16s ease-out}
+header .nav-pill{border-radius:999px;background:#cfece7;border-color:#b2d9d2;box-shadow:none;white-space:nowrap}
+header .display-controls{margin-left:5px;padding-left:8px;border-left:1px solid var(--line)}
+@keyframes menu-reveal{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+html[data-theme="dark"] header{background:#1d3238;border-color:#3c5d61;box-shadow:0 4px 24px #0002}
+html[data-theme="dark"] header .nav-submenu{background:#243e44;border-color:#49686a;box-shadow:0 16px 40px #0004}
+html[data-theme="dark"] header :is(.nav-exams[open]>summary,.nav-exams>summary:hover,.nav-submenu a:hover,.nav-submenu a:focus-visible){background:#31565e;color:#c0edf0}
+html[data-theme="dark"] header #site-menu>a:not(.nav-pill):hover{background:#31565e;color:#c0edf0}
+@media(max-width:1100px) and (min-width:951px){header #site-menu{gap:2px}header #site-menu>a:not(.nav-pill),header .nav-exams>summary{padding:9px 7px}header .nav-pill{padding:9px 12px}}
+@media(max-width:950px){
+ header .nav{min-height:78px}header nav#site-menu{left:8px;right:8px;padding:10px;border-radius:18px;gap:3px}
+ header nav#site-menu .nav-exams>summary{display:flex;justify-content:space-between;border-radius:11px}
+ header nav#site-menu .nav-exams>summary::after{content:"";margin-right:5px}
+ header nav#site-menu .nav-submenu{margin:3px 8px 8px;padding:6px;border:0;border-radius:12px;background:#eff7f5}
+ header nav#site-menu .nav-submenu::before{display:none}
+ header nav#site-menu .nav-pill{border-radius:12px}
+ header nav#site-menu .display-controls{border-left:0;margin-left:0;padding:10px 14px}
+ html[data-theme="dark"] header nav#site-menu .nav-submenu{background:#243e44}
+}
+.game-panel [data-puzzle-sound] svg{width:20px;height:20px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.game-panel [data-puzzle-sound]{display:grid;place-items:center}
+#river-mission,#water-mission{border:1px solid #9bcdbf;border-radius:16px;background:linear-gradient(120deg,#d7eee3,#edf7e9);box-shadow:0 5px 15px #2f705d15;color:#234f43;padding:17px 20px;font-weight:750}
+#water-mission{border-color:#94c5dc;background:linear-gradient(120deg,#d7ebf8,#e7f6f6);box-shadow:0 5px 15px #24628218;color:#234f68}
+html[data-theme="dark"] #river-mission{border:1px solid #629d87;background:linear-gradient(120deg,#305b4c,#29473e);box-shadow:0 5px 18px #0002;color:#e3f7e9}
+html[data-theme="dark"] #water-mission{border:1px solid #649bb1;background:linear-gradient(120deg,#315769,#294750);box-shadow:0 5px 18px #0002;color:#e3f5ff}
+#game-water .water-jug[aria-pressed="true"],html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"]{transform:translateY(-28px);filter:brightness(1.12) drop-shadow(0 0 10px #53d5edb0) drop-shadow(0 12px 7px #238aab45);background:transparent;border:0}
+#game-water .water-jug[aria-pressed="true"] strong{color:#087c99}
+html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"] strong{color:#b0f2ff}
+.water-jugs{margin-top:42px}
+@media(max-width:620px){#river-mission,#water-mission{padding:14px 15px}.water-jugs:has(> :nth-child(4)){row-gap:38px}}
+@media(prefers-reduced-motion:reduce){header .nav-exams[open] .nav-submenu{animation:none}}
+
+/* Edge-to-edge mobile navigation; the close control remains in the header. */
+header .menu-toggle,html[data-theme="dark"] header .menu-toggle{border:0;background:transparent;box-shadow:none;border-radius:0}
+.game-title-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.game-title-row h2,#game-words .game-title-row h2{margin:0}
+.game-panel .game-sound,html[data-theme="dark"] .game-panel .game-sound{width:40px;height:40px;padding:9px;background:transparent;border:0;box-shadow:none;color:var(--ink);flex-shrink:0}
+@media(max-width:950px){
+ body.menu-open{overflow:hidden}
+ body.menu-open header{position:fixed;inset:0 0 auto;z-index:100;background:#fff;box-shadow:none}
+ body.menu-open header nav#site-menu{position:fixed;top:var(--mobile-nav-height,88px);bottom:0;left:0;right:0;max-height:none;width:100%;margin:0;padding:16px max(16px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));border:0;border-radius:0;box-shadow:none;overflow-y:auto;overscroll-behavior:contain;justify-content:flex-start;background:#fff}
+ header nav#site-menu .nav-submenu,html[data-theme="dark"] header nav#site-menu .nav-submenu{background:transparent;border:0;border-radius:0;box-shadow:none;margin:0 0 8px 14px;padding:0}
+ header nav#site-menu .display-controls{margin-top:auto;padding-top:16px}
+ html[data-theme="dark"] body.menu-open header,html[data-theme="dark"] body.menu-open header nav#site-menu{background:#1d3238}
+}
+
+/* Results stay inside each game, with finite, reduced-motion-aware animation. */
+.number-scene{position:relative;max-width:400px;margin-inline:auto;border-radius:14px;overflow:hidden}
+.number-scene .number-board{margin:0}
+.game-result{position:absolute;inset:0;z-index:10;display:grid;place-items:center;padding:16px;background:#ecf6efeb;backdrop-filter:blur(5px);overflow:auto;border-radius:inherit}
+.game-result[hidden]{display:none}
+.result-card{position:relative;text-align:center;width:100%;max-width:360px;animation:result-enter .45s ease-out}
+.result-art{width:88px;height:88px;margin:0 auto 12px;animation:result-pop .75s ease-out}
+.result-art svg{width:100%;height:100%}
+.game-result h3{font-size:1.6rem;line-height:1.2;color:#24634b;margin:0 0 12px}
+.game-result p{font-size:.95rem;line-height:1.6;color:#335c51;margin:0 0 18px}
+.result-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
+.game-panel .result-actions button{background:#2f7965;color:#fff;border:0;padding:10px 16px;border-radius:12px;font-size:.9rem;min-height:42px}
+.game-panel .result-actions [data-result-dismiss]{background:transparent;color:#47695d;font-size:.8rem}
+.game-panel .result-actions button[hidden]{display:none}
+.game-result[data-outcome="lost"]{background:#fbefe7eb}
+.game-result[data-outcome="lost"] h3{color:#885239}
+.game-result[data-outcome="lost"] p{color:#735a4d}
+.game-result[data-outcome="lost"] .result-art{animation:result-sway .7s ease-in-out}
+.game-result[data-outcome="lost"] .result-actions button:not([data-result-dismiss]){background:#966446}
+.result-confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.result-confetti i{position:absolute;top:-20px;left:calc(var(--i)*5%);width:8px;height:13px;background:#56b89c;border-radius:2px;animation:result-fall 2s calc(var(--i)*.035s) ease-in both}
+.result-confetti i:nth-child(3n){background:#efba51}
+.result-confetti i:nth-child(3n+1){background:#ee9580}
+.game-result[data-outcome="lost"] .result-confetti{display:none}
+@keyframes result-enter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes result-pop{0%{transform:scale(.3) rotate(-12deg)}60%{transform:scale(1.12) rotate(5deg)}100%{transform:scale(1) rotate(0)}}
+@keyframes result-sway{25%{transform:rotate(-8deg)}60%{transform:rotate(7deg)}85%{transform:rotate(-3deg)}}
+@keyframes result-fall{to{top:110%;transform:translateX(20px) rotate(500deg);opacity:0}}
+html[data-theme="dark"] .game-result{background:#203d36ed}
+html[data-theme="dark"] .game-result h3{color:#bef0d2}
+html[data-theme="dark"] .game-result p{color:#d1e6dc}
+html[data-theme="dark"] .game-result[data-outcome="lost"]{background:#42342ced}
+html[data-theme="dark"] .game-result[data-outcome="lost"] h3{color:#ffd6b5}
+html[data-theme="dark"] .game-result[data-outcome="lost"] p{color:#ecd6c6}
+html[data-theme="dark"] .game-panel .result-actions [data-result-dismiss]{background:transparent;color:#c8ded2}
+@media(max-width:620px){.game-result{padding:12px}.result-art{width:64px;height:64px;margin-bottom:8px}.game-result h3{font-size:1.3rem}.game-result p{font-size:.85rem;margin-bottom:12px}.game-panel .result-actions button{font-size:.8rem;padding:8px 12px}}
+@media(prefers-reduced-motion:reduce){.result-card,.result-art,.game-result[data-outcome="lost"] .result-art{animation:none}.result-confetti{display:none}}
+
+
+/* In-scene instructions and deliberately paced water/rowing motion. */
+.game-panel .scene-guidance{position:relative;z-index:7;text-transform:uppercase;font-weight:800;letter-spacing:.45px;line-height:1.55;text-align:center;border:0;box-shadow:none}
+.game-panel .water-fixtures #water-status{flex:1;min-width:0;min-height:94px;margin:0;padding:14px 12px;background:transparent;color:#276c7c;border:0;border-radius:0;font-size:.85rem;display:grid;align-content:center}
+.game-panel .river-world #river-status{position:absolute;top:54px;left:12px;right:12px;margin:0;min-height:58px;padding:12px 16px;border-radius:0;background:transparent;color:#295d56;border:0;font-size:.85rem}
+.river-world{height:510px}.river-bank{top:144px}
+.river-vessel{transition:left var(--trip-duration,2600ms) cubic-bezier(.35,0,.3,1)}
+.is-crossing .river-oar{animation:rowing-stroke .9s ease-in-out infinite}
+.is-crossing .river-farmer{animation:rowing-lean .9s ease-in-out infinite;transform-origin:50% 90%}
+.is-crossing .river-boat{animation:boat-bob .9s ease-in-out infinite alternate}
+.is-crossing .river-vessel::after{animation:wake 1.2s infinite}
+.river-ripples{position:absolute;left:68%;bottom:3px;width:45%;height:25px;opacity:0;pointer-events:none}
+.is-crossing .river-ripples{opacity:1}
+.river-ripples i{position:absolute;inset:0;border:2px solid #c0f3ff;border-radius:50%;animation:rowing-ripple .9s ease-out infinite;transform:scale(.2);opacity:0}
+.river-ripples i:nth-child(2){animation-delay:.3s}.river-ripples i:nth-child(3){animation-delay:.6s}
+@keyframes rowing-stroke{0%,100%{transform:rotate(-26deg) translateY(-4px)}35%{transform:rotate(5deg) translateY(5px)}60%{transform:rotate(12deg) translateY(1px)}80%{transform:rotate(-15deg) translateY(-7px)}}
+@keyframes rowing-lean{40%{transform:rotate(4deg) translateX(2px)}80%{transform:rotate(-3deg)}}
+@keyframes rowing-ripple{15%{opacity:.8}100%{transform:scale(1.3);opacity:0}}
+.water-world .water{transition:height var(--pour-duration,1750ms) .25s linear,y var(--pour-duration,1750ms) .25s linear}
+#game-water .water-jug svg{transition:transform .4s ease-in-out}
+#game-water .water-jug.is-pouring{z-index:8}
+#game-water .water-jug.is-pouring svg{transform:translate(var(--pour-x,0px),var(--pour-y,-8px)) rotate(var(--tilt,22deg))}
+#game-water .water-jug.is-filling svg{animation:jug-fill 1.1s ease-in-out 2}
+#water-stream{z-index:6;transition:opacity .12s}
+#water-stream.flowing{animation:stream-appear .25s step-end}
+#water-stream path{stroke-dasharray:none;animation:none}
+#water-stream .stream-body{stroke:#27add1;stroke-width:7;opacity:.75}
+#water-stream .stream-highlight{stroke:#c2f4ff;stroke-width:2;stroke-dasharray:6 12;animation:water-flow .9s linear infinite}
+.stream-landing{fill:#a2edff;stroke:#53c3db;stroke-width:1.5}
+.stream-landing ellipse{fill:none;animation:landing-ripple .7s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.stream-landing ellipse:nth-child(2){animation-delay:.35s}
+.stream-landing circle{animation:landing-drop .7s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.stream-landing circle:last-child{animation-delay:.25s}
+@keyframes stream-appear{from{opacity:0}to{opacity:1}}
+@keyframes landing-ripple{from{transform:scale(.4);opacity:1}to{transform:scale(1.6);opacity:0}}
+@keyframes landing-drop{from{transform:translateY(6px);opacity:1}to{transform:translateY(-5px);opacity:0}}
+html[data-theme="dark"] .game-panel .water-fixtures #water-status,html[data-theme="dark"] .game-panel .river-world #river-status{background:transparent;color:#c6edf0;border:0}
+@media(max-width:620px){
+ .water-fixtures{gap:5px;align-items:center}#game-water .water-fixture{width:48px}
+ .game-panel .water-fixtures #water-status{font-size:.73rem;padding:10px 8px;min-height:108px;letter-spacing:.25px}
+ .game-panel .river-world #river-status{font-size:.75rem;left:8px;right:8px;padding:10px;min-height:66px}
+ .river-world{height:530px}.river-world.is-crowded{height:590px}.river-bank{top:150px}
+}
+@media(prefers-reduced-motion:reduce){
+ .river-vessel,.water-world .water,#game-water .water-jug svg{transition:none}
+ .is-crossing .river-oar,.is-crossing .river-farmer,.river-ripples i,#water-stream.flowing,#water-stream .stream-highlight,.stream-landing ellipse,.stream-landing circle{animation:none}
+ .river-ripples{display:none}
+}
+
+/* Labels share the glass centerline; volume remains below the vessel. */
+.water-jug .jug-on-can{font-family:inherit;font-size:13px;font-weight:750;fill:#235970;letter-spacing:.15px;font-variant-numeric:tabular-nums}
+.water-jug .jug-below-can{font-family:inherit;font-size:13px;font-weight:750;fill:#315f6c}
+#game-water .water-jug svg{height:calc(var(--jug-size,170px)*1.22)}
+@media(max-width:620px){#game-water .water-jug svg{height:calc(var(--jug-mobile-size,135px)*1.22)}}
+html[data-theme="dark"] .water-jug .jug-below-can{fill:#d1ecec}
+.game-panel .scene-guidance{font-weight:700;letter-spacing:.6px}
+.game-panel .river-world #river-status{text-shadow:0 1px 2px #ffffff60}
+html[data-theme="dark"] .game-panel .river-world #river-status{color:#153f3b;text-shadow:0 1px 2px #ffffff40}
