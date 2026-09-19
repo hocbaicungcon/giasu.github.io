@@ -6,6 +6,7 @@ function jug(cap,index){
  const found=source.match(new RegExp(`<g id="jug-${cap}l"[^>]*>([\\s\\S]*?)<\\/g>`));
  if(!found)throw Error(`water_riddle.svg: thiếu can ${cap} lít`);
  let art=found[1].replace(/<rect\b[^>]*class="card-box"[^>]*\/>/g,'').replace(/<text\b[^>]*>[\s\S]*?<\/text>/g,'').replace(/<line\b[^>]*class="mark-line"[^>]*\/>/g,'').replace(/href="#face-happy"/g,'href="#water-face"');
+ art=art.replace(/<use href="#water-face" x="([\d.]+)" y="([\d.]+)"\/>/g,(_,x,y)=>`<g transform="translate(${x} ${y})">${face}</g>`);
  const glass=art.match(/<rect x="15" y="15" width="(\d+)" height="(\d+)" class="jug-glass"/);
  const width=Number(glass[1])-6,height=Number(glass[2])-6,bottom=18+height;
  art=art.replace(/(<rect\b[^>]*class="jug-glass"[^>]*\/>)/,`$1<rect data-water-fill="${index}" data-bottom="${bottom}" data-height="${height}" x="18" y="${bottom}" width="${width}" height="0" rx="7" class="water"/>`);

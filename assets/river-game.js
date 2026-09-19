@@ -14,7 +14,7 @@ function character(i,onBoat=false){
  button.type='button';button.className=onBoat?'river-passenger':'river-character';button.dataset.passenger=i;
  button.disabled=done||crossing||(!onBoat&&state.positions[i]!==state.person);
  button.setAttribute('aria-label',names[kind]+' '+(i+1)+(onBoat?', bấm để xuống thuyền':', bấm để lên thuyền'));
- button.innerHTML='<svg aria-hidden="true"><use href="#river-art-'+art[kind]+'"/></svg>';return button;
+ button.append($('#river-template-'+art[kind]).content.cloneNode(true));return button;
 }
 function render(){
  for(const [side,id] of [[0,'left'],[1,'right']])$('#river-'+id).replaceChildren(...state.positions.map((s,i)=>s===side&&!cargo.includes(i)?character(i):null).filter(Boolean));
