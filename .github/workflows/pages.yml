@@ -34,7 +34,31 @@ jobs:
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm tkz-euclide vietnam fontawesome5
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-base \
+            texlive-latex-extra \
+            texlive-pictures \
+            texlive-fonts-recommended \
+            texlive-fonts-extra \
+            texlive-lang-other \
+            poppler-utils \
+            dvisvgm
+      
+          echo "=== Check LaTeX environment ==="
+          pdflatex --version | head -n 1
+      
+          echo "=== TikZ ==="
+          kpsewhich tikz.sty
+          kpsewhich tkz-tab.sty
+          kpsewhich tkz-euclide.sty
+      
+          echo "=== Font Awesome 5 ==="
+          kpsewhich fontawesome5.sty
+      
+          echo "=== Vietnamese / VnTeX ==="
+          kpsewhich vietnam.sty
+          kpsewhich t5enc.def
+          # sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm tkz-euclide vietnam fontawesome5
       - name: Restore and save TikZ SVG cache
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         uses: actions/cache@v6
