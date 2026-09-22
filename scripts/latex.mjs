@@ -102,12 +102,12 @@ export function importLatex(root){
    if(/\\(?:input|include|write|openout|read|catcode|csname|usepackage|documentclass)\b/.test(tikz))throw Error(`${file}: lệnh không được phép trong hình TikZ`);
    // 14 TeX pt ≈ 18.6 CSS px. Normalize legacy size commands too.
    tikz=tikz.replace(/\\(?:tiny|scriptsize|footnotesize|small|normalsize|large|Large|LARGE|huge|Huge)\b/g, String.raw`\fontsize{14pt}{17pt}\selectfont`);
-   const hash=createHash('sha256').update('article-background-v4-normalized-14pt:'+background+':'+tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
+   const hash=createHash('sha256').update(  'article-background-v6-lualatex-fontawesome-14pt:'+ background+':'+tikz).digest('hex').slice(0,20),cache=path.join(generated,'tikz',hash);fs.mkdirSync(cache,{recursive:true});
    const svg=path.join(cache,'figure.svg');
    // Reject old raster wrappers: their square viewBox loses the physical size.
    if(!fs.existsSync(svg)||/data:image\/png/.test(fs.readFileSync(svg,'utf8'))){
-    fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{fix-cm}\n\\usepackage[utf8]{vietnam}\n\\usepackage{amsmath,amssymb,tkz-tab,fontawesome5,tkz-euclide}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n\\fontsize{14pt}{17pt}\\selectfont\n'+tikz+'\n\\end{document}');
-    run('pdflatex',['-no-shell-escape','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);
+    fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{fix-cm}\n\\usepackage{amsmath,amssymb,tkz-tab,fontawesome5,tkz-euclide}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n\\fontsize{14pt}{17pt}\\selectfont\n'+tikz+'\n\\end{document}');
+    run('lualatex',['-no-shell-escape','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);
     if(process.platform==='darwin' && spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
     else if(spawnSync('pdftocairo',['-v'],{encoding:'utf8',stdio:'ignore'}).status===0)run('pdftocairo',['-svg','figure.pdf','figure.svg'],cache);
     else if(spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
