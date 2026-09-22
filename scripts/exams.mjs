@@ -16,9 +16,21 @@ export function extractExam(source,options={}){
   const list=lists[0];const choices=list?list[2].split(/\\item\s*/).filter(x=>x.trim()).map(x=>convertLatex(x,options).body):[];
   const kind=/tự\s*luận|trình bày lời giải|Phần\s+(?:IV|4)[.\s]/i.test(section)?'proof':list?(list[1]?.includes('a)')||/Phần\s+II[.\s]/i.test(section)?'truefalse':'choice'):'short';
   if(list)text=text.replace(list[0],'');
-  const explicit=[...solution.matchAll(/\\dapan\{([^{}]*)\}/g)];
+  const explicit=[...solution.matchAll(/\\dapan\{((?:[^{}]|\{[^{}]*\})*)\}/g)];
   if(explicit.length>1)throw Error('Mỗi traloi chỉ được có một lệnh dapan');
   let answer=explicit[0]?.[1]?.trim();
+  if(answer!==undefined){
+  // Cho phép \dapan{$-1,2$} và \dapan{$-1{,}2$}
+    answer=answer
+      .replace(/^\$(.*)\$$/s,'$1')
+      .replace(/\{,\}/g,',')
+      .trim();
+  }
+  // const explicit=[...solution.matchAll(/\\dapan\{([^{}]*)\}/g)];
+  // if(explicit.length>1)throw Error('Mỗi traloi chỉ được có một lệnh dapan');
+  // let answer=explicit[0]?.[1]?.trim();
+
+
   // Also accept the unambiguous, common single-choice sentence “Chọn A.”.
   if(answer===undefined&&kind==='choice'){
    const stated=[...solution.matchAll(/(?:Chọn|Đáp án\s*:)\s*([A-D])(?:[.\s]|$)/gi)];
