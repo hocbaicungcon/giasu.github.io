@@ -529,70 +529,69 @@
 	%\textbf{Câu 3.}
 	Hình vẽ sau, điểm $ M $ mô tả vị trí của máy bay vào thời điểm $9\mathrm{h}30$ phút. Biết các đơn vị trên hình tính theo đơn vị $\mathrm{km}$. Trong các khẳng định sau đây, khẳng định nào đúng, khẳng định nào sai?
 	\begin{center}
-		%!<\usetikzlibrary{shapes.symbols, calc}>
 		
-		\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=1.1]
+% 		\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=1.1]
 			
-			% 3D projection axes setup (cavalier-like projection matching the figure)
-			% x points bottom-left, y points right, z points up
-			\coordinate (O) at (0, 0);
-			\coordinate (X) at (-1.8, -1.8);
-			\coordinate (Y) at (4.0, 0);
-			\coordinate (Z) at (0, 4.0);
+% 			% 3D projection axes setup (cavalier-like projection matching the figure)
+% 			% x points bottom-left, y points right, z points up
+% 			\coordinate (O) at (0, 0);
+% 			\coordinate (X) at (-1.8, -1.8);
+% 			\coordinate (Y) at (4.0, 0);
+% 			\coordinate (Z) at (0, 4.0);
 			
-			% Coordinates on the axes
-			\coordinate (Px) at (-1.2, -1.2); % Position for 150 on x-axis
-			\coordinate (Py) at (2.4, 0);     % Position for 300 on y-axis
-			\coordinate (Pz) at (0, 3.0);     % Position for 9 on z-axis
+% 			% Coordinates on the axes
+% 			\coordinate (Px) at (-1.2, -1.2); % Position for 150 on x-axis
+% 			\coordinate (Py) at (2.4, 0);     % Position for 300 on y-axis
+% 			\coordinate (Pz) at (0, 3.0);     % Position for 9 on z-axis
 			
-			% Coordinates in space
-			\coordinate (Pxy) at ($(Px) + (Py)$); % Projection on xy plane
-			\coordinate (Airplane) at ($(Pxy) + (Pz)$); % Airplane position (150, 300, 9)
+% 			% Coordinates in space
+% 			\coordinate (Pxy) at ($(Px) + (Py)$); % Projection on xy plane
+% 			\coordinate (Airplane) at ($(Pxy) + (Pz)$); % Airplane position (150, 300, 9)
 			
-			% Dashed projection lines
-			\draw[dashed, thick] (Px) -- (Pxy);
-			\draw[dashed, thick] (Py) -- (Pxy);
-			\draw[dashed, thick] (O) -- (Pxy);
-			\draw[dashed, thick] (Pxy) -- (Airplane);
-			\draw[dashed, thick] (Pz) -- (Airplane);
+% 			% Dashed projection lines
+% 			\draw[dashed, thick] (Px) -- (Pxy);
+% 			\draw[dashed, thick] (Py) -- (Pxy);
+% 			\draw[dashed, thick] (O) -- (Pxy);
+% 			\draw[dashed, thick] (Pxy) -- (Airplane);
+% 			\draw[dashed, thick] (Pz) -- (Airplane);
 			
-			% Coordinate axes
-			\draw[->, thick] (O) -- (X) node[left] {$x$} node[right=2pt, font=\small] {(Nam)};
-			\draw[->, thick] (O) -- (Y) node[above] {$y$} node[below=2pt, font=\small] {(Đông)};
-			\draw[->, thick] (O) -- (Z) node[left] {$z$};
+% 			% Coordinate axes
+% 			\draw[->, thick] (O) -- (X) node[left] {$x$} node[right=2pt, font=\small] {(Nam)};
+% 			\draw[->, thick] (O) -- (Y) node[above] {$y$} node[below=2pt, font=\small] {(Đông)};
+% 			\draw[->, thick] (O) -- (Z) node[left] {$z$};
 			
-			% Origin
-			\node[above left, font=\small] at (O) {$O$};
+% 			% Origin
+% 			\node[above left, font=\small] at (O) {$O$};
 			
-			% Mark values on axes with small dots
-			\fill (Px) circle (1pt) node[left=2pt, font=\small] {$150$};
-			\fill (Py) circle (1pt) node[above=2pt, font=\small] {$300$};
-			\fill (Pz) circle (1pt) node[left=2pt, font=\small] {$9$};
+% 			% Mark values on axes with small dots
+% 			\fill (Px) circle (1pt) node[left=2pt, font=\small] {$150$};
+% 			\fill (Py) circle (1pt) node[above=2pt, font=\small] {$300$};
+% 			\fill (Pz) circle (1pt) node[left=2pt, font=\small] {$9$};
 			
-			% Mark values on axes
-			\fill (Px) circle (1pt)
-			node[left=2pt, font=\small] {$150$};
+% 			% Mark values on axes
+% 			\fill (Px) circle (1pt)
+% 			node[left=2pt, font=\small] {$150$};
 			
-			\fill (Py) circle (1pt)
-			node[above=2pt, font=\small] {$300$};
+% 			\fill (Py) circle (1pt)
+% 			node[above=2pt, font=\small] {$300$};
 			
-			\fill (Pz) circle (1pt)
-			node[left=2pt, font=\small] {$9$};
+% 			\fill (Pz) circle (1pt)
+% 			node[left=2pt, font=\small] {$9$};
 			
-			% % Right-angle markers
-			% \tkzMarkRightAngle[size=0.3, thick](O,Px,Pxy)
-			% \tkzMarkRightAngle[size=0.3, thick](O,Py,Pxy)
-			% \tkzMarkRightAngle[size=0.3,thick](O,Pz,Airplane)
+% 			% % Right-angle markers
+% 			% \tkzMarkRightAngle[size=0.3, thick](O,Px,Pxy)
+% 			% \tkzMarkRightAngle[size=0.3, thick](O,Py,Pxy)
+% 			% \tkzMarkRightAngle[size=0.3,thick](O,Pz,Airplane)
 			
-			% Airplane
-			\fill (Airplane) circle (1.5pt);
-			\node[font=\large, right] at (Airplane) {$ M $};
+% 			% Airplane
+% 			\fill (Airplane) circle (1.5pt);
+% 			\node[font=\large, right] at (Airplane) {$ M $};
 			
-%			% Airplane symbol at position
-%			\fill (Airplane) circle (1.5pt);
-%			\node[rotate=20, font=\large] at (Airplane) {$ M $};
+% %			% Airplane symbol at position
+% %			\fill (Airplane) circle (1.5pt);
+% %			\node[rotate=20, font=\large] at (Airplane) {$ M $};
 			
-		\end{tikzpicture}
+% 		\end{tikzpicture}
 	\end{center}
 	\begin{enumerate}
 		\item Máy bay đang ở độ cao \qty{9}{\kilo\meter}.
