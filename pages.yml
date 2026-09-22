@@ -1,0 +1,91 @@
+name: Build and deploy GitHub Pages
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Test and build website
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install LaTeX tools when posts contain TeX
+        # Keep the tools available even after a cache hit (missing/corrupt images can be rebuilt).
+        if: hashFiles('post/*.tex', 'post/*.TEX') != ''
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            texlive-latex-extra \
+            texlive-pictures \
+            texlive-fonts-extra \
+            texlive-lang-other \
+            poppler-utils \
+            dvisvgm
+            echo "=== Check LaTeX packages ==="
+            pdflatex --version | head -n 1
+            kpsewhich tkz-euclide.sty
+            kpsewhich fontawesome5.sty
+            kpsewhich vietnam.sty
+            kpsewhich t5enc.def
+            # sudo apt-get update
+            # sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm
+      - name: Restore and save TikZ SVG cache
+        if: hashFiles('post/*.tex', 'post/*.TEX') != ''
+        uses: actions/cache@v6
+        with:
+          path: .generated/tikz/*/figure.svg
+          # Invalidate when the renderer, styles or build environment changes.
+          key: tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml') }}-${{ hashFiles('post/*.tex', 'post/*.TEX') }}
+          # Reuse unchanged figures when a post is added or edited.
+          restore-keys: |
+            tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml') }}-
+      - name: Install dependencies
+        run: npm ci
+      - name: Test Markdown and mathematics
+        run: npm test
+      - name: Build static website
+        run: npm run build
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request' && github.ref_name == github.event.repository.default_branch
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
