@@ -34,7 +34,7 @@ jobs:
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm tkz-euclide vietnam
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm tkz-euclide vietnam fontawesome5
       - name: Restore and save TikZ SVG cache
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         uses: actions/cache@v6
