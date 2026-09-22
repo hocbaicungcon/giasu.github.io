@@ -40,7 +40,14 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
  s=s.replace(/\\begin\{traloi\}[\s\S]*?\\end\{traloi\}/g,'');
  if(s.includes('\\begin{document}'))s=s.split('\\begin{document}')[1].split('\\end{document}')[0];
  const stored=[];const hold=v=>{const k=`LATEXPLACEHOLDER${stored.length}END`;stored.push(v);return k;};
- s=s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,t=>hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(t)})\n\n`));
+ // s=s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,t=>hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(t)})\n\n`));
+ s=s.replace(
+ /\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,
+ (tikz,offset)=>{
+  const sourceLine=s.slice(0,offset).split('\n').length;
+  return hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(tikz,sourceLine)})\n\n`);
+ }
+);
  s=s.replace(/\\\[([\s\S]*?)\\\]/g,(_,m)=>`$$\n${m}\n$$`).replace(/\\\(([\s\S]*?)\\\)/g,(_,m)=>`$${m}$`);
  s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.startsWith('$$')?`\n\n$$\n${convertUnits(m.slice(2,-2)).trim()}\n$$\n\n`:convertUnits(m)));
  s=s.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
@@ -99,7 +106,7 @@ export function importLatex(root){
    const svg=path.join(cache,'figure.svg');
    // Reject old raster wrappers: their square viewBox loses the physical size.
    if(!fs.existsSync(svg)||/data:image\/png/.test(fs.readFileSync(svg,'utf8'))){
-    fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{fix-cm}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T5]{fontenc}\n\\usepackage[vietnamese]{babel}\n\\usepackage{amsmath,amssymb,tkz-tab,fontawesome5,tkz-euclide}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n\\fontsize{14pt}{17pt}\\selectfont\n'+tikz+'\n\\end{document}');
+    fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{fix-cm}\n\\usepackage[utf8]{vietnam}\n\\usepackage{amsmath,amssymb,tkz-tab,fontawesome5,tkz-euclide}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n\\fontsize{14pt}{17pt}\\selectfont\n'+tikz+'\n\\end{document}');
     run('pdflatex',['-no-shell-escape','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);
     if(process.platform==='darwin' && spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
     else if(spawnSync('pdftocairo',['-v'],{encoding:'utf8',stdio:'ignore'}).status===0)run('pdftocairo',['-svg','figure.pdf','figure.svg'],cache);
