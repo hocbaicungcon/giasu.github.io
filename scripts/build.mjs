@@ -10,6 +10,12 @@ import {buildExams} from './exam-pages.mjs';
 import {subjectGroups} from '../assets/subject-groups.js';
 import {buildEntertainment,funMenu} from './entertainment.mjs';
 import {renderVideo,renderQuiz} from './interactive.mjs';
+function normalizeLocalAssetPaths(text){
+ return text.replace(
+  /(?:\/Users\/[^/\s]+\/[^)\s"'<>]*\/)?(assets\/[^)\s"'<>]+)/g,
+  '/$1'
+ );
+}
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'dist');
 export const subjects = ['Toán học','Tiếng Việt','Ngữ văn','Tiếng Anh','Tự nhiên và Xã hội','Khoa học','Khoa học tự nhiên','Vật lí','Hóa học','Sinh học','Lịch sử và Địa lí','Lịch sử','Địa lí','Đạo đức','Giáo dục KTPL','Tin học','CNTT','Công nghệ','Âm nhạc','Mĩ thuật','Giáo dục thể chất','Hoạt động trải nghiệm'];
@@ -34,7 +40,9 @@ export function parsePost(source, filename) {
  if(!['Bài học','Bài tập','Giai thoại','Câu đố','Khám phá','Thí nghiệm vui','Lịch sử khoa học','Mẹo học tập'].includes(data.type))throw Error(`${filename}: type bài viết không được hỗ trợ`);
  const slug=path.basename(filename,'.md');
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
- return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:(()=>{try{return marked.parse(match[2]).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
+ const body=normalizeLocalAssetPaths(match[2]);
+ // return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:(()=>{try{return marked.parse(match[2]).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
+ return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{return marked.parse(body).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
 }
 const gradeLabel=p=>p.grade===undefined?'Mọi lớp':`Lớp ${p.grade}`;
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>','CNTT':'</>'};
