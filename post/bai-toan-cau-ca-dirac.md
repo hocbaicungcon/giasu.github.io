@@ -3,7 +3,7 @@ title: "Paul Dirac và bài toán “âm hai con cá”"
 description: "Một câu chuyện ngắn về cách Archimedes phát hiện ra nguyên lý lực đẩy."
 category: "Giải trí"
 type: "Giai thoại"
-date: "2026-09-18"
+date: "2026-09-24"
 tags: ["giai thoại", "Dirac", "vật lí", "câu cá"]
 ---
 
