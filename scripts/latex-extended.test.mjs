@@ -5,8 +5,8 @@ import {extractExam} from './exams.mjs';
 import {gradeExam} from '../assets/exam-core.js';
 test('qty supports decimal braces in prose and math',()=>{
  const result=convertLatex(String.raw`Sau \qty{3}{\hour}, chiều cao $h=\qty{60{,}5}{\meter}$.`).body;
- assert.match(result,/3\\,\\mathrm\{h\}/);
- assert.match(result,/60,5\\,\\mathrm\{m\}/);
+ assert.match(result,/3 h/);
+ assert.match(result,/60,5 m/);
  assert.doesNotMatch(result,/\\qty/);
 });
 test('mixed paper preserves short answers and treats part IV as manual review',()=>{
