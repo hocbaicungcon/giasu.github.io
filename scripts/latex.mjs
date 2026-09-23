@@ -171,7 +171,7 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
    return hold(m);
 
   return hold(convertMathUnits(content));
- };
+ });
  s=s.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
  // s=s.replace(/\\SI\{[^{}]*\}\{[^{}]*\}|\\si\{[^{}]*\}/g,m=>hold(`$${convertUnits(m)}$`));
  s=s.replace(
