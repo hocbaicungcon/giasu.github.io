@@ -77,51 +77,195 @@ function convertUnits(text){
 function convertMathUnits(math){
  const units=[];
 
- const holdUnit=text=>{
+ const holdText=text=>{
   const key=`UNITTEXT${units.length}END`;
-  units.push(convertUnits(text));
+  units.push(text);
   return key;
  };
 
- // \SI{5}{\meter}, \qty{5{,}9}{\centi\meter\cubic}
+ const holdUnit=text=>holdText(convertUnits(text));
+
+ // ============================================================
+ // 1. Các lệnh siunitx
+ // ============================================================
+
+ // \SI{5}{\meter}
+ // \qty{5{,}9}{\centi\meter\cubic}
  math=math.replace(
-  /\\(?:SI|qty)\{((?:[^{}]|\{[^{}]*\})*)\}\{((?:[^{}]|\{[^{}]*\})*)\}/g,
+  /\\(?:SI|qty){((?:[^{}]|{[^{}]*})*)}{((?:[^{}]|{[^{}]*})*)}/g,
   holdUnit
  );
 
- // \si{\meter}, \unit{\meter\squared}
+ // \si{\meter}
+ // \unit{\meter\squared}
  math=math.replace(
-  /\\(?:si|unit)\{((?:[^{}]|\{[^{}]*\})*)\}/g,
+  /\\(?:si|unit){((?:[^{}]|{[^{}]*})*)}/g,
   holdUnit
  );
 
  // \num{5,9}
  math=math.replace(
-  /\\num\{([+-]?[\d.,]+)\}/g,
+  /\\num{([+-]?[\d.,]+)}/g,
   (_,value)=>value
  );
 
- if(!units.length)return `$${math}$`;
+ // ============================================================
+ // 2. Danh sách đơn vị được phép viết trực tiếp trong toán
+ // ============================================================
+
+ const allowedUnits=new Set([
+  // Độ dài
+  'mm','cm','dm','m','dam','hm','km',
+
+  // Diện tích
+  'mm²','cm²','dm²','m²','dam²','hm²','km²',
+
+  // Thể tích
+  'mm³','cm³','dm³','m³','dam³','hm³','km³',
+
+  // Khối lượng
+  'mg','g','kg','t',
+
+  // Dung tích
+  'mL','ml','cL','dL','L',
+
+  // Thời gian
+  'ms','s','min','h',
+
+  // Vận tốc, gia tốc
+  'm/s','m/s²','km/h',
+
+  // Tiền tệ
+  'USD','VND','EUR','GBP'
+ ]);
+
+ // Chuẩn hóa đơn vị:
+ // cm^2   -> cm²
+ // cm^{2} -> cm²
+ // m^3    -> m³
+ const normalizeUnit=unit=>unit
+  .replace(/\^\{?2\}?/g,'²')
+  .replace(/\^\{?3\}?/g,'³')
+  .replace(/\\cdot/g,'·')
+  .replace(/\s+/g,'')
+  .trim();
+
+ // ============================================================
+ // 3. Đơn vị viết bằng \mathrm{...}
+ // ============================================================
+
+ // $25 \mathrm{USD}$  -> 25 USD
+ // $20\,\mathrm{cm}$  -> 20 cm
+ // $5\,\mathrm{m/s}$  -> 5 m/s
+ //
+ // Chỉ tách nếu thực sự nằm trong whitelist.
+ math=math.replace(
+  /(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )?\s*\\mathrm\{([^{}]+)\}/g,
+  (whole,rawUnit)=>{
+   const unit=normalizeUnit(rawUnit);
+
+   if(!allowedUnits.has(unit))
+    return whole;
+
+   return holdText(unit);
+  }
+ );
+
+ // ============================================================
+ // 4. Đơn vị viết trực tiếp
+ // ============================================================
+
+ // $25\,dm$       -> 25 dm
+ // $100\,USD$     -> 100 USD
+ // $20\,cm^2$     -> 20 cm²
+ // $5\,m^3$       -> 5 m³
+ // $72\,km/h$     -> 72 km/h
+ //
+ // Dùng whitelist để tránh nhận nhầm:
+ // $2x$, $3a$, $5\sin x$, ...
+
+ const directUnitPattern=[
+  'km/h',
+  'm/s',
+  'mm','cm','dm','dam','hm','km',
+  'mg','kg',
+  'mL','ml','cL','dL',
+  'ms','min',
+  'USD','VND','EUR','GBP',
+  'm','g','t','L','s','h'
+ ]
+ .sort((a,b)=>b.length-a.length)
+ .map(x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))
+ .join('|');
+
+ math=math.replace(
+  new RegExp(
+   String.raw`(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )?\s*`+
+   `(${directUnitPattern})`+
+   String.raw`(?:\^\{?([23])\}?)?`,
+   'g'
+  ),
+  (whole,rawUnit,power)=>{
+   let unit=rawUnit;
+
+   if(power==='2')unit+='²';
+   if(power==='3')unit+='³';
+
+   if(!allowedUnits.has(unit))
+    return whole;
+
+   return holdText(unit);
+  }
+ );
+
+ // Không có đơn vị thì giữ nguyên toàn bộ công thức.
+ if(!units.length)
+  return `$${math}$`;
+
+ // ============================================================
+ // 5. Tách phần toán và phần đơn vị
+ // ============================================================
 
  /*
-  Tách công thức tại đơn vị.
-
   Ví dụ:
-    V=125\ \si{\centi\meter\cubic}
+
+  $V=125\ \si{\centi\meter\cubic}$
+
   thành:
-    $V=125$ cm³
+
+  $V=125$ cm³
+
+  và:
+
+  $25 \mathrm{USD}$
+
+  thành:
+
+  $25$ USD
  */
+
  const parts=math.split(/(UNITTEXT\d+END)/);
 
  return parts.map(part=>{
-  const m=part.match(/^UNITTEXT(\d+)END$/);
-  if(m)return units[Number(m[1])];
+  const match=part.match(/^UNITTEXT(\d+)END$/);
 
-  // Xóa khoảng trắng LaTeX thừa sát đơn vị.
-  part=part.replace(/(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+\s*$/g,'');
-  part=part.replace(/^\s*(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+/g,'');
+  if(match)
+   return units[Number(match[1])];
 
-  return part.trim()?`$${part}$`:'';
+  // Xóa khoảng cách LaTeX thừa trước/sau đơn vị.
+  part=part.replace(
+   /(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+\s*$/g,
+   ''
+  );
+
+  part=part.replace(
+   /^\s*(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+/g,
+   ''
+  );
+
+  return part.trim()
+   ? `$${part}$`
+   : '';
  }).filter(Boolean).join(' ');
 }
 // function convertUnits(text){
