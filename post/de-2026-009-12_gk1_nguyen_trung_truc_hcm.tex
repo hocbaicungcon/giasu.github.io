@@ -1,0 +1,707 @@
+9,8 m/s²
+\begin{center}
+	\textbf{{\Huge ĐỀ 007}}
+\end{center}
+\subsubsection*{Phần I. Thí sinh trả lời từ câu 1 đến câu 12, mỗi câu hỏi chọn một phương án.}
+\setcounter{bt}{0}\setcounter{bt}{0}\setlist[enumerate,1]{label=\quad\bfseries\Alph*.}
+\begin{baitap}
+	%\textbf{Câu 1.}
+	Cho hàm số $y = \frac{2x^3}{3} - 16x + 1$. Hàm số đã cho đồng biến trên khoảng nào dưới đây?
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $(3; +\infty)$.
+			\item $(-\infty; -2)$.
+			\item $(2; 4)$.
+			\item $(-2; 2)$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{A}
+		Ta có $y' = 2x^2 - 16$. Bảng biến thiên:
+		\begin{center}
+			\begin{tikzpicture}
+				\tkzTabInit[lgt=1.2,espcl=2.5]
+				{$x$/1,$y'$/1,$y$/2}
+				{$-\infty$,$-2\sqrt{2}$,$2\sqrt{2}$,$+\infty$}
+				\tkzTabLine{,+,0,-,0,+,}
+				\tkzTabVar{-/$-\infty$,
+					+/$1+\frac{64\sqrt{2}}{3}$,
+					-/$1-\frac{64\sqrt{2}}{3}$,
+					+/$+\infty$}
+			\end{tikzpicture}
+		\end{center}
+		Vì $(3; +\infty) \subset (2\sqrt{2}; +\infty)$ nên hàm số đồng biến trên khoảng $(3; +\infty)$.
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 2.}
+	Cho hàm số $y = \dfrac{x^2 - 4x + 5}{x - 2}$. Khẳng định nào sau đây là đúng?
+	\begin{enumerate}
+		\item Điểm cực tiểu của hàm số là $2$.
+		\item Cực đại của hàm số bằng $1$.
+		\item Hàm số có hai điểm cực trị cùng dấu.
+		\item Giá trị cực đại của hàm số lớn hơn giá trị cực tiểu của hàm số.
+	\end{enumerate}
+	\begin{traloi}
+		\dapan{C}
+		Tập xác định $\mathcal{D} = \mathbb{R} \setminus \{2\}$.
+		Ta có $$y' = \frac{(2x - 4)(x - 2) - (x^2 - 4x + 5)}{(x - 2)^2} = \frac{x^2 - 4x + 3}{(x - 2)^2}$$
+		$y' = 0 \Leftrightarrow x = 1$ hoặc $x = 3$.
+		Các điểm cực trị của hàm số là $x = 1$ và $x = 3$, đều là các số dương (cùng dấu).
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 3.}
+	Cho hàm số $y = \frac{x^3}{3} - \frac{x^2}{2} - 2x + 1$. Khẳng định nào sau đây là sai?
+	\begin{enumerate}
+		\item Điểm cực đại của hàm số là $M\left(-1; \frac{13}{6}\right)$.
+		\item Đồ thị hàm số có hai điểm cực trị nằm về hai phía của trục tung.
+		\item Giá trị cực tiểu của hàm số bằng $-\frac{7}{3}$.
+		\item Hàm số đạt cực tiểu tại $x = 2$.
+	\end{enumerate}
+	\begin{traloi}
+		\dapan{A}
+		Ta có $y' = x^2 - x - 2 = 0 \Leftrightarrow x = -1$ hoặc $x = 2$.
+		Hàm số đạt cực đại tại $x = -1$, điểm cực đại của đồ thị hàm số mới là $M\left(-1; \frac{13}{6}\right)$, còn điểm cực đại của hàm số là $x = -1$. Do đó khẳng định A sai về cách dùng thuật ngữ.
+	\end{traloi}
+\end{baitap}
+\begin{baitap}
+	%\textbf{Câu 4.}
+	Cho hàm số $y=f(x)$ có đạo hàm liên tục trên $\mathbb{R}$. Hình vẽ bên là đồ thị đạo hàm của nó. Hàm số $y=f(x)$ nghịch biến trên khoảng nào dưới đây?
+	\begin{center}
+		% Graph of the derivative function f'(x)
+		\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=0.95]
+			
+			% Define bounding box
+			\def\xmin{-1.8} \def\xmax{3.5}
+			\def\ymin{-2.2} \def\ymax{2.2}
+			
+			% Scope to clip the curve
+			\begin{scope}
+				\clip (\xmin,\ymin) rectangle (\xmax,\ymax);
+				
+				% Plot polynomial curve passing through (-1,0), (1/2,0), (5/2,0)
+				% f'(x) = 0.5 * (x + 1) * (x - 0.5)^2 * (x - 2.5)
+				\draw[thick, smooth, samples=200, domain=\xmin:\xmax]
+				plot(\x, {0.5*(\x + 1)*((\x - 0.5)^2)*(\x - 2.5)});
+			\end{scope}
+			
+			% Coordinate axes
+			\draw[->, thick] (\xmin,0) -- (\xmax,0) node[right, font=\small]{$x$};
+			\draw[->, thick] (0,\ymin) -- (0,\ymax) node[above, font=\small]{$y$};
+			
+			% Origin
+			\node[above left, font=\small] at (0,0) {$O$};
+			
+			% X-axis intersections and labels
+			\fill (-1,0) circle (1.5pt) node[below left, font=\small] {$-1$};
+			\fill (0.5,0) circle (1.5pt) node[above, font=\small] {$\frac{1}{2}$};
+			\fill (2.5,0) circle (1.5pt) node[above left, font=\small] {$\frac{5}{2}$};
+			
+		\end{tikzpicture}
+	\end{center}
+
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $\left(-1;\frac{5}{2}\right)$.
+			\item $\left(\frac{1}{2};+\infty\right)$.
+			\item $\left(\frac{5}{2};+\infty\right)$.
+			\item $(-\infty;-1)$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{A} 
+		Hàm số $y = f(x)$ nghịch biến trên các khoảng mà $f'(x) < 0$ (phần đồ thị $f'(x)$ nằm phía dưới trục hoành).
+		Dựa vào đồ thị hàm số $y=f'(x)$, ta thấy $f'(x) \le 0$ trên $\left[-1; \frac{5}{2}\right]$.
+		Do đó, hàm số $y=f(x)$ nghịch biến trên $\left(-1;\frac{5}{2}\right)$. Trong các phương án, khoảng $ \left(-1;\frac{5}{2}\right) $ thỏa mãn.
+	\end{traloi}
+\end{baitap}
+\begin{baitap}
+	%\textbf{Câu 5.}
+	Cho hàm số $y = x^3 + 3x^2 - 3x + 2$. Phương trình đường thẳng đi qua hai điểm cực trị của đồ thị hàm số là:
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $y = -4x + 11$.
+			\item $y = 4x + 11$.
+			\item $y = -4x + 3$.
+			\item $y = -4x + 1$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{C}
+		Ta có $y'=3x^2+6x-3=3(x^2+2x-1)$. Giải phương trình  $y'=0$ tìm được nghiệm $ x=-1-\sqrt{2}$ hoặc $x=-1+\sqrt{2}$.
+		 Từ đó tìm được toạ độ hai điểm cực trị là $ A(-1+ \sqrt{2};7-4\sqrt{2}) $ và $ B(-1- \sqrt{2};7+4\sqrt{2}) $.  
+		 Phương trình đường thẳng đi qua 2 điểm này là 
+		 $$ \frac{x-x_A}{x_B-x_A}=\frac{y-y_A}{y_B-y_A} $$
+		Từ đó tìm được đường thẳng đi qua hai điểm cực trị là $y=-4x+3$.
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 6.}
+	Một chất điểm chuyển động trên trục tọa độ có phương trình chuyển động là $s(t) = \frac{1}{3}t^3 - 5t^2 + 24t$ (trong đó $t$ tính bằng giây, $t \ge 0$ và $s$ tính bằng mét). Khi đó, $v(t) = s'(t)$ là vận tốc của chất điểm. Trong khoảng thời gian nào (đơn vị giây) tính từ lúc bắt đầu chuyển động, vận tốc của chất điểm giảm?
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $(0; 6)$.
+			\item $(5; +\infty)$.
+			\item $(0; 5)$.
+			\item $(4; 6)$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{C}
+		Ta có $v(t) = s'(t) = t^2 - 10t + 24$.
+		Gia tốc của chất điểm $a(t) = v'(t) = 2t - 10$.
+		Vận tốc của chất điểm giảm khi $v'(t) < 0 \Leftrightarrow 2t - 10 < 0 \Leftrightarrow t < 5$.
+		Do $t \ge 0$ nên $t \in (0; 5)$.
+	\end{traloi}
+\end{baitap}
+\begin{baitap}
+	%\textbf{Câu 7.}
+	Cho hàm số $y=f(x)$ xác định, liên tục trên $\mathbb{R} \setminus \{3\}$ và có đồ thị là đường cong trong hình vẽ bên. Hàm số đã cho đồng biến trên khoảng nào dưới đây?
+	\begin{center}
+		% Giả định hàm số là y = (x^2 - 3x + 3) / (x - 3) = x + 3/ (x - 3)
+		\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=0.5]
+			
+			% Khai báo giới hạn cửa sổ vẽ
+			\def\xmin{-3.5} \def\xmax{10.5}
+			\def\ymin{-3.5} \def\ymax{10.5}
+			
+			\begin{scope}
+				\clip (\xmin,\ymin) rectangle (\xmax,\ymax);
+				
+				% Tiệm cận xiên: y = x
+				\draw[black, thin, domain=\xmin:\xmax] plot(\x, {\x});
+				
+				% Đồ thị y = x + 1/(x-3)
+				\draw[thick,domain=\xmin:2.9,samples=150,smooth]
+				plot (\x,{\x+1/(\x-3)});
+				
+				\draw[thick,domain=3.1:\xmax,samples=150,smooth]
+				plot (\x,{\x+1/(\x-3)});
+				
+				% Các đường gióng nét đứt tới điểm cực trị
+				% Cực đại (2, 1)
+				\draw[dashed, thin] (0, 1) -- (2, 1) -- (2, 0);
+				% Cực tiểu (4, 5)
+				\draw[dashed, thin] (0, 5) -- (4, 5) -- (4, 0);
+				
+			\end{scope}
+			
+			% Tiệm cận đứng x = 3
+			\draw[black, thin] (3, \ymin) -- (3, \ymax);
+			
+			% Trục tọa độ
+			\draw[->, thick] (\xmin, 0) -- (\xmax, 0) node[above, font=\small] {$x$};
+			\draw[->, thick] (0, \ymin) -- (0, \ymax) node[right, font=\small] {$y$};
+			
+			% Gốc tọa độ O
+			\node[above left, font=\small] at (0,0) {$O$};
+			
+			% Nhãn trên trục x và z
+			\node[below, font=\small] at (2,0) {$2$};
+			\node[below right, font=\small] at (3,0) {$3$};
+			\node[below right, font=\small] at (4,0) {$4$};
+			
+			% Nhãn trên trục y
+			\node[left, font=\small] at (0,1) {$1$};
+			\node[left, font=\small] at (0,5) {$5$};
+			
+		\end{tikzpicture}
+	\end{center}
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $(4; +\infty)$.
+			\item $(-\infty; 3)$.
+			\item $(3; 5)$.
+			\item $(2; 3)$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{A}
+		Dựa vào đồ thị hàm số, ta thấy đi từ trái sang phải:
+		\begin{itemize}
+			\item Trên khoảng $(4; +\infty)$, đồ thị hàm số đi lên, do đó hàm số đồng biến trên khoảng $(4; +\infty)$.
+		\item Trên các khoảng $(2; 3)$ và $(3; 4)$, đồ thị đi xuống (hàm số nghịch biến).
+		\end{itemize}
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 8.}
+	Cho hàm số $y = f(x)$ có đạo hàm $f'(x) = (x^2 - 9)(x^2 - 4x + 3)(x + 1)^2$, $\forall x \in \mathbb{R}$. Điểm cực đại của hàm số đã cho là:
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $x = -1$.
+			\item $x = 3$.
+			\item $x = 1$.
+			\item $x = -3$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{D}
+		Ta có $f'(x) = (x - 3)(x + 3)(x - 1)(x - 3)(x + 1)^2 = (x + 3)(x - 1)(x - 3)^2(x + 1)^2$.
+		Đạo hàm $f'(x) = 0$ có các nghiệm $x = -3$, $x = 1$ (nghiệm đơn) và $x = -1$, $x = 3$ (nghiệm kép).
+		Qua $x = -3$, $f'(x)$ đổi dấu từ dương sang âm nên $x = -3$ là điểm cực đại của hàm số.
+	\end{traloi}
+	\end{baitap}
+\begin{baitap}
+	%\textbf{Câu 9.}
+	Cho hàm số $y = \ln(x^3 - 6x^2 + 9x - 2)$. Điểm cực đại của hàm số đã cho là:
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $x = 3$.
+			\item $x = 2$.
+			\item $x = 1$.
+			\item $y = \ln 2$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{C}
+		Tập xác định $D=\{x\in\mathbb{R}\mid x^3-6x^2+9x-2>0\}$.
+		
+		Ta có
+		\[
+		y'=\frac{3x^2-12x+9}{x^3-6x^2+9x-2}
+		=\frac{3(x-1)(x-3)}{x^3-6x^2+9x-2}.
+		\]
+		Trên tập xác định, mẫu số dương nên dấu của $y'$ là dấu của $(x-1)(x-3)$.
+		
+		Tại $x=1$, ta có $x^3-6x^2+9x-2=2>0$ và $y'$ đổi dấu từ dương sang âm. Do đó hàm số đạt cực đại tại $x=1$.
+		
+		Vậy điểm cực đại của hàm số là $x=1$.
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 10.}
+	Cho hàm số $y = f(x)$ xác định, liên tục trên $\mathbb{R}$ và có bảng biến thiên như hình vẽ bên. Cực đại của hàm số đã cho bằng:
+	\begin{center}
+		\begin{tikzpicture}
+			\tkzTabInit[lgt=1.5,espcl=2.5]{$x$/1, $f'(x)$/1, $f(x)$/2}{$-\infty$, $-1$, $3$, $+\infty$}
+			\tkzTabLine{,+,0,-,0,+,}
+			\tkzTabVar{-/$-\infty$, +/$1$, -/$-3$, +/$+\infty$}
+		\end{tikzpicture}
+	\end{center}
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $-3$.
+			\item $-1$.
+			\item $3$.
+			\item $1$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{D}
+		Cực đại (giá trị cực đại) của hàm số là $y_{\text{CĐ}} = 1$ tại $x = -1$.
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 11.}
+	Cho hàm số $y = 1 + \sqrt{4 - x^2}$. Hàm số đã cho đồng biến trên khoảng nào dưới đây?
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $(-\infty; 0)$.
+			\item $(-2; 0)$.
+			\item $(0; 2)$.
+			\item $(\sqrt{2}; 2)$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{B}
+		Tập xác định $D = [-2; 2]$.
+		Ta có $$y' = \frac{-x}{\sqrt{4 - x^2}}$$
+		$y' > 0 \Leftrightarrow -x > 0 \Leftrightarrow x < 0$.
+		Kết hợp với tập xác định, hàm số đồng biến trên khoảng $(-2; 0)$.
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 12.}
+	Cho hàm số $y = x - 2\sin x$. Số điểm cực tiểu của hàm số trên khoảng $(0; 2\pi)$ là:
+	\begin{multicols}{4}
+		\begin{enumerate}
+			\item $3$.
+			\item $0$.
+			\item $1$.
+			\item $2$.
+		\end{enumerate}
+	\end{multicols}
+	\begin{traloi}
+		\dapan{C}
+		Ta có $y'=1-2\cos x$. Khi đó
+		\[
+		y'=0\Leftrightarrow \cos x=\frac{1}{2}
+		\Leftrightarrow x=\frac{\pi}{3}\ \text{hoặc}\ x=\frac{5\pi}{3}, \text{ vì } x\in(0;2\pi).
+		\]		
+		Qua $x=\frac{\pi}{3}$, $y'$ đổi dấu từ âm sang dương nên hàm số đạt cực tiểu; qua $x=\frac{5\pi}{3}$, $y'$ đổi dấu từ dương sang âm nên hàm số đạt cực đại.
+		
+		Vậy hàm số có $1$ điểm cực tiểu trên $(0;2\pi)$.
+	\end{traloi}
+\end{baitap}
+
+\subsubsection*{Phần II. Thí sinh trả lời từ câu 1 đến câu 4, trong ý a), b), c), d) ở mỗi câu câu, thí sinh chọn ĐÚNG hoặc SAI.}
+\setcounter{bt}{0}\setcounter{bt}{0}\setlist[enumerate,1]{label=\quad\bfseries\alph*)}
+\begin{baitap}
+	%\textbf{Câu 1.}
+	Cho hàm số $y = f(x)$ có đạo hàm $f'(x) = (2x^2 + x - 1)\mathrm{e}^x$ với mọi $x \in \mathbb{R}$. Gọi $(C)$ là đồ thị của hàm số $y = f(x)$. 
+	\begin{enumerate}
+		\item Hàm số $f(x)$ đạt cực tiểu tại điểm $x = -1$ và đạt cực đại tại điểm $x = \frac{1}{2}$.
+		\item $f\left(\frac{1}{4}\right) < f\left(\frac{1}{5}\right) < f\left(\frac{1}{6}\right)$.
+		\item Xét hàm số $g(x) = f'(x)$. Hàm số $g(x)$ đạt cực đại tại điểm $x = 0$.
+		\item Không tồn tại tiếp tuyến nào của đồ thị $(C)$ có hệ số góc nhỏ hơn $-1$.
+	\end{enumerate}
+	\begin{traloi}
+		\dapan{Sai -- Đúng -- Sai -- Đúng}
+		Ta có
+		\[
+		f'(x)=(2x^2+x-1)\mathrm{e}^x=(2x-1)(x+1)\mathrm{e}^x.
+		\]
+		Vì $\mathrm{e}^x>0$ với mọi $x\in\mathbb{R}$ nên ta có bảng biến thiên sau:
+		\begin{center}
+			\begin{tikzpicture}
+			\tkzTabInit[lgt=1.2,espcl=2]
+			{$x$/1,$f'(x)$/1,$f(x)$/2}
+			{$-\infty$,$-1$,$\frac{1}{2}$,$+\infty$}
+			\tkzTabLine{,+,0,-,0,+,}
+			\tkzTabVar{-/,
+				+/,
+				-/,
+				+/}
+		\end{tikzpicture}
+		\end{center}
+		\begin{enumerate}
+			\item \textbf{Sai}. Hàm số đạt cực đại tại $x=-1$ và đạt cực tiểu tại $x=\frac12$.
+			
+			\item \textbf{Đúng}. Trên $\left(-1;\frac12\right)$, hàm số $f(x)$ nghịch biến. Vì $\frac16<\frac15<\frac14$ nên
+			$f\left(\frac14\right)<f\left(\frac15\right)<f\left(\frac16\right)$.
+			
+			\item \textbf{Sai}. Với $g(x)=f'(x)$, ta có
+			\[
+			g'(x)=(2x^2+5x)\mathrm{e}^x=x(2x+5)\mathrm{e}^x.
+			\]
+			Ta có bảng biến thiên của hàm số $g(x)= f'(x) $:
+			\begin{center}
+				\begin{tikzpicture}
+					\tkzTabInit[lgt=3, espcl=2.5]{$x$/1,$g'(x)=f''(x)$/1,$g(x)=f'(x)$/1.5}
+					{
+						$-\infty$,
+						$-\frac{5}{2}$,
+						$0$,
+						$ +\infty $
+					}
+					\tkzTabLine{,+,z,-,z,+,}
+					\tkzTabVar{-/$0$, +/, -/$-1$,+/}
+				\end{tikzpicture}
+			\end{center}
+			Tại $x=0$, $g'(x)$ đổi dấu từ âm sang dương nên $g(x)$ đạt cực tiểu, không phải cực đại.
+			
+			\item \textbf{Đúng}. Hệ số góc của tiếp tuyến tại điểm có hoành độ $x$ là $k = f'(x) = (2x^2 + x - 1)\mathrm{e}^x=g(x)$.
+			
+			Dựa vào bảng biến thiên của hàm số $ g(x) $ ở phần trên ta thấy ngay $ g(x) \geqslant -1 $. Do đó không tồn tại các tiếp tuyến có hệ số góc nhỏ hơn $-1$.
+		\end{enumerate}
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 2.}
+	Cho hàm số $y = -\frac{1}{3}x^3 + 2x^2 - 3x$ có đồ thị là $(C)$. Gọi $A$ và $B$ là hai điểm cực trị của đồ thị $(C)$.
+	\begin{enumerate}
+		\item Đạo hàm của hàm số đã cho là $y' = -x^2 + 4x - 3$.
+		\item Hàm số đã cho nghịch biến trên khoảng $(1; 3)$.
+		\item Cho điểm $I(3; -2)$. Diện tích tam giác $IAB$ bằng $2$.
+		\item Gọi $d$ là đường thẳng đi qua hai điểm cực trị $A$ và $B$. Đường thẳng $d$ cắt trục hoành $Ox$ tại $M$ và cắt trục tung $Oy$ tại $N$ (với $O$ là gốc tọa độ). Bán kính đường tròn ngoại tiếp tam giác $OMN$ bằng $\frac{\sqrt{13}}{2}$.
+	\end{enumerate}
+	\begin{traloi}
+		\dapan{Đúng -- Sai -- Đúng -- Đúng}
+		Ta có $y'=-x^2+4x-3=-(x-1)(x-3)$.
+		
+		\begin{enumerate}
+			\item \textbf{Đúng}. Đạo hàm của hàm số là $y'=-x^2+4x-3$.
+			
+			\item \textbf{Sai}. Trên $(1;3)$, ta có $y'>0$ nên hàm số đồng biến trên khoảng $(1;3)$.
+			
+			\item \textbf{Đúng}. Ta có $y'=0\Leftrightarrow x=1$ hoặc $x=3$. Hai điểm cực trị là
+			\[
+			A\left(1;-\frac{4}{3}\right),\qquad B(3;0).
+			\]
+			Với $I(3;-2)$, ta có $BI=2$ và khoảng cách từ $A$ đến đường thẳng $BI$ bằng $2$. Do đó
+			\[
+			S_{IAB}=\frac{1}{2}\cdot2\cdot2=2.
+			\]
+			
+			\item \textbf{Đúng}. Đường thẳng qua $A,B$ có hệ số góc
+			$k=\frac{0+\frac43}{3-1}=\frac23$, nên có phương trình: $$d:y=\frac23x-2$$
+			
+			Suy ra $M(3;0)$ và $N(0;-2)$. Tam giác $OMN$ vuông tại $O$ và
+			\[
+			MN=\sqrt{OM^2+ON^2}=\sqrt{3^2+2^2}=\sqrt{13}.
+			\]
+			Vậy bán kính đường tròn ngoại tiếp tam giác $OMN$ là
+			$R=\frac{MN}{2}=\frac{\sqrt{13}}{2}$.
+		\end{enumerate}
+	\end{traloi}
+\end{baitap}
+\begin{baitap}
+	%\textbf{Câu 3.}
+	Cho hàm số $y=\dfrac{-3x^2-2x-2}{3x-1}$ có đồ thị là $(C)$. 
+	\begin{enumerate}
+		\item Đạo hàm của hàm số đã cho là $y'=\frac{-9x^2+6x+8}{(3x-1)^2}$.
+		\item Hàm số đã cho đồng biến trên khoảng $\left(-\frac{2}{3}; \frac{4}{3}\right)$.
+		\item Đường thẳng đi qua hai điểm cực trị của đồ thị $(C)$ vuông góc với đường thẳng $d_1 : x+2y-1=0$.
+		\item Hai điểm cực trị của đồ thị $(C)$ đối xứng nhau qua đường thẳng $\Delta : x-2y-3=0$.
+	\end{enumerate}
+	\begin{traloi}
+		\dapan{Đúng -- Sai -- Sai -- Đúng}
+		Tập xác định $D=\mathbb{R}\setminus\left\{\frac13\right\}$. Ta có
+		\[
+		y'=\frac{-9x^2+6x+8}{(3x-1)^2}
+		=-\frac{(3x-4)(3x+2)}{(3x-1)^2}.
+		\]
+		
+		\begin{enumerate}
+			\item \textbf{Đúng}. Đạo hàm của hàm số là
+			$y'=\dfrac{-9x^2+6x+8}{(3x-1)^2}$.
+			
+			\item \textbf{Sai}. Ta có $y'>0$ khi $-\frac23<x<\frac43$, nhưng $x=\frac13$ không thuộc tập xác định. Do đó hàm số đồng biến trên từng khoảng
+			$\left(-\frac23;\frac13\right)$ và $\left(\frac13;\frac43\right)$, không đồng biến trên $\left(-\frac23;\frac43\right)$.
+			
+			\item \textbf{Sai}. Từ $y'=0$ suy ra $x=-\frac23$ hoặc $x=\frac43$. Hai điểm cực trị là
+			\[
+			A\left(-\frac23;\frac23\right),\qquad
+			B\left(\frac43;-\frac{10}{3}\right).
+			\]
+			Đường thẳng $AB$ có hệ số góc
+			$k_{AB}=\frac{-\frac{10}{3}-\frac23}{\frac43+\frac23}=-2$.
+			Đường thẳng $d_1:x+2y-1=0$ có hệ số góc $k_{d_1}=-\frac12$. Vì tích hai hệ số góc này  bằng $ 1 $, nên $AB$ không vuông góc với $d_1$.
+			
+			\item \textbf{Đúng}. Trung điểm của $AB$ là $I\left(\frac13;-\frac43\right)$ và $I\in\Delta$. Mặt khác $k_{\Delta}=\frac12$, nên $k_{AB}k_{\Delta}=-1$. Do đó $\Delta$ là đường trung trực của $AB$, suy ra $A,B$ đối xứng nhau qua $\Delta$.
+		\end{enumerate}
+	\end{traloi}
+	\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 4.}
+	Công ty A ký hợp đồng cung cấp một lô thiết bị cho đối tác B. Hai bên thỏa thuận giá như sau:
+	\begin{itemize}
+		\item Nếu số lượng thiết bị đặt hàng không vượt quá $40$ chiếc, giá bán mỗi chiếc được cố định là $40$ triệu đồng.
+		\item Nếu số lượng đặt hàng lớn hơn $40$ chiếc, thì kể từ chiếc thứ $41$ trở đi, cứ mỗi một chiếc đặt thêm sẽ làm giảm giá bán mỗi chiếc của toàn bộ thiết bị đi $100$ nghìn đồng.
+	\end{itemize}
+	Biết rằng bộ phận kế toán của công ty A ước tính chi phí sản xuất cho $x$ thiết bị được cho bởi hàm số $C(x) = \frac{1}{300}x^3 - 0{,}2x^2 + 20x$ (triệu đồng). Năng lực sản xuất tối đa của công ty A cho đơn hàng này giới hạn ở mức $90$ thiết bị. Gọi $x$ (chiếc) là tổng số thiết bị đối tác B đặt hàng, biết rằng $x > 40$ và giả sử $x$ có thể nhận các giá trị thực liên tục để thuận tiện cho việc khảo sát. 
+	\begin{enumerate}
+		\item Mức giảm giá trên mỗi thiết bị khi đặt hàng $x$ (chiếc) với $x > 40$ là $100(x - 40)$ (triệu đồng).
+		\item Hàm số biểu diễn lợi nhuận của công ty A là $L(x) = -\frac{1}{300}x^3 + 0{,}1x^2 + 24x$ (triệu đồng).
+		\item Hàm số lợi nhuận $L(x)$ của công ty A đạt cực đại tại $x = 60$.
+		\item Tại điểm cực đại của hàm số lợi nhuận, mức giá bán của mỗi thiết bị là $38$ triệu đồng.
+	\end{enumerate}
+	\begin{traloi}
+		\dapan{Sai -- Đúng -- Đúng -- Đúng}
+		\begin{enumerate}
+			\item \textbf{Sai}. Vì $100$ nghìn đồng $=0{,}1$ triệu đồng nên mức giảm giá trên mỗi thiết bị là
+			$0{,}1(x-40)$ (triệu đồng).
+			
+			\item \textbf{Đúng}. Giá bán mỗi thiết bị khi $x>40$ là
+			\[
+			p(x)=40-0{,}1(x-40)=44-0{,}1x.
+			\]
+			Do đó doanh thu là $R(x)=xp(x)=44x-0{,}1x^2$. Suy ra
+			\[
+			L(x)=R(x)-C(x)
+			=-\frac{1}{300}x^3+0{,}1x^2+24x.
+			\]
+			
+			\item \textbf{Đúng}. Với $40<x\leq90$, ta có
+			\[
+			L'(x)=-\frac{1}{100}x^2+0{,}2x+24
+			=-\frac{1}{100}(x-60)(x+40).
+			\]
+			Suy ra $L'(x)>0$ khi $40<x<60$ và $L'(x)<0$ khi $60<x\leq90$. Vậy $L(x)$ đạt cực đại tại $x=60$.
+			
+			\item \textbf{Đúng}. Tại $x=60$, giá bán mỗi thiết bị là
+			\[
+			p(60)=44-0{,}1\cdot60=38\text{ (triệu đồng).}
+			\]
+		\end{enumerate}
+	\end{traloi}
+\end{baitap}
+
+\subsubsection*{Phần III. Thí sinh trả lời từ câu 1 đến câu 6 (không làm tròn các phép tính trung gian trong các câu từ 1 đến câu 6).}
+\setcounter{bt}{0}
+\begin{baitap}
+	%\textbf{Câu 1.}
+	Lợi nhuận tích lũy của một dự án khởi nghiệp sau $t$ tháng triển khai được ước tính bằng công thức $$P(t) = -\frac{t^4}{12} + 2t^3 + 10,$$ (đơn vị: triệu đồng), với thời gian $t \ge 0$. Nếu xem $P(t)$ là một hàm số thì đạo hàm $P'(t)$ biểu diễn tốc độ tăng trưởng lợi nhuận của dự án tại tháng thứ $t$. Biết khoảng thời gian dài nhất mà tốc độ tăng trưởng lợi nhuận của dự án liên tục tăng là khoảng $(m; n)$. Tính giá trị biểu thức $S = m + 2n$.
+	\begin{traloi}
+		\dapan{24}
+		Tốc độ tăng trưởng lợi nhuận là
+		$P'(t)=-\frac{1}{3}t^3+6t^2$.
+		
+		Tốc độ tăng trưởng liên tục tăng khi $P'(t)$ là hàm số đồng biến, tức là
+		\[
+		P''(t)=-t^2+12t=t(12-t)>0.
+		\]
+		Vì $t\geq0$, suy ra $0<t<12$. Do đó $m=0$, $n=12$.	Vậy $S=m+2n=0+2\cdot12=24$.
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 2.}
+	Trong hội thao mùa hè, một học sinh trường THPT Nguyễn Trung Trực tham gia cuộc thi thể thao phối hợp (Chèo thuyền - Chạy bộ). Học sinh này đang ở trên thuyền Kayak tại vị trí $A$ trên mặt hồ, cách bờ hồ thẳng (tại điểm $B$) một khoảng \qty{4}{\kilo\meter}. Đích đến là vị trí $C$ dọc theo bờ hồ, cách $B$ một khoảng \qty{9}{\kilo\meter}.
+	\begin{center}
+		%!<\usetikzlibrary{calc}>
+		
+		\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=0.85]
+			
+			% Define vertices
+			\coordinate (B) at (0, 0);
+			\coordinate (A) at (0, 5);
+			\coordinate (D) at (3, 0);
+			\coordinate (C) at (8, 0);
+			
+			% Draw segment BC (shoreline extension)
+			\draw[thick] (-0.5, 0) -- (C);
+			
+			% Draw perpendicular segment AB
+			\draw[thick] (A) -- (B);
+			
+			% Draw path AD
+			\draw[thick] (A) -- (D);
+			
+			% Plot points
+			\foreach \p in {A, B, D, C} {
+				\fill (\p) circle (2.0pt);
+			}
+			
+			% Vertex labels
+			\node[left, font=\small] at (A) {$A$};
+			\node[below, font=\small] at (B) {$B$};
+			\node[above right, font=\small] at (D) {$D$};
+			\node[below, font=\small] at (C) {$C$};
+			
+		\end{tikzpicture}
+	\end{center}
+	Theo chiến thuật, học sinh sẽ chèo thuyền thẳng từ $A$ đến một điểm $D$ nằm giữa $B$ và $C$ trên bờ, sau đó lập tức lên bờ chạy bộ từ $D$ đến đích $C$. Biết vận tốc chèo thuyền của học sinh là \qty{6}{\kilo\meter\per\hour} và vận tốc chạy bộ trên bờ là \qty{10}{\kilo\meter\per\hour}.
+	
+	Gọi $x$ (km) là khoảng cách từ $B$ đến điểm cập bến $D$ (với $0 < x < 15$) và $t(x)$ là hàm số biểu diễn tổng thời gian hoàn thành chặng đua. Hỏi hàm số $t(x)$ đạt cực tiểu tại điểm $x$ bằng bao nhiêu?
+	\begin{traloi}
+		\dapan{3}
+		Khoảng cách $AD = \sqrt{x^2 + 4^2} = \sqrt{x^2 + 16}$ và $DC = 9 - x$.
+		Tổng thời gian $$t(x) = \frac{\sqrt{x^2 + 16}}{6} + \frac{9 - x}{10}.$$
+		Ta có $t'(x) = \frac{x}{6\sqrt{x^2 + 16}} - \frac{1}{10}$. Giải phương trình 
+		$t'(x) = 0 $ tìm được nghiệm $x = 3$.
+	\end{traloi}
+\end{baitap}
+
+\begin{baitap}
+	%\textbf{Câu 3.}
+	Để chuẩn bị cho lễ hội Trung thu, các bạn học sinh lớp 12 trường THPT Nguyễn Trung Trực thiết kế những chiếc lồng đèn có dạng khối lăng trụ lục giác đều.
+	\begin{center}
+%!<\usetikzlibrary{calc,arrows.meta,patterns}>
+
+% Giả định: Xoay khối lăng trụ đứng lục giác đều ở phần bên phải một góc -130 độ quanh tâm của nó
+\begin{tikzpicture}[line cap=round, line join=round, >=stealth, scale=0.85]
+	
+	% -------------------------------------------------------------
+	% PHẦN BÊN TRÁI: Tấm bìa chia làm 6 phần bằng nhau
+	% -------------------------------------------------------------
+	\begin{scope}[shift={(-7,0)}]
+		% Đổ hoa văn chấm cho tấm bìa
+		\fill[pattern=crosshatch dots, pattern color=black!40] (0,0) rectangle (6,3.5);
+		\draw[thick] (0,0) rectangle (6,3.5);
+		
+		% 5 đường nét đứt chia thành 6 phần
+		\foreach \i in {1,...,5} {
+			\draw[dashed, thick] (\i,0) -- (\i,3.5);
+		}
+	\end{scope}
+	
+	% -------------------------------------------------------------
+	% PHẦN GIỮA: Mũi tên chỉ sự chuyển đổi
+	% -------------------------------------------------------------
+	\draw[->, ultra thick, -{Stealth[length=3mm, width=2.5mm]}] (-0.3, 1.75) -- (1.0, 1.75);
+	
+	% -------------------------------------------------------------
+	% PHẦN BÊN PHẢI: Khối lăng trụ lục giác đều (Đã xoay -130 độ)
+	% -------------------------------------------------------------
+	\begin{scope}[shift={(4,.5)},scale=.8]
+		% Bán kính và chiều cao
+		\def\r{1.8}
+		\def\h{3.5}
+		
+		% Xoay toàn bộ các đỉnh của khối lăng trụ đi -130 độ
+		% Góc ban đầu: 30 + i*60 -> Sau khi xoay: 30 + i*60 - 130 = -100 + i*60
+		\coordinate (B1) at ({+100+0*60}:\r*1 and \r*0.4);
+		\coordinate (B2) at ({+100+1*60}:\r*1 and \r*0.4);
+		\coordinate (B3) at ({+100+2*60}:\r*1 and \r*0.4);
+		\coordinate (B4) at ({+100+3*60}:\r*1 and \r*0.4);
+		\coordinate (B5) at ({+100+4*60}:\r*1 and \r*0.4);
+		\coordinate (B6) at ({+100+5*60}:\r*1 and \r*0.4);
+		
+		% Đỉnh mặt đáy trên
+		\coordinate (T1) at ($(B1)+(0,\h)$);
+		\coordinate (T2) at ($(B2)+(0,\h)$);
+		\coordinate (T3) at ($(B3)+(0,\h)$);
+		\coordinate (T4) at ($(B4)+(0,\h)$);
+		\coordinate (T5) at ($(B5)+(0,\h)$);
+		\coordinate (T6) at ($(B6)+(0,\h)$);
+		
+		% Tô màu các mặt nhìn thấy (sau khi xoay)
+		\fill[pattern=crosshatch dots, pattern color=black!30] (B2) -- (B3) -- (T3) -- (T2) -- cycle;
+		\fill[pattern=crosshatch dots, pattern color=black!30] (B3) -- (B4) -- (T4) -- (T3) -- cycle;
+		\fill[pattern=crosshatch dots, pattern color=black!30] (B4) -- (B5) -- (T5) -- (T4) -- cycle;
+		
+		% Các cạnh thấy của đáy dưới
+		\draw[thick] (B2) -- (B3) -- (B4) -- (B5);
+		% Các cạnh khuất của đáy dưới
+		\draw[dashed, thick] (B5) -- (B6) -- (B1) -- (B2);
+		
+		% Các cạnh đáy trên (thấy toàn bộ)
+		\draw[thick] (T1) -- (T2) -- (T3) -- (T4) -- (T5) -- (T6) -- cycle;
+		
+		% Các cạnh bên thấy được
+		\draw[thick] (B2) -- (T2);
+		\draw[thick] (B3) -- (T3);
+		\draw[thick] (B4) -- (T4);
+		\draw[thick] (B5) -- (T5);
+		
+		% Các cạnh bên bị khuất
+		\draw[dashed, thick] (B6) -- (T6);
+		\draw[dashed, thick] (B1) -- (T1);
+	\end{scope}
+	
+\end{tikzpicture}
+	\end{center}
+	Các bạn dự định sử dụng một tấm bìa hình chữ nhật, có chu vi bằng \qty{72}{\centi\meter}, chiều dài chiều rộng có thể thay đổi miễn là chu vi bằng \qty{72}{\centi\meter}. Tiếp đó chia tấm bìa thành 6 phần bằng nhau rồi gấp lại để làm mặt xung quanh của chiếc lồng đèn (như hình vẽ minh họa). Phần hai mặt đáy của lồng đèn được dán bằng giấy kiếng trong suốt. Giả sử phần hao hụt do các mép gấp, dán là không đáng kể.
+	
+	Gọi $x$ (cm) là độ dài cạnh đáy của chiếc lồng đèn (với $0 < x < 6$) và $V(x)$ là hàm số biểu diễn thể tích không gian bên trong chiếc lồng đèn. Hỏi giá trị cực đại của hàm số $V(x)$ bằng bao nhiêu $ \mathrm{cm^3} $? (làm tròn kết quả đến hàng đơn vị).
+	\begin{traloi}
+		\dapan{499}
+		Gọi $h$ là chiều cao của lồng đèn. Vì tấm bìa được chia thành $6$ phần bằng nhau nên một cạnh của tấm bìa có độ dài $6x$.
+		
+		Từ chu vi tấm bìa bằng \qty{72}{\centi\meter}, ta có
+		\[
+		2(6x+h)=72\Rightarrow h=36-6x.
+		\]
+		Diện tích đáy là diện tích lục giác đều cạnh $x$:
+		\[
+		S=\frac{3\sqrt{3}}{2}x^2.
+		\]
+		Do đó
+		\[
+		V(x)=\frac{3\sqrt{3}}{2}x^2(36-6x)
+		=54\sqrt{3}x^2-9\sqrt{3}x^3.
+		\]
+		Suy ra
+		\[
+		V'(x)=27\sqrt{3}x(4-x).
+		\]
+		Với $0<x<6$, $V'(x)$ đổi dấu từ dương sang âm tại $x=4$, nên $V(x)$ đạt cực đại tại $x=4$.
+		
+		Vậy
+		\[
+		V_{\max}=V(4)=288\sqrt{3}\approx499\ \unit{\cubic\centi\meter}.
+		\]
+	\end{traloi}
+\end{baitap}
