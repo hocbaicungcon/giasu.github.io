@@ -23,122 +23,20 @@ function commands(s,name,transform){
 }
 export function stripComments(s){return s.split('\n').map(line=>{for(let i=0;i<line.length;i++){if(line[i]==='\\'){i++;continue;}if(line[i]==='%')return line.slice(0,i);}return line;}).join('\n');}
 function convertUnits(text){
- const symbols={
-  meter:'m',
-  metre:'m',
-  second:'s',
-  gram:'g',
-  liter:'L',
-  litre:'L',
-  centi:'c',
-  milli:'m',
-  kilo:'k',
-  hour:'h',
-  minute:'min'
- };
-
- const unitPart=part=>{
-  const power=
-   /\\(?:cubic|cubed)\b/.test(part)?'³':
-   /\\(?:square|squared)\b/.test(part)?'²':'';
-
-  part=part.replace(/\\(?:cubic|cubed|square|squared)\b/g,'');
-
-  part=part.replace(/\\([a-zA-Z]+)/g,(command,name)=>{
-   if(name==='cdot')return '·';
-   if(!(name in symbols))
-    throw Error(`Đơn vị LaTeX chưa hỗ trợ: ${command}`);
-   return symbols[name];
-  });
-
-  return part+power;
- };
-
- const unitText=unit=>
-  unit.split(/\\per\b/).map(unitPart).join('/');
-
- text=text.replace(
-  /\\num\{([+-]?[\d.,]+)\}/g,
-  '$1'
- );
-
- text=text.replace(
-  /\\(?:SI|qty)\{((?:[^{}]|\{[^{}]*\})*)\}\{((?:[^{}]|\{[^{}]*\})*)\}/g,
-  (_,value,unit)=>`${value.replace(/\{,\}/g,',')} ${unitText(unit)}`
- );
-
- text=text.replace(
-  /\\(?:si|unit)\{((?:[^{}]|\{[^{}]*\})*)\}/g,
-  (_,unit)=>unitText(unit)
- );
-
- return text;
+ text=text.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
+ const unitMath=unit=>unit.split(/\\per\b/).map(part=>{
+  let power=part.includes('\\cubic')?3:part.includes('\\square')?2:null;
+  part=part.replace(/\\(?:cubic|square)\b/g,'');
+  const symbols={meter:'m',metre:'m',second:'s',gram:'g',liter:'L',litre:'L',centi:'c',milli:'m',kilo:'k',hour:'h',minute:'min'};
+  part=part.replace(/\\([a-zA-Z]+)/g,(command,name)=>{if(name==='cdot')return '\\cdot ';if(!(name in symbols))throw Error(`Đơn vị LaTeX chưa hỗ trợ: ${command}`);return symbols[name];});
+  return `\\mathrm{${part}}${power?`^{${power}}`:''}`;
+ }).join('/');
+ return text.replace(/\\SI\{([^{}]*)\}\{([^{}]*)\}/g,(_,value,unit)=>`${value}\\,${unitMath(unit)}`).replace(/\\si\{([^{}]*)\}/g,(_,unit)=>unitMath(unit));
 }
-function convertMathUnits(math){
- const units=[];
-
- const holdUnit=text=>{
-  const key=`UNITTEXT${units.length}END`;
-  units.push(convertUnits(text));
-  return key;
- };
-
- // \SI{5}{\meter}, \qty{5{,}9}{\centi\meter\cubic}
- math=math.replace(
-  /\\(?:SI|qty)\{((?:[^{}]|\{[^{}]*\})*)\}\{((?:[^{}]|\{[^{}]*\})*)\}/g,
-  holdUnit
- );
-
- // \si{\meter}, \unit{\meter\squared}
- math=math.replace(
-  /\\(?:si|unit)\{((?:[^{}]|\{[^{}]*\})*)\}/g,
-  holdUnit
- );
-
- // \num{5,9}
- math=math.replace(
-  /\\num\{([+-]?[\d.,]+)\}/g,
-  (_,value)=>value
- );
-
- if(!units.length)return `$${math}$`;
-
- /*
-  Tách công thức tại đơn vị.
-
-  Ví dụ:
-    V=125\ \si{\centi\meter\cubic}
-  thành:
-    $V=125$ cm³
- */
- const parts=math.split(/(UNITTEXT\d+END)/);
-
- return parts.map(part=>{
-  const m=part.match(/^UNITTEXT(\d+)END$/);
-  if(m)return units[Number(m[1])];
-
-  // Xóa khoảng trắng LaTeX thừa sát đơn vị.
-  part=part.replace(/(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+\s*$/g,'');
-  part=part.replace(/^\s*(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+/g,'');
-
-  return part.trim()?`$${part}$`:'';
- }).filter(Boolean).join(' ');
-}
-// function convertUnits(text){
-//  text=text.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
-//  const unitMath=unit=>unit.split(/\\per\b/).map(part=>{
-//   let power=part.includes('\\cubic')?3:part.includes('\\square')?2:null;
-//   part=part.replace(/\\(?:cubic|square)\b/g,'');
-//   const symbols={meter:'m',metre:'m',second:'s',gram:'g',liter:'L',litre:'L',centi:'c',milli:'m',kilo:'k',hour:'h',minute:'min'};
-//   part=part.replace(/\\([a-zA-Z]+)/g,(command,name)=>{if(name==='cdot')return '\\cdot ';if(!(name in symbols))throw Error(`Đơn vị LaTeX chưa hỗ trợ: ${command}`);return symbols[name];});
-//   return `\\mathrm{${part}}${power?`^{${power}}`:''}`;
-//  }).join('/');
-//  return text.replace(/\\SI\{([^{}]*)\}\{([^{}]*)\}/g,(_,value,unit)=>`${value}\\,${unitMath(unit)}`).replace(/\\si\{([^{}]*)\}/g,(_,unit)=>unitMath(unit));
-// }
 export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ biên dịch TikZ');}}={}){
  let s=stripComments(source.replace(/\r\n/g,'\n'));
- // // siunitx v3 quantity syntax, including decimal commas written as {,}.
- // s=s.replace(/\\qty\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{([^{}]*)\}/g,(_,value,unit)=>`\\SI{${value.replace(/\{,\}/g,',')}}{${unit}}`);
+ // siunitx v3 quantity syntax, including decimal commas written as {,}.
+ s=s.replace(/\\qty\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{([^{}]*)\}/g,(_,value,unit)=>`\\SI{${value.replace(/\{,\}/g,',')}}{${unit}}`);
  s=s.replace(/\\begin\{traloi\}[\s\S]*?\\end\{traloi\}/g,'');
  if(s.includes('\\begin{document}'))s=s.split('\\begin{document}')[1].split('\\end{document}')[0];
  const stored=[];const hold=v=>{const k=`LATEXPLACEHOLDER${stored.length}END`;stored.push(v);return k;};
@@ -151,33 +49,9 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
  }
 );
  s=s.replace(/\\\[([\s\S]*?)\\\]/g,(_,m)=>`$$\n${m}\n$$`).replace(/\\\(([\s\S]*?)\\\)/g,(_,m)=>`$${m}$`);
- // s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.startsWith('$$')?`\n\n$$\n${convertUnits(m.slice(2,-2)).trim()}\n$$\n\n`:convertUnits(m)));
- s=s.replace(
- /\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,
- m=>{
-  if(m.startsWith('$$')){
-   const content=m.slice(2,-2).trim();
-
-   // Display math không có siunitx thì giữ nguyên.
-   if(!/\\(?:SI|si|qty|unit|num)\b/.test(content))
-    return hold(`\n\n$$\n${content}\n$$\n\n`);
-
-   return hold(`\n\n${convertMathUnits(content)}\n\n`);
-  }
-
-  const content=m.slice(1,-1);
-
-  if(!/\\(?:SI|si|qty|unit|num)\b/.test(content))
-   return hold(m);
-
-  return hold(convertMathUnits(content));
- };
+ s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.startsWith('$$')?`\n\n$$\n${convertUnits(m.slice(2,-2)).trim()}\n$$\n\n`:convertUnits(m)));
  s=s.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
- // s=s.replace(/\\SI\{[^{}]*\}\{[^{}]*\}|\\si\{[^{}]*\}/g,m=>hold(`$${convertUnits(m)}$`));
- s=s.replace(
- /\\(?:SI|qty)\{((?:[^{}]|\{[^{}]*\})*)\}\{((?:[^{}]|\{[^{}]*\})*)\}|\\(?:si|unit)\{((?:[^{}]|\{[^{}]*\})*)\}/g,
- m=>hold(convertUnits(m))
-);
+ s=s.replace(/\\SI\{[^{}]*\}\{[^{}]*\}|\\si\{[^{}]*\}/g,m=>hold(`$${convertUnits(m)}$`));
  s=s.replace(/\\setcounter\{bt\}\{0\}/g,'LATEXRESETCOUNTER');
  s=s.replace(/\\setlist(?:\[[^\]]*\])?\{[^\n]*\}/g,'');
  s=s.replace(/\\begin\{(?:minipage|multicols)\}(?:\[[^\]]*\])?\{[^}]*\}/g,'').replace(/\\end\{(?:minipage|multicols)\}/g,'');
