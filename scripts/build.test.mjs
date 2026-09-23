@@ -74,7 +74,7 @@ test('LaTeX converts exercises, sections, lists, figures and preserves math',()=
  assert.equal(p.title,'ĐỀ 001');assert.equal(p.questions,2);
  assert.equal((p.body.match(/### Câu 1/g)||[]).length,2);
  assert.match(p.body,/\*\*A\.\*\*/);assert.match(p.body,/\\frac\{1\}\{2\}/);
- assert.match(p.body,/\\\{x\\\}/);assert.match(p.body,/\\mathrm\{m\/s\}/);
+ assert.match(p.body,/\\\{x\\\}/);assert.match(p.body,/Vận tốc m\/s\./);
  assert.match(p.body,/test.png/);assert.doesNotMatch(p.body,/Không hiện|begin\{baitap/);
 });
 test('LaTeX comments, nested formatting and unsupported commands',()=>{
@@ -113,13 +113,22 @@ test('missing or ambiguous answers never receive an invented key',()=>{
  assert.throws(()=>extractExam(wrap(String.raw`\dapan{D}`)),/hợp lệ/);
 });
 
-test('siunitx units render inside and outside math for imported exams',()=>{
+test('siunitx units convert to plain text for imported exams',()=>{
  const result=convertLatex(String.raw`Quãng đường \SI{50}{\meter}; tốc độ \si{\meter\per\second}; thể tích \SI{144}{\cubic\centi\meter}; $\SI{10}{\centi\meter}\times\SI{16}{\centi\meter}$.`);
- assert.match(result.body,/\$50\\,\\mathrm\{m\}\$/);
- assert.ok(result.body.includes(String.raw`$\mathrm{m}/\mathrm{s}$`));
- assert.ok(result.body.includes(String.raw`$144\,\mathrm{cm}^{3}$`));
- assert.ok(result.body.includes(String.raw`$10\,\mathrm{cm}\times16\,\mathrm{cm}$`));
+
+ assert.match(result.body,/50 m/);
+ assert.match(result.body,/m\/s/);
+ assert.match(result.body,/144 cm³/);
+ assert.match(result.body,/10 cm/);
+ assert.match(result.body,/16 cm/);
+
+ assert.doesNotMatch(result.body,/\\(?:SI|si|qty|unit)\b/);
+
  const post=parsePost(source+'\n\n'+result.body,'units.md');
  assert.ok(!post.html.includes('katex-error'));
- assert.throws(()=>convertLatex(String.raw`\SI{1}{\unknownunit}`),/Đơn vị LaTeX chưa hỗ trợ/);
+
+ assert.throws(
+  ()=>convertLatex(String.raw`\SI{1}{\unknownunit}`),
+  /Đơn vị LaTeX chưa hỗ trợ/
+ );
 });
