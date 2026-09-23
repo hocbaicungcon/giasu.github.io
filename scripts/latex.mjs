@@ -77,16 +77,18 @@ function convertUnits(text){
 function convertMathUnits(math){
  const units=[];
 
+ // Lưu phần văn bản cần đưa ra ngoài môi trường toán.
  const holdText=text=>{
   const key=`UNITTEXT${units.length}END`;
   units.push(text);
   return key;
  };
 
+ // Dùng convertUnits() cho các lệnh siunitx.
  const holdUnit=text=>holdText(convertUnits(text));
 
  // ============================================================
- // 1. Các lệnh siunitx
+ // 1. siunitx
  // ============================================================
 
  // \SI{5}{\meter}
@@ -110,7 +112,7 @@ function convertMathUnits(math){
  );
 
  // ============================================================
- // 2. Danh sách đơn vị được phép viết trực tiếp trong toán
+ // 2. Các đơn vị cho phép
  // ============================================================
 
  const allowedUnits=new Set([
@@ -139,10 +141,6 @@ function convertMathUnits(math){
   'USD','VND','EUR','GBP'
  ]);
 
- // Chuẩn hóa đơn vị:
- // cm^2   -> cm²
- // cm^{2} -> cm²
- // m^3    -> m³
  const normalizeUnit=unit=>unit
   .replace(/\^\{?2\}?/g,'²')
   .replace(/\^\{?3\}?/g,'³')
@@ -154,119 +152,140 @@ function convertMathUnits(math){
  // 3. Đơn vị viết bằng \mathrm{...}
  // ============================================================
 
- // $25 \mathrm{USD}$  -> 25 USD
- // $20\,\mathrm{cm}$  -> 20 cm
- // $5\,\mathrm{m/s}$  -> 5 m/s
- //
- // Chỉ tách nếu thực sự nằm trong whitelist.
+ /*
+   $25 \mathrm{USD}$     -> 25 USD
+   $20\,\mathrm{cm}$     -> 20 cm
+   $5\,\mathrm{m/s}$     -> 5 m/s
+   $20\,\mathrm{cm^2}$   -> 20 cm²
+
+   Chỉ xử lý khi:
+   - phía trước là một chữ số;
+   - nội dung \mathrm thuộc whitelist.
+
+   Nhờ vậy không ảnh hưởng:
+   $\mathrm{e}^x$
+   $\mathrm{rank}(A)$
+ */
+
  math=math.replace(
-  /(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )?\s*\\mathrm\{([^{}]+)\}/g,
-  (whole,rawUnit)=>{
+  /(\d)(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )?\s*\\mathrm{([^{}]+)}/g,
+  (whole,digit,rawUnit)=>{
    const unit=normalizeUnit(rawUnit);
 
    if(!allowedUnits.has(unit))
     return whole;
 
-   return holdText(unit);
+   return digit+holdText(unit);
   }
  );
 
  // ============================================================
- // 4. Đơn vị viết trực tiếp
+ // 4. Đơn vị viết trực tiếp sau số
  // ============================================================
 
- // $25\,dm$       -> 25 dm
- // $100\,USD$     -> 100 USD
- // $20\,cm^2$     -> 20 cm²
- // $5\,m^3$       -> 5 m³
- // $72\,km/h$     -> 72 km/h
- //
- // Dùng whitelist để tránh nhận nhầm:
- // $2x$, $3a$, $5\sin x$, ...
+ /*
+   $25\,dm$       -> 25 dm
+   $100\,USD$     -> 100 USD
+   $20\,cm^2$     -> 20 cm²
+   $5\,m^3$       -> 5 m³
+   $72\,km/h$     -> 72 km/h
+   $10\,m/s^2$    -> 10 m/s²
+
+   Bắt buộc đơn vị phải đứng sau chữ số.
+   Vì vậy không quét nhầm chữ trong \frac, \lim, \sin...
+ */
 
  const directUnitPattern=[
   'km/h',
   'm/s',
-  'mm','cm','dm','dam','hm','km',
+
+  'USD','VND','EUR','GBP',
+
+  'dam','min',
+
+  'mm','cm','dm','hm','km',
   'mg','kg',
   'mL','ml','cL','dL',
-  'ms','min',
-  'USD','VND','EUR','GBP',
+  'ms',
+
   'm','g','t','L','s','h'
  ]
  .sort((a,b)=>b.length-a.length)
- .map(x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))
+ .map(unit=>unit.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))
  .join('|');
 
  math=math.replace(
   new RegExp(
-   String.raw`(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )?\s*`+
-   `(${directUnitPattern})`+
+   `(\\d)` +
+   String.raw`(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )?\s*` +
+   `(${directUnitPattern})` +
    String.raw`(?:\^\{?([23])\}?)?`,
    'g'
   ),
-  (whole,rawUnit,power)=>{
+  (whole,digit,rawUnit,power)=>{
    let unit=rawUnit;
 
-   if(power==='2')unit+='²';
-   if(power==='3')unit+='³';
+   if(power==='2')
+    unit+='²';
+   else if(power==='3')
+    unit+='³';
 
    if(!allowedUnits.has(unit))
     return whole;
 
-   return holdText(unit);
+   return digit+holdText(unit);
   }
  );
 
- // Không có đơn vị thì giữ nguyên toàn bộ công thức.
+ // ============================================================
+ // 5. Không tìm thấy đơn vị
+ // ============================================================
+
  if(!units.length)
   return `$${math}$`;
 
  // ============================================================
- // 5. Tách phần toán và phần đơn vị
+ // 6. Tách toán và văn bản
  // ============================================================
 
  /*
-  Ví dụ:
+   Ví dụ:
 
-  $V=125\ \si{\centi\meter\cubic}$
+   x=25\,dm
 
-  thành:
+   sau bước trên:
+   x=25UNITTEXT0END
 
-  $V=125$ cm³
-
-  và:
-
-  $25 \mathrm{USD}$
-
-  thành:
-
-  $25$ USD
+   kết quả:
+   $x=25$ dm
  */
 
  const parts=math.split(/(UNITTEXT\d+END)/);
 
- return parts.map(part=>{
-  const match=part.match(/^UNITTEXT(\d+)END$/);
+ return parts
+  .map(part=>{
+   const match=part.match(/^UNITTEXT(\d+)END$/);
 
-  if(match)
-   return units[Number(match[1])];
+   if(match)
+    return units[Number(match[1])];
 
-  // Xóa khoảng cách LaTeX thừa trước/sau đơn vị.
-  part=part.replace(
-   /(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+\s*$/g,
-   ''
-  );
+   // Xóa khoảng cách LaTeX thừa sát đơn vị.
+   part=part.replace(
+    /(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+\s*$/g,
+    ''
+   );
 
-  part=part.replace(
-   /^\s*(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+/g,
-   ''
-  );
+   part=part.replace(
+    /^\s*(?:\\,|\\;|\\:|\\quad|\\qquad|\\ )+/g,
+    ''
+   );
 
-  return part.trim()
-   ? `$${part}$`
-   : '';
- }).filter(Boolean).join(' ');
+   part=part.trim();
+
+   return part ? `$${part}$` : '';
+  })
+  .filter(Boolean)
+  .join(' ');
 }
 // function convertUnits(text){
 //  text=text.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
