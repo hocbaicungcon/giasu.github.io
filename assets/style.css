@@ -539,7 +539,8 @@ html[data-theme="dark"] #game-hanoi #hanoi-board button{background:#29443f;color
 @media(max-width:620px){form.quiz{padding:14px 10px}form.quiz .quiz-option{padding:12px 10px}.hanoi-disks{height:205px}#hanoi-board{gap:5px}}
 /* Text and mathematics share a calmer optical size; STIX includes Vietnamese. */
 html[data-font="serif"] body{font-family:"STIX Two Text","Times New Roman",serif}
-.prose .katex,form.quiz .katex,.exam-question .katex{font-size:1.08em}
+.prose .katex,form.quiz .katex,.exam-question .katex{font-size:1.12em}
+.katex-html .math-digits{display:inline-block;transform:scale(.97);transform-origin:center 75%}
 .prose img,.exam-question img,.quiz-explanation img{display:block;max-width:100%;height:auto;margin-inline:auto}
 #game-sudoku #sudoku-board .peer{background:#edf5f6}
 #game-sudoku #sudoku-board .same-number{background:#b8e0e4;color:#194e58;font-weight:750}
@@ -551,3 +552,18 @@ html[data-theme="dark"] #game-sudoku #sudoku-board .selected{background:#4f8791;
 html[data-theme="dark"] #game-sudoku #sudoku-board .wrong{background:#673c40;color:#ffb5ac}
 .hanoi-disks{gap:1px;padding-bottom:2px}
 .hanoi-disk{height:25px;line-height:23px;border-radius:50% / 28%;border:1px solid #ffffff65;background:linear-gradient(180deg,#ffffff50,transparent 48%,#0002),hsl(calc(155 + var(--disk)*24) 53% 47%);box-shadow:inset 0 3px 0 #ffffff35,0 1px 1px #0003;font-weight:750;text-shadow:0 1px 1px #0005}
+/* Inset focus leaves the Sudoku grid borders intact during keyboard navigation. */
+#game-sudoku #sudoku-board button{position:relative}
+#game-sudoku #sudoku-board button:focus-visible{outline:0;z-index:1}
+#game-sudoku #sudoku-board button:focus-visible::after,#game-sudoku #sudoku-board .selected::after{content:"";position:absolute;inset:3px;border:2px solid #116a7c;pointer-events:none;border-radius:2px}
+#game-sudoku #sudoku-board .peer{background:#d3e9ed}
+#game-sudoku #sudoku-board .same-number{background:#89c9d2;color:#153f49;font-weight:800}
+#game-sudoku #sudoku-board .selected{background:#55adbd;color:#102f38;box-shadow:none}
+html[data-theme="dark"] #game-sudoku #sudoku-board .peer{background:#365763}
+html[data-theme="dark"] #game-sudoku #sudoku-board .same-number{background:#548994;color:#fff}
+html[data-theme="dark"] #game-sudoku #sudoku-board .selected{background:#75b2bc;color:#102f38;box-shadow:none}
+#game-sudoku #sudoku-board .wrong{background:#ffe0dc;color:#b42b2b}
+html[data-theme="dark"] #game-sudoku #sudoku-board .wrong{background:#673c40;color:#ffb5ac}
+.hanoi-disk{height:24px;line-height:24px;flex-shrink:0;border:0;border-radius:12px;background:linear-gradient(180deg,hsl(calc(155 + var(--disk)*24) 46% 66%),hsl(calc(155 + var(--disk)*24) 45% 48%) 55%,hsl(calc(155 + var(--disk)*24) 43% 39%));box-shadow:inset 0 1px 1px #fff9,inset 0 -2px 1px #0002,0 1px 2px #0002;font-size:12px;font-weight:600;text-shadow:0 1px 2px #0004}
+.hanoi-disk::before{content:"";position:absolute;top:3px;left:12%;right:12%;height:4px;border-radius:50%;background:#ffffff40;pointer-events:none}
+#hanoi-board [aria-pressed="true"] .hanoi-disk:last-child{box-shadow:inset 0 1px 1px #fff9,0 0 0 2px #e2ba66,0 5px 10px #243b4030}
