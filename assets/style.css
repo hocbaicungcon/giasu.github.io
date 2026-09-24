@@ -537,10 +537,18 @@ html[data-theme="dark"] #game-sudoku #sudoku-board .selected{background:#315962}
 html[data-theme="dark"] #game-sudoku #sudoku-board .wrong{background:#6a3c3a;color:#ffe3d7}
 html[data-theme="dark"] #game-hanoi #hanoi-board button{background:#29443f;color:#d2ece2}
 @media(max-width:620px){form.quiz{padding:14px 10px}form.quiz .quiz-option{padding:12px 10px}.hanoi-disks{height:205px}#hanoi-board{gap:5px}}
-/* Text and mathematics share a calmer optical size; STIX includes Vietnamese. */
-html[data-font="serif"] body{font-family:"STIX Two Text","Times New Roman",serif}
-.prose .katex,form.quiz .katex,.exam-question .katex{font-size:1.12em}
-.katex-html .math-digits{display:inline-block;transform:scale(.97);transform-origin:center 75%}
+/* Computer Modern Unicode matches the mathematical typeface and supports Vietnamese. */
+@font-face{font-family:"CMU Serif";src:url("fonts/cmu/cmunrm.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"CMU Serif";src:url("fonts/cmu/cmunbx.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"CMU Serif";src:url("fonts/cmu/cmunti.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"CMU Serif";src:url("fonts/cmu/cmunbi.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap}
+html[data-font="serif"] body{font-family:"CMU Serif","Times New Roman",serif}
+:root{--lesson-math-size:1.18em}
+html[data-font="serif"]{--lesson-math-size:1.06em}
+.prose .katex,form.quiz .katex,.exam-question .katex{font-size:var(--lesson-math-size)}
+/* KaTeX uses regular weight, but its strokes look heavier than CMU Serif. */
+html[data-font="serif"] :is(.prose,form.quiz,.exam-question) .katex{color:color-mix(in srgb,currentColor 86%,transparent)}
+.katex-html .math-digits{display:inline-block;transform:scale(.96);transform-origin:center 75%}
 .prose img,.exam-question img,.quiz-explanation img{display:block;max-width:100%;height:auto;margin-inline:auto}
 #game-sudoku #sudoku-board .peer{background:#edf5f6}
 #game-sudoku #sudoku-board .same-number{background:#b8e0e4;color:#194e58;font-weight:750}
@@ -564,6 +572,12 @@ html[data-theme="dark"] #game-sudoku #sudoku-board .same-number{background:#5489
 html[data-theme="dark"] #game-sudoku #sudoku-board .selected{background:#75b2bc;color:#102f38;box-shadow:none}
 #game-sudoku #sudoku-board .wrong{background:#ffe0dc;color:#b42b2b}
 html[data-theme="dark"] #game-sudoku #sudoku-board .wrong{background:#673c40;color:#ffb5ac}
-.hanoi-disk{height:24px;line-height:24px;flex-shrink:0;border:0;border-radius:12px;background:linear-gradient(180deg,hsl(calc(155 + var(--disk)*24) 46% 66%),hsl(calc(155 + var(--disk)*24) 45% 48%) 55%,hsl(calc(155 + var(--disk)*24) 43% 39%));box-shadow:inset 0 1px 1px #fff9,inset 0 -2px 1px #0002,0 1px 2px #0002;font-size:12px;font-weight:600;text-shadow:0 1px 2px #0004}
-.hanoi-disk::before{content:"";position:absolute;top:3px;left:12%;right:12%;height:4px;border-radius:50%;background:#ffffff40;pointer-events:none}
-#hanoi-board [aria-pressed="true"] .hanoi-disk:last-child{box-shadow:inset 0 1px 1px #fff9,0 0 0 2px #e2ba66,0 5px 10px #243b4030}
+.hanoi-disk{height:24px;line-height:24px;flex-shrink:0;border:0;border-radius:0;background:hsl(calc(15 + var(--disk)*43) 82% 72%);color:#20343b;box-shadow:none;font-size:12px;font-weight:700;text-shadow:none}
+.hanoi-disk::before{content:none}
+#hanoi-board [aria-pressed="true"] .hanoi-disk:last-child{box-shadow:none;outline:2px solid currentColor;outline-offset:2px}
+
+/* Fixed vector symbols: independent of platform fonts and emoji rendering. */
+.ui-symbol{display:inline-block;width:1em;height:1em;flex-shrink:0;vertical-align:-.12em;background:currentColor;-webkit-mask:var(--ui-symbol) center/contain no-repeat;mask:var(--ui-symbol) center/contain no-repeat}
+.ui-symbol-arrow{--ui-symbol:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M5%2019%2019%205M5%205h14v14%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E")}
+.ui-symbol-moon{--ui-symbol:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17.5%203a9.5%209.5%200%201%200%200%2018A10.5%2010.5%200%200%201%2017.5%203Z%22%2F%3E%3C%2Fsvg%3E")}
+.ui-symbol-sun{--ui-symbol:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%224.5%22%2F%3E%3Cpath%20d%3D%22M12%201v3m0%2016v3M1%2012h3m16%200h3M4.2%204.2l2.1%202.1m11.4%2011.4%202.1%202.1M4.2%2019.8l2.1-2.1M17.7%206.3l2.1-2.1%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E")}
