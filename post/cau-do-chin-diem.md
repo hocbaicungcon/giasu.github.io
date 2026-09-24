@@ -11,8 +11,12 @@ Chín điểm được sắp xếp trên các cạnh và tại tâm của một 
 
 <img src="/Users/phuongphan/GitHub/giasu.github.io/assets/images/9-diem.svg" alt="9-diem" style="zoom:50%;" />
 
+### Thử xem nào!
+
 Lần thử đầu tiên luôn luôn nản, vì luôn là 5 đoạn thắng, chứ không phải 4 đoạn.
 
 <img src="/Users/phuongphan/GitHub/giasu.github.io/assets/images/9-diem-sai.svg" alt="9-diem-sai" style="zoom:50%;" />
 
-Đáp án <img src="/Users/phuongphan/GitHub/giasu.github.io/assets/images/9%20diem%20dung.svg" alt="9 diem dung" style="zoom:50%;" />
+### Đáp án
+
+![9-diem-dung](/Users/phuongphan/GitHub/giasu.github.io/assets/images/9-diem-dung.svg)
