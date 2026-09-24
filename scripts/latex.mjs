@@ -321,11 +321,6 @@ export function convertLatex(source,options={}){
 }
 function convertLatexBody(source,{lowerLists=false,sourceLine:baseLine=1,renderTikz=()=>{throw Error('Cần bộ biên dịch TikZ');}}={}){
  let s=stripComments(source.replace(/\r\n/g,'\n'));
- // Xóa tiêu đề ĐỀ 001, ĐỀ 002, ...
-s=s.replace(
- /\\begin\{center\}\s*\\textbf\{\{\\Huge\s+ĐỀ\s+\d+\}\}\s*\\end\{center\}/giu,
- ''
-);
  s=commands(s,'enlargethispage',()=> '');
  // // siunitx v3 quantity syntax, including decimal commas written as {,}.
  // s=s.replace(/\\qty\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{([^{}]*)\}/g,(_,value,unit)=>`\\SI{${value.replace(/\{,\}/g,',')}}{${unit}}`);
