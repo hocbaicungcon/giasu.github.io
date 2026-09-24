@@ -360,6 +360,7 @@ function convertLatexBody(source,{lowerLists=false,sourceLine:baseLine=1,renderT
  s=commands(s,'textbf',t=>`**${t}**`);s=commands(s,'textit|emph',t=>`*${t}*`);
  s=s.replace(/\\(?:Huge|huge|Large|large|bfseries|centering)\b\s*/g,'');
  let title=s.match(/\\begin\{center\}\s*\*\*\{?([^*{}]+)\}?\*\*/)?.[1]?.trim();
+ if(title&&/\\begin\{baitap\}/.test(s))s=s.replace(/\\begin\{center\}\s*\*\*\{?([^*{}]+)\}?\*\*\s*\\end\{center\}/,(block,t)=>t.trim()===title?'':block);
  s=s.replace(/\\(?:begin|end)\{center\}/g,'');
  let counter=0,questions=0;
  s=s.replace(/LATEXRESETCOUNTER|\\begin\{baitap\}|\\end\{baitap\}/g,m=>{if(m==='LATEXRESETCOUNTER'){counter=0;return '';}if(m==='\\begin{baitap}'){questions++;return `\n\n### Câu ${++counter}\n\n`;}return '\n\n';});

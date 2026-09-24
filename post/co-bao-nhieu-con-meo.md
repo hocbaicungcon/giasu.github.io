@@ -21,4 +21,4 @@ Lưu ý rằng, khi phân tích số 10001 thành thừa số nguyên tố, ch�
 $$
 10001 = 73\times 137
 $$
-Mà số chuột nhiều hơn số mèo, nên \[ x = 73 \] và $a = 137$. Vậy số mèo đã tham gia diệt chuột là $73$ con.
+Mà số chuột nhiều hơn số mèo, nên $ x = 73$ và $a = 137$. Vậy số mèo đã tham gia diệt chuột là $73$ con.
