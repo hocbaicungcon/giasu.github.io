@@ -1,15 +1,15 @@
 (()=>{
  const root=document.documentElement,key='giasu-display';
- let prefs={size:100,theme:null};
- try{const saved=JSON.parse(localStorage.getItem(key));if(saved){prefs.size=[80,90,100,110,120,130].includes(saved.size)?saved.size:100;prefs.theme=['light','dark'].includes(saved.theme)?saved.theme:null;}}catch{}
- const system=matchMedia('(prefers-color-scheme: dark)');
- function apply(){root.style.fontSize=`${16*prefs.size/100}px`;root.dataset.theme=prefs.theme||(system.matches?'dark':'light');}
+ let prefs={size:100,theme:'light',font:'sans'};
+ try{const saved=JSON.parse(localStorage.getItem(key));if(saved){prefs.size=[80,90,100,110,120,130].includes(saved.size)?saved.size:100;prefs.theme=['light','dark'].includes(saved.theme)?saved.theme:'light';prefs.font=saved.font==='serif'?'serif':'sans';}}catch{}
+
+ function apply(){root.style.fontSize=`${16*prefs.size/100}px`;root.dataset.theme=prefs.theme;root.dataset.font=prefs.font;}
  function save(){try{localStorage.setItem(key,JSON.stringify(prefs));}catch{}apply();update();}
  let panel;
- function update(){if(!panel)return;panel.querySelector('[data-action="less"]').disabled=prefs.size===80;panel.querySelector('[data-action="more"]').disabled=prefs.size===130;const button=panel.querySelector('[data-action="theme"]');const dark=root.dataset.theme==='dark';button.textContent=dark?'☀':'☾';button.setAttribute('aria-label',dark?'Chuyển sang giao diện sáng':'Chuyển sang giao diện tối');button.setAttribute('aria-pressed',String(dark));button.title=button.getAttribute('aria-label');}
- apply();system.addEventListener('change',()=>{apply();update();});
+ function update(){if(!panel)return;panel.querySelector('[data-action="less"]').disabled=prefs.size===80;panel.querySelector('[data-action="more"]').disabled=prefs.size===130;const button=panel.querySelector('[data-action="theme"]');const dark=root.dataset.theme==='dark';button.textContent=dark?'☀':'☾';button.setAttribute('aria-label',dark?'Chuyển sang giao diện sáng':'Chuyển sang giao diện tối');button.setAttribute('aria-pressed',String(dark));button.title=button.getAttribute('aria-label');const font=panel.querySelector('[data-action=font]');font.setAttribute('aria-pressed',String(prefs.font==='serif'));font.title=font.ariaLabel=prefs.font==='serif'?'Chuyển sang chữ không chân':'Chuyển sang chữ có chân';}
+ apply();
  document.addEventListener('DOMContentLoaded',()=>{
   panel=document.querySelector('.display-controls');if(!panel)return;update();
-  panel.addEventListener('click',event=>{const action=event.target.closest('[data-action]')?.dataset.action;if(!action)return;if(action==='less')prefs.size=Math.max(80,prefs.size-10);if(action==='more')prefs.size=Math.min(130,prefs.size+10);if(action==='theme')prefs.theme=root.dataset.theme==='dark'?'light':'dark';save();});
+  panel.addEventListener('click',event=>{const action=event.target.closest('[data-action]')?.dataset.action;if(!action)return;if(action==='less')prefs.size=Math.max(80,prefs.size-10);if(action==='more')prefs.size=Math.min(130,prefs.size+10);if(action==='font')prefs.font=prefs.font==='serif'?'sans':'serif';if(action==='theme')prefs.theme=root.dataset.theme==='dark'?'light':'dark';save();});
  });
 })();

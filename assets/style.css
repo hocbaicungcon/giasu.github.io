@@ -491,3 +491,49 @@ html[data-theme="dark"] .subject-section .overline{color:#dcc2a4}
 .water-world .water{fill:#2bcbba;opacity:.75;rx:5px;ry:5px}
 .water-world .eye{fill:#2d98da}
 .water-world .smile{stroke:#2d98da}
+/* Reading preferences and high-contrast solution content. */
+html[data-font="serif"] body{font-family:Georgia,"Times New Roman",serif}
+.exam-wrap .exam-policy{font-size:.76rem;line-height:1.65;color:#77888b;font-weight:400}
+html[data-theme="dark"] .exam-wrap .exam-policy{color:#a2b4b6}
+.prose .lesson-solution,.exam-review,.quiz-explanation{background:#f0f6f4;color:#243b40;border:1px solid #c9dfd7;border-radius:12px;padding:16px;margin:16px 0}
+.lesson-solution summary{cursor:pointer;color:#246c69;font-weight:650}
+html[data-theme="dark"] :is(.lesson-solution,.exam-review,.quiz-explanation){background:#243e44;color:#e2eeec;border-color:#46676b}
+html[data-theme="dark"] :is(.lesson-solution,.exam-review,.quiz-explanation) :is(p,li,strong,h2,h3,h4,summary){color:inherit}
+:is(.lesson-solution,.exam-review,.quiz-explanation) img[src*="assets/latex/"]{mix-blend-mode:multiply;background:transparent}
+html[data-theme="dark"] :is(.lesson-solution,.exam-review,.quiz-explanation) img[src*="assets/latex/"]{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen;background:transparent}
+/* Quiz cards: generous answer rows and immediate, explicit feedback. */
+form.quiz{padding:22px;border:1px solid #bed9dc;border-top:5px solid #278a98;border-radius:14px;background:#f8fcfc;margin:24px 0}
+form.quiz legend{font-size:1.2rem;line-height:1.6;font-weight:700;margin-bottom:18px;color:#245761}
+form.quiz .quiz-option{display:flex;align-items:center;gap:12px;padding:14px 16px;margin:10px 0;background:#fff;border:1px solid #cbdfe0;border-radius:9px;cursor:pointer}
+form.quiz .quiz-option input{width:20px;height:20px;flex-shrink:0;accent-color:#278a98}
+form.quiz .quiz-option:has(input:checked){background:#dcf0f0;border-color:#278a98;box-shadow:inset 0 0 0 1px #278a98}
+form.quiz[data-result="correct"] .quiz-feedback{color:#247045;font-weight:700}
+form.quiz[data-result="incorrect"] .quiz-feedback{color:#a34c36;font-weight:700}
+html[data-theme="dark"] form.quiz legend{color:#a5e1e6}
+html[data-theme="dark"] form.quiz .quiz-option:has(input:checked){background:#315e66;border-color:#80cbd4}
+html[data-theme="dark"] form.quiz[data-result="correct"] .quiz-feedback{color:#9be5b5}
+html[data-theme="dark"] form.quiz[data-result="incorrect"] .quiz-feedback{color:#ffb8a2}
+#game-water .water-jug[aria-pressed="true"],html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"]{transform:translateY(-42px)}
+.game-panel .game-title-row button.game-sound,html[data-theme="dark"] .game-panel .game-title-row button.game-sound{border:0;background:transparent;padding:8px;color:var(--ink);min-width:44px;min-height:44px;display:grid;place-items:center;box-shadow:none}
+.game-title-row .game-sound svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8}
+#sudoku-board{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));max-width:450px;margin:22px auto;border:2px solid #417782}
+#game-sudoku #sudoku-board button{aspect-ratio:1;padding:0;min-width:0;border:0;border-right:1px solid #bed1d3;border-bottom:1px solid #bed1d3;border-radius:0;background:#fff;color:#147e9b;font-size:clamp(1rem,3vw,1.4rem)}
+#game-sudoku #sudoku-board button:nth-child(3n){border-right:2px solid #417782}
+#game-sudoku #sudoku-board button:nth-child(n+19):nth-child(-n+27),#game-sudoku #sudoku-board button:nth-child(n+46):nth-child(-n+54){border-bottom:2px solid #417782}
+#game-sudoku #sudoku-board .given{background:#e3eeec;color:#304f54;font-weight:750}
+#game-sudoku #sudoku-board .selected{box-shadow:inset 0 0 0 3px #248ea0;background:#d3eef2}
+#game-sudoku #sudoku-board .wrong{color:#b43c31;background:#ffe4df}
+#sudoku-keys,.puzzle-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:7px}
+#sudoku-keys button{padding:8px 12px}
+#hanoi-board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:24px 0}
+#game-hanoi #hanoi-board button{position:relative;border:0;border-radius:10px;background:#edf4ee;padding:10px 2px;color:#305d57}
+.hanoi-disks{height:220px;position:relative;display:flex;flex-direction:column-reverse;align-items:center;gap:4px;padding:12px 0;border-bottom:7px solid #99724c;margin-bottom:10px}
+.hanoi-disks::before{content:"";position:absolute;bottom:0;top:8px;width:8px;border-radius:8px;background:#b58b60}
+.hanoi-disk{position:relative;z-index:1;height:23px;line-height:23px;border-radius:6px;background:hsl(calc(160 + var(--disk)*17) 45% 42%);color:white;font-size:13px;box-shadow:0 2px 2px #0002}
+#hanoi-board [aria-pressed="true"] .hanoi-disk:last-child{transform:translateY(-12px);box-shadow:0 0 0 3px #f0c66a}
+html[data-theme="dark"] #game-sudoku #sudoku-board button{background:#213b43;color:#8fdaec}
+html[data-theme="dark"] #game-sudoku #sudoku-board .given{background:#344d50;color:#e0edeb}
+html[data-theme="dark"] #game-sudoku #sudoku-board .selected{background:#315962}
+html[data-theme="dark"] #game-sudoku #sudoku-board .wrong{background:#6a3c3a;color:#ffe3d7}
+html[data-theme="dark"] #game-hanoi #hanoi-board button{background:#29443f;color:#d2ece2}
+@media(max-width:620px){form.quiz{padding:14px 10px}form.quiz .quiz-option{padding:12px 10px}.hanoi-disks{height:205px}#hanoi-board{gap:5px}}

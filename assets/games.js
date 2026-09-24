@@ -1,3 +1,4 @@
+import './extra-games.js';
 import {createGameResult} from './game-result.js';
 import {sound,stopSounds} from './puzzle-audio.js';
 import {startRiver} from './river-game.js';
@@ -39,3 +40,5 @@ function wordKey(key){
 $('#word-keyboard').addEventListener('click',event=>{const key=event.target.closest('[data-word-key]')?.dataset.wordKey;if(key)wordKey(key);});
 document.addEventListener('keydown',event=>{if($('#game-words').hidden||event.ctrlKey||event.metaKey||event.altKey||event.isComposing||event.target.closest('input,textarea,select,[contenteditable="true"],header'))return;const key=event.key.toUpperCase();if(key==='ENTER'&&event.target.closest('button')&&!event.target.closest('#word-keyboard'))return;if(/^[A-Z]$/.test(key)||['ENTER','BACKSPACE'].includes(key)){event.preventDefault();wordKey(key);}});
 const starts={numbers:startNumbers,river:startRiver,words:startWords};document.querySelectorAll('[data-restart]').forEach(b=>b.addEventListener('click',()=>{if(starts[b.dataset.restart]){stopSounds();starts[b.dataset.restart]();}}));startNumbers();startRiver();startWords();
+
+$('#word-give-up').addEventListener('click',()=>{if(wordDone)return;wordDone=true;draft='';renderWords();$('#word-status').textContent='Đã bỏ cuộc. Đáp án là '+answer+'. Bấm Từ mới để chơi tiếp.';sound('lose');});

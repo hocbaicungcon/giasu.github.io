@@ -1,5 +1,5 @@
 const normalizeAnswer=value=>value.normalize('NFC').trim().replace(/\s+/g,' ').toLocaleLowerCase('vi');
-document.querySelectorAll('.quiz').forEach(form=>{
+document.querySelectorAll('form.quiz[data-answers]').forEach(form=>{
  const feedback=form.querySelector('.quiz-feedback'), explanation=form.querySelector('.quiz-explanation');
  const clear=()=>{feedback.textContent='';delete form.dataset.result;explanation.hidden=true;};
  form.addEventListener('submit',event=>{

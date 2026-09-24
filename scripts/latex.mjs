@@ -1,4 +1,6 @@
 import fs from 'node:fs';
+import katex from 'katex';
+import {normalizeCategory} from '../assets/subject-groups.js';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
@@ -298,42 +300,52 @@ function convertMathUnits(math){
 //  }).join('/');
 //  return text.replace(/\\SI\{([^{}]*)\}\{([^{}]*)\}/g,(_,value,unit)=>`${value}\\,${unitMath(unit)}`).replace(/\\si\{([^{}]*)\}/g,(_,unit)=>unitMath(unit));
 // }
-export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ biên dịch TikZ');}}={}){
+export function convertLatex(source,options={}){
+ try{
+  const stack=[];
+  for(const m of stripComments(source).matchAll(/\\(begin|end)\{([^}]+)\}/g)){
+   if(m[1]==='begin')stack.push(m);
+   else if(stack.at(-1)?.[2]===m[2])stack.pop();
+   else throw Object.assign(Error(`Môi trường ${m[2]} đóng không khớp`),{sourceIndex:m.index});
+  }
+  if(stack.length)throw Object.assign(Error(`Thiếu \\end{${stack.at(-1)[2]}}`),{sourceIndex:stack.at(-1).index});
+  return convertLatexBody(source,options);
+ }catch(error){
+  if(error.sourceLocated)throw error;
+  const command=error.message.match(/(?:Undefined control sequence:|ngoài công thức:|chưa hỗ trợ:)\s*(\\[a-zA-Z]+)/)?.[1];
+  let index=error.sourceIndex??(command?stripComments(source).indexOf(command):-1);
+  if(index<0)index=source.search(/\\begin\{(?:align|array|cases|enumerate|tabular)/);
+  const line=(options.sourceLine||1)+source.slice(0,Math.max(0,index)).split('\n').length-1;
+  const wrapped=Error(`${options.filename||'LaTeX'}:${line}: ${error.message}`);wrapped.sourceLocated=true;throw wrapped;
+ }
+}
+function convertLatexBody(source,{lowerLists=false,sourceLine:baseLine=1,renderTikz=()=>{throw Error('Cần bộ biên dịch TikZ');}}={}){
  let s=stripComments(source.replace(/\r\n/g,'\n'));
+ s=commands(s,'enlargethispage',()=> '');
  // // siunitx v3 quantity syntax, including decimal commas written as {,}.
  // s=s.replace(/\\qty\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{([^{}]*)\}/g,(_,value,unit)=>`\\SI{${value.replace(/\{,\}/g,',')}}{${unit}}`);
- s=s.replace(/\\begin\{traloi\}[\s\S]*?\\end\{traloi\}/g,'');
+ s=s.replace(/\\begin\{traloi\}[\s\S]*?\\end\{traloi\}/g,m=>m.replace(/[^\n]/g,' '));
  if(s.includes('\\begin{document}'))s=s.split('\\begin{document}')[1].split('\\end{document}')[0];
  const stored=[];const hold=v=>{const k=`LATEXPLACEHOLDER${stored.length}END`;stored.push(v);return k;};
  // s=s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,t=>hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(t)})\n\n`));
  s=s.replace(
  /\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g,
  (tikz,offset)=>{
-  const sourceLine=s.slice(0,offset).split('\n').length;
-  return hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(tikz,sourceLine)})\n\n`);
+  const sourceLine=baseLine+s.slice(0,offset).split('\n').length-1;
+  try{return hold(`\n\n![Hình minh họa hoặc bảng biến thiên](${renderTikz(tikz,sourceLine)})\n\n`);}catch(error){error.sourceIndex=source.indexOf(tikz);throw error;}
  }
 );
- s=s.replace(/\\\[([\s\S]*?)\\\]/g,(_,m)=>`$$\n${m}\n$$`).replace(/\\\(([\s\S]*?)\\\)/g,(_,m)=>`$${m}$`);
- // s=s.replace(/\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,m=>hold(m.startsWith('$$')?`\n\n$$\n${convertUnits(m.slice(2,-2)).trim()}\n$$\n\n`:convertUnits(m)));
- s=s.replace(
- /\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])+\$/g,
- m=>{
-  if(m.startsWith('$$')){
-   const content=m.slice(2,-2).trim();
-
-   // Display math không có siunitx thì giữ nguyên.
-   if(!/\\(?:SI|si|qty|unit|num)\b/.test(content))
-    return hold(`\n\n$$\n${content}\n$$\n\n`);
-
-   return hold(`\n\n${convertMathUnits(content)}\n\n`);
+ s=s.replace(/\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|\$(?:\\.|[^$\n])+\$|\\begin\{(align\*?|aligned|alignat\*?|gather\*?|gathered|equation\*?|cases|array|matrix|pmatrix|bmatrix|vmatrix|Vmatrix|split)\}[\s\S]*?\\end\{\1\}/g,m=>{
+  const inline=m.startsWith('$')&&!m.startsWith('$$')||m.startsWith('\\(');
+  let math=m.startsWith('$$')?m.slice(2,-2):m.startsWith('$')?m.slice(1,-1):m.startsWith('\\[')||m.startsWith('\\(')?m.slice(2,-2):m;
+  math=math.replace(/\\(?:begin|end)\{(align|gather|equation|alignat)\*\}/g,(command,env)=>command.replace(env+'*',env));
+  if(/\\(?:SI|si|qty|unit|num)\b/.test(math))return hold(convertMathUnits(math));
+  try{katex.renderToString(math,{displayMode:!inline,throwOnError:true,strict:false});}catch(error){
+   const start=stripComments(source).indexOf(m);
+   const delimiter=m.startsWith('$$')||m.startsWith('\\[')||m.startsWith('\\(')?2:m.startsWith('$')?1:0;
+   error.sourceIndex=Math.max(0,start)+delimiter+(Number.isInteger(error.position)?error.position:0);throw error;
   }
-
-  const content=m.slice(1,-1);
-
-  if(!/\\(?:SI|si|qty|unit|num)\b/.test(content))
-   return hold(m);
-
-  return hold(convertMathUnits(content));
+  return hold(inline?'$'+math+'$':'\n\n$$\n'+math+'\n$$\n\n');
  });
  s=s.replace(/\\num\{([+-]?[\d.,]+)\}/g,'$1');
  // s=s.replace(/\\SI\{[^{}]*\}\{[^{}]*\}|\\si\{[^{}]*\}/g,m=>hold(`$${convertUnits(m)}$`));
@@ -353,7 +365,7 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
  s=s.replace(/LATEXRESETCOUNTER|\\begin\{baitap\}|\\end\{baitap\}/g,m=>{if(m==='LATEXRESETCOUNTER'){counter=0;return '';}if(m==='\\begin{baitap}'){questions++;return `\n\n### Câu ${++counter}\n\n`;}return '\n\n';});
  s=s.replace(/\\begin\{enumerate\}(?:\[([^\]]*)\])?([\s\S]*?)\\end\{enumerate\}/g,(_,style,body)=>{
   if(body.includes('\\begin{enumerate}'))throw Error('Danh sách LaTeX lồng nhau chưa hỗ trợ');
-  const lower=style?.includes('a)');let n=0;return '\n\n'+body.split(/\\item\s*/).filter(x=>x.trim()).map(item=>`- **${String.fromCharCode((lower?97:65)+n++)}${lower?')':'.'}** ${item.trim()}`).join('\n\n')+'\n\n';
+  const lower=lowerLists||style?.includes('a)')||style?.includes('alph');let n=0;return '\n\n'+body.split(/\\item\s*/).filter(x=>x.trim()).map(item=>`- **${String.fromCharCode((lower?97:65)+n++)}${lower?')':'.'}** ${item.trim()}`).join('\n\n')+'\n\n';
  });
  s=s.replace(/\\begin\{itemize\}([\s\S]*?)\\end\{itemize\}/g,(_,body)=>{
   if(body.includes('\\begin{itemize}'))throw Error('Danh sách LaTeX lồng nhau chưa hỗ trợ');
@@ -367,8 +379,8 @@ export function convertLatex(source,{renderTikz=()=>{throw Error('Cần bộ bi�
   return '\n\n'+[row(rows[0]),row(align),...rows.slice(1).map(row)].join('\n')+'\n\n';
  });
  s=s.replace(/\\(?:vspace|hspace)\*?\{[^}]*\}/g,'').replace(/\\(?:quad|qquad|noindent)\b/g,' ').replace(/\\%/g,'%');
- s=s.replace(/[{}]/g,'');
  const unsupported=s.match(/\\[a-zA-Z]+/g);if(unsupported)throw Error(`Lệnh LaTeX chưa hỗ trợ ngoài công thức: ${[...new Set(unsupported)].join(', ')}`);
+ s=s.replace(/[{}]/g,'');
  s=s.replace(/^[ \t]+/gm,'');
  s=s.replace(/LATEXPLACEHOLDER(\d+)END/g,(_,n)=>stored[Number(n)]).replace(/[ \t]+\n/g,'\n').replace(/\n{3,}/g,'\n\n').trim();
  return {body:s,title,questions};
@@ -387,7 +399,7 @@ export function importLatex(root){
   const css=fs.readFileSync(path.join(root,'assets/style.css'),'utf8');
   const background=/\.article-wrap\{[^}]*background:#([0-9a-f]{6})\b/i.exec(css)?.[1]||'ffffff';
   const source=fs.readFileSync(path.join(dir,file),'utf8');
-  const conversionOptions={renderTikz(tikz){
+  const conversionOptions={filename:file,renderTikz(tikz,sourceLine=1){
    if(/\\(?:input|include|write|openout|read|catcode|csname|usepackage|documentclass)\b/.test(tikz))throw Error(`${file}: lệnh không được phép trong hình TikZ`);
    // 14 TeX pt ≈ 18.6 CSS px. Normalize legacy size commands too.
    tikz=tikz.replace(/\\(?:tiny|scriptsize|footnotesize|small|normalsize|large|Large|LARGE|huge|Huge)\b/g, String.raw`\fontsize{14pt}{17pt}\selectfont`);
@@ -396,7 +408,12 @@ export function importLatex(root){
    // Reject old raster wrappers: their square viewBox loses the physical size.
    if(!fs.existsSync(svg)||/data:image\/png/.test(fs.readFileSync(svg,'utf8'))){
     fs.writeFileSync(path.join(cache,'figure.tex'),'\\documentclass[tikz,border=6pt]{standalone}\n\\usepackage{fix-cm}\n\\usepackage[utf8]{vietnam}\n\\usepackage{amsmath,amssymb,tkz-tab,fontawesome5,tkz-euclide}\n\\usetikzlibrary{arrows,arrows.meta,calc,patterns}\n\\definecolor{sitebackground}{HTML}{'+background+'}\n\\begin{document}\n\\pagecolor{sitebackground}\n\\fontsize{14pt}{17pt}\\selectfont\n'+tikz+'\n\\end{document}');
-    run('pdflatex',['-no-shell-escape','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);
+    try{run('pdflatex',['-no-shell-escape','-file-line-error','-interaction=nonstopmode','-halt-on-error','figure.tex'],cache);}catch(error){
+     const reported=Number(error.message.match(/figure\.tex:(\d+):/)?.[1]||error.message.match(/\bl\.(\d+)/)?.[1]);
+     // The generated preamble contains nine lines before the source TikZ.
+     const line=reported>9?sourceLine+reported-10:sourceLine;
+     const located=Error(`${file}:${line}: ${error.message}`);located.sourceLocated=true;throw located;
+    }
     if(process.platform==='darwin' && spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
     else if(spawnSync('pdftocairo',['-v'],{encoding:'utf8',stdio:'ignore'}).status===0)run('pdftocairo',['-svg','figure.pdf','figure.svg'],cache);
     else if(spawnSync('dvisvgm',['--version'],{encoding:'utf8'}).status===0)run('dvisvgm',['--pdf','--no-fonts','-o','figure.svg','figure.pdf'],cache);
@@ -410,6 +427,7 @@ export function importLatex(root){
   const git=spawnSync('git',['log','-1','--format=%cs','--',`post/${file}`],{cwd:root,encoding:'utf8'});
   const date=git.stdout?.trim()||fs.statSync(path.join(dir,file)).mtime.toISOString().slice(0,10);
   const meta={title:result.title||stem,description:`Bài tập chuyển từ LaTeX, gồm ${result.questions} câu hỏi.`,category:'Toán học',type:'Bài tập',date,tags:['toán học','đề luyện tập'],...custom};
+  meta.category=normalizeCategory(meta.category);
   const markdown='---\n'+YAML.stringify(meta)+'---\n\n'+result.body+'\n';
   fs.writeFileSync(path.join(generated,slug+'.md'),markdown);
   const duration=custom?.exam?.duration??90;
