@@ -340,6 +340,10 @@ function convertLatexBody(source,{lowerLists=false,sourceLine:baseLine=1,renderT
   let math=m.startsWith('$$')?m.slice(2,-2):m.startsWith('$')?m.slice(1,-1):m.startsWith('\\[')||m.startsWith('\\(')?m.slice(2,-2):m;
   math=math.replace(/\\(?:begin|end)\{(align|gather|equation|alignat)\*\}/g,(command,env)=>command.replace(env+'*',env));
   if(/\\(?:SI|si|qty|unit|num)\b/.test(math))return hold(convertMathUnits(math));
+  const number=math.trim();
+  if(/^[+-]?\d+(?:[.,]\d+)?$/.test(number))return hold(number.replace(/^-/, '–'));
+  if(/^[+-]?\d+(?:\s*,\s*[+-]?\d+){2,}$/.test(number))return hold(number.replace(/\s*,\s*/g, ', ').replace(/-/g, '–'));
+  math=math.replace(/(^|[=(:,;])\s*-(?=\d)/g,'$1\\text{–}');
   try{katex.renderToString(math,{displayMode:!inline,throwOnError:true,strict:false});}catch(error){
    const start=stripComments(source).indexOf(m);
    const delimiter=m.startsWith('$$')||m.startsWith('\\[')||m.startsWith('\\(')?2:m.startsWith('$')?1:0;

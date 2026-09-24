@@ -581,3 +581,309 @@ html[data-theme="dark"] #game-sudoku #sudoku-board .wrong{background:#673c40;col
 .ui-symbol-arrow{--ui-symbol:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M5%2019%2019%205M5%205h14v14%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E")}
 .ui-symbol-moon{--ui-symbol:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M17.5%203a9.5%209.5%200%201%200%200%2018A10.5%2010.5%200%200%201%2017.5%203Z%22%2F%3E%3C%2Fsvg%3E")}
 .ui-symbol-sun{--ui-symbol:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%224.5%22%2F%3E%3Cpath%20d%3D%22M12%201v3m0%2016v3M1%2012h3m16%200h3M4.2%204.2l2.1%202.1m11.4%2011.4%202.1%202.1M4.2%2019.8l2.1-2.1M17.7%206.3l2.1-2.1%22%20stroke%3D%22black%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E")}
+
+/* Three persistent reading fonts. */
+html[data-font="cmu"] body{font-family:"CMU Serif","Times New Roman",serif;font-weight:400;-webkit-text-stroke:.22px currentColor;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+html[data-font="cmu"] .katex{-webkit-text-stroke:0}
+html[data-font="stix"] body{font-family:"STIX Two Text",Georgia,serif;font-weight:500}
+html[data-font="cmu"]{--lesson-math-size:1em}
+html[data-font="stix"]{--lesson-math-size:1.12em}
+html[data-font="cmu"] :is(.prose,form.quiz,.exam-question) .katex,
+html[data-font="stix"] :is(.prose,form.quiz,.exam-question) .katex{color:inherit}
+/* Gentle lift and soft halo for the selected Hanoi disk. */
+.hanoi-disks{border-bottom-color:#91b8c3}
+.hanoi-disks::before{background:#79aebc;border-radius:3px}
+.hanoi-disk{background:hsl(calc(12 + var(--disk)*43) 76% 70%);transition:transform .2s,filter .2s,box-shadow .2s}
+#hanoi-board [aria-pressed="true"] .hanoi-disk:last-child{transform:translateY(-15px);outline:0;box-shadow:0 0 0 3px #f6d98666,0 5px 12px #243b4025;filter:saturate(1.12)}
+html[data-theme="dark"] #game-hanoi .hanoi-disks{border-bottom-color:#628a94}
+html[data-theme="dark"] #game-hanoi .hanoi-disks::before{background:#6397a2}
+#sudoku-notes[aria-pressed="true"]{background:#dceff1;color:#176c7c;box-shadow:inset 0 0 0 2px #5caab5}
+.sudoku-notes-grid{display:grid;grid-template-columns:repeat(3,1fr);width:100%;height:100%;align-items:center;justify-items:center;font-size:.38em;line-height:1;color:#54747a}
+html[data-theme="dark"] .sudoku-notes-grid{color:#bdd6d8}
+
+/* Warm, Kindle-inspired night palette with readable, luminous ink. */
+html[data-theme="dark"]{
+ color-scheme:light;
+ --paper:#f3ead5;
+ --ink:#382e23;
+ --muted:#786a56;
+ --line:#ddceb0;
+}
+html[data-theme="dark"] body{background:#f3ead5;color:#382e23}
+html[data-theme="dark"] :is(header,.nav-submenu,header nav#site-menu,.card,.article-wrap,.exam-wrap,.exam-question,.quiz,.quiz-option,.fun-player,.display-controls button,input,select,textarea,.search,.menu-toggle,.game-panel){background:#fbf5e7;color:#382e23;border-color:#dfd1b5}
+html[data-theme="dark"] :is(.hero,.subject-section,.about,.aside-note,.prose blockquote,.prose pre,.prose details,.exam-toolbar,.article-end,.fun-content,.quotes .fun-content,.tips .fun-content,.jokes .fun-content,.riddles .fun-content){background:#eee3ca;color:#382e23;border-color:#d8c6a5}
+html[data-theme="dark"] :is(.hero p,.card p,.about p,.aside-note p,.exam-policy,.back,.eyebrow,.overline,.exam-nav-group strong,.lesson-video figcaption,footer p){color:#776751}
+html[data-theme="dark"] :is(.fun-page h1,.jokes .fun-content h2,.quotes .fun-content blockquote.fun-text,.fun-author,.prose a,.brand-name,.hero h1 span){color:#965b30}
+html[data-theme="dark"] a:hover{color:#ad6737}
+html[data-theme="dark"] :is(.tag,.fun-label,.category.active,.nav-pill,.fun-tile,.card-art,.float,.subject-pick>span,#exam-nav a,.library-sections a){background:#e9ddc3;color:#55432d;border-color:#d1bd98}
+html[data-theme="dark"] :is(.primary,.go-top,.library-sections a.active){background:#8c5b34;color:#fff8e9;border-color:#a9784e}
+html[data-theme="dark"] .library{background:#f3ead5}
+html[data-theme="dark"] .subject-section{background:#e9dfc9;border-color:#d1c1a4}
+html[data-theme="dark"] .subject-section .overline{color:#816b4d}
+html[data-theme="dark"] :is(.exam-warning,#storage-warning){background:#f2dfae;color:#614923;border-color:#d6b96d}
+html[data-theme="dark"] .exam-toolbar{background:#eee3ca;border-color:#d6c4a3;box-shadow:0 3px 12px #50391b16}
+html[data-theme="dark"] .exam-toolbar #submit-exam{background:#967044;color:#fff8e9;border-color:#b29362}
+html[data-theme="dark"] .game-tabs button,html[data-theme="dark"] .game-panel button:not(.primary){background:#e7dcc5;color:#493c2b;border-color:#d1c1a4}
+html[data-theme="dark"] #game-sudoku #sudoku-board button{background:#faf4e7;color:#436b79;border-color:#d4c5a9}
+html[data-theme="dark"] #game-sudoku #sudoku-board .given{background:#e9dfca;color:#564832}
+html[data-theme="dark"] #game-sudoku #sudoku-board .peer{background:#efe6d4}
+html[data-theme="dark"] #game-sudoku #sudoku-board .same-number{background:#d6e3d8;color:#315b51}
+html[data-theme="dark"] #game-sudoku #sudoku-board .selected{background:#d3e2dc;color:#2e4d47}
+html[data-theme="dark"] #game-sudoku #sudoku-board .wrong{background:#f5d9c9;color:#a2392b}
+html[data-theme="dark"] #game-sudoku #sudoku-board button:focus-visible::after,html[data-theme="dark"] #game-sudoku #sudoku-board .selected::after{border-color:#9b693d}
+html[data-theme="dark"] .hanoi-disks{border-bottom-color:#bd9c68}
+html[data-theme="dark"] .hanoi-disks::before{background:#a78558}
+html[data-theme="dark"] .river-scene,html[data-theme="dark"] .game-panel{background:#eee3ca}
+html[data-theme="dark"] :is(.lesson-solution,.exam-review,.quiz-explanation){background:#eee8d8;color:#3c3327;border-color:#d7c9ad}
+/* TikZ SVGs are transparent; keep their dark strokes visible on warm paper. */
+html[data-theme="dark"] .prose img[src*="assets/latex/"],html[data-theme="dark"] .exam-question img[src*="assets/latex/"],html[data-theme="dark"] :is(.lesson-solution,.exam-review,.quiz-explanation) img[src*="assets/latex/"]{filter:none;mix-blend-mode:multiply;background:transparent}
+html[data-theme="dark"] .exam-question>h3{background:#f0e3ce;color:#694b32;border-left-color:#bd8552}
+html[data-theme="dark"] .exam-toolbar #exam-timer,html[data-theme="dark"] .exam-toolbar #exam-timer::before{color:#604b30}
+html[data-theme="dark"] :is(.fun-tile[href$="cau-do-iq.html"],.fun-cau-do-iq .card-art){background:#e6e0ef;color:#4e4167}
+html[data-theme="dark"] :is(.fun-tile[href$="chuyen-vui.html"],.fun-chuyen-vui .card-art){background:#f1dfe0;color:#70454a}
+html[data-theme="dark"] :is(.fun-tile[href$="truyen-cuoi-tieng-anh.html"],.jokes .fun-content){background:#f2e2ce;color:#65492c}
+html[data-theme="dark"] :is(.fun-tile[href$="danh-ngon.html"],.quotes .fun-content){background:#eee5c9;color:#624d27}
+html[data-theme="dark"] :is(.fun-tile[href$="meo-hoc-tap.html"],.tips .fun-content){background:#dce8d8;color:#37523b}
+html[data-theme="dark"] .riddles .fun-content{background:#e6e7cf;color:#4c542e}
+html[data-theme="dark"] :is(.riddle-result,.quiz-option:has(input:checked)){background:#e0eadb;color:#34533b;border-color:#9db88f}
+html[data-theme="dark"] .riddle-result.incorrect{background:#f2e0cd;color:#68462c;border-color:#cda879}
+html[data-theme="dark"] .quiz[data-result="correct"] .quiz-feedback,html[data-theme="dark"] form.quiz[data-result="correct"] .quiz-feedback{color:#416e4e}
+html[data-theme="dark"] .quiz[data-result="incorrect"] .quiz-feedback,html[data-theme="dark"] form.quiz[data-result="incorrect"] .quiz-feedback{color:#9a4936}
+html[data-theme="dark"] .word-board .word-cell.empty,html[data-theme="dark"] .word-board .word-cell.filled{background:#e5dcc9;color:#443a2e;border-color:#baa98c}
+html[data-theme="dark"] #game-words .word-key:not(.correct):not(.present):not(.absent){background:#ded5c3;color:#443a2e}
+html[data-theme="dark"] #game-words .word-key.correct{background:#72946b;color:white}
+html[data-theme="dark"] #game-words .word-key.present{background:#d5ad53;color:#3d3020}
+html[data-theme="dark"] #game-words .word-key.absent{background:#918b80;color:white}
+html[data-theme="dark"] .river-scene{background:#e6dfc9}
+html[data-theme="dark"] .river-world{border-color:#ae9975}
+html[data-theme="dark"] .river-counter{background:#e1e8d8;color:#40563f}
+html[data-theme="dark"] #game-river .river-character{background:#faf3df;color:#51432f}
+html[data-theme="dark"] #game-river .river-character[aria-pressed="true"]{background:#f1dfaa}
+html[data-theme="dark"] .river-controls #river-passenger{background:#e7ddc8;color:#473c2d}
+html[data-theme="dark"] #river-status{background:#dce8d8;color:#38523a}
+html[data-theme="dark"] #river-status[data-result="lost"]{background:#f0ddc5;color:#704728}
+html[data-theme="dark"] #river-mission{background:#dce8d8;color:#38523a;border-color:#a9bd9d}
+html[data-theme="dark"] #water-mission{background:#e2e5d9;color:#455646;border-color:#b5bd9e}
+html[data-theme="dark"] #game-water .water-world{background:linear-gradient(#e3edf0 0 72%,#b8d8d4 72% 76%,#e5e4cf 76%);border-color:#b4c8bf}
+html[data-theme="dark"] #game-water .water-target,html[data-theme="dark"] #game-water .water-selection,html[data-theme="dark"] #game-water .water-target strong{color:#534a38}
+html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"]{background:#e7dab955;border-color:#ad8856}
+html[data-theme="dark"] #water-status{background:#e4e7d9;color:#43533e}
+html[data-theme="dark"] #water-status[data-result="won"]{background:#dce9d8;color:#35573b}
+html[data-theme="dark"] #water-status[data-result="lost"]{background:#f0e0c8;color:#68492d}
+html[data-theme="dark"] .game-result{background:#e0eadb;color:#3f573e;border-color:#a8bf9e}
+html[data-theme="dark"] .game-result h3,html[data-theme="dark"] .game-result p{color:#3f573e}
+html[data-theme="dark"] .game-result[data-outcome="lost"]{background:#f0e0cf;color:#69492f}
+html[data-theme="dark"] .game-result[data-outcome="lost"] h3,html[data-theme="dark"] .game-result[data-outcome="lost"] p{color:#69492f}
+html[data-theme="dark"] #game-hanoi #hanoi-board button{background:transparent;color:#574936}
+
+/* Warm palette pass for all game controls and selected states. */
+html[data-theme="dark"] .game-tabs button{background:#e8ddc7;color:#51422e;border-color:#d3c1a0}
+html[data-theme="dark"] .game-tabs button[aria-pressed="true"]{background:#8c5b34;color:#fff8e9;border-color:#8c5b34}
+html[data-theme="dark"] .game-panel button:not(.primary),html[data-theme="dark"] .game-panel .puzzle-actions button,html[data-theme="dark"] .game-directions button{background:#e8ddc7;color:#51422e;border-color:#d3c1a0}
+html[data-theme="dark"] .game-panel button:not(.primary):hover,html[data-theme="dark"] .game-directions button:hover{background:#ded0b4}
+html[data-theme="dark"] .game-panel button:focus-visible,html[data-theme="dark"] #number-board:focus-visible{outline-color:#a66b36}
+html[data-theme="dark"] #game-numbers .number-board{background:#d4c4a5}
+html[data-theme="dark"] #game-numbers .number-cell{background:#e8dfcd;color:#534735}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="1"]{background:#f4edda;color:#594b35}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="2"]{background:#f3dfad;color:#59421e}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="3"]{background:#f1c487;color:#583918}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="4"]{background:#e9a16c;color:#4f3022}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="5"]{background:#da805d;color:#fff8e9}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="6"],html[data-theme="dark"] #game-numbers .number-cell[data-level="7"]{background:#94b995;color:#203c2a}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="8"],html[data-theme="dark"] #game-numbers .number-cell[data-level="9"]{background:#79a9a6;color:#173739}
+html[data-theme="dark"] #game-numbers .number-cell[data-level="10"],html[data-theme="dark"] #game-numbers .number-cell[data-level="11"]{background:#557d82;color:#fff8e9}
+html[data-theme="dark"] #game-river .river-landscape{filter:none}
+html[data-theme="dark"] #game-river .river-character[aria-pressed="true"]{background:#f1dfaa;color:#574329;filter:drop-shadow(0 2px 5px #95703835)}
+html[data-theme="dark"] #game-river .river-character:not(:disabled):hover{filter:brightness(1.04)}
+html[data-theme="dark"] #game-river #river-cross:focus-visible,html[data-theme="dark"] #game-river .river-character:focus-visible{outline:3px solid #b47c39;outline-offset:3px}
+html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"]{filter:brightness(1.04) drop-shadow(0 0 8px #d0a95a85) drop-shadow(0 8px 5px #705a3030)}
+html[data-theme="dark"] #game-water .water-jug:focus-visible{outline:2px dashed #9a6b35}
+html[data-theme="dark"] #sudoku-notes[aria-pressed="true"]{background:#e9d6a7;color:#62491e;box-shadow:inset 0 0 0 2px #b18a47}
+html[data-theme="dark"] #game-sudoku #sudoku-keys button[aria-pressed="true"]{background:#e9d6a7;color:#62491e}
+html[data-theme="dark"] #game-sudoku #sudoku-board .selected{background:#e6d3a3;color:#44371f}
+html[data-theme="dark"] #game-sudoku #sudoku-board .same-number{background:#e1d9ae;color:#4b482b}
+html[data-theme="dark"] #game-sudoku #sudoku-board .peer{background:#f0e8d5}
+html[data-theme="dark"] #game-sudoku #sudoku-board .selected::after{border-color:#aa783b}
+html[data-theme="dark"] #game-hanoi #hanoi-board button[aria-pressed="true"] .hanoi-disk:last-child{box-shadow:0 0 0 3px #f0d99b,0 5px 12px #6b512a35;filter:saturate(1.08)}
+html[data-theme="dark"] #game-words .word-key:focus-visible{outline-color:#9a6b35}
+html[data-theme="dark"] .game-panel :is(#number-status,#river-status,#water-status,#sudoku-status,#hanoi-status,#word-status){color:#51442f}
+html[data-theme="dark"] .game-panel :is(#number-status,#sudoku-status,#hanoi-status,#word-status){background:transparent}
+
+/* Match each game's play surface to the shared Kindle paper palette. */
+html[data-theme="dark"] .game-panel{background:#f3ead5;border-color:#ddceb0}
+html[data-theme="dark"] .river-scene,html[data-theme="dark"] #game-river .river-world{background:#eee3ca}
+html[data-theme="dark"] #game-river .river-landscape>rect:first-child{fill:#eee3ca}
+html[data-theme="dark"] #game-river .river-landscape>svg:first-of-type rect{fill:#c7d7ce}
+html[data-theme="dark"] #game-river .river-landscape>svg:first-of-type path{stroke:#d9e5d9}
+html[data-theme="dark"] #game-river .river-landscape>svg:nth-of-type(2)>path:first-child{fill:#91aa82}
+html[data-theme="dark"] #game-river .river-landscape>svg:nth-of-type(2)>path:nth-child(2){fill:#b59a72}
+html[data-theme="dark"] #game-river .river-landscape>svg:nth-of-type(3)>path:first-child{fill:#91aa82}
+html[data-theme="dark"] #game-river .river-landscape>svg:nth-of-type(3)>path:nth-child(2){fill:#b59a72}
+html[data-theme="dark"] #game-river .river-landscape>svg:nth-of-type(2) circle,html[data-theme="dark"] #game-river .river-landscape>svg:nth-of-type(3) circle{fill:#87a575}
+html[data-theme="dark"] #game-river .river-world .scene-guidance{background:#f5edda;color:#57452e}
+html[data-theme="dark"] #game-water .water-world{background:linear-gradient(#e8e4d4 0 72%,#bad5cc 72% 76%,#dfd4b9 76%);border-color:#c8b895}
+html[data-theme="dark"] #game-numbers .number-board{background:#d9caaa}
+html[data-theme="dark"] #game-words .word-board{background:transparent}
+html[data-theme="dark"] #game-sudoku #sudoku-board{background:#e5dac1;border-color:#b89d70}
+html[data-theme="dark"] #game-hanoi #hanoi-board{background:#eee3ca}
+
+/* Keep river characters and water jugs transparent; highlight their artwork only. */
+html[data-theme="dark"] #game-river button.river-character,
+html[data-theme="dark"] #game-river button.river-character[aria-pressed="true"],
+html[data-theme="dark"] #game-river button.river-passenger{background:transparent;border:0;box-shadow:none;outline:0;color:#3d452e}
+html[data-theme="dark"] #game-river button.river-character[aria-pressed="true"]{filter:none}
+html[data-theme="dark"] #game-river button.river-character[aria-pressed="true"] svg,
+html[data-theme="dark"] #game-river button.river-character:focus-visible svg{filter:brightness(1.08) drop-shadow(0 0 7px #d2a753) drop-shadow(0 3px 2px #59452a55);transform:translateY(-4px)}
+html[data-theme="dark"] #game-river button.river-passenger:focus-visible svg{filter:drop-shadow(0 0 7px #d2a753)}
+html[data-theme="dark"] #game-water button.water-jug,
+html[data-theme="dark"] #game-water button.water-jug[aria-pressed="true"],
+html[data-theme="dark"] #game-water button.water-jug:focus-visible{background:transparent;border:0;box-shadow:none;outline:0;filter:none}
+html[data-theme="dark"] #game-water button.water-jug[aria-pressed="true"] svg,
+html[data-theme="dark"] #game-water button.water-jug:focus-visible svg{filter:brightness(1.05) drop-shadow(0 0 7px #cca058a6) drop-shadow(0 6px 4px #6f542a40)}
+html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"] strong{color:#6d542e}
+html[data-theme="dark"] #game-water .water-jug .jug-below-can{fill:#67583d}
+html[data-theme="dark"] .game-panel :is(.river-intro,.water-intro,.river-help,.puzzle-instructions,.word-hint,.word-help,.puzzle-levels label){color:#75664f}
+html[data-theme="dark"] .game-panel :is(h2,h3,.river-heading,.water-heading){color:#403527}
+html[data-theme="dark"] #river-mission{background:#e2e9d9;color:#3e5337;border-color:#abbc9a;box-shadow:0 3px 10px #53462814}
+html[data-theme="dark"] #water-mission{background:#e7e6d5;color:#4c5441;border-color:#bab999;box-shadow:0 3px 10px #53462814}
+html[data-theme="dark"] #game-river .river-world #river-status,
+html[data-theme="dark"] #game-water .water-fixtures #water-status{background:transparent;color:#4b5037;border:0;text-shadow:none}
+html[data-theme="dark"] .game-panel .scene-tools button{background:#f5edd8;color:#5e5037;border:1px solid #cdbc9d}
+
+/* Warm emphasis for the river challenge and navigation states. */
+html[data-theme="dark"] #river-mission{background:#efdfbd;color:#5a4528;border:1px solid #cdb17d;box-shadow:0 3px 12px #6e4e221a}
+html[data-theme="dark"] header,html[data-theme="dark"] header .nav-submenu{background:#fbf5e7;color:#382e23;border-color:#dfd1b5;box-shadow:0 12px 26px #76572a1a}
+html[data-theme="dark"] body.menu-open header,html[data-theme="dark"] body.menu-open header nav#site-menu{background:#fbf5e7;color:#382e23}
+html[data-theme="dark"] header :is(.nav-exams[open]>summary,.nav-exams>summary:hover,.nav-submenu a:hover,.nav-submenu a:focus-visible),html[data-theme="dark"] header #site-menu>a:not(.nav-pill):hover{background:#ead9b9;color:#684728}
+html[data-theme="dark"] header .nav-pill{background:#eadabb;color:#624625}
+html[data-theme="dark"] header .nav-pill:hover,html[data-theme="dark"] header .nav-pill:focus-visible{background:#d6b786;color:#4d341d}
+html[data-theme="dark"] header .display-controls button:hover,html[data-theme="dark"] header .display-controls button:focus-visible{background:#ead9b9;color:#684728}
+
+/* Opaque dropdown above page content; mobile submenus sit inside an opaque sheet. */
+header{z-index:100}
+header .nav-exams[open]{z-index:101}
+@media(min-width:951px){
+ header nav#site-menu .nav-submenu{position:absolute;z-index:102;background:#fff;border:1px solid #d1e4df;box-shadow:0 16px 40px #193f4926}
+ html[data-theme="dark"] header nav#site-menu .nav-submenu{background:#fbf5e7;border-color:#dfd1b5;box-shadow:0 16px 36px #76572a2e}
+}
+@media(max-width:950px){
+ body.menu-open header nav#site-menu{z-index:101;background:#fff}
+ html[data-theme="dark"] body.menu-open header nav#site-menu{background:#fbf5e7}
+ header nav#site-menu .nav-submenu,html[data-theme="dark"] header nav#site-menu .nav-submenu{position:static;background:transparent;border:0;box-shadow:none}
+}
+
+/* Readable replay link and softer water colours in the warm reading theme. */
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]{background:transparent;color:#59452f;border:0}
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]:hover,
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]:focus-visible{background:#e8dbc1;color:#49351f}
+html[data-theme="dark"] .game-panel .game-result[data-outcome="lost"] .result-actions [data-result-dismiss]{color:#68472f}
+html[data-theme="dark"] #game-water .water-world .water{fill:#6fa9a0;opacity:.82}
+html[data-theme="dark"] #game-water .water-world .jug-glass{fill:#f7f3e8;stroke:#799b96}
+html[data-theme="dark"] #game-water .water-world .jug-handle{stroke:#799b96}
+html[data-theme="dark"] #game-water .water-world .eye{fill:#587e7b}
+html[data-theme="dark"] #game-water .water-world .smile{stroke:#587e7b}
+html[data-theme="dark"] #water-stream .stream-body{stroke:#689f99;opacity:.85}
+html[data-theme="dark"] #water-stream .stream-highlight{stroke:#e1eee4}
+html[data-theme="dark"] #game-water :is(#water-tap,#water-drain) svg path[fill="#2bcbba"]{fill:#6fa9a0}
+html[data-theme="dark"] #game-river .river-landscape>svg:first-of-type rect{fill:#9fc4b9}
+html[data-theme="dark"] #game-river .river-landscape>svg:first-of-type path{stroke:#d7e6d8}
+
+/* Rounded game surfaces while the two large scenes remain full width. */
+#game-river .river-world,#game-water .water-world{border-radius:20px}
+#game-hanoi #hanoi-board button{border-radius:10px}
+#hanoi-board [aria-pressed="true"] .hanoi-disk:last-child,html[data-theme="dark"] #game-hanoi #hanoi-board button[aria-pressed="true"] .hanoi-disk:last-child{box-shadow:none;filter:brightness(1.12)}
+#game-river .river-character[aria-pressed="true"] svg,html[data-theme="dark"] #game-river .river-character[aria-pressed="true"] svg{filter:brightness(1.1)}
+#game-water .water-jug[aria-pressed="true"] svg,html[data-theme="dark"] #game-water .water-jug[aria-pressed="true"] svg{filter:brightness(1.08)}
+
+/* Echo the logo's cyan, peach and coral without washing out the headline. */
+.hero{background:linear-gradient(135deg,#fffaf7 0%,#f1f8f8 56%,#e7f5f9 100%)}
+.hero .mascot{background:#eaf7fa}
+footer .brand.small{display:inline-flex;align-items:baseline;gap:0;background:none;color:inherit;-webkit-text-fill-color:currentColor;white-space:nowrap}
+footer .brand.small .footer-brand-first{color:#167d94;-webkit-text-fill-color:#167d94}
+footer .brand.small .footer-brand-second{margin-left:.25em;color:#8e5549;-webkit-text-fill-color:#8e5549}
+footer .brand.small .dot{color:#bd6259;-webkit-text-fill-color:#bd6259}
+html[data-theme="dark"] .hero{background:linear-gradient(135deg,#f3e3d6 0%,#eee7d7 58%,#e6eadc 100%);color:#382e23}
+html[data-theme="dark"] .hero .mascot{background:#e5ede8}
+html[data-theme="dark"] footer .brand.small{background:none;color:inherit;-webkit-text-fill-color:currentColor}
+html[data-theme="dark"] footer .brand.small .footer-brand-first{color:#39777b;-webkit-text-fill-color:#39777b}
+html[data-theme="dark"] footer .brand.small .footer-brand-second{color:#965949;-webkit-text-fill-color:#965949}
+html[data-theme="dark"] footer .brand.small .dot{color:#b96358;-webkit-text-fill-color:#b96358}
+
+/* Warm hover colours for subject names and library categories. */
+html[data-theme="dark"] .subject-pick:hover,
+html[data-theme="dark"] .subject-pick:focus-visible,
+html[data-theme="dark"] .category:hover,
+html[data-theme="dark"] .category:focus-visible{color:#704a28}
+html[data-theme="dark"] .subject-pick:hover>span,
+html[data-theme="dark"] .subject-pick:focus-visible>span,
+html[data-theme="dark"] .category:hover,
+html[data-theme="dark"] .category:focus-visible{background:#ead9b9;border-color:#c8ac7b}
+html[data-theme="dark"] .category.active:hover,
+html[data-theme="dark"] .category.active:focus-visible{background:#dfc795;color:#60411f}
+
+/* About section follows the logo palette in both reading themes. */
+.about{background:linear-gradient(135deg,#fff4ec 0%,#f2f8f5 60%,#eaf5f6 100%);color:var(--ink)}
+.about p{color:#607b79}
+.about-icon{color:#3b998e}
+.about>a{border-color:#c5dfd9;color:#257e83}
+html[data-theme="dark"] .about{background:linear-gradient(135deg,#f3e7d5 0%,#eee9d9 60%,#e4eadd 100%);color:#382e23}
+html[data-theme="dark"] .about p{color:#71634e}
+html[data-theme="dark"] .about-icon{color:#71855c}
+html[data-theme="dark"] .about>a{border-color:#c9b99a;color:#805d37}
+/* Keep the hero's logo-inspired background consistent across themes. */
+html[data-theme="dark"] .hero{background:linear-gradient(135deg,#fffaf7 0%,#f1f8f8 56%,#e7f5f9 100%)}
+/* Question headings in article pages need contrast on the warm reading background. */
+html[data-theme="dark"] .prose h3{color:#674a2e}
+/* Exam answer controls in the warm reading theme. */
+html[data-theme="dark"] .exam-question .quiz-option{background:#f1e7d3;color:#382e23;border-color:#cfbd9c}
+html[data-theme="dark"] .exam-question .quiz-option:hover{background:#eadbc0}
+html[data-theme="dark"] .exam-question .quiz-option:has(input:checked){background:#e4cda7;color:#42301e;border-color:#a87d4c;box-shadow:inset 0 0 0 1px #a87d4c}
+html[data-theme="dark"] .exam-question input:is([type="radio"],[type="checkbox"]){accent-color:#946331}
+/* English Riddles buttons follow the warm reading palette. */
+html[data-theme="dark"] .riddles .primary{background:#8c5b34;color:#fff8e9;border-color:#744725;box-shadow:0 4px 0 #644020}
+html[data-theme="dark"] .riddles .primary:hover{background:#754923;color:#fff8e9}
+html[data-theme="dark"] .riddles .fun-next{background:#e8cc88;color:#4f3d20;border-color:#bda366;box-shadow:0 4px 0 #bda366}
+html[data-theme="dark"] .riddles .fun-next:hover{background:#dec07b;color:#4f3d20}
+/* Study Tips uses warm paper instead of its daytime green panel. */
+html[data-theme="dark"] .fun-player.tips{background:#f5ecda;border-color:#d7c4a2;border-top-color:#b58b55}
+html[data-theme="dark"] .tips .fun-content{background:#ebdfc7;color:#4d3e2b;border-color:#d4bf99}
+html[data-theme="dark"] .tips .fun-label{background:#e0cba7;color:#594329}
+html[data-theme="dark"] .tips .primary{background:#8c5b34;color:#fff8e9}
+html[data-theme="dark"] .tips .primary:hover{background:#754923;color:#fff8e9}
+
+/* Finish the warm reading palette across library and entertainment controls. */
+html[data-theme="dark"] .sort-controls button{background:#f5eddb;color:#624c32;border-color:#cdbb9b}
+html[data-theme="dark"] .sort-controls button:hover,html[data-theme="dark"] .sort-controls button:focus-visible{background:#ead8b7;color:#513a22;border-color:#b99462}
+html[data-theme="dark"] .sort-controls button[aria-pressed="true"]{background:#d5b884;color:#49321c;border-color:#a77d47}
+html[data-theme="dark"] .category.active{background:#e3d0ab;color:#60411f}
+html[data-theme="dark"] .fun-player.riddles{background:linear-gradient(145deg,#f4e7d1,#fbf2e1 75%);border-color:#d0b987;border-top-color:#ad8150;box-shadow:0 8px 0 #ddc9a4,0 16px 32px #76572a12}
+html[data-theme="dark"] .fun-player.jokes{background:linear-gradient(145deg,#f5e4d3,#fbf0e3 70%,#f2dfd3);border-color:#d8b9a0;border-top-color:#b77d5b}
+html[data-theme="dark"] .fun-player.quotes{background:#f8efdc;border-color:#d8c399;border-top-color:#a7824d}
+html[data-theme="dark"] .fun-page:has(.riddles) h1,html[data-theme="dark"] .fun-page:has(.tips) h1{color:#80532f}
+html[data-theme="dark"] .fun-player :is(select,input){background:#fff9ed;color:#382e23;border-color:#cbb895}
+html[data-theme="dark"] .fun-player :focus-visible,html[data-theme="dark"] .fun-tile:focus-visible{outline-color:#a67840}
+html[data-theme="dark"] .fun-tile:hover{background:#dfcca8;color:#543a20}
+html[data-theme="dark"] .fun-tile[href$="do-vui-tieng-anh.html"]{background:#e9d9b6;color:#654824;border-color:#c6a878}
+html[data-theme="dark"] .fun-tile[href$="do-vui-tieng-anh.html"]:hover{background:#ddc595}
+html[data-theme="dark"] .fun-tile[href$="meo-hoc-tap.html"]:hover{background:#d1ddc9;color:#37523b}
+html[data-theme="dark"] .quiz-option input{accent-color:#946331}
+html[data-theme="dark"] .quiz-option:has(input:checked){background:#e4d0aa;color:#42301e;border-color:#aa824f}
+/* Warm quiz radios in both lessons and exams, including their unchecked state. */
+html[data-theme="dark"] form.quiz .quiz-option{background:#f2e8d3;color:#382e23;border-color:#cfbd9c}
+html[data-theme="dark"] form.quiz .quiz-option:hover{background:#ebdec3}
+html[data-theme="dark"] form.quiz .quiz-option:has(input:checked){background:#e4cda7;color:#42301e;border-color:#a87d4c;box-shadow:inset 0 0 0 1px #a87d4c}
+html[data-theme="dark"] .quiz-option input[type="radio"]{appearance:none;-webkit-appearance:none;width:20px;height:20px;min-width:20px;padding:0;margin:0;border:2px solid #9b784c;border-radius:50%;background:#f8edda;display:inline-grid;place-content:center;flex-shrink:0}
+html[data-theme="dark"] .quiz-option input[type="radio"]::before{content:"";width:10px;height:10px;border-radius:50%;background:#83582f;transform:scale(0);transition:transform .15s ease}
+html[data-theme="dark"] .quiz-option input[type="radio"]:checked::before{transform:scale(1)}
+html[data-theme="dark"] .quiz-option input[type="radio"]:focus-visible{outline:2px solid #a67840;outline-offset:3px}
+/* Warm active filters, Hanoi disks and Sudoku grid. */
+html[data-theme="dark"] #active-filters button{background:#e5d1ab;color:#573d22;border:1px solid #c5a777}
+html[data-theme="dark"] #active-filters button:hover,html[data-theme="dark"] #active-filters button:focus-visible{background:#d8bc8e;color:#453019;border-color:#a9824c}
+html[data-theme="dark"] #game-hanoi .hanoi-disk{background:hsl(calc(9 + var(--disk)*6) 67% 68%);color:#4b321f}
+html[data-theme="dark"] #game-sudoku #sudoku-board{border-color:#987d56}
+html[data-theme="dark"] #game-sudoku #sudoku-board button{color:#634927;border-right-color:#caba9b;border-bottom-color:#caba9b}
+html[data-theme="dark"] #game-sudoku #sudoku-board button:nth-child(3n){border-right-color:#987d56}
+html[data-theme="dark"] #game-sudoku #sudoku-board button:nth-child(n+19):nth-child(-n+27),html[data-theme="dark"] #game-sudoku #sudoku-board button:nth-child(n+46):nth-child(-n+54){border-bottom-color:#987d56}
+html[data-theme="dark"] #game-sudoku .sudoku-notes-grid{color:#765838}
+html[data-theme="dark"] #game-sudoku #sudoku-board .selected .sudoku-notes-grid{color:#543717}
+html[data-theme="dark"] .exam-wrap .exam-policy{color:#786953}
