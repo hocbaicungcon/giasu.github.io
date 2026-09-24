@@ -542,12 +542,12 @@ html[data-theme="dark"] #game-hanoi #hanoi-board button{background:#29443f;color
 @font-face{font-family:"CMU Serif";src:url("fonts/cmu/cmunbx.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:"CMU Serif";src:url("fonts/cmu/cmunti.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap}
 @font-face{font-family:"CMU Serif";src:url("fonts/cmu/cmunbi.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap}
-html[data-font="serif"] body{font-family:"CMU Serif","Times New Roman",serif}
+html[data-font="serif"] body{font-family:"CMU Serif","Times New Roman",serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 :root{--lesson-math-size:1.18em}
-html[data-font="serif"]{--lesson-math-size:1.06em}
+html[data-font="serif"]{--lesson-math-size:1em}
 .prose .katex,form.quiz .katex,.exam-question .katex{font-size:var(--lesson-math-size)}
-/* KaTeX uses regular weight, but its strokes look heavier than CMU Serif. */
-html[data-font="serif"] :is(.prose,form.quiz,.exam-question) .katex{color:color-mix(in srgb,currentColor 86%,transparent)}
+/* Keep text and mathematics the same solid color in both themes. */
+html[data-font="serif"] :is(.prose,form.quiz,.exam-question) .katex{color:inherit}
 .katex-html .math-digits{display:inline-block;transform:scale(.96);transform-origin:center 75%}
 .prose img,.exam-question img,.quiz-explanation img{display:block;max-width:100%;height:auto;margin-inline:auto}
 #game-sudoku #sudoku-board .peer{background:#edf5f6}
