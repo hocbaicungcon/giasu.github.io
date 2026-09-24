@@ -321,9 +321,9 @@ export function convertLatex(source,options={}){
 }
 function convertLatexBody(source,{lowerLists=false,sourceLine:baseLine=1,renderTikz=()=>{throw Error('Cần bộ biên dịch TikZ');}}={}){
  let s=stripComments(source.replace(/\r\n/g,'\n'));
- // Xóa "ĐỀ 001", "ĐỀ 007", ... đứng trước Phần I
+ // Xóa tiêu đề ĐỀ 001, ĐỀ 002, ...
 s=s.replace(
- /(?:\\textbf\{)?ĐỀ\s+\d{3}(?:\})?\s*(?=(?:\\textbf\{)?Phần\s+I\b)/giu,
+ /\\begin\{center\}\s*\\textbf\{\{\\Huge\s+ĐỀ\s+\d+\}\}\s*\\end\{center\}/giu,
  ''
 );
  s=commands(s,'enlargethispage',()=> '');
