@@ -34,41 +34,44 @@ jobs:
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         run: |
           sudo apt-get update
+          # latex-extra brings latex-base/recommended; pictures supplies TikZ and tkz-*.
+          # lang-other supplies VnTeX. Linux uses pdftocairo, so dvisvgm is unnecessary.
           sudo apt-get install -y --no-install-recommends \
-            texlive-latex-base \
             texlive-latex-extra \
             texlive-pictures \
-            texlive-fonts-recommended \
-            texlive-fonts-extra \
             texlive-lang-other \
             poppler-utils \
-            dvisvgm
-      
-          echo "=== Check LaTeX environment ==="
-          pdflatex --version | head -n 1
-      
-          echo "=== TikZ ==="
-          kpsewhich tikz.sty
-          kpsewhich tkz-tab.sty
-          kpsewhich tkz-euclide.sty
-      
-          echo "=== Font Awesome 5 ==="
-          kpsewhich fontawesome5.sty
-      
-          echo "=== Vietnamese / VnTeX ==="
-          kpsewhich vietnam.sty
-          kpsewhich t5enc.def
-          # sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-pictures poppler-utils dvisvgm tkz-euclide vietnam fontawesome5
+            curl unzip
+          bash scripts/install-fontawesome5.sh
+          for file in standalone.cls fix-cm.sty amsmath.sty amssymb.sty tikz.sty tkz-tab.sty tkz-euclide.sty vietnam.sty t5enc.def fontawesome5.sty; do
+            kpsewhich "$file"
+          done
+          # Exercise the actual renderer preamble, including embedded icon fonts.
+          work=$(mktemp -d)
+          cat > "$work/check.tex" <<'TEX'
+          \documentclass[tikz,border=6pt]{standalone}
+          \usepackage{fix-cm}
+          \usepackage[utf8]{vietnam}
+          \usepackage{amsmath,amssymb,tkz-tab,fontawesome5,tkz-euclide}
+          \begin{document}
+          \begin{tikzpicture}
+          \node {Tiếng Việt \faBook~\faIcon{graduation-cap} $\mathbb{R}$};
+          \end{tikzpicture}
+          \end{document}
+          TEX
+          pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory="$work" "$work/check.tex"
+          pdftocairo -svg "$work/check.pdf" "$work/check.svg"
+          test -s "$work/check.svg"
       - name: Restore and save TikZ SVG cache
         if: hashFiles('post/*.tex', 'post/*.TEX') != ''
         uses: actions/cache@v6
         with:
           path: .generated/tikz/*/figure.svg
           # Invalidate when the renderer, styles or build environment changes.
-          key: tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml') }}-${{ hashFiles('post/*.tex', 'post/*.TEX') }}
+          key: tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml', 'scripts/install-fontawesome5.sh') }}-${{ hashFiles('post/*.tex', 'post/*.TEX') }}
           # Reuse unchanged figures when a post is added or edited.
           restore-keys: |
-            tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml') }}-
+            tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml', 'scripts/install-fontawesome5.sh') }}-
       - name: Install dependencies
         run: npm ci
       - name: Test Markdown and mathematics
