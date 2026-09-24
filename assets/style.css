@@ -908,3 +908,7 @@ html[data-theme="dark"] .tangram-divider{stroke:#cbb792}
 html[data-theme="dark"] .tangram-target polygon{fill:#e1d5bd}
 html[data-theme="dark"] .tangram-piece.selected polygon,html[data-theme="dark"] .tangram-piece:focus-visible polygon{stroke:#654525}
 @media(max-width:620px){#tangram-scene{margin-inline:-8px;border-radius:12px}.tangram-actions button{flex:1;padding:8px 10px;font-size:.9rem}}
+/* Sudoku selection is indicated by fill alone; pencil notes stay upright and legible. */
+#game-sudoku #sudoku-board button:focus-visible::after,#game-sudoku #sudoku-board .selected::after{content:none}
+#game-sudoku .sudoku-notes-grid{font-size:clamp(.55rem,1.2vw,.68rem);font-style:normal;font-weight:600}
+#game-sudoku .sudoku-notes-grid i{font-style:normal}
