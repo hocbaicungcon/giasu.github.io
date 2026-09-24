@@ -1,6 +1,7 @@
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
 import {matchstickLevels} from './matchstick-levels.js';
+import {matchstickExtraLevels} from './matchstick-extra-levels.js';
 
 const $=selector=>document.querySelector(selector);
 const digitSegments={'0':'abcdef','1':'bc','2':'abdeg','3':'abcdg','4':'bcfg','5':'acdfg','6':'acdefg','7':'abc','8':'abcdefg','9':'abcdfg'};
@@ -8,7 +9,9 @@ const operatorSegments={'+':'hv','-':'h'};
 const equalSegments={'=':'ul'};
 const segmentSets=[digitSegments,operatorSegments,digitSegments,equalSegments,digitSegments];
 const possibleSegments=['abcdefg','hv','abcdefg','ul','abcdefg'];
-let level=0,sticks=[],selected=null,moved=false,won=false;
+const levels=[...matchstickLevels.map(([start,solution])=>({start,solution,moves:1})),...matchstickExtraLevels.map(([start,solution,moves])=>({start,solution,moves}))];
+for(let i=levels.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[levels[i],levels[j]]=[levels[j],levels[i]];}
+let level=0,sticks=[],selected=null,movesMade=0,won=false;
 const result=createGameResult($('#match-scene'),{restart:()=>start(),next:()=>start(level+1)});
 
 function identify(slot,segments){const keys=segmentSets[slot];return Object.keys(keys).find(char=>keys[char].length===segments.size&&[...keys[char]].every(part=>segments.has(part)));}
@@ -26,19 +29,22 @@ function render(){
   return symbol;
  }));
  const expression=equation();board.setAttribute('aria-label',`Phép tính ${expression?.text||'đang thay đổi'}`);
+ $('#match-moves').textContent=`Cần chuyển ${levels[level].moves} que · Đã chuyển ${movesMade}/${levels[level].moves}`;
 }
-function start(next=level){result.clear();level=Math.max(0,Math.min(matchstickLevels.length-1,next));const [startEquation]=matchstickLevels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;moved=false;won=false;$('#match-level').textContent=`Màn ${level+1}/${matchstickLevels.length}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===matchstickLevels.length-1;$('#match-status').textContent='Nhấc một que rồi đặt vào nét mờ.';render();}
+function start(next=level){result.clear();level=Math.max(0,Math.min(levels.length-1,next));const {start:startEquation,moves}=levels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;movesMade=0;won=false;$('#match-level').textContent=`Màn ${level+1}/${levels.length}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===levels.length-1;$('#match-status').textContent=`Nhấc một que rồi đặt vào nét mờ. Cần chuyển ${moves} que.`;render();}
 $('#match-board').addEventListener('click',event=>{
- const button=event.target.closest('[data-segment]');if(!button||moved||won)return;
+ const button=event.target.closest('[data-segment]');if(!button||movesMade>=levels[level].moves||won)return;
  const slot=Number(button.dataset.slot),segment=button.dataset.segment,active=sticks[slot].has(segment);
  if(!selected){if(!active){$('#match-status').textContent='Hãy chọn một que đang sáng trước.';return;}selected={slot,segment};sound('key');$('#match-status').textContent='Chọn nét mờ để đặt que diêm.';render();return;}
  if(active){selected=selected.slot===slot&&selected.segment===segment?null:{slot,segment};$('#match-status').textContent=selected?'Chọn nét mờ để đặt que diêm.':'Đã bỏ chọn que.';render();return;}
- sticks[selected.slot].delete(selected.segment);sticks[slot].add(segment);selected=null;moved=true;sound('move');render();
- const calculation=equation();if(calculation?.correct){won=true;$('#match-status').textContent=`Chính xác! ${calculation.text} là phép tính đúng.`;result.show({won:true,description:`Bạn đã sửa thành ${calculation.text} bằng đúng một que diêm.`,hasNext:level<matchstickLevels.length-1});}
+ sticks[selected.slot].delete(selected.segment);sticks[slot].add(segment);selected=null;movesMade++;sound('move');render();
+ const calculation=equation(),remaining=levels[level].moves-movesMade;
+ if(calculation?.correct&&remaining===0){won=true;$('#match-status').textContent=`Chính xác! ${calculation.text} là phép tính đúng.`;result.show({won:true,description:`Bạn đã sửa thành ${calculation.text} bằng ${movesMade} que diêm.`,hasNext:level<levels.length-1});}
+ else if(remaining>0){$('#match-status').textContent=`Còn ${remaining} que cần chuyển. Tiếp tục chọn que đang sáng.`;}
  else{$('#match-status').textContent=calculation?`${calculation.text} vẫn chưa đúng. Bấm Chơi lại rồi thử cách khác.`:'Kí hiệu sau khi chuyển chưa hợp lệ. Bấm Chơi lại rồi thử lại.';sound('error');}
 });
 $('#match-prev').addEventListener('click',()=>start(level-1));
 $('#match-next').addEventListener('click',()=>start(level+1));
 $('#match-reset').addEventListener('click',()=>start());
-const select=$('#match-jump');select.replaceChildren(...matchstickLevels.map((_,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`Màn ${i+1}`;return option;}));select.addEventListener('change',()=>start(Number(select.value)));
+const select=$('#match-jump');select.replaceChildren(...levels.map((entry,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`Màn ${i+1} · ${entry.moves} que`;return option;}));select.addEventListener('change',()=>start(Number(select.value)));
 start();

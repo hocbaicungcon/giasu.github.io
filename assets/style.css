@@ -1094,3 +1094,5 @@ html[data-theme="dark"] .game-panel .scene-tools button.game-sound{border:1px so
 #match-scene .puzzle-level{margin-top:0}
 #match-scene .match-board{margin-block:auto}
 @media(max-width:620px){#match-scene{padding-top:6px}}
+#match-scene .match-moves{align-self:center;margin:0;color:#70563b;font-size:.88rem;font-weight:700;text-align:center}
+html[data-theme="dark"] #match-scene .match-moves{color:#735638}
