@@ -887,3 +887,24 @@ html[data-theme="dark"] #game-sudoku #sudoku-board button:nth-child(n+19):nth-ch
 html[data-theme="dark"] #game-sudoku .sudoku-notes-grid{color:#765838}
 html[data-theme="dark"] #game-sudoku #sudoku-board .selected .sudoku-notes-grid{color:#543717}
 html[data-theme="dark"] .exam-wrap .exam-policy{color:#786953}
+
+/* Tangram: touch-friendly vector pieces and a quiet target board. */
+#game-tangram{max-width:850px}
+#tangram-scene{position:relative;margin:22px auto;max-width:700px;border:1px solid #b9d6d0;border-radius:18px;overflow:hidden;background:#f5faf7}
+#tangram-board{display:block;width:100%;height:auto;touch-action:none;user-select:none}
+.tangram-bg{fill:#f5faf7}
+.tangram-divider{fill:none;stroke:#bbd5cf;stroke-width:2;stroke-dasharray:7 9}
+.tangram-target polygon{fill:#e7efeb;fill-opacity:.65;stroke-width:3;stroke-dasharray:7 5;stroke-linejoin:round;pointer-events:none}
+.tangram-piece{cursor:grab;outline:none}
+.tangram-piece polygon{stroke:#fff8ee;stroke-width:3;stroke-linejoin:round;filter:drop-shadow(0 4px 3px #3b514738)}
+.tangram-piece.selected polygon,.tangram-piece:focus-visible polygon{stroke:#513a24;stroke-width:4;filter:drop-shadow(0 5px 5px #3b514755)}
+.tangram-piece.locked{cursor:default}
+.tangram-piece.locked polygon{stroke:#fff8ee;filter:none}
+.tangram-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.tangram-actions button{min-height:44px}
+html[data-theme="dark"] #tangram-scene{background:#f3e9d4;border-color:#cbb792}
+html[data-theme="dark"] .tangram-bg{fill:#f3e9d4}
+html[data-theme="dark"] .tangram-divider{stroke:#cbb792}
+html[data-theme="dark"] .tangram-target polygon{fill:#e1d5bd}
+html[data-theme="dark"] .tangram-piece.selected polygon,html[data-theme="dark"] .tangram-piece:focus-visible polygon{stroke:#654525}
+@media(max-width:620px){#tangram-scene{margin-inline:-8px;border-radius:12px}.tangram-actions button{flex:1;padding:8px 10px;font-size:.9rem}}

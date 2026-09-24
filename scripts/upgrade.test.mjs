@@ -36,9 +36,9 @@ test('Hanoi enforces order and solves optimally without mutating prior state',()
 test('legacy subjects migrate without editing source posts',()=>{assert.equal(normalizeCategory('Tiếng Anh'),'Ngoại ngữ');assert.equal(normalizeCategory('Tin học'),'Các môn khác');assert.equal(normalizeCategory('Khoa học tự nhiên'),'Khoa học tự nhiên');});
 test('display defaults to light and respects saved manual font and theme choices',()=>{
  const script=fs.readFileSync(new URL('../assets/preferences.js',import.meta.url),'utf8');
- for(const saved of [null,{theme:'dark',font:'serif',size:110}]){
+ for(const [saved,expectedFont] of [[null,'sans'],[{theme:'dark',font:'serif',size:110},'cmu'],[{theme:'dark',font:'cmu',size:110},'cmu'],[{theme:'light',font:'stix',size:90},'stix']]){
   const root={style:{},dataset:{}};
   vm.runInNewContext(script,{document:{documentElement:root,addEventListener(){}},localStorage:{getItem:()=>JSON.stringify(saved)},matchMedia:()=>{throw Error('Must not consult system colour scheme');}});
-  assert.equal(root.dataset.theme,saved?.theme||'light');assert.equal(root.dataset.font,saved?.font||'sans');
+  assert.equal(root.dataset.theme,saved?.theme||'light');assert.equal(root.dataset.font,expectedFont);
  }
 });
