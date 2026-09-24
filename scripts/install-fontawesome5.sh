@@ -3,8 +3,13 @@
 set -euo pipefail
 work=$(mktemp -d)
 trap 'rm -rf "$work"' EXIT
-curl --fail --location --retry 3 --max-time 120 \
-  https://mirrors.ctan.org/fonts/fontawesome5.zip -o "$work/fontawesome5.zip"
+# Pin HTTPS mirrors: the CTAN redirector can choose a mirror with a broken TLS chain.
+# Keep certificate verification enabled and verify the downloaded archive below.
+if ! curl --fail --location --retry 3 --max-time 120 \
+  https://mirrors.ibiblio.org/pub/mirrors/CTAN/fonts/fontawesome5.zip -o "$work/fontawesome5.zip"; then
+  curl --fail --location --retry 3 --max-time 120 \
+    https://mirror.math.princeton.edu/pub/CTAN/fonts/fontawesome5.zip -o "$work/fontawesome5.zip"
+fi
 printf '%s  %s\n' '83c86c8a92d80e0b2c84af78a055d10798f8294f63b397ba8225351b9eaaa500' "$work/fontawesome5.zip" | sha256sum --check
 unzip -q "$work/fontawesome5.zip" -d "$work"
 texmf=$(kpsewhich -var-value=TEXMFLOCAL)

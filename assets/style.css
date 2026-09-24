@@ -912,3 +912,39 @@ html[data-theme="dark"] .tangram-piece.selected polygon,html[data-theme="dark"] 
 #game-sudoku #sudoku-board button:focus-visible::after,#game-sudoku #sudoku-board .selected::after{content:none}
 #game-sudoku .sudoku-notes-grid{font-size:clamp(.55rem,1.2vw,.68rem);font-style:normal;font-weight:600}
 #game-sudoku .sudoku-notes-grid i{font-style:normal}
+/* True seven-piece Tangram: a square-cut set and a single figure silhouette. */
+#tangram-scene{max-width:760px}
+#tangram-scene .tangram-level-tools{position:absolute;top:10px;right:10px;z-index:2;display:flex;align-items:center;gap:5px;background:#fff9ecdf;border:1px solid #d2c0a0;border-radius:12px;padding:4px}
+#tangram-scene .tangram-level-tools button{min-width:36px;min-height:36px;padding:4px 8px}
+#tangram-level-label{font-size:.82rem;font-weight:750;white-space:nowrap;padding-inline:4px}
+.tangram-origin-piece{stroke:#fff8ee;stroke-width:2}
+.tangram-origin-caption{font-size:10px;font-weight:750;letter-spacing:.8px;fill:#746657}
+.tangram-silhouette{fill:#728478;stroke:none;pointer-events:none}
+.tangram-silhouette.show-seams{stroke:#f5faf7;stroke-width:2}
+.tangram-piece polygon{stroke:#fff8ee;stroke-width:2;stroke-linejoin:round}
+.tangram-piece.selected polygon,.tangram-piece:focus-visible polygon{stroke:#59432b;stroke-width:4}
+html[data-theme="dark"] #tangram-scene .tangram-level-tools{background:#f7eddaed;border-color:#c6ad83}
+html[data-theme="dark"] .tangram-silhouette{fill:#8b806d}
+html[data-theme="dark"] .tangram-silhouette.show-seams{stroke:#f3e9d4}
+html[data-theme="dark"] .tangram-origin-caption{fill:#6e583c}
+@media(max-width:620px){#tangram-scene .tangram-level-tools{left:6px;right:6px;justify-content:center}#tangram-level-label{font-size:.74rem}.tangram-actions button{min-width:44%}}
+
+/* One outer silhouette avoids seams between independently painted polygons. */
+.tangram-seam-guide{fill:none;stroke:#f5faf7;stroke-width:1.5;pointer-events:none}
+html[data-theme="dark"] .tangram-seam-guide{stroke:#f3e9d4}
+.tangram-piece.locked polygon{stroke:none;filter:none}
+
+/* Comfortable page gutters and inset puzzle scenes on both reading themes. */
+#game-river,#game-water,html[data-theme="dark"] :is(#game-river,#game-water){padding-inline:24px}
+#game-river .river-world,#game-water .water-world{width:100%;margin-inline:0}
+@media(max-width:620px){
+ .wrap,.article-wrap,.exam-wrap,.about{padding-left:16px;padding-right:16px}
+ #game-river,#game-water,html[data-theme="dark"] :is(#game-river,#game-water){padding-inline:0}
+ #game-river .river-world,#game-water .water-world{width:100%;margin-inline:0}
+ #tangram-scene{margin-inline:0}
+}
+
+/* Keep Tangram navigation in its own row instead of floating over the board. */
+#tangram-scene .tangram-level-tools{position:relative;inset:auto;display:grid;grid-template-columns:40px minmax(0,1fr) 40px 40px;align-items:center;gap:6px;margin:8px;padding:6px}
+#tangram-scene .tangram-level-tools button{display:grid;place-items:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:0;line-height:1;flex-shrink:0}
+#tangram-level-label{min-width:0;text-align:center;white-space:normal;overflow-wrap:anywhere;line-height:1.4;padding:0 4px}
