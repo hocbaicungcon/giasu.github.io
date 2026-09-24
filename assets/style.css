@@ -958,3 +958,139 @@ html[data-theme="dark"] :is(#game-river,#game-water){background:#fbf5e7;border-c
 
 /* Treat rapid taps in games as game input, while preserving two-finger zoom. */
 .game-panel,.game-tabs button,.game-panel button,.game-panel [role="button"]{touch-action:manipulation}
+
+/* Three compact strategy games. */
+#game-pentomino,#game-sokoban,#game-nim{max-width:900px}
+.puzzle-level,.puzzle-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin:16px 0}
+.puzzle-level strong{min-width:140px;text-align:center}
+.puzzle-level button,.puzzle-actions button{min-width:42px;min-height:42px}
+.puzzle-scene{position:relative;display:grid;place-items:center;min-height:220px;padding:20px;background:#f3f7f1;border:1px solid #cbdcd1;border-radius:16px;overflow:hidden}
+.pent-board,.soko-board{display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));width:min(100%,330px);aspect-ratio:5/3;gap:2px;touch-action:manipulation}
+.pent-cell{aspect-ratio:1;border:1px solid #b9cbbf;border-radius:5px;background:#e6eee5;padding:0;min-width:0;min-height:0}
+.pent-cell.filled{background:var(--piece-color);border-color:#fff9ef}
+.pent-cell:hover,.pent-cell:focus-visible{outline:2px solid #886646;outline-offset:-2px}
+.pent-pieces{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin:18px auto;max-width:720px}
+.pent-piece{display:grid;grid-template-columns:repeat(3,13px);grid-template-rows:repeat(3,13px);gap:1px;padding:7px;border:2px solid transparent;border-radius:9px;background:#f0f3e9;cursor:pointer}
+.pent-piece i{display:block;width:13px;height:13px}
+.pent-piece i.active{background:var(--piece-color);border-radius:2px}
+.pent-piece.selected{border-color:#886646;background:#fff7e8;transform:translateY(-3px)}
+.pent-piece:disabled{opacity:.32;cursor:default}
+.soko-board{width:min(100%,430px);aspect-ratio:auto;outline:none}
+.soko-cell{aspect-ratio:1;display:grid;place-items:center;background:#e7e0ce;border-radius:3px;position:relative}
+.soko-cell.wall{background:#807c6e;box-shadow:inset 0 0 0 2px #6d695e}
+.soko-cell.goal::before{content:'';width:44%;height:44%;border:3px solid #bc7954;border-radius:50%;background:#fff4d7}
+.soko-cell.box::before{content:'';width:70%;height:70%;border:3px solid #99633e;border-radius:5px;background:#d59a5d;box-shadow:inset 0 0 0 3px #e9bb7e}
+.soko-cell.box.goal::before{background:#79a28b;border-color:#587c68;box-shadow:inset 0 0 0 3px #b8d7bb}
+.soko-cell.player::before{content:'●';font-size:clamp(20px,5vw,32px);line-height:1;color:#405f65;text-shadow:0 2px #fff8e9}
+#soko-board:focus-visible{outline:2px solid #886646;outline-offset:4px}
+.nim-board{width:min(100%,620px);display:grid;gap:14px}
+.nim-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;min-height:58px}
+.nim-row span{min-width:64px;font-weight:650;color:#665846}
+.nim-stick{width:17px;height:52px;min-width:17px;padding:0;border:0;border-radius:9px 9px 4px 4px;background:linear-gradient(#c96f56 0 14%,#ead2a0 14% 100%);box-shadow:inset -3px 0 #be9b69;cursor:pointer;transition:transform .16s}
+.nim-stick:hover,.nim-stick:focus-visible{transform:translateY(-7px);outline:2px solid #846246;outline-offset:3px}
+html[data-theme="dark"] .puzzle-scene{background:#eee3cb;border-color:#c5b28e}
+html[data-theme="dark"] .pent-cell{background:#dfd6c3;border-color:#b6a68a}
+html[data-theme="dark"] .pent-cell.filled{background:var(--piece-color);border-color:#efe3cd}
+html[data-theme="dark"] .pent-piece{background:#e9dec8}
+html[data-theme="dark"] .pent-piece.selected{background:#fbefcf;border-color:#8b6941}
+html[data-theme="dark"] .soko-cell{background:#e0d1b8}
+html[data-theme="dark"] .soko-cell.wall{background:#81715f;box-shadow:inset 0 0 0 2px #6c5a48}
+html[data-theme="dark"] .nim-row span{color:#695337}
+@media(max-width:620px){.puzzle-scene{padding:12px}.pent-board{width:min(100%,285px)}.pent-pieces{gap:5px}.pent-piece{grid-template-columns:repeat(3,11px);grid-template-rows:repeat(3,11px);padding:5px}.pent-piece i{width:11px;height:11px}.nim-row{gap:5px}.nim-row span{width:100%;text-align:center}.nim-stick{width:15px;min-width:15px;height:45px}}
+.pent-board{aspect-ratio:5 / var(--rows)}
+.game-tabs{gap:5px;margin:14px 0 18px}
+.game-tabs button{min-height:36px;padding:6px 10px;border-radius:8px;font-size:.82rem;line-height:1.2;white-space:nowrap}
+@media(max-width:620px){.game-tabs{gap:4px;margin:12px 0 16px}.game-tabs button{min-height:36px;padding:6px 8px;font-size:.78rem}}
+.pent-piece{grid-template-columns:repeat(5,11px);grid-template-rows:repeat(5,11px)}
+.pent-piece i{width:11px;height:11px}
+.puzzle-level select{min-height:42px;max-width:120px;border:1px solid var(--line);border-radius:9px;background:#fffaf0;color:inherit;padding:5px 8px;font:inherit}
+html[data-theme="dark"] .puzzle-level select{background:#f8efd9;border-color:#c6ad83}
+@media(max-width:620px){.pent-piece{grid-template-columns:repeat(5,9px);grid-template-rows:repeat(5,9px)}.pent-piece i{width:9px;height:9px}.puzzle-level strong{min-width:100%;order:-1}}
+
+/* Move one matchstick between seven-segment arithmetic symbols. */
+#game-matchstick{max-width:900px}
+.match-board{--sym-w:68px;--sym-h:120px;--long:45px;--short:43px;--thick:8px;--x:11px;--mid:56px;--side-y:13px;--op-y:38px;--eq-one:43px;--eq-two:70px;display:flex;justify-content:center;align-items:center;gap:9px;width:100%;padding:18px 0}
+.match-symbol{position:relative;flex:none;width:var(--sym-w);height:var(--sym-h)}
+#game-matchstick .match-segment{position:absolute;display:block;width:var(--long);height:var(--thick);min-width:0;min-height:0;margin:0;padding:0;border:1px dashed #b9aa95;border-radius:5px;background:#e3ded1;box-shadow:none;opacity:.55;touch-action:manipulation}
+#game-matchstick .match-segment:is(.match-b,.match-c,.match-e,.match-f,.match-v){width:var(--thick);height:var(--short)}
+#game-matchstick .match-segment.on{border:0;background:linear-gradient(90deg,#dca76d,#b87949 55%,#ad6c3d);opacity:1;box-shadow:0 2px 3px #6b452329}
+#game-matchstick .match-segment.on::after{content:'';position:absolute;left:-2px;top:-1px;width:calc(var(--thick) + 2px);height:calc(var(--thick) + 2px);border-radius:50%;background:#8c4938}
+#game-matchstick .match-segment.on:is(.match-b,.match-c,.match-e,.match-f,.match-v)::after{left:-1px;top:-2px}
+#game-matchstick .match-segment.picked{filter:brightness(1.2) drop-shadow(0 0 5px #d89750);transform:translateY(-3px)}
+#game-matchstick .match-segment.off:hover,#game-matchstick .match-segment.off:focus-visible{opacity:1;background:#e6c99b;border-color:#9a774d}
+.match-a{top:6px;left:var(--x)}.match-g{top:var(--mid);left:var(--x)}.match-d{bottom:6px;left:var(--x)}
+.match-f{top:var(--side-y);left:4px}.match-b{top:var(--side-y);right:4px}.match-e{bottom:var(--side-y);left:4px}.match-c{bottom:var(--side-y);right:4px}
+.match-h{top:var(--mid);left:var(--x)}.match-v{top:var(--op-y);left:calc((var(--sym-w) - var(--thick))/2)}
+.match-u{top:var(--eq-one);left:var(--x)}.match-l{top:var(--eq-two);left:var(--x)}
+html[data-theme="dark"] #game-matchstick .match-segment.off{background:#e5d8bd;border-color:#b9a787}
+html[data-theme="dark"] #game-matchstick .match-segment.on{background:linear-gradient(90deg,#dcab71,#a86c3d 58%,#995b32)}
+@media(max-width:620px){.match-board{--sym-w:54px;--sym-h:96px;--long:35px;--short:32px;--thick:7px;--x:9px;--mid:44px;--side-y:11px;--op-y:31px;--eq-one:35px;--eq-two:56px;gap:3px;padding:8px 0}.match-a{top:5px}.match-d{bottom:5px}.match-f,.match-e{left:2px}.match-b,.match-c{right:2px}}
+
+/* Navigation lives inside each new game's scene, as in Tangram. */
+:is(#pent-scene,#soko-scene,#nim-scene,#match-scene){display:flex;flex-direction:column;align-items:center;justify-content:center}
+:is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level{width:100%;margin:0 0 18px;padding:8px;gap:6px;border:1px solid #d2c0a0;border-radius:12px;background:#fff9ecdf}
+:is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level strong{min-width:0;flex:1 1 120px;line-height:1.3}
+:is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level button{display:grid;place-items:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:0;line-height:1}
+:is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level select{height:40px;min-height:40px;margin:0;padding:5px 8px;font-size:.82rem}
+html[data-theme="dark"] :is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level{background:#f7eddaed;border-color:#c6ad83}
+@media(max-width:620px){:is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level{margin-bottom:12px;padding:6px;gap:5px}:is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level strong{flex-basis:100%;order:-1;font-size:.82rem}:is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level select{flex:1 1 90px;min-width:0}}
+#match-scene{min-height:390px}
+@media(max-width:620px){#match-scene{min-height:420px}}
+
+/* Keep game controls with their boards and leave enough room for play. */
+.embedded-game-scene,#number-scene{position:relative;width:100%;margin:18px auto;padding:20px;border:1px solid #cbdcd1;border-radius:16px;background:#f3f7f1}
+#number-scene{max-width:460px;text-align:center}
+#number-scene .number-board{width:100%;max-width:none;margin:0 auto}
+#number-scene .game-directions{width:100%;justify-content:center;margin:16px auto 12px}
+#number-scene [data-restart="numbers"]{min-height:40px}
+#word-scene{max-width:550px;text-align:center}
+#word-scene>button{margin:4px 3px;min-height:40px}
+#word-scene .word-board{margin-top:6px}
+#sudoku-scene,#hanoi-scene{max-width:650px;text-align:center}
+#sudoku-scene #sudoku-board{width:min(100%,450px);margin:18px auto}
+#sudoku-scene #sudoku-keys{margin:12px auto;max-width:500px}
+#sudoku-scene .puzzle-actions,#hanoi-scene .puzzle-actions{margin:14px auto 0}
+#hanoi-scene #hanoi-board{margin:16px auto}
+#tangram-scene .tangram-actions{margin:8px 12px 16px}
+#pent-scene .pent-pieces{margin:16px auto 8px}
+#pent-scene .puzzle-actions{margin:8px auto 0}
+#soko-scene .game-directions{width:min(100%,390px);justify-content:center;margin:18px auto 0}
+html[data-theme="dark"] :is(.embedded-game-scene,#number-scene){background:#eee3cb;border-color:#c5b28e}
+@media(max-width:620px){.embedded-game-scene,#number-scene{padding:12px;margin:14px auto}.embedded-game-scene .puzzle-actions{gap:6px}.embedded-game-scene .puzzle-actions button{min-height:40px}.game-panel #word-scene .word-keyboard{margin-top:14px}#tangram-scene .tangram-actions{margin:8px 8px 14px}#soko-scene .game-directions{margin-top:12px}}
+/* Pentomino cells must override the shared game-button fill, including warm mode. */
+#game-pentomino .pent-cell{padding:0;background:#e6eee5;border:1px solid #b9cbbf;box-shadow:none}
+#game-pentomino .pent-cell.filled{background:var(--piece-color);border-color:#fff9ef}
+#game-pentomino .pent-piece{padding:7px;background:#f0f3e9;border:2px solid transparent}
+#game-pentomino .pent-piece.selected{background:#fff7e8;border-color:#886646}
+html[data-theme="dark"] #game-pentomino .pent-cell{background:#dfd6c3;border-color:#b6a68a}
+html[data-theme="dark"] #game-pentomino .pent-cell.filled{background:var(--piece-color);border-color:#efe3cd}
+html[data-theme="dark"] #game-pentomino .pent-piece{background:#e9dec8}
+html[data-theme="dark"] #game-pentomino .pent-piece.selected{background:#fbefcf;border-color:#8b6941}
+/* Used Pentomino pieces are unmistakable even when their original colors are similar. */
+#game-pentomino .pent-piece{position:relative}
+#game-pentomino .pent-piece.placed:disabled{opacity:1;background:#e4e9e3;border-color:#aebeb2;transform:none;cursor:default}
+#game-pentomino .pent-piece.placed i.active{background:#8b9b90}
+#game-pentomino .pent-piece.placed::after{content:'✓';position:absolute;top:3px;right:3px;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#416f56;color:#fff;font-size:15px;font-weight:800;line-height:1}
+html[data-theme="dark"] #game-pentomino .pent-piece.placed:disabled{background:#ded8c9;border-color:#a99d85}
+html[data-theme="dark"] #game-pentomino .pent-piece.placed i.active{background:#918b7c}
+html[data-theme="dark"] #game-pentomino .pent-piece.placed::after{background:#715b3e;color:#fff8e9}
+/* Sound follows restart in every game; paired controls stay together on narrow screens. */
+.restart-sound{display:inline-flex;align-items:center;justify-content:center;gap:5px;flex:none}
+.game-panel button.game-sound,html[data-theme="dark"] .game-panel button.game-sound{display:grid;place-items:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:8px;border:0;border-radius:8px;background:transparent;color:var(--ink);box-shadow:none}
+.game-panel button.game-sound svg{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8}
+#number-scene .restart-sound{margin-top:4px}
+#tangram-scene .tangram-level-tools{grid-template-columns:40px minmax(0,1fr) 40px 40px 40px}
+@media(max-width:620px){.restart-sound{gap:4px}.game-panel button.game-sound,html[data-theme="dark"] .game-panel button.game-sound{width:40px;height:40px;min-width:40px;min-height:40px}#tangram-scene .tangram-level-tools{grid-template-columns:36px minmax(0,1fr) 36px 36px 36px}#tangram-scene .tangram-level-tools button{width:36px;height:36px;min-width:36px;min-height:36px}}
+/* Sound takes the same framed treatment as the neighboring restart button. */
+.game-panel .restart-sound button.game-sound{border:1px solid var(--line);border-radius:10px;background:#e7f1ef;color:#285e63}
+html[data-theme="dark"] .game-panel .restart-sound button.game-sound{border-color:#d3c1a0;background:#e8ddc7;color:#51422e}
+.game-panel .scene-tools button.game-sound{border:0;border-radius:50%;background:#fffdf0df;color:#335b59}
+html[data-theme="dark"] .game-panel .scene-tools button.game-sound{border:1px solid #cdbc9d;background:#f5edd8;color:#5e5037}
+#soko-scene .game-directions #soko-undo{flex:1;max-width:90px}
+/* These four games keep an unframed sound switch in the upper-right corner. */
+.scene-corner-controls{display:flex;align-items:center;justify-content:flex-end;width:100%;min-height:40px;margin:0 0 6px}
+.game-panel .scene-corner-controls button.game-sound,html[data-theme="dark"] .game-panel .scene-corner-controls button.game-sound{border:0;border-radius:8px;background:transparent;color:var(--ink);box-shadow:none}
+#match-scene{justify-content:flex-start;padding-top:8px}
+#match-scene .puzzle-level{margin-top:0}
+#match-scene .match-board{margin-block:auto}
+@media(max-width:620px){#match-scene{padding-top:6px}}
