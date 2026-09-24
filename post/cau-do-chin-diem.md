@@ -18,5 +18,10 @@ Lần thử đầu tiên luôn luôn nản, vì luôn là 5 đoạn thắng, ch�
 <img src="/Users/phuongphan/GitHub/giasu.github.io/assets/images/9-diem-sai.svg" alt="9-diem-sai" style="zoom:50%;" />
 
 ### Đáp án
+<details>
+<summary>Xem đáp án</summary>
 
 ![9-diem-dung](/Users/phuongphan/GitHub/giasu.github.io/assets/images/9-diem-dung.svg)
+
+</details>
+
