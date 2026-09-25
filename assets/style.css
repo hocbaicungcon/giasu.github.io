@@ -1531,6 +1531,9 @@ html[data-theme="dark"] .game-panel .einstein-toolbar #einstein-reset:hover,html
 .einstein-clue[data-tip]:hover::after,.einstein-clue[data-tip]:focus-visible::after{opacity:1;transform:translate(-50%,0)}
 html[data-theme="dark"] .einstein-clue[data-tip]::after{background:#5d492f;color:#fff8e9}
 @media(max-width:560px){.einstein-clue[data-tip]::after{display:none}}
+.einstein-clue.processed{opacity:1;filter:none}
+.einstein-clue.processed>*{opacity:.38;filter:saturate(.55)}
+.einstein-clue.processed[data-tip]:hover::after,.einstein-clue.processed[data-tip]:focus-visible::after{opacity:1;filter:none}
 
 .game-panel button.hitori-cell.unsure{background:#e9f1ee;color:#527174;border-color:#c6d9d3}
 .game-panel button.hitori-cell.safe{background:#fff;color:#315d64;border-color:#8fb9b0}
@@ -1825,6 +1828,8 @@ html[data-theme="dark"] #game-water .game-nav>button,html[data-theme="dark"] #ga
 #game-einstein .game-nav .einstein-toolbar,#game-einstein .game-nav .einstein-modes{display:contents!important}
 #game-einstein .game-nav .einstein-toolbar>button,#game-einstein .game-nav .einstein-modes>button{display:grid;place-items:center;flex:0 0 38px;width:38px;min-width:38px;height:38px;min-height:38px;margin:0;padding:0!important;border:1px solid #bdd6d1!important;border-radius:50%!important;background:#fff!important;color:#285e63!important;box-shadow:none!important}
 html[data-theme="dark"] #game-einstein .game-nav .einstein-toolbar>button,html[data-theme="dark"] #game-einstein .game-nav .einstein-modes>button{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important}
+#game-einstein .game-nav .einstein-modes button[aria-pressed="true"]{background:#cee6db!important;border-color:#438675!important;color:#285d51!important;box-shadow:inset 0 0 0 2px #438675!important}
+html[data-theme="dark"] #game-einstein .game-nav .einstein-modes button[aria-pressed="true"]{background:#dfc69a!important;border-color:#9b7549!important;color:#62482d!important;box-shadow:inset 0 0 0 2px #9b7549!important}
 #game-words .game-nav{justify-content:center!important;overflow-x:visible!important}
 @media(max-width:620px){#game-words .game-nav{justify-content:center!important;gap:5px;padding-inline:6px}}
 html:not([data-theme="dark"]) #game-numbers #number-board:focus-visible{outline:3px solid #5e9d99!important;outline-offset:4px}
@@ -1887,3 +1892,14 @@ html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-di
 html:not([data-theme="dark"]) .game-panel .game-result[data-outcome="won"] .result-actions button[data-result-retry],
 html:not([data-theme="dark"]) .game-panel .game-result[data-outcome="won"] .result-actions button[data-result-next]{background:#2f7965!important;border-color:#2f7965!important}
 html[data-theme="dark"] .game-panel .game-result .result-actions button[data-result-dismiss]{background:#fbf1d8!important;color:#59452f!important}
+/* Processed clues stay dim, while their explanatory tooltip remains fully readable. */
+#game-einstein .einstein-clues,
+#game-einstein .einstein-clues ol{overflow:visible!important}
+#game-einstein .einstein-clue[data-tip]{z-index:1}
+#game-einstein .einstein-clue[data-tip]:hover,
+#game-einstein .einstein-clue[data-tip]:focus-visible{z-index:100}
+#game-einstein .einstein-clue.processed{opacity:1!important;filter:none!important}
+#game-einstein .einstein-clue.processed>*{opacity:.38;filter:saturate(.55)}
+#game-einstein .einstein-clue.processed[data-tip]:hover::after,
+#game-einstein .einstein-clue.processed[data-tip]:focus-visible::after{opacity:1!important;filter:none!important;z-index:200}
+@media(max-width:560px){#game-einstein .einstein-clue[data-tip]::after{display:block;max-width:220px;font-size:.7rem}}
