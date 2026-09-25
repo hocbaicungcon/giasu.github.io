@@ -1745,8 +1745,83 @@ html[data-theme="dark"] #game-pipes{--pipes-paper:#fff0d4;--pipes-tile:#ead9ba;-
 :is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{grid-column:3;width:100%;min-width:0}
 :is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level .restart-sound{grid-column:4}
 @media(max-width:520px){:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level{grid-template-columns:34px 34px minmax(100px,1fr) auto}:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:100%;min-width:0}}
+.game-panel{position:relative}.game-fullscreen{position:absolute;top:10px;right:10px;z-index:5;width:34px;height:34px;padding:0!important;border-radius:8px!important;font-size:1.25rem;line-height:1}.game-fullscreen.in-toolbar{position:static;width:34px;height:34px;vertical-align:middle;border:0!important;box-shadow:none!important;background:transparent!important}.game-panel:fullscreen,.game-panel.is-fullscreen{width:100vw;max-width:none;height:100vh;min-height:100vh;margin:0;padding:clamp(12px,3vw,32px);border:0;border-radius:0;overflow:auto;background:var(--page-bg,#fff)}.game-panel:fullscreen .game-fullscreen:not(.in-toolbar),.game-panel.is-fullscreen .game-fullscreen:not(.in-toolbar){position:fixed;top:14px;right:14px}html[data-theme="dark"] .game-panel:fullscreen,html[data-theme="dark"] .game-panel.is-fullscreen{background:var(--page-bg,#241f18)}
+@media(max-width:620px){.game-fullscreen{top:7px;right:7px;width:30px;height:30px;font-size:1.05rem}.game-panel:fullscreen,.game-panel.is-fullscreen{padding:12px 8px}}
 /* Extra-compact desktop game tabs: nine per row. */
 .game-tabs button{flex-basis:calc(11.111% - 4px);padding:4px 4px;font-size:.68rem}
 @media(max-width:760px){.game-tabs button{flex-basis:calc(20% - 4px);font-size:.72rem}}
 @media(max-width:480px){.game-tabs button{flex-basis:calc(33.333% - 3px);font-size:.7rem}}
 .new-puzzle-panel{text-align:center}.new-puzzle-bar{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px}.new-puzzle-bar button{min-width:40px;min-height:40px}.mines-board{display:grid;grid-template-columns:repeat(9,32px);justify-content:center;gap:3px}.mine-cell{width:32px;height:32px;padding:0;background:#cde4df;border:1px solid #94bdb7}.mine-cell.open{background:#fff}.mine-cell.flag{background:#f0cd7b}.mine-cell.mine-hit{background:#e4776f}.maze-board{display:grid;grid-template-columns:repeat(7,38px);justify-content:center}.maze-board span{width:38px;height:38px}.maze-board .wall{background:#376c73}.maze-board .floor{background:#e7f2ec}.maze-board .player{background:#e1ae4b;border-radius:50%}.maze-board .goal{background:#67af7e;border-radius:50%}.maze-controls{display:flex;justify-content:center;gap:5px;margin:10px}.mastermind-board{display:grid;gap:5px;justify-content:center;margin:10px}.master-row{display:flex;gap:5px}.master-row i,.mastermind-palette button{width:32px;height:32px;border-radius:50%;border:2px solid #b5cbc4}.mastermind-palette{display:flex;justify-content:center;gap:7px}.mastermind-palette button{padding:0}.rush-board{position:relative;width:300px;height:300px;margin:auto;background:repeating-linear-gradient(90deg,#e7f2ec 0 49px,#a5c4bc 50px),repeating-linear-gradient(0deg,transparent 0 49px,#a5c4bc 50px);border:4px solid #5d8d88}.rush-car{position:absolute;left:calc(var(--x)*50px);top:calc(var(--y)*50px);width:calc(var(--w)*50px);height:calc(var(--h)*50px);background:var(--car);border:4px solid #fff;border-radius:8px;color:#fff;font-weight:800}.rush-car:hover{filter:brightness(1.08)}html[data-theme="dark"] .new-puzzle-panel{background:#f3e7cc}html[data-theme="dark"] .mine-cell{background:#d2bd96;border-color:#a78d63}html[data-theme="dark"] .mine-cell.open,.maze-board .floor{background:#fff0d2}html[data-theme="dark"] .maze-board .wall{background:#82613e}html[data-theme="dark"] .rush-board{background-color:#ead8b6;border-color:#a47b48}
+#game-numbers .number-toolbar{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:0 0 8px;font-size:.9rem;color:var(--muted,#64777b)}
+#game-numbers .number-toolbar label{display:inline-flex;align-items:center;gap:5px}
+#game-numbers .number-toolbar select{margin:0;padding:6px 9px;font-size:.88rem}
+#game-numbers .number-toolbar strong{color:var(--ink);font-variant-numeric:tabular-nums}
+@media(max-width:480px){#game-numbers .number-toolbar{gap:8px;font-size:.82rem}}
+/* Warm-night theme: keep level selectors amber instead of browser blue. */
+html[data-theme="dark"] .game-panel select,
+html[data-theme="dark"] .game-panel select:focus,
+html[data-theme="dark"] .game-panel select:active{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important;accent-color:#a97943;outline-color:#b88a52}
+html[data-theme="dark"] .game-panel select option{background:#fbf1d8;color:#51422e}
+html[data-theme="dark"] .game-panel select:focus-visible{outline:2px solid #b88a52!important;outline-offset:2px}
+/* Shared game navigation: one compact row with consistent bordered controls. */
+.game-panel .puzzle-level,.game-panel .new-puzzle-bar,.game-panel .rush-toolbar,.game-panel .mines-toolbar,.game-panel .maze-toolbar{display:flex;align-items:center;flex-wrap:nowrap;gap:6px;min-height:42px;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;padding:5px 2px}
+.game-panel .puzzle-level>button,.game-panel .puzzle-level select,.game-panel .new-puzzle-bar>button,.game-panel .new-puzzle-bar select,.game-panel .rush-toolbar>button,.game-panel .rush-toolbar select,.game-panel .mines-toolbar>button,.game-panel .mines-toolbar select,.game-panel .maze-toolbar>button,.game-panel .maze-toolbar select{flex:0 0 38px;width:38px;min-width:38px;height:36px;min-height:36px;padding:4px 7px;border:1px solid var(--line)!important;border-radius:8px;background:var(--paper)!important;color:var(--ink)!important;box-shadow:none!important;white-space:nowrap}
+.game-panel .puzzle-level select,.game-panel .new-puzzle-bar select,.game-panel .rush-toolbar select,.game-panel .mines-toolbar select,.game-panel .maze-toolbar select{flex:0 1 150px;width:150px;min-width:110px;padding-left:8px;padding-right:8px}
+.game-panel .puzzle-level .restart-sound{display:flex;align-items:center;gap:6px;flex:0 0 auto}
+.game-panel .puzzle-level .restart-sound>button{flex:0 0 38px;width:38px;min-width:38px;height:36px;min-height:36px;padding:4px 7px;border:1px solid var(--line)!important;border-radius:8px;background:var(--paper)!important;color:var(--ink)!important;box-shadow:none!important}
+html[data-theme="dark"] .game-panel .puzzle-level>button,html[data-theme="dark"] .game-panel .puzzle-level select,html[data-theme="dark"] .game-panel .new-puzzle-bar>button,html[data-theme="dark"] .game-panel .new-puzzle-bar select,html[data-theme="dark"] .game-panel .restart-sound>button{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important}
+@media(max-width:620px){.game-panel .puzzle-level,.game-panel .new-puzzle-bar,.game-panel .rush-toolbar,.game-panel .mines-toolbar,.game-panel .maze-toolbar{gap:4px}.game-panel .puzzle-level select,.game-panel .new-puzzle-bar select,.game-panel .rush-toolbar select,.game-panel .mines-toolbar select,.game-panel .maze-toolbar select{min-width:100px;width:120px}}
+/* Tangram keeps its level controls on one compact row like the other games. */
+#tangram-scene .tangram-level-tools{display:flex!important;grid-template-columns:none!important;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;white-space:nowrap;max-width:calc(100% - 12px)}
+#tangram-scene .tangram-level-tools button{flex:0 0 36px;width:36px;min-width:36px;height:36px;min-height:36px}
+#tangram-level-label{flex:1 1 auto;min-width:70px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.2}
+#game-water .scene-tools{display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:6px;overflow-x:auto;padding:5px 2px}
+#game-water .scene-tools>button{flex:0 0 38px;width:38px;min-width:38px;height:36px;min-height:36px;padding:4px 7px;border:1px solid var(--line)!important;border-radius:8px;background:var(--paper)!important;color:var(--ink)!important;box-shadow:none!important}
+html[data-theme="dark"] #game-water .scene-tools>button{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important}
+#soko-scene .puzzle-level select{flex:1 1 190px;min-width:170px;width:190px;max-width:none;text-overflow:ellipsis}
+@media(max-width:620px){#soko-scene .puzzle-level select{flex:1 1 155px;min-width:155px;width:155px}}
+/* One navigation system shared by every game. */
+.game-panel .game-nav{position:relative;inset:auto;display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:6px;width:100%;max-width:100%;min-height:48px;margin:0 0 12px;padding:5px;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;border:1px solid var(--line);border-radius:13px;background:#f0f7f4;color:var(--ink)}
+.game-panel .game-nav>strong{display:none!important}
+.game-panel .game-nav>button,.game-panel .game-nav .restart-sound>button,.game-panel .game-nav .einstein-toolbar>button{display:grid;place-items:center;flex:0 0 38px;width:38px;min-width:38px;max-width:38px;height:38px;min-height:38px;max-height:38px;margin:0;padding:0!important;border:1px solid #bdd6d1!important;border-radius:50%!important;background:#fff!important;color:#285e63!important;box-shadow:none!important;font-size:1.18rem;line-height:1;white-space:nowrap}
+.game-panel .game-nav .restart-sound{display:flex;align-items:center;flex:0 0 auto;gap:6px;margin:0}
+.game-panel .game-nav>label{display:inline-flex;align-items:center;flex:0 0 auto;gap:5px;margin:0;font-size:.82rem;white-space:nowrap}
+.game-panel .game-nav select{flex:0 1 auto;width:auto;min-width:80px;max-width:190px;height:38px;min-height:38px;margin:0;padding:5px 24px 5px 9px;border:1px solid #bdd6d1!important;border-radius:19px!important;background:#fff!important;color:#285e63!important;font-size:.82rem;white-space:nowrap}
+.game-panel .game-nav .game-fullscreen.in-toolbar{position:static;flex:0 0 38px;width:38px;height:38px;border:1px solid #bdd6d1!important;border-radius:50%!important;background:#fff!important;color:#285e63!important}
+.game-panel .game-nav>span:not(.restart-sound){flex:0 0 auto;white-space:nowrap;font-size:.82rem}
+.game-panel .game-nav>button:hover,.game-panel .game-nav .restart-sound>button:hover,.game-panel .game-nav>button:focus-visible,.game-panel .game-nav .restart-sound>button:focus-visible{background:#dcefed!important;color:#174d56!important}
+html[data-theme="dark"] .game-panel .game-nav{background:#eee0c1;color:#51422e;border-color:#c6ad83}
+html[data-theme="dark"] .game-panel .game-nav>button,html[data-theme="dark"] .game-panel .game-nav .restart-sound>button,html[data-theme="dark"] .game-panel .game-nav select,html[data-theme="dark"] .game-panel .game-nav .game-fullscreen.in-toolbar{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important}
+html[data-theme="dark"] .game-panel .game-nav>button:hover,html[data-theme="dark"] .game-panel .game-nav .restart-sound>button:hover{background:#ead7b3!important}
+@media(max-width:620px){.game-panel .game-nav{justify-content:flex-start;gap:5px;padding:4px}.game-panel .game-nav>button,.game-panel .game-nav .restart-sound>button,.game-panel .game-nav .game-fullscreen.in-toolbar{flex-basis:36px;width:36px;min-width:36px;max-width:36px;height:36px;min-height:36px;max-height:36px}.game-panel .game-nav select{height:36px;min-height:36px;max-width:150px}}
+/* Older game-specific grid and wrap rules must not split the shared bar. */
+.game-panel .game-nav{display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;position:relative!important;inset:auto!important;grid-template-columns:none!important;grid-template-rows:none!important}
+.game-panel .game-nav>button,.game-panel .game-nav .restart-sound>button{border-radius:50%!important}
+.game-panel .game-nav #sudoku-reveal{font-size:0!important}
+.game-panel .game-nav #sudoku-reveal::before{content:'◉';font-size:1.2rem}
+.game-panel .game-nav #einstein-undo svg,.game-panel .game-nav #einstein-redo svg,.game-panel .game-nav #einstein-hint svg,.game-panel .game-nav #einstein-check svg{width:21px;height:21px}
+.game-panel .game-nav #einstein-reset::before{content:'↻';font-size:1.2rem;font-weight:400}
+#game-water .game-nav>button,#game-river .game-nav>button,#game-tangram .game-nav>button{border-radius:50%!important;width:38px!important;min-width:38px!important;height:38px!important;min-height:38px!important;border:1px solid #bdd6d1!important;background:#fff!important;color:#285e63!important}
+html[data-theme="dark"] #game-water .game-nav>button,html[data-theme="dark"] #game-river .game-nav>button,html[data-theme="dark"] #game-tangram .game-nav>button{border-color:#c6a978!important;background:#fbf1d8!important;color:#51422e!important}
+/* Gameplay refinements. */
+#game-rush .rush-exit{left:calc(100% - 3px);width:20px;height:calc(100%/var(--rush-size));display:block;background:transparent;border:0;z-index:4}
+#game-rush .rush-exit i,#game-rush .rush-exit b{display:none}
+#game-rush .rush-exit::before,#game-rush .rush-exit::after{content:'';position:absolute;left:0;width:18px;height:8px;border:2px solid var(--rush-edge);border-radius:5px;background:var(--rush-paper);box-shadow:0 2px 4px #0002}
+#game-rush .rush-exit::before{top:-5px}#game-rush .rush-exit::after{bottom:-5px}
+#game-rush .rush-board button.rush-car.exiting{transition:left .65s ease-in!important;z-index:6}
+#game-futoshiki .game-panel button.futo-cell,#game-futoshiki button.futo-cell{font-size:clamp(1.35rem,4.5vw,2.05rem);line-height:1.1}
+@media(max-width:620px){#game-futoshiki button.futo-cell{font-size:clamp(1.2rem,5.6vw,1.8rem)}}
+#game-maze .maze-board .goal svg{display:block;width:68%;height:68%;filter:drop-shadow(0 1px 1px #0003)}
+#game-maze .maze-board[data-size="9"] .goal svg,#game-maze .maze-board[data-size="13"] .goal svg{width:78%;height:78%}
+#game-einstein .einstein-scene{max-width:680px;margin-inline:auto}
+#game-einstein .game-nav .einstein-toolbar,#game-einstein .game-nav .einstein-modes{display:contents!important}
+#game-einstein .game-nav .einstein-toolbar>button,#game-einstein .game-nav .einstein-modes>button{display:grid;place-items:center;flex:0 0 38px;width:38px;min-width:38px;height:38px;min-height:38px;margin:0;padding:0!important;border:1px solid #bdd6d1!important;border-radius:50%!important;background:#fff!important;color:#285e63!important;box-shadow:none!important}
+html[data-theme="dark"] #game-einstein .game-nav .einstein-toolbar>button,html[data-theme="dark"] #game-einstein .game-nav .einstein-modes>button{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important}
+#soko-board{touch-action:none;user-select:none}
+#soko-board .soko-cell.player{cursor:pointer}
+#soko-board .soko-cell.player.selected{filter:drop-shadow(0 0 5px #d49b4c)}
+html[data-theme="dark"] #soko-board .soko-cell.player.selected{filter:drop-shadow(0 0 5px #a36c35)}
+/* The invisible Hashi hit target must stay invisible when a vertical bridge is focused. */
+.hashi-link:focus-visible .hashi-hit{stroke:transparent!important;stroke-width:28}
+.hashi-link:focus-visible .hashi-bridge{stroke-width:6}
+.hashi-link:focus{outline:none}

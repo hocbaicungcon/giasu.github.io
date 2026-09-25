@@ -20,8 +20,8 @@ test('both sorting directions use names and publication dates',()=>{
  assert.ok(compareItems(a,b,'title')<0);assert.ok(compareItems(a,b,'title-desc')>0);assert.ok(compareItems(a,b,'new')>0);assert.ok(compareItems(a,b,'old')<0);
 });
 import {riverLevels,waterLevels,waterMove,waterWon,riverMove,riverCargoOptions} from '../assets/puzzle-levels.js';
-test('all 50 water puzzles are distinct and solvable within budget',()=>{
- assert.equal(waterLevels.length,150);assert.equal(new Set(waterLevels.map(l=>JSON.stringify([l.caps,l.mode,l.target]))).size,150);
+test('all water puzzles are distinct and solvable within budget',()=>{
+ assert.equal(waterLevels.length,1001);assert.equal(new Set(waterLevels.map(l=>JSON.stringify([l.caps,l.mode,l.target]))).size,1001);
  assert.deepEqual([...new Set(waterLevels.map(l=>l.caps.length))].sort(),[2,3,4]);
  for(const level of waterLevels){
   const zero=level.caps.map(()=>0),queue=[{state:zero,steps:0}],seen=new Set([zero.join(',')]);let minimum=null;
@@ -36,8 +36,8 @@ test('all 50 water puzzles are distinct and solvable within budget',()=>{
   assert.equal(minimum,level.minimum,level.description);assert.ok(minimum>0);assert.ok(!level.limit||minimum<=level.limit);
  }
 });
-test('all 20 river puzzles have safe solutions and valid capacities',()=>{
- assert.equal(riverLevels.length,60);assert.equal(new Set(riverLevels.map(l=>JSON.stringify([l.items,l.capacity]))).size,60);
+test('all river puzzles have safe solutions and valid capacities',()=>{
+ assert.equal(riverLevels.length,1001);assert.equal(new Set(riverLevels.map(l=>JSON.stringify([l.items,l.capacity,l.start]))).size,1001);
  for(const level of riverLevels){
   const queue=[{state:level.start,steps:0}],seen=new Set();let minimum=null;
   for(let head=0;head<queue.length;head++){

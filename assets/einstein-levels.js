@@ -79,7 +79,7 @@ function makeLevel(index){
  return {solution,clues:index===0?clues:shuffled(clues,random),given,difficulty:index<30?'Dễ':index<70?'Vừa':'Khó'};
 }
 function makeExtraLevel(index){
- const random=randomFrom(index*13007+991),tier=Math.floor((index-100)/25),base=makeLevel(index);
+ const random=randomFrom(index*13007+991),tier=Math.min(3,Math.floor(((index-100)%100)/25)),base=makeLevel(index);
  const categories=Object.keys(einsteinGroups),destinations=shuffled(categories,random);
  const translate=Object.fromEntries(categories.map((group,i)=>[group,destinations[i]]));
  const mapEntry=entry=>typeof entry==='number'?entry:[translate[entry[0]],einsteinGroups[translate[entry[0]]].options[einsteinGroups[entry[0]].options.indexOf(entry[1])]];
@@ -108,7 +108,7 @@ function makeExtraLevel(index){
  const given=shuffled(categories.flatMap(group=>solution[group].map((value,house)=>[group,house,value])),random).slice(0,[6,4,2,0][tier]);
  return {solution,clues:shuffled(clues,random),given,difficulty:['Dễ','Vừa','Khó','Chuyên gia'][tier]};
 }
-export const einsteinLevels=Array.from({length:200},(_,index)=>index<100?makeLevel(index):makeExtraLevel(index));
+export const einsteinLevels=Array.from({length:1001},(_,index)=>index<100?makeLevel(index):makeExtraLevel(index));
 
 export function matchesEinsteinClue(values,[a,relation,b,c]){
  const position=entry=>typeof entry==='number'?entry-1:values[entry[0]].indexOf(entry[1]);

@@ -1,3 +1,4 @@
+import {generatedRiverLevels,generatedWaterLevels} from './generated-crossing-levels.js';
 // Static, solvable puzzles; minimum move counts are checked by the test suite.
 export const riverLevels=[
  {
@@ -3325,3 +3326,5 @@ export const waterLevels=[
   "description": "Dùng các can 8, 3 lít để có một can chứa đúng 7 lít."
  }
 ];
+riverLevels.push(...generatedRiverLevels);
+waterLevels.push(...generatedWaterLevels);

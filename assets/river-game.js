@@ -5,6 +5,7 @@ const $=s=>document.querySelector(s),names={wolf:'Sói',goat:'Dê',cabbage:'Bắ
 const TRIP_MS=2600;
 $('.river-world').style.setProperty('--trip-duration',TRIP_MS+'ms');
 let state,steps,done,cargo=[],crossing=false,timer,levelIndex=0,stopRow=()=>{};
+const riverJump=document.createElement('select');riverJump.id='river-jump';riverJump.setAttribute('aria-label','Chọn màn Qua sông');riverJump.replaceChildren(...riverLevels.map((_,index)=>{const option=document.createElement('option');option.value=index;option.textContent=`Màn ${index+1}`;return option;}));$('.river-world .scene-tools').insertBefore(riverJump,$('#river-next'));
 $('.river-vessel').addEventListener('transitionend',event=>{if(event.target===$('.river-vessel')&&event.propertyName==='left')stopRow();});
 try{levelIndex=Math.min(riverLevels.length-1,Math.max(0,parseInt(localStorage.getItem('river-level'),10)||0));}catch{}
 const level=()=>riverLevels[levelIndex];
@@ -23,6 +24,7 @@ function render(){
  $('#river-steps').textContent=steps+(level().limit?'/'+level().limit:'')+' lượt';
  $('.river-world').dataset.side=String(state.person);$('.river-world').classList.toggle('is-crossing',crossing);$('.river-world').classList.toggle('is-crowded',level().items.length>6);
  $('#river-prev').disabled=levelIndex===0;$('#river-next').disabled=levelIndex===riverLevels.length-1;
+ riverJump.value=String(levelIndex);
  $('#river-mission').setAttribute('aria-label','Màn '+(levelIndex+1)+' trên '+riverLevels.length+'. '+$('#river-mission').textContent);
 }
 function message(text,result=''){const status=$('#river-status');status.textContent=text;status.dataset.result=result;}
@@ -41,6 +43,7 @@ export function startRiver(){
  try{localStorage.setItem('river-level',String(levelIndex));}catch{}
 }
 for(const [id,delta] of [['river-prev',-1],['river-next',1]])$('#'+id).addEventListener('click',()=>{levelIndex=Math.max(0,Math.min(riverLevels.length-1,levelIndex+delta));startRiver();});
+riverJump.addEventListener('change',()=>{levelIndex=Number(riverJump.value);startRiver();});
 $('#river-cross').addEventListener('click',()=>{
  if(crossing||done)return;const result=riverMove(state,cargo,level());if(result.error)return;
  const duration=matchMedia('(prefers-reduced-motion: reduce)').matches?0:TRIP_MS;

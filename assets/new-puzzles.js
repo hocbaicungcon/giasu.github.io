@@ -73,7 +73,7 @@ function generateMaze(){
 function mazeRender(){
  mazeBoard.style.setProperty('--maze-cols',mazeSize);
  mazeBoard.dataset.size=String(mazeSize);
- mazeBoard.replaceChildren(...mazeMap.map((v,i)=>{const cell=document.createElement('span');cell.className='maze-cell '+(v?'wall':'floor')+(i===mazeGoal?' goal':'')+(i===mazePos?' player':'');cell.setAttribute('aria-hidden','true');if(i===mazeGoal)cell.textContent='⚑';return cell;}));
+ mazeBoard.replaceChildren(...mazeMap.map((v,i)=>{const cell=document.createElement('span');cell.className='maze-cell '+(v?'wall':'floor')+(i===mazeGoal?' goal':'')+(i===mazePos?' player':'');cell.setAttribute('aria-hidden','true');if(i===mazeGoal)cell.innerHTML='<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 29V4m1 2c5-3 9 3 17 0v15c-8 3-12-3-17 0" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';return cell;}));
  mazeBoard.setAttribute('aria-label',`Mê cung ${mazeSize}×${mazeSize}, hàng ${Math.floor(mazePos/mazeSize)+1}, cột ${mazePos%mazeSize+1}. Dùng phím mũi tên.`);
  $('#maze-status').textContent=mazeDone?`Đã đến đích sau ${mazeSteps} bước!`:`${mazeSteps} bước · Đưa chấm sáng tới ⚑`;
  document.querySelectorAll('[data-maze]').forEach(button=>button.disabled=mazeDone);
@@ -128,7 +128,7 @@ const rushLayouts={
  7:[{x:0,y:3,w:2,h:1},{x:2,y:2,w:1,h:2},{x:4,y:2,w:1,h:3},{x:3,y:0,w:3,h:1},{x:0,y:1,w:2,h:1},{x:1,y:5,w:3,h:1},{x:6,y:0,w:1,h:3}],
  8:[{x:0,y:3,w:2,h:1},{x:2,y:2,w:1,h:3},{x:5,y:1,w:1,h:3},{x:3,y:0,w:3,h:1},{x:0,y:1,w:2,h:1},{x:2,y:5,w:3,h:1},{x:6,y:4,w:1,h:3},{x:0,y:7,w:3,h:1}]
 };
-let rushSize=6,rushExitRow=2,rushCars=[],rushInitial=[],rushSelected=0,rushSteps=0,rushDone=false,rushDrag=null;
+let rushSize=6,rushExitRow=2,rushCars=[],rushInitial=[],rushSelected=0,rushSteps=0,rushDone=false,rushDrag=null,rushRun=0;
 const rushBoard=$('#rush-board');
 function rushCanMove(cars,index,step){
  const car=cars[index],horizontal=car.h===1,x=car.x+(horizontal?step:0),y=car.y+(horizontal?0:step);
@@ -153,8 +153,10 @@ function rushUpdateControls(){
  $('#rush-back').disabled=rushDone||!rushCanMove(rushCars,rushSelected,-1);$('#rush-forward').disabled=rushDone||!rushCanMove(rushCars,rushSelected,1);
  $('#rush-status').textContent=rushDone?'Xe đỏ đã ra hẳn khỏi cổng sau '+rushSteps+' lượt!':rushSteps+' lượt · Đưa toàn bộ xe đỏ qua cổng →';
 }
-function rushMove(amount,focus=false){if(rushDone)return;const car=rushCars[rushSelected],step=Math.sign(amount);let moved=0;for(let i=0;i<Math.abs(amount);i++){if(!rushCanMove(rushCars,rushSelected,step))break;car[car.h===1?'x':'y']+=step;moved++;}if(moved){rushSteps++;rushDone=rushCars[0].x>=rushSize;sound(rushDone?'win':'move');}rushRender();if(focus&&!rushDone)rushBoard.querySelector('[data-car="'+rushSelected+'"]')?.focus({preventScroll:true});}
-function rushStart(fresh=false){stopSounds();rushExitRow=Math.floor((rushSize-1)/2);if(fresh||!rushInitial.length)rushInitial=rushShuffle();rushCars=structuredClone(rushInitial);rushSteps=0;rushSelected=0;rushDone=false;rushDrag=null;rushRender();}
+function rushCanExit(){const copy=structuredClone(rushCars);while(copy[0].x<rushSize){if(!rushCanMove(copy,0,1))return false;copy[0].x++;}return true;}
+function rushAutoExit(){if(rushDone||!rushCanExit())return;const red=rushBoard.querySelector('[data-car="0"]'),run=++rushRun;rushDone=true;rushSteps++;rushCars[0].x=rushSize;rushUpdateControls();red.disabled=true;red.classList.add('exiting');sound('win');requestAnimationFrame(()=>{if(run===rushRun)red.style.setProperty('--x',rushSize);});setTimeout(()=>{if(run===rushRun)rushRender();},750);}
+function rushMove(amount,focus=false){if(rushDone)return;const car=rushCars[rushSelected],step=Math.sign(amount);let moved=0;for(let i=0;i<Math.abs(amount);i++){if(!rushCanMove(rushCars,rushSelected,step))break;car[car.h===1?'x':'y']+=step;moved++;}if(moved){rushSteps++;sound('move');}rushRender();if(moved)rushAutoExit();if(focus&&!rushDone)rushBoard.querySelector('[data-car="'+rushSelected+'"]')?.focus({preventScroll:true});}
+function rushStart(fresh=false){rushRun++;stopSounds();rushExitRow=Math.floor((rushSize-1)/2);if(fresh||!rushInitial.length)rushInitial=rushShuffle();rushCars=structuredClone(rushInitial);rushSteps=0;rushSelected=0;rushDone=false;rushDrag=null;rushRender();}
  rushBoard.addEventListener('pointerdown',event=>{const button=event.target.closest('.rush-car');if(!button||event.button!==0||rushDone)return;rushSelected=Number(button.dataset.car);rushUpdateControls();button.focus({preventScroll:true});rushDrag={x:event.clientX,y:event.clientY,id:event.pointerId};rushBoard.setPointerCapture(event.pointerId);});
  rushBoard.addEventListener('pointerup',event=>{if(!rushDrag||event.pointerId!==rushDrag.id)return;const car=rushCars[rushSelected],distance=car.h===1?event.clientX-rushDrag.x:event.clientY-rushDrag.y;rushDrag=null;const amount=Math.round(distance/(rushBoard.getBoundingClientRect().width/rushSize));if(amount)rushMove(amount);});
  rushBoard.addEventListener('pointercancel',()=>rushDrag=null);
