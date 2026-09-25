@@ -130,6 +130,7 @@ const rushLayouts={
 };
 let rushSize=6,rushExitRow=2,rushCars=[],rushInitial=[],rushSelected=0,rushSteps=0,rushDone=false,rushDrag=null,rushRun=0;
 const rushBoard=$('#rush-board');
+if(rushBoard){rushBoard.tabIndex=0;rushBoard.addEventListener('keydown',event=>{if($('#game-rush').hidden||rushDone)return;const number=Number(event.key);if(Number.isInteger(number)&&number>=1&&number<=rushCars.length){rushSelected=number-1;rushUpdateControls();rushBoard.querySelector(`[data-car="${rushSelected}"]`)?.focus({preventScroll:true});event.preventDefault();return;}if(event.target!==rushBoard)return;const car=rushCars[rushSelected],step=car?.h===1?{ArrowLeft:-1,ArrowRight:1}[event.key]:{ArrowUp:-1,ArrowDown:1}[event.key];if(step){event.preventDefault();rushMove(step,true);}});}
 function rushCanMove(cars,index,step){
  const car=cars[index],horizontal=car.h===1,x=car.x+(horizontal?step:0),y=car.y+(horizontal?0:step);
  const escaping=index===0&&horizontal&&step>0&&car.y===rushExitRow;
@@ -144,7 +145,7 @@ function rushArt(car,index){
 }
 function rushRender(){
  rushBoard.style.setProperty('--rush-size',rushSize);rushBoard.closest('.rush-parking').style.setProperty('--rush-size',rushSize);rushBoard.closest('.rush-parking').style.setProperty('--rush-exit-row',rushExitRow);rushBoard.setAttribute('aria-label',`Bãi đỗ xe ${rushSize}×${rushSize}`);
- rushBoard.replaceChildren(...rushCars.map((car,i)=>{const button=document.createElement('button');button.type='button';button.className='rush-car';button.dataset.car=i;button.style.cssText='--x:'+car.x+';--y:'+car.y+';--w:'+car.w+';--h:'+car.h;button.innerHTML=rushArt(car,i);button.disabled=rushDone;button.setAttribute('aria-label',(i===0?'Xe đỏ':'Xe '+(i+1))+', hướng '+(car.h===1?'ngang':'dọc'));button.setAttribute('aria-pressed',String(i===rushSelected));button.onclick=()=>{rushSelected=i;rushUpdateControls();};button.onkeydown=event=>{const step=car.h===1?{ArrowLeft:-1,ArrowRight:1}[event.key]:{ArrowUp:-1,ArrowDown:1}[event.key];if(step){event.preventDefault();rushSelected=i;rushMove(step,true);}};return button;}));rushUpdateControls();
+ rushBoard.replaceChildren(...rushCars.map((car,i)=>{const button=document.createElement('button');button.type='button';button.className='rush-car';button.dataset.car=i;button.style.cssText='--x:'+car.x+';--y:'+car.y+';--w:'+car.w+';--h:'+car.h;button.innerHTML=rushArt(car,i);button.disabled=rushDone;button.setAttribute('aria-label',(i===0?'Xe đỏ':'Xe '+(i+1))+', hướng '+(car.h===1?'ngang':'dọc'));button.setAttribute('aria-pressed',String(i===rushSelected));button.onclick=()=>{rushSelected=i;rushUpdateControls();};button.onkeydown=event=>{const step=car.h===1?{ArrowLeft:-1,ArrowRight:1}[event.key]:{ArrowUp:-1,ArrowDown:1}[event.key];if(step){event.preventDefault();event.stopPropagation();rushSelected=i;rushMove(step,true);}};return button;}));rushUpdateControls();
 }
 function rushUpdateControls(){
  rushBoard.querySelectorAll('.rush-car').forEach((button,i)=>button.setAttribute('aria-pressed',String(i===rushSelected)));
