@@ -1537,6 +1537,7 @@ html[data-theme="dark"] .einstein-clue[data-tip]::after{background:#5d492f;color
 .game-panel button.hitori-cell.black{background:#376c73;color:#fff;border-color:#376c73}
 html[data-theme="dark"] .game-panel button.hitori-cell.unsure{background:#dfd0b2;color:#806b4b;border-color:#c3ac83}
 html[data-theme="dark"] .game-panel button.hitori-cell.safe{background:#fff8e8;color:#51422e;border-color:#bda985}
+html[data-theme="dark"] .hitori-board{border-color:#bda985}
 /* Einstein icons stay transparent; group colors are carried by the artwork. */
 .game-panel button.einstein-candidate,
 .game-panel button.einstein-candidate[data-group="color"],
@@ -1806,6 +1807,10 @@ html[data-theme="dark"] #game-water .game-nav>button,html[data-theme="dark"] #ga
 #game-water .water-world{padding-top:8px}
 #game-water .water-world>.game-nav{margin-top:0;margin-bottom:8px}
 #game-river .river-world>.game-nav{width:calc(100% - 16px);margin:8px 8px 10px;border-radius:9px}
+#game-einstein .game-nav{flex-wrap:wrap!important;overflow-x:visible!important;overflow-y:visible!important;justify-content:center;row-gap:5px}
+#game-einstein .game-nav .einstein-level{display:contents!important}
+#game-einstein .game-nav>select{flex:1 1 130px;max-width:180px}
+#game-einstein .game-nav .einstein-toolbar{display:contents!important}
 /* Gameplay refinements. */
 #game-rush .rush-exit{left:calc(100% - 3px);width:20px;height:calc(100%/var(--rush-size));display:block;background:transparent;border:0;z-index:4}
 #game-rush .rush-exit i,#game-rush .rush-exit b{display:none}
@@ -1820,6 +1825,8 @@ html[data-theme="dark"] #game-water .game-nav>button,html[data-theme="dark"] #ga
 #game-einstein .game-nav .einstein-toolbar,#game-einstein .game-nav .einstein-modes{display:contents!important}
 #game-einstein .game-nav .einstein-toolbar>button,#game-einstein .game-nav .einstein-modes>button{display:grid;place-items:center;flex:0 0 38px;width:38px;min-width:38px;height:38px;min-height:38px;margin:0;padding:0!important;border:1px solid #bdd6d1!important;border-radius:50%!important;background:#fff!important;color:#285e63!important;box-shadow:none!important}
 html[data-theme="dark"] #game-einstein .game-nav .einstein-toolbar>button,html[data-theme="dark"] #game-einstein .game-nav .einstein-modes>button{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important}
+#game-words .game-nav{justify-content:center!important;overflow-x:visible!important}
+@media(max-width:620px){#game-words .game-nav{justify-content:center!important;gap:5px;padding-inline:6px}}
 #soko-board{touch-action:none;user-select:none}
 #soko-board .soko-cell.player{cursor:pointer}
 #soko-board .soko-cell.player.selected{filter:drop-shadow(0 0 5px #d49b4c)}
@@ -1840,3 +1847,39 @@ html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-di
   background:#ead7b3!important;
   color:#49351f!important;
 }
+/* Keep result actions consistent across every game and outcome. */
+.game-panel .game-result .result-actions button[data-result-retry],
+.game-panel .game-result .result-actions button[data-result-next],
+.game-panel .game-result[data-outcome="lost"] .result-actions button[data-result-retry],
+.game-panel .game-result[data-outcome="lost"] .result-actions button[data-result-next]{
+  min-width:116px;
+  min-height:42px;
+  padding:10px 16px;
+  border:1px solid #966446!important;
+  border-radius:10px;
+  background:#966446!important;
+  color:#fff!important;
+  font-size:.9rem;
+  font-weight:650;
+}
+.game-panel .game-result .result-actions button[data-result-retry]:hover,
+.game-panel .game-result .result-actions button[data-result-next]:hover,
+.game-panel .game-result .result-actions button[data-result-retry]:focus-visible,
+.game-panel .game-result .result-actions button[data-result-next]:focus-visible{
+  background:#805239!important;
+  color:#fff!important;
+}
+.game-panel .game-result .result-actions button[data-result-dismiss]{
+  min-width:116px;
+  min-height:42px;
+  padding:10px 16px;
+  border:1px solid #c6a978!important;
+  border-radius:10px;
+  background:#fbf1d8!important;
+  color:#59452f!important;
+  font-size:.9rem;
+  font-weight:650;
+}
+html:not([data-theme="dark"]) .game-panel .game-result[data-outcome="won"] .result-actions button[data-result-retry],
+html:not([data-theme="dark"]) .game-panel .game-result[data-outcome="won"] .result-actions button[data-result-next]{background:#2f7965!important;border-color:#2f7965!important}
+html[data-theme="dark"] .game-panel .game-result .result-actions button[data-result-dismiss]{background:#fbf1d8!important;color:#59452f!important}
