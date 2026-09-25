@@ -5,7 +5,7 @@ import {startRiver} from './river-game.js';
 import './water-game.js';
 import {moveBoard,canMove,scoreWord,words} from './game-rules.js';
 const $=s=>document.querySelector(s);
-document.querySelectorAll('[data-game]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-game]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.game-panel').forEach(p=>p.hidden=p.id!=='game-'+button.dataset.game);if(button.dataset.game==='words')$('#game-words').scrollIntoView({block:'start',behavior:'instant'});}));
+document.querySelectorAll('[data-game]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-game]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.game-panel').forEach(p=>p.hidden=p.id!=='game-'+button.dataset.game);const panel=$('#game-'+button.dataset.game),scene=panel?.querySelector('[id$="-scene"],.river-world,.water-world')||panel;if(scene){scene.setAttribute('tabindex','-1');scene.scrollIntoView({block:'start',behavior:'instant'});scene.focus({preventScroll:true});}}));
 // Keep each game's settings and navigation in one place. Move existing controls
 // so their IDs and event handlers continue to work.
 document.querySelectorAll('.game-panel').forEach(panel=>{

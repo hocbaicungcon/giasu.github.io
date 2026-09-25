@@ -1827,6 +1827,10 @@ html[data-theme="dark"] #game-water .game-nav>button,html[data-theme="dark"] #ga
 html[data-theme="dark"] #game-einstein .game-nav .einstein-toolbar>button,html[data-theme="dark"] #game-einstein .game-nav .einstein-modes>button{background:#fbf1d8!important;color:#51422e!important;border-color:#c6a978!important}
 #game-words .game-nav{justify-content:center!important;overflow-x:visible!important}
 @media(max-width:620px){#game-words .game-nav{justify-content:center!important;gap:5px;padding-inline:6px}}
+html:not([data-theme="dark"]) #game-numbers #number-board:focus-visible{outline:3px solid #5e9d99!important;outline-offset:4px}
+html:not([data-theme="dark"]) #game-numbers .game-nav button:focus-visible,
+html:not([data-theme="dark"]) #game-numbers .game-nav select:focus-visible{outline:2px solid #5e9d99!important;outline-offset:2px}
+.game-panel>[id$="-scene"]:focus,.game-panel>.river-world:focus,.game-panel>.water-world:focus{outline:0}
 #soko-board{touch-action:none;user-select:none}
 #soko-board .soko-cell.player{cursor:pointer}
 #soko-board .soko-cell.player.selected{filter:drop-shadow(0 0 5px #d49b4c)}
