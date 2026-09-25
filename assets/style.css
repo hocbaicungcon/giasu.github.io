@@ -1144,3 +1144,302 @@ html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-di
 #nim-scene{min-height:500px;justify-content:flex-start}
 #nim-scene .nim-board{margin-block:auto}
 @media(max-width:620px){#nim-scene{min-height:560px}}
+
+/* Nonogram: clue tracks and cells stay aligned at every board size. */
+#game-nonogram{max-width:850px}
+#nonogram-scene{--nonogram-cell:44px;--nonogram-clue:48px;display:flex;flex-direction:column;align-items:center;gap:16px}
+#nonogram-scene .puzzle-level{width:100%;margin:0;padding:8px;gap:6px;border:1px solid #c9e2df;border-radius:12px;background:#edf7f6}
+#nonogram-scene .puzzle-level strong{min-width:0;flex:1 1 130px;text-align:center;line-height:1.3}
+#nonogram-scene .puzzle-level button{display:grid;place-items:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:0}
+#nonogram-scene .puzzle-level select{height:40px;min-height:40px;max-width:130px;margin:0;padding:5px 8px;font-size:.82rem;background:#fff;border-color:#c9e2df}
+.nonogram-layout{display:grid;grid-template-columns:var(--nonogram-clue) max-content;grid-template-rows:64px max-content;max-width:100%;user-select:none}
+.nonogram-col-clues,.nonogram-board{display:grid;grid-template-columns:repeat(var(--nonogram-size),var(--nonogram-cell))}
+.nonogram-row-clues{display:grid;grid-template-rows:repeat(var(--nonogram-size),var(--nonogram-cell))}
+.nonogram-clue{display:flex;align-items:center;justify-content:flex-end;gap:3px;padding:0 5px;color:#355c62;font-size:.8rem;font-weight:750;line-height:1}
+.nonogram-col-clues .nonogram-clue{flex-direction:column;justify-content:flex-end;gap:3px;padding:0 0 5px}
+.nonogram-clue.complete{color:#73958f}
+.nonogram-board{grid-template-rows:repeat(var(--nonogram-size),var(--nonogram-cell));border:2px solid #527e7f;background:#fff}
+.game-panel #nonogram-board .nonogram-cell{display:grid;place-items:center;width:var(--nonogram-cell);height:var(--nonogram-cell);min-width:0;min-height:0;padding:0;border:1px solid #b9d2d0;border-radius:0;background:#f8fcfa;color:#6b8a88;font-size:1.5rem;line-height:1;box-shadow:none}
+.game-panel #nonogram-board .nonogram-cell.filled{background:#377e85;border-color:#2b6970;color:#fff}
+.game-panel #nonogram-board .nonogram-cell.crossed::after{content:'×'}
+.game-panel #nonogram-board .nonogram-cell:focus-visible{outline:3px solid #e78975;outline-offset:-3px;z-index:1}
+.nonogram-controls{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
+.game-panel .nonogram-controls button[aria-pressed="true"]{background:#347d82;color:#fff;border-color:#347d82}
+html[data-theme="dark"] #nonogram-scene .puzzle-level{background:#f7edda;border-color:#c6ad83}
+html[data-theme="dark"] #nonogram-scene .puzzle-level select{background:#fbf5e7;border-color:#c6ad83;color:#51422e}
+html[data-theme="dark"] .nonogram-clue{color:#66543b}
+html[data-theme="dark"] .nonogram-clue.complete{color:#9a8768}
+html[data-theme="dark"] .nonogram-board{border-color:#8c7758;background:#fbf5e7}
+html[data-theme="dark"] #game-nonogram #nonogram-board .nonogram-cell{background:#fbf5e7;border-color:#cdbd9f;color:#8c7b64}
+html[data-theme="dark"] #game-nonogram #nonogram-board .nonogram-cell.filled{background:#806849;border-color:#69563d;color:#fff8e9}
+html[data-theme="dark"] #game-nonogram .nonogram-controls button[aria-pressed="true"]{background:#806849;border-color:#806849;color:#fff8e9}
+@media(max-width:620px){#nonogram-scene{--nonogram-clue:46px;padding:12px;gap:12px}#nonogram-scene[data-size="5"]{--nonogram-cell:40px}#nonogram-scene[data-size="6"]{--nonogram-cell:34px}#nonogram-scene[data-size="7"]{--nonogram-cell:30px}#nonogram-scene .puzzle-level{gap:5px;padding:6px}#nonogram-scene .puzzle-level strong{flex-basis:100%;order:-1;font-size:.82rem}#nonogram-scene .puzzle-level select{flex:1 1 90px;min-width:0}.nonogram-layout{grid-template-rows:56px max-content}.nonogram-clue{font-size:.74rem}}
+
+/* Kakuro and Light Up use compact, touch-friendly puzzle boards. */
+:is(#game-kakuro,#game-lightup){max-width:850px}
+:is(#kakuro-scene,#lightup-scene){display:flex;flex-direction:column;align-items:center;gap:16px}
+:is(#kakuro-scene,#lightup-scene) .puzzle-level{width:100%;margin:0;padding:8px;gap:6px;border:1px solid #c9e2df;border-radius:12px;background:#edf7f6}
+:is(#kakuro-scene,#lightup-scene) .puzzle-level strong{min-width:0;flex:1 1 130px;text-align:center;line-height:1.3}
+:is(#kakuro-scene,#lightup-scene) .puzzle-level button{display:grid;place-items:center;width:40px;height:40px;min-width:40px;min-height:40px;padding:0}
+:is(#kakuro-scene,#lightup-scene) .puzzle-level select{height:40px;min-height:40px;max-width:130px;margin:0;padding:5px 8px;font-size:.82rem;background:#fff;border-color:#c9e2df}
+.kakuro-board,.lightup-board{display:grid;max-width:100%;user-select:none;touch-action:manipulation}
+.kakuro-board{--kakuro-cell:48px;grid-template-columns:repeat(var(--kakuro-size),var(--kakuro-cell));border:2px solid #496e70}
+.kakuro-cell{position:relative;display:grid;place-items:center;width:var(--kakuro-cell);height:var(--kakuro-cell);font-size:1.15rem;font-weight:750}
+.game-panel #kakuro-board button.kakuro-cell{padding:0;border:1px solid #b8d0cc;border-radius:0;background:#fff;color:#254e55;box-shadow:none}
+.game-panel #kakuro-board button.kakuro-cell.given{background:#e5f3ef;color:#316d67}
+.game-panel #kakuro-board button.kakuro-cell.wrong{background:#ffe3dc;color:#a34436}
+.game-panel #kakuro-board button.kakuro-cell:focus-visible{outline:3px solid #e78975;outline-offset:-3px;z-index:1}
+.kakuro-cell.wall{background:linear-gradient(135deg,#355c60 49%,#99bbba 50%,#355c60 51%);border:1px solid #294d51;color:#f7fcf7;font-size:.77rem}
+.kakuro-cell.wall span{position:absolute;line-height:1}
+.kakuro-down{left:5px;bottom:5px}.kakuro-across{right:5px;top:5px}
+.kakuro-keys{display:flex;justify-content:center;flex-wrap:wrap;gap:5px;max-width:530px}
+.game-panel .kakuro-keys button{min-width:42px;min-height:42px;padding:5px 10px}
+.lightup-board{--lightup-cell:48px;grid-template-columns:repeat(var(--lightup-size),var(--lightup-cell));border:2px solid #496e70}
+.lightup-cell{display:grid;place-items:center;width:var(--lightup-cell);height:var(--lightup-cell);font-size:1.35rem;font-weight:800}
+.game-panel #lightup-board button.lightup-cell{padding:0;border:1px solid #b8d0cc;border-radius:0;background:#f8fcfa;color:#718f8c;box-shadow:none}
+.game-panel #lightup-board button.lightup-cell.lit{background:#fff0be}
+.game-panel #lightup-board button.lightup-cell.bulb{background:#ffe3a2;color:#a26919;font-size:1.7rem}
+.game-panel #lightup-board button.lightup-cell.conflict{background:#fbd4c8;color:#a04336}
+.game-panel #lightup-board button.lightup-cell:focus-visible{outline:3px solid #e78975;outline-offset:-3px;z-index:1}
+.lightup-cell.wall{background:#355c60;border:1px solid #294d51;color:#fff7dd}
+.lightup-cell.wall.bad{background:#a4473b;color:#fff}
+.lightup-controls{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
+.game-panel .lightup-controls button[aria-pressed="true"]{background:#347d82;border-color:#347d82;color:#fff}
+html[data-theme="dark"] :is(#kakuro-scene,#lightup-scene) .puzzle-level{background:#f7edda;border-color:#c6ad83}
+html[data-theme="dark"] :is(#kakuro-scene,#lightup-scene) .puzzle-level select{background:#fbf5e7;border-color:#c6ad83;color:#51422e}
+html[data-theme="dark"] .kakuro-board,html[data-theme="dark"] .lightup-board{border-color:#806d50}
+html[data-theme="dark"] #kakuro-board button.kakuro-cell{background:#fbf5e7;border-color:#cdbd9f;color:#544630}
+html[data-theme="dark"] #kakuro-board button.kakuro-cell.given{background:#e9dfc9;color:#654e2e}
+html[data-theme="dark"] #kakuro-board button.kakuro-cell.wrong{background:#f0d2c1;color:#8c4532}
+html[data-theme="dark"] .kakuro-cell.wall{background:linear-gradient(135deg,#6d5c45 49%,#c9b48c 50%,#6d5c45 51%);border-color:#5a4935;color:#fff7e9}
+html[data-theme="dark"] #lightup-board button.lightup-cell{background:#fbf5e7;border-color:#cdbd9f;color:#8d8068}
+html[data-theme="dark"] #lightup-board button.lightup-cell.lit{background:#f7e4b7}
+html[data-theme="dark"] #lightup-board button.lightup-cell.bulb{background:#efd49a;color:#865c29}
+html[data-theme="dark"] #lightup-board button.lightup-cell.conflict{background:#ebc7b2;color:#813d2d}
+html[data-theme="dark"] .lightup-cell.wall{background:#6d5c45;border-color:#5a4935;color:#fff1ce}
+html[data-theme="dark"] .lightup-cell.wall.bad{background:#9a5948;color:#fff8e9}
+html[data-theme="dark"] #game-lightup .lightup-controls button[aria-pressed="true"]{background:#806849;border-color:#806849;color:#fff8e9}
+@media(max-width:620px){:is(#kakuro-scene,#lightup-scene){padding:12px;gap:12px}:is(#kakuro-scene,#lightup-scene) .puzzle-level{gap:5px;padding:6px}:is(#kakuro-scene,#lightup-scene) .puzzle-level strong{flex-basis:100%;order:-1;font-size:.82rem}:is(#kakuro-scene,#lightup-scene) .puzzle-level select{flex:1 1 90px;min-width:0}.kakuro-board{--kakuro-cell:43px}.lightup-board{--lightup-cell:43px}.game-panel .kakuro-keys button{min-width:36px;min-height:38px;padding:4px 8px}}
+@media(max-width:360px){.kakuro-board{--kakuro-cell:38px}.lightup-board{--lightup-cell:38px}}
+/* Cờ caro */
+#game-caro{max-width:850px}
+.caro-toolbar{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
+.caro-toolbar select{margin:0}
+#caro-status{text-align:center;font-weight:700;color:var(--ink)}
+.caro-scroll{max-width:100%;overflow:auto;margin-inline:auto}
+.caro-board{display:grid;grid-template-columns:repeat(15,minmax(0,1fr));grid-template-rows:repeat(15,minmax(0,1fr));width:min(100%,660px);min-width:390px;aspect-ratio:1;box-sizing:border-box;margin:auto;border:2px solid #78a9a7;background:#eaf4f1;touch-action:manipulation}
+.game-panel button.caro-cell{position:relative;min-width:0;min-height:0;padding:0;border:1px solid #b5d1cb;border-radius:0;background:transparent;color:transparent;font-size:0;line-height:1;cursor:pointer}
+.caro-mark{position:absolute;inset:8%;display:block;width:84%;height:84%;object-fit:contain;pointer-events:none}
+.game-panel button.caro-cell.caro-winning{background:#b7ddd0}
+.game-panel button.caro-cell:disabled{opacity:1;cursor:default}
+.game-panel button.caro-cell:not(:disabled):hover,.game-panel button.caro-cell:not(:disabled):focus-visible{background:#d4e9e2;outline:2px solid #5d9d9d;outline-offset:-2px}
+html[data-theme="dark"] .caro-board{background:#e7d2a6;border-color:#8c6845}
+html[data-theme="dark"] .game-panel button.caro-cell{background:transparent;border-color:#ab8a5d;color:transparent}
+html[data-theme="dark"] .game-panel button.caro-cell.caro-winning{background:#c9995c}
+html[data-theme="dark"] .game-panel button.caro-cell:not(:disabled):hover,html[data-theme="dark"] .game-panel button.caro-cell:not(:disabled):focus-visible{background:#dac49b;outline-color:#936e43}
+@media(max-width:620px){.caro-board{min-width:0;width:100%}}
+/* Hashi, Hitori, Futoshiki */
+:is(#game-hashi,#game-hitori,#game-futoshiki){max-width:850px}
+.logic-scene{display:flex;flex-direction:column;align-items:center;gap:16px;margin:18px auto;padding:16px;border:1px solid #c9e2df;border-radius:14px;background:#f5faf8}
+.logic-scene .puzzle-level{align-self:stretch;width:100%;margin:0;padding:8px;display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid #c9e2df;border-radius:12px;background:#edf7f6}
+.logic-scene .puzzle-level strong{min-width:90px;text-align:center}
+.logic-scene .puzzle-level select{width:86px;max-width:86px;min-height:40px;margin:0;padding:5px 7px;font-size:.82rem}
+.logic-board{max-width:100%;touch-action:manipulation;user-select:none}
+.hashi-board{width:min(100%,430px);aspect-ratio:1}
+.hashi-board svg{display:block;width:100%;height:100%}
+.hashi-hit{stroke:transparent;stroke-width:28;cursor:pointer}
+.hashi-bridge{stroke:#387e83;stroke-width:5;stroke-linecap:round;pointer-events:none}
+.hashi-island circle{fill:#fff;border:0;stroke:#397e83;stroke-width:3}
+.hashi-island.complete circle{fill:#d8eee7}
+.hashi-island text{font-size:20px;font-weight:800;fill:#305962;pointer-events:none}
+.hashi-link:focus-visible .hashi-hit{stroke:#aad4cb;stroke-width:12;outline:none}
+.hitori-board{display:grid;grid-template-columns:repeat(var(--logic-size),minmax(0,1fr));width:min(100%,340px);aspect-ratio:1;border:2px solid #5e9392}
+.game-panel button.hitori-cell{display:grid;place-items:center;min-width:0;min-height:0;padding:0;border:1px solid #b7d4d0;border-radius:0;background:#fff;color:#315d64;font-size:clamp(1.1rem,4vw,1.6rem);font-weight:700}
+.game-panel button.hitori-cell.black{background:#376c73;color:#fff;border-color:#376c73}
+.futoshiki-board{display:grid;grid-template-columns:repeat(var(--futo-size),minmax(0,1fr));grid-template-rows:repeat(var(--futo-size),minmax(0,1fr));width:min(100%,420px);aspect-ratio:1}
+.game-panel button.futo-cell{display:grid;place-items:center;min-width:0;min-height:0;padding:0;border:2px solid #a8c9c4;border-radius:8px;background:#fff;color:#315d64;font-size:clamp(1.15rem,4vw,1.8rem);font-weight:750}
+.game-panel button.futo-cell.given{background:#d9ede7;color:#275b5c}
+.game-panel button.futo-cell.selected{background:#e6d7ac;border-color:#a77843}
+.futo-sign{display:grid;place-items:center;color:#98663f;font-size:clamp(1rem,3.2vw,1.5rem);font-weight:800}
+.futoshiki-keys{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.game-panel .futoshiki-keys button{min-width:46px;min-height:42px}
+html[data-theme="dark"] .logic-scene{background:#f6efdf;border-color:#c6ad83}
+html[data-theme="dark"] .logic-scene .puzzle-level{background:#f7edda;border-color:#c6ad83}
+html[data-theme="dark"] .logic-scene .puzzle-level select{background:#fff8e8;color:#51422e;border-color:#c6ad83}
+html[data-theme="dark"] .hashi-bridge{stroke:#876440}
+html[data-theme="dark"] .hashi-island circle{fill:#fff8e8;stroke:#846540}
+html[data-theme="dark"] .hashi-island.complete circle{fill:#ead9b6}
+html[data-theme="dark"] .hashi-island text{fill:#51422e}
+html[data-theme="dark"] .game-panel button.hitori-cell,html[data-theme="dark"] .game-panel button.futo-cell{background:#fff8e8;border-color:#cbb99a;color:#51422e}
+html[data-theme="dark"] .game-panel button.hitori-cell.black{background:#785f45;color:#fff8e8;border-color:#785f45}
+html[data-theme="dark"] .game-panel button.futo-cell.given{background:#e8d9bb}
+html[data-theme="dark"] .game-panel button.futo-cell.selected{background:#d8bb85;border-color:#966b39}
+html[data-theme="dark"] .futo-sign{color:#8a5d35}
+@media(max-width:620px){.logic-scene{padding:10px;gap:12px}.logic-scene .puzzle-level{gap:4px;flex-wrap:wrap}.logic-scene .puzzle-level strong{min-width:65px;font-size:.85rem}.game-panel button.futo-cell{border-radius:5px}}
+/* Einstein Riddle: picture clues, house grid, and a touch-friendly token tray. */
+#game-einstein{max-width:1100px}
+.einstein-scene{display:flex;flex-direction:column;align-items:stretch;gap:16px;margin:16px auto}
+.einstein-level{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:8px;border:1px solid #c8dcd2;border-radius:12px;background:#eaf5f0}
+.einstein-level strong{min-width:145px;text-align:center;color:#315f63;font-size:.88rem}
+.game-panel .einstein-level button{display:grid;place-items:center;min-width:40px;min-height:40px;padding:0}
+.einstein-level select{width:132px;max-width:100%;min-height:40px;margin:0;padding:6px 8px;font-size:.82rem;background:#fffefa;border-color:#b9d6cb}
+.einstein-progress{text-align:center;color:#547170;font-size:.9rem}
+.einstein-progress strong{color:#2e7074;font-size:1.15rem}
+.einstein-progress strong.attention{color:#ad5144}
+.einstein-clues{padding:14px;border:1px solid #c8dcd2;border-radius:14px;background:#f6faf5}
+.einstein-clues h3{margin:0 0 12px;text-align:center;font-size:1.05rem;color:#315f63}
+.einstein-clues ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;max-height:300px;overflow-y:auto;list-style:none;margin:0;padding:0;counter-reset:clue}
+.einstein-clue{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:6px;min-height:74px;padding:10px;border:1px solid #cdded9;border-radius:11px;background:#fffdfa;color:#315d63}
+.einstein-clue:nth-child(3n+2){background:#eaf5f1}
+.einstein-clue:nth-child(3n){background:#f7eef0}
+.einstein-clue.wrong{border-color:#d07863;background:#fbe3da}
+.einstein-clue-image{display:grid;place-items:center;min-width:0}
+.einstein-clue-image svg{display:block;width:48px;height:48px;max-width:100%}
+.einstein-clue b{color:#ae5d70;font-size:1.65rem;line-height:1}
+.einstein-clue small{grid-column:1/-1;display:block;text-align:center;color:#597071;font-size:.75rem;line-height:1.35}
+.einstein-number{display:grid;place-items:center;width:43px;height:43px;border-radius:50%;background:#5e9eae;color:#fff;font-weight:800;font-size:1.45rem}
+.einstein-scroll-note{display:none;margin:0;text-align:center;font-size:.8rem;color:#5d777a}
+.einstein-scroll{max-width:100%;overflow-x:auto;padding-bottom:7px}
+.einstein-board{display:grid;grid-template-columns:180px repeat(5,minmax(116px,1fr));min-width:760px;border:2px solid #8dbbb0;border-radius:14px;overflow:hidden;background:#b6d2ca;gap:1px}
+.einstein-corner,.einstein-bank-cell{position:sticky;left:0;z-index:2;display:flex;align-items:center;gap:7px;padding:9px;background:#e5f2ec;color:#305f62;font-weight:750;font-size:.82rem}
+.einstein-corner{justify-content:center;text-align:center}
+.einstein-corner svg{width:27px;height:27px}
+.einstein-bank-cell{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;padding:4px}.einstein-bank-icon{display:grid;place-items:center}.einstein-bank-icon svg{width:24px;height:24px}
+.einstein-house{display:flex;flex-direction:column;align-items:center;justify-content:end;gap:2px;min-height:112px;padding:10px 4px 7px;background:#f2faf6;color:#315f63}
+.einstein-house svg{width:76px;height:76px;display:block}
+.einstein-house strong{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#d8ebe4;color:#315f63;font-size:.88rem}
+.game-panel button.einstein-slot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;min-width:0;min-height:70px;padding:4px;border:0;border-radius:0;background:#fffdfa;color:#416364;box-shadow:none;cursor:pointer}
+.game-panel button.einstein-slot.filled{background:#edf7f2}
+.game-panel button.einstein-slot.given{background:#dceee6;cursor:default}
+.game-panel button.einstein-slot.target{background:#d5eee7;outline:3px solid #3f9187;outline-offset:-3px}
+.game-panel button.einstein-slot svg{width:38px;height:38px;flex:none}
+.game-panel button.einstein-slot span:not(.einstein-slot-plus){max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.71rem;font-weight:700}
+.einstein-slot-plus{font-size:1.4rem;color:#aec5bd}
+.game-panel button.einstein-slot:not(:disabled):hover,.game-panel button.einstein-slot:not(:disabled):focus-visible{background:#dcefe7;outline:2px solid #6ca79c;outline-offset:-2px}
+.game-panel button.einstein-token{display:grid;place-items:center;width:100%;min-width:0;min-height:42px;padding:2px;border:1px solid transparent;border-radius:7px;background:transparent;color:#355f62;box-shadow:none;cursor:grab}
+.game-panel button.einstein-token svg{display:block;width:25px;height:25px}
+.game-panel button.einstein-token.used{opacity:.38}
+.game-panel button.einstein-token.selected{opacity:1;transform:translateY(-3px);border-color:#378d86;background:#d1eee4;box-shadow:0 2px 0 #8abcb0}
+.einstein-toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.game-panel .einstein-toolbar button{display:grid;place-items:center;width:48px;height:46px;min-width:48px;padding:10px}
+.einstein-toolbar svg{display:block;width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+#einstein-status{text-align:center;font-weight:700}
+html[data-theme="dark"] .einstein-progress{color:#766449}
+html[data-theme="dark"] .einstein-level{background:#f0e4ca;border-color:#cbb797}
+html[data-theme="dark"] .einstein-level strong{color:#76583b}
+html[data-theme="dark"] .einstein-level select{background:#fff8e9;border-color:#cbb797;color:#6b5033}
+html[data-theme="dark"] .einstein-progress strong{color:#8a603b}
+html[data-theme="dark"] .einstein-clues{background:#f7efdf;border-color:#cbb797}
+html[data-theme="dark"] .einstein-clues h3{color:#76583b}
+html[data-theme="dark"] .einstein-clue{background:#fff7e9;border-color:#d3bf9d;color:#604b34}
+html[data-theme="dark"] .einstein-clue:nth-child(3n+2){background:#f0e3c9}
+html[data-theme="dark"] .einstein-clue:nth-child(3n){background:#f3e4d5}
+html[data-theme="dark"] .einstein-clue.wrong{background:#f1d2c1;border-color:#ba7765}
+html[data-theme="dark"] .einstein-clue b{color:#a26959}
+html[data-theme="dark"] .einstein-clue small{color:#725b3e}
+html[data-theme="dark"] .einstein-number{background:#9a7850;color:#fff8ea}
+html[data-theme="dark"] .einstein-board{background:#cbb797;border-color:#b89e75}
+html[data-theme="dark"] .einstein-corner,html[data-theme="dark"] .einstein-bank-cell{background:#e9dcc2;color:#6d5739}
+html[data-theme="dark"] .einstein-house{background:#f7efdd;color:#765333}
+html[data-theme="dark"] .einstein-house strong{background:#e6d4b1;color:#765333}
+html[data-theme="dark"] .game-panel button.einstein-slot{background:#fff8e9;color:#6b5033}
+html[data-theme="dark"] .game-panel button.einstein-slot.filled{background:#f2e6cf}
+html[data-theme="dark"] .game-panel button.einstein-slot.given{background:#e5d4af}
+html[data-theme="dark"] .game-panel button.einstein-slot.target{background:#dfc69a;outline-color:#9b7549}
+html[data-theme="dark"] .game-panel button.einstein-slot:not(:disabled):hover,html[data-theme="dark"] .game-panel button.einstein-slot:not(:disabled):focus-visible{background:#ead7b3;outline-color:#ac8757}
+html[data-theme="dark"] .game-panel button.einstein-token{background:transparent;border-color:transparent;color:#6b5033}
+html[data-theme="dark"] .game-panel button.einstein-token.selected{background:#ead7b3;border-color:#9d784a;box-shadow:0 3px 0 #c4a878}
+html[data-theme="dark"] .einstein-scroll-note{color:#7d6a51}
+@media(max-width:850px){.einstein-clues ol{grid-template-columns:repeat(2,minmax(0,1fr))}.einstein-scroll-note{display:block}}
+@media(max-width:560px){.einstein-level{gap:5px;padding:6px}.einstein-level strong{min-width:80px;font-size:.74rem}.einstein-level select{width:90px}.einstein-clues{padding:8px}.einstein-clues ol{gap:6px}.einstein-clue{min-height:62px;padding:6px;gap:3px}.einstein-clue-image svg{width:38px;height:38px}.einstein-clue b{font-size:1.25rem}.einstein-bank-cell{padding:2px}.game-panel button.einstein-token{min-height:38px}.game-panel button.einstein-token svg{width:22px;height:22px}}
+
+/* Direct cell editing keeps Einstein playable without a separate token bank. */
+.einstein-board{grid-template-columns:38px repeat(5,minmax(0,1fr));min-width:0}
+.einstein-bank-cell{display:flex;justify-content:center;padding:3px}
+.einstein-corner{padding:5px}
+.einstein-picker{position:fixed;z-index:10000;display:flex;gap:5px;padding:8px;max-width:calc(100vw - 16px);border:1px solid #8dbbb0;border-radius:14px;background:#f5fcf8;box-shadow:0 6px 24px #244f4933}
+.einstein-picker[hidden]{display:none}
+.game-panel .einstein-picker button{display:grid;place-items:center;width:46px;height:48px;min-width:0;padding:4px;border:1px solid transparent;border-radius:9px;background:#e3f1e9;color:#355f62;touch-action:manipulation}
+.einstein-picker button svg{width:36px;height:36px}
+.game-panel .einstein-picker button[aria-pressed="true"],.game-panel .einstein-picker button:focus-visible{border-color:#378d86;background:#cce8db;outline-offset:2px}
+.game-panel .einstein-picker button:disabled{opacity:.25}
+html[data-theme="dark"] .einstein-picker{background:#fff4dd;border-color:#b89e75;box-shadow:0 6px 24px #67502d33}
+html[data-theme="dark"] .game-panel .einstein-picker button{background:#eee0c4;color:#6b5033}
+html[data-theme="dark"] .game-panel .einstein-picker button[aria-pressed="true"],html[data-theme="dark"] .game-panel .einstein-picker button:focus-visible{background:#dfc69a;border-color:#9b7549}
+@media(max-width:560px){.einstein-board{grid-template-columns:28px repeat(5,minmax(0,1fr))}.game-panel button.einstein-slot{min-height:55px}.game-panel button.einstein-slot svg{width:32px;height:32px}.einstein-picker{gap:3px;padding:5px}.game-panel .einstein-picker button{width:41px;height:46px}}
+
+/* Compact spatial clues: the complete list flows without an inner scrollbar. */
+.einstein-clues{padding:7px}
+.einstein-clues ol{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;max-height:none;overflow:visible}
+.einstein-clue{min-height:44px;padding:4px;gap:2px;border-radius:7px}
+.einstein-clue-image svg{width:32px;height:32px}
+.einstein-clue b{font-size:1.05rem;white-space:nowrap}
+.einstein-clue.between{grid-template-columns:1fr auto 1fr auto 1fr}
+.einstein-clue.between svg{width:28px;height:28px}
+.einstein-clue .einstein-number{width:29px;height:29px;font-size:1rem}
+@media(max-width:600px){.einstein-clues ol{grid-template-columns:repeat(3,minmax(0,1fr))}.einstein-clue{padding:3px;min-height:40px}.einstein-clue-image svg{width:27px;height:27px}.einstein-clue b{font-size:.85rem}.einstein-clue.between svg{width:23px;height:23px}}
+
+/* Keep clues and answers close together at desktop and phone sizes. */
+.einstein-scene{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:stretch;justify-items:stretch;gap:6px;padding:10px;margin:8px auto;min-height:0}
+.einstein-level{grid-column:1;padding:3px;gap:5px;flex-wrap:nowrap}
+.einstein-level strong{min-width:65px}
+.einstein-level select{width:65px}
+.einstein-progress{grid-column:2;align-self:center;margin:0;font-size:.8rem}
+.einstein-progress strong{font-size:.9rem}
+.einstein-clues,.einstein-scroll,.einstein-toolbar{grid-column:1/-1;min-width:0}
+.einstein-clues{padding:4px}
+.einstein-scroll{padding:0}
+.einstein-house{min-height:30px;padding:2px;justify-content:center}
+.einstein-house strong{width:24px;height:24px}
+.game-panel button.einstein-slot{min-height:48px;padding:2px}
+.game-panel button.einstein-slot svg{width:34px;height:34px}
+.einstein-toolbar{gap:6px}
+.game-panel .einstein-toolbar button{width:42px;min-width:42px;height:40px;padding:8px}
+@media(min-width:760px){
+ .einstein-scene{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:10px}
+ .einstein-level{grid-column:1;grid-row:1}
+ .einstein-progress{grid-column:2;grid-row:1}
+ .einstein-clues{grid-column:1;grid-row:2/4}
+ .einstein-clues ol{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .einstein-scroll{grid-column:2;grid-row:2;align-self:start}
+ .einstein-toolbar{grid-column:2;grid-row:3;align-self:end}
+}
+@media(max-width:759px){
+ .einstein-clues ol{grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}
+ .einstein-clue{min-height:33px;padding:2px;gap:1px}
+ .einstein-clue-image svg{width:26px;height:26px}
+ .einstein-clue.between svg{width:22px;height:22px}
+ .einstein-clue b{font-size:.8rem}
+ .einstein-clue .einstein-number{width:24px;height:24px;font-size:.85rem}
+ .einstein-scene{padding:6px;gap:5px}
+ .game-panel button.einstein-slot{min-height:44px}
+ .game-panel button.einstein-slot svg{width:31px;height:31px}
+}
+
+/* Larger logic boards keep cells usable while fitting the available width. */
+.hitori-board{width:min(100%,460px)}
+.futoshiki-board{width:min(100%,500px)}
+#futoshiki-keys{display:flex;flex-wrap:wrap;justify-content:center;gap:5px}
+#futoshiki-keys button{min-width:34px;min-height:38px;padding:5px 9px}
+@media(max-width:560px){.game-panel button.futo-cell{font-size:1.05rem;border-width:1px}.futo-sign{font-size:.85rem}.game-panel button.hitori-cell{font-size:1.1rem}}
+
+/* Candidates stay in stable positions inside every Einstein cell. */
+.einstein-slot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-content:center;gap:1px;padding:3px;background:#fffdfa;color:#416364;min-width:0;min-height:66px}
+.einstein-slot.filled{display:flex;align-items:center;justify-content:center;background:#edf7f2}
+.einstein-slot.given{background:#dceee6}
+.game-panel button.einstein-candidate{position:relative;display:grid;place-items:center;min-width:0;min-height:28px;width:100%;padding:1px;border:0;border-radius:4px;background:transparent;color:inherit;box-shadow:none;touch-action:manipulation}
+.einstein-candidate svg{width:27px;height:27px;max-width:100%}
+.einstein-slot.filled .einstein-candidate{width:100%;min-height:58px}
+.einstein-slot.filled svg{width:38px;height:38px}
+.einstein-candidate.excluded{opacity:.3}
+.einstein-candidate.excluded:after{content:'';position:absolute;width:80%;height:2px;transform:rotate(-45deg);background:currentColor}
+.game-panel button.einstein-candidate.elsewhere{visibility:hidden}
+.einstein-slot.empty-candidates{box-shadow:inset 0 0 0 2px #bd6954}
+.einstein-modes{display:flex;gap:3px;border-right:1px solid #a8bcb2;padding-right:5px}
+.game-panel .einstein-modes button[aria-pressed="true"]{background:#cee6db;border-color:#438675;color:#285d51}
+.einstein-toolbar{gap:4px;align-items:center}
+html[data-theme="dark"] .einstein-slot{background:#fff8e9;color:#6b5033}
+html[data-theme="dark"] .einstein-slot.filled{background:#f2e6cf}
+html[data-theme="dark"] .einstein-slot.given{background:#e5d4af}
+html[data-theme="dark"] .game-panel .einstein-modes button[aria-pressed="true"]{background:#dfc69a;border-color:#9b7549;color:#62482d}
+@media(max-width:560px){.einstein-slot{grid-template-columns:repeat(2,minmax(0,1fr));padding:2px;min-height:84px}.game-panel button.einstein-candidate{min-height:26px}.einstein-candidate svg{width:24px;height:24px}.game-panel .einstein-toolbar button{width:35px;min-width:35px;height:38px;padding:7px}.einstein-slot.filled .einstein-candidate{min-height:76px}}
