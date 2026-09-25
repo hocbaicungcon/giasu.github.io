@@ -1,14 +1,14 @@
-export function moveBoard(board,direction){
+export function moveBoard(board,direction,size=4){
  const result=[...board];let score=0;
- for(let line=0;line<4;line++){
-  const indices=Array.from({length:4},(_,i)=>direction==='left'?line*4+i:direction==='right'?line*4+3-i:direction==='up'?i*4+line:(3-i)*4+line);
+ for(let line=0;line<size;line++){
+  const indices=Array.from({length:size},(_,i)=>direction==='left'?line*size+i:direction==='right'?line*size+size-1-i:direction==='up'?i*size+line:(size-1-i)*size+line);
   const values=indices.map(i=>board[i]).filter(Boolean),merged=[];
   for(let i=0;i<values.length;i++){if(values[i]===values[i+1]){const n=values[i]*2;merged.push(n);score+=n;i++;}else merged.push(values[i]);}
   indices.forEach((index,i)=>result[index]=merged[i]||0);
  }
  return {board:result,score,changed:result.some((v,i)=>v!==board[i])};
 }
-export const canMove=board=>['left','right','up','down'].some(d=>moveBoard(board,d).changed);
+export const canMove=(board,size=4)=>['left','right','up','down'].some(d=>moveBoard(board,d,size).changed);
 export function crossRiver(state,passenger){
  const next={...state};if(passenger&&state[passenger]!==state.person)return {state,error:'Hành khách không ở cùng bờ với bạn.'};
  next.person=1-next.person;if(passenger)next[passenger]=next.person;
