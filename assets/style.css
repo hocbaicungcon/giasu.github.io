@@ -1803,6 +1803,9 @@ html[data-theme="dark"] .game-panel .game-nav>button:hover,html[data-theme="dark
 .game-panel .game-nav #einstein-reset::before{content:'↻';font-size:1.2rem;font-weight:400}
 #game-water .game-nav>button,#game-river .game-nav>button,#game-tangram .game-nav>button{border-radius:50%!important;width:38px!important;min-width:38px!important;height:38px!important;min-height:38px!important;border:1px solid #bdd6d1!important;background:#fff!important;color:#285e63!important}
 html[data-theme="dark"] #game-water .game-nav>button,html[data-theme="dark"] #game-river .game-nav>button,html[data-theme="dark"] #game-tangram .game-nav>button{border-color:#c6a978!important;background:#fbf1d8!important;color:#51422e!important}
+#game-water .water-world{padding-top:8px}
+#game-water .water-world>.game-nav{margin-top:0;margin-bottom:8px}
+#game-river .river-world>.game-nav{width:calc(100% - 16px);margin:8px 8px 10px;border-radius:9px}
 /* Gameplay refinements. */
 #game-rush .rush-exit{left:calc(100% - 3px);width:20px;height:calc(100%/var(--rush-size));display:block;background:transparent;border:0;z-index:4}
 #game-rush .rush-exit i,#game-rush .rush-exit b{display:none}
@@ -1825,3 +1828,15 @@ html[data-theme="dark"] #soko-board .soko-cell.player.selected{filter:drop-shado
 .hashi-link:focus-visible .hashi-hit{stroke:transparent!important;stroke-width:28}
 .hashi-link:focus-visible .hashi-bridge{stroke-width:6}
 .hashi-link:focus{outline:none}
+/* Warm-night result controls use the same readable amber palette as the rest of the games. */
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss],
+html[data-theme="dark"] .game-panel .game-result[data-outcome="lost"] .result-actions [data-result-dismiss]{
+  background:#fbf1d8!important;
+  border:1px solid #c6a978!important;
+  color:#59452f!important;
+}
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]:hover,
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]:focus-visible{
+  background:#ead7b3!important;
+  color:#49351f!important;
+}
