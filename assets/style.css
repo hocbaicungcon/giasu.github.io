@@ -1098,8 +1098,16 @@ html[data-theme="dark"] .game-panel .scene-tools button.game-sound{border:1px so
 @media(max-width:620px){#match-scene{padding-top:6px}}
 #match-scene .match-moves{align-self:center;margin:0;color:#70563b;font-size:.88rem;font-weight:700;text-align:center}
 html[data-theme="dark"] #match-scene .match-moves{color:#735638}
-#match-scene .puzzle-level #match-jump{width:180px;max-width:100%;flex:0 0 180px}
-@media(max-width:620px){#match-scene .puzzle-level #match-jump{flex:1 1 180px;width:180px;min-width:150px}}
+#match-scene .puzzle-level{flex-wrap:nowrap}
+#match-scene .puzzle-level strong{flex:1 1 auto;white-space:nowrap}
+#match-scene .puzzle-level #match-jump{width:165px;max-width:100%;flex:0 1 165px;min-width:0}
+@media(max-width:620px){
+ #match-scene .puzzle-level{gap:4px}
+ #match-scene .puzzle-level strong{display:none}
+ #match-scene .puzzle-level #match-jump{flex:1 1 auto;width:auto;min-width:0}
+ #match-scene .puzzle-level button,#match-scene .puzzle-level button.game-sound{width:32px;height:36px;min-width:32px;min-height:36px;padding:4px}
+ #match-scene .puzzle-level .restart-sound{gap:4px}
+}
 
 /* Light-theme level navigation follows the site's cool teal palette. */
 html:not([data-theme="dark"]) #tangram-scene .tangram-level-tools,
@@ -1109,3 +1117,14 @@ html:not([data-theme="dark"]) :is(#tangram-scene .tangram-level-tools,#pent-scen
 html:not([data-theme="dark"]) :is(#tangram-scene .tangram-level-tools,#pent-scene .puzzle-level,#soko-scene .puzzle-level,#nim-scene .puzzle-level,#match-scene .puzzle-level) button:not(:disabled):hover{background:#c8e7e3;color:#174d56}
 html:not([data-theme="dark"]) :is(.river-world,.water-world) .scene-tools button{background:#edf7f6;color:#285e63}
 html:not([data-theme="dark"]) :is(.river-world,.water-world) .scene-tools button:not(:disabled):hover{background:#c8e7e3;color:#174d56}
+
+/* The shared result controls must override generic game-button colours. */
+.game-panel .game-result .result-actions button{min-height:42px;padding:10px 16px;border:1px solid #2f7965;border-radius:10px;background:#2f7965;color:#fff;font-size:.9rem;font-weight:650}
+.game-panel .game-result .result-actions button:not([data-result-dismiss]):hover{background:#246c59;color:#fff}
+.game-panel .game-result .result-actions [data-result-dismiss]{background:#fff;border-color:#a9c9bf;color:#315f54}
+.game-panel .game-result .result-actions [data-result-dismiss]:hover{background:#e3f2ed;color:#245548}
+.game-panel .game-result[data-outcome="lost"] .result-actions button:not([data-result-dismiss]){background:#966446;border-color:#966446;color:#fff}
+html[data-theme="dark"] .game-panel .game-result .result-actions button:not([data-result-dismiss]){background:#765a36;border-color:#765a36;color:#fff8eb}
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss],
+html[data-theme="dark"] .game-panel .game-result[data-outcome="lost"] .result-actions [data-result-dismiss]{background:#fbf5e7;border-color:#baa47f;color:#59452f}
+html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]:hover{background:#e8dbc1;color:#49351f}

@@ -1,7 +1,7 @@
 import {sound} from './puzzle-audio.js';
 export function createGameResult(host,{restart,next}){
  const panel=host.closest('.game-panel'),overlay=document.createElement('div');overlay.className='game-result';overlay.hidden=true;
- overlay.innerHTML='<div class="result-confetti" aria-hidden="true">'+Array.from({length:20},(_,i)=>'<i style="--i:'+i+'"></i>').join('')+'</div><div class="result-card"><div class="result-art" aria-hidden="true"></div><h3></h3><p></p><div class="result-actions"><button type="button" data-result-retry>Chơi lại</button><button type="button" data-result-next>Màn tiếp theo →</button><button type="button" data-result-dismiss>Xem lại bàn chơi</button></div></div>';
+ overlay.innerHTML='<div class="result-confetti" aria-hidden="true">'+Array.from({length:20},(_,i)=>'<i style="--i:'+i+'"></i>').join('')+'</div><div class="result-card"><div class="result-art" aria-hidden="true"></div><h3></h3><p></p><div class="result-actions"><button type="button" data-result-retry>Chơi lại</button><button type="button" data-result-next>Màn tiếp theo →</button><button type="button" data-result-dismiss>Xem lại màn chơi</button></div></div>';
  overlay.setAttribute('role','region');overlay.setAttribute('aria-label','Kết quả trò chơi');host.append(overlay);
  let timer,previousFocus;
  const clear=()=>{clearTimeout(timer);overlay.hidden=true;for(const el of host.children)if(el!==overlay)el.inert=false;};
