@@ -985,7 +985,9 @@ html[data-theme="dark"] :is(#game-river,#game-water){background:#fbf5e7;border-c
 .soko-cell.player-up{background-position:14.285714% 33.333333%}
 .soko-cell.player-left{background-position:28.571429% 33.333333%}
 .soko-cell.player-right{background-position:42.857143% 33.333333%}
-.soko-cell.player.goal::after{content:'';position:absolute;inset:4%;border:2px solid #dc2626;border-radius:50%;pointer-events:none}
+.soko-cell.player.goal::after{content:'';position:absolute;inset:4%;border:2px solid #c66d65;border-radius:50%;pointer-events:none}
+html[data-theme="dark"] .soko-cell{background-image:url('sokoban-warm.svg')}
+html[data-theme="dark"] .soko-cell.player.goal::after{border-color:#9f654b}
 #soko-board:focus-visible{outline:2px solid #886646;outline-offset:4px}
 .nim-board{width:min(100%,620px);display:grid;gap:14px}
 .nim-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;min-height:58px}
