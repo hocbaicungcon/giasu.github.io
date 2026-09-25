@@ -4,7 +4,7 @@ import {sound,stopSounds} from './puzzle-audio.js';
 const $=s=>document.querySelector(s),ACTION_MS=2200;let flowFrame,soundTimer,flowEndTimer,stopFlow=()=>{};
 $('.water-world').style.setProperty('--pour-duration',(ACTION_MS-450)+'ms');
 let state,steps,selected=null,done=false,busy=false,levelIndex=0,timer;
-const waterJump=document.createElement('select');waterJump.id='water-jump';waterJump.setAttribute('aria-label','Chọn màn Đong nước');waterJump.replaceChildren(...waterLevels.map((_,index)=>{const option=document.createElement('option');option.value=index;option.textContent=`Màn ${index+1}`;return option;}));$('.water-world .scene-tools').insertBefore(waterJump,$('#water-next'));
+const waterJump=document.createElement('select');waterJump.id='water-jump';waterJump.setAttribute('aria-label','Chọn màn Đong nước');waterJump.replaceChildren(...waterLevels.map((_,index)=>{const option=document.createElement('option');option.value=index;option.textContent=`${index+1} ${'★'.repeat(Math.min(5,1+Math.floor(index/Math.max(1,waterLevels.length/5))))}`;return option;}));$('.water-world .scene-tools').insertBefore(waterJump,$('#water-next'));
 try{levelIndex=Math.min(waterLevels.length-1,Math.max(0,parseInt(localStorage.getItem('water-level'),10)||0));}catch{}
 const level=()=>waterLevels[levelIndex];
 const resultScene=createGameResult($('.water-world'),{restart:startWater,next:()=>{if(levelIndex<waterLevels.length-1){levelIndex++;startWater();}}});
