@@ -1443,3 +1443,273 @@ html[data-theme="dark"] .einstein-slot.filled{background:#f2e6cf}
 html[data-theme="dark"] .einstein-slot.given{background:#e5d4af}
 html[data-theme="dark"] .game-panel .einstein-modes button[aria-pressed="true"]{background:#dfc69a;border-color:#9b7549;color:#62482d}
 @media(max-width:560px){.einstein-slot{grid-template-columns:repeat(2,minmax(0,1fr));padding:2px;min-height:84px}.game-panel button.einstein-candidate{min-height:26px}.einstein-candidate svg{width:24px;height:24px}.game-panel .einstein-toolbar button{width:35px;min-width:35px;height:38px;padding:7px}.einstein-slot.filled .einstein-candidate{min-height:76px}}
+
+.einstein-clue[role="button"]{cursor:pointer;touch-action:manipulation}
+.einstein-clue.active-clue,.einstein-clue:focus-visible{outline:2px solid #438675;outline-offset:-2px;background:#d9eee2}
+.game-panel button.einstein-candidate.clue-related,.einstein-house.clue-related{background:#d0e9d9;box-shadow:inset 0 0 0 2px #4e917a;border-radius:4px}
+.einstein-slot{position:relative}
+.einstein-conflict{position:absolute;right:1px;top:1px;display:grid;place-items:center;width:16px;height:16px;border-radius:50%;background:#af513b;color:#fff;font:bold 12px sans-serif;pointer-events:none}
+html[data-theme="dark"] .einstein-clue.active-clue,html[data-theme="dark"] .einstein-clue:focus-visible{background:#e4cca2;outline-color:#9b7549}
+html[data-theme="dark"] .game-panel button.einstein-candidate.clue-related,html[data-theme="dark"] .einstein-house.clue-related{background:#ead2a6;box-shadow:inset 0 0 0 2px #a17a45}
+/* Ultra-compact Einstein clue strip. */
+.einstein-clues{padding:2px;border-radius:7px}
+.einstein-clues ol{grid-template-columns:repeat(5,minmax(0,1fr));gap:2px}
+.einstein-clue{min-height:28px;padding:1px;gap:0;border-radius:4px;border-width:1px}
+.einstein-clue-image svg,.einstein-clue.between svg{width:21px;height:21px}
+.einstein-clue b{font-size:.68rem;line-height:.8}
+.einstein-clue .einstein-number{width:20px;height:20px;font-size:.7rem}
+@media(max-width:759px){.einstein-clues ol{grid-template-columns:repeat(4,minmax(0,1fr));gap:2px}.einstein-clue{min-height:26px}.einstein-clue-image svg,.einstein-clue.between svg{width:19px;height:19px}.einstein-clue b{font-size:.62rem}.einstein-clue .einstein-number{width:18px;height:18px;font-size:.62rem}}
+@media(max-width:420px){.einstein-clues ol{grid-template-columns:repeat(3,minmax(0,1fr))}.einstein-clue-image svg,.einstein-clue.between svg{width:18px;height:18px}}
+/* Einstein uses a single reading flow: clues first, answer grid second. */
+.einstein-scene{display:flex;flex-direction:column;align-items:stretch;gap:6px}
+.einstein-level{order:1}
+.einstein-progress{order:2;align-self:center}
+.einstein-clues{order:3;width:100%;box-sizing:border-box}
+.einstein-scroll{order:4;width:100%}
+.einstein-toolbar{order:5}
+@media(min-width:760px){.einstein-clues ol{grid-template-columns:repeat(5,minmax(0,1fr))}.einstein-board{width:100%}}
+/* Make the replay action easy to see on both themes. */
+.game-panel .result-actions [data-result-retry]{background:#176f68;color:#fff;font-weight:800;border:2px solid #0f554f;box-shadow:0 3px 0 #0f554f;min-width:116px;text-shadow:0 1px 1px #123d39}
+.game-panel .result-actions [data-result-retry]::before{content:'↻';margin-right:6px;font-size:1.15em}
+.game-panel .result-actions [data-result-retry]:hover,.game-panel .result-actions [data-result-retry]:focus-visible{background:#0f5a55;color:#fff;transform:translateY(-1px)}
+html[data-theme="dark"] .game-panel .result-actions [data-result-retry]{background:#8d6735;color:#fff8e9;border-color:#654722;box-shadow:0 3px 0 #654722}
+html[data-theme="dark"] .game-panel .result-actions [data-result-retry]:hover,html[data-theme="dark"] .game-panel .result-actions [data-result-retry]:focus-visible{background:#a47a41;color:#fff8e9}
+/* Equal navigation controls for the logic games. */
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level{display:grid;grid-template-columns:40px minmax(90px,1fr) 40px 86px auto;gap:6px;align-items:center}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level>button:not(.game-sound),
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level .restart-sound>button{width:40px;min-width:40px;height:40px;min-height:40px;padding:0;display:grid;place-items:center}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level strong{min-width:0}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:86px;min-width:86px;height:40px;min-height:40px}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .restart-sound{display:flex;gap:6px}
+@media(max-width:520px){:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level{grid-template-columns:36px minmax(0,1fr) 36px 78px auto;gap:4px;padding:6px}:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level>button:not(.game-sound),:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level .restart-sound>button{width:36px;min-width:36px;height:36px;min-height:36px}:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:78px;min-width:78px;height:36px;min-height:36px}}
+.einstein-clue.processed{opacity:.38;filter:saturate(.55)}
+.einstein-clue.processed::after{content:'✓';font-weight:800;color:#438675;position:absolute;right:4px;top:2px}
+.einstein-clue{position:relative}
+html[data-theme="dark"] .einstein-clue.processed{opacity:.42}
+
+/* Strong visual separation between Einstein icon families. */
+.game-panel button.einstein-candidate{border:1px solid transparent;border-radius:7px;background:#f1f6f3;min-height:31px}
+.game-panel button.einstein-candidate[data-group="color"]{background:#fff2c8;color:#9b6b18}
+.game-panel button.einstein-candidate[data-group="nation"]{background:#e4eff8;color:#315f8f}
+.game-panel button.einstein-candidate[data-group="drink"]{background:#f8eadb;color:#915d3e}
+.game-panel button.einstein-candidate[data-group="pet"]{background:#f9e5eb;color:#9d4f6b}
+.game-panel button.einstein-candidate[data-group="hobby"]{background:#e8e3f7;color:#67518e}
+.game-panel button.einstein-candidate svg{width:30px;height:30px;stroke-width:3}
+.game-panel button.einstein-candidate:not(:disabled):hover,.game-panel button.einstein-candidate:focus-visible{filter:brightness(.96);border-color:currentColor}
+html[data-theme="dark"] .game-panel button.einstein-candidate{background:#f2e7d0}
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="color"]{background:#f2dca0;color:#76551e}
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="nation"]{background:#d2dfeb;color:#315474}
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="drink"]{background:#ead4be;color:#754a35}
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="pet"]{background:#ebced8;color:#7e3e56}
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="hobby"]{background:#d9d0eb;color:#544274}
+@media(max-width:560px){.game-panel button.einstein-candidate svg{width:27px;height:27px}}
+/* Einstein controls stay beside level navigation. */
+.einstein-scene{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:6px}
+.einstein-level{grid-column:1;grid-row:1;width:auto}
+.einstein-toolbar{grid-column:2;grid-row:1;justify-content:flex-end;margin:0;flex-wrap:nowrap}
+.einstein-progress{grid-column:1/-1;grid-row:2}
+.einstein-clues{grid-column:1/-1;grid-row:3}
+.einstein-scroll{grid-column:1/-1;grid-row:4}
+.game-panel .einstein-toolbar .einstein-modes{display:none}
+.game-panel .einstein-toolbar #einstein-reset{background:#176f68;color:#fff;border:2px solid #0f554f;box-shadow:0 2px 0 #0f554f;border-radius:9px}
+.game-panel .einstein-toolbar #einstein-reset:hover,.game-panel .einstein-toolbar #einstein-reset:focus-visible{background:#0f5a55;color:#fff;transform:translateY(-1px)}
+html[data-theme="dark"] .game-panel .einstein-toolbar #einstein-reset{background:#8d6735;color:#fff8e9;border-color:#654722;box-shadow:0 2px 0 #654722}
+html[data-theme="dark"] .game-panel .einstein-toolbar #einstein-reset:hover,html[data-theme="dark"] .game-panel .einstein-toolbar #einstein-reset:focus-visible{background:#a47a41;color:#fff8e9}
+@media(max-width:620px){.einstein-scene{grid-template-columns:1fr;gap:4px}.einstein-level,.einstein-toolbar,.einstein-progress,.einstein-clues,.einstein-scroll{grid-column:1}.einstein-level{grid-row:1}.einstein-toolbar{grid-row:2;justify-content:center}.einstein-progress{grid-row:3}.einstein-clues{grid-row:4}.einstein-scroll{grid-row:5}}
+.game-panel .einstein-toolbar .einstein-modes{display:flex}
+/* Replay keeps the original neutral toolbar treatment; only the icon is emphasized. */
+.game-panel .einstein-toolbar #einstein-reset{background:transparent;color:inherit;border:1px solid transparent;box-shadow:none;transform:none}
+.game-panel .einstein-toolbar #einstein-reset svg{width:25px;height:25px;stroke-width:2.8}
+.game-panel .einstein-toolbar #einstein-reset:hover,.game-panel .einstein-toolbar #einstein-reset:focus-visible{background:#dcefed;color:inherit;border-color:#bddbd7;transform:none}
+html[data-theme="dark"] .game-panel .einstein-toolbar #einstein-reset{background:transparent;color:inherit;border-color:transparent;box-shadow:none}
+html[data-theme="dark"] .game-panel .einstein-toolbar #einstein-reset:hover,html[data-theme="dark"] .game-panel .einstein-toolbar #einstein-reset:focus-visible{background:#ead7b3;color:inherit;border-color:#c4a878}
+.game-panel .einstein-toolbar #einstein-reset svg{display:none}
+.game-panel .einstein-toolbar #einstein-reset::before{content:'↻';font-size:1.45rem;line-height:1;font-weight:700}
+.game-panel .einstein-toolbar #einstein-reset::before{font-size:1.25rem;font-weight:400}
+
+.einstein-clue[data-tip]::after{content:attr(data-tip);position:absolute;z-index:20;left:50%;bottom:calc(100% + 6px);width:max-content;max-width:min(320px,80vw);padding:6px 9px;border-radius:7px;background:#244f4b;color:#fff;font-size:.78rem;font-weight:600;line-height:1.35;text-align:left;opacity:0;pointer-events:none;transform:translate(-50%,4px);transition:opacity .15s ease,transform .15s ease;box-shadow:0 3px 12px #183c3833}
+.einstein-clue[data-tip]:hover::after,.einstein-clue[data-tip]:focus-visible::after{opacity:1;transform:translate(-50%,0)}
+html[data-theme="dark"] .einstein-clue[data-tip]::after{background:#5d492f;color:#fff8e9}
+@media(max-width:560px){.einstein-clue[data-tip]::after{display:none}}
+
+.game-panel button.hitori-cell.unsure{background:#e9f1ee;color:#527174;border-color:#c6d9d3}
+.game-panel button.hitori-cell.safe{background:#fff;color:#315d64;border-color:#8fb9b0}
+.game-panel button.hitori-cell.black{background:#376c73;color:#fff;border-color:#376c73}
+html[data-theme="dark"] .game-panel button.hitori-cell.unsure{background:#dfd0b2;color:#806b4b;border-color:#c3ac83}
+html[data-theme="dark"] .game-panel button.hitori-cell.safe{background:#fff8e8;color:#51422e;border-color:#bda985}
+/* Einstein icons stay transparent; group colors are carried by the artwork. */
+.game-panel button.einstein-candidate,
+.game-panel button.einstein-candidate[data-group="color"],
+.game-panel button.einstein-candidate[data-group="nation"],
+.game-panel button.einstein-candidate[data-group="drink"],
+.game-panel button.einstein-candidate[data-group="pet"],
+.game-panel button.einstein-candidate[data-group="hobby"]{background:transparent;border-color:transparent;box-shadow:none}
+.game-panel button.einstein-candidate:not(:disabled):hover,.game-panel button.einstein-candidate:focus-visible{background:transparent;border-color:transparent;filter:brightness(.9)}
+html[data-theme="dark"] .game-panel button.einstein-candidate,
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="color"],
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="nation"],
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="drink"],
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="pet"],
+html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="hobby"]{background:transparent;border-color:transparent;box-shadow:none}
+/* Give level selectors enough room for their screen labels. */
+:is(#nonogram-scene,#kakuro-scene,#lightup-scene,#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:150px;min-width:150px;max-width:150px}
+@media(max-width:520px){:is(#nonogram-scene,#kakuro-scene,#lightup-scene,#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:118px;min-width:118px;max-width:118px}}
+/* Keep the selector in its own grid track so replay/sound never overlap it. */
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level{grid-template-columns:40px minmax(70px,1fr) 40px minmax(100px,150px) auto;overflow:visible}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:100%;min-width:0;max-width:none}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level .restart-sound{min-width:max-content}
+@media(max-width:520px){:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level{grid-template-columns:34px minmax(48px,1fr) 34px 104px auto;gap:3px}:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:104px;min-width:104px}}
+/* Keep game tabs in even rows with a centered final row. */
+.game-tabs{display:flex;justify-content:center;gap:6px;align-items:stretch}
+.game-tabs button{flex:0 1 calc(20% - 5px);min-width:0;text-align:center}
+@media(max-width:760px){.game-tabs button{flex-basis:calc(25% - 5px);padding-left:5px;padding-right:5px;font-size:.78rem}}
+@media(max-width:480px){.game-tabs button{flex-basis:calc(33.333% - 4px);font-size:.74rem}}
+/* Compact game tabs: seven columns keep the desktop list within three rows. */
+.game-tabs{gap:4px}
+.game-tabs button{flex-basis:calc(14.285% - 4px);padding:5px 6px;font-size:.74rem;line-height:1.15}
+@media(max-width:760px){.game-tabs button{flex-basis:calc(20% - 4px);padding:5px 4px;font-size:.72rem}}
+@media(max-width:480px){.game-tabs button{flex-basis:calc(33.333% - 3px);font-size:.7rem}}
+
+#game-numbers .number-board{grid-template-columns:repeat(var(--number-size,4),minmax(0,1fr));max-width:500px}
+/* Minesweeper: square cells, explicit states, and no shared button padding. */
+#game-mines{--mine-cover:#cde4df;--mine-edge:#86aaa2;--mine-open:#f5faf7;--mine-ink:#285c60;--mine-flag:#f3d790;--mine-hit:#efb5a5}
+html[data-theme="dark"] #game-mines{--mine-cover:#dbc7a4;--mine-edge:#ad9167;--mine-open:#fff2d9;--mine-ink:#614a2e;--mine-flag:#e6be70;--mine-hit:#e4ae8f}
+#game-mines .mines-board{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));width:min(100%,360px);gap:3px;margin:12px auto;padding:5px;background:var(--mine-edge);border-radius:8px;user-select:none;-webkit-user-select:none}
+#game-mines .mines-board button.mine-cell{display:grid;place-items:center;width:100%;height:auto;aspect-ratio:1;min-width:0;min-height:0;margin:0;padding:0;line-height:1;border:1px solid var(--mine-edge);border-radius:3px;background:var(--mine-cover);color:var(--mine-ink);font-family:Arial,sans-serif;font-size:clamp(.85rem,3.5vw,1.15rem);font-weight:700;box-shadow:inset 0 2px 0 #ffffff60;touch-action:manipulation;-webkit-touch-callout:none}
+#game-mines .mines-board button.open{background:var(--mine-open);box-shadow:none}
+#game-mines .mines-board button.flag{background:var(--mine-flag)}
+#game-mines .mines-board button.revealed-mine{background:var(--mine-open);color:#993b31}
+#game-mines .mines-board button.mine-hit{background:var(--mine-hit);color:#802b23}
+#game-mines .mines-board button:disabled{opacity:1}
+#game-mines .mines-board button:focus-visible{outline:2px solid var(--mine-ink);outline-offset:-2px}
+#game-mines .mines-board button.holding{box-shadow:inset 0 0 0 2px var(--mine-ink)}
+#game-mines .mines-board button[data-count="1"]{color:#32669b}
+#game-mines .mines-board button[data-count="2"]{color:#30734b}
+#game-mines .mines-board button[data-count="3"]{color:#ab4835}
+#game-mines .mines-board button[data-count="4"]{color:#77518b}
+#game-mines .new-puzzle-bar{flex-wrap:wrap}
+#game-mines .new-puzzle-bar [aria-pressed="true"]{background:var(--mine-flag);color:var(--mine-ink);border-color:var(--mine-edge)}
+#game-mines .mines-toolbar{display:flex;justify-content:center;align-items:center;gap:6px;width:min(100%,420px);margin:12px auto 0;padding:7px;border:1px solid var(--mine-edge);border-radius:12px;background:var(--mine-open)}
+#game-mines .mines-toolbar button{position:static;display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;min-width:40px;min-height:40px;margin:0;padding:0;border:1px solid var(--mine-edge);border-radius:8px;background:var(--mine-cover);color:var(--mine-ink);box-shadow:none;line-height:1}
+#game-mines .mines-toolbar #mines-new{flex:1 1 auto;width:auto;padding:0 10px;font-size:.85rem}
+#game-mines .mines-toolbar .game-sound svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#game-mines #mines-status{font-size:.85rem;margin:8px 0;min-height:1.6em}
+#game-mines .mines-board{grid-template-columns:repeat(var(--mine-size,9),minmax(0,1fr));width:min(100%,calc(var(--mine-size,9)*40px));gap:2px}
+#game-mines .mines-toolbar{width:min(100%,640px);flex-wrap:wrap}
+#game-mines .mines-toolbar #mines-size{flex:1 1 150px;width:auto;min-width:0;max-width:100%;height:40px;min-height:40px;margin:0;padding:4px 7px;border:1px solid var(--mine-edge);border-radius:8px;background:var(--mine-open);color:var(--mine-ink);font-size:.8rem}
+@media(max-width:520px){#game-mines .mines-toolbar #mines-size{flex-basis:100%}#game-mines .mines-board[data-size="12"] button.mine-cell{font-size:.8rem}#game-mines .mines-board[data-size="16"]{gap:1px;padding:3px}#game-mines .mines-board[data-size="16"] button.mine-cell{font-size:.65rem;border-radius:2px}}
+/* Maze: separate the player marker from the corridor background. */
+#game-maze{--maze-wall:#376c73;--maze-floor:#edf7f2;--maze-dot:#d87529;--maze-goal:#286b4a;--maze-edge:#aacdc4}
+html[data-theme="dark"] #game-maze{--maze-wall:#806443;--maze-floor:#fff0d2;--maze-dot:#b65a23;--maze-goal:#705123;--maze-edge:#c3a775}
+#game-maze .maze-board{display:grid;grid-template-columns:repeat(var(--maze-cols,9),minmax(0,1fr));width:min(100%,460px);margin:12px auto;gap:0;overflow:hidden;border-radius:8px;touch-action:none;user-select:none;background:var(--maze-floor)}
+#game-maze .maze-board .maze-cell{position:relative;display:grid;place-items:center;width:auto;height:auto;min-width:0;aspect-ratio:1;border-radius:0;font-family:Arial,sans-serif;font-size:clamp(.8rem,3vw,1.3rem);line-height:1}
+#game-maze .maze-board .wall{background:var(--maze-wall)}
+#game-maze .maze-board .floor{background:var(--maze-floor)}
+#game-maze .maze-board .goal{color:var(--maze-goal);font-weight:700}
+#game-maze .maze-board .player::after{content:'';position:absolute;width:60%;height:60%;border-radius:50%;background:var(--maze-dot);border:2px solid #fff4cf;box-shadow:0 0 7px #d9a443aa}
+#game-maze .maze-board:focus-visible{outline:2px solid var(--maze-goal);outline-offset:3px}
+#game-maze .maze-toolbar{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap;width:min(100%,460px);margin:12px auto 0;padding:7px;border:1px solid var(--maze-edge);border-radius:12px;background:var(--maze-floor)}
+#game-maze .maze-toolbar button,#game-maze .maze-controls button{position:static;display:grid;place-items:center;flex:0 0 40px;width:40px;height:40px;min-width:40px;min-height:40px;padding:0;margin:0;border:1px solid var(--maze-edge);border-radius:8px;background:var(--maze-floor);color:var(--maze-goal);line-height:1}
+#game-maze .maze-toolbar #maze-new{flex:1 1 auto;width:auto;padding:0 10px;font-size:.85rem}
+#game-maze .maze-toolbar select{flex:1 1 120px;min-width:0;max-width:100%;height:40px;margin:0;padding:4px 7px;background:var(--maze-floor);color:var(--maze-goal);border:1px solid var(--maze-edge);border-radius:8px;font-size:.8rem}
+#game-maze .maze-toolbar .game-sound svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+#game-maze #maze-status{font-size:.85rem;margin:8px 0;min-height:1.6em}
+@media(max-width:420px){#game-maze .maze-toolbar select{flex-basis:100%}}
+#game-mastermind{--master-paper:#f1f8f4;--master-line:#a3c6bd;--master-ink:#305f60;--master-accent:#31766d}
+html[data-theme="dark"] #game-mastermind{--master-paper:#fff0d5;--master-line:#c5ab82;--master-ink:#644d31;--master-accent:#876036}
+#game-mastermind .master-toolbar{width:min(100%,440px);margin:12px auto;gap:6px;padding:7px;border:1px solid var(--master-line);border-radius:12px;background:var(--master-paper)}
+#game-mastermind .master-toolbar button{position:static;display:grid;place-items:center;min-width:40px;height:40px;margin:0;padding:0;border:1px solid var(--master-line);border-radius:8px;background:var(--master-paper);color:var(--master-ink)}
+#game-mastermind .master-toolbar #mastermind-new{flex:1;padding:0 10px;font-size:.85rem}
+#game-mastermind .master-toolbar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+#game-mastermind .mastermind-board{width:min(100%,440px);margin:12px auto;gap:5px;justify-content:stretch}
+#game-mastermind .master-row{display:grid;grid-template-columns:20px repeat(4,minmax(0,1fr)) 76px;align-items:center;gap:5px;padding:6px;border:1px solid var(--master-line);border-radius:8px;background:var(--master-paper)}
+#game-mastermind .master-turn,#game-mastermind .master-feedback{color:var(--master-ink);font-family:Arial,sans-serif;font-size:.85rem}
+#game-mastermind .master-feedback{letter-spacing:1px;white-space:nowrap}
+#game-mastermind .master-draft,#game-mastermind .mastermind-palette,#game-mastermind .master-actions,#game-mastermind #mastermind-answer{display:flex;justify-content:center;align-items:center;gap:7px;margin:12px auto;flex-wrap:wrap}
+#game-mastermind #mastermind-answer[hidden]{display:none}
+#game-mastermind .master-peg{display:grid;place-items:center;flex:none;width:36px;height:36px;min-width:0;min-height:0;margin:auto;padding:0;border:2px solid #ffffffaa;border-radius:50%;box-shadow:none;font:700 14px/1 Arial,sans-serif;color:#fff;background:var(--peg-color);touch-action:manipulation}
+#game-mastermind button.master-peg{width:40px;height:40px;margin:0}
+#game-mastermind .master-peg[data-color="0"]{--peg-color:#b84040}
+#game-mastermind .master-peg[data-color="1"]{--peg-color:#efc553;color:#493712}
+#game-mastermind .master-peg[data-color="2"]{--peg-color:#336fa2}
+#game-mastermind .master-peg[data-color="3"]{--peg-color:#398051}
+#game-mastermind .master-peg[data-color="4"]{--peg-color:#78529d}
+#game-mastermind .master-peg[data-color="5"]{--peg-color:#c96a96;color:#321b29}
+html[data-theme="dark"] #game-mastermind .master-peg[data-color="0"]{--peg-color:#a94d3d}
+html[data-theme="dark"] #game-mastermind .master-peg[data-color="1"]{--peg-color:#dbb55e}
+html[data-theme="dark"] #game-mastermind .master-peg[data-color="2"]{--peg-color:#4b748f}
+html[data-theme="dark"] #game-mastermind .master-peg[data-color="3"]{--peg-color:#597d4a}
+html[data-theme="dark"] #game-mastermind .master-peg[data-color="4"]{--peg-color:#796386}
+html[data-theme="dark"] #game-mastermind .master-peg[data-color="5"]{--peg-color:#ca8b96}
+#game-mastermind .master-peg[data-color="empty"]{background:var(--master-paper);color:var(--master-ink);border-color:var(--master-line)}
+#game-mastermind .master-draft button[aria-pressed="true"]{outline:2px solid var(--master-accent);outline-offset:2px}
+#game-mastermind .master-actions button{background:var(--master-paper);color:var(--master-ink);border:1px solid var(--master-line);min-height:40px;padding:7px 12px}
+#game-mastermind .master-actions #mastermind-submit{background:var(--master-accent);color:#fff}
+#game-mastermind #mastermind-status{font-size:.85rem;min-height:2em}
+@media(max-width:420px){#game-mastermind .master-row{grid-template-columns:16px repeat(4,minmax(0,1fr)) 64px;gap:3px;padding:4px}#game-mastermind .master-row .master-peg{width:28px;height:28px}#game-mastermind .master-feedback{font-size:.72rem;letter-spacing:0}}
+/* Mastermind: keep the current guess distinct from submitted turns. */
+#game-mastermind .master-entry{width:min(100%,440px);margin:12px auto;padding:12px;border:1px solid var(--master-line);border-radius:14px;background:var(--master-paper)}
+#game-mastermind .master-entry[hidden],#game-mastermind .master-legend[hidden],#game-mastermind .mastermind-board[hidden]{display:none}
+#game-mastermind .master-prompt{margin:0 0 12px;min-height:1.5em;font-size:.85rem;font-weight:700;color:var(--master-ink)}
+#game-mastermind .master-draft{gap:14px;margin:10px auto 16px}
+#game-mastermind .master-draft button.master-peg{width:48px;height:48px;font-size:18px}
+#game-mastermind .master-draft button[aria-pressed="true"]{outline-width:3px;outline-offset:3px;box-shadow:0 0 0 6px var(--master-line)}
+#game-mastermind .master-palette-label{margin:10px 0 6px;font-size:.75rem;color:var(--master-ink)}
+#game-mastermind .mastermind-palette{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;max-width:100%;margin:8px auto}
+#game-mastermind .master-color-option{display:grid;justify-items:center;gap:5px;min-width:0}
+#game-mastermind .master-color-option>span{font-size:.65rem;line-height:1.2;color:var(--master-ink);text-align:center}
+#game-mastermind .master-actions{margin:16px 0 0;display:grid;grid-template-columns:1fr 2fr}
+#game-mastermind .master-actions button{margin:0}
+#game-mastermind .master-row{grid-template-columns:20px repeat(4,minmax(0,1fr)) 40px}
+#game-mastermind .master-feedback{display:grid;grid-template-columns:repeat(2,10px);justify-content:center;gap:4px}
+#game-mastermind .master-dot{display:inline-block;width:10px;height:10px;box-sizing:border-box;border:2px solid var(--master-ink);border-radius:50%;background:transparent}
+#game-mastermind .master-dot.exact{background:var(--master-ink)}
+#game-mastermind .master-dot.absent{border-color:var(--master-line);opacity:.45}
+#game-mastermind .master-legend{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 14px;margin:8px auto;color:var(--master-ink);font-size:.72rem}
+#game-mastermind .master-legend>span{display:inline-flex;align-items:center;gap:5px}
+#game-mastermind #mastermind-answer{padding:12px;background:var(--master-paper);border:1px solid var(--master-line);border-radius:12px;max-width:440px;color:var(--master-ink)}
+#game-mastermind #mastermind-answer .master-peg{margin:0}
+@media(max-width:420px){#game-mastermind .master-entry{padding:9px}#game-mastermind .master-color-option button.master-peg{width:34px;height:34px}#game-mastermind .master-draft{gap:12px}#game-mastermind .master-draft button.master-peg{width:42px;height:42px}}
+#game-maze .maze-board:is([data-size="21"],[data-size="25"]){width:min(100%,600px)}
+#game-maze .maze-board:is([data-size="21"],[data-size="25"]) .player::after{width:74%;height:74%;border-width:1px;box-shadow:0 0 4px #d9a44388}
+#game-maze .maze-board:is([data-size="21"],[data-size="25"]) .goal{font-size:clamp(.6rem,2.5vw,1rem)}
+/* Rush Hour parking lot and illustrated vehicles. */
+#game-rush{--rush-floor:#e6f0ec;--rush-line:#b8d0c7;--rush-edge:#4c7b72;--rush-paper:#f6fbf8;--rush-ink:#315d55;--vehicle-edge:#385d60}
+html[data-theme="dark"] #game-rush{--rush-floor:#eadbbc;--rush-line:#d1bb95;--rush-edge:#927044;--rush-paper:#fff1d6;--rush-ink:#665034;--vehicle-edge:#655444}
+#game-rush .rush-parking{position:relative;width:min(calc(100% - 58px),440px);margin:16px auto;padding:0;border:5px solid var(--rush-edge);border-radius:12px;background:var(--rush-floor);overflow:visible}
+#game-rush .rush-parking::after{content:'';position:absolute;z-index:1;left:calc(100% + 1px);top:calc(var(--rush-exit-row)*100%/var(--rush-size));width:10px;height:calc(100%/var(--rush-size));background:var(--rush-floor);pointer-events:none}
+#game-rush .rush-board{position:relative;z-index:2;display:block;box-sizing:border-box;width:100%;height:auto;aspect-ratio:1;border:0;border-radius:6px;margin:0;overflow:visible;touch-action:none;user-select:none;background-color:var(--rush-floor);background-image:linear-gradient(to right,var(--rush-line) 1px,transparent 1px),linear-gradient(to bottom,var(--rush-line) 1px,transparent 1px);background-size:calc(100%/var(--rush-size)) calc(100%/var(--rush-size))}
+#game-rush .rush-exit{position:absolute;z-index:0;left:100%;top:calc(var(--rush-exit-row)*100%/var(--rush-size));height:calc(100%/var(--rush-size));width:calc(100%/var(--rush-size) + 44px);display:grid;grid-template-columns:1fr 28px;align-items:center;background:var(--rush-floor);color:var(--rush-ink);font-size:1.3rem;font-weight:700;pointer-events:none;border-block:2px dashed var(--rush-edge)}
+#game-rush .rush-exit i{display:block;height:2px;background:repeating-linear-gradient(90deg,var(--rush-edge) 0 9px,transparent 9px 15px)}
+#game-rush .rush-exit b{font:700 1.3rem/1 Arial,sans-serif}
+#game-rush .rush-board button.rush-car{position:absolute;z-index:3;display:block;left:calc(var(--x)*100%/var(--rush-size));top:calc(var(--y)*100%/var(--rush-size));width:calc(var(--w)*100%/var(--rush-size));height:calc(var(--h)*100%/var(--rush-size));min-width:0;min-height:0;margin:0;padding:2px;border:0;border-radius:8px;background:transparent;color:inherit;box-shadow:none;touch-action:none;cursor:grab;transition:left .18s ease,top .18s ease}
+#game-rush .rush-car svg{display:block;width:100%;height:100%;pointer-events:none}
+#game-rush .rush-car[data-car="0"]{--vehicle:#c95050}
+#game-rush .rush-car[data-car="1"]{--vehicle:#448daf}
+#game-rush .rush-car[data-car="2"]{--vehicle:#d7a33f}
+#game-rush .rush-car[data-car="3"]{--vehicle:#559976}
+#game-rush .rush-car[data-car="4"]{--vehicle:#9575b1}
+#game-rush .rush-car[data-car="5"]{--vehicle:#cd8660}
+html[data-theme="dark"] #game-rush .rush-car[data-car="0"]{--vehicle:#b85d47}
+html[data-theme="dark"] #game-rush .rush-car[data-car="1"]{--vehicle:#648c97}
+html[data-theme="dark"] #game-rush .rush-car[data-car="2"]{--vehicle:#bb944b}
+html[data-theme="dark"] #game-rush .rush-car[data-car="3"]{--vehicle:#7c9568}
+html[data-theme="dark"] #game-rush .rush-car[data-car="4"]{--vehicle:#967e98}
+html[data-theme="dark"] #game-rush .rush-car[data-car="5"]{--vehicle:#b88762}
+#game-rush .rush-board button.rush-car[aria-pressed="true"]{background:#ffffff50;outline:2px dashed var(--rush-edge);outline-offset:-3px}
+#game-rush .rush-board button.rush-car:disabled{opacity:1;cursor:default}
+#game-rush .rush-toolbar{display:flex;gap:6px;flex-wrap:wrap;width:min(100%,500px);margin:12px auto;padding:7px;border:1px solid var(--rush-line);border-radius:12px;background:var(--rush-paper)}
+#game-rush .rush-toolbar button,#game-rush .rush-controls button{position:static;display:grid;place-items:center;width:40px;height:40px;min-width:40px;min-height:40px;margin:0;padding:0;border:1px solid var(--rush-line);border-radius:8px;background:var(--rush-paper);color:var(--rush-ink)}
+#game-rush .rush-toolbar #rush-new{flex:1;width:auto;font-size:.85rem}
+#game-rush .rush-toolbar #rush-size{flex:1 1 135px;min-width:0;max-width:100%;height:40px;margin:0;padding:4px 7px;border:1px solid var(--rush-line);border-radius:8px;background:var(--rush-paper);color:var(--rush-ink);font-size:.8rem}
+#game-rush .rush-toolbar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+#game-rush .rush-controls{display:flex;justify-content:center;align-items:center;gap:12px;color:var(--rush-ink);font-size:.85rem}
+#game-rush #rush-selected{min-width:80px}
+#game-rush #rush-status{font-size:.85rem;margin:8px 0}
+@media(prefers-reduced-motion:reduce){#game-rush .rush-board button.rush-car{transition:none}}
+@media(max-width:420px){#game-rush .rush-toolbar #rush-size{flex-basis:100%}#game-rush .rush-parking{width:calc(100% - 48px)}}
+/* Extra-compact desktop game tabs: nine per row. */
+.game-tabs button{flex-basis:calc(11.111% - 4px);padding:4px 4px;font-size:.68rem}
+@media(max-width:760px){.game-tabs button{flex-basis:calc(20% - 4px);font-size:.72rem}}
+@media(max-width:480px){.game-tabs button{flex-basis:calc(33.333% - 3px);font-size:.7rem}}
+.new-puzzle-panel{text-align:center}.new-puzzle-bar{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px}.new-puzzle-bar button{min-width:40px;min-height:40px}.mines-board{display:grid;grid-template-columns:repeat(9,32px);justify-content:center;gap:3px}.mine-cell{width:32px;height:32px;padding:0;background:#cde4df;border:1px solid #94bdb7}.mine-cell.open{background:#fff}.mine-cell.flag{background:#f0cd7b}.mine-cell.mine-hit{background:#e4776f}.maze-board{display:grid;grid-template-columns:repeat(7,38px);justify-content:center}.maze-board span{width:38px;height:38px}.maze-board .wall{background:#376c73}.maze-board .floor{background:#e7f2ec}.maze-board .player{background:#e1ae4b;border-radius:50%}.maze-board .goal{background:#67af7e;border-radius:50%}.maze-controls{display:flex;justify-content:center;gap:5px;margin:10px}.mastermind-board{display:grid;gap:5px;justify-content:center;margin:10px}.master-row{display:flex;gap:5px}.master-row i,.mastermind-palette button{width:32px;height:32px;border-radius:50%;border:2px solid #b5cbc4}.mastermind-palette{display:flex;justify-content:center;gap:7px}.mastermind-palette button{padding:0}.rush-board{position:relative;width:300px;height:300px;margin:auto;background:repeating-linear-gradient(90deg,#e7f2ec 0 49px,#a5c4bc 50px),repeating-linear-gradient(0deg,transparent 0 49px,#a5c4bc 50px);border:4px solid #5d8d88}.rush-car{position:absolute;left:calc(var(--x)*50px);top:calc(var(--y)*50px);width:calc(var(--w)*50px);height:calc(var(--h)*50px);background:var(--car);border:4px solid #fff;border-radius:8px;color:#fff;font-weight:800}.rush-car:hover{filter:brightness(1.08)}html[data-theme="dark"] .new-puzzle-panel{background:#f3e7cc}html[data-theme="dark"] .mine-cell{background:#d2bd96;border-color:#a78d63}html[data-theme="dark"] .mine-cell.open,.maze-board .floor{background:#fff0d2}html[data-theme="dark"] .maze-board .wall{background:#82613e}html[data-theme="dark"] .rush-board{background-color:#ead8b6;border-color:#a47b48}
