@@ -1011,7 +1011,7 @@ html[data-theme="dark"] .pent-piece.selected{background:#fbefcf;border-color:#8b
 html[data-theme="dark"] .nim-row .nim-label{color:#695337}
 @media(max-width:620px){.puzzle-scene{padding:12px}.pent-board{width:min(100%,285px)}.pent-pieces{gap:5px}.pent-piece{grid-template-columns:repeat(3,11px);grid-template-rows:repeat(3,11px);padding:5px}.pent-piece i{width:11px;height:11px}.nim-row{gap:5px}.nim-row .nim-label{width:100%;text-align:center}.nim-stick{width:15px;min-width:15px;height:45px}}
 .pent-board{aspect-ratio:5 / var(--rows)}
-.game-tabs{gap:5px;margin:14px 0 18px}
+.game-tabs{justify-content:space-between;gap:5px;margin:14px 0 18px}
 .game-tabs button{min-height:36px;padding:6px 10px;border-radius:8px;font-size:.82rem;line-height:1.2;white-space:nowrap}
 @media(max-width:620px){.game-tabs{gap:4px;margin:12px 0 16px}.game-tabs button{min-height:36px;padding:6px 8px;font-size:.78rem}}
 .pent-piece{grid-template-columns:repeat(5,11px);grid-template-rows:repeat(5,11px)}
@@ -1141,5 +1141,6 @@ html[data-theme="dark"] .game-panel .game-result[data-outcome="lost"] .result-ac
 html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]:hover{background:#e8dbc1;color:#49351f}
 
 /* Nim can have four rows; reserve room for every row and its result screen. */
-#nim-scene{min-height:500px}
+#nim-scene{min-height:500px;justify-content:flex-start}
+#nim-scene .nim-board{margin-block:auto}
 @media(max-width:620px){#nim-scene{min-height:560px}}
