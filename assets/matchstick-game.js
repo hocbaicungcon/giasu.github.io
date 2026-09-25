@@ -47,5 +47,5 @@ $('#match-board').addEventListener('click',event=>{
 $('#match-prev').addEventListener('click',()=>start(level-1));
 $('#match-next').addEventListener('click',()=>start(level+1));
 $('#match-reset').addEventListener('click',()=>start());
-const select=$('#match-jump');select.replaceChildren(...levels.map((entry,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`Màn ${i+1} · ${entry.moves} que`;return option;}));select.addEventListener('change',()=>start(Number(select.value)));
+const select=$('#match-jump');select.replaceChildren(...levels.map((entry,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`${i+1} ${'★'.repeat(Math.min(5,1+Math.floor(i/Math.max(1,levels.length/5))))}`;return option;}));select.addEventListener('change',()=>start(Number(select.value)));
 start();

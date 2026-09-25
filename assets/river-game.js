@@ -5,7 +5,7 @@ const $=s=>document.querySelector(s),names={wolf:'Sói',goat:'Dê',cabbage:'Bắ
 const TRIP_MS=2600;
 $('.river-world').style.setProperty('--trip-duration',TRIP_MS+'ms');
 let state,steps,done,cargo=[],crossing=false,timer,levelIndex=0,stopRow=()=>{};
-const riverJump=document.createElement('select');riverJump.id='river-jump';riverJump.setAttribute('aria-label','Chọn màn Qua sông');riverJump.replaceChildren(...riverLevels.map((_,index)=>{const option=document.createElement('option');option.value=index;option.textContent=`Màn ${index+1}`;return option;}));$('.river-world .scene-tools').insertBefore(riverJump,$('#river-next'));
+const riverJump=document.createElement('select');riverJump.id='river-jump';riverJump.setAttribute('aria-label','Chọn màn Qua sông');riverJump.replaceChildren(...riverLevels.map((_,index)=>{const option=document.createElement('option');option.value=index;option.textContent=`${index+1} ${'★'.repeat(Math.min(5,1+Math.floor(index/Math.max(1,riverLevels.length/5))))}`;return option;}));$('.river-world .scene-tools').insertBefore(riverJump,$('#river-next'));
 $('.river-vessel').addEventListener('transitionend',event=>{if(event.target===$('.river-vessel')&&event.propertyName==='left')stopRow();});
 try{levelIndex=Math.min(riverLevels.length-1,Math.max(0,parseInt(localStorage.getItem('river-level'),10)||0));}catch{}
 const level=()=>riverLevels[levelIndex];

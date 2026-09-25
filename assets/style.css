@@ -1832,6 +1832,12 @@ html[data-theme="dark"] #game-einstein .game-nav .einstein-toolbar>button,html[d
 html[data-theme="dark"] #game-einstein .game-nav .einstein-modes button[aria-pressed="true"]{background:#dfc69a!important;border-color:#9b7549!important;color:#62482d!important;box-shadow:inset 0 0 0 2px #9b7549!important}
 #game-words .game-nav{justify-content:center!important;overflow-x:visible!important}
 @media(max-width:620px){#game-words .game-nav{justify-content:center!important;gap:5px;padding-inline:6px}}
+#game-sudoku .game-nav{justify-content:center!important;gap:5px;overflow-x:visible!important}
+#game-sudoku .game-nav>label.sudoku-difficulty{display:inline-flex;align-items:center;justify-content:center;margin:0}
+#game-sudoku .game-nav>label.sudoku-difficulty select{width:64px;min-width:64px;max-width:64px;text-align:center;padding-inline:5px}
+#game-sudoku .game-nav>button,#game-sudoku .game-nav .restart-sound>button{display:grid;place-items:center;text-align:center;line-height:1}
+@media(max-width:620px){#game-sudoku .game-nav{gap:3px;padding-inline:4px}#game-sudoku .game-nav>label.sudoku-difficulty select{width:58px;min-width:58px;max-width:58px}}
+@media(max-width:620px){.game-panel .game-fullscreen.in-toolbar{display:none!important}}
 html:not([data-theme="dark"]) #game-numbers #number-board:focus-visible{outline:3px solid #5e9d99!important;outline-offset:4px}
 html:not([data-theme="dark"]) #game-numbers .game-nav button:focus-visible,
 html:not([data-theme="dark"]) #game-numbers .game-nav select:focus-visible{outline:2px solid #5e9d99!important;outline-offset:2px}
@@ -1903,3 +1909,8 @@ html[data-theme="dark"] .game-panel .game-result .result-actions button[data-res
 #game-einstein .einstein-clue.processed[data-tip]:hover::after,
 #game-einstein .einstein-clue.processed[data-tip]:focus-visible::after{opacity:1!important;filter:none!important;z-index:200}
 @media(max-width:560px){#game-einstein .einstein-clue[data-tip]::after{display:block;max-width:220px;font-size:.7rem}}
+/* Keep Einstein cells compact and stable when a row becomes fully filled. */
+#game-einstein .einstein-slot{height:64px;min-height:64px;padding:1px;gap:0}
+#game-einstein .einstein-slot.filled{height:64px;min-height:64px}
+#game-einstein .einstein-slot.filled .einstein-candidate{min-height:0;height:100%}
+@media(max-width:560px){#game-einstein .einstein-slot{height:80px;min-height:80px;padding:1px;gap:0}#game-einstein .einstein-slot.filled{height:80px;min-height:80px}}

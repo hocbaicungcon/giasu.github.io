@@ -27,6 +27,6 @@ $('#nonogram-hint').addEventListener('click',()=>{if(finished)return;const index
 $('#nonogram-prev').addEventListener('click',()=>start(level-1));
 $('#nonogram-next').addEventListener('click',()=>start(level+1));
 $('#nonogram-reset').addEventListener('click',()=>start());
-const select=$('#nonogram-jump'),groups=new Map();nonogramLevels.forEach((entry,index)=>{if(!groups.has(entry.difficulty)){const group=document.createElement('optgroup');group.label=entry.difficulty;groups.set(entry.difficulty,group);}const option=document.createElement('option');option.value=index;option.textContent=`Màn ${index+1} · ${entry.difficulty}`;groups.get(entry.difficulty).append(option);});select.replaceChildren(...groups.values());select.addEventListener('change',()=>start(Number(select.value)));
+const select=$('#nonogram-jump'),groups=new Map();nonogramLevels.forEach((entry,index)=>{if(!groups.has(entry.difficulty)){const group=document.createElement('optgroup');group.label=entry.difficulty;groups.set(entry.difficulty,group);}const option=document.createElement('option');option.value=index;option.textContent=`${index+1} ${'★'.repeat(Math.min(5,1+Math.floor(index/Math.max(1,nonogramLevels.length/5))))}`;groups.get(entry.difficulty).append(option);});select.replaceChildren(...groups.values());select.addEventListener('change',()=>start(Number(select.value)));
 document.querySelector('[data-game="nonogram"]').addEventListener('click',focusSelected);
 start();
