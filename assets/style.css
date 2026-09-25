@@ -1738,6 +1738,13 @@ html[data-theme="dark"] #game-pipes{--pipes-paper:#fff0d4;--pipes-tile:#ead9ba;-
 @keyframes pipe-water-flow{to{stroke-dashoffset:-20}}
 @keyframes pipe-source-pulse{50%{transform:scale(.82);opacity:.72}}
 @media(prefers-reduced-motion:reduce){#game-pipes .pipes-board.completed .pipe-flow,#game-pipes .pipes-board.completed .pipe-reservoir{animation:none}}
+
+/* Level selectors already show the screen number; remove the duplicate label. */
+.puzzle-level>strong{display:none!important}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level{grid-template-columns:40px 40px minmax(120px,170px) auto;justify-content:center}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{grid-column:3;width:100%;min-width:0}
+:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level .restart-sound{grid-column:4}
+@media(max-width:520px){:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level{grid-template-columns:34px 34px minmax(100px,1fr) auto}:is(#hashi-scene,#hitori-scene,#futoshiki-scene) .puzzle-level select{width:100%;min-width:0}}
 /* Extra-compact desktop game tabs: nine per row. */
 .game-tabs button{flex-basis:calc(11.111% - 4px);padding:4px 4px;font-size:.68rem}
 @media(max-width:760px){.game-tabs button{flex-basis:calc(20% - 4px);font-size:.72rem}}
