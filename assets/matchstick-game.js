@@ -2,6 +2,7 @@ import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
 import {matchstickLevels} from './matchstick-levels.js';
 import {matchstickExtraLevels} from './matchstick-extra-levels.js';
+import {generatedMatchstickLevels} from './generated-matchstick-levels.js';
 
 const $=selector=>document.querySelector(selector);
 const digitSegments={'0':'abcdef','1':'bc','2':'abdeg','3':'abcdg','4':'bcfg','5':'acdfg','6':'acdefg','7':'abc','8':'abcdefg','9':'abcdfg'};
@@ -9,7 +10,7 @@ const operatorSegments={'+':'hv','-':'h'};
 const equalSegments={'=':'ul'};
 const segmentSets=[digitSegments,operatorSegments,digitSegments,equalSegments,digitSegments];
 const possibleSegments=['abcdefg','hv','abcdefg','ul','abcdefg'];
-const levels=[...matchstickLevels.map(([start,solution])=>({start,solution,moves:1})),...matchstickExtraLevels.map(([start,solution,moves])=>({start,solution,moves}))];
+const levels=[...matchstickLevels.map(([start,solution])=>({start,solution,moves:1})),...matchstickExtraLevels.map(([start,solution,moves])=>({start,solution,moves})),...generatedMatchstickLevels.map(([start,solution,moves])=>({start,solution,moves}))];
 for(let i=levels.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[levels[i],levels[j]]=[levels[j],levels[i]];}
 let level=0,sticks=[],selected=null,movesMade=0,won=false;
 const result=createGameResult($('#match-scene'),{restart:()=>start(),next:()=>start(level+1)});

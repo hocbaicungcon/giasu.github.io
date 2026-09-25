@@ -6,6 +6,48 @@ import './water-game.js';
 import {moveBoard,canMove,scoreWord,words} from './game-rules.js';
 const $=s=>document.querySelector(s);
 document.querySelectorAll('[data-game]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-game]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.game-panel').forEach(p=>p.hidden=p.id!=='game-'+button.dataset.game);if(button.dataset.game==='words')$('#game-words').scrollIntoView({block:'start',behavior:'instant'});}));
+// Keep each game's settings and navigation in one place. Move existing controls
+// so their IDs and event handlers continue to work.
+document.querySelectorAll('.game-panel').forEach(panel=>{
+ const game=panel.id.slice(5);
+ const scene=panel.querySelector('[id$="-scene"],.river-world,.water-world')||panel;
+ let nav=panel.querySelector('.puzzle-level,.new-puzzle-bar,.tangram-level-tools,.scene-tools,.einstein-level,.caro-toolbar,.number-toolbar,.scene-corner-controls');
+ if(!nav){nav=document.createElement('div');scene.prepend(nav);}
+ nav.classList.add('game-nav');nav.setAttribute('role','group');nav.setAttribute('aria-label','Điều khiển '+(panel.querySelector('h2')?.textContent||'game'));
+ if(game==='numbers'){
+  nav.append(panel.querySelector('.scene-corner-controls [data-puzzle-sound]'),panel.querySelector('[data-restart="numbers"]'));
+ }else if(game==='words'){
+  nav.append(panel.querySelector('#word-give-up'),panel.querySelector('[data-restart="words"]'));
+ }else if(game==='sudoku'){
+  nav.append(panel.querySelector('#sudoku-level').parentElement,...panel.querySelector('.puzzle-actions').children);
+ }else if(game==='hanoi'){
+  nav.append(panel.querySelector('#hanoi-level').parentElement,...panel.querySelector('.puzzle-actions').children);
+ }else if(game==='einstein'){
+  const actions=panel.querySelector('.einstein-toolbar');
+  if(actions)nav.append(actions);
+ }
+ const sound=panel.querySelector('[data-puzzle-sound]');
+ if(sound&&!nav.contains(sound))nav.append(sound);
+ panel.querySelectorAll('.scene-corner-controls,.puzzle-actions').forEach(holder=>{if(holder!==nav&&!holder.children.length)holder.remove();});
+ nav.querySelectorAll('button').forEach(button=>{
+  const label=button.getAttribute('aria-label')||button.textContent.trim();
+  if(button.id.endsWith('-new'))button.textContent='✦';
+  if(button.id==='caro-reset'||button.id==='hanoi-reset'||button.id==='sudoku-reset'||button.hasAttribute('data-restart'))button.textContent='↻';
+  if(button.id==='hanoi-undo')button.textContent='↶';
+  if(button.id==='sudoku-check')button.textContent='✓';
+  if(button.id==='sudoku-reveal')button.textContent='◉';
+  if(button.id==='word-give-up')button.textContent='×';
+  if(game==='words'&&button.hasAttribute('data-restart'))button.textContent='✦';
+  if(button.textContent.trim()!==label){button.setAttribute('aria-label',label);button.title=label;}
+ });
+});
+document.querySelectorAll('.game-panel').forEach(panel=>{
+ const control=document.createElement('button'); control.type='button'; control.className='game-fullscreen'; control.setAttribute('aria-label','Mở toàn màn hình'); control.title='Mở toàn màn hình'; control.textContent='⛶';
+ control.addEventListener('click',async()=>{if(document.fullscreenElement===panel){await document.exitFullscreen?.();}else{try{await panel.requestFullscreen?.();}catch{panel.classList.toggle('is-fullscreen');}}});
+ const nav=panel.querySelector('.game-nav');
+ nav.append(control);control.classList.add('in-toolbar');
+ document.addEventListener('fullscreenchange',()=>{const active=document.fullscreenElement===panel||panel.classList.contains('is-fullscreen');control.textContent=active?'×':'⛶';control.setAttribute('aria-label',active?'Thoát toàn màn hình':'Mở toàn màn hình');control.title=active?'Thoát toàn màn hình':'Mở toàn màn hình';});
+});
 let board,score,numberDone,numberSize=4;
 const numberResult=createGameResult($('#number-scene'),{restart:startNumbers});
 function spawn(){const empty=board.map((n,i)=>n?null:i).filter(i=>i!==null);if(empty.length)board[empty[Math.floor(Math.random()*empty.length)]]=Math.random()<.9?2:4;}
