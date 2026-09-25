@@ -989,16 +989,17 @@ html[data-theme="dark"] :is(#game-river,#game-water){background:#fbf5e7;border-c
 #soko-board:focus-visible{outline:2px solid #886646;outline-offset:4px}
 .nim-board{width:min(100%,620px);display:grid;gap:14px}
 .nim-row{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;min-height:58px}
-.nim-row span{min-width:64px;font-weight:650;color:#665846}
+.nim-row .nim-label{min-width:64px;font-weight:650;color:#665846}
 .nim-stick{width:17px;height:52px;min-width:17px;padding:0;border:0;border-radius:9px 9px 4px 4px;background:linear-gradient(#c96f56 0 14%,#ead2a0 14% 100%);box-shadow:inset -3px 0 #be9b69;cursor:pointer;transition:transform .16s}
+.nim-stick-empty{visibility:hidden;pointer-events:none;flex:none}
 .nim-stick:hover,.nim-stick:focus-visible{transform:translateY(-7px);outline:2px solid #846246;outline-offset:3px}
 html[data-theme="dark"] .puzzle-scene{background:#eee3cb;border-color:#c5b28e}
 html[data-theme="dark"] .pent-cell{background:#dfd6c3;border-color:#b6a68a}
 html[data-theme="dark"] .pent-cell.filled{background:var(--piece-color);border-color:#efe3cd}
 html[data-theme="dark"] .pent-piece{background:#e9dec8}
 html[data-theme="dark"] .pent-piece.selected{background:#fbefcf;border-color:#8b6941}
-html[data-theme="dark"] .nim-row span{color:#695337}
-@media(max-width:620px){.puzzle-scene{padding:12px}.pent-board{width:min(100%,285px)}.pent-pieces{gap:5px}.pent-piece{grid-template-columns:repeat(3,11px);grid-template-rows:repeat(3,11px);padding:5px}.pent-piece i{width:11px;height:11px}.nim-row{gap:5px}.nim-row span{width:100%;text-align:center}.nim-stick{width:15px;min-width:15px;height:45px}}
+html[data-theme="dark"] .nim-row .nim-label{color:#695337}
+@media(max-width:620px){.puzzle-scene{padding:12px}.pent-board{width:min(100%,285px)}.pent-pieces{gap:5px}.pent-piece{grid-template-columns:repeat(3,11px);grid-template-rows:repeat(3,11px);padding:5px}.pent-piece i{width:11px;height:11px}.nim-row{gap:5px}.nim-row .nim-label{width:100%;text-align:center}.nim-stick{width:15px;min-width:15px;height:45px}}
 .pent-board{aspect-ratio:5 / var(--rows)}
 .game-tabs{gap:5px;margin:14px 0 18px}
 .game-tabs button{min-height:36px;padding:6px 10px;border-radius:8px;font-size:.82rem;line-height:1.2;white-space:nowrap}
@@ -1128,3 +1129,7 @@ html[data-theme="dark"] .game-panel .game-result .result-actions button:not([dat
 html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss],
 html[data-theme="dark"] .game-panel .game-result[data-outcome="lost"] .result-actions [data-result-dismiss]{background:#fbf5e7;border-color:#baa47f;color:#59452f}
 html[data-theme="dark"] .game-panel .game-result .result-actions [data-result-dismiss]:hover{background:#e8dbc1;color:#49351f}
+
+/* Nim can have four rows; reserve room for every row and its result screen. */
+#nim-scene{min-height:500px}
+@media(max-width:620px){#nim-scene{min-height:560px}}
