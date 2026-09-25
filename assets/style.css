@@ -1708,6 +1708,27 @@ html[data-theme="dark"] #game-rush .rush-car[data-car="5"]{--vehicle:#b88762}
 #game-rush #rush-status{font-size:.85rem;margin:8px 0}
 @media(prefers-reduced-motion:reduce){#game-rush .rush-board button.rush-car{transition:none}}
 @media(max-width:420px){#game-rush .rush-toolbar #rush-size{flex-basis:100%}#game-rush .rush-parking{width:calc(100% - 48px)}}
+
+/* Connected pipe puzzle. */
+#game-pipes{--pipes-paper:#eef7f3;--pipes-tile:#dbeae4;--pipes-edge:#9bbfb4;--pipes-dry:#708983;--pipes-water:#238eaa;--pipes-source:#e2a843;--pipes-ink:#315f60}
+html[data-theme="dark"] #game-pipes{--pipes-paper:#fff0d4;--pipes-tile:#ead9ba;--pipes-edge:#bea47a;--pipes-dry:#8a7556;--pipes-water:#508a91;--pipes-source:#b7843e;--pipes-ink:#674e30}
+#game-pipes .pipes-toolbar{display:flex;gap:6px;flex-wrap:wrap;width:min(100%,520px);margin:12px auto;padding:7px;border:1px solid var(--pipes-edge);border-radius:12px;background:var(--pipes-paper)}
+#game-pipes .pipes-toolbar button{position:static;display:grid;place-items:center;width:40px;height:40px;min-width:40px;min-height:40px;margin:0;padding:0;border:1px solid var(--pipes-edge);border-radius:8px;background:var(--pipes-paper);color:var(--pipes-ink)}
+#game-pipes .pipes-toolbar #pipes-new{flex:1;width:auto;padding:0 10px;font-size:.85rem}
+#game-pipes .pipes-toolbar #pipes-size{flex:1 1 135px;min-width:0;max-width:100%;height:40px;margin:0;padding:4px 7px;border:1px solid var(--pipes-edge);border-radius:8px;background:var(--pipes-paper);color:var(--pipes-ink);font-size:.8rem}
+#game-pipes .pipes-toolbar svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+#game-pipes #pipes-status{font-size:.85rem;margin:8px 0;min-height:1.6em}
+#game-pipes .pipes-board{display:grid;grid-template-columns:repeat(var(--pipes-size),minmax(0,1fr));width:min(100%,520px);margin:12px auto;padding:5px;gap:3px;border:2px solid var(--pipes-edge);border-radius:12px;background:var(--pipes-edge);touch-action:manipulation;user-select:none}
+#game-pipes .pipes-board button.pipe-tile{display:grid;place-items:center;width:100%;height:auto;aspect-ratio:1;min-width:0;min-height:0;margin:0;padding:1px;border:0;border-radius:6px;background:var(--pipes-tile);color:var(--pipes-dry);box-shadow:none;touch-action:manipulation}
+#game-pipes .pipe-tile svg{display:block;width:100%;height:100%;pointer-events:none}
+#game-pipes .pipe-lines{fill:var(--pipes-dry);stroke:var(--pipes-dry);stroke-width:8;stroke-linecap:round;stroke-linejoin:round;transition:fill .18s ease,stroke .18s ease}
+#game-pipes .pipe-tile.powered .pipe-lines{fill:var(--pipes-water);stroke:var(--pipes-water)}
+#game-pipes .pipe-source{fill:var(--pipes-source);stroke:#fff6d6;stroke-width:2}
+#game-pipes .pipe-drop{fill:var(--pipes-water);stroke:none}
+#game-pipes .pipe-tile.source{box-shadow:inset 0 0 0 2px var(--pipes-source)}
+#game-pipes .pipe-tile:focus-visible{outline:3px solid var(--pipes-ink);outline-offset:-3px}
+#game-pipes .pipe-tile:disabled{opacity:1}
+@media(max-width:420px){#game-pipes .pipes-toolbar #pipes-size{flex-basis:100%}#game-pipes .pipes-board{gap:2px;padding:3px}#game-pipes .pipes-board[data-size="9"]{gap:1px}#game-pipes .pipes-board[data-size="9"] button.pipe-tile{border-radius:3px}}
 /* Extra-compact desktop game tabs: nine per row. */
 .game-tabs button{flex-basis:calc(11.111% - 4px);padding:4px 4px;font-size:.68rem}
 @media(max-width:760px){.game-tabs button{flex-basis:calc(20% - 4px);font-size:.72rem}}

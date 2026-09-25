@@ -160,3 +160,24 @@ function rushStart(fresh=false){stopSounds();rushExitRow=Math.floor((rushSize-1)
  rushBoard.addEventListener('pointercancel',()=>rushDrag=null);
  $('#rush-back').onclick=()=>rushMove(-1);$('#rush-forward').onclick=()=>rushMove(1);
  $('#rush-reset').onclick=()=>rushStart(false);$('#rush-new').onclick=()=>rushStart(true);$('#rush-size').onchange=event=>{rushSize=Number(event.target.value);rushInitial=[];rushStart(true);};rushStart(true);
+
+// Rotate pipes into one connected water network.
+const PIPE_N=1,PIPE_E=2,PIPE_S=4,PIPE_W=8,pipeDirs=[[PIPE_N,0,-1,PIPE_S],[PIPE_E,1,0,PIPE_W],[PIPE_S,0,1,PIPE_N],[PIPE_W,-1,0,PIPE_E]];
+let pipesSize=5,pipesSolution=[],pipesTiles=[],pipesInitial=[],pipesTurns=0,pipesDone=false;
+const pipesBoard=$('#pipes-board');
+const rotatePipe=(mask,turns=1)=>{for(let i=0;i<turns%4;i++)mask=((mask<<1)&15)|((mask>>3)&1);return mask;};
+function generatePipes(){
+ const total=pipesSize*pipesSize,tree=Array(total).fill(0),seen=new Set([0]),stack=[0];
+ while(stack.length){const cell=stack.at(-1),x=cell%pipesSize,y=Math.floor(cell/pipesSize),options=pipeDirs.map(([bit,dx,dy,back])=>({bit,back,x:x+dx,y:y+dy})).filter(next=>next.x>=0&&next.x<pipesSize&&next.y>=0&&next.y<pipesSize&&!seen.has(next.y*pipesSize+next.x));if(!options.length){stack.pop();continue;}const next=options[Math.floor(Math.random()*options.length)],index=next.y*pipesSize+next.x;tree[cell]|=next.bit;tree[index]|=next.back;seen.add(index);stack.push(index);}
+ pipesSolution=tree;pipesInitial=tree.map(mask=>rotatePipe(mask,Math.floor(Math.random()*4)));pipesTiles=[...pipesInitial];let guard=0;while(pipePowered().size===total&&pipeValid()&&guard++<4){const index=Math.floor(Math.random()*total);pipesInitial[index]=rotatePipe(pipesInitial[index]);pipesTiles=[...pipesInitial];}
+}
+function pipePowered(){const reached=new Set([0]),queue=[0];for(let k=0;k<queue.length;k++){const cell=queue[k],x=cell%pipesSize,y=Math.floor(cell/pipesSize),mask=pipesTiles[cell];for(const [bit,dx,dy,back] of pipeDirs){if(!(mask&bit))continue;const xx=x+dx,yy=y+dy,next=yy*pipesSize+xx;if(xx>=0&&xx<pipesSize&&yy>=0&&yy<pipesSize&&(pipesTiles[next]&back)&&!reached.has(next)){reached.add(next);queue.push(next);}}}return reached;}
+function pipeValid(){return pipesTiles.every((mask,cell)=>{const x=cell%pipesSize,y=Math.floor(cell/pipesSize);return pipeDirs.every(([bit,dx,dy,back])=>!(mask&bit)||(x+dx>=0&&x+dx<pipesSize&&y+dy>=0&&y+dy<pipesSize&&(pipesTiles[(y+dy)*pipesSize+x+dx]&back)));});}
+function pipeSvg(mask,powered,source){let paths='';for(const [bit,dx,dy] of pipeDirs)if(mask&bit)paths+=`M24 24L${24+dx*22} ${24+dy*22}`;return `<svg viewBox="0 0 48 48" aria-hidden="true"><g class="pipe-lines"><path d="${paths}"/><circle cx="24" cy="24" r="5"/></g>${source?'<circle class="pipe-source" cx="24" cy="24" r="9"/><path class="pipe-drop" d="M24 15c-7 8-8 12-8 16a8 8 0 0 0 16 0c0-4-1-8-8-16Z"/>':''}</svg>`;}
+function pipesRender(){
+ const powered=pipePowered();pipesBoard.style.setProperty('--pipes-size',pipesSize);pipesBoard.dataset.size=String(pipesSize);
+ pipesBoard.replaceChildren(...pipesTiles.map((mask,i)=>{const button=document.createElement('button');button.type='button';button.className='pipe-tile'+(powered.has(i)?' powered':'')+(i===0?' source':'');button.innerHTML=pipeSvg(mask,powered.has(i),i===0);button.disabled=pipesDone;button.setAttribute('aria-label',`Ô hàng ${Math.floor(i/pipesSize)+1}, cột ${i%pipesSize+1}${powered.has(i)?', có nước':''}`);button.onclick=()=>{if(pipesDone)return;pipesTiles[i]=rotatePipe(mask);pipesTurns++;const reached=pipePowered();pipesDone=reached.size===pipesTiles.length&&pipeValid();sound(pipesDone?'win':'move');pipesRender();};return button;}));
+ $('#pipes-status').textContent=pipesDone?`Tất cả ${pipesTiles.length} đoạn ống đã thông nước sau ${pipesTurns} lượt!`:`${powered.size}/${pipesTiles.length} ô có nước · ${pipesTurns} lượt xoay`;
+}
+function pipesStart(fresh=false){stopSounds();if(fresh||!pipesInitial.length)generatePipes();pipesTiles=[...pipesInitial];pipesTurns=0;pipesDone=false;pipesRender();}
+$('#pipes-new').onclick=()=>pipesStart(true);$('#pipes-reset').onclick=()=>pipesStart(false);$('#pipes-size').onchange=event=>{pipesSize=Number(event.target.value);pipesInitial=[];pipesStart(true);};pipesStart(true);
