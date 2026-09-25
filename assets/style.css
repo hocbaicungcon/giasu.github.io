@@ -1098,3 +1098,14 @@ html[data-theme="dark"] .game-panel .scene-tools button.game-sound{border:1px so
 @media(max-width:620px){#match-scene{padding-top:6px}}
 #match-scene .match-moves{align-self:center;margin:0;color:#70563b;font-size:.88rem;font-weight:700;text-align:center}
 html[data-theme="dark"] #match-scene .match-moves{color:#735638}
+#match-scene .puzzle-level #match-jump{width:180px;max-width:100%;flex:0 0 180px}
+@media(max-width:620px){#match-scene .puzzle-level #match-jump{flex:1 1 180px;width:180px;min-width:150px}}
+
+/* Light-theme level navigation follows the site's cool teal palette. */
+html:not([data-theme="dark"]) #tangram-scene .tangram-level-tools,
+html:not([data-theme="dark"]) :is(#pent-scene,#soko-scene,#nim-scene,#match-scene) .puzzle-level{background:#edf7f6;border-color:#c9e2df;color:#285e63}
+html:not([data-theme="dark"]) .puzzle-level select{background:#fff;border-color:#c9e2df;color:#285e63}
+html:not([data-theme="dark"]) :is(#tangram-scene .tangram-level-tools,#pent-scene .puzzle-level,#soko-scene .puzzle-level,#nim-scene .puzzle-level,#match-scene .puzzle-level) button:not(:disabled){background:#dcefed;border-color:#bddbd7;color:#285e63}
+html:not([data-theme="dark"]) :is(#tangram-scene .tangram-level-tools,#pent-scene .puzzle-level,#soko-scene .puzzle-level,#nim-scene .puzzle-level,#match-scene .puzzle-level) button:not(:disabled):hover{background:#c8e7e3;color:#174d56}
+html:not([data-theme="dark"]) :is(.river-world,.water-world) .scene-tools button{background:#edf7f6;color:#285e63}
+html:not([data-theme="dark"]) :is(.river-world,.water-world) .scene-tools button:not(:disabled):hover{background:#c8e7e3;color:#174d56}
