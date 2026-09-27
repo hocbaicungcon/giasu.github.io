@@ -1,3 +1,4 @@
+import {setGameControlIcon} from './game-controls.js';
 import {sound,stopSounds} from './puzzle-audio.js';
 const $=s=>document.querySelector(s);
 // Minesweeper
@@ -11,6 +12,7 @@ let mines=[],opened=new Set(),flags=new Set(),minesReady=false,minesDone=false,m
 const mineButtons=[];
 const flagButton=document.createElement('button');
 flagButton.type='button';flagButton.textContent='⚑';flagButton.title='Chế độ cắm cờ';flagButton.setAttribute('aria-label','Chế độ cắm cờ');flagButton.setAttribute('aria-pressed','false');
+setGameControlIcon(flagButton,'flag','Chế độ cắm cờ');
 $('#mines-reset').after(flagButton);
 $('#mines-reset').setAttribute('aria-label','Chơi lại Minesweeper');
 flagButton.onclick=()=>{flagMode=!flagMode;flagButton.setAttribute('aria-pressed',String(flagMode));};
@@ -137,7 +139,9 @@ function rushCanMove(cars,index,step){
  if(x<0||y<0||y+car.h>rushSize||(!escaping&&x+car.w>rushSize)||escaping&&x>rushSize)return false;
  return cars.every((other,i)=>i===index||x+car.w<=other.x||other.x+other.w<=x||y+car.h<=other.y||other.y+other.h<=y);
 }
-function rushShuffle(){const base=structuredClone(rushLayouts[rushSize]),cars=structuredClone(base),turns={6:45,7:75,8:110}[rushSize];for(let i=0;i<turns;i++){const options=cars.flatMap((_,index)=>[-1,1].filter(step=>rushCanMove(cars,index,step)&&!(index===0&&cars[0].x+step>=rushSize-2)).map(step=>({index,step})));if(!options.length)break;const move=options[Math.floor(Math.random()*options.length)],car=cars[move.index];car[car.h===1?'x':'y']+=move.step;}return cars[0].x>=rushSize-2?base:cars;}
+function rushHasClearExit(cars){const copy=structuredClone(cars);while(copy[0].x<rushSize){if(!rushCanMove(copy,0,1))return false;copy[0].x++;}return true;}
+function rushSolvesQuickly(start,maxDepth){const encode=cars=>cars.map(car=>`${car.x},${car.y}`).join('|'),seen=new Set([encode(start)]),queue=[{cars:structuredClone(start),depth:0}];while(queue.length){const {cars,depth}=queue.shift();if(rushHasClearExit(cars))return true;if(depth>=maxDepth)continue;for(let index=0;index<cars.length;index++)for(const step of [-1,1]){if(!rushCanMove(cars,index,step))continue;const next=structuredClone(cars),car=next[index];car[car.h===1?'x':'y']+=step;const key=encode(next);if(!seen.has(key)){seen.add(key);queue.push({cars:next,depth:depth+1});}}}return false;}
+function rushShuffle(){const base=structuredClone(rushLayouts[rushSize]),turns={6:55,7:90,8:130}[rushSize],minimum={6:3,7:4,8:5}[rushSize];for(let attempt=0;attempt<24;attempt++){const cars=structuredClone(base);for(let i=0;i<turns;i++){const options=cars.flatMap((_,index)=>[-1,1].filter(step=>rushCanMove(cars,index,step)&&!(index===0&&cars[0].x+step>=rushSize-2)).map(step=>({index,step})));if(!options.length)break;const move=options[Math.floor(Math.random()*options.length)],car=cars[move.index];car[car.h===1?'x':'y']+=move.step;}if(cars[0].x<rushSize-2&&!rushSolvesQuickly(cars,minimum))return cars;}return base;}
 function rushArt(car,index){
  const horizontal=car.h===1,length=Math.max(car.w,car.h)*48;
  const body='<rect x="4" y="10" width="6" height="17" rx="2" fill="#263c42"/><rect x="38" y="10" width="6" height="17" rx="2" fill="#263c42"/><rect x="4" y="'+(length-27)+'" width="6" height="17" rx="2" fill="#263c42"/><rect x="38" y="'+(length-27)+'" width="6" height="17" rx="2" fill="#263c42"/><rect x="8" y="3" width="32" height="'+(length-6)+'" rx="9" fill="var(--vehicle)" stroke="var(--vehicle-edge)" stroke-width="2"/><path d="M13 24h22l-3 16H16Z" fill="#d7edf0" stroke="#45646b" stroke-width="1.5"/><path d="M16 '+(length-31)+'h16l3 12H13Z" fill="#aacdd6" stroke="#45646b" stroke-width="1.5"/><rect x="16" y="44" width="16" height="'+(length-81)+'" rx="4" fill="#ffffff28"/><path d="M12 11h7m10 0h7" stroke="#fff3ae" stroke-width="4" stroke-linecap="round"/><path d="M12 '+(length-10)+'h6m12 0h6" stroke="#722d32" stroke-width="3" stroke-linecap="round"/><text x="24" y="'+(length/2+5)+'" text-anchor="middle" fill="#fff" stroke="none" font-family="Arial,sans-serif" font-weight="700" font-size="13">'+(index+1)+'</text>';

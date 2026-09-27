@@ -32,7 +32,7 @@ function render(){
  const expression=equation();board.setAttribute('aria-label',`Phép tính ${expression?.text||'đang thay đổi'}`);
  $('#match-moves').textContent=`Cần chuyển ${levels[level].moves} que · Đã chuyển ${movesMade}/${levels[level].moves}`;
 }
-function start(next=level){result.clear();level=Math.max(0,Math.min(levels.length-1,next));const {start:startEquation,moves}=levels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;movesMade=0;won=false;$('#match-level').textContent=`Màn ${level+1}/${levels.length}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===levels.length-1;$('#match-status').textContent=`Nhấc một que rồi đặt vào nét mờ. Cần chuyển ${moves} que.`;render();}
+function start(next=level){result.clear();level=Math.max(0,Math.min(levels.length-1,next));const {start:startEquation,moves}=levels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;movesMade=0;won=false;$('#match-level').textContent=`Màn ${level+1}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===levels.length-1;$('#match-status').textContent=`Nhấc một que rồi đặt vào nét mờ. Cần chuyển ${moves} que.`;render();}
 $('#match-board').addEventListener('click',event=>{
  const button=event.target.closest('[data-segment]');if(!button||movesMade>=levels[level].moves||won)return;
  const slot=Number(button.dataset.slot),segment=button.dataset.segment,active=sticks[slot].has(segment);
