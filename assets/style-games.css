@@ -1096,13 +1096,16 @@ to{stroke-dashoffset:-32}
   padding: 10px 6px;
   font-size: .9rem;
   line-height: 1.4;
-  font-weight: 750;
+  font-weight: 800;
   text-align: center;
   background: transparent;
-  color: var(--game-control-ink);
+  color: var(--river-text-ink);
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  -webkit-text-stroke: .6px var(--river-text-edge);
+  paint-order: stroke fill;
+  text-shadow: -1px -1px 0 var(--river-text-edge),1px -1px 0 var(--river-text-edge),-1px 1px 0 var(--river-text-edge),1px 1px 0 var(--river-text-edge);
 }
 
 #water-mission {
@@ -1206,6 +1209,8 @@ to{top:110%;transform:translateX(20px) rotate(500deg);opacity:0}
 }
 
 .river-world {
+  --river-text-edge: #fffbed;
+  --river-text-ink: #234d42;
   position: relative;
   border: 1px solid #9fcab9;
   border-radius: 20px;
@@ -1398,6 +1403,10 @@ html[data-theme="dark"] .game-panel .water-fixtures #water-status {
   width: 32%;
       top: 150px;
   }
+  -webkit-text-stroke: .6px var(--river-text-edge);
+  paint-order: stroke fill;
+  text-shadow: -1px -1px 0 var(--river-text-edge),1px -1px 0 var(--river-text-edge),-1px 1px 0 var(--river-text-edge),1px 1px 0 var(--river-text-edge);
+  font-weight: 800;
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -1477,12 +1486,7 @@ html[data-theme="dark"] .water-jug .jug-below-can {
   text-shadow: 0 1px 2px #ffffff60;
 }
 
-html[data-theme="dark"] .game-panel .river-world #river-status {
-  background: transparent;
-  border: 0;
-  color: #153f3b;
-  text-shadow: 0 1px 2px #ffffff40;
-}
+
 
 #game-water .water-jugs {
   display: grid;
@@ -2018,6 +2022,8 @@ html[data-theme="dark"] .game-panel {
 
 html[data-theme="dark"] .river-scene,
 html[data-theme="dark"] #game-river .river-world {
+  --river-text-edge: #fff0d0;
+  --river-text-ink: #4f3b26;
   background: #eee3ca;
 }
 
@@ -2048,7 +2054,7 @@ html[data-theme="dark"] #game-river .river-landscape>svg:nth-of-type(3) circle {
 
 html[data-theme="dark"] #game-river .river-world .scene-guidance {
   background: #f5edda;
-  color: #57452e;
+  color: var(--river-text-ink);
 }
 
 html[data-theme="dark"] #game-water .water-world {
@@ -2135,7 +2141,6 @@ html[data-theme="dark"] #water-mission {
   box-shadow: 0 3px 10px #53462814;
 }
 
-html[data-theme="dark"] #game-river .river-world #river-status,
 html[data-theme="dark"] #game-water .water-fixtures #water-status {
   background: transparent;
   color: #4b5037;
@@ -2144,7 +2149,7 @@ html[data-theme="dark"] #game-water .water-fixtures #water-status {
 }
 
 html[data-theme="dark"] #river-mission {
-  color: var(--game-control-ink);
+  color: var(--river-text-ink);
 }
 
 html[data-theme="dark"] #game-water .water-world .water {
@@ -3160,15 +3165,17 @@ html[data-theme="dark"] #game-matchstick {
   fill: none;
 }
 
+.number-grid-stage {
+  position: relative;
+  width: min(100%,460px);
+  margin: 0 auto;
+}
 .number-combo {
   position: absolute;
   z-index: 6;
-  top: 42%;
-  left: 0;
-  right: 0;
+  inset: 0;
   display: grid;
-  justify-items: center;
-  gap: 4px;
+  place-items: center;
   pointer-events: none;
   color: var(--game-control-hover-ink);
   text-align: center;
@@ -3195,9 +3202,9 @@ html[data-theme="dark"] .number-combo {
   display: grid;
   place-content: center;
   gap: 6px;
-  width: min(92%,350px);
-  min-height: 160px;
-  padding: 35px 42px;
+  width: min(94%,400px);
+  min-height: 175px;
+  padding: 35px 38px;
   color: var(--combo-ink);
   isolation: isolate;
   animation: number-combo-pop .75s ease-out both;
@@ -3217,7 +3224,7 @@ html[data-theme="dark"] .number-combo {
     radial-gradient(ellipse at 40% 35%,var(--combo-flare),var(--combo-fill) 60%,var(--combo-accent));
 }
 .combo-burst strong {
-  font: italic 900 clamp(1.35rem,5.2vw,1.9rem)/1.05 'Comic Sans MS','Chalkboard SE',Inter,sans-serif;
+  font: italic 900 clamp(1.7rem,6.5vw,2.5rem)/1.05 'Comic Sans MS','Chalkboard SE',Inter,sans-serif;
   text-wrap: balance;
   text-shadow: -1px -1px 0 var(--combo-letter-edge),1px -1px 0 var(--combo-letter-edge),-1px 1px 0 var(--combo-letter-edge),1px 1px 0 var(--combo-letter-edge),2px 3px 0 var(--combo-accent);
   transform: rotate(-4deg);
