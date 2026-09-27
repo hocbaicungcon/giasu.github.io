@@ -6,6 +6,8 @@ const paths = {
   new: '<path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5Z"/>',
   undo: '<path d="m9 5-5 5 5 5M4 10h9a6 6 0 0 1 6 6v3"/>',
   redo: '<path d="m15 5 5 5-5 5m5-5h-9a6 6 0 0 0-6 6v3"/>',
+  pin: '<path d="m9 3 6 0-1 6 4 4v2H6v-2l4-4-1-6ZM12 15v6"/>',
+  erase: '<path d="m4 14 9-10 7 7-8 9H9l-5-4Zm4-5 7 7M12 20h9"/>',
   check: '<path d="m5 12 4 4L19 6"/>',
   close: '<path d="m6 6 12 12M18 6 6 18"/>',
   eye: '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>',
@@ -45,6 +47,22 @@ export function setGameControlIcon(button, icon, label) {
 }
 
 export function mountGameNavigation(nav) {
+  const buttons=[...nav.querySelectorAll('button')];
+  const previous=buttons.find(button=>/-prev$/.test(button.id));
+  const next=buttons.find(button=>/-next$/.test(button.id));
+  const reset=buttons.find(button=>/-reset$/.test(button.id)||button.hasAttribute('data-restart')&&button.dataset.restart!=='words');
+  const sound=nav.querySelector('[data-puzzle-sound]');
+  const select=nav.querySelector('select');
+  const picker=select?.closest('label')||select;
+  const ordered=[previous,picker,next,reset,sound].filter(Boolean);
+  nav.prepend(...ordered);
+  nav.querySelectorAll('.restart-sound').forEach(holder=>{if(!holder.children.length)holder.remove();});
+  if(nav.closest('#game-einstein')){
+    let row=nav.querySelector('.einstein-navigation');
+    if(!row){row=document.createElement('div');row.className='einstein-navigation';nav.prepend(row);}
+    row.append(...ordered);
+  }
+
   nav.querySelectorAll('button').forEach(button => {
     const label = button.getAttribute('aria-label') || button.title || button.textContent.trim();
     button.classList.remove('primary');
