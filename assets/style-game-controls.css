@@ -313,6 +313,28 @@ html[data-theme="dark"] {
   stroke-linejoin: round;
 }
 
+/* Top-layer tooltips remain readable outside the toolbar's clipping boundary. */
+.game-nav-tooltip {
+  position: fixed;
+  inset: auto;
+  z-index: 10000;
+  display: none;
+  width: max-content;
+  max-width: min(280px,calc(100vw - 16px));
+  margin: 0;
+  padding: 8px 11px;
+  border: 1px solid var(--game-control-border);
+  border-radius: 10px;
+  background: var(--game-control-bg);
+  color: var(--game-control-ink);
+  font: 600 .8rem/1.4 Inter,sans-serif;
+  text-align: center;
+  overflow-wrap: anywhere;
+  pointer-events: none;
+  box-shadow: 0 3px 10px #00000018;
+}
+.game-nav-tooltip.is-visible { display: block; }
+
 /* Fullscreen belongs to the navigation bar; mobile uses the page viewport. */
 .game-panel:fullscreen,
 .game-panel.is-fullscreen {
