@@ -3926,6 +3926,17 @@ html[data-theme="dark"] .game-panel button.caro-cell:not(:disabled):focus-visibl
   font-weight: 800;
 }
 
+.futo-sign > svg {
+  display: block;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .futoshiki-keys {
   display: flex;
   justify-content: center;
