@@ -79,6 +79,20 @@ html[data-theme="dark"] {
   color: var(--game-control-ink);
 }
 
+/* Tangram has more tools; let the short level number take only spare space. */
+#game-tangram .game-nav {
+  gap: 3px;
+  overflow: visible;
+}
+#game-tangram .game-nav select {
+  flex: 1 1 64px;
+  width: 64px;
+  min-width: 44px;
+  max-width: 110px;
+  padding-left: 7px;
+  padding-right: 18px;
+}
+
 .game-nav > strong { display: none; }
 .game-nav .restart-sound {
   display: flex;
@@ -375,6 +389,14 @@ html[data-theme="dark"] {
   .game-nav .restart-sound { gap: 5px; }
   .game-nav .game-fullscreen { display: none; }
   #game-sudoku .game-nav { gap: 3px; }
+  #game-tangram { padding-inline: 6px; }
+  #game-tangram .game-nav {
+    --game-control-size: clamp(26px, 7.2vw, 34px);
+    --game-control-icon-size: 18px;
+    gap: 2px;
+    padding: 3px;
+    min-height: 38px;
+  }
   .game-result { padding: 12px; }
   .result-card { padding: 16px; }
   .result-art { width: 64px; height: 64px; margin-bottom: 8px; }

@@ -181,7 +181,7 @@
 
 @media(max-width:620px) {
   .game-panel {
-  padding: 14px 10px;
+  padding: 12px 6px;
   }
   
   .river-scene {
@@ -2252,6 +2252,7 @@ html[data-theme="dark"] #game-sudoku #sudoku-board .selected .sudoku-notes-grid 
 
 #game-tangram {
   max-width: 850px;
+  padding-inline: 8px;
 }
 
 #tangram-board {
@@ -2347,12 +2348,12 @@ html[data-theme="dark"] .tangram-piece:focus-visible polygon {
 
 #tangram-scene {
   position: relative;
-  margin: 22px auto;
+  margin: 12px auto;
   border: 1px solid #b9d6d0;
   border-radius: 18px;
   overflow: hidden;
   background: #f5faf7;
-  max-width: 760px;
+  max-width: none;
 }
 
 .tangram-origin-piece {
@@ -2407,10 +2408,6 @@ html[data-theme="dark"] .tangram-origin-caption {
 }
 
 @media(max-width:620px) {
-  #tangram-level-label {
-  font-size: .74rem;
-  }
-  
   .tangram-actions button:not(:where(.game-nav *, .game-result *)) {
   flex: 1;
       padding: 8px 10px;
@@ -2458,8 +2455,8 @@ html[data-theme="dark"] .tangram-seam-guide {
 
 #game-river {
   max-width: none;
-  padding-inline: 24px;
-  padding: 24px;
+  padding-inline: 6px;
+  padding: 12px 6px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -2468,9 +2465,9 @@ html[data-theme="dark"] .tangram-seam-guide {
 
 #game-water {
   max-width: none;
-  padding-inline: 24px;
+  padding-inline: 6px;
   background: #fff;
-  padding: 24px;
+  padding: 12px 6px;
   border: 1px solid var(--line);
   border-radius: 18px;
   box-shadow: none;
@@ -2478,8 +2475,8 @@ html[data-theme="dark"] .tangram-seam-guide {
 
 html[data-theme="dark"] :is(#game-river,#game-water) {
   max-width: none;
-  padding-inline: 24px;
-  padding: 24px;
+  padding-inline: 6px;
+  padding: 12px 6px;
   border: 1px solid var(--line);
   border-radius: 18px;
   box-shadow: none;
@@ -2491,8 +2488,8 @@ html[data-theme="dark"] :is(#game-river,#game-water) {
   #game-river,
   #game-water,
   html[data-theme="dark"] :is(#game-river,#game-water) {
-  padding-inline: 0;
-      padding: 16px;
+  padding-inline: 6px;
+      padding: 12px 6px;
       border-radius: 14px;
   }
 }
@@ -2513,7 +2510,7 @@ html[data-theme="dark"] :is(#game-river,#game-water) {
   display: grid;
   place-items: center;
   min-height: 220px;
-  padding: 20px;
+  padding: 6px;
   background: #f3f7f1;
   border: 1px solid #cbdcd1;
   border-radius: 16px;
@@ -2763,7 +2760,7 @@ html[data-theme="dark"] .nim-row .nim-label {
 
 @media(max-width:620px) {
   .puzzle-scene {
-  padding: 12px;
+  padding: 6px;
   }
   
   .pent-board {
@@ -3038,8 +3035,8 @@ html[data-theme="dark"] #game-matchstick .match-segment.on {
 .embedded-game-scene {
   position: relative;
   width: 100%;
-  margin: 18px auto;
-  padding: 20px;
+  margin: 8px auto;
+  padding: 6px;
   border: 1px solid #cbdcd1;
   border-radius: 16px;
   background: #f3f7f1;
@@ -3048,18 +3045,18 @@ html[data-theme="dark"] #game-matchstick .match-segment.on {
 #number-scene {
   position: relative;
   width: 100%;
-  margin: 18px auto;
-  padding: 20px;
+  margin: 8px auto;
+  padding: 6px;
   border: 1px solid #cbdcd1;
   border-radius: 16px;
   background: #f3f7f1;
-  max-width: 460px;
+  max-width: none;
   text-align: center;
 }
 
 #number-scene .number-board {
   width: 100%;
-  max-width: none;
+  max-width: 460px;
   margin: 0 auto;
 }
 
@@ -3070,7 +3067,7 @@ html[data-theme="dark"] #game-matchstick .match-segment.on {
 }
 
 #word-scene {
-  max-width: 550px;
+  max-width: none;
   text-align: center;
 }
 
@@ -3085,7 +3082,7 @@ html[data-theme="dark"] #game-matchstick .match-segment.on {
 
 #sudoku-scene,
 #hanoi-scene {
-  max-width: 650px;
+  max-width: none;
   text-align: center;
 }
 
@@ -3125,8 +3122,8 @@ html[data-theme="dark"] :is(.embedded-game-scene,#number-scene) {
 @media(max-width:620px) {
   .embedded-game-scene,
   #number-scene {
-  padding: 12px;
-      margin: 14px auto;
+  padding: 6px;
+      margin: 8px auto;
   }
   
   .game-panel #word-scene .word-keyboard {
@@ -4307,7 +4304,7 @@ html[data-theme="dark"] .einstein-scroll-note {
   overflow: hidden;
   background: #b6d2ca;
   gap: 1px;
-  grid-template-columns: repeat(5,minmax(0,1fr));
+  grid-template-columns: repeat(var(--einstein-houses,5),minmax(0,1fr));
   min-width: 0;
 }
 
@@ -4409,7 +4406,7 @@ html[data-theme="dark"] .game-panel .einstein-picker button:focus-visible:not(:w
 
 @media(max-width:560px) {
   .einstein-board {
-  grid-template-columns: repeat(5,minmax(0,1fr));
+  grid-template-columns: repeat(var(--einstein-houses,5),minmax(0,1fr));
   }
   
   .game-panel button.einstein-slot:not(:where(.game-nav *, .game-result *)) {
@@ -6067,7 +6064,7 @@ to{stroke-dashoffset:-20}
 
 .game-panel {
   max-width: 760px;
-  padding: 24px;
+  padding: 12px 6px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 18px;
@@ -6083,7 +6080,7 @@ to{stroke-dashoffset:-20}
   height: 100vh;
   min-height: 100vh;
   margin: 0;
-  padding: clamp(12px,3vw,32px);
+  padding: 6px;
   border: 0;
   border-radius: 0;
   overflow: auto;
@@ -6301,21 +6298,6 @@ html[data-theme="dark"] .game-panel select:focus-visible:not(:where(.game-nav *,
   outline-offset: 2px;
 }
 
-#tangram-level-label {
-  font-size: .82rem;
-  font-weight: 750;
-  padding-inline: 4px;
-  text-align: center;
-  overflow-wrap: anywhere;
-  padding: 0 4px;
-  white-space: nowrap;
-  min-width: 70px;
-  line-height: 1.2;
-  flex: 1 1 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 #game-water .water-world {
   border: 0;
   box-shadow: none;
@@ -6430,7 +6412,7 @@ html[data-theme="dark"] .game-panel select:focus-visible:not(:where(.game-nav *,
 }
 
 #game-einstein .einstein-scene {
-  max-width: 680px;
+  max-width: none;
   margin-inline: auto;
 }
 
