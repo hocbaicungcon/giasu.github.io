@@ -453,8 +453,8 @@ html[data-theme="dark"] {
     min-height: 38px;
   }
   #game-einstein .game-nav {
-    --game-control-size: clamp(19px,5.5vw,30px);
-    --game-control-icon-size: 15px;
+    --game-control-size: clamp(23px,6.5vw,34px);
+    --game-control-icon-size: 18px;
     gap: 1px;
     padding: 2px;
   }

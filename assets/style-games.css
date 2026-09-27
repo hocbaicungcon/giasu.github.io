@@ -6694,6 +6694,12 @@ html[data-theme="dark"] #soko-board .soko-cell.player.selected::before {
   min-height: 0;
   height: 100%;
 }
+#game-einstein .einstein-slot.filled .einstein-candidate svg:not(:where(.game-nav *, .game-result *)) {
+  width: 46px;
+  height: 46px;
+  max-width: 85%;
+}
+
 
 @media(max-width:560px) {
   #game-einstein .einstein-slot {
