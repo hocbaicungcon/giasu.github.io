@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {sorting,compareItems} from './sort.js';
 import {matchesSubject} from './subject-groups.js';
 (async()=>{

@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {createGameResult} from './game-result.js';
 import {riverLevels,riverMove,riverHint} from './puzzle-levels.js';
 import {sound,stopSounds} from './puzzle-audio.js';
@@ -40,7 +41,7 @@ $('.river-world').addEventListener('click',event=>{
 export function startRiver(){
  hintRun++;hinting=false;$('.river-world').classList.remove('hint-ready');
  resultScene.clear();clearTimeout(timer);stopRow();stopSounds();state=structuredClone(level().start);steps=0;done=false;crossing=false;cargo=[];hintCargo=null;
- $('#river-mission').textContent=level().description+(level().limit?' Hoàn thành trong '+level().limit+' lượt.':' Không giới hạn lượt.');
+ $('#river-mission').textContent='Đưa tất cả qua sông · Thuyền '+level().capacity+' chỗ'+(level().limit?' · Tối đa '+level().limit+' lượt':'');
  message('Bấm nhân vật để lên thuyền, bấm thuyền để đi.');render();
  try{localStorage.setItem('river-level',String(levelIndex));}catch{}
 }

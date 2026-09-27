@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {lightUpLevels} from './light-up-levels.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';

@@ -7,6 +7,7 @@ date: "2026-09-18"
 tags: ["câu đố IQ", "tư duy logic", "dãy số"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 Dãy số sau tuân theo một quy luật:
 
 $$

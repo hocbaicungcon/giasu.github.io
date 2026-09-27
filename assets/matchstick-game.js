@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {setGameControlLabel} from './game-controls.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
@@ -15,6 +16,9 @@ const levels=[...matchstickLevels.map(([start,solution])=>({start,solution,moves
 for(let i=levels.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[levels[i],levels[j]]=[levels[j],levels[i]];}
 let level=0,sticks=[],selected=null,movesMade=0,won=false,hint=null,revealed=false,savedPlay=null;
 const equationSticks=text=>[...text].map((char,slot)=>new Set(segmentSets[slot][char]));
+const matchLegend=document.createElement('div');matchLegend.id='match-legend';matchLegend.className='match-legend';matchLegend.hidden=true;
+matchLegend.innerHTML='<span><i class="match-source-key" aria-hidden="true"></i>Que cần chuyển</span><span><i class="match-target-key" aria-hidden="true"></i>Vị trí đặt mới</span><span data-removed-key><i class="match-removed-key" aria-hidden="true"></i>Vị trí đã lấy đi</span>';
+$('#match-board').after(matchLegend);
 const result=createGameResult($('#match-scene'),{restart:()=>start(),next:()=>start(level+1)});
 
 function identify(slot,segments){const keys=segmentSets[slot];return Object.keys(keys).find(char=>keys[char].length===segments.size&&[...keys[char]].every(part=>segments.has(part)));}
@@ -28,16 +32,18 @@ function render(){
    if(!fixed){element.type='button';element.dataset.slot=slot;element.dataset.segment=segment;element.setAttribute('aria-label',`${active?'Que đang đặt':'Vị trí trống'} ở kí hiệu ${slot+1}, nét ${segment}`);}
    element.className=`match-segment match-${segment}${active?' on':' off'}${selected?.slot===slot&&selected?.segment===segment?' picked':''}`;
    element.classList.toggle('hinted',hint?.slot===slot&&hint.segment===segment);
+   element.classList.toggle('hint-destination',hint?.destination?.slot===slot&&hint.destination.segment===segment);
    if(revealed){const original=segmentSets[slot][levels[level].start[slot]],target=segmentSets[slot][levels[level].solution[slot]];element.classList.toggle('solution-added',target.includes(segment)&&!original.includes(segment));element.classList.toggle('solution-removed',original.includes(segment)&&!target.includes(segment));if(!fixed)element.disabled=true;}
    symbol.append(element);
   }
   return symbol;
  }));
+ const legend=$('#match-legend');legend.hidden=!hint&&!revealed;legend.firstElementChild.hidden=revealed;legend.querySelector('[data-removed-key]').hidden=!revealed;
  const expression=equation();board.setAttribute('aria-label',`Phép tính ${expression?.text||'đang thay đổi'}`);
- $('#match-hint').disabled=won||revealed;$('#match-reveal').setAttribute('aria-pressed',String(revealed));setGameControlLabel($('#match-reveal'),revealed?'Ẩn lời giải':'Hiện lời giải');
+ $('#match-hint').disabled=won||revealed;$('#match-hint').setAttribute('aria-pressed',String(Boolean(hint)));setGameControlLabel($('#match-hint'),hint?'Ẩn gợi ý':'Hiện gợi ý');$('#match-reveal').setAttribute('aria-pressed',String(revealed));setGameControlLabel($('#match-reveal'),revealed?'Ẩn lời giải':'Hiện lời giải');
  $('#match-moves').textContent=`Cần chuyển ${levels[level].moves} que · Đã chuyển ${movesMade}/${levels[level].moves}`;
 }
-function start(next=level){result.clear();hint=null;revealed=false;savedPlay=null;level=Math.max(0,Math.min(levels.length-1,next));const {start:startEquation,moves}=levels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;movesMade=0;won=false;$('#match-level').textContent=`Màn ${level+1}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===levels.length-1;$('#match-status').textContent=`Nhấc một que rồi đặt vào nét mờ. Cần chuyển ${moves} que.`;render();}
+function start(next=level){result.clear();hint=null;revealed=false;savedPlay=null;$('#match-reveal').style.removeProperty('--solution-fill');delete $('#match-reveal').dataset.solutionProgress;level=Math.max(0,Math.min(levels.length-1,next));const {start:startEquation,moves}=levels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;movesMade=0;won=false;$('#match-level').textContent=`Màn ${level+1}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===levels.length-1;$('#match-status').textContent=`Nhấc một que rồi đặt vào nét mờ. Cần chuyển ${moves} que.`;render();}
 $('#match-board').addEventListener('click',event=>{
  const button=event.target.closest('[data-segment]');if(!button||movesMade>=levels[level].moves||won||revealed)return;hint=null;
  const slot=Number(button.dataset.slot),segment=button.dataset.segment,active=sticks[slot].has(segment);
@@ -51,10 +57,11 @@ $('#match-board').addEventListener('click',event=>{
 });
 $('#match-hint').addEventListener('click',()=>{
  if(won||revealed)return;
+ if(hint){hint=null;render();$('#match-status').textContent='Đã ẩn gợi ý. Chọn que diêm để tiếp tục chơi.';return;}
  const target=equationSticks(levels[level].solution),extras=sticks.flatMap((parts,slot)=>[...parts].filter(segment=>!target[slot].has(segment)).map(segment=>({slot,segment})));
  if(!extras.length){$('#match-status').textContent='Các que đã đúng vị trí.';return;}
  if(extras.length>levels[level].moves-movesMade){$('#match-status').textContent='Các bước hiện tại không dẫn tới lời giải mẫu trong số lượt còn lại. Chơi lại để xem gợi ý.';return;}
- hint=extras.find(part=>part.slot===selected?.slot&&part.segment===selected?.segment)||extras[0];render();sound('key');$('#match-status').textContent='Que được làm sáng là que cần chuyển. Chọn que đó rồi đặt vào nét mờ.';
+ hint={...(extras.find(part=>part.slot===selected?.slot&&part.segment===selected?.segment)||extras[0]),destination:target.flatMap((parts,slot)=>[...parts].filter(segment=>!sticks[slot].has(segment)).map(segment=>({slot,segment})))[0]};render();sound('key');$('#match-status').textContent='Que được làm sáng là que cần chuyển. Chọn que đó rồi đặt vào nét mờ.';
 });
 $('#match-reveal').addEventListener('click',()=>{
  result.clear();hint=null;

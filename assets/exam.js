@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {gradeExam} from './exam-core.js';
 const exam=JSON.parse(document.getElementById('exam-data').textContent);
 const $=id=>document.getElementById(id), key=`giasu-exam:${exam.slug}:${exam.version}`;

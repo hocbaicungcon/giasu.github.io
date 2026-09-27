@@ -8,6 +8,7 @@ date: "2026-09-13"
 tags: ["toán 4", "phân số"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 ## Một chiếc bánh, nhiều cách chia
 Nửa chiếc bánh cũng bằng hai phần tư chiếc bánh. Vì thế $\frac12=\frac24$.
 

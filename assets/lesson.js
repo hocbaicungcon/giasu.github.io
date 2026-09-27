@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 // Adjust visual digits only; leave KaTeX's layout and accessible MathML intact.
 function balanceMathDigits(root){
  const formulas=[...(root.matches?.('.katex-html')?[root]:[]),...root.querySelectorAll('.katex-html')];

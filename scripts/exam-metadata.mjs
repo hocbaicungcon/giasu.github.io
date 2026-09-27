@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 export function examMetadata(meta,file){
  const fail=message=>{throw Error(`${file}: ${message}`);};
  const group=meta.exam_group??'việt nam';

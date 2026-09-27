@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {riverLevels,waterLevels} from './puzzle-data.js';
 export {riverLevels,waterLevels};
 export function waterMove(state,action,index,caps=[5,3],destination=1-index){

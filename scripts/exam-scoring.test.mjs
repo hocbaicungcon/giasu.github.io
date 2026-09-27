@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {gradeExam,uses90MinuteScoring} from '../assets/exam-core.js';

@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {stripComments,convertLatex} from './latex.mjs';
 
 // Answers are explicit metadata, never inferred by solving the explanation.

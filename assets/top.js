@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 const topButton=document.querySelector('.go-top');
 if(topButton){
  const update=()=>topButton.classList.toggle('is-visible',window.scrollY>420);

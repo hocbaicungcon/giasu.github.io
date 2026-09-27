@@ -1,6 +1,7 @@
+/* credit: giasu.ai.vn */
 let muted=false,active=new Set();
 try{muted=localStorage.getItem('puzzle-muted')==='true';}catch{}
-export function stopSounds(){for(const audio of active){audio.pause();audio.currentTime=0;}active.clear();}
+export function stopSounds(){globalThis.speechSynthesis?.cancel();for(const audio of active){audio.pause();audio.currentTime=0;}active.clear();}
 export function sound(name,options={}){
  if(muted||document.hidden)return ()=>{};
  const audio=new Audio(new URL('./audio/'+name+'.mp3',import.meta.url));audio.volume=options.volume??(name==='munch'?.22:.3);audio.playbackRate=options.rate??1;audio.loop=options.loop??false;active.add(audio);
@@ -8,6 +9,18 @@ export function sound(name,options={}){
  audio.addEventListener('ended',()=>active.delete(audio),{once:true});
  audio.play().then(()=>{if(!active.has(audio))audio.pause();}).catch(()=>active.delete(audio));
  return stop;
+}
+// Browser voices keep announcements lightweight and follow the shared mute control.
+export function speakCombo(text,level=2){
+ if(muted||document.hidden||!globalThis.speechSynthesis||!globalThis.SpeechSynthesisUtterance)return;
+ const speech=globalThis.speechSynthesis;
+ speech.cancel();
+ const utterance=new SpeechSynthesisUtterance(text);
+ utterance.lang='en-US';
+ const voices=speech.getVoices();
+ utterance.voice=voices.find(voice=>voice.lang==='en-US'&&voice.localService)||voices.find(voice=>voice.lang.startsWith('en'))||null;
+ utterance.rate=1.06;utterance.pitch=Math.min(1.35,1.08+level*.012);utterance.volume=.65;
+ speech.speak(utterance);
 }
 const speaker='<path d="M11 5 6 9H3v6h3l5 4V5Z"/>';
 function updateSoundButton(button){

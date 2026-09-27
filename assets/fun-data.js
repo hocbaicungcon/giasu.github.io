@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 export async function loadData(file) {
  const response=await fetch(new URL(`./fun/${file}.json`,import.meta.url));
  if(!response.ok)throw Error('Không tải được dữ liệu. Hãy thử lại.');

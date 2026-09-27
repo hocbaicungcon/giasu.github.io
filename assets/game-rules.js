@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 export function moveBoard(board,direction,size=4){
  const result=[...board];let score=0;
  for(let line=0;line<size;line++){

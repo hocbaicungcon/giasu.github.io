@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 // A tactical recommendation, shared by the computer player and hint button.
 export function suggestCaroMove(cells,size,player){
  const opponent=player==='X'?'O':'X',occupied=cells.flatMap((value,i)=>value?[i]:[]);

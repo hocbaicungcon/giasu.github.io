@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import fs from 'node:fs';
 const source=fs.readFileSync(new URL('../assets/water_riddle.svg',import.meta.url),'utf8');
 const face=source.match(/<g id="face-happy">([\s\S]*?)<\/g>/)?.[1];

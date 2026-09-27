@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 const removed=['Tin học','Khoa học','Lịch sử và Địa lí','Đạo đức','Âm nhạc','Mĩ thuật','Mỹ thuật','Giáo dục thể chất','Tiếng Việt','Tự nhiên và Xã hội'];
 export function normalizeCategory(value){const v=value.trim().normalize('NFC'),key=v.toLocaleLowerCase('vi');if(key==='tiếng anh')return 'Ngoại ngữ';return removed.some(s=>s.toLocaleLowerCase('vi')===key)?'Các môn khác':v;}
 export const subjectGroups=[

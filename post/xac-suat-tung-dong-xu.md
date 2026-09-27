@@ -8,6 +8,7 @@ date: "2026-09-14"
 tags: ["toán 11", "xác suất"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 ## Trước khi làm bài
 Với không gian mẫu hữu hạn có các kết quả đồng khả năng, xác suất của biến cố $A$ là:
 

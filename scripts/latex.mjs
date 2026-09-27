@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import fs from 'node:fs';
 import katex from 'katex';
 import {normalizeCategory} from '../assets/subject-groups.js';

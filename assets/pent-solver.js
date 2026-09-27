@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {pentShapes} from './new-game-levels.js';
 const normalize=cells=>{const minX=Math.min(...cells.map(c=>c[0])),minY=Math.min(...cells.map(c=>c[1]));return cells.map(([x,y])=>[x-minX,y-minY]);};
 export function solvePent(layout){

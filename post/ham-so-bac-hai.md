@@ -8,6 +8,7 @@ date: "2026-09-17"
 tags: ["toán 10", "đại số"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 ## 1. Hàm số bậc hai là gì?
 Hàm số bậc hai có dạng $y=ax^2+bx+c$, trong đó $a\ne 0$. Đồ thị của hàm số là một đường parabol.
 

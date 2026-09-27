@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {sound} from './puzzle-audio.js';
 export function createGameResult(host,{restart,next}){
  const panel=host.closest('.game-panel'),overlay=document.createElement('div');overlay.className='game-result';overlay.hidden=true;

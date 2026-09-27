@@ -7,6 +7,7 @@ date: "2026-09-18"
 tags: ["giai thoại", "Archimedes", "vật lí"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 Khi được giao kiểm tra chiếc vương miện có phải vàng nguyên chất hay không, Archimedes đã suy nghĩ rất lâu. Một hôm, khi bước vào bồn tắm, ông nhận ra mực nước dâng lên theo thể tích phần cơ thể chìm trong nước.
 
 Ông vui mừng chạy ra ngoài và reo lên: **Eureka!** — “Ta tìm ra rồi!”. Từ quan sát đơn giản ấy, ông phát triển ý tưởng về lực đẩy của chất lỏng.

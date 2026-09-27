@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {loadData,choose} from './fun-data.js';
 const target=document.querySelector('[data-footer-quote]');
 try{
