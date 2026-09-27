@@ -896,8 +896,8 @@ html[data-theme="dark"] .exam-wrap .exam-policy{color:#786953}
 .tangram-divider{fill:none;stroke:#bbd5cf;stroke-width:2;stroke-dasharray:7 9}
 .tangram-target polygon{fill:#e7efeb;fill-opacity:.65;stroke-width:3;stroke-dasharray:7 5;stroke-linejoin:round;pointer-events:none}
 .tangram-piece{cursor:grab;outline:none}
-.tangram-piece polygon{stroke:#fff8ee;stroke-width:2;stroke-linejoin:round;stroke-alignment:inner;filter:drop-shadow(0 4px 3px #3b514738);transition:filter .14s ease,opacity .14s ease}
-.tangram-piece.selected polygon,.tangram-piece:focus-visible polygon{stroke:#fff8ee;stroke-width:2;filter:brightness(1.12) saturate(1.08) drop-shadow(0 5px 5px #3b514755)}
+.tangram-piece polygon{stroke:#fff8ee;stroke-width:3;stroke-linejoin:round;filter:drop-shadow(0 4px 3px #3b514738)}
+.tangram-piece.selected polygon,.tangram-piece:focus-visible polygon{stroke:#513a24;stroke-width:4;filter:drop-shadow(0 5px 5px #3b514755)}
 .tangram-piece.locked{cursor:default}
 .tangram-piece.locked polygon{stroke:#fff8ee;filter:none}
 .tangram-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
@@ -906,7 +906,7 @@ html[data-theme="dark"] #tangram-scene{background:#f3e9d4;border-color:#cbb792}
 html[data-theme="dark"] .tangram-bg{fill:#f3e9d4}
 html[data-theme="dark"] .tangram-divider{stroke:#cbb792}
 html[data-theme="dark"] .tangram-target polygon{fill:#e1d5bd}
-html[data-theme="dark"] .tangram-piece.selected polygon,html[data-theme="dark"] .tangram-piece:focus-visible polygon{stroke:#fff8ee;filter:brightness(1.12) saturate(1.08) drop-shadow(0 5px 5px #3b514755)}
+html[data-theme="dark"] .tangram-piece.selected polygon,html[data-theme="dark"] .tangram-piece:focus-visible polygon{stroke:#654525}
 @media(max-width:620px){#tangram-scene{margin-inline:-8px;border-radius:12px}.tangram-actions button{flex:1;padding:8px 10px;font-size:.9rem}}
 /* Sudoku selection is indicated by fill alone; pencil notes stay upright and legible. */
 #game-sudoku #sudoku-board button:focus-visible::after,#game-sudoku #sudoku-board .selected::after{content:none}
@@ -921,8 +921,8 @@ html[data-theme="dark"] .tangram-piece.selected polygon,html[data-theme="dark"] 
 .tangram-origin-caption{font-size:10px;font-weight:750;letter-spacing:.8px;fill:#746657}
 .tangram-silhouette{fill:#728478;stroke:none;pointer-events:none}
 .tangram-silhouette.show-seams{stroke:#f5faf7;stroke-width:2}
-.tangram-piece polygon{stroke:#fff8ee;stroke-width:2;stroke-linejoin:round;stroke-alignment:inner}
-.tangram-piece.selected polygon,.tangram-piece:focus-visible polygon{stroke:#fff8ee;stroke-width:2;filter:brightness(1.12) saturate(1.08) drop-shadow(0 5px 5px #3b514755)}
+.tangram-piece polygon{stroke:#fff8ee;stroke-width:2;stroke-linejoin:round}
+.tangram-piece.selected polygon,.tangram-piece:focus-visible polygon{stroke:#59432b;stroke-width:4}
 html[data-theme="dark"] #tangram-scene .tangram-level-tools{background:#f7eddaed;border-color:#c6ad83}
 html[data-theme="dark"] .tangram-silhouette{fill:#8b806d}
 html[data-theme="dark"] .tangram-silhouette.show-seams{stroke:#f3e9d4}
