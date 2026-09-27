@@ -103,3 +103,39 @@ document.addEventListener('click',event=>{
   if(count<10){event.stopImmediatePropagation();solutionTimer=setTimeout(clearSolutionProgress,2000);}
   else pendingSolution=null;
 },true);
+
+// A shared tooltip sits above scrollable toolbars and follows dynamic button labels.
+const gameTooltip=document.createElement('div');
+gameTooltip.className='game-nav-tooltip';gameTooltip.id='game-nav-tooltip';
+gameTooltip.setAttribute('role','tooltip');gameTooltip.setAttribute('popover','manual');
+document.body.append(gameTooltip);
+let tooltipButton=null,tooltipTimer;
+function hideGameTooltip(){
+ clearTimeout(tooltipTimer);
+ if(tooltipButton){tooltipButton.title=tooltipButton.getAttribute('aria-label')||gameTooltip.textContent;const descriptions=(tooltipButton.getAttribute('aria-describedby')||'').split(' ').filter(id=>id&&id!==gameTooltip.id);if(descriptions.length)tooltipButton.setAttribute('aria-describedby',descriptions.join(' '));else tooltipButton.removeAttribute('aria-describedby');}
+ tooltipButton=null;
+ if(gameTooltip.hidePopover&&gameTooltip.matches(':popover-open'))gameTooltip.hidePopover();
+ gameTooltip.classList.remove('is-visible');
+}
+function showGameTooltip(button){
+ hideGameTooltip();tooltipButton=button;
+ tooltipTimer=setTimeout(()=>{
+  const label=button.getAttribute('aria-label')||button.title||button.textContent.trim();if(!label)return;
+  const root=document.fullscreenElement||document.body;if(gameTooltip.parentElement!==root)root.append(gameTooltip);
+  gameTooltip.textContent=label;button.removeAttribute('title');
+  button.setAttribute('aria-describedby',[button.getAttribute('aria-describedby'),gameTooltip.id].filter(Boolean).join(' '));
+  gameTooltip.classList.add('is-visible');if(gameTooltip.showPopover)gameTooltip.showPopover();
+  const rect=button.getBoundingClientRect(),box=gameTooltip.getBoundingClientRect();
+  const left=Math.max(8,Math.min(innerWidth-box.width-8,rect.left+(rect.width-box.width)/2));
+  const top=rect.bottom+8+box.height<innerHeight?rect.bottom+8:Math.max(8,rect.top-box.height-8);
+  gameTooltip.style.left=left+'px';gameTooltip.style.top=top+'px';
+ },180);
+}
+document.addEventListener('pointerover',event=>{if(event.pointerType==='touch')return;const button=event.target.closest('.game-nav button');if(button&&button!==tooltipButton)showGameTooltip(button);});
+document.addEventListener('pointerout',event=>{if(tooltipButton&&event.target.closest('.game-nav button')===tooltipButton&&!tooltipButton.contains(event.relatedTarget))hideGameTooltip();});
+document.addEventListener('focusin',event=>{const button=event.target.closest('.game-nav button');if(button)showGameTooltip(button);});
+document.addEventListener('focusout',event=>{if(event.target===tooltipButton)hideGameTooltip();});
+document.addEventListener('pointerdown',hideGameTooltip,true);
+document.addEventListener('keydown',event=>{if(event.key==='Escape')hideGameTooltip();});
+document.addEventListener('scroll',hideGameTooltip,true);
+window.addEventListener('resize',hideGameTooltip);
