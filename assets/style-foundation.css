@@ -1,0 +1,370 @@
+/* Reset, design tokens, typography and accessibility. Base and theme states are defined together. */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 25px;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #1496b3;
+  outline-offset: 4px;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+button:hover,
+a:hover {
+  color: #097e96;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.skip {
+  position: absolute;
+  top: -100px;
+  left: 15px;
+  z-index: 5;
+  padding: 12px;
+  background: white;
+}
+
+.skip:focus {
+  top: 10px;
+}
+
+.dot {
+  color: #f58579;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.primary {
+  background: var(--ink);
+  color: #fff;
+  padding: 13px 22px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background: #116e80;
+  color: white;
+}
+
+[hidden] {
+  display: none!important;
+}
+
+.back {
+  font-size: 0.9375rem;
+  color: #62827f;
+}
+
+@media(min-width:1450px) {
+  .wrap {
+  max-width: 1280px;
+  }
+}
+
+@media(max-width:950px) {
+  .wrap {
+  padding-left: 24px;
+      padding-right: 24px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html {
+  scroll-behavior: auto;
+  }
+  
+  * {
+  transition: none!important;
+  }
+}
+
+@media print {
+  .back {
+  display: none;
+  }
+}
+
+input {
+  font: inherit;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  min-width: 0;
+  padding: 10px 0;
+  border: 0;
+  background: transparent;
+  font-size: 1rem;
+}
+
+select {
+  font: inherit;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 7px;
+  padding: 10px;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+.entertainment h1 {
+  font-size: 2.25rem;
+  margin: 10px 0;
+}
+
+#storage-warning {
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff0d8;
+  color: #765021;
+}
+
+.truefalse-row>label {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-right: 26px;
+}
+
+.truefalse-row input {
+  width: 18px;
+  height: 18px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes time-warning-pulse {
+50%{box-shadow:0 4px 20px #f0ae5460}
+}
+
+.display-bar {
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.is-munching {
+  z-index: 4;
+  animation: munch .8s ease-in-out 2;
+}
+
+.is-eaten {
+  animation: eaten 1.6s ease-in forwards;
+}
+
+@keyframes wake {
+to{transform:scaleX(1.3);opacity:.15}
+}
+
+@keyframes eaten {
+40%{transform:scale(1)}65%{transform:scale(.8) rotate(12deg)}100%{transform:scale(0);opacity:0}
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .is-munching {
+  animation: none;
+  }
+  
+  .is-eaten {
+  animation: none;
+      opacity: .3;
+  }
+}
+
+@keyframes menu-reveal {
+from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}
+}
+
+.stream-landing {
+  fill: #a2edff;
+  stroke: #53c3db;
+  stroke-width: 1.5;
+}
+
+.stream-landing ellipse {
+  fill: none;
+  animation: landing-ripple .7s ease-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.stream-landing ellipse:nth-child(2) {
+  animation-delay: .35s;
+}
+
+.stream-landing circle {
+  animation: landing-drop .7s ease-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.stream-landing circle:last-child {
+  animation-delay: .25s;
+}
+
+@keyframes stream-appear {
+from{opacity:0}to{opacity:1}
+}
+
+@keyframes landing-ripple {
+from{transform:scale(.4);opacity:1}to{transform:scale(1.6);opacity:0}
+}
+
+@keyframes landing-drop {
+from{transform:translateY(6px);opacity:1}to{transform:translateY(-5px);opacity:0}
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .stream-landing ellipse,
+  .stream-landing circle {
+  animation: none;
+  }
+}
+
+@font-face {
+font-family:"CMU Serif";src:url("fonts/cmu/cmunrm.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap
+}
+
+@font-face {
+font-family:"CMU Serif";src:url("fonts/cmu/cmunbx.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap
+}
+
+@font-face {
+font-family:"CMU Serif";src:url("fonts/cmu/cmunti.ttf") format("truetype");font-weight:400;font-style:italic;font-display:swap
+}
+
+@font-face {
+font-family:"CMU Serif";src:url("fonts/cmu/cmunbi.ttf") format("truetype");font-weight:700;font-style:italic;font-display:swap
+}
+
+html[data-font="serif"] body {
+  font-family: "CMU Serif","Times New Roman",serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --ink: #243b40;
+  --cyan: #42caea;
+  --peach: #fde0d0;
+  --coral: #fd827b;
+  --muted: #5f7478;
+  --line: #cbdedb;
+  --paper: #f4f8f6;
+  --lesson-math-size: 1.18em;
+}
+
+html[data-font="serif"] {
+  --lesson-math-size: 1em;
+}
+
+html[data-font="cmu"] body {
+  font-family: "CMU Serif","Times New Roman",serif;
+  font-weight: 400;
+  -webkit-text-stroke: .22px currentColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-font="stix"] body {
+  font-family: "STIX Two Text",Georgia,serif;
+  font-weight: 500;
+}
+
+html[data-font="cmu"] {
+  --lesson-math-size: 1em;
+}
+
+html[data-font="stix"] {
+  --lesson-math-size: 1.12em;
+}
+
+html[data-theme="dark"] {
+  color-scheme: light;
+  --ink: #382e23;
+  --muted: #786a56;
+  --line: #ddceb0;
+  --paper: #f3ead5;
+}
+
+html[data-theme="dark"] body {
+  background: #f3ead5;
+  color: #382e23;
+}
+
+html[data-theme="dark"] a:hover {
+  color: #ad6737;
+}
+
+@media(max-width:620px) {
+  .wrap {
+  padding-left: 16px;
+      padding-right: 16px;
+  }
+}
+
+@keyframes pipe-source-pulse {
+50%{transform:scale(.82);opacity:.72}
+}
+
+/* Shared muted text; component-specific colors belong to their own modules. */
+html[data-theme="dark"] :is(.hero p,.card p,.about p,.aside-note p,.exam-policy,.back,.eyebrow,.overline,.exam-nav-group strong,.lesson-video figcaption,footer p) {
+  color: #776751;
+}

@@ -1,3 +1,4 @@
+import {mountGameNavigation,setGameControlIcon} from './game-controls.js';
 import './extra-games.js';
 import {createGameResult} from './game-result.js';
 import {sound,stopSounds} from './puzzle-audio.js';
@@ -26,27 +27,18 @@ document.querySelectorAll('.game-panel').forEach(panel=>{
   const actions=panel.querySelector('.einstein-toolbar');
   if(actions)nav.append(actions);
  }
+ panel.querySelectorAll('.puzzle-actions,.tangram-actions').forEach(holder=>nav.append(...holder.querySelectorAll('button')));
  const sound=panel.querySelector('[data-puzzle-sound]');
  if(sound&&!nav.contains(sound))nav.append(sound);
- panel.querySelectorAll('.scene-corner-controls,.puzzle-actions').forEach(holder=>{if(holder!==nav&&!holder.children.length)holder.remove();});
- nav.querySelectorAll('button').forEach(button=>{
-  const label=button.getAttribute('aria-label')||button.textContent.trim();
-  if(button.id.endsWith('-new'))button.textContent='✦';
-  if(button.id==='caro-reset'||button.id==='hanoi-reset'||button.id==='sudoku-reset'||button.hasAttribute('data-restart'))button.textContent='↻';
-  if(button.id==='hanoi-undo')button.textContent='↶';
-  if(button.id==='sudoku-check')button.textContent='✓';
-  if(button.id==='sudoku-reveal')button.textContent='◉';
-  if(button.id==='word-give-up')button.textContent='×';
-  if(game==='words'&&button.hasAttribute('data-restart'))button.textContent='✦';
-  if(button.textContent.trim()!==label){button.setAttribute('aria-label',label);button.title=label;}
- });
+ panel.querySelectorAll('.scene-corner-controls,.puzzle-actions,.tangram-actions').forEach(holder=>{if(holder!==nav&&!holder.children.length)holder.remove();});
+ mountGameNavigation(nav);
 });
 document.querySelectorAll('.game-panel').forEach(panel=>{
- const control=document.createElement('button'); control.type='button'; control.className='game-fullscreen'; control.setAttribute('aria-label','Mở toàn màn hình'); control.title='Mở toàn màn hình'; control.textContent='⛶';
+ const control=document.createElement('button'); control.type='button'; control.className='game-fullscreen'; control.setAttribute('aria-label','Mở toàn màn hình'); control.title='Mở toàn màn hình'; setGameControlIcon(control,'fullscreen','Mở toàn màn hình');
  control.addEventListener('click',async()=>{if(document.fullscreenElement===panel){await document.exitFullscreen?.();}else{try{await panel.requestFullscreen?.();}catch{panel.classList.toggle('is-fullscreen');}}});
  const nav=panel.querySelector('.game-nav');
  nav.append(control);control.classList.add('in-toolbar');
- document.addEventListener('fullscreenchange',()=>{const active=document.fullscreenElement===panel||panel.classList.contains('is-fullscreen');control.textContent=active?'×':'⛶';control.setAttribute('aria-label',active?'Thoát toàn màn hình':'Mở toàn màn hình');control.title=active?'Thoát toàn màn hình':'Mở toàn màn hình';});
+ document.addEventListener('fullscreenchange',()=>{const active=document.fullscreenElement===panel||panel.classList.contains('is-fullscreen');setGameControlIcon(control,active?'close':'fullscreen',active?'Thoát toàn màn hình':'Mở toàn màn hình');});
 });
 let board,score,numberDone,numberSize=4;
 const numberResult=createGameResult($('#number-scene'),{restart:startNumbers});

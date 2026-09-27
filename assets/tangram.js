@@ -1,3 +1,4 @@
+import {setGameControlLabel} from './game-controls.js';
 import {levels} from './tangram-levels.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
@@ -1065,7 +1066,7 @@ function render(){
  document.querySelector(
   '#tangram-level-label'
  ).textContent=
-  `${level+1}/${levels.length} · ${levels[level].name}`;
+  `${level+1} · ${levels[level].name}`;
 
  document.querySelector(
   '#tangram-hint'
@@ -1074,12 +1075,8 @@ function render(){
   String(hint)
  );
 
- document.querySelector(
-  '#tangram-hint'
- ).textContent=
-  hint
-   ?'Ẩn đường ghép'
-   :'Hiện đường ghép';
+ setGameControlLabel(document.querySelector('#tangram-hint'),
+  hint ? 'Ẩn đường ghép' : 'Hiện đường ghép');
 }
 
 // ============================================================
@@ -1181,6 +1178,11 @@ svg.addEventListener(
   const pos=
    point(event);
 
+  const matrix=svg.getScreenCTM();
+  const touchLift=event.pointerType==='touch'&&matrix
+   ?64/Math.hypot(matrix.b,matrix.d)
+   :0;
+
   drag={
    i,
    dx:
@@ -1188,6 +1190,7 @@ svg.addEventListener(
    dy:
     pos.y-pieces[i].y,
    start:pos,
+   lift:touchLift,
    moved:false,
    wasSelected:
     selected===i
@@ -1250,7 +1253,7 @@ svg.addEventListener(
     65,
     Math.min(
      505,
-     pos.y-drag.dy
+     pos.y-drag.dy-drag.lift
     )
    );
 

@@ -1,0 +1,666 @@
+/* Riddles, quotations, study tips and jokes. Base and theme states are defined together. */
+
+.fun-page {
+  padding-top: 36px;
+  padding-bottom: 60px;
+  min-height: 65vh;
+}
+
+.fun-page h1 {
+  font-size: clamp(30px,5vw,46px);
+  margin: 22px 0 12px;
+}
+
+.fun-intro {
+  color: var(--muted);
+  max-width: 720px;
+}
+
+.fun-tiles {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 16px;
+  margin: 30px 0 44px;
+}
+
+.fun-tile {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid #9fcfca;
+  border-radius: 16px;
+  background: #ddf1ee;
+  color: #165c64;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.fun-tile:hover {
+  background: #c7e9e5;
+}
+
+.fun-player {
+  max-width: 850px;
+  margin: 28px auto;
+  background: #fff;
+  border: 1px solid #b7d4ce;
+  border-top: 5px solid #168798;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px #243b4012;
+}
+
+.fun-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.fun-filters label {
+  display: grid;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  font-weight: 650;
+}
+
+.fun-filters select,
+.riddle-form input {
+  width: 100%;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #9dbfbb;
+  border-radius: 10px;
+  padding: 12px;
+  font: inherit;
+  color: inherit;
+}
+
+.fun-help {
+  font-size: .85rem;
+  color: var(--muted);
+}
+
+.fun-content {
+  padding: 24px;
+  background: #edf7f4;
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+
+.fun-content .fun-text {
+  white-space: pre-line;
+  line-height: 1.8;
+  margin: 16px 0;
+  font-size: 1.12rem;
+}
+
+.fun-content blockquote {
+  border: 0;
+  padding: 0;
+  font-size: 1.4rem!important;
+  font-weight: 550;
+}
+
+.fun-author {
+  text-align: right;
+  color: #126779;
+  font-weight: 650;
+}
+
+.fun-label {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #146574;
+  background: #d2eae5;
+  padding: 4px 12px;
+  border-radius: 30px;
+}
+
+.fun-content h2 {
+  font-size: 1.6rem;
+  line-height: 1.35;
+}
+
+.jokes {
+  border-top-color: #c77543;
+}
+
+.jokes .fun-text {
+  font-size: 1rem;
+}
+
+.riddle-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.riddle-form button {
+  justify-self: start;
+}
+
+.riddle-result {
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 12px;
+  border: 1px solid #6bb6a4;
+  background: #e7f6ee;
+}
+
+.riddle-result.incorrect {
+  background: #fff0e6;
+  border-color: #d7a47a;
+}
+
+.riddle-result p {
+  margin-bottom: 0;
+  white-space: pre-line;
+}
+
+.fun-next {
+  margin-top: 22px;
+}
+
+.fun-error {
+  color: #a22f24;
+}
+
+.fun-player button:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
+.fun-page .back {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.fun-player :focus-visible,
+.fun-tile:focus-visible {
+  outline: 3px solid #167e91;
+  outline-offset: 3px;
+}
+
+@media(max-width:620px) {
+  .fun-page {
+  padding-top: 24px;
+  }
+  
+  .fun-tiles {
+  grid-template-columns: 1fr;
+      gap: 10px;
+  }
+  
+  .fun-tile {
+  padding: 18px;
+  }
+  
+  .fun-filters {
+  flex-direction: column;
+  }
+  
+  .fun-content .fun-text {
+  font-size: 1rem;
+  }
+  
+  .fun-content blockquote {
+  font-size: 1.15rem!important;
+  }
+  
+  .fun-next {
+  width: 100%;
+      justify-content: center;
+  }
+}
+
+.fun-player.riddles {
+  border-color: #81cbd6;
+  border-top-color: #1598b3;
+  background: linear-gradient(145deg,#e2f8fb,#fffdf3 75%);
+  box-shadow: 0 8px 0 #c5e9ec,0 16px 32px #16788a12;
+}
+
+.riddles .fun-content {
+  background: #fff8d9;
+  border: 2px dashed #d5b754;
+  border-radius: 22px 22px 22px 6px;
+  color: #51441e;
+}
+
+.riddles .fun-text {
+  font-weight: 650;
+}
+
+.riddles .primary {
+  background: #147e92;
+  color: #fff;
+  border: 1px solid #0d6c80;
+  box-shadow: 0 4px 0 #0c5a69;
+}
+
+.riddles .primary:hover {
+  background: #106a7c;
+}
+
+.riddles .fun-next {
+  background: #ffe199;
+  color: #514019;
+  border-color: #d1a743;
+  box-shadow: 0 4px 0 #d1a743;
+}
+
+.riddles .fun-next:hover {
+  background: #ffd477;
+}
+
+.riddles .riddle-form input {
+  border-color: #80bec7;
+}
+
+.fun-player.jokes {
+  border-color: #e6af87;
+  border-top-color: #e87e58;
+  background: linear-gradient(145deg,#fff0df,#fff8ef 70%,#fce5e0);
+  box-shadow: 0 8px 0 #f2d1bb,0 16px 32px #9c572012;
+}
+
+.jokes .fun-content {
+  background: #fffdf5;
+  border-left: 5px solid #edac40;
+  border: 1px solid #e8c999;
+  border-radius: 8px 22px 22px 22px;
+}
+
+.jokes .fun-content h2 {
+  color: #984025;
+  font-weight: 800;
+}
+
+.jokes .fun-label {
+  background: #ffdf98;
+  color: #62450e;
+}
+
+.jokes .primary {
+  background: #ad482b;
+  color: #fff;
+  border: 1px solid #933a22;
+  box-shadow: 0 4px 0 #81341e;
+}
+
+.jokes .primary:hover {
+  background: #943b24;
+}
+
+.jokes .fun-filters select {
+  border-color: #d5ac88;
+}
+
+.fun-tile[href$="do-vui-tieng-anh.html"] {
+  background: #d8f4f8;
+  border-color: #8bcbd5;
+  color: #116677;
+}
+
+.fun-tile[href$="truyen-cuoi-tieng-anh.html"] {
+  background: #ffe5c6;
+  border-color: #e0b17c;
+  color: #874522;
+}
+
+.fun-tile[href$="do-vui-tieng-anh.html"]:hover {
+  background: #bdeaf1;
+}
+
+.fun-tile[href$="truyen-cuoi-tieng-anh.html"]:hover {
+  background: #ffd5a4;
+}
+
+.quotes .fun-content blockquote.fun-text {
+  font-family: Georgia,'Palatino Linotype','Book Antiqua',serif;
+  font-size: clamp(1.4rem,2.6vw,1.85rem)!important;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: .01em;
+  color: #315e60;
+  padding-left: 20px;
+  border-left: 3px solid #d5ac67;
+  margin: 26px 0;
+}
+
+.quotes .fun-author {
+  font-size: .95rem;
+  letter-spacing: .03em;
+  color: #866133;
+}
+
+@media(max-width:620px) {
+  .quotes .fun-content blockquote.fun-text {
+  padding-left: 14px;
+      font-size: 1.35rem!important;
+  }
+  
+  .riddles .primary,
+  .jokes .primary {
+  margin-bottom: 4px;
+  }
+}
+
+.fun-count {
+  font-size: .85rem;
+  color: var(--muted);
+  display: none;
+}
+
+.fun-filters:not(:empty) {
+  margin-bottom: 20px;
+}
+
+.riddles .fun-content .fun-text {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.fun-tile[href$="cau-do-iq.html"] {
+  background: #eae4f6;
+  border-color: #beb0dc;
+  color: #605080;
+}
+
+.fun-tile[href$="chuyen-vui.html"] {
+  background: #fbe1e5;
+  border-color: #dfabb8;
+  color: #934659;
+}
+
+.fun-tile[href$="danh-ngon.html"] {
+  background: #fff0cb;
+  border-color: #d9bf80;
+  color: #7a5a20;
+}
+
+.fun-tile[href$="meo-hoc-tap.html"] {
+  background: #dcf1e6;
+  border-color: #9bcbb0;
+  color: #28664b;
+}
+
+.fun-tile[href$="cau-do-iq.html"]:hover {
+  background: #ddd3ef;
+}
+
+.fun-tile[href$="chuyen-vui.html"]:hover {
+  background: #f6cdd6;
+}
+
+.fun-tile[href$="danh-ngon.html"]:hover {
+  background: #ffe6aa;
+}
+
+.fun-tile[href$="meo-hoc-tap.html"]:hover {
+  background: #c8e8d7;
+}
+
+.fun-page:has(.quotes) h1 {
+  color: #7a5a20;
+}
+
+.fun-player.quotes {
+  border-color: #ddca96;
+  border-top-color: #b78d3e;
+  background: #fffdf6;
+}
+
+.quotes .fun-content {
+  border: 1px solid #d5dfce;
+  padding: 32px;
+  background: #fff7e3;
+  border-color: #e4d4a9;
+}
+
+.quotes .primary {
+  background: #806022;
+  color: #fff;
+}
+
+.quotes .primary:hover {
+  background: #694e1b;
+}
+
+.fun-page:has(.tips) h1 {
+  color: #28664b;
+}
+
+.fun-player.tips {
+  border-color: #a7cfb8;
+  border-top-color: #438968;
+  background: #f6fcf8;
+}
+
+.tips .fun-content {
+  background: #e2f3e9;
+}
+
+.tips .fun-label {
+  background: #c7e7d4;
+  color: #245b42;
+}
+
+.tips .primary {
+  background: #317452;
+  color: #fff;
+}
+
+.tips .primary:hover {
+  background: #255d41;
+}
+
+.fun-page:has(.riddles) h1 {
+  color: #116677;
+}
+
+.fun-page:has(.jokes) h1 {
+  color: #984025;
+}
+
+.fun-cau-do-iq h1 {
+  color: #605080;
+}
+
+.fun-cau-do-iq .card-art {
+  background: #eae4f6;
+  color: #605080;
+}
+
+.fun-chuyen-vui h1 {
+  color: #934659;
+}
+
+.fun-chuyen-vui .card-art {
+  background: #fbe1e5;
+  color: #934659;
+}
+
+@media(max-width:620px) {
+  .fun-player {
+  border-radius: 14px;
+      padding: 10px;
+      margin: 20px 0;
+  }
+  
+  .fun-content,
+  .quotes .fun-content {
+  padding: 14px 10px;
+  }
+  
+  .riddles .fun-content .fun-text {
+  font-size: 1.15rem;
+  }
+  
+  .fun-filters:not(:empty) {
+  margin-bottom: 14px;
+  }
+}
+
+html[data-theme="dark"] :is(.tag,.fun-label,.category.active,.nav-pill,.fun-tile,.card-art) {
+  background: #29474b;
+  color: #d9eeee;
+  border-color: #54787a;
+}
+
+.fun-tile[href$="games.html"] {
+  background: #dcebf9;
+  border-color: #a1bdd8;
+  color: #355c80;
+}
+
+html[data-theme="dark"] .fun-tile[href$="games.html"] {
+  background: #2c4055;
+  color: #d2e7fc;
+}
+
+html[data-theme="dark"] :is(.fun-tile[href$="cau-do-iq.html"],.fun-cau-do-iq .card-art) {
+  background: #e6e0ef;
+  color: #4e4167;
+}
+
+html[data-theme="dark"] :is(.fun-tile[href$="chuyen-vui.html"],.fun-chuyen-vui .card-art) {
+  background: #f1dfe0;
+  color: #70454a;
+}
+
+html[data-theme="dark"] :is(.fun-tile[href$="truyen-cuoi-tieng-anh.html"],.jokes .fun-content) {
+  background: #f2e2ce;
+  color: #65492c;
+}
+
+html[data-theme="dark"] :is(.fun-tile[href$="danh-ngon.html"],.quotes .fun-content) {
+  background: #eee5c9;
+  color: #624d27;
+}
+
+html[data-theme="dark"] :is(.fun-tile[href$="meo-hoc-tap.html"],.tips .fun-content) {
+  background: #dce8d8;
+  color: #37523b;
+}
+
+html[data-theme="dark"] .riddles .fun-content {
+  background: #e6e7cf;
+  color: #4c542e;
+}
+
+html[data-theme="dark"] .riddle-result.incorrect {
+  background: #f2e0cd;
+  color: #68462c;
+  border-color: #cda879;
+}
+
+html[data-theme="dark"] .riddles .primary {
+  background: #8c5b34;
+  color: #fff8e9;
+  border-color: #744725;
+  box-shadow: 0 4px 0 #644020;
+}
+
+html[data-theme="dark"] .riddles .primary:hover {
+  background: #754923;
+  color: #fff8e9;
+}
+
+html[data-theme="dark"] .riddles .fun-next {
+  background: #e8cc88;
+  color: #4f3d20;
+  border-color: #bda366;
+  box-shadow: 0 4px 0 #bda366;
+}
+
+html[data-theme="dark"] .riddles .fun-next:hover {
+  background: #dec07b;
+  color: #4f3d20;
+}
+
+html[data-theme="dark"] .fun-player.tips {
+  background: #f5ecda;
+  border-color: #d7c4a2;
+  border-top-color: #b58b55;
+}
+
+html[data-theme="dark"] .tips .fun-content {
+  background: #ebdfc7;
+  color: #4d3e2b;
+  border-color: #d4bf99;
+}
+
+html[data-theme="dark"] .tips .fun-label {
+  background: #e0cba7;
+  color: #594329;
+}
+
+html[data-theme="dark"] .tips .primary {
+  background: #8c5b34;
+  color: #fff8e9;
+}
+
+html[data-theme="dark"] .tips .primary:hover {
+  background: #754923;
+  color: #fff8e9;
+}
+
+html[data-theme="dark"] .fun-player.riddles {
+  background: linear-gradient(145deg,#f4e7d1,#fbf2e1 75%);
+  border-color: #d0b987;
+  border-top-color: #ad8150;
+  box-shadow: 0 8px 0 #ddc9a4,0 16px 32px #76572a12;
+}
+
+html[data-theme="dark"] .fun-player.jokes {
+  background: linear-gradient(145deg,#f5e4d3,#fbf0e3 70%,#f2dfd3);
+  border-color: #d8b9a0;
+  border-top-color: #b77d5b;
+}
+
+html[data-theme="dark"] .fun-player.quotes {
+  background: #f8efdc;
+  border-color: #d8c399;
+  border-top-color: #a7824d;
+}
+
+html[data-theme="dark"] .fun-page:has(.riddles) h1,
+html[data-theme="dark"] .fun-page:has(.tips) h1 {
+  color: #80532f;
+}
+
+html[data-theme="dark"] .fun-player :is(select,input) {
+  background: #fff9ed;
+  color: #382e23;
+  border-color: #cbb895;
+}
+
+html[data-theme="dark"] .fun-player :focus-visible,
+html[data-theme="dark"] .fun-tile:focus-visible {
+  outline-color: #a67840;
+}
+
+html[data-theme="dark"] .fun-tile:hover {
+  background: #dfcca8;
+  color: #543a20;
+}
+
+html[data-theme="dark"] .fun-tile[href$="do-vui-tieng-anh.html"] {
+  background: #e9d9b6;
+  color: #654824;
+  border-color: #c6a878;
+}
+
+html[data-theme="dark"] .fun-tile[href$="do-vui-tieng-anh.html"]:hover {
+  background: #ddc595;
+}
+
+html[data-theme="dark"] .fun-tile[href$="meo-hoc-tap.html"]:hover {
+  background: #d1ddc9;
+  color: #37523b;
+}

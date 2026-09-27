@@ -1,3 +1,4 @@
+import {setGameControlIcon} from './game-controls.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
 import {einsteinGroups as groups,einsteinLevels,matchesEinsteinClue} from './einstein-levels.js';
@@ -48,23 +49,20 @@ if(board){
  const matches=clue=>matchesEinsteinClue(values,clue);
  const levelSelect=document.getElementById('einstein-jump');
  levelSelect.replaceChildren(...einsteinLevels.map((entry,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`${i+1} ${'★'.repeat(['Dễ','Vừa','Khó','Chuyên gia'].indexOf(entry.difficulty)+1)}`;option.title=entry.difficulty;return option;}));
- const headers=[],slots=[],tokens=[],bankRows={};
- const corner=document.createElement('div');corner.className='einstein-corner';corner.innerHTML=svg('<path d="M8 7h32M8 24h32M8 41h32M8 7v34m16-34v34m16-34v34" fill="none" stroke="currentColor" stroke-width="2.5"/>');corner.setAttribute('aria-label','Danh mục');board.append(corner);
+ const headers=[],slots=[];
  for(let house=0;house<5;house++){const header=document.createElement('div');header.className='einstein-house';header.innerHTML=`<strong>${house+1}</strong>`;header.setAttribute('aria-label',`Nhà ${house+1}`);headers.push(header);board.append(header);}
- const rowIcons={color:houseIcon(),nation:flags['Đức'],drink:icon('drink','Sữa'),pet:icon('pet','Cá'),hobby:icon('hobby','Đọc sách')};
- for(const [group,data] of Object.entries(groups)){
-  const heading=document.createElement('div');heading.className='einstein-bank-cell';heading.innerHTML=`<span class="einstein-bank-icon">${rowIcons[group]}</span>`;heading.setAttribute('role','group');heading.setAttribute('aria-label',data.label);heading.title=data.label;bankRows[group]=heading;board.append(heading);
+ for(const group of Object.keys(groups)){
   for(let house=0;house<5;house++){const slot=document.createElement('div');slot.className='einstein-slot';slot.dataset.group=group;slot.dataset.house=house;slot.setAttribute('role','group');slots.push(slot);board.append(slot);}
  }
  const modes=document.createElement('div');modes.className='einstein-modes';modes.setAttribute('role','group');modes.setAttribute('aria-label','Chế độ chọn hoặc loại trừ');
- const modeButtons=['pick','exclude'].map((value,i)=>{const button=document.createElement('button');button.type='button';button.innerHTML=i?svg('<path d="m12 12 24 24m0-24L12 36" fill="none" stroke="currentColor" stroke-width="4"/>'):svg('<path d="m9 24 10 10 21-22" fill="none" stroke="currentColor" stroke-width="4"/>');button.title=i?'Loại trừ / khôi phục khả năng':'Chốt đáp án';button.setAttribute('aria-label',button.title);button.addEventListener('click',()=>{mode=value;refresh();});modes.append(button);return button;});document.querySelector('.einstein-toolbar').prepend(modes);
+ const modeButtons=['pick','exclude'].map((value,i)=>{const button=document.createElement('button');button.type='button';button.innerHTML=i?svg('<path d="m12 12 24 24m0-24L12 36" fill="none" stroke="currentColor" stroke-width="4"/>'):svg('<path d="m9 24 10 10 21-22" fill="none" stroke="currentColor" stroke-width="4"/>');button.title=i?'Loại trừ / khôi phục khả năng':'Chốt đáp án';button.setAttribute('aria-label',button.title);setGameControlIcon(button,i?'close':'check',button.title);button.addEventListener('click',()=>{mode=value;refresh();});modes.append(button);return button;});document.querySelector('.einstein-toolbar').prepend(modes);
  const snapshot=()=>({values:structuredClone(values),excluded:structuredClone(excluded)});
  const saveKey=()=>`einstein-progress-v2-${level}`;
  const signature=()=>JSON.stringify([solution,given,currentClues]);
  const candidates=(group,house)=>groups[group].options.filter(v=>!(excluded[`${group}:${house}`]||[]).includes(v)&&!values[group].includes(v));
  function settle(){let changed=true;while(changed){changed=false;for(const group of Object.keys(groups))for(let house=0;house<5;house++){if(values[group][house])continue;const options=candidates(group,house);if(options.length===1){values[group][house]=options[0];changed=true;}}}}
  function save(){if(loading)return;try{localStorage.setItem(saveKey(),JSON.stringify({signature:signature(),...snapshot(),history,future,mode}));localStorage.setItem('einstein-last-level-v2',String(level));}catch{}}
- function validState(state){if(!state||!state.values||!state.excluded)return false;for(const [group,data] of Object.entries(groups)){const row=state.values[group];if(!Array.isArray(row)||row.length!==5||row.some(v=>v!==''&&!data.options.includes(v))||new Set(row.filter(Boolean)).size!==row.filter(Boolean).length)return false;}if(!given.every(([g,h,v])=>state.values[g][h]===v))return false;return Object.entries(state.excluded).every(([key,list])=>{const [g,h]=key.split(':');return groups[g]&&/^[0-4]$/.test(h)&&Array.isArray(list)&&list.every(v=>groups[g].options.includes(v));});}
+ function validState(state){if(!state||!state.values||!state.excluded)return false;for(const group of Object.keys(groups)){const row=state.values[group];if(!Array.isArray(row)||row.length!==5||row.some(v=>v!==''&&!data.options.includes(v))||new Set(row.filter(Boolean)).size!==row.filter(Boolean).length)return false;}if(!given.every(([g,h,v])=>state.values[g][h]===v))return false;return Object.entries(state.excluded).every(([key,list])=>{const [g,h]=key.split(':');return groups[g]&&/^[0-4]$/.test(h)&&Array.isArray(list)&&list.every(v=>groups[g].options.includes(v));});}
  function resume(){try{const state=JSON.parse(localStorage.getItem(saveKey()));if(state?.signature!==signature()||!validState(state))return;values=state.values;excluded=state.excluded;history=Array.isArray(state.history)?state.history.filter(validState).slice(-100):[];future=Array.isArray(state.future)?state.future.filter(validState).slice(-100):[];mode=state.mode==='exclude'?'exclude':'pick';}catch{}}
  function remember(){history.push(snapshot());if(history.length>100)history.shift();future=[];}
  function restore(state){values=structuredClone(state.values);excluded=structuredClone(state.excluded);clueNodes.forEach(node=>node.classList.remove('wrong'));refresh();}

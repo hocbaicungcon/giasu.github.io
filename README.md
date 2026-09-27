@@ -307,3 +307,24 @@ Các trang trong `giai-tri/` được tạo tự động khi build từ `assets/
 - Cấu hình màn chơi ở `assets/puzzle-levels.js`. Kiểm tra tự động duyệt các trạng thái để bảo đảm mỗi màn có lời giải trong giới hạn lượt. Các hình trích từ `assets/wolf cabbage sheep.svg` và `assets/water_riddle.svg` khi build; file SVG gốc không bị sửa.
 - Hai nút sắp xếp bài học/đề thi đổi chiều theo tên hoặc ngày đăng (`date` trong metadata), không phải năm diễn ra kỳ thi.
 - Công cụ trong menu lưu mức chữ 80–130% và chế độ sáng/tối trên trình duyệt.
+
+## Cấu trúc CSS và giao diện game
+
+`assets/style.css` là danh sách các module CSS, không chứa các bản vá nối tiếp:
+
+- `style-foundation.css`: reset, biến chung, font chữ và khả năng truy cập.
+- `style-navigation.css`: menu, công cụ hiển thị và footer.
+- `style-library.css`: trang chủ, danh mục và thư viện.
+- `style-lessons.css`, `style-exams.css`: bài học, công thức và đề kiểm tra.
+- `style-entertainment.css`: câu đố, danh ngôn và mẹo học tập.
+- `style-games.css`: bàn chơi và trạng thái của từng game.
+- `style-game-controls.css`: thanh điều hướng và màn kết quả dùng chung.
+
+Sửa trực tiếp quy tắc của thành phần tương ứng, không thêm bản vá ở cuối tệp.
+Màu sáng/đèn vàng của nút game được khai báo bằng các biến `--game-control-*`
+và `--game-result-*`. Nút điều hướng dùng SVG trong `game-controls.js`, cùng
+viewBox 24×24, kích thước và nét vẽ. Dùng `setGameControlLabel` khi cần cập nhật
+nhãn/count để giữ biểu tượng căn giữa.
+
+Khi build, `scripts/styles.mjs` gộp các module thành `dist/assets/style.css`:
+trình duyệt chỉ tải một tệp CSS và phiên bản cache được cập nhật như trước.
