@@ -79,12 +79,12 @@ html[data-theme="dark"] {
   color: var(--game-control-ink);
 }
 
-/* Tangram has more tools; let the short level number take only spare space. */
-#game-tangram .game-nav {
+/* Compact toolbars share the available width with the level picker. */
+:is(#game-tangram,#game-pentomino) .game-nav {
   gap: 3px;
   overflow: visible;
 }
-#game-tangram .game-nav select {
+:is(#game-tangram,#game-pentomino) .game-nav select {
   flex: 1 1 64px;
   width: 64px;
   min-width: 44px;
@@ -94,6 +94,13 @@ html[data-theme="dark"] {
 }
 
 .game-nav > strong { display: none; }
+.game-nav .caro-modes {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 6px;
+}
+
 .game-nav .restart-sound {
   display: flex;
   align-items: center;
@@ -238,6 +245,7 @@ html[data-theme="dark"] {
 }
 #game-water .water-world > .game-nav { margin-bottom: 8px; }
 #game-river .river-world > .game-nav {
+  z-index: 8;
   width: calc(100% - 16px);
   margin: 8px 8px 10px;
   border-radius: 9px;
@@ -427,7 +435,7 @@ html[data-theme="dark"] {
 }
 .result-confetti i:nth-child(3n) { background: #efba51; }
 .result-confetti i:nth-child(3n + 1) { background: #ee9580; }
-.game-result[data-outcome="lost"] .result-confetti { display: none; }
+.game-result:is([data-outcome="lost"],[data-outcome="draw"]) .result-confetti { display: none; }
 .game-result[data-outcome="lost"] .result-art { animation: result-sway .7s ease-in-out; }
 
 @media (max-width: 620px) {
@@ -438,7 +446,7 @@ html[data-theme="dark"] {
   .game-nav .game-fullscreen { display: none; }
   #game-sudoku .game-nav { gap: 3px; }
   #game-tangram { padding-inline: 6px; }
-  #game-tangram .game-nav {
+  :is(#game-tangram,#game-pentomino) .game-nav {
     --game-control-size: clamp(26px, 7.2vw, 34px);
     --game-control-icon-size: 18px;
     gap: 2px;

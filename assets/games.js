@@ -53,6 +53,8 @@ $('#number-board').addEventListener('keydown',e=>{const d={ArrowLeft:'left',Arro
 let touch;$('#number-board').addEventListener('pointerdown',e=>{touch=[e.clientX,e.clientY];$('#number-board').setPointerCapture(e.pointerId);});
 $('#number-board').addEventListener('pointerup',e=>{if(!touch)return;const dx=e.clientX-touch[0],dy=e.clientY-touch[1];touch=null;if(Math.max(Math.abs(dx),Math.abs(dy))>25)move(Math.abs(dx)>Math.abs(dy)?dx>0?'right':'left':dy>0?'down':'up');});$('#number-board').addEventListener('pointercancel',()=>touch=null);
 let answer,guesses,wordDone,draft='',keyStates={};const dictionary=new Set(words);
+const wordResult=createGameResult($('#word-scene'),{restart:()=>startWords(false),next:()=>startWords()});
+$('#word-scene [data-result-next]').textContent='Từ tiếp theo →';
 const stateNames={correct:'đúng vị trí',present:'có trong từ, sai vị trí',absent:'không có thêm chữ này'},rank={absent:1,present:2,correct:3};
 function renderWords(reveal=false){
  const rows=Array.from({length:6},(_,r)=>{const row=document.createElement('div');row.className='word-row';row.setAttribute('role','group');row.setAttribute('aria-label',`Lượt ${r+1}`);const entry=guesses[r];const letters=entry?.word||(r===guesses.length?draft:'');
@@ -61,7 +63,7 @@ function renderWords(reveal=false){
  document.querySelectorAll('[data-word-key]').forEach(b=>{const key=b.dataset.wordKey,state=keyStates[key];b.className='word-key'+(key.length>1?' wide':'')+(state?' '+state:'');b.disabled=wordDone;b.setAttribute('aria-label',key==='ENTER'?'Gửi đáp án':key==='BACKSPACE'?'Xoá một chữ':key+(state?': '+stateNames[state]:''));});
 }
 for(const keys of ['QWERTYUIOP'.split(''),'ASDFGHJKL'.split(''),['ENTER',...'ZXCVBNM','BACKSPACE']]){const row=document.createElement('div');row.className='keyboard-row';for(const key of keys){const button=document.createElement('button');button.type='button';button.dataset.wordKey=key;button.textContent=key==='ENTER'?'↵':key==='BACKSPACE'?'⌫':key;row.append(button);}$('#word-keyboard').append(row);}
-function startWords(){const options=words.filter(w=>w!==answer);answer=options[Math.floor(Math.random()*options.length)];guesses=[];wordDone=false;draft='';keyStates={};$('#word-status').textContent='Một từ mới đang chờ bạn. Có 6 lượt đoán.';renderWords();}
+function startWords(fresh=true){wordResult.clear();if(fresh||!answer){const options=words.filter(w=>w!==answer);answer=options[Math.floor(Math.random()*options.length)];}guesses=[];wordDone=false;draft='';keyStates={};$('#word-status').textContent='Một từ mới đang chờ bạn. Có 6 lượt đoán.';renderWords();}
 function wordKey(key){
  if(wordDone)return;
  if(key==='BACKSPACE'){if(draft.length)sound('key');draft=draft.slice(0,-1);renderWords();return;}
@@ -70,11 +72,11 @@ function wordKey(key){
  if(draft.length!==5){sound('error');$('#word-status').textContent='Nhập đủ 5 chữ cái trước khi gửi nhé.';return;}
  if(!dictionary.has(draft)){sound('error');$('#word-status').textContent='Từ chưa có trong bộ từ cơ bản. Thử HOUSE, TRAIN hoặc APPLE. Lượt đoán chưa bị tính.';return;}
  const guess=draft,scores=scoreWord(answer,guess);guesses.push({word:guess,scores});scores.forEach((state,i)=>{if((rank[keyStates[guess[i]]]||0)<rank[state])keyStates[guess[i]]=state;});
- wordDone=guess===answer||guesses.length===6;draft='';renderWords(true);sound(guess===answer?'win':wordDone?'lose':'merge');
+ wordDone=guess===answer||guesses.length===6;draft='';renderWords(true);if(!wordDone)sound('merge');else wordResult.show({won:guess===answer,title:guess===answer?'Chiến thắng!':'Hết lượt đoán!',description:guess===answer?`${answer} — bạn đã đoán đúng sau ${guesses.length} lượt.`:`Đáp án là ${answer}. Hãy thử lại nhé!`,hasNext:guess===answer,delay:750});
  $('#word-status').textContent=guess===answer?`Chính xác! ${answer} — bạn dùng ${guesses.length} lượt.`:wordDone?`Hết lượt. Đáp án là ${answer}.`:`Còn ${6-guesses.length} lượt. Xem màu ô và bàn phím để đoán tiếp.`;
 }
 $('#word-keyboard').addEventListener('click',event=>{const key=event.target.closest('[data-word-key]')?.dataset.wordKey;if(key)wordKey(key);});
-document.addEventListener('keydown',event=>{if($('#game-words').hidden||event.ctrlKey||event.metaKey||event.altKey||event.isComposing||event.target.closest('input,textarea,select,[contenteditable="true"],header'))return;const key=event.key.toUpperCase();if(/^[A-Z]$/.test(key)||['ENTER','BACKSPACE'].includes(key)){event.preventDefault();wordKey(key);}});
+document.addEventListener('keydown',event=>{if($('#game-words').hidden||event.ctrlKey||event.metaKey||event.altKey||event.isComposing||event.target.closest('input,textarea,select,[contenteditable="true"],header,.game-result'))return;const key=event.key.toUpperCase();if(/^[A-Z]$/.test(key)||['ENTER','BACKSPACE'].includes(key)){event.preventDefault();wordKey(key);}});
 const starts={numbers:startNumbers,river:startRiver,words:startWords};document.querySelectorAll('[data-restart]').forEach(b=>b.addEventListener('click',()=>{if(starts[b.dataset.restart]){stopSounds();starts[b.dataset.restart]();}}));document.getElementById('number-size')?.addEventListener('change',event=>{numberSize=Number(event.target.value);startNumbers();});startNumbers();startRiver();startWords();
 
-$('#word-give-up').addEventListener('click',()=>{if(wordDone)return;wordDone=true;draft='';renderWords();$('#word-status').textContent='Đã bỏ cuộc. Đáp án là '+answer+'. Bấm Từ mới để chơi tiếp.';sound('lose');});
+$('#word-give-up').addEventListener('click',()=>{if(wordDone)return;wordDone=true;draft='';renderWords();$('#word-status').textContent='Đã bỏ cuộc. Đáp án là '+answer+'. Bấm Từ mới để chơi tiếp.';wordResult.show({won:false,title:'Đã bỏ cuộc',description:'Đáp án là '+answer+'. Bạn có thể chơi lại hoặc xem lại các lượt đoán.'});});

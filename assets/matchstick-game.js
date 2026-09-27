@@ -1,3 +1,4 @@
+import {setGameControlLabel} from './game-controls.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
 import {matchstickLevels} from './matchstick-levels.js';
@@ -12,7 +13,8 @@ const segmentSets=[digitSegments,operatorSegments,digitSegments,equalSegments,di
 const possibleSegments=['abcdefg','hv','abcdefg','ul','abcdefg'];
 const levels=[...matchstickLevels.map(([start,solution])=>({start,solution,moves:1})),...matchstickExtraLevels.map(([start,solution,moves])=>({start,solution,moves})),...generatedMatchstickLevels.map(([start,solution,moves])=>({start,solution,moves}))];
 for(let i=levels.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[levels[i],levels[j]]=[levels[j],levels[i]];}
-let level=0,sticks=[],selected=null,movesMade=0,won=false;
+let level=0,sticks=[],selected=null,movesMade=0,won=false,hint=null,revealed=false,savedPlay=null;
+const equationSticks=text=>[...text].map((char,slot)=>new Set(segmentSets[slot][char]));
 const result=createGameResult($('#match-scene'),{restart:()=>start(),next:()=>start(level+1)});
 
 function identify(slot,segments){const keys=segmentSets[slot];return Object.keys(keys).find(char=>keys[char].length===segments.size&&[...keys[char]].every(part=>segments.has(part)));}
@@ -25,16 +27,19 @@ function render(){
    const element=document.createElement(fixed?'span':'button');
    if(!fixed){element.type='button';element.dataset.slot=slot;element.dataset.segment=segment;element.setAttribute('aria-label',`${active?'Que đang đặt':'Vị trí trống'} ở kí hiệu ${slot+1}, nét ${segment}`);}
    element.className=`match-segment match-${segment}${active?' on':' off'}${selected?.slot===slot&&selected?.segment===segment?' picked':''}`;
+   element.classList.toggle('hinted',hint?.slot===slot&&hint.segment===segment);
+   if(revealed){const original=segmentSets[slot][levels[level].start[slot]],target=segmentSets[slot][levels[level].solution[slot]];element.classList.toggle('solution-added',target.includes(segment)&&!original.includes(segment));element.classList.toggle('solution-removed',original.includes(segment)&&!target.includes(segment));if(!fixed)element.disabled=true;}
    symbol.append(element);
   }
   return symbol;
  }));
  const expression=equation();board.setAttribute('aria-label',`Phép tính ${expression?.text||'đang thay đổi'}`);
+ $('#match-hint').disabled=won||revealed;$('#match-reveal').setAttribute('aria-pressed',String(revealed));setGameControlLabel($('#match-reveal'),revealed?'Ẩn lời giải':'Hiện lời giải');
  $('#match-moves').textContent=`Cần chuyển ${levels[level].moves} que · Đã chuyển ${movesMade}/${levels[level].moves}`;
 }
-function start(next=level){result.clear();level=Math.max(0,Math.min(levels.length-1,next));const {start:startEquation,moves}=levels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;movesMade=0;won=false;$('#match-level').textContent=`Màn ${level+1}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===levels.length-1;$('#match-status').textContent=`Nhấc một que rồi đặt vào nét mờ. Cần chuyển ${moves} que.`;render();}
+function start(next=level){result.clear();hint=null;revealed=false;savedPlay=null;level=Math.max(0,Math.min(levels.length-1,next));const {start:startEquation,moves}=levels[level];sticks=[...startEquation].map((char,slot)=>new Set(segmentSets[slot][char]));selected=null;movesMade=0;won=false;$('#match-level').textContent=`Màn ${level+1}`;$('#match-jump').value=String(level);$('#match-prev').disabled=level===0;$('#match-next').disabled=level===levels.length-1;$('#match-status').textContent=`Nhấc một que rồi đặt vào nét mờ. Cần chuyển ${moves} que.`;render();}
 $('#match-board').addEventListener('click',event=>{
- const button=event.target.closest('[data-segment]');if(!button||movesMade>=levels[level].moves||won)return;
+ const button=event.target.closest('[data-segment]');if(!button||movesMade>=levels[level].moves||won||revealed)return;hint=null;
  const slot=Number(button.dataset.slot),segment=button.dataset.segment,active=sticks[slot].has(segment);
  if(!selected){if(!active){$('#match-status').textContent='Hãy chọn một que đang sáng trước.';return;}selected={slot,segment};sound('key');$('#match-status').textContent='Chọn nét mờ để đặt que diêm.';render();return;}
  if(active){selected=selected.slot===slot&&selected.segment===segment?null:{slot,segment};$('#match-status').textContent=selected?'Chọn nét mờ để đặt que diêm.':'Đã bỏ chọn que.';render();return;}
@@ -43,6 +48,19 @@ $('#match-board').addEventListener('click',event=>{
  if(calculation?.correct&&remaining===0){won=true;$('#match-status').textContent=`Chính xác! ${calculation.text} là phép tính đúng.`;result.show({won:true,description:`Bạn đã sửa thành ${calculation.text} bằng ${movesMade} que diêm.`,hasNext:level<levels.length-1});}
  else if(remaining>0){$('#match-status').textContent=`Còn ${remaining} que cần chuyển. Tiếp tục chọn que đang sáng.`;}
  else{$('#match-status').textContent=calculation?`${calculation.text} vẫn chưa đúng. Bấm Chơi lại rồi thử cách khác.`:'Kí hiệu sau khi chuyển chưa hợp lệ. Bấm Chơi lại rồi thử lại.';sound('error');}
+});
+$('#match-hint').addEventListener('click',()=>{
+ if(won||revealed)return;
+ const target=equationSticks(levels[level].solution),extras=sticks.flatMap((parts,slot)=>[...parts].filter(segment=>!target[slot].has(segment)).map(segment=>({slot,segment})));
+ if(!extras.length){$('#match-status').textContent='Các que đã đúng vị trí.';return;}
+ if(extras.length>levels[level].moves-movesMade){$('#match-status').textContent='Các bước hiện tại không dẫn tới lời giải mẫu trong số lượt còn lại. Chơi lại để xem gợi ý.';return;}
+ hint=extras.find(part=>part.slot===selected?.slot&&part.segment===selected?.segment)||extras[0];render();sound('key');$('#match-status').textContent='Que được làm sáng là que cần chuyển. Chọn que đó rồi đặt vào nét mờ.';
+});
+$('#match-reveal').addEventListener('click',()=>{
+ result.clear();hint=null;
+ if(revealed){sticks=savedPlay.sticks;selected=savedPlay.selected;movesMade=savedPlay.movesMade;won=savedPlay.won;savedPlay=null;revealed=false;$('#match-status').textContent='Đã ẩn lời giải. Bạn có thể tiếp tục chơi.';}
+ else{savedPlay={sticks:sticks.map(parts=>new Set(parts)),selected,movesMade,won};revealed=true;sticks=equationSticks(levels[level].solution);selected=null;$('#match-status').textContent=`Lời giải: ${levels[level].solution}. Que sáng là vị trí mới; nét đứt nổi bật là vị trí đã lấy que đi.`;}
+ render();
 });
 $('#match-prev').addEventListener('click',()=>start(level-1));
 $('#match-next').addEventListener('click',()=>start(level+1));
