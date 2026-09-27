@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 /* Shared game controls and results. Theme changes only tokens, never selectors. */
 :root {
   --game-control-size: 38px;
@@ -58,39 +59,52 @@ html[data-theme="dark"] {
 /* A single layout for all game navigation bars. */
 .game-nav {
   position: relative;
+  -webkit-tap-highlight-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  align-self: stretch;
+  align-self: center;
+  justify-self: center;
   gap: 6px;
-  width: 100%;
+  box-sizing: border-box;
+  width: fit-content;
   max-width: 100%;
   min-width: 0;
   min-height: 48px;
-  margin: 0 0 12px;
+  margin: 0 auto 12px;
   padding: 5px;
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: thin;
   border: 1px solid var(--game-control-border);
-  border-radius: 13px;
+  border-radius: 999px;
   background: var(--game-nav-bg);
   color: var(--game-control-ink);
 }
 
 /* Compact toolbars share the available width with the level picker. */
-:is(#game-tangram,#game-pentomino) .game-nav {
+:is(#game-tangram,#game-pentomino,#game-einstein) .game-nav {
   gap: 3px;
-  overflow: visible;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
-:is(#game-tangram,#game-pentomino) .game-nav select {
+:is(#game-tangram,#game-pentomino,#game-einstein) .game-nav select {
   flex: 1 1 64px;
   width: 64px;
   min-width: 44px;
   max-width: 110px;
   padding-left: 7px;
   padding-right: 18px;
+}
+
+#game-pentomino .game-nav select {
+  flex: 0 0 82px;
+  width: 82px;
+  min-width: 82px;
+  max-width: 82px;
+  padding-left: 7px;
+  font-size: .75rem;
 }
 
 .game-nav > strong { display: none; }
@@ -151,6 +165,7 @@ html[data-theme="dark"] {
   touch-action: manipulation;
   transition: background-color .15s, border-color .15s, color .15s;
 }
+.game-nav .game-control[hidden] { display: none; }
 .game-nav .game-control svg {
   display: block;
   width: var(--game-control-icon-size);
@@ -194,6 +209,9 @@ html[data-theme="dark"] {
   appearance: none;
   -webkit-appearance: none;
   color-scheme: light;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
   background-color: var(--game-control-bg);
   background-image:
     linear-gradient(45deg, transparent 50%, var(--game-control-ink) 50%),
@@ -232,49 +250,29 @@ html[data-theme="dark"] {
   padding-right: 22px;
   text-align: left;
 }
-.game-nav .game-control-count {
-  position: absolute;
-  right: -2px;
-  bottom: -2px;
-  padding: 1px 3px;
-  border-radius: 4px;
-  background: var(--game-control-bg);
-  color: var(--game-control-ink);
-  font: 600 9px/1.2 Inter, sans-serif;
-  pointer-events: none;
+.game-nav .game-control[data-solution-progress] {
+  background: linear-gradient(to top, var(--game-control-active) var(--solution-fill,0%), var(--game-control-bg) var(--solution-fill,0%));
+  overflow: hidden;
 }
 #game-water .water-world > .game-nav { margin-bottom: 8px; }
 #game-river .river-world > .game-nav {
   z-index: 8;
-  width: calc(100% - 16px);
-  margin: 8px 8px 10px;
-  border-radius: 9px;
+  margin: 8px auto 10px;
 }
-#game-einstein .game-nav {
-  flex-wrap: wrap;
-  overflow: visible;
-  row-gap: 5px;
-}
-#game-einstein .game-nav .einstein-navigation,
-#game-einstein .game-nav .einstein-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 100%;
-  width: 100%;
-  min-width: 0;
-  gap: 6px;
-  margin: 0;
-  padding: 0;
-}
+.game-nav .einstein-toolbar,
 .game-nav .einstein-modes { display: contents; }
 .game-nav .einstein-level-picker {
   position: relative;
-  flex: 0 1 160px;
-  min-width: 70px;
+  flex: 0 0 110px;
+  width: 110px;
+  min-width: 110px;
+  max-width: 110px;
 }
 .game-nav .einstein-level-picker select {
+  box-sizing: border-box;
   width: 100%;
+  min-width: 0;
+  max-width: 100%;
   color: transparent;
   padding-left: 7px;
 }
@@ -283,19 +281,20 @@ html[data-theme="dark"] {
 .game-nav .einstein-picker-caption {
   position: absolute;
   z-index: 1;
-  inset: 0 22px 0 8px;
+  inset: 0 18px 0 5px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0;
   color: var(--game-control-ink);
   font-size: .82rem;
   white-space: nowrap;
+  overflow: hidden;
   pointer-events: none;
 }
 .game-nav .einstein-picker-caption svg {
-  flex: 0 0 14px;
-  width: 14px;
-  height: 14px;
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.6;
@@ -446,13 +445,21 @@ html[data-theme="dark"] {
   .game-nav .game-fullscreen { display: none; }
   #game-sudoku .game-nav { gap: 3px; }
   #game-tangram { padding-inline: 6px; }
-  :is(#game-tangram,#game-pentomino) .game-nav {
-    --game-control-size: clamp(26px, 7.2vw, 34px);
+  :is(#game-tangram,#game-pentomino,#game-einstein) .game-nav {
+    --game-control-size: clamp(22px, 6.3vw, 32px);
     --game-control-icon-size: 18px;
     gap: 2px;
     padding: 3px;
     min-height: 38px;
   }
+  #game-einstein .game-nav {
+    --game-control-size: clamp(19px,5.5vw,30px);
+    --game-control-icon-size: 15px;
+    gap: 1px;
+    padding: 2px;
+  }
+  #game-einstein .einstein-picker-caption { font-size: .68rem; }
+  #game-einstein .einstein-picker-caption svg { flex-basis: 10px; width: 10px; height: 10px; }
   .game-result { padding: 12px; }
   .result-card { padding: 16px; }
   .result-art { width: 64px; height: 64px; margin-bottom: 8px; }

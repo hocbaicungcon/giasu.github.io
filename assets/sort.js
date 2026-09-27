@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 export function compareItems(a,b,sort){
  const title=a.title.localeCompare(b.title,'vi',{numeric:true});
  if(sort==='title')return title;if(sort==='title-desc')return -title;

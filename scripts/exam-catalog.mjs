@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const languages={vi:'Tiếng Việt',en:'Tiếng Anh','vi-en':'Song ngữ Việt–Anh'};
 export function renderExamCatalog(exams){

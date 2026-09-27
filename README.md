@@ -1,3 +1,4 @@
+<!-- credit: giasu.ai.vn -->
 # gia sư thông minh
 
 Website chia sẻ bài học, bài tập lớp 1–12, triển khai trên GitHub Pages. Giao diện dùng màu từ `hocbaicungcon_round.svg`. Nội dung được tạo thành HTML tĩnh, công thức được dựng sẵn bằng KaTeX và dùng font lưu cùng website.

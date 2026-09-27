@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {setGameControlLabel} from './game-controls.js';
 import {levels} from './tangram-levels.js';
 import {createGameResult} from './game-result.js';

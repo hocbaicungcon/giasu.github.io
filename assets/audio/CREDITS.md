@@ -1,3 +1,4 @@
+<!-- credit: giasu.ai.vn -->
 Water, splash and cartoon munch effects by rubberduck (2018).
 Source: https://opengameart.org/content/40-cc0-water-splash-slime-sfx
 License: CC0 1.0 Universal — https://creativecommons.org/publicdomain/zero/1.0/

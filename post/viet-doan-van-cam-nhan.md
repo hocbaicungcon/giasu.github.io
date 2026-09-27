@@ -8,6 +8,7 @@ date: "2026-09-16"
 tags: ["ngữ văn 7", "viết đoạn văn"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 ## Đọc và tìm một điều khiến con chú ý
 Sau khi đọc một bài thơ hoặc câu chuyện, hãy chọn một hình ảnh, hành động hay câu nói làm con nhớ nhất. Đó có thể là điểm bắt đầu của đoạn văn.
 

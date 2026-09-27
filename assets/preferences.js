@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 (()=>{
  const root=document.documentElement,key='giasu-display';
  let prefs={size:100,theme:'light',font:'sans'};

@@ -7,6 +7,7 @@ date: "2026-09-18"
 tags: ["thí nghiệm vui", "vật lí", "áp suất không khí"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 Đổ đầy nước vào một chiếc cốc, đặt một tấm bìa cứng lên miệng cốc rồi giữ chặt. Cẩn thận lật ngược cốc và từ từ bỏ tay khỏi tấm bìa.
 
 Nếu tấm bìa đủ kín, nó có thể giữ nước trong cốc. Không khí bên ngoài đang tạo áp suất đẩy tấm bìa lên. Hãy làm trên bồn rửa hoặc ngoài trời để dễ dọn dẹp.

@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {nonogramLevels} from './nonogram-levels.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';

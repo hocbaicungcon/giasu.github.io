@@ -8,6 +8,7 @@ date: "2026-09-15"
 tags: ["tiếng anh 6", "ngữ pháp"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 ## Khi nào dùng thì hiện tại đơn?
 Thì hiện tại đơn thường diễn tả thói quen hoặc sự thật.
 

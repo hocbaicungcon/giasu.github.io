@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 export const einsteinGroups={
  color:{label:'Màu nhà',options:['Vàng','Xanh dương','Đỏ','Xanh lá','Trắng']},
  nation:{label:'Quốc tịch',options:['Na Uy','Đan Mạch','Anh','Đức','Thụy Điển']},
@@ -136,10 +137,20 @@ function makeSmallLevel(index,houses){
  const given=index%2===0?[['color',0,solution.color[0]]]:[];
  return {houses,solution,clues:shuffled(clues,random),given,difficulty:houses===3?'Dễ':'Vừa'};
 }
+export function samePersonClue(a,b){
+ if(typeof a==='number')return `${subject(b)} ở nhà số ${a}.`;
+ if(typeof b==='number')return `${subject(a)} ở nhà số ${b}.`;
+ // Prefer the person's nationality as the subject, then their house colour.
+ const priority={nation:0,color:1,pet:2,drink:3,hobby:4};
+ if(priority[a[0]]>priority[b[0]])[a,b]=[b,a];
+ const action={color:value=>`sống trong nhà màu ${value.toLowerCase()}`,nation:value=>`có quốc tịch ${value}`,drink:value=>`thích uống ${value.toLowerCase()}`,pet:value=>`nuôi ${value.toLowerCase()}`,hobby:value=>`thích ${value.toLowerCase()}`};
+ const person=a[0]==='color'?`Người ở nhà màu ${a[1].toLowerCase()}`:subject(a);
+ return `${person} ${action[b[0]](b[1])}.`;
+}
 export const einsteinLevels=[
  ...Array.from({length:1001},(_,index)=>index<100?makeLevel(index):makeExtraLevel(index)),
  ...Array.from({length:100},(_,index)=>makeSmallLevel(index,index<50?3:4))
-].map((entry,id)=>({...entry,id})).sort((a,b)=>(a.houses||5)-(b.houses||5));
+].map((entry,id)=>({...entry,id,clues:entry.clues.map(clue=>clue.picture[1]==='='?{...clue,text:samePersonClue(clue.picture[0],clue.picture[2])}:clue)})).sort((a,b)=>(a.houses||5)-(b.houses||5));
 
 export function matchesEinsteinClue(values,[a,relation,b,c]){
  const position=entry=>typeof entry==='number'?entry-1:values[entry[0]].indexOf(entry[1]);

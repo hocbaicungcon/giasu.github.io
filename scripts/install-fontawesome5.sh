@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# credit: giasu.ai.vn
 # Install only Font Awesome 5 Free 5.15.4, rather than texlive-fonts-extra.
 set -euo pipefail
 work=$(mktemp -d)

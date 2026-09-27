@@ -7,6 +7,7 @@ date: "2026-09-24"
 tags: ["giai thoại", "Dirac", "vật lí", "câu cá"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 Paul Dirac là một trong những nhà vật lý vĩ đại nhất thế kỷ XX. Ông nổi tiếng không chỉ bởi những công trình làm thay đổi vật lý hiện đại, mà còn bởi một lối suy nghĩ rất đặc biệt: **nếu toán học đưa ra một kết quả hợp lý, đừng vội bác bỏ nó chỉ vì nó trái với trực giác thông thường.**
 
 ![dirac](/Users/phuongphan/GitHub/giasu.github.io/assets/images/dirac.JPG)

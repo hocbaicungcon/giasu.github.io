@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {generatedRiverLevels,generatedWaterLevels} from './generated-crossing-levels.js';
 // Static, solvable puzzles; minimum move counts are checked by the test suite.
 export const riverLevels=[

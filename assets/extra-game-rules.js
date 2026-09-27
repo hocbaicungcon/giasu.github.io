@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 export function sudokuCandidates(board,i){
  const row=Math.floor(i/9),col=i%9,used=new Set();
  for(let n=0;n<9;n++){used.add(board[row*9+n]);used.add(board[n*9+col]);used.add(board[(Math.floor(row/3)*3+Math.floor(n/3))*9+Math.floor(col/3)*3+n%3]);}

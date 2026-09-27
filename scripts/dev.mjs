@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {watch} from 'node:fs';
 import {spawn} from 'node:child_process';
 import path from 'node:path';

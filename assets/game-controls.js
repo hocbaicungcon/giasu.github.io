@@ -1,5 +1,10 @@
+/* credit: giasu.ai.vn */
 /* A single vector icon system for game navigation, independent of text fonts. */
 const paths = {
+  board4: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7.5 3v18M12 3v18M16.5 3v18M3 7.5h18M3 12h18M3 16.5h18"/>',
+  board5: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M6.6 3v18M10.2 3v18M13.8 3v18M17.4 3v18M3 6.6h18M3 10.2h18M3 13.8h18M3 17.4h18"/>',
+  first: '<circle cx="12" cy="12" r="9"/><path d="m9 9 3-2v10m-3 0h6"/>',
+  second: '<circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-6 4-6 8h6"/>',
   robot: '<path d="M12 3v3M8 3h8M5 8h14v12H5ZM2 12v4m20-4v4M9 16h6"/><circle cx="9" cy="12" r=".6"/><circle cx="15" cy="12" r=".6"/>',
   people: '<circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-15a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v2"/>',
   previous: '<path d="M15 5 8 12l7 7"/>',
@@ -24,19 +29,8 @@ const paths = {
 export function setGameControlLabel(button, label) {
   button.setAttribute('aria-label', label);
   button.title = label;
-  const count = label.match(/\((\d+)\/10\)/)?.[1];
-  if (button.dataset.controlIcon) {
-    let badge = button.querySelector('.game-control-count');
-    if (count && count !== '0') {
-      if (!badge) {
-        badge = document.createElement('span');
-        badge.className = 'game-control-count';
-        badge.setAttribute('aria-hidden', 'true');
-        button.append(badge);
-      }
-      badge.textContent = count;
-    } else badge?.remove();
-  } else button.textContent = label;
+  if (!button.dataset.controlIcon) button.textContent = label;
+
 }
 
 export function setGameControlIcon(button, icon, label) {
@@ -59,11 +53,7 @@ export function mountGameNavigation(nav) {
   const ordered=[previous,picker,next,reset,sound].filter(Boolean);
   nav.prepend(...ordered);
   nav.querySelectorAll('.restart-sound').forEach(holder=>{if(!holder.children.length)holder.remove();});
-  if(nav.closest('#game-einstein')){
-    let row=nav.querySelector('.einstein-navigation');
-    if(!row){row=document.createElement('div');row.className='einstein-navigation';nav.prepend(row);}
-    row.append(...ordered);
-  }
+
 
   nav.querySelectorAll('button').forEach(button => {
     const label = button.getAttribute('aria-label') || button.title || button.textContent.trim();
@@ -72,8 +62,8 @@ export function mountGameNavigation(nav) {
     if (button.hasAttribute('data-puzzle-sound')) return;
     const id = button.id;
     const text = button.textContent.trim();
-    const icon = id==='tangram-left' ? 'undo'
-      : id==='tangram-right' ? 'redo'
+    const icon = (id==='tangram-left'||id==='pent-left') ? 'undo'
+      : (id==='tangram-right'||id==='pent-rotate') ? 'redo'
       : /-prev$/.test(id) ? 'previous'
       : /-next$/.test(id) ? 'next'
       : /-new$/.test(id) || button.matches('[data-restart="words"]') ? 'new'
@@ -92,3 +82,24 @@ export function mountGameNavigation(nav) {
     if (icon) setGameControlIcon(button, icon, label);
   });
 }
+
+// One consecutive-click gate for every solution control. Hints remain immediate.
+let pendingSolution=null,solutionTimer;
+function clearSolutionProgress(){
+  clearTimeout(solutionTimer);
+  if(pendingSolution){pendingSolution.style.removeProperty('--solution-fill');delete pendingSolution.dataset.solutionProgress;}
+  pendingSolution=null;
+}
+document.addEventListener('click',event=>{
+  const button=event.target.closest('.game-panel button[id$="-reveal"]');
+  if(!button||button.disabled||button.getAttribute('aria-pressed')==='true'){clearSolutionProgress();return;}
+  if(button.dataset.solutionProgress==='10'){clearSolutionProgress();return;}
+  if(pendingSolution!==button){clearSolutionProgress();pendingSolution=button;}
+  const count=Number(button.dataset.solutionProgress||0)+1;
+  button.dataset.solutionProgress=String(count);
+  button.style.setProperty('--solution-fill',`${count*10}%`);
+  button.title=`Hiện lời giải (${count}/10)`;button.setAttribute('aria-label',button.title);
+  clearTimeout(solutionTimer);
+  if(count<10){event.stopImmediatePropagation();solutionTimer=setTimeout(clearSolutionProgress,2000);}
+  else pendingSolution=null;
+},true);

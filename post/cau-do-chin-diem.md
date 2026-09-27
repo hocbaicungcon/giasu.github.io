@@ -7,6 +7,7 @@ date: "2026-09-24"
 tags: ["câu đố IQ", "tư duy logic", "hình học"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 Chín điểm được sắp xếp trên các cạnh và tại tâm của một hình vuông như dưới đây. Bạn hãy nối tất cả các điểm lại với nhau bằng 4 đoạn thẳng mà không nhấc bút lên khỏi tờ giấy.
 
 <img src="/Users/phuongphan/GitHub/giasu.github.io/assets/images/9-diem.svg" alt="9-diem" style="zoom:50%;" />

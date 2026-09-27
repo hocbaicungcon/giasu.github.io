@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {setGameControlIcon} from './game-controls.js';
 import {sound,stopSounds} from './puzzle-audio.js';
 const $=s=>document.querySelector(s);
@@ -185,8 +186,21 @@ function pipeValid(){return pipesTiles.every((mask,cell)=>{const x=cell%pipesSiz
 function pipeSvg(mask,powered,source){let paths='';for(const [bit,dx,dy] of pipeDirs)if(mask&bit)paths+=`M24 24L${24+dx*22} ${24+dy*22}`;return `<svg viewBox="0 0 48 48" aria-hidden="true"><g class="pipe-lines"><path d="${paths}"/><circle cx="24" cy="24" r="5"/></g><path class="pipe-flow" d="${paths}"/>${source?'<g class="pipe-reservoir"><circle class="pipe-reservoir-rim" cx="24" cy="24" r="13"/><circle class="pipe-reservoir-water" cx="24" cy="24" r="10"/><path class="pipe-reservoir-wave" d="M15 22c3-3 6 3 9 0s6 3 9 0M16 27c3-3 5 3 8 0s5 3 8 0"/><path class="pipe-reservoir-shine" d="M18 17c2-2 4-3 7-3"/></g>':''}</svg>`;}
 function pipesRender(){
  const powered=pipePowered();pipesBoard.style.setProperty('--pipes-size',pipesSize);pipesBoard.dataset.size=String(pipesSize);pipesBoard.classList.toggle('completed',pipesDone);
- pipesBoard.replaceChildren(...pipesTiles.map((mask,i)=>{const button=document.createElement('button');button.type='button';button.className='pipe-tile'+(powered.has(i)?' powered':'')+(i===0?' source':'');button.innerHTML=pipeSvg(mask,powered.has(i),i===0);button.disabled=pipesDone;button.setAttribute('aria-label',`Ô hàng ${Math.floor(i/pipesSize)+1}, cột ${i%pipesSize+1}${powered.has(i)?', có nước':''}`);button.onclick=()=>{if(pipesDone)return;pipesTiles[i]=rotatePipe(mask);pipesTurns++;const reached=pipePowered();pipesDone=reached.size===pipesTiles.length&&pipeValid();sound(pipesDone?'win':'move');pipesRender();};return button;}));
+ pipesBoard.replaceChildren(...pipesTiles.map((mask,i)=>{const button=document.createElement('button');button.type='button';button.className='pipe-tile'+(powered.has(i)?' powered':'')+(i===0?' source':'');button.innerHTML=pipeSvg(mask,powered.has(i),i===0);button.disabled=pipesDone;button.setAttribute('aria-label',`Ô hàng ${Math.floor(i/pipesSize)+1}, cột ${i%pipesSize+1}${powered.has(i)?', có nước':''}`);const turn=(reverse=false)=>{if(pipesDone)return;pipesTiles[i]=rotatePipe(pipesTiles[i],reverse?3:1);pipesTurns++;const reached=pipePowered();pipesDone=reached.size===pipesTiles.length&&pipeValid();sound(pipesDone?'win':'move');pipesRender();};button.onclick=()=>turn();button.oncontextmenu=event=>{event.preventDefault();turn(true);};return button;}));
  $('#pipes-status').textContent=pipesDone?`Tất cả ${pipesTiles.length} đoạn ống đã thông nước sau ${pipesTurns} lượt!`:`${powered.size}/${pipesTiles.length} ô có nước · ${pipesTurns} lượt xoay`;
 }
 function pipesStart(fresh=false){stopSounds();if(fresh||!pipesInitial.length)generatePipes();pipesTiles=[...pipesInitial];pipesTurns=0;pipesDone=false;pipesRender();}
+let pipeTouches=new Map(),pipeTwoFinger=null,pipeIgnoreClickUntil=0;
+pipesBoard.addEventListener('click',event=>{if(Date.now()<pipeIgnoreClickUntil){event.preventDefault();event.stopImmediatePropagation();}},true);
+pipesBoard.addEventListener('pointerdown',event=>{
+ if(event.pointerType!=='touch')return;
+ const tile=event.target.closest('.pipe-tile');if(!tile)return;
+ pipeTouches.set(event.pointerId,tile);
+ if(pipeTouches.size===2){pipeTwoFinger=pipeTouches.values().next().value;}
+});
+pipesBoard.addEventListener('pointerup',event=>{
+ if(pipeTwoFinger){event.preventDefault();const tile=pipeTwoFinger;pipeTwoFinger=null;pipeIgnoreClickUntil=Date.now()+500;tile.dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true}));pipeTouches.clear();}
+ else pipeTouches.delete(event.pointerId);
+});
+pipesBoard.addEventListener('pointercancel',()=>{pipeTouches.clear();pipeTwoFinger=null;});
 $('#pipes-new').onclick=()=>pipesStart(true);$('#pipes-reset').onclick=()=>pipesStart(false);$('#pipes-size').onchange=event=>{pipesSize=Number(event.target.value);pipesInitial=[];pipesStart(true);};pipesStart(true);

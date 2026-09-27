@@ -1,7 +1,8 @@
+/* credit: giasu.ai.vn */
 import {mountGameNavigation,setGameControlIcon} from './game-controls.js';
 import './extra-games.js';
 import {createGameResult} from './game-result.js';
-import {sound,stopSounds} from './puzzle-audio.js';
+import {sound,stopSounds,speakCombo} from './puzzle-audio.js';
 import {startRiver} from './river-game.js';
 import './water-game.js';
 import {moveBoard,canMove,scoreWord,words} from './game-rules.js';
@@ -42,12 +43,30 @@ document.querySelectorAll('.game-panel').forEach(panel=>{
  if(actions)actions.append(control);else if(speaker)speaker.after(control);else nav.append(control);control.classList.add('in-toolbar');
  document.addEventListener('fullscreenchange',()=>{const active=document.fullscreenElement===panel||panel.classList.contains('is-fullscreen');setGameControlIcon(control,active?'close':'fullscreen',active?'Thoát toàn màn hình':'Mở toàn màn hình');});
 });
-let board,score,numberDone,numberSize=4;
+let board,score,numberDone,numberSize=4,numberStreak=0,numberBonus=true,comboTimer;
+const bonusButton=$('#number-bonus');
+setGameControlIcon(bonusButton,'new','Bonus combo: bật');
+bonusButton.addEventListener('click',()=>{numberBonus=!numberBonus;numberStreak=0;clearNumberCombo();bonusButton.setAttribute('aria-pressed',String(numberBonus));setGameControlIcon(bonusButton,'new',`Bonus combo: ${numberBonus?'bật':'tắt'}`);});
+function clearNumberCombo(){clearTimeout(comboTimer);$('#number-combo').replaceChildren();}
+const numberComboTitles=['COMBO!','DOUBLE COMBO!','TRIPLE COMBO!','SUPER COMBO!','MEGA COMBO!','AMAZING COMBO!','EPIC COMBO!','ULTRA COMBO!','MONSTER COMBO!','INSANE COMBO!','LEGENDARY COMBO!','UNSTOPPABLE COMBO!','COSMIC COMBO!','INFINITY COMBO!'];
+function showNumberCombo(){
+ const display=$('#number-combo'),title=numberComboTitles[Math.min(numberComboTitles.length-1,numberStreak-2)];
+ const burst=document.createElement('div'),label=document.createElement('strong');
+ burst.className='combo-burst';label.textContent=title;
+ burst.append(label);display.replaceChildren(burst);speakCombo(title,numberStreak);
+ clearTimeout(comboTimer);comboTimer=setTimeout(clearNumberCombo,750);
+}
 const numberResult=createGameResult($('#number-scene'),{restart:startNumbers});
 function spawn(){const empty=board.map((n,i)=>n?null:i).filter(i=>i!==null);if(empty.length)board[empty[Math.floor(Math.random()*empty.length)]]=Math.random()<.9?2:4;}
-function renderNumbers(){const cells=board.map(n=>{const el=document.createElement('div');el.className='number-cell';el.dataset.level=Math.min(11,Math.log2(n||1));el.textContent=n||'';el.setAttribute('aria-label',n?String(n):'Ô trống');return el;});$('#number-board').replaceChildren(...cells);$('#game-score').textContent=score;document.querySelectorAll('[data-direction]').forEach(b=>b.disabled=numberDone);}
-function startNumbers(){numberResult.clear();$('#number-board').style.setProperty('--number-size',numberSize);board=Array(numberSize*numberSize).fill(0);score=0;numberDone=false;spawn();spawn();$('#number-status').textContent='Ghép những ô cùng số nhé!';renderNumbers();}
-function move(direction){if(numberDone)return;const result=moveBoard(board,direction,numberSize);if(!result.changed)return;board=result.board;score+=result.score;spawn();if(board.includes(2048)){numberDone=true;numberResult.show({won:true,description:'Bạn đã ghép được ô 2048 với '+score+' điểm!'});$('#number-status').textContent='Bạn đã đạt 2048! Chúc mừng!';}else if(!canMove(board,numberSize)){numberDone=true;numberResult.show({won:false,description:'Bàn đã đầy và không còn nước đi. Bạn đạt '+score+' điểm.'});$('#number-status').textContent='Hết nước đi. Bấm Chơi lại để thử lần nữa.';}else $('#number-status').textContent=result.score?`Cộng ${result.score} điểm.`:'Tiếp tục nào!';if(!numberDone)sound(result.score?'merge':'move');renderNumbers();}
+function renderNumberScore(){
+ const segments=['abcdef','bc','abdeg','abcdg','bcfg','acdfg','acdefg','abc','abcdefg','abcdfg'];
+ const lines={a:[4,2,16,2],b:[18,4,18,14],c:[18,18,18,28],d:[4,30,16,30],e:[2,18,2,28],f:[2,4,2,14],g:[4,16,16,16]};
+ const digits=String(score);
+ $('#game-score').innerHTML=`<svg viewBox="0 0 ${digits.length*24} 32" role="img" aria-label="${score}">${[...digits].map((digit,i)=>`<g transform="translate(${i*24} 0)">${[...segments[Number(digit)]].map(key=>{const [x1,y1,x2,y2]=lines[key];return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`;}).join('')}</g>`).join('')}</svg>`;
+}
+function renderNumbers(){const cells=board.map(n=>{const el=document.createElement('div');el.className='number-cell';el.dataset.level=Math.min(11,Math.log2(n||1));el.textContent=n||'';el.setAttribute('aria-label',n?String(n):'Ô trống');return el;});$('#number-board').replaceChildren(...cells);renderNumberScore();document.querySelectorAll('[data-direction]').forEach(b=>b.disabled=numberDone);}
+function startNumbers(){numberStreak=0;clearNumberCombo();numberResult.clear();$('#number-board').style.setProperty('--number-size',numberSize);board=Array(numberSize*numberSize).fill(0);score=0;numberDone=false;spawn();spawn();$('#number-status').textContent='Ghép những ô cùng số nhé!';renderNumbers();}
+function move(direction){if(numberDone)return;const result=moveBoard(board,direction,numberSize);if(!result.changed)return;board=result.board;numberStreak=result.score&&numberBonus?numberStreak+1:0;const bonus=numberStreak>=2?Math.round(result.score*Math.min(2,(numberStreak-1)*.25)):0;score+=result.score+bonus;if(bonus)showNumberCombo();else clearNumberCombo();spawn();if(board.includes(2048)){numberDone=true;numberResult.show({won:true,description:'Bạn đã ghép được ô 2048 với '+score+' điểm!'});$('#number-status').textContent='Bạn đã đạt 2048! Chúc mừng!';}else if(!canMove(board,numberSize)){numberDone=true;numberResult.show({won:false,description:'Bàn đã đầy và không còn nước đi. Bạn đạt '+score+' điểm.'});$('#number-status').textContent='Hết nước đi. Bấm Chơi lại để thử lần nữa.';}else $('#number-status').textContent=result.score?`Cộng ${result.score} điểm${bonus?` + ${bonus} điểm thưởng (combo ${numberStreak})`: ''}.`:'Tiếp tục nào!';if(!numberDone)sound(result.score?'merge':'move');renderNumbers();}
 document.querySelectorAll('[data-direction]').forEach(b=>b.addEventListener('click',()=>move(b.dataset.direction)));
 $('#number-board').addEventListener('keydown',e=>{const d={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down'}[e.key];if(d){e.preventDefault();move(d);}});
 let touch;$('#number-board').addEventListener('pointerdown',e=>{touch=[e.clientX,e.clientY];$('#number-board').setPointerCapture(e.pointerId);});
@@ -77,6 +96,6 @@ function wordKey(key){
 }
 $('#word-keyboard').addEventListener('click',event=>{const key=event.target.closest('[data-word-key]')?.dataset.wordKey;if(key)wordKey(key);});
 document.addEventListener('keydown',event=>{if($('#game-words').hidden||event.ctrlKey||event.metaKey||event.altKey||event.isComposing||event.target.closest('input,textarea,select,[contenteditable="true"],header,.game-result'))return;const key=event.key.toUpperCase();if(/^[A-Z]$/.test(key)||['ENTER','BACKSPACE'].includes(key)){event.preventDefault();wordKey(key);}});
-const starts={numbers:startNumbers,river:startRiver,words:startWords};document.querySelectorAll('[data-restart]').forEach(b=>b.addEventListener('click',()=>{if(starts[b.dataset.restart]){stopSounds();starts[b.dataset.restart]();}}));document.getElementById('number-size')?.addEventListener('change',event=>{numberSize=Number(event.target.value);startNumbers();});startNumbers();startRiver();startWords();
+const starts={numbers:startNumbers,river:startRiver,words:startWords};document.querySelectorAll('[data-restart]').forEach(b=>b.addEventListener('click',()=>{if(starts[b.dataset.restart]){stopSounds();starts[b.dataset.restart]();}}));document.querySelectorAll('[data-number-size]').forEach(button=>{setGameControlIcon(button,button.dataset.numberSize==='4'?'board4':'board5',button.getAttribute('aria-label'));button.addEventListener('click',()=>{numberSize=Number(button.dataset.numberSize);document.querySelectorAll('[data-number-size]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));startNumbers();});});startNumbers();startRiver();startWords();
 
 $('#word-give-up').addEventListener('click',()=>{if(wordDone)return;wordDone=true;draft='';renderWords();$('#word-status').textContent='Đã bỏ cuộc. Đáp án là '+answer+'. Bấm Từ mới để chơi tiếp.';wordResult.show({won:false,title:'Đã bỏ cuộc',description:'Đáp án là '+answer+'. Bạn có thể chơi lại hoặc xem lại các lượt đoán.'});});

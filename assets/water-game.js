@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {createGameResult} from './game-result.js';
 import {waterLevels,waterMove,waterWon} from './puzzle-levels.js';
 import {sound,stopSounds} from './puzzle-audio.js';

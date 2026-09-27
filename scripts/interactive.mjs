@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import YAML from 'yaml';
 export const escapeHTML = value => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function youtubeId(value) {

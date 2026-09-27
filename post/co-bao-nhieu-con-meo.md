@@ -7,6 +7,7 @@ date: "2026-09-24"
 tags: ["câu đố IQ", "tư duy logic", "con mèo", 'con chuột']
 ---
 
+<!-- credit: giasu.ai.vn -->
 Ở một làng kia do có chuột về phá hoại nhiều quá, dân làng quyết định phải tìm mèo về để diệt lũ chuột. Do sự trùng hợp ngẫu nhiên, mỗi con mèo bắt được một số chuột bằng nhau và mỗi con mèo diệt được số chuột nhiều hơn số mèo hiện có. Biết rằng số chuột bị diệt tất cả là 10 001 con. Hỏi vậy có bao nhiêu con mèo đã tham gia cuộc diệt chuột này?
 
 ![cau-do-con-meo](/Users/phuongphan/GitHub/giasu.github.io/assets/images/cau-do-con-meo.jpg)

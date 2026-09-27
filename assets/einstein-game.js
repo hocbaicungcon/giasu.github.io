@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {setGameControlIcon} from './game-controls.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
@@ -49,8 +50,8 @@ if(board){
  const picture=entry=>typeof entry==='number'?numberIcon(entry):icon(...entry);
  const matches=clue=>matchesEinsteinClue(values,clue);
  const levelSelect=document.getElementById('einstein-jump');
- const levelStars=entry=>'★'.repeat(['Dễ','Vừa','Khó','Chuyên gia'].indexOf(entry.difficulty)+1);
- levelSelect.replaceChildren(...einsteinLevels.map((entry,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`${entry.houses||5} ⌂ · ${i+1} ${levelStars(entry)}`;option.title=`${entry.houses||5} nhà · ${entry.difficulty}`;return option;}));
+ const levelStars=entry=>'★'+(['Dễ','Vừa','Khó','Chuyên gia'].indexOf(entry.difficulty)+1);
+ levelSelect.replaceChildren(...einsteinLevels.map((entry,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`⌂${entry.houses||5} · ${i+1} ${levelStars(entry)}`;option.title=`${entry.houses||5} nhà · ${entry.difficulty}`;return option;}));
  const headers=[],slots=[];
  function buildBoard(){
   document.getElementById('einstein-house-count').textContent=houseCount;
@@ -63,7 +64,18 @@ if(board){
  }
  }
  const modes=document.createElement('div');modes.className='einstein-modes';modes.setAttribute('role','group');modes.setAttribute('aria-label','Chế độ chọn hoặc loại trừ');
- const modeButtons=['pick','exclude'].map((value,i)=>{const button=document.createElement('button');button.type='button';button.innerHTML=i?svg('<path d="m12 12 24 24m0-24L12 36" fill="none" stroke="currentColor" stroke-width="4"/>'):svg('<path d="m9 24 10 10 21-22" fill="none" stroke="currentColor" stroke-width="4"/>');button.title=i?'Loại trừ / khôi phục khả năng':'Chốt đáp án';button.setAttribute('aria-label',button.title);setGameControlIcon(button,i?'erase':'pin',button.title);button.addEventListener('click',()=>{mode=value;refresh();});modes.append(button);return button;});document.querySelector('.einstein-toolbar').prepend(modes);
+ const modeButton=document.createElement('button');modeButton.type='button';modeButton.id='einstein-mode';
+ modeButton.addEventListener('click',()=>{mode=mode==='pick'?'exclude':'pick';refresh();});modes.append(modeButton);document.querySelector('.einstein-toolbar').prepend(modes);
+ const tip=document.createElement('div');tip.className='einstein-tooltip';tip.setAttribute('role','tooltip');tip.setAttribute('popover','manual');tip.hidden=true;document.body.append(tip);
+ function hideTip(){if(tip.matches(':popover-open'))tip.hidePopover();tip.hidden=true;}
+ function showTip(node){
+  tip.textContent=node.dataset.tip;tip.hidden=false;if(tip.showPopover)tip.showPopover();
+  const box=node.getBoundingClientRect(),width=tip.getBoundingClientRect().width,height=tip.getBoundingClientRect().height;
+  tip.style.left=Math.max(6,Math.min(innerWidth-width-6,box.left+box.width/2-width/2))+'px';
+  tip.style.top=Math.max(6,Math.min(innerHeight-height-6,box.top-height-7>=6?box.top-height-7:box.bottom+7))+'px';
+ }
+ addEventListener('resize',hideTip);document.addEventListener('scroll',hideTip,true);
+
  const snapshot=()=>({values:structuredClone(values),excluded:structuredClone(excluded)});
  const saveKey=()=>`einstein-progress-v2-${einsteinLevels[level].id}`;
  const signature=()=>JSON.stringify([solution,given,currentClues]);
@@ -80,7 +92,7 @@ if(board){
   clueNodes.forEach((node,i)=>{const clue=currentClues[i]?.picture||[],refs=[clue[0],clue[2],clue[3]].filter(Boolean);const ready=refs.every(entry=>typeof entry==='number'||values[entry[0]]?.includes(entry[1]));node.classList.toggle('processed',ready&&matches(clue));node.classList.toggle('active-clue',i===activeClue);node.setAttribute('aria-pressed',String(i===activeClue));});
   headers.forEach((header,i)=>header.classList.toggle('clue-related',related.includes(i+1)));
   let conflicts=0;
-  modeButtons.forEach((button,i)=>button.setAttribute('aria-pressed',String(mode===(i?'exclude':'pick'))));
+  setGameControlIcon(modeButton,mode==='pick'?'pin':'erase',mode==='pick'?'Chế độ chốt. Bấm để chuyển sang loại trừ':'Chế độ loại trừ. Bấm để chuyển sang chốt');modeButton.setAttribute('aria-pressed',String(mode==='exclude'));
   for(const slot of slots){const {group}=slot.dataset,house=Number(slot.dataset.house),key=`${group}:${house}`,value=values[group][house],locked=fixed.has(key);slot.replaceChildren();slot.classList.toggle('filled',Boolean(value));slot.classList.toggle('given',locked);slot.setAttribute('aria-label',`${groups[group].label}, nhà ${house+1}`);
    const options=value?[value]:groups[group].options;
    for(const candidate of options){const button=document.createElement('button'),removed=(excluded[key]||[]).includes(candidate),elsewhere=values[group].some((v,i)=>i!==house&&v===candidate);button.type='button';button.dataset.group=group;button.dataset.value=candidate;button.className='einstein-candidate';button.innerHTML=icon(group,candidate);button.classList.toggle('clue-related',related.some(entry=>Array.isArray(entry)&&entry[0]===group&&entry[1]===candidate));button.classList.toggle('excluded',removed);button.classList.toggle('elsewhere',elsewhere);button.disabled=done||locked||elsewhere;button.title=`${candidate} · ${groups[group].label} · nhà ${house+1}`;button.setAttribute('aria-label',`${button.title}. ${value?'Bỏ chốt':mode==='exclude'?(removed?'Khôi phục':'Loại trừ'):'Chọn'}`);let held=false,timer;button.addEventListener('pointerdown',()=>{held=false;timer=setTimeout(()=>{if(!value&&!button.disabled){held=true;place(group,candidate,house);}},450);});button.addEventListener('pointerup',()=>clearTimeout(timer));button.addEventListener('pointerleave',()=>clearTimeout(timer));button.addEventListener('click',()=>{if(held){held=false;return;}
@@ -97,16 +109,24 @@ if(board){
   document.getElementById('einstein-undo').disabled=!history.length||done;document.getElementById('einstein-redo').disabled=!future.length||done;
  }
  function resetBoard(){result.clear();values=Object.fromEntries(Object.keys(groups).map(group=>[group,Array(houseCount).fill('')]));given.forEach(([group,house,value])=>values[group][house]=value);excluded={};done=false;history=[];future=[];clueNodes.forEach(node=>node.classList.remove('wrong'));refresh();status.textContent='Ghim để chốt · Tẩy để loại trừ. Bấm lại đáp án để bỏ chốt.';}
- function start(next=level,fresh=false){loading=true;activeClue=-1;level=Math.max(0,Math.min(einsteinLevels.length-1,next));const entry=einsteinLevels[level];houseCount=entry.houses||5;groups=Object.fromEntries(Object.entries(baseGroups).map(([group,data])=>[group,{...data,options:data.options.filter(value=>entry.solution[group].includes(value))}]));buildBoard();solution=entry.solution;given=entry.given;fixed=new Set(given.map(([group,house])=>`${group}:${house}`));currentClues=entry.clues;clueNodes=currentClues.map(({picture:clue,text},index)=>{const [a,relation,b,c]=clue,li=document.createElement('li');li.className='einstein-clue';li.title=text;li.dataset.tip=text;li.setAttribute('aria-label',text);li.setAttribute('role','button');li.tabIndex=0;const toggle=()=>{activeClue=activeClue===index?-1:index;refresh();};li.addEventListener('click',toggle);li.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle();}});li.classList.toggle('between',(relation==='between'||relation==='sandwich'));const visual=entry=>`<span class="einstein-clue-image">${picture(entry)}</span>`;li.innerHTML=(relation==='between'||relation==='sandwich')?`${visual(b)}<b>${relation==='sandwich'?'⇥':'‹'}</b>${visual(a)}<b>${relation==='sandwich'?'⇥':'‹'}</b>${visual(c)}`:`${visual(a)}<b>${{'<':'‹ ···','>':'··· ›','→':'⇥','←':'⇤','↔':'↔','=':'=','≠':'≠','notAdjacent':'↮','distance2':'↔₂','distance3':'↔₃','edge':'|↔|'}[relation]}</b>${visual(b)}`;return li;});const clueList=document.getElementById('einstein-clue-list');clueList.replaceChildren(...clueNodes);clueList.scrollTop=0;document.getElementById('einstein-level').textContent=`${level+1}`;levelSelect.value=String(level);document.getElementById('einstein-prev').disabled=level===0;document.getElementById('einstein-next').disabled=level===einsteinLevels.length-1;resetBoard();if(!fresh)resume();loading=false;refresh();}
+ function start(next=level,fresh=false){hideTip();loading=true;activeClue=-1;level=Math.max(0,Math.min(einsteinLevels.length-1,next));const entry=einsteinLevels[level];houseCount=entry.houses||5;groups=Object.fromEntries(Object.entries(baseGroups).map(([group,data])=>[group,{...data,options:data.options.filter(value=>entry.solution[group].includes(value))}]));buildBoard();solution=entry.solution;given=entry.given;fixed=new Set(given.map(([group,house])=>`${group}:${house}`));currentClues=entry.clues;clueNodes=currentClues.map(({picture:clue,text},index)=>{const [a,relation,b,c]=clue,li=document.createElement('li');li.className='einstein-clue';li.dataset.tip=text;li.addEventListener('pointerenter',()=>showTip(li));li.addEventListener('pointerleave',hideTip);li.addEventListener('focus',()=>showTip(li));li.addEventListener('blur',hideTip);li.setAttribute('aria-label',text);li.setAttribute('role','button');li.tabIndex=0;const toggle=()=>{activeClue=activeClue===index?-1:index;refresh();};li.addEventListener('click',toggle);li.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();toggle();}});li.classList.toggle('between',(relation==='between'||relation==='sandwich'));const visual=entry=>`<span class="einstein-clue-image">${picture(entry)}</span>`;li.innerHTML=(relation==='between'||relation==='sandwich')?`${visual(b)}<b>${relation==='sandwich'?'⇥':'‹'}</b>${visual(a)}<b>${relation==='sandwich'?'⇥':'‹'}</b>${visual(c)}`:`${visual(a)}<b>${{'<':'‹ ···','>':'··· ›','→':'⇥','←':'⇤','↔':'↔','=':'=','≠':'≠','notAdjacent':'↮','distance2':'↔₂','distance3':'↔₃','edge':'|↔|'}[relation]}</b>${visual(b)}`;return li;});const clueList=document.getElementById('einstein-clue-list');clueList.replaceChildren(...clueNodes);clueList.scrollTop=0;document.getElementById('einstein-level').textContent=`${level+1}`;levelSelect.value=String(level);document.getElementById('einstein-prev').disabled=level===0;document.getElementById('einstein-next').disabled=level===einsteinLevels.length-1;resetBoard();if(!fresh)resume();loading=false;refresh();}
  document.getElementById('einstein-prev').addEventListener('click',()=>start(level-1));
  document.getElementById('einstein-next').addEventListener('click',()=>start(level+1));
  levelSelect.addEventListener('change',()=>start(Number(levelSelect.value)));
  levelSelect.addEventListener('wheel',event=>{event.preventDefault();document.scrollingElement?.scrollBy(0,event.deltaY);},{passive:false});
  document.getElementById('einstein-reset').addEventListener('click',()=>start(level,true));
  document.getElementById('einstein-undo').addEventListener('click',()=>{if(!history.length||done)return;future.push(snapshot());restore(history.pop());sound('move');});
- document.getElementById('einstein-redo').addEventListener('click',()=>{if(!future.length||done)return;history.push(snapshot());restore(future.pop());sound('move');});
  document.getElementById('einstein-hint').addEventListener('click',()=>{if(done)return;for(const [group,answer] of Object.entries(solution))for(let house=0;house<houseCount;house++){if(values[group][house]===answer[house]||fixed.has(`${group}:${house}`))continue;place(group,answer[house],house);status.textContent=`Gợi ý: ${groups[group].label.toLowerCase()} của nhà ${house+1} là ${answer[house]}.`;return;}status.textContent='Bảng đã điền đủ. Hãy bấm Kiểm tra.';});
- document.getElementById('einstein-check').addEventListener('click',()=>{if(done)return;const filled=Object.values(values).flat().filter(Boolean).length;if(filled<houseCount*Object.keys(groups).length){status.textContent=`Bạn đã xếp ${filled}/${houseCount*Object.keys(groups).length} biểu tượng. Hãy điền hết lưới trước khi kiểm tra.`;return;}const failed=currentClues.findIndex(({picture})=>!matches(picture));if(failed>=0){clueNodes.forEach((node,i)=>node.classList.toggle('wrong',i===failed));clueNodes[failed].scrollIntoView({block:'nearest',behavior:'smooth'});status.textContent=`Chưa đúng với manh mối ${failed+1}: ${currentClues[failed].text}`;sound('error');return;}done=true;const fish=at('pet','Cá');refresh();status.textContent=`Chính xác! Người ${values.nation[fish]} ở nhà ${fish+1} nuôi cá.`;result.show({won:true,description:`Người ${values.nation[fish]} là người nuôi cá.`,hasNext:level<einsteinLevels.length-1});});
+ function finishPuzzle(){
+  if(done)return;
+  const filled=Object.values(values).flat().filter(Boolean).length;
+  if(filled<houseCount*Object.keys(groups).length){status.textContent=`Bạn đã xếp ${filled}/${houseCount*Object.keys(groups).length} biểu tượng.`;return;}
+  const failed=currentClues.findIndex(({picture})=>!matches(picture));
+  done=true;hideTip();refresh();
+  if(failed>=0){clueNodes.forEach((node,i)=>node.classList.toggle('wrong',i===failed));status.textContent=currentClues[failed].text;result.show({won:false,title:'Chưa đúng!',description:'Bảng đã chốt nhưng chưa thoả mãn các manh mối. Hãy xem lại hoặc thử lại màn này.',delay:350});}
+  else{const fish=at('pet','Cá');status.textContent=`Người ${values.nation[fish]} là người nuôi cá.`;result.show({won:true,description:status.textContent,hasNext:level<einsteinLevels.length-1,delay:350});}
+ }
+ document.getElementById('einstein-check').addEventListener('click',finishPuzzle);
  let last=0;try{const stored=localStorage.getItem('einstein-last-level-v2');if(stored!==null){const saved=Number(stored),index=einsteinLevels.findIndex(entry=>entry.id===saved);if(index>=0)last=index;}}catch{}
  start(last);
 }

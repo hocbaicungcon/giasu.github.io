@@ -8,6 +8,7 @@ date: "2026-09-12"
 tags: ["khoa học tự nhiên 7", "chuyển động"]
 ---
 
+<!-- credit: giasu.ai.vn -->
 ## Tốc độ cho biết điều gì?
 Tốc độ cho biết mức độ nhanh hay chậm của chuyển động. Tốc độ được tính bằng quãng đường đi được chia cho thời gian đi quãng đường đó.
 

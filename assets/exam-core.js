@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 export function normalize(value){return String(value??'').normalize('NFC').trim().replace(/\s+/g,' ').toLocaleLowerCase('vi').replace(/^(\-?\d+),(\d+)$/,'$1.$2');}
 export function gradeQuestion(q,value){
  if(q.kind==='proof'||q.answer===null)return null;

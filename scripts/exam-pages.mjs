@@ -1,3 +1,4 @@
+/* credit: giasu.ai.vn */
 import {uses90MinuteScoring} from '../assets/exam-core.js';
 import {createHash} from 'node:crypto';
 import fs from 'node:fs';
