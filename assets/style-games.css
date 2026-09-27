@@ -3549,6 +3549,7 @@ html[data-theme="dark"] #game-nonogram .nonogram-controls button[aria-pressed="t
   place-items: center;
   width: var(--lightup-cell);
   height: var(--lightup-cell);
+  line-height: 1;
   font-size: 1.35rem;
   font-weight: 800;
 }
@@ -3560,6 +3561,18 @@ html[data-theme="dark"] #game-nonogram .nonogram-controls button[aria-pressed="t
   background: #f8fcfa;
   color: #718f8c;
   box-shadow: none;
+}
+
+.lightup-cell > svg {
+  display: block;
+  width: 65%;
+  height: 65%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
 }
 
 .game-panel #lightup-board button.lightup-cell.lit:not(:where(.game-nav *, .game-result *)) {
@@ -3825,6 +3838,9 @@ html[data-theme="dark"] .game-panel button.caro-cell:not(:disabled):focus-visibl
 .hashi-board {
   width: min(100%,430px);
   aspect-ratio: 1;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .hashi-board svg {
@@ -6450,7 +6466,13 @@ html[data-theme="dark"] #soko-board .soko-cell.player.selected::before {
   stroke-width: 6;
 }
 
-.hashi-link:focus {
+.hashi-link {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.hashi-link:focus,
+.hashi-link:active {
   outline: none;
 }
 

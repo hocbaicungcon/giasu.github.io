@@ -28,6 +28,7 @@ document.querySelectorAll('.game-panel').forEach(panel=>{
   if(actions)nav.append(actions);
  }
  panel.querySelectorAll('.puzzle-actions,.tangram-actions').forEach(holder=>nav.append(...holder.querySelectorAll('button')));
+ panel.querySelectorAll('#nonogram-hint,#lightup-hint').forEach(button=>nav.append(button));
  const sound=panel.querySelector('[data-puzzle-sound]');
  if(sound&&!nav.contains(sound))nav.append(sound);
  panel.querySelectorAll('.scene-corner-controls,.puzzle-actions,.tangram-actions').forEach(holder=>{if(holder!==nav&&!holder.children.length)holder.remove();});
@@ -37,7 +38,8 @@ document.querySelectorAll('.game-panel').forEach(panel=>{
  const control=document.createElement('button'); control.type='button'; control.className='game-fullscreen'; control.setAttribute('aria-label','Mở toàn màn hình'); control.title='Mở toàn màn hình'; setGameControlIcon(control,'fullscreen','Mở toàn màn hình');
  control.addEventListener('click',async()=>{if(document.fullscreenElement===panel){await document.exitFullscreen?.();}else{try{await panel.requestFullscreen?.();}catch{panel.classList.toggle('is-fullscreen');}}});
  const nav=panel.querySelector('.game-nav');
- nav.append(control);control.classList.add('in-toolbar');
+ const actions=nav.querySelector('.einstein-toolbar'),speaker=nav.querySelector('[data-puzzle-sound]');
+ if(actions)actions.append(control);else if(speaker)speaker.after(control);else nav.append(control);control.classList.add('in-toolbar');
  document.addEventListener('fullscreenchange',()=>{const active=document.fullscreenElement===panel||panel.classList.contains('is-fullscreen');setGameControlIcon(control,active?'close':'fullscreen',active?'Thoát toàn màn hình':'Mở toàn màn hình');});
 });
 let board,score,numberDone,numberSize=4;

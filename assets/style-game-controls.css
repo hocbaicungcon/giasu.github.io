@@ -214,10 +214,13 @@ html[data-theme="dark"] {
   background: var(--game-control-active);
   color: var(--game-control-ink);
 }
+.game-nav .sudoku-difficulty {
+  flex: 0 0 80px;
+}
 .game-nav .sudoku-difficulty select {
-  flex-basis: 64px;
-  width: 64px;
-  min-width: 58px;
+  flex-basis: 80px;
+  width: 80px;
+  min-width: 80px;
   padding-left: 7px;
   padding-right: 22px;
   text-align: left;
@@ -244,8 +247,53 @@ html[data-theme="dark"] {
   overflow: visible;
   row-gap: 5px;
 }
-.game-nav .einstein-toolbar,
+#game-einstein .game-nav .einstein-navigation,
+#game-einstein .game-nav .einstein-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 0;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
 .game-nav .einstein-modes { display: contents; }
+.game-nav .einstein-level-picker {
+  position: relative;
+  flex: 0 1 160px;
+  min-width: 70px;
+}
+.game-nav .einstein-level-picker select {
+  width: 100%;
+  color: transparent;
+  padding-left: 7px;
+}
+.game-nav .einstein-level-picker select:is(:hover,:focus,:active) { color: transparent; }
+.game-nav .einstein-level-picker select option { color: var(--game-control-ink); }
+.game-nav .einstein-picker-caption {
+  position: absolute;
+  z-index: 1;
+  inset: 0 22px 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--game-control-ink);
+  font-size: .82rem;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.game-nav .einstein-picker-caption svg {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 /* Fullscreen belongs to the navigation bar; mobile uses the page viewport. */
 .game-panel:fullscreen,
