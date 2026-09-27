@@ -871,16 +871,7 @@ function checkPuzzle(){
   result.clear();
  }
 
- if(count>0){
-
-  status.textContent=
-   `Đã đúng vị trí ${count}/7 mảnh.`;
-
- }else{
-
-  status.textContent=
-   'Kéo các mảnh vào hình mục tiêu.';
- }
+ status.textContent='Kéo các mảnh vào hình mục tiêu.';
 }
 
 // ============================================================
