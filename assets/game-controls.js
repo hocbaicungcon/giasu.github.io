@@ -1,5 +1,7 @@
 /* A single vector icon system for game navigation, independent of text fonts. */
 const paths = {
+  robot: '<path d="M12 3v3M8 3h8M5 8h14v12H5ZM2 12v4m20-4v4M9 16h6"/><circle cx="9" cy="12" r=".6"/><circle cx="15" cy="12" r=".6"/>',
+  people: '<circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-15a3 3 0 0 1 0 6m2 3a5 5 0 0 1 3 4v2"/>',
   previous: '<path d="M15 5 8 12l7 7"/>',
   next: '<path d="m9 5 7 7-7 7"/>',
   replay: '<path d="M4 10a8 8 0 1 1 2 8M4 4v6h6"/>',
@@ -53,7 +55,7 @@ export function mountGameNavigation(nav) {
   const reset=buttons.find(button=>/-reset$/.test(button.id)||button.hasAttribute('data-restart')&&button.dataset.restart!=='words');
   const sound=nav.querySelector('[data-puzzle-sound]');
   const select=nav.querySelector('select');
-  const picker=select?.closest('label')||select;
+  const picker=select?.closest('label')||select||nav.querySelector('.caro-modes');
   const ordered=[previous,picker,next,reset,sound].filter(Boolean);
   nav.prepend(...ordered);
   nav.querySelectorAll('.restart-sound').forEach(holder=>{if(!holder.children.length)holder.remove();});

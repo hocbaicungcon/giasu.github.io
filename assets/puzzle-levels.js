@@ -26,3 +26,18 @@ export function riverCargoOptions(state,level){
  for(const i of available)for(const group of [...options])if(group.length<level.capacity)options.push([...group,i]);
  return options;
 }
+
+// Breadth-first search returns the first trip on a shortest safe route.
+export function riverHint(state,level,remaining=Infinity){
+ const key=s=>s.person+':'+s.positions.join(''),queue=[{state,first:null,depth:0}],seen=new Set([key(state)]);
+ for(let head=0;head<queue.length;head++){
+  const entry=queue[head];if(entry.depth>=remaining)continue;
+  for(const cargo of riverCargoOptions(entry.state,level)){
+   const move=riverMove(entry.state,cargo,level);if(move.error||move.lost)continue;
+   const first=entry.first??cargo;if(move.won)return first;
+   const id=key(move.state);if(seen.has(id))continue;
+   seen.add(id);queue.push({state:move.state,first,depth:entry.depth+1});
+  }
+ }
+ return null;
+}
