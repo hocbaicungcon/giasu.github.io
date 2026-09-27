@@ -108,7 +108,38 @@ function makeExtraLevel(index){
  const given=shuffled(categories.flatMap(group=>solution[group].map((value,house)=>[group,house,value])),random).slice(0,[6,4,2,0][tier]);
  return {solution,clues:shuffled(clues,random),given,difficulty:['Dễ','Vừa','Khó','Chuyên gia'][tier]};
 }
-export const einsteinLevels=Array.from({length:1001},(_,index)=>index<100?makeLevel(index):makeExtraLevel(index));
+// Smaller boards use a connected clue tree for each house. The omitted house
+// follows from the rule that each category uses every symbol exactly once.
+function makeSmallLevel(index,houses){
+ const random=randomFrom(index*17011+2027),categories=Object.keys(einsteinGroups);
+ const solution=Object.fromEntries(categories.map(group=>{
+  const options=einsteinGroups[group].options;
+  const selected=group==='pet'?['Cá',...shuffled(options.filter(value=>value!=='Cá'),random).slice(0,houses-1)]:shuffled(options,random).slice(0,houses);
+  return [group,shuffled(selected,random)];
+ }));
+ const clues=[];
+ for(let house=0;house<houses-1;house++){
+  let a=['color',solution.color[house]],b=['color',solution.color[house+1]];
+  const relation=index%3===0?'<':index%3===1?'→':'←';
+  if(relation==='←')[a,b]=[b,a];
+  clues.push({picture:[a,relation,b],text:`${subject(a)} ${relation==='<'?'ở bên trái (không nhất thiết liền kề)':relation==='→'?'ở ngay bên trái':'ở ngay bên phải'} ${subject(b).toLowerCase()}.`});
+ }
+ const omitted=Math.floor(random()*houses);
+ for(let house=0;house<houses;house++){
+  if(house===omitted)continue;
+  const order=shuffled(categories,random);
+  for(let i=1;i<order.length;i++){
+   const a=[order[i],solution[order[i]][house]],parent=order[Math.floor(random()*i)],b=[parent,solution[parent][house]];
+   clues.push({picture:[a,'=',b],text:`${subject(a)} ở cùng nhà với ${subject(b).toLowerCase()}.`});
+  }
+ }
+ const given=index%2===0?[['color',0,solution.color[0]]]:[];
+ return {houses,solution,clues:shuffled(clues,random),given,difficulty:houses===3?'Dễ':'Vừa'};
+}
+export const einsteinLevels=[
+ ...Array.from({length:1001},(_,index)=>index<100?makeLevel(index):makeExtraLevel(index)),
+ ...Array.from({length:100},(_,index)=>makeSmallLevel(index,index<50?3:4))
+].map((entry,id)=>({...entry,id})).sort((a,b)=>(a.houses||5)-(b.houses||5));
 
 export function matchesEinsteinClue(values,[a,relation,b,c]){
  const position=entry=>typeof entry==='number'?entry-1:values[entry[0]].indexOf(entry[1]);
@@ -125,7 +156,7 @@ export function matchesEinsteinClue(values,[a,relation,b,c]){
   case 'notAdjacent':return A!==B&&Math.abs(A-B)!==1;
   case 'distance2':return Math.abs(A-B)===2;
   case 'distance3':return Math.abs(A-B)===3;
-  case 'edge':return Math.min(A,B)===0&&Math.max(A,B)===4;
+  case 'edge':return Math.min(A,B)===0&&Math.max(A,B)===Object.values(values)[0].length-1;
   case 'sandwich':return C>=0&&Math.abs(A-B)===1&&Math.abs(A-C)===1&&B!==C;
   case 'between':return C>=0&&((B<A&&A<C)||(C<A&&A<B));
   default:return false;

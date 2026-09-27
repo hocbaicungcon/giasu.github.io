@@ -1064,9 +1064,8 @@ function render(){
   level===levels.length-1;
 
  document.querySelector(
-  '#tangram-level-label'
- ).textContent=
-  `${level+1} · ${levels[level].name}`;
+  '#tangram-jump'
+ ).value=String(level);
 
  document.querySelector(
   '#tangram-hint'
@@ -1453,6 +1452,19 @@ document.querySelector(
 // ============================================================
 // LEVEL NAVIGATION
 // ============================================================
+
+const levelSelect=document.querySelector('#tangram-jump');
+levelSelect.replaceChildren(...levels.map((_,index)=>{
+ const option=document.createElement('option');
+ option.value=String(index);
+ option.textContent=String(index+1);
+ return option;
+}));
+levelSelect.addEventListener('change',()=>{
+ level=Number(levelSelect.value);
+ hint=false;
+ reset();
+});
 
 for(const [id,delta] of [
  ['tangram-prev',-1],
