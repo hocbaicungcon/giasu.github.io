@@ -4,12 +4,12 @@ export const roadMap={nodes:{A:[48,200],B:[148,56],F:[148,344],G:[345,220],C:[45
 export const towerMap={nodes:{A:[300,45],B:[95,345],C:[515,345],D:[355,250]},edges:[['A','B',10],['A','D',9],['A','C',11],['B','D',11],['B','C',12],['C','D',14]],start:'A'};
 export function routeLevel(mode,index){
  if(mode==='dots'){
-  const count=index<10?4:index<30?5:index<90?6:index<250?7:8;
-  const letters='ABCDEFGH',nodes={};
+  const count=Math.min(15,5+Math.floor(index/70));
+  const letters='ABCDEFGHIJKLMNO',nodes={};
   for(let i=0;i<count;i++){
    const angle=2*Math.PI*i/count-Math.PI/2;
-   const wobble=((index*17+i*31)%9-4)*10;
-   nodes[letters[i]]=[Math.round(340+(145+wobble)*Math.cos(angle)),Math.round(200+(130+wobble)*Math.sin(angle))];
+   const wobble=((index*17+i*31)%9-4)*5;
+   nodes[letters[i]]=[Math.round(340+(205+wobble)*Math.cos(angle)),Math.round(200+(140+wobble)*Math.sin(angle))];
   }
   const names=Object.keys(nodes),edges=[];
   for(let i=0;i<count;i++)for(let j=i+1;j<count;j++){
@@ -18,15 +18,14 @@ export function routeLevel(mode,index){
   }
   return {nodes,edges,start:names[index%count]};
  }
- const base=mode==='towers'?towerMap:roadMap;
- const names=mode!=='towers'
-  ? index<10?['A','B','F','G']:index<15?['A','B','F','G','C']:index<20?['A','B','F','G','C','E']:Object.keys(base.nodes)
-  : Object.keys(base.nodes);
- const allowed=new Set(names),nodes=Object.fromEntries(names.map(name=>[name,[...base.nodes[name]]]));
- if(mode!=='towers'&&names.length===4)Object.assign(nodes,{A:[65,200],B:[245,65],F:[245,335],G:[535,200]});
- else if(mode!=='towers'&&names.length<7)for(const point of Object.values(nodes))point[0]+=100;
- const full=(mode==='roads'&&index===20)||(mode==='towers'&&index===10);
- const edges=base.edges.filter(([a,b])=>allowed.has(a)&&allowed.has(b)).map(([a,b,w],i)=>[a,b,full?w:Math.max(2,w+(((index*13+i*17+(index>>3))%7)-3))]);
+ const count=Math.min(9,4+Math.floor(index/100)),names='ABCDEFGHI'.slice(0,count).split(''),nodes={};
+ for(let i=0;i<count;i++){const angle=2*Math.PI*i/count-Math.PI/2;nodes[names[i]]=[Math.round(340+235*Math.cos(angle)),Math.round(200+150*Math.sin(angle))];}
+ const edges=[];
+ const add=(i,j)=>{const a=names[i],b=names[j],weight=2+((index*7+i*11+j*17)%15);if(!edges.some(([u,v])=>u===a&&v===b||u===b&&v===a))edges.push([a,b,weight]);};
+ for(let i=0;i<count;i++)add(i,(i+1)%count);
+ if(mode==='roads'||mode==='limits')for(let i=0;i<Math.min(count-2,6);i++)add((i*3+index)%count,(i*3+index+2)%count);
+ if(mode==='towers')for(let i=0;i<count;i++)add(i,(i+2)%count);
+ const full=false;
  const start=full?base.start:names[index%names.length];
  if(mode!=='limits')return {nodes,edges,start};
  const goal=names[(index+2)%names.length];
@@ -97,11 +96,17 @@ export function shortestLimitedRoute(map,from=map.start,viaSeen=false){
 
 // Shortest open route from a fixed first point, visiting every dot once.
 export function shortestDotRoute(map,from=map.start,visited=[from]){
- const names=Object.keys(map.nodes),used=new Set(visited),remaining=names.filter(name=>!used.has(name));
- let best=null;
- const visit=(at,left,path,cost)=>{
-  if(!left.length){if(!best||cost<best.cost)best={route:path,cost};return;}
-  for(const next of left){const edge=map.edges.find(([a,b])=>a===at&&b===next||b===at&&a===next);const value=cost+edge[2];if(best&&value>=best.cost)continue;visit(next,left.filter(name=>name!==next),[...path,next],value);}
+ const names=Object.keys(map.nodes),weights=Object.fromEntries(map.edges.flatMap(([a,b,w])=>[[`${a}:${b}`,w],[`${b}:${a}`,w]]));
+ const remaining=names.filter(name=>!visited.includes(name)),memo=new Map();
+ const solve=(at,mask)=>{
+  if(!mask)return {cost:0,route:[at]};
+  const key=`${at}:${mask}`;if(memo.has(key))return memo.get(key);
+  let best=null;
+  for(let i=0;i<remaining.length;i++)if(mask&(1<<i)){
+   const next=remaining[i],tail=solve(next,mask^(1<<i)),cost=weights[`${at}:${next}`]+tail.cost;
+   if(!best||cost<best.cost)best={cost,route:[at,...tail.route]};
+  }
+  memo.set(key,best);return best;
  };
- visit(from,remaining,[from],0);return best;
+ return solve(from,(1<<remaining.length)-1);
 }

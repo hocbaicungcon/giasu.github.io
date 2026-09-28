@@ -23,6 +23,11 @@ const paths = {
   close: '<path d="m6 6 12 12M18 6 6 18"/>',
   eye: '<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>',
   notes: '<path d="m4 16-1 5 5-1L20 8l-4-4ZM14 6l4 4"/>',
+  autoNotes: '<path d="M4 6h11M4 11h11M4 16h8m4-3 2 2 3-4"/>',
+  autoFill: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="m7 12 3 3 7-7"/>',
+  selectMany: '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+  arrowSolid: '<circle cx="4" cy="19" r="1.5"/><path d="M6 18 19 5m-6 0h6v6"/>',
+  arrowDashed: '<circle cx="4" cy="19" r="1.5"/><path d="M6 18 19 5" stroke-dasharray="3 2"/><path d="M13 5h6v6"/>',
   hint: '<path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0l-1 2H9Z"/>',
   flag: '<path d="M5 21V3h13l-3 5 3 5H5"/>',
   fullscreen: '<path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/>',
@@ -135,9 +140,10 @@ function showGameTooltip(button){
   gameTooltip.style.left=left+'px';gameTooltip.style.top=top+'px';
  },180);
 }
-document.addEventListener('pointerover',event=>{if(event.pointerType==='touch')return;const button=event.target.closest('.game-nav button');if(button&&button!==tooltipButton)showGameTooltip(button);});
-document.addEventListener('pointerout',event=>{if(tooltipButton&&event.target.closest('.game-nav button')===tooltipButton&&!tooltipButton.contains(event.relatedTarget))hideGameTooltip();});
-document.addEventListener('focusin',event=>{const button=event.target.closest('.game-nav button');if(button)showGameTooltip(button);});
+const tooltipSelector='.game-nav button, .sudoku-control-bar button';
+document.addEventListener('pointerover',event=>{if(event.pointerType==='touch')return;const button=event.target.closest(tooltipSelector);if(button&&button!==tooltipButton)showGameTooltip(button);});
+document.addEventListener('pointerout',event=>{if(tooltipButton&&event.target.closest(tooltipSelector)===tooltipButton&&!tooltipButton.contains(event.relatedTarget))hideGameTooltip();});
+document.addEventListener('focusin',event=>{const button=event.target.closest(tooltipSelector);if(button)showGameTooltip(button);});
 document.addEventListener('focusout',event=>{if(event.target===tooltipButton)hideGameTooltip();});
 document.addEventListener('pointerdown',hideGameTooltip,true);
 document.addEventListener('keydown',event=>{if(event.key==='Escape')hideGameTooltip();});
