@@ -6795,3 +6795,34 @@ html[data-theme="dark"] #soko-board .soko-cell.player.selected::before {
 }
 html[data-theme="dark"] .einstein-tooltip { background: #5d492f; color: #fff8e9; }
 .einstein-tooltip[hidden] { display: none; }
+
+/* Shortest-route game: one SVG graph and accessible tap targets. */
+#game-shortest { max-width: 850px; }
+.route-scene { --route-edge: #8aada8; --route-used: #317c73; --route-answer: #b97b36; --route-node: #f9fffc; --route-current: #bee8d7; --route-ink: #254d4c; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+html[data-theme="dark"] .route-scene { --route-edge: #b4a587; --route-used: #876c3f; --route-answer: #a65739; --route-node: #fff2d8; --route-current: #e6ca8e; --route-ink: #5a442d; }
+#shortest-title { margin: 2px 0; font-size: clamp(.85rem,2.5vw,1rem); text-align: center; color: var(--route-ink); }
+.route-board { position: relative; width: min(100%,680px); aspect-ratio: 17/10; touch-action: manipulation; }
+.route-board > svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.route-edge line { stroke: var(--route-edge); stroke-width: 3; }
+.route-edge.used line { stroke: var(--route-used); stroke-width: 5; }
+.route-edge.answer line { stroke: var(--route-answer); stroke-width: 5; stroke-dasharray: 9 6; }
+.route-edge.blocked line { stroke: var(--route-answer); stroke-width: 4; stroke-dasharray: 8 7; opacity: .72; }
+.route-node.goal circle { stroke: var(--route-answer); stroke-width: 5; }
+.route-node.via circle { fill: var(--route-current); stroke: var(--route-answer); stroke-width: 4; }
+.route-edge text { fill: var(--route-ink); font: 700 19px Inter,sans-serif; text-anchor: middle; dominant-baseline: central; paint-order: stroke fill; stroke: var(--game-control-bg); stroke-width: 5; }
+.route-node circle { fill: var(--route-node); stroke: var(--route-used); stroke-width: 3; }
+.route-node.current circle { fill: var(--route-current); stroke-width: 5; }
+.route-node text { fill: var(--route-ink); font: 800 20px Inter,sans-serif; text-anchor: middle; dominant-baseline: central; }
+.route-node-buttons { position: absolute; inset: 0; }
+#game-shortest .route-node-buttons button:not(:where(.game-nav *, .game-result *)) { position: absolute; transform: translate(-50%,-50%); width: clamp(30px,6vw,44px); height: clamp(30px,6vw,44px); min-width: 0; min-height: 0; padding: 0; border-radius: 50%; background: transparent; color: transparent; border: 0; box-shadow: none; appearance: none; }
+#game-shortest .route-node-buttons button:disabled:not(:where(.game-nav *, .game-result *)) { opacity: 1; cursor: default; }
+#game-shortest .route-node-buttons button.hint:not(:where(.game-nav *, .game-result *)) { outline: 4px solid var(--route-answer); outline-offset: 2px; }
+#game-shortest .route-node-buttons button:focus-visible:not(:where(.game-nav *, .game-result *)) { outline: 3px solid var(--route-answer); outline-offset: 1px; }
+.route-readout { display: flex; flex-direction: column; align-items: center; gap: 7px; width: 100%; color: var(--route-ink); font-size: .85rem; text-align: center; }
+.route-score { margin: 3px auto; gap: 10px; color: var(--route-ink); }
+.route-score strong { display: flex; }
+.route-score svg { height: clamp(32px,7vw,44px); }
+#shortest-progress { font-weight: 700; }
+#shortest-route { overflow-wrap: anywhere; }
+#shortest-status { margin: 0; min-height: 2.6em; color: var(--route-ink); text-align: center; font-weight: 650; }
+@media(max-width:620px) { .route-scene { padding: 4px; } .route-board { width: calc(100% - 14px); } .route-edge text { font-size: 22px; } #game-shortest .route-node-buttons button:not(:where(.game-nav *, .game-result *)) { width: 30px; height: 30px; } }

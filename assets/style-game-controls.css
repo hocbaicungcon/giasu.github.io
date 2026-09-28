@@ -485,6 +485,8 @@ html[data-theme="dark"] {
     padding: 3px;
     min-height: 38px;
   }
+  #game-shortest .game-nav { --game-control-size: clamp(24px, 6.4vw, 32px); --game-control-icon-size: 17px; gap: 2px; padding: 3px; }
+  #game-shortest .game-nav select { min-width: 58px; max-width: 72px; }
   #game-einstein .game-nav {
     --game-control-size: clamp(23px,6.5vw,34px);
     --game-control-icon-size: 18px;

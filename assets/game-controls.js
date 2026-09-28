@@ -2,6 +2,9 @@
 /* A single vector icon system for game navigation, independent of text fonts. */
 const paths = {
   board4: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7.5 3v18M12 3v18M16.5 3v18M3 7.5h18M3 12h18M3 16.5h18"/>',
+  routeRoads: '<circle cx="4" cy="12" r="2"/><circle cx="12" cy="4" r="2"/><circle cx="20" cy="12" r="2"/><circle cx="12" cy="20" r="2"/><path d="M5.5 10.5 10.5 5.5m3 0 5 5m0 3-5 5m-3 0-5-5M6 12h12"/>',
+  routeLimits: '<circle cx="4" cy="17" r="2"/><circle cx="12" cy="7" r="2"/><circle cx="20" cy="17" r="2"/><path d="m5.5 15.5 5-7m3 0 5 7M9 20h6"/>',
+  routeTowers: '<path d="M5 19V9h4v10m6 0V5h4v14M3 20h18M5 12h4m6-2h4"/>',
   board5: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M6.6 3v18M10.2 3v18M13.8 3v18M17.4 3v18M3 6.6h18M3 10.2h18M3 13.8h18M3 17.4h18"/>',
   first: '<circle cx="12" cy="12" r="9"/><path d="m9 9 3-2v10m-3 0h6"/>',
   second: '<circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-6 4-6 8h6"/>',
