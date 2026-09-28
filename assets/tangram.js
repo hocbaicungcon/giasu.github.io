@@ -176,11 +176,8 @@ function setupTargets(){
   Math.max(...ys)
  ];
 
- pieceScale=Math.min(
-  1.22,
-  390/(box[2]-box[0]),
-  285/(box[3]-box[1])
- );
+ // Keep every puzzle at the same physical scale; the widest outline is 450 units.
+ pieceScale=.72;
 
  const mx=(box[0]+box[2])/2;
  const my=(box[1]+box[3])/2;
@@ -188,14 +185,14 @@ function setupTargets(){
  targetOutline=levels[level].outline.map(
   ([x,y])=>[
    350+(x-mx)*pieceScale,
-   235+(y-my)*pieceScale
+   205+(y-my)*pieceScale
   ]
  );
 
  targets=levels[level].poses.map(
   ([x,y,a,flip])=>[
    350+(x-mx)*pieceScale,
-   235+(y-my)*pieceScale,
+   205+(y-my)*pieceScale,
    a,
    flip
   ]
@@ -885,12 +882,12 @@ function render(){
 
   make('rect',{
    width:620,
-   height:560,
+   height:525,
    class:'tangram-bg'
   }),
 
   make('path',{
-   d:'M20 415H600',
+   d:'M20 370H600',
    class:'tangram-divider'
   })
  );
@@ -1086,7 +1083,7 @@ function reset(){
    (_,i)=>({
     type:i,
     x:55+i*85,
-    y:490,
+    y:447,
     a:0,
     flip:0
    })

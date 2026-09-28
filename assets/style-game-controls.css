@@ -11,6 +11,8 @@
   --game-control-hover-ink: #174d56;
   --game-control-active: #cee6db;
   --game-control-focus: #438675;
+  --game-control-on-bg: #2d7667;
+  --game-control-on-ink: #fff;
   --game-result-overlay: #dcefebf5;
   --game-result-paper: #f8fffd;
   --game-result-edge: #94bfb4;
@@ -38,6 +40,8 @@ html[data-theme="dark"] {
   --game-control-hover-ink: #49351f;
   --game-control-active: #dfc69a;
   --game-control-focus: #9b7549;
+  --game-control-on-bg: #86592e;
+  --game-control-on-ink: #fff9e9;
   --game-result-overlay: #e9d6aff5;
   --game-result-paper: #fff0cf;
   --game-result-edge: #c5a16b;
@@ -185,9 +189,11 @@ html[data-theme="dark"] {
   color: var(--game-control-hover-ink);
   border-color: var(--game-control-focus);
 }
-.game-nav .game-control[aria-pressed="true"]:not([data-puzzle-sound]) {
-  background: var(--game-control-active);
-  border-color: var(--game-control-focus);
+.game-nav .game-control[aria-pressed="true"],
+.game-nav .game-control[aria-pressed="true"]:not(:disabled):hover {
+  background: var(--game-control-on-bg);
+  border-color: var(--game-control-on-bg);
+  color: var(--game-control-on-ink);
 }
 .game-nav .game-control:focus-visible {
   outline: 2px solid var(--game-control-focus);

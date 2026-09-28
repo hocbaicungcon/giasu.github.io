@@ -22,6 +22,7 @@ document.querySelectorAll('.game-panel').forEach(panel=>{
   nav.append(panel.querySelector('#word-give-up'),panel.querySelector('[data-restart="words"]'));
  }else if(game==='sudoku'){
   nav.append(panel.querySelector('#sudoku-level').parentElement,...panel.querySelector('.puzzle-actions').children);
+  nav.after(panel.querySelector('#sudoku-timer'));
  }else if(game==='hanoi'){
   nav.append(panel.querySelector('#hanoi-level').parentElement,...panel.querySelector('.puzzle-actions').children);
  }else if(game==='einstein'){
