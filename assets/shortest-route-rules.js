@@ -3,6 +3,21 @@
 export const roadMap={nodes:{A:[48,200],B:[148,56],F:[148,344],G:[345,220],C:[455,56],E:[455,344],D:[610,145]},edges:[['A','B',4],['A','F',5],['A','G',17],['B','F',3],['B','C',8],['B','G',8],['F','G',7],['F','E',10],['G','C',9],['G','E',6],['G','D',18],['C','E',6],['C','D',10],['E','D',12]],start:'A'};
 export const towerMap={nodes:{A:[300,45],B:[95,345],C:[515,345],D:[355,250]},edges:[['A','B',10],['A','D',9],['A','C',11],['B','D',11],['B','C',12],['C','D',14]],start:'A'};
 export function routeLevel(mode,index){
+ if(mode==='dots'){
+  const count=index<10?4:index<30?5:index<90?6:index<250?7:8;
+  const letters='ABCDEFGH',nodes={};
+  for(let i=0;i<count;i++){
+   const angle=2*Math.PI*i/count-Math.PI/2;
+   const wobble=((index*17+i*31)%9-4)*10;
+   nodes[letters[i]]=[Math.round(340+(145+wobble)*Math.cos(angle)),Math.round(200+(130+wobble)*Math.sin(angle))];
+  }
+  const names=Object.keys(nodes),edges=[];
+  for(let i=0;i<count;i++)for(let j=i+1;j<count;j++){
+   const [x,y]=nodes[names[i]],[u,v]=nodes[names[j]];
+   edges.push([names[i],names[j],Math.max(1,Math.round(Math.hypot(x-u,y-v)/20))]);
+  }
+  return {nodes,edges,start:names[index%count]};
+ }
  const base=mode==='towers'?towerMap:roadMap;
  const names=mode!=='towers'
   ? index<10?['A','B','F','G']:index<15?['A','B','F','G','C']:index<20?['A','B','F','G','C','E']:Object.keys(base.nodes)
@@ -26,6 +41,7 @@ export function routeLevel(mode,index){
 export function routeStep(map,mode,route,next){
  const current=route.at(-1),edge=map.edges.findIndex(([a,b])=>a===current&&b===next||a===next&&b===current);
  if(edge<0)return {error:'Chỉ được đi theo đường nối hai điểm.'};
+ if(mode==='dots'&&route.includes(next))return {error:'Mỗi điểm chỉ được nối một lần.'};
  if(mode==='limits'){
   if(map.blocked&&[current,next].every(name=>map.blocked.includes(name)))return {error:'Con đường này đang bị chặn.'};
   if(next===map.goal&&map.via&&!route.includes(map.via))return {error:`Cần ghé ${map.via} trước khi đến ${map.goal}.`};
@@ -39,7 +55,7 @@ export function routeStep(map,mode,route,next){
   const id=map.edges.findIndex(([a,b])=>a===nextRoute[i-1]&&b===nextRoute[i]||b===nextRoute[i-1]&&a===nextRoute[i]);
   covered.add(id);cost+=map.edges[id][2];
  }
- const done=mode==='limits'?next===map.goal:next===route[0]&&(mode==='roads'?covered.size===map.edges.length:route.length===Object.keys(map.nodes).length);
+ const done=mode==='dots'?nextRoute.length===Object.keys(map.nodes).length:mode==='limits'?next===map.goal:next===route[0]&&(mode==='roads'?covered.size===map.edges.length:route.length===Object.keys(map.nodes).length);
  return {route:nextRoute,cost,covered,done};
 }
 // Dijkstra over (covered-road mask, current vertex) allows repeated roads.
@@ -77,4 +93,15 @@ export function shortestLimitedRoute(map,from=map.start,viaSeen=false){
   }
  }
  return null;
+}
+
+// Shortest open route from a fixed first point, visiting every dot once.
+export function shortestDotRoute(map,from=map.start,visited=[from]){
+ const names=Object.keys(map.nodes),used=new Set(visited),remaining=names.filter(name=>!used.has(name));
+ let best=null;
+ const visit=(at,left,path,cost)=>{
+  if(!left.length){if(!best||cost<best.cost)best={route:path,cost};return;}
+  for(const next of left){const edge=map.edges.find(([a,b])=>a===at&&b===next||b===at&&a===next);const value=cost+edge[2];if(best&&value>=best.cost)continue;visit(next,left.filter(name=>name!==next),[...path,next],value);}
+ };
+ visit(from,remaining,[from],0);return best;
 }

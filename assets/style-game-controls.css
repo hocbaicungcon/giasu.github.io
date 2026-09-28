@@ -251,12 +251,13 @@ html[data-theme="dark"] {
   color: var(--game-control-ink);
 }
 .game-nav .sudoku-difficulty {
-  flex: 0 0 80px;
+  flex: 0 0 130px;
 }
 .game-nav .sudoku-difficulty select {
-  flex-basis: 80px;
-  width: 80px;
-  min-width: 80px;
+  flex-basis: 130px;
+  width: 130px;
+  min-width: 130px;
+  font-size: .72rem;
   padding-left: 7px;
   padding-right: 22px;
   text-align: left;
@@ -485,8 +486,8 @@ html[data-theme="dark"] {
     padding: 3px;
     min-height: 38px;
   }
-  #game-shortest .game-nav { --game-control-size: clamp(24px, 6.4vw, 32px); --game-control-icon-size: 17px; gap: 2px; padding: 3px; }
-  #game-shortest .game-nav select { min-width: 58px; max-width: 72px; }
+  #game-shortest .game-nav { --game-control-size: clamp(19px, 5.5vw, 27px); --game-control-icon-size: 15px; gap: 1px; padding: 3px; }
+  #game-shortest .game-nav select { flex: 0 0 54px; width: 54px; min-width: 54px; max-width: 54px; padding-left: 6px; padding-right: 16px; }
   #game-einstein .game-nav {
     --game-control-size: clamp(23px,6.5vw,34px);
     --game-control-icon-size: 18px;

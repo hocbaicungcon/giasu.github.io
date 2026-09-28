@@ -3,6 +3,7 @@ import {setGameControlLabel} from './game-controls.js';
 import {levels} from './tangram-levels.js';
 import {createGameResult} from './game-result.js';
 import {sound} from './puzzle-audio.js';
+import {formsSilhouette} from './tangram-geometry.js';
 
 const svg=document.querySelector('#tangram-board');
 const scene=document.querySelector('#tangram-scene');
@@ -837,10 +838,10 @@ function checkPuzzle(){
  // COMPLETE
  // ----------------------------------------------------------
 
- if(count===7){
+ if(count===7||formsSilhouette(targetOutline,pieces.map((_,i)=>piecePoints(i)))){
 
   status.textContent=
-   'Hoàn thành! Tất cả 7 mảnh đã đúng vị trí.';
+   'Hoàn thành! Bạn đã ghép đúng hình mục tiêu.';
 
   if(!completed){
 
