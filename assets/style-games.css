@@ -1693,6 +1693,26 @@ html[data-theme="dark"] .water-jug .jug-below-can {
   background: #ffe0dc;
 }
 
+
+#game-sudoku { --sudoku-practice-bg: #e8f2e9; --sudoku-practice-ink: #28584e; --sudoku-practice-line: #a6c9b8; --sudoku-practice-mark: #b9dfca; }
+html[data-theme="dark"] #game-sudoku { --sudoku-practice-bg: #f6ead3; --sudoku-practice-ink: #684c2c; --sudoku-practice-line: #c8ad81; --sudoku-practice-mark: #ead09c; }
+#game-sudoku #sudoku-timer { margin-left: auto; color: var(--sudoku-practice-ink); font-variant-numeric: tabular-nums; font-weight: 750; }
+#game-sudoku .sudoku-tools,
+#game-sudoku .sudoku-practice-bar { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 6px; margin: 9px auto; max-width: 520px; }
+#game-sudoku .sudoku-practice-bar[hidden] { display: none; }
+#game-sudoku .sudoku-tools button:not(:where(.game-nav *, .game-result *)),
+#game-sudoku .sudoku-practice-bar button:not(:where(.game-nav *, .game-result *)),
+#game-sudoku .sudoku-practice-bar select { margin: 0; min-height: 34px; padding: 6px 10px; border: 1px solid var(--sudoku-practice-line); border-radius: 999px; background: var(--sudoku-practice-bg); color: var(--sudoku-practice-ink); font-size: .84rem; font-weight: 700; }
+#game-sudoku .sudoku-tools button[aria-pressed="true"]:not(:where(.game-nav *, .game-result *)) { background: var(--sudoku-practice-mark); }
+#game-sudoku .sudoku-tools button:disabled:not(:where(.game-nav *, .game-result *)) { opacity: .45; }
+#game-sudoku #sudoku-board button.practice-pattern:not(:where(.game-nav *, .game-result *)) { background: var(--sudoku-practice-mark); }
+#game-sudoku #sudoku-board button.practice-target:not(:where(.game-nav *, .game-result *)) { background: var(--sudoku-practice-mark); color: var(--sudoku-practice-ink); font-weight: 800; }
+#game-sudoku .sudoku-notes-grid i.highlighted { display: grid; place-items: center; width: 90%; height: 90%; border-radius: 50%; background: var(--sudoku-practice-mark); color: var(--sudoku-practice-ink); font-weight: 800; }
+#game-sudoku .sudoku-notes-grid i.practice-target { text-decoration: underline; text-decoration-thickness: 2px; font-weight: 800; }
+#game-sudoku #sudoku-keys .sudoku-used { opacity: .42; }
+#game-sudoku #sudoku-keys .sudoku-number-active { background: var(--sudoku-practice-mark); color: var(--sudoku-practice-ink); }
+@media(max-width:620px) { #game-sudoku .sudoku-tools button:not(:where(.game-nav *, .game-result *)) { font-size: .77rem; padding: 5px 8px; } }
+
 .hanoi-disk::before {
   content: none;
 }
@@ -6807,6 +6827,9 @@ html[data-theme="dark"] .route-scene { --route-edge: #b4a587; --route-used: #876
 .route-edge.used line { stroke: var(--route-used); stroke-width: 5; }
 .route-edge.answer line { stroke: var(--route-answer); stroke-width: 5; stroke-dasharray: 9 6; }
 .route-edge.blocked line { stroke: var(--route-answer); stroke-width: 4; stroke-dasharray: 8 7; opacity: .72; }
+.route-node.dot circle { fill: var(--route-current); stroke: var(--route-used); stroke-width: 3; }
+.route-node.dot.visited circle { fill: var(--route-used); stroke: var(--route-ink); }
+.route-node.dot.current circle { fill: var(--route-answer); stroke: var(--route-used); stroke-width: 5; }
 .route-node.goal circle { stroke: var(--route-answer); stroke-width: 5; }
 .route-node.via circle { fill: var(--route-current); stroke: var(--route-answer); stroke-width: 4; }
 .route-edge text { fill: var(--route-ink); font: 700 19px Inter,sans-serif; text-anchor: middle; dominant-baseline: central; paint-order: stroke fill; stroke: var(--game-control-bg); stroke-width: 5; }
