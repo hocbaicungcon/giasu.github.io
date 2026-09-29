@@ -271,12 +271,15 @@ function enterNumber(digit,forceValue=false){
   removePracticeCandidate(selected,digit);focusCell();return;
  }
  if(!practice&&multi.size&&digit){
-  remember();const all=[...multi].every(i=>notes[i].has(digit));
-  for(const i of multi)if(!puzzle[i]&&!cells[i])all?notes[i].delete(digit):notes[i].add(digit);
-  highlight=digit;const filled=fillRemainingSingles();
-  say(`Đã ${all?'bỏ':'thêm'} ghi chú ${digit} cho ${multi.size} ô.${filled?` Tự động điền thêm ${filled} ô.`:''}`);
-  render();finish();return;
- }
+   const targets=[...multi].filter(i=>!puzzle[i]&&!cells[i]);
+   if(!targets.length){highlight=digit;render();return;}
+   remember();
+   const all=targets.every(i=>notes[i].has(digit));
+   for(const i of targets)all?notes[i].delete(digit):notes[i].add(digit);
+   highlight=digit;const filled=fillRemainingSingles();
+   say(`Đã ${all?'bỏ':'thêm'} ghi chú ${digit} cho ${targets.length} ô.${filled?` Tự động điền thêm ${filled} ô.`:''}`);
+   render();finish();return;
+  }
  if(selected<0){armedDigit=armedDigit===digit?0:digit;highlight=armedDigit;render();return;}
  if(practice){const step=practice.step;if(selected!==step.cell||digit!==step.digit){say('Chưa đúng. Hãy xem các ô được tô sáng hoặc dùng gợi ý.');sound('error');return;}}
  if(puzzle[selected])return;
