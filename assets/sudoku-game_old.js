@@ -28,7 +28,7 @@ $('#sudoku-keys').querySelectorAll('[data-sudoku-number]').forEach(button=>{
  button.append(face,count);
 });
 const peers=(a,b)=>Math.floor(a/9)===Math.floor(b/9)||a%9===b%9||Math.floor(a/27)===Math.floor(b/27)&&Math.floor(a%9/3)===Math.floor(b%9/3);
-let puzzle,solution,cells,notes,selected=-1,highlight=0,armedDigit=0,done=false,notesMode=false,multiMode=false,multi=new Set(),history=[],practice=null,saved=null,elapsed=0,hintLevel=0,hintCell=-1,checked=false,revealCount=0,autoFill=false,arrowMode='off',arrowEraseMode=false,arrows=[],arrowDrag=null,pendingArrowStart=-1;
+let puzzle,solution,cells,notes,selected=-1,highlight=0,armedDigit=0,done=false,notesMode=false,multiMode=false,multi=new Set(),history=[],practice=null,saved=null,elapsed=0,hintLevel=0,hintCell=-1,checked=false,revealCount=0,autoFill=false,arrowMode='off',arrows=[],arrowDrag=null,pendingArrowStart=-1;
 const focusCell=()=>board.querySelector(`[data-cell="${selected}"]`)?.focus({preventScroll:true});
 const say=message=>{status.textContent=message;};
 const snapshot=()=>({cells:[...cells],notes:notes.map(group=>new Set(group)),arrows:arrows.map(arrow=>({...arrow})),selected,highlight,armedDigit,done,checked,practiceLeft:practice&&new Set(practice.left)});
@@ -44,13 +44,13 @@ function renderArrows(){
  if(!lines.length)return;
  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');
  svg.classList.add('sudoku-arrow-layer');svg.setAttribute('viewBox',`0 0 ${board.clientWidth} ${board.clientHeight}`);svg.setAttribute('aria-hidden','true');
- svg.innerHTML='<defs><marker id="sudoku-arrow-tip" markerWidth="30" markerHeight="30" refX="19" refY="15" orient="auto" markerUnits="userSpaceOnUse" viewBox="0 0 30 30"><path d="M3 3 L27 15 L3 27 Z"/></marker></defs>';
+ svg.innerHTML='<defs><marker id="sudoku-arrow-tip" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 7 4 1 7Z"/></marker></defs>';
  for(const arrow of lines){
   const from=board.children[arrow.start],to=board.children[arrow.end];if(!from||!to)continue;
   const x1=from.offsetLeft+from.offsetWidth/2,y1=from.offsetTop+from.offsetHeight/2,x2=to.offsetLeft+to.offsetWidth/2,y2=to.offsetTop+to.offsetHeight/2;
-  const length=Math.hypot(x2-x1,y2-y1)||1,ux=(x2-x1)/length,uy=(y2-y1)/length,gap=Math.min(from.offsetWidth,from.offsetHeight)*.27,headGap=Math.min(from.offsetWidth,from.offsetHeight)*.43;
-  const line=document.createElementNS(ns,'line');line.setAttribute('x1',x1+ux*gap);line.setAttribute('y1',y1+uy*gap);line.setAttribute('x2',x2-ux*headGap);line.setAttribute('y2',y2-uy*headGap);line.setAttribute('marker-end','url(#sudoku-arrow-tip)');
-  if(!arrow.preview)line.dataset.arrowIndex=arrows.indexOf(arrow);if(arrow.style==='dashed')line.classList.add('dashed');if(arrow.preview)line.classList.add('preview');svg.append(line);
+  const length=Math.hypot(x2-x1,y2-y1)||1,ux=(x2-x1)/length,uy=(y2-y1)/length,gap=Math.min(from.offsetWidth,from.offsetHeight)*.27;
+  const line=document.createElementNS(ns,'line');line.setAttribute('x1',x1+ux*gap);line.setAttribute('y1',y1+uy*gap);line.setAttribute('x2',x2-ux*gap);line.setAttribute('y2',y2-uy*gap);line.setAttribute('marker-end','url(#sudoku-arrow-tip)');
+  if(arrow.style==='dashed')line.classList.add('dashed');if(arrow.preview)line.classList.add('preview');svg.append(line);
  }
  board.append(svg);
 }
@@ -59,7 +59,7 @@ function syncArrowButton(){
  const label=arrowMode==='off'?'Bật vẽ mũi tên liền':arrowMode==='solid'?'Mũi tên liền · bấm để chuyển nét đứt':'Mũi tên nét đứt · bấm để tắt';
  if(arrowButton.dataset.controlIcon!==icon)setGameControlIcon(arrowButton,icon,label);else setGameControlLabel(arrowButton,label);
  arrowButton.dataset.arrowMode=arrowMode;arrowButton.setAttribute('aria-pressed',String(arrowMode!=='off'));
- board.classList.toggle('arrow-mode',arrowMode!=='off');board.classList.toggle('arrow-erase-mode',arrowEraseMode);
+ board.classList.toggle('arrow-mode',arrowMode!=='off');
 }
 function render(){
  board.replaceChildren(...cells.map((value,i)=>{
@@ -90,7 +90,7 @@ function render(){
   button.setAttribute('aria-pressed',String(digit>0&&digit===highlight));
   if(digit>0){button.setAttribute('aria-label',`Số ${digit}, còn ${remaining} ô`);button.title=`Còn ${remaining} ô`;button.querySelector('.sudoku-remaining').textContent=remaining;}
  });
- $('#sudoku-erase').setAttribute('aria-pressed',String(arrowEraseMode));$('#sudoku-notes').setAttribute('aria-pressed',String(notesMode));$('#sudoku-multi').setAttribute('aria-pressed',String(multiMode));
+ $('#sudoku-notes').setAttribute('aria-pressed',String(notesMode));$('#sudoku-multi').setAttribute('aria-pressed',String(multiMode));
  $('#sudoku-fill-singles').setAttribute('aria-pressed',String(autoFill));
  setGameControlLabel($('#sudoku-fill-singles'),autoFill?'Tắt tự động điền':'Bật tự động điền');
  $('#sudoku-practice').setAttribute('aria-pressed',String(Boolean(practice)));
@@ -102,7 +102,7 @@ function render(){
 function clearHints(){hintLevel=0;hintCell=-1;checked=false;}
 function newGame(){
  ({puzzle,solution}=makeSudokuLevel($('#sudoku-level').value));cells=[...puzzle];notes=Array.from({length:81},()=>new Set());
- selected=-1;highlight=0;armedDigit=0;done=false;notesMode=false;multiMode=false;multi.clear();arrows=[];arrowDrag=null;pendingArrowStart=-1;arrowEraseMode=false;history=[];clearHints();resetReveal();elapsed=0;$('#sudoku-timer').textContent='0:00';say(`${sudokuLevels.find(level=>level.id===$('#sudoku-level').value)?.name||'Sudoku'} · Chọn ô rồi bấm số. Bạn có thể dùng ghi chú hoặc luyện từng kỹ thuật.`);render();
+ selected=-1;highlight=0;armedDigit=0;done=false;notesMode=false;multiMode=false;multi.clear();arrows=[];arrowDrag=null;pendingArrowStart=-1;history=[];clearHints();resetReveal();elapsed=0;$('#sudoku-timer').textContent='0:00';say(`${sudokuLevels.find(level=>level.id===$('#sudoku-level').value)?.name||'Sudoku'} · Chọn ô rồi bấm số. Bạn có thể dùng ghi chú hoặc luyện từng kỹ thuật.`);render();
  if(!$('#game-sudoku').hidden)focusCell();
 }
 function finish(){if(done||practice||!cells.every((value,i)=>value===solution[i]))return;done=true;sound('win');say(`Chính xác! Hoàn thành trong ${$('#sudoku-timer').textContent}.`);render();}
@@ -169,30 +169,6 @@ function placeArrow(from,to){
  say(`Đã ${removed?'xóa':'vẽ'} mũi tên ${arrowMode==='dashed'?'nét đứt':'liền'}.`);
  render();
 }
-function setArrowMode(mode){
- arrowMode=mode;arrowEraseMode=false;arrowDrag=null;pendingArrowStart=-1;
- if(arrowMode!=='off'){multiMode=false;multi.clear();}
- say(arrowMode==='off'?'Đã tắt vẽ mũi tên.':`Vẽ mũi tên ${arrowMode==='dashed'?'nét đứt':'liền'}: kéo giữa hai ô, hoặc chạm lần lượt ô đầu và ô cuối.`);
- render();
-}
-function setArrowEraseMode(enabled=true){
- arrowEraseMode=enabled;arrowMode='off';arrowDrag=null;pendingArrowStart=-1;
- if(enabled){multiMode=false;multi.clear();say('Xóa mũi tên: chạm vào mũi tên cần xóa.');}
- else say('Đã tắt xóa mũi tên.');
- render();
-}
-function removeArrowAt(index){
- if(!Number.isInteger(index)||index<0||index>=arrows.length)return;
- remember();arrows.splice(index,1);say('Đã xóa mũi tên.');render();
-}
-board.addEventListener('click',event=>{
- if(!arrowEraseMode)return;
- const line=event.target.closest?.('.sudoku-arrow-layer line[data-arrow-index]');
- if(!line)return;
- event.preventDefault();event.stopPropagation();
- removeArrowAt(Number(line.dataset.arrowIndex));
-},true);
-
 board.addEventListener('pointerdown',event=>{
  if(arrowMode==='off'||event.button!==0)return;
  const cell=event.target.closest('[data-cell]');if(!cell)return;
@@ -235,7 +211,7 @@ document.addEventListener('pointerup',event=>{
  setTimeout(()=>{suppressBoardClick=false;},0);
 });
 board.addEventListener('click',event=>{
- if(arrowMode!=='off'||arrowEraseMode)return;
+ if(arrowMode!=='off')return;
  if(suppressBoardClick){suppressBoardClick=false;return;}
  const button=event.target.closest('[data-cell]');if(!button)return;const i=Number(button.dataset.cell),note=event.target.closest('[data-note]');
  if(practice?.step.kind==='remove'&&note&&notes[i].has(Number(note.dataset.note))){removePracticeCandidate(i,Number(note.dataset.note));focusCell();return;}
@@ -252,19 +228,16 @@ document.addEventListener('keydown',event=>{
   return;
  }
  if(event.ctrlKey||event.metaKey||event.altKey)return;
- const key=event.key.toLowerCase();
- if(key==='v'){event.preventDefault();setArrowMode(arrowMode==='off'?'solid':'off');return;}
- if(key==='x'){event.preventDefault();setArrowEraseMode(!arrowEraseMode);return;}
  if(/^[1-9]$/.test(event.key)){event.preventDefault();enterNumber(Number(event.key));return;}
  if(['Backspace','Delete','0'].includes(event.key)){event.preventDefault();enterNumber(0);return;}
  const delta={ArrowLeft:-1,ArrowRight:1,ArrowUp:-9,ArrowDown:9}[event.key];
  if(delta){event.preventDefault();multi.clear();selected=Math.max(0,Math.min(80,selected+delta));armedDigit=0;highlight=cells[selected]||0;render();focusCell();}
 });
 $('#sudoku-keys').addEventListener('click',event=>{const button=event.target.closest('[data-sudoku-number]');if(button)enterNumber(Number(button.dataset.sudokuNumber));});
-$('#sudoku-erase').onclick=()=>{enterNumber(0);setArrowEraseMode(true);};
+$('#sudoku-erase').onclick=()=>enterNumber(0);
 $('#sudoku-notes').onclick=()=>{notesMode=!notesMode;say(notesMode?'Ghi chú: chọn ô rồi chạm một số để thêm hoặc bỏ.':'Đã tắt ghi chú.');render();};
 $('#sudoku-multi').onclick=()=>{if(practice)return;multiMode=!multiMode;multi.clear();selected=-1;armedDigit=0;say(multiMode?'Quét chuột qua các ô trống rồi bấm số để thêm hoặc bỏ ghi chú.':'Đã tắt chọn nhiều ô.');render();};
-arrowButton.onclick=()=>setArrowMode(arrowMode==='off'?'solid':arrowMode==='solid'?'dashed':'off');
+arrowButton.onclick=()=>{arrowMode=arrowMode==='off'?'solid':arrowMode==='solid'?'dashed':'off';arrowDrag=null;pendingArrowStart=-1;if(arrowMode!=='off'){multiMode=false;multi.clear();}say(arrowMode==='off'?'Đã tắt vẽ mũi tên.':`Vẽ mũi tên ${arrowMode==='dashed'?'nét đứt':'liền'}: kéo giữa hai ô, hoặc chạm lần lượt ô đầu và ô cuối.`);render();};
 $('#sudoku-auto').onclick=()=>{
  if(done)return;remember();notes=practice?practice.baseNotes.map(group=>new Set(group)):candidateNotes(cells);
  if(practice?.step.kind==='remove')practice.left=new Set(practice.step.remove.map(([i,n])=>`${i}:${n}`));
@@ -284,7 +257,7 @@ $('#sudoku-check').onclick=()=>{
  checked=true;const wrong=cells.filter((value,i)=>value&&value!==solution[i]).length;
  say(wrong?`Có ${wrong} ô chưa đúng; chúng được tô đỏ.`:'Các số đã điền đều đúng.');render();
 };
-$('#sudoku-reset').onclick=()=>{if(practice){nextPractice();return;}cells=[...puzzle];notes=Array.from({length:81},()=>new Set());arrows=[];pendingArrowStart=-1;arrowEraseMode=false;selected=-1;highlight=0;armedDigit=0;done=false;history=[];clearHints();resetReveal();say('Đã làm lại ván hiện tại.');render();focusCell();};
+$('#sudoku-reset').onclick=()=>{if(practice){nextPractice();return;}cells=[...puzzle];notes=Array.from({length:81},()=>new Set());arrows=[];pendingArrowStart=-1;selected=-1;highlight=0;armedDigit=0;done=false;history=[];clearHints();resetReveal();say('Đã làm lại ván hiện tại.');render();focusCell();};
 $('#sudoku-reveal').onclick=()=>{if(done||practice)return;revealCount=10;cells=[...solution];notes=Array.from({length:81},()=>new Set());done=true;selected=-1;highlight=0;$('#sudoku-reveal').setAttribute('aria-pressed','true');say('Đã hiện đáp án. Bấm Làm lại hoặc Ván mới để tự giải tiếp.');render();};
 $('#sudoku-new').onclick=()=>{if(practice)exitPractice();newGame();};$('#sudoku-level').onchange=()=>{if(practice)exitPractice();newGame();};
 $('#sudoku-hint').onclick=()=>{

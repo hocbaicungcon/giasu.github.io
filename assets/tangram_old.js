@@ -90,19 +90,6 @@ let drag=null;
 let hint=false;
 let pieceScale=1;
 let completed=false;
-let boardHeight=525;
-let dividerY=370;
-
-function mobileLayout(){
- return matchMedia('(max-width:620px)').matches;
-}
-
-function updateBoardLayout(){
- const mobile=mobileLayout();
- boardHeight=mobile?690:525;
- dividerY=mobile?485:370;
- svg.setAttribute('viewBox',`0 0 620 ${boardHeight}`);
-}
 
 // ============================================================
 // GAME RESULT
@@ -174,40 +161,40 @@ function point(event){
 
 function setupTargets(){
 
- updateBoardLayout();
-
  const raw=levels[level].poses.map(
-  ([x,y,a,flip],i)=>shape(i,x,y,a,flip,1)
+  ([x,y,a,flip],i)=>
+   shape(i,x,y,a,flip,1)
  );
 
  const xs=raw.flat().map(p=>p[0]);
  const ys=raw.flat().map(p=>p[1]);
 
  const box=[
-  Math.min(...xs),Math.min(...ys),
-  Math.max(...xs),Math.max(...ys)
+  Math.min(...xs),
+  Math.min(...ys),
+  Math.max(...xs),
+  Math.max(...ys)
  ];
 
- const mobile=mobileLayout();
- pieceScale=mobile?.96:.84;
+ // Keep every puzzle at the same physical scale; the widest outline is 450 units.
+ pieceScale=.72;
 
  const mx=(box[0]+box[2])/2;
  const my=(box[1]+box[3])/2;
- const targetX=310;
- const targetY=mobile?235:205;
 
  targetOutline=levels[level].outline.map(
   ([x,y])=>[
-   targetX+(x-mx)*pieceScale,
-   targetY+(y-my)*pieceScale
+   350+(x-mx)*pieceScale,
+   205+(y-my)*pieceScale
   ]
  );
 
  targets=levels[level].poses.map(
   ([x,y,a,flip])=>[
-   targetX+(x-mx)*pieceScale,
-   targetY+(y-my)*pieceScale,
-   a,flip
+   350+(x-mx)*pieceScale,
+   205+(y-my)*pieceScale,
+   a,
+   flip
   ]
  );
 }
@@ -895,15 +882,51 @@ function render(){
 
   make('rect',{
    width:620,
-   height:boardHeight,
+   height:525,
    class:'tangram-bg'
   }),
 
   make('path',{
-   d:`M20 ${dividerY}H600`,
+   d:'M20 370H600',
    class:'tangram-divider'
   })
  );
+
+ // ----------------------------------------------------------
+ // HÌNH VUÔNG GỐC
+ // ----------------------------------------------------------
+
+ source.forEach((poly,i)=>{
+
+  svg.append(
+   make('polygon',{
+    points:
+     pointsString(
+      poly.map(
+       ([x,y])=>[
+        30+x*.38,
+        115+y*.38
+       ]
+      )
+     ),
+    fill:colors[i],
+    class:'tangram-origin-piece'
+   })
+  );
+ });
+
+ const caption=
+  make('text',{
+   x:68,
+   y:218,
+   'text-anchor':'middle',
+   class:'tangram-origin-caption'
+  });
+
+ caption.textContent=
+  'HÌNH VUÔNG GỐC';
+
+ svg.append(caption);
 
  // ----------------------------------------------------------
  // SILHOUETTE
@@ -1060,7 +1083,7 @@ function reset(){
    (_,i)=>({
     type:i,
     x:55+i*85,
-     y:mobileLayout()?585:447,
+    y:447,
     a:0,
     flip:0
    })
@@ -1218,8 +1241,8 @@ svg.addEventListener(
    Math.max(
     65,
     Math.min(
-     boardHeight-20,
-      pos.y-drag.dy-drag.lift
+     505,
+     pos.y-drag.dy-drag.lift
     )
    );
 
@@ -1463,8 +1486,5 @@ for(const [id,delta] of [
 // ============================================================
 // START
 // ============================================================
-
-const mobileQuery=matchMedia('(max-width:620px)');
-mobileQuery.addEventListener?.('change',()=>reset());
 
 reset();
