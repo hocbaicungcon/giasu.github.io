@@ -30,6 +30,13 @@ html[data-theme="dark"] #sudoku-board button[data-cell].selected span{
 }
 `;
 document.head.append(sudokuSelectedCellStyle);
+const sudokuTouchSelectStyle=document.createElement('style');
+sudokuTouchSelectStyle.textContent=`
+@media (pointer:coarse){
+ #sudoku-board{touch-action:none}
+}
+`;
+document.head.append(sudokuTouchSelectStyle);
 const $=selector=>document.querySelector(selector),board=$('#sudoku-board'),status=$('#sudoku-status');
 const controlBar=document.createElement('div');
 controlBar.className='sudoku-control-bar';
@@ -379,27 +386,53 @@ board.addEventListener('pointerup',event=>{
  else renderArrows();
 });
 board.addEventListener('pointercancel',()=>{arrowDrag=null;renderArrows();});
+let dragPointerId=null,dragPointerType='',dragStarted=false,dragStartX=0,dragStartY=0;
+
+function dragCellAt(event){
+ const target=document.elementFromPoint(event.clientX,event.clientY);
+ const cell=target?.closest?.('[data-cell]');
+ return cell&&board.contains(cell)?cell:null;
+}
+
 board.addEventListener('pointerdown',event=>{
- if(arrowMode!=='off'||arrowEraseMode||markMode||event.pointerType!=='mouse'||event.button!==0||practice||done)return;
+ if(arrowMode!=='off'||arrowEraseMode||markMode||practice||done)return;
+ if(event.pointerType==='mouse'&&event.button!==0)return;
  const cell=event.target.closest('[data-cell]');if(!cell)return;
  dragCells=new Set([Number(cell.dataset.cell)]);
+ dragPointerId=event.pointerId;
+ dragPointerType=event.pointerType;
+ dragStarted=false;
+ dragStartX=event.clientX;dragStartY=event.clientY;
 });
+
 function trackDragCell(event,finish=false){
- if(!dragCells||!finish&&!(event.buttons&1))return;
- const cell=event.target.closest?.('[data-cell]');if(!cell||!board.contains(cell))return;
+ if(!dragCells||event.pointerId!==dragPointerId)return;
+ if(!finish){
+  if(dragPointerType==='mouse'&&!(event.buttons&1))return;
+  if(!dragStarted&&Math.hypot(event.clientX-dragStartX,event.clientY-dragStartY)<8)return;
+  dragStarted=true;
+  if(event.cancelable)event.preventDefault();
+ }
+ const cell=dragCellAt(event);if(!cell)return;
  const i=Number(cell.dataset.cell);
- dragCells.add(i);cell.classList.add('selected');
+ if(!dragCells.has(i)){dragCells.add(i);cell.classList.add('selected');}
 }
-board.addEventListener('pointermove',trackDragCell);
-board.addEventListener('pointerover',trackDragCell);
+
+board.addEventListener('pointermove',trackDragCell,{passive:false});
+board.addEventListener('pointerover',event=>{if(dragPointerType==='mouse')trackDragCell(event);});
 document.addEventListener('pointerup',event=>{
- if(!dragCells)return;
+ if(!dragCells||event.pointerId!==dragPointerId)return;
  trackDragCell(event,true);
  if(dragCells.size>1){multi=new Set(dragCells);selected=-1;highlight=0;armedDigit=0;suppressBoardClick=true;
   say(`Đã chọn ${multi.size} ô. Bấm một số để thêm hoặc bỏ ghi chú cho các ô trống.`);render();}
- dragCells=null;
+ dragCells=null;dragPointerId=null;dragPointerType='';dragStarted=false;
  setTimeout(()=>{suppressBoardClick=false;},0);
 });
+document.addEventListener('pointercancel',event=>{
+ if(event.pointerId!==dragPointerId)return;
+ dragCells=null;dragPointerId=null;dragPointerType='';dragStarted=false;
+});
+
 board.addEventListener('click',event=>{
  if(arrowMode!=='off')return;
  if(suppressBoardClick){suppressBoardClick=false;return;}
