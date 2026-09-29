@@ -54,14 +54,14 @@ markRingStyle.textContent=`
  content:""!important;display:block!important;position:absolute!important;pointer-events:none!important;
  z-index:999!important;box-sizing:border-box!important;
  left:10%!important;top:10%!important;width:80%!important;height:78%!important;
- border:3px solid #d94a2a!important;
+ border:3px solid rgba(217,74,42,.72)!important;
  border-radius:49% 55% 46% 53% / 55% 44% 57% 46%!important;
  transform:rotate(-7deg)!important;
- opacity:.96!important;
+ opacity:.84!important;
 }
 #sudoku-board button[data-cell].sudoku-marked::after{
  left:13%!important;top:12%!important;width:73%!important;height:73%!important;
- border-width:1.5px!important;opacity:.66!important;
+ border-width:1.5px!important;opacity:.50!important;
  border-radius:56% 45% 54% 47% / 44% 58% 43% 57%!important;
  transform:rotate(6deg)!important;
 }
@@ -82,43 +82,9 @@ noteRingStyle.textContent=`
  left:13%;top:5%;width:76%;height:90%;border-width:.8px;opacity:.62;transform:rotate(7deg);
 }
 `;document.head.append(noteRingStyle);
-const eraseToggleStyle=document.createElement('style');
-eraseToggleStyle.textContent=`
-#sudoku-erase[aria-pressed="true"],
-#sudoku-erase.is-active{
- background:var(--accent-soft,var(--surface-selected,#e8dfbd))!important;
- color:var(--accent,var(--text,#222))!important;
-}
-#sudoku-board button[data-cell].sudoku-marked .sudoku-notes-grid{
- position:relative;z-index:20;
-}
-#sudoku-board button[data-cell].sudoku-marked:has(.sudoku-notes-grid)::before,
-#sudoku-board button[data-cell].sudoku-marked:has(.sudoku-notes-grid)::after{
- z-index:4!important;
-}
-`;document.head.append(eraseToggleStyle);
-const erasePressedStyle=document.createElement('style');
-erasePressedStyle.textContent=`
-#sudoku-erase[aria-pressed="true"]{
- background:var(--accent,#d9b84c)!important;
- color:var(--surface,#fff)!important;
- box-shadow:inset 0 0 0 2px currentColor!important;
-}
-#sudoku-erase[aria-pressed="false"]{
- box-shadow:none;
-}
-`;document.head.append(erasePressedStyle);
-const sudokuToolStateStyle=document.createElement('style');
-sudokuToolStateStyle.textContent=`
-#sudoku-erase.is-active[aria-pressed="true"],
-#sudoku-multi.is-active[aria-pressed="true"]{
- background:var(--accent,#d9b84c)!important;
- color:var(--surface,#fff)!important;
- box-shadow:inset 0 0 0 2px currentColor!important;
-}
-#sudoku-erase[aria-pressed="false"],
-#sudoku-multi[aria-pressed="false"]{box-shadow:none!important}
-`;document.head.append(sudokuToolStateStyle);
+
+
+
 const noteLayerFixStyle=document.createElement('style');
 noteLayerFixStyle.textContent=`
 #sudoku-board button[data-cell].sudoku-marked{
@@ -129,18 +95,35 @@ noteLayerFixStyle.textContent=`
  z-index:2!important;
 }
 #sudoku-board button[data-cell].sudoku-marked .sudoku-notes-grid{
- position:relative!important;
  z-index:10!important;
-}
-#sudoku-board .sudoku-notes-grid i{
- position:relative!important;
- z-index:11!important;
+ isolation:isolate;
 }
 #sudoku-board .sudoku-notes-grid i.sudoku-note-marked::before,
 #sudoku-board .sudoku-notes-grid i.sudoku-note-marked::after{
  z-index:12!important;
 }
 `;document.head.append(noteLayerFixStyle);
+const sudokuToggleUniformStyle=document.createElement('style');
+sudokuToggleUniformStyle.textContent=`
+#game-sudoku .sudoku-control-bar .sudoku-tools
+:is(#sudoku-erase,#sudoku-arrows,#sudoku-multi,#sudoku-notes)[aria-pressed="true"],
+#game-sudoku .sudoku-control-bar .sudoku-tools
+:is(#sudoku-erase,#sudoku-arrows,#sudoku-multi,#sudoku-notes)[aria-pressed="true"]:hover{
+ background:var(--game-control-on-bg)!important;
+ border-color:var(--game-control-on-bg)!important;
+ color:var(--game-control-on-ink)!important;
+ box-shadow:none!important;
+}
+html[data-theme="dark"] #game-sudoku .sudoku-control-bar .sudoku-tools
+:is(#sudoku-erase,#sudoku-arrows,#sudoku-multi,#sudoku-notes)[aria-pressed="true"],
+html[data-theme="dark"] #game-sudoku .sudoku-control-bar .sudoku-tools
+:is(#sudoku-erase,#sudoku-arrows,#sudoku-multi,#sudoku-notes)[aria-pressed="true"]:hover{
+ background:var(--game-control-on-bg)!important;
+ border-color:var(--game-control-on-bg)!important;
+ color:var(--game-control-on-ink)!important;
+ box-shadow:none!important;
+}
+`;document.head.append(sudokuToggleUniformStyle);
 
 const peers=(a,b)=>Math.floor(a/9)===Math.floor(b/9)||a%9===b%9||Math.floor(a/27)===Math.floor(b/27)&&Math.floor(a%9/3)===Math.floor(b%9/3);
 let puzzle,solution,cells,notes,selected=-1,highlight=0,armedDigit=0,done=false,notesMode=false,markMode=false,multi=new Set(),marked=new Set(),markedNotes=new Set(),history=[],practice=null,saved=null,elapsed=0,hintLevel=0,hintCell=-1,checked=false,revealCount=0,autoFill=false,arrowMode='off',arrowEraseMode=false,arrows=[],arrowDrag=null,pendingArrowStart=-1;
