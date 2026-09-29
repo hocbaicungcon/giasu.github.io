@@ -48,7 +48,7 @@ function renderArrows(){
  for(const arrow of lines){
   const from=board.children[arrow.start],to=board.children[arrow.end];if(!from||!to)continue;
   const x1=from.offsetLeft+from.offsetWidth/2,y1=from.offsetTop+from.offsetHeight/2,x2=to.offsetLeft+to.offsetWidth/2,y2=to.offsetTop+to.offsetHeight/2;
-  const length=Math.hypot(x2-x1,y2-y1)||1,ux=(x2-x1)/length,uy=(y2-y1)/length,gap=Math.min(from.offsetWidth,from.offsetHeight)*.27,headGap=Math.min(from.offsetWidth,from.offsetHeight)*.43;
+  const length=Math.hypot(x2-x1,y2-y1)||1,ux=(x2-x1)/length,uy=(y2-y1)/length,gap=Math.min(from.offsetWidth,from.offsetHeight)*.27,headGap=Math.min(from.offsetWidth,from.offsetHeight)*.34;
   const line=document.createElementNS(ns,'line');line.setAttribute('x1',x1+ux*gap);line.setAttribute('y1',y1+uy*gap);line.setAttribute('x2',x2-ux*headGap);line.setAttribute('y2',y2-uy*headGap);line.setAttribute('marker-end','url(#sudoku-arrow-tip)');
   if(!arrow.preview)line.dataset.arrowIndex=arrows.indexOf(arrow);if(arrow.style==='dashed')line.classList.add('dashed');if(arrow.preview)line.classList.add('preview');svg.append(line);
  }
