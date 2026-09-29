@@ -139,7 +139,7 @@ html[data-theme="dark"] #game-sudoku .sudoku-control-bar .sudoku-tools
 `;document.head.append(sudokuToggleUniformStyle);
 
 const peers=(a,b)=>Math.floor(a/9)===Math.floor(b/9)||a%9===b%9||Math.floor(a/27)===Math.floor(b/27)&&Math.floor(a%9/3)===Math.floor(b%9/3);
-let puzzle,solution,cells,notes,selected=-1,highlight=0,armedDigit=0,done=false,notesMode=false,markMode=false,multi=new Set(),marked=new Set(),markedNotes=new Set(),history=[],practice=null,saved=null,elapsed=0,hintLevel=0,hintCell=-1,checked=false,revealCount=0,autoFill=false,arrowMode='off',arrowEraseMode=false,arrows=[],arrowDrag=null,pendingArrowStart=-1;
+let puzzle,solution,cells,notes,selected=-1,highlight=0,armedDigit=0,done=false,notesMode=false,markMode=false,multi=new Set(),marked=new Set(),markedNotes=new Set(),history=[],practice=null,saved=null,elapsed=0,hintLevel=0,hintCell=-1,hintStep=null,checked=false,revealCount=0,autoFill=false,arrowMode='off',arrowEraseMode=false,arrows=[],arrowDrag=null,pendingArrowStart=-1;
 const focusCell=()=>board.querySelector(`[data-cell="${selected}"]`)?.focus({preventScroll:true});
 const say=message=>{status.textContent=message;};
 const snapshot=()=>({cells:[...cells],notes:notes.map(group=>new Set(group)),arrows:arrows.map(arrow=>({...arrow})),marked:new Set(marked),markedNotes:new Set(markedNotes),selected,highlight,armedDigit,done,checked,practiceLeft:practice&&new Set(practice.left)});
@@ -203,8 +203,8 @@ function render(){
   button.classList.toggle('peer',selected>=0&&i!==selected&&peers(i,selected));
   button.classList.toggle('same-number',Boolean(highlight)&&value===highlight);
   button.classList.toggle('wrong',conflict(i)||checked&&value&&!puzzle[i]&&solution&&value!==solution[i]);
-  button.classList.toggle('practice-pattern',Boolean(practice&&hintLevel>=2&&practice.step.pattern.includes(i)));
-  button.classList.toggle('practice-target',Boolean(practice&&hintLevel>=3&&practice.step.kind==='place'&&practice.step.cell===i));
+  button.classList.toggle('practice-pattern',Boolean((practice&&hintLevel>=2&&practice.step.pattern.includes(i))||(!practice&&hintStep&&hintLevel>=2&&(hintStep.pattern||[]).includes(i))));
+  button.classList.toggle('practice-target',Boolean((practice&&hintLevel>=3&&practice.step.kind==='place'&&practice.step.cell===i)||(!practice&&hintStep&&hintLevel>=3&&hintStep.kind==='place'&&hintStep.cell===i)));
   button.setAttribute('aria-label',`Hàng ${Math.floor(i/9)+1}, cột ${i%9+1}: ${value||'trống'}${puzzle[i]?', số cho sẵn':''}`);
   button.setAttribute('aria-pressed',String(i===selected||multi.has(i)));
   button.setAttribute('aria-invalid',String(button.classList.contains('wrong')));
@@ -213,7 +213,7 @@ function render(){
    const mark=document.createElement('i');mark.dataset.note=digit;mark.textContent=notes[i].has(digit)?digit:'';
    mark.classList.toggle('sudoku-note-marked',notes[i].has(digit)&&markedNotes.has(`${i}:${digit}`));
    mark.classList.toggle('highlighted',Boolean(highlight)&&digit===highlight&&notes[i].has(digit));
-   mark.classList.toggle('practice-target',Boolean(practice&&hintLevel>=3&&practice.left.has(`${i}:${digit}`)));
+   mark.classList.toggle('practice-target',Boolean((practice&&hintLevel>=3&&practice.left.has(`${i}:${digit}`))||(!practice&&hintStep&&hintLevel>=3&&(hintStep.remove||[]).some(([cell,n])=>cell===i&&n===digit))));
    grid.append(mark);
   }button.append(grid);}
   return button;
@@ -235,7 +235,7 @@ function render(){
  $('#sudoku-reveal').disabled=done||Boolean(practice);
  setGameControlLabel($('#sudoku-reveal'),revealCount===10?'Đã hiện đáp án':`Hiện đáp án (${revealCount}/10)`);
 }
-function clearHints(){hintLevel=0;hintCell=-1;checked=false;}
+function clearHints(){hintLevel=0;hintCell=-1;hintStep=null;checked=false;}
 function newGame(){
  ({puzzle,solution}=makeSudokuLevel($('#sudoku-level').value));cells=[...puzzle];notes=Array.from({length:81},()=>new Set());
  selected=-1;highlight=0;armedDigit=0;done=false;notesMode=false;markMode=false;multi.clear();marked.clear();markedNotes.clear();arrows=[];arrowDrag=null;pendingArrowStart=-1;arrowEraseMode=false;history=[];clearHints();resetReveal();elapsed=0;$('#sudoku-timer').textContent='0:00';say(`${sudokuLevels.find(level=>level.id===$('#sudoku-level').value)?.name||'Sudoku'} · Chọn ô rồi bấm số. Bạn có thể dùng ghi chú hoặc luyện từng kỹ thuật.`);render();
@@ -273,7 +273,7 @@ function enterNumber(digit,forceValue=false){
  if(!practice&&multi.size&&digit){
    const targets=[...multi].filter(i=>!puzzle[i]&&!cells[i]);
    if(!targets.length){highlight=digit;render();return;}
-   remember();
+   remember();clearHints();
    const all=targets.every(i=>notes[i].has(digit));
    for(const i of targets)all?notes[i].delete(digit):notes[i].add(digit);
    highlight=digit;const filled=fillRemainingSingles();
@@ -478,7 +478,7 @@ $('#sudoku-multi').onclick=()=>{
 };
 arrowButton.onclick=()=>setArrowMode(arrowMode==='off'?'solid':arrowMode==='solid'?'dashed':'off');
 $('#sudoku-auto').onclick=()=>{
- if(done)return;remember();notes=practice?practice.baseNotes.map(group=>new Set(group)):candidateNotes(cells);
+ if(done)return;remember();clearHints();notes=practice?practice.baseNotes.map(group=>new Set(group)):candidateNotes(cells);
  if(practice?.step.kind==='remove')practice.left=new Set(practice.step.remove.map(([i,n])=>`${i}:${n}`));
  const filled=fillRemainingSingles();
  say(`Đã tự điền các ứng viên hợp lệ vào mọi ô trống.${filled?` Tự động điền thêm ${filled} ô.`:''}`);render();finish();
@@ -506,12 +506,75 @@ $('#sudoku-hint').onclick=()=>{
   if(hintLevel===3&&step.kind==='place')selected=step.cell;
   render();return;
  }
- const wrong=cells.findIndex((value,i)=>value&&value!==solution[i]);if(wrong>=0){selected=wrong;checked=true;say('Ô được chọn chứa một số chưa đúng.');render();return;}
- const candidate=candidateNotes(cells),step=findSudokuStep(cells,candidate,'single')||findSudokuStep(cells,candidate,'hidden');
- if(!step){say('Chưa tìm thấy bước đơn giản; hãy dùng ghi chú để loại trừ thêm.');return;}
- if(hintCell!==step.cell){hintCell=step.cell;hintLevel=0;}hintLevel=Math.min(3,hintLevel+1);
- say(hintLevel===1?'Hãy xem hàng, cột và ô vuông quanh ô còn trống.':hintLevel===2?'Ô được chọn có một số bắt buộc.':step.text);
- if(hintLevel>=2)selected=step.cell;render();
+ const wrong=cells.findIndex((value,i)=>value&&value!==solution[i]);
+ if(wrong>=0){hintStep=null;selected=wrong;checked=true;say('Ô được chọn chứa một số chưa đúng.');render();return;}
+
+ // Nếu đã có gợi ý đang mở, KHÔNG tìm bước khác.
+ // Các lần bấm tiếp theo chỉ tăng mức giải thích của chính gợi ý đó.
+ let step=hintStep,technique=hintStep?hintStep._technique:null;
+ if(!step){
+  const candidate=candidateNotes(cells);
+ // Thứ tự sư phạm: luôn dùng kỹ thuật đơn giản nhất đang áp dụng được.
+ // Chỉ chuyển sang nhóm sau khi đã thử hết nhóm trước.
+ const hintPriority=[
+  // Cơ bản
+  'single','naked-single','hidden','hidden-single-box','hidden-single-line',
+  'locked-candidate',
+  // Bộ đôi / bộ ba / bộ bốn
+  'naked-pair','hidden-pair',
+  'naked-triple','hidden-triple',
+  'naked-quadruple','hidden-quadruple',
+  // Fish cơ bản
+  'x-wing','swordfish','jellyfish',
+  // Wings / chains tương đối trực quan
+  'skyscraper','two-string-kite','empty-rectangle',
+  'y-wing','xyz-wing','w-wing','wxyz-wing',
+  // Fish nâng cao: chỉ dùng khi không còn bước dễ hơn
+  'finned-x-wing','sashimi-x-wing',
+  'finned-swordfish','sashimi-swordfish',
+  'finned-jellyfish','sashimi-jellyfish'
+ ];
+ const available=new Map(sudokuTechniques.filter(item=>item.available!==false).map(item=>[item.id,item]));
+ const tried=new Set();
+ const tryTechnique=id=>{
+  if(tried.has(id))return false;
+  tried.add(id);
+  const item=available.get(id);
+  // single/hidden là alias cũ nên vẫn cho phép thử dù không có trong danh sách UI.
+  if(!item&&!['single','hidden'].includes(id))return false;
+  const found=findSudokuStep(cells,candidate,id);
+  if(!found)return false;
+  step=found;technique=item||sudokuTechniques.find(t=>t.id===id)||null;
+  return true;
+ };
+ for(const id of hintPriority)if(tryTechnique(id))break;
+ // Kỹ thuật khả dụng mới được bổ sung sau này vẫn được dùng, nhưng luôn xếp sau
+ // toàn bộ thang ưu tiên phía trên để không lấn át các kỹ thuật dễ.
+ if(!step){
+  for(const item of sudokuTechniques){
+   if(item.available===false||tried.has(item.id))continue;
+   if(tryTechnique(item.id))break;
+  }
+ }
+
+  if(!step){hintStep=null;hintLevel=0;say('Bộ giải chưa tìm thấy bước tiếp theo bằng các kỹ thuật hiện có.');render();return;}
+  hintStep=step;
+  hintStep._technique=technique;
+  hintLevel=0;
+ }
+
+ technique=hintStep._technique||technique;
+ hintLevel=Math.min(3,hintLevel+1);
+ const techniqueName=technique?.name||step.techniqueName||step.technique||'Kỹ thuật Sudoku';
+ if(hintLevel===1&&technique?.help){
+  say(`${techniqueName}: ${technique.help}`);
+ }else if(hintLevel<=2){
+  say(`${techniqueName}: các ô được tô sáng tạo thành mẫu cần quan sát.`);
+ }else{
+  say(`${techniqueName}: ${step.text||'Áp dụng kỹ thuật vào các ô được đánh dấu.'}`);
+  if(step.kind==='place'&&Number.isInteger(step.cell))selected=step.cell;
+ }
+ render();
 };
 const techniqueSelect=$('#sudoku-technique');techniqueSelect.replaceChildren(...[...new Set(sudokuTechniques.map(t=>t.group))].map(group=>{const node=document.createElement('optgroup');node.label=group;node.append(...sudokuTechniques.filter(t=>t.group===group).map(technique=>{const option=document.createElement('option');option.value=technique.id;option.disabled=!technique.available;option.textContent=technique.available?technique.name:`${technique.name} · đang bổ sung`;return option;}));return node;}));
 function nextPractice(){
