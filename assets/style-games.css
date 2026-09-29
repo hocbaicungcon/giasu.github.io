@@ -7064,3 +7064,181 @@ html[data-theme="dark"] #game-sudoku #sudoku-board .sudoku-arrow-layer {
   color: #c47a55;
   opacity: .62;
 }
+
+/* 2048 Crazy extended rules */
+#game-numbers .number-mystery,#game-numbers .number-wild,#game-numbers .number-swap{font-size:clamp(1.15rem,4vw,1.8rem)}
+#game-numbers .number-expiring{animation:crazy-expiring .7s ease-in-out infinite alternate}
+@keyframes crazy-expiring{from{opacity:1;transform:scale(1)}to{opacity:.52;transform:scale(.94)}}
+
+
+/* 2048 Crazy — vivid special tile palette */
+#game-numbers .number-cell.number-special{
+  color:#fff;
+  text-shadow:0 1px 2px rgba(0,0,0,.28);
+  box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,.24),
+    0 3px 9px rgba(0,0,0,.16);
+}
+#game-numbers .number-cell.number-mul{
+  background:linear-gradient(145deg,#00a86b,#087f5b);
+}
+#game-numbers .number-cell.number-div{
+  background:linear-gradient(145deg,#8b5cf6,#6d28d9);
+}
+#game-numbers .number-cell.number-bomb{
+  background:linear-gradient(145deg,#ff5a36,#c92a2a);
+  color:#fff7e6;
+  box-shadow:
+    inset 0 0 0 2px rgba(255,225,150,.35),
+    0 0 12px rgba(255,80,30,.32);
+}
+#game-numbers .number-cell.number-mystery{
+  background:linear-gradient(145deg,#f6c945,#e39b13);
+  color:#402600;
+  text-shadow:none;
+}
+#game-numbers .number-cell.number-wild{
+  background:linear-gradient(145deg,#ffd43b,#f08c00);
+  color:#3b2500;
+  text-shadow:none;
+  box-shadow:
+    inset 0 0 0 2px rgba(255,255,255,.45),
+    0 0 13px rgba(255,190,20,.38);
+}
+#game-numbers .number-cell.number-swap{
+  background:linear-gradient(145deg,#339af0,#1864ab);
+}
+#game-numbers .number-cell.number-expiring{
+  box-shadow:
+    inset 0 0 0 3px rgba(255,255,255,.55),
+    0 0 14px rgba(255,80,30,.42);
+}
+
+/* Keep special tiles vivid in warm/yellow display modes. */
+[data-theme="warm"] #game-numbers .number-cell.number-special,
+[data-theme="yellow"] #game-numbers .number-cell.number-special,
+.warm #game-numbers .number-cell.number-special,
+.yellow #game-numbers .number-cell.number-special{
+  filter:saturate(1.12) contrast(1.04);
+}
+
+
+/* Crazy operation feedback: make ×/÷ visibly act on the number tile */
+#game-numbers .number-cell{position:relative}
+#game-numbers .number-cell.crazy-hit-mul{
+  z-index:4;
+  animation:crazy-hit-mul .62s cubic-bezier(.2,.9,.25,1);
+}
+#game-numbers .number-cell.crazy-hit-div{
+  z-index:4;
+  animation:crazy-hit-div .62s cubic-bezier(.2,.9,.25,1);
+}
+#game-numbers .crazy-operation{
+  position:absolute;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%) scale(.45);
+  z-index:8;
+  min-width:62%;
+  padding:.08em .18em;
+  border-radius:.28em;
+  font-size:clamp(1.35rem,6vw,2.35rem);
+  font-weight:900;
+  line-height:1;
+  text-align:center;
+  pointer-events:none;
+  color:#fff;
+  text-shadow:0 2px 3px rgba(0,0,0,.35);
+  animation:crazy-operation-pop .62s ease-out forwards;
+}
+#game-numbers .crazy-operation-mul{background:rgba(0,168,107,.92)}
+#game-numbers .crazy-operation-div{background:rgba(109,40,217,.92)}
+#game-numbers .crazy-result-pop{
+  position:absolute;
+  left:50%;top:50%;
+  z-index:9;
+  transform:translate(-50%,-50%) scale(.65);
+  font-size:1.08em;
+  font-weight:900;
+  pointer-events:none;
+  opacity:0;
+  animation:crazy-result-pop .62s ease-out forwards;
+}
+@keyframes crazy-hit-mul{
+  0%{transform:scale(1)}
+  30%{transform:scale(1.24)}
+  58%{transform:scale(.92)}
+  100%{transform:scale(1)}
+}
+@keyframes crazy-hit-div{
+  0%{transform:scale(1)}
+  30%{transform:scale(.78)}
+  62%{transform:scale(1.1)}
+  100%{transform:scale(1)}
+}
+@keyframes crazy-operation-pop{
+  0%{opacity:0;transform:translate(-50%,-50%) scale(.4)}
+  18%,52%{opacity:1;transform:translate(-50%,-50%) scale(1.12)}
+  75%{opacity:.8;transform:translate(-50%,-65%) scale(.92)}
+  100%{opacity:0;transform:translate(-50%,-95%) scale(.72)}
+}
+@keyframes crazy-result-pop{
+  0%,48%{opacity:0;transform:translate(-50%,-50%) scale(.55)}
+  65%{opacity:1;transform:translate(-50%,-50%) scale(1.3)}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1)}
+}
+@media (prefers-reduced-motion:reduce){
+ #game-numbers .number-cell.crazy-hit-mul,
+ #game-numbers .number-cell.crazy-hit-div,
+ #game-numbers .crazy-operation,
+ #game-numbers .crazy-result-pop{animation-duration:.18s}
+}
+
+/* 2048 Endless */
+#number-endless{
+  font-size:1.45rem;
+  font-weight:900;
+  line-height:1;
+}
+#number-endless[aria-pressed="true"]{
+  box-shadow:inset 0 0 0 2px currentColor,0 0 10px rgba(0,0,0,.12);
+  transform:translateY(-1px);
+}
+
+/* Visible feedback for every Crazy interaction */
+#game-numbers .crazy-event{
+ position:absolute;left:50%;top:50%;z-index:20;
+ transform:translate(-50%,-50%) scale(.35);
+ min-width:72%;padding:.12em .22em;border-radius:.32em;
+ font-size:clamp(1.15rem,5vw,2rem);font-weight:950;line-height:1.05;
+ text-align:center;pointer-events:none;color:#fff;
+ background:rgba(25,25,25,.82);text-shadow:0 2px 3px rgba(0,0,0,.4);
+ animation:crazy-event-pop .74s cubic-bezier(.15,.8,.25,1) forwards;
+}
+#game-numbers .crazy-event-bomb,#game-numbers .crazy-event-bombpair{background:rgba(220,50,20,.92);font-size:2.15rem}
+#game-numbers .crazy-event-mystery{background:rgba(230,155,15,.94);color:#342000;text-shadow:none}
+#game-numbers .crazy-event-wild{background:rgba(245,175,0,.94);color:#342000;text-shadow:none}
+#game-numbers .crazy-event-swap{background:rgba(24,100,171,.94)}
+#game-numbers .crazy-event-cancel{background:rgba(100,70,150,.94)}
+#game-numbers .crazy-event-upgrade{background:rgba(0,145,95,.94)}
+#game-numbers .crazy-event-expire{background:rgba(80,80,80,.72)}
+#game-numbers .crazy-cell-bomb{animation:crazy-bomb-shake .72s ease-out}
+#game-numbers .crazy-cell-bombpair{animation:crazy-bomb-shake .72s ease-out}
+#game-numbers .crazy-cell-mystery{animation:crazy-flip .72s ease-out}
+#game-numbers .crazy-cell-wild{animation:crazy-wild-flash .72s ease-out}
+#game-numbers .crazy-cell-swap{animation:crazy-swap .72s ease-out}
+#game-numbers .crazy-cell-cancel{animation:crazy-cancel .72s ease-out}
+#game-numbers .crazy-cell-upgrade{animation:crazy-upgrade .72s ease-out}
+#game-numbers .crazy-cell-expire{animation:crazy-expire .72s ease-out}
+#game-numbers .crazy-blast-zone{animation:crazy-blast-zone .72s ease-out}
+@keyframes crazy-event-pop{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}22%,58%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}100%{opacity:0;transform:translate(-50%,-105%) scale(.72)}}
+@keyframes crazy-bomb-shake{0%,100%{transform:translate(0)}15%{transform:translate(-6px,2px) scale(1.08)}30%{transform:translate(6px,-2px) scale(1.13)}45%{transform:translate(-5px,1px) scale(1.18)}60%{transform:translate(4px,-1px) scale(.9)}}
+@keyframes crazy-blast-zone{0%{filter:brightness(1);transform:scale(1)}35%{filter:brightness(2.2);transform:scale(.86)}60%{filter:brightness(1.35);transform:scale(1.08)}100%{filter:brightness(1);transform:scale(1)}}
+@keyframes crazy-flip{0%{transform:rotateY(0)}50%{transform:rotateY(180deg) scale(1.12)}100%{transform:rotateY(360deg)}}
+@keyframes crazy-wild-flash{0%,100%{filter:brightness(1);transform:scale(1)}35%{filter:brightness(2.4);transform:scale(1.25)}65%{filter:brightness(1.35);transform:scale(.92)}}
+@keyframes crazy-swap{0%,100%{transform:translateX(0)}35%{transform:translateX(18%) scale(1.08)}65%{transform:translateX(-18%) scale(1.08)}}
+@keyframes crazy-cancel{0%{transform:scale(1)}45%{transform:scale(1.22) rotate(8deg);filter:brightness(1.8)}100%{transform:scale(.55);filter:brightness(.8)}}
+@keyframes crazy-upgrade{0%{transform:scale(.75)}45%{transform:scale(1.35);filter:brightness(1.8)}100%{transform:scale(1)}}
+@keyframes crazy-expire{0%{opacity:1;transform:scale(1)}55%{opacity:.45;transform:scale(.82) rotate(6deg)}100%{opacity:0;transform:scale(.25) rotate(15deg)}}
+@media (prefers-reduced-motion:reduce){
+ #game-numbers .crazy-event,[class*="crazy-cell-"],#game-numbers .crazy-blast-zone{animation-duration:.25s!important}
+}

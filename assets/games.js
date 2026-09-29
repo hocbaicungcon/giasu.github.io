@@ -44,8 +44,17 @@ document.querySelectorAll('.game-panel').forEach(panel=>{
  if(actions)actions.append(control);else if(speaker)speaker.after(control);else nav.append(control);control.classList.add('in-toolbar');
  document.addEventListener('fullscreenchange',()=>{const active=document.fullscreenElement===panel||panel.classList.contains('is-fullscreen');setGameControlIcon(control,active?'close':'fullscreen',active?'Thoát toàn màn hình':'Mở toàn màn hình');});
 });
-let board,score,numberDone,numberSize=4,numberStreak=0,numberBonus=true,numberCrazy=false,comboTimer;
+let board,score,numberDone,numberSize=4,numberStreak=0,numberBonus=true,numberCrazy=false,numberEndless=false,comboTimer;
 const bonusButton=$('#number-bonus');
+const endlessButton=document.createElement('button');
+endlessButton.type='button';endlessButton.id='number-endless';endlessButton.className='game-control';endlessButton.setAttribute('aria-pressed','false');
+function renderEndlessButton(){
+ endlessButton.textContent='∞';
+ endlessButton.setAttribute('aria-label',`Endless: ${numberEndless?'bật':'tắt'}`);
+ endlessButton.setAttribute('title',`Endless: ${numberEndless?'bật':'tắt'} · chơi đến khi hết nước đi`);
+}
+renderEndlessButton();
+
 const crazyButton=document.createElement('button');
 crazyButton.type='button';
 crazyButton.id='number-crazy';
@@ -64,9 +73,16 @@ function renderCrazyButton(){
 }
 renderCrazyButton();
 const numberPanel=$('#game-numbers');
+const focusNumberBoard=()=>requestAnimationFrame(()=>$('#number-board')?.focus({preventScroll:true}));
+numberPanel?.addEventListener('click',event=>{
+ const control=event.target.closest('button,[data-direction],[data-number-size],[data-restart]');
+ if(!control)return;
+ // Let the button's own click handler finish first, then return keyboard focus to the board.
+ setTimeout(focusNumberBoard,0);
+});
 const numberNav=numberPanel?.querySelector('.game-nav');
 if(numberNav){
- numberNav.append(crazyButton);
+ numberNav.append(crazyButton,endlessButton);
  crazyButton.classList.add('game-control');
 }
 crazyButton.addEventListener('click',()=>{
@@ -75,6 +91,13 @@ crazyButton.addEventListener('click',()=>{
  renderCrazyButton();
  startNumbers();
 });
+endlessButton.addEventListener('click',()=>{
+ numberEndless=!numberEndless;
+ endlessButton.setAttribute('aria-pressed',String(numberEndless));
+ renderEndlessButton();
+ startNumbers();
+});
+
 setGameControlIcon(bonusButton,'new','Bonus combo: bật');
 bonusButton.addEventListener('click',()=>{numberBonus=!numberBonus;numberStreak=0;clearNumberCombo();bonusButton.setAttribute('aria-pressed',String(numberBonus));setGameControlIcon(bonusButton,'new',`Bonus combo: ${numberBonus?'bật':'tắt'}`);});
 function clearNumberCombo(){clearTimeout(comboTimer);$('#number-combo').replaceChildren();}
@@ -88,10 +111,11 @@ function showNumberCombo(){
 }
 const numberResult=createGameResult($('#number-scene'),{restart:startNumbers});
 function spawn(){
- const empty=board.map((n,i)=>n?null:i).filter(i=>i!==null);
- if(!empty.length)return;
- const index=empty[Math.floor(Math.random()*empty.length)];
- board[index]=numberCrazy&&Math.random()<.30?makeCrazyTile():Math.random()<.9?2:4;
+ const empty=board.map((v,i)=>v?null:i).filter(v=>v!==null);if(!empty.length)return;
+ const maxTile=Math.max(2,...board.filter(v=>typeof v==='number'));
+ const crazyChance=!numberCrazy?0:Math.min(.42,.16+Math.max(0,Math.log2(maxTile)-7)*.045);
+ const value=numberCrazy&&Math.random()<crazyChance?makeCrazyTile():(Math.random()<.9?2:4);
+ board[empty[Math.floor(Math.random()*empty.length)]]=value;
 }
 function renderNumberScore(){
  const segments=['abcdef','bc','abdeg','abcdg','bcfg','acdfg','acdefg','abc','abcdefg','abcdfg'];
@@ -101,55 +125,114 @@ function renderNumberScore(){
 }
 function renderNumbers(){
  const cells=board.map(v=>{
-  const el=document.createElement('div');
-  el.className='number-cell';
+  const el=document.createElement('div');el.className='number-cell';
   if(typeof v==='string'){
-   const parts=v.split(':'),kind=parts[0],power=Number(parts[1])||2,wide=parts[2]==='wide';
-   const label=kind==='bomb'?'💣':kind==='mul'?(wide?`×${power}×${power}×${power}`:`×${power}`):(wide?`÷${power}÷${power}÷${power}`:`÷${power}`);
-   el.classList.add('number-special',`number-${kind}`);
-   if(wide)el.classList.add('number-wide');
-   el.dataset.level='0';
-   el.textContent=label;
-   el.setAttribute('aria-label',kind==='bomb'?'Bom':label);
+   const clean=v.replace(/:life\d+$/,''),life=Number(v.match(/:life(\d+)$/)?.[1]||0);
+   let label='',kind='';
+   if(clean.startsWith('bomb')){kind='bomb';const timer=Number(clean.split(':')[1])||5;label=`💣${timer}`;}
+   else if(clean==='mystery'){kind='mystery';label='?';}
+   else if(clean==='wild'){kind='wild';label='★';}
+   else if(clean==='swap'){kind='swap';label='↔';}
+   else{
+    const parts=clean.split(':'),power=Number(parts[1])||2,wide=parts[2]==='wide';kind=parts[0];
+    label=kind==='mul'?(wide?`×${power}×${power}×${power}`:`×${power}`):(wide?`÷${power}÷${power}÷${power}`:`÷${power}`);
+    if(wide)el.classList.add('number-wide');
+   }
+   el.classList.add('number-special',`number-${kind}`);el.dataset.level='0';el.textContent=label;
+   if(life===1)el.classList.add('number-expiring');
+   el.setAttribute('aria-label',label);
   }else{
-   el.dataset.level=String(Math.min(11,Math.log2(v||1)));
-   el.textContent=v||'';
-   el.setAttribute('aria-label',v?String(v):'Ô trống');
+   el.dataset.level=String(Math.min(11,Math.log2(v||1)));el.textContent=v||'';el.setAttribute('aria-label',v?String(v):'Ô trống');
   }
   return el;
  });
- const boardEl=$('#number-board');
- boardEl.replaceChildren(...cells);
- // Keep keyboard/swipe focus on the board after every render.
+ const boardEl=$('#number-board');boardEl.replaceChildren(...cells);
  if(document.activeElement?.closest?.('#game-numbers'))boardEl.focus({preventScroll:true});
- renderNumberScore();
- document.querySelectorAll('[data-direction]').forEach(b=>b.disabled=numberDone);
+ renderNumberScore();document.querySelectorAll('[data-direction]').forEach(b=>b.disabled=numberDone);
 }
-function startNumbers(){numberStreak=0;clearNumberCombo();numberResult.clear();$('#number-board').style.setProperty('--number-size',numberSize);board=Array(numberSize*numberSize).fill(0);score=0;numberDone=false;spawn();spawn();$('#number-status').textContent=numberCrazy?'Crazy: các ô đặc biệt có thể nhân, chia hoặc phá huỷ ô khi va chạm.':'Ghép những ô cùng số nhé!';renderNumbers();}
+function playCrazyEffects(effects=[]){
+ const boardEl=$('#number-board');
+ if(!effects.length)return;
+ const cells=[...boardEl.children];
+ for(const effect of effects){
+  const cell=cells[effect.cell];if(!cell)continue;
+  cell.classList.remove('crazy-hit-mul','crazy-hit-div');
+  void cell.offsetWidth;
+  cell.classList.add(effect.kind==='mul'?'crazy-hit-mul':'crazy-hit-div');
+  const badge=document.createElement('span');
+  badge.className=`crazy-operation crazy-operation-${effect.kind}`;
+  badge.textContent=`${effect.kind==='mul'?'×':'÷'}${effect.power}`;
+  cell.append(badge);
+  const result=document.createElement('span');
+  result.className='crazy-result-pop';
+  result.textContent=effect.after;
+  cell.append(result);
+  setTimeout(()=>{badge.remove();result.remove();cell.classList.remove('crazy-hit-mul','crazy-hit-div');},650);
+ }
+}
+
+function playOtherCrazyEffects(events=[]){
+ const boardEl=$('#number-board'),cells=[...boardEl.children];
+ for(const event of events){
+  const cell=cells[Math.max(0,Math.min(cells.length-1,event.cell??0))];if(!cell)continue;
+  const burst=document.createElement('span');
+  burst.className=`crazy-event crazy-event-${event.kind}`;
+  const labels={
+   bomb:'💥',bombpair:'💥',mystery:'?',wild:'★',swap:'↔',
+   cancel:'× ÷',upgrade:'↑',expire:'✦'
+  };
+  let text=labels[event.kind]||'✦';
+  if(event.kind==='wild'&&event.value)text=`★ → ${event.value}`;
+  if(event.kind==='upgrade'&&event.label)text=`↑ ${String(event.label).replace(/:life\d+$/,'').replace('mul:','×').replace('div:','÷').replace(':wide','')}`;
+  if(event.kind==='mystery'&&event.label)text=`? → ${String(event.label).replace('mul:','×').replace('div:','÷').replace('bomb:5','💣')}`;
+  if(event.kind==='cancel'&&event.label&&event.label!=='0')text=`× ÷ → ${String(event.label).replace('mul:','×').replace('div:','÷').replace(':wide','')}`;
+  burst.textContent=text;cell.append(burst);
+  cell.classList.add(`crazy-cell-${event.kind}`);
+  if(event.kind==='bombpair'){
+   const i=event.cell,row=Math.floor(i/numberSize),col=i%numberSize;
+   cells.forEach((near,j)=>{
+    const r=Math.floor(j/numberSize),c=j%numberSize;
+    if(Math.abs(r-row)<=1&&Math.abs(c-col)<=1)near.classList.add('crazy-blast-zone');
+   });
+  }
+  setTimeout(()=>{
+   burst.remove();cell.classList.remove(`crazy-cell-${event.kind}`);
+   cells.forEach(n=>n.classList.remove('crazy-blast-zone'));
+  },760);
+ }
+}
+
+function startNumbers(){numberStreak=0;clearNumberCombo();numberResult.clear();$('#number-board').style.setProperty('--number-size',numberSize);board=Array(numberSize*numberSize).fill(0);score=0;numberDone=false;spawn();spawn();$('#number-status').textContent=numberCrazy&&numberEndless
+ ?'Crazy + Endless: chơi đến khi không còn nước đi.'
+ :numberCrazy?'Crazy: các ô đặc biệt có thể nhân, chia hoặc phá huỷ ô khi va chạm.'
+ :numberEndless?'Endless: không dừng ở 2048; chơi đến khi không còn nước đi.'
+ :'Ghép những ô cùng số nhé!';renderNumbers();}
 function move(direction){
  if(numberDone)return;
  const result=numberCrazy?moveCrazyBoard(board,direction,numberSize):moveBoard(board,direction,numberSize);
  if(!result.changed)return;
  board=result.board;
+ const crazyEffects=result.effects||[],otherCrazyEffects=result.crazyEvents||[];
  numberStreak=result.score&&numberBonus?numberStreak+1:0;
  const bonus=numberStreak>=2?Math.round(result.score*Math.min(2,(numberStreak-1)*.25)):0;
  score+=result.score+bonus;
  if(bonus)showNumberCombo();else clearNumberCombo();
  spawn();
  const numeric=board.filter(v=>typeof v==='number'&&v>0);
- if(numeric.includes(2048)){
+ if(!numberEndless&&numeric.includes(2048)){
   numberDone=true;
   numberResult.show({won:true,description:'Bạn đã ghép được ô 2048 với '+score+' điểm!'});
   $('#number-status').textContent='Bạn đã đạt 2048! Chúc mừng!';
  }else if(!(numberCrazy?canMoveCrazy(board,numberSize):canMove(board,numberSize))){
   numberDone=true;
-  numberResult.show({won:false,description:'Bàn đã đầy và không còn nước đi. Bạn đạt '+score+' điểm.'});
-  $('#number-status').textContent='Hết nước đi. Bấm Chơi lại để thử lần nữa.';
+  numberResult.show({won:false,description:`Bàn đã đầy và không còn nước đi. Điểm: ${score}${numberEndless?`. Ô lớn nhất: ${Math.max(0,...numeric)}.`:''}`});
+  $('#number-status').textContent=numberEndless?`Endless kết thúc · ô lớn nhất ${Math.max(0,...numeric)} · ${score} điểm.`:'Hết nước đi. Bấm Chơi lại để thử lần nữa.';
  }else{
   $('#number-status').textContent=result.score?`Cộng ${result.score} điểm${bonus?` + ${bonus} điểm thưởng (combo ${numberStreak})`:''}.`:numberCrazy?'Crazy! Tiếp tục nào!':'Tiếp tục nào!';
  }
  if(!numberDone)sound(result.score?'merge':'move');
  renderNumbers();
+ if(numberCrazy&&(crazyEffects.length||otherCrazyEffects.length))requestAnimationFrame(()=>{playCrazyEffects(crazyEffects);playOtherCrazyEffects(otherCrazyEffects);});
 }
 document.querySelectorAll('[data-direction]').forEach(b=>b.addEventListener('click',()=>move(b.dataset.direction)));
 $('#number-board').addEventListener('keydown',e=>{const d={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down'}[e.key];if(d){e.preventDefault();move(d);}});
