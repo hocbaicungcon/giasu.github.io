@@ -10,6 +10,43 @@ const scene=document.querySelector('#tangram-scene');
 const status=document.querySelector('#tangram-status');
 const NS='http://www.w3.org/2000/svg';
 
+const tangramMobileNavStyle=document.createElement('style');
+tangramMobileNavStyle.textContent=`
+@media (max-width:620px){
+  /* Tận dụng chiều ngang nhưng giữ kích thước tự nhiên của từng control. */
+  #game-tangram .game-level-nav,
+  #game-tangram .level-nav,
+  #game-tangram .tangram-level-nav,
+  #game-tangram .game-navigation{
+    width:100%!important;
+    max-width:none!important;
+    gap:8px!important;
+  }
+
+  /* Không ép chiều rộng/chiều cao riêng: kế thừa chuẩn nút chung của game. */
+  #game-tangram :is(#tangram-prev,#tangram-next,#tangram-jump){
+    flex:initial!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:auto!important;
+    min-height:0!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Ô chọn màn có thể lấy phần không gian còn lại, hai nút giữ kích thước tự nhiên. */
+  #game-tangram #tangram-jump{
+    flex:1 1 auto!important;
+  }
+
+  #game-tangram :is(#tangram-prev,#tangram-next){
+    flex:0 0 auto!important;
+  }
+}
+`;
+document.head.append(tangramMobileNavStyle);
+
+
 // ============================================================
 // TANGRAM SOURCE
 // ============================================================
@@ -189,7 +226,7 @@ function setupTargets(){
  ];
 
  const mobile=mobileLayout();
- pieceScale=mobile?.96:.84;
+ pieceScale=mobile?1.03:.91;
 
  const mx=(box[0]+box[2])/2;
  const my=(box[1]+box[3])/2;
