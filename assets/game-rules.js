@@ -9,6 +9,148 @@ export function moveBoard(board,direction,size=4){
  }
  return {board:result,score,changed:result.some((v,i)=>v!==board[i])};
 }
+
+const crazyNumber=v=>typeof v==='number'&&v>0;
+const crazySpecial=v=>typeof v==='string'&&/^(mul|div|bomb)/.test(v);
+const parseCrazy=v=>{
+ if(!crazySpecial(v))return null;
+ if(v==='bomb')return {kind:'bomb',power:0,wide:false};
+ const [kind,power,wide]=v.split(':');
+ return {kind,power:Number(power)||2,wide:wide==='wide'};
+};
+const makeCrazy=(kind,power=2,wide=false)=>kind==='bomb'?'bomb':`${kind}:${power}${wide?':wide':''}`;
+
+function crazyIndices(direction,line,size){
+ return Array.from({length:size},(_,i)=>direction==='left'?line*size+i:direction==='right'?line*size+size-1-i:direction==='up'?i*size+line:(size-1-i)*size+line);
+}
+function crazyNeighbors(index,size){
+ const r=Math.floor(index/size),c=index%size,out=[];
+ for(let dr=-1;dr<=1;dr++)for(let dc=-1;dc<=1;dc++){
+  if(!dr&&!dc)continue;
+  const rr=r+dr,cc=c+dc;
+  if(rr>=0&&rr<size&&cc>=0&&cc<size)out.push(rr*size+cc);
+ }
+ return out;
+}
+function crazySides(index,direction,size){
+ const r=Math.floor(index/size),c=index%size;
+ const cells=(direction==='left'||direction==='right')?[[r-1,c],[r+1,c]]:[[r,c-1],[r,c+1]];
+ return cells.filter(([rr,cc])=>rr>=0&&rr<size&&cc>=0&&cc<size).map(([rr,cc])=>rr*size+cc);
+}
+function applyCrazy(board,index,special){
+ const v=board[index];
+ if(!crazyNumber(v))return 0;
+ if(special.kind==='mul'){board[index]=v*special.power;return board[index];}
+ if(special.kind==='div'){
+  const n=v/special.power;
+  board[index]=n<2?0:n;
+ }
+ return 0;
+}
+function sameSpecial(a,b){
+ const x=parseCrazy(a),y=parseCrazy(b);
+ return x&&y&&x.kind===y.kind&&x.power===y.power&&x.wide===y.wide;
+}
+
+export function moveCrazyBoard(input,direction,size=4){
+ const board=[...input],before=[...input];
+ let score=0;
+ for(let line=0;line<size;line++){
+  const idx=crazyIndices(direction,line,size);
+  let vals=idx.map(i=>board[i]).filter(Boolean);
+  const out=[];
+  for(let i=0;i<vals.length;i++){
+   const a=vals[i],b=vals[i+1];
+
+   // Bomb hits ANY occupied tile in front: number or Crazy tile.
+   // Two bombs keep the special 3x3 explosion rule.
+   if(a==='bomb'&&b!==undefined){
+    if(b==='bomb')out.push('bombpair');
+    // Otherwise both bomb and the impacted tile are destroyed.
+    i++;
+    continue;
+   }
+   if(b==='bomb'&&a!==undefined){
+    if(a==='bomb')out.push('bombpair');
+    // Otherwise both impacted tile and bomb are destroyed.
+    i++;
+    continue;
+   }
+
+   if(b!==undefined&&crazyNumber(a)&&crazyNumber(b)&&a===b){
+    const n=a*2;out.push(n);score+=n;i++;continue;
+   }
+   if(b!==undefined&&sameSpecial(a,b)){
+    const s=parseCrazy(a);
+    out.push(makeCrazy(s.kind,s.power*2,s.wide));
+    i++;continue;
+   }
+   out.push(a);
+  }
+  idx.forEach((cell,p)=>board[cell]=out[p]||0);
+ }
+
+ // Two bombs: destroy center and all 8 surrounding cells.
+ for(let i=0;i<board.length;i++)if(board[i]==='bombpair'){
+  board[i]=0;
+  for(const n of crazyNeighbors(i,size))board[n]=0;
+ }
+
+ // Resolve multiplier/divider contacts.
+ for(let line=0;line<size;line++){
+  const idx=crazyIndices(direction,line,size);
+  for(let p=0;p<idx.length-1;p++){
+   const front=idx[p],back=idx[p+1],a=board[front],b=board[back];
+   if(!a||!b)continue;
+   if(crazyNumber(a)&&crazySpecial(b)&&b!=='bomb'){
+    const s=parseCrazy(b);board[back]=0;
+    score+=applyCrazy(board,front,s);
+    if(s.wide)for(const side of crazySides(front,direction,size))applyCrazy(board,side,s);
+   }else if(crazySpecial(a)&&a!=='bomb'&&crazyNumber(b)){
+    const s=parseCrazy(a);board[front]=b;board[back]=0;
+    score+=applyCrazy(board,front,s);
+    if(s.wide)for(const side of crazySides(front,direction,size))applyCrazy(board,side,s);
+   }
+  }
+ }
+
+ // Final pack.
+ for(let line=0;line<size;line++){
+  const idx=crazyIndices(direction,line,size),vals=idx.map(i=>board[i]).filter(Boolean);
+  idx.forEach((cell,p)=>board[cell]=vals[p]||0);
+ }
+
+ // Bomb touching the wall in the swipe direction self-destructs.
+ // idx[0] is always the wall/front cell for the current swipe.
+ for(let line=0;line<size;line++){
+  const wall=crazyIndices(direction,line,size)[0];
+  if(board[wall]==='bomb')board[wall]=0;
+ }
+
+ return {board,score,changed:board.some((v,i)=>v!==before[i])};
+}
+export function canMoveCrazy(board,size=4){
+ if(board.some(v=>!v))return true;
+ for(let r=0;r<size;r++)for(let c=0;c<size;c++){
+  const a=board[r*size+c];
+  for(const [rr,cc] of [[r,c+1],[r+1,c]]){
+   if(rr>=size||cc>=size)continue;
+   const b=board[rr*size+cc];
+   if(crazyNumber(a)&&crazyNumber(b)&&a===b)return true;
+   if(crazySpecial(a)||crazySpecial(b))return true;
+  }
+ }
+ return false;
+}
+export function makeCrazyTile(){
+ const roll=Math.random();
+ if(roll<.24)return makeCrazy('mul',2);
+ if(roll<.36)return makeCrazy('mul',2,true);
+ if(roll<.60)return makeCrazy('div',2);
+ if(roll<.72)return makeCrazy('div',2,true);
+ return 'bomb';
+}
+
 export const canMove=(board,size=4)=>['left','right','up','down'].some(d=>moveBoard(board,d,size).changed);
 export function crossRiver(state,passenger){
  const next={...state};if(passenger&&state[passenger]!==state.person)return {state,error:'Hành khách không ở cùng bờ với bạn.'};

@@ -4117,7 +4117,7 @@ html[data-theme="dark"] .game-panel button.caro-cell:not(:disabled):focus-visibl
 
 .hashi-bridge {
   stroke: #387e83;
-  stroke-width: 5;
+  stroke-width: 7;
   stroke-linecap: round;
   pointer-events: none;
 }
@@ -6862,17 +6862,17 @@ html[data-theme="dark"] .route-scene { --route-edge: #b4a587; --route-used: #876
 .route-board { position: relative; width: min(100%,680px); aspect-ratio: 17/10; touch-action: manipulation; }
 .route-board > svg { display: block; width: 100%; height: 100%; overflow: visible; }
 .route-edge line { stroke: var(--route-edge); stroke-width: 3; }
-.route-edge.used line { stroke: var(--route-used); stroke-width: 5; }
-.route-edge.answer line { stroke: var(--route-answer); stroke-width: 5; stroke-dasharray: 9 6; }
+.route-edge.used line { stroke: var(--route-used); stroke-width: 7; }
+.route-edge.answer line { stroke: var(--route-answer); stroke-width: 7; stroke-dasharray: 9 6; }
 .route-edge.blocked line { stroke: var(--route-answer); stroke-width: 4; stroke-dasharray: 8 7; opacity: .72; }
 .route-node.dot circle { fill: var(--route-current); stroke: var(--route-used); stroke-width: 3; }
 .route-node.dot.visited circle { fill: var(--route-used); stroke: var(--route-ink); }
-.route-node.dot.current circle { fill: var(--route-answer); stroke: var(--route-used); stroke-width: 5; }
-.route-node.goal circle { stroke: var(--route-answer); stroke-width: 5; }
+.route-node.dot.current circle { fill: var(--route-answer); stroke: var(--route-used); stroke-width: 7; }
+.route-node.goal circle { stroke: var(--route-answer); stroke-width: 7; }
 .route-node.via circle { fill: var(--route-current); stroke: var(--route-answer); stroke-width: 4; }
-.route-edge text { fill: var(--route-ink); font: 700 19px Inter,sans-serif; text-anchor: middle; dominant-baseline: central; paint-order: stroke fill; stroke: var(--game-control-bg); stroke-width: 5; }
+.route-edge text { fill: var(--route-ink); font: 700 19px Inter,sans-serif; text-anchor: middle; dominant-baseline: central; paint-order: stroke fill; stroke: var(--game-control-bg); stroke-width: 7; }
 .route-node circle { fill: var(--route-node); stroke: var(--route-used); stroke-width: 3; }
-.route-node.current circle { fill: var(--route-current); stroke-width: 5; }
+.route-node.current circle { fill: var(--route-current); stroke-width: 7; }
 .route-node text { fill: var(--route-ink); font: 800 20px Inter,sans-serif; text-anchor: middle; dominant-baseline: central; }
 .route-node-buttons { position: absolute; inset: 0; }
 #game-shortest .route-node-buttons button:not(:where(.game-nav *, .game-result *)) { position: absolute; transform: translate(-50%,-50%); width: clamp(30px,6vw,44px); height: clamp(30px,6vw,44px); min-width: 0; min-height: 0; padding: 0; border-radius: 50%; background: transparent; color: transparent; border: 0; box-shadow: none; appearance: none; }
@@ -6887,3 +6887,158 @@ html[data-theme="dark"] .route-scene { --route-edge: #b4a587; --route-used: #876
 #shortest-route { overflow-wrap: anywhere; }
 #shortest-status { margin: 0; min-height: 2.6em; color: var(--route-ink); text-align: center; font-weight: 650; }
 @media(max-width:620px) { .route-scene { padding: 4px; } .route-board { width: calc(100% - 14px); } .route-edge text { font-size: 22px; } #game-shortest .route-node-buttons button:not(:where(.game-nav *, .game-result *)) { width: 30px; height: 30px; } }
+/* ============================================================
+   SUDOKU — ARROWS + MOBILE NOTES FIX
+   ============================================================ */
+
+/* Arrows: stronger, easier to see and large enough for touch. */
+#game-sudoku #sudoku-board .sudoku-arrow-layer {
+  color: #b63f34;
+  pointer-events: none;
+}
+
+#game-sudoku #sudoku-board .sudoku-arrow-layer line {
+  stroke: currentColor;
+  stroke-width: 6.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .60;
+  vector-effect: non-scaling-stroke;
+  pointer-events: stroke;
+  cursor: pointer;
+}
+
+#game-sudoku #sudoku-board .sudoku-arrow-layer line.dashed {
+  stroke-dasharray: 8 6;
+}
+
+#game-sudoku #sudoku-board .sudoku-arrow-layer line.preview {
+  opacity: .62;
+  pointer-events: none;
+}
+
+/* Allow the marker head to extend outside its original marker viewport. */
+#game-sudoku #sudoku-board .sudoku-arrow-layer marker {
+  overflow: visible;
+}
+
+#game-sudoku #sudoku-board .sudoku-arrow-layer marker path {
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: .55;
+  opacity: .60;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Warm / lamp mode: keep arrows clearly separated from the board. */
+html[data-theme="dark"] #game-sudoku #sudoku-board .sudoku-arrow-layer {
+  color: #a94f2f;
+}
+
+/*
+ * Notes must never participate in cell sizing.
+ * Each note layer is pinned to its Sudoku cell as an absolute 3 × 3 grid.
+ */
+#game-sudoku #sudoku-board button:not(:where(.game-nav *, .game-result *)) {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+
+#game-sudoku #sudoku-board .sudoku-notes-grid {
+  position: absolute;
+  inset: 0;
+  width: auto;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  grid-template-rows: repeat(3,minmax(0,1fr));
+  align-items: stretch;
+  justify-items: stretch;
+  overflow: hidden;
+  font-size: clamp(.5rem,1.65vw,.68rem);
+  line-height: 1;
+  pointer-events: none;
+}
+
+#game-sudoku #sudoku-board .sudoku-notes-grid i {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  font-style: normal;
+  line-height: 1;
+}
+
+/* Keep highlighted candidates inside their own ninth of the cell. */
+#game-sudoku #sudoku-board .sudoku-notes-grid i.highlighted {
+  align-self: center;
+  justify-self: center;
+  width: min(90%,1.35em);
+  height: min(90%,1.35em);
+  aspect-ratio: 1;
+}
+
+@media(max-width:620px) {
+  #game-sudoku #sudoku-board {
+    width: min(100%,450px);
+    box-sizing: border-box;
+  }
+
+  #game-sudoku #sudoku-board .sudoku-notes-grid {
+    font-size: clamp(.43rem,2.25vw,.61rem);
+  }
+
+  #game-sudoku #sudoku-board .sudoku-arrow-layer line {
+    stroke-width: 7;
+  }
+
+  #game-sudoku #sudoku-board .sudoku-arrow-layer marker path {
+  }
+}
+/* Sudoku — active Erase tool */
+#game-sudoku .sudoku-control-bar .sudoku-tools #sudoku-erase[aria-pressed="true"],
+#game-sudoku .sudoku-control-bar .sudoku-tools #sudoku-erase[aria-pressed="true"]:hover {
+  background: var(--game-control-on-bg);
+  border-color: var(--game-control-on-bg);
+  color: var(--game-control-on-ink);
+}
+
+html[data-theme="dark"] #game-sudoku .sudoku-control-bar .sudoku-tools #sudoku-erase[aria-pressed="true"],
+html[data-theme="dark"] #game-sudoku .sudoku-control-bar .sudoku-tools #sudoku-erase[aria-pressed="true"]:hover {
+  background: var(--game-control-on-bg);
+  border-color: var(--game-control-on-bg);
+  color: var(--game-control-on-ink);
+}
+/* Sudoku — extra-large solid triangular arrowhead */
+#game-sudoku #sudoku-board .sudoku-arrow-layer marker path {
+  fill: currentColor;
+  stroke: none;
+  opacity: .60;
+}
+/* Sudoku — unified arrow body + head color */
+#game-sudoku #sudoku-board .sudoku-arrow-layer {
+  color: #b64b42;
+  opacity: .60;
+}
+#game-sudoku #sudoku-board .sudoku-arrow-layer line {
+  opacity: 1;
+}
+#game-sudoku #sudoku-board .sudoku-arrow-layer marker path {
+  fill: currentColor;
+  stroke: none;
+  opacity: 1;
+}
+#game-sudoku #sudoku-board .sudoku-arrow-layer line.preview {
+  opacity: .55;
+}
+html[data-theme="dark"] #game-sudoku #sudoku-board .sudoku-arrow-layer {
+  color: #c47a55;
+  opacity: .62;
+}

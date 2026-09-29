@@ -5,7 +5,7 @@ import {createGameResult} from './game-result.js';
 import {sound,stopSounds,speakCombo} from './puzzle-audio.js';
 import {startRiver} from './river-game.js';
 import './water-game.js';
-import {moveBoard,canMove,moveCrazyBoard,canMoveCrazy,makeCrazyTile,scoreWord,words} from './game-rules.js';
+import {moveBoard,canMove,scoreWord,words} from './game-rules.js';
 const $=s=>document.querySelector(s);
 document.querySelectorAll('[data-game]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-game]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.game-panel').forEach(p=>p.hidden=p.id!=='game-'+button.dataset.game);const panel=$('#game-'+button.dataset.game),scene=panel?.querySelector('[id$="-scene"],.river-world,.water-world')||panel;if(scene){scene.setAttribute('tabindex','-1');scene.scrollIntoView({block:'start',behavior:'instant'});scene.focus({preventScroll:true});}}));
 // Keep each game's settings and navigation in one place. Move existing controls
@@ -44,37 +44,8 @@ document.querySelectorAll('.game-panel').forEach(panel=>{
  if(actions)actions.append(control);else if(speaker)speaker.after(control);else nav.append(control);control.classList.add('in-toolbar');
  document.addEventListener('fullscreenchange',()=>{const active=document.fullscreenElement===panel||panel.classList.contains('is-fullscreen');setGameControlIcon(control,active?'close':'fullscreen',active?'Thoát toàn màn hình':'Mở toàn màn hình');});
 });
-let board,score,numberDone,numberSize=4,numberStreak=0,numberBonus=true,numberCrazy=false,comboTimer;
+let board,score,numberDone,numberSize=4,numberStreak=0,numberBonus=true,comboTimer;
 const bonusButton=$('#number-bonus');
-const crazyButton=document.createElement('button');
-crazyButton.type='button';
-crazyButton.id='number-crazy';
-crazyButton.setAttribute('aria-pressed','false');
-const CRAZY_ICON=`<svg viewBox="0 0 24 24" aria-hidden="true">
- <path d="M4.5 7.2c2.1-3.4 6.8-4.7 10.3-2.7 1.5.8 2.7 2.1 3.4 3.6"/>
- <path d="M19.5 16.8c-2.1 3.4-6.8 4.7-10.3 2.7-1.5-.8-2.7-2.1-3.4-3.6"/>
- <path d="M17.2 4.8 18.5 8l-3.4.3M6.8 19.2 5.5 16l3.4-.3"/>
- <path d="m9.1 8.8 1.7 1.7 4-4M14.9 15.2l-1.7-1.7-4 4"/>
- <path d="M3.5 12h2M18.5 12h2M12 2.5v2M12 19.5v2"/>
-</svg>`;
-function renderCrazyButton(){
- crazyButton.innerHTML=CRAZY_ICON;
- crazyButton.setAttribute('aria-label',`Crazy: ${numberCrazy?'bật':'tắt'}`);
- crazyButton.setAttribute('title',`Crazy: ${numberCrazy?'bật':'tắt'}`);
-}
-renderCrazyButton();
-const numberPanel=$('#game-numbers');
-const numberNav=numberPanel?.querySelector('.game-nav');
-if(numberNav){
- numberNav.append(crazyButton);
- crazyButton.classList.add('game-control');
-}
-crazyButton.addEventListener('click',()=>{
- numberCrazy=!numberCrazy;
- crazyButton.setAttribute('aria-pressed',String(numberCrazy));
- renderCrazyButton();
- startNumbers();
-});
 setGameControlIcon(bonusButton,'new','Bonus combo: bật');
 bonusButton.addEventListener('click',()=>{numberBonus=!numberBonus;numberStreak=0;clearNumberCombo();bonusButton.setAttribute('aria-pressed',String(numberBonus));setGameControlIcon(bonusButton,'new',`Bonus combo: ${numberBonus?'bật':'tắt'}`);});
 function clearNumberCombo(){clearTimeout(comboTimer);$('#number-combo').replaceChildren();}
@@ -87,70 +58,16 @@ function showNumberCombo(){
  clearTimeout(comboTimer);comboTimer=setTimeout(clearNumberCombo,750);
 }
 const numberResult=createGameResult($('#number-scene'),{restart:startNumbers});
-function spawn(){
- const empty=board.map((n,i)=>n?null:i).filter(i=>i!==null);
- if(!empty.length)return;
- const index=empty[Math.floor(Math.random()*empty.length)];
- board[index]=numberCrazy&&Math.random()<.30?makeCrazyTile():Math.random()<.9?2:4;
-}
+function spawn(){const empty=board.map((n,i)=>n?null:i).filter(i=>i!==null);if(empty.length)board[empty[Math.floor(Math.random()*empty.length)]]=Math.random()<.9?2:4;}
 function renderNumberScore(){
  const segments=['abcdef','bc','abdeg','abcdg','bcfg','acdfg','acdefg','abc','abcdefg','abcdfg'];
  const lines={a:[4,2,16,2],b:[18,4,18,14],c:[18,18,18,28],d:[4,30,16,30],e:[2,18,2,28],f:[2,4,2,14],g:[4,16,16,16]};
  const digits=String(score);
  $('#game-score').innerHTML=`<svg viewBox="0 0 ${digits.length*24} 32" role="img" aria-label="${score}">${[...digits].map((digit,i)=>`<g transform="translate(${i*24} 0)">${[...segments[Number(digit)]].map(key=>{const [x1,y1,x2,y2]=lines[key];return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}"/>`;}).join('')}</g>`).join('')}</svg>`;
 }
-function renderNumbers(){
- const cells=board.map(v=>{
-  const el=document.createElement('div');
-  el.className='number-cell';
-  if(typeof v==='string'){
-   const parts=v.split(':'),kind=parts[0],power=Number(parts[1])||2,wide=parts[2]==='wide';
-   const label=kind==='bomb'?'💣':kind==='mul'?(wide?`×${power}×${power}×${power}`:`×${power}`):(wide?`÷${power}÷${power}÷${power}`:`÷${power}`);
-   el.classList.add('number-special',`number-${kind}`);
-   if(wide)el.classList.add('number-wide');
-   el.dataset.level='0';
-   el.textContent=label;
-   el.setAttribute('aria-label',kind==='bomb'?'Bom':label);
-  }else{
-   el.dataset.level=String(Math.min(11,Math.log2(v||1)));
-   el.textContent=v||'';
-   el.setAttribute('aria-label',v?String(v):'Ô trống');
-  }
-  return el;
- });
- const boardEl=$('#number-board');
- boardEl.replaceChildren(...cells);
- // Keep keyboard/swipe focus on the board after every render.
- if(document.activeElement?.closest?.('#game-numbers'))boardEl.focus({preventScroll:true});
- renderNumberScore();
- document.querySelectorAll('[data-direction]').forEach(b=>b.disabled=numberDone);
-}
-function startNumbers(){numberStreak=0;clearNumberCombo();numberResult.clear();$('#number-board').style.setProperty('--number-size',numberSize);board=Array(numberSize*numberSize).fill(0);score=0;numberDone=false;spawn();spawn();$('#number-status').textContent=numberCrazy?'Crazy: các ô đặc biệt có thể nhân, chia hoặc phá huỷ ô khi va chạm.':'Ghép những ô cùng số nhé!';renderNumbers();}
-function move(direction){
- if(numberDone)return;
- const result=numberCrazy?moveCrazyBoard(board,direction,numberSize):moveBoard(board,direction,numberSize);
- if(!result.changed)return;
- board=result.board;
- numberStreak=result.score&&numberBonus?numberStreak+1:0;
- const bonus=numberStreak>=2?Math.round(result.score*Math.min(2,(numberStreak-1)*.25)):0;
- score+=result.score+bonus;
- if(bonus)showNumberCombo();else clearNumberCombo();
- spawn();
- const numeric=board.filter(v=>typeof v==='number'&&v>0);
- if(numeric.includes(2048)){
-  numberDone=true;
-  numberResult.show({won:true,description:'Bạn đã ghép được ô 2048 với '+score+' điểm!'});
-  $('#number-status').textContent='Bạn đã đạt 2048! Chúc mừng!';
- }else if(!(numberCrazy?canMoveCrazy(board,numberSize):canMove(board,numberSize))){
-  numberDone=true;
-  numberResult.show({won:false,description:'Bàn đã đầy và không còn nước đi. Bạn đạt '+score+' điểm.'});
-  $('#number-status').textContent='Hết nước đi. Bấm Chơi lại để thử lần nữa.';
- }else{
-  $('#number-status').textContent=result.score?`Cộng ${result.score} điểm${bonus?` + ${bonus} điểm thưởng (combo ${numberStreak})`:''}.`:numberCrazy?'Crazy! Tiếp tục nào!':'Tiếp tục nào!';
- }
- if(!numberDone)sound(result.score?'merge':'move');
- renderNumbers();
-}
+function renderNumbers(){const cells=board.map(n=>{const el=document.createElement('div');el.className='number-cell';el.dataset.level=Math.min(11,Math.log2(n||1));el.textContent=n||'';el.setAttribute('aria-label',n?String(n):'Ô trống');return el;});$('#number-board').replaceChildren(...cells);renderNumberScore();document.querySelectorAll('[data-direction]').forEach(b=>b.disabled=numberDone);}
+function startNumbers(){numberStreak=0;clearNumberCombo();numberResult.clear();$('#number-board').style.setProperty('--number-size',numberSize);board=Array(numberSize*numberSize).fill(0);score=0;numberDone=false;spawn();spawn();$('#number-status').textContent='Ghép những ô cùng số nhé!';renderNumbers();}
+function move(direction){if(numberDone)return;const result=moveBoard(board,direction,numberSize);if(!result.changed)return;board=result.board;numberStreak=result.score&&numberBonus?numberStreak+1:0;const bonus=numberStreak>=2?Math.round(result.score*Math.min(2,(numberStreak-1)*.25)):0;score+=result.score+bonus;if(bonus)showNumberCombo();else clearNumberCombo();spawn();if(board.includes(2048)){numberDone=true;numberResult.show({won:true,description:'Bạn đã ghép được ô 2048 với '+score+' điểm!'});$('#number-status').textContent='Bạn đã đạt 2048! Chúc mừng!';}else if(!canMove(board,numberSize)){numberDone=true;numberResult.show({won:false,description:'Bàn đã đầy và không còn nước đi. Bạn đạt '+score+' điểm.'});$('#number-status').textContent='Hết nước đi. Bấm Chơi lại để thử lần nữa.';}else $('#number-status').textContent=result.score?`Cộng ${result.score} điểm${bonus?` + ${bonus} điểm thưởng (combo ${numberStreak})`: ''}.`:'Tiếp tục nào!';if(!numberDone)sound(result.score?'merge':'move');renderNumbers();}
 document.querySelectorAll('[data-direction]').forEach(b=>b.addEventListener('click',()=>move(b.dataset.direction)));
 $('#number-board').addEventListener('keydown',e=>{const d={ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down'}[e.key];if(d){e.preventDefault();move(d);}});
 let touch;$('#number-board').addEventListener('pointerdown',e=>{touch=[e.clientX,e.clientY];$('#number-board').setPointerCapture(e.pointerId);});
