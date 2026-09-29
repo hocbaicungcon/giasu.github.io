@@ -13,34 +13,23 @@ const NS='http://www.w3.org/2000/svg';
 const tangramMobileNavStyle=document.createElement('style');
 tangramMobileNavStyle.textContent=`
 @media (max-width:620px){
-  /* Tận dụng chiều ngang nhưng giữ kích thước tự nhiên của từng control. */
+  /* Chỉ mở rộng cả cụm điều hướng; tuyệt đối không can thiệp Prev/Next. */
   #game-tangram .game-level-nav,
   #game-tangram .level-nav,
   #game-tangram .tangram-level-nav,
   #game-tangram .game-navigation{
-    width:100%!important;
+    width:calc(100% - 16px)!important;
     max-width:none!important;
-    gap:8px!important;
-  }
-
-  /* Không ép chiều rộng/chiều cao riêng: kế thừa chuẩn nút chung của game. */
-  #game-tangram :is(#tangram-prev,#tangram-next,#tangram-jump){
-    flex:initial!important;
-    width:auto!important;
-    min-width:0!important;
-    max-width:none!important;
-    height:auto!important;
-    min-height:0!important;
+    margin-left:8px!important;
+    margin-right:8px!important;
+    gap:10px!important;
     box-sizing:border-box!important;
   }
 
-  /* Ô chọn màn có thể lấy phần không gian còn lại, hai nút giữ kích thước tự nhiên. */
+  /* Chỉ ô chọn màn nhận phần không gian dư. */
   #game-tangram #tangram-jump{
     flex:1 1 auto!important;
-  }
-
-  #game-tangram :is(#tangram-prev,#tangram-next){
-    flex:0 0 auto!important;
+    min-width:0!important;
   }
 }
 `;
