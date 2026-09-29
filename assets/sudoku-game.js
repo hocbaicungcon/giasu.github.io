@@ -5,6 +5,31 @@ import {makeSudokuLevel,sudokuLevels} from './sudoku-levels.js';
 import {candidateNotes,findSudokuStep,makeSudokuPractice,sudokuTechniques} from './sudoku-training.js';
 import {sound} from './puzzle-audio.js';
 
+const sudokuSelectedCellStyle=document.createElement('style');
+sudokuSelectedCellStyle.textContent=`
+/* Ô đang chọn: dùng vàng ấm cố định, không phụ thuộc accent xanh của giao diện. */
+#sudoku-board button[data-cell].selected{
+ background:#ffe39a!important;
+ box-shadow:inset 0 0 0 1.5px rgba(173,116,0,.62)!important;
+}
+#sudoku-board button[data-cell].selected.same-number{
+ background:#ffd978!important;
+}
+/* Dark mode: nền chọn sáng hơn và chữ/số luôn đủ tương phản. */
+html[data-theme="dark"] #sudoku-board button[data-cell].selected,
+html[data-theme="dark"] #sudoku-board button[data-cell].selected.same-number{
+ background:#d9b95f!important;
+ box-shadow:inset 0 0 0 1.5px rgba(255,230,151,.72)!important;
+ color:#17130a!important;
+}
+html[data-theme="dark"] #sudoku-board button[data-cell].selected .value,
+html[data-theme="dark"] #sudoku-board button[data-cell].selected .note,
+html[data-theme="dark"] #sudoku-board button[data-cell].selected .candidate,
+html[data-theme="dark"] #sudoku-board button[data-cell].selected span{
+ color:#17130a!important;
+}
+`;
+document.head.append(sudokuSelectedCellStyle);
 const $=selector=>document.querySelector(selector),board=$('#sudoku-board'),status=$('#sudoku-status');
 const controlBar=document.createElement('div');
 controlBar.className='sudoku-control-bar';
