@@ -103,6 +103,19 @@ noteLayerFixStyle.textContent=`
  z-index:12!important;
 }
 `;document.head.append(noteLayerFixStyle);
+const arrowSquareForceStyle=document.createElement('style');
+arrowSquareForceStyle.textContent=`
+#sudoku-board svg.sudoku-arrow-layer line,
+#sudoku-board svg.sudoku-arrow-layer line.dashed,
+#sudoku-board svg.sudoku-arrow-layer line.preview{
+ stroke-linecap:butt!important;
+ stroke-linejoin:miter!important;
+}
+#sudoku-board svg.sudoku-arrow-layer line.dashed{
+ stroke-dasharray:16 4!important;
+ stroke-dashoffset:0!important;
+}
+`;document.head.append(arrowSquareForceStyle);
 const sudokuToggleUniformStyle=document.createElement('style');
 sudokuToggleUniformStyle.textContent=`
 #game-sudoku .sudoku-control-bar .sudoku-tools
@@ -148,7 +161,17 @@ function renderArrows(){
   const x1=from.offsetLeft+from.offsetWidth/2,y1=from.offsetTop+from.offsetHeight/2,x2=to.offsetLeft+to.offsetWidth/2,y2=to.offsetTop+to.offsetHeight/2;
   const length=Math.hypot(x2-x1,y2-y1)||1,ux=(x2-x1)/length,uy=(y2-y1)/length,gap=Math.min(from.offsetWidth,from.offsetHeight)*.27,headGap=Math.min(from.offsetWidth,from.offsetHeight)*.34;
   const line=document.createElementNS(ns,'line');line.setAttribute('x1',x1+ux*gap);line.setAttribute('y1',y1+uy*gap);line.setAttribute('x2',x2-ux*headGap);line.setAttribute('y2',y2-uy*headGap);line.setAttribute('marker-end','url(#sudoku-arrow-tip)');
-  if(!arrow.preview)line.dataset.arrowIndex=arrows.indexOf(arrow);if(arrow.style==='dashed')line.classList.add('dashed');if(arrow.preview)line.classList.add('preview');svg.append(line);
+  // Inline !important để thắng mọi CSS ngoài đang đặt round.
+  line.style.setProperty('stroke-linecap','butt','important');
+  line.style.setProperty('stroke-linejoin','miter','important');
+  line.style.setProperty('shape-rendering','geometricPrecision','important');
+  if(!arrow.preview)line.dataset.arrowIndex=arrows.indexOf(arrow);if(arrow.style==='dashed'){
+   line.classList.add('dashed');
+   line.style.setProperty('stroke-dasharray','16 4','important');
+   line.style.setProperty('stroke-dashoffset','0','important');
+   line.style.setProperty('stroke-linecap','butt','important');
+   line.style.setProperty('stroke-linejoin','miter','important');
+  }if(arrow.preview)line.classList.add('preview');svg.append(line);
  }
  board.append(svg);
 }
