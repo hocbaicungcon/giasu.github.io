@@ -88,6 +88,28 @@
   color: #fff;
 }
 
+
+/* 2048 Crazy mode */
+#game-numbers .number-cell.number-special {
+  font-size: clamp(.72rem,2.5vw,1.05rem);
+  font-weight: 850;
+  letter-spacing: -.06em;
+}
+
+#game-numbers .number-cell.number-bomb {
+  font-size: clamp(1.15rem,4vw,1.8rem);
+}
+
+#game-numbers .number-cell.number-wide {
+  font-size: clamp(.58rem,2vw,.82rem);
+}
+
+#number-crazy[aria-pressed="true"] {
+  background: var(--game-control-on-bg);
+  border-color: var(--game-control-on-bg);
+  color: var(--game-control-on-ink);
+}
+
 .game-directions {
   display: flex;
   gap: 8px;
