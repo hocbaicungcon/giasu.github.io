@@ -11,16 +11,16 @@ export function moveBoard(board,direction,size=4){
 }
 
 const crazyNumber=v=>typeof v==='number'&&v>0;
-const crazySpecial=v=>typeof v==='string'&&/^(mul|div|bomb|mystery|wild|swap)/.test(v);
+const crazySpecial=v=>typeof v==='string'&&/^(mul|div|bomb|mystery|wild)/.test(v);
 const parseCrazy=v=>{
  if(!crazySpecial(v))return null;
  const clean=v.replace(/:life\d+$/,'');
  if(clean.startsWith('bomb'))return {kind:'bomb',power:0,wide:false,timer:Number(clean.split(':')[1])||5};
- if(clean==='mystery'||clean==='wild'||clean==='swap')return {kind:clean,power:0,wide:false};
+ if(clean==='mystery'||clean==='wild')return {kind:clean,power:0,wide:false};
  const [kind,power,wide]=clean.split(':');
  return {kind,power:Number(power)||2,wide:wide==='wide'};
 };
-const makeCrazy=(kind,power=2,wide=false)=>kind==='bomb'?'bomb:5':['mystery','wild','swap'].includes(kind)?kind:`${kind}:${power}${wide?':wide':''}`;
+const makeCrazy=(kind,power=2,wide=false)=>kind==='bomb'?'bomb:5':['mystery','wild'].includes(kind)?kind:`${kind}:${power}${wide?':wide':''}`;
 
 function crazyIndices(direction,line,size){
  return Array.from({length:size},(_,i)=>direction==='left'?line*size+i:direction==='right'?line*size+size-1-i:direction==='up'?i*size+line:(size-1-i)*size+line);
@@ -89,12 +89,8 @@ export function moveCrazyBoard(input,direction,size=4){
    }
 
    // Wild copies an adjacent number. It becomes that number; no instant double.
-   if(a==='wild'&&crazyNumber(b)){out.push(b);crazyEvents.push({kind:'wild',cell:idx[Math.min(out.length-1,idx.length-1)],value:b});crazyTriggered=true;i++;continue;}
-   if(b==='wild'&&crazyNumber(a)){out.push(a);crazyEvents.push({kind:'wild',cell:idx[Math.min(out.length-1,idx.length-1)],value:a});crazyTriggered=true;i++;continue;}
-
-   // Swap reverses itself with the impacted numeric tile.
-   if(a==='swap'&&crazyNumber(b)){out.push(b,'swap');crazyEvents.push({kind:'swap',cell:idx[Math.min(out.length-1,idx.length-1)]});crazyTriggered=true;i++;continue;}
-   if(b==='swap'&&crazyNumber(a)){out.push('swap',a);crazyEvents.push({kind:'swap',cell:idx[Math.min(out.length-2,idx.length-1)]});crazyTriggered=true;i++;continue;}
+   if(a==='wild'&&crazyNumber(b)){out.push(b,b);crazyEvents.push({kind:'wild',cell:idx[Math.min(out.length-2,idx.length-1)],value:b});crazyTriggered=true;i++;continue;}
+   if(b==='wild'&&crazyNumber(a)){out.push(a,a);crazyEvents.push({kind:'wild',cell:idx[Math.min(out.length-1,idx.length-1)],value:a});crazyTriggered=true;i++;continue;}
 
    if(b!==undefined&&crazyNumber(a)&&crazyNumber(b)&&a===b){
     const n=a*2;out.push(n);score+=n;i++;continue;
@@ -159,7 +155,7 @@ export function moveCrazyBoard(input,direction,size=4){
    if(t<=0){board[i]=0;for(const n of crazyNeighbors(i,size))board[n]=0;crazyEvents.push({kind:'bombpair',cell:i});crazyTriggered=true;}
    else board[i]=`bomb:${t}`;
   }else if(!/:(life\d+)$/.test(v)){
-   if(['mystery','wild','swap'].includes(v))board[i]=`${v}:life4`;
+   if(['mystery','wild'].includes(v))board[i]=`${v}:life4`;
    else board[i]=`${v}:life4`;
   }else{
    const life=Number(v.match(/:life(\d+)$/)?.[1]||4)-1;
@@ -189,8 +185,7 @@ export function makeCrazyTile(){
  if(r<.54)return makeCrazy('div',2);
  if(r<.64)return makeCrazy('div',2,true);
  if(r<.78)return makeCrazy('bomb');
- if(r<.86)return 'mystery';
- if(r<.93)return 'swap';
+ if(r<.89)return 'mystery';
  return 'wild';
 }
 
