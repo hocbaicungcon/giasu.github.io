@@ -72,6 +72,16 @@ function renderCrazyButton(){
  crazyButton.setAttribute('title',`Crazy: ${numberCrazy?'bật':'tắt'}`);
 }
 renderCrazyButton();
+const numberTileFitStyle=document.createElement('style');
+numberTileFitStyle.textContent=`
+#number-board .number-cell{max-width:100%;overflow:hidden;text-align:center;white-space:nowrap}
+#number-board .number-cell.number-value-5{font-size:.82em!important}
+#number-board .number-cell.number-value-6{font-size:.70em!important}
+#number-board .number-cell.number-value-7{font-size:.60em!important;letter-spacing:-.02em}
+#number-board .number-cell.number-value-8{font-size:.52em!important;letter-spacing:-.035em}
+#number-board .number-cell.number-value-9plus{font-size:.44em!important;letter-spacing:-.05em}
+`;
+document.head.append(numberTileFitStyle);
 const numberPanel=$('#game-numbers');
 const focusNumberBoard=()=>requestAnimationFrame(()=>$('#number-board')?.focus({preventScroll:true}));
 numberPanel?.addEventListener('click',event=>{
@@ -143,6 +153,11 @@ function renderNumbers(){
    el.setAttribute('aria-label',label);
   }else{
    el.dataset.level=String(Math.min(11,Math.log2(v||1)));el.textContent=v||'';el.setAttribute('aria-label',v?String(v):'Ô trống');
+    if(v){
+     const digits=String(v).length;
+     if(digits>=9)el.classList.add('number-value-9plus');
+     else if(digits>=5)el.classList.add(`number-value-${digits}`);
+    }
   }
   return el;
  });
