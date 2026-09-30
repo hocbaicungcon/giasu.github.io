@@ -1,7 +1,7 @@
 ---
 title: "214 bộ thủ tiếng Trung là gì?"
 description: "Cách nhớ 214 bộ thủ tiếng Trung, Kanji."
-category: "Tiếng Trung"
+category: "Tiếng Anh"
 type: "Bài học"
 date: "2026-09-30"
 tags: ["tiếng trung", "bộ thủ", "kanji"]
