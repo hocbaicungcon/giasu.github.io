@@ -11,7 +11,11 @@ export const activities = [
  ['truyen-cuoi-tieng-anh','English Jokes','jokes'],
  ['games','Games','games']
 ];
-export const funMenu = prefix => `<details class="nav-exams"><summary>Giải trí</summary><div class="nav-submenu"><a href="${prefix}giai-tri/">Tất cả nội dung</a>${activities.map(([slug,label])=>`<a href="${prefix}giai-tri/${slug}.html">${label}</a>`).join('')}</div></details>`;
+// export const funMenu = prefix => `<details class="nav-exams"><summary>Giải trí</summary><div class="nav-submenu"><a href="${prefix}giai-tri/">Tất cả nội dung</a>${activities.map(([slug,label])=>`<a href="${prefix}giai-tri/${slug}.html">${label}</a>`).join('')}</div></details>`;
+export const funMenu = prefix =>
+  `<details class="nav-exams"><summary>Giải trí</summary><div class="nav-submenu"><a href="${prefix}giai-tri/">Tất cả nội dung</a>${activities.map(([slug,label]) => slug === 'games'
+    ? `<a href="https://logicholic.com/" target="_blank" rel="noopener noreferrer">${label}</a>`
+    : `<a href="${prefix}giai-tri/${slug}.html">${label}</a>`).join('')}</div></details>`;
 export function parseCSV(source) {
  const rows=[]; let row=[], field='', quoted=false;
  source=source.replace(/^\uFEFF/,'');
