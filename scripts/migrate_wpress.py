@@ -124,6 +124,8 @@ def clean_math_body(math_str):
     math_str = re.sub(r'\\end\{align\*?\}', r'\\end{aligned}', math_str)
     # Remove unsupported \hfill commands (MathType residue)
     math_str = re.sub(r'\\hfill\b', ' ', math_str)
+    # Remove unsupported array column alignments from MathType: \begin{array}{*{20}{c}} -> \begin{array}{c}
+    math_str = re.sub(r'\\\\begin\{array\}\{\*\{\d+\}\{([a-zA-Z]+)\}\}', lambda m: rf'\begin{{array}}{{{m.group(1)}}}', math_str)
     # Clean whitespace
     math_str = re.sub(r'[ \t]+', ' ', math_str).strip()
     return math_str
