@@ -410,7 +410,7 @@ Xem thêm
 
 [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
 
-[Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/?p=30821&preview=true.html)
+[Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 

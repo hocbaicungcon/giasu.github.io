@@ -953,7 +953,7 @@ Em xin file tài liệu với ạ. Em cảm ơn nhiều.
 ![Thanh Avatar](https://secure.gravatar.com/avatar/70ad1e9493fbf8c950947efa2deab4864fe976c21eb1fcc9245fd64cfb9fecf8)
 
 [17/05/2022](/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt/#comment-2763.html)
-[Thanh](/bai-viet/http://o2.edu.vn.html)
+Thanh
 
 Cho e xin file vs ạ
 
@@ -1198,7 +1198,7 @@ cho e xin file tài liệu với ạ
 ![bùi thế hiếu Avatar](https://secure.gravatar.com/avatar/3d2b6145b43c00955b181267f28e0c2f3c450cf4d02e25952e11875323049dbc)
 
 [10/06/2022](/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt/#comment-3056.html)
-[bùi thế hiếu](/bai-viet/https://o2.edu.vn.html)
+bùi thế hiếu
 
 cho e xin với thầy ơi
 

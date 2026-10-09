@@ -576,7 +576,7 @@ O2 Education gửi các thầy cô link download đề bài
 
 Các thầy cô và các em có thể xem thêm các tài liệu khác của môn hóa
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Lý thuyết và bài tập điện phân có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
 

@@ -42,7 +42,7 @@ Xem thêm
 
 - [Tổng hợp bài tập biện luận công thức este có lời giải chi tiết](/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet.html)
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
@@ -56,7 +56,7 @@ Xem thêm
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/?p=30821&preview=true.html)
+- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 ←[Hợp chất hữu cơ X có công thức phân tử C5H6O4. X tác dụng với NaOH trong dung dịch theo tỉ lệ mol 1 : 2, tạo ra muối của axit no Y và ancol Z](/bai-viet/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z.html)
 [Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp 2 muối cacboxylat Y và Z](/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z.html)→

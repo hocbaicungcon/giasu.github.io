@@ -596,7 +596,7 @@ Mời thầy cô và các em xem tiếp
 
 Các thầy cô và các em có thể xem thêm các tài liệu khác của môn hóa
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Tổng hợp bài tâp phương pháp dồn chất xếp hình](/bai-viet/tong-hop-bai-tap-phuong-phap-don-chat-xep-hinh.html)
 

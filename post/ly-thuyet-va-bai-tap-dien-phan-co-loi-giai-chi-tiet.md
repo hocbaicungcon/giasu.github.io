@@ -506,7 +506,7 @@ Giá trị của t là
 
 Các thầy cô và các em có thể xem thêm các tài liệu khác của môn hóa
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Tổng hợp bài tâp phương pháp dồn chất xếp hình](/bai-viet/tong-hop-bai-tap-phuong-phap-don-chat-xep-hinh.html)
 
@@ -678,7 +678,7 @@ Dạ ad cho em xin tài liệu về học ạ! Em cảm ơn ad ạ
 ![xuan Avatar](https://secure.gravatar.com/avatar/6cf5e2d782039f4c18027489eb4d272297d3d2ed86ee0b6ea609f862acd2a3d8)
 
 [05/12/2022](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet/#comment-4955.html)
-[xuan](/bai-viet/http://o2.edu.vn.html)
+xuan
 
 Ad cho em xin tài liệu với ạ
 
@@ -743,7 +743,7 @@ Cho em xin file với ạ
 ![Huỳnh Bảo Avatar](https://secure.gravatar.com/avatar/fd52a1e12552567ac96b6c42faa2360f4c2447c357ab9003ee756782a0a2a4c7)
 
 [30/03/2023](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet/#comment-5437.html)
-[Huỳnh Bảo](/bai-viet/http://o2.edu.vn/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
+[Huỳnh Bảo](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
 
 cho em xin file với ạ
 

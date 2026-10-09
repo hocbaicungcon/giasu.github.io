@@ -1293,4 +1293,4 @@ Mời bạn tham khảo thêm:
 | 感嘆 | 感叹 | gǎntàn | to sigh (with feeling), to lament |
 | 感性 | 感性 | gǎnxìng | sensitive |
 
-Còn tiếp, bản đầy đủ xin mời liên hệ email [admin@o2.edu.vn](/bai-viet/mailto:admin@o2.edu.vn.html)
+Còn tiếp, bản đầy đủ xin mời liên hệ email [admin@o2.edu.vn](mailto:admin@o2.edu.vn)

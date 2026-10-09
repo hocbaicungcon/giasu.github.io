@@ -46,7 +46,7 @@ Xem thêm
 
 - [Tổng hợp bài tập biện luận công thức este có lời giải chi tiết](/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet.html)
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
@@ -60,7 +60,7 @@ Xem thêm
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/?p=30821&preview=true.html)
+- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 ←[Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng, thu được glixerol và hai muối của hai axit cacboxylic Y và Z](/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hai-muoi-cua-hai-axit-cacboxylic-y-va-z.html)
 [Thủy phân hoàn toàn chất hữu cơ E (C9H16O4, chứa hai chức este) bằng dung dich NaOH, thu được sản phẩm gồm ancol X và hai chất hữu cơ Y, Z](/bai-viet/thuy-phan-hoan-toan-chat-huu-co-e-c9h16o4-chua-hai-chuc-este-bang-dung-dich-naoh-thu-duoc-san-pham-gom-ancol-x-va-hai-chat-huu-co-y-z.html)→

@@ -1498,7 +1498,7 @@ Biết E chỉ chứa nhóm chức este và trong phân tử có số nguyên t�
 
 Xem thêm
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
@@ -1530,7 +1530,7 @@ Xem thêm
 
 - [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
 
-- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/?p=30821&preview=true.html)
+- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 ←[Đề thi hsg lớp 12 môn hóa thành phố Hà Nội năm 2021](/bai-viet/de-thi-hsg-lop-12-mon-hoa-thanh-pho-ha-noi-nam-2021.html)
 [Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức Y](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-mot-muoi-natri-cua-axit-cacboxylic-hai-chuc-y.html)→
@@ -2782,7 +2782,7 @@ cho mình xin tài liệu này dc k a
 ![Ahnngxx Avatar](https://secure.gravatar.com/avatar/1a1c1e63032ce63990480cbedb3fc1744416d4f3a48671b145778463449f7e31)
 
 [23/06/2022](/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet/#comment-3212.html)
-[Ahnngxx](/bai-viet/http://o2.edu.vn.html)
+Ahnngxx
 
 Ad cho mình xin tài liệu với ạ, mình cảm ơn ạ
 
@@ -3502,7 +3502,7 @@ Ad cho em xin file với ạ
 ![Hương Lê Avatar](https://secure.gravatar.com/avatar/27ee3c277bc260445aa920fd20881bfc6b4ac1f52677031b3b686bec13a8afdc)
 
 [02/04/2023](/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet/#comment-5446.html)
-[Hương Lê](/bai-viet/http://o2.edu.vn.html)
+Hương Lê
 
 ad cho em xin tài liệu được không ạ?! vui lòng gửi qua mail giúp em ạ. em cảm ơn ad nhiều!
 
