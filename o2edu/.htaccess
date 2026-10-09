@@ -1,0 +1,55 @@
+# ============================================================================== #
+# QUY TẮC CHUYỂN HƯỚNG 301 TỪ O2.EDU.VN SANG GIASU.AI.VN                          #
+# Hướng dẫn: Dán khối này vào ĐẦU tệp .htaccess trên máy chủ o2.edu.vn           #
+# (Đặt TRƯỚC dòng "# BEGIN WordPress" để server chuyển hướng ngay, không nạp PHP) #
+# ============================================================================== #
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^2000-chu-kanji-thong-dung-nhat/?$ https://giasu.ai.vn/bai-viet/2000-chu-kanji-thong-dung-nhat.html [R=301,L]
+RewriteRule ^50-bai-tap-lap-trinh-scratch/?$ https://giasu.ai.vn/bai-viet/50-bai-tap-lap-trinh-scratch.html [R=301,L]
+RewriteRule ^50-bo-thu-thuong-dung-pdf/?$ https://giasu.ai.vn/bai-viet/50-bo-thu-thuong-dung-pdf.html [R=301,L]
+RewriteRule ^bai-toan-cau-ca-dirac/?$ https://giasu.ai.vn/bai-viet/bai-toan-cau-ca-dirac.html [R=301,L]
+RewriteRule ^bang-ky-tu-dac-biet-thuong-dung/?$ https://giasu.ai.vn/bai-viet/bang-ky-tu-dac-biet-thuong-dung.html [R=301,L]
+RewriteRule ^bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet/?$ https://giasu.ai.vn/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet.html [R=301,L]
+RewriteRule ^bo-go-tieng-viet-cho-mac/?$ https://giasu.ai.vn/bai-viet/bo-go-tieng-viet-cho-mac.html [R=301,L]
+RewriteRule ^cac-bai-tho-van-trong-sgk-tieu-hoc-cu/?$ https://giasu.ai.vn/bai-viet/cac-bai-tho-van-trong-sgk-tieu-hoc-cu.html [R=301,L]
+RewriteRule ^cac-bieu-hien-cua-nang-luc-toan-hoc/?$ https://giasu.ai.vn/bai-viet/cac-bieu-hien-cua-nang-luc-toan-hoc.html [R=301,L]
+RewriteRule ^cach-giai-rubic-2x2/?$ https://giasu.ai.vn/bai-viet/cach-giai-rubic-2x2.html [R=301,L]
+RewriteRule ^cach-nho-50-bo-thu-thuong-dung/?$ https://giasu.ai.vn/bai-viet/cach-nho-50-bo-thu-thuong-dung.html [R=301,L]
+RewriteRule ^cach-nho-bo-thu-tieng-trung/?$ https://giasu.ai.vn/bai-viet/cach-nho-bo-thu-tieng-trung.html [R=301,L]
+RewriteRule ^cach-tinh-thang-du-thang-thieu-bang-ban-tay/?$ https://giasu.ai.vn/bai-viet/cach-tinh-thang-du-thang-thieu-bang-ban-tay.html [R=301,L]
+RewriteRule ^cach-viet-50-bo-thu-thuong-dung/?$ https://giasu.ai.vn/bai-viet/cach-viet-50-bo-thu-thuong-dung.html [R=301,L]
+RewriteRule ^cau-do-chin-diem/?$ https://giasu.ai.vn/bai-viet/cau-do-chin-diem.html [R=301,L]
+RewriteRule ^cau-do-day-so-bi-an/?$ https://giasu.ai.vn/bai-viet/cau-do-day-so-bi-an.html [R=301,L]
+RewriteRule ^co-bao-nhieu-con-meo/?$ https://giasu.ai.vn/bai-viet/co-bao-nhieu-con-meo.html [R=301,L]
+RewriteRule ^dien-phan-200-ml-dung-dich-cuso4-voi-dien-cuc-tro-bang-dong-dien-mot-chieu/?$ https://giasu.ai.vn/bai-viet/dien-phan-200-ml-dung-dich-cuso4-voi-dien-cuc-tro-bang-dong-dien-mot-chieu.html [R=301,L]
+RewriteRule ^dot-chay-hoan-toan-132-gam-este-x-thu-duoc-06-mol-co2-va-06-mol-h2o-cong-thuc-phan-tu-cua-x-la/?$ https://giasu.ai.vn/bai-viet/dot-chay-hoan-toan-132-gam-este-x-thu-duoc-06-mol-co2-va-06-mol-h2o-cong-thuc-phan-tu-cua-x-la.html [R=301,L]
+RewriteRule ^file-luyen-viet-50-bo-thu-thuong-dung/?$ https://giasu.ai.vn/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html [R=301,L]
+RewriteRule ^giai-bai-tap-chat-beo-theo-phuong-phap-don-chat/?$ https://giasu.ai.vn/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html [R=301,L]
+RewriteRule ^giai-thoai-archimedes/?$ https://giasu.ai.vn/bai-viet/giai-thoai-archimedes.html [R=301,L]
+RewriteRule ^goc-giua-hai-duong-thang-trong-khong-gian/?$ https://giasu.ai.vn/bai-viet/goc-giua-hai-duong-thang-trong-khong-gian.html [R=301,L]
+RewriteRule ^ham-so-bac-hai/?$ https://giasu.ai.vn/bai-viet/ham-so-bac-hai.html [R=301,L]
+RewriteRule ^hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau/?$ https://giasu.ai.vn/bai-viet/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau.html [R=301,L]
+RewriteRule ^luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu/?$ https://giasu.ai.vn/bai-viet/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu.html [R=301,L]
+RewriteRule ^ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat/?$ https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat.html [R=301,L]
+RewriteRule ^ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai/?$ https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html [R=301,L]
+RewriteRule ^ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet/?$ https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html [R=301,L]
+RewriteRule ^phan-so-bang-nhau/?$ https://giasu.ai.vn/bai-viet/phan-so-bang-nhau.html [R=301,L]
+RewriteRule ^phuong-trinh-chua-can-bat-phuong-trinh-chua-can/?$ https://giasu.ai.vn/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html [R=301,L]
+RewriteRule ^phuong-trinh-chua-tri-tuyet-doi/?$ https://giasu.ai.vn/bai-viet/phuong-trinh-chua-tri-tuyet-doi.html [R=301,L]
+RewriteRule ^present-simple/?$ https://giasu.ai.vn/bai-viet/present-simple.html [R=301,L]
+RewriteRule ^so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai/?$ https://giasu.ai.vn/bai-viet/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai.html [R=301,L]
+RewriteRule ^thi-nghiem-mat-nuoc/?$ https://giasu.ai.vn/bai-viet/thi-nghiem-mat-nuoc.html [R=301,L]
+RewriteRule ^thuy-phan-hoan-toan-148-gam-este-don-chuc-x-bang-dung-dich-naoh-du-dun-nong-thu-duoc-164-gam-muoi-y/?$ https://giasu.ai.vn/bai-viet/thuy-phan-hoan-toan-148-gam-este-don-chuc-x-bang-dung-dich-naoh-du-dun-nong-thu-duoc-164-gam-muoi-y.html [R=301,L]
+RewriteRule ^tim-dieu-kien-de-tam-thuc-bac-hai-luon-duong/?$ https://giasu.ai.vn/bai-viet/tim-dieu-kien-de-tam-thuc-bac-hai-luon-duong.html [R=301,L]
+RewriteRule ^toc-do-chuyen-dong/?$ https://giasu.ai.vn/bai-viet/toc-do-chuyen-dong.html [R=301,L]
+RewriteRule ^tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet/?$ https://giasu.ai.vn/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html [R=301,L]
+RewriteRule ^tong-hop-bai-tap-huu-co-hay-va-kho/?$ https://giasu.ai.vn/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html [R=301,L]
+RewriteRule ^tong-hop-cac-chuyen-de-hoa-hoc-lop-11/?$ https://giasu.ai.vn/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html [R=301,L]
+RewriteRule ^viet-doan-van-cam-nhan/?$ https://giasu.ai.vn/bai-viet/viet-doan-van-cam-nhan.html [R=301,L]
+RewriteRule ^vo-ghi-bai-hoc-hoa-11-kntt-ca-nam/?$ https://giasu.ai.vn/bai-viet/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam.html [R=301,L]
+RewriteRule ^xac-suat-tung-dong-xu/?$ https://giasu.ai.vn/bai-viet/xac-suat-tung-dong-xu.html [R=301,L]
+</IfModule>
