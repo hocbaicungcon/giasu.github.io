@@ -19,12 +19,23 @@ ASSETS_IMG_DIR = os.path.join(WORKSPACE_ROOT, 'assets/images')
 ASSETS_DOC_DIR = os.path.join(WORKSPACE_ROOT, 'assets/docs')
 DRIVE_UPLOAD_DIR = os.path.join(WORKSPACE_ROOT, 'o2edu/drive_upload')
 DRIVE_LINKS_FILE = os.path.join(WORKSPACE_ROOT, 'o2edu/drive_links.csv')
+SLUG_MAP_FILE = os.path.join(WORKSPACE_ROOT, 'o2edu/slug_map.json')
 MAX_LOCAL_DOC_SIZE = 5 * 1024 * 1024  # 5MB: Các file >= 5MB chuyển sang Google Drive
 
 os.makedirs(ASSETS_IMG_DIR, exist_ok=True)
 os.makedirs(ASSETS_DOC_DIR, exist_ok=True)
 os.makedirs(POST_DIR, exist_ok=True)
 os.makedirs(DRIVE_UPLOAD_DIR, exist_ok=True)
+
+def load_slug_map():
+    if os.path.exists(SLUG_MAP_FILE):
+        import json
+        try:
+            with open(SLUG_MAP_FILE, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
 
 def load_drive_links():
     mapping = {}
@@ -476,6 +487,11 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
         unquoted_rel_path = urllib.parse.unquote(rel_path)
         img_name = os.path.basename(unquoted_rel_path)
         dest_filename = f"{slug}-{img_name}"
+        if len(dest_filename) > 180:
+            name_part, ext_part = os.path.splitext(img_name)
+            short_slug = slug[:60]
+            short_name = name_part[:60]
+            dest_filename = f"{short_slug}-{short_name}{ext_part}"
         dest_path = os.path.join(ASSETS_IMG_DIR, dest_filename)
         
         img_bytes = reader.get_file(unquoted_rel_path) or reader.get_file(rel_path)
@@ -581,8 +597,9 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
     
     # Remove trailing WordPress comments and discussion sections
     body_md = re.split(r'\n##\s+(?:Comments|Bình luận)\b|\n###\s+(?:Leave a Reply|One response to|\d+\s+responses?\s+to)\b', body_md)[0].strip()
-    
-    out_file = os.path.join(POST_DIR, f"{slug}.md")
+    slug_map = load_slug_map()
+    target_slug = slug_map.get(slug, slug)
+    out_file = os.path.join(POST_DIR, f"{target_slug}.md")
     existing_fm = {}
     if os.path.exists(out_file):
         try:
