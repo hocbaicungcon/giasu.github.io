@@ -16,13 +16,13 @@ Mời bạn tham khảo 138 câu hỏi trắc nghiệm Python có đáp án. Đ�
 
 ## 1. Đề bài câu hỏi trắc nghiệm Python
 
-**Câu 1.** Biểu thức `complex(‘2-3j’)` là hợp lệ còn `complex(2 – 3j)` sai cú pháp của hàm `complex()`. Khẳng định sau đây đúng hay sai?
+**Câu 1.** Biểu thức `complex('2-3j')` là hợp lệ còn `complex(2 - 3j)` sai cú pháp của hàm `complex()`. Khẳng định sau đây đúng hay sai?
 
 **A.** Đúng
 
 **B.** Sai
 
-**Câu 2.** Biểu thức trong Python `math.sqrt(x+ math.sqrt(x+ math.sqrt(x)))` là biểu thức nào sau đây trong toán học?
+**Câu 2.** Biểu thức trong Python `math.sqrt(x + math.sqrt(x + math.sqrt(x)))` là biểu thức nào sau đây trong toán học?
 
 **A.** $\sqrt x + \sqrt x + \sqrt x$
 
@@ -51,25 +51,27 @@ for i in range(1, 5):
 
 **Câu 4.** Cho câu lệnh sau:
 
-`Print(‘xin chao’)`
+```python
+Print('xin chao')
+```
 
 Câu lệnh trên sai, câu lệnh đúng là:
 
-**A.** `print(‘xin chao’)`
+**A.** `print('xin chao')`
 
 **B.** `print(xin chao)`
 
 **C.** `Print(xin chao)`
 
-**D.** `Print(“xin chao”)`
+**D.** `Print("xin chao")`
 
 **Câu 5.** Cho đoạn chương trình sau:
 
 ```python
-a=b=1
-c=1
-d=2
-print(a+b+c+d)
+a = b = 1
+c = 1
+d = 2
+print(a + b + c + d)
 ```
 
 Kết quả trên màn hình là:
@@ -82,7 +84,7 @@ Kết quả trên màn hình là:
 
 **D.** `6`
 
-**Câu 6.** Chạy câu lệnh `num = '3'*'3'` trong Python, kết quả là:
+**Câu 6.** Chạy câu lệnh `num = '3' * '3'` trong Python, kết quả là:
 
 **A.** `333`
 
@@ -90,7 +92,7 @@ Kết quả trên màn hình là:
 
 **C.** `9`
 
-**D.** `TypeError: can’t multiply sequence by non-int of type ‘str’`
+**D.** `TypeError: can't multiply sequence by non-int of type 'str'`
 
 **Câu 7.** Chọn phát biểu sai?
 
@@ -132,11 +134,11 @@ Kết quả trên màn hình là:
 
 **D.** Tất cả các đáp án trên đều đúng.
 
-**Câu 11.** Các khối code (khối lệnh của hàm, vòng lặp,…) trong Python được xác định bởi
+**Câu 11.** Các khối code (khối lệnh của hàm, vòng lặp,…) trong Python được xác định bởi:
 
 **A.** Dấu ngoặc nhọn `{ }`
 
-**B.** Canh lề
+**B.** Canh lề (indentation)
 
 **C.** Dấu ngoặc đơn `()`
 
@@ -149,113 +151,113 @@ sum(2, 4, 6)
 sum([1, 2, 3])
 ```
 
-**A.** Error, 6
+**A.** `Error, 6`
 
-**B.** 12, Error
+**B.** `12, Error`
 
-**C.** 12, 6
+**C.** `12, 6`
 
-**D.** Error, Error
+**D.** `Error, Error`
 
-**Câu 13.** Câu lệnh sử dụng toán tử and trả về kết quả TRUE khi nào?
+**Câu 13.** Câu lệnh sử dụng toán tử `and` trả về kết quả `True` khi nào?
 
-**A.** Cả hai toán hạng đều là TRUE.
+**A.** Cả hai toán hạng đều là `True`.
 
-**B.** Cả hai toán hàng đều là FALSE.
+**B.** Cả hai toán hạng đều là `False`.
 
-**C.** Một trong hai toán hạng là TRUE.
+**C.** Một trong hai toán hạng là `True`.
 
-**D.** Toán hạng đầu tiên là TRUE.
+**D.** Toán hạng đầu tiên là `True`.
 
-**Câu 14.** Dãy kí tự muốn in ra màn hình bằng câu lệnh print() cần đặt trong cặp dấu gì?
+**Câu 14.** Dãy kí tự muốn in ra màn hình bằng câu lệnh `print()` cần đặt trong cặp dấu gì?
 
-**A.** nháy đơn
+**A.** Nháy đơn
 
-**B.** nháy kép
+**B.** Nháy kép
 
-**C.** ngoặc kép
+**C.** Ngoặc kép
 
 **D.** Cả A, B đều đúng.
 
-**Câu 15.** Giả sử có một list: l = [2,3,4]. Nếu muốn in list này theo thứ tự ngược lại ta nên sử dụng phương pháp nào sau đây?
+**Câu 15.** Giả sử có một list `l = [2, 3, 4]`. Nếu muốn in list này theo thứ tự ngược lại ta nên sử dụng phương pháp nào sau đây?
 
-**A.** reverse(l)
+**A.** `reverse(l)`
 
-**B.** list(reverse[(l)])
+**B.** `list(reverse[(l)])`
 
-**C.** reversed(l)
+**C.** `reversed(l)`
 
-**D.** list(reversed(l))
+**D.** `list(reversed(l))`
 
-**Câu 16.** Hàm divmod(a,b) trong đó ‘a’ và ‘b’ là những số nguyên được diễn giải là:
+**Câu 16.** Hàm `divmod(a, b)` trong đó `a` và `b` là những số nguyên được diễn giải là:
 
-**A.** (a%b,#a//b)
+**A.** `(a % b, a // b)`
 
-**B.** (a//b, a%b)
+**B.** `(a // b, a % b)`
 
-**C.** (a//b, a*b)
+**C.** `(a // b, a * b)`
 
-**D.** (a/b, a%b)
+**D.** `(a / b, a % b)`
 
 **Câu 17.** Hàm nào sau đây chỉ chấp nhận số nguyên làm tham số?
 
-**A.** ord()
+**A.** `ord()`
 
-**B.** min()
+**B.** `min()`
 
-**C.** chr()
+**C.** `chr()`
 
-**D.** any()
+**D.** `any()`
 
 **Câu 18.** Hàm nào sau đây không chấp nhận iterable làm tham số?
 
-**A.** enumerate()
+**A.** `enumerate()`
 
-**B.** all()
+**B.** `all()`
 
-**C.** chr()
+**C.** `chr()`
 
-**D.** max()
+**D.** `max()`
 
 **Câu 19.** Hàm nào sau đây không gây ra lỗi?
 
-**A.** ord()
+**A.** `ord()`
 
-**B.** ord(‘ ‘)
+**B.** `ord(' ')`
 
-**C.** ord(“)
+**C.** `ord('')`
 
-**D.** ord(“”)
+**D.** `ord("")`
 
-**Câu 20.** Hàm nào sau đây là hàm tích hợp sẵn trong Python
+**Câu 20.** Hàm nào sau đây là hàm tích hợp sẵn trong Python?
 
-**A.** seed()
+**A.** `seed()`
 
-**B.** sqrt()
+**B.** `sqrt()`
 
-**C.** factorial()
+**C.** `factorial()`
 
-**D.** print()
+**D.** `print()`
 
 **Câu 21.** Hàm nào sau đây sẽ không xảy ra lỗi khi không truyền tham số cho nó?
 
-**A.** min()
+**A.** `min()`
 
-**B.** divmod()
+**B.** `divmod()`
 
-**C.** all()
+**C.** `all()`
 
-**D.** float()
+**D.** `float()`
 
-**Câu 22.** Hàm pow(x,y,z) được diễn giải là:
+**Câu 22.** Hàm `pow(x, y, z)` được diễn giải là:
 
-**A.** (xy)z
+**A.** `(x ** y) % z`
 
-**B.** (x**y) / z
+**B.** `(x // y) * z`
 
-**C.** (x**y) % z
+**C.** `(x ** y) ** z`
 
-**D.** (x*y)z
+**D.** `(x * y) ** z`
 
 **Câu 23.** Hàm được khai báo ở đâu?
 
@@ -267,15 +269,15 @@ sum([1, 2, 3])
 
 **D.** Tất cả các phương án trên
 
-**Câu 24.** Hình vuông có cạnh là 10(cm). Ta có thể dùng Python để viết chương trình tính diện tích hình vuông là:
+**Câu 24.** Khi cần in ra màn hình diện tích hình vuông có cạnh có giá trị bằng `a` ta thực hiện câu lệnh:
 
-**A.** print(‘dien tich hinh vuong la:’,a*a)
+**A.** `print('dien tich hinh vuong la:', a * a)`
 
-**B.** print(‘dien tich hinh vuong la:a*a’)
+**B.** `print('dien tich hinh vuong la: a * a')`
 
-**C.** print(dien tich hinh vuong la:a*a)
+**C.** `print 'dien tich hinh vuong la:', a * a`
 
-**D.** print ‘dien tich hinh vuong la:’,a*a
+**D.** `print 'dien tich hinh vuong la:', a`
 
 **Câu 25.** Khẳng định nào là đúng khi nói về đoạn code sau:
 
@@ -369,11 +371,11 @@ f = open('test.txt', 'r', encoding='utf-8')
 f.read()
 ```
 
-**A.** Chương trình này đọc nội dung của file test.txt.
+**A.** Chương trình này đọc nội dung của file `test.txt`.
 
-**B.** Nếu test.txt có xuống dòng, hàm read() sẽ trả về kí hiệu bắt đầu dòng mới là ‘\n’.
+**B.** Nếu `test.txt` có xuống dòng, hàm `read()` sẽ trả về kí hiệu bắt đầu dòng mới là `'\n'`.
 
-**C.** Bạn có thể truyền một tham số kiểu integer cho read()
+**C.** Bạn có thể truyền một tham số kiểu integer cho `read()`.
 
 **D.** Tất cả các đáp án trên đều đúng.
 
@@ -427,9 +429,9 @@ như C, Java,…
 
 **B.** Bạn có thể thay đổi cách các toán tử hoạt động trong Python.
 
-**C.** add () được gọi khi toán tử ‘ + ‘ được sử dụng.
+**C.** `__add__()` được gọi khi toán tử `+` được sử dụng.
 
-**D.** Tất cả các đáp trên đều đúng.
+**D.** Tất cả các đáp án trên đều đúng.
 
 **Câu 36.** Khẳng định nào sau đây về Python là đúng?
 
@@ -451,15 +453,15 @@ như C, Java,…
 
 **D.** Tất cả các đáp án trên đều đúng.
 
-**Câu 38.** Kết quả của biểu thức hex(15) là gì?
+**Câu 38.** Khẳng định nào sau đây là đúng khi nói về hàm `hex(15)`?
 
-**A.** f
+**A.** `hex(15)` trả về chuỗi `'15'`
 
-**B.** 0xF
+**B.** `hex(15)` trả về giá trị số nguyên 15
 
-**C.** 0Xf
+**C.** `hex(15)` trả về chuỗi `'0XF'`
 
-**D.** 0xf
+**D.** `hex(15)` trả về chuỗi `'0xf'`
 
 **Câu 39.** Kết quả của biểu thức sau là gì?
 
@@ -468,13 +470,13 @@ chr('97')
 chr(97)
 ```
 
-**A.** a Error
+**A.** `a Error`
 
-**B.** ‘a’ a
+**B.** `'a' a`
 
-**C.** Error a
+**C.** `Error a`
 
-**D.** Error Error
+**D.** `Error Error`
 
 **Câu 40.** Kết quả của biểu thức sau là gì?
 
@@ -482,13 +484,13 @@ chr(97)
 min(max(False, -3, -4), 2, 7)
 ```
 
-**A.** 2
+**A.** `2`
 
-**B.** False
+**B.** `False`
 
-**C.** -3
+**C.** `-3`
 
-**D.** -4
+**D.** `-4`
 
 **Câu 41.** Kết quả của biểu thức sau là gì?
 
@@ -496,13 +498,13 @@ min(max(False, -3, -4), 2, 7)
 round(4.5676, 2)
 ```
 
-**A.** 4.5
+**A.** `4.5`
 
-**B.** 4.6
+**B.** `4.6`
 
-**C.** 4.57
+**C.** `4.57`
 
-**D.** 4.56
+**D.** `4.56`
 
 **Câu 42.** Kết quả của biểu thức sau là gì?
 
@@ -510,13 +512,13 @@ round(4.5676, 2)
 round(4.576)
 ```
 
-**A.** 4.5
+**A.** `4.5`
 
-**B.** 5
+**B.** `5`
 
-**C.** 4
+**C.** `4`
 
-**D.** 4.6
+**D.** `4.6`
 
 **Câu 43.** Kết quả của chương trình dưới đây là:
 
@@ -552,13 +554,13 @@ mylist = ['a', 'aa', 'aaa', 'b', 'bb', 'bbb']
 print(mylist[:-1])
 ```
 
-**A.** [a, aa, aaa, b, bb]
+**A.** `['a', 'aa', 'aaa', 'b', 'bb']`
 
-**B.** [‘a’, ‘aa’, ‘aaa’, ‘b’, ‘bb’]
+**B.** `['a', 'aa', 'aaa', 'b', 'bb']`
 
-**C.** [‘a’, ‘aa’, ‘aaa’, ‘b’, ‘bb’, ‘bbb’]
+**C.** `['a', 'aa', 'aaa', 'b', 'bb', 'bbb']`
 
-**D.** Error
+**D.** `Error`
 
 **Câu 45.** Kết quả của chương trình được in ra màn hình là?
 
@@ -568,13 +570,13 @@ for i in string:
     print(i, end=", ")
 ```
 
-**A.** m, y,, n, a, m, e,, i, s,, x,
+**A.** `m, y,, n, a, m, e,, i, s,, x,`
 
-**B.** m, y,, n, a, m, e,, i, s,, x
+**B.** `m, y,, n, a, m, e,, i, s,, x`
 
-**C.** my, name, is, x,
+**C.** `my, name, is, x,`
 
-**D.** Error
+**D.** `Error`
 
 **Câu 46.** Kết quả của chương trình được in ra màn hình là?
 
@@ -604,13 +606,13 @@ print(sum)
 len(["hello", 2, 4, 6])
 ```
 
-**A.** 4
+**A.** `4`
 
-**B.** 3
+**B.** `3`
 
-**C.** Error
+**C.** `Error`
 
-**D.** 6
+**D.** `6`
 
 **Câu 48.** Kết quả của hàm hiển thị dưới đây là gì?
 
@@ -618,13 +620,13 @@ len(["hello", 2, 4, 6])
 list(enumerate([2, 3]))
 ```
 
-**A.** Error
+**A.** `Error`
 
-**B.** [(1, 2), (2, 3)]
+**B.** `[(1, 2), (2, 3)]`
 
-**C.** [(0, 2), (1, 3)]
+**C.** `[(0, 2), (1, 3)]`
 
-**D.** [(2, 3)]
+**D.** `[(2, 3)]`
 
 **Câu 49.** Kết quả của hàm hiển thị dưới đây là gì?
 
@@ -633,13 +635,13 @@ ord(65)
 ord('A')
 ```
 
-**A.** A 65
+**A.** `A 65`
 
-**B.** Error 65
+**B.** `Error 65`
 
-**C.** A Error
+**C.** `A Error`
 
-**D.** Error Error
+**D.** `Error Error`
 
 **Câu 50.** Kết quả của hàm hiển thị dưới đây là gì?
 
@@ -648,13 +650,13 @@ x = 3
 eval('x^2')
 ```
 
-**A.** Error
+**A.** `Error`
 
-**B.** 1
+**B.** `1`
 
-**C.** 9
+**C.** `9`
 
-**D.** 6
+**D.** `6`
 
 **Câu 51.** Kết quả của hàm sau là gì?
 
@@ -662,13 +664,13 @@ eval('x^2')
 all([2, 4, 0, 6])
 ```
 
-**A.** Error
+**A.** `Error`
 
-**B.** True
+**B.** `True`
 
-**C.** False
+**C.** `False`
 
-**D.** 0
+**D.** `0`
 
 **Câu 52.** Kết quả của hàm sau là gì?
 
@@ -676,13 +678,13 @@ all([2, 4, 0, 6])
 complex(1 + 2j)
 ```
 
-**A.** Error
+**A.** `Error`
 
-**B.** 1
+**B.** `1`
 
-**C.** 2j
+**C.** `2j`
 
-**D.** 1+2j
+**D.** `1+2j`
 
 **Câu 53.** Kết quả của hàm sau là gì?
 
@@ -691,13 +693,13 @@ float('-infinity')
 float('inf')
 ```
 
-**A.** –inf inf
+**A.** `-inf inf`
 
-**B.** –infinity inf
+**B.** `-infinity inf`
 
-**C.** Error Error
+**C.** `Error Error`
 
-**D.** Error Junk value
+**D.** `Error Junk value`
 
 **Câu 54.** Kết quả của hàm sau là gì?
 
@@ -706,13 +708,13 @@ oct(7)
 oct('7')
 ```
 
-**A.** Error 07
+**A.** `Error 0o7`
 
-**B.** 07 Error
+**B.** `0o7 Error`
 
-**C.** 0o7 Error
+**C.** `0o7 Error`
 
-**D.** 07 0o7
+**D.** `0o7 0o7`
 
 **Câu 55.** Kết quả của đoạn code dưới đây là:
 
@@ -721,13 +723,13 @@ numbers = [2, 3, 4]
 print(numbers)
 ```
 
-**A.** 2, 3, 4
+**A.** `2, 3, 4`
 
-**B.** 2 3 4
+**B.** `2 3 4`
 
-**C.** [2, 3, 4]
+**C.** `[2, 3, 4]`
 
-**D.** [2 3 4]
+**D.** `[2 3 4]`
 
 **Câu 56.** Kết quả nào là output của đoạn code dưới đây?
 
@@ -797,13 +799,13 @@ list = ['Tech', 404, 3.03, 'Beamers', 33.3]
 print(list[1:3])
 ```
 
-**A.** [ ‘Tech’, 404, 3.03, ‘Beamers’, 33.3 ]
+**A.** `['Tech', 404, 3.03, 'Beamers', 33.3]`
 
-**B.** [404, 3.03]
+**B.** `[404, 3.03]`
 
-**C.** [‘Tech’, ‘Beamers’]
+**C.** `['Tech', 'Beamers']`
 
-**D.** None of the above
+**D.** `None of the above`
 
 **Câu 60.** Kết quả nào là output của đoạn code dưới đây?
 
@@ -859,17 +861,17 @@ else:
 
 **D.** Chỉ dùng phục vụ trong học tập, không có tính ứng dụng trong phát triển ứng dụng web, lập trình games…
 
-**Câu 63.** Lệnh nào dùng để lấy dữ liệu đầu vào từ người dùng?
+**Câu 63.** Lệnh nào trong các lệnh dưới đây được sử dụng để nhận dữ liệu từ người dùng trong Python?
 
-**A.** cin
+**A.** `cin`
 
-**B.** scanf()
+**B.** `scanf()`
 
-**C.** input()
+**C.** `input()`
 
-**D.** <>
+**D.** `<>`
 
-**Câu 64.** Lệnh print in ra kết quả nào cho chương trình dưới đây?
+**Câu 64.** Lệnh `print` in ra kết quả nào cho chương trình dưới đây?
 
 ```python
 list1 = [1, 3]
@@ -878,13 +880,13 @@ list1[0] = 4
 print(list2)
 ```
 
-**A.** [4, 3]
+**A.** `[4, 3]`
 
-**B.** [1, 3]
+**B.** `[1, 3]`
 
-**C.** [1, 4]
+**C.** `[1, 4]`
 
-**D.** [1, 3, 4]
+**D.** `[1, 3, 4]`
 
 **Câu 65.** Một lớp được thừa hưởng thuộc tính từ hai lớp khác nhau được gọi là gì?
 
@@ -896,25 +898,25 @@ print(list2)
 
 **D.** Kế thừa (Inheritance)
 
-**Câu 66.** Một ô tô đi từ A đến B với vận tốc v (km/h). Câu lệnh để tính ‘Thời gian ô tô đó đi hết quãng đường k (km)’ là:
+**Câu 66.** Một ô tô đi từ A đến B với vận tốc `v` (km/h). Câu lệnh để tính thời gian đi hết quãng đường `k` (km) là:
 
-**A.** print(k/v)
+**A.** `print(k / v)`
 
-**B.** print(‘k/v’)
+**B.** `print('k/v')`
 
-**C.** print(“k/v”)
+**C.** `print("k/v")`
 
-**D.** print k/v
+**D.** `print k / v`
 
-**Câu 67.** Mở file với chế độ mode ‘ a ‘ có ý nghĩa gì?
+**Câu 67.** Mở file với chế độ mode `'a'` có ý nghĩa gì?
 
-**A.** Mở file ở chế độ chỉ được phép đọc.
+**A.** Mở file chỉ để đọc.
 
-**B.** Mở file ở chế độ ghi.
+**B.** Mở file để ghi tiếp vào cuối file (append).
 
-**C.** Mở file chế độ ghi tiếp vào cuối file.
+**C.** Mở file và xóa hết nội dung cũ để ghi lại.
 
-**D.** Mở file để đọc và ghi.
+**D.** Mở file ở chế độ nhị phân.
 
 **Câu 68.** Mở file với chế độ mode `wb` có ý nghĩa gì?
 
@@ -926,15 +928,15 @@ print(list2)
 
 **D.** Mở file để đọc và ghi cho dạng nhị phân.
 
-**Câu 69.** Ngoại lệ nào xảy ra khi phát hiện thấy lỗi không thuộc bất kỳ danh mục nào khác?
+**Câu 69.** Khi cố gắng truy cập một biến cục bộ trước khi nó được định nghĩa, ngoại lệ nào sẽ được nêu ra?
 
-**A.** ReferenceError
+**A.** `ReferenceError`
 
-**B.** SystemError
+**B.** `SystemError`
 
-**C.** RuntimeError
+**C.** `RuntimeError`
 
-**D.** LookupError
+**D.** `UnboundLocalError`
 
 **Câu 70.** Output của chương trình dưới đây là gì?
 
@@ -1087,13 +1089,13 @@ divmod(10.5, 5)
 divmod(2.4, 1.2)
 ```
 
-**A.** (2.00, 0.50) (2.00, 0.00)
+**A.** `(2.0, 0.5) (2.0, 0.0)`
 
-**B.** (2, 0.5) (2, 0)
+**B.** `(2, 0.5) (2, 0)`
 
-**C.** (2.0, 0.5) (2.0, 0.0)
+**C.** `(2.0, 0.5) (2.0, 0.0)`
 
-**D.** (2, 0.5) (2)
+**D.** `(2, 0.5) (2)`
 
 **Câu 78.** Output của hàm biểu diễn dưới đây là gì?
 
@@ -1102,13 +1104,13 @@ import math
 abs(math.sqrt(25))
 ```
 
-**A.** Error
+**A.** `Error`
 
-**B.** -5
+**B.** `-5`
 
-**C.** 5
+**C.** `5`
 
-**D.** 5.0
+**D.** `5.0`
 
 **Câu 79.** Output của hàm sau là gì?
 
@@ -1116,13 +1118,13 @@ abs(math.sqrt(25))
 any([2 > 8, 4 > 2, 1 > 2])
 ```
 
-**A.** Error
+**A.** `Error`
 
-**B.** True
+**B.** `True`
 
-**C.** False
+**C.** `False`
 
-**D.** 4>2
+**D.** `4 > 2`
 
 **Câu 80.** Output của hàm sau là gì?
 
@@ -1131,13 +1133,13 @@ float('1e-003')
 float('2e+003')
 ```
 
-**A.** 3.00 300
+**A.** `3.00 300`
 
-**B.** 0.001 2000.0
+**B.** `0.001 2000.0`
 
-**C.** 0.001 200
+**C.** `0.001 200`
 
-**D.** Error 2003
+**D.** `Error 2003`
 
 **Câu 81.** Output của hàm sau là gì? Lưu ý: số lượng khoảng trắng trước số đó là 5.
 
@@ -1146,13 +1148,13 @@ float('     -12345
 ')
 ```
 
-**A.** -12345.0 (5 khoảng trắng trước số)
+**A.** `-12345.0` (5 khoảng trắng trước số)
 
-**B.** -12345.0
+**B.** `-12345.0`
 
-**C.** Error
+**C.** `Error`
 
-**D.** -12345.000000000…. (số thập phân vô hạn)
+**D.** `-12345.000000000…` (số thập phân vô hạn)
 
 **Câu 82.** Output của hàm sau là:
 
@@ -1160,13 +1162,13 @@ float('     -12345
 all(3, 0, 4.2)
 ```
 
-**A.** True
+**A.** `True`
 
-**B.** False
+**B.** `False`
 
-**C.** Error
+**C.** `Error`
 
-**D.** 0
+**D.** `0`
 
 **Câu 83.** Output của lệnh dưới đây là:
 
@@ -1174,13 +1176,13 @@ all(3, 0, 4.2)
 print("Hello World"[::-1])
 ```
 
-**A.** dlroW olleH
+**A.** `dlroW olleH`
 
-**B.** Hello Worl
+**B.** `Hello Worl`
 
-**C.** d
+**C.** `d`
 
-**D.** Error
+**D.** `Error`
 
 **Câu 84.** Output của lệnh là:
 
@@ -1188,13 +1190,13 @@ print("Hello World"[::-1])
 print(3 >= 3)
 ```
 
-**A.** 3 >= 3
+**A.** `3 >= 3`
 
-**B.** True
+**B.** `True`
 
-**C.** False
+**C.** `False`
 
-**D.** None
+**D.** `None`
 
 **Câu 85.** Output của lệnh sau là:
 
@@ -1202,13 +1204,13 @@ print(3 >= 3)
 print(1, 2, 3, 4, sep='*')
 ```
 
-**A.** 1 2 3 4
+**A.** `1 2 3 4`
 
-**B.** 1234
+**B.** `1234`
 
-**C.** 123*4
+**C.** `123*4`
 
-**D.** 24
+**D.** `24`
 
 **Câu 86.** Python có 2 loại hàm chính, đó là:
 
@@ -1280,7 +1282,7 @@ while i < 10:
 
 **D.** 0
 
-**Câu 91.** Trong NNLT Python để kiểm tra số tự nhiên n khác 0 là số chẵn hay lẻ, câu lệnh nào sau đây là đúng?
+**Câu 91.** Trong NNLT Python để kiểm tra số tự nhiên `n` khác 0 là số chẵn hay lẻ, câu lệnh nào sau đây là đúng?
 
 **A.**
 ```python
@@ -1314,15 +1316,15 @@ else:
     print('so le')
 ```
 
-**Câu 92.** Trong NNLT Python, biểu thức 1+x3 được viết là:
+**Câu 92.** Trong NNLT Python, biểu thức sau có giá trị bằng bao nhiêu: `(3 > 4) and (5 > 2)`?
 
-**A.** 1+x**3
+**A.** `1 + x**3`
 
-**B.** 1+x^3
+**B.** `1 + x^3`
 
-**C.** 1+x*3
+**C.** `1 + x*3`
 
-**D.** 1+x^^3
+**D.** `1 + x^^3`
 
 **Câu 93.** Trong NNLT Python, biểu thức sau cho kết quả bằng bao nhiêu?
 
@@ -1338,15 +1340,15 @@ else:
 
 **D.** 10
 
-**Câu 94.** Trong NNLT Python, biểu thức số học nào sau đây là hợp lệ?
+**Câu 94.** Trong NNLT Python, cho các biến `a`, `b`, `c` có kiểu `int`. Biểu thức nào sau đây cho kết quả là `True`?
 
-**A.** 5*a + 7* b + 8*c
+**A.** `5 * a + 7 * b + 8 * c`
 
-**B.** 5a + 7b + 8c
+**B.** `5a + 7b + 8c`
 
-**C.** {a + b}*c
+**C.** `{a + b} * c`
 
-**D.** a*b(a+b)
+**D.** `a * b(a + b)`
 
 **Câu 95.** Trong NNLT Python, cho đoạn chương trình sau:
 
@@ -1356,15 +1358,15 @@ b = 2
 a, b = b, a
 ```
 
-Sau khi thực hiện đoạn chương trình trên, giá trị của a và b là:
+Sau khi thực hiện đoạn chương trình trên, giá trị của `a` và `b` là:
 
-**A.** a=1, b=2
+**A.** `a = 1, b = 2`
 
-**B.** a=2, b=1
+**B.** `a = 2, b = 1`
 
-**C.** a=1, b=1
+**C.** `a = 1, b = 1`
 
-**D.** a=2, b=2
+**D.** `a = 2, b = 2`
 
 **Câu 96.** Trong NNLT Python, cho đoạn chương trình sau:
 
@@ -1393,71 +1395,75 @@ else:
     print('true')
 ```
 
-**A.** TRUE
+**A.** `TRUE`
 
-**B.** true
+**B.** `true`
 
-**C.** FALSE
+**C.** `FALSE`
 
-**D.** false
+**D.** `false`
 
 **Câu 98.** Trong NNLT Python, cấu trúc rẽ nhánh dạng thiếu là:
 
-**A.** if <điều kiện>: <câu lệnh >
+**A.** `if <điều kiện>: <câu lệnh>`
 
-**B.** IF <điều kiện>: <câu lệnh >
+**B.** `IF <điều kiện>: <câu lệnh>`
 
-**C.** if <điều kiện> then <câu lệnh >;
+**C.** `if <điều kiện> then <câu lệnh>;`
 
-**D.** IF <điều kiện> THEN <câu lệnh >;
+**D.** `IF <điều kiện> THEN <câu lệnh>;`
 
 **Câu 99.** Trong NNLT Python, cấu trúc rẽ nhánh dạng đủ là:
 
-**A.** if <điều kiện>: <câu lệnh 1> else: <câu lệnh 2>
+**A.** `if <điều kiện>: <câu lệnh 1> else: <câu lệnh 2>`
 
 **B.**
+```python
+if <điều kiện>:
+    <câu lệnh 1>
+else:
+    <câu lệnh 2>
+```
 
-if <điều kiện>: <câu lệnh 1>
-
-else: <câu lệnh 2>
-
-**C.** IF <điều kiện>: <câu lệnh 1> ELSE: <câu lệnh 2>
+**C.** `IF <điều kiện>: <câu lệnh 1> ELSE: <câu lệnh 2>`
 
 **D.**
-
-IF <điều kiện>: <câu lệnh 1>
-
-ELSE: <câu lệnh 2>
+```text
+IF <điều kiện>:
+    <câu lệnh 1>
+ELSE:
+    <câu lệnh 2>
+```
 
 **Câu 100.** Trong NNLT Python, hãy chọn biểu diễn hằng trong các biểu diễn dưới đây:
 
-**A.** _Python
+**A.** `_Python`
 
-**B.** 9A2
+**B.** `9A2`
 
-**C.** ‘Python’
+**C.** `'Python'`
 
-**D.** B2@c3
+**D.** `B2@c3`
 
-**Câu 101.** Trong NNLT Python, kết quả của biến x sau khi thực hiện câu lệnh x=math.sqrt(20 // 5) là:
+**Câu 101.** Trong NNLT Python, kết quả của biến `x` sau khi thực hiện câu lệnh `x = math.sqrt(20 // 5)` là:
 
-**A.** 4
+**A.** `4`
 
-**B.** 0
+**B.** `0`
 
-**C.** 16
+**C.** `16`
 
-**D.** 2
+**D.** `2`
 
 **Câu 102.** Trong NNLT Python, những tên biến nào sau đây là hợp lệ?
 
-**A.** Delta, x1, tinh tong
+**A.** `Delta`, `x1`, `tinh tong`
 
-**B.** KETQUA, Tong2so, chuvi
+**B.** `KETQUA`, `Tong2so`, `chuvi`
 
-**C.** 2x, Chu_vi, DT2
+**C.** `2x`, `Chu_vi`, `DT2`
 
-**D.** x1, x*x, tong2so
+**D.** `x1`, `x*x`, `tong2so`
 
 **Câu 103.** Trong NNLT Python, phát biểu nào sau đây là sai?
 
@@ -1481,83 +1487,83 @@ ELSE: <câu lệnh 2>
 
 **Câu 105.** Trong NNLT Python, phép toán chia lấy phần dư là:
 
-**A.** div
+**A.** `div`
 
-**B.** mod
+**B.** `mod`
 
-**C.** //
+**C.** `//`
 
-**D.** %
+**D.** `%`
 
 **Câu 106.** Trong NNLT Python, phép toán chia lấy phần nguyên là:
 
-**A.** div
+**A.** `div`
 
-**B.** mod
+**B.** `mod`
 
-**C.** //
+**C.** `//`
 
-**D.** %
+**D.** `%`
 
 **Câu 107.** Trong NNLT Python, so sánh bằng và khác được viết như thế nào?
 
-**A.** == (bằng), = ! (khác)
+**A.** `==` (bằng), `!=` (khác)
 
-**B.** = (bằng), = ! (khác)
+**B.** `=` (bằng), `!=` (khác)
 
-**C.** == (bằng), <> (khác)
+**C.** `==` (bằng), `<>` (khác)
 
-**D.** = (bằng), <> (khác)
+**D.** `=` (bằng), `<>` (khác)
 
-**Câu 108.** Trong NNLT Python, để gán cho biến x giá trị là 1, câu lệnh nào sau đây đúng?
+**Câu 108.** Trong NNLT Python, để gán cho biến `x` giá trị là 1, câu lệnh nào sau đây đúng?
 
-**A.** 1=x
+**A.** `1 = x`
 
-**B.** x=1
+**B.** `x = 1`
 
-**C.** x:=1
+**C.** `x := 1`
 
-**D.** 1=:x
+**D.** `1 =: x`
 
-**Câu 109.** Trong NNLT Python, để nhập 1 số nguyên từ bàn phím cho biến n, ta chọn câu lệnh nào?
+**Câu 109.** Trong NNLT Python, để nhập 1 số nguyên từ bàn phím cho biến `n`, ta chọn câu lệnh nào?
 
-**A.** input(‘Nhập số nguyên n: ‘,n)
+**A.** `input('Nhập số nguyên n: ', n)`
 
-**B.** n=int(input(‘Nhập số nguyên n: ‘))
+**B.** `n = int(input('Nhập số nguyên n: '))`
 
-**C.** n=int(‘Nhập số nguyên n: ‘)
+**C.** `n = int('Nhập số nguyên n: ')`
 
-**D.** n:=int(input(‘Nhập số nguyên n: ‘))
+**D.** `n := int(input('Nhập số nguyên n: '))`
 
-**Câu 110.** Trong NNLT Python, để nhập 3 số nguyên cho 3 biến a, b, c từ bàn phím, câu lệnh nào sau đây đúng?
+**Câu 110.** Trong NNLT Python, để nhập 3 số nguyên cho 3 biến `a`, `b`, `c` từ bàn phím, câu lệnh nào sau đây đúng?
 
-**A.** input(‘Nhập 3 số nguyên: ‘,a,b,c)
+**A.** `input('Nhập 3 số nguyên: ', a, b, c)`
 
-**B.** a, b, c = map(int, input(‘Nhập 3 số nguyên: ‘).split())
+**B.** `a, b, c = map(int, input('Nhập 3 số nguyên: ').split())`
 
-**C.** a, b, c = map(int, input(‘Nhập 3 số nguyên: ‘))
+**C.** `a, b, c = map(int, input('Nhập 3 số nguyên: '))`
 
-**D.** map(int, input(‘Nhập 3 số nguyên: ‘).split(a,b,c))
+**D.** `map(int, input('Nhập 3 số nguyên: ').split(a, b, c))`
 
-**Câu 111.** Trong NNLT Python, để nhập số thực cho biến n, câu lệnh nào sau đây đúng?
+**Câu 111.** Trong NNLT Python, để nhập số thực cho biến `n`, câu lệnh nào sau đây đúng?
 
-**A.** n=input(‘Nhập 1 số thực:’)
+**A.** `n = input('Nhập 1 số thực:')`
 
-**B.** n=int(input(‘Nhập 1 số thực:’))
+**B.** `n = int(input('Nhập 1 số thực:')`
 
-**C.** n=float(input(‘Nhập 1 số thực:’))
+**C.** `n = float(input('Nhập 1 số thực:')`
 
-**D.** float(input(‘Nhập số thực n:’))
+**D.** `float(input('Nhập số thực n:'))`
 
 **Câu 112.** Trong NNLT Python, để đưa kết quả ra màn hình ta sử dụng thủ tục nào?
 
-**A.** printf(<Danh sách kết quả ra>)
+**A.** `printf(<Danh sách kết quả ra>)`
 
-**B.** print(<Danh sách kết quả ra>)
+**B.** `print(<Danh sách kết quả ra>)`
 
-**C.** Input(<Danh sách kết quả ra>)
+**C.** `Input(<Danh sách kết quả ra>)`
 
-**D.** Print(<Danh sách kết quả ra>)
+**D.** `Print(<Danh sách kết quả ra>)`
 
 **Câu 113.** Trong cửa sổ Shell của Python:
 
@@ -1571,43 +1577,43 @@ ELSE: <câu lệnh 2>
 
 **Câu 114.** Trong ngôn ngữ lập trình Python, phát biểu nào sau đây là đúng?
 
-**A.** Python là ngôn ngữ lập trình bậc cao duy nhất
+**A.** Python là ngôn ngữ lập trình bậc cao duy nhất.
 
 **B.** Chương trình máy tính là một dãy các câu lệnh mà máy tính không hiểu được.
 
 **C.** Python phân biệt chữ hoa với chữ thường.
 
-**D.** Dãy kí tự muốn in ra màn hình dùng câu lệnh print() và không cần dùng cặp nháy.
+**D.** Dãy kí tự muốn in ra màn hình dùng câu lệnh `print()` và không cần dùng cặp nháy.
 
-**Câu 115.** Trong ngôn ngữ lập trình Python, để in ra màn hình dòng chữ xin chao ta viết:
+**Câu 115.** Trong ngôn ngữ lập trình Python, để in ra màn hình dòng chữ "xin chao" ta viết:
 
-**A.** print()
+**A.** `print()`
 
-**B.** print(xin chao)
+**B.** `print(xin chao)`
 
-**C.** print(‘xin chao’)
+**C.** `print('xin chao')`
 
-**D.** print xin chao
+**D.** `print xin chao`
 
 **Câu 116.** Trong ngôn ngữ lập trình Python, để in ra màn hình ta sử dụng lệnh:
 
-**A.** write()
+**A.** `write()`
 
-**B.** Print()
+**B.** `Print()`
 
-**C.** cout<<
+**C.** `cout <<`
 
-**D.** read()
+**D.** `read()`
 
-**Câu 117.** Từ khóa nào được sử dụng để bắt đầu hàm?
+**Câu 117.** Từ khóa nào được sử dụng để bắt đầu khai báo hàm?
 
-**A.** Fun
+**A.** `fun`
 
-**B.** Define
+**B.** `define`
 
-**C.** Def
+**C.** `def`
 
-**D.** Function
+**D.** `function`
 
 **Câu 118.** Vòng lặp nào trả về kết quả dưới đây?
 
@@ -1641,7 +1647,7 @@ n = '5'
 
 **D.** operator
 
-**Câu 120.** Ý nghĩa của hàm init() trong Python là gì?
+**Câu 120.** Ý nghĩa của hàm `__init__()` trong Python là gì?
 
 **A.** Khởi tạo một lớp để sử dụng.
 
@@ -1690,13 +1696,13 @@ for i in range(5, 0, ****):
 f = open("test.txt")
 ```
 
-**A.** Mở file test.txt được phép đọc và ghi vào file.
+**A.** Mở file `test.txt` được phép đọc và ghi vào file.
 
-**B.** Mở file test.txt và chỉ được phép đọc file.
+**B.** Mở file `test.txt` và chỉ được phép đọc file.
 
-**C.** Mở file test.txt và được phép ghi đè vào file
+**C.** Mở file `test.txt` và được phép ghi đè vào file.
 
-**D.** Mở file test.txt và được phép ghi tiếp vào file.
+**D.** Mở file `test.txt` và được phép ghi tiếp vào file.
 
 **Câu 124.** Đoạn code dưới đây có ý nghĩa gì?
 
@@ -1706,7 +1712,7 @@ os.listdir()
 
 **A.** In ra thư mục làm việc hiện tại.
 
-**B.** In ra tất cả các thư mục (không phải tệp) bên trong thư mục đã cho
+**B.** In ra tất cả các thư mục (không phải tệp) bên trong thư mục đã cho.
 
 **C.** In ra tất cả các thư mục và tập tin bên trong thư mục đã cho.
 
@@ -1798,15 +1804,15 @@ colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
 **D.** yellow
 
-**Câu 130.** Đâu là kết quả của hàm complex() trong những đáp án dưới đây?
+**Câu 130.** Đâu là kết quả của hàm `complex()` trong những đáp án dưới đây?
 
-**A.** 0j
+**A.** `0j`
 
-**B.** 0+0j
+**B.** `0 + 0j`
 
-**C.** 0
+**C.** `0`
 
-**D.** Error
+**D.** `Error`
 
 **Câu 131.** Đâu là kết quả của đoạn code dưới đây?
 
@@ -1931,23 +1937,23 @@ mylist = [1, 5, 9, int('0')]
 print(sum(mylist))
 ```
 
-**A.** 16
+**A.** `16`
 
-**B.** 15
+**B.** `15`
 
-**C.** 63
+**C.** `63`
 
 **D.** Không có đáp án đúng.
 
 **Câu 138.** Đâu là quy tắc đúng khi đặt tên cho biến trong Python?
 
-**A.** Tên biến có thể bắt đầu bằng dấu gạch dưới _
+**A.** Tên biến có thể bắt đầu bằng dấu gạch dưới `_`
 
 **B.** Có thể sử dụng keyword làm tên biến
 
 **C.** Tên biến có thể bắt đầu bằng một chữ số
 
-**D.** Tên biến có thể có các ký hiệu như ! @ # $ %
+**D.** Tên biến có thể có các ký hiệu như `!` `@` `#` `$` `%`
 
 **Câu 139.** Đâu là yếu tố được gọi ra khi hàm được khai báo trong một class?
 
@@ -1971,13 +1977,13 @@ print(sum(mylist))
 
 **Câu 141.** Để khai báo thư viện ta sử dụng từ khóa nào?
 
-**A.** uses
+**A.** `uses`
 
-**B.** import
+**B.** `import`
 
-**C.** include
+**C.** `include`
 
-**D.** attach
+**D.** `attach`
 
 **Câu 142.** Đối tượng dưới đây thuộc kiểu dữ liệu nào?
 
@@ -1993,6 +1999,7 @@ L = [1, 23, 'hello', 1]
 
 **D.** Array
 
+
 ## 2. Lời giải câu hỏi trắc nghiệm Python
 
 Câu 1. Đáp án A: Đúng.
@@ -2005,7 +2012,7 @@ Câu 4. Đáp án A: `print('xin chao')`.
 
 Câu 5. Đáp án D: 6.
 
-Câu 6. Đáp án D: TypeError: can’t multiply sequence by non-int of type ‘str’.
+Câu 6. Đáp án D: `TypeError: can't multiply sequence by non-int of type 'str'`.
 
 Câu 7. Đáp án C: Trong Python, phân biệt chữ hoa và chữ thường.
 
@@ -2027,116 +2034,116 @@ Câu 15. Đáp án D: list(reversed(l)).
 
 Câu 16. Đáp án B: (a//b, a%b).
 
-Câu 17. Đáp án A: ord().
+Câu 17. Đáp án A: `ord()`.
 
-Câu 18. Đáp án D: max().
+Câu 18. Đáp án D: `max()`.
 
-Câu 19. Đáp án C: TypeError.
+Câu 19. Đáp án C: `TypeError`.
 
-Câu 20. Đáp án B: sqrt().
+Câu 20. Đáp án B: `sqrt()`.
 
-Câu 21. C. all()
+Câu 21. Đáp án C: `all()`
 
-Câu 22. D. (x*y)z
+Câu 22. Đáp án D: (x*y)z
 
-Câu 23. A. Module
+Câu 23. Đáp án A: Module
 
-Câu 24. A. print(‘dien tich hinh vuong la:’,a*a)
+Câu 24. Đáp án A: print('dien tich hinh vuong la:',a*a)
 
-Câu 25. A. printHello() là một hàm và a là một biến. Cả hai đều không phải đối tượng.
+Câu 25. Đáp án A: printHello() là một hàm và a là một biến. Cả hai đều không phải đối tượng.
 
-Câu 26. D. Tất cả các đáp án trên.
+Câu 26. Đáp án D: Tất cả các đáp án trên.
 
-Câu 27. D. Tất cả các đáp án trên.
+Câu 27. Đáp án D: Tất cả các đáp án trên.
 
-Câu 28. D. Chương trình chạy bình thường và kết quả được in ra là 45.
+Câu 28. Đáp án D: Chương trình chạy bình thường và kết quả được in ra là 45.
 
-Câu 29. B. Chương trình chạy bình thường và kết quả được in ra là 45.
+Câu 29. Đáp án B: Chương trình chạy bình thường và kết quả được in ra là 45.
 
-Câu 30. D. Tất cả các đáp án trên đều đúng.
+Câu 30. Đáp án D: Tất cả các đáp án trên đều đúng.
 
-Câu 31: Đáp án D là không đúng vì Python không phải là ngôn ngữ biên dịch và có tốc độ thực hiện khá nhanh.
+Câu 31. Đáp án D: không đúng vì Python không phải là ngôn ngữ biên dịch và có tốc độ thực hiện khá nhanh.
 
-Câu 32: Đáp án D là sai vì Python là ngôn ngữ lập trình cao cấp và không phải là ngôn ngữ máy tính.
+Câu 32. Đáp án D: sai vì Python là ngôn ngữ lập trình cao cấp và không phải là ngôn ngữ máy tính.
 
-Câu 33: Đáp án D là đúng vì Python là ngôn ngữ thông dịch, hướng đối tượng và mã nguồn mở.
+Câu 33. Đáp án D: đúng vì Python là ngôn ngữ thông dịch, hướng đối tượng và mã nguồn mở.
 
-Câu 34: Đáp án A là đúng vì lớp chỉ là một kế hoạch chi tiết cho đối tượng và có thể tạo nhiều đối tượng từ lớp đó.
+Câu 34. Đáp án A: đúng vì lớp chỉ là một kế hoạch chi tiết cho đối tượng và có thể tạo nhiều đối tượng từ lớp đó.
 
-Câu 35: Đáp án A là đúng vì Python có khả năng đa hình, tức là một toán tử có thể có hoạt động khác nhau tùy thuộc vào toán hạng được sử dụng.
+Câu 35. Đáp án A: đúng vì Python có khả năng đa hình, tức là một toán tử có thể có hoạt động khác nhau tùy thuộc vào toán hạng được sử dụng.
 
-Câu 36: Đáp án D là đúng vì Python là ngôn ngữ lập trình cấp cao, thông dịch, hướng đối tượng và mã nguồn mở.
+Câu 36. Đáp án D: đúng vì Python là ngôn ngữ lập trình cấp cao, thông dịch, hướng đối tượng và mã nguồn mở.
 
-Câu 37: Đáp án A là đúng vì ngoại lệ là lỗi phát sinh khi đang thực thi chương trình, không phải để loại bỏ một khối code khỏi chương trình.
+Câu 37. Đáp án A: đúng vì ngoại lệ là lỗi phát sinh khi đang thực thi chương trình, không phải để loại bỏ một khối code khỏi chương trình.
 
-Câu 38: Đáp án D là đúng vì hex(15) trả về chuỗi “0xf”, đại diện cho số 15 ở hệ cơ số 16.
+Câu 38. Đáp án D: đúng vì `hex(15)` trả về chuỗi "0xf", đại diện cho số 15 ở hệ cơ số 16.
 
-Câu 39: Đáp án B là đúng vì chr(97) trả về ký tự ‘a’, còn chr(’97’) sẽ bị lỗi vì đối số truyền vào phải là một số nguyên, không phải là một chuỗi.
+Câu 39. Đáp án B: đúng vì `chr(97)` trả về ký tự 'a', còn `chr('97')` sẽ bị lỗi vì đối số truyền vào phải là một số nguyên, không phải là một chuỗi.
 
-Câu 40: Đáp án C là đúng vì min(max(False,-3,-4), 2,7) tương đương với min(max(-3,-4), 2,7), và giá trị lớn nhất trong -3 và -4 là -3.
+Câu 40. Đáp án C: đúng vì min(max(False,-3,-4), 2,7) tương đương với min(max(-3,-4), 2,7), và giá trị lớn nhất trong -3 và -4 là -3.
 
-Câu 41. Đáp án là C. 4.57
+Câu 41. Đáp án C: 4.57
 
-Giải thích: Hàm round() được sử dụng để làm tròn số tới một số lượng chữ số nhất định. Trong trường hợp này, số 4.5676 sẽ được làm tròn tới 2 chữ số thập phân, cho kết quả là 4.57.
+Giải thích: Hàm `round()` được sử dụng để làm tròn số tới một số lượng chữ số nhất định. Trong trường hợp này, số 4.5676 sẽ được làm tròn tới 2 chữ số thập phân, cho kết quả là 4.57.
 
-Câu 42. Đáp án là D. 4.6
+Câu 42. Đáp án D: 4.6
 
-Giải thích: Nếu không chỉ định số lượng chữ số thập phân, hàm round() sẽ làm tròn số đó thành số nguyên gần nhất. Trong trường hợp này, số 4.576 sẽ được làm tròn thành số nguyên gần nhất, là 5.
+Giải thích: Nếu không chỉ định số lượng chữ số thập phân, hàm `round()` sẽ làm tròn số đó thành số nguyên gần nhất. Trong trường hợp này, số 4.576 sẽ được làm tròn thành số nguyên gần nhất, là 5.
 
-Câu 43. Đáp án là B. 4 6
+Câu 43. Đáp án B: 4 6
 
 Giải thích: Chương trình tạo ra hai đối tượng Point với các giá trị x và y tương ứng. Khi trừ p2 từ p1, phương thức `__sub__()` được gọi và trả về một đối tượng Point mới với giá trị x và y là tổng của các giá trị x và y của hai đối tượng ban đầu. Kết quả in ra là giá trị x và y của đối tượng Point mới này.
 
-Câu 44. Đáp án là C. [‘a’, ‘aa’, ‘aaa’, ‘b’, ‘bb’]
+Câu 44. Đáp án C: ['a', 'aa', 'aaa', 'b', 'bb']
 
-Giải thích: Slicing mảng với chỉ số âm có nghĩa là bắt đầu từ phần tử đầu tiên và lấy tất cả các phần tử trừ phần tử cuối cùng. Trong trường hợp này, mảng được lấy từ phần tử đầu tiên đến phần tử thứ 5, bỏ qua phần tử cuối cùng “bbb”.
+Giải thích: Slicing mảng với chỉ số âm có nghĩa là bắt đầu từ phần tử đầu tiên và lấy tất cả các phần tử trừ phần tử cuối cùng. Trong trường hợp này, mảng được lấy từ phần tử đầu tiên đến phần tử thứ 5, bỏ qua phần tử cuối cùng "bbb".
 
-Câu 45. Đáp án là A. m, y,, n, a, m, e,, i, s,, x,
+Câu 45. Đáp án A: m, y,, n, a, m, e,, i, s,, x,
 
-Giải thích: Vòng lặp for lặp lại từng ký tự trong chuỗi “my name is x” và in ra ký tự đó, kết thúc bằng dấu phẩy và khoảng trắng. Do đó, kết quả in ra là “m, y,, n, a, m, e,, i, s,, x,”.
+Giải thích: Vòng lặp for lặp lại từng ký tự trong chuỗi "my name is x" và in ra ký tự đó, kết thúc bằng dấu phẩy và khoảng trắng. Do đó, kết quả in ra là "m, y,, n, a, m, e,, i, s,, x,".
 
-Câu 46. Đáp án là A. 2
+Câu 46. Đáp án A: 2
 
-Giải thích: Hàm isinstance() được sử dụng để kiểm tra xem một đối tượng có phải là một loại dữ liệu cụ thể hay không. Trong trường hợp này, x và z là kiểu số nguyên, trong khi y là một chuỗi. Vì vậy, chỉ có x và z được cộng vào biến sum, cho tổng là 2.
+Giải thích: Hàm `isinstance()` được sử dụng để kiểm tra xem một đối tượng có phải là một loại dữ liệu cụ thể hay không. Trong trường hợp này, x và z là kiểu số nguyên, trong khi y là một chuỗi. Vì vậy, chỉ có x và z được cộng vào biến sum, cho tổng là 2.
 
-Câu 47. Đáp án là A. 4
+Câu 47. Đáp án A: 4
 
-Giải thích: Hàm len() được sử dụng để đếm số lượng phần tử trong một danh sách. Trong trường hợp này, danh sách có 4 phần tử: “hello”, 2, 4 và 6.
+Giải thích: Hàm `len()` được sử dụng để đếm số lượng phần tử trong một danh sách. Trong trường hợp này, danh sách có 4 phần tử: "hello", 2, 4 và 6.
 
-Câu 48. Đáp án là B. [(1, 2), (2, 3)]
+Câu 48. Đáp án B: [(1, 2), (2, 3)]
 
-Giải thích: Hàm enumerate() được sử dụng để đánh số các phần tử trong một danh sách. Trong trường hợp này, danh sách [2, 3] được liệt kê và được đánh số bắt đầu từ 1. Do đó, kết quả của hàm là [(1, 2), (2, 3)].
+Giải thích: Hàm `enumerate()` được sử dụng để đánh số các phần tử trong một danh sách. Trong trường hợp này, danh sách [2, 3] được liệt kê và được đánh số bắt đầu từ 1. Do đó, kết quả của hàm là [(1, 2), (2, 3)].
 
-Câu 49. Đáp án là B. Error 65
+Câu 49. Đáp án B: Error 65
 
-Giải thích: Lỗi xảy ra vì hàm ord() chỉ có thể áp dụng cho ký tự duy nhất, chứ không thể áp dụng cho một số nguyên như 65. Đối với ký tự ‘A’, hàm ord() sẽ trả về mã Unicode của ký tự đó, là 65.
+Giải thích: Lỗi xảy ra vì hàm `ord()` chỉ có thể áp dụng cho ký tự duy nhất, chứ không thể áp dụng cho một số nguyên như 65. Đối với ký tự 'A', hàm `ord()` sẽ trả về mã Unicode của ký tự đó, là 65.
 
-Câu 50. Đáp án là D. 6
+Câu 50. Đáp án D: 6
 
-Giải thích: Hàm eval() được sử dụng để đánh giá một biểu thức được truyền dưới dạng một chuỗi. Trong trường hợp này, chuỗi ‘x^2’ được đánh giá với giá trị x là 3. Khi tính toán 3 ^ 2, kết quả là 9. Tuy nhiên, ký hiệu ^ thực hiện phép toán XOR trên hai số nguyên. Vì vậy, thực hiện phép toán 3 XOR 2 sẽ cho kết quả là 1. Vì vậy, câu trả lời đúng là 6 (9 XOR 3).
+Giải thích: Hàm `eval()` được sử dụng để đánh giá một biểu thức được truyền dưới dạng một chuỗi. Trong trường hợp này, chuỗi 'x^2' được đánh giá với giá trị x là 3. Khi tính toán 3 ^ 2, kết quả là 9. Tuy nhiên, ký hiệu ^ thực hiện phép toán XOR trên hai số nguyên. Vì vậy, thực hiện phép toán 3 XOR 2 sẽ cho kết quả là 1. Vì vậy, câu trả lời đúng là 6 (9 XOR 3).
 
-Câu 51. Đáp án là C. False
+Câu 51. Đáp án C: False
 
-Giải thích: Hàm all() trả về True nếu tất cả các phần tử trong iterable (trong trường hợp này là list [2,4,0,6]) đều đúng (khác 0 hoặc False). Trong trường hợp này, phần tử thứ 3 trong list là 0, nên all() trả về False.
+Giải thích: Hàm `all()` trả về True nếu tất cả các phần tử trong iterable (trong trường hợp này là list [2,4,0,6]) đều đúng (khác 0 hoặc False). Trong trường hợp này, phần tử thứ 3 trong list là 0, nên `all()` trả về False.
 
-Câu 52. Đáp án là D. 1+2j
+Câu 52. Đáp án D: 1+2j
 
-Giải thích: Hàm complex() được sử dụng để tạo ra một số phức với phần thực và phần ảo được cung cấp. Trong trường hợp này, phần thực là 1 và phần ảo là 2j, vì vậy đầu ra của hàm sẽ là 1+2j.
+Giải thích: Hàm `complex()` được sử dụng để tạo ra một số phức với phần thực và phần ảo được cung cấp. Trong trường hợp này, phần thực là 1 và phần ảo là 2j, vì vậy đầu ra của hàm sẽ là 1+2j.
 
-Câu 53. Đáp án là A. -inf inf
+Câu 53. Đáp án A: -inf inf
 
-Giải thích: Khi đưa chuỗi ‘-infinity’ hoặc ‘inf’ vào hàm float(), nó sẽ trả về giá trị tương ứng với số vô cực âm hoặc dương. Vì vậy, kết quả của hai lệnh trên sẽ là -inf và inf.
+Giải thích: Khi đưa chuỗi '-infinity' hoặc 'inf' vào hàm `float()`, nó sẽ trả về giá trị tương ứng với số vô cực âm hoặc dương. Vì vậy, kết quả của hai lệnh trên sẽ là -inf và inf.
 
-Câu 54. Đáp án là C. 0o7 Error
+Câu 54. Đáp án C: 0o7 Error
 
-Giải thích: Hàm oct() được sử dụng để chuyển đổi một số nguyên sang hệ bát phân (octal). Trong trường hợp này, oct(7) sẽ trả về ‘0o7’. Tuy nhiên, oct(‘7’) sẽ gây ra lỗi vì tham số đầu vào phải là một số nguyên.
+Giải thích: Hàm `oct()` được sử dụng để chuyển đổi một số nguyên sang hệ bát phân (octal). Trong trường hợp này, oct(7) sẽ trả về '0o7'. Tuy nhiên, oct('7') sẽ gây ra lỗi vì tham số đầu vào phải là một số nguyên.
 
-Câu 55. Đáp án là C. [2, 3, 4]
+Câu 55. Đáp án C: [2, 3, 4]
 
-Giải thích: Biến numbers là một list chứa các số 2, 3 và 4. Hàm print() được sử dụng để hiển thị giá trị của biến numbers, và kết quả được in ra là [2, 3, 4].
+Giải thích: Biến numbers là một list chứa các số 2, 3 và 4. Hàm `print()` được sử dụng để hiển thị giá trị của biến numbers, và kết quả được in ra là [2, 3, 4].
 
-Câu 56. Đáp án là B. 10 10 20
+Câu 56. Đáp án B: 10 10 20
 
-Giải thích: Hàm f() là một generator function (hàm sinh ra generator), nó sử dụng từ khóa yield để trả về một giá trị và tạm dừng thực thi cho đến khi generator được gọi tiếp theo. Trong đoạn code này, hàm f() được gọi với tham số là 10, và sau đó gọi next(a) sẽ trả về giá trị 10. Lời gọi next(a) tiếp theo cũng trả về giá trị 10 vì hàm f() tạm dừng thực thi ở câu lệnh yield và chưa được gọi tiếp theo. Cuối cùng, lời gọi a.send(20) sẽ tiếp tục thực thi hàm f() và trả về giá trị 20. Vì vậy, kết quả in ra sẽ là 10 10 20.
+Giải thích: Hàm f() là một generator function (hàm sinh ra generator), nó sử dụng từ khóa `yield` để trả về một giá trị và tạm dừng thực thi cho đến khi generator được gọi tiếp theo. Trong đoạn code này, hàm f() được gọi với tham số là 10, và sau đó gọi next(a) sẽ trả về giá trị 10. Lời gọi next(a) tiếp theo cũng trả về giá trị 10 vì hàm f() tạm dừng thực thi ở câu lệnh `yield` và chưa được gọi tiếp theo. Cuối cùng, lời gọi a.send(20) sẽ tiếp tục thực thi hàm f() và trả về giá trị 20. Vì vậy, kết quả in ra sẽ là 10 10 20.
 
 (đang cập nhật)
