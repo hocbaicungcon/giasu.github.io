@@ -159,6 +159,24 @@ def normalize_markdown_formatting(text):
     text = re.sub(r'(\*\*(?!\s)[^\*\r\n]+?[:.?!](?<!\s)\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9(\[])', r'\1 \2', text)
     text = re.sub(r'((?<!\*)\*(?!\s)[^\*\r\n]+?(?<!\s)\*(?!\*))([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9])', r'\1 \2', text)
 
+    # 5. Remove redundant download button artifacts: [Label](url)[Download](url)
+    text = re.sub(r'(\[[^\]\r\n]+\]\(([^)\r\n]+)\))[ \t]*\[(?:Download|Tải về)\]\(\2\)', r'\1', text, flags=re.I)
+
+    # 6. Ensure standalone download link lines are formatted as bullet list items
+    def format_doc_bullet(m):
+        indent, label, url = m.groups()
+        cleaned_label = re.sub(r'[-_.\s]*giasu\.ai\.vn\b|[-_.\s]*o2\.edu\.vn\b', '', label, flags=re.I).strip()
+        cleaned_label = cleaned_label if cleaned_label else label
+        if cleaned_label.startswith('http'):
+            cleaned_label = 'Link tải Google Drive'
+        return f"{indent}- [{cleaned_label}]({url})"
+
+    doc_pattern = r'^([ \t]*)\[([^\]\r\n]+)\]\(((?:/assets/docs/|https?://drive\.google\.com/)[^)\r\n]+)\)[ \t]*$'
+    text = re.sub(doc_pattern, format_doc_bullet, text, flags=re.MULTILINE)
+
+    # 7. Tighten consecutive download list items
+    text = re.sub(r'(^[ \t]*-[ \t]+\[[^\]\r\n]+\]\(((?:/assets/docs/|https?://drive\.google\.com/)[^)\r\n]+)\))[ \t]*\n\n(?=[ \t]*-[ \t]+\[[^\]\r\n]+\]\(((?:/assets/docs/|https?://drive\.google\.com/)[^)\r\n]+)\))', r'\1\n', text, flags=re.MULTILINE)
+
     return text
 
 def convert_html_to_markdown(raw_html, image_map, doc_map=None, slug=""):
@@ -292,6 +310,11 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None, slug=""):
 
     text = re.sub(r'<ul[^>]*>([\s\S]*?)</ul>', lambda m: parse_list(m, False), text)
     text = re.sub(r'<ol[^>]*>([\s\S]*?)</ol>', lambda m: parse_list(m, True), text)
+
+    # Step 5.5: File blocks (wp-block-file)
+    text = re.sub(r'<a\s+[^>]*class=[\"\'][^\"\']*wp-block-file__button[^\"\']*[\"\'][^>]*>[\s\S]*?</a>', '', text)
+    text = re.sub(r'<a\s+[^>]*\bdownload\b[^>]*>(?:\s*(?:Download|Tải về)\s*)</a>', '', text, flags=re.I)
+    text = re.sub(r'<div\s+[^>]*class=[\"\'][^\"\']*wp-block-file[^\"\']*[\"\'][^>]*>([\s\S]*?)</div>', r'\n\n- \1\n\n', text)
 
     # Step 6: Links
     def replace_a(match):

@@ -417,9 +417,9 @@ Tỉ lệ số mol giữa BaCl2 và KCl trong X tương ứng là …………�
 
 O2 Education gửi các thầy cô link download đề thi
 
-[HOAN_HSG10_132](/assets/docs/HOAN_HSG10_132.doc)[](/assets/docs/HOAN_HSG10_132.doc)
-[HOAN_HSG10_132-1](/assets/docs/HOAN_HSG10_132-1.doc)[Download](/assets/docs/HOAN_HSG10_132-1.doc)
-[Hoan_Hoa-10_Dap-an-4-ma-de](/assets/docs/Hoan_Hoa-10_Dap-an-4-ma-de.xlsx)[Download](/assets/docs/Hoan_Hoa-10_Dap-an-4-ma-de.xlsx)
+- [HOAN_HSG10_132](/assets/docs/HOAN_HSG10_132.doc)[](/assets/docs/HOAN_HSG10_132.doc)
+- [HOAN_HSG10_132-1](/assets/docs/HOAN_HSG10_132-1.doc)
+- [Hoan_Hoa-10_Dap-an-4-ma-de](/assets/docs/Hoan_Hoa-10_Dap-an-4-ma-de.xlsx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

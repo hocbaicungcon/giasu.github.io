@@ -258,7 +258,7 @@ Chương trình giáo dục trung học cơ sở giúp học sinh:
 
 Các thầy cô có thể download file về máy tính tại đây:
 
-[Đáp án 20 câu trắc nghiệm Module 1 tìm hiểu chương trình giáo dục THPT 2018 môn hóa học](/assets/docs/Dap-an-20-cau-trac-nghiem-Module-1-tim-hieu-chuong-trinh-giao-duc-THPT-2018-mon-hoa-hoc.docx)
+- [Đáp án 20 câu trắc nghiệm Module 1 tìm hiểu chương trình giáo dục THPT 2018 môn hóa học](/assets/docs/Dap-an-20-cau-trac-nghiem-Module-1-tim-hieu-chuong-trinh-giao-duc-THPT-2018-mon-hoa-hoc.docx)
 
  
 

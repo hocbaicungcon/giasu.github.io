@@ -83,7 +83,7 @@ Dấu hiệu nhận biết phản ứng tạo muối NH4NO3 : *Hỗn hợp chấ
 
 O2 Education gửi các thầy cô link download file pdf đầy đủ
 
-[PP18 – PHẢN ỨNG TẠO MUỐI AMONI](/assets/docs/PP18-PHAN-UNG-TAO-MUOI-AMONI.pdf)
+- [PP18 – PHẢN ỨNG TẠO MUỐI AMONI](/assets/docs/PP18-PHAN-UNG-TAO-MUOI-AMONI.pdf)
 
  
 

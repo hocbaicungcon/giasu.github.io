@@ -163,7 +163,7 @@ Andehit, 2 chức, 3 cacbon chỉ có duy nhất 1 công thức phù hợp
 
 O2 Education gửi các thầy cô link download đề thi
 
-[HOA 11-NGUYEN HIEN-DEDA](/assets/docs/HOA-11-NGUYEN-HIEN-DEDA.docx)
+- [HOA 11-NGUYEN HIEN-DEDA](/assets/docs/HOA-11-NGUYEN-HIEN-DEDA.docx)
 
  
 

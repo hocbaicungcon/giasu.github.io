@@ -16,7 +16,7 @@ Mời các thầy cô truy cập vào link sau để xem và download tài liệ
 
 ## 1. Giáo án và PPCT
 
-[Tổng hợp SGK, SBT, CDHT, SGV Hóa 10 cả 3 bộ sách](https://drive.google.com/drive/folders/1lgG6sJ33NYlWElMZGkxU56hSEsJOi_GO?usp=sharing)
+- [Tổng hợp SGK, SBT, CDHT, SGV Hóa 10 cả 3 bộ sách](https://drive.google.com/drive/folders/1lgG6sJ33NYlWElMZGkxU56hSEsJOi_GO?usp=sharing)
 
 [Tổng hợp giáo án và các chuyên đề học tập hóa học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 

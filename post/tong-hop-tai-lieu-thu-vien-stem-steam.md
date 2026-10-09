@@ -270,7 +270,7 @@ Các thầy cô download tại đây: [Toán 7 8 9-20210830T023759Z-001](https:/
 
 ## 25. Giáo án công nghệ 6 chân trời sang tạo
 
-[giao an cn6 cv 5512](/assets/docs/giao-an-cn6-cv-5512.docx)
+- [giao an cn6 cv 5512](/assets/docs/giao-an-cn6-cv-5512.docx)
 
 ## 24. KHBD lớp 6 theo SGK mới
 
@@ -290,7 +290,7 @@ Các thầy cô download tại đây: [giao-an-HdTNHN-6-ket-noi-tri-thuc-đã ch
 
 ## 20. Nội quy lớp học trực tuyến
 
-[noi quy lớp học trực tuyến](/assets/docs/noi-quy-lop-hoc-truc-tuyen.pptx)
+- [noi quy lớp học trực tuyến](/assets/docs/noi-quy-lop-hoc-truc-tuyen.pptx)
 
 ## 19. Giáo án điện tử power point môn toán lớp 10 và lớp 11
 

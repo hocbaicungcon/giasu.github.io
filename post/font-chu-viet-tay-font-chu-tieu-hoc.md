@@ -26,15 +26,15 @@ Bộ font UTM là font chữ tiếng Việt viết tắt của Unicode Thiên 
 ![Font chữ viết tay UTM, font chữ tiểu học](assets/images/font-chu-viet-tay-font-chu-tieu-hoc-image-48.jpeg)
 
 Tải Bộ font UTM để hỗ trợ gõ tiếng Việt dễ dàng
-[Link tải font chữ viết tay UTM](/assets/docs/font-utm-giasu.ai.vn.zip)[Download](/assets/docs/font-utm-giasu.ai.vn.zip)
+- [Link tải font chữ viết tay UTM](/assets/docs/font-utm-giasu.ai.vn.zip)
 
 **Font chữ tiểu học** là font chữ tiểu học có ô ly nằm trong bộ chữ tiếng việt với các chữ viết tiểu học chuẩn của bộ giáo dục và đào tạo, đem lại một Font chữ chuẩn sử dụng cho các chương trình soạn thảo, giáo dục của tiểu học với trọn bộ tất cả các font chữ dành cho học sinh tập viết, đây là công cụ được sử dụng nhiều nhất cho các giáo viên bậc tiểu học dùng để giảng dạy.
 
-[Link tải font tiểu học-o2.edu.vn](/assets/docs/font-tieu-hoc-giasu.ai.vn.zip)[Download](/assets/docs/font-tieu-hoc-giasu.ai.vn.zip)
+- [Link tải font tiểu học](/assets/docs/font-tieu-hoc-giasu.ai.vn.zip)
 
 Ngoài ra còn có bộ phông chữ viết tay việt hóa đẹp, mời bạn tải tại đây:
 
-[font-chu-viet-tay-dep-o2.edu.vn](/assets/docs/font-chu-viet-tay-dep-giasu.ai.vn.zip)[Download](/assets/docs/font-chu-viet-tay-dep-giasu.ai.vn.zip)
+- [font-chu-viet-tay-dep](/assets/docs/font-chu-viet-tay-dep-giasu.ai.vn.zip)
 
 ## Hướng dẫn cài đặt font chữ viết tay Việt hóa
 

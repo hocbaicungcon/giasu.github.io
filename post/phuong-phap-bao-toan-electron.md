@@ -175,7 +175,7 @@ Cu + H+ + Cu2+ + NO + H2O
 
 O2 Education gửi các thầy cô link download file pdf đầy đủ
 
-[PP5 – BẢO TOÀN ELECTRON](/assets/docs/PP5-BAO-TOAN-ELECTRON.pdf)
+- [PP5 – BẢO TOÀN ELECTRON](/assets/docs/PP5-BAO-TOAN-ELECTRON.pdf)
 
  
 

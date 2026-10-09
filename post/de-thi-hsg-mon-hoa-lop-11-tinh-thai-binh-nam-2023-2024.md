@@ -409,7 +409,7 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 
 O2 Education gửi các thầy cô link download đề thi
 
-[HSG_HOA11_THAIBINH_2023-2024-giasu.ai.vn](/assets/docs/HSG_HOA11_THAIBINH_2023-2024-giasu.ai.vn.docx)[Download](/assets/docs/HSG_HOA11_THAIBINH_2023-2024-giasu.ai.vn.docx)
+- [HSG_HOA11_THAIBINH_2023-2024](/assets/docs/HSG_HOA11_THAIBINH_2023-2024-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

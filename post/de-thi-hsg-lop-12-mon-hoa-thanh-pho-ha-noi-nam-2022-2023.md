@@ -101,8 +101,8 @@ Xác định công thức của X.
 
 O2 Education gửi các thầy cô link download đề thi
 
-[HN-2022De-chinh-thuc-5](/assets/docs/HN-2022De-chinh-thuc-5.docx)[](/assets/docs/HN-2022De-chinh-thuc-5.docx)
-[HN-2022HDC_De-chinh-thuc](/assets/docs/HN-2022HDC_De-chinh-thuc.docx)[Download](/assets/docs/HN-2022HDC_De-chinh-thuc.docx)
+- [HN-2022De-chinh-thuc-5](/assets/docs/HN-2022De-chinh-thuc-5.docx)[](/assets/docs/HN-2022De-chinh-thuc-5.docx)
+- [HN-2022HDC_De-chinh-thuc](/assets/docs/HN-2022HDC_De-chinh-thuc.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -390,7 +390,7 @@ hỗn hợp Y. Biết tỉ khối của X so với Y l à 0,8. Tính hiệu su�
 
 Mời các thầy cô và các em download file word tại đây
 
-[pp2-bao toan khoi luong](/assets/docs/pp2-bao-toan-khoi-luong.doc)
+- [pp2-bao toan khoi luong](/assets/docs/pp2-bao-toan-khoi-luong.doc)
 
  
 

@@ -73,7 +73,7 @@ A. 2,9 B. 2,1 C. 1,0 D. 1,7
 
 O2 Education gửi các thầy cô link download file pdf đầy đủ
 
-[PP22 – QUY ĐỔI ESTE](/assets/docs/PP22-QUY-DOI-ESTE.pdf)
+- [PP22 – QUY ĐỔI ESTE](/assets/docs/PP22-QUY-DOI-ESTE.pdf)
 
  
 

@@ -453,7 +453,7 @@ Các nhóm làm tập san tuyên truyền về phòng chống cháy nổ gồm c
 
 O2 Education gửi các thầy cô link download giáo án
 
-[Tiet_89_-Phong-chong-chay-no](/assets/docs/Tiet_89_-Phong-chong-chay-no.docx)[Download](/assets/docs/Tiet_89_-Phong-chong-chay-no.docx)
+- [Tiet_89_-Phong-chong-chay-no](/assets/docs/Tiet_89_-Phong-chong-chay-no.docx)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

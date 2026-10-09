@@ -64,7 +64,7 @@ CỰC TRỊ CỦA HÀM SỐ:
 
 **VI. HỆ THỐNG BÀI KIỂM TRA CUỐI BÀI.**
 
-[chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao](https://drive.google.com/file/d/1m83qaSget4i9F5Lj3iBNwh63F7x7vFnc/view?usp=sharing)[Download](https://drive.google.com/file/d/1m83qaSget4i9F5Lj3iBNwh63F7x7vFnc/view?usp=sharing)
+- [chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao](https://drive.google.com/file/d/1m83qaSget4i9F5Lj3iBNwh63F7x7vFnc/view?usp=sharing)
 
 ## Chuyên đề giá trị lớn nhất và giá trị nhỏ nhất của hàm số từ cơ bản đến nâng cao
 
@@ -92,7 +92,7 @@ CỰC TRỊ CỦA HÀM SỐ:
 + Dạng 2. Giá trị lớn nhất – giá trị nhỏ nhất hàm ẩn, hàm hợp.
 + Dạng 3. Ứng dụng GTLN – GTNN giải bài toán thực tế.
 
-[chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao.pdf)[Download](/assets/docs/chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao.pdf)
+- [chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao.pdf)
 
 ## Chuyên đề đường tiệm cận của đồ thị hàm số từ cơ bản đến nâng cao
 
@@ -113,7 +113,7 @@ CỰC TRỊ CỦA HÀM SỐ:
 
 **V. HỆ THỐNG BÀI TẬP TRẢ LỜI NGẮN.**
 
-[chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf)[Download](/assets/docs/chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf)
+- [chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf)
 
 ## Chuyên đề khảo sát sự biến thiên và vẽ đồ thị hàm số từ cơ bản đến nâng cao
 
@@ -139,4 +139,4 @@ CỰC TRỊ CỦA HÀM SỐ:
 + Dạng 2. Tương giao hàm hợp, hàm ẩn.
 + Dạng 3. Biện luận tương giao hàm hợp, hàm ẩn chứa tham số.
 
-[chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao](https://drive.google.com/file/d/1l-tgMDUBvbRuU00jovhTIC5uG7G0QAvy/view?usp=sharing)[Download](https://drive.google.com/file/d/1l-tgMDUBvbRuU00jovhTIC5uG7G0QAvy/view?usp=sharing)
+- [chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao](https://drive.google.com/file/d/1l-tgMDUBvbRuU00jovhTIC5uG7G0QAvy/view?usp=sharing)

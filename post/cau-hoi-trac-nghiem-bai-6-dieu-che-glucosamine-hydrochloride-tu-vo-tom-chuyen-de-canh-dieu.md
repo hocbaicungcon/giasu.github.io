@@ -225,7 +225,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 O2 Education gửi các thầy cô link download
 
-[87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_](/assets/docs/87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_.docx)[Download](/assets/docs/87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_.docx)
+- [87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_](/assets/docs/87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_.docx)
 
 Mời các thầy cô và các em xem thêm
 

@@ -36,11 +36,11 @@ Tổng hợp tài liệu Xác suất có điều kiện file PDF trong chương 
 4. Hệ thống bài tập trắc nghiệm đúng / sai.
 5. Hệ thống bài tập trắc nghiệm trả lời ngắn.
 
-[chuyen-de-xac-suat-co-dieu-kien-toan-12-chuong-trinh-moi-phan-nhat-linh](https://drive.google.com/file/d/1ian-61VAlcj4cS7vjvB_1IeS3CiDyweI/view?usp=sharing)[Download](https://drive.google.com/file/d/1ian-61VAlcj4cS7vjvB_1IeS3CiDyweI/view?usp=sharing)
-[chuyen-de-xac-suat-co-dieu-kien-toan-12](/assets/docs/chuyen-de-xac-suat-co-dieu-kien-toan-12.pdf)[Download](/assets/docs/chuyen-de-xac-suat-co-dieu-kien-toan-12.pdf)
-[chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao.pdf)[Download](/assets/docs/chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao.pdf)
-[toan-tap-xac-suat-co-dieu-kien-mon-toan-12-thpt](/assets/docs/toan-tap-xac-suat-co-dieu-kien-mon-toan-12-thpt.pdf)[Download](/assets/docs/toan-tap-xac-suat-co-dieu-kien-mon-toan-12-thpt.pdf)
-[xac suat dieu kien](/assets/docs/xac-suat-dieu-kien.pdf)[Download](/assets/docs/xac-suat-dieu-kien.pdf)
+- [chuyen-de-xac-suat-co-dieu-kien-toan-12-chuong-trinh-moi-phan-nhat-linh](https://drive.google.com/file/d/1ian-61VAlcj4cS7vjvB_1IeS3CiDyweI/view?usp=sharing)
+- [chuyen-de-xac-suat-co-dieu-kien-toan-12](/assets/docs/chuyen-de-xac-suat-co-dieu-kien-toan-12.pdf)
+- [chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao.pdf)
+- [toan-tap-xac-suat-co-dieu-kien-mon-toan-12-thpt](/assets/docs/toan-tap-xac-suat-co-dieu-kien-mon-toan-12-thpt.pdf)
+- [xac suat dieu kien](/assets/docs/xac-suat-dieu-kien.pdf)
 
 ←[Hướng dẫn giải đề Toán THPT 2025](/bai-viet/huong-dan-giai-de-toan-thpt-2025.html)
 [Đề tiếng Anh THPT 2025 file WORD](/bai-viet/de-tieng-anh-thpt-2025-file-word.html)→

@@ -150,8 +150,8 @@ trên với xăng thông thường.
 
 O2 Education gửi các thầy cô link download đề thi
 
-[2023HK-HBT_10_HDC-Hoa-giasu.ai.vn](/assets/docs/2023HK-HBT_10_HDC-Hoa-giasu.ai.vn.pdf)[Download](/assets/docs/2023HK-HBT_10_HDC-Hoa-giasu.ai.vn.pdf)
-[2023HK-HBT_10-Hoa-giasu.ai.vn](/assets/docs/2023HK-HBT_10-Hoa-giasu.ai.vn.pdf)[Download](/assets/docs/2023HK-HBT_10-Hoa-giasu.ai.vn.pdf)
+- [2023HK-HBT_10_HDC-Hoa](/assets/docs/2023HK-HBT_10_HDC-Hoa-giasu.ai.vn.pdf)
+- [2023HK-HBT_10-Hoa](/assets/docs/2023HK-HBT_10-Hoa-giasu.ai.vn.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

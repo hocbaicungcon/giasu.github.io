@@ -64,6 +64,12 @@ export function normalizeMarkdownFormatting(text) {
   text = text.replace(/(\*\*(?!\s)[^*\r\n]+?[:.?!](?<!\s)\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9(\[])/g, '$1 $2');
   text = text.replace(/((?<!\*)\*(?!\s)[^*\r\n]+?(?<!\s)\*(?!\*))([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9])/g, '$1 $2');
 
+  // Remove redundant download button artifacts: [Label](url)[Download](url)
+  text = text.replace(/(\[[^\]\r\n]+\]\(([^)\r\n]+)\))[ \t]*\[(?:Download|Tải về)\]\(\2\)/gi, '$1');
+
+  // Ensure standalone download link lines are formatted as bullet list items
+  text = text.replace(/^([ \t]*)\[([^\]\r\n]+)\]\(((?:\/assets\/docs\/|https?:\/\/drive\.google\.com\/)[^)\r\n]+)\)[ \t]*$/gm, '$1- [$2]($3)');
+
   // Restore protected tokens
   text = text.replace(/@@PROTECTED_TOKEN_(\d+)@@/g, (_, idx) => tokens[Number(idx)]);
   return text;

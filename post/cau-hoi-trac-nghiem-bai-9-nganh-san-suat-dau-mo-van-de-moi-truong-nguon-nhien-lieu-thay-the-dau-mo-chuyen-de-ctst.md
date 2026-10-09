@@ -376,8 +376,8 @@ Nguyên liệu thay thế có thể sử dụng: Hydrogen, than sinh học, Khí
 
 O2 Education gửi các thầy cô link download
 
-[62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_](/assets/docs/62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_.docx)[Download](/assets/docs/62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_.docx)
-[62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le](/assets/docs/62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le.docx)[Download](/assets/docs/62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le.docx)
+- [62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_](/assets/docs/62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_.docx)
+- [62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le](/assets/docs/62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le.docx)
 
 Mời các thầy cô và các em xem thêm
 

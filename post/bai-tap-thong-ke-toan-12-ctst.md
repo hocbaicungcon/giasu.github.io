@@ -22,5 +22,5 @@ CHƯƠNG 3. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CHO MẪU SỐ LI
 
 - **BÀI 2. PHƯƠNG SAI VÀ ĐỘ LỆCH CHUẨN CỦA MẪU SỐ LIỆU GHÉP NHÓM**
 
-[cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst](/assets/docs/cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst.pdf)[Download](/assets/docs/cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst.pdf)
-[bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst](/assets/docs/bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst.pdf)[Download](/assets/docs/bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst.pdf)
+- [cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst](/assets/docs/cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst.pdf)
+- [bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst](/assets/docs/bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst.pdf)

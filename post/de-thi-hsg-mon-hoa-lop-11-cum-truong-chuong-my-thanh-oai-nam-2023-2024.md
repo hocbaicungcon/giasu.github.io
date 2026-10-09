@@ -121,8 +121,8 @@ C**án bộ coi thi số 2**:  ………………………………………
 
 O2 Education gửi các thầy cô link download đề thi
 
-[Dap-an-Hoa-11-giasu.ai.vn](/assets/docs/Dap-an-Hoa-11-giasu.ai.vn.docx)[Download](/assets/docs/Dap-an-Hoa-11-giasu.ai.vn.docx)
-[De-Hoa-11_2024-giasu.ai.vn](/assets/docs/De-Hoa-11_2024-giasu.ai.vn.docx)[Download](/assets/docs/De-Hoa-11_2024-giasu.ai.vn.docx)
+- [Dap-an-Hoa-11](/assets/docs/Dap-an-Hoa-11-giasu.ai.vn.docx)
+- [De-Hoa-11_2024](/assets/docs/De-Hoa-11_2024-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

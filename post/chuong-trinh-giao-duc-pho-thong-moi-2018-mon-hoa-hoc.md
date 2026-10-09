@@ -296,9 +296,8 @@ CHUYÊN ĐỀ HỌC TẬP
 
 O2 Education gửi các thầy cô và các em link download file đầy đủ
 
-file word [chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc](/assets/docs/chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc.docx)
-
-file pdf [chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc](/assets/docs/chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc.pdf)
+- [File WORD: chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc](/assets/docs/chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc.docx)
+- [File PDF: chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc](/assets/docs/chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc.pdf)
 
 Xem thêm
 

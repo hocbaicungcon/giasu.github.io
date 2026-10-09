@@ -295,11 +295,8 @@ Fe(OH)2: **iron (II) hydroxide** hay **ferrous hydroxide**
 O2 Education gửi các thầy cô và các em link download file đầy đủ tại đây
 
 - [Danh pháp các chất hóa học chương trình mới](/assets/docs/Danh-phap-cac-chat-hoa-hoc-chuong-trinh-moi.docx)
-
 - [DANH PHÁP HOA HOC (VÔ CƠ – NGUYỄN ĐĂNG MINH QUÂN, HỮU CƠ – NGUYỄN MINH LÝ)](/assets/docs/DANH-PHAP-HOA-HOC-VO-CO-NGUYEN-DANG-MINH-QUAN-HUU-CO-NGUYEN-MINH-LY.docx)
-
 - [DANH PHÁP HỢP CHẤT HỮU CƠ 2020](/assets/docs/DANH-PHAP-HOP-CHAT-HUU-CO-2020.docx)
-
 - [GỌI TÊN](/assets/docs/GOI-TEN.pptx)
 
 Xem thêm

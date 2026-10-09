@@ -21,4 +21,4 @@ BÀI 1. KHOẢNG BIẾN THIÊN, KHOẢNG TỨ PHÂN VỊ CỦA MẪU SỐ LIỆU
 BÀI 2. PHƯƠNG SAI, ĐỘ LỆCH CHUẨN CỦA MẪU SỐ LIỆU GHÉP NHÓM.
 ÔN TẬP CHƯƠNG 3. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CHO MẪU SỐ LIỆU GHÉP NHÓM.
 
-[cac-dang-bai-tap-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-canh-dieu](/assets/docs/cac-dang-bai-tap-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-canh-dieu.pdf)[Download](/assets/docs/cac-dang-bai-tap-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-canh-dieu.pdf)
+- [cac-dang-bai-tap-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-canh-dieu](/assets/docs/cac-dang-bai-tap-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-canh-dieu.pdf)

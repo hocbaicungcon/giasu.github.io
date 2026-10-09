@@ -153,8 +153,8 @@ Họ tên và chữ kí của cán bộ coi thi số 1:             
 
 O2 Education gửi các thầy cô link download đề thi
 
-[3.De-thi-cum-HD-HD-2024-Hoa-11-giasu.ai.vn](/assets/docs/3.De-thi-cum-HD-HD-2024-Hoa-11-giasu.ai.vn.docx)[Download](/assets/docs/3.De-thi-cum-HD-HD-2024-Hoa-11-giasu.ai.vn.docx)
-[3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD-giasu.ai.vn](/assets/docs/3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD-giasu.ai.vn.docx)[Download](/assets/docs/3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD-giasu.ai.vn.docx)
+- [3.De-thi-cum-HD-HD-2024-Hoa-11](/assets/docs/3.De-thi-cum-HD-HD-2024-Hoa-11-giasu.ai.vn.docx)
+- [3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD](/assets/docs/3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 
