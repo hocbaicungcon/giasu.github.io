@@ -15,7 +15,7 @@ grade: 10
 
 - Cuốn sách chúng tôi đang viết dở dang, nếu có thời gian sẽ hoàn thiện thêm.
 
-- Download: [Lap_trinh_Python-o2.edu.vn](/assets/docs/Lap_trinh_Python-o2.edu_.vn_.pdf)
+- Download: [Lap_trinh_Python-giasu.ai.vn](/assets/docs/Lap_trinh_Python-giasu.ai.vn.pdf)
 
 ## 1. Hướng dẫn lập trình Python
 

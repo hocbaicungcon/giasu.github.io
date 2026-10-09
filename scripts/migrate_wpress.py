@@ -392,10 +392,40 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
         rel_path = re.sub(r'^https?://o2\.edu\.vn/wp-content/', '', clean_url)
         unquoted_rel_path = urllib.parse.unquote(rel_path)
         doc_name = os.path.basename(unquoted_rel_path)
+        doc_name = re.sub(r'[-_]o2\.edu_\.vn_', '-giasu.ai.vn', doc_name)
         
         file_bytes = reader.get_file(unquoted_rel_path) or reader.get_file(rel_path)
         if not file_bytes:
             continue
+            
+        # Clean internal o2.edu.vn links in docx/pptx/xlsx files
+        if doc_name.endswith(('.docx', '.pptx', '.xlsx')):
+            try:
+                import io, zipfile
+                z_in = zipfile.ZipFile(io.BytesIO(file_bytes), 'r')
+                bio_out = io.BytesIO()
+                z_out = zipfile.ZipFile(bio_out, 'w', compression=zipfile.ZIP_DEFLATED)
+                has_change = False
+                for item in z_in.infolist():
+                    data = z_in.read(item.filename)
+                    if item.filename.endswith(('.xml', '.rels', '.txt')):
+                        try:
+                            text = data.decode('utf-8')
+                            new_text = text
+                            for tgt in ['http://o2.edu.vn/', 'http://o2.edu.vn', 'https://o2.edu.vn/', 'https://o2.edu.vn']:
+                                new_text = new_text.replace(tgt, 'https://giasu.ai.vn/')
+                            if new_text != text:
+                                has_change = True
+                                data = new_text.encode('utf-8')
+                        except UnicodeDecodeError:
+                            pass
+                    z_out.writestr(item, data)
+                z_out.close()
+                z_in.close()
+                if has_change:
+                    file_bytes = bio_out.getvalue()
+            except Exception:
+                pass
             
         file_len = len(file_bytes)
         

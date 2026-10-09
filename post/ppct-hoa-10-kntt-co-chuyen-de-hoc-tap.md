@@ -132,7 +132,7 @@ grade: 10
 
 O2 Education gửi các thầy cô link download
 
-[PPCT-hoa-10-KNTT-co-chuyen-de_o2.edu_.vn_](/assets/docs/PPCT-hoa-10-KNTT-co-chuyen-de_o2.edu_.vn_.docx)[Download](/assets/docs/PPCT-hoa-10-KNTT-co-chuyen-de_o2.edu_.vn_.docx)
+[PPCT-hoa-10-KNTT-co-chuyen-de-giasu.ai.vn](/assets/docs/PPCT-hoa-10-KNTT-co-chuyen-de-giasu.ai.vn.docx)[Download](/assets/docs/PPCT-hoa-10-KNTT-co-chuyen-de-giasu.ai.vn.docx)
 
 Mời các thầy cô và các em xem thêm
 
