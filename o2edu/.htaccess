@@ -164,3 +164,18 @@ RewriteRule ^vo-ghi-bai-hoc-hoa-11-kntt-ca-nam/?$ https://giasu.ai.vn/bai-viet/v
 RewriteRule ^vung-1-vung-2-vung-3-vung-4-la-o-dau/?$ https://giasu.ai.vn/bai-viet/vung-1-vung-2-vung-3-vung-4-la-o-dau.html [R=301,L]
 RewriteRule ^xac-suat-tung-dong-xu/?$ https://giasu.ai.vn/bai-viet/xac-suat-tung-dong-xu.html [R=301,L]
 </IfModule>
+Redirect 301 /cau-hoi-trac-nghiem-bai-8-che-bien-dau-mo-chuyen-de-kntt/ https://giasu.ai.vn/bai-viet/cau-hoi-trac-nghiem-bai-8-che-bien-dau-mo-chuyen-de-kntt.html
+Redirect 301 /cau-hoi-trac-nghiem-bai-8-che-bien-dau-mo-chuyen-de-ctst/ https://giasu.ai.vn/bai-viet/cau-hoi-trac-nghiem-bai-8-che-bien-dau-mo-chuyen-de-ctst.html
+Redirect 301 /de-thi-hsg-lop-12-mon-hoa-thanh-pho-ha-noi-nam-2022-2023/ https://giasu.ai.vn/bai-viet/de-thi-hsg-lop-12-mon-hoa-thanh-pho-ha-noi-nam-2022-2023.html
+Redirect 301 /de-thi-hsg-lop-12-mon-hoa-thanh-pho-ho-chi-minh-nam-2022-2023/ https://giasu.ai.vn/bai-viet/de-thi-hsg-lop-12-mon-hoa-thanh-pho-ho-chi-minh-nam-2022-2023.html
+Redirect 301 /tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc/ https://giasu.ai.vn/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html
+Redirect 301 /de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-mac-dinh-chi/ https://giasu.ai.vn/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-mac-dinh-chi.html
+Redirect 301 /bai-toan-nho-tu-tu-h-vao-dung-dich-hco3-va-co32-co-loi-giai-chi-tiet/ https://giasu.ai.vn/bai-viet/bai-toan-nho-tu-tu-h-vao-dung-dich-hco3-va-co32-co-loi-giai-chi-tiet.html
+Redirect 301 /tien-hanh-thi-nghiem-theo-cac-buoc-sau-buoc-1-cho-vao-ong-nghiem-2-3-giot-cuso4-5-va-1ml-dung-dich-naoh-10/ https://giasu.ai.vn/bai-viet/tien-hanh-thi-nghiem-theo-cac-buoc-sau-buoc-1-cho-vao-ong-nghiem-2-3-giot-cuso4-5-va-1ml-dung-dich-naoh-10.html
+Redirect 301 /de-xac-dinh-ham-luong-axit-axetic-co-trong-mot-mau-giam-an-co-the-tien-hanh-nhu-sau/ https://giasu.ai.vn/bai-viet/de-xac-dinh-ham-luong-axit-axetic-co-trong-mot-mau-giam-an-co-the-tien-hanh-nhu-sau.html
+Redirect 301 /cho-hai-chat-huu-co-no-mach-ho-e-f-deu-co-cong-thuc-phan-tu-c4h6o4-va-co-2-nhom-chuc-este-tham-gia-phan-ung-theo-dung-ti-le-mol-nhu-so-do-duoi-day/ https://giasu.ai.vn/bai-viet/cho-hai-chat-huu-co-no-mach-ho-e-f-deu-co-cong-thuc-phan-tu-c4h6o4-va-co-2-nhom-chuc-este-tham-gia-phan-ung-theo-dung-ti-le-mol-nhu-so-do-duoi-day.html
+Redirect 301 /150-tu-va-cum-tu-tieng-nga-co-ban/ https://giasu.ai.vn/bai-viet/150-tu-va-cum-tu-tieng-nga-co-ban.html
+Redirect 301 /tu-hoc-tieng-do-thai-gioi-thieu-va-bang-chu-cai/ https://giasu.ai.vn/bai-viet/tu-hoc-tieng-do-thai-gioi-thieu-va-bang-chu-cai.html
+Redirect 301 /100-de-thi-hoc-sinh-gioi-tin-hoc-de-thi-tin-hoc-tre/ https://giasu.ai.vn/bai-viet/100-de-thi-hoc-sinh-gioi-tin-hoc-de-thi-tin-hoc-tre.html
+Redirect 301 /de-thi-mau-ky-thi-seamo/ https://giasu.ai.vn/bai-viet/de-thi-mau-ky-thi-seamo.html
+Redirect 301 /font-chu-viet-tay-font-chu-tieu-hoc/ https://giasu.ai.vn/bai-viet/font-chu-viet-tay-font-chu-tieu-hoc.html
