@@ -382,8 +382,8 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
             image_map[urllib.parse.unquote(full_url)] = local_link
             image_map[urllib.parse.unquote(clean_url)] = local_link
             
-    # Extract document attachments (.pdf, .docx, .zip, etc.)
-    doc_urls = re.findall(r'href=[\"\'](https?://o2\.edu\.vn/wp-content/uploads/[^\"\']+\.(?:pdf|docx?|xlsx?|pptx?|zip|rar))[\"\']', content_html, re.I)
+    # Extract document attachments (.pdf, .docx, .zip, .mp4, etc.)
+    doc_urls = re.findall(r'href=[\"\'](https?://o2\.edu\.vn/wp-content/uploads/[^\"\']+\.(?:pdf|docx?|xlsx?|pptx?|zip|rar|mp4|mp3))[\"\']', content_html, re.I)
     doc_map = {}
     drive_links = load_drive_links()
     
