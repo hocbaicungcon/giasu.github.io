@@ -30,16 +30,24 @@
   color: #259caf;
 }
 
-.hero h1 svg {
+.hero-highlight {
+  position: relative;
+  display: inline-block;
+  color: #259caf;
+  white-space: nowrap;
+}
+
+.hero-highlight svg {
   position: absolute;
-  bottom: -11px;
-  left: 173px;
-  width: 270px;
-  height: 16px;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 15px;
   fill: none;
   stroke: var(--peach);
   stroke-width: 7;
   z-index: -1;
+  pointer-events: none;
 }
 
 .hero p {
@@ -405,11 +413,6 @@ aside h3 {
   font-size: 3rem;
   }
   
-  .hero h1 svg {
-  left: 135px;
-      width: 210px;
-  }
-  
   .hero-visual {
   transform: scale(.85);
   }
@@ -440,19 +443,6 @@ aside h3 {
 }
 
 @media(max-width:620px) {
-  .hero p {
-  font-size: 1rem;
-  }
-  
-  .hero-visual {
-  height: 310px;
-      transform: scale(.9);
-      margin-top: 15px;
-  }
-  
-  .subject-row h2 {
-  font-size: 1.3125rem;
-  }
   
   .section-heading h2 {
   font-size: 1.6875rem;
@@ -530,16 +520,6 @@ aside h3 {
   .art-label {
   letter-spacing: .8px;
       font-size: 0.8125rem;
-  }
-  
-  .hero h1 {
-  font-size: 2.5rem;
-      letter-spacing: -1.8px;
-  }
-  
-  .hero h1 svg {
-  left: 95px;
-      width: 210px;
   }
 }
 
@@ -646,27 +626,6 @@ aside h3 {
   gap: 15px;
       grid-template-columns: 1fr;
   }
-  
-  .subject-picks {
-  gap: 18px;
-      display: grid;
-      grid-template-columns: repeat(3,minmax(0,1fr));
-  }
-  
-  .subject-pick {
-  white-space: normal;
-      text-align: center;
-  }
-  
-  .hero-note {
-  font-size: 0.8125rem;
-      gap: 8px;
-  }
-  
-  .kicker {
-  letter-spacing: 1px;
-      font-size: 0.6875rem;
-  }
 }
 
 .library-sections {
@@ -754,6 +713,7 @@ aside h3 {
 
 .hero h1 .hero-accent {
   color: #1598b3;
+  white-space: nowrap;
 }
 
 .library {
@@ -847,18 +807,225 @@ html[data-theme="dark"] .subject-row {
   background: transparent;
 }
 
-@media(max-width:620px) {
+@media(max-width:768px) {
   .hero {
-  grid-template-columns: 1fr;
-      padding-top: 32px;
-      gap: 0;
-      padding-bottom: 22px;
-      overflow: hidden;
-      border-radius: 0;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    gap: 16px;
+    overflow: hidden;
+    border-radius: 0;
   }
-  
+
   html[data-theme="dark"] .hero {
-  border-radius: 0;
+    border-radius: 0;
+  }
+
+  .kicker {
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+  }
+
+  .hero h1 {
+    font-size: clamp(1.85rem, 6.2vw, 2.35rem);
+    line-height: 1.22;
+    letter-spacing: -1.2px;
+    margin: 12px 0 14px;
+  }
+
+  .hero p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    max-width: 44ch;
+  }
+
+  .hero p br {
+    display: none;
+  }
+
+  .hero-note {
+    margin-top: 14px;
+    font-size: 0.8125rem;
+    gap: 6px;
+    white-space: nowrap;
+  }
+
+  .hero-visual {
+    height: 180px;
+    max-width: 280px;
+    margin: 10px auto 0;
+    transform: none;
+  }
+
+  .orbit,
+  .orbit-two {
+    display: none;
+  }
+
+  .float-math,
+  .float-book {
+    display: none;
+  }
+
+  .mascot {
+    width: 140px;
+    height: 140px;
+    box-shadow: 0 8px 24px rgba(37, 156, 175, 0.16);
+  }
+
+  .mascot img {
+    width: 125px;
+    height: 130px;
+    transform: translateY(8px);
+  }
+
+  .float-note {
+    bottom: -4px;
+    right: 0;
+    padding: 6px 12px;
+    gap: 8px;
+    font-size: 0.9375rem;
+    border-radius: 999px;
+    transform: rotate(-2deg);
+    box-shadow: 0 4px 14px rgba(36, 59, 64, 0.08);
+  }
+
+  .float-note>span {
+    font-size: 0.75rem;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  .float-note>span br {
+    display: none;
+  }
+
+  .spark-one {
+    top: 8px;
+    right: 32px;
+    font-size: 1.25rem;
+  }
+
+  .spark-two {
+    bottom: 16px;
+    left: 20px;
+    font-size: 1.1rem;
+  }
+
+  .subject-row {
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 20px;
+  }
+
+  .subject-row .overline {
+    font-size: 0.6875rem;
+    letter-spacing: 1.2px;
+  }
+
+  .subject-row h2 {
+    font-size: 1.1875rem;
+    margin: 4px 0 0;
+    letter-spacing: -0.4px;
+    white-space: normal;
+  }
+
+  .subject-picks {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .subject-pick {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 8px 12px;
+    background: #ffffff;
+    border: 1px solid #dfded8;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(36, 59, 64, 0.04);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--ink);
+    white-space: nowrap;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+  }
+
+  .subject-pick:active {
+    transform: scale(0.97);
+  }
+
+  .subject-pick>span {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
+    font-size: 1.125rem;
+    flex-shrink: 0;
+    box-shadow: none;
+    border: 1px solid #dce8e4;
+    display: grid;
+    place-items: center;
+    background: #f7fbfa;
+  }
+
+  .subject-pick:nth-child(2n)>span {
+    background: #fff4ec;
+    border-color: #f7ddd0;
+  }
+
+  html[data-theme="dark"] .subject-pick {
+    background: #25332e;
+    border-color: #3d5248;
+    color: #e5ede8;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  html[data-theme="dark"] .subject-pick:hover,
+  html[data-theme="dark"] .subject-pick:focus-visible {
+    background: #2d3d37;
+    border-color: #55cde2;
+  }
+
+  html[data-theme="dark"] .subject-pick>span {
+    background: #1b2622;
+    border-color: #32443c;
+    color: #55cde2;
+  }
+
+  html[data-theme="dark"] .subject-pick:nth-child(2n)>span {
+    background: #2d261e;
+    border-color: #4a3d2e;
+    color: #f6a17b;
+  }
+}
+
+@media(min-width:481px) and (max-width:768px) {
+  .subject-picks {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media(max-width:360px) {
+  .subject-pick {
+    padding: 7px 8px;
+    gap: 8px;
+    font-size: 0.8125rem;
+  }
+  .subject-pick>span {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
   }
 }
 
