@@ -17,6 +17,26 @@
   background: var(--coral);
 }
 
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  min-height: 487px;
+  align-items: center;
+  gap: 35px;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  border-radius: 0;
+  background: linear-gradient(135deg,#fffaf7 0%,#f1f8f8 56%,#e7f5f9 100%);
+}
+
+.hero .mascot {
+  background: #eaf7fa;
+}
+
+html[data-theme="dark"] .hero .mascot {
+  background: #e5ede8;
+}
+
 .hero h1 {
   position: relative;
   font-size: 3.75rem;
@@ -177,6 +197,46 @@
   font-size: 0.8125rem;
   letter-spacing: 1.4px;
   color: #83918d;
+}
+
+.subject-section {
+  border-color: #b7d9d4;
+  background: #f3dfc9;
+  border-block: 1px solid #d8b897;
+  box-shadow: none;
+}
+
+.subject-row {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.subject-section .overline {
+  color: #856445;
+}
+
+.subject-picks {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  gap: 18px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+html[data-theme="dark"] .subject-section {
+  border-block: 1px solid #567361;
+  background: #e9dfc9;
+  border-color: #d1c1a4;
+}
+
+html[data-theme="dark"] .subject-section .overline {
+  color: #816b4d;
 }
 
 .subject-row h2 {
@@ -915,8 +975,16 @@ html[data-theme="dark"] .subject-row {
     font-size: 1.1rem;
   }
 
+  .subject-section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .subject-row {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
     padding-top: 18px;
     padding-bottom: 20px;
   }
@@ -924,20 +992,27 @@ html[data-theme="dark"] .subject-row {
   .subject-row .overline {
     font-size: 0.6875rem;
     letter-spacing: 1.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
   }
 
   .subject-row h2 {
-    font-size: 1.1875rem;
-    margin: 4px 0 0;
+    font-size: 1.25rem;
+    font-weight: 750;
+    margin: 3px 0 0;
     letter-spacing: -0.4px;
     white-space: normal;
+    line-height: 1.25;
   }
 
   .subject-picks {
-    margin-top: 14px;
+    margin-top: 2px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 9px;
+    gap: 9px 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .subject-pick {
@@ -946,10 +1021,10 @@ html[data-theme="dark"] .subject-row {
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    padding: 8px 12px;
+    padding: 9px 12px;
     background: #ffffff;
     border: 1px solid #dfded8;
-    border-radius: 12px;
+    border-radius: 13px;
     box-shadow: 0 2px 5px rgba(36, 59, 64, 0.04);
     font-size: 0.875rem;
     font-weight: 600;
@@ -959,105 +1034,94 @@ html[data-theme="dark"] .subject-row {
     width: 100%;
     cursor: pointer;
     box-sizing: border-box;
-    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
   }
 
   .subject-pick:active {
     transform: scale(0.97);
+    background: #fbf9f5;
   }
 
   .subject-pick>span {
     width: 32px;
     height: 32px;
     border-radius: 9px;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     flex-shrink: 0;
     box-shadow: none;
     border: 1px solid #dce8e4;
     display: grid;
     place-items: center;
     background: #f7fbfa;
+    color: #1e6d65;
   }
 
   .subject-pick:nth-child(2n)>span {
     background: #fff4ec;
     border-color: #f7ddd0;
+    color: #c05828;
   }
 
   html[data-theme="dark"] .subject-pick {
-    background: #25332e;
-    border-color: #3d5248;
-    color: #e5ede8;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    background: #f6edd9;
+    border-color: #d9c7a6;
+    color: #3a2e23;
+    box-shadow: 0 2px 5px rgba(60, 45, 30, 0.08);
   }
 
   html[data-theme="dark"] .subject-pick:hover,
   html[data-theme="dark"] .subject-pick:focus-visible {
-    background: #2d3d37;
-    border-color: #55cde2;
+    background: #ebe0c7;
+    border-color: #bca67e;
+    color: #704a28;
+  }
+
+  html[data-theme="dark"] .subject-pick:active {
+    background: #dfd1b2;
   }
 
   html[data-theme="dark"] .subject-pick>span {
-    background: #1b2622;
-    border-color: #32443c;
-    color: #55cde2;
+    background: #ebe0c7;
+    border-color: #d1bd98;
+    color: #55432d;
   }
 
   html[data-theme="dark"] .subject-pick:nth-child(2n)>span {
-    background: #2d261e;
-    border-color: #4a3d2e;
-    color: #f6a17b;
+    background: #f3e3ce;
+    border-color: #dbc29f;
+    color: #7b4b23;
   }
 }
 
 @media(min-width:481px) and (max-width:768px) {
   .subject-picks {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
   }
 }
 
 @media(max-width:360px) {
+  .subject-picks {
+    gap: 7px;
+  }
+
   .subject-pick {
-    padding: 7px 8px;
+    padding: 7px 9px;
     gap: 8px;
     font-size: 0.8125rem;
+    border-radius: 11px;
   }
+
   .subject-pick>span {
     width: 28px;
     height: 28px;
-    font-size: 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
   }
 }
 
-.subject-section {
-  border-color: #b7d9d4;
-  background: #f3dfc9;
-  border-block: 1px solid #d8b897;
-  box-shadow: none;
-}
-
-.subject-row {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  flex-wrap: wrap;
-  background: transparent;
-}
-
-.subject-section .overline {
-  color: #856445;
-}
-
-.subject-picks {
-  display: flex;
-  flex: 1;
-  min-width: 0;
-  gap: 18px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
 
 @media(max-width:620px) {
   html[data-theme="dark"] .about {
@@ -1070,35 +1134,6 @@ html[data-theme="dark"] .library {
   background: #f3ead5;
 }
 
-html[data-theme="dark"] .subject-section {
-  border-block: 1px solid #567361;
-  background: #e9dfc9;
-  border-color: #d1c1a4;
-}
-
-html[data-theme="dark"] .subject-section .overline {
-  color: #816b4d;
-}
-
-.hero {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  min-height: 487px;
-  align-items: center;
-  gap: 35px;
-  padding-top: 45px;
-  padding-bottom: 50px;
-  border-radius: 0;
-  background: linear-gradient(135deg,#fffaf7 0%,#f1f8f8 56%,#e7f5f9 100%);
-}
-
-.hero .mascot {
-  background: #eaf7fa;
-}
-
-html[data-theme="dark"] .hero .mascot {
-  background: #e5ede8;
-}
 
 html[data-theme="dark"] .subject-pick:hover,
 html[data-theme="dark"] .subject-pick:focus-visible {
