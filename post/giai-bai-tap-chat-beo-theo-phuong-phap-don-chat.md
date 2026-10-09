@@ -5,8 +5,9 @@ category: Hóa học
 type: Bài học
 date: '2021-09-04'
 tags:
+- Hóa học 12
 - Chất béo
-- Đồn chất
+- Dồn chất xếp hình
 grade: 12
 ---
 
@@ -322,10 +323,10 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
    [Reply](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat/?replytocom=1112#respond.html)
 
-2. ![https://o2.edu.vn/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/ Avatar](https://secure.gravatar.com/avatar/8a01c3a6a2bd7315a349970f2995af580282d191bc4a5895fb91b64fda5d959d)
+2. ![/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html Avatar](https://secure.gravatar.com/avatar/8a01c3a6a2bd7315a349970f2995af580282d191bc4a5895fb91b64fda5d959d)
 
    [22/09/2021](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat/#comment-1241.html)
-   [https://o2.edu.vn/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/](http://o2.edu)
+   [/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html](http://o2.edu)
 
    ho e xin file GIẢI BÀI TẬP CHẤT BÉO THEO PHƯƠNG PHÁP DỒN CHẤT với ạ
 

@@ -33,7 +33,7 @@ Mỗi chữ hình thanh gồm bộ phận chỉ ý nghĩa (hay nghĩa phù 義�
 
 ## Cách nhớ các bộ thủ trong tiếng Trung
 
-Ngoài cách dưới đây, bạn có thể tham khảo thêm [Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu](https://o2.edu.vn/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau/) hoặc [Cách nhớ 50 bộ thủ thường dùng](https://o2.edu.vn/cach-nho-50-bo-thu-thuong-dung/)
+Ngoài cách dưới đây, bạn có thể tham khảo thêm [Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu](/bai-viet/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau.html) hoặc [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html)
 
 ### Chữ 安 (Ān) AN: An toàn
 
