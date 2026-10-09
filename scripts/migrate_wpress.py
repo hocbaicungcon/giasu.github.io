@@ -353,13 +353,9 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
     idx_start = raw_html.find('entry-content')
     if idx_start != -1:
         open_div = raw_html.rfind('<div', 0, idx_start)
-        idx_end = raw_html.find('taxonomy-post_tag', open_div)
-        if idx_end == -1:
-            idx_end = raw_html.find('wp-block-post-terms', open_div)
-        if idx_end == -1:
-            idx_end = raw_html.find('<!-- .entry-content -->', open_div)
-        if idx_end == -1:
-            idx_end = raw_html.find('</main>', open_div)
+        end_markers = ['id="comments"', 'class="comments-area"', 'taxonomy-post_tag', 'wp-block-post-terms', '<!-- .entry-content -->', '</main>']
+        indices = [raw_html.find(m, open_div) for m in end_markers if raw_html.find(m, open_div) != -1]
+        idx_end = min(indices) if indices else len(raw_html)
         content_html = raw_html[open_div:idx_end]
     else:
         content_html = raw_html
@@ -446,6 +442,9 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
     
     # Remove redundant top H1 if identical to title
     body_md = re.sub(rf'^#\s+{re.escape(title)}\s*\n+', '', body_md).strip()
+    
+    # Remove trailing WordPress comments and discussion sections
+    body_md = re.split(r'\n##\s+(?:Comments|Bình luận)\b|\n###\s+(?:Leave a Reply|One response to|\d+\s+responses?\s+to)\b', body_md)[0].strip()
     
     # Default category fallback
     if not category:

@@ -7,8 +7,8 @@ category: Toán học
 type: Khám phá
 date: '2024-10-02'
 tags:
-- toán học
-- năng lực
+- Toán học
+- Năng lực
 ---
 
 ## 1. Năng lực là gì?
