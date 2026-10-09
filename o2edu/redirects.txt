@@ -359,3 +359,18 @@ https://o2.edu.vn/font-chu-viet-nam-vni-vn-tcvn-day-du-nhat/ -> https://giasu.ai
 https://o2.edu.vn/tong-hop-tai-lieu-thu-vien-stem-steam/ -> https://giasu.ai.vn/bai-viet/tong-hop-tai-lieu-thu-vien-stem-steam.html (301)
 https://o2.edu.vn/huong-dan-cach-giai-rubik-2x2x2/ -> https://giasu.ai.vn/bai-viet/huong-dan-cach-giai-rubik-2x2x2.html (301)
 https://o2.edu.vn/tro-choi-powerpoint-cho-hoc-sinh/ -> https://giasu.ai.vn/bai-viet/tro-choi-powerpoint-cho-hoc-sinh.html (301)
+https://o2.edu.vn/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt/ -> https://giasu.ai.vn/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html
+https://o2.edu.vn/dap-an-trac-nghiem-module-2-mon-hoa-thpt/ -> https://giasu.ai.vn/bai-viet/dap-an-trac-nghiem-module-2-mon-hoa-thpt.html
+https://o2.edu.vn/dap-an-module-5-thpt/ -> https://giasu.ai.vn/bai-viet/dap-an-module-5-thpt.html
+https://o2.edu.vn/dap-an-20-cau-trac-nghiem-module-1-tim-hieu-chuong-trinh-giao-duc-thpt-2018-mon-hoa-hoc/ -> https://giasu.ai.vn/bai-viet/dap-an-20-cau-trac-nghiem-module-1-tim-hieu-chuong-trinh-giao-duc-thpt-2018-mon-hoa-hoc.html
+https://o2.edu.vn/mau-thu-gioi-thieu-hoc-sinh-cua-giao-vien-cho-cac-truong-dai-hoc/ -> https://giasu.ai.vn/bai-viet/mau-thu-gioi-thieu-hoc-sinh-cua-giao-vien-cho-cac-truong-dai-hoc.html
+https://o2.edu.vn/su-khac-biet-nhat-giua-danh-gia-kien-thuc-ki-nang-va-danh-gia-nang-luc-la-gi/ -> https://giasu.ai.vn/bai-viet/su-khac-biet-nhat-giua-danh-gia-kien-thuc-ki-nang-va-danh-gia-nang-luc-la-gi.html
+https://o2.edu.vn/2-mau-don-xin-nghi-coi-thi-tot-nghiep-vao-10/ -> https://giasu.ai.vn/bai-viet/2-mau-don-xin-nghi-coi-thi-tot-nghiep-vao-10.html
+https://o2.edu.vn/tong-hop-de-thi-vao-lop-10-chuyen-hoa-nam-2021-2022/ -> https://giasu.ai.vn/bai-viet/tong-hop-de-thi-vao-lop-10-chuyen-hoa-nam-2021-2022.html
+https://o2.edu.vn/khi-phan-tich-mot-loai-chat-beo-ki-hieu-la-x-chua-dong-thoi-cac-triglixerit-va-axit-beo-tu-do-khong-co-tap-chat-khac-thay-oxi-chiem-1088-theo-khoi-luong/ -> https://giasu.ai.vn/bai-viet/khi-phan-tich-mot-loai-chat-beo-ki-hieu-la-x-chua-dong-thoi-cac-triglixerit-va-axit-beo-tu-do-khong-co-tap-chat-khac-thay-oxi-chiem-1088-theo-khoi-luong.html
+https://o2.edu.vn/tien-hanh-cac-thi-nghiem-sau-cho-ure-ran-vao-dung-dich-hcl/ -> https://giasu.ai.vn/bai-viet/tien-hanh-cac-thi-nghiem-sau-cho-ure-ran-vao-dung-dich-hcl.html
+https://o2.edu.vn/cho-hai-chat-huu-co-no-mach-ho-la-e-cnh2mon-va-f-cmh2mom-mf-me-120-thuc-hien-phan-ung-chuyen-hoa-e-f/ -> https://giasu.ai.vn/bai-viet/cho-hai-chat-huu-co-no-mach-ho-la-e-cnh2mon-va-f-cmh2mom-mf-me-120-thuc-hien-phan-ung-chuyen-hoa-e-f.html
+https://o2.edu.vn/cach-dang-ky-office-365-mien-phi-tu-gia-han/ -> https://giasu.ai.vn/bai-viet/cach-dang-ky-office-365-mien-phi-tu-gia-han.html
+https://o2.edu.vn/bai-tap-cuoi-khoa-module-5-thpt/ -> https://giasu.ai.vn/bai-viet/bai-tap-cuoi-khoa-module-5-thpt.html
+https://o2.edu.vn/bai-tho-tinh-dien-tich-cac-hinh-de-thuoc/ -> https://giasu.ai.vn/bai-viet/bai-tho-tinh-dien-tich-cac-hinh-de-thuoc.html
+https://o2.edu.vn/giao-trinh-tu-hoc-flutter-dart/ -> https://giasu.ai.vn/bai-viet/giao-trinh-tu-hoc-flutter-dart.html
