@@ -122,6 +122,8 @@ def clean_math_body(math_str):
     # Convert \begin{align} to \begin{aligned} for KaTeX universal compatibility
     math_str = re.sub(r'\\begin\{align\*?\}', r'\\begin{aligned}', math_str)
     math_str = re.sub(r'\\end\{align\*?\}', r'\\end{aligned}', math_str)
+    # Remove unsupported \hfill commands (MathType residue)
+    math_str = re.sub(r'\\hfill\b', ' ', math_str)
     # Clean whitespace
     math_str = re.sub(r'[ \t]+', ' ', math_str).strip()
     return math_str

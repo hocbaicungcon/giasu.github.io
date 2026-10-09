@@ -1,0 +1,87 @@
+---
+title: Để bảo vệ vật bằng sắt, người ta mạ Ni ở bên ngoài vật bằng cách điện phân
+  dung dịch muối Ni2+
+description: Để bảo vệ vật bằng sắt, người ta mạ Ni ở bên ngoài vật bằng cách điện
+  phân dung dịch muối Ni2+ với điện cực catot là vật cần mạ, anot là một điện cực
+  làm bằng Ni. Điện phân với cường độ dòng điện 1,93 ampe trong thời gian 20.000s.
+  Tính bề dày lớp ...
+category: Hóa học
+type: Bài tập
+date: '2024-10-02'
+tags:
+- Hóa học
+- Hóa học 12
+- Điện phân
+- Mạ điện
+- Ăn mòn kim loại
+grade: 12
+---
+
+Để bảo vệ vật bằng sắt, người ta mạ Ni ở bên ngoài vật bằng cách điện phân dung dịch muối Ni2+ với điện cực catot là vật cần mạ, anot là một điện cực làm bằng Ni. Điện phân với cường độ dòng điện 1,93 ampe trong thời gian 20.000s. Tính bề dày lớp mạ nếu diện tích ngoài của vật là 2 dm2; tỉ trọng của Ni là 8,9g/cm3 .
+
+**A.** 0,066cm **B.** 0,033cm **C.** 0,066mm **D.** 0,033mm
+
+![Để bảo vệ vật bằng sắt, người ta mạ Ni ở bên ngoài vật bằng cách điện phân dung dịch muối Ni2+](assets/images/de-bao-ve-vat-bang-sat-nguoi-ta-ma-ni-o-ben-ngoai-vat-bang-cach-dien-phan-dung-dich-muoi-ni2-vd18.jpg)
+
+Các thầy cô và các em có thể xem lý thuyết và phương pháp giải bài tập điện phân tại
+
+[Lý thuyết và bài tập điện phân có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
+
+ 
+
+Hoặc xem thêm các tài liệu khác của môn hóa
+
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+
+- [Lý thuyết và bài tập điện phân có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
+
+- [Tổng hợp bài tâp phương pháp dồn chất xếp hình](/bai-viet/tong-hop-bai-tap-phuong-phap-don-chat-xep-hinh.html)
+
+- [200 câu lý thuyết đếm hóa học lớp 12 có đáp án ôn thi TN THPT](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html)
+
+- [Tổng hợp kĩ thuật phương pháp giải bài tập peptit đầy đủ chi tiết](/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html)
+
+- [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
+
+- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
+
+- [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
+
+- [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
+
+- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+
+- [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
+
+- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
+
+- [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
+
+- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+
+- [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
+
+- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+
+- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+
+- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+
+- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+
+- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+
+- [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
+
+- [Tổng hợp đề thi học kì 2 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-11-mon-hoa-hoc.html)
+
+- [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
+
+- [Tổng hợp các chuyên đề hóa học lớp 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)
+
+- [Tổng hợp các chuyên đề hóa học lớp 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
+
+- [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
+
+←[Điện phân dung dịch hỗn hợp gồm 0,1 mol FeCl3, 0,2 mol CuCl2 và 0,1 mol HCl (điện cực trơ)](/bai-viet/dien-phan-dung-dich-hon-hop-gom-01-mol-fecl3-02-mol-cucl2-va-01-mol-hcl-dien-cuc-tro.html)
+[Điện phân dung dịch chứa m gam muối AgNO3 với cường độ dòng điện I (ampe), sau thời gian t (giây)](/bai-viet/dien-phan-dung-dich-chua-m-gam-muoi-agno3-voi-cuong-do-dong-dien-i-ampe-sau-thoi-gian-t-giay.html)→
