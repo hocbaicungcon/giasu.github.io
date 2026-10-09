@@ -4,6 +4,8 @@
 https://o2.edu.vn/1000-tu-vung-hsk-4-phien-ban-moi/ -> https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-4-phien-ban-moi.html
 https://o2.edu.vn/1000-tu-vung-hsk-5-phien-ban-moi/ -> https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html
 https://o2.edu.vn/1100-tu-vung-hsk-6-phien-ban-moi/ -> https://giasu.ai.vn/bai-viet/1100-tu-vung-hsk-6-phien-ban-moi.html
+https://o2.edu.vn/138-cau-hoi-trac-nghiem-python/ -> https://giasu.ai.vn/bai-viet/138-cau-hoi-trac-nghiem-python.html
+https://o2.edu.vn/15-cuon-sach-hoc-python-mien-phi/ -> https://giasu.ai.vn/bai-viet/15-cuon-sach-hoc-python-mien-phi.html
 https://o2.edu.vn/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau/ -> https://giasu.ai.vn/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html
 https://o2.edu.vn/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/ -> https://giasu.ai.vn/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html
 https://o2.edu.vn/2000-chu-kanji-thong-dung-nhat/ -> https://giasu.ai.vn/bai-viet/2000-chu-kanji-thong-dung-nhat.html
@@ -14,6 +16,8 @@ https://o2.edu.vn/50-bo-thu-thuong-dung-pdf/ -> https://giasu.ai.vn/bai-viet/50-
 https://o2.edu.vn/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat/ -> https://giasu.ai.vn/bai-viet/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat.html
 https://o2.edu.vn/700-tu-vung-hsk-2-phien-ban-moi/ -> https://giasu.ai.vn/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html
 https://o2.edu.vn/900-tu-vung-hsk-3-phien-ban-moi/ -> https://giasu.ai.vn/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html
+https://o2.edu.vn/bai-tap-python-co-ban-co-loi-giai/ -> https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html
+https://o2.edu.vn/bai-tap-python-co-ban-lop-10/ -> https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html
 https://o2.edu.vn/bai-toan-cau-ca-dirac/ -> https://giasu.ai.vn/bai-viet/bai-toan-cau-ca-dirac.html
 https://o2.edu.vn/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet/ -> https://giasu.ai.vn/bai-viet/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet.html
 https://o2.edu.vn/bang-ky-tu-dac-biet-thuong-dung/ -> https://giasu.ai.vn/bai-viet/bang-ky-tu-dac-biet-thuong-dung.html
@@ -23,6 +27,9 @@ https://o2.edu.vn/binh-am-la-gi-cach-doc-pinyin-tieng-trung/ -> https://giasu.ai
 https://o2.edu.vn/bo-go-tieng-viet-cho-mac/ -> https://giasu.ai.vn/bai-viet/bo-go-tieng-viet-cho-mac.html
 https://o2.edu.vn/cac-bai-tho-van-trong-sgk-tieu-hoc-cu/ -> https://giasu.ai.vn/bai-viet/cac-bai-tho-van-trong-sgk-tieu-hoc-cu.html
 https://o2.edu.vn/cac-bieu-hien-cua-nang-luc-toan-hoc/ -> https://giasu.ai.vn/bai-viet/cac-bieu-hien-cua-nang-luc-toan-hoc.html
+https://o2.edu.vn/cac-phep-toan-trong-python/ -> https://giasu.ai.vn/bai-viet/cac-phep-toan-trong-python.html
+https://o2.edu.vn/cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python/ -> https://giasu.ai.vn/bai-viet/cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python.html
+https://o2.edu.vn/cac-tu-khoa-trong-python/ -> https://giasu.ai.vn/bai-viet/cac-tu-khoa-trong-python.html
 https://o2.edu.vn/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang/ -> https://giasu.ai.vn/bai-viet/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang.html
 https://o2.edu.vn/cach-chung-minh-hai-mat-phang-song-song/ -> https://giasu.ai.vn/bai-viet/cach-chung-minh-hai-mat-phang-song-song.html
 https://o2.edu.vn/cach-giai-rubic-2x2/ -> https://giasu.ai.vn/bai-viet/cach-giai-rubic-2x2.html
@@ -38,6 +45,7 @@ https://o2.edu.vn/cach-tinh-thang-du-thang-thieu-bang-ban-tay/ -> https://giasu.
 https://o2.edu.vn/cach-viet-50-bo-thu-thuong-dung/ -> https://giasu.ai.vn/bai-viet/cach-viet-50-bo-thu-thuong-dung.html
 https://o2.edu.vn/cau-do-chin-diem/ -> https://giasu.ai.vn/bai-viet/cau-do-chin-diem.html
 https://o2.edu.vn/cau-do-day-so-bi-an/ -> https://giasu.ai.vn/bai-viet/cau-do-day-so-bi-an.html
+https://o2.edu.vn/cau-lenh-vong-lap-while-trong-python/ -> https://giasu.ai.vn/bai-viet/cau-lenh-vong-lap-while-trong-python.html
 https://o2.edu.vn/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z/ -> https://giasu.ai.vn/bai-viet/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z.html
 https://o2.edu.vn/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o/ -> https://giasu.ai.vn/bai-viet/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o.html
 https://o2.edu.vn/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi/ -> https://giasu.ai.vn/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi.html
@@ -53,7 +61,9 @@ https://o2.edu.vn/este-x-co-cong-thuc-phan-tu-c6h10o4-xa-phong-hoa-hoan-toan-x-b
 https://o2.edu.vn/file-luyen-viet-50-bo-thu-thuong-dung/ -> https://giasu.ai.vn/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html
 https://o2.edu.vn/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat/ -> https://giasu.ai.vn/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html
 https://o2.edu.vn/giai-thoai-archimedes/ -> https://giasu.ai.vn/bai-viet/giai-thoai-archimedes.html
+https://o2.edu.vn/gioi-thieu-cai-dat-python/ -> https://giasu.ai.vn/bai-viet/gioi-thieu-cai-dat-python.html
 https://o2.edu.vn/goc-giua-hai-duong-thang-trong-khong-gian/ -> https://giasu.ai.vn/bai-viet/goc-giua-hai-duong-thang-trong-khong-gian.html
+https://o2.edu.vn/ham-an-danh-trong-python/ -> https://giasu.ai.vn/bai-viet/ham-an-danh-trong-python.html
 https://o2.edu.vn/ham-so-bac-hai/ -> https://giasu.ai.vn/bai-viet/ham-so-bac-hai.html
 https://o2.edu.vn/he-thuc-luong-trong-tam-giac-lop-10/ -> https://giasu.ai.vn/bai-viet/he-thuc-luong-trong-tam-giac-lop-10.html
 https://o2.edu.vn/hinh-chop-hinh-lang-tru-hinh-hop-la-gi/ -> https://giasu.ai.vn/bai-viet/hinh-chop-hinh-lang-tru-hinh-hop-la-gi.html
@@ -61,7 +71,10 @@ https://o2.edu.vn/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau/ -> https://gi
 https://o2.edu.vn/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z/ -> https://giasu.ai.vn/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z.html
 https://o2.edu.vn/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z/ -> https://giasu.ai.vn/bai-viet/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z.html
 https://o2.edu.vn/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung/ -> https://giasu.ai.vn/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html
+https://o2.edu.vn/huong-dan-lap-trinh-python-python-guilde/ -> https://giasu.ai.vn/bai-viet/huong-dan-lap-trinh-python-python-guilde.html
 https://o2.edu.vn/khoang-cach-giua-hai-duong-thang-cheo-nhau/ -> https://giasu.ai.vn/bai-viet/khoang-cach-giua-hai-duong-thang-cheo-nhau.html
+https://o2.edu.vn/kieu-du-lieu-list-danh-sach-trong-python/ -> https://giasu.ai.vn/bai-viet/kieu-du-lieu-list-danh-sach-trong-python.html
+https://o2.edu.vn/kieu-xau-string-trong-python-kieu-chuoi-trong-python/ -> https://giasu.ai.vn/bai-viet/kieu-xau-string-trong-python-kieu-chuoi-trong-python.html
 https://o2.edu.vn/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu/ -> https://giasu.ai.vn/bai-viet/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu.html
 https://o2.edu.vn/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat/ -> https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat.html
 https://o2.edu.vn/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai/ -> https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html
@@ -71,6 +84,7 @@ https://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-
 https://o2.edu.vn/phuong-trinh-chua-can-bat-phuong-trinh-chua-can/ -> https://giasu.ai.vn/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html
 https://o2.edu.vn/phuong-trinh-chua-tri-tuyet-doi/ -> https://giasu.ai.vn/bai-viet/phuong-trinh-chua-tri-tuyet-doi.html
 https://o2.edu.vn/present-simple/ -> https://giasu.ai.vn/bai-viet/present-simple.html
+https://o2.edu.vn/python-lam-duoc-nhung-gi/ -> https://giasu.ai.vn/bai-viet/python-lam-duoc-nhung-gi.html
 https://o2.edu.vn/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai/ -> https://giasu.ai.vn/bai-viet/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai.html
 https://o2.edu.vn/so-sanh-tu-vung-hsk-moi-va-cu/ -> https://giasu.ai.vn/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html
 https://o2.edu.vn/thi-nghiem-mat-nuoc/ -> https://giasu.ai.vn/bai-viet/thi-nghiem-mat-nuoc.html
@@ -88,6 +102,7 @@ https://o2.edu.vn/tong-hop-cac-chuyen-de-hoa-hoc-lop-11/ -> https://giasu.ai.vn/
 https://o2.edu.vn/tong-hop-cac-chuyen-de-hoa-hoc-lop-12/ -> https://giasu.ai.vn/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html
 https://o2.edu.vn/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet/ -> https://giasu.ai.vn/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html
 https://o2.edu.vn/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/ -> https://giasu.ai.vn/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html
+https://o2.edu.vn/tu-khoa-and-trong-python-de-lam-gi/ -> https://giasu.ai.vn/bai-viet/tu-khoa-and-trong-python-de-lam-gi.html
 https://o2.edu.vn/viet-doan-van-cam-nhan/ -> https://giasu.ai.vn/bai-viet/viet-doan-van-cam-nhan.html
 https://o2.edu.vn/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam/ -> https://giasu.ai.vn/bai-viet/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam.html
 https://o2.edu.vn/xac-suat-tung-dong-xu/ -> https://giasu.ai.vn/bai-viet/xac-suat-tung-dong-xu.html
@@ -97,6 +112,8 @@ https://o2.edu.vn/xac-suat-tung-dong-xu/ -> https://giasu.ai.vn/bai-viet/xac-sua
 rewrite ^/1000-tu-vung-hsk-4-phien-ban-moi/?$ https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-4-phien-ban-moi.html permanent;
 rewrite ^/1000-tu-vung-hsk-5-phien-ban-moi/?$ https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html permanent;
 rewrite ^/1100-tu-vung-hsk-6-phien-ban-moi/?$ https://giasu.ai.vn/bai-viet/1100-tu-vung-hsk-6-phien-ban-moi.html permanent;
+rewrite ^/138-cau-hoi-trac-nghiem-python/?$ https://giasu.ai.vn/bai-viet/138-cau-hoi-trac-nghiem-python.html permanent;
+rewrite ^/15-cuon-sach-hoc-python-mien-phi/?$ https://giasu.ai.vn/bai-viet/15-cuon-sach-hoc-python-mien-phi.html permanent;
 rewrite ^/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau/?$ https://giasu.ai.vn/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html permanent;
 rewrite ^/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/?$ https://giasu.ai.vn/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html permanent;
 rewrite ^/2000-chu-kanji-thong-dung-nhat/?$ https://giasu.ai.vn/bai-viet/2000-chu-kanji-thong-dung-nhat.html permanent;
@@ -107,6 +124,8 @@ rewrite ^/50-bo-thu-thuong-dung-pdf/?$ https://giasu.ai.vn/bai-viet/50-bo-thu-th
 rewrite ^/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat/?$ https://giasu.ai.vn/bai-viet/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat.html permanent;
 rewrite ^/700-tu-vung-hsk-2-phien-ban-moi/?$ https://giasu.ai.vn/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html permanent;
 rewrite ^/900-tu-vung-hsk-3-phien-ban-moi/?$ https://giasu.ai.vn/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html permanent;
+rewrite ^/bai-tap-python-co-ban-co-loi-giai/?$ https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html permanent;
+rewrite ^/bai-tap-python-co-ban-lop-10/?$ https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html permanent;
 rewrite ^/bai-toan-cau-ca-dirac/?$ https://giasu.ai.vn/bai-viet/bai-toan-cau-ca-dirac.html permanent;
 rewrite ^/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet/?$ https://giasu.ai.vn/bai-viet/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet.html permanent;
 rewrite ^/bang-ky-tu-dac-biet-thuong-dung/?$ https://giasu.ai.vn/bai-viet/bang-ky-tu-dac-biet-thuong-dung.html permanent;
@@ -116,6 +135,9 @@ rewrite ^/binh-am-la-gi-cach-doc-pinyin-tieng-trung/?$ https://giasu.ai.vn/bai-v
 rewrite ^/bo-go-tieng-viet-cho-mac/?$ https://giasu.ai.vn/bai-viet/bo-go-tieng-viet-cho-mac.html permanent;
 rewrite ^/cac-bai-tho-van-trong-sgk-tieu-hoc-cu/?$ https://giasu.ai.vn/bai-viet/cac-bai-tho-van-trong-sgk-tieu-hoc-cu.html permanent;
 rewrite ^/cac-bieu-hien-cua-nang-luc-toan-hoc/?$ https://giasu.ai.vn/bai-viet/cac-bieu-hien-cua-nang-luc-toan-hoc.html permanent;
+rewrite ^/cac-phep-toan-trong-python/?$ https://giasu.ai.vn/bai-viet/cac-phep-toan-trong-python.html permanent;
+rewrite ^/cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python/?$ https://giasu.ai.vn/bai-viet/cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python.html permanent;
+rewrite ^/cac-tu-khoa-trong-python/?$ https://giasu.ai.vn/bai-viet/cac-tu-khoa-trong-python.html permanent;
 rewrite ^/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang/?$ https://giasu.ai.vn/bai-viet/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang.html permanent;
 rewrite ^/cach-chung-minh-hai-mat-phang-song-song/?$ https://giasu.ai.vn/bai-viet/cach-chung-minh-hai-mat-phang-song-song.html permanent;
 rewrite ^/cach-giai-rubic-2x2/?$ https://giasu.ai.vn/bai-viet/cach-giai-rubic-2x2.html permanent;
@@ -131,6 +153,7 @@ rewrite ^/cach-tinh-thang-du-thang-thieu-bang-ban-tay/?$ https://giasu.ai.vn/bai
 rewrite ^/cach-viet-50-bo-thu-thuong-dung/?$ https://giasu.ai.vn/bai-viet/cach-viet-50-bo-thu-thuong-dung.html permanent;
 rewrite ^/cau-do-chin-diem/?$ https://giasu.ai.vn/bai-viet/cau-do-chin-diem.html permanent;
 rewrite ^/cau-do-day-so-bi-an/?$ https://giasu.ai.vn/bai-viet/cau-do-day-so-bi-an.html permanent;
+rewrite ^/cau-lenh-vong-lap-while-trong-python/?$ https://giasu.ai.vn/bai-viet/cau-lenh-vong-lap-while-trong-python.html permanent;
 rewrite ^/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z/?$ https://giasu.ai.vn/bai-viet/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z.html permanent;
 rewrite ^/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o/?$ https://giasu.ai.vn/bai-viet/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o.html permanent;
 rewrite ^/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi/?$ https://giasu.ai.vn/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi.html permanent;
@@ -146,7 +169,9 @@ rewrite ^/este-x-co-cong-thuc-phan-tu-c6h10o4-xa-phong-hoa-hoan-toan-x-bang-dung
 rewrite ^/file-luyen-viet-50-bo-thu-thuong-dung/?$ https://giasu.ai.vn/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html permanent;
 rewrite ^/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat/?$ https://giasu.ai.vn/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html permanent;
 rewrite ^/giai-thoai-archimedes/?$ https://giasu.ai.vn/bai-viet/giai-thoai-archimedes.html permanent;
+rewrite ^/gioi-thieu-cai-dat-python/?$ https://giasu.ai.vn/bai-viet/gioi-thieu-cai-dat-python.html permanent;
 rewrite ^/goc-giua-hai-duong-thang-trong-khong-gian/?$ https://giasu.ai.vn/bai-viet/goc-giua-hai-duong-thang-trong-khong-gian.html permanent;
+rewrite ^/ham-an-danh-trong-python/?$ https://giasu.ai.vn/bai-viet/ham-an-danh-trong-python.html permanent;
 rewrite ^/ham-so-bac-hai/?$ https://giasu.ai.vn/bai-viet/ham-so-bac-hai.html permanent;
 rewrite ^/he-thuc-luong-trong-tam-giac-lop-10/?$ https://giasu.ai.vn/bai-viet/he-thuc-luong-trong-tam-giac-lop-10.html permanent;
 rewrite ^/hinh-chop-hinh-lang-tru-hinh-hop-la-gi/?$ https://giasu.ai.vn/bai-viet/hinh-chop-hinh-lang-tru-hinh-hop-la-gi.html permanent;
@@ -154,7 +179,10 @@ rewrite ^/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau/?$ https://giasu.ai.vn
 rewrite ^/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z/?$ https://giasu.ai.vn/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z.html permanent;
 rewrite ^/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z/?$ https://giasu.ai.vn/bai-viet/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z.html permanent;
 rewrite ^/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung/?$ https://giasu.ai.vn/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html permanent;
+rewrite ^/huong-dan-lap-trinh-python-python-guilde/?$ https://giasu.ai.vn/bai-viet/huong-dan-lap-trinh-python-python-guilde.html permanent;
 rewrite ^/khoang-cach-giua-hai-duong-thang-cheo-nhau/?$ https://giasu.ai.vn/bai-viet/khoang-cach-giua-hai-duong-thang-cheo-nhau.html permanent;
+rewrite ^/kieu-du-lieu-list-danh-sach-trong-python/?$ https://giasu.ai.vn/bai-viet/kieu-du-lieu-list-danh-sach-trong-python.html permanent;
+rewrite ^/kieu-xau-string-trong-python-kieu-chuoi-trong-python/?$ https://giasu.ai.vn/bai-viet/kieu-xau-string-trong-python-kieu-chuoi-trong-python.html permanent;
 rewrite ^/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu/?$ https://giasu.ai.vn/bai-viet/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu.html permanent;
 rewrite ^/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat/?$ https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat.html permanent;
 rewrite ^/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai/?$ https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html permanent;
@@ -164,6 +192,7 @@ rewrite ^/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co/?$ ht
 rewrite ^/phuong-trinh-chua-can-bat-phuong-trinh-chua-can/?$ https://giasu.ai.vn/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html permanent;
 rewrite ^/phuong-trinh-chua-tri-tuyet-doi/?$ https://giasu.ai.vn/bai-viet/phuong-trinh-chua-tri-tuyet-doi.html permanent;
 rewrite ^/present-simple/?$ https://giasu.ai.vn/bai-viet/present-simple.html permanent;
+rewrite ^/python-lam-duoc-nhung-gi/?$ https://giasu.ai.vn/bai-viet/python-lam-duoc-nhung-gi.html permanent;
 rewrite ^/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai/?$ https://giasu.ai.vn/bai-viet/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai.html permanent;
 rewrite ^/so-sanh-tu-vung-hsk-moi-va-cu/?$ https://giasu.ai.vn/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html permanent;
 rewrite ^/thi-nghiem-mat-nuoc/?$ https://giasu.ai.vn/bai-viet/thi-nghiem-mat-nuoc.html permanent;
@@ -181,6 +210,7 @@ rewrite ^/tong-hop-cac-chuyen-de-hoa-hoc-lop-11/?$ https://giasu.ai.vn/bai-viet/
 rewrite ^/tong-hop-cac-chuyen-de-hoa-hoc-lop-12/?$ https://giasu.ai.vn/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html permanent;
 rewrite ^/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet/?$ https://giasu.ai.vn/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html permanent;
 rewrite ^/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/?$ https://giasu.ai.vn/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html permanent;
+rewrite ^/tu-khoa-and-trong-python-de-lam-gi/?$ https://giasu.ai.vn/bai-viet/tu-khoa-and-trong-python-de-lam-gi.html permanent;
 rewrite ^/viet-doan-van-cam-nhan/?$ https://giasu.ai.vn/bai-viet/viet-doan-van-cam-nhan.html permanent;
 rewrite ^/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam/?$ https://giasu.ai.vn/bai-viet/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam.html permanent;
 rewrite ^/xac-suat-tung-dong-xu/?$ https://giasu.ai.vn/bai-viet/xac-suat-tung-dong-xu.html permanent;
