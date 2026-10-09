@@ -64,7 +64,7 @@ CỰC TRỊ CỦA HÀM SỐ:
 
 **VI. HỆ THỐNG BÀI KIỂM TRA CUỐI BÀI.**
 
-[chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao](#drive-pending-chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao.pdf)[Download](#drive-pending-chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao.pdf)
+[chuyen-de-tinh-don-dieu-va-cuc-tri-cua-ham-so-tu-co-ban-den-nang-cao](https://drive.google.com/file/d/1m83qaSget4i9F5Lj3iBNwh63F7x7vFnc/view?usp=sharing)[Download](https://drive.google.com/file/d/1m83qaSget4i9F5Lj3iBNwh63F7x7vFnc/view?usp=sharing)
 
 ## Chuyên đề giá trị lớn nhất và giá trị nhỏ nhất của hàm số từ cơ bản đến nâng cao
 
@@ -139,4 +139,4 @@ CỰC TRỊ CỦA HÀM SỐ:
 + Dạng 2. Tương giao hàm hợp, hàm ẩn.
 + Dạng 3. Biện luận tương giao hàm hợp, hàm ẩn chứa tham số.
 
-[chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao](#drive-pending-chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf)[Download](#drive-pending-chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf)
+[chuyen-de-khao-sat-su-bien-thien-va-ve-do-thi-ham-so-tu-co-ban-den-nang-cao](https://drive.google.com/file/d/1l-tgMDUBvbRuU00jovhTIC5uG7G0QAvy/view?usp=sharing)[Download](https://drive.google.com/file/d/1l-tgMDUBvbRuU00jovhTIC5uG7G0QAvy/view?usp=sharing)

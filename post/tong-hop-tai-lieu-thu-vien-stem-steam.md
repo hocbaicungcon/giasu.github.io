@@ -85,7 +85,7 @@ Các thầy cô xem và tải tại [ĐÂY](https://drive.google.com/file/d/1h9z
 
 ## 69. Giáo án KHTN 6
 
-Các thầy cô tải file tại [ĐÂY](#drive-pending-giao-an-khtn-LOP-6-hay-nhat.doc)
+Các thầy cô tải file tại [ĐÂY](https://drive.google.com/file/d/1leMb0RAGvrgoxznmaO3xqYqu8oAebKe2/view?usp=sharing)
 
 ## 68. Giáo án powerpoint Vật lí 10 KNTT
 
@@ -254,7 +254,7 @@ Các thầy cô tải tại đây: [sinhhoatchunhiem](/assets/docs/shcn.pptx) v�
 
 ## 29. Giáo án công nghệ 6 (Kết nối tri thức với cuộc sống)
 
-Các thầy cô tải tại đây: [giáo án CÔNG NGHỆ 6 (KẾT NỐI TRI THỨC VỚI CUỘC SỐNG)](#drive-pending-giao-an-CONG-NGHE-6-KET-NOI-TRI-THUC-VOI-CUOC-SONG.doc)
+Các thầy cô tải tại đây: [giáo án CÔNG NGHỆ 6 (KẾT NỐI TRI THỨC VỚI CUỘC SỐNG)](https://drive.google.com/file/d/1xUqd6fKd93FzfZX8M5YJ8E6TVVlz3Pp6/view?usp=sharing)
 
 ## 28.  Giáo án HĐTN 6 năm học 2020-2021
 
@@ -266,7 +266,7 @@ Các thầy cô tải tại đây: [GIÁO-ÁN-HĐTN-6-NĂM-21-22-1](/assets/docs
 
 ## 26. Giáo án môn toán THCS các khối 7 8 9
 
-Các thầy cô download tại đây: [Toán 7 8 9-20210830T023759Z-001](#drive-pending-Toan-7-8-9-20210830T023759Z-001-1.zip)
+Các thầy cô download tại đây: [Toán 7 8 9-20210830T023759Z-001](https://drive.google.com/file/d/1cSaNonMWODdgQrtCe0SJXDZFonRJuLw1/view?usp=sharing)
 
 ## 25. Giáo án công nghệ 6 chân trời sang tạo
 

@@ -8,6 +8,7 @@ Công cụ cập nhật liên kết Google Drive cho các bài viết.
 import os
 import re
 import csv
+import unicodedata
 
 WORKSPACE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 POST_DIR = os.path.join(WORKSPACE_ROOT, 'post')
@@ -26,6 +27,8 @@ def update_drive_links():
             url = row.get('drive_url', '').strip()
             if fn and url and url.startswith(('http://', 'https://')):
                 mapping[fn] = url
+                mapping[unicodedata.normalize('NFC', fn)] = url
+                mapping[unicodedata.normalize('NFD', fn)] = url
 
     if not mapping:
         print("Chưa có liên kết Google Drive nào được điền trong o2edu/drive_links.csv.")
