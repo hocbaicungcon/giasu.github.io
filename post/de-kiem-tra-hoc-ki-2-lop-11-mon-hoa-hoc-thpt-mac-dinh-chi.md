@@ -70,9 +70,8 @@ Cho:  C = 12, H = 1 , O = 16 , Cu = 64 , Ca=40 , Ag =108, N=14 ,Na=23
 
 O2 Education gửi các thầy cô link download đề thi
 
-[Hoa 11- Mac Dinh Chi-da](/assets/docs/Hoa-11-Mac-Dinh-Chi-da.doc)
-
-[Hoa 11- Mac Dinh Chi-de](/assets/docs/Hoa-11-Mac-Dinh-Chi-de.doc)
+- [Hoa 11- Mac Dinh Chi-da](/assets/docs/Hoa-11-Mac-Dinh-Chi-da.doc)
+- [Hoa 11- Mac Dinh Chi-de](/assets/docs/Hoa-11-Mac-Dinh-Chi-de.doc)
 
  
 

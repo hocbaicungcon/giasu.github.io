@@ -569,7 +569,7 @@ SỞ GD&ĐT VĨNH PHÚC          **KỲ THI CHỌN HSG LỚP 10, 11 CH�
 
 O2 Education gửi các thầy cô link download đề thi
 
-[HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023-giasu.ai.vn](/assets/docs/HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023-giasu.ai.vn.docx)[Download](/assets/docs/HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023-giasu.ai.vn.docx)
+- [HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023](/assets/docs/HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

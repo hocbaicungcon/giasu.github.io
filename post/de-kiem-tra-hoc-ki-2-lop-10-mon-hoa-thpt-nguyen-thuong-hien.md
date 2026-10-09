@@ -211,7 +211,7 @@ Ta có : 2,58 = 0,03/ (n+1). (98+80n) → n =2 CT : H2SO4.2SO3
 
 O2 Education gửi các thầy cô link download đề thi
 
-[Hoá 10 Nguyễn Thượng Hiền](/assets/docs/Hoa-10-Nguyen-Thuong-Hien.docx)
+- [Hoá 10 Nguyễn Thượng Hiền](/assets/docs/Hoa-10-Nguyen-Thuong-Hien.docx)
 
  
 

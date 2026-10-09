@@ -82,7 +82,7 @@ Số nhận định đúng là:
 
 O2 Education gửi các thầy cô link download file pdf đầy đủ
 
-[PP23 – ĐỒNG ĐẲNG HOÁ](/assets/docs/PP23-DONG-DANG-HOA.pdf)
+- [PP23 – ĐỒNG ĐẲNG HOÁ](/assets/docs/PP23-DONG-DANG-HOA.pdf)
 
  
 

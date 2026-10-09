@@ -107,7 +107,7 @@ Một bình gas (khí hóa lỏng) chứa hỗn hợp propane và butane với t
 
 O2 Education gửi các thầy cô link download đề thi
 
-[2023-2024-HSG-11-Nghe-An-De-HDC-giasu.ai.vn](/assets/docs/2023-2024-HSG-11-Nghe-An-De-HDC-giasu.ai.vn.docx)[Download](/assets/docs/2023-2024-HSG-11-Nghe-An-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-11-Nghe-An-De-HDC](/assets/docs/2023-2024-HSG-11-Nghe-An-De-HDC-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

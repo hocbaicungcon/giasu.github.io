@@ -164,8 +164,8 @@ Số báo danh: ………………………………………
 
 O2 Education gửi các thầy cô link download đề thi
 
-[BA-RIA-VUNG-TAU-DE-CT-HOA-11-giasu.ai.vn](/assets/docs/BA-RIA-VUNG-TAU-DE-CT-HOA-11-giasu.ai.vn.doc)[Download](/assets/docs/BA-RIA-VUNG-TAU-DE-CT-HOA-11-giasu.ai.vn.doc)
-[BA-RIA-VUNG-TAU-HDC-HOA-11-giasu.ai.vn](/assets/docs/BA-RIA-VUNG-TAU-HDC-HOA-11-giasu.ai.vn.docx)[Download](/assets/docs/BA-RIA-VUNG-TAU-HDC-HOA-11-giasu.ai.vn.docx)
+- [BA-RIA-VUNG-TAU-DE-CT-HOA-11](/assets/docs/BA-RIA-VUNG-TAU-DE-CT-HOA-11-giasu.ai.vn.doc)
+- [BA-RIA-VUNG-TAU-HDC-HOA-11](/assets/docs/BA-RIA-VUNG-TAU-HDC-HOA-11-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -15,7 +15,7 @@ grade: 11
 
 O2 Education gửi các thầy cô link download
 
-[Giáo án chuyên đề hóa 11 KNTT word + powerpoint](https://drive.google.com/drive/folders/1vkAyz930lpSBJFOTUu3FWj-VKymWM8RN?usp=drive_link)
+- [Giáo án chuyên đề hóa 11 KNTT word + powerpoint](https://drive.google.com/drive/folders/1vkAyz930lpSBJFOTUu3FWj-VKymWM8RN?usp=drive_link)
 
 Mời các thầy cô và các em xem thêm
 

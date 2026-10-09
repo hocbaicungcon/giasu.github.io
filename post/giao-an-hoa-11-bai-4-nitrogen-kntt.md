@@ -213,8 +213,8 @@ HS giải quyết các câu hỏi/bài tập sau
 
 O2 Education gửi các thầy cô link download giáo án
 
-[04-KNTT-BAI-4-NITROGEN-NGO-LAN](/assets/docs/04-KNTT-BAI-4-NITROGEN-NGO-LAN.docx)[Download](/assets/docs/04-KNTT-BAI-4-NITROGEN-NGO-LAN.docx)
-[04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man](/assets/docs/04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man.docx)[Download](/assets/docs/04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man.docx)
+- [04-KNTT-BAI-4-NITROGEN-NGO-LAN](/assets/docs/04-KNTT-BAI-4-NITROGEN-NGO-LAN.docx)
+- [04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man](/assets/docs/04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man.docx)
 
 Mời các thầy cô và các em xem thêm
 

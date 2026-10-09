@@ -327,7 +327,7 @@ Biết 1ppm = 10-6,  một số giá trị năng lượng liên kết (E, tính
 
 O2 Education gửi các thầy cô link download đề thi
 
-[HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023-giasu.ai.vn](/assets/docs/HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023-giasu.ai.vn.docx)[Download](/assets/docs/HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023-giasu.ai.vn.docx)
+- [HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023](/assets/docs/HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

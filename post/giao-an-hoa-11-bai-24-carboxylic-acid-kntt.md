@@ -195,11 +195,11 @@ https://laodong.vn/chuyen-nha-minh/8-cong-dung-ky-dieu-cua-giam-gao-1019450.ldo
 
 O2 Education gửi các thầy cô link download giáo án
 
-[KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN](/assets/docs/KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN.docx)[Download](/assets/docs/KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN.docx)
-[PHT-tro-choi-manh-ghep](/assets/docs/PHT-tro-choi-manh-ghep.pdf)[Download](/assets/docs/PHT-tro-choi-manh-ghep.pdf)
-[PHT-tro-choi-manh-ghep](https://giasu.ai.vn/wp-content/uploads/2023/08/PHT-tro-choi-manh-ghep.png)[Download](https://giasu.ai.vn/wp-content/uploads/2023/08/PHT-tro-choi-manh-ghep.png)
-[TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID-DAP-AN](/assets/docs/TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID-DAP-AN.docx)[Download](/assets/docs/TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID-DAP-AN.docx)
-[TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID](/assets/docs/TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID.docx)[Download](/assets/docs/TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID.docx)
+- [KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN](/assets/docs/KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN.docx)
+- [PHT-tro-choi-manh-ghep](/assets/docs/PHT-tro-choi-manh-ghep.pdf)
+[PHT-tro-choi-manh-ghep](https://giasu.ai.vn/wp-content/uploads/2023/08/PHT-tro-choi-manh-ghep.png)
+- [TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID-DAP-AN](/assets/docs/TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID-DAP-AN.docx)
+- [TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID](/assets/docs/TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID.docx)
 
 Mời các thầy cô và các em xem thêm
 

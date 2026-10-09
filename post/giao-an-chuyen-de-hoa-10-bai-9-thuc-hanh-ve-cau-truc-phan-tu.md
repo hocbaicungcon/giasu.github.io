@@ -385,8 +385,8 @@ Mức 4: Đạt được 3 tiêu chí trở xuống.
 
 O2 Education gửi các thầy cô link download giáo án
 
-[BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU](/assets/docs/BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)[Download](/assets/docs/BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)
-[Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU](/assets/docs/Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)[Download](/assets/docs/Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)
+- [BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU](/assets/docs/BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)
+- [Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU](/assets/docs/Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

@@ -334,7 +334,7 @@ Số ngày mà hộ gia đình sử dụng hết bình gas là 597600.0,810000�
 **V. NHẬN XÉT
 O2 Education gửi các thầy cô link download giáo án
 
-[Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no](/assets/docs/Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no.docx)[Download](/assets/docs/Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no.docx)
+- [Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no](/assets/docs/Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no.docx)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

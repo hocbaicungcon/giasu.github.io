@@ -373,7 +373,7 @@ phẩm khử duy nhất của *S*) và dung dịch Y chứa 332m/155 gam muối.
 ***            Hết
 O2 Education gửi các thầy cô link download đề thi
 
-[2023-2024-HSG-10-CUM-3-TRUONG-HAI-DUONG-Fiel-De-HDC-giasu.ai.vn](/assets/docs/2023-2024-HSG-10-CUM-3-TRUONG-HAI-DUONG-Fiel-De-HDC-giasu.ai.vn.docx)[Download](/assets/docs/2023-2024-HSG-10-CUM-3-TRUONG-HAI-DUONG-Fiel-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-CUM-3-TRUONG-HAI-DUONG-Fiel-De-HDC](/assets/docs/2023-2024-HSG-10-CUM-3-TRUONG-HAI-DUONG-Fiel-De-HDC-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -85,7 +85,7 @@ grade: 12
 
 O2 Education gửi các thầy cô link download file pdf đầy đủ
 
-[PP17 – QUY ĐỔI PEPTIT](/assets/docs/PP17-QUY-DOI-PEPTIT.pdf)
+- [PP17 – QUY ĐỔI PEPTIT](/assets/docs/PP17-QUY-DOI-PEPTIT.pdf)
 
  
 

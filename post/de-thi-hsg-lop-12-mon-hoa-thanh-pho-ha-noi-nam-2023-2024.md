@@ -124,8 +124,8 @@ b) Xác định công thức cấu tạo của  và viết phương trình hóa
 
 O2 Education gửi các thầy cô link download đề thi
 
-[2023-2024-HSG-12-TP-Ha-Noi-File-De-giasu.ai.vn](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-De-giasu.ai.vn.docx)[Download](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-De-giasu.ai.vn.docx)
-[2023-2024-HSG-12-TP-Ha-Noi-File-HDC-giasu.ai.vn](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-HDC-giasu.ai.vn.docx)[Download](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-12-TP-Ha-Noi-File-De](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-De-giasu.ai.vn.docx)
+- [2023-2024-HSG-12-TP-Ha-Noi-File-HDC](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-HDC-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

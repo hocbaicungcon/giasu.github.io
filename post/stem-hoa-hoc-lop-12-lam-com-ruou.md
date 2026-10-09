@@ -817,7 +817,7 @@ Nhóm:
 
 O2 Education gửi các thầy cô link download
 
-[CHU DE STEM – LAM COM RUOU](/assets/docs/CHU-DE-STEM-LAM-COM-RUOU.docx)
+- [CHU DE STEM – LAM COM RUOU](/assets/docs/CHU-DE-STEM-LAM-COM-RUOU.docx)
 
  
 

@@ -137,7 +137,7 @@ PPCT hóa 11 KNTT có chuyên đề học tập
 
 O2 Education gửi các thầy cô link download
 
-[PPCT-HOA-11-KNTT-co-CD](/assets/docs/PPCT-HOA-11-KNTT-co-CD.docx)[Download](/assets/docs/PPCT-HOA-11-KNTT-co-CD.docx)
+- [PPCT-HOA-11-KNTT-co-CD](/assets/docs/PPCT-HOA-11-KNTT-co-CD.docx)
 
 ﻿
 

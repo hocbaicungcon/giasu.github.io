@@ -368,7 +368,7 @@ Phiếu học tập:
 
 O2 Education gửi các thầy cô link download miễn phí
 
-[STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN](/assets/docs/STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN.docx)[Download](/assets/docs/STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN.docx)
+- [STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN](/assets/docs/STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN.docx)
 
 Mời các thầy cô xem thêm
 

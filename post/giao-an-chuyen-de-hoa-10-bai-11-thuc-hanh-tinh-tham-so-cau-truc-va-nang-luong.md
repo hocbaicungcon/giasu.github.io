@@ -421,8 +421,8 @@ Mức 4: Đạt được 3 tiêu chí trở xuống.
 
 O2 Education gửi các thầy cô link download giáo án
 
-[Tiet-34_-BAI-11-THUC-HANHTINH-THAM-SO-CAU-TRUC-VA-NANG-LUONG](/assets/docs/Tiet-34_-BAI-11-THUC-HANHTINH-THAM-SO-CAU-TRUC-VA-NANG-LUONG.docx)[Download](/assets/docs/Tiet-34_-BAI-11-THUC-HANHTINH-THAM-SO-CAU-TRUC-VA-NANG-LUONG.docx)
-[BAI-TAP-CHUYEN-DE-TINH-THAM-SO-VA-CAU-TRUC-NANG-LUONG](/assets/docs/BAI-TAP-CHUYEN-DE-TINH-THAM-SO-VA-CAU-TRUC-NANG-LUONG.docx)[Download](/assets/docs/BAI-TAP-CHUYEN-DE-TINH-THAM-SO-VA-CAU-TRUC-NANG-LUONG.docx)
+- [Tiet-34_-BAI-11-THUC-HANHTINH-THAM-SO-CAU-TRUC-VA-NANG-LUONG](/assets/docs/Tiet-34_-BAI-11-THUC-HANHTINH-THAM-SO-CAU-TRUC-VA-NANG-LUONG.docx)
+- [BAI-TAP-CHUYEN-DE-TINH-THAM-SO-VA-CAU-TRUC-NANG-LUONG](/assets/docs/BAI-TAP-CHUYEN-DE-TINH-THAM-SO-VA-CAU-TRUC-NANG-LUONG.docx)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

@@ -70,7 +70,7 @@ Giáo án powerpoint hóa 11
 
 Hoặc thầy cô có thể download file tất cả các bài tại
 
-[Link google driver giáo án cả năm](https://drive.google.com/drive/folders/1ooXWNwJRHcJCIIRLLVKMIDGB5fH06LJo?usp=sharing)
+- [Link google driver giáo án cả năm](https://drive.google.com/drive/folders/1ooXWNwJRHcJCIIRLLVKMIDGB5fH06LJo?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

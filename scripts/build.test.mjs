@@ -148,7 +148,9 @@ test('normalizeMarkdownFormatting normalizes bold, italic and preserves code/mat
   '**Ví dụ 1.**Giải phương trình',
   '```python\ndef foo(*args, **kwargs):\n    return 2 ** 3\n```',
   '`**inline**`',
-  '$$A^* B^*$$ and $x^* + y^*$'
+  '$$A^* B^*$$ and $x^* + y^*$',
+  '[Tài liệu](/assets/docs/file.docx)[Download](/assets/docs/file.docx)',
+  '[Google Drive](https://drive.google.com/file/d/123/view)'
  ].join('\n\n');
  const norm = normalizeMarkdownFormatting(input);
  const p = parsePost(source + '\n\n' + norm, 'markdown-formatting.md');
@@ -159,6 +161,9 @@ test('normalizeMarkdownFormatting normalizes bold, italic and preserves code/mat
  assert.match(p.html, /<strong>Ví dụ 1.<\/strong> Giải phương trình/);
  assert.match(p.html, /class="language-python"/);
  assert.match(p.html, /def foo\(\*args, \*\*kwargs\):/);
+ assert.match(p.html, /<li>(?:\s*<p>)?\s*<a href="\/assets\/docs\/file\.docx">Tài liệu<\/a>/);
+ assert.match(p.html, /<li>(?:\s*<p>)?\s*<a href="https:\/\/drive\.google\.com\/file\/d\/123\/view">Google Drive<\/a>/);
+ assert.doesNotMatch(p.html, /Download/);
 });
 
 

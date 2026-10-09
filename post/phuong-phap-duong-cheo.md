@@ -139,7 +139,7 @@ Mặt khác m1 + m2 = 500 nên suy ra
 
 O2 Education gửi các thầy cô link download file pdf đầy đủ
 
-[PP9 – ĐƯỜNG CHÉO](/assets/docs/PP9-DUONG-CHEO.pdf)
+- [PP9 – ĐƯỜNG CHÉO](/assets/docs/PP9-DUONG-CHEO.pdf)
 
  
 

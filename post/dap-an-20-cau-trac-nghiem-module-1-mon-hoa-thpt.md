@@ -262,7 +262,7 @@ grade: 12
 
 Các thầy cô có thể download file về máy tính tại đây:
 
-[Đáp án 20 câu trắc nghiệm Module 1 môn hóa THPT](/assets/docs/Dap-an-20-cau-trac-nghiem-Module-1-mon-hoa-THPT.docx)
+- [Đáp án 20 câu trắc nghiệm Module 1 môn hóa THPT](/assets/docs/Dap-an-20-cau-trac-nghiem-Module-1-mon-hoa-THPT.docx)
 
  
 

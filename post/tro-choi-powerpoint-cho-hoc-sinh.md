@@ -31,7 +31,7 @@ Các trò chơi dưới đây do chúng tôi sưu tầm, tổng hợp của các
 
 Mời thầy cô tải tại đây [https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
 
-[![35 TRÒ CHƠI POWERPOINT CHO HỌC SINH 1](assets/images/tro-choi-powerpoint-cho-hoc-sinh-game-powerpoint.webp)](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
+- [![35 TRÒ CHƠI POWERPOINT CHO HỌC SINH 1](assets/images/tro-choi-powerpoint-cho-hoc-sinh-game-powerpoint.webp)](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
 
 ## Trò chơi Powerpoint Lật mảnh ghép
 

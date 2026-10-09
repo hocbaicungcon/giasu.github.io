@@ -30,9 +30,9 @@ Cùng với xu thế hội nhập quốc tế, Toán và Ngoại ngữ luôn là
 
 ## Đề Thi Mẫu Kỳ Thi SEAMO
 
-[paper-A](/assets/docs/paper-A.pdf)[Download](/assets/docs/paper-A.pdf)
-[paper-B](/assets/docs/paper-B.pdf)[Download](/assets/docs/paper-B.pdf)
-[paper-C](/assets/docs/paper-C.pdf)[Download](/assets/docs/paper-C.pdf)
-[paper-D](/assets/docs/paper-D.pdf)[Download](/assets/docs/paper-D.pdf)
-[paper-E](/assets/docs/paper-E.pdf)[Download](/assets/docs/paper-E.pdf)
-[paper-F](/assets/docs/paper-F.pdf)[Download](/assets/docs/paper-F.pdf)
+- [paper-A](/assets/docs/paper-A.pdf)
+- [paper-B](/assets/docs/paper-B.pdf)
+- [paper-C](/assets/docs/paper-C.pdf)
+- [paper-D](/assets/docs/paper-D.pdf)
+- [paper-E](/assets/docs/paper-E.pdf)
+- [paper-F](/assets/docs/paper-F.pdf)

@@ -346,7 +346,7 @@ Số ngày sử dụng:  (ngày).
 
 O2 Education gửi các thầy cô link download
 
-[61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_](/assets/docs/61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_.docx)[Download](/assets/docs/61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_.docx)
+- [61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_](/assets/docs/61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_.docx)
 
 Mời các thầy cô và các em xem thêm
 

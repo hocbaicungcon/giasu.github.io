@@ -186,7 +186,7 @@ D.(1) Tìm hiểu chương trình giáo dục phổ thông 2018; (2) điều ki�
 
 ## Module 9
 
-[Modul 9](https://drive.google.com/file/d/1vNhd45G7DRkVKk7oi6lBLAzWPrrm5meC/view?usp=sharing)
+- [Modul 9](https://drive.google.com/file/d/1vNhd45G7DRkVKk7oi6lBLAzWPrrm5meC/view?usp=sharing)
 
 [KHBD module 4 môn hóa THPT bài ALKANE](/bai-viet/khbd-module-4-mon-hoa-thpt-bai-alkane.html)
 
