@@ -2,11 +2,12 @@
 /**
  * Plugin Name: Chuyển hướng 301 sang giasu.ai.vn
  * Description: Tự động chuyển hướng các bài viết từ o2.edu.vn sang giasu.ai.vn bằng mã 301 chuẩn SEO.
- * Version: 1.105
+ * Version: 1.120
  */
 
 add_action('template_redirect', function() {
     $redirects = [
+        '/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt/' => 'https://giasu.ai.vn/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt.html',
         '/1000-tu-vung-hsk-4-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-4-phien-ban-moi.html',
         '/1000-tu-vung-hsk-5-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html',
         '/1100-tu-vung-hsk-6-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/1100-tu-vung-hsk-6-phien-ban-moi.html',
@@ -22,10 +23,14 @@ add_action('template_redirect', function() {
         '/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat/' => 'https://giasu.ai.vn/bai-viet/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat.html',
         '/700-tu-vung-hsk-2-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html',
         '/900-tu-vung-hsk-3-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html',
+        '/bai-tap-phan-ung-tao-muoi-amoni/' => 'https://giasu.ai.vn/bai-viet/bai-tap-phan-ung-tao-muoi-amoni.html',
         '/bai-tap-python-co-ban-co-loi-giai/' => 'https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html',
         '/bai-tap-python-co-ban-lop-10/' => 'https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html',
         '/bai-toan-cau-ca-dirac/' => 'https://giasu.ai.vn/bai-viet/bai-toan-cau-ca-dirac.html',
         '/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet.html',
+        '/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet.html',
+        '/bai-toan-do-thi-nang-cao/' => 'https://giasu.ai.vn/bai-viet/bai-toan-do-thi-nang-cao.html',
+        '/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet.html',
         '/bang-ky-tu-dac-biet-thuong-dung/' => 'https://giasu.ai.vn/bai-viet/bang-ky-tu-dac-biet-thuong-dung.html',
         '/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet.html',
         '/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html',
@@ -86,11 +91,21 @@ add_action('template_redirect', function() {
         '/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai/' => 'https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html',
         '/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html',
         '/phan-so-bang-nhau/' => 'https://giasu.ai.vn/bai-viet/phan-so-bang-nhau.html',
+        '/phuong-phap-bao-toan-dien-tich/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-bao-toan-dien-tich.html',
+        '/phuong-phap-bao-toan-electron/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-bao-toan-electron.html',
+        '/phuong-phap-bao-toan-khoi-luong/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-bao-toan-khoi-luong.html',
+        '/phuong-phap-bao-toan-nguyen-to/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-bao-toan-nguyen-to.html',
+        '/phuong-phap-duong-cheo/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-duong-cheo.html',
+        '/phuong-phap-quy-doi/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-quy-doi.html',
+        '/phuong-phap-tang-giam-khoi-luong/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-tang-giam-khoi-luong.html',
+        '/phuong-phap-trung-binh/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-trung-binh.html',
         '/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co/' => 'https://giasu.ai.vn/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html',
         '/phuong-trinh-chua-can-bat-phuong-trinh-chua-can/' => 'https://giasu.ai.vn/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html',
         '/phuong-trinh-chua-tri-tuyet-doi/' => 'https://giasu.ai.vn/bai-viet/phuong-trinh-chua-tri-tuyet-doi.html',
         '/present-simple/' => 'https://giasu.ai.vn/bai-viet/present-simple.html',
         '/python-lam-duoc-nhung-gi/' => 'https://giasu.ai.vn/bai-viet/python-lam-duoc-nhung-gi.html',
+        '/quy-doi-este/' => 'https://giasu.ai.vn/bai-viet/quy-doi-este.html',
+        '/quy-doi-peptit/' => 'https://giasu.ai.vn/bai-viet/quy-doi-peptit.html',
         '/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai/' => 'https://giasu.ai.vn/bai-viet/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai.html',
         '/so-sanh-tu-vung-hsk-moi-va-cu/' => 'https://giasu.ai.vn/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html',
         '/thi-nghiem-mat-nuoc/' => 'https://giasu.ai.vn/bai-viet/thi-nghiem-mat-nuoc.html',
