@@ -32,6 +32,8 @@ test('all published posts build with menu controls, compact metadata and games',
  const read=file=>fs.readFileSync(new URL('../dist/'+file,import.meta.url),'utf8');
  const home=read('index.html');assert.match(home,/<nav id="site-menu"[\s\S]*class="display-controls"[\s\S]*<\/nav>/);assert.doesNotMatch(home,/class="display-bar"|phút đọc/);
  assert.match(home,/<a[^>]*class="[^"]*see-more-btn[^"]*"[^>]*href="\.\/thu-vien\.html"[^>]*>Xem tiếp/);
+ const homeCards=home.match(/<article class="card"/g)||[];assert.equal(homeCards.length,9);
+ const about=read('gioi-thieu.html');assert.match(about,/Miễn trừ trách nhiệm/);assert.match(about,/tính chất tham khảo/);assert.match(about,/thận trọng khi sử dụng/);
  const library=read('thu-vien.html');
  assert.equal((library.match(/data-sort=/g)||[]).length,2);
  assert.match(library,/<div class="cards" id="cards">/);

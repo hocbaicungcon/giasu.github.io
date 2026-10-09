@@ -1314,3 +1314,86 @@ html[data-theme="dark"] #active-filters button:focus-visible {
   font-size: 2.5rem;
   margin: 8px 0;
 }
+
+/* Trang chủ: #cards nhỏ gọn, trình bày 3 cột */
+.library-home .cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.library-home .card {
+  border-radius: 14px;
+}
+
+.library-home .card-art {
+  height: 105px;
+  padding: 10px 14px;
+}
+
+.library-home .art-label {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.library-home .art-symbol {
+  font-size: 2.35rem;
+  top: 25px;
+  left: 20px;
+}
+
+.library-home .art-grade {
+  font-size: 1.1rem;
+}
+
+.library-home .card-content {
+  padding: 14px 16px 8px;
+}
+
+.library-home .card .eyebrow {
+  font-size: 0.72rem;
+  margin-bottom: 4px;
+}
+
+.library-home .card h3 {
+  font-size: 1.0625rem;
+  line-height: 1.45;
+  margin: 4px 0 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.library-home .card p {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #617571;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.library-home .card-bottom {
+  padding: 0 16px 14px;
+  gap: 8px;
+}
+
+.library-home .card-bottom .tag {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+}
+
+@media(max-width: 950px) {
+  .library-home .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media(max-width: 620px) {
+  .library-home .cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
