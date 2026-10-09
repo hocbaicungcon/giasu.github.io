@@ -242,7 +242,7 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
         if clean_href in doc_map:
             href = doc_map[clean_href]
         elif 'o2.edu.vn' in href:
-            p = href.replace('https://o2.edu.vn/', '').strip('/')
+            p = re.sub(r'^https?://o2\.edu\.vn/', '', href).strip('/')
             if p and not p.startswith('wp-content'):
                 href = f"/bai-viet/{p}.html"
         return f"[{re.sub(r'<[^>]+>', '', link_text).strip()}]({href})"
@@ -380,13 +380,13 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
             image_map[urllib.parse.unquote(clean_url)] = local_link
             
     # Extract document attachments (.pdf, .docx, .zip, etc.)
-    doc_urls = re.findall(r'href=[\"\'](https://o2\.edu\.vn/wp-content/uploads/[^\"\']+\.(?:pdf|docx?|xlsx?|pptx?|zip|rar))[\"\']', content_html, re.I)
+    doc_urls = re.findall(r'href=[\"\'](https?://o2\.edu\.vn/wp-content/uploads/[^\"\']+\.(?:pdf|docx?|xlsx?|pptx?|zip|rar))[\"\']', content_html, re.I)
     doc_map = {}
     drive_links = load_drive_links()
     
     for full_url in set(doc_urls):
         clean_url = full_url.split('?')[0]
-        rel_path = clean_url.replace('https://o2.edu.vn/wp-content/', '')
+        rel_path = re.sub(r'^https?://o2\.edu\.vn/wp-content/', '', clean_url)
         unquoted_rel_path = urllib.parse.unquote(rel_path)
         doc_name = os.path.basename(unquoted_rel_path)
         

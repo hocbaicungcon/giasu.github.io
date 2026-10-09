@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Chuyển hướng 301 sang giasu.ai.vn
  * Description: Tự động chuyển hướng các bài viết từ o2.edu.vn sang giasu.ai.vn bằng mã 301 chuẩn SEO.
- * Version: 1.90
+ * Version: 1.105
  */
 
 add_action('template_redirect', function() {
@@ -10,6 +10,8 @@ add_action('template_redirect', function() {
         '/1000-tu-vung-hsk-4-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-4-phien-ban-moi.html',
         '/1000-tu-vung-hsk-5-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html',
         '/1100-tu-vung-hsk-6-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/1100-tu-vung-hsk-6-phien-ban-moi.html',
+        '/138-cau-hoi-trac-nghiem-python/' => 'https://giasu.ai.vn/bai-viet/138-cau-hoi-trac-nghiem-python.html',
+        '/15-cuon-sach-hoc-python-mien-phi/' => 'https://giasu.ai.vn/bai-viet/15-cuon-sach-hoc-python-mien-phi.html',
         '/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau/' => 'https://giasu.ai.vn/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html',
         '/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/' => 'https://giasu.ai.vn/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html',
         '/2000-chu-kanji-thong-dung-nhat/' => 'https://giasu.ai.vn/bai-viet/2000-chu-kanji-thong-dung-nhat.html',
@@ -20,6 +22,8 @@ add_action('template_redirect', function() {
         '/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat/' => 'https://giasu.ai.vn/bai-viet/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat.html',
         '/700-tu-vung-hsk-2-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html',
         '/900-tu-vung-hsk-3-phien-ban-moi/' => 'https://giasu.ai.vn/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html',
+        '/bai-tap-python-co-ban-co-loi-giai/' => 'https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html',
+        '/bai-tap-python-co-ban-lop-10/' => 'https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html',
         '/bai-toan-cau-ca-dirac/' => 'https://giasu.ai.vn/bai-viet/bai-toan-cau-ca-dirac.html',
         '/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet.html',
         '/bang-ky-tu-dac-biet-thuong-dung/' => 'https://giasu.ai.vn/bai-viet/bang-ky-tu-dac-biet-thuong-dung.html',
@@ -29,6 +33,9 @@ add_action('template_redirect', function() {
         '/bo-go-tieng-viet-cho-mac/' => 'https://giasu.ai.vn/bai-viet/bo-go-tieng-viet-cho-mac.html',
         '/cac-bai-tho-van-trong-sgk-tieu-hoc-cu/' => 'https://giasu.ai.vn/bai-viet/cac-bai-tho-van-trong-sgk-tieu-hoc-cu.html',
         '/cac-bieu-hien-cua-nang-luc-toan-hoc/' => 'https://giasu.ai.vn/bai-viet/cac-bieu-hien-cua-nang-luc-toan-hoc.html',
+        '/cac-phep-toan-trong-python/' => 'https://giasu.ai.vn/bai-viet/cac-phep-toan-trong-python.html',
+        '/cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python/' => 'https://giasu.ai.vn/bai-viet/cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python.html',
+        '/cac-tu-khoa-trong-python/' => 'https://giasu.ai.vn/bai-viet/cac-tu-khoa-trong-python.html',
         '/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang/' => 'https://giasu.ai.vn/bai-viet/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang.html',
         '/cach-chung-minh-hai-mat-phang-song-song/' => 'https://giasu.ai.vn/bai-viet/cach-chung-minh-hai-mat-phang-song-song.html',
         '/cach-giai-rubic-2x2/' => 'https://giasu.ai.vn/bai-viet/cach-giai-rubic-2x2.html',
@@ -44,6 +51,7 @@ add_action('template_redirect', function() {
         '/cach-viet-50-bo-thu-thuong-dung/' => 'https://giasu.ai.vn/bai-viet/cach-viet-50-bo-thu-thuong-dung.html',
         '/cau-do-chin-diem/' => 'https://giasu.ai.vn/bai-viet/cau-do-chin-diem.html',
         '/cau-do-day-so-bi-an/' => 'https://giasu.ai.vn/bai-viet/cau-do-day-so-bi-an.html',
+        '/cau-lenh-vong-lap-while-trong-python/' => 'https://giasu.ai.vn/bai-viet/cau-lenh-vong-lap-while-trong-python.html',
         '/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z/' => 'https://giasu.ai.vn/bai-viet/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z.html',
         '/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o/' => 'https://giasu.ai.vn/bai-viet/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o.html',
         '/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi/' => 'https://giasu.ai.vn/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi.html',
@@ -59,7 +67,9 @@ add_action('template_redirect', function() {
         '/file-luyen-viet-50-bo-thu-thuong-dung/' => 'https://giasu.ai.vn/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html',
         '/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat/' => 'https://giasu.ai.vn/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html',
         '/giai-thoai-archimedes/' => 'https://giasu.ai.vn/bai-viet/giai-thoai-archimedes.html',
+        '/gioi-thieu-cai-dat-python/' => 'https://giasu.ai.vn/bai-viet/gioi-thieu-cai-dat-python.html',
         '/goc-giua-hai-duong-thang-trong-khong-gian/' => 'https://giasu.ai.vn/bai-viet/goc-giua-hai-duong-thang-trong-khong-gian.html',
+        '/ham-an-danh-trong-python/' => 'https://giasu.ai.vn/bai-viet/ham-an-danh-trong-python.html',
         '/ham-so-bac-hai/' => 'https://giasu.ai.vn/bai-viet/ham-so-bac-hai.html',
         '/he-thuc-luong-trong-tam-giac-lop-10/' => 'https://giasu.ai.vn/bai-viet/he-thuc-luong-trong-tam-giac-lop-10.html',
         '/hinh-chop-hinh-lang-tru-hinh-hop-la-gi/' => 'https://giasu.ai.vn/bai-viet/hinh-chop-hinh-lang-tru-hinh-hop-la-gi.html',
@@ -67,7 +77,10 @@ add_action('template_redirect', function() {
         '/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z/' => 'https://giasu.ai.vn/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z.html',
         '/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z/' => 'https://giasu.ai.vn/bai-viet/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z.html',
         '/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung/' => 'https://giasu.ai.vn/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html',
+        '/huong-dan-lap-trinh-python-python-guilde/' => 'https://giasu.ai.vn/bai-viet/huong-dan-lap-trinh-python-python-guilde.html',
         '/khoang-cach-giua-hai-duong-thang-cheo-nhau/' => 'https://giasu.ai.vn/bai-viet/khoang-cach-giua-hai-duong-thang-cheo-nhau.html',
+        '/kieu-du-lieu-list-danh-sach-trong-python/' => 'https://giasu.ai.vn/bai-viet/kieu-du-lieu-list-danh-sach-trong-python.html',
+        '/kieu-xau-string-trong-python-kieu-chuoi-trong-python/' => 'https://giasu.ai.vn/bai-viet/kieu-xau-string-trong-python-kieu-chuoi-trong-python.html',
         '/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu/' => 'https://giasu.ai.vn/bai-viet/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu.html',
         '/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat/' => 'https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat.html',
         '/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai/' => 'https://giasu.ai.vn/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html',
@@ -77,6 +90,7 @@ add_action('template_redirect', function() {
         '/phuong-trinh-chua-can-bat-phuong-trinh-chua-can/' => 'https://giasu.ai.vn/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html',
         '/phuong-trinh-chua-tri-tuyet-doi/' => 'https://giasu.ai.vn/bai-viet/phuong-trinh-chua-tri-tuyet-doi.html',
         '/present-simple/' => 'https://giasu.ai.vn/bai-viet/present-simple.html',
+        '/python-lam-duoc-nhung-gi/' => 'https://giasu.ai.vn/bai-viet/python-lam-duoc-nhung-gi.html',
         '/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai/' => 'https://giasu.ai.vn/bai-viet/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai.html',
         '/so-sanh-tu-vung-hsk-moi-va-cu/' => 'https://giasu.ai.vn/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html',
         '/thi-nghiem-mat-nuoc/' => 'https://giasu.ai.vn/bai-viet/thi-nghiem-mat-nuoc.html',
@@ -94,6 +108,7 @@ add_action('template_redirect', function() {
         '/tong-hop-cac-chuyen-de-hoa-hoc-lop-12/' => 'https://giasu.ai.vn/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html',
         '/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html',
         '/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/' => 'https://giasu.ai.vn/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html',
+        '/tu-khoa-and-trong-python-de-lam-gi/' => 'https://giasu.ai.vn/bai-viet/tu-khoa-and-trong-python-de-lam-gi.html',
         '/viet-doan-van-cam-nhan/' => 'https://giasu.ai.vn/bai-viet/viet-doan-van-cam-nhan.html',
         '/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam/' => 'https://giasu.ai.vn/bai-viet/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam.html',
         '/xac-suat-tung-dong-xu/' => 'https://giasu.ai.vn/bai-viet/xac-suat-tung-dong-xu.html',
