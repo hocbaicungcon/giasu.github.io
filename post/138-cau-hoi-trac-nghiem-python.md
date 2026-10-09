@@ -35,10 +35,10 @@ Mời bạn tham khảo 138 câu hỏi trắc nghiệm Python có đáp án. Đ�
 **Câu 3.** Cho biết kết quả của đoạn code sau
 
 ```python
-for i in range(1,5):
-  print(i,end=' ')
-  if i == 3:
-    break
+for i in range(1, 5):
+    print(i, end=' ')
+    if i == 3:
+        break
 ```
 
 **A.** IndentationError: expected an indented block
@@ -144,9 +144,10 @@ Kết quả trên màn hình là:
 
 **Câu 12.** Các kết quả của hàm hiển thị dưới đây là gì?
 
-sum(2,4,6)
-
-sum([1,2,3])
+```python
+sum(2, 4, 6)
+sum([1, 2, 3])
+```
 
 **A.** Error, 6
 
@@ -278,11 +279,12 @@ sum([1,2,3])
 
 **Câu 25.** Khẳng định nào là đúng khi nói về đoạn code sau:
 
+```python
 def printHello():
-
-print(“Hello”)
+    print("Hello")
 
 a = printHello()
+```
 
 **A.** printHello() là một hàm và a là một biến. Cả hai đều không phải đối tượng.
 
@@ -314,23 +316,19 @@ a = printHello()
 
 **Câu 28.** Khẳng định nào là đúng về chương trình dưới đây?
 
+```python
 class A:
+    def __init__(self):
+        self.a = 1
+        self.__b = 1
 
-def **init**(self):
-
-self.a = 1
-
-self.__b = 1
-
-def getY(self):
-
-return self.__b
+    def getY(self):
+        return self.__b
 
 obj = A()
-
 obj.a = 45
-
 print(obj.a)
+```
 
 **A.** Chương trình có lỗi xảy ra vì ‘ __b ‘ là thuộc tính private, không thể truy cập được từ bên ngoài lớp.
 
@@ -342,23 +340,19 @@ print(obj.a)
 
 **Câu 29.** Khẳng định nào là đúng về chương trình dưới đây?
 
+```python
 class A:
+    def __init__(self):
+        self.x = 1
+        self.__y = 1
 
-def **init**(self):
-
-self.x = 1
-
-self.__y = 1
-
-def getY(self):
-
-return self.__y
+    def getY(self):
+        return self.__y
 
 a = A()
-
 a.x = 45
-
 print(a.x)
+```
 
 **A.** Chương trình có lỗi xảy ra vì ‘ x ‘ là thuộc tính private, không thể truy cập được từ bên ngoài lớp.
 
@@ -370,13 +364,14 @@ print(a.x)
 
 **Câu 30.** Khẳng định nào là đúng về đoạn code dưới đây?
 
-f = open(‘test.txt’, ‘r’, encoding = ‘utf-8’)
-
+```python
+f = open('test.txt', 'r', encoding='utf-8')
 f.read()
+```
 
 **A.** Chương trình này đọc nội dung của file test.txt.
 
-**B.** Nếu test.txt có xuống dòng, hàm read() sẽ trả về kí hiệu bắt đầu dòng mới là ‘\ n’.
+**B.** Nếu test.txt có xuống dòng, hàm read() sẽ trả về kí hiệu bắt đầu dòng mới là ‘\n’.
 
 **C.** Bạn có thể truyền một tham số kiểu integer cho read()
 
@@ -446,9 +441,7 @@ như C, Java,…
 
 **D.** Tất cả các đáp án đều đúng.
 
-**Câu 37.**
-
-Khẳng định nào về ngoại lệ là đúng nhất?
+**Câu 37.** Khẳng định nào về ngoại lệ là đúng nhất?
 
 **A.** Ngoại lệ (Exception) là lỗi phát sinh khi đang thực thi chương trình (runtime error).
 
@@ -470,9 +463,10 @@ Khẳng định nào về ngoại lệ là đúng nhất?
 
 **Câu 39.** Kết quả của biểu thức sau là gì?
 
-chr(‘97’)
-
+```python
+chr('97')
 chr(97)
+```
 
 **A.** a Error
 
@@ -484,7 +478,9 @@ chr(97)
 
 **Câu 40.** Kết quả của biểu thức sau là gì?
 
-min(max(False,-3,-4), 2,7)
+```python
+min(max(False, -3, -4), 2, 7)
+```
 
 **A.** 2
 
@@ -496,7 +492,9 @@ min(max(False,-3,-4), 2,7)
 
 **Câu 41.** Kết quả của biểu thức sau là gì?
 
-round(4.5676,2)
+```python
+round(4.5676, 2)
+```
 
 **A.** 4.5
 
@@ -508,7 +506,9 @@ round(4.5676,2)
 
 **Câu 42.** Kết quả của biểu thức sau là gì?
 
+```python
 round(4.576)
+```
 
 **A.** 4.5
 
@@ -520,29 +520,22 @@ round(4.576)
 
 **Câu 43.** Kết quả của chương trình dưới đây là:
 
+```python
 class Point:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
 
-def **init**(self, x = 0, y = 0):
-
-self.x = x
-
-self.y = y
-
-def **sub**(self, other):
-
-x = self.x + other.x
-
-y = self.y + other.y
-
-return Point(x, y)
+    def __sub__(self, other):
+        x = self.x + other.x
+        y = self.y + other.y
+        return Point(x, y)
 
 p1 = Point(3, 4)
-
 p2 = Point(1, 2)
-
-result = p1 – p2
-
+result = p1 - p2
 print(result.x, result.y)
+```
 
 **A.** 2 2
 
@@ -554,9 +547,10 @@ print(result.x, result.y)
 
 **Câu 44.** Kết quả của chương trình được in ra là:
 
-mylist=[‘a’, ‘aa’, ‘aaa’, ‘b’, ‘bb’, ‘bbb’]
-
+```python
+mylist = ['a', 'aa', 'aaa', 'b', 'bb', 'bbb']
 print(mylist[:-1])
+```
 
 **A.** [a, aa, aaa, b, bb]
 
@@ -568,11 +562,11 @@ print(mylist[:-1])
 
 **Câu 45.** Kết quả của chương trình được in ra màn hình là?
 
-string = “my name is x”
-
+```python
+string = "my name is x"
 for i in string:
-
-print (i, end=”, “)
+    print(i, end=", ")
+```
 
 **A.** m, y,, n, a, m, e,, i, s,, x,
 
@@ -584,21 +578,17 @@ print (i, end=”, “)
 
 **Câu 46.** Kết quả của chương trình được in ra màn hình là?
 
+```python
 x = 1
-
-y = “2”
-
+y = "2"
 z = 3
-
 sum = 0
-
 for i in (x, y, z):
-
-if isinstance(i, int):
-
-sum += i
+    if isinstance(i, int):
+        sum += i
 
 print(sum)
+```
 
 **A.** 2
 
@@ -610,7 +600,9 @@ print(sum)
 
 **Câu 47.** Kết quả của hàm hiển thị dưới đây là gì?
 
-len([“hello”,2, 4, 6])
+```python
+len(["hello", 2, 4, 6])
+```
 
 **A.** 4
 
@@ -622,7 +614,9 @@ len([“hello”,2, 4, 6])
 
 **Câu 48.** Kết quả của hàm hiển thị dưới đây là gì?
 
+```python
 list(enumerate([2, 3]))
+```
 
 **A.** Error
 
@@ -634,9 +628,10 @@ list(enumerate([2, 3]))
 
 **Câu 49.** Kết quả của hàm hiển thị dưới đây là gì?
 
+```python
 ord(65)
-
-ord(‘A’)
+ord('A')
+```
 
 **A.** A 65
 
@@ -648,9 +643,10 @@ ord(‘A’)
 
 **Câu 50.** Kết quả của hàm hiển thị dưới đây là gì?
 
-x=3
-
-eval(‘x^2’)
+```python
+x = 3
+eval('x^2')
+```
 
 **A.** Error
 
@@ -662,7 +658,9 @@ eval(‘x^2’)
 
 **Câu 51.** Kết quả của hàm sau là gì?
 
-all([2,4,0,6])
+```python
+all([2, 4, 0, 6])
+```
 
 **A.** Error
 
@@ -674,7 +672,9 @@ all([2,4,0,6])
 
 **Câu 52.** Kết quả của hàm sau là gì?
 
-complex(1+2j)
+```python
+complex(1 + 2j)
+```
 
 **A.** Error
 
@@ -686,9 +686,10 @@ complex(1+2j)
 
 **Câu 53.** Kết quả của hàm sau là gì?
 
-float(‘-infinity’)
-
-float(‘inf’)
+```python
+float('-infinity')
+float('inf')
+```
 
 **A.** –inf inf
 
@@ -700,9 +701,10 @@ float(‘inf’)
 
 **Câu 54.** Kết quả của hàm sau là gì?
 
+```python
 oct(7)
-
-oct(‘7’)
+oct('7')
+```
 
 **A.** Error 07
 
@@ -714,9 +716,10 @@ oct(‘7’)
 
 **Câu 55.** Kết quả của đoạn code dưới đây là:
 
+```python
 numbers = [2, 3, 4]
-
 print(numbers)
+```
 
 **A.** 2, 3, 4
 
@@ -728,19 +731,16 @@ print(numbers)
 
 **Câu 56.** Kết quả nào là output của đoạn code dưới đây?
 
+```python
 def f(value):
-
-while True:
-
-value = (yield value)
+    while True:
+        value = (yield value)
 
 a = f(10)
-
 print(next(a))
-
 print(next(a))
-
 print(a.send(20))
+```
 
 **A.** 10 10
 
@@ -752,17 +752,15 @@ print(a.send(20))
 
 **Câu 57.** Kết quả nào là output của đoạn code dưới đây?
 
+```python
 def myfunc():
-
-try:
-
-print(‘Monday’)
-
-finally:
-
-print(‘Tuesday’)
+    try:
+        print('Monday')
+    finally:
+        print('Tuesday')
 
 myfunc()
+```
 
 **A.** Tuesday
 
@@ -774,19 +772,15 @@ myfunc()
 
 **Câu 58.** Kết quả nào là output của đoạn code dưới đây?
 
+```python
 for i in range(10):
-
-if i == 5:
-
-break
-
+    if i == 5:
+        break
+    else:
+        print(i)
 else:
-
-print(i)
-
-else:
-
-print(“Here”)
+    print("Here")
+```
 
 **A.** 0 1 2 3 4 Here
 
@@ -798,9 +792,10 @@ print(“Here”)
 
 **Câu 59.** Kết quả nào là output của đoạn code dưới đây?
 
-list = [ ‘Tech’, 404, 3.03, ‘Beamers’, 33.3 ]
-
-print list[1:3]
+```python
+list = ['Tech', 404, 3.03, 'Beamers', 33.3]
+print(list[1:3])
+```
 
 **A.** [ ‘Tech’, 404, 3.03, ‘Beamers’, 33.3 ]
 
@@ -812,17 +807,14 @@ print list[1:3]
 
 **Câu 60.** Kết quả nào là output của đoạn code dưới đây?
 
+```python
 try:
-
-print(“throw”)
-
+    print("throw")
 except:
-
-print(“except”)
-
+    print("except")
 finally:
-
-print(“finally”)
+    print("finally")
+```
 
 **A.** finally throw
 
@@ -834,27 +826,20 @@ print(“finally”)
 
 **Câu 61.** Kết quả nào là output của đoạn code dưới đây?
 
+```python
 x = True
-
 y = False
-
 z = False
 
 if not x or y:
-
-print(1)
-
+    print(1)
 elif not x or not y and z:
-
-print(2)
-
+    print(2)
 elif not x or y or not y and x:
-
-print(3)
-
+    print(3)
 else:
-
-print(4)
+    print(4)
+```
 
 **A.** 2
 
@@ -886,13 +871,12 @@ print(4)
 
 **Câu 64.** Lệnh print in ra kết quả nào cho chương trình dưới đây?
 
+```python
 list1 = [1, 3]
-
 list2 = list1
-
 list1[0] = 4
-
 print(list2)
+```
 
 **A.** [4, 3]
 
@@ -954,15 +938,14 @@ print(list2)
 
 **Câu 70.** Output của chương trình dưới đây là gì?
 
-def func(a, b = 5, c = 10):
-
-print(‘a bằng’, a, ‘và b bằng’, b, ‘và c bằng’, c)
+```python
+def func(a, b=5, c=10):
+    print('a bằng', a, 'và b bằng', b, 'và c bằng', c)
 
 func(3, 7)
-
-func(25, c = 24)
-
-func(c = 50, a = 100)
+func(25, c=24)
+func(c=50, a=100)
+```
 
 **A.** a bằng 7 và b bằng 3 và c bằng 10 a bằng 25 và b bằng 5 và c bằng 24 a bằng 5 và b bằng 100 và c bằng 50
 
@@ -974,21 +957,17 @@ func(c = 50, a = 100)
 
 **Câu 71.** Output của chương trình dưới đây là gì?
 
+```python
 def maximum(x, y):
-
-if x > y:
-
-return x
-
-elif x == y:
-
-return ‘Các số bằng nhau’
-
-else:
-
-return y
+    if x > y:
+        return x
+    elif x == y:
+        return 'Các số bằng nhau'
+    else:
+        return y
 
 print(maximum(2, 3))
+```
 
 **A.** 2
 
@@ -1000,21 +979,17 @@ print(maximum(2, 3))
 
 **Câu 72.** Output của chương trình dưới đây là gì?
 
+```python
 def printMax(a, b):
-
-if a > b:
-
-print(a, ‘is maximum’)
-
-elif a == b:
-
-print(a, ‘is equal to’, b)
-
-else:
-
-print(b, ‘is maximum’)
+    if a > b:
+        print(a, 'is maximum')
+    elif a == b:
+        print(a, 'is equal to', b)
+    else:
+        print(b, 'is maximum')
 
 printMax(3, 4)
+```
 
 **A.** 3
 
@@ -1026,13 +1001,13 @@ printMax(3, 4)
 
 **Câu 73.** Output của chương trình dưới đây là gì?
 
-def say(message, times = 1):
+```python
+def say(message, times=1):
+    print(message * times)
 
-print(message * times)
-
-say(‘Hello’)
-
-say(‘World’, 5)
+say('Hello')
+say('World', 5)
+```
 
 **A.** Hello WorldWorldWorldWorldWorld
 
@@ -1044,13 +1019,13 @@ say(‘World’, 5)
 
 **Câu 74.** Output của chương trình dưới đây là gì?
 
+```python
 def sayHello():
-
-print(‘Hello World!’)
-
-sayHello()
+    print('Hello World!')
 
 sayHello()
+sayHello()
+```
 
 **A.** Hello World! Hello World!
 
@@ -1062,21 +1037,18 @@ sayHello()
 
 **Câu 75.** Output của chương trình dưới đây là gì?
 
+```python
 x = 50
 
 def func():
-
-global x
-
-print(‘Giá trị của x là’, x)
-
-x = 2
-
-print(‘Giá trị của x được thay đổi thành’, x)
+    global x
+    print('Giá trị của x là', x)
+    x = 2
+    print('Giá trị của x được thay đổi thành', x)
 
 func()
-
-print(‘Giá trị hiện tại của x là’, x)
+print('Giá trị hiện tại của x là', x)
+```
 
 **A.** Giá trị của x là 50 Giá trị của x được thay đổi thành 2 Giá trị hiện tại của x là 50
 
@@ -1088,19 +1060,17 @@ print(‘Giá trị hiện tại của x là’, x)
 
 **Câu 76.** Output của chương trình dưới đây là gì?
 
+```python
 x = 50
 
 def func(x):
-
-print(‘Giá trị của x là’, x)
-
-x = 2
-
-print(‘Giá trị của x được thay đổi thành’, x)
+    print('Giá trị của x là', x)
+    x = 2
+    print('Giá trị của x được thay đổi thành', x)
 
 func(x)
-
-print(‘Giá trị hiện tại của x là’, x)
+print('Giá trị hiện tại của x là', x)
+```
 
 **A.** Giá trị hiện tại của x là 50
 
@@ -1112,9 +1082,10 @@ print(‘Giá trị hiện tại của x là’, x)
 
 **Câu 77.** Output của hàm biểu diễn dưới đây là gì?
 
-divmod(10.5,5)
-
-divmod(2.4,1.2)
+```python
+divmod(10.5, 5)
+divmod(2.4, 1.2)
+```
 
 **A.** (2.00, 0.50) (2.00, 0.00)
 
@@ -1126,9 +1097,10 @@ divmod(2.4,1.2)
 
 **Câu 78.** Output của hàm biểu diễn dưới đây là gì?
 
+```python
 import math
-
 abs(math.sqrt(25))
+```
 
 **A.** Error
 
@@ -1140,7 +1112,9 @@ abs(math.sqrt(25))
 
 **Câu 79.** Output của hàm sau là gì?
 
-any([2>8, 4>2, 1>2])
+```python
+any([2 > 8, 4 > 2, 1 > 2])
+```
 
 **A.** Error
 
@@ -1152,9 +1126,10 @@ any([2>8, 4>2, 1>2])
 
 **Câu 80.** Output của hàm sau là gì?
 
-float(‘1e-003’)
-
-float(‘2e+003’)
+```python
+float('1e-003')
+float('2e+003')
+```
 
 **A.** 3.00 300
 
@@ -1166,9 +1141,10 @@ float(‘2e+003’)
 
 **Câu 81.** Output của hàm sau là gì? Lưu ý: số lượng khoảng trắng trước số đó là 5.
 
-float(‘ -12345
-
-‘)
+```python
+float('     -12345
+')
+```
 
 **A.** -12345.0 (5 khoảng trắng trước số)
 
@@ -1180,7 +1156,9 @@ float(‘ -12345
 
 **Câu 82.** Output của hàm sau là:
 
-all(3,0,4.2)
+```python
+all(3, 0, 4.2)
+```
 
 **A.** True
 
@@ -1192,7 +1170,9 @@ all(3,0,4.2)
 
 **Câu 83.** Output của lệnh dưới đây là:
 
-print “Hello World”[::-1]
+```python
+print("Hello World"[::-1])
+```
 
 **A.** dlroW olleH
 
@@ -1204,7 +1184,9 @@ print “Hello World”[::-1]
 
 **Câu 84.** Output của lệnh là:
 
+```python
 print(3 >= 3)
+```
 
 **A.** 3 >= 3
 
@@ -1216,7 +1198,9 @@ print(3 >= 3)
 
 **Câu 85.** Output của lệnh sau là:
 
-print(1, 2, 3, 4, sep=’*’)
+```python
+print(1, 2, 3, 4, sep='*')
+```
 
 **A.** 1 2 3 4
 
@@ -1258,17 +1242,14 @@ print(1, 2, 3, 4, sep=’*’)
 
 **Câu 89.** Theo dõi đoạn code dưới đây và chọn đáp án đúng nhất:
 
+```python
 a = [1, 4, 20, 2, 5]
-
 x = a[0]
-
 for i in a:
-
-if i > x:
-
-x = i
-
-print x
+    if i > x:
+        x = i
+print(x)
+```
 
 **A.** x là giá trị trung bình của list.
 
@@ -1280,19 +1261,16 @@ print x
 
 **Câu 90.** Theo dõi đoạn code dưới đây và chọn đáp án đúng nhất:
 
+```python
 i = 0
-
 x = 0
-
 while i < 10:
+    if i % 2 == 0:
+        x += 1
+    i += 1
+```
 
-if i % 2 == 0:
-
-x += 1
-
-i += 1
-
-x = **_**.
+`x = ___`
 
 **A.** 3
 
@@ -1304,21 +1282,37 @@ x = **_**.
 
 **Câu 91.** Trong NNLT Python để kiểm tra số tự nhiên n khác 0 là số chẵn hay lẻ, câu lệnh nào sau đây là đúng?
 
-**A.** if n//2==1: print(‘so chan’)
+**A.**
+```python
+if n // 2 == 1:
+    print('so chan')
+else:
+    print('so le')
+```
 
-else: print(‘so le’)
+**B.**
+```python
+if n // 2 == 0:
+    print('so chan')
+else:
+    print('so le')
+```
 
-**B.** if n//2==0: print(‘so chan’)
+**C.**
+```python
+if n % 2 == 0:
+    print('so chan')
+else:
+    print('so le')
+```
 
-else: print(‘so le’)
-
-**C.** if n%2==0: print(‘so chan’)
-
-else: print(‘so le’)
-
-**D.** if n%2==1: print(‘so chan’)
-
-else: print(‘so le’)
+**D.**
+```python
+if n % 2 == 1:
+    print('so chan')
+else:
+    print('so le')
+```
 
 **Câu 92.** Trong NNLT Python, biểu thức 1+x3 được viết là:
 
@@ -1332,7 +1326,9 @@ else: print(‘so le’)
 
 **Câu 93.** Trong NNLT Python, biểu thức sau cho kết quả bằng bao nhiêu?
 
-2**3+4//2-3%2
+```python
+2**3 + 4//2 - 3%2
+```
 
 **A.** 7
 
@@ -1354,11 +1350,11 @@ else: print(‘so le’)
 
 **Câu 95.** Trong NNLT Python, cho đoạn chương trình sau:
 
-a=1
-
-b=2
-
-a,b=b,a
+```python
+a = 1
+b = 2
+a, b = b, a
+```
 
 Sau khi thực hiện đoạn chương trình trên, giá trị của a và b là:
 
@@ -1372,11 +1368,11 @@ Sau khi thực hiện đoạn chương trình trên, giá trị của a và b l�
 
 **Câu 96.** Trong NNLT Python, cho đoạn chương trình sau:
 
-a=b=1
-
-c,d=1,2
-
-print(a+b+c+d)
+```python
+a = b = 1
+c, d = 1, 2
+print(a + b + c + d)
+```
 
 Kết quả trên màn hình là:
 
@@ -1390,9 +1386,12 @@ Kết quả trên màn hình là:
 
 **Câu 97.** Trong NNLT Python, câu lệnh sau cho kết quả trên màn hình là gì?
 
-if 1<2 and 1>3: print(‘false’)
-
-else: print(‘true’)
+```python
+if 1 < 2 and 1 > 3:
+    print('false')
+else:
+    print('true')
+```
 
 **A.** TRUE
 
@@ -1612,27 +1611,27 @@ ELSE: <câu lệnh 2>
 
 **Câu 118.** Vòng lặp nào trả về kết quả dưới đây?
 
+```text
 11111
-
 22222
-
 33333
-
 44444
-
 55555
+```
 
-for i in range(1, 6): print(i, i, i, i, i)
+**A.** `for i in range(1, 6): print(i, i, i, i, i)`
 
-for i in range(1, 5): print(str(i) * 5)
+**B.** `for i in range(1, 5): print(str(i) * 5)`
 
-for i in range(1, 6): print(str(i) * 5)
+**C.** `for i in range(1, 6): print(str(i) * 5)`
 
-for i in range(0, 5): print(str(i) * 5)
+**D.** `for i in range(0, 5): print(str(i) * 5)`
 
-**Câu 119.** n trong đoạn sau là kiểu dữ liệu nào?
+**Câu 119.** `n` trong đoạn sau là kiểu dữ liệu nào?
 
-n = ‘5’
+```python
+n = '5'
+```
 
 **A.** integer
 
@@ -1652,21 +1651,20 @@ n = ‘5’
 
 **D.** Không có đáp án đúng.
 
-**Câu 121.** Điền phần còn thiếu trong đoạn code để được out dưới đây:
+**Câu 121.** Điền phần còn thiếu trong đoạn code để được output dưới đây:
 
+```text
 55555
-
 44444
-
 33333
-
 22222
-
 11111
+```
 
+```python
 for i in range(5, 0, ****):
-
-print(str(i) * 5)
+    print(str(i) * 5)
+```
 
 **A.** 0
 
@@ -1688,7 +1686,9 @@ print(str(i) * 5)
 
 **Câu 123.** Đoạn code dưới đây có ý nghĩa gì?
 
-f = open(“test.txt”)
+```python
+f = open("test.txt")
+```
 
 **A.** Mở file test.txt được phép đọc và ghi vào file.
 
@@ -1700,7 +1700,9 @@ f = open(“test.txt”)
 
 **Câu 124.** Đoạn code dưới đây có ý nghĩa gì?
 
+```python
 os.listdir()
+```
 
 **A.** In ra thư mục làm việc hiện tại.
 
@@ -1712,19 +1714,43 @@ os.listdir()
 
 **Câu 125.** Đoạn code nào sau đây sử dụng tính năng kế thừa của Python?
 
-class Foo: Pass
+**A.** `class Foo: pass`
 
-class Foo(object): pass class Hoo(object) pass
+**B.**
+```python
+class Foo(object):
+    pass
 
-class Foo: pass class Hoo(Foo): pass
+class Hoo(object):
+    pass
+```
+
+**C.**
+```python
+class Foo:
+    pass
+
+class Hoo(Foo):
+    pass
+```
 
 **D.** Không có đáp án chính xác.
 
 **Câu 126.** Đoạn code nào tự động đóng tệp khi có ngoại lệ xảy ra?
 
-with open(“test.txt”, encoding = ‘utf-8’) as f:
+**A.**
+```python
+with open("test.txt", encoding='utf-8') as f:
+    pass
+```
 
-try: f = open(“test.txt”,encoding = ‘utf-8’) finall f.close()
+**B.**
+```python
+try:
+    f = open("test.txt", encoding='utf-8')
+finally:
+    f.close()
+```
 
 **C.** Không có đáp án chính xác
 
@@ -1732,21 +1758,19 @@ try: f = open(“test.txt”,encoding = ‘utf-8’) finall f.close()
 
 **Câu 127.** Đoạn code sau thực hiện yêu cầu gì?
 
+```python
 try:
-
-# đoạn code có thể gây ra lỗi
-
-pass
-
-except(TypeError, ZeroDivisionError):
-
-print(“Python Quiz”)
+    # đoạn code có thể gây ra lỗi
+    pass
+except (TypeError, ZeroDivisionError):
+    print("Python Quiz")
+```
 
 **A.** In ra ‘ Python Quiz ‘ nếu có ngoại lệ xảy ra (không quan trọng là ngoại lệ gì).
 
 **B.** In ra ‘ Python Quiz ‘ nếu không có ngoại lệ xảy ra.
 
-**C.** In ra ‘ Python Quiz ‘ nếu một trong hai ngoại lệ TypeError và ZeroDivisionError xảy ra.
+**C.**In ra ‘ Python Quiz ‘ nếu một trong hai ngoại lệ TypeError và ZeroDivisionError xảy ra.
 
 **D.** Chỉ in ra ‘ Python Quiz ‘ khi cả hai ngoại lệ TypeError và ZeroDivisionError cùng xảy ra
 
@@ -1760,9 +1784,11 @@ print(“Python Quiz”)
 
 **D.** Tuple
 
-**Câu 129.** Đâu là giá trị của colors[2]?
+**Câu 129.** Đâu là giá trị của `colors[2]`?
 
-colors = [‘red’, ‘orange’, ‘yellow’, ‘green’, ‘blue’, ‘indigo’, ‘violet’]
+```python
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+```
 
 **A.** orange
 
@@ -1784,15 +1810,14 @@ colors = [‘red’, ‘orange’, ‘yellow’, ‘green’, ‘blue’, ‘ind
 
 **Câu 131.** Đâu là kết quả của đoạn code dưới đây?
 
+```python
 class Foo:
-
-def printLine(self, line = ‘Python’):
-
-print(line)
+    def printLine(self, line='Python'):
+        print(line)
 
 o1 = Foo()
-
-o1.printLine(‘Java’)
+o1.printLine('Java')
+```
 
 **A.** Python
 
@@ -1804,21 +1829,18 @@ o1.printLine(‘Java’)
 
 **Câu 132.** Đâu là kết quả của đoạn code dưới đây?
 
+```python
 myList = [1, 5, 5, 5, 5, 1]
-
 max = myList[0]
-
 indexOfMax = 0
 
 for i in range(1, len(myList)):
-
-if myList[i] > max:
-
-max = myList[i]
-
-indexOfMax = i
+    if myList[i] > max:
+        max = myList[i]
+        indexOfMax = i
 
 print(indexOfMax)
+```
 
 **A.** 0
 
@@ -1830,17 +1852,14 @@ print(indexOfMax)
 
 **Câu 133.** Đâu là kết quả của đoạn code dưới đây?
 
+```python
 number = 5.0
-
 try:
-
-r = 10 / number
-
-print(r)
-
+    r = 10 / number
+    print(r)
 except:
-
-print(“Oops! Error occurred.”)
+    print("Oops! Error occurred.")
+```
 
 **A.** Oops! Error occurred.
 
@@ -1862,17 +1881,15 @@ print(“Oops! Error occurred.”)
 
 **Câu 135.** Đâu là output của chương trình dưới đây?
 
+```python
 class Point:
-
-def **init**(self, x = 0, y = 0):
-
-self.x = x + 1
-
-self.y = y + 1
+    def __init__(self, x=0, y=0):
+        self.x = x + 1
+        self.y = y + 1
 
 p1 = Point()
-
 print(p1.x, p1.y)
+```
 
 **A.** 0 0
 
@@ -1884,25 +1901,20 @@ print(p1.x, p1.y)
 
 **Câu 136.** Đâu là output của chương trình dưới đây?
 
+```python
 def outerFunction():
+    global a
+    a = 20
 
-global a
-
-a = 20
-
-def innerFunction():
-
-global a
-
-a = 30
-
-print(‘a =’, a)
+    def innerFunction():
+        global a
+        a = 30
+        print('a =', a)
 
 a = 10
-
 outerFunction()
-
-print(‘a =’, a)
+print('a =', a)
+```
 
 **A.** a = 10 a = 30
 
@@ -1914,9 +1926,10 @@ print(‘a =’, a)
 
 **Câu 137.** Đâu là output của đoạn code dưới đây?
 
-mylist=[1, 5, 9, int(‘0’)]
-
+```python
+mylist = [1, 5, 9, int('0')]
 print(sum(mylist))
+```
 
 **A.** 16
 
@@ -1968,7 +1981,9 @@ print(sum(mylist))
 
 **Câu 142.** Đối tượng dưới đây thuộc kiểu dữ liệu nào?
 
-L = [1, 23, ‘hello’, 1]
+```python
+L = [1, 23, 'hello', 1]
+```
 
 **A.** List
 
@@ -2070,7 +2085,7 @@ Giải thích: Nếu không chỉ định số lượng chữ số thập phân,
 
 Câu 43. Đáp án là B. 4 6
 
-Giải thích: Chương trình tạo ra hai đối tượng Point với các giá trị x và y tương ứng. Khi trừ p2 từ p1, phương thức **sub**() được gọi và trả về một đối tượng Point mới với giá trị x và y là tổng của các giá trị x và y của hai đối tượng ban đầu. Kết quả in ra là giá trị x và y của đối tượng Point mới này.
+Giải thích: Chương trình tạo ra hai đối tượng Point với các giá trị x và y tương ứng. Khi trừ p2 từ p1, phương thức `__sub__()` được gọi và trả về một đối tượng Point mới với giá trị x và y là tổng của các giá trị x và y của hai đối tượng ban đầu. Kết quả in ra là giá trị x và y của đối tượng Point mới này.
 
 Câu 44. Đáp án là C. [‘a’, ‘aa’, ‘aaa’, ‘b’, ‘bb’]
 
