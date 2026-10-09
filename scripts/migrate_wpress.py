@@ -137,6 +137,8 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
     # Convert \begin{align} / \begin{align*} to \begin{aligned} everywhere for universal KaTeX compatibility
     text = re.sub(r'\\begin\{align\*?\}', r'\\begin{aligned}', text)
     text = re.sub(r'\\end\{align\*?\}', r'\\end{aligned}', text)
+    # Fix accidental double dollar typos with spaces: "$ $ABCD" -> "$ABCD"
+    text = re.sub(r'\$\s+\$(?=[A-Za-z0-9\\])', '$', text)
 
     # Step 1: Protect Math tokens safely
     math_tokens = {}
