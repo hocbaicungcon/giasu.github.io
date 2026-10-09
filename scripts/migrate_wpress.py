@@ -17,9 +17,50 @@ WPRESS_PATH = os.path.join(WORKSPACE_ROOT, 'o2edu/o2-edu-vn-20260817-103826-pv05
 POST_DIR = os.path.join(WORKSPACE_ROOT, 'post')
 ASSETS_IMG_DIR = os.path.join(WORKSPACE_ROOT, 'assets/images')
 ASSETS_DOC_DIR = os.path.join(WORKSPACE_ROOT, 'assets/docs')
+DRIVE_UPLOAD_DIR = os.path.join(WORKSPACE_ROOT, 'o2edu/drive_upload')
+DRIVE_LINKS_FILE = os.path.join(WORKSPACE_ROOT, 'o2edu/drive_links.csv')
+MAX_LOCAL_DOC_SIZE = 5 * 1024 * 1024  # 5MB: Các file >= 5MB chuyển sang Google Drive
+
 os.makedirs(ASSETS_IMG_DIR, exist_ok=True)
 os.makedirs(ASSETS_DOC_DIR, exist_ok=True)
 os.makedirs(POST_DIR, exist_ok=True)
+os.makedirs(DRIVE_UPLOAD_DIR, exist_ok=True)
+
+def load_drive_links():
+    mapping = {}
+    if os.path.exists(DRIVE_LINKS_FILE):
+        with open(DRIVE_LINKS_FILE, 'r', encoding='utf-8') as f:
+            lines = [l.strip() for l in f if l.strip()]
+            for line in lines[1:]:
+                parts = line.split(',', 3)
+                if len(parts) >= 4 and parts[0]:
+                    fn = parts[0].strip()
+                    url = parts[3].strip()
+                    if url:
+                        mapping[fn] = url
+    return mapping
+
+def record_drive_pending(doc_name, file_size, slug):
+    existing = []
+    found = False
+    if os.path.exists(DRIVE_LINKS_FILE):
+        with open(DRIVE_LINKS_FILE, 'r', encoding='utf-8') as f:
+            for line in f:
+                line_str = line.strip()
+                if not line_str: continue
+                parts = line_str.split(',', 3)
+                if parts[0] == doc_name:
+                    found = True
+                existing.append(line_str)
+    else:
+        existing.append('filename,file_size_mb,source_post,drive_url')
+        
+    if not found:
+        size_mb = round(file_size / (1024 * 1024), 2)
+        existing.append(f"{doc_name},{size_mb},{slug},")
+        with open(DRIVE_LINKS_FILE, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(existing) + '\n')
+        print(f"Recorded to {DRIVE_LINKS_FILE}: {doc_name} ({size_mb} MB)")
 
 HEADER_SIZE = 4377
 HEADER_CHUNK_EOF = bytes(HEADER_SIZE)
@@ -339,20 +380,53 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
     # Extract document attachments (.pdf, .docx, .zip, etc.)
     doc_urls = re.findall(r'href=[\"\'](https://o2\.edu\.vn/wp-content/uploads/[^\"\']+\.(?:pdf|docx?|xlsx?|pptx?|zip|rar))[\"\']', content_html, re.I)
     doc_map = {}
+    drive_links = load_drive_links()
+    
     for full_url in set(doc_urls):
         clean_url = full_url.split('?')[0]
         rel_path = clean_url.replace('https://o2.edu.vn/wp-content/', '')
         unquoted_rel_path = urllib.parse.unquote(rel_path)
         doc_name = os.path.basename(unquoted_rel_path)
-        dest_path = os.path.join(ASSETS_DOC_DIR, doc_name)
-        if not os.path.exists(dest_path):
-            file_bytes = reader.get_file(unquoted_rel_path) or reader.get_file(rel_path)
-            # Giới hạn kích thước file < 25MB để tránh chặn git push
-            if file_bytes and len(file_bytes) < 25 * 1024 * 1024:
+        
+        file_bytes = reader.get_file(unquoted_rel_path) or reader.get_file(rel_path)
+        if not file_bytes:
+            continue
+            
+        file_len = len(file_bytes)
+        
+        if file_len >= MAX_LOCAL_DOC_SIZE:
+            # File lớn >= 5MB: Lưu vào thư mục chờ tải lên Google Drive
+            drive_file_path = os.path.join(DRIVE_UPLOAD_DIR, doc_name)
+            if not os.path.exists(drive_file_path):
+                with open(drive_file_path, 'wb') as f_out:
+                    f_out.write(file_bytes)
+                print(f"Saved large file for Google Drive upload: {doc_name} ({file_len / (1024 * 1024):.2f} MB)")
+                
+            # Đảm bảo không để file lớn trong assets/docs
+            local_dest = os.path.join(ASSETS_DOC_DIR, doc_name)
+            if os.path.exists(local_dest):
+                os.remove(local_dest)
+                
+            record_drive_pending(doc_name, file_len, slug)
+            
+            # Gán link Drive nếu đã có, hoặc link chờ
+            if doc_name in drive_links and drive_links[doc_name].startswith('http'):
+                final_link = drive_links[doc_name]
+            else:
+                final_link = f"#drive-pending-{doc_name}"
+                
+            doc_map[full_url] = final_link
+            doc_map[clean_url] = final_link
+            doc_map[urllib.parse.unquote(full_url)] = final_link
+            doc_map[urllib.parse.unquote(clean_url)] = final_link
+        else:
+            # File nhẹ < 5MB: Lưu trữ trực tiếp trong assets/docs/
+            dest_path = os.path.join(ASSETS_DOC_DIR, doc_name)
+            if not os.path.exists(dest_path):
                 with open(dest_path, 'wb') as f_out:
                     f_out.write(file_bytes)
-                print(f"Extracted document: {doc_name} ({len(file_bytes):,} bytes)")
-        if os.path.exists(dest_path):
+                print(f"Extracted document: {doc_name} ({file_len:,} bytes)")
+                
             local_doc_link = f"/assets/docs/{doc_name}"
             doc_map[full_url] = local_doc_link
             doc_map[clean_url] = local_doc_link
