@@ -175,6 +175,6 @@ O2 Education gửi các thầy cô link download file pdf đầy đủ
 
 Xem thêm
 
-[Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/?p=30821&preview=true.html)
+[Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)

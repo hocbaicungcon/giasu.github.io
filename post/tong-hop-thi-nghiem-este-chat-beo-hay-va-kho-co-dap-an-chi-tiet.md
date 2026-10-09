@@ -1197,7 +1197,7 @@ Các thầy cô và các em cần file tài liệu “Tổng hợp thí nghiệm
 
 Xem thêm
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -1229,7 +1229,7 @@ Xem thêm
 
 - [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
 
-- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/?p=30821&preview=true.html)
+- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 ←[Phương pháp dùng sơ đồ đoạn thẳng giải toán tiểu học](/bai-viet/phuong-phap-dung-so-do-doan-thang-giai-toan-tieu-hoc.html)
 [Hướng dẫn điều chỉnh chương trình THCS và THPT năm học 2021-2022](/bai-viet/huong-dan-dieu-chinh-chuong-trinh-thcs-va-thpt.html)→
@@ -1928,7 +1928,7 @@ tài liệu bổ ích, cảm ơn bạn đã chia sẻ, vui lòng cho em xin tài
 ![Hương Lê Avatar](https://secure.gravatar.com/avatar/27ee3c277bc260445aa920fd20881bfc6b4ac1f52677031b3b686bec13a8afdc)
 
 [02/04/2023](/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/#comment-5445.html)
-[Hương Lê](/bai-viet/http://o2.edu.vn.html)
+Hương Lê
 
 ad cho em xin tài liệu được không ạ?! vui lòng gửi vào mail giúp em ạ! em cảm ơn nhiều ạ!
 

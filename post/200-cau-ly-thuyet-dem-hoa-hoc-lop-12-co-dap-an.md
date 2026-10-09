@@ -861,7 +861,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Tổng hợp bài tâp phương pháp dồn chất xếp hình](/bai-viet/tong-hop-bai-tap-phuong-phap-don-chat-xep-hinh.html)
 
@@ -1256,7 +1256,7 @@ xin file tài liệ với ạ
 ![Quynh Anh Avatar](https://secure.gravatar.com/avatar/838f24120431d89a3fd95303e8f056a0af8bea2a0bee62a276ec5766f7145263)
 
 [05/05/2022](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/#comment-2690.html)
-[Quynh Anh](/bai-viet/https://o2.edu.vn=zalo.html)
+Quynh Anh
 
 mình nhận được tài liệu rồi ạ. Cảm ơn admin
 
@@ -1746,7 +1746,7 @@ Cho em xin tài liệu với ạ
 ![Thuỳ Chi Avatar](https://secure.gravatar.com/avatar/54b8f9985dc79fa53cc9b7d2b340c8fed355494e380a1f9745e3ed59f6218b72)
 
 [30/05/2022](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/#comment-2954.html)
-[Thuỳ Chi](/bai-viet/http://o2.edu.vn.html)
+Thuỳ Chi
 
 Cho em xin file tài liệu với ạ
 
@@ -3226,7 +3226,7 @@ Cho em xin ạ
 ![Huỳnh Bảo Avatar](https://secure.gravatar.com/avatar/fd52a1e12552567ac96b6c42faa2360f4c2447c357ab9003ee756782a0a2a4c7)
 
 [12/06/2023](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/#comment-5713.html)
-[Huỳnh Bảo](/bai-viet/http://o2.edu.vn/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html)
+[Huỳnh Bảo](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html)
 
 Cho em xin file với ạ
 

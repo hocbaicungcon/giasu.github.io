@@ -50,7 +50,7 @@ Xem thêm
 
 - [Tổng hợp bài tập biện luận công thức este có lời giải chi tiết](/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet.html)
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
@@ -64,7 +64,7 @@ Xem thêm
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/?p=30821&preview=true.html)
+- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 ←[Este X có công thức phân tử C6H10O4. Xà phòng hóa hoàn toàn X bằng dung dịch NaOH, thu được ba chất hữu cơ Y, Z, T](/bai-viet/este-x-co-cong-thuc-phan-tu-c6h10o4-xa-phong-hoa-hoan-toan-x-bang-dung-dich-naoh-thu-duoc-ba-chat-huu-co-y-z-t.html)
 [Hợp chất hữu cơ X có công thức phân tử C5H6O4. X tác dụng với NaOH trong dung dịch theo tỉ lệ mol 1 : 2, tạo ra muối của axit no Y và ancol Z](/bai-viet/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z.html)→

@@ -236,15 +236,22 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
 
     # Step 6: Links
     def replace_a(match):
-        href = match.group(1)
+        href = match.group(1).strip()
         link_text = match.group(2)
         clean_href = href.split('?')[0]
         if clean_href in doc_map:
             href = doc_map[clean_href]
+        elif href.startswith('mailto:'):
+            return f"[{re.sub(r'<[^>]+>', '', link_text).strip()}]({href})"
         elif 'o2.edu.vn' in href:
-            p = re.sub(r'^https?://o2\.edu\.vn/', '', href).strip('/')
-            if p and not p.startswith('wp-content'):
-                href = f"/bai-viet/{p}.html"
+            if '?p=30821' in href:
+                href = "/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html"
+            elif href.rstrip('/') in ('http://o2.edu.vn', 'https://o2.edu.vn'):
+                return re.sub(r'<[^>]+>', '', link_text).strip()
+            else:
+                p = re.sub(r'^https?://o2\.edu\.vn/', '', href).split('?')[0].strip('/')
+                if p and not p.startswith('wp-content'):
+                    href = f"/bai-viet/{p}.html"
         return f"[{re.sub(r'<[^>]+>', '', link_text).strip()}]({href})"
     text = re.sub(r'<a\s+[^>]*href=[\"\']([^\"\']+)[\"\'][^>]*>([\s\S]*?)</a>', replace_a, text)
 

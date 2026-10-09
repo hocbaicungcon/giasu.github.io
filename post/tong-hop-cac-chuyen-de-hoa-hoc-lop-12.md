@@ -86,7 +86,7 @@ Mời các thầy cô truy cập vào link sau để xem và download tài liệ
 
 37. [Tóm tắt kiến thức môn hóa học THPT lớp 10 11 12](/bai-viet/tom-tat-kien-thuc-mon-hoa-hoc-thpt-lop-10-11-12.html)
 
-38. [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+38. [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 39. [Tổng hợp bài tâp phương pháp dồn chất xếp hình](/bai-viet/tong-hop-bai-tap-phuong-phap-don-chat-xep-hinh.html)
 
@@ -170,7 +170,7 @@ Quý thầy cô cũng có thể tải giáo án hóa 12 tại đây:
 
 Các thầy cô và các em có thể xem thêm các tài liệu khác của môn hóa
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Lý thuyết và bài tập điện phân có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
 

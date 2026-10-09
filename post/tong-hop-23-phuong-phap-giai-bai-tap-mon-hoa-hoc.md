@@ -61,7 +61,7 @@ Mời các thầy cô truy cập vào các link sau để xem chi tiết và dow
 
 [PP23 – Đồng đẳng hoá](/bai-viet/dong-dang-hoa.html)
 
-PP 24 – [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+PP 24 – [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 [PP25 – Tổng hợp kĩ thuật phương pháp giải bài tập peptit đầy đủ chi tiết](/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html)
 
@@ -121,7 +121,7 @@ Phương pháp giải bài tập cho HS lớp 10
 
 Các thầy cô và các em có thể xem thêm các tài liệu khác của môn hóa
 
-- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+- [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 - [Lý thuyết và bài tập điện phân có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
 

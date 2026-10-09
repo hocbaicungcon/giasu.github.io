@@ -15,7 +15,7 @@ Các thầy cô cần file word liên hệ với chúng tôi tại fanpage faceb
 
 Các thầy cô và các em có thể xem lại lý thuyết về phương pháp dồn chất xếp hình tại
 
-[Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+[Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 ## BÀI TẬP RÈN LUYỆN SỐ 1
 
@@ -1205,7 +1205,7 @@ Tổng số phát biểu đúng là?
 
 Mời thầy cô và các em xem lại lý thuyết và các ví dụ minh họa phương pháp dồn chất xếp hình tại
 
-[Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/http://o2.edu.vn/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
+[Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
 [Tổng hợp kĩ thuật phương pháp giải bài tập peptit đầy đủ chi tiết](/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html)
 
