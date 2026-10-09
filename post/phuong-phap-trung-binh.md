@@ -11,13 +11,13 @@ tags:
 grade: 12
 ---
 
-***PHƯƠNG PHÁP 11:*****SỬ DỤNG CÁC GIÁ TRỊ TRUNG BÌNH**
+***PHƯƠNG PHÁP 11:*** **SỬ DỤNG CÁC GIÁ TRỊ TRUNG BÌNH**
 
 **I. PHƯƠNG PHÁP TRUNG BÌNH**
 
 **1. Nội dung phương pháp trung bình**
 
-Đối với hỗn hợp các chất, các đại lượng trung bình như có ý nghĩa hết sức quan trọng.****Khi biết giá trị của các đại lượng này, ta có thể tìm được thành phần các chất trong hỗn hợp hoặc có thể tính toán được lượng chất trong phản ứng (lượng chất tham gia phản ứng hoặc lượng chất tạo thành).****
+Đối với hỗn hợp các chất, các đại lượng trung bình như có ý nghĩa hết sức quan trọng.****Khi biết giá trị của các đại lượng này, ta có thể tìm được thành phần các chất trong hỗn hợp hoặc có thể tính toán được lượng chất trong phản ứng (lượng chất tham gia phản ứng hoặc lượng chất tạo thành).*** *
 
 Ở đây,**** lần lượt là khối lượng mol trung bình, số nguyên tử C, H, O trung bình, số nhóm chức anđehit, axit trung bình và số liên kết trung bình,… của các chất trong hỗn hợp.
 
@@ -35,7 +35,7 @@ Các đại lượng trung bình khác cũng tính tương tự như trên.
 
 Tính chất của đại lượng trung bình : 
 
-● Nếu hỗn hợp*có hai chất,*trong đó : 
+● Nếu hỗn hợp*có hai chất,* trong đó : 
 
 ; 
 
@@ -57,7 +57,7 @@ Tổng quát : Gọi là đại lượng trung bình của các đại lượng 
 
 ***Hướng dẫn giải***
 
-● ***Cách 1 : **Sử dụng phương pháp tìm khoảng giới hạn số nguyên tử C*
+● ***Cách 1 :** Sử dụng phương pháp tìm khoảng giới hạn số nguyên tử C*
 
 Đặt công thức của M và N lần lượt là CnH2n (x mol) và CnH2n-2 (y mol).
 
@@ -65,7 +65,7 @@ Theo giả thiết, ta có :
 
 Suy ra D là đáp án đúng :******
 
-● ***Cách 2 :**Sử dụng phương pháp trung bình*
+● ***Cách 2 :** Sử dụng phương pháp trung bình*
 
 Vì M, N có cùng số nguyên tử C, nên đặt công thức trung bình của chúng là 
 
@@ -79,7 +79,7 @@ Với cách 1 : Để giải quyết được bài toán, ta phải giải một
 
 Với cách 2 : Dễ dàng tính được giá trị khối lượng mol trung bình của hai chất, từ đó suy ra công thức của chúng. Tính được số nguyên tử H trung bình của hai chất và dựa vào tính chất của giá trị trung bình để suy ra số mol của C3H6 phải nhiều hơn số mol C3H4. Từ đó dựa vào các phương án để suy ra số mol của từng chất. Rõ ràng cách 2 nhanh chóng và nhẹ nhàng trong việc tính toán hơn rất nhiều so với cách 1. 
 
-**c. Kết luận :**Đối với bài toán liên quan đến *hỗn hợp các chất* thì phương pháp trung bình là một sự lựa chọn tối ưu, giúp cho việc tính toán trở lên đơn giản hơn, nhanh chóng hơn so với phương pháp thông thường.
+**c. Kết luận :** Đối với bài toán liên quan đến *hỗn hợp các chất* thì phương pháp trung bình là một sự lựa chọn tối ưu, giúp cho việc tính toán trở lên đơn giản hơn, nhanh chóng hơn so với phương pháp thông thường.
 
 **3. Phạm vi áp dụng :**
 
@@ -101,13 +101,13 @@ Một số dạng bài tập thường sử dụng phương pháp trung bình :
 
 ***Phương pháp giải***
 
-***– Bước 1********:****Lập sơ đồ phản ứng biểu diễn quá trình chuyển hóa giữa các chất, để thấy rõ****bản chất hóa học****của bài toán.*******
+***– Bước 1*** *****:*** *Lập sơ đồ phản ứng biểu diễn quá trình chuyển hóa giữa các chất, để thấy rõ****bản chất hóa học*** *của bài toán.*******
 
-***– Bước 2 :****Nhận dạng nhanh phương pháp giải bài tập : Khi gặp dạng bài tập tìm các chất trong hỗn hợp thì ta nên sử dụng phương pháp trung bình.*
+***– Bước 2 :*** *Nhận dạng nhanh phương pháp giải bài tập : Khi gặp dạng bài tập tìm các chất trong hỗn hợp thì ta nên sử dụng phương pháp trung bình.*
 
-***– Bước 3 :****Dựa vào yêu cầu đề bài để đánh giá, lựa chọn nên sử dụng giá trị trung bình nào của hỗn hợp thì tối ưu nhất, chỉ cần sử dụng một giá trị trung bình hay phải sử dụng nhiều giá trị trung bình.*
+***– Bước 3 :*** *Dựa vào yêu cầu đề bài để đánh giá, lựa chọn nên sử dụng giá trị trung bình nào của hỗn hợp thì tối ưu nhất, chỉ cần sử dụng một giá trị trung bình hay phải sử dụng nhiều giá trị trung bình.*
 
-***– Bước 4 :****Dựa vào giả thiết và sự bảo toàn electron, bảo toàn điện tích, bảo toàn khối lượng, bảo toàn nguyên tố để tìm các giá trị trung bình, kết hợp với tính chất của giá trị trung bình để trả lời các câu hỏi mà đề bài yêu cầu.*
+***– Bước 4 :*** *Dựa vào giả thiết và sự bảo toàn electron, bảo toàn điện tích, bảo toàn khối lượng, bảo toàn nguyên tố để tìm các giá trị trung bình, kết hợp với tính chất của giá trị trung bình để trả lời các câu hỏi mà đề bài yêu cầu.*
 
 ► ***Các ví dụ minh họa ◄***
 

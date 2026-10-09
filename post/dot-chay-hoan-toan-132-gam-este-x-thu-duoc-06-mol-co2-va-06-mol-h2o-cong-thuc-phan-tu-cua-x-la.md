@@ -15,7 +15,7 @@ grade: 12
 
 Đốt cháy hoàn toàn 13,2 gam este X, thu được 0,6 mol CO2 và 0,6 mol H2O. Công thức phân tử của X là
 
-**A.** C3H6O2.**B.**C4H8O2.**C.**C3H4O2.**D.**C2H4O2.
+**A.** C3H6O2.**B.** C4H8O2.**C.** C3H4O2.**D.** C2H4O2.
 
 ![Đốt cháy hoàn toàn 13,2 gam este X, thu được 0,6 mol CO2 và 0,6 mol H2O. Công thức phân tử của X là 1](assets/images/dot-chay-hoan-toan-132-gam-este-x-thu-duoc-06-mol-co2-va-06-mol-h2o-cong-thuc-phan-tu-cua-x-la-c-63.jpg)
 

@@ -19,6 +19,43 @@ function normalizeLocalAssetPaths(text){
   .replace(/(?<!\/)\bassets\/([^)\s"'<>]+)/g, '/assets/$1')
   .replace(/\/{2,}assets\//g, '/assets/');
 }
+export function normalizeMarkdownFormatting(text) {
+  if (!text) return text;
+  const tokens = [];
+  const protect = (pattern) => {
+    text = text.replace(pattern, (match) => {
+      tokens.push(match);
+      return `@@PROTECTED_TOKEN_${tokens.length - 1}@@`;
+    });
+  };
+
+  protect(/(?:```|~~~)[a-zA-Z0-9_-]*\r?\n[\s\S]*?\r?\n(?:```|~~~)/g);
+  protect(/`[^`\r\n]+`/g);
+  protect(/\$\$[\s\S]+?\$\$/g);
+  protect(/(?<!\$)\$(?!\$)((?:\\.|[^$\r\n])+?)\$(?!\$)/g);
+
+  // Triple bold-italic with missing space
+  text = text.replace(/(\*\*\*[^*\r\n]+?\*\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9*])/g, '$1 $2');
+
+  // Bold with leading/trailing spaces inside markers
+  text = text.replace(/\*\*([\t\u00a0 ]*)([^*\r\n]+?)([\t\u00a0 ]*)\*\*/g, (m, lead, body, trail) => {
+    return (lead ? ' ' : '') + '**' + body.trim() + '**' + (trail ? ' ' : '');
+  });
+
+  // Italic with leading/trailing spaces inside markers
+  text = text.replace(/(?<!\*)\*([\t\u00a0 ]*)([^*\r\n]+?)([\t\u00a0 ]*)\*(?!\*)/g, (m, lead, body, trail) => {
+    return (lead ? ' ' : '') + '*' + body.trim() + '*' + (trail ? ' ' : '');
+  });
+
+  // Missing space after closing ** or * when followed by a word character
+  text = text.replace(/(\*\*(?!\s)[^*\r\n]+?(?<!\s)\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9])/g, '$1 $2');
+  text = text.replace(/(\*\*(?!\s)[^*\r\n]+?[:.?!](?<!\s)\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9(\[])/g, '$1 $2');
+  text = text.replace(/((?<!\*)\*(?!\s)[^*\r\n]+?(?<!\s)\*(?!\*))([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9])/g, '$1 $2');
+
+  // Restore protected tokens
+  text = text.replace(/@@PROTECTED_TOKEN_(\d+)@@/g, (_, idx) => tokens[Number(idx)]);
+  return text;
+}
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'dist');
 export const subjects = ['Toán học','Ngữ văn','Ngoại ngữ','Khoa học tự nhiên','Vật lí','Hóa học','Sinh học','Lịch sử','Địa lí','Giáo dục KTPL','CNTT','Công nghệ','Hoạt động trải nghiệm','Các môn khác'];
@@ -63,8 +100,8 @@ export function parsePost(source, filename) {
  const slug=path.basename(filename,'.md');
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
  const body=normalizeLocalAssetPaths(match[2]);
- // return {...data,slug,minutes:Math.max(2,Math.ceil(match[2].split(/\s+/).length/200)),html:(()=>{try{return marked.parse(match[2]).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
- return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{return marked.parse(body).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
+ const formattedBody=normalizeMarkdownFormatting(body);
+ return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{return marked.parse(formattedBody).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
 }
 const gradeLabel=p=>p.grade===undefined?'Mọi lớp':`Lớp ${p.grade}`;
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>','CNTT':'</>'};
@@ -94,7 +131,7 @@ function withLessonSolutions(html,exam){
  let index=0;
  return html.replace(/(<h3[^>]*>Câu \d+<\/h3>[\s\S]*?)(?=<h[23]\b|$)/g,(block)=>{
   const q=exam.questions[index++];if(!q?.solution)return block;
-  const solution=marked.parse(q.solution).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[a-d]\)<\/strong>)/g,'<ul class="answer-options">');
+  const solution=marked.parse(normalizeMarkdownFormatting(q.solution)).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[a-d]\)<\/strong>)/g,'<ul class="answer-options">');
   return block+`<details class="lesson-solution"><summary>Hiện/ẩn lời giải — ${esc(q.label)}</summary><div>${solution}</div></details>`;
  });
 }
@@ -114,7 +151,7 @@ export function build(){
  fs.writeFileSync(path.join(out,'assets/posts.json'),JSON.stringify(posts.map(({html,...p})=>p)));
   for(const p of posts){const related=getRelatedPosts(p,posts,4);const content=`<main id="main" class="article-wrap wrap"><a class="back" href="../#thu-vien">← Trở về thư viện</a><div class="article-heading"><nav class="eyebrow breadcrumb" aria-label="Đường dẫn bài viết"><a href="../?category=${encodeURIComponent(p.category)}#thu-vien">${esc(p.category)}</a><span aria-hidden="true">/</span><a href="../${p.grade===undefined?'':'?grade='+p.grade}#thu-vien">${gradeLabel(p)}</a><span aria-hidden="true">/</span><a href="../?type=${encodeURIComponent(p.type)}#thu-vien">${esc(p.type)}</a></nav><h1>${esc(p.title)}</h1><p>${esc(p.description)}</p><div class="article-meta"><time datetime="${p.date}">${date(p.date)}</time><div class="tags">${p.tags.map(t=>`<a class="tag" href="../?tag=${encodeURIComponent(t)}#thu-vien">#${esc(t)}</a>`).join('')}</div></div></div>${imported.some(item=>item.exam.slug===p.slug&&item.exam.questions.length)?`<p><a class="primary" href="../de-kiem-tra/${p.slug}.html">Làm đề trực tuyến →</a></p>`:''}<article class="prose">${withLessonSolutions(p.html,imported.find(item=>item.exam.slug===p.slug)?.exam)}</article><div class="article-end"><a href="../giai-tri/meo-hoc-tap.html">✦ Mẹo học tập</a><p data-study-tip>Học từng chút một, nghỉ ngơi đều đặn.</p></div><script type="module" src="../assets/article-tip.js"></script>${related.length?`<section class="related"><h2>Khám phá thêm</h2>${related.map(q=>`<a href="./${q.slug}.html">${esc(q.title)} <span>↗</span></a>`).join('')}</section>`:''}</main>`;fs.writeFileSync(path.join(out,'bai-viet',p.slug+'.html'),shell(p.title,p.description,content,'../'));}
  buildEntertainment(root,out,shell,posts,card);
- buildExams(imported,out,shell,text=>marked.parse(text));
+ buildExams(imported,out,shell,text=>marked.parse(normalizeMarkdownFormatting(text)));
  fs.writeFileSync(path.join(out,'assets/style.css'),bundleStylesheet(path.join(root,'assets/style.css')));
  const clientFiles=fs.readdirSync(path.join(out,'assets')).filter(f=>/\.(js|css)$/.test(f)).sort();
  const assetVersion=createHash('sha256').update(clientFiles.map(f=>fs.readFileSync(path.join(out,'assets',f),'utf8')).join('\n')).digest('hex').slice(0,12);

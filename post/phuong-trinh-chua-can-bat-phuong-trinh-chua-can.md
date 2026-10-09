@@ -41,7 +41,7 @@ Chi tiết về phương pháp giải các dạng phương trình, bất phươn
 
 ## 4. Một số ví dụ về phương trình và bất phương trình chứa căn thức
 
-**Ví dụ 1.**Giải phương trình
+**Ví dụ 1.** Giải phương trình
 
 $$
 \sqrt {4 + 2x – {x^2}} = x – 2
@@ -68,13 +68,13 @@ $$
 
  Vậy phương trình đã cho có nghiệm duy nhất $x = 3$.
 
-**Ví dụ 2.**Giải phương trình
+**Ví dụ 2.** Giải phương trình
 
 $$
 \sqrt {25 – {x^2}} = x – 1
 $$
 
-**Hướng dẫn.**Phương trình đã cho tương đương với
+**Hướng dẫn.** Phương trình đã cho tương đương với
 
 $$
 \begin{array}{l} 
@@ -95,13 +95,13 @@ $$
 
  Vậy phương trình có nghiệm duy nhất $x=4$.
 
-**Ví dụ 3.**Giải phương trình 
+**Ví dụ 3.** Giải phương trình 
 
 $$
 \sqrt {3{x^2} – 9x + 1} + 2 = x
 $$
 
-**Hướng dẫn.**Phương trình đã cho tương đương với
+**Hướng dẫn.** Phương trình đã cho tương đương với
 
 $$
 \begin{array}{l} 
@@ -129,7 +129,7 @@ $$
 \sqrt {{x^2} – 3x + 2} = x – 1
 $$
 
-**Hướng dẫn.**Phương trình đã cho tương đương với 
+**Hướng dẫn.** Phương trình đã cho tương đương với 
 
 $$
 \begin{array}{l} 
@@ -152,7 +152,7 @@ $$
 \sqrt {{x^2} – 5x + 4} = \sqrt { – 2{x^2} – 3x + 12}
 $$
 
-**Hướng dẫn.**Phương trình đã cho tương đương với 
+**Hướng dẫn.** Phương trình đã cho tương đương với 
 
 $$
 \begin{array}{l} 
@@ -185,7 +185,7 @@ $$
 x + 1 \ge \sqrt {2\left( {{x^2} – 1} \right)}
 $$
 
-**Hướng dẫn.**Bất phương trình đã cho tương đương với 
+**Hướng dẫn.** Bất phương trình đã cho tương đương với 
 
 $$
 \begin{array}{l} 
@@ -220,7 +220,7 @@ $$
 2x – 5 < \sqrt { – {x^2} + 4x – 3}
 $$
 
-**Hướng dẫn.**Phương trình đã cho tương đương với 
+**Hướng dẫn.** Phương trình đã cho tương đương với 
 
 $$
 \left[ \begin{array}{l} 
@@ -261,13 +261,13 @@ $$
 
 Lấy hợp tập nghiệm của 2 trường hợp trên, được đáp số cuối cùng là $S = \left[ {1;\frac{{14}}{5}} \right)$.
 
-**Ví dụ 8.**Giải phương trình 
+**Ví dụ 8.** Giải phương trình 
 
 $$
 \sqrt {x + 4} – \sqrt {1 – x} = \sqrt {1 – 2x}
 $$
 
-**Hướng dẫn.**Phương trình đã cho tương đương với
+**Hướng dẫn.** Phương trình đã cho tương đương với
 
 $$
 \begin{array}{l} 
@@ -300,7 +300,7 @@ $$
 \sqrt {3x + 1} – \sqrt {2x – 1} = \sqrt {6 – x}
 $$
 
-**Hướng dẫn.**Điều kiện $\left\{ \begin{aligned} & 3x+1\ge 0 \\ & 2x-1\ge 0 \\ & 6-x\ge 0 \\ \end{aligned} \right.\Leftrightarrow \left\{ \frac{1}{2}\le x\le 6 \right.$
+**Hướng dẫn.** Điều kiện $\left\{ \begin{aligned} & 3x+1\ge 0 \\ & 2x-1\ge 0 \\ & 6-x\ge 0 \\ \end{aligned} \right.\Leftrightarrow \left\{ \frac{1}{2}\le x\le 6 \right.$
 
 Với điều kiện đó, phương trình đã cho tương đương với 
 
@@ -328,7 +328,7 @@ $$
 2\sqrt{x-3}-\frac{1}{2}\sqrt{9-2x}\ge \frac{3}{2}
 $$
 
-**Hướng dẫn.**Điều kiện $\left\{ \begin{aligned} & x-3\ge 0 \\ & 9-2x\le 0 \\ \end{aligned} \right.\Leftrightarrow 3\le x\le \frac{9}{2}$
+**Hướng dẫn.** Điều kiện $\left\{ \begin{aligned} & x-3\ge 0 \\ & 9-2x\le 0 \\ \end{aligned} \right.\Leftrightarrow 3\le x\le \frac{9}{2}$
 
 Với điều kiện trên, bất phương trình đã cho tương đương với 
 

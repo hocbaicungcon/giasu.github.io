@@ -19,11 +19,11 @@ Nếu bài viết hữu ích, bạn hãy tặng tôi 1 cốc cafe vào số tài
 
 Để hiểu về các dạng toán tìm điều kiện để phương trình luôn đúng, vô nghiệm… chúng ta cần thành thạo các dạng bài [Lý thuyết và bài tập dấu tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html).
 
-**✅Xem thêm [ĐỀ CƯƠNG HỌC KÌ 2 TOÁN 10](/bai-viet/de-cuong-hoc-ki-2-toan-10.html) **
+**✅Xem thêm [ĐỀ CƯƠNG HỌC KÌ 2 TOÁN 10](/bai-viet/de-cuong-hoc-ki-2-toan-10.html)** 
 
 ## 1. Tìm điều kiện để tam thức bậc hai luôn dương, luôn âm
 
-**Bài toán 1.**Cho [tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html) $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) >0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 1.** Cho [tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html) $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) >0$ với mọi $x$ thuộc $\mathbb{R}$.
 
 Để giải quyết bài toán trên, chúng ta cần xét hai trường hợp:
 
@@ -37,7 +37,7 @@ Nếu bài viết hữu ích, bạn hãy tặng tôi 1 cốc cafe vào số tài
 
 Tương tự, chúng ta có các bài toán sau:
 
-**Bài toán 2.**Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) <0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 2.** Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) <0$ với mọi $x$ thuộc $\mathbb{R}$.
 
 Cần xét hai trường hợp:
 
@@ -49,7 +49,7 @@ Cần xét hai trường hợp:
   \begin{cases} a<0\\ \Delta <0 \end{cases}
   $$
 
-**Bài toán 3.**Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \ge 0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 3.** Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \ge 0$ với mọi $x$ thuộc $\mathbb{R}$.
 
 Xét hai trường hợp:
 
@@ -61,7 +61,7 @@ Xét hai trường hợp:
   \begin{cases} a>0\\ \Delta \le 0 \end{cases}
   $$
 
-**Bài toán 4.**Cho hàm số $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \le 0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 4.** Cho hàm số $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \le 0$ với mọi $x$ thuộc $\mathbb{R}$.
 
 Để giải quyết bài toán trên, chúng ta cần xét hai trường hợp:
 
@@ -75,7 +75,7 @@ Xét hai trường hợp:
 
 **Ví dụ 1.** Tìm $m$ để hàm số $f(x)=3 x^{2}+ x+m+1>0$ với mọi $x\in \mathbb{R}$.
 
-**Hướng dẫn.**Hàm số $f(x)=3 x^{2}+ x+m+1>0$ với mọi $x\in \mathbb{R}$ khi và chỉ khi 
+**Hướng dẫn.** Hàm số $f(x)=3 x^{2}+ x+m+1>0$ với mọi $x\in \mathbb{R}$ khi và chỉ khi 
 
 $$
 \begin{cases} a=3>0\\ \Delta =-12m-11<0 \end{cases}
@@ -89,7 +89,7 @@ $$
 f(x)=(m-1) x^{2}+(2 m+1) x+m+1.
 $$
 
-**Hướng dẫn. **Chúng ta xét hai trường hợp:
+**Hướng dẫn.** Chúng ta xét hai trường hợp:
 
 - **Trường hợp 1.** $m-1=0 \Leftrightarrow m=1$. Lúc này bất phương trình $f(x)>0$ tương đương với $3 x+2>0 \Leftrightarrow x>-\frac{2}{3}$ Rõ ràng tập nghiệm này không đáp ứng được mong muốn của đề bài (đề bài yêu cầu là $f(x)>0$ với mọi $x\in R$), do đó $m=1$ không thỏa mãn yêu cầu.
 
@@ -127,7 +127,7 @@ Tóm lại, không tìm được giá trị nào của $m$ thỏa mãn yêu cầ
 
 Đây chính là 4 bài toán đã xét ở phần trước. Sau đây chúng ta sử dụng các kết quả trên để giải quyết một số bài tập.
 
-**Ví dụ 1. **Tìm tất cả các giá trị của tham số $m$ để bất phương trình 
+**Ví dụ 1.** Tìm tất cả các giá trị của tham số $m$ để bất phương trình 
 
 $$
 (m-1){{{x}}^{2}}+2(m-1)x+1\ge 0
@@ -143,7 +143,7 @@ $$
 
   trong đó $f(x)=(m-1){{x}^{2}}+2(m-1)x+1$. Do đó, chúng ta xét hai trường hợp:
 
-- **Trường hợp 1.**Khi $m=1$, bất phương trình trở thành
+- **Trường hợp 1.** Khi $m=1$, bất phương trình trở thành
 
   $$
   0x^2+0x+1\ge 0
@@ -161,7 +161,7 @@ $$
 
 **Kết luận.** Kết hợp cả 2 trường hợp, chúng ta có đáp số $m\in \left[ 1;2 \right]$.
 
-**Ví dụ 2.**Cho hàm số $f(x)=(m-1){{x}^{2}}+2mx-3$ trong đó $m$ là tham số. Tìm tất cả giá trị của $m$ để bất phương trình $f(x)>0$ vô nghiệm.
+**Ví dụ 2.** Cho hàm số $f(x)=(m-1){{x}^{2}}+2mx-3$ trong đó $m$ là tham số. Tìm tất cả giá trị của $m$ để bất phương trình $f(x)>0$ vô nghiệm.
 
 **Hướng dẫn.** Chúng ta xét hai trường hợp:
 
@@ -187,13 +187,13 @@ $$
 
   Giải hệ bất phương trình trên, tìm được đáp số $m\in \left[ \frac{-3-\sqrt{21}}{2};\frac{-3+\sqrt{21}}{2} \right].$
 
-**Ví dụ 3.**Cho $f(x)=(m-2){{x}^{2}}-2(2-m)x+2m-1$, với $m$ là tham số.
+**Ví dụ 3.** Cho $f(x)=(m-2){{x}^{2}}-2(2-m)x+2m-1$, với $m$ là tham số.
 
 1. Tìm tất cả các giá trị của $m$ để phương trình $f(x)=0$ nhận $x=-2$ làm nghiệm.
 
 2. Tìm tất cả các giá trị của $m$ để hàm số $y=\sqrt{f(x)}$ được xác định với mọi giá trị của $x\in \mathbb{R}$.
 
-**Hướng dẫn. **
+**Hướng dẫn.** 
 
 1. Phương trình $f(x)=0$ nhận $x=-2$ làm nghiệm khi và chỉ khi $f(-2)=0$. Điều này tương đương với
 

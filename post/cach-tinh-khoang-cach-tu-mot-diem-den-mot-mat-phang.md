@@ -46,7 +46,7 @@ Tuy nhiên, phương pháp xác định hình chiếu vuông góc của một đ
 
 Cho hình chóp $S.ABC$ cho có $SA$ vuông góc với mặt đáy $(ABC)$. Hãy xác định hình chiếu vuông góc của điểm $A$ lên mặt phẳng $(SBC)$.
 
-**Phương pháp.** Để dựng hình chiếu của điểm $A$ lên mặt phẳng $(SBC)$, ta chỉ việc *kẻ vuông góc hai lần*như sau:
+**Phương pháp.** Để dựng hình chiếu của điểm $A$ lên mặt phẳng $(SBC)$, ta chỉ việc *kẻ vuông góc hai lần* như sau:
 
 - Trong mặt phẳng đáy $(ABC)$, kẻ $AH$ vuông góc với $BC, H$ thuộc $BC.$
 
@@ -110,7 +110,7 @@ $$
 
 ## 2. Các ví dụ tính khoảng cách từ một điểm đến một mặt phẳng
 
-**Ví dụ 1.**Cho hình chóp $S.ABC,$ có $SA$ vuông góc với đáy, $SA=3a,$ $AB=a,$ $BC=2a,$ $\widehat{ABC}=60^\circ.$ Chứng minh tam giác $ABC$ vuông và tính khoảng cách từ điểm $B$ tới mặt phẳng $(SAC),$ khoảng cách từ điểm $A$ đến mặt phẳng $(SBC).$
+**Ví dụ 1.** Cho hình chóp $S.ABC,$ có $SA$ vuông góc với đáy, $SA=3a,$ $AB=a,$ $BC=2a,$ $\widehat{ABC}=60^\circ.$ Chứng minh tam giác $ABC$ vuông và tính khoảng cách từ điểm $B$ tới mặt phẳng $(SAC),$ khoảng cách từ điểm $A$ đến mặt phẳng $(SBC).$
 
 **Hướng dẫn.** Áp dụng định lí cosin trong tam giác $ABC$, ta có 
 
@@ -134,7 +134,7 @@ $$
 d(A,(SBC))=AK=\frac{3a}{\sqrt{13}}
 $$
 
-**Ví dụ 2. **Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a.$ Hai mặt phẳng $(SAB),$ $(SAD)$ cùng vuông góc với đáy và cạnh $SD$ tạo với đáy một góc $45^\circ.$ Tính khoảng cách từ điểm $A$ đến mặt phẳng $(SBC),$ khoảng cách từ điểm $A$ đến mặt phẳng $(SBD)$.
+**Ví dụ 2.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a.$ Hai mặt phẳng $(SAB),$ $(SAD)$ cùng vuông góc với đáy và cạnh $SD$ tạo với đáy một góc $45^\circ.$ Tính khoảng cách từ điểm $A$ đến mặt phẳng $(SBC),$ khoảng cách từ điểm $A$ đến mặt phẳng $(SBD)$.
 
 ![Hinh chop S.ABCD co day la hinh vuong cạnh bên SA vuông góc với đáy](assets/images/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang-Hinh-chop-S.ABCD-co-day-la-hinh-vuong.jpg)
 
@@ -156,21 +156,21 @@ $$
 
 Từ đó tìm được $AH=\frac{a\sqrt{3}}{3}$ và khoảng cách cần tìm là $d(A,(SBD)=AH=\frac{a\sqrt{3}}{3}$.
 
-**Ví dụ 3.**Cho hình tứ diện $ABCD$ có cạnh $AD$ vuông góc với mặt phẳng $(ABC)$, ngoài ra $AD = AC = 4$ cm; $AB = 3$ cm; $BC = 5$ cm. Tìm khoảng cách từ $A$ đến mặt phẳng $(BCD).$
+**Ví dụ 3.** Cho hình tứ diện $ABCD$ có cạnh $AD$ vuông góc với mặt phẳng $(ABC)$, ngoài ra $AD = AC = 4$ cm; $AB = 3$ cm; $BC = 5$ cm. Tìm khoảng cách từ $A$ đến mặt phẳng $(BCD).$
 
-**Ví dụ 4.**[Đề thi ĐH khối D năm 2003] Cho hai mặt phẳng $(P),(Q)$vuông góc với nhau và cắt nhau theo giao tuyến $\Delta.$ Lấy $A , B$ thuộc $\Delta$ và đặt $AB=a$. Lấy $C , D$ lần lượt thuộc hai mặt phẳng $(P),(Q)$ sao cho $AC , BD$ vuông góc với $\Delta$ và $AC=BD=a.$ Tính khoảng cách từ $A$ đến mặt phẳng $(BCD).$
+**Ví dụ 4.** [Đề thi ĐH khối D năm 2003] Cho hai mặt phẳng $(P),(Q)$vuông góc với nhau và cắt nhau theo giao tuyến $\Delta.$ Lấy $A , B$ thuộc $\Delta$ và đặt $AB=a$. Lấy $C , D$ lần lượt thuộc hai mặt phẳng $(P),(Q)$ sao cho $AC , BD$ vuông góc với $\Delta$ và $AC=BD=a.$ Tính khoảng cách từ $A$ đến mặt phẳng $(BCD).$
 
 **Hướng dẫn.** Hạ $AH\perp BC$ thì $d(A,(BCD))=AH=\frac{a}{\sqrt{2}}$.
 
-**Ví dụ 5.**[Đề thi ĐH Khối D năm 2012] Cho hình hộp đứng $ABCD.A’B’C’D’$ có đáy là hình vuông, tam giác $A’AC$ vuông cân, $A’C=a$. Tính khoảng cách từ điểm $A$ đến mặt phẳng $(BCD’)$ theo $a.$
+**Ví dụ 5.** [Đề thi ĐH Khối D năm 2012] Cho hình hộp đứng $ABCD.A’B’C’D’$ có đáy là hình vuông, tam giác $A’AC$ vuông cân, $A’C=a$. Tính khoảng cách từ điểm $A$ đến mặt phẳng $(BCD’)$ theo $a.$
 
-**Hướng dẫn.**Chú ý rằng mặt phẳng $(BCD’)$ chính là mặt phẳng $(BCD’A’)$. Đáp số, khoảng cách từ $A$ đến mặt phẳng $(BCD’)$ bằng $\frac{a\sqrt{6}}{3}$.
+**Hướng dẫn.** Chú ý rằng mặt phẳng $(BCD’)$ chính là mặt phẳng $(BCD’A’)$. Đáp số, khoảng cách từ $A$ đến mặt phẳng $(BCD’)$ bằng $\frac{a\sqrt{6}}{3}$.
 
 Khi việc tính trực tiếp gặp khó khăn, ta thường sử dụng **kĩ thuật dời điểm**, để đưa về tính khoảng cách của những điểm dễ tìm được hình chiếu vuông góc hơn.
 
-**Ví dụ 6. **Cho hình lăng trụ đứng tam giác $ABC.A’B’C’$ có đáy $ABC$ là tam giác vuông tại $A,AB=3a,AC=4a.$ Biết cạnh bên $AA’=4a$ và $M$ là trung điểm $AA’$. Hãy tính khoảng cách ${d}(M,(A’B’C))$ và ${d}(M,(A’B’C))$.
+**Ví dụ 6.** Cho hình lăng trụ đứng tam giác $ABC.A’B’C’$ có đáy $ABC$ là tam giác vuông tại $A,AB=3a,AC=4a.$ Biết cạnh bên $AA’=4a$ và $M$ là trung điểm $AA’$. Hãy tính khoảng cách ${d}(M,(A’B’C))$ và ${d}(M,(A’B’C))$.
 
-**Ví dụ 7. **Cho hình chóp $S.ABC$ có đáy là tam giác vuông tại $B,$ $AB=3a,$ $BC=4a.$ Mặt phẳng $(SBC)$ vuông góc với mặt đáy và $SB=2a\sqrt{3},$ $\widehat{SBC}=30^\circ.$ Tính khoảng cách từ điểm $B$ tới mặt phẳng $(SAC).$
+**Ví dụ 7.** Cho hình chóp $S.ABC$ có đáy là tam giác vuông tại $B,$ $AB=3a,$ $BC=4a.$ Mặt phẳng $(SBC)$ vuông góc với mặt đáy và $SB=2a\sqrt{3},$ $\widehat{SBC}=30^\circ.$ Tính khoảng cách từ điểm $B$ tới mặt phẳng $(SAC).$
 
 **Hướng dẫn.** Gọi $SH$ là đường cao của tam giác $SBC$ thì $SH\perp (ABC).$ Ta có 
 

@@ -28,7 +28,7 @@ grade: 12
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-hon-hop-e-gom-peptit-x-va-peptit-y-bang-dung-dich-naoh-thu-duoc-1512-gam-hon-hop-gom-cac-muoi-natri.html)) Ví dụ 2:** Thủy phân hoàn toàn m gam hỗn hợp E gồm peptit X và peptit Y bằng dung dịch NaOH thu được 151,2 gam hỗn hợp gồm các muối natri của Gly, Ala và Val. Mặt khác, để đốt cháy hoàn toàn m gam hỗn hợp E ở trên cần 107,52 lít khí O2 (đktc) và thu được 64,8 gam H2O. Giá trị của m là:
 
-**A.** 102,4 **B.**97,0 **C.** 92,5 **D.** 107,8
+**A.** 102,4 **B.** 97,0 **C.** 92,5 **D.** 107,8
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-mot-luong-hon-hop-cac-peptit-trong-dung-dich-koh-vua-du-thu-duoc-m-gam-hon-hop-muoi-natri.html)) Ví dụ 3:** Thủy phân hoàn toàn một lượng hỗn hợp các peptit trong dung dịch KOH vừa đủ thu được m gam hỗn hợp muối natri của Gly, Ala, Val. Mặt khác, đốt cháy hoàn toàn lượng peptit trên cần vừa đủ 97,104 lít O2 (ddktc) thu được 148,72(g) CO2. Giá trị ***gần nhất*** của m là:
 
@@ -44,7 +44,7 @@ grade: 12
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-3-peptit-duoc-tao-ra-boi-gly-val-va-ala-nguoi-ta-lay-a-mol-x-cho-vao-dung-dich-chua-koh-du.html)) Ví dụ 6:** Hỗn hợp X gồm 3 peptit được tạo ra bởi Gly, Val và Ala. Người ta lấy a mol X cho vào dung dịch chứa KOH dư thì thấy có 0,12 mol KOH tham gia phản ứng. Mặt khác, lấy toàn lượng peptit trên đem đốt cháy hoàn toàn thì cần 0,495 mo O2 thu đươc sản phẩm cháy có chứa CO2 và H2O với tổng số mol là 0,75 mol. Giá trị của a là:
 
-**A.** 0,04 **B.** 0,03 **C.**0,06 **D.** 0,07
+**A.** 0,04 **B.** 0,03 **C.** 0,06 **D.** 0,07
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-hon-hop-gom-peptit-x-va-peptit-y-bang-dung-dich-naoh-thu-duoc-1527-gam-hon-hop-gom-cac-muoi-natri.html)) Ví dụ 7:** Thủy phân hoàn toàn m gam hỗn hợp gồm peptit X và peptit Y bằng dung dịch NaOH thu được 15,27 gam hỗn hợp gồm các muối natri của Gly, Ala và Val. Mặt khác, để đốt cháy hoàn toàn m gam hỗn hợp X, Y ở trên cần 12,936 lít khí O2 (đktc) và thu được 7,29 gam H2O. Giá trị của m là
 
@@ -82,7 +82,7 @@ grade: 12
 
 **([Lời giải](/bai-viet/hon-hop-e-chua-hai-peptit-x-y-nguoi-ta-thuy-phan-hoan-toan-x-cung-nhu-y-deu-thu-duoc-gly-va-val.html)) Câu 5:** Hỗn hợp E chứa hai peptit X, Y. Người ta thủy phân hoàn toàn X cũng như Y đều thu được Gly và Val. Đốt cháy hoàn toàn m gam E cần 190,008 lít khí O2 (đktc). Dẫn toàn bộ sản phẩm cháy qua bình đựng dung dịch Ca(OH)2 dư thấy có 21,84 lít khí (đktc) thoát ra. Mặt khác, thủy phân hoàn toàn m gam E trong NaOH dư thu được a mol muối của Gly và b mol muối của Val. Tỷ lệ là:
 
-**A. 7:8 **    **B. 8:7**     **C. 2:1**     **D. 1:3**
+**A. 7:8**     **B. 8:7**     **C. 2:1**     **D. 1:3**
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-m-hon-hop-cac-peptit-trong-dung-dich-koh-vua-du-thu-duoc-4967-gam-hon-hop-muoi-kali.html)) Câu 6:** Thủy phân hoàn toàn m hỗn hợp các peptit trong dung dịch KOH vừa đủ thu được 49,67 gam hỗn hợp muối Kali của Gly, Ala, Val. Mặt khác, đốt cháy hoàn toàn lượng peptit trên cần vừa đủ 1,4775 mol O2 thu được 1,075 mol H2O. Giá trị ***gần nhất*** của m là?
 
@@ -270,11 +270,11 @@ grade: 12
 
 **([Lời giải](/bai-viet/hon-hop-gom-3-peptit-duoc-tao-boi-gly-val-va-ala-nguoi-ta-lay-mot-luong-hon-hop-x-tac-dung-vua-du.html)) Câu 52:** Hỗn hợp gồm 3 peptit được tạo bởi Gly, Val và Ala. Người ta lấy một lượng hỗn hợp X tác dụng vừa đủ với 87,6 gam dung dịch HCl 10% thu được m gam muối. Mặt khác, đốt cháy toàn bộ hỗn hợp peptit thu được 25,52 gam CO2. Giá trị của m là:
 
-**A.** 28,16 **B.** 26,07 **C.** 32,14 **D.**29,08
+**A.** 28,16 **B.** 26,07 **C.** 32,14 **D.** 29,08
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-3-peptit-duoc-tao-boi-gly-val-va-ala-nguoi-ta-lay-006-mol-hon-hop-x-tac-dung-vua-du.html)) Câu 53:** Hỗn hợp X gồm 3 peptit được tạo bởi Gly, Val và Ala. Người ta lấy 0,06 mol hỗn hợp X tác dụng vừa đủ với 260 ml dung dịch HCl 1M thu được m gam muối. Mặt khác, đốt cháy toàn bộ hỗn hợp peptit thu được 10,08 gam H2O. Giá trị của m là:
 
-**A.** 28,16 **B.** 26,07 **C.** 30,53 **D.**32,08
+**A.** 28,16 **B.** 26,07 **C.** 30,53 **D.** 32,08
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-3-peptit-duoc-tao-boi-gly-val-va-ala-nguoi-ta-lay-a-mol-x-cho-vao-dung-dich.html)) Câu 54:** Hỗn hợp X gồm 3 peptit được tạo bởi Gly, Val và Ala. Người ta lấy a mol X cho vào dung dịch chứa NaOH dư thì thấy có 0,26 mol NaOH tham gia phản ứng. Mặt khác, lấy toàn bộ lượng muối trên đem đốt cháy hoàn toàn thì cần 70,56 lít (đktc) O2 thu được 10,5a mol CO2 . Giá trị của a là:
 
@@ -286,31 +286,31 @@ grade: 12
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-hon-hop-cac-peptit-trong-dung-dich-naoh-vua-du-thu-duoc-278-gam-hon-hop.html)) Câu 56:** Thủy phân hoàn toàn m gam hỗn hợp các peptit trong dung dịch NaOH vừa đủ thu được 2,78 gam hỗn hợp muối Natri của Gly, Ala. Mặt khác, đốt cháy hoàn toàn lượng peptit trên cần vừa đủ 0,135 mol O2 thu được 0,69 mol H2O và t gam CO2. Giá trị của 3t-m là:
 
-**A.** 0,56 **B.** 0,45 **C.** 0,42 **D.**0,48
+**A.** 0,56 **B.** 0,45 **C.** 0,42 **D.** 0,48
 
 **([Lời giải](/bai-viet/oligopeptit-mach-ho-x-duoc-tao-nen-tu-cac-aminoaxit-deu-co-cong-thuc-dang-dot-chay-hoan-toan-005-mol-x.html)) Câu 57:** Oligopeptit mạch hở X được tạo nên từ các aminoaxit đều có công thức dạng Đốt cháy hoàn toàn 0,05 mol X cần dung vừa đủ 1,875 mol O2 , chỉ thu được N2; 1,5 mol CO2 và 1,3 mol H2O. Mặt khác, thủy phân hoàn toàn 0,025 mol X bằng 400ml dung dịch NaOH 1M và đun nóng, thu được dung dịch Y. Cô cạn cẩn thận toàn bộ dung dịch Y thu được m gam chất rắn khan. Số liên kết peptit trong X và giá trị của m lần lượt là:
 
-**A.** 9 và 27,75 **B.** 10 và 33,75 **C.** 9 và 33,75 **D.**10 và 27,75
+**A.** 9 và 27,75 **B.** 10 và 33,75 **C.** 9 và 33,75 **D.** 10 và 27,75
 
 **([Lời giải](/bai-viet/x-va-y-deu-la-peptit-mach-ho-thuy-phan-hoan-toan-x-cung-nhu-y-deu-thu-duoc-gly-va-val.html)) Câu 58:** X và Y đều là peptit mạch hở. Thủy phân hoàn toàn X cũng như Y đều thu được Gly và Val. Đốt cháy hoàn toàn hỗn hợp E chứa X và Y cần dung 22,176 lít O2 (đktc). Sản phẩm cháy gồm có CO2 , H2O và N2. Dẫn toàn bộ sản phẩm cháy qua bình đựng dung dịch Ca(OH)2 dư thấy khối lượng bình tăng m gam, khí thoát ra khỏi bình có thể tích 2,464 lít (đktc). Thủy phân hoàn toàn hỗn hợp E thu được a mol Gly và b mol Val. Tỉ lệ a:b là
 
-**A.** 1:1 **B.** 1:2 **C.** 2:1 **D.**2:3
+**A.** 1:1 **B.** 1:2 **C.** 2:1 **D.** 2:3
 
 **([Lời giải](/bai-viet/x-va-y-lan-luot-la-cac-tripeptit-va-tetrapeptit-duoc-tao-thanh-tu-cung-mot-amino-axit-no-mach-ho-co-mot-nhom-cooh.html)) Câu 59:** X và Y lần lượt là các tripeptit và tetrapeptit được tạo thành từ cùng một amino axit no mạch hở, có một nhóm –COOH và một nhóm -NH2. Đốt cháy hoàn toàn 0,1 mol Y thu được sản phẩm gồm CO2, H2O, N2 trong đó tổng khối lượng của CO2 và H2O là 47,8 gam. Nếu đốt cháy hoàn toàn 0,3 mol X cần bao nhiêu mol O2:
 
-**A.** 2,8 mol **B.** 2,025 mol **C.** 3,375 mol **D.**1,875 mol
+**A.** 2,8 mol **B.** 2,025 mol **C.** 3,375 mol **D.** 1,875 mol
 
 **([Lời giải](/bai-viet/thuy-phan-khong-hoan-toan-m-gam-hexapeptit-gly-ala-gly-ala-gly-ala-thu-duoc-1533-gam-hon-hop-x.html)) Câu 60:** Thủy phân không hoàn toàn m gam hexapeptit Gly-Ala-Gly-Ala-Gly-Ala thu được 153,3 gam hỗn hợp X gồm Ala, Ala-Gly, Gly-Ala, Gly-Ala-Gly. Đốt cháy toàn bộ X cần vừa đủ 6,3 mol O2. Giá trị m ***gần giá trị nào nhất*** dưới đây:
 
-**A.** 140,2 **B.** 145,7 **C.** 160,82 **D.**130,88
+**A.** 140,2 **B.** 145,7 **C.** 160,82 **D.** 130,88
 
 **([Lời giải](/bai-viet/tripeptit-mach-ho-x-va-dipeptit-mach-ho-y-deu-duoc-tao-nen-tu-mot-aminoaxit-no-mach-ho-trong-phan-tu.html)) Câu 61:** Tripeptit mạch hở X và đipeptit mạch hở Y đều được tạo nên từ một aminoaxit (no, mạch hở, trong phân tử chỉ chứa một nhóm -NH2 và một nhóm –COOH). Đốt cháy hoàn toàn 0,1 mol Y thu được tổng khối lượng CO2 và H2O bằng 24,8 gam. Đốt cháy hoàn toàn 0,1 mol X, sản phẩm thu được hấp thụ vào dung dịch Ca(OH)2 dư, sau phản ứng khối lượng dung dịch này:
 
-**A.** giảm 32,7 gam **B.** giảm 27,3 gam **C.** giảm 23,7 gam **D.**giảm 37,2 gam
+**A.** giảm 32,7 gam **B.** giảm 27,3 gam **C.** giảm 23,7 gam **D.** giảm 37,2 gam
 
 **([Lời giải](/bai-viet/dot-chay-hoan-toan-01-mol-tripeptit-cua-mot-aminoaxit-thuoc-day-dong-dang-cua-gly-thu-duoc-19-mol-hon-hop.html)) Câu 62:** Đốt cháy hoàn toàn 0,1 mol tripeptit của một aminoaxit (thuộc dãy đồng đẳng của Gly) thu được 1,9 mol hỗn hợp sản phẩm khí. Cho hỗn hợp sản phẩm lần lượt đi qua bình 1 đựng đặc, nóng. Bình 2 đựng dung dịch Ca(OH)2 dư thấy thoát ra 3,36 lít (đktc) 1 khí duy nhất và bình 1 tăng 15,3g; bình 2 thu được m(g) kết tủa. Mặt khác, để đốt cháy 0,02 mol tetrapeptit cũng của aminoaxit đó thì cần dung V lít (đktc) khí O2 . Giá trị của m và V là:
 
-**A.** 90g và 6,72 lít **B.** 60g và 8,512 lít **C.** 120g và 18,816 lít **D.**90g và 13,44 lít
+**A.** 90g và 6,72 lít **B.** 60g và 8,512 lít **C.** 120g và 18,816 lít **D.** 90g và 13,44 lít
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-mot-pentapeptit-mach-ho-m-thu-duoc-hon-hop-gom-hai-aminoaxit-x1-x2.html)) Câu 63:** Thủy phân hoàn toàn m gam một pentapeptit mạch hở M thu được hỗn hợp gồm hai aminoaxit X1, X2 (đều no, mạch hở, phân tử chứa một nhóm -NH2 và một nhóm –COOH). Đốt cháy toàn bộ lượng X1, X2 ở trên cần dùng vừa đủ 0,255 mol O2 , chỉ thu được N2 ,H2O và 0,22 mol CO2 . Giá trị của m là:
 
@@ -318,7 +318,7 @@ grade: 12
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-pentapeptit-m-mach-ho-thu-duoc-hon-hop-x-gom-hai-aminoaxit-x1-x2.html)) Câu 64:** Thủy phân hoàn toàn m gam pentapeptit M mạch hở, thu được hỗn hợp X gồm hai aminoaxit X1, X2 (đều no, mạch hở, phân tử chứa một nhóm -NH2 và một nhóm –COOH). Đốt cháy hoàn toàn hỗn hợp X trên cần dùng vừa đủ 2,268 lít O2 (đktc), chỉ thu được H2O, N2 và 1,792 lít CO2 (đktc). Giá trị của m là:
 
-**A.** 2,295 **B.** 1,935 **C.** 2,806 **D.**1,806
+**A.** 2,295 **B.** 1,935 **C.** 2,806 **D.** 1,806
 
 ## I.2 Bài toán thủy phân peptit
 
@@ -722,7 +722,7 @@ grade: 12
 
 **([Lời giải](/bai-viet/x-la-peptit-mach-ho-duoc-tao-boi-gly-ala-va-val-y-la-chat-beo-ran-hon-hop-e-chua-x-y-voi-ti-le-mol.html)) Ví dụ 3:** X là peptit mạch hở (được tạo bởi Gly, Ala và Val), Y là chất béo rắn. Hỗn hợp E chứa X, Y với tỉ lệ mol tương ứng là 2:1. Đun nóng m gam E trong 110 ml dung dịch NaOH 1M vừa đủ thu được bốn muối Z và glixerol. Đốt cháy hoàn toàn E cần dùng vừa đủ 1,115 mol O2. Sản phẩm cháy thu được có chứa 0,04 mol N2. Tổng khối lượng các muối trong Z là?
 
-**A.** 16,58 **B.**19,94 **C.** 18,43 **D.** 18,06
+**A.** 16,58 **B.** 19,94 **C.** 18,43 **D.** 18,06
 
 **([Lời giải](/bai-viet/hon-hop-01-mol-e-chua-este-z-co-cong-thuc-ch3cooc2h5-va-m1-gam-hai-peptit-x-y-deu-ho-tao-boi-ala-va-val.html)) Ví dụ 4:** Hỗn hợp 0,1 mol E chứa este Z có công thức CH3COOC2H5 và m1 gam hai peptit X, Y (đều hở, tạo bởi Ala và Val). Đốt cháy 0,1 mol E trên bằng lượng khí O2 vừa đủ thu được 1,904 lít khí N2 ở đktc và 53,31 gam hỗn hợp CO2 và H2O. Mặt khác đốt cháy m1 gam X, Y cần dùng vừa đủ 28,08 gam khí O2. Giá trị của m1 là?
 
@@ -798,33 +798,33 @@ grade: 12
 
 ### 2. Ví dụ minh họa
 
-**([Lời giải](/bai-viet/x-la-peptit-mach-ho-cau-tao-tu-axit-glutamic-va-aminoaxit-y-no-mach-ho-chua-1-nhom-nh2-va-1-nhom-cooh.html)) Ví dụ 1:**X là peptit mạch hở cấu tạo từ axit glutamic và α-aminoaxit Y no mạch hở chứa 1 nhóm –NH2 và 1 nhóm –COOH. Để tác dụng vừa đủ với 0,02 mol X cần 0,14 mol KOH tạo thành hỗn hợp muối trung hoà. Mặt khác, đốt cháy hoàn toàn 0,02 mol X cần 0,435 mol O2, thu được 0,38 mol CO2, số mắt xích glu trong peptit X là.
+**([Lời giải](/bai-viet/x-la-peptit-mach-ho-cau-tao-tu-axit-glutamic-va-aminoaxit-y-no-mach-ho-chua-1-nhom-nh2-va-1-nhom-cooh.html)) Ví dụ 1:** X là peptit mạch hở cấu tạo từ axit glutamic và α-aminoaxit Y no mạch hở chứa 1 nhóm –NH2 và 1 nhóm –COOH. Để tác dụng vừa đủ với 0,02 mol X cần 0,14 mol KOH tạo thành hỗn hợp muối trung hoà. Mặt khác, đốt cháy hoàn toàn 0,02 mol X cần 0,435 mol O2, thu được 0,38 mol CO2, số mắt xích glu trong peptit X là.
 
-**A.**3 **B.**2 **C.**4 **D.**1
+**A.** 3 **B.** 2 **C.** 4 **D.** 1
 
-**([Lời giải](/bai-viet/x-la-peptit-mach-ho-cau-tao-tu-lysin-va-1-%ce%b1-aminoaxit-y-no-mach-ho-chua-1-nhom-nh2-va-1-nhom-cooh.html)) Ví dụ 2:**X là peptit mạch hở cấu tạo từ Lysin và 1 α-aminoaxit Y no mạch hở chứa 1 nhóm –NH2 và 1 nhóm –COOH. Đốt cháy hoàn toàn 0,06 mol X cần 31,92 lít O2 ở (đktc), thu được 47,52 gam CO2. Mặt khác 0,06 mol X trên tác dụng vừa đủ với 0,42 mol HCl. Khối lượng tương ứng 0,05 mol X là.
+**([Lời giải](/bai-viet/x-la-peptit-mach-ho-cau-tao-tu-lysin-va-1-%ce%b1-aminoaxit-y-no-mach-ho-chua-1-nhom-nh2-va-1-nhom-cooh.html)) Ví dụ 2:** X là peptit mạch hở cấu tạo từ Lysin và 1 α-aminoaxit Y no mạch hở chứa 1 nhóm –NH2 và 1 nhóm –COOH. Đốt cháy hoàn toàn 0,06 mol X cần 31,92 lít O2 ở (đktc), thu được 47,52 gam CO2. Mặt khác 0,06 mol X trên tác dụng vừa đủ với 0,42 mol HCl. Khối lượng tương ứng 0,05 mol X là.
 
-**A.**27,6 **B.**25,7 **C.**26,7 **D.**27,5
+**A.** 27,6 **B.** 25,7 **C.** 26,7 **D.** 27,5
 
 **([Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-hon-hop-t-gom-tripeptit-x-va-heptapeptit-y-mach-ho-ty-le-mol-tuong-ung-la-12.html)) Ví dụ 3:** Thuỷ phân hoàn toàn m gam hỗn hợp T gồm tripeptit X và heptapeptit Y (mạch hở, tỷ lệ mol tương ứng là 1:2) cần vừa đủ 0,48 mol NaOH, sau phản ứng thu được 49,22 gam hỗn hợp muối của Gly, Ala, Val và Glu. Mặt khác, đốt cháy hoàn toàn m gam T thu được 1,32 mol khí CO2. Giá trị của m là:
 
-**A.**33,62 **B.**31,18 **C.**36,24 **D.**34,16
+**A.** 33,62 **B.** 31,18 **C.** 36,24 **D.** 34,16
 
-**([Lời giải](/bai-viet/e-la-hon-hop-chua-2-peptit-a-b-duoc-tao-boi-gly-ala-val-va-glu-thuy-phan-m-gam-peptit-e-trong-koh-vua-du.html)) Ví dụ 4:**E là hỗn hợp chứa 2 peptit A, B được tạo bởi Gly, Ala, Val và Glu. Thuỷ phân m gam peptit E trong KOH vừa đủ, sau phản ứng thu được 30,05 gam hỗn hợp muối khan X. Mặt khác, thuỷ phân m gam E trong HCl thấy có 0,19 mol HCl phản ứng, sau phản ứng thu được 27,865 gam muối khan. Đốt cháy hoàn toàn lượng muối X trên thu được K2CO3, N2 và 39,87 gam hỗn hợp CO2 và H2O. Biết số mol E ứng với m gam là 0,03 mol. Giá trị của m là:
+**([Lời giải](/bai-viet/e-la-hon-hop-chua-2-peptit-a-b-duoc-tao-boi-gly-ala-val-va-glu-thuy-phan-m-gam-peptit-e-trong-koh-vua-du.html)) Ví dụ 4:** E là hỗn hợp chứa 2 peptit A, B được tạo bởi Gly, Ala, Val và Glu. Thuỷ phân m gam peptit E trong KOH vừa đủ, sau phản ứng thu được 30,05 gam hỗn hợp muối khan X. Mặt khác, thuỷ phân m gam E trong HCl thấy có 0,19 mol HCl phản ứng, sau phản ứng thu được 27,865 gam muối khan. Đốt cháy hoàn toàn lượng muối X trên thu được K2CO3, N2 và 39,87 gam hỗn hợp CO2 và H2O. Biết số mol E ứng với m gam là 0,03 mol. Giá trị của m là:
 
-**A.**18,90 **B.**15,08 **C.**18,09 **D.**18,05
+**A.** 18,90 **B.** 15,08 **C.** 18,09 **D.** 18,05
 
-**([Lời giải](/bai-viet/hon-hop-e-chua-hcooch3-ch3cooch3-c3h7cooch3-va-peptit-gly-ala-val-glu-lys.html)) Ví dụ 5:**Hỗn hợp E chứa HCOOCH3, CH3COOCH3, C3H7COOCH3 và peptit Gly-Ala-Val-Glu-Lys. Đốt cháy hoàn toàn 0,06 mol E cần dùng vừa đủ 0,685 mol O2, thu được H2O, 0,06 mol N2 và CO2. Nếu cho toàn bộ lượng E trên tác dụng hoàn toàn với NaOH thì thu được m gam muối. Giá trị của m là?
+**([Lời giải](/bai-viet/hon-hop-e-chua-hcooch3-ch3cooch3-c3h7cooch3-va-peptit-gly-ala-val-glu-lys.html)) Ví dụ 5:** Hỗn hợp E chứa HCOOCH3, CH3COOCH3, C3H7COOCH3 và peptit Gly-Ala-Val-Glu-Lys. Đốt cháy hoàn toàn 0,06 mol E cần dùng vừa đủ 0,685 mol O2, thu được H2O, 0,06 mol N2 và CO2. Nếu cho toàn bộ lượng E trên tác dụng hoàn toàn với NaOH thì thu được m gam muối. Giá trị của m là?
 
-**A.**17,54 **B.**20,15 **C.**18,42 **D.**17,92
+**A.** 17,54 **B.** 20,15 **C.** 18,42 **D.** 17,92
 
-**([Lời giải](/bai-viet/hon-hop-e-chua-hcooch3-ch3cooch3-c3h7cooch3-ch3ooc-cooch3-va-peptit-gly-ala-val-glu-lys.html)) Ví dụ 6:**Hỗn hợp E chứa HCOOCH3, CH3COOCH3, C3H7COOCH3, CH3OOC-COOCH3 và peptit Gly-Ala-Val-Glu-Lys. Đốt cháy hoàn toàn 0,08 mol E cần dùng vừa đủ 0,755 mol O2, thu được H2O, 0,06 mol N2 và 0,63 mol CO2. Nếu cho toàn bộ lượng E trên tác dụng hoàn toàn với NaOH thì thu được m gam muối. Giá trị của m là?
+**([Lời giải](/bai-viet/hon-hop-e-chua-hcooch3-ch3cooch3-c3h7cooch3-ch3ooc-cooch3-va-peptit-gly-ala-val-glu-lys.html)) Ví dụ 6:** Hỗn hợp E chứa HCOOCH3, CH3COOCH3, C3H7COOCH3, CH3OOC-COOCH3 và peptit Gly-Ala-Val-Glu-Lys. Đốt cháy hoàn toàn 0,08 mol E cần dùng vừa đủ 0,755 mol O2, thu được H2O, 0,06 mol N2 và 0,63 mol CO2. Nếu cho toàn bộ lượng E trên tác dụng hoàn toàn với NaOH thì thu được m gam muối. Giá trị của m là?
 
-**A.**21,86 **B.**32,15 **C.**20,22 **D.**18,92
+**A.** 21,86 **B.** 32,15 **C.** 20,22 **D.** 18,92
 
-**([Lời giải](/bai-viet/hon-hop-x-gom-hai-peptit-duoc-tao-boi-gly-ala-val-mot-este-co-ctpt-c2h5coo2c2h4-va-lysin.html)) Ví dụ 7:**Hỗn hợp X gồm hai peptit (được tạo bởi Gly, Ala, Val), một este có CTPT (C2H5COO)2C2H4 và lysin. Đốt cháy hoàn toàn m gam X (trong đó số mol của este bằng ½ số mol của Lysin và bằng 1/8 số mol hỗn hợp X) thu được 0,95 mol CO2, 0,13 mol N2 và 0,9 mol H2O. Giá trị phần trăm khối lượng của este trong hỗn hợp X gần nhất là?
+**([Lời giải](/bai-viet/hon-hop-x-gom-hai-peptit-duoc-tao-boi-gly-ala-val-mot-este-co-ctpt-c2h5coo2c2h4-va-lysin.html)) Ví dụ 7:** Hỗn hợp X gồm hai peptit (được tạo bởi Gly, Ala, Val), một este có CTPT (C2H5COO)2C2H4 và lysin. Đốt cháy hoàn toàn m gam X (trong đó số mol của este bằng ½ số mol của Lysin và bằng 1/8 số mol hỗn hợp X) thu được 0,95 mol CO2, 0,13 mol N2 và 0,9 mol H2O. Giá trị phần trăm khối lượng của este trong hỗn hợp X gần nhất là?
 
-**A.**6,01% **B.**6,21% **C.**7,75% **D.**8,45%
+**A.** 6,01% **B.** 6,21% **C.** 7,75% **D.** 8,45%
 
 ## II.7 Tư duy dồn chất xử lý bài toán peptit liên quan tới đốt cháy muối
 
@@ -870,7 +870,7 @@ grade: 12
 
 **A.** 3:4 **B.** 1:1 **C.** 2:3 **D.** 4:3
 
-**([Lời giải](/bai-viet/x-la-hop-chat-co-cong-thuc-phan-tu-c4h9o4n-y-va-z-la-hai-peptit-deu-mach-ho-duoc-tao-boi-glyxin-va-valin.html))****Ví dụ 10:** X là hợp chất có công thức phân tử C4H9O4N; Y và Z là hai peptit đều mạch hở được tạo bởi glyxin và valin có tổng số liên kết peptit là 7. Đun nóng 37,89 gam hỗn hợp **E**chứa X, Y, Z với dung dịch NaOH vừa đủ, thu được hỗn hợp chứa 3 muối (trong đó có 1 muối của 1 axit hữu cơ đơn chức) và 3,84 gam ancol T. Đốt cháy toàn bộ hỗn hợp muối cần dùng 1,2075 mol O2, thu đuợc Na2CO3, CO2, H2O và 4,816 lít khí N2 (đktc). Phần trăm khối lượng của Z trong hỗn hợp E là?
+**([Lời giải](/bai-viet/x-la-hop-chat-co-cong-thuc-phan-tu-c4h9o4n-y-va-z-la-hai-peptit-deu-mach-ho-duoc-tao-boi-glyxin-va-valin.html))****Ví dụ 10:** X là hợp chất có công thức phân tử C4H9O4N; Y và Z là hai peptit đều mạch hở được tạo bởi glyxin và valin có tổng số liên kết peptit là 7. Đun nóng 37,89 gam hỗn hợp **E** chứa X, Y, Z với dung dịch NaOH vừa đủ, thu được hỗn hợp chứa 3 muối (trong đó có 1 muối của 1 axit hữu cơ đơn chức) và 3,84 gam ancol T. Đốt cháy toàn bộ hỗn hợp muối cần dùng 1,2075 mol O2, thu đuợc Na2CO3, CO2, H2O và 4,816 lít khí N2 (đktc). Phần trăm khối lượng của Z trong hỗn hợp E là?
 
 **A.** 15,44 **B.** 35,05 **C.** 22,16 **D.** 36,57
 

@@ -89,7 +89,7 @@ thay số 0,15:3 = Δm/(3.64-2.27)
 
 **Tính nhanh** n(Cu) = Δm/ΔM thay số n(Cu) = 1,2/(64-56) = 0,15 => m (Cu) = 0,15.64 = 9,6 gam
 
-**VD5:**Ngâm một thanh magie trong dung dịch AgNO3. Tính khối lượng bạc bám trên thanh magie biết khối lượng thanh magie tăng 15,36 gam. (ĐS: 17,28 gam)
+**VD5:** Ngâm một thanh magie trong dung dịch AgNO3. Tính khối lượng bạc bám trên thanh magie biết khối lượng thanh magie tăng 15,36 gam. (ĐS: 17,28 gam)
 
 ![Phương pháp bảo toàn khối lượng VD5](assets/images/phuong-phap-tang-giam-khoi-luong-VD5Untitled-660x137.jpg)
 
@@ -99,7 +99,7 @@ thay số n(Ag) = 2.(15,36/(2.108-24) = 0,16
 
 => m (Cu) = 0,16.108 = 17,28 gam
 
-**VD6:**Nhúng thanh Zn vào dung dịch chứa 5,64 gam Cu(NO3)2 và 3,4 gam AgNO3. Sau khi các phản ứng xảy ra hoàn toàn khối lượng thanh Zn tăng hay giảm bao nhiêu gam biết tất cả kim loại thoát ra đều bám vào thanh Zn. (ĐS: 1,48 gam)
+**VD6:** Nhúng thanh Zn vào dung dịch chứa 5,64 gam Cu(NO3)2 và 3,4 gam AgNO3. Sau khi các phản ứng xảy ra hoàn toàn khối lượng thanh Zn tăng hay giảm bao nhiêu gam biết tất cả kim loại thoát ra đều bám vào thanh Zn. (ĐS: 1,48 gam)
 
 ![Phương pháp bảo toàn khối lượng VD6](assets/images/phuong-phap-tang-giam-khoi-luong-VD6Untitled-560x365.jpg)
 
@@ -123,9 +123,9 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 *(Đề thi tuyển sinh Đại học khối A năm 2012)*
 
-**Câu 2:**Hòa tan hoàn toàn 20,6 gam hỗn hợp gồm Na2CO3 và CaCO3 bằng dung dịch HCl dư, thu được V lít khí CO2 (đktc) và dung dịch chứa 22,8 gam hỗn hợp muối. Giá trị của V là
+**Câu 2:** Hòa tan hoàn toàn 20,6 gam hỗn hợp gồm Na2CO3 và CaCO3 bằng dung dịch HCl dư, thu được V lít khí CO2 (đktc) và dung dịch chứa 22,8 gam hỗn hợp muối. Giá trị của V là
 
-**A.**1,79. **B.**5,60. **C.** 2,24. **D.**4,48.
+**A.** 1,79. **B.** 5,60. **C.** 2,24. **D.** 4,48.
 
 *(Đề thi tuyển sinh Cao đẳng năm 2013)*
 
@@ -133,7 +133,7 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 **A.** 6,81 gam.**B.** 4,76 gam.**C.** 3,81 gam. **D.** 5,56 gam.
 
-**Câu 4:**Cho dung dịch AgNO3 dư tác dụng với dung dịch hỗn hợp có hòa tan 6,25 gam hai muối KCl và KBr thu được 10,39 gam hỗn hợp AgCl và AgBr. Số mol các chất trong hỗn hợp đầu là :
+**Câu 4:** Cho dung dịch AgNO3 dư tác dụng với dung dịch hỗn hợp có hòa tan 6,25 gam hai muối KCl và KBr thu được 10,39 gam hỗn hợp AgCl và AgBr. Số mol các chất trong hỗn hợp đầu là :
 
 **A.** 0,08 mol. **B.** 0,06 mol. **C.** 0,03 mol. **D.** 0,055 mol.
 
@@ -141,9 +141,9 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 ******A.** 3,7%. **B.** 4,5%. **C.** 7,3%. **D.** 6,7%.
 
-**Câu 6:**Một bình cầu dung tích 448 ml được nạp đầy oxi rồi cân. Phóng điện để ozon hoá, sau đó nạp thêm cho đầy oxi rồi cân. Khối lượng trong hai trường hợp chênh lệch nhau 0,03 gam. Biết các thể tích nạp đều ở đktc. Thành phần % về thể tích của ozon trong hỗn hợp sau phản ứng là :
+**Câu 6:** Một bình cầu dung tích 448 ml được nạp đầy oxi rồi cân. Phóng điện để ozon hoá, sau đó nạp thêm cho đầy oxi rồi cân. Khối lượng trong hai trường hợp chênh lệch nhau 0,03 gam. Biết các thể tích nạp đều ở đktc. Thành phần % về thể tích của ozon trong hỗn hợp sau phản ứng là :
 
-**A.** 9,375%. **B.** 10,375%. **C.** 8,375%. **D.**11,375%. 
+**A.** 9,375%. **B.** 10,375%. **C.** 8,375%. **D.** 11,375%. 
 
 **Câu 7:** Cho một lượng bột Zn vào dung dịch X gồm FeCl2 và CuCl2. Khối lượng chất rắn sau khi các phản ứng xảy ra hoàn toàn nhỏ hơn khối lượng bột Zn ban đầu là 0,5 gam. Cô cạn phần dung dịch sau phản ứng thu được 13,6 gam muối khan. Tổng khối lượng các muối trong X là :
 
@@ -151,15 +151,15 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 *(Đề thi tuyển sinh Đại học khối B năm 2008)*
 
-**Câu 8:**Cho m gam hỗn hợp bột Zn và Fe vào lượng dư dung dịch CuSO4. Sau khi kết thúc các phản ứng, lọc bỏ phần dung dịch thu được m gam bột rắn. Thành phần phần trăm theo khối lượng của Zn trong hỗn hợp bột ban đầu là :
+**Câu 8:** Cho m gam hỗn hợp bột Zn và Fe vào lượng dư dung dịch CuSO4. Sau khi kết thúc các phản ứng, lọc bỏ phần dung dịch thu được m gam bột rắn. Thành phần phần trăm theo khối lượng của Zn trong hỗn hợp bột ban đầu là :
 
 **A.** 90,27%. **B.** 85,30%. **C.** 82,20%. **D.** 12,67%. 
 
 *(Đề thi tuyển sinh đại học khối B năm 2007)*
 
-**Câu 9:**Lấy 2 thanh kim loại M hoá trị II. Thanh 1 nhúng vào 250 ml dung dịch FeSO4; thanh 2 nhúng vào 250 ml dung dịch CuSO4. Sau khi phản ứng kết thúc, thanh 1 tăng 16 gam, thanh 2 tăng 20 gam. Biết nồng độ mol/l của 2 dung dịch ban đầu bằng nhau. Vậy M là :
+**Câu 9:** Lấy 2 thanh kim loại M hoá trị II. Thanh 1 nhúng vào 250 ml dung dịch FeSO4; thanh 2 nhúng vào 250 ml dung dịch CuSO4. Sau khi phản ứng kết thúc, thanh 1 tăng 16 gam, thanh 2 tăng 20 gam. Biết nồng độ mol/l của 2 dung dịch ban đầu bằng nhau. Vậy M là :
 
-**A.**Mg.**B.** Ni. **C.** Zn. **D.** Be.
+**A.** Mg.**B.** Ni. **C.** Zn. **D.** Be.
 
 **Câu 10*:**Cho 3,78 gam bột Al phản ứng vừa đủ với dung dịch muối XCla tạo thành dung dịch Y. Khối lượng chất tan trong dung dịch Y giảm 4,06 gam so với dung dịch XCla. Công thức của muối XCla là :
 
@@ -179,7 +179,7 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 **Câu 13*:** Có một cốc đựng m gam dung dịch HNO3 và H2SO4. Hoà tan hết 3,64 gam kim loại M (có hoá trị không đổi) vào dung dịch trong cốc thì thu được 2,1504 lít (đktc) hỗn hợp 2 khí NO2 và X. Sau phản ứng, khối lượng các chất trong cốc giảm 1,064 gam. Kim loại M là :
 
-**A.** Fe. **B.**Cu.  **C.** Al. **D.** Zn.
+**A.** Fe. **B.** Cu.  **C.** Al. **D.** Zn.
 
 **Câu 14:** Nung 6,58 gam Cu(NO3)2 trong bình kín không chứa không khí, sau một thời gian thu được 4,96 gam chất rắn và hỗn hợp khí X. Hấp thụ hoàn toàn X vào nước để được 300 ml dung dịch Y. Dung dịch Y có pH bằng
 
@@ -189,7 +189,7 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 **Câu 15:** Nhiệt phân hoàn toàn 29,6 gam một muối nitrat kim loại, sau phản ứng thu được 8 gam oxit kim loại. Công thức của muối nitrat là
 
-**A.**Cu(NO3)2. **B.**Fe(NO3)3. **C.**Pb(NO3)2. **D.**Mg(NO3)2­.
+**A.** Cu(NO3)2. **B.** Fe(NO3)3. **C.** Pb(NO3)2. **D.** Mg(NO3)2­.
 
 *(Đề thi thử đại học lần 4 – THPT Chuyên – Đại học Vinh, năm học 2010 – 2011)*
 
@@ -215,13 +215,13 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 **Câu 19:** Cho 24,4 gam hỗn hợp gồm axit axetic, axit fomic, glixerol, ancol etylic tác dụng với Na dư. Sau khi phản ứng hoàn toàn thu được 6,72 lít khí H2 (đktc) và m gam muối. Giá trị của m là:
 
-**A.**31 gam. **B.**37,6 gam. **C.**23,8 gam. **D.**25 gam.
+**A.** 31 gam. **B.** 37,6 gam. **C.** 23,8 gam. **D.** 25 gam.
 
 *(Đề thi thử Đại học lần 2 – THPT Chuyên Hùng Vương – Phú Thọ, năm học 2010 – 2011)*
 
 **Câu 20*:** Cho m gam hỗn hợp axit axetic, axit benzoic, axit ađipic, axit oxalic tác dụng vừa đủ với dung dịch NaOH thu được a gam muối. Nếu cũng cho m gam hỗn hợp X nói trên tác dụng với Ca(OH)2 vừa đủ thì thu được b gam muối. Biểu thức liên hệ m, a, b là:
 
-**A.**9m = 20a – 11b. **B.**3m = 22b – 19a. **C.**8m = 19a – 11b. **D.**m = 11b – 10a.
+**A.** 9m = 20a – 11b. **B.** 3m = 22b – 19a. **C.** 8m = 19a – 11b. **D.** m = 11b – 10a.
 
 *(Đề thi thử đại học lần 3 – THPT Chuyên Nguyễn Huệ – Hà Nội, năm học 2011 – 2012)*
 
@@ -229,7 +229,7 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 **Câu 21:** Để tác dụng hết với 100 gam lipit có chỉ số axit bằng 7 phải dùng 17,92 gam KOH. Khối lượng muối thu được là:
 
-**A.**110,324 gam. **B.**108,107 gam. **C.**103,178 gam. **D.**108,265 gam.
+**A.** 110,324 gam. **B.** 108,107 gam. **C.** 103,178 gam. **D.** 108,265 gam.
 
 *(Đề thi thử Đại học lần 1 – THPT Chuyên Hùng Vương – Phú Thọ, năm học 2010 – 2011)*
 
@@ -241,7 +241,7 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 *(Đề thi tuyển sinh Đại học khối B năm 2008)*
 
-**Câu 23:**Cho 1 mol amino axit X phản ứng với dung dịch HCl (dư), thu được m­1 gam muối Y. Cũng 1 mol amino axit X phản ứng với dung dịch NaOH (dư), thu được m2 gam muối Z. Biết m2 – m1 = 7,5. Công thức phân tử của X là:
+**Câu 23:** Cho 1 mol amino axit X phản ứng với dung dịch HCl (dư), thu được m­1 gam muối Y. Cũng 1 mol amino axit X phản ứng với dung dịch NaOH (dư), thu được m2 gam muối Z. Biết m2 – m1 = 7,5. Công thức phân tử của X là:
 
 **A.** C4H10O2N2. **B.** C4H8O4N2. **C.** C5H9O4N. **D.** C5H11O2N.
 
@@ -249,9 +249,9 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 **Câu 24*:** Cho 0,16 mol axit A phản ứng vừa đủ với 160 ml dung dịch HCl 1M, thu được 22,32 gam muối. Mặt khác, cho 1,03 gam A phản ứng vừa với dung dịch KOH, thu được 1,41 gam muối khan. Số CTCT của A là: 
 
-**A.** 7. **B.** 5. **C.** 4. **D.**6.
+**A.** 7. **B.** 5. **C.** 4. **D.** 6.
 
-**Câu 25:**Nhúng một thanh sắt nặng 100 gam vào 100 ml dung dịch hỗn hợp gồm Cu(NO3)2 0,2M và AgNO3 0,2M. Sau một thời gian lấy thanh kim loại ra, rửa sạch làm khô cân được 101,72 gam (giả thiết các kim loại tạo thành đều bám hết vào thanh sắt). Khối lượng sắt đã phản ứng là 
+**Câu 25:** Nhúng một thanh sắt nặng 100 gam vào 100 ml dung dịch hỗn hợp gồm Cu(NO3)2 0,2M và AgNO3 0,2M. Sau một thời gian lấy thanh kim loại ra, rửa sạch làm khô cân được 101,72 gam (giả thiết các kim loại tạo thành đều bám hết vào thanh sắt). Khối lượng sắt đã phản ứng là 
 
 **A.** 2,16 gam. **B.** 0,84 gam. **C.** 1,72 gam. **D.** 1,40 gam.
 
@@ -267,13 +267,13 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 **Câu 28****:** Cho 19,2 gam hỗn hợp Fe3O4, FexOy tác dụng với vừa hết 180 ml dung dịch H2SO4 2M (loãng), thu được dung dịch X. Khối lượng muối có trong X là :
 
-**A.**30,4. **B.**24. **C.**48. **D.**52.****
+**A.** 30,4. **B.** 24. **C.** 48. **D.** 52.****
 
 *(Đề thi thử Đại học – THPT Chuyên Lê Hồng Phong – Nam Định, năm học 2012 – 2013)*
 
 **Câu 29*:** Hòa tan hết 26,43 gam hỗn hợp bột A gồm Mg, Al, Al2O3 và MgO bằng 795 ml dung dịch hỗn hợp gồm HCl 0,5M và H2SO4 0,75M (vừa đủ). Sau phản ứng thu được dung dịch X và 4,368 lít khí H2 (ở đktc). Cô cạn dung dịch X thu được khối lượng muối khan là
 
-**A.**95,92 gam. **B.**86,58 gam. **C.**100,52 gam. **D.**88,18 gam.
+**A.** 95,92 gam. **B.** 86,58 gam. **C.** 100,52 gam. **D.** 88,18 gam.
 
 **Câu 30*:** Chia 9,6 gam hỗn hợp gồm CuO và Fe2O3 thành 2 phần bằng nhau : Phần 1 phản ứng với 100 ml dung dịch HCl x (mol/l), cô cạn hỗn hợp thu được 8,1 gam chất rắn. Phần 2 phản ứng với 200 ml dung dịch HCl x (mol/l), cô cạn hỗn hợp thu được 9,2 gam chất rắn. Giá trị của x và phần trăm về khối lượng CuO tương ứng là
 
@@ -281,19 +281,19 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 *(Đề thi dự bị tuyển sinh Đại học khối B năm 2012)*
 
-**Câu 31:**Hòa tan 14 gam hỗn hợp 2 muối M2CO3 và RCO3 bằng dung dịch HCl dư, thu được dung dịch A và 0,672 lít khí (đktc). Cô cạn dung dịch A thì thu được m gam muối khan. m có giá trị là : 
+**Câu 31:** Hòa tan 14 gam hỗn hợp 2 muối M2CO3 và RCO3 bằng dung dịch HCl dư, thu được dung dịch A và 0,672 lít khí (đktc). Cô cạn dung dịch A thì thu được m gam muối khan. m có giá trị là : 
 
-**A.**16,33 gam. **B.** 14,33 gam. **C.** 9,265 gam. **D.** 12,65 gam. 
+**A.** 16,33 gam. **B.** 14,33 gam. **C.** 9,265 gam. **D.** 12,65 gam. 
 
-**Câu 32:**Hòa tan hết 23,2 gam hỗn hợp rắn X gồm FeO, Fe2O3, Fe3O4 trong dung dịch HCl loãng, dư. Cô cạn dung dịch sau phản ứng thu được 45,2 gam muối khan. Nếu khử hoàn toàn lượng X trên sẽ thu được bao nhiêu gam sắt?
+**Câu 32:** Hòa tan hết 23,2 gam hỗn hợp rắn X gồm FeO, Fe2O3, Fe3O4 trong dung dịch HCl loãng, dư. Cô cạn dung dịch sau phản ứng thu được 45,2 gam muối khan. Nếu khử hoàn toàn lượng X trên sẽ thu được bao nhiêu gam sắt?
 
 **A.** 11,6.**B.** 11,2.******C.** 16,8. **D.** 12,8.
 
 *(Đề thi thử đại học lần 4 – THPT Chuyên – Đại học Vinh, năm học 2011 – 2012)*
 
-**Câu 33:** Hỗn hợp X gồm NaBr và NaI. Cho hỗn hợp X tan trong nước thu được dung dịch A.****Nếu cho brom dư vào dung dịch A, sau phản ứng hoàn toàn, cô cạn thấy khối lượng muối khan thu được giảm 7,05 gam. Nếu sục khí clo dư vào dung dịch A, phản ứng hoàn toàn, cô cạn dung dịch thấy khối lượng muối khan giảm 22,625 gam. Thành phần % khối lượng của một chất trong hỗn hợp X là****
+**Câu 33:** Hỗn hợp X gồm NaBr và NaI. Cho hỗn hợp X tan trong nước thu được dung dịch A.****Nếu cho brom dư vào dung dịch A, sau phản ứng hoàn toàn, cô cạn thấy khối lượng muối khan thu được giảm 7,05 gam. Nếu sục khí clo dư vào dung dịch A, phản ứng hoàn toàn, cô cạn dung dịch thấy khối lượng muối khan giảm 22,625 gam. Thành phần % khối lượng của một chất trong hỗn hợp X là*** *
 
-**A.**47,8%. **B.**64,3%. **C.**35,9%. **D.**39,1%.
+**A.** 47,8%. **B.** 64,3%. **C.** 35,9%. **D.** 39,1%.
 
 *(Đề thi thử Đại học lần 1 – THPT Chuyên Bắc Ninh, năm học 2009 – 2010)*
 
@@ -303,29 +303,29 @@ n(Cu(NO3)2)  = Δm2/ΔM => Δm2 = 0,03.(65-64) = 0,03 gam
 
 *(Đề thi tuyển sinh Đại học khối B năm 2009)*
 
-**Câu 35:**Sau khi chuyển một thể tích khí oxi thành ozon thì thấy thể tích giảm đi 5 ml (biết các thể tích đo ở cùng điều kiện). Thể tích oxi đã tham gia phản ứng là bao nhiêu ?
+**Câu 35:** Sau khi chuyển một thể tích khí oxi thành ozon thì thấy thể tích giảm đi 5 ml (biết các thể tích đo ở cùng điều kiện). Thể tích oxi đã tham gia phản ứng là bao nhiêu ?
 
 **A.** 14 ml. **B.** 16 ml. **C.** 17 ml. **D.** 15 ml.
 
 **Câu 36*:** Hỗn hợp X gồm SO2 và O2 có tỉ khối so với H2 bằng 28. Nung nóng hỗn hợp X một thời gian (có xúc tác V2O5) thu được hỗn hợp Y có tỉ khối so với X bằng 16/13. Hiệu suất của phản ứng tổng hợp SO3 là
 
-**A.**62,5%. **B.**75,0%. **C.**50,0%. **D.**60,0%.
+**A.** 62,5%. **B.** 75,0%. **C.** 50,0%. **D.** 60,0%.
 
 *(Đề thi thử đại học lần 2 – THPT Chuyên – Đại học Vinh, năm học 2012 – 2013)*
 
 **Câu 37:** Ngâm một lá Mg kim loại trong dung dịch Cu(NO3)2, sau một thời gian người ta nhận thấy khối lượng của lá kim loại đó tăng 1 gam so với ban đầu. Khối lượng của Cu kim loại đã bám lên bề mặt của lá kim loại đó là (giả thiết rằng toàn bộ Cu bị đẩy ra khỏi muối đã bám hết vào lá Mg kim loại)
 
-**A.**1,60 gam. **B.**1,28 gam. **C.**1,20 gam. **D.**2,40 gam.
+**A.** 1,60 gam. **B.** 1,28 gam. **C.** 1,20 gam. **D.** 2,40 gam.
 
 *(Đề thi thử Đại học lần 1 – THPT Chuyên Bắc Ninh, năm học 2008 – 2009)*
 
-**Câu 38:**Cho m gam bột Zn vào 500 ml dung dịch Fe2(SO4)3 0,24M. Sau khi các phản ứng xảy ra hoàn toàn, khối lượng dung dịch tăng thêm 9,6 gam so với khối lượng dung dịch ban đầu. Giá trị của m là :
+**Câu 38:** Cho m gam bột Zn vào 500 ml dung dịch Fe2(SO4)3 0,24M. Sau khi các phản ứng xảy ra hoàn toàn, khối lượng dung dịch tăng thêm 9,6 gam so với khối lượng dung dịch ban đầu. Giá trị của m là :
 
- **A.**32,50. **B.** 20,80. **C.** 29,25. **D.** 48,75.
+ **A.** 32,50. **B.** 20,80. **C.** 29,25. **D.** 48,75.
 
 *(Đề thi tuyển sinh Đại học khối A năm 2011)*
 
-**Câu 39:**Nhúng một thanh kẽm và một thanh sắt vào cùng một dung dịch CuSO4. Sau một thời gian lấy hai thanh kim loại ra thấy trong dung dịch còn lại có nồng độ mol ZnSO4 bằng 2,5 lần nồng độ mol FeSO4. Mặt khác, khối lượng dung dịch giảm 2,2 gam. Khối lượng đồng bám lên thanh kẽm và bám lên thanh sắt lần lượt là :
+**Câu 39:** Nhúng một thanh kẽm và một thanh sắt vào cùng một dung dịch CuSO4. Sau một thời gian lấy hai thanh kim loại ra thấy trong dung dịch còn lại có nồng độ mol ZnSO4 bằng 2,5 lần nồng độ mol FeSO4. Mặt khác, khối lượng dung dịch giảm 2,2 gam. Khối lượng đồng bám lên thanh kẽm và bám lên thanh sắt lần lượt là :
 
 **A.** 12,8 gam; 32 gam. **B.** 64 gam; 25,6 gam.
 

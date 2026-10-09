@@ -194,9 +194,9 @@ $$
 
 **Bài 6.** So sánh số $1$ với nghiệm của phương trình $2x^2 – 18x + 17 = 0$ [TD10BD70]
 
-**Bài 7.**So sánh số $- 2$ với nghiệm của phương trình $f(x) = (m^2 + 1)x^2 – 5(m^2 + 1)x – m^2 + m – 1 = 0$ [TD11BD70]
+**Bài 7.** So sánh số $- 2$ với nghiệm của phương trình $f(x) = (m^2 + 1)x^2 – 5(m^2 + 1)x – m^2 + m – 1 = 0$ [TD11BD70]
 
-**Bài 8.**Tìm $m$ để các phương trình sau có hai nghiệm
+**Bài 8.** Tìm $m$ để các phương trình sau có hai nghiệm
 
 - $mx^2 + (m – 1)x + 3 – 4m = 0$ và thoả mãn $x_1 < 2 < x_2$ [VD1TTM19]
 
@@ -208,31 +208,31 @@ $$
 
 - $x^2 – 2x – 3m = 0$ và thoả mãn $\frac{m}{2}\le {{x}_{1}}<1<{{x}_{2}}$
 
-**Bài 9.**Tìm $m$ để phương trình sau có nghiệm
+**Bài 9.** Tìm $m$ để phương trình sau có nghiệm
 
 - $(x^2 + 2x)2 – 4m(x^2 + 2x) + 3m + 1 = 0$ [VD1TTM23]
 
 - $x^4 + mx^3 + 2mx^2 + mx + 1 = 0$ [VD!TTM31]
 
-**Bài 10.**Tìm $m$ để phương trình $(m + 1)x^2 – 3mx + 4m = 0$ có duy nhất một nghiệm lớn hơn $1$.
+**Bài 10.** Tìm $m$ để phương trình $(m + 1)x^2 – 3mx + 4m = 0$ có duy nhất một nghiệm lớn hơn $1$.
 
 **Bài 11.** Cho phương trình $x^2 – (2m – 3)x + m2 – 3m = 0$. Xác định $m$ để phương trình có hai nghiệm $x_1 ; x_2$ thoả mãn $1 < x_1 < x_2 < 6$.
 
 **Bài 12.** Cho phương trình $2x^2 + (2m – 1)x + m – 1 = 0$. Xác định $m$ để phương trình có hai nghiệm phân biệt $x_1 ; x_2$ thoả mãn: $– 1 < x_1 < x_2 < 1.$
 
-**Bài 13.**Cho $f(x) = x^2 – 2(m + 2)x + 6m + 1.$
+**Bài 13.** Cho $f(x) = x^2 – 2(m + 2)x + 6m + 1.$
 
 - Chứng minh rằng phương trình $f(x) = 0$ có nghiệm với mọi $m$.
 
 - Đặt $x = t + 2$. Tính $f(x)$ theo $t$, từ đó tìm điều kiện đối với $m$ để phương trình $f(x) = 0$ có hai nghiệm lớn hơn $2$.
 
-**Bài 14.**Cho phương trình bậc hai: $x^2 + 2(a + 3)x + 4(a + 3) = 0$.
+**Bài 14.** Cho phương trình bậc hai: $x^2 + 2(a + 3)x + 4(a + 3) = 0$.
 
 - Với giá trị nào của tham số $a$, phương trình có nghiệm kép. Tính các nghiệm kép.
 
 - Xác định $a$ để phương trình có hai nghiệm phân biệt lớn hơn $– 1$.
 
-**Bài 15.**Cho phương trình: $x^2 + 2(m – 1)x – (m + 1) = 0$.
+**Bài 15.** Cho phương trình: $x^2 + 2(m – 1)x – (m + 1) = 0$.
 
 - Tìm giá trị của $m$ để phương trình có một nghiệm nhỏ hơn $1$ và một nghiệm lớn hơn $1$.
 
@@ -240,7 +240,7 @@ $$
 
 **Bài 16.** Tìm $m$ để phương trình: $x^2 – mx + m = 0$ có nghiệm thoả mãn $x_1 \leqslant – 2 \leqslant x_2$
 
-**Bài 17.**Cho biểu thức 
+**Bài 17.** Cho biểu thức 
 
 $$
 A=\left(1-\frac{\sqrt{x}}{\sqrt{x}+1}\right):\left(\frac{\sqrt{x}+3}{\sqrt{x}-2}+\frac{\sqrt{x}+2}{3-\sqrt{x}}+\frac{\sqrt{x}+2}{x-5\sqrt{x}+6}\right).

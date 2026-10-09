@@ -50,33 +50,33 @@ Bài toán xác định thiết diện của một hình chóp, một hình lăn
 
 **Hướng dẫn.** Chúng ta lựa chọn $MP$ là giao tuyến gốc. Trong mặt phẳng $\left( {ABD} \right),\;$kéo dài $MP$ cắt $BD$ tại $E$. Trong mặt phẳng $\left( {BCD} \right)$, nối $EN$ cắt $BC$ tại $Q$. Thiết diện là tứ giác $MPNQ$.
 
-**Ví dụ 3.**Cho hình chóp $S.ABCD$ có điểm $M$ là trung điểm $SC,N$ là một điểm trên cạnh $SD$ sao cho $SN < DN$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {AMN} \right)$.
+**Ví dụ 3.** Cho hình chóp $S.ABCD$ có điểm $M$ là trung điểm $SC,N$ là một điểm trên cạnh $SD$ sao cho $SN < DN$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {AMN} \right)$.
 
-**Hướng dẫn.**Chúng ta lựa chọn $MN$ làm giao tuyến gốc. Trong mặt phẳng $\left( {SCD} \right)$, kéo dài $MN$ cắt $CD$ tại $P$. Trong mặt phẳng $\left( {ABCD} \right)$, nối $AP$ cắt $BC$ tại $Q$, tùy thuộc vào vị trí điểm $Q$ nằm trong hay ngoài đoạn $BC$ mà ta được thiết diện là như trong 2 hình vẽ sau đây.
+**Hướng dẫn.** Chúng ta lựa chọn $MN$ làm giao tuyến gốc. Trong mặt phẳng $\left( {SCD} \right)$, kéo dài $MN$ cắt $CD$ tại $P$. Trong mặt phẳng $\left( {ABCD} \right)$, nối $AP$ cắt $BC$ tại $Q$, tùy thuộc vào vị trí điểm $Q$ nằm trong hay ngoài đoạn $BC$ mà ta được thiết diện là như trong 2 hình vẽ sau đây.
 
-**![Chuyên đề thiết diện trong hình học không gian 2](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-chuyen-de-thiet-dien-3.jpg)****Ví dụ 4.**Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $M,N,P$ lần lượt là trung điểm của $BC,CD$ và $SA$. Xác định thiết diện của hình chóp và mặt phẳng $\left( {MNP} \right)$.
+**![Chuyên đề thiết diện trong hình học không gian 2](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-chuyen-de-thiet-dien-3.jpg)****Ví dụ 4.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $M,N,P$ lần lượt là trung điểm của $BC,CD$ và $SA$. Xác định thiết diện của hình chóp và mặt phẳng $\left( {MNP} \right)$.
 
 ![Chuyên đề thiết diện trong hình học không gian 3](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-chuyen-de-thiet-dien-4.jpg)
 
-**Hướng dẫn.**Chúng ta chọn $MN$ làm giao tuyến gốc. Trong mặt phẳng $\left( {ABCD} \right)$, kéo dài $MN$ cắt $AB,AD$ lần lượt tại $J,I$. Trong mặt phẳng $\left( {SAD} \right)$, gọi giao điểm của $PI$ và $SD$ là $O.$ Trong mặt phẳng $\left( {SAB} \right)$, gọi $Q$ là giao điểm của $PJ$ và $SB$. Thiết diện là ngũ giác $MNOPQ$.
+**Hướng dẫn.** Chúng ta chọn $MN$ làm giao tuyến gốc. Trong mặt phẳng $\left( {ABCD} \right)$, kéo dài $MN$ cắt $AB,AD$ lần lượt tại $J,I$. Trong mặt phẳng $\left( {SAD} \right)$, gọi giao điểm của $PI$ và $SD$ là $O.$ Trong mặt phẳng $\left( {SAB} \right)$, gọi $Q$ là giao điểm của $PJ$ và $SB$. Thiết diện là ngũ giác $MNOPQ$.
 
-**Ví dụ 5.**Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $M,N,P$ lần lượt là trung điểm của $CD,BC$ và $SB$. Xác định thiết diện của hình chóp và mặt phẳng $\left( {MNP} \right)$.
+**Ví dụ 5.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $M,N,P$ lần lượt là trung điểm của $CD,BC$ và $SB$. Xác định thiết diện của hình chóp và mặt phẳng $\left( {MNP} \right)$.
 
 ![Chuyên đề thiết diện trong hình học không gian 4](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-chuyen-de-thiet-dien-5.jpg)
 
-**Hướng dẫn.**Trong mặt phẳng $\left( {ABCD} \right)$ gọi $O,K$ lần lượt là giao điểm của $MN$ với $AB$ và $AD$. Trong mặt phẳng $\left( {SAB} \right)$ gọi $Q$ là giao điểm của $SA$ và $PO$. Trong mặt phẳng $\left( {SAD} \right)$ gọi $R$ là giao điểm của $QK$ và $SD$. Thiết diện là ngũ giác $MNPQR$.
+**Hướng dẫn.** Trong mặt phẳng $\left( {ABCD} \right)$ gọi $O,K$ lần lượt là giao điểm của $MN$ với $AB$ và $AD$. Trong mặt phẳng $\left( {SAB} \right)$ gọi $Q$ là giao điểm của $SA$ và $PO$. Trong mặt phẳng $\left( {SAD} \right)$ gọi $R$ là giao điểm của $QK$ và $SD$. Thiết diện là ngũ giác $MNPQR$.
 
 **Ví dụ 6.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O$. Gọi $M,N$ lần lượt là trung điểm của $BC,CD$. Trên đoạn $SO$ lấy điểm $P$ sao cho $SP > OP$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {MNP} \right)$.
 
 ![Chuyên đề thiết diện trong hình học không gian 5](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-chuyen-de-thiet-dien-6.jpg)
 
-**Hướng dẫn.**Trong mặt phẳng $\left( {ABCD} \right)$ gọi $E,F,G$ lần lượt là giao điểm của $MN$ với $AB,AD,AC$. Trong mặt phẳng $\left( {SAC} \right)$ gọi $J = \;GP \cap SA$, trong $\left( {SAB} \right)$ gọi $K = JE \cap SB$, trong $\left( {SAD} \right)$ gọi$\;I = JF \cap SD$. Thiết diện là ngũ giác $MNIJK$.
+**Hướng dẫn.** Trong mặt phẳng $\left( {ABCD} \right)$ gọi $E,F,G$ lần lượt là giao điểm của $MN$ với $AB,AD,AC$. Trong mặt phẳng $\left( {SAC} \right)$ gọi $J = \;GP \cap SA$, trong $\left( {SAB} \right)$ gọi $K = JE \cap SB$, trong $\left( {SAD} \right)$ gọi$\;I = JF \cap SD$. Thiết diện là ngũ giác $MNIJK$.
 
 **Ví dụ 7.** Cho tứ diện $ABCD$ có $M$ là trung điểm của $AB$ và $G$ là trọng tâm tam giác $ACD.\;N$ là một điểm bất kì thuộc đoạn $BC$. Xác định thiết diện của tứ diện khi cắt bởi mặt phẳng $\left( {MNG} \right).$
 
 ![Chuyên đề thiết diện trong hình học không gian 6](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-chuyen-de-thiet-dien-7.jpg)
 
-**Hướng dẫn.**Tình huống này học sinh dễ ngộ nhận $MN$ cắt $AC,\;$điều này chưa chắc xảy ra vì nếu $N$ ở vị trí trung điểm $BC$ thì khi đó $MN$ và $AC$ song song với nhau.
+**Hướng dẫn.** Tình huống này học sinh dễ ngộ nhận $MN$ cắt $AC,\;$điều này chưa chắc xảy ra vì nếu $N$ ở vị trí trung điểm $BC$ thì khi đó $MN$ và $AC$ song song với nhau.
 
 Chúng ta có thể sử dụng phương pháp phép chiếu xuyên tâm hoặc chọn giao tuyến gốc như sau:
 
@@ -104,7 +104,7 @@ Phương pháp phép chiếu xuyên tâm còn được gọi là phương pháp 
 
 - Dựa vào quan hệ liên thuộc, tìm các điểm trên mặt phẳng $\left( \alpha \right)$ tương ứng với các điểm ở dưới mặt đáy.
 
-**Ví dụ 1.**Cho hình chóp $S.ABCD$ có $C’$ là một điểm trên cạnh $SC$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {ABC’} \right)$ trong trường hợp:
+**Ví dụ 1.** Cho hình chóp $S.ABCD$ có $C’$ là một điểm trên cạnh $SC$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {ABC’} \right)$ trong trường hợp:
 
 1. $AB$ không song song với $CD$;
 
@@ -112,7 +112,7 @@ Phương pháp phép chiếu xuyên tâm còn được gọi là phương pháp 
 
 ![chuyên đề thiết diện bằng phương pháp phép chiếu xuyên tâm](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-phep-chieu-xuyen-tam-1.jpg)
 
-**Hướng dẫn.**Rõ ràng phần 1 học sinh có thể làm bằng phương pháp giao tuyến gốc. Tuy nhiên sang phần 2 học sinh sẽ không thể giải được theo phương pháp đó mà phải sử dụng phương pháp phép chiếu xuyên tâm.
+**Hướng dẫn.** Rõ ràng phần 1 học sinh có thể làm bằng phương pháp giao tuyến gốc. Tuy nhiên sang phần 2 học sinh sẽ không thể giải được theo phương pháp đó mà phải sử dụng phương pháp phép chiếu xuyên tâm.
 
 - Chọn tam giác $ABC’$ làm tam giác cơ sở. Qua phép chiếu xuyên tâm $S$ lên mặt phẳng $(ABCD$) thì tam giác cơ sở biến thành tam giác $ABC$. Chúng ta sẽ lần lượt đi tìm giao điểm của các cạnh tam giác này với các cạnh và đường chéo của đáy.
 
@@ -122,11 +122,11 @@ Phương pháp phép chiếu xuyên tâm còn được gọi là phương pháp 
 
 - Cuối cùng, trong mặt phẳng $\left( {SBD} \right)$ gọi $D’$ là giao điểm của $BO’$ và $SD$. Thiết diện là tứ giác $ABC’D’.$
 
-**Ví dụ 2.**Cho hình chóp $S.ABCD$ có ba điểm $M,N,P$ lần lượt thuộc $SA,SB,SC$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {MNP} \right)$.
+**Ví dụ 2.** Cho hình chóp $S.ABCD$ có ba điểm $M,N,P$ lần lượt thuộc $SA,SB,SC$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {MNP} \right)$.
 
 ![chuyên đề thiết diện bằng phương pháp phép chiếu xuyên tâm](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-phep-chieu-xuyen-tam-2.jpg)
 
-**Hướng dẫn.**Chọn tam giác $MNP$ làm tam giác cơ sở. Chiếu lên đáy được tam giác $ABC$. Cạnh $AC$ của tam giác hình chiếu này cắt đường chéo $BD$ của đáy tại $O$. Trong mặt phẳng $\left( {SAC} \right)$ gọi $I$ là giao điểm của $SO$ và $MN$. Trong mặt phẳng $\left( {SBD} \right)$ gọi $Q$ là giao điểm của $NI$ và $SD$. Thiết diện là tứ giác $MNPQ.$
+**Hướng dẫn.** Chọn tam giác $MNP$ làm tam giác cơ sở. Chiếu lên đáy được tam giác $ABC$. Cạnh $AC$ của tam giác hình chiếu này cắt đường chéo $BD$ của đáy tại $O$. Trong mặt phẳng $\left( {SAC} \right)$ gọi $I$ là giao điểm của $SO$ và $MN$. Trong mặt phẳng $\left( {SBD} \right)$ gọi $Q$ là giao điểm của $NI$ và $SD$. Thiết diện là tứ giác $MNPQ.$
 
 **Ví dụ 3. [Ví dụ 7 ở phần 1.1.]** Cho tứ diện $ABCD$ có $M$ là trung điểm của $AB$ và $G$ là trọng tâm tam giác $ACD.\;N$ là một điểm bất kì thuộc đoạn $BC$. Xác định thiết diện của tứ diện khi cắt bởi mặt phẳng $\left( {MNG} \right).$
 
@@ -144,17 +144,17 @@ Phương pháp phép chiếu xuyên tâm còn được gọi là phương pháp 
 
 - Thiết diện là tứ giác $MNPQ.$****
 
-**Ví dụ 4.**Cho hình chóp $S.ABCD$ có $M$ là một điểm thuộc miền trong tam giác $SCD$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {ABM} \right)$.
+**Ví dụ 4.** Cho hình chóp $S.ABCD$ có $M$ là một điểm thuộc miền trong tam giác $SCD$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( {ABM} \right)$.
 
 ![Chuyên đề thiết diện trong hình học không gian 8](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-phep-chieu-xuyen-tam-4.jpg)
 
-**Hướng dẫn.**Trong mặt phẳng $\left( {SCD} \right)$ gọi $E = SM \cap CD$, trong mặt phẳng $\left( {ABCD} \right)$ gọi $F = AC \cap BE$, trong mặt phẳng $\left( {SBE} \right)$ gọi$\;I = BM \cap SF$, trong mặt phẳng $\left( {SAC} \right)$ gọi $N = AI \cap SC$, trong mặt phẳng $\left( {SCD} \right)$ gọi $H = MN \cap SD$. Thiết diện là tứ giác $ABNH$.****
+**Hướng dẫn.** Trong mặt phẳng $\left( {SCD} \right)$ gọi $E = SM \cap CD$, trong mặt phẳng $\left( {ABCD} \right)$ gọi $F = AC \cap BE$, trong mặt phẳng $\left( {SBE} \right)$ gọi$\;I = BM \cap SF$, trong mặt phẳng $\left( {SAC} \right)$ gọi $N = AI \cap SC$, trong mặt phẳng $\left( {SCD} \right)$ gọi $H = MN \cap SD$. Thiết diện là tứ giác $ABNH$.****
 
-**Ví dụ 5.**Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O.$ Gọi $M,N$ lần lượt là trung điểm $SA,SD$. Xác định thiết diện của hình chóp và mặt phẳng $\left( {OMN} \right).$
+**Ví dụ 5.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O.$ Gọi $M,N$ lần lượt là trung điểm $SA,SD$. Xác định thiết diện của hình chóp và mặt phẳng $\left( {OMN} \right).$
 
 ![Chuyên đề thiết diện trong hình học không gian 9](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-phep-chieu-xuyen-tam-5.png)
 
-**Hướng dẫn.**Nếu ta chọn tam giác cơ sở là $OMN$ thì chiếu xuống mặt đáy được tam giác $OAD$. Tam giác hình chiếu này không cắt được cạnh nào của hình bình hành $ABCD$. Do đó ta pahir chọn một tam giác cơ sở khác.
+**Hướng dẫn.** Nếu ta chọn tam giác cơ sở là $OMN$ thì chiếu xuống mặt đáy được tam giác $OAD$. Tam giác hình chiếu này không cắt được cạnh nào của hình bình hành $ABCD$. Do đó ta pahir chọn một tam giác cơ sở khác.
 
 Lấy điểm $K$ bất kì thuộc $MO$ và chọn $MNK$ làm tam giác cơ sở. Chiếu tam giác này lên mặt đáy được tam giác $ADH$. Kéo dài $DH$ cắt $NK$ tại $J$. Đường thẳng $OJ$ cắt $AB,CD$ tại $Q,P$. Thiết diện là tứ giác $MNPQ.$
 
@@ -172,7 +172,7 @@ Chúng ta thường sử dụng 2 kết quả sau để dựng thiết diện.
 
 ![Chuyên đề thiết diện trong hình học không gian 10](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-giao-tuyen-hai-mat-phang-cung-song-song-voi-mot-duong-thang.jpg)
 
-******Ví dụ 1.**Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( \alpha \right)$ đi qua $O$ và song song với $SB,SC.$ Thiết diện là hình gì?
+******Ví dụ 1.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O$. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $\left( \alpha \right)$ đi qua $O$ và song song với $SB,SC.$ Thiết diện là hình gì?
 
 ![thiet dien song song](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-thiet-dien-song-song-1.jpg)
 
@@ -192,7 +192,7 @@ Chúng ta thường sử dụng 2 kết quả sau để dựng thiết diện.
 
 **Ví dụ 2.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $\left( P \right)$ là mặt phẳng đi qua điểm $M$ thuộc đoạn $AC$ và song song với hai đường thẳng $BD,SA$. Hãy dựng thiết diện của hình chóp với mặt phẳng $\left( P \right).$
 
-**Hướng dẫn.**Chúng ta phải xét hai trường hợp, điểm $M$ nằm trong đoạn $AO$ và nằm trong đoạn $OC$, với $O$ là tâm hình bình hành.
+**Hướng dẫn.** Chúng ta phải xét hai trường hợp, điểm $M$ nằm trong đoạn $AO$ và nằm trong đoạn $OC$, với $O$ là tâm hình bình hành.
 
 ![Chuyên đề thiết diện trong hình học không gian 11](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-thiet-dien-song-song-2.jpg)
 
@@ -206,7 +206,7 @@ Chúng ta thường sử dụng 2 kết quả sau để dựng thiết diện.
 
 ![Chuyên đề thiết diện trong hình học không gian 12](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-thiet-dien-song-song-3.jpg)
 
-**Trường hợp 2.**Nếu $M$ nằm trong đoạn $OC.$
+**Trường hợp 2.** Nếu $M$ nằm trong đoạn $OC.$
 
 - Qua $M$ dựng đường thẳng song song với $BD$, nó cắt $DC$ ở $E’$, cắt $BC$ ở $F’.$
 
@@ -214,7 +214,7 @@ Chúng ta thường sử dụng 2 kết quả sau để dựng thiết diện.
 
 - Thiết diện là tam giác $E’F’H’.$
 
-**Ví dụ 3.**Cho tứ diện $ABCD$ có $I,J$ lần lượt là trung điểm của $AB,CD$. Gọi $M$ là một điểm trên đoạn $IJ$ và $\left( \alpha \right)$ là mặt phẳng qua $M$ đồng thời song song với $AB,CD$. Xác định thiết diện của tứ diện khi cắt bởi mặt phẳng $\left( \alpha \right)$, thiết diện là hình gì?
+**Ví dụ 3.** Cho tứ diện $ABCD$ có $I,J$ lần lượt là trung điểm của $AB,CD$. Gọi $M$ là một điểm trên đoạn $IJ$ và $\left( \alpha \right)$ là mặt phẳng qua $M$ đồng thời song song với $AB,CD$. Xác định thiết diện của tứ diện khi cắt bởi mặt phẳng $\left( \alpha \right)$, thiết diện là hình gì?
 
 ![tứ diện abcd](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-thiet-dien-song-song-vi-du-4.jpg)
 
@@ -262,7 +262,7 @@ Trường hợp mặt phẳng $\left( \alpha \right)$ chứa đường thẳng $
 
 ![Chuyên đề thiết diện trong hình học không gian 14](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-thiet-dien-vuong-goc-2.jpg)
 
-**Hướng dẫn.**Kẻ đường cao $BH$ của tam giác $ABC$ thì dễ thấy $BH$ vuông góc với $\left( {ACC’A’} \right).$ Do đó $BH$ vuông góc với $CA’$. Mà $\left( P \right)$ chứa $B$ và vuông góc với $CA’$ nên suy ra $BH$ nằm trong mặt phẳng $\left( P \right)$.
+**Hướng dẫn.** Kẻ đường cao $BH$ của tam giác $ABC$ thì dễ thấy $BH$ vuông góc với $\left( {ACC’A’} \right).$ Do đó $BH$ vuông góc với $CA’$. Mà $\left( P \right)$ chứa $B$ và vuông góc với $CA’$ nên suy ra $BH$ nằm trong mặt phẳng $\left( P \right)$.
 
 Qua $H$, kẻ đường thẳng $d$ vuông góc với $A’C$. Lúc này có 2 trường hợp có thể xảy ra:
 
@@ -322,7 +322,7 @@ Thiết diện là hình thang vuông $MNPQ$ có diện tích bằng $2a\left( {
 
 - Thiết diện cần tìm là tam giác $BHK$ vuông tại $H$. Dễ dàng có $BH = \frac{{a\sqrt 3 }}{2}$. Từ tam giác đồng dạng $SAC$ và $HKC$ tính được $HK$ và suy ra diện tích tam giác $BHK$ bằng $\frac{{{a^2}\sqrt {15} }}{{20}}$.
 
-**Ví dụ 7.**Hình chóp $S.ABC$ có đáy là tam giác vuông cân tại $B$, cạnh $AB = a$. Cạnh $SA = a\sqrt 3$ và vuông góc với đáy. Lấy $M$ là một điểm tuỳ ý trên cạnh $AB$, đặt $AM\; = \;x$ với $0\; < \;x\; < \;a.$ Gọi $\left( P \right)$ là mặt phẳng qua $M$ và vuông góc với $AB$. Xác định thiết diện của hình chóp và mặt phẳng$\;\left( P \right)$. Tính diện tích của thiết diện đó theo $a$ và $x$, tìm $x$ để diện tích thiết diện có giá trị lớn nhất.
+**Ví dụ 7.** Hình chóp $S.ABC$ có đáy là tam giác vuông cân tại $B$, cạnh $AB = a$. Cạnh $SA = a\sqrt 3$ và vuông góc với đáy. Lấy $M$ là một điểm tuỳ ý trên cạnh $AB$, đặt $AM\; = \;x$ với $0\; < \;x\; < \;a.$ Gọi $\left( P \right)$ là mặt phẳng qua $M$ và vuông góc với $AB$. Xác định thiết diện của hình chóp và mặt phẳng$\;\left( P \right)$. Tính diện tích của thiết diện đó theo $a$ và $x$, tìm $x$ để diện tích thiết diện có giá trị lớn nhất.
 
 ![Chuyên đề thiết diện trong hình học không gian 19](assets/images/chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian-thiet-dien-vuong-goc-7.jpg)
 

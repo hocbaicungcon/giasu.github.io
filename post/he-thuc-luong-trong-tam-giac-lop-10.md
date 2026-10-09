@@ -77,7 +77,7 @@ Trong tam giác $ABC$ ta luôn có:
 
 **Ghi nhớ:** Trong một tam giác, bình phương mỗi cạnh bằng tổng bình phương hai cạnh kia trừ đi hai lần tích hai cạnh ấy với côsin của góc xen giữa chúng.
 
-**Hệ quả:**Trong tam giác $ABC$ ta luôn có:
+**Hệ quả:** Trong tam giác $ABC$ ta luôn có:
 
 1. $\cos A=\frac{{{b}^{2}}+{{c}^{2}}-{{a}^{2}}}{2bc}$,
 
@@ -99,7 +99,7 @@ $$
 a=2R\sin A;b=2R\sin B;c=2R\sin C
 $$
 
-**Ghi nhớ:**Trong một tam giác, tỷ số giữa một cạnh của tam giác và sin của góc đối diện với cạnh đó bằng đường kính đường tròn ngoại tiếp tam giác.
+**Ghi nhớ:** Trong một tam giác, tỷ số giữa một cạnh của tam giác và sin của góc đối diện với cạnh đó bằng đường kính đường tròn ngoại tiếp tam giác.
 
 ### Định lý về đường trung tuyến:
 

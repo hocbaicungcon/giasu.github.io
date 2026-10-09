@@ -15,7 +15,7 @@ Với dạng toán này theo chủ quan đây là dạng toán đơn giản. Cá
 
 **A. 6 dạng đồ thị thường gặp**
 
-**Dạng 1: Bài toán cho OH****–****vào dung dịch chứa Al****3+**
+**Dạng 1: Bài toán cho OH****–*** *vào dung dịch chứa Al****3+**
 
 **I. Lý thuyết**
 
@@ -45,7 +45,7 @@ Giá trị của x là:
 
 **A.** 0,412 **B.** 0,456 **C.** 0,515 **D.** 0,546
 
-**Dạng 2: Bài toán cho OH****–****vào dung dịch chứa H****+****và Al****3+**
+**Dạng 2: Bài toán cho OH****–*** *vào dung dịch chứa H****+*** *và Al****3+**
 
 **I. Lý thuyết**
 
@@ -77,7 +77,7 @@ Tỷ lệ x : a là:
 
 **A.** 4,8 **B.** 5,0 **C.** 5,2 **D.** 5,4
 
-**Dạng 3: Cho H****+****vào dung dịch chứa AlO****2****–****hoặc AlO****2****–****và OH****–**
+**Dạng 3: Cho H****+*** *vào dung dịch chứa AlO****2*** *–****hoặc AlO*** *2****–*** *và OH****–**
 
 **I. Lý thuyết**
 
@@ -125,7 +125,7 @@ Tỉ lệ a:b lần lượt là
 
 **A.** 2:1 **B.** 2:7 **C.** 4:7 **D.** 2:5
 
-**Dạng 4: Sục CO****2****vào dung dịch chứa Ca(OH)****2****, Ba(OH)****2****và KOH, NaOH**
+**Dạng 4: Sục CO****2*** *vào dung dịch chứa Ca(OH)****2*** *, Ba(OH)****2*** *và KOH, NaOH**
 
 **I. Lý thuyết**
 
@@ -195,7 +195,7 @@ Giá trị x là:
 
 **A.** 3,4 **B.** 3,2 **C.** 2,8 **D.** 3,6
 
-**Dạng 6: Bài toán cho kiềm (KOH, NaOH) vào dung dịch chứa H****+****và Zn****2+**
+**Dạng 6: Bài toán cho kiềm (KOH, NaOH) vào dung dịch chứa H****+*** *và Zn****2+**
 
 **I. Lý thuyết**
 
@@ -203,11 +203,11 @@ Giá trị x là:
 
 Theo phân chia nhiệm vụ của OH–
 
-**Nhiệm vụ 1 (0-a):**Trung hòa lượng axit H+
+**Nhiệm vụ 1 (0-a):** Trung hòa lượng axit H+
 
-**Nhiệm vụ 2 (a-b):**Đưa kết tủa lên cực đại (tỷ lệ 1:2)
+**Nhiệm vụ 2 (a-b):** Đưa kết tủa lên cực đại (tỷ lệ 1:2)
 
-**Nhiệm vụ 3 (b-c):**Hòa tan kết tủa (tỷ lệ 1:2)
+**Nhiệm vụ 3 (b-c):** Hòa tan kết tủa (tỷ lệ 1:2)
 
 **II. Ví dụ minh họa**
 
@@ -441,7 +441,7 @@ Giá trị của a : b là:
 
 ![Bài toán đồ thị cơ bản trong hóa học có lời giải chi tiết 48](assets/images/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet-d27.jpg)
 
-Nếu cho 100ml dung dịch hỗn hợp Ba(OH)2 0,2M và NaOH 0,3M vào 100ml dung dịch **A**thì khối lượng kết tủa thu được là bao nhiêu?
+Nếu cho 100ml dung dịch hỗn hợp Ba(OH)2 0,2M và NaOH 0,3M vào 100ml dung dịch **A** thì khối lượng kết tủa thu được là bao nhiêu?
 
 **A.** 5,44 gam **B.** 4,66 gam **C.** 5,70 gam **D.** 6,22 gam
 
@@ -475,7 +475,7 @@ Giá trị của y và t lần lượt là
 
 Để làm tốt dạng toán này phải hiểu được từng giai đoạn phản ứng tương ứng với đồ thị. Đặc biệt là ở những điếm đồ thị có đột biến (gãy khúc).
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-dung-dich-chua-x-mol-h2so4-va-y-mol-al2so43.html)) Ví dụ 1:** Nhỏ từ từ dung dịch Ba(OH)2 vào dung dịch chứa x****mol H2SO4 và y mol Al2(SO4)3. Đồ****thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như sau:
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-dung-dich-chua-x-mol-h2so4-va-y-mol-al2so43.html)) Ví dụ 1:** Nhỏ từ từ dung dịch Ba(OH)2 vào dung dịch chứa x****mol H2SO4 và y mol Al2(SO4)3. Đồ*** *thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như sau:
 
 ![Bài toán đồ thị cơ bản trong hóa học có lời giải chi tiết 51](assets/images/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet-vd1-de.jpg)
 
@@ -483,7 +483,7 @@ Giá trị nào sau đây của a là đúng?
 
 **A.** 0,50. **B.** 0,65. **C.** 0,75. **D.** 0,8.
 
-**([Lời giải](/bai-viet/suc-tu-tu-khi-co2-den-du-vao-dung-dich-chua-caoh2-va-naalo2-hay-naaloh4.html)) Ví dụ 2:** Sục từ từ khí CO2 đến dư vào dung dịch chứa Ca(OH**)**2 và NaAlO2 (hay Na[Al(OH)4]). Khối lượng kết tủa thu sau phản ứng được biểu diễn trên đồ thị như hình vẽ. Giá trị của m và x****lần lượt là
+**([Lời giải](/bai-viet/suc-tu-tu-khi-co2-den-du-vao-dung-dich-chua-caoh2-va-naalo2-hay-naaloh4.html)) Ví dụ 2:** Sục từ từ khí CO2 đến dư vào dung dịch chứa Ca(OH**)** 2 và NaAlO2 (hay Na[Al(OH)4]). Khối lượng kết tủa thu sau phản ứng được biểu diễn trên đồ thị như hình vẽ. Giá trị của m và x****lần lượt là
 
 ![Bài toán đồ thị cơ bản trong hóa học có lời giải chi tiết 52](assets/images/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet-vd2-de.jpg)
 
@@ -535,7 +535,7 @@ Giá trị m gần nhất với giá trị nào dưới đây?
 
  
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-05m-vao-ong-nghiem-chua-dung-dich-al2so43.html)) Câu 2:**Nhỏ từ từ dung dịch Ba(OH)2 0,5M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị của V nào sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-05m-vao-ong-nghiem-chua-dung-dich-al2so43.html)) Câu 2:** Nhỏ từ từ dung dịch Ba(OH)2 0,5M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị của V nào sau đây là đúng?
 
 ![Bài toán đồ thị cơ bản trong hóa học có lời giải chi tiết 58](assets/images/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet-d2.jpg)
 
@@ -557,13 +557,13 @@ Giá trị m gần nhất với giá trị nào dưới đây?
 
 **A.** 7:6. **B.** 4:3.   **C.** 6:5. **D.** 5:4.
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-01m-vao-ong-nghiem-chua-dung-dich-al2so43-do-thi-bieu-dien.html)) Câu 5:**Nhỏ từ từ dung dịch Ba(OH)2 0,1M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị của mmax – mmin nào sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-01m-vao-ong-nghiem-chua-dung-dich-al2so43-do-thi-bieu-dien.html)) Câu 5:** Nhỏ từ từ dung dịch Ba(OH)2 0,1M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị của mmax – mmin nào sau đây là đúng?
 
 ![Bài toán đồ thị cơ bản trong hóa học có lời giải chi tiết 61](assets/images/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet-d5.jpg)
 
 **A.** 8,82. **B.** 7,14.   **C.** 9,36. **D.** 8,24.
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43.html)) Câu 6:**Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43.html)) Câu 6:** Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
 
 ![Bài toán đồ thị cơ bản trong hóa học có lời giải chi tiết 62](assets/images/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet-d6.jpg)
 
@@ -577,7 +577,7 @@ Giá trị m gần nhất với giá trị nào dưới đây?
 
  
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43-2.html)) Câu 8:**Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối ượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43-2.html)) Câu 8:** Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối ượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
 
 ![Bài toán đồ thị cơ bản trong hóa học có lời giải chi tiết 64](assets/images/bai-toan-do-thi-co-ban-trong-hoa-hoc-co-loi-giai-chi-tiet-d8.jpg)
 

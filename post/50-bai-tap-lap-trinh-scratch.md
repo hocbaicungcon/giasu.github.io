@@ -91,11 +91,11 @@ Em hãy viết 1 thủ tục trong chương trình Scratch để có thể vẽ 
 
 ![50 bài tập lập trình Scratch 4](assets/images/50-bai-tap-lap-trinh-scratch-cay-hoa.webp)
 
-Thủ tục cần có tên **Vẽ cây hoa tròn **và có ít nhất 1 tham số để có thể vẽ được các hình trên và dễ dàng mở rộng.
+Thủ tục cần có tên **Vẽ cây hoa tròn** và có ít nhất 1 tham số để có thể vẽ được các hình trên và dễ dàng mở rộng.
 
 ### Bài tập Scratch trò chơi chim bay có ngày gặp ma
 
-Trò chơi **Chim bay **có các màn hình ban đầu và trong thời gian chơi như 2 hình sau:
+Trò chơi **Chim bay** có các màn hình ban đầu và trong thời gian chơi như 2 hình sau:
 
 - Chương trình có 3 nhân vật chính: chim, trái cây và ma trắng. Bấm  phím cách để bắt đầu chơi. Ban đầu người chơi được ngay 10 điểm.
 - Chim sẽ luôn vỗ cánh và bay. Em điều khiển chim bay bằng các phím lên, phải, trái. Khi bấm phím phải, trái, chim sẽ quay về hướng phải, trái và bay 1 đoạn ngắn. Khi bấm phím lên, chim sẽ cố gắng bay lên. Tuy nhiên do cánh chim quá nặng nên chim sẽ luôn bị hút rơi xuống. Nếu rơi xuống mặt đất, điểm số sẽ luôn bị trừ đi 1 điểm trong suốt thời gian ở mặt đất. Do vậy người chơi cần điều khiển nhanh để chim bay lên.

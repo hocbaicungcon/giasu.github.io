@@ -93,9 +93,9 @@ Phương pháp chứng minh hai mặt phẳng song song: Để chứng minh hai 
 
 **Ví dụ 2.** Cho tứ diện $ABCD$ có $M,N,P$ lần lượt là trọng tâm của các tam giác $ABC, ABD, ACD$. Chứng minh rằng $(MNP)\parallel(BCD)$.
 
-**Ví dụ 3.**Cho hình bình hành $ABCD.$ Từ $A$ và $C$ kẻ hai tia $Ax$ và $Cy$ song song, cùng chiều và không nằm trong mặt phẳng $(ABCD).$ Chứng minh mặt phẳng $(BAx)\parallel (DCy).$
+**Ví dụ 3.** Cho hình bình hành $ABCD.$ Từ $A$ và $C$ kẻ hai tia $Ax$ và $Cy$ song song, cùng chiều và không nằm trong mặt phẳng $(ABCD).$ Chứng minh mặt phẳng $(BAx)\parallel (DCy).$
 
-**Ví dụ 4.**Cho hình chóp $S.ABCD$ với $ABCD$ là hình bình hành. Gọi $I$ là trung điểm của $SD.$
+**Ví dụ 4.** Cho hình chóp $S.ABCD$ với $ABCD$ là hình bình hành. Gọi $I$ là trung điểm của $SD.$
 
 1. Xác định giao điểm $K$ của $BI$ và $(SAC)$.
 
@@ -107,9 +107,9 @@ Phương pháp chứng minh hai mặt phẳng song song: Để chứng minh hai 
 
 **Hướng dẫn.** Chỉ ra $K$ là trọng tâm tam giác $SBD.$
 
-**Ví dụ 5.**Cho lăng trụ tam giác $ABC.A’B’C’$ có $I ,K ,G$ lần lượt là trọng tâm của các tam giác $ABC, A’B’C’$ và $ACC’$. Chứng minh rằng: $(IKG) \parallel (BB’C’C), (A’KG)\parallel(AIB’)$.
+**Ví dụ 5.** Cho lăng trụ tam giác $ABC.A’B’C’$ có $I ,K ,G$ lần lượt là trọng tâm của các tam giác $ABC, A’B’C’$ và $ACC’$. Chứng minh rằng: $(IKG) \parallel (BB’C’C), (A’KG)\parallel(AIB’)$.
 
-**Hướng dẫn.**Gọi $M,N$ lần lượt là trung điểm của $BC$ và $B’C’$ thì mặt phẳng $(A’KG)$ chính là mặt phẳng $(A’CN)$, còn mặt phẳng $(AIB’)$ chính là mặt phẳng $(AMB’).$ Hai mặt phẳng này song song vì có $AM\parallel A’N$ và $B’M\parallel CN.$
+**Hướng dẫn.** Gọi $M,N$ lần lượt là trung điểm của $BC$ và $B’C’$ thì mặt phẳng $(A’KG)$ chính là mặt phẳng $(A’CN)$, còn mặt phẳng $(AIB’)$ chính là mặt phẳng $(AMB’).$ Hai mặt phẳng này song song vì có $AM\parallel A’N$ và $B’M\parallel CN.$
 
 ## 4. Bài tập chứng minh 2 mặt phẳng song song
 

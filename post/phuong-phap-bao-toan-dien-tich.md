@@ -11,7 +11,7 @@ tags:
 grade: 12
 ---
 
-***CHUYÊN ĐỀ 4:*****PHƯƠNG PHÁP BẢO TOÀN ĐIỆN TÍCH**
+***CHUYÊN ĐỀ 4:*** **PHƯƠNG PHÁP BẢO TOÀN ĐIỆN TÍCH**
 
 **I. Phương pháp bảo toàn điện tích**
 
@@ -31,7 +31,7 @@ Trong dung dịch : *Tổng giá trị điện tích dương số mol ion dươn
 
 Theo hệ quả 1 của định luật bảo toàn điện tích, ta có :
 
-● ***Hệ quả 2 :*****
+● ***Hệ quả 2 :*** **
 
 Trong phản ứng trao đổi : *Tổng giá trị điện tích dương số mol ion dương phản ứng = Tổng giá trị điện tích âm số mol ion âm phản ứng.*
 
@@ -69,7 +69,7 @@ Phương pháp bảo toàn điện tích *là phương pháp giải bài tập h
 
 ***Hướng dẫn giải***
 
-● ***Cách 1 :****Phương pháp thông thường – Tính toán theo phương trình phản ứng*
+● ***Cách 1 :*** *Phương pháp thông thường – Tính toán theo phương trình phản ứng*
 
 Đặt 
 
@@ -79,7 +79,7 @@ Kết tủa X là BaCO3, dung dịch Y chứa các ion K+, Na+, , ngoài ra còn
 
 Phản ứng xảy ra khi cho hỗn hợp NaHCO3 và K2CO3 vào bình chứa Ba(HCO3)2 :
 
-*+*Ba2+ BaCO3 (1)
+*+* Ba2+ BaCO3 (1)
 
 Phản ứng xảy ra khi tiếp tục cho HCl vào bình đến khi không còn khí thoát ra :
 
@@ -91,7 +91,7 @@ Phản ứng xảy ra khi tiếp tục cho HCl vào bình đến khi không còn
 
 Phản ứng xảy ra khi cho NaOH vào dung dịch Y :
 
-+ *+*H2O (5)
++ *+* H2O (5)
 
 Từ giả thiết và các phản ứng (2), (3), (4) ta thấy : 
 
@@ -107,13 +107,13 @@ Sơ đồ phản ứng :
 
 Để lập được phương trình như ở trên, ta có thể đi theo 1 trong 2 hướng như sau:
 
-**** Hướng 1 :*** *Áp dụng bảo toàn điện tích trong dung dịch sau phản ứng*
+** **Hướng 1 :*** *Áp dụng bảo toàn điện tích trong dung dịch sau phản ứng*
 
 Theo sơ đồ phản ứng ta thấy : Sau khi cho HCl phản ứng vừa hết với các chất trong bình thì dung dịch thu được chứa các ion K+, Na+, Ba2+ và 
 
 Áp dụng bảo toàn điện tích trong dung dịch sau phản ứng, ta có :
 
-**** Hướng 2 :****Áp dụng bảo toàn điện tích trong phản ứng*
+** **Hướng 2 :*** *Áp dụng bảo toàn điện tích trong phản ứng*
 
 Bản chất *của phản ứng giữa các cặp ion trái dấu là tạo ra những chất kết tủa, bay hơi, điện li yếu trung hòa về điện*. Phản ứng của HCl với các chất ở trong bình là phản ứng của H+ với các ion (nằm trong kết tủa và có thể cả trong dung dịch) và trong dung dịch nên ta có :
 
@@ -137,7 +137,7 @@ Với cách 2 : Mối liên quan về số mol các chất được tính toán 
 
 **c. Kết luận :**
 
-So sánh 2 cách giải ở trên, ta thấy : Phương pháp bảo toàn điện tích có ưu điểm là trong quá trình làm bài tập*thay vì phải viết phương trình phản ứng, học sinh chỉ cần lập sơ đồ phản ứng,**tính toán đơn giản**dựa vào sự bảo toàn điện tích**và**c**ho kết quả nhanh.*
+So sánh 2 cách giải ở trên, ta thấy : Phương pháp bảo toàn điện tích có ưu điểm là trong quá trình làm bài tập*thay vì phải viết phương trình phản ứng, học sinh chỉ cần lập sơ đồ phản ứng,**tính toán đơn giản** dựa vào sự bảo toàn điện tích**và** c**ho kết quả nhanh.*
 
  Như vậy : Nếu sử dụng phương pháp bảo toàn điện tích một cách hiệu quả thì *có thể tăng đáng kể tốc độ làm bài so với việc sử dụng phương pháp thông thường là viết phương trình phản ứng ở dạng phân tử hoặc bản chất hơn là viết phương trình ion rút gọn*. 
 
@@ -149,7 +149,7 @@ Một số dạng bài tập thường dùng bảo toàn điện tích là :
 
   + *Phản ứng trao đổi ion trong dung dịch chất điện ly.*
 
- *+ Khí CO**2**tác dụng với dung dịch chứa hỗn hợp các bazơ.*
+ *+ Khí CO**2** tác dụng với dung dịch chứa hỗn hợp các bazơ.*
 
 *+ Cho từ từ dung dịch axit vào dung dịch chứa ion hoặc chứa đồng thời các ion .*
 

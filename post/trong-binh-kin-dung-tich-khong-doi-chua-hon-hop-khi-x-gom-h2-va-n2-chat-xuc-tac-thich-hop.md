@@ -21,7 +21,7 @@ grade: 12
 
 Trong bình kín dung tích không đổi chứa hỗn hợp khí X gồm H2 và N2 (chất xúc tác thích hợp), áp suất trong bình là p atm, tỉ khối của X so với H2 là 5. Nung nóng bình để thực hiện phản ứng tổng hợp NH3, rồi làm nguội bình về nhiệt độ ban đầu, thu được hỗn hợp khí Y, áp suất trong bình là 0,88p atm. Hiệu suất phản ứng tổng hợp NH3 là
 
-**A.**26,0%. **B.**19,5%. **C.**24,0%. **D.**20,0%.
+**A.** 26,0%. **B.** 19,5%. **C.** 24,0%. **D.** 20,0%.
 
  
 

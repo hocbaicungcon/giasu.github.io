@@ -37,7 +37,7 @@ Các đối tượng trước và sau khi **Align Top**
 
 - **Artistic Text Tool (T)**: Tạo chữ nghệ thuật với rất nhiều tuỳ chọn như font chữ, cỡ chữ,…
 
-- **Assets Panel**: Một khu vực để lưu trữ các thành phần của thiết kế (hiểu tương tự như là một thư viện tài nguyên) như các icon, nút bấm… Theo mặc định, nó chứa các thành phần thiết kế giao diện người dùng iOS. Để bật bảng điều khiển **Assets**, bạn chọn**View → Studio** khi đang làm việc trong chế độ **Draw** hoặc **Pixel Persona**.
+- **Assets Panel**: Một khu vực để lưu trữ các thành phần của thiết kế (hiểu tương tự như là một thư viện tài nguyên) như các icon, nút bấm… Theo mặc định, nó chứa các thành phần thiết kế giao diện người dùng iOS. Để bật bảng điều khiển **Assets**, bạn chọn** View → Studio** khi đang làm việc trong chế độ **Draw** hoặc **Pixel Persona**.
 
 ![Học Affinity Designer - Các tính năng cơ bản 2](assets/images/hoc-affinity-designer-cac-tinh-nang-co-ban-image-10.png)
 
@@ -57,7 +57,7 @@ Bảng điều khiển Assets Panel của Affinity Designer
 
 - **Colour Picker Tool**: Lấy mẫu các màu (mã màu) từ bất cứ nơi nào trên tài liệu hoặc màn hình của bạn. khiển **Colour** hoặc **Swatches**.
 
-- **Constraints Panel**: Kiểm soát cách sắp xếp vị trí và thay đổi tỷ lệ kích thước của các đối tượng bằng cách **ràng buộc**với các container chứa nó giúp nó có khả năng responsive khi các container, **artboard** thay đổi kích thước. Ví dụ, một đối tượng được ràng buộc là cách các mép **artboard** 50px thì khi **artboard** thay đổi kích thước, đối tượng đó cũng thay đổi kích thước theo để vẫn đảm bảo cách các mép **artboard** 50px.
+- **Constraints Panel**: Kiểm soát cách sắp xếp vị trí và thay đổi tỷ lệ kích thước của các đối tượng bằng cách **ràng buộc** với các container chứa nó giúp nó có khả năng responsive khi các container, **artboard** thay đổi kích thước. Ví dụ, một đối tượng được ràng buộc là cách các mép **artboard** 50px thì khi **artboard** thay đổi kích thước, đối tượng đó cũng thay đổi kích thước theo để vẫn đảm bảo cách các mép **artboard** 50px.
 
   Bật **Constraints Panel** bằng **View → Studio** khi làm việc trong **Draw** hoặc **Pixel Persona**.
 

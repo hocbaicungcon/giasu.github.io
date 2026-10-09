@@ -22,7 +22,7 @@ Mời các bạn tham khảo thêm [Cần học bao nhiêu từ vựng tiếng T
 
 Bính âm, phanh âm hay Pinyin là **phương án bính âm Hán ngữ** (Giản thể: 汉语拼音方案 / Hànyǔ pīnyīn fāng’àn /, Phồn thể: 漢語拼音方案). Bính âm hiểu đơn giản là cách đọc chữ Hán, là cách thức sử dụng chữ cái Latinh để thể hiện cách phát âm các chữ Hán trong tiếng phổ thông Trung Quốc.
 
-Hệ thống bính âm tiếng Trung gồm có 3 phần chính là chữ cái Latinh được phân loại như sau: vận mẫu – nguyên âm, thanh mẫu**–**phụ âm và thanh điệu – tương tự như dấu trong tiếng Việt để điều chỉnh ngữ điệu phù hợp.
+Hệ thống bính âm tiếng Trung gồm có 3 phần chính là chữ cái Latinh được phân loại như sau: vận mẫu – nguyên âm, thanh mẫu**–** phụ âm và thanh điệu – tương tự như dấu trong tiếng Việt để điều chỉnh ngữ điệu phù hợp.
 
 ![Bính âm là gì? Cách đọc Pinyin tiếng Trung!](assets/images/binh-am-la-gi-cach-doc-pinyin-tieng-trung-pinyin.webp)
 

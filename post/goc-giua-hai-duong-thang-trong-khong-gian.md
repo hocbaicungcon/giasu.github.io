@@ -58,7 +58,7 @@ Tính góc giữa hai đường thẳng AB và CD ta tính góc giữa hai vect�
 
 ## 4. Bài tập góc giữa hai đường thẳng trong không gian
 
-**Ví dụ 1.**Cho hình lập phương $A B C D \cdot A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ có cạnh là $a$. Tính góc giữa các cặp đường thẳng sau đây:
+**Ví dụ 1.** Cho hình lập phương $A B C D \cdot A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ có cạnh là $a$. Tính góc giữa các cặp đường thẳng sau đây:
 
 1. AB và A’D’.
 

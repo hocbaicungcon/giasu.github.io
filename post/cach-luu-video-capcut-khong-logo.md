@@ -19,11 +19,11 @@ Capcut là một ứng dụng được rất nhiều TikToker sử dụng trong 
 
 Trong quá trình chỉnh sửa video có thể bạn sẽ quên đi mất xóa logo ở phần kết dẫn đến việc phải xuất video nhiều lần gây mất thời gian. Vì vậy để hạn chế tình trạng đó bạn có thể tắt phần hiển thị phần kết đó trong phần cài đặt ứng dụng như sau:
 
-**Bước 1:**Mở ứng dụng **“Capcut”** > Chọn **“Biểu tượng cài đặt”** ở góc trên cùng bên phải.
+**Bước 1:** Mở ứng dụng **“Capcut”** > Chọn **“Biểu tượng cài đặt”** ở góc trên cùng bên phải.
 
 ![Cách lưu video Capcut không logo](assets/images/cach-luu-video-capcut-khong-logo-image-4.webp)
 
-**Bước 2:**Nhấn chọn vào mục **“Thêm phần kết mặc định”** > Sau đó chọn **“Hủy bỏ”**.
+**Bước 2:** Nhấn chọn vào mục **“Thêm phần kết mặc định”** > Sau đó chọn **“Hủy bỏ”**.
 
 ![Cách lưu video Capcut không logo](assets/images/cach-luu-video-capcut-khong-logo-image-5.webp)
 
@@ -35,14 +35,14 @@ Mời bạn tham khảo thêm [Cách xóa phông nền video trên Capcut](/bai-
 
 Khi bạn chỉnh sửa video trên CapCut, logo thường xuất hiện ở cuối video. Với ứng dụng CapCut, bạn có thể xoá logo ở từng video hoặc cho nhiều video cùng lúc. Nếu chỉ muốn xoá logo ở phần kết thúc của 1 video, bạn cần thực hiện theo các bước sau:
 
-**Bước 1: **Mở ứng dụng CapCut, nhấn vào thêm “Dự án mới” và chọn ảnh/video muốn chỉnh sửa. Nếu muốn xoá logo đã được chỉnh sửa, bạn cũng vào ứng dụng và nhấn chọn video đó.
+**Bước 1:** Mở ứng dụng CapCut, nhấn vào thêm “Dự án mới” và chọn ảnh/video muốn chỉnh sửa. Nếu muốn xoá logo đã được chỉnh sửa, bạn cũng vào ứng dụng và nhấn chọn video đó.
 
 ![Cách lưu video Capcut không logo 2](assets/images/cach-luu-video-capcut-khong-logo-cach-tai-video-capcut-khong-logo-2.jpg)
 
-**Bước 2: **Tại trình chỉnh sửa, bạn kéo thanh thời gian đến phần cuối video thì sẽ thấy “phần kết” có chứa logo.
+**Bước 2:** Tại trình chỉnh sửa, bạn kéo thanh thời gian đến phần cuối video thì sẽ thấy “phần kết” có chứa logo.
 
-**Bước 3: **Nhấn vào đoạn video có chứa logo ở cuối và chọn nút xoá ở dưới cùng góc bên phải màn hình (hình thùng rác).
+**Bước 3:** Nhấn vào đoạn video có chứa logo ở cuối và chọn nút xoá ở dưới cùng góc bên phải màn hình (hình thùng rác).
 
-**Bước 4: **Bạn tiếp tục chỉnh sửa theo sở thích rồi nhấn vào biểu tượng xuất video ở phía trên cùng, góc bên phải. Khi này, video bạn xuất ra sẽ không còn đoạn chứa logo ở phần kết.
+**Bước 4:** Bạn tiếp tục chỉnh sửa theo sở thích rồi nhấn vào biểu tượng xuất video ở phía trên cùng, góc bên phải. Khi này, video bạn xuất ra sẽ không còn đoạn chứa logo ở phần kết.
 
 ![Cách lưu video Capcut không logo](assets/images/cach-luu-video-capcut-khong-logo-cach-tai-video-capcut-khong-logo-2.1.jpg)

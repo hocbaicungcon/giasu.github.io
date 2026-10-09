@@ -11,7 +11,7 @@ tags:
 grade: 12
 ---
 
-***CHUYÊN ĐỀ 9 :*****PHƯƠNG PHÁP ĐƯỜNG CHÉO**
+***CHUYÊN ĐỀ 9 :*** **PHƯƠNG PHÁP ĐƯỜNG CHÉO**
 
 **I. Phương pháp đường chéo :**
 
@@ -19,7 +19,7 @@ grade: 12
 
 Cơ sở của phương pháp đường chéo là mối liên hệ giữa các giá trị trung bình của hỗn hợp (, , , , , , , ,…) với các giá trị tương ứng (M, C, H, O, , A, C%, CM,…) của các chất trong hỗn hợp đó. 
 
-Ở đây, , , , , , , , lần lượt là khối lượng mol trung bình, số nguyên tử cacbon, hiđro, oxi trung bình, số liên kết**pi trung bình, nguyên tử khối trung bình, nồng độ phần trăm trung bình, nồng độ mol trung bình. Còn M, C, H, O, , A, C%, CM lần lượt là khối lượng mol, số nguyên tử cacbon, hiđro, oxi, số liên kết**pi, nguyên tử khối, nồng độ phần trăm, nồng độ mol.
+Ở đây, , , , , , , , lần lượt là khối lượng mol trung bình, số nguyên tử cacbon, hiđro, oxi trung bình, số liên kết**pi trung bình, nguyên tử khối trung bình, nồng độ phần trăm trung bình, nồng độ mol trung bình. Còn M, C, H, O, , A, C%, CM lần lượt là khối lượng mol, số nguyên tử cacbon, hiđro, oxi, số liên kết** pi, nguyên tử khối, nồng độ phần trăm, nồng độ mol.
 
 Phương pháp đường chéo là *phương pháp sử dụng mối liên hệ giữa các giá trị trung bình của hỗn hợp với các giá trị tương ứng của các chất trong hỗn hợp để giải bài tập hóa học.*
 
@@ -35,7 +35,7 @@ Phương pháp đường chéo là *phương pháp sử dụng mối liên hệ 
 
 ***Hướng dẫn giải***
 
-● ***Cách 1 :****Sử dụng phương pháp tăng giảm khối lượng*
+● ***Cách 1 :*** *Sử dụng phương pháp tăng giảm khối lượng*
 
 Bản chất của phản ứng là Zn, Fe khử ion Cu2+ thành Cu; Cu2+ oxi hóa Zn, Fe thành Zn2+ và Fe2+.
 
@@ -68,7 +68,7 @@ Với cách 1 : Căn cứ vào sự tăng giảm khối lượng để tìm mố
 
 Với cách 2 : Dựa vào khối lượng mol trung bình của hai kim loại và phương pháp đường chéo để tìm mối liện hệ giữa số mol của Zn, Fe trong hỗn hợp ban đầu. Rõ ràng ở bài tập này thì phương pháp đường chéo tỏ ra ưu việt hơn vì các phép tính đơn giản hơn.
 
-**c. Kết luận :** Phương pháp đường chéo có thể giải quyết nhanh các bài *tập tính lượng chất, tỉ lệ lượng chất, phần trăm lượng chất*của các chất trong hỗn hợp.
+**c. Kết luận :** Phương pháp đường chéo có thể giải quyết nhanh các bài *tập tính lượng chất, tỉ lệ lượng chất, phần trăm lượng chất* của các chất trong hỗn hợp.
 
 **3. Phạm vi áp dụng**
 
@@ -86,11 +86,11 @@ Phương pháp đường chéo có thể giải quyết được những dạng 
 
 ***Phương pháp giải***
 
-***– Bước 1 :****Nhận dạng nhanh phương pháp giải bài tập : Khi gặp các dấu hiệu :****Tính lượng chất, tỉ lệ lượng chất****để pha chế được dung dịch****chứa 1 chất tan****thì ta nên sử dụng phương pháp đường chéo.*
+***– Bước 1 :*** *Nhận dạng nhanh phương pháp giải bài tập : Khi gặp các dấu hiệu :****Tính lượng chất, tỉ lệ lượng chất*** *để pha chế được dung dịch****chứa 1 chất tan*** *thì ta nên sử dụng phương pháp đường chéo.*
 
-***– Bước 2 :****Dựa vào giả thiết để lựa chọn đường chéo phù hợp.*
+***– Bước 2 :*** *Dựa vào giả thiết để lựa chọn đường chéo phù hợp.*
 
-***– Bước 3 :****Dựa vào sơ đồ đường chéo để tính tỉ lệ lượng chất cần pha trộn. Kết hợp với các giả thiết khác để suy ra kết quả của bài toán.*******
+***– Bước 3 :*** *Dựa vào sơ đồ đường chéo để tính tỉ lệ lượng chất cần pha trộn. Kết hợp với các giả thiết khác để suy ra kết quả của bài toán.*******
 
 ► ***Các ví dụ minh họa ◄***
 
@@ -103,7 +103,7 @@ Khi gặp dạng bài tập mà đề bài yêu cầu pha chế để tạo ra d
 |  |  |  |
 | mdd2 C2% |  | – C1% |
 
-***Ví dụ 1:***Từ 20 gam dung dịch HCl 40% và nước cất, pha chế dung dịch HCl 16%. Khối lượng nước (gam) cần dùng là :
+***Ví dụ 1:*** Từ 20 gam dung dịch HCl 40% và nước cất, pha chế dung dịch HCl 16%. Khối lượng nước (gam) cần dùng là :
 
 **A.** 27. **B.** 25,5. **C.** 54. **D.** 30.
 

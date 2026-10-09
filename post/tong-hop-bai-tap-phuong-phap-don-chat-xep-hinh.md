@@ -69,7 +69,7 @@ Các thầy cô và các em có thể xem lại lý thuyết về phương pháp
 
 **([Lời giải](/bai-viet/tripeptit-x-va-tetrapeptit-y-deu-mach-ho-khi-thuy-phan-hoan-toan-hon-hop-gom-x-va-y.html))****Câu 1:** Tripeptit X và tetrapeptit Y đều mạch hở. Khi thuỷ phân hoàn toàn hỗn hợp gồm X và Y chỉ tạo ra một amino axit duy nhất có công thức H2NCnH2nCOOH. Đốt cháy hoàn toàn hỗn hợp E chứa 0,05 mol Y và 0,12 mol este Z (CmH2mO2) trong oxi dư, thu được N2 và 51,18 gam hỗn hợp gồm CO2, H2O. Đốt cháy 0,02 mol X trong oxi dư, cho sản phẩm cháy vào dung dịch Ba(OH)2 dư, thu được m gam kết tủa. Biết các phản ứng đều xảy ra hoàn toàn. Giá trị của m là:
 
-**A.** 59,10 **B.**23,64. **C.** 35,46. **D.** 47,28.
+**A.** 59,10 **B.** 23,64. **C.** 35,46. **D.** 47,28.
 
 **([Lời giải](/bai-viet/x-la-este-don-chuc-khong-no-chua-mot-lien-ket-doi-cc-y-la-este-no-hai-chuc-x-y-deu-mach-ho-2.html))****Câu 2:** X là este đơn chức, không no chưa một liên kết đôi C=C; Y là este no, hai chức (X, Y đều mạch hở). Đốt cháy hoàn toàn 10,36 gam hỗn hợp E chứa X, Y cần dùng 12,32 lít O2 (đktc). Mặt khác đun nóng 10,36 gam E với 150ml dung dịch NaOH 1M (lấy dư 25% so với phản ứng); cô cạn dung dịch sau phản ứng thu được hỗn hợp muối có m gam và một ancol duy nhất. Giá trị m là:
 
@@ -453,7 +453,7 @@ Trong các phát biểu trên, số phát biểu đúng là:
 
 **([Lời giải](/bai-viet/dot-chay-hoan-toan-2452-gam-hon-hop-x-chua-bon-este-deu-don-chuc-mach-ho-bang-luong-oxi-vua-du.html))****Câu 10:** Đốt cháy hoàn toàn 24,52 gam hỗn hợp X chứa bốn este đều đơn chức, mạch hở bằng lượng oxi vừa đủ, sản phẩm cháy thu được có khối lượng CO2 lớn hơn khối lượng H2O là 36,76 gam. Mặt khác, hiđro hoá hoàn toàn 24,52 gam X cần dùng 0,28 mol H2 thu được hỗn hợp Y. Đun nóng toàn bộ X dung dịch NaOH (vừa đủ), cô cạn dung dịch sau phản ứng thu được hỗn hợp ancol no Z và m gam chất rắn khan T. Nếu đốt toàn bộ lượng T trên cần vừa đủ 0,81 mol O2. Giá trị của m là:
 
-**A.** 25,68 **B.** 24,14 **C.**28,55 **D.** 29,64
+**A.** 25,68 **B.** 24,14 **C.** 28,55 **D.** 29,64
 
 ## BÀI TẬP RÈN LUYỆN SỐ 10
 
@@ -681,7 +681,7 @@ Tổng số phát biểu đúng là?
 
 **([Lời giải](/bai-viet/dot-chay-hoan-toan-008-mol-mot-chat-beo-x-can-dung-vua-du-636-mol-o2-mat-khac-cho-luong-x-tren-vao.html)) Câu 10:** Đốt cháy hoàn toàn 0,08 mol một chất béo X cần dùng vừa đủ 6,36 mol O2. Mặt khác, cho lượng X trên vào dung dịch nước Br2 dư thấy có 0,32 mol Br2 tham gia phản ứng. Nếu cho lượng X trên tác dụng hết với NaOH thì khối lượng muối khan thu được là?
 
-**A.** 72,8 **B.**88,6 **C.** 78,4 **D.** 58,4
+**A.** 72,8 **B.** 88,6 **C.** 78,4 **D.** 58,4
 
 ## BÀI LUYỆN KỸ NĂNG SỐ 15
 
@@ -1051,7 +1051,7 @@ Tổng số phát biểu đúng là?
 
 **C.** Khối lượng amin có trong X là 3,42 gam.
 
-**D.**Tất cả các kết luận trên đều không đúng.
+**D.** Tất cả các kết luận trên đều không đúng.
 
 **([Lời giải](/bai-viet/x-y-z-la-3-este-deu-don-chuc-mach-ho-trong-do-y-va-z-khong-no-co-mot-lien-ket-cc-my-mz-va-co-ton-tai-dong-phan-hinh-hoc.html)) Câu 5:** X, Y, Z là 3 este đều đơn chức, mạch hở (trong đó Y và Z không no có một liên kết C=C, MY < MZ và có tồn tại đồng phân hình học). Đốt cháy 21,62 gam hỗn hơp E chứa X, Y, Z với oxi vừa đủ, sản phẩm cháy dẫn qua dung dịch Ca(OH)2 dư thấy khối lượng dung dịch giảm 34,5 gam so với trước phản ứng. Mặt khác, đun nóng 21,62 gam E với 300 ml dung dịch NaOH 1M (vừa đủ), thu được hỗn hợp F chỉ chứa 2 muối và hỗn hợp gồm 2 ancol kế tiếp thuộc cùng dãy đồng đẳng. Phần trăm khối lượng của Y có trong E gần nhất với:
 
@@ -1139,7 +1139,7 @@ Tổng số phát biểu đúng là?
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-x-la-este-no-don-chuc-y-la-este-don-chuc-khong-no-chua-mot-lien-ket-doi-cc-3.html)) Câu 5:** Hỗn hợp E gồm X là este no, đơn chức; Y là este đơn chức, không no chứa một liên kết đôi C=C (X, Y đều mạch hở, số C trong X nhiều hơn trong Y). Đốt cháy hoàn toàn 8,8 gam hỗn hợp E cần dùng 0,58 mol O2. Mặt khác đun nóng 8,8 gam E với 150 ml dung dịch NaOH 1M, cô cạn dung dịch sau phản ứng thu được phần rắn có khối lượng 11,12 gam và một ancol Z duy nhất. Dẫn toàn bộ Z qua bình đựng Na dư thấy khối lượng bình tăng 3,6 gam. Công thức cấu tạo của X là:
 
-**A.** CH3COOC2H5. **B.** C2H5COOCH3. **C.** C3H7COOC2H5. **D.**HCOOCH3.
+**A.** CH3COOC2H5. **B.** C2H5COOCH3. **C.** C3H7COOC2H5. **D.** HCOOCH3.
 
 **([Lời giải](/bai-viet/hon-hop-e-chua-hai-este-thuan-mach-ho-deu-hai-chuc-mx-my-dun-nong-858-gam-e.html)) Câu 6:** Hỗn hợp E chứa hai este thuần, mạch hở, đều hai chức (MX < MY). Đun nóng 8,58 gam E với dung dịch NaOH (vừa đủ), thu được hỗn hợp F chứa hai ancol và hỗn hợp rắn G có khối lượng 9,44 gam gồm 2 muối của hai axit cacboxylic. Đốt cháy hoàn toàn F cần dùng 3,024 lít (đktc) khí oxi thu được 4,4 gam CO2. Phần trăm khối lượng của X trong E ***gần nhất*** với?
 

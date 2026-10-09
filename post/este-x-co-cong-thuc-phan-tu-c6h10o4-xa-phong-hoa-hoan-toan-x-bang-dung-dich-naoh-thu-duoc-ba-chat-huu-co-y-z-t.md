@@ -34,7 +34,7 @@ Y là ancol đa chức, có OH kề nhau => Z đơn chức => Z là CH3COONa
 
 => X có 2 CTCT CH3COOCHCH(CH3)OOCH hoặc HCOOCHCH(CH3)OOCCH3 => **A đúng**
 
-X + NaOH → CH3CHOHCH2OH (**Y**) + CH3COONa (**Z**) + HCOONa (**T**)
+X + NaOH → CH3CHOHCH2OH (**Y**) + CH3COONa (** Z**) + HCOONa (** T**)
 
 T HCOONa có tráng bạc => **C đúng**
 

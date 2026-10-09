@@ -14,21 +14,21 @@ grade: 12
 
 **(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-1612-gam-tripanmitin-c15h31coo3c3h5-can-vua-du-v-ml-dung-dich-naoh.html)**) Câu 1:** Thủy phân hoàn toàn 16,12 gam tripanmitin ((C15H31COO)3C3H5) cần vừa đủ V ml dung dịch NaOH 0,5M. Giá trị của V là
 
-**A.**120. **B.**80. **C.**240. **D.**160.
+**A.** 120. **B.** 80. **C.** 240. **D.** 160.
 
 **(**[Lời giải](/bai-viet/xa-phong-hoa-hoan-toan-89-gam-chat-beo-x-bang-dung-dich-koh-thu-duoc-92-gam-glixerol.html)**)****Câu 2:** Xà phòng hóa hoàn toàn 89 gam chất béo X bằng dung dịch KOH, thu được 9,2 gam glixerol và m gam xà phòng. Giá trị của m là
 
-**A.**80,6. **B.**91,8. **C.**96,6. **D.**85,4.
+**A.** 80,6. **B.** 91,8. **C.** 96,6. **D.** 85,4.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-a-gam-triglixerit-x-can-vua-du-326-mol-o2-thu-duoc-228-mol-co2-va-396-gam-h2o.html)**) Câu 3:** Đốt cháy hoàn toàn a gam triglixerit X cần vừa đủ 3,26 mol O2, thu được 2,28 mol CO2 và 39,6 gam H2O. Mặt khác, thủy phân hoàn toàn a gam X trong dung dịch NaOH, đun nóng, thu được dung dịch chứa b gam muối. Giá trị của b là
 
-**A.**31,92. **B.**36,72. **C.**40,40. **D.**35,60.
+**A.** 31,92. **B.** 36,72. **C.** 40,40. **D.** 35,60.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-1-mol-chat-beo-thu-duoc-luong-co2-va-h2o-hon-kem-nhau-6-mol.html)**)****Câu 4:** Đốt cháy hoàn toàn 1 mol chất béo, thu được lượng CO2 và H2O hơn kém nhau 6 mol. Mặt khác, a mol chất béo trên tác dụng tối đa với 600 ml dung dịch Br2 1M. Giá trị của a là
 
-**A.**0,20. **B.**0,30. **C.**0,18. **D.**0,15.
+**A.** 0,20. **B.** 0,30. **C.** 0,18. **D.** 0,15.
 
-**(Lời giải)****Câu 5 (****MH2017****lần 1):** Cho 1 mol triglixerit X tác dụng với dung dịch NaOH dư, thu được 1 mol glixerol, 1 mol natri panmitat và 2 mol natri oleat. Phát biểu nào sau đây sai? 
+**(Lời giải)****Câu 5 (*** *MH2017****lần 1):** Cho 1 mol triglixerit X tác dụng với dung dịch NaOH dư, thu được 1 mol glixerol, 1 mol natri panmitat và 2 mol natri oleat. Phát biểu nào sau đây sai? 
 
 **A.** Phân tử X có 5 liên kết π. 
 
@@ -38,61 +38,61 @@ grade: 12
 
 **D.** 1 mol X làm mất màu tối đa 2 mol Br2 trong dung dịch. 
 
-**(**[Lời giải](/bai-viet/khi-thuy-phan-a-gam-mot-chat-beo-x-thu-duoc-092-gam-glixerol-302-gam-natri-linoleat-c17h31coona.html)**)****Câu****6****:** Khi thuỷ phân a gam một chất béo X thu được 0,92 gam glixerol, 3,02 gam natri linoleat (C17H31COONa) và m gam muối natri oleat (C17H33COONa). Giá trị của a, m lần lượt là:
+**(**[Lời giải](/bai-viet/khi-thuy-phan-a-gam-mot-chat-beo-x-thu-duoc-092-gam-glixerol-302-gam-natri-linoleat-c17h31coona.html)**)****Câu*** *6****:** Khi thuỷ phân a gam một chất béo X thu được 0,92 gam glixerol, 3,02 gam natri linoleat (C17H31COONa) và m gam muối natri oleat (C17H33COONa). Giá trị của a, m lần lượt là:
 
-**A.**7,2 và 6,08. **B.**8,82 và 7,2. **C.**7,2 và 8,82. **D.**8,82 và 6,08.
+**A.** 7,2 và 6,08. **B.** 8,82 và 7,2. **C.** 7,2 và 8,82. **D.** 8,82 và 6,08.
 
 **(**[Lời giải](/bai-viet/thuy-phan-triglixerit-x-trong-naoh-thu-duoc-hon-hop-3-muoi-natri-oleat-natri-sterat-va-natri-linoleat.html)**)****Câu 7:** Thủy phân triglixerit X trong NaOH, thu được hỗn hợp 3 muối natri oleat; natri sterat và natri linoleat. Khi đốt cháy a mol X thu được b mol CO2 và c mol H2O. Liên hệ giữa a, b, c là
 
-**A.**b – c = 6a. **B.**b – c = 4a. **C.**b – c = 5a. **D.**b = c – a.
+**A.** b – c = 6a. **B.** b – c = 4a. **C.** b – c = 5a. **D.** b = c – a.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-hon-hop-x-chua-cac-triglierit-tao-boi-ca-3-axit-panmitic-oleic-linoleic.html)**)****Câu 8:**Đốt cháy hoàn toàn m gam hỗn hợp X chứa các triglierit tạo bởi cả 3 axit panmitic, oleic, linoleic thu được 24,2 gam CO2 và 9 gam H2O. Nếu xà phòng hóa hoàn toàn 2m gam hỗn hợp X bằng dung dịch KOH vừa đủ sẽ thu được bao nhiêu gam xà phòng?
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-hon-hop-x-chua-cac-triglierit-tao-boi-ca-3-axit-panmitic-oleic-linoleic.html)**)****Câu 8:** Đốt cháy hoàn toàn m gam hỗn hợp X chứa các triglierit tạo bởi cả 3 axit panmitic, oleic, linoleic thu được 24,2 gam CO2 và 9 gam H2O. Nếu xà phòng hóa hoàn toàn 2m gam hỗn hợp X bằng dung dịch KOH vừa đủ sẽ thu được bao nhiêu gam xà phòng?
 
-**A.**11,90.******B.**18,64.**C.**21,40.**D.**19,60.
+**A.** 11,90.******B.** 18,64.**C.** 21,40.**D.** 19,60.
 
-**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-natri-stearat-va-natri-oleat.html)**)****Câu 9 (THPT QG 2018):**Thủy phân hoàn toàn triglixerit X trong dung dịch NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2, thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
+**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-natri-stearat-va-natri-oleat.html)**)****Câu 9 (THPT QG 2018):** Thủy phân hoàn toàn triglixerit X trong dung dịch NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2, thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
 
-**A.**0,04. **B.**0,08. **C.**0,20. **D.**0,16.
+**A.** 0,04. **B.** 0,08. **C.** 0,20. **D.** 0,16.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-mot-luong-chat-beo-x-can-dung-vua-du-324-mol-o2-mat-khac-thuy-phan-hoan-toan-luong-chat-beo-tren.html)**) Câu 9:** Đốt cháy hoàn toàn một lượng chất béo X cần dùng vừa đủ 3,24 mol O2. Mặt khác, thủy phân hoàn toàn lượng chất béo trên bằng NaOH thu được m gam hỗn hợp hai muối của axit oleic và axit stearic. Biết lượng X trên có thể làm mất màu dung dịch chứa tối đa 0,04 mol Br2. Giá trị của m là
 
-**A**. 36,56. **B.**35,52. **C.**18,28. **D.**36,64.
+**A**. 36,56. **B.** 35,52. **C.** 18,28. **D.** 36,64.
 
 **(**[Lời giải](/bai-viet/dun-nong-triglixerit-x-voi-dung-dich-naoh-vua-du-thu-duoc-dung-dich-y-chua-2-muoi-natri-stearat-va-natri-oleat.html)**) Câu 10:** Đun nóng triglixerit X với dung dịch NaOH vừa đủ thu được dung dịch Y chứa 2 muối natri stearat và natri oleat. Chia Y làm 2 phần bằng nhau. Phần 1 làm mất màu vừa đủ dung dịch chứa 0,24 mol Br2. Phần 2 đem cô cạn thu được 109,68 gam muối. Phân tử khối của X là
 
 **A.** 884.       **B.** 888.       **C.** 886.       **D.** 890.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-006-mol-hon-hop-x-gom-ba-chat-beo-can-dung-477-mol-o2-thu-duoc-5652-gam-nuoc.html)**)****Câu 11 (MH 2019) :******Đốt cháy hoàn toàn 0,06 mol hỗn hợp X gồm ba chất béo cần dùng 4,77 mol O2, thu được 56,52 gam nước. Mặt khác hiđro hóa hoàn toàn 78,9 gam X trên bằng lượng H2 vừa đủ (xúc tác Ni, t0), lấy sản phẩm tác dụng với dung dịch KOH vừa đủ, thu được x gam muối. Giá trị của x là
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-006-mol-hon-hop-x-gom-ba-chat-beo-can-dung-477-mol-o2-thu-duoc-5652-gam-nuoc.html)**)****Câu 11 (MH 2019) :*** ***Đốt cháy hoàn toàn 0,06 mol hỗn hợp X gồm ba chất béo cần dùng 4,77 mol O2, thu được 56,52 gam nước. Mặt khác hiđro hóa hoàn toàn 78,9 gam X trên bằng lượng H2 vừa đủ (xúc tác Ni, t0), lấy sản phẩm tác dụng với dung dịch KOH vừa đủ, thu được x gam muối. Giá trị của x là
 
-**A.** 90,54.**B.**83,34.**C.**90,42.******D**. 86,10.
+**A.** 90,54.**B.** 83,34.**C.** 90,42.******D**. 86,10.
 
 **(**[Lời giải](/bai-viet/dot-a-mol-x-la-trieste-cua-glixerol-va-axit-don-chuc-mach-ho-thu-duoc-b-mol-co2-va-c-mol-h2o.html)**) Câu 12:** Đốt a mol X là trieste của glixerol và axit đơn chức, mạch hở, thu được b mol CO2 và c mol H2O, biết b – c = 4a. Hiđro hóa m gam X cần 6,72 lít H2 (đktc), thu được 39 gam X’. Nếu cho m gam X phản ứng hoàn toàn với dung dịch chứa 0,7 mol NaOH, sau đó cô cạn dung dịch sau phản ứng thì thu được bao nhiêu gam chất rắn?
 
-**A.**61,48 gam. **B.**53,2 gam. **C.**57,2 gam. **D.**52,6 gam.
+**A.** 61,48 gam. **B.** 53,2 gam. **C.** 57,2 gam. **D.** 52,6 gam.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-a-mol-x-la-trieste-cua-glixerol-voi-cac-axit-don-chuc-mach-ho-thu-duoc-b-mol-co2-va-c-mol-h2o.html)**)****Câu 13:** Đốt cháy hoàn toàn a mol X (là trieste của glixerol với các axit đơn chức, mạch hở), thu được b mol CO2 và c mol H2O (b – c = 4a). Hiđro hóa m1 gam X cần 6,72 lít H2 (đktc), thu được 39 gam Y (este no). Đun nóng m1 gam X với dung dịch chứa 0,7 mol NaOH, cô cạn dung dịch sau phản ứng, thu được m2 gam chất rắn. Giá trị của m2 là
 
-**A.**53,2. **B.**52,6. **C.**42,6. **D.**57,2.
+**A.** 53,2. **B.** 52,6. **C.** 42,6. **D.** 57,2.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-chat-beo-x-chua-triglixerit-cua-axit-stearic-axit-panmitic-va-cac-axit-beo-tu-do-do.html)**)****Câu 14:** Đốt cháy hoàn toàn m gam chất béo X (chứa triglixerit của axit stearic, axit panmitic và các axit béo tự do đó). Sau phản ứng thu được 20,16 lít CO2 (đktc) và 15,66 gam nước. Xà phòng hóa m gam X (H = 90%) thì thu được khối lượng glixerol là
 
-**A.**2,760 gam. **B.**1,242 gam. **C.**1,380 gam. **D.**2,484 gam.
+**A.** 2,760 gam. **B.** 1,242 gam. **C.** 1,380 gam. **D.** 2,484 gam.
 
 **(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-444-gam-mot-chat-beo-thu-duoc-46-gam-glixerol-glixerin-va-hai-loai-axit-beo.html)**) Câu 15:** Thuỷ phân hoàn toàn 444 gam một chất béo, thu được 46 gam glixerol (glixerin) và hai loại axit béo. Hai loại axit béo đó là:
 
-**A.**C17H33COOH và C15H31COOH. **B.**C15H31COOH và C17H35COOH.
+**A.** C17H33COOH và C15H31COOH. **B.** C15H31COOH và C17H35COOH.
 
-**C.**C17H33COOH và C17H35COOH. **D.**C17H31COOH và C17H33COOH.
+**C.** C17H33COOH và C17H35COOH. **D.** C17H31COOH và C17H33COOH.
 
 **(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-chat-beo-x-trong-moi-truong-axit-thu-duoc-glixerol-va-hon-hop-hai-axit-beo.html)**)****Câu 16:** Thủy phân hoàn toàn chất béo X trong môi trường axit, thu được glixerol và hỗn hợp hai axit béo. Nếu đốt cháy hoàn toàn a mol X thì thu được 12,32 lít CO2 (đktc) và 8,82 gam H2O. Mặt khác, a mol X tác dụng tối đa với 40 ml dung dịch Br2 1M. Hai axit béo là
 
-**A.**axit stearit và axit linoleic. **B.**axit panmitic và axit oleic.
+**A.** axit stearit và axit linoleic. **B.** axit panmitic và axit oleic.
 
-**C.**axit panmitic và axit linoleic. **D.**axit stearit và axit oleic.
+**C.** axit panmitic và axit linoleic. **D.** axit stearit và axit oleic.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-hon-hop-x-chua-hon-hop-cac-triglixerit-tao-boi-tu-ca-3-axit-panmitic-oleic-linoleic-thu-duoc.html)**) Câu 17:** Đốt cháy hoàn toàn m gam hỗn hợp X chứa hỗn hợp các triglixerit tạo bởi từ cả 3 axit panmitic, oleic, linoleic thu được 24,2 gam CO2 và 9 gam H2O. Nếu xà phòng hóa hoàn toàn 2m gam hỗn hợp X bằng dung dịch KOH vừa đủ sẽ thu được bao nhiêu gam xà phòng ?
 
-**A.**11,90. **B.**21,40. **C.**19,60. **D.**18,64.
+**A.** 11,90. **B.** 21,40. **C.** 19,60. **D.** 18,64.
 
 **(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-hon-hop-e-chua-hai-triglixerit-x-va-y-trong-dung-dich-naoh-dun-nong-vua-du-thu-duoc-3-muoi.html)**)****Câu 18:** Thủy phân hoàn toàn hỗn hợp E chứa hai triglixerit X và Y trong dung dịch NaOH (đun nóng, vừa đủ), thu được 3 muối C15H31COONa, C17H33COONa, C17H35COONa với tỉ lệ mol tương ứng 2,5 : 1,75 : 1 và 6,44 gam glixerol. Mặt khác đốt cháy hoàn toàn 47,488 gam E cần vừa đủ a mol khí O2. Giá trị của a là
 
@@ -102,49 +102,49 @@ grade: 12
 
 **A.** 12,87. **B.** 12,48. **C.** 32,46. **D.** 8,61.
 
-**(**[Lời giải](/bai-viet/cho-1584-gam-hon-hop-x-gom-ba-chat-beo-tac-dung-voi-dung-dich-naoh-du-thu-duoc-16344-gam-muoi.html)**)****Câu 20:******Cho 158,4 gam hỗn hợp X gồm ba chất béo tác dụng với dung dịch NaOH dư, thu được 163,44 gam muối. Mặt khác lấy 158,4 gam X tác dụng với a mol H2 (xúc tác Ni, t0), thu được hỗn hợp Y gồm các chất béo no và không no. Đốt cháy toàn bộ Y cần dùng 14,41 mol O2, thu được CO2 và 171 gam H2O. Giá trị của a là
+**(**[Lời giải](/bai-viet/cho-1584-gam-hon-hop-x-gom-ba-chat-beo-tac-dung-voi-dung-dich-naoh-du-thu-duoc-16344-gam-muoi.html)**)****Câu 20:*** ***Cho 158,4 gam hỗn hợp X gồm ba chất béo tác dụng với dung dịch NaOH dư, thu được 163,44 gam muối. Mặt khác lấy 158,4 gam X tác dụng với a mol H2 (xúc tác Ni, t0), thu được hỗn hợp Y gồm các chất béo no và không no. Đốt cháy toàn bộ Y cần dùng 14,41 mol O2, thu được CO2 và 171 gam H2O. Giá trị của a là
 
-**A.** 0,16.**B.** 0,12. **C**. 0,14.**D.** 0,18.
+**A.** 0,16.**B.** 0,12. **C**. 0,14.** D.** 0,18.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-triglixerit-x-can-vua-du-308-mol-o2-thu-duoc-co2-va-2-mol-h2o.html)**) Câu 21:** Đốt cháy hoàn toàn m gam triglixerit **X** cần vừa đủ 3,08 mol O2, thu được CO2 và 2 mol H2O. Cho m gam **X** tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và 35,36 gam muối. Mặt khác, m gam **X** tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
 
-**A.**0,2 **B.**0,24. **C.**0,12 **D.**0,16.
+**A.** 0,2 **B.** 0,24. **C.** 0,12 **D.** 0,16.
 
-**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-4238-gam-hon-hop-x-gom-hai-triglixerit-mach-ho-trong-dung-dich-koh-28-vua-du.html)**)****Câu 22:**Thủy phân hoàn toàn 42,38 gam hỗn hợp X gồm hai triglixerit mạch hở trong dung dịch KOH 28% (vừa đủ), cô cạn dung dịch sau phản ứng, thu được phần hơi Y nặng 26,2 gam và phần rắn Z. Đốt cháy hoàn toàn Z thu được K2CO3 và 152,63 gam hỗn hợp CO2 và H2O. Mặt khác, cho 0,15 mol X vào dung dịch Br2 trong CCl4, số mol Br2 phản ứng là
+**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-4238-gam-hon-hop-x-gom-hai-triglixerit-mach-ho-trong-dung-dich-koh-28-vua-du.html)**)****Câu 22:** Thủy phân hoàn toàn 42,38 gam hỗn hợp X gồm hai triglixerit mạch hở trong dung dịch KOH 28% (vừa đủ), cô cạn dung dịch sau phản ứng, thu được phần hơi Y nặng 26,2 gam và phần rắn Z. Đốt cháy hoàn toàn Z thu được K2CO3 và 152,63 gam hỗn hợp CO2 và H2O. Mặt khác, cho 0,15 mol X vào dung dịch Br2 trong CCl4, số mol Br2 phản ứng là
 
-**A.**0,18 **B**. 0,21**C.**0,24**D.**0,27
+**A.** 0,18 **B**. 0,21** C.**0,24** D.**0,27
 
-**(**[Lời giải](/bai-viet/xa-phong-hoa-hoan-toan-m-gam-hon-hop-e-gom-cac-triglixerit-bang-dung-dich-naoh-thu-duoc-hon-hop-x-gom-ba-muoi.html)**)****Câu 23**: Xà phòng hoá hoàn toàn m gam hỗn hợp **E**gồm các triglixerit bằng dung dịch NaOH, thu được hỗn hợp **X**gồm ba muối C17HxCOONa, C15H31COONa, C17HyCOONa có tỉ lệ mol tương ứng là 3 : 4 : 5 và 7,36 gam glixerol. Đốt cháy hoàn toàn hỗn hợp **E**cần vừa đủ 6,14 mol O2. Giá trị của m là 
+**(**[Lời giải](/bai-viet/xa-phong-hoa-hoan-toan-m-gam-hon-hop-e-gom-cac-triglixerit-bang-dung-dich-naoh-thu-duoc-hon-hop-x-gom-ba-muoi.html)**)****Câu 23**: Xà phòng hoá hoàn toàn m gam hỗn hợp **E** gồm các triglixerit bằng dung dịch NaOH, thu được hỗn hợp **X** gồm ba muối C17HxCOONa, C15H31COONa, C17HyCOONa có tỉ lệ mol tương ứng là 3 : 4 : 5 và 7,36 gam glixerol. Đốt cháy hoàn toàn hỗn hợp **E** cần vừa đủ 6,14 mol O2. Giá trị của m là 
 
-**A.** 68,84.******B.**60,20.******C.**68,80.******D.**68,40.
+**A.** 68,84.******B.** 60,20.******C.** 68,80.******D.** 68,40.
 
-**(**[Lời giải](/bai-viet/hon-hop-x-gom-ba-chat-beo-deu-duoc-tao-boi-glyxerol-va-hai-axit-oleic-va-stearic-dot-chay-hoan-toan-015-mol-x.html)**)****Câu 24:**Hỗn hợp X gồm ba chất béo đều được tạo bởi glyxerol và hai axit oleic và stearic. Đốt cháy hoàn toàn 0,15 mol X cần dùng 12,075 mol O2, thu được CO2 và H2O. Xà phòng hóa 132,9 gam X trên với dung dịch KOH vừa đủ, thu được m gam muối. Giá trị của m là
+**(**[Lời giải](/bai-viet/hon-hop-x-gom-ba-chat-beo-deu-duoc-tao-boi-glyxerol-va-hai-axit-oleic-va-stearic-dot-chay-hoan-toan-015-mol-x.html)**)****Câu 24:** Hỗn hợp X gồm ba chất béo đều được tạo bởi glyxerol và hai axit oleic và stearic. Đốt cháy hoàn toàn 0,15 mol X cần dùng 12,075 mol O2, thu được CO2 và H2O. Xà phòng hóa 132,9 gam X trên với dung dịch KOH vừa đủ, thu được m gam muối. Giá trị của m là
 
-**A.**144,3.**B.**125,1.**C.**137,1.**D.**127,5.
+**A.** 144,3.**B.** 125,1.**C.** 137,1.**D.** 127,5.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-006-mol-hon-hop-x-gom-ba-chat-beo-can-dung-477-mol-o2-thu-duoc-5652-gam-nuoc-2.html)**)****Câu 25:**Đốt cháy hoàn toàn 0,06 mol hỗn hợp X gồm ba chất béo cần dùng 4,77 mol O2, thu được 56,52 gam nước. Mặt khác hiđro hóa hoàn toàn 78,9 gam X trên bằng lượng H2 vừa đủ (xúc tác Ni, t°), lấy sản phẩm tác dụng với dung dịch KOH vừa đủ, thu được x gam muối. Giá trị của x là
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-006-mol-hon-hop-x-gom-ba-chat-beo-can-dung-477-mol-o2-thu-duoc-5652-gam-nuoc-2.html)**)****Câu 25:** Đốt cháy hoàn toàn 0,06 mol hỗn hợp X gồm ba chất béo cần dùng 4,77 mol O2, thu được 56,52 gam nước. Mặt khác hiđro hóa hoàn toàn 78,9 gam X trên bằng lượng H2 vừa đủ (xúc tác Ni, t°), lấy sản phẩm tác dụng với dung dịch KOH vừa đủ, thu được x gam muối. Giá trị của x là
 
-**A.**81,42.**B.**85,92.**C.**81,78. **D**. 86,10.
+**A.** 81,42.**B.** 85,92.**C.** 81,78. **D**. 86,10.
 
-**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-ma.html)**)****Câu 26:**Hỗn hợp X gồm 2 triglixerit A và B (MA<MB; tỉ lệ số mol tương ứng là 2: 3). Đun nóng m gam hỗn hợp X với dung dịch NaOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam natri oleat, y gam natri linoleat và z gam natri panmitat, m gam hỗn hợp X tác dụng tối đa với 18,24 gam brom. Đốt m gam hỗn hợp X thu được 73,128 gam CO2 và 26,784 gam H2O. Giá trị của y+z là:
+**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-ma.html)**)****Câu 26:** Hỗn hợp X gồm 2 triglixerit A và B (MA<MB; tỉ lệ số mol tương ứng là 2: 3). Đun nóng m gam hỗn hợp X với dung dịch NaOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam natri oleat, y gam natri linoleat và z gam natri panmitat, m gam hỗn hợp X tác dụng tối đa với 18,24 gam brom. Đốt m gam hỗn hợp X thu được 73,128 gam CO2 và 26,784 gam H2O. Giá trị của y+z là:
 
-**A.**22,146. **B**. 21,168.**C.**20,268.**D.**23,124.
+**A.** 22,146. **B**. 21,168.** C.**20,268.** D.**23,124.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-a-gam-chat-beo-x-chua-triglixerit-cua-axit-stearic-axit-panmitic-va-cac-axit-beo-tu-do-do-can-vua-du.html)**)****Câu****27****:** Đốt cháy hoàn toàn a gam chất béo X (chứa triglixerit của axit stearic, axit panmitic và các axit béo tự do đó) cần vừa đủ 18,816 lít O2 (đktc). Sau phản ứng thu được 13,44 lít CO2 (đktc) và 10,44 gam nước. Xà phòng hoá a gam X bằng NaOH vừa đủ thì thu được m gam muối. Giá trị của m là
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-a-gam-chat-beo-x-chua-triglixerit-cua-axit-stearic-axit-panmitic-va-cac-axit-beo-tu-do-do-can-vua-du.html)**)****Câu*** *27****:** Đốt cháy hoàn toàn a gam chất béo X (chứa triglixerit của axit stearic, axit panmitic và các axit béo tự do đó) cần vừa đủ 18,816 lít O2 (đktc). Sau phản ứng thu được 13,44 lít CO2 (đktc) và 10,44 gam nước. Xà phòng hoá a gam X bằng NaOH vừa đủ thì thu được m gam muối. Giá trị của m là
 
 **A.** 10,68. **B.** 11,48. **C.** 11,04 **D.** 11,84.
 
 **(**[Lời giải](/bai-viet/cho-m-gam-chat-beo-x-chua-cac-triglixerit-va-axit-beo-tu-do-tac-dung-vua-du-voi-250-ml-dung-dich-naoh-1m.html)**) Câu 28:** Cho m gam chất béo X chứa các triglixerit và axit béo tự do tác dụng vừa đủ với 250 ml dung dịch NaOH 1M, đun nóng thu được 69,78 gam hỗn hợp muối của các axit béo no. Mặt khác, đốt cháy hoàn toàn m gam X cần dùng 6,06 mol O2. Giá trị của m là 
 
-**A.**67,32. **B.**66,32. **C.**68,48. **D.**67,14. 
+**A.** 67,32. **B.** 66,32. **C.** 68,48. **D.** 67,14. 
 
 **(**[Lời giải](/bai-viet/cho-7072-gam-mot-triglixerit-x-tac-dung-voi-dung-dich-naoh-vua-du-thu-duoc-glixerol-va-7296-gam-muoi.html)**) Câu 29:** Cho 70,72 gam một triglixerit X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và 72,96 gam muối. Cho 70,72 gam X tác dụng với a mol H2 (Ni, t0), thu được hỗn hợp chất béo Y. Đốt cháy hoàn toàn Y cần vừa đủ 6,475 mol O2, thu được 4,56 mol CO2. Giá trị của a là
 
-**A.**0,30. **B.**0,114. **C.**0,25. **D.**0,15.
+**A.** 0,30. **B.** 0,114. **C.** 0,25. **D.** 0,15.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-4352-gam-hon-hop-e-gom-cac-triglixerit-can-dung-vua-du-391-mol-o2.html)**)****Câu****30****:** Đốt cháy hoàn toàn 43,52 gam hỗn hợp E gồm các triglixerit cần dùng vừa đủ 3,91 mol O2. Nếu thủy phân hoàn toàn 43,52 gam E bằng dung dịch NaOH, thu được glixerol và hỗn hợp gồm ba muối C17HxCOONa, C17HyCOONa và C15H31COONa có tỷ lệ mol tương ứng là 8 : 5 : 2. Mặt khác m gam hỗn hợp E tác dụng với dung dịch Br2 dư thì có 0,105 mol Br2 phản ứng. Giá trị của m là
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-4352-gam-hon-hop-e-gom-cac-triglixerit-can-dung-vua-du-391-mol-o2.html)**)****Câu*** *30****:** Đốt cháy hoàn toàn 43,52 gam hỗn hợp E gồm các triglixerit cần dùng vừa đủ 3,91 mol O2. Nếu thủy phân hoàn toàn 43,52 gam E bằng dung dịch NaOH, thu được glixerol và hỗn hợp gồm ba muối C17HxCOONa, C17HyCOONa và C15H31COONa có tỷ lệ mol tương ứng là 8 : 5 : 2. Mặt khác m gam hỗn hợp E tác dụng với dung dịch Br2 dư thì có 0,105 mol Br2 phản ứng. Giá trị của m là
 
-**A.**32,64.       **B.**21,76.       **C.**65,28.       **D.**54,40.
+**A.** 32,64.       **B.** 21,76.       **C.** 65,28.       **D.** 54,40.
 
 **(**[Lời giải](/bai-viet/dun-nong-m-gam-hon-hop-e-chua-triglixerit-x-va-cac-axit-beo-tu-do-voi-200-ml-dung-dich-naoh-1m-vua-du.html)**) Câu 31:** Đun nóng m gam hỗn hợp E chứa triglixerit X và các axit béo tự do với 200 ml dung dịch NaOH 1M (vừa đủ), thu được glixerol và hỗn hợp Y chứa các muối có công thức chung C17HyCOONa. Đốt cháy 0,07 mol E thu được 1,845 mol CO2. Mặt khác, m gam E tác dụng vừa đủ với 0,1 mol Br2. Biết các phản ứng xảy ra hoàn toàn. Giá trị của m là
 
@@ -152,15 +152,15 @@ grade: 12
 
 **(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-hon-hop-e-chua-hai-triglixerit-x-va-y-trong-dung-dich-naoh.html)**)****Câu 32:** Thủy phân hoàn toàn hỗn hợp E chứa hai triglixerit X và Y trong dung dịch NaOH (đun nóng, vừa đủ), thu được 3 muối C15H31COONa, C17H33COONa, C17H35COONa với tỉ lệ mol tương ứng 2,5 : 1,75 : 1 và 6,44 gam glixerol. Mặt khác đốt cháy hoàn toàn 47,488 gam E cần vừa đủ a mol khí O2. Giá trị của a là
 
-**A.**4,254. **B.**4,100. **C.**4,296. **D.**5,370.
+**A.** 4,254. **B.** 4,100. **C.** 4,296. **D.** 5,370.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-005-mol-hon-hop-x-gom-ba-triglixerit-can-vua-du-375-mol-o2-thu-duoc-27-mol-co2.html)**)****Câu 33:**Đốt cháy hoàn toàn 0,05 mol hỗn hợp X gồm ba triglixerit cần vừa đủ 3,75 mol O2 thu được 2,7 mol CO2. Mặt khác, hiđro hóa hoàn toàn 50,4 gam X (xúc tác Ni, to) thu được hỗn hợp Y. Đun nóng Y với dung dịch KOH vừa đủ, thu được glixerol và m gam muối. Giá trị của m là
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-005-mol-hon-hop-x-gom-ba-triglixerit-can-vua-du-375-mol-o2-thu-duoc-27-mol-co2.html)**)****Câu 33:** Đốt cháy hoàn toàn 0,05 mol hỗn hợp X gồm ba triglixerit cần vừa đủ 3,75 mol O2 thu được 2,7 mol CO2. Mặt khác, hiđro hóa hoàn toàn 50,4 gam X (xúc tác Ni, to) thu được hỗn hợp Y. Đun nóng Y với dung dịch KOH vừa đủ, thu được glixerol và m gam muối. Giá trị của m là
 
-**A.**55,08. **B.**55,44. **C.**48,72. **D.**54,96.
+**A.** 55,08. **B.** 55,44. **C.** 48,72. **D.** 54,96.
 
-**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-mamb-ti-le-so-mol-tuong-ung-la-3-5.html)**)****Câu 34:**Hỗn hợp X gồm 2 triglixerit A và B (MA>MB; tỉ lệ số mol tưong ứng là 3: 5). Đun nóng m gam hỗn hợp X với dung dịch NaOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam natri stearat, y gam natri linoleat và z gam natri panmitat, m gam hỗn hợp X tác dụng tối đa với 132 gam brom. Đốt m gam hỗn hợp X thu được 719,4 gam CO2 và 334,32 lít hơi H2O (đktc). Giá trị của y+z là:
+**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-mamb-ti-le-so-mol-tuong-ung-la-3-5.html)**)****Câu 34:** Hỗn hợp X gồm 2 triglixerit A và B (MA>MB; tỉ lệ số mol tưong ứng là 3: 5). Đun nóng m gam hỗn hợp X với dung dịch NaOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam natri stearat, y gam natri linoleat và z gam natri panmitat, m gam hỗn hợp X tác dụng tối đa với 132 gam brom. Đốt m gam hỗn hợp X thu được 719,4 gam CO2 và 334,32 lít hơi H2O (đktc). Giá trị của y+z là:
 
-**A.**159,00.**B.**121,168.**C.**138,675. **D**. 228,825.
+**A.** 159,00.**B.** 121,168.**C.** 138,675. **D**. 228,825.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-886-gam-triglixerit-x-thu-duoc-11-mol-hon-hop-y-gom-co2-va-h2o.html)**) Câu 35:** Đốt cháy hoàn toàn 8,86 gam triglixerit X thu được 1,1 mol hỗn hợp Y gồm CO2 và H2O. Cho Y hấp thụ hoàn toàn vào dung dịch chứa 0,42 mol Ba(OH)2 thu được kết tủa và dung dịch Z. Để thu được kết tủa lớn nhất từ Z cần cho thêm ít nhất 100 ml dung dịch hỗn hợp KOH 0,5M, NaOH 0,5M và Na2CO3 0,5 M vào Z. Mặt khác, 8,86 gam X tác dụng tối đa 0,02 mol Br2 trong dung dịch. Cho 8,86 gam X tác dụng với NaOH (vừa đủ) thu được glixerol và m gam muối. Giá trị của m **gần nhất** với giá trị nào sau đây?
 
@@ -168,7 +168,7 @@ grade: 12
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-862-gam-hon-hop-x-chua-ba-chat-beo-thu-duoc-24288-gam-co2-va-9324-gam-h2o.html)**) Câu 36:** Đốt cháy hoàn toàn 86,2 gam hỗn hợp X chứa ba chất béo, thu được 242,88 gam CO2 và 93,24 gam H2O. Hiđro hóa hoàn toàn 86,2 gam X bằng lượng H2 vừa đủ (xúc tác Ni, t°), thu được hỗn hợp Y. Đun nóng toàn bộ Y với dung dịch KOH dư, thu được x gam muối. Giá trị của x là
 
-**A.**93,94. **B.**89,28. **C.**89,20. **D.**94,08.
+**A.** 93,94. **B.** 89,28. **C.** 89,20. **D.** 94,08.
 
 **(**[Lời giải](/bai-viet/hon-hop-e-gom-triglixerit-x-axit-panmitic-va-axit-stearic-dot-chay-hoan-toan-m-gam-e-can-vua-du.html)**) Câu 37:** Hỗn hợp E gồm triglixerit X, axit panmitic và axit stearic. Đốt cháy hoàn toàn m gam E cần vừa đủ 2,06 mol O2, thu được H2O và 1,44 mol CO2. Mặt khác, m gam E phản ứng tối đa với dung dịch chứa 0,05 mol KOH và 0,03 mol NaOH thu được a gam hỗn hợp muối của hai axit cacboxylic. Giá trị của a là
 
@@ -176,59 +176,59 @@ grade: 12
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-hon-hop-gom-chat-beo-x-x-mol-va-chat-beo-y-y-mol-mx-my-thu-duoc-so-mol-co2-nhieu-hon-so-mol-nuoc-la-015.html)**)****Câu 38:** Đốt cháy hoàn toàn hỗn hợp gồm chất béo **X** (x mol) và chất béo **Y** (y mol) (MX > MY) thu được số mol CO2 nhiều hơn số mol nước là 0,15. Mặt khác cùng lượng hỗn hợp trên tác dụng tối đa với 0,07 mol Br2 trong dung dịch. Biết thủy phân hoàn toàn **X** hoặc **Y** đều thu được muối của axit oleic và axit stearic. Tỷ lệ x : y có giá trị **gần nhất** với giá trị nào sau đây?
 
-**A.**0,4. **B.**0,3. **C.**0,5. **D.**0,2.
+**A.** 0,4. **B.** 0,3. **C.** 0,5. **D.** 0,2.
 
-**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-hon-hop-x-gom-2-triglixerit-thu-duoc-hon-hop-glixerol-axit-oleic-va-axit-linoleic.html)**)****Câu 39:******Thuỷ phân hoàn toàn m gam hỗn hợp X gồm 2 triglixerit thu được hỗn hợp glixerol, axit oleic và axit linoleic trong đó a mol glixerol. Đốt m gam hỗn hợp X thu được 362,7 gam H2O. Mặt khác m gam X tác dụng tối đa với 4,625a mol brom. Giá trị của m là
+**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-hon-hop-x-gom-2-triglixerit-thu-duoc-hon-hop-glixerol-axit-oleic-va-axit-linoleic.html)**)****Câu 39:*** ***Thuỷ phân hoàn toàn m gam hỗn hợp X gồm 2 triglixerit thu được hỗn hợp glixerol, axit oleic và axit linoleic trong đó a mol glixerol. Đốt m gam hỗn hợp X thu được 362,7 gam H2O. Mặt khác m gam X tác dụng tối đa với 4,625a mol brom. Giá trị của m là
 
-**A.**348,6.**B.******312,8.**C.******364,2.******D.**352,3.
+**A.** 348,6.**B.******312,8.** C.******364,2.*** ***D.** 352,3.
 
 **(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-chat-beo-x-trong-dung-dich-naoh-thu-duoc-glixerol-va-hon-hop-hai-muoi-gom-natri-oleat-va-natri-linoleat.html)**) Câu 40:** Thủy phân hoàn toàn chất béo X trong dung dịch NaOH thu được glixerol và hỗn hợp hai muối gồm natri oleat và natri linoleat. Đốt cháy m gam X thu được 275,88 gam CO2. Mặt khác, m gam X tác dụng tối đa với 88 gam brom trong dung dịch. Giá trị của m là
 
-**A.**96,80. **B.**97,02. **C.**88,00. **D.**88,20.
+**A.** 96,80. **B.** 97,02. **C.** 88,00. **D.** 88,20.
 
-**(**[Lời giải](/bai-viet/dun-nong-m-gam-hon-hop-e-chua-triglixerit-x-va-cac-axit-beo-tu-do-voi-200-ml-dung-dich-naoh-1m.html)**) Câu 41:** Đun nóng m gam hỗn hợp **E** chứa triglixerit **X** và các axit béo tự do với 200 ml dung dịch NaOH 1M (vừa đủ), thu được hỗn hợp **Y** chứa các muối có công thức chung C17HyCOONa. Đốt cháy 0,07 mol**E** thu được 1,845 mol CO2. Mặt khác m gam **E**tác dụng vừa đủ với 0,1 mol Br2. Các phản ứng xảy ra hoàn toàn. Giá trị của m là
+**(**[Lời giải](/bai-viet/dun-nong-m-gam-hon-hop-e-chua-triglixerit-x-va-cac-axit-beo-tu-do-voi-200-ml-dung-dich-naoh-1m.html)**) Câu 41:** Đun nóng m gam hỗn hợp **E** chứa triglixerit **X** và các axit béo tự do với 200 ml dung dịch NaOH 1M (vừa đủ), thu được hỗn hợp **Y** chứa các muối có công thức chung C17HyCOONa. Đốt cháy 0,07 mol**E** thu được 1,845 mol CO2. Mặt khác m gam **E** tác dụng vừa đủ với 0,1 mol Br2. Các phản ứng xảy ra hoàn toàn. Giá trị của m là
 
-**A.**57,74. **B.**59,07. **C.**55,76. **D.**31,77.
+**A.** 57,74. **B.** 59,07. **C.** 55,76. **D.** 31,77.
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-13728-gam-mot-triglixerit-x-can-vua-du-27776-lit-o2-dktc-thu-duoc-so-mol-co2-va-so-mol-h2o.html)**) Câu 42:** Đốt cháy hoàn toàn 13,728 gam một triglixerit X cần vừa đủ 27,776 lít O2 (đktc) thu được số mol CO2 và số mol H2O hơn kém nhau 0,064. Mặt khác, hiđro hóa hoàn toàn một lượng X cần 0,096 mol H2 thu được m gam chất hữu cơ Y. Xà phòng hóa hoàn toàn m gam Y bằng dung dịch NaOH thu được dung dịch chứa a gam muối. Giá trị của a là
 
 **A**. 42,528. **B.** 41,376. **C.** 42,720. **D.** 11,424.
 
-**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-ma-2.html)**)****Câu 43:**Hỗn hợp X gồm 2 triglixerit A và B (MA<MB; tỉ lệ số mol tương ứng là 12:13). Đun nóng m gam hỗn hợp X với dung dịch KOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam kali oleat, y gam kali linoleat và z gam kali panmitat, m gam hỗn hợp X tác dụng tối đa với 198,4 gam brom. Đốt m gam hỗn hợp X thu được 616 lít CO2 và 454,68 gam H2O. Giá trị của x+z là:
+**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-ma-2.html)**)****Câu 43:** Hỗn hợp X gồm 2 triglixerit A và B (MA<MB; tỉ lệ số mol tương ứng là 12:13). Đun nóng m gam hỗn hợp X với dung dịch KOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam kali oleat, y gam kali linoleat và z gam kali panmitat, m gam hỗn hợp X tác dụng tối đa với 198,4 gam brom. Đốt m gam hỗn hợp X thu được 616 lít CO2 và 454,68 gam H2O. Giá trị của x+z là:
 
-**A.**323,68. **B**. 390,20.**C.**320,268.**D.**319,52.
+**A.** 323,68. **B**. 390,20.** C.**320,268.** D.**319,52.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-hon-hop-x-chua-cac-triglierit-tao-boi-ca-3-axit-panmitic-oleic-linoleic.html)**)****Câu 44:**Đốt cháy hoàn toàn m gam hỗn hợp X chứa các triglierit tạo bởi cả 3 axit panmitic, oleic, linoleic thu được 24,2 gam CO2 và 9 gam H2O. Nếu xà phòng hóa hoàn toàn 2m gam hỗn hợp X bằng dung dịch KOH vừa đủ sẽ thu được bao nhiêu gam xà phòng?
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-hon-hop-x-chua-cac-triglierit-tao-boi-ca-3-axit-panmitic-oleic-linoleic.html)**)****Câu 44:** Đốt cháy hoàn toàn m gam hỗn hợp X chứa các triglierit tạo bởi cả 3 axit panmitic, oleic, linoleic thu được 24,2 gam CO2 và 9 gam H2O. Nếu xà phòng hóa hoàn toàn 2m gam hỗn hợp X bằng dung dịch KOH vừa đủ sẽ thu được bao nhiêu gam xà phòng?
 
-**A.**11,90.******B.**18,64.**C.**21,40.**D.**19,60.
+**A.** 11,90.******B.** 18,64.**C.** 21,40.**D.** 19,60.
 
-**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-ma-3.html)**)****Câu 45:**Hỗn hợp X gồm 2 triglixerit A và B (MA<MB; tỉ lệ số mol tương ứng là 2: 5). Đun nóng m gam hỗn hợp X với dung dịch NaOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam natri oleat, y gam natri linoleat và z gam natri panmitat, m gam hỗn hợp X tác dụng tối đa với 38,4 gam brom. Đốt m gam hỗn hợp X thu được 87,584 lít CO2 và 63,54 gam H2O. Giá trị của x+y là:
+**(**[Lời giải](/bai-viet/hon-hop-x-gom-2-triglixerit-a-va-b-ma-3.html)**)****Câu 45:** Hỗn hợp X gồm 2 triglixerit A và B (MA<MB; tỉ lệ số mol tương ứng là 2: 5). Đun nóng m gam hỗn hợp X với dung dịch NaOH vừa đủ thu được dung dịch chứa glixerol và hỗn hợp gồm x gam natri oleat, y gam natri linoleat và z gam natri panmitat, m gam hỗn hợp X tác dụng tối đa với 38,4 gam brom. Đốt m gam hỗn hợp X thu được 87,584 lít CO2 và 63,54 gam H2O. Giá trị của x+y là:
 
-**A.**41,52.**B.**32,26. **C**. 51,54.**D.**23,124.
+**A.** 41,52.**B.** 32,26. **C**. 51,54.** D.**23,124.
 
-**(**[Lời giải](/bai-viet/hon-hop-x-gom-axit-oleic-va-triglixerit-y-dot-chay-hoan-toan-02-mol-x-can-vua-du.html)**)****Câu 46:**Hỗn hợp X gồm axit oleic và triglixerit Y. Đốt cháy hoàn toàn 0,2 mol X cần vừa đủ 10,6 mol O2, thu được CO2 và 126 gam H2O. Mặt khác, cho 0,12 mol X tác dụng với dung dịch NaOH vừa đủ, đun nóng, thu được glixerol và m gam hỗn hợp gồm natri oleat và natri stearat. Giá trị của m là
+**(**[Lời giải](/bai-viet/hon-hop-x-gom-axit-oleic-va-triglixerit-y-dot-chay-hoan-toan-02-mol-x-can-vua-du.html)**)****Câu 46:** Hỗn hợp X gồm axit oleic và triglixerit Y. Đốt cháy hoàn toàn 0,2 mol X cần vừa đủ 10,6 mol O2, thu được CO2 và 126 gam H2O. Mặt khác, cho 0,12 mol X tác dụng với dung dịch NaOH vừa đủ, đun nóng, thu được glixerol và m gam hỗn hợp gồm natri oleat và natri stearat. Giá trị của m là
 
-**A.**60,80. **B.**122,0. **C.**73,08. **D.**36,48.
+**A.** 60,80. **B.** 122,0. **C.** 73,08. **D.** 36,48.
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-1716-gam-triglixerit-x-thu-duoc-h2o-va-11-mol-co2.html)**)****Câu 47:**Đốt cháy hoàn toàn 17,16 gam triglixerit X, thu được H2O và 1,1 mol CO2. Cho 17,16 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 17,16 gam X tác dụng được tối đa với 0,04 mol Br2 trong dung dịch. Giá trị của m là 
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-1716-gam-triglixerit-x-thu-duoc-h2o-va-11-mol-co2.html)**)****Câu 47:** Đốt cháy hoàn toàn 17,16 gam triglixerit X, thu được H2O và 1,1 mol CO2. Cho 17,16 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 17,16 gam X tác dụng được tối đa với 0,04 mol Br2 trong dung dịch. Giá trị của m là 
 
-**A.**18,48******B.**17,72******C.**16,12******D.**18,28 
+**A.** 18,48******B.** 17,72******C.** 16,12******D.** 18,28 
 
 **(**[Lời giải](/bai-viet/dot-chay-hoan-toan-13728-gam-mot-triglixerit-x-can-vua-du-27776-lit-o2-dktc-thu-duoc-so-mol-co2-va-so-mol-h2o-hon-kem-nhau.html)**) Câu 48:** Đốt cháy hoàn toàn 13,728 gam một triglixerit **X** cần vừa đủ 27,776 lít O2 (đktc) thu được số mol CO2 và số mol H2O hơn kém nhau 0,064 mol. Mặt khác, hidro hóa hoàn toàn một lượng **X** cần 0,096 mol H2 thu được m gam chất hữu cơ **Y**. Xà phòng hóa hoàn toàn m gam **Y** bằng dung dịch NaOH thu được dung dịch chứa a gam muối. Giá trị **gần nhất** của a là
 
-**A.**11,424. **B.**42,72. **C.**42,528. **D.**41,376.
+**A.** 11,424. **B.** 42,72. **C.** 42,528. **D.** 41,376.
 
-**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-chat-beo-e-can-vua-du-150-ml-dung-dich-koh-05m-thu-duoc-dung-dich-chua-a-gam-muoi-x-va-b-gam-muoi-y.html)**) Câu 49:** Thủy phân hoàn toàn m gam chất béo **E** cần vừa đủ 150 ml dung dịch KOH 0,5M, thu được dung dịch chứa a gam muối **X** và b gam muối **Y** (MX < MY, trong mỗi phân tử muối có không quá ba liên kết π, **X** và **Y** có cùng số nguyên tử C, số mol của **X** lớn hơn số mol của **Y**). Mặt khác, đốt cháy hoàn toàn m gam**E**, thu được 28,56 lít CO2 (đktc) và 20,25 gam H2O. Giá trị của a và b lần lượt là 
+**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-m-gam-chat-beo-e-can-vua-du-150-ml-dung-dich-koh-05m-thu-duoc-dung-dich-chua-a-gam-muoi-x-va-b-gam-muoi-y.html)**) Câu 49:** Thủy phân hoàn toàn m gam chất béo **E** cần vừa đủ 150 ml dung dịch KOH 0,5M, thu được dung dịch chứa a gam muối **X** và b gam muối **Y** (MX < MY, trong mỗi phân tử muối có không quá ba liên kết π, **X** và **Y** có cùng số nguyên tử C, số mol của **X** lớn hơn số mol của **Y**). Mặt khác, đốt cháy hoàn toàn m gam** E**, thu được 28,56 lít CO2 (đktc) và 20,25 gam H2O. Giá trị của a và b lần lượt là 
 
 **A.** 11,6 và 5,88. **B.** 13,7 và 6,95. **C.** 14,5 và 7,35. **D.** 7,25 và 14,7. 
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-triglixerit-x-trung-hoa-can-dung-6944-lit-khi-o2-dktc-thu-duoc-khi-co2-va.html)**) Câu 50:** Đốt cháy hoàn toàn m gam triglixerit **X** (trung hòa) cần dùng 69,44 lít khí O2 (đktc) thu được khí CO2 và 36,72 gam nước. Đun nóng m gam **X** trong 150 ml dung dịch NaOH 1M, sau khi phản ứng xảy ra hoàn toàn thu được dung dịch **Y**. Cô cạn dung dịch **Y** thu được p gam chất rắn khan. Biết m gam **X**tác dụng vừa đủ với 12,8 gam Br2 trong dung dịch. Giá trị của p là 
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-m-gam-triglixerit-x-trung-hoa-can-dung-6944-lit-khi-o2-dktc-thu-duoc-khi-co2-va.html)**) Câu 50:** Đốt cháy hoàn toàn m gam triglixerit **X** (trung hòa) cần dùng 69,44 lít khí O2 (đktc) thu được khí CO2 và 36,72 gam nước. Đun nóng m gam **X** trong 150 ml dung dịch NaOH 1M, sau khi phản ứng xảy ra hoàn toàn thu được dung dịch **Y**. Cô cạn dung dịch **Y** thu được p gam chất rắn khan. Biết m gam **X** tác dụng vừa đủ với 12,8 gam Br2 trong dung dịch. Giá trị của p là 
 
 **A.** 33,44. **B.** 36,64. **C.** 36,80. **D.** 30,64.
 
-**(**[Lời giải](/bai-viet/xa-phong-hoa-hoan-toan-m-gam-hon-hop-e-gom-cac-triglixerit-bang-dung-dich-naoh-thu-duoc-glixerol-va-hon-hop-x-gom-ba-muoi.html)**)****Câu 51:**Xà phòng hóa hoàn toàn m gam hỗn hợp E gồm các triglixerit bằng dung dịch NaOH, thu được glixerol và hỗn hợp X gồm ba muối C17HxCOONa, C15H31COONa, C17HyCOONa có tỉ lệ mol tương ứng là 3 : 4 : 5. Hiđro hóa hoàn toàn m gam E, thu được 68,96 gam hỗn hợp Y. Nếu đốt cháy hoàn toàn m gam E thì cần vừa đủ 6,14 mol O2. Giá trị của m là
+**(**[Lời giải](/bai-viet/xa-phong-hoa-hoan-toan-m-gam-hon-hop-e-gom-cac-triglixerit-bang-dung-dich-naoh-thu-duoc-glixerol-va-hon-hop-x-gom-ba-muoi.html)**)****Câu 51:** Xà phòng hóa hoàn toàn m gam hỗn hợp E gồm các triglixerit bằng dung dịch NaOH, thu được glixerol và hỗn hợp X gồm ba muối C17HxCOONa, C15H31COONa, C17HyCOONa có tỉ lệ mol tương ứng là 3 : 4 : 5. Hiđro hóa hoàn toàn m gam E, thu được 68,96 gam hỗn hợp Y. Nếu đốt cháy hoàn toàn m gam E thì cần vừa đủ 6,14 mol O2. Giá trị của m là
 
-**A.**60,20. **B.**68,80. **C.**68,84. **D.**68,40.
+**A.** 60,20. **B.** 68,80. **C.** 68,84. **D.** 68,40.
 
 **BÀI TẬP CHẤT BÉO TRONG ĐỀ THI CÁC NĂM**
 
@@ -244,9 +244,9 @@ grade: 12
 
 **D.** 1 mol X làm mất màu tối đa 2 mol Br2 trong dung dịch. 
 
-**(Lời giải)****Lần 2:**Đốt cháy hoàn toàn a gam triglixerit X cần vừa đủ 4,83 mol O2, thu được 3,42 mol CO2 và3,18 mol H2O. Mặt khác, cho a gam X phản ứng vừa đủ với dung dịch NaOH, thu được b gam muối. Giá trị của b là
+**(Lời giải)****Lần 2:** Đốt cháy hoàn toàn a gam triglixerit X cần vừa đủ 4,83 mol O2, thu được 3,42 mol CO2 và3,18 mol H2O. Mặt khác, cho a gam X phản ứng vừa đủ với dung dịch NaOH, thu được b gam muối. Giá trị của b là
 
-**A.**53,16. **B.**57,12. **C.**60,36. **D.**54,84.
+**A.** 53,16. **B.** 57,12. **C.** 60,36. **D.** 54,84.
 
 **QG2017:Không có**
 
@@ -268,45 +268,45 @@ grade: 12
 
  
 
-**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-natri-stearat-va-natri-oleat.html)**)****Câu 4 (THPT QG 2018):**Thủy phân hoàn toàn triglixerit X trong dung dịch NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2, thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
+**(**[Lời giải](/bai-viet/thuy-phan-hoan-toan-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-natri-stearat-va-natri-oleat.html)**)****Câu 4 (THPT QG 2018):** Thủy phân hoàn toàn triglixerit X trong dung dịch NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2, thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
 
-**A.**0,04. **B.**0,08. **C.**0,20. **D.**0,16.
+**A.** 0,04. **B.** 0,08. **C.** 0,20. **D.** 0,16.
 
 ### MH2019
 
-**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-006-mol-hon-hop-x-gom-ba-chat-beo-can-dung-477-mol-o2-thu-duoc-5652-gam-nuoc.html)**)****Câu 1 (MH 2019) :******Đốt cháy hoàn toàn 0,06 mol hỗn hợp X gồm ba chất béo cần dùng 4,77 mol O2, thu được 56,52 gam nước. Mặt khác hiđro hóa hoàn toàn 78,9 gam X trên bằng lượng H2 vừa đủ (xúc tác Ni, t0), lấy sản phẩm tác dụng với dung dịch KOH vừa đủ, thu được m gam muối. Giá trị của m là
+**(**[Lời giải](/bai-viet/dot-chay-hoan-toan-006-mol-hon-hop-x-gom-ba-chat-beo-can-dung-477-mol-o2-thu-duoc-5652-gam-nuoc.html)**)****Câu 1 (MH 2019) :*** ***Đốt cháy hoàn toàn 0,06 mol hỗn hợp X gồm ba chất béo cần dùng 4,77 mol O2, thu được 56,52 gam nước. Mặt khác hiđro hóa hoàn toàn 78,9 gam X trên bằng lượng H2 vừa đủ (xúc tác Ni, t0), lấy sản phẩm tác dụng với dung dịch KOH vừa đủ, thu được m gam muối. Giá trị của m là
 
-**A.** 90,54.**B.**83,34.**C.**90,42.******D**. 86,10.
+**A.** 90,54.**B.** 83,34.**C.** 90,42.******D**. 86,10.
 
  
 
 ### QG 2019 (4 mã đề)
 
-**(Lời giải)****Câu 1:**Đốt cháy hoàn toàn 25,74 gam triglixerit X, thu được CO2 và 1,53 mol H2O. Cho 25,74 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 25,74 gam X tác dụng được tối đa với 0,06 mol Br2 trong dung dịch. Giá trị của m là**A.**24,18. **B.**27,72. **C.**27,42. **D.**26,58.**(Lời giải)****Câu 2:**Đốt cháy hoàn toàn 25,74 gam triglixerit X, thu được CO2 và 1,53 mol H2O. Cho 25,74 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 25,74 gam X tác dụng được tối đa với 0,06 mol Br2 trong dung dịch. Giá trị của m là**A.**24,18. **B.**27,72. **C.**27,42. **D.**26,58.**(Lời giải)****Câu 3:**Đốt cháy hoàn toàn 17,16 gam trigixerit X, thu được H2O và 1,1 mol CO2. Cho 17,16 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 11,76 gam X tác dụng được với tối đa 0,04 mol Br2 trong dung dịch. Giá trị của m là
+**(Lời giải)****Câu 1:** Đốt cháy hoàn toàn 25,74 gam triglixerit X, thu được CO2 và 1,53 mol H2O. Cho 25,74 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 25,74 gam X tác dụng được tối đa với 0,06 mol Br2 trong dung dịch. Giá trị của m là**A.** 24,18. **B.** 27,72. **C.** 27,42. **D.** 26,58.**(Lời giải)****Câu 2:** Đốt cháy hoàn toàn 25,74 gam triglixerit X, thu được CO2 và 1,53 mol H2O. Cho 25,74 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 25,74 gam X tác dụng được tối đa với 0,06 mol Br2 trong dung dịch. Giá trị của m là**A.** 24,18. **B.** 27,72. **C.** 27,42. **D.** 26,58.**(Lời giải)****Câu 3:** Đốt cháy hoàn toàn 17,16 gam trigixerit X, thu được H2O và 1,1 mol CO2. Cho 17,16 gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và m gam muối. Mặt khác, 11,76 gam X tác dụng được với tối đa 0,04 mol Br2 trong dung dịch. Giá trị của m là
 
-**A.**18,28. **B.**18,48. **C.**16,12. **D.**17,72.**(Lời giải)****Câu 4:**Đốt cháy hoàn toàn m gam triglixerit X cần vừa đủ 2,31 mol O2, thu được H2O và 1,65 mol CO2. Cho m gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và 26,52 gam muối. Mặt khác, m gam X tác dụng được tối đa với a mol Br2 trong dung dịch. Giá trị của a là
+**A.** 18,28. **B.** 18,48. **C.** 16,12. **D.** 17,72.**(Lời giải)****Câu 4:** Đốt cháy hoàn toàn m gam triglixerit X cần vừa đủ 2,31 mol O2, thu được H2O và 1,65 mol CO2. Cho m gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và 26,52 gam muối. Mặt khác, m gam X tác dụng được tối đa với a mol Br2 trong dung dịch. Giá trị của a là
 
-**A.**0,09. **B.**0,12. **C.**0,15. **D.**0,18.
+**A.** 0,09. **B.** 0,12. **C.** 0,15. **D.** 0,18.
 
  
 
 ### MH2020
 
-**(Lời giải)****Lần 1:**Xà phòng hóa hoàn toàn m gam hỗn hợp E gồm các triglixerit bằng dung dịch NaOH, thu được glixerol và hỗn hợp X gồm ba muối C17HxCOONa, C15H31COONa, C17HyCOONa có tỉ lệ mol tương ứng là 3 : 4 : 5. Hiđro hóa hoàn toàn m gam E, thu được 68,96 gam hỗn hợp Y. Nếu đốt cháy hoàn toàn m gam E thì cần vừa đủ 6,14 mol O2. Giá trị của m là 
+**(Lời giải)****Lần 1:** Xà phòng hóa hoàn toàn m gam hỗn hợp E gồm các triglixerit bằng dung dịch NaOH, thu được glixerol và hỗn hợp X gồm ba muối C17HxCOONa, C15H31COONa, C17HyCOONa có tỉ lệ mol tương ứng là 3 : 4 : 5. Hiđro hóa hoàn toàn m gam E, thu được 68,96 gam hỗn hợp Y. Nếu đốt cháy hoàn toàn m gam E thì cần vừa đủ 6,14 mol O2. Giá trị của m là 
 
-**A.******68,40.  **B.******60,20.  **C.******68,80.  **D.******68,84. 
+**A.******68,40.** B.******60,20.** C.******68,80.** D.******68,84. 
 
-**(Lời giải)****Lần 2:******Thủy phân hoàn toàn triglixerit X trong dung dich NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2, thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
+**(Lời giải)****Lần 2:*** ***Thủy phân hoàn toàn triglixerit X trong dung dich NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2, thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
 
- **A.** 0,04.******B.** 0,08.**C.**0,20.**D.**0,16.
+ **A.** 0,04.******B.** 0,08.**C.** 0,20.**D.** 0,16.
 
  
 
 ### TN 2020(4 mã đề)
 
-**(Lời giải)****Câu 1:**Hỗn hợp E gồm axit panmitic, axit stearic và triglixerit X. Cho m gam E tác dụng hoàn toàn với dung dịch NaOH dư, thu được 88,44 gam hỗn hợp hai muối. Nếu đốt cháy hết m gam E thì cần vừa đủ 7,65 gam O2, thu được H2O và 5,34 mol CO2. Khối lượng của X trong m gam E là
+**(Lời giải)****Câu 1:** Hỗn hợp E gồm axit panmitic, axit stearic và triglixerit X. Cho m gam E tác dụng hoàn toàn với dung dịch NaOH dư, thu được 88,44 gam hỗn hợp hai muối. Nếu đốt cháy hết m gam E thì cần vừa đủ 7,65 gam O2, thu được H2O và 5,34 mol CO2. Khối lượng của X trong m gam E là
 
-**A.**48,36 gam. **B.**51,72 gam. **C.**53,40 gam. **D**. 50,04 gam.
+**A.** 48,36 gam. **B.** 51,72 gam. **C.** 53,40 gam. **D**. 50,04 gam.
 
 **(Lời giải)****Câu 2:** Hỗn hợp E gồm axit panmitic, axit stearic và triglixerit X. Cho m gam E tác dụng hoàn toàn với dung dịch NaOH dư, thu được 86,76 gam hỗn hợp hai muối. Nếu đốt cháy hết m gam E thì cần đủ 7,47 mol O2, thu được H2O và 5,22 mol CO2. Khối lượng của X trong m gam E là
 
@@ -328,21 +328,21 @@ grade: 12
 
 ### TN THPT 2021 đợt 1
 
- **(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-3-2-1-dot-chay-hoan-toan-m-gam-e.html)**) ****Câu 71(MĐ 201):**Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 3: 2: 1). Đốt cháy hoàn toàn m gam E cần vừa đủ 4,0 mol O2, thu được CO2 và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 47,08 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
+ **(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-3-2-1-dot-chay-hoan-toan-m-gam-e.html)**)** **Câu 71(MĐ 201):** Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 3: 2: 1). Đốt cháy hoàn toàn m gam E cần vừa đủ 4,0 mol O2, thu được CO2 và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 47,08 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
 
-**A.******38,72%. **B.**37,25%. **C.**37,99%. **D.**39,43%.
+**A.******38,72%.** B.**37,25%.** C.**37,99%.** D.**39,43%.
 
-**(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-1-2-4-dot-chay-hoan-toan-m-gam-e-can-vua-du.html)**) Câu 78****(MĐ 202)****:**Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 1 : 2 : 4). Đốt cháy hoàn toàn m gam E cần vừa đủ 7,43 mol O2, thu được CO2****và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 86 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
+**(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-1-2-4-dot-chay-hoan-toan-m-gam-e-can-vua-du.html)**) Câu 78****(MĐ 202)*** *:**Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 1 : 2 : 4). Đốt cháy hoàn toàn m gam E cần vừa đủ 7,43 mol O2, thu được CO2****và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 86 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
 
-**A.**81,21%. **B.**80,74%. **C.**81,66%. **D.**80,24%.
+**A.** 81,21%. **B.** 80,74%. **C.** 81,66%. **D.** 80,24%.
 
-**(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-4-3-2-dot-chay-hoan-toan-m-gam-e.html)**) Câu 72****(MĐ 205)****:**Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 4 : 3 : 2). Đốt cháy hoàn toàn m gam E cần vừa đủ 3,26 mol O2, thu được CO2****và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 38,22 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
+**(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-4-3-2-dot-chay-hoan-toan-m-gam-e.html)**) Câu 72****(MĐ 205)*** *:**Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 4 : 3 : 2). Đốt cháy hoàn toàn m gam E cần vừa đủ 3,26 mol O2, thu được CO2****và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 38,22 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
 
-**A.**45,95%. **B.**47,51%. **C.**48,25%. **D.**46,74%.
+**A.** 45,95%. **B.** 47,51%. **C.** 48,25%. **D.** 46,74%.
 
-**(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-1-1-2-dot-chay-hoan-toan-m-gam-e.html)**)** **Câu 79 (MĐ 206):**Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 1: 1: 2). Đốt cháy hoàn toàn m gam E cần và đủ 4,07 mol O2, thu được CO2 và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 47,08 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
+**(**[Lời giải](/bai-viet/hon-hop-e-gom-axit-oleic-axit-panmitic-va-triglixerit-x-ti-le-mol-tuong-ung-la-1-1-2-dot-chay-hoan-toan-m-gam-e.html)**)** **Câu 79 (MĐ 206):** Hỗn hợp E gồm axit oleic, axit panmitic và triglixerit X (tỉ lệ mol tương ứng là 1: 1: 2). Đốt cháy hoàn toàn m gam E cần và đủ 4,07 mol O2, thu được CO2 và H2O. Mặt khác, cho m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được sản phẩm hữu cơ gồm glixerol và 47,08 gam hỗn hợp hai muối. Phần trăm khối lượng của X trong E là
 
-**A.**74,98%. **B****.**76,13%. **C.**75,57%. **D.**76,67%
+**A.** 74,98%. **B****.** 76,13%. **C.** 75,57%. **D.** 76,67%
 
 ## 
 

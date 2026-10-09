@@ -21,7 +21,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
 - [Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án](/bai-viet/cau-hoi-tim-chat-vo-co-van-dung-cao.html)
 
-**Câu 1:**Cho các phát biểu sau:
+**Câu 1:** Cho các phát biểu sau:
 
 (a) Polietilen được điều chế bằng phản ứng trùng ngưng.
 
@@ -35,9 +35,9 @@ Các thầy cô và các em có thể xem bài tương tự
 
 Số phát biểu đúng là
 
- **A.**3. **B.**5. **C.**4. **D.**2.
+ **A.** 3. **B.** 5. **C.** 4. **D.** 2.
 
-**Câu 2:**Cho các nhận định sau:
+**Câu 2:** Cho các nhận định sau:
 
 (a) CH2=CH2 là các mắt xích của polietilen.
 
@@ -51,9 +51,9 @@ Số phát biểu đúng là
 
 Số nhận định đúng là
 
- **A.**5. **B.**6. **C.**3. **D.**4.
+ **A.** 5. **B.** 6. **C.** 3. **D.** 4.
 
-**Câu 3:**Cho các phát biểu sau:
+**Câu 3:** Cho các phát biểu sau:
 
 (a) Saccarozơ bị thủy phân trong môi trường kiềm.
 
@@ -67,9 +67,9 @@ Số nhận định đúng là
 
 Số phát biểu đúng là
 
- **A.**3. **B.**2. **C.**1. **D.**4.
+ **A.** 3. **B.** 2. **C.** 1. **D.** 4.
 
-**Câu 4:**Cho các phát biểu sau:
+**Câu 4:** Cho các phát biểu sau:
 
 (a) Thủy phân vinyl axetat bằng NaOH đun nóng, thu được natri axetat và fomanđehit.
 
@@ -83,9 +83,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**1. **B.**3. **C.**4. **D.**2.
+ **A.** 1. **B.** 3. **C.** 4. **D.** 2.
 
-**Câu 5:**Cho các phát biểu sau:
+**Câu 5:** Cho các phát biểu sau:
 
 (a) Đốt cháy hoàn toàn este no, đơn chức, mạch hở, thu được CO2 và H2O có số mol bằng nhau.
 
@@ -99,9 +99,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**4. **C.**5. **D.**3.
+ **A.** 2. **B.** 4. **C.** 5. **D.** 3.
 
-**Câu 6:**Cho các phát biểu sau:
+**Câu 6:** Cho các phát biểu sau:
 
 (a) Saccarozơ được cấu tạo từ hai gốc -glucozơ.
 
@@ -115,9 +115,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**5. **C.**4. **D.**3
+ **A.** 2. **B.** 5. **C.** 4. **D.** 3
 
-**Câu 7:**Cho các nhận định sau:
+**Câu 7:** Cho các nhận định sau:
 
 (a) Các polime đều được tổng hợp bằng phản ứng trùng hợp.
 
@@ -131,9 +131,9 @@ Số phát biểu đúng là
 
 Số nhận định đúng là
 
- **A.**5. **B.**4. **C.**2. **D.**3.
+ **A.** 5. **B.** 4. **C.** 2. **D.** 3.
 
-**Câu 8:**Cho các phát biểu sau:
+**Câu 8:** Cho các phát biểu sau:
 
 (a) Glucozơ vừa có tính oxi hóa vừa có tính khử. 
 
@@ -147,9 +147,9 @@ Số nhận định đúng là
 
 Số phát biểu luôn đúng là
 
- **A.**2. **B.**3. **C.**4. **D.**5.
+ **A.** 2. **B.** 3. **C.** 4. **D.** 5.
 
-**Câu 9:**Cho phát biểu sau:
+**Câu 9:** Cho phát biểu sau:
 
 (a) Dung dịch glucozơ hòa tan được Cu(OH)2 ở nhiệt độ thường.
 
@@ -163,9 +163,9 @@ Số phát biểu luôn đúng là
 
 Số phát biểu **sai** là
 
- **A.**2. **B.**3. **C.**4. **D.**5.
+ **A.** 2. **B.** 3. **C.** 4. **D.** 5.
 
-**Câu 10:**Cho các phát biểu sau: 
+**Câu 10:** Cho các phát biểu sau: 
 
 (a) Tripeptit mạch hở là các peptit có ba liên kết peptit.
 
@@ -179,9 +179,9 @@ Số phát biểu **sai** là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**4. **C.**5. **D.**3.
+ **A.** 2. **B.** 4. **C.** 5. **D.** 3.
 
-**Câu 11:**Cho các phát biểu sau:
+**Câu 11:** Cho các phát biểu sau:
 
 (a) Phản ứng thủy phân este trong môi trường kiềm là phản ứng thuận nghịch.
 
@@ -195,9 +195,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**4. **B.**2. **C.**3. **D.**5.
+ **A.** 4. **B.** 2. **C.** 3. **D.** 5.
 
-**Câu 12:**Cho các phát biểu sau:
+**Câu 12:** Cho các phát biểu sau:
 
 (a) Axit axetic có nhiệt độ sôi cao hơn ancol etylic.
 
@@ -211,9 +211,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**4. **B.**2. **C.**3. **D.**5.
+ **A.** 4. **B.** 2. **C.** 3. **D.** 5.
 
-**Câu 13:**Cho các phát biểu sau:
+**Câu 13:** Cho các phát biểu sau:
 
 (a) Sử dụng xà phòng để giặt quần áo trong nước cứng sẽ làm vải nhanh mục.
 
@@ -227,9 +227,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**3. **B.**4. **C.**5. **D.**2.
+ **A.** 3. **B.** 4. **C.** 5. **D.** 2.
 
-**Câu 14:**Cho các phát biểu sau:
+**Câu 14:** Cho các phát biểu sau:
 
 (a) Khi làm trứng muối (ngâm trứng trong dung dịch NaCl bão hòa) xảy ra hiện tượng đông tụ protein.
 
@@ -243,9 +243,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**5. **B.**2. **C.**3. **D.**4.
+ **A.** 5. **B.** 2. **C.** 3. **D.** 4.
 
-**Câu 15:**Cho các phát biểu sau:
+**Câu 15:** Cho các phát biểu sau:
 
 (a) Metyl metacrylat làm mất màu dung dịch brom.
 
@@ -259,9 +259,9 @@ Số phát biểu đúng là
 
 Số phát biểu dúng là
 
- **A.**6. **B.**4. **C.**5. **D.**3.
+ **A.** 6. **B.** 4. **C.** 5. **D.** 3.
 
-**Câu 16:**Cho các phát biểu sau:
+**Câu 16:** Cho các phát biểu sau:
 
 (a) Bột ngọt (mì chính) dùng làm gia vị, nhưng làm tăng ion Na+ trong cơ thể, làm hại nơron thần kinh, vì thế không nên lạm dụng nó.
 
@@ -275,9 +275,9 @@ Số phát biểu dúng là
 
 Số phát biểu đúng là
 
- **A.**5. **B.**4. **C.**3. **D.**2.
+ **A.** 5. **B.** 4. **C.** 3. **D.** 2.
 
-**Câu 17:**Cho các phát biểu sau:
+**Câu 17:** Cho các phát biểu sau:
 
 (a) Stiren và isopren đều phản ứng cộng với Br2 trong dung dịch.
 
@@ -291,9 +291,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**3. **C.**4. **D.**5.
+ **A.** 2. **B.** 3. **C.** 4. **D.** 5.
 
-**Câu 18:**Cho các phát biểu sau:
+**Câu 18:** Cho các phát biểu sau:
 
 (a) Poli(hexametylen ađipamit) bền với nhiệt, với axit và kiềm.
 
@@ -307,9 +307,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**3. **C.**4. **D.**5.
+ **A.** 2. **B.** 3. **C.** 4. **D.** 5.
 
-**Câu 19:**Cho các phát biểu sau:
+**Câu 19:** Cho các phát biểu sau:
 
 (a) Ở thể rắn, glyxin và glucozơ tồn tại chủ yếu dạng ion lưỡng cực.
 
@@ -323,9 +323,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**4. **C.**1. **D.**3.
+ **A.** 2. **B.** 4. **C.** 1. **D.** 3.
 
-**Câu 20:**Cho các phát biểu sau:
+**Câu 20:** Cho các phát biểu sau:
 
 (a) Tristearin và tripanmitin đều thuộc loại triglixerit.
 
@@ -339,9 +339,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**4. **B.**5. **C.**3. **D.**2.
+ **A.** 4. **B.** 5. **C.** 3. **D.** 2.
 
-**Câu 21:**Cho các phát biểu sau: 
+**Câu 21:** Cho các phát biểu sau: 
 
 (a) Chất béo và protein có cùng thành phần nguyên tố. 
 
@@ -355,9 +355,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**5. **B.**4. **C.**3. **D.**2.
+ **A.** 5. **B.** 4. **C.** 3. **D.** 2.
 
-**Câu 22:**Cho các phát biểu sau:
+**Câu 22:** Cho các phát biểu sau:
 
 (a) Trong công nghiệp, một lượng lớn chất béo dùng để sản xuất xà phòng. 
 
@@ -371,9 +371,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**5. **C.**3. **D.**4.
+ **A.** 2. **B.** 5. **C.** 3. **D.** 4.
 
-**Câu 23:**Cho các phát biểu sau, số phát biểu đúng là
+**Câu 23:** Cho các phát biểu sau, số phát biểu đúng là
 
 (a) Benzyl axetat có mùi thơm hoa nhài, isoamyl axetat có mùi chuối chín. 
 
@@ -385,9 +385,9 @@ Số phát biểu đúng là
 
 (e) Phân tử axetilen, isopren và toluen đều có chứa hai liên kết pi (π).
 
- **A.**2. **B.**3. **C.**4. **D.**5.
+ **A.** 2. **B.** 3. **C.** 4. **D.** 5.
 
-**Câu 24:**Cho các phát biểu sau:
+**Câu 24:** Cho các phát biểu sau:
 
 (a) Tripanmitin tham gia phản ứng cộng H2 (Ni, to).
 
@@ -401,9 +401,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**3. **C.**4. **D.**5.
+ **A.** 2. **B.** 3. **C.** 4. **D.** 5.
 
-**Câu 25:**Cho các phát biểu sau:
+**Câu 25:** Cho các phát biểu sau:
 
  (a) Thủy phân vinyl axetat trong dung dịch NaOH, thu được natri axetat và ancol anlylic.
 
@@ -417,9 +417,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**3. **B.**4. **C.**5. **D.**2.
+ **A.** 3. **B.** 4. **C.** 5. **D.** 2.
 
-**Câu 26:**Cho các phát biểu sau:
+**Câu 26:** Cho các phát biểu sau:
 
 (a) Trong dung dịch, glyxin tồn tại chủ yếu ở dạng ion lưỡng cực.
 
@@ -433,9 +433,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**3. **B.**4. **C.**5. **D.**2.
+ **A.** 3. **B.** 4. **C.** 5. **D.** 2.
 
-**Câu 27:**Cho các phát biểu sau:
+**Câu 27:** Cho các phát biểu sau:
 
 (a) Tinh bột là một trong những lương thực cơ bản của con người. 
 
@@ -449,9 +449,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
- **A.**2. **B.**3. **C.**5. **D.**4.
+ **A.** 2. **B.** 3. **C.** 5. **D.** 4.
 
-**Câu 28:**Cho các phát biểu sau:
+**Câu 28:** Cho các phát biểu sau:
 
 (a) Trong môi trường kiềm, các peptit đều có phản ứng màu biure. 
 
@@ -465,9 +465,9 @@ Số phát biểu đúng là
 
 Số phát biểu đúng là
 
-**A.**2. **B.**3. **C.**5. **D.**4.
+**A.** 2. **B.** 3. **C.** 5. **D.** 4.
 
-**Câu 29:**Cho các phát biểu sau, số phát biểu đúng là
+**Câu 29:** Cho các phát biểu sau, số phát biểu đúng là
 
 (a) Axit glutamic và lysin đều làm đổi màu dung dịch phenolphtalein.
 
@@ -479,7 +479,7 @@ Số phát biểu đúng là
 
 (e) Phân biệt được hai dung dịch etanol và etylen glicol bằng Cu(OH)2. 
 
- **A.**2. **B.**3. **C.**4. **D.**5.
+ **A.** 2. **B.** 3. **C.** 4. **D.** 5.
 
 Các thầy cô và các em cần file tài liệu “100 câu lý thuyết đếm hóa hữu cơ lớp 12 thi TN THPT” xin vui lòng comment ở phần bình luận admin sẽ gửi các thầy cô và các em qua email!
 

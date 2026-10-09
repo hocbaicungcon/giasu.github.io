@@ -32,25 +32,25 @@ Python là một ngôn ngữ lập trình bậc rất cao và có một số đ�
 
 - hoàn toàn tạo kiểu dữ liệu động và dùng cơ chế cấp phát – thu gom bộ nhớ tự động;
 
-- cú pháp đơn giản, dễ đọc, có ít từ khóa, phân tách các khối lệnh (lệnh ghép) bằng khoảng trắng chứ không bằng cặp ngoặc {} như trong C, hoặc các từ khóa begin end như trong Pascal…, không sử dụng dấu chấm phảy (;) để kết thúc một lệnh;
+- cú pháp đơn giản, dễ đọc, có ít từ khóa, phân tách các khối lệnh (lệnh ghép) bằng khoảng trắng chứ không bằng cặp ngoặc `{}` như trong C, hoặc các từ khóa `begin` `end` như trong Pascal…, không sử dụng dấu chấm phảy (`;`) để kết thúc một lệnh;
 
 - các thư viện hỗ trợ phong phú, có thể tìm được các thư viện phục vụ cho hầu hết mọi nhu cầu của bạn và tất cả đều miễn phí.
 
 ## 1.3 Cài đặt
 
-Để cài đặt **Python**, bạn vào trang chủ của Python tại [https://python.org/](https://python.org/) và tải về phiên bản phù hợp với hệ điều hành đang dùng. Ở đây tôi không đi vào chi tiết cách cài đặt, cá nhân tôi sử dụng phiên bản 3.6 cho Windows 64 bit và cài vào thư mục C:\Python36 chỉ lưu ý các bạn khi cài đặt nên tích chọn để đưa **Python** vào biến môi trường (**System Path**). Nếu không, bạn phải thêm thư mục Python vào **System Path** một cách thủ công như sau:
+Để cài đặt **Python**, bạn vào trang chủ của Python tại [`https://python.org/`](https://python.org/) và tải về phiên bản phù hợp với hệ điều hành đang dùng. Ở đây tôi không đi vào chi tiết cách cài đặt, cá nhân tôi sử dụng phiên bản 3.6 cho Windows 64 bit và cài vào thư mục `C:\Python36` chỉ lưu ý các bạn khi cài đặt nên tích chọn để đưa **Python** vào biến môi trường (**System Path**). Nếu không, bạn phải thêm thư mục Python vào **System Path** một cách thủ công như sau:
 
-- Bấm chuột phải vào **My Computer**(hoặc **This PC**) ngoài Desktop và chọn **Properties**; hoặc bấm tổ hợp phím ÿ + Break; hoặc vào **Control Panel\System and Security\System**.
+- Bấm chuột phải vào **My Computer**(hoặc **This PC**) ngoài Desktop và chọn **Properties**; hoặc bấm tổ hợp phím ÿ + Break; hoặc vào `<span style="font-family: Liberation Mono, monospace;"><b>Control Panel\System and Security\System</b></span>`.
 
-- Chọn thẻ **Advanced System Setting**để mở hộp thoại **System Properties****.**
+- Chọn thẻ **Advanced System Setting** để mở hộp thoại **System Properties****.**
 
-- Chọn thẻ **Advanced**rồi chọn nút **Environment Variables…**
+- Chọn thẻ **Advanced** rồi chọn nút **Environment Variables…**
 
 - Trong thẻ **System variables**, chọn dòng **Path** và bấm **Edit.**
 
-- Tiếp tục chọn **New**và gõ vào đường dẫn đến thư mục cài đặt Python, ở đây, của tôi là **C:\Python36\**
+- Tiếp tục chọn **New** và gõ vào đường dẫn đến thư mục cài đặt Python, ở đây, của tôi là `<span style="font-family: Liberation Mono, monospace;"><b>C:\Python36\</b></span>`
 
-- Chọn tiếp **New**và thêm tiếp thư mục chứa các Scripts, ở đây, máy của tôi là **C:\Python36\Scripts\**
+- Chọn tiếp **New** và thêm tiếp thư mục chứa các Scripts, ở đây, máy của tôi là `<span style="font-family: Liberation Mono, monospace;"><b>C:\Python36\Scripts\</b></span>`
 
 - Bấm **OK**.
 
@@ -58,7 +58,7 @@ Python là một ngôn ngữ lập trình bậc rất cao và có một số đ�
 
 Hình 1: Hộp thoại System Properties
 
-Để kiểm tra đã thêm Python vào **System Path** chưa, bạn mở[1](#sdfootnote1sym) hộp thoại **Run** của Windows và gõ python, sau đó bấm Enter:
+Để kiểm tra đã thêm Python vào **System Path** chưa, bạn mở[1](#sdfootnote1sym) hộp thoại **Run** của Windows và gõ `python`, sau đó bấm Enter:
 
 ![Hình 2: Hộp thoại Run](assets/images/gioi-thieu-cai-dat-python-Hop-thoai-Run-tren-Windows.png)
 
@@ -72,7 +72,7 @@ Hình 3: Trình biên dịch Python
 
 Sau khi cài đặt xong trình biên dịch Python, mặc định sẽ có một trình soạn thảo đi kèm là **IDLE**, tuy nhiên trình soạn thảo này khá cơ bản và không hỗ trợ nhiều cho người sử dụng như gợi ý các từ khóa, quản lý project, gỡ lỗi… nên tôi khuyên bạn nên sử dụng thêm một trình soạn thảo như **Notepad++, Sublime Text**, **Visual Studio Code**, **Pycharm**, **Eclipse**… Có rất nhiều chương trình như vậy, cả miễn phí và trả phí, nhưng cá nhân tôi thường sử dụng **Visual Studio Code** của Microsoft, đôi khi cũng sử dụng thêm cả **Sublime Text 3**.
 
-Nếu mới làm quen với Python, bạn có thể cài đặt **Anaconda** tại [https://www.continuum.io](https://www.continuum.io/) là một môi trường Python đã bao gồm cả trình dịch Python, trình soạn thảo với rất nhiều tính năng cao cấp chuyên dụng giành cho **Data Science,**và được cài sẵn rất nhiều thư viện, đặc biệt là các thư viện cho **Machine Learning**, **Data Science** như numpy, jupyter, matplotlib…
+Nếu mới làm quen với Python, bạn có thể cài đặt **Anaconda** tại [https://www.continuum.io](https://www.continuum.io/) là một môi trường Python đã bao gồm cả trình dịch Python, trình soạn thảo với rất nhiều tính năng cao cấp chuyên dụng giành cho **Data Science,** và được cài sẵn rất nhiều thư viện, đặc biệt là các thư viện cho **Machine Learning**, **Data Science** như `<span style="font-family: Liberation Mono, monospace;">numpy, jupyter, matplotlib</span>`…
 
 ## 1.4 Chạy một chương trình Python
 
@@ -80,15 +80,18 @@ Như đã nói ở trên, Python là ngôn ngữ **thông dịch** – tức là
 
 - Chạy trực tiếp từng dòng lệnh ở trong chương trình dịch Python,
 
-- Tạo một tệp tin với phần mở rộng là .py và chạy tệp này bằng chương trình dịch Python, những tệp này còn được gọi là các kịch bản script.
+- Tạo một tệp tin với phần mở rộng là `.py`và chạy tệp này bằng chương trình dịch Python, những tệp này còn được gọi là các kịch bản `script`.
 
 Chúng ta sẽ lần lượt tìm hiểu cả hai cách này.
 
 ### Chạy trình thông dịch
 
-Cách thứ nhất, bạn chạy trình biên dịch Python tại[2](#sdfootnote2sym) đường dẫn C:\Python36\python.exe hoặc nếu đã cài đặt Python vào biến môi trường thì chỉ việc mở hộp thoại **Run** hoặc cửa sổ Command Line (từ đây sẽ viết tắt là CMD) và gõ python. Nếu thành công, bạn sẽ nhận được một cửa sổ như ở Hình 3. Bây giờ, hãy gõ vào sau dấu nhắc >>> dòng lệnh:
+Cách thứ nhất, bạn chạy trình biên dịch Python tại[2](#sdfootnote2sym) đường dẫn `C:\Python36\python.exe` hoặc nếu đã cài đặt Python vào biến môi trường thì chỉ việc mở hộp thoại **Run** hoặc cửa sổ Command Line (từ đây sẽ viết tắt là CMD) và gõ `python`. Nếu thành công, bạn sẽ nhận được một cửa sổ như ở Hình 3. Bây giờ, hãy gõ vào sau dấu nhắc `<span style="color: #800000;"><span style="font-family: Consolas, monospace;">>>></span></span>` dòng lệnh:
 
+```python
 >>>print("Xin chào thế giới Python!")
+```
+
 Sẽ thu được kết quả như hình sau:
 
 ![Chạy Chương trình Python đầu tiên](assets/images/gioi-thieu-cai-dat-python-Chương-trình-Python-đầu-tiên.png)
@@ -101,8 +104,11 @@ Chúc mừng! Bạn đã thực hiện thành công chương trình đầu tiên
 
 Cách thứ hai, bạn dùng một trình soạn thảo văn bản bất kì (Notepad chẳng hạn), gõ dòng lệnh
 
+```python
 print("Xin chào thế giới Python!")
-và lưu lại với đuôi mở rộng là .py – mà ta sẽ gọi là các *script*, ví dụ, tôi lưu lại thành tệp xin_chao.py tại thư mục C:\Python36, rồi mở cửa sổ **CMD** và gõ lệnh python C:\Python36\xin_chao.py hoặc chỉ cần gõ C:\Python36\xin_chao.py sẽ thu được kết quả như hình sau:
+```
+
+và lưu lại với đuôi mở rộng là `.py` – mà ta sẽ gọi là các *script*, ví dụ, tôi lưu lại thành tệp `<span style="color: #ce181e;">xin_chao.py</span>` tại thư mục `<span style="font-family: Liberation Mono, monospace;">C:\Python36</span>`, rồi mở cửa sổ **CMD** và gõ lệnh `python C:\Python36\xin_chao.py` hoặc chỉ cần gõ `C:\Python36\xin_chao.py`sẽ thu được kết quả như hình sau:
 
 ![Chạy script .py bằng chương trình dịch Python](assets/images/gioi-thieu-cai-dat-python-Chạy-script-.py-bằng-chương-trình-dịch-Python.png)
 
@@ -118,7 +124,7 @@ Hình 6: Chạy script Python trong Visual Studio Code
 
 Trong hai cách trên, cần chú ý rằng, bạn phải lưu *script* vào đĩa cứng trước khi chạy.
 
-Trong tài liệu này, những đoạn mã có dấu >>> thì bạn có thể thực hiện trực triếp ở trong chương trình thông dịch Python, mà không cần tạo *script*.
+Trong tài liệu này, những đoạn mã có dấu `>>>` thì bạn có thể thực hiện trực triếp ở trong chương trình thông dịch Python, mà không cần tạo *script*.
 
 ### Bài tập
 
@@ -126,20 +132,20 @@ Trong tài liệu này, những đoạn mã có dấu >>> thì bạn có thể t
 
 2. Khởi chạy trình thông dịch Python và kiểm tra phiên bản đang sử dụng.
 
-3. Khởi động chương trình thông dịch Python và tìm hiểu xem các lệnh help() có tác dụng gì. Sau đó, sử dụng lệnh help() này để tìm hiểu xem kiểu số nguyên int có những phương thức method nào.
+3. Khởi động chương trình thông dịch Python và tìm hiểu xem các lệnh `<span style="font-family: Consolas, monospace;">help()</span>` có tác dụng gì. Sau đó, sử dụng lệnh `<span style="font-family: Consolas, monospace;">help()</span>` này để tìm hiểu xem kiểu số nguyên `int` có những phương thức method nào.
 
 4. Hãy sử dụng nó như một máy tính cầm tay để thực hiện các tính toán đơn giản, với các phép toán cộng +, trừ -, nhân *, chia / và lũy thừa **.
 
 5. Viết chương trình in ra màn hình dòng chữ sau bằng hai cách, thực hiện trực tiếp trong trình thông dịch Python và viết script.
 
-   
-
-Twinkle, twinkle, little star,
+   ```python
+   Twinkle, twinkle, little star,
    How I wonder what you are!
    Up above the world so high,
    Like a diamond in the sky.
    Twinkle, twinkle, little star,
    How I wonder what you are…
+   ```
 
 6. Hãy sử dụng trình soạn thảo **Visual Studio Code** và cài thêm các gói hỗ trợ lập trình Python. Google để tìm hiểu thêm.
 

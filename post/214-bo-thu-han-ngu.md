@@ -63,27 +63,27 @@ rừng rậm. |
 
 ### Bộ 01 nét: 06 bộ
 
-1.**一**Nhất: Một, thứ nhất,khởi đầu các số đo, thuộc về dương, bao quát hết thảy.
+1.**一** Nhất: Một, thứ nhất,khởi đầu các số đo, thuộc về dương, bao quát hết thảy.
 
-2.**丨**Cổn: Nét sổ, đường thẳng đứng trên thông xuống dưới.
+2.**丨** Cổn: Nét sổ, đường thẳng đứng trên thông xuống dưới.
 
-3.**丶**Chủ: Nét chấm, một điểm.
+3.**丶** Chủ: Nét chấm, một điểm.
 
-4.**丿**Phiệt: Nét phảy, nét nghiêng từ phải qua trái, chỉ động tác.
+4.**丿** Phiệt: Nét phảy, nét nghiêng từ phải qua trái, chỉ động tác.
 
-5.**乙**Ất: Can thứ hai trong mười can (Giáp, ất , bính, đinh…).
+5.**乙** Ất: Can thứ hai trong mười can (Giáp, ất , bính, đinh…).
 
-6.**亅**Quyết: Nét sổ có móc, cái móc.
+6.**亅** Quyết: Nét sổ có móc, cái móc.
 
 ### Bộ 02 nét: 23 bộ
 
-7.**二**Nhị: Số hai, số của đất, thuộc về âm.
+7.**二** Nhị: Số hai, số của đất, thuộc về âm.
 
-8.**亠**Đầu: Không có nghĩa, thường là phần trên của một số chữ khác.
+8.**亠** Đầu: Không có nghĩa, thường là phần trên của một số chữ khác.
 
-9.**人**Nhân: Người, có hai chân, là sinh vật đứng thẳng, còn có dạng nhân đứng **仁**.
+9.**人** Nhân: Người, có hai chân, là sinh vật đứng thẳng, còn có dạng nhân đứng **仁**.
 
-10.**儿**Nhân (đi): Người, như hình người đang đi.
+10.**儿** Nhân (đi): Người, như hình người đang đi.
 
 11.**入** Nhập: Vào, tượng hình rễ cây đâm sâu vào đất.
 
@@ -93,13 +93,13 @@ rừng rậm. |
 
 14.**冖** Mịch: Khăn chùm lên đồ vật, che đậy, kín không nhìn thấy rõ.
 
-15.**冫**Băng: Nược đóng băng, nước đá.
+15.**冫** Băng: Nược đóng băng, nước đá.
 
 16.**几** Kỷ: Cái ghế, bảo thủ không biến đổi, ích kỷ.
 
 17.**凵** Khảm: Há miệng, vật để đựng đồ như máng chậu đấu…
 
-18.**刀** Đao: con dao hoặc hình thức khác **刂**thường đứng bên phải các bộ khác.
+18.**刀** Đao: con dao hoặc hình thức khác **刂** thường đứng bên phải các bộ khác.
 
 19.**力** Lực: Sức, như hình bàn tay đánh xuống.
 
@@ -109,7 +109,7 @@ rừng rậm. |
 
 22.**匚** Phương: Đồ đựng, cái hộp, hình khoanh gỗ khoét ở giữa (nét ngang dưới).
 
-23. **匸**Hễ (hệ): Che đậy. (nét ngang trên phủ quá sang trái nét sổ vuông).
+23. **匸** Hễ (hệ): Che đậy. (nét ngang trên phủ quá sang trái nét sổ vuông).
 
 24.**十** Thập: Số mười, đầy đủ,(Đông tây nam bắc trung cung đủ cả).
 
@@ -129,11 +129,11 @@ rừng rậm. |
 
 31.**囗** Vi: Vây quanh (phạm vi, gianh giới bao quanh).
 
-32.**土** Đất: Gồm bộ nhị **二**với bộ cổn**丨** như hình cây mọc trên mặt đất.
+32.**土** Đất: Gồm bộ nhị **二** với bộ cổn**丨** như hình cây mọc trên mặt đất.
 
-33.**士** Sĩ: Học trò, sĩ tử,những người nghiên cứu học vấn. Gồm chữ thập **十**và chữ nhất **一** thể hiện người lo toan gánh vác nhiều việc nên đượi coi như một mà lo bằng mười. Người có học thức thì một việc suy ra mười và mười việc vẫn có thể hợp lại thành một.
+33.**士** Sĩ: Học trò, sĩ tử,những người nghiên cứu học vấn. Gồm chữ thập **十** và chữ nhất **一** thể hiện người lo toan gánh vác nhiều việc nên đượi coi như một mà lo bằng mười. Người có học thức thì một việc suy ra mười và mười việc vẫn có thể hợp lại thành một.
 
-34.**夊**Truy (Trĩ): Theo sau mà đến kịp người đi trước.
+34.**夊** Truy (Trĩ): Theo sau mà đến kịp người đi trước.
 
 35.**夂** Tuy: Dáng đi chậm.
 
@@ -169,7 +169,7 @@ rừng rậm. |
 
 51.**干** Can: Phạm đến.
 
-52.**幺**Yêu: Nhỏ (hình đứa bé mới sinh).
+52.**幺** Yêu: Nhỏ (hình đứa bé mới sinh).
 
 53.**广** Nghiễm: Nhân chỗ sườn núi làm nhà( cái chấm ở trên là nóc nhà).
 
@@ -185,11 +185,11 @@ rừng rậm. |
 
 59.**彡** Sam: Lông dài (đuôi sam).
 
-60.**彳**Xích: Bước ngắn, bước chân trái.
+60.**彳** Xích: Bước ngắn, bước chân trái.
 
 ### Bộ 04 nét: 34 bộ
 
-61.**心** Tâm: Tim(hình quả tim) cách viết khác: **忄**Hoặc chữ tiểu thêm nét phảy bên phải (**小丶**).
+61.**心** Tâm: Tim(hình quả tim) cách viết khác: **忄** Hoặc chữ tiểu thêm nét phảy bên phải (**小丶**).
 
 62.**戈** Qua: Cái kích bằng đầu.
 
@@ -241,7 +241,7 @@ rừng rậm. |
 
 86.**火** Hỏa: Lửa giốn như ngọn lửa bố cao, cách viết khác:**灬**.
 
-87.**爪** Trảo: Móng vuốt, Cách viết khác:**爪****,****爫**.
+87.**爪** Trảo: Móng vuốt, Cách viết khác:**爪****,*** *爫**.
 
 88.**父** Phụ: Cha, Tay cầm roi đánh dậy con cái.
 
@@ -315,7 +315,7 @@ rừng rậm. |
 
 121.**缶** Phữu (Phẫu): Đồ sành như: vò, chum, vại, be có nắp đậy.
 
-122.**网** Võng: Lưới để bắt thú hay đánh cá. Cách viết khác: **罒****,****罓****.**
+122.**网** Võng: Lưới để bắt thú hay đánh cá. Cách viết khác: **罒****,*** *罓****.**
 
 123.**羊** Dương: Con dê.
 
@@ -327,7 +327,7 @@ rừng rậm. |
 
 127.**耒** Lỗi: Cái cày. (Cái cày làm bằng gỗ, khi cầy làm cỏ rậm bị vạch ra).
 
-128.**耳**Nhĩ: Tai để nghe.
+128.**耳** Nhĩ: Tai để nghe.
 
 129.**聿** Duật: Cây bút. Hình tay cầm cây bút viết.
 
@@ -459,7 +459,7 @@ rừng rậm. |
 
 189.**高** Cao: Trái lại với thấp là cao.
 
-190.**髟** Tiêu: Tóc dài. Hình chữ trường**長**và chữ sam**彡**. Lông dài (tóc dài).
+190.**髟** Tiêu: Tóc dài. Hình chữ trường**長** và chữ sam**彡**. Lông dài (tóc dài).
 
 191.**鬥** Đấu: Đánh nhau, chiến đấu, đấu tranh…
 
@@ -505,7 +505,7 @@ rừng rậm. |
 
 ### Bộ 14 nét: 02 bộ
 
-209.**鼻**Tỵ: Cái mũi.
+209.**鼻** Tỵ: Cái mũi.
 
 210.**齊** Tề: Lúa trổ đều bông, Chỉnh tề.
 

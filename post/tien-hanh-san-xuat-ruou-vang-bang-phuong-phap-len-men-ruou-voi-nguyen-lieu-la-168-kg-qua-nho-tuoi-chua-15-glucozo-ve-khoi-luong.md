@@ -18,7 +18,7 @@ grade: 12
 
 Tiến hành sản xuất rượu vang bằng phương pháp lên men rượu với nguyên liệu là 16,8 kg quả nho tươi (chứa 15% glucozơ về khối lượng), thu được V lít rượu vang 13,8°. Biết khối lượng riêng của ancol etylic là 0,8 g/ml. Giả thiết trong thành phần quả nho tươi chỉ có glucozơ bị lên men rượu; hiệu suất toàn bộ quá trình sản xuất là 60%. Giá trị của V là
 
-**A.**10,5. **B.**11,6. **C.**7,0. **D.**3,5.
+**A.** 10,5. **B.** 11,6. **C.** 7,0. **D.** 3,5.
 
  
 

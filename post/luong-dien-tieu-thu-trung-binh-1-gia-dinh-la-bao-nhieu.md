@@ -19,23 +19,23 @@ Theo tìm hiểu hầu hết mức sử dụng gia đình nằm ở khoảng t�
 
 ![Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu?](assets/images/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu-nhan-nang-luong-la-gi.webp)
 
-- **TV màn hình phẳng: **TV có kích cỡ màn hình 32 inh thường có công suất khoảng 40W. Như vậy, nếu bật TV liên tục trong vòng 25 tiếng đồng hồ sẽ tiêu thụ hết 1 KWh (1 số điện). TV 40 inh công suất 65W dùng 15,4 tiếng tiêu thụ khoảng 1 số điện. Nếu sử dụng các dòng TV màn hình lồi (CRT) cũ thì công suất thường lớn hơn rất nhiều.
+- **TV màn hình phẳng:** TV có kích cỡ màn hình 32 inh thường có công suất khoảng 40W. Như vậy, nếu bật TV liên tục trong vòng 25 tiếng đồng hồ sẽ tiêu thụ hết 1 KWh (1 số điện). TV 40 inh công suất 65W dùng 15,4 tiếng tiêu thụ khoảng 1 số điện. Nếu sử dụng các dòng TV màn hình lồi (CRT) cũ thì công suất thường lớn hơn rất nhiều.
 
-- **Nồi cơm điện: **Có công suất khoảng 500W dùng 2 giờ tiêu thụ 1KW giờ. Công suất 750W dùng 1,3 giờ tiêu thụ 1 KW giờ.
+- **Nồi cơm điện:** Có công suất khoảng 500W dùng 2 giờ tiêu thụ 1KW giờ. Công suất 750W dùng 1,3 giờ tiêu thụ 1 KW giờ.
 
 - **Tủ lạnh:** Các loại tủ lạnh nhỏ có dung tích 150 lít thường có công suất 100-150W. Như vậy, bình quân mỗi ngày, tủ lạnh dung tích này tiêu thụ 1,5 – 1,7 KWh. Mỗi tháng tiêu thụ hết ít nhất 45 số điện. Tuy nhiên, đây chỉ là cách tính tương đối vì công suất tiêu thụ điện của tủ lạnh phụ thuộc rất nhiều vào nhiệt độ môi trường và cách dùng.
 
-- **Điều hòa nhiệt độ: **Đây có thể xem là thiết bị ngốn nhiều điện năng nhất trong gia đình. Một máy điều hòa nhiệt độ 9000 BTU có công suất dao động từ 800 – 850 W. Các máy 12000 BTU có công suất 1500W. Như vậy, Nếu một chiếc điều hòa nhiệt độ 9000BTU chạy trong vòng một tiếng đồng hồ sẽ tiêu tốn 0,85KWh (gần 1 số điện). Còn một chiếc điều hòa nhiệt độ 12000BTU sẽ tiêu tốn của gia đình bạn 1,5 số điện sau 1 giờ sử dụng.
+- **Điều hòa nhiệt độ:** Đây có thể xem là thiết bị ngốn nhiều điện năng nhất trong gia đình. Một máy điều hòa nhiệt độ 9000 BTU có công suất dao động từ 800 – 850 W. Các máy 12000 BTU có công suất 1500W. Như vậy, Nếu một chiếc điều hòa nhiệt độ 9000BTU chạy trong vòng một tiếng đồng hồ sẽ tiêu tốn 0,85KWh (gần 1 số điện). Còn một chiếc điều hòa nhiệt độ 12000BTU sẽ tiêu tốn của gia đình bạn 1,5 số điện sau 1 giờ sử dụng.
 
-- **Quạt điện: **Nếu bật một chiếc quạt 40W 5 tiếng/ngày với tốc độ cao nhất thì bạn phải trả thêm khoảng 2kWh/tháng so  với việc để quạt chạy ở mức độ thấp nhất.
+- **Quạt điện:** Nếu bật một chiếc quạt 40W 5 tiếng/ngày với tốc độ cao nhất thì bạn phải trả thêm khoảng 2kWh/tháng so  với việc để quạt chạy ở mức độ thấp nhất.
 
-- **Bàn là:**Bàn là thường có công suất 750W đến trên 1000W. Như vậy, nếu sử dụng thiết bị này khoảng 10 tiếng/tuần, gia đình bạn sẽ tiêu tốn 30 số điện/ tháng.
+- **Bàn là:** Bàn là thường có công suất 750W đến trên 1000W. Như vậy, nếu sử dụng thiết bị này khoảng 10 tiếng/tuần, gia đình bạn sẽ tiêu tốn 30 số điện/ tháng.
 
-- **Máy giặt cửa trước:**Công suất 1.240W, máy sẽ tiêu thụ 1,24kw điện trong 1 giờ giặt.
+- **Máy giặt cửa trước:** Công suất 1.240W, máy sẽ tiêu thụ 1,24kw điện trong 1 giờ giặt.
 
-- **Máy hút bụi**thường được giới thiệu có công suất tối đa, tức là khi dùng cách hút lớn nhất khoảng 1.800W; nếu máy hoạt động liên tục trong 30 phút, số điện tiêu thụ gần 1kw.
+- **Máy hút bụi** thường được giới thiệu có công suất tối đa, tức là khi dùng cách hút lớn nhất khoảng 1.800W; nếu máy hoạt động liên tục trong 30 phút, số điện tiêu thụ gần 1kw.
 
-- **Bếp từ**thường có công suất 1800W đến trên 2200W, khi sử dụng 2 tiếng trong một ngày, lượng điện tiêu thụ trong 1 ngày khoảng 4,4 kWh (2,20kW x 2h), lượng tiêu thụ trong 30 ngày là 123kW.
+- **Bếp từ** thường có công suất 1800W đến trên 2200W, khi sử dụng 2 tiếng trong một ngày, lượng điện tiêu thụ trong 1 ngày khoảng 4,4 kWh (2,20kW x 2h), lượng tiêu thụ trong 30 ngày là 123kW.
 
 ## Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu?
 

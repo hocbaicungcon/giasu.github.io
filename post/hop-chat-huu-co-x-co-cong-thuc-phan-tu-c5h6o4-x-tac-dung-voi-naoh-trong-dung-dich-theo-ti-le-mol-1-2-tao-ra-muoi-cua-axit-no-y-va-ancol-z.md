@@ -16,19 +16,19 @@ grade: 12
 
 Hợp chất hữu cơ X có công thức phân tử C5H6O4. X tác dụng với NaOH trong dung dịch theo tỉ lệ mol 1 : 2, tạo ra muối của axit no Y và ancol Z. Dẫn Z qua CuO nung nóng thu được anđehit T có phản ứng tráng bạc, tạo ra Ag theo tỉ lệ mol 1 : 4. Biết Y không có đồng phân nào khác. Phát biểu nào sau đây là đúng?
 
-**A.**Ancol Z không no có 1 liên kết C=C.
+**A.** Ancol Z không no có 1 liên kết C=C.
 
-**B.**Axit Y có tham gia phản ứng tráng bạc.
+**B.** Axit Y có tham gia phản ứng tráng bạc.
 
-**C.**Ancol Z không hoà tan Cu(OH)2 để tạo dung dịch màu xanh.
+**C.** Ancol Z không hoà tan Cu(OH)2 để tạo dung dịch màu xanh.
 
-**D.**Anđehit T là chất đầu tiên trong dãy đồng đẳng.
+**D.** Anđehit T là chất đầu tiên trong dãy đồng đẳng.
 
  
 
 **Lời giải**
 
-**T**tráng bạc tỷ lệ 1:4 => T là HCHO hoặc R(CHO)2 => Z là CH3OH hoặc R(CH2OH)2
+**T** tráng bạc tỷ lệ 1:4 => T là HCHO hoặc R(CHO)2 => Z là CH3OH hoặc R(CH2OH)2
 
 X có độ bất bão hòa k=3 => X là este có vòng (COOCH2)CH2 =>
 
@@ -36,7 +36,7 @@ X có độ bất bão hòa k=3 => X là este có vòng (COOCH2)CH2 =>
 
 **Y**: (COOH)2 => **B sai**
 
-**Z**: CH2(CH2OH)2 =>**A sai, B đúng**
+**Z**: CH2(CH2OH)2 =>** A sai, B đúng**
 
 **T**: CH2(CHO)2 **=> D sai**
 

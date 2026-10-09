@@ -53,10 +53,10 @@ Sau khi đã thuần thực 7 bước xoay Rubik cơ bản sau đây, bạn có 
 
 - **D** (Down): mặt dưới
 
-Xoay theo chiều kim đồng hồ:** F**, **R**, **L**, **U**, **D**.
+Xoay theo chiều kim đồng hồ: **F**, **R**, **L**, **U**, **D**.
 Xoay ngược chiều kim đồng hồ: **F’** ,**R**‘, **L’**, **U’**, **D’**. (Xoay ngược chiều kim đồng hồ sẽ có dấu phẩy cạnh chữ cái).
 
-Ngoài ra, chúng ta còn quy ước Rubik 3×3 các **viên góc**, **viên cạnh**, **viên trung tâm **như hình sau:
+Ngoài ra, chúng ta còn quy ước Rubik 3×3 các **viên góc**, **viên cạnh**, **viên trung tâm** như hình sau:
 
 ![Cách giải rubik 3x3 đơn giản nhất 5](assets/images/cach-giai-rubik-3x3-don-gian-nhat-ki-hieu-rubik.jpg)
 
@@ -84,11 +84,11 @@ Hiện tại trên thế giới có rất nhiều cách giải Rubik khác nhau.
 
 ### Bước 1: Tạo thành hình Chữ thập màu trắng ở tầng 1
 
-**Mục tiêu:**Xếp tạo thành chữ thập màu trắng ở tầng 1 của khối Rubik, trong đó các mặt cạnh của các viên màu trắng phải đúng màu với các viên tâm các mặt bên. Để tạo ra chữ thập màu trắng, bạn hoàn toàn có thể giải bằng trực quan. Nhưng nếu không bạn có thể áp dụng các cách thực hiện dưới đây.
+**Mục tiêu:** Xếp tạo thành chữ thập màu trắng ở tầng 1 của khối Rubik, trong đó các mặt cạnh của các viên màu trắng phải đúng màu với các viên tâm các mặt bên. Để tạo ra chữ thập màu trắng, bạn hoàn toàn có thể giải bằng trực quan. Nhưng nếu không bạn có thể áp dụng các cách thực hiện dưới đây.
 
 ![Cách giải rubik 3x3 đơn giản nhất 7](assets/images/cach-giai-rubik-3x3-don-gian-nhat-cach-giai-rubik-buoc1.jpg)
 
-**Cách thực hiện: **Bước đầu tiên cũng là bước đơn giản nhất, đó là tạo *dấu thập trắng* trên đỉnh của khối Rubik. Bạn chọn màu nào để bắt đầu cũng được, nhưng trong bài hướng dẫn cho người mới này, chúng ta sẽ bắt đầu với *mặt trắng* trước.
+**Cách thực hiện:** Bước đầu tiên cũng là bước đơn giản nhất, đó là tạo *dấu thập trắng* trên đỉnh của khối Rubik. Bạn chọn màu nào để bắt đầu cũng được, nhưng trong bài hướng dẫn cho người mới này, chúng ta sẽ bắt đầu với *mặt trắng* trước.
 
 Tôi khuyến khích các bạn thử cố gắng giải tầng đầu tiên mà không cần đọc hướng dẫn bên dưới. Lý do là để bạn có thể hiểu được cơ chế hoạt động của khối Rubik, qua đó chuẩn bị tốt hơn cho các bước sau. Bước này không quá khó vì bạn chưa cần để ý quá nhiều các chi tiết khác.
 
@@ -102,7 +102,7 @@ Cách chơi Rubik 3×3 dễ hiểu nhất cho người mới
 
 Hoàn thiện **tầng một** không phải là vấn đề gì quá to tát. Cũng giống như trong bước trước, ghép các *viên góc trắng* có thể dễ dàng được hoàn thành bởi một người bình thường, bằng cách tự nghiệm chỉ sau một thời gian ngắn làm quen. Bước thứ hai này chưa yêu cầu học thuộc các công thức, bạn chỉ cần áp dụng một vài hoán vị ngắn mà thậm chí không cần phải nhớ.
 
-**Th****ủ thuật “dấu góc”:**Mục tiêu là sắp xếp lại tất cả ***viên góc chứa màu trắng*** để hoàn thành **tầng một**. Tôi sẽ dùng ảnh dưới đây làm ví dụ:
+**Th****ủ thuật “dấu góc”:** Mục tiêu là sắp xếp lại tất cả ***viên góc chứa màu trắng*** để hoàn thành **tầng một**. Tôi sẽ dùng ảnh dưới đây làm ví dụ:
 
 ![Cách giải rubik 3x3 đơn giản nhất 9](assets/images/cach-giai-rubik-3x3-don-gian-nhat-cach-giai-rubik-buoc2.jpg)
 
@@ -128,11 +128,11 @@ Có một công thức ngắn chúng ta phải sử dụng là **F R U R’ U’
 
 ![Cách giải rubik 3x3 đơn giản nhất 12](assets/images/cach-giai-rubik-3x3-don-gian-nhat-cach-giai-rubik-buoc4.jpg)
 
-Trong trường hợp “**dấu chấm”**, bạn sẽ phải thực hiện công thức trên ba lần. Khi có hình “**chữ L**” thì là hai lần và “**đường thẳng**” là một lần.
+Trong trường hợp “**dấu chấm”**, bạn sẽ phải thực hiện công thức trên ba lần. Khi có hình “** chữ L**” thì là hai lần và “** đường thẳng**” là một lần.
 
-Ngoài ra, còn có một công thức giúp bạn chuyển thẳng từ “**chữ L**” lên “**dấu thập**” luôn nếu bạn muốn nhanh hơn một chút. Còn không thì học một công thức ở trên là đủ.
+Ngoài ra, còn có một công thức giúp bạn chuyển thẳng từ “**chữ L**” lên “** dấu thập**” luôn nếu bạn muốn nhanh hơn một chút. Còn không thì học một công thức ở trên là đủ.
 
-Công thức chuyển từ “**chữ L**” lên “**dấu thập**” là **F U R U’ R’ F’**.
+Công thức chuyển từ “**chữ L**” lên “** dấu thập**” là **F U R U’ R’ F’**.
 
 ![Cách giải rubik 3x3 đơn giản nhất 13](assets/images/cach-giai-rubik-3x3-don-gian-nhat-cach-giai-rubik-buoc4_2.jpg)
 
@@ -178,4 +178,4 @@ Khi đã xong được một góc, bạn hãy xoay tầng trên cùng (**U** ho
 
 Cách chơi Rubik 3×3 dễ hiểu nhất cho người mới
 
-Lưu ý: Một số bạn làm rối Rubik của mình ngay trong bước cuối vì lý do là các bạn đã bỏ qua việc xoay **D** ngay khi nhìn thấy viên góc đã được hoàn thiện. Một lý do khác là không xoay tầng trên sau khi xong một viên góc. Hãy chắc chắn rằng bạn làm đúng, đủ công thức **R’ D’ R D** và xoay tầng trên cùng để đưa viên góc chưa hoàn thiện về vị trí **trước-phải-trên **như tôi đã nói.
+Lưu ý: Một số bạn làm rối Rubik của mình ngay trong bước cuối vì lý do là các bạn đã bỏ qua việc xoay **D** ngay khi nhìn thấy viên góc đã được hoàn thiện. Một lý do khác là không xoay tầng trên sau khi xong một viên góc. Hãy chắc chắn rằng bạn làm đúng, đủ công thức **R’ D’ R D** và xoay tầng trên cùng để đưa viên góc chưa hoàn thiện về vị trí **trước-phải-trên** như tôi đã nói.

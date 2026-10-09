@@ -74,7 +74,7 @@ $$
 
 Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
 
-**Ví dụ 1.**Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$. Cạnh $SA=a\sqrt{3}$ và vuông góc với đáy. Tính góc giữa hai mặt phẳng $(SBC)$ và $(ABCD),$ góc giữa mặt phẳng $(SBD)$ và mặt phẳng $(ABCD).$
+**Ví dụ 1.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$. Cạnh $SA=a\sqrt{3}$ và vuông góc với đáy. Tính góc giữa hai mặt phẳng $(SBC)$ và $(ABCD),$ góc giữa mặt phẳng $(SBD)$ và mặt phẳng $(ABCD).$
 
 ![Hình chóp S.ABCD đáy là hình vuông SA vuông góc với đáy tính góc (SBD) và (ABCD)](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-Hình-chóp-S.ABCD-đáy-là-hình-vuông-SA-vuông-góc-với-đáy-tính-góc-SBD-và-ABCD.jpg)
 
@@ -95,7 +95,7 @@ Cuối cùng, chúng ta đi tính góc giữa hai đường thẳng $AB$ và $SB
 
 Nếu thấy bài viết hữu ích, bạn có thể ủng hộ chúng tôi bằng cách bấm vào các banner quảng cáo. Xin cảm ơn.
 
-**Ví dụ 2.**Cho hình chóp $S.ABC,$ có đáy $ABC$ là tam giác vuông cân với $BA = BC = a$; cạnh $SA$ vuông góc với đáy và $SA = a$. Gọi $E, F$ lần lượt là trung điểm của các cạnh $AB$ và $AC.$
+**Ví dụ 2.** Cho hình chóp $S.ABC,$ có đáy $ABC$ là tam giác vuông cân với $BA = BC = a$; cạnh $SA$ vuông góc với đáy và $SA = a$. Gọi $E, F$ lần lượt là trung điểm của các cạnh $AB$ và $AC.$
 
 1. Tính góc giữa hai mặt phẳng $(ABC)$ và $(SBC).$
 2. Tính góc giữa hai mặt phẳng $(SEF)$ và $(SBC).$
@@ -133,7 +133,7 @@ Nếu vẫn sử dụng cách dựng mặt phẳng vuông góc với giao tuyế
 
 ![Hình chóp S.ABCD đáy là hình vuông SA vuông góc với đáy](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-Hình-chóp-S.ABCD-đáy-là-hình-vuông-SA-vuông-góc-với-đáy.jpg)
 
-**Hướng dẫn. **Dễ thấy giao tuyến của hai mặt phẳng $(SCB)$ và $(SCD)$ là đường thẳng $SC$.
+**Hướng dẫn.** Dễ thấy giao tuyến của hai mặt phẳng $(SCB)$ và $(SCD)$ là đường thẳng $SC$.
 Bây giờ, chúng ta cần tìm một mặt phẳng vuông góc với $SC$. Trong tam giác $SBC$ kẻ đường cao $BH$ xuống cạnh $SC$ thì chứng minh được $DH$ cũng là đường cao của tam giác $SCD$.
 
 Suy ra $SC$ vuông góc với mặt phẳng $BHD$ và góc giữa hai mặt phẳng $(SCB)$ và $(SCD)$ chính là góc giữa $BH$ và $DH$. Tuy nhiên, không thể khẳng định được là góc $\widehat{BHD}$ vì có thể góc này là góc tù. Tóm lại, chúng ta phải xét hai trường hợp:
@@ -152,18 +152,18 @@ Lần lượt xét hai trường hợp này, thấy trường hợp $\widehat{BH
 
 **Hướng dẫn.** $60^\circ, \arctan\sqrt{6},30^\circ.$
 
-**Ví dụ 5.**Cho hình chóp $S.ABCD$, có đáy $ABCD$ là nửa lục giác đều nội tiếp đường tròn đường kính $AB = 2a;$ cạnh $SA$ vuông góc với đáy và $SA = a\sqrt{3}$.
+**Ví dụ 5.** Cho hình chóp $S.ABCD$, có đáy $ABCD$ là nửa lục giác đều nội tiếp đường tròn đường kính $AB = 2a;$ cạnh $SA$ vuông góc với đáy và $SA = a\sqrt{3}$.
 
 1. Tính góc giữa hai mặt phẳng $(SAD)$ và $(SBC).$
 2. Tính góc giữa hai mặt phẳng $(SBC)$ và $(SCD).$
 
-**Hướng dẫn.**Sử dụng công thức diện tích hình chiếu (đơn giản) hoặc tính trực tiếp (phức tạp). Đáp số $\tan({(SAD),(SBC)})=\sqrt{7}$, $\cos({(SBC),(SCD)})=\frac{\sqrt{10}}{5}$.
+**Hướng dẫn.** Sử dụng công thức diện tích hình chiếu (đơn giản) hoặc tính trực tiếp (phức tạp). Đáp số $\tan({(SAD),(SBC)})=\sqrt{7}$, $\cos({(SBC),(SCD)})=\frac{\sqrt{10}}{5}$.
 
-**Ví dụ 6.**Cho hình thoi $ABCD$ cạnh $a$, tâm $O, OB = \frac{a\sqrt{3}}{3}; SA\perp (ABCD)$ và $SO = \frac{a\sqrt{6}}{3}$. Chứng minh góc $\widehat{ASC}$ vuông. Chứng minh hai mặt phẳng $(SAB)$ và $(SAD)$ vuông góc. Tính góc giữa hai mặt phẳng $(SBC)$ và $(ABC).$
+**Ví dụ 6.** Cho hình thoi $ABCD$ cạnh $a$, tâm $O, OB = \frac{a\sqrt{3}}{3}; SA\perp (ABCD)$ và $SO = \frac{a\sqrt{6}}{3}$. Chứng minh góc $\widehat{ASC}$ vuông. Chứng minh hai mặt phẳng $(SAB)$ và $(SAD)$ vuông góc. Tính góc giữa hai mặt phẳng $(SBC)$ và $(ABC).$
 
 **Hướng dẫn.** $({(SBC),(ABC)})=60^\circ.$
 
-**Ví dụ 7.**Cho hình chóp $S.ABCD$ có $SA\perp (ABCD)$ và $SA = a\sqrt{2}$, đáy $ABCD$ là hình thang vuông tại $A$ và $D$ với $AB = 2a, AD = DC = a$. Tính góc giữa các cặp mặt phẳng: $(SBC)$ và $(ABC);(SAB)$ và $(SBC);(SBC)$ và $(SCD).$
+**Ví dụ 7.** Cho hình chóp $S.ABCD$ có $SA\perp (ABCD)$ và $SA = a\sqrt{2}$, đáy $ABCD$ là hình thang vuông tại $A$ và $D$ với $AB = 2a, AD = DC = a$. Tính góc giữa các cặp mặt phẳng: $(SBC)$ và $(ABC);(SAB)$ và $(SBC);(SBC)$ và $(SCD).$
 
 **Hướng dẫn.**$45^\circ,60^\circ,\arccos\frac{\sqrt{6}}{3}$.
 
