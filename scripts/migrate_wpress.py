@@ -127,8 +127,18 @@ def clean_math_body(math_str):
     return math_str
 
 def normalize_markdown_formatting(text):
-    if not text:
-        return text
+    # Clean malformed question numbers and options from bad bold tags
+    text = re.sub(r'\*+Câu[\s*]*(\d+)[\s*]*:[\s*]*', r'**Câu \1:** ', text)
+    text = re.sub(r'\*\*([A-Da-d])\s*\*+\.\s*\*+', r'**\1.** ', text)
+
+    # Remove trailing runaway asterisks at end of lines
+    text = re.sub(r'(?<=\S)\s*\*+\s*$', '', text, flags=re.MULTILINE)
+
+    # Remove empty bold/italic tokens: ****, ******, ** **, * *
+    text = re.sub(r'\*{4,}', '', text)
+    text = re.sub(r'\*\*\s+\*\*', ' ', text)
+    text = re.sub(r'(?<!\*)\*\s+\*(?!\*)', ' ', text)
+
     # 1. Triple bold-italic with missing space
     text = re.sub(r'(\*\*\*[^\*\r\n]+?\*\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9*])', r'\1 \2', text)
 
@@ -332,8 +342,11 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None, slug=""):
     text = re.sub(r'<table[^>]*>[\s\S]*?</table>', parse_table, text)
 
     # Step 8: Formatting
-    text = re.sub(r'<(strong|b)[^>]*>([\s\S]*?)</\1>', lambda m: f"**{m.group(2).strip()}**", text)
-    text = re.sub(r'<(em|i)[^>]*>([\s\S]*?)</\1>', lambda m: f"*{m.group(2).strip()}*", text)
+    # Clean empty strong/b/em/i tags and merge adjacent strong/b tags
+    text = re.sub(r'<(strong|b)[^>]*>[\s\u00a0]*</\1>', '', text)
+    text = re.sub(r'</(strong|b)>\s*<(strong|b)[^>]*>', ' ', text)
+    text = re.sub(r'<(strong|b)[^>]*>([\s\S]*?)</\1>', lambda m: f"**{m.group(2).strip()}**" if m.group(2).strip() else "", text)
+    text = re.sub(r'<(em|i)[^>]*>([\s\S]*?)</\1>', lambda m: f"*{m.group(2).strip()}*" if m.group(2).strip() else "", text)
     text = re.sub(r'<p[^>]*>([\s\S]*?)</p>', lambda m: f"\n\n{m.group(1).strip()}\n\n", text)
     text = re.sub(r'<br\s*/?>', '\n', text)
     text = re.sub(r'<hr[^>]*>', '\n\n---\n\n', text)

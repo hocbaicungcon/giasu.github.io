@@ -34,6 +34,18 @@ export function normalizeMarkdownFormatting(text) {
   protect(/\$\$[\s\S]+?\$\$/g);
   protect(/(?<!\$)\$(?!\$)((?:\\.|[^$\r\n])+?)\$(?!\$)/g);
 
+  // Clean malformed question numbers and options from bad bold tags
+  text = text.replace(/\*+Câu[\s*]*(\d+)[\s*]*:[\s*]*/g, '**Câu $1:** ');
+  text = text.replace(/\*\*([A-Da-d])\s*\*+\.\s*\*+/g, '**$1.** ');
+
+  // Remove trailing runaway asterisks at end of lines
+  text = text.replace(/(?<=\S)\s*\*+\s*$/gm, '');
+
+  // Remove empty bold/italic tokens: ****, ******, ** **, * *
+  text = text.replace(/\*{4,}/g, '');
+  text = text.replace(/\*\*\s+\*\*/g, ' ');
+  text = text.replace(/(?<!\*)\*\s+\*(?!\*)/g, ' ');
+
   // Triple bold-italic with missing space
   text = text.replace(/(\*\*\*[^*\r\n]+?\*\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9*])/g, '$1 $2');
 
