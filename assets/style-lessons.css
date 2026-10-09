@@ -675,3 +675,58 @@ html[data-theme="dark"] .quiz-option input[type="radio"]:focus-visible {
       padding-right: 16px;
   }
 }
+
+.disclaimer-card {
+  margin: 32px 0;
+  padding: 24px 28px;
+  background: #fff8f0;
+  border: 1px solid #fed7aa;
+  border-left: 5px solid #f97316;
+  border-radius: 12px;
+}
+
+.disclaimer-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #c2410c;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.25rem;
+}
+
+.disclaimer-card p {
+  margin-bottom: 12px;
+  color: #7c2d12;
+  line-height: 1.65;
+}
+
+.disclaimer-card p:last-child {
+  margin-bottom: 0;
+}
+
+.disclaimer-card ul {
+  margin: 8px 0 12px 20px;
+  color: #7c2d12;
+}
+
+.disclaimer-card li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+html[data-theme="dark"] .disclaimer-card {
+  background: #2a1f18;
+  border-color: #5a341a;
+  border-left-color: #ea580c;
+}
+
+html[data-theme="dark"] .disclaimer-card h3 {
+  color: #fdba74;
+}
+
+html[data-theme="dark"] .disclaimer-card p,
+html[data-theme="dark"] .disclaimer-card ul,
+html[data-theme="dark"] .disclaimer-card li {
+  color: #fed7aa;
+}
