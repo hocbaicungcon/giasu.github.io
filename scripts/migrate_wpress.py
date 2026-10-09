@@ -10,12 +10,15 @@ import sys
 import re
 import html
 import yaml
+import urllib.parse
 
 WORKSPACE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 WPRESS_PATH = os.path.join(WORKSPACE_ROOT, 'o2edu/o2-edu-vn-20260817-103826-pv05fp67rabp.wpress')
 POST_DIR = os.path.join(WORKSPACE_ROOT, 'post')
 ASSETS_IMG_DIR = os.path.join(WORKSPACE_ROOT, 'assets/images')
+ASSETS_DOC_DIR = os.path.join(WORKSPACE_ROOT, 'assets/docs')
 os.makedirs(ASSETS_IMG_DIR, exist_ok=True)
+os.makedirs(ASSETS_DOC_DIR, exist_ok=True)
 os.makedirs(POST_DIR, exist_ok=True)
 
 HEADER_SIZE = 4377
@@ -82,20 +85,17 @@ def clean_math_body(math_str):
     math_str = re.sub(r'[ \t]+', ' ', math_str).strip()
     return math_str
 
-def convert_html_to_markdown(raw_html, image_map):
+def convert_html_to_markdown(raw_html, image_map, doc_map=None):
+    if doc_map is None:
+        doc_map = {}
     text = raw_html
 
-    # Step 0: Normalize LaTeX delimiters
+    # Step 0: Normalize LaTeX delimiters & environment names
     text = re.sub(r'\\\[([\s\S]*?)\\\]', r'$$\1$$', text)
     text = re.sub(r'\\\(([\s\S]*?)\\\)', r'$\1$', text)
-
-    # Clean HTML tags that broke math environments like $\left\{ \begin{align}</p> <p> ...
-    def clean_env(m):
-        env_body = clean_math_body(m.group(0))
-        return f"\n\n$$\n{env_body}\n$$\n\n"
-    
-    # Auto-wrap standalone \begin{...} ... \end{...} that have no $ wrapping
-    text = re.sub(r'(?<!\$)\\begin\{(?:aligned|align|gather|cases|matrix|pmatrix|bmatrix)\}[\s\S]*?\\end\{(?:aligned|align|gather|cases|matrix|pmatrix|bmatrix)\}(?!\$)', clean_env, text)
+    # Convert \begin{align} / \begin{align*} to \begin{aligned} everywhere for universal KaTeX compatibility
+    text = re.sub(r'\\begin\{align\*?\}', r'\\begin{aligned}', text)
+    text = re.sub(r'\\end\{align\*?\}', r'\\end{aligned}', text)
 
     # Step 1: Protect Math tokens safely
     math_tokens = {}
@@ -120,6 +120,15 @@ def convert_html_to_markdown(raw_html, image_map):
 
     block_tags = r'</?(?:p|div|h[1-6]|li|ul|ol|table|pre)\b'
     text = re.sub(rf'(?<!\$)\$(?!\$)((?:(?!{block_tags})[^\$])+?)(?<!\$)\$(?!\$)', replace_inline_math, text)
+
+    # 1.3 Standalone multiline environments: now only for those NOT already enclosed in $$ or $
+    def replace_standalone_env(m):
+        math_content = clean_math_body(m.group(1))
+        token = f"__MATH_DISPLAY_{len(math_tokens)}__"
+        math_tokens[token] = f"\n\n$$\n\\begin{{aligned}}\n{math_content}\n\\end{{aligned}}\n$$\n\n"
+        return token
+
+    text = re.sub(r'\\begin\{(?:aligned|gather\*?)\}([\s\S]*?)\\end\{(?:aligned|gather\*?)\}', replace_standalone_env, text)
 
     # Step 2: Code blocks
     code_blocks = {}
@@ -186,7 +195,10 @@ def convert_html_to_markdown(raw_html, image_map):
     def replace_a(match):
         href = match.group(1)
         link_text = match.group(2)
-        if 'o2.edu.vn' in href:
+        clean_href = href.split('?')[0]
+        if clean_href in doc_map:
+            href = doc_map[clean_href]
+        elif 'o2.edu.vn' in href:
             p = href.replace('https://o2.edu.vn/', '').strip('/')
             if p and not p.startswith('wp-content'):
                 href = f"/bai-viet/{p}.html"
@@ -251,6 +263,10 @@ def convert_html_to_markdown(raw_html, image_map):
         else:
             text = text.replace(k, v)
 
+    for k, v in math_tokens.items():
+        if k in text:
+            text = text.replace(k, v)
+
     text = re.sub(r'\n{3,}', '\n\n', text).strip()
     return text
 
@@ -305,18 +321,45 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
     for full_url in set(img_urls):
         clean_url = full_url.split('?')[0]
         rel_path = clean_url.replace('https://o2.edu.vn/wp-content/', '')
-        img_name = os.path.basename(rel_path)
+        unquoted_rel_path = urllib.parse.unquote(rel_path)
+        img_name = os.path.basename(unquoted_rel_path)
         dest_filename = f"{slug}-{img_name}"
         dest_path = os.path.join(ASSETS_IMG_DIR, dest_filename)
         
-        img_bytes = reader.get_file(rel_path)
+        img_bytes = reader.get_file(unquoted_rel_path) or reader.get_file(rel_path)
         if img_bytes:
             with open(dest_path, 'wb') as img_out:
                 img_out.write(img_bytes)
-            image_map[full_url] = f"assets/images/{dest_filename}"
-            image_map[clean_url] = f"assets/images/{dest_filename}"
+            local_link = f"assets/images/{dest_filename}"
+            image_map[full_url] = local_link
+            image_map[clean_url] = local_link
+            image_map[urllib.parse.unquote(full_url)] = local_link
+            image_map[urllib.parse.unquote(clean_url)] = local_link
             
-    body_md = convert_html_to_markdown(content_html, image_map)
+    # Extract document attachments (.pdf, .docx, .zip, etc.)
+    doc_urls = re.findall(r'href=[\"\'](https://o2\.edu\.vn/wp-content/uploads/[^\"\']+\.(?:pdf|docx?|xlsx?|pptx?|zip|rar))[\"\']', content_html, re.I)
+    doc_map = {}
+    for full_url in set(doc_urls):
+        clean_url = full_url.split('?')[0]
+        rel_path = clean_url.replace('https://o2.edu.vn/wp-content/', '')
+        unquoted_rel_path = urllib.parse.unquote(rel_path)
+        doc_name = os.path.basename(unquoted_rel_path)
+        dest_path = os.path.join(ASSETS_DOC_DIR, doc_name)
+        if not os.path.exists(dest_path):
+            file_bytes = reader.get_file(unquoted_rel_path) or reader.get_file(rel_path)
+            # Giới hạn kích thước file < 25MB để tránh chặn git push
+            if file_bytes and len(file_bytes) < 25 * 1024 * 1024:
+                with open(dest_path, 'wb') as f_out:
+                    f_out.write(file_bytes)
+                print(f"Extracted document: {doc_name} ({len(file_bytes):,} bytes)")
+        if os.path.exists(dest_path):
+            local_doc_link = f"/assets/docs/{doc_name}"
+            doc_map[full_url] = local_doc_link
+            doc_map[clean_url] = local_doc_link
+            doc_map[urllib.parse.unquote(full_url)] = local_doc_link
+            doc_map[urllib.parse.unquote(clean_url)] = local_doc_link
+
+    body_md = convert_html_to_markdown(content_html, image_map, doc_map)
     
     # Remove redundant top H1 if identical to title
     body_md = re.sub(rf'^#\s+{re.escape(title)}\s*\n+', '', body_md).strip()
@@ -337,7 +380,12 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
         'tags': tags
     }
     if grade:
-        front_matter_dict['grade'] = grade
+        if isinstance(grade, str):
+            grade_num = re.search(r'\d+', grade)
+            if grade_num and 1 <= int(grade_num.group(0)) <= 12:
+                front_matter_dict['grade'] = int(grade_num.group(0))
+        elif isinstance(grade, int) and 1 <= grade <= 12:
+            front_matter_dict['grade'] = grade
         
     front_matter_str = yaml.dump(front_matter_dict, allow_unicode=True, sort_keys=False).strip()
     full_post_md = f"---\n{front_matter_str}\n---\n\n{body_md}\n"
