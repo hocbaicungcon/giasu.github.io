@@ -1,0 +1,325 @@
+---
+title: 300 Từ vựng HSK 2 phiên bản cũ
+description: Mời bạn tham khảo 150 từ vựng HSK 1 phiên bản cũ hoặc Danh sách 300 từ
+  vựng HSK 1 phiên bản mới
+category: Ngoại ngữ
+type: Bài học
+date: '2024-10-02'
+tags:
+- Tiếng Trung
+- HSK
+- HSK 2
+- Từ vựng
+---
+
+Mời bạn tham khảo [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html) hoặc [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html)
+
+## Từ vựng HSK 2 bản cũ bằng tiếng Anh
+
+| 吧 | ba5 | ba | particle indicating polite suggestion; | onomatopoeia | bar (serving drinks, providing internet access, etc.) |
+| --- | --- | --- | --- |
+| 白 | bai2 | bái | white; snowy; pure; bright; empty (Kangxi radical 106) |
+| 百 | bai3 | bǎi | hundred |
+| 帮助 | bang1zhu4 | bāngzhù | help; assist; aid |
+| 报纸 | bao4zhi3 | bàozhǐ | newspaper |
+| 比 | bi3 | bǐ | compare; (indicates comparison) (Kangxi radical 81); to gesticulate as one talks |
+| 别 | bie2 | bié | don’t do something; don’t | depart; | other; difference; distinguish |
+| 宾馆 | bin1guan3 | bīnguǎn | guesthouse; hotel |
+| 长 | chang2, zhang3 | cháng, zhǎng | long; length | grow; chief (Kangxi radical 168) |
+| 唱歌 | chang4ge1 | chànggē | sing (a song) |
+| 出 | chu1 | chū | go out; occur |
+| 穿 | chuan1 | chuān | to wear; put on; penetrate |
+| 次 | ci4 | cì | (mw for number of times of occurrence); nth; order |
+| 从 | cong2 | cóng | from; obey; observe |
+| 错 | cuo4 | cuò | mistake; error; blunder; miss an opportunity |
+| 打篮球 | da3 lan2qiu2 | dǎ lánqiú | play basketball |
+| 大家 | da4jia1 | dàjiā | everyone |
+| 到 | dao4 | dào | arrive (at a place); until (a time) |
+| 得 | de5 | de | (complement particle) |
+| 等 | deng3 | děng | to wait; rank; equal; etc. |
+| 弟弟 | di4di5 | dìdi | younger brother |
+| 第一 | di4yi1 | dìyī | first; number 1 |
+| 懂 | dong3 | dǒng | understand; know |
+| 对 | dui4 | duì | correct; a pair; to face; be opposite; to; towards |
+| 房间 | fang2jian1 | fángjiān | room |
+| 非常 | fei1chang2 | fēicháng | extremely; extraordinary; very |
+| 服务员 | fu2wu4yuan2 | fúwùyuán | waiter/waitress; server; attendant |
+| 高 | gao1 | gāo | high; tall (Kangxi radical 189) |
+| 告诉 | gao4su5 | gàosu | to tell; inform |
+| 哥哥 | ge1ge5 | gēge | older brother |
+| 给 | gei3 | gěi | to give; to grant; (passive particle) |
+| 公共汽车 | gong1gong4 qi4che1 | gōnggòng qìchē | (public) bus |
+| 公司 | gong1si1 | gōngsī | company; corporation |
+| 贵 | gui4 | guì | expensive; noble; honorable; Guizhou province (abbreviation) |
+| 过 | guo4 | guò | to pass; to cross; go over; (indicates a past experience) |
+| 还 | hai2 | hái | still; yet; in addition; even |
+| 孩子 | hai2zi5 | háizi | child; children; son or daughter |
+| 好吃 | hao3chi1 | hǎochī | tasty |
+| 黑 | hei1 | hēi | black; dark (Kangxi radical 203); Heilongjiang province (abbreviation) |
+| 红 | hong2 | hóng | red; symbol of success; bonus; popular |
+| 火车站 | huo3che1zhan4 | huǒchēzhàn | train station |
+| 机场 | ji1chang3 | jīchǎng | airport; airfield |
+| 鸡蛋 | ji1dan4 | jīdàn | (chicken) egg |
+| 件 | jian4 | jiàn | (mw for things, clothes, and items) |
+| 教室 | jiao4shi4 | jiàoshì | classroom |
+| 姐姐 | jie3jie5 | jiějie | older sister |
+| 介绍 | jie4shao4 | jièshào | to introduce; recommend; introduction |
+| 进 | jin4 | jìn | enter; come in |
+| 近 | jin4 | jìn | near; close (to) |
+| 就 | jiu4 | jiù | then; at once; just; only; with regard to |
+| 觉得 | jue2de5 | juéde | feel; think |
+| 咖啡 | ka1fei1 | kāfēi | coffee |
+| 开始 | kai1shi3 | kāishǐ | begin; to start; beginning |
+| 考试 | kao3shi4 | kǎoshì | test; exam; to give or take a test |
+| 可能 | ke3neng2 | kěnéng | possible; maybe |
+| 可以 | ke3yi3 | kěyǐ | can; may; possible; okay |
+| 课 | ke4 | kè | class; subject; lesson; course |
+| 快 | kuai4 | kuài | fast; quick; swift |
+| 快乐 | kuai4le4 | kuàilè | happy |
+| 累 | lei4 | lèi | tired |
+| 离 | li2 | lí | leave; depart; go away; apart from |
+| 两 | liang3 | liǎng | two; 2; both; (unit of weight equal to 50 grams) |
+| 零 | ling2 | líng | zero; remnant |
+| 路 | lu4 | lù | road; path; journey; route |
+| 旅游 | lv3you2 | lǚyóu | trip; journey; tour |
+| 卖 | mai4 | mài | to sell |
+| 慢 | man4 | màn | slow |
+| 忙 | mang2 | máng | busy |
+| 每 | mei3 | měi | each; every |
+| 妹妹 | mei4mei5 | mèimei | younger sister |
+| 门 | men2 | mén | door; opening; gate (Kangxi radical 169) |
+| 面条 | mian4tiao2 | miàntiáo | noodles |
+| 男 | nan2 | nán | male |
+| 您 | nin2 | nín | you (polite) |
+| 牛奶 | niu2nai3 | niúnǎi | cow’s milk |
+| 女 | nv3 | nǚ | woman; female (Kangxi radical 38) |
+| 旁边 | pang2bian1 | pángbiān | side, beside |
+| 跑步 | pao3bu4 | pǎobù | to run; to jog |
+| 便宜 | pian2yi5 | piányi | cheap |
+| 票 | piao4 | piào | ticket; bank note; a vote |
+| 妻子 | qi1zi5 | qīzi | wife |
+| 起床 | qi3chuang2 | qǐ chuáng | get out of bed |
+| 千 | qian1 | qiān | one thousand |
+| 铅笔 | qian1bi3 | qiānbǐ | pencil |
+| 晴 | qing2 | qíng | clear; fine (as of weather) |
+| 去年 | qu4nian2 | qùnián | last year |
+| 让 | rang4 | ràng | ask; let; yield |
+| 日 | ri4 | rì | sun; day; date; time (Kangxi radical 72) |
+| 上班 | shang4ban1 | shàngbān | go to work; be on duty |
+| 身体 | shen1ti3 | shēntǐ | health; (human) body |
+| 生病 | sheng1bing4 | shēngbìng | get sick; fall ill |
+| 生日 | sheng1ri4 | shēngrì | birthday |
+| 时间 | shi2jian1 | shíjiān | time; period |
+| 事情 | shi4qing5 | shìqing | matter; affair; thing; business |
+| 手表 | shou3biao3 | shǒubiǎo | wristwatch |
+| 手机 | shou3ji1 | shǒujī | mobile (cell) phone |
+| 说话 | shuo1hua4 | shuōhuà | to talk; speak |
+| 送 | song4 | sòng | deliver; to carry; to give; send |
+| 虽然 | sui1ran2 | suīrán | although; even though |
+| 但是 | dan4shi4 | dànshì | but; however |
+| 它 | ta1 | tā | it |
+| 踢足球 | ti1zu2qiu2 | tīzúqiú | to play football/soccer |
+| 题 | ti2 | tí | topic; subject; question on a test or assignment |
+| 跳舞 | tiao4wu3 | tiàowǔ | to dance |
+| 外 | wai4 | wài | outer; outside; in addition; foreign |
+| 完 | wan2 | wán | to finish; be over; complete |
+| 玩 | wan2 | wán | to play; have a good time; visit; enjoy |
+| 晚上 | wan3shang5 | wǎnshang | evening; night |
+| 往 | wang3 | wǎng | to go (in a direction); towards; in the past |
+| 为什么 | wei4shen2me5 | wèishénme | why?; for what reason? |
+| 问 | wen4 | wèn | ask; inquire |
+| 问题 | wen4ti2 | wèntí | question; problem |
+| 西瓜 | xi1gua1 | xīguā | watermelon |
+| 希望 | xi1wang4 | xīwàng | to hope; wish for; to desire |
+| 洗 | xi3 | xǐ | to wash; bathe |
+| 小时 | xiao3shi2 | xiǎoshí | hour |
+| 笑 | xiao4 | xiào | to laugh; to smile |
+| 新 | xin1 | xīn | new; Xinjiang autonomous region (abbreviation) |
+| 姓 | xing4 | xìng | surname; family name |
+| 休息 | xiu1xi5 | xiūxi | to rest; take a break |
+| 雪 | xue3 | xuě | snow |
+| 颜色 | yan2se4 | yánsè | color |
+| 眼睛 | yan3jing5 | yǎnjing | eye |
+| 羊肉 | yang2rou4 | yángròu | mutton; lamb |
+| 药 | yao4 | yào | medicine; drug; cure; chemical |
+| 要 | yao4 | yào | to want; to need; will/shall; important |
+| 也 | ye3 | yě | also; too |
+| 一起 | yi4qi3 | yìqǐ | together; in the same place |
+| 一下 | yi2xia4 | yíxià | a little bit/while; one time; once |
+| 已经 | yi3jing5 | yǐjing | already |
+| 意思 | yi4si5 | yìsi | meaning; idea; opinion |
+| 因为 | yin1wei4 | yīnwèi | because |
+| 所以 | suo3yi3 | suǒyǐ | so; therefore; as a result |
+| 阴 | yin1 | yīn | cloudy (weather); yin (the negative principle of Yin and Yang); secret; the moon; negative; shade |
+| 游泳 | you2yong3 | yóuyǒng | to swim |
+| 右边 | you4bian5 | yòubian | the right (as opposed to left) side |
+| 鱼 | yu2 | yú | fish (Kangxi radical 195) |
+| 远 | yuan3 | yuǎn | far; distant; remote |
+| 运动 | yun4dong4 | yùndòng | (physical) exercise; movement; sports; campaign |
+| 再 | zai4 | zài | again; once more |
+| 早上 | zao3shang5 | zǎoshang | (early) morning |
+| 丈夫 | zhang4fu5 | zhàngfu | husband; man |
+| 找 | zhao3 | zhǎo | try to find; look for; seek; to give change |
+| 着 | zhe5 | zhe | #NAME? |
+| 真 | zhen1 | zhēn | real; true; genuine |
+| 正在 | zheng4zai4 | zhèngzài | in the process of (doing something); currently |
+| 知道 | zhi1dao5 | zhīdao | know; be aware of |
+| 准备 | zhun3bei4 | zhǔnbèi | prepare; get ready |
+| 走 | zou3 | zǒu | to walk; to go; to move (Kangxi radical 156) |
+| 最 | zui4 | zuì | the most; -est; (indicator for superlative) |
+| 左边 | zuo3bian5 | zuǒbian | the left side; the left |
+
+## Từ vựng HSK 2 phiên bản cũ kèm ví dụ bằng tiếng Việt
+
+| Tiếng Trung | Phiên âm | Từ loại | Tiếng Việt | Ví dụ | Phiên âm | Dịch |
+| --- | --- | --- | --- | --- | --- | --- |
+| 吧 | ba | Từ cảm thán | Thôi | 好吧！ | Hǎo ba! | Được thôi! |
+| 白 | bái | Tính từ  | Màu trắngHọ: Bạch | 我喜欢白色。 | Wǒ xǐhuān báisè. | Tôi thích màu trắng. |
+| 百 | bǎi | Danh từ | TrămTên : Bách | 这个产品的价格是一百块钱。 | Zhège chǎnpǐn de jiàgé shì yībǎi kuài qián. | Giá của sản phẩm này là 100 đồng. |
+| 帮助 | bāngzhù | Động từ | Giúp đỡ | 我可以帮助你吗？ | Wǒ kěyǐ bāngzhù nǐ ma? | Tôi có thể giúp gì được cho bạn ? |
+| 报纸 | bàozhǐ | Danh từ | Báo giấy | 与电子报相比，我更喜欢报纸。 | Yǔ diànzǐ bào xiāng bǐ, wǒ gèng xǐhuān kàn bàozhǐ. | So với báo mạng, tôi thích đọc báo giấy hơn. |
+| 比 | bǐ | Danh từGiới từĐộng từ | So, so với | 我比他高。 | Wǒ bǐ tā gāo. | Tôi cao hơn anh ta. |
+| 别 | bié | Động từ | Khác | 我可以看别的颜色吗？ | Wǒ kěyǐ kàn bié de yánsè ma? | Có thể cho tôi xem màu sắc khác được không? |
+| 长 | cháng | Tính từ | Dài | 十年的时间并不算怎么长。 | Shí nián de shíjiān bìng bú suàn zěnme cháng. | Thời gian 10 năm kể cũng không phải là dài. |
+| 唱歌 | chànggē | Động từ | Hát | 他唱歌唱得好听。 | Tā chànggē chàng dé hǎotīng. | Anh ấy hát rất hay. |
+| 出 | chū | Động từ | Ra | 这个世纪出了许多大事情。 | Zhège shìjì chūle xǔduō dà shì qíng. | Thế kỷ này xảy ra rất nhiều sự việc đáng chú ý. |
+|   穿 | chuān | Động từ | Mặc | 你试试穿这条裙子吧。 | Nǐ shì shì chuān zhè tiáo qúnzi ba. | Bạn mặc thử chiếc váy này đi. |
+| 船 | chuán | Danh từ | Thuyền | 顺水推船 | Shùnshuǐ tuī chuán. | Thuận nước đẩy thuyền, biết thời biết thế |
+| 次 | cì | Tính từLượng từ | Lần | 三番五次 | Sānfān wǔcì. | 5 lần 7 lượt |
+| 从 | cóng | Động từGiới từ | Từ | 从善而流 | cóngshànérliú | Biết nghe lời phải, biết phục thiện |
+| 错 | cuò | Danh từĐộng từ | Sai | 阴差阳错 | yīnchā yángcuò | Sai sót ngẫu nhiên |
+| 打篮球 | dǎ lánqiú | Động từ | Đánh bóng rổ | 我的爱好是打篮球。 | Wǒ de àihào shì dǎ lánqiú. | Sở thích của mình là chơi bóng rổ. |
+| 大家 | dàjiā | Danh từĐại từ | Mọi người | 大家喜欢春节去旅游。 | Dàjiā xǐhuān chūnjié qù lǚyóu. | Mọi người đều thích đi du lịch vào mùa xuân. |
+| 但是 | dànshì | Liên từ | Nhưng mà | 但是病情让国家损失了一大笔钱。 | Dànshì bìngqíng ràng guójiā sǔnshīle yí dà bǐ qián. | Nhưng bệnh tình khiến quốc gia tổn thất một khoản tiền lớn. |
+| 到 | dào | Động từ | Đến | 马到成功 | Mǎdàochénggōng | Mã đáo thành công |
+| 得 | dé | Trợ động từ |  | 我得不到他的爱。 | Wǒ dé bú dào tā de ài | Tôi không có được tình yêu của cô ý. |
+| 等 | děng | Động từ | Đợi | 三六九等 | sānliùjiǔ děng | Nhiều loại, đủ loại |
+| 弟弟 | dìdì | Đại từ | Em trai | 小弟弟可乖啊。 | xiǎo dìdì kě guāi a. | Em trai thật ngoan quá đi. |
+| 第一 | dì yī | Số từ | Thứ nhấtLần đầu | 这次考试，他考了第一名。 | Zhè cì kǎoshì, tā kǎole dì yī míng. | Lần thi này tôi đứng thứ nhất. |
+| 懂 | dǒng | Động từ | Hiểu | 不懂装懂 | Bù dǒng zhuāng dǒng | Không hiểu vờ như hiểu |
+| 对 | duì | Giới từĐộng từDanh từ | Đúng | 对牛弹琴 | duìniútánqín | Đàn gảy tai trâu |
+| 房间 | fángjiān | Danh từ | Căn phòng | 你进入房间吧。 | Nǐ jìnrù fángjiān ba. | Bạn vào phòng đi. |
+| 非常 | fēicháng | Phó từ chỉ mức độ | Cực kì | 非常完美 | Fēicháng wánměi | Phi thường hoàn mỹ |
+| 服务员 | fúwùyuán | Danh từ | Nhân Viên phục vụ | 服务员向我们说明了产品的用途。 | Fúwùyuán xiàng wǒmen shuōmíngle chǎnpǐn de yòngtú. | Phục vụ hướng dẫn chúng tôi cách sử dụng sản phẩm. |
+| 高 | gāo | Tính từ | Cao | 步步登高 | Bù bù dēnggāo | Ngày càng thăng tiến |
+| 告诉 | gàosù | Động từ | Nói cho biếtBáo cho | 老师告诉我们留学生所学校的规定。 | Lǎoshī  gàosù wǒmen liúxuéshēng suǒ xuéxiào de guīdìng. | Thầy giáo nói với lưu học sinh về quy định của nhà trường. |
+| 哥哥 | gēgē | Đại từ | Anh trai | 每个月我都跟留学的哥哥互通音信。 | Měi gè yuè wǒ dōu gēn liúxué de gēgē hùtōng yīnxìn | Mỗi tháng tôi đều cùng anh trai đang đi du học trao đổi thư từ. |
+| 给 | gěijǐ | Động từ | Đưa cho …. | 我寄给他一封信。自给自足 | Wǒ jì gěi tā yì fēng xìn.zìjǐzìzú | Tôi gửi cho anh ta 1 phong thư.Tự cung tự cấp |
+| 公共汽车 | gōnggòng qìchē | Danh từ | Xe buýt, bus | 这辆公共汽车出了故障，不能开动了。 | Zhè liàng gōnggòng qìchē chūle gùzhàng, bùnéng kāidòngle. | Chiếc xe buýt này gặp sự cố không thể khởi động được. |
+| 公斤=千克 | gōngjīn=qiānkè |  | Kg | 我买了五公斤的苹果。 | Wǒ mǎile wǔ gōngjīn de píngguǒ. | Tôi mua 5 kg táo. |
+| 公司 | gōngsī | Danh từ | Công ty | 这个公司又开发了一种新产品。 | Zhège gōngsī yòu kāifāle yì zhǒng xīn chǎnpǐn. | Công ty này vừa mở ra 1 dòng sản phẩm mới. |
+| 贵 | guì | Tính từ | Đắt | 荣华富贵母以子贵 | Rónghuá fùguìMǔyǐzǐguì | Vinh hoa phú quý Mẹ quý nhờ con |
+| 过 | guò | Động từTrạng từ | Qua | 过眼云烟 | guòyǎnyúnyān | Thoáng qua như phù du |
+| 还 | háihuán | Động từTrạng từ | VớiTrả về …. | 这个还是那个?衣锦还乡返老还童 | Zhège háishì nàgè?Yījǐnhuánxiāng Fǎnlǎohuántóng | Cái này hay cái kia.Áo gấm về quêCải lão hoàn đồng |
+| 孩子 | Háizi | Đại từ | Trẻ con | 对待两个儿子，父母不能厚此薄彼。 | Duìdài liǎng gè érzi, fùmǔ bùnéng hòucǐbóbǐ. | Đối xử với 2 người con, cha mẹ không nên bên trọng  bên khinh. |
+| 好吃 | hào chīhǎochī | Tính  từ | Sành ăn; ham ănNgon | 好吃懒做的货。这东西真好吃。 | Hàochīlǎnzuò de huò.Zhè dōngxi zhēn hǎochī. | Cái loại ham ăn lười làm.món này ngon thật. |
+| 号 | hào | Danh từ | SốHiệu | 五号国号 | wǔ hàoguó hào | Số 5.quốc hiệu |
+| 黑 | hēi | Tính từ | Màu đen | 起早摸黑 | qǐ zǎomōhēi | Dậy sớm ngủ muộn; thức khuya dậy sớm |
+| 红 | hóng | Tính từ | Màu đỏ | 红男绿女大红大紫 | hóngnánlǜnǚdàhóng dàzǐ | Trai thanh gái lịchĐỏ tía |
+| 欢迎 | huānyíng | Động từ | Chào đón | 欢迎光临 | Huānyíng guānglín. | Hoan nghênh ghé thăm. |
+| 回答 | huídá | Động từ | Trả lời | 老师要求学生回答老师的问题。 | Lǎoshī yàoqiú xuéshēng huídá lǎoshī de wèntí. | Thầy giáo yêu cầu học sinh trả lời câu hỏi của thầy. |
+| 机场 | jīchǎng | Danh từ | Sân bay | 哥哥要出国留学，我们到机场去送别。 | Gēgē yào chūguó liúxué, wǒmen dào jīchǎng qù sòngbié. | Anh trai đi nước ngoài du học, mọi người đến sân bay tiễn. |
+| 鸡蛋 | jīdàn | Danh từ | Quả trứng | 拿鸡蛋跟石头碰，真是不自量力！ | Ná jīdàn gēn shítou pèng, zhēnshì bú zì liànglì! | Lấy trứng chọi với đá, thật không biết tự lượng sức mình. |
+| 件 | jiàn | Lượng từ | Chiếc, kiện, … | 你帮我几件事可以吗？ | Nǐ bāng wǒ jǐ jiàn shì kěyǐ ma? | Bạn giúp tôi vài việc được không? |
+| 教室 | jiàoshì | Danh từ | Phòng học | 清晨，教室里传出朗读的读书声。 | Qīngchén, jiàoshì lǐ chuán chū lǎngdú de dúshū shēng. | Sáng sớm, phòng học vang lên tiếng học sinh đọc bài. |
+| 姐姐 | jiějie | Danh từĐại  từ | Chị gái | 姐姐能否考上大学。 | Jiějiě néng fǒu kǎo shàng dàxué. | Chị gái có thể thi đỗ đại học không. |
+| 介绍 | jièshào | Động từ | Giới thiệu | 请你自我介绍。 | Qǐng nǐ zìwǒ jièshào. | Mời bạn tự giới thiệu bản thân. |
+| 进 | jìn | Động từ | Tiến (vào)  | 不进则退 | bújìnzétuì | Không tiến thì phải lùi |
+| 近 | jìn | Động từTrạng từ | Gần | 远近闻名 | yuǎnjìn wénmíng | Tiếng thơm vang xa |
+| 就 | jiù | Động từTrạng từGiới từ | Đến, bắt đầuHoàn thành, thành tựu. | 我早就说那不是你的主意。 | Wǒ zǎo jiù shuō nà búshì nǐ de zhǔyì. | Tôi đã sớm bảo đó không phải ý của cậu mà. |
+| 觉得 | juédé | Động từ | Cảm thấy, cho rằng | 穿上妈妈做的衣服，觉得挺舒服的。 | Chuān shàng māmā zuò de yīfú, juédé tǐng shūfú de. | Mặc đồ mà mẹ làm cho cảm thấy thật thoải mái. |
+| 咖啡 | kāfēi | Danh từ | Cà phê | 他们一边喝咖啡一边聊天。 | Tāmen yìbiān hē kāfēi yìbiān liáotiān. | Anh ta vừa uống cà phê 1 vừa chuyện. |
+| 开始 | kāishǐ | Động từ | Bắt đầu | 此事既然已经开始，只好一不做，二不休。 | Cǐ shì jìrán yǐjīng kāishǐ, zhǐhǎo yī bú zuò, èr bùxiū. | Chuyện này cũng đã xảy ra như vậy rồi, chỉ đành chăm chỉ làm thôi. |
+| 考试 | kǎoshì | Danh từ | Kì thiKiểm tra | 这次考试分笔试和口试两部分。 | Zhè cì kǎoshì fēn bǐshì hé kǒushì liǎng bùfen. | Kì thi lần này chia làm hai phần gồm thi nói và thi viết. |
+| 可能 | kěnéng | Danh từĐộng từ | Có khả năngCó lẽ, chắc là | 老师的脸色很难看，可能又跟谁生气了。 | Lǎoshī de liǎnsè hěn nánkàn, kěnéng yòu gēn shéi shēngqìle. | Sắc mặt của thầy rất khó coi, khả năng là lại cãi nhau với ai rồi. |
+| 可以 | kěyǐ | Động từ | Có thể | 公司可以为客户提供多种服务。 | Gōngsī kěyǐ wèi kèhù tígōng duō zhǒng fúwù. | Công ty có thể cung cấp rất nhiều dịch vụ cho khách hàng. |
+| 课 | kè | Danh từ | Môn họcGiờ học; tiết học | 日程月课 | rìchéng yuèkè | Lịch trình cụ thể |
+| 快 | kuài | Tính từ | Nhanh | 快言快语 | kuài yánkuàiyǔ | Lời nói rõ ràng |
+| 快乐 | kuàilè | Tính từ | Vui vẻ | 学习难苦的，但是也充满了快乐。 | Xuéxí nán kǔ de, dànshì yě chōngmǎnle kuàilè. | Học hành gian khổ, nhưng lại đầy ắp niềm vui. |
+| 累 | lèi | Động từTính từ | Mệt | 长年累月 | chángniánlěiyuè | Quanh năm suốt tháng |
+| 离 | lí | Tính từGiới từ | Ly (biệt)(cách) ly | 流离失所隔离 | liúlíshīsuǒgélí | Trôi dạt khắp nơiCách ly |
+| 两 | liǎng | Số từ | Số 2 | 一举两得 | yìjǔliǎngdé | 1 mũi tên trúng 2 đích |
+| 路 | lù | Danh từ | Đường | 一路平安 | yílù píng’ān | Thuận lộ bình an |
+| 旅游 | lǚyóu | Động từ | Du lịch | 春节前夕，我们家全部到香港旅游。 | Chūnjié qiánxī, wǒmen jiā quánbù dào Xiānggǎng lǚyóu. | Trước giao thừa, cả gia đình chúng tôi đều đi du lịch HongKong. |
+| 卖 | mài | Động từ | Bán | 挂头羊卖狗肉。 | Guà tóuyáng mài gǒuròu. | Treo đầu dê bán thịt chó. |
+| 慢 | màn | Tính từ  | Chậm | 不紧不慢 | bùjǐnbú màn | Không nhanh không chậm |
+| 忙 | máng | Động từTính từ | Bận | 忙里偷闲 | mánglǐtōuxián | Tranh thủ thời gian |
+| 每 | měi | Đại từ | Mỗi | 每饭不忘 | měifàn búwàng | Luôn luôn ghi nhớ |
+| 妹妹 | mèimei | Đại từDanh từ | Em gái | 妹妹去国外留学三年了。 | Mèimei qù guówài liúxué sān niánle. | Em gái đi du học đã 3 năm rồi. |
+| 门 | mén | Danh từ | Cửa | 五花八门 | wǔhuābāmén | Đa dạng |
+| 男人 | nánrén | Danh từ | Đàn ông | 这世界上最爱我的男人是爸爸。 | Zhè shìjiè shàng zuì ài wǒ de nánrén shì bàba. | Người đàn ông tôi yêu nhất trên đời này là bố. |
+| 您 | nín | Đại từ | Ngài | 您好! | Nín hǎo! | Xin chào! |
+| 牛奶 | niúnǎi | Danh từ | Sữa | 牛奶中蛋白质的含量很高。 | Niúnǎi zhōng dànbáizhí de hánliàng hěn gāo. | Hàm lượng protein bên trong sữa rất cao. |
+| 女人 | nǚrén | Danh từ | Phụ nữ | 泛称成年女子。 | Fànchēng chéngnián nǚzǐ. | Gọi chung là người phụ nữ trưởng thành. |
+| 旁边 | pángbiān | Phương vị từ | Bên cạnh | 学校的旁边是书店。 | Xuéxiào de pángbiān shì shūdiàn. | Bên cạnh trường học là hiệu sách. |
+| 跑步 | pǎobù | Động từ | Chạy bộ | 我每天早上都跟老公一起跑步。 | Wǒ měitiān zǎoshang dōu gēn lǎogōng yìqǐ pǎobù. | Tôi mỗi ngày đều cùng chồng  đi bộ. |
+| 便宜 | piányi | Tính từ | Rẻ | 买东西千万不要图便宜。 | Mǎi dōngxī qiān wàn bùyào tú piányí. | Mua đồ đừng bao giờ nhìn giá rẻ. |
+| 票 | piào | Danh từ | Vé | 很快就到春节了。你买火车票了没？ | Hěn kuài jiù dào chūnjiéle. Nǐ mǎi huǒchē piàole méi? | Sắp tới kì nghỉ tết rồi. Bạn mua vé tàu chưa? |
+| 妻子 | qīzi | Danh từ | Vợ | 他钱包丢了，他妻子安慰他不要难过。 | Tā qiánbāo diūle, tā qīzi ānwèi tā búyào nánguò. | Ví tiền của anh ta mất rồi, vợ anh ấy an ủi rằng đừng buồn. |
+| 起床 | qǐchuáng | Động từ | Dậy | 爷爷通常五点钟起床。 | Yéye tōngcháng wǔ diǎn zhōng qǐchuáng. | Ông nội thường dậy lúc 5 giờ. |
+| 千 | qiān | Số từ | Ngàn | 千方百计 | qiānfāngbǎijì. | trăm phương nghìn kế. |
+| 晴 | qíng | Tính từ | Trời trong | 雨过晴天。 | Yǔguò qíngtiān. | Qua cơn mưa trời lại sáng. |
+| 去年 | qùnián | Từ chỉ thời gian | Năm trướcNăm ngoái | 妹妹去年去留学了。 | Mèimei qùnián qù liúxuéle. | Em gái năm trước đi du học rồi. |
+| 让 | ràng | Động từ | KhiếnNhường | 行者让路。我可以让步一下。 | Xíngzhě rànglù.Wǒ kěyǐ ràngbù yíxià. | Người đi đường nhường đường.Tôi có thể nhượng bộ 1 chút. |
+| 上班 | shàngbān | Động từ | Đi làm | 她每天早上八点上班。 | Tā měitiān zǎoshang bā diǎn shàngbān. | Cô ấy mỗi ngày 8 giờ dậy đi làm. |
+| 身体 | shēntǐ | danh  từ | Cơ thể | 外婆每天五点起床到公园锻炼身体。 | Wàipó měitiān wǔ diǎn qǐchuáng dào gōngyuán duànliàn shēntǐ. | Mỗi ngày 5 giờ bà ngoại đều đến công viên tập thể dục. |
+| 生病 | shēngbìng | Động từ | Sinh bệnhỐm | 小明今天没来上学，可能是生病了。 | Xiǎomíng jīntiān méi lái shàngxué, kěnéng shì shēngbìngle. | Hôm nay Tiểu Minh vẫn chưa đến lớp, có thể là do ốm rồi. |
+| 生日 | shēngrì | Danh từ | Sinh nhật | 我的生日恰好在“六一”儿童节这天。 | Wǒ de shēngrì qiàhǎo zài “liùyī” értóng jié zhè tiān. | Sinh nhật của mình vừa đúng vàongày 1 tháng 6 tết thiếu nhi. |
+| 时间 | shíjiān | Danh từ | Thời gian | 时间过得真快，不知不觉一年又过去了。 | Shíjiānguò dé zhēn kuài, bùzhī bùjué yì nián yòu guòqùle. | Thời gian trôi qua thật nhanh, bất giác 1 năm lại đã qua rồi. |
+| 事情 | shìqíng | Danh từ | Sự tình; sự việcCông việc | 别火上浇油把事情闹大了！ | Bié huǒshàngjiāo yóu bǎ shìqíng nào dàle! | Đừng thêm dầu vào lửa khiến sự việc thêm nghiêm trọng trọng nữa! |
+| 手表 | shǒubiǎo | Danh từ | Đồng hồ | 这块手表已经没有修理价值，该报废了。 | Zhè kuài shǒubiǎo yǐjīng méiyǒu xiūlǐ jiàzhí, gāi bàofèile. | Cái đồng hồ này đã không thể sửa được nữa rồi, nên bỏ đi thôi. |
+| 手机 | shǒujī | Danh từ | Điện thoại | 这台手机是最先进的手机之一。 | Zhè tái shǒujī shì zuì xiānjìn de shǒujī zhī yī. | Đây là một trong những mẫu điện thoại tiên tiến nhất. |
+| 送 | sòng | Động từ | Tặng | 雪中送炭 | xuězhōngsòngtàn | giúp người khi gặp nạn |
+| 所以 | suǒyǐ | Liên từ | Vì thếVì vậy | 因为今天我忙，所以没有去。 | Yīnwèi jīntiān wǒ máng，suǒyǐ méiyǒu qù.. | Bởi vì hôm nay tôi bận, cho nên không đi.. |
+| 它 | tā | Danh từ | Nó | 至死靡它 | zhìsǐmítā | Đến chết cũng không đổi |
+| 踢足球 | tī zúqiú | Động từ | Đá bóng | 我每个星期日都跟朋友一起去踢足球。 | Wǒ měi gè xīngqīrì dōu gēn péngyou yìqǐ qù tī zúqiú. | Mỗi chủ nhật tôi đều cùng bạn đi đá bóng. |
+| 题 | tí | Danh từ | Đề (bài, mục) | 小题大做 | xiǎotídàzuò | Việc bé xé ra to |
+| 跳舞 | tiàowǔ | Danh từ | Khiêu vũNhảy | 跳舞是我的爱好。 | Tiàowǔ shì wǒ de àihào. | Khiêu vũ là sở thích của tôi. |
+| 外 | wài | Phương vị từ | NgoàiNgoại | 古今中外/外婆 | gǔjīn zhōngwài.wàipó. | Từ cổ chí kimBà ngoại |
+| 玩 | wán | Động từ | Chơi | 一考完试，小明就忘乎所以地玩。 | Yì kǎo wán shì, xiǎomíng jiù wànghūsuǒyǐ de wán. | Thi xong, Tiểu Minh gần như quên hết mọi thứ rồi chơi. |
+| 完 | wán | Động từ | Xong | 没完没了 | méiwán méiliǎo | Vô cùng tận |
+| 晚上 | wǎnshàng | Từ chỉ thời gian | Buổi tối | 晚上一起吃顿饭吧。 | Wǎnshàng yīqǐ chī dùn fàn ba. | Tối nay cùng nhau ăn bữa cơm đi. |
+| 为什么 | wèishéme | Từ để hỏi/Đại từ nghi vấn | Vì sao | 不知道为什么小李进来事情就这么惨呢？ | Bù zhīdào wèishéme Xiǎolǐ jìnlái shìqíng jiù zhème cǎn ne? | Không biết tại sao khi Tiểu Lý bước vào tình hình lại trở nên tồi tệ như vậy? |
+| 问 | wèn | Động từ | Hỏi | 一问三不知 | yí wèn sānbùzhī | Cái gì cũng không biết |
+| 问题 | wèntí | Danh từ | Câu hỏi | 这个问题恐怕我解决不了了。 | Zhège wèntí kǒngpà wǒ jiějué bùliǎole. | Vấn đề này e là tôi cũng không giải quyết được rồi. |
+| 西瓜 | xīguā | Danh từ | Dưa hấu | 我最喜欢喝西瓜汁。 | Wǒ zuì xǐhuān hē xīguāzhī. | Tôi thích nhất uống nước ép dưa hấu. |
+| 希望 | xīwàng | Động từ | Hy vọng | 亲爱的妈妈爸爸，我不会辜负你们的希望。 | Qīn’ài de māma bàba, wǒ bú huì gūfù nǐmen de xīwàng. | Bố mẹ thân yêu của con, con sẽ không phụ sự kỳ vọng của mọi người. |
+| 洗 | xǐ | Động từ | Rửa | 碧空如洗 | bìkōngrúxǐ | Sáng trong như ngọc |
+| 向 | xiàng | Động từ | Hướng đến ai | 晕头传向 | yūntóu chuánxiàng. | Đầu óc choáng váng |
+| 小时 | xiǎoshí | Danh từ | Giờ; tiếng đồng hồ | 他一做就做到八个小时才休息。 | Tā yí zuò jiù zuò dào bā gè xiǎoshí cái xiūxi. | Một khi anh ấy đã làm thì phải 8 giờ sau mới nghỉ. |
+| 笑 | xiào | Động từ | Cười | 哭笑不得 | kūxiàobùdé | Dở khóc dở cười |
+| 新 | xīn | Tính từ | Mới | 日新月异 | rìxīnyuèyì | Biến chuyển từng ngày, thay đổi từng ngày |
+| 姓 | xìng | Danh từ | Họ | 请问您贵姓？ | Qǐngwèn nín guìxìng? | Xin hỏi họ của ngài là gì? |
+| 休息 | xiūxi | Động từ | Nghỉ ngơi | 走累了，找个地方休息休息。 | Zǒulèi le，zhǎogè dìfāng xīuxi xīuxi | Điện thoại là phương tiện truyền gửi thông tin.Đi mệt rồi, tìm chỗ nào nghỉ ngơi một tý. |
+| 雪 | xuě | Danh từ | Tuyết | 雪中送炭 | xuězhōngsòngtàn | Giúp người khi gặp nạn |
+| 颜色 | yánsè | Danh từ | Màu sắc | 你喜欢什么颜色？ | Nǐ xǐhuān shénme yánsè? | Bạn thích màu nào? |
+| 眼睛 | yǎnjīng | Danh từ | Đôi mắt | 小姑娘长着两只水灵灵的眼睛。 | Xiǎo gūniang zhǎng zhe liǎng zhī shuǐlínglíng de yǎnjīng. | Cô gáicó đôi mắt đẹp long lanh. |
+| 羊肉 | yángròu | Danh từ | Thịt Dê | 挂羊肉买狗头。 | Guà yángròu mǎi gǒutóu. | Treo đầu dê bán thịt chó. |
+| 要 | yào | Động từ | MuốnCần | 要言不烦 | yàoyá bù fán | Rõ ràng khúc chiết |
+| 药 | yào | Danh từ | Thuốc | 中药/ 西药/良药苦口 | zhōngyào/ xīyào/Liángyào kǔkǒu | Thuốc Đông yThuốc Tây yThuốc đắng giã tật. |
+| 也 | yě | Trợ từ ngữ khí | Cũng | 之乎者也 | zhīhūzhěyě | Diễn tả bài văn hoặc lời nói không rõ ràng |
+| 已经 | yǐjīng | Phó  từ | ĐãRồi | 这张照片已经模糊不清，无法辨认了。 | Zhè zhāng zhàopiàn yǐjīng móhú bù qīng, wúfǎ biànrènle. | Bức ảnh đã mờ nhòe rồi, không còn nhận rõ ai nữa. |
+| 一起 | Yìqǐ | Trạng  từ | Cùng vớiCùng nhau | 我们在一起了。 | Wǒmen zài yīqǐle. | Chúng tôi ở bên nhau rồi. |
+| 意思 | yìsi | Danh từ | Ý nghĩa | 你是什么意思？ | Nǐ shì shénme yìsi? | Ý của bạn là gì? |
+| 阴 | yīn | Tính từ | Âm | 阴差阳错 | yīnchāyángcuò | Sai sót ngẫu ngẫu nhiên |
+| 因为 | yīnwèi | Liên từ | Bởi vì | 因为我知道你在想什么。 | Yīnwèi wǒ zhīdào nǐ zài xiǎng shénme. | Bởi vì tôi biết cậu đang nghĩ gì. |
+| 游泳 | yóuyǒng | Động từ | Bơi lội | 这个暑假，我除了读书就是游泳。 | Zhège shǔjià, wǒ chúle dúshū jiùshì yóuyǒng. | Kỳ nghỉ hè lần này, mình ngoại trừ đọc sách ra thì chỉ có đi bơi. |
+| 右边 | yòubiān | Danh từ | Bên phải | 我坐在老王的右边。 | Wǒ zuò zài lǎo Wáng de yòubian. | Tôi ngồi bên phải của lão Vương. |
+| 鱼 | yú | Danh từ | Cá | 鱼贯而入/出 | yúguàn ér rù/chū. | Nối đuôi nhau đi/vào |
+| 元 | yuán | Danh từ | ĐồngHọ: Nguyên | 一元复始 | yīyuánfù shǐ. | Khởi đầu vạn sự |
+| 远 | yuǎn | Tính từ | Xa | 远近闻名 | yuǎnjìn wénmíng | Danh tiếng vang xa |
+| 运动 | yùndòng | Động từ | Vận động | 你太偷懒了，快去运动吧。 | Nǐ tài tōulǎnle, kuài qù yùndòng ba. | Bạn lười quá rồi, nhanh dậy vận động đi. |
+| 再 | zài | Phó từ | Lại lần nữa | 你再说一遍吧。 | Nǐ zàishuō yībiàn ba. | Bạn nói lại lần nữa đi. |
+| 早上 | zǎoshang | Từ chỉ thời gian | Buổi sáng | 明天早上去跑步吗？ | Míngtiān zǎoshang qù pǎobù ma? | Buổi sáng ngày mai đi chạy bộ không? |
+| 张 | zhāng | Lượng từHọ | TrangHọ: Trương | 张三李四 | zhāngsānlǐsì | Ông A bà B |
+| 丈夫 | zhàngfu | Danh từ | Chồng | 明天早上我跟丈夫去旅游了。 | Míngtiān zǎoshang wǒ gēn zhàngfū qù lǚyóule. | Sáng mai tôi đi du lịch cùng chồng. |
+| 找 | zhǎo | Động từ | Tìm, tìm kiếm | 骑马找马 | qímǎzhǎo mǎ | Đứng núi này trông núi nọ |
+| 着 | zhe | Trợ từ | Đang | 小姑娘长着两只水灵灵的眼睛。 | Xiǎo gūniang zhǎng zhe liǎng zhī shuǐlíng líng de yǎnjīng. | Cô gái có đôi mắt đẹp long lanh. |
+| 真 | zhēn | Tính từ | Thật; chính xác | 千真万确 | qiānzhēnwànquè | Cực kỳ chính xác |
+| 正在 | zhèngzài | Trạng từ chỉ thời gian | ĐangVẫn đang | 他正在准备移民。 | Tā zhèngzài zhǔnbèi yímín. | Anh ý đang chuẩn bị di cư. |
+| 知道 | zhīdào | Động từ | Biết | 你明明知道，为什么还问我呢？ | Nǐ míngmíng zhīdào, wèishéme hái wèn wǒ ne? | Bạn rõ ràng đã biết, tại sao vẫn cứ hỏi mình chứ? |
+| 准备 | zhǔnbèi | Động từ | Chuẩn bị | 我准备好了老师。 | Wǒ zhǔnbèi hǎole lǎoshī. | Em chuẩn bị ổn thỏa rồi thưa thầy. |
+| 自行车 | zìxíngchē | Danh từ | Xe đạp | 每天我都乘自行车上课。 | Měitiān wǒ dōu chéng zìxíngchē shàngkè. | Mỗi ngày tôi đều đạp xe tới trường. |
+| 走 | zǒu | Động từ | Đi | 一起走吧! | Yìqǐ zǒu ba! | Đi cùng nhau thôi. |
+| 最 | zuì | Phó từ chỉ mức độ | Nhất | 你最最最重要。 | Nǐ zuì zuì zuì zhòngyào. | Bạn cực kì cực kì cực kì quan trọng với tôi. |
+| 左边 | zuǒbiān | Danh từ | Bên trái | 老王坐在我左边。 | Lǎo Wáng zuò zài wǒ zuǒbian. | Lão Vương ngồi bên trái tôi. |

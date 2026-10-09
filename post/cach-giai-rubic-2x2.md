@@ -132,7 +132,7 @@ Cầm khối Rubik như hình và thực hiện theo công thức để hoán đ
 
 ### **Bước 3: Định hướng các mảnh màu vàng và hoàn thành Rubik**
 
-Tại thời điểm này, tất cả các mảnh Rubik đều đã nằm ở đúng vị trí. Mục tiêu của bước 3 đó là định hướng lại chúng để hoàn thành khối Rubik. Bước này khá giống với bước 7 trong [cách giải Rubik 3×3](https://o2.edu.vn/cach-giai-rubik-3x3-don-gian-nhat/).
+Tại thời điểm này, tất cả các mảnh Rubik đều đã nằm ở đúng vị trí. Mục tiêu của bước 3 đó là định hướng lại chúng để hoàn thành khối Rubik. Bước này khá giống với bước 7 trong [cách giải Rubik 3×3](/bai-viet/cach-giai-rubik-3x3-don-gian-nhat.html).
 
 Các bước tiến hành như sau:
 
