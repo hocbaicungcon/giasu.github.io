@@ -7,9 +7,9 @@ category: CNTT
 type: Bài tập
 date: '2024-05-08'
 tags:
-- lập trình
+- Lập trình
 - Scratch
-- bài tập tin học
+- Bài tập tin học
 - CNTT
 grade: 6
 ---
