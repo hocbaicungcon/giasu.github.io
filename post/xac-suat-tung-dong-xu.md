@@ -5,7 +5,7 @@ category: "Toán học"
 grade: 11
 type: "Bài tập"
 date: "2026-09-14"
-tags: ["toán 11", "xác suất"]
+tags: ["Toán 11", "Xác suất"]
 ---
 
 <!-- credit: giasu.ai.vn -->
