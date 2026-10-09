@@ -2,7 +2,6 @@
 title: Vở ghi bài học hóa 11 KNTT cả năm
 description: Vở ghi bài học hóa 11 KNTT cả năm
 category: Hóa học
-grade: 11
 type: Bài học
 date: '2024-10-02'
 tags:
@@ -25,8 +24,8 @@ O2 Education gửi các thầy cô link download
 [36_Bai-8-sulfuric-acid-va-muoi-sulfate-Dap-an](/assets/docs/36_Bai-8-sulfuric-acid-va-muoi-sulfate-Dap-an.docx)[Download](/assets/docs/36_Bai-8-sulfuric-acid-va-muoi-sulfate-Dap-an.docx)
 [36_Bai-8-sulfuric-acid-va-muoi-sulfate](/assets/docs/36_Bai-8-sulfuric-acid-va-muoi-sulfate.docx)[Download](/assets/docs/36_Bai-8-sulfuric-acid-va-muoi-sulfate.docx)
 [37.-Bai-9-On-tap-chuong-2-DongPhong-Vo](/assets/docs/37.-Bai-9-On-tap-chuong-2-DongPhong-Vo.docx)[Download](/assets/docs/37.-Bai-9-On-tap-chuong-2-DongPhong-Vo.docx)
-[38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-DAP-AN](/assets/docs/38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-DAP-AN.docx)[Download](/assets/docs/38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-DAP-AN.docx)
-[38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-VO-GHI](/assets/docs/38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-VO-GHI.docx)[Download](/assets/docs/38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-VO-GHI.docx)
+[38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-DAP-AN](#drive-pending-38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-DAP-AN.docx)[Download](#drive-pending-38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-DAP-AN.docx)
+[38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-VO-GHI](#drive-pending-38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-VO-GHI.docx)[Download](#drive-pending-38-HOP-CHAT-HUU-CO-HOA-HOC-HUU-CO-FB-Tham-Nguyen-VO-GHI.docx)
 [39_PHAM-THANH-HUE_KNTT_PHUONG-PHAP-TACH-BIET-VA-TINH-CHE-HOP-CHAT-HUU-CO_DAP-AN](/assets/docs/39_PHAM-THANH-HUE_KNTT_PHUONG-PHAP-TACH-BIET-VA-TINH-CHE-HOP-CHAT-HUU-CO_DAP-AN.docx)[Download](/assets/docs/39_PHAM-THANH-HUE_KNTT_PHUONG-PHAP-TACH-BIET-VA-TINH-CHE-HOP-CHAT-HUU-CO_DAP-AN.docx)
 [39_PHAM-THANH-HUE_KNTT_PHUONG-PHAP-TACH-BIET-VA-TINH-CHE-HOP-CHAT-HUU-CO_VO-SOAN](/assets/docs/39_PHAM-THANH-HUE_KNTT_PHUONG-PHAP-TACH-BIET-VA-TINH-CHE-HOP-CHAT-HUU-CO_VO-SOAN.docx)[Download](/assets/docs/39_PHAM-THANH-HUE_KNTT_PHUONG-PHAP-TACH-BIET-VA-TINH-CHE-HOP-CHAT-HUU-CO_VO-SOAN.docx)
 [40-TRAN-THI-CAM-NHUNG-KNTT-CONG-THUC-PHAN-TU-HOP-CHAT-HUU-CO.doc](/assets/docs/40-TRAN-THI-CAM-NHUNG-KNTT-CONG-THUC-PHAN-TU-HOP-CHAT-HUU-CO.doc.docx)[Download](/assets/docs/40-TRAN-THI-CAM-NHUNG-KNTT-CONG-THUC-PHAN-TU-HOP-CHAT-HUU-CO.doc.docx)

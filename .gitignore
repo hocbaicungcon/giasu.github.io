@@ -7,5 +7,6 @@ test-results/
 .generated/
 o2edu/*
 !o2edu/redirects.*
+!o2edu/drive_links.csv
 *.wpress
 __pycache__/
