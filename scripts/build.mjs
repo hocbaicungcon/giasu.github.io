@@ -24,7 +24,11 @@ const out = path.join(root, 'dist');
 export const subjects = ['Toán học','Ngữ văn','Ngoại ngữ','Khoa học tự nhiên','Vật lí','Hóa học','Sinh học','Lịch sử','Địa lí','Giáo dục KTPL','CNTT','Công nghệ','Hoạt động trải nghiệm','Các môn khác'];
 const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const mathMacros={'\\ge':'\\geqslant','\\le':'\\leqslant'};
-marked.use({extensions:[{name:'mathBlock',level:'block',start:s=>s.indexOf('$$'),tokenizer(s){const m=/^\$\$\s*\n?([\s\S]+?)\$\$(?:\n|$)/.exec(s);if(m)return {type:'mathBlock',raw:m[0],text:m[1]};},renderer:t=>katex.renderToString(t.text,{displayMode:true,throwOnError:true,macros:{...mathMacros}})},{name:'mathInline',level:'inline',start:s=>s.indexOf('$'),tokenizer(s){const m=/^\$(?!\$)((?:\\.|[^$\n])+?)\$/.exec(s);if(m)return {type:'mathInline',raw:m[0],text:m[1]};},renderer:t=>katex.renderToString(t.text,{throwOnError:true,macros:{...mathMacros}})}]});
+marked.use({extensions:[
+ {name:'mathBlock',level:'block',start:s=>s.indexOf('$$'),tokenizer(s){const m=/^(?:[ \t]*\n)?\$\$\s*\n?([\s\S]+?)\$\$(?:\n|$)/.exec(s);if(m)return {type:'mathBlock',raw:m[0],text:m[1]};},renderer:t=>katex.renderToString(t.text,{displayMode:true,throwOnError:true,macros:{...mathMacros}})},
+ {name:'mathDisplayInline',level:'inline',start:s=>s.indexOf('$$'),tokenizer(s){const m=/^\$\$([\s\S]+?)\$\$/.exec(s);if(m)return {type:'mathDisplayInline',raw:m[0],text:m[1]};},renderer:t=>katex.renderToString(t.text,{displayMode:true,throwOnError:true,macros:{...mathMacros}})},
+ {name:'mathInline',level:'inline',start:s=>s.indexOf('$'),tokenizer(s){const m=/^\$(?!\$)((?:\\.|[^$\n])+?)\$/.exec(s);if(m)return {type:'mathInline',raw:m[0],text:m[1]};},renderer:t=>katex.renderToString(t.text,{throwOnError:true,macros:{...mathMacros}})}
+]});
 marked.use({renderer:{code(token){
  if(token.lang==='youtube')return renderVideo(token.text);
  if(token.lang==='quiz')return renderQuiz(token.text,text=>marked.parseInline(text));

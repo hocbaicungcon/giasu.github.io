@@ -5,3 +5,6 @@ playwright-report/
 test-results/
 
 .generated/
+o2edu/
+*.wpress
+__pycache__/
