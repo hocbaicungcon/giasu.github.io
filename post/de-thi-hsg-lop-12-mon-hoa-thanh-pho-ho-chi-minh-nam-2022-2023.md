@@ -16,7 +16,7 @@ grade: 12
 
 O2 Education gửi các thầy cô link download đề thi
 
-[HSG12-TPHCM-2023-HDG](#drive-pending-HSG12-TPHCM-2023-HDG.pdf)[](#drive-pending-HSG12-TPHCM-2023-HDG.pdf)
+[HSG12-TPHCM-2023-HDG](https://drive.google.com/file/d/12XsOS88mTqGBvrgVdFn4_OIbNuX-r8jc/view?usp=sharing)[](https://drive.google.com/file/d/12XsOS88mTqGBvrgVdFn4_OIbNuX-r8jc/view?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 
