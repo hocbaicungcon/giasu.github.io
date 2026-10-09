@@ -4,7 +4,7 @@ description: "Cách nhớ 214 bộ thủ tiếng Trung, Kanji."
 category: "Tiếng Anh"
 type: "Bài học"
 date: "2026-09-30"
-tags: ["tiếng trung", "bộ thủ", "kanji"]
+tags: ["Tiếng Trung", "Bộ thủ", "Kanji"]
 ---
 
 <!-- credit: giasu.ai.vn -->

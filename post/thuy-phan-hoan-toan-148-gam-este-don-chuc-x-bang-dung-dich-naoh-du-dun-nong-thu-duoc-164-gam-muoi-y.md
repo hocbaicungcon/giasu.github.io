@@ -7,8 +7,8 @@ category: Hóa học
 type: Bài học
 date: '2024-10-02'
 tags:
-- hóa 12
-- este
+- Hóa 12
+- Este
 grade: 12
 ---
 

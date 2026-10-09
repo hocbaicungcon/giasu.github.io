@@ -8,8 +8,8 @@ category: Hóa học
 type: Bài học
 date: '2024-10-02'
 tags:
-- hóa 12
-- điện phân
+- Hóa 12
+- Điện phân
 grade: 12
 ---
 

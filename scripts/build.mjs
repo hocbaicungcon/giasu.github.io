@@ -34,6 +34,18 @@ marked.use({renderer:{code(token){
  if(token.lang==='quiz')return renderQuiz(token.text,text=>marked.parseInline(text));
  return false;
 }}});
+const canonicalTags = new Map([
+ ['tiếng trung', 'Tiếng Trung'],
+ ['bộ thủ', 'Bộ thủ'],
+ ['chữ hán', 'Chữ Hán'],
+ ['kanji', 'Kanji'],
+ ['hóa 12', 'Hóa 12'],
+ ['este', 'Este'],
+ ['điện phân', 'Điện phân'],
+ ['lập trình', 'Lập trình'],
+ ['tiếng nhật', 'Tiếng Nhật'],
+ ['bài tập tin học', 'Bài tập tin học']
+]);
 export function parsePost(source, filename) {
  const match=/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/.exec(source);
  if(!match)throw Error(`${filename}: thiếu thông tin đầu bài (front matter)`);
@@ -45,6 +57,7 @@ export function parsePost(source, filename) {
  data.category=category;
  if(!/^\d{4}-\d{2}-\d{2}$/.test(data.date)||Number.isNaN(Date.parse(data.date))||new Date(data.date).toISOString().slice(0,10)!==data.date)throw Error(`${filename}: ngày không hợp lệ`);
  if(!Array.isArray(data.tags)||!data.tags.length||data.tags.some(t=>typeof t!=='string'||!t.trim()))throw Error(`${filename}: tags phải là danh sách chuỗi`);
+ data.tags = data.tags.map(t => { const clean = t.trim(); return canonicalTags.get(clean.toLowerCase()) || clean; });
  if(data.grade!==undefined&&(!Number.isInteger(data.grade)||data.grade<1||data.grade>12))throw Error(`${filename}: lớp phải từ 1 đến 12`);
  if(!['Bài học','Bài tập','Giai thoại','Câu đố','Khám phá','Thí nghiệm vui','Lịch sử khoa học','Mẹo học tập'].includes(data.type))throw Error(`${filename}: type bài viết không được hỗ trợ`);
  const slug=path.basename(filename,'.md');

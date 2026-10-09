@@ -6,8 +6,8 @@ category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
 tags:
-- tiếng nhật
-- kanji
+- Tiếng Nhật
+- Kanji
 ---
 
 Chỉ cần thành thạo **2000 chữ Kanji thông dụng nhất** dưới đây là đủ cho bạn đọc hiểu sách báo tiếng Nhật trong đa số các tình huống và ngữ cảnh.

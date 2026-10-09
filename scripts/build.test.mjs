@@ -133,3 +133,9 @@ test('siunitx units convert to plain text for imported exams',()=>{
   /Đơn vị LaTeX chưa hỗ trợ/
  );
 });
+
+test('parsePost canonicalizes common tag casing and trims whitespace',()=>{
+ const p=parsePost(source.replace('tags: [toán 10]','tags: [" tiếng trung ", "bộ thủ", "kanji", "hóa 12"]'),'tags.md');
+ assert.deepEqual(p.tags,['Tiếng Trung','Bộ thủ','Kanji','Hóa 12']);
+});
+
