@@ -52,7 +52,7 @@ còn khi $a<0$ chúng ta có bảng xét dấu như sau:
 
 **Ví dụ 1.** Xét dấu biểu thức $f(x)=3x+6$.
 
-*Hướng dẫn.*Ta có $3x+6=0 \Leftrightarrow x=-2.$ Hệ số $a=3$ là số dương, nên ta có bảng xét dấu sau đây:
+*Hướng dẫn.* Ta có $3x+6=0 \Leftrightarrow x=-2.$ Hệ số $a=3$ là số dương, nên ta có bảng xét dấu sau đây:
 
 ![bang xet dau cua nhi thuc 3x+6](assets/images/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat-bang-xet-dau-cua-nhi-thuc-3x6-1.jpg)
 
@@ -60,7 +60,7 @@ Như vậy, $f(x)>0 \Leftrightarrow x\in (-2,+\infty)$, $f(x)<0 \Leftrightarrow 
 
 **Ví dụ 2.** Xét dấu biểu thức $f(x)=1-3x$.
 
-*Hướng dẫn.*Ta có $1-3x=0 \Leftrightarrow x=\frac{1}{3}.$ Hệ số $a=-3$ là số âm, nên ta có bảng xét dấu sau đây:
+*Hướng dẫn.* Ta có $1-3x=0 \Leftrightarrow x=\frac{1}{3}.$ Hệ số $a=-3$ là số âm, nên ta có bảng xét dấu sau đây:
 
 ![bang xet dau cua nhi thuc 1-3x](assets/images/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat-bang-xet-dau-cua-nhi-thuc-1-3x.jpg)
 
@@ -92,7 +92,7 @@ $$
 P(x)=(x-1)(x+2)
 $$
 
-***Hướng dẫn.***Đầu tiên, chúng ta tìm nghiệm của từng nhị thức, có:
+***Hướng dẫn.*** Đầu tiên, chúng ta tìm nghiệm của từng nhị thức, có:
 
 - $x-1=0 \Leftrightarrow x=1,$
 
@@ -120,7 +120,7 @@ $$
 
 ![bang xet dau cua tich](assets/images/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat-bang-xet-dau-cua-tich.jpg)
 
-**Ví dụ 5.**Lập bảng xét dấu của biểu thức 
+**Ví dụ 5.** Lập bảng xét dấu của biểu thức 
 
 $$
 g(x)=\frac{x+1}{x-7}.
@@ -136,13 +136,13 @@ Từ đó có bảng xét dấu như sau:
 
 ![bảng xét dấu của một thương](assets/images/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat-bang-xet-dau-cua-mot-thuong.jpg)
 
-**Ví dụ 6.**Lập bảng xét dấu của biểu thức 
+**Ví dụ 6.** Lập bảng xét dấu của biểu thức 
 
 $$
 h(x)=\frac{1}{x+2}-\frac{3}{x+4}
 $$
 
-**Hướng dẫn.**Rõ ràng biểu thức $h(x)$ chưa có dạng tích/thương các nhị thức bậc nhất, nên chúng ta cần quy đồng giữ lại mẫu của biểu thức đó. Cụ thể như sau 
+**Hướng dẫn.** Rõ ràng biểu thức $h(x)$ chưa có dạng tích/thương các nhị thức bậc nhất, nên chúng ta cần quy đồng giữ lại mẫu của biểu thức đó. Cụ thể như sau 
 
 $$
 h(x)=\frac{-2(x+1)}{\left( x+4\right) \left( x+2\right) }
@@ -172,13 +172,13 @@ Phương pháp chung để giải các bất phương trình tích, thương là
 
 - Lập bảng xét dấu cho bất phương trình và kết luận nghiệm.
 
-**Ví dụ 7.**Giải bất phương trình sau: 
+**Ví dụ 7.** Giải bất phương trình sau: 
 
 $$
 (2x-3)(4-5x)+(2x-3)>0
 $$
 
-**Hướng dẫn.**Biến đổi bất phương trình thành 
+**Hướng dẫn.** Biến đổi bất phương trình thành 
 
 $$
 \begin{aligned}
@@ -192,13 +192,13 @@ Bảng xét dấu cho vế trái của bất phương trình cuối cùng này n
 
 Suy ra, tập nghiệm của bất phương trình đã cho là $S=\left(1;\frac{3}{2}\right)$
 
-**Ví dụ 8.**Giải bất phương trình sau: 
+**Ví dụ 8.** Giải bất phương trình sau: 
 
 $$
 \frac{4x+3}{\left( x+2\right) ^{2}}-\frac{4}{x+4}<0
 $$
 
-**Hướng dẫn.**Điều kiện xác định $x\ne -4;x\ne -2$. Chúng ta quy đồng giữ lại mẫu được bất phương trình đã cho tương đương với 
+**Hướng dẫn.** Điều kiện xác định $x\ne -4;x\ne -2$. Chúng ta quy đồng giữ lại mẫu được bất phương trình đã cho tương đương với 
 
 $$
 \frac{3x-4}{\left( x+4\right) \left( x+2\right) ^{2}}<0
@@ -242,4 +242,4 @@ Bằng cách áp dụng tính chất của giá trị tuyệt đối ta có th�
 
 Chúng ta lập bảng khử dấu giá trị tuyệt đối, chi tiết về phương pháp này xin mời các bạn xem một ví dụ sau:
 
-**Ví dụ 10.**Giải bất phương trình
+**Ví dụ 10.** Giải bất phương trình

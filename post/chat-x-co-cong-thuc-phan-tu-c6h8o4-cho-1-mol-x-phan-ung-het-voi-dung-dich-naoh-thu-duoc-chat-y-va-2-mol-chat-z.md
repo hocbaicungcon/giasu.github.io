@@ -16,13 +16,13 @@ grade: 12
 
 Chất X có công thức phân tử C6H8O4. Cho 1 mol X phản ứng hết với dung dịch NaOH, thu được chất Y và 2 mol chất Z. Đun Z với dung dịch H2SO4 đặc, thu được đimetyl ete. Chất Y phản ứng với dung dịch H2SO4 loãng (dư), thu được chất T. Cho T phản ứng với HBr, thu được hai sản phẩm là đồng phân cấu tạo của nhau. Phát biểu nào sau đây đúng?
 
-**A.**Chất T không có đồng phân hình học.
+**A.** Chất T không có đồng phân hình học.
 
-**B.**Chất X phản ứng với H2 (Ni, to) theo tỉ lệ mol 1 : 3.
+**B.** Chất X phản ứng với H2 (Ni, to) theo tỉ lệ mol 1 : 3.
 
-**C.**Chất Y có công thức phân tử C4H4O4Na2.
+**C.** Chất Y có công thức phân tử C4H4O4Na2.
 
-**D.**Chất Z làm mất màu nước brom.
+**D.** Chất Z làm mất màu nước brom.
 
  
 

@@ -50,10 +50,47 @@
 }
 
 .prose pre {
-  padding: 18px;
-  overflow: auto;
+  padding: 16px 20px;
+  overflow-x: auto;
   background: #edf2f0;
+  border: 1px solid var(--line);
   border-radius: 8px;
+  margin: 20px 0;
+  line-height: 1.6;
+  font-size: 0.9375rem;
+  tab-size: 4;
+}
+
+.prose pre code {
+  background: transparent;
+  padding: 0;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  display: block;
+}
+
+.prose :not(pre) > code {
+  background: #edf2f0;
+  color: #128099;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  border: 1px solid var(--line);
+}
+
+html[data-theme="dark"] .prose pre {
+  background: #182624;
+  border-color: rgba(255, 255, 255, 0.12);
+  color: #e0f0ed;
+}
+
+html[data-theme="dark"] .prose :not(pre) > code {
+  background: #182624;
+  color: #42caea;
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .prose table {

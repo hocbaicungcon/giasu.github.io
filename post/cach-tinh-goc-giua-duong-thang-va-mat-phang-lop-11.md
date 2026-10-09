@@ -33,7 +33,7 @@ Xem thêm:
 
 - Nếu đường thẳng vuông góc với mặt phẳng thì ta **góc giữa đường thẳng và mặt phẳng** bằng  90°.
 
-- Nếu đường thẳng không vuông góc với mặt phẳng thì **góc giữa đường thẳng và mặt phẳng**bằng góc giữa đường thẳng đó và hình chiếu của nó lên mặt phẳng .
+- Nếu đường thẳng không vuông góc với mặt phẳng thì **góc giữa đường thẳng và mặt phẳng** bằng góc giữa đường thẳng đó và hình chiếu của nó lên mặt phẳng .
 
 Kí hiệu góc giữa đường thẳng $d$ và mặt phẳng $(P)$ là $\left(d,(P)\right)$.
 
@@ -59,7 +59,7 @@ Trong thực tế, chúng ta ít khi gặp tình huống đường thẳng $d$ s
 
 ![hướng dẫn tính góc giữa đường thẳng và mặt phẳng trong không gian lớp 11](assets/images/cach-tinh-goc-giua-duong-thang-va-mat-phang-lop-11-goc-dth-mp.jpg)
 
-**Chú ý. **Đối với hình chóp, góc giữa cạnh bên và mặt đáy là góc tạo bởi 3 điểm: **đỉnh — điểm chung — chân đường cao hình chóp**.
+**Chú ý.** Đối với hình chóp, góc giữa cạnh bên và mặt đáy là góc tạo bởi 3 điểm: **đỉnh — điểm chung — chân đường cao hình chóp**.
 
 Ví dụ,
 
@@ -67,11 +67,11 @@ Ví dụ,
 
 Ví dụ, hình chóp $S.ABC$ có cạnh bên $SA$ vuông góc với đáy. Hãy xác định góc giữa $SC$ và mặt phẳng $(ABC)$.
 
-- **đỉnh **chính là điểm $S$
+- **đỉnh** chính là điểm $S$
 
-- **điểm chung**của cạnh $SC$ và mặt đáy $(ABC)$ chính là điểm $C$
+- **điểm chung** của cạnh $SC$ và mặt đáy $(ABC)$ chính là điểm $C$
 
-- **chân đường cao hình chóp**là điểm $A$
+- **chân đường cao hình chóp** là điểm $A$
 
 Suy ra, góc giữa $SC$ và mặt phẳng $(ABC)$ là góc $\widehat{SCA}$.
 
@@ -117,7 +117,7 @@ Tương tự, các em cũng có thể dễ dàng tìm được góc giữa cạn
 
 4. Trong mặt phẳng $(SAB)$, qua $A$ kẻ đường thẳng vuông góc và cắt $SB$ tại $H$. Chứng minh được $AH$ vuông góc với $(SBC)$ và tìm được góc giữa đường thẳng $AC$ và mặt phẳng $(SBC)$ là $\widehat{ACH}$. Đáp số $\arcsin\frac{\sqrt{21}}{7}$.
 
-**Ví dụ 2.**Cho hình chóp $S.ABC$ có đáy là tam giác đều cạnh $a.$ Cạnh bên $SA$ bằng $2a$ và vuông góc với đáy $(ABC).$
+**Ví dụ 2.** Cho hình chóp $S.ABC$ có đáy là tam giác đều cạnh $a.$ Cạnh bên $SA$ bằng $2a$ và vuông góc với đáy $(ABC).$
 
 1. Tính góc giữa đường thẳng $SB$ và mặt phẳng $(ABC).$
 
@@ -145,10 +145,10 @@ Tương tự, các em cũng có thể dễ dàng tìm được góc giữa cạn
 
    Suy ra, góc giữa đường thẳng $SN$ với mặt phẳng $(SAB)$ là $\widehat{NSK}$. Tính được $\tan\widehat{NSK}=\frac{\sqrt{3}}{\sqrt{17}}$ và suy ra số đo góc cần tìm.
 
-**Ví dụ 3.**Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$. Trung tuyến $SI$ của tam giác đều $SAB$ vuông góc với đáy $(ABCD)$ của hình chóp. Chứng minh hai đường thẳng $SC$ và $SD$ tạo với mặt phẳng $(SAB)$ hai góc bằng nhau. Tính góc giữa đường thẳng $CM$ và mặt phẳng $(SAB)$, trong đó $M$ là trung điểm $SD.$
+**Ví dụ 3.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$. Trung tuyến $SI$ của tam giác đều $SAB$ vuông góc với đáy $(ABCD)$ của hình chóp. Chứng minh hai đường thẳng $SC$ và $SD$ tạo với mặt phẳng $(SAB)$ hai góc bằng nhau. Tính góc giữa đường thẳng $CM$ và mặt phẳng $(SAB)$, trong đó $M$ là trung điểm $SD.$
 
-**Hướng dẫn.**Hai đường thẳng $SC$ và $SD$ cùng tạo với mặt phẳng $(SAB)$ góc $45^\circ.$ Hình chiếu của điểm $C$ lên mặt phẳng $(SAB)$ là $B.$ Hình chiếu của điểm $M$ lên mặt phẳng $(SAB)$ là trung điểm $N$ của $SA.$ Góc giữa đường thẳng $CM$ và mặt phẳng $(SAB)$ bằng $30^\circ.$
+**Hướng dẫn.** Hai đường thẳng $SC$ và $SD$ cùng tạo với mặt phẳng $(SAB)$ góc $45^\circ.$ Hình chiếu của điểm $C$ lên mặt phẳng $(SAB)$ là $B.$ Hình chiếu của điểm $M$ lên mặt phẳng $(SAB)$ là trung điểm $N$ của $SA.$ Góc giữa đường thẳng $CM$ và mặt phẳng $(SAB)$ bằng $30^\circ.$
 
-**Ví dụ 4.**Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$, tâm $O$ và $SO$ vuông góc với đáy. Gọi $M, N$ lần lượt là trung điểm của các cạnh $SA$ và $BC$. Biết góc giữa đường thẳng $MN$ và mặt phẳng $(ABCD)$ bằng $60^\circ$. Tính độ dài $MN$ và $SO$. Tính góc giữa đường thẳng $MN$ và mặt phẳng $(SBD)$.
+**Ví dụ 4.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$, tâm $O$ và $SO$ vuông góc với đáy. Gọi $M, N$ lần lượt là trung điểm của các cạnh $SA$ và $BC$. Biết góc giữa đường thẳng $MN$ và mặt phẳng $(ABCD)$ bằng $60^\circ$. Tính độ dài $MN$ và $SO$. Tính góc giữa đường thẳng $MN$ và mặt phẳng $(SBD)$.
 
-**Hướng dẫn.**Gọi $H$ là trung điểm của $AO$ thì $MH$ song song với $SO$ nên $H$ là hình chóp vuông góc của $M$ lên mặt phẳng $(ABCD)$… Đáp số $MN=\frac{a\sqrt{10}}{2},SO=\frac{a\sqrt{30}}{2};\sin\left(MN,(SBD)\right)=\frac{1}{\sqrt{5}}$
+**Hướng dẫn.** Gọi $H$ là trung điểm của $AO$ thì $MH$ song song với $SO$ nên $H$ là hình chóp vuông góc của $M$ lên mặt phẳng $(ABCD)$… Đáp số $MN=\frac{a\sqrt{10}}{2},SO=\frac{a\sqrt{30}}{2};\sin\left(MN,(SBD)\right)=\frac{1}{\sqrt{5}}$

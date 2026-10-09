@@ -126,12 +126,70 @@ def clean_math_body(math_str):
     math_str = re.sub(r'[ \t]+', ' ', math_str).strip()
     return math_str
 
-def convert_html_to_markdown(raw_html, image_map, doc_map=None):
+def normalize_markdown_formatting(text):
+    if not text:
+        return text
+    # 1. Triple bold-italic with missing space
+    text = re.sub(r'(\*\*\*[^\*\r\n]+?\*\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9*])', r'\1 \2', text)
+
+    # 2. Bold with leading/trailing spaces inside markers
+    def clean_bold(m):
+        lead, body, trail = m.group(1), m.group(2).strip(), m.group(3)
+        return ((' ' if lead else '') + f"**{body}**" + (' ' if trail else ''))
+    text = re.sub(r'\*\*([\t\u00a0 ]*)([^\*\r\n]+?)([\t\u00a0 ]*)\*\*', clean_bold, text)
+
+    # 3. Italic with leading/trailing spaces inside markers
+    def clean_italic(m):
+        lead, body, trail = m.group(1), m.group(2).strip(), m.group(3)
+        return ((' ' if lead else '') + f"*{body}*" + (' ' if trail else ''))
+    text = re.sub(r'(?<!\*)\*([\t\u00a0 ]*)([^\*\r\n]+?)([\t\u00a0 ]*)\*(?!\*)', clean_italic, text)
+
+    # 4. Missing space after closing ** or * when followed by word character or punctuation followed by ([
+    text = re.sub(r'(\*\*(?!\s)[^\*\r\n]+?(?<!\s)\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9])', r'\1 \2', text)
+    text = re.sub(r'(\*\*(?!\s)[^\*\r\n]+?[:.?!](?<!\s)\*\*)([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9(\[])', r'\1 \2', text)
+    text = re.sub(r'((?<!\*)\*(?!\s)[^\*\r\n]+?(?<!\s)\*(?!\*))([A-Za-z0-9\u00C0-\u024F\u1EA0-\u1EF9])', r'\1 \2', text)
+
+    return text
+
+def convert_html_to_markdown(raw_html, image_map, doc_map=None, slug=""):
     if doc_map is None:
         doc_map = {}
     text = raw_html
 
-    # Step 0: Normalize LaTeX delimiters & environment names
+    # Step 1: Code blocks & Inline code (MUST BE EXTRACTED FIRST to protect programming symbols like $, $$, $var)
+    code_blocks = {}
+    def save_code(m):
+        pre_tag, inner = m.group(1), m.group(2)
+        lang = 'python' if ('python' in slug.lower() or 'thap-ha-noi' in slug.lower()) else ''
+        lang_m = re.search(r'data-enlighter-language=[\"\']([^\"\']+)[\"\']', pre_tag, re.I)
+        if lang_m and lang_m.group(1).lower() not in ('generic', 'none', 'null', 'raw'):
+            lang = lang_m.group(1).lower()
+        else:
+            lang_class = re.search(r'language-([a-zA-Z0-9_-]+)', pre_tag, re.I)
+            if lang_class:
+                lang = lang_class.group(1).lower()
+        code_text = re.sub(r'<br\s*/?>', '\n', inner)
+        code_text = re.sub(r'<[^>]+>', '', code_text)
+        code_text = html.unescape(code_text).strip('\n')
+        key = f"__CODE_BLOCK_{len(code_blocks)}__"
+        code_blocks[key] = f"\n\n```{lang}\n{code_text}\n```\n\n"
+        return key
+    text = re.sub(r'(<pre[^>]*>)([\s\S]*?)</pre>', save_code, text)
+
+    inline_codes = {}
+    text = re.sub(r'<code[^>]*>\s*(<a\s+[^>]*>)([\s\S]*?)</a>\s*</code>', r'\1<code>\2</code></a>', text)
+
+    def save_inline_code(m):
+        code_text = html.unescape(m.group(1))
+        if '\n' in code_text or not code_text.strip():
+            return code_text
+        key = f"__CODE_INLINE_{len(inline_codes)}__"
+        inline_codes[key] = f"`{code_text.strip()}`"
+        return key
+
+    text = re.sub(r'<code[^>]*>([\s\S]*?)</code>', save_inline_code, text)
+
+    # Step 2: Normalize LaTeX delimiters & environment names
     text = re.sub(r'\\\[([\s\S]*?)\\\]', r'$$\1$$', text)
     text = re.sub(r'\\\(([\s\S]*?)\\\)', r'$\1$', text)
     # Convert \begin{align} / \begin{align*} to \begin{aligned} everywhere for universal KaTeX compatibility
@@ -140,10 +198,10 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
     # Fix accidental double dollar typos with spaces: "$ $ABCD" -> "$ABCD"
     text = re.sub(r'\$\s+\$(?=[A-Za-z0-9\\])', '$', text)
 
-    # Step 1: Protect Math tokens safely
+    # Step 3: Protect Math tokens safely
     math_tokens = {}
     
-    # 1.1 Display math $$ ... $$
+    # 3.1 Display math $$ ... $$
     def replace_display_math(m):
         math_content = clean_math_body(m.group(1))
         token = f"__MATH_DISPLAY_{len(math_tokens)}__"
@@ -152,7 +210,7 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
 
     text = re.sub(r'\$\$([\s\S]*?)\$\$', replace_display_math, text)
 
-    # 1.2 Inline math $ ... $ (ngăn match xuyên qua các thẻ block như </p>, </li>, v.v.)
+    # 3.2 Inline math $ ... $ (ngăn match xuyên qua các thẻ block như </p>, </li>, v.v.)
     def replace_inline_math(m):
         math_content = clean_math_body(m.group(1))
         # Chuẩn hóa inline math trên 1 dòng duy nhất để tránh bị lỗi markdown tokenizer
@@ -164,7 +222,7 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
     block_tags = r'</?(?:p|div|h[1-6]|li|ul|ol|table|pre)\b'
     text = re.sub(rf'(?<!\$)\$(?!\$)((?:(?!{block_tags})[^\$])+?)(?<!\$)\$(?!\$)', replace_inline_math, text)
 
-    # 1.3 Standalone multiline environments: now only for those NOT already enclosed in $$ or $
+    # 3.3 Standalone multiline environments: now only for those NOT already enclosed in $$ or $
     def replace_standalone_env(m):
         math_content = clean_math_body(m.group(1))
         token = f"__MATH_DISPLAY_{len(math_tokens)}__"
@@ -172,15 +230,6 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
         return token
 
     text = re.sub(r'\\begin\{(?:aligned|gather\*?)\}([\s\S]*?)\\end\{(?:aligned|gather\*?)\}', replace_standalone_env, text)
-
-    # Step 2: Code blocks
-    code_blocks = {}
-    def save_code(m):
-        key = f"__CODE_BLOCK_{len(code_blocks)}__"
-        code_text = html.unescape(m.group(1))
-        code_blocks[key] = f"\n```\n{code_text.strip()}\n```\n"
-        return key
-    text = re.sub(r'<pre[^>]*><code[^>]*>([\s\S]*?)</code></pre>', save_code, text)
 
     # Step 3: Images
     def replace_img(match):
@@ -215,8 +264,8 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
             item_clean = re.sub(r'<br\s*/?>', '\n\n', item_clean)
             item_clean = re.sub(r'<p[^>]*>([\s\S]*?)</p>', r'\n\n\1\n\n', item_clean)
             item_clean = re.sub(r'</?(?:span|div)[^>]*>', '', item_clean).strip()
-            # Tách các khối Display Math và hình ảnh thành các đoạn riêng để thụt lề chuẩn trong list item
-            item_clean = re.sub(r'(__MATH_DISPLAY_\d+__|!\[[^\]]*\]\([^)]+\))', r'\n\n\1\n\n', item_clean)
+            # Tách các khối Display Math, Code blocks và hình ảnh thành các đoạn riêng để thụt lề chuẩn trong list item
+            item_clean = re.sub(r'(__MATH_DISPLAY_\d+__|__CODE_BLOCK_\d+__|!\[[^\]]*\]\([^)]+\))', r'\n\n\1\n\n', item_clean)
             
             paras = [p.strip() for p in re.split(r'\n{2,}', item_clean) if p.strip()]
             if not paras:
@@ -296,6 +345,21 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
 
     # Step 10: Restore code blocks and math tokens
     for k, v in code_blocks.items():
+        if v.startswith('\n\n```'):
+            pattern = re.compile(rf'(^[ \t]*){re.escape(k)}', re.MULTILINE)
+            def repl_indented_code(m):
+                indent = m.group(1)
+                lines = v.strip('\n').split('\n')
+                indented = '\n'.join(f"{indent}{l}" if l.strip() else "" for l in lines)
+                return f"\n\n{indented}\n\n"
+            if pattern.search(text):
+                text = pattern.sub(repl_indented_code, text)
+            else:
+                text = text.replace(k, v)
+        else:
+            text = text.replace(k, v)
+
+    for k, v in inline_codes.items():
         text = text.replace(k, v)
         
     for k, v in math_tokens.items():
@@ -318,6 +382,8 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None):
             text = text.replace(k, v)
 
     text = re.sub(r'\n{3,}', '\n\n', text).strip()
+    # Step 11: Normalize Markdown formatting
+    text = normalize_markdown_formatting(text)
     return text
 
 def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=None, tags=None):
@@ -468,7 +534,7 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
             doc_map[urllib.parse.unquote(full_url)] = local_doc_link
             doc_map[urllib.parse.unquote(clean_url)] = local_doc_link
 
-    body_md = convert_html_to_markdown(content_html, image_map, doc_map)
+    body_md = convert_html_to_markdown(content_html, image_map, doc_map, slug=slug)
     
     # Remove redundant top H1 if identical to title
     body_md = re.sub(rf'^#\s+{re.escape(title)}\s*\n+', '', body_md).strip()
@@ -476,12 +542,40 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
     # Remove trailing WordPress comments and discussion sections
     body_md = re.split(r'\n##\s+(?:Comments|Bình luận)\b|\n###\s+(?:Leave a Reply|One response to|\d+\s+responses?\s+to)\b', body_md)[0].strip()
     
-    # Default category fallback
-    if not category:
+    out_file = os.path.join(POST_DIR, f"{slug}.md")
+    existing_fm = {}
+    if os.path.exists(out_file):
+        try:
+            with open(out_file, 'r', encoding='utf-8') as ef:
+                parts = ef.read().split('---', 2)
+                if len(parts) >= 3:
+                    existing_fm = yaml.safe_load(parts[1]) or {}
+        except Exception:
+            pass
+
+    # Category
+    if existing_fm.get('category'):
+        category = existing_fm['category']
+    elif not category:
         category = 'Toán học' if 'toan' in slug else ('Hóa học' if 'hoa' in slug else 'Các môn khác')
         
-    if not tags:
+    # Tags
+    if existing_fm.get('tags'):
+        tags = existing_fm['tags']
+    elif not tags:
         tags = [category]
+
+    # Type
+    if existing_fm.get('type'):
+        p_type = existing_fm['type']
+
+    # Grade
+    if existing_fm.get('grade') is not None:
+        grade = existing_fm['grade']
+
+    # Date
+    if existing_fm.get('date'):
+        date_val = existing_fm['date']
         
     front_matter_dict = {
         'title': title,
@@ -491,7 +585,7 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
         'date': date_val,
         'tags': tags
     }
-    if grade:
+    if grade is not None:
         if isinstance(grade, str):
             grade_num = re.search(r'\d+', grade)
             if grade_num and 1 <= int(grade_num.group(0)) <= 12:
@@ -502,7 +596,6 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
     front_matter_str = yaml.dump(front_matter_dict, allow_unicode=True, sort_keys=False).strip()
     full_post_md = f"---\n{front_matter_str}\n---\n\n{body_md}\n"
     
-    out_file = os.path.join(POST_DIR, f"{slug}.md")
     with open(out_file, 'w', encoding='utf-8') as f:
         f.write(full_post_md)
         

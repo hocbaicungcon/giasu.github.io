@@ -136,11 +136,11 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/x-co-cong-thuc-phan-tu-la-c3h10n2o2-cho-106-gam-x-pha%cc%89n-ung-voi-mo%cc%a3t-luo%cc%a3ng-vua-du-dung-di%cc%a3ch-naoh.html))*****Ví dụ 2:*** Hợp chất A có công thức phân tử C3H9NO2. Cho 8,19 gam A tác dụng với 100 ml dung dịch KOH 1M. Kết thúc phản ứng thu được dung dịch X và khí Y có khả năng làm xanh quỳ tím ẩm. Cô cạn dung dịch X được 9,38 gam chất rắn khan (quá trình cô cạn chỉ có nước bay hơi). Công thức cấu tạo thu gọn của A là
 
-**A.**CH3CH2COOH3NCH3. **B.**CH3COOH3NCH3.
+**A.** CH3CH2COOH3NCH3. **B.** CH3COOH3NCH3.
 
-**C.**CH3CH2COONH4. **D.**HCOOH3NCH2CH3.
+**C.** CH3CH2COONH4. **D.** HCOOH3NCH2CH3.
 
-*(Đề thi thử THPT Quốc Gia lần 1****–****THPT Trần Bình Trọng****–****Phú Yên, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 1****–*** *THPT Trần Bình Trọng****–*** *Phú Yên, năm 2015)*
 
 **([Lời giải](/bai-viet/x-co-cong-thuc-phan-tu-la-c3h10n2o2-cho-106-gam-x-pha%cc%89n-ung-voi-mo%cc%a3t-luo%cc%a3ng-vua-du-dung-di%cc%a3ch-naoh-dun-nong-thu-duo%cc%a3c-97-gam-muoi-khan-va-khi-y-ba%cc%a3c.html))*****Ví dụ 3:*** X có công thức phân tử là C3H10N2O2. Cho 10,6 gam X phản ứng với một lượng vừa đủ dung dịch NaOH đun nóng, thu được 9,7 gam muối khan và khí Y bậc 1 làm xanh quỳ ẩm. Công thức cấu tạo của X là :
 
@@ -148,7 +148,7 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
  **C.** NH2CH2CH2COONH4. **D.** NH2CH2COONH3CH3.
 
-*(Đề thi thử Đại học lần 1****–****THPT chuyên Nguyễn Huệ****–**********Hà Nội, năm 2014)*
+*(Đề thi thử Đại học lần 1****–*** *THPT chuyên Nguyễn Huệ****–*** *******Hà Nội, năm 2014)*
 
 **([Lời giải](/bai-viet/cho-chat-huu-co-x-co-cong-thuc-phan-tu-c2h8o3n2-tac-dung-voi-dung-dich-naoh.html))*****Ví dụ 4:*** Cho chất hữu cơ X có công thức phân tử C2H8O3N2 tác dụng với dung dịch NaOH, thu được chất hữu cơ đơn chức Y và các chất vô cơ. Khối lượng phân tử (theo đvC) của Y là : 
 
@@ -160,7 +160,7 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **A.** 17 gam. **B.** 19 gam. **C.** 15 gam. **D.** 21 gam.
 
-*(Đề thi thử THPT Quốc Gia lần 2****–****THPT Hùng Vương****–****Phú Thọ, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 2****–*** *THPT Hùng Vương****–*** *Phú Thọ, năm 2015)*
 
 **([Lời giải](/bai-viet/cho-hon-hop-x-gom-hai-chat-huu-co-co-cung-cong-thuc-phan-tu-c2h7no2-tac-dung-vua-du-voi-dung-dich-naoh-dun-nong.html))*****Ví dụ 6:*** Cho hỗn hợp X gồm hai chất hữu cơ có cùng công thức phân tử C2H7NO2 tác dụng vừa đủ với dung dịch NaOH đun nóng, thu được dung dịch Y và 4,48 lít hỗn hợp Z (ở đktc) gồm hai khí (đều làm xanh giấy quỳ ẩm). Tỉ khối hơi của Z đối với H2 bằng 13,75. Cô cạn dung dịch Y thu được khối lượng muối khan là :
 
@@ -176,13 +176,13 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/hop-chat-huu-co-x-co-cong-thuc-c2h8n2o4-khi-cho-124-gam-x-tac-dung-voi-200-ml-dung-dich-naoh.html))*****Ví dụ 8:*** Hợp chất hữu cơ X có công thức C2H8N2O4. Khi cho 12,4 gam X tác dụng với 200 ml dung dịch NaOH 1,5M, thu được 4,48 lít (đktc) khí X làm xanh quỳ tím ẩm. Cô cạn dung dịch sau phản ứng thu được m gam chất rắn khan. Giá trị của m là:
 
-**A.**17,2. **B.**13,4. **C.**16,2. **D.**17,4.
+**A.** 17,2. **B.** 13,4. **C.** 16,2. **D.** 17,4.
 
 *(Đề thi thử Đại học lần 1 – THPT Quỳnh Lưu 1 – Nghệ An, năm học 2012 – 2013)*
 
 **([Lời giải](/bai-viet/mot-chat-huu-co-x-co-cong-thuc-phan-tu-la-c4h11no2-cho-x-tac-dung-hoan-toan-voi-100-ml-dung-dich-naoh.html))*****Ví dụ 9:*** Một chất hữu cơ X có công thức phân tử là C4H11NO2. Cho X tác dụng hoàn toàn với 100 ml dung dịch NaOH 2M, sau phản ứng thu được dung dịch X và 2,24 lít khí Y (đktc). Nếu trộn lượng khí Y này với 3,36 lít H2 (đktc) thì được hỗn hợp khí có tỉ khối so với H2 là 9,6. Khối lượng chất rắn thu được khi cô cạn dung dịch X là
 
-**A.**8,62 gam. **B.**12,3 gam. **C.**8,2 gam. **D.**12,2 gam.
+**A.** 8,62 gam. **B.** 12,3 gam. **C.** 8,2 gam. **D.** 12,2 gam.
 
 *(Đề thi thử Đại học lần 1 – THPT Quất Lâm – Nam Định,*
 
@@ -190,53 +190,53 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/hop-chat-huu-co-x-co-cong-thuc-phan-tu-trung-voi-cong-thuc-don-gian-nhat-chua-c-h-o-n-dot-chay-hoan-toan-108-gam-x.html))*****Ví dụ 10:*** Hợp chất hữu cơ X có công thức phân tử trùng với công thức đơn giản nhất chứa C, H, O, N. Đốt cháy hoàn toàn 10,8 gam X thu được 4,48 lít CO2, 7,2 gam H2O và 2,24 lít khí N2 (đktc). Nếu cho 0,1 mol chất X trên tác dụng với dung dịch chứa 0,2 mol NaOH đun nóng thu được chất khí làm xanh giấy quỳ tím ẩm và dung dịch Y. Cô cạn dung dịch Y thu được m gam chất rắn khan. Giá trị của m là
 
-**A.**15. **B.**21,8. **C.**5,7. **D.**12,5.
+**A.** 15. **B.** 21,8. **C.** 5,7. **D.** 12,5.
 
-*(Đề thi thử THPT Quốc Gia lần 1****–****THPT Đoàn Thượng****–****Hải Dương, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 1****–*** *THPT Đoàn Thượng****–*** *Hải Dương, năm 2015)*
 
-**([Lời giải](/bai-viet/cho-165-gam-chat-a-co-cong-thuc-phan-tu-la-c2h10o3n2-vao-200-gam-dung-dich-naoh-8.html))*****Ví dụ 11:*** Cho 16,5 gam chất A có công thức phân tử là C2H10O3N2 vào 200 gam dung dịch NaOH 8%. Sau khi các phản ứng xảy ra hoàn toàn thu được dung dịch B và khí C. Tổng nồng độ phần trăm các chất có trong B ***gần nhất***với giá trị******:
+**([Lời giải](/bai-viet/cho-165-gam-chat-a-co-cong-thuc-phan-tu-la-c2h10o3n2-vao-200-gam-dung-dich-naoh-8.html))*****Ví dụ 11:*** Cho 16,5 gam chất A có công thức phân tử là C2H10O3N2 vào 200 gam dung dịch NaOH 8%. Sau khi các phản ứng xảy ra hoàn toàn thu được dung dịch B và khí C. Tổng nồng độ phần trăm các chất có trong B * **gần nhất***với giá trị******:
 
-**A.**8%. **B.**9%. **C.**12%. **D.**11%.
+**A.** 8%. **B.** 9%. **C.** 12%. **D.** 11%.
 
-*(Đề thi thử THPT Quốc Gia lần 1****–****THPT chuyên Hùng Vương****–****Phú Thọ, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 1****–*** *THPT chuyên Hùng Vương****–*** *Phú Thọ, năm 2015)*
 
 **([Lời giải](/bai-viet/cho-hon-hop-x-gom-2-chat-huu-co-co-cung-cong-thuc-phan-tu-c3h10n2o2-tac-dung-vua-du-voi-dung-dich-naoh.html))*****Ví dụ 12:*** Cho hỗn hợp X gồm 2 chất hữu cơ có cùng công thức phân tử C3H10N2O2 tác dụng vừa đủ với dung dịch NaOH và đun nóng, thu được dung dịch Y và 4,48 lít hỗn hợp Z (ở đktc) gồm hai khí (đều làm xanh giấy quỳ ẩm) hơn kém nhau một nguyên tử C. Tỉ khối hơi của Z đối với H2 bằng 13,75. Cô cạn dung dịch Y thu được khối lượng muối khan là:
 
-**A.**16,5 gam. **B.** 20,1 gam. **C.**8,9 gam. **D.**15,7 gam.
+**A.** 16,5 gam. **B.** 20,1 gam. **C.** 8,9 gam. **D.** 15,7 gam.
 
-*(Đề thi thử THPT Quốc Gia lần 1****–****THPT Chúc Động**–**Hà Nội, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 1****–*** *THPT Chúc Động**–** Hà Nội, năm 2015)*
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-chat-y-c2h10o3n2-va-chat-z-c2h7o2n-cho-1485-gam-x-phan-ung-vua-du-voi-dung-dich-naoh.html))*****Ví dụ 13:*** Hỗn hợp X gồm chất Y (C2H10O3N2) và chất Z (C2H7O2N). Cho 14,85 gam X phản ứng vừa đủ với dung dịch NaOH và đun nóng, thu được dung dịch M và 5,6 lít (đktc) hỗn hợp T gồm 2 khí (đều làm xanh quỳ tím tẩm nước cất). Cô cạn toàn bộ dung dịch M thu được m gam muối khan. Giá trị của m có thể là
 
-**A.**11,8. **B.**12,5. **C.**14,7.  **D.**10,6.
+**A.** 11,8. **B.** 12,5. **C.** 14,7.  **D.** 10,6.
 
-*(Đề thi thử THPT Quốc Gia lần 1****–****THPT chuyên Đại học Vinh****–****Nghệ An, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 1****–*** *THPT chuyên Đại học Vinh****–*** *Nghệ An, năm 2015)*
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-cac-chat-co-cong-thuc-phan-tu-la-c2h7o3n-va-c2h10o3n2-khi-cho-cac-chat-trong-x-tac-dung.html))*****Ví dụ 14:*** Hỗn hợp X gồm các chất có công thức phân tử là C2H7O3N và C2H10O3N2. Khi cho các chất trong X tác dụng với dung dịch HCl hoặc dung dịch NaOH dư đun nóng nhẹ đều có khí thoát ra. Lấy 0,1 mol X cho vào dung dịch chứa 0,25 mol KOH. Sau phản ứng cô cạn dung dịch được chất rắn Y, nung nóng Y đến khối lượng không đổi được m gam chất rắn. Giá trị của m là:
 
-**A.**16,9 gam. **B.**17,25 gam. **C.**18,85 gam. **D.**16,6 gam.
+**A.** 16,9 gam. **B.** 17,25 gam. **C.** 18,85 gam. **D.** 16,6 gam.
 
 *(Đề thi thử Đại học lần 1 – THPT Lương Đắc Bằng – Thanh Hóa, năm 2014)*
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-2-chat-co-cong-thuc-phan-tu-la-c3h12n2o3-va-c2h8n2o3-cho-340-gam-x-phan-ung-vua-du-voi.html))*****Ví dụ 15:*** Hỗn hợp X gồm 2 chất có công thức phân tử là C3H12N2O3 và C2H8N2O3. Cho 3,40 gam X phản ứng vừa đủ với dung dịch NaOH (đun nóng), thu được dung dịch Y chỉ gồm các chất vô cơ và 0,04 mol hỗn hợp 2 chất hữu cơ đơn chức (đều làm xanh giấy quỳ tím ẩm). Cô cạn Y, thu được m gam muối khan. Giá trị của m là
 
-**A.** 3,12. **B.** 2,76.  **C.**3,36. **D.**2,97.
+**A.** 3,12. **B.** 2,76.  **C.** 3,36. **D.** 2,97.
 
 *(Kỳ thi THPT Quốc Gia năm 2015)*
 
-**([Lời giải](/bai-viet/cho-185-gam-chat-huu-co-a-co-cong-thuc-phan-tu-c3h11n3o6-tac-dung-vua-du-voi-300-ml-dung-dich-naoh.html))*****Ví dụ 16:*** Cho 18,5 gam chất hữu cơ A (có công thức phân tử C3H11N3O6) tác dụng vừa đủ với 300 ml dung dịch NaOH 1M tạo thành nước, 1 chất hữu cơ đa chức bậc I và m gam hỗn hợp muối vô cơ. Giá trị ***gần đúng nhất*** của m là
+**([Lời giải](/bai-viet/cho-185-gam-chat-huu-co-a-co-cong-thuc-phan-tu-c3h11n3o6-tac-dung-vua-du-voi-300-ml-dung-dich-naoh.html))*****Ví dụ 16:*** Cho 18,5 gam chất hữu cơ A (có công thức phân tử C3H11N3O6) tác dụng vừa đủ với 300 ml dung dịch NaOH 1M tạo thành nước, 1 chất hữu cơ đa chức bậc I và m gam hỗn hợp muối vô cơ. Giá trị * **gần đúng nhất*** của m là
 
 **A.** 19,05. **B.** 25,45. **C.** 21,15. **D.** 8,45.
 
 **III. BÀI TẬP ÁP DỤNG**
 
-**** Mức độ vận dụng***
+** **Mức độ vận dụng***
 
 **([Lời giải](/bai-viet/cho-182-gam-hop-chat-huu-co-mach-ho-x-co-cong-thuc-phan-tu-c3h9o2n-tac-dung-vua-du-voi-dung-dich-naoh.html))****Câu 1:** Cho 1,82 gam hợp chất hữu cơ, mạch hở X có công thức phân tử C3H9O2N tác dụng vừa đủ với dung dịch NaOH đun nóng, thu được khí Y và dung dịch Z. Cô cạn Z thu được 1,64 gam muối khan. Tên gọi của X là :
 
-**A.**Etylamoni fomat. **B.**Đimetylamoni fomat. 
+**A.** Etylamoni fomat. **B.** Đimetylamoni fomat. 
 
-**C.**Amoni propionat. **D.**Metylamoni axetat.
+**C.** Amoni propionat. **D.** Metylamoni axetat.
 
 **([Lời giải](/bai-viet/cho-axit-cacboxylic-x-phan-ung-voi-chat-y-thu-duoc-mot-muoi-co-cong-thuc-phan-tu-c3h9o2n.html))****Câu 2:** Cho axit cacboxylic X phản ứng với chất Y, thu được một muối có công thức phân tử C3H9O2N (sản phẩm duy nhất). Số cặp chất X và Y thỏa mãn điều kiện trên là
 
@@ -246,7 +246,7 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/x-co-cong-thuc-c4h14o3n2-khi-cho-x-tac-dung-voi-dung-dich-naoh-thi-thu-duoc-hon-hop-y-gom-2-khi.html))****Câu 3:** X có công thức C4H14O3N2. Khi cho X tác dụng với dung dịch NaOH thì thu được hỗn hợp Y gồm 2 khí ở điều kiện thường và đều có khả năng làm xanh quỳ tím ẩm. Số công thức cấu tạo phù hợp của X là :
 
-**A.**5. **B.**3. **C.**4. **D.**2.
+**A.** 5. **B.** 3. **C.** 4. **D.** 2.
 
  *(Đề thi thử Đại học lần 2 – THPT chuyên Nguyễn Huệ – Hà Nội, năm học 2011 – 2012)*
 
@@ -258,9 +258,9 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/x-la-mot-dan-xuat-cua-benzen-co-cong-thuc-phan-tu-la-c7h9no2-cho-139-gam-x-tac-dung-vua-du-voi.html))****Câu 5:** X là một dẫn xuất của benzen, có công thức phân tử là C7H9NO2. Cho 13,9 gam X tác dụng vừa đủ với dung dịch NaOH. Cô cạn dung dịch sau phản ứng thu được 14,4 gam muối khan Y. Y tác dụng hết với dung dịch HCl dư, thu được chất hữu cơ Z. Khối lượng phân tử của Z là
 
-******A.**122. **B.**143,5. **C.**144. **D.**161,5.
+******A.** 122. **B.** 143,5. **C.** 144. **D.** 161,5.
 
-*(Đề thi thử Đại học lần 1****–****THPT Hồng Lĩnh****–****Hà Tĩnh, năm 2014)*
+*(Đề thi thử Đại học lần 1****–*** *THPT Hồng Lĩnh****–*** *Hà Tĩnh, năm 2014)*
 
 **([Lời giải](/bai-viet/cho-hai-hop-chat-huu-co-x-y-co-cong-thuc-phan-tu-la-c3h9no2-cho-hon-hop-x-va-y-phan-ung-voi.html))****Câu 6:** Cho hai hợp chất hữu cơ X, Y có công thức phân tử là C3H9NO2. Cho hỗn hợp X và Y phản ứng với dung dịch NaOH, thu được muối của hai axit hữu cơ thuộc đồng đẳng kế tiếp và hai chất hữu cơ Z và T. Tổng khối lượng phân tử của Z và T là
 
@@ -276,27 +276,27 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/hop-chat-x-co-cong-thuc-phan-tu-c2h8o3n2-cho-162-gam-x-phan-ung-het-voi-400-ml-dung-dich-koh-1m.html))****Câu 8:** Hợp chất X có công thức phân tử C2H8O3N2. Cho 16,2 gam X phản ứng hết với 400 ml dung dịch KOH 1M. Cô cạn dung dịch thu được sau phản ứng thì được phần hơi và phần chất rắn. Trong phần hơi có chứa amin đa chức, trong phần chất rắn chỉ chứa các chất vô cơ. Khối lượng phần chất rắn là
 
-**A.**26,75 gam. **B.**12,75 gam. **C.**20,7 gam. **D.**26,3 gam.
+**A.** 26,75 gam. **B.** 12,75 gam. **C.** 20,7 gam. **D.** 26,3 gam.
 
 *(Đề thi thử Đại học lần 4 – THPT chuyên – Đại học Vinh, năm học 2012 – 2013)*
 
 **([Lời giải](/bai-viet/cho-62-gam-hop-chat-huu-co-x-co-cong-thuc-phan-tu-la-c3h12o3n2-tac-dung-vua-du-voi.html))****Câu 9:** Cho 6,2 gam hợp chất hữu cơ X có công thức phân tử là C3H12O3N2 tác dụng vừa đủ với 100 ml dung dịch NaOH 1M, thu được một chất hữu cơ ở thể khí có thể tích là V lít (ở đktc) và dung dịch Z chỉ chứa các chất vô cơ, cô cạn dung dịch Z thu được m gam chất rắn khan. Giá trị của m và V lần lượt là :
 
-**A.**2,24 và 9,3. **B.**3,36 và 9,3. **C.**2,24 và 8,4. **D.**2,24 và 5,3.
+**A.** 2,24 và 9,3. **B.** 3,36 và 9,3. **C.** 2,24 và 8,4. **D.** 2,24 và 5,3.
 
 *(Đề thi thử Đại học lần 1 – THPT Cẩm Lý – Bắc Giang, năm học 2013 – 2014)*
 
 **([Lời giải](/bai-viet/x-co-cong-thuc-phan-tu-c3h12n2o3-x-tac-dung-voi-dung-dich-naoh-dun-nong-nhe.html))****Câu 10:** X có công thức phân tử C3H12N2O3. X tác dụng với dung dịch NaOH (đun nóng nhẹ) hoặc HCl đều có khí thoát ra. Lấy 18,6 gam X tác dụng hoàn toàn với 400 ml dung dịch NaOH 1M. Sau phản ứng cô cạn dung dịch rồi nung nóng chất rắn đến khối lượng không đổi thì được m gam. Xác định m?
 
-**A.**22,75. **B.**19,9. **C.**20,35. **D.**21,20.
+**A.** 22,75. **B.** 19,9. **C.** 20,35. **D.** 21,20.
 
 *(Đề thi thử ĐH lần 4 – THPT Quỳnh Lưu 1 – Nghệ An, năm học 2011 – 2012)*
 
 **([Lời giải](/bai-viet/cho-01-mol-chat-x-c2h8o3n2-tac-dung-voi-dung-dich-chua-02-mol-naoh-dun-nong.html))****Câu 11:** Cho 0,1 mol chất X (C2H8O3N2) tác dụng với dung dịch chứa 0,2 mol NaOH đun nóng thu được chất khí làm xanh giấy quỳ tím tẩm ướt và dung dịch Y. Cô cạn dung dịch Y được m gam chất rắn khan. Giá trị của m là
 
-**A.**5,7. **B.**12,5. **C.**15,5. **D.**21,8.
+**A.** 5,7. **B.** 12,5. **C.** 15,5. **D.** 21,8.
 
-*(Đề thi chọn HSG tỉnh Thái Bình, năm học 2012****–****2013)*
+*(Đề thi chọn HSG tỉnh Thái Bình, năm học 2012****–*** *2013)*
 
 **([Lời giải](/bai-viet/a-co-cong-thuc-phan-tu-la-c2h7o2n-cho-77-gam-a-tac-dung-voi-200-ml-dung-dich-naoh.html))****Câu 12:** A có công thức phân tử là C2H7O2N. Cho 7,7 gam A tác dụng với 200 ml dung dịch NaOH 1M thu được dung dịch X và khí Y, tỉ khối của Y so với H2 nhỏ hơn 10. Cô cạn dung dịch X thu được m gam chất rắn. Giá trị của m là :
 
@@ -316,13 +316,13 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/cho-01-mol-chat-x-co-cong-thuc-la-c2h12o4n2s-tac-dung-voi-dung-dich-chua-035-mol-naoh-dun-nong.html))****Câu 16:** Cho 0,1 mol chất X có công thức là C2H12O4N2S tác dụng với dung dịch chứa 0,35 mol NaOH đun nóng thu được chất khí làm xanh giấy quỳ ẩm và dung dịch Y. Cô cạn dung dịch Y thu được m gam chất rắn khan. Giá trị của m là :
 
-**A.**28,2 gam. **B.**26,4 gam. **C.**15 gam. **D.**20,2 gam.
+**A.** 28,2 gam. **B.** 26,4 gam. **C.** 15 gam. **D.** 20,2 gam.
 
 **([Lời giải](/bai-viet/cho-3225-gam-mot-muoi-x-co-cong-thuc-phan-tu-la-ch7o4ns-tac-dung-het-voi-750-ml-dung-dich-naoh.html))****Câu 17:** Cho 32,25 gam một muối X có công thức phân tử là CH7O4NS tác dụng hết với 750 ml dung dịch NaOH 1M đun nóng, thấy thoát ra chất khí làm xanh quỳ tím ẩm và thu được dung dịch Y chỉ chứa các chất vô cơ. Cô cạn dung dịch Y thu được bao nhiêu gam chất rắn khan?
 
-**A.**35,5. **B.**50,0. **C.**45,5.  **D.**30,0.
+**A.** 35,5. **B.** 50,0. **C.** 45,5.  **D.** 30,0.
 
-*(Đề thi thử THPT Quốc Gia lần 1****–******THPT Quỳnh Lưu 1****–******Nghệ An, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 1****–*** ***THPT Quỳnh Lưu 1****–*** ***Nghệ An, năm 2015)*
 
 **([Lời giải](/bai-viet/x-co-cong-thuc-la-ch8o3n2-cho-144-gam-x-phan-ung-hoan-toan-voi-400-ml-dung-dich-koh.html))****Câu 18:** X có công thức là CH8O3N2. Cho 14,4 gam X phản ứng hoàn toàn với 400 ml dung dịch KOH 1M. Cô cạn dung dịch sau phản ứng thu được m gam chất rắn khan. Giá trị của m là :
 
@@ -330,9 +330,9 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/muoi-a-co-cong-thuc-la-c3h10o3n2-lay-732-gam-a-phan-ung-het-voi-150-ml-dung-dich-koh.html))****Câu 19:** Muối A có công thức là C3H10O3N2, lấy 7,32 gam A phản ứng hết với 150 ml dung dịch KOH 0,5M. Cô cạn dung dịch sau phản ứng thì được phần hơi và phần chất rắn, trong phần hơi có 1 chất hữu cơ bậc 3, trong phần rắn chỉ là chất vô cơ. Khối lượng chất rắn là:
 
-**A.**6,06 gam. **B.**6,90 gam. **C.**11,52 gam. **D.**9,42 gam.
+**A.** 6,06 gam. **B.** 6,90 gam. **C.** 11,52 gam. **D.** 9,42 gam.
 
-*(Đề thi thử THPT Quốc Gia lần 3****–****THPT Yên Định 2****–****Thanh Hóa, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 3****–*** *THPT Yên Định 2****–*** *Thanh Hóa, năm 2015)*
 
 **([Lời giải](/bai-viet/muoi-x-co-cong-thuc-phan-tu-c3h10o3n2-lay-1952-gam-x-cho-tac-dung-voi-200-ml-dung-dich-koh.html))****Câu 20:** Muối X có công thức phân tử C3H10O3N2. Lấy 19,52 gam X cho tác dụng với 200 ml dung dịch KOH 1M. Cô cạn dung dịch sau phản ứng thu được phần hơi có chứa chất hữu cơ bậc I và m gam hỗn hợp các chất vô cơ. Giá trị của m là:
 
@@ -340,47 +340,47 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 **([Lời giải](/bai-viet/cho-124-gam-chat-a-co-cong-thuc-phan-tu-la-c3h12n2o3-dun-nong-voi-2-lit-dung-dich-naoh.html))****Câu 21:** Cho 12,4 gam chất A có công thức phân tử là C3H12N2O3 đun nóng với 2 lít dung dịch NaOH 0,15M. Sau phản ứng hoàn toàn thu được chất khí B làm xanh quỳ ẩm và dung dịch C. Cô cạn C thu được bao nhiêu gam chất rắn khan ?
 
-**A.**14,6.  **B.**17,4. **C.**24,4. **D.**16,2.
+**A.** 14,6.  **B.** 17,4. **C.** 24,4. **D.** 16,2.
 
-*(Đề thi thử THPT Quốc Gia lần 1****–****THPT chuyên Hùng Vương****–****Phú Thọ, năm 2015)*
+*(Đề thi thử THPT Quốc Gia lần 1****–*** *THPT chuyên Hùng Vương****–*** *Phú Thọ, năm 2015)*
 
 **([Lời giải](/bai-viet/x-co-cong-thuc-phan-tu-la-c3h12o3n2-cho-124-gam-x-tac-dung-voi-300-ml-dung-dich-koh.html))****Câu 22:** X có công thức phân tử là C3H12O3N2. Cho 12,4 gam X tác dụng với 300 ml dung dịch KOH 1M đun nóng, sau phản ứng hoàn toàn được chất hữu cơ Y và dung dịch Z chỉ chứa các chất vô cơ. Cô cạn Z được m gam chất rắn khan. Giá trị m là:
 
- **A.** 14,6 gam. **B.**10,6 gam. **C.**8,5 gam. **D.**19,4 gam.
+ **A.** 14,6 gam. **B.** 10,6 gam. **C.** 8,5 gam. **D.** 19,4 gam.
 
-*(Đề thi thử Đại học lần 2****–****THPT chuyên Nguyễn Huệ****–**********Hà Nội, năm 2014)*
+*(Đề thi thử Đại học lần 2****–*** *THPT chuyên Nguyễn Huệ****–*** *******Hà Nội, năm 2014)*
 
 **([Lời giải](/bai-viet/x-co-cong-thuc-c3h12o3n2-x-tac-dung-voi-dung-dich-naoh-dun-nong-nhe-hoac-hcl.html))****Câu 23:** X có công thức C3H12O3N2. X tác dụng với dung dịch NaOH (đun nóng nhẹ) hoặc HCl đều có khí thoát ra. Lấy 18,6 gam X tác dụng hoàn toàn với 400 ml dung dịch NaOH 1,2M. Sau phản ứng cô cạn dung dịch thu được m gam rắn. Giá trị m là.
 
  **A.** 23,1. **B.** 27,3. **C.** 25,44. **D.** 23,352.
 
-*(Đề thi thử Đại học lần 3****–****THPT chuyên Lê Khiết****–****Quảng Ngãi, năm 2014)*
+*(Đề thi thử Đại học lần 3****–*** *THPT chuyên Lê Khiết****–*** *Quảng Ngãi, năm 2014)*
 
 **([Lời giải](/bai-viet/cho-93-gam-chat-x-co-cong-thuc-phan-tu-c3h12n2o3-dun-nong-voi-2-lit-dung-dich-koh.html))****Câu 24:** Cho 9,3 gam chất X có công thức phân tử C3H12N2O3 đun nóng với 2 lít dung dịch KOH 0,1M. Sau khi phản ứng hoàn toàn thu được một chất khí làm quỳ tím ẩm đổi thành xanh và dung dịch Y chỉ chứa chất vô cơ. Cô cạn dung dịch Y thu được khối lượng chất rắn khan là
 
-**A.**10,375 gam. **B.**13,150 gam. 
+**A.** 10,375 gam. **B.** 13,150 gam. 
 
-**C.**9,950 gam. **D.**10,350 gam.
+**C.** 9,950 gam. **D.** 10,350 gam.
 
-*(Đề thi chọn HSG tỉnh Thái Bình, năm học 2013****–****2014)*
+*(Đề thi chọn HSG tỉnh Thái Bình, năm học 2013****–*** *2014)*
 
 **([Lời giải](/bai-viet/cho-01-mol-hop-chat-hua-co-x-co-cong-thuc-phan-tu-ch6o3n2-tac-dung-voi-dung-dich-chua-01-mol-naoh.html))****Câu 25:** Cho 0,1 mol hợp chất hữa cơ X có công thức phân tử CH6O3N2 tác dụng với dung dịch chứa 0,1 mol NaOH và 0,1 mol KOH đun nóng. Sau khi phản ứng xảy ra hoàn toàn thu được chất khí làm xanh giấy quì tím ẩm và dung dịch Y. Cô cạn dung dịch Y thu được m gam rắn khan. Giá trị của m là 
 
- **A.**8,5. **B.**15. **C.**12,5. **D.**14,1.
+ **A.** 8,5. **B.** 15. **C.** 12,5. **D.** 14,1.
 
-*(Đề thi thử THTP Quốc Gia lần 2****–****THPT chuyên Hùng Vương****–**********Phú Thọ, năm 2015)*
+*(Đề thi thử THTP Quốc Gia lần 2****–*** *THPT chuyên Hùng Vương****–*** *******Phú Thọ, năm 2015)*
 
 **([Lời giải](/bai-viet/cho-138-gam-x-co-cong-thuc-phan-tu-c2h6o5n2-la-muoi-cua-%ce%b1-amino-axit-voi-hno3-phan-ung-voi.html))****Câu 26:** Cho 1,38 gam X có công thức phân tử C2H6O5N2 (là muối của α-amino axit với HNO3) phản ứng với 150 ml dung dịch NaOH 0,2M. Sau phản ứng cô cạn thu được m gam chất rắn Y. Giá trị m là:
 
  **A.** 2,22 gam. **B.** 2,62 gam. **C.** 2,14 gam. **D.** 1,13 gam.
 
-*(Đề thi thử Đại học lần 1****–****THPT chuyên Nguyễn Huệ****–**********Hà Nội, năm 2014)*
+*(Đề thi thử Đại học lần 1****–*** *THPT chuyên Nguyễn Huệ****–*** *******Hà Nội, năm 2014)*
 
 **([Lời giải](/bai-viet/cho-chat-huu-co-x-co-cong-thuc-phan-tu-c3h12o3n2-tac-dung-voi-dung-dich-naoh.html))****Câu 27:** Cho chất hữu cơ X có công thức phân tử C3H12O3N2 tác dụng với dung dịch NaOH (dư), sau đó cô cạn dung dịch thu được chất hữu cơ đơn chức Y và phần chất rắn chỉ chứa các chất vô cơ. Nếu cho X tác dụng với dung dịch HCl dư sau đó cô cạn dung dịch thì được phần chất rắn và giải phóng khí Z. Phân tử khối của Y và Z lần lượt là
 
-**A.**31; 46. **B.**31; 44. **C.**45; 46. **D.**45; 44.
+**A.** 31; 46. **B.** 31; 44. **C.** 45; 46. **D.** 45; 44.
 
-*(Đề thi thử Đại học lần 2****–****THPT chuyên Nguyễn Trãi****–****Hải Dương, năm 2014)*
+*(Đề thi thử Đại học lần 2****–*** *THPT chuyên Nguyễn Trãi****–*** *Hải Dương, năm 2014)*
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-chat-y-c2h8n2o4-va-chat-z-c4h8n2o3-trong-do-y-la-muoi-cua-axit-da-chuc.html))****Câu 28:** Hỗn hợp X gồm chất Y (C2H8N2O4) và chất Z (C4H8N2O3); trong đó, Y là muối của axit đa chức, Z là đipeptit mạch hở. Cho 25,6 gam X tác dụng với dung dịch NaOH dư, đun nóng, thu được 0,2 mol khí. Mặt khác, 25,6 gam X tác dụng với dung dịch HCl dư, thu được m gam chất hữu cơ. Giá trị của m là 
 
@@ -388,25 +388,25 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 *(Đề thi tuyển sinh Đại học khối B năm 2014)*
 
-**** Mức độ vận dụng***
+** **Mức độ vận dụng***
 
 **([Lời giải](/bai-viet/cho-mot-hop-chat-huu-co-x-co-cong-thuc-c2h10n2o3-cho-11-gam-chat-x-tac-dung-voi-mot-dung-dich-co-chua-12-gam-naoh.html))****Câu 29:** Cho một hợp chất hữu cơ X có công thức C2H10N2O3. Cho 11 gam chất X tác dụng với một dung dịch có chứa 12 gam NaOH, đun nóng để các phản ứng xẩy ra hoàn toàn thì thu được hỗn hợp Y gồm hai khí đều có khả năng làm đổi màu quỳ tím ẩm và dung dịch Z. Cô cạn Z thu được m gam chất rắn khan. Giá trị của m là:
 
-**A.**14,6.  **B.**10,6. **C.**28,4. **D.**24,6.
+**A.** 14,6.  **B.** 10,6. **C.** 28,4. **D.** 24,6.
 
 *(Đề thi chọn học sinh giỏi tỉnh Thái Bình, năm 2015)*
 
 **([Lời giải](/bai-viet/cho-01-mol-chat-x-c2h9o6n3-tac-dung-voi-dung-dich-chua-04-mol-naoh-dun-nong.html))****Câu 30:** Cho 0,1 mol chất X (C2H9O6N3) tác dụng với dung dịch chứa 0,4 mol NaOH đun nóng thu được hợp chất amin làm xanh giấy quỳ ẩm và dung dịch Y. Cô cạn dung dịch Y thu được m gam chất rắn khan. Chọn giá trị đúng của m.
 
-**A.**12,5 gam. **B.**17,8 gam. **C.**14,6 gam. **D.**23,1 gam.
+**A.** 12,5 gam. **B.** 17,8 gam. **C.** 14,6 gam. **D.** 23,1 gam.
 
-*(Đề thi thử Đại học lần 2****–****THPT Quỳnh Lưu 1****–****Nghệ Anh, năm 2014)*
+*(Đề thi thử Đại học lần 2****–*** *THPT Quỳnh Lưu 1****–*** *Nghệ Anh, năm 2014)*
 
 **([Lời giải](/bai-viet/cho-01-mol-chat-x-c2h9o6n3-tac-dung-voi-dung-dich-chua-04-mol-koh-dun-nong.html))****Câu 31:** Cho 0,1 mol chất X (C2H9O6N3) tác dụng với dung dịch chứa 0,4 mol KOH đun nóng thu được hợp chất amin làm xanh giấy quỳ ẩm và dung dịch Y. Cô cạn dung dịch Y thu được m gam chất rắn khan. Chọn giá trị đúng của m?
 
-**A.**29,5 gam. **B.**17,8 gam. **C.**23,1 gam. **D.**12,5 gam.
+**A.** 29,5 gam. **B.** 17,8 gam. **C.** 23,1 gam. **D.** 12,5 gam.
 
-*(Đề thi thử Đại học lần 1****–****THPT Lục Ngạn số 3****–****Bắc Giang, năm 2014)*
+*(Đề thi thử Đại học lần 1****–*** *THPT Lục Ngạn số 3****–*** *Bắc Giang, năm 2014)*
 
 **([Lời giải](/bai-viet/cho-hon-hop-x-gom-muoi-a-c5h16o3n2-va-b-c4h12o4n2-tac-dung-voi-mot-luong-dung-dich-naoh-vua-du.html))****Câu 32:** Cho hỗn hợp X gồm muối A (C5H16O3N2) và B (C4H12O4N2) tác dụng với một lượng dung dịch NaOH vừa đủ, đun nóng đến khi phản ứng xảy ra hoàn toàn rồi cô cạn thu được m gam hỗn hợp Y gồm hai muối D và E (MD < ME) và 2,24 lít hỗn hợp Z gồm hai amin no, đơn chức đồng đẳng kế tiếp có tỉ khối hơi đối với H2 là 18,3. Khối lượng của muối E trong hỗn hợp Y là 
 
@@ -424,53 +424,53 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 ## Bài tập muối amoni hữu cơ, vô cơ vận dụng cao
 
-**([Lời giải](/bai-viet/cho-hon-hop-gom-a-gam-x-c5h11o4n-va-b-gam-y-c4h12o4n2-la-muoi-cua-axit-huu-co-tac-dung-vua-du-voi-dung-dich-naoh.html)) Bài 62:******Cho hỗn hợp gồm a gam X (C5H11O4N) và b gam Y (C4H12O4N2) (là muối của axit hữu cơ) tác dụng vừa đủ với dung dịch NaOH, thu được một ancol đơn chức Z, một amin và dung dịch T. Cô cạn T thu được 110,7 gam hỗn hợp G gồm hai muối khan (trong đó có một muối của axit cacboxylic và một muối của amino axit). Tách nước hoàn toàn Z (H2SO4 đặc,170°C), thu được 0,3 mol một anken. Tỉ lệ a : b **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/cho-hon-hop-gom-a-gam-x-c5h11o4n-va-b-gam-y-c4h12o4n2-la-muoi-cua-axit-huu-co-tac-dung-vua-du-voi-dung-dich-naoh.html)) Bài 62:******Cho hỗn hợp gồm a gam X (C5H11O4N) và b gam Y (C4H12O4N2) (là muối của axit hữu cơ) tác dụng vừa đủ với dung dịch NaOH, thu được một ancol đơn chức Z, một amin và dung dịch T. Cô cạn T thu được 110,7 gam hỗn hợp G gồm hai muối khan (trong đó có một muối của axit cacboxylic và một muối của amino axit). Tách nước hoàn toàn Z (H2SO4 đặc,170°C), thu được 0,3 mol một anken. Tỉ lệ a : b** gần********nhất*** ***với giá trị nào sau đây?
 
-**A.******1. **B.******0,5. **C.******0,7. **D.******1,5.
+**A.******1.** B.******0,5.** C.******0,7.** D.******1,5.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-cnh2n4o4n2-la-muoi-cua-axit-cacboxylic-hai-chuc-va-chat-huu-co-y-cmh2m3o2n.html)) Bài 63:******Hỗn hợp E gồm chất X (CnH2n+4O4N2, là muối của axit cacboxylic hai chức) và chất hữu cơ Y (CmH2m+3O2N, là muối của axit cacboxylic đơn chức). Đốt cháy hoàn toàn 0,12 mol E cần vừa đủ 9,984 gam O2, thu được CO2, N2 và 0,48 mol H2O. Mặt khác, cho 0,1 mol E tác dụng hết với dung dịch KOH, cô cạn dung dịch sau phản ứng, thu được hỗn hợp hai chất khí đều làm xanh quỳ tím ẩm và m gam hỗn hợp hai muối khan. Giá trị của m là
 
-**A.******17,52. **B**. 14,72. **C.******13,32. **D.******10,76.
+**A.******17,52.** B**. 14,72.** C.******13,32.** D.******10,76.
 
-**([Lời giải](/bai-viet/chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-chat-y-cmh2m4o2n2-la-muoi-amoni.html)) Bài 64:******Chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m+4O2N2) là muối amoni của một amino axit. Cho hỗn hợp E chứa X và Y (có tỉ lệ mol tương ứng là 5 : 4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được 0,28 mol metyl amin và 27,32 gam hỗn hợp muối. Phần trăm khối lượng của X trong E **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-chat-y-cmh2m4o2n2-la-muoi-amoni.html)) Bài 64:******Chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m+4O2N2) là muối amoni của một amino axit. Cho hỗn hợp E chứa X và Y (có tỉ lệ mol tương ứng là 5 : 4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được 0,28 mol metyl amin và 27,32 gam hỗn hợp muối. Phần trăm khối lượng của X trong E** gần********nhất*** ***với giá trị nào sau đây?
 
-**A.******61. **B.******68. **C.******40. **D.******30.
+**A.******61.** B.******68.** C.******40.** D.******30.
 
 **([Lời giải](/bai-viet/cho-hon-hop-e-gom-hai-chat-huu-co-x-c3h11n3o5-va-y-c4h9no4-tao-boi-axit-cacboxylic-da-chuc-deu-mach-ho.html)) Bài 65:******Cho hỗn hợp E gồm hai chất hữu cơ X (C3H11N3O5) và Y (C4H9NO4, tạo bởi axit cacboxylic đa chức) đều mạch hở. Lấy 22,63 gam E tác dụng vừa đủ với dung dịch NaOH, cô cạn dung dịch, thu được 23,46 gam hỗn hợp muối Z; một ancol và một amin đều đơn chức. Mặt khác, 0,3 mol E tác dụng với dung dịch KOH (dùng dư 15% so với lượng phản ứng), cô cạn dung dịch thu được m gam chất rắn khan. Biết các phản ứng xảy ra hoàn toàn. Giá trị của m là
 
-**A.******58,68. **B.******69,48. **C.******61,56. **D.******64,44.
+**A.******58,68.** B.******69,48.** C.******61,56.** D.******64,44.
 
-**([Lời giải](/bai-viet/cho-02-mol-hon-hop-e-gom-chat-x-cnh2n4o4n2-va-chat-y-cmh2m3o2n-deu-mach-ho-tac-dung-vua-du-voi.html)) Bài 66:******Cho 0,2 mol hỗn hợp E gồm chất X (CnH2n+4O4N2) và chất Y (CmH2m+3O2N) đều mạch hở tác dụng vừa đủ với 0,25 mol NaOH, đun nóng, thu được sản phẩm hữu cơ gồm 21,25 gam hỗn hợp hai muối và 5,5 gam hỗn hợp hai khí làm xanh quỳ tím ẩm có tỉ khối so với H2 là 13,75. Khối lượng nhỏ nhất của X trong 0,2 mol E **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/cho-02-mol-hon-hop-e-gom-chat-x-cnh2n4o4n2-va-chat-y-cmh2m3o2n-deu-mach-ho-tac-dung-vua-du-voi.html)) Bài 66:******Cho 0,2 mol hỗn hợp E gồm chất X (CnH2n+4O4N2) và chất Y (CmH2m+3O2N) đều mạch hở tác dụng vừa đủ với 0,25 mol NaOH, đun nóng, thu được sản phẩm hữu cơ gồm 21,25 gam hỗn hợp hai muối và 5,5 gam hỗn hợp hai khí làm xanh quỳ tím ẩm có tỉ khối so với H2 là 13,75. Khối lượng nhỏ nhất của X trong 0,2 mol E** gần********nhất*** ***với giá trị nào sau đây?
 
-**A.******11. **B.******8. **C.******10. **D.******7.
+**A.******11.** B.******8.** C.******10.** D.******7.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-hai-chat-huu-co-mach-ho-x-c4h11no2-va-y-c6h16n2o4-dun-nong-465-gam-e.html)) Bài 67:******Hỗn hợp E gồm hai chất hữu cơ mạch hở X (C4H11NO2) và Y (C6H16N2O4). Đun nóng 46,5 gam E trong 300 ml dung dịch NaOH 2M (dùng dư 20% so với lượng phản ứng), thu được dung dịch Z và hỗn hợp chứa ba khí ở điều kiện thường (đều làm xanh giấy quỳ tím ẩm). Cô cạn dung dịch Z, thu được m gam rắn khan chứa hai muối đều có ba nguyên tử cacbon trong phân tử. Giá trị của m là
 
-**A.******44,4. **B.******39,2. **C.******43,2. **D.******44,0.
+**A.******44,4.** B.******39,2.** C.******43,2.** D.******44,0.
 
-**([Lời giải](/bai-viet/chat-x-c5h14o2n2-la-muoi-amoni-cua-amino-axit-chat-y-c9h20o4n4-mach-ho-la-muoi-amoni-cua-tripeptit.html)) Bài 68:******Chất X (C5H14O2N2) là muối amoni của amino axit, chất Y (C9H20O4N4, mạch hở) là muối amoni của tripeptit. Cho 32,5 gam hỗn hợp E gồm X và Y tác dụng hết với lượng dư dung dịch NaOH, thu được sản phẩm hữu cơ gồm một amin (có tỉ khối so với H2 bằng 22,5) và hỗn hợp Z gồm hai muối (có tỉ lệ mol 1 : 2). Phần trăm khối lượng của muối có phân tử khối lớn hơn trong Z **gần nhất**với giá trị nào sau đây?
+**([Lời giải](/bai-viet/chat-x-c5h14o2n2-la-muoi-amoni-cua-amino-axit-chat-y-c9h20o4n4-mach-ho-la-muoi-amoni-cua-tripeptit.html)) Bài 68:******Chất X (C5H14O2N2) là muối amoni của amino axit, chất Y (C9H20O4N4, mạch hở) là muối amoni của tripeptit. Cho 32,5 gam hỗn hợp E gồm X và Y tác dụng hết với lượng dư dung dịch NaOH, thu được sản phẩm hữu cơ gồm một amin (có tỉ khối so với H2 bằng 22,5) và hỗn hợp Z gồm hai muối (có tỉ lệ mol 1 : 2). Phần trăm khối lượng của muối có phân tử khối lớn hơn trong Z** gần nhất**với giá trị nào sau đây?
 
-**A.******82,0. **B.******58,0. **C.******30,0. **D.******70,0.
+**A.******82,0.** B.******58,0.** C.******30,0.** D.******70,0.
 
-**([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-c3h10n2o4-va-chat-y-c7h13n3o4-trong-do-x-la-muoi-cua-axit-cacboxylic-da-chuc.html)) Bài 69:******Hỗn hợp E gồm chất X (C3H10N2O4) và chất Y (C7H13N3O4), trong đó X là muối của axit cacboxylic đa chức, Y là tripeptit. Cho 27,2 gam E tác dụng với dung dịch NaOH dư, đun nóng, thu được 2,24 lít hỗn hợp hai khí (đktc). Mặt khác, cho 27,2 gam E phản ứng với dung dịch HCl dư, thu được m gam hỗn hợp chất hữu cơ. Giá trị của m **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-c3h10n2o4-va-chat-y-c7h13n3o4-trong-do-x-la-muoi-cua-axit-cacboxylic-da-chuc.html)) Bài 69:******Hỗn hợp E gồm chất X (C3H10N2O4) và chất Y (C7H13N3O4), trong đó X là muối của axit cacboxylic đa chức, Y là tripeptit. Cho 27,2 gam E tác dụng với dung dịch NaOH dư, đun nóng, thu được 2,24 lít hỗn hợp hai khí (đktc). Mặt khác, cho 27,2 gam E phản ứng với dung dịch HCl dư, thu được m gam hỗn hợp chất hữu cơ. Giá trị của m** gần********nhất*** ***với giá trị nào sau đây?
 
-**A**. 42,7. **B.******39,3. **C.******40,9. **D.******45,4.
+**A**. 42,7. **B.******39,3.** C.******40,9.** D.******45,4.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-c2h7o3n-va-chat-y-c5h14o4n2-trong-do-x-la-muoi-cua-axit-vo-co-va-y-la.html)) Bài 70:******Hỗn hợp E gồm chất X (C2H7O3N) và chất Y (C5H14O4N2); trong đó X là muối của axit vô cơ và Y là muối của axit cacboxylic hai chức. Cho 34,2 gam E tác dụng với 50 gam dung dịch NaOH 40% (phản ứng vừa đủ), thu được một khí làm xanh quỳ tím ẩm và dung dịch sau phản ứng chứa m gam hỗn hợp hai muối. Giá trị của m là
 
-**A.******36,7. **B.******34,2. **C.******32,8. **D.******30,7.
+**A.******36,7.** B.******34,2.** C.******32,8.** D.******30,7.
 
 **([Lời giải](/bai-viet/cho-hon-hop-gom-01-mol-x-c4h9o4n-va-015-mol-y-c4h12o4n2-la-muoi-cua-axit-cacboxylic-hai-chuc-tac-dung-vua-du.html)) Bài 71:******Cho hỗn hợp gồm 0,1 mol X (C4H9O4N) và 0,15 mol Y (C4H12O4N2, là muối của axit cacboxylic hai chức) tác dụng vừa đủ với dung dịch NaOH, thu được một ancol đơn chức, một amin no và dung dịch T. Cô cạn T, thu được hỗn hợp G gồm ba muối khan (trong đó có hai muối của hai axit cacboxylic và một muối của amino axit). Phần trăm khối lượng của muối có phân tử khối lớn nhất trong G là
 
-**A.******24,57%. **B.******52,89%. **C.******25,53%. **D.******54,92%.
+**A.******24,57%.** B.******52,89%.** C.******25,53%.** D.******54,92%.
 
-**([Lời giải](/bai-viet/cho-hon-hop-e-gom-01-mol-x-c5h9o4n-va-015-mol-y-c3h9o3n-tac-dung-hoan-toan-voi-dung-dich-koh.html)) Bài 72:******Cho hỗn hợp E gồm 0,1 mol X (C5H9O4N) và 0,15 mol Y (C3H9O3N) tác dụng hoàn toàn với dung dịch KOH, đun nóng, thu được một ancol hai chức và một amin no (có cùng số nguyên tử cacbon) và dung dịch T. Cô cạn T, thu được hỗn hợp G gồm ba muối khan. Phần trăm khối lượng của muối có phân tử khối lớn nhất trong G **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/cho-hon-hop-e-gom-01-mol-x-c5h9o4n-va-015-mol-y-c3h9o3n-tac-dung-hoan-toan-voi-dung-dich-koh.html)) Bài 72:******Cho hỗn hợp E gồm 0,1 mol X (C5H9O4N) và 0,15 mol Y (C3H9O3N) tác dụng hoàn toàn với dung dịch KOH, đun nóng, thu được một ancol hai chức và một amin no (có cùng số nguyên tử cacbon) và dung dịch T. Cô cạn T, thu được hỗn hợp G gồm ba muối khan. Phần trăm khối lượng của muối có phân tử khối lớn nhất trong G** gần********nhất*** ***với giá trị nào sau đây?
 
-**A.******51%. **B.******29%. **C.******27%. **D.******49%.
+**A.******51%.** B.******29%.** C.******27%.** D.******49%.
 
-**([Lời giải](/bai-viet/chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-chat-y-cmh2m4o2n2-la-muoi-amoni-2.html)) Bài 73:******Chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m+4O2N2) là muối amoni của một amino axit. Cho m gam E gồm X và Y (có tỉ lệ mol tương ứng là 7 :3 tác dụng hết với dung dịch NaOH đun nóng, thu được 0,17 mol etylamin và 15,09 gam hỗn hợp muối. Phần trăm khối lượng của X trong E có giá trị **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-chat-y-cmh2m4o2n2-la-muoi-amoni-2.html)) Bài 73:******Chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m+4O2N2) là muối amoni của một amino axit. Cho m gam E gồm X và Y (có tỉ lệ mol tương ứng là 7 :3 tác dụng hết với dung dịch NaOH đun nóng, thu được 0,17 mol etylamin và 15,09 gam hỗn hợp muối. Phần trăm khối lượng của X trong E có giá trị** gần********nhất*** ***với giá trị nào sau đây?
 
-**A.******77. **B.******71. **C.******68. **D.******52.
+**A.******77.** B.******71.** C.******68.** D.******52.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-cnh2n4o4n2-va-chat-y-cmh2m-1o4n3-deu-mach-ho.html)) Bài 74:******Hỗn hợp E gồm chất X (CnH2n+4O4N2) và chất Y (CmH2m-1O4N3) đều mạch hở. Thủy phân hoàn toàn 0,5 mol hỗn hợp E cần dùng vừa đủ 1,2 lít dung dịch NaOH 1M, thu được phần hơi chỉ chứa một chất khí T có tỉ khối so với H2 là 15,5 và 107,7 gam hỗn hợp Z chỉ gồm một muối của amino axit M và một muối của axit cacboxylic đơn chức G. Cho các phát biểu sau:
 
@@ -486,75 +486,75 @@ Nếu hợp chất đề bài cho không có dạng CnH2n+4N2O3 thì các bạn 
 
 5. Phần trăm khối lượng của Y trong E nhỏ hơn 44%. Số phát biểu đúng là
 
-**A.******5. **B.******3. **C.******2. **D.******4.
+**A.******5.** B.******3.** C.******2.** D.******4.
 
-**([Lời giải](/bai-viet/hon-hop-e-gom-hai-chat-x-va-y-trong-do-chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc.html)) Bài 75:******Hỗn hợp E gồm hai chất X và Y; trong đó chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m-4O7N6) là hexapeptit được tạo bởi một amino axit. Biết 0,1 mol E tác dụng tối đa với 0,32 mol NaOH trong dung dịch, đun nóng, thu được metylamin và dung dịch chỉ chứa 31,32 gam hỗn hợp muối. Phần trăm khối lượng của X trong E có giá trị **gần nhất**với giá trị nào sau đây?
+**([Lời giải](/bai-viet/hon-hop-e-gom-hai-chat-x-va-y-trong-do-chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc.html)) Bài 75:******Hỗn hợp E gồm hai chất X và Y; trong đó chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m-4O7N6) là hexapeptit được tạo bởi một amino axit. Biết 0,1 mol E tác dụng tối đa với 0,32 mol NaOH trong dung dịch, đun nóng, thu được metylamin và dung dịch chỉ chứa 31,32 gam hỗn hợp muối. Phần trăm khối lượng của X trong E có giá trị** gần nhất**với giá trị nào sau đây?
 
-**A.******49%. **B.******52%. **C.******77%. **D.******22%.
+**A.******49%.** B.******52%.** C.******77%.** D.******22%.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-amino-axit-x-dipeptit-y-c4h8o3n2-va-muoi-cua-axit-vo-co-z-c2h8o3n2.html)) Bài 76:******Hỗn hợp E gồm amino axit X, đipeptit Y (C4H8O3N2) và muối của axit vô cơ Z (C2H8O3N2). Cho E tác dụng với 200 ml dung dịch NaOH 1,5M và KOH 1M đun nóng (phản ứng vừa đủ), thu được 4,48 lít khí T (đo ở đktc, phân tử T có chứa một nguyên tử nitơ và làm xanh quỳ tím ẩm). Cô cạn dung dịch sau phản ứng, thu được m gam chất rắn khan gồm bốn muối. Giá trị của m là
 
-**A.******49,3. **B.******47,1. **C.******50,9. **D.******42,8.
+**A.******49,3.** B.******47,1.** C.******50,9.** D.******42,8.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-c3h10n2o5-va-chat-y-c9h16n4o5-trong-do-x-tac-dung-voi-hcl-hay-naoh.html)) Bài 77:******Hỗn hợp E gồm chất X (C3H10N2O5) và chất Y (C9H16N4O5), trong đó X tác dụng với HCl hay NaOH đều thu được khí, Y là tetrapeptit. Cho 29,6 gam E tác dụng với dung dịch NaOH dư, đun nóng, thu được 2,55 gam khí. Mặt khác, 29,6 gam E phản ứng với dung dịch HCl dư, thu được m gam chất hữu cơ. Biết các phản ứng xảy ra hoàn toàn. Giá trị của m là
 
-**A.******28,225. **B.******36,250. **C.******26,875. **D.******27,775.
+**A.******28,225.** B.******36,250.** C.******26,875.** D.******27,775.
 
-**([Lời giải](/bai-viet/chat-x-ch4on2-mot-so-tieu-thuong-su-dung-chat-nay-de-uop-ca-va-hai-san-viec-lam-nay-tiem-an-rat-nhieu-nguy-co-gay-hai-cho-suc-khoe.html)) Bài 78:******Chất X (CH4ON2, một số tiểu thương sử dụng chất này để ướp cá và hải sản, việc làm này tiềm ẩn rất nhiều nguy cơ gây hại cho sức khỏe); chất Y (C5H13O3N3, mạch hở, là muối amoni của đipeptit). Cho 30,45 gam hỗn hợp E gồm X và Y tác dụng hết với lượng dư NaOH đun nóng, thu được 0,35 mol hai khí (đều làm xanh giấy quỳ tím ẩm) và m gam hai muối. Giá trị của m **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/chat-x-ch4on2-mot-so-tieu-thuong-su-dung-chat-nay-de-uop-ca-va-hai-san-viec-lam-nay-tiem-an-rat-nhieu-nguy-co-gay-hai-cho-suc-khoe.html)) Bài 78:******Chất X (CH4ON2, một số tiểu thương sử dụng chất này để ướp cá và hải sản, việc làm này tiềm ẩn rất nhiều nguy cơ gây hại cho sức khỏe); chất Y (C5H13O3N3, mạch hở, là muối amoni của đipeptit). Cho 30,45 gam hỗn hợp E gồm X và Y tác dụng hết với lượng dư NaOH đun nóng, thu được 0,35 mol hai khí (đều làm xanh giấy quỳ tím ẩm) và m gam hai muối. Giá trị của m** gần********nhất*** ***với giá trị nào sau đây?
 
-**A.******40,0. **B.******35,0. **C.******33,5. **D.******50,0.
+**A.******40,0.** B.******35,0.** C.******33,5.** D.******50,0.
 
 **([Lời giải](/bai-viet/chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-chat-y-cmh2m-3o6n5-la-pentapeptit.html)) Bài 79:******Chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m-3O6N5) là pentapeptit được tạo bởi một aminoaxit. Cho 0,26 mol E gồm X và Y tác dụng tối đa với dung dịch chứa 0,7 mol NaOH, đun nóng, thu được etylamin và dung dịch T chỉ chứa 62,9 gam hỗn hợp muối. Phần trăm khối lượng của Y trong E là
 
-**A.******47,24%. **B.******36,58%. **C.******38,42%. **D.******42,78%.
+**A.******47,24%.** B.******36,58%.** C.******38,42%.** D.******42,78%.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-c5h14n2o4-la-muoi-cua-axit-huu-co-da-chuc-va-chat-y-c2h7no3-la-muoi-cua-mot-axit-vo-co.html)) Bài 80:******Hỗn hợp E gồm chất X (C5H14N2O4, là muối của axit hữu cơ đa chức) và chất Y (C2H7NO3, là muối của một axit vô cơ). Cho một lượng E tác dụng hết với dung dịch chứa 0,7 mol NaOH, đun nóng. Sau khi các phản ứng xảy ra hoàn toàn, thu được 0,4 mol hỗn hợp hai khí có số mol bằng nhau và dung dịch Z. Cô cạn cẩn thận dung dịch Z, thu được m gam chất rắn khan. Giá trị của m là
 
-**A.******42,8. **B.******50,8. **C.******34,4. **D.******38,8.
+**A.******42,8.** B.******50,8.** C.******34,4.** D.******38,8.
 
 **([Lời giải](/bai-viet/cho-hon-hop-e-gom-x-c4h11o2n-la-muoi-cua-axit-cacboxylic-va-chat-huu-co-mach-ho-y-c6h15o3n3-co-ti-le-mol-2-1.html)) Bài 81:******Cho hỗn hợp E gồm X (C4H11O2N là muối của axit cacboxylic) và chất hữu cơ mạch hở Y (C6H15O3N3) có tỉ lệ mol 2 : 1. Cho 5,805 gam hỗn hợp E tác dụng hết với dung dịch NaOH, đun nóng rồi cô cạn dung dịch sau phản ứng. Kết thúc thí nghiệm, thu được hơi nước; 0,045 mol etylamin và m gam hỗn hợp Z gồm hai muối khan có cùng số nguyên tử cacbon. Phần trăm khối lượng của muối có phân tử khối lớn hơn trong hỗn hợp Z là
 
-**A.******54,19%. **B.******42,49%. **C.******45,81%. **D.******57,51%.
+**A.******54,19%.** B.******42,49%.** C.******45,81%.** D.******57,51%.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-01-mol-x-c6h13o4n-va-015-mol-y-c6h16o4n2-la-muoi-cua-axit-cacboxylic-hai-chuc.html)) Bài 82:******Hỗn hợp E gồm 0,1 mol X (C6H13O4N) và 0,15 mol Y (C6H16O4N2, là muối của axit cacboxylic hai chức). Cho E tác dụng hoàn toàn với dung dịch NaOH, thu được hai amin no (kế tiếp nhau trong dãy đồng đẳng) và dung dịch T. Cô cạn T, thu được hỗn hợp G gồm ba muối khan có cùng số nguyên tử cacbon (trong đó có hai muối của hai axit cacboxylic và muối của một α-amino axit). Phần trăm khối lượng của muối có phân tử khối nhỏ nhất trong G là
 
-**A.******51,75%. **B.******53,05%. **C.******22,38%. **D.******46,95%.
+**A.******51,75%.** B.******53,05%.** C.******22,38%.** D.******46,95%.
 
-**([Lời giải](/bai-viet/hon-hop-e-gom-hai-chat-huu-co-deu-no-mach-ho-co-cong-thuc-phan-tu-la-x-c2h8o3n2-va-y-c3h10o4n2.html)) Bài 83:******Hỗn hợp E gồm hai chất hữu cơ đều no, mạch hở có công thức phân tử là X (C2H8O3N2) và Y (C3H10O4N2). Cho E tác dụng với dung dịch NaOH (vừa đủ), thu được dung dịch Z và 3,584 lít (đktc) hỗn hợp T gồm hai chất khí đều làm xanh giấy quỳ tím ẩm, tỉ khối của T so với H2 bằng 17,25. Cô cạn Z, thu được hỗn hợp G gồm ba muối khan. Biết rằng trong T không có hợp chất đa chức. Phần trăm khối lượng của muối có phân tử khối lớn nhất trong G có giá trị **gần********nhất******là
+**([Lời giải](/bai-viet/hon-hop-e-gom-hai-chat-huu-co-deu-no-mach-ho-co-cong-thuc-phan-tu-la-x-c2h8o3n2-va-y-c3h10o4n2.html)) Bài 83:******Hỗn hợp E gồm hai chất hữu cơ đều no, mạch hở có công thức phân tử là X (C2H8O3N2) và Y (C3H10O4N2). Cho E tác dụng với dung dịch NaOH (vừa đủ), thu được dung dịch Z và 3,584 lít (đktc) hỗn hợp T gồm hai chất khí đều làm xanh giấy quỳ tím ẩm, tỉ khối của T so với H2 bằng 17,25. Cô cạn Z, thu được hỗn hợp G gồm ba muối khan. Biết rằng trong T không có hợp chất đa chức. Phần trăm khối lượng của muối có phân tử khối lớn nhất trong G có giá trị** gần********nhất*** ***là
 
-**A.******23%. **B.******31%. **C.******8%. **D.******46%.
+**A.******23%.** B.******31%.** C.******8%.** D.******46%.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-don-chuc-va-chat-y-cmh2m3o5n3.html)) Bài 84:******Hỗn hợp E gồm chất X (CnH2n+4O4N2, là muối amoni của axit cacboxylic đơn chức) và chất Y (CmH2m+3O5N3); X, Y hơn kém nhau một nguyên tử cacbon. Đốt cháy hoàn toàn x gam E cần vừa đủ 2,1125 mol O2, thu được H2O, 1,65 mol CO2 và 0,325 mol N2. Mặt khác, cho x gam E tác dụng vừa đủ với dung dịch NaOH, đun nóng, thu được sản phẩm hữu cơ gồm hai amin và y gam hỗn hợp hai muối khan có cùng số nguyên tử cacbon trong phân tử (trong đó có một muối của - aminoaxit). Giá trị của y là
 
-**A.******52,20. **B.******54,80. **C.******45,50. **D.******57,80.
+**A.******52,20.** B.******54,80.** C.******45,50.** D.******57,80.
 
-**([Lời giải](/bai-viet/chat-x-c5h14o2n2-la-muoi-amoni-cua-mot-%ce%b1-amino-axit-chat-y-c7h16o4n4-mach-ho-la-muoi-amoni-cua-tripeptit.html)) Bài 85:******Chất X (C5H14O2N2) là muối amoni của một α-amino axit; chất Y (C7H16O4N4, mạch hở) là muối amoni của tripeptit. Cho m gam hỗn hợp E gồm X và Y tác dụng hết với lượng dư NaOH, thu được sản phẩm hữu cơ gồm hai amin no là đồng đẳng kế tiếp có tỉ khối so với H2 bằng 18,125 và 53,64 gam hai muối. Giá trị **gần nhất**của m là
+**([Lời giải](/bai-viet/chat-x-c5h14o2n2-la-muoi-amoni-cua-mot-%ce%b1-amino-axit-chat-y-c7h16o4n4-mach-ho-la-muoi-amoni-cua-tripeptit.html)) Bài 85:******Chất X (C5H14O2N2) là muối amoni của một α-amino axit; chất Y (C7H16O4N4, mạch hở) là muối amoni của tripeptit. Cho m gam hỗn hợp E gồm X và Y tác dụng hết với lượng dư NaOH, thu được sản phẩm hữu cơ gồm hai amin no là đồng đẳng kế tiếp có tỉ khối so với H2 bằng 18,125 và 53,64 gam hai muối. Giá trị** gần nhất**của m là
 
-**A.******45,0. **B.******46,0. **C.******44,5. **D.******40,0.
+**A.******45,0.** B.******46,0.** C.******44,5.** D.******40,0.
 
 **([Lời giải](/bai-viet/cho-hon-hop-e-chua-hai-chat-huu-co-mach-ho-x-cnh2n6o3n2-va-y-cmh2m1o4n-tac-dung-voi-dung-dich-naoh.html)) Bài 86:******Cho hỗn hợp E chứa hai chất hữu cơ mạch hở X (CnH2n+6O3N2) và Y (CmH2m+1O4N) tác dụng với dung dịch NaOH (vừa đủ), đun nóng. Cô cạn dung dịch, thu được 20,32 gam hỗn hợp hai muối (trong đó có một muối của axit cacboxylic và một muối vô cơ) và 4,48 lít (đktc) hỗn hợp gồm hai amin đơn chức, kế tiếp nhau trong dãy đồng đẳng có tỉ khối so với He là 8,45. Phần trăm khối lượng của X có trong E là
 
-**A.******30,07%. **B.******27,54%. **C.******72,16%. **D.******74,23%.
+**A.******30,07%.** B.******27,54%.** C.******72,16%.** D.******74,23%.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-chat-x-cnh2n-4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-va-chat-y-cmh2m5o4n3-mach-ho-la-muoi-amoni-cua-mot-amino-axit.html)) Bài 87:******Hỗn hợp E gồm chất X (CnH2n-4O4N2) là muối amoni của axit cacboxylic đa chức và chất Y (CmH2m+5O4N3) mạch hở là muối amoni của một amino axit. Đốt cháy hoàn toàn m gam E rồi cho toàn bộ sản phẩm cháy đi qua bình đựng Ca(OH)2 dư, thấy khối lượng bình tăng 102,78 gam và thu được 162 gam kết tủa. Mặt khác, cũng m gam E tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được 0,32 mol etylamin và 31,7 gam hỗn hợp muối. Biết rằng X, Y đều không làm mất màu nước Br2. Thành phần trăm khối lượng X trong E là
 
-**A.******39,32%. **B.******38,29%. **C.******34,60%. **D.******38,42%.
+**A.******39,32%.** B.******38,29%.** C.******34,60%.** D.******38,42%.
 
-**([Lời giải](/bai-viet/cho-hon-hop-e-gom-01-mol-x-c5h11o4n-va-015-mol-y-c5h14o4n2-la-muoi-cua-axit-cacboxylic-hai-chuc-tac-dung.html)) Bài 88:******Cho hỗn hợp E gồm 0,1 mol X (C5H11O4N) và 0,15 mol Y (C5H14O4N2, là muối của axit cacboxylic hai chức) tác dụng hoàn toàn với dung dịch KOH, thu được một ancol đơn chức, hai amin no (kế tiếp trong dãy đồng đẳng) và dung dịch T. Cô cạn T, thu được hỗn hợp G gồm ba muối khan có cùng số nguyên tử cacbon (trong đó có hai muối của hai axit cacboxylic và muối của α-amino axit). Phần trăm khối lượng của muối có phân tử khối lớn nhất trong G **gần********nhất******với giá trị nào sau đây?
+**([Lời giải](/bai-viet/cho-hon-hop-e-gom-01-mol-x-c5h11o4n-va-015-mol-y-c5h14o4n2-la-muoi-cua-axit-cacboxylic-hai-chuc-tac-dung.html)) Bài 88:******Cho hỗn hợp E gồm 0,1 mol X (C5H11O4N) và 0,15 mol Y (C5H14O4N2, là muối của axit cacboxylic hai chức) tác dụng hoàn toàn với dung dịch KOH, thu được một ancol đơn chức, hai amin no (kế tiếp trong dãy đồng đẳng) và dung dịch T. Cô cạn T, thu được hỗn hợp G gồm ba muối khan có cùng số nguyên tử cacbon (trong đó có hai muối của hai axit cacboxylic và muối của α-amino axit). Phần trăm khối lượng của muối có phân tử khối lớn nhất trong G** gần********nhất*** ***với giá trị nào sau đây?
 
-**A.******24,0. **B.******54,0. **C.******52,0. **D.******25,0.
+**A.******24,0.** B.******54,0.** C.******52,0.** D.******25,0.
 
 **([Lời giải](/bai-viet/chat-x-cxhyo4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-chat-y-cmhno2n2-la-muoi-amoni-cua-mot-amino-axit.html)) Bài 89:******Chất X (CxHyO4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmHnO2N2) là muối amoni của một amino axit. Cho m gam E gồm X và Y (có tỉ lệ mol tương ứng là 3 : 5) tác dụng hết với lượng dư dung dịch NaOH đun nóng, thu được 4,928 lít (đktc) hỗn hợp khí gồm hai chất hữu cơ là đồng đẳng liên tiếp (có tỉ khối so với hiđro bằng 17,41) và 19,14 gam hỗn hợp muối. Phần trăm khối lượng của Y trong E là
 
-**A.******54,64%. **B.******50,47%. **C.******49,53%. **D.******45,36%.
+**A.******54,64%.** B.******50,47%.** C.******49,53%.** D.******45,36%.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-peptit-x-mach-ho-co-cong-thuc-cxhyn5o6-va-hop-chat-y-co-cong-thuc-phan-tu-la-c4h12n2o2.html)) Bài 90:******Hỗn hợp E gồm peptit X mạch hở có công thức CxHyN5O6 và hợp chất Y có công thức phân tử là C4H12N2O2. Lấy 0,09 mol E tác dụng vừa đủ với 0,21 mol NaOH, chỉ thu được khí đimetylamin và dung dịch chứa a mol muối của glyxin, b mol muối của alanin. Nếu đốt cháy hoàn toàn 35,94 gam E bằng lượng oxi vừa đủ thì thu được N2 và 84,54 gam hỗn hợp CO2 và H2O. Tỉ lệ a:b là
 
-**A.******0,75. **B.******2,5. **C.******1,33. **D.******0,4.
+**A.******0,75.** B.******2,5.** C.******1,33.** D.******0,4.
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-x-c12h27o6n3-la-muoi-cua-axit-glutamic-y-c4h9o4n-va-z-c4h9o2n-deu-mach-ho.html)) Bài 91:******Hỗn hợp E gồm X (C12H27O6N3, là muối của axit glutamic), Y (C4H9O4N) và Z (C4H9O2N) đều mạch hở. Đun nóng hỗn hợp E với dung dịch chứa 0,7 mol KOH, sau khi các phản ứng xảy ra hoàn toàn, thu được dung dịch M và 0,4 mol hỗn hợp khí T gồm hai amin no (có tỉ khối so với He là 9,5). Cô cạn M, thu được hỗn hợp G chỉ chứa bốn muối khan (trong đó có hai muối của hai axit cacboxylic đơn chức, hơn kém nhau một nguyên tử cacbon trong phân tử). Phần trăm khối lượng của muối có phân tử khối nhỏ nhất trong G là
 
-**A.******12,83%. **B.******12,19%. **C.******35,16%. **D.******36,42%.
+**A.******12,83%.** B.******12,19%.** C.******35,16%.** D.******36,42%.
 
  
 

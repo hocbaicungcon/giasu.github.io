@@ -165,7 +165,7 @@ MgO: **magnesium oxide** – /mæɡˈniːziəm ˈɒksaɪd/.
 
 + Số lượng nguyên tử/nhóm nguyên tử được quy ước là mono, di, tri, tetra, penta,…
 
-+ Theo quy tắc giản lược nguyên âm: **mono**+**oxide = monoxide, penta**+ **oxide = pentoxide.**
++ Theo quy tắc giản lược nguyên âm: **mono**+** oxide = monoxide, penta**+ **oxide = pentoxide.**
 
 **Bảng 3: Số lượng và phiên âm**
 
@@ -189,9 +189,9 @@ SO2: **sulfur (IV) oxide** hay **sulfur dioxide**
 
 CO: **carbon (II) oxide** hay **carbon monoxide**
 
-P2O5: **phosphorus (V) oxide**hay**diphosphorus pentoxide**
+P2O5: **phosphorus (V) oxide** hay**diphosphorus pentoxide**
 
-CrO3: **chromium (VI) oxide**hay **chromium trioxide**
+CrO3: **chromium (VI) oxide** hay **chromium trioxide**
 
 ****
 
@@ -290,7 +290,7 @@ Fe(OH)2: **iron (II) hydroxide** hay **ferrous hydroxide**
 | AlO2 | I | -aluminate | /ˌæləˈmɪnieɪt/ | NaAlO2: sodium aluminate |
 | ZnO2 | II | -zincate | /zɪŋkeɪt/ | Na2ZnO2: sodium zincate |
 
-**Lưu ý:**Phát âm đuôi đúng /t/ và /d/ để phân biệt rõ các chất sodium chloride (NaCl) và sodium chlorite (NaClO2) tránh tạo ra sự hiểu lầm.
+**Lưu ý:** Phát âm đuôi đúng /t/ và /d/ để phân biệt rõ các chất sodium chloride (NaCl) và sodium chlorite (NaClO2) tránh tạo ra sự hiểu lầm.
 
 O2 Education gửi các thầy cô và các em link download file đầy đủ tại đây
 

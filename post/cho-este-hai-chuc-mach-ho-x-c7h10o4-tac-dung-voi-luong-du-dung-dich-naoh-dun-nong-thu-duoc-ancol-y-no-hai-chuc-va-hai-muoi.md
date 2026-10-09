@@ -14,21 +14,21 @@ tags:
 grade: 12
 ---
 
-Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y (no, hai chức) và hai muối của hai axit cacboxylic *Z*và T (MZ < MT). Chất Y không hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây **sai**? 
+Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y (no, hai chức) và hai muối của hai axit cacboxylic *Z* và T (MZ < MT). Chất Y không hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây **sai**? 
 
-******A.******Axit *Z*có phản ứng tráng bạc. 
+******A.*** ***Axit *Z* có phản ứng tráng bạc. 
 
-******B.******Oxi hóa Y bằng CuO dư, đun nóng, thu được anđehit hai chức. 
+******B.*** ***Oxi hóa Y bằng CuO dư, đun nóng, thu được anđehit hai chức. 
 
-******C.******Axit T có đồng phân hình học. 
+******C.*** ***Axit T có đồng phân hình học. 
 
-******D.******Có một công thức cấu tạo thỏa mãn tính chất của X.
+******D.*** ***Có một công thức cấu tạo thỏa mãn tính chất của X.
 
 **Lời giải**
 
-**X:**HCOOCH2CH2CH2OOCCH=CH2 có 1 CTCT duy nhất => **D đúng**
+**X:** HCOOCH2CH2CH2OOCCH=CH2 có 1 CTCT duy nhất => **D đúng**
 
-HCOOCH2CH2CH2OOCCH=CH2 + NaOH → HOCH2CH2CH2OH (**Y**) + HCOONa (**Z**) + C2H3COONa (**T**)
+HCOOCH2CH2CH2OOCCH=CH2 + NaOH → HOCH2CH2CH2OH (**Y**) + HCOONa (** Z**) + C2H3COONa (** T**)
 
 HOCH2CH2CH2OH (**Y**) + 2CuO → CH2(CHO)2
 
@@ -36,7 +36,7 @@ T: CH2=CHCOOH không có đồng phân hình học => **C sai**
 
 Oxi hóa **(Y)** HOCH2CH2CH2OH => CH2(CHO)2 => **B đúng**
 
-**Axit (Z)**HCOOH có phản ứng tráng bạc => **A đúng**
+**Axit (Z)** HCOOH có phản ứng tráng bạc => **A đúng**
 
 Xem thêm
 

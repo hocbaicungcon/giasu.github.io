@@ -60,7 +60,7 @@ $$
 |x-3|=|2x+1|.
 $$
 
-**Hướng dẫn.**Phương trình đã cho tương đương với 
+**Hướng dẫn.** Phương trình đã cho tương đương với 
 
 $$
 \left[\begin{array}{l} x-3=2x+1\\ x-3=-(2x+1)\end{array}\right. 
@@ -73,7 +73,7 @@ $$
 |x-3|=|x^2+3x-1|.
 $$
 
-**Hướng dẫn. **Phương trình đã cho tương đương với 
+**Hướng dẫn.** Phương trình đã cho tương đương với 
 
 $$
 \begin{aligned}
@@ -89,7 +89,7 @@ $$
 |x+5|=3x+10.
 $$
 
-**Hướng dẫn.**Cách thứ nhất, chúng ta chia hai trường hợp:
+**Hướng dẫn.** Cách thứ nhất, chúng ta chia hai trường hợp:
 
 - **Trường hợp 1.** Nếu $x+5 \geqslant 0 \Leftrightarrow x \geqslant -5$ thì phương trình đã cho trở thành
 
@@ -125,7 +125,7 @@ $$
 |3x – 2| = x^2+ 2x + 3.
 $$
 
-**Hướng dẫn. **Chúng ta xét hai trường hợp:
+**Hướng dẫn.** Chúng ta xét hai trường hợp:
 
 - **Trường hợp 1.** Khi $3x-2 \geqslant 0 \Leftrightarrow x \geqslant \frac{2}{3}$ thì phương trình đã cho trở thành
 
@@ -151,9 +151,9 @@ $$
 \frac{x-1}{2x-3}=\frac{-3x+1}{|x+1|}.
 $$
 
-**Hướng dẫn. **Điều kiện $x\ne -1, x\ne \frac{3}{2}$. Chúng ta xét hai trường hợp:
+**Hướng dẫn.** Điều kiện $x\ne -1, x\ne \frac{3}{2}$. Chúng ta xét hai trường hợp:
 
-- **Trường hợp 1.**Nếu $x+1>0 \Leftrightarrow x>-1$ thì phương trình đã cho trở thành
+- **Trường hợp 1.** Nếu $x+1>0 \Leftrightarrow x>-1$ thì phương trình đã cho trở thành
 
   $$
   \frac{x-1}{2x-3}=\frac{-3x+1}{x+1}.
@@ -167,7 +167,7 @@ $$
 
   Giải phương trình này được nghiệm $x=\frac{11\pm \sqrt{65}}{14}$. So sánh thấy cả hai đều thỏa mãn các điều kiện $x\ne -1, x\ne \frac{3}{2}$ và $x>-1$ nên nhận cả hai nghiệm.
 
-- **Trường hợp 2.**Nếu $x+1<0 \Leftrightarrow x<-1$ thì phương trình đã cho trở thành
+- **Trường hợp 2.** Nếu $x+1<0 \Leftrightarrow x<-1$ thì phương trình đã cho trở thành
 
   $$
   \frac{x-1}{2x-3}=\frac{-3x+1}{-x-1}.
@@ -177,13 +177,13 @@ $$
 
 Kết luận, tập nghiệm của phương trình đã cho là $S=\{\frac{11\pm \sqrt{65}}{14}\}.$
 
-**Ví dụ 6.**Giải phương trình chứa dấu giá trị tuyệt đối sau: 
+**Ví dụ 6.** Giải phương trình chứa dấu giá trị tuyệt đối sau: 
 
 $$
 x^2+4x-3|x+2|+4=0.
 $$
 
-**Hướng dẫn. **Chúng ta xét hai trường hợp:
+**Hướng dẫn.** Chúng ta xét hai trường hợp:
 
 - **Trường hợp 1.** Khi $x+2\geqslant 0 \Leftrightarrow x>\geqslant -2$ thì phương trình đã cho trở thành
 
@@ -205,13 +205,13 @@ Kết luận, tập nghiệm của phương trình đã cho là $S=\{-5,-2,1\}$.
 
 Đối với phương trình chứa nhiều dấu giá trị tuyệt đối mà không rơi vào các dạng trên, chúng ta thường lập bảng khử dấu giá trị tuyệt đối như sau.
 
-**Ví dụ 7.**Giải phương trình chứa dấu giá trị tuyệt đối sau: 
+**Ví dụ 7.** Giải phương trình chứa dấu giá trị tuyệt đối sau: 
 
 $$
 |x+1|+|x-1|=4.
 $$
 
-**Hướng dẫn. **
+**Hướng dẫn.** 
 
 Ta lập bảng như sau, gọi là bảng khử dấu giá trị tuyệt đối hoặc bảng phá dấu giá trị tuyệt đối:
 
@@ -245,10 +245,10 @@ Từ đó, dễ dàng chia thành ba trường hợp:
 
 Tóm lại, phương trình đã cho có hai nghiệm $x=\pm 2$.
 
-**Ví dụ 8.**Giải phương trình chứa trị tuyệt đối: 
+**Ví dụ 8.** Giải phương trình chứa trị tuyệt đối: 
 
 $$
 |x+4|-2|x+5|=-7.
 $$
 
-**Hướng dẫn. **Lập bảng xét dấu tương tự ví dụ 7, đáp số $x=1,x=-13$.
+**Hướng dẫn.** Lập bảng xét dấu tương tự ví dụ 7, đáp số $x=1,x=-13$.

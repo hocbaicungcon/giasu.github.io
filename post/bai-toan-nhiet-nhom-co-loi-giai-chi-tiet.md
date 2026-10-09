@@ -27,7 +27,7 @@ không có phản ứng tạo oxit trung gian.
 
 + Với dạng toán nhiệt nhôm mà hỗn hợp có Fe2O3, Fe3O4 hay Cr2O3 các bạn có thể áp dụng kỹ thuật “Độ lệch H” sẽ cho kết quả rất tốt. Sau đây tôi xin giới thiệu các bạn kỹ thuật này.
 
-**Bài toán áp dụng:**Hỗn hợp trước nhiệt nhôm chứa các ion Fe3+ và Cr3+ nhưng sau khi nhiệt nhôm cho tác dụng với HCl hoặc H2SO4 ta lại thu được các muối chứa ion Fe2+ và Cr2+ sự chênh lệch điện tích này được chúng ta tính thông qua số mol nguyên tử H trước và sau phản ứng nhiệt nhôm.
+**Bài toán áp dụng:** Hỗn hợp trước nhiệt nhôm chứa các ion Fe3+ và Cr3+ nhưng sau khi nhiệt nhôm cho tác dụng với HCl hoặc H2SO4 ta lại thu được các muối chứa ion Fe2+ và Cr2+ sự chênh lệch điện tích này được chúng ta tính thông qua số mol nguyên tử H trước và sau phản ứng nhiệt nhôm.
 
 **Chú ý:**
 

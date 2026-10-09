@@ -52,7 +52,7 @@ Nhưng rốt cục Python làm được những gì, và mạnh ở những đi�
 
 - Automation Testing đang ngày càng trở nên phổ biến hơn. Python có thư viện Selenium đang được sử dụng rất nhiều trong lĩnh vực Automation Testing và lấy dữ liệu trên các trang web.
 
-- **Viết tool để tự động hóa công việc.**Bạn yêu thích công nghệ chắc chắn biết những tool thú vị ở trong Google chorme Extension chứ? Hoặc vô vàn tool hữu ích bạn có thể download trên bất kỳ trang web nào. Nếu như trước kia, những tool này cần phải viết bằng các ngôn ngữ khó như Java, PHP … thì hiện nay, với Python tốc độ sản xuất tool có thể tăng lên gấp 10 lần.
+- **Viết tool để tự động hóa công việc.** Bạn yêu thích công nghệ chắc chắn biết những tool thú vị ở trong Google chorme Extension chứ? Hoặc vô vàn tool hữu ích bạn có thể download trên bất kỳ trang web nào. Nếu như trước kia, những tool này cần phải viết bằng các ngôn ngữ khó như Java, PHP … thì hiện nay, với Python tốc độ sản xuất tool có thể tăng lên gấp 10 lần.
 
 - Xây dựng những con bot để trả lời tự động cho các website…
 

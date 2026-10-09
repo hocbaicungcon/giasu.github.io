@@ -191,7 +191,7 @@ grade: 12
 
 **([Lời giải](/bai-viet/dien-phan-den-het-01-mol-cuno32-trong-dung-dich-voi-dien-cuc-tro-thi-sau-dien-phan.html)) Câu 11:** Điện phan đến hết 0,1 mol Cu(NO3)2 trong dung dịch với điện cực trơ, thì sau điện phân khối lượng dung dịch giảm bao nhiêu gam?
 
-**A.** 6,4 gam **B.**1,6 gam **C.** 18,8 gam **D.** 8,0 gam
+**A.** 6,4 gam **B.** 1,6 gam **C.** 18,8 gam **D.** 8,0 gam
 
 **([Lời giải](/bai-viet/dien-phan-co-mang-ngan-voi-dien-cuc-tro-250-ml-dung-dich-hon-hop-cuso4-am-va-nacl-15m.html)) Câu 12:** Điện phân có màng ngăn với điện cực trơ 250 ml dung dịch hỗn hợp CuSO4 aM và NaCl 1,5M, với cường độ dòng điện 5A trong 96,5 phút. Dung dịch tạo thành bị giảm so với ban đầu là 17,15 gam. Giả sử nước bay hơi không đáng kể. Giá trị của a là
 
@@ -223,7 +223,7 @@ anot thu 0,336 lít khí(đktc). Coi thể tích dung dịch không đổi thì 
 
 **([Lời giải](/bai-viet/dien-phan-dung-dich-hon-hop-chua-a-mol-cuso4-va-b-mol-nacl-voi-dien-cuc-tro-mang-ngan-xop.html)) Câu 18:** Điện phân dung dịch hỗn hợp chứa a mol CuSO4 và b mol NaCl (với điện cực trơ, màng ngăn xốp) đến khi khí thoát ra ở catot là 2,24 lít ở (đktc) thì ngừng điện phân. Dung dịch tạo thành hòa tan tối đa 4 gam MgO. Mối liên hệ giữa a và b là:
 
-**A.**2a – 0,2 = b **B.** 2a = b **C.** 2a < b **D.** 2a = b – 0,2
+**A.** 2a – 0,2 = b **B.** 2a = b **C.** 2a < b **D.** 2a = b – 0,2
 
 **([Lời giải](/bai-viet/dien-phan-dien-cuc-tro-mang-ngan-xop-hieu-suat-100-dung-dich-chua-dong-thoi-03-mol-cuso4-va-01-mol-nacl.html)) Câu 19:** Điện phân (điện cực trơ, màng ngăn xốp, hiệu suất 100%) dung dịch chứa đồng thời 0,3 mol CuSO4 và 0,1 mol NaCl , kim loại thoát ra khi điện phân hoàn toàn bám vào catot. Khi ở catot khối lượng tăng lên 12,8 g thì ở anot có V lít khí thoát ra . Giá trị của V là :
 

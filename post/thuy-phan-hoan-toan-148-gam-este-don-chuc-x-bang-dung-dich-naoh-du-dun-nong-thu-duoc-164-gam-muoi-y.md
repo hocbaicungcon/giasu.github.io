@@ -14,7 +14,7 @@ grade: 12
 
 Thủy phân hoàn toàn 14,8 gam este đơn chức X bằng dung dịch NaOH dư, đun nóng, thu được 16,4 gam muối Y và m gam ancol Z. Giá trị của m là
 
-**     A.** 6,4.              **B.** 4,6.                                **C.**3,2.                                **D.**9,2.
+ **A.** 6,4.              **B.** 4,6.                                **C.** 3,2.                                **D.** 9,2.
 
 ![Thủy phân hoàn toàn 14,8 gam este đơn chức X bằng dung dịch NaOH dư, đun nóng, thu được 16,4 gam muối Y 1](assets/images/thuy-phan-hoan-toan-148-gam-este-don-chuc-x-bang-dung-dich-naoh-du-dun-nong-thu-duoc-164-gam-muoi-y-c70.jpg)
 

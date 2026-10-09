@@ -14,15 +14,15 @@ tags:
 grade: 12
 ---
 
-**(QG 2019)****:**Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp 2 muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc. Phát biểu nào sau đây đúng?
+**(QG 2019)****:** Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp 2 muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc. Phát biểu nào sau đây đúng?
 
-**A.**Axit cacboxylic của muối Z có đồng phân hình học.**B.**Tên gọi của Z là natri acrylat.**C.**Có 2 công thức cấu tạo thỏa mãn tính chất của X.**D.**Phân tử X chỉ chứa 1 loại nhóm chức.
+**A.** Axit cacboxylic của muối Z có đồng phân hình học.**B.** Tên gọi của Z là natri acrylat.**C.** Có 2 công thức cấu tạo thỏa mãn tính chất của X.**D.** Phân tử X chỉ chứa 1 loại nhóm chức.
 
  
 
 **Lời giải**
 
-**X**là  CH2=CHCOOC3H5(OH)OOCCH3 =>X tạp chức => **D sai**
+**X** là  CH2=CHCOOC3H5(OH)OOCCH3 =>X tạp chức => **D sai**
 
 CH2=CHCOOC3H5(OH)OOCCH3 + NaOH → C3H5(OH)3 + CH3COONa (Y) + CH2=CHCOONa (Z)
 

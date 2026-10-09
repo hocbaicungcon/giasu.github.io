@@ -68,7 +68,7 @@ Nếu mặt phẳng $(\alpha)$ chứa đường thẳng $a$ mà $a$ lại song s
 
 ## 2. Một số ví dụ tìm giao tuyến của 2 mp
 
-**Ví dụ 1.**Cho tứ diện $ABCD$ có $I$ là trung điểm của $BD.$ Gọi $E,F$ lần lượt là trọng tâm tam giác $ABD$ và $CBD$. Tìm giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC).$
+**Ví dụ 1.** Cho tứ diện $ABCD$ có $I$ là trung điểm của $BD.$ Gọi $E,F$ lần lượt là trọng tâm tam giác $ABD$ và $CBD$. Tìm giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC).$
 
 **Hướng dẫn.**
 
@@ -88,7 +88,7 @@ Rõ ràng $E$ là trọng tâm của tam giác $ABD$ nên $E$ phải nằm trên
 
 Do đó, giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC)$ là đường thẳng $AC$.
 
-**Ví dụ 2.**Cho hình chóp $S.ABCD$. Đáy $ABCD$ có $AB$ cắt $CD$ tại $E$, $AC$ cắt $BD$ tại $F.$ Xác định giao tuyến của hai mặt phẳng:
+**Ví dụ 2.** Cho hình chóp $S.ABCD$. Đáy $ABCD$ có $AB$ cắt $CD$ tại $E$, $AC$ cắt $BD$ tại $F.$ Xác định giao tuyến của hai mặt phẳng:
 
 1. $(SAB)$ và $(SAC)$,
 
@@ -142,7 +142,7 @@ $$
 
 Tóm lại, giao tuyến của hai mặt phẳng $(ADM)$ và $(BCD)$ là đường thẳng $DN$.
 
-**Ví dụ 4.**Cho bốn điểm $A, B, C, D$ không thuộc cùng một mặt phẳng. Trên các đoạn thẳng $AB, AC, BD$ lấy lần lượt các điểm $M, N, P$ sao cho $MN$ không song song với $BC$. Tìm giao tuyến của $(BCD)$ và $(MNP)$.
+**Ví dụ 4.** Cho bốn điểm $A, B, C, D$ không thuộc cùng một mặt phẳng. Trên các đoạn thẳng $AB, AC, BD$ lấy lần lượt các điểm $M, N, P$ sao cho $MN$ không song song với $BC$. Tìm giao tuyến của $(BCD)$ và $(MNP)$.
 
 **Hướng dẫn.**
 

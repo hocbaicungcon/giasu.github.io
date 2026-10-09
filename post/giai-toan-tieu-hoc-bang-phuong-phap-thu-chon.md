@@ -85,29 +85,29 @@ Số cần tìm có thể là: 9009; 1881; 8118; 7227; 2772; 6336; 3663; 4554; 5
 
 Ta lập bảng sau để kiểm tra:
 
-| abba | a*b*b*a | Kết Luận |
+| abba | a*b* b*a | Kết Luận |
 | --- | --- | --- |
-| 9009 | 9*0*0*9 = 0 | Loại |
-| 1881 | 1*8*8*1 = 64 | Chọn |
-| 8118 | 8*1*1*8 = 64 | Chọn |
-| 7227 | 7*2*2*7 = 196 | Loại |
-| 2772 | 2*7*7*2 = 196 | Loại |
-| 6336 | 6*3*3*6 = 324 | Loại |
-| 3663 | 3*6*6*3 = 324 | Loại |
-| 4554 | 4*5*5*4 = 400 | Loại |
-| 5445 | 5*4*4*5 = 400 | Loại |
+| 9009 | 9*0* 0*9 = 0 | Loại |
+| 1881 | 1*8* 8*1 = 64 | Chọn |
+| 8118 | 8*1* 1*8 = 64 | Chọn |
+| 7227 | 7*2* 2*7 = 196 | Loại |
+| 2772 | 2*7* 7*2 = 196 | Loại |
+| 6336 | 6*3* 3*6 = 324 | Loại |
+| 3663 | 3*6* 6*3 = 324 | Loại |
+| 4554 | 4*5* 5*4 = 400 | Loại |
+| 5445 | 5*4* 4*5 = 400 | Loại |
 
 Vậy số cần tìm là 1881 hoặc 8118.
 
 ## BÀI TẬP PHƯƠNG PHÁP THỬ CHỌN
 
-**Bài 1:**Biết rằng hiệu giữa chữ số hàng chục và hàng đơn vị của một số lẻ có 2 chữ số bằng 3. Nếu thêm vào số đó 3 đơn vị ta được số có 2 chữ số giống nhau. Tìm số đó.
+**Bài 1:** Biết rằng hiệu giữa chữ số hàng chục và hàng đơn vị của một số lẻ có 2 chữ số bằng 3. Nếu thêm vào số đó 3 đơn vị ta được số có 2 chữ số giống nhau. Tìm số đó.
 
-**Bài 2:**Chữ số hàng chục của một số tự nhiên có 3 chữ số khác nhau gấp 2 lần chữ số hàng đơn vị. Nếu lấy tích của chữ số hàng chục và hàng đơn vị chia cho chữ số hàng trăm ta được thương bằng 8. Tìm số đó.
+**Bài 2:** Chữ số hàng chục của một số tự nhiên có 3 chữ số khác nhau gấp 2 lần chữ số hàng đơn vị. Nếu lấy tích của chữ số hàng chục và hàng đơn vị chia cho chữ số hàng trăm ta được thương bằng 8. Tìm số đó.
 
-**Bài 3:**Tìm số tự nhiên có 4 chữ số, biết rằng tổng các chữ số của số đó bằng 18, tích các chữ số của nó bằng 64 và nếu viết các chữ số của số đó theo thứ tự ngược lại thì số đó không thay đổi.
+**Bài 3:** Tìm số tự nhiên có 4 chữ số, biết rằng tổng các chữ số của số đó bằng 18, tích các chữ số của nó bằng 64 và nếu viết các chữ số của số đó theo thứ tự ngược lại thì số đó không thay đổi.
 
-**Bài 4:**Tìm số có 4 chữ số, biết rằng số đó cộng với số có hai chữ số tạo bởi chữ số hàng nghìn, hàng trăm và số có 2 chữ số tạo bởi chữ số hàng chục và hàng đơn vị của số đó ta được tổng là 7968.
+**Bài 4:** Tìm số có 4 chữ số, biết rằng số đó cộng với số có hai chữ số tạo bởi chữ số hàng nghìn, hàng trăm và số có 2 chữ số tạo bởi chữ số hàng chục và hàng đơn vị của số đó ta được tổng là 7968.
 
 **Bài 5:** Các chữ số hàng nghìn hàng trăm , hàng chục và hàng đơn vị của một số tự nhiên có 4 chữ số theo thứ tự là 4 số tự nhiên liên tiếp. Số này sẽ thay đổi như thế nào nếu ta viết các chữ số của nó theo thứ tự ngược lại?
 
@@ -115,8 +115,8 @@ Vậy số cần tìm là 1881 hoặc 8118.
 
 **Bài 7:** Tìm số tự nhiên có 2 chữ số, biết rằng tích các chữ số của số đó là số tròn chục có hai chữ số, nếu bớt số đó đi 3 đơn vị ta được số có 2 chữ số giống nhau.
 
-**Bài 8:**Các chữ số hàng trăm, hàng chục và hàng đơn vị của một số tự nhiên có 3 chữ số theo thứ tự là 3 số lẻ liên tiếp. Khi bớt số đó đi 24 đơn vị ta được số có 3 chữ số giống nhau và chia hết cho 5. Tìm số đó.
+**Bài 8:** Các chữ số hàng trăm, hàng chục và hàng đơn vị của một số tự nhiên có 3 chữ số theo thứ tự là 3 số lẻ liên tiếp. Khi bớt số đó đi 24 đơn vị ta được số có 3 chữ số giống nhau và chia hết cho 5. Tìm số đó.
 
 **Bài 9:** Các chữ số hàng trăm, hàng chục và hàng đơn vị của một số chẵn có 3 chữ số theo thứ tự là 3 số tự nhiên liên tiếp. Tổng các chữ số của nó bằng 9. Tìm số đó.
 
-**Bài 10:**Tổng các chữ số của một số chẵn có 4 chữ số bằng 22, tích các chữ số của nó là số tròn chục. Khi đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị hoặc chữ số hàng nghìn và chữ số hàng chục thì số đó không thay đổi. Tìm số đó.
+**Bài 10:** Tổng các chữ số của một số chẵn có 4 chữ số bằng 22, tích các chữ số của nó là số tròn chục. Khi đổi chỗ chữ số hàng trăm và chữ số hàng đơn vị hoặc chữ số hàng nghìn và chữ số hàng chục thì số đó không thay đổi. Tìm số đó.

@@ -56,13 +56,13 @@ Các thầy cô cần file word liên hệ với chúng tôi tại fanpage faceb
 
 **([Lời giải](/bai-viet/cho-03-mol-hon-hop-x-gom-hai-este-don-chuc-tac-dung-vua-du-voi-250-ml-dung-dich-koh-2m.html)) Ví dụ 6:****[BGD-2017]** Cho 0,3 mol hỗn hợp X gồm hai este đơn chức tác dụng vừa đủ với 250 ml dung dịch KOH 2M, thu được chất hữu cơ Y (no, đơn chức, mạch hở, có tham gia phản ứng tráng bạc) và 53 gam hỗn hợp muối. Đốt cháy toàn bộ Y cần vừa đủ 5,6 lít khí O2 (đktc). Khối lượng của 0,3 mol X là
 
-**A.** 29,4 gam **B.**31,0 gam **C.**33,0 gam **D.**41,0 gam
+**A.** 29,4 gam **B.** 31,0 gam **C.** 33,0 gam **D.** 41,0 gam
 
 **([Lời giải](/bai-viet/hon-hop-e-gom-este-don-chuc-x-va-hai-este-hai-chuc-y-x-y-deu-no-mach-ho-xa-phong-hoa-hoan-toan.html)) Ví dụ 7:** **[BGD-2017]** Hỗn hợp E gồm este đơn chức X và hai este hai chức Y (X, Y đều no, mạch hở). Xà phòng hóa hoàn toàn 40,48 gam E cần vừa đủ 560 ml dung dịch NaOH 1M, thu được hai muối có tổng khối lượng a gam và hỗn hợp T gồm hai ancol có cùng số nguyên tử cacbon. Đốt cháy toàn bộ T, thu được 16,128 lít khí CO2 (đktc) và 19,44 gam H2O. Giá trị của a gần nhất với giá trị nào sau đây?
 
 **A.** 43,0 **B.** 37,0 **C.** 40,5 **D.** 13,5
 
-**([Lời giải](/bai-viet/hon-hop-e-gom-este-don-chuc-x-este-hai-chuc-y-va-chat-beo-z-x-y-z-deu-no-mach-ho.html)) Ví dụ 8:** **[BGD-2017]**Hỗn hợp E gồm este đơn chức X; este hai chức Y và chất béo Z (X, Y, Z đều no, mạch hở). Xà phòng hóa hoàn toàn 23,14 gam E cần vừa đủ 190 ml dung dịch NaOH 1M, thu được hỗn hợp muối có tổng khối lượng a gam và hỗn hợp ancol T. Đốt cháy toàn bộ T cần dùng vừa đủ 0,425 mol O2, thu được H2O và 0,31 mol CO2. Giá trị của a là?
+**([Lời giải](/bai-viet/hon-hop-e-gom-este-don-chuc-x-este-hai-chuc-y-va-chat-beo-z-x-y-z-deu-no-mach-ho.html)) Ví dụ 8:** **[BGD-2017]** Hỗn hợp E gồm este đơn chức X; este hai chức Y và chất béo Z (X, Y, Z đều no, mạch hở). Xà phòng hóa hoàn toàn 23,14 gam E cần vừa đủ 190 ml dung dịch NaOH 1M, thu được hỗn hợp muối có tổng khối lượng a gam và hỗn hợp ancol T. Đốt cháy toàn bộ T cần dùng vừa đủ 0,425 mol O2, thu được H2O và 0,31 mol CO2. Giá trị của a là?
 
 **A.** 33,08 **B.** 23,14 **C.** 28,94 **D.** 22,07
 
@@ -72,55 +72,55 @@ Các thầy cô cần file word liên hệ với chúng tôi tại fanpage faceb
 
 **([Lời giải](/bai-viet/hon-hop-x-chua-ch3oh-c3h5cooh-cnh2nox-hcoochch2-c2h3coo-c4h6-oocc4h7-trong-do-so-mol-cua-ch3oh-gap-doi.html)) Ví dụ 10:** Hỗn hợp X chứa CH3OH, C3H5COOH, CnH2nOx, HCOOCH=CH2, C2H3COO-C4H6-OOCC4H7 (trong đó số mol của CH3OH gấp đôi số mol C2H3COO-C4H6-OOCC4H7). Cho m gam X vào dung dịch KOH dư đun nóng thấy có 0,23 mol KOH tham gia phản ứng. Mặt khác, đốt cháy m gam X cần vừa đủ 1,18 mol O2 thu được CO2 và 14,76 gam H2O. Biết CnH2nOx không tác dụng với KOH. Giá trị của m là?
 
-**A.**20,8 **B.**26,2 **C.**23,2 **D.** 24,8
+**A.** 20,8 **B.** 26,2 **C.** 23,2 **D.** 24,8
 
 **([Lời giải](/bai-viet/cho-cac-chat-huu-co-mach-ho-x-la-axit-khong-no-co-lien-ket-trong-phan-tu-y-la-axit-no-don-chuc-z-la-ancol-no-hai-chuc.html)) Ví dụ 11:** **[Đề minh họa – 2018]** Cho các chất hữu cơ mạch hở: X là axit không no có liên kết trong phân tử, Y là axit no đơn chức, Z là ancol no hai chức. T là este của X, Y với Z. Đốt cháy hoàn toàn a gam hỗn hợp M gồm X và T, thu được 0,1 mol CO2 và 0,07 mol H2O. Cho 6,9 gam M phản ứng vừa đủ với dung dịch NaOH, cô cạn dung dịch sau phản ứng thu được hỗn hợp muối khan E. Đốt cháy hoàn toàn E, thu được Na2CO3; 0,195 mol CO2 và 0,135 mol H2O. Phần trăm khối lượng của T trong M có giá trị gần nhất với giá trị nào sau đây?
 
-**A.**68,7 **B.**68,1 **C.**52,3 **D.** 51,3
+**A.** 68,7 **B.** 68,1 **C.** 52,3 **D.** 51,3
 
 **([Lời giải](/bai-viet/hon-hop-e-chua-hai-este-deu-mach-ho-va-khong-co-nhom-chuc-khac-cnh2no2-x-va-cnh2m-2o4-y.html)) Ví dụ 12:** Hỗn hợp E chứa hai este (đều mạch hở và không có nhóm chức khác) CnH2nO2, (X) và   CnH2m-2O4 (Y). Đun nóng 20,58 gam E với dung dịch NaOH vừa đủ, thu được 9,48 gam hỗn hợp gồm hai ancol Z và 2 muối T. Đốt cháy hoàn toàn muối T cần dùng 0,48 mol O2, thu được CO2, H2O và 14,31 gam Na2CO3. Phần trăm khối lượng của X trong E gần nhất với?
 
-**A.**12% **B.**32% **C.**15% **D.** 24%
+**A.** 12% **B.** 32% **C.** 15% **D.** 24%
 
-**([Lời giải](/bai-viet/dot-chay-hoan-toan-mot-este-don-chuc-mach-ho-x-phan-tu-co-so-lien-ket-nho-hon-3-thu-duoc-the-tich-khi-co2.html)) Ví dụ 13:** **[BGD-2010]**Đốt cháy hoàn toàn một este đơn chức, mạch hở X (phân tử có số liên kết nhỏ hơn 3), thu được thể tích khí CO2 bằng thể tích khí O2 đã phản ứng (các thể tích khí đo ở cùng điều kiện). Cho m gam X tác dụng hoàn toàn với 200ml dung dịch KOH 0,7M thu được dung dịch Y. Cô cạn Y thu được 12,88 gam chất rắn khan. Giá trị của m là:
+**([Lời giải](/bai-viet/dot-chay-hoan-toan-mot-este-don-chuc-mach-ho-x-phan-tu-co-so-lien-ket-nho-hon-3-thu-duoc-the-tich-khi-co2.html)) Ví dụ 13:** **[BGD-2010]** Đốt cháy hoàn toàn một este đơn chức, mạch hở X (phân tử có số liên kết nhỏ hơn 3), thu được thể tích khí CO2 bằng thể tích khí O2 đã phản ứng (các thể tích khí đo ở cùng điều kiện). Cho m gam X tác dụng hoàn toàn với 200ml dung dịch KOH 0,7M thu được dung dịch Y. Cô cạn Y thu được 12,88 gam chất rắn khan. Giá trị của m là:
 
-**A.**7.20 **B.**6,66 **C.**8.88 **D.** 10,56
+**A.** 7.20 **B.** 6,66 **C.** 8.88 **D.** 10,56
 
-**([Lời giải](/bai-viet/cho-m-gam-hon-hop-x-gom-ba-este-deu-don-chuc-tac-dung-toi-da-voi-400ml-dung-dich-naoh-1m.html)) Ví dụ 14:** **[BGD-2018]**Cho m gam hỗn hợp X gồm ba este đều đơn chức tác dụng tối đa với 400ml dung dịch NaOH 1M, thu được hỗn hợp Y gồm hai ancol cùng dãy đồng đẳng và 34,4 gam hỗn hợp muối Z. Đốt cháy hoàn toàn Y, thu được 3,584 lít khí CO2 9đktc) và 4,68 gam H2O. Giá trị của m là:
+**([Lời giải](/bai-viet/cho-m-gam-hon-hop-x-gom-ba-este-deu-don-chuc-tac-dung-toi-da-voi-400ml-dung-dich-naoh-1m.html)) Ví dụ 14:** **[BGD-2018]** Cho m gam hỗn hợp X gồm ba este đều đơn chức tác dụng tối đa với 400ml dung dịch NaOH 1M, thu được hỗn hợp Y gồm hai ancol cùng dãy đồng đẳng và 34,4 gam hỗn hợp muối Z. Đốt cháy hoàn toàn Y, thu được 3,584 lít khí CO2 9đktc) và 4,68 gam H2O. Giá trị của m là:
 
-**A.**24,24 **B.**25.14 **C.**21,10 **D.**22,44
+**A.** 24,24 **B.** 25.14 **C.** 21,10 **D.** 22,44
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-c2h5oh-ch3cooh-hoch2cooh-hooc-ch2-cooh-ch3-choh-choh-cooh.html)) Ví dụ 15:** Hỗn hợp X gồm C2H5OH, CH3COOH, HOCH2COOH, HOOC-CH2-COOH, CH3-CH(OH)-CH(OH)-COOH. Trung hòa 0,75 mol hỗn hợp X cần 780ml dung dịch NaOH 1M. Cho 0,15 mol hỗn hợp X tác dụng với Na dư thu được 3,5168 lít H2 (đktc). Đốt m gam hỗn hợp X cần 34,44 lít O2, (đktc) thu được 28,755 gam H2O. Giá trị của m là
 
-**A.**54,115 **B.**50,835 **C.** 51,815 **D.** 52,035
+**A.** 54,115 **B.** 50,835 **C.** 51,815 **D.** 52,035
 
 **([Lời giải](/bai-viet/hon-hop-x-gom-3-este-don-chuc-tao-thanh-tu-cung-mot-ancol-y-voi-3-axit-cacboxylic-phan-tu-chi-co-nhom-cooh.html)) Ví dụ 16:** **[BGD-2015]** Hỗn hợp X gồm 3 este đơn chức, tạo thành từ cùng một ancol Y với 3 axit cacboxylic (phân tử chỉ có nhóm –COOH); trong đó, có hai axit no là đồng đẳng kế tiếp nhau và một axit không no (có đồng phân hình học, chứa một liên kết đôi C=C trong phân tử). Thủy phân hoàn toàn 5,88 gam X bằng dung dịch NaOH, thu được hỗn hợp muối và m gam ancol Y. Cho m gam Y vào bình đựng Na dư, sau phản ứng thu được 896 ml khí (đktc) và khối lượng bình tăng 2,48 gam. Mặt khác, nếu đốt chyays hoàn toàn 5,88 gam X thì thu được CO2 và 3,96 gam H2O. Phần trăm khối lượng của este không no trong X là:
 
-**A.**38,76% **B.**40,82% **C.** 34,01% **D.** 29,25%
+**A.** 38,76% **B.** 40,82% **C.** 34,01% **D.** 29,25%
 
-**([Lời giải](/bai-viet/hon-hop-e-gom-bon-este-deu-co-cong-thuc-c8h8o2-va-co-vong-benzen-cho-1632-gam-e-tac-dung-toi-da.html)) Ví dụ 17:** **[BGD-2018]**Hỗn hợp E gồm bốn este đều có công thức C8H8O2 và có vòng benzen. Cho 16,32 gam E tác dụng tối đa với V ml dung dịch NaOH 1M (đun nóng), thu được hỗn hợp X gồm các ancol và 18,78 gam hỗn hợp muối. Cho toàn bộ X vào bình đựng kim loại Na dư, sau khi phản ứng kết thúc khối lượng chất rắn trong bình tăng 3,83 gam so với ban đầu. Giá trị của V là
+**([Lời giải](/bai-viet/hon-hop-e-gom-bon-este-deu-co-cong-thuc-c8h8o2-va-co-vong-benzen-cho-1632-gam-e-tac-dung-toi-da.html)) Ví dụ 17:** **[BGD-2018]** Hỗn hợp E gồm bốn este đều có công thức C8H8O2 và có vòng benzen. Cho 16,32 gam E tác dụng tối đa với V ml dung dịch NaOH 1M (đun nóng), thu được hỗn hợp X gồm các ancol và 18,78 gam hỗn hợp muối. Cho toàn bộ X vào bình đựng kim loại Na dư, sau khi phản ứng kết thúc khối lượng chất rắn trong bình tăng 3,83 gam so với ban đầu. Giá trị của V là
 
-**A.**190 **B.**100 **C.**120 **D.** 240
+**A.** 190 **B.** 100 **C.** 120 **D.** 240
 
-**([Lời giải](/bai-viet/cho-x-y-la-hai-don-chat-thuoc-day-dong-dang-cua-axit-acrylic-va-mx.html)) Ví dụ 18:** **[BGD-2014]**Cho X, Y là hai đơn chất thuộc dãy đồng đẳng của axit acrylic và MX<MY; Z là ancol có cùng số nguyên tử cacbon với X; T là este hai chức tạo bởi X,Y và Z. Đốt cháy hoàn toàn 11,16 gam hỗn hợp E gồm X,Y,Z,T cần vừa đủ 13,216 lít khí O2 (đktc), thu được khí CO2 và 9,36 gam nước. Mặt khác 11,16 gam E tác dụng tối đa với dung dịch chứa 0,04 mol Br2. Khối lượng muối thu được khi cho cùng lượng E trên tác dụng với KOH dư là:
+**([Lời giải](/bai-viet/cho-x-y-la-hai-don-chat-thuoc-day-dong-dang-cua-axit-acrylic-va-mx.html)) Ví dụ 18:** **[BGD-2014]** Cho X, Y là hai đơn chất thuộc dãy đồng đẳng của axit acrylic và MX<MY; Z là ancol có cùng số nguyên tử cacbon với X; T là este hai chức tạo bởi X,Y và Z. Đốt cháy hoàn toàn 11,16 gam hỗn hợp E gồm X,Y,Z,T cần vừa đủ 13,216 lít khí O2 (đktc), thu được khí CO2 và 9,36 gam nước. Mặt khác 11,16 gam E tác dụng tối đa với dung dịch chứa 0,04 mol Br2. Khối lượng muối thu được khi cho cùng lượng E trên tác dụng với KOH dư là:
 
-**A.**5,44 gam **B.**5,04 gam **C.**5,80 gam **D.** 4,68 gam
+**A.** 5,44 gam **B.** 5,04 gam **C.** 5,80 gam **D.** 4,68 gam
 
 **([Lời giải](/bai-viet/cho-008-mol-hon-hop-x-gom-bon-este-mach-ho-phan-ung-vua-du-voi-017-mol-h2-xuc-tac-ni-thu-duoc-hon-hop-y.html)) Ví dụ 19:** **[BGD-2018]** Cho 0,08 mol hỗn hợp X gồm bốn este mạch hở phản ứng vừa đủ với 0,17 mol H2 (xúc tác Ni, ) thi được hỗn hợp Y. Cho toàn bộ Y phản ứng vừa đủ với 110ml dung dịch NaOH 1M, thu được hỗn hợp Z gồm hai muối của hai axit cacboxylic no có mạch cacbon không phân nhánh và 6,88 gam hỗn hợp T hồm hai ancol no, đơn chức. Mặt khác, đốt cháy hoàn toàn 0,01 mol X cần vừa đủ 0,09 mol O2. Phần trăm khối lượng của muối có phân tử khối lớn hơn trong Z là
 
-**A.**54,18% **B.** 50,31% **C.** 58,84% **D.** 32,88%
+**A.** 54,18% **B.** 50,31% **C.** 58,84% **D.** 32,88%
 
-**([Lời giải](/bai-viet/hon-hop-e-gom-ba-este-mach-ho-deu-co-bon-lien-ket-pi-trong-phan-tu-trong-do-co-mot-este-don-chuc-la-este-cua.html)) Ví dụ 20:** **[BGD-2018]**Hỗn hợp E gồm ba este mạch hở, đều có bốn liên kết pi trong phân tử, trong đó có một este đơn chức là este của axit metacrylic và hai este hai chức là đồng phân của nhau. Đốt cháy hoàn toàn 12,22 gam E bằng O2, thu được 0,37 mol H2O. Mặt khác, cho 0,36 mol E phản ứng vừa đủ với 234 ml dung dịch NaOH 2,5M, thu được hỗn hợp X gồm các muối của các axit cacboxylic không no, có cùng số nguyên tử cacbon trong phân tử; hai ancol không no, đơn chức có khối lượng m1 gam và một ancol no, đơn chức có khối lượng m2 gam. Tỉ lệ m1 : m2 có giá trị gần nhất với giá trị nào sau đây?
+**([Lời giải](/bai-viet/hon-hop-e-gom-ba-este-mach-ho-deu-co-bon-lien-ket-pi-trong-phan-tu-trong-do-co-mot-este-don-chuc-la-este-cua.html)) Ví dụ 20:** **[BGD-2018]** Hỗn hợp E gồm ba este mạch hở, đều có bốn liên kết pi trong phân tử, trong đó có một este đơn chức là este của axit metacrylic và hai este hai chức là đồng phân của nhau. Đốt cháy hoàn toàn 12,22 gam E bằng O2, thu được 0,37 mol H2O. Mặt khác, cho 0,36 mol E phản ứng vừa đủ với 234 ml dung dịch NaOH 2,5M, thu được hỗn hợp X gồm các muối của các axit cacboxylic không no, có cùng số nguyên tử cacbon trong phân tử; hai ancol không no, đơn chức có khối lượng m1 gam và một ancol no, đơn chức có khối lượng m2 gam. Tỉ lệ m1 : m2 có giá trị gần nhất với giá trị nào sau đây?
 
-**A.**2,7 **B.**1,1 **C.**4,7 **D.**2,9
+**A.** 2,7 **B.** 1,1 **C.** 4,7 **D.** 2,9
 
-**([Lời giải](/bai-viet/hon-hop-e-gom-x-y-la-hai-axit-dong-dang-ke-tiep-z-t-la-2-este-deu-hai-chuc-mach-ho-y-va-z-la-dong-phan-cua-nhau.html)) Ví dụ 21:** **[BGD-2018]**Hỗn hợp E gồm X, Y là hai axit đồng đẳng kế tiếp; Z, T là 2 este (đều hai chức, mạch hở; Y và Z là đồng phân của nhau; MT-MZ=14). Đốt cháy hoàn toàn 12,84 gam E cần vừa đủ 0,37 mol O2 thu được CO2 và H2O. Mặt khác, cho 12,84 gam E phản ứng vừa đủ với 220ml dung dịch NaOH 1M. Cô cạn dung dịch sau phản ứng, thu được hỗn hợp muối khan G của các axit cacboxylic và 2,8 gam hỗn hợp 3 ancol có cùng số mol. Khối lượng muối của axit có phân tử khối lớn nhất trong G là
+**([Lời giải](/bai-viet/hon-hop-e-gom-x-y-la-hai-axit-dong-dang-ke-tiep-z-t-la-2-este-deu-hai-chuc-mach-ho-y-va-z-la-dong-phan-cua-nhau.html)) Ví dụ 21:** **[BGD-2018]** Hỗn hợp E gồm X, Y là hai axit đồng đẳng kế tiếp; Z, T là 2 este (đều hai chức, mạch hở; Y và Z là đồng phân của nhau; MT-MZ=14). Đốt cháy hoàn toàn 12,84 gam E cần vừa đủ 0,37 mol O2 thu được CO2 và H2O. Mặt khác, cho 12,84 gam E phản ứng vừa đủ với 220ml dung dịch NaOH 1M. Cô cạn dung dịch sau phản ứng, thu được hỗn hợp muối khan G của các axit cacboxylic và 2,8 gam hỗn hợp 3 ancol có cùng số mol. Khối lượng muối của axit có phân tử khối lớn nhất trong G là
 
-**A.**6,48 gam **B.** 4,86 gam **C.** 2,68 gam **D.** 3,24 gam
+**A.** 6,48 gam **B.** 4,86 gam **C.** 2,68 gam **D.** 3,24 gam
 
-**([Lời giải](/bai-viet/este-x-hai-chuc-mach-ho-tao-voi-mot-ancol-no-voi-hai-axit-cacboxylic-no-don-chuc.html)) Ví dụ 22:** **[BGD-2018]**Este X hai chức, mạch hở, tạo với một ancol no với hai axit cacboxylic no, đơn chức. Este Y ba chức, mạch hở, tạo bởi glixerol với một a xxit cacsboxylic không no, đơn chức (phân tử có hai liên kết pi). Đốt cháy hoàn toàn m gam hỗn hợp E gồm X và Y cần vừa đủ 0,5 mol O2 thu được 0,45 mol CO2. Mặt khác, thủy phân hoàn toàn 0,16 mol E cần vừa đủ 210 ml dung dịch NaOH 2M, thu được hai ancol (có cùng số nguyên tử cacbon trong phân tử) và hỗn hợp ba muối, trong đó tổng khối lượng muối của hai axit no là a gam. Giá trị của a là
+**([Lời giải](/bai-viet/este-x-hai-chuc-mach-ho-tao-voi-mot-ancol-no-voi-hai-axit-cacboxylic-no-don-chuc.html)) Ví dụ 22:** **[BGD-2018]** Este X hai chức, mạch hở, tạo với một ancol no với hai axit cacboxylic no, đơn chức. Este Y ba chức, mạch hở, tạo bởi glixerol với một a xxit cacsboxylic không no, đơn chức (phân tử có hai liên kết pi). Đốt cháy hoàn toàn m gam hỗn hợp E gồm X và Y cần vừa đủ 0,5 mol O2 thu được 0,45 mol CO2. Mặt khác, thủy phân hoàn toàn 0,16 mol E cần vừa đủ 210 ml dung dịch NaOH 2M, thu được hai ancol (có cùng số nguyên tử cacbon trong phân tử) và hỗn hợp ba muối, trong đó tổng khối lượng muối của hai axit no là a gam. Giá trị của a là
 
-**A.**13,20 **B.** 20,60 **C.** 12,36 **D.** 10,68
+**A.** 13,20 **B.** 20,60 **C.** 12,36 **D.** 10,68
 
 **([Lời giải](/bai-viet/x-y-la-hai-axit-cacboxylic-no-don-chuc-mach-ho-dong-dang-ke-tiep-mx-my.html)) Ví dụ 23:** X, Y là hai axit cacboxylic no, đơn chức, mạch hở, đồng đẳng kế tiếp(MX<MY), T là este tạo bởi X, Y với một ancol hai chức Z. Đốt cháy hoàn toàn 3,21 gam hỗn hợp M gồm X, Y, Z, T bằng lượng O2 vừa đủ, thu được 2,576 lít CO2 (đktc) và 2,07 gam H2O. Mặt khác, 3,21 gam M phản ứng vừa với 200ml dung dịch KOH 0,2M (đun nóng). Thành phần phần trăm về khối lượng của Z trong M có giá trị **gần nhất với giá trị** nào sau đây?
 
@@ -150,11 +150,11 @@ Các thầy cô cần file word liên hệ với chúng tôi tại fanpage faceb
 
 **A.** 10.59% **B.** 9,06% **C.** 12,85% **D.** 17,03%
 
-**([Lời giải](/bai-viet/thuy-phan-hoan-toan-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-natri-stearat-va-natri-oleat-5.html)) Câu 5:** **[BGD 2018]**Thủy phân hoàn toàn triglixerit X trong dung dịch NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2 thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
+**([Lời giải](/bai-viet/thuy-phan-hoan-toan-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-natri-stearat-va-natri-oleat-5.html)) Câu 5:** **[BGD 2018]** Thủy phân hoàn toàn triglixerit X trong dung dịch NaOH, thu được glixerol, natri stearat và natri oleat. Đốt cháy hoàn toàn m gam X cần vừa đủ 3,22 mol O2 thu được H2O và 2,28 mol CO2. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là
 
 **A.** 0,20 **B.** 0,16 **C.** 0,04 **D.** 0,08
 
-**([Lời giải](/bai-viet/thuy-phan-hoan-toan-a-gam-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-va-dung-dich-chua-m-gam-hon-hop-muoi-4.html)) Câu 6:** **[BGD 2018]**Thủy phân hoàn toàn a gam triglixerit X trong dung dịch NaOH, thu được glixerol và dung dịch chứa m gam hỗn hợp muối (gồm natri stearat; natri panmitat và C17HyCOONa). Đốt cháy hoàn toàn a gam X cần 1,55 mol O2, thu được H2O và 1,1 mol CO2. Giá trị của m là
+**([Lời giải](/bai-viet/thuy-phan-hoan-toan-a-gam-triglixerit-x-trong-dung-dich-naoh-thu-duoc-glixerol-va-dung-dich-chua-m-gam-hon-hop-muoi-4.html)) Câu 6:** **[BGD 2018]** Thủy phân hoàn toàn a gam triglixerit X trong dung dịch NaOH, thu được glixerol và dung dịch chứa m gam hỗn hợp muối (gồm natri stearat; natri panmitat và C17HyCOONa). Đốt cháy hoàn toàn a gam X cần 1,55 mol O2, thu được H2O và 1,1 mol CO2. Giá trị của m là
 
 **A.** 17,96 **B.** 16,12 **C.** 19,56 **D.** 17,72
 
@@ -188,7 +188,7 @@ Các thầy cô cần file word liên hệ với chúng tôi tại fanpage faceb
 
 **C.** CH3COOH và C2H3COOH **D.** CH3COOH và C3H5COOH
 
-**([Lời giải](/bai-viet/cho-m-gam-hon-hop-x-gom-ba-este-deu-don-chuc-tac-dung-toi-da-voi-400ml-dung-dich-naoh-1m-thu-duoc-hon-hop-y.html)) Câu 14:** **[BGD-2018]**Cho m gam hỗn hợp X gồm ba este đều đơn chức tác dụng tối đa với 400ml dung dịch NaOH 1M, thu được hỗn hợp Y gồm hai ancol cùng dãy đồng đẳng và 34,4 gam hỗn hợp muối Z. Đốt cháy hoàn toàn Y, thu được 3,584 lít khó CO2 (đktc) và 4,68 gam H2O. Giá trị của m là
+**([Lời giải](/bai-viet/cho-m-gam-hon-hop-x-gom-ba-este-deu-don-chuc-tac-dung-toi-da-voi-400ml-dung-dich-naoh-1m-thu-duoc-hon-hop-y.html)) Câu 14:** **[BGD-2018]** Cho m gam hỗn hợp X gồm ba este đều đơn chức tác dụng tối đa với 400ml dung dịch NaOH 1M, thu được hỗn hợp Y gồm hai ancol cùng dãy đồng đẳng và 34,4 gam hỗn hợp muối Z. Đốt cháy hoàn toàn Y, thu được 3,584 lít khó CO2 (đktc) và 4,68 gam H2O. Giá trị của m là
 
 **A.** 24,24 **B.** 25,14 **C.** 21,10 **D.** 22,44
 
@@ -200,7 +200,7 @@ Các thầy cô cần file word liên hệ với chúng tôi tại fanpage faceb
 
 **A.** 32 **B.** 35 **C.** 36 **D.** 34
 
-**([Lời giải](/bai-viet/hon-hop-x-gom-axit-panmitic-axit-stearic-va-triglixerit-y-dot-chay-hoan-toan-m-gam-x-thu-duoc-5.html)) Câu 17:** **[BGD 2018]**Hỗn hợp X gồm axit panmitic, axit stearic và triglixerit Y. Đốt cháy hoàn toàn m gam X thu được 1,56 mol CO2 và 1,52 mol H2O. Mặt khác, m gam X tác dụng vừa đủ với 0,09 mol NaOH trong dung dịch, thu được glixerol và dung dịch chỉ chứa a gam hỗn hợp muối natri panmitic, natri stearat. Giá trị của a là
+**([Lời giải](/bai-viet/hon-hop-x-gom-axit-panmitic-axit-stearic-va-triglixerit-y-dot-chay-hoan-toan-m-gam-x-thu-duoc-5.html)) Câu 17:** **[BGD 2018]** Hỗn hợp X gồm axit panmitic, axit stearic và triglixerit Y. Đốt cháy hoàn toàn m gam X thu được 1,56 mol CO2 và 1,52 mol H2O. Mặt khác, m gam X tác dụng vừa đủ với 0,09 mol NaOH trong dung dịch, thu được glixerol và dung dịch chỉ chứa a gam hỗn hợp muối natri panmitic, natri stearat. Giá trị của a là
 
 **A.** 25,86 **B.** 326,40 **C.** 27,70 **D.** 27,30
 
@@ -240,7 +240,7 @@ Các thầy cô cần file word liên hệ với chúng tôi tại fanpage faceb
 
 **A.** 1,6 **B.** 1,2 **C.** 0,6 **D.** 0,8
 
-**([Lời giả](/bai-viet/thuy-phan-hoan-toan-a-mol-triglixerit-x-trong-dung-dich-naoh-vua-du-thu-duoc-glixerol-va-m-gam-hon-hop-muoi-2.html)i) Câu 5: [BGD 2018]**Thủy phân hoàn toàn a mol triglixerit X trong dung dịch NaOH vừa đủ, thu được glixerol và m gam hỗn hợp muối. Đốt cháy hoàn toàn a mol X thu được 1,375 mol CO2 và 1,275 mol H2O. Mặt khác, a mol X tác dụng tối đa với 0,05 mol Br2 trong dung dịch. Giá trị của m là
+**([Lời giả](/bai-viet/thuy-phan-hoan-toan-a-mol-triglixerit-x-trong-dung-dich-naoh-vua-du-thu-duoc-glixerol-va-m-gam-hon-hop-muoi-2.html)i) Câu 5: [BGD 2018]** Thủy phân hoàn toàn a mol triglixerit X trong dung dịch NaOH vừa đủ, thu được glixerol và m gam hỗn hợp muối. Đốt cháy hoàn toàn a mol X thu được 1,375 mol CO2 và 1,275 mol H2O. Mặt khác, a mol X tác dụng tối đa với 0,05 mol Br2 trong dung dịch. Giá trị của m là
 
 **A.** 20,15 **B.** 20,60 **C.** 23,35 **D.** 22,15
 

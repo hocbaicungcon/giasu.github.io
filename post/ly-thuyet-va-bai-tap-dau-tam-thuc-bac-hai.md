@@ -196,7 +196,7 @@ Hướng dẫn.
 
    Căn cứ vào bảng xét dấu, chúng ta có tập nghiệm của bất phương trình đã cho là $S=\left( -\infty ,-3\right) \cup \left( -2,-1\right) \cup \left( 1,+\infty \right)$.
 
-**Bài 3.**Tìm các giá trị của tham số $m$ để các phương trình sau có 2 nghiệm dương phân biệt
+**Bài 3.** Tìm các giá trị của tham số $m$ để các phương trình sau có 2 nghiệm dương phân biệt
 
 1. $(m^2+m+1)x^2+(2m-3)x+m-5=0$
 

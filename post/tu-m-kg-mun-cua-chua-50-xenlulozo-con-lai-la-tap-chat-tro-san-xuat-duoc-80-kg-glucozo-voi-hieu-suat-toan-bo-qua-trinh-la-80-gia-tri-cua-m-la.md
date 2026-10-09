@@ -17,7 +17,7 @@ grade: 12
 
 Từ m kg mùn cưa chứa 50% xenlulozơ (còn lại là tạp chất trơ) sản xuất được 80 kg glucozơ với hiệu suất toàn bộ quá trình là 80%. Giá trị của m là
 
-**A.** 180.**B.**162.**C.**360.**D.**720.
+**A.** 180.**B.** 162.**C.** 360.**D.** 720.
 
 ![Từ m kg mùn cưa chứa 50% xenlulozơ (còn lại là tạp chất trơ) sản xuất được 80 kg glucozơ với hiệu suất toàn bộ quá trình là 80%. Giá trị của m là 1](assets/images/tu-m-kg-mun-cua-chua-50-xenlulozo-con-lai-la-tap-chat-tro-san-xuat-duoc-80-kg-glucozo-voi-hieu-suat-toan-bo-qua-trinh-la-80-gia-tri-cua-m-la-c-67.jpg)
 

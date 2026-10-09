@@ -30,86 +30,86 @@ grade: 12
 
 **Dạng 1: Cho dữ kiện dạng chữ**
 
-**Câu 1:**Có bao nhiêu este có 2 nguyên tử cacbon trong phân tử?
+**Câu 1:** Có bao nhiêu este có 2 nguyên tử cacbon trong phân tử?
 
-******A.**1**B.**2**C.**3**D.**4
+******A.** 1**B.** 2**C.** 3**D.** 4
 
-**Câu 2:**Có bao nhiêu este có 3 nguyên tử cacbon trong phân tử?
+**Câu 2:** Có bao nhiêu este có 3 nguyên tử cacbon trong phân tử?
 
-**A.**1**B.**2**C.**3******D.**4
+**A.** 1**B.** 2**C.** 3******D.** 4
 
-**Câu 3:**Có bao nhiêu este có CTPT C4H8O2 tham gia phản ứng tráng bạc?
+**Câu 3:** Có bao nhiêu este có CTPT C4H8O2 tham gia phản ứng tráng bạc?
 
-**A.**1******B.**2******C.**3**D.**4
+**A.** 1******B.** 2******C.** 3**D.** 4
 
-**Câu 4:**Có bao nhiêu este có CTPT C4H6O2 thủy phân thu được ancol?
+**Câu 4:** Có bao nhiêu este có CTPT C4H6O2 thủy phân thu được ancol?
 
-**A.**1******B.**2******C.**3**D.**4
+**A.** 1******B.** 2******C.** 3**D.** 4
 
-**Câu 5:**Có bao nhiêu este có CTPT C4H6O2 thủy phân thu được anđehit?
+**Câu 5:** Có bao nhiêu este có CTPT C4H6O2 thủy phân thu được anđehit?
 
-**A.**1**B.**2******C.**3******D.**4
+**A.** 1**B.** 2******C.** 3******D.** 4
 
-**Câu 6:**Có bao nhiêu este có CTPT C4H6O2 thủy phân thu được sản phẩm có tham gia phản ứng tráng bạc?
+**Câu 6:** Có bao nhiêu este có CTPT C4H6O2 thủy phân thu được sản phẩm có tham gia phản ứng tráng bạc?
 
-**A.**3**B.**4******C.**5**D.**6
+**A.** 3**B.** 4******C.** 5**D.** 6
 
-**Câu 7 (****QG 2017****):****** Este X mạch hở có công thức phân tử C4H6O2. Đun nóng a mol X trong dung dịch NaOH vừa đủ, thu được dung dịch Y. Cho toàn bộ Y tác dụng với lượng dư dung dịch AgNO3 trong NH3, thu được 4a mol Ag. Biết các phản ứng xảy ra hoàn toàn. Công thức cấu tạo của X là
+**Câu 7 (****QG 2017*** *):****** Este X mạch hở có công thức phân tử C4H6O2. Đun nóng a mol X trong dung dịch NaOH vừa đủ, thu được dung dịch Y. Cho toàn bộ Y tác dụng với lượng dư dung dịch AgNO3 trong NH3, thu được 4a mol Ag. Biết các phản ứng xảy ra hoàn toàn. Công thức cấu tạo của X là
 
 **A.** HCOO-CH=CH-CH3. **B.** CH2=CH-COO-CH3. 
 
  **C.** CH3-COO-CH=CH2. **D.** HCOO-CH2-CH=CH2.
 
-**Câu 8:**Có bao nhiêu este có CTPT C8H8O2 thủy phân thu được ancol?
+**Câu 8:** Có bao nhiêu este có CTPT C8H8O2 thủy phân thu được ancol?
 
-**A.**1******B.**2******C.**3**D.**4
+**A.** 1******B.** 2******C.** 3**D.** 4
 
-**Câu 9 (****QG 2017****)****:** Este X có công thức phân tử C8H8O2. Cho X tác dụng với dung dịch NaOH, thu được sản phẩm có hai muối. Số công thức cấu tạo của X thoả mãn tính chất trên là
+**Câu 9 (****QG 2017*** *)****:** Este X có công thức phân tử C8H8O2. Cho X tác dụng với dung dịch NaOH, thu được sản phẩm có hai muối. Số công thức cấu tạo của X thoả mãn tính chất trên là
 
 **A.** 6. **B.** 3. **C.** 4. **D.** 5.
 
-**Câu 10 (QG 2017):**Cho a mol este X (C9H10O2) tác dụng vừa đủ với 2a mol NaOH, thu được dung dịch không có phản ứng tráng bạc**.**Số công thức cấu tạo phù hợp của X là
+**Câu 10 (QG 2017):** Cho a mol este X (C9H10O2) tác dụng vừa đủ với 2a mol NaOH, thu được dung dịch không có phản ứng tráng bạc**.** Số công thức cấu tạo phù hợp của X là
 
- **A.**3. **B.**4. **C.**2. **D.**6.
+ **A.** 3. **B.** 4. **C.** 2. **D.** 6.
 
-**Câu 11:**Hỗn hợp E gồm hai este X và Y đều có công thức phân tử C8H8O2. Cho E tác dụng với dung dịch NaOH thu được dung dịch chứa 3 muối. Số cặp este X, Y thỏa mãn tính chất trên là
+**Câu 11:** Hỗn hợp E gồm hai este X và Y đều có công thức phân tử C8H8O2. Cho E tác dụng với dung dịch NaOH thu được dung dịch chứa 3 muối. Số cặp este X, Y thỏa mãn tính chất trên là
 
-**A.**2**B.**3******C.**4**D.**5
+**A.** 2**B.** 3******C.** 4**D.** 5
 
-**Câu 12:**Có bao nhiêu este có CTPT C4H6O4 tác dụng với dung dịch NaOH thu được 1 muối và 1 ancol?
+**Câu 12:** Có bao nhiêu este có CTPT C4H6O4 tác dụng với dung dịch NaOH thu được 1 muối và 1 ancol?
 
-**A.**1******B.**2******C.**3**D.**4
+**A.** 1******B.** 2******C.** 3**D.** 4
 
-**Câu 13:**Có bao nhiêu este có CTPT C5H8O4 tác dụng với dung dịch NaOH thu được 1 muối và 1 ancol?
+**Câu 13:** Có bao nhiêu este có CTPT C5H8O4 tác dụng với dung dịch NaOH thu được 1 muối và 1 ancol?
 
-**A.**1**B.**2******C.**3******D.**4
+**A.** 1**B.** 2******C.** 3******D.** 4
 
-**Câu 14:**Có bao nhiêu este có CTPT C5H8O4 tác dụng với dung dịch NaOH thu được 1 muối và 2 ancol?
+**Câu 14:** Có bao nhiêu este có CTPT C5H8O4 tác dụng với dung dịch NaOH thu được 1 muối và 2 ancol?
 
-******A.**1******B.**2**C.**3**D.**4
+******A.** 1******B.** 2**C.** 3**D.** 4
 
-**Câu 15:**Có bao nhiêu este có CTPT C5H8O4 tác dụng với dung dịch NaOH thu được 2 muối và 1 ancol?
+**Câu 15:** Có bao nhiêu este có CTPT C5H8O4 tác dụng với dung dịch NaOH thu được 2 muối và 1 ancol?
 
-**A.**4 **B.**2******C.**5******D.**3
+**A.** 4 **B.** 2******C.** 5******D.** 3
 
-**Câu 16:**Có bao nhiêu este không tham gia phản ứng tráng bạc có CTPT C6H10O4 tác dụng với dung dịch NaOH thu được 1 muối và 1 ancol?
+**Câu 16:** Có bao nhiêu este không tham gia phản ứng tráng bạc có CTPT C6H10O4 tác dụng với dung dịch NaOH thu được 1 muối và 1 ancol?
 
-**A.**1**B.**2**C.**3******D.**4
+**A.** 1**B.** 2**C.** 3******D.** 4
 
-**Câu 17:**Có bao nhiêu este có CTPT C6H10O4 tác dụng với dung dịch NaOH thu được 1 muối và 2 ancol?
+**Câu 17:** Có bao nhiêu este có CTPT C6H10O4 tác dụng với dung dịch NaOH thu được 1 muối và 2 ancol?
 
-**A.**1**B.**2******C.**3******D.**4
+**A.** 1**B.** 2******C.** 3******D.** 4
 
-**Câu 18:**Có bao nhiêu este có CTPT C6H10O4 không tham gia phản ứng tráng bạc tác dụng với dung dịch NaOH thu được 2 muối và 1 ancol?
+**Câu 18:** Có bao nhiêu este có CTPT C6H10O4 không tham gia phản ứng tráng bạc tác dụng với dung dịch NaOH thu được 2 muối và 1 ancol?
 
-**A.**1**B.**2**C.**3******D.**4
+**A.** 1**B.** 2**C.** 3******D.** 4
 
 **Câu 19 (MH 2018):******Cho este đa chức X (có công thức phân tử C6H10O4) tác dụng với dung dịch NaOH, thu được sản phẩm gồm một muối của axit cacboxylic Y và một ancol Z. Biết X không có phản ứng tráng bạc. Số công thức cấu tạo phù hợp của X là
 
 | A. 4. | B. 3. | C. 5. | D. 2. |
 | --- | --- | --- | --- |
 
-**Câu 20 (MH 2017):**Ba chất hữu cơ X, Y, Z có cùng công thức phân tử C4H8O2, có đặc điểm sau:
+**Câu 20 (MH 2017):** Ba chất hữu cơ X, Y, Z có cùng công thức phân tử C4H8O2, có đặc điểm sau:
 
 – X có mạch cacbon phân nhánh, tác dụng được với Na và NaOH.
 
@@ -125,65 +125,65 @@ grade: 12
 
 **D.** CH3CH2CH2COOH, CH3COOCH2CH3, CH3COOCH2CH3.
 
-**([Lời giải](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-mot-muoi-natri-cua-axit-cacboxylic-hai-chuc-y.html)) Câu 21:**Cho este hai chức, mạch hở **X**(C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức **Y**và hai chất hữu cơ **Z**và **T**có cùng số nguyên tử cacbon (MZ < MT). Phát biểu nào sau đây **sai?**
+**([Lời giải](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-mot-muoi-natri-cua-axit-cacboxylic-hai-chuc-y.html)) Câu 21:** Cho este hai chức, mạch hở **X**(C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức **Y** và hai chất hữu cơ **Z** và **T** có cùng số nguyên tử cacbon (MZ < MT). Phát biểu nào sau đây **sai?**
 
 1. 
 
-   Axit **Y**có mạch cacbon không phân nhánh.
+   Axit **Y** có mạch cacbon không phân nhánh.
 
-2. Đun nóng **T**với H2SO4 đặc (ở 140oC) thu được sản phẩm hữu cơ chủ yếu là etilen.
+2. Đun nóng **T** với H2SO4 đặc (ở 140oC) thu được sản phẩm hữu cơ chủ yếu là etilen.
 
-3. Chất **Z**có tham gia phản ứng tráng bạc.
+3. Chất **Z** có tham gia phản ứng tráng bạc.
 
 4.  Có một công thức cấu tạo thoả mãn tính chất của **X**.
 
-**([Lời giải](/bai-viet/este-x-co-cong-thuc-phan-tu-c6h10o4-xa-phong-hoa-hoan-toan-x-bang-dung-dich-naoh-thu-duoc-ba-chat-huu-co-y-z-t.html)) Câu****22 (MH 2019):**Este X có công thức phân tử C6H10O4. Xà phòng hóa hoàn toàn X bằng dung dịch NaOH, thu được ba chất hữu cơ Y, Z, T. Biết Y tác dụng với Cu(OH)2 tạo dung dịch màu xanh lam. Nung nóng Z với hỗn hợp rắn gồm NaOH và CaO, thu được CH4. Phát biểu nào sau đây **sai**?**A.**X có hai công thức cấu tạo phù hợp. 
+**([Lời giải](/bai-viet/este-x-co-cong-thuc-phan-tu-c6h10o4-xa-phong-hoa-hoan-toan-x-bang-dung-dich-naoh-thu-duoc-ba-chat-huu-co-y-z-t.html)) Câu****22 (MH 2019):** Este X có công thức phân tử C6H10O4. Xà phòng hóa hoàn toàn X bằng dung dịch NaOH, thu được ba chất hữu cơ Y, Z, T. Biết Y tác dụng với Cu(OH)2 tạo dung dịch màu xanh lam. Nung nóng Z với hỗn hợp rắn gồm NaOH và CaO, thu được CH4. Phát biểu nào sau đây **sai**?** A.**X có hai công thức cấu tạo phù hợp. 
 
-**B. **Y có mạch cacbon phân nhánh.**C.**T có khả năng tham gia phản ứng tráng bạc. 
+**B.** Y có mạch cacbon phân nhánh.**C.** T có khả năng tham gia phản ứng tráng bạc. 
 
-**D.**Z không làm mất màu dung dịch brom. 
+**D.** Z không làm mất màu dung dịch brom. 
 
 **([Lời giải](/bai-viet/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z.html)) Câu****23:** Chất X có công thức phân tử C6H8O4. Cho 1 mol X phản ứng hết với dung dịch NaOH, thu được chất Y và 2 mol chất Z. Đun Z với dung dịch H2SO4 đặc, thu được đimetyl ete. Chất Y phản ứng với dung dịch H2SO4 loãng (dư), thu được chất T. Cho T phản ứng với HBr, thu được hai sản phẩm là đồng phân cấu tạo của nhau. Phát biểu nào sau đây đúng?
 
-**A.**Chất T không có đồng phân hình học.
+**A.** Chất T không có đồng phân hình học.
 
-**B.**Chất X phản ứng với H2 (Ni, to) theo tỉ lệ mol 1 : 3.
+**B.** Chất X phản ứng với H2 (Ni, to) theo tỉ lệ mol 1 : 3.
 
-**C.**Chất Y có công thức phân tử C4H4O4Na2.
+**C.** Chất Y có công thức phân tử C4H4O4Na2.
 
-**D.**Chất Z làm mất màu nước brom.
+**D.** Chất Z làm mất màu nước brom.
 
 **([Lời giải](/bai-viet/hop-chat-huu-co-x-co-cong-thuc-phan-tu-c5h6o4-x-tac-dung-voi-naoh-trong-dung-dich-theo-ti-le-mol-1-2-tao-ra-muoi-cua-axit-no-y-va-ancol-z.html)) Câu****24:** Hợp chất hữu cơ X có công thức phân tử C5H6O4. X tác dụng với NaOH trong dung dịch theo tỉ lệ mol 1 : 2, tạo ra muối của axit no Y và ancol Z. Dẫn Z qua CuO nung nóng thu được anđehit T có phản ứng tráng bạc, tạo ra Ag theo tỉ lệ mol 1 : 4. Biết Y không có đồng phân nào khác. Phát biểu nào sau đây là đúng?
 
-**A.**Ancol Z không no có 1 liên kết C=C.
+**A.** Ancol Z không no có 1 liên kết C=C.
 
-**B.**Axit Y có tham gia phản ứng tráng bạc.
+**B.** Axit Y có tham gia phản ứng tráng bạc.
 
-**C.**Ancol Z không hoà tan Cu(OH)2 để tạo dung dịch màu xanh.
+**C.** Ancol Z không hoà tan Cu(OH)2 để tạo dung dịch màu xanh.
 
-**D.**Anđehit T là chất đầu tiên trong dãy đồng đẳng.
+**D.** Anđehit T là chất đầu tiên trong dãy đồng đẳng.
 
- *(Đề thi thử THPT Quốc Gia lần 2****–****THPT chuyên Hùng Vương****–****Phú Thọ, năm 2016)*
+ *(Đề thi thử THPT Quốc Gia lần 2****–*** *THPT chuyên Hùng Vương****–*** *Phú Thọ, năm 2016)*
 
-**([Lời giải](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi.html)) Câu****25 (MH 2020)****:**Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y (no, hai chức) và hai muối của hai axit cacboxylic *Z*và T (MZ <MT). Chất Y không hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây **sai**? 
+**([Lời giải](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-ancol-y-no-hai-chuc-va-hai-muoi.html)) Câu****25 (MH 2020)*** *:**Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y (no, hai chức) và hai muối của hai axit cacboxylic *Z* và T (MZ <MT). Chất Y không hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây **sai**? 
 
-******A.******Axit *Z*có phản ứng tráng bạc. 
+******A.*** ***Axit *Z* có phản ứng tráng bạc. 
 
-******B.******Oxi hóa Y bằng CuO dư, đun nóng, thu được anđehit hai chức. 
+******B.*** ***Oxi hóa Y bằng CuO dư, đun nóng, thu được anđehit hai chức. 
 
-******C.******Axit T có đồng phân hình học. 
+******C.*** ***Axit T có đồng phân hình học. 
 
-******D.******Có một công thức cấu tạo thỏa mãn tính chất của X. 
+******D.*** ***Có một công thức cấu tạo thỏa mãn tính chất của X. 
 
-**([Lời giải](/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z.html)) Câu****26 (QG 2019)****:**Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp 2 muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc. Phát biểu nào sau đây đúng?
+**([Lời giải](/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hon-hop-2-muoi-cacboxylat-y-va-z.html)) Câu****26 (QG 2019)*** *:**Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp 2 muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc. Phát biểu nào sau đây đúng?
 
-**A.**Axit cacboxylic của muối Z có đồng phân hình học.**B.**Tên gọi của Z là natri acrylat.**C.**Có 2 công thức cấu tạo thỏa mãn tính chất của X.**D.**Phân tử X chỉ chứa 1 loại nhóm chức.
+**A.** Axit cacboxylic của muối Z có đồng phân hình học.**B.** Tên gọi của Z là natri acrylat.**C.** Có 2 công thức cấu tạo thỏa mãn tính chất của X.**D.** Phân tử X chỉ chứa 1 loại nhóm chức.
 
- **([Lời giải](/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hai-muoi-cua-hai-axit-cacboxylic-y-va-z.html)) Câu****(QG 2019):******Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng, thu được glixerol và hai muối của hai axit cacboxylic Y và Z. Axit Z có đồng phân hình học. Phát biểu nào sau đây đúng?
+ **([Lời giải](/bai-viet/hop-chat-huu-co-mach-ho-x-c8h12o5-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-glixerol-va-hai-muoi-cua-hai-axit-cacboxylic-y-va-z.html)) Câu****(QG 2019):*** ***Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng, thu được glixerol và hai muối của hai axit cacboxylic Y và Z. Axit Z có đồng phân hình học. Phát biểu nào sau đây đúng?
 
-**A.**Có hai công thức cấu tạo thỏa mãn tính chất của X.**B.**Y có phản ứng tráng bạc.**C.**Phân tử X chỉ chứa một loại nhóm chức.**D.**Phân tử khối của Z là 94.
+**A.** Có hai công thức cấu tạo thỏa mãn tính chất của X.**B.** Y có phản ứng tráng bạc.**C.** Phân tử X chỉ chứa một loại nhóm chức.**D.** Phân tử khối của Z là 94.
 
-**([Lời giải](/bai-viet/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o.html)) Câu****28 (MH 2017):**Cho 1 mol chất X (C9H8O4, chứa vòng benzen) tác dụng hết với NaOH dư, thu được 2 mol chất Y, 1 mol chất Z và 1 mol H2O. Chất Z tác dụng với dung dịch H2SO4 loãng thu được chất hữu cơ T. Phát biểu nào sau đây sai?
+**([Lời giải](/bai-viet/cho-1-mol-chat-x-c9h8o4-chua-vong-benzen-tac-dung-het-voi-naoh-du-thu-duoc-2-mol-chat-y-1-mol-chat-z-va-1-mol-h2o.html)) Câu****28 (MH 2017):** Cho 1 mol chất X (C9H8O4, chứa vòng benzen) tác dụng hết với NaOH dư, thu được 2 mol chất Y, 1 mol chất Z và 1 mol H2O. Chất Z tác dụng với dung dịch H2SO4 loãng thu được chất hữu cơ T. Phát biểu nào sau đây sai?
 
 **A.** Chất T tác dụng với NaOH theo tỉ lệ mol 1 : 2.  
 
@@ -193,7 +193,7 @@ grade: 12
 
  **D.** Chất X tác dụng với NaOH theo tỉ lệ mol 1 : 3.
 
-**([Lời giải](/bai-viet/thuy-phan-hoan-toan-chat-huu-co-e-c9h16o4-chua-hai-chuc-este-bang-dung-dich-naoh-thu-duoc-san-pham-gom-ancol-x-va-hai-chat-huu-co-y-z.html)) Câu****29 (MH 2020):**Thủy phân hoàn toàn chất hữu cơ E (C9H16O4, chứa hai chức este) bằng dung dich NaOH, thu được sản phẩm gồm ancol X và hai chất hữu cơ Y, Z. Biết Y chứa 3 nguyên tử cacbon và Mx < MY < MZ. Cho Z tác dụng với dung dịch HCl loãng, dư, thu được hợp chất hữu cơ T (C3H6O3). Cho các phát biểu sau:
+**([Lời giải](/bai-viet/thuy-phan-hoan-toan-chat-huu-co-e-c9h16o4-chua-hai-chuc-este-bang-dung-dich-naoh-thu-duoc-san-pham-gom-ancol-x-va-hai-chat-huu-co-y-z.html)) Câu****29 (MH 2020):** Thủy phân hoàn toàn chất hữu cơ E (C9H16O4, chứa hai chức este) bằng dung dich NaOH, thu được sản phẩm gồm ancol X và hai chất hữu cơ Y, Z. Biết Y chứa 3 nguyên tử cacbon và Mx < MY < MZ. Cho Z tác dụng với dung dịch HCl loãng, dư, thu được hợp chất hữu cơ T (C3H6O3). Cho các phát biểu sau:
 
 (1) Khi cho a mol T tác dụng với Na dư, thu được a mol H2.
 
@@ -205,11 +205,11 @@ grade: 12
 
 Số phát biểu đúng là
 
- **A.** 3.**B.**4.******C.**2.**D.**1.
+ **A.** 3.**B.** 4.******C.** 2.**D.** 1.
 
-***Dạng 2: Cho dữ kiện dạng******sơ đồ phản ứng của các chất***
+***Dạng 2: Cho dữ kiện dạng*** ***sơ đồ phản ứng của các chất***
 
-**([Lời giải](/bai-viet/cho-so-do-chuyen-hoa-sau-c3h4o2-naoh-x-y.html)) Câu****30:**Cho sơ đồ chuyển hoá sau : 
+**([Lời giải](/bai-viet/cho-so-do-chuyen-hoa-sau-c3h4o2-naoh-x-y.html)) Câu****30:** Cho sơ đồ chuyển hoá sau : 
 
 C3H4O2 + NaOH  X + Y 
 
@@ -217,19 +217,19 @@ X + H2SO4 loãng  Z + T
 
 Biết Y và Z đều có phản ứng tráng gương. Hai chất Y, Z tương ứng là : 
 
-**A.**HCHO, HCOOH. **B.**HCHO, CH3CHO. **C.**HCOONa, CH3CHO. **D.**CH3CHO, HCOOH.
+**A.** HCHO, HCOOH. **B.** HCHO, CH3CHO. **C.** HCOONa, CH3CHO. **D.** CH3CHO, HCOOH.
 
-**([Lời giải](/bai-viet/hop-chat-huu-co-mach-ho-x-co-cong-thuc-phan-tu-c5h10o-chat-x-khong-phan-ung-voi-na.html)) Câu****31:**Hợp chất hữu cơ mạch hở X có công thức phân tử C­5­H­10­O. Chất X không phản ứng với Na, thỏa mãn sơ đồ chuyển hóa sau:
+**([Lời giải](/bai-viet/hop-chat-huu-co-mach-ho-x-co-cong-thuc-phan-tu-c5h10o-chat-x-khong-phan-ung-voi-na.html)) Câu****31:** Hợp chất hữu cơ mạch hở X có công thức phân tử C­5­H­10­O. Chất X không phản ứng với Na, thỏa mãn sơ đồ chuyển hóa sau:
 
 X (+H2, Ni, t0) → Y (+CH3COOH, H2SO4 đặc) → Este có mùi chuối chín
 
 Tên của X là
 
-**A.**3 – metylbutanal. **B.**pentanal.
+**A.** 3 – metylbutanal. **B.** pentanal.
 
-**C.**2 – metylbutanal. **D.**2,2 – đimetylpropanal.
+**C.** 2 – metylbutanal. **D.** 2,2 – đimetylpropanal.
 
-**([Lời giải](/bai-viet/cho-so-do-cac-phan-ung-x-naoh-dung-dich-%e2%86%92-y-z.html)) Câu****32:**Cho sơ đồ các phản ứng:
+**([Lời giải](/bai-viet/cho-so-do-cac-phan-ung-x-naoh-dung-dich-%e2%86%92-y-z.html)) Câu****32:** Cho sơ đồ các phản ứng:
 
 X + NaOH (dung dịch) → Y + Z (t0) (1)
 
@@ -241,11 +241,11 @@ Q + H2O → Z (t0, xt) (4)
 
 Trong sơ đồ trên, X và Z lần lượt là
 
-**A.**HCOOCH=CH2 và HCHO. **B.**CH3COOC2H5 và CH3CHO.
+**A.** HCOOCH=CH2 và HCHO. **B.** CH3COOC2H5 và CH3CHO.
 
-**C.**CH3COOCH=CH2 và HCHO. **D.**CH3COOCH=CH2 và CH3CHO.
+**C.** CH3COOCH=CH2 và HCHO. **D.** CH3COOCH=CH2 và CH3CHO.
 
-**([Lời giải](/bai-viet/cho-so-do-chuyen-hoa-sau-a-c3h4o2-naoh-x-y.html)) Câu****33:**Cho sơ đồ chuyển hóa sau:
+**([Lời giải](/bai-viet/cho-so-do-chuyen-hoa-sau-a-c3h4o2-naoh-x-y.html)) Câu****33:** Cho sơ đồ chuyển hóa sau:
 
 (a) C3H4O2 + NaOH   X + Y
 
@@ -257,11 +257,11 @@ Trong sơ đồ trên, X và Z lần lượt là
 
 Chất E và chất F theo thứ tự là
 
-**A.**NH4HCO3 và CH3COONH4. **B.**(NH4)2CO3 và CH3COOH.
+**A.** NH4HCO3 và CH3COONH4. **B.** (NH4)2CO3 và CH3COOH.
 
- **C.**HCOONH­4 và CH3COONH4. **D.**HCOONH4 và CH3CHO.
+ **C.** HCOONH­4 và CH3COONH4. **D.** HCOONH4 và CH3CHO.
 
-**([Lời giải](/bai-viet/khi-cho-chat-huu-co-a-co-cong-thuc-phan-tu-c6h10o5-va-khong-co-nhom-ch2-tac-dung-voi-nahco3-hoac-voi-na-thi-so-mol-khi-sinh-ra-luon-bang-so-mol-a-phan-ung.html)) Câu 34****(****MH2015-1):**Khi cho chất hữu cơ****A (có công thức phân tử****C6H10O5****và không có nhóm CH2) tác dụng với****NaHCO3 hoặc với Na thì số mol khí sinh ra luôn bằng số mol A phản ứng. A và các sản phẩm B, D tham gia phản ứng theo phương trình hóa học sau:
+**([Lời giải](/bai-viet/khi-cho-chat-huu-co-a-co-cong-thuc-phan-tu-c6h10o5-va-khong-co-nhom-ch2-tac-dung-voi-nahco3-hoac-voi-na-thi-so-mol-khi-sinh-ra-luon-bang-so-mol-a-phan-ung.html)) Câu 34****(*** *MH2015-1):**Khi cho chất hữu cơ****A (có công thức phân tử*** *C6H10O5****và không có nhóm CH2) tác dụng với*** *NaHCO3 hoặc với Na thì số mol khí sinh ra luôn bằng số mol A phản ứng. A và các sản phẩm B, D tham gia phản ứng theo phương trình hóa học sau:
 
 A ↔ B + H2O 
 
@@ -273,15 +273,15 @@ D + HCl → E + NaCl
 
 Tên gọi của E là
 
-**A.**axit acrylic. **B.**axit 2-hiđroxi propanoic.
+**A.** axit acrylic. **B.** axit 2-hiđroxi propanoic.
 
-**C.**axit 3-hiđroxi propanoic. **D.**axit propionic.
+**C.** axit 3-hiđroxi propanoic. **D.** axit propionic.
 
-**([Lời giải](/bai-viet/ancol-x-mx-76-tac-dung-voi-axit-cacboxylic-y-thu-duoc-hop-chat-z-mach-ho-x-va-y-deu-chi-co-mot-loai-nhom-chuc.html)) Câu 35****(****MH2015-2):**Ancol X (MX****= 76) tác dụng với axit cacboxylic Y thu****được hợp chất Z mạch hở****(X và Y đều chỉ có một loại nhóm chức). Đốt cháy hoàn toàn 17,2 gam Z cần vừa đủ 14,56 lít khí O2 (đktc), thu được CO2 và H2O theo tỉ lệ số mol tương ứng là 7 : 4. Mặt khác, 17,2 gam Z lại phản ứng vừa đủ với 8 gam NaOH trong dung dịch. Biết Z có công thức phân tử trùng với công thức đơn giản nhất. Số công thức cấu tạo của Z thỏa mãn là
+**([Lời giải](/bai-viet/ancol-x-mx-76-tac-dung-voi-axit-cacboxylic-y-thu-duoc-hop-chat-z-mach-ho-x-va-y-deu-chi-co-mot-loai-nhom-chuc.html)) Câu 35****(*** *MH2015-2):**Ancol X (MX****= 76) tác dụng với axit cacboxylic Y thu*** *được hợp chất Z mạch hở****(X và Y đều chỉ có một loại nhóm chức). Đốt cháy hoàn toàn 17,2 gam Z cần vừa đủ 14,56 lít khí O2 (đktc), thu được CO2 và H2O theo tỉ lệ số mol tương ứng là 7 : 4. Mặt khác, 17,2 gam Z lại phản ứng vừa đủ với 8 gam NaOH trong dung dịch. Biết Z có công thức phân tử trùng với công thức đơn giản nhất. Số công thức cấu tạo của Z thỏa mãn là
 
- **A.**1. **B.**3. **C.**2. **D.**4.
+ **A.** 1. **B.** 3. **C.** 2. **D.** 4.
 
-**([Lời giải](/bai-viet/cho-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-%e2%86%92-x1-x2-x3-c-x2-hcl-%e2%86%92-x5-nacl.html)) Câu****36 (****QG 2019-2)**Cho sơ đồ phản ứng theo đúng tỉ lệ mol
+**([Lời giải](/bai-viet/cho-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-%e2%86%92-x1-x2-x3-c-x2-hcl-%e2%86%92-x5-nacl.html)) Câu****36 (*** *QG 2019-2)**Cho sơ đồ phản ứng theo đúng tỉ lệ mol
 
  (a) X + 2NaOH → X1 + X2 + X3 (c) X2 + HCl → X5 + NaCl 
 
@@ -289,11 +289,11 @@ Tên gọi của E là
 
 Biết X có công thức phân tử C6H10O4 và chứa hai chức este; X1, X2 đều có hai nguyên tử cacbon trong phân tử và khối lượng mol của X1 nhỏ hơn khối lượng mol của X2. Phát biểu nào sau đây **sai**?
 
- **A.**Phân tử khối của X4 là 60.**B.**X5 là hợp chất hữu cơ tạp chức.****
+ **A.** Phân tử khối của X4 là 60.**B.** X5 là hợp chất hữu cơ tạp chức.****
 
-**C.**X6 là anđehit axetic.******D.**Phân tử X2 có hai nguyên tử oxi.
+**C.** X6 là anđehit axetic.******D.** Phân tử X2 có hai nguyên tử oxi.
 
-**([Lời giải](/bai-viet/cho-so-do-cac-phan-ung-theo-dung-ti-le-mol-a-x-4agno3-6nh3-2h2o-%e2%86%92-x1-4ag-4nh4no3.html)) Câu****37(****QG 2019-3)****:**Cho sơ đồ các phản ứng theo đúng tỉ lệ mol:
+**([Lời giải](/bai-viet/cho-so-do-cac-phan-ung-theo-dung-ti-le-mol-a-x-4agno3-6nh3-2h2o-%e2%86%92-x1-4ag-4nh4no3.html)) Câu****37(*** *QG 2019-3)****:** Cho sơ đồ các phản ứng theo đúng tỉ lệ mol:
 
  (a) X + 4AgNO3 + 6NH3 + 2H2O → X1 + 4Ag + 4NH4NO3 (t0)
 
@@ -303,7 +303,7 @@ Biết X có công thức phân tử C6H10O4 và chứa hai chức este; X1, X2 
 
 (d) X3 + C2H5OH ↔ X4 + H2O
 
-Biết X là hợp chất hữu cơ no, mạch hở, chỉ chứa một loại nhóm chức. Khi đốt cháy hoàn toàn X2, sản phẩm thu được chỉ gồm CO2 và Na2CO3. Phân tử khối của X4 là** A.**118. **B.**90. **C.**138. **D.**146.
+Biết X là hợp chất hữu cơ no, mạch hở, chỉ chứa một loại nhóm chức. Khi đốt cháy hoàn toàn X2, sản phẩm thu được chỉ gồm CO2 và Na2CO3. Phân tử khối của X4 là **A.** 118. **B.** 90. **C.** 138. **D.** 146.
 
 **([Lời giải](/bai-viet/hop-chat-huu-co-x-chua-c-h-o-trong-do-oxi-chiem-50-ve-khoi-luong-tu-chat-x-thuc-hien-chuyen-hoa-sau-x-co-xt-t0.html)) Câu 38:** Hợp chất hữu cơ X (chứa C, H, O) trong đó oxi chiếm 50% về khối lượng. 
 
@@ -311,17 +311,17 @@ Từ chất X thực hiện chuyển hoá sau:
 
 X (+CO, xt, t0) → Y (+HOCH2CH2OH, xt, t0) → Z (+Y, xt, t0) → T (C6H10O4)
 
-Phát biểu nào sau đây là **không**đúng?
+Phát biểu nào sau đây là **không** đúng?
 
-**A.**Chất X và Y đều tan vô hạn trong nước.
+**A.** Chất X và Y đều tan vô hạn trong nước.
 
-**B.**Chất Z tác dụng được với kim loại Na và dung dịch NaOH đun nóng.
+**B.** Chất Z tác dụng được với kim loại Na và dung dịch NaOH đun nóng.
 
-**C.**Chất Y và Z hòa tan được Cu(OH)2 ở nhiệt độ thường.
+**C.** Chất Y và Z hòa tan được Cu(OH)2 ở nhiệt độ thường.
 
-**D.**Chất T tác dụng với NaOH (dư) trong dung dịch theo tỉ lệ mol 1 : 2.
+**D.** Chất T tác dụng với NaOH (dư) trong dung dịch theo tỉ lệ mol 1 : 2.
 
-**([Lời giải](/bai-viet/cho-so-do-phan-ung-1-x-o2-%e2%86%92-axit-cacboxylic-y1-t0-xt.html)) Câu 39:**Cho sơ đồ phản ứng:
+**([Lời giải](/bai-viet/cho-so-do-phan-ung-1-x-o2-%e2%86%92-axit-cacboxylic-y1-t0-xt.html)) Câu 39:** Cho sơ đồ phản ứng:
 
 (1) X + O2 → axit cacboxylic Y1 (t0, xt)
 
@@ -331,9 +331,9 @@ Phát biểu nào sau đây là **không**đúng?
 
 Biết Y3 có công thức phân tử C6H10O2. Tên gọi của X là :
 
-**A.**Anđehit metacrylic. **B.**Anđehit acrylic. **C.**Anđehit axetic. **D.**Anđehit propionic.
+**A.** Anđehit metacrylic. **B.** Anđehit acrylic. **C.** Anđehit axetic. **D.** Anđehit propionic.
 
-**([Lời giải](/bai-viet/cho-cac-phan-ung-xay-ra-theo-so-do-sau-x-naoh-%e2%86%92-y-z-yran-naohran-%e2%86%92-ch4-na2co3.html)) Câu 40:**Cho các phản ứng xảy ra theo sơ đồ sau :
+**([Lời giải](/bai-viet/cho-cac-phan-ung-xay-ra-theo-so-do-sau-x-naoh-%e2%86%92-y-z-yran-naohran-%e2%86%92-ch4-na2co3.html)) Câu 40:** Cho các phản ứng xảy ra theo sơ đồ sau :
 
 X + NaOH → Y + Z (t0) (1)
 
@@ -343,9 +343,9 @@ Z + 2AgNO3 + 3NH3 + H2O → RCOONH4 + 2Ag + 2NH4NO3 (t0) (3)
 
 Chất X là
 
-**A.**etyl fomat. **B.**metyl acrylat. **C.**vinyl axetat. **D.**etyl axetat.
+**A.** etyl fomat. **B.** metyl acrylat. **C.** vinyl axetat. **D.** etyl axetat.
 
- **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z.html)) Câu 41 (****TN 2021-201):**Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
+ **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z.html)) Câu 41 (****TN 2021-201):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
 
 E + 2NaOH → Y + 2Z
 
@@ -365,9 +365,9 @@ Biết E, F đều là các hợp chất hữu cơ no, mạch hở, có công th
 
  Số phát biểu**đúng** là
 
-**A.**5. **B****.**3. **C.**4. **D.**2.
+**A.** 5. **B****.** 3. **C.** 4. **D.** 2.
 
- **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z-f-2naoh-%e2%86%92-z-t-h2o.html)) Câu 42 (****TN 2021-202):**Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
+ **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z-f-2naoh-%e2%86%92-z-t-h2o.html)) Câu 42 (****TN 2021-202):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
 
 E + 2NaOH → Y + 2Z
 
@@ -388,7 +388,7 @@ Số phát biểu đúng là
 | A. 4. | B. 5. | C. 2. | D. 3 |
 | --- | --- | --- | --- |
 
-([Lời giải](/bai-viet/cho-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z-f-2naoh-%e2%86%92-y-t-h2o.html)) Câu 42 (****TN 2021-205):**Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
+([Lời giải](/bai-viet/cho-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z-f-2naoh-%e2%86%92-y-t-h2o.html)) Câu 42 (****TN 2021-205):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
 
  E + 2NaOH → Y + 2Z
 
@@ -411,7 +411,7 @@ Số phát biểu đúng là
 | A. 3. | B. 2. | C. 5. | D. 4. |
 | --- | --- | --- | --- |
 
-([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-y-2z.html)) Câu 43 (****TN 2021-206):**Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol
+([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-y-2z.html)) Câu 43 (****TN 2021-206):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol
 
 E + 2NaOH Y + 2Z
 
@@ -431,9 +431,9 @@ Biết E, F đều là các hợp chất hữu cơ no, mạch hở, có công th
 
 Số phát biểu đúng là
 
-A.**2. **B.**4. **C.**5. **D.**3.
+A.**2.** B.**4.** C.**5.** D.**3.
 
-**([Lời giải](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-1-e-naoh-%e2%86%92-x-y-z.html)) Câu 44 (****TN 2021-đợt 2):**Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:
+**([Lời giải](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-1-e-naoh-%e2%86%92-x-y-z.html)) Câu 44 (****TN 2021-đợt 2):** Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:
 
  (1) E + NaOH → X + Y + Z 
 
@@ -457,9 +457,9 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
-**A.**1. **B.**2. **C.**4. **D.**3.
+**A.** 1. **B.** 2. **C.** 4. **D.** 3.
 
-**([Lời giải](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-e-naoh-%e2%86%92-x-y-z-2-x-hcl-%e2%86%92-f-nacl.html)) Câu 45 (****TN 2021-đợt 2):**Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:
+**([Lời giải](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-e-naoh-%e2%86%92-x-y-z-2-x-hcl-%e2%86%92-f-nacl.html)) Câu 45 (****TN 2021-đợt 2):** Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:
 
  (1) E + NaOH → X + Y + Z (2) X + HCl → F + NaCl
 
@@ -481,9 +481,9 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
-**A.**1. **B.**2. **C.**4. **D.**3.
+**A.** 1. **B.** 2. **C.** 4. **D.** 3.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z.html)) Câu 46 (****TN 2020-1):**Cho các sơ đồ phản ứng:
+**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z.html)) Câu 46 (****TN 2020-1):** Cho các sơ đồ phản ứng:
 
 (1) E + NaOH → X + Y
 
@@ -509,7 +509,7 @@ Số phát biểu đúng là
 
  **A.** 2. **B.** 4. **C.** 3. **D.** 1.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z-2.html)) Câu 47 (****TN 2020-2):**Cho các sơ đồ phản ứng:
+**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z-2.html)) Câu 47 (****TN 2020-2):** Cho các sơ đồ phản ứng:
 
 (1) E + NaOH → X + Y
 
@@ -559,7 +559,7 @@ Số phát biểu đúng là
 
  **A.** 3. **B.** 2. **C.** 5. **D.** 4.
 
-**([Lời giải](/bai-viet/cho-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z-2.html)) Câu 49 (****TN 2020-4):**Cho sơ đồ phản ứng:
+**([Lời giải](/bai-viet/cho-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z-2.html)) Câu 49 (****TN 2020-4):** Cho sơ đồ phản ứng:
 
 (1) E + NaOH → X + Y
 
@@ -585,7 +585,7 @@ Số phát biểu đúng là
 
 ***Liên quan đến các hợp chất khác***
 
-**([Lời giải](/bai-viet/cho-cac-chuyen-hoa-sau-x-h2o-%e2%86%92-y-y-h2-%e2%86%92-sobitol.html)) Câu 50:**Cho các chuyển hoá sau : 
+**([Lời giải](/bai-viet/cho-cac-chuyen-hoa-sau-x-h2o-%e2%86%92-y-y-h2-%e2%86%92-sobitol.html)) Câu 50:** Cho các chuyển hoá sau : 
 
 (1) X + H2O → Y (t0, xt) 
 
@@ -599,9 +599,9 @@ Số phát biểu đúng là
 
 X, Y và Z lần lượt là : 
 
-**A.**tinh bột, glucozơ và ancol etylic. **B.**xenlulozơ, fructozơ và khí cacbonic.
+**A.** tinh bột, glucozơ và ancol etylic. **B.** xenlulozơ, fructozơ và khí cacbonic.
 
-**C.**tinh bột, glucozơ và khí cacbonic. **D.**xenlulozơ, glucozơ và khí cacbon oxit.
+**C.** tinh bột, glucozơ và khí cacbonic. **D.** xenlulozơ, glucozơ và khí cacbon oxit.
 
 **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-%e2%86%92-x1-x2-h2o-t0c-b-x1-h2so4-%e2%86%92-x3-na2so4.html)) Câu 51 (****QG 2018-1):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:
 
@@ -657,13 +657,13 @@ X3 + X4 → Nilon-6,6 + H2O
 
 Phát biểu nào sau đây đúng?
 
-**A.**Các chất X2, X3 và X4 đều có mạch cacbon không phân nhánh.
+**A.** Các chất X2, X3 và X4 đều có mạch cacbon không phân nhánh.
 
-**B.**Nhiệt độ sôi của X2 cao hơn axit axetic.
+**B.** Nhiệt độ sôi của X2 cao hơn axit axetic.
 
-**C.**Dung dịch X4 có thể làm quỳ tím chuyển màu hồng.
+**C.** Dung dịch X4 có thể làm quỳ tím chuyển màu hồng.
 
-**D.**Nhiệt độ nóng chảy của X3 cao hơn X1.
+**D.** Nhiệt độ nóng chảy của X3 cao hơn X1.
 
 **([Lời giải](/bai-viet/hop-chat-x-co-cong-thuc-c8h14o4-tu-x-thuc-hien-cac-phan-ung-theo-dung-ti-le-mol.html))****Câu 56:** Hợp chất X có công thức C8H14O4. Từ X thực hiện các phản ứng (theo đúng tỉ lệ mol):
 
@@ -673,13 +673,13 @@ Phát biểu nào sau đây đúng?
 
 Phân tử khối của X5 là
 
-**A.**202. **B.**174. **C.**198. **D.**216.
+**A.** 202. **B.** 174. **C.** 198. **D.** 216.
 
 ## 
 
 ## Đề kiểm tra 10 câu – 45 phút
 
-**Câu 1:**Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
+**Câu 1:** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
 
 E + 2NaOH → Y + 2Z
 
@@ -712,11 +712,11 @@ Biết E, F đều là các hợp chất hữu cơ no, mạch hở, có công th
 
    Đun nóng Z với dung dịch H2SO4 đặc ở 140°C, thu được đietyl ete. Số phát biểu đúng là
 
-**A.******8. **B.******5. **C.******7. **D.******6.
+**A.******8.** B.******5.** C.******7.** D.******6.
 
 [ Đề thi THPTQG chính thức – Bộ Giáo dục & Đào tạo – Lần 1 – Mã đề 203 & 204 – Năm 2021 ]
 
-**Câu 2:**Cho sơ đồ phản ứng sau (đúng tỉ lệ mol các chất):
+**Câu 2:** Cho sơ đồ phản ứng sau (đúng tỉ lệ mol các chất):
 
  (1) Este X (C6H10O4) + 2NaOH → X1 + 2X2 
 
@@ -728,13 +728,13 @@ Biết E, F đều là các hợp chất hữu cơ no, mạch hở, có công th
 
 Nhận định nào sau đây là chính xác ?
 
-**A.**X4 có 4 nguyên tử H trong phân tử. **B.**Trong X có một nhóm – CH2 –.
+**A.** X4 có 4 nguyên tử H trong phân tử. **B.** Trong X có một nhóm – CH2 –.
 
-**C.**X3 có hai nguyên tử C trong phân tử. **D.**Trong X1 có một nhóm –CH2–.
+**C.** X3 có hai nguyên tử C trong phân tử. **D.** Trong X1 có một nhóm –CH2–.
 
 [ Đề thi thử THPTQG – THPT Chuyên Bắc Ninh – Lần 2 – Năm 2021 ]
 
-**Câu 3:**Cho sơ đồ các phản ứng theo đúng tỉ lệ mol
+**Câu 3:** Cho sơ đồ các phản ứng theo đúng tỉ lệ mol
 
 1. 
 
@@ -744,17 +744,17 @@ Nhận định nào sau đây là chính xác ?
 
 Biết X có công thức phân tử C6H10O4 và chứa hai chức este. X1 có nhiều hơn X2 một nguyên tử cacbon. X3 không hòa tan Cu(OH)2. Phát biểu nào sau đây đúng?
 
-**A.**Cho a mol X3 tác dụng hoàn toàn với Na dư thì thu được a/2 mol H2.
+**A.** Cho a mol X3 tác dụng hoàn toàn với Na dư thì thu được a/2 mol H2.
 
-**B.**X5 không tham gia phản ứng tráng bạc.
+**B.** X5 không tham gia phản ứng tráng bạc.
 
-**C.**X6 là anđehit axetic.
+**C.** X6 là anđehit axetic.
 
-**D.**X4 có phân tử khối là 60.
+**D.** X4 có phân tử khối là 60.
 
 [ Đề thi thử THPTQG – THPT Quảng Xương – Thanh Hóa – Lần 1 – Năm 2021 ]
 
-**Câu 4.**Cho sơ đồ phản ứng theo đúng tỉ lệ mol
+**Câu 4.** Cho sơ đồ phản ứng theo đúng tỉ lệ mol
 
 1. X + 2NaOH → X1 + X2 + X3
 
@@ -766,9 +766,9 @@ Biết X có công thức phân tử C6H10O4 và chứa hai chức este. X1 có 
 
 Biết X có công thức phân tử C6H10O4 và chứa hai chức este; X1, X2 đều có hai nguyên tử cacbon trong phân tử và khối lượng mol của X1 nhỏ hơn khối lượng mol của X2. Phát biểu nào sau đây sai?
 
-**A.**Phân tử X2 có hai nguyên tử oxi. **B.**X5 là hợp chất hữu cơ tạp chức.
+**A.** Phân tử X2 có hai nguyên tử oxi. **B.** X5 là hợp chất hữu cơ tạp chức.
 
-**C.**X6 là anđehit axetic. **D.**Phân tử khối của X4 là 60.
+**C.** X6 là anđehit axetic. **D.** Phân tử khối của X4 là 60.
 
 [ Đề thi thử THPTQG – Tập huấn Sở GD-ĐT – Bắc Ninh – Năm 2021 ]
 
@@ -780,45 +780,45 @@ Biết X có công thức phân tử C6H10O4 và chứa hai chức este; X1, X2 
 
 Biết các phản ứng xảy ra theo đúng tỉ lệ mol. Phát biểu nào sau đây là sai?
 
-**A.**X có mạch cacbon không phân nhánh.
+**A.** X có mạch cacbon không phân nhánh.
 
-**B.**Đun nóng X3 với H2SO4 đặc (170°C), thu được chất Z.
+**B.** Đun nóng X3 với H2SO4 đặc (170°C), thu được chất Z.
 
-**C.**X3 có nhiệt độ sôi cao hơn X2.
+**C.** X3 có nhiệt độ sôi cao hơn X2.
 
-**D.**Trong Y có số nguyên tử cacbon bằng số nguyên tử hidro.
+**D.** Trong Y có số nguyên tử cacbon bằng số nguyên tử hidro.
 
 [ Đề thi thử THPTQG – Sở GD&ĐT Yên Bái – Lần 4 – Năm 2021 ]
 
-**Câu 6:**Hợp chất hữu cơ X có công thức C6H8O4. Thực hiện chuỗi phản ứng sau (theo đúng tỉ lệ mol): 
+**Câu 6:** Hợp chất hữu cơ X có công thức C6H8O4. Thực hiện chuỗi phản ứng sau (theo đúng tỉ lệ mol): 
 
  (1) X + 2H2O → Y + 2Z (2) 2Z → T + H2O (H2SO4, 140°C)
 
 Biết rằng tỉ khối hơi của T so với H2 bằng 23. Phát biểu nào sau đây đúng?
 
-**A.**X không có đồng phân hình học.
+**A.** X không có đồng phân hình học.
 
-**B.**Y chỉ có 2 đồng phân cấu tạo.
+**B.** Y chỉ có 2 đồng phân cấu tạo.
 
-**C.**X tác dụng với dung dịch Br2 theo tỉ lệ mol 1:3.
+**C.** X tác dụng với dung dịch Br2 theo tỉ lệ mol 1:3.
 
-**D.**Đun nóng Z với H2SO4 đặc ở 170°C thu được anken.
+**D.** Đun nóng Z với H2SO4 đặc ở 170°C thu được anken.
 
 [ Đề thi thử THPTQG – Chuyên KHTN – Hà Nội – Năm 2021 ]
 
-**Câu 7.**Cho este hai chức, mạch hở E (C8H12O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y và hai muối cacboxylat Z và T (có cùng số nguyên tử hidro, MZ < MT). Chất Y hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây sai?
+**Câu 7.** Cho este hai chức, mạch hở E (C8H12O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y và hai muối cacboxylat Z và T (có cùng số nguyên tử hidro, MZ < MT). Chất Y hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây sai?
 
-**A.**E không tham gia phản ứng tráng bạc.
+**A.** E không tham gia phản ứng tráng bạc.
 
-**B.**Đun nóng Z với vôi tôi xút thu được mêtan.
+**B.** Đun nóng Z với vôi tôi xút thu được mêtan.
 
-**C.**Trong axit tương ứng của T, nguyên tố cacbon chiếm 50% về khối lượng.
+**C.** Trong axit tương ứng của T, nguyên tố cacbon chiếm 50% về khối lượng.
 
-**D.**E chỉ có một công thức cấu tạo phù hợp.
+**D.** E chỉ có một công thức cấu tạo phù hợp.
 
 [ Đề thi thử THPTQG – THPT Nguyễn Khuyến – Hồ Chí Minh – Năm 2021 ]
 
-**Câu 8.**Cho****các chuyển hóa sau (theo đúng tỉ lệ mol):
+**Câu 8.** Cho****các chuyển hóa sau (theo đúng tỉ lệ mol):
 
 (1) X + 2NaOH → 2X1 + X2 + H2O (2) X1 + HCl → Y + NaCl
 
@@ -826,13 +826,13 @@ Biết rằng tỉ khối hơi của T so với H2 bằng 23. Phát biểu nào 
 
 Biết X là chất hữu cơ mạch hở, có công thức phân tử C6H10O5. Nhận xét nào sau đây sai?
 
-**A.**Y có tên gọi là axit axetic. **B.**X có mạch cacbon không phân nhánh.
+**A.** Y có tên gọi là axit axetic. **B.** X có mạch cacbon không phân nhánh.
 
-**C.**X2 là hợp chất hữu cơ đa chức. **D.**Z là anđehit no, hai chức, mạch hở.
+**C.** X2 là hợp chất hữu cơ đa chức. **D.** Z là anđehit no, hai chức, mạch hở.
 
 [ Đề thi thử THPTQG – Sở GD-ĐT Yên Bái – Năm 2021 ]
 
-**Câu 9.**Cho các phản ứng xảy ra theo sơ đồ sau (đúng tỷ lệ mol):
+**Câu 9.** Cho các phản ứng xảy ra theo sơ đồ sau (đúng tỷ lệ mol):
 
 1. X + NaOH → Y + Z.
 
@@ -842,13 +842,13 @@ Biết X là chất hữu cơ mạch hở, có công thức phân tử C6H10O5. 
 
 Biết X là hợp chất hữu cơ đơn chức . Phát biểu nào sau đây không đúng?
 
-**A.**Y là natri axetat. **B.**Z là andehit axetic.
+**A.** Y là natri axetat. **B.** Z là andehit axetic.
 
-**C.**X không làm mất màu dung dịch brom. **D.**Tên gọi của X là vinyl axetat.
+**C.** X không làm mất màu dung dịch brom. **D.** Tên gọi của X là vinyl axetat.
 
 [ Đề thi thử THPTQG – Sở GD-ĐT – Thái Bình – Năm 2021 ]
 
-**Câu 10:**Cho sơ đồ phản ứng:
+**Câu 10:** Cho sơ đồ phản ứng:
 
 1. E + NaOH → X + Y
 
@@ -878,7 +878,7 @@ Biết E, F đều là hợp chất hữu cơ no, mạch hở, chỉ chứa nhó
 
 8. Nhiệt độ sôi của E cao hơn nhiệt độ sôi của CH3COOH Số phát biểu đúng là
 
-**A.******2. **B.******4. **C.******1. **D.******3.
+**A.******2.** B.******4.** C.******1.** D.******3.
 
 [ Đề thi THPTQG chính thức – Bộ Giáo dục & Đào tạo – Lần 1 – Năm 2020 ]
 
@@ -908,11 +908,11 @@ Biết Q làm mất màu dung dịch brom. Trong số các phát biểu sau, s�
 
 5. X có hai đồng phân cấu tạo.
 
-**A.******1. **B.******4. **C.******3 . **D.******2.
+**A.******1.** B.******4.** C.******3 .** D.******2.
 
 [ Đề thi thử THPTQG – THPT Chuyên Phan Bội Châu – Nghệ An – Lần 1 – Năm 2021 ]
 
-**Câu 12.**Cho sơ đồ phản ứng theo đúng tỉ lệ mol
+**Câu 12.** Cho sơ đồ phản ứng theo đúng tỉ lệ mol
 
 (a) X + 2NaOH → X1 + X2 + X3 (b) X1 + HCl → X4 + NaCl
 
@@ -920,13 +920,13 @@ Biết Q làm mất màu dung dịch brom. Trong số các phát biểu sau, s�
 
 Biết X là hợp chất hữu mạch hở có công thức phân tử C5H8O4 và chứa hai chức este; X2, X3 đều có hai nguyên tử cacbon trong phân tử và khối lượng mol của X5 nhỏ hơn khối lượng mol của X3. Phát biểu nào sau đây sai?
 
-**A.**X4 là hợp chất hữu cơ đơn chức. **B.**Phân tử khối của X6 là 104.
+**A.** X4 là hợp chất hữu cơ đơn chức. **B.** Phân tử khối của X6 là 104.
 
-**C.**X tham gia phản ứng tráng gương **D.**Phân tử X6 có 3 nguyên tử oxi.
+**C.** X tham gia phản ứng tráng gương **D.** Phân tử X6 có 3 nguyên tử oxi.
 
 [ Đề thi thử THPTQG – THPT Nguyễn Khuyến – Hồ Chí Minh – Lần 3 – Năm 2021]
 
-**Câu 13:**Cho hợp chất hữu cơ D mạch hở có công thức phân tử là C6H10O4. Từ D tiến hành chuỗi các phản ứng, sau (hệ số các chất trên phương trình biểu thị đúng tỉ lệ mol)
+**Câu 13:** Cho hợp chất hữu cơ D mạch hở có công thức phân tử là C6H10O4. Từ D tiến hành chuỗi các phản ứng, sau (hệ số các chất trên phương trình biểu thị đúng tỉ lệ mol)
 
 1. 
 
@@ -942,13 +942,13 @@ Biết X là hợp chất hữu mạch hở có công thức phân tử C5H8O4 v
 
 Công thức cấu tạo phù hợp của D là
 
-**A.******CH3-COO-CH2-CH2-OOC-CH3 **B.**HCOO-CH2-CH2-OOC-CH2-CH3
+**A.******CH3-COO-CH2-CH2-OOC-CH3** B.**HCOO-CH2-CH2-OOC-CH2-CH3
 
-**C.******HCOO-CH2-CH(CH3)-OOC-CH3 **D.******HCOO-CH2-CH2-CH2-OOC-CH3
+**C.******HCOO-CH2-CH(CH3)-OOC-CH3** D.******HCOO-CH2-CH2-CH2-OOC-CH3
 
 [ Đề thi thử THPTQG – Sở GD-ĐT Hưng Yên – Lần 1 – Năm 2021 ]
 
-**Câu********14.******Thủy phân hoàn toàn chất hữu cơ E (C7H12O4, chứa hai chức este) bằng dung dịch NaOH, thu được sản phẩm gồm ancol X và hai muối Y, Z (MY < MZ). Thực hiện phản ứng nung muối Z với hỗn hợp CaO/NaOH ở nhiệt độ cao thì thu được ancol X. Cho các phát biểu sau:
+**Câu********14.*** ***Thủy phân hoàn toàn chất hữu cơ E (C7H12O4, chứa hai chức este) bằng dung dịch NaOH, thu được sản phẩm gồm ancol X và hai muối Y, Z (MY < MZ). Thực hiện phản ứng nung muối Z với hỗn hợp CaO/NaOH ở nhiệt độ cao thì thu được ancol X. Cho các phát biểu sau:
 
 1. 
 
@@ -960,11 +960,11 @@ Công thức cấu tạo phù hợp của D là
 
 4. Khối lượng mol của Z là 112 gam/mol. Số phát biểu đúng là
 
-**A.******3. **B.******4. **C.******2. **D.******1.
+**A.******3.** B.******4.** C.******2.** D.******1.
 
 [ Đề thi thử THPTQG – THPT Nguyễn Cảnh Chân – Nghệ An – Năm 2021 ] 
 
-**Câu********15:******Thủy phân hoàn toàn chất hữu cơ E (C9H16O4, chứa hai chức este) bằng dung dịch NaOH, thu được sản phẩm gồm ancol X và hai chất hữu cơ Y, Z. Biết Y chứa 3 nguyên tử cacbon và MX < MY < MZ. Cho Z tác dụng với dung dịch HCl loãng, dư, thu được hợp chất hữu cơ T (C3H6O3). Cho các phát biểu sau:
+**Câu********15:*** ***Thủy phân hoàn toàn chất hữu cơ E (C9H16O4, chứa hai chức este) bằng dung dịch NaOH, thu được sản phẩm gồm ancol X và hai chất hữu cơ Y, Z. Biết Y chứa 3 nguyên tử cacbon và MX < MY < MZ. Cho Z tác dụng với dung dịch HCl loãng, dư, thu được hợp chất hữu cơ T (C3H6O3). Cho các phát biểu sau:
 
 1. Khi cho a mol T tác dụng với Na dư, thu được a mol H2.
 
@@ -982,13 +982,13 @@ Công thức cấu tạo phù hợp của D là
 
 8. Có 4 công thức cấu tạo thỏa mãn tính chất của E. Số lượng phát biểu đúng là
 
-**A.******4. **B.******7. **C.******5. **D.******6.
+**A.******4.** B.******7.** C.******5.** D.******6.
 
 [ Đề thi thử THPTQG – Liên trường Nghệ An – Năm 2021 ]
 
 ### DẠNG 2 : CÓ THÊM LIÊN KẾT BỘI C=C, C≡C VÀ VÒNG BENZEN
 
-**Câu 16:**Cho sơ đồ phản ứng theo đúng tỉ lệ mol:
+**Câu 16:** Cho sơ đồ phản ứng theo đúng tỉ lệ mol:
 
 1. X + 2NaOH → Y + Z + H2O (t°)
 
@@ -998,15 +998,15 @@ Công thức cấu tạo phù hợp của D là
 
 Biết chất X mạch hở có công thức phân tử C6H8O4. Phát biểu nào sau đây đúng?
 
-**A.**Chất X có 3 công thức cấu tạo phù hợp.
+**A.** Chất X có 3 công thức cấu tạo phù hợp.
 
-**B.**Z và T đều hòa tan được Cu(OH)2 tạo dung dịch màu xanh lam
+**B.** Z và T đều hòa tan được Cu(OH)2 tạo dung dịch màu xanh lam
 
-**C.**Chất T có số nguyên tử cacbon bằng số nguyên tử oxi.
+**C.** Chất T có số nguyên tử cacbon bằng số nguyên tử oxi.
 
-**D.**Chất Z có nhiệt độ sôi cao hơn chất T.
+**D.** Chất Z có nhiệt độ sôi cao hơn chất T.
 
-**Câu 17:**Chất hữu cơ X mạch hở có công thức phân tử là C6H8O4. Từ X thực hiện sơ đồ sau:
+**Câu 17:** Chất hữu cơ X mạch hở có công thức phân tử là C6H8O4. Từ X thực hiện sơ đồ sau:
 
 1. 
 
@@ -1034,11 +1034,11 @@ Cho các phát biểu sau:
 
 (g) Oxi hoá không hoàn toàn etilen là phương pháp hiện đại sản xuất T. Số phát biểu đúng là
 
-**A.******5. **B.******2. **C.******4. **D.******3.
+**A.******5.** B.******2.** C.******4.** D.******3.
 
 [ Đề thi thử THPTQG – Chuyên Sư phạm Hà Nội – Năm 2021 ]
 
-**Câu 18.**Cho sơ đồ phản ứng theo đúng tỉ lệ mol:
+**Câu 18.** Cho sơ đồ phản ứng theo đúng tỉ lệ mol:
 
 1. X + 2NaOH → X1 + X2 + X3.
 
@@ -1052,13 +1052,13 @@ Cho các phát biểu sau:
 
 Biết X có công thức phân tử C6H8O4 và chứa hai chức este. Phát biểu nào sau đây đúng?
 
-**A.**X4 là hợp chất hữu cơ đa chức. **B.**Phân tử khối của X6 là 138.
+**A.** X4 là hợp chất hữu cơ đa chức. **B.** Phân tử khối của X6 là 138.
 
-**C.**X3 là hợp chất anđehit. **D.**Dung dịch X làm quỳ tím hóa đỏ.
+**C.** X3 là hợp chất anđehit. **D.** Dung dịch X làm quỳ tím hóa đỏ.
 
 [ Đề thi thử THPTQG – Sở GD-ĐT Bắc Ninh – Năm 2021 ]
 
-**Câu 19:**X là hợp chất hữu cơ mạch hở có công thức phân tử C6H8O4. Cho các phản ứng sau (theo đúng tỉ lệ mol phản ứng):
+**Câu 19:** X là hợp chất hữu cơ mạch hở có công thức phân tử C6H8O4. Cho các phản ứng sau (theo đúng tỉ lệ mol phản ứng):
 
 X + 2NaOH → Z + T + H2O T + H2 → T1
 
@@ -1066,41 +1066,41 @@ X + 2NaOH → Z + T + H2O T + H2 → T1
 
 Biết Z1 và T1 có cùng số nguyên tử cacbon; Z1 là hợp chất hữu cơ đơn chức. Nhận định nào sau đây đúng?
 
-**A.**Tổng số nguyên tử trong T1 bằng 12.
+**A.** Tổng số nguyên tử trong T1 bằng 12.
 
-**B.**Nung Z với hỗn hợp vôi tôi xút thu được ankan đơn giản nhất.
+**B.** Nung Z với hỗn hợp vôi tôi xút thu được ankan đơn giản nhất.
 
-**C.**X không có đồng phân hình học.
+**C.** X không có đồng phân hình học.
 
-**D.**T là hợp chất hữu cơ no, đơn chức.
+**D.** T là hợp chất hữu cơ no, đơn chức.
 
 [ Đề thi thử THPTQG – THPT Nguyễn Khuyến – Năm 2021 – Lần 4 ]
 
-**Câu 20:**Chất X có công thức phân tử C6H8O4. Cho 1 mol X phản ứng hết với dung dịch NaOH, thu được chất Y và 2 mol chất Z. Đun Z với dung dịch H2SO4 đặc, thu được đimetyl ete. Chất Y phản ứng với lượng dư dung dịch H2SO4 loãng, thu được chất T. Cho T phản ứng với HBr, thu được hai sản phẩm là đồng phân cấu tạo của nhau. Phát biểu nào sau đây đúng?
+**Câu 20:** Chất X có công thức phân tử C6H8O4. Cho 1 mol X phản ứng hết với dung dịch NaOH, thu được chất Y và 2 mol chất Z. Đun Z với dung dịch H2SO4 đặc, thu được đimetyl ete. Chất Y phản ứng với lượng dư dung dịch H2SO4 loãng, thu được chất T. Cho T phản ứng với HBr, thu được hai sản phẩm là đồng phân cấu tạo của nhau. Phát biểu nào sau đây đúng?
 
-**A.**Chất X phản ứng với H2 (Ni, t°) theo tỉ lệ mol 1 : 3.
+**A.** Chất X phản ứng với H2 (Ni, t°) theo tỉ lệ mol 1 : 3.
 
-**B.**Chất T không có đồng phân hình học.
+**B.** Chất T không có đồng phân hình học.
 
-**C.**Chất Y có công thức phân tử C4H4O4Na2.
+**C.** Chất Y có công thức phân tử C4H4O4Na2.
 
-**D.**Chất Z làm mất màu nước brom
+**D.** Chất Z làm mất màu nước brom
 
 [ Đề thi thử THPTQG – THPT Chuyên Huỳnh Mẫn Đạt – Kiên Giang – Năm 2021 ]
 
-**Câu 21:**Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y(no, hai chức) và hai muối của hai axit cacboxylic Z và T (MZ < MT). Chất Y không hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây sai?
+**Câu 21:** Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y(no, hai chức) và hai muối của hai axit cacboxylic Z và T (MZ < MT). Chất Y không hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây sai?
 
-**A.**Axit z có phản ứng tráng bạc.
+**A.** Axit z có phản ứng tráng bạc.
 
-**B.**Oxi hóa Y bằng CuO dư, đun nóng, thu được Andehit hai chức.
+**B.** Oxi hóa Y bằng CuO dư, đun nóng, thu được Andehit hai chức.
 
-**C.**Axit T có đồng phân hình học.
+**C.** Axit T có đồng phân hình học.
 
-**D.**Có một công thức cấu tạo thỏa mãn tính chất của X
+**D.** Có một công thức cấu tạo thỏa mãn tính chất của X
 
 [ Đề minh họa thi THPTQG – Bộ Giáo Dục – Lần 1 – Năm 2020 ]
 
-**Câu 22.**Thủy phân hoàn toàn một este thuần chức, mạch hở E có công thức C7H10O4 bằng dung dịch NaOH thu được 2 muối X, Y (MX < MY) của axit cacboxylic no đơn chức và ancol Z. Cho các nhận xét sau:
+**Câu 22.** Thủy phân hoàn toàn một este thuần chức, mạch hở E có công thức C7H10O4 bằng dung dịch NaOH thu được 2 muối X, Y (MX < MY) của axit cacboxylic no đơn chức và ancol Z. Cho các nhận xét sau:
 
 1. 
 
@@ -1114,11 +1114,11 @@ Biết Z1 và T1 có cùng số nguyên tử cacbon; Z1 là hợp chất hữu c
 
 5. Muối Y có công thức phân tử C2H3O2Na. Số phát biểu chính xác là
 
-**A.******1. **B.******2. **C.******4. **D.******3.
+**A.******1.** B.******2.** C.******4.** D.******3.
 
 [ Đề thi thử THPTQG – THPT Quỳnh Lưu 1 – Nghệ An – Năm 2021 ]
 
-**Câu 23.**Este X hai chức mạch hở có công thức phân tử C7H10O4. Thủy phân hoàn toàn X trong dung dịch NaOH đun nóng, thu được ancol Y và hai chất hữu cơ Z và T (MZ < MY < MT). Y tác dụng với Cu(OH)2 ở điều kiện thường, tạo dung dịch màu xanh lam. Cho các phát biểu sau:
+**Câu 23.** Este X hai chức mạch hở có công thức phân tử C7H10O4. Thủy phân hoàn toàn X trong dung dịch NaOH đun nóng, thu được ancol Y và hai chất hữu cơ Z và T (MZ < MY < MT). Y tác dụng với Cu(OH)2 ở điều kiện thường, tạo dung dịch màu xanh lam. Cho các phát biểu sau:
 
 1. 
 
@@ -1132,11 +1132,11 @@ Biết Z1 và T1 có cùng số nguyên tử cacbon; Z1 là hợp chất hữu c
 
 5. Nung chất T với NaOH và CaO ở nhiệt độ cao, thu được khí etilen. Số phát biểu đúng là :
 
-**A.******5. **B.******2. **C.******3. **D.******4.
+**A.******5.** B.******2.** C.******3.** D.******4.
 
 [ Đề thi thử THPTQG – THPT Chuyên Lê Hồng Phong – Nam Định – Năm 2021 ]
 
-**Câu 24:**Chất hữu cơ X mạch hở có công thức phân tử C8H12O4. Từ X thực hiện các phản ứng sau:
+**Câu 24:** Chất hữu cơ X mạch hở có công thức phân tử C8H12O4. Từ X thực hiện các phản ứng sau:
 
 (a) X + 2NaOH → Y + Z + T (b) X + H2 → E
 
@@ -1144,21 +1144,21 @@ Biết Z1 và T1 có cùng số nguyên tử cacbon; Z1 là hợp chất hữu c
 
 1. Phân tử khối của chất F là
 
-**A.******60. **B.******46. **C.******72. **D.******74.
+**A.******60.** B.******46.** C.******72.** D.******74.
 
 [ Đề thi thử THPTQG – Sở GD-ĐT Yên Bái – Năm 2021 ]
 
 1. Khẳng định nào sau đây đúng?
 
-**A.**Y là ancol etylic. **B.**T có hai đồng phân **C.**T là etylen glicol. **D.**Z là anđehit axetic.
+**A.** Y là ancol etylic. **B.** T có hai đồng phân **C.** T là etylen glicol. **D.** Z là anđehit axetic.
 
 [ Đề thi thử THPTQG – THPT Đồng Đậu – Vĩnh Phúc – Lần 2 – Năm 2021 ]
 
 1. Khẳng định nào sau đây đúng?
 
- **A.**Khối lượng phân tử của E bằng 176. **B.**Khối lượng phân tử của T bằng 62.
+ **A.** Khối lượng phân tử của E bằng 176. **B.** Khối lượng phân tử của T bằng 62.
 
- **C.**Khối lượng phân tử của Z bằng 96. **D.**Khối lượng phân tử của Y bằng 94.
+ **C.** Khối lượng phân tử của Z bằng 96. **D.** Khối lượng phân tử của Y bằng 94.
 
 [ Đề thi thử THPTQG – THPT Nguyễn Viết Xuân – Vĩnh Phúc – Lần 2 – Mã đề 102 – Năm 2021 ]
 
@@ -1172,7 +1172,7 @@ Biết Z1 và T1 có cùng số nguyên tử cacbon; Z1 là hợp chất hữu c
 
 4. Khối lượng mol của Y là 96 g/mol. Số phát biểu đúng là
 
-**A.******4. **B.******3. **C.******2. **D.******1.
+**A.******4.** B.******3.** C.******2.** D.******1.
 
 [ Đề thi thử THPTQG – THPT Kim Liên – Hà Nội – Lần 2 – Năm 2021 ]
 
@@ -1186,11 +1186,11 @@ Biết Z1 và T1 có cùng số nguyên tử cacbon; Z1 là hợp chất hữu c
 
 4. X là hợp chất hữu cơ tạp chức Số nhận định đúng là:
 
-**A.******3. **B.******4 **C.******1. **D.******2.
+**A.******3.** B.******4** C.******1.** D.******2.
 
 [ Đề thi thử THPTQG – THPT Nguyễn Đức Cảnh – Thái Bình – Năm 2021 ]
 
-**Câu********25:******Cho este hai chức, mạch hở X (C9H14O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y (no, hai chức) và hai muối của hai axit cacboxylic Z và T (MZ < MT). Chất Y không hoà tan được Cu(OH)2 trong môi trường kiềm. Hiđro hóa hoàn toàn chất Z thu được chất T. Cho các phát biểu sau:
+**Câu********25:*** ***Cho este hai chức, mạch hở X (C9H14O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y (no, hai chức) và hai muối của hai axit cacboxylic Z và T (MZ < MT). Chất Y không hoà tan được Cu(OH)2 trong môi trường kiềm. Hiđro hóa hoàn toàn chất Z thu được chất T. Cho các phát biểu sau:
 
 1. 
 
@@ -1202,7 +1202,7 @@ Biết Z1 và T1 có cùng số nguyên tử cacbon; Z1 là hợp chất hữu c
 
 4. Khối lượng mol của axit T là 74 g/mol. Số phát biểu đúng là
 
-**A.******3. **B.******4. **C.******2. **D.******1.
+**A.******3.** B.******4.** C.******2.** D.******1.
 
 [ Đề thi thử THPTQG – Trường Đào Duy Từ – Hà Nội – Lần 2 – Năm 2021 ]
 
@@ -1228,33 +1228,33 @@ Cho các phát biểu sau:
 
 5. Chất X tác dụng với AgNO3 trong dung dịch NH3. Số phát biểu đúng là
 
-**A.******2 **B.******3 **C.******4 **D.******5
+**A.******2** B.******3** C.******4** D.******5
 
 [ Đề thi thử THPTQG – THPT Bắc Đông Quan – Thái Bình – Lần 2– Năm 2021 ]
 
-**Câu 27.**Hợp chất hữu cơ mạch hở, thuần chức X (C10H14O6) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp 2 muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc . Phát biểu nào sau đây đúng?
+**Câu 27.** Hợp chất hữu cơ mạch hở, thuần chức X (C10H14O6) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp 2 muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc . Phát biểu nào sau đây đúng?
 
-**A.**Có 2 công thức cấu tạo thỏa mãn tính chất của X.
+**A.** Có 2 công thức cấu tạo thỏa mãn tính chất của X.
 
-**B.**Tên gọi của Z là natri metacrylat.
+**B.** Tên gọi của Z là natri metacrylat.
 
-**C.**Phân tử X chứa 2 loại nhóm chức.
+**C.** Phân tử X chứa 2 loại nhóm chức.
 
-**D.**Axit cacboxylic của muối Z có đồng phân hình học.
+**D.** Axit cacboxylic của muối Z có đồng phân hình học.
 
 [ Đề thi thử THPTQG – THPT Chuyên Lê Quý Đôn – Đà Nẵng – Lần 1 – Năm 2021 ]
 
-**Câu 28:**X là hợp chất hữu cơ thuần chức có công thức phân tử C9H8O4 (chứa vòng benzen). Cho 1 mol X tác dụng hết với NaOH dư, thu được 2 mol chất Y, 1 mol chất Z và 1 mol H2O. Chất Z tác dụng với dung dịch H2SO4 loãng thu được chất hữu cơ T. Phát biểu nào sau đây sai?
+**Câu 28:** X là hợp chất hữu cơ thuần chức có công thức phân tử C9H8O4 (chứa vòng benzen). Cho 1 mol X tác dụng hết với NaOH dư, thu được 2 mol chất Y, 1 mol chất Z và 1 mol H2O. Chất Z tác dụng với dung dịch H2SO4 loãng thu được chất hữu cơ T. Phát biểu nào sau đây sai?
 
-**A.**X tác dụng với NaOH theo tỉ lệ mol 1:3. **B.**Y có phản ứng tráng bạc.
+**A.** X tác dụng với NaOH theo tỉ lệ mol 1:3. **B.** Y có phản ứng tráng bạc.
 
-**C.**Phân tử chất Z có 2 nguyên tử oxi. **D.**T tác dụng với NaOH theo tỉ lệ mol 1:2.
+**C.** Phân tử chất Z có 2 nguyên tử oxi. **D.** T tác dụng với NaOH theo tỉ lệ mol 1:2.
 
 [ Đề thi thử THPTQG – Chuyên KHTN – Hà Nội – Lần 2 – Năm 2021 ]
 
 ### DẠNG 3: CÓ THÊM 1 NHÓM CHỨC -OH
 
-**Câu 29.**Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp hai muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc . Có các phát biểu sau:
+**Câu 29.** Hợp chất hữu cơ mạch hở X (C8H12O5) tác dụng với lượng dư dung dịch NaOH đun nóng thu được glixerol và hỗn hợp hai muối cacboxylat Y và Z (MY < MZ). Hai chất Y, Z đều không có phản ứng tráng bạc . Có các phát biểu sau:
 
 1. Axit cacboxylic của muối Z có đồng phân hình học.
 
@@ -1266,11 +1266,11 @@ Cho các phát biểu sau:
 
 5. Axit cacboxylic của muối Y làm mất màu dung dịch brom. Số phát biểu đúng là
 
-**A.******3. **B.******1. **C.******2. **D.******4.
+**A.******3.** B.******1.** C.******2.** D.******4.
 
 [ Đề thi thử THPTQG – Sở GD-ĐT Hà Nội – Năm 2021 ]
 
-**Câu********30:******Thủy phân hoàn toàn chất hữu cơ E (C8H12O5, chứa hai chức este) bằng dung dịch NaOH, thu được sản phẩm gồm ancol X và hai chất hữu cơ Y, Z. Biết Y chứa 3 nguyên tử cacbon và MX < MY < MZ. Cho Z tác dụng với dung dịch HCl loãng, dư, thu được hợp chất hữu cơ T (C3H6O3). Nung nóng Y với hỗn hợp vôi tôi xút thu được chất hữu cơ P. Cho các phát biểu sau:
+**Câu********30:*** ***Thủy phân hoàn toàn chất hữu cơ E (C8H12O5, chứa hai chức este) bằng dung dịch NaOH, thu được sản phẩm gồm ancol X và hai chất hữu cơ Y, Z. Biết Y chứa 3 nguyên tử cacbon và MX < MY < MZ. Cho Z tác dụng với dung dịch HCl loãng, dư, thu được hợp chất hữu cơ T (C3H6O3). Nung nóng Y với hỗn hợp vôi tôi xút thu được chất hữu cơ P. Cho các phát biểu sau:
 
 1. X hòa tan được Cu(OH)2 tạo dung dịch màu xanh lam.
 
@@ -1284,13 +1284,13 @@ Cho các phát biểu sau:
 
 1. T là hợp chất hữu cơ đa chức. Số phát biểu sai là
 
-**A.******3. **B.******5. **C.******2. **D.******4.
+**A.******3.** B.******5.** C.******2.** D.******4.
 
 [ Đề thi thử THPTQG – THPT Chuyên Hùng Vương – Phú Thọ – Năm 2021 ]
 
 ## VẤN ĐỀ 2 : KHÔNG CHO TRƯỚC CÔNG THỨC PHÂN TỬ
 
-**Câu 31.**Cho các chất X, Y, Z đều mạch hở và có công thức phân tử C3H6O2. Trong đó:
+**Câu 31.** Cho các chất X, Y, Z đều mạch hở và có công thức phân tử C3H6O2. Trong đó:
 
 - Chất X có phản ứng tráng gương và phản ứng với dung dịch NaOH, đun nóng.
 
@@ -1298,17 +1298,17 @@ Cho các phát biểu sau:
 
 - Chất Z tác dụng với NaOH nhưng KHÔNG có phản ứng tráng gương và KHÔNG phản ứng với Na. Công thức cấu tạo của X, Y, Z lần lượt là
 
-**A.**HCOOCH2CH3, CH3CH2COOH, HOCH2CH2CHO. 
+**A.** HCOOCH2CH3, CH3CH2COOH, HOCH2CH2CHO. 
 
-**B.**HCOOCH2CH3, CH3CH2COOH, CH3COOCH3.
+**B.** HCOOCH2CH3, CH3CH2COOH, CH3COOCH3.
 
-**C.**HOCH2CH2CHO, CH3CH2COOH, CH3COOCH3. 
+**C.** HOCH2CH2CHO, CH3CH2COOH, CH3COOCH3. 
 
-**D.**HCOOCH2CH3, HOCH2CH2CHO, CH3COOCH3.
+**D.** HCOOCH2CH3, HOCH2CH2CHO, CH3COOCH3.
 
 [ Đề thi thử THPTQG – THPT Chuyên Lê Hồng Phong – Nam Định – Năm 2021 ]
 
-**Câu 32.**Cho các phản ứng sau:
+**Câu 32.** Cho các phản ứng sau:
 
 X + NaOH → X1 + X2 (t°) X1 + NaOH → X3 + Na2CO3 (CaO, t°)
 
@@ -1318,13 +1318,13 @@ X2 → X4 + H2O (H2SO4 đặc, 170°C) X2 + O2 → X5 + H2O (men giấm)
 
 Nhận định nào sau đây không đúng?
 
-**A.**X là etyl axetat. **B.**X6 có phản ứng với AgNO3/NH3 dư tạo kết tủa.
+**A.** X là etyl axetat. **B.** X6 có phản ứng với AgNO3/NH3 dư tạo kết tủa.
 
-**C.**X4 làm mất màu dung dịch KMnO4. **D.**X5 tham gia phản ứng tráng bạc.
+**C.** X4 làm mất màu dung dịch KMnO4. **D.** X5 tham gia phản ứng tráng bạc.
 
 [ Đề thi thử THPTQG – THPT Phan Châu Trinh – Đà Nẵng – Lần 1 – Năm 2021 ]
 
-**Câu 33:**Cho các chất hữu cơ X, Y, Z, T, E thoả mãn các phản ứng hoá học sau:
+**Câu 33:** Cho các chất hữu cơ X, Y, Z, T, E thoả mãn các phản ứng hoá học sau:
 
 X + NaOH → C6H5ONa + Y + CH3CHO + H2O (1)
 
@@ -1338,11 +1338,11 @@ E + NaOH → T + Na2CO3 (5)
 
 Cho biết khi cân bằng tỉ lệ mol giữa Y và NaOH trong (2) là 1 : 2. Công thức phân tử của X là
 
-**A.******C11H12O4. **B.******C11H10O4. **C.******C12H20O6. **D.**C12H14O4.
+**A.******C11H12O4.** B.******C11H10O4.** C.******C12H20O6.** D.**C12H14O4.
 
 [ Đề thi thử THPTQG – THPT Chuyên Trần Phú – Hải Phòng – Lần 1 – Năm 2021 ]
 
-**Câu 34:**Cho các phương trình phản ứng hóa học sau (theo đúng tỉ lệ mol, các phản ứng đều ở điều kiện và xúc tác thích hợp):
+**Câu 34:** Cho các phương trình phản ứng hóa học sau (theo đúng tỉ lệ mol, các phản ứng đều ở điều kiện và xúc tác thích hợp):
 
 1. 
 
@@ -1358,17 +1358,17 @@ Cho biết khi cân bằng tỉ lệ mol giữa Y và NaOH trong (2) là 1 : 2. 
 
 Phát biểu nào sau đây sai?
 
-**A.**X có 8 nguyên tử H trong phân tử.
+**A.** X có 8 nguyên tử H trong phân tử.
 
-**B.**X2 rất độc không được sử dụng để pha vào đồ uống.
+**B.** X2 rất độc không được sử dụng để pha vào đồ uống.
 
-**C.**X1 tan trong nước tốt hơn so với X.
+**C.** X1 tan trong nước tốt hơn so với X.
 
-**D.**X5 có phản ứng tạo kết tủa với AgNO3/NH3.
+**D.** X5 có phản ứng tạo kết tủa với AgNO3/NH3.
 
 [ Đề thi thử THPTQG – Luyện thi Đại học Y Hà Nội – Lần 5 – Năm 2021 ]
 
-**Câu 35.**Từ chất X thực hiện các phản ứng (theo đúng tỉ lệ mol):
+**Câu 35.** Từ chất X thực hiện các phản ứng (theo đúng tỉ lệ mol):
 
 X + 2NaOH → 2Y + Z + H2O Y + HCl → T + NaCl.
 
@@ -1376,11 +1376,11 @@ Z + 2Br2 + H2O → CO2 + 4HBr T + Br2 → CO2 + 2HBr.
 
 Công thức phân tử của X là
 
-**A.******C3H4O4. **B.******C8H8O2. **C.******C4H6O4. **D.******C4H4O4.
+**A.******C3H4O4.** B.******C8H8O2.** C.******C4H6O4.** D.******C4H4O4.
 
 [ Đề thi thử THPTQG – THPT Chuyên Hà Giang – Lần 1 – Năm 2021 ]
 
-**Câu 36:**Cho sơ đồ các phản ứng (theo đúng tỉ lệ mol):
+**Câu 36:** Cho sơ đồ các phản ứng (theo đúng tỉ lệ mol):
 
 1. 
 
@@ -1394,11 +1394,11 @@ Công thức phân tử của X là
 
 Biết X là hợp chất hữu cơ no, mạch hở, chỉ chứa một loại nhóm chức . Khi đốt cháy hoàn toàn X2, sản phẩm thu được chỉ gồm CO2 và Na2CO3. Phân tử khối của X4 là
 
-**A.******118. **B.******138. **C.******90. **D.******146.
+**A.******118.** B.******138.** C.******90.** D.******146.
 
 [ Đề thi thử THPTQG – Luyện thi ĐH Y Hà Nội – Lần 3 – Năm 2021 ]
 
-**Câu 37:**Từ chất hữu cơ đa chức X thực hiện chuỗi chuyển hóa sau (theo đúng hệ số tỉ lượng)
+**Câu 37:** Từ chất hữu cơ đa chức X thực hiện chuỗi chuyển hóa sau (theo đúng hệ số tỉ lượng)
 
 X + 3NaOH → Y + Z + T + H2O
 
@@ -1412,29 +1412,29 @@ T + 2AgNO3 + 3NH3+ H2O → Q + 2Ag + 2NH4NO3
 
 Biết rằng, cô cạn dung dịch sau khi thủy phân chất X thu được phần hơi chỉ chứa nước; trong M, oxi chiếm hơn 25% về khối lượng. Phản ứng của Q với HCl giải phóng khí CO2. Phát biểu nào sau đây không đúng?
 
-**A.**M thuộc loại hợp chất thơm, đa chức.
+**A.** M thuộc loại hợp chất thơm, đa chức.
 
-**B.**X có khả năng tham gia phản ứng tráng gương.
+**B.** X có khả năng tham gia phản ứng tráng gương.
 
-**C.**Đốt cháy hoàn toàn X thu được nCO2 = 2nH2O.
+**C.** Đốt cháy hoàn toàn X thu được nCO2 = 2nH2O.
 
-**D.**T có phân tử khối bằng 68.
+**D.** T có phân tử khối bằng 68.
 
 [ Đề thi thử THPTQG – Sở GD-ĐT Bình Phước – Lần 1 – Năm 2021 ]
 
-**Câu 38:**Este X được tạo bởi một axit cacboxylic hai chức và hai ancol đơn chức . Đốt cháy hoàn toàn X thu được CO2 có số mol bằng với số mol của O2 đã phản ưng. Thực hiện sơ đồ phản ứng sau (đúng tỉ lệ mol)
+**Câu 38:** Este X được tạo bởi một axit cacboxylic hai chức và hai ancol đơn chức . Đốt cháy hoàn toàn X thu được CO2 có số mol bằng với số mol của O2 đã phản ưng. Thực hiện sơ đồ phản ứng sau (đúng tỉ lệ mol)
 
 (1) X + 2H2 → Y (2) X + 2NaOH → Z + X1 + X2.
 
 Biết rằng X1 và X2 thuộc cùng dãy đồng đẳng và khi đun nóng X1 với H2SO4 đặc ở 170°C không thu được anken. Nhận định nào sau đây là sai?
 
-**A.**X, Y đều có mạch không phân nhánh. **B.**X có công thức phân tử là C7H8O4.
+**A.** X, Y đều có mạch không phân nhánh. **B.** X có công thức phân tử là C7H8O4.
 
-**C.**Z có công thức phân tử là C4H2O4Na2. **D.**X2 là ancol etylic.
+**C.** Z có công thức phân tử là C4H2O4Na2. **D.** X2 là ancol etylic.
 
 [ Đề thi thử THPTQG – THPT Nguyễn Viết Xuân – Vĩnh Phúc – Lần 2 – Mã đề 103 – Năm 2021 ]
 
-**Câu 39:**Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:
+**Câu 39:** Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:
 
 1. 
 
@@ -1460,11 +1460,11 @@ Biết E chỉ chứa nhóm chức este và trong phân tử có số nguyên t�
 
 (g) Nhiệt độ sôi của Z cao hơn nhiệt độ sôi của C2H5OH Số phát biểu đúng là
 
-**A.******2. **B.******5. **C.******4. **D.******3.
+**A.******2.** B.******5.** C.******4.** D.******3.
 
 [ Đề thi THPTQG chính thức – Bộ Giáo dục & Đào tạo – Lần 2 – Năm 2020 ] 
 
-**Câu 40:**Thủy phân hoàn toàn chất hữu cơ E mạch hở bằng dung dịch NaOH, thu được 4 sản phẩm hữu cơ X; Y; Z; T đều có 2 nguyên tử cacbon trong phân tử (MX > MY > MZ > MT). Biết E tác dụng vừa đủ với NaOH theo tỉ lệ 1 : 3, và oxi hóa không hoàn toàn Z hoặc T đều có thể thu được axit axetic. Cho các phát biểu sau:
+**Câu 40:** Thủy phân hoàn toàn chất hữu cơ E mạch hở bằng dung dịch NaOH, thu được 4 sản phẩm hữu cơ X; Y; Z; T đều có 2 nguyên tử cacbon trong phân tử (MX > MY > MZ > MT). Biết E tác dụng vừa đủ với NaOH theo tỉ lệ 1 : 3, và oxi hóa không hoàn toàn Z hoặc T đều có thể thu được axit axetic. Cho các phát biểu sau:
 
 1. Tổng số nguyên tử trong một phân tử E bằng 24
 
@@ -1476,11 +1476,11 @@ Biết E chỉ chứa nhóm chức este và trong phân tử có số nguyên t�
 
 5. Số phát biểu đúng là
 
-**A.******4. **B.******3. **C.******1 **D.******2.
+**A.******4.** B.******3.** C.******1** D.******2.
 
 [ Đề thi thử THPTQG – THPT Chuyên Lê Quý Đôn – Quảng Trị – Năm 2021 ]
 
-**Câu 41:**Cho 3 este mạch hở X, Y, Z (MX < MY < MZ < 100) có cùng số nguyên tử cacbon trong phân tử. Khi thủy phân X hoặc Y hoặc Z trong môi trường axit đều thu được axit cacboxylic và ancol no. Cho các nhận định sau:
+**Câu 41:** Cho 3 este mạch hở X, Y, Z (MX < MY < MZ < 100) có cùng số nguyên tử cacbon trong phân tử. Khi thủy phân X hoặc Y hoặc Z trong môi trường axit đều thu được axit cacboxylic và ancol no. Cho các nhận định sau:
 
 1. X tác dụng với H2 dư (xúc tác Ni, t°) theo tỉ lệ mol 1 : 2.
 
@@ -1492,7 +1492,7 @@ Biết E chỉ chứa nhóm chức este và trong phân tử có số nguyên t�
 
 5. X tác dụng được với dung dịch AgNO3 trong NH3, thu được kết tủa. Số nhận định luôn đúng là:
 
-**A.******4. **B.******2. **C.******3. **D.******5.
+**A.******4.** B.******2.** C.******3.** D.******5.
 
 [ Đề thi thử THPTQG – THPT Chuyên Bắc Giang – Tháng 5 – Năm 2021 ]
 

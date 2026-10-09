@@ -23,7 +23,7 @@ Trước $$f(v)=\frac{8}{v}$$ Sau.`;
  assert.doesNotMatch(html,/katex-error/);
  assert.throws(()=>convertLatex(String.raw`\begin{tabular}{cc}A & B & C\end{tabular}`),/số ô/);
 });
-import {parsePost,build} from './build.mjs';
+import {parsePost,build,normalizeMarkdownFormatting} from './build.mjs';
 const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategory: Toán học\ngrade: 10\ntype: Bài học\ndate: "2026-09-17"\ntags: [toán 10]\n---\nCông thức $x_1 + x_2$.\n\n$$\n\\frac{a}{b} = x^2\n$$\n\n```js\nconst cost = "$5";\n```';
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
 test('reject incorrect metadata and malformed mathematics',()=>{assert.throws(()=>parsePost(source.replace('grade: 10','grade: 13'),'thu.md'),/lớp/);assert.throws(()=>parsePost(source.replace('2026-09-17','2026-02-31'),'thu.md'),/ngày/);assert.throws(()=>parsePost(source.replace('Toán học','Không có'),'thu.md'),/môn học/);assert.throws(()=>parsePost(source.replace('x_1 + x_2','\\invalidcommand'),'thu.md'));});
@@ -138,4 +138,27 @@ test('parsePost canonicalizes common tag casing and trims whitespace',()=>{
  const p=parsePost(source.replace('tags: [toán 10]','tags: [" tiếng trung ", "bộ thủ", "kanji", "hóa 12"]'),'tags.md');
  assert.deepEqual(p.tags,['Tiếng Trung','Bộ thủ','Kanji','Hóa 12']);
 });
+
+test('normalizeMarkdownFormatting normalizes bold, italic and preserves code/math',()=>{
+ const input = [
+  '- **TV màn hình phẳng:\u00a0**TV',
+  '- **Máy giặt cửa trước:**Công suất 1.240W',
+  '- **Bàn là:**Bàn là',
+  '**A.**29,4 gam',
+  '**Ví dụ 1.**Giải phương trình',
+  '```python\ndef foo(*args, **kwargs):\n    return 2 ** 3\n```',
+  '`**inline**`',
+  '$$A^* B^*$$ and $x^* + y^*$'
+ ].join('\n\n');
+ const norm = normalizeMarkdownFormatting(input);
+ const p = parsePost(source + '\n\n' + norm, 'markdown-formatting.md');
+ assert.match(p.html, /<strong>TV màn hình phẳng:<\/strong> TV/);
+ assert.match(p.html, /<strong>Máy giặt cửa trước:<\/strong> Công suất 1.240W/);
+ assert.match(p.html, /<strong>Bàn là:<\/strong> Bàn là/);
+ assert.match(p.html, /<strong>A.<\/strong> 29,4 gam/);
+ assert.match(p.html, /<strong>Ví dụ 1.<\/strong> Giải phương trình/);
+ assert.match(p.html, /class="language-python"/);
+ assert.match(p.html, /def foo\(\*args, \*\*kwargs\):/);
+});
+
 

@@ -16,13 +16,13 @@ Mời bạn tham khảo 138 câu hỏi trắc nghiệm Python có đáp án. Đ�
 
 ## 1. Đề bài câu hỏi trắc nghiệm Python
 
-**Câu 1.** Biểu thức complex(‘2-3j’) là hợp lệ còn complex(2 – 3j) sai cú pháp của hàm complex(). Khẳng định sau đây đúng hay sai?
+**Câu 1.** Biểu thức `complex(‘2-3j’)` là hợp lệ còn `complex(2 – 3j)` sai cú pháp của hàm `complex()`. Khẳng định sau đây đúng hay sai?
 
 **A.** Đúng
 
 **B.** Sai
 
-**Câu 2.** Biểu thức trong Python math.sqrt(x+ math.sqrt(x+ math.sqrt(x))) là biểu thức nào sau đây trong toán học?
+**Câu 2.** Biểu thức trong Python `math.sqrt(x+ math.sqrt(x+ math.sqrt(x)))` là biểu thức nào sau đây trong toán học?
 
 **A.** $\sqrt x + \sqrt x + \sqrt x$
 
@@ -34,57 +34,63 @@ Mời bạn tham khảo 138 câu hỏi trắc nghiệm Python có đáp án. Đ�
 
 **Câu 3.** Cho biết kết quả của đoạn code sau
 
+```python
 for i in range(1,5):
   print(i,end=' ')
   if i == 3:
     break
+```
+
 **A.** IndentationError: expected an indented block
 
-**B.** 1 2 3
+**B.** `1 2 3`
 
-**C.** 1 2 3 4
+**C.** `1 2 3 4`
 
-**D.** 1 2
+**D.** `1 2`
 
 **Câu 4.** Cho câu lệnh sau:
 
-Print(‘xin chao’)
+`Print(‘xin chao’)`
 
 Câu lệnh trên sai, câu lệnh đúng là:
 
-**A.** print(‘xin chao’)
+**A.** `print(‘xin chao’)`
 
-**B.** print(xin chao)
+**B.** `print(xin chao)`
 
-**C.** Print(xin chao)
+**C.** `Print(xin chao)`
 
-**D.** Print(“xin chao”)
+**D.** `Print(“xin chao”)`
 
 **Câu 5.** Cho đoạn chương trình sau:
 
+```python
 a=b=1
 c=1
 d=2
 print(a+b+c+d)
+```
+
 Kết quả trên màn hình là:
 
-**A.** 3
+**A.** `3`
 
-**B.** 4
+**B.** `4`
 
-**C.** 5
+**C.** `5`
 
-**D.** 6
+**D.** `6`
 
-**Câu 6.** Chạy câu lệnh num = '3'*'3' trong Python, kết quả là:
+**Câu 6.** Chạy câu lệnh `num = '3'*'3'` trong Python, kết quả là:
 
-**A.** 333
+**A.** `333`
 
-**B.** 27
+**B.** `27`
 
-**C.** 9
+**C.** `9`
 
-**D.** TypeError: can’t multiply sequence by non-int of type ‘str’
+**D.** `TypeError: can’t multiply sequence by non-int of type ‘str’`
 
 **Câu 7.** Chọn phát biểu sai?
 
@@ -96,11 +102,11 @@ Kết quả trên màn hình là:
 
 **D.** Python là ngôn ngữ lập trình bậc cao phổ biến rộng rãi trên thế giới.
 
-**Câu 8.** Chọn đáp án đúng khi nói về hàm id() trong Python?
+**Câu 8.** Chọn đáp án đúng khi nói về hàm `id()` trong Python?
 
-**A.** id() trả về định danh một đối tượng.
+**A.** `id()` trả về định danh một đối tượng.
 
-**B.** Mỗi đối tượng không chỉ có một id duy nhất.
+**B.** Mỗi đối tượng không chỉ có một `id` duy nhất.
 
 **C.** Cả hai phương án trên đều đúng.
 
@@ -128,13 +134,13 @@ Kết quả trên màn hình là:
 
 **Câu 11.** Các khối code (khối lệnh của hàm, vòng lặp,…) trong Python được xác định bởi
 
-**A.** Dấu ngoặc nhọn { }
+**A.** Dấu ngoặc nhọn `{ }`
 
 **B.** Canh lề
 
-**C.** Dấu ngoặc đơn ()
+**C.** Dấu ngoặc đơn `()`
 
-**D.** Dấu ngoặc vuông [ ]
+**D.** Dấu ngoặc vuông `[ ]`
 
 **Câu 12.** Các kết quả của hàm hiển thị dưới đây là gì?
 
@@ -926,7 +932,7 @@ print(list2)
 
 **D.** Mở file để đọc và ghi.
 
-**Câu 68.** Mở file với chế độ mode wb có ý nghĩa gì?
+**Câu 68.** Mở file với chế độ mode `wb` có ý nghĩa gì?
 
 **A.** Mở file để ghi.
 
@@ -1338,7 +1344,7 @@ else: print(‘so le’)
 
 **Câu 94.** Trong NNLT Python, biểu thức số học nào sau đây là hợp lệ?
 
-**A.** 5*a + 7*b + 8*c
+**A.** 5*a + 7* b + 8*c
 
 **B.** 5a + 7b + 8c
 
@@ -1978,9 +1984,9 @@ Câu 1. Đáp án A: Đúng.
 
 Câu 2. Đáp án D: \sqrt{x + \sqrt{x+\sqrt x}}.
 
-Câu 3. Đáp án D: 1 2.
+Câu 3. Đáp án D: `1 2`.
 
-Câu 4. Đáp án A: print('xin chao').
+Câu 4. Đáp án A: `print('xin chao')`.
 
 Câu 5. Đáp án D: 6.
 

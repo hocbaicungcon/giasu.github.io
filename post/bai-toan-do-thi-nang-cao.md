@@ -15,7 +15,7 @@ grade: 12
 
 Để làm tốt dạng toán này phải hiểu được từng giai đoạn phản ứng tương ứng với đồ thị. Đặc biệt là ở những điếm đồ thị có đột biến (gãy khúc).
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-dung-dich-chua-x-mol-h2so4-va-y-mol-al2so43.html)) Ví dụ 1:** Nhỏ từ từ dung dịch Ba(OH)2 vào dung dịch chứa x****mol H2SO4 và y mol Al2(SO4)3. Đồ****thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như sau:
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-dung-dich-chua-x-mol-h2so4-va-y-mol-al2so43.html)) Ví dụ 1:** Nhỏ từ từ dung dịch Ba(OH)2 vào dung dịch chứa x****mol H2SO4 và y mol Al2(SO4)3. Đồ*** *thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như sau:
 
 ![Bài toán đồ thị nâng cao có lời giải chi tiết 1](assets/images/bai-toan-do-thi-nang-cao-vd1-de.jpg)
 
@@ -23,7 +23,7 @@ Giá trị nào sau đây của a là đúng?
 
 **A.** 0,50. **B.** 0,65. **C.** 0,75. **D.** 0,8.
 
-**([Lời giải](/bai-viet/suc-tu-tu-khi-co2-den-du-vao-dung-dich-chua-caoh2-va-naalo2-hay-naaloh4.html)) Ví dụ 2:** Sục từ từ khí CO2 đến dư vào dung dịch chứa Ca(OH**)**2 và NaAlO2 (hay Na[Al(OH)4]). Khối lượng kết tủa thu sau phản ứng được biểu diễn trên đồ thị như hình vẽ. Giá trị của m và x****lần lượt là
+**([Lời giải](/bai-viet/suc-tu-tu-khi-co2-den-du-vao-dung-dich-chua-caoh2-va-naalo2-hay-naaloh4.html)) Ví dụ 2:** Sục từ từ khí CO2 đến dư vào dung dịch chứa Ca(OH**)** 2 và NaAlO2 (hay Na[Al(OH)4]). Khối lượng kết tủa thu sau phản ứng được biểu diễn trên đồ thị như hình vẽ. Giá trị của m và x****lần lượt là
 
 ![Bài toán đồ thị nâng cao có lời giải chi tiết 2](assets/images/bai-toan-do-thi-nang-cao-vd2-de.jpg)
 
@@ -73,7 +73,7 @@ Giá trị m gần nhất với giá trị nào dưới đây?
 
  
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-05m-vao-ong-nghiem-chua-dung-dich-al2so43.html)) Câu 2:**Nhỏ từ từ dung dịch Ba(OH)2 0,5M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị của V nào sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-05m-vao-ong-nghiem-chua-dung-dich-al2so43.html)) Câu 2:** Nhỏ từ từ dung dịch Ba(OH)2 0,5M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị của V nào sau đây là đúng?
 
 ![Bài toán đồ thị nâng cao có lời giải chi tiết 8](assets/images/bai-toan-do-thi-nang-cao-d2.jpg)
 
@@ -95,13 +95,13 @@ Giá trị m gần nhất với giá trị nào dưới đây?
 
 **A.** 7:6. **B.** 4:3.   **C.** 6:5. **D.** 5:4.
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-01m-vao-ong-nghiem-chua-dung-dich-al2so43-do-thi-bieu-dien.html)) Câu 5:**Nhỏ từ từ dung dịch Ba(OH)2 0,1M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị của mmax – mmin nào sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-01m-vao-ong-nghiem-chua-dung-dich-al2so43-do-thi-bieu-dien.html)) Câu 5:** Nhỏ từ từ dung dịch Ba(OH)2 0,1M vào ống nghiệm chứa dung dịch Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị của mmax – mmin nào sau đây là đúng?
 
 ![Bài toán đồ thị nâng cao có lời giải chi tiết 11](assets/images/bai-toan-do-thi-nang-cao-d5.jpg)
 
 **A.** 8,82. **B.** 7,14.   **C.** 9,36. **D.** 8,24.
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43.html)) Câu 6:**Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43.html)) Câu 6:** Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối lượng kết tủa theo thế tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
 
 ![Bài toán đồ thị nâng cao có lời giải chi tiết 12](assets/images/bai-toan-do-thi-nang-cao-d6.jpg)
 
@@ -115,7 +115,7 @@ Giá trị m gần nhất với giá trị nào dưới đây?
 
  
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43-2.html)) Câu 8:**Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối ượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
+**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-baoh2-vao-ong-nghiem-chua-dung-dich-hcl-va-al2so43-2.html)) Câu 8:** Nhỏ từ từ dung dịch Ba(OH)2 vào ống nghiệm chứa dung dịch HCl và Al2(SO4)3. Đồ thị biểu diễn sự phụ thuộc khối ượng kết tủa theo thể tích dung dịch Ba(OH)2 như hình bên. Giá trị nào của mmax sau đây là đúng?
 
 ![Bài toán đồ thị nâng cao có lời giải chi tiết 14](assets/images/bai-toan-do-thi-nang-cao-d8.jpg)
 

@@ -15,7 +15,7 @@ grade: 12
 
 Hòa tan hoàn toàn 26,52 gam Al2O3 bằng một lượng vừa đủ dung dịch HNO3, thu được 247 gam dung dịch X. Làm lạnh X đến 20°C thì có m gam tinh thể Al(NO3)3.9H2O tách ra. Biết ở 20ºC, cứ 100 gam H2O hòa tan được tối đa 75,44 gam Al(NO3)3. Giá trị của m gần nhất với giá trị nào sau đây?
 
-**A.**90. **B.**14. **C.**19. **D****.**33.
+**A.** 90. **B.** 14. **C.** 19. **D****.** 33.
 
 **Lời giải**
 
