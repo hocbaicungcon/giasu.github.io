@@ -362,4 +362,4 @@ Mời các thầy cô và các em xem thêm
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
 ←[Giáo án powerpoint hóa 11 bài 14 ôn tập chương 3 KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-14-on-tap-chuong-3-kntt.html)
-[Giáo án powerpoint hóa 11 bài 16 hydrocarbon không no KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-16-hydrocarbon-khong-no-kntt.html)→
+[Giáo án powerpoint hóa 11 bài 17 Arene hydrocarbon thơm KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-17-arene-hydrocarbon-thom-kntt.html)→

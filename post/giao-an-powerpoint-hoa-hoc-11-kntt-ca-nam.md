@@ -48,7 +48,7 @@ Giáo án powerpoint hóa 11
 
 [Giáo án powerpoint hóa 11 bài 15 alkane KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-15-alkane-kntt.html)
 
-[Giáo án powerpoint hóa 11 bài 16 hydrocarbon không no KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-16-hydrocarbon-khong-no-kntt.html)
+Giáo án powerpoint hóa 11 bài 16 hydrocarbon không no KNTT *(đang cập nhật)*
 
 [Giáo án powerpoint hóa 11 bài 17 Arene hydrocarbon thơm KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-17-arene-hydrocarbon-thom-kntt.html)
 
@@ -58,11 +58,11 @@ Giáo án powerpoint hóa 11
 
 [Giáo án powerpoint hóa 11 bài 20 alcohol KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-20-alcohol-kntt.html)
 
-[Giáo án powerpoint hóa 11 bài 21 phenol KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-21-phenol-kntt.html)
+Giáo án powerpoint hóa 11 bài 21 phenol KNTT *(đang cập nhật)*
 
 [Giáo án powerpoint hóa 11 bài 22 ôn tập chương 5 KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-22-on-tap-chuong-5-kntt.html)
 
-[Giáo án powerpoint hóa 11 bài 23 hợp chất carbonyl KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-23-hop-chat-carbonyl-kntt.html)
+Giáo án powerpoint hóa 11 bài 23 hợp chất carbonyl KNTT *(đang cập nhật)*
 
 [Giáo án powerpoint hóa 11 bài 24 carboxylic acid KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-24-carboxylic-acid-kntt.html)
 

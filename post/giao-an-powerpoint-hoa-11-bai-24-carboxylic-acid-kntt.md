@@ -289,5 +289,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án powerpoint hóa 11 bài 23 hợp chất carbonyl KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-23-hop-chat-carbonyl-kntt.html)
+←[Giáo án powerpoint hóa 11 bài 22 ôn tập chương 5 KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-22-on-tap-chuong-5-kntt.html)
 [Giáo án powerpoint hóa 11 bài 25 ôn tập chương 6 KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-25-on-tap-chuong-6-kntt.html)→
