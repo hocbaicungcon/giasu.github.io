@@ -124,7 +124,7 @@ Thí sinh được phép sử dụng Bảng tuần hoàn các nguyên tố hóa 
 | 4 | PTHH: Ag + 2HNO3 đặc  AgNO3 + NO2 + H2O (1)  Cu + 4HNO3 đặc Cu(NO3)2 + 2NO2 + 2H2O (2) – Giả sử Y chỉ có a mol Ag: a=45,2 : 108 ≈ 0,419 mol   – Giả sử Y có b mol Ag và 2b mol Cu: – Như vậy hỗn hợp Y gồm a mol Ag và mol Cu Theo (1,2): | 1,0 |  |
 
 **Câu 2.***(5,0 điểm)
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-12-Quang-Tri-File-De-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-12-Quang-Tri-File-De-HDC-giasu.ai.vn.docx)
 

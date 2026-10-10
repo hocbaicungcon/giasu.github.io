@@ -365,7 +365,7 @@ Số phát biểu đúng là
 
 **A.** 5.                                 **B.** 2.                               **C.** 3.                              **D.** 4.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [Cau-hoi-trac-nghiem-nang-luong-hoa-hoc](/assets/docs/Cau-hoi-trac-nghiem-nang-luong-hoa-hoc.docx)
 

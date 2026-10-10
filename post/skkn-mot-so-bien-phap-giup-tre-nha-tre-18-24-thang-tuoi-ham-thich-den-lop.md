@@ -15,9 +15,9 @@ tags:
 SKKN Một số biện pháp giúp trẻ nhà trẻ 18-24 tháng tuổi ham thích đến lớp
 
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án O2 Education](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
 
 ĐIỀU KIỆN, HOÀN CẢNH TẠO RA SÁNG KIẾN.
 Hiện nay giáo dục mầm non là một bậc học nằm trong hệ thống giáo dục
@@ -264,7 +264,7 @@ Trẻ rất thích tham gia tất cả các hoạt động trong chương trình
 mầm non và đặc biệt là phương pháp giáo dục lấy trẻ làm trung tâm, 100% trẻ
 được đánh giá xếp loại đạt ở tất cả các lĩnh vực bằng các chỉ số theo giai đoạn
 
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN môn hóa học cấp THPT](/bai-viet/tong-hop-skkn-mon-hoa-hoc-cap-thpt.html)
 

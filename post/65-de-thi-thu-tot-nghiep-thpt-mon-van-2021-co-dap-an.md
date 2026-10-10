@@ -1,6 +1,6 @@
 ---
 title: 65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án
-description: O2 Education xin giới thiệu với Quý thầy cô và các em học sinh 65 đề
+description: GIA SƯ THÔNG MINH xin giới thiệu với Quý thầy cô và các em học sinh 65 đề
   thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án. Quý Thầy cô và các em học sinh có
   thể tải
 category: Ngữ văn
@@ -13,7 +13,7 @@ tags:
 grade: 12
 ---
 
-O2 Education xin giới thiệu với Quý thầy cô và các em học sinh **65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án.** Quý Thầy cô và các em học sinh có thể tải tài liệu tại đây:
+GIA SƯ THÔNG MINH xin giới thiệu với Quý thầy cô và các em học sinh **65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án.** Quý Thầy cô và các em học sinh có thể tải tài liệu tại đây:
 
 - **[PDF]** [65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án](/assets/docs/65-de-thi-thu-tot-nghiep-THPT-mon-Van-2021-co-dap-an.pdf)
 

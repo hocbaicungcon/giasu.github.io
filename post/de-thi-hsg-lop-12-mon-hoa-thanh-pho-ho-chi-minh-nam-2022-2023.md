@@ -14,7 +14,7 @@ grade: 12
 
 Đề thi hsg lớp 12 môn hóa thành phố Hồ Chí Minh năm 2022 2023
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG12-TPHCM-2023-HDG](https://drive.google.com/file/d/12XsOS88mTqGBvrgVdFn4_OIbNuX-r8jc/view?usp=sharing)[](https://drive.google.com/file/d/12XsOS88mTqGBvrgVdFn4_OIbNuX-r8jc/view?usp=sharing)
 

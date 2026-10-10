@@ -116,7 +116,7 @@ d. propanic acid + CH3OH/H2SO4 đặc
 **Câu 5:** Trong thành phần của bột vệ sinh lồng máy giặt thường có citric acid (acid chanh). Hãy giải thích vai trò của citric acid trong trường hợp này.
 ……………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B25-LUYEN-TAP-LOP-11-NGUYEN-THI-THAO](/assets/docs/B25-LUYEN-TAP-LOP-11-NGUYEN-THI-THAO.docx)
 

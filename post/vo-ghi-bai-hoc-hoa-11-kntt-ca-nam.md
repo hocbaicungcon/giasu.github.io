@@ -10,7 +10,7 @@ tags:
 
 Vở ghi bài học hóa 11 KNTT cả năm
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [29.-Bai-1-Khai-niem-ve-can-ban-hoa-hoc-Vu-Bao-dap-an](/assets/docs/29.-Bai-1-Khai-niem-ve-can-ban-hoa-hoc-Vu-Bao-dap-an.docx)
 - [29.-Bai-1-Khai-niem-ve-can-ban-hoa-hoc-Vu-Bao-dien-khuyet](/assets/docs/29.-Bai-1-Khai-niem-ve-can-ban-hoa-hoc-Vu-Bao-dien-khuyet.docx)

@@ -343,7 +343,7 @@ A.**5,56 và 6%.** B.**11,12 và 56%.** C.**11,12 và 44%.** D.**5,56 và 12%.
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [4 DE THPT MON HOA NAM 2019](/assets/docs/4-DE-THPT-MON-HOA-NAM-2019.doc)
 

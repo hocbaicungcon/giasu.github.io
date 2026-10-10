@@ -70,7 +70,7 @@ b) KMnO4 + FeSO4 + H2SO4 → K2SO4 + MnSO4 + Fe2(SO4)3 + H2O
 Cho biết phản ứng xảy ra trong thiết bị đo nồng độ cồn bằng khí thở (Breathalyzer) như sau:
 C2H5OH + K2Cr2O7 + H2SO4
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [De-chon-HSG-lop-10-mon-Hoa-hoc-2023-2024-o2.edu_.vn_](/assets/docs/De-chon-HSG-lop-10-mon-Hoa-hoc-2023-2024-giasu.ai.vn.pdf)
 - [Huong-dan-cham-HSG-lop-10-2023-2024-o2.edu_.vn_](/assets/docs/Huong-dan-cham-HSG-lop-10-2023-2024-giasu.ai.vn.pdf)

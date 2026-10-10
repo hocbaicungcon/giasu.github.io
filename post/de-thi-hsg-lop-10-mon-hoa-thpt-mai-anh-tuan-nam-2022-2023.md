@@ -509,7 +509,7 @@ Trong các biện pháp trên, có bao nhiêu biện pháp đúng?
 | 101 | 49 | D |
 | 101 | 50 | C |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG-Hoa-10-nam-2022-2023-THPT-Mai-Anh-Tuan-o2.edu_.vn_](/assets/docs/HSG-Hoa-10-nam-2022-2023-THPT-Mai-Anh-Tuan-giasu.ai.vn.doc)
 

@@ -451,7 +451,7 @@ Giá trị của a là
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG 12 HOA HOC_128](/assets/docs/HSG-12-HOA-HOC_128.doc)
 - [HSG 12 HOA HOC_219](/assets/docs/HSG-12-HOA-HOC_219.doc)

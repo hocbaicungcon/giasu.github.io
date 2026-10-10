@@ -261,7 +261,7 @@ Biết các phản ứng xảy ra hoàn toàn và m3 < m1 = m2. Hai chất X, Y 
 
  
 
-O2 Education gửi các thầy cô và các em link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô và các em link download đề thi
 
 - [ĐỀ 05 – ĐÁP ÁN](/assets/docs/DE-05-DAP-AN-1.doc)
 - [ĐỀ 05](/assets/docs/DE-05.doc)

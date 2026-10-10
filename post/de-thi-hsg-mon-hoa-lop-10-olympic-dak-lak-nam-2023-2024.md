@@ -139,7 +139,7 @@ Họ, tên thí sinh: …………………………………………….; Số
 
 Chữ ký của Cán bộ coi thi 1: ………………………….; Chữ ký của Cán bộ coi thi 2: …………………………
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De-giasu.ai.vn.doc)
 

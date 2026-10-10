@@ -14,7 +14,7 @@ grade: 11
 
 Giáo án powerpoint hóa 11 bài 21 phenol KNTT
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 Mời các thầy cô và các em xem thêm
 

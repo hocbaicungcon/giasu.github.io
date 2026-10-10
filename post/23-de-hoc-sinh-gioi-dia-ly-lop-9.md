@@ -12,7 +12,7 @@ tags:
 grade: 9
 ---
 
-O2 Education xin gửi tới bạn đọc 23 đề thi học sinh giỏi Địa lý lớp 9 có đáp án. File word mời các bạn tải ở cuối bài viết.
+GIA SƯ THÔNG MINH xin gửi tới bạn đọc 23 đề thi học sinh giỏi Địa lý lớp 9 có đáp án. File word mời các bạn tải ở cuối bài viết.
 
 ## ĐỀ HỌC SINH GIỎI ĐỊA LÝ LỚP 9 SỐ 1
 

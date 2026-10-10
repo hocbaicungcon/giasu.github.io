@@ -388,7 +388,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 |             Ở 600C : => t=0,7698 phút =46,188 giây   | 0,5 |  |
 
 **Ghi chú:** *Nếu học sinh giải theo cách khác mà vẫn đúng thì vẫn cho điểm tối đa.
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG_HOA10_THAIBINH_2023-2024-o2.edu_.vn_](/assets/docs/HSG_HOA10_THAIBINH_2023-2024-giasu.ai.vn.docx)
 

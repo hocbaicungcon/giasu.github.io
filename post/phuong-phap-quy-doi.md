@@ -140,7 +140,7 @@ Từ sơ đồ phản ứng, ta thấy: Chất khử là Ca, Mg; chất oxi hóa
 
 Áp dụng bảo toàn electron, bảo toàn khối lượng và bảo toàn nguyên tố Ca, ta có:
 
-O2 Education gửi các thầy cô link download file pdf đầy đủ tại đây [PP7 – QUY ĐỔI](/assets/docs/PP7-QUY-DOI.pdf)
+GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ tại đây [PP7 – QUY ĐỔI](/assets/docs/PP7-QUY-DOI.pdf)
 
 Xem thêm
 

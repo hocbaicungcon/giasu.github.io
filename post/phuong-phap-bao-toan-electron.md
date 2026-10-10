@@ -173,7 +173,7 @@ Cu + H+ + Cu2+ + NO + H2O
 
 **1.****Dạng 1: Tính lượng chất trong phản ứng oxi hóa – khử**
 
-O2 Education gửi các thầy cô link download file pdf đầy đủ
+GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
 - [PP5 – BẢO TOÀN ELECTRON](/assets/docs/PP5-BAO-TOAN-ELECTRON.pdf)
 

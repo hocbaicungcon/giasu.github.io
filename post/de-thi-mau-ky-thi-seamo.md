@@ -1,6 +1,6 @@
 ---
 title: Đề Thi Mẫu Kỳ Thi SEAMO
-description: O2 Education xin gửi tới thầy cô và các em Đề Thi Mẫu Kỳ Thi SEAMO bằng
+description: GIA SƯ THÔNG MINH xin gửi tới thầy cô và các em Đề Thi Mẫu Kỳ Thi SEAMO bằng
   file PDF.
 category: Toán học
 type: Bài tập
@@ -12,7 +12,7 @@ tags:
 - Đề thi mẫu
 ---
 
-O2 Education xin gửi tới thầy cô và các em Đề Thi Mẫu Kỳ Thi SEAMO bằng file PDF.
+GIA SƯ THÔNG MINH xin gửi tới thầy cô và các em Đề Thi Mẫu Kỳ Thi SEAMO bằng file PDF.
 
 ## Kỳ thi SEAMO là gì?
 

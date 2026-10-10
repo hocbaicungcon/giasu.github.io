@@ -568,7 +568,7 @@ axit stearic. Thể tích khí O2 (đktc) cần để đốt cháy hoàn toàn 8
 
  
 
-O2 Education gửi các thầy cô link download đề bài
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề bài
 
 - [Tổng hợp 50+ bài tập chất béo](/assets/docs/Tong-hop-50-bai-tap-chat-beo.docx)
 

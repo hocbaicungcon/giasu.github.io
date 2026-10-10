@@ -108,7 +108,7 @@ Họ và tên thí sinh: ………………………………………
 
 Lớp:    ……………               Số báo danh: …………………
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [11-DA-Hoa-de-HSG-23-24](/assets/docs/11-DA-Hoa-de-HSG-23-24-giasu.ai.vn.docx)
 - [11-HOA-DE-THI-HSG-CAP-TRUONG-23-24](/assets/docs/11-HOA-DE-THI-HSG-CAP-TRUONG-23-24-giasu.ai.vn.docx)

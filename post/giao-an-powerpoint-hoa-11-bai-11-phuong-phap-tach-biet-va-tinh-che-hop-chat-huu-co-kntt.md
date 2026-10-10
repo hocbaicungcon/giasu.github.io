@@ -16,7 +16,7 @@ grade: 11
 
 Giáo án powerpoint hóa 11 bài 11 phương pháp tách biệt và tính chế hợp chất hữu cơ KNTT
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [BAI-11.-PP-TACH-BIET-VA-TINH-CHE-HCHC-NGUYEN-THI-THAO](/assets/docs/BAI-11.-PP-TACH-BIET-VA-TINH-CHE-HCHC-NGUYEN-THI-THAO.pptx)
 

@@ -267,7 +267,7 @@ CnH­2n+2O + 1,5n O2  n CO2 + (n+1) H2O
  *n = 1,6  CH4O và C2H6O
 *0,25
 *Học sinh không viết PTHH, mà dùng n =**= 1,6**** 0,25 điểm
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa 11- Bui Thi Xuan – Da](/assets/docs/Hoa-11-Bui-Thi-Xuan-Da.docx)
 

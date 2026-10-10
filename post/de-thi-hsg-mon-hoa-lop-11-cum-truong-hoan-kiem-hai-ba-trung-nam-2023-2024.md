@@ -106,7 +106,7 @@ Fe = 56; Cu = 64; Zn = 65; Br = 80; Ag = 108.
 
 Thí sinh không được sử dụng tài liệu. Cán bộ coi thi không giải thích gì thêm.
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023HK-HBT_11_HDC-Hoa-o2.edu_.vn_](/assets/docs/2023HK-HBT_11_HDC-Hoa-giasu.ai.vn.pdf)
 - [2023HK-HBT_11-Hoa-o2.edu_.vn_](/assets/docs/2023HK-HBT_11-Hoa-giasu.ai.vn.pdf)

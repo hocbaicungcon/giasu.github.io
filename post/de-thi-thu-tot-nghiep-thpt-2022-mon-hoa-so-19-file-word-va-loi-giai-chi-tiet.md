@@ -249,7 +249,7 @@ Phát biểu nào sau đây ***sai***?                    
 **C.** Sau bước 3, hỗn hợp chất lỏng thu được có mùi táo.
 
  **D.** H2SO4 đặc đóng vai trò chất xúc tác và hút nước để chuyển dịch cân bằng.**CácCâu 1.
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Phat-trien-de-TK-2022-De-so-19-Thuy-vu-Dap-an](/assets/docs/Phat-trien-de-TK-2022-De-so-19-Thuy-vu-Dap-an.docx)
 

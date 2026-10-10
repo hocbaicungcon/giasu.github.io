@@ -13,7 +13,7 @@ grade: 12
 
 # Tài liệu ôn tập đầu năm môn Hóa học Lớp 12
 
-O2 Education xin gửi tới Quý thầy cô và các em học sinh tài liệu ôn tập đầu năm môn Hoá học lớp 12.
+GIA SƯ THÔNG MINH xin gửi tới Quý thầy cô và các em học sinh tài liệu ôn tập đầu năm môn Hoá học lớp 12.
 
 ## I. Kiến thức lớp 11 có liên quan
 
@@ -311,7 +311,7 @@ hiđrocacbon < anđehit, xeton, este < ancol < axit
 
 ## II. Link tải tài liệu ôn tập đầu năm Hoá 12
 
-O2 Education gửi các thầy cô và các em link download tài liệu [ÔN TẬP ĐÂU NĂM HÓA 12](/assets/docs/ON-TAP-DAU-NAM-HOA-12-1.pdf)
+GIA SƯ THÔNG MINH gửi các thầy cô và các em link download tài liệu [ÔN TẬP ĐÂU NĂM HÓA 12](/assets/docs/ON-TAP-DAU-NAM-HOA-12-1.pdf)
 
 Xem thêm
 

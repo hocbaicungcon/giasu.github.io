@@ -322,7 +322,7 @@ Quy điểmMức độ1 = 1 điểm; Mức độ 2 = 2 điểm; Mức độ3 = 3
 
  **Điểm trung bình** …………..(Cộng tổng điểm chia cho 20)
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [BAI-16-HOA-10-CTST](/assets/docs/BAI-16-HOA-10-CTST.docx)
 - [BAI-16-HOA-10-CTST](#drive-pending-BAI-16-HOA-10-CTST.ppt)

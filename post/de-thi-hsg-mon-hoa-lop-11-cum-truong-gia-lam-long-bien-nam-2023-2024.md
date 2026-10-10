@@ -162,7 +162,7 @@ Cho các phương trình nhiệt hóa sau:
 | 2. 1,125đ | a. Tiến hành: – Cho khoảng 1 g phân bón ammonium nitrate vào ống nghiệm.  – Thêm vào ống nghiệm khoảng 3 mL nước cất, lắc đều cho tan hết. – Nhỏ 1 mL dung dịch NaOH 20% vào mỗi ống nghiệm, đun nóng nhẹ trên đèn cồn. – Đưa giấy pH đã tẩm ướt vào miệng ống nghiệm.  Hiện tượng: có khí mùi khai bay lên, quỳ tím hóa xanh Pt : NH4NO3  +  NaOH  →   NaNO3 + NH3 ↑ + H2O b. NH4NO3  →  N2O + 2H2O Phản ứng phân huỷ muối ammonium nitrate làm tăng áp suất khí, nên có nguy cơ gây nổ. Vì vậy, việc lưu trữ các phân bón có thành phần chính là muối ammonium thường được khuyến cáo cần tránh xa các nguồn nhiệt để hạn chế nguy cơ gây cháy nổ.   | 0.625                         0,5 |
 | 3. 1,0đ | 3 ptpư ml = 3,32 m3 | 0,5   0,5 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG-HOA-HOC-11-CUM-TRUONG-THPT-GL-LB-2024](/assets/docs/HSG-HOA-HOC-11-CUM-TRUONG-THPT-GL-LB-2024-giasu.ai.vn.docx)
 - [HSG-HOA-HOC-11-HDC-CUM-TRUONG-THPT-GL-LB-2024](/assets/docs/HSG-HOA-HOC-11-HDC-CUM-TRUONG-THPT-GL-LB-2024-giasu.ai.vn.docx)

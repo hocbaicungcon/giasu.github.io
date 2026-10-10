@@ -123,7 +123,7 @@ Họ và tên thí sinh: ………………………………………
 
 Lớp:    ……………               Số báo danh: …………………
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [10-de-HSG-CAP-TRUONG-23-24-o2.edu_.vn_](/assets/docs/10-de-HSG-CAP-TRUONG-23-24-giasu.ai.vn.doc)
 - [10-HUONG-DAN-CHAM-DE-HOC-SINH-GIOI-o2.edu_.vn_](/assets/docs/10-HUONG-DAN-CHAM-DE-HOC-SINH-GIOI-giasu.ai.vn.doc)

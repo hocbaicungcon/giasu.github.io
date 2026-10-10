@@ -136,7 +136,7 @@ A) 0,24 mol B) 0,45 mol C) 0,69 mol D) 0,72 mol
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HOA 12-NGUYEN HIEN-DE 1](/assets/docs/HOA-12-NGUYEN-HIEN-DE-1.docx)
 - [HOA 12-NGUYEN HIEN-DE 2](/assets/docs/HOA-12-NGUYEN-HIEN-DE-2.docx)

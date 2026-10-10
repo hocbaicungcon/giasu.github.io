@@ -391,7 +391,7 @@ Mỗi mũi tên ứng với một phản ứng hoá học. Số phản ứng mà
 - [Hoahoc10_hsg_2023_301](/assets/docs/Hoahoc10_hsg_2023_301.docx)
 - [Hoahoc10_hsg_2023_dap-an](/assets/docs/Hoahoc10_hsg_2023_dap-an.xlsx)
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

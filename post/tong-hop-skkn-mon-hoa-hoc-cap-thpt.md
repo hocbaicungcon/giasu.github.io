@@ -10,9 +10,9 @@ tags:
 - Hóa học
 ---
 
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án O2 Education](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
 
 Mời các thầy cô truy cập vào link sau để xem chi tiết các SKKN
 
@@ -139,11 +139,11 @@ Mời các thầy cô truy cập vào link sau để xem chi tiết các SKKN
 
 [Đang update]
 
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
  
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án O2 Education](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
 
 ←[Mẹo chống liệt môn Tiếng Anh](/bai-viet/meo-chong-liet-mon-tieng-anh.html)
 [SKKN Kinh nghiệm tổ chức câu lạc bộ môn Hóa học ở trường trung học phổ thông](/bai-viet/skkn-kinh-nghiem-to-chuc-cau-lac-bo-mon-hoa-hoc-o-truong-trung-hoc-pho-thong.html)→

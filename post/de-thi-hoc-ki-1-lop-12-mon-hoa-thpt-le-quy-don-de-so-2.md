@@ -252,7 +252,7 @@ Những phát biểu đúng là:
 
 **A.** 198. **B.** 111. **C.** 106. **D.** 184.
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [12_HOAHOC_Nguyễn Thị Oanh_Đe so 1](/assets/docs/12_HOAHOC_Nguyen-Thi-Oanh_De-so-1.doc)
 - [12_HOAHOC_Nguyễn Thị Oanh_Đe so 2](/assets/docs/12_HOAHOC_Nguyen-Thi-Oanh_De-so-2.docx)

@@ -1,6 +1,6 @@
 ---
 title: 1000 bài bất đẳng thức trong đề thi tuyển sinh vào lớp 10
-description: O2 Education xin giới thiệu các bài toán Bất đẳng thức trong đề thi tuyển
+description: GIA SƯ THÔNG MINH xin giới thiệu các bài toán Bất đẳng thức trong đề thi tuyển
   sinh vào lớp 10 qua các năm trên cả nước. Hiện tại chúng tôi đã sưu tầm được các
   đề
 category: Toán học
@@ -13,7 +13,7 @@ tags:
 grade: 9
 ---
 
-O2 Education xin giới thiệu các bài toán **Bất đẳng thức trong đề thi tuyển sinh vào lớp 10 qua các năm** trên cả nước. Hiện tại chúng tôi đã sưu tầm được các đề thi từ năm 2011 đến nay và đang cập nhật dần đề thi cùng lời giải lên website. Quý Thầy cô và các em học sinh tham khảo thêm dạng toán [Giải phương trình bằng phương pháp nhân liên hợp](/bai-viet/giai-phuong-trinh-bang-phuong-phap-nhan-lien-hop.html)
+GIA SƯ THÔNG MINH xin giới thiệu các bài toán **Bất đẳng thức trong đề thi tuyển sinh vào lớp 10 qua các năm** trên cả nước. Hiện tại chúng tôi đã sưu tầm được các đề thi từ năm 2011 đến nay và đang cập nhật dần đề thi cùng lời giải lên website. Quý Thầy cô và các em học sinh tham khảo thêm dạng toán [Giải phương trình bằng phương pháp nhân liên hợp](/bai-viet/giai-phuong-trinh-bang-phuong-phap-nhan-lien-hop.html)
 
 ## Bất đẳng thức trong đề thi tuyển sinh vào lớp 10 năm 2022
 

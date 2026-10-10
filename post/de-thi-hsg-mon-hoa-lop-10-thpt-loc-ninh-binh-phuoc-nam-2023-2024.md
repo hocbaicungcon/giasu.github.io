@@ -140,7 +140,7 @@ Hàng năm việc sử dụng than đá và các nguồn năng lượng hóa th�
 | 5.1 | Chất Phản ứng đốt cháy Nhiệt thu được (kJ/mol) mol CO2/kJ Than đá (C) C(s)+ O2(g)⟶ CO2(g) 393.5 0,002541 Methane (CH4) CH4(g) + 2O2(g) ⟶ CO2(g) + 2H2O(l) 890.8 0,001122 Ethanol (C2H5OH) C2H5OH(l) + 3O2(g) ⟶ 2CO2(g) +  3H2O(l) 1366.8 0,001463 Isooctane (C8H18) C8H18(l) + 12,5O2(g) ⟶ 8CO2(g) +  9H2O(l) 5461.0 0,001465 Hệ số phát thải của CH4 là thấp nhất, của C là cao nhất | 1 |
 | 5.2 | Muốn giảm phát thải CO2 vào khí quyển (để ngăn ngừa hiệu ứng nóng lên toàn cầu) thì cần phải giảm tiêu thụ nhiên liệu hóa thạch, tăng cường sử dụng các nguồn năng lượng khác ít carbon hơn để thay thế. | 1 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-Truong-Loc-Ninh-BINH-PHUOC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-Truong-Loc-Ninh-BINH-PHUOC-giasu.ai.vn.docx)
 

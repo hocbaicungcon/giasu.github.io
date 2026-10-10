@@ -14,7 +14,7 @@ grade: 12
 
 Đề thi thử tốt nghiệp THPT môn hóa THPT Phúc Trạch Hà Tĩnh lần 1
 
-O2 Education gửi các thầy cô link download đề thi và đáp án
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi và đáp án
 
 Các thầy cô có thể xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 
@@ -38,7 +38,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 23 phương pháp giải bài tập môn hóa học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-O2 Education gửi các thầy cô link download đề thi và đáp án
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi và đáp án
 
 - [Phuc-Trach-Ha-Tinh-Lan-1](/assets/docs/Phuc-Trach-Ha-Tinh-Lan-1.docx)
 

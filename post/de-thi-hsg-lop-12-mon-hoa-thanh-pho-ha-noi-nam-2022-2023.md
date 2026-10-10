@@ -99,7 +99,7 @@ Xác định công thức của X.
 
 # Xem thêm đề thi HSG
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HN-2022De-chinh-thuc-5](/assets/docs/HN-2022De-chinh-thuc-5.docx)[](/assets/docs/HN-2022De-chinh-thuc-5.docx)
 - [HN-2022HDC_De-chinh-thuc](/assets/docs/HN-2022HDC_De-chinh-thuc.docx)

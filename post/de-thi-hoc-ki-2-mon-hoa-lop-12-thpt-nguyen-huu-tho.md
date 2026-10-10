@@ -217,7 +217,7 @@ Chọn phát biểu đúng?
 
 ———– HẾT ———-
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa 12 – Nguyen Huu Tho – da TN](/assets/docs/Hoa-12-Nguyen-Huu-Tho-da-TN.docx)
 - [Hoa 12 – Nguyen Huu Tho – da XH](/assets/docs/Hoa-12-Nguyen-Huu-Tho-da-XH.doc)

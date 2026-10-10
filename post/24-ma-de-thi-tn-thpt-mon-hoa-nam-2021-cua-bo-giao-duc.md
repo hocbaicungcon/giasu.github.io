@@ -14,7 +14,7 @@ grade: 12
 
 ![Ảnh 24 mã đề thi TN THPT môn hóa năm 2021 của bộ giáo dục](assets/images/24-ma-de-thi-tn-thpt-mon-hoa-nam-2021-cua-bo-giao-duc-Anh-24-ma-de.png)
 
-O2 Education gửi các thầy cô và các em link download ảnh 24 mã đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô và các em link download ảnh 24 mã đề thi
 
 - [ĐH.2021.224 ĐỀ THI](/assets/docs/DH.2021.254-DE-THI.pdf)
 - [ĐH.2021.223 ĐỀ THI](/assets/docs/DH.2021.253-DE-THI.pdf)

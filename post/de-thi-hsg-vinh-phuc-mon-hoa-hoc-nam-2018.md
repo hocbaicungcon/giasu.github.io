@@ -134,7 +134,7 @@ Hòa tan hết m gam hỗn hợp rắn A gồm Mg, Cu(NO3)2, Fe, FeCO3 bằng du
 
  
 
-O2 Education gửi các thầy cô link download file word đề và đáp án đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề và đáp án đề thi
 
 - [DE HSG VINH PHUC 20172018](/assets/docs/DE-HSG-VINH-PHUC-20172018.docx)
 

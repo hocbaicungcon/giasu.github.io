@@ -646,7 +646,7 @@ A. 17,32%. B. 17,25%.  C. 16,42%. D. 15,84%.
 
  
 
-O2 Education gửi các thầy cô link download đề bài
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề bài
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/assets/docs/Tong-hop-bai-tap-huu-co-hay-va-kho-co-loi-giai-chi-tiet.docx)
 

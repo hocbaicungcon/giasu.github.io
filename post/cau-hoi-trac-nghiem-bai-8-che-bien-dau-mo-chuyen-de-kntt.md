@@ -345,7 +345,7 @@ Thể tích CO2 thải ra không khí là: 70,234.0,082.300,3 = 1729,48 lít.
 Nhiệt tạo thành khi đốt cháy 1 kg xăng là: 8,3612.5337,8 = 44630,41336 kJ.
 Lượng nhiệt thải ra khí quyển là: 8926,08 kJ. Þ đáp án D.
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [33.-Bai-8-Che-bien-dau-mo-Hoa-Truong.OK_](/assets/docs/33.-Bai-8-Che-bien-dau-mo-Hoa-Truong.OK_.docx)
 

@@ -149,7 +149,7 @@ Họ, tên thí sinh: ………………………………………………….
 
 Chữ ký của cán bộ coi thi 1: ………………………………; Chữ ký của cán bộ coi thi 2: ……………………………
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Nguyen-Du-Dak-Lak-De](/assets/docs/Nguyen-Du-Dak-Lak-De.doc)
 - [Nguyen-Du-Dak-Lak-DA](/assets/docs/Nguyen-Du-Dak-Lak-DA.docx)

@@ -105,7 +105,7 @@ Một bình gas (khí hóa lỏng) chứa hỗn hợp propane và butane với t
 1) Lập công thức phân tử của Ethanol, biết kết quả phân tích nguyên tố của Ethanol có 52,174%C; 34,783%O về khối lượng; còn lại là H và từ phổ khối lượng của ethanol, người ta xác định được ion phân tử [C2H6O+] có giá trị m/z bằng 46.
              2) Hình ảnh phổ hồng ngoại IR của ethanol với các tín hiệu được cho như sau:
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-11-Nghe-An-De-HDC](/assets/docs/2023-2024-HSG-11-Nghe-An-De-HDC-giasu.ai.vn.docx)
 

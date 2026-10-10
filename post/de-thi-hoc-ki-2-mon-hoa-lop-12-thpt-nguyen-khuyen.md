@@ -179,7 +179,7 @@ thu được m gam kim loại và hỗn hợp khí có tỉ khối so với H2 l
 2,24 lít khí H2 (đktc) và 1,5 gam chất rắn không tan. Tính a ?( 0,5 đ)
 
 **====HẾT====
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa 12 – Nguyen Khuyen – da](/assets/docs/Hoa-12-Nguyen-Khuyen-da.docx)
 - [Hoa 12 – Nguyen Khuyen – de](/assets/docs/Hoa-12-Nguyen-Khuyen-de.doc)

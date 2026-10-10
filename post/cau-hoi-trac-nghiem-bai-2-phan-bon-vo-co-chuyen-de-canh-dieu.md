@@ -382,7 +382,7 @@ a = 300; b = 325/3; c = 4500/23
 
 a +b + c 604
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [83.-Bai-2-Phan-bon-vo-co-Ha-Tran.ok_](/assets/docs/83.-Bai-2-Phan-bon-vo-co-Ha-Tran.ok_.docx)
 

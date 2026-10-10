@@ -177,7 +177,7 @@ Một số dạng bài tập thường dùng bảo toàn điện tích là :
 
  
 
-O2 Education gửi các thầy cô link download file pdf đầy đủ
+GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
 - [PP4 – BẢO TOÀN ĐIỆN TÍCH](/assets/docs/PP4-BAO-TOAN-DIEN-TICH.pdf)
 

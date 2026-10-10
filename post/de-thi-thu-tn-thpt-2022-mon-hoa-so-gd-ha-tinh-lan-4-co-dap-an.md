@@ -268,7 +268,7 @@ A. 26%.       B. 22%.       C. 52%.         D. 38%.
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Sở GDĐT Hà Tĩnh (Lần 4)](/assets/docs/So-GDDT-Ha-Tinh-Lan-4.docx)
 

@@ -14,7 +14,7 @@ tags:
 grade: 12
 ---
 
-O2 Education xin giới thiệu Bộ đề thi thử Văn tác phẩm TÂY TIẾN có đáp án gồm hơn 30 đề thi thử từ các trường trên cả nước.
+GIA SƯ THÔNG MINH xin giới thiệu Bộ đề thi thử Văn tác phẩm TÂY TIẾN có đáp án gồm hơn 30 đề thi thử từ các trường trên cả nước.
 
 Mời Thầy Cô và các em tham khảo thêm:
 

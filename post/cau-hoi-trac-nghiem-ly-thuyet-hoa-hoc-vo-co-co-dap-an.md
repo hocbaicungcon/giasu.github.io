@@ -59,7 +59,7 @@ Chuyên đề 15: Nitơ – photpho
 
 Chuyên đề 16:  Cacbon – silic
 
-O2 Education gửi các thầy cô link download các chuyên đề đã có đáp án in đỏ
+GIA SƯ THÔNG MINH gửi các thầy cô link download các chuyên đề đã có đáp án in đỏ
 
 - [Chuyên đề 1 – CẤU TẠO NGUYÊN TỬ VÀ VỊ TRÍ CỦA KIM LOẠI TRONG BTH](https://o2.edu.vn/wp-content/uploads/2020/02/CĐ-1-CẤU-TẠO-NGUYÊN-TỬ-VÀ-VỊ-TRÍ-CỦA-KIM-LOẠI-TRONG-BTH.pdf)
 

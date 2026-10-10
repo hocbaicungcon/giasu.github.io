@@ -128,7 +128,7 @@ b) HCHO + AgNO3 + NH3 + H2O    (NH4)2CO3 + Ag + NH4NO3
 |                   Câu IV. 1 2,0 điểm | NaI + H2SO4    H2S + I2 + Na2SO4 + H2O     8NaI + 5H2SO4    H2S + 4I2 + 4Na2SO4 + 4H2O FeSO4 + NaNO3 +  NaHSO4   Fe2(SO4)3 + NO + Na2SO4 + H2O 6FeSO4 + 2NaNO3 +  NaHSO4   3Fe2(SO4)3 + 2NO + Na2SO4 + H2O Kết hợp đại số: 6FeSO4 + 2NaNO3 +  aNaHSO4   3Fe2(SO4)3 + 2NO + bNa2SO4 + cH2O BTNT Na: 2 + a = 2b               SO4: 6 + a = 9 + b                H:    a = 2c  a = 8;  b = 5;  c = 4 6FeSO4 + 2NaNO3 +  8NaHSO4   3Fe2(SO4)3 + 2NO + 5Na2SO4 + 4H2O HCHO + AgNO3 + NH3 + H2O    (NH4)2CO3 + Ag + NH4NO3       HCHO + 4AgNO3 + 6NH3 + 2H2O    (NH4)2CO3 + 4Ag + 2NH4NO3 KClO4 + HCl   Cl2 + KCl + H2O         KClO4 + 8HCl   4Cl2 + KCl + 4H2O |     0,5             0,5                 0,5         0,5 |
 | Câu IV. 2 2,0 điểm |   Muốn biết lái xe có vi phạm luật hay không cần phải tính hàm lượng ethanol trong máu người lái xe, sau đó so sánh với tiêu chuẩn cho phép để kết luận. a) Phương trình hóa học của phản ứng chuẩn độ: 3CH3CH2OH+K2Cr2O7+4H2SO4→3CH3CHO+Cr2(SO4)3+K2SO4+7H2O b) Theo phương trình hóa học có: Số mol ethanol = 3nK2Cr2O7=3 × 0,01 × 0,02 = 0,0006 mol.  C% (ethanol) = 46.0,000625.100%46.0,000625.100%= 0,11% > 0,02% Vậy người lái xe phạm luật.   |     0,5     0,5     0,5     0,5 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC-giasu.ai.vn.docx)
 

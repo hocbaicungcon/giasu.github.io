@@ -1,6 +1,6 @@
 ---
 title: 49 bài toán lớp 4 thử thách trí thông minh
-description: O2 Education xin giới thiệu 54 bài toán lớp 4, các dạng toán đố, thử
+description: GIA SƯ THÔNG MINH xin giới thiệu 54 bài toán lớp 4, các dạng toán đố, thử
   thách trí thông minh, toán suy luận dành cho HSG lớp 4. Các bài toán có lời giải
   được
 category: Toán học
@@ -16,7 +16,7 @@ grade: 4
 
 # 49 BÀI TOÁN LỚP 4
 
-O2 Education xin giới thiệu 54 bài toán lớp 4, các dạng toán đố, thử thách trí thông minh, toán suy luận dành cho HSG lớp 4. Các bài toán có lời giải được chúng tôi sưu tầm từ nhiều nguồn khác nhau.
+GIA SƯ THÔNG MINH xin giới thiệu 54 bài toán lớp 4, các dạng toán đố, thử thách trí thông minh, toán suy luận dành cho HSG lớp 4. Các bài toán có lời giải được chúng tôi sưu tầm từ nhiều nguồn khác nhau.
 
 **Bài 1 : GIỎI CẢ HAI MÔN
 Lớp 4A có 42 học sinh. Trong đó có 25 HS giỏi toán, 23 HS giỏi Tiếng Việt và hai HS không giỏi môn nào. Hỏi có bao nhiêu HS giỏi cả hai môn?

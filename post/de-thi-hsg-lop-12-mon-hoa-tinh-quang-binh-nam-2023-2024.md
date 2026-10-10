@@ -122,7 +122,7 @@ Tính phần trăm về khối lượng của Z trong hỗn hợp E, biết các
 | 1 |  *Các PTHH xảy ra:H2N-[CH2]4-CH(NH2)-COOH + 2HCl → ClH3N-[CH2]4-CH(NH3Cl)-COOHHO-C6H4-CH2-CH(NH2)-COOH + HCl → HO-C6H4-CH2-CH(NH3Cl)-COOHThêm tiếp dung dịch NaOH thì có phản ứng:ClH3N-[CH2]4-CH(NH3Cl)-COOH + 3NaOH→ H2N-[CH2]4-CH(NH2)-COONa + 2NaCl + 3H2OHO-C6H4-CH2-CH(NH3Cl)-COOH + 3NaOH→ NaO-C6H4-CH2-CH(NH2)-COONa + NaCl + 3H2O* Tính giá trị của m:Ta có nHCl = 0,25 mol; nNaOH = 0,5 mol.Gọi số mol của Lys, Tyr lần lượt là x, y.mhh = 146x + 181y = 23,65 gam.nHCl = 2x + y = 0,25Giải hệ phương trình ta được: x = 0,1; y = 0,05.Ta có:= nNaOH phản ứng = 3x + 3y = 0,45 mol.BTKL: mhh + mHCl + mNaOH = mchất rắn +=> 23,65 + 0,25.36,5 + 0,5.40 = m + 0,45.18 => m = 44,675 gam. | 0,1250,1250,1250,125 |
 | 2 | – TN1: nX == 0,15 mol nY + nZ = 0,5 – 0,15 = 0,35 mol.– TN2: nancol Y thu được = nY + nZ = 0,35 mol MY =Y phù hợp là C3H5(OH)3Số nhóm este trong Z là m.nNaOH = 0,15 + m.nZ = 0,65; với nZ < 0,35:m = 3 => nZ ==> nY = 0,18 > nX => loại.m = 2 => nZ = 0,25 => nY = 0,1 < nX => thỏa mãn.m = 1 => nZ = 0,5 => loại.– TN3: Vì ở TN 3 dùng 1 mol nên ta quy về 0,5 mol cho giống các TN còn lại.CaHbCOOH: 0,15 mol; C3H5(OH)3: 0,1 mol; (CaHbCOO)2C3H5OH: 0,25 mol.Z là: (C3H5COO)2C3H5OH: 0,25 mol.Khối lượng hỗn hợp E: mE = 0,15.86 + 0,1.92 + 0,25.228 = 79,1 gam.%mZ == 72,06%. | 0,1250,1250,1250,125 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-12-Quang-Binh-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-12-Quang-Binh-HDC-giasu.ai.vn.pdf)
 

@@ -12,7 +12,7 @@ tags:
 grade: 12
 ---
 
-Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 ## I. Tư duy dồn chất và xếp hình trong bài toán este và các hợp chất chứa C H O
 
@@ -586,7 +586,7 @@ Số nhận định đúng là
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 11. A | 12. D | 13. B | 14. B | 15. B | 16. B | 17. C | 18. A | 19. C | 20. A |
 
-Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 Mời thầy cô và các em xem tiếp
 

@@ -344,7 +344,7 @@ Nhiệt lượng tỏa ra khi đốt cháy bình gas 12 kg:
 
 Số ngày sử dụng:  (ngày).
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_](/assets/docs/61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_.docx)
 

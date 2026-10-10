@@ -25,7 +25,7 @@ Bạn có thể chọn kích thước và màu sắc tùy ý, trong hướng d�
 
 ![Hướng dẫn công cụ Node Tool trong Affinity Designer 1](assets/images/huong-dan-cong-cu-node-tool-trong-affinity-designer-create-rectangle-shape-in-affinity.webp)
 
-Nếu bạn muốn tự vẽ một hình chữ nhật, bạn có thể sử dụng công cụ [Pen Tool](/bai-viet/cach-su-dung-cong-cu-pen-tool-trong-affinity-designer.html) trong Affinity Designer mà O2 Education đã có bài hướng dẫn.
+Nếu bạn muốn tự vẽ một hình chữ nhật, bạn có thể sử dụng công cụ [Pen Tool](/bai-viet/cach-su-dung-cong-cu-pen-tool-trong-affinity-designer.html) trong Affinity Designer mà GIA SƯ THÔNG MINH đã có bài hướng dẫn.
 
 Để sử dụng **NodeTool**, các Shape cần được chuyển đổi thành Curve (đường). Bạn thực hiện việc này bằng cách vào menu **Layer> Convert to Curves** hoặc nhấp vào nút **Convert to Curves** trên thanh công cụ trên cùng hoặc bấm chuột phải vào hình chữ nhật và chọn **Convert to Curves**.
 

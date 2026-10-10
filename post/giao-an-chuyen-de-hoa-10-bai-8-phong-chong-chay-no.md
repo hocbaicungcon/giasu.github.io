@@ -451,7 +451,7 @@ Các nhóm làm tập san tuyên truyền về phòng chống cháy nổ gồm c
 
 **4.4. Tổ chức thực hiện:** Giao cho các nhóm học sinh hoàn thành nhiệm vụ về nhà.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [Tiet_89_-Phong-chong-chay-no](/assets/docs/Tiet_89_-Phong-chong-chay-no.docx)
 

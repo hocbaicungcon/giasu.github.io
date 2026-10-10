@@ -294,7 +294,7 @@ CHUYÊN ĐỀ HỌC TẬP
 |  | – Sử dụng được kết quả tính toán để thấy được hình học phân tử, xu hướng thay đổi độ dài, |
 |  | góc liên kết và năng lượng phân tử trong dãy các chất (cùng nhóm, chu kì, dãy đồng đẳng,…). |
 
-O2 Education gửi các thầy cô và các em link download file đầy đủ
+GIA SƯ THÔNG MINH gửi các thầy cô và các em link download file đầy đủ
 
 - [File WORD: chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc](/assets/docs/chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc.docx)
 - [File PDF: chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc](/assets/docs/chuong-trinh-giao-duc-pho-thong-mon-hoa-hoc.pdf)

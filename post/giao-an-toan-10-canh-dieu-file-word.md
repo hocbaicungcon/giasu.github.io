@@ -1,6 +1,6 @@
 ---
 title: Giáo án Toán 10 Cánh Diều file Word
-description: Cùng với bộ Giáo án Toán 10 Kết Nối Tri Thức, O2 Education xin gửi tới
+description: Cùng với bộ Giáo án Toán 10 Kết Nối Tri Thức, GIA SƯ THÔNG MINH xin gửi tới
   thầy cô 2 bộ Giáo án Toán 10 Cánh Diều file word.
 category: Toán học
 type: Bài học
@@ -13,7 +13,7 @@ tags:
 grade: 10
 ---
 
-Cùng với bộ [Giáo án Toán 10 Kết Nối Tri Thức](/bai-viet/giao-an-toan-10-ket-noi-tri-thuc.html), O2 Education xin gửi tới thầy cô 2 bộ Giáo án Toán 10 Cánh Diều file word.
+Cùng với bộ [Giáo án Toán 10 Kết Nối Tri Thức](/bai-viet/giao-an-toan-10-ket-noi-tri-thuc.html), GIA SƯ THÔNG MINH xin gửi tới thầy cô 2 bộ Giáo án Toán 10 Cánh Diều file word.
 
 ## Giáo án Toán 10 Cánh Diều file Word Bộ 1
 

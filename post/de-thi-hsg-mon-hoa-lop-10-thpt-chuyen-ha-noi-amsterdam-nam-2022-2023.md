@@ -441,7 +441,7 @@ c) 6,6-dimethylfulvene có tính acid yếu (pKa » 20)
 | c) 6,6-dimethylfulvene phân li nguyên tử H trong nhóm methyl tạo thành anion được giải tỏa bởi hệ liên hợp, tạo thành hệ thơm | 0,25 |
 | 4. Phản ứng thế electrophile xảy ra ở C1 của azulene, cation trung gian được giải tỏa bởi hiệu ứng liên hợp và tạo thành vòng thơm cycloheptatrienyl   Phản ứng thế nucleophile xảy ra ở C4 của azulene, anion trung gian được giải tỏa bởi hiệu ứng liên hợp và tạo thành vòng thơm cyclopentadienyl |           0,25         0,25 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [DE-DE-XUAT-HOA-10-o2.edu_.vn_](/assets/docs/DE-DE-XUAT-HOA-10-giasu.ai.vn.docx)
 

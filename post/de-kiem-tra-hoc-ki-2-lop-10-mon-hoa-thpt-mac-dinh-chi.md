@@ -94,7 +94,7 @@ Cho: H=1; O=16; S=32; Cu=64; Al=27.
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HOA 10-Mac Dinh Chi-da](/assets/docs/HOA-10-Mac-Dinh-Chi-da.doc)
 - [HOA 10-Mac Dinh Chi-de](/assets/docs/HOA-10-Mac-Dinh-Chi-de.doc)

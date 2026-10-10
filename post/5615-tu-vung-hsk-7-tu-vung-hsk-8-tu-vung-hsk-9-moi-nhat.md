@@ -1,7 +1,7 @@
 ---
 title: 5615 từ vựng HSK 7, từ vựng HSK 8, từ vựng HSK 9 mới nhất
 description: Từ khi HSK chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng
-  từ vựng tăng lên rất nhiều. Hãy cùng O2 Education tham khảo 1000+ từ vựng HSK 7,
+  từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo 1000+ từ vựng HSK 7,
   từ
 category: Ngoại ngữ
 type: Bài học
@@ -13,7 +13,7 @@ tags:
 - Từ vựng
 ---
 
-Từ khi [HSK](/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html) chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng từ vựng tăng lên rất nhiều. Hãy cùng O2 Education tham khảo **1000+ từ vựng HSK 7, từ vựng HSK 8, từ vựng HSK 9 mới nhất trong tổng số khoảng 5615 từ vựng!**
+Từ khi [HSK](/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html) chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo **1000+ từ vựng HSK 7, từ vựng HSK 8, từ vựng HSK 9 mới nhất trong tổng số khoảng 5615 từ vựng!**
 
 Mời bạn tham khảo thêm:
 

@@ -1,6 +1,6 @@
 ---
 title: Đề khảo sát cuối năm lớp 3 môn Toán
-description: O2 Education xin giới thiệu với Quý thầy cô và các em học sinh 6 đề khảo
+description: GIA SƯ THÔNG MINH xin giới thiệu với Quý thầy cô và các em học sinh 6 đề khảo
   sát cuối năm lớp 3 môn Toán có đáp án chi tiết.
 category: Toán học
 type: Bài tập
@@ -13,7 +13,7 @@ tags:
 grade: 3
 ---
 
-O2 Education xin giới thiệu với Quý thầy cô và các em học sinh 6 đề khảo sát cuối năm lớp 3 môn Toán có đáp án chi tiết.
+GIA SƯ THÔNG MINH xin giới thiệu với Quý thầy cô và các em học sinh 6 đề khảo sát cuối năm lớp 3 môn Toán có đáp án chi tiết.
 
 ## 1. Đề khảo sát cuối năm lớp 3 môn Toán – Đề số 1
 

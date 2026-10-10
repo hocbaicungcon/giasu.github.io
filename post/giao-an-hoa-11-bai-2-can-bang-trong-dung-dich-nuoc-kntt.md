@@ -183,7 +183,7 @@ Nếu thấy pH của nước tiểu giảm xuống dưới 4,5 thì có nghĩa 
 
 **d) Tổ chức thực hiện:** GV hướng dẫn HS về nhà làm và hướng dẫn HS tìm nguồn tài liệu tham khảo qua internet, thư viện….
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [2-KNTT-BAI-2-CAN-BANG-TRONG-DUNG-DICH-NUOC-Xuanchat-Dang](/assets/docs/2-KNTT-BAI-2-CAN-BANG-TRONG-DUNG-DICH-NUOC-Xuanchat-Dang.docx)
 - [B02.-Can-bang-trong-dung-dich-nuoc.-Ha-Giang](/assets/docs/B02.-Can-bang-trong-dung-dich-nuoc.-Ha-Giang.docx)

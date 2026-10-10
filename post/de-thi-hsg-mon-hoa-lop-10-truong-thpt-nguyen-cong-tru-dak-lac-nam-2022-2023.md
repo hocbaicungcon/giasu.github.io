@@ -102,7 +102,7 @@ HCl (k) + aq  HCl (dd)                            �
 - *(4 điểm)
 **4.1.** Cho khí H2 vào bình chân không dung tích 4,0 lít sao cho áp suất trong bình bằng 0,82 atm ở 5270C. Sau đó cho thêm 0,2 mol khí HI vào bình. Cân bằng sau được thiết lập:
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa_10_THPT-Nguyen-Cong-Tru](/assets/docs/Hoa_10_THPT-Nguyen-Cong-Tru.docx)
 

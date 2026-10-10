@@ -126,7 +126,7 @@ Cán bộ coi thi không giải thích gì thêm!
 Họ và tên thí sinh: ……………………………….. Số báo danh: …………….
 Chữ ký giám thị coi thi số 1: Chữ ký giám thị coi thi số 2:
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa-11-DA-thi-HSG-cap-cum-Ung-hoa-My-Duc-o2.edu_.vn_](/assets/docs/Hoa-11-DA-thi-HSG-cap-cum-Ung-hoa-My-Duc-giasu.ai.vn.pdf)
 - [Hoa-11-de-thi-HSG-cap-cum-Ung-hoa-My-Duc-o2.edu_.vn_](/assets/docs/Hoa-11-de-thi-HSG-cap-cum-Ung-hoa-My-Duc-giasu.ai.vn.pdf)

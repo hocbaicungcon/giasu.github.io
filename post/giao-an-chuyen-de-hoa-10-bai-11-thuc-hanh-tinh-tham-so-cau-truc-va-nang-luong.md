@@ -419,7 +419,7 @@ Mức 4: Đạt được 3 tiêu chí trở xuống.
 | 4. Quản lí thời gian |   |
 | 5. Điều chỉnh hợp lí, kịp thời (Nội dung, cách trình bày, tương tác, thời gian) |   |
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [Tiet-34_-BAI-11-THUC-HANHTINH-THAM-SO-CAU-TRUC-VA-NANG-LUONG](/assets/docs/Tiet-34_-BAI-11-THUC-HANHTINH-THAM-SO-CAU-TRUC-VA-NANG-LUONG.docx)
 - [BAI-TAP-CHUYEN-DE-TINH-THAM-SO-VA-CAU-TRUC-NANG-LUONG](/assets/docs/BAI-TAP-CHUYEN-DE-TINH-THAM-SO-VA-CAU-TRUC-NANG-LUONG.docx)

@@ -80,7 +80,7 @@ Học sinh được phép sử dụng bảng tuần hoàn các nguyên tố hóa
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [ĐỀ HSG TP HCM 17.3.2021](/assets/docs/DE-HSG-TP-HCM-17.3.2021.docx)
 

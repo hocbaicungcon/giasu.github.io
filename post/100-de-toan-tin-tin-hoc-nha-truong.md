@@ -1,6 +1,6 @@
 ---
 title: 100 đề Toán Tin (Tin học & Nhà trường)
-description: O2 Education xin gửi tới bạn đọc TUYỂN TẬP 100 ĐỀ TOÁN TIN (100 đề Toán
+description: GIA SƯ THÔNG MINH xin gửi tới bạn đọc TUYỂN TẬP 100 ĐỀ TOÁN TIN (100 đề Toán
   Tin được trích từ tạp chí Tin học & Nhà trường). Bản PDF và Word, mời các bạn tải
 category: CNTT
 type: Bài tập
@@ -12,7 +12,7 @@ tags:
 - Tin học nhà trường
 ---
 
-O2 Education xin gửi tới bạn đọc TUYỂN TẬP 100 ĐỀ TOÁN TIN (100 đề Toán Tin được trích từ tạp chí Tin học & Nhà trường). Bản PDF và Word, mời các bạn tải ở cuối bài viết
+GIA SƯ THÔNG MINH xin gửi tới bạn đọc TUYỂN TẬP 100 ĐỀ TOÁN TIN (100 đề Toán Tin được trích từ tạp chí Tin học & Nhà trường). Bản PDF và Word, mời các bạn tải ở cuối bài viết
 
 ## Phần 1: ĐỀ BÀI 100 đề Toán Tin (Tin học & Nhà trường)
 

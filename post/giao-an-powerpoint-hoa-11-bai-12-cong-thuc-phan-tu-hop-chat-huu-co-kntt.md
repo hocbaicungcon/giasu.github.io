@@ -125,7 +125,7 @@ trong phân tử.
 
 ……………………………………………………………………………………………………………………………………………………………..……………………………………………………………………………
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [Bai-12_CTPT-Hop-chat-huu-co-_Pham-Thi-Khanh-Phuong](/assets/docs/Bai-12_CTPT-Hop-chat-huu-co-_Pham-Thi-Khanh-Phuong.docx)
 

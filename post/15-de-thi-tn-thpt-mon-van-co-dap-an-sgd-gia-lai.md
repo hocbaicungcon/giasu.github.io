@@ -1,6 +1,6 @@
 ---
 title: 15 đề thi TN THPT môn Văn có đáp án SGD Gia Lai
-description: O2 Education xin gửi tới Quý thầy cô và các em học sinh tham khảo 15
+description: GIA SƯ THÔNG MINH xin gửi tới Quý thầy cô và các em học sinh tham khảo 15
   đề thi TN THPT môn Văn có đáp án của SGD Gia Lai. Quý thầy cô tải file đề và đáp
   án tại
 category: Ngữ văn
@@ -13,7 +13,7 @@ tags:
 grade: 12
 ---
 
-O2 Education xin gửi tới Quý thầy cô và các em học sinh tham khảo **15 đề thi TN THPT môn Văn có đáp án của SGD Gia Lai.** Quý thầy cô tải file đề và đáp án tại đây:
+GIA SƯ THÔNG MINH xin gửi tới Quý thầy cô và các em học sinh tham khảo **15 đề thi TN THPT môn Văn có đáp án của SGD Gia Lai.** Quý thầy cô tải file đề và đáp án tại đây:
 
 - **[PDF]**  [15 DE NGU VAN SGD Gia Lai.pdf](/assets/docs/15-DE-NGU-VAN-SGD-Gia-Lai.pdf)
 

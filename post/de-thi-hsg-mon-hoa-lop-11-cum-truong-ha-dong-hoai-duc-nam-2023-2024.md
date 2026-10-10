@@ -151,7 +151,7 @@ Họ tên thí sinh:……………………………………………..Số b�
 
 Họ tên và chữ kí của cán bộ coi thi số 1:                   Họ tên và chữ kí của cán bộ coi thi số 2:
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [3.De-thi-cum-HD-HD-2024-Hoa-11](/assets/docs/3.De-thi-cum-HD-HD-2024-Hoa-11-giasu.ai.vn.docx)
 - [3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD](/assets/docs/3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD-giasu.ai.vn.docx)

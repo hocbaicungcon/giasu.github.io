@@ -269,7 +269,7 @@ Số nhận xét **đúng** là
 
 **Vậy:** a + b + c = 604 kg.
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [26.-Bai-1CDHT-KNTT-Gioi-thieu-chung-ve-phan-bon-Thanh-Mike.ok_](/assets/docs/26.-Bai-1CDHT-KNTT-Gioi-thieu-chung-ve-phan-bon-Thanh-Mike.ok_.docx)
 

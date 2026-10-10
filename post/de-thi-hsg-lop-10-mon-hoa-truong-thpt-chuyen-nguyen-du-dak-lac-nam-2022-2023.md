@@ -151,7 +151,7 @@ K1 = 1,0 ´ 10-7 và K2 = 1,3 ´ 10-13.
 
      **a.** Thiết lập sơ đồ pin và viết phương trình phản ứng khi pin hoạt động.
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [DAP-AN-HOA-10](/assets/docs/DAP-AN-HOA-10.doc)
 - [DAP-AN-HOA-10](/assets/docs/DAP-AN-HOA-10.pdf)

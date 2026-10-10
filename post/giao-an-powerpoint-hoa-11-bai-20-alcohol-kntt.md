@@ -190,7 +190,7 @@ BÀI TẬP CỦNG CỐ
 
 1.Hoàn thành sơ đồ phản ứng sau:
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B20-ALCOHOL-NGUYEN-THI-THAI-HANG](/assets/docs/B20-ALCOHOL-NGUYEN-THI-THAI-HANG.docx)
 

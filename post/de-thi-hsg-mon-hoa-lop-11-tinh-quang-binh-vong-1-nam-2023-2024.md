@@ -86,7 +86,7 @@ CH4(g, 298K) + 2O2(g, 298K) → CO2(g, 498K) + 2H2O(g, 498K)
 | --- |
 
 **——————–HẾT———————–
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Quang-Binh-DE-HOA-v1-11-2024-o2.edu_.vn_](/assets/docs/Quang-Binh-DE-HOA-v1-11-2024-giasu.ai.vn.docx)
 - [Quang-Binh-HDC-HOA-v1-11-2024-o2.edu_.vn_](/assets/docs/Quang-Binh-HDC-HOA-v1-11-2024-giasu.ai.vn.docx)

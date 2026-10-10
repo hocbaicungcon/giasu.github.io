@@ -36,7 +36,7 @@ b) Cho toàn bộ khí SO2 **trên vào** 60 **gam dung dịch NaOH** 10% **thu 
 **Cho: Fe=56, Al=27, Zn=65, Cu=64, Na=23, H=1, S=32, O=16, He=4
 —- HẾT —
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [hoa 10-NTMK-da](/assets/docs/hoa-10-NTMK-da.docx)
 - [hoa 10-NTMK-de](/assets/docs/hoa-10-NTMK-de.doc)

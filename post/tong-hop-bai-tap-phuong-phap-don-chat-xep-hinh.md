@@ -11,7 +11,7 @@ tags:
 grade: 12
 ---
 
-Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 Các thầy cô và các em có thể xem lại lý thuyết về phương pháp dồn chất xếp hình tại
 
@@ -1209,7 +1209,7 @@ Mời thầy cô và các em xem lại lý thuyết và các ví dụ minh họa
 
 [Tổng hợp kĩ thuật phương pháp giải bài tập peptit đầy đủ chi tiết](/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html)
 
-Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file word liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 ←[Hỗn hợp X gồm ba este no, đơn chức, mạch hở. Đốt cháy hoàn toàn 7,68 gam X thu được 0,32 mol CO2](/bai-viet/hon-hop-x-gom-ba-este-no-don-chuc-mach-ho-dot-chay-hoan-toan-768-gam-x-thu-duoc-032-mol-co2.html)
 [Hỗn hợp E chứa 2 este đơn chức, mạch hở X, Y (đều được tạo từ các axit no)](/bai-viet/hon-hop-e-chua-2-este-don-chuc-mach-ho-x-y-deu-duoc-tao-tu-cac-axit-no.html)→

@@ -16,9 +16,9 @@ tags:
 SKKN Một số biện pháp xây dựng góc thư viện thân thiện góp phần hình thành thói quen đọc sách cho trẻ ngay từ nhỏ
 
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án O2 Education](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
 
 ĐIỀU KIỆN HOÀN CẢNH TẠO RA SÁNG KIẾN:
 Đã từ lâu, rất nhiều nhà khoa học và các nghiên cứu đã chỉ ra rằng “Đọc
@@ -346,7 +346,7 @@ cho trẻ thích sách truyện nhiều hơn và trẻ có kĩ năng, trẻ đư
 các kiến thức. Như vậy trẻ sẽ nhớ rất lâu, trẻ dần hình thành thói quen đọc
 sách, yêu thích sách, và có kĩ năng với các quyển sách trẻ được trải nghiệm…
 
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN môn hóa học cấp THPT](/bai-viet/tong-hop-skkn-mon-hoa-hoc-cap-thpt.html)
 

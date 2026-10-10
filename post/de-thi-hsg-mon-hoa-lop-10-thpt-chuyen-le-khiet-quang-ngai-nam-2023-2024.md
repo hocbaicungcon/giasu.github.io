@@ -25,7 +25,7 @@ grade: 10
 
 ![Đề thi hsg môn hóa lớp 10 THPT Chuyên Lê Khiết Quảng Ngãi năm 2023 2024 5](assets/images/de-thi-hsg-mon-hoa-lop-10-thpt-chuyen-le-khiet-quang-ngai-nam-2023-2024-image-7.png)
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

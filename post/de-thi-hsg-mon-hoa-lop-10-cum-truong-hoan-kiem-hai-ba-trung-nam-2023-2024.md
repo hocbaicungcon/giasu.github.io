@@ -148,7 +148,7 @@ trên với xăng thông thường.
 | Họ tên thí sinh: …………………………….…… | Số báo danh: …..……………………………….. |
 | --- | --- |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023HK-HBT_10_HDC-Hoa](/assets/docs/2023HK-HBT_10_HDC-Hoa-giasu.ai.vn.pdf)
 - [2023HK-HBT_10-Hoa](/assets/docs/2023HK-HBT_10-Hoa-giasu.ai.vn.pdf)

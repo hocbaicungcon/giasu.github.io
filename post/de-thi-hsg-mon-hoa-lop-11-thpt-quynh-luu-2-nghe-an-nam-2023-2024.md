@@ -144,7 +144,7 @@ Tính tổng khối lượng các muối khan thu được khi cô cạn dung d�
 | 0           +2              +4   Cu + H2SO4 → CuSO4 + H2O + SO2           0         +2   Chất khử: Cu Sự oxi hóa Cu → Cu + 2e x 1        +6      +4   Chất oxi hóa H2SO4 Sự khử S +2e → S x 1 0           +2       +4   Cu + 2H2SO4 → CuSO4 +2H2O + SO2   |       0,375đ |  |
 | Cách 1 sử dụng acid ít hơn và không gây ô nhiễm môi trường. | 0,25đ |  |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-11-Truong-Quynh-Luu-2-Nghe-An-File-De-HDC](/assets/docs/2023-2024-HSG-11-Truong-Quynh-Luu-2-Nghe-An-File-De-HDC.docx)
 

@@ -217,7 +217,7 @@ H2SO4 + 2KOH  K2SO4 + 2H2O
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa 10 – Chu Van An – da](/assets/docs/Hoa-10-Chu-Van-An-da.doc)
 - [Hoa 10 – Chu Van An – de](/assets/docs/Hoa-10-Chu-Van-An-de.doc)

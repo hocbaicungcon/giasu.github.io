@@ -1,6 +1,6 @@
 ---
 title: Đề Tiếng Anh SGD Nam Định 2023
-description: 'O2 Education xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 lớp 12 và
+description: 'GIA SƯ THÔNG MINH xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 lớp 12 và
   đáp án. Mời Thầy Cô và các em tham khảo thêm:'
 category: Tiếng Anh
 type: Bài tập
@@ -13,7 +13,7 @@ tags:
 grade: 12
 ---
 
-O2 Education xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 lớp 12 và đáp án. Mời Thầy Cô và các em tham khảo thêm:
+GIA SƯ THÔNG MINH xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 lớp 12 và đáp án. Mời Thầy Cô và các em tham khảo thêm:
 
 - [Đề tiếng Anh SGD Nam Định 2022](/bai-viet/de-tieng-anh-sgd-nam-dinh-2022.html)
 

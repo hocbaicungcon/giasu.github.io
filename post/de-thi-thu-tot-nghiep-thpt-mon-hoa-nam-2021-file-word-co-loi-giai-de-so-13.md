@@ -287,7 +287,7 @@ Polisaccarit: Tinh bột và xenlulozơ.
 
  
 
-O2 Education gửi các thầy cô và các em link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô và các em link download đề thi
 
 - [Đề thi thử TN THPT 2021 – Môn Hóa – Bộ đề theo mức độ – Đề 13 – File word có lời giải](/assets/docs/De-thi-thu-TN-THPT-2021-Mon-Hoa-Bo-de-theo-muc-do-De-13-File-word-co-loi-giai.doc)
 

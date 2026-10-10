@@ -19,7 +19,7 @@ grade: 11
 
 ![Đề thi hsg môn hóa lớp 11 tỉnh Bình Định năm 2023 2024 3](assets/images/de-thi-hsg-mon-hoa-lop-11-tinh-binh-dinh-nam-2023-2024-image-2.png)
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -61,7 +61,7 @@ Chữ kí của giám thị 1: ……………………………… Chữ kí c�
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HOA 11-HOASEN-DA](/assets/docs/HOA-11-HOASEN-DA.pdf)
 - [HOA 11-HOASEN-DE](/assets/docs/HOA-11-HOASEN-DE.doc)

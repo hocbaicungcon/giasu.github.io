@@ -140,7 +140,7 @@ Họ và tên thí sinh:……………………………………..Số báo da
 |  |  |  |
 
 ***Lưu ý:Thí sinh có thể giải nhiều cách, nếu đúng vẫn được điểm tối đa.
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2021-2022](/assets/docs/2021-2022.docx)
 

@@ -349,7 +349,7 @@ Số dãy chất thỏa mãncác thí nghiệm trên.
 | --- | --- | --- | --- | --- | --- | --- |
 | Đáp án | 5 | 840 | 0,25 | 44,3 | 1 | 75 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Vinh-Loc-HCM-De-Thi-HSG-Hoa-11-mau-2025-o2.edu_.vn_](/assets/docs/Vinh-Loc-HCM-De-Thi-HSG-Hoa-11-mau-2025-giasu.ai.vn.docx)
 

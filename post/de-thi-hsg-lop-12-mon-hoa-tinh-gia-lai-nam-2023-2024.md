@@ -101,7 +101,7 @@ Viết các phương trình phản ứng hóa học và tính % ancol bị oxi h
 
  **2**. (1,5 điểm). Hoàn thành chuỗi phản ứng sau (mỗi mũi tên ứng với một phương trình phản ứng hóa học, ghi rõ điều kiện nếu có):
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-12-Gia-Lai-File-De-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-12-Gia-Lai-File-De-HDC-giasu.ai.vn.docx)
 

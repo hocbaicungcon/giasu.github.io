@@ -135,7 +135,7 @@ PPCT hóa 11 KNTT có chuyên đề học tập
 |   | 69 | Ôn tập HK2 |
 |   | 70 | KIỂM TRA HK2 |
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [PPCT-HOA-11-KNTT-co-CD](/assets/docs/PPCT-HOA-11-KNTT-co-CD.docx)
 

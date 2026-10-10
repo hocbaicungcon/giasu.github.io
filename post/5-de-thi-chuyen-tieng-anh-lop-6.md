@@ -11,7 +11,7 @@ tags:
 grade: 6
 ---
 
-O2 Education xin giới thiệu Bộ 5 đề thi chuyên tiếng Anh vào lớp 6 để Quý phụ huynh và các em học sinh tham khảo.
+GIA SƯ THÔNG MINH xin giới thiệu Bộ 5 đề thi chuyên tiếng Anh vào lớp 6 để Quý phụ huynh và các em học sinh tham khảo.
 
 ## 1. Đề thi chuyên tiếng Anh lớp 6 số 1
 

@@ -62,7 +62,7 @@ Hằng số cân bằng KC của phản ứng ở nhiệt độ thí nghiệm kh
 
 a.. Hãy thiết lập  biểu thức liên quan giữa n, a và KC.
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa_10_THPT-Hai-Ba-Trung](/assets/docs/Hoa_10_THPT-Hai-Ba-Trung.docx)
 

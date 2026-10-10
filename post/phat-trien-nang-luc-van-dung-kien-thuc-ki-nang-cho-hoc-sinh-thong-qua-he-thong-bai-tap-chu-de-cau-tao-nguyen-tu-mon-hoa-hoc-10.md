@@ -397,11 +397,11 @@ cho HS những kiến thức nền tảng để tiếp cận có bản chất v�
 thuộc về chương trình học vô cơ, hữu cơ sau này.
 
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 Hoặc xem nhiều SKKN hơn tại: 
 
-[Tổng hợp SKKN luận văn luận án O2 Education](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+[Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
 
 [Tổng hợp SKKN môn hóa học cấp THPT](/bai-viet/tong-hop-skkn-mon-hoa-hoc-cap-thpt.html)
 

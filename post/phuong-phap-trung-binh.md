@@ -167,7 +167,7 @@ Theo giả thiết và bảo toàn electron, ta có :
 
  
 
-O2 Education gửi các thầy cô link download file pdf đầy đủ
+GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
 - [PP11 – TRUNG BÌNH](/assets/docs/PP11-TRUNG-BINH.pdf)
 

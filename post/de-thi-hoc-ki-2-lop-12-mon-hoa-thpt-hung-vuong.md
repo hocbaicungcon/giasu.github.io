@@ -158,7 +158,7 @@ A.**4** B.**2** C.**1** D.**3
 
 ***(Học sinh không được sử dụng Bảng tuần hoàn hóa học)
 **—– HẾT —–
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa 12 -Hung Vuong-de312](/assets/docs/Hoa-12-Hung-Vuong-de312.docx)
 - [Hoa 12-Hung Vuong-da](/assets/docs/Hoa-12-Hung-Vuong-da.xlsx)

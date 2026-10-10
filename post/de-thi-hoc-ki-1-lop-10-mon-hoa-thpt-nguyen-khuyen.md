@@ -12,7 +12,7 @@ tags:
 grade: 10
 ---
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [CUỐI HỌC KỲ I](/assets/docs/CUOI-HOC-KY-I-1.doc)
 

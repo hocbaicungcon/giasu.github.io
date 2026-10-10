@@ -432,7 +432,7 @@ c) Sau 200 phút, nồng độ của SO2 và Cl2 thu được là bao nhiêu?
 
 **V. NHẬN XÉT**(nếu có)
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [Tiet-123-_-BAI-10-THUC-HANH-THI-NGHIEM-HOA-HOC-AO](/assets/docs/Tiet-123-_-BAI-10-THUC-HANH-THI-NGHIEM-HOA-HOC-AO.docx)
 - [BAI-TAP-CHUYEN-DE-THUC-HANH-THI-NGHIEM-HOA-HOC-AO](#drive-pending-BAI-TAP-CHUYEN-DE-THUC-HANH-THI-NGHIEM-HOA-HOC-AO.docx)

@@ -455,7 +455,7 @@ b)
 |  | 0,5 |
 |  | 0,5 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-DE-MINH-HOA-THAI-MINH-mau-2025-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-DE-MINH-HOA-THAI-MINH-mau-2025-giasu.ai.vn.docx)
 

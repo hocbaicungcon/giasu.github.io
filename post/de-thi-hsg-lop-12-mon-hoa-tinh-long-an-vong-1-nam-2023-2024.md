@@ -135,7 +135,7 @@ môi trường, các thể tích khí đo ở 27,3oC và 1 atm, các phản ứn
 | Họ và tên thí sinh: …………………………. Chữ kí của CBCT 1:…..……………………. | Số báo danh: ………………………………… Chữ kí của CBCT 2:…..……………………. |
 | --- | --- |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-12-Long-An-Vong-1-File-De-o2.edu_.vn_](/assets/docs/2023-2024-HSG-12-Long-An-Vong-1-File-De-giasu.ai.vn.docx)
 - [2023-2024-HSG-12-Long-An-Vong-1-File-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-12-Long-An-Vong-1-File-HDC-giasu.ai.vn.docx)

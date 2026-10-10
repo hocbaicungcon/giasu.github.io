@@ -222,7 +222,7 @@ A. 59,20%.       B. 18,00%.       C. 20,52%.       D. 22,87%.
 
 Đề thi thử tốt nghiệp THPT 2022 môn hóa THPT Hậu Lộc 4 Thanh Hóa lần 2 có đáp án
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hau-Loc-4-Thanh-Hoa-lan-2](/assets/docs/Hau-Loc-4-Thanh-Hoa-lan-2.docx)
 

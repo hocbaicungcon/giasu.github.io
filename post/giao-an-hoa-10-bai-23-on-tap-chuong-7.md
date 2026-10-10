@@ -375,7 +375,7 @@ Khối lượng muối hộ gia đình thu được là:
 
             A. 1 200 kg                B. 10 000 kg              C. 6 000 kg                D. 3 600 kg
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [Giao-an-bai-23-ON-TAP-CHUONG-7-Pham-Duy-Khanh](/assets/docs/Giao-an-bai-23-ON-TAP-CHUONG-7-Pham-Duy-Khanh.docx)
 
