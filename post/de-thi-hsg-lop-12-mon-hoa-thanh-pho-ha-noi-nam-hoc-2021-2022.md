@@ -24,7 +24,7 @@ LỚP 12 THPT NĂM HỌC 2021 – 2022 |
 
 **2.** Hợp chất X được tạo thành từ hai nguyên tố có công thức là A2B. Tổng số hạt proton trong một phân tử X là 18. Ở điều kiện thích hợp, X tham gia vào một số phản ứng hóa học theo sơ đồ sau:
 
-(1) X + O2 Y + H2O (2) X + Y****Z + H2O
+(1) X + O2 Y + H2O (2) X + YZ + H2O
 
 (3) X + Cl2 + H2O T + M (4) X + FeCl3  Z + M + Q 
 
@@ -50,7 +50,7 @@ c) Tại sao không được đun sôi hỗn hợp trong ống nghiệm?
 
 **Câu III**(3,0 điểm)
 
-**1.** Hoàn thành sơ đồ phản ứng,****cân bằng phương trình hóa học bằng phương pháp thăng bằng electron, xác định chất khử và chất oxi hóa trong các trường hợp sau:
+**1.** Hoàn thành sơ đồ phản ứng,cân bằng phương trình hóa học bằng phương pháp thăng bằng electron, xác định chất khử và chất oxi hóa trong các trường hợp sau:
 
 a) NO2 + NaOH  … + … + … 
 
@@ -96,7 +96,7 @@ b) Chất X không phản ứng với với dung dịch KMnO4 ở nhiệt độ 
 
 **2.** Hỗn hợp X gồm ba este thuần chức, mạch hở đều được tạo thành từ axit cacboxylic và ancol, phân tử khối của các chất trong X đều nhỏ hơn 150. Đốt cháy hoàn toàn 0,042 mol X thu được 0,184 mol CO2. Mặt khác, 0,042 mol X tác dụng vừa đủ với 360 ml dung dịch NaOH 0,2M thu được hai muối và hai ancol. Đốt cháy hoàn toàn 1,138 gam hỗn hợp hai ancol ở trên thu được 1,584 gam CO2 và 1,17 gam H2O. Xác định công thức và tính phần trăm khối lượng mỗi chất trong X.
 
-**Câu V****I*** ***(3,5 điểm)
+**Câu VI**(3,5 điểm)
 
 **1.** Hợp chất hữu cơ X chỉ chứa các nguyên tố C, H, O và phân tử chỉ có một loại nhóm chức. Trong X, tỉ lệ khối lượng C và H tương ứng là 72 : 7. Biết phân tử khối của X nhỏ hơn 280 và X chứa 28,829% O về khối lượng.
 
