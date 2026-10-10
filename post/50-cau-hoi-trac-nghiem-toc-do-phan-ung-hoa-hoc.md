@@ -23,8 +23,8 @@ Khái niệm **tốc độ phản ứng hoá học** dùng để đánh giá m�
 **KẾT LUẬN:**
 
 - **Tốc độ phản ứng** của phản ứng hoá học là đại lượng đặc trưng cho sự biến thiên nồng độ của một trong các chất phản ứng hoặc sản phẩm trong một đơn vị thời gian.
-- **Kí hiệu:** $v$, có đơn vị là $(\text{đơn vị nồng độ}) / (\text{đơn vị thời gian})$.
-- **Đơn vị thường dùng:** $\text{mol}\cdot\text{L}^{-1}\cdot\text{s}^{-1}$ hay $\text{M}\cdot\text{s}^{-1}$, $\text{M}\cdot\text{phút}^{-1}$.
+- **Kí hiệu:** $v$, có đơn vị là $(\text{đơn vị nồng độ}) / (\text{đơn vị thời gian}).$
+- **Đơn vị thường dùng:** $\text{mol}\cdot\text{L}^{-1}\cdot\text{s}^{-1}$ hay $\text{M}\cdot\text{s}^{-1}$, $\text{M}\cdot\text{phút}^{-1}.$
 - **Tốc độ trung bình** (kí hiệu $\bar{v}$) của phản ứng là tốc độ được tính trong một khoảng thời gian phản ứng.
 
 ### 2. Tính tốc độ trung bình của phản ứng hoá học
@@ -41,18 +41,18 @@ $$\bar{v} = -\frac{1}{a} \frac{\Delta C_{\text{A}}}{\Delta t} = -\frac{1}{b} \fr
 - $\bar{v}$: tốc độ trung bình của phản ứng trong khoảng thời gian $\Delta t$;
 - $\Delta C = C_2 - C_1$: sự biến thiên nồng độ;
 - $\Delta t = t_2 - t_1$: khoảng thời gian xảy ra phản ứng;
-- $C_1, C_2$ là nồng độ của một chất tại hai thời điểm tương ứng $t_1, t_2$.
+- $C_1, C_2$ là nồng độ của một chất tại hai thời điểm tương ứng $t_1, t_2.$
 - Dấu trừ $(-)$ đặt trước biểu thức đối với chất tham gia phản ứng vì nồng độ chất tham gia giảm dần theo thời gian ($C_2 < C_1$).
 
 **Ví dụ:** Trong phản ứng hoá học:
 
 $$\text{Mg(s)} + 2\text{HCl(aq)} \rightarrow \text{MgCl}_2\text{(aq)} + \text{H}_2\text{(g)}$$
 
-Sau $40$ giây, nồng độ của dung dịch $\text{HCl}$ giảm từ $0{,}8\text{ M}$ về còn $0{,}6\text{ M}$. Tính tốc độ trung bình của phản ứng theo nồng độ $\text{HCl}$ trong $40$ giây.
+Sau $40$ giây, nồng độ của dung dịch $\text{HCl}$ giảm từ $0{,}8\text{ M}$ về còn $0{,}6\text{ M}.$ Tính tốc độ trung bình của phản ứng theo nồng độ $\text{HCl}$ trong $40$ giây.
 
 **Hướng dẫn giải:**
-- Thời gian phản ứng: $\Delta t = 40\text{ s}$; biến thiên nồng độ dung dịch $\text{HCl}$ là $\Delta C = 0{,}6 - 0{,}8 = -0{,}2\text{ M}$.
-- Hệ số tỉ lượng của $\text{HCl}$ trong phương trình hóa học là $2$.
+- Thời gian phản ứng: $\Delta t = 40\text{ s}$; biến thiên nồng độ dung dịch $\text{HCl}$ là $\Delta C = 0{,}6 - 0{,}8 = -0{,}2\text{ M}.$
+- Hệ số tỉ lượng của $\text{HCl}$ trong phương trình hóa học là $2.$
 - Tốc độ trung bình của phản ứng trong $40$ giây là:
 
 $$\bar{v} = -\frac{1}{2} \cdot \frac{\Delta C}{\Delta t} = -\frac{1}{2} \cdot \frac{-0{,}2}{40} = 2{,}5 \times 10^{-3}\text{ (M}\cdot\text{s}^{-1}\text{)}$$
@@ -85,7 +85,7 @@ Biểu thức tốc độ phản ứng là:
 
 $$v = k \cdot C_{\text{NO}}^2 \cdot C_{\text{O}_2}$$
 
-Xét tại thời điểm $C_{\text{NO}} = 1\text{ M}$ và $C_{\text{O}_2} = 1\text{ M}$, khi đó $v = k$.
+Xét tại thời điểm $C_{\text{NO}} = 1\text{ M}$ và $C_{\text{O}_2} = 1\text{ M}$, khi đó $v = k.$
 
 ---
 
@@ -255,7 +255,7 @@ $$2\text{H}_2\text{O}_2 \xrightarrow{\text{MnO}_2} 2\text{H}_2\text{O} + \text{O
 
 **D.** Sự thay đổi nồng độ chất phản ứng không ảnh hưởng đến tốc độ phản ứng.
 
-**Câu 12.** Cho phản ứng: $\text{X} \rightarrow \text{Y}$. Tại thời điểm $t_1$, nồng độ của chất X bằng $C_1$; tại thời điểm $t_2$ (với $t_2 > t_1$), nồng độ của chất X bằng $C_2$. Tốc độ trung bình của phản ứng trong khoảng thời gian trên được tính theo biểu thức nào sau đây?
+**Câu 12.** Cho phản ứng: $\text{X} \rightarrow \text{Y}.$ Tại thời điểm $t_1$, nồng độ của chất X bằng $C_1$; tại thời điểm $t_2$ (với $t_2 > t_1$), nồng độ của chất X bằng $C_2.$ Tốc độ trung bình của phản ứng trong khoảng thời gian trên được tính theo biểu thức nào sau đây?
 
 **A.** $\bar{v} = \dfrac{C_1 - C_2}{t_2 - t_1}$
 
@@ -265,7 +265,7 @@ $$2\text{H}_2\text{O}_2 \xrightarrow{\text{MnO}_2} 2\text{H}_2\text{O} + \text{O
 
 **D.** $\bar{v} = \dfrac{C_1 + C_2}{t_2 - t_1}$
 
-**Câu 13.** Có phương trình phản ứng: $2\text{A} + \text{B} \rightarrow \text{C}$. Tốc độ phản ứng tại một thời điểm được tính bằng biểu thức: $v = k[\text{A}]^2[\text{B}]$. Hằng số tốc độ $k$ phụ thuộc vào:
+**Câu 13.** Có phương trình phản ứng: $2\text{A} + \text{B} \rightarrow \text{C}.$ Tốc độ phản ứng tại một thời điểm được tính bằng biểu thức: $v = k[\text{A}]^2[\text{B}].$ Hằng số tốc độ $k$ phụ thuộc vào:
 
 **A.** Nồng độ của chất A.
 
@@ -633,7 +633,7 @@ Tính tốc độ trung bình của phản ứng theo $\text{SO}_2\text{Cl}_2$ t
 
 **D.** 0,064mol/l/s
 
-**Câu 46.** Cho phản ứng: $2\text{N}_2\text{O}_5 \rightarrow 4\text{NO}_2 + \text{O}_2$. Ban đầu nồng độ của $\text{N}_2\text{O}_5$ là $1{,}91\text{ M}$, sau $207$ giây nồng độ của $\text{N}_2\text{O}_5$ còn lại là $1{,}67\text{ M}$. Tốc độ trung bình của phản ứng tính theo $\text{N}_2\text{O}_5$ trong khoảng thời gian trên là:
+**Câu 46.** Cho phản ứng: $2\text{N}_2\text{O}_5 \rightarrow 4\text{NO}_2 + \text{O}_2.$ Ban đầu nồng độ của $\text{N}_2\text{O}_5$ là $1{,}91\text{ M}$, sau $207$ giây nồng độ của $\text{N}_2\text{O}_5$ còn lại là $1{,}67\text{ M}.$ Tốc độ trung bình của phản ứng tính theo $\text{N}_2\text{O}_5$ trong khoảng thời gian trên là:
 
 **A.** $3{,}8 \times 10^{-4}\text{ mol/(L}\cdot\text{s)}$
 
@@ -663,7 +663,7 @@ Tính tốc độ trung bình của phản ứng theo $\text{SO}_2\text{Cl}_2$ t
 
 **D.** 0,014.
 
-**Câu 49.** Ở $30^\circ\text{C}$, sự phân hủy $\text{H}_2\text{O}_2$ xảy ra theo phản ứng: $2\text{H}_2\text{O}_2 \rightarrow 2\text{H}_2\text{O} + \text{O}_2$.
+**Câu 49.** Ở $30^\circ\text{C}$, sự phân hủy $\text{H}_2\text{O}_2$ xảy ra theo phản ứng: $2\text{H}_2\text{O}_2 \rightarrow 2\text{H}_2\text{O} + \text{O}_2.$
 
 Dựa vào bảng số liệu sau, hãy tính tốc độ trung bình của phản ứng trong khoảng $120$ giây đầu tiên:
 

@@ -16,7 +16,7 @@ grade: 10
 
 ### 1.1. Nhị thức bậc nhất là gì?
 
-Nhị thức bậc nhất là các biểu thức có dạng $ax+b$, trong đó $a ≠ 0$. Cho một nhị thức bậc nhất $f(x)=ax+b$ thì số $x₀ = -b/a$ làm cho $f(x)=0$ được gọi là nghiệm của nhị thức bậc nhất.
+Nhị thức bậc nhất là các biểu thức có dạng $ax+b$, trong đó $a ≠ 0.$ Cho một nhị thức bậc nhất $f(x)=ax+b$ thì số $x₀ = -b/a$ làm cho $f(x)=0$ được gọi là nghiệm của nhị thức bậc nhất.
 
 ### 1.2. Định lí về dấu nhị thức bậc nhất
 
@@ -34,7 +34,7 @@ Cho nhị thức $f(x)=ax+b$ với $a\ne 0$ thì
 
 - $f(x)$ trái dấu với hệ số $a$ với mọi $x <-b/a.$
 
-Để dễ nhớ, ta lập bảng sau và sử dụng quy tắc **lớn cùng – bé khác**, nghĩa là ứng với những giá trị của $x$ ở bên phải nghiệm $x_0$ thì $f(x)$ và hệ số $a$ có cùng dấu, còn ở bên trái thì ngược dấu với hệ số $a$.
+Để dễ nhớ, ta lập bảng sau và sử dụng quy tắc **lớn cùng – bé khác**, nghĩa là ứng với những giá trị của $x$ ở bên phải nghiệm $x_0$ thì $f(x)$ và hệ số $a$ có cùng dấu, còn ở bên trái thì ngược dấu với hệ số $a.$
 
 Bảng xét dấu của nhị thức bậc nhất
 
@@ -50,7 +50,7 @@ còn khi $a<0$ chúng ta có bảng xét dấu như sau:
 
 ## 2. Ví dụ dấu của nhị thức bậc nhất
 
-**Ví dụ 1.** Xét dấu biểu thức $f(x)=3x+6$.
+**Ví dụ 1.** Xét dấu biểu thức $f(x)=3x+6.$
 
 *Hướng dẫn.* Ta có $3x+6=0 \Leftrightarrow x=-2.$ Hệ số $a=3$ là số dương, nên ta có bảng xét dấu sau đây:
 
@@ -58,7 +58,7 @@ còn khi $a<0$ chúng ta có bảng xét dấu như sau:
 
 Như vậy, $f(x)>0 \Leftrightarrow x\in (-2,+\infty)$, $f(x)<0 \Leftrightarrow x\in (-\infty,-2)$ và $f(x)=0 \Leftrightarrow x=-2.$
 
-**Ví dụ 2.** Xét dấu biểu thức $f(x)=1-3x$.
+**Ví dụ 2.** Xét dấu biểu thức $f(x)=1-3x.$
 
 *Hướng dẫn.* Ta có $1-3x=0 \Leftrightarrow x=\frac{1}{3}.$ Hệ số $a=-3$ là số âm, nên ta có bảng xét dấu sau đây:
 
@@ -76,7 +76,7 @@ Như vậy, $f(x)>0 \Leftrightarrow x\in (-\infty;\frac{1}{3})$, $f(x)<0 \Leftri
 
 Để xét dấu của biểu thức $P(x)$ gồm tích hoặc thương các nhị thức bậc nhất, ta thực hiện như sau:
 
-- Tìm các nghiệm của từng nhị thức bậc nhất tạo nên $P(x)$, tức là tìm nghiệm hoặc những điểm làm cho $P(x)$ không xác định (tức nghiệm của mẫu thức, nếu có): $x_1,x_2,\dots,x_n$.
+- Tìm các nghiệm của từng nhị thức bậc nhất tạo nên $P(x)$, tức là tìm nghiệm hoặc những điểm làm cho $P(x)$ không xác định (tức nghiệm của mẫu thức, nếu có): $x_1,x_2,\dots,x_n.$
 
 - Lập bảng xét dấu của $P(x)$ gồm có:
 
@@ -110,7 +110,7 @@ $$
 f(x)=(x+2)(x^2+5x-6).
 $$
 
-**Hướng dẫn.** Chúng ta đưa biểu thức $f(x)$ về tích các nhị thức bậc nhất bằng cách phân tích $x^2+5x-6=(x-1)(x+6)$. Do đó, biểu thức $f(x)$ trở thành
+**Hướng dẫn.** Chúng ta đưa biểu thức $f(x)$ về tích các nhị thức bậc nhất bằng cách phân tích $x^2+5x-6=(x-1)(x+6).$ Do đó, biểu thức $f(x)$ trở thành
 
 $$
 f(x)=(x+2)(x-1)(x+6)
@@ -198,7 +198,7 @@ $$
 \frac{4x+3}{\left( x+2\right) ^{2}}-\frac{4}{x+4}<0
 $$
 
-**Hướng dẫn.** Điều kiện xác định $x\ne -4;x\ne -2$. Chúng ta quy đồng giữ lại mẫu được bất phương trình đã cho tương đương với 
+**Hướng dẫn.** Điều kiện xác định $x\ne -4;x\ne -2.$ Chúng ta quy đồng giữ lại mẫu được bất phương trình đã cho tương đương với 
 
 $$
 \frac{3x-4}{\left( x+4\right) \left( x+2\right) ^{2}}<0

@@ -23,7 +23,7 @@ Bài học **Bài 3: Thứ tự trong tập hợp các số tự nhiên** thuộ
 Hãy cùng kiểm tra lại các kiến thức đã học từ bài trước:
 
 **Câu 1.**
-- a) Đọc số $4\ 305\ 172$.
+- a) Đọc số $4\ 305\ 172.$
 - b) Viết số "hai mươi ba nghìn không trăm bốn mươi" bằng chữ số.
 
 <details>
@@ -34,12 +34,12 @@ Hãy cùng kiểm tra lại các kiến thức đã học từ bài trước:
 
 </details>
 
-**Câu 2.** Viết tập hợp các chữ số của số $2026$.
+**Câu 2.** Viết tập hợp các chữ số của số $2026.$
 
 <details>
 <summary>Xem đáp án Câu 2</summary>
 
-Số $2026$ gồm các chữ số $2; 0; 2; 6$. Vì mỗi phần tử trong tập hợp chỉ được viết một lần duy nhất nên tập hợp các chữ số là:
+Số $2026$ gồm các chữ số $2; 0; 2; 6.$ Vì mỗi phần tử trong tập hợp chỉ được viết một lần duy nhất nên tập hợp các chữ số là:
 $$\{0; 2; 6\}$$
 
 </details>
@@ -72,20 +72,20 @@ explanation: 'Đếm các hàng từ phải sang trái: 3 (đơn vị), 8 (chụ
 <details>
 <summary>Xem đáp án Câu 4</summary>
 
-- **Số lớn nhất:** Xếp các chữ số theo thứ tự giảm dần: $9; 6; 3; 0 \implies \mathbf{9630}$.
-- **Số nhỏ nhất:** Chữ số đầu tiên phải khác 0 nên chọn 3, sau đó xếp các chữ số còn lại theo thứ tự tăng dần: $0; 6; 9 \implies \mathbf{3069}$.
+- **Số lớn nhất:** Xếp các chữ số theo thứ tự giảm dần: $9; 6; 3; 0 \implies \mathbf{9630}.$
+- **Số nhỏ nhất:** Chữ số đầu tiên phải khác 0 nên chọn 3, sau đó xếp các chữ số còn lại theo thứ tự tăng dần: $0; 6; 9 \implies \mathbf{3069}.$
 
 </details>
 
 **Câu 5.**
-- a) Đọc các số La Mã: $\text{XVII}$; $\text{XXVI}$.
+- a) Đọc các số La Mã: $\text{XVII}$; $\text{XXVI}.$
 - b) Viết các số $19$; $24$ bằng chữ số La Mã.
 
 <details>
 <summary>Xem đáp án Câu 5</summary>
 
-- a) $\text{XVII} = 10 + 5 + 2 = 17$; $\text{XXVI} = 20 + 6 = 26$.
-- b) $19 = \text{XIX}$; $24 = \text{XXIV}$.
+- a) $\text{XVII} = 10 + 5 + 2 = 17$; $\text{XXVI} = 20 + 6 = 26.$
+- b) $19 = \text{XIX}$; $24 = \text{XXIV}.$
 
 </details>
 
@@ -151,7 +151,7 @@ Vẽ tia số và chấm đậm hai điểm ứng với số 3 và số 7:
   </svg>
 </div>
 
-Trên tia số, điểm 3 nằm ở bên trái điểm 7, nên $3 < 7$. Vậy số **7 lớn hơn**.
+Trên tia số, điểm 3 nằm ở bên trái điểm 7, nên $3 < 7.$ Vậy số **7 lớn hơn**.
 
 </details>
 
@@ -159,26 +159,26 @@ Trên tia số, điểm 3 nằm ở bên trái điểm 7, nên $3 < 7$. Vậy s�
 
 ### 2. Số liền trước — Số liền sau — Hai số tự nhiên liên tiếp
 
-- **Số liền sau:** Số liền sau của một số tự nhiên $a$ bằng số đó cộng thêm 1: $a + 1$.
+- **Số liền sau:** Số liền sau của một số tự nhiên $a$ bằng số đó cộng thêm 1: $a + 1.$
   $$\text{Ví dụ: Số liền sau của } 10 \text{ là } 11.$$
-- **Số liền trước:** Số liền trước của một số tự nhiên $a$ (với $a \ne 0$) bằng số đó bớt đi 1: $a - 1$.
+- **Số liền trước:** Số liền trước của một số tự nhiên $a$ (với $a \ne 0$) bằng số đó bớt đi 1: $a - 1.$
   $$\text{Ví dụ: Số liền trước của } 11 \text{ là } 10.$$
-- **Hai số tự nhiên liên tiếp:** Hai số tự nhiên liên tiếp thì hơn kém nhau đúng **1 đơn vị**. Nếu gọi số bé là $n$ thì số liền sau là $n + 1$.
+- **Hai số tự nhiên liên tiếp:** Hai số tự nhiên liên tiếp thì hơn kém nhau đúng **1 đơn vị**. Nếu gọi số bé là $n$ thì số liền sau là $n + 1.$
 - **Đặc điểm tập hợp $\mathbb{N}$:**
   - Số **0 là số tự nhiên nhỏ nhất** và **không có số liền trước**.
   - Tập hợp $\mathbb{N}$ **không có số tự nhiên lớn nhất**, vì bất kì số tự nhiên nào cũng luôn có một số liền sau lớn hơn nó.
 
-> **Ví dụ 2.** Tìm số liền trước và số liền sau của hai số $123$ và $129$. Sắp xếp sáu số đó (tính cả $123$ và $129$) theo thứ tự từ bé đến lớn.
+> **Ví dụ 2.** Tìm số liền trước và số liền sau của hai số $123$ và $129.$ Sắp xếp sáu số đó (tính cả $123$ và $129$) theo thứ tự từ bé đến lớn.
 
 <details>
 <summary>Xem lời giải Ví dụ 2</summary>
 
 - Xét số $123$:
-  - Số liền trước của $123$ là: $123 - 1 = 122$.
-  - Số liền sau của $123$ là: $123 + 1 = 124$.
+  - Số liền trước của $123$ là: $123 - 1 = 122.$
+  - Số liền sau của $123$ là: $123 + 1 = 124.$
 - Xét số $129$:
-  - Số liền trước của $129$ là: $129 - 1 = 128$.
-  - Số liền sau của $129$ là: $129 + 1 = 130$.
+  - Số liền trước của $129$ là: $129 - 1 = 128.$
+  - Số liền sau của $129$ là: $129 + 1 = 130.$
 - Sắp xếp 6 số từ bé đến lớn:
   $$122;\ 123;\ 124;\ 128;\ 129;\ 130$$
 
@@ -188,7 +188,7 @@ Trên tia số, điểm 3 nằm ở bên trái điểm 7, nên $3 < 7$. Vậy s�
 
 ### 3. So sánh hai số tự nhiên
 
-Với hai số tự nhiên $a$ và $b$ bất kì, luôn xảy ra đúng một trong ba trường hợp: $a < b$, hoặc $a = b$, hoặc $a > b$.
+Với hai số tự nhiên $a$ và $b$ bất kì, luôn xảy ra đúng một trong ba trường hợp: $a < b$, hoặc $a = b$, hoặc $a > b.$
 
 #### a) Các bước so sánh hai số tự nhiên
 1. **Bước 1 (So sánh số lượng chữ số):** Số nào có **nhiều chữ số hơn** thì số đó **lớn hơn**.
@@ -197,26 +197,26 @@ Với hai số tự nhiên $a$ và $b$ bất kì, luôn xảy ra đúng một tr
    $$\text{Ví dụ: } 3281 > 3218 \quad (\text{chữ số hàng chục: } 8 > 1)$$
 
 #### b) Các kí hiệu so sánh mở rộng
-- Kí hiệu $a \le b$: đọc là "*$a$ nhỏ hơn hoặc bằng $b$*", nghĩa là $a < b$ hoặc $a = b$.
-- Kí hiệu $a \ge b$: đọc là "*$a$ lớn hơn hoặc bằng $b$*", nghĩa là $a > b$ hoặc $a = b$.
+- Kí hiệu $a \le b$: đọc là "*$a$ nhỏ hơn hoặc bằng $b$*", nghĩa là $a < b$ hoặc $a = b.$
+- Kí hiệu $a \ge b$: đọc là "*$a$ lớn hơn hoặc bằng $b$*", nghĩa là $a > b$ hoặc $a = b.$
 
 #### c) Tính chất bắc cầu
 $$\text{Nếu } a < b \text{ và } b < c \implies a < c$$
 $$\text{Nếu } a > b \text{ và } b > c \implies a > c$$
 
 > **Ví dụ 3.**
-> - a) So sánh: $9875$ và $10\ 002$; $3218$ và $3281$.
-> - b) Liệt kê các phần tử của tập hợp $B = \{x \in \mathbb{N} \mid 5 < x \le 10\}$.
+> - a) So sánh: $9875$ và $10\ 002$; $3218$ và $3281.$
+> - b) Liệt kê các phần tử của tập hợp $B = \{x \in \mathbb{N} \mid 5 < x \le 10\}.$
 
 <details>
 <summary>Xem lời giải Ví dụ 3</summary>
 
 - a) **So sánh:**
-  - $9875$ có 4 chữ số, còn $10\ 002$ có 5 chữ số $\implies 9875 < 10\ 002$.
-  - $3218$ và $3281$ cùng có 4 chữ số: hàng nghìn đều là 3, hàng trăm đều là 2, hàng chục có $1 < 8 \implies 3218 < 3281$.
+  - $9875$ có 4 chữ số, còn $10\ 002$ có 5 chữ số $\implies 9875 < 10\ 002.$
+  - $3218$ và $3281$ cùng có 4 chữ số: hàng nghìn đều là 3, hàng trăm đều là 2, hàng chục có $1 < 8 \implies 3218 < 3281.$
 - b) **Liệt kê tập hợp $B$:**
   - Điều kiện $5 < x \le 10$ nghĩa là $x$ lớn hơn 5 (không lấy số 5) và $x$ nhỏ hơn hoặc bằng 10 (có lấy số 10).
-  - Vậy $B = \{6; 7; 8; 9; 10\}$.
+  - Vậy $B = \{6; 7; 8; 9; 10\}.$
 
 </details>
 
@@ -228,7 +228,7 @@ $$\text{Nếu } a > b \text{ và } b > c \implies a > c$$
    - Với điều kiện $x < 10$: **không lấy** số 10 ($x \in \{0; 1; \dots; 9\}$).
    - Với điều kiện $x \le 10$: **có lấy** số 10 ($x \in \{0; 1; \dots; 10\}$).
 2. **Số 0 không có số liền trước:**
-   - Trong tập hợp số tự nhiên $\mathbb{N}$, số 0 là số bé nhất và không có số liền trước. Tránh viết "số liền trước của 0 là $-1$" vì $-1$ không thuộc $\mathbb{N}$.
+   - Trong tập hợp số tự nhiên $\mathbb{N}$, số 0 là số bé nhất và không có số liền trước. Tránh viết "số liền trước của 0 là $-1$" vì $-1$ không thuộc $\mathbb{N}.$
 3. **Hai số tự nhiên liên tiếp:**
    - Phải hơn kém nhau đúng **1 đơn vị**. Hai số $15$ và $17$ hơn kém nhau 2 đơn vị nên không phải là hai số liên tiếp.
 4. **Phân biệt "số liền sau" và "số lớn hơn":**
@@ -242,18 +242,18 @@ $$\text{Nếu } a > b \text{ và } b > c \implies a > c$$
 ### Dạng 1. Số liền trước, số liền sau, số tự nhiên liên tiếp
 
 **Phương pháp giải:**
-- Số liền sau $= \text{Số đã cho} + 1$.
+- Số liền sau $= \text{Số đã cho} + 1.$
 - Số liền trước $= \text{Số đã cho} - 1$ (số 0 không có số liền trước).
-- Ba số tự nhiên liên tiếp tăng dần có dạng: $n - 1;\ n;\ n + 1$ hoặc $n;\ n + 1;\ n + 2$.
+- Ba số tự nhiên liên tiếp tăng dần có dạng: $n - 1;\ n;\ n + 1$ hoặc $n;\ n + 1;\ n + 2.$
 - **Mẹo giải nhanh:** Tổng của 3 số tự nhiên liên tiếp luôn bằng **3 lần số ở giữa**.
 
-**Luyện tập 1.1.** Tìm số liền trước và số liền sau của hai số $200$ và $195$. Sắp xếp sáu số đó (tính cả $200$ và $195$) theo thứ tự từ lớn đến bé.
+**Luyện tập 1.1.** Tìm số liền trước và số liền sau của hai số $200$ và $195.$ Sắp xếp sáu số đó (tính cả $200$ và $195$) theo thứ tự từ lớn đến bé.
 
 <details>
 <summary>Xem lời giải Luyện tập 1.1</summary>
 
-- Xét số $200$: số liền trước là $199$, số liền sau là $201$.
-- Xét số $195$: số liền trước là $194$, số liền sau là $196$.
+- Xét số $200$: số liền trước là $199$, số liền sau là $201.$
+- Xét số $195$: số liền trước là $194$, số liền sau là $196.$
 - Xếp 6 số từ lớn đến bé:
   $$201;\ 200;\ 199;\ 196;\ 195;\ 194$$
 
@@ -262,7 +262,7 @@ $$\text{Nếu } a > b \text{ và } b > c \implies a > c$$
 **Luyện tập 1.2.** Điền vào chỗ trống để mỗi dòng sau là ba số tự nhiên liên tiếp xếp từ lớn đến bé:
 - a) $20;\ \dots;\ \dots$
 - b) $\dots;\ 200;\ \dots$
-- c) $\dots;\ \dots;\ 2000$.
+- c) $\dots;\ \dots;\ 2000.$
 
 <details>
 <summary>Xem lời giải Luyện tập 1.2</summary>
@@ -274,7 +274,7 @@ Vì xếp từ lớn đến bé nên mỗi số sau bằng số đứng trước
 
 </details>
 
-**Luyện tập 1.3.** Tìm ba số tự nhiên liên tiếp có tổng bằng $33$.
+**Luyện tập 1.3.** Tìm ba số tự nhiên liên tiếp có tổng bằng $33.$
 
 ```quiz
 type: choice
@@ -292,7 +292,7 @@ explanation: 'Tổng của ba số tự nhiên liên tiếp bằng 3 lần số 
 <summary>Xem lời giải đầy đủ Luyện tập 1.3</summary>
 
 - Gọi ba số tự nhiên liên tiếp là $n - 1,\ n,\ n + 1$ với $n$ là số ở giữa.
-- Tổng của ba số là: $(n - 1) + n + (n + 1) = 3n = 33 \implies n = 33 : 3 = 11$.
+- Tổng của ba số là: $(n - 1) + n + (n + 1) = 3n = 33 \implies n = 33 : 3 = 11.$
 - Vậy ba số cần tìm là: **$10;\ 11;\ 12$**.
 - Thử lại: $10 + 11 + 12 = 33$ (chính xác).
 
@@ -305,7 +305,7 @@ explanation: 'Tổng của ba số tự nhiên liên tiếp bằng 3 lần số 
 **Phương pháp giải:**
 - So sánh: Đếm số lượng chữ số trước; nếu bằng nhau thì so sánh các chữ số cùng hàng từ trái sang phải.
 - Tia số: Số bên trái nhỏ hơn số bên phải.
-- Bắc cầu: $x < a$ và $a < y \implies x < y$.
+- Bắc cầu: $x < a$ và $a < y \implies x < y.$
 
 **Luyện tập 2.1.** Điền dấu thích hợp ($<, >$ hoặc $=$) vào chỗ chấm:
 $$1234 \dots 999;\quad 5078 \dots 5087;\quad 20\ 000 \dots 19\ 999;\quad 307 \dots 307$$
@@ -316,11 +316,11 @@ $$1234 \dots 999;\quad 5078 \dots 5087;\quad 20\ 000 \dots 19\ 999;\quad 307 \do
 - $1234 > 999$ (4 chữ số $> 3$ chữ số).
 - $5078 < 5087$ (cùng 4 chữ số, hàng chục có $7 < 8$).
 - $20\ 000 > 19\ 999$ (hàng chục nghìn có $2 > 1$).
-- $307 = 307$.
+- $307 = 307.$
 
 </details>
 
-**Luyện tập 2.2.** Cho các số: $7021$; $6987$; $7012$; $10\ 000$; $999$.
+**Luyện tập 2.2.** Cho các số: $7021$; $6987$; $7012$; $10\ 000$; $999.$
 - a) Sắp xếp các số đó theo thứ tự tăng dần.
 - b) Sắp xếp các số đó theo thứ tự giảm dần.
 
@@ -335,8 +335,8 @@ $$1234 \dots 999;\quad 5078 \dots 5087;\quad 20\ 000 \dots 19\ 999;\quad 307 \do
 </details>
 
 **Luyện tập 2.3.**
-- a) Vẽ tia số từ 0 đến 10 rồi biểu diễn các số $2; 5; 9$. Trong ba số đó, số nào nằm bên trái nhất?
-- b) Cho hai số tự nhiên $x$ và $y$, biết $x < 7$ và $7 < y$. Hãy so sánh $x$ với $y$.
+- a) Vẽ tia số từ 0 đến 10 rồi biểu diễn các số $2; 5; 9.$ Trong ba số đó, số nào nằm bên trái nhất?
+- b) Cho hai số tự nhiên $x$ và $y$, biết $x < 7$ và $7 < y.$ Hãy so sánh $x$ với $y.$
 
 <details>
 <summary>Xem lời giải Luyện tập 2.3</summary>
@@ -386,8 +386,8 @@ $$1234 \dots 999;\quad 5078 \dots 5087;\quad 20\ 000 \dots 19\ 999;\quad 307 \do
 </details>
 
 **Luyện tập 3.3.**
-- a) Liệt kê các phần tử của tập hợp $M = \{x \in \mathbb{N} \mid 27 \le x < 32\}$.
-- b) Cho hai tập hợp $P = \{x \in \mathbb{N} \mid x \le 4\}$ và $Q = \{x \in \mathbb{N}^* \mid x < 5\}$. Hai tập hợp $P$ và $Q$ có bằng nhau không? Vì sao?
+- a) Liệt kê các phần tử của tập hợp $M = \{x \in \mathbb{N} \mid 27 \le x < 32\}.$
+- b) Cho hai tập hợp $P = \{x \in \mathbb{N} \mid x \le 4\}$ và $Q = \{x \in \mathbb{N}^* \mid x < 5\}.$ Hai tập hợp $P$ và $Q$ có bằng nhau không? Vì sao?
 
 ```quiz
 type: choice
@@ -404,7 +404,7 @@ explanation: 'P = {0; 1; 2; 3; 4} (gồm 5 phần tử), trong khi Q = {1; 2; 3;
 <details>
 <summary>Xem lời giải đầy đủ Luyện tập 3.3</summary>
 
-- a) $M = \{27; 28; 29; 30; 31\}$.
+- a) $M = \{27; 28; 29; 30; 31\}.$
 - b) Liệt kê từng tập hợp:
   - $P = \{0; 1; 2; 3; 4\}$ (vì $x \in \mathbb{N}$ nên có lấy số 0).
   - $Q = \{1; 2; 3; 4\}$ (vì $x \in \mathbb{N}^*$ nên không có số 0).
@@ -416,14 +416,14 @@ explanation: 'P = {0; 1; 2; 3; 4} (gồm 5 phần tử), trong khi Q = {1; 2; 3;
 
 ## C. Phiếu bài tập tự luyện
 
-**Bài 1.** Tìm số liền trước và số liền sau của mỗi số sau: $99$; $1000$; $2026$.
+**Bài 1.** Tìm số liền trước và số liền sau của mỗi số sau: $99$; $1000$; $2026.$
 
 <details>
 <summary>Xem lời giải Bài 1</summary>
 
-- Số $99$: số liền trước là $98$, số liền sau là $100$.
-- Số $1000$: số liền trước là $999$, số liền sau là $1001$.
-- Số $2026$: số liền trước là $2025$, số liền sau là $2027$.
+- Số $99$: số liền trước là $98$, số liền sau là $100.$
+- Số $1000$: số liền trước là $999$, số liền sau là $1001.$
+- Số $2026$: số liền trước là $2025$, số liền sau là $2027.$
 
 </details>
 
@@ -494,8 +494,8 @@ $$1001 \dots 999;\quad 4578 \dots 4587;\quad 30\ 000 \dots 3000;\quad 2026 \dots
 </details>
 
 **Bài 4.**
-- a) Viết ba số tự nhiên liên tiếp, trong đó số lớn nhất là $100$.
-- b) Viết ba số tự nhiên liên tiếp, trong đó số bé nhất là $2026$.
+- a) Viết ba số tự nhiên liên tiếp, trong đó số lớn nhất là $100.$
+- b) Viết ba số tự nhiên liên tiếp, trong đó số bé nhất là $2026.$
 
 <details>
 <summary>Xem lời giải Bài 4</summary>
@@ -511,7 +511,7 @@ $$1001 \dots 999;\quad 4578 \dots 4587;\quad 30\ 000 \dots 3000;\quad 2026 \dots
 <summary>Xem lời giải Bài 5</summary>
 
 - Số có 3 chữ số: $999$ (nhỏ nhất).
-- Các số có 4 chữ số: $6987 < 7012 < 7021 < 7210$.
+- Các số có 4 chữ số: $6987 < 7012 < 7021 < 7210.$
 - Số có 5 chữ số: $10\ 000$ (lớn nhất).
 - **Thứ tự tăng dần:**
   $$999;\ 6987;\ 7012;\ 7021;\ 7210;\ 10\ 000$$
@@ -526,28 +526,28 @@ $$1001 \dots 999;\quad 4578 \dots 4587;\quad 30\ 000 \dots 3000;\quad 2026 \dots
 <details>
 <summary>Xem lời giải Bài 6</summary>
 
-- a) $A = \{16; 17; 18; 19; 20\}$.
+- a) $A = \{16; 17; 18; 19; 20\}.$
 - b) $B = \{1; 2; 3\}$ (vì $x \in \mathbb{N}^*$ nên không lấy số 0).
-- c) $C = \{30; 31; 32; 33\}$.
+- c) $C = \{30; 31; 32; 33\}.$
 
 </details>
 
 **Bài 7.** Tìm số tự nhiên $x$, biết:
-- a) $x$ là số liền sau của số $2025$.
-- b) $x$ là số liền trước của số $1000$.
-- c) $x$ vừa lớn hơn $7$ vừa nhỏ hơn $9$.
+- a) $x$ là số liền sau của số $2025.$
+- b) $x$ là số liền trước của số $1000.$
+- c) $x$ vừa lớn hơn $7$ vừa nhỏ hơn $9.$
 
 <details>
 <summary>Xem lời giải Bài 7</summary>
 
-- a) $x = 2025 + 1 = 2026$.
-- b) $x = 1000 - 1 = 999$.
-- c) $7 < x < 9 \implies x = 8$.
+- a) $x = 2025 + 1 = 2026.$
+- b) $x = 1000 - 1 = 999.$
+- c) $7 < x < 9 \implies x = 8.$
 
 </details>
 
 **Bài 8.** Mỗi khẳng định sau đúng hay sai? Nếu sai, hãy sửa lại cho đúng:
-- a) Số liền trước của số 0 là số $-1$.
+- a) Số liền trước của số 0 là số $-1.$
 - b) Tập hợp $\{x \in \mathbb{N} \mid x \le 5\}$ có 5 phần tử.
 - c) Trong tập hợp $\mathbb{N}$ có một số tự nhiên lớn nhất.
 - d) Hai số $15$ và $17$ là hai số tự nhiên liên tiếp.
@@ -558,18 +558,18 @@ $$1001 \dots 999;\quad 4578 \dots 4587;\quad 30\ 000 \dots 3000;\quad 2026 \dots
 - a) **Sai**, vì $-1$ không phải số tự nhiên. Trong $\mathbb{N}$, số 0 là số nhỏ nhất và không có số liền trước.
 - b) **Sai**, vì tập hợp này gồm các phần tử $\{0; 1; 2; 3; 4; 5\}$, có tổng cộng **6 phần tử** (bao gồm số 0).
 - c) **Sai**, vì mọi số tự nhiên đều có một số liền sau lớn hơn nó nên $\mathbb{N}$ không có số lớn nhất.
-- d) **Sai**, vì hai số tự nhiên liên tiếp phải hơn kém nhau 1 đơn vị, trong khi $17 - 15 = 2$. Sửa lại: hai số liên tiếp là $15$ và $16$ (hoặc $16$ và $17$).
+- d) **Sai**, vì hai số tự nhiên liên tiếp phải hơn kém nhau 1 đơn vị, trong khi $17 - 15 = 2.$ Sửa lại: hai số liên tiếp là $15$ và $16$ (hoặc $16$ và $17$).
 
 </details>
 
-**Bài 9.** Tìm hai số tự nhiên liên tiếp có tổng bằng $75$.
+**Bài 9.** Tìm hai số tự nhiên liên tiếp có tổng bằng $75.$
 
 <details>
 <summary>Xem lời giải Bài 9</summary>
 
 - Hai số tự nhiên liên tiếp hơn kém nhau 1 đơn vị.
-- Số bé là: $(75 - 1) : 2 = 37$.
-- Số lớn là: $37 + 1 = 38$.
+- Số bé là: $(75 - 1) : 2 = 37.$
+- Số lớn là: $37 + 1 = 38.$
 - Vậy hai số cần tìm là **$37$ và $38$**. Thử lại: $37 + 38 = 75$ (đúng).
 
 </details>
@@ -581,7 +581,7 @@ $$1001 \dots 999;\quad 4578 \dots 4587;\quad 30\ 000 \dots 3000;\quad 2026 \dots
 <details>
 <summary>Xem lời giải Bài 10</summary>
 
-- a) Các số thỏa mãn là $100; 101; 102; \dots; 209$.
+- a) Các số thỏa mãn là $100; 101; 102; \dots; 209.$
   - Đây là dãy số cách đều 1 đơn vị.
   - Số các số là: $(209 - 100) : 1 + 1 = 110$ (số).
 - b) Các số tự nhiên có ba chữ số là từ $100$ đến $999$:
@@ -647,20 +647,20 @@ explanation: 'Số ở giữa là 60 : 3 = 20. Ba số đó là 19; 20; 21. Số
 
 ### 2. Bài tập tự luận kiểm tra
 
-**Câu 1.** Tìm số liền trước và số liền sau của mỗi số sau: $45$; $199$.
+**Câu 1.** Tìm số liền trước và số liền sau của mỗi số sau: $45$; $199.$
 
 <details>
 <summary>Xem lời giải Câu 1</summary>
 
-- Số $45$: số liền trước là $44$, số liền sau là $46$.
-- Số $199$: số liền trước là $198$, số liền sau là $200$.
+- Số $45$: số liền trước là $44$, số liền sau là $46.$
+- Số $199$: số liền trước là $198$, số liền sau là $200.$
 
 </details>
 
 **Câu 2.** Điền vào chỗ trống để ba số ở mỗi dòng sau là ba số tự nhiên liên tiếp theo thứ tự từ bé đến lớn:
 - a) $79;\ \dots;\ \dots$
 - b) $\dots;\ 500;\ \dots$
-- c) $\dots;\ \dots;\ 10\ 000$.
+- c) $\dots;\ \dots;\ 10\ 000.$
 
 <details>
 <summary>Xem lời giải Câu 2</summary>
@@ -672,8 +672,8 @@ explanation: 'Số ở giữa là 60 : 3 = 20. Ba số đó là 19; 20; 21. Số
 </details>
 
 **Câu 3.** So sánh hai số trong mỗi trường hợp sau:
-- a) $8999$ và $9000$.
-- b) $12\ 345$ và $12\ 354$.
+- a) $8999$ và $9000.$
+- b) $12\ 345$ và $12\ 354.$
 
 <details>
 <summary>Xem lời giải Câu 3</summary>
@@ -740,31 +740,31 @@ $$2220;\ 2202;\ 2022;\ 2020$$
 <details>
 <summary>Xem lời giải Câu 7</summary>
 
-- a) $A = \{9; 10; 11; 12; 13\}$.
-- b) $B = \{40; 41; 42; 43; 44; 45\}$.
-- c) $C = \{1; 2; 3\}$.
+- a) $A = \{9; 10; 11; 12; 13\}.$
+- b) $B = \{40; 41; 42; 43; 44; 45\}.$
+- c) $C = \{1; 2; 3\}.$
 
 </details>
 
-**Câu 8.** Tìm ba số tự nhiên liên tiếp có tổng bằng $60$.
+**Câu 8.** Tìm ba số tự nhiên liên tiếp có tổng bằng $60.$
 
 <details>
 <summary>Xem lời giải Câu 8</summary>
 
-- Số ở giữa là: $60 : 3 = 20$.
-- Số liền trước là $19$, số liền sau là $21$.
+- Số ở giữa là: $60 : 3 = 20.$
+- Số liền trước là $19$, số liền sau là $21.$
 - Vậy ba số cần tìm là **$19;\ 20;\ 21$**. Thử lại: $19 + 20 + 21 = 60$ (đúng).
 
 </details>
 
 **Câu 9.**
-- a) Cho hai số tự nhiên $a$ và $b$, biết $a < 25$ và $25 < b$. Hãy so sánh $a$ với $b$.
-- b) Tìm tất cả các số tự nhiên $x$ thoả mãn $11 < x < 15$.
+- a) Cho hai số tự nhiên $a$ và $b$, biết $a < 25$ và $25 < b.$ Hãy so sánh $a$ với $b.$
+- b) Tìm tất cả các số tự nhiên $x$ thoả mãn $11 < x < 15.$
 
 <details>
 <summary>Xem lời giải Câu 9</summary>
 
-- a) Theo tính chất bắc cầu: $a < 25$ và $25 < b \implies \mathbf{a < b}$.
+- a) Theo tính chất bắc cầu: $a < 25$ và $25 < b \implies \mathbf{a < b}.$
 - b) Các số tự nhiên lớn hơn 11 và nhỏ hơn 15 là: **$12;\ 13;\ 14$**.
 
 </details>
@@ -801,9 +801,9 @@ Kí hiệu số bi của mỗi bạn bằng tên của bạn đó:
 <summary>Xem lời giải Bài 2 nâng cao</summary>
 
 Lần lượt cố định chữ số hàng trăm:
-- Hàng trăm là 1: lập được $123;\ 132$.
-- Hàng trăm là 2: lập được $213;\ 231$.
-- Hàng trăm là 3: lập được $312;\ 321$.
+- Hàng trăm là 1: lập được $123;\ 132.$
+- Hàng trăm là 2: lập được $213;\ 231.$
+- Hàng trăm là 3: lập được $312;\ 321.$
 
 Tổng cộng lập được 6 số. Sắp xếp theo thứ tự tăng dần:
 $$123 < 132 < 213 < 231 < 312 < 321$$
@@ -844,9 +844,9 @@ Cho dãy số: $7;\ 10;\ 13;\ \dots;\ 97;\ 100$ (kể từ số thứ hai, mỗi
   - Số lượng các số của dãy là:
     $$(100 - 7) : 3 + 1 = 31 + 1 = 32 \text{ (số)}$$
 - b) Nhận xét công thức của số hạng thứ $n$:
-  - Số thứ nhất: $7 = 7 + 3 \times 0$.
-  - Số thứ hai: $10 = 7 + 3 \times 1$.
-  - Số thứ $n$: có dạng $7 + 3 \times (n - 1)$.
+  - Số thứ nhất: $7 = 7 + 3 \times 0.$
+  - Số thứ hai: $10 = 7 + 3 \times 1.$
+  - Số thứ $n$: có dạng $7 + 3 \times (n - 1).$
   - Vậy số thứ 22 của dãy là:
     $$7 + 3 \times (22 - 1) = 7 + 3 \times 21 = 7 + 63 = \mathbf{70}$$
 - c) Giả sử số $2026$ là số thứ $n$ của dãy:

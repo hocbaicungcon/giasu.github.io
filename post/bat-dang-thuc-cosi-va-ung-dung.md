@@ -25,7 +25,7 @@ $$
 a_1+a_2+\cdots +a_{n}\ge n\sqrt[n]{a_1a_2\ldots a_n}.
 $$
 
- Dấu bằng xảy ra khi và chỉ khi $a_1=a_2=\cdots =a_n$.
+ Dấu bằng xảy ra khi và chỉ khi $a_1=a_2=\cdots =a_n.$
 
 ![các bất đẳng thức thường sử dụng, SỬ DỤNG AM-GM ĐỂ CHỨNG MINH BẤT ĐẲNG THỨC DẤU BẰNG KHÔNG TẠI TÂM, chọn điểm rơi trong bất đẳng thức Côsi](assets/images/bat-dang-thuc-cosi-va-ung-dung-440px-AM_GM_inequality_visual_proof.png)
 
@@ -67,7 +67,7 @@ Cho $x_1, x_2, x_3,…,x_n$ là các số thực dương ta có:
 
 **– Dạng 4:** $\left(x_1+x_2+…+x_n\right)\left(\frac{1}{x_1}+\frac{1}{x_2}+…\frac{1}{x_n} \right) \geqslant n^2$
 
-Dấu đẳng thức xảy ra khi và chỉ khi $x_1= x_2= x_3=…=x_n$.
+Dấu đẳng thức xảy ra khi và chỉ khi $x_1= x_2= x_3=…=x_n.$
 
 ### b. Dạng đặc biệt của bất đẳng thức Cô-si
 
@@ -114,9 +114,9 @@ $$
 
  Dấu “=” xảy ra khi và chỉ khi $x=\frac{7}{x} \Leftrightarrow x^{2}=7 \Leftrightarrow x=\sqrt{7}$ (do x>0).
 
-Vậy $\min A=2 \sqrt{7} \Leftrightarrow x=\sqrt{7}$.
+Vậy $\min A=2 \sqrt{7} \Leftrightarrow x=\sqrt{7}.$
 
-**Bài 2:** Cho $x>0, y>0$ thỏa mãn điều kiện $\frac{1}{x}+\frac{1}{y}=\frac{1}{2}$. Tìm giá trị lớn nhất của biểu thức $A=\sqrt{x}+\sqrt{y}$.
+**Bài 2:** Cho $x>0, y>0$ thỏa mãn điều kiện $\frac{1}{x}+\frac{1}{y}=\frac{1}{2}.$ Tìm giá trị lớn nhất của biểu thức $A=\sqrt{x}+\sqrt{y}.$
 
 **Lời giải:** Áp dụng bdt Cosi ta có 
 
@@ -136,9 +136,9 @@ $$
 \left\{\begin{array}{l} x=y \\ \frac{1}{x}+\frac{1}{y}=\frac{1}{2} \end{array} \right. \Leftrightarrow x=y=4.
 $$
 
-Vậy $\min A = 4$ khi và chỉ khi $x = y = 4$.
+Vậy $\min A = 4$ khi và chỉ khi $x = y = 4.$
 
-**Bài 3:** Ví dụ: Cho $a$, $b$ là số dương thỏa mãn $a^{2}+b^{2}=2$. Chứng minh rằng 
+**Bài 3:** Ví dụ: Cho $a$, $b$ là số dương thỏa mãn $a^{2}+b^{2}=2.$ Chứng minh rằng 
 
 $$
 (a+b)^{5} \geq 16 a b \sqrt{\left(1+a^{2}\right)\left(1+b^{2}\right)}
@@ -154,7 +154,7 @@ $$
 
 Suy ra $\left(a^{2}+2 a b+b^{2}\right)\left(a^{3}+3 a b^{2}+3 a^{2} b+b^{3}\right) \geq 16 a b \sqrt{\left(a^{2}+1\right)\left(b^{2}+1\right)}$
 
-Do đó $(a+b)^{5} \geq 16 a b \sqrt{\left(1+a^{2}\right)\left(1+b^{2}\right)}$ (đpcm). Đẳng thức xảy ra khi và chỉ khi $a=b=1$.
+Do đó $(a+b)^{5} \geq 16 a b \sqrt{\left(1+a^{2}\right)\left(1+b^{2}\right)}$ (đpcm). Đẳng thức xảy ra khi và chỉ khi $a=b=1.$
 
 **Bài 4:** Tìm GTLN của: $y=x^{2}(1-x) \quad, x \in(0,1)$
 
@@ -164,11 +164,11 @@ $$
 2 y=x^{2}(1-2 x)=x \cdot x \cdot(1-2 x) \leq\left(\frac{x+x+1-2 x}{3}\right)^{3}=\frac{1}{27} \Rightarrow y \leq \frac{1}{54}
 $$
 
- Dấu ‘=’ xảy ra $\Leftrightarrow x=1-2 x \Leftrightarrow x=\frac{1}{3}$.
+ Dấu ‘=’ xảy ra $\Leftrightarrow x=1-2 x \Leftrightarrow x=\frac{1}{3}.$
 
 Vậy Max $y=\frac{1}{27}$ khi $x=\frac{1}{3}$
 
-**Bài 5**: Tìm GTNN của: $y=x+\frac{1}{x-1}, x>1$.
+**Bài 5**: Tìm GTNN của: $y=x+\frac{1}{x-1}, x>1.$
 
 **Lời giải:** Do $x-1>0$ nên áp dụng bất đẳng thức Cauchy ta có: 
 
@@ -176,9 +176,9 @@ $$
 y=(x-1)+\frac{1}{x-1}+1 \geq 2 \sqrt{(x-1) \cdot \frac{1}{x-1}}+1=3 \Rightarrow y \geq 3
 $$
 
- Dấu ‘=’ xảy ra $\Leftrightarrow x-1=\frac{1}{x-1} \Leftrightarrow x=2$.
+ Dấu ‘=’ xảy ra $\Leftrightarrow x-1=\frac{1}{x-1} \Leftrightarrow x=2.$
 
-Vậy Min $y=3$ khi $x=2$.
+Vậy Min $y=3$ khi $x=2.$
 
 Xem thêm [Chọn điểm rơi trong bất đẳng thức Côsi (Cauchy)](/bai-viet/chon-diem-roi-trong-bat-dang-thuc-cosi.html).
 
@@ -200,9 +200,9 @@ $$
 \left(a+\frac{1}{b}\right)\left(b+\frac{1}{c}\right)\left(c+\frac{1}{a}\right) \geq 8 \sqrt{\frac{a}{b}} \cdot \sqrt{\frac{b}{c}} \sqrt{\frac{c}{a}}=8
 $$
 
- Đẳng thức xảy ra khi và chỉ khi $a=b=c$.
+ Đẳng thức xảy ra khi và chỉ khi $a=b=c.$
 
-**Bài 7:** Cho $a, b, c>0$. Chứng minh:
+**Bài 7:** Cho $a, b, c>0.$ Chứng minh:
 
 a) $a^2+b^2+4 \geqslant 2a+2b+ab$
 b) $a(1+b)+b(1+c)+c(1+a) \geq 3 \sqrt[3]{a b c}(1+\sqrt[3]{a b c})$
@@ -237,7 +237,7 @@ $$
 
  Cộng lại ta được đpcm.
 
-Dấu ‘=’ xảy ra $\Leftrightarrow a=b=c$.
+Dấu ‘=’ xảy ra $\Leftrightarrow a=b=c.$
 
 c) Ta có: 
 
@@ -253,7 +253,7 @@ $$
 
 Cộng lại ta được điều phải chứng minh.
 
-Dấu ‘=’ xảy ra $\Leftrightarrow a=b=2$.
+Dấu ‘=’ xảy ra $\Leftrightarrow a=b=2.$
 
 **Bài 8:** Chứng minh với ba số $a, b, c$ không âm thỏa mãn $a + b + c = 3$ thì:
 
@@ -261,7 +261,7 @@ $$
 \frac{a}{b+c}+\frac{b}{c+a}+\frac{c}{a+b} \geq \frac{3}{2}
 $$
 
-**Nhận xét:** Bài toán đạt được dấu bằng khi và chỉ khi $a = b = c = 1$.
+**Nhận xét:** Bài toán đạt được dấu bằng khi và chỉ khi $a = b = c = 1.$
 
 Ta sẽ sử dụng phương pháp làm trội làm giảm như sau:
 
@@ -269,7 +269,7 @@ $$
 \frac{a}{b+c}+\frac{b+c}{4}+\frac{1}{2 a} \geq 3 \sqrt[3]{\frac{a}{b+c} \cdot \frac{b+c}{4} \cdot \frac{1}{2 a}}=3 \sqrt[3]{\frac{1}{8}}=\frac{3}{2}
 $$
 
-Tương tự ta có $\frac{b}{c+a}+\frac{c+a}{4}+\frac{1}{2 b} \geq \frac{3}{2}$ và $\frac{c}{a+b}+\frac{a+b}{4}+\frac{1}{2 c} \geq \frac{3}{2}$.
+Tương tự ta có $\frac{b}{c+a}+\frac{c+a}{4}+\frac{1}{2 b} \geq \frac{3}{2}$ và $\frac{c}{a+b}+\frac{a+b}{4}+\frac{1}{2 c} \geq \frac{3}{2}.$
 
 Cộng vế với vế ta có:
 
@@ -282,4 +282,4 @@ $$
 \end{aligned}
 $$
 
-Dấu “=” xảy ra khi và chỉ khi $a = b = c = 1$.
+Dấu “=” xảy ra khi và chỉ khi $a = b = c = 1.$

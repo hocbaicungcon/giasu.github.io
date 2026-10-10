@@ -32,9 +32,9 @@ Ngoài việc làm như trong định nghĩa, để xác định góc giữa 2 �
 
 Hoặc ta có thể sử dụng tích vô hướng:
 
-- Nếu $\overrightarrow{u}$ là vecto chỉ phương của đường thẳng a và $\overrightarrow{v}$ là vecto chỉ phương của đường thẳng b và $\left( \overrightarrow{u};\overrightarrow{v} \right)=\alpha$ thì góc giữa 2 đường thẳng a và b bằng $\alpha$ nếu $0\le \alpha \le 90^\circ$ và bằng $180^\circ -\alpha$ nếu $90^\circ <\alpha \le 180^\circ$.
+- Nếu $\overrightarrow{u}$ là vecto chỉ phương của đường thẳng a và $\overrightarrow{v}$ là vecto chỉ phương của đường thẳng b và $\left( \overrightarrow{u};\overrightarrow{v} \right)=\alpha$ thì góc giữa 2 đường thẳng a và b bằng $\alpha$ nếu $0\le \alpha \le 90^\circ$ và bằng $180^\circ -\alpha$ nếu $90^\circ <\alpha \le 180^\circ.$
 
-- Nếu 2 đường thẳng a và b song song hoặc trùng nhau thì góc giữa chúng bằng $0^\circ$. Góc giữa 2 đường thẳng là góc có số đo $0\le \alpha \le 90^\circ$.
+- Nếu 2 đường thẳng a và b song song hoặc trùng nhau thì góc giữa chúng bằng $0^\circ.$ Góc giữa 2 đường thẳng là góc có số đo $0\le \alpha \le 90^\circ.$
 
 ## 3. Cách tính góc giữa hai đường thẳng
 
@@ -58,7 +58,7 @@ Tính góc giữa hai đường thẳng AB và CD ta tính góc giữa hai vect�
 
 ## 4. Bài tập góc giữa hai đường thẳng trong không gian
 
-**Ví dụ 1.** Cho hình lập phương $A B C D \cdot A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ có cạnh là $a$. Tính góc giữa các cặp đường thẳng sau đây:
+**Ví dụ 1.** Cho hình lập phương $A B C D \cdot A^{\prime} B^{\prime} C^{\prime} D^{\prime}$ có cạnh là $a.$ Tính góc giữa các cặp đường thẳng sau đây:
 
 1. AB và A’D’.
 
@@ -70,33 +70,33 @@ Tính góc giữa hai đường thẳng AB và CD ta tính góc giữa hai vect�
 
 ![Góc giữa hai đường thẳng trong không gian 1](assets/images/goc-giua-hai-duong-thang-trong-khong-gian-hinh-lap-phuong-.jpg)
 
-1. Ta có $A^{\prime} D^{\prime} / / A D$ nên $\left(A B, A^{\prime} D^{\prime}\right)=(A B, A D)=\widehat{B A D}=90^{\circ}$.
+1. Ta có $A^{\prime} D^{\prime} / / A D$ nên $\left(A B, A^{\prime} D^{\prime}\right)=(A B, A D)=\widehat{B A D}=90^{\circ}.$
 
-2. Ta có $A^{\prime} C^{\prime} / / A C$ nên $\left(A D, A^{\prime} C^{\prime}\right)=(A D, A C)=\widehat{D A C}=45^{\circ}$.
+2. Ta có $A^{\prime} C^{\prime} / / A C$ nên $\left(A D, A^{\prime} C^{\prime}\right)=(A D, A C)=\widehat{D A C}=45^{\circ}.$
 
-3. Ta có $B^{\prime} D^{\prime} / / B D$ nên $\left(B C^{\prime}, B^{\prime} D^{\prime}\right)=\left(B C^{\prime}, B D\right)=\widehat{D B C^{\prime}}$.
+3. Ta có $B^{\prime} D^{\prime} / / B D$ nên $\left(B C^{\prime}, B^{\prime} D^{\prime}\right)=\left(B C^{\prime}, B D\right)=\widehat{D B C^{\prime}}.$
 
-   Ta có $B D=B C^{\prime}=C^{\prime} D=A B \sqrt{2}$ nên $\triangle B D C^{\prime}$ dều, suy ra $\widehat{D B C^{\prime}}=60^{\circ}$.
+   Ta có $B D=B C^{\prime}=C^{\prime} D=A B \sqrt{2}$ nên $\triangle B D C^{\prime}$ dều, suy ra $\widehat{D B C^{\prime}}=60^{\circ}.$
 
-   Vậy $\left(B C^{\prime}, B^{\prime} D^{\prime}\right)=60^{\circ}$.
+   Vậy $\left(B C^{\prime}, B^{\prime} D^{\prime}\right)=60^{\circ}.$
 
-**Ví dụ 2.** Cho hình chóp $S . A B C$ có $S A=S B=S C=A B=A C=a \sqrt{2}$ và $B C=2 a$. Tính góc giữa hai đường thẳng $A C$ và $S B$.
+**Ví dụ 2.** Cho hình chóp $S . A B C$ có $S A=S B=S C=A B=A C=a \sqrt{2}$ và $B C=2 a.$ Tính góc giữa hai đường thẳng $A C$ và $S B.$
 
 **Lời giải.**
 
 ![Góc giữa hai đường thẳng trong không gian 2](assets/images/goc-giua-hai-duong-thang-trong-khong-gian-hinh-chop-tam-giac.jpg)
 
-Ta có $S A B$ và $S A C$ là tam giác đều, $A B C$ và $S B C$ là tam giác vuông cân cạnh huyền $B C$.
-Gọi $M, N, P$ lần lượt là trung điểm của $S A, A B, B C$, ta có $M N / / S B, N P / / A C$ nên $(A C, S B)=(N P, M N)$.
+Ta có $S A B$ và $S A C$ là tam giác đều, $A B C$ và $S B C$ là tam giác vuông cân cạnh huyền $B C.$
+Gọi $M, N, P$ lần lượt là trung điểm của $S A, A B, B C$, ta có $M N / / S B, N P / / A C$ nên $(A C, S B)=(N P, M N).$
 
 \begin{aligned}
 &M N=\frac{S B}{2}=\frac{a \sqrt{2}}{2}, N P=\frac{A C}{2}=\frac{a \sqrt{2}}{2} . \\
 &A P=S P=\frac{B C}{2}=a, S A=a \sqrt{2}
 \end{aligned}
 
-**Ví dụ 3.** Cho hình chóp S.ABC có đáy là tam giác đều cạnh a, $SA\bot \left( ABC \right)$ và $SA=a\sqrt{3}$. Gọi M, N lần lượt là trung điểm của AB và SC. Tính cosin góc giữa hai đường thẳng AN và CM.
+**Ví dụ 3.** Cho hình chóp S.ABC có đáy là tam giác đều cạnh a, $SA\bot \left( ABC \right)$ và $SA=a\sqrt{3}.$ Gọi M, N lần lượt là trung điểm của AB và SC. Tính cosin góc giữa hai đường thẳng AN và CM.
 
-**Cách 1:** Dựng hình bình hành AMCE suy ra $AM=CE=\frac{a}{2}$.
+**Cách 1:** Dựng hình bình hành AMCE suy ra $AM=CE=\frac{a}{2}.$
 
 ![Góc giữa hai đường thẳng trong không gian 3](assets/images/goc-giua-hai-duong-thang-trong-khong-gian-bai-tap-goc-giua-hai-duong-thang-trong-khong-gian.png)
 
@@ -120,7 +120,7 @@ Lại có: $AN=\frac{SC}{2}=a;CM=\frac{a\sqrt{3}}{2}\Rightarrow \cos \varphi =\f
 
 **Bình luận:** Dựa vào hai cách làm trên ta thấy rằng, trong một số trường hợp, việc sử dụng công cụ vectơ để tính góc giữa hai đường thẳng giúp bài toán trở nên dễ ràng hơn rất nhiều!.
 
-**Ví dụ 4.** Cho hình chóp S.ABC có $SA=SB=SC=AB=a;AC=a\sqrt{2}$ và $BC=a\sqrt{3}$. Tính cosin góc giữa hai đường thẳng SC và AB.
+**Ví dụ 4.** Cho hình chóp S.ABC có $SA=SB=SC=AB=a;AC=a\sqrt{2}$ và $BC=a\sqrt{3}.$ Tính cosin góc giữa hai đường thẳng SC và AB.
 
 ![Góc giữa hai đường thẳng trong không gian 4](assets/images/goc-giua-hai-duong-thang-trong-khong-gian-bai-tap-goc-giua-hai-duong-thang-trong-khong-gian-2.png)
 

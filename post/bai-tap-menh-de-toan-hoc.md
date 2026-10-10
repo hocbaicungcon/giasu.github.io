@@ -23,13 +23,13 @@ grade: 10
 
 - “Hà Nội là thủ đô của Việt Nam.”
 
-- “$\sqrt{3}+\sqrt{2}=\frac{1}{\sqrt{3}-\sqrt{2}}$.”
+- “$\sqrt{3}+\sqrt{2}=\frac{1}{\sqrt{3}-\sqrt{2}}.$”
 
 - “$\forall n\in \mathbb{N}, n^2+n$ là số chẵn.”
 
 - “$\forall n\in \mathbb{N}, 2n^2+1$ chia hết cho 3.”
 
-- “Tam giác nào cũng có ít nhất một góc nhỏ hơn 60$^\circ$.”
+- “Tam giác nào cũng có ít nhất một góc nhỏ hơn 60$^\circ.$”
 
 - “Tồn tại một hình thang có ba góc tù.”
 
@@ -59,7 +59,7 @@ grade: 10
 
 - $1<x<3.$
 
-**Bài 4.** Cho đa thức $f(x)=ax^2+bx+c$. Xét mệnh đề: “Nếu $a+b+c=0$ thì phương trình $f(x)=0$ có một nghiệm bằng $1$”. Hãy phát biểu mệnh đề đảo của mệnh đề trên. Nêu một điều kiện cần và đủ để phương trình $f(x)=0$ có một nghiệm bằng $1$.
+**Bài 4.** Cho đa thức $f(x)=ax^2+bx+c.$ Xét mệnh đề: “Nếu $a+b+c=0$ thì phương trình $f(x)=0$ có một nghiệm bằng $1$”. Hãy phát biểu mệnh đề đảo của mệnh đề trên. Nêu một điều kiện cần và đủ để phương trình $f(x)=0$ có một nghiệm bằng $1.$
 
 **Bài 5.** Phát biểu định lý sau, sử dụng thuật ngữ “điều kiện đủ”.
 

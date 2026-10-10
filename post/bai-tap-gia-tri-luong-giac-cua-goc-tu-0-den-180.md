@@ -16,7 +16,7 @@ grade: 10
 
 Để làm được các bài tập giá trị lượng giác của góc từ 0 đến 180°, các em học sinh cần khi nắm vững định nghĩa và các công thức trong bài [Giá trị lượng giác của góc từ 0 đến 180 độ](/bai-viet/gia-tri-luong-giac-cua-goc-tu-0-den-180.html).
 
-**Bài 1.** Cho $\sin x =\frac{5}{13}\left(90^{\circ}<x<180^{\circ}\right)$. Tính các giá trị lượng giác còn lại.
+**Bài 1.** Cho $\sin x =\frac{5}{13}\left(90^{\circ}<x<180^{\circ}\right).$ Tính các giá trị lượng giác còn lại.
 
 **Hướng dẫn.** Từ đẳng thức $\sin^2x+\cos^2x=1$ ta suy ra 
 
@@ -24,15 +24,15 @@ $$
 \cos ^{2} x =1-\sin ^{2} x =1-\frac{25}{169}=\frac{144}{169}
 $$
 
- Mặt khác, $90^{\circ}<x<180^{\circ}$ nên $\cos x <0$. Do đó, 
+ Mặt khác, $90^{\circ}<x<180^{\circ}$ nên $\cos x <0.$ Do đó, 
 
 $$
 \cos x=-\frac{12}{13}
 $$
 
-Từ đó tính được $\tan x=\frac{5}{13} \cdot-\frac{13}{12}=-\frac{5}{12}, \cot x=-\frac{12}{5}$.
+Từ đó tính được $\tan x=\frac{5}{13} \cdot-\frac{13}{12}=-\frac{5}{12}, \cot x=-\frac{12}{5}.$
 
-**Bài 2.** Biết $\cot 15^\circ=2+\sqrt{3}$. Tính các giá trị lượng giác còn lại của góc $15^{\circ}$.
+**Bài 2.** Biết $\cot 15^\circ=2+\sqrt{3}.$ Tính các giá trị lượng giác còn lại của góc $15^{\circ}.$
 
 **Hướng dẫn.** Dễ dàng có ngay 
 
@@ -70,7 +70,7 @@ $$
 \sin 15^\circ=\tan 15^\circ \cdot \cos 15^\circ=\frac{\sqrt{2-\sqrt{3}}}{2}
 $$
 
-**Bài 3.** Cho $\tan \alpha=3$. Tính:
+**Bài 3.** Cho $\tan \alpha=3.$ Tính:
 
 1. $\frac{2 \sin \alpha+3 \cos \alpha}{4 \sin \alpha-11 \cos \alpha}$
 

@@ -72,7 +72,7 @@ a) $\sqrt{{{x}^{2}}-4x+4}+\sqrt{{{x}^{2}}+4x+4}=6$
 b) $\sqrt{4+4x+{{x}^{2}}}=x-2$
 
 **Bài 6:
-a) Tìm giá trị lớn nhất của biểu thức $y = \sqrt { – {x^2} + 2x + 2}$.
+a) Tìm giá trị lớn nhất của biểu thức $y = \sqrt { – {x^2} + 2x + 2}.$
 
 b) Tìm giá trị nhỏ nhất của biểu thức $y = 5 + \sqrt {2{x^2} – 8x + 9}$
 
@@ -140,7 +140,7 @@ $$
 
 a) Tìm điều kiện của $x$ để biểu thức $A$ có nghĩa.
 
-b) Tìm GTLN và GTNN của $A$.
+b) Tìm GTLN và GTNN của $A.$
 
 **Bài 10:** Tính: 
 
@@ -236,9 +236,9 @@ $$
 
 a) Tìm điều kiện để biểu thức $A$ xác định.
 
-b) Rút gọn biểu thức $A$.
+b) Rút gọn biểu thức $A.$
 
-c) Tính giá trị của $A$ khi $x=\frac{1}{2}$, $x=-\frac{1}{2}$.
+c) Tính giá trị của $A$ khi $x=\frac{1}{2}$, $x=-\frac{1}{2}.$
 
 **Bài 11:** Tìm GTLN và GTNN của 
 
@@ -252,7 +252,7 @@ $$
 M=\frac{\sqrt{a}+1}{a\sqrt{a}+a+\sqrt{a}}:\frac{1}{{{a}^{2}}-\sqrt{a}}
 $$
 
- với $a>0\ne 1$.
+ với $a>0\ne 1.$
 
 ## 4: BÀI TẬP VỀ CĂN BẬC BA.
 

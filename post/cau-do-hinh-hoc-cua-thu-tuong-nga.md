@@ -32,14 +32,14 @@ Thế rồi Mishustin ra một đề toán, bảo các học sinh giải đi, ô
 
 ## Lời giải Câu đố hình học của thủ tướng Nga
 
-Đầu tiên, chúng ta hãy tìm cách dựng một đường thẳng vuông góc với đường kính trước. Giả sử đường kính là $AB$, điểm cần dựng đường vuông góc xuống là $C$.
+Đầu tiên, chúng ta hãy tìm cách dựng một đường thẳng vuông góc với đường kính trước. Giả sử đường kính là $AB$, điểm cần dựng đường vuông góc xuống là $C.$
 
 ![Câu đố hình học của thủ tướng Nga 1](assets/images/cau-do-hinh-hoc-cua-thu-tuong-nga-loi-giai-cau-do-thu-tuong-nga.png)
 
-Lấy một điểm $D$ bất kì thuộc nửa đường tròn chứa điểm $C$, không trùng với $C$. Kéo dài $AD$ và $BC$ cắt nhau tại $E$. Tam giác $ABE$ có hai đường cao là $AC$ và $BD$. Gao điểm của hai đường cao này chính là trực tâm $H$ của tam giác $ABE$ và ta có ngay $EH$ vuông góc với đường kính $AB$.
+Lấy một điểm $D$ bất kì thuộc nửa đường tròn chứa điểm $C$, không trùng với $C.$ Kéo dài $AD$ và $BC$ cắt nhau tại $E.$ Tam giác $ABE$ có hai đường cao là $AC$ và $BD.$ Gao điểm của hai đường cao này chính là trực tâm $H$ của tam giác $ABE$ và ta có ngay $EH$ vuông góc với đường kính $AB.$
 
 Tiếp theo, chúng ta đi dựng một đường thẳng đi quá $C$ và song song với $EH$ thì đó chính là đường thẳng mà đề bài yêu cầu.
 
-Giả sử $EH$ cắt đường tròn tại hai điểm $I,J$ như hình vẽ. Nối $CI$ cắt đường kính $AB$ tại $K$. Nối $JK$ cắt đường tròn tại $M$ thì $CM$ chính là đường thẳng cần tìm. (Bạn đọc tự chỉ ra $CMIJ$ là hình thang để từ đó có $CM$ song song với $IJ$).
+Giả sử $EH$ cắt đường tròn tại hai điểm $I,J$ như hình vẽ. Nối $CI$ cắt đường kính $AB$ tại $K.$ Nối $JK$ cắt đường tròn tại $M$ thì $CM$ chính là đường thẳng cần tìm. (Bạn đọc tự chỉ ra $CMIJ$ là hình thang để từ đó có $CM$ song song với $IJ$).
 
 ![lời giải câu đố của thủ tướng nga](assets/images/cau-do-hinh-hoc-cua-thu-tuong-nga-bai-toan-cua-thu-tuong-nga.png)

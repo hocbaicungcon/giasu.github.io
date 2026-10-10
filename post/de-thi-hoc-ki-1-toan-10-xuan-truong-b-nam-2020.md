@@ -24,15 +24,15 @@ C. $20.$
 
 D. $20\sqrt{3}.$
 
-Câu 2: Cho hàm số $y=\frac{x+2}{\sqrt{x-1}}+\sqrt{3-x}$. Tập xác định của hàm số là
+Câu 2: Cho hàm số $y=\frac{x+2}{\sqrt{x-1}}+\sqrt{3-x}.$ Tập xác định của hàm số là
 
-A. $\left( 1;3 \right)$.
+A. $\left( 1;3 \right).$
 
-B. $\left[ 1;3 \right]$.
+B. $\left[ 1;3 \right].$
 
 C. $\left( 1;3 \right]$ .
 
-D. $\left[ 1;3 \right)$.
+D. $\left[ 1;3 \right).$
 
 Câu 3: Tất cả các giá trị của tham số $m$ để phương trình $m{{\text{x}}^{2}}+2m\text{x}+m+1=0$ có hai nghiệm phân biệt là
 
@@ -106,7 +106,7 @@ D. $m\in \left[ -\frac{1}{4};1 \right].$
 
 Câu 10: Cho hàm số $y=\text{a}{{\text{x}}^{2}}+b\text{x}+c,$ với $a\ne 0$ . Khi đó tọa độ đỉnh của đồ thị hàm số là
 
-A. $\left( -\frac{b}{2a};\frac{-\Delta }{4\text{a}} \right)$.
+A. $\left( -\frac{b}{2a};\frac{-\Delta }{4\text{a}} \right).$
 
 B. $\left( \frac{b}{2a};\frac{-\Delta }{4\text{a}} \right)$
 
@@ -154,7 +154,7 @@ C. 1.
 
 D. 0.
 
-Câu 15: Trên hệ trục tọa độ $Oxy$cho hình bình hành $ABCD$ có $A(-1;3),$ $B(2;4),$ $C(0;1)$. Tọa độ đỉnh D là
+Câu 15: Trên hệ trục tọa độ $Oxy$cho hình bình hành $ABCD$ có $A(-1;3),$ $B(2;4),$ $C(0;1).$ Tọa độ đỉnh D là
 
 A. $D(3;0).$
 
@@ -166,13 +166,13 @@ D. $D(-3;0).$
 
 Câu 16: Trong các hàm số sau, hàm số nào đồng biến trên $R$?
 
-A. $y={{x}^{2}}+1$.
+A. $y={{x}^{2}}+1.$
 
-B. $y=3\text{x}-2$.
+B. $y=3\text{x}-2.$
 
-C. $y=-{{x}^{2}}+1$.
+C. $y=-{{x}^{2}}+1.$
 
-D. $y=2-3\text{x}$.
+D. $y=2-3\text{x}.$
 
 Câu 17: Tập xác định của hàm số $y=\frac{1}{{{x}^{2}}-4\text{x}+4}$ là
 
@@ -234,7 +234,7 @@ C. $\frac{16}{25}.$
 
 D. $\pm \frac{4}{5}.$
 
-Câu 23: Trên mặt phẳng tọa độ $Oxy$ cho hai điểm $A(1;2),$ $B(-3;1)$. Số điểm $C$ thuộc trục tung để tam giác $ABC$ cân tại $A$ là
+Câu 23: Trên mặt phẳng tọa độ $Oxy$ cho hai điểm $A(1;2),$ $B(-3;1).$ Số điểm $C$ thuộc trục tung để tam giác $ABC$ cân tại $A$ là
 
 A. $2.$
 
@@ -278,13 +278,13 @@ $$
 m{{x}^{2}}+(2x+1)m+5-5x=0
 $$
 
-**Câu 3.** (*1,5 điểm*) Trên mặt phẳng tọa độ $Oxy$ cho tam giác *ABC* có $A(1;1)$, $B(2;4)$, $C(10;-2)$ và đường cao $AH$.
+**Câu 3.** (*1,5 điểm*) Trên mặt phẳng tọa độ $Oxy$ cho tam giác *ABC* có $A(1;1)$, $B(2;4)$, $C(10;-2)$ và đường cao $AH.$
 
 1. Chứng minh tam giác *ABC* vuông tại $A$;
 
 2. Tính cosin của góc $B$;
 
-3. Tìm tọa độ của điểm $H$.
+3. Tìm tọa độ của điểm $H.$
 
 **Câu 4.** (*0,5 điểm*)
 

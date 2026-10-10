@@ -36,7 +36,7 @@ $$
 x+\frac{1}{x}\ge 2,\forall x>0
 $$
 
- Đẳng thức xảy ra khi $x=2$.
+ Đẳng thức xảy ra khi $x=2.$
 
 **Hướng dẫn.**  Bài tập trên chỉ cần sử dụng bất đẳng thức Cauchy (AM-GM) chi hai số dương là xong. Tuy nhiên, khá nhiều bạn bạn lúng túng khi gặp bất đẳng thức sau:
 
@@ -54,11 +54,11 @@ $$
 S=x+\frac{1}{x} \ge 2\sqrt{x\cdot \frac{1}{x}}=2
 $$
 
-Tuy nhiên, dấu bằng xảy ra khi $x=\frac{1}{x}$ hay $x=1$, không thỏa mãn giả thiết $x \ge 2$.
+Tuy nhiên, dấu bằng xảy ra khi $x=\frac{1}{x}$ hay $x=1$, không thỏa mãn giả thiết $x \ge 2.$
 
 Nhận thấy rằng khi $x$ tăng thì $S$ cũng tăng theo (bằng cách thử trực tiếp hoặc dùng máy tính CASIO vào tính năng lập bảng TABLE để thử). Từ đó dẫn đến dự đoán khi $x=2$ thì $S$ nhận giá trị nhỏ nhất.
 
-Do bất đẳng thức Côsi xảy ra dấu bằng tại điều kiện các tham số tham gia phải bằng nhau, nên tại “điểm rơi $x=2$” ta không thể sử dụng bất đẳng thức Côsi trực tiếp cho hai số$x$ và $\frac{1}{x}$ vì khi đó $x=2$ còn $\frac{1}{x}=1/2$.
+Do bất đẳng thức Côsi xảy ra dấu bằng tại điều kiện các tham số tham gia phải bằng nhau, nên tại “điểm rơi $x=2$” ta không thể sử dụng bất đẳng thức Côsi trực tiếp cho hai số$x$ và $\frac{1}{x}$ vì khi đó $x=2$ còn $\frac{1}{x}=1/2.$
 
 Lúc này ta sẽ giả định sử dụng bất đẳng thức Côsi cho cặp số $kx$ và $\frac{1}{x}$ thì biểu thức $S$ viết lại thành 
 
@@ -66,7 +66,7 @@ $$
 x+\frac{1}{x}=kx +\frac{1}{x}+\left( 1-k \right)x.
 $$
 
- Cần tìm số $k>0$ sao cho phương trình $kx=\frac{1}{x}$ xảy ra tại $x=2$. Dễ dàng tìm được $k=\frac{1}{4}$ và khi đó 
+ Cần tìm số $k>0$ sao cho phương trình $kx=\frac{1}{x}$ xảy ra tại $x=2.$ Dễ dàng tìm được $k=\frac{1}{4}$ và khi đó 
 
 $$
 S=\frac{1}{4}x+\frac{1}{x}+\frac{3}{4}x.
@@ -84,7 +84,7 @@ $$
 \frac{1}{4}x+\frac{1}{x}+\frac{3}{4}x\ge 1+\frac{3}{2}=\frac{5}{2}
 $$
 
-Dấu đẳng thức xảy ra khi $x = 2$. Vậy, giá trị nhỏ nhất của $S$ là $2$.
+Dấu đẳng thức xảy ra khi $x = 2.$ Vậy, giá trị nhỏ nhất của $S$ là $2.$
 
 **BÀI TẬP 3**: Cho $x > 0,y > 0$ và thoả mãn điều kiện $x+y=1$, chứng minh: 
 
@@ -106,13 +106,13 @@ $$
 
  với y$\ge 4$, cách chứng minh tương tự BÀI TẬP 2.
 
-**BÀI TẬP 4**: Cho $x>0, y>0,z>0$ và $x+y+z=1$. Chứng minh rằng: 
+**BÀI TẬP 4**: Cho $x>0, y>0,z>0$ và $x+y+z=1.$ Chứng minh rằng: 
 
 $$
 xyz+\frac{1}{xyz}\ge 27+\frac{1}{27}
 $$
 
- Dấu bằng xảy ra khi $x = y = z = \frac{1}{3}$.
+ Dấu bằng xảy ra khi $x = y = z = \frac{1}{3}.$
 
 Sử dụng các bài tập 2, 3, 4, chúng ta có thể chứng minh bài tập sau:
 
@@ -124,15 +124,15 @@ $$
 \sqrt{x+\frac{1}{{{x}^{2}}}}+\sqrt{y+\frac{1}{{{y}^{2}}}}\ge \sqrt{18},
 $$
 
- dấu đẳng thức xảy ra khi $x=y=\frac{1}{2}$.
+ dấu đẳng thức xảy ra khi $x=y=\frac{1}{2}.$
 
-b) Cho $x>0,y>0,z>0$ và thoả mãn $x+y+z=1$. Chứng minh 
+b) Cho $x>0,y>0,z>0$ và thoả mãn $x+y+z=1.$ Chứng minh 
 
 $$
 \sqrt{{{x}^{2}}+\frac{1}{{{x}^{2}}}}+\sqrt{{{y}^{2}}+\frac{1}{{{y}^{2}}}}+\sqrt{{{z}^{2}}+\frac{1}{{{z}^{2}}}}\ge \sqrt{82}
 $$
 
- Dấu đẳng thức xảy ra khi $x = y = z = \frac{1}{3}$.
+ Dấu đẳng thức xảy ra khi $x = y = z = \frac{1}{3}.$
 
 **Hướng dẫn.**
 

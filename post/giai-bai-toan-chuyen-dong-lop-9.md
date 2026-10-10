@@ -49,13 +49,13 @@ Một Ô tô đi từ A đến B cùng một lúc, Ô tô thứ hai đi từ  B
 
 - Sau 5 giờ Ô tô đi từ A đến B đi được quãng đường là: $5. \frac{AB}{x}$ (km);
 
-- Sau 5 giờ Ô tô đi từ B đến A đi được quãng đường là: $5. \frac{2}{3}$. $\frac{AB}{x}$ (km);
+- Sau 5 giờ Ô tô đi từ B đến A đi được quãng đường là: $5. \frac{2}{3}.$ $\frac{AB}{x}$ (km);
 
 - Vì sau 5 giờ chúng gặp nhau do đó ta có phương trình: $5. \frac{AB}{x} + 5. \frac{2}{3}. \frac{AB}{x} = AB$;
 
-- Giải phương trình ta được: x = $\frac{25}{3}$.
+- Giải phương trình ta được: x = $\frac{25}{3}.$
 
-- Vậy thời gian Ô tô đi từ A đến B là $\frac{25}{3}$, thời gian Ô tô đi từ B đến A là $\frac{25}{2}$.
+- Vậy thời gian Ô tô đi từ A đến B là $\frac{25}{3}$, thời gian Ô tô đi từ B đến A là $\frac{25}{2}.$
 
 **Bài toán 2**. (Dạng toán chuyển động)
 
@@ -76,7 +76,7 @@ Một Ô tô du  lịch đi từ A đến C. Cùng lúc từ địa điểm B n
   \frac{BC}{5} =\frac{3}{5}.\frac{BC}{5-x}
   $$
 
-  Giải phương trình ta được: $x = 2$.
+  Giải phương trình ta được: $x = 2.$
 
 - Vậy Ô tô du lịch đi từ A đến B mất 2 giờ.
 
@@ -97,7 +97,7 @@ Một Ô tô du  lịch đi từ A đến C. Cùng lúc từ địa điểm B n
   2(x + 17) – \frac{10}{3}x =10
   $$
 
-  Giải phương trình này ta được $x = 18$.
+  Giải phương trình này ta được $x = 18.$
 
 - Vậy vận tốc của Ca nô là: 18 km/h.
 
@@ -118,7 +118,7 @@ $$
 \frac{50}{x} – \frac{50}{2,5x} = 2,5
 $$
 
- Giải phương trình bậc nhất này ta được $x = 12$.
+ Giải phương trình bậc nhất này ta được $x = 12.$
 
 Vậy vận tốc của người đi xe đạp là 12 km/h, vận tốc của người đi xe máy là 30 km/h.
 
@@ -137,7 +137,7 @@ $$
 \frac{x}{30} + \frac{x}{25}+ \frac{1}{3} = 5\frac{5}{6}
 $$
 
- Giải phương trình này ta được $x = 75$.
+ Giải phương trình này ta được $x = 75.$
 
 Vậy độ dài quãng đường AB là 75 km/h.
 
@@ -158,7 +158,7 @@ $$
 \frac{\frac{x}{2}+60}{40}-\frac{\frac{x}{2}+60}{50}= 1
 $$
 
- Giải PTBN ta được: $x = 280$.
+ Giải PTBN ta được: $x = 280.$
 
 Vậy quãng đường AB dài 280 km.
 
@@ -273,7 +273,7 @@ Thời gian Tàu thuỷ đi xuôi dòng là: $\frac{80}{x+4}$ (h), Thời gian T
 
 Vì tổng thời gian cả xuôi dòng và ngược dòng là 8 giờ 20 phút do đo ta có phương trình:
 
-$\frac{80}{x+4}$ + $\frac{80}{x-4}$=$\frac{25}{3}$.
+$\frac{80}{x+4}$ + $\frac{80}{x-4}$=$\frac{25}{3}.$
 
 Giải PTBH:  được: x = 20 (TM).
 

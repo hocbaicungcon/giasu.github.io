@@ -33,9 +33,9 @@ $$
 \sqrt[3]{A}\pm\sqrt[3]{B}=\frac{A\pm B}{(\sqrt[3]{A})^2\pm\sqrt[3]{A}\sqrt[3]{B}+(\sqrt[3]{B})^2}
 $$
 
-- **Bước 1.** Nhẩm nghiệm hoặc [dùng máy tính](/bai-viet/huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem.html) để tìm nghiệm của phương trình, giả sử nghiệm của pt là $x_0$.
+- **Bước 1.** Nhẩm nghiệm hoặc [dùng máy tính](/bai-viet/huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem.html) để tìm nghiệm của phương trình, giả sử nghiệm của pt là $x_0.$
 
-- **Bước 2.** Phân tích (tách hoặc thêm bớt các hạng tử thích hợp), sau đó nhân chia với biểu thức liên hợp sao cho sau khi nhân chia liên hợp ta được có biểu thức có chứa nhân tử $x – x_0$.
+- **Bước 2.** Phân tích (tách hoặc thêm bớt các hạng tử thích hợp), sau đó nhân chia với biểu thức liên hợp sao cho sau khi nhân chia liên hợp ta được có biểu thức có chứa nhân tử $x – x_0.$
 
 Xem thêm:
 
@@ -53,7 +53,7 @@ $$
 x^3 + 11 = 3\sqrt {x + 3}
 $$
 
- **Hướng dẫn.** Chúng ta đoán (hoặc dùng lệnh SOLVE của máy tính CASIO) và nhận thấy phương trình có nghiệm $x=2$. Tức là, chắc chắn phương trình sẽ có nhân tử là $(x-2)$, nhưng chúng ta khó phân tích biểu thức chứa căn thành nhân tử, nên sẽ tìm cách chuyển về đa thức rồi phân tích. Cụ thể, chúng ta tách $11=8+3$ rồi biến đổi như sau
+ **Hướng dẫn.** Chúng ta đoán (hoặc dùng lệnh SOLVE của máy tính CASIO) và nhận thấy phương trình có nghiệm $x=2.$ Tức là, chắc chắn phương trình sẽ có nhân tử là $(x-2)$, nhưng chúng ta khó phân tích biểu thức chứa căn thành nhân tử, nên sẽ tìm cách chuyển về đa thức rồi phân tích. Cụ thể, chúng ta tách $11=8+3$ rồi biến đổi như sau
 
 $$
 \begin{aligned}
@@ -108,7 +108,7 @@ $$
 \sqrt[3]{{{x}^{2}}-1}+x=\sqrt{{{x}^{3}}-2}
 $$
 
- **Hướng dẫn.** Điều kiện $x\ge \sqrt[3]{2}$. Đoán được nghiệm $x=3$ nên ta tách rồi nhân liên hợp như sau: 
+ **Hướng dẫn.** Điều kiện $x\ge \sqrt[3]{2}.$ Đoán được nghiệm $x=3$ nên ta tách rồi nhân liên hợp như sau: 
 
 $$
 \begin{aligned}
@@ -223,7 +223,7 @@ $$
 (x+3)\sqrt{x+4}+(x+9)\sqrt{x+11}=x^2+9x+10
 $$
 
- **Hướng dẫn.** Điều kiện $x\ge -4$. Dễ dàng đoán được nghiệm $x=5$, nên ta tách thành: 
+ **Hướng dẫn.** Điều kiện $x\ge -4.$ Dễ dàng đoán được nghiệm $x=5$, nên ta tách thành: 
 
 $$
 (x+3)\left(\sqrt{x+4}-3\right)+(x+9)\left(\sqrt{x+11}-4\right)=x^2+2x-35
@@ -308,7 +308,7 @@ $$
 \left( \sqrt{x-1}+\sqrt{x+2} \right)\left( \sqrt{{{x}^{2}}+x-2}-1 \right)=3
 $$
 
- **Hướng dẫn.** Điều kiện xác định của phương trình là $x\ge 1$. Với diều kiện đó, ta có: $(x+2)-(x-1)=3>0$ nên $\sqrt{x+2}-\sqrt{x-1}>0$ với $x\ge 1$. Nhân hai vế của phương trình với $\sqrt{x+2}-\sqrt{x-1}$ ta được 
+ **Hướng dẫn.** Điều kiện xác định của phương trình là $x\ge 1.$ Với diều kiện đó, ta có: $(x+2)-(x-1)=3>0$ nên $\sqrt{x+2}-\sqrt{x-1}>0$ với $x\ge 1.$ Nhân hai vế của phương trình với $\sqrt{x+2}-\sqrt{x-1}$ ta được 
 
 $$
 \begin{aligned}
@@ -352,7 +352,7 @@ $$
 \end{aligned}
 $$
 
- Kết hợp với điều kiện $x\ge 1$ ta được tập nghiệm của bất phương trình là $S=[2,+\infty)$.
+ Kết hợp với điều kiện $x\ge 1$ ta được tập nghiệm của bất phương trình là $S=[2,+\infty).$
 
 **Nhận xét.** Bất phương trình này hoàn toàn có thể giải được bằng phương pháp đặt ẩn phụ. Xin mời bạn thử!
 
@@ -477,7 +477,7 @@ $$
 
 **Bài 14.** Giải phương trình $\sqrt{x^2+12}+5=3x+\sqrt{x^2+5}$
 
-**Hướng dẫn.** Để phương trình có nghiệm thì: $\sqrt{{{x}^{2}}+12}-\sqrt{{{x}^{2}}+5}=3x-5\ge 0\Leftrightarrow x\ge \frac{5}{3}$. Biến đổi phương trình thành 
+**Hướng dẫn.** Để phương trình có nghiệm thì: $\sqrt{{{x}^{2}}+12}-\sqrt{{{x}^{2}}+5}=3x-5\ge 0\Leftrightarrow x\ge \frac{5}{3}.$ Biến đổi phương trình thành 
 
 $$
 \begin{aligned}
@@ -486,7 +486,7 @@ $$
 \end{aligned}
 $$
 
- Chứng minh được $\frac{x+2}{\sqrt{{{x}^{2}}+12}+4}-\frac{x+2}{\sqrt{{{x}^{2}}+5}+3}-3<0,\forall x>\frac{5}{3}$.
+ Chứng minh được $\frac{x+2}{\sqrt{{{x}^{2}}+12}+4}-\frac{x+2}{\sqrt{{{x}^{2}}+5}+3}-3<0,\forall x>\frac{5}{3}.$
 
 Đáp số. $x=2$
 

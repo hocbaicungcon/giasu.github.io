@@ -41,7 +41,7 @@ Muốn tính được khoảng cách giữa hai đường thẳng chéo nhau th�
 
   ![cách tính khoảng cách giữa hai đường thẳng chéo nhau trong không gian](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-cách-tính-khoảng-cách-giữa-hai-đường-thẳng-chéo-nhau.jpg)
 
-  Trong thực tế, việc tạo ra mặt phẳng $(P)$ song song với đường thẳng $a$ thường được thực hiện bằng cách, dựng hoặc tìm một đường thẳng $a’$ nào đó song song với $a$ và cắt đường thẳng $b$. Lúc này, mặt phẳng $(P)$ chính là mặt phẳng xác định bởi hai đường thẳng cắt nhau $a’$ và $b$. Và, việc tính khoảng cách tiếp tục quy về [khoảng cách từ một điểm tới một mặt phẳng](/bai-viet/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang.html) bằng cách lấy một điểm $M$ bất kỳ thuộc đường thẳng $a$ và tính khoảng cách từ $M$ tới $(P)$.
+  Trong thực tế, việc tạo ra mặt phẳng $(P)$ song song với đường thẳng $a$ thường được thực hiện bằng cách, dựng hoặc tìm một đường thẳng $a’$ nào đó song song với $a$ và cắt đường thẳng $b.$ Lúc này, mặt phẳng $(P)$ chính là mặt phẳng xác định bởi hai đường thẳng cắt nhau $a’$ và $b.$ Và, việc tính khoảng cách tiếp tục quy về [khoảng cách từ một điểm tới một mặt phẳng](/bai-viet/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang.html) bằng cách lấy một điểm $M$ bất kỳ thuộc đường thẳng $a$ và tính khoảng cách từ $M$ tới $(P).$
 
 - **Cách 3.** Chuyển về tính khoảng cách giữa hai mặt phẳng song song lần lượt chứa hai đường thẳng đã cho.
 
@@ -65,11 +65,11 @@ Sau đây chúng ta cùng nhau tìm hiểu các ví dụ minh họa về tính k
 
 ### 2.1. Tính khoảng cách giữa hai đường thẳng chéo nhau bằng cách đưa về khoảng cách giữa đường thẳng và mặt phẳng song song
 
-**Ví dụ 1.** [Câu 40, Đề minh họa Tốt nghiệp 2020] Cho hình chóp $S.ABC$ có $SA$ vuông góc với đáy $(ABC)$, $SA=a$, tam giác $ABC$ vuông tại $A$ và $AB=2a,$ $AC=4a$. Gọi $M$ là trung điểm của $AB$. Tính khoảng cách giữa hai đường thẳng $SM$ và $BC$.
+**Ví dụ 1.** [Câu 40, Đề minh họa Tốt nghiệp 2020] Cho hình chóp $S.ABC$ có $SA$ vuông góc với đáy $(ABC)$, $SA=a$, tam giác $ABC$ vuông tại $A$ và $AB=2a,$ $AC=4a.$ Gọi $M$ là trung điểm của $AB.$ Tính khoảng cách giữa hai đường thẳng $SM$ và $BC.$
 
 **Phân tích.** Để dựng một mặt phẳng chứa một trong hai đường thẳng $SM$ và $BC$ đồng thời vuông góc với đường còn lại thì chúng ta cần xem xét, việc dựng mặt phẳng song song với đường thẳng nào dễ dàng hơn.
 
-Rõ ràng việc kẻ một đường thẳng cắt $SM$ và song song với $BC$ rất đơn giản, chỉ việc qua $M$ kẻ đường thẳng song song với $BC$, đường thẳng này chính là đường trung bình của tam giác $ABC$. Do đó, chúng ta sẽ ưu tiên chọn cách làm này.
+Rõ ràng việc kẻ một đường thẳng cắt $SM$ và song song với $BC$ rất đơn giản, chỉ việc qua $M$ kẻ đường thẳng song song với $BC$, đường thẳng này chính là đường trung bình của tam giác $ABC.$ Do đó, chúng ta sẽ ưu tiên chọn cách làm này.
 
 ![khoảng cách hai đường thẳng chéo nhau đề minh họa 2020](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-khoảng-cách-hai-đường-thẳng-chéo-nhau.jpg)
 
@@ -107,7 +107,7 @@ $$
 
 ![hình chóp s.abcd đáy là hình vuông khoảng cách hai đường thẳng chéo nhau AD và SC](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-hình-chóp-s.abcd-đáy-là-hình-vuông-khoảng-cách-hai-đường-thẳng-chéo-nhau-AD-và-SC.jpg)
 
-**Hướng dẫn.** Có $AB\parallel CD$ nên $AB\parallel (SCD)$. Do đó 
+**Hướng dẫn.** Có $AB\parallel CD$ nên $AB\parallel (SCD).$ Do đó 
 
 $$
 d(AB,SC)=d(AB,(SCD))=d(A,(SCD))
@@ -121,11 +121,11 @@ $$
 
 Nếu bài viết hữu ích, bạn có thể tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
 
-**Ví dụ 3.** [Đề Đại học Khối D năm 2008] Cho lăng trụ đứng tam giác $ABC.A’B’C’$ có đáy $ABC$ là tam giác vuông với $BA=BC=a$, cạnh bên $AA’=a\sqrt{2}.$ Gọi $M$ là trung điểm của $BC$. Tính khoảng cách giữa hai đường thẳng $AM$ và $B’C$.
+**Ví dụ 3.** [Đề Đại học Khối D năm 2008] Cho lăng trụ đứng tam giác $ABC.A’B’C’$ có đáy $ABC$ là tam giác vuông với $BA=BC=a$, cạnh bên $AA’=a\sqrt{2}.$ Gọi $M$ là trung điểm của $BC.$ Tính khoảng cách giữa hai đường thẳng $AM$ và $B’C.$
 
 ![Khối D năm 2008 Cho lang tru dung tam giac ABC](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Cho-lang-tru-dung-tam-gia-ABC.jpg)
 
-**Hướng dẫn.** Lấy $N$ là trung điểm của $BB’$, ta có $MN$ là đường trung bình của tam giác $B’BC$ nên $B’C$ song song với $MN$. Như vậy đường thẳng $B’C$ song song với mặt phẳng $(AMN)$, và do đó
+**Hướng dẫn.** Lấy $N$ là trung điểm của $BB’$, ta có $MN$ là đường trung bình của tam giác $B’BC$ nên $B’C$ song song với $MN.$ Như vậy đường thẳng $B’C$ song song với mặt phẳng $(AMN)$, và do đó
 
 $$
 {d}(B’C,AM)={d}(B’C,(AMN))={d}(B'(AMN))
@@ -145,11 +145,11 @@ $$
 
  Từ đó tìm được khoảng cách từ giữa $B’C$ và $AM$ là $\frac{a}{\sqrt{7}}.$
 
-**Ví dụ 4.** Cho hình chóp đều $S.ABCD$ có đáy là hình vuông cạnh $a,$ cạnh $SA=a\sqrt{2}$. Tính khoảng cách giữa $AB$ và $SC.$
+**Ví dụ 4.** Cho hình chóp đều $S.ABCD$ có đáy là hình vuông cạnh $a,$ cạnh $SA=a\sqrt{2}.$ Tính khoảng cách giữa $AB$ và $SC.$
 
 ![Hình chóp đều S.ABCD có đáy là hình vuông cạnh a](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Hình-chóp-đều-S.ABCD-có-đáy-là-hình-vuông-cạnh-a.jpg)
 
-**Hướng dẫn.** Có $AB\parallel CD$ nên $AB\parallel (SCD)$. Do đó, gọi $O$ là tâm hình vuông thì có 
+**Hướng dẫn.** Có $AB\parallel CD$ nên $AB\parallel (SCD).$ Do đó, gọi $O$ là tâm hình vuông thì có 
 
 $$
 {d}(AB,SC)={d}(AB,(SCD))={d}(A,(SCD))
@@ -161,9 +161,9 @@ $$
 \frac{d(A,(SCD))}{d(O,(SCD))}=\frac{AC}{OC}=2
 $$
 
- Suy ra $d(A,(SCD))=2d(O,(SCD))$. Đây chính là bài toán 1, kẻ vuông góc hai lần và tìm được đáp số $\mathrm{d}(AB,SC)=\frac{2a\sqrt{21}}{7}.$
+ Suy ra $d(A,(SCD))=2d(O,(SCD)).$ Đây chính là bài toán 1, kẻ vuông góc hai lần và tìm được đáp số $\mathrm{d}(AB,SC)=\frac{2a\sqrt{21}}{7}.$
 
-**Ví dụ 5.** [Đề ĐH khối A năm 2006] Cho hình lập phương $ABCD.A’B’C’D’$ có các cạnh bằng 1. Gọi $M , N$ lần lượt là trung điểm của $AB$ và $CD$. Tính khoảng cách giữa hai đường thẳng chéo nhau $A C’$ và $MN$.
+**Ví dụ 5.** [Đề ĐH khối A năm 2006] Cho hình lập phương $ABCD.A’B’C’D’$ có các cạnh bằng 1. Gọi $M , N$ lần lượt là trung điểm của $AB$ và $CD.$ Tính khoảng cách giữa hai đường thẳng chéo nhau $A C’$ và $MN.$
 
 ![Cho hình lập phương cạnh bằng 1 M N lần lượt là trung điểm AB CD](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Cho-hình-lập-phương-cạnh-bằng-1-M-N-lần-lượt-là-trung-điểm-AB-CD.jpg)
 
@@ -173,7 +173,7 @@ $$
 d(MN,AC’)=d(MN,(ADC’B’))=d(N,(ADC’B’) ).
 $$
 
- Để dựng hình chiếu vuông góc của $N$ lên mặt phẳng $(ADC’B’)$ ta chú ý rằng $N$ nằm trong mặt phẳng $(CDD’C’)$ mà hai mặt phẳng $(ADC’B’)$ và $(CDD’C’)$ vuông góc với nhau và cắt nhau theo giao tuyến $C’D$. Do đó, chúng ta chỉ cần tìm hình chiếu vuông góc của $N$ lên giao tuyến $C’D$ là được. Giả sử hình chiếu vuông góc đó là điểm $H$ thì có 
+ Để dựng hình chiếu vuông góc của $N$ lên mặt phẳng $(ADC’B’)$ ta chú ý rằng $N$ nằm trong mặt phẳng $(CDD’C’)$ mà hai mặt phẳng $(ADC’B’)$ và $(CDD’C’)$ vuông góc với nhau và cắt nhau theo giao tuyến $C’D.$ Do đó, chúng ta chỉ cần tìm hình chiếu vuông góc của $N$ lên giao tuyến $C’D$ là được. Giả sử hình chiếu vuông góc đó là điểm $H$ thì có 
 
 $$
 d(N,(ADC’B’))=NH=\frac{1}{2} CD’
@@ -181,7 +181,7 @@ $$
 
  Từ đó tìm được đáp số $d(MN,AC’)=\frac{a\sqrt{2}}{4}.$
 
-**Ví dụ 6.** [Đề ĐH khối  A năm 2004] Cho hình chóp tứ giác $S.ABCD$ có đáy là hình thoi đường chéo $AC=4,SO=2\sqrt{2}$ và $SO$ vuông góc với đáy $ABCD$, ở đây $O$ là giao điểm của $AC$ và $BD$. Gọi $M$ là trung điểm của $SC$. Tìm khoảng cách giữa hai đường thẳng chéo nhau $SA$ và $BM.$
+**Ví dụ 6.** [Đề ĐH khối  A năm 2004] Cho hình chóp tứ giác $S.ABCD$ có đáy là hình thoi đường chéo $AC=4,SO=2\sqrt{2}$ và $SO$ vuông góc với đáy $ABCD$, ở đây $O$ là giao điểm của $AC$ và $BD.$ Gọi $M$ là trung điểm của $SC.$ Tìm khoảng cách giữa hai đường thẳng chéo nhau $SA$ và $BM.$
 
 ![Hình chóp đáy là hình thoi M là trung điểm SC](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Hình-chóp-đáy-là-hình-thoi-M-là-trung-điểm-SC.jpg)
 
@@ -217,9 +217,9 @@ $$
 CK=\frac{SO\cdot AC}{2 SA}= \frac{2\sqrt{6}}{3}.
 $$
 
- Vậy khoảng cách giữa hai đường thẳng $SA$ và $BM$ là $\frac{2\sqrt{6}}{3}$.
+ Vậy khoảng cách giữa hai đường thẳng $SA$ và $BM$ là $\frac{2\sqrt{6}}{3}.$
 
-**Ví dụ 7.** Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông tại $B,$ $AB = 2a,$ $\widehat{BAC}=60^\circ,$ cạnh bên $SA$ vuông góc với đáy và $SA=a\sqrt{3}.$ Gọi $M$ là trung điểm của cạnh $AB$. Tính theo $a$ khoảng cách giữa hai đường thẳng $SB$ và $CM$.
+**Ví dụ 7.** Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông tại $B,$ $AB = 2a,$ $\widehat{BAC}=60^\circ,$ cạnh bên $SA$ vuông góc với đáy và $SA=a\sqrt{3}.$ Gọi $M$ là trung điểm của cạnh $AB.$ Tính theo $a$ khoảng cách giữa hai đường thẳng $SB$ và $CM.$
 
 ![Hình chóp S.ABC có đáy là tam giác vuông M là trung điểm AB](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Hình-chóp-S.ABC-có-đáy-là-tam-giác-vuông-M-là-trung-điểm-AB.jpg)
 
@@ -245,17 +245,17 @@ $$
 d(A,(CMN))=AH=\frac{2a\sqrt{3}}{\sqrt{29}}.
 $$
 
-**Ví dụ 8.** Cho hình chóp đều $S.ABC$ có $SA=2a,AB=a$. Gọi $M$ là trung điểm của cạnh $BC$. Tính theo $a$ khoảng cách giữa hai đường thẳng $AM,SB$.
+**Ví dụ 8.** Cho hình chóp đều $S.ABC$ có $SA=2a,AB=a.$ Gọi $M$ là trung điểm của cạnh $BC.$ Tính theo $a$ khoảng cách giữa hai đường thẳng $AM,SB.$
 
 ![Hình chóp đều S.ABC có O là tâm của đáy M là trung điểm BC](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Hình-chóp-đều-S.ABC-có-O-là-tâm-của-đáy-M-là-trung-điểm-BC.jpg)
 
-**Hướng dẫn.** Gọi $O$ là tâm tam giác đều $ABC$. Gọi $N$ là trung điểm $SC$ thì $MN\parallel SB$ nên 
+**Hướng dẫn.** Gọi $O$ là tâm tam giác đều $ABC.$ Gọi $N$ là trung điểm $SC$ thì $MN\parallel SB$ nên 
 
 $$
 d(AM,SB)=d(SB,(AMN))=d(B,(AMN))
 $$
 
- Mặt khác, vì $M$ là trung điểm $BC$ nên $d(B,(AMN))=d(C,(AMN))$.
+ Mặt khác, vì $M$ là trung điểm $BC$ nên $d(B,(AMN))=d(C,(AMN)).$
 
 Gọi $I$ là trung điểm $OC$ thì $NI\perp (ABC)$, hơn nữa $d(C,(AMN))=2d(I,(AMN)).$ Từ $I$ hạ $IJ$ vuông góc xuống $OM$ thì $J$ là trung điểm $OM.$ Tiếp tục hạ $IK$ vuông góc xuống $NJ$ thì ta có 
 
@@ -267,11 +267,11 @@ $$
 
 ### 2.2. Tính khoảng cách giữa hai đường thẳng chéo nhau bằng cách đưa về khoảng cách giữa 2 mặt phẳng song song
 
-**Ví dụ 9.** [Đề ĐH Khối B năm 2002] Cho hình lập phương $ABCD.A’B’C’D’$ cạnh $a$. Tính theo $a$ khoảng cách giữa hai đường thẳng $A’B$ và $B’D.$
+**Ví dụ 9.** [Đề ĐH Khối B năm 2002] Cho hình lập phương $ABCD.A’B’C’D’$ cạnh $a.$ Tính theo $a$ khoảng cách giữa hai đường thẳng $A’B$ và $B’D.$
 
 ![Cho hình lập phương cạnh bằng a tính khoảng cách giữa hai đường thẳng chéo nhau A'B và B'D](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Cho-hình-lập-phương-cạnh-bằng-a-tính-khoảng-cách-giữa-hai-đường-thẳng-chéo-nhau-AB-và-BD.jpg)
 
-**Hướng dẫn.** Gọi $M , N , P$ lần lượt là trung điểm các đoạn thẳng $A’ D ‘ ,BC , AD$ thì dễ dàng chứng minh được hai mặt phẳng $(A’BP)$ và $B’NDM$ song với nhau và lần lượt chứa hai đường thẳng $A’B$ và $B’D$. Do đó, khoảng cách cần tìm
+**Hướng dẫn.** Gọi $M , N , P$ lần lượt là trung điểm các đoạn thẳng $A’ D ‘ ,BC , AD$ thì dễ dàng chứng minh được hai mặt phẳng $(A’BP)$ và $B’NDM$ song với nhau và lần lượt chứa hai đường thẳng $A’B$ và $B’D.$ Do đó, khoảng cách cần tìm
 
 $$
 d(A’B,B’D)=d( (A’PB),(MDNB’))
@@ -297,7 +297,7 @@ $$
 
  Thay số vào tìm được đáp số $d(A’B,B’D)=\frac{a}{3}.$
 
-**Ví dụ 10.** Cho hình hộp đứng $ABCD.A’B’C’D’$ có đáy là hình bình hành với $AB=a$, $AD=2a$, góc $BAD$ bằng $60^\circ$ và $AA’=a\sqrt{3}.$ Gọi $M,N,P$ lần lượt là trung điểm của $A’B’$, $BD$ và $DD’$. Gọi $H$ là hình chiếu vuông góc của $B$ lên $AD$. Tính khoảng cách giữa hai đường thẳng chéo nhau $MN$ và $HP$.
+**Ví dụ 10.** Cho hình hộp đứng $ABCD.A’B’C’D’$ có đáy là hình bình hành với $AB=a$, $AD=2a$, góc $BAD$ bằng $60^\circ$ và $AA’=a\sqrt{3}.$ Gọi $M,N,P$ lần lượt là trung điểm của $A’B’$, $BD$ và $DD’.$ Gọi $H$ là hình chiếu vuông góc của $B$ lên $AD.$ Tính khoảng cách giữa hai đường thẳng chéo nhau $MN$ và $HP.$
 
 ![Hình hộp đứng ABCD.A'B'C'D' có đáy là hình bình hành ](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Hình-hộp-đứng-ABCD.ABCD-có-đáy-là-hình-bình-hành-.jpg)
 
@@ -307,15 +307,15 @@ $$
 d(MN,HP)=d((MNQ),(ADD’A’))
 $$
 
- Khoảng cách giữa hai mặt phẳng song song này chính bằng khoảng cách từ $Q$ tới mặt phẳng $(ADD’A’)$ và bằng một nửa khoảng cách từ $B$ tới mặt phẳng $(ADD’A’)$. Từ đó tìm được đáp số $d(MN,HP)=\frac{a\sqrt{3}}{4}.$
+ Khoảng cách giữa hai mặt phẳng song song này chính bằng khoảng cách từ $Q$ tới mặt phẳng $(ADD’A’)$ và bằng một nửa khoảng cách từ $B$ tới mặt phẳng $(ADD’A’).$ Từ đó tìm được đáp số $d(MN,HP)=\frac{a\sqrt{3}}{4}.$
 
 ### 2.3. Tính khoảng cách giữa hai đường thẳng chéo nhau bằng cách dựng đoạn vuông góc chung
 
-Trong trường hợp đặc biệt khi hai đường thẳng $a$ và $b$ chéo nhau đồng thời lại vuông góc với nhau, thì  thường tồn tại một mặt phẳng $(\alpha)$ chứa $a$ và vuông góc với $b$. Ta dựng đoạn vuông góc chung qua hai bước sau:
+Trong trường hợp đặc biệt khi hai đường thẳng $a$ và $b$ chéo nhau đồng thời lại vuông góc với nhau, thì  thường tồn tại một mặt phẳng $(\alpha)$ chứa $a$ và vuông góc với $b.$ Ta dựng đoạn vuông góc chung qua hai bước sau:
 
 ![cach dung doan vuong goc chung cua hai duong thang cheo nhau va vuong goc voi nhau](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-cach-dung-doan-vuong-goc-chung-cua-hai-duong-thang-cheo-nhau-va-vuong-goc-voi-nhau.jpg)
 
-- Tìm giao điểm $H$ của đường thẳng $b$ và mặt phẳng $(\alpha)$.
+- Tìm giao điểm $H$ của đường thẳng $b$ và mặt phẳng $(\alpha).$
 
 - Trong mặt phẳng $(\alpha)$, dựng $HK$ vuông góc với $a$ tại $K$ thì $HK$ chính là đoạn vuông góc chung.
 
@@ -323,19 +323,19 @@ Tổng quát, việc dựng đoạn vuông góc chung của hai đường thẳn
 
 ![cach dung doan vuong goc chung](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-cach-dung-doan-vuong-goc-chung.jpg)
 
-- Dựng mặt phẳng $(\alpha)$ chứa đường thẳng $b$ và song song với đường thẳng $a$.
+- Dựng mặt phẳng $(\alpha)$ chứa đường thẳng $b$ và song song với đường thẳng $a.$
 
-- Tìm hình chiếu vuông góc $a’$ của $a$ trên mặt phẳng $(\alpha)$.
+- Tìm hình chiếu vuông góc $a’$ của $a$ trên mặt phẳng $(\alpha).$
 
-- Tìm giao điểm $N$ của $a’$ và $b$, dựng đường thẳng qua $N$ và vuông góc với $(\alpha)$, đường thẳng này cắt $a$ tại $M$.
+- Tìm giao điểm $N$ của $a’$ và $b$, dựng đường thẳng qua $N$ và vuông góc với $(\alpha)$, đường thẳng này cắt $a$ tại $M.$
 
-**Kết luận:** Đoạn $MN$ chính là đoạn vuông góc chung của hai đường thẳng chéo nhau $a$ và $b$.
+**Kết luận:** Đoạn $MN$ chính là đoạn vuông góc chung của hai đường thẳng chéo nhau $a$ và $b.$
 
-**Ví dụ 11.** Cho tứ diện đều $ABCD$ có độ dài các cạnh bằng $6\sqrt{2}$cm. Hãy xác định đường vuông góc chung và tính khoảng cách giữa hai đường thẳng chéo nhau $AB$ và $CD$.
+**Ví dụ 11.** Cho tứ diện đều $ABCD$ có độ dài các cạnh bằng $6\sqrt{2}$cm. Hãy xác định đường vuông góc chung và tính khoảng cách giữa hai đường thẳng chéo nhau $AB$ và $CD.$
 
-**Hướng dẫn.** Gọi $M , N$ lần lượt là trung điểm các cạnh $AB , CD$. Chứng minh được $MN$ là đường vuông góc chung của hai đường thẳng $AB,CD$ và khoảng cách giữa chúng là $MN=6$cm.
+**Hướng dẫn.** Gọi $M , N$ lần lượt là trung điểm các cạnh $AB , CD.$ Chứng minh được $MN$ là đường vuông góc chung của hai đường thẳng $AB,CD$ và khoảng cách giữa chúng là $MN=6$cm.
 
-**Ví dụ 12.** Cho hình chóp $S.ABC$ có đáy là tam giác vuông tại $B , AB=a , BC=2a$, cạnh $SA$ vuông góc với đáy và $SA=2a.$ Hãy xác định đường vuông góc chung và tính khoảng cách giữa hai đường thẳng chéo nhau $AB$ và $SC$.
+**Ví dụ 12.** Cho hình chóp $S.ABC$ có đáy là tam giác vuông tại $B , AB=a , BC=2a$, cạnh $SA$ vuông góc với đáy và $SA=2a.$ Hãy xác định đường vuông góc chung và tính khoảng cách giữa hai đường thẳng chéo nhau $AB$ và $SC.$
 
 **Hướng dẫn.** Lấy điểm $D$ sao cho $ABCD$ là hình chữ nhật thì $AB$ song song với $(SCD).$ Gọi $E$ là chân đường vuông góc hạ từ $A$ xuống $SD$ thì chứng minh được $E$ là hình chiếu vuông góc của $A$ lên $(SCD).$
 

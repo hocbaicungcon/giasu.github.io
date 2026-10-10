@@ -28,7 +28,7 @@ Xem thêm:
 
 ## 1. Kiến thức về bài toán thành lập số tự nhiên
 
-1. Có mười chữ số là $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$. Khi viết một số tự nhiên ta sử dụng mười chữ số trên. Chữ số đầu tiên kể từ bên trái của một số tự nhiên có hai chữ số trở lên phải khác $0$.
+1. Có mười chữ số là $0, 1, 2, 3, 4, 5, 6, 7, 8, 9.$ Khi viết một số tự nhiên ta sử dụng mười chữ số trên. Chữ số đầu tiên kể từ bên trái của một số tự nhiên có hai chữ số trở lên phải khác $0.$
 
 2. Phân tích cấu tạo của một số tự nhiên:
 
@@ -46,9 +46,9 @@ Xem thêm:
 
    - Nếu 2 số có cùng số lượng chữ số thì số nào có chữ số đầu tiên kể từ trái sang phải lớn hơn sẽ lớn hơn. Nếu chữ sốđầu tiên giống nhau thì ta xét tiếp đến chữ số thứ 2, thứ 3…
 
-4. Các số tự nhiên có tận cùng bằng $0, 2, 4, 6, 8$ là các số chẵn. Ngược lại, số chẵn có tận cùng bằng $0, 2, 4, 6, 8$.
+4. Các số tự nhiên có tận cùng bằng $0, 2, 4, 6, 8$ là các số chẵn. Ngược lại, số chẵn có tận cùng bằng $0, 2, 4, 6, 8.$
 
-5. Các số tự nhiên có tận cùng bằng $1, 3, 5, 7, 9$ là các số lẻ. Số lẻ có tận cùng bằng $1, 3, 5, 7, 9$.
+5. Các số tự nhiên có tận cùng bằng $1, 3, 5, 7, 9$ là các số lẻ. Số lẻ có tận cùng bằng $1, 3, 5, 7, 9.$
 
 6. Hai số tự nhiên liên tiếp hơn (kém) nhau 1 đơn vị. Hai số hơn (kém) nhau 1 đơn vị là hai số tự nhiên liên tiếp.
 
@@ -68,7 +68,7 @@ Xem thêm:
 
 ## 2. Ví dụ lập số tự nhiên thỏa mãn yêu cầu cho trước
 
-**Ví dụ 1.** Lập số tự nhiên bé nhất có 4 chữ số khác nhau từ các chữ số sau: $0, 2, 3, 6, 8$.
+**Ví dụ 1.** Lập số tự nhiên bé nhất có 4 chữ số khác nhau từ các chữ số sau: $0, 2, 3, 6, 8.$
 
 **Hướng dẫn.** Vì đề bài yêu cầu số đó có 4 chữ số khác nhau, nên các chữ số không được lặp lại, tức là chữ số nào đã dùng rồi thì không được sử dụng lại.
 
@@ -99,11 +99,11 @@ Vậy, số tự nhiên $86320$ là số thỏa mãn yêu cầu đề bài.
 
 **Ví dụ 3.** Tìm số tự nhiên lớn nhất có 5 chữ số.
 
-- Trong bài tập này, người ra đề không giới hạn số cần tìm phải được lập từ những chữ số nào. Do đó, ta hiểu rằng, có thể sử dụng tất cả các chữ số từ $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$.
+- Trong bài tập này, người ra đề không giới hạn số cần tìm phải được lập từ những chữ số nào. Do đó, ta hiểu rằng, có thể sử dụng tất cả các chữ số từ $0, 1, 2, 3, 4, 5, 6, 7, 8, 9.$
 
 - Mặt khác, đề bài không yêu cầu các chữ số phải khác nhau, nên ta có thể chọn 5 lần chữ số 9 (là chữ số lớn nhất).
 
-  Vậy số lớn nhất có 5 chữ số là $99999$.
+  Vậy số lớn nhất có 5 chữ số là $99999.$
 
 **Ví dụ 4.** Tìm số tự nhiên lớn nhất có 5 chữ số khác nhau.
 
@@ -189,7 +189,7 @@ Số lượng số cần lập bằng tích của các cách chọn.
 
 **Ví dụ 8.** Cho 5 chữ số 0, 1, 2, 3, 4 em viết được bao nhiêu số có 3 chữ số khác nhau?
 
-**Giải:** Ta có 4 cách chọn chữ số ở hàng trăm là một trong bốn chữ số khác 0 là $1, 2, 3, 4$. Sau khi đã chọn chữ số ở hàng trăm ta có 4 cách chọn chữ số ở hàng chục là một trong bốn chữ số còn lại. sau khi đã chọn chữ số ở hàng trăm, hàng chục rồi thì chỉ còn 3 cách chọn chữ số ở hàng đơn vị.
+**Giải:** Ta có 4 cách chọn chữ số ở hàng trăm là một trong bốn chữ số khác 0 là $1, 2, 3, 4.$ Sau khi đã chọn chữ số ở hàng trăm ta có 4 cách chọn chữ số ở hàng chục là một trong bốn chữ số còn lại. sau khi đã chọn chữ số ở hàng trăm, hàng chục rồi thì chỉ còn 3 cách chọn chữ số ở hàng đơn vị.
 
 Vậy số lượng số có 3 chữ số thỏa mãn bài toán là: 
 
@@ -273,7 +273,7 @@ $$
 
 ## 3 Bài tập lập số tự nhiên và quy tắc đếm
 
-**Bài 1.** Cho 4 chữ số $0, 3, 8$ và $9$.
+**Bài 1.** Cho 4 chữ số $0, 3, 8$ và $9.$
 
 1. Viết được tất cả bao nhiêu số có 4 chữ số khác nhau từ 4 chữ số đã cho.
 
@@ -281,7 +281,7 @@ $$
 
 3. Tìm số lẻ lớn nhất, số chẵn nhỏ nhất có 4 chữ số khác nhau được viết từ 4 chữ số đã cho.
 
-**Bài 2.** Cho 5 chữ số $1; 4; 6; 8; 9$.
+**Bài 2.** Cho 5 chữ số $1; 4; 6; 8; 9.$
 
 1. Có thể viết được bao nhiêu số có 4 chữ số từ 5 chữ số đã cho.
 
@@ -304,11 +304,11 @@ $$
 
 **Bài 8.** Có bao nhiêu số có 5 chữ số mà trong đó có ít nhất 1 chữ số 9.
 
-**Bài 9.** Cho các chữ số $x ; 2 ; 5; 8$. Từ 4 chữ số đã cho ta lập được tất cả 12 số có 4 chữ số mà mỗi số có đủ cả 4 chữ số ấy. Biết tổng các số lập được bằng 66660. Tìm x?
+**Bài 9.** Cho các chữ số $x ; 2 ; 5; 8.$ Từ 4 chữ số đã cho ta lập được tất cả 12 số có 4 chữ số mà mỗi số có đủ cả 4 chữ số ấy. Biết tổng các số lập được bằng 66660. Tìm x?
 
-**Bài 10.** Cho 4 chữ số $a,b,c,d$ thỏa mãn $a+b+c+d = 7$. Tính tổng tất cả cac số có 4 chữ số lập được, biết mỗi số có mặt đủ 4 chữ số đã cho.
+**Bài 10.** Cho 4 chữ số $a,b,c,d$ thỏa mãn $a+b+c+d = 7.$ Tính tổng tất cả cac số có 4 chữ số lập được, biết mỗi số có mặt đủ 4 chữ số đã cho.
 
-**Bài 11.** Cho 5 chữ số $0; 2; 4; 6; 9$. Hỏi lập được tất cả bao nhiêu số có 4 chữ số khác nhau và mỗi số đều chia hết cho 3.
+**Bài 11.** Cho 5 chữ số $0; 2; 4; 6; 9.$ Hỏi lập được tất cả bao nhiêu số có 4 chữ số khác nhau và mỗi số đều chia hết cho 3.
 
 **Bài 12.** Từ 5 chữ số 0; 2; 3; 7; 5 lập được bao nhiêu số có 4 chữ số khác nhau và đều chia hết cho 5?
 

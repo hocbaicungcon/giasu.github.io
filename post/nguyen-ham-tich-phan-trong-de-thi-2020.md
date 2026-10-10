@@ -25,7 +25,7 @@ Mời thầy cô và các em học sinh tham khảo thêm các bài viết khác
 
 - [Hoán vị – Tổ hợp – Chỉnh hợp](/bai-viet/hoan-vi-to-hop-chinh-hop.html)
 
-**Câu 1.** [Chuyên KHTN Lần 1 năm 2020] Cho hàm số $f(x)$ có đạo hàm trên khoảng $(0;+\infty)$ và thỏa mãn $f(x)=x\left(\sin x + f'(x) \right) +\cos x$ và $f\left(\frac{\pi}{2}\right) =\frac{\pi}{2}$. Tính giá trị của $f(\pi)$.
+**Câu 1.** [Chuyên KHTN Lần 1 năm 2020] Cho hàm số $f(x)$ có đạo hàm trên khoảng $(0;+\infty)$ và thỏa mãn $f(x)=x\left(\sin x + f'(x) \right) +\cos x$ và $f\left(\frac{\pi}{2}\right) =\frac{\pi}{2}.$ Tính giá trị của $f(\pi).$
 
 **Hướng dẫn.** Từ đẳng thức $f(x)=x\left(\sin x + f'(x) \right) +\cos x$, sau khi nhân ra và chuyển hết số hạng liên quan đến hàm $f(x)$ sang một vế ta được 
 
@@ -60,9 +60,9 @@ $$
 \frac{f(x)}{x}= \frac{\cos x}{x} + C
 $$
 
- Theo đề bài có $f\left(\frac{\pi}{2}\right) =\frac{\pi}{2}$ nên suy ra $C=1$. Do đó $f(x)=\cos x+x$ và $f(\pi)=\pi-1$.
+ Theo đề bài có $f\left(\frac{\pi}{2}\right) =\frac{\pi}{2}$ nên suy ra $C=1.$ Do đó $f(x)=\cos x+x$ và $f(\pi)=\pi-1.$
 
-**Câu 2.** [Chuyên KHTN Lần 1 năm 2020] Cho hàm số $f(x)$ liên tục trên $\mathbb{R}$ và thỏa mãn $f^3(x)+2f(x)=1-x$ với mọi $x\in \mathbb{R}$. Tính tích phân $\displaystyle \int_{-2}^1 f(x)dx$
+**Câu 2.** [Chuyên KHTN Lần 1 năm 2020] Cho hàm số $f(x)$ liên tục trên $\mathbb{R}$ và thỏa mãn $f^3(x)+2f(x)=1-x$ với mọi $x\in \mathbb{R}.$ Tính tích phân $\displaystyle \int_{-2}^1 f(x)dx$
 
 **Hướng dẫn.** Vì $f^3(x)+2f(x)=1-x$ với mọi $x\in \mathbb{R}$ nên cho $x=1$ ta có phương trình 
 
@@ -70,7 +70,7 @@ $$
 f^3(1)+2f(1)=1-0
 $$
 
- Giải phương trình này, được $f(1)=0$. Tương tự, với $x=-2$ ta tìm được $f(-2)=1$.
+ Giải phương trình này, được $f(1)=0.$ Tương tự, với $x=-2$ ta tìm được $f(-2)=1.$
 
 Mặt khác, từ đẳng thức đã cho $f^3(x)+2f(x)=1-x$, ta lấy vi phân hai vế thì được 
 
@@ -93,7 +93,7 @@ $$
 \sin x\cdot f\left(\cos x\right)+\cos x\cdot f\left(\sin x\right) =\sin 2x-\frac{1}{2}\sin^3 2x
 $$
 
- với mọi $x\in \mathbb{R}$. Tính tích phân $\displaystyle I=\int_0^1 f(x)dx$.
+ với mọi $x\in \mathbb{R}.$ Tính tích phân $\displaystyle I=\int_0^1 f(x)dx.$
 
 **Hướng dẫn.** Lấy tích phân cận từ $0$ đến $\frac{\pi}{2}$ hai vế ta được 
 
@@ -145,7 +145,7 @@ $$
 f(x)+(5x-2)f\left(5x^2-4x\right)=50x^3-60x^2+23x-1
 $$
 
- với mọi $x\in \mathbb{R}$. Tính tích phân $I=\displaystyle \int_0^1f(x) dx$
+ với mọi $x\in \mathbb{R}.$ Tính tích phân $I=\displaystyle \int_0^1f(x) dx$
 
 **Hướng dẫn.** Lấy tích phân cận từ $0$ đến $1$ hai vế đẳng thức đã cho ta có 
 
@@ -182,15 +182,15 @@ $$
 \end{aligned}
 $$
 
- Do đó, ta có phương trình $I+\frac{1}{2} I=3$ hay $I=2$.
+ Do đó, ta có phương trình $I+\frac{1}{2} I=3$ hay $I=2.$
 
-**Câu 5.** [Amsterdam HK2 năm 2020] Cho hàm số $f(x)$ có đạo hàm trên đoạn $[1;4]$. Biết rằng 
+**Câu 5.** [Amsterdam HK2 năm 2020] Cho hàm số $f(x)$ có đạo hàm trên đoạn $[1;4].$ Biết rằng 
 
 $$
 2x\cdot f'(x)+f(x)=2x\cdot \sqrt{x}
 $$
 
- và $f(1)=\frac{3}{2}$, tính giá trị $f(4)$.
+ và $f(1)=\frac{3}{2}$, tính giá trị $f(4).$
 
 **Hướng dẫn.** Xét trên đoạn $[1;4]$ thì $x>0$ nên chia hai vế đẳng thức đã cho cho $2\sqrt{x}$ ta được 
 
@@ -207,7 +207,7 @@ $$
 \sqrt{x}\cdot f(x)=\frac{1}{2}x^2+C
 $$
 
- Mà $f(1)=\frac{3}{2}$ nên suy ra $C=1$ hay $\sqrt{x}\cdot f(x)=\frac{1}{2}x^2+1$. Thay $x=4$ vào tìm được $f(4)=\frac{9}{2}$.
+ Mà $f(1)=\frac{3}{2}$ nên suy ra $C=1$ hay $\sqrt{x}\cdot f(x)=\frac{1}{2}x^2+1.$ Thay $x=4$ vào tìm được $f(4)=\frac{9}{2}.$
 
 **Câu 6.** [SGD Vĩnh Phúc năm 2020] Cho hàm số $f(x)$ liên tục trên $\mathbb{R}$ và thỏa mãn 
 
@@ -215,7 +215,7 @@ $$
 \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cot x\cdot f\left(\sin^2x\right)dx=\int_1^{16}\frac{f\left(\sqrt{x}\right)}{x}dx=1
 $$
 
- Tính tích phân $\displaystyle I=\int _{\frac{1}{8}}^1\frac{f(4x)}{x} dx$.
+ Tính tích phân $\displaystyle I=\int _{\frac{1}{8}}^1\frac{f(4x)}{x} dx.$
 
 **Hướng dẫn.** Đối với tích phân $\displaystyle \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}\cot x\cdot f\left(\sin^2x\right)dx= 1$ chúng ta đổi biến $t=\sin^2x$ thì 
 
@@ -258,7 +258,7 @@ $$
 f\left(x^2+3x+1\right)=x+2
 $$
 
- Tính tích phân $\displaystyle I=\int_1^5 f(x) dx$.
+ Tính tích phân $\displaystyle I=\int_1^5 f(x) dx.$
 
 **Hướng dẫn.** Vì tích phân không phụ thuộc tên biến nên ta có 
 
@@ -275,9 +275,9 @@ I&=\int_0^1f\left(x^2+3x+1)(2x+3)dx\right)\\
 \end{aligned}
 $$
 
- Dễ dàng tính được tích phân cuối cùng này bằng $\frac{61}{6}$, tức là $I=\frac{61}{6}$.
+ Dễ dàng tính được tích phân cuối cùng này bằng $\frac{61}{6}$, tức là $I=\frac{61}{6}.$
 
-**Câu 8.** [SGD Thái Nguyên năm 2020] Cho hàm số $f(x)$ có đạo hàm liên tục trên $\mathbb{R}$ và thỏa mãn $f'(x)>0, \;\forall x\in \mathbb{R}$. Biết $f(0)=1$ và $f'(x)=(2-3x)\cdot f(x)$. Tính giá trị của $f(1)$.
+**Câu 8.** [SGD Thái Nguyên năm 2020] Cho hàm số $f(x)$ có đạo hàm liên tục trên $\mathbb{R}$ và thỏa mãn $f'(x)>0, \;\forall x\in \mathbb{R}.$ Biết $f(0)=1$ và $f'(x)=(2-3x)\cdot f(x).$ Tính giá trị của $f(1).$
 
 **Hướng dẫn.** Vì $f(x)>0, \;\forall x\in \mathbb{R}$ nên chia hai vế đẳng thức đã cho cho $f(x)$ ta được 
 
@@ -300,7 +300,7 @@ $$
 \ln (f(0)) =\ln 1=-\frac{3}{2}\cdot0^2+2\cdot 0 +C
 $$
 
- hay $C=0$. Suy ra $\ln (f(x)) = -\frac{3}{2}x^2+2x$. Thay $x=1$ vào ta được $\ln (f(1))=\frac{1}{2}$ nên $f(1)=e^{\frac{1}{2}}$.
+ hay $C=0.$ Suy ra $\ln (f(x)) = -\frac{3}{2}x^2+2x.$ Thay $x=1$ vào ta được $\ln (f(1))=\frac{1}{2}$ nên $f(1)=e^{\frac{1}{2}}.$
 
 **Câu 9.** [Chuyên Vĩnh Phúc – Lần 2 năm 2020] Cho hàm số $f(x)$ liên tục trên $\mathbb{R}$ và 
 
@@ -308,7 +308,7 @@ $$
 \int_1^9\frac{f\left(\sqrt{x}\right)}{\sqrt{x}}dx=4, \int_0^{\frac{\pi}{2}}f\left(\sin x\right)\cos xdx=2
 $$
 
- Tính tích phân $\displaystyle I=\int_0^3f(x)dx$.
+ Tính tích phân $\displaystyle I=\int_0^3f(x)dx.$
 
 **Hướng dẫn.** Sử dụng phương pháp đổi biến số, đặt $t=\sqrt{x}$ thì ta có 
 
@@ -319,7 +319,7 @@ $$
 \end{aligned}
 $$
 
- Vì tích phân không phụ thuộc tên biến, nên suy ra $\displaystyle \int_1^3 f(x)dx=2$.
+ Vì tích phân không phụ thuộc tên biến, nên suy ra $\displaystyle \int_1^3 f(x)dx=2.$
 
 Tương tự, đổi biến $t=\sin x$ thì tích phân thứ hai đã cho trở thành 
 
@@ -330,7 +330,7 @@ $$
 \end{aligned}
 $$
 
- hay suy ra $\displaystyle \int_0^1f(x)dx=2$. Tóm lại, tích phân cần tính là 
+ hay suy ra $\displaystyle \int_0^1f(x)dx=2.$ Tóm lại, tích phân cần tính là 
 
 $$
 \begin{aligned}
@@ -346,7 +346,7 @@ $$
 f(x)+\frac{1}{x}f'(x^2)+f”(x)=x^2+2x-2
 $$
 
- Biết $f(-2)=0, f(0)=f'(-2)=-4$. Tính tích phân $\displaystyle I=\int_0^{-2}f(x)dx.$
+ Biết $f(-2)=0, f(0)=f'(-2)=-4.$ Tính tích phân $\displaystyle I=\int_0^{-2}f(x)dx.$
 
 **Hướng dẫn.** Nhận xét rằng $f(x)$ là đa thức bậc hai, nên đặt $f(x)=ax^2+bx+c$ thì từ dữ kiện $f(-2)=0, f(0)=f'(-2)=-4$ ta có hệ phương trình 
 
@@ -358,7 +358,7 @@ c=-4\\
 \end{cases}
 $$
 
- Giải hệ này ta được $a=1,b=0,c=-4$ và do đó $f(x)=x^2-4$. Từ đó tìm được 
+ Giải hệ này ta được $a=1,b=0,c=-4$ và do đó $f(x)=x^2-4.$ Từ đó tìm được 
 
 $$
 I=\int_0^{-2}f(x)dx=\frac{16}{3}.
@@ -372,7 +372,7 @@ $$
 
  cũng lập được một hệ phương trình và từ đó tìm được $f(x)=x^2-4$ như trên.
 
-**Câu 11.** [Chuyên Lê Hồng Phong – Nam Định] Cho hàm số $f(x)$ liên tục trên khoảng $(0;+\infty)$ và $f(1)=e$. Biết rằng $x^3\cdot f'(x)=e^x(x-2)$ với mọi $x\in (0;+\infty)$. Tính tích phân $\displaystyle I=\int_1^{\ln 3}x^2 f(x)dx$.
+**Câu 11.** [Chuyên Lê Hồng Phong – Nam Định] Cho hàm số $f(x)$ liên tục trên khoảng $(0;+\infty)$ và $f(1)=e.$ Biết rằng $x^3\cdot f'(x)=e^x(x-2)$ với mọi $x\in (0;+\infty).$ Tính tích phân $\displaystyle I=\int_1^{\ln 3}x^2 f(x)dx.$
 
 **Hướng dẫn.** Xét trên khoảng $(0;+\infty)$, từ $x^3\cdot f'(x)=e^x(x-2)$, ta suy ra 
 
@@ -389,7 +389,7 @@ f(x)&=\frac{1}{x^{2}}e^{x}+C
 \end{aligned}
 $$
 
- Cho $x=1$ ta được $e=f(1)=e+C$ nên suy ra $C=0$. Tức là ta có $f(x)=\frac{1}{x^{2}}e^{x}$. Do đó, tích phân cần tính trở thành 
+ Cho $x=1$ ta được $e=f(1)=e+C$ nên suy ra $C=0.$ Tức là ta có $f(x)=\frac{1}{x^{2}}e^{x}.$ Do đó, tích phân cần tính trở thành 
 
 $$
 \begin{aligned}
@@ -399,13 +399,13 @@ I&=\int_1^{\ln 3}x^2\cdot \frac{e^x}{x^2}dx\\
 \end{aligned}
 $$
 
-**Câu 12.** [Kim Liên – HN HK2] Giả sử hàm số $f(x)$ có đạo hàm cấp hai trên $\mathbb{R}$ và thỏa mãn $f(1)=f'(1)=2$. Biết rằng 
+**Câu 12.** [Kim Liên – HN HK2] Giả sử hàm số $f(x)$ có đạo hàm cấp hai trên $\mathbb{R}$ và thỏa mãn $f(1)=f'(1)=2.$ Biết rằng 
 
 $$
 f(1-x)+x^2\cdot f”(x)=4x+2,
 $$
 
- với mọi $x\in \mathbb{R}$, tính tích phân $\displaystyle \int_0^1 xf'(x)dx$.
+ với mọi $x\in \mathbb{R}$, tính tích phân $\displaystyle \int_0^1 xf'(x)dx.$
 
 **Hướng dẫn.** Ta sử dụng phương pháp tích phân từng phần, với 
 

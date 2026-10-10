@@ -61,7 +61,7 @@ Môn: Toán lớp 11
 
 **D.** 10
 
-**Question 5:** In the $Oxy$ coordinate plane, given line $d$ whose equation is $3x + 2y – 5 = 0$. The image of the line $d$ under a reflection across the $Ox –$axis has equation:
+**Question 5:** In the $Oxy$ coordinate plane, given line $d$ whose equation is $3x + 2y – 5 = 0.$ The image of the line $d$ under a reflection across the $Ox –$axis has equation:
 
 **A.**$3x + 2y + 5 = 0$
 
@@ -131,9 +131,9 @@ Môn: Toán lớp 11
 
 **D.** 16,5
 
-**Question 12:** Given tetraheron $ABCD$. Let $M$ and $N$ be the points of edges $AB$ and $AD$ with $\frac{{AM}}{{AB}} = \frac{{AN}}{{AD}} = \frac{1}{3}$ . Let $E$ be a point on edge $CD$ with $ED = 4EC.$ The cross section created by the plane $\left( {MNE} \right)$ and tetraheron $ABCD$ is:
+**Question 12:** Given tetraheron $ABCD.$ Let $M$ and $N$ be the points of edges $AB$ and $AD$ with $\frac{{AM}}{{AB}} = \frac{{AN}}{{AD}} = \frac{1}{3}$ . Let $E$ be a point on edge $CD$ with $ED = 4EC.$ The cross section created by the plane $\left( {MNE} \right)$ and tetraheron $ABCD$ is:
 
-**A.** Triangle $MNE$.
+**A.** Triangle $MNE.$
 
 **B.** Quadrilateral $MNEF$ with any point $F$ on edge $BC.$
 
@@ -141,7 +141,7 @@ Môn: Toán lớp 11
 
 **D.** Trapezoid $MNEF$ with point $F$ on edge $BC$ and $EF\,\,||\,\,BD.$
 
-**Question 13:** Find the coefficient of ${x^7}$ in expansion of expression ${\left( {x + \frac{2}{{{x^2}}}} \right)^{10}}$.
+**Question 13:** Find the coefficient of ${x^7}$ in expansion of expression ${\left( {x + \frac{2}{{{x^2}}}} \right)^{10}}.$
 
 **A.** 100
 
@@ -151,7 +151,7 @@ Môn: Toán lớp 11
 
 **D.** 200
 
-**Question 14:** Roll a balanced and homogeneous dice. Suppose the $b –$sport appears. Consider equation ${x^2} + bx + 2 = 0$. The probability such that the equation has an integer solutions is:
+**Question 14:** Roll a balanced and homogeneous dice. Suppose the $b –$sport appears. Consider equation ${x^2} + bx + 2 = 0.$ The probability such that the equation has an integer solutions is:
 
 **A.**$\frac{1}{6}$
 
@@ -201,7 +201,7 @@ Môn: Toán lớp 11
 
 **D.** $2\sqrt 2 – 4$
 
-**Question 19:** Four circles, no two of which are equal, have centered at $A,\,B,\,C,\,D$, and points $P,\,Q$ lie on all four circles. The radius of circle $A$ is $\frac{5}{8}$ times the radius of circle $B$, and the radius of circle $C$ is $\frac{5}{8}$ times the radius of circle $D$. Furthermore, $AB = CD = 39$ and $PQ = 48$. Let $R$ be the midpoint of segment $PQ.$ Find the value of $AR + BR + CR + DR?$
+**Question 19:** Four circles, no two of which are equal, have centered at $A,\,B,\,C,\,D$, and points $P,\,Q$ lie on all four circles. The radius of circle $A$ is $\frac{5}{8}$ times the radius of circle $B$, and the radius of circle $C$ is $\frac{5}{8}$ times the radius of circle $D.$ Furthermore, $AB = CD = 39$ and $PQ = 48.$ Let $R$ be the midpoint of segment $PQ.$ Find the value of $AR + BR + CR + DR?$
 
 **A.** 192
 
@@ -211,7 +211,7 @@ Môn: Toán lớp 11
 
 **D.** 188
 
-**Question 20:** Given $\tan a = 2$. The value of expression $Q = \frac{{5\sin a + 2\cos a}}{{4\sin a – 3\cos a}}$ is
+**Question 20:** Given $\tan a = 2.$ The value of expression $Q = \frac{{5\sin a + 2\cos a}}{{4\sin a – 3\cos a}}$ is
 
 **A.**$– \frac{5}{{12}}$
 
@@ -221,7 +221,7 @@ Môn: Toán lớp 11
 
 **D.** $\frac{5}{{12}}$
 
-**Question 21:** Given triangular prism $ABC.A’B’C’$. Let $M,\,\,M’$ be the midpoints of edges $BC$ and $B’C’$, respectively. Find the intersection line $d$ of two planes $\left( {AB’M} \right)$ and $\left( {ACM’} \right)$.
+**Question 21:** Given triangular prism $ABC.A’B’C’.$ Let $M,\,\,M’$ be the midpoints of edges $BC$ and $B’C’$, respectively. Find the intersection line $d$ of two planes $\left( {AB’M} \right)$ and $\left( {ACM’} \right).$
 
 **A.**$d$ passing through $A,\,M$
 
@@ -280,7 +280,7 @@ Môn: Toán lớp 11
 
 **D.**$\dfrac{{\cos x + 2\cos 2x + \cos 3x}}{{\sin x + \sin 2x + \sin 3x}} – \cot 2x$
 
-**Question 27:** Given tetraheron $ABCD$. Let $M$ and $N$ be the midpoints of edges $AB$ and $AC$. Let $E$ be a point on edge $CD$ with $ED = 4EC.$ The plane $\left( {MNE} \right)$ intersects the edge $BC$ at $F$. Compute the ratio $\frac{{BF}}{{BC}}.$
+**Question 27:** Given tetraheron $ABCD.$ Let $M$ and $N$ be the midpoints of edges $AB$ and $AC.$ Let $E$ be a point on edge $CD$ with $ED = 4EC.$ The plane $\left( {MNE} \right)$ intersects the edge $BC$ at $F.$ Compute the ratio $\frac{{BF}}{{BC}}.$
 
 **A.**$\frac{{BF}}{{BC}} = \frac{5}{4}$
 
@@ -310,7 +310,7 @@ Môn: Toán lớp 11
 
 **D.** 6
 
-**Question 30:** Given two parallel lines ${d_1}$ and ${d_2}$. On ${d_1}$ there are 10 distincive points, on ${d_2}$ there are $n$ distincive points. Knowing that there are 8550 trapezoid whose vertexes are given points. Then the value of $n$ is
+**Question 30:** Given two parallel lines ${d_1}$ and ${d_2}.$ On ${d_1}$ there are 10 distincive points, on ${d_2}$ there are $n$ distincive points. Knowing that there are 8550 trapezoid whose vertexes are given points. Then the value of $n$ is
 
 **A.** 15
 
@@ -340,7 +340,7 @@ Môn: Toán lớp 11
 
 **D.** 14
 
-**Question 33:** Let $f\left( x \right) = a{x^2} – c$, where $a,\,\,c$ are real numbers. Suppose $– 4 \leqslant f\left( 1 \right) \leqslant – 1$ and $– 1 \leqslant f\left( 2 \right) \leqslant 2$. What is the sum of the maximum and minimum values of $f\left( 8 \right)?$
+**Question 33:** Let $f\left( x \right) = a{x^2} – c$, where $a,\,\,c$ are real numbers. Suppose $– 4 \leqslant f\left( 1 \right) \leqslant – 1$ and $– 1 \leqslant f\left( 2 \right) \leqslant 2.$ What is the sum of the maximum and minimum values of $f\left( 8 \right)?$
 
 **A.** 120
 
@@ -360,7 +360,7 @@ Môn: Toán lớp 11
 
 **D.** $\sqrt {x – 2} – \sqrt {x – 3} = \sqrt {x – 1}$
 
-**Question 35:** The ratio of the length to the width of a rectangle is $4:3$. If the rectangle has diagonal of length $d$, then the area may be expressed as $k{d^2}$ for some constant $k.$ Find $k?$
+**Question 35:** The ratio of the length to the width of a rectangle is $4:3.$ If the rectangle has diagonal of length $d$, then the area may be expressed as $k{d^2}$ for some constant $k.$ Find $k?$
 
 **A.**$k = \frac{4}{7}$
 

@@ -66,7 +66,7 @@ Muốn giải được bài toán trên, các em cần biết:
 - Ở đây, số bị cho đi là 5, đó chính là **SỐ BỊ TRỪ
 - Số cho đi là 3, đây chính là **SỐ TRỪ
 - Số quả ổi bạn Phương còn lại chính là **HIỆU
-Do đó, chúng ta có phép tính $5-3=2$. Lời giải như sau:
+Do đó, chúng ta có phép tính $5-3=2.$ Lời giải như sau:
 
 **Lời giải.
 Số quả ổi bạn Phương còn lại là

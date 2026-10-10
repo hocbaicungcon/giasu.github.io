@@ -28,7 +28,7 @@ Tổng quát, để nói $a$ là phần tử của tập hợp $X$ ta viết $a\
 
 Tập hợp được hoàn toàn xác định bởi các phần tử của nó, mỗi phần tử chỉ được kể tên một lần, thứ tự các phần tử là không quan trọng, ví dụ $\{1,2,3\}$ và $\{3,1,2\}$ là cùng một tập hợp. Một tập hợp được hoàn toàn xác định nếu ta liệt kê được tất cả các phần tử của nó, hoặc mô tả được các phần tử của nó có đặc điểm, tính chất gì.
 
-- **Liệt kê các phần tử của tập hợp.** Nếu ta biết rõ các phần tử của một tập hợp thì ta có thể liệt kê chúng, đặt trong cặp ngoặc nhọn. Chẳng hạn, tập hợp $S$ các nghiệm của phương trình $x^2-3x+2=0$ là $S=\{1;2\}$, tập hợp $P$ gồm các ước dương của 12 là $P=\{1;2;3;4;6;12\}$. Khi các phần tử của một tập hợp quá nhiều, ta không thể viết hết ra được thì có thể dùng dấu ba chấm, chẳng hạn, tập hợp $A$ các số tự nhiên lẻ bé hơn 1000 là $A=\{1;3;5;…;997;999\}$.
+- **Liệt kê các phần tử của tập hợp.** Nếu ta biết rõ các phần tử của một tập hợp thì ta có thể liệt kê chúng, đặt trong cặp ngoặc nhọn. Chẳng hạn, tập hợp $S$ các nghiệm của phương trình $x^2-3x+2=0$ là $S=\{1;2\}$, tập hợp $P$ gồm các ước dương của 12 là $P=\{1;2;3;4;6;12\}.$ Khi các phần tử của một tập hợp quá nhiều, ta không thể viết hết ra được thì có thể dùng dấu ba chấm, chẳng hạn, tập hợp $A$ các số tự nhiên lẻ bé hơn 1000 là $A=\{1;3;5;…;997;999\}.$
 
 - **Mô tả tính chất đặc trưng của tập hợp.** Đôi khi, ta có thể viết một tập hợp bằng cách chỉ ra tính chất đặc trưng của nó, chẳng hạn tập hợp $S$ các nghiệm của phương trình $x^2-3x+2=0$ có thể viết $S=\{x\in \mathbb{R}\mid x^2-3x+2=0$, tập hợp $A$ các số tự nhiên lẻ bé hơn $1000$ là $A=\{n\in \mathbb{N} \mid n=2k+1,k\in \mathbb{N},0\leqslant k\leqslant 448\}.$ Kí hiệu là “$\mid$” đọc là “sao cho”, đôi khi còn được kí hiệu bằng dấu hai chấm.
 
@@ -74,17 +74,17 @@ $$
 
 - Tìm tất cả các tập con của $E$ có ba phần tử.
 
-- Tìm các tập con của $E$ có chứa phần tử $0$, và không chứa các ước số của $12$.
+- Tìm các tập con của $E$ có chứa phần tử $0$, và không chứa các ước số của $12.$
 
 Ta cũng có tính chất, nếu $A\subset B$ và $B\subset C$ thì suy ra $A\subset C.$
 
-Cho hai tập hợp $A$ và $B$. Nếu mỗi phần tử thuộc $A$ đều thuộc $B$ và ngược lại mỗi phần tử thuộc $B$ đều thuộc $A$ thì ta nói hai tập hợp $A$ và $B$ bằng nhau và kí hiệu $A= B$.
+Cho hai tập hợp $A$ và $B.$ Nếu mỗi phần tử thuộc $A$ đều thuộc $B$ và ngược lại mỗi phần tử thuộc $B$ đều thuộc $A$ thì ta nói hai tập hợp $A$ và $B$ bằng nhau và kí hiệu $A= B.$
 
 $$
 A=B \Leftrightarrow A \subset B \text{ và } B \subset A.
 $$
 
-Để biểu diễn một tập hợp, ta có thể dùng biểu đồ Venn, là một đường khép kín. Ví dụ, hình vẽ sau mô tả tập $A$ là tập con của tập $B$.
+Để biểu diễn một tập hợp, ta có thể dùng biểu đồ Venn, là một đường khép kín. Ví dụ, hình vẽ sau mô tả tập $A$ là tập con của tập $B.$
 
 ![bieu do venn tap hop A la tap con cua B](assets/images/tap-hop-va-cac-phep-toan-tap-hop-bieu-do-venn-tap-hop-A-la-tap-con-cua-B.png)
 
@@ -92,9 +92,9 @@ $$
 
 Cho hai tập hợp $A$ và $B$, chúng ta có các phép toán sau:
 
-- Hợp hai tập hợp: $A\cup B= \left\{x\mid x\in A \text{ hoặc } x\in B \right\}$.
+- Hợp hai tập hợp: $A\cup B= \left\{x\mid x\in A \text{ hoặc } x\in B \right\}.$
 
-- Giao hai tập hợp: $A\cap B= \left\{x\mid x\in A \text{ và } x\in B \right\}$.
+- Giao hai tập hợp: $A\cap B= \left\{x\mid x\in A \text{ và } x\in B \right\}.$
 
 - Hiệu hai tập hợp: $A\setminus B= \left\{x\mid x\in A \text{ và } x\notin B \right\}.$
 
@@ -102,13 +102,13 @@ Cho hai tập hợp $A$ và $B$, chúng ta có các phép toán sau:
 
 Hiểu một cách đơn giản, giao của hai tập hợp là lấy phần chung nhau của hai tập đó. Hợp của hai tập hợp là lấy tất cả các phần tử của cả hai tập.
 
-**Ví dụ 4.** Cho hai tập hợp $A=\left\{ 1;2;3;4;5;6;7\right\}$ và $B=\left\{1;3;5;7;9;11\right\}$. Hãy xác định các tập hợp
+**Ví dụ 4.** Cho hai tập hợp $A=\left\{ 1;2;3;4;5;6;7\right\}$ và $B=\left\{1;3;5;7;9;11\right\}.$ Hãy xác định các tập hợp
 
 $$
 A\cup B,\quad B\cup A,\quad A\cap B,\quad B\cap A,\quad A\setminus B,\quad B\setminus A.
 $$
 
-**Ví dụ 5.** Cho ba tập hợp $A=\left\{a, b,c,d,e,f,g \right\}, B=\left\{a,d,e,h,i,j\right\}$ và $C=\left\{e,m,y,u,a,n,h\right\}$. Hãy xác định các tập hợp 
+**Ví dụ 5.** Cho ba tập hợp $A=\left\{a, b,c,d,e,f,g \right\}, B=\left\{a,d,e,h,i,j\right\}$ và $C=\left\{e,m,y,u,a,n,h\right\}.$ Hãy xác định các tập hợp 
 
 $$
 A\cup B\cup C,\quad A\cap B\cap C

@@ -44,7 +44,7 @@ Vậy số cần tìm là 41; 63 và 85.
 
 **Hướng dẫn.**
 
-Gọi số cần tìm là $\overline{abc}$. Theo đề bài, số $\overline{abc}$ chỉ có thể ở những dạng $\overline{a21}$, $\overline{a42}$, $\overline{a63}$ hoặc $\overline{a84}$.
+Gọi số cần tìm là $\overline{abc}.$ Theo đề bài, số $\overline{abc}$ chỉ có thể ở những dạng $\overline{a21}$, $\overline{a42}$, $\overline{a63}$ hoặc $\overline{a84}.$
 
 Ta lập bảng sau để kiểm tra:
 
@@ -61,7 +61,7 @@ Vậy số cần tìm là 142.
 
 **Hướng dẫn.**
 
-Theo đề bài thì số cần tìm có dạng $\overline{abba}$.
+Theo đề bài thì số cần tìm có dạng $\overline{abba}.$
 
 Tổng của hai chữ số $a$ và $b$ là: 
 

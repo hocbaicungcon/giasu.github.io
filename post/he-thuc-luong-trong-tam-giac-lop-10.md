@@ -39,7 +39,7 @@ Trong một tam giác $ABC$ thì chúng ta thường kí hiệu:
 
 ### 2. Các hệ thức lượng trong tam giác vuông
 
-Trong tam giác vuông $ABC$. Gọi $b’, c’$ là độ dài các hình chiếu các cạnh góc vuông lên cạnh huyền ta có các hệ thức:
+Trong tam giác vuông $ABC.$ Gọi $b’, c’$ là độ dài các hình chiếu các cạnh góc vuông lên cạnh huyền ta có các hệ thức:
 
 ![HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG](assets/images/he-thuc-luong-trong-tam-giac-lop-10-he-thuc-luong-trong-tam-giac-vuong.png)
 
@@ -83,7 +83,7 @@ Trong tam giác $ABC$ ta luôn có:
 
 2. $\cos B=\frac{{{a}^{2}}+{{c}^{2}}-{{b}^{2}}}{2ac}$,
 
-3. $\cos C=\frac{{{a}^{2}}+{{b}^{2}}-{{c}^{2}}}{2ab}$.
+3. $\cos C=\frac{{{a}^{2}}+{{b}^{2}}-{{c}^{2}}}{2ab}.$
 
 #### Định lý hàm số SIN:
 
@@ -143,13 +143,13 @@ $$
 
 **VÍ DỤ MINH HỌA**
 
-**Ví dụ 1**: Cho tam giác $ABC$. Chứng minh các đẳng thức sau:
+**Ví dụ 1**: Cho tam giác $ABC.$ Chứng minh các đẳng thức sau:
 
 1. $\sin A+\sin B+\sin C=4.\cos \frac{A}{2}.\cos \frac{B}{2}.\cos \frac{C}{2}$
 
 2. ${{\sin }^{2}}A+{{\sin }^{2}}B+{{\sin }^{2}}C=2+2\cos A.\cos B.\cos C$
 
-**Ví dụ 2**: Cho tam giác $ABC$. Chứng minh các đẳng thức sau:
+**Ví dụ 2**: Cho tam giác $ABC.$ Chứng minh các đẳng thức sau:
 
 1. $\tan A+\tan B+\tan C=\tan A.\tan B.\tan C$ ($\Delta$ABC không vuông)
 
@@ -181,13 +181,13 @@ Nếu a, b, c là ba cạnh của một tam giác thì:
 
 **VÍ DỤ MINH HỌA:**
 
-**Ví dụ 1:** Cho tam giác $ABC$. Chứng minh rằng:  
+**Ví dụ 1:** Cho tam giác $ABC.$ Chứng minh rằng:  
 
 $$
 \sin \frac{A}{2}.\sin \frac{B}{2}.\sin \frac{C}{2}\le \frac{1}{8}
 $$
 
-**Ví dụ 2:** Cho tam giác $ABC$. Chứng minh rằng:
+**Ví dụ 2:** Cho tam giác $ABC.$ Chứng minh rằng:
 
 1. $\cos \frac{A}{2}+\cos \frac{B}{2}+\cos \frac{C}{2}\le \frac{3\sqrt{3}}{2}$
 
@@ -195,7 +195,7 @@ $$
 
 3. $\tan \frac{A}{2}+\tan \frac{B}{2}+\tan \frac{C}{2}\ge \sqrt{3}$
 
-**Ví dụ 3:** Cho tam giác $ABC$. Chứng minh rằng:
+**Ví dụ 3:** Cho tam giác $ABC.$ Chứng minh rằng:
 
 1. $\cos \frac{A}{2}.\cos \frac{B}{2}.\cos \frac{C}{2}\le \frac{3\sqrt{3}}{8}$
 
@@ -213,7 +213,7 @@ $$
 
 **VÍ DỤ MINH HỌA:**
 
-**Ví dụ 1:** Tam giác ABC có $\frac{\sin A+\cos B}{\sin B+\cos A}=\tan A$. Chứng minh rằng $\Delta$ABC vuông.
+**Ví dụ 1:** Tam giác ABC có $\frac{\sin A+\cos B}{\sin B+\cos A}=\tan A.$ Chứng minh rằng $\Delta$ABC vuông.
 
 **Ví dụ 2:** Chứng minh rằng nếu $\Delta ABC$ thỏa mãn điều kiện $\cos 2A+\cos 2B+\cos 2C+1=0$ thì tam giác đó là tam giác vuông
 
@@ -256,4 +256,4 @@ $$
  \sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}=\frac{2\sqrt{3}-3}{8} \end{cases}
 $$
 
- trong đó BC = a, AB = c, $p=\frac{a+b+c}{2}$.
+ trong đó BC = a, AB = c, $p=\frac{a+b+c}{2}.$

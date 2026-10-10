@@ -19,13 +19,13 @@ grade: 10
 
 ### 1.1. Nửa đường tròn đơn vị
 
-- Trong mặt phẳng tọa độ $Oxy$, nửa đường tròn đơn vị là nửa đường tròn có tâm $O(0;0)$, bán kính bằng $1$ và đi qua các điểm $A(1;0), B(0;1), A'(-1;0)$.
+- Trong mặt phẳng tọa độ $Oxy$, nửa đường tròn đơn vị là nửa đường tròn có tâm $O(0;0)$, bán kính bằng $1$ và đi qua các điểm $A(1;0), B(0;1), A'(-1;0).$
 
 ![giá trị lượng giác của góc từ 0 đến 180](assets/images/gia-tri-luong-giac-cua-goc-tu-0-den-180-nua-duong-tron-don-vi-giasu.ai.vn.jpg)
 
 ### 1.2. Giá trị lượng giác của một góc từ $0^\circ$ đến $180^\circ$
 
-- Với mỗi góc $0^\circ \leqslant \alpha \leqslant 180^\circ$ thì có đúng một điểm $M$ trên nửa đường tròn đơn vị sao cho $\widehat{AOM}=\alpha$. Ngược lại, với mỗi điểm $M$ trên nửa đường tròn đơn vị thì tồn tại đúng một góc $0^\circ \leqslant \alpha \leqslant 180^\circ$ sao cho $\widehat{AOM}=\alpha$.
+- Với mỗi góc $0^\circ \leqslant \alpha \leqslant 180^\circ$ thì có đúng một điểm $M$ trên nửa đường tròn đơn vị sao cho $\widehat{AOM}=\alpha.$ Ngược lại, với mỗi điểm $M$ trên nửa đường tròn đơn vị thì tồn tại đúng một góc $0^\circ \leqslant \alpha \leqslant 180^\circ$ sao cho $\widehat{AOM}=\alpha.$
 
 ![giá trị lượng giác của góc từ 0 đến 180](assets/images/gia-tri-luong-giac-cua-goc-tu-0-den-180-nua-duong-tron-don-vi.png)
 
@@ -37,7 +37,7 @@ $\sin \alpha =y_0$;
 
 - $\tan \alpha =\frac{y_0}{x_0}=\frac{\sin x}{\cos x}$ nếu $x_0\ne 0$;
 
-- $\cot \alpha =\frac{x_0}{y_0}=\frac{\cos x}{\sin x}$ nếu $y_0\ne 0$.
+- $\cot \alpha =\frac{x_0}{y_0}=\frac{\cos x}{\sin x}$ nếu $y_0\ne 0.$
 
 Trục hoành – trục nằm ngang – còn được gọi là trục cos, trục tung – trục thẳng đứng – còn được gọi là trục sin.
 
@@ -67,52 +67,52 @@ $\sin^2x+\cos^2x =1$
 
 ## 2. Bài tập giá trị lượng giác của một góc từ 0° đến 180°
 
-**Bài 1.** Cho $\cos \alpha=-\frac{2}{3}$. Tính $\sin \alpha;\tan \alpha$ và $\cot \alpha$.
+**Bài 1.** Cho $\cos \alpha=-\frac{2}{3}.$ Tính $\sin \alpha;\tan \alpha$ và $\cot \alpha.$
 
-**Bài 2.** Cho góc $\alpha$ biết $0^\circ < \alpha < 90^\circ$ và $\tan \alpha =3$. Tính $\sin \alpha$ và $\cos \alpha$.
+**Bài 2.** Cho góc $\alpha$ biết $0^\circ < \alpha < 90^\circ$ và $\tan \alpha =3.$ Tính $\sin \alpha$ và $\cos \alpha.$
 
-**Bài 3.** Cho $\sin \alpha =\frac{3}{4}$ với $90^\circ <\alpha < 180^\circ$. Tính $\cos \alpha$ và $\tan \alpha$.
+**Bài 3.** Cho $\sin \alpha =\frac{3}{4}$ với $90^\circ <\alpha < 180^\circ.$ Tính $\cos \alpha$ và $\tan \alpha.$
 
-**Bài 4.** Cho $\cos \alpha=-\frac{\sqrt{2}}{4}$. Tính $\sin \alpha;\tan \alpha$ và $\cot \alpha$.
+**Bài 4.** Cho $\cos \alpha=-\frac{\sqrt{2}}{4}.$ Tính $\sin \alpha;\tan \alpha$ và $\cot \alpha.$
 
-**Bài 5.** Cho góc $\alpha$ biết $0^\circ < \alpha < 90^\circ$ và $\tan \alpha = 2\sqrt{2}$. Tính $\sin \alpha$ và $\cos \alpha$.
+**Bài 5.** Cho góc $\alpha$ biết $0^\circ < \alpha < 90^\circ$ và $\tan \alpha = 2\sqrt{2}.$ Tính $\sin \alpha$ và $\cos \alpha.$
 
-**Bài 6.** Biết $\tan \alpha = \sqrt{2}$. Tính giá trị của biểu thức 
+**Bài 6.** Biết $\tan \alpha = \sqrt{2}.$ Tính giá trị của biểu thức 
 
 $$
 A=\frac{3\sin \alpha -\cos \alpha}{2\sin \alpha+\cos \alpha}
 $$
 
-**Bài 7.** Biết $\tan \alpha = \sqrt{2}$. Tính giá trị của biểu thức 
+**Bài 7.** Biết $\tan \alpha = \sqrt{2}.$ Tính giá trị của biểu thức 
 
 $$
 T=\frac{\sin \alpha -\cos \alpha}{\sin^3 \alpha+3\cos^3 \alpha+2\sin \alpha}
 $$
 
-**Bài 8.** Biết $\sin \alpha = \frac{2}{3}$. Tính giá trị của biểu thức 
+**Bài 8.** Biết $\sin \alpha = \frac{2}{3}.$ Tính giá trị của biểu thức 
 
 $$
 B=\frac{\cot \alpha -\tan \alpha}{\cot \alpha+2\tan \alpha}
 $$
 
-**Bài 9.** Cho $0^\circ \leqslant \alpha \leqslant 180^\circ$. Chứng minh rằng:
+**Bài 9.** Cho $0^\circ \leqslant \alpha \leqslant 180^\circ.$ Chứng minh rằng:
 
-1. $(\sin \alpha +\cos \alpha)^2=1+2\sin \alpha\cos \alpha$.
+1. $(\sin \alpha +\cos \alpha)^2=1+2\sin \alpha\cos \alpha.$
 
-2. $(\sin \alpha -\cos \alpha)^2=1-2\sin \alpha\cos \alpha$.
+2. $(\sin \alpha -\cos \alpha)^2=1-2\sin \alpha\cos \alpha.$
 
-3. $\sin^4 \alpha +\cos^4 \alpha=1-2 \sin^2 \alpha\cos^2 \alpha$.
+3. $\sin^4 \alpha +\cos^4 \alpha=1-2 \sin^2 \alpha\cos^2 \alpha.$
 
-4. $\sin^4 \alpha -\cos^4 \alpha=2\sin^2 \alpha -1$.
+4. $\sin^4 \alpha -\cos^4 \alpha=2\sin^2 \alpha -1.$
 
-5. $\sin^6 \alpha+\cos^6 \alpha = 1-3\sin^2 \alpha\cos^2 \alpha$.
+5. $\sin^6 \alpha+\cos^6 \alpha = 1-3\sin^2 \alpha\cos^2 \alpha.$
 
-6. $\sin \alpha\cos\alpha (1+\tan \alpha)(1+\cot\alpha)=1+2\sin \alpha\cos \alpha$.
+6. $\sin \alpha\cos\alpha (1+\tan \alpha)(1+\cot\alpha)=1+2\sin \alpha\cos \alpha.$
 
 **Bài 10.** Chứng minh rằng các biểu thức sau đây không phụ thuộc $\alpha$
 
-- $A=(\sin \alpha+\cos \alpha)^2+(\sin \alpha -\cos \alpha)^2$.
+- $A=(\sin \alpha+\cos \alpha)^2+(\sin \alpha -\cos \alpha)^2.$
 
-- $B=\sin^4 \alpha-\cos^4 \alpha -2\sin^2 \alpha +1$.
+- $B=\sin^4 \alpha-\cos^4 \alpha -2\sin^2 \alpha +1.$
 
 Xem thêm [Bài tập giá trị lượng giác của góc từ 0 đến 180°](/bai-viet/bai-tap-gia-tri-luong-giac-cua-goc-tu-0-den-180.html)

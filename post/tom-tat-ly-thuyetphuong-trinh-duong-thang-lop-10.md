@@ -34,7 +34,7 @@ Một véc-tơ $\overrightarrow{u}\ne \vec{0}$ được gọi là véc-tơ chỉ
 
 ![phương trình tham số của đường thẳng](assets/images/tom-tat-ly-thuyetphuong-trinh-duong-thang-lop-10-phuong-trinh-tham-so.jpg)
 
-**Ví dụ 1.** Lập phương trình tham số của đường thẳng $d$ có véc-tơ chỉ phương là $\vec{u}(3;4)$ và đi qua điểm $M(7;2)$.
+**Ví dụ 1.** Lập phương trình tham số của đường thẳng $d$ có véc-tơ chỉ phương là $\vec{u}(3;4)$ và đi qua điểm $M(7;2).$
 
 **Hướng dẫn.
 Phương trình tham số của đường thẳng $d$ có véc-tơ chỉ phương là $\vec{u}(3;4)$ và đi qua điểm $M(7;2)$ là 
@@ -67,15 +67,15 @@ Một véc-tơ $\overrightarrow{n}\ne \vec{0}$ được gọi là véc-tơ pháp
 
   với $a,b$ không đồng thời bằng $0$ (có thể viết tắt là $a^2+b^2 \ne 0$).
 
-- Khi đó, một véc-tơ pháp tuyến của đường thẳng là $\vec{n}(a;b)$.
+- Khi đó, một véc-tơ pháp tuyến của đường thẳng là $\vec{n}(a;b).$
 
 - Lấy một điểm bất kì thuộc đường thẳng ta có thể cho $x$ nhận một giá trị tùy ý rồi tìm giá trị của $y$ tương ứng, hoặc cho $y$ một giá trị tùy ý rồi tìm $x$ tương ứng.
 
 **Ví dụ 2.** Cho đường thẳng $\Delta$ có phương trình $2x+3y-5=0$ thì chúng ta có:
 
-- Một véc-tơ pháp tuyến là $\vec{n}=(2;3)$.
+- Một véc-tơ pháp tuyến là $\vec{n}=(2;3).$
 
-- Lấy một điểm thuộc $\Delta$. Cho $x=2$ thì có $2\cdot 2+3y-5=0$, do đó tìm được $y=\frac{1}{3}$. Vậy tọa độ một điểm thuộc đường thẳng $\Delta$ là $\left (2;\frac{1}{3}\right)$.
+- Lấy một điểm thuộc $\Delta.$ Cho $x=2$ thì có $2\cdot 2+3y-5=0$, do đó tìm được $y=\frac{1}{3}.$ Vậy tọa độ một điểm thuộc đường thẳng $\Delta$ là $\left (2;\frac{1}{3}\right).$
 
 ### 2.2. Cách lập phương trình tổng quát của đường thẳng
 
@@ -87,7 +87,7 @@ $$
 ax+by-(ax_{0}+by_{0})=0
 $$
 
-**Ví dụ 3.** Lập phương trình tổng quát của đường thẳng $\Delta$ biết nó có véc-tơ pháp tuyến $\vec{n}(3;4)$ và đi qua điểm $M(0;7)$.
+**Ví dụ 3.** Lập phương trình tổng quát của đường thẳng $\Delta$ biết nó có véc-tơ pháp tuyến $\vec{n}(3;4)$ và đi qua điểm $M(0;7).$
 
 **Hướng dẫn.** Đường thẳng $\Delta$ có véc-tơ pháp tuyến $\vec{n}(3;4)$ và đi qua điểm $M(0;7)$ nên có phương trình tổng quát:
 
@@ -95,16 +95,16 @@ $$
 3x+4y-(3\cdot 0+4\cdot 7)=0
 $$
 
- hay chính là $3x+4y-28=0$.
+ hay chính là $3x+4y-28=0.$
 
 **Ví dụ 4.** Lập phương trình đường trung trực của đoạn thẳng $EF$ với $E(1;9)$ và $F(3;-3)$
 
 **Hướng dẫn.
 - Gọi đường trung trực của $EF$ là $d$ thì đường thẳng $d$ vuông góc với $EF$ và đi qua trung điểm của $EF.$
 
-- Vì $d$ vuông góc với $EF$ nên đường thẳng $d$ có véc-tơ pháp tuyến chính là $\overrightarrow{EF}(2;-12)$.
+- Vì $d$ vuông góc với $EF$ nên đường thẳng $d$ có véc-tơ pháp tuyến chính là $\overrightarrow{EF}(2;-12).$
 
-- Gọi trung điểm của $EF$ là $M$ thì tìm được $M(2;3)$.
+- Gọi trung điểm của $EF$ là $M$ thì tìm được $M(2;3).$
 
 - Đường thẳng $d$ có véc-tơ pháp tuyến chính là $\overrightarrow{EF}(2;-12)$ và đi qua điểm $M(2;3)$ nên có phương trình tổng quát:
 
@@ -122,16 +122,16 @@ $$
 
 Nếu đường thẳng $\Delta$ có phương trình: $ax+by+c=0$ thì đường thẳng $\Delta’$
 
-- vuông góc với $\Delta$ là $\Delta’:-bx+ay+c’=0$ hoặc $\Delta’:bx-ay+c’=0$.
+- vuông góc với $\Delta$ là $\Delta’:-bx+ay+c’=0$ hoặc $\Delta’:bx-ay+c’=0.$
 
 - song song với $\Delta$ là $\Delta’:ax+by+c’=0$ với $c\ne c’.$
 
-**Ví dụ 5.** Lập phương trình tổng quát của đường thẳng $AB$ với $A(1;2)$ và $B(-3;5)$.
+**Ví dụ 5.** Lập phương trình tổng quát của đường thẳng $AB$ với $A(1;2)$ và $B(-3;5).$
 
 **Hướng dẫn.
-- Đường thẳng $AB$ chứa $\overrightarrow{AB}(-4;3)$ nên $\overrightarrow{AB}(-4;3)$ chính là véc-tơ chỉ phương của đường thẳng $AB$.
+- Đường thẳng $AB$ chứa $\overrightarrow{AB}(-4;3)$ nên $\overrightarrow{AB}(-4;3)$ chính là véc-tơ chỉ phương của đường thẳng $AB.$
 
-- Suy ra, đường thẳng $AB$ có véc-tơ pháp tuyến là $\vec{n}(3;4)$.
+- Suy ra, đường thẳng $AB$ có véc-tơ pháp tuyến là $\vec{n}(3;4).$
 
 - Như vậy, đường thẳng $AB$ có véc-tơ pháp tuyến là $\vec{n}(3;4)$ và đi qua điểm $A(1;2)$ nên có phương trình tổng quát:
 
@@ -171,19 +171,19 @@ $$
 
 **Ví dụ 7.** Tính khoảng cách từ điểm $P(3 , 12)$ đến đường thẳng $\Delta:\begin{cases} x=2+t\\y=5-3t \end{cases}$
 
-**Hướng dẫn.** Trước tiên, chúng ta cần chuyển phương trình đường thẳng $\Delta$ từ dạng tham số về dạng tổng quát. Từ phương trình thứ nhất của hệ, chúng ta có $t=x-2$. Thế vào phương trình thứ hai của hệ ta được $y=5-3(x-2)$ hay chính là 
+**Hướng dẫn.** Trước tiên, chúng ta cần chuyển phương trình đường thẳng $\Delta$ từ dạng tham số về dạng tổng quát. Từ phương trình thứ nhất của hệ, chúng ta có $t=x-2.$ Thế vào phương trình thứ hai của hệ ta được $y=5-3(x-2)$ hay chính là 
 
 $$
 3x+y-11=0
 $$
 
-Đây chính là phương trình tổng quát của đường thẳng $\Delta$. Từ đó, khoảng cách cần tìm là 
+Đây chính là phương trình tổng quát của đường thẳng $\Delta.$ Từ đó, khoảng cách cần tìm là 
 
 $$
 d(P,\Delta)=\frac{|3\cdot 3+ 12 -11|}{\sqrt{3^2+1^2}} = \sqrt{10} .
 $$
 
-**Ví dụ 8.** Tính khoảng cách giữa hai đường thẳng song song $d : 5x + 3y – 5 = 0$ và $d’ : 5x + 3y + 8 = 0$.
+**Ví dụ 8.** Tính khoảng cách giữa hai đường thẳng song song $d : 5x + 3y – 5 = 0$ và $d’ : 5x + 3y + 8 = 0.$
 
 **Hướng dẫn.** Vì hai đường thẳng đã cho song song với nhau, nên khoảng cách giữa chúng chính bằng khoảng cách từ một điểm bất kì thuộc đường thẳng này tới đường thẳng còn lại.
 
@@ -197,7 +197,7 @@ d(d,d’) &= d(M,d’) \\
 \end{aligned}
 $$
 
-**Ví dụ 9.** Tính góc giữa hai đường thẳng $\Delta: x-3y+5=0$ và $\Delta’:2x-3y+7=0$.
+**Ví dụ 9.** Tính góc giữa hai đường thẳng $\Delta: x-3y+5=0$ và $\Delta’:2x-3y+7=0.$
 
 **Hướng dẫn.
 - Đường thẳng $\Delta$ có véc-tơ pháp tuyến là $\vec{n}(1;-3)$, đường thẳng $\Delta’$ có véc-tơ pháp tuyến là $\vec{n}'(2;-3)$ nên góc giữa hai đường thẳng có

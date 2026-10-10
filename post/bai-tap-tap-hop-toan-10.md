@@ -20,27 +20,27 @@ Phần lý thuyết, mời các em xem trong bài [Tập hợp và các phép to
 
 **Bài 1.** Viết lại các tập hợp sau bằng cách *liệt kê các phần tử*:
 
-- $A=\left\{3k-1\mid k\in \mathbb{Z} , -5\leqslant k\leqslant 3\right\}$.
+- $A=\left\{3k-1\mid k\in \mathbb{Z} , -5\leqslant k\leqslant 3\right\}.$
 
-- $B=\left\{x\in \mathbb{Z} \mid \mid x\mid <10\right\}$.
+- $B=\left\{x\in \mathbb{Z} \mid \mid x\mid <10\right\}.$
 
 - $C=\left\{x\in \mathbb{Z} \mid 3<\mid x\mid \leqslant \frac{19}{2}\right\}.$
 
-- $D=\left\{x\in\mathbb{Z} \mid 6x^2-5x-1=0\right\}$.
+- $D=\left\{x\in\mathbb{Z} \mid 6x^2-5x-1=0\right\}.$
 
-- $E=\left\{x\in \mathbb{R}\mid x^2-2x+4=0\right\}$.
+- $E=\left\{x\in \mathbb{R}\mid x^2-2x+4=0\right\}.$
 
-- $F=\left\{x=2k \mid k\in \mathbb{Z} \text{ và } -3<x<15\right\}$.
+- $F=\left\{x=2k \mid k\in \mathbb{Z} \text{ và } -3<x<15\right\}.$
 
-- $G=\left\{(x;x^2)\mid x\in \left\{-1;0;1\right\}\right\}$.
+- $G=\left\{(x;x^2)\mid x\in \left\{-1;0;1\right\}\right\}.$
 
-- $H=\left\{(x;y)\mid x^2+y^2\leqslant 2\text{ và } x\in \mathbb{Z} \right\}$.
+- $H=\left\{(x;y)\mid x^2+y^2\leqslant 2\text{ và } x\in \mathbb{Z} \right\}.$
 
-- $I=\left\{k\in \mathbb{Z} \mid x=3k\text{ với }x\in \mathbb{Z} \text{ và } -12<x\leqslant 6\right\}$.
+- $I=\left\{k\in \mathbb{Z} \mid x=3k\text{ với }x\in \mathbb{Z} \text{ và } -12<x\leqslant 6\right\}.$
 
-- $J=\left\{k\in \mathbb{N}\mid y=2k\text{ với }y\in \mathbb{Z} \text{ và } -4\leqslant y\leqslant 7\right\}$.
+- $J=\left\{k\in \mathbb{N}\mid y=2k\text{ với }y\in \mathbb{Z} \text{ và } -4\leqslant y\leqslant 7\right\}.$
 
-- $K=\left\{k\in \mathbb{Z} \mid z=4k\text{ với }z\in \mathbb{Z} \text{ và } -16\leqslant z< 12 \right\}$.
+- $K=\left\{k\in \mathbb{Z} \mid z=4k\text{ với }z\in \mathbb{Z} \text{ và } -16\leqslant z< 12 \right\}.$
 
 **Bài 2.** Xác định các tập hợp sau bằng cách *chỉ ra tính chất đặc trưng*:
 
@@ -70,7 +70,7 @@ Phần lý thuyết, mời các em xem trong bài [Tập hợp và các phép to
 
 - $A\cap B\cap C.$
 
-**Bài 4.** Cho $A=\left\{x\in \mathbb{R}, \mid x-1\mid >2 \right\}$ và $B=\left\{x\in \mathbb{R}, \mid x+2\mid \leqslant 1 \right\}.$ Tìm $A\cap B$.
+**Bài 4.** Cho $A=\left\{x\in \mathbb{R}, \mid x-1\mid >2 \right\}$ và $B=\left\{x\in \mathbb{R}, \mid x+2\mid \leqslant 1 \right\}.$ Tìm $A\cap B.$
 
 **Bài 5.** [Công thức De Morgan]
 
@@ -90,7 +90,7 @@ Chứng minh $A\setminus (B\cup C)=(A\setminus B)\cap (A\setminus C)$ và $A\set
 
 **Bài 8.** Trong một lớp học mọi học sinh nam đều tham gia vào những câu lạc bộ: Bóng đá, bóng chuyền và cầu lông. Qua tìm hiểu thấy rằng: Có 7 em tham gia bóng đá, 6 em bóng chuyền, 5 em cầu lông, 4 em vừa bóng đá vừa bóng chuyền, 3 em vừa bóng đá vừa cầu lông, 2 em vừa bóng chuyền vừa cầu lông, 1 em tham gia cả ba câu lạc bộ. Vậy trong lớp học có bao nhiêu học sinh nam?
 
-**Bài 9.** Cho $A,B$ là hai tập hợp, $x\in A$ và $x\notin B$. Xét xem trong các mệnh đề sau, mệnh đề nào đúng?
+**Bài 9.** Cho $A,B$ là hai tập hợp, $x\in A$ và $x\notin B.$ Xét xem trong các mệnh đề sau, mệnh đề nào đúng?
 
 - $x\in A\cap B$
 
@@ -110,7 +110,7 @@ Chứng minh $A\setminus (B\cup C)=(A\setminus B)\cap (A\setminus C)$ và $A\set
 
 - $A\setminus B\subset A$
 
-**Bài 11.** Tìm các tập hợp $A,B$ biết $A\cap B=\left\{0,1,2,3,4\right\};A\setminus B=\left\{-3,-2\right\}$ và $B\setminus A=\left\{6,9,10\right\}$.
+**Bài 11.** Tìm các tập hợp $A,B$ biết $A\cap B=\left\{0,1,2,3,4\right\};A\setminus B=\left\{-3,-2\right\}$ và $B\setminus A=\left\{6,9,10\right\}.$
 
 **Bài 12.** Cho các tập hợp:
 
@@ -120,7 +120,7 @@ Chứng minh $A\setminus (B\cup C)=(A\setminus B)\cap (A\setminus C)$ và $A\set
 
 - $B=\left\{x\in \mathbb{N} \mid x\text{ là số nguyên tố không quá 5}\right\}$
 
-Chứng minh $A\subset B;B\subset E$. Tìm $C_E A;C_E B;C_E (A\cap B)$.
+Chứng minh $A\subset B;B\subset E.$ Tìm $C_E A;C_E B;C_E (A\cap B).$
 
 **Bài 13.** Cho các tập hợp:
 
@@ -136,19 +136,19 @@ $$
 B=\left\{x\in\mathbb{Z}\mid (x-2)(x+1)(2x^2-x-3)=0\right\}
 $$
 
-- Chứng minh $A\subset E$ và $B\subset E$.
+- Chứng minh $A\subset E$ và $B\subset E.$
 
-- Tìm $C_{E}(A\cup B)$ và $C_{E}(A\cap B)$.
+- Tìm $C_{E}(A\cup B)$ và $C_{E}(A\cap B).$
 
-- Chứng minh $C_{E}(A\cup B)\subset C_{E}A$.
+- Chứng minh $C_{E}(A\cup B)\subset C_{E}A.$
 
 **Bài 14.** Chứng minh rằng:
 
-- Nếu $A\subset B$ và $C\subset D$ thì $(A\cup B)\subset (C\cup D)$.
+- Nếu $A\subset B$ và $C\subset D$ thì $(A\cup B)\subset (C\cup D).$
 
-- $A\setminus (B\cap C)=(A\setminus B)\cup (A\setminus C)$.
+- $A\setminus (B\cap C)=(A\setminus B)\cup (A\setminus C).$
 
-- $A\setminus (B\cup C)=(A\setminus B)\cap (A\setminus C)$.
+- $A\setminus (B\cup C)=(A\setminus B)\cap (A\setminus C).$
 
 **Bài 15.** Cho các tập 
 
@@ -168,11 +168,11 @@ $$
 C=\left\{x\in\mathbb{R}\mid 2\leqslant x<6\right\}
 $$
 
-- Tìm các tập sau: $A\cap B;\;A\cap C;\;B\cap C;\;A\cup C;\;A\setminus (B\cup C)$.
+- Tìm các tập sau: $A\cap B;\;A\cap C;\;B\cap C;\;A\cup C;\;A\setminus (B\cup C).$
 
-- Gọi $D=\left\{x\in R\mid a\leqslant x\leqslant b\right\}$. Hãy xác định $a,b$ để $D\subset (A\cap B\cap C)$.
+- Gọi $D=\left\{x\in R\mid a\leqslant x\leqslant b\right\}.$ Hãy xác định $a,b$ để $D\subset (A\cap B\cap C).$
 
-**Bài 16.** Cho $A=\left\{x\in \mathbb{R}\mid x\leqslant -3\text{ hoặc } x>6\right\}$ và $B=\left\{x\in\mathbb{R}\mid x^2-25\leqslant 0\right\}$.
+**Bài 16.** Cho $A=\left\{x\in \mathbb{R}\mid x\leqslant -3\text{ hoặc } x>6\right\}$ và $B=\left\{x\in\mathbb{R}\mid x^2-25\leqslant 0\right\}.$
 
 Tìm các tập sau:
 
@@ -184,19 +184,19 @@ Tìm các tập sau:
 
 - $\mathbb{R} \setminus (A\cap B)$,
 
-- $\mathbb{R} \setminus (A\setminus B)$.
+- $\mathbb{R} \setminus (A\setminus B).$
 
-**Bài 17.** Cho $C=\left\{x\in\mathbb{R}\mid x\leqslant a\right\}$ và $D=\left\{x\in\mathbb{R}\mid x\leqslant b\right\}$. Xác định $a,b$ biết rằng $C\cap B$ và $D\cap B$ là các đoạn có độ dài lần lượt bằng 7 và 9.
+**Bài 17.** Cho $C=\left\{x\in\mathbb{R}\mid x\leqslant a\right\}$ và $D=\left\{x\in\mathbb{R}\mid x\leqslant b\right\}.$ Xác định $a,b$ biết rằng $C\cap B$ và $D\cap B$ là các đoạn có độ dài lần lượt bằng 7 và 9.
 
-**Bài 18.** Kí hiệu $n(X)$ là số phần tử của tập hợp $X$. Cho hai tập hợp $A$ và $B$, biết $n(A)=25;n(B)=29;n(A\cup B)=41$. Tính $n(A\cap B); n(A\setminus B); n(B\setminus A)$.
+**Bài 18.** Kí hiệu $n(X)$ là số phần tử của tập hợp $X.$ Cho hai tập hợp $A$ và $B$, biết $n(A)=25;n(B)=29;n(A\cup B)=41.$ Tính $n(A\cap B); n(A\setminus B); n(B\setminus A).$
 
 ## Bài tập các tập hợp số
 
 **Bài 1.** Xác định tập hợp $A\cap B, A\cup B$ với:
 
-- $A=[1;5]$ và $B=(-3;2)\cup (3;7)$.
+- $A=[1;5]$ và $B=(-3;2)\cup (3;7).$
 
-- $A=(-5;0)\cup (3;5)$ và $B=(-1;2)\cup (4;6]$.
+- $A=(-5;0)\cup (3;5)$ và $B=(-1;2)\cup (4;6].$
 
 **Bài 2.** Dùng kí hiệu khoảng đoạn tìm tập nghiệm của các hệ bất phương trình sau và biểu diễn chúng trên trục số:
 
@@ -282,30 +282,30 @@ Tìm các tập sau:
 
 **Bài 6.** Cho hai tập hợp $A=\left( m;m+5 \right)$ và $B=\left( 3m+2;3m+7 \right)$ trong đó $m$ là một số thực bất kì. Tìm điều kiện của $m$ để:
 
-- Tập hợp $A$ là một tập hợp con của tập hợp $B$.
+- Tập hợp $A$ là một tập hợp con của tập hợp $B.$
 
 - Giao của hai tập hợp $A$ và $B$ là tập hợp rỗng.
 
-- Hợp của hai tập hợp $A$ và $B$ là tập hợp $A$.
+- Hợp của hai tập hợp $A$ và $B$ là tập hợp $A.$
 
 - Hiệu của hai tập hợp $A$ và $B$ theo thứ tự đó là tập hợp rỗng.
 
 **Hướng dẫn. 
-1. $m=-1$, \quad 2. $m\in \left( -\infty ;-\frac{7}{2} \right]\cup \left[ -\frac{3}{2};+\infty \right)$,\quad 3. $m=-1$,\quad 4. $m\in \left( -\infty ;-\frac{7}{2} \right]\cup \left[ -\frac{3}{2};+\infty \right)$.
+1. $m=-1$, \quad 2. $m\in \left( -\infty ;-\frac{7}{2} \right]\cup \left[ -\frac{3}{2};+\infty \right)$,\quad 3. $m=-1$,\quad 4. $m\in \left( -\infty ;-\frac{7}{2} \right]\cup \left[ -\frac{3}{2};+\infty \right).$
 
 Bài 7.** Cho $A=(a;a+1)$ và $B=(2015;2018).$ Tìm $a$ để tập $A\cup B$ là một khoảng.
 
-**Hướng dẫn.**$2015\leqslant a\le2017$.
+**Hướng dẫn.**$2015\leqslant a\le2017.$
 
 **Bài 8.** Cho hai đoạn $A=[a;a+2]$ và $B=[b;b+1].$ Tìm điều kiện của $a,b$ để tập $A\cap B\ne \varnothing.$
 
-**Hướng dẫn.**$-2<a-b<1$.
+**Hướng dẫn.**$-2<a-b<1.$
 
-**Bài 9.** Cho $A=\{x\in \mathbb{R}\mid |x-1|>2\}$ và $B=\{x\in \mathbb{R}\mid |x+2|<1 \}$. Tìm $A\cap B.$
+**Bài 9.** Cho $A=\{x\in \mathbb{R}\mid |x-1|>2\}$ và $B=\{x\in \mathbb{R}\mid |x+2|<1 \}.$ Tìm $A\cap B.$
 
-**Bài 10.** Cho $A=(a;a+1)$ và $B=(2010;2012)$. Tìm $a$ để $A\cap B$ là một khoảng.
+**Bài 10.** Cho $A=(a;a+1)$ và $B=(2010;2012).$ Tìm $a$ để $A\cap B$ là một khoảng.
 
-**Bài 11.** Cho $a,b,c$ là các số thực và $a<b<c$. Hãy xác định các tập hợp sau:
+**Bài 11.** Cho $a,b,c$ là các số thực và $a<b<c.$ Hãy xác định các tập hợp sau:
 
 - $(a;b)\cap (b;c)$
 
@@ -345,14 +345,14 @@ Bài 7.** Cho $A=(a;a+1)$ và $B=(2015;2018).$ Tìm $a$ để tập $A\cup B$ l�
 
 - $[-3;5]\cap \mathbb{N}$
 
-**Bài 15.** Tìm tập hợp $X$ sao cho $\left\{a,b\right\}\subset X\subset \left\{a,b,c,d,e\right\}$.
+**Bài 15.** Tìm tập hợp $X$ sao cho $\left\{a,b\right\}\subset X\subset \left\{a,b,c,d,e\right\}.$
 
 **Bài 16.** Viết phần bù trong $\mathbb{R}$ của các tập hợp sau:
 
-- $A=\left\{x\in \mathbb{R} \mid -2\leqslant x<7\right\}$.
+- $A=\left\{x\in \mathbb{R} \mid -2\leqslant x<7\right\}.$
 
-- $B=\left\{x\in \mathbb{R} \mid \mid x\mid >2\right\}$.
+- $B=\left\{x\in \mathbb{R} \mid \mid x\mid >2\right\}.$
 
-- $C=\left\{x\in \mathbb{R} \mid -4\leqslant x+3<5\right\}$.
+- $C=\left\{x\in \mathbb{R} \mid -4\leqslant x+3<5\right\}.$
 
-**Bài 17.** Cho $A=\left\{1,2\right\}$ và $B=\left\{1,2,3,4,5\right\}$. Xác định các tập hợp $X$ sao cho $A\cup X=B$.
+**Bài 17.** Cho $A=\left\{1,2\right\}$ và $B=\left\{1,2,3,4,5\right\}.$ Xác định các tập hợp $X$ sao cho $A\cup X=B.$

@@ -24,7 +24,7 @@ GIA SƯ THÔNG MINH xin giới thiệu các đề thi giữa kì 1 Toán 10 đ�
 
 2. Cho mệnh đề: “Nếu $ABCD$ là hình bình hành thì $\overrightarrow{AB}=\overrightarrow{DC}$”. Phát biểu mệnh đề đảo của mệnh đề trên và xét tính đúng – sai của mệnh đề đảo này.
 
-**Câu 2.** (1,0 điểm) Cho $A=\left(-\infty;1\right), B=[-3;5)$. Tìm các tập hợp $A\cup B, A\cap B, B\setminus A$ và $\mathrm{C}_R A$.
+**Câu 2.** (1,0 điểm) Cho $A=\left(-\infty;1\right), B=[-3;5).$ Tìm các tập hợp $A\cup B, A\cap B, B\setminus A$ và $\mathrm{C}_R A.$
  
 **Câu 3.** (2,0 điểm)
 
@@ -42,12 +42,12 @@ GIA SƯ THÔNG MINH xin giới thiệu các đề thi giữa kì 1 Toán 10 đ�
 
 **Câu 4.** (1,25 điểm) Xét tính đồng biến nghịch biến của hàm số $f(x)=\dfrac{4}{x-2}$ trên khoảng $(-\infty;2).$
  
-**Câu 5.** (1,25 điểm) Cho hàm số $y=ax^2+bx+c$ có đồ thị là một parabol $(\mathcal{P})$. Tìm hệ số $a,b,c$ biết $(\mathcal{P})$ có đỉnh là $I(1;-4)$ và đi qua điểm $A(2;-3)$.
+**Câu 5.** (1,25 điểm) Cho hàm số $y=ax^2+bx+c$ có đồ thị là một parabol $(\mathcal{P}).$ Tìm hệ số $a,b,c$ biết $(\mathcal{P})$ có đỉnh là $I(1;-4)$ và đi qua điểm $A(2;-3).$
  
-**Câu 6.** (2,5 điểm) Cho tam giác $ABC$ vuông cân tại định $A$, có $AB=4$. Gọi $I$ là điểm thỏa mãn $\overrightarrow{AI}=\frac{3}{4} \overrightarrow{AB}$ và $E$ là trung điểm $AC$.
+**Câu 6.** (2,5 điểm) Cho tam giác $ABC$ vuông cân tại định $A$, có $AB=4.$ Gọi $I$ là điểm thỏa mãn $\overrightarrow{AI}=\frac{3}{4} \overrightarrow{AB}$ và $E$ là trung điểm $AC.$
 
-1. Tính $\overrightarrow{IE}$ theo hai véc-tơ $\overrightarrow{AB}$ và $\overrightarrow{AC}$.
+1. Tính $\overrightarrow{IE}$ theo hai véc-tơ $\overrightarrow{AB}$ và $\overrightarrow{AC}.$
 
-2. Điểm $M$ thỏa mãn $3\overrightarrow{MA}-2\overrightarrow{MB}+\overrightarrow{MC}=\overrightarrow{BA}$. Chứng minh $MA$ song song với $BC$.
+2. Điểm $M$ thỏa mãn $3\overrightarrow{MA}-2\overrightarrow{MB}+\overrightarrow{MC}=\overrightarrow{BA}.$ Chứng minh $MA$ song song với $BC.$
 
 3. Tính $\left|\overrightarrow{EA}+3\overrightarrow{EB}\right|.$

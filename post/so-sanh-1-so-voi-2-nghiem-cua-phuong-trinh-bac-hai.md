@@ -15,7 +15,7 @@ grade: 10
 
 ## 1. So sánh 1 số với 2 nghiệm của phương trình bậc hai
 
-Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phân biệt $x_1<x_2$ và một số $\alpha$. Khi đó, ta có các kết quả sau
+Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phân biệt $x_1<x_2$ và một số $\alpha.$ Khi đó, ta có các kết quả sau
 
 ### 1.1. Số α nằm trong khoảng hai nghiệm
 
@@ -64,7 +64,7 @@ Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phâ
 
 Đôi khi, người ta còn đặt tổng 2 nghiệm là $x_1+x_2=S=-\frac{b}{a}$, tích hai nghiệm là $x_1 x_2=P=\frac{c}{a}$ thì các điều kiện trên trở thành:
 
-- Phương trình bậc 2 có hai nghiệm trái dấu khi và chỉ khi $P<0$.
+- Phương trình bậc 2 có hai nghiệm trái dấu khi và chỉ khi $P<0.$
 
 - Phương trình bậc 2 có hai nghiệm cùng dấu khi và chỉ khi
 
@@ -106,7 +106,7 @@ Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phâ
 
 - Có hai nghiệm trái dấu;
 
-- Có hai nghiệm cùng lớn hơn $1$.
+- Có hai nghiệm cùng lớn hơn $1.$
 
 **Hướng dẫn.**
 
@@ -125,7 +125,7 @@ Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phâ
   {-b}{2a}>0 \end{cases}
   $$
 
-  Giải hệ này ta tìm được đáp số $2\leqslant m<3$.
+  Giải hệ này ta tìm được đáp số $2\leqslant m<3.$
 
 Cách khác, không sử dụng định lý đảo về dấu tam thức bậc hai, mà chúng ta sử dụng định lí Viète:
 
@@ -135,7 +135,7 @@ Cách khác, không sử dụng định lý đảo về dấu tam thức bậc h
   \Delta’={{m}^{2}}-m-2\geqslant 0\Leftrightarrow m\in (-\infty,-1]\cup[2,+\infty)
   $$
 
-- Khi đó, cả hai nghiệm của phương trình đều lớn hơn $1$, tức là $x_1-1>0$ và $x_2-1>0$. Do đó, chúng ta có
+- Khi đó, cả hai nghiệm của phương trình đều lớn hơn $1$, tức là $x_1-1>0$ và $x_2-1>0.$ Do đó, chúng ta có
 
   $$
   \begin{aligned}
@@ -154,9 +154,9 @@ Cách khác, không sử dụng định lý đảo về dấu tam thức bậc h
 
   Kết hợp với điều kiện ta có $2\leqslant m<3$ là những giá trị cần tìm.
 
-**Ví dụ 2.**  Cho phương trình ${x^2} + 2mx – 3{m^2} = 0$. Tìm $m$ để phương trình có hai nghiệm $x_1, x_2$ thoả mãn ${x1} < 1 < {x_2}.$
+**Ví dụ 2.**  Cho phương trình ${x^2} + 2mx – 3{m^2} = 0.$ Tìm $m$ để phương trình có hai nghiệm $x_1, x_2$ thoả mãn ${x1} < 1 < {x_2}.$
 
-**Hướng dẫn.** Đặt $f\left( x \right) = {x^2} + 2mx – 3{m^2}$. Yêu cầu bài toán tương đương với
+**Hướng dẫn.** Đặt $f\left( x \right) = {x^2} + 2mx – 3{m^2}.$ Yêu cầu bài toán tương đương với
 
 $$
 af\left( 1 \right) < 0 \Leftrightarrow 1 \cdot f\left( 1 \right) < 0 \Leftrightarrow {1^2} + 2m – 3{m^2} < 0 \Leftrightarrow – 3{m^2} + 2m + 1 < 0 \Leftrightarrow \left[ \begin{array}{l} m > 1\\ m < – \frac{1}{3} \end{array} \right.
@@ -164,9 +164,9 @@ $$
 
 .
 
-**Ví dụ 3.** Cho phương trình ${x^2} + 2mx – 3{m^2} = 0$. Tìm m để phương trình có hai nghiệm $x_1, x_2$ và số $\alpha =1$ nằm ngoài khoảng hai nghiệm.
+**Ví dụ 3.** Cho phương trình ${x^2} + 2mx – 3{m^2} = 0.$ Tìm m để phương trình có hai nghiệm $x_1, x_2$ và số $\alpha =1$ nằm ngoài khoảng hai nghiệm.
 
-**Hướng dẫn.** Đặt $f\left( x \right) = {x^2} + 2mx – 3{m^2}$. Ta có $\Delta ‘ = {m^2} – \left( { – 3{m^2}} \right) = 4{m^2}$.
+**Hướng dẫn.** Đặt $f\left( x \right) = {x^2} + 2mx – 3{m^2}.$ Ta có $\Delta ‘ = {m^2} – \left( { – 3{m^2}} \right) = 4{m^2}.$
 
 Yêu cầu bài toán tương đương
 
@@ -214,29 +214,29 @@ $$
 
 - $x^4 + mx^3 + 2mx^2 + mx + 1 = 0$ [VD!TTM31]
 
-**Bài 10.** Tìm $m$ để phương trình $(m + 1)x^2 – 3mx + 4m = 0$ có duy nhất một nghiệm lớn hơn $1$.
+**Bài 10.** Tìm $m$ để phương trình $(m + 1)x^2 – 3mx + 4m = 0$ có duy nhất một nghiệm lớn hơn $1.$
 
-**Bài 11.** Cho phương trình $x^2 – (2m – 3)x + m2 – 3m = 0$. Xác định $m$ để phương trình có hai nghiệm $x_1 ; x_2$ thoả mãn $1 < x_1 < x_2 < 6$.
+**Bài 11.** Cho phương trình $x^2 – (2m – 3)x + m2 – 3m = 0.$ Xác định $m$ để phương trình có hai nghiệm $x_1 ; x_2$ thoả mãn $1 < x_1 < x_2 < 6.$
 
-**Bài 12.** Cho phương trình $2x^2 + (2m – 1)x + m – 1 = 0$. Xác định $m$ để phương trình có hai nghiệm phân biệt $x_1 ; x_2$ thoả mãn: $– 1 < x_1 < x_2 < 1.$
+**Bài 12.** Cho phương trình $2x^2 + (2m – 1)x + m – 1 = 0.$ Xác định $m$ để phương trình có hai nghiệm phân biệt $x_1 ; x_2$ thoả mãn: $– 1 < x_1 < x_2 < 1.$
 
 **Bài 13.** Cho $f(x) = x^2 – 2(m + 2)x + 6m + 1.$
 
-- Chứng minh rằng phương trình $f(x) = 0$ có nghiệm với mọi $m$.
+- Chứng minh rằng phương trình $f(x) = 0$ có nghiệm với mọi $m.$
 
-- Đặt $x = t + 2$. Tính $f(x)$ theo $t$, từ đó tìm điều kiện đối với $m$ để phương trình $f(x) = 0$ có hai nghiệm lớn hơn $2$.
+- Đặt $x = t + 2.$ Tính $f(x)$ theo $t$, từ đó tìm điều kiện đối với $m$ để phương trình $f(x) = 0$ có hai nghiệm lớn hơn $2.$
 
-**Bài 14.** Cho phương trình bậc hai: $x^2 + 2(a + 3)x + 4(a + 3) = 0$.
+**Bài 14.** Cho phương trình bậc hai: $x^2 + 2(a + 3)x + 4(a + 3) = 0.$
 
 - Với giá trị nào của tham số $a$, phương trình có nghiệm kép. Tính các nghiệm kép.
 
-- Xác định $a$ để phương trình có hai nghiệm phân biệt lớn hơn $– 1$.
+- Xác định $a$ để phương trình có hai nghiệm phân biệt lớn hơn $– 1.$
 
-**Bài 15.** Cho phương trình: $x^2 + 2(m – 1)x – (m + 1) = 0$.
+**Bài 15.** Cho phương trình: $x^2 + 2(m – 1)x – (m + 1) = 0.$
 
-- Tìm giá trị của $m$ để phương trình có một nghiệm nhỏ hơn $1$ và một nghiệm lớn hơn $1$.
+- Tìm giá trị của $m$ để phương trình có một nghiệm nhỏ hơn $1$ và một nghiệm lớn hơn $1.$
 
-- Tìm giá trị của $m$ để phương trình có hai nghiệm nhỏ hơn $2$.
+- Tìm giá trị của $m$ để phương trình có hai nghiệm nhỏ hơn $2.$
 
 **Bài 16.** Tìm $m$ để phương trình: $x^2 – mx + m = 0$ có nghiệm thoả mãn $x_1 \leqslant – 2 \leqslant x_2$
 
@@ -246,7 +246,7 @@ $$
 A=\left(1-\frac{\sqrt{x}}{\sqrt{x}+1}\right):\left(\frac{\sqrt{x}+3}{\sqrt{x}-2}+\frac{\sqrt{x}+2}{3-\sqrt{x}}+\frac{\sqrt{x}+2}{x-5\sqrt{x}+6}\right).
 $$
 
- Tìm $m$ để có $x$ thoả mãn $A(\sqrt{x}+1)=m(x+1)-2$.
+ Tìm $m$ để có $x$ thoả mãn $A(\sqrt{x}+1)=m(x+1)-2.$
 
 **Bài 18.** Tìm $m$ để có $x<0$ sao cho 
 

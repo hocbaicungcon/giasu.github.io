@@ -37,7 +37,7 @@ $$
 
    - nếu $B <0$ thì phương trình vô nghiệm;
 
-   - nếu $B <0$ thì phương trình tương đương với $A=\pm B$.
+   - nếu $B <0$ thì phương trình tương đương với $A=\pm B.$
 
 Nếu $B$ là một biểu thức chứa $x$ thì phương trình đã cho tương đương với 
 
@@ -97,7 +97,7 @@ $$
   x+5=3x+10.
   $$
 
-  Giải phương trình này, tìm được $x=-\frac{5}{2}$. Nghiệm này thỏa mãn điều kiện $x \geqslant -5$ nên nhận.
+  Giải phương trình này, tìm được $x=-\frac{5}{2}.$ Nghiệm này thỏa mãn điều kiện $x \geqslant -5$ nên nhận.
 
 - **Trường hợp 2.** Nếu $x+5 < 0 \Leftrightarrow x < -5$ thì phương trình đã cho trở thành
 
@@ -105,7 +105,7 @@ $$
   -x-5=3x+10.
   $$
 
-  Giải phương trình này, tìm được $x=-\frac{15}{4}$. Nghiệm này không thỏa mãn điều kiện $x \geqslant -5$ nên loại.
+  Giải phương trình này, tìm được $x=-\frac{15}{4}.$ Nghiệm này không thỏa mãn điều kiện $x \geqslant -5$ nên loại.
 
 Kết luận, phương trình đã cho có nghiệm duy nhất $x=-\frac{5}{2}.$
 
@@ -141,9 +141,9 @@ $$
   -3x+2=x^2+2x+3.
   $$
 
-  Giải phương trình này, tìm được $x=\frac{-5\pm \sqrt{21}}{2}$. So sánh với điều kiện $x < \frac{2}{3}$ thấy cả hai nghiệm đều thỏa mãn.
+  Giải phương trình này, tìm được $x=\frac{-5\pm \sqrt{21}}{2}.$ So sánh với điều kiện $x < \frac{2}{3}$ thấy cả hai nghiệm đều thỏa mãn.
 
-Kết luận. Phương trình đã cho có hai nghiệm là $\frac{-5\pm \sqrt{21}}{2}$.
+Kết luận. Phương trình đã cho có hai nghiệm là $\frac{-5\pm \sqrt{21}}{2}.$
 
 **Ví dụ 5.** Giải phương trình 
 
@@ -151,7 +151,7 @@ $$
 \frac{x-1}{2x-3}=\frac{-3x+1}{|x+1|}.
 $$
 
-**Hướng dẫn.** Điều kiện $x\ne -1, x\ne \frac{3}{2}$. Chúng ta xét hai trường hợp:
+**Hướng dẫn.** Điều kiện $x\ne -1, x\ne \frac{3}{2}.$ Chúng ta xét hai trường hợp:
 
 - **Trường hợp 1.** Nếu $x+1>0 \Leftrightarrow x>-1$ thì phương trình đã cho trở thành
 
@@ -165,7 +165,7 @@ $$
   \frac{7x^{2}-11x+2}{-2x^{2}+x+3}=0.
   $$
 
-  Giải phương trình này được nghiệm $x=\frac{11\pm \sqrt{65}}{14}$. So sánh thấy cả hai đều thỏa mãn các điều kiện $x\ne -1, x\ne \frac{3}{2}$ và $x>-1$ nên nhận cả hai nghiệm.
+  Giải phương trình này được nghiệm $x=\frac{11\pm \sqrt{65}}{14}.$ So sánh thấy cả hai đều thỏa mãn các điều kiện $x\ne -1, x\ne \frac{3}{2}$ và $x>-1$ nên nhận cả hai nghiệm.
 
 - **Trường hợp 2.** Nếu $x+1<0 \Leftrightarrow x<-1$ thì phương trình đã cho trở thành
 
@@ -173,7 +173,7 @@ $$
   \frac{x-1}{2x-3}=\frac{-3x+1}{-x-1}.
   $$
 
-  Giải phương trình này được nghiệm $x=\frac{11\pm \sqrt{41}}{10}$. So sánh thấy cả hai không thỏa mãn điều kiện $x<-1$ nên loại cả hai nghiệm.
+  Giải phương trình này được nghiệm $x=\frac{11\pm \sqrt{41}}{10}.$ So sánh thấy cả hai không thỏa mãn điều kiện $x<-1$ nên loại cả hai nghiệm.
 
 Kết luận, tập nghiệm của phương trình đã cho là $S=\{\frac{11\pm \sqrt{65}}{14}\}.$
 
@@ -191,7 +191,7 @@ $$
   x^2+4x-3(x+2)+4=0.
   $$
 
-  Giải phương trình này được nghiệm $x=-2,x=1$. Cả hai đều thỏa mãn điều kiện $x \geqslant -2$ nên nhận cả hai nghiệm.
+  Giải phương trình này được nghiệm $x=-2,x=1.$ Cả hai đều thỏa mãn điều kiện $x \geqslant -2$ nên nhận cả hai nghiệm.
 
 - **Trường hợp 2.** Khi $x+2 <0 \Leftrightarrow x> <-2$ thì phương trình đã cho trở thành
 
@@ -199,9 +199,9 @@ $$
   x^2+4x+3(x+2)+4=0.
   $$
 
-  Giải phương trình này được nghiệm $x=-2,x=-5$. So sánh điều kiện $x <-2$ thì $x=-2$ bị loại, $x=-5$ thỏa mãn.
+  Giải phương trình này được nghiệm $x=-2,x=-5.$ So sánh điều kiện $x <-2$ thì $x=-2$ bị loại, $x=-5$ thỏa mãn.
 
-Kết luận, tập nghiệm của phương trình đã cho là $S=\{-5,-2,1\}$.
+Kết luận, tập nghiệm của phương trình đã cho là $S=\{-5,-2,1\}.$
 
 Đối với phương trình chứa nhiều dấu giá trị tuyệt đối mà không rơi vào các dạng trên, chúng ta thường lập bảng khử dấu giá trị tuyệt đối như sau.
 
@@ -243,7 +243,7 @@ Từ đó, dễ dàng chia thành ba trường hợp:
 
   Nghiệm này cũng thỏa mãn điều kiện $x \geqslant 1$ nên nhận.
 
-Tóm lại, phương trình đã cho có hai nghiệm $x=\pm 2$.
+Tóm lại, phương trình đã cho có hai nghiệm $x=\pm 2.$
 
 **Ví dụ 8.** Giải phương trình chứa trị tuyệt đối: 
 
@@ -251,4 +251,4 @@ $$
 |x+4|-2|x+5|=-7.
 $$
 
-**Hướng dẫn.** Lập bảng xét dấu tương tự ví dụ 7, đáp số $x=1,x=-13$.
+**Hướng dẫn.** Lập bảng xét dấu tương tự ví dụ 7, đáp số $x=1,x=-13.$

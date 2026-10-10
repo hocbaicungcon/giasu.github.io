@@ -27,8 +27,8 @@ Trước khi vào bài mới, các em hãy cùng hoàn thành 5 câu hỏi ôn t
 <details>
 <summary>Xem đáp án Câu 1</summary>
 
-- **Cách 1 (liệt kê):** $A = \{0; 1; 2; 3; 4; 5\}$.
-- **Cách 2 (tính chất đặc trưng):** $A = \{x \in \mathbb{N} \mid x < 6\}$.
+- **Cách 1 (liệt kê):** $A = \{0; 1; 2; 3; 4; 5\}.$
+- **Cách 2 (tính chất đặc trưng):** $A = \{x \in \mathbb{N} \mid x < 6\}.$
 
 </details>
 
@@ -43,7 +43,7 @@ options:
   - '$7 \in \mathbb{N}^*$'
   - '$3{,}5 \in \mathbb{N}$'
 answer: 3
-explanation: 'Số 7 là số tự nhiên khác 0 nên $7 \in \mathbb{N}^*$ là đúng. Các khẳng định khác đều sai vì $0 \in \mathbb{N}$, $0 \notin \mathbb{N}^*$ và $3{,}5 \notin \mathbb{N}$.'
+explanation: 'Số 7 là số tự nhiên khác 0 nên $7 \in \mathbb{N}^*$ là đúng. Các khẳng định khác đều sai vì $0 \in \mathbb{N}$, $0 \notin \mathbb{N}^*$ và $3{,}5 \notin \mathbb{N}.$'
 ```
 
 <details>
@@ -56,18 +56,18 @@ explanation: 'Số 7 là số tự nhiên khác 0 nên $7 \in \mathbb{N}^*$ là 
 
 </details>
 
-**Câu 3.** Cho $B = \{x \in \mathbb{N} \mid 4 < x \le 9\}$. Hãy liệt kê các phần tử của $B$ và cho biết $B$ có bao nhiêu phần tử.
+**Câu 3.** Cho $B = \{x \in \mathbb{N} \mid 4 < x \le 9\}.$ Hãy liệt kê các phần tử của $B$ và cho biết $B$ có bao nhiêu phần tử.
 
 <details>
 <summary>Xem đáp án Câu 3</summary>
 
-- Các số tự nhiên lớn hơn 4 và nhỏ hơn hoặc bằng 9 là: $5; 6; 7; 8; 9$.
-- Vậy $B = \{5; 6; 7; 8; 9\}$. Tập hợp $B$ có **5 phần tử**.
+- Các số tự nhiên lớn hơn 4 và nhỏ hơn hoặc bằng 9 là: $5; 6; 7; 8; 9.$
+- Vậy $B = \{5; 6; 7; 8; 9\}.$ Tập hợp $B$ có **5 phần tử**.
 
 </details>
 
 **Câu 4.**
-- a) Đọc số $5\ 070\ 302$.
+- a) Đọc số $5\ 070\ 302.$
 - b) Viết số "bốn nghìn không trăm linh chín" bằng chữ số.
 
 <details>
@@ -123,15 +123,15 @@ $$0;\ 1;\ 2;\ 3;\ 4;\ 5;\ 6;\ 7;\ 8;\ 9$$
 | **Hàng** | Hàng tỉ | Trăm triệu | Chục triệu | Hàng triệu | Trăm nghìn | Chục nghìn | Hàng nghìn | Hàng trăm | Hàng chục | Hàng đơn vị |
 | **Giá trị** | $10^9$ | $10^8$ | $10^7$ | $10^6$ | $10^5$ | $10^4$ | $10^3$ | $100$ | $10$ | $1$ |
 
-> **Ví dụ 1.** Cho số $12\ 625$.
+> **Ví dụ 1.** Cho số $12\ 625.$
 > - a) Số đó có bao nhiêu chữ số?
 > - b) Hãy đọc số đó.
 
 <details>
 <summary>Xem lời giải Ví dụ 1</summary>
 
-- a) Số $12\ 625$ có **5 chữ số**, lần lượt là $1; 2; 6; 2; 5$.
-- b) Tách lớp từ phải sang trái: $12 \mid 625$. Đọc là: **Mười hai nghìn sáu trăm hai mươi lăm**.
+- a) Số $12\ 625$ có **5 chữ số**, lần lượt là $1; 2; 6; 2; 5.$
+- b) Tách lớp từ phải sang trái: $12 \mid 625.$ Đọc là: **Mười hai nghìn sáu trăm hai mươi lăm**.
 
 </details>
 
@@ -141,7 +141,7 @@ $$0;\ 1;\ 2;\ 3;\ 4;\ 5;\ 6;\ 7;\ 8;\ 9$$
 
 #### a) Giá trị của chữ số
 - Giá trị của một chữ số phụ thuộc vào **vị trí hàng** của nó trong số đó.
-  - Chẳng hạn trong số $1240$, chữ số $2$ nằm ở hàng trăm nên có giá trị là: $2 \times 100 = 200$.
+  - Chẳng hạn trong số $1240$, chữ số $2$ nằm ở hàng trăm nên có giá trị là: $2 \times 100 = 200.$
 - Mọi số tự nhiên đều viết được thành **tổng giá trị các chữ số** của nó:
   $$3502 = 3 \times 1000 + 5 \times 100 + 0 \times 10 + 2 = 3000 + 500 + 2$$
 
@@ -173,14 +173,14 @@ $$0;\ 1;\ 2;\ 3;\ 4;\ 5;\ 6;\ 7;\ 8;\ 9$$
 Hệ số La Mã là hệ đếm cổ xưa vẫn được sử dụng ngày nay trên mặt đồng hồ, ghi số thứ tự các thế kỉ, mục lục sách báo, số hiệu chương hồi,...
 
 #### a) Các chữ số La Mã cơ bản
-Trong chương trình Toán 6, chúng ta học cách ghi các số La Mã từ $1$ đến $30$. Hệ thống này sử dụng **ba chữ số cơ bản**:
+Trong chương trình Toán 6, chúng ta học cách ghi các số La Mã từ $1$ đến $30.$ Hệ thống này sử dụng **ba chữ số cơ bản**:
 
 | Chữ số La Mã | I | V | X |
 | :---: | :---: | :---: | :---: |
 | **Giá trị** | $1$ | $5$ | $10$ |
 
 #### b) Bảng số La Mã từ 1 đến 10
-Bên cạnh việc lặp lại chữ số I (không quá 3 lần), người ta dùng hai cụm đặc biệt theo nguyên tắc trừ: $\text{IV} = 5 - 1 = 4$ và $\text{IX} = 10 - 1 = 9$.
+Bên cạnh việc lặp lại chữ số I (không quá 3 lần), người ta dùng hai cụm đặc biệt theo nguyên tắc trừ: $\text{IV} = 5 - 1 = 4$ và $\text{IX} = 10 - 1 = 9.$
 
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -193,19 +193,19 @@ Bên cạnh việc lặp lại chữ số I (không quá 3 lần), người ta d
   $$\text{Ví dụ: } 21 = \text{XXI};\quad 24 = \text{XXIV};\quad 26 = \text{XXVI};\quad 30 = \text{XXX}$$
 
 > **Ví dụ 3.**
-> - a) Đọc các số La Mã: $\text{XXIV}$; $\text{XVII}$.
+> - a) Đọc các số La Mã: $\text{XXIV}$; $\text{XVII}.$
 > - b) Viết các số $9$; $14$; $26$ bằng chữ số La Mã.
 
 <details>
 <summary>Xem lời giải Ví dụ 3</summary>
 
 - a) Đọc số:
-  - $\text{XXIV} = \text{XX} + \text{IV} = 20 + 4 = 24$.
-  - $\text{XVII} = \text{X} + \text{V} + \text{II} = 10 + 5 + 2 = 17$.
+  - $\text{XXIV} = \text{XX} + \text{IV} = 20 + 4 = 24.$
+  - $\text{XVII} = \text{X} + \text{V} + \text{II} = 10 + 5 + 2 = 17.$
 - b) Viết số:
-  - $9 = \text{IX}$.
-  - $14 = 10 + 4 = \text{XIV}$.
-  - $26 = 20 + 6 = \text{XXVI}$.
+  - $9 = \text{IX}.$
+  - $14 = 10 + 4 = \text{XIV}.$
+  - $26 = 20 + 6 = \text{XXVI}.$
 
 </details>
 
@@ -215,13 +215,13 @@ Bên cạnh việc lặp lại chữ số I (không quá 3 lần), người ta d
 
 1. **Phân biệt số và chữ số:**
    - Số $2454$ là **một số**.
-   - Các chữ số tạo nên nó là: $2; 4; 5; 4$.
+   - Các chữ số tạo nên nó là: $2; 4; 5; 4.$
    - Tập hợp các chữ số của số $2454$ là $\{2; 4; 5\}$ (mỗi chữ số chỉ viết một lần).
 2. **Chữ số 0 không đứng đầu bên trái:**
-   - Số tự nhiên không bắt đầu bằng chữ số 0: viết $725$, không viết là $0725$.
+   - Số tự nhiên không bắt đầu bằng chữ số 0: viết $725$, không viết là $0725.$
 3. **Phân biệt $\overline{ab}$ với tích $a \times b$:**
-   - $\overline{ab}$ là số có hai chữ số: $\overline{ab} = 10a + b$.
-   - Ví dụ với $a = 3, b = 7$: $\overline{ab} = 37$, trong khi $a \times b = 3 \times 7 = 21$.
+   - $\overline{ab}$ là số có hai chữ số: $\overline{ab} = 10a + b.$
+   - Ví dụ với $a = 3, b = 7$: $\overline{ab} = 37$, trong khi $a \times b = 3 \times 7 = 21.$
 4. **Quy tắc số La Mã:**
    - **Không viết quá 3 chữ số giống nhau đứng liền nhau**: $4 = \text{IV}$ (không viết $\text{IIII}$), $9 = \text{IX}$ (không viết $\text{VIIII}$).
    - **Chữ số nhỏ đứng trước chữ số lớn chỉ áp dụng cho IV và IX**: $15 = \text{XV}$ (không viết $\text{VX}$).
@@ -238,8 +238,8 @@ Bên cạnh việc lặp lại chữ số I (không quá 3 lần), người ta d
 - **Lưu ý:** Khi viết tập hợp các chữ số của một số, mỗi chữ số chỉ liệt kê một lần duy nhất.
 
 **Luyện tập 1.1.**
-- a) Viết tập hợp các chữ số của số $2389$.
-- b) Viết tập hợp các chữ số của số $2020$.
+- a) Viết tập hợp các chữ số của số $2389.$
+- b) Viết tập hợp các chữ số của số $2020.$
 
 ```quiz
 type: choice
@@ -258,12 +258,12 @@ explanation: 'Số 2020 gồm các chữ số 2, 0, 2, 0. Vì mỗi phần tử 
 
 - a) Số $2389$ có các chữ số $2; 3; 8; 9 \implies$ Tập hợp cần tìm là:
   $$\{2; 3; 8; 9\}$$
-- b) Số $2020$ có các chữ số $2; 0; 2; 0$. Mỗi chữ số chỉ viết 1 lần $\implies$ Tập hợp cần tìm là:
+- b) Số $2020$ có các chữ số $2; 0; 2; 0.$ Mỗi chữ số chỉ viết 1 lần $\implies$ Tập hợp cần tìm là:
   $$\{0; 2\}$$
 
 </details>
 
-**Luyện tập 1.2.** Cho các số: $12\ 625$; $140\ 962$; $1\ 613\ 521$; $2\ 156\ 937$.
+**Luyện tập 1.2.** Cho các số: $12\ 625$; $140\ 962$; $1\ 613\ 521$; $2\ 156\ 937.$
 - a) Đọc mỗi số đã cho.
 - b) Chữ số 6 trong mỗi số đã cho có giá trị là bao nhiêu?
 
@@ -300,8 +300,8 @@ explanation: 'Đếm từ phải sang trái: 1 (đơn vị), 2 (chục), 5 (tră
 <details>
 <summary>Xem lời giải Luyện tập 1.3</summary>
 
-- $4528 = 4 \times 1000 + 5 \times 100 + 2 \times 10 + 8 = 4000 + 500 + 20 + 8$.
-- $12\ 105 = 1 \times 10\ 000 + 2 \times 1000 + 1 \times 100 + 0 \times 10 + 5 = 10\ 000 + 2000 + 100 + 5$.
+- $4528 = 4 \times 1000 + 5 \times 100 + 2 \times 10 + 8 = 4000 + 500 + 20 + 8.$
+- $12\ 105 = 1 \times 10\ 000 + 2 \times 1000 + 1 \times 100 + 0 \times 10 + 5 = 10\ 000 + 2000 + 100 + 5.$
 
 </details>
 
@@ -359,8 +359,8 @@ explanation: 'Hàng nghìn nhỏ nhất khác 0 là 1. Hàng trăm nhỏ nhất 
 <details>
 <summary>Xem lời giải Luyện tập 2.3</summary>
 
-- **Số lớn nhất:** Xếp các chữ số giảm dần từ trái sang phải: $9; 8; 5; 3; 2; 0 \implies \mathbf{985\ 320}$.
-- **Số nhỏ nhất:** Chữ số đầu tiên phải khác 0 nên chọn 2. Sau đó xếp các chữ số còn lại theo thứ tự tăng dần: $0; 3; 5; 8; 9 \implies \mathbf{203\ 589}$.
+- **Số lớn nhất:** Xếp các chữ số giảm dần từ trái sang phải: $9; 8; 5; 3; 2; 0 \implies \mathbf{985\ 320}.$
+- **Số nhỏ nhất:** Chữ số đầu tiên phải khác 0 nên chọn 2. Sau đó xếp các chữ số còn lại theo thứ tự tăng dần: $0; 3; 5; 8; 9 \implies \mathbf{203\ 589}.$
 
 </details>
 
@@ -371,12 +371,12 @@ explanation: 'Hàng nghìn nhỏ nhất khác 0 là 1. Hàng trăm nhỏ nhất 
 **Phương pháp giải:**
 - **Đọc số La Mã:** Tách số thành từng cụm từ trái sang phải ($\text{XX}, \text{X}, \text{IX}, \text{IV}, \text{V}, \dots$), sau đó cộng giá trị của các cụm lại.
 - **Viết số La Mã:** Tách số thành $\text{Phần chục} + \text{Phần đơn vị}$:
-  - Phần chục viết bằng $\text{X}$, $\text{XX}$ hoặc $\text{XXX}$.
-  - Phần đơn vị viết theo bảng chuẩn từ $\text{I}$ đến $\text{IX}$.
+  - Phần chục viết bằng $\text{X}$, $\text{XX}$ hoặc $\text{XXX}.$
+  - Phần đơn vị viết theo bảng chuẩn từ $\text{I}$ đến $\text{IX}.$
 
 **Luyện tập 3.1.**
-- a) Đọc các số La Mã sau: $\text{IX}$; $\text{XIX}$; $\text{XXII}$; $\text{XXVI}$.
-- b) Viết các số sau bằng chữ số La Mã: $15$; $13$; $24$; $16$; $30$.
+- a) Đọc các số La Mã sau: $\text{IX}$; $\text{XIX}$; $\text{XXII}$; $\text{XXVI}.$
+- b) Viết các số sau bằng chữ số La Mã: $15$; $13$; $24$; $16$; $30.$
 
 ```quiz
 type: choice
@@ -408,26 +408,26 @@ explanation: '24 = 20 + 4 = XX + IV = XXIV. Trong hệ số La Mã không đư�
 </details>
 
 **Luyện tập 3.2.**
-- a) Đọc các số La Mã: $\text{XXI}$; $\text{XXIII}$; $\text{XV}$; $\text{XVII}$; $\text{XXIV}$.
-- b) Viết các số sau bằng chữ số La Mã: $7$; $12$; $18$; $27$; $29$.
+- a) Đọc các số La Mã: $\text{XXI}$; $\text{XXIII}$; $\text{XV}$; $\text{XVII}$; $\text{XXIV}.$
+- b) Viết các số sau bằng chữ số La Mã: $7$; $12$; $18$; $27$; $29.$
 
 <details>
 <summary>Xem lời giải Luyện tập 3.2</summary>
 
-- a) $\text{XXI} = 21$; $\text{XXIII} = 23$; $\text{XV} = 15$; $\text{XVII} = 17$; $\text{XXIV} = 24$.
-- b) $7 = \text{VII}$; $12 = \text{XII}$; $18 = \text{XVIII}$; $27 = \text{XXVII}$; $29 = \text{XXIX}$.
+- a) $\text{XXI} = 21$; $\text{XXIII} = 23$; $\text{XV} = 15$; $\text{XVII} = 17$; $\text{XXIV} = 24.$
+- b) $7 = \text{VII}$; $12 = \text{XII}$; $18 = \text{XVIII}$; $27 = \text{XXVII}$; $29 = \text{XXIX}.$
 
 </details>
 
 **Luyện tập 3.3.**
-- a) Đọc các số La Mã: $\text{XIV}$; $\text{XXVIII}$; $\text{XXIX}$.
-- b) Viết các số sau bằng chữ số La Mã: $4$; $9$; $19$; $25$.
+- a) Đọc các số La Mã: $\text{XIV}$; $\text{XXVIII}$; $\text{XXIX}.$
+- b) Viết các số sau bằng chữ số La Mã: $4$; $9$; $19$; $25.$
 
 <details>
 <summary>Xem lời giải Luyện tập 3.3</summary>
 
-- a) $\text{XIV} = 14$; $\text{XXVIII} = 28$; $\text{XXIX} = 29$.
-- b) $4 = \text{IV}$; $9 = \text{IX}$; $19 = \text{XIX}$; $25 = \text{XXV}$.
+- a) $\text{XIV} = 14$; $\text{XXVIII} = 28$; $\text{XXIX} = 29.$
+- b) $4 = \text{IV}$; $9 = \text{IX}$; $19 = \text{XIX}$; $25 = \text{XXV}.$
 
 </details>
 
@@ -435,7 +435,7 @@ explanation: '24 = 20 + 4 = XX + IV = XXIV. Trong hệ số La Mã không đư�
 
 ## C. Phiếu bài tập tự luyện
 
-**Bài 1.** Cho các số: $42\ 356$; $153\ 782$; $10\ 802\ 953$; $3\ 129\ 612\ 457$.
+**Bài 1.** Cho các số: $42\ 356$; $153\ 782$; $10\ 802\ 953$; $3\ 129\ 612\ 457.$
 - a) Đọc mỗi số đã cho.
 - b) Chữ số 3 trong mỗi số đã cho có giá trị là bao nhiêu?
 
@@ -456,14 +456,14 @@ explanation: '24 = 20 + 4 = XX + IV = XXIV. Trong hệ số La Mã không đư�
 </details>
 
 **Bài 2.**
-- a) Viết tập hợp các chữ số của số $13\ 527$.
-- b) Viết tập hợp các chữ số của số $99\ 999$.
+- a) Viết tập hợp các chữ số của số $13\ 527.$
+- b) Viết tập hợp các chữ số của số $99\ 999.$
 
 <details>
 <summary>Xem lời giải Bài 2</summary>
 
-- a) Tập hợp các chữ số của số $13\ 527$ là: $\{1; 2; 3; 5; 7\}$.
-- b) Số $99\ 999$ chỉ gồm các chữ số 9, mỗi phần tử chỉ viết 1 lần $\implies$ Tập hợp là: $\{9\}$.
+- a) Tập hợp các chữ số của số $13\ 527$ là: $\{1; 2; 3; 5; 7\}.$
+- b) Số $99\ 999$ chỉ gồm các chữ số 9, mỗi phần tử chỉ viết 1 lần $\implies$ Tập hợp là: $\{9\}.$
 
 </details>
 
@@ -495,8 +495,8 @@ explanation: '24 = 20 + 4 = XX + IV = XXIV. Trong hệ số La Mã không đư�
 <details>
 <summary>Xem lời giải Bài 4</summary>
 
-- $51\ 379 = 50\ 000 + 1000 + 300 + 70 + 9$.
-- $1320 = 1000 + 300 + 20 + 0 = 1000 + 300 + 20$.
+- $51\ 379 = 50\ 000 + 1000 + 300 + 70 + 9.$
+- $1320 = 1000 + 300 + 20 + 0 = 1000 + 300 + 20.$
 
 </details>
 
@@ -519,8 +519,8 @@ explanation: '24 = 20 + 4 = XX + IV = XXIV. Trong hệ số La Mã không đư�
 <details>
 <summary>Xem lời giải Bài 6</summary>
 
-- a) Lập được 6 số: $269;\ 296;\ 629;\ 692;\ 926;\ 962$.
-- b) Vì chữ số 0 không thể đứng đầu, nên hàng trăm là 4 hoặc 5: lập được 4 số là $405;\ 450;\ 504;\ 540$.
+- a) Lập được 6 số: $269;\ 296;\ 629;\ 692;\ 926;\ 962.$
+- b) Vì chữ số 0 không thể đứng đầu, nên hàng trăm là 4 hoặc 5: lập được 4 số là $405;\ 450;\ 504;\ 540.$
 
 </details>
 
@@ -530,7 +530,7 @@ explanation: '24 = 20 + 4 = XX + IV = XXIV. Trong hệ số La Mã không đư�
 <summary>Xem lời giải Bài 7</summary>
 
 - Chữ số 1 có giá trị bằng 10 nghĩa là chữ số 1 đứng ở **hàng chục**.
-- Số có dạng $\overline{a1b}$. Vì $a \ne 0$ nên hàng trăm phải chọn chữ số $4$, còn hàng đơn vị là $0$.
+- Số có dạng $\overline{a1b}.$ Vì $a \ne 0$ nên hàng trăm phải chọn chữ số $4$, còn hàng đơn vị là $0.$
 - Vậy số cần tìm là **$410$**.
 
 </details>
@@ -542,24 +542,24 @@ explanation: '24 = 20 + 4 = XX + IV = XXIV. Trong hệ số La Mã không đư�
 
 - Số đó có tổng cộng 6 chữ số.
 - Chữ số đầu tiên bên trái không thể là chữ số 0, do đó chữ số đầu tiên bắt buộc phải là 5.
-- Các chữ số 0 và 5 xen kẽ nhau theo quy luật: $5, 0, 5, 0, 5, 0$.
+- Các chữ số 0 và 5 xen kẽ nhau theo quy luật: $5, 0, 5, 0, 5, 0.$
 - Vậy số cần tìm là **$505\ 050$** (đọc là: năm trăm linh năm nghìn không trăm năm mươi).
 
 </details>
 
 **Bài 9.** Mỗi cách viết sau đúng hay sai? Nếu sai, hãy sửa lại cho đúng:
-- a) Số tự nhiên gồm bảy trăm hai mươi lăm đơn vị được viết là $0725$.
-- b) Với $a = 3$ và $b = 7$ thì $\overline{ab} = 21$.
-- c) Số 4 viết bằng chữ số La Mã là $\text{IIII}$.
-- d) Số 15 viết bằng chữ số La Mã là $\text{VX}$.
+- a) Số tự nhiên gồm bảy trăm hai mươi lăm đơn vị được viết là $0725.$
+- b) Với $a = 3$ và $b = 7$ thì $\overline{ab} = 21.$
+- c) Số 4 viết bằng chữ số La Mã là $\text{IIII}.$
+- d) Số 15 viết bằng chữ số La Mã là $\text{VX}.$
 
 <details>
 <summary>Xem lời giải Bài 9</summary>
 
 - a) **Sai**, vì chữ số 0 không được đứng đầu bên trái số tự nhiên. Sửa lại: **$725$**.
-- b) **Sai**, vì $\overline{ab}$ là số có hai chữ số chứ không phải phép nhân $a \times b$. Đúng ra: $\overline{ab} = 37$ (còn $3 \times 7 = 21$).
+- b) **Sai**, vì $\overline{ab}$ là số có hai chữ số chứ không phải phép nhân $a \times b.$ Đúng ra: $\overline{ab} = 37$ (còn $3 \times 7 = 21$).
 - c) **Sai**, vì không được viết quá ba chữ số giống nhau đứng liền nhau. Sửa lại: **$\text{IV}$**.
-- d) **Sai**, vì chữ số nhỏ chỉ đứng trước chữ số lớn ở hai cụm $\text{IV}$ và $\text{IX}$. Số 15 phân tích thành $10 + 5$. Sửa lại: **$\text{XV}$**.
+- d) **Sai**, vì chữ số nhỏ chỉ đứng trước chữ số lớn ở hai cụm $\text{IV}$ và $\text{IX}.$ Số 15 phân tích thành $10 + 5.$ Sửa lại: **$\text{XV}$**.
 
 </details>
 
@@ -658,7 +658,7 @@ explanation: 'Hàng chục nghìn nhỏ nhất khác 0 là 1. Các hàng tiếp 
 
 ### 2. Bài tập tự luận kiểm tra
 
-**Câu 1.** Cho các số tự nhiên: $2012$; $13\ 478$; $240\ 162$.
+**Câu 1.** Cho các số tự nhiên: $2012$; $13\ 478$; $240\ 162.$
 - a) Đọc các số tự nhiên đã cho.
 - b) Trong mỗi số trên, chữ số 1 có giá trị là bao nhiêu?
 
@@ -677,14 +677,14 @@ explanation: 'Hàng chục nghìn nhỏ nhất khác 0 là 1. Các hàng tiếp 
 </details>
 
 **Câu 2.**
-- a) Viết tập hợp các chữ số của số $6789$.
-- b) Viết tập hợp các chữ số của số $3066$.
+- a) Viết tập hợp các chữ số của số $6789.$
+- b) Viết tập hợp các chữ số của số $3066.$
 
 <details>
 <summary>Xem lời giải Câu 2</summary>
 
-- a) $\{6; 7; 8; 9\}$.
-- b) Số $3066$ có hai chữ số 6 lặp lại $\implies$ Tập hợp các chữ số là $\{0; 3; 6\}$.
+- a) $\{6; 7; 8; 9\}.$
+- b) Số $3066$ có hai chữ số 6 lặp lại $\implies$ Tập hợp các chữ số là $\{0; 3; 6\}.$
 
 </details>
 
@@ -729,8 +729,8 @@ explanation: 'Hàng chục nghìn nhỏ nhất khác 0 là 1. Các hàng tiếp 
 <details>
 <summary>Xem lời giải Câu 5</summary>
 
-- **Số lớn nhất:** Xếp các chữ số giảm dần $\implies \mathbf{76\ 410}$.
-- **Số nhỏ nhất:** Chữ số đầu tiên chọn 1, sau đó xếp tăng dần $\implies \mathbf{10\ 467}$.
+- **Số lớn nhất:** Xếp các chữ số giảm dần $\implies \mathbf{76\ 410}.$
+- **Số nhỏ nhất:** Chữ số đầu tiên chọn 1, sau đó xếp tăng dần $\implies \mathbf{10\ 467}.$
 
 </details>
 
@@ -746,14 +746,14 @@ explanation: 'Hàng chục nghìn nhỏ nhất khác 0 là 1. Các hàng tiếp 
 </details>
 
 **Câu 7.**
-- a) Đọc các số La Mã: $\text{VII}$; $\text{XIV}$; $\text{XXVIII}$.
-- b) Viết các số sau bằng chữ số La Mã: $18$; $25$; $13$.
+- a) Đọc các số La Mã: $\text{VII}$; $\text{XIV}$; $\text{XXVIII}.$
+- b) Viết các số sau bằng chữ số La Mã: $18$; $25$; $13.$
 
 <details>
 <summary>Xem lời giải Câu 7</summary>
 
-- a) $\text{VII} = 7$; $\text{XIV} = 14$; $\text{XXVIII} = 28$.
-- b) $18 = \text{XVIII}$; $25 = \text{XXV}$; $13 = \text{XIII}$.
+- a) $\text{VII} = 7$; $\text{XIV} = 14$; $\text{XXVIII} = 28.$
+- b) $18 = \text{XVIII}$; $25 = \text{XXV}$; $13 = \text{XIII}.$
 
 </details>
 
@@ -778,25 +778,25 @@ $$\text{VIIII};\quad \text{XXIIII};\quad \text{IXX};\quad \text{XXVI}$$
 <details>
 <summary>Xem lời giải Câu 9</summary>
 
-- a) Gọi số có dạng $\overline{abc}$ ($a \ne 0$). Theo đề: $b = 2a$ và $c = 2b = 4a$.
-  - Vì $c$ là chữ số nên $4a \le 9 \implies a = 1$ hoặc $a = 2$.
-  - Với $a = 1 \implies b = 2, c = 4 \implies$ được số $124$.
-  - Với $a = 2 \implies b = 4, c = 8 \implies$ được số $248$.
+- a) Gọi số có dạng $\overline{abc}$ ($a \ne 0$). Theo đề: $b = 2a$ và $c = 2b = 4a.$
+  - Vì $c$ là chữ số nên $4a \le 9 \implies a = 1$ hoặc $a = 2.$
+  - Với $a = 1 \implies b = 2, c = 4 \implies$ được số $124.$
+  - Với $a = 2 \implies b = 4, c = 8 \implies$ được số $248.$
   - Vậy tập hợp cần tìm là: **$\{124; 248\}$**.
-- b) Gọi chữ số hàng đơn vị là $c$, khi đó chữ số hàng chục là $c + 3$, chữ số hàng trăm là $(c + 3) + 3 = c + 6$.
-  - Vì $c + 6 \le 9 \implies c \in \{0; 1; 2; 3\}$.
+- b) Gọi chữ số hàng đơn vị là $c$, khi đó chữ số hàng chục là $c + 3$, chữ số hàng trăm là $(c + 3) + 3 = c + 6.$
+  - Vì $c + 6 \le 9 \implies c \in \{0; 1; 2; 3\}.$
   - Lần lượt thế các giá trị của $c$:
-    - $c = 0 \implies$ số $630$.
-    - $c = 1 \implies$ số $741$.
-    - $c = 2 \implies$ số $852$.
-    - $c = 3 \implies$ số $963$.
+    - $c = 0 \implies$ số $630.$
+    - $c = 1 \implies$ số $741.$
+    - $c = 2 \implies$ số $852.$
+    - $c = 3 \implies$ số $963.$
   - Vậy tập hợp cần tìm là: **$\{630; 741; 852; 963\}$**.
-- c) Chữ số hàng trăm là 1 nên tổng hai chữ số còn lại là $8 - 1 = 7$.
+- c) Chữ số hàng trăm là 1 nên tổng hai chữ số còn lại là $8 - 1 = 7.$
   - Gọi chữ số hàng chục là $b$ và hàng đơn vị là $c$ với $b + c = 7$ và $b < c$:
-    - $b = 0 \implies c = 7 \implies$ số $107$.
-    - $b = 1 \implies c = 6 \implies$ số $116$.
-    - $b = 2 \implies c = 5 \implies$ số $125$.
-    - $b = 3 \implies c = 4 \implies$ số $134$.
+    - $b = 0 \implies c = 7 \implies$ số $107.$
+    - $b = 1 \implies c = 6 \implies$ số $116.$
+    - $b = 2 \implies c = 5 \implies$ số $125.$
+    - $b = 3 \implies c = 4 \implies$ số $134.$
   - Vậy tập hợp cần tìm là: **$\{107; 116; 125; 134\}$**.
 
 </details>
@@ -826,7 +826,7 @@ $$a_3 \times 2^3 + a_2 \times 2^2 + a_1 \times 2^1 + a_0 \times 2^0 = a_3 \times
   - Thương cuối cùng là 1 (dừng lại vì $< 2$).
   - Ghi thương cuối cùng và các số dư theo thứ tự từ dưới lên: **$101011$**.
   - **Thử lại:** $1 \times 32 + 0 \times 16 + 1 \times 8 + 0 \times 4 + 1 \times 2 + 1 = 32 + 8 + 2 + 1 = 43$ (chính xác).
-  - Vậy $43 = 101011_2$.
+  - Vậy $43 = 101011_2.$
 
 </details>
 
@@ -898,7 +898,7 @@ Tìm một số tự nhiên có hai chữ số, biết rằng nếu viết thêm
 <summary>Xem lời giải Bài 4 nâng cao</summary>
 
 - Gọi số cần tìm là $\overline{ab}$ ($a \ne 0; a, b \in \mathbb{N}, a, b \le 9$).
-- Khi viết thêm chữ số 0 vào giữa hai chữ số, ta được số mới là $\overline{a0b}$.
+- Khi viết thêm chữ số 0 vào giữa hai chữ số, ta được số mới là $\overline{a0b}.$
 - Theo đề bài, ta có phương trình:
   $$\overline{a0b} = 9 \times \overline{ab}$$
 - Phân tích cấu tạo số ở cả hai vế:
@@ -907,8 +907,8 @@ Tìm một số tự nhiên có hai chữ số, biết rằng nếu viết thêm
 - Bớt cả hai vế đi $90a$ và $b$:
   $$10a = 8b \implies 5a = 4b$$
 - Vì $5a = 4b$, mà $\text{ƯCLN}(4, 5) = 1$ nên $a$ phải chia hết cho 4, và $b$ phải chia hết cho 5.
-- Lại có $a$ là chữ số khác 0 nên $a = 4$, kéo theo $b = 5$.
+- Lại có $a$ là chữ số khác 0 nên $a = 4$, kéo theo $b = 5.$
 - Vậy số tự nhiên cần tìm là **$45$**.
-- **Thử lại:** Khi viết thêm chữ số 0 vào giữa ta được $405$. Ta thấy $405 = 45 \times 9$ (hoàn toàn thỏa mãn).
+- **Thử lại:** Khi viết thêm chữ số 0 vào giữa ta được $405.$ Ta thấy $405 = 45 \times 9$ (hoàn toàn thỏa mãn).
 
 </details>

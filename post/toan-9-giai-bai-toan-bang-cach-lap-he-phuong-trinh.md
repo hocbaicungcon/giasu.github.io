@@ -38,9 +38,9 @@ Biểu diễn hai đại lượng phù hợp bằng ẩn số $x$ và $y$ (thư�
 
 Đối với dạng toán này, cần chú ý đến điều kiện của ẩn:
 
-- Nếu gọi $x$ là vận tốc của chuyển động thì điều kiện là $x>0$.
+- Nếu gọi $x$ là vận tốc của chuyển động thì điều kiện là $x>0.$
 
-- Đặt thời gian chuyển động là $y$ thì điều kiện là $y \ge 0$.
+- Đặt thời gian chuyển động là $y$ thì điều kiện là $y \ge 0.$
 
 - Một số công thức:
 
@@ -82,7 +82,7 @@ Cách đổi đơn vị thời gian, vận tốc:
   \begin{array}{l} \left\{ {\begin{array}{l} {0,5x + 2y = 90}\\ {\frac{{0,5x}}{y} = \frac{{2y}}{x}} \end{array}} \right.\\ \Leftrightarrow \left\{ {\begin{array}{l} {0,5x + 2y = 90}\\ {{x^2} = 4{y^2}} \end{array}} \right. \end{array}
   $$
 
-  Vì $x,y>0$ nên từ phương trình ${{x^2} = 4{y^2}}$ suy ra $x = 2y$. Thay vào phương trình còn lại của hệ, ta được
+  Vì $x,y>0$ nên từ phương trình ${{x^2} = 4{y^2}}$ suy ra $x = 2y.$ Thay vào phương trình còn lại của hệ, ta được
 
   $$
   3y = 90 \Leftrightarrow y = 30
@@ -121,7 +121,7 @@ $\frac{1}{x}+\frac{1}{y} = \frac{4}{15}$
   \begin{cases} \frac{1}{x}+\frac{1}{y} = \frac{4}{15}\\ y – x = 4 \end{cases}
   $$
 
-- Giải hệ phương trình này tìm được $x=6,y=10$.
+- Giải hệ phương trình này tìm được $x=6,y=10.$
 
 - Vậy, vòi đầu chảy một mình đầy bể trong 6 h; vòi sau chảy một mình đầy bể trong 10 h.
 
@@ -161,7 +161,7 @@ $\frac{1}{x}+\frac{1}{y}$ bể
 **Ví dụ 3.** Lớp 9A và lớp 9B cùng lao động tổng vệ sinh sân trường thì sau 6 giờ sẽ hoàn thành xong công việc. Nếu làm riêng thì lớp 9A mất nhiều thời gian hơn lớp 9B là 5 giờ mới hoàn thành xong công việc. Hỏi nếu làm riêng, mỗi lớp cần bao nhiêu thời gian để hoàn thành xong công việc?
 
 **Hướng dẫn.
-- Gọi thời gian lớp 9A, 9B hoàn thành xong công việc là $x$ (giờ) và $y$ (giờ), điều kiện $x>5,y>0$.
+- Gọi thời gian lớp 9A, 9B hoàn thành xong công việc là $x$ (giờ) và $y$ (giờ), điều kiện $x>5,y>0.$
 
 - Trong 1 giờ, lớp 9A làm được: $\frac{1}{x}$ (công việc), lớp 9B làm được $\frac{1}{y}$ (công việc). Nên trong 1 giờ, cả 2 lớp làm được
 
@@ -173,7 +173,7 @@ $\frac{1}{x}+\frac{1}{y}$ công việc.
   \frac{1}{x}+\frac{1}{y}=\frac{1}{6}
   $$
 
-- Nếu làm riêng thì lớp 9A mất nhiều thời gian hơn lớp 9B là 5 giờ mới hoàn thành xong công việc. Tức là $x-y=5$.
+- Nếu làm riêng thì lớp 9A mất nhiều thời gian hơn lớp 9B là 5 giờ mới hoàn thành xong công việc. Tức là $x-y=5.$
 
 - Do đó, ta có hệ phương trình
 
@@ -181,7 +181,7 @@ $\frac{1}{x}+\frac{1}{y}$ công việc.
   \begin{cases} \frac{1}{x}+\frac{1}{y} = \frac{1}{6}\\ x-y=5 \end{cases}
   $$
 
-- Giải hệ phương trình này bằng phương pháp thế, tìm được $y=-3$ (loại) hoặc $y=10$ (thỏa mãn). Từ đó tìm được $x=15$.
+- Giải hệ phương trình này bằng phương pháp thế, tìm được $y=-3$ (loại) hoặc $y=10$ (thỏa mãn). Từ đó tìm được $x=15.$
 
 ### Dạng 3: Toán liên quan đến tỉ lệ phần trăm.
 
@@ -248,7 +248,7 @@ Hướng dẫn.
   2(x + y) = 34
   $$
 
-- Khi tăng chiều dài thêm 3 m và tăng chiều rộng thêm 2 m thì ta được một hình chữ nhật mới có chiều dài $(y + 3)$ m, chiều rộng $(x +2)$ m nên có diện tích là $(x + 2)(y + 3)$.
+- Khi tăng chiều dài thêm 3 m và tăng chiều rộng thêm 2 m thì ta được một hình chữ nhật mới có chiều dài $(y + 3)$ m, chiều rộng $(x +2)$ m nên có diện tích là $(x + 2)(y + 3).$
 
 - Do hình chữ nhật mới có diện tích tăng thêm 45 m2 nên ta có phương trình:
 
@@ -262,7 +262,7 @@ Hướng dẫn.
   \left\{ \begin{array}{l} 2\left( {x{\rm{ }} + {\rm{ }}y} \right){\rm{ }} = {\rm{ }}34\\ \left( {x + 2} \right)\left( {y + 3} \right) = {\rm{ }}xy{\rm{ }} + {\rm{ }}45 \end{array} \right.
   $$
 
-  Giải hệ phương trình này tìm được $x=5$ và $y=12$.
+  Giải hệ phương trình này tìm được $x=5$ và $y=12.$
 
 - Vậy, hình chữ nhật đã cho có chiều dài $12$ m và chiều rộng $5$ m.
 
@@ -275,24 +275,24 @@ Hướng dẫn.
 ### Dạng 5: Toán về tìm số.
 
 - 
-Số có hai, chữ số được ký hiệu là $\overline{ab}$, điều kiện $1 \le q \le 9; 0\le b \le 9; a,b \in \mathbb{N}$.
+Số có hai, chữ số được ký hiệu là $\overline{ab}$, điều kiện $1 \le q \le 9; 0\le b \le 9; a,b \in \mathbb{N}.$
 
-- Giá trị của số: $\overline{ab} = 10a+b$.
+- Giá trị của số: $\overline{ab} = 10a+b.$
 
-- Số có ba, chữ số được ký hiệu là $\overline{abc}$ thì $\overline{abc} = 100a +10b + c$,  điều kiện $1 \le q \le 9; 0\le b,c \le 9; a,b,c \in \mathbb{N}$.
+- Số có ba, chữ số được ký hiệu là $\overline{abc}$ thì $\overline{abc} = 100a +10b + c$,  điều kiện $1 \le q \le 9; 0\le b,c \le 9; a,b,c \in \mathbb{N}.$
 
-- Tổng hai số $x; y$ là: $x+ y$.
+- Tổng hai số $x; y$ là: $x+ y.$
 
-- Tổng bình phương hai số $x, y$ là: $x^2+y^2$.
+- Tổng bình phương hai số $x, y$ là: $x^2+y^2.$
 
-- Bình phương của tổng hai số $x, y$ là: $(x+y)^2$.
+- Bình phương của tổng hai số $x, y$ là: $(x+y)^2.$
 
-- Tổng nghịch đảo hai số $x, y$ là: $\frac{1}{x}+\frac{1}{y}$.
+- Tổng nghịch đảo hai số $x, y$ là: $\frac{1}{x}+\frac{1}{y}.$
 
 **Ví dụ 1.**  Cho số tự nhiên có hai chữ số, tổng của chữ số hàng chục và chữ số hàng đơn vị bằng 14. Nếu đổi chữ số hàng chục và chữ số hàng đơn vị cho nhau thì được sốmới lớn hơn số đã cho 18 đơn vị. Tìm số đã cho.
 
 **Hướng dẫn.
-- Gọi chữ số số cần tìm là $\overline{xy}$, điều kiện $x ,y\in \mathbb{N}, 0 < x \le 9, 0 \le y \le 9$.
+- Gọi chữ số số cần tìm là $\overline{xy}$, điều kiện $x ,y\in \mathbb{N}, 0 < x \le 9, 0 \le y \le 9.$
 
 - Tổng chữ số hàng chục và chữ số hàng đơn vị bằng 14 nên có phương trình:
 
@@ -312,14 +312,14 @@ Số có hai, chữ số được ký hiệu là $\overline{ab}$, điều kiện
   \begin{cases} x+y=14 \\ 10y+x-(10x+y)=18 \end{cases}
   $$
 
-- Giải hệ này, tìm được $x=6,y=8$ (thỏa mãn điều kiện) nên số cần tìm là $68$.
+- Giải hệ này, tìm được $x=6,y=8$ (thỏa mãn điều kiện) nên số cần tìm là $68.$
 
 **Ví dụ 2.** Tìm một số tự nhiên có hai chữ số. Biết rằng chữ số hàng đơn vị hơn chữ số hàng chục là 5 đơn vị và khi viết chữ số 1 xen vào giữa hai chữ số của số đó thì ta được số mới lớn hơn số đó là 280 đơn vị .
 
 **Hướng dẫn.
-- Gọi chữ số hàng chục là $a$, chữ số hàng đơn vị là $b$, điều kiện $a,b\in \mathbb{N}; 1\le a\le 9; 0\le b\le 9$.
+- Gọi chữ số hàng chục là $a$, chữ số hàng đơn vị là $b$, điều kiện $a,b\in \mathbb{N}; 1\le a\le 9; 0\le b\le 9.$
 
-- Số cần tìm là $\overline{ab}$ có giá trị $\overline{ab}=10a+b$.
+- Số cần tìm là $\overline{ab}$ có giá trị $\overline{ab}=10a+b.$
 
 - Ta có chữ số hàng đơn vị hơn chữ số hàng chục là 5 đơn vị nên ta có phương trình:
 
@@ -327,7 +327,7 @@ Số có hai, chữ số được ký hiệu là $\overline{ab}$, điều kiện
   b-a=5
   $$
 
-- Lại có, khi viết chữ số 1 xen vào giữa hai chữ số của số đó thì ta được số mới là $\overline{a1b}$ có giá trị $\overline{a1b}=100a+10+b$.
+- Lại có, khi viết chữ số 1 xen vào giữa hai chữ số của số đó thì ta được số mới là $\overline{a1b}$ có giá trị $\overline{a1b}=100a+10+b.$
 
 - Do số mới lớn hơn số ban đầu là 280 đơn vị nên ta có phương trình:
 
@@ -341,7 +341,7 @@ Số có hai, chữ số được ký hiệu là $\overline{ab}$, điều kiện
   \left\{\begin{array}{l} -a+b=5 \\ (100 a+10+b)-(10 a+b)=280\end{array}\right.
   $$
 
-- Giải hệ này, tìm được $a=3,b=8$ đều thỏa mãn điều kiện nên số cần tìm là $38$.
+- Giải hệ này, tìm được $a=3,b=8$ đều thỏa mãn điều kiện nên số cần tìm là $38.$
 
 **Ví dụ 3.** Tìm một số tự nhiên có hai chữ số, tổng các chữ số bằng 11, nếu đổi chỗ hai chữ số hàng chục và hàng đơn vị cho nhau thì số đó tăng thêm 27 đơn vị.
 
@@ -351,13 +351,13 @@ Số có hai, chữ số được ký hiệu là $\overline{ab}$, điều kiện
 **Hướng dẫn.
 ## 3. Bài tập giải bài toán bằng cách lập hệ phương trình
 
-**Bài 1.** Nếu tử số của một phân số được tăng gấp đôi và mẫu số thêm 8 thì giá trị của phân số bằng $\frac{1}{4}$. Nếu tử số thêm 7 và mẫu số tăng gấp 3 thì giá trị phân số bằng $\frac{5}{24}$. Tìm phân số đó.
+**Bài 1.** Nếu tử số của một phân số được tăng gấp đôi và mẫu số thêm 8 thì giá trị của phân số bằng $\frac{1}{4}.$ Nếu tử số thêm 7 và mẫu số tăng gấp 3 thì giá trị phân số bằng $\frac{5}{24}.$ Tìm phân số đó.
 
-**Bài 2.** Nếu thêm 4 vào tử và mẫu của một phân số thì giá trị của phân số giảm 1. Nếu bớt 1 vào cả tử và mẫu, phân số tăng $\frac{3}{2}$. Tìm phân số đó.
+**Bài 2.** Nếu thêm 4 vào tử và mẫu của một phân số thì giá trị của phân số giảm 1. Nếu bớt 1 vào cả tử và mẫu, phân số tăng $\frac{3}{2}.$ Tìm phân số đó.
 
-**Bài 3:** Tìm hai số có tổng bằng $31$ và có hiệu bằng $9$.
+**Bài 3:** Tìm hai số có tổng bằng $31$ và có hiệu bằng $9.$
 
-**Bài 4:** Tìm một số tự nhiên có hai chữ số. Biết rằng số đó gấp bảy lần chữ số hàng đơn vị và nếu đem số đó chia cho tổng các chữ số của nó thì được thương là $4$ và dư là $3$.
+**Bài 4:** Tìm một số tự nhiên có hai chữ số. Biết rằng số đó gấp bảy lần chữ số hàng đơn vị và nếu đem số đó chia cho tổng các chữ số của nó thì được thương là $4$ và dư là $3.$
 
 **Bài 5:** Một người đi xe đạp từ A đến B gồm đoạn lên dốc AC và đoạn xuống dốc CB. Thời gian đi AB là 4 giờ 20 phút, thời gian về BA là 4 giờ. Biết vận tốc lên dốc là 10 km/h và vận tốc xuống dốc là 15 km/h. Tính AC, CB.
 
@@ -391,7 +391,7 @@ $$
 \left\{ \begin{array}{l} \left( {3x – 1} \right)\left( {2y + 3} \right) = \left( {2x – 1} \right)\left( {3y + 4} \right)\\ {x^2} – {y^2} = 2x – 5 \end{array} \right.
 $$
 
-**Bài 19:** Giải phương trình: $\left| {x + 1} \right| + 2\left| {x – 1} \right| = x + 2 + \left| x \right| + 2\left| {x – 2} \right|$.
+**Bài 19:** Giải phương trình: $\left| {x + 1} \right| + 2\left| {x – 1} \right| = x + 2 + \left| x \right| + 2\left| {x – 2} \right|.$
 
 **Bài 20:** Với giá trị nào của $k$, hệ phương trình sau có nghiệm 
 

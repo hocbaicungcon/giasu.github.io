@@ -30,13 +30,13 @@ Do đó, phương pháp chung để tìm giao tuyến của hai mặt phẳng ph
 
 Để xác định giao tuyến của hai mặt phẳng $(\alpha)$ và $(\beta)$, chúng ta xét các khả năng sau:
 
-- Nếu nhìn thấy ngay hai điểm chung $A$ và $B$ của hai mặt phẳng $(\alpha)$ và $(\beta)$.
+- Nếu nhìn thấy ngay hai điểm chung $A$ và $B$ của hai mặt phẳng $(\alpha)$ và $(\beta).$
 
   Kết luận đường thẳng $AB$ chính là giao tuyến cần tìm.
 
 ![Cách tìm giao tuyến của 2 mp phương pháp xác định giao tuyến của hai mặt phẳng](assets/images/cach-tim-giao-tuyen-cua-hai-mat-phang-Phương-pháp-xác-định-Giao-tuyến-của-hai-mặt-phẳng.jpg)
 
-- Nếu chỉ chỉ tìm được ngay một điểm chung $S$ của mặt phẳng $(\alpha)$ và mặt phẳng $(\beta)$. Lúc này, ta xét ba khả năng:
+- Nếu chỉ chỉ tìm được ngay một điểm chung $S$ của mặt phẳng $(\alpha)$ và mặt phẳng $(\beta).$ Lúc này, ta xét ba khả năng:
 
 Hai mặt phẳng $(\alpha),(\beta)$ theo thứ tự chứa hai đường thẳng $d_1,d_2$ mà $d_1$ và $d_2$ cắt nhau tại $I$ thì $SI$ chính là giao tuyến cần tìm.
 
@@ -68,13 +68,13 @@ Nếu mặt phẳng $(\alpha)$ chứa đường thẳng $a$ mà $a$ lại song s
 
 ## 2. Một số ví dụ tìm giao tuyến của 2 mp
 
-**Ví dụ 1.** Cho tứ diện $ABCD$ có $I$ là trung điểm của $BD.$ Gọi $E,F$ lần lượt là trọng tâm tam giác $ABD$ và $CBD$. Tìm giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC).$
+**Ví dụ 1.** Cho tứ diện $ABCD$ có $I$ là trung điểm của $BD.$ Gọi $E,F$ lần lượt là trọng tâm tam giác $ABD$ và $CBD.$ Tìm giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC).$
 
 **Hướng dẫn.**
 
 ![tìm giao tuyến của hai mặt phẳng](assets/images/cach-tim-giao-tuyen-cua-hai-mat-phang-tim-giao-tuyen-cua-hai-mat-phang.png)
 
-Rõ ràng $E$ là trọng tâm của tam giác $ABD$ nên $E$ phải nằm trên đường thẳng $AI$. Suy ra, điểm $A$ thuộc vào đường thẳng $IE$. Tương tự, có điểm $F$ thuộc vào đường thẳng $CI$.
+Rõ ràng $E$ là trọng tâm của tam giác $ABD$ nên $E$ phải nằm trên đường thẳng $AI.$ Suy ra, điểm $A$ thuộc vào đường thẳng $IE.$ Tương tự, có điểm $F$ thuộc vào đường thẳng $CI.$
 
 - Như vậy, chúng ta có:
 
@@ -86,9 +86,9 @@ Rõ ràng $E$ là trọng tâm của tam giác $ABD$ nên $E$ phải nằm trên
 
 - Tương tự, các em cũng chỉ ra được $C$ là một điểm chung nữa của hai mặt phẳng $(IEF)$ và $(ABC).$
 
-Do đó, giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC)$ là đường thẳng $AC$.
+Do đó, giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC)$ là đường thẳng $AC.$
 
-**Ví dụ 2.** Cho hình chóp $S.ABCD$. Đáy $ABCD$ có $AB$ cắt $CD$ tại $E$, $AC$ cắt $BD$ tại $F.$ Xác định giao tuyến của hai mặt phẳng:
+**Ví dụ 2.** Cho hình chóp $S.ABCD.$ Đáy $ABCD$ có $AB$ cắt $CD$ tại $E$, $AC$ cắt $BD$ tại $F.$ Xác định giao tuyến của hai mặt phẳng:
 
 1. $(SAB)$ và $(SAC)$,
 
@@ -104,45 +104,45 @@ Do đó, giao tuyến của hai mặt phẳng $(IEF)$ và $(ABC)$ là đường 
 
 **Hướng dẫn.**
 
-1. Dễ thấy  hai mặt phẳng $(SAB)$ và $(SAC)$ cắt nhau theo giao tuyến là đường thẳng $SA$.
+1. Dễ thấy  hai mặt phẳng $(SAB)$ và $(SAC)$ cắt nhau theo giao tuyến là đường thẳng $SA.$
 
    ![bài tập tìm giao tuyến của hai mặt phẳng có lời giải](assets/images/cach-tim-giao-tuyen-cua-hai-mat-phang-cach-tim-giao-tuyen-cua-hai-mat-phang-trong-chop-tu-giac_huong-dan.png)
 
-2. Ta thấy ngay $(SAB)$ và $(SCD)$ có một điểm chung là $S$. Để tìm điểm chung thứ hai, chúng ta dựa vào đề bài $AB$ cắt $CD$ tại $E$. Tức là có
+2. Ta thấy ngay $(SAB)$ và $(SCD)$ có một điểm chung là $S.$ Để tìm điểm chung thứ hai, chúng ta dựa vào đề bài $AB$ cắt $CD$ tại $E.$ Tức là có
 
    $$
    \begin{cases} E\in AB\subset (SAB)\\ E\in CD\subset (SCD) \end{cases}
    $$
 
-   . Như vậy $E$ là một điểm chung nữa của hai mặt phẳng $(SAB)$ và $(SCD)$.
+   . Như vậy $E$ là một điểm chung nữa của hai mặt phẳng $(SAB)$ và $(SCD).$
 
-   Tóm lại, giao tuyến của hai mặt phẳng $(SAB)$ và $(SCD)$ là đường thẳng $SE$.
+   Tóm lại, giao tuyến của hai mặt phẳng $(SAB)$ và $(SCD)$ là đường thẳng $SE.$
 
-3. Tương tự ý 2, các em tìm được giao tuyến của $(SAD)$ và $(SBC)$ là đường thẳng $SF$.
+3. Tương tự ý 2, các em tìm được giao tuyến của $(SAD)$ và $(SBC)$ là đường thẳng $SF.$
 
-4. Giao tuyến của $(SAC)$ và $(SBD)$ là đường thẳng $SO$, trong đó $O$ là giao điểm của $AC$ và $BD$.
+4. Giao tuyến của $(SAC)$ và $(SBD)$ là đường thẳng $SO$, trong đó $O$ là giao điểm của $AC$ và $BD.$
 
-5. $(SEF)$ và $(SAD)$ chính là đường thẳng $SF$.
+5. $(SEF)$ và $(SAD)$ chính là đường thẳng $SF.$
 
-**Ví dụ 3.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABC$. Xác định giao tuyến của mặt phẳng $(ADM)$ và mặt phẳng $(BCD)$.
+**Ví dụ 3.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABC.$ Xác định giao tuyến của mặt phẳng $(ADM)$ và mặt phẳng $(BCD).$
 
 **Hướng dẫn.**
 
 ![Cách tìm giao tuyến của hai mặt phẳng 2](assets/images/cach-tim-giao-tuyen-cua-hai-mat-phang-huong-dan-cach-tim-giao-tuyen-cua-hai-mat-phang.png)
 
-Đầu tiên, chúng ta thấy ngay một điểm chung của hai mặt phẳng $(ADM)$ và $(BCD)$ là điểm $D$. Như vậy, nhiệm vụ của chúng ta là đi tìm một điểm chung nữa của hai mặt phẳng này.
+Đầu tiên, chúng ta thấy ngay một điểm chung của hai mặt phẳng $(ADM)$ và $(BCD)$ là điểm $D.$ Như vậy, nhiệm vụ của chúng ta là đi tìm một điểm chung nữa của hai mặt phẳng này.
 
-Trong mặt phẳng $(ABC)$, kéo dài $AM$ cắt $BC$ tại $N$. Ta thấy 
+Trong mặt phẳng $(ABC)$, kéo dài $AM$ cắt $BC$ tại $N.$ Ta thấy 
 
 $$
 \begin{cases} N\in BC \subset (BCD)\\ N\in AM\subset (ADM)\end{cases}
 $$
 
- nên $N$ chính là một điểm chung nữa của hai mặt phẳng $(ADM)$ và $(BCD)$.
+ nên $N$ chính là một điểm chung nữa của hai mặt phẳng $(ADM)$ và $(BCD).$
 
-Tóm lại, giao tuyến của hai mặt phẳng $(ADM)$ và $(BCD)$ là đường thẳng $DN$.
+Tóm lại, giao tuyến của hai mặt phẳng $(ADM)$ và $(BCD)$ là đường thẳng $DN.$
 
-**Ví dụ 4.** Cho bốn điểm $A, B, C, D$ không thuộc cùng một mặt phẳng. Trên các đoạn thẳng $AB, AC, BD$ lấy lần lượt các điểm $M, N, P$ sao cho $MN$ không song song với $BC$. Tìm giao tuyến của $(BCD)$ và $(MNP)$.
+**Ví dụ 4.** Cho bốn điểm $A, B, C, D$ không thuộc cùng một mặt phẳng. Trên các đoạn thẳng $AB, AC, BD$ lấy lần lượt các điểm $M, N, P$ sao cho $MN$ không song song với $BC.$ Tìm giao tuyến của $(BCD)$ và $(MNP).$
 
 **Hướng dẫn.**
 
@@ -162,7 +162,7 @@ Do vậy, I là một điểm chung của hai mặt phẳng (SBC) và (MNP).
 
 Vậy, PI là giao tuyến của hai mặt phẳng (SBC) và (MNP).
 
-**Ví dụ 5.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABC$, $N$ thuộc miền trong tam giác $ABD$. Xác định giao tuyến của mặt phẳng $(BMN)$ và mặt phẳng $(ACD)$.
+**Ví dụ 5.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABC$, $N$ thuộc miền trong tam giác $ABD.$ Xác định giao tuyến của mặt phẳng $(BMN)$ và mặt phẳng $(ACD).$
 
 **Hướng dẫn.**
 
@@ -174,13 +174,13 @@ Trong mặt phẳng $(ABC)$, kéo dài $BM$ cắt $AC$ tại $P$ thì ta có:
 
 - $P\in AC$ mà $AC$ nằm trong mặt phẳng $(ACD)$ nên $P$ cũng thuộc mặt phẳng $(ACD)$;
 
-Như vậy, $P$ là một điểm chung của hai mặt phẳng $(BMN)$ và  $(ACD)$.
+Như vậy, $P$ là một điểm chung của hai mặt phẳng $(BMN)$ và  $(ACD).$
 
-Tương tự, trong mặt phẳng $(ABD)$ kéo dài $BN$ cắt $AD$ tại $Q$ thì cũng chỉ ra được $Q$ là một điểm chung của hai mặt phẳng $(BMN)$ và  $(ACD)$.
+Tương tự, trong mặt phẳng $(ABD)$ kéo dài $BN$ cắt $AD$ tại $Q$ thì cũng chỉ ra được $Q$ là một điểm chung của hai mặt phẳng $(BMN)$ và  $(ACD).$
 
-Tóm lại, giao tuyến của hai mặt phẳng $(BMN)$ và  $(ACD)$ là đường thẳng $PQ$.
+Tóm lại, giao tuyến của hai mặt phẳng $(BMN)$ và  $(ACD)$ là đường thẳng $PQ.$
 
-**Ví dụ 6.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABD,N$ thuộc miền trong tam giác $ACD.$ Xác định giao tuyến của mặt phẳng $(AMN)$ và mặt phẳng $(BCD)$; mặt phẳng $(DMN)$ và $(ABC)$.
+**Ví dụ 6.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABD,N$ thuộc miền trong tam giác $ACD.$ Xác định giao tuyến của mặt phẳng $(AMN)$ và mặt phẳng $(BCD)$; mặt phẳng $(DMN)$ và $(ABC).$
 
 **Hướng dẫn.**
 
@@ -192,10 +192,10 @@ Tóm lại, giao tuyến của hai mặt phẳng $(BMN)$ và  $(ACD)$ là đư�
 
 **Hướng dẫn.**
 
-**Ví dụ 9.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $M,N,P$ lần lượt là trung điểm $BC,CD,SC$. Tìm giao tuyến của mặt phẳng $(MNP)$ với các mặt phẳng $(ABCD),(SAB),(SAD)$ và $(SAC)$.
+**Ví dụ 9.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $M,N,P$ lần lượt là trung điểm $BC,CD,SC.$ Tìm giao tuyến của mặt phẳng $(MNP)$ với các mặt phẳng $(ABCD),(SAB),(SAD)$ và $(SAC).$
 
 **Hướng dẫn.**
 
-**Ví dụ 10.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O.$ Gọi $M,N,P$ lần lượt là trung điểm $BC,CD,SO$. Tìm giao tuyến của mặt phẳng $(MNP)$ với các mặt phẳng $(SAB),(SAD),(SBC)$ và $(SCD)$.
+**Ví dụ 10.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O.$ Gọi $M,N,P$ lần lượt là trung điểm $BC,CD,SO.$ Tìm giao tuyến của mặt phẳng $(MNP)$ với các mặt phẳng $(SAB),(SAD),(SBC)$ và $(SCD).$
 
 **Hướng dẫn.**

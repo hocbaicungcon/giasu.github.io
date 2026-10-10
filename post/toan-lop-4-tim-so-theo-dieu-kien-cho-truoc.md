@@ -45,13 +45,13 @@ Xem thêm các dạng toán tìm số ở lớp 4:
   a \times 10 + b = a \times 14
   $$
 
-  Suy ra $a \times 10 + b = a \times 4 + a \times 10$. Điều này dẫn tới $b = a \times 4$
+  Suy ra $a \times 10 + b = a \times 4 + a \times 10.$ Điều này dẫn tới $b = a \times 4$
 
-- Mặt khác, do điều kiện $0 \le b < 10$ nên $a$ chỉ có thể lấy các giá trị $1 ; 2$.
+- Mặt khác, do điều kiện $0 \le b < 10$ nên $a$ chỉ có thể lấy các giá trị $1 ; 2.$
 
-Với $a=1$ thì $b= 4$, số cần tìm là $14$.
+Với $a=1$ thì $b= 4$, số cần tìm là $14.$
 
-- Với $a=2$ thì $b= 8$, số cần tìm là $28$.
+- Với $a=2$ thì $b= 8$, số cần tìm là $28.$
 
 Thử lại: $14 = 1 \times 14$ ( đúng), $28 = 2 x 14$ ( đúng).
 
@@ -59,21 +59,21 @@ Thử lại: $14 = 1 \times 14$ ( đúng), $28 = 2 x 14$ ( đúng).
 
 **Hướng dẫn.** Gọi số cần tìm là $ab$, với $a$ là chữ số hàng chục và $b$ là chữ số hàng đơn vị ( điều kiện $a \ne 0 ; 0 \le b < 10$).
 
-- Theo đề bài ta có: $ab = b \times 21$. Hay: $a \times 10 + b = b \times 21$. Suy ra
+- Theo đề bài ta có: $ab = b \times 21.$ Hay: $a \times 10 + b = b \times 21.$ Suy ra
 
   $$
   a \times 10 + b = b \times 20 + b
   $$
 
-  Điều này đồng nghĩa với $a \times 10 = b \times 20$, tức là $a = b x 2$.
+  Điều này đồng nghĩa với $a \times 10 = b \times 20$, tức là $a = b x 2.$
 
-- Nếu $b=0$ thì số đó là $21 \times 0 =0$ không thỏa mãn yêu cầu là số tự nhiên khác $0$. Do đó $b$ phải khác $0$. Tức là, $b$ có thể nhận các giá trị $1, 2, 3, 4, 5, 6, 7, 8, 9,$.
+- Nếu $b=0$ thì số đó là $21 \times 0 =0$ không thỏa mãn yêu cầu là số tự nhiên khác $0.$ Do đó $b$ phải khác $0.$ Tức là, $b$ có thể nhận các giá trị $1, 2, 3, 4, 5, 6, 7, 8, 9,.$
 
 - Lập bảng giá trị tương ứng của $a$ và $b$ ta được
 
 ![viết số theo điều kiện cho trước toán 4](assets/images/toan-lop-4-tim-so-theo-dieu-kien-cho-truoc-viết-số-theo-điều-kiện-cho-trước-toán-4.jpg)
 
-- Suy ra, số cần tìm là $21,42,63,84,105,126,147,168,189$.
+- Suy ra, số cần tìm là $21,42,63,84,105,126,147,168,189.$
 
 Thử lại, ta thấy các số vừa tìm được đều thỏa mãn đề bài.
 
@@ -87,7 +87,7 @@ Thử lại, ta thấy các số vừa tìm được đều thỏa mãn đề b�
 
 **Ví dụ 1.** Tìm số có hai chữ số biết tổng các chữ số của số đó bằng 9 và tích các chữ số của số đó bằng 18.
 
-**Hướng dẫn.** Gọi số cần tìm là $ab$ với $a \ne 0$. Theo đề bài ta có: $a + b = 9$ và $a \times b = 18$.
+**Hướng dẫn.** Gọi số cần tìm là $ab$ với $a \ne 0.$ Theo đề bài ta có: $a + b = 9$ và $a \times b = 18.$
 
 - Các số mà tổng các chữ số bằng 9 là:
 
@@ -97,7 +97,7 @@ Thử lại, ta thấy các số vừa tìm được đều thỏa mãn đề b�
 
 - Trong các số đó ta chỉ thấy có $36$ và $63$ là phù hợp điều kiện: *Tích các chữ số bằng* $18$ ( $3 \times 6 = 18$).
 
-Vậy các số cần tìm là $36; 63$.
+Vậy các số cần tìm là $36; 63.$
 
 Nhận xét: Ta cũng có thể lập bảng để kiểm tra và tìm ra số thỏa mãn yêu cầu.
 
@@ -110,7 +110,7 @@ Nhận xét: Ta cũng có thể lập bảng để kiểm tra và tìm ra số t
   11; 22; 33; 44; 55; 66; 77; 88; 99
   $$
 
-- Theo đề bài ta có: Số cần tìm trừ đi 5 thì được số có dạng $aa$.
+- Theo đề bài ta có: Số cần tìm trừ đi 5 thì được số có dạng $aa.$
 
 - Suy ra, Số cần tìm bằng Số có dạng $aa$ cộng thêm 5.
 
@@ -126,27 +126,27 @@ Kết luận: Số cần tìm là: $60; 71; 82; 93$
 
 **Hướng dẫn.** Gọi số cần tìm là $abcde$ (điều kiện $a \ne 0$). Theo đề bài ta có:
 
-- Ta thấy $a$ phải nhỏ hơn 2 để khi nhân $abcde$với $9$ thì vẫn được số có 5 chữ số. Mà, $a$ lại phải khác $0$ nên $a =1$. Suy ra số cần tìm có dạng $1bcde$.
+- Ta thấy $a$ phải nhỏ hơn 2 để khi nhân $abcde$với $9$ thì vẫn được số có 5 chữ số. Mà, $a$ lại phải khác $0$ nên $a =1.$ Suy ra số cần tìm có dạng $1bcde.$
 
-- Mặt khác $1bcde \times 9 =edcb1$ nên $e=9$, vì chỉ có $9\times 9$ mới cho kết quả là số tận cùng bằng $1$. Suy ra số cần tìm có dạng $1bcd9$.
+- Mặt khác $1bcde \times 9 =edcb1$ nên $e=9$, vì chỉ có $9\times 9$ mới cho kết quả là số tận cùng bằng $1.$ Suy ra số cần tìm có dạng $1bcd9.$
 
-- Nếu $b$ lớn hơn hoặc bằng $2$ thì khi nhân với 9 sẽ được kết quả lớn hơn 10, dẫn tới kết quả $1bcd9 \times 9$ sẽ là số có 6 chữ số. Nên bắt buộc $b<2$.
+- Nếu $b$ lớn hơn hoặc bằng $2$ thì khi nhân với 9 sẽ được kết quả lớn hơn 10, dẫn tới kết quả $1bcd9 \times 9$ sẽ là số có 6 chữ số. Nên bắt buộc $b<2.$
 
-Nếu $b = 1$, thì số cần tìm có dạng $11cd9$. Ta thấy $d = 7$ để cho $7 \times 9 +$ ( nhớ) có tận cùng là 1. Lúc đó dù $c = 0$  thì $11079 \times 9$ khác $97011$, còn $c \ge 1$ thì $11cd9 x 9$ là số có sáu chữ số. Vậy $b$ không thể là $1$.
+Nếu $b = 1$, thì số cần tìm có dạng $11cd9.$ Ta thấy $d = 7$ để cho $7 \times 9 +$ ( nhớ) có tận cùng là 1. Lúc đó dù $c = 0$  thì $11079 \times 9$ khác $97011$, còn $c \ge 1$ thì $11cd9 x 9$ là số có sáu chữ số. Vậy $b$ không thể là $1.$
 
-- Nếu $b = 0$ thì số cần tìm có dạng $10cd9$. Lúc đó $10cd9 \times 9 = 9cd01$. Ta thấy $d$ phải bằng $8$ để cho $8 \times 9 + 8$ (nhớ) có tận cùng bằng $0$. Vậy $10c89 \times 9 = 98c01$. Hay chính là
+- Nếu $b = 0$ thì số cần tìm có dạng $10cd9.$ Lúc đó $10cd9 \times 9 = 9cd01.$ Ta thấy $d$ phải bằng $8$ để cho $8 \times 9 + 8$ (nhớ) có tận cùng bằng $0.$ Vậy $10c89 \times 9 = 98c01.$ Hay chính là
 
   $$
   ( 10089 + c00) \times 9 = 98001 + c00
   $$
 
-  Suy ra, $10089 \times 9 + c00 \times 9 = 98001 + c00$. Biến đổi được
+  Suy ra, $10089 \times 9 + c00 \times 9 = 98001 + c00.$ Biến đổi được
 
   $$
   c00 \times 8 = 7200
   $$
 
-  nên suy ra  $c00 = 7200 : 8$ hay $c = 9$.
+  nên suy ra  $c00 = 7200 : 8$ hay $c = 9.$
 
 Vậy số cần tìm là 10989.
 

@@ -26,7 +26,7 @@ $$
 a_1+a_2+\cdots +a_{n}\ge n\sqrt[n]{a_1a_2\ldots a_n}.
 $$
 
- Dấu bằng xảy ra khi và chỉ khi $a_1=a_2=\cdots =a_n$.
+ Dấu bằng xảy ra khi và chỉ khi $a_1=a_2=\cdots =a_n.$
 
 ![các bất đẳng thức thường sử dụng](assets/images/cac-bat-dang-thuc-thuong-su-dung-440px-AM_GM_inequality_visual_proof.png)
 
@@ -102,7 +102,7 @@ Cho $a_1\ge a_2\ge\cdots\ge a_n$ là các số thực.
 
 ### Bất đẳng thức hoán vị
 
-Cho $a_1\ge a_2\ge\ldots\ge a_n$ là hai dãy số thực và $(z_1,z_2,\ldots ,z_n)$ là hoán vị nào đó của $(x_1,x_2,\ldots ,x_n)$. Khi đó ta có:
+Cho $a_1\ge a_2\ge\ldots\ge a_n$ là hai dãy số thực và $(z_1,z_2,\ldots ,z_n)$ là hoán vị nào đó của $(x_1,x_2,\ldots ,x_n).$ Khi đó ta có:
 
 1. Nếu $b_1\ge b_2\ge\cdots\ge b_n$ thì
 
@@ -132,7 +132,7 @@ $$
 
 ### Bất đẳng thức Karamata
 
-Cho hai bộ số $(x_1,x_2\ldots ,x_n)$ và $(y_1,y_2\ldots ,y_n)$ với $(x_1,x_2\ldots ,x_n)\succ\succ(y_1,y_2\ldots ,y_n)$ sao cho $x_i,y_i\in \mathbb{I}\subseteq \mathbb{R}$. Nếu hàm số $f$ xác định lồi trên khoảng $\mathbb{I}\subseteq \mathbb{R}$ thì
+Cho hai bộ số $(x_1,x_2\ldots ,x_n)$ và $(y_1,y_2\ldots ,y_n)$ với $(x_1,x_2\ldots ,x_n)\succ\succ(y_1,y_2\ldots ,y_n)$ sao cho $x_i,y_i\in \mathbb{I}\subseteq \mathbb{R}.$ Nếu hàm số $f$ xác định lồi trên khoảng $\mathbb{I}\subseteq \mathbb{R}$ thì
 
 $$
 f(x_1)+f(x_2)+\cdots +f(x_n)\ge f(y_1)+f(y_2)+\cdots +f(y_n).
@@ -145,7 +145,7 @@ $$
 
 ### Bất đẳng thức Popoviciu
 
-Cho hàm số $f$ xác định lồi trên khoảng $\mathbb{I}\subseteq \mathbb{R}$. Khi đó với $a_1,a_2,\ldots ,a_n\in\mathbb{I}$ thì
+Cho hàm số $f$ xác định lồi trên khoảng $\mathbb{I}\subseteq \mathbb{R}.$ Khi đó với $a_1,a_2,\ldots ,a_n\in\mathbb{I}$ thì
 
 $$
 f(a_1)+f(a_2)+\cdots +f(a_n)+n(n-2)f\left(\dfrac{a_1+a_2+\cdots +a_n}{n}\right)\ge (n-1)\left[f(b_1)+f(b_2)+\cdots +f(b_2)\right],
@@ -209,7 +209,7 @@ Cho $f_{n}(a,b,c)$ là một đa thức đối xứng bậc $n=3$, $n=4$, $n=5.$
 
 1. Với $a,b,c$ các số thực thì $f_{4}(a,b,c)\ge 0$ khi và chỉ khi $f_{4}(a,1,1)\ge 0$
 
-2. Với $a,b,c$ các số thực không âm thì $f_{n}(a,b,c)\ge 0$ khi và chỉ khi $f_{n}(a,1,1)\ge 0$ và $f_{n}(0,b,c)\ge 0$.
+2. Với $a,b,c$ các số thực không âm thì $f_{n}(a,b,c)\ge 0$ khi và chỉ khi $f_{n}(a,1,1)\ge 0$ và $f_{n}(0,b,c)\ge 0.$
 
 ### Bất đẳng thức $(a-b)^2(b-c)^2(c-a)^2\ge 0$
 
@@ -239,7 +239,7 @@ Sau đấy chúng ta sẽ tạo ra một vài tiêu chuẩn thường sử dụn
 
 1. **Tiêu chuẩn 1.** Nếu $S_a,S_b,S_c\ge 0$ thì $f(a,b,c)\ge 0$ là hiển nhiên.
 
-2. **Tiêu chuẩn 2.** Nếu $S_b\ge 0$ và $S_b+S_c\ge 0$ và $S_a+S_b\ge 0$ thì $f(a,b,c)\ge 0$.
+2. **Tiêu chuẩn 2.** Nếu $S_b\ge 0$ và $S_b+S_c\ge 0$ và $S_a+S_b\ge 0$ thì $f(a,b,c)\ge 0.$
 
    Thật vậy
 
@@ -253,9 +253,9 @@ Sau đấy chúng ta sẽ tạo ra một vài tiêu chuẩn thường sử dụn
    f(a,b,c)\ge (a-b)^2(S_b+S_c)+(b-c)^2(S_a+S_b)\ge 0,
    $$
 
-   do đó để bất đẳng thức đúng ta cần chứng minh $S_b+S_c\ge 0$ và $S_a+S_b\ge 0$.
+   do đó để bất đẳng thức đúng ta cần chứng minh $S_b+S_c\ge 0$ và $S_a+S_b\ge 0.$
 
-3. **Tiêu chuẩn 3.** Nếu $S_b\le 0$ và $S_a+2S_b\ge 0$ và $S_c+2S_b\ge 0$ thì $f(a,b,c)\ge 0$.
+3. **Tiêu chuẩn 3.** Nếu $S_b\le 0$ và $S_a+2S_b\ge 0$ và $S_c+2S_b\ge 0$ thì $f(a,b,c)\ge 0.$
 
    Thật vậy
 
@@ -269,9 +269,9 @@ Sau đấy chúng ta sẽ tạo ra một vài tiêu chuẩn thường sử dụn
    f(a,b,c)\ge (a-b)^2(S_c+2S_b)+(b-c)^2(S_a+2S_b),
    $$
 
-   vậy nên để bất đẳng thức đúng ta cần chứng minh $S_c+2S_b\ge 0$ và $S_a+2S_b\ge 0$.
+   vậy nên để bất đẳng thức đúng ta cần chứng minh $S_c+2S_b\ge 0$ và $S_a+2S_b\ge 0.$
 
-4. **Tiêu chuẩn 4.** Nếu $S_b,S_c\ge 0$ và $b^2S_a+a^2S_b\ge 0$ thì $f(a,b,c)\ge 0$.
+4. **Tiêu chuẩn 4.** Nếu $S_b,S_c\ge 0$ và $b^2S_a+a^2S_b\ge 0$ thì $f(a,b,c)\ge 0.$
 
    Thật vậy theo bất đẳng thức tỉ lệ thì
 
@@ -287,7 +287,7 @@ Sau đấy chúng ta sẽ tạo ra một vài tiêu chuẩn thường sử dụn
 
    vậy nên để bất đẳng thức đúng ta cần chứng minh $b^2S_a+a^2S_b\ge 0.$
 
-5. **Tiêu chuẩn 5.** Nếu $S_b,S_c\ge 0$ và $b(b-c)S_a+a(a-c)S_b\ge 0$ thì $f(a,b,c)\ge 0$.
+5. **Tiêu chuẩn 5.** Nếu $S_b,S_c\ge 0$ và $b(b-c)S_a+a(a-c)S_b\ge 0$ thì $f(a,b,c)\ge 0.$
 
    Thật vậy theo bất đẳng thức tỉ lệ thì
 
