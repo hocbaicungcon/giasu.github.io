@@ -143,4 +143,4 @@ Diện tích xung quanh cần tính là: ${S_{xq}} = \pi .OA.SA = 4\pi \sqrt 3$
 
 ## Download bài tập khối nón khối trụ khối cầu file word
 
-Các câu còn lại, mời thầy cô và các em download tại đây [100 bai tap khoi non khoi tru khoi cau o2.edu.vn](/assets/docs/100-bai-tap-khoi-non-khoi-tru-khoi-cau-giasu.ai.vn.docx)
+Các câu còn lại, mời thầy cô và các em download tại đây [100 bai tap khoi non khoi tru khoi cau o2.edu.vn](#drive-pending-100-bai-tap-khoi-non-khoi-tru-khoi-cau-giasu.ai.vn.docx)

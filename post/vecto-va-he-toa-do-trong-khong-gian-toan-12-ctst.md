@@ -47,4 +47,4 @@ Bài tập về nhà.
 
 ## Download Vectơ và hệ tọa độ trong không gian Toán 12 CTST
 
-- [vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst-nguyen-vu-minh](/assets/docs/vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst-nguyen-vu-minh.pdf)
+- [vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst-nguyen-vu-minh](#drive-pending-vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst-nguyen-vu-minh.pdf)

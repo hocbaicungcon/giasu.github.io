@@ -20,7 +20,7 @@ ASSETS_DOC_DIR = os.path.join(WORKSPACE_ROOT, 'assets/docs')
 DRIVE_UPLOAD_DIR = os.path.join(WORKSPACE_ROOT, 'o2edu/drive_upload')
 DRIVE_LINKS_FILE = os.path.join(WORKSPACE_ROOT, 'o2edu/drive_links.csv')
 SLUG_MAP_FILE = os.path.join(WORKSPACE_ROOT, 'o2edu/slug_map.json')
-MAX_LOCAL_DOC_SIZE = 5 * 1024 * 1024  # 5MB: Các file >= 5MB chuyển sang Google Drive
+MAX_LOCAL_DOC_SIZE = 3 * 1024 * 1024  # 3MB: Các file >= 3MB chuyển sang Google Drive
 
 os.makedirs(ASSETS_IMG_DIR, exist_ok=True)
 os.makedirs(ASSETS_DOC_DIR, exist_ok=True)

@@ -17,7 +17,7 @@ Hướng dẫn giải chi tiết môn Toán đề thi Tốt nghiệp THPT 2025
 + Để đặt được một vật trang trí trên mặt bàn, người ta thiết kế một chân đế như sau. Lấy một khối gỗ có dạng khối chóp cụt tứ giác đều với độ dài hai cạnh đáy lần lượt bằng 7,4 cm và 10,4 cm, bề dày của khối gỗ bằng 1,5 cm. Sau đó khoét bỏ đi một phần của khối gỗ sao cho phần đó có dạng vật thể H, ở đó H nhận được bằng cách cắt khối cầu bán kính 5,7 cm bởi một mặt phẳng cắt mà mặt cắt là hình tròn bán kính 3,5 cm (xem hình dưới). Thể tích của khối chân đế bằng bao nhiêu centimét khối (không làm tròn kết quả các phép tính trung gian, chỉ làm tròn kết quả cuối cùng đến hàng phần mười)?
 + Để gây quỹ từ thiện, câu lạc bộ thiện nguyện của một trường THPT tổ chức hoạt động bán hàng với hai mặt hàng là nước chanh và khoai chiên. Câu lạc bộ thiết kế hai thực đơn. Thực đơn 1 có giá 35 nghìn đồng, bao gồm hai cốc nước chanh và một túi khoai chiên. Thực đơn 2 có giá 55 nghìn đồng, bao gồm ba cốc nước chanh và hai túi khoai chiên. Biết rằng câu lạc bộ chỉ làm được không quá 165 cốc nước chanh và 100 túi khoai chiên. Số tiền lớn nhất mà câu lạc bộ có thể nhận được sau khi bán hết hàng bằng bao nhiêu nghìn đồng?
 
-- [huong-dan-giai-de-chinh-thuc-tot-nghiep-thpt-nam-2025-mon-toan](/assets/docs/huong-dan-giai-de-chinh-thuc-tot-nghiep-thpt-nam-2025-mon-toan.pdf)
+- [huong-dan-giai-de-chinh-thuc-tot-nghiep-thpt-nam-2025-mon-toan](#drive-pending-huong-dan-giai-de-chinh-thuc-tot-nghiep-thpt-nam-2025-mon-toan.pdf)
 
 ←[Đề ôn tập học kì 2 lớp 10 môn hóa học](/bai-viet/de-on-tap-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 [Tổng hợp Xác suất có điều kiện PDF lớp 12](/bai-viet/tong-hop-xac-suat-co-dieu-kien-pdf-lop-12.html)→

@@ -92,7 +92,7 @@ CỰC TRỊ CỦA HÀM SỐ:
 + Dạng 2. Giá trị lớn nhất – giá trị nhỏ nhất hàm ẩn, hàm hợp.
 + Dạng 3. Ứng dụng GTLN – GTNN giải bài toán thực tế.
 
-- [chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao.pdf)
+- [chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao](#drive-pending-chuyen-de-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so-tu-co-ban-den-nang-cao.pdf)
 
 ## Chuyên đề đường tiệm cận của đồ thị hàm số từ cơ bản đến nâng cao
 
@@ -113,7 +113,7 @@ CỰC TRỊ CỦA HÀM SỐ:
 
 **V. HỆ THỐNG BÀI TẬP TRẢ LỜI NGẮN.**
 
-- [chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao](/assets/docs/chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf)
+- [chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao](#drive-pending-chuyen-de-duong-tiem-can-cua-do-thi-ham-so-tu-co-ban-den-nang-cao.pdf)
 
 ## Chuyên đề khảo sát sự biến thiên và vẽ đồ thị hàm số từ cơ bản đến nâng cao
 

@@ -207,11 +207,11 @@ Các thầy cô xem và tải tại [ĐÂY](https://drive.google.com/drive/folde
 
 ## 40. Chuyên đề bồi dưỡng HSG vật lý lớp 9
 
-Các thầy cô tải tại đây: [Chuyên đề hsg vật lí 9-20210911T085535Z-001](/assets/docs/Chuyen-de-hsg-vat-li-9-20210911T085535Z-001.zip)
+Các thầy cô tải tại đây: [Chuyên đề hsg vật lí 9-20210911T085535Z-001](#drive-pending-Chuyen-de-hsg-vat-li-9-20210911T085535Z-001.zip)
 
 ## 39. Giáo án toán 8 học kì 1 theo CV5512
 
-Các thầy cô tải tại đây: [Toan_8_ki_1_5512](/assets/docs/Toan_8_ki_1_5512.doc)
+Các thầy cô tải tại đây: [Toan_8_ki_1_5512](#drive-pending-Toan_8_ki_1_5512.doc)
 
 ## 38. Phần mềm vẽ sơ đồ tư duy Edraw Mindmaster Pro 8.5.1
 
@@ -234,7 +234,7 @@ Sau khi cài đặt hoàn tất Thày/ cô vào hướng dẫn cài đặt để
 
 ## 34. GIÁO ÁN KHOA HỌC TỰ NHIÊN 6
 
-Các thầy cô tải tại đây: [GIÁO ÁN KHOA HỌC TỰ NHIÊN 6](/assets/docs/GIAO-AN-KHOA-HOC-TU-NHIEN-6.docx)
+Các thầy cô tải tại đây: [GIÁO ÁN KHOA HỌC TỰ NHIÊN 6](#drive-pending-GIAO-AN-KHOA-HOC-TU-NHIEN-6.docx)
 
 ## 33. Giáo án GDTC Khối 6-7-8-9- cả năm- Soạn theo 5512- Chương trình 2006
 
@@ -250,7 +250,7 @@ Các thầy cô tải tại đây: [G.AN-HĐTNHN-6-KNTT](/assets/docs/G.AN-HDTNH
 
 ## 30. Power point SINH HOẠT LỚP – HỌP PHỤ HUYNH ĐẦU NĂM
 
-Các thầy cô tải tại đây: [sinhhoatchunhiem](/assets/docs/shcn.pptx) và  [PPT hop phu huynh dau nam 2021-2022](/assets/docs/PPT-hop-phu-huynh-dau-nam-2021-2022-1.pptx)
+Các thầy cô tải tại đây: [sinhhoatchunhiem](/assets/docs/shcn.pptx) và  [PPT hop phu huynh dau nam 2021-2022](#drive-pending-PPT-hop-phu-huynh-dau-nam-2021-2022-1.pptx)
 
 ## 29. Giáo án công nghệ 6 (Kết nối tri thức với cuộc sống)
 
@@ -270,7 +270,7 @@ Các thầy cô download tại đây: [Toán 7 8 9-20210830T023759Z-001](https:/
 
 ## 25. Giáo án công nghệ 6 chân trời sang tạo
 
-- [giao an cn6 cv 5512](/assets/docs/giao-an-cn6-cv-5512.docx)
+- [giao an cn6 cv 5512](#drive-pending-giao-an-cn6-cv-5512.docx)
 
 ## 24. KHBD lớp 6 theo SGK mới
 
@@ -310,7 +310,7 @@ Các thầy cô download tại đây: [NOI DUNG VA BIEN BAN HOP PHU HUYNH DAU NA
 
 [Biên bản họp PHHS đầu năm học kì 1 học kì 2 cho giáo viên](/bai-viet/bien-ban-hop-phhs-dau-nam-hoc-ki-1-hoc-ki-2-cho-giao-vien.html)
 
-bản powerpoint trình chiếu màn hình tải tại đây: [Power point trình chiếu hop phu huynh dau nam 2021-2022](/assets/docs/PPT-hop-phu-huynh-dau-nam-2021-2022.pptx)
+bản powerpoint trình chiếu màn hình tải tại đây: [Power point trình chiếu hop phu huynh dau nam 2021-2022](#drive-pending-PPT-hop-phu-huynh-dau-nam-2021-2022.pptx)
 
 ## 16. Các loại giáo án, KHGD sách mới lớp 6
 

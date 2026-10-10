@@ -25,4 +25,4 @@ CHỦ ĐỀ 3. ĐỒ THỊ CỦA HÀM SỐ LIÊN QUAN ĐẾN f'(x).
 **CHỦ ĐỀ 4. ỨNG DỤNG THỰC TIỄN.
 ## Download Bài tập khảo sát và vẽ đồ thị một số hàm số cơ bản Toán 12 CTST
 
-- [cac-dang-bai-tap-khao-sat-va-ve-do-thi-mot-so-ham-so-co-ban-toan-12-ctst](/assets/docs/cac-dang-bai-tap-khao-sat-va-ve-do-thi-mot-so-ham-so-co-ban-toan-12-ctst.pdf)
+- [cac-dang-bai-tap-khao-sat-va-ve-do-thi-mot-so-ham-so-co-ban-toan-12-ctst](#drive-pending-cac-dang-bai-tap-khao-sat-va-ve-do-thi-mot-so-ham-so-co-ban-toan-12-ctst.pdf)

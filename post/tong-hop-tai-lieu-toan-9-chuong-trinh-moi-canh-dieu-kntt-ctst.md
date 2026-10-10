@@ -25,7 +25,7 @@ Xem tại đây [WORD Bài tập Toán 9 Kết Nối Tri Thức](/bai-viet/word-
 ## #2 SBT Toán 9 Cánh Diều file word
 
 - [SÁCH BÀI TẬP TOÁN 9 CÁNH DIỀU-TẬP 1-CHƯƠNG 1](/assets/docs/SACH-BAI-TAP-TOAN-9-CANH-DIEU-TAP-1-CHUONG-1.docx)
-- [SÁCH BÀI TẬP TOÁN 9 CÁNH DIỀU-TẬP 1-CHƯƠNG 5](/assets/docs/SACH-BAI-TAP-TOAN-9-CANH-DIEU-TAP-1-CHUONG-5.docx)
+- [SÁCH BÀI TẬP TOÁN 9 CÁNH DIỀU-TẬP 1-CHƯƠNG 5](#drive-pending-SACH-BAI-TAP-TOAN-9-CANH-DIEU-TAP-1-CHUONG-5.docx)
 
 ## #3 Bài tập dạy thêm Toán 9 Cánh Diều
 
