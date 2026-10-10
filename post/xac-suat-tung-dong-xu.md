@@ -30,11 +30,11 @@ $$
 ## Bài 2. Ít nhất một lần ngửa
 Vẫn trong phép thử trên, tính xác suất có ít nhất một lần ngửa.
 
-**Lời giải:** Các kết quả thuận lợi là NN, NS, SN, nên xác suất bằng $\frac{3}{4}$.
+**Lời giải:** Các kết quả thuận lợi là NN, NS, SN, nên xác suất bằng $\frac{3}{4}.$
 
 ## Bài 3. Tự luyện
 Tung đồng xu cân đối ba lần độc lập. Tính xác suất cả ba lần đều ngửa.
 
-**Đáp án:** Có $2^3=8$ kết quả đồng khả năng, chỉ NNN thuận lợi. Xác suất là $\frac18$.
+**Đáp án:** Có $2^3=8$ kết quả đồng khả năng, chỉ NNN thuận lợi. Xác suất là $\frac18.$
 
 > “Đúng một” và “ít nhất một” là hai yêu cầu khác nhau. Hãy đọc kĩ đề trước khi đếm!

@@ -70,7 +70,7 @@ Sau 3 giờ Người thứ nhất làm được 3. $\frac{1}{x}$ (KLCV).
 
 Sau 6 giờ Người thứ hai làm được 6. $\frac{1}{y}$ (KLCV).
 
-Vì người thứ nhất làm trong 3 giờ, người thợ thứ hai làm trong 6 giờ thì học làm được 25% khối lượng công việc do đó ta có phương trình:  $\frac{3}{x}$ + $\frac{6}{y}$ = $\frac{1}{4}$.
+Vì người thứ nhất làm trong 3 giờ, người thợ thứ hai làm trong 6 giờ thì học làm được 25% khối lượng công việc do đó ta có phương trình:  $\frac{3}{x}$ + $\frac{6}{y}$ = $\frac{1}{4}.$
 
 Theo bài ra ta có hệ phương trình: 
 
@@ -162,15 +162,15 @@ Thời gian để  đội II làm  một mình xong công việc là: 21 (ngà
 Hải và Sơn  cùng làm một công việc trong 7 giờ 20 phút thì xong. Nếu Hải làm trong 5 giờ và  Sơn làm  trong 6 giờ thì cả hai làm được $\frac{3}{4}$  khối lượng công việc. Hỏi mỗi người làm  công  việc đó  trong mấy giờ thì  xong.
 
 **Lời Giải:
-Gọi thời gian Hải làm một mình xong công việc là x (giờ), x > $\frac{22}{3}$.
+Gọi thời gian Hải làm một mình xong công việc là x (giờ), x > $\frac{22}{3}.$
 
-Gọi thời gian Sơn làm một mình xong công việc là y (giờ), y > $\frac{22}{3}$.
+Gọi thời gian Sơn làm một mình xong công việc là y (giờ), y > $\frac{22}{3}.$
 
-Năng suất  của Hải và Sơn tính theo giờ là: $\frac{1}{x}$, $\frac{1}{y}$.
+Năng suất  của Hải và Sơn tính theo giờ là: $\frac{1}{x}$, $\frac{1}{y}.$
 
-Vì Hải và Sơn  cùng làm một công việc trong 7 giờ 20 phút thì xong do đó ta có phương trình: $\frac{1}{x}$ + $\frac{1}{y}$ = $\frac{3}{4}$.
+Vì Hải và Sơn  cùng làm một công việc trong 7 giờ 20 phút thì xong do đó ta có phương trình: $\frac{1}{x}$ + $\frac{1}{y}$ = $\frac{3}{4}.$
 
-Sau 5 giờ Hải làm được KLCV là: 5. $\frac{1}{x}$; sau 6 giờ Sơn làm được KLCV là: 6. $\frac{1}{y}$.
+Sau 5 giờ Hải làm được KLCV là: 5. $\frac{1}{x}$; sau 6 giờ Sơn làm được KLCV là: 6. $\frac{1}{y}.$
 
 Vì Hải làm trong 5 giờ và  Sơn làm  trong 6 giờ thì cả hai làm được $\frac{3}{4}$ KLCV do đó ta có phương trình:
 
@@ -193,15 +193,15 @@ Vậy Hải làm công việc đó một mình trong:   44/3  giờ , Sơn l�
 Hai vòi nước chảy chung vào một bể thì sau 4$\frac{4}{5}$ giờ đầy bể. Mỗi giờ lượng nước của vòi I chảy được bằng 1$\frac{1}{2}$ lượng nước chảy được  của vòi II. Hỏi  mỗi vòi chảy riêng thì trong bao  lâu đầy bể.
 
 **Lời Giải:
-Gọi thời gian để vòi I chảy  một mình đầy bể là x, (giờ), x > $\frac{24}{5}$.
+Gọi thời gian để vòi I chảy  một mình đầy bể là x, (giờ), x > $\frac{24}{5}.$
 
-Gọi thời gian để vòi II chảy  một mình đầy bể là y, (giờ), y > $\frac{24}{5}$.
+Gọi thời gian để vòi II chảy  một mình đầy bể là y, (giờ), y > $\frac{24}{5}.$
 
 Trong 1 giờ vòi I và vòi II  chảy được lượng nước tương ứng là: $\frac{1}{x}$, $\frac{1}{y}$ (bể).
 
 Vì hai vòi cùng chảy sau $\frac{24}{5}$ thì đầy bể do đó ta có phương trình (1) :   $\frac{1}{x}$ + $\frac{1}{y}$ = $\frac{5}{24}$
 
-Vì trong 1 giờ lượng nước chảy được của vòi I bằng $\frac{2}{3}$ lượng nước chảy được của vòi II do đó ta có phương trình (2): $\frac{1}{x}$ = $\frac{3}{2}$. $\frac{1}{y}$    ;Theo bài ra ta có hệ phương trình:
+Vì trong 1 giờ lượng nước chảy được của vòi I bằng $\frac{2}{3}$ lượng nước chảy được của vòi II do đó ta có phương trình (2): $\frac{1}{x}$ = $\frac{3}{2}.$ $\frac{1}{y}$    ;Theo bài ra ta có hệ phương trình:
 
 $$
 \left\{ \begin{aligned} & \frac{1}{x}+\frac{1}{y}=\frac{5}{24} \\ & \frac{1}{x}=\frac{3}{2}.\frac{1}{y}. \\ \end{aligned} \right.
@@ -222,7 +222,7 @@ Ta có thời gian dự định để bơ   m  đầy bể là: $\frac{x}{10}
 
 Thời gian để bơm  $\frac{1}{3}$ bể  với công suất 10 m3/s là: $\frac{x}{30}$ (giờ).
 
-Thời gian để bơm  $\frac{2}{3}$ bể  còn lại với công suất 15 m3/s là: $\frac{2x}{45}$.
+Thời gian để bơm  $\frac{2}{3}$ bể  còn lại với công suất 15 m3/s là: $\frac{2x}{45}.$
 
 Do công suất tăng khi bơm  $\frac{2}{3}$ bể  còn lại nên thời gian thời gian bơm đầy trước 48 phút so với quy định do đó ta có phương trình: $\frac{x}{10}$ – ($\frac{x}{30}$ + $\frac{2x}{45}$) = $\frac{4}{5}$    ; Giải PTBN ta được x = 36.      Vậy dung tích bể chứa là 36 m3.
 
@@ -241,7 +241,7 @@ Vì hai vòi cùng chảy sau 1 giờ 20 phút = 80 Phút, thì đầy bể do �
 
 Sau 10 phút Vòi 1 chảy được: 10. $\frac{1}{x}$ (Bể).   ;Sau 12 phút Vòi  2 chảy  được: 12. $\frac{1}{y}$ (Bể)
 
-Vì nếu mở Vòi thứ nhất chảy trong 10 phút và Vòi thứ  hai chảy trong 12 phút thì đầy  $\frac{2}{15}$  bể do đó ta có phương trình: $\frac{10}{x}$ + $\frac{12}{y}$ = $\frac{2}{15}$. Theo bài ra ta có hệ phương trình: 
+Vì nếu mở Vòi thứ nhất chảy trong 10 phút và Vòi thứ  hai chảy trong 12 phút thì đầy  $\frac{2}{15}$  bể do đó ta có phương trình: $\frac{10}{x}$ + $\frac{12}{y}$ = $\frac{2}{15}.$ Theo bài ra ta có hệ phương trình: 
 
 $$
 \left\{ \begin{aligned} & \frac{1}{x}+\frac{1}{y}=\frac{1}{80} \\ & \frac{10}{x}+\frac{12}{y}=\frac{2}{15} \\ \end{aligned} \right.

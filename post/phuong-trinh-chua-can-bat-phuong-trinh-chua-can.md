@@ -66,7 +66,7 @@ x = 0\, \vee \,x = 3
 \end{array}
 $$
 
- Vậy phương trình đã cho có nghiệm duy nhất $x = 3$.
+ Vậy phương trình đã cho có nghiệm duy nhất $x = 3.$
 
 **Ví dụ 2.** Giải phương trình
 
@@ -93,7 +93,7 @@ x = 4\, \vee \,x = – 3
 \end{array}
 $$
 
- Vậy phương trình có nghiệm duy nhất $x=4$.
+ Vậy phương trình có nghiệm duy nhất $x=4.$
 
 **Ví dụ 3.** Giải phương trình 
 
@@ -121,7 +121,7 @@ x = 3 \vee \,x = – \frac{1}{2}
 \end{array}
 $$
 
- Vậy phương trình đã cho có nghiệm duy nhất $x = 3$.
+ Vậy phương trình đã cho có nghiệm duy nhất $x = 3.$
 
 **Ví dụ 4.** Giải phương trình 
 
@@ -144,7 +144,7 @@ x = 1
 \end{array}
 $$
 
- Vậy phương trình đã cho có nghiệm duy nhất $x = 1$.
+ Vậy phương trình đã cho có nghiệm duy nhất $x = 1.$
 
 **Ví dụ 5.** Giải phương trình 
 
@@ -177,7 +177,7 @@ x = \frac{{ – 8}}{6}
 \end{array}
 $$
 
- Vậy phương trình đã cho có nghiệm duy nhất $x = \frac{-8}{6}$.
+ Vậy phương trình đã cho có nghiệm duy nhất $x = \frac{-8}{6}.$
 
 **Ví dụ 6.** Giải bất phương trình 
 
@@ -212,7 +212,7 @@ x = – 1\\
 \end{array}
 $$
 
-Vậy tập nghiệm của bất phương trình là $S = \left[ {1;3} \right] \cup \left\{ { – 1} \right\}$.
+Vậy tập nghiệm của bất phương trình là $S = \left[ {1;3} \right] \cup \left\{ { – 1} \right\}.$
 
 **Ví dụ 7.** Giải bất phương trình 
 
@@ -259,7 +259,7 @@ $$
   \end{array}
   $$
 
-Lấy hợp tập nghiệm của 2 trường hợp trên, được đáp số cuối cùng là $S = \left[ {1;\frac{{14}}{5}} \right)$.
+Lấy hợp tập nghiệm của 2 trường hợp trên, được đáp số cuối cùng là $S = \left[ {1;\frac{{14}}{5}} \right).$
 
 **Ví dụ 8.** Giải phương trình 
 
@@ -292,7 +292,7 @@ x = 0 \vee x = – \frac{7}{2}
 \end{array}
 $$
 
- Vậy phương trình đã cho có nghiệm duy nhất $x = 0$.
+ Vậy phương trình đã cho có nghiệm duy nhất $x = 0.$
 
 **Ví dụ 9.** Giải phương trình 
 
@@ -320,7 +320,7 @@ x = \frac{2}{3}\left( l \right)
 \end{array}.
 $$
 
- Vậy phương trình đã cho có nghiệm $x=5$.
+ Vậy phương trình đã cho có nghiệm $x=5.$
 
 **Ví dụ 10.** Giải bất phương trình 
 
@@ -356,6 +356,6 @@ x \ge 4
 \end{array}
 $$
 
-Kết hợp với điều kiện ta có tập nghiệm của bất phương trình là $S=\left[ 4;\,\frac{9}{2} \right]$.
+Kết hợp với điều kiện ta có tập nghiệm của bất phương trình là $S=\left[ 4;\,\frac{9}{2} \right].$
 
 Xem các ví dụ khác nữa tại đây: [Phương pháp biến đổi tương đương giải phương trình chứa căn](/bai-viet/phuong-phap-bien-doi-tuong-duong-giai-phuong-trinh-chua-can.html)

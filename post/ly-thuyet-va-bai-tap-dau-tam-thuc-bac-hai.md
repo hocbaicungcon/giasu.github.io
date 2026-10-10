@@ -24,13 +24,13 @@ $$
 f(x) = ax^2+ bx + c,
 $$
 
- trong đó $a, b, c$ là những hệ số, $a \ne 0$.
+ trong đó $a, b, c$ là những hệ số, $a \ne 0.$
 
 ## 2. Định lí về dấu của tam thức bậc hai
 
 ### 2.1. Định lí dấu tam thức bậc hai
 
-Cho tam thức bậc hai $f(x)=ax^2+bx+c$ với $a\ne 0$ có $\Delta=b^2-4ac$. Khi đó, có ba trường hợp xảy ra:
+Cho tam thức bậc hai $f(x)=ax^2+bx+c$ với $a\ne 0$ có $\Delta=b^2-4ac.$ Khi đó, có ba trường hợp xảy ra:
 
 - $\Delta <0$: $f(x)$ cùng dấu với hệ số $a$ với mọi $x\in \mathbb{R},$
 
@@ -68,7 +68,7 @@ Chi tiết về vấn đề này, xin mời các em học sinh xem trong bài gi
 
 ### 2.4. Định lí đảo dấu tam thức bậc hai
 
-Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phân biệt $x_1<x_2$ và một số $\epsilon$. Khi đó, ta có các kết quả sau
+Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phân biệt $x_1<x_2$ và một số $\epsilon.$ Khi đó, ta có các kết quả sau
 
 - $x_1<\epsilon <x_2 \Leftrightarrow a\cdot f(\epsilon)<0$
 
@@ -128,9 +128,9 @@ Hướng dẫn.
 
    ![bảng xét dấu bất phương trình bậc hai](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-bac-hai.jpg)
 
-   Từ bảng xét dấu, chúng ta có tập nghiệm của bất phương trình là $\mathbb{R}$.
+   Từ bảng xét dấu, chúng ta có tập nghiệm của bất phương trình là $\mathbb{R}.$
 
-2. $x^2+9>6x$. Biến đổi bất phương trình đã cho thành
+2. $x^2+9>6x.$ Biến đổi bất phương trình đã cho thành
 
    $$
    x^2+9-6x>0
@@ -140,27 +140,27 @@ Hướng dẫn.
 
    ![bat phuong trinh bac hai 2](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-bac-hai-2.jpg)
 
-   Suy ra, tập nghiệm của bất phương trình đã cho là $\mathbb{R}\setminus \{0\}$.
+   Suy ra, tập nghiệm của bất phương trình đã cho là $\mathbb{R}\setminus \{0\}.$
 
-3. $6x^2-x-2 \geqslant 0$. Lập bảng xét dấu cho vế trái, ta được:
+3. $6x^2-x-2 \geqslant 0.$ Lập bảng xét dấu cho vế trái, ta được:
 
    ![bat phuong trinh đa thuc](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-3.jpg)
 
-   Suy ra, tập nghiệm của bất phương trình đã cho là $S=\left(-\infty;-\frac{1}{2}\right]\cup \left[\frac{2}{3};+\infty\right)$.
+   Suy ra, tập nghiệm của bất phương trình đã cho là $S=\left(-\infty;-\frac{1}{2}\right]\cup \left[\frac{2}{3};+\infty\right).$
 
-4. $\frac{1}{3}x^2+3x+6<0$. Bảng xét dấu của vế trái:
+4. $\frac{1}{3}x^2+3x+6<0.$ Bảng xét dấu của vế trái:
 
    ![bất phương trình hữu tỉ](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-4.jpg)
 
-   Kết luận, tập nghiệm của bất phương trình là $S=(-6;-3)$.
+   Kết luận, tập nghiệm của bất phương trình là $S=(-6;-3).$
 
-5. $\dfrac{x^2+1}{x^2+3x-10}<0$. Lập bảng xét dấu cho vế trái, chúng ta có bảng sau:
+5. $\dfrac{x^2+1}{x^2+3x-10}<0.$ Lập bảng xét dấu cho vế trái, chúng ta có bảng sau:
 
    ![bất phương trình phân thức hữu tỉ](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-5.jpg)
 
-   Kết luận, tập nghiệm của bất phương trình là $S=(-5;2)$.
+   Kết luận, tập nghiệm của bất phương trình là $S=(-5;2).$
 
-6. $\dfrac{10-x}{5+x^2}>\dfrac{1}{2}$. Chuyển vế, quy đồng giữ lại mẫu của bất phương trình đã cho, ta được bất phương trình tương đương
+6. $\dfrac{10-x}{5+x^2}>\dfrac{1}{2}.$ Chuyển vế, quy đồng giữ lại mẫu của bất phương trình đã cho, ta được bất phương trình tương đương
 
    $$
    \frac{-x^{2}-2x+15}{2\left( x^{2}+5\right) }>0
@@ -170,9 +170,9 @@ Hướng dẫn.
 
    ![bất phương trình thương](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-6.jpg)
 
-   Kết luận, tập nghiệm của bất phương trình là $S=(-5;3)$.
+   Kết luận, tập nghiệm của bất phương trình là $S=(-5;3).$
 
-7. $\dfrac{x+1}{x-1}+2>\dfrac{x-1}{x}$. Chuyển vế, quy đồng giữ mẫu của bất phương trình này, ta được bất phương trình tương đương:
+7. $\dfrac{x+1}{x-1}+2>\dfrac{x-1}{x}.$ Chuyển vế, quy đồng giữ mẫu của bất phương trình này, ta được bất phương trình tương đương:
 
    $$
    \frac{2x^{2}+x-1}{x^{2}-x}>0
@@ -182,9 +182,9 @@ Hướng dẫn.
 
    ![bất phương trình hữu tỉ](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-7.jpg)
 
-   Kết luận, tập nghiệm của bất phương trình đã cho là $S= \left( -\infty ,-1\right) \cup \left( 0,\frac{1}{2}\right) \cup \left( 1,+\infty \right)$.
+   Kết luận, tập nghiệm của bất phương trình đã cho là $S= \left( -\infty ,-1\right) \cup \left( 0,\frac{1}{2}\right) \cup \left( 1,+\infty \right).$
 
-8. $\dfrac{1}{x+1}+\dfrac{2}{x+3}<\dfrac{3}{x+2}$. Chuyển vế, quy đồng ta được bất phương trình tương đương:
+8. $\dfrac{1}{x+1}+\dfrac{2}{x+3}<\dfrac{3}{x+2}.$ Chuyển vế, quy đồng ta được bất phương trình tương đương:
 
    $$
    \frac{-x+1}{\left( x+3\right) \left( x+2\right) \left( x+1\right) }<0
@@ -194,7 +194,7 @@ Hướng dẫn.
 
    ![bất phương trình chứa ẩn ở mẫu sử dụng tam thức bậc hai](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-8.jpg)
 
-   Căn cứ vào bảng xét dấu, chúng ta có tập nghiệm của bất phương trình đã cho là $S=\left( -\infty ,-3\right) \cup \left( -2,-1\right) \cup \left( 1,+\infty \right)$.
+   Căn cứ vào bảng xét dấu, chúng ta có tập nghiệm của bất phương trình đã cho là $S=\left( -\infty ,-3\right) \cup \left( -2,-1\right) \cup \left( 1,+\infty \right).$
 
 **Bài 3.** Tìm các giá trị của tham số $m$ để các phương trình sau có 2 nghiệm dương phân biệt
 
@@ -234,7 +234,7 @@ Hướng dẫn.
 
 6. $2mx^{2}+x-3\geqslant 0$
 
-**Bài 6.** Tìm $m$ để các bất phương trình sau có tập nghiệm là $\mathbb{R}$.
+**Bài 6.** Tìm $m$ để các bất phương trình sau có tập nghiệm là $\mathbb{R}.$
 
 1. $5x^2-x+m>0$
 
@@ -256,7 +256,7 @@ Hướng dẫn.
 
 10. $(m-1)x^{2}>(2m+1)x-m-3$
 
-**Bài 7.** Tìm $m$ để hàm số sau xác định với mọi $x\in\mathbb{R}$.
+**Bài 7.** Tìm $m$ để hàm số sau xác định với mọi $x\in\mathbb{R}.$
 
 1. $y=\sqrt{x^{2}+3x-m^{2}+2}$
 

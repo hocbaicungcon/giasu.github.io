@@ -89,36 +89,36 @@ Phương pháp chứng minh hai mặt phẳng song song: Để chứng minh hai 
 
 1. Chứng minh rằng $(ADF)\parallel(BCE)$;
 
-2. Gọi $I,J,K$ là trung điểm của các cạnh $AB,CD,EF$. Chứng minh rằng $(DIK)\parallel(JBE)$.
+2. Gọi $I,J,K$ là trung điểm của các cạnh $AB,CD,EF.$ Chứng minh rằng $(DIK)\parallel(JBE).$
 
-**Ví dụ 2.** Cho tứ diện $ABCD$ có $M,N,P$ lần lượt là trọng tâm của các tam giác $ABC, ABD, ACD$. Chứng minh rằng $(MNP)\parallel(BCD)$.
+**Ví dụ 2.** Cho tứ diện $ABCD$ có $M,N,P$ lần lượt là trọng tâm của các tam giác $ABC, ABD, ACD.$ Chứng minh rằng $(MNP)\parallel(BCD).$
 
 **Ví dụ 3.** Cho hình bình hành $ABCD.$ Từ $A$ và $C$ kẻ hai tia $Ax$ và $Cy$ song song, cùng chiều và không nằm trong mặt phẳng $(ABCD).$ Chứng minh mặt phẳng $(BAx)\parallel (DCy).$
 
 **Ví dụ 4.** Cho hình chóp $S.ABCD$ với $ABCD$ là hình bình hành. Gọi $I$ là trung điểm của $SD.$
 
-1. Xác định giao điểm $K$ của $BI$ và $(SAC)$.
+1. Xác định giao điểm $K$ của $BI$ và $(SAC).$
 
-2. Trên $IC$ lấy điểm $H$ sao cho $HC=2HI$. Chứng minh $KH\parallel(SAD)$.
+2. Trên $IC$ lấy điểm $H$ sao cho $HC=2HI.$ Chứng minh $KH\parallel(SAD).$
 
-3. Gọi $N$ là điểm trên $SI$ sao cho $SN=2NI$. Chứng minh $(KHN)\parallel(SBC)$.
+3. Gọi $N$ là điểm trên $SI$ sao cho $SN=2NI.$ Chứng minh $(KHN)\parallel(SBC).$
 
 4. Dựng thiết diện của hình chóp với mặt phẳng $(KHN).$
 
 **Hướng dẫn.** Chỉ ra $K$ là trọng tâm tam giác $SBD.$
 
-**Ví dụ 5.** Cho lăng trụ tam giác $ABC.A’B’C’$ có $I ,K ,G$ lần lượt là trọng tâm của các tam giác $ABC, A’B’C’$ và $ACC’$. Chứng minh rằng: $(IKG) \parallel (BB’C’C), (A’KG)\parallel(AIB’)$.
+**Ví dụ 5.** Cho lăng trụ tam giác $ABC.A’B’C’$ có $I ,K ,G$ lần lượt là trọng tâm của các tam giác $ABC, A’B’C’$ và $ACC’.$ Chứng minh rằng: $(IKG) \parallel (BB’C’C), (A’KG)\parallel(AIB’).$
 
 **Hướng dẫn.** Gọi $M,N$ lần lượt là trung điểm của $BC$ và $B’C’$ thì mặt phẳng $(A’KG)$ chính là mặt phẳng $(A’CN)$, còn mặt phẳng $(AIB’)$ chính là mặt phẳng $(AMB’).$ Hai mặt phẳng này song song vì có $AM\parallel A’N$ và $B’M\parallel CN.$
 
 ## 4. Bài tập chứng minh 2 mặt phẳng song song
 
-**Bài 1.** Cho hình chóp $S.ABCD$ đáy là hình bình hành tâm $O$. Gọi $M, N, P, Q$ là trung điểm $SA, SD, AB, ON.$ Chứng minh: $(OMN) \parallel (SBC)$. Chứng minh: $PQ \parallel (SBC)$.
+**Bài 1.** Cho hình chóp $S.ABCD$ đáy là hình bình hành tâm $O.$ Gọi $M, N, P, Q$ là trung điểm $SA, SD, AB, ON.$ Chứng minh: $(OMN) \parallel (SBC).$ Chứng minh: $PQ \parallel (SBC).$
 
-**Bài 2.** Cho hình chóp $S.ABCD$ đáy là hình bình hành tâm $O$. Gọi $M, N, P$ là trung điểm $SA, CD, AD.$ Chứng minh $(OMN) \parallel (SBC)$. Gọi $I$ là điểm trên $MP$. Chứng minh: $OI \parallel (SCD)$.
+**Bài 2.** Cho hình chóp $S.ABCD$ đáy là hình bình hành tâm $O.$ Gọi $M, N, P$ là trung điểm $SA, CD, AD.$ Chứng minh $(OMN) \parallel (SBC).$ Gọi $I$ là điểm trên $MP.$ Chứng minh: $OI \parallel (SCD).$
 
-**Bài 3.** Cho hình chóp $S.ABCD$, đáy là hình bình hành. Gọi $M, N, P, Q$ là trung điểm $BC, AB, SB, AD.$ Chứng minh $(MNP) \parallel (SAC)$, $PQ \parallel (SCD)$. Gọi $I$ là giao điểm $AM$ và $BD, JSA$ sao cho $AJ = 2JS$, chứng minh $IJ \parallel (SBC)$. Gọi $K$ là một điểm trên $AC$, tìm giao tuyến $(SKM)$ và $(MNC)$.
+**Bài 3.** Cho hình chóp $S.ABCD$, đáy là hình bình hành. Gọi $M, N, P, Q$ là trung điểm $BC, AB, SB, AD.$ Chứng minh $(MNP) \parallel (SAC)$, $PQ \parallel (SCD).$ Gọi $I$ là giao điểm $AM$ và $BD, JSA$ sao cho $AJ = 2JS$, chứng minh $IJ \parallel (SBC).$ Gọi $K$ là một điểm trên $AC$, tìm giao tuyến $(SKM)$ và $(MNC).$
 
-**Bài 4.** Cho hình chóp $S.ABCD$ đáy là hình bình hành. Gọi $I, J, G, P, Q$ là trung điểm $DC, AB, SB, BG, BI.$ Chứng minh $(IJG) \parallel (SAD)$, $PQ \parallel (SAD)$. Tìm giao tuyến của $(SAC)$ và $(IJG)$; $(ACG)$ và $(SAD)$.
+**Bài 4.** Cho hình chóp $S.ABCD$ đáy là hình bình hành. Gọi $I, J, G, P, Q$ là trung điểm $DC, AB, SB, BG, BI.$ Chứng minh $(IJG) \parallel (SAD)$, $PQ \parallel (SAD).$ Tìm giao tuyến của $(SAC)$ và $(IJG)$; $(ACG)$ và $(SAD).$
 
-**Bài 5.** Cho hai hình bình hành $ABCD$ và $ABEF$ không đồng phẳng. Gọi $I, J, K$ là trung điểm $AB, CD, EF.$ Chứng minh $(ADF) \parallel (BCE)$; $(DIK) \parallel (JBE)$.
+**Bài 5.** Cho hai hình bình hành $ABCD$ và $ABEF$ không đồng phẳng. Gọi $I, J, K$ là trung điểm $AB, CD, EF.$ Chứng minh $(ADF) \parallel (BCE)$; $(DIK) \parallel (JBE).$

@@ -17,7 +17,7 @@ v=\frac{s}{t}
 $$
 
 - $s$: quãng đường đi được.
-- $t$: thời gian chuyển động, với $t>0$.
+- $t$: thời gian chuyển động, với $t>0.$
 - $v$: tốc độ.
 
 ## Ví dụ
@@ -28,9 +28,9 @@ v=\frac{6}{0{,}5}=12\;\text{km/h}
 $$
 
 ## Chú ý đơn vị
-Nếu quãng đường tính bằng mét và thời gian tính bằng giây, tốc độ có đơn vị m/s. Ta có $1\;\text{m/s}=3{,}6\;\text{km/h}$.
+Nếu quãng đường tính bằng mét và thời gian tính bằng giây, tốc độ có đơn vị m/s. Ta có $1\;\text{m/s}=3{,}6\;\text{km/h}.$
 
 ## Tự luyện
 Một người chạy 100 m trong 20 s. Tính tốc độ.
 
-**Đáp án:** $v=100:20=5\;\text{m/s}$.
+**Đáp án:** $v=100:20=5\;\text{m/s}.$

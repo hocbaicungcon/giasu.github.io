@@ -44,7 +44,7 @@ Tuy nhiên, phương pháp xác định hình chiếu vuông góc của một đ
 
 ### Bài toán 1. Dựng hình chiếu vuông góc từ chân đường cao tới một mặt phẳng.
 
-Cho hình chóp $S.ABC$ cho có $SA$ vuông góc với mặt đáy $(ABC)$. Hãy xác định hình chiếu vuông góc của điểm $A$ lên mặt phẳng $(SBC)$.
+Cho hình chóp $S.ABC$ cho có $SA$ vuông góc với mặt đáy $(ABC).$ Hãy xác định hình chiếu vuông góc của điểm $A$ lên mặt phẳng $(SBC).$
 
 **Phương pháp.** Để dựng hình chiếu của điểm $A$ lên mặt phẳng $(SBC)$, ta chỉ việc *kẻ vuông góc hai lần* như sau:
 
@@ -54,19 +54,19 @@ Cho hình chóp $S.ABC$ cho có $SA$ vuông góc với mặt đáy $(ABC)$. Hãy
 
 ![Cách dựng hình chiếu vuông góc của điểm A lên mặt phẳng (SBC) phương pháp tính khoảng cách từ điểm A tới mặt phẳng (P)](assets/images/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang-Dung-hinh-chieu-vuong-goc-cua-A-len-mat-phang-SBC-tinh-khoang-cach-tu-A-toi-mat-phang-SBC.jpg)
 
-Dễ dàng chứng minh được $K$ chính là hình chiếu vuông góc của điểm $A$ lên mặt phẳng $(P)$. Thật vậy, chúng ta có 
+Dễ dàng chứng minh được $K$ chính là hình chiếu vuông góc của điểm $A$ lên mặt phẳng $(P).$ Thật vậy, chúng ta có 
 
 $$
 \begin{cases} BC\perp SA\\ BC \perp AH\\ \end{cases}
 $$
 
- Mà $SA$ và $AH$ là hai đường thẳng cắt nhau nằm trong mặt phẳng $(SAH)$, nên suy ra $BC$ vuông góc với $(SAH)$, nên $BC\perp AK$. Như vậy lại có
+ Mà $SA$ và $AH$ là hai đường thẳng cắt nhau nằm trong mặt phẳng $(SAH)$, nên suy ra $BC$ vuông góc với $(SAH)$, nên $BC\perp AK.$ Như vậy lại có
 
 $$
 \begin{cases} AK\perp BC\\ AK\perp SH \end{cases}
 $$
 
- Mà $BC, AH$ là hai đường thẳng cắt nhau nằm trong mặt phẳng $(SBC)$, nên suy ra $AK$ vuông góc với $(SBC)$, hay $K$ là hình chiếu vuông góc của $A$ lên mặt phẳng $(SBC)$.
+ Mà $BC, AH$ là hai đường thẳng cắt nhau nằm trong mặt phẳng $(SBC)$, nên suy ra $AK$ vuông góc với $(SBC)$, hay $K$ là hình chiếu vuông góc của $A$ lên mặt phẳng $(SBC).$
 
 Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
 
@@ -94,15 +94,15 @@ Dưới đây là hình minh họa trong các trường hợp đáy $ABC$ là ta
 
 ### Bài toán 2. Dựng hình chiếu vuông góc sử dụng giao tuyến hai mặt phẳng vuông góc.
 
-Cho hình chóp $S.ABC$ cho có hai mặt phẳng $(SBC)$ và $(ABC)$ vuông góc với nhau. Hãy xác định hình chiếu vuông góc của điểm $A$ lên mặt phẳng $(SBC)$.
+Cho hình chóp $S.ABC$ cho có hai mặt phẳng $(SBC)$ và $(ABC)$ vuông góc với nhau. Hãy xác định hình chiếu vuông góc của điểm $A$ lên mặt phẳng $(SBC).$
 
-**Phương pháp.** Rõ ràng ở đây hai mặt phẳng vuông góc $(SBC)$ và $(ABC)$ cắt nhau theo giao tuyến là đường thẳng $BC$. Nên để dựng hình chiếu vuông góc của $A$ lên mặt phẳng $(SBC)$ ta chỉ việc hạ $AK$ vuông góc với giao tuyến $BC$ là xong. 
+**Phương pháp.** Rõ ràng ở đây hai mặt phẳng vuông góc $(SBC)$ và $(ABC)$ cắt nhau theo giao tuyến là đường thẳng $BC.$ Nên để dựng hình chiếu vuông góc của $A$ lên mặt phẳng $(SBC)$ ta chỉ việc hạ $AK$ vuông góc với giao tuyến $BC$ là xong. 
 
 $$
 \begin{cases} (SBC)\perp (ABC)\\ (SBC)\cap (ABC) = BC\\ AK\subset (ABC)\\ AK\perp BC \end{cases}
 $$
 
- Suy ra đường thẳng $AK$ vuông góc với mặt phẳng $(SBC)$, và $K$ chính là hình chiếu vuông góc của $A$ lên mặt phẳng $(SBC)$.
+ Suy ra đường thẳng $AK$ vuông góc với mặt phẳng $(SBC)$, và $K$ chính là hình chiếu vuông góc của $A$ lên mặt phẳng $(SBC).$
 
 ![Dung hinh chieu vuong goc cua A len mat phang (SBC) khi hai mat phang (SBC) va (ABC) vuong goc voi nhau](assets/images/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang-Dung-hinh-chieu-vuong-goc-cua-A-len-mat-phang-SBC-khi-hai-mat-phang-SBC-va-ABC-vuong-goc-voi-nhau.jpg)
 
@@ -118,7 +118,7 @@ $$
 AC^2=AB^2+BC^2-2AB\cdot BC\cdot \cos\widehat{B}=3a^2
 $$
 
- Rõ ràng $BC^2=AB^2+AC^2$ nên tam giác $ABC$ vuông tại $A$. Lúc này, dễ dàng nhận thấy $A$ chính là hình chiếu vuông góc của $B$ lên mặt phẳng $(SAC)$, và khoảng cách cần tìm 
+ Rõ ràng $BC^2=AB^2+AC^2$ nên tam giác $ABC$ vuông tại $A.$ Lúc này, dễ dàng nhận thấy $A$ chính là hình chiếu vuông góc của $B$ lên mặt phẳng $(SAC)$, và khoảng cách cần tìm 
 
 $$
 d(B,(SAC))=BA=a.
@@ -134,41 +134,41 @@ $$
 d(A,(SBC))=AK=\frac{3a}{\sqrt{13}}
 $$
 
-**Ví dụ 2.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a.$ Hai mặt phẳng $(SAB),$ $(SAD)$ cùng vuông góc với đáy và cạnh $SD$ tạo với đáy một góc $45^\circ.$ Tính khoảng cách từ điểm $A$ đến mặt phẳng $(SBC),$ khoảng cách từ điểm $A$ đến mặt phẳng $(SBD)$.
+**Ví dụ 2.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a.$ Hai mặt phẳng $(SAB),$ $(SAD)$ cùng vuông góc với đáy và cạnh $SD$ tạo với đáy một góc $45^\circ.$ Tính khoảng cách từ điểm $A$ đến mặt phẳng $(SBC),$ khoảng cách từ điểm $A$ đến mặt phẳng $(SBD).$
 
 ![Hinh chop S.ABCD co day la hinh vuong cạnh bên SA vuông góc với đáy](assets/images/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang-Hinh-chop-S.ABCD-co-day-la-hinh-vuong.jpg)
 
-**Hướng dẫn.** Hai mặt phẳng $(SAB),(SAD)$ cùng vuông góc với đáy nên giao tuyến của chúng, là đường thẳng $SA$ cũng vuông góc với mặt phẳng đáy $(ABCD)$.
+**Hướng dẫn.** Hai mặt phẳng $(SAB),(SAD)$ cùng vuông góc với đáy nên giao tuyến của chúng, là đường thẳng $SA$ cũng vuông góc với mặt phẳng đáy $(ABCD).$
 
 Nhặc lại định lý quan trọng, hai mặt phẳng vuông góc cùng vuông góc với mặt phẳng thứ ba thì giao tuyến của chúng (nếu có) cũng vuông góc với mặt phẳng thứ ba đó.
 
-Lúc này, góc giữa đường thẳng $SD$ và đáy chính là góc $\widehat{SDA}$ và góc này bằng $45^\circ$. Suy ra, tam giác $SAD$ vuông cân tại $A$ và $SA=AD=a$.
+Lúc này, góc giữa đường thẳng $SD$ và đáy chính là góc $\widehat{SDA}$ và góc này bằng $45^\circ.$ Suy ra, tam giác $SAD$ vuông cân tại $A$ và $SA=AD=a.$
 
-Tam giác $SAB$ vuông cân có $AK$ là đường cao và cũng là trung tuyến ứng với cạnh huyền, nên $AK=\frac{1}{2}SB=\frac{a\sqrt{2}}{2}$.
+Tam giác $SAB$ vuông cân có $AK$ là đường cao và cũng là trung tuyến ứng với cạnh huyền, nên $AK=\frac{1}{2}SB=\frac{a\sqrt{2}}{2}.$
 
 Để tính khoảng cách từ điểm $A$ đến mặt phẳng $(SBC),$ chúng ta cố gắng nhìn ra mô hình giống như trong [bài toán 1](#bt1). Bằng việc kẻ vuông góc hai lần, lần thứ nhất, trong mặt phẳng $(ABCD)$ ta hạ đường vuông góc từ $A$ tới $BC$, chính là điểm $B$ có sẵn luôn. Kẻ vuông góc lần thứ hai, trong mặt phẳng $(SAB)$ ta hạ đường vuông góc từ $A$ xuống $SB$, gọi là $AK$ thì độ dài đoạn $AK$ chính là khoảng cách cần tìm.
 
-Để tính khoảng cách từ điểm $A$ đến mặt phẳng $(SBD)$ ta vẫn tiếp tục làm như kỹ thuật trong [bài toán 1](#bt1). Chúng ta kẻ vuông góc hai lần, lần thứ nhất từ $A$ kẻ vuông góc xuống $BC$, chính là tâm $O$ của hình vuông luôn (vì hình vuông thì hai đường chéo vuông góc với nhau). Nối $S$ với $O$ và từ $A$ tiếp tục hạ đường vuông góc xuống $SO$, gọi là $AH$ thì chứng minh được $H$ là hình chiếu vuông góc của $A$ lên mặt phẳng $(SBD)$. Chúng ta có ngay
+Để tính khoảng cách từ điểm $A$ đến mặt phẳng $(SBD)$ ta vẫn tiếp tục làm như kỹ thuật trong [bài toán 1](#bt1). Chúng ta kẻ vuông góc hai lần, lần thứ nhất từ $A$ kẻ vuông góc xuống $BC$, chính là tâm $O$ của hình vuông luôn (vì hình vuông thì hai đường chéo vuông góc với nhau). Nối $S$ với $O$ và từ $A$ tiếp tục hạ đường vuông góc xuống $SO$, gọi là $AH$ thì chứng minh được $H$ là hình chiếu vuông góc của $A$ lên mặt phẳng $(SBD).$ Chúng ta có ngay
 
 $$
 \frac{1}{AH^2}=\frac{1}{AS^2}+\frac{1}{AB^2}+\frac{1}{AD^2}=\frac{3}{a^2}
 $$
 
-Từ đó tìm được $AH=\frac{a\sqrt{3}}{3}$ và khoảng cách cần tìm là $d(A,(SBD)=AH=\frac{a\sqrt{3}}{3}$.
+Từ đó tìm được $AH=\frac{a\sqrt{3}}{3}$ và khoảng cách cần tìm là $d(A,(SBD)=AH=\frac{a\sqrt{3}}{3}.$
 
 **Ví dụ 3.** Cho hình tứ diện $ABCD$ có cạnh $AD$ vuông góc với mặt phẳng $(ABC)$, ngoài ra $AD = AC = 4$ cm; $AB = 3$ cm; $BC = 5$ cm. Tìm khoảng cách từ $A$ đến mặt phẳng $(BCD).$
 
-**Ví dụ 4.** [Đề thi ĐH khối D năm 2003] Cho hai mặt phẳng $(P),(Q)$vuông góc với nhau và cắt nhau theo giao tuyến $\Delta.$ Lấy $A , B$ thuộc $\Delta$ và đặt $AB=a$. Lấy $C , D$ lần lượt thuộc hai mặt phẳng $(P),(Q)$ sao cho $AC , BD$ vuông góc với $\Delta$ và $AC=BD=a.$ Tính khoảng cách từ $A$ đến mặt phẳng $(BCD).$
+**Ví dụ 4.** [Đề thi ĐH khối D năm 2003] Cho hai mặt phẳng $(P),(Q)$vuông góc với nhau và cắt nhau theo giao tuyến $\Delta.$ Lấy $A , B$ thuộc $\Delta$ và đặt $AB=a.$ Lấy $C , D$ lần lượt thuộc hai mặt phẳng $(P),(Q)$ sao cho $AC , BD$ vuông góc với $\Delta$ và $AC=BD=a.$ Tính khoảng cách từ $A$ đến mặt phẳng $(BCD).$
 
-**Hướng dẫn.** Hạ $AH\perp BC$ thì $d(A,(BCD))=AH=\frac{a}{\sqrt{2}}$.
+**Hướng dẫn.** Hạ $AH\perp BC$ thì $d(A,(BCD))=AH=\frac{a}{\sqrt{2}}.$
 
-**Ví dụ 5.** [Đề thi ĐH Khối D năm 2012] Cho hình hộp đứng $ABCD.A’B’C’D’$ có đáy là hình vuông, tam giác $A’AC$ vuông cân, $A’C=a$. Tính khoảng cách từ điểm $A$ đến mặt phẳng $(BCD’)$ theo $a.$
+**Ví dụ 5.** [Đề thi ĐH Khối D năm 2012] Cho hình hộp đứng $ABCD.A’B’C’D’$ có đáy là hình vuông, tam giác $A’AC$ vuông cân, $A’C=a.$ Tính khoảng cách từ điểm $A$ đến mặt phẳng $(BCD’)$ theo $a.$
 
-**Hướng dẫn.** Chú ý rằng mặt phẳng $(BCD’)$ chính là mặt phẳng $(BCD’A’)$. Đáp số, khoảng cách từ $A$ đến mặt phẳng $(BCD’)$ bằng $\frac{a\sqrt{6}}{3}$.
+**Hướng dẫn.** Chú ý rằng mặt phẳng $(BCD’)$ chính là mặt phẳng $(BCD’A’).$ Đáp số, khoảng cách từ $A$ đến mặt phẳng $(BCD’)$ bằng $\frac{a\sqrt{6}}{3}.$
 
 Khi việc tính trực tiếp gặp khó khăn, ta thường sử dụng **kĩ thuật dời điểm**, để đưa về tính khoảng cách của những điểm dễ tìm được hình chiếu vuông góc hơn.
 
-**Ví dụ 6.** Cho hình lăng trụ đứng tam giác $ABC.A’B’C’$ có đáy $ABC$ là tam giác vuông tại $A,AB=3a,AC=4a.$ Biết cạnh bên $AA’=4a$ và $M$ là trung điểm $AA’$. Hãy tính khoảng cách ${d}(M,(A’B’C))$ và ${d}(M,(A’B’C))$.
+**Ví dụ 6.** Cho hình lăng trụ đứng tam giác $ABC.A’B’C’$ có đáy $ABC$ là tam giác vuông tại $A,AB=3a,AC=4a.$ Biết cạnh bên $AA’=4a$ và $M$ là trung điểm $AA’.$ Hãy tính khoảng cách ${d}(M,(A’B’C))$ và ${d}(M,(A’B’C)).$
 
 **Ví dụ 7.** Cho hình chóp $S.ABC$ có đáy là tam giác vuông tại $B,$ $AB=3a,$ $BC=4a.$ Mặt phẳng $(SBC)$ vuông góc với mặt đáy và $SB=2a\sqrt{3},$ $\widehat{SBC}=30^\circ.$ Tính khoảng cách từ điểm $B$ tới mặt phẳng $(SAC).$
 

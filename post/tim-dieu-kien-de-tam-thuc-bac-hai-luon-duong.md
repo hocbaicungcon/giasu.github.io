@@ -23,7 +23,7 @@ Nếu bài viết hữu ích, bạn hãy tặng tôi 1 cốc cafe vào số tài
 
 ## 1. Tìm điều kiện để tam thức bậc hai luôn dương, luôn âm
 
-**Bài toán 1.** Cho [tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html) $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) >0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 1.** Cho [tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html) $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) >0$ với mọi $x$ thuộc $\mathbb{R}.$
 
 Để giải quyết bài toán trên, chúng ta cần xét hai trường hợp:
 
@@ -37,11 +37,11 @@ Nếu bài viết hữu ích, bạn hãy tặng tôi 1 cốc cafe vào số tài
 
 Tương tự, chúng ta có các bài toán sau:
 
-**Bài toán 2.** Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) <0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 2.** Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) <0$ với mọi $x$ thuộc $\mathbb{R}.$
 
 Cần xét hai trường hợp:
 
-- Kiểm tra khi $a=0$.
+- Kiểm tra khi $a=0.$
 
 - Khi $a\ne 0$, thì $f(x)>0$ với mọi $x\in \mathbb{R}$ tương đương với
 
@@ -49,7 +49,7 @@ Cần xét hai trường hợp:
   \begin{cases} a<0\\ \Delta <0 \end{cases}
   $$
 
-**Bài toán 3.** Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \ge 0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 3.** Cho $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \ge 0$ với mọi $x$ thuộc $\mathbb{R}.$
 
 Xét hai trường hợp:
 
@@ -61,7 +61,7 @@ Xét hai trường hợp:
   \begin{cases} a>0\\ \Delta \le 0 \end{cases}
   $$
 
-**Bài toán 4.** Cho hàm số $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \le 0$ với mọi $x$ thuộc $\mathbb{R}$.
+**Bài toán 4.** Cho hàm số $f(x)=ax^2 +bx+c$, tìm điều kiện của tham số $m$ để $f(x) \le 0$ với mọi $x$ thuộc $\mathbb{R}.$
 
 Để giải quyết bài toán trên, chúng ta cần xét hai trường hợp:
 
@@ -73,7 +73,7 @@ Xét hai trường hợp:
   \begin{cases} a<0\\ \Delta \le 0 \end{cases}
   $$
 
-**Ví dụ 1.** Tìm $m$ để hàm số $f(x)=3 x^{2}+ x+m+1>0$ với mọi $x\in \mathbb{R}$.
+**Ví dụ 1.** Tìm $m$ để hàm số $f(x)=3 x^{2}+ x+m+1>0$ với mọi $x\in \mathbb{R}.$
 
 **Hướng dẫn.** Hàm số $f(x)=3 x^{2}+ x+m+1>0$ với mọi $x\in \mathbb{R}$ khi và chỉ khi 
 
@@ -81,7 +81,7 @@ $$
 \begin{cases} a=3>0\\ \Delta =-12m-11<0 \end{cases}
 $$
 
- Giải hệ này, từ đó tìm được đáp số $m<\frac{-11}{12}$.
+ Giải hệ này, từ đó tìm được đáp số $m<\frac{-11}{12}.$
 
 **Ví dụ 2.**  Tìm $m$ để biểu thức sau luôn dương với mọi $x$ 
 
@@ -91,7 +91,7 @@ $$
 
 **Hướng dẫn.** Chúng ta xét hai trường hợp:
 
-- **Trường hợp 1.** $m-1=0 \Leftrightarrow m=1$. Lúc này bất phương trình $f(x)>0$ tương đương với $3 x+2>0 \Leftrightarrow x>-\frac{2}{3}$ Rõ ràng tập nghiệm này không đáp ứng được mong muốn của đề bài (đề bài yêu cầu là $f(x)>0$ với mọi $x\in R$), do đó $m=1$ không thỏa mãn yêu cầu.
+- **Trường hợp 1.** $m-1=0 \Leftrightarrow m=1.$ Lúc này bất phương trình $f(x)>0$ tương đương với $3 x+2>0 \Leftrightarrow x>-\frac{2}{3}$ Rõ ràng tập nghiệm này không đáp ứng được mong muốn của đề bài (đề bài yêu cầu là $f(x)>0$ với mọi $x\in R$), do đó $m=1$ không thỏa mãn yêu cầu.
 
 - **Trường hợp 2.**$m \neq 1$, khi đó  $f(x)>0,\,\forall x \in \mathbb{R}$ tương đương với $\begin{array}{l} & \left\{\begin{array}{l} m-1>0 \\ \Delta=4 m+5<0 \end{array}\right. \\ \Leftrightarrow& \left\{\begin{array}{l} m>1 \\ m<-\frac{5}{4} \end{array}\right. \end{array}$ Rất tiếc hệ này cũng vô nghiệm.
 
@@ -133,7 +133,7 @@ $$
 (m-1){{{x}}^{2}}+2(m-1)x+1\ge 0
 $$
 
- nghiệm đúng với $\forall x\in \mathbb{R}$.
+ nghiệm đúng với $\forall x\in \mathbb{R}.$
 
 **Hướng dẫn.** Bất phương trình nghiệm đúng với mọi $x\in \mathbb{R}$ thì cũng chính là 
 
@@ -141,7 +141,7 @@ $$
 f(x)\ge 0,\, \forall x\in \mathbb{R},
 $$
 
-  trong đó $f(x)=(m-1){{x}^{2}}+2(m-1)x+1$. Do đó, chúng ta xét hai trường hợp:
+  trong đó $f(x)=(m-1){{x}^{2}}+2(m-1)x+1.$ Do đó, chúng ta xét hai trường hợp:
 
 - **Trường hợp 1.** Khi $m=1$, bất phương trình trở thành
 
@@ -149,7 +149,7 @@ $$
   0x^2+0x+1\ge 0
   $$
 
-  Rõ ràng bất phương trình này luôn đúng với mọi $x\in \mathbb{R}$. Nên giá trị $m=1$ thỏa mãn yêu cầu.
+  Rõ ràng bất phương trình này luôn đúng với mọi $x\in \mathbb{R}.$ Nên giá trị $m=1$ thỏa mãn yêu cầu.
 
 - **Trường hợp 2.** Khi $m\ne 1$, thì $f(x)$ là tam thức bậc hai nên $f(x) \ge 0,\, \forall x\in \mathbb{R}$ khi và chỉ khi
 
@@ -159,7 +159,7 @@ $$
   \end{aligned}
   $$
 
-**Kết luận.** Kết hợp cả 2 trường hợp, chúng ta có đáp số $m\in \left[ 1;2 \right]$.
+**Kết luận.** Kết hợp cả 2 trường hợp, chúng ta có đáp số $m\in \left[ 1;2 \right].$
 
 **Ví dụ 2.** Cho hàm số $f(x)=(m-1){{x}^{2}}+2mx-3$ trong đó $m$ là tham số. Tìm tất cả giá trị của $m$ để bất phương trình $f(x)>0$ vô nghiệm.
 
@@ -191,11 +191,11 @@ $$
 
 1. Tìm tất cả các giá trị của $m$ để phương trình $f(x)=0$ nhận $x=-2$ làm nghiệm.
 
-2. Tìm tất cả các giá trị của $m$ để hàm số $y=\sqrt{f(x)}$ được xác định với mọi giá trị của $x\in \mathbb{R}$.
+2. Tìm tất cả các giá trị của $m$ để hàm số $y=\sqrt{f(x)}$ được xác định với mọi giá trị của $x\in \mathbb{R}.$
 
 **Hướng dẫn.** 
 
-1. Phương trình $f(x)=0$ nhận $x=-2$ làm nghiệm khi và chỉ khi $f(-2)=0$. Điều này tương đương với
+1. Phương trình $f(x)=0$ nhận $x=-2$ làm nghiệm khi và chỉ khi $f(-2)=0.$ Điều này tương đương với
 
 $$
 (m-2){{(-2)}^{2}}-2(2-m)(-2)+2m-1=0\Leftrightarrow m=\frac{1}{2}
@@ -217,7 +217,7 @@ $$
 
 - **Trường hợp 1:** $m-2=0\Leftrightarrow m=2$ thì (1) có dạng $3\ge 0,\forall x\in \mathbb{R}$ (luôn đúng)
 
-- **Trường hợp 2:** $m-2\ne 0\Leftrightarrow m\ne 2$. Lúc đó (1) xảy ra khi và chỉ khi:
+- **Trường hợp 2:** $m-2\ne 0\Leftrightarrow m\ne 2.$ Lúc đó (1) xảy ra khi và chỉ khi:
 
   $$
   \begin{aligned}

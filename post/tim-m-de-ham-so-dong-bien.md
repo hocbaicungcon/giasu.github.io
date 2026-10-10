@@ -22,7 +22,7 @@ $$
 y=\frac{1}{3}x^{3}-(m-1)x^{2}-(m-3)x+1
 $$
 
- đồng biến trên các khoảng $(-3;-1)$ và $(0;3)$.
+ đồng biến trên các khoảng $(-3;-1)$ và $(0;3).$
 
 **Hướng dẫn.
 - Đạo hàm của hàm số đã cho là

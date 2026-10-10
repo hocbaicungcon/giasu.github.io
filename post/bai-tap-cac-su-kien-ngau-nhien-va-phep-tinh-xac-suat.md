@@ -237,11 +237,11 @@ Tìm xác suất để lấy ngẫu nhiên một người của công ty thì đ
 
 ## 2. Công thức cộng và nhân xác suất, công thức Becnulli
 
-**Bài tập 1.21.** Cho các sự kiện $A, B$ với $P(A) = P(B) = 1/2; P(A\overline{B}) = 1/8$. Tìm:
+**Bài tập 1.21.** Cho các sự kiện $A, B$ với $P(A) = P(B) = 1/2; P(A\overline{B}) = 1/8.$ Tìm:
 
 - $P(\overline{A} + \overline{B})$;
 
-- $P(\overline{A}B), P(A + \overline{B})$.
+- $P(\overline{A}B), P(A + \overline{B}).$
 
 ![Bài tập Các sự kiện ngẫu nhiên và phép tính xác suất 16](assets/images/bai-tap-cac-su-kien-ngau-nhien-va-phep-tinh-xac-suat-image-32.png)
 
@@ -259,9 +259,9 @@ Tìm xác suất để lấy ngẫu nhiên một người của công ty thì đ
 
 - $P(C|A\overline{B}) = 0{,}8$,
 
-- $P(CAB) = 0, 9$.
+- $P(CAB) = 0, 9.$
 
-Tính $P(ABC), P(\overline{B}C), P(C), P(A|\overline{B}C)$.
+Tính $P(ABC), P(\overline{B}C), P(C), P(A|\overline{B}C).$
 
 ![Bài tập Các sự kiện ngẫu nhiên và phép tính xác suất 17](assets/images/bai-tap-cac-su-kien-ngau-nhien-va-phep-tinh-xac-suat-image-33.png)
 

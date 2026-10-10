@@ -36,11 +36,11 @@ Xem thêm: [120 BÀI TOÁN THI VIOLYMPIC  LỚP 5](/bai-viet/120-bai-toan-thi-
 
 ## 2. Một số bài toán giải bằng phương pháp tính ngược
 
-**Ví dụ 1.** Tìm một số, biết rằng tăng số đó gấp đôi, sau đó cộng với $16$ rồi bớt đi $4$ và cuối cùng chia cho $3$ ta được kết quả bằng $12$.
+**Ví dụ 1.** Tìm một số, biết rằng tăng số đó gấp đôi, sau đó cộng với $16$ rồi bớt đi $4$ và cuối cùng chia cho $3$ ta được kết quả bằng $12.$
 
 **Phân tích:** Trong bài này ta đã thực hiện liên tiếp đối với dãy số cần tìm dãy các phép tính dưới đây:
 
-$\times 2$, $+ 16$, $- 4$, $: 3$ cho kết quả cuối cùng bằng $12$.
+$\times 2$, $+ 16$, $- 4$, $: 3$ cho kết quả cuối cùng bằng $12.$
 
 Như vậy, chúng ta sẽ lấy kết quả cuối cùng là $12$ và lần lượt thực hiện từ cuối lên các phép tính ngược với các phép tính trên:
 
@@ -65,9 +65,9 @@ Số cần tìm là:
 
 $24 : 2 = 12$
 
-Đáp số: Số cần tìm là $12$.
+Đáp số: Số cần tìm là $12.$
 
-**Ví dụ 2.** Tìm một số biết rằng số đó lần lượt cộng với $1$ rồi nhân với $2$, được bao nhiêu đem chia cho $3$ rồi trừ đi $4$ thì được $5$.
+**Ví dụ 2.** Tìm một số biết rằng số đó lần lượt cộng với $1$ rồi nhân với $2$, được bao nhiêu đem chia cho $3$ rồi trừ đi $4$ thì được $5.$
 
  
 
@@ -98,7 +98,7 @@ $13{,}5-1=12{,}5$
 
 **Ví dụ 3.** Hằng có một số tem thư, Hằng đã cho bạn $\frac{1}{2}$ số tem đó và thêm $1$ cái nữa thì còn lại $9$ cái. Hỏi lúc đầu Hằng có bao nhiêu tem thư?
 
-**Phân tích.** Ta có thể hiểu bài toán này như sau: Tìm một số biết rằng số đó chia cho $2$ rồi trừ $1$ thì được kết quả là $9$.
+**Phân tích.** Ta có thể hiểu bài toán này như sau: Tìm một số biết rằng số đó chia cho $2$ rồi trừ $1$ thì được kết quả là $9.$
 
 **Lời giải.** Nếu không cho bạn thêm một cái nữa thì số tem thư Hằng có là:
 
@@ -119,7 +119,7 @@ Vậy lúc đầu Hằng có $20$ tem thư.
 
 - Bán $\frac{3}{4}$ số gà thì còn lại $\frac{1}{4}$ số gà.
 
-Do đó, bài toán tương đương với việc: Tìm một số biết đem số đó nhân với $\frac{1}{3}$ rồi nhân với $\frac{1}{4}$ và trừ đi $\frac{1}{4}$ thì được kết quả là $6$. Các phép tính đã thực hiện là
+Do đó, bài toán tương đương với việc: Tìm một số biết đem số đó nhân với $\frac{1}{3}$ rồi nhân với $\frac{1}{4}$ và trừ đi $\frac{1}{4}$ thì được kết quả là $6.$ Các phép tính đã thực hiện là
 
 $\times \frac{1}{3}$, $\times \frac{1}{4}$, $-\frac{1}{4}$
 
@@ -141,7 +141,7 @@ $25\times 3 = 75$ con.
 
 Hỏi dì Út đã bán tất cả bao nhiêu quả trứng?
 
-**Phân tích.** Bài toán tương đương với: Tìm một sốbiết rằng đem số đó chia cho $2$, trừ $1$, chia $2$, trừ $2$, chia $2$, trừ $3$ thì được kết quả bằng $0$.
+**Phân tích.** Bài toán tương đương với: Tìm một sốbiết rằng đem số đó chia cho $2$, trừ $1$, chia $2$, trừ $2$, chia $2$, trừ $3$ thì được kết quả bằng $0.$
 
 **Lời giải.
 Lần thứ ba, dì Út bán một nửa số trứng và $3$ quả thì vừa hết, chứng tỏ $3$ quả trứng tương ứng với một nửa số trứng của lần bán đó.

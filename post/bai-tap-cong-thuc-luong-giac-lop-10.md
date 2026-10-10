@@ -151,7 +151,7 @@ grade: 10
 
 25. $2left(dfrac{1}{sin 2 x}+cot 2 xright)=cot dfrac{x}{2}-tan dfrac{x}{2}$
 
-### Bài tập 3. Chứng minh các biểu thức sau độc lập đối với biến $x$.
+### Bài tập 3. Chứng minh các biểu thức sau độc lập đối với biến $x.$
 
 1. $sin ^{2} x+cos left(dfrac{pi}{3}-xright) cos left(dfrac{pi}{3}+xright)$
 
@@ -189,16 +189,16 @@ grade: 10
 
 ### Bài tập 4. Tính giá trị lượng giác của các biểu thức sau:
 
-1. $cos xleft(x+dfrac{pi}{3}right)$ biết $sin x=dfrac{1}{sqrt{3}}$ và $0<x<dfrac{pi}{2}$.
+1. $cos xleft(x+dfrac{pi}{3}right)$ biết $sin x=dfrac{1}{sqrt{3}}$ và $0<x<dfrac{pi}{2}.$
 
-2. $sin left(dfrac{pi}{3}-xright)$ biết $cos x=-dfrac{12}{13}$ và $pi<x<dfrac{3 pi}{2}$.
+2. $sin left(dfrac{pi}{3}-xright)$ biết $cos x=-dfrac{12}{13}$ và $pi<x<dfrac{3 pi}{2}.$
 
-3. $cos left(x-30^{0}right)$ biết $tan x=sqrt{2}$ và $0<x<90^{0}$.
+3. $cos left(x-30^{0}right)$ biết $tan x=sqrt{2}$ và $0<x<90^{0}.$
 
-4. $sin left(2 x+dfrac{7 pi}{4}right)$ biết $cot x=dfrac{2}{3}$.
+4. $sin left(2 x+dfrac{7 pi}{4}right)$ biết $cot x=dfrac{2}{3}.$
 
-5. $sin 2 x, cos 2 x$ khi $sin x=dfrac{3}{5}, dfrac{pi}{2}<x<pi$.
+5. $sin 2 x, cos 2 x$ khi $sin x=dfrac{3}{5}, dfrac{pi}{2}<x<pi.$
 
-6. $sin 2 x, cos 2 x$ khi $sin x+cos x=sqrt{2}$.
+6. $sin 2 x, cos 2 x$ khi $sin x+cos x=sqrt{2}.$
 
-7. $cos 2 x, sin 2 x, tan 2 x$ biết rằng $tan x=2$.
+7. $cos 2 x, sin 2 x, tan 2 x$ biết rằng $tan x=2.$

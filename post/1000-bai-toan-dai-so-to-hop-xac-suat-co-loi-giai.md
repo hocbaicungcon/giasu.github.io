@@ -52,7 +52,7 @@ $$
 
 Theo quy tắc nhân, có tất cả $24\cdot 24=576$ cách.
 
-**Câu 3.** [SGD Thanh Hóa 2019] Gọi $S$ là tập hợp tất cả các số tự nhiên có bốn chữ số đôi một khác nhau được chọn từ các chữ số$1,2,3,4,5,6,7,8,9.$ Lấy ngẫu nhiên một số thuộc $S$. Tính xác suất để lấy được một số chia hết cho $11$ và tổng bốn chữ số của nó cũng chia hết cho $11$.
+**Câu 3.** [SGD Thanh Hóa 2019] Gọi $S$ là tập hợp tất cả các số tự nhiên có bốn chữ số đôi một khác nhau được chọn từ các chữ số$1,2,3,4,5,6,7,8,9.$ Lấy ngẫu nhiên một số thuộc $S.$ Tính xác suất để lấy được một số chia hết cho $11$ và tổng bốn chữ số của nó cũng chia hết cho $11.$
 
 **Hướng dẫn.** Không gian mẫu có $\mathrm{A}^4_9=3024$ phần tử. Giả sử số cần lập là $\overline{abcd}$ thì ta có 
 
@@ -63,11 +63,11 @@ $$
 \end{aligned}
 $$
 
- Chú ý rằng $\left(1001a+99b+11c\right)$ chia hết cho $11$ nên $\overline{abcd}$ chia hết cho $11$ khi và chỉ khi $\left(-a+b-c+d\right)$ phải chia hết cho $11$.
+ Chú ý rằng $\left(1001a+99b+11c\right)$ chia hết cho $11$ nên $\overline{abcd}$ chia hết cho $11$ khi và chỉ khi $\left(-a+b-c+d\right)$ phải chia hết cho $11.$
 
-Nhưng theo giả thiết thì $a+b+c+d$ cũng chia hết cho $11$. Từ đây suy ra cả $a+c$ và $b+d$ cùng chia hết cho $11.$
+Nhưng theo giả thiết thì $a+b+c+d$ cũng chia hết cho $11.$ Từ đây suy ra cả $a+c$ và $b+d$ cùng chia hết cho $11.$
 
-Mà, các cặp có tổng chia hết cho $11$ là $(2 ; 9),(3 ; 8),(4 ; 7) ;(5 ; 6)$. Suy ra, số phần tử thuận lợi là 
+Mà, các cặp có tổng chia hết cho $11$ là $(2 ; 9),(3 ; 8),(4 ; 7) ;(5 ; 6).$ Suy ra, số phần tử thuận lợi là 
 
 $$
 n(A)=4 \cdot 3 \cdot 2 ! \cdot 2 !=48
@@ -87,7 +87,7 @@ $$
 
 **Câu 5.** Từ các chữ số $0,1,2,3,4,5,6,7$ có thể lập được bao nhiêu nhiêu số tự nhiên có 5 chữ số dạng $\overline{{a_1}{a_2}{a_3}{a_4}{a_5}}$ sao cho $a_1<a_2<a_3<a_4<a_5.$
 
-**Hướng dẫn.** Nhận xét rằng $a_1$ phải là số bé nhất và khác $0,$ nên bài toán tương đương với việc lập số từ tập gồm $7$ chữ số $1,2,3,4,5,6,7$. Với mỗi cách lấy ra $5$ chữ số bất kì từ $7$ chữ số đã cho, chúng ta chỉ có duy nhất một cách sắp xếp chúng theo thứ tự từ nhỏ đến lớn, tức là không tính các hoán vị của $5$ chữ số này. Đương nhiên, mỗi cách sắp xếp đó ta thu được một số thỏa mãn yêu cầu. Do đó, có tất cả 
+**Hướng dẫn.** Nhận xét rằng $a_1$ phải là số bé nhất và khác $0,$ nên bài toán tương đương với việc lập số từ tập gồm $7$ chữ số $1,2,3,4,5,6,7.$ Với mỗi cách lấy ra $5$ chữ số bất kì từ $7$ chữ số đã cho, chúng ta chỉ có duy nhất một cách sắp xếp chúng theo thứ tự từ nhỏ đến lớn, tức là không tính các hoán vị của $5$ chữ số này. Đương nhiên, mỗi cách sắp xếp đó ta thu được một số thỏa mãn yêu cầu. Do đó, có tất cả 
 
 $$
 \mathrm{C}^5_7=21
@@ -95,7 +95,7 @@ $$
 
  số tự nhiên thỏa mãn yêu cầu.
 
-**Câu 6.** [Chuyên Thái Nguyên Lần 1 năm 2019] Gọi $S$ là tập hợp các số tự nhiên có ba chữ số, các chữ số không nhất thiết khác nhau, được lập từ các chữ số $0; 1; 2; 3; 4; 5; 6; 7; 8; 9$. Chọn ngẫu nhiên một số $\overline{abc}$ từ $S$. Tính xác suất để số được chọn thỏa mãn $a \leqslant b \leqslant c.$
+**Câu 6.** [Chuyên Thái Nguyên Lần 1 năm 2019] Gọi $S$ là tập hợp các số tự nhiên có ba chữ số, các chữ số không nhất thiết khác nhau, được lập từ các chữ số $0; 1; 2; 3; 4; 5; 6; 7; 8; 9.$ Chọn ngẫu nhiên một số $\overline{abc}$ từ $S.$ Tính xác suất để số được chọn thỏa mãn $a \leqslant b \leqslant c.$
 
 **Hướng dẫn.** Tập $S$ gồm các số từ $100$ đến $999$ nên có $900$ phần tử. Phép thử là chọn một số tự nhiên từ tập $S$ nên số phần tử của không gian mẫu là 
 
@@ -113,7 +113,7 @@ $$
 
 Bài tập trên cũng có thể làm bằng cách chia bốn trường hợp, $a<b<c, a=b<c, a<b=c$ và $a=b=c.$
 
-**Câu 7.** [Chuyên Vĩnh Phúc — L3 2019] Chọn ngẫu nhiên một số tự nhiên có $4$ chữ số. Tính xác suất để số được chọn có dạng $\overline{abcd}$, trong đó $1 \leqslant a \leqslant b \leqslant c \leqslant d \leqslant 9$.
+**Câu 7.** [Chuyên Vĩnh Phúc — L3 2019] Chọn ngẫu nhiên một số tự nhiên có $4$ chữ số. Tính xác suất để số được chọn có dạng $\overline{abcd}$, trong đó $1 \leqslant a \leqslant b \leqslant c \leqslant d \leqslant 9.$
 
 **Hướng dẫn.** Có tất cả $9000$ số tự nhiên có bốn chữ số. Phép thử là “chọn một số tự nhiên từ $9000$ số tự nhiên có bốn chữ số”, nên số phần tử của không gian mẫu là 
 
@@ -161,7 +161,7 @@ $$
 
  Xác suất cần tìm là $\mathrm{P}(A)=\frac{143}{10000}.$
 
-**Câu 9.** [Chuyên Quang Trung — Bình Phước 2018] Cho $A$ là tập hợp gồm các số tự nhiên có $9$ chữ số đôi một khác nhau. Chọn ngẫu nhiên một số từ tập $A$. Tính xác suất để số được chọn có các chữ số $0; 1; 2; 3; 4$ mà các chữ số $1; 2; 3; 4$ sắp theo thứ tự tăng dần.
+**Câu 9.** [Chuyên Quang Trung — Bình Phước 2018] Cho $A$ là tập hợp gồm các số tự nhiên có $9$ chữ số đôi một khác nhau. Chọn ngẫu nhiên một số từ tập $A.$ Tính xác suất để số được chọn có các chữ số $0; 1; 2; 3; 4$ mà các chữ số $1; 2; 3; 4$ sắp theo thứ tự tăng dần.
 
 **Hướng dẫn.** Tập $A$ có tất cả $9\cdot \mathrm{A}^8_9=3265920$ số. Phép thử là “chọn ngẫu nhiên một số từ $2903040$ số của tập $A$”, nên số phần tử của không gian mẫu là 
 
@@ -187,17 +187,17 @@ $$
 
  Xác suất cần tìm là $\mathrm{P}=\frac{67200}{3265920}=\frac{5}{243}.$
 
-**Câu 10.** [Cụm trường chuyên đồng bằng sông Hồng L1 2019] Có bao nhiêu số tự nhiên chẵn có $5$ chữ số đôi một khác nhau, sao cho mỗi số đó nhất thiết phải có mặt chữ số $0$.
+**Câu 10.** [Cụm trường chuyên đồng bằng sông Hồng L1 2019] Có bao nhiêu số tự nhiên chẵn có $5$ chữ số đôi một khác nhau, sao cho mỗi số đó nhất thiết phải có mặt chữ số $0.$
 
-**Hướng dẫn.** Gọi số tự nhiên cần lập là $\overline{abcde}$ trong đó $a\ne0,e$ chẵn và phải có mặt chữ số $0$. Ta xét hai trường hợp:
+**Hướng dẫn.** Gọi số tự nhiên cần lập là $\overline{abcde}$ trong đó $a\ne0,e$ chẵn và phải có mặt chữ số $0.$ Ta xét hai trường hợp:
 
 - Nếu $e=0$ thì $e$ chỉ có một cách chọn. Tiếp theo ta chọn 4 chữ số từ 9 chữ số $1,2,\dots,9$ và sắp xếp vào bốn vị trí còn lại, có $\mathrm{A}^4_9$ cách. Trường hợp này có tất cả $1\cdot \mathrm{A}^4_9=3024$ số.
 
-- Nếu $e\ne 0$ thì $e$ có 4 cách chọn, từ các chữ số $2,4,6,8$. Tiếp theo, ta chọn vị trí cho chữ số $0$, có 3 cách vì không thể ở vị trí của $a$ hoặc $e$. Cuối cùng, ta chọn 3 chữ số từ 8 chữ số còn lại và sắp xếp vào ba vị trí còn lại, có $\mathrm{A}^3_8$ cách. Trường hợp này có tất cả $4\cdot 3\cdot \mathrm{A}^3_8= 4032$ số.
+- Nếu $e\ne 0$ thì $e$ có 4 cách chọn, từ các chữ số $2,4,6,8.$ Tiếp theo, ta chọn vị trí cho chữ số $0$, có 3 cách vì không thể ở vị trí của $a$ hoặc $e.$ Cuối cùng, ta chọn 3 chữ số từ 8 chữ số còn lại và sắp xếp vào ba vị trí còn lại, có $\mathrm{A}^3_8$ cách. Trường hợp này có tất cả $4\cdot 3\cdot \mathrm{A}^3_8= 4032$ số.
 
 Theo quy tắc cộng, có tất cả $3024+4032=7056$ số tự nhiên thỏa mãn yêu cầu.
 
-**Câu 11.** [Nguyễn Thị Minh Khai — Hà Tĩnh L1 2019] Gọi $S$ là tập hợp các số tự nhiên có chín chữ số được lập từ các chữ số $1,2,3,4,5$. Lấy ngẫu nhiên một số từ tập $S$. Tính xác suất để lây được số thỏa mãn điều kiện: các chữ số $1,2,3,4$ có mặt đúng hai lần; chữ số $5$ có mặt đúng một lần và các chữ số lẻ nằm ở vị trí lẻ, tính từ trái qua phải.
+**Câu 11.** [Nguyễn Thị Minh Khai — Hà Tĩnh L1 2019] Gọi $S$ là tập hợp các số tự nhiên có chín chữ số được lập từ các chữ số $1,2,3,4,5.$ Lấy ngẫu nhiên một số từ tập $S.$ Tính xác suất để lây được số thỏa mãn điều kiện: các chữ số $1,2,3,4$ có mặt đúng hai lần; chữ số $5$ có mặt đúng một lần và các chữ số lẻ nằm ở vị trí lẻ, tính từ trái qua phải.
 
 **Hướng dẫn.** Tập $S$ có tất cả $5^9=1953125$ phần tử. Số phần tử của không gian mẫu là 
 
@@ -207,7 +207,7 @@ $$
 
  Gọi $A$ là biến cố lấy được số thỏa mãn yêu cầu. Để biến cố $A$ xảy ra chúng ta thực hiện các bước sau:
 
-- Chọn vị trí cho chữ số $5$, vì $5$ là số lẻ nên chỉ có thể chọn các vị trí thứ nhất, thứ ba, thứ năm, thứ bảy và thứ chín. Tóm lại, có $5$ cách chọn vị trí cho chữ số $5$.
+- Chọn vị trí cho chữ số $5$, vì $5$ là số lẻ nên chỉ có thể chọn các vị trí thứ nhất, thứ ba, thứ năm, thứ bảy và thứ chín. Tóm lại, có $5$ cách chọn vị trí cho chữ số $5.$
 
 - Sắp xếp hai chữ số $1$ và hai chữ số $3$ vào bốn vị trí lẻ còn lại, số cách sắp xếp là
 
@@ -237,9 +237,9 @@ $$
 
 **Hướng dẫn.** Nhận xét rằng hai số hơn kém nhau $1$ đơn vị thì tính chẵn lẻ đối lập nhau. Trong ba chữ số $1,2,3$ thì chỉ có $2$ là số chẵn. Do đó, gọi các số thỏa mãn điều kiện đề bài có dạng $\overline{a_1a_2a_3…a_{10}}$ thì ta xét hai trường hợp:
 
-- Chữ số $2$ chiếm các vị trí chẵn $a_2,a_4,…,a_{10}$. Lúc này, điền các chữ số $1$ hoặc $3$ vào các vị trí lẻ thì có $2^5=32$ cách, nên có tất cả $32$ số.
+- Chữ số $2$ chiếm các vị trí chẵn $a_2,a_4,…,a_{10}.$ Lúc này, điền các chữ số $1$ hoặc $3$ vào các vị trí lẻ thì có $2^5=32$ cách, nên có tất cả $32$ số.
 
-- Chữ số $2$ chiếm các vị trí lẻ $a_1,a_3,…,a_9$. Và, ta viết các chữ số $1$ hoặc $3$ vào các vị trí chẵn thì có $2^5=32$ cách, nên có tất cả $32$ số.
+- Chữ số $2$ chiếm các vị trí lẻ $a_1,a_3,…,a_9.$ Và, ta viết các chữ số $1$ hoặc $3$ vào các vị trí chẵn thì có $2^5=32$ cách, nên có tất cả $32$ số.
 
 Theo quy tắc cộng, có tất cả $64$ số thỏa mãn điều kiện đề bài.
 
@@ -314,7 +314,7 @@ $$
 |\Omega|=\mathrm{C}^4_{11}=330.
 $$
 
- Trong $11$ tấm thẻ, có $6$ ghi số lẻ là $\{1,3,5,7,9,11\}$ và $5$ thẻ ghi số chẵn là $\{2,4,6,8,10\}$.
+ Trong $11$ tấm thẻ, có $6$ ghi số lẻ là $\{1,3,5,7,9,11\}$ và $5$ thẻ ghi số chẵn là $\{2,4,6,8,10\}.$
 
 Để tổng các số ghi trên 4 tấm thẻ ấy là một số lẻ thì ta có các trường hợp sau:
 
@@ -336,7 +336,7 @@ $$
 60+100=160
 $$
 
- Xác suất cần tìm là $\mathrm{P}=\frac{160}{330}=\frac{16}{33}$.
+ Xác suất cần tìm là $\mathrm{P}=\frac{160}{330}=\frac{16}{33}.$
 
 **Câu 17.** [THTT 2/2019] Tại Giải vô địch bóng đá AFF Suzuki Cup 2019 có 10 đội tuyển tham dự, trong đó có đội tuyển Việt Nam và đội tuyển Malaysia. Ở vòng bảng, Ban tổ chức chia ngẫu nhiên 10 đội thành 2 bảng, bảng A và bảng B, mỗi bảng có 5 đội. Giả sử khả năng xếp mỗi đội vào mỗi bảng là như nhau. Tính xác suất đề đội tuyển Việt Nam và đội tuyển Malaysia được xếp trong cùng một bảng.
 
@@ -372,7 +372,7 @@ $$
 
 - Xếp bốn đội còn lại vào bảng thứ hai, có 1 cách duy nhất.
 
-Như vậy, số phần tử thuận lợi của không gian mẫu là $40\cdot 1=40$. Xác suất cần tìm là 
+Như vậy, số phần tử thuận lợi của không gian mẫu là $40\cdot 1=40.$ Xác suất cần tìm là 
 
 $$
 \mathrm{P}=\frac{40}{70}=\frac{4}{7}.
@@ -450,7 +450,7 @@ Do đó, không gian mẫu có $\mathrm{C}^7_{10} \cdot \mathrm{C}^7_{12}\cdot 7
 
 - Chọn ra 1 đôi là vợ chồng trong 2 cặp vợ chồng, có $\mathrm{C}^1_2$ cách.
 
-- Chọn ra 6 đôi từ 9 nam và 11 nữ còn lại, có $\mathrm{C}^6_{9} \cdot \mathrm{C}^6_{11}\cdot 6!$. Nhưng trong số những cách này đã bao gồm cả những cách có cả hai đôi là vợ chồng, do đó phải trừ đi $\mathrm{C}^1_1\cdot \mathrm{C}^5_{8} \cdot \mathrm{C}^5_{10}\cdot 5!$. Như vậy, bước này có $\mathrm{C}^6_{9} \cdot \mathrm{C}^6_{11}\cdot 6! – C^1_1\cdot \mathrm{C}^5_{8} \cdot \mathrm{C}^5_{10}\cdot 5!$ cách.
+- Chọn ra 6 đôi từ 9 nam và 11 nữ còn lại, có $\mathrm{C}^6_{9} \cdot \mathrm{C}^6_{11}\cdot 6!.$ Nhưng trong số những cách này đã bao gồm cả những cách có cả hai đôi là vợ chồng, do đó phải trừ đi $\mathrm{C}^1_1\cdot \mathrm{C}^5_{8} \cdot \mathrm{C}^5_{10}\cdot 5!.$ Như vậy, bước này có $\mathrm{C}^6_{9} \cdot \mathrm{C}^6_{11}\cdot 6! – C^1_1\cdot \mathrm{C}^5_{8} \cdot \mathrm{C}^5_{10}\cdot 5!$ cách.
 
 Theo quy tắc nhân, có tất cả 
 
@@ -466,9 +466,9 @@ $$
 
 **Câu 22.** [Lương Thế Vinh — HN L1 2019] Cho đa giác đều có $2018$ đỉnh. Hỏi có bao nhiêu hình chữ nhật có $4$ đỉnh là các đỉnh của đa giác đã cho?
 
-**Hướng dẫn.** Vì đa giác đều nên có tâm đường tròn ngoại tiếp, giả sử là tâm $O$, nó có $2018$ đỉnh thì có $1009$ đường chéo đi qua $O$. Cứ $2$ trong số $1009$ đường chéo này thì sẽ tạo thành một hình chữ nhật, đo đó có tất cả $\mathrm{C}^2_{1009}$ hình chữ nhật.
+**Hướng dẫn.** Vì đa giác đều nên có tâm đường tròn ngoại tiếp, giả sử là tâm $O$, nó có $2018$ đỉnh thì có $1009$ đường chéo đi qua $O.$ Cứ $2$ trong số $1009$ đường chéo này thì sẽ tạo thành một hình chữ nhật, đo đó có tất cả $\mathrm{C}^2_{1009}$ hình chữ nhật.
 
-**Câu 23.** Cho đa giác đều $54$ cạnh. Gọi $S$ là tập hợp các tứ giác tạo thành có 4 đỉnh lấy từ các đỉnh của đa giác đều. Chọn ngẫu nhiên một phần tử của $S$. Xác suất để chọn được một hình chữ nhật là bao nhiêu?
+**Câu 23.** Cho đa giác đều $54$ cạnh. Gọi $S$ là tập hợp các tứ giác tạo thành có 4 đỉnh lấy từ các đỉnh của đa giác đều. Chọn ngẫu nhiên một phần tử của $S.$ Xác suất để chọn được một hình chữ nhật là bao nhiêu?
 
 **Hướng dẫn.** Đa giác đều có $54$ cạnh thì có $54$ đỉnh. Mỗi tứ giác có 4 đỉnh lấy từ các đỉnh của đa giác đều là một tổ hợp chập 4 của 54 phần tử, nên số phần tử của tập $S$ là 
 
@@ -482,7 +482,7 @@ $$
 |\Omega|=\mathrm{C}^1_{316251}=316251.
 $$
 
- Gọi $A$ là biến cố “chọn được một hình chữ nhật”. Vì đa giác đều nên có tâm đường tròn ngoại tiếp, giả sử là tâm $O$, nó có $54$ đỉnh thì có $27$ đường chéo đi qua $O$. Cứ $2$ trong số $27$ đường chéo này thì sẽ tạo thành một hình chữ nhật, đo đó số phần tử thuận lợi là 
+ Gọi $A$ là biến cố “chọn được một hình chữ nhật”. Vì đa giác đều nên có tâm đường tròn ngoại tiếp, giả sử là tâm $O$, nó có $54$ đỉnh thì có $27$ đường chéo đi qua $O.$ Cứ $2$ trong số $27$ đường chéo này thì sẽ tạo thành một hình chữ nhật, đo đó số phần tử thuận lợi là 
 
 $$
 |A|=\mathrm{C}^2_{27}=351
@@ -494,7 +494,7 @@ $$
 
 **Hướng dẫn.** Mỗi tứ giác được tạo thành bằng cách chọn 4 đỉnh trên 4 cạnh. Số cách chọn một đỉnh trên một cạnh là $(n-1)$ nên có tất cả $a=(n-1)^4$ tứ giác.
 
-Dễ thấy rằng nếu tứ giác $MNPQ$ là hình bình hành thì $M$ và $P,N$ và $Q$ đối xứng nhau qua tâm của hình vuông. Nên ta chỉ cần chọn đỉnh $M$ rồi lấy đối xứng qua tâm hình vuông thì được đỉnh $P$, chọn đỉnh $N$ rồi lấy đối xứng qua tâm hình vuông được đỉnh $Q$. Suy ra một hình bình hành được hoàn toàn xác định bằng cách chọn 2 đỉnh liên tiếp trên hai cạnh liên tiếp của hình vuông. Nên có tất cả $b=(n-1)^2$ hình bình hành.
+Dễ thấy rằng nếu tứ giác $MNPQ$ là hình bình hành thì $M$ và $P,N$ và $Q$ đối xứng nhau qua tâm của hình vuông. Nên ta chỉ cần chọn đỉnh $M$ rồi lấy đối xứng qua tâm hình vuông thì được đỉnh $P$, chọn đỉnh $N$ rồi lấy đối xứng qua tâm hình vuông được đỉnh $Q.$ Suy ra một hình bình hành được hoàn toàn xác định bằng cách chọn 2 đỉnh liên tiếp trên hai cạnh liên tiếp của hình vuông. Nên có tất cả $b=(n-1)^2$ hình bình hành.
 
 Do đó, yêu cầu bài toán tương đương với tìm số tự nhiên $n$ thỏa mãn 
 
@@ -504,9 +504,9 @@ $$
 
  Giải phương trình này tìm được đáp số $n=4.$
 
-**Câu 25.** [Nguyễn Thị Minh Khai — Hà Tĩnh L1 2019] Cho một đa giác đều $10$ cạnh nội tiếp đường tròn $(O)$. Hỏi có bao nhiêu hình thang cân có bốn đỉnh là đỉnh của đa giác đều đó?
+**Câu 25.** [Nguyễn Thị Minh Khai — Hà Tĩnh L1 2019] Cho một đa giác đều $10$ cạnh nội tiếp đường tròn $(O).$ Hỏi có bao nhiêu hình thang cân có bốn đỉnh là đỉnh của đa giác đều đó?
 
-**Hướng dẫn.** Đa giác đều có $10$ cạnh nên có $5$ đường chéo đi qua tâm $O$. Mỗi hình thang cân có bốn đỉnh là đỉnh của đa giác đều đó thì đều có trục đối xứng. Ta xét hai trường hợp:
+**Hướng dẫn.** Đa giác đều có $10$ cạnh nên có $5$ đường chéo đi qua tâm $O.$ Mỗi hình thang cân có bốn đỉnh là đỉnh của đa giác đều đó thì đều có trục đối xứng. Ta xét hai trường hợp:
 
 - Trục đối xứng của hình thang cân là một trong 5 đường chéo đi qua tâm nói trên. Xét một đường kính bất kì, chẳng hạn $A_1A_6$, thì số hình thang nhận $A_1A_6$ làm trục đối xứng là
 
@@ -528,9 +528,9 @@ $$
 30+50-\mathrm{C}^2_5=70
 $$
 
-**Câu 26.** Gọi $A$ là tập hợp các số tự nhiên có chín chữ số đôi một khác nhau. Chọn ngẫu nhiên một số tự nhiên thuộc vào tập $A$. Tính xác suất để chọn được một số thuộc $A$ và số đó chia hết cho $3$.
+**Câu 26.** Gọi $A$ là tập hợp các số tự nhiên có chín chữ số đôi một khác nhau. Chọn ngẫu nhiên một số tự nhiên thuộc vào tập $A.$ Tính xác suất để chọn được một số thuộc $A$ và số đó chia hết cho $3.$
 
-**Hướng dẫn.**  Trước tiên, ta tính số phần tử của tập hợp $A$. Với số tự nhiên có chín chữ số đôi một khác nhau thì chữ số đầu tiên có $9$ cách chọn và có $\mathrm{A}_9^8$ cách sắp xếp cho tám vị trí còn lại. Do đó, số phần tử của tập hợp $A$ là
+**Hướng dẫn.**  Trước tiên, ta tính số phần tử của tập hợp $A.$ Với số tự nhiên có chín chữ số đôi một khác nhau thì chữ số đầu tiên có $9$ cách chọn và có $\mathrm{A}_9^8$ cách sắp xếp cho tám vị trí còn lại. Do đó, số phần tử của tập hợp $A$ là
 
 $$
 |A| = 9\cdot\mathrm{A}_9^8=3265920.
@@ -542,13 +542,13 @@ $$
 |\Omega|=\mathrm{C}^1_{3265920}=3265920.
 $$
 
- Giả sử $B = \{0;1;2; \ldots ;9\}$. Ta thấy tổng các phần tử của $B$ bằng $45 \mathrel{\vdots} 3$ nên số có chín chữ số đôi một khác nhau và chia hết cho $3$ sẽ được tạo thành từ chín chữ số của các tập $B \setminus \{0\}$, $B \setminus \{3\}$, $B \setminus \{6\}$, $B \setminus \{9\}$. Do đó, số phần tử thuận lợi là 
+ Giả sử $B = \{0;1;2; \ldots ;9\}.$ Ta thấy tổng các phần tử của $B$ bằng $45 \mathrel{\vdots} 3$ nên số có chín chữ số đôi một khác nhau và chia hết cho $3$ sẽ được tạo thành từ chín chữ số của các tập $B \setminus \{0\}$, $B \setminus \{3\}$, $B \setminus \{6\}$, $B \setminus \{9\}.$ Do đó, số phần tử thuận lợi là 
 
 $$
 9! + 3\cdot 8 \mathrm{A}_8^8.
 $$
 
- Xác suất cần tìm là $\mathrm{P} = \frac{9! + 3 \cdot 8 \mathrm{A}_8^8}{9\mathrm{A}_9^8} = \frac{11}{27}$.
+ Xác suất cần tìm là $\mathrm{P} = \frac{9! + 3 \cdot 8 \mathrm{A}_8^8}{9\mathrm{A}_9^8} = \frac{11}{27}.$
 
 **Câu 27.** [Hải Hậu A — Nam Định L1 2019] Có bao nhiêu cách chia hết $4$ chiếc bánh khác nhau cho 3 em nhỏ, biết rằng mỗi em nhận được ít nhất $1$ chiếc.
 
@@ -564,7 +564,7 @@ $$
 
 Theo quy tắc cộng, có tất cả $36$ cách chia bánh thỏa mãn yêu cầu.
 
-**Câu 28.** [Cù Huy Cận — Hà Tĩnh L1 2019] Một lớp có 36 ghế đơn được xếp thành hình vuông $6\times 6$. Giáo viên muốn xếp 36 học sinh, trong đó có hai anh em là Kỷ và Hợi. Tính xác suất để hai anh em Kỷ và Hợi luôn được ngồi cạnh nhau theo chiều dọc hoặc ngang.
+**Câu 28.** [Cù Huy Cận — Hà Tĩnh L1 2019] Một lớp có 36 ghế đơn được xếp thành hình vuông $6\times 6.$ Giáo viên muốn xếp 36 học sinh, trong đó có hai anh em là Kỷ và Hợi. Tính xác suất để hai anh em Kỷ và Hợi luôn được ngồi cạnh nhau theo chiều dọc hoặc ngang.
 
 **Hướng dẫn.** Mỗi một cách sắp xếp chỗ ngồi cho $36$ học sinh là một hoán vị của tập gồm $36$ phần tử, nên không gian mẫu có $36!$ phần tử.
 
@@ -712,9 +712,9 @@ $$
 \mathrm{P}=1-\frac{2!\cdot 11!}{12!}=\frac{1}{6}
 $$
 
-**Câu 35.** Cho $S=\{1,2,3,4,5,6\}$. Lấy ngẫu nhiên một số tự nhiên có 5 chữ số được lập từ các chữ số thuộc $S$. Tính xác suất để lấy được số mà chỉ có đúng 3 chữ số khác nhau.
+**Câu 35.** Cho $S=\{1,2,3,4,5,6\}.$ Lấy ngẫu nhiên một số tự nhiên có 5 chữ số được lập từ các chữ số thuộc $S.$ Tính xác suất để lấy được số mà chỉ có đúng 3 chữ số khác nhau.
 
-**Hướng dẫn.** Có tất cả $6^5=7776$ số tự nhiên có 5 chữ số được lập từ tập $S$. Lấy ngẫu nhiên một số trong $7776$ số này, nên số phần tử của không gian mẫu là 
+**Hướng dẫn.** Có tất cả $6^5=7776$ số tự nhiên có 5 chữ số được lập từ tập $S.$ Lấy ngẫu nhiên một số trong $7776$ số này, nên số phần tử của không gian mẫu là 
 
 $$
 |\Omega|=\mathrm{C}^1_{7776}=7776
@@ -722,19 +722,19 @@ $$
 
  Số được lấy có đúng ba chữ số khác nhau, chúng ta có hai trường hợp:
 
-- Số được tạo thành từ năm chữ số có dạng $a,a,a,b,c$. Chọn $3$ trong $6$ chữ số, có $\mathrm{C}^3_6$ cách. Chọn chữ số $a$ trong 3 chữ số vừa lấy, có $\mathrm{C}^1_3$ cách. Sắp xếp 5 số vào 5 vị trí có $5!$ cách. Tuy nhiên, chữ số $a$ đã được hoán vị $3!$ lần, nên thực tế chỉ có $\frac{5!}{3!}$ cách. Do đó, số phần tử của trường hợp này là
+- Số được tạo thành từ năm chữ số có dạng $a,a,a,b,c.$ Chọn $3$ trong $6$ chữ số, có $\mathrm{C}^3_6$ cách. Chọn chữ số $a$ trong 3 chữ số vừa lấy, có $\mathrm{C}^1_3$ cách. Sắp xếp 5 số vào 5 vị trí có $5!$ cách. Tuy nhiên, chữ số $a$ đã được hoán vị $3!$ lần, nên thực tế chỉ có $\frac{5!}{3!}$ cách. Do đó, số phần tử của trường hợp này là
 
   $$
   \mathrm{C}^3_6\cdot \mathrm{C}^1_3\cdot\frac{5!}{3!}=1200
   $$
 
-- Số được tạo thành từ năm chữ số có dạng $a,a,b,b,c$. Chọn $3$ trong $6$ chữ số, có $\mathrm{C}^3_6$ cách. Chọn chữ số $a$ và $b$ trong 3 chữ số vừa lấy, có $\mathrm{C}^2_3$ cách. Sắp xếp 5 số vào 5 vị trí có $5!$ cách. Tuy nhiên, chữ số $a$ đã được hoán vị $2!$ lần, chữ số $b$ cũng được hoán vị $2!$ lần nên thực tế chỉ có $\frac{5!}{2!2!}$ cách. Do đó, số phần tử của trường hợp này là
+- Số được tạo thành từ năm chữ số có dạng $a,a,b,b,c.$ Chọn $3$ trong $6$ chữ số, có $\mathrm{C}^3_6$ cách. Chọn chữ số $a$ và $b$ trong 3 chữ số vừa lấy, có $\mathrm{C}^2_3$ cách. Sắp xếp 5 số vào 5 vị trí có $5!$ cách. Tuy nhiên, chữ số $a$ đã được hoán vị $2!$ lần, chữ số $b$ cũng được hoán vị $2!$ lần nên thực tế chỉ có $\frac{5!}{2!2!}$ cách. Do đó, số phần tử của trường hợp này là
 
   $$
   \mathrm{C}^3_6\cdot \mathrm{C}^2_3\cdot\frac{5!}{2!2!}=1800
   $$
 
-Tóm lại, số phần tử thuận lợi là $1200+1800=3000$. Xác suất cần tính là 
+Tóm lại, số phần tử thuận lợi là $1200+1800=3000.$ Xác suất cần tính là 
 
 $$
 \mathrm{P}=\frac{3000}{7776}=\frac{125}{324}.
@@ -780,35 +780,35 @@ $$
 \mathrm{P}=\frac{270}{495}=\frac{6}{11}.
 $$
 
-**Câu 37.** [SGD Vĩnh Phúc — 2020] Gọi $S$ là tập các số tự nhiên có sáu chữ số trong đó có đúng ba chữ số $1$, ba chữ số còn lại khác nhau và khác $0$. Lấy ngẫu nhiên một số từ tập $S$. Xác suất để lấy được số mà trong đó không có hai chữ số 1 nào đứng cạnh nhau là bao nhiêu?
+**Câu 37.** [SGD Vĩnh Phúc — 2020] Gọi $S$ là tập các số tự nhiên có sáu chữ số trong đó có đúng ba chữ số $1$, ba chữ số còn lại khác nhau và khác $0.$ Lấy ngẫu nhiên một số từ tập $S.$ Xác suất để lấy được số mà trong đó không có hai chữ số 1 nào đứng cạnh nhau là bao nhiêu?
 
 **Hướng dẫn.** Để lập được các số tự nhiên của tập $S$, ta thực hiện các bước sau:
 
-- Chọn 3 trong 6 vị trí để viết chữ số $1$.
+- Chọn 3 trong 6 vị trí để viết chữ số $1.$
 
 - Chọn 3 trong 8 chữ số từ 2 đến 9 và sắp xếp vào 3 vị trí còn lại.
 
-Suy ra, số phần tử của tập $S$ là $\mathrm{C}^3_6\cdot \mathrm{A}^3_8=6720$. Do đó, số phần tử của không gian mẫu là 
+Suy ra, số phần tử của tập $S$ là $\mathrm{C}^3_6\cdot \mathrm{A}^3_8=6720.$ Do đó, số phần tử của không gian mẫu là 
 
 $$
 |\Omega|=\mathrm{C}^1_{6720}=6720
 $$
 
- Để lấy được số mà không có hai chữ số 1 nào đứng cạnh nhau thì số được chọn phải có dạng $\overline{1*1* 1*}$ hoặc $\overline{1* 1**1}$ hoặc $\overline{1** 1*1}$ hoặc $\overline{* 1*1* 1}$. Số cách chọn trong mỗi trường hợp là 
+ Để lấy được số mà không có hai chữ số 1 nào đứng cạnh nhau thì số được chọn phải có dạng $\overline{1*1* 1*}$ hoặc $\overline{1* 1**1}$ hoặc $\overline{1** 1*1}$ hoặc $\overline{* 1*1* 1}.$ Số cách chọn trong mỗi trường hợp là 
 
 $$
 \mathrm{A}^3_8=336
 $$
 
-Do đó, số phần tử thuận lợi là $4\cdot 336=1344$. Xác suất cần tìm là 
+Do đó, số phần tử thuận lợi là $4\cdot 336=1344.$ Xác suất cần tìm là 
 
 $$
 \mathrm{P}=\frac{1344}{6720}=\frac{1}{5}
 $$
 
-**Câu 38.** [SGD Bắc Ninh — 2020] Gọi $A$ là tập tất cả các số tự nhiên có $8$ chữ số đôi một khác nhau. Chọn ngẫu nhiên một số thuộc $A$. Tính xác suất để số được chọn chia hết cho $25$.
+**Câu 38.** [SGD Bắc Ninh — 2020] Gọi $A$ là tập tất cả các số tự nhiên có $8$ chữ số đôi một khác nhau. Chọn ngẫu nhiên một số thuộc $A.$ Tính xác suất để số được chọn chia hết cho $25.$
 
-**Hướng dẫn.** Vì số tự nhiên có $8$ chữ số nên chữ số đứng ở vị trí đầu tiên phải khác $0$. Số phần tử của tập $A$ là 
+**Hướng dẫn.** Vì số tự nhiên có $8$ chữ số nên chữ số đứng ở vị trí đầu tiên phải khác $0.$ Số phần tử của tập $A$ là 
 
 $$
 \mathrm{A}^8_{10}-\mathrm{A}^7_{9}=1632960
@@ -820,9 +820,9 @@ $$
 00, 25, 50, 75
 $$
 
- Nhưng vì các chữ số của số tự nhiên trong tập $A$ phải khác nhau nên loại trường hợp tận cùng là $00$. Do đó, chúng ta chỉ còn ba trường hợp sau:
+ Nhưng vì các chữ số của số tự nhiên trong tập $A$ phải khác nhau nên loại trường hợp tận cùng là $00.$ Do đó, chúng ta chỉ còn ba trường hợp sau:
 
-- Số tự nhiên lấy được tận cùng là $50$. Khi đó, mỗi cách chọn và sắp xếp $6$ chữ số còn lại tương ứng với một chỉnh hợp chập $6$ của $8$ phần tử. Trường hợp này lập được tất cả
+- Số tự nhiên lấy được tận cùng là $50.$ Khi đó, mỗi cách chọn và sắp xếp $6$ chữ số còn lại tương ứng với một chỉnh hợp chập $6$ của $8$ phần tử. Trường hợp này lập được tất cả
 
   $$
   \mathrm{A}^6_8=20160
@@ -830,7 +830,7 @@ $$
 
   số tự nhiên thỏa mãn yêu cầu.
 
-- Số tự nhiên lấy được tận cùng là $25$. Chọn chữ số đầu tiên có $7$ cách, vì phải khác $0,2,5$. Chọn và sắp xếp $5$ chữ số còn lại, có $\mathrm{A}^5_7$ cách. Suy ra, trường hợp này có tất cả
+- Số tự nhiên lấy được tận cùng là $25.$ Chọn chữ số đầu tiên có $7$ cách, vì phải khác $0,2,5.$ Chọn và sắp xếp $5$ chữ số còn lại, có $\mathrm{A}^5_7$ cách. Suy ra, trường hợp này có tất cả
 
   $$
   7\cdot \mathrm{A}^5_7=17640
@@ -838,9 +838,9 @@ $$
 
   số thỏa mãn yêu cầu.
 
-- Số tự nhiên lấy được tận cùng là $75$. Làm tương tự như trường hợp tận cùng là $25$, cũng tìm được $17640$ số thỏa mãn yêu cầu.
+- Số tự nhiên lấy được tận cùng là $75.$ Làm tương tự như trường hợp tận cùng là $25$, cũng tìm được $17640$ số thỏa mãn yêu cầu.
 
-Tóm lại, có tất cả $20160+2\cdot 17640=55440$ số tự nhiên chia hết cho $25$. Xác suất cần tìm là 
+Tóm lại, có tất cả $20160+2\cdot 17640=55440$ số tự nhiên chia hết cho $25.$ Xác suất cần tìm là 
 
 $$
 P= \frac{55440}{1632960}=\frac{11}{324}
@@ -952,7 +952,7 @@ $$
 \mathrm{P}=\frac{460800}{10!}=\frac{8}{63}.
 $$
 
-**Câu 42.** [Chuyên Lê Hồng Phong — Nam Định 2020] Gọi $S$ là tập hợp các số tự nhiên có chín chữ số đôi một khác nhau. Lấy ngẫu nhiên hai số từ tập $S$. Tính xác suất lấy được ít nhất một số chia hết cho $3$.
+**Câu 42.** [Chuyên Lê Hồng Phong — Nam Định 2020] Gọi $S$ là tập hợp các số tự nhiên có chín chữ số đôi một khác nhau. Lấy ngẫu nhiên hai số từ tập $S.$ Tính xác suất lấy được ít nhất một số chia hết cho $3.$
 
 **Hướng dẫn.** Số phần tử của tập $S$ là 
 
@@ -960,7 +960,7 @@ $$
 9\cdot \mathrm{A}^8_9=3265920.
 $$
 
- Trong $3265920$ số này, chúng ta xem có bao nhiêu số tự nhiên chia hết cho $3$.
+ Trong $3265920$ số này, chúng ta xem có bao nhiêu số tự nhiên chia hết cho $3.$
 
 Nhận xét rằng tổng của $10$ chữ số từ $0$ đến $9$ là 
 
@@ -968,7 +968,7 @@ $$
 0+1+2+\cdots+9=45
 $$
 
- là một số chia hết cho $3$. Nên để có được số tự nhiên chia hết cho $3$ mà có $9$ chữ số thì chúng ta lập từ các chữ số thuộc tập sau 
+ là một số chia hết cho $3.$ Nên để có được số tự nhiên chia hết cho $3$ mà có $9$ chữ số thì chúng ta lập từ các chữ số thuộc tập sau 
 
 $$
 \begin{aligned}
@@ -983,7 +983,7 @@ $$
 9!+3\cdot 8\cdot 8!=1330560.
 $$
 
- Và hiển nhiên, tập $A$ có $3265920-1330560=1935360$ số không chia hết cho $3$.
+ Và hiển nhiên, tập $A$ có $3265920-1330560=1935360$ số không chia hết cho $3.$
 
 Phép thử là “lấy ngẫu nhiên hai số từ tập $S$” nên số phần tử của không gian mẫu là 
 
@@ -993,7 +993,7 @@ $$
 
  Để lấy được ít nhất một số chia hết cho $3$ thì có hai trường hợp:
 
-- Lấy được cả hai số chia hết cho $3$. Có $\mathrm{C}^2_{1330560}$ cách.
+- Lấy được cả hai số chia hết cho $3.$ Có $\mathrm{C}^2_{1330560}$ cách.
 
 - Lấy được một số chia hết cho $3$ và một số không chia hết cho $3$, có $1330560\cdot 1935360$ cách.
 
@@ -1007,7 +1007,7 @@ $$
 
 **Hướng dẫn.**
 
-- Phép thử là chọn ngẫu nhiên 4 thẻ trong 16 thẻ nên ta có $|\Omega|=C_{16}^4=1820$.
+- Phép thử là chọn ngẫu nhiên 4 thẻ trong 16 thẻ nên ta có $|\Omega|=C_{16}^4=1820.$
 
 - Gọi $A$ là biến cố “4 thẻ được chọn đều được đánh số chẵn”, ta có
 
@@ -1021,7 +1021,7 @@ $$
   \mathrm{P}(A)=\dfrac{|\Omega_A|}{|\Omega|}=\dfrac{1}{26}
   $$
 
-**Câu 44.** Một nhóm học tập gồm 7 nam và 5 nữ, trong đó có bạn nam $A$ và bạn nữ $B$. Chọn ngẫu nhiên 6 bạn để lập một đội tuyển thi học sinh giỏi. Tính xác suất để đội tuyển có 3 nam và 3 nữ, trong đó phải có hoặc bạn nam $A$, hoặc bạn nữ $B$ nhưng không có cả hai.
+**Câu 44.** Một nhóm học tập gồm 7 nam và 5 nữ, trong đó có bạn nam $A$ và bạn nữ $B.$ Chọn ngẫu nhiên 6 bạn để lập một đội tuyển thi học sinh giỏi. Tính xác suất để đội tuyển có 3 nam và 3 nữ, trong đó phải có hoặc bạn nam $A$, hoặc bạn nữ $B$ nhưng không có cả hai.
 
 **Hướng dẫn.**
 
@@ -1049,7 +1049,7 @@ $$
 
 - Gọi $A_i\ (i=\overline{1,3})$ là biến cố “người thứ $i$ bắn trúng bia”.
 
-- Ta có $P(A_1)=0,6;P(A_2)=0,7;P(A_3)=0,8$. Suy ra
+- Ta có $P(A_1)=0,6;P(A_2)=0,7;P(A_3)=0,8.$ Suy ra
 
   $$
   P(\overline{A_1})=0,4;P(\overline{A_2})=0,3;P(\overline{A_3})=0,2
@@ -1063,13 +1063,13 @@ $$
   \mathrm{P}(\overline{A})=0,4\times 0,3\times 0,2=0,024
   $$
 
-- Xác suất cần tìm là $\mathrm{P}(A)=1-\mathrm{P}(\overline{A})=1-0,024=0,976$.
+- Xác suất cần tìm là $\mathrm{P}(A)=1-\mathrm{P}(\overline{A})=1-0,024=0,976.$
 
 **Câu 46.** [Đề ĐH Khối B năm 2013] Có hai chiếc hộp đựng bi. Hộp thứ nhất chứa 4 viên bi đỏ và 3 viên bi trắng, hộp thứ hai chứa 2 viên bi đỏ và 4 viên bi trắng. Lấy ngẫu nhiên từ mỗi hộp ra một viên bi, tính xác suất để hai viên bi được lấy ra có cùng màu.
 
 **Hướng dẫn.**
 
-- Phép thử là lấy mỗi hộp một viên bi nên ta có $|\Omega|=C_7^1\times C_6^1=42$.
+- Phép thử là lấy mỗi hộp một viên bi nên ta có $|\Omega|=C_7^1\times C_6^1=42.$
 
 - Gọi $A$ là biến cố “hai viên bi lấy ra có cùng màu”. Số phần tử thuận lợi là
 
@@ -1087,7 +1087,7 @@ $$
 
 **Hướng dẫn.**
 
-- Phép thử là chọn 4 học sinh bất kỳ lên bảng nên ta có $|\Omega|=C_{25}^4=12650$.
+- Phép thử là chọn 4 học sinh bất kỳ lên bảng nên ta có $|\Omega|=C_{25}^4=12650.$
 
 - Gọi $A$ là biến cố “chọn 4 học sinh có cả nam và nữ”. Số phần tử thuận lợi là
 
@@ -1101,7 +1101,7 @@ $$
   \mathrm{P}(A) = \frac{{\left| {{\Omega _A}} \right|}}{{\left| \Omega \right|}} = \frac{{11075}}{{12650}} = \frac{{443}}{{506}}
   $$
 
-**Câu 48.** [Chuyên Hùng Vương — Gia Lai 2020] Cho một đa giác đều có $18$ đỉnh nội tiếp trong một đường tròn tâm $O$. Gọi $X$ là tập hợp các tam giác có các đỉnh là các đỉnh của đa giác đều trên. Tính xác suất để chọn được một tam giác từ tập $X$ là tam giác cân nhưng không phải tam giác đều.
+**Câu 48.** [Chuyên Hùng Vương — Gia Lai 2020] Cho một đa giác đều có $18$ đỉnh nội tiếp trong một đường tròn tâm $O.$ Gọi $X$ là tập hợp các tam giác có các đỉnh là các đỉnh của đa giác đều trên. Tính xác suất để chọn được một tam giác từ tập $X$ là tam giác cân nhưng không phải tam giác đều.
 
 **Hướng dẫn.**
 
@@ -1113,7 +1113,7 @@ $$
 
 - Xét một đỉnh bất kỳ của đa giác, gọi là $A$ chẳng hạn, thì qua đường thẳng $AO$ sẽ có $8$ cặp đỉnh đa giác đối xứng với nhau.
 
-  Do đó, ứng với mỗi đỉnh của đa giác thì có tất cả $8$ tam giác cân tại đỉnh đó. Trong $8$ tam giác cân này thì lại có một tam giác là tam giác đều, nên suy ra số tam giác cân mà không phải tam giác đều là $7$.
+  Do đó, ứng với mỗi đỉnh của đa giác thì có tất cả $8$ tam giác cân tại đỉnh đó. Trong $8$ tam giác cân này thì lại có một tam giác là tam giác đều, nên suy ra số tam giác cân mà không phải tam giác đều là $7.$
 
 - Như vậy có tất cả $18\cdot 7 =126$ tam giác cân nhưng không phải tam giác đều và xác suất cần tìm là
 
@@ -1121,7 +1121,7 @@ $$
   P=\frac{126}{816} =\frac{21}{136}
   $$
 
-**Câu 49.** [Liên trường Nghệ An 2020] Gọi $S$ là tập hợp tất cả các số tự nhiên có $4$ chữ số đôi một khác nhau lập thành từ các chữ số $0, 1, 2, 3, 4, 5, 6, 7$. Chọn ngẫu nhiên một số từ tập $S$. Tính xác suất để số được chọn có đúng hai chữ số chẵn.
+**Câu 49.** [Liên trường Nghệ An 2020] Gọi $S$ là tập hợp tất cả các số tự nhiên có $4$ chữ số đôi một khác nhau lập thành từ các chữ số $0, 1, 2, 3, 4, 5, 6, 7.$ Chọn ngẫu nhiên một số từ tập $S.$ Tính xác suất để số được chọn có đúng hai chữ số chẵn.
 
 **Hướng dẫn.** Số lượng các số tự nhiên có bốn chữ số đôi một khác nhau lập từ các chữ số $0, 1, 2, 3, 4, 5, 6, 7$ là 
 
@@ -1137,7 +1137,7 @@ $$
 
  Để số được chọn có đúng hai chữ số chẵn, ta xét hai trường hợp:
 
-- **TH1.** Hai chữ số chẵn đều khác $0$.
+- **TH1.** Hai chữ số chẵn đều khác $0.$
 
 Chọn hai chữ số chẵn từ các chữ số $2,4,6$, có $\mathrm{C}^2_3=3$ cách.
 
@@ -1147,7 +1147,7 @@ Chọn hai chữ số chẵn từ các chữ số $2,4,6$, có $\mathrm{C}^2_3=3
 
 Suy ra, số lượng các số tự nhiên của trường hợp này là $3\cdot 6\cdot 4!=432$ số.
 
-- **TH2.** Hai chữ số chẵn có bao gồm chữ số $0$.
+- **TH2.** Hai chữ số chẵn có bao gồm chữ số $0.$
 
 Chọn vị trí cho chữ số 0, có $3$ vị trí vì chữ số 0 không thể đứng đầu.
 
@@ -1159,21 +1159,21 @@ Chọn vị trí cho chữ số 0, có $3$ vị trí vì chữ số 0 không th�
 
 Suy ra, trường hợp này có tất cả $3\cdot 3\cdot 6\cdot 3!=324$ số.
 
-Tóm lại, số phần tử thuận lợi là $432+324=756$. Xác suất cần tìm là 
+Tóm lại, số phần tử thuận lợi là $432+324=756.$ Xác suất cần tìm là 
 
 $$
 \mathrm{P}=\frac{756}{1470}=\frac{18}{35}.
 $$
 
-**Câu 50.** Cho tập $X = \left\{ {0;1;2;4;6;7} \right\}$. Chọn ngẫu nhiên một số tự nhiên có 4 chữ số được lập X. Tính xác suất để số được chọn có một chữ số xuất hiện đúng hai lần và các chữ số còn lại xuất hiện không quá một lần.
+**Câu 50.** Cho tập $X = \left\{ {0;1;2;4;6;7} \right\}.$ Chọn ngẫu nhiên một số tự nhiên có 4 chữ số được lập X. Tính xác suất để số được chọn có một chữ số xuất hiện đúng hai lần và các chữ số còn lại xuất hiện không quá một lần.
 
-**Hướng dẫn.** Chọn ngẫu nhiên một số tự nhiên có bốn chữ số được lập từ $X = \left\{ {0;1;2;4;6;7} \right\}$. Số phần tử không gian mẫu: $\left| \Omega \right| = {5.6^3} = 1080.$
+**Hướng dẫn.** Chọn ngẫu nhiên một số tự nhiên có bốn chữ số được lập từ $X = \left\{ {0;1;2;4;6;7} \right\}.$ Số phần tử không gian mẫu: $\left| \Omega \right| = {5.6^3} = 1080.$
 
 Gọi $A$là biến cố cần tìm xác suất. Ta có các trường hợp sau:
 
 - **Trường hợp 1:** Chữ số $0$xuất hiện 2 lần.
 
-Có $C_3^2$cách chọn 2 vị trí cho chữ số $0$.
+Có $C_3^2$cách chọn 2 vị trí cho chữ số $0.$
 
 - Có $A_5^2$cách xếp 2 chữ số trong 5 chữ số vào 2 vị trí còn lại.
 
@@ -1181,9 +1181,9 @@ Có $C_3^2$cách chọn 2 vị trí cho chữ số $0$.
 
 **Trường hợp 2:** Chữ số $x$ (khác 0) xuất hiện 2 lần và $x$ ở vị trí hàng nghìn.
 
-- Có 5 cách chọn $x$từ tập $X$.
+- Có 5 cách chọn $x$từ tập $X.$
 
-- Có 3 cách chọn thêm một vị trí nữa cho $x$.
+- Có 3 cách chọn thêm một vị trí nữa cho $x.$
 
 - Có $A_5^2$cách xếp 2 chữ số trong 5 chữ số vào 2 vị trí còn lại.
 
@@ -1191,9 +1191,9 @@ Có $C_3^2$cách chọn 2 vị trí cho chữ số $0$.
 
 **Trường hợp 3:** Chữ số $x$ (khác 0) xuất hiện 2 lần và $x$không nằm ở vị trí hàng nghìn.
 
-- Có 5 cách chọn $x$.
+- Có 5 cách chọn $x.$
 
-- Có $C_3^2$cách chọn vị trí cho chữ số$x$.
+- Có $C_3^2$cách chọn vị trí cho chữ số$x.$
 
 - Có 4 cách chọn một chữ số (khác $0$và khác $x$)vào vị trí hàng nghìn.
 
@@ -1209,7 +1209,7 @@ Vậy xác suất của biến cố $A$: $P\left( A \right) = \frac{{\left| {{\O
 
 **Hướng dẫn.** Gọi$A$ là biến cố: “ 5 bút được chọn có đúng hai màu”.
 
-Ta có $n\left( \Omega \right) = C_{15}^5$.
+Ta có $n\left( \Omega \right) = C_{15}^5.$
 
 Vì 5 bút được chọn có đúng hai màu nên có 3 trường hợp:
 
@@ -1219,7 +1219,7 @@ Vì 5 bút được chọn có đúng hai màu nên có 3 trường hợp:
 
 - Trong $C_9^5$ cách chọn 5 bút trên, có $C_5^5$ cách chọn cả 5 bút đều màu đen và không có cách chọn nào để cả 5 bút đều màu xanh.
 
-Số cách chọn 5 bút có đúng hai màu xanh và đen bằng $C_9^5 – C_5^5$.
+Số cách chọn 5 bút có đúng hai màu xanh và đen bằng $C_9^5 – C_5^5.$
 
 **TH2:** Có đúng hai màu đen và đỏ:
 
@@ -1227,7 +1227,7 @@ Số cách chọn 5 bút có đúng hai màu xanh và đen bằng $C_9^5 – C_5
 
 - Trong $C_{11}^5$ cách chọn 5 bút trên, có $C_5^5$ cách chọn cả 5 bút đều màu đen và $C_6^5$ cách chọn cả 5 bút đều màu đỏ.
 
-Số cách chọn 5 bút có đúng hai màu đỏ và đen bằng $C_{11}^5 – C_5^5 – C_6^5$.
+Số cách chọn 5 bút có đúng hai màu đỏ và đen bằng $C_{11}^5 – C_5^5 – C_6^5.$
 
 **TH3:** Có đúng hai màu đỏ và xanh:
 
@@ -1235,25 +1235,25 @@ Số cách chọn 5 bút có đúng hai màu đỏ và đen bằng $C_{11}^5 –
 
 - Trong $C_{10}^5$ cách chọn 5 bút trên, có $C_6^5$ cách chọn cả 5 bút đều màu đỏ và không có cách chọn cả 5 bút đều màu xanh.
 
-Số cách chọn 5 bút có đúng hai màu đỏ và xanh bằng $C_{10}^5 – C_6^5$.
+Số cách chọn 5 bút có đúng hai màu đỏ và xanh bằng $C_{10}^5 – C_6^5.$
 
-Vậy $P\left( A \right) = \frac{{\left( {C_9^5 – C_5^5} \right) + \left( {C_{11}^5 – C_5^5 – C_6^5} \right) + \left( {C_{10}^5 – C_6^5} \right)}}{{C_{15}^5}} = \frac{{118}}{{429}}$.
+Vậy $P\left( A \right) = \frac{{\left( {C_9^5 – C_5^5} \right) + \left( {C_{11}^5 – C_5^5 – C_6^5} \right) + \left( {C_{10}^5 – C_6^5} \right)}}{{C_{15}^5}} = \frac{{118}}{{429}}.$
 
 **Câu 52.** Một hộp đựng thẻ được đánh số từ 1, 2, 3,…, 8. Rút ngẫu nhiên hai lần, mỗi lần một thẻ và nhân số ghi trên hai thẻ với nhau, xác suất để tích nhận được là số chẵn là
 
-- **A.** $\frac{3}{{14}}$.
-- **B.** $\frac{{25}}{{36}}$.
+- **A.** $\frac{3}{{14}}.$
+- **B.** $\frac{{25}}{{36}}.$
 - **C.** $\frac{1}{2}.$
-- **D.** $\frac{{11}}{{14}}$.
+- **D.** $\frac{{11}}{{14}}.$
 
 **Hướng dẫn.** Chọn **D**.
-Số phần tử không gian mẫu: $n\left( \Omega \right) = 8 \times 7 = 56$.
+Số phần tử không gian mẫu: $n\left( \Omega \right) = 8 \times 7 = 56.$
 
 Gọi $\bar A$ là biến cố: “tích nhận được là số lẻ”.
 
-$n\left( {\bar A} \right) = 4 \times 3 = 12$.
+$n\left( {\bar A} \right) = 4 \times 3 = 12.$
 
-$\Rightarrow n(A) = 56 – 12 = 44$.
+$\Rightarrow n(A) = 56 – 12 = 44.$
 
 Suy ra xác suất biến cố $A$: $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{{44}}{{56}} = \frac{{11}}{{14}}.$
 
@@ -1265,7 +1265,7 @@ Suy ra xác suất biến cố $A$: $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{
 - **D.** $\frac{{850}}{{1001}}.$
 
 **Hướng dẫn.** Chọn **D**.
-Số phần tử của không gian mẫu $n\left( \Omega \right) = C_{15}^6 = 5005$.
+Số phần tử của không gian mẫu $n\left( \Omega \right) = C_{15}^6 = 5005.$
 
 Gọi *A* là biến cố: “6 HS được chọn có đủ 3 khối”.
 
@@ -1285,19 +1285,19 @@ Vậy xác suất cần tìm là: $P\left( A \right) = \frac{{4250}}{{5005}} = \
 
 **Câu 54.** Chọn ngẫu nhiên một số tự nhiên có hai chữ số. Tính xác suất để số được chọn có hai chữ số giống nhau.
 
-**Hướng dẫn.** Số phần tử trong không gian mẫu là $n(\Omega ) = 90$.
+**Hướng dẫn.** Số phần tử trong không gian mẫu là $n(\Omega ) = 90.$
 
 Gọi A là biến cố “số được chọn có 2 chữ số giống nhau” A= $\left\{ {11;22;33;44;55;66;77;88;99} \right\}$ ; $n(A) = 9$
 
-Do đó xác suất để số được chọn có hai chữ số giống nhau là $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{9}{{90}} = 0,1$.
+Do đó xác suất để số được chọn có hai chữ số giống nhau là $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{9}{{90}} = 0,1.$
 
-**Câu 55.** Một hộp đựng thẻ được đánh số từ $1, 2, 3,…, 9$. Rút ngẫu nhiên hai lần, mỗi lần một thẻ và nhân số ghi trên hai thẻ với nhau, xác suất để tích nhận được là số chẵn là bao nhiêu?
+**Câu 55.** Một hộp đựng thẻ được đánh số từ $1, 2, 3,…, 9.$ Rút ngẫu nhiên hai lần, mỗi lần một thẻ và nhân số ghi trên hai thẻ với nhau, xác suất để tích nhận được là số chẵn là bao nhiêu?
 
-**Hướng dẫn.** Số phần tử không gian mẫu: $n\left( \Omega \right) = 9 \times 8 = 72$.
+**Hướng dẫn.** Số phần tử không gian mẫu: $n\left( \Omega \right) = 9 \times 8 = 72.$
 
-Gọi $\bar A$ là biến cố: “tích nhận được là số lẻ” thì $n\left( {\bar A} \right) = 5 \times 4 = 20$.
+Gọi $\bar A$ là biến cố: “tích nhận được là số lẻ” thì $n\left( {\bar A} \right) = 5 \times 4 = 20.$
 
-Suy ra $n(A) = 72 – 20 = 52$. Xác suất của biến cố $A$ là 
+Suy ra $n(A) = 72 – 20 = 52.$ Xác suất của biến cố $A$ là 
 
 $$
 P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{{52}}{{72}} = \frac{{13}}{{18}}.
@@ -1305,31 +1305,31 @@ $$
 
 **Câu 56.** Một hộp kín có 5 bút bi màu xanh khác nhau và 10 bút bi màu đỏ khác nhau. Lấy ngẫu nhiên 3 bút bi. Xác suất để lấy được 1 bút bi xanh và 2 bút bi đỏ là…
 
-**Hướng dẫn.** Số phần tử của không gian mẫu $n\left( \Omega \right) = C_{15}^3$.
+**Hướng dẫn.** Số phần tử của không gian mẫu $n\left( \Omega \right) = C_{15}^3.$
 
-Gọi A là biến cố lấy được 1 bút bi xanh và 2 bút bi đỏ $\Rightarrow n\left( A \right) = C_5^1.C_{10}^2$.
+Gọi A là biến cố lấy được 1 bút bi xanh và 2 bút bi đỏ $\Rightarrow n\left( A \right) = C_5^1.C_{10}^2.$
 
 Xác suất của biến cố A là $P\left( A \right) = \frac{{C_5^1.C_{10}^2}}{{C_{15}^3}} = \frac{{45}}{{91}}$
 
 **Câu 57.** Chọn ngẫu nhiên một số từ tập các số tự nhiên có năm chữ số khác nhau đôi một. Xác suất để số được chọn có ba chữ số chẵn và hai chữ số lẻ còn lại đứng kề nhau?
 
-**Hướng dẫn.** Số phần tử của không gian mẫu là $n\left( \Omega \right) = 9.A_9^4$.
+**Hướng dẫn.** Số phần tử của không gian mẫu là $n\left( \Omega \right) = 9.A_9^4.$
 
 Gọi A là biến cố: “Số được chọn có ba chữ số chẵn và hai chữ số lẻ còn lại đứng kề nhau”.
 
 Có $C_5^3$cách chọn 3 chữ số chẵn, có $A_5^2$ cách chọn 2 chữ số lẻ và xếp chúng kề nhau, có 4! Cách xếp sao cho 2 chữ số lẻ đứng kề nhau. Suy ra có $C_5^3.A_5^2.4!$ cách xếp thoả mãn (kể cả chữ số 0 đứng đầu).
 
-Ta tính số các số thoả mãn đề mà có số chữ số 0 đứng đầu, ta xét 4 chữ số cuối: Có $C_4^2$ cách chọn 2 chữ số trong 4 chữ số chẵn, có $C_5^2$ cách chọn 2 chữ số lẻ, coi 2 chữ số lẻ là một nhóm ta có số các số là $C_4^2.C_5^2.2!.3!$.
+Ta tính số các số thoả mãn đề mà có số chữ số 0 đứng đầu, ta xét 4 chữ số cuối: Có $C_4^2$ cách chọn 2 chữ số trong 4 chữ số chẵn, có $C_5^2$ cách chọn 2 chữ số lẻ, coi 2 chữ số lẻ là một nhóm ta có số các số là $C_4^2.C_5^2.2!.3!.$
 
-Suy ra số các số thoả mãn đề bài là: $n\left( A \right) = C_5^3.A_5^2.4! – C_4^2.C_5^2.2!.3! = 4080$.
+Suy ra số các số thoả mãn đề bài là: $n\left( A \right) = C_5^3.A_5^2.4! – C_4^2.C_5^2.2!.3! = 4080.$
 
-$P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{4080}}{{9.A_9^4}} = \frac{{85}}{{567}}$.
+$P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{4080}}{{9.A_9^4}} = \frac{{85}}{{567}}.$
 
 **Câu 58.** Từ một hộp có 4 bút bi màu xanh, 5 bút bi màu đen và 6 bút bi màu đỏ, chọn ngẫu nhiên 5 bút. Xác suất để 5 bút được chọn chỉ có đúng hai màu là bao nhiêu?
 
 **Hướng dẫn.** Gọi$A$ là biến cố: “ 5 bút được chọn có đúng hai màu”.
 
-Ta có $n\left( \Omega \right) = C_{15}^5$.
+Ta có $n\left( \Omega \right) = C_{15}^5.$
 
 Vì 5 bút được chọn có đúng hai màu nên có 3 trường hợp:
 
@@ -1339,7 +1339,7 @@ Vì 5 bút được chọn có đúng hai màu nên có 3 trường hợp:
 
 - Trong $C_9^5$ cách chọn 5 bút trên, có $C_5^5$ cách chọn cả 5 bút đều màu đen và không có cách chọn nào để cả 5 bút đều màu xanh.
 
-Số cách chọn 5 bút có đúng hai màu xanh và đen bằng $C_9^5 – C_5^5$.
+Số cách chọn 5 bút có đúng hai màu xanh và đen bằng $C_9^5 – C_5^5.$
 
 **TH2:** Có đúng hai màu đen và đỏ:
 
@@ -1347,7 +1347,7 @@ Số cách chọn 5 bút có đúng hai màu xanh và đen bằng $C_9^5 – C_5
 
 - Trong $C_{11}^5$ cách chọn 5 bút trên, có $C_5^5$ cách chọn cả 5 bút đều màu đen và $C_6^5$ cách chọn cả 5 bút đều màu đỏ.
 
-Số cách chọn 5 bút có đúng hai màu đỏ và đen bằng $C_{11}^5 – C_5^5 – C_6^5$.
+Số cách chọn 5 bút có đúng hai màu đỏ và đen bằng $C_{11}^5 – C_5^5 – C_6^5.$
 
 **TH3:** Có đúng hai màu đỏ và xanh:
 
@@ -1355,9 +1355,9 @@ Số cách chọn 5 bút có đúng hai màu đỏ và đen bằng $C_{11}^5 –
 
 - Trong $C_{10}^5$ cách chọn 5 bút trên, có $C_6^5$ cách chọn cả 5 bút đều màu đỏ và không có cách chọn cả 5 bút đều màu xanh.
 
-Số cách chọn 5 bút có đúng hai màu đỏ và xanh bằng $C_{10}^5 – C_6^5$.
+Số cách chọn 5 bút có đúng hai màu đỏ và xanh bằng $C_{10}^5 – C_6^5.$
 
-Vậy $P\left( A \right) = \frac{{\left( {C_9^5 – C_5^5} \right) + \left( {C_{11}^5 – C_5^5 – C_6^5} \right) + \left( {C_{10}^5 – C_6^5} \right)}}{{C_{15}^5}} = \frac{{118}}{{429}}$.
+Vậy $P\left( A \right) = \frac{{\left( {C_9^5 – C_5^5} \right) + \left( {C_{11}^5 – C_5^5 – C_6^5} \right) + \left( {C_{10}^5 – C_6^5} \right)}}{{C_{15}^5}} = \frac{{118}}{{429}}.$
 
 **Câu 59.** Chọn ngẫu nhiên hai số khác nhau từ 27 số nguyên dương đầu tiên. Xác suất để chọn được hai số có tổng là một số chẵn bằng
 
@@ -1369,7 +1369,7 @@ Vậy $P\left( A \right) = \frac{{\left( {C_9^5 – C_5^5} \right) + \left( {C_{
 **Hướng dẫn.** Chọn **A**.
 Gọi A là tập tất cả các số nguyên dương đầu tiên, $A = \left\{ {1;\,\,2;\,\,3;\,……;\,\,26;\,\,27} \right\}$
 
-Chọn hai số khác nhau từ A có: $n\left( \Omega \right) = C_{27}^2 = 351$. Tổng hai số là số chẵn khi cả hai số đó đều chẵn hoặc đều lẻ. Do đó:
+Chọn hai số khác nhau từ A có: $n\left( \Omega \right) = C_{27}^2 = 351.$ Tổng hai số là số chẵn khi cả hai số đó đều chẵn hoặc đều lẻ. Do đó:
 
 Chọn hai số chẵn khác nhau từ tập A có: $C_{13}^2 = 78$
 
@@ -1379,13 +1379,13 @@ Số cách chọn là: $78 + 91 = 169$
 
 Xác suất cần tìm là: $P = \frac{{169}}{{351}} = \frac{{13}}{{27}}$
 
-**Câu 60.** Cho tập hợp $A = \left\{ {1;2;…;100} \right\}$. Chọn ngẫu nhiên 3 phần tử của $A$. Xác suất để 3 phần tử được chọn lập thành một cấp số cộng bằng bao nhiêu?
+**Câu 60.** Cho tập hợp $A = \left\{ {1;2;…;100} \right\}.$ Chọn ngẫu nhiên 3 phần tử của $A.$ Xác suất để 3 phần tử được chọn lập thành một cấp số cộng bằng bao nhiêu?
 
-**Hướng dẫn.** Chọn ngẫu nhiên 3 phần tử từ tập $A \Rightarrow$ Không gian mẫu là $\left| \Omega \right| = C_{100}^3$.
+**Hướng dẫn.** Chọn ngẫu nhiên 3 phần tử từ tập $A \Rightarrow$ Không gian mẫu là $\left| \Omega \right| = C_{100}^3.$
 
 Gọi biến cố A:“Ba phần tử được chọn lập thành một cấp số cộng”.
 
-**Cách 1.** Giả sử 3 phần tử đó là $x;x + d;x + 2d$.
+**Cách 1.** Giả sử 3 phần tử đó là $x;x + d;x + 2d.$
 
 - Với $x = 1$ thì ta có $x + 2d \le 100 \Leftrightarrow d \le \frac{{99}}{2} \Rightarrow d \in \left\{ {1;2;…;49} \right\} \Rightarrow$ có 49 bộ ba số thỏa mãn.
 
@@ -1403,7 +1403,7 @@ Gọi biến cố A:“Ba phần tử được chọn lập thành một cấp s
 
 Do đó ta thấy có tất cả $2\left( {49 + 48 + 47 + … + 2 + 1} \right) = 2.\frac{{49\left( {49 + 1} \right)}}{2} = 2450$ bộ ba số thỏa mãn.
 
-**Cách 2.** Giả sử 3 phần tử đó là $a;b;c$ với $a,b,c \in A$.
+**Cách 2.** Giả sử 3 phần tử đó là $a;b;c$ với $a,b,c \in A.$
 
 - Trong tập $A$ có 50 số lẻ, 50 số chẵn.
 
@@ -1411,39 +1411,39 @@ Do đó ta thấy có tất cả $2\left( {49 + 48 + 47 + … + 2 + 1} \right) =
 
 - Do đó hai số $a,c$ cùng chẵn hoặc cùng lẻ.
 
-- Đồng thời ứng với 1 cách chọn hai số $a,c$ thì xác định được duy nhất 1 số $b$.
+- Đồng thời ứng với 1 cách chọn hai số $a,c$ thì xác định được duy nhất 1 số $b.$
 
 - Tổng số bộ ba số $a,b,c$ là $C_{50}^2 + C_{50}^2 = 2450$ (bộ ba).
 
-Vậy xác suất của biến cố A là $P = \frac{{2450}}{{C_{100}^3}} = \frac{1}{{66}}$.
+Vậy xác suất của biến cố A là $P = \frac{{2450}}{{C_{100}^3}} = \frac{1}{{66}}.$
 
-**Câu 61.** Cho tập $A = \left\{ {1;2;3;4;5;6} \right\}$. Tính xác suất biến cố chọn được số tự nhiên có $3$ chữ số khác nhau lập từ tập A, sao cho tổng $3$ chữ số bằng $9$.
+**Câu 61.** Cho tập $A = \left\{ {1;2;3;4;5;6} \right\}.$ Tính xác suất biến cố chọn được số tự nhiên có $3$ chữ số khác nhau lập từ tập A, sao cho tổng $3$ chữ số bằng $9.$
 
 **Hướng dẫn.** Gọi $A$ là biến cố “số tự nhiên 3 chữ số khác nhau, có tổng $3$ chữ số bằng$9$”.
 
-- Số số tự nhiên có $3$ chữ số khác nhau có thể lập được là: $A_6^3 = 120$. Suy ra không gian mẫu có số phần tử là:
+- Số số tự nhiên có $3$ chữ số khác nhau có thể lập được là: $A_6^3 = 120.$ Suy ra không gian mẫu có số phần tử là:
 
   $$
   \left| \Omega \right| = 120
   $$
 
-- Ta có $1 + 2 + 6 = 9;1 + 3 + 5 = 9;2 + 3 + 4 = 9$.
+- Ta có $1 + 2 + 6 = 9;1 + 3 + 5 = 9;2 + 3 + 4 = 9.$
 
 Số số tự nhiên có $3$ chữ số khác nhau có tổng bằng $9$ là:$3! + 3! + 3! = 18.$
 
 - $n\left( A \right) = 18.$
 
-Vậy $P\left( A \right) = \frac{{n\left( A \right)}}{{\left| \Omega \right|}} = \frac{{18}}{{120}} = \frac{3}{{20}}$.
+Vậy $P\left( A \right) = \frac{{n\left( A \right)}}{{\left| \Omega \right|}} = \frac{{18}}{{120}} = \frac{3}{{20}}.$
 
-**Câu 62.** Có $60$ tấm thẻ đánh số từ $1$ đến $50$. Rút ngẫu nhiên $3$ thẻ. Tính xác suất để tổng các số ghi trên thẻ chia hết cho $3$.
+**Câu 62.** Có $60$ tấm thẻ đánh số từ $1$ đến $50.$ Rút ngẫu nhiên $3$ thẻ. Tính xác suất để tổng các số ghi trên thẻ chia hết cho $3.$
 
-**Hướng dẫn.** Số phần tử không gian mẫu: $\left| \Omega \right| = C_{50}^3 = 19600$.
+**Hướng dẫn.** Số phần tử không gian mẫu: $\left| \Omega \right| = C_{50}^3 = 19600.$
 
-Gọi $A$ là tập các thẻ đánh số $a$ sao cho $1 \le a \le 50$ và $a$ chia hết cho $3$. $A = \left\{ {3;6;…;48} \right\} \Rightarrow \left| A \right| = 16$.
+Gọi $A$ là tập các thẻ đánh số $a$ sao cho $1 \le a \le 50$ và $a$ chia hết cho $3.$ $A = \left\{ {3;6;…;48} \right\} \Rightarrow \left| A \right| = 16.$
 
-Gọi $B$ là tập các thẻ đánh số $b$ sao cho $1 \le b \le 50$ và $b$ chia $3$ dư $1$. $B = \left\{ {1;4;…;49} \right\} \Rightarrow \left| B \right| = 17$.
+Gọi $B$ là tập các thẻ đánh số $b$ sao cho $1 \le b \le 50$ và $b$ chia $3$ dư $1.$ $B = \left\{ {1;4;…;49} \right\} \Rightarrow \left| B \right| = 17.$
 
-Gọi $C$ là tập các thẻ đánh số $c$ sao cho $1 \le c \le 50$ và $c$ chia $3$ dư $2$. $C = \left\{ {2;5;…;59} \right\} \Rightarrow \left| C \right| = 17$.
+Gọi $C$ là tập các thẻ đánh số $c$ sao cho $1 \le c \le 50$ và $c$ chia $3$ dư $2.$ $C = \left\{ {2;5;…;59} \right\} \Rightarrow \left| C \right| = 17.$
 
 Với $D$ là biến cố: “Rút ngẫu nhiên $3$ thẻ được đánh số từ $1$ đến $50$ sao cho tổng các số ghi trên thẻ chia hết cho $3$”. Ta có $4$ trường hợp xảy ra:
 
@@ -1455,9 +1455,9 @@ Với $D$ là biến cố: “Rút ngẫu nhiên $3$ thẻ được đánh số 
 
 - **Trường hợp 4:** Rút mỗi tập $1$ thẻ: Có $16.17.17 = 4624$ (*cách*).
 
-Suy ra $\left| D \right| = 2.C_{17}^3 + C_{16}^3 + 4624 = 6544$.
+Suy ra $\left| D \right| = 2.C_{17}^3 + C_{16}^3 + 4624 = 6544.$
 
-Vậy xác suất cần tìm $P = \frac{{\left| D \right|}}{{\left| \Omega \right|}} = \frac{{6544}}{{19600}} = \frac{{409}}{{1225}}$.
+Vậy xác suất cần tìm $P = \frac{{\left| D \right|}}{{\left| \Omega \right|}} = \frac{{6544}}{{19600}} = \frac{{409}}{{1225}}.$
 
 **Câu 63.** Gọi A là tập hợp các số tự nhiên chẵn có 3 chữ số đôi một khác nhau. Chọn ngẫu nhiên một số trong tập hợp $A.$ Tính xác suất để số đó chia hết cho 5.
 
@@ -1465,9 +1465,9 @@ Vậy xác suất cần tìm $P = \frac{{\left| D \right|}}{{\left| \Omega \righ
 
 Vì $\overline {abc}$ là số tự nhiên chẵn nên $c \in \left\{ {0,2,4,6,8} \right\}$
 
-TH1: $c = 0$. Ta có $A_9^2 = 72$ số tự nhiên chẵn
+TH1: $c = 0.$ Ta có $A_9^2 = 72$ số tự nhiên chẵn
 
-TH2: $c = 2,4,6,8$. Ta có $4\left( {A_9^2 – A_8^1} \right) = 256$ số tự nhiên chẵn.
+TH2: $c = 2,4,6,8.$ Ta có $4\left( {A_9^2 – A_8^1} \right) = 256$ số tự nhiên chẵn.
 
 Vậy, số phần tử trong tập hợp A là: 328 số tự nhiên chẵn, suy ra $\left| \Omega \right| = 328$
 
@@ -1475,13 +1475,13 @@ Gọi X là biến cố số lấy ngẫu nhiên ra từ A chia hết cho 5, suy
 
 Vậy, xác suất xảy ra biến cố A là ${P_A} = \frac{{\left| {{\Omega _A}} \right|}}{{\left| \Omega \right|}} = \frac{{72}}{{328}} = \frac{9}{{41}}$
 
-**Câu 64.** Một người đang đứng tại gốc $O$ của trục tọa độ $Oxy$. Do say rượu nên người này bước ngẫu nhiên sang trái hoặc sang phải trên trục tọa độ với độ dài mỗi bước bằng 1 đơn vị. Xác suất để sau $10$ bước người này quay lại đúng gốc tọa độ $O$ bằng bao nhiêu?
+**Câu 64.** Một người đang đứng tại gốc $O$ của trục tọa độ $Oxy.$ Do say rượu nên người này bước ngẫu nhiên sang trái hoặc sang phải trên trục tọa độ với độ dài mỗi bước bằng 1 đơn vị. Xác suất để sau $10$ bước người này quay lại đúng gốc tọa độ $O$ bằng bao nhiêu?
 
-**Hướng dẫn.** Mỗi bước người này có $2$ lựa chọn sang trái hoặc phải nên số phần tử không gian mẫu là ${2^{10}}$.
+**Hướng dẫn.** Mỗi bước người này có $2$ lựa chọn sang trái hoặc phải nên số phần tử không gian mẫu là ${2^{10}}.$
 
-Để sau đúng $10$ bước người này quay lại đúng gốc tọa độ $O$ thì người này phải sang trái $5$ lần và sang phải $5$ lần, do đó số cách bước trong $10$ bước này là $C_{10}^5$.
+Để sau đúng $10$ bước người này quay lại đúng gốc tọa độ $O$ thì người này phải sang trái $5$ lần và sang phải $5$ lần, do đó số cách bước trong $10$ bước này là $C_{10}^5.$
 
-Xác suất cần tính bằng $\frac{{C_{10}^5}}{{{2^{10}}}} = \frac{{63}}{{256}}$.
+Xác suất cần tính bằng $\frac{{C_{10}^5}}{{{2^{10}}}} = \frac{{63}}{{256}}.$
 
 **Câu 65.** Chọn ngẫu nhiên một số từ tập các số tự nhiên có ba chữ số đôi một khác nhau. Xác suất để số được chọn có tổng các chữ số là lẻ bằng?
 
@@ -1499,20 +1499,20 @@ Th 2: hai chữ số chẵn một chữ số lẻ có:
 
 - $a$ lẻ,$b$chẵn, $c$chẵn có $5 \times 5 \times 4 = 100$ số.
 
-Suy ra $n(A) = 60 + 80 + 80 + 100 = 320$.
+Suy ra $n(A) = 60 + 80 + 80 + 100 = 320.$
 
 Suy ra xác suất biến cố $A$: $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{{320}}{{648}} = \frac{{40}}{{81}}.$
 
-**Câu 66.** Cho tập hợp $S = \left\{ {1;\,2;\,3;\,4;\,…..;\,17} \right\}$ gồm 17 số. Chọn ngẫu nhiên một tập con có ba phần tử của tập $S$. Tính xác suất để tập hợp được chọn có tổng các phần tử chia hết cho 3.
+**Câu 66.** Cho tập hợp $S = \left\{ {1;\,2;\,3;\,4;\,…..;\,17} \right\}$ gồm 17 số. Chọn ngẫu nhiên một tập con có ba phần tử của tập $S.$ Tính xác suất để tập hợp được chọn có tổng các phần tử chia hết cho 3.
 
-**A.**$\frac{{27}}{{34}}$**.  B.**$\frac{{23}}{{68}}$. **C.**$\frac{9}{{34}}$. **D.**$\frac{9}{{12}}$.
+**A.**$\frac{{27}}{{34}}$**.  B.**$\frac{{23}}{{68}}.$ **C.**$\frac{9}{{34}}.$ **D.**$\frac{9}{{12}}.$
 
 **Hướng dẫn.** Chọn **B**.
-Tập hợp các số từ tập $S$chia hết cho $3$là $\left\{ {3;6;9;12;15} \right\}$.
+Tập hợp các số từ tập $S$chia hết cho $3$là $\left\{ {3;6;9;12;15} \right\}.$
 
-Tập hợp các số từ tập $S$chia cho $3$ dư 1 là $\left\{ {1;4;7;10;13;16} \right\}$.
+Tập hợp các số từ tập $S$chia cho $3$ dư 1 là $\left\{ {1;4;7;10;13;16} \right\}.$
 
-Tập hợp các số từ tập $S$chia cho $3$ dư 2 là $\left\{ {2;5;8;11;14;17} \right\}$.
+Tập hợp các số từ tập $S$chia cho $3$ dư 2 là $\left\{ {2;5;8;11;14;17} \right\}.$
 
 - TH1: Ba số lấy từ tập $S$đều chia hết cho $3$: Có $C_5^3$ cách chọn.
 
@@ -1524,18 +1524,18 @@ Tập hợp các số từ tập $S$chia cho $3$ dư 2 là $\left\{ {2;5;8;11;14
 
 Vậy số phần tử của biến cố $A$: “ Chọn được ba số có tổng chia hết cho 3” là:
 
-$n\left( A \right) = C_5^3 + C_6^3 + C_6^3 + C_5^1.C_6^1.C_6^1 = 230$.
+$n\left( A \right) = C_5^3 + C_6^3 + C_6^3 + C_5^1.C_6^1.C_6^1 = 230.$
 
-Số phần tử không gian mẫu là $n\left( \Omega \right) = C_{17}^3$.
+Số phần tử không gian mẫu là $n\left( \Omega \right) = C_{17}^3.$
 
-Xác suất của biến cố $A$là $P\left( A \right) = \frac{{230}}{{C_{17}^3}} = \frac{{23}}{{68}}$.
+Xác suất của biến cố $A$là $P\left( A \right) = \frac{{230}}{{C_{17}^3}} = \frac{{23}}{{68}}.$
 
-**Câu 67.** Gọi M là tập tất cả các số tự nhiên có sáu chữ số đôi một khác nhau và có dạng $\overline {{a_1}{a_2}{a_3}{a_4}{a_5}{a_6}}$. Chọn ngẫu nhiên một số từ tập M. Tính xác suất để số được chọn là một số chẵn, đồng thời thỏa mãn ${a_1} > {a_2} > {a_3} > {a_4} > {a_5} > {a_6}.$
+**Câu 67.** Gọi M là tập tất cả các số tự nhiên có sáu chữ số đôi một khác nhau và có dạng $\overline {{a_1}{a_2}{a_3}{a_4}{a_5}{a_6}}.$ Chọn ngẫu nhiên một số từ tập M. Tính xác suất để số được chọn là một số chẵn, đồng thời thỏa mãn ${a_1} > {a_2} > {a_3} > {a_4} > {a_5} > {a_6}.$
 
 - **A.** $\frac{{35}}{{34020}}$
-- **B.** $\frac{{37}}{{34020}}$.
-- **C.** $\frac{{37}}{{3402}}$.
-- **D.** $\frac{{74}}{{34020}}$.
+- **B.** $\frac{{37}}{{34020}}.$
+- **C.** $\frac{{37}}{{3402}}.$
+- **D.** $\frac{{74}}{{34020}}.$
 
 **Hướng dẫn.** Chọn **B**.
 Gọi *A* là biến cố “chọn ra được một số tự nhiên chẵn từ tập *M* đồng thời thỏa mãn ${a_1} > {a_2} > {a_3} > {a_4} > {a_5} > {a_6}$”. Khi đó: $n\left( M \right) = 9.A_9^5$ (số có sáu chữ số đôi một khác nhau thì ${a_1}$ có chín cách chọn, $\overline {{a_2}{a_3}{a_4}{a_5}{a_6}}$ là chỉnh hợp chập 5 của 9 phần tử nên có $A_9^5$).
@@ -1548,7 +1548,7 @@ Gọi *A* là biến cố “chọn ra được một số tự nhiên chẵn t�
 
 Suy ra $n\left( A \right) = C_9^5 + C_7^5 + C_5^5 = 148$
 
-Do đó $P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{148}}{{9.A_9^5}} = \frac{{37}}{{34020}}$.
+Do đó $P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{148}}{{9.A_9^5}} = \frac{{37}}{{34020}}.$
 
 **Câu 68.** Cho tập hợp *A* ={1; 2; 3; 4; 5}. Gọi *S* là tập hợp tất cả các số tự nhiên có ít nhất 3 chữ số đôi một khác nhau được lập thành từ các chữ số thuộc tập#*A*. Chọn ngẫu nhiên một số từ* S*, tính xác xuất để số được chọn có tổng các chữ số bằng 10.
 
@@ -1558,17 +1558,17 @@ Các bộ số có tổng 10: $\left\{ {\left( {2,3,5} \right);\left( {1,4,5} \r
 
 $n\left( B \right) = 2{P_3} + {P_4} = 36 \Rightarrow P\left( B \right) = \frac{{n\left( B \right)}}{{n\left( S \right)}} = \frac{{36}}{{300}} = \frac{3}{{25}}$
 
-**Câu 69.** Có $60$ tấm thẻ đánh số từ $1$ đến $50$. Rút ngẫu nhiên $3$ thẻ. Tính xác suất để tổng các số ghi trên thẻ chia hết cho $3$.
+**Câu 69.** Có $60$ tấm thẻ đánh số từ $1$ đến $50.$ Rút ngẫu nhiên $3$ thẻ. Tính xác suất để tổng các số ghi trên thẻ chia hết cho $3.$
 
-**Hướng dẫn.** Số phần tử không gian mẫu: $\left| \Omega \right| = C_{50}^3 = 19600$.
+**Hướng dẫn.** Số phần tử không gian mẫu: $\left| \Omega \right| = C_{50}^3 = 19600.$
 
-Gọi $A$ là tập các thẻ đánh số $a$ sao cho $1 \le a \le 50$ và $a$ chia hết cho $3$.
+Gọi $A$ là tập các thẻ đánh số $a$ sao cho $1 \le a \le 50$ và $a$ chia hết cho $3.$
 
-$A = \left\{ {3;6;…;48} \right\} \Rightarrow \left| A \right| = 16$.
+$A = \left\{ {3;6;…;48} \right\} \Rightarrow \left| A \right| = 16.$
 
-Gọi $B$ là tập các thẻ đánh số $b$ sao cho $1 \le b \le 50$ và $b$ chia $3$ dư $1$. $B = \left\{ {1;4;…;49} \right\} \Rightarrow \left| B \right| = 17$.
+Gọi $B$ là tập các thẻ đánh số $b$ sao cho $1 \le b \le 50$ và $b$ chia $3$ dư $1.$ $B = \left\{ {1;4;…;49} \right\} \Rightarrow \left| B \right| = 17.$
 
-Gọi $C$ là tập các thẻ đánh số $c$ sao cho $1 \le c \le 50$ và $c$ chia $3$ dư $2$. $C = \left\{ {2;5;…;59} \right\} \Rightarrow \left| C \right| = 17$.
+Gọi $C$ là tập các thẻ đánh số $c$ sao cho $1 \le c \le 50$ và $c$ chia $3$ dư $2.$ $C = \left\{ {2;5;…;59} \right\} \Rightarrow \left| C \right| = 17.$
 
 Với $D$ là biến cố: “Rút ngẫu nhiên $3$ thẻ được đánh số từ $1$ đến $50$ sao cho tổng các số ghi trên thẻ chia hết cho $3$”. Ta có $4$ trường hợp xảy ra:
 
@@ -1580,9 +1580,9 @@ Với $D$ là biến cố: “Rút ngẫu nhiên $3$ thẻ được đánh số 
 
 - **Trường hợp 4:** Rút mỗi tập $1$ thẻ: Có $16.17.17 = 4624$ (*cách*).
 
-Suy ra $\left| D \right| = 2.C_{17}^3 + C_{16}^3 + 4624 = 6544$.
+Suy ra $\left| D \right| = 2.C_{17}^3 + C_{16}^3 + 4624 = 6544.$
 
-Vậy xác suất cần tìm $P = \frac{{\left| D \right|}}{{\left| \Omega \right|}} = \frac{{6544}}{{19600}} = \frac{{409}}{{1225}}$.
+Vậy xác suất cần tìm $P = \frac{{\left| D \right|}}{{\left| \Omega \right|}} = \frac{{6544}}{{19600}} = \frac{{409}}{{1225}}.$
 
 **Câu 70.** Trên mặt phẳng $Oxy,$ ta xét một hình chữ nhật $ABCD$ với các điểm $A\left( { -2;0} \right),$ $B\left( { -2;2} \right),$ $C\left( {4;2} \right),$ $D\left( {4;0} \right)$ (hình vẽ). Một con châu chấu nhảy trong hình chữ nhật đó tính cả trên cạnh hình chữ nhật sao cho chân nó luôn đáp xuống mặt phẳng tại các điểm có tọa độ nguyên (tức là điểm có cả hoành độ và tung độ đều nguyên). Tính xác suất để nó đáp xuống các điểm $M\left( {x;y} \right)$ mà $x + y < 2.$ 
  <strong>Hướng dẫn. </strong> Số các điểm có tọa độ nguyên thuộc hình chữ nhật là $7.3 = 21$ điểm vì
@@ -1612,7 +1612,7 @@ Vậy xác suất cần tính $P = \frac{9}{{21}} = \frac{3}{7}.$
 
 A: “Số được chọn có tổng các chữ số là số lẻ”
 
-- Trường hợp 1: Số được chọn có 3 chữ số lẻ. Số cách chọn ra và sắp xếp ba chữ số lẻ là $A_5^3$.
+- Trường hợp 1: Số được chọn có 3 chữ số lẻ. Số cách chọn ra và sắp xếp ba chữ số lẻ là $A_5^3.$
 
 - Trường hợp 2: Số được chọn gồm có 2 chữ số chẵn và 1 chữ số lẻ.
 
@@ -1620,11 +1620,11 @@ Số cách chọn ra và sắp xếp 2 chữ số là số chẵn và 1 chữ s�
 
 - Số cách chọn ra và sắp xếp 2 chữ số là số chẵn và 1 chữ số lẻ có số 0 đứng đầu là $C_4^1.C_5^1.2!$
 
-Vậy nên số số thỏa biến cố A là: $C_5^2.C_5^1.3! – C_4^1.C_5^1.2! = 260$.
+Vậy nên số số thỏa biến cố A là: $C_5^2.C_5^1.3! – C_4^1.C_5^1.2! = 260.$
 
 Số kết quả thuận lợi cho biến cố A là $n(A) = 60 + 260 = 320$
 
-Vậy $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{{320}}{{648}} = \frac{{40}}{{81}}$.
+Vậy $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{{320}}{{648}} = \frac{{40}}{{81}}.$
 
 **Câu 72.** Gọi X là tập hợp tất cả các số tự nhiên có 8 chữ số được lập từ các chữ số 1, 2, 3, 4, 5, 6, 7, 8, 9. Lấy ngẫu nhiên một số trong tập hợp X. Gọi A là biến cố lấy được số có đúng hai chữ số 1, có đúng hai chữ số 2, bốn chữ số còn lại đôi một khác nhau, đồng thời các chữ số giống nhau không đứng liền kề nhau. Xác suất của biến cố A bằng bao nhiêu?
 
@@ -1657,7 +1657,7 @@ Vậy $n(A) = 352.800 – 151.200 = 201.600 \Rightarrow p(A) = \frac{{201600}}{{
 | 1 | T.A | 2 | T.A | 3 | T.A | 4 | T.A | 5 | T.A | 6 | T.A | 7 | T.A | 8 |
 
 
-Gọi $\Omega$ là biến cố “xếp $14$ quyển sách lên kệ sách một cách tùy ý” $\Rightarrow n\left( \Omega \right) = 14!$.
+Gọi $\Omega$ là biến cố “xếp $14$ quyển sách lên kệ sách một cách tùy ý” $\Rightarrow n\left( \Omega \right) = 14!.$
 
 Gọi $A$ là biến cố “xếp $14$ cuốn sách lên kệ sách sao cho hai cuốn sách cùng môn không ở cạnh nhau”.
 
@@ -1681,11 +1681,11 @@ Gọi $A$ là biến cố “xếp $14$ cuốn sách lên kệ sách sao cho hai
 
 Vậy ta có số cách xếp $1$ cặp sách Văn – Toán chung vào ngăn $2$, các ngăn $3,{\rm{ }}4,{\rm{ }}5,{\rm{ }}6,{\rm{ }}7$ xếp tùy ý số sách còn lại là $3.4.2!.5!$ cách.
 
-Tương tự cho xếp cặp sách Văn – Toán lần lượt vào các ngăn $3,{\rm{ }}4,{\rm{ }}5,{\rm{ }}6,{\rm{ }}7$.
+Tương tự cho xếp cặp sách Văn – Toán lần lượt vào các ngăn $3,{\rm{ }}4,{\rm{ }}5,{\rm{ }}6,{\rm{ }}7.$
 
 Số trường hợp thuận lợi của biến cố là $n\left( A \right) = 7!\left( {2.7! + 3.4.2.6.5!} \right)$
 
-Vậy $P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{19}}{{12012}}$.
+Vậy $P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{19}}{{12012}}.$
 
 **Câu 74.** Xếp ngẫu nhiên bốn bạn nam và năm bạn nữ ngồi vào chín ghế kê theo hàng ngang. Xác suất để có được năm bạn nữ ngồi cạnh nhau bằng?
 
@@ -1693,4 +1693,4 @@ Vậy $P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} 
 
 Gọi biến cố $A:$ “Xếp năm bạn nữ ngồi cạnh nhau” $\Rightarrow n\left( A \right) = C_5^1 \times 5! \times 4! = 14400$
 
-Khi đó: $P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{14400}}{{362880}} = \frac{5}{{126}}$.
+Khi đó: $P\left( A \right) = \frac{{n\left( A \right)}}{{n\left( \Omega \right)}} = \frac{{14400}}{{362880}} = \frac{5}{{126}}.$

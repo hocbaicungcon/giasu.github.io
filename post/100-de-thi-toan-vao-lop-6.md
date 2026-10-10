@@ -54,11 +54,11 @@ $$
 
 2. Nếu bớt $\frac {1}{5}$ số vải thiều mà dãy B đã mua thì số vải thiều của dãy C bằng $\frac {5}{6}$ số vải thiều của dãy B khi đó. Tính khối lượng vải thiều thực tế mỗi dãy B, dãy C đã mua ủng hộ.
 
-**Câu 4:** Cho hình thang $ABCD$ có đáy $AB = \frac {2}{5}DC$.
+**Câu 4:** Cho hình thang $ABCD$ có đáy $AB = \frac {2}{5}DC.$
 
-1. So sánh diện tích của hai tam giác $ABD$ và $CBD$.
+1. So sánh diện tích của hai tam giác $ABD$ và $CBD.$
 
-2. Kéo dài $DA$ và $CB$ cắt nhau tại $M$. So sánh $MB$ và $BC$.
+2. Kéo dài $DA$ và $CB$ cắt nhau tại $M.$ So sánh $MB$ và $BC.$
 
 **Câu 5:** Khi trang trí thư viện trong ngày hội đọc sách trường em, các bạn học sinh khối 5 đã dùng các bông hoa (mỗi bông hoa một màu) được xếp theo thứ tự: *xanh, đỏ, trắng, tím, vàng, xanh, đỏ, trắng, tím, vàng, …* và cứ lặp lại như vậy. Hỏi nếu dùng hết 2021 bông hoa theo thứ tự trên thì cần bao nhiêu bông hoa màu xanh?
 
@@ -74,13 +74,13 @@ $$
 \left(1-\frac{1}{4}\right) \times\left(1-\frac{1}{9}\right) \times\left(1-\frac{1}{16}\right) \times\left(1-\frac{1}{25}\right) \times\left(1-\frac{1}{36}\right)
 $$
 
-**Bài 2.** Tìm $x$ biết: $(x+4)+(x+6)+(x+8)+\ldots+(x+26)=210$.
+**Bài 2.** Tìm $x$ biết: $(x+4)+(x+6)+(x+8)+\ldots+(x+26)=210.$
 
 **Bài 3.** Tìm một số tự nhiên có chữ số hàng đơn vị là $7$ và khi xoá chữ số $7$ đó thì được một số mới kém số đã cho $295$ đơn vị.
 
 **Bài 4.** Hiện nay tuổi mẹ gấp $3$ lần tuổi con. Sau $4$ năm nữa tuổi mẹ gấp $2{,}5$ lần tuổi con. Tính tuổi con hiện nay.
 
-**Bài 5.** Tìm các chữ số $a, b$ khác $0$ thoả mãn: $a\times b\times \overline{ab}=\overline{bbb}$.
+**Bài 5.** Tìm các chữ số $a, b$ khác $0$ thoả mãn: $a\times b\times \overline{ab}=\overline{bbb}.$
 
 **Bài 6.** Bạn Bắc dùng các khối lập phương nhỏ cạnh $1$dm xếp thành khối lập phương lớn có thể tích $64$dm3. Sau đó bạn lấy ra $4$ khối lập phương nhỏ ở bốn đỉnh phía trên của khối lập phương lớn. Tính diện tích toàn phần của khối còn lại.
 
@@ -114,25 +114,25 @@ $$
 
 **Bài 3.** Tìm một số có hai chữ số, biết rằng nếu thêm chữ số $0$ vào giữa hai chữ số đó thì được một số có ba chữ số và gấp $9$ lần số ban đầu.
 
-**Bài 4.** Phải cần ít nhất bao nhiêu chữ số $8$ để tạo thành ra các số có tổng bằng $1000$.
+**Bài 4.** Phải cần ít nhất bao nhiêu chữ số $8$ để tạo thành ra các số có tổng bằng $1000.$
 
 **Bài 5.** Một ca nô đi xuôi dòng từ A đến B mất $3$ giờ và ngược dòng từ B về A mất $5$ giờ. Hỏi một đám bèo tự trôi từ A đến B mất bao nhiêu giờ?
 
 **Bài 6.** Một hình chữ nhật có chiều dài gấp rưỡi chiều rộng. Nếu mỗi chiều tăng thêm 1 m thì được hình chữ nhật mới có diện tích tăng thêm $26$ m2. Tính chu vi hình chữ nhật ban đầu.
 
-**Bài 7.** Cho tam giác $ABC$ có diện tích bằng $18$ cm2. Biết $DA = 2DB$; $EC = 3EA$; $MC = MB$ (hình vẽ). Tính tổng diện tích hai tam giác $MDB$ và $MCE$.
+**Bài 7.** Cho tam giác $ABC$ có diện tích bằng $18$ cm2. Biết $DA = 2DB$; $EC = 3EA$; $MC = MB$ (hình vẽ). Tính tổng diện tích hai tam giác $MDB$ và $MCE.$
 
 ![100 đề thi Toán vào lớp 6 chuyên 3](assets/images/100-de-thi-toan-vao-lop-6-De-vao-lop-6-AMS-2006.jpg)
 
 **Bài 8.** Bác Tư thu hoạch xoài và cho vào hộp mang đi bán. Nếu mỗi hộp chứa $10$ quả thì còn thừa $8$ quả, còn mỗi hộp chứa $12$ quả thì thiếu $4$ quả. Hỏi số xoài là bao nhiêu quả, biết số xoài của bác Tư nhiều hơn $200$ và ít hơn $300$ quả.
 
-**Bài 9.** Một số được viết bằng $2006$ chữ số $7$. Hỏi phải cộng thêm vào số đó ít nhất bao nhiêu đơn vị để được một số chia hết cho $63$?
+**Bài 9.** Một số được viết bằng $2006$ chữ số $7.$ Hỏi phải cộng thêm vào số đó ít nhất bao nhiêu đơn vị để được một số chia hết cho $63$?
 
 **Bài 10.** Cô Thu trước khi đi làm đặt lên bàn một hộp bánh và dặn ba người con của mình: Khi đi học về mỗi con lấy một phần ba số bánh. Hoa về đầu tiên và lấy đi một phần ba số bánh rồi bỏ đi chơi. Hùng về lại lấy một phần ba số bánh còn lại trong hộp ăn xong rồi đi ngủ. Mai về sau cùng cũng lấy một phần ba số bánh mà nó thấy. Hỏi hộp bánh có bao nhiêu cái, biết số bánh trong hộp còn lại là $8$ cái.
 
 ### Phần 2: Bài tập học sinh phải trình bày lời giải (mỗi bài 2,5 điểm)
 
-**Bài 1.** Người ta viết lên bảng $10$ số từ $1$ đến $10$. Lần thứ nhất xoá đi $2$ số bất kì và viết tổng hai số đó lên bảng, lúc này trên bảng còn $9$ số. Lần thứ hai xoá đi hai số bất kì và viết tổng hai số đó lên bảng và tiếp tục làm như vậy. Hỏi sau lần thứ chín, trên bảng còn lại một số là số chẵn hay số lẻ? Tại sao?
+**Bài 1.** Người ta viết lên bảng $10$ số từ $1$ đến $10.$ Lần thứ nhất xoá đi $2$ số bất kì và viết tổng hai số đó lên bảng, lúc này trên bảng còn $9$ số. Lần thứ hai xoá đi hai số bất kì và viết tổng hai số đó lên bảng và tiếp tục làm như vậy. Hỏi sau lần thứ chín, trên bảng còn lại một số là số chẵn hay số lẻ? Tại sao?
 
 **Bài 2.** Trong các số tự nhiên từ $100$ đến $10000$ có bao nhiêu số mà trong cách viết của chúng có đúng $3$ chữ số như nhau? Vì sao?
 
@@ -146,7 +146,7 @@ $$
 \frac{4,29 \times 1230-429 \times 2,3}{30-15+36-18+42-21+\ldots+96-48+102-51}
 $$
 
-**Bài 2.** Tìm một số tự nhiên biết rằng số đó chia $5$ dư $4$, chia $8$ dư $4$ và hiệu của các thương bằng $426$.
+**Bài 2.** Tìm một số tự nhiên biết rằng số đó chia $5$ dư $4$, chia $8$ dư $4$ và hiệu của các thương bằng $426.$
 
 **Bài 3.** Một người đi ô tô từ A đến B với vận tốc $40$ km/giờ, từ B về A bằng xe máy với vận tốc $30$ km/giờ, sau đó lại đi xe đạp từ A đến B với vận tốc $15$ km/giờ. Tính vận tốc trung bình của người đó trong cả quá trình đi.
 
@@ -154,7 +154,7 @@ $$
 
 ![100 đề thi Toán vào lớp 6 chuyên 4](assets/images/100-de-thi-toan-vao-lop-6-De-vao-lop-6-AMS-2005.jpg)
 
-**Bài 5.** Biết $a > 1$ và $\overline{ab} \times \overline{cd}=\overline{bbb}$, tìm $\overline{cd}$.
+**Bài 5.** Biết $a > 1$ và $\overline{ab} \times \overline{cd}=\overline{bbb}$, tìm $\overline{cd}.$
 
 **Bài 6.** Hai thùng có tất cả $120$ lít dầu. Đổ từ thùng 1 sang thùng 2 số lít dầu bằng số dầu ở thùng 2. Sau đó đổ từ thùng 2 sang thùng 1 số lít dầu bằng số dầu đang có ở thùng 1 thì số dầu ở hai thùng bằng nhau. Tính số lít dầu ở mỗi thùng lúc đầu.
 
@@ -168,7 +168,7 @@ $$
 \left(\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}\right): \mathrm{x}=\frac{1}{2}+\frac{1}{6}+\frac{1}{12}+\frac{1}{20}+\ldots+\frac{1}{132}
 $$
 
-**Bài 10.** Bảy năm về trước tổng số tuổi của ba mẹ con bằng $48$. Sáu năm sau tuổi mẹ hơn con nhỏ $30$ tuổi và hơn con lớn $24$ tuổi. Tính tuổi mẹ hiện nay?
+**Bài 10.** Bảy năm về trước tổng số tuổi của ba mẹ con bằng $48.$ Sáu năm sau tuổi mẹ hơn con nhỏ $30$ tuổi và hơn con lớn $24$ tuổi. Tính tuổi mẹ hiện nay?
 
 ### Phần 2: Bài tập học sinh phải trình bày lời giải (mỗi bài 2,5 điểm)
 
@@ -188,11 +188,11 @@ $$
 A = 1 + 2 + 3 + … + n
 $$
 
- với $n$ là số tự nhiên, không thể tận cùng là $2, 4, 7, 9$.
+ với $n$ là số tự nhiên, không thể tận cùng là $2, 4, 7, 9.$
 
 **Bài 3.** Năm học sinh được thưởng 35 quyển vở. Số vở của học sinh được thưởng nhiều nhất gấp 4 số vở của học sinh được thưởng ít nhất. Hỏi mỗi học sinh có thể được thưởng bao nhiêu quyển vở, biết rằng số vở được thưởng của mỗi học sinh khác nhau?
 
-**Bài 4.** Hãy điền các số vào các ô còn trống của bảng dưới đây sao cho tổng các số trong ba ô liền nhau bất kì theo hàng dọc cũng như hàng ngang đều bằng $10$.
+**Bài 4.** Hãy điền các số vào các ô còn trống của bảng dưới đây sao cho tổng các số trong ba ô liền nhau bất kì theo hàng dọc cũng như hàng ngang đều bằng $10.$
 
 ![100 đề thi Toán vào lớp 6 chuyên](assets/images/100-de-thi-toan-vao-lop-6-de-thi-vao-lop-6-chuyen.png)
 
@@ -227,7 +227,7 @@ b) $\displaystyle B=\frac{\frac{2}{15}+\frac{5}{3}-\frac{3}{5}}{4 \frac{2}{3}-2 
 
 **Bài 2.** Một người bán hàng, lần thứ nhất bán được $\frac{1}{4}$ số trứng. Lần thứ hai bán được $\frac{2}{5}$ số trứng và còn lại $21$ quả. Hỏi người đó bán được bao nhiêu quả trứng và mỗi lần bán được bao nhiêu quả?
 
-**Bài 3.** Cho  hai phân số $7/9$ và $5/11$. Hãy tìm phân số $a/b$  sao cho đem mỗi phân số đã cho trừ phân số $a/b$ thì được phân số mới có tỉ số là $5$.
+**Bài 3.** Cho  hai phân số $7/9$ và $5/11.$ Hãy tìm phân số $a/b$  sao cho đem mỗi phân số đã cho trừ phân số $a/b$ thì được phân số mới có tỉ số là $5.$
 
 **Bài 4.** Ba người cùng làm chung một công việc thì sau 3 giờ xong. Nếu làm một mình thì người thứ nhất làm công việc ấy mất 8 giờ mới xong và người thứ hai làm công việc một mình ấy mất 12 giờ mới xong. Hỏi người thứ ba làm một mình công việc ấy mất bao lâu mới xong ?
 
@@ -242,13 +242,13 @@ a) $A=(2,872 \times 0,25+2,166: 0,1) \times 0,05$
 
 b) $\displaystyle B=\frac{2-\frac{1}{4}+\frac{1}{3}-\frac{3}{5}}{3-\frac{1}{5}-\frac{5}{3}}$
 
-**Bài 2.** Hai số tự nhiên có tổng bằng $694$. Hãy tìm hai số ấy biết rằng nếu đem số lớn chia cho số nhỏ thì thương là $4$ và dư $64$.
+**Bài 2.** Hai số tự nhiên có tổng bằng $694.$ Hãy tìm hai số ấy biết rằng nếu đem số lớn chia cho số nhỏ thì thương là $4$ và dư $64.$
 
 **Bài 3.** Một hình chữ nhật nếu giảm chiều dài đi $\frac{1}{7}$ độ dài của nó thì phải tăng chiều rộng thêm bao nhiêu để cho diện tích hình chữ nhật không đổi.
 
-**Bài 4.** Ba bạn Thủy, Hồng, Loan làm bài kiểm tra toán và được tổng số điểm là $28$. Tìm điểm riêng của mỗi bạn biết rằng điểm của bạn Hồng cao nhất và điểm của ba bạn đều là số tự nhiên.
+**Bài 4.** Ba bạn Thủy, Hồng, Loan làm bài kiểm tra toán và được tổng số điểm là $28.$ Tìm điểm riêng của mỗi bạn biết rằng điểm của bạn Hồng cao nhất và điểm của ba bạn đều là số tự nhiên.
 
-**Bài 5.** Cho phân số $34/41$ hãy tìm số tự nhiên m biết rằng nếu bớt $m$ ở tử số và thêm $m$ ở mẫu số của phân số đã cho thì ta được phân số mới và rút gọn phân số mới được phân số $2/3$.
+**Bài 5.** Cho phân số $34/41$ hãy tìm số tự nhiên m biết rằng nếu bớt $m$ ở tử số và thêm $m$ ở mẫu số của phân số đã cho thì ta được phân số mới và rút gọn phân số mới được phân số $2/3.$
 
 ## 5. Đề thi Toán vào lớp 6 Chuyên TRẦN ĐẠI NGHĨA năm 2006
 
@@ -259,7 +259,7 @@ a) $A=(0,872: 4,36+9,156: 3,27) \times 1,56-0,34 \times 2$
 
 b) $\displaystyle B=\frac{5-\frac{1}{3}+\frac{1}{2}-\frac{3}{4}}{3+\frac{1}{8}-\frac{5}{3}}$, viết kết quả dưới dạng hỗn số.
 
-**Bài 2.** Ba số tự nhiên có tổng là $72$. Hãy tìm ba số ấy biết $\frac{1}{4}$ số thứ nhất bằng $\frac{1}{3}$ số thứ hai và bằng $\frac{1}{5}$ số thứ ba.
+**Bài 2.** Ba số tự nhiên có tổng là $72.$ Hãy tìm ba số ấy biết $\frac{1}{4}$ số thứ nhất bằng $\frac{1}{3}$ số thứ hai và bằng $\frac{1}{5}$ số thứ ba.
 
 **Bài 3.** Sân vườn hình chữ nhật có chu vi là $110$ m. Tính diện tích sân vườn biết rằng nếu bớt chiều dài đi $\frac{2}{3}$ chiều dài và bớt chiều rộng đi $\frac{3}{5}$ chiều rộng thì sân vườn trở thành hình vuông.
 
@@ -280,7 +280,7 @@ b) $\displaystyle B=\frac{\left(4,08-\frac{2}{25}\right): \frac{4}{17}}{\left(6 
 
 **Bài 3.** Một miếng vườn hình chữ nhật có chiều dài bằng $2$ lần chiều rộng. Nếu giảm chiều dài đi $2$ m và tăng chiều rộng lên $2$ m thì diện tích miếng vườn tăng $12$ m2. Hỏi diện tích miếng vườn lúc đầu là bao nhiêu?
 
-**Bài 4.** Hiện nay tuổi cha gấp $4$ lần tuổi con và cho đến năm mà tuổi con gấp đôi tuổi con hiện nay thì tổng số tuổi của hai cha con là $91$. Hỏi tuổi cha hiện nay là bao nhiêu?
+**Bài 4.** Hiện nay tuổi cha gấp $4$ lần tuổi con và cho đến năm mà tuổi con gấp đôi tuổi con hiện nay thì tổng số tuổi của hai cha con là $91.$ Hỏi tuổi cha hiện nay là bao nhiêu?
 
 **Bài 5.** Tìm số tự nhiên có $3$ chữ số. Biết rằng số ấy gấp $6$ lần số được tạo ra do ta bỏ ra chữ số hàng trăm của nó.
 
@@ -298,7 +298,7 @@ b) $(0,872 \times 2{,}5 + 4,578: 30)\times 500-36{,}18$
 
 **Bài 4.** Năm nay con $4$ tuổi và kém hơn cha $30$ tuổi. Hỏi sau bao nhiêu năm nữa thì hai lần tuổi cha bằng $7$ lần tuổi con?
 
-**Bài 5.** Tìm hai phân số biết rằng nếu lấy phân số thứ nhất cộng với phân số thứ hai thì được $\frac{11}{15}$ và phân số thứ nhất chia cho phân số thứ hai thì được $\frac{6}{5}$.
+**Bài 5.** Tìm hai phân số biết rằng nếu lấy phân số thứ nhất cộng với phân số thứ hai thì được $\frac{11}{15}$ và phân số thứ nhất chia cho phân số thứ hai thì được $\frac{6}{5}.$
 
 **Bài 6.** Tìm ba số tự nhiên có tổng là $96$ biết rằng $\frac{1}{4}$ số thứ nhất bằng $\frac{1}{3}$ số thứ hai và bằng $\frac{1}{5}$ số thứ ba.
 
@@ -312,13 +312,13 @@ a) $(58,76 – 7,75 \times 2 + 72,72: 3): 13,5$
 
 b) $(4,578: 3,27 + 0,872: 2,18) \times 6,04-3,241$
 
-**Bài 3.** Tích hai số là $5037$. Nếu giảm một trong hai số đi $7$ đơn vị thì tích số giảm đi $483$. Tìm hai số.
+**Bài 3.** Tích hai số là $5037.$ Nếu giảm một trong hai số đi $7$ đơn vị thì tích số giảm đi $483.$ Tìm hai số.
 
 **Bài 4.** Một hình thang có đáy lớn là $40$ cm, đáy bé bằng $\frac{3}{5}$ đáy lớn. Biết diện tích hình thang là $0{,}272$ m2. Tính đường cao của hình thang ấy.
 
-**Bài 5.** Tìm một phân số nếu cộng thêm $4$ vào tử số và giữ nguyên mẫu số thì ta được phân số mới bằng $1$. Nếu giữ nguyên tử số và cộng thêm $3$ vào mẫu số thì ta được phân số mới bằng $\frac{1}{2}$.
+**Bài 5.** Tìm một phân số nếu cộng thêm $4$ vào tử số và giữ nguyên mẫu số thì ta được phân số mới bằng $1.$ Nếu giữ nguyên tử số và cộng thêm $3$ vào mẫu số thì ta được phân số mới bằng $\frac{1}{2}.$
 
-**Bài 6.** Tìm hai số biết thương giữa hai số ấy bằng $0{,}0625$ và hiệu giữa hai số ấy là $7{,}5$.
+**Bài 6.** Tìm hai số biết thương giữa hai số ấy bằng $0{,}0625$ và hiệu giữa hai số ấy là $7{,}5.$
 
 ## 1. Đề thi Toán vào lớp 6 Chuyên TRẦN ĐẠI NGHĨA năm 2002
 

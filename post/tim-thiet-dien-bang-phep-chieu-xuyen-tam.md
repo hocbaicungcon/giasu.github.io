@@ -39,7 +39,7 @@ Trong không gian, cho một điểm S và một mặt phẳng (P) không đi qu
 
 ## 2. Các ví dụ xác định thiết diện bằng phép chiếu xuyên tâm
 
-**Bài toán.** Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $(\alpha)$.
+**Bài toán.** Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng $(\alpha).$
 
 ### Phương pháp phép chiếu xuyên tâm (Inner Projection Method)
 
@@ -56,11 +56,11 @@ Trong không gian, cho một điểm S và một mặt phẳng (P) không đi qu
 **Hướng dẫn.
 - Rõ ràng vì đáy là một tứ giác bất kỳ, nên có nhiều khả năng kéo dài các cạnh đáy chúng sẽ không thể cắt nhau. Do đó ta không thể sử dụng [phương pháp giao tuyến gốc](/bai-viet/xac-dinh-thiet-dien-bang-phuong-phap-giao-tuyen-goc.html).
 
-- Trong mặt phẳng $(ABC’)$, ta chọn một tam giác làm tam giác cơ sở, chính là tam giác $ABC’$  luôn. Ta tìm ảnh của nó qua phép chiếu xuyên tâm $S$ lên mặt phẳng đáy, chính là tam giác $ABC$.
+- Trong mặt phẳng $(ABC’)$, ta chọn một tam giác làm tam giác cơ sở, chính là tam giác $ABC’$  luôn. Ta tìm ảnh của nó qua phép chiếu xuyên tâm $S$ lên mặt phẳng đáy, chính là tam giác $ABC.$
 
-- Tiếp theo, ta xác định giao điểm của tam giác $ABC$ này với các cạnh và đường chéo của đáy. Ta tìm thấy $O$ là giao điểm của $AC$ và $BD$.
+- Tiếp theo, ta xác định giao điểm của tam giác $ABC$ này với các cạnh và đường chéo của đáy. Ta tìm thấy $O$ là giao điểm của $AC$ và $BD.$
 
-  Lưu ý rằng, điểm $O$ trên mặt phẳng đáy, mà $O$ thuộc vào cạnh $AC$, cạnh $AC$ lại là ảnh của cạnh $AC’$ qua phép chiếu. Điều này chứng tỏ phải có một điểm nào đó (tạm đặt tên là $I$), mà qua phép chiếu thì tạo thành điểm $O$. Mục đích của ta là đi tìm điểm $I$ này.
+  Lưu ý rằng, điểm $O$ trên mặt phẳng đáy, mà $O$ thuộc vào cạnh $AC$, cạnh $AC$ lại là ảnh của cạnh $AC’$ qua phép chiếu. Điều này chứng tỏ phải có một điểm nào đó (tạm đặt tên là $I$), mà qua phép chiếu thì tạo thành điểm $O.$ Mục đích của ta là đi tìm điểm $I$ này.
 
 - Trong mặt phẳng $(SAC)$ giao điểm của $SO$ và $AC’$ chính là điểm $I$ nói trên. Lúc này, mặt phẳng $(ABC,)$ xuất hiện một đường thẳng mới là đường thẳng $BI$, mà đường thẳng này có thể cắt được $SD.$
 

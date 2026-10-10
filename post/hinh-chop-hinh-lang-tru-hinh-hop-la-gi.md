@@ -21,7 +21,7 @@ Xem thêm [38+ tài liệu hình học không gian 11 hay nhất](/bai-viet/ton
 
 ### Hình chóp là gì?
 
-Cho đa giác $A_1A_2A_3… A_n$ nằm trong mặt phẳng $(P)$ và một điểm $S$ nằm ngoài mặt phẳng $(P)$. Nối $S$ với các đỉnh của đa giác ta được $n$ miền tam giác $SA_1A_2, SA_2A_3,…, SA_nA_1$. Hình tạo bởi $n$ tam giác đó và đa giác $A_1A_2A_3… A_n$ gọi là hình chóp và kí hiệu là $S.A_1A_2A_3… A_n$.
+Cho đa giác $A_1A_2A_3… A_n$ nằm trong mặt phẳng $(P)$ và một điểm $S$ nằm ngoài mặt phẳng $(P).$ Nối $S$ với các đỉnh của đa giác ta được $n$ miền tam giác $SA_1A_2, SA_2A_3,…, SA_nA_1.$ Hình tạo bởi $n$ tam giác đó và đa giác $A_1A_2A_3… A_n$ gọi là hình chóp và kí hiệu là $S.A_1A_2A_3… A_n.$
 
 Trong đó:
 
@@ -85,7 +85,7 @@ Như vậy, từ định nghĩa suy ra:
 
 ### Hình chóp cụt đều
 
-Cho hình chóp cụt đều $S.A_1A_2…A_n$. Một mặt phẳng $(P)$ song song với mặt đáy cắt các cạnh bên $SA_1, SA_2,…,SA_n$ lần lượt tại $A’_1, A’_2,…, A’_n$. Phần hình  nằm giữa đáy và mặt phẳng $(P)$ gọi là hình chóp đều.
+Cho hình chóp cụt đều $S.A_1A_2…A_n.$ Một mặt phẳng $(P)$ song song với mặt đáy cắt các cạnh bên $SA_1, SA_2,…,SA_n$ lần lượt tại $A’_1, A’_2,…, A’_n.$ Phần hình  nằm giữa đáy và mặt phẳng $(P)$ gọi là hình chóp đều.
 
 - Đa giác $A_1A_2A_3… A_n$ và thiết diện $A’_1A’_2A’_3… A’_n$ gọi là hai mặt đáy;
 
@@ -107,7 +107,7 @@ Hình hợp bởi các hình bình hành $A_1A’_1A’_2A_2,A_2A_3A’_3A’_2�
 
 - Các đoạn thẳng $A_1A_2,A’_1A’_2,…, A_nA_1, A’_nA’_1$ là các cạnh đáy của hình lăng trụ.
 
-Ký hiệu hình lăng trụ: $A_1A_2…A_n.A’_1A’_2…A’_n$.
+Ký hiệu hình lăng trụ: $A_1A_2…A_n.A’_1A’_2…A’_n.$
 
 Gọi tên lăng trụ theo tên các đa giác đáy: Lăng trụ tam giác (có đáy là tam giác), lăng trụ tứ giác (có đáy là tứ giác),…
 

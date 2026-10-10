@@ -30,32 +30,32 @@ Mời ba mẹ đặt mua sách tham khảo lớp 4 để học cùng bé tốt n
 
 [![CÁC BÀI TOÁN VỀ TRUNG BÌNH CỘNG LỚP 4 2](assets/images/cac-bai-toan-ve-trung-binh-cong-lop-4-image-2.png)](https://shope.ee/fpBDHjhT6)
 
-**Ví dụ 1.** Tìm trung bình cộng của hai số $1$ và $17$.
+**Ví dụ 1.** Tìm trung bình cộng của hai số $1$ và $17.$
 
 **Hướng dẫn.
-- Ta có tổng của hai số là $1+17=18$.
+- Ta có tổng của hai số là $1+17=18.$
 
-- Số các số hạng là: $2$.
+- Số các số hạng là: $2.$
 
-- Trung bình cộng của hai số đã cho là: $18:2=9$.
+- Trung bình cộng của hai số đã cho là: $18:2=9.$
 
-**Ví dụ 2.** Tìm trung bình cộng của các số sau: $6, 9, 13, 28$.
+**Ví dụ 2.** Tìm trung bình cộng của các số sau: $6, 9, 13, 28.$
 
 **Hướng dẫn.
 - Tổng của các số là: $6 + 9 + 13 + 28 = 56$;
 
 - Số các số hạng là: $4$;
 
-- Trung bình cộng của bốn số đã cho là: $56 : 4 = 14$.
+- Trung bình cộng của bốn số đã cho là: $56 : 4 = 14.$
 
-**Ví dụ 3.** Biết trung bình cộng của ba số là $10$. Tìm tổng của ba số đó.
+**Ví dụ 3.** Biết trung bình cộng của ba số là $10.$ Tìm tổng của ba số đó.
 
 **Hướng dẫn.
 - Trung bình cộng của ba số là: $10$;
 
 - Số các số hạng là: $3$;
 
-- Tổng của ba số đã cho là: $10 \times 3 = 30$.
+- Tổng của ba số đã cho là: $10 \times 3 = 30.$
 
 Mời Quý Thầy Cô và các em học sinh xem thêm các dạng toán quan trọng và BD HSG của chương trình Toán lớp 4 và chương trình tiếng Anh lớp 4:
 
@@ -71,14 +71,14 @@ Mời Quý Thầy Cô và các em học sinh xem thêm các dạng toán quan tr
 
 - [TỔNG HỢP KIẾN THỨC VÀ BÀI TẬP TIẾNG ANH LỚP 4- 5](/bai-viet/tong-hop-kien-thuc-va-bai-tap-tieng-anh-lop-4-5.html)
 
-**Ví dụ 4.** Tổng các số bằng $240$ và trung bình cộng của các số là $60$. Tìm số lượng các số?
+**Ví dụ 4.** Tổng các số bằng $240$ và trung bình cộng của các số là $60.$ Tìm số lượng các số?
 
 **Hướng dẫn.
 - Tổng của các số là: $240$;
 
 - Trung bình cộng của các số đã cho là: $60$;
 
-- Số các số hạng là: $240:60=4$.
+- Số các số hạng là: $240:60=4.$
 
 ### b. Phương pháp giải toán trung bình cộng
 
@@ -105,13 +105,13 @@ Mời Quý Thầy Cô và các em học sinh xem thêm các dạng toán quan tr
 
 Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
 
-**Ví dụ.** Tính trung bình cộng của các số trong dãy số: $3,6,9,…, 105$.
+**Ví dụ.** Tính trung bình cộng của các số trong dãy số: $3,6,9,…, 105.$
 
 **Hướng dẫn.** Ta đi tính tổng các số hạng dãy số trên rồi chia cho số số hạng.
 
-- Số số hạng là: $(105 – 3) : 3 + 1 = 35$.
+- Số số hạng là: $(105 – 3) : 3 + 1 = 35.$
 
-- Tổng các số hạng là: $( 3 +105 ) \times 35 : 2 = 1890$.
+- Tổng các số hạng là: $( 3 +105 ) \times 35 : 2 = 1890.$
 
 - Suy ra, trung bình cộng của các số là:
 
@@ -119,7 +119,7 @@ Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào s�
   1890 : 35 = 54.
   $$
 
-Đáp số: $54$.
+Đáp số: $54.$
 
 ### d. Bài toán nhiều hơn trung bình cộng, ít hơn trung bình cộng
 
@@ -233,7 +233,7 @@ Bài này không yêu cầu chúng ta đi tìm trung bình cộng mà yêu cầu
 
 a) $1, 3, 5, 7, 9$;
 
-b) $0, 2, 4, 6, 8, 10$.
+b) $0, 2, 4, 6, 8, 10.$
 
 **Hướng dẫn.
 a) Trung bình cộng của 5 số là: 

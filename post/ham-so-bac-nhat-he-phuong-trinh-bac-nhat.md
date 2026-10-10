@@ -25,15 +25,15 @@ $$
 
  là hàm số bậc nhất?
 
-**Bài 2:** Cho hai hàm số $f(x) = ax + \sqrt 3$ và $g(x) = \left( {{a^2} + 1} \right)x – 1$. Chứng minh rằng:
+**Bài 2:** Cho hai hàm số $f(x) = ax + \sqrt 3$ và $g(x) = \left( {{a^2} + 1} \right)x – 1.$ Chứng minh rằng:
 
 a) Các hàm số $f(x) + g(x)$ và $g(x) – f(x)$ là hàm số  đồng biến.**b) Hàm số $f(x) – g(x)$ là nghịch biến.
 
-Bài 3: Trên mặt phẳng tọa độ vẽ tam giác ABC, biết $A(0;4),$B(3;0),$C (-2;0)$.
+Bài 3: Trên mặt phẳng tọa độ vẽ tam giác ABC, biết $A(0;4),$B(3;0),$C (-2;0).$
 
-a) Tính diện tích tam giác $ABC$.
+a) Tính diện tích tam giác $ABC.$
 
-b) Tính độ dài các cạnh của tam giác $ABC$.
+b) Tính độ dài các cạnh của tam giác $ABC.$
 
 Bài 4: Vẽ trên cùng hệ trục tọa độ đồ thị của các hàm sốbậc nhất sau: 
 
@@ -41,9 +41,9 @@ $$
 \left( {{d_1}} \right):y = x + 2;\left( {{d_2}} \right): – \frac{1}{2}x + 1
 $$
 
-a) Gọi $A$ là giao của hai đường thẳng. Tìm tọa độ điểm $A$.
+a) Gọi $A$ là giao của hai đường thẳng. Tìm tọa độ điểm $A.$
 
-b) Giả sử $\left( {{d_3}} \right)$ là đường thẳng đi qua điểm $K\left( {0;\frac{5}{2}} \right)$ và song song với trục hoành. Đường thẳng $\left( {{d_3}} \right)$ cắt $\left( {{d_1}} \right)$ và $\left( {{d_2}} \right)$ lần lượt tại $B$ và $C$. Tìm tọa độ của $B$ và $C$, tính diện tích tam giác $ABC$.
+b) Giả sử $\left( {{d_3}} \right)$ là đường thẳng đi qua điểm $K\left( {0;\frac{5}{2}} \right)$ và song song với trục hoành. Đường thẳng $\left( {{d_3}} \right)$ cắt $\left( {{d_1}} \right)$ và $\left( {{d_2}} \right)$ lần lượt tại $B$ và $C.$ Tìm tọa độ của $B$ và $C$, tính diện tích tam giác $ABC.$
 
 Bài 5: Chứng minh rằng khi $m$ thay đổi, đường thẳng $y = \frac{2}{{m – 1}}x + \frac{1}{{m – 1}}$ luôn luôn đi qua một điểm cố định.
 
@@ -53,7 +53,7 @@ $$
 \left( d \right):y = x – 2, \left( {d’} \right):y = – x + 2
 $$
 
- Tìm các giao điểm của $\left( d \right)$ và $\left( {d’} \right)$ với trục $Oy$.  Vẽ hai đường thẳng đó trên cùng một hệ trục tọa độ. Nhận xét. Chứng minh điều nhận xét.
+ Tìm các giao điểm của $\left( d \right)$ và $\left( {d’} \right)$ với trục $Oy.$  Vẽ hai đường thẳng đó trên cùng một hệ trục tọa độ. Nhận xét. Chứng minh điều nhận xét.
 
 Bài 7: Trên cùng một mặt phẳng tọa độ Oxy, hãy vẽ đồ thị các hàm số:
 
@@ -65,7 +65,7 @@ $$
 \end{aligned}
 $$
 
- Căn cứ vào đồ thị cho biết tọa độ giao điểm $A$ của $\left( {{d}_{1}} \right)$, $\left( {{d}_{2}} \right)$; giao điểm $B$ của $\left( {{d}_{1}} \right)$, $\left( {{d}_{3}} \right)$ và giao điểm $C$ của $\left( {{d}_{2}} \right)$ và $\left( {{d}_{3}} \right)$.
+ Căn cứ vào đồ thị cho biết tọa độ giao điểm $A$ của $\left( {{d}_{1}} \right)$, $\left( {{d}_{2}} \right)$; giao điểm $B$ của $\left( {{d}_{1}} \right)$, $\left( {{d}_{3}} \right)$ và giao điểm $C$ của $\left( {{d}_{2}} \right)$ và $\left( {{d}_{3}} \right).$
 
 Bài 8: Vẽ trên cùng hệ trục tọa độ đồ thị các hàm số 
 
@@ -73,13 +73,13 @@ $$
 \left( d \right):y = 2x, \left( {d’} \right):y = \left( {\sqrt 3 – 1} \right)x
 $$
 
-Gọi $A$ là điểm trên đường thẳng $\left( d \right)$ có hoành độ bằng $\frac{2}{3}$, $B$ là điểm trên đường thẳng $\left( d’ \right)$ có hoành độ bằng 3. Tính độ dài đoạn thẳng $AB$.
+Gọi $A$ là điểm trên đường thẳng $\left( d \right)$ có hoành độ bằng $\frac{2}{3}$, $B$ là điểm trên đường thẳng $\left( d’ \right)$ có hoành độ bằng 3. Tính độ dài đoạn thẳng $AB.$
 
-Bài 9: Cho hàm số $y=\sqrt{2}x$.
+Bài 9: Cho hàm số $y=\sqrt{2}x.$
 
 a) Vẽ đồ thị hàm số.
 
-b) Ba điểm $A, B, C$ thuộc đồ thị hàm số có hoành độ lần lượt là $-1; 1; 2$. Xác định tung độ của các điểm đó.
+b) Ba điểm $A, B, C$ thuộc đồ thị hàm số có hoành độ lần lượt là $-1; 1; 2.$ Xác định tung độ của các điểm đó.
 
 c) Tính khoảng cách từ các điểm A, B, C đến gốc tọa độ.
 
@@ -101,51 +101,51 @@ $$
 \end{array}
 $$
 
- Có nhận xét gì về 3 đồ thị hàm số bậc nhất đó? Gọi ${\alpha _1},{\alpha _2},{\alpha _3}$ lần lược là góc tạo bởi $\left( {{d_1}} \right),\left( {{d_2}} \right),\left( {{d_3}} \right)$ với tia $Ox$. Tính ${\alpha _1},{\alpha _2},{\alpha _3}$.
+ Có nhận xét gì về 3 đồ thị hàm số bậc nhất đó? Gọi ${\alpha _1},{\alpha _2},{\alpha _3}$ lần lược là góc tạo bởi $\left( {{d_1}} \right),\left( {{d_2}} \right),\left( {{d_3}} \right)$ với tia $Ox.$ Tính ${\alpha _1},{\alpha _2},{\alpha _3}.$
 
 Bài 2: Viết phương trình đường thẳng trong mỗi trường hợp sau:
 
-a) Đi qua điểm $A\left( \frac{1}{2};\frac{7}{4} \right)$ và song song với đường thẳng $y=\frac{3}{2}x$.
+a) Đi qua điểm $A\left( \frac{1}{2};\frac{7}{4} \right)$ và song song với đường thẳng $y=\frac{3}{2}x.$
 
-b) Cắt trục $Oy$ tại điểm có tung độ bằng $3$ và đi qua $B\left( 2;1 \right)$.
+b) Cắt trục $Oy$ tại điểm có tung độ bằng $3$ và đi qua $B\left( 2;1 \right).$
 
-Bài 3: Vẽ lên cùng hệ trục tọa độ các hàm số: $y=\sqrt{3}x$ và $y=x+1$.
+Bài 3: Vẽ lên cùng hệ trục tọa độ các hàm số: $y=\sqrt{3}x$ và $y=x+1.$
 
-a) Tìm số đo góc lập bởi mỗi đồ thị hàm số với $Ox$.
+a) Tìm số đo góc lập bởi mỗi đồ thị hàm số với $Ox.$
 
-b) Giả sử $A$ là giao điểm của hai đồ thị, $B$ là giao điểm của đồ thị hàm số $y=\sqrt{3}x$ với $Ox$. Tính diện tích tam giác $ABC$.
+b) Giả sử $A$ là giao điểm của hai đồ thị, $B$ là giao điểm của đồ thị hàm số $y=\sqrt{3}x$ với $Ox.$ Tính diện tích tam giác $ABC.$
 
 Bài 4: Tìm hệ số góc của đường thẳng $\left( d \right):y=ax+2$ trong các trường hợp:
 
-a) Đường thẳng đó đi qua điểm $A\left( 1;\frac{6-\sqrt{3}}{3} \right)$.
+a) Đường thẳng đó đi qua điểm $A\left( 1;\frac{6-\sqrt{3}}{3} \right).$
 
-b) Cắt trục hoành tại điểm có hoành độ bằng $-\sqrt{2}$.
+b) Cắt trục hoành tại điểm có hoành độ bằng $-\sqrt{2}.$
 
 Bài 5: Xác định hệ số góc $k$ của đường thẳng $y=kx+3-k$ trong mỗi trường hợp sau đây:
 
-a) Đường thẳng song song với đồ thị hàm số $y=\frac{2}{3}x$.
+a) Đường thẳng song song với đồ thị hàm số $y=\frac{2}{3}x.$
 
-b) Cắt trục tung có tung độ bằng $2$.
+b) Cắt trục tung có tung độ bằng $2.$
 
-c) Cắt trục hoành tại điểm có hoành độ bằng $3$.
+c) Cắt trục hoành tại điểm có hoành độ bằng $3.$
 
 Bài 6: Cho hàm số có phương trình $\left( d \right):y=\left( m-1 \right)x+m$
 
 a) Xác định giá trị của $m$ để đường thẳng $\left( d \right)$ đi qua gốc tọa độ.
 
-b) Cắt trục tung tại điểm có tung độ bằng $1-\sqrt{2}$.
+b) Cắt trục tung tại điểm có tung độ bằng $1-\sqrt{2}.$
 
-c) Xác định giá trị của $m$ để $\left( d \right)$ song song với đướng thẳng $y=-5x+1$.
+c) Xác định giá trị của $m$ để $\left( d \right)$ song song với đướng thẳng $y=-5x+1.$
 
 c) Với giá trị nào của $m$ thì góc $\alpha$ tạo bởi đường thẳng $\left( d \right)$ với $Ox$ là góc tù? là góc vuông?
 
-Bài 7: Cho hàm số $y=ax$ có đồ thị đi qua điểm $A\left( 3;\sqrt{3} \right)$. Xác định hệ số $a$ và tính góc tạo bởi đồ thị hàm số bậc nhất đó với $Ox$.
+Bài 7: Cho hàm số $y=ax$ có đồ thị đi qua điểm $A\left( 3;\sqrt{3} \right).$ Xác định hệ số $a$ và tính góc tạo bởi đồ thị hàm số bậc nhất đó với $Ox.$
 
-Bài 8: Trên mặt phẳng tọa độ cho 3 điểm $A\left( -2\sqrt{3};0 \right)$, $B\left( -2;0 \right)$, $C\left( 0;2 \right)$.
+Bài 8: Trên mặt phẳng tọa độ cho 3 điểm $A\left( -2\sqrt{3};0 \right)$, $B\left( -2;0 \right)$, $C\left( 0;2 \right).$
 
-1. Tìm phương trình các hàm số có đồ thị là các đường thẳng $AB, BC$.
+1. Tìm phương trình các hàm số có đồ thị là các đường thẳng $AB, BC.$
 
-2. Tìm số đo các góc của tam giác $ABC$.
+2. Tìm số đo các góc của tam giác $ABC.$
 
 Bài 9: Tìm giá trị của $a$ để 3 đường thẳng:
 
@@ -155,9 +155,9 @@ $$
 
  đồng quy tại một điểm.
 
-Bài 10: Cho hàm số $y=\left( 2m-3 \right)x-1$.
+Bài 10: Cho hàm số $y=\left( 2m-3 \right)x-1.$
 
-a) Tìm giá trị của $m$ để đồ thị hàm số song song với đường thẳng $y=-5x+3$.
+a) Tìm giá trị của $m$ để đồ thị hàm số song song với đường thẳng $y=-5x+3.$
 
 b) Tìm giá trị của $m$ để hàm số đã cho và các đường thẳng $y=-x+1$ và $y=2x-5$ đồng quy.
 
@@ -171,7 +171,7 @@ b) $y = \left| {2x – 3} \right|$
 
 Bài 2: Vẽ đồ thị của hai hàm số $y= \left| x \right| – 2$ và $y = 2 – \left| x \right|$ trên cùng hệ trục tọa độ.
 
-Bài 3: Vẽ đồ thị hàm số $y = \left| {1 + x} \right| + 2\left| {1 – x} \right|$.
+Bài 3: Vẽ đồ thị hàm số $y = \left| {1 + x} \right| + 2\left| {1 – x} \right|.$
 
 Bài 4: Vẽ đồ thị hàm số: 
 
@@ -207,7 +207,7 @@ $$
 mx + y = m – 2
 $$
 
-Chứng tỏ rằng với mọi $m \in R$ phương trình trên có một nghiệm là một nghiệm của phương trình $3x + 2y = – 1$.
+Chứng tỏ rằng với mọi $m \in R$ phương trình trên có một nghiệm là một nghiệm của phương trình $3x + 2y = – 1.$
 
 Bài 3: Cho phương trình bậc nhất hai ẩn $x, y$ 
 
@@ -217,9 +217,9 @@ $$
 
 a) Tùy theo giá trị của m hãy viết công thức nghiệm tổng quát của phương trình.
 
-b) Tìm nghiệm của phương trình không phụ thuộc giá trị của $m$.
+b) Tìm nghiệm của phương trình không phụ thuộc giá trị của $m.$
 
-Bài 4: Giải phương trình vô định $5x + 3y = 50$. Từ đó tìm nghiệm nguyên dương của phương trình trên.
+Bài 4: Giải phương trình vô định $5x + 3y = 50.$ Từ đó tìm nghiệm nguyên dương của phương trình trên.
 
 Bài 5: Tìm nghiệm nguyên của các phương trình:
 
@@ -314,7 +314,7 @@ $$
 2(x + y) = 34
 $$
 
- Khi tăng chiều dài thêm 3 m và tăng chiều rộng thêm 2 m thì ta được một hình chữ nhật mới có chiều dài $(y + 3)$ m, chiều rộng $(x +2)$ m nên có diện tích là $(x + 2)(y + 3)$. Do hình chữ nhật mới có diện tích tăng thêm 45 m2 nên ta có phương trình: 
+ Khi tăng chiều dài thêm 3 m và tăng chiều rộng thêm 2 m thì ta được một hình chữ nhật mới có chiều dài $(y + 3)$ m, chiều rộng $(x +2)$ m nên có diện tích là $(x + 2)(y + 3).$ Do hình chữ nhật mới có diện tích tăng thêm 45 m2 nên ta có phương trình: 
 
 $$
 (x+2)(y+3)= xy + 45
@@ -329,7 +329,7 @@ $$
 \end{array} \right.
 $$
 
- Giải hệ phương trình này tìm được $x=5$ và $y=12$.
+ Giải hệ phương trình này tìm được $x=5$ và $y=12.$
 
 Vậy, hình chữ nhật đã cho có chiều dài $12$ m và chiều rộng $5$ m.
 
@@ -358,7 +358,7 @@ $$
 \end{array}
 $$
 
- Vì $x,y>0$ nên từ phương trình ${{x^2} = 4{y^2}}$ suy ra $x = 2y$. Thay vào phương trình còn lại của hệ, ta được
+ Vì $x,y>0$ nên từ phương trình ${{x^2} = 4{y^2}}$ suy ra $x = 2y.$ Thay vào phương trình còn lại của hệ, ta được
 
 $$
 3y = 90 \Leftrightarrow y = 30
@@ -368,9 +368,9 @@ $$
 
 Vận tốc của ôtô là 60km/h và vận tốc của xe máy là 30km/h.
 
-**Bài 3:** Tìm hai số có tổng bằng $31$ và có hiệu bằng $9$.
+**Bài 3:** Tìm hai số có tổng bằng $31$ và có hiệu bằng $9.$
 
-**Bài 4:** Tìm một số tự nhiên có hai chữ số. Biết rằng số đó gấp bảy lần chữ số hàng đơn vị và nếu đem số đó chia cho tổng các chữ số của nó thì được thương là $4$ và dư là $3$.
+**Bài 4:** Tìm một số tự nhiên có hai chữ số. Biết rằng số đó gấp bảy lần chữ số hàng đơn vị và nếu đem số đó chia cho tổng các chữ số của nó thì được thương là $4$ và dư là $3.$
 
 **Bài 5:** Một người đi xe đạp từ A đến B gồm đoạn lên dốc AC và đoạn xuống dốc CB. Thời gian đi AB là 4 giờ 20 phút, thời gian về BA là 4 giờ. Biết vận tốc lên dốc là 10 km/h và vận tốc xuống dốc là 15 km/h. Tính AC, CB.
 
@@ -404,7 +404,7 @@ $$
 \left\{ \begin{array}{l} \left( {3x – 1} \right)\left( {2y + 3} \right) = \left( {2x – 1} \right)\left( {3y + 4} \right)\\ {x^2} – {y^2} = 2x – 5 \end{array} \right.
 $$
 
-**Bài 19:** Giải phương trình: $\left| {x + 1} \right| + 2\left| {x – 1} \right| = x + 2 + \left| x \right| + 2\left| {x – 2} \right|$.
+**Bài 19:** Giải phương trình: $\left| {x + 1} \right| + 2\left| {x – 1} \right| = x + 2 + \left| x \right| + 2\left| {x – 2} \right|.$
 
 **Bài 20:** Với giá trị nào của $k$, hệ phương trình sau có nghiệm 
 

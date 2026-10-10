@@ -45,7 +45,7 @@ Khi tham gia một kỳ thi toán học, thay vì tìm nghiệm dương thông t
 
 Gọi $x$ là số cá câu được, $n$ là số cá còn lại trên bờ sông sau khi người thứ 3 lấy. Từ các giả thiết ta tính được: $x=(27n + 38)/8$ với $n=8m/3 – 2$ trong đó $m$ là bội số của 3.
 
-Vì họ câu tồi nên $x$ phải nhỏ nhất, nghĩa là $n$ nhỏ nhất, cũng tức là $m$ nhỏ nhất nên $m=0$. Từ đó có đáp số: $n = -2$ và $x = -2$.
+Vì họ câu tồi nên $x$ phải nhỏ nhất, nghĩa là $n$ nhỏ nhất, cũng tức là $m$ nhỏ nhất nên $m=0.$ Từ đó có đáp số: $n = -2$ và $x = -2.$
 
 - **Người thứ nhất** thức dậy, đếm thấy đống cá có **-2 con** (vốn không chia hết cho 3). Anh ta bèn "vứt xuống sông" thêm **1 con** để số cá thành **-3 con**. Lấy $\frac{1}{3}$ tương ứng là **-1 con** mang về nhà, để lại **-2 con** cho hai bạn.
 - **Người thứ hai và thứ ba** lần lượt tỉnh dậy làm hệt như vậy. Kết quả là cả 3 người đều mang về được **-1 con cá** một cách cực kỳ công bằng!

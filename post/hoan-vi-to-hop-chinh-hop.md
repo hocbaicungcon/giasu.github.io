@@ -30,7 +30,7 @@ Xem thêm [1000 bài toán Đại số Tổ hợp – Xác Suất có lời gi�
 
 ### 1.1. Hoán vị
 
-Cho tập hợp $A$ gồm $n$ phần tử $(n\ge 1)$. Mỗi cách sắp xếp thứ tự $n$ phần tử của tập hợp $A$ được gọi là một hoán vị của $n$ phần tử đó.
+Cho tập hợp $A$ gồm $n$ phần tử $(n\ge 1).$ Mỗi cách sắp xếp thứ tự $n$ phần tử của tập hợp $A$ được gọi là một hoán vị của $n$ phần tử đó.
 
 Gọi $P_n$ là số các hoán vị của tập gồm $n$ phần tử thì ta có 
 
@@ -40,7 +40,7 @@ $$
 
 ### 1.2. Chỉnh hợp.
 
-Cho tập hợp $A$ gồm $n$ phần tử $(n\ge 1)$. Mỗi bộ gồm $k$ phần tử $(0\le k\le n)$ *sắp thứ tự* của tập hợp $A$ được gọi là chỉnh hợp chập $k$ của $n$ phần tử đã cho. Gọi $A^k_n$ là số chỉnh hợp chập $k$ của $n$ phần tử, thì ta có 
+Cho tập hợp $A$ gồm $n$ phần tử $(n\ge 1).$ Mỗi bộ gồm $k$ phần tử $(0\le k\le n)$ *sắp thứ tự* của tập hợp $A$ được gọi là chỉnh hợp chập $k$ của $n$ phần tử đã cho. Gọi $A^k_n$ là số chỉnh hợp chập $k$ của $n$ phần tử, thì ta có 
 
 $$
 A^k_n=n(n-1)(n-2)…(n-k+1)=\frac{n!}{(n-k)!}
@@ -100,7 +100,7 @@ Mỗi một véctơ tương ứng với một chỉnh hợp chập hai của 5 p
 
 Như vậy, theo qui tắc nhân, ta có $4.24=96$ số thỏa mãn yêu cầu.
 
-**Ví dụ 4.** [CĐ KTKT 2006] Cho tập $E=\{1,2,3,4,5,6,7\}$. Từ tập $E$ lập được bao nhiêu số chẵn có 5 chữ số khác nhau?
+**Ví dụ 4.** [CĐ KTKT 2006] Cho tập $E=\{1,2,3,4,5,6,7\}.$ Từ tập $E$ lập được bao nhiêu số chẵn có 5 chữ số khác nhau?
 
 **Hướng dẫn.** Giả sử số cần lập là $\overline{a_1a_2a_3a_4a_5}$ trong đó $a_i\in E, a_1\ne 0$ và $a_i\ne a_j,a_5$ chẵn. Để lập được số thỏa mãn yêu cầu ta tiến hành hai bước:
 
@@ -118,9 +118,9 @@ Có 6 chữ số tất cả, mà lập số có 5 chữ số khác nhau nên s�
 
 Trong 6 trường hợp này, chỉ có hai trường hợp thỏa mãn yêu cầu $a_1+a_2+a_3+a_4+a_5$ chia hết cho 3. Do đó ta xét hai trường hợp:
 
-- TH1. Số cần lập được tạo thành từ các chữ số $1,2,3,4,5$. Mỗi số cần lập tương ứng với một hoán vị của 5 phần tử, nên có $5!=120$ số.
+- TH1. Số cần lập được tạo thành từ các chữ số $1,2,3,4,5.$ Mỗi số cần lập tương ứng với một hoán vị của 5 phần tử, nên có $5!=120$ số.
 
-- TH2. Số cần lập được tạo thành từ các chữ số $0,1,2,4,5$. Ta tiến hành 2 bước:
+- TH2. Số cần lập được tạo thành từ các chữ số $0,1,2,4,5.$ Ta tiến hành 2 bước:
 
 Bước 1. Chọn $a_1\ne 0$: Có 4 cách chọn.
 
@@ -186,7 +186,7 @@ Theo quy tắc nhân, có $4\times 10^3\times 5=20000$ số.
 
 - Phân công các thanh niên tình nguyện về tỉnh thứ ba: Có $C_{1}^{1}C_{4}^{4}$ cách.
 
-Theo quy tắc nhân, có có: $C_{3}^{1}C_{12}^{4}$.$C_{2}^{1}C_{8}^{4}$.$C_{1}^{1}C_{4}^{4}$=207900 cách phân công đội thanh niên tình nguyện về 3 tỉnh thỏa mãn yêu cầu bài toán.
+Theo quy tắc nhân, có có: $C_{3}^{1}C_{12}^{4}.$$C_{2}^{1}C_{8}^{4}.$$C_{1}^{1}C_{4}^{4}$=207900 cách phân công đội thanh niên tình nguyện về 3 tỉnh thỏa mãn yêu cầu bài toán.
 
 **Ví dụ 10.** [B2004] Trong một môn học, thầy giáo có 30 câu hỏi khác nhau gồm 5 câu hỏi khó, 10 câu hỏi trung bình, 15 câu hỏi dễ. Từ 30 câu hỏi đó có thể lập được bao nhiêu đề kiểm tra, mỗi đề gồm 5 câu hỏi khác nhau, sao cho trong mỗi đề nhất thiết phải có đủ 3 loại câu hỏi (khó, trung bình, dễ) và số câu hỏi dễ không ít hơn 2?
 
@@ -242,7 +242,7 @@ Do đó, số cách chọn 5 người sao cho trong đó có ít nhất 1 nữ l
 
 **Ví dụ 15.** [D2006] Đội thanh niên xung kích của một trường phổ thông có 12 học sinh, gồm 5 học sinh lớp A, 4 học sinh lớp B và 3 học sinh lớp C. Cần chọn 4 học sinh đi làm nhiệm vụ, sao cho 4 học sinh này thuộc không quá 2 trong 3 lớp trên. Hỏi có bao nhiêu cách chọn như vậy?
 
-**Hướng dẫn.** Số cách chọn 4 học sinh trong 12 học sinh là $C_{12}^{4}=495$.
+**Hướng dẫn.** Số cách chọn 4 học sinh trong 12 học sinh là $C_{12}^{4}=495.$
 
 Số cách chọn 4 em học sinh mà mỗi lớp ít nhất 01 em là:
 
@@ -252,9 +252,9 @@ Số cách chọn 4 em học sinh mà mỗi lớp ít nhất 01 em là:
 
 - Lớp C có 2 học sinh, lớp B và A có 01 học sinh: $C_{5}^{1}.C_{4}^{1}.C_{3}^{2}=60$
 
-Số cách chọn 4 em mà mỗi lớp ít nhất một em là: $120+90+60=270$.
+Số cách chọn 4 em mà mỗi lớp ít nhất một em là: $120+90+60=270.$
 
-Vậy số cách chọn phải tìm là: $495-270=225$.
+Vậy số cách chọn phải tìm là: $495-270=225.$
 
 **Ví dụ 16.** [Chuyên Nguyễn Huệ L3 2015] Một hoppj đựng 5 viên bi đỏ, 6 viên bi trắng và 7 viên bi vàng. Chọn ngẫu nhiên 4 viên bi từ hộp đó. Hỏi có bao nhiêu cách chọn không có đủ ba màu?
 

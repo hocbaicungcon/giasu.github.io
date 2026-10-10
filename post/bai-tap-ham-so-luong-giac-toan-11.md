@@ -16,9 +16,9 @@ grade: 11
 
 ## 1. Tìm giá trị lớn nhất, nhỏ nhất của hàm số lượng giác
 
-**Phương pháp.** Sử dụng tính chất: $-1\le \sin x\le 1,-1\le\cos x\le 1$.
+**Phương pháp.** Sử dụng tính chất: $-1\le \sin x\le 1,-1\le\cos x\le 1.$
 
-**Ví dụ 1.** Tìm giá trị lớn nhất, nhỏ nhất của hàm số: $y=3+\sin x$.
+**Ví dụ 1.** Tìm giá trị lớn nhất, nhỏ nhất của hàm số: $y=3+\sin x.$
 
 **Hướng dẫn.** Ta có 
 
@@ -32,11 +32,11 @@ Vậy giá trị lớn nhất của hàm số là 4, đạt được khi $\sin x
 
 Giá trị nhỏ nhất của hàm số là $2,$ đạt được khi $\sin x=-1 \Leftrightarrow x=-\frac{\pi}{2}+k2\pi.$
 
-**Ví dụ 2.** Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y=5-3\sin \left(x+\frac{\pi}{3}\right)$.
+**Ví dụ 2.** Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y=5-3\sin \left(x+\frac{\pi}{3}\right).$
 
-**Ví dụ 3.** Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số$y=\sin x\cos x$.
+**Ví dụ 3.** Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số$y=\sin x\cos x.$
 
-**Ví dụ 4.** Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số$y=\sin x+\cos x$.
+**Ví dụ 4.** Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số$y=\sin x+\cos x.$
 
 ## 2. Tìm tập xác định của hàm số lượng giác
 
@@ -48,7 +48,7 @@ Giá trị nhỏ nhất của hàm số là $2,$ đạt được khi $\sin x=-1 
 
 - Hàm số $\cot x$ xác định với mọi $x\ne k\pi, k\in \mathbb{Z}$
 
-Ngoài ra cần nhớ thêm $\frac{A}{B}$ xác định khi và chỉ khi $B\ne 0$; $\sqrt{A}$ xác định khi và chỉ khi $A \geqslant 0$.
+Ngoài ra cần nhớ thêm $\frac{A}{B}$ xác định khi và chỉ khi $B\ne 0$; $\sqrt{A}$ xác định khi và chỉ khi $A \geqslant 0.$
 
 **Ví dụ.** Tìm tập xác định của các hàm số sau:
 
@@ -78,9 +78,9 @@ Hàm số $f(x)$ được gọi là hàm số lẻ nếu nếu nó thỏa mãn 2
 
 Như vậy, để xét tính chẵn lẻ của hàm số lượng giác, chúng ta cần:
 
-- Tìm tập xác định của hàm số và kiểm tra điều kiện $\forall x\in \mathbb{D}$ thì $-x\in \mathcal{D}$.
+- Tìm tập xác định của hàm số và kiểm tra điều kiện $\forall x\in \mathbb{D}$ thì $-x\in \mathcal{D}.$
 
-- Sử dụng các tính chất về [cung có liên quan đặc biệt](/bai-viet/cong-thuc-luong-giac-gia-tri-luong-giac-lop-10.html) (cos đối, sin bù, phụ chéo, khác pi tang) để so sánh $f(-x)$ và $f(x)$.
+- Sử dụng các tính chất về [cung có liên quan đặc biệt](/bai-viet/cong-thuc-luong-giac-gia-tri-luong-giac-lop-10.html) (cos đối, sin bù, phụ chéo, khác pi tang) để so sánh $f(-x)$ và $f(x).$
 
 ## 4. Tìm khoảng đồng biến nghịch biến của hàm số lượng giác
 
@@ -94,11 +94,11 @@ Sử dụng các tính chất:
 
 Sử dụng các tính chất:
 
-- Hàm số $\sin x, \cos x$ tuần hoàn với chu kì $2\pi$.
+- Hàm số $\sin x, \cos x$ tuần hoàn với chu kì $2\pi.$
 
-- Hàm số $\tan x, \cot x$ tuần hoàn với chu kì $\pi$.
+- Hàm số $\tan x, \cot x$ tuần hoàn với chu kì $\pi.$
 
-- Hàm số $\sin ax, \cos ax$ tuần hoàn với chu kì $\frac{2\pi}{a}$.
+- Hàm số $\sin ax, \cos ax$ tuần hoàn với chu kì $\frac{2\pi}{a}.$
 
 ## 6. Bài tập hàm số lượng giác tự luyện
 
@@ -154,11 +154,11 @@ Sử dụng các tính chất:
 
 8. $y=\sqrt{2-\sin x}+\cot x$
 
-**Bài 4.** Tìm tập xác định của hàm số $y=\sqrt{1+\sin x\cos x}$.
+**Bài 4.** Tìm tập xác định của hàm số $y=\sqrt{1+\sin x\cos x}.$
 
-**Bài 5.** Tìm tập xác định của hàm số $y=\frac{\tan x}{\sqrt{\cos^2x-\sin^2x+3}}$.
+**Bài 5.** Tìm tập xác định của hàm số $y=\frac{\tan x}{\sqrt{\cos^2x-\sin^2x+3}}.$
 
-**Bài 6.** Tìm giá trị lớn nhất, nhỏ nhất của hàm số $y=-2\cos2x-4\sin x+6$.
+**Bài 6.** Tìm giá trị lớn nhất, nhỏ nhất của hàm số $y=-2\cos2x-4\sin x+6.$
 
 Đáp số. $\min y=2, \max y=12$
 

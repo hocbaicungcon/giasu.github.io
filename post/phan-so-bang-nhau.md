@@ -10,7 +10,7 @@ tags: ["toán 4", "phân số"]
 
 <!-- credit: giasu.ai.vn -->
 ## Một chiếc bánh, nhiều cách chia
-Nửa chiếc bánh cũng bằng hai phần tư chiếc bánh. Vì thế $\frac12=\frac24$.
+Nửa chiếc bánh cũng bằng hai phần tư chiếc bánh. Vì thế $\frac12=\frac24.$
 
 Khi nhân cả tử số và mẫu số với cùng một số tự nhiên khác 0, ta được một phân số bằng phân số đã cho.
 
@@ -19,13 +19,13 @@ $$
 $$
 
 ## Cùng luyện tập
-1. Điền số: $\frac23=\frac{\square}{6}$.
-2. Rút gọn $\frac{6}{8}$.
+1. Điền số: $\frac23=\frac{\square}{6}.$
+2. Rút gọn $\frac{6}{8}.$
 3. Hai phân số $\frac35$ và $\frac{6}{10}$ có bằng nhau không?
 
 ## Đáp án
 1. Điền **4**, vì nhân cả tử và mẫu với 2.
-2. Chia cả tử và mẫu cho 2, được $\frac34$.
-3. **Có**, vì nhân cả tử và mẫu của $\frac35$ với 2 sẽ được $\frac6{10}$.
+2. Chia cả tử và mẫu cho 2, được $\frac34.$
+3. **Có**, vì nhân cả tử và mẫu của $\frac35$ với 2 sẽ được $\frac6{10}.$
 
 > Muốn rút gọn, hãy chia cả tử số và mẫu số cho cùng một ước chung lớn hơn 1.
