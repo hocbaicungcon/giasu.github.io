@@ -19,5 +19,5 @@ Bài giảng các số đặc trưng đo mức độ phân tán của mẫu số
 BÀI 10. PHƯƠNG SAI VÀ ĐỘ LỆCH CHUẨN. BÀI ÔN TẬP CHƯƠNG THỐNG KÊ TOÁN 12
 ## Download Bài tập Thống kê Toán 12 KNTT
 
-- [bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cua-mau-so-lieu-ghep-nhom-toan-12-knttvcs](#drive-pending-bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cua-mau-so-lieu-ghep-nhom-toan-12-knttvcs.pdf)
+- [bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cua-mau-so-lieu-ghep-nhom-toan-12-knttvcs](https://drive.google.com/file/d/1UO5nm5NWF9Jyw8VpbffdmfvWe8v3SF_z/view?usp=sharing)
 - [cac-dang-bai-tap-cac-so-dac-trung-do-muc-do-phan-tan-cua-mau-so-lieu-ghep-nhom-toan-12-knttvcs](/assets/docs/cac-dang-bai-tap-cac-so-dac-trung-do-muc-do-phan-tan-cua-mau-so-lieu-ghep-nhom-toan-12-knttvcs.pdf)

@@ -141,9 +141,9 @@ Chữ ký của Cán bộ coi thi 1: ………………………….; Chữ ký 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De-giasu.ai.vn.doc)
+- [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De](/assets/docs/2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De-giasu.ai.vn.doc)
 
-- [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-HDC-o2.edu_.vn_](https://drive.google.com/file/d/1SvGutBsx-P73Cd9uxnEF6Ib2-sX0kOim/view?usp=sharing)
+- [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-HDC](https://drive.google.com/file/d/1SvGutBsx-P73Cd9uxnEF6Ib2-sX0kOim/view?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

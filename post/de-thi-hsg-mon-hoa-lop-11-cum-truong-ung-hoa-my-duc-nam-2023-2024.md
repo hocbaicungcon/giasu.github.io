@@ -128,8 +128,8 @@ Chữ ký giám thị coi thi số 1: Chữ ký giám thị coi thi số 2:
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa-11-DA-thi-HSG-cap-cum-Ung-hoa-My-Duc-o2.edu_.vn_](/assets/docs/Hoa-11-DA-thi-HSG-cap-cum-Ung-hoa-My-Duc-giasu.ai.vn.pdf)
-- [Hoa-11-de-thi-HSG-cap-cum-Ung-hoa-My-Duc-o2.edu_.vn_](/assets/docs/Hoa-11-de-thi-HSG-cap-cum-Ung-hoa-My-Duc-giasu.ai.vn.pdf)
+- [Hoa-11-DA-thi-HSG-cap-cum-Ung-hoa-My-Duc](/assets/docs/Hoa-11-DA-thi-HSG-cap-cum-Ung-hoa-My-Duc-giasu.ai.vn.pdf)
+- [Hoa-11-de-thi-HSG-cap-cum-Ung-hoa-My-Duc](/assets/docs/Hoa-11-de-thi-HSG-cap-cum-Ung-hoa-My-Duc-giasu.ai.vn.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

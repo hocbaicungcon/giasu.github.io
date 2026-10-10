@@ -511,7 +511,7 @@ Trong các biện pháp trên, có bao nhiêu biện pháp đúng?
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG-Hoa-10-nam-2022-2023-THPT-Mai-Anh-Tuan-o2.edu_.vn_](/assets/docs/HSG-Hoa-10-nam-2022-2023-THPT-Mai-Anh-Tuan-giasu.ai.vn.doc)
+- [HSG-Hoa-10-nam-2022-2023-THPT-Mai-Anh-Tuan](/assets/docs/HSG-Hoa-10-nam-2022-2023-THPT-Mai-Anh-Tuan-giasu.ai.vn.doc)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

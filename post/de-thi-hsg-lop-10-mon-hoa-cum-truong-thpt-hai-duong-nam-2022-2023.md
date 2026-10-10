@@ -122,7 +122,7 @@ b) Xác định nồng độ % các chất trong dung dịch B.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG-Hoa-10-cum-THPT-Hai-Duong-2022-2023-o2.edu_.vn_](/assets/docs/HSG-Hoa-10-cum-THPT-Hai-Duong-2022-2023-giasu.ai.vn.docx)
+- [HSG-Hoa-10-cum-THPT-Hai-Duong-2022-2023](/assets/docs/HSG-Hoa-10-cum-THPT-Hai-Duong-2022-2023-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

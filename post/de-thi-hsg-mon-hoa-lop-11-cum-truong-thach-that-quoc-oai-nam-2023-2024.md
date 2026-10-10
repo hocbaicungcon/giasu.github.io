@@ -102,8 +102,8 @@ c) Có thể dùng isopropyl alcohol thay thế cho ethanol trong nước rửa 
 *Cán bộ coi thi không giải thích gì thêm.
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [DE-HOA-KHOI-11-o2.edu_.vn_](/assets/docs/DE-HOA-KHOI-11-giasu.ai.vn.docx)
-- [HDC-HOA-KHOI-11-o2.edu_.vn_](/assets/docs/HDC-HOA-KHOI-11-giasu.ai.vn.docx)
+- [DE-HOA-KHOI-11](/assets/docs/DE-HOA-KHOI-11-giasu.ai.vn.docx)
+- [HDC-HOA-KHOI-11](/assets/docs/HDC-HOA-KHOI-11-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

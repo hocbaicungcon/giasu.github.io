@@ -169,4 +169,4 @@ Trong 9 phút người đó đi bộđược số mét là: (0, 25 điểm)
 
 Đáp số: 810 m.(0,25 điểm)
 
-Các đề khảo sát còn lại, mời Quý thầy cô tải file word tại đây [De on tap toan 3 o2.edu.vn](/assets/docs/De-on-tap-toan-3-giasu.ai.vn.docx)
+Các đề khảo sát còn lại, mời Quý thầy cô tải file word tại đây [De on tap toan 3](/assets/docs/De-on-tap-toan-3-giasu.ai.vn.docx)

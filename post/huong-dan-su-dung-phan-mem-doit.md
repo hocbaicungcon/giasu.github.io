@@ -46,7 +46,7 @@ Phần bôi màu càng đậm trùng lặp càng nhiều tài liệu, ngược l
 **Giao diện các tài liệu đã kiểm tra
 ![Hướng dẫn sử dụng phần mềm DoIT 4](assets/images/huong-dan-su-dung-phan-mem-doit-ket-qua.jpg)
 
-Nếu như bạn không có nhiều thời gian nghiên cứu và chỉnh sửa website o2.edu.vn nhận làm giảm tỷ lệ trung lặp đạo văn trên phần mềm doit với cam kết bảo mật, uy tín, chất lượng. Vui lòng liên hệ qua fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn) để được tư vấn và hỗ trợ!
+Nếu như bạn không có nhiều thời gian nghiên cứu và chỉnh sửa website giasu.ai.vn nhận làm giảm tỷ lệ trung lặp đạo văn trên phần mềm doit với cam kết bảo mật, uy tín, chất lượng. Vui lòng liên hệ qua fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn) để được tư vấn và hỗ trợ!
 
 Xem thêm
 

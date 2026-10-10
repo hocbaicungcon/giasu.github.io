@@ -31,7 +31,7 @@ GIA SƯ THÔNG MINH xin gửi tới thầy cô 2 bộ giáo án Toán 12 Cánh D
 - [Chương 4. Bài 1. Nguyên hàm](/assets/docs/Chuong-4.-Bai-1.-Nguyen-ham.docx)
 - [Chương 4. Bài 2. Nguyên hàm của một số hàm số sơ cấp](/assets/docs/Chuong-4.-Bai-2.-Nguyen-ham-cua-mot-so-ham-so-so-cap.docx)
 - [Chương 4. Bài 3. Tích phân](/assets/docs/Chuong-4.-Bai-3.-Tich-phan.docx)
-- [Chương 4. Bài 4. Ứng dụng hình học của tích phân](#drive-pending-Chuong-4.-Bai-4.-Ung-dung-hinh-hoc-cua-tich-phan.doc)
+- [Chương 4. Bài 4. Ứng dụng hình học của tích phân](https://drive.google.com/file/d/1HYP_vgUs9wxO7EYZFU4_XPws0v4vRMdD/view?usp=sharing)
 - [Chương 4. Bài tập cuối chương 4](/assets/docs/Chuong-4.-Bai-tap-cuoi-chuong-4.docx)
 - [Chương 5. Bài 1. Phuong trinh mat phăng](/assets/docs/Chuong-5.-Bai-1.-Phuong-trinh-mat-phang.docx)
 - [Chương 5. Bài 2. PHƯƠNG TRÌNH ĐƯỜNG THẲNG](/assets/docs/Chuong-5.-Bai-2.-PHUONG-TRINH-DUONG-THANG.docx)

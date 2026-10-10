@@ -378,7 +378,7 @@ d)Cho dung dịch KI dư và vài giọt hồ tinh bột vào dung dịch FeCl3.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2024-TRAN-QUOC-TUAN-QUANG-NGAI-o2.edu_.vn_](/assets/docs/2024-TRAN-QUOC-TUAN-QUANG-NGAI-giasu.ai.vn.doc)
+- [2024-TRAN-QUOC-TUAN-QUANG-NGAI](/assets/docs/2024-TRAN-QUOC-TUAN-QUANG-NGAI-giasu.ai.vn.doc)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

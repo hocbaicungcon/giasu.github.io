@@ -49,7 +49,7 @@ grade: 12
 
 ## 2. Tải tài liệu hướng dẫn sử dụng máy tính CASIO
 
-Mời thầy cô và các em tải tài liệu hướng dẫn tại đây [o2 huong dan su dung may tinh casio giai toan trac nghiem](/assets/docs/o2-huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem.pdf)
+Mời thầy cô và các em tải tài liệu hướng dẫn tại đây [o2 huong dan su dung may tinh casio giai toan trac nghiem](/assets/docs/giasu.ai.vn-huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem.pdf)
 
 ## 3. Sách hướng dẫn sử dụng máy tính CASIO
 
@@ -65,4 +65,4 @@ https://www.youtube.com/watch?v=TYqS8uSQP30
 
 [MUA MÁY TÍNH CASIO 580VNX GIÁ TỐT](https://rentracks.vn/T0KArl)
 
-Mời thầy cô và các em học sinh tải tại đây [Hướng dẫn sử dụng máy tính CASIO fx-570VN Plus](/assets/docs/o2.edu_.vn-fx-570VN-Plus-Huong-dan-su-dung.pdf)
+Mời thầy cô và các em học sinh tải tại đây [Hướng dẫn sử dụng máy tính CASIO fx-570VN Plus](/assets/docs/giasu.ai.vn-fx-570VN-Plus-Huong-dan-su-dung.pdf)

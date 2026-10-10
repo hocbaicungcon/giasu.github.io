@@ -3271,7 +3271,7 @@ E xin file ạ
 ![minh Avatar](https://secure.gravatar.com/avatar/eccdfde4e5a6cf917013fa44d807fc387ad54b3250203de95fd321893d210541)
 
 [20/09/2022](/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet/#comment-4307.html)
-[minh](https://o2.edu.vn/)
+minh
 
 cho mình xin file nhe
 
@@ -3289,7 +3289,7 @@ cho mình xin file nhe
 ![minh Avatar](https://secure.gravatar.com/avatar/eccdfde4e5a6cf917013fa44d807fc387ad54b3250203de95fd321893d210541)
 
 [20/09/2022](/bai-viet/bien-luan-cong-thuc-cau-tao-etse-co-loi-giai-chi-tiet/#comment-4315.html)
-[minh](https://o2.edu.vn/)
+minh
 
 xin cam on
 

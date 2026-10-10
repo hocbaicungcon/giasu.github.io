@@ -108,8 +108,8 @@ Thí sinh không được sử dụng tài liệu. Cán bộ coi thi không gi�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023HK-HBT_11_HDC-Hoa-o2.edu_.vn_](/assets/docs/2023HK-HBT_11_HDC-Hoa-giasu.ai.vn.pdf)
-- [2023HK-HBT_11-Hoa-o2.edu_.vn_](/assets/docs/2023HK-HBT_11-Hoa-giasu.ai.vn.pdf)
+- [2023HK-HBT_11_HDC-Hoa](/assets/docs/2023HK-HBT_11_HDC-Hoa-giasu.ai.vn.pdf)
+- [2023HK-HBT_11-Hoa](/assets/docs/2023HK-HBT_11-Hoa-giasu.ai.vn.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

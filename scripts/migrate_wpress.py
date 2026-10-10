@@ -523,7 +523,16 @@ def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=
         rel_path = re.sub(r'^https?://o2\.edu\.vn/wp-content/', '', clean_url)
         unquoted_rel_path = urllib.parse.unquote(rel_path)
         doc_name = os.path.basename(unquoted_rel_path)
-        doc_name = re.sub(r'[-_]o2\.edu_\.vn_', '-giasu.ai.vn', doc_name)
+        doc_name = re.sub(r'o2\.edu_?\.vn_?', '-giasu.ai.vn', doc_name, flags=re.I)
+        doc_name = re.sub(r'o2\.edu', '-giasu.ai.vn', doc_name, flags=re.I)
+        doc_name = re.sub(r'o2eduvn', '-giasu.ai.vn', doc_name, flags=re.I)
+        doc_name = re.sub(r'o2edu', '-giasu.ai.vn', doc_name, flags=re.I)
+        doc_name = re.sub(r'^o2-', 'giasu.ai.vn-', doc_name, flags=re.I)
+        doc_name = re.sub(r'^-giasu\.ai\.vn-?', 'giasu.ai.vn-', doc_name)
+        doc_name = re.sub(r'\.-giasu\.ai\.vn', '-giasu.ai.vn', doc_name)
+        doc_name = re.sub(r'_+-giasu\.ai\.vn', '-giasu.ai.vn', doc_name)
+        doc_name = re.sub(r'--+', '-', doc_name)
+        doc_name = re.sub(r'-giasu\.ai\.vn\.', '-giasu.ai.vn.', doc_name)
         
         file_bytes = reader.get_file(unquoted_rel_path) or reader.get_file(rel_path)
         if not file_bytes:

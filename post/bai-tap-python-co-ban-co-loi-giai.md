@@ -311,7 +311,7 @@ print("Kết quả:", n, "=", sb);
 
 Thêm vào các hàm hiểm tra đơn giản để kiểm tra method của class.
 
-Ví dụ: Chuỗi nhập vào là o2.edu.vn thì đầu ra phải là O2.EDU.VN
+Ví dụ: Chuỗi nhập vào là giasu.ai.vn thì đầu ra phải là GIASU.AI.VN
 
 ```python
 class InputOutString(object):

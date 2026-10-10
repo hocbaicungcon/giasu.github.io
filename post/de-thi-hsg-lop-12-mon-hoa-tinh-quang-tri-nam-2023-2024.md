@@ -126,7 +126,7 @@ Thí sinh được phép sử dụng Bảng tuần hoàn các nguyên tố hóa 
 **Câu 2.***(5,0 điểm)
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-12-Quang-Tri-File-De-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-12-Quang-Tri-File-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-12-Quang-Tri-File-De-HDC](/assets/docs/2023-2024-HSG-12-Quang-Tri-File-De-HDC-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

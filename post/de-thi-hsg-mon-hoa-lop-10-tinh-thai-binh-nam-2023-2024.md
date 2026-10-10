@@ -390,7 +390,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 **Ghi chú:** *Nếu học sinh giải theo cách khác mà vẫn đúng thì vẫn cho điểm tối đa.
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG_HOA10_THAIBINH_2023-2024-o2.edu_.vn_](/assets/docs/HSG_HOA10_THAIBINH_2023-2024-giasu.ai.vn.docx)
+- [HSG_HOA10_THAIBINH_2023-2024](/assets/docs/HSG_HOA10_THAIBINH_2023-2024-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

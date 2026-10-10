@@ -1005,7 +1005,8 @@ $$
 
 **Câu 43.** [Đề thi ĐH Khối A năm 2014] Từ một hộp chứa 16 thẻ được đánh số từ 1 đến 16, chọn ngẫu nhiên 4 thẻ. Tính xác suất để 4 thẻ được chọn đều được đánh số chẵn.
 
-**Hướng dẫn.
+**Hướng dẫn.**
+
 - Phép thử là chọn ngẫu nhiên 4 thẻ trong 16 thẻ nên ta có $|\Omega|=C_{16}^4=1820$.
 
 - Gọi $A$ là biến cố “4 thẻ được chọn đều được đánh số chẵn”, ta có
@@ -1022,7 +1023,8 @@ $$
 
 **Câu 44.** Một nhóm học tập gồm 7 nam và 5 nữ, trong đó có bạn nam $A$ và bạn nữ $B$. Chọn ngẫu nhiên 6 bạn để lập một đội tuyển thi học sinh giỏi. Tính xác suất để đội tuyển có 3 nam và 3 nữ, trong đó phải có hoặc bạn nam $A$, hoặc bạn nữ $B$ nhưng không có cả hai.
 
-**Hướng dẫn.
+**Hướng dẫn.**
+
 - Phép thử là chọn 6 học sinh trong tổng số 12 học sinh nên số phần tử của không gian mẫu là
 
   $$
@@ -1043,7 +1045,8 @@ $$
 
 **Câu 45.** Ba xạ thủ cùng bắn độc lập vào bia, mỗi người bắn một viên đạn. Xác suất bắn trúng của từng xạ thủ lần ượt là 0,6; 0,7 và 0,8. Tính xác suất để có ít nhất một xạ thủ bắn trúng bia.
 
-**Hướng dẫn.
+**Hướng dẫn.**
+
 - Gọi $A_i\ (i=\overline{1,3})$ là biến cố “người thứ $i$ bắn trúng bia”.
 
 - Ta có $P(A_1)=0,6;P(A_2)=0,7;P(A_3)=0,8$. Suy ra
@@ -1064,7 +1067,8 @@ $$
 
 **Câu 46.** [Đề ĐH Khối B năm 2013] Có hai chiếc hộp đựng bi. Hộp thứ nhất chứa 4 viên bi đỏ và 3 viên bi trắng, hộp thứ hai chứa 2 viên bi đỏ và 4 viên bi trắng. Lấy ngẫu nhiên từ mỗi hộp ra một viên bi, tính xác suất để hai viên bi được lấy ra có cùng màu.
 
-**Hướng dẫn.
+**Hướng dẫn.**
+
 - Phép thử là lấy mỗi hộp một viên bi nên ta có $|\Omega|=C_7^1\times C_6^1=42$.
 
 - Gọi $A$ là biến cố “hai viên bi lấy ra có cùng màu”. Số phần tử thuận lợi là
@@ -1081,7 +1085,8 @@ $$
 
 **Câu 47.** [Đề thi ĐH Khối B năm 2012] Trong một lớp học gồm có 15 học sinh nam và 10 học sinh nữ. Giáo viên gọi ngẫu nhiên 4 học sinh lên bảng giải bài tập. Tính xác suất để 4 học sinh được gọi có cả nam và nữ.
 
-**Hướng dẫn.
+**Hướng dẫn.**
+
 - Phép thử là chọn 4 học sinh bất kỳ lên bảng nên ta có $|\Omega|=C_{25}^4=12650$.
 
 - Gọi $A$ là biến cố “chọn 4 học sinh có cả nam và nữ”. Số phần tử thuận lợi là
@@ -1098,7 +1103,8 @@ $$
 
 **Câu 48.** [Chuyên Hùng Vương — Gia Lai 2020] Cho một đa giác đều có $18$ đỉnh nội tiếp trong một đường tròn tâm $O$. Gọi $X$ là tập hợp các tam giác có các đỉnh là các đỉnh của đa giác đều trên. Tính xác suất để chọn được một tam giác từ tập $X$ là tam giác cân nhưng không phải tam giác đều.
 
-**Hướng dẫn.
+**Hướng dẫn.**
+
 - Số phần tử của không gian mẫu là
 
   $$
@@ -1235,9 +1241,12 @@ Vậy $P\left( A \right) = \frac{{\left( {C_9^5 – C_5^5} \right) + \left( {C_{
 
 **Câu 52.** Một hộp đựng thẻ được đánh số từ 1, 2, 3,…, 8. Rút ngẫu nhiên hai lần, mỗi lần một thẻ và nhân số ghi trên hai thẻ với nhau, xác suất để tích nhận được là số chẵn là
 
-**A.**$\frac{3}{{14}}$.** B.**$\frac{{25}}{{36}}$.** C.**$\frac{1}{2}.$** D.**$\frac{{11}}{{14}}$.
+- **A.** $\frac{3}{{14}}$.
+- **B.** $\frac{{25}}{{36}}$.
+- **C.** $\frac{1}{2}.$
+- **D.** $\frac{{11}}{{14}}$.
 
-**Hướng dẫn.Chọn D
+**Hướng dẫn.** Chọn **D**.
 Số phần tử không gian mẫu: $n\left( \Omega \right) = 8 \times 7 = 56$.
 
 Gọi $\bar A$ là biến cố: “tích nhận được là số lẻ”.
@@ -1250,9 +1259,12 @@ Suy ra xác suất biến cố $A$: $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{
 
 **Câu 53.** Đội thanh niên tình nguyện của một trường THPT gồm 15 HS, trong đó có 4 HS khối 12, 5 HS khối 11 và 6 HS khối 10. Chọn ngẫu nhiên 6 HS đi thực hiện nhiệm vụ. Tính xác suất để 6 HS được chọn có đủ 3 khối.
 
-**A.** $\frac{{4248}}{{5005}}.$**B.**$\frac{{757}}{{5005}}.$** C.**$\frac{{151}}{{1001}}.$** D.**$\frac{{850}}{{1001}}.$
+- **A.** $\frac{{4248}}{{5005}}.$
+- **B.** $\frac{{757}}{{5005}}.$
+- **C.** $\frac{{151}}{{1001}}.$
+- **D.** $\frac{{850}}{{1001}}.$
 
-**Hướng dẫn.Chọn D
+**Hướng dẫn.** Chọn **D**.
 Số phần tử của không gian mẫu $n\left( \Omega \right) = C_{15}^6 = 5005$.
 
 Gọi *A* là biến cố: “6 HS được chọn có đủ 3 khối”.
@@ -1349,9 +1361,12 @@ Vậy $P\left( A \right) = \frac{{\left( {C_9^5 – C_5^5} \right) + \left( {C_{
 
 **Câu 59.** Chọn ngẫu nhiên hai số khác nhau từ 27 số nguyên dương đầu tiên. Xác suất để chọn được hai số có tổng là một số chẵn bằng
 
-**A.**$\frac{{13}}{{27}}$** B.** $\frac{{14}}{{27}}$**C.** $\frac{1}{2}$**D.** $\frac{{365}}{{729}}$
+- **A.** $\frac{{13}}{{27}}$
+- **B.** $\frac{{14}}{{27}}$
+- **C.** $\frac{1}{2}$
+- **D.** $\frac{{365}}{{729}}$
 
-**Hướng dẫn.Chọn A
+**Hướng dẫn.** Chọn **A**.
 Gọi A là tập tất cả các số nguyên dương đầu tiên, $A = \left\{ {1;\,\,2;\,\,3;\,……;\,\,26;\,\,27} \right\}$
 
 Chọn hai số khác nhau từ A có: $n\left( \Omega \right) = C_{27}^2 = 351$. Tổng hai số là số chẵn khi cả hai số đó đều chẵn hoặc đều lẻ. Do đó:
@@ -1490,9 +1505,9 @@ Suy ra xác suất biến cố $A$: $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{
 
 **Câu 66.** Cho tập hợp $S = \left\{ {1;\,2;\,3;\,4;\,…..;\,17} \right\}$ gồm 17 số. Chọn ngẫu nhiên một tập con có ba phần tử của tập $S$. Tính xác suất để tập hợp được chọn có tổng các phần tử chia hết cho 3.
 
-**A.**$\frac{{27}}{{34}}$**.  B.**$\frac{{23}}{{68}}$.** C.**$\frac{9}{{34}}$.** D.**$\frac{9}{{12}}$.
+**A.**$\frac{{27}}{{34}}$**.  B.**$\frac{{23}}{{68}}$. **C.**$\frac{9}{{34}}$. **D.**$\frac{9}{{12}}$.
 
-**Hướng dẫn.Chọn B
+**Hướng dẫn.** Chọn **B**.
 Tập hợp các số từ tập $S$chia hết cho $3$là $\left\{ {3;6;9;12;15} \right\}$.
 
 Tập hợp các số từ tập $S$chia cho $3$ dư 1 là $\left\{ {1;4;7;10;13;16} \right\}$.
@@ -1517,9 +1532,12 @@ Xác suất của biến cố $A$là $P\left( A \right) = \frac{{230}}{{C_{17}^3
 
 **Câu 67.** Gọi M là tập tất cả các số tự nhiên có sáu chữ số đôi một khác nhau và có dạng $\overline {{a_1}{a_2}{a_3}{a_4}{a_5}{a_6}}$. Chọn ngẫu nhiên một số từ tập M. Tính xác suất để số được chọn là một số chẵn, đồng thời thỏa mãn ${a_1} > {a_2} > {a_3} > {a_4} > {a_5} > {a_6}.$
 
-**A.**$\frac{{35}}{{34020}}$** B.**$\frac{{37}}{{34020}}$.** C.**$\frac{{37}}{{3402}}$.** D.**$\frac{{74}}{{34020}}$.
+- **A.** $\frac{{35}}{{34020}}$
+- **B.** $\frac{{37}}{{34020}}$.
+- **C.** $\frac{{37}}{{3402}}$.
+- **D.** $\frac{{74}}{{34020}}$.
 
-**Hướng dẫn.Chọn B
+**Hướng dẫn.** Chọn **B**.
 Gọi *A* là biến cố “chọn ra được một số tự nhiên chẵn từ tập *M* đồng thời thỏa mãn ${a_1} > {a_2} > {a_3} > {a_4} > {a_5} > {a_6}$”. Khi đó: $n\left( M \right) = 9.A_9^5$ (số có sáu chữ số đôi một khác nhau thì ${a_1}$ có chín cách chọn, $\overline {{a_2}{a_3}{a_4}{a_5}{a_6}}$ là chỉnh hợp chập 5 của 9 phần tử nên có $A_9^5$).
 
 - TH1: ${a_6} = 0$thì $\overline {{a_1}{a_2}{a_3}{a_4}{a_5}}$ có $C_9^5$ cách chọn.
@@ -1612,10 +1630,10 @@ Vậy $P(A) = \frac{{n(A)}}{{n(\Omega )}} = \frac{{320}}{{648}} = \frac{{40}}{{8
 
 **Hướng dẫn.** Ta có: $n(\Omega ) = {9^8}.$
 
-**TH1: Xếp bất kỳ
+**TH1:** Xếp bất kỳ
 - Xếp hai chữ số 1, hai chữ số 2 bất kỳ và 4 chữ số còn lại: Có $C_8^2.C_6^2.A_7^4 = 352.800$ (cách).
 
-**TH2: Số các cách xếp sao cho không thỏa mãn yêu cầu bài toán
+**TH2:** Số các cách xếp sao cho không thỏa mãn yêu cầu bài toán
 - Xếp hai chữ số 1 đứng liền nhau: $7.C_6^2.A_7^4$ cách.
 
 - Xếp hai chữ số 2 đứng liền nhau: $7.C_6^2.A_7^4$ cách.
@@ -1628,13 +1646,16 @@ Coi hai chữ số 1 đứng liền nhau là nhóm X, hai chữ số 2 đứng l
 
 Vậy số cách xếp không thỏa mãn yêu cầu là: $2.7.C_6^2.A_7^4 – C_7^4.6! = 151200$(cách)
 
-Vậy $n(A) = 352.800 – 151.200 = 201.600 \Rightarrow p(A) = \frac{{201600}}{{{9^8}}}$, chọn**D.
+Vậy $n(A) = 352.800 – 151.200 = 201.600 \Rightarrow p(A) = \frac{{201600}}{{{9^8}}}$, chọn **D**.
+
 **Câu 73.** Có $3$ quyển sách Văn học khác nhau, $4$ quyển sách Toán học khác nhau và $7$ quyển sách Tiếng Anh khác nhau được xếp lên một kệ ngang. Tính xác suất để hai cuốn sách cùng môn không ở cạnh nhau.
 
-**Hướng dẫn.
-|  | T.A |  | T.A |  | T.A |  | T.A |  | T.A |  | T.A |  | T.A |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 |  | 2 |  | 3 |  | 4 |  | 5 |  | 6 |  | 7 |  | 8 |
+**Hướng dẫn.**
+
+| Chỗ trống 1 | Sách T.A | Chỗ trống 2 | Sách T.A | Chỗ trống 3 | Sách T.A | Chỗ trống 4 | Sách T.A | Chỗ trống 5 | Sách T.A | Chỗ trống 6 | Sách T.A | Chỗ trống 7 | Sách T.A | Chỗ trống 8 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 1 | T.A | 2 | T.A | 3 | T.A | 4 | T.A | 5 | T.A | 6 | T.A | 7 | T.A | 8 |
+
 
 Gọi $\Omega$ là biến cố “xếp $14$ quyển sách lên kệ sách một cách tùy ý” $\Rightarrow n\left( \Omega \right) = 14!$.
 

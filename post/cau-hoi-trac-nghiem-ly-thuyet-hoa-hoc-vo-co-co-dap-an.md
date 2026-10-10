@@ -61,7 +61,7 @@ Chuyên đề 16:  Cacbon – silic
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download các chuyên đề đã có đáp án in đỏ
 
-- [Chuyên đề 1 – CẤU TẠO NGUYÊN TỬ VÀ VỊ TRÍ CỦA KIM LOẠI TRONG BTH](https://o2.edu.vn/wp-content/uploads/2020/02/CĐ-1-CẤU-TẠO-NGUYÊN-TỬ-VÀ-VỊ-TRÍ-CỦA-KIM-LOẠI-TRONG-BTH.pdf)
+- [Chuyên đề 1 – CẤU TẠO NGUYÊN TỬ VÀ VỊ TRÍ CỦA KIM LOẠI TRONG BTH](#drive-pending-pdf)
 
 - [Chuyên đề 2 – TÍNH CHẤT VẬT LÝ CỦA KIM LOẠI](/assets/docs/CĐ-2-TÍNH-CHẤT-VẬT-LÝ-CỦA-KIM-LOẠI-2.pdf)
 - [Chuyên đề 3 – TÍNH CHẤT HÓA HỌC CỦA KIM LOẠI](/assets/docs/CĐ-3-TÍNH-CHẤT-HÓA-HỌC-CỦA-KIM-LOẠI-1.pdf)

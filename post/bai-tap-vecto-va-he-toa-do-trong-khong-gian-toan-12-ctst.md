@@ -38,5 +38,5 @@ CHỦ ĐỀ 2. ỨNG DỤNG THỰC TIỄN VÀ ỨNG DỤNG HÌNH HỌC KHÔNG GI
 
 ## Download Bài tập vectơ và hệ tọa độ trong không gian Toán 12 CTST
 
-- [cac-dang-bai-tap-vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst](#drive-pending-cac-dang-bai-tap-vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst.pdf)
-- [bai-giang-vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst](#drive-pending-bai-giang-vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst.pdf)
+- [cac-dang-bai-tap-vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst](https://drive.google.com/file/d/1B2xLHHfXR5Wr-gWbwzcJklQ5s57thg4T/view?usp=sharing)
+- [bai-giang-vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst](https://drive.google.com/file/d/1tKOmZQB38vhcK1_VPcIBiDQi307kiHj_/view?usp=sharing)

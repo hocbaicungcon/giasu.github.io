@@ -14,7 +14,7 @@ grade: 9
 
 Tổng hợp đề thi vào lớp 10 chuyên hoá năm 2021 2022
 
-Website o2.edu.vn gửi đến thầy cô tổng hợp 55 đề thi vào lớp 10 chuyên hoá các tỉnh trong cả nước năm học 2021 2022
+website giasu.ai.vn gửi đến thầy cô tổng hợp 55 đề thi vào lớp 10 chuyên hoá các tỉnh trong cả nước năm học 2021 2022
 
 - [1-De-thi-vao-lop-10-chuyen-hoa-tinh-Lao-Cai-nam-2021-2022](/assets/docs/1-De-thi-vao-lop-10-chuyen-hoa-tinh-Lao-Cai-nam-2021-2022.docx)
 - [2-De-thi-vao-lop-10-chuyen-hoa-tinh-Yen-Bai-nam-2021-2022](/assets/docs/2-De-thi-vao-lop-10-chuyen-hoa-tinh-Yen-Bai-nam-2021-2022.docx)

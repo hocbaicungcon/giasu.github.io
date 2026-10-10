@@ -470,7 +470,7 @@ on dioxide một người thải ra xấp xỉ thể tích oxygen hút vào. C�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL](/assets/docs/2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

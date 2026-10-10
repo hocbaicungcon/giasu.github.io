@@ -42,4 +42,4 @@ CHỦ ĐỀ 5. BIẾT ĐỒ THỊ, BẢNG BIẾN THIÊN CỦA HÀM SỐ y = f'(x
 CHỦ ĐỀ 6. TÌM GTLN VÀ GTNN CỦA BIỂU THỨC.
 ## Donwload Bài tập giá trị lớn nhất nhỏ nhất của hàm số Toán 12 CTST
 
-- [cac-dang-bai-tap-gia-tri-lon-nhat-gia-tri-nho-nhat-cua-ham-so-toan-12-ctst](#drive-pending-cac-dang-bai-tap-gia-tri-lon-nhat-gia-tri-nho-nhat-cua-ham-so-toan-12-ctst.pdf)
+- [cac-dang-bai-tap-gia-tri-lon-nhat-gia-tri-nho-nhat-cua-ham-so-toan-12-ctst](https://drive.google.com/file/d/1VvhVKnwcp1WeE-vq1iPCpOlWgMztHbud/view?usp=sharing)

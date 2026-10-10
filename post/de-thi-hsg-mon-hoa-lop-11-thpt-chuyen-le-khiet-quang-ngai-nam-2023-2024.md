@@ -372,7 +372,7 @@ CH4 → X1 → X4 → nhựa PVC
 **————Hết————
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HDC-H11-LE-KHIET-QUANG-NGAI-o2.edu_.vn_](/assets/docs/HDC-H11-LE-KHIET-QUANG-NGAI-giasu.ai.vn.docx)
+- [HDC-H11-LE-KHIET-QUANG-NGAI](/assets/docs/HDC-H11-LE-KHIET-QUANG-NGAI-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

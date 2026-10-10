@@ -326,7 +326,7 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 2. ![/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html Avatar](https://secure.gravatar.com/avatar/8a01c3a6a2bd7315a349970f2995af580282d191bc4a5895fb91b64fda5d959d)
 
    [22/09/2021](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat/#comment-1241.html)
-   [/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html](http://o2.edu)
+   [/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html]
 
    ho e xin file GIẢI BÀI TẬP CHẤT BÉO THEO PHƯƠNG PHÁP DỒN CHẤT với ạ
 

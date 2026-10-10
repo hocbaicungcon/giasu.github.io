@@ -184,10 +184,10 @@ $$
 
 Mời thầy cô và các em học sinh tải các tài liệu về bài toán khoảng cách trong hình học không gian tại đây:
 
-- [Khoảng cách trong không gian ôn thi THPTQG PDF](https://o2.edu.vn/wp-content/uploads/2020/04/khoang-cach-THPTQG.pdf)
+- [Khoảng cách trong không gian ôn thi THPTQG PDF](#drive-pending-pdf)
 
-- [Khoảng cách trong không gian PDF](https://o2.edu.vn/wp-content/uploads/2020/04/CD3_KhoangCach.pdf)
+- [Khoảng cách trong không gian PDF](#drive-pending-pdf)
 
-- [Bài tập chương quan hệ vuông góc trong không gian – Hình học không gian lớp 11 PDF](https://o2.edu.vn/wp-content/uploads/2020/04/bt_hhkg11_vuonggoc.pdf)
+- [Bài tập chương quan hệ vuông góc trong không gian – Hình học không gian lớp 11 PDF](#drive-pending-pdf)
 
 Tổng hợp tài liệu HHKG lớp 11 và ôn thi ĐH, THPT QG đầy đủ nhất, mời thầy cô và các em xem trong bài viết [38+ tài liệu hình học không gian 11 hay nhất](/bai-viet/tong-hop-tai-lieu-hinh-hoc-khong-gian-11.html)

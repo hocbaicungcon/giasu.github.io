@@ -130,7 +130,7 @@ b) HCHO + AgNO3 + NH3 + H2O    (NH4)2CO3 + Ag + NH4NO3
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC](/assets/docs/2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 
