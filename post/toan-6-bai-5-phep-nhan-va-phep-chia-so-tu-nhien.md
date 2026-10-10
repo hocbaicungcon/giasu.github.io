@@ -23,62 +23,62 @@ Bài học **Bài 5: Phép nhân và phép chia số tự nhiên** thuộc Chư�
 Hãy cùng hoàn thành nhanh 5 câu hỏi ôn tập sau:
 
 **Câu 1.** Tính:
-- a) $348 + 275$
-- b) $902 - 457$ (thử lại kết quả bằng phép cộng).
+- a) $439 + 386$
+- b) $803 - 368$ (thử lại kết quả bằng phép cộng).
 
 <details>
 <summary>Xem đáp án Câu 1</summary>
 
-- a) $348 + 275 = 623.$
-- b) $902 - 457 = 445.$
-  - Thử lại: $445 + 457 = 902$ (đúng bằng số bị trừ).
+- a) $439 + 386 = 825.$
+- b) $803 - 368 = 435.$
+  - Thử lại: $435 + 368 = 803$ (đúng bằng số bị trừ).
 
 </details>
 
 **Câu 2.** Tính một cách hợp lí:
-- a) $64 + 178 + 36$
-- b) $1997 + 45$
+- a) $73 + 185 + 27$
+- b) $1996 + 58$
 
 <details>
 <summary>Xem đáp án Câu 2</summary>
 
-- a) $(64 + 36) + 178 = 100 + 178 = 278.$
-- b) $(1997 + 3) + (45 - 3) = 2000 + 42 = 2042.$
+- a) $(73 + 27) + 185 = 100 + 185 = 285.$
+- b) $(1996 + 4) + (58 - 4) = 2000 + 54 = 2054.$
 
 </details>
 
 **Câu 3.** Tìm $x$, biết:
-- a) $x + 128 = 305$
-- b) $251 - x = 176$
+- a) $x + 137 = 320$
+- b) $342 - x = 185$
 
 <details>
 <summary>Xem đáp án Câu 3</summary>
 
-- a) $x = 305 - 128 = 177.$
-- b) $x = 251 - 176 = 75.$
+- a) $x = 320 - 137 = 183.$
+- b) $x = 342 - 185 = 157.$
 
 </details>
 
-**Câu 4.** Trong hai phép tính $305 - 500$ và $500 - 305$, phép tính nào thực hiện được trong tập hợp số tự nhiên? Hãy tính kết quả.
+**Câu 4.** Trong hai phép tính $408 - 600$ và $600 - 408$, phép tính nào thực hiện được trong tập hợp số tự nhiên? Hãy tính kết quả.
 
 <details>
 <summary>Xem đáp án Câu 4</summary>
 
-- Phép tính $305 - 500$ **không thực hiện được** trong $\mathbb{N}$ vì $305 < 500.$
-- Phép tính $500 - 305$ **thực hiện được** vì $500 > 305.$ Kết quả là:
-  $$500 - 305 = 195.$$
+- Phép tính $408 - 600$ **không thực hiện được** trong $\mathbb{N}$ vì $408 < 600.$
+- Phép tính $600 - 408$ **thực hiện được** vì $600 > 408.$ Kết quả là:
+  $$600 - 408 = 192.$$
 
 </details>
 
-**Câu 5.** Một cửa hàng có 1500 kg gạo. Buổi sáng cửa hàng bán được 372 kg, buổi chiều nhập thêm 208 kg. Hỏi sau đó cửa hàng có bao nhiêu ki-lô-gam gạo?
+**Câu 5.** Một cửa hàng có 1800 kg đường. Buổi sáng cửa hàng bán được 425 kg, buổi chiều nhập thêm 315 kg. Hỏi sau đó cửa hàng có bao nhiêu ki-lô-gam đường?
 
 <details>
 <summary>Xem đáp án Câu 5</summary>
 
 - Sau buổi sáng, cửa hàng còn lại:
-  $$1500 - 372 = 1128\text{ (kg)}.$$
+  $$1800 - 425 = 1375\text{ (kg)}.$$
 - Sau khi nhập thêm, cửa hàng có:
-  $$1128 + 208 = 1336\text{ (kg gạo)}.$$
+  $$1375 + 315 = 1690\text{ (kg đường)}.$$
 
 </details>
 
@@ -96,8 +96,8 @@ Trong đó:
 - $c$ gọi là **tích**.
 
 > **Quy ước kí hiệu trong cấp 2:**
-> - Dấu nhân "$\times$" ở Tiểu học từ nay được thay bằng dấu chấm giữa dòng "$\cdot$": viết $3 \cdot 5$ thay cho $3 \times 5.$
-> - Khi nhân một số với một chữ, hoặc nhân hai chữ với nhau, ta có thể **bỏ dấu chấm**: $5 \cdot x$ viết gọn là $5x;$ $a \cdot b$ viết gọn là $ab.$
+> - Dấu nhân "$\times$" ở Tiểu học từ nay được thay bằng dấu chấm giữa dòng "$\cdot$": viết $4 \cdot 7$ thay cho $4 \times 7.$
+> - Khi nhân một số với một chữ, hoặc nhân hai chữ với nhau, ta có thể **bỏ dấu chấm**: $6 \cdot x$ viết gọn là $6x;$ $a \cdot b$ viết gọn là $ab.$
 > - Bản chất phép nhân là phép cộng nhiều số hạng bằng nhau:
 >   $$4 \cdot 25 = 25 + 25 + 25 + 25 = 100\text{ (cộng 4 lần số 25)}.$$
 
@@ -113,35 +113,36 @@ Trong đó:
    $$a(b - c) = ab - ac$$
 
 <div style="display:flex; justify-content:center; align-items:center; margin:16px 0;">
-  <svg width="280" height="110" viewBox="0 0 280 110" style="background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0; max-width:100%;">
-    <!-- Lưới 3 hàng x 5 cột -->
-    <!-- mỗi ô 30x20, start tại x=50, y=25 -->
-    <rect x="50" y="25" width="150" height="60" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
-    <line x1="80" y1="25" x2="80" y2="85" stroke="#93c5fd"/>
-    <line x1="110" y1="25" x2="110" y2="85" stroke="#93c5fd"/>
-    <line x1="140" y1="25" x2="140" y2="85" stroke="#93c5fd"/>
-    <line x1="170" y1="25" x2="170" y2="85" stroke="#93c5fd"/>
-    <line x1="50" y1="45" x2="200" y2="45" stroke="#93c5fd"/>
-    <line x1="50" y1="65" x2="200" y2="65" stroke="#93c5fd"/>
-    <text x="125" y="16" font-size="12" text-anchor="middle" fill="#1e293b">5 ô mỗi hàng</text>
-    <text x="32" y="58" font-size="12" text-anchor="middle" fill="#1e293b">3 hàng</text>
-    <text x="240" y="58" font-size="13" font-weight="bold" fill="#1d4ed8">3 · 5 = 15</text>
+  <svg width="300" height="120" viewBox="0 0 300 120" style="background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0; max-width:100%;">
+    <!-- Lưới 4 hàng x 6 cột -->
+    <rect x="40" y="20" width="180" height="80" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+    <line x1="70" y1="20" x2="70" y2="100" stroke="#93c5fd"/>
+    <line x1="100" y1="20" x2="100" y2="100" stroke="#93c5fd"/>
+    <line x1="130" y1="20" x2="130" y2="100" stroke="#93c5fd"/>
+    <line x1="160" y1="20" x2="160" y2="100" stroke="#93c5fd"/>
+    <line x1="190" y1="20" x2="190" y2="100" stroke="#93c5fd"/>
+    <line x1="40" y1="40" x2="220" y2="40" stroke="#93c5fd"/>
+    <line x1="40" y1="60" x2="220" y2="60" stroke="#93c5fd"/>
+    <line x1="40" y1="80" x2="220" y2="80" stroke="#93c5fd"/>
+    <text x="130" y="14" font-size="12" text-anchor="middle" fill="#1e293b">6 ô mỗi hàng</text>
+    <text x="24" y="65" font-size="12" text-anchor="middle" fill="#1e293b">4 hàng</text>
+    <text x="260" y="65" font-size="13" font-weight="bold" fill="#1d4ed8">4 · 6 = 24</text>
   </svg>
 </div>
 
-*Minh họa:* Đếm theo hàng có $3 \cdot 5 = 15$ ô; đếm theo cột có $5 \cdot 3 = 15$ ô. Hai cách đếm cho cùng một kết quả, khẳng định $3 \cdot 5 = 5 \cdot 3.$
+*Minh họa:* Đếm theo hàng có $4 \cdot 6 = 24$ ô; đếm theo cột có $6 \cdot 4 = 24$ ô. Hai cách đếm cho cùng một kết quả, khẳng định $4 \cdot 6 = 6 \cdot 4.$
 
 > **Ví dụ 1.** Tính một cách hợp lí:
-> - a) $25 \cdot 6 \cdot 4$
-> - b) $47 \cdot 101$
+> - a) $25 \cdot 7 \cdot 4$
+> - b) $53 \cdot 101$
 
 <details>
 <summary>Xem lời giải Ví dụ 1</summary>
 
 - a) Dùng tính chất giao hoán và kết hợp để nhóm hai thừa số có tích tròn trăm:
-  $$25 \cdot 6 \cdot 4 = (25 \cdot 4) \cdot 6 = 100 \cdot 6 = 600.$$
+  $$25 \cdot 7 \cdot 4 = (25 \cdot 4) \cdot 7 = 100 \cdot 7 = 700.$$
 - b) Tách $101 = 100 + 1$ rồi áp dụng tính chất phân phối:
-  $$47 \cdot 101 = 47 \cdot (100 + 1) = 47 \cdot 100 + 47 \cdot 1 = 4700 + 47 = 4747.$$
+  $$53 \cdot 101 = 53 \cdot (100 + 1) = 53 \cdot 100 + 53 \cdot 1 = 5300 + 53 = 5353.$$
 
 </details>
 
@@ -162,17 +163,17 @@ $$\text{Số bị chia} = \text{Số chia} \times \text{Thương}$$
 - **Cách thử lại phép chia:** Lấy thương nhân với số chia, kết quả phải đúng bằng số bị chia.
 
 > **Ví dụ 2.** Đặt tính rồi tính, sau đó thử lại:
-> - a) $285 \cdot 36$
-> - b) $4056 : 24$
+> - a) $318 \cdot 27$
+> - b) $5184 : 24$
 
 <details>
 <summary>Xem lời giải Ví dụ 2</summary>
 
 - a) Đặt tính nhân từ phải sang trái:
-  $$285 \cdot 36 = 10\ 260.$$
+  $$318 \cdot 27 = 8586.$$
 - b) Đặt tính chia:
-  $$4056 : 24 = 169.$$
-  - Thử lại: $169 \cdot 24 = 4056$ (đúng bằng số bị chia).
+  $$5184 : 24 = 216.$$
+  - Thử lại: $216 \cdot 24 = 5184$ (đúng bằng số bị chia).
 
 </details>
 
@@ -191,16 +192,16 @@ Trong đó:
 > - Nếu $r = 0$: đó là phép chia hết.
 
 > **Ví dụ 3.** Thực hiện phép chia rồi viết dưới dạng $a = b \cdot q + r$:
-> - a) $47 : 5$
-> - b) $1000 : 7$
+> - a) $58 : 7$
+> - b) $1000 : 9$
 
 <details>
 <summary>Xem lời giải Ví dụ 3</summary>
 
-- a) $47 : 5$ được thương là 9, dư 2 (vì $5 \cdot 9 = 45,$ thừa 2). Ta viết:
-  $$47 = 5 \cdot 9 + 2 \quad (\text{số dư } 2 < 5).$$
-- b) $1000 : 7$ được thương là 142, dư 6 (vì $7 \cdot 142 = 994,$ thừa 6). Ta viết:
-  $$1000 = 7 \cdot 142 + 6 \quad (\text{số dư } 6 < 7).$$
+- a) $58 : 7$ được thương là 8, dư 2 (vì $7 \cdot 8 = 56,$ thừa 2). Ta viết:
+  $$58 = 7 \cdot 8 + 2 \quad (\text{số dư } 2 < 7).$$
+- b) $1000 : 9$ được thương là 111, dư 1 (vì $9 \cdot 111 = 999,$ thừa 1). Ta viết:
+  $$1000 = 9 \cdot 111 + 1 \quad (\text{số dư } 1 < 9).$$
 
 </details>
 
@@ -209,18 +210,17 @@ Trong đó:
 ### 4. Những điều rất dễ nhầm lẫn
 
 1. **Phép chia KHÔNG có tính chất giao hoán:**
-   - $12 : 4 = 3,$ nhưng $4 : 12$ không thực hiện được trong tập hợp số tự nhiên $\mathbb{N}.$
+   - $16 : 4 = 4,$ nhưng $4 : 16$ không thực hiện được trong tập hợp số tự nhiên $\mathbb{N}.$
 2. **Không được chia cho số 0:**
    - Phép tính $a : 0$ là **hoàn toàn vô nghĩa**. Tuy nhiên, $0 : a = 0$ với mọi $a \ne 0.$
 3. **Quy tắc nhân với 0:**
    - $a \cdot 0 = 0.$
    - Nếu một tích bằng 0 thì **ít nhất một thừa số phải bằng 0**:
      $$A \cdot B = 0 \iff A = 0 \text{ hoặc } B = 0.$$
-     *(Tính chất này cực kì hữu ích trong các bài toán tìm $x$).*
 4. **Số dư phải nhỏ hơn số chia:**
-   - Viết $17 = 3 \cdot 4 + 5$ là **sai** vì số dư 5 lớn hơn số chia 3. Viết đúng là: $17 = 3 \cdot 5 + 2.$
+   - Viết $23 = 4 \cdot 4 + 7$ là **sai** vì số dư 7 lớn hơn số chia 4. Viết đúng là: $23 = 4 \cdot 5 + 3.$
 5. **Nhân phân phối phải nhân đủ:**
-   - $5 \cdot (20 + 3) = 5 \cdot 20 + 5 \cdot 3 = 100 + 15 = 115,$ không được viết sai thành $5 \cdot 20 + 3.$
+   - $6 \cdot (20 + 4) = 6 \cdot 20 + 6 \cdot 4 = 120 + 24 = 144,$ không được viết sai thành $6 \cdot 20 + 4.$
 
 ---
 
@@ -234,50 +234,50 @@ Trong đó:
 - Phép chia có dư: viết dưới dạng $a = b \cdot q + r$ với $0 \le r < b.$
 
 **Luyện tập 1.1.** Đặt tính rồi tính:
-- a) $214 \cdot 32$
-- b) $3105 : 23$
+- a) $315 \cdot 24$
+- b) $4368 : 21$
 
 <details>
 <summary>Xem lời giải Luyện tập 1.1</summary>
 
-- a) $214 \cdot 32 = 6848.$
-- b) $3105 : 23 = 135$ (thử lại: $135 \cdot 23 = 3105$).
+- a) $315 \cdot 24 = 7560.$
+- b) $4368 : 21 = 208$ (thử lại: $208 \cdot 21 = 4368$).
 
 </details>
 
 **Luyện tập 1.2.** Thực hiện phép chia rồi viết dưới dạng $a = b \cdot q + r$:
-- a) $2023 : 15$
-- b) $5000 : 24$
+- a) $2026 : 14$
+- b) $6000 : 23$
 
 ```quiz
 type: choice
-question: 'Số dư trong phép chia $2023 : 15$ là bao nhiêu?'
+question: 'Số dư trong phép chia $2026 : 14$ là bao nhiêu?'
 options:
-  - '11'
+  - '8'
+  - '10'
   - '12'
-  - '13'
   - '14'
-answer: 3
-explanation: 'Ta có 2023 = 15 * 134 + 13. Thương là 134 và số dư là 13 (thỏa mãn 13 < 15).'
+answer: 2
+explanation: 'Ta có 2026 = 14 * 144 + 10. Thương là 144 và số dư là 10 (thỏa mãn 10 < 14).'
 ```
 
 <details>
 <summary>Xem lời giải đầy đủ Luyện tập 1.2</summary>
 
-- a) $2023 : 15$ được thương là 134, dư 13:
-  $$2023 = 15 \cdot 134 + 13 \quad (13 < 15).$$
-- b) $5000 : 24$ được thương là 208, dư 8:
-  $$5000 = 24 \cdot 208 + 8 \quad (8 < 24).$$
+- a) $2026 : 14$ được thương là 144, dư 10:
+  $$2026 = 14 \cdot 144 + 10 \quad (10 < 14).$$
+- b) $6000 : 23$ được thương là 260, dư 20:
+  $$6000 = 23 \cdot 260 + 20 \quad (20 < 23).$$
 
 </details>
 
-**Luyện tập 1.3.** Đặt tính rồi tính $36\ 718 : 22,$ sau đó thử lại kết quả bằng phép nhân.
+**Luyện tập 1.3.** Đặt tính rồi tính $45\ 375 : 25,$ sau đó thử lại kết quả bằng phép nhân.
 
 <details>
 <summary>Xem lời giải Luyện tập 1.3</summary>
 
-- Đặt tính chia: $36\ 718 : 22 = 1669.$
-- Thử lại: $1669 \cdot 22 = 36\ 718$ (đúng bằng số bị chia).
+- Đặt tính chia: $45\ 375 : 25 = 1815.$
+- Thử lại: $1815 \cdot 25 = 45\ 375$ (đúng bằng số bị chia).
 
 </details>
 
@@ -298,53 +298,53 @@ explanation: 'Ta có 2023 = 15 * 134 + 13. Thương là 134 và số dư là 13 
   $$(a \pm b) : c = a : c \pm b : c$$
 
 **Luyện tập 2.1.** Tính một cách hợp lí:
-- a) $500 \cdot 21 \cdot 2$
-- b) $8 \cdot 17 \cdot 125$
+- a) $500 \cdot 37 \cdot 2$
+- b) $8 \cdot 29 \cdot 125$
 
 <details>
 <summary>Xem lời giải Luyện tập 2.1</summary>
 
-- a) $(500 \cdot 2) \cdot 21 = 1000 \cdot 21 = 21\ 000.$
-- b) $(8 \cdot 125) \cdot 17 = 1000 \cdot 17 = 17\ 000.$
+- a) $(500 \cdot 2) \cdot 37 = 1000 \cdot 37 = 37\ 000.$
+- b) $(8 \cdot 125) \cdot 29 = 1000 \cdot 29 = 29\ 000.$
 
 </details>
 
 **Luyện tập 2.2.** Tính một cách hợp lí:
-- a) $214 \cdot 72 - 45 \cdot 214 - 214 \cdot 27$
-- b) $2975 : 25 - 475 : 25$
+- a) $318 \cdot 84 - 56 \cdot 318 - 318 \cdot 28$
+- b) $3725 : 25 - 1225 : 25$
 
 ```quiz
 type: choice
-question: 'Giá trị của biểu thức $214 \cdot 72 - 45 \cdot 214 - 214 \cdot 27$ là:'
+question: 'Giá trị của biểu thức $318 \cdot 84 - 56 \cdot 318 - 318 \cdot 28$ là:'
 options:
-  - '214'
+  - '318'
   - '0'
-  - '2140'
+  - '3180'
   - '100'
 answer: 2
-explanation: 'Đặt thừa số chung 214: 214 * (72 - 45 - 27) = 214 * 0 = 0.'
+explanation: 'Đặt thừa số chung 318: 318 * (84 - 56 - 28) = 318 * 0 = 0.'
 ```
 
 <details>
 <summary>Xem lời giải đầy đủ Luyện tập 2.2</summary>
 
-- a) Đặt thừa số chung $214$:
-  $$214 \cdot (72 - 45 - 27) = 214 \cdot 0 = 0.$$
+- a) Đặt thừa số chung $318$:
+  $$318 \cdot (84 - 56 - 28) = 318 \cdot 0 = 0.$$
 - b) Áp dụng quy tắc chia một hiệu cho một số:
-  $$(2975 - 475) : 25 = 2500 : 25 = 100.$$
+  $$(3725 - 1225) : 25 = 2500 : 25 = 100.$$
 
 </details>
 
-**Luyện tập 2.3.** Tính một cách hợp lí: $42 \cdot 13 + 22 \cdot 15 + 42 \cdot 7 - 5 \cdot 22.$
+**Luyện tập 2.3.** Tính một cách hợp lí: $36 \cdot 14 + 18 \cdot 16 + 36 \cdot 6 - 6 \cdot 18.$
 
 <details>
 <summary>Xem lời giải Luyện tập 2.3</summary>
 
-Nhóm các tích có chung thừa số $42$ và các tích có chung thừa số $22$:
-$$[42 \cdot 13 + 42 \cdot 7] + [22 \cdot 15 - 22 \cdot 5]$$
-$$= 42 \cdot (13 + 7) + 22 \cdot (15 - 5)$$
-$$= 42 \cdot 20 + 22 \cdot 10$$
-$$= 840 + 220 = 1060.$$
+Nhóm các tích có chung thừa số $36$ và các tích có chung thừa số $18$:
+$$[36 \cdot 14 + 36 \cdot 6] + [18 \cdot 16 - 18 \cdot 6]$$
+$$= 36 \cdot (14 + 6) + 18 \cdot (16 - 6)$$
+$$= 36 \cdot 20 + 18 \cdot 10$$
+$$= 720 + 180 = 900.$$
 
 </details>
 
@@ -356,57 +356,57 @@ $$= 840 + 220 = 1060.$$
 - Tìm thừa số: $\text{Thừa số} = \text{Tích} : \text{Thừa số đã biết}.$
 - Tìm số bị chia: $\text{Số bị chia} = \text{Thương} \cdot \text{Số chia}.$
 - Tìm số chia: $\text{Số chia} = \text{Số bị chia} : \text{Thương}.$
-- Dạng $5x + 2x$: dùng phân phối gộp lại thành $(5 + 2)x = 7x.$
+- Dạng $6x + 3x$: dùng phân phối gộp lại thành $(6 + 3)x = 9x.$
 
 **Luyện tập 3.1.** Tìm $x$, biết:
-- a) $7x = 84$
-- b) $x : 6 = 15$
+- a) $8x = 104$
+- b) $x : 7 = 18$
 
 <details>
 <summary>Xem lời giải Luyện tập 3.1</summary>
 
-- a) $x = 84 : 7 = 12.$
-- b) $x = 15 \cdot 6 = 90.$
+- a) $x = 104 : 8 = 13.$
+- b) $x = 18 \cdot 7 = 126.$
 
 </details>
 
 **Luyện tập 3.2.** Tìm $x$, biết:
-- a) $5x - 13 = 17$
-- b) $3(x + 15) = 60$
+- a) $6x - 15 = 21$
+- b) $4(x + 12) = 80$
 
 <details>
 <summary>Xem lời giải Luyện tập 3.2</summary>
 
-- a) Coi $5x$ là số bị trừ:
-  $$5x = 17 + 13 = 30 \implies x = 30 : 5 = 6.$$
-- b) Coi $(x + 15)$ là thừa số:
-  $$x + 15 = 60 : 3 = 20 \implies x = 20 - 15 = 5.$$
+- a) Coi $6x$ là số bị trừ:
+  $$6x = 21 + 15 = 36 \implies x = 36 : 6 = 6.$$
+- b) Coi $(x + 12)$ là thừa số:
+  $$x + 12 = 80 : 4 = 20 \implies x = 20 - 12 = 8.$$
 
 </details>
 
 **Luyện tập 3.3.** Tìm $x$, biết:
-- a) $(x - 32) : 16 = 48$
-- b) $5x + 2x = 70$
+- a) $(x - 45) : 15 = 32$
+- b) $6x + 3x = 81$
 
 ```quiz
 type: choice
-question: 'Giá trị của x thỏa mãn $5x + 2x = 70$ là:'
+question: 'Giá trị của x thỏa mãn $6x + 3x = 81$ là:'
 options:
   - '7'
-  - '10'
-  - '14'
-  - '35'
+  - '9'
+  - '12'
+  - '27'
 answer: 2
-explanation: 'Gộp lại: (5 + 2)x = 7x = 70 => x = 70 : 7 = 10.'
+explanation: 'Gộp lại: (6 + 3)x = 9x = 81 => x = 81 : 9 = 9.'
 ```
 
 <details>
 <summary>Xem lời giải đầy đủ Luyện tập 3.3</summary>
 
-- a) Coi $(x - 32)$ là số bị chia:
-  $$x - 32 = 48 \cdot 16 = 768 \implies x = 768 + 32 = 800.$$
+- a) Coi $(x - 45)$ là số bị chia:
+  $$x - 45 = 32 \cdot 15 = 480 \implies x = 480 + 45 = 525.$$
 - b) Gộp thừa số:
-  $$(5 + 2)x = 70 \implies 7x = 70 \implies x = 70 : 7 = 10.$$
+  $$(6 + 3)x = 81 \implies 9x = 81 \implies x = 81 : 9 = 9.$$
 
 </details>
 
@@ -420,57 +420,57 @@ explanation: 'Gộp lại: (5 + 2)x = 7x = 70 => x = 70 : 7 = 10.'
   - *Làm tròn xuống:* Mua đồ, cắt vải, may áo (tiền dư không đủ mua thêm 1 đơn vị).
   - *Làm tròn lên (cộng thêm 1):* Xếp xe, chia bàn, đóng thùng (phải có thêm 1 xe/bàn/thùng để chở/chứa nốt số lượng còn dư).
 
-**Luyện tập 4.1.** Một công ty có hai xưởng sản xuất:
-- Xưởng A có 30 công nhân, mỗi công nhân làm được 50 sản phẩm một ngày.
-- Xưởng B có nhiều hơn xưởng A 10 công nhân, mỗi công nhân làm được 30 sản phẩm một ngày.
+**Luyện tập 4.1.** Một xí nghiệp may có hai tổ công nhân:
+- Tổ 1 có 25 công nhân, mỗi công nhân may được 40 sản phẩm một ngày.
+- Tổ 2 có nhiều hơn tổ 1 là 15 công nhân, mỗi công nhân may được 35 sản phẩm một ngày.
 
-Hỏi mỗi ngày công ty làm được tất cả bao nhiêu sản phẩm?
+Hỏi mỗi ngày xí nghiệp may được tất cả bao nhiêu sản phẩm?
 
 <details>
 <summary>Xem lời giải Luyện tập 4.1</summary>
 
-- Số sản phẩm xưởng A làm trong một ngày:
-  $$30 \cdot 50 = 1500\text{ (sản phẩm)}.$$
-- Số công nhân của xưởng B là:
-  $$30 + 10 = 40\text{ (công nhân)}.$$
-- Số sản phẩm xưởng B làm trong một ngày:
-  $$40 \cdot 30 = 1200\text{ (sản phẩm)}.$$
-- Mỗi ngày công ty làm được:
-  $$1500 + 1200 = 2700\text{ (sản phẩm)}.$$
+- Số sản phẩm tổ 1 may trong một ngày:
+  $$25 \cdot 40 = 1000\text{ (sản phẩm)}.$$
+- Số công nhân của tổ 2 là:
+  $$25 + 15 = 40\text{ (công nhân)}.$$
+- Số sản phẩm tổ 2 may trong một ngày:
+  $$40 \cdot 35 = 1400\text{ (sản phẩm)}.$$
+- Mỗi ngày xí nghiệp may được:
+  $$1000 + 1400 = 2400\text{ (sản phẩm)}.$$
 
 </details>
 
-**Luyện tập 4.2.** Mẹ đưa cho Trọng 50 000 đồng để mua bút bi, mỗi chiếc giá 3000 đồng. Hỏi Trọng mua được nhiều nhất bao nhiêu chiếc bút bi?
+**Luyện tập 4.2.** Nam có 70 000 đồng đi mua bút bi, mỗi chiếc giá 4000 đồng. Hỏi Nam mua được nhiều nhất bao nhiêu chiếc bút bi?
 
 <details>
 <summary>Xem lời giải Luyện tập 4.2</summary>
 
 Thực hiện phép chia có dư:
-$$50\ 000 : 3000 = 16\text{ (dư } 2000).$$
-Vì số tiền còn dư 2000 đồng không đủ mua thêm một chiếc bút nên Trọng mua được **nhiều nhất 16 chiếc bút bi**.
+$$70\ 000 : 4000 = 17\text{ (dư } 2000).$$
+Vì số tiền còn dư 2000 đồng không đủ mua thêm một chiếc bút nên Nam mua được **nhiều nhất 17 chiếc bút bi**.
 
 </details>
 
-**Luyện tập 4.3.** Một đoàn có 320 học sinh đi tham quan bằng ô tô, mỗi xe chở được tối đa 45 học sinh. Hỏi cần ít nhất bao nhiêu chiếc xe ô tô để chở hết số học sinh đó?
+**Luyện tập 4.3.** Một đoàn gồm 350 học sinh đi tham quan dã ngoại bằng xe khách, mỗi xe chở được tối đa 45 học sinh. Hỏi cần ít nhất bao nhiêu chiếc xe để chở hết số học sinh đó?
 
 ```quiz
 type: choice
-question: 'Đoàn có 320 học sinh, mỗi xe chở được 45 học sinh. Cần ít nhất bao nhiêu chiếc xe?'
+question: 'Đoàn có 350 học sinh, mỗi xe chở được 45 học sinh. Cần ít nhất bao nhiêu chiếc xe?'
 options:
   - '7 chiếc xe'
   - '8 chiếc xe'
   - '9 chiếc xe'
   - '6 chiếc xe'
 answer: 2
-explanation: '320 : 45 = 7 dư 5 học sinh. 7 xe chở được 315 em, còn thừa 5 em nên bắt buộc cần thêm 1 xe nữa. Vậy cần ít nhất 7 + 1 = 8 xe.'
+explanation: '350 : 45 = 7 dư 35 học sinh. 7 xe chở được 315 em, còn thừa 35 em nên bắt buộc cần thêm 1 xe nữa. Vậy cần ít nhất 7 + 1 = 8 xe.'
 ```
 
 <details>
 <summary>Xem lời giải đầy đủ Luyện tập 4.3</summary>
 
 Thực hiện phép chia:
-$$320 : 45 = 7\text{ (dư } 5).$$
-7 xe chỉ chở được $7 \cdot 45 = 315$ học sinh, còn dư 5 học sinh nên bắt buộc phải bố trí thêm 1 xe nữa.
+$$350 : 45 = 7\text{ (dư } 35).$$
+7 xe chỉ chở được $7 \cdot 45 = 315$ học sinh, còn dư 35 học sinh nên bắt buộc phải bố trí thêm 1 xe nữa.
 Vậy cần ít nhất số xe là:
 $$7 + 1 = 8\text{ (chiếc xe)}.$$
 
@@ -481,15 +481,15 @@ $$7 + 1 = 8\text{ (chiếc xe)}.$$
 ## C. Phiếu bài tập tự luyện
 
 **Bài 1.** Đặt tính rồi tính:
-- a) $408 \cdot 37$
-- b) $9384 : 24$ (thử lại bằng phép nhân).
+- a) $512 \cdot 28$
+- b) $8688 : 24$ (thử lại bằng phép nhân).
 
 <details>
 <summary>Xem lời giải Bài 1</summary>
 
-- a) $408 \cdot 37 = 15\ 096.$
-- b) $9384 : 24 = 391.$
-  - Thử lại: $391 \cdot 24 = 9384$ (đúng).
+- a) $512 \cdot 28 = 14\ 336.$
+- b) $8688 : 24 = 362.$
+  - Thử lại: $362 \cdot 24 = 8688$ (đúng).
 
 </details>
 
@@ -497,131 +497,131 @@ $$7 + 1 = 8\text{ (chiếc xe)}.$$
 
 | $a$ | $b$ | $a \cdot b$ | $a : b$ |
 | :---: | :---: | :---: | :---: |
-| $9$ | $3$ | ? | ? |
-| ? | $6$ | ? | $7$ |
-| $24$ | ? | $72$ | ? |
-| ? | ? | $180$ | $5$ |
-| $84$ | $12$ | ? | ? |
+| $12$ | $4$ | ? | ? |
+| ? | $5$ | ? | $8$ |
+| $36$ | ? | $108$ | ? |
+| ? | ? | $320$ | $5$ |
+| $96$ | $16$ | ? | ? |
 
 <details>
 <summary>Xem đáp án bảng Bài 2</summary>
 
 | $a$ | $b$ | $a \cdot b$ | $a : b$ |
 | :---: | :---: | :---: | :---: |
-| $9$ | $3$ | **$27$** | **$3$** |
-| **$42$** | $6$ | **$252$** | $7$ |
-| $24$ | **$3$** | $72$ | **$8$** |
-| **$30$** | **$6$** | $180$ | $5$ |
-| $84$ | $12$ | **$1008$** | **$7$** |
+| $12$ | $4$ | **$48$** | **$3$** |
+| **$40$** | $5$ | **$200$** | $8$ |
+| $36$ | **$3$** | $108$ | **$12$** |
+| **$40$** | **$8$** | $320$ | $5$ |
+| $96$ | $16$ | **$1536$** | **$6$** |
 
-- Cột 2: $a = 6 \cdot 7 = 42 \implies a \cdot b = 42 \cdot 6 = 252.$
-- Cột 3: $b = 72 : 24 = 3 \implies a : b = 24 : 3 = 8.$
-- Cột 4: Ta có $(a \cdot b) \cdot (a : b) = a \cdot a = 180 \cdot 5 = 900 \implies a = 30$ (vì $30 \cdot 30 = 900$). Khi đó $b = 30 : 5 = 6.$
-- Cột 5: $a \cdot b = 84 \cdot 12 = 1008;\quad a : b = 84 : 12 = 7.$
+- Cột 2: $a = 5 \cdot 8 = 40 \implies a \cdot b = 40 \cdot 5 = 200.$
+- Cột 3: $b = 108 : 36 = 3 \implies a : b = 36 : 3 = 12.$
+- Cột 4: Ta có $(a \cdot b) \cdot (a : b) = a \cdot a = 320 \cdot 5 = 1600 \implies a = 40$ (vì $40 \cdot 40 = 1600$). Khi đó $b = 40 : 5 = 8.$
+- Cột 5: $a \cdot b = 96 \cdot 16 = 1536;\quad a : b = 96 : 16 = 6.$
 
 </details>
 
 **Bài 3.** Tính một cách hợp lí:
-- a) $4 \cdot 17 \cdot 25$
-- b) $32 \cdot 47 + 32 \cdot 53$
+- a) $4 \cdot 19 \cdot 25$
+- b) $43 \cdot 38 + 43 \cdot 62$
 
 <details>
 <summary>Xem lời giải Bài 3</summary>
 
-- a) $(4 \cdot 25) \cdot 17 = 100 \cdot 17 = 1700.$
-- b) $32 \cdot (47 + 53) = 32 \cdot 100 = 3200.$
+- a) $(4 \cdot 25) \cdot 19 = 100 \cdot 19 = 1900.$
+- b) $43 \cdot (38 + 62) = 43 \cdot 100 = 4300.$
 
 </details>
 
 **Bài 4.** Tính một cách hợp lí:
-- a) $37 \cdot 78 + 37 \cdot 22$
-- b) $156 \cdot 23 - 56 \cdot 23$
+- a) $48 \cdot 76 + 48 \cdot 24$
+- b) $178 \cdot 34 - 78 \cdot 34$
 
 <details>
 <summary>Xem lời giải Bài 4</summary>
 
-- a) $37 \cdot (78 + 22) = 37 \cdot 100 = 3700.$
-- b) $(156 - 56) \cdot 23 = 100 \cdot 23 = 2300.$
+- a) $48 \cdot (76 + 24) = 48 \cdot 100 = 4800.$
+- b) $(178 - 78) \cdot 34 = 100 \cdot 34 = 3400.$
 
 </details>
 
 **Bài 5.** Thực hiện phép chia rồi viết dưới dạng $a = b \cdot q + r$:
-- a) $745 : 8$
-- b) $2846 : 15$
+- a) $835 : 9$
+- b) $3154 : 16$
 
 <details>
 <summary>Xem lời giải Bài 5</summary>
 
-- a) $745 : 8$ được thương 93, dư 1:
-  $$745 = 8 \cdot 93 + 1 \quad (1 < 8).$$
-- b) $2846 : 15$ được thương 189, dư 11:
-  $$2846 = 15 \cdot 189 + 11 \quad (11 < 15).$$
+- a) $835 : 9$ được thương 92, dư 7:
+  $$835 = 9 \cdot 92 + 7 \quad (7 < 9).$$
+- b) $3154 : 16$ được thương 197, dư 2:
+  $$3154 = 16 \cdot 197 + 2 \quad (2 < 16).$$
 
 </details>
 
 **Bài 6.** Tìm $x$, biết:
-- a) $8x = 96$
-- b) $x : 12 = 8$
-- c) $4x + 3x = 63$
+- a) $9x = 117$
+- b) $x : 14 = 7$
+- c) $5x + 4x = 72$
 
 <details>
 <summary>Xem lời giải Bài 6</summary>
 
-- a) $x = 96 : 8 = 12.$
-- b) $x = 8 \cdot 12 = 96.$
-- c) $7x = 63 \implies x = 63 : 7 = 9.$
+- a) $x = 117 : 9 = 13.$
+- b) $x = 7 \cdot 14 = 98.$
+- c) $9x = 72 \implies x = 72 : 9 = 8.$
 
 </details>
 
 **Bài 7.** Tìm $x$, biết:
-- a) $(x - 15) \cdot 7 = 63$
-- b) $96 : (x + 2) = 8$
+- a) $(x - 18) \cdot 6 = 72$
+- b) $108 : (x + 3) = 9$
 
 <details>
 <summary>Xem lời giải Bài 7</summary>
 
-- a) $x - 15 = 63 : 7 = 9 \implies x = 9 + 15 = 24.$
-- b) $x + 2 = 96 : 8 = 12 \implies x = 12 - 2 = 10.$
+- a) $x - 18 = 72 : 6 = 12 \implies x = 12 + 18 = 30.$
+- b) $x + 3 = 108 : 9 = 12 \implies x = 12 - 3 = 9.$
 
 </details>
 
 **Bài 8.** Mỗi khẳng định sau đúng hay sai? Nếu sai, hãy sửa lại cho đúng:
-- a) Phép chia có tính chất giao hoán, nghĩa là $12 : 4 = 4 : 12.$
-- b) $17 = 3 \cdot 4 + 5.$
+- a) Phép chia có tính chất giao hoán, nghĩa là $16 : 4 = 4 : 16.$
+- b) $23 = 4 \cdot 4 + 7.$
 - c) $a : 0 = 0$ với mọi số tự nhiên $a.$
-- d) $5 \cdot (20 + 3) = 5 \cdot 20 + 3.$
+- d) $6 \cdot (20 + 4) = 6 \cdot 20 + 4.$
 
 <details>
 <summary>Xem lời giải Bài 8</summary>
 
-- a) **Sai**, vì $12 : 4 = 3$ nhưng $4 : 12$ không thực hiện được trong $\mathbb{N}.$ Phép chia không có tính chất giao hoán.
-- b) **Sai**, vì số dư 5 lớn hơn số chia 3. Phép chia chưa xong, viết đúng là: $17 = 3 \cdot 5 + 2.$
+- a) **Sai**, vì $16 : 4 = 4$ nhưng $4 : 16$ không thực hiện được trong $\mathbb{N}.$ Phép chia không có tính chất giao hoán.
+- b) **Sai**, vì số dư 7 lớn hơn số chia 4. Phép chia chưa hoàn thành, viết đúng là: $23 = 4 \cdot 5 + 3.$
 - c) **Sai**, vì không được chia cho 0, biểu thức $a : 0$ là vô nghĩa. (Chỉ có $0 : a = 0$ khi $a \ne 0$).
-- d) **Sai**, vì phải nhân phân phối đủ: $5 \cdot (20 + 3) = 5 \cdot 20 + 5 \cdot 3 = 100 + 15 = 115.$
+- d) **Sai**, vì phải nhân phân phối đủ: $6 \cdot (20 + 4) = 6 \cdot 20 + 6 \cdot 4 = 120 + 24 = 144.$
 
 </details>
 
-**Bài 9.** Người ta xếp 250 quyển vở vào các thùng, mỗi thùng đựng được 18 quyển. Hỏi cần ít nhất bao nhiêu thùng để đựng hết số vở đó?
+**Bài 9.** Người ta xếp 280 quyển vở vào các hộp, mỗi hộp đựng được 16 quyển. Hỏi cần ít nhất bao nhiêu hộp để đựng hết số vở đó?
 
 <details>
 <summary>Xem lời giải Bài 9</summary>
 
 - Thực hiện phép chia:
-  $$250 : 18 = 13\text{ (dư } 16).$$
-- 13 thùng chỉ chứa được $13 \cdot 18 = 234$ quyển, còn thừa 16 quyển nên cần thêm 1 thùng nữa.
-- Vậy cần ít nhất: $13 + 1 = 14\text{ (thùng)}.$
+  $$280 : 16 = 17\text{ (dư } 8).$$
+- 17 hộp chỉ chứa được $17 \cdot 16 = 272$ quyển, còn thừa 8 quyển nên cần thêm 1 hộp nữa.
+- Vậy cần ít nhất: $17 + 1 = 18\text{ (hộp)}.$
 
 </details>
 
-**Bài 10.** Lớp 6A có 45 học sinh. Cô giáo phô tô đề kiểm tra để phát cho mỗi bạn một bản, mỗi đề gồm 2 trang. Biết giá phô tô một trang là 250 đồng, hỏi cô giáo phải trả bao nhiêu tiền?
+**Bài 10.** Lớp 6B có 42 học sinh. Thầy giáo phô tô đề kiểm tra để phát cho mỗi bạn một bản, mỗi đề gồm 3 trang. Biết giá phô tô một trang là 300 đồng, hỏi thầy giáo phải trả bao nhiêu tiền?
 
 <details>
 <summary>Xem lời giải Bài 10</summary>
 
 - Tổng số trang cần phô tô là:
-  $$45 \cdot 2 = 90\text{ (trang)}.$$
-- Cô giáo phải trả số tiền là:
-  $$90 \cdot 250 = 22\ 500\text{ (đồng)}.$$
+  $$42 \cdot 3 = 126\text{ (trang)}.$$
+- Thầy giáo phải trả số tiền là:
+  $$126 \cdot 300 = 37\ 800\text{ (đồng)}.$$
 
 </details>
 
@@ -633,35 +633,35 @@ $$7 + 1 = 8\text{ (chiếc xe)}.$$
 
 ```quiz
 type: choice
-question: 'Tích $8 \cdot 125 \cdot 7$ có kết quả là:'
+question: 'Tích $8 \cdot 125 \cdot 9$ có kết quả là:'
 options:
-  - '700'
-  - '7000'
-  - '70 000'
+  - '900'
+  - '9000'
+  - '90 000'
   - '8000'
 answer: 2
-explanation: 'Ta có (8 * 125) * 7 = 1000 * 7 = 7000.'
+explanation: 'Ta có (8 * 125) * 9 = 1000 * 9 = 9000.'
 ```
 
 ```quiz
 type: choice
-question: 'Tìm x biết $6(x - 4) = 30$.'
+question: 'Tìm x biết $7(x - 5) = 42$.'
 options:
-  - '5'
-  - '9'
+  - '6'
+  - '11'
   - '1'
-  - '10'
+  - '12'
 answer: 2
-explanation: 'x - 4 = 30 : 6 = 5 => x = 5 + 4 = 9.'
+explanation: 'x - 5 = 42 : 7 = 6 => x = 6 + 5 = 11.'
 ```
 
 ```quiz
 type: choice
 question: 'Khẳng định nào sau đây là ĐÚNG?'
 options:
-  - '15 : 0 = 0'
-  - '0 : 15 = 0'
-  - '15 : 0 = 15'
+  - '20 : 0 = 0'
+  - '0 : 20 = 0'
+  - '20 : 0 = 20'
   - '0 : 0 = 0'
 answer: 2
 explanation: 'Không được chia cho số 0. Chỉ có phép tính 0 : a = 0 (với a khác 0) là hợp lệ.'
@@ -669,14 +669,14 @@ explanation: 'Không được chia cho số 0. Chỉ có phép tính 0 : a = 0 (
 
 ```quiz
 type: choice
-question: 'Có 200 học sinh xếp ngồi vào các bàn 6 chỗ. Cần ít nhất bao nhiêu bàn?'
+question: 'Có 250 học sinh xếp ngồi vào các bàn 6 chỗ. Cần ít nhất bao nhiêu bàn?'
 options:
-  - '33 bàn'
-  - '34 bàn'
-  - '35 bàn'
-  - '32 bàn'
+  - '41 bàn'
+  - '42 bàn'
+  - '43 bàn'
+  - '40 bàn'
 answer: 2
-explanation: '200 : 6 = 33 dư 2 học sinh. 33 bàn ngồi được 198 em, còn thừa 2 em nên cần thêm 1 bàn. Vậy cần ít nhất 34 bàn.'
+explanation: '250 : 6 = 41 dư 4 học sinh. 41 bàn ngồi được 246 em, còn thừa 4 em nên cần thêm 1 bàn. Vậy cần ít nhất 42 bàn.'
 ```
 
 ---
@@ -684,92 +684,92 @@ explanation: '200 : 6 = 33 dư 2 học sinh. 33 bàn ngồi được 198 em, cò
 ### 2. Bài tập tự luận kiểm tra
 
 **Câu 1.** Tính:
-- a) $234 \cdot 12$
-- b) $4620 : 15$
+- a) $345 \cdot 14$
+- b) $5280 : 16$
 
 <details>
 <summary>Xem lời giải Câu 1</summary>
 
-- a) $234 \cdot 12 = 2808.$
-- b) $4620 : 15 = 308.$
+- a) $345 \cdot 14 = 4830.$
+- b) $5280 : 16 = 330.$
 
 </details>
 
-**Câu 2.** Thực hiện phép chia $1000 : 7$ rồi viết kết quả dưới dạng $a = b \cdot q + r.$
+**Câu 2.** Thực hiện phép chia $1000 : 9$ rồi viết kết quả dưới dạng $a = b \cdot q + r.$
 
 <details>
 <summary>Xem lời giải Câu 2</summary>
 
-$$1000 : 7 = 142\text{ (dư } 6) \implies 1000 = 7 \cdot 142 + 6.$$
+$$1000 : 9 = 111\text{ (dư } 1) \implies 1000 = 9 \cdot 111 + 1.$$
 
 </details>
 
 **Câu 3.** Tính một cách hợp lí:
-- a) $4 \cdot 25 \cdot 13$
-- b) $8 \cdot 125 \cdot 7$
+- a) $4 \cdot 25 \cdot 17$
+- b) $8 \cdot 125 \cdot 9$
 
 <details>
 <summary>Xem lời giải Câu 3</summary>
 
-- a) $(4 \cdot 25) \cdot 13 = 100 \cdot 13 = 1300.$
-- b) $(8 \cdot 125) \cdot 7 = 1000 \cdot 7 = 7000.$
+- a) $(4 \cdot 25) \cdot 17 = 100 \cdot 17 = 1700.$
+- b) $(8 \cdot 125) \cdot 9 = 1000 \cdot 9 = 9000.$
 
 </details>
 
-**Câu 4.** Tính một cách hợp lí: $63 \cdot 47 + 63 \cdot 53.$
+**Câu 4.** Tính một cách hợp lí: $72 \cdot 46 + 72 \cdot 54.$
 
 <details>
 <summary>Xem lời giải Câu 4</summary>
 
-$$63 \cdot (47 + 53) = 63 \cdot 100 = 6300.$$
+$$72 \cdot (46 + 54) = 72 \cdot 100 = 7200.$$
 
 </details>
 
 **Câu 5.** Tìm $x$, biết:
-- a) $9x = 108$
-- b) $x : 8 = 16$
+- a) $8x = 112$
+- b) $x : 9 = 15$
 
 <details>
 <summary>Xem lời giải Câu 5</summary>
 
-- a) $x = 108 : 9 = 12.$
-- b) $x = 16 \cdot 8 = 128.$
+- a) $x = 112 : 8 = 14.$
+- b) $x = 15 \cdot 9 = 135.$
 
 </details>
 
-**Câu 6.** Tìm $x$, biết: $6(x - 4) = 30.$
+**Câu 6.** Tìm $x$, biết: $7(x - 5) = 42.$
 
 <details>
 <summary>Xem lời giải Câu 6</summary>
 
-$$x - 4 = 30 : 6 = 5 \implies x = 5 + 4 = 9.$$
+$$x - 5 = 42 : 7 = 6 \implies x = 6 + 5 = 11.$$
 
 </details>
 
-**Câu 7.** Một cửa hàng nhập về 15 thùng sữa, mỗi thùng có 24 hộp. Hỏi cửa hàng nhập về tất cả bao nhiêu hộp sữa?
+**Câu 7.** Một cửa hàng nhập về 18 thùng mì, mỗi thùng có 30 gói. Hỏi cửa hàng nhập về tất cả bao nhiêu gói mì?
 
 <details>
 <summary>Xem lời giải Câu 7</summary>
 
 Cửa hàng nhập về tất cả:
-$$15 \cdot 24 = 360\text{ (hộp sữa)}.$$
+$$18 \cdot 30 = 540\text{ (gói mì)}.$$
 
 </details>
 
-**Câu 8.** Có 200 học sinh xếp ngồi vào các bàn, mỗi bàn ngồi được 6 học sinh. Hỏi cần ít nhất bao nhiêu chiếc bàn để tất cả học sinh đều có chỗ ngồi?
+**Câu 8.** Có 250 học sinh xếp ngồi vào các bàn, mỗi bàn ngồi được 6 học sinh. Hỏi cần ít nhất bao nhiêu chiếc bàn để tất cả học sinh đều có chỗ ngồi?
 
 <details>
 <summary>Xem lời giải Câu 8</summary>
 
-- Ta có: $200 : 6 = 33\text{ (dư } 2).$
-- 33 bàn ngồi được 198 em, còn thừa 2 em nên cần thêm 1 bàn.
-- Vậy cần ít nhất: $33 + 1 = 34\text{ (chiếc bàn)}.$
+- Ta có: $250 : 6 = 41\text{ (dư } 4).$
+- 41 bàn ngồi được 246 em, còn thừa 4 em nên cần thêm 1 bàn.
+- Vậy cần ít nhất: $41 + 1 = 42\text{ (chiếc bàn)}.$
 
 </details>
 
 **Câu 9.** Mỗi khẳng định sau đúng hay sai?
-- a) $0 : 15 = 0$
-- b) $15 : 0 = 0$
+- a) $0 : 24 = 0$
+- b) $24 : 0 = 0$
 
 <details>
 <summary>Xem lời giải Câu 9</summary>
@@ -784,56 +784,56 @@ $$15 \cdot 24 = 360\text{ (hộp sữa)}.$$
 ## E. Bài tập nâng cao
 
 **Bài 1 (Bài toán phép chia có dư).**
-Trong một phép chia có dư, số bị chia bằng 24, thương bằng 3. Tìm số chia và số dư.
+Trong một phép chia có dư, số bị chia bằng 35, thương bằng 4. Tìm số chia và số dư.
 
 <details>
 <summary>Xem lời giải Bài 1 nâng cao</summary>
 
 - Gọi số chia là $b,$ số dư là $r$ ($b, r \in \mathbb{N}$).
 - Điều kiện của phép chia có dư:
-  $$24 = 3b + r \quad (0 < r < b).$$
-- Từ $r = 24 - 3b > 0 \implies 3b < 24 \implies b < 8.$
-- Từ $r < b \implies 24 - 3b < b \implies 24 < 4b \implies b > 6.$
-- Vì $b \in \mathbb{N}$ và $6 < b < 8$ nên bắt buộc $b = 7.$
+  $$35 = 4b + r \quad (0 < r < b).$$
+- Từ $r = 35 - 4b > 0 \implies 4b < 35 \implies b \le 8.$
+- Từ $r < b \implies 35 - 4b < b \implies 35 < 5b \implies b > 7.$
+- Vì $b \in \mathbb{N}$ và $7 < b \le 8$ nên bắt buộc $b = 8.$
 - Khi đó số dư là:
-  $$r = 24 - 3 \cdot 7 = 24 - 21 = 3.$$
-- Thử lại: $24 = 7 \cdot 3 + 3$ (với số dư $3 < 7,$ hoàn toàn chính xác).
-- Vậy **số chia bằng 7** và **số dư bằng 3**.
+  $$r = 35 - 4 \cdot 8 = 35 - 32 = 3.$$
+- Thử lại: $35 = 8 \cdot 4 + 3$ (với số dư $3 < 8,$ hoàn toàn chính xác).
+- Vậy **số chia bằng 8** và **số dư bằng 3**.
 
 </details>
 
-**Bài 2.** Tìm số tự nhiên lớn nhất có ba chữ số, biết rằng khi chia nó cho 69 thì thương bằng số dư.
+**Bài 2.** Tìm số tự nhiên lớn nhất có ba chữ số, biết rằng khi chia nó cho 74 thì thương bằng số dư.
 
 <details>
 <summary>Xem lời giải Bài 2 nâng cao</summary>
 
 - Gọi số cần tìm là $a$ ($a \le 999$).
-- Khi chia $a$ cho 69, gọi thương và số dư là $k$ ($0 \le k < 69$).
+- Khi chia $a$ cho 74, gọi thương và số dư là $k$ ($0 \le k < 74$).
 - Theo công thức phép chia có dư:
-  $$a = 69k + k = 70k.$$
-- Vì $a$ là số có ba chữ số nên $a \le 999 \implies 70k \le 999 \implies k \le 14.$
-- Để $a$ lớn nhất, ta chọn $k$ lớn nhất là $k = 14.$
+  $$a = 74k + k = 75k.$$
+- Vì $a$ là số có ba chữ số nên $a \le 999 \implies 75k \le 999 \implies k \le 13.$
+- Để $a$ lớn nhất, ta chọn $k$ lớn nhất là $k = 13.$
 - Khi đó số cần tìm là:
-  $$a = 70 \cdot 14 = 980.$$
-- **Thử lại:** $980 : 69 = 14$ (dư 14, thỏa mãn thương bằng số dư).
-- Vậy số cần tìm là **$980$**.
+  $$a = 75 \cdot 13 = 975.$$
+- **Thử lại:** $975 : 74 = 13$ (dư 13, thỏa mãn thương bằng số dư).
+- Vậy số cần tìm là **$975$**.
 
 </details>
 
-**Bài 3.** Tính một cách hợp lí: $215 \cdot 62 + 42 - 52 \cdot 215.$
+**Bài 3.** Tính một cách hợp lí: $318 \cdot 73 + 54 - 63 \cdot 318.$
 
 <details>
 <summary>Xem lời giải Bài 3 nâng cao</summary>
 
-Nhóm hai số hạng có chung thừa số $215$:
-$$215 \cdot 62 - 52 \cdot 215 + 42$$
-$$= 215 \cdot (62 - 52) + 42$$
-$$= 215 \cdot 10 + 42$$
-$$= 2150 + 42 = 2192.$$
+Nhóm hai số hạng có chung thừa số $318$:
+$$318 \cdot 73 - 63 \cdot 318 + 54$$
+$$= 318 \cdot (73 - 63) + 54$$
+$$= 318 \cdot 10 + 54$$
+$$= 3180 + 54 = 3234.$$
 
 </details>
 
-**Bài 4.** Tìm hai số tự nhiên, biết rằng tổng của chúng gấp ba lần hiệu của chúng và cũng bằng đúng nửa tích của chúng.
+**Bài 4.** Tìm hai số tự nhiên, biết rằng tổng của chúng gấp ba lần hiệu của chúng và tích của chúng gấp tám lần hiệu của chúng.
 
 <details>
 <summary>Xem lời giải Bài 4 nâng cao</summary>
@@ -842,42 +842,41 @@ $$= 2150 + 42 = 2192.$$
 - Gọi hiệu của chúng là $d = x - y.$
 - Theo đề bài:
   - Tổng: $x + y = 3d.$
-  - Tích: $xy = 2 \cdot (x + y) = 6d$ (vì tổng bằng nửa tích nên tích gấp đôi tổng).
+  - Tích: $xy = 8d.$
 - Từ tổng $x + y = 3d$ và hiệu $x - y = d$:
   - Số lớn: $x = (3d + d) : 2 = 2d.$
   - Số bé: $y = (3d - d) : 2 = d.$
 - Thay vào biểu thức tích:
   $$x \cdot y = 2d \cdot d = 2d^2.$$
-  Mà tích bằng $6d,$ do đó:
-  $$2d^2 = 6d \implies 2d = 6 \implies d = 3\text{ (vì } d \ne 0).$$
-- Với $d = 3$:
-  - Số bé: $y = d = 3.$
-  - Số lớn: $x = 2d = 6.$
+  Mà tích bằng $8d,$ do đó:
+  $$2d^2 = 8d \implies 2d = 8 \implies d = 4\text{ (vì } d \ne 0).$$
+- Với $d = 4$:
+  - Số bé: $y = d = 4.$
+  - Số lớn: $x = 2d = 8.$
 - **Thử lại:**
-  - Tổng $= 6 + 3 = 9.$
-  - Hiệu $= 6 - 3 = 3$ (tổng gấp 3 lần hiệu: $9 = 3 \cdot 3$).
-  - Tích $= 6 \cdot 3 = 18$ (tổng bằng nửa tích: $9 = 18 : 2$).
-- Vậy hai số tự nhiên cần tìm là **$6$ và $3$**.
+  - Tổng $= 8 + 4 = 12.$
+  - Hiệu $= 8 - 4 = 4$ (tổng gấp 3 lần hiệu: $12 = 3 \cdot 4$).
+  - Tích $= 8 \cdot 4 = 32$ (tích gấp 8 lần hiệu: $32 = 8 \cdot 4$).
+- Vậy hai số tự nhiên cần tìm là **$8$ và $4$**.
 
 </details>
 
 **Bài 5 (Điền chữ số thích hợp).**
-Thay mỗi dấu $*$ bởi một chữ số thích hợp:
-$$84** : 47 = *8*.$$
+Thay mỗi dấu $*$ bởi một chữ số thích hợp sao cho thương là số chẵn:
+$$93** : 58 = *6*.$$
 
 <details>
 <summary>Xem lời giải Bài 5 nâng cao</summary>
 
-- Số bị chia $84**$ nằm trong khoảng từ $8400$ đến $8499.$
+- Số bị chia $93**$ nằm trong khoảng từ $9300$ đến $9399.$
 - Ta thực hiện phép chia chặn hai đầu:
-  $$8400 : 47 \approx 178{,}72$$
-  $$8499 : 47 \approx 180{,}82$$
-- Do đó thương $*8*$ phải là số tự nhiên nằm giữa 178 và 181, tức là một trong ba số: $179, 180, 181.$
-- Trong ba số này, chỉ có duy nhất số **$180$** có chữ số hàng chục bằng 8 (phù hợp với dạng $*8*$).
-- Vậy thương là **$180$**.
+  $$9300 : 58 \approx 160{,}34$$
+  $$9399 : 58 \approx 162{,}05$$
+- Do đó thương $*6*$ phải là số tự nhiên nằm giữa 160 và 163, có chữ số hàng chục là 6, tức là $161$ hoặc $162.$
+- Vì đề bài yêu cầu thương là số chẵn nên chọn thương là **$162$**.
 - Khi đó số bị chia là:
-  $$47 \cdot 180 = 8460.$$
+  $$58 \cdot 162 = 9396.$$
 - Ta được phép tính hoàn chỉnh:
-  $$8460 : 47 = 180.$$
+  $$9396 : 58 = 162.$$
 
 </details>
