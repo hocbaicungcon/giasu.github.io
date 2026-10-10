@@ -4,7 +4,13 @@ dist/
 playwright-report/
 test-results/
 
-.generated/
+.generated/*
+!.generated/tikz/
+.generated/tikz/*
+!.generated/tikz/*/
+.generated/tikz/*/*
+!.generated/tikz/*/figure.svg
+.cache/
 o2edu/*
 !o2edu/redirects.*
 !o2edu/.htaccess

@@ -30,9 +30,28 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - name: Check if LaTeX compiler is needed
+        id: check-latex
+        run: |
+          need_latex=false
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            if git diff --name-only HEAD~1 HEAD | grep -iE '\.tex$' >/dev/null 2>&1; then
+              need_latex=true
+            fi
+          fi
+          if [ "$need_latex" = "false" ]; then
+            for tex in post/*.tex post/*.TEX; do
+              [ -f "$tex" ] || continue
+              if [ ! -d ".generated/tikz" ] || [ -z "$(ls -A .generated/tikz 2>/dev/null)" ]; then
+                need_latex=true
+                break
+              fi
+            done
+          fi
+          echo "need_latex=$need_latex" >> "$GITHUB_OUTPUT"
+          echo "LaTeX compiler needed: $need_latex"
       - name: Install LaTeX tools when posts contain TeX
-        # Keep the tools available even after a cache hit (missing/corrupt images can be rebuilt).
-        if: hashFiles('post/*.tex', 'post/*.TEX') != ''
+        if: steps.check-latex.outputs.need_latex == 'true'
         run: |
           sudo apt-get update
           # latex-extra brings latex-base/recommended; pictures supplies TikZ and tkz-*.
@@ -63,16 +82,13 @@ jobs:
           pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error -output-directory="$work" "$work/check.tex"
           pdftocairo -svg "$work/check.pdf" "$work/check.svg"
           test -s "$work/check.svg"
-      - name: Restore and save TikZ SVG cache
-        if: hashFiles('post/*.tex', 'post/*.TEX') != ''
+      - name: Restore posts build cache
         uses: actions/cache@v6
         with:
-          path: .generated/tikz/*/figure.svg
-          # Invalidate when the renderer, styles or build environment changes.
-          key: tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml', 'scripts/install-fontawesome5.sh') }}-${{ hashFiles('post/*.tex', 'post/*.TEX') }}
-          # Reuse unchanged figures when a post is added or edited.
+          path: .cache/posts-cache.json
+          key: posts-cache-${{ hashFiles('scripts/build.mjs') }}-${{ github.sha }}
           restore-keys: |
-            tikz-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('scripts/latex.mjs', 'assets/style.css', '.github/workflows/pages.yml', 'scripts/install-fontawesome5.sh') }}-
+            posts-cache-${{ hashFiles('scripts/build.mjs') }}-
       - name: Install dependencies
         run: npm ci
       - name: Test Markdown and mathematics

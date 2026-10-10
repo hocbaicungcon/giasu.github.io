@@ -230,10 +230,72 @@ function withLessonSolutions(html,exam){
   return block+`<details class="lesson-solution"><summary>Hiện/ẩn lời giải — ${esc(q.label)}</summary><div>${solution}</div></details>`;
  });
 }
+const cacheDir = path.join(root, '.cache');
+const cacheFile = path.join(cacheDir, 'posts-cache.json');
+
+function getCachedPosts(mdFiles, imported) {
+  let cache = { buildVersion: '', posts: {} };
+  try {
+    if (fs.existsSync(cacheFile)) {
+      cache = JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+    }
+  } catch {}
+
+  const currentBuildVersion = 'v1-' + fs.statSync(fileURLToPath(import.meta.url)).mtimeMs;
+  const postCache = (cache.buildVersion === currentBuildVersion) ? (cache.posts || {}) : {};
+  const newPostCache = {};
+  const posts = [];
+
+  for (const f of mdFiles) {
+    const filePath = path.join(root, 'post', f);
+    const source = fs.readFileSync(filePath, 'utf8');
+    const hash = createHash('sha256').update(source).digest('hex');
+    let post;
+    if (postCache[f] && postCache[f].hash === hash && postCache[f].data) {
+      post = postCache[f].data;
+    } else {
+      post = parsePost(source, f);
+    }
+    newPostCache[f] = { hash, data: post };
+    posts.push(post);
+  }
+
+  for (const p of imported) {
+    const hash = createHash('sha256').update(p.markdown).digest('hex');
+    let post;
+    if (postCache[p.filename] && postCache[p.filename].hash === hash && postCache[p.filename].data) {
+      post = postCache[p.filename].data;
+    } else {
+      post = parsePost(p.markdown, p.filename);
+    }
+    newPostCache[p.filename] = { hash, data: post };
+    posts.push(post);
+  }
+
+  try {
+    fs.mkdirSync(cacheDir, { recursive: true });
+    fs.writeFileSync(cacheFile, JSON.stringify({ buildVersion: currentBuildVersion, posts: newPostCache }));
+  } catch {}
+
+  return posts;
+}
+
 export function build(){
  const imported=importLatex(root);
- const posts=fs.readdirSync(path.join(root,'post')).filter(f=>f.endsWith('.md')).map(f=>parsePost(fs.readFileSync(path.join(root,'post',f),'utf8'),f)).concat(imported.map(p=>parsePost(p.markdown,p.filename))).sort((a,b)=>b.date.localeCompare(a.date)||a.title.localeCompare(b.title,'vi'));
- fs.rmSync(out,{recursive:true,force:true});fs.mkdirSync(path.join(out,'bai-viet'),{recursive:true});fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true});fs.cpSync(path.join(root,'node_modules/katex/dist'),path.join(out,'assets/katex'),{recursive:true});fs.copyFileSync(path.join(root,'hocbaicungcon_round.svg'),path.join(out,'hocbaicungcon_round.svg'));fs.copyFileSync(path.join(root,'hocbaicungcon_round.svg'),path.join(out,'favicon.svg'));fs.writeFileSync(path.join(out,'.nojekyll'),'');
+ const mdFiles=fs.readdirSync(path.join(root,'post')).filter(f=>f.endsWith('.md'));
+ const posts=getCachedPosts(mdFiles,imported).sort((a,b)=>b.date.localeCompare(a.date)||a.title.localeCompare(b.title,'vi'));
+ fs.mkdirSync(path.join(out,'bai-viet'),{recursive:true});
+ fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true});
+ if(!fs.existsSync(path.join(out,'assets/katex'))){
+  fs.cpSync(path.join(root,'node_modules/katex/dist'),path.join(out,'assets/katex'),{recursive:true});
+ }
+ fs.copyFileSync(path.join(root,'hocbaicungcon_round.svg'),path.join(out,'hocbaicungcon_round.svg'));
+ fs.copyFileSync(path.join(root,'hocbaicungcon_round.svg'),path.join(out,'favicon.svg'));
+ fs.writeFileSync(path.join(out,'.nojekyll'),'');
+ const validPostHtmls=new Set(posts.map(p=>p.slug+'.html'));
+ for(const existing of fs.readdirSync(path.join(out,'bai-viet'))){
+  if(!validPostHtmls.has(existing)) fs.unlinkSync(path.join(out,'bai-viet',existing));
+ }
  fs.copyFileSync(path.join(root,'CNAME'),path.join(out,'CNAME'));
  fs.mkdirSync(path.join(out,'assets/latex'),{recursive:true});
  fs.mkdirSync(path.join(out,'markdown'),{recursive:true});
