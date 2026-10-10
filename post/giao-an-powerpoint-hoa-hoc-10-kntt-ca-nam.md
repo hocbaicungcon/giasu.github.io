@@ -31,7 +31,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 - [Powerpoint: Bai6-XuHuongBienDoiTinhChatBTH-Hoa10-KNTT-TV_STEM](https://drive.google.com/file/d/1HXnkVfRL9ao-ZEw2CJ8_peyhgmoXPLGW/view?usp=sharing)
 - [Word: BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT](/assets/docs/BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT.ppt)
 - [Powerpoint: BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT](/assets/docs/BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT.doc)
-- [Word: BAI-8-DinhLuatTuanHoan-HOA-10-KNTT](#drive-pending-BAI-8-DinhLuatTuanHoan-HOA-10-KNTT.pptx)
+- [Word: BAI-8-DinhLuatTuanHoan-HOA-10-KNTT](https://drive.google.com/file/d/1Tl6vrxY8S_xY8du2ckR1hVOSXqzuMhWC/view?usp=sharing)
 - [Powerpoint: BAI-8-DinhLuatTuanHoan-HOA-10-KNTT](/assets/docs/BAI-8-DinhLuatTuanHoan-HOA-10-KNTT.docx)
 - [Word: Bai-9-OntapChuong2-Hoa-10-KNTT](/assets/docs/Bai-9-OntapChuong2-Hoa-10-KNTT.ppt)
 - [Powerpoint: Bai-9-OntapChuong2-Hoa-10-KNTT](/assets/docs/Bai-9-OntapChuong2-Hoa-10-KNTT.docx)
@@ -78,7 +78,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 [Bài 2: Phản ứng hạt nhân](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-2-phan-ung-hat-nhan.html)
 
 - [Word – Bai-2-CD-HOA-10-KNTT](/assets/docs/Bai-2-CD-HOA-10-KNTT.docx)
-- [Powerpoint – Bai-2-CD-HOA-10-KNTT](#drive-pending-Bai-2-CD-HOA-10-KNTT.pptx)
+- [Powerpoint – Bai-2-CD-HOA-10-KNTT](https://drive.google.com/file/d/1f2FyRua5Zq1F_xCoEhyvXKjuyxc_pyEi/view?usp=sharing)
 
 [Bài 3: Năng lượng hoạt hoá của phản ứng hoá học](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-3-nang-luong-hoat-hoa-cua-phan-ung-hoa-hoc.html)
 

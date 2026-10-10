@@ -1241,7 +1241,7 @@ Xem thêm
 1. ![le nga Avatar](https://secure.gravatar.com/avatar/8a01c3a6a2bd7315a349970f2995af580282d191bc4a5895fb91b64fda5d959d)
 
    [22/09/2021](/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/#comment-1235.html)
-   [le nga](http://o2.edu)
+   le nga
 
    comment-1234
 
@@ -1250,7 +1250,7 @@ Xem thêm
 2. ![/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html Avatar](https://secure.gravatar.com/avatar/8a01c3a6a2bd7315a349970f2995af580282d191bc4a5895fb91b64fda5d959d)
 
    [22/09/2021](/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/#comment-1236.html)
-   [/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html](http://o2.edu)
+   [/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html]
 
    tải tài liệu
 
@@ -1308,7 +1308,7 @@ cho mình xin file này với ạ
 ![/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html Avatar](https://secure.gravatar.com/avatar/8a01c3a6a2bd7315a349970f2995af580282d191bc4a5895fb91b64fda5d959d)
 
 [22/09/2021](/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/#comment-1238.html)
-[/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html](http://o2.edu)
+[/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html]
 
 gủi vào mail giúp chị nhé
 
@@ -1811,7 +1811,7 @@ cho e xin tài liệu với ạ
 ![minh Avatar](https://secure.gravatar.com/avatar/eccdfde4e5a6cf917013fa44d807fc387ad54b3250203de95fd321893d210541)
 
 [20/09/2022](/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/#comment-4308.html)
-[minh](https://o2.edu.vn/)
+minh
 
 cho mình xin tài liệu với nhe
 
@@ -1820,7 +1820,7 @@ cho mình xin tài liệu với nhe
 ![minh Avatar](https://secure.gravatar.com/avatar/eccdfde4e5a6cf917013fa44d807fc387ad54b3250203de95fd321893d210541)
 
 [20/09/2022](/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet/#comment-4317.html)
-[minh](https://o2.edu.vn/)
+minh
 
 Cho tôi xin file này nhé
 

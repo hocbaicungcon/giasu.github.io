@@ -35,8 +35,8 @@ export function normalizeMarkdownFormatting(text) {
   protect(/(?<!\$)\$(?!\$)((?:\\.|[^$\r\n])+?)\$(?!\$)/g);
 
   // Clean malformed question numbers and options from bad bold tags
-  text = text.replace(/\*+Câu[\s*]*(\d+)[\s*]*:[\s*]*/g, '**Câu $1:** ');
-  text = text.replace(/\*\*([A-Da-d])\s*\*+\.\s*\*+/g, '**$1.** ');
+  text = text.replace(/\*+Câu[^\S\r\n*]*(\d+)[^\S\r\n*]*:[^\S\r\n*]*/g, '**Câu $1:** ');
+  text = text.replace(/\*\*([A-Da-d])[^\S\r\n]*\*+\.[^\S\r\n]*\*+/g, '**$1.** ');
 
   // Remove trailing runaway asterisks at end of lines (only when preceded by whitespace)
   text = text.replace(/(?<=\s)\*+\s*$/gm, '');

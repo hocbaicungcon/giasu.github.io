@@ -325,7 +325,7 @@ Quy điểmMức độ1 = 1 điểm; Mức độ 2 = 2 điểm; Mức độ3 = 3
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [BAI-16-HOA-10-CTST](/assets/docs/BAI-16-HOA-10-CTST.docx)
-- [BAI-16-HOA-10-CTST](#drive-pending-BAI-16-HOA-10-CTST.ppt)
+- [BAI-16-HOA-10-CTST](https://drive.google.com/file/d/1t6WuRUZhQklsjLX9jwo74yBnKFmT9WwZ/view?usp=sharing)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

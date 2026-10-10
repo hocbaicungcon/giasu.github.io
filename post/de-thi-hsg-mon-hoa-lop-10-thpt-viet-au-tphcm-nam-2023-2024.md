@@ -156,7 +156,7 @@ Tính các giá trị **m**, **a, b** và khối lượng mỗi kim loại trong
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-VIET-AU-TPHCM-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-VIET-AU-TPHCM-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-VIET-AU-TPHCM](/assets/docs/2023-2024-HSG-10-VIET-AU-TPHCM-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

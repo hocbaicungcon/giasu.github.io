@@ -12,7 +12,7 @@ tags:
 
 6 cách giảm độ trùng lặp đạo văn trên phần mềm doit
 
-Nếu như bạn không có nhiều thời gian nghiên cứu và chỉnh sửa website o2.edu.vn nhận làm giảm tỷ lệ trung lặp đạo văn trên phần mềm doit với cam kết bảo mật, uy tín, chất lượng. Vui lòng liên hệ qua fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn) để được tư vấn và hỗ trợ!
+Nếu như bạn không có nhiều thời gian nghiên cứu và chỉnh sửa website giasu.ai.vn nhận làm giảm tỷ lệ trung lặp đạo văn trên phần mềm doit với cam kết bảo mật, uy tín, chất lượng. Vui lòng liên hệ qua fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn) để được tư vấn và hỗ trợ!
 
 Từ ngày 06/05/2022 hệ thống doit đã ngừng hỗ trợ đăng kí tài khoản mới bằng email thông thường mà chỉ email @vnu.edu.vn mới có thể đăng kí.
 
@@ -121,4 +121,4 @@ Bạn có thể thay đổi linh hoạt và phù hợp với **4 loại câu** 
 
 - Câu cảm thán
 
-Nếu như bạn không có nhiều thời gian nghiên cứu và chỉnh sửa website o2.edu.vn nhận làm giảm tỷ lệ trung lặp đạo văn trên phần mềm doit với cam kết bảo mật, uy tín, chất lượng. Vui lòng liên hệ qua fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn) để được tư vấn và hỗ trợ!
+Nếu như bạn không có nhiều thời gian nghiên cứu và chỉnh sửa website giasu.ai.vn nhận làm giảm tỷ lệ trung lặp đạo văn trên phần mềm doit với cam kết bảo mật, uy tín, chất lượng. Vui lòng liên hệ qua fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn) để được tư vấn và hỗ trợ!

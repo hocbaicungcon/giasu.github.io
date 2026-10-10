@@ -20,7 +20,7 @@ Bộ font chữ Việt Nam đầy đủ nhất:
 
 - Font VNI (Bảng mã VNI window) gồm các font bắt đầu bằng kí tự VNI như VNI-Times, VNI-Thufap…
 
-Mời các bạn tải tại đây: [Font VNI_ABC_UNI-o2.edu.vn](https://drive.google.com/file/d/1rc7eyF92hLNgMXrpuzCjg_iUjF56sUu5/view?usp=sharing)
+Mời các bạn tải tại đây: [Font VNI_ABC_UNI](https://drive.google.com/file/d/1rc7eyF92hLNgMXrpuzCjg_iUjF56sUu5/view?usp=sharing)
 
 Đặc điểm của bộ font tiếng Việt:
 

@@ -97,4 +97,4 @@ Mời các em học sinh tham khảo thêm:
 ![Đề Văn Nam Định 2022 lớp 12 đợt 2 2](assets/images/de-van-nam-dinh-2022-lop-12-dot-2-image-94.png)
 
 Thầy cô và các em tải file đề và đáp án tại đây
-- [DAP_AN_Nguvan12_lan_2_2033-O2.edu_.vn_](/assets/docs/DAP_AN_Nguvan12_lan_2_2033-giasu.ai.vn-.pdf)
+- [DAP_AN_Nguvan12_lan_2_2033](/assets/docs/DAP_AN_Nguvan12_lan_2_2033-giasu.ai.vn-.pdf)

@@ -133,7 +133,7 @@ Chữ kí cán bộ coi thi số 2 ………………………………………
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [3.-HOA-10_HSG-Lien-cum-o2.edu_.vn_](/assets/docs/3.-HOA-10_HSG-Lien-cum-giasu.ai.vn.pdf)
+- [3.-HOA-10_HSG-Lien-cum](/assets/docs/3.-HOA-10_HSG-Lien-cum-giasu.ai.vn.pdf)
 - [3.DA-HSG-Lien-cum-Hoa-10](/assets/docs/3.DA-HSG-Lien-cum-Hoa-10.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại

@@ -1231,7 +1231,7 @@ Thầy cho mình xin file tài liệu tham khảo với ạ. Xin cảm ơn chân
 [04/05/2022](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/#comment-2679.html)
 Hùng
 
-Mình nhận được email ngay từ ad rồi, cảm ơn o2.edu.vn nhiều lắm
+Mình nhận được email ngay từ ad rồi, cảm ơn GIA SƯ THÔNG MINH nhiều lắm
 
 [Reply](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/?replytocom=2679#respond.html)
 
@@ -1442,7 +1442,7 @@ cho xin ạ, thanks!
 [15/05/2022](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/#comment-2754.html)
 bang
 
-Mình nhận được email ngay từ ad rồi, cảm ơn o2.edu.vn nhiều lắm
+Mình nhận được email ngay từ ad rồi, cảm ơn GIA SƯ THÔNG MINH nhiều lắm
 
 [Reply](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/?replytocom=2754#respond.html)
 
@@ -2427,7 +2427,7 @@ Hay quá
 [17/08/2022](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an/#comment-3913.html)
 Quý
 
-Xin chào Admin và toàn cộng sự của Web o2.edu.vn
+Xin chào Admin và toàn cộng sự của website giasu.ai.vn
 
 Tài liệu này rất bổ ích cho học sinh cấp 3 học môn hóa học.
 

@@ -351,7 +351,7 @@ Số dãy chất thỏa mãncác thí nghiệm trên.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Vinh-Loc-HCM-De-Thi-HSG-Hoa-11-mau-2025-o2.edu_.vn_](/assets/docs/Vinh-Loc-HCM-De-Thi-HSG-Hoa-11-mau-2025-giasu.ai.vn.docx)
+- [Vinh-Loc-HCM-De-Thi-HSG-Hoa-11-mau-2025](/assets/docs/Vinh-Loc-HCM-De-Thi-HSG-Hoa-11-mau-2025-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

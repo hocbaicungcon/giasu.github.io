@@ -443,7 +443,7 @@ c) 6,6-dimethylfulvene có tính acid yếu (pKa » 20)
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [DE-DE-XUAT-HOA-10-o2.edu_.vn_](/assets/docs/DE-DE-XUAT-HOA-10-giasu.ai.vn.docx)
+- [DE-DE-XUAT-HOA-10](/assets/docs/DE-DE-XUAT-HOA-10-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -572,8 +572,6 @@ Lớp 11
 
 ## 17. Tổng hợp đề thi HSG lớp 12 môn Hoá Học tỉnh Tuyên Quang
 
-- [Đề thi hsg lớp 12 môn hóa tỉnh Tuyên Quang năm 2008](https://o2.edu.vn/?p=47366&preview=true)
-
 - [Đề thi hsg lớp 12 môn hóa tỉnh Tuyên Quang năm 2009](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-tuyen-quang-nam-2009.html)
 
 - [Đề thi hsg lớp 12 môn hóa tỉnh Tuyên Quang năm 2010](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-tuyen-quang-nam-2010.html)
@@ -662,7 +660,7 @@ Lớp 11
 
 ***Lời nhắn:*** Admin dành rất nhiều thời gian tổng hợp đề của các tỉnh trong cả nước với mục đích giúp các thầy cô dễ dàng download miễn phí, giúp các giáo viên ôn thi HSG cấp tỉnh có nguồn tài liệu chính thống để thuận tiện cho việc giảng dạy.
 
-Các thầy cô có đề thi các năm gần đây, các tỉnh khác hiện chưa có trong bài đăng này vui lòng gửi vào địa chỉ mail polime@o2.edu.vn để admin tổng hợp thành bộ đề hoàn chỉnh hơn nữa phục vụ cộng đồng giáo viên hóa học của cả nước.
+Các thầy cô có đề thi các năm gần đây, các tỉnh khác hiện chưa có trong bài đăng này vui lòng gửi vào địa chỉ mail lienhe@giasu.ai.vn để admin tổng hợp thành bộ đề hoàn chỉnh hơn nữa phục vụ cộng đồng giáo viên hóa học của cả nước.
 
 Trân trọng cảm ơn các thầy cô!
 

@@ -49,4 +49,4 @@ Chúng tôi xin tổng hợp lại khoảng 150 mẫu PowerPoint đẹp để c�
 
 ![mẫu PowerPoint đẹp](assets/images/150-mau-powerpoint-dep-mien-phi-mau-powerpoint-dep.png)
 
-- [mau_powerpoint_dep_01_o2eduvn](/assets/docs/mau_powerpoint_dep_01_o2eduvn.pptx)
+- [mau_powerpoint_dep_01](/assets/docs/mau_powerpoint_dep_01-giasu.ai.vn.pptx)

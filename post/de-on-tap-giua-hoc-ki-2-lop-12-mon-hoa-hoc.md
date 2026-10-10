@@ -62,8 +62,6 @@ grade: 12
 
 **Câu 10** . Cho dãy chuyển hóa sau: 
 
-![Đề ôn tập giữa học kì 2 lớp 12 môn hoá học 2](blob:https://o2.edu.vn/7dd6d015-bb87-402f-8065-d0c72ace95da)
-
 . Công thức của Y có thể là
 
 **A.** CaO. **B.** Ca(OH)2. **C.** CaCO3. **D.** Ca(HCO3)2.
@@ -191,11 +189,7 @@ Hãy sắp xếp thứ tự giải thích của cột B với thứ tự tính c
 
 **Câu 6:** Ở Trong công nghiệp sản xuất nhôm từ quặng bauxite theo quy trình Hall- Heroult được thực hiện theo sơ đồ:Quặng bauxite 
 
-![Đề ôn tập giữa học kì 2 lớp 12 môn hoá học 3](blob:https://o2.edu.vn/6510f9fa-d8b8-4db7-a146-f8dd4acef50c)
-
  Al2O3
-
-![Đề ôn tập giữa học kì 2 lớp 12 môn hoá học 4](blob:https://o2.edu.vn/d921a273-0d63-4ba6-85c9-790235fe8ec2)
 
 Al.Theo tính toán,từ 4 tấn quặng tinh chế được 2 tấn Al2O3 và thu được 1 tấn Al, đồng thời thải ra môi trường 1,574 tấn CO2. Nếu sử dụng 10000 tấn quặng thì lượng khí CO2 thải ra môi trường là bao nhiêu tấn?**
 ←[Đề ôn tập giữa học kì 2 lớp 10 môn hóa học](/bai-viet/de-on-tap-giua-hoc-ki-2-lop-10-mon-hoa-hoc.html)

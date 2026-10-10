@@ -72,8 +72,8 @@ C2H5OH + K2Cr2O7 + H2SO4
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [De-chon-HSG-lop-10-mon-Hoa-hoc-2023-2024-o2.edu_.vn_](/assets/docs/De-chon-HSG-lop-10-mon-Hoa-hoc-2023-2024-giasu.ai.vn.pdf)
-- [Huong-dan-cham-HSG-lop-10-2023-2024-o2.edu_.vn_](/assets/docs/Huong-dan-cham-HSG-lop-10-2023-2024-giasu.ai.vn.pdf)
+- [De-chon-HSG-lop-10-mon-Hoa-hoc-2023-2024](/assets/docs/De-chon-HSG-lop-10-mon-Hoa-hoc-2023-2024-giasu.ai.vn.pdf)
+- [Huong-dan-cham-HSG-lop-10-2023-2024](/assets/docs/Huong-dan-cham-HSG-lop-10-2023-2024-giasu.ai.vn.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

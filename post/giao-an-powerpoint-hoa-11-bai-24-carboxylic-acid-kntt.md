@@ -281,7 +281,7 @@ Số phản ứng xảy ra là
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B24_-carboxylic-acid_Ho-Van-Quan](/assets/docs/B24_-carboxylic-acid_Ho-Van-Quan.docx)
-- [bai-24_carboxylic-acid](#drive-pending-bai-24_carboxylic-acid.ppt)
+- [bai-24_carboxylic-acid](https://drive.google.com/file/d/1Idli8fbd_-4tDMMp1gi1gpdWGj3TxtBO/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

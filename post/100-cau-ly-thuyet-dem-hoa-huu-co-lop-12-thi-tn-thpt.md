@@ -836,7 +836,7 @@ Ad cho mình xin file với ạ.
    [04/05/2022](/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt/#comment-2681.html)
    Hùng
 
-   Mình nhận file của ad gửi rồi, cảm ơn o2.edu.vn nhiều lắm.
+   Mình nhận file của ad gửi rồi, cảm ơn GIA SƯ THÔNG MINH nhiều lắm.
 
    [Reply](/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt/?replytocom=2681#respond.html)
 
@@ -845,7 +845,7 @@ Ad cho mình xin file với ạ.
 [04/05/2022](/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt/#comment-2680.html)
 Hùng
 
-Mình nhận file của ad gửi rồi, cảm ơn o2.edu.vn nhiều lắm.
+Mình nhận file của ad gửi rồi, cảm ơn GIA SƯ THÔNG MINH nhiều lắm.
 
 [Reply](/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt/?replytocom=2680#respond.html)
 

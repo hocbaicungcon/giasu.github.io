@@ -113,9 +113,9 @@ K=39, O=16, Si=28, Na=23, Mg=24, Al=27, N=14
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [MA-TRAN-DE-OLYMPIC-HOA-10-o2.edu_.vn_](/assets/docs/MA-TRAN-DE-OLYMPIC-HOA-10-giasu.ai.vn.docx)
-- [de-hsg-hoa-10-o2.edu_.vn_](/assets/docs/de-hsg-hoa-10-giasu.ai.vn.docx)
-- [huong-dan-cham-ky-thi-olympic-hoa-10-o2.edu_.vn_](/assets/docs/huong-dan-cham-ky-thi-olympic-hoa-10-giasu.ai.vn.doc)
+- [MA-TRAN-DE-OLYMPIC-HOA-10](/assets/docs/MA-TRAN-DE-OLYMPIC-HOA-10-giasu.ai.vn.docx)
+- [de-hsg-hoa-10](/assets/docs/de-hsg-hoa-10-giasu.ai.vn.docx)
+- [huong-dan-cham-ky-thi-olympic-hoa-10](/assets/docs/huong-dan-cham-ky-thi-olympic-hoa-10-giasu.ai.vn.doc)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

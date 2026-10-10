@@ -21,7 +21,7 @@ grade: 10
 
 - Trong mặt phẳng tọa độ $Oxy$, nửa đường tròn đơn vị là nửa đường tròn có tâm $O(0;0)$, bán kính bằng $1$ và đi qua các điểm $A(1;0), B(0;1), A'(-1;0)$.
 
-![giá trị lượng giác của góc từ 0 đến 180](assets/images/gia-tri-luong-giac-cua-goc-tu-0-den-180-nua-duong-tron-don-vi-o2edu.jpg)
+![giá trị lượng giác của góc từ 0 đến 180](assets/images/gia-tri-luong-giac-cua-goc-tu-0-den-180-nua-duong-tron-don-vi-giasu.ai.vn.jpg)
 
 ### 1.2. Giá trị lượng giác của một góc từ $0^\circ$ đến $180^\circ$
 

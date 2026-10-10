@@ -94,8 +94,8 @@ b) Trong 2 loại nhiên liệu trên nên sử dụng nhiên liệu nào làm n
 *Cán bộ coi thi không giải thích gì thêm.
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [DE-HOA-KHOI-10-o2.edu_.vn_](/assets/docs/DE-HOA-KHOI-10-giasu.ai.vn.docx)
-- [HDC-HOA-KHOI-10-o2.edu_.vn_](/assets/docs/HDC-HOA-KHOI-10-giasu.ai.vn.docx)
+- [DE-HOA-KHOI-10](/assets/docs/DE-HOA-KHOI-10-giasu.ai.vn.docx)
+- [HDC-HOA-KHOI-10](/assets/docs/HDC-HOA-KHOI-10-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

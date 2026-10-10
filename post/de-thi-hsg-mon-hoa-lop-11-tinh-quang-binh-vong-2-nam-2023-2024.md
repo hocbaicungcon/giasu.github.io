@@ -106,8 +106,8 @@ Cho biết: H2S có pKa1 = 7,02; pKa2 = 12,9.
 **——————–HẾT———————–
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Quang-Binh-DE-HOA-v2-11-chinh-thuc-2024-o2.edu_.vn_](/assets/docs/Quang-Binh-DE-HOA-v2-11-chinh-thuc-2024-giasu.ai.vn.docx)
-- [Quang-Binh-HOA-v2-11-HDC-chinh-thuc-2024-o2.edu_.vn_](/assets/docs/Quang-Binh-HOA-v2-11-HDC-chinh-thuc-2024-giasu.ai.vn.docx)
+- [Quang-Binh-DE-HOA-v2-11-chinh-thuc-2024](/assets/docs/Quang-Binh-DE-HOA-v2-11-chinh-thuc-2024-giasu.ai.vn.docx)
+- [Quang-Binh-HOA-v2-11-HDC-chinh-thuc-2024](/assets/docs/Quang-Binh-HOA-v2-11-HDC-chinh-thuc-2024-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

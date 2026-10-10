@@ -142,7 +142,7 @@ Hàng năm việc sử dụng than đá và các nguồn năng lượng hóa th�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-Truong-Loc-Ninh-BINH-PHUOC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-Truong-Loc-Ninh-BINH-PHUOC-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-Truong-Loc-Ninh-BINH-PHUOC](/assets/docs/2023-2024-HSG-10-Truong-Loc-Ninh-BINH-PHUOC-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -47,7 +47,6 @@ amu. Tính bán kính nguyên tử gần đúng của iron ở 20 C (theo đơn 
 khối lượng riêng của iron tại nhiệt độ này là 7,87 g / cm3 .
 Câu 3. (2 điểm)
 Các nhiên liệu được sử dụng phổ biến trong thực tế là xăng (giả sử chỉ chứa
-o2.edu.vn
 1
 C H 8 18 ); khí gas hóa lỏng C H 3 8 và C H 4 10 có tỉ lệ thể tích 40;60. Cho phương
 trình nhiệt hóa học của các phản ứng đốt cháy xăng, khí gas hóa lỏng như sau:
@@ -99,7 +98,6 @@ Một con mưa acid xuất hiện tại một khu công nghiệp diện tích 15
 mưa trung bình 70 mm . Tính thể tích nước mưa đã rơi xuống khu công nghiệp
 và khối lượng (kg) H SO 2 4 trong lượng nước mưa, biết nồng độ của H SO 2 4 trong
 nước mưa là 2.10 M 5 .
-o2.edu.vn
 2
 b. Lượng acid trong nước mưa có thể ăn mòn các công trình bằng đá vôi. Tính
 khối lượng ( kg)CaCO3 tối đa bị ăn mòn bởi lượng acid trên.
@@ -125,7 +123,7 @@ MS cho giá trị     M 154   . Kết quả đo phổ IR như 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [De-HSG-Hoa-11-Quang-ngai-2023-2024-o2.edu_.vn_](/assets/docs/De-HSG-Hoa-11-Quang-ngai-2023-2024-giasu.ai.vn.pdf)
+- [De-HSG-Hoa-11-Quang-ngai-2023-2024](/assets/docs/De-HSG-Hoa-11-Quang-ngai-2023-2024-giasu.ai.vn.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -144,8 +144,8 @@ Họ và tên thí sinh: ……………………………………… Số báo
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Ha-Tinh-DE-CHINH-THUC-HOA-11-o2.edu_.vn_](/assets/docs/Ha-Tinh-DE-CHINH-THUC-HOA-11-giasu.ai.vn.docx)
-- [HA-TINH-HD-CHAM-HOA-11-o2.edu_.vn_](/assets/docs/HA-TINH-HD-CHAM-HOA-11-giasu.ai.vn.pdf)
+- [Ha-Tinh-DE-CHINH-THUC-HOA-11](/assets/docs/Ha-Tinh-DE-CHINH-THUC-HOA-11-giasu.ai.vn.docx)
+- [HA-TINH-HD-CHAM-HOA-11](/assets/docs/HA-TINH-HD-CHAM-HOA-11-giasu.ai.vn.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -169,8 +169,8 @@ Họ tên và chữ kí của cán bộ coi thi số 1: Họ tên và chữ kí 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [3.-HDC_-Hoa-hoc-11-HSG-CUM-o2.edu_.vn_](/assets/docs/3.-HDC_-Hoa-hoc-11-HSG-CUM-giasu.ai.vn.pdf)
-- [3.-HOA-HOC-11_HSG-CUM-o2.edu_.vn_](/assets/docs/3.-HOA-HOC-11_HSG-CUM-giasu.ai.vn.pdf)
+- [3.-HDC_-Hoa-hoc-11-HSG-CUM](/assets/docs/3.-HDC_-Hoa-hoc-11-HSG-CUM-giasu.ai.vn.pdf)
+- [3.-HOA-HOC-11_HSG-CUM](/assets/docs/3.-HOA-HOC-11_HSG-CUM-giasu.ai.vn.pdf)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -81,7 +81,7 @@ b. Viết phương trình phản ứng xảy ra khi cho (C) tác dụng với du
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-11-Bac-Lieu-File-De-o2.edu_.vn_](/assets/docs/2023-2024-HSG-11-Bac-Lieu-File-De-giasu.ai.vn.docx)
+- [2023-2024-HSG-11-Bac-Lieu-File-De](/assets/docs/2023-2024-HSG-11-Bac-Lieu-File-De-giasu.ai.vn.docx)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 
