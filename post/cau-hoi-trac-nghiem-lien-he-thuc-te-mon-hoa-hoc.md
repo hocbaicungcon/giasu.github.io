@@ -259,7 +259,7 @@ Một tài xế nam cân nặng 70 kg. Ngay trước khi điều khiển ô tô,
 
 **A.** 30 ngày.                     **B.** 60 ngày.              **C.** 40 ngày.                    **D.** 20 ngày.
 
-O2 Education gửi các thầy cô link download file word
+GIA SƯ THÔNG MINH gửi các thầy cô link download file word
 
 - [Cau-hoi-lien-he-thuc-te-UP](/assets/docs/Cau-hoi-lien-he-thuc-te-UP.docx)
 

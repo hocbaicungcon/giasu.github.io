@@ -464,7 +464,7 @@ Bao gồm: 1, 2, 3, 5.
 
 (5) Đúng.
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [86.-Bai-5-chuyen-hoa-chat-beo-thanh-xa-phong-nguyen-phuc-tham.ok_](/assets/docs/86.-Bai-5-chuyen-hoa-chat-beo-thanh-xa-phong-nguyen-phuc-tham.ok_.docx)
 

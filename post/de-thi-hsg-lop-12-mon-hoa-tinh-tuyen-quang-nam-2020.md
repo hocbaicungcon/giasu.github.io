@@ -117,7 +117,7 @@ Xác định công thức và khối lượng của các este trong hỗn hợp 
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [[H12].[TUYENQUANG].[2019-2020].[VH]](/assets/docs/H12.TUYENQUANG.2019-2020.VH_.docx)
 

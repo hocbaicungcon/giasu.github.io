@@ -383,7 +383,7 @@ Mức 4: Đạt được 3 tiêu chí trở xuống.
 | 4. Quản lí thời gian |   |
 | 5. Điều chỉnh hợp lí, kịp thời (Nội dung, cách trình bày, tương tác, thời gian) |   |
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU](/assets/docs/BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)
 - [Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU](#drive-pending-Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)

@@ -1056,7 +1056,7 @@ Những phát biểu đúng là
 
  **C.** Chỉ (1) và (2). **D.** Chỉ (1).
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [CD-ENTROPY…GIBBS_.NTT-1](/assets/docs/CD-ENTROPY...GIBBS_.NTT-1.docx)
 

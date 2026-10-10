@@ -100,7 +100,7 @@ c) Có thể dùng isopropyl alcohol thay thế cho ethanol trong nước rửa 
 **—— HẾT—–
 *Thí sinh không được sử dụng tài liệu, kể cả Bảng tuần hoàn các nguyên tố hoá học.
 *Cán bộ coi thi không giải thích gì thêm.
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [DE-HOA-KHOI-11-o2.edu_.vn_](/assets/docs/DE-HOA-KHOI-11-giasu.ai.vn.docx)
 - [HDC-HOA-KHOI-11-o2.edu_.vn_](/assets/docs/HDC-HOA-KHOI-11-giasu.ai.vn.docx)

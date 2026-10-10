@@ -154,7 +154,7 @@ Xác định công thức cấu tạo các chất A, B, C, D, E, F (không viế
 ***     – Họ và tên học sinh:………………………………………………………….. ; Số báo danh:……………………*
 ***     – Học sinh không được sử dụng tài liệu kể cả bảng tuần hoàn các nguyên tố hóa học.*
 ***     – Cán bộ coi thi không giải thích gì thêm.
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG-Hoa-10-11-So-Ca-Mau-2022-2023-o2.edu_.vn_](/assets/docs/HSG-Hoa-10-11-So-Ca-Mau-2022-2023-giasu.ai.vn.docx)
 

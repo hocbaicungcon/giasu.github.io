@@ -464,7 +464,7 @@ CT Fe3C 0,25
 
 khối lượng e = 84. 6,02.1023 . 50. 9,1.10-31kg = 230.10-5kg = 2,3 gam 0,5 đ
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [GIỮA HỌC KỲ I](/assets/docs/GIUA-HOC-KY-I-3.docx)
 

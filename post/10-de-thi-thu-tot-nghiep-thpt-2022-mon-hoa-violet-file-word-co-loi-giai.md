@@ -259,7 +259,7 @@ Phát biểu nào sau đây **không** đúng?
 
  **A.** 46%.                              **B.** 20%.                            **C.** 19%.                              **D.** 45%.
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [FILE_20220501_071836_10-DE-THI-THU-THPT-TANG](/assets/docs/FILE_20220501_071836_10-DE-THI-THU-THPT-TANG.docx)
 

@@ -162,7 +162,7 @@ Các cân bằng chuyển dịch theo chiều thuận khi tăng áp suất là:
 
 **C.** (2), (3), (5).                 **D.** (2), (3).
 
-O2 Education gửi thầy cô link download
+GIA SƯ THÔNG MINH gửi thầy cô link download
 
 - [B1.-KHAI-NIEM-CAN-BANG-HOA-HOCH.TRAN-THI-THU-HUONG](/assets/docs/B1.-KHAI-NIEM-CAN-BANG-HOA-HOCH.TRAN-THI-THU-HUONG.docx)
 

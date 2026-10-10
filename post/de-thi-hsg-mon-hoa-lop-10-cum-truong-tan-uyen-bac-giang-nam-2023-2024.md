@@ -509,7 +509,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | b | 2H2(g) + O2(g)  2H2O(g) (1) =>  = 2Eb(H2) + Eb(O2) – 2Eb (H2O) = 2.432 + 498 – 2.2.467 = -506 kJ Nhiệt lượng tỏa ra khi đốt 100 gam H2 là: (100/2).506 = 12650 KJ   | 0,5 đ |
 | C7H16(g) + 11O2(g) 7CO2(g) + 8H2O(g) (2) Trong phân tử C7H16 có 6 liên kết C-C, 16 liên kết C-H.  = Eb(C7H16) + 11. Eb(O2) – 7.Eb(CO2) – 8.Eb(H2O) = 6. Eb (C-C) + 16. Eb (C-H) + 11. Eb (O=O) – 7.2. Eb (C=O) – 8.2.Eb(O-H) = 6.347 + 16.432 + 11.498 –7.2.745 – 8.2. 467 = -3432 kJ Nhiệt lượng tỏa ra khi đốt 100 gam C7H16 (1 mol)là: 3432 KJ Nhiệt lượng do hydrogen tỏa ra lớn hơn nhiều so với lượng nhiệt tỏa ra của C7H16, vậy hydrogen là nguyên liệu thích hợp hơn cho tên lửa.   |                   1 đ |  |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-Cum-Tan-Uyen-Bac-Giang-De-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-Cum-Tan-Uyen-Bac-Giang-De-HDC-giasu.ai.vn.docx)
 

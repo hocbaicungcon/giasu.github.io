@@ -127,7 +127,7 @@ Tìm công thức phân tử của X. Viết công thức cấu tạo và gọi 
 
 **———HẾT———
 *(Thí sinh không được sử dụng tài liệu)
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2024-DE-THI-HSG-11-o2.edu_.vn_](/assets/docs/2024-DE-THI-HSG-11-giasu.ai.vn.docx)
 - [HUONG-DAN-CHAM-HSG-LOP-11-o2.edu_.vn_](/assets/docs/HUONG-DAN-CHAM-HSG-LOP-11-giasu.ai.vn.pdf)

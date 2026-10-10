@@ -19,7 +19,7 @@ Cuối năm 2019, **Google** đã bổ sung một tính năng **xem các đối 
 
 Tùy chọn xem con vật dưới dạng 3D hiển thị ngay trong kết quả tìm kiếm để người dùng nhấn chọn. Khi đó con vật được trình chiếu dưới dạng 3D, và bạn hoàn toàn có thể đưa nó tới khắp không gian ở mọi nơi mình muốn.
 
-Bài viết này, O2 Education xin giới thiệu cách tìm kiếm và xem các con vật ở chế độ 3d trên điện thoại thông minh.
+Bài viết này, GIA SƯ THÔNG MINH xin giới thiệu cách tìm kiếm và xem các con vật ở chế độ 3d trên điện thoại thông minh.
 
 ## 1. Cách xem con vật 3D trên Google Search
 

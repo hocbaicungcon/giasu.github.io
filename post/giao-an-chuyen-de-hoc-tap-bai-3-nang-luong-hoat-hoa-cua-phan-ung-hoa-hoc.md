@@ -570,7 +570,7 @@ Khí trong cốc nào sẽ thoát ra nhanh nhất? Giải thích.
 
 #  
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [CD-Nang-luong-hoat-hoa-cua-phan-ung](/assets/docs/CD-Nang-luong-hoat-hoa-cua-phan-ung-XUAN-TRUONG-C.docx)
 

@@ -11,7 +11,7 @@ tags:
 grade: 10
 ---
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [ĐÁP ÁN HÓA 10 – KÌ 1](/assets/docs/DAP-AN-HOA-10-KI-1.docx)
 - [MÃ ĐỀ 001 (4)](/assets/docs/MA-DE-001-4.docx)

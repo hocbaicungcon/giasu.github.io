@@ -47,7 +47,7 @@ Ngoài ra, các bạn có thể mở các file làm việc khác của bản th�
 
 Lúc này, bạn có 2 lựa chọn:
 
-1. Tìm kiếm tệp chương trình trên thư viện cộng đồng của Geogebra bằng cách gõ từ khóa vào ô tìm kiếm và bấm Enter (như trong hình là O2 Education đang tìm các file có từ khóa “đạo hàm”) → chọn chế độ View (chỉ xem) hoặc Chỉnh sửa;
+1. Tìm kiếm tệp chương trình trên thư viện cộng đồng của Geogebra bằng cách gõ từ khóa vào ô tìm kiếm và bấm Enter (như trong hình là GIA SƯ THÔNG MINH đang tìm các file có từ khóa “đạo hàm”) → chọn chế độ View (chỉ xem) hoặc Chỉnh sửa;
 
 2. Mở một tệp trong máy tính của bạn.
 

@@ -245,7 +245,7 @@ d. Cách thức tổ chức hoạt động:
 
  
 
-O2 Education gửi các thầy cô link download file word tài liệu STEM
+GIA SƯ THÔNG MINH gửi các thầy cô link download file word tài liệu STEM
 
 - [HÓA 11. SỬ DỤNG BẮP CẢI TÍM LÀM CHẤT CHỈ THỊ AXIT- BAZƠ](/assets/docs/HOA-11.-SU-DUNG-BAP-CAI-TIM-LAM-CHAT-CHI-THI-AXIT-BAZO.docx)
 

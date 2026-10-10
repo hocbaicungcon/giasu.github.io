@@ -801,7 +801,7 @@ Số phát biểu đúng là
 
  **A.** 8; 6. **B.** 6; 4. **C.** 6; 8. **D.** 8; 4.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [CD-Phan-ung-hat-nhan-XTB](/assets/docs/CD-Phan-ung-hat-nhan-XTB.docx)
 

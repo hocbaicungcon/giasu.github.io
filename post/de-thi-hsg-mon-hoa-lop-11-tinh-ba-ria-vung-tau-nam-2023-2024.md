@@ -162,7 +162,7 @@ Họ và tên thí sinh: ………………………………………………�
 
 Số báo danh: ………………………………………
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [BA-RIA-VUNG-TAU-DE-CT-HOA-11](/assets/docs/BA-RIA-VUNG-TAU-DE-CT-HOA-11-giasu.ai.vn.doc)
 - [BA-RIA-VUNG-TAU-HDC-HOA-11](/assets/docs/BA-RIA-VUNG-TAU-HDC-HOA-11-giasu.ai.vn.docx)

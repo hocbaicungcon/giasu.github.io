@@ -14,7 +14,7 @@ grade: 11
 
 Vở ghi bài học hóa 11 cánh diều cả năm
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [4_Tran-Thi-Thu-Phuong_CANH-DIEU_DON-CHAT-NITROGEN-Dap-an](/assets/docs/4_Tran-Thi-Thu-Phuong_CANH-DIEU_DON-CHAT-NITROGEN-Dap-an.docx)
 - [4_Tran-Thi-Thu-Phuong_Canh-dieu_Don-chat-Nitrogen](/assets/docs/4_Tran-Thi-Thu-Phuong_Canh-dieu_Don-chat-Nitrogen.docx)

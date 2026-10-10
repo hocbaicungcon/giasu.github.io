@@ -122,7 +122,7 @@ b/ Tính nồng độ mol mỗi chất trong dung dịch X.
 *Cu(Z=29); Cr(Z=24); Fe(Z=26)
 ***           Học sinh không được sử dụng bảng tuần hoàn. Cán bộ coi thi không giải thích gì thêm.
 ————————*Hết——————–
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Quang-Trung-Dong-Da-De-2023-2024-o2.edu_.vn_](/assets/docs/Quang-Trung-Dong-Da-De-2023-2024-giasu.ai.vn.docx)
 - [Quang-Trung-Dong-Da-Huong-dan-cham-2023-2024-o2.edu_.vn_](/assets/docs/Quang-Trung-Dong-Da-Huong-dan-cham-2023-2024-giasu.ai.vn.docx)

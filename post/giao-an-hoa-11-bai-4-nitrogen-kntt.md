@@ -211,7 +211,7 @@ HS giải quyết các câu hỏi/bài tập sau
 
 *d) Tổ chức thực hiện*: GV hướng dẫn HS về nhà làm và hướng dẫn HS tìm nguồn tài liệu tham khảo (internet, thư viện, góc học tập của lớp, trực tiếp tại địa phương..)
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [04-KNTT-BAI-4-NITROGEN-NGO-LAN](/assets/docs/04-KNTT-BAI-4-NITROGEN-NGO-LAN.docx)
 - [04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man](/assets/docs/04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man.docx)

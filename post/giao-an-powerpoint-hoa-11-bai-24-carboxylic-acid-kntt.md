@@ -278,7 +278,7 @@ Số phản ứng xảy ra là
 **Câu 6:** Một carboxylic acid no, đơn chức, mạch hở (A) có tỉ khối hơi so với hydrogen là 30. Tìm công thức cấu tạo của (A).
 …………………………………………………………………………….….…………………………………………………………………………….….…………………………………………………………………………….….…………………………………………………………………………….….…………………………………………………………………………….….…………………………………………………………………………….….…………………………………………………………………………………………..….….
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B24_-carboxylic-acid_Ho-Van-Quan](/assets/docs/B24_-carboxylic-acid_Ho-Van-Quan.docx)
 - [bai-24_carboxylic-acid](#drive-pending-bai-24_carboxylic-acid.ppt)

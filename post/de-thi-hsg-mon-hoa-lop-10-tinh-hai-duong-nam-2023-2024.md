@@ -184,7 +184,7 @@ Cho chất rắn Y tác dụng với dung dịch HCl thu được 0,2479 lit H2 
 
 ———————-HẾT———————-
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [DE-VA-DAP-AN-CHINH-THUC-HSG-HOA-10-Tinh-Hai-Duong-o2.edu_.vn_](/assets/docs/DE-VA-DAP-AN-CHINH-THUC-HSG-HOA-10-Tinh-Hai-Duong-giasu.ai.vn.doc)
 

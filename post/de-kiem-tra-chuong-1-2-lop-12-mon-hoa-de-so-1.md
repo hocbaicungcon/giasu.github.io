@@ -176,7 +176,7 @@ grade: 12
 
 Nguồn đề thầy Long – Cậu Vàng fb: [The Eli Vinlyl](https://www.facebook.com/Cau.Vang.Hoa.Hoc)
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [ĐỀ 1 KIỂM TRA HÓA 12 – CHƯƠNG 1 + 2 THEO MỨC ĐỘ TƯ DUY](/assets/docs/DE-1-KIEM-TRA-HOA-12-CHUONG-1-2-THEO-MUC-DO-TU-DUY.docx)
 

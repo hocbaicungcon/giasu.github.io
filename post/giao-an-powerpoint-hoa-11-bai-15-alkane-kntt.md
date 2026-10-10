@@ -350,7 +350,7 @@ c) Nếu đốt cháy hexane trong điều kiện thiếu oxygen sẽ tạo ra c
 
 **C.** Iso pentane.                                   **D.** neo Pentan.
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B15.-alkane.-Nguyen-Phuong-Anh](/assets/docs/B15.-alkane.-Nguyen-Phuong-Anh.pptx)
 - [B15.ALKANE.-Nguyen-Phuong-Anh_](/assets/docs/B15.ALKANE.-Nguyen-Phuong-Anh_.docx)

@@ -366,7 +366,7 @@ Phiếu học tập:
 | Nguyên tắc |   |   |
 | Cách tiến hành |   |   |
 
-O2 Education gửi các thầy cô link download miễn phí
+GIA SƯ THÔNG MINH gửi các thầy cô link download miễn phí
 
 - [STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN](/assets/docs/STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN.docx)
 

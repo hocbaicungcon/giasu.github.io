@@ -424,7 +424,7 @@ CH3-CH- CH2-COOH, *:* CH3-CH2– CH-COOH 
 | Tổng điểm | 30 |  |
 
 *ảnh thí nghiệm ảo Cu, Zn tác dụng với dung dịch CH3COOH trên phần mềm Yenka.
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 ﻿
 

@@ -468,7 +468,7 @@ on dioxide một người thải ra xấp xỉ thể tích oxygen hút vào. C�
 | 3.2 | a | a) Phương trình tốc độ của phản ứng: v = | 0,25 |
 |   | b | b) Tốc độ phản ứng tại thời điểm đầu là: v = 2,5.10-4.0,02.0,03 = 1,5.10-7 (mol/(L.s)) – Tại thời điểm đã hết một nửa lượng I2 ⇒ Tại thời điểm xét, nồng độ I2 còn 0,01M và đã phản ứng 0,01M ⇒ Theo phương trình, nồng độ H2 phản ứng là 0,01M ⇒ Tại thời điểm xét, nồng độ H2 còn 0,02M ⇒ v = 2,5.10-4.0,01.0,02 = 5.10-6 (mol/(L.s)) | 0,25   0,25     0,25 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL-giasu.ai.vn.docx)
 

@@ -253,7 +253,7 @@ b) Khi chuẩn độ 25 gam huyết tương máu của một lái xe cần dùng
 | 2 | CTPT CTCT Trạng thái lai hóa Dạng hình học H2O H-O-H sp3 Hình chữ V SO3            O O=S            O sp2 Tam giác đều CH4 sp3 Tứ diện đều CO2 O=C=O sp Đường thẳng |     0,25   0,25   0,25     0,25 |
 | 3 | VìY là phi kim nên Y thuộc các nhóm IVA, VA, VIA, VIIA. Giả sử Y thuộc nhóm nA Trường hợp 1: n là lẻ Công thức oxit cao nhất là Y2On  (A); hợp chất khí với Hidro là YH8-n (B). Vì tỉ khối hơi của B so với A là  nên có pt Với n=5 → MY = 95,67 (loại). Với n=7 → MY = 145,67 (loại). Trường hợp 2: n là chẵn Công thức oxit cao nhất là YOn/2  (A); hợp chất khí với Hidro là YH8-n (B) Vì tỉ khối hơi của B so với A là  nên có pt Với n=4 → MY = 12  Cacbon. Với n=6 → MY = 24,28 (loại). Vậy Y là C; A là CO2; B là CH4 |       0, 5             0,5         |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-truong-THPT-A-Kim-Bang-Ha-Nam.doc-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-truong-THPT-A-Kim-Bang-Ha-Nam.doc-giasu.ai.vn.docx)
 

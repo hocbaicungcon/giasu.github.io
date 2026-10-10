@@ -94,7 +94,7 @@ Na2SO4, (CH3COO)2Ca, Al(NO3)3, NaOH, BaCl2. Chất nào được chứa trong l�
 
 Viết các phương trình phản ứng.
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG 12 TPHCM 2019-2020](/assets/docs/HSG-12-TPHCM-2019-2020.doc)
 

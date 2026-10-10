@@ -130,7 +130,7 @@ Vì nồng độ % H2SO4 dư = nồng độ % CuSO4 nên ta có:
  
 
 %= ; %mCuO = 65,22%……………………………………**0,25x 2 = 0,5đ
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa 10 – Nguyen Khuyen – deda](/assets/docs/Hoa-10-Nguyen-Khuyen-deda.docx)
 

@@ -289,7 +289,7 @@ a. So sánh phân tử ammonia và ion ammonium về dạng hình học, số li
 
 ……………………………………………………………………………………………………………………………………………………………..……………………………………………………………………………
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B05_AMMONIA.-MUOI-AMMONIUM_-Ha-Giang](https://drive.google.com/file/d/1aNPkyjef4cW6jR7gnS410XaAB2XiFqVl/view?usp=sharing)
 

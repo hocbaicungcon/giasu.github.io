@@ -281,7 +281,7 @@ Biết các phản ứng xảy ra hoàn toàn và n1 < n3 < n2 và n3 : n2 = 2 :
 
  
 
-O2 Education gửi các thầy cô và các em link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô và các em link download đề thi
 
 - [ĐỀ 30 – đáp án](/assets/docs/DE-30-dap-an.doc)
 - [ĐỀ 30](/assets/docs/DE-30.doc)

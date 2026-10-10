@@ -17,9 +17,9 @@ grade: 11
 
 SKKN Ứng dụng Kahoot, Quizizz vào dạy học tích cực trong môn GDCD ở trường THPT
 
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án O2 Education](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
 
 ĐIỀU KIỆN HOÀN CẢNH TẠO RA SÁNG KIẾN
 1. Xuất phát từ yêu cầu đổi mới giáo dục
@@ -339,11 +339,11 @@ Fill in the Blank (điền vào chỗ trống) để xem cách tạo câu hỏi 
 loại Multiple choice không?
 
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
-Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [O2 Education](https://www.facebook.com/o2eduvn)
+Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
 Hoặc xem nhiều SKKN hơn tại: 
 
-[Tổng hợp SKKN luận văn luận án O2 Education](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+[Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
 
 [Tổng hợp SKKN môn hóa học cấp THPT](/bai-viet/tong-hop-skkn-mon-hoa-hoc-cap-thpt.html)
 

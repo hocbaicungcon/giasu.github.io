@@ -1,6 +1,6 @@
 ---
 title: 2 bộ giáo án Toán 12 Cánh Diều file word
-description: O2 Education xin gửi tới thầy cô 2 bộ giáo án Toán 12 Cánh Diều file
+description: GIA SƯ THÔNG MINH xin gửi tới thầy cô 2 bộ giáo án Toán 12 Cánh Diều file
   Word để tham khảo. Thầy cô tải thêm Giáo án chuyên đề Toán 12 Cánh Diều
 category: Toán học
 type: Bài học
@@ -12,7 +12,7 @@ tags:
 grade: 12
 ---
 
-O2 Education xin gửi tới thầy cô 2 bộ giáo án Toán 12 Cánh Diều file Word để tham khảo. Thầy cô tải thêm [Giáo án chuyên đề Toán 12 Cánh Diều](/bai-viet/giao-an-chuyen-de-toan-12-canh-dieu.html)
+GIA SƯ THÔNG MINH xin gửi tới thầy cô 2 bộ giáo án Toán 12 Cánh Diều file Word để tham khảo. Thầy cô tải thêm [Giáo án chuyên đề Toán 12 Cánh Diều](/bai-viet/giao-an-chuyen-de-toan-12-canh-dieu.html)
 
 ## Giáo án Toán 12 Cánh Diều bộ 1
 

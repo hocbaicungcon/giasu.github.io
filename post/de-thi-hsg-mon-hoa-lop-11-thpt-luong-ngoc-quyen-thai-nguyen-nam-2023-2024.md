@@ -250,7 +250,7 @@ C4H10O4
 
 hợp chất khác nhau của phosphorus. Xác định các chất X, Y, Z và viết các phương trình phản ứng xảy ra..
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-11_Luong-Ngoc-Quyen-Thai-Nguyen-o2.edu_.vn_](/assets/docs/2023-2024-HSG-11_Luong-Ngoc-Quyen-Thai-Nguyen-giasu.ai.vn.docx)
 

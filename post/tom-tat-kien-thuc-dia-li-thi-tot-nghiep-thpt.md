@@ -1,6 +1,6 @@
 ---
 title: TÓM TẮT KIẾN THỨC ĐỊA LÍ THI TỐT NGHIỆP THPT
-description: O2 Education xin gửi tới Quý thầy cô và các em học sinh tài liệu tóm
+description: GIA SƯ THÔNG MINH xin gửi tới Quý thầy cô và các em học sinh tài liệu tóm
   tắt kiến thức Địa lí thi tốt nghiệp THPT
 category: Địa lí
 type: Bài học
@@ -12,7 +12,7 @@ tags:
 grade: 12
 ---
 
-O2 Education xin gửi tới Quý thầy cô và các em học sinh tài liệu tóm tắt kiến thức Địa lí thi tốt nghiệp THPT.
+GIA SƯ THÔNG MINH xin gửi tới Quý thầy cô và các em học sinh tài liệu tóm tắt kiến thức Địa lí thi tốt nghiệp THPT.
 
 ## Bài 1. VIỆT NAM TRÊN ĐƯỜNG ĐỔI MỚI VÀ HỘI NHẬP
 

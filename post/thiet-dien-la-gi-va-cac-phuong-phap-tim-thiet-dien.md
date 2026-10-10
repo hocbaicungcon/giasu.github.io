@@ -12,7 +12,7 @@ tags:
 grade: 11
 ---
 
-Thiết diện là gì là một câu hỏi thường xuyên xuất hiện trong các đề thi của chương trình lớp 11. Đây là một bài toán gây khó khăn cho rất nhiều em học sinh khi mới bước đầu tiếp xúc với hình học không gian. Bài viết này, O2 Education sẽ giúp các em học sinh trả lời được câu hỏi thế nào là thiết diện của một hình chóp khi cắt bởi một mặt phẳng. Đồng thời, chúng tôi xin giới thiệu hai cách xác định thiết diện của hình chóp, đó là phương pháp giao tuyến gốc và phương pháp phép chiếu xuyên tâm.
+Thiết diện là gì là một câu hỏi thường xuyên xuất hiện trong các đề thi của chương trình lớp 11. Đây là một bài toán gây khó khăn cho rất nhiều em học sinh khi mới bước đầu tiếp xúc với hình học không gian. Bài viết này, GIA SƯ THÔNG MINH sẽ giúp các em học sinh trả lời được câu hỏi thế nào là thiết diện của một hình chóp khi cắt bởi một mặt phẳng. Đồng thời, chúng tôi xin giới thiệu hai cách xác định thiết diện của hình chóp, đó là phương pháp giao tuyến gốc và phương pháp phép chiếu xuyên tâm.
 
 [BỘ SÁCH HHKG GIÁ TỐT TRÊN SHOPEE](https://rentracks.vn/3CGELp)
 

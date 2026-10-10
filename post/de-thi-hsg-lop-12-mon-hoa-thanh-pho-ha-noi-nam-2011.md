@@ -131,7 +131,7 @@ Họ và tên thí sinh:………………………………………………�
 
  
 
-O2 Education gửi các thầy cô link download file word đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề thi
 
 - [Đề HSG Hà Nội – vòng 1 (2011)](/assets/docs/De-HSG-Ha-Noi-vong-1-2011.docx)
 

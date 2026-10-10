@@ -304,7 +304,7 @@ Quy trình thực hiện dự kiến:
 |  |  |  |
 
 **Ý KIẾN CỦA GIÁO VIÊN
-O2 Education gửi các thầy cô link download file word tài liệu STEM
+GIA SƯ THÔNG MINH gửi các thầy cô link download file word tài liệu STEM
 
 - [Chủ đề 2 – Đèn Kéo Quân (Đối lưu – Bức xạ nhiệt)](/assets/docs/Chu-de-2-Den-Keo-Quan-Doi-luu-Buc-xa-nhiet.docx)
 

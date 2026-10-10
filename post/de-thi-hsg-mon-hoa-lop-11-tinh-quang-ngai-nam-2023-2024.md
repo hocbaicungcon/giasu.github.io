@@ -123,7 +123,7 @@ Câu 7. (2 điểm):
 Họp chất hữu cơ X chứa 77,92%C; 11,69%H , còn lại là oxygen. Phân tích phổ
 MS cho giá trị     M 154   . Kết quả đo phổ IR như sau:
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [De-HSG-Hoa-11-Quang-ngai-2023-2024-o2.edu_.vn_](/assets/docs/De-HSG-Hoa-11-Quang-ngai-2023-2024-giasu.ai.vn.pdf)
 

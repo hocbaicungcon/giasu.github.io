@@ -154,7 +154,7 @@ Tính các giá trị **m**, **a, b** và khối lượng mỗi kim loại trong
 | Trích mẫu thử và chọn thuốc thử là dung dịch HCl tiến hành cho vào các ông nghiệm – ống nghiệm có kết tủa trắng là AgNO3 – ống nghiệm có sủi bọt khí là Na2CO3 Sau đó, lấy lọ AgNO3 đã nhận biết cho vào các ống nghiệm còn lại: – ống nghiệm có kết tủa trắng là MgCl2 – ống nghiệm có kết tủa vàng nhạt là KBr – ống nghiệm có kết tủa vàng đậm là NaI | 0,25         0,25 |  |  |
 |   | 4.3 | Ta có: |     0,25         0,25                 0,25                 0,5 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-VIET-AU-TPHCM-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-VIET-AU-TPHCM-giasu.ai.vn.docx)
 

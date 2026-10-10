@@ -219,7 +219,7 @@ Sử dụng nguyên lý trạng thái dừng đối với NO và NO3 hãy chứn
 
        g. Trong thực tế, ngay cả khi không khí chưa bị ô nhiễm nặng, chẳng hạn p(H2S) = 5,1.10-9 atm, mầu trắng của PbCO3 để lâu trong không khí vẫn bị xám dần đi do sự hình thành PbS. Hiện tượng này có thể giải thích như thế nào?
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-CHUYEN-SON-LA-HOA-11-o2.edu_.vn_](/assets/docs/2023-CHUYEN-SON-LA-HOA-11-giasu.ai.vn.docx)
 

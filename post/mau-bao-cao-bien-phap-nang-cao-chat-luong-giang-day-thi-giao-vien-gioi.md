@@ -85,7 +85,7 @@ c) Đối với Sở Giáo dục và Đào tạo
 
  
 
-O2 Education gửi các thầy cô link download file mẫu
+GIA SƯ THÔNG MINH gửi các thầy cô link download file mẫu
 
 - [Mau_bao_cao_bien_phap_nang_cao_chat_luong](/assets/docs/Mau_bao_cao_bien_phap_nang_cao_chat_luong_20200922113128731731.docx)
 - [PHIEU_DANH_GIA_BIEN_PHAP_NCCL](/assets/docs/PHIEU_DANH_GIA_BIEN_PHAP_NCCL_20201120110011387392.docx)

@@ -306,7 +306,7 @@ Lập luận để chọn công thức hóa học đúng cho chất A. Viết c�
 **Bài 3 (2,0 điểm):** Thủy phân hoàn toàn hỗn hợp A gồm 2 este no, mạch hở (trong phân tử mỗi chất chỉ chứa nhóm chức este) bằng dung dịch NaOH vừa đủ. Chưng cất dung dịch sau phản ứng, thu được 12,3 gam muối khan B của một axit hữu cơ và hỗn hợp C gồm 2 ancol (số nguyên tử cacbon trong mỗi phân tử ancol không vượt quá 3). Đốt cháy hoàn toàn muối B trên, thu được 7,95 gam muối Na2CO3. Mặt khác, đốt cháy hoàn toàn hỗn hợp C trên, thu được 3,36 lít CO2 (đktc) và 4,32 gam H2O. Xác định công thức cấu tạo của 2 este.
 
 **—–HẾT—–
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Cụm Hiệp Hòa 2017-2018
 

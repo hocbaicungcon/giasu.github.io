@@ -134,7 +134,7 @@ Số C của ankan là :
 
  
 
-O2 Education gửi các thầy cô link download file pdf đầy đủ
+GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
 - [PP8 – KHAI THÁC ĐỘ BẤT BÃO HÒA](/assets/docs/PP8-KHAI-THAC-DO-BAT-BAO-HOA.pdf)
 

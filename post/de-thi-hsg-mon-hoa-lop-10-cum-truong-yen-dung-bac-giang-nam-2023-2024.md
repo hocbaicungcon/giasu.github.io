@@ -440,7 +440,7 @@ b) Xác định nồng độ % các chất trong dung dịch B.
 *—— HẾT ——
 *Cán bộ coi thi không giải thích gì thêm
 *CBCT 1:……………………………………………..       CBCT 2:……………………………………….
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HUONG-DAN-CHAM-o2.edu_.vn_](/assets/docs/HUONG-DAN-CHAM-giasu.ai.vn.docx)
 - [HOA-10-MA-301-o2.edu_.vn_](/assets/docs/HOA-10-MA-301-giasu.ai.vn.docx)

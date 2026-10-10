@@ -255,7 +255,7 @@ Vậy diện tích đất trồng: m2
 **Hướng dẫn giải
 Vậy số sào đất =
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [27.-Bai-2-Phan-bon-vo-co-Thu-Huong.ok_](/assets/docs/27.-Bai-2-Phan-bon-vo-co-Thu-Huong.ok_.docx)
 

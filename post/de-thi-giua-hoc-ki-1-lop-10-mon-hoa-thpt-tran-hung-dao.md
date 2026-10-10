@@ -292,7 +292,7 @@ HƯỚNG DẪN CHẤM MÔN: HÓA HỌC LỚP: 10
 
  
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [GIỮA HỌC KÌ I](/assets/docs/GIUA-HOC-KI-I-6.docx)
 

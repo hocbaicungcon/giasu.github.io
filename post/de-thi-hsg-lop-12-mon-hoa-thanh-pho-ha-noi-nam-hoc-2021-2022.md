@@ -110,7 +110,7 @@ b) Cho 0,1 mol X phản ứng vừa đủ với dung dịch chứa 0,3 mol NaOH,
 
 Nguồn: Thầy Ngô Xuân Quỳnh
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [21.22 – Đề và đáp án kì thi HSG – Hóa Học 12 – cấp TP](/assets/docs/21.22-De-va-dap-an-ki-thi-HSG-Hoa-Hoc-12-cap-TP.docx)
 

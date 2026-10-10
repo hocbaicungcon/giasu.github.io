@@ -122,7 +122,7 @@ b) Xác định công thức cấu tạo của  và viết phương trình hóa
 | Họ tên thí sinh: ………………………………….……….. Họ tên, chữ kí cán bộ coi thi thứ nhất: | Số báo danh: ……………………………… Họ tên, chữ kí cán bộ coi thi thứ hai: |
 | --- | --- |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-12-TP-Ha-Noi-File-De](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-De-giasu.ai.vn.docx)
 - [2023-2024-HSG-12-TP-Ha-Noi-File-HDC](/assets/docs/2023-2024-HSG-12-TP-Ha-Noi-File-HDC-giasu.ai.vn.docx)

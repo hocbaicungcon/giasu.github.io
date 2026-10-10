@@ -137,7 +137,7 @@ Cán bộ coi thi không giải thích gì thêm.
 
 *Họ tên thí sinh: …………………………………………………….. SBD:…………………………
 *Trường: ……………………………………………………………… Tỉnh/TP:………………………
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [11-HOA-HUONG-DAN-CHAM-o2.edu_.vn_](/assets/docs/11-HOA-HUONG-DAN-CHAM-giasu.ai.vn.docx)
 - [11-HOA-DE-o2.edu_.vn_](/assets/docs/11-HOA-DE-giasu.ai.vn.docx)

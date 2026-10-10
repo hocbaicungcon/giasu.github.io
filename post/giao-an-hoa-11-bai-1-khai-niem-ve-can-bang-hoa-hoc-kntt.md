@@ -229,7 +229,7 @@ Cân bằng hóa học sẽ chuyển dịch về phía tạo ra amoniac nhiều 
 
 **–** Hướng dẫn bài mới: Tùy vào chuyên đề/bài học tiếp theo mà GV xây dựng hệ thống câu hỏi hướng dẫn HS chuẩn bị các nội dung hoạt động.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [01-KNTT-BAI-1-KHAI-NIEM-VE-CAN-BANG-HOA-HOC-NGUYEN-THI-HAI-YEN](/assets/docs/01-KNTT-BAI-1-KHAI-NIEM-VE-CAN-BANG-HOA-HOC-NGUYEN-THI-HAI-YEN.docx)
 

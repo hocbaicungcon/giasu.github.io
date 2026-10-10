@@ -185,7 +185,7 @@ grade: 12
 
  
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [12_HOAHOC_Trần Khắc Định đề 1 docx](/assets/docs/12_HOAHOC_Tran-Khac-Dinh-de-1-docx.docx)
 - [12_HOAHOC_Trần Khắc ĐỊnh đề số 2](/assets/docs/12_HOAHOC_Tran-Khac-DInh-de-so-2.docx)

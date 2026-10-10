@@ -157,7 +157,7 @@ Các em học sinh có thể xem đáp án phần tự luận [tại đây](/bai
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [402](/assets/docs/402.pdf)
 - [404](/assets/docs/404.pdf)

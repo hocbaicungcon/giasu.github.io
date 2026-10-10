@@ -158,7 +158,7 @@ Cán bộ coi thi không giải thích gì thêm!
 Họ và tên thí sinh: ……………………………….. Số báo danh: …………….
 Chữ ký giám thị coi thi số 1: Chữ ký giám thị coi thi số 2:
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-TDN-dap-an-HSG-hoa-10-cum-ung-hoa-my-duc-o2.edu_.vn_](/assets/docs/2023-2024-TDN-dap-an-HSG-hoa-10-cum-ung-hoa-my-duc-giasu.ai.vn.pdf)
 - [2023-2024-TDN-De-hoa-lop-10-cum-UH-MD-o2.edu_.vn_](/assets/docs/2023-2024-TDN-De-hoa-lop-10-cum-UH-MD-giasu.ai.vn.pdf)

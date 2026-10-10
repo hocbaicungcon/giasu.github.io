@@ -1528,7 +1528,7 @@ Hòa tan hoàn toàn 15g hỗn hợp bột Al và Mg vào dung dịch H2SO4 loã
 
  
 
-O2 Education gửi thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 - [BO-DE-THI-HK1-HOA-12-CO-DAP-AN](/assets/docs/BO-DE-THI-HK1-HOA-12-CO-DAP-AN.doc)
 

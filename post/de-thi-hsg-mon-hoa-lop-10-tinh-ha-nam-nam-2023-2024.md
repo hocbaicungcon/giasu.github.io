@@ -249,7 +249,7 @@ Bán kính nguyên tử của calcium rCa = 197pm. Tính khối lượng riêng 
 | 3. | Sự giảm khối lượng đầu tiên là do mất nước:    Gọi khối lượng mol của C là a (gam/mol) Vậy khối lượng mol của carbon là 12,06 g/mol. |       0,5                               0,5 |
 
 **——— HẾT——–
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-Ha-Nam-De-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-Ha-Nam-De-HDC-giasu.ai.vn.docx)
 

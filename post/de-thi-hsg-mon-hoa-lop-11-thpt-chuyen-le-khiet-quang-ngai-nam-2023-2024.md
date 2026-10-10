@@ -370,7 +370,7 @@ CH4 → X1 → X4 → nhựa PVC
 | b. | – Thiệt hại do mưa acid gây ra:             + Ảnh hưởng sức khỏe và đời sống con người: bệnh về da, về đường tiêu hóa, hô hấp,…; hạn chế tầm nhìn do sương mù từ các ion sulfate và nitrate.             + Ảnh hưởng sinh vật dưới nước do làm giảm pH nước.             + Ảnh hưởng cây trồng: rửa trôi chất dinh dưỡng, hòa tan các chất độc, giảm pH đất trồng.             + Xói mòn bề mặt các công trình nghệ thuật, ăn mòn các công trình kiến trúc. – Các tác động gây mưa acid của con người: + Hoạt động sử dụng các nhiên liệu như đốt than đá, đốt dầu mỏ sinh ra các khí thải như NO2, SO2,… + Hoạt động sản xuất công nghiệp như luyện kim, nhiệt điện,… sinh ra khí thải nhưng không được xử lý trước khi thải ra môi trường. + Hoạt động sản xuất và sử dụng các hóa chất như HNO3, H2SO4,… cũng phát sinh các oxide gây ra mưa acid. |               0,25         0,25 |
 
 **————Hết————
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HDC-H11-LE-KHIET-QUANG-NGAI-o2.edu_.vn_](/assets/docs/HDC-H11-LE-KHIET-QUANG-NGAI-giasu.ai.vn.docx)
 

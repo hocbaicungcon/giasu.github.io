@@ -142,7 +142,7 @@ X3 và X4 là đồng phân của nhau, đều có tính quang hoạt. Cho 3,25 
 *– Cán bộ coi thi không giải thích gì thêm.
 Họ và tên thí sinh: ……………………………………… Số báo danh: ………………….….
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Ha-Tinh-DE-CHINH-THUC-HOA-11-o2.edu_.vn_](/assets/docs/Ha-Tinh-DE-CHINH-THUC-HOA-11-giasu.ai.vn.docx)
 - [HA-TINH-HD-CHAM-HOA-11-o2.edu_.vn_](/assets/docs/HA-TINH-HD-CHAM-HOA-11-giasu.ai.vn.pdf)

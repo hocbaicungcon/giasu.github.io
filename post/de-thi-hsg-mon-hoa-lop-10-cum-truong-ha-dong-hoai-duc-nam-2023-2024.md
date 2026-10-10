@@ -138,7 +138,7 @@ Cán bộ coi thi không giải thích gì thêm. Học sinh không được s�
 Họ tên thí sinh:………………………………………………………………… Số b o danh:………………
 Họ tên và chữ kí của cán bộ coi thi số 1: Họ tên và chữ kí của cán bộ coi thi số 2:
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [3.-HDC-HSG-Hoa-10-CUM-HD-o2.edu_.vn_](/assets/docs/3.-HDC-HSG-Hoa-10-CUM-HD-giasu.ai.vn.pdf)
 

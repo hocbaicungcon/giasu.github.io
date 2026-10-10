@@ -104,7 +104,7 @@ Cho biết: H2S có pKa1 = 7,02; pKa2 = 12,9.
 **3**. Đun nóng hỗn hợp X gồm methane, ethylene, propyne, vinyl acetylene với a mol H2 có Ni xúc tác (giả sử chỉ xảy ra phản ứng cộng H2) thu được 0,24 mol hỗn hợp Y gồm các hydrocarbon. Y có tỉ khối so với H2 là 14,5. Biết 0,24 mol Y phản ứng tối đa với 0,12 mol Br2 trong CCl4. Hãy xác định giá trị của a.
 
 **——————–HẾT———————–
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Quang-Binh-DE-HOA-v2-11-chinh-thuc-2024-o2.edu_.vn_](/assets/docs/Quang-Binh-DE-HOA-v2-11-chinh-thuc-2024-giasu.ai.vn.docx)
 - [Quang-Binh-HOA-v2-11-HDC-chinh-thuc-2024-o2.edu_.vn_](/assets/docs/Quang-Binh-HOA-v2-11-HDC-chinh-thuc-2024-giasu.ai.vn.docx)

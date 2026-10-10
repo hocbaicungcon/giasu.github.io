@@ -64,7 +64,7 @@ Cho: H=1, C=12, N=14, O=16, K=39, Ag=108.
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HOA 11 – HAI BA TRUNG_DEDA](/assets/docs/HOA-11-HAI-BA-TRUNG_DEDA.docx)
 

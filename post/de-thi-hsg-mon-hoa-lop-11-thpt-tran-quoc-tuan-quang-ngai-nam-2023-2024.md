@@ -376,7 +376,7 @@ d)Cho dung dịch KI dư và vài giọt hồ tinh bột vào dung dịch FeCl3.
 | 10.1 | a) Cu + 2H2SO4 đặc  CuSO4 + SO2↑ + 2H2O SO2 + 2NaOH → Na2SO3 + H2O SO2 + Br2 + 2H2O → H2SO4 + 2HBr Dung dịch Br2 trong bình tam giác mất màu. b) C12H22O11 + H2SO4 → 12C + H2SO4.11H2O C + 2H2SO4 đặc  CO2↑ + 2SO2↑ + 2H2O SO2 + 2NaOH → Na2SO3 + H2O CO2 + 2NaOH → Na2CO3 + H2O 5SO2 + 2KMnO4 + 2H2O → 2MnSO4 + K2SO4 + 2H2SO4 Dung dịch KMnO4 trong bình tam giác mất màu. |           0,50           0,50 |
 | 10.2. | a) Có khí mùi khai thoát ra: NH4+ + OH–  NH3↑ + H2O b) Có kết tủa keo trắng không tan: Al3+ + 3NH3 + 3H2O → Al(OH)3↓ + 3NH4+ c) Có kết tủa màu trắng đục: 2Fe3+ + H2S → 2Fe2+ + S↓ + 2H+ d) Dung dịch có màu xanh tím: 2Fe3+ + 2I– → 2Fe2+ + I2 I2 + tinh bột → hợp chất màu xanh tím |         0,50       0,50 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2024-TRAN-QUOC-TUAN-QUANG-NGAI-o2.edu_.vn_](/assets/docs/2024-TRAN-QUOC-TUAN-QUANG-NGAI-giasu.ai.vn.doc)
 

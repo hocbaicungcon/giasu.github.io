@@ -176,7 +176,7 @@ b) Khối lượng muối ăn cần dùng khoảng 9 gam.
 
 **d) Tổ chức thực hiện:**  HS làm việc theo cặp hoặc cá nhân trả lời câu hỏi.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [Bai-22-Pham-Thi-Huong-Hydrogen-Halide-Muoi-Halide-KNTT](/assets/docs/Bai-22-Pham-Thi-Huong-Hydrogen-Halide-Muoi-Halide-KNTT.docx)
 

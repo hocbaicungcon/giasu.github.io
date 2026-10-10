@@ -193,7 +193,7 @@ https://laodong.vn/chuyen-nha-minh/8-cong-dung-ky-dieu-cua-giam-gao-1019450.ldo
 
 **–** Hướng dẫn bài mới: Tùy vào chuyên đề/bài học tiếp theo mà GV xây dựng hệ thống câu hỏi hướng dẫn HS chuẩn bị các nội dung hoạt động.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN](/assets/docs/KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN.docx)
 - [PHT-tro-choi-manh-ghep](/assets/docs/PHT-tro-choi-manh-ghep.pdf)

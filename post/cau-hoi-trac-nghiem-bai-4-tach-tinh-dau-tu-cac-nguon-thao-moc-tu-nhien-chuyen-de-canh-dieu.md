@@ -224,7 +224,7 @@ Công thức tổng quát dãy đồng đẳng của geraniol là
 
 **A.** C9H8O.                              **B.** C10H10O.                      **C.** C10H8O.                        **D.** C9H10O.
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [85.-Bai-4CDHT-CD-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN-Mende-Leep.ok_](/assets/docs/85.-Bai-4CDHT-CD-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN-Mende-Leep.ok_.docx)
 

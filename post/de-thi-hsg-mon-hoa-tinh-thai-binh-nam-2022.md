@@ -464,7 +464,7 @@ Phát biểu nào sau đây về X và Y là đúng?
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [File WORD: 2021-2022](/assets/docs/2021-2022.docx)
 - [File PDF: 2021-2022](/assets/docs/2021-2022.pdf)

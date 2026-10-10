@@ -1,6 +1,6 @@
 ---
 title: 1000 bài toán Tổ hợp Xác Suất có lời giải
-description: O2 Education xin giới thiệu cùng thầy cô và các em học sinh 1000 bài
+description: GIA SƯ THÔNG MINH xin giới thiệu cùng thầy cô và các em học sinh 1000 bài
   tập tổ hợp xác suất có lời giải. Các bài toán được chúng tôi sưu tầm từ các đề thi
   HSG,
 category: Toán học
@@ -16,7 +16,7 @@ grade: 11
 
 # 1000 Bài Tổ hợp Xác suất có lời giải
 
-O2 Education xin giới thiệu cùng thầy cô và các em học sinh 1000 **bài tập tổ hợp xác suất có lời giải**. Các bài toán được chúng tôi sưu tầm từ các đề thi HSG, đề thi ĐHCĐ, đề thi tốt nghiệp, đề thi THPTQG và đề thi thử của các trường trên cả nước.
+GIA SƯ THÔNG MINH xin giới thiệu cùng thầy cô và các em học sinh 1000 **bài tập tổ hợp xác suất có lời giải**. Các bài toán được chúng tôi sưu tầm từ các đề thi HSG, đề thi ĐHCĐ, đề thi tốt nghiệp, đề thi THPTQG và đề thi thử của các trường trên cả nước.
 
 Các đề bài được chúng tôi cập nhật thường xuyên, một số câu hỏi do chưa có thời gian nên chúng tôi sẽ bổ sung lời giải sau.
 

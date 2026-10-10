@@ -120,7 +120,7 @@ tan vừa đủ trong 140 gam dung dịch H2SO4 61,6% đung nóng nhẹ, sau ph�
 cho tác dụng với dung dịch NH3 dư, thu được 45,52 gam kết tủa. Tính giá trị của m?
 …… Hết………
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [De-thi-chon-HSG-lop-11-mon-Hoa-hoc-2023-2024-o2.edu_.vn_](/assets/docs/De-thi-chon-HSG-lop-11-mon-Hoa-hoc-2023-2024-giasu.ai.vn.pdf)
 - [Huong-dan-cham-HSG-lop-11-2023-2024-o2.edu_.vn_](/assets/docs/Huong-dan-cham-HSG-lop-11-2023-2024-giasu.ai.vn.pdf)

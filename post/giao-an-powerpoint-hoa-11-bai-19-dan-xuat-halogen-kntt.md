@@ -148,7 +148,7 @@ CH3CH2Cl ……………………….
 
 ……………………………………………………………………………………………………………………………………………………………..…………………………………………………………………………………..………
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B19.DAN-XUAT-HALOGEN.TRAN-THI-THU-HUONG](/assets/docs/B19.DAN-XUAT-HALOGEN.TRAN-THI-THU-HUONG.docx)
 

@@ -138,7 +138,7 @@ c. Sắp xếp (có giải thích) các nguyên tố Z, M, T theo chiều tăng 
 
 ***— HẾT —
 ***Họ và tên thí sinh: ………………………………. Số báo danh: …………………..
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-File-De-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-File-De-giasu.ai.vn.doc)
 - [2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-HDC-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-HDC-giasu.ai.vn.docx)

@@ -121,7 +121,9 @@ class WpressReader:
         self.fd.close()
 
 def clean_text(text):
-    return html.unescape(text)
+    text = html.unescape(text)
+    text = re.sub(r'\bO2\s+Education\b', 'GIA SƯ THÔNG MINH', text, flags=re.I)
+    return text
 
 def clean_math_body(math_str):
     # Remove HTML tags inside math
@@ -441,6 +443,7 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None, slug=""):
     text = re.sub(r'\n{3,}', '\n\n', text).strip()
     # Step 11: Normalize Markdown formatting
     text = normalize_markdown_formatting(text)
+    text = re.sub(r'\bO2\s+Education\b', 'GIA SƯ THÔNG MINH', text, flags=re.I)
     return text
 
 def migrate_single_slug(reader, slug, category=None, p_type='Bài học', grade=None, tags=None):

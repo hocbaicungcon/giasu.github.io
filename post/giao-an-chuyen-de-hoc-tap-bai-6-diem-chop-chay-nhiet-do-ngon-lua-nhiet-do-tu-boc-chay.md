@@ -777,7 +777,7 @@ Số chất lỏng dễ cháy trong bảng trên là
 
  **C.** Xăng là chất lỏng dễ cháy. **D.** Xăng là chất lỏng có thể gây cháy.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 ﻿
 

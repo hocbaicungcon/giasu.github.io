@@ -374,7 +374,7 @@ Khối lượng SO2 xả vào khí quyển trong 1 năm là: 4.365  = 1460 (t�
 
 Nguyên liệu thay thế có thể sử dụng: Hydrogen, than sinh học, Khí sinh học (Biogas),…
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_](/assets/docs/62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_.docx)
 - [62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le](/assets/docs/62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le.docx)

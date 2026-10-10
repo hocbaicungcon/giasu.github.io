@@ -13,7 +13,7 @@ tags:
 grade: 10
 ---
 
-Cuốn sách Lập trình Python này được O2 Education sưu tầm và chia sẻ lại, chứ không phải tài liệu do chúng tôi viết. Lưu ý rằng phiên bản của cuốn sách này khá cũ, sử dụng Python 2.x nên có đôi chút khác biệt so với các phiên bản Python 3.x hiện nay.
+Cuốn sách Lập trình Python này được GIA SƯ THÔNG MINH sưu tầm và chia sẻ lại, chứ không phải tài liệu do chúng tôi viết. Lưu ý rằng phiên bản của cuốn sách này khá cũ, sử dụng Python 2.x nên có đôi chút khác biệt so với các phiên bản Python 3.x hiện nay.
 
 ## 0. Thông tin về bản quyền
 

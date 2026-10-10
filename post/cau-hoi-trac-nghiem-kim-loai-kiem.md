@@ -284,7 +284,7 @@ grade: 12
 
 **C.** K và Cl2. **D.** K, H2 và Cl2.
 
-O2 education gửi các thầy cô link download file word đầy đủ:
+GIA SƯ THÔNG MINH gửi các thầy cô link download file word đầy đủ:
 
 - [Câu hỏi trắc nghiệm kim loại kiềm](/assets/docs/Cau-hoi-trac-nghiem-kim-loai-kiem.pdf)
 

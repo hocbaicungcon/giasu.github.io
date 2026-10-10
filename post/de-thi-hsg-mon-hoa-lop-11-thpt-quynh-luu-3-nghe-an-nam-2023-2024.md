@@ -400,7 +400,7 @@ Công thức phân tử của methadone là
 
 **Câu 18:** Bột sắn dây là tinh bột thu được từ củ sắn dây, bột sắn dây là đồ uống giải khát có nhiều tác dụng đối với sức khỏe. Ngoài ra bột sắn dây còn là các vị thuốc, bài thuốc chữa được nhiều bệnh. Để thu được bột sắn dây, đầu tiên củ sắn dây được rửa sạch, cạo hết lớp vỏ bên ngoài rồi xay nhuyễn với nước, thu được hỗn hợp màu nâu.
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [2023-2024-QUYNH-LUU-3-NGHE-AN-HSG-HH11-TNTL-o2.edu_.vn_](/assets/docs/2023-2024-QUYNH-LUU-3-NGHE-AN-HSG-HH11-TNTL-giasu.ai.vn.docx)
 

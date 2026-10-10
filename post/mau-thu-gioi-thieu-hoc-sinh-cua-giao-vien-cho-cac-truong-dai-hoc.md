@@ -12,7 +12,7 @@ tags:
 grade: 12
 ---
 
-O2 Education xin gửi các thầy cô mẫu thư giới thiệu học sinh cho các trường đại học của giáo viên và một số gợi ý cách viết về các ưu điểm của học sinh như sau.
+GIA SƯ THÔNG MINH xin gửi các thầy cô mẫu thư giới thiệu học sinh cho các trường đại học của giáo viên và một số gợi ý cách viết về các ưu điểm của học sinh như sau.
 
 Mời thầy cô tham khảo thêm [2 mẫu đơn xin nghỉ coi thi chấm thi](/bai-viet/2-mau-don-xin-nghi-coi-thi-tot-nghiep-vao-10.html)
 
@@ -70,7 +70,7 @@ Tôi xin chân thành cảm ơn!
 
 Người giới thiệu
 
-O2 Education gửi các thầy cô link download file thư giới thiệu [Mẫu thư giới thiệu của giáo viên](/assets/docs/Mau-thu-gioi-thieu-cua-giao-vien.doc)
+GIA SƯ THÔNG MINH gửi các thầy cô link download file thư giới thiệu [Mẫu thư giới thiệu của giáo viên](/assets/docs/Mau-thu-gioi-thieu-cua-giao-vien.doc)
 
 ←[Đề thi thử TN THPT 2022 môn hóa THPT Trần Quốc Tuấn Quảng Ngãi lần 1 có đáp án](/bai-viet/de-thi-thu-tn-thpt-2022-mon-hoa-thpt-tran-quoc-tuan-quang-ngai-lan-1-co-dap-an.html)
 [Đề thi HSG lớp 12 môn hóa tỉnh Bắc Giang năm 2021 2022](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-bac-giang-nam-2021-2022.html)→

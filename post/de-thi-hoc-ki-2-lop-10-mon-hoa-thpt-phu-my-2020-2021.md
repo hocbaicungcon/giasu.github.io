@@ -198,7 +198,7 @@ b/ Tính % khối lượng Fe, CuO trong hỗn hợp và khối lượng muối 
 | Câu 32 (0,5 điểm) | Dùng sơ đồ đường chéo, tính được tỉ lệ mol: nSO2/nO2 = 3/1  Hiệu suất phản ứng tính theo oxi. Trong 2,24 lít hh X ở đktc, tức 0,1 mol có: nSO2 = 0,075 mol; nO2 = 0,025 mol. Các PTPƯ: 2SO2 + O2  2SO3 (1) . Hỗn hợp sau p.ư (1) gồm có SO2, O2 và sản phẩn SO3 khi dẫn qua dd BaCl2­ dư, chỉ có p.ư: SO3 + BaCl2 + H2O  BaSO4+ 2HCl nBaSO4= 6,99/233 = 0,03 mol nO2 p.ư(1) = 0,015 mol H% p.ư(1) = 0,15.100%/0,25 = 60%. | 0,25 0,25 |
 
 **Học sinh làm cách nào đúng vẫn có điểm tối đa.
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [(2020-2021)THPT Phù Mỹ – Bình Định](/assets/docs/2020-2021THPT-Phu-My-Binh-Dinh.doc)
 

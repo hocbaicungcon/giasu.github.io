@@ -407,7 +407,7 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 |       Ô tô sử dụng năng lượng trên để đi được 100 km, vậy mỗi km ô tô này tiêu tốn 400400/100 = 4004 kJ.       1 lít LPG chứa nC3H8 = nC4H10 = x       ⟶ 44x/500 + 58x/570 = 1 ⟶ x = 5,27       Năng lượng mà 1 lít LPG cung cấp = x(2024 + 2668) = 24722 kJ |     0,25 |
 |       Với 1 lít LPG thì xe đi được 247222/4004 ≈ 6,17 km | 0,25 |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HSG_HOA11_THAIBINH_2023-2024](/assets/docs/HSG_HOA11_THAIBINH_2023-2024-giasu.ai.vn.docx)
 

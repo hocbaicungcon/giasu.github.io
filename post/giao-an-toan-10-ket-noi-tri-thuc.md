@@ -1,6 +1,6 @@
 ---
 title: Giáo án Toán 10 Kết Nối Tri Thức
-description: Bên cạnh 2 bộ Giáo án Toán 10 Cánh Diều file Word, O2 Education xin tiếp
+description: Bên cạnh 2 bộ Giáo án Toán 10 Cánh Diều file Word, GIA SƯ THÔNG MINH xin tiếp
   tục giới thiệu bộ Giáo án Toán 10 Kết Nối Tri Thức file Word để thầy cô tham khảo.
 category: Toán học
 type: Bài học
@@ -13,7 +13,7 @@ tags:
 grade: 10
 ---
 
-Bên cạnh 2 bộ [Giáo án Toán 10 Cánh Diều file Word](/bai-viet/giao-an-toan-10-canh-dieu-file-word.html), O2 Education xin tiếp tục giới thiệu bộ Giáo án Toán 10 Kết Nối Tri Thức file Word để thầy cô tham khảo.
+Bên cạnh 2 bộ [Giáo án Toán 10 Cánh Diều file Word](/bai-viet/giao-an-toan-10-canh-dieu-file-word.html), GIA SƯ THÔNG MINH xin tiếp tục giới thiệu bộ Giáo án Toán 10 Kết Nối Tri Thức file Word để thầy cô tham khảo.
 
 ![Giáo án Toán 10 Kết Nối Tri Thức](assets/images/giao-an-toan-10-ket-noi-tri-thuc-image-43.png)
 

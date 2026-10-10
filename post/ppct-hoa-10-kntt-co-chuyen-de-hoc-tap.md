@@ -130,7 +130,7 @@ grade: 10
 | 69 | Ôn tập học kỳ II |   |  |
 | 70 | Kiểm tra học kỳ II |   |  |
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [PPCT-hoa-10-KNTT-co-chuyen-de](/assets/docs/PPCT-hoa-10-KNTT-co-chuyen-de-giasu.ai.vn.docx)
 

@@ -320,7 +320,7 @@ nCO tổng = 3325/81 ® VCO = 919,5 m3
 
 nH2 = 35/0,81 kmol ® VH2 = 967,9 m3
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [88.-Bai-7-CD-Nguon-goc-va-phan-loai-dau-mo-CDHT-Nga-Tran.ok_](/assets/docs/88.-Bai-7-CD-Nguon-goc-va-phan-loai-dau-mo-CDHT-Nga-Tran.ok_.docx)
 

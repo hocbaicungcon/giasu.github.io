@@ -47,7 +47,7 @@ Bài 4: Hợp chất X hiện nay được sử dụng phổ biến trong công 
 
  …………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………..……………………………………………………………………………………………………………………………………………………………………………………
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [BXX_BAI-22.-ON-TAP-CHUONG-5_Nguyen-Phuong](/assets/docs/BXX_BAI-22.-ON-TAP-CHUONG-5_Nguyen-Phuong.docx)
 - [BXX_Bai-22_ON-TAP-CHUONG-5_NGUYEN-PHUONG](/assets/docs/BXX_Bai-22_ON-TAP-CHUONG-5_NGUYEN-PHUONG.pptx)

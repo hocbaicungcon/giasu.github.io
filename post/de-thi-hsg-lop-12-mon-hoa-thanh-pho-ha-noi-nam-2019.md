@@ -87,7 +87,7 @@ Cho: H = 1; C = 12; N = 14; O = 16; Na = 23; Mg = 24; Al = 27; Cl = 35,5; K = 39
 ————-Hết————–
 
 ***(Giám thị không giải thích gì thêm)
-O2 Education gửi các thầy cô link download file word đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề thi
 
 - [Đề HSG Hà Nội – vòng 1 (2019)](/assets/docs/De-HSG-Ha-Noi-vong-1-2019.docx)
 

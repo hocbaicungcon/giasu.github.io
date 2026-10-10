@@ -123,7 +123,7 @@ Họ và tên thí sinh:………………………………………..Số báo
 | Chữ kí CBCT 1: ………………………………….. |    Chữ kí CBCT 2: …………………………………… |
 | --- | --- |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

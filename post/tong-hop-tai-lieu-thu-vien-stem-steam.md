@@ -306,7 +306,7 @@ Các thầy cô download tại đây: [giao-an-HdTNHN-6-ket-noi-tri-thuc-đã ch
 
 Các thầy cô download tại đây: [NOI DUNG VA BIEN BAN HOP PHU HUYNH DAU NAM18-19](/assets/docs/NOI-DUNG-VA-BIEN-BAN-HOP-PHU-HUYNH-DAU-NAM18-19.doc)
 
-### b. Họp PHHS các kì khác của website O2 Education
+### b. Họp PHHS các kì khác của website GIA SƯ THÔNG MINH
 
 [Biên bản họp PHHS đầu năm học kì 1 học kì 2 cho giáo viên](/bai-viet/bien-ban-hop-phhs-dau-nam-hoc-ki-1-hoc-ki-2-cho-giao-vien.html)
 

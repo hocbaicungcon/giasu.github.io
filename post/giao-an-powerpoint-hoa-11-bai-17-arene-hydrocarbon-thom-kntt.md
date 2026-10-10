@@ -237,7 +237,7 @@ d – Ethylbenzene + dd KMnO4 (t0).
 
 ……………………………………………………………………………………………………………………………………………………………..…………………………………………………………………
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B17_ARENE_TRANTHIPHUONG](/assets/docs/B17_ARENE_TRANTHIPHUONG.docx)
 

@@ -161,7 +161,7 @@ Andehit, 2 chức, 3 cacbon chỉ có duy nhất 1 công thức phù hợp
 
 1. m ete = (21,6- 0,25×18) x 0,65 = 11,115 (g)
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HOA 11-NGUYEN HIEN-DEDA](/assets/docs/HOA-11-NGUYEN-HIEN-DEDA.docx)
 

@@ -254,7 +254,7 @@ Số phản ứng trong đó HCl thể hiện tính oxi hóa là
 
 **C.** 2HCl + MnO  MnCl2 + H2O.              **D.** 6KI + 2KMnO4 + 4H2O  3I2 + 2MnO2 + 8KOH.
 
-O2 Education gửi các thầy cô link download giáo án
+GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [Cau-hoi-trac-nghiem-phan-ung-oxi-hoa-khu](/assets/docs/Cau-hoi-trac-nghiem-phan-ung-oxi-hoa-khu.docx)
 

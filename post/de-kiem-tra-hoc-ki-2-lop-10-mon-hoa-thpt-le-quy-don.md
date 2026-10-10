@@ -126,7 +126,7 @@ Những biện pháp nào dưới đây làm cân bằng trên chuyển dịch t
 
  
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Hoa 10 – Le Quy Don – deda.docx](/assets/docs/Hoa-10-Le-Quy-Don-deda.docx.doc)
 

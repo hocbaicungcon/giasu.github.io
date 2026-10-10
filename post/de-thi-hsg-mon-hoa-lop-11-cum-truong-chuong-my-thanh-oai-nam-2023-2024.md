@@ -119,7 +119,7 @@ Các phản ứng xảy ra hoàn toàn, có 20% năng lượng giải phóng ra 
 
 C**án bộ coi thi số 2**:  ………………………………………
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [Dap-an-Hoa-11](/assets/docs/Dap-an-Hoa-11-giasu.ai.vn.docx)
 - [De-Hoa-11_2024](/assets/docs/De-Hoa-11_2024-giasu.ai.vn.docx)

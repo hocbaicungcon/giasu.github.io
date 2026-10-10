@@ -111,7 +111,7 @@ K=39, O=16, Si=28, Na=23, Mg=24, Al=27, N=14
 | --- |
 |  |
 
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [MA-TRAN-DE-OLYMPIC-HOA-10-o2.edu_.vn_](/assets/docs/MA-TRAN-DE-OLYMPIC-HOA-10-giasu.ai.vn.docx)
 - [de-hsg-hoa-10-o2.edu_.vn_](/assets/docs/de-hsg-hoa-10-giasu.ai.vn.docx)

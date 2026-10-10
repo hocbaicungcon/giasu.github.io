@@ -169,7 +169,7 @@ Yếu tố nào sau đây **không** ảnh hưởng đến tốc độ của ph�
 
 **—————– Hết —————–
 *(Học sinh không được sử dụng Bảng tuần hoàn các nguyên tố hóa học)
-O2 Education gửi các thầy cô link download đề thi
+GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 - [HK2K23_HH10THPT_301_IN](/assets/docs/HK2K23_HH10THPT_301_IN.doc)
 - [HD-CHAM-DE-KT-CUOI-HK2-MON-HOA-HOC-LOP-10-THPT_-2022-2023](/assets/docs/HD-CHAM-DE-KT-CUOI-HK2-MON-HOA-HOC-LOP-10-THPT_-2022-2023.doc)

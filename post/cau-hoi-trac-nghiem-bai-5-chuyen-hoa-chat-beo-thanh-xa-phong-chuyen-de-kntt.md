@@ -275,7 +275,7 @@ mmỡ  + mNaOH = mmuối + mglixerol
 
 mmuối = 100 + 0,3488.40 – 0,1163.92 = 103,25 kg
 
-O2 Education gửi các thầy cô link download
+GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [30.-Bai-5-Chuyen-hoa-chat-beo-thanh-xa-phong-Thanh-Tram.OK_](/assets/docs/30.-Bai-5-Chuyen-hoa-chat-beo-thanh-xa-phong-Thanh-Tram.OK_.docx)
 
