@@ -281,7 +281,7 @@ Số phản ứng xảy ra là
 O2 Education gửi các thầy cô link download
 
 - [B24_-carboxylic-acid_Ho-Van-Quan](/assets/docs/B24_-carboxylic-acid_Ho-Van-Quan.docx)
-- [bai-24_carboxylic-acid](/assets/docs/bai-24_carboxylic-acid.ppt)
+- [bai-24_carboxylic-acid](#drive-pending-bai-24_carboxylic-acid.ppt)
 
 Mời các thầy cô và các em xem thêm
 

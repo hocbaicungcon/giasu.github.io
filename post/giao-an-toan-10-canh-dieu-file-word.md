@@ -92,7 +92,7 @@ Cùng với bộ [Giáo án Toán 10 Kết Nối Tri Thức](/bai-viet/giao-an-t
 - [DS10-BÀI-2-TẬP-HỢP-VÀ-CÁC-PHÉP-TOÁN-TRÊN-TẬP-HỢP](/assets/docs/DS10-BÀI-2-TẬP-HỢP-VÀ-CÁC-PHÉP-TOÁN-TRÊN-TẬP-HỢP-giasu.ai.vn.docx)
 - [GA.-Mệnh-dề](/assets/docs/GA.-Mệnh-dề-giasu.ai.vn.docx)
 - [HAI-DẠNG-PHƯƠNG-TRÌNH-QUY-VỀ-BẬC-HAI](/assets/docs/HAI-DẠNG-PHƯƠNG-TRÌNH-QUY-VỀ-BẬC-HAI-giasu.ai.vn.docx)
-- [HÀM-SỐ-BẬC-HAI-CD](/assets/docs/HÀM-SỐ-BẬC-HAI-CD-giasu.ai.vn.pptx)
+- [HÀM-SỐ-BẬC-HAI-CD](#drive-pending-HÀM-SỐ-BẬC-HAI-CD-giasu.ai.vn.pptx)
 - [KẾ-HOẠCH-BÀI-DẠY-BÀI-3-KHÁI-NIỆM-VÉC-TƠ](/assets/docs/KẾ-HOẠCH-BÀI-DẠY-BÀI-3-KHÁI-NIỆM-VÉC-TƠ-giasu.ai.vn.docx)
 - [KHBD-Giá-trị-lượng-giác-của-một-góc-từ-0-dến-180](/assets/docs/KHBD-Giá-trị-lượng-giác-của-một-góc-từ-0-dến-180-giasu.ai.vn.docx)
 - [KHBH-ÔN-TẬP-CHƯƠNG-4-TOÁN-10-NỘP](/assets/docs/KHBH-ÔN-TẬP-CHƯƠNG-4-TOÁN-10-NỘP-giasu.ai.vn.docx)

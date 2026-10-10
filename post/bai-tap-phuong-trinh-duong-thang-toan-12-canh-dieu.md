@@ -32,4 +32,4 @@ CHỦ ĐỀ 4. ỨNG DỤNG ĐƯỜNG THẲNG TRONG KHÔNG GIAN.
 CHỦ ĐỀ 7. VỊ TRÍ TƯƠNG ĐỐI CỦA ĐƯỜNG THẲNG VỚI MẶT PHẲNG.
 ## Dowload bài tập phương trình đường thẳng Toán 12 Cánh Diều
 
-- [cac-dang-bai-tap-phuong-trinh-duong-thang-toan-12-canh-dieu](/assets/docs/cac-dang-bai-tap-phuong-trinh-duong-thang-toan-12-canh-dieu.pdf)
+- [cac-dang-bai-tap-phuong-trinh-duong-thang-toan-12-canh-dieu](#drive-pending-cac-dang-bai-tap-phuong-trinh-duong-thang-toan-12-canh-dieu.pdf)

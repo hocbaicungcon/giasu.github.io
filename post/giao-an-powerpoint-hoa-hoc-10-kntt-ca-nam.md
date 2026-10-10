@@ -31,14 +31,14 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 - [Powerpoint: Bai6-XuHuongBienDoiTinhChatBTH-Hoa10-KNTT-TV_STEM](https://drive.google.com/file/d/1HXnkVfRL9ao-ZEw2CJ8_peyhgmoXPLGW/view?usp=sharing)
 - [Word: BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT](/assets/docs/BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT.ppt)
 - [Powerpoint: BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT](/assets/docs/BAI-7-XU-HUONG-BIEN-DOI-THANH-PHAN-VA-MOT-SO-TINH-CHAT-CUA-HOP-CHAT.doc)
-- [Word: BAI-8-DinhLuatTuanHoan-HOA-10-KNTT](/assets/docs/BAI-8-DinhLuatTuanHoan-HOA-10-KNTT.pptx)
+- [Word: BAI-8-DinhLuatTuanHoan-HOA-10-KNTT](#drive-pending-BAI-8-DinhLuatTuanHoan-HOA-10-KNTT.pptx)
 - [Powerpoint: BAI-8-DinhLuatTuanHoan-HOA-10-KNTT](/assets/docs/BAI-8-DinhLuatTuanHoan-HOA-10-KNTT.docx)
 - [Word: Bai-9-OntapChuong2-Hoa-10-KNTT](/assets/docs/Bai-9-OntapChuong2-Hoa-10-KNTT.ppt)
 - [Powerpoint: Bai-9-OntapChuong2-Hoa-10-KNTT](/assets/docs/Bai-9-OntapChuong2-Hoa-10-KNTT.docx)
 - [Word: Bai-10-Quy-tac-octet-Hoa10-KNTT](https://drive.google.com/file/d/1bUAvdR_uGnvD8U3nWaLL0vqepT_CO3BU/view?usp=sharing)
 - [Powerpoint: Bai-10-Quy-tac-octet-Hoa10-KNTT](/assets/docs/Bai-10-Quy-tac-octet-Hoa10-KNTT.docx)
 - [Word: Bai-11-Lienketion-Hoa10-KNTT](https://drive.google.com/file/d/1uvzifFeVnKETyyfBhwCbKP-0AFrppug8/view?usp=sharing)
-- [video-khoi-dong](/assets/docs/video-khoi-dong.mp4)
+- [video-khoi-dong](#drive-pending-video-khoi-dong.mp4)
 - [Powerpoint: Bai-11-Lienketion-Hoa10-KNTT](/assets/docs/Bai-11-Lienketion-Hoa10-KNTT.docx)
 - [Word: BAI-12-LIEN-KET-CONG-HOA-TRI-Hoa10-KNTT](/assets/docs/BAI-12-LIEN-KET-CONG-HOA-TRI-Hoa10-KNTT.pptx)
 - [Powerpoint: BAI-12-LIEN-KET-CONG-HOA-TRI-Hoa10-KNTT](/assets/docs/BAI-12-LIEN-KET-CONG-HOA-TRI-Hoa10-KNTT.docx)
@@ -78,7 +78,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 [Bài 2: Phản ứng hạt nhân](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-2-phan-ung-hat-nhan.html)
 
 - [Word – Bai-2-CD-HOA-10-KNTT](/assets/docs/Bai-2-CD-HOA-10-KNTT.docx)
-- [Powerpoint – Bai-2-CD-HOA-10-KNTT](/assets/docs/Bai-2-CD-HOA-10-KNTT.pptx)
+- [Powerpoint – Bai-2-CD-HOA-10-KNTT](#drive-pending-Bai-2-CD-HOA-10-KNTT.pptx)
 
 [Bài 3: Năng lượng hoạt hoá của phản ứng hoá học](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-3-nang-luong-hoat-hoa-cua-phan-ung-hoa-hoc.html)
 
@@ -88,7 +88,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 [Bài 4: Entropy và biến thiên năng lượng tự do Gibbs](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-4-entropy-va-bien-thien-nang-luong-tu-do-gibbs.html)
 
 - [Word – Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs](/assets/docs/Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs.docx)
-- [Powerpoint – Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs](/assets/docs/Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs.pptx)
+- [Powerpoint – Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs](#drive-pending-Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs.pptx)
 
 **Chuyên đề 2: Hoá học trong việc phòng chống cháy nổ**
 

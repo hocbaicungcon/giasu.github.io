@@ -51,4 +51,4 @@ A. Câu hỏi – Trả lời trắc nghiệm.
 B. Câu hỏi – Trả lời đúng / sai.
 C. Câu hỏi – Trả lời ngắn.
 
-- [chuyen-de-xac-suat-co-dieu-kien-toan-12](/assets/docs/chuyen-de-xac-suat-co-dieu-kien-toan-12.pdf)
+- [chuyen-de-xac-suat-co-dieu-kien-toan-12](#drive-pending-chuyen-de-xac-suat-co-dieu-kien-toan-12.pdf)

@@ -31,4 +31,4 @@ BÀI 8. BIỂU THỨC TOẠ ĐỘ CỦA CÁC PHÉP TOÁN VECTƠ. + Dạng 1. T�
 
 ## Download Bài giảng vectơ và hệ trục tọa độ trong không gian KNTT
 
-- [bai-giang-vecto-va-he-truc-toa-do-trong-khong-gian-toan-12-knttvcs](/assets/docs/bai-giang-vecto-va-he-truc-toa-do-trong-khong-gian-toan-12-knttvcs.pdf)
+- [bai-giang-vecto-va-he-truc-toa-do-trong-khong-gian-toan-12-knttvcs](#drive-pending-bai-giang-vecto-va-he-truc-toa-do-trong-khong-gian-toan-12-knttvcs.pdf)
