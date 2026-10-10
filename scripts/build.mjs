@@ -124,6 +124,19 @@ export function parsePost(source, filename) {
 const gradeLabel=p=>p.grade===undefined?'Mọi lớp':`Lớp ${p.grade}`;
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>','CNTT':'</>'};
 const date=s=>new Date(s+'T00:00:00Z').toLocaleDateString('vi-VN',{timeZone:'UTC'});
+function decodeHtmlEntities(s) {
+ return String(s)
+  .replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(Number(dec)))
+  .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
+  .replace(/&quot;/g, '"')
+  .replace(/&#39;/g, "'")
+  .replace(/&apos;/g, "'")
+  .replace(/&lt;/g, '<')
+  .replace(/&gt;/g, '>')
+  .replace(/&nbsp;/g, ' ')
+  .replace(/&amp;/g, '&');
+}
+
 function slugifyHeading(text) {
  return text.toLowerCase()
   .normalize('NFD')
@@ -138,7 +151,7 @@ function processArticleHeadings(html) {
  const usedSlugs = new Set();
  const processedHtml = html.replace(/<(h[23])(\b[^>]*)>([\s\S]*?)<\/\1>/gi, (match, tag, attrs, content) => {
   const level = Number(tag[1]);
-  const cleanText = content.replace(/<[^>]+>/g, '').trim();
+  const cleanText = decodeHtmlEntities(content.replace(/<[^>]+>/g, '').trim());
   if (!cleanText) return match;
   let slug = attrs.match(/\bid="([^"]*)"/i)?.[1];
   let newAttrs = attrs;
