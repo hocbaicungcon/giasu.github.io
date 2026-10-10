@@ -101,7 +101,7 @@ Tên của hợp chất này là
 
 O2 Education gửi các thầy cô link download
 
-- [Bai-18_On-tap-chuong-4_Nguyen-Thi-Thanh-Thuy](#drive-pending-Bai-18_On-tap-chuong-4_Nguyen-Thi-Thanh-Thuy.pptx)
+- [Bai-18_On-tap-chuong-4_Nguyen-Thi-Thanh-Thuy](https://drive.google.com/file/d/187a_uJA53bBGZd8hQ13_0aEVqHz8OKnU/view?usp=sharing)
 
 - [Bai-18-ON-TAP-CHUONG-4-Nguyen-Thi-Thanh-Thuy](/assets/docs/Bai-18-ON-TAP-CHUONG-4-Nguyen-Thi-Thanh-Thuy.docx)
 

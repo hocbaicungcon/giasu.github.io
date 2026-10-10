@@ -55,7 +55,7 @@ Mời thầy cô và các em tải tài liệu hướng dẫn tại đây [o2 hu
 
 ### 3.1. Sách hướng dẫn sử dụng fx 580vnx
 
-Mời thầy cô và các em học sinh tải tại đây [SÁCH HƯỚNG DẪN SỬ DỤNG CASIO 580 VNX](#drive-pending-o2.edu_.vn-SÁCH-HƯỚNG-DẪN-SỬ-DỤNG-CASIO-580-VNX.pdf)
+Mời thầy cô và các em học sinh tải tại đây [SÁCH HƯỚNG DẪN SỬ DỤNG CASIO 580 VNX](https://drive.google.com/file/d/16zzxJbD9TLeYPr6iny_99Ea5Qg-ID8JS/view?usp=sharing)
 
 Về những điểm mới, tính năng ưu việt, nổi trội của máy CASIO fx 580VNX, mời thầy cô và các em xem trong video sau:
 

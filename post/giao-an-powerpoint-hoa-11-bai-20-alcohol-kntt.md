@@ -194,7 +194,7 @@ O2 Education gửi các thầy cô link download
 
 - [B20-ALCOHOL-NGUYEN-THI-THAI-HANG](/assets/docs/B20-ALCOHOL-NGUYEN-THI-THAI-HANG.docx)
 
-- [B20-ALCOHOL-NGUYEN-THI-THAI-HANG](#drive-pending-B20-ALCOHOL-NGUYEN-THI-THAI-HANG.pptx)
+- [B20-ALCOHOL-NGUYEN-THI-THAI-HANG](https://drive.google.com/file/d/1v5gWLGw0sGTjGTEW7-Ga5oyxmclJo9FL/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

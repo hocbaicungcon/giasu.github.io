@@ -45,4 +45,4 @@ CHỦ ĐỀ 6. CỰC TRỊ CỦA HÀM HỢP LIÊN QUAN ĐẾN f'(x); f'(u). + D�
 
 ## Download Bài tập tính đơn điệu và cực trị của hàm số Toán 12 CTST
 
-- [cac-dang-bai-tap-tinh-don-dieu-va-cuc-tri-cua-ham-so-toan-12-ctst](#drive-pending-cac-dang-bai-tap-tinh-don-dieu-va-cuc-tri-cua-ham-so-toan-12-ctst.pdf)
+- [cac-dang-bai-tap-tinh-don-dieu-va-cuc-tri-cua-ham-so-toan-12-ctst](https://drive.google.com/file/d/18bYGRDlgsYjbtkJHJExJS5A5oklT3yCE/view?usp=sharing)

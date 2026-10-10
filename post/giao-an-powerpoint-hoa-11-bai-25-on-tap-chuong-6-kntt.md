@@ -120,7 +120,7 @@ O2 Education gửi các thầy cô link download
 
 - [B25-LUYEN-TAP-LOP-11-NGUYEN-THI-THAO](/assets/docs/B25-LUYEN-TAP-LOP-11-NGUYEN-THI-THAO.docx)
 
-- [BAI-25-LUYEN-TAP-LOP-11-GUYENX-THI-THAO](#drive-pending-BAI-25-LUYEN-TAP-LOP-11-GUYENX-THI-THAO.pptx)
+- [BAI-25-LUYEN-TAP-LOP-11-GUYENX-THI-THAO](https://drive.google.com/file/d/1Wf1w1iGNzo9e39D5hFXsZDBPsG6CAdLR/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

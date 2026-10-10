@@ -298,7 +298,7 @@ Giả sử với khối lượng nguyên liệu 300g sau qua trình chiết tác
 
 O2 Education gửi các thầy cô link download
 
-- [57.-Bai-4-Tach-tinh-dau-tu-cac-nguon-thao-moc-tu-nhien-CDHT-CTST-Nguyen-Long-Hai.ok_](#drive-pending-57.-Bai-4-Tach-tinh-dau-tu-cac-nguon-thao-moc-tu-nhien-CDHT-CTST-Nguyen-Long-Hai.ok_.docx)
+- [57.-Bai-4-Tach-tinh-dau-tu-cac-nguon-thao-moc-tu-nhien-CDHT-CTST-Nguyen-Long-Hai.ok_](https://drive.google.com/file/d/1qir1TMV1iU35d0j7_Z47_wtUxVJqTHoh/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

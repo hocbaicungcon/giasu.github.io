@@ -38,4 +38,4 @@ CHỦ ĐỀ 7. GIÁ TRỊ LỚN NHẤT, GIÁ TRỊ NHỎ NHẤT LIÊN QUAN ĐẾ
 
 ## Download bài tập phương trình mặt cầu Toán 12 Cánh Diều
 
-- [cac-dang-bai-tap-phuong-trinh-mat-cau-toan-12-canh-dieu](#drive-pending-cac-dang-bai-tap-phuong-trinh-mat-cau-toan-12-canh-dieu.pdf)
+- [cac-dang-bai-tap-phuong-trinh-mat-cau-toan-12-canh-dieu](https://drive.google.com/file/d/1-UCaSh2QeYZ72sgZT6PZZ7RAdZiQkggP/view?usp=sharing)

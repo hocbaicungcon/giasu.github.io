@@ -291,7 +291,7 @@ a. So sánh phân tử ammonia và ion ammonium về dạng hình học, số li
 
 O2 Education gửi các thầy cô link download
 
-- [B05_AMMONIA.-MUOI-AMMONIUM_-Ha-Giang](#drive-pending-B05_AMMONIA.-MUOI-AMMONIUM_-Ha-Giang.pptx)
+- [B05_AMMONIA.-MUOI-AMMONIUM_-Ha-Giang](https://drive.google.com/file/d/1aNPkyjef4cW6jR7gnS410XaAB2XiFqVl/view?usp=sharing)
 
 - [B05_AMMONIA.MUOI-AMMONIUM_Ha-Giang](/assets/docs/B05_AMMONIA.MUOI-AMMONIUM_Ha-Giang.docx)
 

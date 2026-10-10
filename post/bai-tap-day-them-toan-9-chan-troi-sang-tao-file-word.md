@@ -64,14 +64,14 @@ grade: 9
 - [Chương 4-Bài 2-Hệ thức-LỜI GIẢI](/assets/docs/Chuong-4-Bai-2-He-thuc-LOI-GIAI.doc)
 - [Chương 5-Bài 1-Đường tròn-LỜI GIẢI](/assets/docs/Chuong-5-Bai-1-Duong-tron-LOI-GIAI.doc)
 
-- [Chương 5-Bài 2-Tiếp tuyến -LỜI GIẢI](#drive-pending-Chuong-5-Bai-2-Tiep-tuyen-LOI-GIAI.doc)
+- [Chương 5-Bài 2-Tiếp tuyến -LỜI GIẢI](https://drive.google.com/file/d/1HV9-bDfnyBgHpjBwV14y40eyhK78QMdO/view?usp=sharing)
 
 - [Chương 5-Bài 3-Góc-LỜI GIẢI](/assets/docs/Chuong-5-Bai-3-Goc-LOI-GIAI.doc)
 - [Chương 5-Bài 4-Hình quạt -LỜI GIẢI](/assets/docs/Chuong-5-Bai-4-Hinh-quat-LOI-GIAI.doc)
 - [Chương 6-Bài 1-Hàm số -LỜI GIẢI](/assets/docs/Chuong-6-Bai-1-Ham-so-LOI-GIAI.doc)
 - [Chương 6-Bài 2-Phương trình -LỜI GIẢI](/assets/docs/Chuong-6-Bai-2-Phuong-trinh-LOI-GIAI.doc)
 
-- [Chương 6-Bài 3-ĐỊnh lí Viète-LỜI GIẢI](#drive-pending-Chuong-6-Bai-3-DInh-li-Viete-LOI-GIAI.doc)
+- [Chương 6-Bài 3-ĐỊnh lí Viète-LỜI GIẢI](https://drive.google.com/file/d/1AJeLKwGDPxesCgU_ck_Teq-3Drt7YtqO/view?usp=sharing)
 
 - [Chương 7-Bài 1-Bảng tần số -LỜI GIẢI](/assets/docs/Chuong-7-Bai-1-Bang-tan-so-LOI-GIAI.doc)
 - [Chương 7-Bài 2-Bảng tần số -LỜI GIẢI](/assets/docs/Chuong-7-Bai-2-Bang-tan-so-LOI-GIAI.doc)

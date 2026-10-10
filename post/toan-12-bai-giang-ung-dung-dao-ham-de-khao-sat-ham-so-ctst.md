@@ -43,4 +43,4 @@ BÀI 4. KHẢO SÁT VÀ VẼ ĐỒ THỊ MỘT SỐ HÀM SỐ CƠ BẢN. + Dạn
 
 ## Download Bài giảng ứng dụng đạo hàm để khảo sát hàm số CTST
 
-- [bai-giang-ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst](#drive-pending-bai-giang-ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst.pdf)
+- [bai-giang-ung-dung-dao-ham-de-khao-sat-ham-so-toan-12-ctst](https://drive.google.com/file/d/1JV_REbZD2Cjrv0bYBNTqoqOD_RW-dSmQ/view?usp=sharing)

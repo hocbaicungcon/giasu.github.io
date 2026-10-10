@@ -24,4 +24,4 @@ Chân thành gởi lời cảm ơn đến:
 
 - Nhà biên tập: Nguyễn Thế Anh (nguyên Phó Tổng biên tập của Tạp chí Kinh tế xây dựng).
 
-- [Tai lieu Lap trinh Python Excel](#drive-pending-Tai-lieu-Lap-trinh-Python-Excel-giasu.ai.vn.pdf)
+- [Tai lieu Lap trinh Python Excel](https://drive.google.com/file/d/1uyHrhtTnju9hkltgZ3xqn8R0RgdBWfaQ/view?usp=sharing)
