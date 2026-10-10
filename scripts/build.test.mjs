@@ -52,7 +52,7 @@ test('all published posts build with menu controls, compact metadata and games',
  assert.match(poemArticle,/Bài viết cùng chủ đề/);
  const examFile=fs.readdirSync(new URL('../dist/de-kiem-tra/',import.meta.url)).find(f=>f.endsWith('.html')&&f!=='index.html');
  const exam=read('de-kiem-tra/'+examFile);assert.match(exam,/class="exam-meta"/);assert.doesNotMatch(exam.match(/class="exam-meta">([^<]*)/)[1],/Tiếng Việt|Tiếng Anh/);
- assert.match(read('giai-tri/games.html'),/game-numbers/);assert.match(read('giai-tri/index.html'),/English Riddles/);
+ assert.match(read('giai-tri/games.html'),/logicholic\.com/);assert.match(home,/href="http:\/\/logicholic\.com\/"/);assert.match(read('giai-tri/index.html'),/English Riddles/);
 });
 
 test('render interactive blocks and preserve ordinary code',()=>{

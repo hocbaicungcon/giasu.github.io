@@ -513,13 +513,14 @@ html[data-theme="dark"] :is(.tag,.fun-label,.category.active,.nav-pill,.fun-tile
   border-color: #54787a;
 }
 
-.fun-tile[href$="games.html"] {
+.fun-tile[href$="games.html"],
+.fun-tile[href*="logicholic.com"] {
   background: #dcebf9;
   border-color: #a1bdd8;
   color: #355c80;
 }
 
-html[data-theme="dark"] .fun-tile[href$="games.html"] {
+html[data-theme="dark"] :is(.fun-tile[href$="games.html"], .fun-tile[href*="logicholic.com"]) {
   background: #2c4055;
   color: #d2e7fc;
 }
