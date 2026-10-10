@@ -146,8 +146,8 @@ def normalize_markdown_formatting(text):
     text = re.sub(r'\*+Câu[\s*]*(\d+)[\s*]*:[\s*]*', r'**Câu \1:** ', text)
     text = re.sub(r'\*\*([A-Da-d])\s*\*+\.\s*\*+', r'**\1.** ', text)
 
-    # Remove trailing runaway asterisks at end of lines
-    text = re.sub(r'(?<=\S)\s*\*+\s*$', '', text, flags=re.MULTILINE)
+    # Remove trailing runaway asterisks at end of lines (only when preceded by whitespace)
+    text = re.sub(r'(?<=\s)\*+\s*$', '', text, flags=re.MULTILINE)
 
     # Remove empty bold/italic tokens: ****, ******, ** **, * *
     text = re.sub(r'\*{4,}', '', text)
