@@ -240,18 +240,24 @@ def convert_html_to_markdown(raw_html, image_map, doc_map=None, slug=""):
     text = re.sub(r'\\end\{align\*?\}', r'\\end{aligned}', text)
     # Fix accidental double dollar typos with spaces: "$ $ABCD" -> "$ABCD"
     text = re.sub(r'\$\s+\$(?=[A-Za-z0-9\\])', '$', text)
+    # Fix inline math accidentally ending with double dollar: "$expr$$</p>" -> "$expr$</p>"
+    block_tags = r'</?(?:p|div|li|ol|ul|h[1-6]|table|pre)\b'
+    text = re.sub(rf'(?<!\$)\$(?!\$)((?:(?!{block_tags})[^\$])+?)\$\$(?=\s*(?:{block_tags}|$))', r'$\1$', text)
+    # Fix adjacent inline math tokens written without space: "$math1$$math2$" -> "$math1$ $math2$"
+    text = re.sub(r'(?<=[A-Za-z0-9\\\}\]\)\,])\$\$(?=[A-Za-z0-9\\\{\[\(\-])', '$ $', text)
 
     # Step 3: Protect Math tokens safely
     math_tokens = {}
     
-    # 3.1 Display math $$ ... $$
+    # 3.1 Display math $$ ... $$ (ngăn match xuyên qua các thẻ block hoặc dấu $)
     def replace_display_math(m):
         math_content = clean_math_body(m.group(1))
         token = f"__MATH_DISPLAY_{len(math_tokens)}__"
         math_tokens[token] = f"\n\n$$\n{math_content}\n$$\n\n"
         return token
 
-    text = re.sub(r'\$\$([\s\S]*?)\$\$', replace_display_math, text)
+    block_tags = r'</?(?:p|div|li|ol|ul|h[1-6]|table|pre)\b'
+    text = re.sub(rf'\$\$((?:(?!{block_tags})[^\$])+?)\$\$', replace_display_math, text)
 
     # 3.2 Inline math $ ... $ (ngăn match xuyên qua các thẻ block như </p>, </li>, v.v.)
     def replace_inline_math(m):
