@@ -18,3 +18,12 @@ export function bundleStylesheet(entry, ancestors = new Set()) {
     },
   );
 }
+
+export function minifyCss(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([\{\};:,>])\s*/g, '$1')
+    .replace(/;}/g, '}')
+    .trim();
+}

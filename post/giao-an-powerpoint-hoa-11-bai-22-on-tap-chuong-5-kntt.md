@@ -58,5 +58,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án powerpoint hóa 11 bài 21 phenol KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-21-phenol-kntt.html)
-[Giáo án powerpoint hóa 11 bài 23 hợp chất carbonyl KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-23-hop-chat-carbonyl-kntt.html)→
+←[Giáo án powerpoint hóa 11 bài 20 alcohol KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-20-alcohol-kntt.html)
+[Giáo án powerpoint hóa 11 bài 24 carboxylic acid KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-24-carboxylic-acid-kntt.html)→

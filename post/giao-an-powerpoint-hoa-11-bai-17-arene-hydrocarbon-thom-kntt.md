@@ -249,5 +249,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án powerpoint hóa 11 bài 16 hydrocarbon không no KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-16-hydrocarbon-khong-no-kntt.html)
+←[Giáo án powerpoint hóa 11 bài 15 alkane KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-15-alkane-kntt.html)
 [Giáo án powerpoint hóa 11 bài 18 ôn tập chương 4 KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-18-on-tap-chuong-4-kntt.html)→

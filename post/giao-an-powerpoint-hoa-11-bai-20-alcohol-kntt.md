@@ -203,4 +203,4 @@ Mời các thầy cô và các em xem thêm
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
 ←[Giáo án powerpoint hóa 11 bài 19 dẫn xuất halogen KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-19-dan-xuat-halogen-kntt.html)
-[Giáo án powerpoint hóa 11 bài 21 phenol KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-21-phenol-kntt.html)→
+[Giáo án powerpoint hóa 11 bài 22 ôn tập chương 5 KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-22-on-tap-chuong-5-kntt.html)→
