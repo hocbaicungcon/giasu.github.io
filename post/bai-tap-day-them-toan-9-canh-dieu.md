@@ -76,7 +76,7 @@ grade: 9
 - [C7- Bài 1-Hàm số y=ax2-LỜI GIẢI](/assets/docs/C7-Bai-1-Ham-so-yax2-LOI-GIAI.doc)
 - [C7- Bài 2-Phương trình bậc hai một ẩn-LỜI GIẢI](/assets/docs/C7-Bai-2-Phuong-trinh-bac-hai-mot-an-LOI-GIAI.doc)
 
-- [C7- Bài 3-ĐỊnh lí Viète-LỜI GIẢI](#drive-pending-C7-Bai-3-DInh-li-Viete-LOI-GIAI.doc)
+- [C7- Bài 3-ĐỊnh lí Viète-LỜI GIẢI](https://drive.google.com/file/d/137vANsksb3-P6CRQS5DXpGmqLSKxymQz/view?usp=sharing)
 
 - [C8- Bài 1-Đường tròn ngoại và nội tiếp tam giác-LỜI GIẢI](/assets/docs/C8-Bai-1-Duong-tron-ngoai-va-noi-tiep-tam-giac-LOI-GIAI.doc)
 - [C8- Bài 2-Tứ giác nội tiếp đường tròn-Chủ đề 1-LỜI GIẢI](/assets/docs/C8-Bai-2-Tu-giac-noi-tiep-duong-tron-Chu-de-1-LOI-GIAI.doc)

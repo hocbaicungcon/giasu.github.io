@@ -166,7 +166,7 @@ O2 Education gửi thầy cô link download
 
 - [B1.-KHAI-NIEM-CAN-BANG-HOA-HOCH.TRAN-THI-THU-HUONG](/assets/docs/B1.-KHAI-NIEM-CAN-BANG-HOA-HOCH.TRAN-THI-THU-HUONG.docx)
 
-- [B1.KHAI-NIEM-CAN-BANG-HOA-HOC.TRAN-THI-THU-HUONG](#drive-pending-B1.KHAI-NIEM-CAN-BANG-HOA-HOC.TRAN-THI-THU-HUONG.pptx)
+- [B1.KHAI-NIEM-CAN-BANG-HOA-HOC.TRAN-THI-THU-HUONG](https://drive.google.com/file/d/1MVtM3N-FNAAmZB2XKUl9XI-gqGo6L_9J/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

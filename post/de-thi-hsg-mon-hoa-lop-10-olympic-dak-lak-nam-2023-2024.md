@@ -143,7 +143,7 @@ O2 Education gửi các thầy cô link download đề thi
 
 - [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De-o2.edu_.vn_](/assets/docs/2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-File-De-giasu.ai.vn.doc)
 
-- [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-HDC-o2.edu_.vn_](#drive-pending-2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-HDC-giasu.ai.vn.pdf)
+- [2023-2024-HSG-10-OLYMPIC-DAK-LAK-2024-HDC-o2.edu_.vn_](https://drive.google.com/file/d/1SvGutBsx-P73Cd9uxnEF6Ib2-sX0kOim/view?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

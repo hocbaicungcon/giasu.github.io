@@ -24,7 +24,7 @@ tags:
 
 3. LaTeX sắp chữ – Vẽ hình và Đại số máy tính của TS Nguyễn Thái Sơn
 
-- [latex_utopiatt](#drive-pending-latex_utopiatt.pdf)
+- [latex_utopiatt](https://drive.google.com/file/d/1h5IHZiC3bUovYXeQiopcBhWRHlbM1eCp/view?usp=sharing)
 
 4. [Code mẫu làm trắc nghiệm theo gói ex-test.](https://www.overleaf.com/project/5f367db31a01800001c10a67)
 

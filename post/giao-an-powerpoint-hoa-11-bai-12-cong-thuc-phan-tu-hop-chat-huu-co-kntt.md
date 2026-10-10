@@ -129,7 +129,7 @@ O2 Education gửi các thầy cô link download
 
 - [Bai-12_CTPT-Hop-chat-huu-co-_Pham-Thi-Khanh-Phuong](/assets/docs/Bai-12_CTPT-Hop-chat-huu-co-_Pham-Thi-Khanh-Phuong.docx)
 
-- [Bai-12_CTPT-Hop-chat-huu-co-_Pham-Thi-Khanh-Phuong](#drive-pending-Bai-12_CTPT-Hop-chat-huu-co-_Pham-Thi-Khanh-Phuong.pptx)
+- [Bai-12_CTPT-Hop-chat-huu-co-_Pham-Thi-Khanh-Phuong](https://drive.google.com/file/d/1X7UQxyC-icR-u29qhQ2qWva2nztUjulw/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

@@ -152,7 +152,7 @@ O2 Education gửi các thầy cô link download
 
 - [B19.DAN-XUAT-HALOGEN.TRAN-THI-THU-HUONG](/assets/docs/B19.DAN-XUAT-HALOGEN.TRAN-THI-THU-HUONG.docx)
 
-- [B19.DAN-XUAT-HALOGEN.-TRAN-THI-THU-HUONG](#drive-pending-B19.DAN-XUAT-HALOGEN.-TRAN-THI-THU-HUONG.pptx)
+- [B19.DAN-XUAT-HALOGEN.-TRAN-THI-THU-HUONG](https://drive.google.com/file/d/1i5yyfJTLesrU-ULWHWskPYO4exE28NqC/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

@@ -44,4 +44,4 @@ BÀI 4. KHẢO SÁT SỰ BIẾN THIÊN VÀ VẼ ĐỒ THỊ CỦA HÀM SỐ. + D
 
 ## Download Bài giảng ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số KNTT
 
-- [bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-knttvcs](#drive-pending-bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-knttvcs.pdf)
+- [bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-toan-12-knttvcs](https://drive.google.com/file/d/1stlM5seX93bkPYCQ3pa24jRfs-eeEEYR/view?usp=sharing)
