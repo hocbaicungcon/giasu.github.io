@@ -1,8 +1,6 @@
 ---
 title: Bài thơ đọc ngược đọc xuôi theo 8 cách!
-description: Các Bài thơ đọc ngược đọc xuôi (còn gọi là thơ nghịch đảo - Lục chuyển
-  hồi văn) là những bài thơ mà đọc xuôi hay ngược đều có ý nghĩa. Ngoài ra, còn có
-  một
+description: Tuyển tập các bài thơ đọc ngược đọc xuôi (thơ nghịch đảo - Lục chuyển hồi văn) độc đáo trong văn học Việt Nam như Cảnh xuân, Đi thuyền, Cửa sổ đêm khuya...
 category: Ngữ văn
 type: Giai thoại
 date: '2024-10-02'
@@ -12,202 +10,206 @@ tags:
 - Thơ thuận nghịch độc
 ---
 
-Các Bài thơ đọc ngược đọc xuôi (còn gọi là thơ nghịch đảo – Lục chuyển hồi văn) là những bài thơ mà đọc xuôi hay ngược đều có ý nghĩa. Ngoài ra, còn có một bài thơ rất kỳ lạ, tựa đề là “Cảnh xuân” có thể đọc ngược, đọc xuôi, cắt đầu, cắt đuôi từng câu mà vẫn cực hay.
+Các **bài thơ đọc ngược đọc xuôi** (còn gọi là *thơ nghịch đảo* – *Lục chuyển hồi văn*) là những áng thơ tuyệt tác mà đọc xuôi hay đọc ngược đều trọn vẹn ý nghĩa và niêm luật. Đặc biệt, có một bài thơ thất ngôn bát cú vô cùng kỳ lạ tựa đề **“Cảnh xuân”**, có thể biến hóa đọc theo 8 cách khác nhau: đọc xuôi, đọc ngược, cắt đầu, cắt đuôi từng câu mà âm hưởng vẫn tha thiết, gợi cảm.
 
-## Bài thơ đọc ngược đọc xuôi hay nhất
+---
 
-Theo thông tin tham khảo thì bài “CẢNH XUÂN” của tác giả Nguyễn Vân Thiên, còn có bút hiệu Thiện Mỹ Giang. Bài thơ “Cảnh Xuân” không phải là sáng tác “độc lập”, mà được tác giả viết bài thơ này lồng vào 1 truyện ngắn đề là “Khai Bút Đầu Xuân”, và truyện ngắn này đã được đăng trên Tạp chí NGÀN THÔNG số Xuân năm 1972 { Tòa soạn chung với Tuổi Hoa: 38 Kỳ Đồng, Q.3, Saigon)
+## Bài thơ "Cảnh xuân" – Đọc xuôi ngược theo 8 cách
 
-![Bài thơ đọc ngược đọc xuôi theo 8 cách! 1](assets/images/bai-tho-doc-nguoc-doc-xuoi-bai-tho-canh-xuan.webp)
+Theo tư liệu ghi nhận, bài thơ **“Cảnh xuân”** do tác giả Nguyễn Vân Thiên (bút hiệu Thiện Mỹ Giang) sáng tác, được lồng vào truyện ngắn *“Khai Bút Đầu Xuân”* trên Tạp chí Ngàn Thông số Xuân năm 1972 (Tòa soạn chung với Tuổi Hoa: 38 Kỳ Đồng, Quận 3, Sài Gòn).
 
-Không biết tác giả là ai, nhưng khi đọc bài thơ này ta vô cùng khâm phục tác giả của bài thơ, càng thêm yêu quý và càng phải giữ gìn vẻ đẹp của tiếng Việt. Vậy mà có kẻ bày ra thứ trò cải tiến nhảm nhí và muốn phá hoại chữ nghĩa của bao thế hệ tổ tiên để lại.
+![Bài thơ đọc ngược đọc xuôi theo 8 cách - Cảnh xuân](assets/images/bai-tho-doc-nguoc-doc-xuoi-bai-tho-canh-xuan.webp)
 
-Cách đọc thứ nhất là đọc xuôi, bình thường:
+Đọc bài thơ, người yêu văn học càng thêm tự hào và khâm phục sự phong phú, tinh tế tuyệt mỹ của tiếng Việt.
 
-“Ta mến cảnh xuân ánh sáng ngời
-Thú vui thơ rượu chén đầy vơi
-Hoa cài giậu trúc cành xuân biếc
-Lá quyện hương xuân sắc thắm tươi
-Qua lại khách chờ sông lặng sóng
-Ngược xuôi thuyền đợi bến đông người
-Xa ngân tiếng hát đàn trầm bổng
-Tha thướt bóng ai mắt mỉm cười”.
+### Cách 1: Đọc xuôi nguyên bản (Thất ngôn bát cú)
 
-Đến cách đọc thứ hai, là đọc ngược từ phải sang trái và từ dưới lên:
+> “Ta mến cảnh xuân ánh sáng ngời<br>
+> Thú vui thơ rượu chén đầy vơi<br>
+> Hoa cài giậu trúc cành xuân biếc<br>
+> Lá quyện hương xuân sắc thắm tươi<br>
+> Qua lại khách chờ sông lặng sóng<br>
+> Ngược xuôi thuyền đợi bến đông người<br>
+> Xa ngân tiếng hát đàn trầm bổng<br>
+> Tha thướt bóng ai mắt mỉm cười”.
 
-“Cười mỉm mắt ai bóng thướt tha
-Bổng trầm đàn hát tiếng ngân xa
-Người đông bến đợi thuyền xuôi ngược
-Sóng lặng sông chờ khách lại qua
-Tươi thắm sắc xuân hương quyện lá
-Biếc xanh cành trúc giậu cài hoa
-Vơi đầy chén rượu thơ vui thú
-Ngời sáng ánh xuân cảnh mến ta”
+### Cách 2: Đọc ngược từ cuối lên đầu (Từ phải sang trái, từ dưới lên)
 
-Cách đọc thứ ba, là đọc xuôi như cách đọc thứ nhất, nhưng mỗi câu thơ bỏ hai từ đầu:
+> “Cười mỉm mắt ai bóng thướt tha<br>
+> Bổng trầm đàn hát tiếng ngân xa<br>
+> Người đông bến đợi thuyền xuôi ngược<br>
+> Sóng lặng sông chờ khách lại qua<br>
+> Tươi thắm sắc xuân hương quyện lá<br>
+> Biếc xanh cành trúc giậu cài hoa<br>
+> Vơi đầy chén rượu thơ vui thú<br>
+> Ngời sáng ánh xuân cảnh mến ta”.
 
-“Cảnh xuân ánh sáng ngời
-Thơ rượu chén đầy vơi
-Giậu trúc cành xanh biếc
-Hương xuân sắc thắm tươi
-Khách chờ sông lặng sóng
-Thuyền đợi bến đông người
-Tiếng hát đàn trầm bổng
-Bóng ai mắt mỉm cười”
+### Cách 3: Đọc xuôi bỏ 2 từ đầu mỗi câu (Ngũ ngôn bát cú)
 
-Cách đọc thứ tư, là đọc ngược từ phải sang trái, từ dưới đọc lên, mỗi câu thơ lại bỏ hai từ cuối:
+> “Cảnh xuân ánh sáng ngời<br>
+> Thơ rượu chén đầy vơi<br>
+> Giậu trúc cành xanh biếc<br>
+> Hương xuân sắc thắm tươi<br>
+> Khách chờ sông lặng sóng<br>
+> Thuyền đợi bến đông người<br>
+> Tiếng hát đàn trầm bổng<br>
+> Bóng ai mắt mỉm cười”.
 
-“Mắt ai bóng thướt tha
-Đàn hát tiếng ngân xa
-Bến đợi thuyền xuôi ngược
-Sông chờ khách lại qua
-Sắc xuân hương quyện lá
-Cành trúc giậu cài hoa
-Chén rượu thơ vui thú
-Ánh xuân cảnh mến ta”
+### Cách 4: Đọc ngược bỏ 2 từ cuối mỗi câu (Ngũ ngôn bát cú)
 
-Cách đọc thứ năm là đọc ngược từ phải sang trái, mỗi câu bỏ ba từ đầu:
+> “Mắt ai bóng thướt tha<br>
+> Đàn hát tiếng ngân xa<br>
+> Bến đợi thuyền xuôi ngược<br>
+> Sông chờ khách lại qua<br>
+> Sắc xuân hương quyện lá<br>
+> Cành trúc giậu cài hoa<br>
+> Chén rượu thơ vui thú<br>
+> Ánh xuân cảnh mến ta”.
 
-“Cười mỉm mắt ai
-Bổng trầm đàn hát
-Người đông bến đợi
-Sóng lặng sông chờ
-Tươi thắm sắc xuân
-Biếc xanh cành trúc
-Vơi đầy chén rượu
-Ngời sáng ánh xuân”
+### Cách 5: Đọc ngược bỏ 3 từ đầu mỗi câu (Tứ ngôn bát cú)
 
-Cách đọc thứ sáu, là đọc xuôi, mỗi câu bỏ 3 từ cuối:
+> “Cười mỉm mắt ai<br>
+> Bổng trầm đàn hát<br>
+> Người đông bến đợi<br>
+> Sóng lặng sông chờ<br>
+> Tươi thắm sắc xuân<br>
+> Biếc xanh cành trúc<br>
+> Vơi đầy chén rượu<br>
+> Ngời sáng ánh xuân”.
 
-“Ta mến cảnh xuân
-Thú vui thơ rượu
-Hoa cài giậu trúc
-Lá quyện hương xuân
-Qua lại khách chờ
-Ngược xuôi thuyền đợi
-Xa ngân tiếng hát
-Tha thướt bóng ai”
+### Cách 6: Đọc xuôi bỏ 3 từ cuối mỗi câu (Tứ ngôn bát cú)
 
-Cách đọc thứ bảy, là đọc xuôi, mỗi câu thơ bỏ bốn chữ đầu:
+> “Ta mến cảnh xuân<br>
+> Thú vui thơ rượu<br>
+> Hoa cài giậu trúc<br>
+> Lá quyện hương xuân<br>
+> Qua lại khách chờ<br>
+> Ngược xuôi thuyền đợi<br>
+> Xa ngân tiếng hát<br>
+> Tha thướt bóng ai”.
 
-“Ánh sáng ngời
-Chén đầy vơi
-Cành xanh biếc
-Sắc thắm tươi
-Sông lặng sóng
-Bến đông người
-Đàn trầm bổng
-Mắt mỉm cười”
+### Cách 7: Đọc xuôi bỏ 4 từ đầu mỗi câu (Tam ngôn bát cú)
 
-Còn cách đọc thứ tám, là đọc ngược từ dưới lên, mỗi câu lại bỏ bốn từ cuối:
+> “Ánh sáng ngời<br>
+> Chén đầy vơi<br>
+> Cành xanh biếc<br>
+> Sắc thắm tươi<br>
+> Sông lặng sóng<br>
+> Bến đông người<br>
+> Đàn trầm bổng<br>
+> Mắt mỉm cười”.
 
-“Bóng thướt tha
-Tiếng ngân nga
-Thuyền xuôi ngược
-Khách lại qua
-Hương quyện lá
-Giậu cài hoa
-Thơ vui thú
-Cảnh mến ta”
+### Cách 8: Đọc ngược bỏ 4 từ cuối mỗi câu (Tam ngôn bát cú)
 
-## Các bài thơ đọc ngược đọc xuôi khác
+> “Bóng thướt tha<br>
+> Tiếng ngân nga<br>
+> Thuyền xuôi ngược<br>
+> Khách lại qua<br>
+> Hương quyện lá<br>
+> Giậu cài hoa<br>
+> Thơ vui thú<br>
+> Cảnh mến ta”.
 
-Hàn Mặc Tử cũng là một nhà thơ có nhiều bài thơ nghịch đảo, xin giới thiệu cùng bạn đọc.
+---
 
-![Bài thơ đọc ngược đọc xuôi theo 8 cách! 2](assets/images/bai-tho-doc-nguoc-doc-xuoi-hanmactu.jpeg)
+## Các bài thơ thuận nghịch độc kinh điển khác
 
-### Đi thuyền (Hàn Mặc Tử – Lục chuyển hồi văn)
+Trong lịch sử văn học Việt Nam, thi sĩ Hàn Mặc Tử và tiền nhân cũng để lại nhiều bài thơ nghịch đảo trứ danh.
 
-**Bài thơ gốc:**
+![Thi sĩ Hàn Mặc Tử](assets/images/bai-tho-doc-nguoc-doc-xuoi-hanmactu.jpeg)
 
-Bèo trôi nước giợn sóng mênh mông
-Cỏ mọc bờ xa bóng liễu trông
-Chèo vững thiếp qua vời khổ hải
-Chí bền chàng đến vận trung không
-Theo lần nguyệt xế mây mờ mịt
-Hoạ đáp thông reo trống não nồng
-Neo thả biết đâu nơi định trước
-Bèo trôi nước giợn sóng mênh mông
-
-**Đọc ngược:**
-
-Mông mênh sóng giợn nước trôi bèo
-Trước định nơi đâu biết thả neo
-Nồng não trống reo thông đáp họa
-Mịt mờ mây xế nguyệt lần theo
-Không trung vận đến chàng bền chí
-Hải khổ vời qua thiếp vững chèo
-Trông liễu bóng xa bờ cỏ mọc
-Mông mênh sóng giợn nước trôi bèo
-
-### Cửa sổ đêm khuya (Hàn Mặc Tử – Lục Chuyển Hồi Văn)
+### 1. Đi thuyền (Hàn Mặc Tử – Lục chuyển hồi văn)
 
 **Bài thơ gốc:**
 
-Hoa cười nguyệt rọi cửa lồng gương
-Lạ cảnh buồn thêm nỗi vấn vương
-Tha thướt liễu in hồ gợn sóng
-Hững hờ mai thoảng gió đưa hương
-Xa người nhớ cảnh tình lai láng
-Vắng bạn ngâm thơ rượu bẽ bàng
-Qua lại yến ngàn dâu ủ lá
-Hoà đàn sẵn có dế bên tường.
+> Bèo trôi nước giợn sóng mênh mông<br>
+> Cỏ mọc bờ xa bóng liễu trông<br>
+> Chèo vững thiếp qua vời khổ hải<br>
+> Chí bền chàng đến vận trung không<br>
+> Theo lần nguyệt xế mây mờ mịt<br>
+> Hoạ đáp thông reo trống não nồng<br>
+> Neo thả biết đâu nơi định trước<br>
+> Bèo trôi nước giợn sóng mênh mông.
 
 **Đọc ngược:**
 
-Tường bên dế có sẵn đàn hòa
-Lá ủ dâu ngàn yến lại qua
-Bàng bẽ rượu thơ ngâm bạn vắng
-Láng lai tình cảnh nhớ người xa
-Hương đưa gió thoảng mai hờ hững
-Sóng gợn hồ in liễu thướt tha
-Vương vấn nỗi thêm buồn cảnh lạ
-Gương lồng cửa rọi nguyệt cười hoa
+> Mông mênh sóng giợn nước trôi bèo<br>
+> Trước định nơi đâu biết thả neo<br>
+> Nồng não trống reo thông đáp họa<br>
+> Mịt mờ mây xế nguyệt lần theo<br>
+> Không trung vận đến chàng bền chí<br>
+> Hải khổ vời qua thiếp vững chèo<br>
+> Trông liễu bóng xa bờ cỏ mọc<br>
+> Mông mênh sóng giợn nước trôi bèo.
 
-### Vô Đề (Vua Tự Đức – Lục Chuyển Hồi Văn)
+### 2. Cửa sổ đêm khuya (Hàn Mặc Tử – Lục chuyển hồi văn)
 
 **Bài thơ gốc:**
 
-Gương tà nguyệt xế đã ngoài song
-Héo hắt sao trông quá sức trông
-Thương bấy thiết tha lòng héo liễu
-Nhớ thêm vàng vọ má phai hồng
-Vương sầu xiết tưởng chi ngôi bắc
-Ðoạn thảm xui buồn vã chạnh đông
-Chàng hỡi biết chăng ai bực bội
-Loan hàng viết thảo tả tình chung
+> Hoa cười nguyệt rọi cửa lồng gương<br>
+> Lạ cảnh buồn thêm nỗi vấn vương<br>
+> Tha thướt liễu in hồ gợn sóng<br>
+> Hững hờ mai thoảng gió đưa hương<br>
+> Xa người nhớ cảnh tình lai láng<br>
+> Vắng bạn ngâm thơ rượu bẽ bàng<br>
+> Qua lại yến ngàn dâu ủ lá<br>
+> Hoà đàn sẵn có dế bên tường.
 
 **Đọc ngược:**
 
-Chung tình tả thảo viết hàng loan
-Bội bực ai chẳng biết hỡi chàng
-Đông chạnh vã buồn xui thảm đoạn
-Bắc ngôi chi tưởng xiết sầu vương
-Hồng phai má vọ vàng thêm nhớ
-Liễu héo lòng tha thiết bấy thương
-Trông sức quá trông sao héo hắt
-Song ngoài đã xế nguyệt tà gương
+> Tường bên dế có sẵn đàn hòa<br>
+> Lá ủ dâu ngàn yến lại qua<br>
+> Bàng bẽ rượu thơ ngâm bạn vắng<br>
+> Láng lai tình cảnh nhớ người xa<br>
+> Hương đưa gió thoảng mai hờ hững<br>
+> Sóng gợn hồ in liễu thướt tha<br>
+> Vương vấn nỗi thêm buồn cảnh lạ<br>
+> Gương lồng cửa rọi nguyệt cười hoa.
 
-### Đền Ngọc Sơn (Khuyết Danh – Lục chuyển hồi văn)
+### 3. Vô đề (Vua Tự Đức – Lục chuyển hồi văn)
 
 **Bài thơ gốc:**
 
-Linh uy tiếng nổi thật là đây:
-Nước chắn, hoa rào, một khoá mây.
-Xanh biếc nước soi, hồ lộn bóng,
-Tím bầm rêu mọc, đá tròn xoay.
-Canh tàn lúc đánh chuông ầm tiếng,
-Khách vắng khi đưa xạ ngát bay.
-Thành thị tiếng vang đồn cảnh thắng,
-Rành rành nọ bút với nghiên này.
+> Gương tà nguyệt xế đã ngoài song<br>
+> Héo hắt sao trông quá sức trông<br>
+> Thương bấy thiết tha lòng héo liễu<br>
+> Nhớ thêm vàng vọ má phai hồng<br>
+> Vương sầu xiết tưởng chi ngôi bắc<br>
+> Đoạn thảm xui buồn vã chạnh đông<br>
+> Chàng hỡi biết chăng ai bực bội<br>
+> Loan hàng viết thảo tả tình chung.
 
 **Đọc ngược:**
 
-Này nghiên với bút nọ rành rành:
-Thắng cảnh đồn vang tiếng thị thành.
-Bay ngát xạ đưa khi vắng khách;
-Tiếng ầm chuông đánh lúc tàn canh.
-Xoay tròn đá mọc rêu bầm tím;
-Bóng lộn hồ soi nước biếc xanh.
-Mây khoá một rào hoa chắn nước,
-Đây là thật nổi tiếng uy linh.
+> Chung tình tả thảo viết hàng loan<br>
+> Bội bực ai chẳng biết hỡi chàng<br>
+> Đông chạnh vã buồn xui thảm đoạn<br>
+> Bắc ngôi chi tưởng xiết sầu vương<br>
+> Hồng phai má vọ vàng thêm nhớ<br>
+> Liễu héo lòng tha thiết bấy thương<br>
+> Trông sức quá trông sao héo hắt<br>
+> Song ngoài đã xế nguyệt tà gương.
+
+### 4. Đền Ngọc Sơn (Khuyết danh – Lục chuyển hồi văn)
+
+**Bài thơ gốc:**
+
+> Linh uy tiếng nổi thật là đây:<br>
+> Nước chắn, hoa rào, một khoá mây.<br>
+> Xanh biếc nước soi, hồ lộn bóng,<br>
+> Tím bầm rêu mọc, đá tròn xoay.<br>
+> Canh tàn lúc đánh chuông ầm tiếng,<br>
+> Khách vắng khi đưa xạ ngát bay.<br>
+> Thành thị tiếng vang đồn cảnh thắng,<br>
+> Rành rành nọ bút với nghiên này.
+
+**Đọc ngược:**
+
+> Này nghiên với bút nọ rành rành:<br>
+> Thắng cảnh đồn vang tiếng thị thành.<br>
+> Bay ngát xạ đưa khi vắng khách;<br>
+> Tiếng ầm chuông đánh lúc tàn canh.<br>
+> Xoay tròn đá mọc rêu bầm tím;<br>
+> Bóng lộn hồ soi nước biếc xanh.<br>
+> Mây khoá một rào hoa chắn nước,<br>
+> Đây là thật nổi tiếng uy linh.

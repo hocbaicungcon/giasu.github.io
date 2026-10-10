@@ -46,3 +46,77 @@ document.querySelectorAll('form.quiz[data-answers]').forEach(form=>{
  form.addEventListener('input',clear);
  form.addEventListener('reset',clear);
 });
+
+// Table of Contents (TOC) ScrollSpy and navigation
+(()=>{
+  const tocLinks = document.querySelectorAll('.toc-nav a');
+  if (!tocLinks.length) return;
+
+  const headings = [];
+  tocLinks.forEach(link => {
+    const id = link.getAttribute('href')?.replace('#', '');
+    if (id) {
+      const el = document.getElementById(id);
+      if (el && !headings.some(h => h.id === id)) {
+        headings.push({ id, el });
+      }
+    }
+  });
+
+  if (!headings.length) return;
+
+  // Smooth scroll
+  tocLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      const id = link.getAttribute('href')?.replace('#', '');
+      const target = id ? document.getElementById(id) : null;
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({
+          behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+          block: 'start'
+        });
+        history.replaceState(null, '', '#' + id);
+      }
+    });
+  });
+
+  // ScrollSpy
+  let ticking = false;
+  const updateActiveToc = () => {
+    const scrollPos = window.scrollY + 100;
+    let currentId = '';
+    for (let i = 0; i < headings.length; i++) {
+      if (headings[i].el.offsetTop <= scrollPos) {
+        currentId = headings[i].id;
+      } else {
+        break;
+      }
+    }
+    if (!currentId && headings.length) currentId = headings[0].id;
+    tocLinks.forEach(link => {
+      const match = link.getAttribute('href') === '#' + currentId;
+      link.classList.toggle('active', match);
+      link.setAttribute('aria-current', match ? 'true' : 'false');
+    });
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(updateActiveToc);
+      ticking = true;
+    }
+  }, { passive: true });
+  updateActiveToc();
+
+  // Top button
+  document.querySelectorAll('.toc-top-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
+      });
+    });
+  });
+})();
