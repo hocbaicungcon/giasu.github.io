@@ -30,15 +30,15 @@ Bài học này sẽ giúp các em hệ thống hóa toàn bộ kiến thức v�
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 16px;">
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #1d4ed8;">1. Tỉ số của hai đại lượng</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Thương $a : b$ hoặc $\frac{a}{b}$ ($b \neq 0$). <b>Bắt buộc:</b> Phải đổi về cùng một đơn vị đo trước khi lập tỉ số.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Thương $a : b$ hoặc $\dfrac{a}{b}$ ($b \neq 0$). <b>Bắt buộc:</b> Phải đổi về cùng một đơn vị đo trước khi lập tỉ số.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #047857;">2. Tỉ số phần trăm</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Tỉ số $\frac{a}{b} \cdot 100\%$. Kí hiệu $\%$ thay cho $\frac{1}{100}$. Là tỉ số thuần túy, không có đơn vị đo kèm theo.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Tỉ số $\dfrac{a}{b} \cdot 100\%$. Kí hiệu $\%$ thay cho $\dfrac{1}{100}$. Là tỉ số thuần túy, không có đơn vị đo kèm theo.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #f59e0b; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #b45309;">3. Ba bài toán cơ bản</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Tìm $m\%$ của $a$: Lấy $a \cdot \frac{m}{100}$.<br>• Tìm số khi biết $m\%$ bằng $b$: Lấy $b : \frac{m}{100}$.<br>• Tỉ số phần trăm của $a$ và $b$: $\frac{a}{b} \cdot 100\%$.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Tìm $m\%$ của $a$: Lấy $a \cdot \dfrac{m}{100}$.<br>• Tìm số khi biết $m\%$ bằng $b$: Lấy $b : \dfrac{m}{100}$.<br>• Tỉ số phần trăm của $a$ và $b$: $\dfrac{a}{b} \cdot 100\%$.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #ec4899; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #be185d;">4. Ứng dụng thực tế</h4>
@@ -54,23 +54,23 @@ Bài học này sẽ giúp các em hệ thống hóa toàn bộ kiến thức v�
 Hãy cùng kiểm tra nhanh những hiểu biết nền tảng trước khi bước vào bài học:
 
 **Câu 1 (Ôn tập phân số ở Bài 27):**
-a) Tìm $\frac{3}{4}$ của $80.$
-b) Tìm một số, biết $\frac{2}{5}$ của nó bằng $30.$
+a) Tìm $\dfrac{3}{4}$ của $80.$
+b) Tìm một số, biết $\dfrac{2}{5}$ của nó bằng $30.$
 - *Trả lời:*
-  - a) $80 \cdot \frac{3}{4} = 60.$
-  - b) $30 : \frac{2}{5} = 30 \cdot \frac{5}{2} = 75.$
+  - a) $80 \cdot \dfrac{3}{4} = 60.$
+  - b) $30 : \dfrac{2}{5} = 30 \cdot \dfrac{5}{2} = 75.$
 
 **Câu 2 (Chuyển đổi phân số sang phần trăm):** Viết các phân số sau dưới dạng tỉ số phần trăm (kèm ký hiệu `%`):
-$$\frac{1}{2};\quad \frac{3}{5};\quad \frac{9}{10};\quad \frac{1}{4};\quad \frac{7}{20}.$$
+$$\dfrac{1}{2};\quad \dfrac{3}{5};\quad \dfrac{9}{10};\quad \dfrac{1}{4};\quad \dfrac{7}{20}.$$
 - *Trả lời:*
-  $$\frac{1}{2} = 50\%;\quad \frac{3}{5} = 60\%;\quad \frac{9}{10} = 90\%;\quad \frac{1}{4} = 25\%;\quad \frac{7}{20} = 35\%.$$
+  $$\dfrac{1}{2} = 50\%;\quad \dfrac{3}{5} = 60\%;\quad \dfrac{9}{10} = 90\%;\quad \dfrac{1}{4} = 25\%;\quad \dfrac{7}{20} = 35\%.$$
 
 **Câu 3 (So sánh thành phần trong tập hợp):** Một rổ hoa quả có $15$ quả cam và $25$ quả táo.
 a) Viết tỉ số giữa số quả cam và số quả táo (rút gọn tối giản).
 b) Số quả cam chiếm bao nhiêu phần trăm tổng số hoa quả trong rổ?
 - *Trả lời:*
-  - a) Tỉ số giữa cam và táo là $\frac{15}{25} = \frac{3}{5}.$
-  - b) Tổng số quả là $15 + 25 = 40$ quả. Tỉ số phần trăm của cam là $\frac{15}{40} \cdot 100\% = 37{,}5\%.$
+  - a) Tỉ số giữa cam và táo là $\dfrac{15}{25} = \dfrac{3}{5}.$
+  - b) Tổng số quả là $15 + 25 = 40$ quả. Tỉ số phần trăm của cam là $\dfrac{15}{40} \cdot 100\% = 37{,}5\%.$
 
 **Câu 4 (Tình huống thực tế giảm giá):** Một chiếc áo phông có giá niêm yết $200\,000$ đồng, đang được giảm giá $20\%.$ Hỏi số tiền được giảm là bao nhiêu và giá mua thực tế là bao nhiêu?
 - *Trả lời:*
@@ -84,8 +84,8 @@ b) Số quả cam chiếm bao nhiêu phần trăm tổng số hoa quả trong r�
 ### 1. Tỉ số của hai đại lượng
 
 #### a) Định nghĩa
-- Tỉ số của hai số $a$ và $b$ ($b \neq 0$) là thương trong phép chia số $a$ cho số $b,$ được kí hiệu là $a : b$ hoặc $\frac{a}{b}.$
-- Ta thường rút gọn tỉ số $\frac{a}{b}$ về dạng phân số tối giản.
+- Tỉ số của hai số $a$ và $b$ ($b \neq 0$) là thương trong phép chia số $a$ cho số $b,$ được kí hiệu là $a : b$ hoặc $\dfrac{a}{b}.$
+- Ta thường rút gọn tỉ số $\dfrac{a}{b}$ về dạng phân số tối giản.
 
 #### b) Quy tắc cùng đơn vị đo (Cực kỳ quan trọng)
 > [!IMPORTANT]
@@ -99,14 +99,14 @@ c) $350\text{ g}$ và $1{,}4\text{ kg}$
 
 **Lời giải:**
 a) Đổi $1{,}5\text{ m} = 150\text{ cm}.$
-Tỉ số là: $\frac{20}{150} = \frac{2}{15}.$
-*(Nếu quên đổi đơn vị mà viết $\frac{20}{1{,}5}$ là sai hoàn toàn!)*
+Tỉ số là: $\dfrac{20}{150} = \dfrac{2}{15}.$
+*(Nếu quên đổi đơn vị mà viết $\dfrac{20}{1{,}5}$ là sai hoàn toàn!)*
 
 b) Đổi $2\text{ giờ} = 120\text{ phút}.$
-Tỉ số là: $\frac{45}{120} = \frac{3}{8}.$
+Tỉ số là: $\dfrac{45}{120} = \dfrac{3}{8}.$
 
 c) Đổi $1{,}4\text{ kg} = 1\,400\text{ g}.$
-Tỉ số là: $\frac{350}{1\,400} = \frac{1}{4}.$
+Tỉ số là: $\dfrac{350}{1\,400} = \dfrac{1}{4}.$
 
 ---
 
@@ -114,13 +114,13 @@ Tỉ số là: $\frac{350}{1\,400} = \frac{1}{4}.$
 
 #### a) Khái niệm tỉ số phần trăm
 - Tỉ số có mẫu số bằng $100$ được gọi là **tỉ số phần trăm**, kí hiệu là $\%$:
-$$\frac{a}{100} = a\%.$$
+$$\dfrac{a}{100} = a\%.$$
 - Ví dụ:
-$$\frac{18}{100} = 18\%;\quad \frac{125}{100} = 125\%;\quad \frac{4{,}5}{100} = 4{,}5\% = 0{,}045.$$
+$$\dfrac{18}{100} = 18\%;\quad \dfrac{125}{100} = 125\%;\quad \dfrac{4{,}5}{100} = 4{,}5\% = 0{,}045.$$
 
 #### b) Cách tìm tỉ số phần trăm của hai số
-Để tìm tỉ số phần trăm của hai số $a$ và $b$ ($b \neq 0$), ta nhân thương $\frac{a}{b}$ với $100$ rồi viết thêm ký hiệu $\%$ vào bên phải kết quả:
-$$\text{Tỉ số phần trăm của } a \text{ và } b = \frac{a}{b} \cdot 100\%.$$
+Để tìm tỉ số phần trăm của hai số $a$ và $b$ ($b \neq 0$), ta nhân thương $\dfrac{a}{b}$ với $100$ rồi viết thêm ký hiệu $\%$ vào bên phải kết quả:
+$$\text{Tỉ số phần trăm của } a \text{ và } b = \dfrac{a}{b} \cdot 100\%.$$
 
 **Ví dụ 2:** Tìm tỉ số phần trăm của:
 a) $15$ và $40$
@@ -128,16 +128,16 @@ b) $1{,}2$ và $2{,}5$
 c) $3\text{ dm}$ và $25\text{ cm}$
 
 **Lời giải:**
-a) $\frac{15}{40} \cdot 100\% = 0{,}375 \cdot 100\% = 37{,}5\%.$
-b) $\frac{1{,}2}{2{,}5} \cdot 100\% = 0{,}48 \cdot 100\% = 48\%.$
+a) $\dfrac{15}{40} \cdot 100\% = 0{,}375 \cdot 100\% = 37{,}5\%.$
+b) $\dfrac{1{,}2}{2{,}5} \cdot 100\% = 0{,}48 \cdot 100\% = 48\%.$
 c) Đổi $3\text{ dm} = 30\text{ cm}.$
-Tỉ số phần trăm: $\frac{30}{25} \cdot 100\% = 1{,}2 \cdot 100\% = 120\%.$
+Tỉ số phần trăm: $\dfrac{30}{25} \cdot 100\% = 1{,}2 \cdot 100\% = 120\%.$
 
 ---
 
 ### 3. Ba bài toán cơ bản về tỉ số phần trăm
 
-Ba bài toán này thực chất là phiên bản viết dưới dạng phần trăm của hai bài toán về phân số (Bài 27) với phân số có dạng $\frac{m}{100}$:
+Ba bài toán này thực chất là phiên bản viết dưới dạng phần trăm của hai bài toán về phân số (Bài 27) với phân số có dạng $\dfrac{m}{100}$:
 
 ```
                     BA BÀI TOÁN VỀ TỈ SỐ PHẦN TRĂM
@@ -151,22 +151,22 @@ Biết số a, tìm m% của a      Biết m% của số x bằng b      Tìm t�
 ```
 
 #### Bài toán 1: Tìm $m\%$ của một số $a$ cho trước
-- Muốn tìm $m\%$ của số $a,$ ta lấy $a$ **nhân** với $\frac{m}{100}$:
-$$\text{Giá trị} = a \cdot \frac{m}{100} = a \cdot 0{,}01 \cdot m.$$
+- Muốn tìm $m\%$ của số $a,$ ta lấy $a$ **nhân** với $\dfrac{m}{100}$:
+$$\text{Giá trị} = a \cdot \dfrac{m}{100} = a \cdot 0{,}01 \cdot m.$$
 - **Ví dụ:** Tìm $15\%$ của $240$:
-  $$240 \cdot \frac{15}{100} = 240 \cdot 0{,}15 = 36.$$
+  $$240 \cdot \dfrac{15}{100} = 240 \cdot 0{,}15 = 36.$$
 
 #### Bài toán 2: Tìm một số khi biết $m\%$ của nó bằng $b$
-- Muốn tìm một số khi biết $m\%$ của nó bằng $b,$ ta lấy $b$ **chia** cho $\frac{m}{100}$:
-$$x = b : \frac{m}{100} = b : (0{,}01 \cdot m).$$
+- Muốn tìm một số khi biết $m\%$ của nó bằng $b,$ ta lấy $b$ **chia** cho $\dfrac{m}{100}$:
+$$x = b : \dfrac{m}{100} = b : (0{,}01 \cdot m).$$
 - **Ví dụ:** Tìm số $x$ biết $25\%$ của $x$ bằng $45$:
-  $$x = 45 : \frac{25}{100} = 45 : 0{,}25 = 180.$$
+  $$x = 45 : \dfrac{25}{100} = 45 : 0{,}25 = 180.$$
 
 #### Bài toán 3: Tìm tỉ số phần trăm của hai số $a$ và $b$
 - Lấy $a$ chia cho $b,$ nhân với $100$ rồi thêm ký hiệu $\%$:
-$$\text{Tỉ số phần trăm} = \frac{a}{b} \cdot 100\%.$$
+$$\text{Tỉ số phần trăm} = \dfrac{a}{b} \cdot 100\%.$$
 - **Ví dụ:** Lớp có $18$ bạn nữ trên tổng số $40$ học sinh. Tỉ số phần trăm học sinh nữ là:
-  $$\frac{18}{40} \cdot 100\% = 45\%.$$
+  $$\dfrac{18}{40} \cdot 100\% = 45\%.$$
 
 ---
 
@@ -209,7 +209,7 @@ $$\text{Tỉ số phần trăm} = \frac{a}{b} \cdot 100\%.$$
 
 #### Phương pháp giải:
 - Bước 1: Đổi hai đại lượng về cùng đơn vị đo thích hợp.
-- Bước 2: Lập tỉ số $\frac{a}{b}$ và rút gọn tối giản.
+- Bước 2: Lập tỉ số $\dfrac{a}{b}$ và rút gọn tối giản.
 - Bước 3: Nhân với $100$ và ghi kèm ký hiệu $\%$ nếu bài yêu cầu tỉ số phần trăm.
 
 ---
@@ -221,18 +221,18 @@ b) Một hợp kim chứa $360\text{ g}$ niken trong tổng khối lượng $1{,
 **Lời giải:**
 a) Đổi $1{,}5\text{ giờ} = 1{,}5 \cdot 60 = 90\text{ phút}.$
 Tỉ số giữa $40\text{ phút}$ và $1{,}5\text{ giờ}$ là:
-$$\frac{40}{90} = \frac{4}{9}.$$
+$$\dfrac{40}{90} = \dfrac{4}{9}.$$
 
 b) Đổi $1{,}2\text{ kg} = 1\,200\text{ g}.$
 Tỉ số phần trăm của niken trong hợp kim là:
-$$\frac{360}{1\,200} \cdot 100\% = 0{,}3 \cdot 100\% = 30\%.$$
+$$\dfrac{360}{1\,200} \cdot 100\% = 0{,}3 \cdot 100\% = 30\%.$$
 
 ---
 
 ### Dạng 2: Tìm $m\%$ của một số cho trước (Bài toán 1)
 
 #### Phương pháp giải:
-- Lấy số đã cho nhân với $\frac{m}{100}$ (hoặc nhân với số thập phân $0{,}01 \cdot m$).
+- Lấy số đã cho nhân với $\dfrac{m}{100}$ (hoặc nhân với số thập phân $0{,}01 \cdot m$).
 
 ---
 
@@ -242,7 +242,7 @@ b) Một thùng dầu chứa $85\text{ lít}$ dầu ăn. Người ta đã lấy 
 
 **Lời giải:**
 a) $28\%$ của $150$ là:
-$$150 \cdot \frac{28}{100} = 150 \cdot 0{,}28 = 42.$$
+$$150 \cdot \dfrac{28}{100} = 150 \cdot 0{,}28 = 42.$$
 
 b)
 - Cách 1:
@@ -261,7 +261,7 @@ b)
 ### Dạng 3: Tìm một số khi biết giá trị phần trăm của nó (Bài toán 2)
 
 #### Phương pháp giải:
-- Lấy giá trị đã biết chia cho $\frac{m}{100}$ (hoặc chia cho $0{,}01 \cdot m$).
+- Lấy giá trị đã biết chia cho $\dfrac{m}{100}$ (hoặc chia cho $0{,}01 \cdot m$).
 
 ---
 
@@ -271,7 +271,7 @@ b) Một cửa hàng bán một chiếc lò vi sóng thu được số tiền l�
 
 **Lời giải:**
 a) Số cần tìm là:
-$$84 : \frac{35}{100} = 84 : 0{,}35 = 240.$$
+$$84 : \dfrac{35}{100} = 84 : 0{,}35 = 240.$$
 
 b) Giá vốn của chiếc lò vi sóng là:
 $$360\,000 : 15\% = 360\,000 : 0{,}15 = 2\,400\,000\text{ đồng}.$$
@@ -282,7 +282,7 @@ $$360\,000 : 15\% = 360\,000 : 0{,}15 = 2\,400\,000\text{ đồng}.$$
 
 #### Phương pháp giải:
 - **Tỉ số phần trăm tăng trưởng:**
-  $$\% \text{ tăng trưởng} = \frac{\text{Giá trị tăng thêm}}{\text{Giá trị gốc ban đầu}} \cdot 100\%.$$
+  $$\% \text{ tăng trưởng} = \dfrac{\text{Giá trị tăng thêm}}{\text{Giá trị gốc ban đầu}} \cdot 100\%.$$
 - **Lãi suất:** Tiền vốn $\cdot$ Lãi suất $\%$ = Tiền lãi sau một kỳ hạn.
 
 ---
@@ -383,17 +383,17 @@ Nước muối sinh lý dùng để súc miệng có nồng độ muối là $0{
 
 **Bài 1:**
 a)
-- Tỉ số: $\frac{18}{45} = \frac{2}{5}.$
-- Tỉ số phần trăm: $\frac{2}{5} \cdot 100\% = 40\%.$
+- Tỉ số: $\dfrac{18}{45} = \dfrac{2}{5}.$
+- Tỉ số phần trăm: $\dfrac{2}{5} \cdot 100\% = 40\%.$
 b) Đổi $1{,}25\text{ giờ} = 1{,}25 \cdot 60 = 75\text{ phút}.$
-- Tỉ số: $\frac{25}{75} = \frac{1}{3}.$
-- Tỉ số phần trăm: $\frac{1}{3} \cdot 100\% \approx 33{,}33\%.$
+- Tỉ số: $\dfrac{25}{75} = \dfrac{1}{3}.$
+- Tỉ số phần trăm: $\dfrac{1}{3} \cdot 100\% \approx 33{,}33\%.$
 c) Đổi $2\text{ kg} = 2\,000\text{ g}.$
-- Tỉ số: $\frac{450}{2\,000} = \frac{9}{40}.$
-- Tỉ số phần trăm: $\frac{9}{40} \cdot 100\% = 22{,}5\%.$
+- Tỉ số: $\dfrac{450}{2\,000} = \dfrac{9}{40}.$
+- Tỉ số phần trăm: $\dfrac{9}{40} \cdot 100\% = 22{,}5\%.$
 d) Đổi $3{,}5\text{ dm}^2 = 350\text{ cm}^2.$
-- Tỉ số: $\frac{350}{500} = \frac{7}{10}.$
-- Tỉ số phần trăm: $\frac{7}{10} \cdot 100\% = 70\%.$
+- Tỉ số: $\dfrac{350}{500} = \dfrac{7}{10}.$
+- Tỉ số phần trăm: $\dfrac{7}{10} \cdot 100\% = 70\%.$
 
 **Bài 2:**
 a) $250 \cdot 18\% = 250 \cdot 0{,}18 = 45.$
@@ -409,11 +409,11 @@ d) $x = 90 : 150\% = 90 : 1{,}5 = 60.$
 
 **Bài 4:**
 a) Tỉ số phần trăm học sinh mức Tốt:
-$$\frac{18}{45} \cdot 100\% = 40\%.$$
+$$\dfrac{18}{45} \cdot 100\% = 40\%.$$
 b) Số học sinh mức Đạt là:
 $$45 - (18 + 15) = 45 - 33 = 12\text{ học sinh}.$$
 Tỉ số phần trăm học sinh mức Đạt:
-$$\frac{12}{45} \cdot 100\% = 26{,}666\dots\% \approx 26{,}7\%.$$
+$$\dfrac{12}{45} \cdot 100\% = 26{,}666\dots\% \approx 26{,}7\%.$$
 
 **Bài 5:**
 a) Tiền lãi sau một năm cô Hà nhận được là:
@@ -438,21 +438,21 @@ $$5\,100\,000 \cdot (1 - 0{,}05) = 5\,100\,000 \cdot 0{,}95 = 4\,845\,000\text{ 
 b) Số tiền được giảm tổng cộng:
 $$6\,000\,000 - 4\,845\,000 = 1\,155\,000\text{ đồng}.$$
 Tỉ số phần trăm giảm giá thực tế so với giá gốc:
-$$\frac{1\,155\,000}{6\,000\,000} \cdot 100\% = 19{,}25\%.$$
+$$\dfrac{1\,155\,000}{6\,000\,000} \cdot 100\% = 19{,}25\%.$$
 *(Lưu ý: $19{,}25\% < 20\%$).*
 
 **Bài 8:**
 Sản lượng lúa tăng thêm trong năm 2026:
 $$5\,520 - 4\,800 = 720\text{ tấn}.$$
 Tỉ số phần trăm tăng thêm so với năm 2025:
-$$\frac{720}{4\,800} \cdot 100\% = 15\%.$$
+$$\dfrac{720}{4\,800} \cdot 100\% = 15\%.$$
 
 **Bài 9:**
 - Ta có: $\text{Giá bán} = \text{Giá vốn} + \text{Tiền lãi}.$
 - Vì tiền lãi bằng $25\%$ giá bán nên:
   $$\text{Giá vốn} = \text{Giá bán} - 25\% \cdot \text{Giá bán} = 75\% \cdot \text{Giá bán}.$$
 - Suy ra giá bán của đôi giày là:
-  $$\text{Giá bán} = 400\,000 : 75\% = 400\,000 : \frac{3}{4} = 400\,000 \cdot \frac{4}{3} \approx 533\,333\text{ đồng}.$$
+  $$\text{Giá bán} = 400\,000 : 75\% = 400\,000 : \dfrac{3}{4} = 400\,000 \cdot \dfrac{4}{3} \approx 533\,333\text{ đồng}.$$
 
 **Bài 10:**
 - Gọi khối lượng muối cần hòa tan là $m$ (gam).
@@ -495,18 +495,18 @@ Vậy giá tivi ở tháng 12 **giảm $4\%$** so với giá ban đầu ở thá
 
 **Bài toán 2:**
 Ba lớp 6A, 6B và 6C cùng tham gia trồng cây xanh bảo vệ môi trường, tổng cộng trồng được $216$ cây. Biết rằng:
-- $\frac{2}{3}$ số cây của lớp 6A bằng $50\%$ số cây của lớp 6B và bằng $40\%$ số cây của lớp 6C.
+- $\dfrac{2}{3}$ số cây của lớp 6A bằng $50\%$ số cây của lớp 6B và bằng $40\%$ số cây của lớp 6C.
 Hỏi mỗi lớp đã trồng được bao nhiêu cây xanh?
 
 **Lời giải chi tiết:**
 - Đổi các tỉ số về phân số tối giản:
-  $$50\% = \frac{1}{2};\quad 40\% = \frac{2}{5}.$$
+  $$50\% = \dfrac{1}{2};\quad 40\% = \dfrac{2}{5}.$$
 - Theo đề bài:
-  $$\frac{2}{3} \cdot A = \frac{1}{2} \cdot B = \frac{2}{5} \cdot C.$$
+  $$\dfrac{2}{3} \cdot A = \dfrac{1}{2} \cdot B = \dfrac{2}{5} \cdot C.$$
 - Quy đồng tử số của ba phân số về tử số chung là $2$:
-  $$\frac{2}{3} \cdot A = \frac{2}{4} \cdot B = \frac{2}{5} \cdot C.$$
+  $$\dfrac{2}{3} \cdot A = \dfrac{2}{4} \cdot B = \dfrac{2}{5} \cdot C.$$
 - Chia cả ba tích cho $2,$ ta được tỉ lệ:
-  $$\frac{A}{3} = \frac{B}{4} = \frac{C}{5}.$$
+  $$\dfrac{A}{3} = \dfrac{B}{4} = \dfrac{C}{5}.$$
 - Coi số cây của lớp 6A là $3$ phần, lớp 6B là $4$ phần và lớp 6C là $5$ phần.
   Tổng số phần bằng nhau là:
   $$3 + 4 + 5 = 12\text{ phần}.$$
@@ -517,7 +517,7 @@ Hỏi mỗi lớp đã trồng được bao nhiêu cây xanh?
   - Lớp 6B: $18 \cdot 4 = 72\text{ cây}.$
   - Lớp 6C: $18 \cdot 5 = 90\text{ cây}.$
 Thử lại: $54 + 72 + 90 = 216$ (Đúng).
-$\frac{2}{3} \cdot 54 = 36;\; \frac{1}{2} \cdot 72 = 36;\; \frac{2}{5} \cdot 90 = 36$ (Đúng).
+$\dfrac{2}{3} \cdot 54 = 36;\; \dfrac{1}{2} \cdot 72 = 36;\; \dfrac{2}{5} \cdot 90 = 36$ (Đúng).
 Vậy: Lớp 6A trồng $54$ cây, lớp 6B trồng $72$ cây, lớp 6C trồng $90$ cây.
 
 ---
@@ -547,9 +547,9 @@ b) **Thêm muối tinh khiết:**
 - Trong dung dịch mới nồng độ $10\%,$ lượng nước chiếm:
   $$100\% - 10\% = 90\% \text{ khối lượng dung dịch mới}.$$
 - Tổng khối lượng dung dịch mới khi đó là:
-  $$m_{\text{dd mới}} = 380 : 90\% = 380 : 0{,}9 = \frac{3\,800}{9} \approx 422{,}22\text{ g}.$$
+  $$m_{\text{dd mới}} = 380 : 90\% = 380 : 0{,}9 = \dfrac{3\,800}{9} \approx 422{,}22\text{ g}.$$
 - Khối lượng muối tinh khiết cần hòa tan thêm là:
-  $$\frac{3\,800}{9} - 400 = \frac{200}{9} \approx 22{,}22\text{ g}.$$
+  $$\dfrac{3\,800}{9} - 400 = \dfrac{200}{9} \approx 22{,}22\text{ g}.$$
 
 ---
 
@@ -559,21 +559,21 @@ b) **Thêm muối tinh khiết:**
 Hiện nay, tuổi của chị Mai bằng $140\%$ tuổi của em Hoa. Biết rằng $6$ năm trước, tuổi của chị Mai gấp đôi tuổi của em Hoa. Hỏi hiện nay mỗi người bao nhiêu tuổi?
 
 **Lời giải chi tiết:**
-- Đổi $140\% = \frac{140}{100} = \frac{7}{5}.$
-  Hiện nay, tuổi chị Mai bằng $\frac{7}{5}$ tuổi em Hoa.
+- Đổi $140\% = \dfrac{140}{100} = \dfrac{7}{5}.$
+  Hiện nay, tuổi chị Mai bằng $\dfrac{7}{5}$ tuổi em Hoa.
   Suy ra hiệu số tuổi của hai chị em bằng $7 - 5 = 2$ phần, do đó:
-  $$\text{Tuổi Hoa hiện nay} = \frac{5}{2} \text{ hiệu số tuổi của hai chị em}.$$
+  $$\text{Tuổi Hoa hiện nay} = \dfrac{5}{2} \text{ hiệu số tuổi của hai chị em}.$$
 - Sáu năm trước, tuổi chị Mai gấp đôi tuổi em Hoa:
-  Tỉ số giữa tuổi chị Mai và tuổi Hoa là $\frac{2}{1}.$
+  Tỉ số giữa tuổi chị Mai và tuổi Hoa là $\dfrac{2}{1}.$
   Hiệu số tuổi bằng $2 - 1 = 1$ phần, do đó:
-  $$\text{Tuổi Hoa 6 năm trước} = 1 \text{ lần hiệu số tuổi của hai chị em} = \frac{2}{2} \text{ hiệu số tuổi}.$$
+  $$\text{Tuổi Hoa 6 năm trước} = 1 \text{ lần hiệu số tuổi của hai chị em} = \dfrac{2}{2} \text{ hiệu số tuổi}.$$
 - Lưu ý rằng **hiệu số tuổi giữa hai người luôn không đổi theo thời gian**.
   Chênh lệch giữa tuổi Hoa hiện nay và tuổi Hoa $6$ năm trước tương ứng với:
-  $$\frac{5}{2} - 1 = \frac{3}{2} \text{ hiệu số tuổi}.$$
+  $$\dfrac{5}{2} - 1 = \dfrac{3}{2} \text{ hiệu số tuổi}.$$
 - Vì khoảng cách giữa hai thời điểm là $6$ năm nên:
-  $$\frac{3}{2} \cdot \text{Hiệu số tuổi} = 6 \implies \text{Hiệu số tuổi} = 6 : \frac{3}{2} = 4\text{ tuổi}.$$
+  $$\dfrac{3}{2} \cdot \text{Hiệu số tuổi} = 6 \implies \text{Hiệu số tuổi} = 6 : \dfrac{3}{2} = 4\text{ tuổi}.$$
 - Tuổi của em Hoa hiện nay là:
-  $$\text{Tuổi Hoa} = 4 \cdot \frac{5}{2} = 10\text{ tuổi}.$$
+  $$\text{Tuổi Hoa} = 4 \cdot \dfrac{5}{2} = 10\text{ tuổi}.$$
 - Tuổi của chị Mai hiện nay là:
   $$\text{Tuổi Mai} = 10 + 4 = 14\text{ tuổi}.$$
 Thử lại:
@@ -613,10 +613,10 @@ b)
 type: choice
 question: 'Tỉ số của hai đại lượng $30\text{ cm}$ và $2\text{ m}$ là:'
 options:
-  - '$\frac{3}{2}$'
-  - '$\frac{3}{20}$'
-  - '$\frac{15}{1}$'
-  - '$\frac{1}{6}$'
+  - '$\dfrac{3}{2}$'
+  - '$\dfrac{3}{20}$'
+  - '$\dfrac{15}{1}$'
+  - '$\dfrac{1}{6}$'
 answer: 2
 explanation: 'Đổi 2 m = 200 cm. Tỉ số = 30 / 200 = 3/20.'
 ```
@@ -738,10 +738,10 @@ explanation: '200 * 3,5% = 200 * 0,035 = 7 gam.'
 **Phần I: Trắc nghiệm (3.0 điểm — Mỗi câu 0.75 điểm)**
 
 **Câu 1:** Tỉ số của $45\text{ phút}$ và $1{,}5\text{ giờ}$ là:
-A. $\frac{1}{2}$
-B. $\frac{3}{10}$
-C. $\frac{2}{3}$
-D. $\frac{30}{1}$
+A. $\dfrac{1}{2}$
+B. $\dfrac{3}{10}$
+C. $\dfrac{2}{3}$
+D. $\dfrac{30}{1}$
 
 **Câu 2:** Tỉ số phần trăm của $18$ và $75$ là:
 A. $24\%$
@@ -786,15 +786,15 @@ Giá một lít xăng trong tháng 1 tăng $10\%$ so với tháng 12 năm trư�
 ### Đáp án và biểu điểm chi tiết
 
 **Phần I: Trắc nghiệm (3.0 điểm)**
-- Câu 1: **A** ($\frac{45}{90} = \frac{1}{2}$). *(0.75 điểm)*
-- Câu 2: **A** ($\frac{18}{75} \cdot 100\% = 24\%$). *(0.75 điểm)*
+- Câu 1: **A** ($\dfrac{45}{90} = \dfrac{1}{2}$). *(0.75 điểm)*
+- Câu 2: **A** ($\dfrac{18}{75} \cdot 100\% = 24\%$). *(0.75 điểm)*
 - Câu 3: **A** ($120 \cdot 0{,}35 = 42$). *(0.75 điểm)*
 - Câu 4: **B** ($48 : 0{,}2 = 240$). *(0.75 điểm)*
 
 **Phần II: Tự luận (7.0 điểm)**
 - **Bài 1 (2.0 điểm):**
   - a) Tỉ số phần trăm gà đẻ trứng:
-       $$\frac{780}{1\,200} \cdot 100\% = 65\%.\quad (1.0\text{ điểm})$$
+       $$\dfrac{780}{1\,200} \cdot 100\% = 65\%.\quad (1.0\text{ điểm})$$
   - b) Tỉ số phần trăm gà thịt:
        $$100\% - 65\% = 35\%.\quad (1.0\text{ điểm})$$
 - **Bài 2 (2.0 điểm):**

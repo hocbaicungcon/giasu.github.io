@@ -101,7 +101,7 @@ Trong toàn bộ bài học, ta quy ước:
 > [!NOTE]
 > **Công thức chu vi và diện tích:**
 > - **Hình thoi cạnh $a$, hai đường chéo $m$ và $n$:**
->   $$C = 4a;\quad S = \frac{1}{2} \cdot m \cdot n \quad \text{(nửa tích hai đường chéo)}.$$
+>   $$C = 4a;\quad S = \dfrac{1}{2} \cdot m \cdot n \quad \text{(nửa tích hai đường chéo)}.$$
 > - **Hình bình hành có hai cạnh liên tiếp $a, b$ và chiều cao $h$ ứng với đáy $a$:**
 >   $$C = 2 \cdot (a + b);\quad S = a \cdot h \quad \text{(cạnh đáy} \times \text{chiều cao)}.$$
 
@@ -114,7 +114,7 @@ Trong toàn bộ bài học, ta quy ước:
 
 **Lời giải:**
 1. Chu vi hình thoi: $C = 4 \cdot 10 = 40\text{ (cm)}.$
-   Diện tích hình thoi: $S = \frac{1}{2} \cdot 12 \cdot 16 = 96\text{ (cm}^2).$
+   Diện tích hình thoi: $S = \dfrac{1}{2} \cdot 12 \cdot 16 = 96\text{ (cm}^2).$
 2. Chu vi hình bình hành: $C = 2 \cdot (15 + 9) = 2 \cdot 24 = 48\text{ (cm)}.$
    Diện tích hình bình hành: $S = 15 \cdot 8 = 120\text{ (cm}^2).$
 
@@ -127,7 +127,7 @@ Trong toàn bộ bài học, ta quy ước:
 > Hình thang có hai đáy là $a$ và $b$, hai cạnh bên là $c$ và $d$, chiều cao là $h$:
 > - **Chu vi:** $C = a + b + c + d$ *(với hình thang cân có hai cạnh bên bằng nhau thì $C = a + b + 2c$)*.
 > - **Diện tích:**
->   $$S = \frac{(a + b) \cdot h}{2} \quad \text{(nửa tổng hai đáy nhân với chiều cao)}.$$
+>   $$S = \dfrac{(a + b) \cdot h}{2} \quad \text{(nửa tổng hai đáy nhân với chiều cao)}.$$
 
 **Ví dụ 3.** Một thửa ruộng hình thang cân có đáy lớn $18\text{ m}$, đáy nhỏ $12\text{ m}$, hai cạnh bên đều dài $5\text{ m}$ và khoảng cách giữa hai đáy (chiều cao) là $4\text{ m}$. Tính chu vi và diện tích thửa ruộng đó.
 
@@ -135,7 +135,7 @@ Trong toàn bộ bài học, ta quy ước:
 - Chu vi thửa ruộng là:
   $$C = 18 + 12 + 5 + 5 = 40\text{ (m)}.$$
 - Diện tích thửa ruộng là:
-  $$S = \frac{(18 + 12) \cdot 4}{2} = \frac{30 \cdot 4}{2} = 60\text{ (m}^2).$$
+  $$S = \dfrac{(18 + 12) \cdot 4}{2} = \dfrac{30 \cdot 4}{2} = 60\text{ (m}^2).$$
 
 ---
 
@@ -145,9 +145,9 @@ Trong toàn bộ bài học, ta quy ước:
 | :--- | :--- | :--- | :--- |
 | **Hình vuông** | Cạnh $a$ | $C = 4a$ | $S = a^2$ |
 | **Hình chữ nhật** | Chiều dài $a$, chiều rộng $b$ | $C = 2(a + b)$ | $S = a \cdot b$ |
-| **Hình thoi** | Cạnh $a$, hai đường chéo $m, n$ | $C = 4a$ | $S = \frac{1}{2} \cdot m \cdot n$ |
+| **Hình thoi** | Cạnh $a$, hai đường chéo $m, n$ | $C = 4a$ | $S = \dfrac{1}{2} \cdot m \cdot n$ |
 | **Hình bình hành** | Cạnh đáy $a$, cạnh bên $b$, chiều cao $h$ | $C = 2(a + b)$ | $S = a \cdot h$ |
-| **Hình thang** | Hai đáy $a, b$, hai cạnh bên $c, d$, chiều cao $h$ | $C = a + b + c + d$ | $S = \frac{(a + b) \cdot h}{2}$ |
+| **Hình thang** | Hai đáy $a, b$, hai cạnh bên $c, d$, chiều cao $h$ | $C = a + b + c + d$ | $S = \dfrac{(a + b) \cdot h}{2}$ |
 
 ---
 
@@ -187,11 +187,11 @@ Trong toàn bộ bài học, ta quy ước:
 
 2. Đổi $180\text{ mm} = 18\text{ cm}$.
    Diện tích miếng bìa hình thoi là:
-   $$S = \frac{1}{2} \cdot 25 \cdot 18 = 25 \cdot 9 = 225\text{ (cm}^2).$$
+   $$S = \dfrac{1}{2} \cdot 25 \cdot 18 = 25 \cdot 9 = 225\text{ (cm}^2).$$
 
 3. Đổi $1.4\text{ m} = 140\text{ cm}$.
    Diện tích hình thang là:
-   $$S = \frac{(140 + 80) \cdot 60}{2} = \frac{220 \cdot 60}{2} = 110 \cdot 60 = 6600\text{ (cm}^2).$$
+   $$S = \dfrac{(140 + 80) \cdot 60}{2} = \dfrac{220 \cdot 60}{2} = 110 \cdot 60 = 6600\text{ (cm}^2).$$
 
 ---
 
@@ -202,7 +202,7 @@ Trong toàn bộ bài học, ta quy ước:
 - Nếu rào vườn có chừa lối đi (cửa ra vào rộng $d$ mét):
   $$\text{Độ dài hàng rào} = C - d.$$
 - Nếu trồng cây hoặc cắm cọc cách đều nhau khoảng cách $k$ quanh một đường khép kín:
-  $$\text{Số cây (số cọc)} = \frac{C}{k}.$$
+  $$\text{Số cây (số cọc)} = \dfrac{C}{k}.$$
 
 #### Bài toán 2.1 (Rào vườn và trồng cây quanh lối đi)
 Bác Hải có một khu đất hình chữ nhật dài $24\text{ m}$, rộng $16\text{ m}$.
@@ -268,8 +268,8 @@ Phòng khách nhà bạn Mai có dạng hình chữ nhật với chiều dài $8
 - Từ $C = 2(a + b)$ (hình chữ nhật, hình bình hành) $\implies a + b = C : 2 \implies a = (C : 2) - b.$
 - Từ $S = a \cdot b \implies a = S : b.$
 - Từ $S = a \cdot h \implies h = S : a$ hoặc $a = S : h.$
-- Từ $S = \frac{1}{2} m \cdot n \implies n = \frac{2S}{m}.$
-- Từ $S = \frac{(a + b) \cdot h}{2} \implies h = \frac{2S}{a + b}$ hoặc $a + b = \frac{2S}{h}.$
+- Từ $S = \dfrac{1}{2} m \cdot n \implies n = \dfrac{2S}{m}.$
+- Từ $S = \dfrac{(a + b) \cdot h}{2} \implies h = \dfrac{2S}{a + b}$ hoặc $a + b = \dfrac{2S}{h}.$
 
 #### Bài toán 4.1
 1. Một mảnh đất hình chữ nhật có diện tích $96\text{ m}^2$ và chiều rộng $8\text{ m}$. Tính chu vi của mảnh đất.
@@ -283,10 +283,10 @@ Phòng khách nhà bạn Mai có dạng hình chữ nhật với chiều dài $8
    $$C = 2 \cdot (12 + 8) = 2 \cdot 20 = 40\text{ (m)}.$$
 
 2. Độ dài đường chéo còn lại của hình thoi là:
-   $$n = \frac{2 \cdot S}{m} = \frac{2 \cdot 70}{14} = \frac{140}{14} = 10\text{ (cm)}.$$
+   $$n = \dfrac{2 \cdot S}{m} = \dfrac{2 \cdot 70}{14} = \dfrac{140}{14} = 10\text{ (cm)}.$$
 
 3. Tổng độ dài hai đáy của hình thang là:
-   $$a + b = \frac{2 \cdot S}{h} = \frac{2 \cdot 120}{10} = 24\text{ (cm)}.$$
+   $$a + b = \dfrac{2 \cdot S}{h} = \dfrac{2 \cdot 120}{10} = 24\text{ (cm)}.$$
    Vì đáy lớn gấp đôi đáy nhỏ nên ta có bài toán tìm hai số khi biết tổng và tỉ:
    - Đáy nhỏ là $1$ phần, đáy lớn là $2$ phần. Tổng số phần bằng nhau: $1 + 2 = 3$ phần.
    - Độ dài đáy nhỏ là:
@@ -338,13 +338,13 @@ Phòng khách nhà bạn Mai có dạng hình chữ nhật với chiều dài $8
 
 **Bài 2.**
 1. Diện tích hình thoi:
-   $$S = \frac{1}{2} \cdot 14 \cdot 20 = 140\text{ (cm}^2).$$
+   $$S = \dfrac{1}{2} \cdot 14 \cdot 20 = 140\text{ (cm}^2).$$
 2. Hình bình hành:
    $$C = 2 \cdot (12 + 7) = 2 \cdot 19 = 38\text{ (cm)};\quad S = 12 \cdot 5 = 60\text{ (cm}^2).$$
 
 **Bài 3.**
 Diện tích hình thang là:
-$$S = \frac{(15 + 9) \cdot 6}{2} = \frac{24 \cdot 6}{2} = 72\text{ (cm}^2).$$
+$$S = \dfrac{(15 + 9) \cdot 6}{2} = \dfrac{24 \cdot 6}{2} = 72\text{ (cm}^2).$$
 
 **Bài 4.**
 Đổi $120\text{ cm} = 1.2\text{ m}$.
@@ -387,7 +387,7 @@ $$S = \frac{(15 + 9) \cdot 6}{2} = \frac{24 \cdot 6}{2} = 72\text{ (cm}^2).$$
 - Diện tích cả khu vườn:
   $$S_{\text{vườn}} = 12 \cdot 8 = 96\text{ (m}^2).$$
 - Diện tích bồn hoa hình thoi:
-  $$S_{\text{hoa}} = \frac{1}{2} \cdot 6 \cdot 4 = 12\text{ (m}^2).$$
+  $$S_{\text{hoa}} = \dfrac{1}{2} \cdot 6 \cdot 4 = 12\text{ (m}^2).$$
 - Diện tích phần đất trồng cỏ:
   $$S_{\text{cỏ}} = 96 - 12 = 84\text{ (m}^2).$$
 
@@ -506,11 +506,11 @@ Bác Hùng có một cuộn dây thép gai dài $36\text{ m}$ dùng để rào m
    Gọi chiều dài và chiều rộng của hình chữ nhật là $a$ và $b$ ($a, b > 0$).
    Nửa chu vi không đổi: $a + b = p$.
    Ta có đẳng thức đại số:
-   $$a \cdot b = \left(\frac{a + b}{2}\right)^2 - \left(\frac{a - b}{2}\right)^2 = \left(\frac{p}{2}\right)^2 - \left(\frac{a - b}{2}\right)^2.$$
-   Vì $\left(\frac{a - b}{2}\right)^2 \ge 0$ với mọi $a, b$ nên:
-   $$a \cdot b \le \left(\frac{p}{2}\right)^2.$$
+   $$a \cdot b = \left(\dfrac{a + b}{2}\right)^2 - \left(\dfrac{a - b}{2}\right)^2 = \left(\dfrac{p}{2}\right)^2 - \left(\dfrac{a - b}{2}\right)^2.$$
+   Vì $\left(\dfrac{a - b}{2}\right)^2 \ge 0$ với mọi $a, b$ nên:
+   $$a \cdot b \le \left(\dfrac{p}{2}\right)^2.$$
    Dấu "$=$" xảy ra khi và chỉ khi $a - b = 0 \iff a = b$.
-   Khi đó hình chữ nhật là hình vuông và diện tích đạt giá trị lớn nhất là $\left(\frac{p}{2}\right)^2$. $\blacksquare$
+   Khi đó hình chữ nhật là hình vuông và diện tích đạt giá trị lớn nhất là $\left(\dfrac{p}{2}\right)^2$. $\blacksquare$
 
 ---
 

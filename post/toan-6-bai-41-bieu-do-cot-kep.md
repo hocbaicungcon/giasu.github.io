@@ -297,7 +297,7 @@ Khi so sánh hai đối tượng (ví dụ: Sản phẩm A và Sản phẩm B), 
 
 > [!IMPORTANT]
 > **Công thức tính tốc độ tăng trưởng phần trăm:**
-> $$\text{Tốc độ tăng trưởng} = \frac{\text{Giá trị kỳ sau} - \text{Giá trị kỳ trước}}{\text{Giá trị kỳ trước}} \times 100\%.$$
+> $$\text{Tốc độ tăng trưởng} = \dfrac{\text{Giá trị kỳ sau} - \text{Giá trị kỳ trước}}{\text{Giá trị kỳ trước}} \times 100\%.$$
 
 #### Bài toán:
 Biểu đồ cột kép ghi lại doanh số bán hàng của hai dòng máy tính X và Y trong hai năm 2024 và 2025:
@@ -316,9 +316,9 @@ Về số lượng tuyệt đối, dòng máy X tăng nhiều hơn dòng máy Y 
 
 b)
 - Tốc độ tăng trưởng của dòng X:
-  $$\frac{250 - 200}{200} \times 100\% = \frac{50}{200} \times 100\% = 25\%.$$
+  $$\dfrac{250 - 200}{200} \times 100\% = \dfrac{50}{200} \times 100\% = 25\%.$$
 - Tốc độ tăng trưởng của dòng Y:
-  $$\frac{120 - 80}{80} \times 100\% = \frac{40}{80} \times 100\% = 50\%.$$
+  $$\dfrac{120 - 80}{80} \times 100\% = \dfrac{40}{80} \times 100\% = 50\%.$$
 Mặc dù dòng X tăng nhiều hơn về số lượng máy, nhưng dòng máy Y có tốc độ tăng trưởng lên tới $50\%$ (gấp đôi tốc độ $25\%$ của dòng X). Điều này cho thấy dòng máy Y đang có sự bứt phá thị trường mạnh mẽ hơn!
 
 ---
@@ -366,12 +366,12 @@ a)
   Tổng số giải đạt được:
   $$24 + 16 = 40\quad \text{(giải)}.$$
   Tỉ lệ học sinh Nữ đạt giải là:
-  $$\frac{16}{40} \times 100\% = 40\%.$$
+  $$\dfrac{16}{40} \times 100\% = 40\%.$$
 - **Tại trường Bình Minh:**
   Tổng số giải đạt được:
   $$18 + 12 = 30\quad \text{(giải)}.$$
   Tỉ lệ học sinh Nữ đạt giải là:
-  $$\frac{12}{30} \times 100\% = 40\%.$$
+  $$\dfrac{12}{30} \times 100\% = 40\%.$$
 
 b) **Nhận xét sâu sắc:** Mặc dù trường An Bình có số lượng giải tuyệt đối nhiều hơn trường Bình Minh ($40$ giải so với $30$ giải), nhưng **cơ cấu tỉ lệ theo giới tính của hai trường là hoàn toàn giống nhau**: ở cả hai trường, học sinh Nam đều chiếm $60\%$ và học sinh Nữ đều chiếm đúng $40\%$ tổng số giải!
 
@@ -432,9 +432,9 @@ a)
 
 b)
 - Tỉ lệ trung bình của Mẫu A:
-  $$\overline{X}_A = \frac{4{,}5 + 5{,}0 + 3{,}8 + 4{,}2}{4} = \frac{17{,}5}{4} = 4{,}375\%.$$
+  $$\overline{X}_A = \dfrac{4{,}5 + 5{,}0 + 3{,}8 + 4{,}2}{4} = \dfrac{17{,}5}{4} = 4{,}375\%.$$
 - Tỉ lệ trung bình của Mẫu B:
-  $$\overline{X}_B = \frac{6{,}2 + 7{,}1 + 5{,}5 + 6{,}8}{4} = \frac{25{,}6}{4} = 6{,}4\%.$$
+  $$\overline{X}_B = \dfrac{6{,}2 + 7{,}1 + 5{,}5 + 6{,}8}{4} = \dfrac{25{,}6}{4} = 6{,}4\%.$$
 Vì Mẫu B vượt trội hơn ở mọi nhóm khách hàng và có tỉ lệ chuyển đổi trung bình đạt $6{,}4\%$ (cao hơn gần $1{,}5$ lần so với Mẫu A), công ty **chắc chắn nên chọn Mẫu giao diện B**.
 
 ---
@@ -630,7 +630,7 @@ b) Tính tổng số công nhân của Phân xưởng 2.
 - Câu 1: **B** (Đặt dính sát nhau và tô hai màu). *(0,75 điểm)*
 - Câu 2: **C** ($3 \times 2 = 6$ cột). *(0,75 điểm)*
 - Câu 3: **B** (Xuất siêu $10$ tỉ đồng). *(0,75 điểm)*
-- Câu 4: **A** ($\frac{24}{40} \times 100\% = 60\%$). *(0,75 điểm)*
+- Câu 4: **A** ($\dfrac{24}{40} \times 100\% = 60\%$). *(0,75 điểm)*
 
 #### Phần 2: Tự luận (7,0 điểm)
 

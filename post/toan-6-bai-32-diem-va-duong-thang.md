@@ -268,13 +268,13 @@ c) Hai đường thẳng $AC$ và $BD$ **cắt nhau** tại điểm chung duy nh
   - Mỗi điểm nối với $(n - 1)$ điểm còn lại được $(n - 1)$ đường thẳng.
   - Với $n$ điểm, ta vẽ được $n(n - 1)$ đường thẳng.
   - Nhưng mỗi đường thẳng $AB$ và $BA$ bị tính lặp $2$ lần, nên số đường thẳng phân biệt là:
-    $$S = \frac{n(n - 1)}{2}.$$
+    $$S = \dfrac{n(n - 1)}{2}.$$
 - **Trường hợp 2 (Có đúng $k$ điểm thẳng hàng, $k \ge 3$):**
-  - Nếu $k$ điểm đó không thẳng hàng, chúng tạo ra $\frac{k(k - 1)}{2}$ đường thẳng.
+  - Nếu $k$ điểm đó không thẳng hàng, chúng tạo ra $\dfrac{k(k - 1)}{2}$ đường thẳng.
   - Khi chúng thẳng hàng, tất cả gộp lại chỉ còn đúng $1$ đường thẳng duy nhất.
-  - Số đường thẳng giảm đi là $\frac{k(k - 1)}{2} - 1.$
+  - Số đường thẳng giảm đi là $\dfrac{k(k - 1)}{2} - 1.$
   - Công thức tính:
-    $$S = \frac{n(n - 1)}{2} - \frac{k(k - 1)}{2} + 1.$$
+    $$S = \dfrac{n(n - 1)}{2} - \dfrac{k(k - 1)}{2} + 1.$$
 
 ---
 
@@ -285,14 +285,14 @@ b) Cho $10$ điểm phân biệt, trong đó có đúng $4$ điểm thẳng hàn
 **Lời giải:**
 a)
 - Áp dụng công thức với $n = 5$:
-  $$S = \frac{5 \cdot (5 - 1)}{2} = \frac{5 \cdot 4}{2} = 10\text{ đường thẳng}.$$
+  $$S = \dfrac{5 \cdot (5 - 1)}{2} = \dfrac{5 \cdot 4}{2} = 10\text{ đường thẳng}.$$
 - Tên $10$ đường thẳng:
   $$AB, AC, AD, AE, BC, BD, BE, CD, CE, DE.$$
 
 b)
 - Nếu trong $10$ điểm không có $3$ điểm nào thẳng hàng, số đường thẳng vẽ được là:
-  $$\frac{10 \cdot 9}{2} = 45\text{ đường thẳng}.$$
-- Riêng $4$ điểm thẳng hàng chỉ tạo ra $1$ đường thẳng duy nhất, thay vì $\frac{4 \cdot 3}{2} = 6$ đường thẳng.
+  $$\dfrac{10 \cdot 9}{2} = 45\text{ đường thẳng}.$$
+- Riêng $4$ điểm thẳng hàng chỉ tạo ra $1$ đường thẳng duy nhất, thay vì $\dfrac{4 \cdot 3}{2} = 6$ đường thẳng.
 - Số đường thẳng thực tế vẽ được là:
   $$S = 45 - 6 + 1 = 40\text{ đường thẳng}.$$
 
@@ -304,7 +304,7 @@ b)
 - Cho $n$ đường thẳng đôi một cắt nhau và không có ba đường thẳng nào cùng đi qua một điểm (không có $3$ đường đồng quy).
 - Mỗi đường thẳng cắt $(n - 1)$ đường thẳng còn lại tại $(n - 1)$ giao điểm.
 - Với $n$ đường thẳng, số giao điểm là:
-  $$G = \frac{n(n - 1)}{2}.$$
+  $$G = \dfrac{n(n - 1)}{2}.$$
 
 ---
 
@@ -315,10 +315,10 @@ b) Nếu có $3$ đường thẳng trong số đó cùng đi qua một điểm $
 
 **Lời giải:**
 a) Với $n = 6,$ số giao điểm tối đa là:
-$$G = \frac{6 \cdot (6 - 1)}{2} = \frac{6 \cdot 5}{2} = 15\text{ giao điểm}.$$
+$$G = \dfrac{6 \cdot (6 - 1)}{2} = \dfrac{6 \cdot 5}{2} = 15\text{ giao điểm}.$$
 
 b)
-- Ba đường thẳng nếu cắt nhau từng đôi một sẽ tạo ra $\frac{3 \cdot 2}{2} = 3$ giao điểm phân biệt.
+- Ba đường thẳng nếu cắt nhau từng đôi một sẽ tạo ra $\dfrac{3 \cdot 2}{2} = 3$ giao điểm phân biệt.
 - Khi ba đường thẳng này đồng quy tại $O,$ chúng chỉ còn lại $1$ giao điểm duy nhất là $O.$
 - Số giao điểm giảm đi là:
   $$3 - 1 = 2\text{ giao điểm}.$$
@@ -412,9 +412,9 @@ b)
 
 **Bài 4:**
 a) Với $n = 6$ điểm không có $3$ điểm nào thẳng hàng:
-$$S = \frac{6 \cdot (6 - 1)}{2} = \frac{6 \cdot 5}{2} = 15\text{ đường thẳng}.$$
+$$S = \dfrac{6 \cdot (6 - 1)}{2} = \dfrac{6 \cdot 5}{2} = 15\text{ đường thẳng}.$$
 b) Có đúng $3$ điểm thẳng hàng:
-$$S = 15 - \left(\frac{3 \cdot 2}{2} - 1\right) = 15 - (3 - 1) = 13\text{ đường thẳng}.$$
+$$S = 15 - \left(\dfrac{3 \cdot 2}{2} - 1\right) = 15 - (3 - 1) = 13\text{ đường thẳng}.$$
 
 **Bài 5:**
 1. $d \in A$: **Sai**. Sửa lại: $A \in d$ (tên điểm đứng trước, tên đường thẳng đứng sau).
@@ -424,20 +424,20 @@ $$S = 15 - \left(\frac{3 \cdot 2}{2} - 1\right) = 15 - (3 - 1) = 13\text{ đư�
 
 **Bài 6:**
 Số giao điểm của $8$ đường thẳng không đồng quy là:
-$$G = \frac{8 \cdot (8 - 1)}{2} = \frac{8 \cdot 7}{2} = 28\text{ giao điểm}.$$
+$$G = \dfrac{8 \cdot (8 - 1)}{2} = \dfrac{8 \cdot 7}{2} = 28\text{ giao điểm}.$$
 
 **Bài 7:**
 Số đường thẳng tạo bởi $n$ điểm là:
-$$\frac{n(n - 1)}{2} = 28 \iff n(n - 1) = 56.$$
+$$\dfrac{n(n - 1)}{2} = 28 \iff n(n - 1) = 56.$$
 Vì $n$ và $(n - 1)$ là hai số tự nhiên liên tiếp, và $8 \cdot 7 = 56,$ suy ra:
 $$n = 8.$$
 Vậy có $8$ điểm.
 
 **Bài 8:**
-Số giao điểm tối đa của $5$ đường thẳng là $\frac{5 \cdot 4}{2} = 10$ giao điểm.
+Số giao điểm tối đa của $5$ đường thẳng là $\dfrac{5 \cdot 4}{2} = 10$ giao điểm.
 - Nếu không có 3 đường nào đồng quy: Có **$10$ giao điểm**.
 - Nếu có đúng $3$ đường đồng quy: Số giao điểm giảm đi $3 - 1 = 2 \implies$ Có **$8$ giao điểm**.
-- Nếu có $4$ đường đồng quy: Số giao điểm giảm đi $\frac{4 \cdot 3}{2} - 1 = 6 - 1 = 5 \implies$ Có $10 - 5 = \mathbf{5\text{ giao điểm}}.$
+- Nếu có $4$ đường đồng quy: Số giao điểm giảm đi $\dfrac{4 \cdot 3}{2} - 1 = 6 - 1 = 5 \implies$ Có $10 - 5 = \mathbf{5\text{ giao điểm}}.$
 - Nếu cả $5$ đường cùng đồng quy tại $1$ điểm: Có **$1$ giao điểm**.
 
 **Bài 9:**
@@ -464,20 +464,20 @@ Sơ đồ trồng $10$ cây thành $5$ hàng, mỗi hàng $4$ cây:
 > [!NOTE]
 > **Định lý đếm đường thẳng tổng quát:**
 > Cho $n$ điểm phân biệt. Nếu trong đó có nhiều nhóm điểm thẳng hàng, nhóm thứ nhất có $k_1$ điểm, nhóm thứ hai có $k_2$ điểm,... (các nhóm không có điểm chung ngoài tối đa $1$ giao điểm):
-> $$S = \frac{n(n - 1)}{2} - \sum_{i} \left[ \frac{k_i(k_i - 1)}{2} - 1 \right].$$
+> $$S = \dfrac{n(n - 1)}{2} - \sum_{i} \left[ \dfrac{k_i(k_i - 1)}{2} - 1 \right].$$
 
 **Bài toán 1:**
 Cho $30$ điểm phân biệt trên mặt phẳng, trong đó có một nhóm gồm $6$ điểm thẳng hàng và một nhóm khác gồm $5$ điểm thẳng hàng (hai nhóm này không có điểm chung), ngoài ra không có ba điểm nào khác thẳng hàng. Cứ qua hai điểm vẽ một đường thẳng. Tính số đường thẳng phân biệt vẽ được.
 
 **Lời giải chi tiết:**
 - Nếu không có ba điểm nào thẳng hàng, số đường thẳng vẽ được là:
-  $$S_0 = \frac{30 \cdot 29}{2} = 435\text{ đường thẳng}.$$
+  $$S_0 = \dfrac{30 \cdot 29}{2} = 435\text{ đường thẳng}.$$
 - Nhóm $6$ điểm thẳng hàng:
-  - Lẽ ra tạo ra: $\frac{6 \cdot 5}{2} = 15$ đường thẳng.
+  - Lẽ ra tạo ra: $\dfrac{6 \cdot 5}{2} = 15$ đường thẳng.
   - Nay chỉ tạo ra $1$ đường thẳng duy nhất.
   - Số đường thẳng giảm đi: $15 - 1 = 14$ đường thẳng.
 - Nhóm $5$ điểm thẳng hàng:
-  - Lẽ ra tạo ra: $\frac{5 \cdot 4}{2} = 10$ đường thẳng.
+  - Lẽ ra tạo ra: $\dfrac{5 \cdot 4}{2} = 10$ đường thẳng.
   - Nay chỉ tạo ra $1$ đường thẳng duy nhất.
   - Số đường thẳng giảm đi: $10 - 1 = 9$ đường thẳng.
 - Tổng số đường thẳng phân biệt thực tế vẽ được là:
@@ -492,9 +492,9 @@ Cho $n$ điểm phân biệt, trong đó không có ba điểm nào thẳng hàn
 
 **Lời giải chi tiết:**
 - Số đường thẳng tạo bởi $n$ điểm không có ba điểm thẳng hàng là:
-  $$S = \frac{n(n - 1)}{2}.$$
+  $$S = \dfrac{n(n - 1)}{2}.$$
 - Giả sử số đường thẳng bằng $2\,026,$ ta có:
-  $$\frac{n(n - 1)}{2} = 2\,026 \iff n(n - 1) = 4\,052.$$
+  $$\dfrac{n(n - 1)}{2} = 2\,026 \iff n(n - 1) = 4\,052.$$
 - Nhận xét về chữ số tận cùng của tích hai số tự nhiên liên tiếp $n(n - 1)$:
   - Hai số tự nhiên liên tiếp chỉ có thể có các cặp tận cùng là: $(0, 1) \to 0;$ $(1, 2) \to 2;$ $(2, 3) \to 6;$ $(3, 4) \to 2;$ $(4, 5) \to 0;$ $(5, 6) \to 0;$ $(6, 7) \to 2;$ $(7, 8) \to 6;$ $(8, 9) \to 2;$ $(9, 0) \to 0.$
   - Do đó, **tích hai số tự nhiên liên tiếp chỉ có thể tận cùng bằng $0, 2$ hoặc $6$**.
@@ -514,7 +514,7 @@ Vậy số đường thẳng vẽ được **không thể bằng $2\,026$**.
 > **Định lý phân chia mặt phẳng:**
 > Trên mặt phẳng cho $n$ đường thẳng, trong đó không có hai đường nào song song và không có ba đường nào đồng quy.
 > Số miền mặt phẳng phân chia được là:
-> $$M_n = \frac{n(n + 1)}{2} + 1.$$
+> $$M_n = \dfrac{n(n + 1)}{2} + 1.$$
 
 **Bài toán 3:**
 a) Một đường thẳng chia mặt phẳng thành bao nhiêu miền? Hai đường thẳng cắt nhau chia mặt phẳng thành bao nhiêu miền?
@@ -527,10 +527,10 @@ a)
 - Với $n = 3$: Ba đường thẳng cắt nhau từng đôi một chia mặt phẳng thành $7$ miền ($M_3 = 7$).
 - Quy luật: Khi thêm đường thẳng thứ $n,$ nó bị $n - 1$ đường thẳng trước đó cắt tại $n - 1$ giao điểm, chia đường thẳng thứ $n$ thành $n$ phần. Mỗi phần này chia đôi một miền cũ thành hai miền mới, do đó số miền tăng thêm đúng $n$:
   $$M_n = M_{n-1} + n.$$
-  $$M_n = 1 + (1 + 2 + 3 + \dots + n) = 1 + \frac{n(n + 1)}{2}.$$
+  $$M_n = 1 + (1 + 2 + 3 + \dots + n) = 1 + \dfrac{n(n + 1)}{2}.$$
 
 b) Áp dụng với $n = 10$:
-$$M_{10} = \frac{10 \cdot 11}{2} + 1 = 55 + 1 = 56\text{ miền mặt phẳng}.$$
+$$M_{10} = \dfrac{10 \cdot 11}{2} + 1 = 55 + 1 = 56\text{ miền mặt phẳng}.$$
 
 ---
 
@@ -541,13 +541,13 @@ Cho $n$ đường thẳng phân biệt trên mặt phẳng. Biết rằng trong 
 
 **Lời giải chi tiết:**
 - Nếu cả $n$ đường thẳng cắt nhau từng đôi một và không đồng quy, số giao điểm là:
-  $$\frac{n(n - 1)}{2}.$$
+  $$\dfrac{n(n - 1)}{2}.$$
 - Có $4$ đường thẳng đồng quy tại $A$:
-  - Bình thường $4$ đường thẳng này tạo ra $\frac{4 \cdot 3}{2} = 6$ giao điểm phân biệt.
+  - Bình thường $4$ đường thẳng này tạo ra $\dfrac{4 \cdot 3}{2} = 6$ giao điểm phân biệt.
   - Nay chúng chỉ tạo ra $1$ giao điểm duy nhất tại $A.$
   - Số giao điểm giảm đi là: $6 - 1 = 5$ giao điểm.
 - Theo bài ra, tổng số giao điểm thực tế là $40$:
-  $$\frac{n(n - 1)}{2} - 5 = 40 \iff \frac{n(n - 1)}{2} = 45 \iff n(n - 1) = 90.$$
+  $$\dfrac{n(n - 1)}{2} - 5 = 40 \iff \dfrac{n(n - 1)}{2} = 45 \iff n(n - 1) = 90.$$
 - Ta có $10 \cdot 9 = 90,$ suy ra $n = 10.$
 Vậy có $10$ đường thẳng.
 
@@ -772,10 +772,10 @@ Cho $20$ đường thẳng phân biệt, trong đó bất kì hai đường th�
   - b) Giả sử $M$ là giao điểm của $a$ và $b$ thì $M \in a$ và $M \in b.$
        Điểm $P$ là giao điểm của $b$ và $c$ nên $P \notin a.$ *(1.0 điểm)*
 - **Bài 3 (2.0 điểm):**
-  - a) Số đường thẳng: $\frac{7 \cdot 6}{2} = 21$ đường thẳng. *(1.0 điểm)*
+  - a) Số đường thẳng: $\dfrac{7 \cdot 6}{2} = 21$ đường thẳng. *(1.0 điểm)*
   - b) Khi có $4$ điểm thẳng hàng:
-       Số đường thẳng giảm đi: $\frac{4 \cdot 3}{2} - 1 = 6 - 1 = 5.$
+       Số đường thẳng giảm đi: $\dfrac{4 \cdot 3}{2} - 1 = 6 - 1 = 5.$
        Số đường thẳng còn lại: $21 - 5 = 16$ đường thẳng. *(1.0 điểm)*
 - **Bài 4 (1.0 điểm):**
   - Số giao điểm của $20$ đường thẳng không đồng quy:
-    $$G = \frac{20 \cdot 19}{2} = 190\text{ giao điểm}.$$ *(1.0 điểm)*
+    $$G = \dfrac{20 \cdot 19}{2} = 190\text{ giao điểm}.$$ *(1.0 điểm)*

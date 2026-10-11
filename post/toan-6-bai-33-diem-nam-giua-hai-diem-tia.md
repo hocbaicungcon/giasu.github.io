@@ -541,7 +541,7 @@ c)
 > **Định lý số góc từ $n$ tia chung gốc:**
 > Cho $n$ tia chung gốc $O$ ($n \ge 2$). Cứ hai tia tạo thành một góc.
 > Số góc tạo thành là:
-> $$N = \frac{n(n - 1)}{2}.$$
+> $$N = \dfrac{n(n - 1)}{2}.$$
 
 **Bài toán 3:**
 Cho $n$ tia chung gốc $O,$ trong đó không có hai tia nào trùng nhau và không có hai tia nào đối nhau.
@@ -552,12 +552,12 @@ b) Biết số góc tạo thành là $105,$ tìm số tia $n.$
 a) Mỗi tia kết hợp với $(n - 1)$ tia còn lại tạo thành $(n - 1)$ góc.
 Với $n$ tia, có $n(n - 1)$ góc, nhưng mỗi góc được tính $2$ lần (góc tạo bởi tia $Ox$ và $Oy$ cũng là góc tạo bởi $Oy$ và $Ox$).
 Số góc phân biệt là:
-$$N = \frac{n(n - 1)}{2}.$$
+$$N = \dfrac{n(n - 1)}{2}.$$
 Với $n = 8$:
-$$N = \frac{8 \cdot 7}{2} = 28\text{ góc}.$$
+$$N = \dfrac{8 \cdot 7}{2} = 28\text{ góc}.$$
 
 b) Ta có:
-$$\frac{n(n - 1)}{2} = 105 \iff n(n - 1) = 210.$$
+$$\dfrac{n(n - 1)}{2} = 105 \iff n(n - 1) = 210.$$
 Phân tích $210$ thành tích của hai số tự nhiên liên tiếp:
 $$210 = 15 \cdot 14.$$
 Suy ra $n = 15.$
@@ -607,8 +607,8 @@ a)
 b)
 - Cứ chọn ra $3$ điểm bất kì trong số $n$ điểm, theo định lý duy nhất, luôn có đúng $1$ điểm nằm giữa hai điểm còn lại.
 - Do đó, số bộ ba điểm mà có một điểm nằm giữa đúng bằng số cách chọn $3$ điểm từ $n$ điểm:
-  $$\text{Số bộ ba} = \frac{n(n - 1)(n - 2)}{6}.$$
-- Ví dụ với $n = 5$ điểm: có $\frac{5 \cdot 4 \cdot 3}{6} = 10$ bộ ba điểm thỏa mãn.
+  $$\text{Số bộ ba} = \dfrac{n(n - 1)(n - 2)}{6}.$$
+- Ví dụ với $n = 5$ điểm: có $\dfrac{5 \cdot 4 \cdot 3}{6} = 10$ bộ ba điểm thỏa mãn.
 
 ---
 

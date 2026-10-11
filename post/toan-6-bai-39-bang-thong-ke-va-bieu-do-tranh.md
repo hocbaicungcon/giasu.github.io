@@ -115,7 +115,7 @@ Hãy bắt đầu bài học bằng 5 câu hỏi tình huống thực tế:
 
 Trong thực tế, không phải số liệu nào cũng chia hết cho giá trị quy ước của một biểu tượng. Khi số liệu có phần lẻ đúng bằng một nửa giá trị của biểu tượng, ta sử dụng **nửa biểu tượng**:
 
-$$\text{Giá trị của nửa biểu tượng} = \frac{\text{Giá trị của một biểu tượng}}{2}.$$
+$$\text{Giá trị của nửa biểu tượng} = \dfrac{\text{Giá trị của một biểu tượng}}{2}.$$
 
 *Ví dụ:* Quy ước mỗi biểu tượng xe đạp $\text{[Xe]}$ ứng với $8$ chiếc xe.
 - $1$ biểu tượng $\text{[Xe]} \implies 8$ chiếc xe.
@@ -131,7 +131,7 @@ $$\text{Giá trị của nửa biểu tượng} = \frac{\text{Giá trị của m
 - **Bước 2:** Chọn biểu tượng thích hợp và xác định giá trị quy ước cho mỗi biểu tượng:
   - Nên chọn giá trị quy ước là một **ước chung** của hầu hết các số liệu trong bảng (tốt nhất là ƯCLN) để số biểu tượng vẽ ra vừa phải (không quá nhiều, không quá ít) và hạn chế phải dùng nhiều biểu tượng lẻ.
 - **Bước 3:** Tính số biểu tượng cho mỗi đối tượng:
-  $$\text{Số biểu tượng} = \frac{\text{Số liệu của đối tượng}}{\text{Giá trị của một biểu tượng}}.$$
+  $$\text{Số biểu tượng} = \dfrac{\text{Số liệu của đối tượng}}{\text{Giá trị của một biểu tượng}}.$$
 - **Bước 4:** Vẽ biểu đồ, sắp xếp các hàng ngay ngắn và ghi rõ phần chú thích bên dưới biểu đồ.
 
 ---
@@ -187,7 +187,7 @@ c)
 #### Phương pháp giải:
 - Quan sát tiêu đề hàng và cột để tra cứu số liệu chính xác.
 - Tính tổng, hiệu, tìm giá trị lớn nhất (Max), nhỏ nhất (Min).
-- Tính tỉ lệ phần trăm: $\frac{\text{Giá trị bộ phận}}{\text{Tổng số}} \times 100\%.$
+- Tính tỉ lệ phần trăm: $\dfrac{\text{Giá trị bộ phận}}{\text{Tổng số}} \times 100\%.$
 
 ---
 
@@ -212,7 +212,7 @@ b)
 c) Số điện thoại Samsung bán nhiều hơn Xiaomi là:
 $$60 - 35 = 25\quad \text{(chiếc)}.$$
 d) Tỉ lệ phần trăm số điện thoại Apple bán ra so với tổng số là:
-$$\frac{45}{200} \times 100\% = 22{,}5\%.$$
+$$\dfrac{45}{200} \times 100\% = 22{,}5\%.$$
 
 ---
 
@@ -221,7 +221,7 @@ $$\frac{45}{200} \times 100\% = 22{,}5\%.$$
 #### Phương pháp giải:
 - **Bước 1:** Đọc kỹ dòng chú thích để biết giá trị của $1$ biểu tượng và nửa biểu tượng.
 - **Bước 2:** Đếm số biểu tượng ở mỗi hàng:
-  $$\text{Số lượng} = (\text{Số biểu tượng nguyên} \times k) + (\text{Số nửa biểu tượng} \times \frac{k}{2}).$$
+  $$\text{Số lượng} = (\text{Số biểu tượng nguyên} \times k) + (\text{Số nửa biểu tượng} \times \dfrac{k}{2}).$$
 - **Bước 3:** Lập lại bảng thống kê số liệu và trả lời câu hỏi.
 
 ---
@@ -363,14 +363,14 @@ c) Tính tỉ lệ học sinh thích đọc "Khoa học khám phá" trên tổng
 **Lời giải:**
 a) Số bạn Nam là $28$ bạn. Trong đó có $16$ bạn Nam thích Truyện tranh.
 Tỉ lệ học sinh thích Truyện tranh trong nhóm học sinh Nam là:
-$$\frac{16}{28} \times 100\% = \frac{4}{7} \times 100\% \approx 57{,}14\%.$$
+$$\dfrac{16}{28} \times 100\% = \dfrac{4}{7} \times 100\% \approx 57{,}14\%.$$
 
 b) Tổng số học sinh thích Văn học cổ điển là $10$ bạn. Trong đó có $8$ bạn Nữ.
 Tỉ lệ học sinh Nữ trong nhóm thích Văn học cổ điển là:
-$$\frac{8}{10} \times 100\% = 80\%.$$
+$$\dfrac{8}{10} \times 100\% = 80\%.$$
 
 c) Tỉ lệ học sinh thích Khoa học khám phá trên toàn khối là:
-$$\frac{16}{50} \times 100\% = 32\%.$$
+$$\dfrac{16}{50} \times 100\% = 32\%.$$
 
 ---
 
@@ -457,11 +457,11 @@ a)
   $$8 + 25 + 48 + 42 + 20 + 7 = 150\quad \text{(đôi)}.$$
 - Cỡ giày bán được nhiều nhất là **cỡ 40** ($48$ đôi).
 - Tỉ lệ phần trăm của cỡ 40 là:
-  $$\frac{48}{150} \times 100\% = 32\%.$$
+  $$\dfrac{48}{150} \times 100\% = 32\%.$$
 
 b)
 - **Chiến lược nhập hàng:**
-  - Hai cỡ giày có nhu cầu cao nhất là **cỡ 40** (chiếm $32\%$) và **cỡ 41** (chiếm $\frac{42}{150} = 28\%$). Do đó chủ cửa hàng nên tập trung nhập số lượng lớn nhất cho hai cỡ 40 và 41 (khoảng $60\%$ tổng số hàng nhập, tức khoảng $180$ đôi).
+  - Hai cỡ giày có nhu cầu cao nhất là **cỡ 40** (chiếm $32\%$) và **cỡ 41** (chiếm $\dfrac{42}{150} = 28\%$). Do đó chủ cửa hàng nên tập trung nhập số lượng lớn nhất cho hai cỡ 40 và 41 (khoảng $60\%$ tổng số hàng nhập, tức khoảng $180$ đôi).
   - Hai cỡ giày có nhu cầu thấp nhất là **cỡ 38** và **cỡ 43** (chỉ chiếm lần lượt $5{,}3\%$ và $4{,}7\%$). Do đó chỉ nên nhập số lượng rất ít cho hai cỡ này (mỗi cỡ khoảng $15$ đôi) để tránh đọng vốn tồn kho.
 
 ---

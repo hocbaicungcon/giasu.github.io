@@ -47,7 +47,7 @@ Bài viết này tổng hợp toàn bộ hệ thống lý thuyết, cung cấp $
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #ec4899; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #be185d;">Bài 31: Tỉ số & Tỉ số %</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Tỉ số $\frac{a}{b}$ (bắt buộc cùng đơn vị).<br>• Tỉ số phần trăm: $\frac{a}{b} \cdot 100\%$.<br>• Bài toán 1: Tìm $m\%$ của $a$ (lấy $a \cdot \frac{m}{100}$).<br>• Bài toán 2: Tìm $x$ khi biết $m\%$ ($b : \frac{m}{100}$).</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Tỉ số $\dfrac{a}{b}$ (bắt buộc cùng đơn vị).<br>• Tỉ số phần trăm: $\dfrac{a}{b} \cdot 100\%$.<br>• Bài toán 1: Tìm $m\%$ của $a$ (lấy $a \cdot \dfrac{m}{100}$).<br>• Bài toán 2: Tìm $x$ khi biết $m\%$ ($b : \dfrac{m}{100}$).</p>
     </div>
   </div>
 </div>
@@ -60,10 +60,10 @@ Bài viết này tổng hợp toàn bộ hệ thống lý thuyết, cung cấp $
 
 | Bài học | Kiến thức trọng tâm | Quy tắc & Công thức then chốt | Ví dụ chuẩn mực |
 | :--- | :--- | :--- | :--- |
-| **Bài 28:** Số thập phân | • Cấu tạo số thập phân<br>• Phân số thập phân<br>• Số đối & Trục số<br>• So sánh số thập phân | • $\frac{a}{10^n}$ có $n$ chữ số phần thập phân<br>• Số đối của $a$ là $-a$<br>• Hai số âm: số nào có số đối lớn hơn thì nhỏ hơn | $\frac{-37}{100} = -0{,}37$<br>Số đối của $4{,}5$ là $-4{,}5$<br>$-3{,}7 < -3{,}07 < 0 < 1{,}2$ |
+| **Bài 28:** Số thập phân | • Cấu tạo số thập phân<br>• Phân số thập phân<br>• Số đối & Trục số<br>• So sánh số thập phân | • $\dfrac{a}{10^n}$ có $n$ chữ số phần thập phân<br>• Số đối của $a$ là $-a$<br>• Hai số âm: số nào có số đối lớn hơn thì nhỏ hơn | $\dfrac{-37}{100} = -0{,}37$<br>Số đối của $4{,}5$ là $-4{,}5$<br>$-3{,}7 < -3{,}07 < 0 < 1{,}2$ |
 | **Bài 29:** Tính toán với số thập phân | • Bốn phép tính số thập phân<br>• Quy tắc dấu (như số nguyên)<br>• Mẹo dịch dấu phẩy<br>• Tính hợp lý & Tìm $x$ | • Cùng dấu: tích/thương $(+)$<br>• Khác dấu: tích/thương $(-)$<br>• Nhân $0{,}1$ dịch trái, chia $0{,}1$ dịch phải<br>• $a \cdot (b + c) = a \cdot b + a \cdot c$ | $(-1{,}5) \cdot (-4) = 6$<br>$7{,}2 : 0{,}1 = 72$<br>$0{,}25 \cdot 3{,}7 \cdot 4 = 3{,}7$ |
 | **Bài 30:** Làm tròn & ước lượng | • Quy tắc làm tròn số<br>• Bẫy làm tròn liên tiếp<br>• Ước lượng thô<br>• Làm tròn thực tế (Lên/Xuống) | • Nhìn chữ số bên phải hàng làm tròn ở số gốc<br>• Số nguyên: thay bằng số $0$<br>• Số thập phân: bỏ đi<br>• Cần chở hết: làm tròn lên; cắt đồ: làm tròn xuống | $4{,}738 \approx 4{,}74$ (hàng phần trăm)<br>$4{,}46 \approx 4$ (hàng đơn vị)<br>$125 : 30 = 4$ dư $5 \implies 5\text{ xe}$ |
-| **Bài 31:** Tỉ số & Tỉ số phần trăm | • Tỉ số của hai đại lượng<br>• Tỉ số phần trăm<br>• Ba bài toán cơ bản<br>• Tăng/giảm giá, lãi suất | • Phải đưa về cùng đơn vị đo trước khi lập tỉ số<br>• Tìm $m\%$ của $a$: $a \cdot \frac{m}{100}$<br>• Tìm số khi biết $m\%$ bằng $b$: $b : \frac{m}{100}$<br>• Tăng $m\%$: $a \cdot (1 + m\%)$ | $30\text{ cm}$ và $1\text{ m} \implies \frac{30}{100} = \frac{3}{10}$<br>$20\%$ của $150$ là $30$<br>Gửi $100$ tr lãi $6\% \implies 106$ tr |
+| **Bài 31:** Tỉ số & Tỉ số phần trăm | • Tỉ số của hai đại lượng<br>• Tỉ số phần trăm<br>• Ba bài toán cơ bản<br>• Tăng/giảm giá, lãi suất | • Phải đưa về cùng đơn vị đo trước khi lập tỉ số<br>• Tìm $m\%$ của $a$: $a \cdot \dfrac{m}{100}$<br>• Tìm số khi biết $m\%$ bằng $b$: $b : \dfrac{m}{100}$<br>• Tăng $m\%$: $a \cdot (1 + m\%)$ | $30\text{ cm}$ và $1\text{ m} \implies \dfrac{30}{100} = \dfrac{3}{10}$<br>$20\%$ của $150$ là $30$<br>Gửi $100$ tr lãi $6\% \implies 106$ tr |
 
 ---
 
@@ -94,13 +94,13 @@ Bài viết này tổng hợp toàn bộ hệ thống lý thuyết, cung cấp $
 
 **Ví dụ 1:**
 Cho tập hợp các số sau:
-$$M = \left\{-4{,}5;\quad 1{,}28;\quad -4{,}09;\quad 0;\quad 1{,}3;\quad -0{,}75;\quad \frac{5}{4}\right\}.$$
+$$M = \left\{-4{,}5;\quad 1{,}28;\quad -4{,}09;\quad 0;\quad 1{,}3;\quad -0{,}75;\quad \dfrac{5}{4}\right\}.$$
 a) Đổi phân số trong tập hợp về số thập phân.
 b) Sắp xếp các số trong tập hợp $M$ theo thứ tự tăng dần.
 c) Sắp xếp các số trong tập hợp $M$ theo thứ tự giảm dần.
 
 **Lời giải:**
-a) Ta có: $\frac{5}{4} = \frac{5 \cdot 25}{4 \cdot 25} = \frac{125}{100} = 1{,}25.$
+a) Ta có: $\dfrac{5}{4} = \dfrac{5 \cdot 25}{4 \cdot 25} = \dfrac{125}{100} = 1{,}25.$
 b) Sắp xếp theo thứ tự tăng dần:
 - Tách nhóm số âm: $-4{,}5;\; -4{,}09;\; -0{,}75.$
   - Xét các số đối: $4{,}50 > 4{,}09 > 0{,}75 \implies -4{,}5 < -4{,}09 < -0{,}75.$
@@ -232,13 +232,13 @@ Một bể bơi có hai vòi nước chảy vào. Nếu chỉ mở vòi thứ nh
 **Lời giải chi tiết:**
 - Coi toàn bộ dung tích bể nước là $1$ đơn vị công việc.
 - Trong $1\text{ giờ},$ vòi thứ nhất chảy được:
-  $$1 : 4 = \frac{1}{4}\text{ (bể)}.$$
+  $$1 : 4 = \dfrac{1}{4}\text{ (bể)}.$$
 - Trong $1\text{ giờ},$ vòi thứ hai chảy được:
-  $$1 : 6 = \frac{1}{6}\text{ (bể)}.$$
+  $$1 : 6 = \dfrac{1}{6}\text{ (bể)}.$$
 - Trong $1\text{ giờ},$ cả hai vòi cùng chảy được:
-  $$\frac{1}{4} + \frac{1}{6} = \frac{3}{12} + \frac{2}{12} = \frac{5}{12}\text{ (bể)}.$$
+  $$\dfrac{1}{4} + \dfrac{1}{6} = \dfrac{3}{12} + \dfrac{2}{12} = \dfrac{5}{12}\text{ (bể)}.$$
 - Thời gian để cả hai vòi cùng chảy đầy bể là:
-  $$1 : \frac{5}{12} = \frac{12}{5} = 2{,}4\text{ giờ}.$$
+  $$1 : \dfrac{5}{12} = \dfrac{12}{5} = 2{,}4\text{ giờ}.$$
 - Đổi $2{,}4\text{ giờ} = 2\text{ giờ } 24\text{ phút}.$
 Vậy nếu mở cả hai vòi cùng lúc thì sau $2\text{ giờ } 24\text{ phút}$ bể sẽ đầy nước.
 
@@ -256,7 +256,7 @@ Giá nhập khẩu một tấn phân bón trong tháng 3 tăng $25\%$ so với t
 - Để giá tháng 4 trở về mức giá $100$ phần của tháng 2, số tiền cần giảm đi là:
   $$125 - 100 = 25\text{ phần}.$$
 - Tỉ số phần trăm cần giảm **tính trên giá của tháng 3** là:
-  $$\frac{25}{125} \cdot 100\% = \frac{1}{5} \cdot 100\% = 20\%.$$
+  $$\dfrac{25}{125} \cdot 100\% = \dfrac{1}{5} \cdot 100\% = 20\%.$$
 *(Lưu ý: Mặc dù giá tăng $25\%$ nhưng khi giảm chỉ cần giảm $20\%$ vì giá tháng 3 đã lớn hơn giá tháng 2).*
 Vậy giá phân bón tháng 4 phải giảm $20\%$ so với tháng 3.
 
@@ -290,15 +290,15 @@ Trên quãng đường từ thành phố A đến thành phố B, một ô tô �
 - Trên cùng một quãng đường, vận tốc và thời gian là hai đại lượng tỉ lệ nghịch.
 - Gọi vận tốc ban đầu là $v_1$ và thời gian ban đầu là $t_1.$
 - Vận tốc mới sau khi tăng $20\%$:
-  $$v_2 = v_1 \cdot (1 + 20\%) = 1{,}2 \cdot v_1 = \frac{6}{5} \cdot v_1.$$
+  $$v_2 = v_1 \cdot (1 + 20\%) = 1{,}2 \cdot v_1 = \dfrac{6}{5} \cdot v_1.$$
 - Tỉ số giữa vận tốc mới và vận tốc cũ:
-  $$\frac{v_2}{v_1} = \frac{6}{5}.$$
+  $$\dfrac{v_2}{v_1} = \dfrac{6}{5}.$$
 - Do vận tốc và thời gian tỉ lệ nghịch nên tỉ số thời gian:
-  $$\frac{t_2}{t_1} = \frac{v_1}{v_2} = \frac{5}{6}.$$
-- Thời gian đi mới bằng $\frac{5}{6}$ thời gian cũ, do đó thời gian đã giảm đi một lượng là:
-  $$1 - \frac{5}{6} = \frac{1}{6} \text{ thời gian ban đầu}.$$
+  $$\dfrac{t_2}{t_1} = \dfrac{v_1}{v_2} = \dfrac{5}{6}.$$
+- Thời gian đi mới bằng $\dfrac{5}{6}$ thời gian cũ, do đó thời gian đã giảm đi một lượng là:
+  $$1 - \dfrac{5}{6} = \dfrac{1}{6} \text{ thời gian ban đầu}.$$
 - Tỉ số phần trăm thời gian giảm đi là:
-  $$\frac{1}{6} \cdot 100\% \approx 16{,}67\%.$$
+  $$\dfrac{1}{6} \cdot 100\% \approx 16{,}67\%.$$
 Vậy thời gian đi giảm đi khoảng $16{,}67\%.$
 
 ---
@@ -307,11 +307,11 @@ Vậy thời gian đi giảm đi khoảng $16{,}67\%.$
 
 **Bài toán 5:**
 Tìm tất cả các số tự nhiên $n$ có hai chữ số sao cho:
-$$2{,}35 < \frac{n}{18} < 2{,}75.$$
+$$2{,}35 < \dfrac{n}{18} < 2{,}75.$$
 
 **Lời giải chi tiết:**
 - Ta có bất đẳng thức:
-  $$2{,}35 < \frac{n}{18} < 2{,}75.$$
+  $$2{,}35 < \dfrac{n}{18} < 2{,}75.$$
 - Nhân cả ba vế với $18$ ($18 > 0$ nên chiều bất đẳng thức giữ nguyên):
   $$2{,}35 \cdot 18 < n < 2{,}75 \cdot 18$$
   $$42{,}3 < n < 49{,}5.$$
@@ -399,10 +399,10 @@ explanation: 'Chữ số hàng nghìn là 5, bên phải là 8 ≥ 5 nên tăng 
 type: choice
 question: 'Tỉ số của hai đại lượng $25\text{ cm}$ và $2\text{ m}$ là:'
 options:
-  - '$\frac{25}{2}$'
-  - '$\frac{1}{8}$'
-  - '$\frac{1}{4}$'
-  - '$\frac{2}{25}$'
+  - '$\dfrac{25}{2}$'
+  - '$\dfrac{1}{8}$'
+  - '$\dfrac{1}{4}$'
+  - '$\dfrac{2}{25}$'
 answer: 2
 explanation: 'Đổi 2 m = 200 cm. Tỉ số = 25 / 200 = 1/8.'
 ```
@@ -491,7 +491,7 @@ B. $-2{,}7 < -2{,}07$
 C. $-2{,}7 = -2{,}07$
 D. Không so sánh được
 
-**Câu 3:** Phân số thập phân $\frac{-25}{100}$ viết dưới dạng số thập phân là:
+**Câu 3:** Phân số thập phân $\dfrac{-25}{100}$ viết dưới dạng số thập phân là:
 A. $-2{,}5$
 B. $-0{,}25$
 C. $-0{,}025$
@@ -528,10 +528,10 @@ C. $38\,500$
 D. $40\,000$
 
 **Câu 9:** Tỉ số của $30\text{ cm}$ và $1{,}2\text{ m}$ là:
-A. $\frac{1}{4}$
-B. $\frac{25}{1}$
-C. $\frac{1}{40}$
-D. $\frac{4}{1}$
+A. $\dfrac{1}{4}$
+B. $\dfrac{25}{1}$
+C. $\dfrac{1}{40}$
+D. $\dfrac{4}{1}$
 
 **Câu 10:** Tỉ số phần trăm của $12$ và $48$ là:
 A. $25\%$
@@ -646,10 +646,10 @@ C. $10{,}7$
 D. $12$
 
 **Câu 8:** Tỉ số của $40\text{ phút}$ và $2\text{ giờ}$ là:
-A. $\frac{1}{3}$
-B. $\frac{20}{1}$
-C. $\frac{1}{5}$
-D. $\frac{2}{3}$
+A. $\dfrac{1}{3}$
+B. $\dfrac{20}{1}$
+C. $\dfrac{1}{5}$
+D. $\dfrac{2}{3}$
 
 **Câu 9:** Một lớp có $18$ bạn nam và $22$ bạn nữ. Tỉ số phần trăm của số bạn nữ so với cả lớp là:
 A. $55\%$
@@ -720,7 +720,7 @@ b) So với giá ban đầu, chiếc áo đã được giảm giá tất cả ba
   - a) Giá sau lần giảm 1: $500\,000 \cdot (1 - 0{,}2) = 400\,000$ đồng.
        Giá sau lần giảm 2: $400\,000 \cdot (1 - 0{,}1) = 360\,000$ đồng. *(1.0 điểm)*
   - b) Số tiền giảm tổng cộng: $500\,000 - 360\,000 = 140\,000$ đồng.
-       Tỉ số phần trăm giảm giá: $\frac{140\,000}{500\,000} \cdot 100\% = 28\%.$ *(0.5 điểm)*
+       Tỉ số phần trăm giảm giá: $\dfrac{140\,000}{500\,000} \cdot 100\% = 28\%.$ *(0.5 điểm)*
 
 ---
 
@@ -784,10 +784,10 @@ B. $0{,}0009$
 C. $-0{,}0011$
 D. $0$
 
-**Câu 10:** Cho $x = 0{,}25$ và $y = -0{,}4.$ Giá trị của biểu thức $\frac{x + y}{x - y}$ là:
-A. $\frac{-3}{13}$
-B. $\frac{3}{13}$
-C. $\frac{-15}{65}$
+**Câu 10:** Cho $x = 0{,}25$ và $y = -0{,}4.$ Giá trị của biểu thức $\dfrac{x + y}{x - y}$ là:
+A. $\dfrac{-3}{13}$
+B. $\dfrac{3}{13}$
+C. $\dfrac{-15}{65}$
 D. $-1$
 
 **Câu 11:** Tổng hai số thập phân bằng $35{,}7.$ Nếu dịch dấu phẩy của số thứ nhất sang phải một hàng thì tổng mới là $184{,}2.$ Số thứ nhất là:
@@ -808,7 +808,7 @@ D. $10\%$
 
 **Bài 1 (2.0 điểm — Tính hợp lý nâng cao):**
 Tính giá trị của biểu thức:
-$$S = \frac{0{,}25 \cdot 48{,}5 \cdot 4 + 0{,}5 \cdot 51{,}5 \cdot 2}{0{,}125 \cdot 8 \cdot 12{,}5 - 2{,}5}.$$
+$$S = \dfrac{0{,}25 \cdot 48{,}5 \cdot 4 + 0{,}5 \cdot 51{,}5 \cdot 2}{0{,}125 \cdot 8 \cdot 12{,}5 - 2{,}5}.$$
 
 **Bài 2 (1.5 điểm — Tìm $x$ nâng cao):**
 Tìm số thập phân $x,$ biết:
@@ -839,9 +839,9 @@ Tính tỉ lệ chiết khấu $m\%.$
 7. B ($25 : 125 \cdot 100\% = 20\%$)
 8. B ($12 : 4\% = 300\text{ kg}$)
 9. A ($0{,}0001 - 0{,}001 = -0{,}0009$)
-10. A ($\frac{0{,}25 - 0{,}4}{0{,}25 + 0{,}4} = \frac{-0{,}15}{0{,}65} = \frac{-3}{13}$)
+10. A ($\dfrac{0{,}25 - 0{,}4}{0{,}25 + 0{,}4} = \dfrac{-0{,}15}{0{,}65} = \dfrac{-3}{13}$)
 11. A ($9 \cdot A = 184{,}2 - 35{,}7 = 148{,}5 \implies A = 16{,}5$)
-12. B ($\frac{v_2}{v_1} = \frac{5}{4} \implies \frac{t_2}{t_1} = \frac{4}{5} \implies$ giảm $20\%$)
+12. B ($\dfrac{v_2}{v_1} = \dfrac{5}{4} \implies \dfrac{t_2}{t_1} = \dfrac{4}{5} \implies$ giảm $20\%$)
 
 **Phần II: Tự luận (7.0 điểm)**
 - **Bài 1 (2.0 điểm):**
@@ -849,7 +849,7 @@ Tính tỉ lệ chiết khấu $m\%.$
     $(0{,}25 \cdot 4) \cdot 48{,}5 + (0{,}5 \cdot 2) \cdot 51{,}5 = 48{,}5 + 51{,}5 = 100.$ *(1.0 điểm)*
   - Mẫu số:
     $(0{,}125 \cdot 8) \cdot 12{,}5 - 2{,}5 = 1 \cdot 12{,}5 - 2{,}5 = 10.$ *(0.5 điểm)*
-  - Giá trị biểu thức: $S = \frac{100}{10} = 10.$ *(0.5 điểm)*
+  - Giá trị biểu thức: $S = \dfrac{100}{10} = 10.$ *(0.5 điểm)*
 - **Bài 2 (1.5 điểm):**
   - a) $|x - 2{,}4| = 3{,}6$:
     - TH1: $x - 2{,}4 = 3{,}6 \implies x = 6.$
@@ -866,15 +866,15 @@ Tính tỉ lệ chiết khấu $m\%.$
        Lượng nước cất cần thêm: $450 - 300 = 150\text{ g}.$ *(0.75 điểm)*
   - c) Khối lượng nước không đổi: $300 - 18 = 282\text{ g}.$
        Trong dung dịch $10\%,$ nước chiếm $90\%.$
-       Khối lượng dung dịch mới: $282 : 90\% = \frac{940}{3}\text{ g}.$
-       Khối lượng muối cần thêm: $\frac{940}{3} - 300 = \frac{40}{3} \approx 13{,}33\text{ g}.$ *(0.75 điểm)*
+       Khối lượng dung dịch mới: $282 : 90\% = \dfrac{940}{3}\text{ g}.$
+       Khối lượng muối cần thêm: $\dfrac{940}{3} - 300 = \dfrac{40}{3} \approx 13{,}33\text{ g}.$ *(0.75 điểm)*
 - **Bài 4 (1.5 điểm):**
   - Coi giá vốn là $100\%.$
   - Giá niêm yết: $100\% + 30\% = 130\%$ giá vốn. *(0.25 điểm)*
   - Để lãi $10{,}5\%$ so với giá vốn, giá bán thực tế phải bằng:
     $100\% + 10{,}5\% = 110{,}5\%$ giá vốn. *(0.25 điểm)*
   - Tỉ số giữa giá bán thực tế và giá niêm yết là:
-    $$\frac{110{,}5\%}{130\%} = \frac{110{,}5}{130} = 0{,}85 = 85\%.$$ *(0.5 điểm)*
+    $$\dfrac{110{,}5\%}{130\%} = \dfrac{110{,}5}{130} = 0{,}85 = 85\%.$$ *(0.5 điểm)*
   - Tỉ lệ chiết khấu $m\%$ là:
     $$m\% = 100\% - 85\% = 15\%.$$ *(0.5 điểm)*
   Vậy cửa hàng đã chiết khấu $15\%.$

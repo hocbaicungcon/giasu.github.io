@@ -91,9 +91,9 @@ Bài viết này hệ thống hóa toàn bộ kiến thức trọng tâm của C
 | **Tam giác đều** | Cạnh $a$ | $C = 3a$ | *(Chưa học công thức trực tiếp ở lớp 6)* |
 | **Hình vuông** | Cạnh $a$ | $C = 4a$ | $S = a^2$ |
 | **Hình chữ nhật** | Chiều dài $a$, chiều rộng $b$ | $C = 2(a + b)$ | $S = a \cdot b$ |
-| **Hình thoi** | Cạnh $a$, hai đường chéo $m, n$ | $C = 4a$ | $S = \frac{1}{2} \cdot m \cdot n$ *(nửa tích hai đường chéo)* |
+| **Hình thoi** | Cạnh $a$, hai đường chéo $m, n$ | $C = 4a$ | $S = \dfrac{1}{2} \cdot m \cdot n$ *(nửa tích hai đường chéo)* |
 | **Hình bình hành** | Cạnh đáy $a$, cạnh bên $b$, chiều cao $h$ | $C = 2(a + b)$ | $S = a \cdot h$ *(cạnh đáy $\times$ chiều cao)* |
-| **Hình thang** | Đáy lớn $a$, đáy nhỏ $b$, cạnh bên $c, d$, chiều cao $h$ | $C = a + b + c + d$ | $S = \frac{(a + b) \cdot h}{2}$ *(nửa tổng hai đáy $\times$ chiều cao)* |
+| **Hình thang** | Đáy lớn $a$, đáy nhỏ $b$, cạnh bên $c, d$, chiều cao $h$ | $C = a + b + c + d$ | $S = \dfrac{(a + b) \cdot h}{2}$ *(nửa tổng hai đáy $\times$ chiều cao)* |
 | **Lục giác đều** | Cạnh $a$ | $C = 6a$ | $S = 6 \cdot S_{\text{tam giác đều cạnh } a}$ |
 
 ---
@@ -117,8 +117,8 @@ Bài viết này hệ thống hóa toàn bộ kiến thức trọng tâm của C
 > [!WARNING]
 > Hãy ghi nhớ và không bao giờ lặp lại 5 sai lầm sau:
 > 1. **Quên chia 2 trong công thức diện tích hình thoi và hình thang:**
->    - $S_{\text{thoi}} = \frac{1}{2} m \cdot n$ *(nếu quên chia 2, kết quả sẽ bị gấp đôi)*.
->    - $S_{\text{thang}} = \frac{(a + b) \cdot h}{2}$ *(phải cộng hai đáy, nhân chiều cao rồi chia cho 2)*.
+>    - $S_{\text{thoi}} = \dfrac{1}{2} m \cdot n$ *(nếu quên chia 2, kết quả sẽ bị gấp đôi)*.
+>    - $S_{\text{thang}} = \dfrac{(a + b) \cdot h}{2}$ *(phải cộng hai đáy, nhân chiều cao rồi chia cho 2)*.
 > 2. **Nhầm lẫn khi đổi đơn vị đo diện tích:**
 >    - Đơn vị độ dài: Mỗi bậc cách nhau $10$ lần ($1\text{ m} = 100\text{ cm}$).
 >    - Đơn vị diện tích: Mỗi bậc cách nhau $100$ lần ($1\text{ m}^2 = 10\ 000\text{ cm}^2;\; 1\text{ ha} = 10\ 000\text{ m}^2$).
@@ -163,7 +163,7 @@ Một tấm biển quảng cáo hình thoi có độ dài cạnh là $15\text{ d
 1. Bốn cạnh của hình thoi bằng nhau nên chu vi tấm biển là:
    $$C = 4 \cdot 15 = 60\text{ (dm)}.$$
 2. Diện tích tấm biển quảng cáo là:
-   $$S = \frac{1}{2} \cdot 18 \cdot 24 = 18 \cdot 12 = 216\text{ (dm}^2).$$
+   $$S = \dfrac{1}{2} \cdot 18 \cdot 24 = 18 \cdot 12 = 216\text{ (dm}^2).$$
 
 ---
 
@@ -239,9 +239,9 @@ Tính số chấm tròn ở hình thứ $20$.
 
 **Lời giải:**
 Số chấm tròn ở hình thứ $n$ là tổng của $n$ số tự nhiên đầu tiên:
-$$T_n = 1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}.$$
+$$T_n = 1 + 2 + 3 + \dots + n = \dfrac{n(n + 1)}{2}.$$
 Ở hình thứ $20$, số chấm tròn là:
-$$T_{20} = \frac{20 \cdot 21}{2} = 210\text{ (chấm tròn)}.$$
+$$T_{20} = \dfrac{20 \cdot 21}{2} = 210\text{ (chấm tròn)}.$$
 
 ---
 
@@ -281,7 +281,7 @@ Cho hình chữ nhật $ABCD$ có chiều dài $AB = 16\text{ cm}$ và chiều r
    Hai đường chéo của hình thoi $MNPQ$ song song và bằng đúng các cạnh của hình chữ nhật:
    $$MP = BC = 10\text{ cm};\quad NQ = AB = 16\text{ cm}.$$
 2. Diện tích hình thoi $MNPQ$ là:
-   $$S_{\text{thoi}} = \frac{1}{2} \cdot MP \cdot NQ = \frac{1}{2} \cdot 10 \cdot 16 = 80\text{ (cm}^2).$$
+   $$S_{\text{thoi}} = \dfrac{1}{2} \cdot MP \cdot NQ = \dfrac{1}{2} \cdot 10 \cdot 16 = 80\text{ (cm}^2).$$
 3. Diện tích hình chữ nhật $ABCD$ ban đầu là:
    $$S_{\text{HCN}} = 16 \cdot 10 = 160\text{ (cm}^2).$$
    Tổng diện tích bốn tam giác vuông ở bốn góc là:
@@ -498,7 +498,7 @@ explanation: 'Hình bình hành không có hai đường chéo bằng nhau (ch�
 
 **Bài 2 (1.5 điểm):**
 - Chu vi hình thoi: $C = 4 \cdot 10 = 40\text{ cm}$ *(0.75 điểm)*.
-- Diện tích hình thoi: $S = \frac{1}{2} \cdot 12 \cdot 16 = 96\text{ cm}^2$ *(0.75 điểm)*.
+- Diện tích hình thoi: $S = \dfrac{1}{2} \cdot 12 \cdot 16 = 96\text{ cm}^2$ *(0.75 điểm)*.
 
 **Bài 3 (2.0 điểm):**
 1. Diện tích sân: $S = 12 \cdot 8 = 96\text{ m}^2$ *(1.0 điểm)*.
@@ -508,7 +508,7 @@ explanation: 'Hình bình hành không có hai đường chéo bằng nhau (ch�
 
 **Bài 4 (1.5 điểm):**
 1. Diện tích thửa ruộng:
-   $$S = \frac{(25 + 15) \cdot 10}{2} = 200\text{ m}^2\text{ (0.75 điểm)}.$$
+   $$S = \dfrac{(25 + 15) \cdot 10}{2} = 200\text{ m}^2\text{ (0.75 điểm)}.$$
 2. Sản lượng thóc thu hoạch được:
    $$200 \cdot 0.8 = 160\text{ kg} = 1.6\text{ tạ (thóc)}\text{ (0.75 điểm)}.$$
 
@@ -888,9 +888,9 @@ explanation: 'Cạnh ban đầu là 10 cm. Cạnh mới là 12 cm, diện tích 
 
 **Bài 2 (1.5 điểm):**
 1. Diện tích hình thang cân:
-   $$S = \frac{(6 + 14) \cdot 5}{2} = 50\text{ cm}^2\text{ (0.75 điểm)}.$$
+   $$S = \dfrac{(6 + 14) \cdot 5}{2} = 50\text{ cm}^2\text{ (0.75 điểm)}.$$
 2. Đoạn thẳng $MN$ là đường trung bình của hình thang, bằng nửa tổng hai đáy:
-   $$MN = \frac{AB + CD}{2} = \frac{6 + 14}{2} = 10\text{ cm}\text{ (0.75 điểm)}.$$
+   $$MN = \dfrac{AB + CD}{2} = \dfrac{6 + 14}{2} = 10\text{ cm}\text{ (0.75 điểm)}.$$
 
 **Bài 3 (2.0 điểm):**
 1. Diện tích cả bức tường: $S_1 = 12 \cdot 3.5 = 42\text{ m}^2$ *(0.5 điểm)*.

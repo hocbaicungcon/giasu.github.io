@@ -77,7 +77,7 @@ explanation: 'Hình thang cân là hình thang có hai cạnh đáy song song, h
 > - **Các cặp cạnh đối song song và bằng nhau:** $AB \parallel CD,\; AB = CD$ và $AD \parallel BC,\; AD = BC.$
 > - **Hai đường chéo bằng nhau:** $AC = BD.$
 > - **Hai đường chéo cắt nhau tại trung điểm $O$ của mỗi đường:**
->   $$OA = OB = OC = OD = \frac{AC}{2} = \frac{BD}{2}.$$
+>   $$OA = OB = OC = OD = \dfrac{AC}{2} = \dfrac{BD}{2}.$$
 
 <div style="text-align: center; margin: 20px 0;">
 <svg width="280" height="180" viewBox="0 0 280 180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
@@ -107,7 +107,7 @@ explanation: 'Hình thang cân là hình thang có hai cạnh đáy song song, h
 > - **Các cặp cạnh đối song song:** $AB \parallel CD$ và $AD \parallel BC.$
 > - **Các góc đối bằng nhau:** $\widehat{A} = \widehat{C}$ và $\widehat{B} = \widehat{D}.$
 > - **Hai đường chéo vuông góc với nhau tại trung điểm $O$ của mỗi đường:**
->   $$AC \perp BD \quad \text{tại } O;\quad OA = OC = \frac{AC}{2};\quad OB = OD = \frac{BD}{2}.$$
+>   $$AC \perp BD \quad \text{tại } O;\quad OA = OC = \dfrac{AC}{2};\quad OB = OD = \dfrac{BD}{2}.$$
 
 <div style="text-align: center; margin: 20px 0;">
 <svg width="260" height="200" viewBox="0 0 260 200" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
@@ -137,7 +137,7 @@ explanation: 'Hình thang cân là hình thang có hai cạnh đáy song song, h
 >   $$AB \parallel CD,\; AB = CD;\quad AD \parallel BC,\; AD = BC.$$
 > - **Các góc đối bằng nhau:** $\widehat{A} = \widehat{C}$ và $\widehat{B} = \widehat{D}.$
 > - **Hai đường chéo cắt nhau tại trung điểm $O$ của mỗi đường:**
->   $$OA = OC = \frac{AC}{2};\quad OB = OD = \frac{BD}{2}.$$
+>   $$OA = OC = \dfrac{AC}{2};\quad OB = OD = \dfrac{BD}{2}.$$
 
 <div style="text-align: center; margin: 20px 0;">
 <svg width="290" height="180" viewBox="0 0 290 180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
@@ -302,11 +302,11 @@ Mỗi mô tả dưới đây ứng với hình nào?
 1. 
 - Trong hình chữ nhật, hai đường chéo bằng nhau nên: $BD = AC = 14\text{ cm}.$
 - Hai đường chéo cắt nhau tại trung điểm của mỗi đường nên:
-  $$OA = OB = \frac{AC}{2} = \frac{14}{2} = 7\text{ (cm)}.$$
+  $$OA = OB = \dfrac{AC}{2} = \dfrac{14}{2} = 7\text{ (cm)}.$$
 
 2. 
 - Hai đường chéo hình thoi cắt nhau tại trung điểm mỗi đường nên:
-  $$IE = \frac{EG}{2} = \frac{12}{2} = 6\text{ (cm)};\quad IF = \frac{FH}{2} = \frac{16}{2} = 8\text{ (cm)}.$$
+  $$IE = \dfrac{EG}{2} = \dfrac{12}{2} = 6\text{ (cm)};\quad IF = \dfrac{FH}{2} = \dfrac{16}{2} = 8\text{ (cm)}.$$
 - Hai đường chéo hình thoi vuông góc với nhau nên $\widehat{EIF} = 90^\circ.$
 
 3. Trong hình thang cân, hai đường chéo luôn bằng nhau nên:
@@ -428,7 +428,7 @@ Nêu các bước vẽ hình thoi $ABCD$ có cạnh $AB = 5\text{ cm}$ và đư�
 1. Bốn cạnh hình thoi bằng nhau nên chu vi là:
    $$C = 4 \cdot 10 = 40\text{ (cm)}.$$
 2. Hai đường chéo cắt nhau tại trung điểm của mỗi đường:
-   $$OM = \frac{MP}{2} = \frac{16}{2} = 8\text{ (cm)};\quad ON = \frac{NQ}{2} = \frac{12}{2} = 6\text{ (cm)}.$$
+   $$OM = \dfrac{MP}{2} = \dfrac{16}{2} = 8\text{ (cm)};\quad ON = \dfrac{NQ}{2} = \dfrac{12}{2} = 6\text{ (cm)}.$$
    Hai đường chéo vuông góc với nhau nên $\widehat{MON} = 90^\circ.$
 
 **Bài 4.**
@@ -583,15 +583,15 @@ Một mảnh đất hình chữ nhật được chia thành lưới gồm $m$ h�
 **Lời giải:**
 1. Một hình chữ nhật bất kỳ được giới hạn bởi $2$ đường nằm ngang và $2$ đường thẳng đứng.
    - Lưới có $m$ hàng thì có $(m + 1)$ đường kẻ ngang. Số cách chọn ra $2$ đường ngang là:
-     $$\frac{(m + 1) \cdot m}{2}.$$
+     $$\dfrac{(m + 1) \cdot m}{2}.$$
    - Lưới có $n$ cột thì có $(n + 1)$ đường kẻ dọc. Số cách chọn ra $2$ đường dọc là:
-     $$\frac{(n + 1) \cdot n}{2}.$$
+     $$\dfrac{(n + 1) \cdot n}{2}.$$
    
    Theo quy tắc nhân, tổng số hình chữ nhật trong lưới $m \times n$ là:
-   $$N = \frac{m(m + 1)}{2} \times \frac{n(n + 1)}{2}.$$
+   $$N = \dfrac{m(m + 1)}{2} \times \dfrac{n(n + 1)}{2}.$$
 
 2. Áp dụng cho bàn cờ vua ($m = 8, n = 8$):
-   $$N = \frac{8 \cdot 9}{2} \times \frac{8 \cdot 9}{2} = 36 \times 36 = 1296\text{ (hình chữ nhật)}.$$
+   $$N = \dfrac{8 \cdot 9}{2} \times \dfrac{8 \cdot 9}{2} = 36 \times 36 = 1296\text{ (hình chữ nhật)}.$$
 
 ---
 
@@ -624,9 +624,9 @@ Các đường song song chia hình bình hành thành một lưới gồm:
 
 Tương tự như bài toán đếm hình chữ nhật, một hình bình hành được xác định bởi $2$ đường song song với đáy và $2$ đường song song với cạnh bên.
 - Số cách chọn $2$ đường từ $(3 + 2) = 5$ đường đáy là:
-  $$\frac{5 \cdot 4}{2} = 10\text{ (cách)}.$$
+  $$\dfrac{5 \cdot 4}{2} = 10\text{ (cách)}.$$
 - Số cách chọn $2$ đường từ $(4 + 2) = 6$ đường cạnh bên là:
-  $$\frac{6 \cdot 5}{2} = 15\text{ (cách)}.$$
+  $$\dfrac{6 \cdot 5}{2} = 15\text{ (cách)}.$$
 
 Tổng số hình bình hành tạo thành là:
 $$10 \times 15 = 150\text{ (hình bình hành)}.$$
@@ -641,7 +641,7 @@ Gọi chiều dài và chiều rộng của hình chữ nhật là $a$ và $b$ (
 Nửa chu vi của hình chữ nhật là:
 $$a + b = 40 : 2 = 20\text{ (cm)}.$$
 Ta có công thức biến đổi:
-$$a \cdot b = \frac{(a + b)^2 - (a - b)^2}{4} = \frac{20^2 - (a - b)^2}{4} = 100 - \frac{(a - b)^2}{4}.$$
+$$a \cdot b = \dfrac{(a + b)^2 - (a - b)^2}{4} = \dfrac{20^2 - (a - b)^2}{4} = 100 - \dfrac{(a - b)^2}{4}.$$
 Vì $(a - b)^2 \ge 0$ với mọi $a, b$ nên:
 $$a \cdot b \le 100.$$
 Dấu "$=$" xảy ra khi và chỉ khi:

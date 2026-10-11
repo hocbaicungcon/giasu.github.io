@@ -33,7 +33,7 @@ Bài học này sẽ giúp các em nắm vững hai điều kiện bắt buộc 
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #047857;">2. Hệ thức độ dài</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">$MA = MB = \frac{AB}{2}$.<br>Ngược lại: $AB = 2 \cdot MA = 2 \cdot MB$.<br>Mỗi đoạn thẳng có duy nhất một trung điểm.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">$MA = MB = \dfrac{AB}{2}$.<br>Ngược lại: $AB = 2 \cdot MA = 2 \cdot MB$.<br>Mỗi đoạn thẳng có duy nhất một trung điểm.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #f59e0b; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #b45309;">3. Dấu hiệu nhận biết trên tia</h4>
@@ -86,7 +86,7 @@ Hãy bắt đầu bài học bằng 5 câu hỏi tư duy ngắn:
 
 Hai điều kiện này được gộp gọn thành một hệ thức tương đương duy nhất:
 
-$$MA = MB = \frac{AB}{2}.$$
+$$MA = MB = \dfrac{AB}{2}.$$
 
 ```text
        A                    M                    B
@@ -99,7 +99,7 @@ $$MA = MB = \frac{AB}{2}.$$
 
 Nếu $M$ là trung điểm của đoạn thẳng $AB$ thì:
 
-$$MA = MB = \frac{AB}{2}.$$
+$$MA = MB = \dfrac{AB}{2}.$$
 
 Ngược lại:
 
@@ -117,7 +117,7 @@ $$AB = 2 \cdot MA = 2 \cdot MB.$$
   1. Chứng minh điểm $M$ nằm giữa hai điểm $A$ và $B$ (thường thông qua hệ thức cộng đoạn thẳng $AM + MB = AB,$ hoặc nhận xét về hai điểm trên cùng một tia, hoặc hai tia đối nhau).
   2. Chứng minh $MA = MB.$
 - **Cách 2 (Hệ thức gộp):**
-  Chứng minh $M$ thuộc đoạn thẳng $AB$ và $MA = \frac{AB}{2}$ (hoặc $MB = \frac{AB}{2}$).
+  Chứng minh $M$ thuộc đoạn thẳng $AB$ và $MA = \dfrac{AB}{2}$ (hoặc $MB = \dfrac{AB}{2}$).
 - **Cách 3 (Nhận biết trên tia):**
   Trên tia $Ox,$ nếu lấy hai điểm $A$ và $B$ sao cho $OA = a$ và $OB = 2a$ (với $a > 0$) thì:
   - Do $OA < OB$ nên điểm $A$ nằm giữa $O$ và $B.$
@@ -128,7 +128,7 @@ $$AB = 2 \cdot MA = 2 \cdot MB.$$
 
 Muốn vẽ trung điểm $M$ của đoạn thẳng $AB$ có độ dài cho trước:
 
-- **Bước 1:** Tính độ dài một nửa đoạn thẳng: $AM = \frac{AB}{2}.$
+- **Bước 1:** Tính độ dài một nửa đoạn thẳng: $AM = \dfrac{AB}{2}.$
 - **Bước 2:** Đặt thước thẳng sao cho vạch $0$ của thước trùng với điểm $A,$ mép thước đi qua điểm $B.$
 - **Bước 3:** Đánh dấu điểm $M$ tại vạch chỉ độ dài bằng $AM.$ Điểm vừa đánh dấu chính là trung điểm của đoạn thẳng $AB.$
 
@@ -142,7 +142,7 @@ Muốn vẽ trung điểm $M$ của đoạn thẳng $AB$ có độ dài cho trư
 > ### Những sai lầm kinh điển cần tránh:
 > 1. **Bẫy cách đều nhưng không thẳng hàng:** Nhiều học sinh thấy đề bài cho $KA = KB$ liền vội vàng kết luận ngay $K$ là trung điểm của $AB.$ Điều này hoàn toàn sai lầm vì điểm $K$ có thể nằm ngoài đường thẳng $AB$ (tạo thành tam giác cân). Phải luôn kiểm tra điều kiện điểm đó **nằm giữa** (hoặc thuộc đoạn thẳng).
 > 2. **Nhầm lẫn giữa "nằm giữa" và "trung điểm":** Điểm nằm giữa chỉ cần thỏa mãn $AM + MB = AB,$ còn trung điểm đòi hỏi thêm $AM = MB.$
-> 3. **Nhầm lẫn công thức:** $MA = MB = \frac{AB}{2}$ chứ không phải $MA = MB = AB.$
+> 3. **Nhầm lẫn công thức:** $MA = MB = \dfrac{AB}{2}$ chứ không phải $MA = MB = AB.$
 
 ---
 
@@ -152,7 +152,7 @@ Muốn vẽ trung điểm $M$ của đoạn thẳng $AB$ có độ dài cho trư
 
 #### Phương pháp giải:
 - Biết độ dài đoạn thẳng lớn $AB \implies$ mỗi nửa đoạn thẳng bằng:
-  $$MA = MB = \frac{AB}{2}.$$
+  $$MA = MB = \dfrac{AB}{2}.$$
 - Biết độ dài một nửa đoạn thẳng $MA$ (hoặc $MB$) $\implies$ cả đoạn thẳng bằng:
   $$AB = 2 \cdot MA = 2 \cdot MB.$$
 
@@ -163,7 +163,7 @@ Cho đoạn thẳng $PQ = 18\text{ cm}.$ Gọi $M$ là trung điểm của $PQ.$
 
 **Lời giải:**
 Vì $M$ là trung điểm của đoạn thẳng $PQ$ nên:
-$$MP = MQ = \frac{PQ}{2} = \frac{18}{2} = 9\text{ cm}.$$
+$$MP = MQ = \dfrac{PQ}{2} = \dfrac{18}{2} = 9\text{ cm}.$$
 Vậy $MP = 9\text{ cm};\; MQ = 9\text{ cm}.$
 
 ---
@@ -267,18 +267,18 @@ c) Tính độ dài đoạn thẳng $IK.$
 ```
 
 a) Vì $M$ là trung điểm của đoạn thẳng $AB$ nên:
-$$AM = MB = \frac{AB}{2} = \frac{24}{2} = 12\text{ cm}.$$
+$$AM = MB = \dfrac{AB}{2} = \dfrac{24}{2} = 12\text{ cm}.$$
 b)
 - Vì $I$ là trung điểm của đoạn thẳng $AM$ nên:
-$$AI = IM = \frac{AM}{2} = \frac{12}{2} = 6\text{ cm}.$$
+$$AI = IM = \dfrac{AM}{2} = \dfrac{12}{2} = 6\text{ cm}.$$
 - Vì $K$ là trung điểm của đoạn thẳng $MB$ nên:
-$$MK = KB = \frac{MB}{2} = \frac{12}{2} = 6\text{ cm}.$$
+$$MK = KB = \dfrac{MB}{2} = \dfrac{12}{2} = 6\text{ cm}.$$
 c) Vì $M$ nằm giữa $A$ và $B,$ $I$ thuộc đoạn $AM,$ $K$ thuộc đoạn $MB$ nên điểm $M$ nằm giữa hai điểm $I$ và $K.$
 Do đó:
 $$IK = IM + MK = 6 + 6 = 12\text{ cm}.$$
 
 > [!NOTE]
-> Nhận xét thú vị: $IK = \frac{AB}{2} = 12\text{ cm}.$ Khoảng cách giữa hai trung điểm của hai nửa đoạn thẳng đúng bằng một nửa độ dài đoạn thẳng ban đầu!
+> Nhận xét thú vị: $IK = \dfrac{AB}{2} = 12\text{ cm}.$ Khoảng cách giữa hai trung điểm của hai nửa đoạn thẳng đúng bằng một nửa độ dài đoạn thẳng ban đầu!
 
 ---
 
@@ -324,10 +324,10 @@ b) Để lắp thêm hai biển báo an toàn ở hai vị trí $P$ và $Q$ lầ
 
 **Lời giải:**
 a) Vì cột trụ đặt tại trung điểm $M$ của đoạn cầu $AB$ nên khoảng cách từ cột trụ tới mỗi đầu cầu là:
-$$MA = MB = \frac{AB}{2} = \frac{6}{2} = 3\text{ m}.$$
+$$MA = MB = \dfrac{AB}{2} = \dfrac{6}{2} = 3\text{ m}.$$
 b)
-- Vì $P$ là trung điểm của $AM$ nên $MP = \frac{AM}{2} = \frac{3}{2} = 1{,}5\text{ m}.$
-- Vì $Q$ là trung điểm của $MB$ nên $MQ = \frac{MB}{2} = \frac{3}{2} = 1{,}5\text{ m}.$
+- Vì $P$ là trung điểm của $AM$ nên $MP = \dfrac{AM}{2} = \dfrac{3}{2} = 1{,}5\text{ m}.$
+- Vì $Q$ là trung điểm của $MB$ nên $MQ = \dfrac{MB}{2} = \dfrac{3}{2} = 1{,}5\text{ m}.$
 - Vì điểm $M$ nằm giữa $P$ và $Q$ nên khoảng cách giữa hai biển báo là:
 $$PQ = PM + MQ = 1{,}5 + 1{,}5 = 3\text{ m}.$$
 
@@ -341,7 +341,7 @@ $$PQ = PM + MQ = 1{,}5 + 1{,}5 = 3\text{ m}.$$
 > **Định lý:**
 > Cho đoạn thẳng $AB$ có độ dài không đổi. Lấy một điểm $C$ tùy ý nằm giữa hai điểm $A$ và $B.$ Gọi $M$ là trung điểm của đoạn thẳng $AC,$ và $N$ là trung điểm của đoạn thẳng $CB.$
 > Khi đó khoảng cách $MN$ luôn bằng một nửa độ dài đoạn thẳng $AB$:
-> $$MN = \frac{AB}{2}.$$
+> $$MN = \dfrac{AB}{2}.$$
 > Độ dài $MN$ hoàn toàn **không phụ thuộc** vào vị trí của điểm $C.$
 
 ```text
@@ -358,16 +358,16 @@ Vì điểm $C$ nằm giữa hai điểm $A$ và $B$ nên:
 $$AB = AC + CB = x + y.$$
 
 Theo tính chất trung điểm:
-- Điểm $M$ là trung điểm của $AC \implies MC = \frac{AC}{2} = \frac{x}{2}.$
-- Điểm $N$ là trung điểm của $CB \implies CN = \frac{CB}{2} = \frac{y}{2}.$
+- Điểm $M$ là trung điểm của $AC \implies MC = \dfrac{AC}{2} = \dfrac{x}{2}.$
+- Điểm $N$ là trung điểm của $CB \implies CN = \dfrac{CB}{2} = \dfrac{y}{2}.$
 
 Vì $M$ thuộc đoạn thẳng $AC,$ $N$ thuộc đoạn thẳng $CB$ mà điểm $C$ nằm giữa $A$ và $B,$ nên hai tia $CA$ và $CB$ là hai tia đối nhau.
 Suy ra tia $CM$ và tia $CN$ đối nhau, do đó **điểm $C$ nằm giữa hai điểm $M$ và $N$**.
 
 Khi đó:
-$$MN = MC + CN = \frac{x}{2} + \frac{y}{2} = \frac{x + y}{2} = \frac{AB}{2}.$$
+$$MN = MC + CN = \dfrac{x}{2} + \dfrac{y}{2} = \dfrac{x + y}{2} = \dfrac{AB}{2}.$$
 
-Hệ thức $MN = \frac{AB}{2}$ chứng tỏ độ dài đoạn thẳng $MN$ là một hằng số cố định, hoàn toàn không phụ thuộc vào việc điểm $C$ dịch chuyển ở bất kì vị trí nào giữa $A$ và $B$ (Đpcm).
+Hệ thức $MN = \dfrac{AB}{2}$ chứng tỏ độ dài đoạn thẳng $MN$ là một hằng số cố định, hoàn toàn không phụ thuộc vào việc điểm $C$ dịch chuyển ở bất kì vị trí nào giữa $A$ và $B$ (Đpcm).
 
 ---
 
@@ -377,12 +377,12 @@ Hãy tính độ dài đoạn thẳng $MN$ theo $AB.$
 
 **Lời giải:**
 - Ta có $AC = AB + BC \implies AC - BC = AB.$
-- Vì $M$ là trung điểm của $AC \implies MC = \frac{AC}{2}.$
-- Vì $N$ là trung điểm của $BC \implies NC = \frac{BC}{2}.$
+- Vì $M$ là trung điểm của $AC \implies MC = \dfrac{AC}{2}.$
+- Vì $N$ là trung điểm của $BC \implies NC = \dfrac{BC}{2}.$
 - Do $BC < AC$ nên trên tia $CA,$ điểm $N$ nằm giữa hai điểm $C$ và $M.$
 - Do đó:
-$$MN = MC - NC = \frac{AC}{2} - \frac{BC}{2} = \frac{AC - BC}{2} = \frac{AB}{2}.$$
-Như vậy, dù điểm $C$ nằm bên trong hay bên ngoài đoạn thẳng $AB,$ khoảng cách giữa hai trung điểm $M$ và $N$ **luôn luôn bằng $\frac{AB}{2}$**!
+$$MN = MC - NC = \dfrac{AC}{2} - \dfrac{BC}{2} = \dfrac{AC - BC}{2} = \dfrac{AB}{2}.$$
+Như vậy, dù điểm $C$ nằm bên trong hay bên ngoài đoạn thẳng $AB,$ khoảng cách giữa hai trung điểm $M$ và $N$ **luôn luôn bằng $\dfrac{AB}{2}$**!
 
 ---
 
@@ -400,15 +400,15 @@ c) Tính tổng khoảng cách $S_n = M_1M_2 + M_2M_3 + M_3M_4 + \dots + M_{n-1}
 
 **Lời giải:**
 a) Áp dụng tính chất trung điểm liên tiếp:
-- $AM_1 = \frac{AB}{2} = \frac{64}{2} = 32\text{ cm} = \frac{L}{2^1}.$
-- $AM_2 = \frac{AM_1}{2} = \frac{32}{2} = 16\text{ cm} = \frac{L}{2^2}.$
-- $AM_3 = \frac{AM_2}{2} = \frac{16}{2} = 8\text{ cm} = \frac{L}{2^3}.$
-- $AM_4 = \frac{AM_3}{2} = \frac{8}{2} = 4\text{ cm} = \frac{L}{2^4}.$
+- $AM_1 = \dfrac{AB}{2} = \dfrac{64}{2} = 32\text{ cm} = \dfrac{L}{2^1}.$
+- $AM_2 = \dfrac{AM_1}{2} = \dfrac{32}{2} = 16\text{ cm} = \dfrac{L}{2^2}.$
+- $AM_3 = \dfrac{AM_2}{2} = \dfrac{16}{2} = 8\text{ cm} = \dfrac{L}{2^3}.$
+- $AM_4 = \dfrac{AM_3}{2} = \dfrac{8}{2} = 4\text{ cm} = \dfrac{L}{2^4}.$
 Tổng quát, với số tự nhiên $n \ge 1,$ ta có:
-$$AM_n = \frac{L}{2^n}.$$
+$$AM_n = \dfrac{L}{2^n}.$$
 
 b) Vì $M_n$ là trung điểm của đoạn thẳng $AM_{n-1}$ nên $M_n$ nằm giữa $A$ và $M_{n-1},$ suy ra:
-$$M_{n-1}M_n = AM_{n-1} - AM_n = \frac{L}{2^{n-1}} - \frac{L}{2^n} = \frac{L}{2^n} = AM_n.$$
+$$M_{n-1}M_n = AM_{n-1} - AM_n = \dfrac{L}{2^{n-1}} - \dfrac{L}{2^n} = \dfrac{L}{2^n} = AM_n.$$
 
 c) Ta nhận thấy các điểm $M_n, M_{n-1}, \dots, M_2, M_1$ nằm thẳng hàng theo thứ tự từ trái sang phải trên tia $AB$:
 $$A - M_n - M_{n-1} - \dots - M_2 - M_1 - B.$$
@@ -416,7 +416,7 @@ Do đó, tổng khoảng cách các đoạn liên tiếp chính là khoảng cá
 $$S_n = M_1M_2 + M_2M_3 + \dots + M_{n-1}M_n = AM_1 - AM_n.$$
 Với $n = 6$ và $L = 64\text{ cm}$:
 - $AM_1 = 32\text{ cm}.$
-- $AM_6 = \frac{64}{2^6} = \frac{64}{64} = 1\text{ cm}.$
+- $AM_6 = \dfrac{64}{2^6} = \dfrac{64}{64} = 1\text{ cm}.$
 Suy ra:
 $$S_6 = 32 - 1 = 31\text{ cm}.$$
 
@@ -427,9 +427,9 @@ $$S_6 = 32 - 1 = 31\text{ cm}.$$
 #### Bài toán:
 Cho đoạn thẳng $AB$ có trung điểm là $M.$ Lấy một điểm $P$ bất kì nằm trên đường thẳng $AB.$ Chứng minh rằng:
 a) Nếu điểm $P$ nằm ngoài đoạn thẳng $AB$ thì:
-$$PM = \frac{PA + PB}{2}.$$
+$$PM = \dfrac{PA + PB}{2}.$$
 b) Nếu điểm $P$ nằm bên trong đoạn thẳng $AB$ thì:
-$$PM = \frac{|PA - PB|}{2}.$$
+$$PM = \dfrac{|PA - PB|}{2}.$$
 
 **Lời giải:**
 
@@ -442,12 +442,12 @@ Trường hợp a (P nằm ngoài AB về phía A):
 a) **Trường hợp điểm $P$ nằm ngoài đoạn thẳng $AB$:**
 Không mất tính tổng quát, giả sử điểm $P$ nằm về phía điểm $A$ (thứ tự các điểm là $P, A, M, B$).
 - Vì $A$ nằm giữa $P$ và $M$ nên: $PM = PA + AM.$
-- Vì $M$ là trung điểm của $AB$ nên $AM = MB = \frac{AB}{2}.$
+- Vì $M$ là trung điểm của $AB$ nên $AM = MB = \dfrac{AB}{2}.$
 - Lại có điểm $M$ nằm giữa $P$ và $B$ nên: $PB = PM + MB = PM + AM.$
 Cộng hai hệ thức:
 $$PA + PB = (PM - AM) + (PM + AM) = 2 \cdot PM.$$
 Suy ra:
-$$PM = \frac{PA + PB}{2}\quad \text{(Đpcm)}.$$
+$$PM = \dfrac{PA + PB}{2}\quad \text{(Đpcm)}.$$
 *(Nếu $P$ nằm về phía $B,$ chứng minh tương tự).*
 
 b) **Trường hợp điểm $P$ nằm bên trong đoạn thẳng $AB$:**
@@ -457,13 +457,13 @@ Giả sử $P$ nằm giữa $A$ và $M$ (suy ra $PA < PB$).
 Từ hai đẳng thức trên, ta trừ vế theo vế:
 $$PB - PA = (PM + AM) - (AM - PM) = 2 \cdot PM.$$
 Suy ra:
-$$PM = \frac{PB - PA}{2}.$$
+$$PM = \dfrac{PB - PA}{2}.$$
 Vì $P$ nằm tùy ý giữa $A$ và $B$ nên tổng quát:
-$$PM = \frac{|PA - PB|}{2}\quad \text{(Đpcm)}.$$
+$$PM = \dfrac{|PA - PB|}{2}\quad \text{(Đpcm)}.$$
 
 > [!TIP]
 > **Ý nghĩa hình học sâu sắc:**
-> Trong hệ trục số, nếu $A$ có tọa độ $x_A$ và $B$ có tọa độ $x_B$ thì trung điểm $M$ luôn có tọa độ $x_M = \frac{x_A + x_B}{2}.$ Hai công thức trên chính là nền tảng hình học thuần túy của công thức tọa độ trung điểm mà các em sẽ dùng suốt cấp 2 và cấp 3!
+> Trong hệ trục số, nếu $A$ có tọa độ $x_A$ và $B$ có tọa độ $x_B$ thì trung điểm $M$ luôn có tọa độ $x_M = \dfrac{x_A + x_B}{2}.$ Hai công thức trên chính là nền tảng hình học thuần túy của công thức tọa độ trung điểm mà các em sẽ dùng suốt cấp 2 và cấp 3!
 
 ---
 
@@ -489,7 +489,7 @@ Dấu đẳng thức xảy ra khi và chỉ khi:
 $$XA - XB = 0 \iff XA = XB.$$
 Điểm $X$ vừa thuộc đoạn thẳng $AB$ (nằm giữa $A$ và $B$), vừa cách đều hai điểm $A$ và $B$ ($XA = XB$).
 Theo định nghĩa, điều này xảy ra khi và chỉ khi **điểm $X$ chính là trung điểm của đoạn thẳng $AB$**.
-Khi đó $XA = XB = \frac{20}{2} = 10\text{ km},$ và độ trễ bằng $0.$
+Khi đó $XA = XB = \dfrac{20}{2} = 10\text{ km},$ và độ trễ bằng $0.$
 
 ---
 
@@ -502,14 +502,14 @@ b) Số lượng trung điểm phân biệt có thể trùng nhau không? Tìm s
 
 **Lời giải:**
 a) Số đoạn thẳng tạo bởi $n$ điểm phân biệt là:
-$$N = \frac{n(n - 1)}{2}.$$
-Với $n = 5,$ số đoạn thẳng là $\frac{5 \cdot 4}{2} = 10$ đoạn thẳng.
+$$N = \dfrac{n(n - 1)}{2}.$$
+Với $n = 5,$ số đoạn thẳng là $\dfrac{5 \cdot 4}{2} = 10$ đoạn thẳng.
 
 b) Mỗi đoạn thẳng có đúng một trung điểm, nhưng các trung điểm của các đoạn thẳng khác nhau **hoàn toàn có thể trùng nhau**.
 - **Trường hợp tạo ra ít trung điểm nhất (Dãy cách đều):**
 Xét $5$ điểm đặt tại các tọa độ nguyên liên tiếp: $A_1(0), A_2(1), A_3(2), A_4(3), A_5(4)$ (mỗi đoạn thẳng liên tiếp dài $1$ đơn vị).
 Tọa độ trung điểm của đoạn thẳng nối $A_i$ và $A_j$ là:
-$$M_{ij} = \frac{x_i + x_j}{2}.$$
+$$M_{ij} = \dfrac{x_i + x_j}{2}.$$
 Vì $x_i, x_j \in \{0, 1, 2, 3, 4\}$ và $x_i < x_j$ nên tổng $S = x_i + x_j$ nhận các giá trị nguyên từ $0 + 1 = 1$ đến $3 + 4 = 7.$
 Tổng cộng có $7 - 1 + 1 = 7$ giá trị tổng khác nhau:
 $$S \in \{1, 2, 3, 4, 5, 6, 7\}.$$
@@ -708,7 +708,7 @@ b) Tính độ dài đoạn thẳng $IK$ theo $a.$
 #### Phần 2: Tự luận (7,0 điểm)
 
 **Bài 1 (2,0 điểm):**
-- Tính độ dài $AM = \frac{AB}{2} = \frac{8}{2} = 4\text{ cm}.$ *(0,5 điểm)*
+- Tính độ dài $AM = \dfrac{AB}{2} = \dfrac{8}{2} = 4\text{ cm}.$ *(0,5 điểm)*
 - Nêu các bước vẽ:
   - Bước 1: Dùng thước thẳng vẽ đoạn thẳng $AB = 8\text{ cm}.$ *(0,5 điểm)*
   - Bước 2: Đặt vạch $0$ của thước trùng điểm $A,$ vạch $4\text{ cm}$ chỉ vị trí điểm $M$ trên đoạn thẳng $AB.$ *(0,5 điểm)*
@@ -725,20 +725,20 @@ b) Tính độ dài đoạn thẳng $IK$ theo $a.$
 
 **Bài 3 (1,5 điểm):**
 - a) Vì $M$ là trung điểm của $PQ$ nên:
-  $$MQ = \frac{PQ}{2} = \frac{20}{2} = 10\text{ cm}.$$
+  $$MQ = \dfrac{PQ}{2} = \dfrac{20}{2} = 10\text{ cm}.$$
   Vì $N$ là trung điểm của $MQ$ nên:
-  $$MN = \frac{MQ}{2} = \frac{10}{2} = 5\text{ cm}.$$ *(0,75 điểm)*
+  $$MN = \dfrac{MQ}{2} = \dfrac{10}{2} = 5\text{ cm}.$$ *(0,75 điểm)*
 - b) Vì $M$ là trung điểm của $PQ$ nên $PM = 10\text{ cm}.$
   Do $M$ nằm giữa $P$ và $Q,$ $N$ nằm giữa $M$ và $Q$ nên điểm $M$ nằm giữa hai điểm $P$ và $N.$
   Suy ra:
   $$PN = PM + MN = 10 + 5 = 15\text{ cm}.$$ *(0,75 điểm)*
 
 **Bài 4 (1,5 điểm):**
-- a) Vì $I$ là trung điểm của $AC$ nên $IC = \frac{AC}{2}.$
-  Vì $K$ là trung điểm của $CB$ nên $CK = \frac{CB}{2}.$
+- a) Vì $I$ là trung điểm của $AC$ nên $IC = \dfrac{AC}{2}.$
+  Vì $K$ là trung điểm của $CB$ nên $CK = \dfrac{CB}{2}.$
   Do $C$ nằm giữa $A$ và $B$ nên tia $CA$ và tia $CB$ đối nhau, suy ra $C$ nằm giữa $I$ và $K.$
   Do đó:
-  $$IK = IC + CK = \frac{AC}{2} + \frac{CB}{2} = \frac{AC + CB}{2} = \frac{AB}{2}.$$
+  $$IK = IC + CK = \dfrac{AC}{2} + \dfrac{CB}{2} = \dfrac{AC + CB}{2} = \dfrac{AB}{2}.$$
   Vì $AB$ có độ dài cố định nên $IK$ có độ dài không đổi, không phụ thuộc vào vị trí điểm $C.$ *(1,0 điểm)*
 - b) Với $AB = 2a,$ ta có:
-  $$IK = \frac{2a}{2} = a.$$ *(0,5 điểm)*
+  $$IK = \dfrac{2a}{2} = a.$$ *(0,5 điểm)*

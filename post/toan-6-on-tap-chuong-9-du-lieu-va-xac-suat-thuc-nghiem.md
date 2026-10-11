@@ -26,7 +26,7 @@ Suốt hành trình $6$ bài học vừa qua, các em đã được trang bị m
 3. **Bài 40:** Làm chủ biểu đồ cột đơn — công cụ so sánh trực quan độ lớn của các đối tượng qua chiều cao các cột.
 4. **Bài 41:** Nâng cấp lên biểu đồ cột kép — kỹ năng đặt hai cột sát nhau để so sánh song song hai tập dữ liệu đa chiều, phân tích bảng chú giải và nhận định xu thế.
 5. **Bài 42:** Bước chân vào thế giới của sự ngẫu nhiên, học cách liệt kê toàn bộ các kết quả có thể xảy ra, phân biệt chính xác ba loại sự kiện: *chắc chắn*, *không thể* và *có thể*.
-6. **Bài 43:** Định lượng khả năng xảy ra của sự việc thông qua công thức **xác suất thực nghiệm** $P = \frac{k}{n}$, dùng dữ liệu quá khứ để dự đoán tương lai theo Luật số lớn.
+6. **Bài 43:** Định lượng khả năng xảy ra của sự việc thông qua công thức **xác suất thực nghiệm** $P = \dfrac{k}{n}$, dùng dữ liệu quá khứ để dự đoán tương lai theo Luật số lớn.
 
 Bài tổng ôn này được thiết kế để kết nối toàn bộ $6$ bài học thành một khối kiến thức liền mạch, rèn luyện kỹ năng xử lý các bài toán tổng hợp đa bước và khám phá $5$ chuyên đề bồi dưỡng học sinh giỏi độc bản nâng cao tầm vóc tư duy.
 
@@ -167,7 +167,7 @@ Biểu đồ cột kép dưới đây biểu diễn số lượng cây xanh do h
    (Nhiều hơn $10$ cây).
 
 4. Tỉ số phần trăm số cây Khối 6 trồng được ở Tuần 4 so với tổng số cây cả $4$ tuần của Khối 6 là:
-   $$\frac{80}{240} \times 100\% = \frac{1}{3} \times 100\% \approx 33{,}33\%.$$
+   $$\dfrac{80}{240} \times 100\% = \dfrac{1}{3} \times 100\% \approx 33{,}33\%.$$
 
 ---
 
@@ -196,11 +196,11 @@ Một xưởng cơ khí chính xác kiểm tra ngẫu nhiên $200$ chi tiết m�
 
 2. Tính xác suất thực nghiệm của từng sự kiện ($n = 200$):
    - Sự kiện $E_1$: Số chi tiết loại A là $184$.
-     $$P(E_1) = \frac{184}{200} = \frac{23}{25} = 0{,}92 \quad (92\%).$$
+     $$P(E_1) = \dfrac{184}{200} = \dfrac{23}{25} = 0{,}92 \quad (92\%).$$
    - Sự kiện $E_2$: Số phế phẩm là $4$.
-     $$P(E_2) = \frac{4}{200} = \frac{1}{50} = 0{,}02 \quad (2\%).$$
+     $$P(E_2) = \dfrac{4}{200} = \dfrac{1}{50} = 0{,}02 \quad (2\%).$$
    - Sự kiện $E_3$: Số chi tiết sử dụng được là $184 + 12 = 196$.
-     $$P(E_3) = \frac{196}{200} = \frac{49}{50} = 0{,}98 \quad (98\%).$$
+     $$P(E_3) = \dfrac{196}{200} = \dfrac{49}{50} = 0{,}98 \quad (98\%).$$
 
 3. Dự đoán số lượng trong đơn hàng $N = 15\,000$ chi tiết:
    - Số chi tiết đạt loại A dự đoán là:
@@ -254,7 +254,7 @@ Biểu đồ cột kép cho biết số điểm $9$ và điểm $10$ của lớp
    $$27 + 20 = 47.$$
    (Cả hai lớp có $47$ điểm $10$).
    Xác suất thực nghiệm để chọn ngẫu nhiên được một điểm $10$ trong tổng số $87$ điểm tốt là:
-   $$P = \frac{47}{87} \approx 0{,}5402 \quad (54{,}02\%).$$
+   $$P = \dfrac{47}{87} \approx 0{,}5402 \quad (54{,}02\%).$$
 
 ---
 
@@ -297,7 +297,7 @@ Bảng thống kê:
 
 3. Xã nhận được nhiều quà nhất là Xã C ($250$ suất).
    Tỉ số phần trăm là:
-   $$\frac{250}{750} \times 100\% = \frac{1}{3} \times 100\% \approx 33{,}33\%.$$
+   $$\dfrac{250}{750} \times 100\% = \dfrac{1}{3} \times 100\% \approx 33{,}33\%.$$
 
 ---
 
@@ -359,20 +359,20 @@ Một trạm bảo tồn thiên nhiên muốn ước lượng số cá thể vo�
 
 **Lời giải:**
 1. Xác suất thực nghiệm chụp được voọc có vòng ở đợt 2 là:
-   $$P_1 = \frac{9}{60} = \frac{3}{20} = 0{,}15 \quad (15\%).$$
+   $$P_1 = \dfrac{9}{60} = \dfrac{3}{20} = 0{,}15 \quad (15\%).$$
 
 2. Gọi số cá thể voọc trong khu bảo tồn là $N$.
    Tỉ lệ cá thể có vòng định vị trong toàn quần thể xấp xỉ tỉ lệ thực nghiệm:
-   $$\frac{45}{N} \approx 0{,}15 \implies N \approx \frac{45}{0{,}15} = 300.$$
+   $$\dfrac{45}{N} \approx 0{,}15 \implies N \approx \dfrac{45}{0{,}15} = 300.$$
    Vậy ước tính có khoảng $300$ cá thể voọc trong khu bảo tồn.
 
 3. Khi gộp cả hai đợt bẫy ảnh lại:
    - Tổng số cá thể voọc chụp được là: $60 + 40 = 100$ cá thể.
    - Tổng số cá thể có vòng định vị là: $9 + 5 = 14$ cá thể.
    - Xác suất thực nghiệm gộp là:
-     $$P = \frac{14}{100} = 0{,}14 \quad (14\%).$$
+     $$P = \dfrac{14}{100} = 0{,}14 \quad (14\%).$$
    - Ước lượng lại quy mô quần thể voọc:
-     $$N' \approx \frac{45}{0{,}14} = \frac{4500}{14} \approx 321.$$
+     $$N' \approx \dfrac{45}{0{,}14} = \dfrac{4500}{14} \approx 321.$$
    Vậy sau khi tăng cỡ mẫu bẫy ảnh, ước lượng quần thể voọc là khoảng $321$ cá thể.
 
 ---
@@ -620,8 +620,8 @@ $$7, 8, 9, 6, 8, 7, 10, 8, 9, 7, 8, 6, 8, 9, 10, 7, 8, 7, 9, 8.$$
 - Câu 2: **B** ($0{,}5$ điểm) — $28 = 3 \times 8 + 4$ (3 hình và nửa hình).
 - Câu 3: **C** ($0{,}5$ điểm)
 - Câu 4: **C** ($0{,}5$ điểm) — Các số từ $1$ đến $6$ không số nào chia hết cho $7$.
-- Câu 5: **C** ($0{,}5$ điểm) — $P = \frac{26}{50} = 0{,}52$.
-- Câu 6: **C** ($0{,}5$ điểm) — $P = \frac{225}{250} = 0{,}90$.
+- Câu 5: **C** ($0{,}5$ điểm) — $P = \dfrac{26}{50} = 0{,}52$.
+- Câu 6: **C** ($0{,}5$ điểm) — $P = \dfrac{225}{250} = 0{,}90$.
 
 #### Tự luận (7,0 điểm)
 **Bài 1:**
@@ -654,7 +654,7 @@ $$7, 8, 9, 6, 8, 7, 10, 8, 9, 7, 8, 6, 8, 9, 10, 7, 8, 7, 9, 8.$$
 
 **Bài 4:**
 1. Xác suất thực nghiệm hạt nảy mầm là:
-   $$P = \frac{276}{300} = \frac{23}{25} = 0{,}92 \quad (92\%).$$ *(0,75 điểm).*
+   $$P = \dfrac{276}{300} = \dfrac{23}{25} = 0{,}92 \quad (92\%).$$ *(0,75 điểm).*
 2. Số hạt giống cần mua là:
    $$9\,200 : 0{,}92 = 10\,000.$$
    (Cần mua khoảng $10\,000$ hạt giống). *(0,75 điểm).*
@@ -739,8 +739,8 @@ $$7, 8, 9, 6, 8, 7, 10, 8, 9, 7, 8, 6, 8, 9, 10, 7, 8, 7, 9, 8.$$
 - Câu 1: **C** ($0{,}5$ điểm) — Thời gian không thể là số âm.
 - Câu 2: **C** ($0{,}5$ điểm) — Cột lớp 6C thấp nhất ($9$ đơn vị).
 - Câu 3: **C** ($0{,}5$ điểm) — Các ô đều là số chẵn, không có số lẻ.
-- Câu 4: **B** ($0{,}5$ điểm) — $P = \frac{16}{80} = 0{,}20$.
-- Câu 5: **A** ($0{,}5$ điểm) — $P = \frac{72}{120} = 0{,}60$.
+- Câu 4: **B** ($0{,}5$ điểm) — $P = \dfrac{16}{80} = 0{,}20$.
+- Câu 5: **A** ($0{,}5$ điểm) — $P = \dfrac{72}{120} = 0{,}60$.
 - Câu 6: **B** ($0{,}5$ điểm) — $k = 0{,}68 \times 50 = 34$ phát.
 
 #### Tự luận (7,0 điểm)
@@ -775,7 +775,7 @@ $$7, 8, 9, 6, 8, 7, 10, 8, 9, 7, 8, 6, 8, 9, 10, 7, 8, 7, 9, 8.$$
 
 **Bài 4:**
 1. Xác suất thực nghiệm ngày có mưa rào là:
-   $$P = \frac{54}{90} = \frac{3}{5} = 0{,}6 \quad (60\%).$$ *(0,75 điểm).*
+   $$P = \dfrac{54}{90} = \dfrac{3}{5} = 0{,}6 \quad (60\%).$$ *(0,75 điểm).*
 2. Dự đoán số ngày có mưa rào trong $120$ ngày là:
    $$0{,}6 \times 120 = 72.$$
    (Khoảng $72$ ngày). *(0,75 điểm).*

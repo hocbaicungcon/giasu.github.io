@@ -842,7 +842,7 @@ Gọi $S$ là tổng của tất cả các số tự nhiên có ba chữ số t�
 Số các số hạng từ $100$ đến $999$ là:
 $$999 - 100 + 1 = 900\text{ (số hạng)}.$$
 Áp dụng công thức tính tổng dãy số cách đều:
-$$S = \frac{(100 + 999) \cdot 900}{2} = 1099 \cdot 450 = 494550.$$
+$$S = \dfrac{(100 + 999) \cdot 900}{2} = 1099 \cdot 450 = 494550.$$
 Xét tính chia hết của số $494550$:
 - Chữ số tận cùng là $0$ nên $S\ \vdots\ 2$ và $S\ \vdots\ 5.$
 - Tổng các chữ số là: $4 + 9 + 4 + 5 + 5 + 0 = 27.$

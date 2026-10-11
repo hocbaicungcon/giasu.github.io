@@ -360,24 +360,24 @@ b) Trong khoảng thời gian từ $6$ giờ đúng đến $7$ giờ đúng, có
 
 **Lời giải:**
 Vận tốc tương đối của kim phút so với kim giờ:
-$$v = 6^\circ - 0{,}5^\circ = 5{,}5^\circ/\text{phút} = \frac{11}{2}^\circ/\text{phút}.$$
+$$v = 6^\circ - 0{,}5^\circ = 5{,}5^\circ/\text{phút} = \dfrac{11}{2}^\circ/\text{phút}.$$
 
 a) **Thời gian để hai kim trùng nhau:**
 Lúc $6$ giờ, kim phút đang cách kim giờ $180^\circ.$
 Để trùng nhau, kim phút phải đuổi kịp khoảng cách $180^\circ$:
-$$t = \frac{180^\circ}{5{,}5^\circ/\text{phút}} = \frac{180}{\frac{11}{2}} = \frac{360}{11} = 32\frac{8}{11}\quad \text{phút}.$$
-Vậy sau $32\frac{8}{11}$ phút (tức lúc $6$ giờ $32\frac{8}{11}$ phút), hai kim sẽ trùng khít nhau lần đầu tiên.
+$$t = \dfrac{180^\circ}{5{,}5^\circ/\text{phút}} = \dfrac{180}{\dfrac{11}{2}} = \dfrac{360}{11} = 32\dfrac{8}{11}\quad \text{phút}.$$
+Vậy sau $32\dfrac{8}{11}$ phút (tức lúc $6$ giờ $32\dfrac{8}{11}$ phút), hai kim sẽ trùng khít nhau lần đầu tiên.
 
 b) **Thời điểm tạo góc vuông giữa $6$ giờ và $7$ giờ:**
 Lúc $6$ giờ, góc giữa hai kim là $180^\circ.$ Để tạo góc vuông ($90^\circ$):
 - *Lần 1 (kim phút đuổi bớt góc lệch từ $180^\circ$ xuống $90^\circ$):*
   Góc cần đuổi là: $180^\circ - 90^\circ = 90^\circ.$
-  $$t_1 = \frac{90}{\frac{11}{2}} = \frac{180}{11} = 16\frac{4}{11}\quad \text{phút}.$$
-  Thời điểm này là lúc **$6$ giờ $16\frac{4}{11}$ phút**.
+  $$t_1 = \dfrac{90}{\dfrac{11}{2}} = \dfrac{180}{11} = 16\dfrac{4}{11}\quad \text{phút}.$$
+  Thời điểm này là lúc **$6$ giờ $16\dfrac{4}{11}$ phút**.
 - *Lần 2 (kim phút vượt qua kim giờ một góc $90^\circ$):*
   Góc cần đi là: $180^\circ + 90^\circ = 270^\circ.$
-  $$t_2 = \frac{270}{\frac{11}{2}} = \frac{540}{11} = 49\frac{1}{11}\quad \text{phút}.$$
-  Thời điểm này là lúc **$6$ giờ $49\frac{1}{11}$ phút**.
+  $$t_2 = \dfrac{270}{\dfrac{11}{2}} = \dfrac{540}{11} = 49\dfrac{1}{11}\quad \text{phút}.$$
+  Thời điểm này là lúc **$6$ giờ $49\dfrac{1}{11}$ phút**.
 
 ---
 

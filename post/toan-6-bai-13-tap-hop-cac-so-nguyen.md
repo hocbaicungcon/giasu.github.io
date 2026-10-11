@@ -932,7 +932,7 @@ a) Tập hợp các số nguyên $x$ thỏa mãn là:
 $$X = \{-2028; -2027; \dots; -1;\; 0;\; 1;\; \dots; 2027; 2028\}.$$
 
 Công thức tính số phần tử của dãy số nguyên cách đều $1$ đơn vị:
-$$\text{Số lượng} = \frac{\text{Số cuối} - \text{Số đầu}}{\text{Khoảng cách}} + 1 = \frac{2028 - (-2028)}{1} + 1 = 4056 + 1 = 4057\text{ (số)}.$$
+$$\text{Số lượng} = \dfrac{\text{Số cuối} - \text{Số đầu}}{\text{Khoảng cách}} + 1 = \dfrac{2028 - (-2028)}{1} + 1 = 4056 + 1 = 4057\text{ (số)}.$$
 
 b) Phân loại cấu trúc tập hợp $X$:
 - **Nhóm số nguyên âm:** Gồm các số từ $-2028$ đến $-1$, có:

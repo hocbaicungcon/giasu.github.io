@@ -414,7 +414,7 @@ Khoảng cách từ Trái Đất đến Mặt Trời khoảng $15 \cdot 10^7\tex
 <summary><strong>Xem lời giải Luyện tập 5.1</strong></summary>
 
 Thời gian cần thiết để tàu bay hết quãng đường là:
-$$\frac{15 \cdot 10^7}{10^4} = 15 \cdot 10^{7-4} = 15 \cdot 10^3 = 15000\text{ (giờ)}.$$
+$$\dfrac{15 \cdot 10^7}{10^4} = 15 \cdot 10^{7-4} = 15 \cdot 10^3 = 15000\text{ (giờ)}.$$
 **Đáp số:** $15000$ giờ.
 
 </details>
@@ -836,7 +836,7 @@ $$C = (3^4 + 3^5 + 3^6) : (1 + 3 + 3^2).$$
 Đặt $3^4$ ra ngoài làm thừa số chung ở số bị chia:
 $$3^4 + 3^5 + 3^6 = 3^4 \cdot 1 + 3^4 \cdot 3^1 + 3^4 \cdot 3^2 = 3^4 \cdot (1 + 3 + 3^2).$$
 Khi đó:
-$$C = \frac{3^4 \cdot (1 + 3 + 3^2)}{1 + 3 + 3^2} = 3^4 = 81.$$
+$$C = \dfrac{3^4 \cdot (1 + 3 + 3^2)}{1 + 3 + 3^2} = 3^4 = 81.$$
 **Đáp số:** $81.$
 
 </details>

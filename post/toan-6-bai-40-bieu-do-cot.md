@@ -280,7 +280,7 @@ Số học sinh (bạn)
 d) Số học sinh đạt điểm Tốt (từ điểm $8$ trở lên gồm điểm $8, 9, 10$) là:
 $$9 + 5 + 3 = 17\quad \text{(học sinh)}.$$
 Tỉ lệ phần trăm học sinh đạt điểm Tốt là:
-$$\frac{17}{25} \times 100\% = 68\%.$$
+$$\dfrac{17}{25} \times 100\% = 68\%.$$
 
 ---
 
@@ -299,7 +299,7 @@ b) Nêu quy tắc đạo đức thống kê khi trình bày biểu đồ cột.
 
 **Lời giải:**
 a) **Phân tích bẫy thị giác:**
-- Thực tế thị phần của công ty B ($51\%$) chỉ nhỉnh hơn công ty A ($49\%$) đúng $2\%$ thị phần (tỉ lệ thực tế là $\frac{51}{49} \approx 1{,}04$ lần — chênh lệch không đáng kể).
+- Thực tế thị phần của công ty B ($51\%$) chỉ nhỉnh hơn công ty A ($49\%$) đúng $2\%$ thị phần (tỉ lệ thực tế là $\dfrac{51}{49} \approx 1{,}04$ lần — chênh lệch không đáng kể).
 - Tuy nhiên, việc cắt cụt trục tung bắt đầu từ $48\%$ đã biến độ cao của cột A thành $49 - 48 = 1$ đơn vị và cột B thành $51 - 48 = 3$ đơn vị. Thị giác người xem sẽ đánh lừa bộ não rằng công ty B áp đảo gấp $3$ lần công ty A ($300\%$). Đây là thủ thuật đánh lừa thị giác phi chuẩn mực.
 b) **Quy tắc đạo đức:**
 Trong biểu đồ cột biểu diễn đại lượng số tuyệt đối, trục tung **luôn luôn phải bắt đầu từ vạch số $0$**. Trong trường hợp đặc biệt bắt buộc phải ngắt quãng trục để làm rõ chi tiết nhỏ, bắt buộc phải có kí hiệu lượn sóng cắt đứt trục ($\approx$) và cảnh báo rõ ràng cho người xem.
@@ -312,7 +312,7 @@ Trong biểu đồ cột biểu diễn đại lượng số tuyệt đối, tr�
 > **Công thức tính số trung bình cộng từ biểu đồ cột:**
 > Giả sử biểu đồ có $k$ cột với các giá trị đối tượng $x_1, x_2, \dots, x_k$ và tần số (chiều cao cột) tương ứng là $n_1, n_2, \dots, n_k.$
 > Số trung bình cộng $\overline{X}$ được tính theo công thức:
-> $$\overline{X} = \frac{x_1 \cdot n_1 + x_2 \cdot n_2 + \dots + x_k \cdot n_k}{n_1 + n_2 + \dots + n_k}.$$
+> $$\overline{X} = \dfrac{x_1 \cdot n_1 + x_2 \cdot n_2 + \dots + x_k \cdot n_k}{n_1 + n_2 + \dots + n_k}.$$
 
 #### Bài toán:
 Biểu đồ cột sau ghi lại số lỗi chính tả trong bài kiểm tra Tập làm văn của $40$ học sinh lớp 6D:
@@ -333,7 +333,7 @@ b) Tổng số lỗi chính tả của cả lớp $40$ học sinh là:
 $$S = (0 \cdot 12) + (1 \cdot 15) + (2 \cdot 8) + (3 \cdot 3) + (4 \cdot 2)$$
 $$S = 0 + 15 + 16 + 9 + 8 = 48\quad \text{(lỗi)}.$$
 Số lỗi chính tả trung bình của một học sinh là:
-$$\overline{X} = \frac{48}{40} = 1{,}2\quad \text{(lỗi/học sinh)}.$$
+$$\overline{X} = \dfrac{48}{40} = 1{,}2\quad \text{(lỗi/học sinh)}.$$
 
 ---
 
@@ -356,7 +356,7 @@ b) Nếu điểm chuẩn đạt yêu cầu là từ $6$ điểm trở lên thì 
 a) Số học sinh đạt từ điểm $8$ trở lên gồm các mức điểm $8, 9, 10$:
 $$N_{\ge 8} = 20 + 10 + 5 = 35\quad \text{(học sinh)}.$$
 Tỉ lệ học sinh đủ điều kiện vào đội tuyển là:
-$$\frac{35}{100} \times 100\% = 35\%.$$
+$$\dfrac{35}{100} \times 100\% = 35\%.$$
 
 b) Số học sinh đạt từ điểm $6$ trở lên:
 Cách 1: Cộng trực tiếp các điểm $6, 7, 8, 9, 10$:
@@ -364,7 +364,7 @@ $$N_{\ge 6} = 20 + 35 + 20 + 10 + 5 = 90\quad \text{(học sinh)}.$$
 Cách 2: Lấy tổng số học sinh trừ đi số học sinh dưới điểm $6$ (chỉ có điểm $5$):
 $$N_{\ge 6} = 100 - 10 = 90\quad \text{(học sinh)}.$$
 Tỉ lệ học sinh đạt yêu cầu là:
-$$\frac{90}{100} \times 100\% = 90\%.$$
+$$\dfrac{90}{100} \times 100\% = 90\%.$$
 
 ---
 
@@ -420,7 +420,7 @@ b)
 - Số hộp bánh đạt chuẩn chất lượng là:
   $$N_{\text{đạt}} = 100 - 5 = 95\quad \text{(hộp)}.$$
 - Tỉ lệ đạt chuẩn chất lượng của dây chuyền đóng gói là:
-  $$\frac{95}{100} \times 100\% = 95\%.$$
+  $$\dfrac{95}{100} \times 100\% = 95\%.$$
 
 ---
 
@@ -612,7 +612,7 @@ b) Tính tỉ số phần trăm của số học sinh đạt loại Giỏi so v�
 #### Phần 1: Trắc nghiệm (3,0 điểm)
 - Câu 1: **B** (Danh mục các đối tượng). *(0,75 điểm)*
 - Câu 2: **D** ($30$). *(0,75 điểm)*
-- Câu 3: **A** ($\frac{12}{16} \times 100\% = 75\%$). *(0,75 điểm)*
+- Câu 3: **A** ($\dfrac{12}{16} \times 100\% = 75\%$). *(0,75 điểm)*
 - Câu 4: **B** (Bằng nhau). *(0,75 điểm)*
 
 #### Phần 2: Tự luận (7,0 điểm)
@@ -627,7 +627,7 @@ b) Tính tỉ số phần trăm của số học sinh đạt loại Giỏi so v�
 - c) Chênh lệch giữa Thứ Năm và Thứ Hai là:
   $$250 - 120 = 130.$$
   Tỉ số phần trăm tăng là:
-  $$\frac{130}{120} \times 100\% \approx 108{,}33\%.$$
+  $$\dfrac{130}{120} \times 100\% \approx 108{,}33\%.$$
   *(0,75 điểm)*
 
 **Bài 2 (2,5 điểm):**
@@ -646,5 +646,5 @@ b) Tính tỉ số phần trăm của số học sinh đạt loại Giỏi so v�
   Suy ra $y = 2 \times 8 = 16.$
   Vậy có **$8$ bạn Khá** và **$16$ bạn Giỏi**. *(1,0 điểm)*
 - b) Tỉ lệ phần trăm học sinh Giỏi so với cả lớp:
-  $$\frac{16}{30} \times 100\% \approx 53{,}33\%.$$
+  $$\dfrac{16}{30} \times 100\% \approx 53{,}33\%.$$
   *(0,5 điểm)*

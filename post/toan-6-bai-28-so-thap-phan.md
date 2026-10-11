@@ -59,9 +59,9 @@ Hãy kiểm tra nhanh kiến thức nền tảng của em qua 5 câu hỏi tư d
   - Số $0{,}408$: Đọc là "không phẩy bốn trăm linh tám". Phần nguyên là $0,$ phần thập phân là $408.$
   - Số $7{,}9$: Đọc là "bảy phẩy chín". Phần nguyên là $7,$ phần thập phân là $9.$
 
-**Câu 2 (Chuyển đổi phân số ở Tiểu học):** Ở Tiểu học ta đã biết $\frac{1}{10} = 0{,}1.$ Hãy viết các phân số sau dưới dạng số thập phân: $\frac{9}{10};\; \frac{27}{100};\; \frac{5}{1\,000}.$
+**Câu 2 (Chuyển đổi phân số ở Tiểu học):** Ở Tiểu học ta đã biết $\dfrac{1}{10} = 0{,}1.$ Hãy viết các phân số sau dưới dạng số thập phân: $\dfrac{9}{10};\; \dfrac{27}{100};\; \dfrac{5}{1\,000}.$
 - *Trả lời:*
-  $$\frac{9}{10} = 0{,}9;\quad \frac{27}{100} = 0{,}27;\quad \frac{5}{1\,000} = 0{,}005.$$
+  $$\dfrac{9}{10} = 0{,}9;\quad \dfrac{27}{100} = 0{,}27;\quad \dfrac{5}{1\,000} = 0{,}005.$$
 
 **Câu 3 (So sánh hai số thập phân dương):** So sánh $4{,}6$ và $4{,}58.$ Số nào lớn hơn?
 - *Trả lời:* Viết $4{,}6 = 4{,}60.$ Vì phần nguyên bằng nhau ($4 = 4$) và ở hàng phần mười có $6 > 5$ (hoặc $60 > 58$) nên $4{,}6 > 4{,}58.$ Vậy $4{,}6$ lớn hơn.
@@ -110,7 +110,7 @@ Mỗi số thập phân gồm hai phần ngăn cách nhau bởi dấu phẩy `",
 **Định nghĩa:** Phân số thập phân là phân số có mẫu số là lũy thừa của $10$ với số mũ tự nhiên khác $0$ (tức là mẫu số là $10;\; 100;\; 1\,000;\; 10\,000;\dots$).
 
 Ví dụ:
-$$\frac{7}{10};\quad \frac{-39}{100};\quad \frac{215}{100};\quad \frac{-17}{1\,000};\quad \frac{8}{10\,000}.$$
+$$\dfrac{7}{10};\quad \dfrac{-39}{100};\quad \dfrac{215}{100};\quad \dfrac{-17}{1\,000};\quad \dfrac{8}{10\,000}.$$
 
 #### b) Quy tắc chuyển đổi giữa phân số thập phân và số thập phân
 1. **Từ phân số thập phân sang số thập phân:**
@@ -121,13 +121,13 @@ $$\frac{7}{10};\quad \frac{-39}{100};\quad \frac{215}{100};\quad \frac{-17}{1\,0
    - Nếu tử số không đủ chữ số, ta viết thêm các chữ số $0$ vào trước tử số rồi đặt dấu phẩy.
    - Phân số dương cho số thập phân dương, phân số âm cho số thập phân âm.
 
-$$\frac{43}{10} = 4{,}3;\quad \frac{-8}{100} = -0{,}08;\quad \frac{127}{100} = 1{,}27;\quad \frac{-5}{1\,000} = -0{,}005.$$
+$$\dfrac{43}{10} = 4{,}3;\quad \dfrac{-8}{100} = -0{,}08;\quad \dfrac{127}{100} = 1{,}27;\quad \dfrac{-5}{1\,000} = -0{,}005.$$
 
 2. **Từ số thập phân sang phân số thập phân:**
    - Tử số là số nguyên nhận được bằng cách bỏ dấu phẩy khỏi số thập phân (giữ nguyên dấu âm nếu có).
    - Mẫu số là số $1$ kèm theo số chữ số $0$ bằng đúng số chữ số của phần thập phân.
 
-$$2{,}9 = \frac{29}{10};\quad -0{,}41 = \frac{-41}{100};\quad -3{,}05 = \frac{-305}{100};\quad 0{,}019 = \frac{19}{1\,000}.$$
+$$2{,}9 = \dfrac{29}{10};\quad -0{,}41 = \dfrac{-41}{100};\quad -3{,}05 = \dfrac{-305}{100};\quad 0{,}019 = \dfrac{19}{1\,000}.$$
 
 #### c) Số đối của số thập phân
 - Hai số thập phân có cùng phần nguyên, cùng phần thập phân nhưng mang dấu trái ngược nhau được gọi là **hai số thập phân đối nhau**.
@@ -225,23 +225,23 @@ $$-3{,}8 < -3{,}72.$$
 
 **Ví dụ 1:**
 a) Viết các phân số thập phân sau dưới dạng số thập phân:
-$$\frac{83}{10};\quad \frac{-247}{100};\quad \frac{9}{100};\quad \frac{-31}{1\,000};\quad \frac{5\,012}{1\,000}.$$
+$$\dfrac{83}{10};\quad \dfrac{-247}{100};\quad \dfrac{9}{100};\quad \dfrac{-31}{1\,000};\quad \dfrac{5\,012}{1\,000}.$$
 b) Viết các số thập phân sau dưới dạng phân số thập phân tối giản:
 $$3{,}6;\quad -0{,}45;\quad -2{,}125;\quad 0{,}064.$$
 
 **Lời giải:**
 a) Đổi sang số thập phân:
-- $\frac{83}{10} = 8{,}3$ (mẫu $10$ có $1$ chữ số $0$, phần thập phân có $1$ chữ số).
-- $\frac{-247}{100} = -2{,}47$ (mẫu $100$ có $2$ chữ số $0$).
-- $\frac{9}{100} = 0{,}09$ (thiếu chữ số nên thêm $0$ phía trước).
-- $\frac{-31}{1\,000} = -0{,}031$ (mẫu $1\,000$ có $3$ chữ số $0$).
-- $\frac{5\,012}{1\,000} = 5{,}012.$
+- $\dfrac{83}{10} = 8{,}3$ (mẫu $10$ có $1$ chữ số $0$, phần thập phân có $1$ chữ số).
+- $\dfrac{-247}{100} = -2{,}47$ (mẫu $100$ có $2$ chữ số $0$).
+- $\dfrac{9}{100} = 0{,}09$ (thiếu chữ số nên thêm $0$ phía trước).
+- $\dfrac{-31}{1\,000} = -0{,}031$ (mẫu $1\,000$ có $3$ chữ số $0$).
+- $\dfrac{5\,012}{1\,000} = 5{,}012.$
 
 b) Đổi sang phân số thập phân rồi rút gọn tối giản:
-- $3{,}6 = \frac{36}{10} = \frac{36 : 2}{10 : 2} = \frac{18}{5}.$
-- $-0{,}45 = \frac{-45}{100} = \frac{-45 : 5}{100 : 5} = \frac{-9}{20}.$
-- $-2{,}125 = \frac{-2\,125}{1\,000} = \frac{-2\,125 : 125}{1\,000 : 125} = \frac{-17}{8}.$
-- $0{,}064 = \frac{64}{1\,000} = \frac{64 : 8}{1\,000 : 8} = \frac{8}{125}.$
+- $3{,}6 = \dfrac{36}{10} = \dfrac{36 : 2}{10 : 2} = \dfrac{18}{5}.$
+- $-0{,}45 = \dfrac{-45}{100} = \dfrac{-45 : 5}{100 : 5} = \dfrac{-9}{20}.$
+- $-2{,}125 = \dfrac{-2\,125}{1\,000} = \dfrac{-2\,125 : 125}{1\,000 : 125} = \dfrac{-17}{8}.$
+- $0{,}064 = \dfrac{64}{1\,000} = \dfrac{64 : 8}{1\,000 : 8} = \dfrac{8}{125}.$
 
 ---
 
@@ -391,7 +391,7 @@ $$0{,}42;\quad 0{,}45;\quad 0{,}48.$$
 
 **Bài 1 (Cấu tạo và đổi phân số):**
 a) Viết các phân số thập phân sau dưới dạng số thập phân:
-$$\frac{-73}{10};\quad \frac{409}{100};\quad \frac{-15}{1\,000};\quad \frac{8}{100};\quad \frac{-2\,026}{1\,000}.$$
+$$\dfrac{-73}{10};\quad \dfrac{409}{100};\quad \dfrac{-15}{1\,000};\quad \dfrac{8}{100};\quad \dfrac{-2\,026}{1\,000}.$$
 b) Đổi các số thập phân sau thành phân số thập phân tối giản:
 $$-1{,}8;\quad 0{,}75;\quad -0{,}032;\quad 4{,}125.$$
 
@@ -454,17 +454,17 @@ Hỏi điểm $C$ biểu diễn số thập phân nào?
 
 **Bài 1:**
 a)
-- $\frac{-73}{10} = -7{,}3.$
-- $\frac{409}{100} = 4{,}09.$
-- $\frac{-15}{1\,000} = -0{,}015.$
-- $\frac{8}{100} = 0{,}08.$
-- $\frac{-2\,026}{1\,000} = -2{,}026.$
+- $\dfrac{-73}{10} = -7{,}3.$
+- $\dfrac{409}{100} = 4{,}09.$
+- $\dfrac{-15}{1\,000} = -0{,}015.$
+- $\dfrac{8}{100} = 0{,}08.$
+- $\dfrac{-2\,026}{1\,000} = -2{,}026.$
 
 b)
-- $-1{,}8 = \frac{-18}{10} = \frac{-9}{5}.$
-- $0{,}75 = \frac{75}{100} = \frac{3}{4}.$
-- $-0{,}032 = \frac{-32}{1\,000} = \frac{-32 : 8}{1\,000 : 8} = \frac{-4}{125}.$
-- $4{,}125 = \frac{4\,125}{1\,000} = \frac{4\,125 : 125}{1\,000 : 125} = \frac{33}{8}.$
+- $-1{,}8 = \dfrac{-18}{10} = \dfrac{-9}{5}.$
+- $0{,}75 = \dfrac{75}{100} = \dfrac{3}{4}.$
+- $-0{,}032 = \dfrac{-32}{1\,000} = \dfrac{-32 : 8}{1\,000 : 8} = \dfrac{-4}{125}.$
+- $4{,}125 = \dfrac{4\,125}{1\,000} = \dfrac{4\,125 : 125}{1\,000 : 125} = \dfrac{33}{8}.$
 
 **Bài 2:**
 - Số đối của $-8{,}35$ là $8{,}35.$
@@ -535,7 +535,7 @@ $$AB = 0{,}5 - (-0{,}7) = 0{,}5 + 0{,}7 = 1{,}2\text{ đơn vị}.$$
 $$AC = 1{,}2 : 2 = 0{,}6\text{ đơn vị}.$$
 Tọa độ của điểm $C$ là:
 $$-0{,}7 + 0{,}6 = -0{,}1.$$
-*(Cách khác: Tọa độ trung điểm $C = \frac{-0{,}7 + 0{,}5}{2} = \frac{-0{,}2}{2} = -0{,}1$).*
+*(Cách khác: Tọa độ trung điểm $C = \dfrac{-0{,}7 + 0{,}5}{2} = \dfrac{-0{,}2}{2} = -0{,}1$).*
 Vậy điểm $C$ biểu diễn số thập phân $-0{,}1.$
 
 ---
@@ -609,13 +609,13 @@ $$0{,}72 = 0{,}720 = 0{,}7200 = \dots = 0{,}72\underbrace{0\dots0}_{n\text{ số
 Với mỗi số nguyên dương $n,$ ta luôn tạo được ít nhất $10^n - 1$ số thập phân dạng $0{,}71a_1a_2\dots a_n$ nằm giữa $0{,}71$ và $0{,}72.$
 Vì $n$ có thể tiến tới vô hạn nên giữa $0{,}71$ và $0{,}72$ có **vô số số thập phân** (Đpcm).
 
-c) Đổi $0{,}4 = \frac{2}{5}$ và $0{,}5 = \frac{1}{2}.$
-Cần tìm phân số $\frac{a}{b}$ ($a, b \in \mathbb{N}^*,$ tối giản) sao cho:
-$$\frac{2}{5} < \frac{a}{b} < \frac{1}{2} \iff \frac{4}{10} < \frac{a}{b} < \frac{5}{10}.$$
-- Thử $b = 1, 2, 3, 4, 5, 6$: Không có phân số nào với $b \le 6$ nằm giữa $\frac{2}{5} = 0{,}4$ và $\frac{1}{2} = 0{,}5.$
-  - Thử $b = 7$: $\frac{2}{5} = \frac{14}{35} < \frac{a}{7} < \frac{1}{2} = \frac{17{,}5}{35} \implies 2{,}8 < a < 3{,}5 \implies a = 3.$
-  - Phân số $\frac{3}{7} \approx 0{,}4285$ nằm giữa $0{,}4$ và $0{,}5.$
-Vậy phân số tối giản có mẫu số nhỏ nhất thỏa mãn là $\frac{3}{7}.$
+c) Đổi $0{,}4 = \dfrac{2}{5}$ và $0{,}5 = \dfrac{1}{2}.$
+Cần tìm phân số $\dfrac{a}{b}$ ($a, b \in \mathbb{N}^*,$ tối giản) sao cho:
+$$\dfrac{2}{5} < \dfrac{a}{b} < \dfrac{1}{2} \iff \dfrac{4}{10} < \dfrac{a}{b} < \dfrac{5}{10}.$$
+- Thử $b = 1, 2, 3, 4, 5, 6$: Không có phân số nào với $b \le 6$ nằm giữa $\dfrac{2}{5} = 0{,}4$ và $\dfrac{1}{2} = 0{,}5.$
+  - Thử $b = 7$: $\dfrac{2}{5} = \dfrac{14}{35} < \dfrac{a}{7} < \dfrac{1}{2} = \dfrac{17{,}5}{35} \implies 2{,}8 < a < 3{,}5 \implies a = 3.$
+  - Phân số $\dfrac{3}{7} \approx 0{,}4285$ nằm giữa $0{,}4$ và $0{,}5.$
+Vậy phân số tối giản có mẫu số nhỏ nhất thỏa mãn là $\dfrac{3}{7}.$
 
 ---
 
@@ -716,14 +716,14 @@ explanation: 'Số -0,75 có dấu trừ đứng trước phần nguyên nên l�
 
 ```quiz
 type: choice
-question: 'Phân số thập phân $\frac{-19}{100}$ được viết dưới dạng số thập phân là:'
+question: 'Phân số thập phân $\dfrac{-19}{100}$ được viết dưới dạng số thập phân là:'
 options:
   - '-1,9'
   - '-0,19'
   - '-0,019'
   - '-19,0'
 answer: 2
-explanation: 'Mẫu số 100 có 2 chữ số 0 nên phần thập phân có 2 chữ số: $\frac{-19}{100} = -0,19$.'
+explanation: 'Mẫu số 100 có 2 chữ số 0 nên phần thập phân có 2 chữ số: $\dfrac{-19}{100} = -0,19$.'
 ```
 
 ```quiz
@@ -754,12 +754,12 @@ explanation: 'Số đối của -2,8 là 2,80 và số đối của -2,75 là 2,
 type: choice
 question: 'Viết số thập phân $0,08$ dưới dạng phân số tối giản ta được:'
 options:
-  - '$\frac{8}{10}$'
-  - '$\frac{4}{50}$'
-  - '$\frac{2}{25}$'
-  - '$\frac{1}{125}$'
+  - '$\dfrac{8}{10}$'
+  - '$\dfrac{4}{50}$'
+  - '$\dfrac{2}{25}$'
+  - '$\dfrac{1}{125}$'
 answer: 3
-explanation: '$0,08 = \frac{8}{100} = \frac{8 : 4}{100 : 4} = \frac{2}{25}$.'
+explanation: '$0,08 = \dfrac{8}{100} = \dfrac{8 : 4}{100 : 4} = \dfrac{2}{25}$.'
 ```
 
 ```quiz
@@ -830,7 +830,7 @@ explanation: 'Xét số đối: 5,*6 < 5,26. Do đó * < 2. Trong các lựa ch�
 
 **Phần I: Trắc nghiệm (3.0 điểm — Mỗi câu 0.75 điểm)**
 
-**Câu 1:** Phân số thập phân $\frac{-325}{100}$ viết dưới dạng số thập phân là:
+**Câu 1:** Phân số thập phân $\dfrac{-325}{100}$ viết dưới dạng số thập phân là:
 A. $-32{,}5$
 B. $-3{,}25$
 C. $-0{,}325$
@@ -891,8 +891,8 @@ $$-7{,}3 < -7{,}x5 < -7{,}1.$$
 
 **Phần II: Tự luận (7.0 điểm)**
 - **Bài 1 (2.0 điểm):**
-  - a) $-0{,}65 = \frac{-65}{100} = \frac{-13}{20}.$ *(0.5 điểm)*
-       $2{,}4 = \frac{24}{10} = \frac{12}{5}.$ *(0.5 điểm)*
+  - a) $-0{,}65 = \dfrac{-65}{100} = \dfrac{-13}{20}.$ *(0.5 điểm)*
+       $2{,}4 = \dfrac{24}{10} = \dfrac{12}{5}.$ *(0.5 điểm)*
   - b) Số đối của $0{,}92$ là $-0{,}92.$ *(0.5 điểm)*
        Số đối của $-13{,}7$ là $13{,}7.$ *(0.5 điểm)*
 - **Bài 2 (2.5 điểm):**
