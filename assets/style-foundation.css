@@ -368,6 +368,6 @@ html[data-theme="dark"] a:hover {
 }
 
 /* Shared muted text; component-specific colors belong to their own modules. */
-html[data-theme="dark"] :is(.hero p,.card p,.about p,.aside-note p,.exam-policy,.back,.eyebrow,.overline,.exam-nav-group strong,.lesson-video figcaption,footer p) {
+html[data-theme="dark"] :is(.hero p,.card p,.about p,.aside-note p,.exam-policy,.back,.eyebrow,.overline:not(.mord),.exam-nav-group strong,.lesson-video figcaption,footer p) {
   color: #776751;
 }
