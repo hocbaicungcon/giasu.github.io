@@ -124,6 +124,33 @@ const canonicalTags = new Map([
  ['tiếng nhật', 'Tiếng Nhật'],
  ['bài tập tin học', 'Bài tập tin học']
 ]);
+
+const calloutMeta = {
+  NOTE: { cls: 'callout-note', icon: 'ℹ️', title: 'Ghi nhớ' },
+  TIP: { cls: 'callout-tip', icon: '💡', title: 'Mẹo hay' },
+  IMPORTANT: { cls: 'callout-important', icon: '📌', title: 'Quan trọng' },
+  WARNING: { cls: 'callout-warning', icon: '⚠️', title: 'Lưu ý / Cảnh báo' },
+  CAUTION: { cls: 'callout-caution', icon: '🛑', title: 'Cẩn trọng' }
+};
+
+export function renderCallouts(html) {
+  if (!html) return html;
+  html = html.replace(/<blockquote>([\s\S]*?)<\/blockquote>/gi, (match, inner) => {
+    const calloutMatch = /^\s*<p>\s*\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:\s*<br\s*\/?>)?\s*([\s\S]*)$/i.exec(inner);
+    if (!calloutMatch) return match;
+    const type = calloutMatch[1].toUpperCase();
+    const meta = calloutMeta[type] || calloutMeta.NOTE;
+    const rest = calloutMatch[2];
+    const body = rest.startsWith('</p>') ? rest.slice(4).trim() : `<p>${rest}`;
+    return `<blockquote class="callout ${meta.cls}"><div class="callout-title"><span class="callout-icon" aria-hidden="true">${meta.icon}</span> <span>${meta.title}</span></div>${body}</blockquote>`;
+  });
+  html = html.replace(/<p>\s*\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\](?:\s*<br\s*\/?>)?\s*([\s\S]*?)<\/p>/gi, (match, type, content) => {
+    const meta = calloutMeta[type.toUpperCase()] || calloutMeta.NOTE;
+    return `<blockquote class="callout ${meta.cls}"><div class="callout-title"><span class="callout-icon" aria-hidden="true">${meta.icon}</span> <span>${meta.title}</span></div><p>${content}</p></blockquote>`;
+  });
+  return html;
+}
+
 export function parsePost(source, filename) {
  const match=/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/.exec(source);
  if(!match)throw Error(`${filename}: thiếu thông tin đầu bài (front matter)`);
@@ -142,7 +169,7 @@ export function parsePost(source, filename) {
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
  const body=normalizeLocalAssetPaths(match[2]);
  const formattedBody=normalizeMarkdownFormatting(body);
- return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{const parsed=marked.parse(formattedBody).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">');return optimizeImages(parsed,data.title);}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
+ return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{const parsed=renderCallouts(marked.parse(formattedBody).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">'));return optimizeImages(parsed,data.title);}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
 }
 const gradeLabel=p=>p.grade===undefined?'Mọi lớp':`Lớp ${p.grade}`;
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>','CNTT':'</>'};
@@ -226,7 +253,7 @@ function withLessonSolutions(html,exam){
  let index=0;
  return html.replace(/(<h3[^>]*>Câu \d+<\/h3>[\s\S]*?)(?=<h[23]\b|$)/g,(block)=>{
   const q=exam.questions[index++];if(!q?.solution)return block;
-  const solution=marked.parse(normalizeMarkdownFormatting(q.solution)).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[a-d]\)<\/strong>)/g,'<ul class="answer-options">');
+  const solution=renderCallouts(marked.parse(normalizeMarkdownFormatting(q.solution)).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[a-d]\)<\/strong>)/g,'<ul class="answer-options">'));
   return block+`<details class="lesson-solution"><summary>Hiện/ẩn lời giải — ${esc(q.label)}</summary><div>${solution}</div></details>`;
  });
 }
@@ -322,7 +349,7 @@ export function build(){
    fs.writeFileSync(path.join(out,'bai-viet',p.slug+'.html'),shell(p.title,p.description,content,'../'));
   }
  buildEntertainment(root,out,shell,posts,card);
- buildExams(imported,out,shell,text=>marked.parse(normalizeMarkdownFormatting(text)));
+ buildExams(imported,out,shell,text=>renderCallouts(marked.parse(normalizeMarkdownFormatting(text))));
  fs.writeFileSync(path.join(out,'assets/style.css'),minifyCss(bundleStylesheet(path.join(root,'assets/style.css'))));
  const clientFiles=fs.readdirSync(path.join(out,'assets')).filter(f=>/\.(js|css)$/.test(f)).sort();
  const assetVersion=createHash('sha256').update(clientFiles.map(f=>fs.readFileSync(path.join(out,'assets',f),'utf8')).join('\n')).digest('hex').slice(0,12);

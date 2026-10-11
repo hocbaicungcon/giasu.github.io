@@ -29,19 +29,64 @@ Bài viết này hệ thống hóa toàn bộ kiến thức cốt lõi của Ch�
 
 Mạch kiến thức 7 bài học được kết nối chặt chẽ theo sơ đồ:
 
-```mermaid
-flowchart TD
-    subgraph G1 ["Nhóm 1: Ngôn ngữ & Quan hệ"]
-        B1["Bài 1: Tập hợp"] --> B2["Bài 2: Cách ghi số tự nhiên"]
-        B2 --> B3["Bài 3: Thứ tự trong tập hợp các số tự nhiên"]
-    end
-    subgraph G2 ["Nhóm 2: Bốn phép toán & Quy tắc thực hiện"]
-        B4["Bài 4: Phép cộng và phép trừ"] --> B5["Bài 5: Phép nhân và phép chia"]
-        B5 --> B6["Bài 6: Luỹ thừa với số mũ tự nhiên"]
-        B6 --> B7["Bài 7: Thứ tự thực hiện các phép tính"]
-    end
-    G1 --> G2
-```
+<div class="flowchart-container">
+  <div class="flowchart-group flowchart-group-blue">
+    <div class="flowchart-group-title">
+      <span class="flowchart-badge-blue">Nhóm 1</span>
+      <span>Hệ thống ngôn ngữ &amp; Quan hệ tập hợp số tự nhiên</span>
+    </div>
+    <div class="flowchart-nodes">
+      <div class="flowchart-node">
+        <strong>Bài 1: Tập hợp</strong>
+        <small>Khái niệm, phần tử, $\in, \notin$</small>
+      </div>
+      <div class="flowchart-arrow" aria-hidden="true">➔</div>
+      <div class="flowchart-node">
+        <strong>Bài 2: Ghi số tự nhiên</strong>
+        <small>Hệ thập phân &amp; số La Mã</small>
+      </div>
+      <div class="flowchart-arrow" aria-hidden="true">➔</div>
+      <div class="flowchart-node">
+        <strong>Bài 3: Thứ tự trong $\mathbb{N}$</strong>
+        <small>Tia số, so sánh &amp; sắp xếp</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="flowchart-bridge">
+    <span class="flowchart-bridge-pill">
+      ⇓ Nền tảng ngôn ngữ &amp; biểu diễn số cung cấp cơ sở cho các phép toán
+    </span>
+  </div>
+
+  <div class="flowchart-group flowchart-group-green">
+    <div class="flowchart-group-title">
+      <span class="flowchart-badge-green">Nhóm 2</span>
+      <span>Bốn phép toán số học &amp; Quy tắc thực hiện phép tính</span>
+    </div>
+    <div class="flowchart-nodes">
+      <div class="flowchart-node">
+        <strong>Bài 4: Phép cộng &amp; trừ</strong>
+        <small>Giao hoán, kết hợp, tìm $x$</small>
+      </div>
+      <div class="flowchart-arrow" aria-hidden="true">➔</div>
+      <div class="flowchart-node">
+        <strong>Bài 5: Phép nhân &amp; chia</strong>
+        <small>Phân phối, chia hết, chia dư</small>
+      </div>
+      <div class="flowchart-arrow" aria-hidden="true">➔</div>
+      <div class="flowchart-node">
+        <strong>Bài 6: Luỹ thừa tự nhiên</strong>
+        <small>Quy tắc số mũ, số chính phương</small>
+      </div>
+      <div class="flowchart-arrow" aria-hidden="true">➔</div>
+      <div class="flowchart-node">
+        <strong>Bài 7: Thứ tự phép tính</strong>
+        <small>Ưu tiên luỹ thừa, ngoặc $( ), [ ], \{ \}$</small>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
