@@ -405,6 +405,26 @@ html[data-theme="dark"] .prose :not(pre) > code {
   line-height: 1.9;
 }
 
+.prose p {
+  margin-bottom: 1.1em;
+  line-height: 1.9;
+}
+
+.prose ul,
+.prose ol {
+  margin: 1em 0;
+  padding-left: 28px;
+}
+
+.prose li {
+  margin-bottom: 8px;
+  line-height: 1.85;
+}
+
+.prose li:last-child {
+  margin-bottom: 0;
+}
+
 @media(max-width:620px) {
   .prose {
   font-size: 1.125rem;
