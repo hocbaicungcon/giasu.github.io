@@ -28,71 +28,71 @@ Hãy hoàn thành các câu hỏi khởi động sau để gợi nhớ lại b�
 type: choice
 question: 'Trong các phép chia sau, phép chia nào là phép chia hết?'
 options:
-  - '$50 : 7$'
-  - '$48 : 6$'
-  - '$25 : 4$'
-  - '$35 : 8$'
+  - '$60 : 7$'
+  - '$54 : 6$'
+  - '$38 : 5$'
+  - '$45 : 8$'
 answer: 2
-explanation: 'Ta có $48 : 6 = 8$ (số dư bằng 0) nên đây là phép chia hết. Còn $50 : 7 = 7$ dư 1; $25 : 4 = 6$ dư 1; $35 : 8 = 4$ dư 3.'
+explanation: 'Ta có $54 : 6 = 9$ (số dư bằng 0) nên đây là phép chia hết. Còn $60 : 7 = 8$ dư 4; $38 : 5 = 7$ dư 3; $45 : 8 = 5$ dư 5.'
 ```
 
 ```quiz
 type: choice
-question: 'Số nào sau đây vừa là số tự nhiên nhỏ hơn 25 vừa chia hết cho 4?'
+question: 'Số nào sau đây vừa là số tự nhiên nhỏ hơn 35 vừa chia hết cho 6?'
 options:
-  - '18'
   - '20'
-  - '22'
-  - '26'
+  - '24'
+  - '28'
+  - '32'
 answer: 2
-explanation: 'Ta có $20 < 25$ và $20 : 4 = 5$ (chia hết). Các số khác hoặc không chia hết cho 4 hoặc lớn hơn 25.'
+explanation: 'Ta có $24 < 35$ và $24 : 6 = 4$ (chia hết). Các số khác không chia hết cho 6.'
 ```
 
 ```quiz
 type: choice
-question: 'Tìm số tự nhiên thích hợp điền vào ô vuông: $56 = 8 \cdot \square$?'
+question: 'Tìm số tự nhiên thích hợp điền vào ô vuông: $72 = 9 \cdot \square$?'
 options:
   - '6'
   - '7'
   - '8'
   - '9'
-answer: 2
-explanation: 'Vì $56 : 8 = 7$ nên số cần điền là 7.'
+answer: 3
+explanation: 'Vì $72 : 9 = 8$ nên số cần điền là 8.'
 ```
 
 ```quiz
 type: choice
-question: 'Cô giáo có 24 quyển vở. Nếu chia đều cho 6 bạn thì mỗi bạn được bao nhiêu quyển vở?'
+question: 'Thầy giáo có 35 quyển vở. Nếu chia đều cho 7 bạn thì mỗi bạn được bao nhiêu quyển vở?'
 options:
-  - '3 quyển'
   - '4 quyển'
   - '5 quyển'
+  - '6 quyển'
   - 'Không chia đều được'
 answer: 2
-explanation: 'Vì $24 : 6 = 4$ (không dư) nên mỗi bạn nhận được đúng 4 quyển vở.'
+explanation: 'Vì $35 : 7 = 5$ (không dư) nên mỗi bạn nhận được đúng 5 quyển vở.'
 ```
 
 <details>
 <summary><strong>Xem lời giải chi tiết toàn bộ phần Khởi động</strong></summary>
 
 **Câu 1.** Đặt tính rồi cho biết:
-a) $48 : 6 = 8$ (phép chia hết).
-b) $50 : 7 = 7$ dư $1$ (vì $7 \cdot 7 = 49$, dư $1$).
-c) $84 : 12 = 7$ (phép chia hết).
+a) $54 : 6 = 9$ (phép chia hết).
+b) $60 : 7 = 8$ dư $4$ (vì $7 \cdot 8 = 56$, dư $4$).
+c) $96 : 12 = 8$ (phép chia hết).
 
-**Câu 2.** Năm số tự nhiên nhỏ hơn $25$ mà mỗi số đều chia hết cho $4$ có thể chọn là: $0; 4; 8; 12; 16$ (hoặc $20; 24$).
+**Câu 2.** Năm số tự nhiên nhỏ hơn $35$ mà mỗi số đều chia hết cho $6$ có thể chọn là: $0; 6; 12; 18; 24$ (hoặc $30$).
 
 **Câu 3.**
-a) $56 = 8 \cdot 7.$
-b) $100 = 7 \cdot 14 + 2$ (thương là $14$, số dư $2 < 7$).
+a) $72 = 9 \cdot 8.$
+b) $115 = 8 \cdot 14 + 3$ (thương là $14$, số dư $3 < 8$).
 
 **Câu 4.**
-- $72$ chia hết cho $9$ vì $72 : 9 = 8$ (số dư bằng $0$).
-- $72$ không chia hết cho $5$ vì $72 : 5 = 14$ dư $2.$
+- $81$ chia hết cho $9$ vì $81 : 9 = 9$ (số dư bằng $0$).
+- $81$ không chia hết cho $5$ vì $81 : 5 = 16$ dư $1.$
 
 **Câu 5.**
-- Nếu chia cho $6$ bạn: Mỗi bạn được $24 : 6 = 4$ quyển vở.
-- Nếu chia cho $5$ bạn: Ta có $24 : 5 = 4$ dư $4$ nên không chia đều được (còn thừa $4$ quyển vở).
+- Nếu chia cho $7$ bạn: Mỗi bạn được $35 : 7 = 5$ quyển vở.
+- Nếu chia cho $6$ bạn: Ta có $35 : 6 = 5$ dư $5$ nên không chia đều được (còn thừa $5$ quyển vở).
 
 </details>
 
@@ -120,19 +120,19 @@ b) $100 = 7 \cdot 14 + 2$ (thương là $14$, số dư $2 < 7$).
   $$\text{B}(b) = \{0; b; 2b; 3b; 4b; \dots\}.$$
 
 **Ví dụ 1:**
-a) Tìm tập hợp $\text{Ư}(12).$
-b) Tìm các bội của $4$ nhỏ hơn $30.$
+a) Tìm tập hợp $\text{Ư}(18).$
+b) Tìm các bội của $5$ nhỏ hơn $35.$
 
 <details>
 <summary><strong>Xem lời giải Ví dụ 1</strong></summary>
 
-a) Lần lượt chia $12$ cho các số từ $1$ đến $12,$ các số chia hết là: $1; 2; 3; 4; 6; 12.$
+a) Lần lượt chia $18$ cho các số từ $1$ đến $18,$ các số chia hết là: $1; 2; 3; 6; 9; 18.$
 Do đó:
-$$\text{Ư}(12) = \{1; 2; 3; 4; 6; 12\}.$$
+$$\text{Ư}(18) = \{1; 2; 3; 6; 9; 18\}.$$
 
-b) Nhân $4$ với $0; 1; 2; 3; 4; 5; 6; 7; 8; \dots$ ta được: $0; 4; 8; 12; 16; 20; 24; 28; 32; \dots$
-Các bội của $4$ nhỏ hơn $30$ là:
-$$\{0; 4; 8; 12; 16; 20; 24; 28\}.$$
+b) Nhân $5$ với $0; 1; 2; 3; 4; 5; 6; 7; \dots$ ta được: $0; 5; 10; 15; 20; 25; 30; 35; \dots$
+Các bội của $5$ nhỏ hơn $35$ là:
+$$\{0; 5; 10; 15; 20; 25; 30\}.$$
 
 </details>
 
@@ -154,20 +154,20 @@ Cho các số tự nhiên $a, b, m$ với $m \neq 0$:
 > *Mở rộng cho phép trừ ($a \ge b$):*
 > $$a\ \vdots\ m \text{ và } b \not\vdots\ m \implies (a - b) \not\vdots\ m.$$
 
-**Ví dụ 2:** Không làm phép tính, hãy xét xem các biểu thức sau có chia hết cho $6$ không:
-a) $24 + 36;$
-b) $60 - 25.$
+**Ví dụ 2:** Không làm phép tính, hãy xét xem các biểu thức sau có chia hết cho $8$ không:
+a) $32 + 48;$
+b) $80 - 27.$
 
 <details>
 <summary><strong>Xem lời giải Ví dụ 2</strong></summary>
 
-a) Ta có $24\ \vdots\ 6$ (vì $24 = 6 \cdot 4$) và $36\ \vdots\ 6$ (vì $36 = 6 \cdot 6$).
-Cả hai số hạng đều chia hết cho $6$ nên theo Tính chất 1:
-$$(24 + 36)\ \vdots\ 6.$$
+a) Ta có $32\ \vdots\ 8$ (vì $32 = 8 \cdot 4$) và $48\ \vdots\ 8$ (vì $48 = 8 \cdot 6$).
+Cả hai số hạng đều chia hết cho $8$ nên theo Tính chất 1:
+$$(32 + 48)\ \vdots\ 8.$$
 
-b) Ta có $60\ \vdots\ 6,$ nhưng $25 \not\vdots\ 6$ (vì $25 = 6 \cdot 4 + 1$).
-Một số chia hết cho $6$, số còn lại không chia hết cho $6$ nên theo Tính chất 2:
-$$(60 - 25) \not\vdots\ 6.$$
+b) Ta có $80\ \vdots\ 8,$ nhưng $27 \not\vdots\ 8$ (vì $27 = 8 \cdot 3 + 3$).
+Một số chia hết cho $8$, số còn lại không chia hết cho $8$ nên theo Tính chất 2:
+$$(80 - 27) \not\vdots\ 8.$$
 
 </details>
 
@@ -179,18 +179,18 @@ $$(60 - 25) \not\vdots\ 6.$$
 > Trong một tích các số tự nhiên, nếu có **ít nhất một thừa số chia hết cho $m$** thì **cả tích đó chia hết cho $m$**:
 > $$a\ \vdots\ m \implies (a \cdot b)\ \vdots\ m.$$
 
-**Ví dụ 3:** Xét xem các tích sau có chia hết cho $4$ không:
-a) $15 \cdot 8 \cdot 7;$
-b) $9 \cdot 35 \cdot 11.$
+**Ví dụ 3:** Xét xem các tích sau có chia hết cho $6$ không:
+a) $14 \cdot 18 \cdot 5;$
+b) $7 \cdot 25 \cdot 11.$
 
 <details>
 <summary><strong>Xem lời giải Ví dụ 3</strong></summary>
 
-a) Trong tích $15 \cdot 8 \cdot 7$ có thừa số $8\ \vdots\ 4$ nên cả tích:
-$$(15 \cdot 8 \cdot 7)\ \vdots\ 4.$$
+a) Trong tích $14 \cdot 18 \cdot 5$ có thừa số $18\ \vdots\ 6$ nên cả tích:
+$$(14 \cdot 18 \cdot 5)\ \vdots\ 6.$$
 
-b) Cả ba thừa số $9; 35; 11$ đều là số lẻ, không có thừa số nào chia hết cho $4.$ Tích của các số lẻ là một số lẻ nên:
-$$(9 \cdot 35 \cdot 11) \not\vdots\ 4.$$
+b) Cả ba thừa số $7; 25; 11$ đều là các số lẻ và không chia hết cho $3,$ không có thừa số nào chia hết cho $6.$ Tích của chúng không chia hết cho $6$:
+$$(7 \cdot 25 \cdot 11) \not\vdots\ 6.$$
 
 </details>
 
@@ -200,7 +200,7 @@ $$(9 \cdot 35 \cdot 11) \not\vdots\ 4.$$
 
 > [!WARNING] Các điểm dễ nhầm cần đặc biệt chú ý:
 > 1. **Chiều suy luận của tổng chia hết:** Từ $(a + b)\ \vdots\ m$ **KHÔNG suy ra được** $a\ \vdots\ m$ và $b\ \vdots\ m.$
->    *Ví dụ:* $12 \not\vdots\ 5$ và $13 \not\vdots\ 5,$ nhưng tổng $12 + 13 = 25\ \vdots\ 5.$ Từng số hạng không chia hết nhưng tổng vẫn có thể chia hết!
+>    *Ví dụ:* $14 \not\vdots\ 5$ và $16 \not\vdots\ 5,$ nhưng tổng $14 + 16 = 30\ \vdots\ 5.$ Từng số hạng không chia hết nhưng tổng vẫn có thể chia hết!
 > 2. **Phân biệt ước và bội:** Trong quan hệ $a\ \vdots\ b$, thì $b$ là ước (số nhỏ hơn hoặc bằng), còn $a$ là bội (số lớn hơn hoặc bằng).
 >    - Tập hợp các ước $\text{Ư}(a)$ luôn là tập hợp hữu hạn (có số phần tử đếm được).
 >    - Tập hợp các bội $\text{B}(b)$ ($b \neq 0$) luôn là tập hợp vô hạn.
@@ -222,45 +222,45 @@ $$(9 \cdot 35 \cdot 11) \not\vdots\ 4.$$
 
 #### Luyện tập 1.1
 Tìm các số tự nhiên $a, b$ sao cho:
-a) $a \in \text{Ư}(18)$ và $a > 4;$
-b) $b \in \text{B}(6)$ và $b \le 36.$
+a) $a \in \text{Ư}(24)$ và $a > 6;$
+b) $b \in \text{B}(5)$ và $b \le 30.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 1.1</strong></summary>
 
-a) Ta có $\text{Ư}(18) = \{1; 2; 3; 6; 9; 18\}.$
-Vì $a > 4$ nên $a \in \{6; 9; 18\}.$
+a) Ta có $\text{Ư}(24) = \{1; 2; 3; 4; 6; 8; 12; 24\}.$
+Vì $a > 6$ nên $a \in \{8; 12; 24\}.$
 
-b) Ta có $\text{B}(6) = \{0; 6; 12; 18; 24; 30; 36; 42; \dots\}$
-Vì $b \le 36$ nên $b \in \{0; 6; 12; 18; 24; 30; 36\}.$
+b) Ta có $\text{B}(5) = \{0; 5; 10; 15; 20; 25; 30; 35; \dots\}$
+Vì $b \le 30$ nên $b \in \{0; 5; 10; 15; 20; 25; 30\}.$
 
 </details>
 
 #### Luyện tập 1.2
 Tìm các số tự nhiên $a, b$ sao cho:
-a) $a \in \text{Ư}(48)$ và $a < 8;$
-b) $b \in \text{B}(7)$ và $10 < b \le 45.$
+a) $a \in \text{Ư}(60)$ và $a < 10;$
+b) $b \in \text{B}(8)$ và $15 < b \le 50.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 1.2</strong></summary>
 
-a) Ta có $\text{Ư}(48) = \{1; 2; 3; 4; 6; 8; 12; 16; 24; 48\}.$
-Vì $a < 8$ nên $a \in \{1; 2; 3; 4; 6\}.$
+a) Ta có $\text{Ư}(60) = \{1; 2; 3; 4; 5; 6; 10; 12; 15; 20; 30; 60\}.$
+Vì $a < 10$ nên $a \in \{1; 2; 3; 4; 5; 6\}.$
 
-b) Ta có $\text{B}(7) = \{0; 7; 14; 21; 28; 35; 42; 49; \dots\}$
-Vì $10 < b \le 45$ nên $b \in \{14; 21; 28; 35; 42\}.$
+b) Ta có $\text{B}(8) = \{0; 8; 16; 24; 32; 40; 48; 56; \dots\}$
+Vì $15 < b \le 50$ nên $b \in \{16; 24; 32; 40; 48\}.$
 
 </details>
 
 #### Luyện tập 1.3
-a) Viết tập hợp $\text{Ư}(36).$
-b) Viết tập hợp các bội của $8$ nhỏ hơn $60.$
+a) Viết tập hợp $\text{Ư}(45).$
+b) Viết tập hợp các bội của $7$ nhỏ hơn $55.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 1.3</strong></summary>
 
-a) $\text{Ư}(36) = \{1; 2; 3; 4; 6; 9; 12; 18; 36\}.$
-b) Các bội của $8$ nhỏ hơn $60$ là: $\{0; 8; 16; 24; 32; 40; 48; 56\}.$
+a) $\text{Ư}(45) = \{1; 3; 5; 9; 15; 45\}.$
+b) Các bội của $7$ nhỏ hơn $55$ là: $\{0; 7; 14; 21; 28; 35; 42; 49\}.$
 
 </details>
 
@@ -275,60 +275,60 @@ b) Các bội của $8$ nhỏ hơn $60$ là: $\{0; 8; 16; 24; 32; 40; 48; 56\}.$
 - *Lưu ý:* Nếu có từ hai số hạng không chia hết trở lên, hãy thử nhóm chúng lại để kiểm tra tổng riêng của chúng có chia hết hay không.
 
 #### Luyện tập 2.1
-Xét xem mỗi tổng (hiệu) sau có chia hết cho $7$ không:
-a) $700 + 21;\quad 28 + 1400;\quad 45 + 4 + 350;$
-b) $70 - 23;\quad 280 - 56;\quad 205 + 5 - 17.$
+Xét xem mỗi tổng (hiệu) sau có chia hết cho $9$ không:
+a) $900 + 27;\quad 36 + 1800;\quad 50 + 4 + 450;$
+b) $90 - 32;\quad 360 - 72;\quad 265 + 5 - 19.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 2.1</strong></summary>
 
 a) 
-- $700 + 21$: Vì $700\ \vdots\ 7$ và $21\ \vdots\ 7$ nên $(700 + 21)\ \vdots\ 7.$
-- $28 + 1400$: Vì $28\ \vdots\ 7$ và $1400\ \vdots\ 7$ nên $(28 + 1400)\ \vdots\ 7.$
-- $45 + 4 + 350$: Nhóm $45 + 4 = 49\ \vdots\ 7$ và $350\ \vdots\ 7$ nên $(45 + 4 + 350)\ \vdots\ 7.$
+- $900 + 27$: Vì $900\ \vdots\ 9$ và $27\ \vdots\ 9$ nên $(900 + 27)\ \vdots\ 9.$
+- $36 + 1800$: Vì $36\ \vdots\ 9$ và $1800\ \vdots\ 9$ nên $(36 + 1800)\ \vdots\ 9.$
+- $50 + 4 + 450$: Nhóm $50 + 4 = 54\ \vdots\ 9$ và $450\ \vdots\ 9$ nên $(50 + 4 + 450)\ \vdots\ 9.$
 
 b) 
-- $70 - 23$: Vì $70\ \vdots\ 7$ nhưng $23 \not\vdots\ 7$ nên $(70 - 23) \not\vdots\ 7.$
-- $280 - 56$: Vì $280\ \vdots\ 7$ và $56\ \vdots\ 7$ nên $(280 - 56)\ \vdots\ 7.$
-- $205 + 5 - 17$: Nhóm $205 + 5 = 210\ \vdots\ 7,$ nhưng $17 \not\vdots\ 7$ nên $(205 + 5 - 17) \not\vdots\ 7.$
+- $90 - 32$: Vì $90\ \vdots\ 9$ nhưng $32 \not\vdots\ 9$ nên $(90 - 32) \not\vdots\ 9.$
+- $360 - 72$: Vì $360\ \vdots\ 9$ và $72\ \vdots\ 9$ nên $(360 - 72)\ \vdots\ 9.$
+- $265 + 5 - 19$: Nhóm $265 + 5 = 270\ \vdots\ 9,$ nhưng $19 \not\vdots\ 9$ nên $(265 + 5 - 19) \not\vdots\ 9.$
 
 </details>
 
 #### Luyện tập 2.2
-Xét xem mỗi tổng (hiệu) sau có chia hết cho $8$ không:
-a) $800 + 24;\quad 25 + 1600;\quad 45 + 3 + 320;$
-b) $80 - 13;\quad 400 - 56;\quad 214 + 26 - 18.$
+Xét xem mỗi tổng (hiệu) sau có chia hết cho $6$ không:
+a) $600 + 30;\quad 25 + 1200;\quad 38 + 4 + 240;$
+b) $60 - 17;\quad 300 - 48;\quad 172 + 8 - 14.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 2.2</strong></summary>
 
 a) 
-- $800 + 24$: Cả $800$ và $24$ đều chia hết cho $8$ nên $(800 + 24)\ \vdots\ 8.$
-- $25 + 1600$: Vì $1600\ \vdots\ 8$ nhưng $25 \not\vdots\ 8$ nên $(25 + 1600) \not\vdots\ 8.$
-- $45 + 3 + 320$: Nhóm $45 + 3 = 48\ \vdots\ 8$ và $320\ \vdots\ 8$ nên $(45 + 3 + 320)\ \vdots\ 8.$
+- $600 + 30$: Cả $600$ và $30$ đều chia hết cho $6$ nên $(600 + 30)\ \vdots\ 6.$
+- $25 + 1200$: Vì $1200\ \vdots\ 6$ nhưng $25 \not\vdots\ 6$ nên $(25 + 1200) \not\vdots\ 6.$
+- $38 + 4 + 240$: Nhóm $38 + 4 = 42\ \vdots\ 6$ và $240\ \vdots\ 6$ nên $(38 + 4 + 240)\ \vdots\ 6.$
 
 b) 
-- $80 - 13$: Vì $80\ \vdots\ 8$ nhưng $13 \not\vdots\ 8$ nên $(80 - 13) \not\vdots\ 8.$
-- $400 - 56$: Cả $400$ và $56$ đều chia hết cho $8$ nên $(400 - 56)\ \vdots\ 8.$
-- $214 + 26 - 18$: Nhóm $214 + 26 = 240\ \vdots\ 8,$ nhưng $18 \not\vdots\ 8$ nên biểu thức không chia hết cho $8.$
+- $60 - 17$: Vì $60\ \vdots\ 6$ nhưng $17 \not\vdots\ 6$ nên $(60 - 17) \not\vdots\ 6.$
+- $300 - 48$: Cả $300$ và $48$ đều chia hết cho $6$ nên $(300 - 48)\ \vdots\ 6.$
+- $172 + 8 - 14$: Nhóm $172 + 8 = 180\ \vdots\ 6,$ nhưng $14 \not\vdots\ 6$ nên biểu thức không chia hết cho $6.$
 
 </details>
 
 #### Luyện tập 2.3
-Cho biểu thức $A = 21 + 36 + x$ với $x \in \mathbb{N}.$ Tìm $x \in \{27; 35; 90; 13; 25\}$ để:
-a) $A$ chia hết cho $3;$
-b) $A$ không chia hết cho $3.$
+Cho biểu thức $A = 28 + 49 + x$ với $x \in \mathbb{N}.$ Tìm $x \in \{21; 35; 40; 14; 52\}$ để:
+a) $A$ chia hết cho $7;$
+b) $A$ không chia hết cho $7.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 2.3</strong></summary>
 
-Ta có $21\ \vdots\ 3$ và $36\ \vdots\ 3$ nên $21 + 36 = 57\ \vdots\ 3.$
-Do đó, tính chia hết cho $3$ của $A$ phụ thuộc hoàn toàn vào $x$:
-- $A\ \vdots\ 3 \iff x\ \vdots\ 3.$
-- $A \not\vdots\ 3 \iff x \not\vdots\ 3.$
+Ta có $28\ \vdots\ 7$ và $49\ \vdots\ 7$ nên $28 + 49 = 77\ \vdots\ 7.$
+Do đó, tính chia hết cho $7$ của $A$ phụ thuộc hoàn toàn vào $x$:
+- $A\ \vdots\ 7 \iff x\ \vdots\ 7.$
+- $A \not\vdots\ 7 \iff x \not\vdots\ 7.$
 
-a) Các số chia hết cho $3$ trong tập hợp đã cho là: $x \in \{27; 90\}.$
-b) Các số không chia hết cho $3$ trong tập hợp đã cho là: $x \in \{35; 13; 25\}.$
+a) Các số chia hết cho $7$ trong tập hợp đã cho là: $x \in \{21; 35; 14\}.$
+b) Các số không chia hết cho $7$ trong tập hợp đã cho là: $x \in \{40; 52\}.$
 
 </details>
 
@@ -341,51 +341,50 @@ b) Các số không chia hết cho $3$ trong tập hợp đã cho là: $x \in \{
 - Nếu không có thừa số nào chia hết cho $m,$ thử ghép tích của hai hay nhiều thừa số lại với nhau xem kết quả có chia hết cho $m$ hay không.
 
 #### Luyện tập 3.1
-Các tích sau có chia hết cho $6$ không? Vì sao?
-a) $12 \cdot 17 \cdot 5;$
-b) $30 \cdot 13 \cdot 11;$
-c) $66 \cdot 45 \cdot 29;$
-d) $3 \cdot 37 \cdot 4 \cdot 5.$
+Các tích sau có chia hết cho $8$ không? Vì sao?
+a) $16 \cdot 19 \cdot 7;$
+b) $40 \cdot 17 \cdot 13;$
+c) $88 \cdot 35 \cdot 23;$
+d) $4 \cdot 29 \cdot 6 \cdot 5.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 3.1</strong></summary>
 
-a) Trong tích có thừa số $12\ \vdots\ 6$ nên $(12 \cdot 17 \cdot 5)\ \vdots\ 6.$
-b) Trong tích có thừa số $30\ \vdots\ 6$ nên $(30 \cdot 13 \cdot 11)\ \vdots\ 6.$
-c) Trong tích có thừa số $66\ \vdots\ 6$ nên $(66 \cdot 45 \cdot 29)\ \vdots\ 6.$
-d) Không thừa số nào chia hết cho $6,$ nhưng ghép $3 \cdot 4 = 12\ \vdots\ 6$ nên $(3 \cdot 37 \cdot 4 \cdot 5)\ \vdots\ 6.$
+a) Trong tích có thừa số $16\ \vdots\ 8$ nên $(16 \cdot 19 \cdot 7)\ \vdots\ 8.$
+b) Trong tích có thừa số $40\ \vdots\ 8$ nên $(40 \cdot 17 \cdot 13)\ \vdots\ 8.$
+c) Trong tích có thừa số $88\ \vdots\ 8$ nên $(88 \cdot 35 \cdot 23)\ \vdots\ 8.$
+d) Không thừa số nào chia hết cho $8,$ nhưng ghép $4 \cdot 6 = 24\ \vdots\ 8$ nên $(4 \cdot 29 \cdot 6 \cdot 5)\ \vdots\ 8.$
 
 </details>
 
 #### Luyện tập 3.2
-Các tích sau có chia hết cho $4$ không? Vì sao?
-a) $32 \cdot 27 \cdot 15;$
-b) $20 \cdot 43 \cdot 41;$
-c) $124 \cdot 45 \cdot 29;$
-d) $22 \cdot 127 \cdot 2 \cdot 15.$
+Các tích sau có chia hết cho $6$ không? Vì sao?
+a) $24 \cdot 31 \cdot 17;$
+b) $18 \cdot 53 \cdot 47;$
+c) $132 \cdot 25 \cdot 19;$
+d) $15 \cdot 77 \cdot 2 \cdot 11.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 3.2</strong></summary>
 
-a) Vì $32\ \vdots\ 4$ nên $(32 \cdot 27 \cdot 15)\ \vdots\ 4.$
-b) Vì $20\ \vdots\ 4$ nên $(20 \cdot 43 \cdot 41)\ \vdots\ 4.$
-c) Vì $124 = 4 \cdot 31\ \vdots\ 4$ nên tích chia hết cho $4.$
-d) Ghép $22 \cdot 2 = 44\ \vdots\ 4$ nên $(22 \cdot 127 \cdot 2 \cdot 15)\ \vdots\ 4.$
+a) Vì $24\ \vdots\ 6$ nên $(24 \cdot 31 \cdot 17)\ \vdots\ 6.$
+b) Vì $18\ \vdots\ 6$ nên $(18 \cdot 53 \cdot 47)\ \vdots\ 6.$
+c) Vì $132 = 6 \cdot 22\ \vdots\ 6$ nên tích chia hết cho $6.$
+d) Ghép $15 \cdot 2 = 30\ \vdots\ 6$ nên $(15 \cdot 77 \cdot 2 \cdot 11)\ \vdots\ 6.$
 
 </details>
 
 #### Luyện tập 3.3
-Tích $A = 2 \cdot 3 \cdot 4 \cdots 10 \cdot 11$ (tích các số tự nhiên liên tiếp từ $2$ đến $11$) có chia hết cho $100$ không?
+Tích $A = 2 \cdot 3 \cdot 4 \cdots 12 \cdot 13$ (tích các số tự nhiên liên tiếp từ $2$ đến $13$) có chia hết cho $100$ không?
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 3.3</strong></summary>
 
 Ta có $100 = 4 \cdot 25.$
 - Trong tích $A$ có thừa số $4\ \vdots\ 4.$
-- Trong tích $A$ có hai thừa số $5$ và $10,$ mà $5 \cdot 10 = 50\ \vdots\ 25.$
+- Trong tích $A$ có hai thừa số $5$ và $10,$ mà $5 \cdot 10 = 50 = 25 \cdot 2\ \vdots\ 25.$
 Do đó, tích $A$ chứa cả thừa số chia hết cho $4$ và tích chia hết cho $25.$
 Vì vậy $A\ \vdots\ 100.$
-*(Kiểm chứng: $A = 39916800 = 100 \cdot 399168$).*
 
 </details>
 
@@ -398,45 +397,45 @@ Vì vậy $A\ \vdots\ 100.$
 - Sử dụng Tính chất 1 và Tính chất 2 để kết luận.
 
 #### Luyện tập 4.1
-Các biểu thức sau có chia hết cho $7$ không? Vì sao?
-a) $1 \cdot 3 \cdot 5 \cdot 7 \cdot 9 + 210;$
-b) $12 \cdot 14 \cdot 16 + 35 + 70;$
-c) $19 \cdot 21 \cdot 23 + 37.$
+Các biểu thức sau có chia hết cho $8$ không? Vì sao?
+a) $1 \cdot 3 \cdot 5 \cdot 8 \cdot 11 + 320;$
+b) $14 \cdot 16 \cdot 18 + 40 + 80;$
+c) $21 \cdot 24 \cdot 27 + 45.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 4.1</strong></summary>
 
-a) Tích $1 \cdot 3 \cdot 5 \cdot 7 \cdot 9$ có thừa số $7\ \vdots\ 7$ và $210\ \vdots\ 7$ nên cả tổng chia hết cho $7.$
-b) Tích $12 \cdot 14 \cdot 16$ có $14\ \vdots\ 7;$ $35\ \vdots\ 7;$ $70\ \vdots\ 7$ nên cả tổng chia hết cho $7.$
-c) Tích $19 \cdot 21 \cdot 23$ có $21\ \vdots\ 7,$ nhưng $37 \not\vdots\ 7$ nên tổng không chia hết cho $7.$
+a) Tích $1 \cdot 3 \cdot 5 \cdot 8 \cdot 11$ có thừa số $8\ \vdots\ 8$ và $320\ \vdots\ 8$ nên cả tổng chia hết cho $8.$
+b) Tích $14 \cdot 16 \cdot 18$ có $16\ \vdots\ 8;$ $40\ \vdots\ 8;$ $80\ \vdots\ 8$ nên cả tổng chia hết cho $8.$
+c) Tích $21 \cdot 24 \cdot 27$ có $24\ \vdots\ 8,$ nhưng $45 \not\vdots\ 8$ nên tổng không chia hết cho $8.$
 
 </details>
 
 #### Luyện tập 4.2
-Các biểu thức sau có chia hết cho $9$ không? Vì sao?
-a) $3 \cdot 5 \cdot 7 \cdot 9 + 270;$
-b) $3 \cdot 6 \cdot 57 + 90 + 81;$
-c) $15 \cdot 6 \cdot 43 + 47.$
+Các biểu thức sau có chia hết cho $7$ không? Vì sao?
+a) $2 \cdot 4 \cdot 6 \cdot 7 \cdot 10 + 280;$
+b) $2 \cdot 7 \cdot 39 + 70 + 63;$
+c) $14 \cdot 5 \cdot 33 + 52.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 4.2</strong></summary>
 
-a) Tích đầu có $9\ \vdots\ 9$ và $270\ \vdots\ 9$ nên tổng chia hết cho $9.$
-b) Tích đầu có $3 \cdot 6 = 18\ \vdots\ 9;$ $90\ \vdots\ 9;$ $81\ \vdots\ 9$ nên cả tổng chia hết cho $9.$
-c) Tích đầu có $15 \cdot 6 = 90\ \vdots\ 9,$ nhưng $47 \not\vdots\ 9$ nên tổng không chia hết cho $9.$
+a) Tích đầu có $7\ \vdots\ 7$ và $280\ \vdots\ 7$ nên tổng chia hết cho $7.$
+b) Tích đầu có $7\ \vdots\ 7;$ $70\ \vdots\ 7;$ $63\ \vdots\ 7$ nên cả tổng chia hết cho $7.$
+c) Tích đầu có $14\ \vdots\ 7,$ nhưng $52 \not\vdots\ 7$ nên tổng không chia hết cho $7.$
 
 </details>
 
 #### Luyện tập 4.3
-Số $A = 15 \cdot 23 \cdot 8 + 45 - 27$ có chia hết cho $9$ không? Vì sao?
+Số $A = 18 \cdot 25 \cdot 7 + 54 - 36$ có chia hết cho $9$ không? Vì sao?
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 4.3</strong></summary>
 
-Xét tích $15 \cdot 23 \cdot 8$: trong các thừa số chỉ có $15 = 3 \cdot 5$ chứa đúng một thừa số $3,$ không đủ chia hết cho $9,$ nên $15 \cdot 23 \cdot 8 \not\vdots\ 9.$
-Mặt khác, $45\ \vdots\ 9$ và $27\ \vdots\ 9.$
-Vì trong biểu thức chỉ có đúng một thành phần không chia hết cho $9$, nên $A \not\vdots\ 9.$
-*(Kiểm chứng: $A = 2760 + 45 - 27 = 2778,$ mà $2778 : 9 = 308$ dư $6$).*
+Xét tích $18 \cdot 25 \cdot 7$: có thừa số $18\ \vdots\ 9$ nên $18 \cdot 25 \cdot 7\ \vdots\ 9.$
+Mặt khác, $54\ \vdots\ 9$ và $36\ \vdots\ 9.$
+Tất cả các số hạng trong biểu thức đều chia hết cho $9$ nên:
+$$A\ \vdots\ 9.$$
 
 </details>
 
@@ -449,48 +448,48 @@ Vì trong biểu thức chỉ có đúng một thành phần không chia hết c
 - Liệt kê tập hợp ước rồi dùng điều kiện của bài toán để chọn các giá trị thích hợp.
 
 #### Luyện tập 5.1
-Một bệnh viện cử một đoàn gồm $60$ bác sĩ đi hỗ trợ chống dịch. Ban tổ chức muốn chia $60$ bác sĩ thành các tổ có số người như nhau, mỗi tổ từ $4$ đến $10$ bác sĩ. Hỏi có bao nhiêu cách chia tổ?
+Một đội tình nguyện viên gồm $72$ người tham gia chiến dịch mùa hè xanh. Ban chỉ huy muốn chia $72$ người thành các nhóm có số thành viên bằng nhau, mỗi nhóm từ $6$ đến $12$ người. Hỏi có bao nhiêu cách chia nhóm?
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 5.1</strong></summary>
 
-Số bác sĩ ở mỗi tổ phải là ước của $60.$
+Số người trong mỗi nhóm phải là ước của $72.$
 Ta có:
-$$\text{Ư}(60) = \{1; 2; 3; 4; 5; 6; 10; 12; 15; 20; 30; 60\}.$$
-Vì mỗi tổ có từ $4$ đến $10$ bác sĩ nên số bác sĩ mỗi tổ có thể là: $4; 5; 6; 10.$
-Vậy có **$4$ cách chia tổ**:
-1. Chia thành các tổ $4$ người ($15$ tổ).
-2. Chia thành các tổ $5$ người ($12$ tổ).
-3. Chia thành các tổ $6$ người ($10$ tổ).
-4. Chia thành các tổ $10$ người ($6$ tổ).
+$$\text{Ư}(72) = \{1; 2; 3; 4; 6; 8; 9; 12; 18; 24; 36; 72\}.$$
+Vì mỗi nhóm có từ $6$ đến $12$ người nên số người mỗi nhóm có thể là: $6; 8; 9; 12.$
+Vậy có **$4$ cách chia nhóm**:
+1. Mỗi nhóm $6$ người ($12$ nhóm).
+2. Mỗi nhóm $8$ người ($9$ nhóm).
+3. Mỗi nhóm $9$ người ($8$ nhóm).
+4. Mỗi nhóm $12$ người ($6$ nhóm).
 
 </details>
 
 #### Luyện tập 5.2
-Có $48$ học sinh tham gia hoạt động trải nghiệm. Cô giáo muốn chia đều các bạn thành các nhóm, mỗi nhóm có từ $6$ đến $12$ học sinh. Hỏi có bao nhiêu cách chia nhóm?
+Có $54$ học sinh tham gia sinh hoạt câu lạc bộ Toán học. Thầy phụ trách muốn chia đều các bạn thành các tổ, mỗi tổ có từ $5$ đến $10$ học sinh. Hỏi có bao nhiêu cách chia tổ?
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 5.2</strong></summary>
 
-Số học sinh trong mỗi nhóm phải là ước của $48.$
+Số học sinh trong mỗi tổ phải là ước của $54.$
 Ta có:
-$$\text{Ư}(48) = \{1; 2; 3; 4; 6; 8; 12; 16; 24; 48\}.$$
-Các ước nằm trong khoảng từ $6$ đến $12$ là: $6; 8; 12.$
-Vậy có **$3$ cách chia nhóm**: nhóm $6$ bạn ($8$ nhóm), nhóm $8$ bạn ($6$ nhóm), hoặc nhóm $12$ bạn ($4$ nhóm).
+$$\text{Ư}(54) = \{1; 2; 3; 6; 9; 18; 27; 54\}.$$
+Các ước nằm trong khoảng từ $5$ đến $10$ là: $6; 9.$
+Vậy có **$2$ cách chia tổ**: tổ $6$ bạn ($9$ tổ) hoặc tổ $9$ bạn ($6$ tổ).
 
 </details>
 
 #### Luyện tập 5.3
-Cô giáo có $36$ chiếc bút, muốn chia đều vào các hộp quà sao cho mỗi hộp có từ $5$ đến $12$ chiếc bút. Hỏi có bao nhiêu cách chia?
+Cô giáo chuẩn bị $48$ chiếc bút chì màu để làm phần thưởng, muốn chia đều vào các túi quà sao cho mỗi túi có từ $5$ đến $15$ chiếc bút. Hỏi có bao nhiêu cách chia?
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 5.3</strong></summary>
 
-Số bút trong mỗi hộp là ước của $36.$
+Số bút trong mỗi túi quà là ước của $48.$
 Ta có:
-$$\text{Ư}(36) = \{1; 2; 3; 4; 6; 9; 12; 18; 36\}.$$
-Các ước nằm trong khoảng từ $5$ đến $12$ là: $6; 9; 12.$
-Vậy có **$3$ cách chia**: mỗi hộp $6$ chiếc, $9$ chiếc hoặc $12$ chiếc bút.
+$$\text{Ư}(48) = \{1; 2; 3; 4; 6; 8; 12; 16; 24; 48\}.$$
+Các ước nằm trong khoảng từ $5$ đến $15$ là: $6; 8; 12.$
+Vậy có **$3$ cách chia**: mỗi túi $6$ chiếc, $8$ chiếc hoặc $12$ chiếc bút.
 
 </details>
 
@@ -500,92 +499,92 @@ Vậy có **$3$ cách chia**: mỗi hộp $6$ chiếc, $9$ chiếc hoặc $12$ c
 
 ### Bài 1
 Tìm các số tự nhiên $a, b$ sao cho:
-a) $a \in \text{Ư}(20)$ và $a > 4;$
-b) $b \in \text{B}(5)$ và $b \le 35.$
+a) $a \in \text{Ư}(30)$ và $a > 5;$
+b) $b \in \text{B}(6)$ và $b \le 42.$
 
 <details>
 <summary><strong>Xem lời giải Bài 1</strong></summary>
 
-a) $\text{Ư}(20) = \{1; 2; 4; 5; 10; 20\}.$ Vì $a > 4$ nên $a \in \{5; 10; 20\}.$
-b) $\text{B}(5) = \{0; 5; 10; 15; 20; 25; 30; 35; 40; \dots\}$ Vì $b \le 35$ nên $b \in \{0; 5; 10; 15; 20; 25; 30; 35\}.$
+a) $\text{Ư}(30) = \{1; 2; 3; 5; 6; 10; 15; 30\}.$ Vì $a > 5$ nên $a \in \{6; 10; 15; 30\}.$
+b) $\text{B}(6) = \{0; 6; 12; 18; 24; 30; 36; 42; 48; \dots\}$ Vì $b \le 42$ nên $b \in \{0; 6; 12; 18; 24; 30; 36; 42\}.$
 
 </details>
 
 ### Bài 2
-a) Viết tập hợp $\text{Ư}(28).$
-b) Viết tập hợp các bội của $9$ nhỏ hơn $50.$
+a) Viết tập hợp $\text{Ư}(42).$
+b) Viết tập hợp các bội của $7$ nhỏ hơn $50.$
 
 <details>
 <summary><strong>Xem lời giải Bài 2</strong></summary>
 
-a) $\text{Ư}(28) = \{1; 2; 4; 7; 14; 28\}.$
-b) Các bội của $9$ nhỏ hơn $50$ là: $\{0; 9; 18; 27; 36; 45\}.$
+a) $\text{Ư}(42) = \{1; 2; 3; 6; 7; 14; 21; 42\}.$
+b) Các bội của $7$ nhỏ hơn $50$ là: $\{0; 7; 14; 21; 28; 35; 42; 49\}.$
 
 </details>
 
 ### Bài 3
-Xét xem mỗi tổng (hiệu) sau có chia hết cho $15$ không:
-a) $30 + 45;\quad 150 + 60;\quad 40 + 5 + 300;$
-b) $1500 - 23;\quad 450 - 31;\quad 145 + 5 - 17.$
+Xét xem mỗi tổng (hiệu) sau có chia hết cho $12$ không:
+a) $24 + 36;\quad 120 + 48;\quad 30 + 6 + 240;$
+b) $1200 - 25;\quad 360 - 19;\quad 115 + 5 - 14.$
 
 <details>
 <summary><strong>Xem lời giải Bài 3</strong></summary>
 
 a) 
-- $30 + 45$: Cả $30$ và $45$ đều chia hết cho $15$ nên tổng chia hết cho $15.$
-- $150 + 60$: Cả hai số đều chia hết cho $15$ nên tổng chia hết cho $15.$
-- $40 + 5 + 300$: Nhóm $40 + 5 = 45\ \vdots\ 15$ và $300\ \vdots\ 15$ nên tổng chia hết cho $15.$
+- $24 + 36$: Cả $24$ và $36$ đều chia hết cho $12$ nên tổng chia hết cho $12.$
+- $120 + 48$: Cả hai số đều chia hết cho $12$ nên tổng chia hết cho $12.$
+- $30 + 6 + 240$: Nhóm $30 + 6 = 36\ \vdots\ 12$ và $240\ \vdots\ 12$ nên tổng chia hết cho $12.$
 
 b) 
-- $1500 - 23$: Vì $1500\ \vdots\ 15$ nhưng $23 \not\vdots\ 15$ nên hiệu không chia hết cho $15.$
-- $450 - 31$: Vì $450\ \vdots\ 15$ nhưng $31 \not\vdots\ 15$ nên hiệu không chia hết cho $15.$
-- $145 + 5 - 17$: Nhóm $145 + 5 = 150\ \vdots\ 15,$ còn $17 \not\vdots\ 15$ nên không chia hết cho $15.$
+- $1200 - 25$: Vì $1200\ \vdots\ 12$ nhưng $25 \not\vdots\ 12$ nên hiệu không chia hết cho $12.$
+- $360 - 19$: Vì $360\ \vdots\ 12$ nhưng $19 \not\vdots\ 12$ nên hiệu không chia hết cho $12.$
+- $115 + 5 - 14$: Nhóm $115 + 5 = 120\ \vdots\ 12,$ còn $14 \not\vdots\ 12$ nên không chia hết cho $12.$
 
 </details>
 
 ### Bài 4
-Cho biểu thức $A = 24 + 42 + x$ với $x \in \mathbb{N}.$ Tìm điều kiện của $x$ để:
-a) $A$ chia hết cho $6;$
-b) $A$ không chia hết cho $6.$
+Cho biểu thức $A = 35 + 56 + x$ với $x \in \mathbb{N}.$ Tìm điều kiện của $x$ để:
+a) $A$ chia hết cho $7;$
+b) $A$ không chia hết cho $7.$
 
 <details>
 <summary><strong>Xem lời giải Bài 4</strong></summary>
 
-Ta có $24\ \vdots\ 6$ và $42\ \vdots\ 6$ nên $24 + 42 = 66\ \vdots\ 6.$
-a) Để $A\ \vdots\ 6$ thì $x$ phải chia hết cho $6,$ tức là $x$ là bội của $6$: $x \in \{0; 6; 12; 18; \dots\}$
-b) Để $A \not\vdots\ 6$ thì $x$ không chia hết cho $6,$ tức là $x$ không phải là bội của $6.$
+Ta có $35\ \vdots\ 7$ và $56\ \vdots\ 7$ nên $35 + 56 = 91\ \vdots\ 7.$
+a) Để $A\ \vdots\ 7$ thì $x$ phải chia hết cho $7,$ tức là $x$ là bội của $7$: $x \in \{0; 7; 14; 21; \dots\}$
+b) Để $A \not\vdots\ 7$ thì $x$ không chia hết cho $7,$ tức là $x$ không phải là bội của $7.$
 
 </details>
 
 ### Bài 5
-Các tích sau có chia hết cho $8$ không? Vì sao?
-a) $40 \cdot 7 \cdot 25;$
-b) $32 \cdot 19 \cdot 28;$
-c) $4 \cdot 35 \cdot 2 \cdot 39;$
-d) $14 \cdot 27 \cdot 4 \cdot 15.$
+Các tích sau có chia hết cho $9$ không? Vì sao?
+a) $45 \cdot 8 \cdot 17;$
+b) $27 \cdot 14 \cdot 31;$
+c) $3 \cdot 25 \cdot 3 \cdot 41;$
+d) $18 \cdot 23 \cdot 5 \cdot 11.$
 
 <details>
 <summary><strong>Xem lời giải Bài 5</strong></summary>
 
-a) Vì $40\ \vdots\ 8$ nên cả tích chia hết cho $8.$
-b) Vì $32\ \vdots\ 8$ nên cả tích chia hết cho $8.$
-c) Ghép $4 \cdot 2 = 8\ \vdots\ 8$ nên cả tích chia hết cho $8.$
-d) Ghép $14 \cdot 4 = 56 = 8 \cdot 7\ \vdots\ 8$ nên cả tích chia hết cho $8.$
+a) Vì $45\ \vdots\ 9$ nên cả tích chia hết cho $9.$
+b) Vì $27\ \vdots\ 9$ nên cả tích chia hết cho $9.$
+c) Ghép $3 \cdot 3 = 9\ \vdots\ 9$ nên cả tích chia hết cho $9.$
+d) Vì $18\ \vdots\ 9$ nên cả tích chia hết cho $9.$
 
 </details>
 
 ### Bài 6
 Các tổng sau có chia hết cho $10$ không? Vì sao?
-a) $2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 + 310;$
-b) $1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 + 230;$
-c) $3 \cdot 5 \cdot 7 \cdot 9 + 25 + 50.$
+a) $3 \cdot 5 \cdot 7 \cdot 9 \cdot 10 + 420;$
+b) $1 \cdot 3 \cdot 4 \cdot 5 \cdot 6 + 180;$
+c) $2 \cdot 5 \cdot 7 \cdot 11 + 35 + 45.$
 
 <details>
 <summary><strong>Xem lời giải Bài 6</strong></summary>
 
-a) Tích đầu có $10\ \vdots\ 10$ và $310\ \vdots\ 10$ nên cả tổng chia hết cho $10.$
-b) Tích đầu có $2 \cdot 5 = 10\ \vdots\ 10$ và $230\ \vdots\ 10$ nên cả tổng chia hết cho $10.$
-c) Tích $3 \cdot 5 \cdot 7 \cdot 9 = 945$ tận cùng là $5$ nên không chia hết cho $10;$ $25 \not\vdots\ 10;$ nhưng nhóm $945 + 25 = 970\ \vdots\ 10,$ lại có $50\ \vdots\ 10$ nên cả tổng chia hết cho $10.$
+a) Tích đầu có $10\ \vdots\ 10$ và $420\ \vdots\ 10$ nên cả tổng chia hết cho $10.$
+b) Tích đầu có $4 \cdot 5 = 20\ \vdots\ 10$ và $180\ \vdots\ 10$ nên cả tổng chia hết cho $10.$
+c) Tích đầu có $2 \cdot 5 = 10\ \vdots\ 10;$ nhóm $35 + 45 = 80\ \vdots\ 10$ nên cả tổng chia hết cho $10.$
 
 </details>
 
@@ -597,60 +596,58 @@ Bạn Nam nói: *"Nếu một tổng $(a + b)$ chia hết cho $m$ thì mỗi s�
 
 Bạn Nam nói **sai**.
 Từ $(a + b)\ \vdots\ m$ không suy ra được từng số hạng phải chia hết cho $m.$
-*Ví dụ:* Với $m = 5,$ ta lấy $a = 12$ và $b = 13.$
-Cả hai số $12 \not\vdots\ 5$ và $13 \not\vdots\ 5,$ nhưng tổng $12 + 13 = 25\ \vdots\ 5.$
+*Ví dụ:* Với $m = 10,$ ta lấy $a = 14$ và $b = 16.$
+Cả hai số $14 \not\vdots\ 10$ và $16 \not\vdots\ 10,$ nhưng tổng $14 + 16 = 30\ \vdots\ 10.$
 
 </details>
 
 ### Bài 8
-Tích $A = 2 \cdot 4 \cdot 6 \cdot 8 \cdot 10 \cdot 12$ có chia hết cho $80$ không? Vì sao?
+Tích $B = 3 \cdot 6 \cdot 9 \cdot 12 \cdot 15 \cdot 18$ có chia hết cho $81$ không? Vì sao?
 
 <details>
 <summary><strong>Xem lời giải Bài 8</strong></summary>
 
-Ta có $80 = 16 \cdot 5.$
-- Trong tích $A$ có thừa số $10 = 2 \cdot 5\ \vdots\ 5,$ nên $A\ \vdots\ 5.$
-- Đếm các thừa số $2$ trong tích:
-  - $2 = 2^1$
-  - $4 = 2^2$
-  - $6 = 2 \cdot 3$ (có một thừa số 2)
-  - $8 = 2^3$
-  - $10 = 2 \cdot 5$ (có một thừa số 2)
-  - $12 = 2^2 \cdot 3$
-  Tổng số thừa số $2$ là: $1 + 2 + 1 + 3 + 1 + 2 = 10 \ge 4,$ do đó $A$ chia hết cho $2^4 = 16.$
-Vì $A$ vừa chia hết cho $16,$ vừa chia hết cho $5$ nên $A\ \vdots\ 80.$
-*(Kiểm chứng: $A = 46080 = 80 \cdot 576$).*
+Ta có $81 = 3^4.$
+Đếm các thừa số $3$ trong tích $B$:
+- $3 = 3^1$
+- $6 = 2 \cdot 3$ (chứa 1 thừa số 3)
+- $9 = 3^2$ (chứa 2 thừa số 3)
+- $12 = 4 \cdot 3$ (chứa 1 thừa số 3)
+- $15 = 5 \cdot 3$ (chứa 1 thừa số 3)
+- $18 = 2 \cdot 3^2$ (chứa 2 thừa số 3)
+Tổng số thừa số $3$ có trong tích $B$ là: $1 + 1 + 2 + 1 + 1 + 2 = 8 \ge 4.$
+Do đó tích $B$ chia hết cho $3^4 = 81.$
 
 </details>
 
 ### Bài 9
-Có bao nhiêu cách chia đều $30$ học sinh thành các nhóm sao cho mỗi nhóm có từ $4$ đến $6$ học sinh?
+Có bao nhiêu cách chia đều $42$ học sinh thành các nhóm sao cho mỗi nhóm có từ $5$ đến $8$ học sinh?
 
 <details>
 <summary><strong>Xem lời giải Bài 9</strong></summary>
 
-Số học sinh trong mỗi nhóm phải là ước của $30.$
-Ta có: $\text{Ư}(30) = \{1; 2; 3; 5; 6; 10; 15; 30\}.$
-Các ước thỏa mãn từ $4$ đến $6$ là: $5$ và $6.$
+Số học sinh trong mỗi nhóm phải là ước của $42.$
+Ta có: $\text{Ư}(42) = \{1; 2; 3; 6; 7; 14; 21; 42\}.$
+Các ước thỏa mãn từ $5$ đến $8$ là: $6$ và $7.$
 Vậy có **$2$ cách chia**:
-- Chia thành các nhóm $5$ học sinh ($6$ nhóm).
-- Chia thành các nhóm $6$ học sinh ($5$ nhóm).
+- Chia thành các nhóm $6$ học sinh ($7$ nhóm).
+- Chia thành các nhóm $7$ học sinh ($6$ nhóm).
 
 </details>
 
 ### Bài 10
-Người ta muốn xếp $72$ quyển vở thành các bó đều nhau, mỗi bó có từ $8$ đến $15$ quyển. Hỏi có bao nhiêu cách xếp?
+Người ta muốn xếp $84$ quyển sách thành các ngăn tủ đều nhau, mỗi ngăn có từ $10$ đến $25$ quyển. Hỏi có bao nhiêu cách xếp?
 
 <details>
 <summary><strong>Xem lời giải Bài 10</strong></summary>
 
-Số quyển vở trong mỗi bó là ước của $72.$
-Ta có: $\text{Ư}(72) = \{1; 2; 3; 4; 6; 8; 9; 12; 18; 24; 36; 72\}.$
-Các ước thỏa mãn từ $8$ đến $15$ là: $8; 9; 12.$
+Số quyển sách trong mỗi ngăn là ước của $84.$
+Ta có: $\text{Ư}(84) = \{1; 2; 3; 4; 6; 7; 12; 14; 21; 28; 42; 84\}.$
+Các ước thỏa mãn từ $10$ đến $25$ là: $12; 14; 21.$
 Vậy có **$3$ cách xếp**:
-- Bó $8$ quyển ($9$ bó).
-- Bó $9$ quyển ($8$ bó).
-- Bó $12$ quyển ($6$ bó).
+- Ngăn $12$ quyển ($7$ ngăn).
+- Ngăn $14$ quyển ($6$ ngăn).
+- Ngăn $21$ quyển ($4$ ngăn).
 
 </details>
 
@@ -664,83 +661,83 @@ Hãy tự đánh giá kiến thức đã học qua các câu hỏi trắc nghi�
 type: choice
 question: 'Khẳng định nào sau đây là đúng?'
 options:
-  - '$0 \not\vdots\ 7$'
-  - '$15\ \vdots\ 4$'
-  - '$18\ \vdots\ 6$'
-  - '7 là bội của 14'
+  - '$0 \not\vdots\ 9$'
+  - '$20\ \vdots\ 6$'
+  - '$24\ \vdots\ 8$'
+  - '6 là bội của 18'
 answer: 3
-explanation: 'Vì $18 = 6 \cdot 3$ nên $18\ \vdots\ 6.$ Còn $0$ chia hết cho 7; $15 : 4$ có dư; và 7 là ước của 14 chứ không phải bội.'
+explanation: 'Vì $24 = 8 \cdot 3$ nên $24\ \vdots\ 8.$ Còn $0$ chia hết cho 9; $20 : 6$ có dư; và 6 là ước của 18 chứ không phải bội.'
 ```
 
 ```quiz
 type: choice
-question: 'Nếu $a\ \vdots\ 5$ và $b \not\vdots\ 5$ thì tổng $(a + b)$:'
+question: 'Nếu $a\ \vdots\ 7$ và $b \not\vdots\ 7$ thì tổng $(a + b)$:'
 options:
-  - 'Luôn chia hết cho 5'
-  - 'Không chia hết cho 5'
+  - 'Luôn chia hết cho 7'
+  - 'Không chia hết cho 7'
   - 'Bằng 0'
-  - 'Là số lẻ'
+  - 'Là số chẵn'
 answer: 2
-explanation: 'Theo Tính chất 2: Một số chia hết cho 5, số kia không chia hết cho 5 thì tổng không chia hết cho 5.'
+explanation: 'Theo Tính chất 2: Một số chia hết cho 7, số kia không chia hết cho 7 thì tổng không chia hết cho 7.'
 ```
 
 ```quiz
 type: choice
-question: 'Tập hợp các ước của 24 có bao nhiêu phần tử?'
+question: 'Tập hợp các ước của 30 có bao nhiêu phần tử?'
 options:
   - '6'
   - '7'
   - '8'
   - '10'
 answer: 3
-explanation: '$\text{Ư}(24) = \{1; 2; 3; 4; 6; 8; 12; 24\}$ gồm đúng 8 phần tử.'
+explanation: '$\text{Ư}(30) = \{1; 2; 3; 5; 6; 10; 15; 30\}$ gồm đúng 8 phần tử.'
 ```
 
 ```quiz
 type: choice
-question: 'Trong các tổng sau, tổng nào chia hết cho 7?'
+question: 'Trong các tổng sau, tổng nào chia hết cho 9?'
 options:
-  - '$42 + 70$'
-  - '$49 + 15$'
-  - '$14 + 23$'
-  - '$70 + 8$'
+  - '$54 + 90$'
+  - '$63 + 17$'
+  - '$27 + 25$'
+  - '$81 + 10$'
 answer: 1
-explanation: 'Vì $42\ \vdots\ 7$ và $70\ \vdots\ 7$ nên $(42 + 70)\ \vdots\ 7.$'
+explanation: 'Vì $54\ \vdots\ 9$ và $90\ \vdots\ 9$ nên $(54 + 90)\ \vdots\ 9.$'
 ```
 
 <details>
 <summary><strong>Xem lời giải các câu tự luận bài Kiểm tra 15 phút</strong></summary>
 
 **Câu 1.**
-a) $\text{Ư}(24) = \{1; 2; 3; 4; 6; 8; 12; 24\}.$
-b) Ba bội của $6$ nhỏ hơn $40$: chẳng hạn $6; 12; 18$ (hoặc $0; 24; 30; 36$).
+a) $\text{Ư}(30) = \{1; 2; 3; 5; 6; 10; 15; 30\}.$
+b) Ba bội của $7$ nhỏ hơn $45$: chẳng hạn $7; 14; 21$ (hoặc $0; 28; 35; 42$).
 
 **Câu 2.**
-a) $\text{Ư}(30) = \{1; 2; 3; 5; 6; 10; 15; 30\}.$ Các ước lớn hơn $5$ là: $6; 10; 15; 30.$
-b) $\text{B}(8) = \{0; 8; 16; 24; 32; 40; 48; \dots\}$ Các bội không vượt quá $48$ là: $0; 8; 16; 24; 32; 40; 48.$
+a) $\text{Ư}(36) = \{1; 2; 3; 4; 6; 9; 12; 18; 36\}.$ Các ước lớn hơn $6$ là: $9; 12; 18; 36.$
+b) $\text{B}(9) = \{0; 9; 18; 27; 36; 45; 54; \dots\}$ Các bội không vượt quá $45$ là: $0; 9; 18; 27; 36; 45.$
 
 **Câu 3.**
-a) $42\ \vdots\ 7$ và $70\ \vdots\ 7 \implies (42 + 70)\ \vdots\ 7.$
-b) $49\ \vdots\ 7$ nhưng $15 \not\vdots\ 7 \implies (49 + 15) \not\vdots\ 7.$
-c) $84\ \vdots\ 7$ và $21\ \vdots\ 7 \implies (84 - 21)\ \vdots\ 7.$
+a) $54\ \vdots\ 9$ và $90\ \vdots\ 9 \implies (54 + 90)\ \vdots\ 9.$
+b) $63\ \vdots\ 9$ nhưng $17 \not\vdots\ 9 \implies (63 + 17) \not\vdots\ 9.$
+c) $99\ \vdots\ 9$ và $27\ \vdots\ 9 \implies (99 - 27)\ \vdots\ 9.$
 
 **Câu 4.**
-Ta có $40\ \vdots\ 5$ và $75\ \vdots\ 5$ nên $40 + 75 = 115\ \vdots\ 5.$
-a) Để $A\ \vdots\ 5 \implies x\ \vdots\ 5,$ do đó $x \in \{35; 90; 25\}.$
-b) Để $A \not\vdots\ 5 \implies x \not\vdots\ 5,$ do đó $x \in \{27; 13\}.$
+Ta có $42\ \vdots\ 6$ và $66\ \vdots\ 6$ nên $42 + 66 = 108\ \vdots\ 6.$
+a) Để $A\ \vdots\ 6 \implies x\ \vdots\ 6,$ do đó $x \in \{18; 30; 48\}.$
+b) Để $A \not\vdots\ 6 \implies x \not\vdots\ 6,$ do đó $x \in \{25; 17\}.$
 
 **Câu 5.**
-- Tích $25 \cdot 13 \cdot 8$ có thừa số $25\ \vdots\ 5$ nên tích chia hết cho $5.$
-- Tích $9 \cdot 35 \cdot 11$ gồm toàn số lẻ nên là một số lẻ, do đó không chia hết cho $2.$
+- Tích $35 \cdot 17 \cdot 8$ có thừa số $35\ \vdots\ 7$ nên tích chia hết cho $7.$
+- Tích $9 \cdot 25 \cdot 13$ gồm toàn số lẻ nên là một số lẻ, do đó không chia hết cho $2.$
 
 **Câu 6.**
-Tích $3 \cdot 5 \cdot 8 = 120 \not\vdots\ 7$ (vì $120 = 7 \cdot 17 + 1$), trong khi $21\ \vdots\ 7.$
-Một số hạng không chia hết cho $7$, số hạng còn lại chia hết cho $7$ nên $A \not\vdots\ 7.$
+Tích $3 \cdot 5 \cdot 7 = 105 \not\vdots\ 9$ (vì $105 = 9 \cdot 11 + 6$), trong khi $27\ \vdots\ 9.$
+Một số hạng không chia hết cho $9$, số hạng còn lại chia hết cho $9$ nên $A \not\vdots\ 9.$
 
 **Câu 7.**
-Số học sinh mỗi nhóm là ước của $40$: $\text{Ư}(40) = \{1; 2; 4; 5; 8; 10; 20; 40\}.$
-Các ước từ $6$ đến $9$ chỉ có duy nhất số $8.$
-Vậy chỉ có **$1$ cách chia**: chia thành $5$ nhóm, mỗi nhóm $8$ học sinh.
+Số học sinh mỗi nhóm là ước của $45$: $\text{Ư}(45) = \{1; 3; 5; 9; 15; 45\}.$
+Các ước từ $6$ đến $10$ chỉ có duy nhất số $9.$
+Vậy chỉ có **$1$ cách chia**: chia thành $5$ nhóm, mỗi nhóm $9$ học sinh.
 
 </details>
 
@@ -755,106 +752,107 @@ Vậy chỉ có **$1$ cách chia**: chia thành $5$ nhóm, mỗi nhóm $8$ học
 > Đặt thừa số chung ra ngoài để xuất hiện thừa số chia hết cho số cần chứng minh.
 
 ### Nâng cao 1
-Cho biểu thức $A = 2 + 2^2 + 2^3 + 2^4 + \dots + 2^{12}.$ Chứng minh rằng:
-a) $A\ \vdots\ 2;$
-b) $A\ \vdots\ 3;$
-c) $A\ \vdots\ 7.$
+Cho biểu thức $B = 3 + 3^2 + 3^3 + 3^4 + \dots + 3^{12}.$ Chứng minh rằng:
+a) $B\ \vdots\ 3;$
+b) $B\ \vdots\ 4;$
+c) $B\ \vdots\ 13.$
 
 <details>
 <summary><strong>Xem lời giải Nâng cao 1</strong></summary>
 
-a) Mỗi số hạng trong tổng $A$ đều có thừa số $2$ nên mọi số hạng đều chia hết cho $2.$ Do đó $A\ \vdots\ 2.$
+a) Mỗi số hạng trong tổng $B$ đều có thừa số $3$ nên mọi số hạng đều chia hết cho $3.$ Do đó $B\ \vdots\ 3.$
 
-b) Tổng $A$ có $12$ số hạng. Nhóm hai số hạng liền nhau thành một cặp:
-$$A = (2 + 2^2) + (2^3 + 2^4) + \dots + (2^{11} + 2^{12})$$
-$$A = 2(1 + 2) + 2^3(1 + 2) + \dots + 2^{11}(1 + 2)$$
-$$A = 2 \cdot 3 + 2^3 \cdot 3 + \dots + 2^{11} \cdot 3$$
-$$A = 3 \cdot (2 + 2^3 + \dots + 2^{11}).$$
-Vì tích có thừa số $3$ nên $A\ \vdots\ 3.$
+b) Tổng $B$ có $12$ số hạng. Nhóm hai số hạng liền nhau thành một cặp:
+$$B = (3 + 3^2) + (3^3 + 3^4) + \dots + (3^{11} + 3^{12})$$
+$$B = 3(1 + 3) + 3^3(1 + 3) + \dots + 3^{11}(1 + 3)$$
+$$B = 3 \cdot 4 + 3^3 \cdot 4 + \dots + 3^{11} \cdot 4$$
+$$B = 4 \cdot (3 + 3^3 + \dots + 3^{11}).$$
+Vì tích có thừa số $4$ nên $B\ \vdots\ 4.$
 
 c) Nhóm ba số hạng liền nhau thành một nhóm (được đúng $12 : 3 = 4$ nhóm):
-$$A = (2 + 2^2 + 2^3) + (2^4 + 2^5 + 2^6) + \dots + (2^{10} + 2^{11} + 2^{12})$$
-$$A = 2(1 + 2 + 2^2) + 2^4(1 + 2 + 2^2) + \dots + 2^{10}(1 + 2 + 2^2)$$
-$$A = 2 \cdot 7 + 2^4 \cdot 7 + \dots + 2^{10} \cdot 7$$
-$$A = 7 \cdot (2 + 2^4 + \dots + 2^{10}).$$
-Vì tích có thừa số $7$ nên $A\ \vdots\ 7.$
+$$B = (3 + 3^2 + 3^3) + (3^4 + 3^5 + 3^6) + \dots + (3^{10} + 3^{11} + 3^{12})$$
+$$B = 3(1 + 3 + 3^2) + 3^4(1 + 3 + 3^2) + \dots + 3^{10}(1 + 3 + 3^2)$$
+Ta có $1 + 3 + 3^2 = 1 + 3 + 9 = 13.$
+$$B = 3 \cdot 13 + 3^4 \cdot 13 + \dots + 3^{10} \cdot 13$$
+$$B = 13 \cdot (3 + 3^4 + \dots + 3^{10}).$$
+Vì tích có thừa số $13$ nên $B\ \vdots\ 13.$
 
 </details>
 
 ### Nâng cao 2
-Cho biểu thức $A = 3 + 3^2 + 3^3 + 3^4 + \dots + 3^{12}.$ Chứng minh rằng:
-a) $A\ \vdots\ 3;$
-b) $A\ \vdots\ 4;$
-c) $A\ \vdots\ 13.$
+Cho biểu thức $C = 5 + 5^2 + 5^3 + 5^4 + \dots + 5^{12}.$ Chứng minh rằng:
+a) $C\ \vdots\ 5;$
+b) $C\ \vdots\ 6;$
+c) $C\ \vdots\ 31.$
 
 <details>
 <summary><strong>Xem lời giải Nâng cao 2</strong></summary>
 
-a) Mỗi số hạng trong tổng $A$ đều chia hết cho $3$ nên $A\ \vdots\ 3.$
+a) Mỗi số hạng trong tổng $C$ đều chia hết cho $5$ nên $C\ \vdots\ 5.$
 
 b) Nhóm hai số hạng liền nhau (gồm $6$ nhóm):
-$$A = (3 + 3^2) + (3^3 + 3^4) + \dots + (3^{11} + 3^{12})$$
-$$A = 3(1 + 3) + 3^3(1 + 3) + \dots + 3^{11}(1 + 3)$$
-$$A = 3 \cdot 4 + 3^3 \cdot 4 + \dots + 3^{11} \cdot 4 = 4 \cdot (3 + 3^3 + \dots + 3^{11}).$$
-Do đó $A\ \vdots\ 4.$
+$$C = (5 + 5^2) + (5^3 + 5^4) + \dots + (5^{11} + 5^{12})$$
+$$C = 5(1 + 5) + 5^3(1 + 5) + \dots + 5^{11}(1 + 5)$$
+$$C = 5 \cdot 6 + 5^3 \cdot 6 + \dots + 5^{11} \cdot 6 = 6 \cdot (5 + 5^3 + \dots + 5^{11}).$$
+Do đó $C\ \vdots\ 6.$
 
 c) Nhóm ba số hạng liền nhau (gồm $4$ nhóm):
-$$A = (3 + 3^2 + 3^3) + (3^4 + 3^5 + 3^6) + \dots + (3^{10} + 3^{11} + 3^{12})$$
-$$A = 3(1 + 3 + 3^2) + 3^4(1 + 3 + 3^2) + \dots + 3^{10}(1 + 3 + 3^2)$$
-Ta có $1 + 3 + 3^2 = 1 + 3 + 9 = 13.$
-$$A = 13 \cdot (3 + 3^4 + \dots + 3^{10}).$$
-Do đó $A\ \vdots\ 13.$
+$$C = (5 + 5^2 + 5^3) + (5^4 + 5^5 + 5^6) + \dots + (5^{10} + 5^{11} + 5^{12})$$
+$$C = 5(1 + 5 + 5^2) + 5^4(1 + 5 + 5^2) + \dots + 5^{10}(1 + 5 + 5^2)$$
+Ta có $1 + 5 + 5^2 = 1 + 5 + 25 = 31.$
+$$C = 31 \cdot (5 + 5^4 + \dots + 5^{10}).$$
+Do đó $C\ \vdots\ 31.$
 
 </details>
 
 ### Nâng cao 3
-Cho biểu thức $A = 4 + 4^2 + 4^3 + 4^4 + \dots + 4^{12}.$ Chứng minh rằng:
-a) $A\ \vdots\ 4;$
-b) $A\ \vdots\ 5;$
-c) $A\ \vdots\ 21.$
+Cho biểu thức $D = 2 + 2^2 + 2^3 + 2^4 + \dots + 2^{20}.$ Chứng minh rằng:
+a) $D\ \vdots\ 2;$
+b) $D\ \vdots\ 3;$
+c) $D\ \vdots\ 15.$
 
 <details>
 <summary><strong>Xem lời giải Nâng cao 3</strong></summary>
 
-a) Mọi số hạng trong tổng đều chia hết cho $4$ nên $A\ \vdots\ 4.$
+a) Mọi số hạng trong tổng đều chia hết cho $2$ nên $D\ \vdots\ 2.$
 
-b) Nhóm hai số hạng liền nhau (gồm $6$ nhóm):
-$$A = (4 + 4^2) + (4^3 + 4^4) + \dots + (4^{11} + 4^{12})$$
-$$A = 4(1 + 4) + 4^3(1 + 4) + \dots + 4^{11}(1 + 4) = 5 \cdot (4 + 4^3 + \dots + 4^{11}).$$
-Do đó $A\ \vdots\ 5.$
+b) Nhóm hai số hạng liền nhau (gồm $10$ nhóm):
+$$D = (2 + 2^2) + (2^3 + 2^4) + \dots + (2^{19} + 2^{20})$$
+$$D = 2(1 + 2) + 2^3(1 + 2) + \dots + 2^{19}(1 + 2) = 3 \cdot (2 + 2^3 + \dots + 2^{19}).$$
+Do đó $D\ \vdots\ 3.$
 
-c) Nhóm ba số hạng liền nhau (gồm $4$ nhóm):
-$$A = (4 + 4^2 + 4^3) + (4^4 + 4^5 + 4^6) + \dots + (4^{10} + 4^{11} + 4^{12})$$
-$$A = 4(1 + 4 + 4^2) + 4^4(1 + 4 + 4^2) + \dots + 4^{10}(1 + 4 + 4^2)$$
-Ta có $1 + 4 + 4^2 = 1 + 4 + 16 = 21.$
-$$A = 21 \cdot (4 + 4^4 + \dots + 4^{10}).$$
-Do đó $A\ \vdots\ 21.$
+c) Nhóm bốn số hạng liền nhau (gồm $20 : 4 = 5$ nhóm):
+$$D = (2 + 2^2 + 2^3 + 2^4) + \dots + (2^{17} + 2^{18} + 2^{19} + 2^{20})$$
+$$D = 2(1 + 2 + 4 + 8) + \dots + 2^{17}(1 + 2 + 4 + 8)$$
+Ta có $1 + 2 + 4 + 8 = 15.$
+$$D = 15 \cdot (2 + 2^5 + \dots + 2^{17}).$$
+Do đó $D\ \vdots\ 15.$
 
 </details>
 
 ### Nâng cao 4
 Cho $a$ và $d$ là các số tự nhiên khác $0.$ Chứng minh rằng $d = 1$ nếu:
-a) $a$ và $2a - 1$ cùng chia hết cho $d;$
-b) $a$ và $6a - 1$ cùng chia hết cho $d.$
+a) $a$ và $3a - 1$ cùng chia hết cho $d;$
+b) $a$ và $5a - 1$ cùng chia hết cho $d.$
 
 <details>
 <summary><strong>Xem lời giải Nâng cao 4</strong></summary>
 
-a) Vì $a\ \vdots\ d \implies 2a\ \vdots\ d.$
-Mặt khác theo giả thiết $2a - 1\ \vdots\ d.$
+a) Vì $a\ \vdots\ d \implies 3a\ \vdots\ d.$
+Mặt khác theo giả thiết $3a - 1\ \vdots\ d.$
 Lấy hiệu hai số cùng chia hết cho $d$:
-$$[2a - (2a - 1)]\ \vdots\ d \implies 1\ \vdots\ d.$$
+$$[3a - (3a - 1)]\ \vdots\ d \implies 1\ \vdots\ d.$$
 Vì $d$ là số tự nhiên khác $0$ và $1\ \vdots\ d \implies d = 1.$
 
-b) Vì $a\ \vdots\ d \implies 6a\ \vdots\ d.$
-Mặt khác $6a - 1\ \vdots\ d.$
+b) Vì $a\ \vdots\ d \implies 5a\ \vdots\ d.$
+Mặt khác $5a - 1\ \vdots\ d.$
 Lấy hiệu hai số:
-$$[6a - (6a - 1)]\ \vdots\ d \implies 1\ \vdots\ d \implies d = 1.$$
+$$[5a - (5a - 1)]\ \vdots\ d \implies 1\ \vdots\ d \implies d = 1.$$
 
 </details>
 
 ### Nâng cao 5
-Chứng minh rằng với mọi số tự nhiên $n,$ tích $P = n \cdot (n + 2) \cdot (n + 7)$ luôn chia hết cho $3.$
+Chứng minh rằng với mọi số tự nhiên $n,$ tích $P = n \cdot (n + 1) \cdot (n + 5)$ luôn chia hết cho $3.$
 
 <details>
 <summary><strong>Xem lời giải Nâng cao 5</strong></summary>
@@ -864,14 +862,14 @@ Khi chia một số tự nhiên $n$ bất kì cho $3,$ số dư chỉ có thể 
   Khi đó thừa số đầu tiên $n\ \vdots\ 3 \implies P\ \vdots\ 3.$
 
 - **Trường hợp 2:** $n$ chia $3$ dư $1$ ($n = 3k + 1,$ với $k \in \mathbb{N}$).
-  Khi đó thừa số thứ hai:
-  $$n + 2 = 3k + 1 + 2 = 3k + 3 = 3(k + 1)\ \vdots\ 3 \implies P\ \vdots\ 3.$$
+  Khi đó thừa số thứ ba:
+  $$n + 5 = 3k + 1 + 5 = 3k + 6 = 3(k + 2)\ \vdots\ 3 \implies P\ \vdots\ 3.$$
 
 - **Trường hợp 3:** $n$ chia $3$ dư $2$ ($n = 3k + 2,$ với $k \in \mathbb{N}$).
-  Khi đó thừa số thứ ba:
-  $$n + 7 = 3k + 2 + 7 = 3k + 9 = 3(k + 3)\ \vdots\ 3 \implies P\ \vdots\ 3.$$
+  Khi đó thừa số thứ hai:
+  $$n + 1 = 3k + 2 + 1 = 3k + 3 = 3(k + 1)\ \vdots\ 3 \implies P\ \vdots\ 3.$$
 
 Trong cả 3 trường hợp, tích $P$ luôn chứa ít nhất một thừa số chia hết cho $3.$
-Vậy $n(n + 2)(n + 7)\ \vdots\ 3$ với mọi số tự nhiên $n.$
+Vậy $n(n + 1)(n + 5)\ \vdots\ 3$ với mọi số tự nhiên $n.$
 
 </details>
