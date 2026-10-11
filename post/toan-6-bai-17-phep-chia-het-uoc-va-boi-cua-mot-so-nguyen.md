@@ -702,7 +702,7 @@ Hỏi có bạn nào tính đúng không? Vì sao?
 
 **Lời giải:**
 Tổng ban đầu gồm $500$ số hạng:
-$$S = \frac{(2 + 1000) \cdot 500}{2} = 1002 \cdot 250 = 250\ 500.$$
+$$S = \dfrac{(2 + 1000) \cdot 500}{2} = 1002 \cdot 250 = 250\ 500.$$
 Nhận xét: $250\ 500 = 4 \cdot 62\ 625$, do đó $S \ \vdots \ 4.$
 
 Khi thay dấu "$+$" trước một số hạng chẵn $2k$ ($k \in \mathbb{N}^*$) thành dấu "$-$", giá trị của tổng sẽ giảm đi một lượng đúng bằng:
@@ -753,7 +753,7 @@ Tìm tất cả các số nguyên $n$ để:
 
 **Phương pháp tổng quát:**
 Tách tử số theo mẫu số sao cho phần biến $n$ bị triệt tiêu, đưa về dạng:
-$$A(n) = Q + \frac{k}{B(n)}$$
+$$A(n) = Q + \dfrac{k}{B(n)}$$
 Để biểu thức chia hết thì $k \ \vdots \ B(n)$, nghĩa là $B(n) \in \text{Ư}(k)$.
 
 **Lời giải:**

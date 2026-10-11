@@ -831,7 +831,7 @@ Vậy có hai số thỏa mãn là $15$ và $24.$
 Biểu thức: $\overline{xyzt0} - 1110k = \overline{xyzt}.$
 Đặt $N = \overline{xyzt}.$ Khi đó $\overline{xyzt0} = 10N.$
 Phương trình trở thành:
-$$10N - 1110k = N \implies 9N = 1110k \implies 3N = 370k \implies N = \frac{370k}{3}.$$
+$$10N - 1110k = N \implies 9N = 1110k \implies 3N = 370k \implies N = \dfrac{370k}{3}.$$
 Vì $N$ là số tự nhiên có 4 chữ số và $\text{ƯCLN}(370, 3) = 1$ nên $k$ phải chia hết cho 3. Đặt $k = 3m$, khi đó $N = 370m.$
 Vì $N$ có 4 chữ số ($1000 \le N \le 9999$) nên $1000 \le 370m \le 9999 \implies 3 \le m \le 27.$
 Ví dụ với $m = 3$, ta có $k = 9$ và $N = 1110.$ Khi đó $11100 - 1110 \cdot 9 = 11100 - 9990 = 1110$ (đúng).
@@ -933,9 +933,9 @@ Các ước của $945$ lớn hơn 25 là: $27, 35, 45, 63, \dots$
 
 **Bài 2.**
 Áp dụng công thức tính tổng $n$ số tự nhiên liên tiếp từ 1 đến $n$:
-$$1 + 2 + 3 + \dots + n = \frac{n(n + 1)}{2}.$$
+$$1 + 2 + 3 + \dots + n = \dfrac{n(n + 1)}{2}.$$
 Theo đề bài:
-$$\frac{n(n + 1)}{2} = 465 \implies n(n + 1) = 930.$$
+$$\dfrac{n(n + 1)}{2} = 465 \implies n(n + 1) = 930.$$
 Phân tích $930$ thành tích của hai số tự nhiên liên tiếp:
 $$930 = 30 \cdot 31.$$
 Vậy $n = 30.$

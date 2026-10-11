@@ -42,7 +42,7 @@ Bài học này sẽ giúp các em nắm vững khái niệm đoạn thẳng, kh
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #ec4899; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #be185d;">4. Công thức đếm</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Với $n$ điểm phân biệt, số đoạn thẳng tạo thành là $\frac{n(n - 1)}{2}$ đoạn thẳng.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Với $n$ điểm phân biệt, số đoạn thẳng tạo thành là $\dfrac{n(n - 1)}{2}$ đoạn thẳng.</p>
     </div>
   </div>
 </div>
@@ -174,13 +174,13 @@ Cho $n$ điểm phân biệt trên mặt phẳng (hoặc trên cùng một đư�
 - Chọn một điểm làm mút thứ hai: có $(n - 1)$ cách chọn.
 - Số cặp điểm là $n(n - 1).$
 - Vì mỗi đoạn thẳng $AB$ và $BA$ bị đếm $2$ lần, nên số đoạn thẳng phân biệt là:
-$$S = \frac{n(n - 1)}{2}\text{ (đoạn thẳng)}.$$
+$$S = \dfrac{n(n - 1)}{2}\text{ (đoạn thẳng)}.$$
 
 **Bảng tra cứu số đoạn thẳng:**
 
 | Số điểm ($n$) | $2$ | $3$ | $4$ | $5$ | $6$ | $10$ | $n$ |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Số đoạn thẳng ($S$)** | $1$ | $3$ | $6$ | $10$ | $15$ | $45$ | $\frac{n(n-1)}{2}$ |
+| **Số đoạn thẳng ($S$)** | $1$ | $3$ | $6$ | $10$ | $15$ | $45$ | $\dfrac{n(n-1)}{2}$ |
 
 ---
 
@@ -190,7 +190,7 @@ $$S = \frac{n(n - 1)}{2}\text{ (đoạn thẳng)}.$$
 
 #### Phương pháp giải:
 - Để đếm không sót, không trùng: Liệt kê các đoạn thẳng theo từng đầu mút từ trái sang phải.
-- Hoặc áp dụng công thức $S = \frac{n(n - 1)}{2}$ nếu có $n$ điểm phân biệt.
+- Hoặc áp dụng công thức $S = \dfrac{n(n - 1)}{2}$ nếu có $n$ điểm phân biệt.
 
 ---
 
@@ -201,7 +201,7 @@ b) Điểm $B$ là đầu mút của những đoạn thẳng nào?
 c) Điểm $C$ nằm trên những đoạn thẳng nào?
 
 **Lời giải:**
-a) Với $n = 4$ điểm, số đoạn thẳng là: $\frac{4 \cdot 3}{2} = 6$ đoạn thẳng.
+a) Với $n = 4$ điểm, số đoạn thẳng là: $\dfrac{4 \cdot 3}{2} = 6$ đoạn thẳng.
 Liệt kê:
 - Các đoạn thẳng có một đầu mút là $A$: $AB, AC, AD.$
 - Các đoạn thẳng có một đầu mút là $B$ (không kể $A$): $BC, BD.$
@@ -394,10 +394,10 @@ Một thanh gỗ dài $3\text{ m}.$ Bác thợ mộc cưa thanh gỗ thành ba �
 
 **Bài 1:**
 a) Với $5$ điểm $A, B, C, D, E$ trên đường thẳng:
-- Số đoạn thẳng: $\frac{5 \cdot 4}{2} = 10$ đoạn thẳng.
+- Số đoạn thẳng: $\dfrac{5 \cdot 4}{2} = 10$ đoạn thẳng.
 - Danh sách: $AB, AC, AD, AE, BC, BD, BE, CD, CE, DE.$
 b) Với $7$ điểm không có $3$ điểm thẳng hàng:
-- Số đoạn thẳng: $\frac{7 \cdot 6}{2} = 21$ đoạn thẳng.
+- Số đoạn thẳng: $\dfrac{7 \cdot 6}{2} = 21$ đoạn thẳng.
 
 **Bài 2:**
 a) Đổi về đơn vị $\text{cm}$:
@@ -499,7 +499,7 @@ Do đó, không có điểm nào nằm giữa hai điểm còn lại $\implies$ 
 ### Chuyên đề 2: Bài toán phương trình đoạn thẳng kết hợp tỉ số
 
 **Bài toán 2:**
-Cho đoạn thẳng $AB = 15\text{ cm}.$ Điểm $C$ nằm giữa hai điểm $A$ và $B$ sao cho độ dài đoạn thẳng $AC$ bằng $\frac{2}{3}$ độ dài đoạn thẳng $CB.$
+Cho đoạn thẳng $AB = 15\text{ cm}.$ Điểm $C$ nằm giữa hai điểm $A$ và $B$ sao cho độ dài đoạn thẳng $AC$ bằng $\dfrac{2}{3}$ độ dài đoạn thẳng $CB.$
 a) Tính độ dài các đoạn thẳng $AC$ và $CB.$
 b) Trên tia đối của tia $BA,$ lấy điểm $D$ sao cho $BD = 4\text{ cm}.$ Tính độ dài đoạn thẳng $CD.$
 
@@ -507,7 +507,7 @@ b) Trên tia đối của tia $BA,$ lấy điểm $D$ sao cho $BD = 4\text{ cm}.
 a)
 - Vì $C$ nằm giữa $A$ và $B$ nên:
   $$AC + CB = AB = 15\text{ cm}.$$
-- Ta có tỉ số: $\frac{AC}{CB} = \frac{2}{3}.$
+- Ta có tỉ số: $\dfrac{AC}{CB} = \dfrac{2}{3}.$
 - Coi $AC$ là $2$ phần bằng nhau thì $CB$ là $3$ phần như thế.
   Tổng số phần bằng nhau là:
   $$2 + 3 = 5\text{ phần}.$$
@@ -542,7 +542,7 @@ b) Nếu sau đó có thêm $2$ kỳ thủ nữa đăng ký bổ sung và cũng 
 a)
 - Gọi số kỳ thủ tham gia là $n$ ($n \in \mathbb{N}^*, n \ge 2$).
 - Cứ $2$ kỳ thủ đấu $1$ ván, số ván đấu bằng số đoạn thẳng tạo bởi $n$ điểm:
-  $$S = \frac{n(n - 1)}{2} = 66 \iff n(n - 1) = 132.$$
+  $$S = \dfrac{n(n - 1)}{2} = 66 \iff n(n - 1) = 132.$$
 - Ta phân tích $132$ thành tích của hai số tự nhiên liên tiếp:
   $$132 = 12 \cdot 11.$$
 - Suy ra $n = 12.$
@@ -551,7 +551,7 @@ Vậy giải đấu có **$12$ kỳ thủ** tham gia.
 b)
 - Khi có thêm $2$ kỳ thủ mới, tổng số kỳ thủ là $12 + 2 = 14$ người.
 - Tổng số ván đấu mới là:
-  $$S' = \frac{14 \cdot 13}{2} = 91\text{ ván}.$$
+  $$S' = \dfrac{14 \cdot 13}{2} = 91\text{ ván}.$$
 - Số ván đấu tăng thêm là:
   $$91 - 66 = 25\text{ ván}.$$
 *(Cách khác: Mỗi kỳ thủ mới phải đấu với 12 kỳ thủ cũ và đấu với nhau: $2 \cdot 12 + 1 = 25$ ván).*
@@ -802,7 +802,7 @@ Cho $n$ điểm phân biệt trên một đường thẳng. Biết rằng số �
 
 **Phần I: Trắc nghiệm (3.0 điểm)**
 - Câu 1: **A** (Điểm $M$ và điểm $N$). *(0.75 điểm)*
-- Câu 2: **B** ($\frac{5 \cdot 4}{2} = 10$ đoạn thẳng). *(0.75 điểm)*
+- Câu 2: **B** ($\dfrac{5 \cdot 4}{2} = 10$ đoạn thẳng). *(0.75 điểm)*
 - Câu 3: **B** ($EF = 4 + 5 = 9\text{ cm}$). *(0.75 điểm)*
 - Câu 4: **B** ($A$ nằm giữa $O$ và $B$). *(0.75 điểm)*
 
@@ -825,6 +825,6 @@ Cho $n$ điểm phân biệt trên một đường thẳng. Biết rằng số �
   - b) Vì $MN = 20\text{ cm} > 0$ nên hai điểm $M$ và $N$ **không trùng nhau**. *(0.5 điểm)*
 - **Bài 4 (1.0 điểm):**
   - Ta có công thức:
-    $$\frac{n(n - 1)}{2} = 36 \iff n(n - 1) = 72.$$ *(0.5 điểm)*
+    $$\dfrac{n(n - 1)}{2} = 36 \iff n(n - 1) = 72.$$ *(0.5 điểm)*
   - Vì $n$ và $(n - 1)$ là hai số tự nhiên liên tiếp, và $9 \cdot 8 = 72,$ suy ra $n = 9.$
   - Vậy có **$9$ điểm**. *(0.5 điểm)*

@@ -63,14 +63,14 @@ explanation: 'Phân tích $36 = 2^2 \cdot 3^2.$ Số ước là $(2 + 1)(2 + 1) 
 
 ```quiz
 type: choice
-question: 'Rút gọn phân số $\frac{10}{15}$ về tối giản, ta được phân số nào?'
+question: 'Rút gọn phân số $\dfrac{10}{15}$ về tối giản, ta được phân số nào?'
 options:
-  - '$\frac{5}{7}$'
-  - '$\frac{2}{3}$'
-  - '$\frac{1}{2}$'
-  - '$\frac{3}{5}$'
+  - '$\dfrac{5}{7}$'
+  - '$\dfrac{2}{3}$'
+  - '$\dfrac{1}{2}$'
+  - '$\dfrac{3}{5}$'
 answer: 2
-explanation: 'Chia cả tử và mẫu cho 5: $\frac{10 : 5}{15 : 5} = \frac{2}{3}.$'
+explanation: 'Chia cả tử và mẫu cho 5: $\dfrac{10 : 5}{15 : 5} = \dfrac{2}{3}.$'
 ```
 
 <details>
@@ -90,7 +90,7 @@ Vì $36 = 2^2 \cdot 3^2$ nên số lượng ước của $36$ là: $(2 + 1)(2 + 
 *(Các ước là: $1; 2; 3; 4; 6; 9; 12; 18; 36$).*
 
 **Câu 4.**
-$$\frac{10}{15} = \frac{10 : 5}{15 : 5} = \frac{2}{3}.$$
+$$\dfrac{10}{15} = \dfrac{10 : 5}{15 : 5} = \dfrac{2}{3}.$$
 Em đã chia cả tử và mẫu cho số $5.$ Không còn chia được cho số tự nhiên nào lớn hơn $5$ nữa vì $2$ và $3$ không còn ước chung nào khác $1.$
 
 **Câu 5.** Để tìm những số vừa là ước của số này vừa là ước của số kia, việc liệt kê hết các ước chỉ tiện khi các số nhỏ. Với các số lớn, ta có phương pháp tìm ƯCLN bằng cách phân tích ra thừa số nguyên tố rồi lấy các ước của ƯCLN đó mà không cần liệt kê toàn bộ.
@@ -184,15 +184,15 @@ $$\text{ƯC}(36, 90) = \text{Ư}(18) = \{1; 2; 3; 6; 9; 18\}.$$
 > **Định nghĩa:**
 > - Hai số tự nhiên được gọi là **nguyên tố cùng nhau** nếu ước chung lớn nhất của chúng bằng $1$:
 >   $$\text{ƯCLN}(a, b) = 1.$$
-> - Phân số $\frac{a}{b}$ ($a, b \in \mathbb{N}^*$) được gọi là **phân số tối giản** khi tử số và mẫu số của nó là hai số nguyên tố cùng nhau, tức là $\text{ƯCLN}(a, b) = 1.$
+> - Phân số $\dfrac{a}{b}$ ($a, b \in \mathbb{N}^*$) được gọi là **phân số tối giản** khi tử số và mẫu số của nó là hai số nguyên tố cùng nhau, tức là $\text{ƯCLN}(a, b) = 1.$
 
 **Quy tắc rút gọn phân số về tối giản chỉ trong một bước:**
-- Muốn rút gọn phân số $\frac{a}{b}$ về tối giản nhanh nhất, ta **chia cả tử và mẫu cho $\text{ƯCLN}(a, b)$**:
-  $$\frac{a}{b} = \frac{a : \text{ƯCLN}(a, b)}{b : \text{ƯCLN}(a, b)}.$$
+- Muốn rút gọn phân số $\dfrac{a}{b}$ về tối giản nhanh nhất, ta **chia cả tử và mẫu cho $\text{ƯCLN}(a, b)$**:
+  $$\dfrac{a}{b} = \dfrac{a : \text{ƯCLN}(a, b)}{b : \text{ƯCLN}(a, b)}.$$
 
 **Ví dụ 3:**
 a) Hai số $9$ và $20$ có phải là hai số nguyên tố cùng nhau không?
-b) Rút gọn phân số $\frac{28}{42}$ về phân số tối giản.
+b) Rút gọn phân số $\dfrac{28}{42}$ về phân số tối giản.
 
 <details>
 <summary><strong>Xem lời giải Ví dụ 3</strong></summary>
@@ -204,8 +204,8 @@ Vậy $9$ và $20$ là **hai số nguyên tố cùng nhau** (dù cả hai số �
 b) Phân tích: $28 = 2^2 \cdot 7$ và $42 = 2 \cdot 3 \cdot 7.$
 $$\text{ƯCLN}(28, 42) = 2 \cdot 7 = 14.$$
 Chia cả tử và mẫu cho $14$:
-$$\frac{28}{42} = \frac{28 : 14}{42 : 14} = \frac{2}{3}.$$
-Vì $\text{ƯCLN}(2, 3) = 1$ nên phân số $\frac{2}{3}$ là phân số tối giản.
+$$\dfrac{28}{42} = \dfrac{28 : 14}{42 : 14} = \dfrac{2}{3}.$$
+Vì $\text{ƯCLN}(2, 3) = 1$ nên phân số $\dfrac{2}{3}$ là phân số tối giản.
 
 </details>
 
@@ -479,22 +479,22 @@ Chẳng hạn hai số $9$ ($9 = 3^2$) và $25$ ($25 = 5^2$). Cả hai đều l�
 
 #### Luyện tập 4.3
 Rút gọn mỗi phân số sau về phân số tối giản:
-a) $\frac{18}{30};$
-b) $\frac{24}{36};$
-c) $\frac{35}{84}.$
+a) $\dfrac{18}{30};$
+b) $\dfrac{24}{36};$
+c) $\dfrac{35}{84}.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 4.3</strong></summary>
 
 a) Ta có $\text{ƯCLN}(18, 30) = 6.$ Chia cả tử và mẫu cho $6$:
-$$\frac{18}{30} = \frac{18 : 6}{30 : 6} = \frac{3}{5}.$$
+$$\dfrac{18}{30} = \dfrac{18 : 6}{30 : 6} = \dfrac{3}{5}.$$
 
 b) Ta có $\text{ƯCLN}(24, 36) = 12.$ Chia cả tử và mẫu cho $12$:
-$$\frac{24}{36} = \frac{24 : 12}{36 : 12} = \frac{2}{3}.$$
+$$\dfrac{24}{36} = \dfrac{24 : 12}{36 : 12} = \dfrac{2}{3}.$$
 
 c) Ta có $35 = 5 \cdot 7$ và $84 = 2^2 \cdot 3 \cdot 7 \implies \text{ƯCLN}(35, 84) = 7.$
 Chia cả tử và mẫu cho $7$:
-$$\frac{35}{84} = \frac{35 : 7}{84 : 7} = \frac{5}{12}.$$
+$$\dfrac{35}{84} = \dfrac{35 : 7}{84 : 7} = \dfrac{5}{12}.$$
 
 </details>
 
@@ -607,20 +607,20 @@ b) $45 = 3^2 \cdot 5;\; 75 = 3 \cdot 5^2;\; 105 = 3 \cdot 5 \cdot 7 \implies \te
 </details>
 
 ### Bài 4
-a) Rút gọn phân số $\frac{20}{35}$ về phân số tối giản.
-b) Tìm một phân số bằng $\frac{4}{9}$ và có mẫu số bằng $45.$
-c) Trong các phân số $\frac{15}{27};\; \frac{25}{45};\; \frac{20}{36},$ phân số nào bằng phân số $\frac{5}{9}?$
+a) Rút gọn phân số $\dfrac{20}{35}$ về phân số tối giản.
+b) Tìm một phân số bằng $\dfrac{4}{9}$ và có mẫu số bằng $45.$
+c) Trong các phân số $\dfrac{15}{27};\; \dfrac{25}{45};\; \dfrac{20}{36},$ phân số nào bằng phân số $\dfrac{5}{9}?$
 
 <details>
 <summary><strong>Xem lời giải Bài 4</strong></summary>
 
-a) $\text{ƯCLN}(20, 35) = 5 \implies \frac{20}{35} = \frac{20 : 5}{35 : 5} = \frac{4}{7}.$
-b) Nhân cả tử và mẫu với $5$: $\frac{4}{9} = \frac{4 \cdot 5}{9 \cdot 5} = \frac{20}{45}.$
+a) $\text{ƯCLN}(20, 35) = 5 \implies \dfrac{20}{35} = \dfrac{20 : 5}{35 : 5} = \dfrac{4}{7}.$
+b) Nhân cả tử và mẫu với $5$: $\dfrac{4}{9} = \dfrac{4 \cdot 5}{9 \cdot 5} = \dfrac{20}{45}.$
 c) Rút gọn các phân số về tối giản:
-- $\frac{15}{27} = \frac{15 : 3}{27 : 3} = \frac{5}{9}.$
-- $\frac{25}{45} = \frac{25 : 5}{45 : 5} = \frac{5}{9}.$
-- $\frac{20}{36} = \frac{20 : 4}{36 : 4} = \frac{5}{9}.$
-Vậy **cả ba phân số đã cho đều bằng $\frac{5}{9}$**.
+- $\dfrac{15}{27} = \dfrac{15 : 3}{27 : 3} = \dfrac{5}{9}.$
+- $\dfrac{25}{45} = \dfrac{25 : 5}{45 : 5} = \dfrac{5}{9}.$
+- $\dfrac{20}{36} = \dfrac{20 : 4}{36 : 4} = \dfrac{5}{9}.$
+Vậy **cả ba phân số đã cho đều bằng $\dfrac{5}{9}$**.
 
 </details>
 
@@ -675,14 +675,14 @@ Phân tích: $140 = 2^2 \cdot 5 \cdot 7$ và $84 = 2^2 \cdot 3 \cdot 7.$
 $$\text{ƯCLN}(140, 84) = 2^2 \cdot 7 = 28\text{ (cm)}.$$
 Vậy cạnh hình vuông lớn nhất bằng $28\text{ cm}.$
 Số hình vuông cắt được là:
-$$\frac{140}{28} \cdot \frac{84}{28} = 5 \cdot 3 = 15\text{ (mảnh)}.$$
+$$\dfrac{140}{28} \cdot \dfrac{84}{28} = 5 \cdot 3 = 15\text{ (mảnh)}.$$
 
 </details>
 
 ### Bài 9
 Xét hai phát biểu sau và cho biết mỗi phát biểu đúng hay sai, giải thích rõ:
 a) Bạn Lan nói: *"Hai số tự nhiên liên tiếp luôn luôn nguyên tố cùng nhau."*
-b) Bạn Minh rút gọn phân số $\frac{20}{32}$ bằng cách chia cả tử và mẫu cho $2,$ được $\frac{10}{16},$ rồi nói: *"Phân số này đã tối giản rồi."*
+b) Bạn Minh rút gọn phân số $\dfrac{20}{32}$ bằng cách chia cả tử và mẫu cho $2,$ được $\dfrac{10}{16},$ rồi nói: *"Phân số này đã tối giản rồi."*
 
 <details>
 <summary><strong>Xem lời giải Bài 9</strong></summary>
@@ -693,8 +693,8 @@ Nếu $d$ là ước chung của $n$ và $n + 1$ thì $(n + 1 - n)\ \vdots\ d \i
 Do đó $\text{ƯCLN}(n, n + 1) = 1,$ nghĩa là hai số tự nhiên liên tiếp luôn nguyên tố cùng nhau.
 
 b) Bạn Minh nói **SAI**.
-Phân số $\frac{10}{16}$ chưa tối giản vì $\text{ƯCLN}(10, 16) = 2 \neq 1.$ Phải rút gọn tiếp:
-$$\frac{10}{16} = \frac{10 : 2}{16 : 2} = \frac{5}{8}.$$
+Phân số $\dfrac{10}{16}$ chưa tối giản vì $\text{ƯCLN}(10, 16) = 2 \neq 1.$ Phải rút gọn tiếp:
+$$\dfrac{10}{16} = \dfrac{10 : 2}{16 : 2} = \dfrac{5}{8}.$$
 *(Để rút gọn tối giản chỉ trong một lần, Minh nên chia cả tử và mẫu cho $\text{ƯCLN}(20, 32) = 4$).*
 
 </details>
@@ -712,7 +712,7 @@ Phân tích ra thừa số nguyên tố:
 $$\text{ƯCLN}(720, 540) = 2^2 \cdot 3^2 \cdot 5 = 4 \cdot 9 \cdot 5 = 180\text{ (cm)}.$$
 Vậy cạnh viên gạch hoa lớn nhất bằng $180\text{ cm}.$
 Số viên gạch cần dùng là:
-$$\frac{720}{180} \cdot \frac{540}{180} = 4 \cdot 3 = 12\text{ (viên)}.$$
+$$\dfrac{720}{180} \cdot \dfrac{540}{180} = 4 \cdot 3 = 12\text{ (viên)}.$$
 
 </details>
 
@@ -760,12 +760,12 @@ explanation: 'Ta có $24 = 2^3 \cdot 3$ và $36 = 2^2 \cdot 3^2 \implies \text{�
 type: choice
 question: 'Phân số nào sau đây đã là phân số tối giản?'
 options:
-  - '$\frac{6}{9}$'
-  - '$\frac{14}{21}$'
-  - '$\frac{8}{15}$'
-  - '$\frac{10}{25}$'
+  - '$\dfrac{6}{9}$'
+  - '$\dfrac{14}{21}$'
+  - '$\dfrac{8}{15}$'
+  - '$\dfrac{10}{25}$'
 answer: 3
-explanation: 'Ta có $\text{ƯCLN}(8, 15) = 1$ nên phân số $\frac{8}{15}$ đã tối giản. Các phân số khác đều rút gọn được tiếp.'
+explanation: 'Ta có $\text{ƯCLN}(8, 15) = 1$ nên phân số $\dfrac{8}{15}$ đã tối giản. Các phân số khác đều rút gọn được tiếp.'
 ```
 
 <details>
@@ -786,8 +786,8 @@ $18 = 2 \cdot 3^2;\; 30 = 2 \cdot 3 \cdot 5;\; 42 = 2 \cdot 3 \cdot 7 \implies \
 $$\text{ƯC}(72, 108) = \text{Ư}(36) = \{1; 2; 3; 4; 6; 9; 12; 18; 36\}.$$
 
 **Câu 4.** Rút gọn mỗi phân số về tối giản:
-a) $\frac{28}{42} = \frac{28 : 14}{42 : 14} = \frac{2}{3}.$
-b) $\frac{45}{60} = \frac{45 : 15}{60 : 15} = \frac{3}{4}.$
+a) $\dfrac{28}{42} = \dfrac{28 : 14}{42 : 14} = \dfrac{2}{3}.$
+b) $\dfrac{45}{60} = \dfrac{45 : 15}{60 : 15} = \dfrac{3}{4}.$
 
 **Câu 5.** Cô giáo có $30$ chiếc bút và $45$ quyển vở, muốn chia đều vào các phần quà sao cho mỗi phần có số bút như nhau và số vở như nhau. Hỏi chia được nhiều nhất bao nhiêu phần quà?
 *Giải:* Số phần quà nhiều nhất là $\text{ƯCLN}(30, 45) = 15$ phần quà (mỗi phần gồm $2$ bút và $3$ vở).

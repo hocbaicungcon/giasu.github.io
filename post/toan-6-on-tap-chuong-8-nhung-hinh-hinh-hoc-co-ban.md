@@ -25,7 +25,7 @@ Chương VIII đưa các em bước vào thế giới hình học phẳng nền 
 Toàn bộ mạch kiến thức Chương VIII có tính liên kết logic chặt chẽ:
 - Từ điểm và đường thẳng $\to$ sinh ra quan hệ thẳng hàng, cắt nhau, song song.
 - Một điểm trên đường thẳng $\to$ chia đường thẳng thành hai tia đối nhau.
-- Hai điểm giới hạn $\to$ tạo thành đoạn thẳng với hệ thức cộng độ dài $AM + MB = AB$ và trung điểm $MA = MB = \frac{AB}{2}.$
+- Hai điểm giới hạn $\to$ tạo thành đoạn thẳng với hệ thức cộng độ dài $AM + MB = AB$ và trung điểm $MA = MB = \dfrac{AB}{2}.$
 - Hai tia chung gốc $\to$ tạo thành góc, với công cụ thước đo độ phân chia thành $4$ loại góc (nhọn, vuông, tù, bẹt) và ứng dụng đo đạc chuyển động của kim đồng hồ.
 
 Bài tổng ôn này sẽ hệ thống hóa toàn bộ lý thuyết $6$ bài học, tổng kết các công thức đếm tổ hợp quan trọng, cảnh báo các bẫy hình học thường gặp, trang bị $5$ chuyên đề bồi dưỡng học sinh giỏi nâng cao độc bản $100\%$ và bộ đề kiểm tra $45$ phút chuẩn ma trận có hướng dẫn chấm chi tiết.
@@ -37,7 +37,7 @@ Bài tổng ôn này sẽ hệ thống hóa toàn bộ lý thuyết $6$ bài h�
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px;">
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #1d4ed8;">1. Điểm & Đường thẳng (B32)</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Điểm $A \in d,$ $B \notin d$.<br>• Ba điểm thẳng hàng.<br>• Hai đường thẳng cắt nhau / song song / trùng nhau.<br>• $n$ điểm $\implies \frac{n(n - 1)}{2}$ đường thẳng.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Điểm $A \in d,$ $B \notin d$.<br>• Ba điểm thẳng hàng.<br>• Hai đường thẳng cắt nhau / song song / trùng nhau.<br>• $n$ điểm $\implies \dfrac{n(n - 1)}{2}$ đường thẳng.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #047857;">2. Điểm nằm giữa & Tia (B33)</h4>
@@ -49,11 +49,11 @@ Bài tổng ôn này sẽ hệ thống hóa toàn bộ lý thuyết $6$ bài h�
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #8b5cf6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #6d28d9;">4. Trung điểm của đoạn thẳng (B35)</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Điểm chính giữa: vừa nằm giữa, vừa cách đều ($MA = MB$).<br>• $MA = MB = \frac{AB}{2} \iff AB = 2MA$.<br>• Mỗi đoạn thẳng có duy nhất một trung điểm.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Điểm chính giữa: vừa nằm giữa, vừa cách đều ($MA = MB$).<br>• $MA = MB = \dfrac{AB}{2} \iff AB = 2MA$.<br>• Mỗi đoạn thẳng có duy nhất một trung điểm.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #ec4899; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #be185d;">5. Góc & Điểm trong của góc (B36)</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Hình gồm hai tia chung gốc (đỉnh ở giữa: $\widehat{xOy}$).<br>• Góc bẹt: hai cạnh là hai tia đối nhau.<br>• Điểm trong của góc; $n$ tia chung gốc $\implies \frac{n(n - 1)}{2}$ góc.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Hình gồm hai tia chung gốc (đỉnh ở giữa: $\widehat{xOy}$).<br>• Góc bẹt: hai cạnh là hai tia đối nhau.<br>• Điểm trong của góc; $n$ tia chung gốc $\implies \dfrac{n(n - 1)}{2}$ góc.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #06b6d4; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #0e7490;">6. Số đo góc & Phân loại (B37)</h4>
@@ -73,7 +73,7 @@ Bài tổng ôn này sẽ hệ thống hóa toàn bộ lý thuyết $6$ bài h�
 | **Bài 32** | Điểm, Đường thẳng | Qua $2$ điểm phân biệt có duy nhất $1$ đường thẳng; điểm thuộc/không thuộc đường thẳng. | $A \in d,\; B \notin d$; $d_1 \parallel d_2$; $d_1 \cap d_2 = \{M\}$. |
 | **Bài 33** | Điểm nằm giữa, Tia | Điểm $M$ nằm giữa $A$ và $B$; tia là hình gồm điểm gốc và phần đường thẳng bị chia ra. | Hai tia đối nhau: chung gốc và tạo thành một đường thẳng; hai tia trùng nhau. |
 | **Bài 34** | Đoạn thẳng | Hình gồm hai điểm $A, B$ và tất cả các điểm nằm giữa $A$ và $B$. | $M$ nằm giữa $A, B \iff AM + MB = AB$. |
-| **Bài 35** | Trung điểm | Điểm vừa nằm giữa vừa cách đều hai đầu mút của đoạn thẳng. | $MA = MB = \frac{AB}{2} \iff AB = 2 \cdot MA$. |
+| **Bài 35** | Trung điểm | Điểm vừa nằm giữa vừa cách đều hai đầu mút của đoạn thẳng. | $MA = MB = \dfrac{AB}{2} \iff AB = 2 \cdot MA$. |
 | **Bài 36** | Góc | Hình gồm hai tia chung gốc. Gốc chung là đỉnh, hai tia là hai cạnh. | Kí hiệu: $\widehat{xOy}$ (chữ chỉ đỉnh ở giữa); góc bẹt có hai cạnh đối nhau. |
 | **Bài 37** | Số đo góc | Đo bằng thước đo độ; số đo từ $0^\circ$ đến $180^\circ$. | Nhọn ($< 90^\circ$); Vuông ($= 90^\circ$); Tù ($90^\circ < \alpha < 180^\circ$); Bẹt ($= 180^\circ$). |
 
@@ -86,13 +86,13 @@ Các công thức đếm hình học xuất hiện xuyên suốt Chương VIII �
 > [!IMPORTANT]
 > **Bộ 4 công thức đếm hình kinh điển:**
 > 1. **Đếm đường thẳng:** Cho $n$ điểm phân biệt ($n \ge 2$), trong đó không có ba điểm nào thẳng hàng. Số đường thẳng vẽ được qua các cặp điểm là:
->    $$N_{\text{đường thẳng}} = \frac{n(n - 1)}{2}.$$
+>    $$N_{\text{đường thẳng}} = \dfrac{n(n - 1)}{2}.$$
 > 2. **Đếm đoạn thẳng:** Cho $n$ điểm phân biệt trên một đường thẳng (hoặc trên mặt phẳng). Số đoạn thẳng nối từng cặp điểm là:
->    $$N_{\text{đoạn thẳng}} = \frac{n(n - 1)}{2}.$$
+>    $$N_{\text{đoạn thẳng}} = \dfrac{n(n - 1)}{2}.$$
 > 3. **Đếm tia:** Trên một đường thẳng lấy $n$ điểm phân biệt. Vì mỗi điểm là gốc của đúng $2$ tia đối nhau nên tổng số tia phân biệt là:
 >    $$N_{\text{tia}} = 2n\quad \text{(tia)}.$$
 > 4. **Đếm góc:** Cho $n$ tia chung gốc đôi một phân biệt ($n \ge 2$). Cứ $2$ tia ghép lại tạo thành $1$ góc, nên tổng số góc đỉnh đó là:
->    $$N_{\text{góc}} = \frac{n(n - 1)}{2}\quad \text{(góc)}.$$
+>    $$N_{\text{góc}} = \dfrac{n(n - 1)}{2}\quad \text{(góc)}.$$
 
 ---
 
@@ -134,7 +134,7 @@ a) Điểm $O$ thuộc đường thẳng $xy$ nên hai tia đối nhau gốc $O$
 b)
 - Có $4$ tia chung gốc $O$: tia $Ox,$ tia $Oy,$ tia $Oz,$ tia $Ot.$
 - Số góc đỉnh $O$ tạo thành từ $4$ tia là:
-  $$\frac{4 \cdot (4 - 1)}{2} = \frac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$
+  $$\dfrac{4 \cdot (4 - 1)}{2} = \dfrac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$
 c) Kể tên $6$ góc đỉnh $O$:
 - Các góc kề cạnh $Ox$: $\widehat{xOz},\; \widehat{xOt},\; \widehat{xOy}.$
 - Các góc kề cạnh $Oz$: $\widehat{zOt},\; \widehat{zOy}.$
@@ -160,9 +160,9 @@ $$AC + CB = AB \implies 10 + CB = 16 \implies CB = 16 - 10 = 6\text{ cm}.$$
 
 b)
 - Vì $M$ là trung điểm của $AC$ nên:
-  $$MC = \frac{AC}{2} = \frac{10}{2} = 5\text{ cm}.$$
+  $$MC = \dfrac{AC}{2} = \dfrac{10}{2} = 5\text{ cm}.$$
 - Vì $N$ là trung điểm của $CB$ nên:
-  $$CN = \frac{CB}{2} = \frac{6}{2} = 3\text{ cm}.$$
+  $$CN = \dfrac{CB}{2} = \dfrac{6}{2} = 3\text{ cm}.$$
 - Vì $M \in AC$ và $N \in CB$ mà $C$ nằm giữa $A$ và $B$ nên điểm $C$ nằm giữa hai điểm $M$ và $N.$
   Do đó:
   $$MN = MC + CN = 5 + 3 = 8\text{ cm}.$$
@@ -184,9 +184,9 @@ Hỏi vẽ được tất cả bao nhiêu đường thẳng phân biệt?
 
 **Lời giải:**
 - Nếu không có $3$ điểm nào trong $10$ điểm thẳng hàng, số đường thẳng vẽ được là:
-  $$N_0 = \frac{10 \cdot (10 - 1)}{2} = \frac{10 \cdot 9}{2} = 45\quad \text{(đường thẳng)}.$$
+  $$N_0 = \dfrac{10 \cdot (10 - 1)}{2} = \dfrac{10 \cdot 9}{2} = 45\quad \text{(đường thẳng)}.$$
 - Xét riêng $4$ điểm thẳng hàng:
-  - Nếu $4$ điểm này không thẳng hàng thì chúng tạo ra $\frac{4 \cdot 3}{2} = 6$ đường thẳng phân biệt.
+  - Nếu $4$ điểm này không thẳng hàng thì chúng tạo ra $\dfrac{4 \cdot 3}{2} = 6$ đường thẳng phân biệt.
   - Nhưng vì $4$ điểm này thẳng hàng nên chúng chỉ tạo ra đúng $1$ đường thẳng duy nhất.
   - Do đó số đường thẳng bị giảm đi là:
     $$6 - 1 = 5\quad \text{(đường thẳng)}.$$
@@ -205,12 +205,12 @@ c) Biết rằng sau khi vẽ thêm $2$ tia thì số góc tăng thêm $25$ góc
 
 **Lời giải:**
 a) Với $n = 8$ tia chung gốc, số góc tạo thành là:
-$$N = \frac{8 \cdot (8 - 1)}{2} = \frac{8 \cdot 7}{2} = 28\quad \text{(góc)}.$$
+$$N = \dfrac{8 \cdot (8 - 1)}{2} = \dfrac{8 \cdot 7}{2} = 28\quad \text{(góc)}.$$
 
-b) Số góc ban đầu: $N_1 = \frac{n(n - 1)}{2}.$
-Số góc sau khi có thêm $2$ tia: $N_2 = \frac{(n + 2)(n + 1)}{2}.$
+b) Số góc ban đầu: $N_1 = \dfrac{n(n - 1)}{2}.$
+Số góc sau khi có thêm $2$ tia: $N_2 = \dfrac{(n + 2)(n + 1)}{2}.$
 Số góc tăng thêm là:
-$$\Delta N = N_2 - N_1 = \frac{(n^2 + 3n + 2) - (n^2 - n)}{2} = \frac{4n + 2}{2} = 2n + 1\quad \text{(góc)}.$$
+$$\Delta N = N_2 - N_1 = \dfrac{(n^2 + 3n + 2) - (n^2 - n)}{2} = \dfrac{4n + 2}{2} = 2n + 1\quad \text{(góc)}.$$
 
 c) Theo đề bài, số góc tăng thêm là $25,$ ta có:
 $$2n + 1 = 25 \implies 2n = 24 \implies n = 12.$$
@@ -258,7 +258,7 @@ Vì $0^\circ < 60^\circ < 90^\circ$ nên đây là **góc nhọn**.
 > **Định lý tổng quát:**
 > Cho $n$ điểm phân biệt trong đó có $m$ cụm điểm thẳng hàng: cụm thứ nhất có $k_1$ điểm thẳng hàng, cụm thứ hai có $k_2$ điểm thẳng hàng, ..., cụm thứ $m$ có $k_m$ điểm thẳng hàng (các cụm rời nhau, ngoài ra không có ba điểm nào khác thẳng hàng).
 > Số đường thẳng vẽ được là:
-> $$N = \frac{n(n - 1)}{2} - \sum_{i=1}^m \left[ \frac{k_i(k_i - 1)}{2} - 1 \right].$$
+> $$N = \dfrac{n(n - 1)}{2} - \sum_{i=1}^m \left[ \dfrac{k_i(k_i - 1)}{2} - 1 \right].$$
 
 #### Bài toán áp dụng:
 Trên mặt phẳng có $15$ điểm phân biệt. Trong đó có một nhóm gồm $5$ điểm thẳng hàng và một nhóm khác gồm $4$ điểm thẳng hàng (hai nhóm không có điểm chung), ngoài ra không có ba điểm nào khác thẳng hàng.
@@ -266,11 +266,11 @@ Hỏi vẽ được tất cả bao nhiêu đường thẳng phân biệt đi qua
 
 **Lời giải:**
 - Nếu không có $3$ điểm nào thẳng hàng, số đường thẳng là:
-  $$N_0 = \frac{15 \cdot 14}{2} = 105\quad \text{(đường thẳng)}.$$
+  $$N_0 = \dfrac{15 \cdot 14}{2} = 105\quad \text{(đường thẳng)}.$$
 - Nhóm $5$ điểm thẳng hàng làm giảm số đường thẳng:
-  $$\Delta_1 = \frac{5 \cdot 4}{2} - 1 = 10 - 1 = 9\quad \text{(đường thẳng)}.$$
+  $$\Delta_1 = \dfrac{5 \cdot 4}{2} - 1 = 10 - 1 = 9\quad \text{(đường thẳng)}.$$
 - Nhóm $4$ điểm thẳng hàng làm giảm số đường thẳng:
-  $$\Delta_2 = \frac{4 \cdot 3}{2} - 1 = 6 - 1 = 5\quad \text{(đường thẳng)}.$$
+  $$\Delta_2 = \dfrac{4 \cdot 3}{2} - 1 = 6 - 1 = 5\quad \text{(đường thẳng)}.$$
 - Số đường thẳng thực tế vẽ được là:
   $$N = 105 - 9 - 5 = 91\quad \text{(đường thẳng)}.$$
 
@@ -286,22 +286,22 @@ b) Mở rộng: Nếu lấy điểm $C$ nằm ngoài đoạn thẳng $AB$ trên 
 **Lời giải:**
 a) Đặt $AC = x,\; CB = y$ ($x, y > 0$).
 Vì $C$ nằm giữa $A$ và $B$ nên $AB = x + y = 2a.$
-Vì $M$ là trung điểm của $AC$ nên $MC = \frac{x}{2}.$
-Vì $N$ là trung điểm của $CB$ nên $CN = \frac{y}{2}.$
+Vì $M$ là trung điểm của $AC$ nên $MC = \dfrac{x}{2}.$
+Vì $N$ là trung điểm của $CB$ nên $CN = \dfrac{y}{2}.$
 Vì hai tia $CA$ và $CB$ đối nhau nên hai tia $CM$ và $CN$ đối nhau $\implies$ điểm $C$ nằm giữa $M$ và $N.$
 Do đó:
-$$MN = MC + CN = \frac{x}{2} + \frac{y}{2} = \frac{x + y}{2} = \frac{AB}{2} = \frac{2a}{2} = a.$$
+$$MN = MC + CN = \dfrac{x}{2} + \dfrac{y}{2} = \dfrac{x + y}{2} = \dfrac{AB}{2} = \dfrac{2a}{2} = a.$$
 Độ dài $MN = a$ là hằng số cố định, không phụ thuộc vào vị trí của $C$ (Đpcm).
 
 b) **Xét trường hợp điểm $C$ nằm ngoài đoạn thẳng $AB$:**
 Giả sử $C$ nằm về phía $B$ (thứ tự các điểm là $A, B, C$).
 - Khi đó $AC - BC = AB = 2a.$
-- $M$ là trung điểm $AC \implies MC = \frac{AC}{2}.$
-- $N$ là trung điểm $BC \implies NC = \frac{BC}{2}.$
+- $M$ là trung điểm $AC \implies MC = \dfrac{AC}{2}.$
+- $N$ là trung điểm $BC \implies NC = \dfrac{BC}{2}.$
 - Do $BC < AC$ nên điểm $N$ nằm giữa $M$ và $C$ trên tia $CA.$
 - Do đó:
-  $$MN = MC - NC = \frac{AC - BC}{2} = \frac{AB}{2} = a.$$
-Kết luận: Trong mọi trường hợp điểm $C$ nằm trên đường thẳng $AB$ (dù trong hay ngoài đoạn thẳng $AB$), **khoảng cách giữa hai trung điểm $M$ và $N$ luôn luôn bằng $\frac{AB}{2}$**!
+  $$MN = MC - NC = \dfrac{AC - BC}{2} = \dfrac{AB}{2} = a.$$
+Kết luận: Trong mọi trường hợp điểm $C$ nằm trên đường thẳng $AB$ (dù trong hay ngoài đoạn thẳng $AB$), **khoảng cách giữa hai trung điểm $M$ và $N$ luôn luôn bằng $\dfrac{AB}{2}$**!
 
 ---
 
@@ -318,18 +318,18 @@ b) Tính tổng khoảng cách $S = M_1M_2 + M_2M_3 + M_3M_4 + \dots + M_9M_{10}
 
 **Lời giải:**
 a) Áp dụng tính chất trung điểm liên tiếp:
-- $AM_1 = \frac{L}{2}.$
-- $AM_2 = \frac{AM_1}{2} = \frac{L}{2^2}.$
-- $AM_n = \frac{L}{2^n}.$
+- $AM_1 = \dfrac{L}{2}.$
+- $AM_2 = \dfrac{AM_1}{2} = \dfrac{L}{2^2}.$
+- $AM_n = \dfrac{L}{2^n}.$
 Vì $M_n$ là trung điểm của $AM_{n-1}$ nên $M_n$ nằm giữa $A$ và $M_{n-1}.$
 Suy ra khoảng cách hai trung điểm liên tiếp là:
-$$M_{n-1}M_n = AM_{n-1} - AM_n = \frac{L}{2^{n-1}} - \frac{L}{2^n} = \frac{L}{2^n} = AM_n.$$
+$$M_{n-1}M_n = AM_{n-1} - AM_n = \dfrac{L}{2^{n-1}} - \dfrac{L}{2^n} = \dfrac{L}{2^n} = AM_n.$$
 
 b) Vì các điểm $M_{10}, M_9, \dots, M_2, M_1$ cùng nằm trên tia $AB$ theo thứ tự khoảng cách tăng dần từ $A,$ nên tổng các đoạn thẳng liên tiếp chính là:
 $$S = M_1M_2 + M_2M_3 + \dots + M_9M_{10} = AM_1 - AM_{10}.$$
 Với $L = 128 = 2^7\text{ cm}$:
-- $AM_1 = \frac{128}{2} = 64\text{ cm}.$
-- $AM_{10} = \frac{128}{2^{10}} = \frac{2^7}{2^{10}} = \frac{1}{2^3} = \frac{1}{8} = 0{,}125\text{ cm}.$
+- $AM_1 = \dfrac{128}{2} = 64\text{ cm}.$
+- $AM_{10} = \dfrac{128}{2^{10}} = \dfrac{2^7}{2^{10}} = \dfrac{1}{2^3} = \dfrac{1}{8} = 0{,}125\text{ cm}.$
 Do đó:
 $$S = 64 - 0{,}125 = 63{,}875\text{ cm}.$$
 
@@ -371,22 +371,22 @@ c) Trong khoảng thời gian từ $9$ giờ đến $10$ giờ, có thời đi�
 
 **Lời giải:**
 Vận tốc quay của kim phút là $6^\circ/\text{phút},$ kim giờ là $0{,}5^\circ/\text{phút}.$
-Hiệu vận tốc: $v_{\text{đuổi}} = 6^\circ - 0{,}5^\circ = 5{,}5^\circ/\text{phút} = \frac{11}{2}^\circ/\text{phút}.$
+Hiệu vận tốc: $v_{\text{đuổi}} = 6^\circ - 0{,}5^\circ = 5{,}5^\circ/\text{phút} = \dfrac{11}{2}^\circ/\text{phút}.$
 
 a) **Hai kim trùng nhau:**
 Lúc $9$ giờ, kim phút chỉ số $12,$ kim giờ chỉ số $9.$
 Theo chiều quay kim đồng hồ, kim phút đang đi sau kim giờ một góc là $9 \cdot 30^\circ = 270^\circ.$
 Để trùng nhau, kim phút phải đuổi kịp quãng đường góc $270^\circ$:
-$$t = \frac{270}{\frac{11}{2}} = \frac{540}{11} = 49\frac{1}{11}\quad \text{phút}.$$
-Vậy sau $49\frac{1}{11}$ phút (tức lúc $9$ giờ $49\frac{1}{11}$ phút), hai kim sẽ trùng nhau.
+$$t = \dfrac{270}{\dfrac{11}{2}} = \dfrac{540}{11} = 49\dfrac{1}{11}\quad \text{phút}.$$
+Vậy sau $49\dfrac{1}{11}$ phút (tức lúc $9$ giờ $49\dfrac{1}{11}$ phút), hai kim sẽ trùng nhau.
 
 b) **Hai kim tạo thành góc bẹt ($180^\circ$):**
 Để tạo góc bẹt ($180^\circ$), kim phút phải đuổi sao cho góc giữa kim phút và kim giờ là $180^\circ.$
 Góc kim phút cần đuổi là:
 $$270^\circ - 180^\circ = 90^\circ.$$
 Thời gian cần tìm là:
-$$t = \frac{90}{\frac{11}{2}} = \frac{180}{11} = 16\frac{4}{11}\quad \text{phút}.$$
-Vậy sau $16\frac{4}{11}$ phút (lúc $9$ giờ $16\frac{4}{11}$ phút), hai kim sẽ tạo thành góc bẹt lần đầu tiên.
+$$t = \dfrac{90}{\dfrac{11}{2}} = \dfrac{180}{11} = 16\dfrac{4}{11}\quad \text{phút}.$$
+Vậy sau $16\dfrac{4}{11}$ phút (lúc $9$ giờ $16\dfrac{4}{11}$ phút), hai kim sẽ tạo thành góc bẹt lần đầu tiên.
 
 c) **Hai kim tạo thành góc vuông:**
 Lúc $9$ giờ đúng, hai kim đã tạo thành góc vuông ($90^\circ$).
@@ -642,26 +642,26 @@ Mỗi câu đúng được $0{,}25$ điểm:
 
 **Bài 2 (2,0 điểm):**
 - a) Vì $I$ là trung điểm của $AB$ nên:
-  $$IA = IB = \frac{AB}{2} = \frac{12}{2} = 6\text{ cm}.$$ *(1,0 điểm)*
+  $$IA = IB = \dfrac{AB}{2} = \dfrac{12}{2} = 6\text{ cm}.$$ *(1,0 điểm)*
 - b) Vì $K$ là trung điểm của $IB$ nên:
-  $$IK = \frac{IB}{2} = \frac{6}{2} = 3\text{ cm}.$$ *(0,5 điểm)*
+  $$IK = \dfrac{IB}{2} = \dfrac{6}{2} = 3\text{ cm}.$$ *(0,5 điểm)*
   Vì $I$ nằm giữa $A$ và $B,$ $K$ thuộc đoạn $IB$ nên điểm $I$ nằm giữa hai điểm $A$ và $K.$
   Suy ra:
   $$AK = AI + IK = 6 + 3 = 9\text{ cm}.$$ *(0,5 điểm)*
 
 **Bài 3 (1,5 điểm):**
 - a) Số góc tạo thành từ $4$ tia là:
-  $$\frac{4 \cdot (4 - 1)}{2} = \frac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$ *(0,5 điểm)*
+  $$\dfrac{4 \cdot (4 - 1)}{2} = \dfrac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$ *(0,5 điểm)*
   Các góc đó là: $\widehat{aOb},\; \widehat{aOc},\; \widehat{aOd},\; \widehat{bOc},\; \widehat{bOd},\; \widehat{cOd}.$ *(0,5 điểm)*
 - b) Vì hai tia $Oa$ và $Oc$ là hai tia đối nhau nên góc $\widehat{aOc}$ là **góc bẹt duy nhất** trong hình. *(0,5 điểm)*
 
 **Bài 4 (1,5 điểm):**
 - a) Theo công thức đếm đường thẳng:
-  $$\frac{n(n - 1)}{2} = 45 \implies n(n - 1) = 90 = 10 \cdot 9.$$
+  $$\dfrac{n(n - 1)}{2} = 45 \implies n(n - 1) = 90 = 10 \cdot 9.$$
   Suy ra $n = 10$ điểm. *(0,75 điểm)*
 - b) Với $n = 10$ điểm, nếu có $4$ điểm thẳng hàng:
   - Số đường thẳng ban đầu nếu không thẳng hàng: $45$ đường.
   - Số đường thẳng giảm đi do $4$ điểm thẳng hàng:
-    $$\frac{4 \cdot 3}{2} - 1 = 6 - 1 = 5\quad \text{(đường)}.$$
+    $$\dfrac{4 \cdot 3}{2} - 1 = 6 - 1 = 5\quad \text{(đường)}.$$
   - Số đường thẳng vẽ được là:
     $$45 - 5 = 40\quad \text{(đường thẳng)}.$$ *(0,75 điểm)*

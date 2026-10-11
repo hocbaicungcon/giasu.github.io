@@ -335,7 +335,7 @@ d) Hàng chục triệu
 **Bài 3 (Tìm hàng làm tròn):** Cho biết các trường hợp sau đã làm tròn đến hàng nào:
 a) Số $15\,682\text{ m}$ được làm tròn thành $15\,700\text{ m}.$
 b) Vận tốc ánh sáng xấp xỉ $299\,792\,458\text{ m/s}$ được ghi là $300\,000\,000\text{ m/s}.$
-c) Giá trị của $\frac{10}{3} = 3{,}3333\dots$ được ghi là $3{,}33.$
+c) Giá trị của $\dfrac{10}{3} = 3{,}3333\dots$ được ghi là $3{,}33.$
 
 **Bài 4 (Ước lượng phép tính):** Bằng phương pháp ước lượng, hãy tìm kết quả đúng trong các phương án mà không cần tính chi tiết:
 a) $102{,}4 + 298{,}75 + 49{,}8$
@@ -456,8 +456,8 @@ $$800 - 752{,}64 = 47{,}36\text{ m}^2.$$
 > [!NOTE]
 > **Định lý miền giá trị làm tròn:**
 > Nếu số thập phân $x$ khi làm tròn đến hàng $10^{-k}$ ($k \in \mathbb{Z}$) được số $A,$ thì:
-> $$A - \frac{1}{2} \cdot 10^{-k} \le x < A + \frac{1}{2} \cdot 10^{-k}.$$
-> Bán kính sai số tối đa là $\Delta = \frac{1}{2} \cdot 10^{-k}.$
+> $$A - \dfrac{1}{2} \cdot 10^{-k} \le x < A + \dfrac{1}{2} \cdot 10^{-k}.$$
+> Bán kính sai số tối đa là $\Delta = \dfrac{1}{2} \cdot 10^{-k}.$
 
 **Bài toán 1:**
 Một phép đo khối lượng cho kết quả sau khi làm tròn đến hàng phần trăm là $4{,}28\text{ kg}.$
@@ -466,7 +466,7 @@ b) Tìm giá trị nhỏ nhất của $m$ và khối lượng $m$ không thể �
 
 **Lời giải chi tiết:**
 a) Hàng phần trăm ứng với $10^{-2} = 0{,}01.$
-Độ lệch tối đa trước khi nhảy số là $\frac{0{,}01}{2} = 0{,}005.$
+Độ lệch tối đa trước khi nhảy số là $\dfrac{0{,}01}{2} = 0{,}005.$
 Do đó khoảng giá trị của $m$ là:
 $$4{,}28 - 0{,}005 \le m < 4{,}28 + 0{,}005$$
 $$4{,}275 \le m < 4{,}285.$$
@@ -568,7 +568,7 @@ Hỏi công ty nên thuê bao nhiêu xe mỗi loại để tất cả công nhâ
 ### Chuyên đề 5: Phương pháp kẹp ước lượng thương của hai số thập phân
 
 **Bài toán 5:**
-Không thực hiện phép chia chi tiết, hãy chứng minh rằng thương $Q = \frac{719{,}85}{23{,}12}$ thỏa mãn bất đẳng thức:
+Không thực hiện phép chia chi tiết, hãy chứng minh rằng thương $Q = \dfrac{719{,}85}{23{,}12}$ thỏa mãn bất đẳng thức:
 $$31 < Q < 32.$$
 
 **Lời giải chi tiết:**
@@ -578,13 +578,13 @@ $$31 < Q < 32.$$
   $$719{,}85 > 719{,}18 = 31 \cdot 23{,}12.$$
   *(Kiểm tra nhẩm: $31 \cdot 23{,}12 = 31 \cdot (23 + 0{,}12) = 713 + 3{,}72 = 716{,}72 < 719{,}85$).*
   Vì tử số $719{,}85 > 716{,}72 = 31 \cdot 23{,}12$ nên:
-  $$Q = \frac{719{,}85}{23{,}12} > \frac{716{,}72}{23{,}12} = 31.$$
+  $$Q = \dfrac{719{,}85}{23{,}12} > \dfrac{716{,}72}{23{,}12} = 31.$$
 
 - **Chứng minh $Q < 32$:**
   Ta tính tích:
   $$32 \cdot 23{,}12 = 32 \cdot 23 + 32 \cdot 0{,}12 = 736 + 3{,}84 = 739{,}84.$$
   Vì tử số $719{,}85 < 739{,}84 = 32 \cdot 23{,}12$ nên:
-  $$Q = \frac{719{,}85}{23{,}12} < \frac{739{,}84}{23{,}12} = 32.$$
+  $$Q = \dfrac{719{,}85}{23{,}12} < \dfrac{739{,}84}{23{,}12} = 32.$$
 
 - Kết hợp hai bất đẳng thức trên:
   $$31 < Q < 32\quad \text{(Đpcm)}.$$

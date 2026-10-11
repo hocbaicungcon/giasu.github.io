@@ -152,7 +152,7 @@ Cho đoạn thẳng $MN = 12\text{ cm}$.
 1. Đoạn thẳng $MN$ có **đúng $1$ trục đối xứng**, đó là **đường trung trực** của đoạn thẳng $MN$ (đường thẳng đi qua trung điểm của $MN$ và vuông góc với $MN$).
 2. Đoạn thẳng $MN$ **có tâm đối xứng**, tâm đối xứng chính là **trung điểm $I$** của đoạn thẳng $MN$.
    Khoảng cách từ tâm $I$ đến mỗi đầu mút là:
-   $$IM = IN = \frac{MN}{2} = \frac{12}{2} = 6\text{ (cm)}.$$
+   $$IM = IN = \dfrac{MN}{2} = \dfrac{12}{2} = 6\text{ (cm)}.$$
 
 ---
 
@@ -166,8 +166,8 @@ Cho hình thoi $ABCD$ có hai đường chéo $AC = 10\text{ cm}$ và $BD = 8\te
 - Hình thoi $ABCD$ có **$2$ trục đối xứng**, chính là hai đường thẳng chứa hai đường chéo $AC$ và $BD$.
 - Hình thoi $ABCD$ có **$1$ tâm đối xứng**, chính là giao điểm $O$ của hai đường chéo.
 2. Hai đường chéo cắt nhau tại trung điểm của mỗi đường nên:
-   - Khoảng cách từ $O$ đến đỉnh $A$: $OA = \frac{AC}{2} = \frac{10}{2} = 5\text{ (cm)}.$
-   - Khoảng cách từ $O$ đến đỉnh $B$: $OB = \frac{BD}{2} = \frac{8}{2} = 4\text{ (cm)}.$
+   - Khoảng cách từ $O$ đến đỉnh $A$: $OA = \dfrac{AC}{2} = \dfrac{10}{2} = 5\text{ (cm)}.$
+   - Khoảng cách từ $O$ đến đỉnh $B$: $OB = \dfrac{BD}{2} = \dfrac{8}{2} = 4\text{ (cm)}.$
 
 ---
 
@@ -498,11 +498,11 @@ explanation: 'Lục giác đều có 6 trục đối xứng.'
 
 **Bài 2 (1.5 điểm):**
 1. Tâm đối xứng $O$ là trung điểm của đoạn thẳng $AB$ *(0.75 điểm)*.
-2. $OA = OB = \frac{AB}{2} = \frac{8}{2} = 4\text{ cm}$ *(0.75 điểm)*.
+2. $OA = OB = \dfrac{AB}{2} = \dfrac{8}{2} = 4\text{ cm}$ *(0.75 điểm)*.
 
 **Bài 3 (2.0 điểm):**
 1. Tâm đối xứng là giao điểm $I$ của hai đường chéo *(0.5 điểm)*.
-   $$IA = \frac{AC}{2} = \frac{12}{2} = 6\text{ cm};\quad IB = \frac{BD}{2} = \frac{16}{2} = 8\text{ cm}\text{ (0.5 điểm)}.$$
+   $$IA = \dfrac{AC}{2} = \dfrac{12}{2} = 6\text{ cm};\quad IB = \dfrac{BD}{2} = \dfrac{16}{2} = 8\text{ cm}\text{ (0.5 điểm)}.$$
 2. Hình thoi có $2$ trục đối xứng *(0.5 điểm)*. Đó là hai đường thẳng chứa hai đường chéo $AC$ và $BD$ *(0.5 điểm)*.
 
 **Bài 4 (1.5 điểm):**
@@ -688,7 +688,7 @@ explanation: 'Biển báo tam giác đều có 3 trục đối xứng.'
 
 **Bài 2 (1.5 điểm):**
 1. Tâm đối xứng là giao điểm $O$ của hai đường chéo *(0.75 điểm)*.
-2. $OM = \frac{MP}{2} = \frac{14}{2} = 7\text{ cm}$ *(0.75 điểm)*.
+2. $OM = \dfrac{MP}{2} = \dfrac{14}{2} = 7\text{ cm}$ *(0.75 điểm)*.
 
 **Bài 3 (2.0 điểm):**
 1. Điểm $O$ là tâm đối xứng vì khi quay lục giác đều $180^\circ$ quanh $O$, các đỉnh đối diện đổi chỗ cho nhau và hình trùng khít vị trí cũ *(1.0 điểm)*.

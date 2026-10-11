@@ -362,7 +362,7 @@ Cho tập hợp số $S = \{3; 6; 9; 12; 15; 18\}$. Chọn ngẫu nhiên một s
 1. Liệt kê hoặc xác định quy luật các kết quả có thể của phép thử nghiệm.
 2. Tìm tất cả các kết quả thỏa mãn điều kiện của sự kiện đã cho.
 3. Sử dụng công thức đếm số phần tử của dãy số cách đều nếu dãy số dài:
-   $$N = \frac{x_{\max} - x_{\min}}{d} + 1$$
+   $$N = \dfrac{x_{\max} - x_{\min}}{d} + 1$$
    *(với $x_{\max}$ là số hạng cuối, $x_{\min}$ là số hạng đầu, $d$ là khoảng cách giữa hai số liên tiếp).*
 4. Kết luận số lượng kết quả thuận lợi.
 
@@ -504,7 +504,7 @@ Khi lấy đồng thời hai hay nhiều vật từ một tập hợp, thứ t�
 > [!TIP]
 > **Công thức đếm số cặp chọn từ $n$ phần tử khác nhau:**
 > Nếu chọn cùng lúc $2$ vật từ một nhóm gồm $n$ vật phân biệt, số kết quả có thể là:
-> $$\frac{n \times (n - 1)}{2}.$$
+> $$\dfrac{n \times (n - 1)}{2}.$$
 
 #### Bài toán Olympic 3
 Trong một chiếc hộp có $5$ viên ngọc bích được đánh số từ $1$ đến $5$. Bạn Nam thò tay vào hộp lấy ra cùng một lúc $2$ viên ngọc bích.
@@ -519,7 +519,7 @@ Trong một chiếc hộp có $5$ viên ngọc bích được đánh số từ $
    - Với viên thứ nhất là $4$: $\{4; 5\}$ ($1$ cặp).
    Tổng số kết quả có thể là:
    $$4 + 3 + 2 + 1 = 10.$$
-   (Hoặc tính theo công thức: $\frac{5 \times 4}{2} = 10$ kết quả).
+   (Hoặc tính theo công thức: $\dfrac{5 \times 4}{2} = 10$ kết quả).
 
 2. Tổng của hai số là số chẵn khi và chỉ khi:
    - Cả hai số cùng là số lẻ; hoặc

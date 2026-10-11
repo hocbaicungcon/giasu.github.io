@@ -782,7 +782,7 @@ Mỗi nhóm có giá trị lần lượt là: $-8; -16; -24; \dots; -400.$
 $$A = -(8 + 16 + 24 + \dots + 400) = -8 \cdot (1 + 2 + 3 + \dots + 50).$$
 
 Áp dụng công thức tính tổng dãy số cách đều:
-$$1 + 2 + 3 + \dots + 50 = \frac{(1 + 50) \cdot 50}{2} = 51 \cdot 25 = 1275.$$
+$$1 + 2 + 3 + \dots + 50 = \dfrac{(1 + 50) \cdot 50}{2} = 51 \cdot 25 = 1275.$$
 
 Vậy:
 $$A = -8 \cdot 1275 = -10200.$$
@@ -881,8 +881,8 @@ b) Có thể bằng $-45$ được không? Vì sao?
 
 **Phân tích tính bất biến (Parity Invariance):**  
 1. Tính tổng ban đầu $T$:  
-   Dãy $1, 3, 5, \dots, 31$ có: $\frac{31 - 1}{2} + 1 = 16$ số hạng.  
-   $$T = \frac{(1 + 31) \cdot 16}{2} = 32 \cdot 8 = 256\text{ (là một số chẵn)}.$$
+   Dãy $1, 3, 5, \dots, 31$ có: $\dfrac{31 - 1}{2} + 1 = 16$ số hạng.  
+   $$T = \dfrac{(1 + 31) \cdot 16}{2} = 32 \cdot 8 = 256\text{ (là một số chẵn)}.$$
 
 2. Khi ta thay đổi dấu trước một số hạng $k$ bất kỳ từ $+k$ thành $-k$:  
    Hiệu số giữa biểu thức cũ và biểu thức mới là:
@@ -892,7 +892,7 @@ b) Có thể bằng $-45$ được không? Vì sao?
 
 **Trả lời:**  
 - **a) Giá trị bằng $44$:** Vì $44$ là một số chẵn, nên giá trị này **hoàn toàn có thể đạt được**.  
-  *(Chẳng hạn: chỉ cần chọn các số hạng sao cho tổng các số mang dấu trừ bằng $\frac{256 - 44}{2} = 106$, ví dụ mang dấu trừ trước $31 + 29 + 27 + 19 = 106$).*
+  *(Chẳng hạn: chỉ cần chọn các số hạng sao cho tổng các số mang dấu trừ bằng $\dfrac{256 - 44}{2} = 106$, ví dụ mang dấu trừ trước $31 + 29 + 27 + 19 = 106$).*
 - **b) Giá trị bằng $-45$:** Vì $-45$ là một **số lẻ**, trong khi biểu thức mới luôn luôn có kết quả là một số chẵn, nên giá trị của biểu thức **không bao giờ có thể bằng $-45$**.
 </details>
 

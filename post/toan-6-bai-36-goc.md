@@ -22,7 +22,7 @@ Khi quan sát thế giới xung quanh, chúng ta liên tục bắt gặp những
 
 Nếu điểm là hạt mầm, đoạn thẳng là nhịp cầu nối thì **góc** chính là "độ mở" không gian tạo bởi hai tia cùng xuất phát từ một điểm. Góc là chiếc chìa khóa đầu tiên mở ra toàn bộ thế giới hình học phẳng từ tam giác, tứ giác cho đến lượng giác và thiên văn học sau này.
 
-Bài học này sẽ trang bị cho các em kiến thức nền tảng vững chắc về khái niệm góc, góc bẹt, điểm trong của góc, làm chủ công thức tổ hợp đếm số góc $\frac{n(n - 1)}{2}$ và khám phá $5$ chuyên đề bồi dưỡng học sinh giỏi nâng cao độc bản $100\%$ có lời giải chi tiết.
+Bài học này sẽ trang bị cho các em kiến thức nền tảng vững chắc về khái niệm góc, góc bẹt, điểm trong của góc, làm chủ công thức tổ hợp đếm số góc $\dfrac{n(n - 1)}{2}$ và khám phá $5$ chuyên đề bồi dưỡng học sinh giỏi nâng cao độc bản $100\%$ có lời giải chi tiết.
 
 ---
 
@@ -43,7 +43,7 @@ Bài học này sẽ trang bị cho các em kiến thức nền tảng vững ch
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #ec4899; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #be185d;">4. Công thức đếm góc</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Với $n$ tia chung gốc đôi một phân biệt, số góc tạo thành là $\frac{n(n - 1)}{2}$ góc.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">Với $n$ tia chung gốc đôi một phân biệt, số góc tạo thành là $\dfrac{n(n - 1)}{2}$ góc.</p>
     </div>
   </div>
 </div>
@@ -159,24 +159,24 @@ Xét góc $\widehat{xOy}$ **khác góc bẹt** (hai tia $Ox$ và $Oy$ không đ�
 > **Định lý đếm góc:**
 > Cứ $2$ tia chung gốc bất kì tạo thành đúng $1$ góc.
 > Do đó, với $n$ tia chung gốc đôi một phân biệt ($n \ge 2$), số góc được tạo thành là:
-> $$N = \frac{n(n - 1)}{2}\quad \text{(góc)}.$$
+> $$N = \dfrac{n(n - 1)}{2}\quad \text{(góc)}.$$
 
 #### Giải thích công thức:
 - Chọn tia thứ nhất: có $n$ cách chọn.
 - Chọn tia thứ hai để ghép đôi tạo thành góc: có $(n - 1)$ cách chọn.
 - Do mỗi góc được tính lặp lại $2$ lần (ví dụ góc tạo bởi tia $Ox$ ghép với tia $Oy$ cũng chính là góc tạo bởi tia $Oy$ ghép với tia $Ox$), nên tổng số góc thực tế là:
-  $$N = \frac{n(n - 1)}{2}.$$
+  $$N = \dfrac{n(n - 1)}{2}.$$
 
 Bảng tra cứu nhanh số góc:
 
 | Số tia chung gốc ($n$) | Cách tính | Tổng số góc tạo thành |
 | :---: | :---: | :---: |
-| $2$ tia | $\frac{2 \cdot 1}{2}$ | $1$ góc |
-| $3$ tia | $\frac{3 \cdot 2}{2}$ | $3$ góc |
-| $4$ tia | $\frac{4 \cdot 3}{2}$ | $6$ góc |
-| $5$ tia | $\frac{5 \cdot 4}{2}$ | $10$ góc |
-| $6$ tia | $\frac{6 \cdot 5}{2}$ | $15$ góc |
-| $n$ tia | $\frac{n(n - 1)}{2}$ | $\frac{n(n - 1)}{2}$ góc |
+| $2$ tia | $\dfrac{2 \cdot 1}{2}$ | $1$ góc |
+| $3$ tia | $\dfrac{3 \cdot 2}{2}$ | $3$ góc |
+| $4$ tia | $\dfrac{4 \cdot 3}{2}$ | $6$ góc |
+| $5$ tia | $\dfrac{5 \cdot 4}{2}$ | $10$ góc |
+| $6$ tia | $\dfrac{6 \cdot 5}{2}$ | $15$ góc |
+| $n$ tia | $\dfrac{n(n - 1)}{2}$ | $\dfrac{n(n - 1)}{2}$ góc |
 
 ---
 
@@ -229,7 +229,7 @@ b) Góc tạo bởi hai tia $Pa$ và $Pb$ có:
 #### Phương pháp giải:
 - **Bài toán thuận (Biết số tia $n,$ tìm số góc $N$):**
   Áp dụng trực tiếp công thức:
-  $$N = \frac{n(n - 1)}{2}.$$
+  $$N = \dfrac{n(n - 1)}{2}.$$
 - **Bài toán nghịch (Biết số góc $N,$ tìm số tia $n$):**
   Nhân đôi số góc: $n(n - 1) = 2N.$
   Phân tích số $2N$ thành tích của hai số tự nhiên liên tiếp để tìm $n.$
@@ -243,7 +243,7 @@ b) Hãy kể tên cụ thể tất cả các góc đó.
 
 **Lời giải:**
 a) Với $n = 5$ tia chung gốc đôi một phân biệt, số góc tạo thành là:
-$$N = \frac{5 \cdot (5 - 1)}{2} = \frac{5 \cdot 4}{2} = 10\quad \text{(góc)}.$$
+$$N = \dfrac{5 \cdot (5 - 1)}{2} = \dfrac{5 \cdot 4}{2} = 10\quad \text{(góc)}.$$
 
 b) Liệt kê $10$ góc theo từng cặp tia:
 - Ghép tia $Oa$ với $4$ tia còn lại: $\widehat{aOb},\; \widehat{aOc},\; \widehat{aOd},\; \widehat{aOe}$ ($4$ góc).
@@ -260,7 +260,7 @@ Từ một điểm $O$ trên mặt phẳng, người ta vẽ một số tia phâ
 **Lời giải:**
 Gọi số tia chung gốc cần tìm là $n$ ($n \in \mathbb{N},\; n \ge 2$).
 Số góc tạo thành từ $n$ tia chung gốc là:
-$$\frac{n(n - 1)}{2} = 36.$$
+$$\dfrac{n(n - 1)}{2} = 36.$$
 Suy ra:
 $$n(n - 1) = 36 \cdot 2 = 72.$$
 Ta thấy $n$ và $(n - 1)$ là hai số tự nhiên liên tiếp có tích bằng $72.$
@@ -272,7 +272,7 @@ Vậy có tất cả $9$ tia chung gốc.
 
 #### Bài tập tự luyện Dạng 2:
 - **Bài 2.1:** Cho $7$ tia chung gốc đôi một phân biệt. Có bao nhiêu góc được tạo thành?
-  *(Đáp số: $\frac{7 \cdot 6}{2} = 21$ góc).*
+  *(Đáp số: $\dfrac{7 \cdot 6}{2} = 21$ góc).*
 - **Bài 2.2:** Có bao nhiêu tia chung gốc đôi một phân biệt nếu chúng tạo thành $55$ góc?
   *(Đáp số: $n(n - 1) = 110 = 11 \cdot 10 \implies n = 11$ tia).*
 
@@ -299,7 +299,7 @@ c) Điểm $N$ có nằm trong góc $\widehat{xOy}$ không? Vì sao?
 **Lời giải:**
 a) Hình vẽ có $4$ tia chung gốc là $Ox, Oy, Oz$ và tia đối của tia $Oz$ (gọi là tia $Oz'$).
 Số góc tạo thành là:
-$$\frac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$
+$$\dfrac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$
 Các góc đó là: $\widehat{xOz},\; \widehat{zOy},\; \widehat{xOy},\; \widehat{xOz'},\; \widehat{yOz'},\; \widehat{zOz'}.$
 
 b) Vì tia $Oz$ nằm giữa hai tia $Ox$ và $Oy,$ mà điểm $M$ thuộc tia $Oz$ nên **điểm $M$ nằm trong góc $\widehat{xOy}$**.
@@ -330,7 +330,7 @@ Tia $Ox,$ tia $Oy,$ tia $Ou,$ tia $Ov.$
 
 b)
 - Số góc đỉnh $O$ được tạo thành từ $4$ tia là:
-  $$\frac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$
+  $$\dfrac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$
 - Các góc đó là: $\widehat{xOu},\; \widehat{uOy},\; \widehat{yOv},\; \widehat{vOx}$ và hai góc bẹt $\widehat{xOy},\; \widehat{uOv}.$
 - Như vậy trong $6$ góc tạo thành, có đúng **$2$ góc bẹt** (ứng với hai đường thẳng $xy$ và $uv$).
 
@@ -361,21 +361,21 @@ b) Cho $n$ tia chung gốc đôi một phân biệt. Nếu vẽ thêm $3$ tia ch
 **Lời giải:**
 a) Giả sử ban đầu có $n$ tia chung gốc.
 Số góc ban đầu là:
-$$N_1 = \frac{n(n - 1)}{2}.$$
+$$N_1 = \dfrac{n(n - 1)}{2}.$$
 Khi vẽ thêm $1$ tia mới, tia mới này sẽ kết hợp với mỗi tia trong số $n$ tia cũ để tạo ra thêm đúng $n$ góc mới.
 Thật vậy:
-$$N_2 = \frac{(n + 1)n}{2} = \frac{n^2 + n}{2} = \frac{n(n - 1)}{2} + n = N_1 + n.$$
+$$N_2 = \dfrac{(n + 1)n}{2} = \dfrac{n^2 + n}{2} = \dfrac{n(n - 1)}{2} + n = N_1 + n.$$
 Vậy khi vẽ thêm $1$ tia thì số góc tăng thêm đúng bằng **$n$ góc** (bằng số lượng tia có trước đó).
 
 b) Ban đầu có $n$ tia, sau khi vẽ thêm $3$ tia thì có $(n + 3)$ tia.
 Số góc lúc sau là:
-$$N_2 = \frac{(n + 3)(n + 2)}{2}.$$
+$$N_2 = \dfrac{(n + 3)(n + 2)}{2}.$$
 Số góc tăng thêm là:
-$$\Delta N = N_2 - N_1 = \frac{(n + 3)(n + 2)}{2} - \frac{n(n - 1)}{2}.$$
+$$\Delta N = N_2 - N_1 = \dfrac{(n + 3)(n + 2)}{2} - \dfrac{n(n - 1)}{2}.$$
 Khai triển và rút gọn tử số:
 $$(n + 3)(n + 2) - n(n - 1) = (n^2 + 5n + 6) - (n^2 - n) = 6n + 6.$$
 Do đó:
-$$\Delta N = \frac{6n + 6}{2} = 3n + 3.$$
+$$\Delta N = \dfrac{6n + 6}{2} = 3n + 3.$$
 Theo đề bài, số góc tăng thêm là $24,$ nên ta có phương trình:
 $$3n + 3 = 24 \implies 3n = 21 \implies n = 7.$$
 Vậy ban đầu có tất cả **$7$ tia**.
@@ -390,7 +390,7 @@ Vậy ban đầu có tất cả **$7$ tia**.
 > Khi đó:
 > 1. Số tia gốc $O$ tạo thành là: $2k$ tia.
 > 2. Tổng số góc đỉnh $O$ tạo thành là:
->    $$N_{\text{tổng}} = \frac{2k(2k - 1)}{2} = k(2k - 1)\quad \text{(góc)}.$$
+>    $$N_{\text{tổng}} = \dfrac{2k(2k - 1)}{2} = k(2k - 1)\quad \text{(góc)}.$$
 > 3. Số góc bẹt đỉnh $O$ là: $k$ góc bẹt.
 > 4. Số góc khác góc bẹt đỉnh $O$ là:
 >    $$N_{\text{khác bẹt}} = k(2k - 1) - k = 2k(k - 1)\quad \text{(góc)}.$$
@@ -408,7 +408,7 @@ Do đó, $5$ đường thẳng tạo ra:
 $$2 \cdot 5 = 10\quad \text{tia gốc } O.$$
 
 b) Số góc đỉnh $O$ tạo thành từ $10$ tia là:
-$$N_{\text{tổng}} = \frac{10 \cdot (10 - 1)}{2} = \frac{10 \cdot 9}{2} = 45\quad \text{(góc)}.$$
+$$N_{\text{tổng}} = \dfrac{10 \cdot (10 - 1)}{2} = \dfrac{10 \cdot 9}{2} = 45\quad \text{(góc)}.$$
 
 c)
 - Mỗi đường thẳng tạo thành đúng $1$ góc bẹt đỉnh $O,$ nên có **$5$ góc bẹt**.
@@ -435,7 +435,7 @@ Như vậy, $n$ tia chung gốc chia mặt phẳng xung quanh đỉnh $O$ thành
 b) Khi một đường thẳng $d$ cắt $n$ tia tại $n$ điểm phân biệt $A_1, A_2, \dots, A_n$:
 - Số điểm phân biệt trên đường thẳng là $n$ điểm.
 - Số đoạn thẳng tạo thành từ $n$ điểm này chính là:
-$$\frac{n(n - 1)}{2}\quad \text{(đoạn thẳng)}.$$
+$$\dfrac{n(n - 1)}{2}\quad \text{(đoạn thẳng)}.$$
 Điều này cho thấy mối liên hệ tương ứng $1 - 1$ tuyệt đẹp giữa số góc tạo bởi $n$ tia chung gốc và số đoạn thẳng tạo bởi $n$ giao điểm trên một cát tuyến!
 
 ---
@@ -463,12 +463,12 @@ c) Có tất cả bao nhiêu góc trong toàn bộ hình vẽ (tính tất cả 
 a) **Tại đỉnh $A$:**
 Có $3$ tia xuất phát từ $A$ là $AB, AD, AC.$
 Số góc đỉnh $A$ là:
-$$\frac{3 \cdot 2}{2} = 3\quad \text{góc:}\quad \widehat{BAD},\; \widehat{DAC},\; \widehat{BAC}.$$
+$$\dfrac{3 \cdot 2}{2} = 3\quad \text{góc:}\quad \widehat{BAD},\; \widehat{DAC},\; \widehat{BAC}.$$
 
 b) **Tại đỉnh $D$:**
 Có $3$ tia xuất phát từ $D$ là $DB, DC, DA.$
 Số góc đỉnh $D$ là:
-$$\frac{3 \cdot 2}{2} = 3\quad \text{góc:}\quad \widehat{ADB},\; \widehat{ADC},\; \widehat{BDC}\; \text{(góc bẹt)}.$$
+$$\dfrac{3 \cdot 2}{2} = 3\quad \text{góc:}\quad \widehat{ADB},\; \widehat{ADC},\; \widehat{BDC}\; \text{(góc bẹt)}.$$
 
 c) **Tại đỉnh $B$:**
 Có $2$ tia là $BA$ và $BC$ (trùng $BD$), tạo thành đúng $1$ góc: $\widehat{B}$ (hay $\widehat{ABC}$).
@@ -484,7 +484,7 @@ $$3 + 3 + 1 + 1 = 8\quad \text{(góc)}.$$
 ### Chuyên đề 5: Chuyên đề góc tạo bởi kim giờ và kim phút của đồng hồ
 
 Mặt đồng hồ hình tròn được chia thành $12$ khoảng giờ bằng nhau. Toàn bộ một vòng tròn tương ứng với hai góc bẹt ghép lại ($360^\circ$).
-- Mỗi khoảng cách giữa hai số liền nhau trên mặt đồng hồ ứng với $\frac{1}{12}$ vòng tròn.
+- Mỗi khoảng cách giữa hai số liền nhau trên mặt đồng hồ ứng với $\dfrac{1}{12}$ vòng tròn.
 - Cứ sau $1$ giờ ($60$ phút):
   - Kim phút quay được đúng $1$ vòng ($12$ khoảng số).
   - Kim giờ quay được đúng $1$ khoảng số.
@@ -503,17 +503,17 @@ Kim phút chỉ đúng số $12,$ kim giờ chỉ đúng số $6.$
 Hai kim tạo thành hai tia đối nhau trên một đường thẳng thẳng đứng. Do đó hai kim tạo thành một **góc bẹt**.
 
 b) **Lúc $3$ giờ đúng (và $9$ giờ đúng):**
-Khoảng cách giữa hai kim là $3$ khoảng số, bằng $\frac{3}{12} = \frac{1}{4}$ vòng tròn. Hai kim tạo thành một **góc vuông**.
+Khoảng cách giữa hai kim là $3$ khoảng số, bằng $\dfrac{3}{12} = \dfrac{1}{4}$ vòng tròn. Hai kim tạo thành một **góc vuông**.
 
 c) **Lúc $4$ giờ đúng:**
-Khoảng cách giữa hai kim là $4$ khoảng số, bằng $\frac{4}{12} = \frac{1}{3}$ vòng tròn. Góc tạo thành lớn hơn góc vuông nhưng nhỏ hơn góc bẹt (góc tù).
+Khoảng cách giữa hai kim là $4$ khoảng số, bằng $\dfrac{4}{12} = \dfrac{1}{3}$ vòng tròn. Góc tạo thành lớn hơn góc vuông nhưng nhỏ hơn góc bẹt (góc tù).
 
 d) **Số lần hai kim tạo thành góc bẹt trong $24$ giờ:**
-- Trong $1$ giờ, kim phút quay được $1$ vòng, kim giờ quay được $\frac{1}{12}$ vòng.
+- Trong $1$ giờ, kim phút quay được $1$ vòng, kim giờ quay được $\dfrac{1}{12}$ vòng.
 - Tốc độ tương đối của kim phút so với kim giờ là:
-$$1 - \frac{1}{12} = \frac{11}{12}\quad \text{(vòng/giờ)}.$$
+$$1 - \dfrac{1}{12} = \dfrac{11}{12}\quad \text{(vòng/giờ)}.$$
 - Trong $12$ giờ, số lần hai kim tạo thành một vị trí đối nhau (góc bẹt) là:
-$$12 \cdot \frac{11}{12} = 11\quad \text{lần}.$$
+$$12 \cdot \dfrac{11}{12} = 11\quad \text{lần}.$$
 - Vậy trong một ngày đêm ($24$ giờ), hai kim đồng hồ tạo thành góc bẹt tất cả:
 $$11 \cdot 2 = 22\quad \text{lần}.$$
 
@@ -699,7 +699,7 @@ Cho trước một số tia chung gốc phân biệt. Nếu vẽ thêm $2$ tia c
 
 #### Phần 1: Trắc nghiệm (3,0 điểm)
 - Câu 1: **C** (Góc bẹt). *(0,75 điểm)*
-- Câu 2: **B** ($N = \frac{6 \cdot 5}{2} = 15$). *(0,75 điểm)*
+- Câu 2: **B** ($N = \dfrac{6 \cdot 5}{2} = 15$). *(0,75 điểm)*
 - Câu 3: **C** (Đỉnh $O$). *(0,75 điểm)*
 - Câu 4: **C** (Tia $OK$ nằm giữa $Oa$ và $Ob$). *(0,75 điểm)*
 
@@ -715,21 +715,21 @@ Cho trước một số tia chung gốc phân biệt. Nếu vẽ thêm $2$ tia c
 
 **Bài 2 (2,0 điểm):**
 - a) Số góc tạo thành là:
-  $$\frac{4 \cdot (4 - 1)}{2} = \frac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$ *(1,0 điểm)*
+  $$\dfrac{4 \cdot (4 - 1)}{2} = \dfrac{4 \cdot 3}{2} = 6\quad \text{(góc)}.$$ *(1,0 điểm)*
 - b) Kể đủ $6$ góc: $\widehat{xOy},\; \widehat{xOz},\; \widehat{xOt},\; \widehat{yOz},\; \widehat{yOt},\; \widehat{zOt}.$ *(1,0 điểm)*
 
 **Bài 3 (1,5 điểm):**
 - a) Hai đường thẳng $ab$ và $cd$ cắt nhau tại $I$ tạo thành $4$ tia chung gốc: tia $Ia,$ tia $Ib,$ tia $Ic,$ tia $Id.$ *(0,5 điểm)*
-- b) Số góc tạo thành từ $4$ tia là: $\frac{4 \cdot 3}{2} = 6$ góc. *(0,5 điểm)*
+- b) Số góc tạo thành từ $4$ tia là: $\dfrac{4 \cdot 3}{2} = 6$ góc. *(0,5 điểm)*
   Trong đó có đúng **$2$ góc bẹt** (là góc $\widehat{aIb}$ và góc $\widehat{cId}$). *(0,5 điểm)*
 
 **Bài 4 (1,5 điểm):**
 - Gọi số tia ban đầu là $n$ ($n \in \mathbb{N},\; n \ge 2$).
-  Số góc ban đầu: $N_1 = \frac{n(n - 1)}{2}.$ *(0,25 điểm)*
+  Số góc ban đầu: $N_1 = \dfrac{n(n - 1)}{2}.$ *(0,25 điểm)*
 - Khi vẽ thêm $2$ tia, tổng số tia là $n + 2.$
-  Số góc lúc sau: $N_2 = \frac{(n + 2)(n + 1)}{2}.$ *(0,25 điểm)*
+  Số góc lúc sau: $N_2 = \dfrac{(n + 2)(n + 1)}{2}.$ *(0,25 điểm)*
 - Số góc tăng thêm là:
-  $$N_2 - N_1 = \frac{(n^2 + 3n + 2) - (n^2 - n)}{2} = \frac{4n + 2}{2} = 2n + 1.$$ *(0,5 điểm)*
+  $$N_2 - N_1 = \dfrac{(n^2 + 3n + 2) - (n^2 - n)}{2} = \dfrac{4n + 2}{2} = 2n + 1.$$ *(0,5 điểm)*
 - Theo đề bài:
   $$2n + 1 = 15 \implies 2n = 14 \implies n = 7.$$
   Vậy ban đầu có **$7$ tia**. *(0,5 điểm)*

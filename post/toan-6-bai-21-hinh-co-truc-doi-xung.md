@@ -197,7 +197,7 @@ Trong các hình dưới đây, hình nào có trục đối xứng? Hãy chỉ 
 - Vẽ hoặc tưởng tượng các đường thẳng khả dĩ (đường nối trung điểm, đường chéo, đường phân giác góc).
 - Với các đa giác đều $n$ cạnh:
   - Nếu $n$ lẻ (tam giác đều $n = 3$, ngũ giác đều $n = 5$): Các trục đối xứng đi qua một đỉnh và trung điểm cạnh đối diện (có đúng $n$ trục).
-  - Nếu $n$ chẵn (hình vuông $n = 4$, lục giác đều $n = 6$): Gồm $\frac{n}{2}$ trục nối hai đỉnh đối diện và $\frac{n}{2}$ trục nối trung điểm các cặp cạnh đối diện (tổng cộng có đúng $n$ trục).
+  - Nếu $n$ chẵn (hình vuông $n = 4$, lục giác đều $n = 6$): Gồm $\dfrac{n}{2}$ trục nối hai đỉnh đối diện và $\dfrac{n}{2}$ trục nối trung điểm các cặp cạnh đối diện (tổng cộng có đúng $n$ trục).
 
 #### Bài toán 2.1
 Hãy cho biết mỗi hình sau có bao nhiêu trục đối xứng:
@@ -348,7 +348,7 @@ Bạn **Bình nói đúng**.
 **Bài 5.**
 - Trục đối xứng $d$ của đoạn thẳng $CD$ là đường trung trực của $CD$, đi qua trung điểm $I$ của $CD$ và vuông góc với $CD$.
 - Khoảng cách từ điểm $C$ đến đường thẳng $d$ đúng bằng độ dài đoạn thẳng $CI$:
-  $$CI = \frac{CD}{2} = \frac{8}{2} = 4\text{ (cm)}.$$
+  $$CI = \dfrac{CD}{2} = \dfrac{8}{2} = 4\text{ (cm)}.$$
 
 **Bài 6.**
 1. Đúng một trục đối xứng thẳng đứng: **M, W**.
@@ -486,7 +486,7 @@ Một tờ giấy hình vuông được gấp đôi lần thứ nhất theo mộ
 1. Sau hai lần gấp vuông góc nhau:
    - Tờ giấy thu được là một **hình vuông nhỏ** có cạnh bằng một nửa cạnh hình vuông ban đầu.
    - Diện tích hình vuông nhỏ bằng:
-     $$\left(\frac{1}{2}\right) \times \left(\frac{1}{2}\right) = \frac{1}{4}\text{ (diện tích tờ giấy ban đầu)}.$$
+     $$\left(\dfrac{1}{2}\right) \times \left(\dfrac{1}{2}\right) = \dfrac{1}{4}\text{ (diện tích tờ giấy ban đầu)}.$$
 2. Góc chung của nếp gấp chính là **tâm của hình vuông ban đầu**.
    Khi bấm một lỗ ở góc đó rồi mở ra, chỉ có duy nhất **$1$ lỗ thủng tròn** nằm ở chính giữa tâm của tờ giấy hình vuông ban đầu. Lỗ tròn này nhận cả $4$ trục đối xứng của hình vuông ban đầu làm trục đối xứng của nó.
 
@@ -519,10 +519,10 @@ Ta phân tích thành hai trường hợp:
    - Trục đối xứng là đường thẳng đi qua một đỉnh và trung điểm của cạnh đối diện.
    - Vì có $n$ đỉnh nên có đúng **$n$ trục đối xứng**.
 2. **Trường hợp $n$ là số chẵn (ví dụ: hình vuông $n = 4$, lục giác đều $n = 6$, bát giác đều $n = 8$):**
-   - Mỗi đỉnh đối diện với một đỉnh khác qua tâm: có $\frac{n}{2}$ cặp đỉnh đối diện, cho $\frac{n}{2}$ trục đối xứng nối hai đỉnh đối diện.
-   - Mỗi cạnh đối diện với một cạnh song song: có $\frac{n}{2}$ cặp cạnh đối diện, cho $\frac{n}{2}$ trục đối xứng nối trung điểm hai cạnh đối diện.
+   - Mỗi đỉnh đối diện với một đỉnh khác qua tâm: có $\dfrac{n}{2}$ cặp đỉnh đối diện, cho $\dfrac{n}{2}$ trục đối xứng nối hai đỉnh đối diện.
+   - Mỗi cạnh đối diện với một cạnh song song: có $\dfrac{n}{2}$ cặp cạnh đối diện, cho $\dfrac{n}{2}$ trục đối xứng nối trung điểm hai cạnh đối diện.
    - Tổng số trục đối xứng là:
-     $$\frac{n}{2} + \frac{n}{2} = n\text{ (trục đối xứng)}.$$
+     $$\dfrac{n}{2} + \dfrac{n}{2} = n\text{ (trục đối xứng)}.$$
 
 *Kết luận:* Mọi đa giác đều có $n$ cạnh luôn có đúng **$n$ trục đối xứng**. $\blacksquare$
 

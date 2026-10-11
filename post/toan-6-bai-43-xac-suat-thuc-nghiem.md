@@ -39,7 +39,7 @@ Bài học hôm nay sẽ giúp các em làm chủ công thức tính xác suất
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #047857;">2. Công thức xác suất thực nghiệm</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• $P(A) = \frac{k}{n}$.<br>• $k$: Số lần sự kiện $A$ xuất hiện.<br>• $n$: Tổng số lần tiến hành phép thử nghiệm.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• $P(A) = \dfrac{k}{n}$.<br>• $k$: Số lần sự kiện $A$ xuất hiện.<br>• $n$: Tổng số lần tiến hành phép thử nghiệm.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #f59e0b; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #b45309;">3. Ứng dụng ước lượng & dự đoán</h4>
@@ -59,10 +59,10 @@ Bài học hôm nay sẽ giúp các em làm chủ công thức tính xác suất
 Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức phân số, số thập phân và tư duy xác suất:
 
 **Câu 1:** Đổi các phân số sau ra số thập phân:
-$$\frac{3}{5}; \quad \frac{7}{20}; \quad \frac{11}{25}; \quad \frac{9}{50}.$$
+$$\dfrac{3}{5}; \quad \dfrac{7}{20}; \quad \dfrac{11}{25}; \quad \dfrac{9}{50}.$$
 
 *Lời giải:*
-$$\frac{3}{5} = 0{,}6; \quad \frac{7}{20} = 0{,}35; \quad \frac{11}{25} = 0{,}44; \quad \frac{9}{50} = 0{,}18.$$
+$$\dfrac{3}{5} = 0{,}6; \quad \dfrac{7}{20} = 0{,}35; \quad \dfrac{11}{25} = 0{,}44; \quad \dfrac{9}{50} = 0{,}18.$$
 
 **Câu 2:** Khi gieo một con xúc xắc chuẩn $6$ mặt:
 1. Có bao nhiêu kết quả có thể xảy ra?
@@ -76,7 +76,7 @@ $$\frac{3}{5} = 0{,}6; \quad \frac{7}{20} = 0{,}35; \quad \frac{11}{25} = 0{,}44
 
 *Lời giải:*
 Số lần xuất hiện mặt sấp chiếm tỉ lệ:
-$$\frac{11}{25} = 0{,}44 = 44\%.$$
+$$\dfrac{11}{25} = 0{,}44 = 44\%.$$
 (Bằng $44\%$ tổng số lần tung đồng xu).
 
 **Câu 4:** Theo em, nếu tung một đồng xu cân đối $10$ lần thì số lần ra mặt sấp có nhất thiết phải đúng bằng $5$ lần không? Nếu tung $10\,000$ lần thì tỉ lệ xuất hiện mặt sấp sẽ dao động quanh con số nào?
@@ -116,11 +116,11 @@ Khi muốn đo lường khả năng xảy ra của một sự kiện $A$ trong t
 > **Công thức Xác suất thực nghiệm:**
 > Giả sử thực hiện một phép thử nghiệm $n$ lần. Trong đó, sự kiện $A$ xuất hiện $k$ lần.
 > Khi đó, **xác suất thực nghiệm** của sự kiện $A$ (kí hiệu là $P(A)$) là:
-> $$P(A) = \frac{k}{n}$$
+> $$P(A) = \dfrac{k}{n}$$
 > *(với $k$ là số lần sự kiện $A$ xảy ra, $n$ là tổng số lần thực hiện phép thử).*
 
 - Xác suất thực nghiệm thường được viết dưới dạng:
-  + **Phân số tối giản:** ví dụ $\frac{3}{8}$;
+  + **Phân số tối giản:** ví dụ $\dfrac{3}{8}$;
   + **Số thập phân:** ví dụ $0{,}375$ (hoặc làm tròn đến hai chữ số thập phân, ví dụ $\approx 0{,}38$);
   + **Tỉ số phần trăm:** ví dụ $37{,}5\%$.
 
@@ -133,13 +133,13 @@ Bạn Dũng tung một đồng xu $60$ lần liên tiếp, kết quả ghi lại
 1. Tổng số lần tung đồng xu là $n = 60$.
    Số lần xuất hiện mặt sấp là $k_1 = 27$.
    Xác suất thực nghiệm của sự kiện "xuất hiện mặt sấp" là:
-   $$P = \frac{27}{60} = \frac{9}{20} = 0{,}45.$$
+   $$P = \dfrac{27}{60} = \dfrac{9}{20} = 0{,}45.$$
 
 2. Số lần xuất hiện mặt ngửa là:
    $$k_2 = 60 - 27 = 33.$$
    (Xuất hiện $33$ lần mặt ngửa).
    Xác suất thực nghiệm của sự kiện "xuất hiện mặt ngửa" là:
-   $$P = \frac{33}{60} = \frac{11}{20} = 0{,}55.$$
+   $$P = \dfrac{33}{60} = \dfrac{11}{20} = 0{,}55.$$
 
 > [!TIP]
 > **Nhận xét quan trọng:**
@@ -170,7 +170,7 @@ Một công ty sản xuất bóng đèn LED kiểm tra ngẫu nhiên $500$ bóng
 
 **Lời giải:**
 1. Xác suất thực nghiệm gặp bóng đèn bị lỗi là:
-   $$P = \frac{15}{500} = \frac{3}{100} = 0{,}03 \quad (3\%).$$
+   $$P = \dfrac{15}{500} = \dfrac{3}{100} = 0{,}03 \quad (3\%).$$
 2. Vì mẫu thử nghiệm khá lớn ($500$ bóng), ta dùng xác suất thực nghiệm $0{,}03$ để dự đoán cho cả lô hàng.
    Số bóng đèn bị lỗi trong lô $40\,000$ bóng được ước tính là:
    $$0{,}03 \times 40\,000 = 1\,200.$$
@@ -183,7 +183,7 @@ Một công ty sản xuất bóng đèn LED kiểm tra ngẫu nhiên $500$ bóng
 > [!WARNING]
 > **Cảnh báo lỗi sai phổ biến của học sinh:**
 > 1. **Lấy số lần thuận lợi chia cho chính nó:**
->    - Ví dụ: Gieo xúc xắc $50$ lần, mặt $6$ chấm xuất hiện $8$ lần. Nhiều bạn tính $P = \frac{8}{6}$ hoặc $P = \frac{8}{8} = 1$. Đây là lỗi sai hoàn toàn! Phải lấy số lần ra mặt đó chia cho **tổng số lần gieo** ($n = 50$): $P = \frac{8}{50} = 0{,}16$.
+>    - Ví dụ: Gieo xúc xắc $50$ lần, mặt $6$ chấm xuất hiện $8$ lần. Nhiều bạn tính $P = \dfrac{8}{6}$ hoặc $P = \dfrac{8}{8} = 1$. Đây là lỗi sai hoàn toàn! Phải lấy số lần ra mặt đó chia cho **tổng số lần gieo** ($n = 50$): $P = \dfrac{8}{50} = 0{,}16$.
 > 2. **Xác suất tính ra lớn hơn 1:**
 >    - Nhớ nguyên tắc vàng: Xác suất $P$ **bắt buộc phải nằm trong đoạn $[0; 1]$**. Nếu bạn bấm máy tính ra $1{,}2$ hay $2{,}5$, chắc chắn bạn đã đặt nhầm tử số và mẫu số!
 > 3. **Nhầm lẫn giữa "số chấm" và "số lần xuất hiện":**
@@ -201,7 +201,7 @@ Một công ty sản xuất bóng đèn LED kiểm tra ngẫu nhiên $500$ bóng
 1. Bước 1: Xác định tổng số lần thực hiện phép thử $n$. Nếu đề chưa cho sẵn, ta cộng tất cả các tần số xuất hiện trong bảng:
    $$n = k_1 + k_2 + \dots + k_m.$$
 2. Bước 2: Đếm số lần $k$ mà sự kiện cần tính xuất hiện (nếu sự kiện gồm nhiều trường hợp thì cộng dồn các lần tương ứng).
-3. Bước 3: Lập tỉ số $P = \frac{k}{n}$, rút gọn về phân số tối giản hoặc chuyển thành số thập phân (làm tròn thích hợp theo yêu cầu).
+3. Bước 3: Lập tỉ số $P = \dfrac{k}{n}$, rút gọn về phân số tối giản hoặc chuyển thành số thập phân (làm tròn thích hợp theo yêu cầu).
 
 ---
 
@@ -224,19 +224,19 @@ $$n = 7 + 9 + 8 + 11 + 6 + 9 = 50.$$
 
 1. Số lần xuất hiện mặt $4$ chấm là $k_A = 11$.
    Xác suất thực nghiệm của sự kiện $A$ là:
-   $$P(A) = \frac{11}{50} = 0{,}22.$$
+   $$P(A) = \dfrac{11}{50} = 0{,}22.$$
 
 2. Các mặt có số chấm là số nguyên tố gồm: mặt $2$, mặt $3$, mặt $5$.
    Số lần xuất hiện các mặt này là:
    $$k_B = 9 + 8 + 6 = 23.$$
    Xác suất thực nghiệm của sự kiện $B$ là:
-   $$P(B) = \frac{23}{50} = 0{,}46.$$
+   $$P(B) = \dfrac{23}{50} = 0{,}46.$$
 
 3. Các mặt có số chấm lớn hơn $4$ gồm: mặt $5$ và mặt $6$.
    Số lần xuất hiện các mặt này là:
    $$k_C = 6 + 9 = 15.$$
    Xác suất thực nghiệm của sự kiện $C$ là:
-   $$P(C) = \frac{15}{50} = \frac{3}{10} = 0{,}3.$$
+   $$P(C) = \dfrac{15}{50} = \dfrac{3}{10} = 0{,}3.$$
 
 ---
 
@@ -248,11 +248,11 @@ Trong một trò chơi ném bóng rổ, bạn Nam thực hiện ném bóng $40$ 
 **Lời giải:**
 1. Tổng số lần ném bóng là $n = 40$. Số lần bóng vào rổ là $k_1 = 26$.
    Xác suất thực nghiệm ném bóng vào rổ là:
-   $$P = \frac{26}{40} = \frac{13}{20} = 0{,}65.$$
+   $$P = \dfrac{26}{40} = \dfrac{13}{20} = 0{,}65.$$
 2. Số lần bóng ra ngoài là:
    $$k_2 = 40 - 26 = 14.$$
    Xác suất thực nghiệm ném bóng ra ngoài là:
-   $$P = \frac{14}{40} = \frac{7}{20} = 0{,}35.$$
+   $$P = \dfrac{14}{40} = \dfrac{7}{20} = 0{,}35.$$
 
 ---
 
@@ -267,11 +267,11 @@ Một hộp kín chứa các tấm thẻ màu Xanh, Đỏ, Vàng. Bạn Mai rút
    $$80 - (32 + 28) = 80 - 60 = 20.$$
    (Xuất hiện $20$ lần thẻ Vàng).
 2. Xác suất thực nghiệm rút được thẻ màu Vàng là:
-   $$P = \frac{20}{80} = \frac{1}{4} = 0{,}25.$$
+   $$P = \dfrac{20}{80} = \dfrac{1}{4} = 0{,}25.$$
 3. Sự kiện "rút được thẻ không phải màu Đỏ" xảy ra khi rút được thẻ Xanh hoặc thẻ Vàng.
    Số lần xuất hiện là: $32 + 20 = 52$ lần (hoặc $80 - 28 = 52$ lần).
    Xác suất thực nghiệm của sự kiện là:
-   $$P = \frac{52}{80} = \frac{13}{20} = 0{,}65.$$
+   $$P = \dfrac{52}{80} = \dfrac{13}{20} = 0{,}65.$$
 
 ---
 
@@ -283,7 +283,7 @@ Một hộp kín chứa các tấm thẻ màu Xanh, Đỏ, Vàng. Bạn Mai rút
    - Giá trị lớn hơn nghĩa là sự kiện đó có khả năng xảy ra thực nghiệm cao hơn.
 3. Kiểm tra tính cân đối của đồng xu hoặc xúc xắc:
    - Với đồng xu cân đối, xác suất lý thuyết của mỗi mặt là $0{,}5$. Nếu sau nhiều lần tung mà xác suất thực nghiệm chênh lệch quá xa $0{,}5$ (ví dụ $0{,}8$ và $0{,}2$), đồng xu có thể không cân đối.
-   - Với con xúc xắc $6$ mặt cân đối, xác suất lý thuyết của mỗi mặt là $\frac{1}{6} \approx 0{,}167$. Nếu một mặt xuất hiện vượt trội bất thường, con xúc xắc có dấu hiệu bị lệch.
+   - Với con xúc xắc $6$ mặt cân đối, xác suất lý thuyết của mỗi mặt là $\dfrac{1}{6} \approx 0{,}167$. Nếu một mặt xuất hiện vượt trội bất thường, con xúc xắc có dấu hiệu bị lệch.
 
 ---
 
@@ -298,9 +298,9 @@ Hai bạn An và Bình cùng chơi trò tung đồng xu để kiểm tra đồng
 **Lời giải:**
 1. Tính xác suất thực nghiệm:
    - Đối với bạn An: $n_1 = 50$, $k_1 = 28$.
-     $$P_1 = \frac{28}{50} = 0{,}56.$$
+     $$P_1 = \dfrac{28}{50} = 0{,}56.$$
    - Đối với bạn Bình: $n_2 = 80$, $k_2 = 42$.
-     $$P_2 = \frac{42}{80} = \frac{21}{40} = 0{,}525.$$
+     $$P_2 = \dfrac{42}{80} = \dfrac{21}{40} = 0{,}525.$$
 2. So sánh: Ta có $0{,}56 > 0{,}525$.
    Do đó, xác suất thực nghiệm xuất hiện mặt ngửa của bạn An lớn hơn của bạn Bình.
 
@@ -320,10 +320,10 @@ Một bạn học sinh gieo một con xúc xắc $120$ lần và ghi lại:
 
 **Lời giải:**
 1. Xác suất thực nghiệm của mặt $4$ chấm là:
-   $$P_4 = \frac{45}{120} = \frac{3}{8} = 0{,}375.$$
+   $$P_4 = \dfrac{45}{120} = \dfrac{3}{8} = 0{,}375.$$
    Xác suất thực nghiệm của mặt $3$ chấm là:
-   $$P_3 = \frac{12}{120} = \frac{1}{10} = 0{,}1.$$
-2. Nếu con xúc xắc cân đối và đồng chất, mỗi mặt sẽ có cơ hội xuất hiện xấp xỉ nhau với tỉ lệ lý thuyết là $\frac{1}{6} \approx 0{,}167$.
+   $$P_3 = \dfrac{12}{120} = \dfrac{1}{10} = 0{,}1.$$
+2. Nếu con xúc xắc cân đối và đồng chất, mỗi mặt sẽ có cơ hội xuất hiện xấp xỉ nhau với tỉ lệ lý thuyết là $\dfrac{1}{6} \approx 0{,}167$.
    Ở đây, mặt $4$ chấm xuất hiện tới $45$ lần ($37{,}5\%$), cao gấp hơn $3$ lần mặt $3$ chấm và vượt trội hẳn so với các mặt còn lại. Do đó, con xúc xắc này có dấu hiệu **không cân đối** (bị lệch trọng tâm hoặc gian lận).
 
 ---
@@ -331,7 +331,7 @@ Một bạn học sinh gieo một con xúc xắc $120$ lần và ghi lại:
 ### Dạng 3: Sử dụng xác suất thực nghiệm để Ước lượng và Dự đoán
 
 **Phương pháp giải:**
-1. Bước 1: Tính xác suất thực nghiệm $P(A) = \frac{k}{n}$ từ dữ liệu mẫu đã khảo sát.
+1. Bước 1: Tính xác suất thực nghiệm $P(A) = \dfrac{k}{n}$ từ dữ liệu mẫu đã khảo sát.
 2. Bước 2: Nhân xác suất thực nghiệm $P(A)$ với quy mô tổng thể $N$ cần dự đoán:
    $$N_A \approx P(A) \times N$$
 3. Bước 3: Làm tròn kết quả đến hàng đơn vị (vì số lượng người, sản phẩm, con vật luôn là số nguyên).
@@ -345,7 +345,7 @@ Một viện nghiên cứu nông nghiệp gieo thử nghiệm $400$ hạt giốn
 
 **Lời giải:**
 1. Xác suất thực nghiệm nảy mầm của hạt giống là:
-   $$P = \frac{372}{400} = \frac{93}{100} = 0{,}93 \quad (93\%).$$
+   $$P = \dfrac{372}{400} = \dfrac{93}{100} = 0{,}93 \quad (93\%).$$
 2. Vì số lượng hạt giống thử nghiệm đủ lớn ($400$ hạt), ta dùng tỉ lệ $0{,}93$ để dự đoán.
    Số hạt giống dự đoán sẽ nảy mầm trong số $50\,000$ hạt là:
    $$0{,}93 \times 50\,000 = 46\,500.$$
@@ -360,7 +360,7 @@ Một trạm kiểm định an toàn giao thông kiểm tra ngẫu nhiên $150$ 
 
 **Lời giải:**
 1. Xác suất thực nghiệm gặp xe máy không đảm bảo an toàn phanh là:
-   $$P = \frac{9}{150} = \frac{3}{50} = 0{,}06 \quad (6\%).$$
+   $$P = \dfrac{9}{150} = \dfrac{3}{50} = 0{,}06 \quad (6\%).$$
 2. Dự đoán số xe máy không đảm bảo tiêu chuẩn phanh trong toàn khu vực là:
    $$0{,}06 \times 12\,000 = 720.$$
    (Khoảng $720$ xe máy).
@@ -370,11 +370,11 @@ Một trạm kiểm định an toàn giao thông kiểm tra ngẫu nhiên $150$ 
 ### Dạng 4: Bài toán ngược: Tìm số lần xuất hiện hoặc Tổng số lần thực nghiệm
 
 **Phương pháp giải:**
-Từ công thức cơ bản $P = \frac{k}{n}$, ta có hai bài toán đảo:
+Từ công thức cơ bản $P = \dfrac{k}{n}$, ta có hai bài toán đảo:
 1. Biết xác suất $P$ và tổng số lần $n$, tìm số lần xuất hiện $k$:
    $$k = P \times n.$$
 2. Biết số lần xuất hiện $k$ và xác suất $P$, tìm tổng số lần thực hiện $n$:
-   $$n = \frac{k}{P} = k : P.$$
+   $$n = \dfrac{k}{P} = k : P.$$
 
 ---
 
@@ -418,9 +418,9 @@ Làm sao các nhà sinh thái học có thể đếm được số lượng cá 
 > 2. Chờ một thời gian đủ để các cá thể đánh dấu hòa lẫn đều vào quần thể.
 > 3. Bắt lần thứ hai một mẫu gồm $n$ cá thể, trong đó đếm được có $m$ cá thể mang dấu.
 > 4. Xác suất thực nghiệm gặp cá thể có dấu ở lần bắt thứ hai là:
->    $$P = \frac{m}{n}.$$
+>    $$P = \dfrac{m}{n}.$$
 > 5. Vì cá thể có dấu phân bố đều trong toàn bộ quần thể gồm $N$ cá thể, nên tỉ lệ thực nghiệm xấp xỉ tỉ lệ thực tế:
->    $$\frac{m}{n} \approx \frac{M}{N} \implies N \approx \frac{M \times n}{m}.$$
+>    $$\dfrac{m}{n} \approx \dfrac{M}{N} \implies N \approx \dfrac{M \times n}{m}.$$
 
 #### Bài toán Olympic 1
 Để ước lượng số lượng cá chép trong một hồ sinh thái, ban quản lý hồ bắt lên $120$ con cá chép, bấm thẻ đánh dấu vào vây rồi thả lại hồ. Một tuần sau, họ kéo lưới bắt lên $80$ con cá chép thì thấy có $6$ con mang thẻ đánh dấu.
@@ -429,17 +429,17 @@ Làm sao các nhà sinh thái học có thể đếm được số lượng cá 
 
 **Lời giải:**
 1. Xác suất thực nghiệm gặp cá có đánh dấu ở lần bắt thứ hai là:
-   $$P = \frac{6}{80} = \frac{3}{40} = 0{,}075 \quad (7{,}5\%).$$
+   $$P = \dfrac{6}{80} = \dfrac{3}{40} = 0{,}075 \quad (7{,}5\%).$$
 2. Gọi tổng số cá chép trong hồ là $N$.
    Vì số cá có dấu ban đầu là $M = 120$ con phân bố đều trong $N$ con, nên ta có tỉ lệ:
-   $$\frac{120}{N} \approx 0{,}075 \implies N \approx \frac{120}{0{,}075} = 1\,600.$$
+   $$\dfrac{120}{N} \approx 0{,}075 \implies N \approx \dfrac{120}{0{,}075} = 1\,600.$$
    Vậy ước lượng trong hồ có khoảng $1\,600$ con cá chép.
 
 ---
 
 ### Chuyên đề 2: Luật số lớn (Law of Large Numbers) và Lịch sử thí nghiệm gieo đồng xu
 
-Luật số lớn phát biểu rằng: khi số lần thực nghiệm $n$ tiến ra vô cùng, xác suất thực nghiệm $\frac{k}{n}$ sẽ hội tụ về xác suất lý thuyết $p$.
+Luật số lớn phát biểu rằng: khi số lần thực nghiệm $n$ tiến ra vô cùng, xác suất thực nghiệm $\dfrac{k}{n}$ sẽ hội tụ về xác suất lý thuyết $p$.
 
 Trong lịch sử toán học thế giới, nhiều nhà khoa học lỗi lạc đã kiên trì thực hiện hàng chục nghìn lần tung đồng xu để kiểm chứng định luật này:
 
@@ -450,7 +450,7 @@ Trong lịch sử toán học thế giới, nhiều nhà khoa học lỗi lạc 
 | **Karl Pearson** | Đầu thế kỷ 20 | $24\,000$ | $12\,012$ | $0{,}5005$ |
 
 #### Bài toán Olympic 2
-Ba nhóm học sinh tiến hành gieo một con xúc xắc chuẩn để quan sát mặt $6$ chấm (xác suất lý thuyết là $\frac{1}{6} \approx 0{,}1667$):
+Ba nhóm học sinh tiến hành gieo một con xúc xắc chuẩn để quan sát mặt $6$ chấm (xác suất lý thuyết là $\dfrac{1}{6} \approx 0{,}1667$):
 - Nhóm 1 gieo $40$ lần, được $9$ lần ra mặt $6$.
 - Nhóm 2 gieo $100$ lần, được $18$ lần ra mặt $6$.
 - Nhóm 3 gieo $300$ lần, được $51$ lần ra mặt $6$.
@@ -461,14 +461,14 @@ Ba nhóm học sinh tiến hành gieo một con xúc xắc chuẩn để quan s�
 
 **Lời giải:**
 1. Xác suất thực nghiệm của từng nhóm:
-   - Nhóm 1: $P_1 = \frac{9}{40} = 0{,}225$ (chênh lệch với lý thuyết $|0{,}225 - 0{,}1667| \approx 0{,}0583$).
-   - Nhóm 2: $P_2 = \frac{18}{100} = 0{,}180$ (chênh lệch $|0{,}180 - 0{,}1667| \approx 0{,}0133$).
-   - Nhóm 3: $P_3 = \frac{51}{300} = 0{,}170$ (chênh lệch $|0{,}170 - 0{,}1667| \approx 0{,}0033$).
+   - Nhóm 1: $P_1 = \dfrac{9}{40} = 0{,}225$ (chênh lệch với lý thuyết $|0{,}225 - 0{,}1667| \approx 0{,}0583$).
+   - Nhóm 2: $P_2 = \dfrac{18}{100} = 0{,}180$ (chênh lệch $|0{,}180 - 0{,}1667| \approx 0{,}0133$).
+   - Nhóm 3: $P_3 = \dfrac{51}{300} = 0{,}170$ (chênh lệch $|0{,}170 - 0{,}1667| \approx 0{,}0033$).
 2. Khi gộp cả ba nhóm lại:
    - Tổng số lần gieo: $N = 40 + 100 + 300 = 440$ lần.
    - Tổng số lần ra mặt $6$: $K = 9 + 18 + 51 = 78$ lần.
    - Xác suất thực nghiệm chung là:
-     $$P_{\text{chung}} = \frac{78}{440} = \frac{39}{220} \approx 0{,}1773.$$
+     $$P_{\text{chung}} = \dfrac{78}{440} = \dfrac{39}{220} \approx 0{,}1773.$$
 3. **Nhận xét:** Khi số lần gieo tăng lên từ $40$ lên $100$, rồi $300$ và $440$ lần, độ chênh lệch giữa xác suất thực nghiệm và xác suất lý thuyết giảm dần rõ rệt, kết quả càng ngày càng sát với giá trị lý thuyết xấp xỉ $0{,}167$.
 
 ---
@@ -493,16 +493,16 @@ Chọn ngẫu nhiên một học sinh trong số $200$ bạn. Hãy tính xác su
 
 **Lời giải:**
 1. Số học sinh tham gia cả hai CLB là ô giao giữa Tiếng Anh và Tin học: $45$ bạn.
-   $$P(E_1) = \frac{45}{200} = \frac{9}{40} = 0{,}225.$$
+   $$P(E_1) = \dfrac{45}{200} = \dfrac{9}{40} = 0{,}225.$$
 2. Sự kiện "tham gia ít nhất một CLB" có biến cố đối là "không tham gia CLB nào".
    Số bạn không tham gia CLB nào là $35$ bạn.
    Do đó, số bạn tham gia ít nhất một CLB là:
    $$200 - 35 = 165.$$
    (Có $165$ bạn tham gia ít nhất một CLB).
-   $$P(E_2) = \frac{165}{200} = \frac{33}{40} = 0{,}825.$$
+   $$P(E_2) = \dfrac{165}{200} = \dfrac{33}{40} = 0{,}825.$$
 3. Trong số $110$ bạn tham gia CLB Tiếng Anh, có $45$ bạn tham gia CLB Tin học.
    Xác suất cần tìm là:
-   $$P(E_3) = \frac{45}{110} = \frac{9}{22} \approx 0{,}409.$$
+   $$P(E_3) = \dfrac{45}{110} = \dfrac{9}{22} \approx 0{,}409.$$
 
 ---
 
@@ -514,9 +514,9 @@ Một trong những ứng dụng kinh điển nhất là **ước lượng số 
 - Vẽ một hình vuông cạnh $2r$ (diện tích $S_1 = (2r)^2 = 4r^2$).
 - Vẽ một hình tròn nội tiếp bán kính $r$ (diện tích $S_2 = \pi r^2$).
 - Tỉ số diện tích giữa hình tròn và hình vuông là:
-  $$\frac{S_2}{S_1} = \frac{\pi r^2}{4r^2} = \frac{\pi}{4}.$$
+  $$\dfrac{S_2}{S_1} = \dfrac{\pi r^2}{4r^2} = \dfrac{\pi}{4}.$$
 - Nếu ta chấm ngẫu nhiên $N$ điểm vào bên trong hình vuông, và đếm được $M$ điểm rơi vào trong hình tròn, thì theo xác suất thực nghiệm:
-  $$\frac{M}{N} \approx \frac{\pi}{4} \implies \pi \approx 4 \times \frac{M}{N}.$$
+  $$\dfrac{M}{N} \approx \dfrac{\pi}{4} \implies \pi \approx 4 \times \dfrac{M}{N}.$$
 
 #### Bài toán Olympic 4
 Một chương trình máy tính thực hiện gieo ngẫu nhiên $10\,000$ hạt mưa vào một bảng hình vuông có chứa một hình tròn nội tiếp. Kết quả máy tính đếm được có $7\,854$ hạt mưa rơi vào bên trong hình tròn.
@@ -525,7 +525,7 @@ Một chương trình máy tính thực hiện gieo ngẫu nhiên $10\,000$ hạ
 
 **Lời giải:**
 1. Xác suất thực nghiệm hạt mưa rơi vào hình tròn là:
-   $$P = \frac{7\,854}{10\,000} = 0{,}7854.$$
+   $$P = \dfrac{7\,854}{10\,000} = 0{,}7854.$$
 2. Áp dụng công thức Monte Carlo:
    $$\pi \approx 4 \times P = 4 \times 0{,}7854 = 3{,}1416.$$
    Con số $3{,}1416$ xấp xỉ cực kỳ chính xác với giá trị số $\pi \approx 3{,}14159265...$ quen thuộc!
@@ -694,10 +694,10 @@ type: choice
 - D. $0{,}50$
 
 **Câu 2:** Gieo một con xúc xắc $60$ lần thì thấy mặt $5$ chấm xuất hiện $9$ lần. Xác suất thực nghiệm của sự kiện *"ra mặt 5 chấm"* là:
-- A. $\frac{3}{20}$
-- B. $\frac{1}{6}$
-- C. $\frac{5}{60}$
-- D. $\frac{9}{5}$
+- A. $\dfrac{3}{20}$
+- B. $\dfrac{1}{6}$
+- C. $\dfrac{5}{60}$
+- D. $\dfrac{9}{5}$
 
 **Câu 3:** Khẳng định nào sau đây là **sai**?
 - A. Xác suất thực nghiệm của một sự kiện luôn nằm trong đoạn $[0; 1]$.
@@ -731,24 +731,24 @@ type: choice
 ### Hướng dẫn chấm & Thang điểm Đề số 1
 
 #### Trắc nghiệm (4 điểm)
-- Câu 1: **B** ($1$ điểm) — $P = \frac{22}{50} = 0{,}44$.
-- Câu 2: **A** ($1$ điểm) — $P = \frac{9}{60} = \frac{3}{20} = 0{,}15$.
+- Câu 1: **B** ($1$ điểm) — $P = \dfrac{22}{50} = 0{,}44$.
+- Câu 2: **A** ($1$ điểm) — $P = \dfrac{9}{60} = \dfrac{3}{20} = 0{,}15$.
 - Câu 3: **D** ($1$ điểm) — D sai vì trong mẫu hữu hạn, xác suất thực nghiệm chỉ xấp xỉ xác suất lý thuyết.
-- Câu 4: **C** ($1$ điểm) — Số cam đạt chuẩn là $80 - 4 = 76$ quả, $P = \frac{76}{80} = 0{,}95$.
+- Câu 4: **C** ($1$ điểm) — Số cam đạt chuẩn là $80 - 4 = 76$ quả, $P = \dfrac{76}{80} = 0{,}95$.
 
 #### Tự luận (6 điểm)
 **Bài 1:**
 1. Số lần ra mặt $4$ chấm là $9$ lần. Tổng số lần gieo là $40$.
    Xác suất thực nghiệm là:
-   $$P = \frac{9}{40} = 0{,}225.$$ *(1,5 điểm)*
+   $$P = \dfrac{9}{40} = 0{,}225.$$ *(1,5 điểm)*
 2. Các mặt có số chấm chẵn là: mặt $2$, mặt $4$, mặt $6$.
    Số lần xuất hiện là: $8 + 9 + 7 = 24$ lần.
    Xác suất thực nghiệm là:
-   $$P = \frac{24}{40} = \frac{3}{5} = 0{,}6.$$ *(1,5 điểm)*
+   $$P = \dfrac{24}{40} = \dfrac{3}{5} = 0{,}6.$$ *(1,5 điểm)*
 
 **Bài 2:**
 1. Xác suất thực nghiệm hạt giống nảy mầm là:
-   $$P = \frac{108}{120} = \frac{9}{10} = 0{,}9 \quad (90\%).$$ *(1,5 điểm)*
+   $$P = \dfrac{108}{120} = \dfrac{9}{10} = 0{,}9 \quad (90\%).$$ *(1,5 điểm)*
 2. Dự đoán số hạt nảy mầm trong $25\,000$ hạt là:
    $$0{,}9 \times 25\,000 = 22\,500.$$
    (Khoảng $22\,500$ hạt giống). *(1,5 điểm)*
@@ -798,8 +798,8 @@ type: choice
 ### Hướng dẫn chấm & Thang điểm Đề số 2
 
 #### Trắc nghiệm (4 điểm)
-- Câu 1: **B** ($1$ điểm) — $P = \frac{64}{100} = 0{,}64$.
-- Câu 2: **A** ($1$ điểm) — $P = \frac{9}{30} = 0{,}30$.
+- Câu 1: **B** ($1$ điểm) — $P = \dfrac{64}{100} = 0{,}64$.
+- Câu 2: **A** ($1$ điểm) — $P = \dfrac{9}{30} = 0{,}30$.
 - Câu 3: **B** ($1$ điểm) — $n = 15 : 0{,}25 = 60$ lần.
 - Câu 4: **B** ($1$ điểm) — Kích thước mẫu quá nhỏ chưa thể khẳng định tính cân đối, cần kiểm tra với $n$ lớn hơn.
 
@@ -809,14 +809,14 @@ type: choice
    $$50 - (18 + 22) = 10.$$
    (Gồm $10$ lần).
    Xác suất thực nghiệm là:
-   $$P = \frac{10}{50} = 0{,}2.$$ *(1,5 điểm)*
-2. Xác suất thực nghiệm phiếu Vở viết là: $P_1 = \frac{18}{50} = 0{,}36$.
-   Xác suất thực nghiệm phiếu Bút bi là: $P_2 = \frac{22}{50} = 0{,}44$.
+   $$P = \dfrac{10}{50} = 0{,}2.$$ *(1,5 điểm)*
+2. Xác suất thực nghiệm phiếu Vở viết là: $P_1 = \dfrac{18}{50} = 0{,}36$.
+   Xác suất thực nghiệm phiếu Bút bi là: $P_2 = \dfrac{22}{50} = 0{,}44$.
    Vì $0{,}44 > 0{,}36$ nên khả năng rút trúng phiếu Bút bi cao hơn phiếu Vở viết. *(1,5 điểm)*
 
 **Bài 2:**
 1. Xác suất thực nghiệm gặp cá có đánh dấu là:
-   $$P = \frac{4}{60} = \frac{1}{15} \approx 0{,}067.$$ *(1,5 điểm)*
+   $$P = \dfrac{4}{60} = \dfrac{1}{15} \approx 0{,}067.$$ *(1,5 điểm)*
 2. Gọi số cá trong ao là $N$. Tỉ lệ cá có dấu là:
-   $$\frac{80}{N} \approx \frac{1}{15} \implies N \approx 80 \times 15 = 1\,200.$$
+   $$\dfrac{80}{N} \approx \dfrac{1}{15} \implies N \approx 80 \times 15 = 1\,200.$$
    Vậy ước tính trong ao của bác An có khoảng $1\,200$ con cá rô phi. *(1,5 điểm)*

@@ -341,7 +341,7 @@ a)
 b) 
 - Số hạng thứ $50$ là: $a_{50} = 7 \cdot 50 - 3 = 347.$
 - Tổng $50$ số hạng đầu tiên:
-$$S = \frac{(4 + 347) \cdot 50}{2} = 351 \cdot 25 = 8775.$$
+$$S = \dfrac{(4 + 347) \cdot 50}{2} = 351 \cdot 25 = 8775.$$
 
 </details>
 
@@ -359,7 +359,7 @@ $$S = (4 + 120) \cdot 30 : 2 = 124 \cdot 15 = 1860.$$
 
 b) Cộng thêm $1 + 2 + 3 = 6$ vào cả hai vế của đẳng thức:
 $$1 + 2 + 3 + 4 + 5 + 6 + \dots + n = 814 + 6 = 820$$
-$$\frac{n(n + 1)}{2} = 820 \implies n(n + 1) = 1640.$$
+$$\dfrac{n(n + 1)}{2} = 820 \implies n(n + 1) = 1640.$$
 Nhận thấy $1640 = 40 \cdot 41,$ mà $n$ và $n + 1$ là hai số tự nhiên liên tiếp nên suy ra $n = 40.$
 
 </details>
@@ -705,7 +705,7 @@ Trong một giải bóng đá có $5$ đội thi đấu vòng tròn một lượ
 <summary><strong>Xem lời giải Bài 4</strong></summary>
 
 Số trận đấu diễn ra trong giải là:
-$$\frac{5 \cdot 4}{2} = 10\text{ (trận)}.$$
+$$\dfrac{5 \cdot 4}{2} = 10\text{ (trận)}.$$
 - Trong mỗi trận có phân thắng – thua, tổng số điểm hai đội nhận được là: $3 + 0 = 3$ điểm.
 - Trong mỗi trận hoà, tổng số điểm hai đội nhận được là: $1 + 1 = 2$ điểm.
 Giả sử cả $10$ trận đều phân định thắng – thua, thì tổng điểm toàn giải là:

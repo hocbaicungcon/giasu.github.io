@@ -63,7 +63,7 @@ explanation: '$\text{ƯCLN}(12, 18) = 2 \cdot 3 = 6.$'
 
 ```quiz
 type: choice
-question: 'Muốn quy đồng mẫu hai phân số $\frac{1}{3}$ và $\frac{1}{4}$ về cùng một mẫu số, ta thường chọn mẫu chung nhỏ nhất bằng bao nhiêu?'
+question: 'Muốn quy đồng mẫu hai phân số $\dfrac{1}{3}$ và $\dfrac{1}{4}$ về cùng một mẫu số, ta thường chọn mẫu chung nhỏ nhất bằng bao nhiêu?'
 options:
   - '7'
   - '12'
@@ -89,8 +89,8 @@ Các số có mặt trong cả hai dãy bội trên là: $0$ và $24.$
 Thừa số chung của $12$ và $18$ là $2$ và $3,$ lấy số mũ nhỏ nhất:
 $$\text{ƯCLN}(12, 18) = 2^1 \cdot 3^1 = 6.$$
 
-**Câu 4.** Mẫu chung nhỏ nhất khi quy đồng $\frac{1}{3}$ và $\frac{1}{4}$ là $12$ (vì $12 : 3 = 4$ và $12 : 4 = 3$). Khi đó:
-$$\frac{1}{3} = \frac{4}{12} \quad \text{và} \quad \frac{1}{4} = \frac{3}{12}.$$
+**Câu 4.** Mẫu chung nhỏ nhất khi quy đồng $\dfrac{1}{3}$ và $\dfrac{1}{4}$ là $12$ (vì $12 : 3 = 4$ và $12 : 4 = 3$). Khi đó:
+$$\dfrac{1}{3} = \dfrac{4}{12} \quad \text{và} \quad \dfrac{1}{4} = \dfrac{3}{12}.$$
 
 **Câu 5.** Số nhỏ nhất khác $0$ cùng chia hết cho $6$ và $8$ là $24.$ Khi các số lớn hơn, việc liệt kê dãy bội sẽ rất dài và mất thời gian. Bài học này sẽ cung cấp cho các em quy tắc 3 bước tìm nhanh số đó mà không cần liệt kê từng bội.
 
@@ -190,7 +190,7 @@ Khi cộng, trừ các phân số không cùng mẫu, việc tìm mẫu số chu
 > - **Bước 3:** Nhân cả tử và mẫu của mỗi phân số với thừa số phụ tương ứng.
 
 **Ví dụ 3:** Quy đồng mẫu số rồi thực hiện phép tính:
-$$\frac{5}{12} + \frac{7}{18}.$$
+$$\dfrac{5}{12} + \dfrac{7}{18}.$$
 
 <details>
 <summary><strong>Xem lời giải Ví dụ 3</strong></summary>
@@ -201,10 +201,10 @@ $$\frac{5}{12} + \frac{7}{18}.$$
 - **Bước 2:** Tìm thừa số phụ:
   $$36 : 12 = 3 \quad \text{và} \quad 36 : 18 = 2.$$
 - **Bước 3:** Quy đồng và tính:
-  $$\frac{5}{12} = \frac{5 \cdot 3}{12 \cdot 3} = \frac{15}{36}$$
-  $$\frac{7}{18} = \frac{7 \cdot 2}{18 \cdot 2} = \frac{14}{36}$$
+  $$\dfrac{5}{12} = \dfrac{5 \cdot 3}{12 \cdot 3} = \dfrac{15}{36}$$
+  $$\dfrac{7}{18} = \dfrac{7 \cdot 2}{18 \cdot 2} = \dfrac{14}{36}$$
   Vậy:
-  $$\frac{5}{12} + \frac{7}{18} = \frac{15}{36} + \frac{14}{36} = \frac{29}{36}.$$
+  $$\dfrac{5}{12} + \dfrac{7}{18} = \dfrac{15}{36} + \dfrac{14}{36} = \dfrac{29}{36}.$$
 
 </details>
 
@@ -373,8 +373,8 @@ $$288 \quad \text{và} \quad 384.$$
 
 #### Luyện tập 3.1
 Thực hiện phép tính:
-a) $\frac{7}{8} + \frac{5}{12};$
-b) $\frac{18}{24} - \frac{15}{30}.$
+a) $\dfrac{7}{8} + \dfrac{5}{12};$
+b) $\dfrac{18}{24} - \dfrac{15}{30}.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 3.1</strong></summary>
@@ -382,37 +382,37 @@ b) $\frac{18}{24} - \frac{15}{30}.$
 a) Mẫu chung là $\text{BCNN}(8, 12).$
 Ta có $8 = 2^3$ và $12 = 2^2 \cdot 3 \implies \text{BCNN}(8, 12) = 2^3 \cdot 3 = 24.$
 Thừa số phụ: $24 : 8 = 3$ và $24 : 12 = 2.$
-$$\frac{7}{8} + \frac{5}{12} = \frac{7 \cdot 3}{24} + \frac{5 \cdot 2}{24} = \frac{21}{24} + \frac{10}{24} = \frac{31}{24}.$$
+$$\dfrac{7}{8} + \dfrac{5}{12} = \dfrac{7 \cdot 3}{24} + \dfrac{5 \cdot 2}{24} = \dfrac{21}{24} + \dfrac{10}{24} = \dfrac{31}{24}.$$
 
 b) Rút gọn các phân số về tối giản trước khi tính:
-$$\frac{18}{24} = \frac{18 : 6}{24 : 6} = \frac{3}{4}$$
-$$\frac{15}{30} = \frac{15 : 15}{30 : 15} = \frac{1}{2}$$
+$$\dfrac{18}{24} = \dfrac{18 : 6}{24 : 6} = \dfrac{3}{4}$$
+$$\dfrac{15}{30} = \dfrac{15 : 15}{30 : 15} = \dfrac{1}{2}$$
 Mẫu chung là $\text{BCNN}(4, 2) = 4.$ Thừa số phụ của phân số thứ hai là $4 : 2 = 2.$
-$$\frac{18}{24} - \frac{15}{30} = \frac{3}{4} - \frac{1}{2} = \frac{3}{4} - \frac{2}{4} = \frac{1}{4}.$$
+$$\dfrac{18}{24} - \dfrac{15}{30} = \dfrac{3}{4} - \dfrac{1}{2} = \dfrac{3}{4} - \dfrac{2}{4} = \dfrac{1}{4}.$$
 
 </details>
 
 #### Luyện tập 3.2
 Thực hiện phép tính:
-a) $\frac{5}{6} + \frac{3}{8};$
-b) $\frac{24}{36} - \frac{15}{45}.$
+a) $\dfrac{5}{6} + \dfrac{3}{8};$
+b) $\dfrac{24}{36} - \dfrac{15}{45}.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 3.2</strong></summary>
 
 a) Mẫu chung là $\text{BCNN}(6, 8) = 24.$
 Thừa số phụ: $24 : 6 = 4$ và $24 : 8 = 3.$
-$$\frac{5}{6} + \frac{3}{8} = \frac{5 \cdot 4}{24} + \frac{3 \cdot 3}{24} = \frac{20}{24} + \frac{9}{24} = \frac{29}{24}.$$
+$$\dfrac{5}{6} + \dfrac{3}{8} = \dfrac{5 \cdot 4}{24} + \dfrac{3 \cdot 3}{24} = \dfrac{20}{24} + \dfrac{9}{24} = \dfrac{29}{24}.$$
 
 b) Rút gọn trước:
-$$\frac{24}{36} = \frac{2}{3} \quad \text{và} \quad \frac{15}{45} = \frac{1}{3}.$$
+$$\dfrac{24}{36} = \dfrac{2}{3} \quad \text{và} \quad \dfrac{15}{45} = \dfrac{1}{3}.$$
 Cả hai phân số đã cùng mẫu số là $3$:
-$$\frac{24}{36} - \frac{15}{45} = \frac{2}{3} - \frac{1}{3} = \frac{1}{3}.$$
+$$\dfrac{24}{36} - \dfrac{15}{45} = \dfrac{2}{3} - \dfrac{1}{3} = \dfrac{1}{3}.$$
 
 </details>
 
 #### Luyện tập 3.3
-Quy đồng mẫu hai phân số $\frac{7}{18}$ và $\frac{5}{12}.$
+Quy đồng mẫu hai phân số $\dfrac{7}{18}$ và $\dfrac{5}{12}.$
 
 <details>
 <summary><strong>Xem lời giải Luyện tập 3.3</strong></summary>
@@ -422,8 +422,8 @@ Ta có $18 = 2 \cdot 3^2$ và $12 = 2^2 \cdot 3 \implies \text{BCNN}(18, 12) = 2
 Thừa số phụ:
 $$36 : 18 = 2 \quad \text{và} \quad 36 : 12 = 3.$$
 Quy đồng mẫu hai phân số:
-$$\frac{7}{18} = \frac{7 \cdot 2}{18 \cdot 2} = \frac{14}{36}$$
-$$\frac{5}{12} = \frac{5 \cdot 3}{12 \cdot 3} = \frac{15}{36}.$$
+$$\dfrac{7}{18} = \dfrac{7 \cdot 2}{18 \cdot 2} = \dfrac{14}{36}$$
+$$\dfrac{5}{12} = \dfrac{5 \cdot 3}{12 \cdot 3} = \dfrac{15}{36}.$$
 
 </details>
 
@@ -566,16 +566,16 @@ Các bội chung nhỏ hơn $150$ là: $0;\; 56;\; 112.$
 </details>
 
 ### Bài 6
-Quy đồng mẫu hai phân số $\frac{5}{14}$ và $\frac{9}{21}.$
+Quy đồng mẫu hai phân số $\dfrac{5}{14}$ và $\dfrac{9}{21}.$
 
 <details>
 <summary><strong>Xem lời giải Bài 6</strong></summary>
 
-Rút gọn phân số thứ hai trước: $\frac{9}{21} = \frac{3}{7}.$
+Rút gọn phân số thứ hai trước: $\dfrac{9}{21} = \dfrac{3}{7}.$
 Mẫu chung là $\text{BCNN}(14, 7) = 14.$
 Thừa số phụ: $14 : 7 = 2.$
-$$\frac{9}{21} = \frac{3}{7} = \frac{3 \cdot 2}{7 \cdot 2} = \frac{6}{14}.$$
-Vậy hai phân số quy đồng được là $\frac{5}{14}$ và $\frac{6}{14}.$
+$$\dfrac{9}{21} = \dfrac{3}{7} = \dfrac{3 \cdot 2}{7 \cdot 2} = \dfrac{6}{14}.$$
+Vậy hai phân số quy đồng được là $\dfrac{5}{14}$ và $\dfrac{6}{14}.$
 
 </details>
 
@@ -670,7 +670,7 @@ explanation: '$\text{BCNN}(a, b) = 2^3 \cdot 3^2 = 8 \cdot 9 = 72.$'
 
 ```quiz
 type: choice
-question: 'Mẫu số chung nhỏ nhất khi quy đồng hai phân số $\frac{5}{8}$ và $\frac{7}{12}$ là:'
+question: 'Mẫu số chung nhỏ nhất khi quy đồng hai phân số $\dfrac{5}{8}$ và $\dfrac{7}{12}$ là:'
 options:
   - '16'
   - '24'
@@ -709,10 +709,10 @@ $8 = 2^3;\; 12 = 2^2 \cdot 3;\; 18 = 2 \cdot 3^2 \implies \text{BCNN}(8, 12, 18)
 Ta có $\text{BCNN}(6, 8) = 24.$ Các bội của $24$ là: $0;\; 24;\; 48;\; 72;\; 96;\; \dots$
 Vì $40 < x < 80$ nên $x \in \{48;\; 72\}.$
 
-**Câu 4.** Quy đồng mẫu rồi tính: $\frac{5}{12} + \frac{3}{16}$:
+**Câu 4.** Quy đồng mẫu rồi tính: $\dfrac{5}{12} + \dfrac{3}{16}$:
 Mẫu chung là $\text{BCNN}(12, 16) = 48.$
 Thừa số phụ: $48 : 12 = 4$ và $48 : 16 = 3.$
-$$\frac{5}{12} + \frac{3}{16} = \frac{5 \cdot 4}{48} + \frac{3 \cdot 3}{48} = \frac{20}{48} + \frac{9}{48} = \frac{29}{48}.$$
+$$\dfrac{5}{12} + \dfrac{3}{16} = \dfrac{5 \cdot 4}{48} + \dfrac{3 \cdot 3}{48} = \dfrac{20}{48} + \dfrac{9}{48} = \dfrac{29}{48}.$$
 
 **Câu 5.** Hai bạn An và Bình cùng chạy quanh một công viên. An chạy một vòng hết $12$ phút, Bình chạy một vòng hết $15$ phút. Hai bạn cùng xuất phát tại vạch xuất phát lúc $8$ giờ. Hỏi sau ít nhất bao nhiêu phút hai bạn lại cùng gặp nhau tại vạch xuất phát?
 *Giải:* Thời gian ít nhất để hai bạn gặp lại nhau tại vạch xuất phát là $\text{BCNN}(12, 15) = 60$ phút (tức sau $1$ giờ, lúc $9$ giờ sáng).

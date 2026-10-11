@@ -632,7 +632,7 @@ b) $B = (-2 + 4) + (-6 + 8) + (-10 + 12) + \dots + (-118 + 120).$
 
 - **b) Tính $B$:**  
   Xét các số trong dãy: $2, 4, 6, 8, \dots, 120$.  
-  Số lượng số hạng là: $\frac{120 - 2}{2} + 1 = 60$ số hạng.  
+  Số lượng số hạng là: $\dfrac{120 - 2}{2} + 1 = 60$ số hạng.  
   Số cặp ngoặc là: $60 : 2 = 30$ cặp.  
   Mỗi cặp có giá trị: $-2 + 4 = 2$.  
   Do đó:

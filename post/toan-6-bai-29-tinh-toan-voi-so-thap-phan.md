@@ -502,7 +502,7 @@ Kết quả đúng: $12{,}8 + 3{,}45 = 16{,}25.$
 ### Chuyên đề 1: Tính nhanh biểu thức chứa quy luật và phân phối nâng cao
 
 **Bài toán 1:** Tính giá trị biểu thức:
-$$P = \frac{0{,}4 \cdot 19{,}5 \cdot 2{,}5 + 0{,}2 \cdot 80{,}5 \cdot 5}{0{,}125 \cdot 4 \cdot 78{,}4 \cdot 2}.$$
+$$P = \dfrac{0{,}4 \cdot 19{,}5 \cdot 2{,}5 + 0{,}2 \cdot 80{,}5 \cdot 5}{0{,}125 \cdot 4 \cdot 78{,}4 \cdot 2}.$$
 
 **Lời giải chi tiết:**
 - Xét tử số:
@@ -512,7 +512,7 @@ $$P = \frac{0{,}4 \cdot 19{,}5 \cdot 2{,}5 + 0{,}2 \cdot 80{,}5 \cdot 5}{0{,}125
 - Xét mẫu số:
   - Ta nhóm: $(0{,}125 \cdot 4 \cdot 2) \cdot 78{,}4 = (0{,}125 \cdot 8) \cdot 78{,}4 = 1 \cdot 78{,}4 = 78{,}4.$
 - Phép chia:
-$$P = \frac{100}{78{,}4} = \frac{1\,000}{784} = \frac{125}{98}.$$
+$$P = \dfrac{100}{78{,}4} = \dfrac{1\,000}{784} = \dfrac{125}{98}.$$
 
 ---
 
@@ -847,6 +847,6 @@ $$S = 1{,}2 + 2{,}3 + 3{,}4 + \dots + 8{,}9.$$
 - **Bài 4 (1.0 điểm):**
   - Dãy số gồm $8$ số hạng: $1{,}2;\; 2{,}3;\; 3{,}4;\; 4{,}5;\; 5{,}6;\; 6{,}7;\; 7{,}8;\; 8{,}9.$
   - Tách phần nguyên và phần thập phân:
-    - Tổng phần nguyên: $1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = \frac{(1 + 8) \cdot 8}{2} = 36.$
-    - Tổng phần thập phân: $0{,}2 + 0{,}3 + \dots + 0{,}9 = 0{,}1 \cdot (2 + 3 + \dots + 9) = 0{,}1 \cdot \frac{(2 + 9) \cdot 8}{2} = 0{,}1 \cdot 44 = 4{,}4.$
+    - Tổng phần nguyên: $1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = \dfrac{(1 + 8) \cdot 8}{2} = 36.$
+    - Tổng phần thập phân: $0{,}2 + 0{,}3 + \dots + 0{,}9 = 0{,}1 \cdot (2 + 3 + \dots + 9) = 0{,}1 \cdot \dfrac{(2 + 9) \cdot 8}{2} = 0{,}1 \cdot 44 = 4{,}4.$
   - Vậy tổng $S = 36 + 4{,}4 = 40{,}4.$ *(1.0 điểm)*

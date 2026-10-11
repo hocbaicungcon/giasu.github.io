@@ -107,7 +107,7 @@ explanation: 'Ba đường chéo chính cùng đi qua tâm của lục giác đ�
 > - **Bốn góc bằng nhau và bằng $90^\circ$ (bốn góc vuông):** $\widehat{A} = \widehat{B} = \widehat{C} = \widehat{D} = 90^\circ.$
 > - **Hai đường chéo bằng nhau:** $AC = BD.$
 > - **Hai đường chéo cắt nhau tại trung điểm của mỗi đường và vuông góc với nhau tại điểm $O$:**
->   $$OA = OB = OC = OD = \frac{AC}{2} = \frac{BD}{2};\quad AC \perp BD.$$
+>   $$OA = OB = OC = OD = \dfrac{AC}{2} = \dfrac{BD}{2};\quad AC \perp BD.$$
 
 <div style="text-align: center; margin: 20px 0;">
 <svg width="220" height="220" viewBox="0 0 220 220" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;">
@@ -220,7 +220,7 @@ Cho lục giác đều $MNPQRS$ có tâm là điểm $O$.
 
 **Phương pháp giải:**
 - Chu vi tam giác đều cạnh $a$: $C = 3a \implies a = C : 3.$
-- Chu vi hình vuông cạnh $a$: $C = 4a \implies a = C : 4.$ Đường chéo cắt nhau tại trung điểm nên $OA = \frac{1}{2}AC.$
+- Chu vi hình vuông cạnh $a$: $C = 4a \implies a = C : 4.$ Đường chéo cắt nhau tại trung điểm nên $OA = \dfrac{1}{2}AC.$
 - Chu vi lục giác đều cạnh $a$: $C = 6a \implies a = C : 6.$ Độ dài đường chéo chính: $d = 2a.$
 
 #### Bài toán 2.1
@@ -235,7 +235,7 @@ Cho lục giác đều $MNPQRS$ có tâm là điểm $O$.
 2. Trong hình vuông $MNPQ$:
    - Hai đường chéo bằng nhau nên: $NQ = MP = 16\text{ cm}.$
    - Hai đường chéo cắt nhau tại trung điểm $I$ nên:
-     $$IM = \frac{MP}{2} = \frac{16}{2} = 8\text{ (cm)}.$$
+     $$IM = \dfrac{MP}{2} = \dfrac{16}{2} = 8\text{ (cm)}.$$
    - Hai đường chéo vuông góc với nhau tại $I$ nên số đo góc $\widehat{MIN} = 90^\circ.$
 
 3. Lục giác đều có sáu cạnh bằng nhau nên độ dài mỗi cạnh là:
@@ -371,7 +371,7 @@ $$\widehat{D} = \widehat{E} = \widehat{F} = 60^\circ.$$
    $$a = 32 : 4 = 8\text{ (cm)}.$$
 2. Trong hình vuông $ABCD$, hai đường chéo bằng nhau nên $BD = AC = 11.3\text{ cm}$.
    Giao điểm $O$ là trung điểm của $BD$ nên:
-   $$OB = \frac{BD}{2} = \frac{11.3}{2} = 5.65\text{ (cm)}.$$
+   $$OB = \dfrac{BD}{2} = \dfrac{11.3}{2} = 5.65\text{ (cm)}.$$
 
 **Bài 4.**
 1. Độ dài đường chéo chính của lục giác đều gấp đôi độ dài cạnh. Do đó độ dài mỗi cạnh là:
@@ -517,7 +517,7 @@ Cho một lưới ô vuông kích thước $4 \times 4$ gồm $16$ ô vuông nh�
 2. **Công thức tổng quát:**
    Trong lưới ô vuông kích thước $n \times n$, số hình vuông có cạnh $k$ ($1 \le k \le n$) là $(n - k + 1)^2$.
    Do đó tổng số hình vuông là:
-   $$S_n = 1^2 + 2^2 + 3^2 + \dots + n^2 = \frac{n(n + 1)(2n + 1)}{6}.$$
+   $$S_n = 1^2 + 2^2 + 3^2 + \dots + n^2 = \dfrac{n(n + 1)(2n + 1)}{6}.$$
 
 ---
 
@@ -539,8 +539,8 @@ Một lục giác đều có $6$ đỉnh.
 
 2. **Công thức tổng quát cho đa giác $n$ đỉnh ($n \ge 3$):**
    Mỗi đỉnh nối với $(n - 3)$ đỉnh không kề để tạo thành đường chéo. Có $n$ đỉnh, mỗi đường tính hai lần nên:
-   $$\text{Số đường chéo} = \frac{n(n - 3)}{2}.$$
-   *(Kiểm tra: với lục giác $n = 6 \implies \frac{6(6 - 3)}{2} = \frac{18}{2} = 9$ đường chéo; với hình vuông $n = 4 \implies \frac{4(4 - 3)}{2} = 2$ đường chéo).*
+   $$\text{Số đường chéo} = \dfrac{n(n - 3)}{2}.$$
+   *(Kiểm tra: với lục giác $n = 6 \implies \dfrac{6(6 - 3)}{2} = \dfrac{18}{2} = 9$ đường chéo; với hình vuông $n = 4 \implies \dfrac{4(4 - 3)}{2} = 2$ đường chéo).*
 
 ---
 

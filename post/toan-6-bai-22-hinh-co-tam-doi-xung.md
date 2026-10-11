@@ -205,10 +205,10 @@ Trong các biển báo giao thông dưới đây, biển báo nào có tâm đ�
 
 **Phương pháp giải:**
 - Để xác định tâm đối xứng:
-  - Đoạn thẳng: Xác định trung điểm $O$ ($OA = OB = \frac{AB}{2}$).
+  - Đoạn thẳng: Xác định trung điểm $O$ ($OA = OB = \dfrac{AB}{2}$).
   - Tứ giác (hình bình hành, chữ nhật, thoi, vuông): Nối hai đường chéo, giao điểm $O$ là tâm đối xứng.
 - Khoảng cách từ tâm đối xứng đến đỉnh bằng một nửa độ dài đường chéo đi qua đỉnh đó:
-  $$OA = \frac{AC}{2};\quad OB = \frac{BD}{2}.$$
+  $$OA = \dfrac{AC}{2};\quad OB = \dfrac{BD}{2}.$$
 
 #### Bài toán 2.1
 1. Cho hình chữ nhật $ABCD$ có đường chéo $AC = 14\text{ cm}$. Xác định tâm đối xứng $O$ của hình chữ nhật và tính khoảng cách từ $O$ đến mỗi đỉnh của hình chữ nhật đó.
@@ -221,12 +221,12 @@ Trong các biển báo giao thông dưới đây, biển báo nào có tâm đ�
 - Tâm đối xứng của hình chữ nhật $ABCD$ là giao điểm $O$ của hai đường chéo $AC$ và $BD$.
 - Hai đường chéo hình chữ nhật bằng nhau nên $BD = AC = 14\text{ cm}$.
 - Khoảng cách từ tâm $O$ đến bốn đỉnh là bằng nhau:
-  $$OA = OB = OC = OD = \frac{AC}{2} = \frac{14}{2} = 7\text{ (cm)}.$$
+  $$OA = OB = OC = OD = \dfrac{AC}{2} = \dfrac{14}{2} = 7\text{ (cm)}.$$
 
 2. 
 - Giao điểm $I$ của hai đường chéo chính là **tâm đối xứng** của hình thoi $MNPQ$.
 - Hai đường chéo cắt nhau tại trung điểm của mỗi đường nên:
-  $$IM = \frac{MP}{2} = \frac{16}{2} = 8\text{ (cm)};\quad IN = \frac{NQ}{2} = \frac{12}{2} = 6\text{ (cm)}.$$
+  $$IM = \dfrac{MP}{2} = \dfrac{16}{2} = 8\text{ (cm)};\quad IN = \dfrac{NQ}{2} = \dfrac{12}{2} = 6\text{ (cm)}.$$
 
 ---
 
@@ -327,7 +327,7 @@ Cho góc nhọn $\widehat{xOy}$ và một điểm $A$ nằm trong góc. Nêu cá
 **Bài 3.**
 1. Tâm đối xứng của lục giác đều là tâm $O$ (giao điểm của ba đường chéo chính).
 2. Điểm $O$ là trung điểm của đường chéo chính $AD$, nên khoảng cách từ $O$ đến đỉnh $A$ là:
-   $$OA = \frac{AD}{2} = \frac{12}{2} = 6\text{ (cm)}.$$
+   $$OA = \dfrac{AD}{2} = \dfrac{12}{2} = 6\text{ (cm)}.$$
    Vì lục giác đều nên khoảng cách từ $O$ đến cả sáu đỉnh đều bằng nhau:
    $$OA = OB = OC = OD = OE = OF = 6\text{ (cm)}.$$
 
@@ -338,7 +338,7 @@ Bạn Hoa nói **sai**.
 **Bài 5.**
 - Tâm đối xứng $I$ của đoạn thẳng $MN$ là trung điểm của $MN$.
 - Độ dài đoạn thẳng $IM$ là:
-  $$IM = \frac{MN}{2} = \frac{9}{2} = 4.5\text{ (cm)}.$$
+  $$IM = \dfrac{MN}{2} = \dfrac{9}{2} = 4.5\text{ (cm)}.$$
 
 **Bài 6.**
 - Các chữ cái có tâm đối xứng là: **H, N, O, I**. (Chữ A không có tâm đối xứng).
@@ -517,7 +517,7 @@ Một đường thẳng $d$ bất kỳ đi qua tâm đối xứng $O$ của hìn
   - Nửa mặt phẳng thứ nhất của hình bình hành bị biến thành nửa mặt phẳng thứ hai.
 - Phép quay $180^\circ$ là một phép dời hình, bảo toàn hoàn toàn kích thước và diện tích.
 - Do đó, hai phần hình thu được hoàn toàn bằng nhau và có diện tích bằng nhau:
-  $$S_1 = S_2 = \frac{1}{2} S_{ABCD}.$$
+  $$S_1 = S_2 = \dfrac{1}{2} S_{ABCD}.$$
   *(Tính chất này ứng dụng rất phổ biến trong bài toán chia đều mảnh đất hình bình hành hoặc hình chữ nhật cho hai hộ gia đình bằng một nhát rào thẳng qua tâm)*. $\blacksquare$
 
 ---
