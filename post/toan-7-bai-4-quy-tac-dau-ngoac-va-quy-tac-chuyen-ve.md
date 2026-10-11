@@ -32,19 +32,19 @@ Bài học hôm nay sẽ giúp các em nắm vững quy luật, tránh xa các b
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px;">
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #1d4ed8;">1. Thứ tự thực hiện phép tính</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Không ngoặc: Lũy thừa $\to$ Nhân/Chia $\to$ Cộng/Trừ.<br>• Có ngoặc: $(\dots) \to [\dots] \to \{\dots\}$.<br>• Cùng mức ưu tiên: thực hiện từ trái sang phải.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Không ngoặc: Lũy thừa $\to$ Nhân/Chia $\to$ Cộng/Trừ.<br>• Có ngoặc: $(\dots) \to [\dots] \to \{\dots\}$.<br>• Cùng mức ưu tiên: thực hiện từ trái sang phải.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #047857;">2. Quy tắc dấu ngoặc</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Trước dấu $+$: giữ nguyên mọi dấu bên trong.<br>• Trước dấu $-$: đổi dấu tất cả số hạng ($+ \leftrightarrow -$).<br>• Đặt ngoặc: đặt dấu $-$ ra ngoài phải đổi dấu bên trong.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Trước dấu $+$: giữ nguyên mọi dấu bên trong.<br>• Trước dấu $-$: đổi dấu tất cả số hạng ($+ \leftrightarrow -$).<br>• Đặt ngoặc: đặt dấu $-$ ra ngoài phải đổi dấu bên trong.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #f59e0b; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #b45309;">3. Quy tắc chuyển vế</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Chuyển vế thì đổi dấu: $A + B = C \iff A = C - B$.<br>• Dạng trừ: $A - B = C \iff A = C + B$.<br>• Tích bằng $0$: $A \cdot B = 0 \iff A = 0$ hoặc $B = 0$.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Chuyển vế thì đổi dấu: $A + B = C \iff A = C - B$.<br>• Dạng trừ: $A - B = C \iff A = C + B$.<br>• Tích bằng $0$: $A \cdot B = 0 \iff A = 0$ hoặc $B = 0$.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #8b5cf6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #6d28d9;">4. Tư duy Olympic nâng cao</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Phá ngoặc thu gọn nhiều biến lồng nhau.<br>• Bất đẳng thức $|a| + |b| \ge |a + b|$ tìm GTNN.<br>• Phương trình nghiệm nguyên dạng tích $A(x) \cdot B(y) = k$.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Phá ngoặc thu gọn nhiều biến lồng nhau.<br>• Bất đẳng thức $|a| + |b| \ge |a + b|$ tìm GTNN.<br>• Phương trình nghiệm nguyên dạng tích $A(x) \cdot B(y) = k$.</p>
     </div>
   </div>
 </div>
@@ -117,7 +117,7 @@ Hãy khởi động cùng $5$ câu hỏi kiểm tra kỹ năng thứ tự phép 
 >    Ngoặc tròn $(\dots) \longrightarrow$ Ngoặc vuông $[\dots] \longrightarrow$ Ngoặc nhọn $\{\dots\}$.
 
 **Ví dụ 1:** Tính giá trị các biểu thức sau:
-- a) $A = 3^2 - 4 \cdot \dfrac{1}{2} + \left(-\dfrac{2}{3}\right)^2$.
+- a) $A = 3^2 - 4 \cdot \frac{1}{2} + \left(-\frac{2}{3}\right)^2$.
 - b) $B = 8 - \left[5 - \left(3 - 7\right)\right]$.
 
 *Lời giải:*
@@ -173,13 +173,13 @@ Nếu tích của nhiều số hữu tỉ bằng $0$ thì ít nhất một trong
 $$A \cdot B = 0 \iff A = 0 \quad \text{hay} \quad B = 0.$$
 
 **Ví dụ 3:** Tìm số hữu tỉ $x$ biết:
-- a) $x + \dfrac{3}{7} = \dfrac{-2}{5}$.
-- b) $\dfrac{1}{3} - 2x = \dfrac{5}{6}$.
+- a) $x + \frac{3}{7} = \frac{-2}{5}$.
+- b) $\frac{1}{3} - 2x = \frac{5}{6}$.
 
 *Lời giải:*
-- a) Chuyển $+\dfrac{3}{7}$ sang vế phải và đổi dấu thành $-\dfrac{3}{7}$:
+- a) Chuyển $+\frac{3}{7}$ sang vế phải và đổi dấu thành $-\frac{3}{7}$:
   $$x = \dfrac{-2}{5} - \dfrac{3}{7} = \dfrac{-14 - 15}{35} = \dfrac{-29}{35}.$$
-- b) Chuyển $-2x$ sang vế phải để thành dương, chuyển $\dfrac{5}{6}$ sang vế trái:
+- b) Chuyển $-2x$ sang vế phải để thành dương, chuyển $\frac{5}{6}$ sang vế trái:
   $$2x = \dfrac{1}{3} - \dfrac{5}{6} = \dfrac{2}{6} - \dfrac{5}{6} = \dfrac{-3}{6} = \dfrac{-1}{2}.$$
   Tìm $x$:
   $$x = \dfrac{-1}{2} : 2 = \dfrac{-1}{4}.$$
@@ -193,8 +193,8 @@ $$A \cdot B = 0 \iff A = 0 \quad \text{hay} \quad B = 0.$$
 >    - Viết $10 - (4 - 7) = 10 - 4 - 7$ là **SAI HOÀN TOÀN**!
 >    - Đúng phải là: $10 - (4 - 7) = 10 - 4 + 7 = 13$.
 > 2. **Chuyển vế quên đổi dấu:**
->    - $x - \dfrac{2}{5} = \dfrac{1}{3} \implies x = \dfrac{1}{3} - \dfrac{2}{5}$ (SAI).
->    - Đúng phải là: $x = \dfrac{1}{3} + \dfrac{2}{5}$.
+>    - $x - \frac{2}{5} = \frac{1}{3} \implies x = \frac{1}{3} - \frac{2}{5}$ (SAI).
+>    - Đúng phải là: $x = \frac{1}{3} + \frac{2}{5}$.
 > 3. **Nhầm lẫn thứ tự nhân chia trước cộng trừ:**
 >    - Biểu thức $2 + 3 \cdot 4$: Rất nhiều bạn lấy $2 + 3 = 5$ rồi $5 \cdot 4 = 20$ (SAI).
 >    - Đúng phải nhân trước: $2 + 12 = 14$.
@@ -256,13 +256,13 @@ $$Q = \dfrac{-5}{7} + 1 = \dfrac{-5}{7} + \dfrac{7}{7} = \dfrac{2}{7}.$$
 - Đưa về dạng $a \cdot x = b \implies x = b : a$ ($a \ne 0$).
 
 **Bài 3.1:** Tìm số hữu tỉ $x$ biết:
-- a) $\dfrac{3}{4} - \left(x + \dfrac{1}{2}\right) = \dfrac{-5}{6}$.
-- b) $\dfrac{2}{3}x - \dfrac{1}{4} = \dfrac{5}{12} + \dfrac{1}{6}x$.
+- a) $\frac{3}{4} - \left(x + \frac{1}{2}\right) = \frac{-5}{6}$.
+- b) $\frac{2}{3}x - \frac{1}{4} = \frac{5}{12} + \frac{1}{6}x$.
 
 *Lời giải:*
 - a) Phá ngoặc ở vế trái:
   $$\dfrac{3}{4} - x - \dfrac{1}{2} = \dfrac{-5}{6}$$
-  Chuyển $-x$ sang vế phải và $\dfrac{-5}{6}$ sang vế trái:
+  Chuyển $-x$ sang vế phải và $\frac{-5}{6}$ sang vế trái:
   $$x = \dfrac{3}{4} - \dfrac{1}{2} + \dfrac{5}{6}$$
   Quy đồng mẫu số chung là $12$:
   $$x = \dfrac{9 - 6 + 10}{12} = \dfrac{13}{12}.$$
@@ -283,28 +283,28 @@ $$Q = \dfrac{-5}{7} + 1 = \dfrac{-5}{7} + \dfrac{7}{7} = \dfrac{2}{7}.$$
 - Dạng $|A(x)| = k$ ($k \ge 0$): $A(x) = k$ hoặc $A(x) = -k$.
 
 **Bài 4.1:** Tìm $x$ biết:
-- a) $\left(\dfrac{3}{5}x - \dfrac{2}{3}\right)\left(x + \dfrac{4}{7}\right) = 0$.
-- b) $\left|x - \dfrac{3}{4}\right| - \dfrac{1}{2} = \dfrac{1}{3}$.
+- a) $\left(\frac{3}{5}x - \frac{2}{3}\right)\left(x + \frac{4}{7}\right) = 0$.
+- b) $\left|x - \frac{3}{4}\right| - \frac{1}{2} = \frac{1}{3}$.
 
 *Lời giải:*
 - a) Xét hai trường hợp:
-  - TH1: $\dfrac{3}{5}x - \dfrac{2}{3} = 0 \iff \dfrac{3}{5}x = \dfrac{2}{3} \iff x = \dfrac{2}{3} : \dfrac{3}{5} = \dfrac{10}{9}$.
-  - TH2: $x + \dfrac{4}{7} = 0 \iff x = -\dfrac{4}{7}$.
-  Vậy $x \in \left\{-\dfrac{4}{7}; \dfrac{10}{9}\right\}$.
+  - TH1: $\frac{3}{5}x - \frac{2}{3} = 0 \iff \frac{3}{5}x = \frac{2}{3} \iff x = \frac{2}{3} : \frac{3}{5} = \frac{10}{9}$.
+  - TH2: $x + \frac{4}{7} = 0 \iff x = -\frac{4}{7}$.
+  Vậy $x \in \left\{-\frac{4}{7}; \frac{10}{9}\right\}$.
 - b) Chuyển vế:
   $$\left|x - \dfrac{3}{4}\right| = \dfrac{1}{3} + \dfrac{1}{2} = \dfrac{5}{6}.$$
-  Vì $\dfrac{5}{6} > 0$, ta có hai trường hợp:
-  - TH1: $x - \dfrac{3}{4} = \dfrac{5}{6} \iff x = \dfrac{5}{6} + \dfrac{3}{4} = \dfrac{10 + 9}{12} = \dfrac{19}{12}$.
-  - TH2: $x - \dfrac{3}{4} = -\dfrac{5}{6} \iff x = -\dfrac{5}{6} + \dfrac{3}{4} = \dfrac{-10 + 9}{12} = \dfrac{-1}{12}$.
-  Vậy $x \in \left\{\dfrac{-1}{12}; \dfrac{19}{12}\right\}$.
+  Vì $\frac{5}{6} > 0$, ta có hai trường hợp:
+  - TH1: $x - \frac{3}{4} = \frac{5}{6} \iff x = \frac{5}{6} + \frac{3}{4} = \frac{10 + 9}{12} = \frac{19}{12}$.
+  - TH2: $x - \frac{3}{4} = -\frac{5}{6} \iff x = -\frac{5}{6} + \frac{3}{4} = \frac{-10 + 9}{12} = \frac{-1}{12}$.
+  Vậy $x \in \left\{\frac{-1}{12}; \frac{19}{12}\right\}$.
 
 ---
 
 ### Dạng 5: Bài toán thực tế liên môn
 
 **Bài 5.1:** Một dự án làm đường giao thông nông thôn dự kiến thi công trong $3$ giai đoạn:
-- Giai đoạn $1$: Làm được $\dfrac{1}{3}$ tổng chiều dài tuyến đường.
-- Giai đoạn $2$: Làm được $\dfrac{2}{5}$ chiều dài đoạn đường còn lại.
+- Giai đoạn $1$: Làm được $\frac{1}{3}$ tổng chiều dài tuyến đường.
+- Giai đoạn $2$: Làm được $\frac{2}{5}$ chiều dài đoạn đường còn lại.
 - Giai đoạn $3$: Thi công nốt $24\text{ km}$ đường cuối cùng.
 1. Tính tổng chiều dài toàn bộ tuyến đường giao thông đó.
 2. Tính chiều dài đoạn đường đã làm ở giai đoạn $1$ và giai đoạn $2$.
@@ -320,8 +320,8 @@ $$Q = \dfrac{-5}{7} + 1 = \dfrac{-5}{7} + \dfrac{7}{7} = \dfrac{2}{7}.$$
    - Tổng chiều dài toàn bộ tuyến đường là:
      $$24 : \dfrac{2}{5} = 24 \cdot \dfrac{5}{2} = 60\text{ km}.$$
 2. Chiều dài đoạn đường ở từng giai đoạn:
-   - Giai đoạn $1$: $60 \cdot \dfrac{1}{3} = 20\text{ km}$.
-   - Giai đoạn $2$: $60 \cdot \dfrac{4}{15} = 16\text{ km}$.
+   - Giai đoạn $1$: $60 \cdot \frac{1}{3} = 20\text{ km}$.
+   - Giai đoạn $2$: $60 \cdot \frac{4}{15} = 16\text{ km}$.
 
 ---
 
@@ -416,7 +416,7 @@ Hai điểm $x = -2$ và $x = 1$ chia trục số thành $3$ khoảng:
 - **Khoảng 1 ($x < -2$):**
   Ta có $x - 1 < 0$ và $2x + 4 < 0$. Khi đó:
   $$-(x - 1) - (2x + 4) = 5 \iff -x + 1 - 2x - 4 = 5 \iff -3x - 3 = 5 \iff -3x = 8 \iff x = -\dfrac{8}{3}.$$
-  Vì $-\dfrac{8}{3} \approx -2{,}67 < -2$ (thỏa mãn khoảng xét).
+  Vì $-\frac{8}{3} \approx -2{,}67 < -2$ (thỏa mãn khoảng xét).
 - **Khoảng 2 ($-2 \le x < 1$):**
   Ta có $x - 1 < 0$ và $2x + 4 \ge 0$. Khi đó:
   $$-(x - 1) + (2x + 4) = 5 \iff -x + 1 + 2x + 4 = 5 \iff x + 5 = 5 \iff x = 0.$$
@@ -424,9 +424,9 @@ Hai điểm $x = -2$ và $x = 1$ chia trục số thành $3$ khoảng:
 - **Khoảng 3 ($x \ge 1$):**
   Ta có $x - 1 \ge 0$ và $2x + 4 > 0$. Khi đó:
   $$(x - 1) + (2x + 4) = 5 \iff 3x + 3 = 5 \iff 3x = 2 \iff x = \dfrac{2}{3}.$$
-  Vì $\dfrac{2}{3} < 1$ (loại, không thỏa mãn khoảng $x \ge 1$).
+  Vì $\frac{2}{3} < 1$ (loại, không thỏa mãn khoảng $x \ge 1$).
 
-*Kết luận:* Phương trình có hai nghiệm: $x = -\dfrac{8}{3}$ hoặc $x = 0$.
+*Kết luận:* Phương trình có hai nghiệm: $x = -\frac{8}{3}$ hoặc $x = 0$.
 
 ---
 
@@ -442,8 +442,8 @@ $$M = \dfrac{\dfrac{3}{4} - \dfrac{3}{11} + \dfrac{3}{13}}{\dfrac{5}{4} - \dfrac
   Đặt $3$ làm thừa số chung ở tử và $5$ làm thừa số chung ở mẫu:
   $$A_1 = \dfrac{3 \cdot \left(\dfrac{1}{4} - \dfrac{1}{11} + \dfrac{1}{13}\right)}{5 \cdot \left(\dfrac{1}{4} - \dfrac{1}{11} + \dfrac{1}{13}\right)} = \dfrac{3}{5}.$$
 - Xét phân thức thứ hai:
-  Ở mẫu số, ta thấy $\dfrac{5}{4} = \dfrac{5}{2} \cdot \dfrac{1}{2}$; $\dfrac{5}{6} = \dfrac{5}{2} \cdot \dfrac{1}{3}$; $\dfrac{5}{8} = \dfrac{5}{2} \cdot \dfrac{1}{4}$.
-  Đặt $\dfrac{5}{2}$ làm thừa số chung ở mẫu số:
+  Ở mẫu số, ta thấy $\frac{5}{4} = \frac{5}{2} \cdot \frac{1}{2}$; $\frac{5}{6} = \frac{5}{2} \cdot \frac{1}{3}$; $\frac{5}{8} = \frac{5}{2} \cdot \frac{1}{4}$.
+  Đặt $\frac{5}{2}$ làm thừa số chung ở mẫu số:
   $$A_2 = \dfrac{\dfrac{1}{2} - \dfrac{1}{3} + \dfrac{1}{4}}{\dfrac{5}{2} \cdot \left(\dfrac{1}{2} - \dfrac{1}{3} + \dfrac{1}{4}\right)} = \dfrac{1}{\dfrac{5}{2}} = \dfrac{2}{5}.$$
 - Tổng giá trị:
   $$M = A_1 + A_2 = \dfrac{3}{5} + \dfrac{2}{5} = \dfrac{5}{5} = 1.$$
@@ -491,26 +491,26 @@ explanation: 'Lũy thừa trước: $2^2 = 4$. Nhân: $3 \cdot 4 = 12$. Trừ: $
 
 ```quiz
 type: choice
-question: 'Tìm $x$ biết $x - \dfrac{3}{5} = \dfrac{1}{2}$:'
+question: 'Tìm $x$ biết $x - \frac{3}{5} = \frac{1}{2}$:'
 options:
-  - '$\dfrac{-1}{10}$'
-  - '$\dfrac{11}{10}$'
-  - '$\dfrac{1}{10}$'
-  - '$\dfrac{-11}{10}$'
+  - '$\frac{-1}{10}$'
+  - '$\frac{11}{10}$'
+  - '$\frac{1}{10}$'
+  - '$\frac{-11}{10}$'
 answer: 2
-explanation: 'Chuyển vế: $x = \dfrac{1}{2} + \dfrac{3}{5} = \dfrac{5 + 6}{10} = \dfrac{11}{10}$.'
+explanation: 'Chuyển vế: $x = \frac{1}{2} + \frac{3}{5} = \frac{5 + 6}{10} = \frac{11}{10}$.'
 ```
 
 ```quiz
 type: choice
-question: 'Tính nhanh biểu thức $\left(\dfrac{5}{7} - \dfrac{2}{3}\right) + \left(\dfrac{2}{7} + \dfrac{2}{3}\right)$:'
+question: 'Tính nhanh biểu thức $\left(\frac{5}{7} - \frac{2}{3}\right) + \left(\frac{2}{7} + \frac{2}{3}\right)$:'
 options:
   - '$0$'
   - '$1$'
-  - '$\dfrac{4}{3}$'
-  - '$\dfrac{7}{3}$'
+  - '$\frac{4}{3}$'
+  - '$\frac{7}{3}$'
 answer: 2
-explanation: 'Phá ngoặc: $\left(\dfrac{5}{7} + \dfrac{2}{7}\right) + \left(-\dfrac{2}{3} + \dfrac{2}{3}\right) = 1 + 0 = 1$.'
+explanation: 'Phá ngoặc: $\left(\frac{5}{7} + \frac{2}{7}\right) + \left(-\frac{2}{3} + \frac{2}{3}\right) = 1 + 0 = 1$.'
 ```
 
 ```quiz
@@ -527,14 +527,14 @@ explanation: 'Trong ngoặc tròn: $5 - 3 = 2$. Lũy thừa: $2^3 = 8$. Trong ng
 
 ```quiz
 type: choice
-question: 'Số nghiệm của phương trình $\left(x - \dfrac{1}{4}\right)\left(2x + \dfrac{3}{5}\right) = 0$ là:'
+question: 'Số nghiệm của phương trình $\left(x - \frac{1}{4}\right)\left(2x + \frac{3}{5}\right) = 0$ là:'
 options:
   - '$0$'
   - '$1$'
   - '$2$'
   - 'Vô số'
 answer: 3
-explanation: 'Phương trình tích có 2 nghiệm: $x = \dfrac{1}{4}$ hoặc $x = -\dfrac{3}{10}$.'
+explanation: 'Phương trình tích có 2 nghiệm: $x = \frac{1}{4}$ hoặc $x = -\frac{3}{10}$.'
 ```
 
 ```quiz
@@ -551,14 +551,14 @@ explanation: 'Vì $|x - 3| \ge 0$ nên $A \ge 0 + 5 = 5$. Dấu bằng đạt đ
 
 ```quiz
 type: choice
-question: 'Tìm $x$ biết $\dfrac{1}{2} - 3x = \dfrac{5}{4}$:'
+question: 'Tìm $x$ biết $\frac{1}{2} - 3x = \frac{5}{4}$:'
 options:
-  - '$\dfrac{-1}{4}$'
-  - '$\dfrac{1}{4}$'
-  - '$\dfrac{-7}{12}$'
-  - '$\dfrac{7}{12}$'
+  - '$\frac{-1}{4}$'
+  - '$\frac{1}{4}$'
+  - '$\frac{-7}{12}$'
+  - '$\frac{7}{12}$'
 answer: 1
-explanation: 'Chuyển vế: $3x = \dfrac{1}{2} - \dfrac{5}{4} = \dfrac{-3}{4} \implies x = \dfrac{-3}{4} : 3 = \dfrac{-1}{4}$.'
+explanation: 'Chuyển vế: $3x = \frac{1}{2} - \frac{5}{4} = \frac{-3}{4} \implies x = \frac{-3}{4} : 3 = \frac{-1}{4}$.'
 ```
 
 ```quiz
@@ -579,43 +579,43 @@ explanation: 'Quy tắc chuyển vế: khi chuyển $-b$ sang vế phải thì �
 
 ### Bài 1. Thực hiện phép tính đúng thứ tự
 Tính giá trị các biểu thức:
-- a) $A = \dfrac{2}{3} + \dfrac{3}{4} \cdot \left(-\dfrac{4}{9}\right)$;
-- b) $B = \left(\dfrac{1}{2}\right)^2 - \dfrac{3}{8} : \dfrac{-9}{4}$;
-- c) $C = 2^3 - 3 \cdot \left(\dfrac{1}{3}\right)^2 + \left(-\dfrac{1}{2}\right)^0$.
+- a) $A = \frac{2}{3} + \frac{3}{4} \cdot \left(-\frac{4}{9}\right)$;
+- b) $B = \left(\frac{1}{2}\right)^2 - \frac{3}{8} : \frac{-9}{4}$;
+- c) $C = 2^3 - 3 \cdot \left(\frac{1}{3}\right)^2 + \left(-\frac{1}{2}\right)^0$.
 
 ### Bài 2. Biểu thức chứa nhiều dấu ngoặc
 Tính giá trị các biểu thức:
 - a) $M = 15 - \left[4 + \left(3 - 2^2\right)\right]$;
-- b) $N = \dfrac{5}{6} - \left[\dfrac{1}{3} - \left(\dfrac{1}{4} - \dfrac{2}{3}\right)\right]$;
+- b) $N = \frac{5}{6} - \left[\frac{1}{3} - \left(\frac{1}{4} - \frac{2}{3}\right)\right]$;
 - c) $P = 2 \cdot \left\{\left[3 \cdot (4 - 2)^2 + 10\right] : 11\right\}$.
 
 ### Bài 3. Tính nhanh bằng quy tắc bỏ dấu ngoặc
 Tính hợp lý:
-- a) $\left(\dfrac{7}{12} - \dfrac{3}{4}\right) + \left(\dfrac{5}{12} + \dfrac{3}{4}\right)$;
-- b) $\left(5 - \dfrac{2}{3} + \dfrac{1}{4}\right) - \left(2 + \dfrac{1}{3} - \dfrac{3}{4}\right) - \left(1 - \dfrac{4}{3}\right)$;
-- c) $\dfrac{13}{25} \cdot \dfrac{-8}{9} + \dfrac{13}{25} \cdot \dfrac{-1}{9}$.
+- a) $\left(\frac{7}{12} - \frac{3}{4}\right) + \left(\frac{5}{12} + \frac{3}{4}\right)$;
+- b) $\left(5 - \frac{2}{3} + \frac{1}{4}\right) - \left(2 + \frac{1}{3} - \frac{3}{4}\right) - \left(1 - \frac{4}{3}\right)$;
+- c) $\frac{13}{25} \cdot \frac{-8}{9} + \frac{13}{25} \cdot \frac{-1}{9}$.
 
 ### Bài 4. Tìm $x$ bằng quy tắc chuyển vế
 Tìm số hữu tỉ $x$ biết:
-- a) $x + \dfrac{4}{5} = \dfrac{-1}{3}$;
-- b) $\dfrac{3}{7} - x = \dfrac{2}{5}$;
-- c) $\dfrac{1}{2} - 2x = \dfrac{-3}{4}$;
-- d) $\dfrac{2}{3} + \dfrac{1}{3} : x = \dfrac{5}{6}$.
+- a) $x + \frac{4}{5} = \frac{-1}{3}$;
+- b) $\frac{3}{7} - x = \frac{2}{5}$;
+- c) $\frac{1}{2} - 2x = \frac{-3}{4}$;
+- d) $\frac{2}{3} + \frac{1}{3} : x = \frac{5}{6}$.
 
 ### Bài 5. Tìm $x$ trong phương trình tích và lũy thừa
-- a) $\left(x - \dfrac{2}{7}\right)\left(3x + \dfrac{1}{2}\right) = 0$;
-- b) $\left(2x - \dfrac{1}{3}\right)^2 = \dfrac{25}{36}$;
+- a) $\left(x - \frac{2}{7}\right)\left(3x + \frac{1}{2}\right) = 0$;
+- b) $\left(2x - \frac{1}{3}\right)^2 = \frac{25}{36}$;
 - c) $(x + 1)^3 = -27$.
 
 ### Bài 6. Tìm $x$ chứa dấu giá trị tuyệt đối
-- a) $\left|x - \dfrac{1}{3}\right| = \dfrac{4}{5}$;
-- b) $2\left|x + \dfrac{1}{2}\right| - \dfrac{1}{3} = \dfrac{1}{2}$;
+- a) $\left|x - \frac{1}{3}\right| = \frac{4}{5}$;
+- b) $2\left|x + \frac{1}{2}\right| - \frac{1}{3} = \frac{1}{2}$;
 - c) $\left|2x - 3\right| + 4 = 1$.
 
 ### Bài 7. Bài toán thực tế 1: Tiết kiệm chi tiêu
 Bạn Hoàng có một khoản tiền tiết kiệm:
-- Hoàng dùng $\dfrac{2}{5}$ số tiền để mua một đôi giày thể thao.
-- Hoàng dùng $\dfrac{1}{4}$ số tiền để mua một chiếc áo khoác.
+- Hoàng dùng $\frac{2}{5}$ số tiền để mua một đôi giày thể thao.
+- Hoàng dùng $\frac{1}{4}$ số tiền để mua một chiếc áo khoác.
 - Sau khi mua hai món đồ trên, Hoàng còn lại $420\,000$ đồng.
 Hỏi ban đầu Hoàng có bao nhiêu tiền tiết kiệm?
 
@@ -623,7 +623,7 @@ Hỏi ban đầu Hoàng có bao nhiêu tiền tiết kiệm?
 Cho biểu thức:
 $$K = 5a - \{3b - [2a - (b - 4a) + 3] - 2b\}.$$
 - a) Rút gọn biểu thức $K$.
-- b) Tính giá trị của $K$ khi $a = \dfrac{1}{3}$ và $b = -2$.
+- b) Tính giá trị của $K$ khi $a = \frac{1}{3}$ và $b = -2$.
 
 ### Bài 9. Tìm giá trị nhỏ nhất
 Tìm giá trị nhỏ nhất của biểu thức:
@@ -638,51 +638,51 @@ $$xy + 3x - y = 8.$$
 ### Hướng dẫn giải chi tiết Phiếu bài tập
 
 #### Bài 1:
-- a) Nhân trước: $\dfrac{3}{4} \cdot \left(-\dfrac{4}{9}\right) = -\dfrac{1}{3}$.
-  Cộng: $A = \dfrac{2}{3} + \left(-\dfrac{1}{3}\right) = \dfrac{1}{3}$.
-- b) Lũy thừa: $\left(\dfrac{1}{2}\right)^2 = \dfrac{1}{4}$.
-  Chia: $\dfrac{3}{8} : \dfrac{-9}{4} = \dfrac{3}{8} \cdot \dfrac{4}{-9} = -\dfrac{1}{6}$.
-  Trừ: $B = \dfrac{1}{4} - \left(-\dfrac{1}{6}\right) = \dfrac{1}{4} + \dfrac{1}{6} = \dfrac{5}{12}$.
-- c) $C = 8 - 3 \cdot \dfrac{1}{9} + 1 = 8 - \dfrac{1}{3} + 1 = 9 - \dfrac{1}{3} = \dfrac{26}{3}$.
+- a) Nhân trước: $\frac{3}{4} \cdot \left(-\frac{4}{9}\right) = -\frac{1}{3}$.
+  Cộng: $A = \frac{2}{3} + \left(-\frac{1}{3}\right) = \frac{1}{3}$.
+- b) Lũy thừa: $\left(\frac{1}{2}\right)^2 = \frac{1}{4}$.
+  Chia: $\frac{3}{8} : \frac{-9}{4} = \frac{3}{8} \cdot \frac{4}{-9} = -\frac{1}{6}$.
+  Trừ: $B = \frac{1}{4} - \left(-\frac{1}{6}\right) = \frac{1}{4} + \frac{1}{6} = \frac{5}{12}$.
+- c) $C = 8 - 3 \cdot \frac{1}{9} + 1 = 8 - \frac{1}{3} + 1 = 9 - \frac{1}{3} = \frac{26}{3}$.
 
 #### Bài 2:
 - a) $3 - 2^2 = 3 - 4 = -1$.
   $4 + (-1) = 3$.
   $M = 15 - 3 = 12$.
-- b) $\dfrac{1}{4} - \dfrac{2}{3} = \dfrac{3 - 8}{12} = \dfrac{-5}{12}$.
-  $\dfrac{1}{3} - \left(\dfrac{-5}{12}\right) = \dfrac{4 + 5}{12} = \dfrac{9}{12} = \dfrac{3}{4}$.
-  $N = \dfrac{5}{6} - \dfrac{3}{4} = \dfrac{10 - 9}{12} = \dfrac{1}{12}$.
+- b) $\frac{1}{4} - \frac{2}{3} = \frac{3 - 8}{12} = \frac{-5}{12}$.
+  $\frac{1}{3} - \left(\frac{-5}{12}\right) = \frac{4 + 5}{12} = \frac{9}{12} = \frac{3}{4}$.
+  $N = \frac{5}{6} - \frac{3}{4} = \frac{10 - 9}{12} = \frac{1}{12}$.
 - c) $(4 - 2)^2 = 2^2 = 4$.
   $3 \cdot 4 + 10 = 22$.
   $22 : 11 = 2$.
   $P = 2 \cdot 2 = 4$.
 
 #### Bài 3:
-- a) $\left(\dfrac{7}{12} + \dfrac{5}{12}\right) + \left(-\dfrac{3}{4} + \dfrac{3}{4}\right) = \dfrac{12}{12} + 0 = 1$.
+- a) $\left(\frac{7}{12} + \frac{5}{12}\right) + \left(-\frac{3}{4} + \frac{3}{4}\right) = \frac{12}{12} + 0 = 1$.
 - b) Phá ngoặc:
-  $5 - \dfrac{2}{3} + \dfrac{1}{4} - 2 - \dfrac{1}{3} + \dfrac{3}{4} - 1 + \dfrac{4}{3}$.
+  $5 - \frac{2}{3} + \frac{1}{4} - 2 - \frac{1}{3} + \frac{3}{4} - 1 + \frac{4}{3}$.
   Nhóm:
-  $(5 - 2 - 1) + \left(-\dfrac{2}{3} - \dfrac{1}{3} + \dfrac{4}{3}\right) + \left(\dfrac{1}{4} + \dfrac{3}{4}\right) = 2 + \dfrac{1}{3} + 1 = 3 + \dfrac{1}{3} = \dfrac{10}{3}$.
-- c) $\dfrac{13}{25} \cdot \left(\dfrac{-8}{9} + \dfrac{-1}{9}\right) = \dfrac{13}{25} \cdot (-1) = -\dfrac{13}{25}$.
+  $(5 - 2 - 1) + \left(-\frac{2}{3} - \frac{1}{3} + \frac{4}{3}\right) + \left(\frac{1}{4} + \frac{3}{4}\right) = 2 + \frac{1}{3} + 1 = 3 + \frac{1}{3} = \frac{10}{3}$.
+- c) $\frac{13}{25} \cdot \left(\frac{-8}{9} + \frac{-1}{9}\right) = \frac{13}{25} \cdot (-1) = -\frac{13}{25}$.
 
 #### Bài 4:
-- a) $x = \dfrac{-1}{3} - \dfrac{4}{5} = \dfrac{-5 - 12}{15} = \dfrac{-17}{15}$.
-- b) $x = \dfrac{3}{7} - \dfrac{2}{5} = \dfrac{15 - 14}{35} = \dfrac{1}{35}$.
-- c) $2x = \dfrac{1}{2} - \left(-\dfrac{3}{4}\right) = \dfrac{2 + 3}{4} = \dfrac{5}{4} \implies x = \dfrac{5}{4} : 2 = \dfrac{5}{8}$.
-- d) $\dfrac{1}{3} : x = \dfrac{5}{6} - \dfrac{2}{3} = \dfrac{1}{6} \implies x = \dfrac{1}{3} : \dfrac{1}{6} = 2$.
+- a) $x = \frac{-1}{3} - \frac{4}{5} = \frac{-5 - 12}{15} = \frac{-17}{15}$.
+- b) $x = \frac{3}{7} - \frac{2}{5} = \frac{15 - 14}{35} = \frac{1}{35}$.
+- c) $2x = \frac{1}{2} - \left(-\frac{3}{4}\right) = \frac{2 + 3}{4} = \frac{5}{4} \implies x = \frac{5}{4} : 2 = \frac{5}{8}$.
+- d) $\frac{1}{3} : x = \frac{5}{6} - \frac{2}{3} = \frac{1}{6} \implies x = \frac{1}{3} : \frac{1}{6} = 2$.
 
 #### Bài 5:
-- a) $x = \dfrac{2}{7}$ hoặc $x = -\dfrac{1}{6}$.
-- b) $2x - \dfrac{1}{3} = \pm \dfrac{5}{6}$:
-  - TH1: $2x = \dfrac{5}{6} + \dfrac{1}{3} = \dfrac{7}{6} \implies x = \dfrac{7}{12}$.
-  - TH2: $2x = -\dfrac{5}{6} + \dfrac{1}{3} = -\dfrac{3}{6} = -\dfrac{1}{2} \implies x = -\dfrac{1}{4}$.
+- a) $x = \frac{2}{7}$ hoặc $x = -\frac{1}{6}$.
+- b) $2x - \frac{1}{3} = \pm \frac{5}{6}$:
+  - TH1: $2x = \frac{5}{6} + \frac{1}{3} = \frac{7}{6} \implies x = \frac{7}{12}$.
+  - TH2: $2x = -\frac{5}{6} + \frac{1}{3} = -\frac{3}{6} = -\frac{1}{2} \implies x = -\frac{1}{4}$.
 - c) $x + 1 = -3 \implies x = -4$.
 
 #### Bài 6:
-- a) $x - \dfrac{1}{3} = \pm \dfrac{4}{5} \implies x = \dfrac{17}{15}$ hoặc $x = -\dfrac{7}{15}$.
-- b) $2|x + \dfrac{1}{2}| = \dfrac{1}{2} + \dfrac{1}{3} = \dfrac{5}{6} \implies |x + \dfrac{1}{2}| = \dfrac{5}{12}$.
-  - $x = \dfrac{5}{12} - \dfrac{1}{2} = -\dfrac{1}{12}$.
-  - $x = -\dfrac{5}{12} - \dfrac{1}{2} = -\dfrac{11}{12}$.
+- a) $x - \frac{1}{3} = \pm \frac{4}{5} \implies x = \frac{17}{15}$ hoặc $x = -\frac{7}{15}$.
+- b) $2|x + \frac{1}{2}| = \frac{1}{2} + \frac{1}{3} = \frac{5}{6} \implies |x + \frac{1}{2}| = \frac{5}{12}$.
+  - $x = \frac{5}{12} - \frac{1}{2} = -\frac{1}{12}$.
+  - $x = -\frac{5}{12} - \frac{1}{2} = -\frac{11}{12}$.
 - c) $|2x - 3| = 1 - 4 = -3 < 0 \implies$ Vô nghiệm.
 
 #### Bài 7:
@@ -698,7 +698,7 @@ $$xy + 3x - y = 8.$$
   $2a - (b - 4a) + 3 = 2a - b + 4a + 3 = 6a - b + 3$.
   $3b - [6a - b + 3] - 2b = 3b - 6a + b - 3 - 2b = -6a + 2b - 3$.
   $K = 5a - (-6a + 2b - 3) = 5a + 6a - 2b + 3 = 11a - 2b + 3$.
-- b) Thay $a = \dfrac{1}{3}, b = -2$:
+- b) Thay $a = \frac{1}{3}, b = -2$:
   $$K = 11 \cdot \dfrac{1}{3} - 2 \cdot (-2) + 3 = \dfrac{11}{3} + 4 + 3 = \dfrac{11}{3} + 7 = \dfrac{32}{3}.$$
 
 #### Bài 9:
@@ -739,17 +739,17 @@ Vậy $(x; y) \in \{(2; 2), (6; -2), (0; -8), (-4; -4)\}$.
 - C. $3 - x$
 - D. $5 + x - 2$
 
-**Câu 3:** Tìm $x$ biết $x + \dfrac{2}{3} = \dfrac{1}{6}$:
-- A. $\dfrac{1}{2}$
-- B. $-\dfrac{1}{2}$
-- C. $\dfrac{5}{6}$
-- D. $-\dfrac{5}{6}$
+**Câu 3:** Tìm $x$ biết $x + \frac{2}{3} = \frac{1}{6}$:
+- A. $\frac{1}{2}$
+- B. $-\frac{1}{2}$
+- C. $\frac{5}{6}$
+- D. $-\frac{5}{6}$
 
-**Câu 4:** Kết quả của phép tính $\dfrac{3}{5} \cdot \dfrac{7}{11} + \dfrac{3}{5} \cdot \dfrac{4}{11}$ là:
-- A. $\dfrac{3}{5}$
+**Câu 4:** Kết quả của phép tính $\frac{3}{5} \cdot \frac{7}{11} + \frac{3}{5} \cdot \frac{4}{11}$ là:
+- A. $\frac{3}{5}$
 - B. $1$
-- C. $\dfrac{33}{55}$
-- D. $\dfrac{7}{11}$
+- C. $\frac{33}{55}$
+- D. $\frac{7}{11}$
 
 #### Phần II. Tự luận (6,0 điểm)
 **Bài 1 (3,0 điểm):** Tính hợp lý giá trị biểu thức:
@@ -765,18 +765,18 @@ $$\dfrac{2}{3} - 3x = \dfrac{-1}{6}.$$
 #### Trắc nghiệm:
 - Câu 1: **B** ($1{,}0$ điểm) ($12 - 2 \cdot 9 = 12 - 18 = -6$).
 - Câu 2: **B** ($1{,}0$ điểm) ($5 - x + 2 = 7 - x$).
-- Câu 3: **B** ($1{,}0$ điểm) ($x = \dfrac{1}{6} - \dfrac{4}{6} = -\dfrac{3}{6} = -\dfrac{1}{2}$).
-- Câu 4: **A** ($1{,}0$ điểm) ($\dfrac{3}{5} \cdot 1 = \dfrac{3}{5}$).
+- Câu 3: **B** ($1{,}0$ điểm) ($x = \frac{1}{6} - \frac{4}{6} = -\frac{3}{6} = -\frac{1}{2}$).
+- Câu 4: **A** ($1{,}0$ điểm) ($\frac{3}{5} \cdot 1 = \frac{3}{5}$).
 
 #### Tự luận:
 **Bài 1 (3,0 điểm):**
-- Bỏ dấu ngoặc đúng: $H = 3 - \dfrac{2}{5} + \dfrac{1}{3} - 1 - \dfrac{3}{5} + \dfrac{2}{3}$ ($1{,}0$ điểm).
-- Nhóm hợp lý: $H = (3 - 1) - \left(\dfrac{2}{5} + \dfrac{3}{5}\right) + \left(\dfrac{1}{3} + \dfrac{2}{3}\right)$ ($1{,}0$ điểm).
+- Bỏ dấu ngoặc đúng: $H = 3 - \frac{2}{5} + \frac{1}{3} - 1 - \frac{3}{5} + \frac{2}{3}$ ($1{,}0$ điểm).
+- Nhóm hợp lý: $H = (3 - 1) - \left(\frac{2}{5} + \frac{3}{5}\right) + \left(\frac{1}{3} + \frac{2}{3}\right)$ ($1{,}0$ điểm).
 - Tính đúng kết quả: $H = 2 - 1 + 1 = 2$ ($1{,}0$ điểm).
 
 **Bài 2 (3,0 điểm):**
-- Chuyển vế: $3x = \dfrac{2}{3} - \left(-\dfrac{1}{6}\right) = \dfrac{4}{6} + \dfrac{1}{6} = \dfrac{5}{6}$ ($1{,}5$ điểm).
-- Tìm $x$: $x = \dfrac{5}{6} : 3 = \dfrac{5}{18}$ ($1{,}25$ điểm).
+- Chuyển vế: $3x = \frac{2}{3} - \left(-\frac{1}{6}\right) = \frac{4}{6} + \frac{1}{6} = \frac{5}{6}$ ($1{,}5$ điểm).
+- Tìm $x$: $x = \frac{5}{6} : 3 = \frac{5}{18}$ ($1{,}25$ điểm).
 - Kết luận đúng ($0{,}25$ điểm).
 
 ---
@@ -796,10 +796,10 @@ $$\dfrac{2}{3} - 3x = \dfrac{-1}{6}.$$
 - C. $a - b - c - d$
 - D. $a + b - c + d$
 
-**Câu 3:** Tìm $x$ biết $x - \dfrac{1}{4} = -\dfrac{3}{4}$:
+**Câu 3:** Tìm $x$ biết $x - \frac{1}{4} = -\frac{3}{4}$:
 - A. $-1$
-- B. $-\dfrac{1}{2}$
-- C. $\dfrac{1}{2}$
+- B. $-\frac{1}{2}$
+- C. $\frac{1}{2}$
 - D. $1$
 
 **Câu 4:** Giá trị của $3 \cdot [2 + (4 - 1)^2]$ là:
@@ -822,17 +822,17 @@ $$\left|x - \dfrac{2}{5}\right| = \dfrac{3}{10}.$$
 #### Trắc nghiệm:
 - Câu 1: **B** ($1{,}0$ điểm).
 - Câu 2: **A** ($1{,}0$ điểm).
-- Câu 3: **B** ($1{,}0$ điểm) ($x = -\dfrac{3}{4} + \dfrac{1}{4} = -\dfrac{2}{4} = -\dfrac{1}{2}$).
+- Câu 3: **B** ($1{,}0$ điểm) ($x = -\frac{3}{4} + \frac{1}{4} = -\frac{2}{4} = -\frac{1}{2}$).
 - Câu 4: **A** ($1{,}0$ điểm) ($3 \cdot [2 + 9] = 3 \cdot 11 = 33$).
 
 #### Tự luận:
 **Bài 1 (3,0 điểm):**
-- Tính trong ngoặc tròn: $\dfrac{3}{4} - \dfrac{1}{2} = \dfrac{1}{4}$ ($1{,}0$ điểm).
-- Tính trong ngoặc vuông: $\dfrac{1}{2} + \dfrac{1}{4} = \dfrac{3}{4}$ ($1{,}0$ điểm).
-- Tính ngoài ngoặc: $K = \dfrac{3}{4} - \dfrac{3}{4} = 0$ ($1{,}0$ điểm).
+- Tính trong ngoặc tròn: $\frac{3}{4} - \frac{1}{2} = \frac{1}{4}$ ($1{,}0$ điểm).
+- Tính trong ngoặc vuông: $\frac{1}{2} + \frac{1}{4} = \frac{3}{4}$ ($1{,}0$ điểm).
+- Tính ngoài ngoặc: $K = \frac{3}{4} - \frac{3}{4} = 0$ ($1{,}0$ điểm).
 
 **Bài 2 (3,0 điểm):**
 - Xét hai trường hợp ($0{,}5$ điểm):
-- TH1: $x - \dfrac{2}{5} = \dfrac{3}{10} \iff x = \dfrac{3}{10} + \dfrac{4}{10} = \dfrac{7}{10}$ ($1{,}25$ điểm).
-- TH2: $x - \dfrac{2}{5} = -\dfrac{3}{10} \iff x = -\dfrac{3}{10} + \dfrac{4}{10} = \dfrac{1}{10}$ ($1{,}0$ điểm).
-- Kết luận: $x \in \left\{\dfrac{1}{10}; \dfrac{7}{10}\right\}$ ($0{,}25$ điểm).
+- TH1: $x - \frac{2}{5} = \frac{3}{10} \iff x = \frac{3}{10} + \frac{4}{10} = \frac{7}{10}$ ($1{,}25$ điểm).
+- TH2: $x - \frac{2}{5} = -\frac{3}{10} \iff x = -\frac{3}{10} + \frac{4}{10} = \frac{1}{10}$ ($1{,}0$ điểm).
+- Kết luận: $x \in \left\{\frac{1}{10}; \frac{7}{10}\right\}$ ($0{,}25$ điểm).

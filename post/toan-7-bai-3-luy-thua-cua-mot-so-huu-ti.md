@@ -19,7 +19,7 @@ grade: 7
 
 Trong cuộc sống và khoa học kỹ thuật, chúng ta thường xuyên bắt gặp những con số khổng lồ hoặc những quá trình nhân đôi liên tiếp: một tế bào vi khuẩn cứ sau $20$ phút lại phân đôi một lần, khoảng cách từ Trái Đất đến Mặt Trời xấp xỉ $1{,}5 \cdot 10^8\text{ km}$, hay dung lượng của một chiếc thẻ nhớ là $2^{10}\text{ MB} = 1\,024\text{ MB}$.
 
-Ở lớp 6, các em đã học lũy thừa của số tự nhiên và số nguyên. Sang lớp 7, khi tập số được mở rộng lên **tập hợp các số hữu tỉ** $\mathbb{Q}$, phép nâng lên lũy thừa hoạt động như thế nào với các phân số và số thập phân âm? Làm thế nào để tính nhẩm nhanh $\left(-\dfrac{2}{3}\right)^4$, hoặc so sánh hai con số khổng lồ như $2^{300}$ và $3^{200}$?
+Ở lớp 6, các em đã học lũy thừa của số tự nhiên và số nguyên. Sang lớp 7, khi tập số được mở rộng lên **tập hợp các số hữu tỉ** $\mathbb{Q}$, phép nâng lên lũy thừa hoạt động như thế nào với các phân số và số thập phân âm? Làm thế nào để tính nhẩm nhanh $\left(-\frac{2}{3}\right)^4$, hoặc so sánh hai con số khổng lồ như $2^{300}$ và $3^{200}$?
 
 Bài học hôm nay sẽ giúp các em làm chủ toàn bộ các công thức lũy thừa cốt lõi, thấu suốt quy luật dấu của lũy thừa, đồng thời chinh phục $5$ chuyên đề bồi dưỡng học sinh giỏi Olympic với những phương pháp tư duy số học đỉnh cao!
 
@@ -30,19 +30,19 @@ Bài học hôm nay sẽ giúp các em làm chủ toàn bộ các công thức l
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px;">
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #1d4ed8;">1. Định nghĩa & Lũy thừa phân số</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• $x^n = \underbrace{x \cdot x \cdots x}_{n\text{ thua so}}$ ($n \in \mathbb{N}, n > 1$).<br>• Quy ước: $x^1 = x; \ x^0 = 1$ ($x \ne 0$).<br>• Phân số: $\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$ ($b \ne 0$).</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• $x^n = \underbrace{x \cdot x \cdots x}_{n\text{ thua so}}$ ($n \in \mathbb{N}, n > 1$).<br>• Quy ước: $x^1 = x; \ x^0 = 1$ ($x \ne 0$).<br>• Phân số: $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$ ($b \ne 0$).</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #047857;">2. Nhân & chia cùng cơ số</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Nhân: $x^m \cdot x^n = x^{m + n}$ (cộng số mũ).<br>• Chia: $x^m : x^n = x^{m - n}$ (trừ số mũ, $x \ne 0, m \ge n$).<br>• Lũy thừa của lũy thừa: $(x^m)^n = x^{m \cdot n}$.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Nhân: $x^m \cdot x^n = x^{m + n}$ (cộng số mũ).<br>• Chia: $x^m : x^n = x^{m - n}$ (trừ số mũ, $x \ne 0, m \ge n$).<br>• Lũy thừa của lũy thừa: $(x^m)^n = x^{m \cdot n}$.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #f59e0b; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #b45309;">3. Lũy thừa của tích & thương</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Lũy thừa của tích: $(x \cdot y)^n = x^n \cdot y^n$.<br>• Lũy thừa của thương: $\left(\dfrac{x}{y}\right)^n = \dfrac{x^n}{y^n}$ ($y \ne 0$).<br>• Giúp gom hoặc tách lũy thừa cùng số mũ.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Lũy thừa của tích: $(x \cdot y)^n = x^n \cdot y^n$.<br>• Lũy thừa của thương: $\left(\frac{x}{y}\right)^n = \frac{x^n}{y^n}$ ($y \ne 0$).<br>• Giúp gom hoặc tách lũy thừa cùng số mũ.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #8b5cf6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #6d28d9;">4. Quy luật dấu & Tư duy Olympic</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• $(-x)^{2k} = x^{2k} \ge 0$ (mũ chẵn luôn dương).<br>• $(-x)^{2k+1} = -x^{2k+1}$ (mũ lẻ giữ dấu âm).<br>• So sánh qua ƯCLN số mũ, chu kỳ chữ số tận cùng.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• $(-x)^{2k} = x^{2k} \ge 0$ (mũ chẵn luôn dương).<br>• $(-x)^{2k+1} = -x^{2k+1}$ (mũ lẻ giữ dấu âm).<br>• So sánh qua ƯCLN số mũ, chu kỳ chữ số tận cùng.</p>
     </div>
   </div>
 </div>
@@ -58,7 +58,7 @@ Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức lũy thừa t
 1. **Viết gọn các tích sau dưới dạng một lũy thừa:**
    - a) $6 \cdot 6 \cdot 6 \cdot 6 \cdot 6$.
    - b) $(-5) \cdot (-5) \cdot (-5)$.
-   - c) $\dfrac{2}{3} \cdot \dfrac{2}{3} \cdot \dfrac{2}{3} \cdot \dfrac{2}{3}$.
+   - c) $\frac{2}{3} \cdot \frac{2}{3} \cdot \frac{2}{3} \cdot \frac{2}{3}$.
 
 2. **Tính giá trị của mỗi lũy thừa sau:**
    - a) $3^4$.
@@ -78,7 +78,7 @@ Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức lũy thừa t
 5. **Viết mỗi số sau thành lũy thừa với cơ số cho trước:**
    - a) $16 = 2^{\dots}$.
    - b) $125 = 5^{\dots}$.
-   - c) $\dfrac{1}{27} = \left(\dfrac{1}{3}\right)^{\dots}$.
+   - c) $\frac{1}{27} = \left(\frac{1}{3}\right)^{\dots}$.
 
 ---
 
@@ -87,7 +87,7 @@ Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức lũy thừa t
 1. **Viết gọn:**
    - a) $6 \cdot 6 \cdot 6 \cdot 6 \cdot 6 = 6^5$.
    - b) $(-5) \cdot (-5) \cdot (-5) = (-5)^3$.
-   - c) $\dfrac{2}{3} \cdot \dfrac{2}{3} \cdot \dfrac{2}{3} \cdot \dfrac{2}{3} = \left(\dfrac{2}{3}\right)^4$.
+   - c) $\frac{2}{3} \cdot \frac{2}{3} \cdot \frac{2}{3} \cdot \frac{2}{3} = \left(\frac{2}{3}\right)^4$.
 
 2. **Tính giá trị:**
    - a) $3^4 = 3 \cdot 3 \cdot 3 \cdot 3 = 81$.
@@ -107,7 +107,7 @@ Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức lũy thừa t
 5. **Lũy thừa tương ứng:**
    - a) $16 = 2^4$.
    - b) $125 = 5^3$.
-   - c) $\dfrac{1}{27} = \left(\dfrac{1}{3}\right)^3$.
+   - c) $\frac{1}{27} = \left(\frac{1}{3}\right)^3$.
 
 ---
 
@@ -128,18 +128,18 @@ Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức lũy thừa t
 > - $x^0 = 1$ (với mọi $x \ne 0$). Biểu thức $0^0$ không có nghĩa trong toán học sơ cấp.
 
 #### Lũy thừa của một phân số:
-Khi số hữu tỉ $x$ được viết dưới dạng phân số $\dfrac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$):
+Khi số hữu tỉ $x$ được viết dưới dạng phân số $\frac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$):
 $$\left(\dfrac{a}{b}\right)^n = \underbrace{\dfrac{a}{b} \cdot \dfrac{a}{b} \dots \dfrac{a}{b}}_{n\text{ thua so}} = \dfrac{\underbrace{a \cdot a \dots a}_{n\text{ thua so}}}{\underbrace{b \cdot b \dots b}_{n\text{ thua so}}} = \dfrac{a^n}{b^n}.$$
 
 **Ví dụ 1:** Tính:
-- a) $\left(\dfrac{-3}{4}\right)^3$.
+- a) $\left(\frac{-3}{4}\right)^3$.
 - b) $(-0{,}4)^2$.
-- c) $\left(-1\dfrac{1}{2}\right)^4$.
+- c) $\left(-1\frac{1}{2}\right)^4$.
 
 *Lời giải:*
-- a) $\left(\dfrac{-3}{4}\right)^3 = \dfrac{(-3)^3}{4^3} = \dfrac{-27}{64}$.
-- b) $(-0{,}4)^2 = (-0{,}4) \cdot (-0{,}4) = 0{,}16$ (hoặc $\left(-\dfrac{2}{5}\right)^2 = \dfrac{4}{25} = 0{,}16$).
-- c) Đổi hỗn số sang phân số: $-1\dfrac{1}{2} = -\dfrac{3}{2}$.
+- a) $\left(\frac{-3}{4}\right)^3 = \frac{(-3)^3}{4^3} = \frac{-27}{64}$.
+- b) $(-0{,}4)^2 = (-0{,}4) \cdot (-0{,}4) = 0{,}16$ (hoặc $\left(-\frac{2}{5}\right)^2 = \frac{4}{25} = 0{,}16$).
+- c) Đổi hỗn số sang phân số: $-1\frac{1}{2} = -\frac{3}{2}$.
   $$\left(-\dfrac{3}{2}\right)^4 = \dfrac{(-3)^4}{2^4} = \dfrac{81}{16}.$$
 
 ---
@@ -199,7 +199,7 @@ $$\left(\dfrac{x}{y}\right)^n = \dfrac{x^n}{y^n} \quad (y \ne 0).$$
 >    $$(a + b)^n \ne a^n + b^n.$$
 >    *Ví dụ:* $(2 + 3)^2 = 5^2 = 25 \ne 2^2 + 3^2 = 4 + 9 = 13$.
 > 4. **Quên xét hai trường hợp khi tìm cơ số với số mũ chẵn:**
->    Nếu $x^2 = \dfrac{9}{16}$ thì $x = \dfrac{3}{4}$ hoặc $x = -\dfrac{3}{4}$ ($x = \pm \dfrac{3}{4}$). Quên trường hợp âm là lỗi phổ biến nhất của học sinh!
+>    Nếu $x^2 = \frac{9}{16}$ thì $x = \frac{3}{4}$ hoặc $x = -\frac{3}{4}$ ($x = \pm \frac{3}{4}$). Quên trường hợp âm là lỗi phổ biến nhất của học sinh!
 
 ---
 
@@ -209,13 +209,13 @@ $$\left(\dfrac{x}{y}\right)^n = \dfrac{x^n}{y^n} \quad (y \ne 0).$$
 
 #### Phương pháp giải:
 - Thực hiện nâng lên lũy thừa trước.
-- Với phân số: áp dụng $\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}$.
+- Với phân số: áp dụng $\left(\frac{a}{b}\right)^n = \frac{a^n}{b^n}$.
 - Xác định đúng dấu của số mũ chẵn/lẻ.
 - Sau đó thực hiện nhân, chia rồi đến cộng, trừ.
 
 **Bài 1.1:** Tính giá trị các biểu thức sau:
-- a) $A = \left(\dfrac{-2}{3}\right)^3 + \dfrac{5}{9} \cdot \left(\dfrac{-1}{2}\right)^2$.
-- b) $B = \left(-\dfrac{1}{3}\right)^2 - \left(-\dfrac{1}{4}\right)^0 + \left(-\dfrac{1}{2}\right)^3$.
+- a) $A = \left(\frac{-2}{3}\right)^3 + \frac{5}{9} \cdot \left(\frac{-1}{2}\right)^2$.
+- b) $B = \left(-\frac{1}{3}\right)^2 - \left(-\frac{1}{4}\right)^0 + \left(-\frac{1}{2}\right)^3$.
 
 *Lời giải:*
 - a) Tính từng lũy thừa:
@@ -267,8 +267,8 @@ Sử dụng công thức tích các lũy thừa cùng số mũ:
 $$a^n \cdot b^n = (a \cdot b)^n; \quad \dfrac{a^n}{b^n} = \left(\dfrac{a}{b}\right)^n.$$
 
 **Bài 3.1:** Tính nhanh giá trị của các biểu thức sau:
-- a) $M = \left(\dfrac{3}{5}\right)^4 \cdot 15^4 : 9^3$.
-- b) $N = \left(-\dfrac{2}{3}\right)^5 \cdot \left(\dfrac{9}{4}\right)^5 \cdot \left(-\dfrac{2}{3}\right)^2$.
+- a) $M = \left(\frac{3}{5}\right)^4 \cdot 15^4 : 9^3$.
+- b) $N = \left(-\frac{2}{3}\right)^5 \cdot \left(\frac{9}{4}\right)^5 \cdot \left(-\frac{2}{3}\right)^2$.
 
 *Lời giải:*
 - a) Gom hai số đầu cùng số mũ $4$:
@@ -294,16 +294,16 @@ Có hai trường hợp cốt lõi:
    - Với cơ số $a \notin \{-1; 0; 1\}$: $a^x = a^m \iff x = m$.
 
 **Bài 4.1:** Tìm số hữu tỉ $x$ biết:
-- a) $\left(x - \dfrac{1}{2}\right)^2 = \dfrac{25}{49}$.
-- b) $(2x + 1)^3 = -\dfrac{27}{64}$.
+- a) $\left(x - \frac{1}{2}\right)^2 = \frac{25}{49}$.
+- b) $(2x + 1)^3 = -\frac{27}{64}$.
 - c) $2^{x + 1} \cdot 3^x = 72$.
 
 *Lời giải:*
-- a) Số mũ chẵn $n = 2$, ta có $\dfrac{25}{49} = \left(\pm \dfrac{5}{7}\right)^2$.
-  - TH1: $x - \dfrac{1}{2} = \dfrac{5}{7} \iff x = \dfrac{5}{7} + \dfrac{1}{2} = \dfrac{17}{14}$.
-  - TH2: $x - \dfrac{1}{2} = -\dfrac{5}{7} \iff x = -\dfrac{5}{7} + \dfrac{1}{2} = \dfrac{-3}{14}$.
-  Vậy $x \in \left\{\dfrac{-3}{14}; \dfrac{17}{14}\right\}$.
-- b) Số mũ lẻ $n = 3$, ta có $-\dfrac{27}{64} = \left(-\dfrac{3}{4}\right)^3$.
+- a) Số mũ chẵn $n = 2$, ta có $\frac{25}{49} = \left(\pm \frac{5}{7}\right)^2$.
+  - TH1: $x - \frac{1}{2} = \frac{5}{7} \iff x = \frac{5}{7} + \frac{1}{2} = \frac{17}{14}$.
+  - TH2: $x - \frac{1}{2} = -\frac{5}{7} \iff x = -\frac{5}{7} + \frac{1}{2} = \frac{-3}{14}$.
+  Vậy $x \in \left\{\frac{-3}{14}; \frac{17}{14}\right\}$.
+- b) Số mũ lẻ $n = 3$, ta có $-\frac{27}{64} = \left(-\frac{3}{4}\right)^3$.
   $$2x + 1 = -\dfrac{3}{4} \iff 2x = -\dfrac{3}{4} - 1 = -\dfrac{7}{4} \iff x = -\dfrac{7}{8}.$$
 - c) Tách $2^{x + 1} = 2 \cdot 2^x$:
   $$2 \cdot 2^x \cdot 3^x = 72 \iff 2 \cdot (2 \cdot 3)^x = 72 \iff 2 \cdot 6^x = 72 \iff 6^x = 36 = 6^2 \iff x = 2.$$
@@ -443,14 +443,14 @@ $$S = 4 \cdot 385 = 1\,540.$$
 
 ```quiz
 type: choice
-question: 'Giá trị của lũy thừa $\left(-\dfrac{2}{3}\right)^3$ là:'
+question: 'Giá trị của lũy thừa $\left(-\frac{2}{3}\right)^3$ là:'
 options:
-  - '$\dfrac{8}{27}$'
-  - '$-\dfrac{8}{27}$'
-  - '$-\dfrac{6}{9}$'
-  - '$\dfrac{6}{9}$'
+  - '$\frac{8}{27}$'
+  - '$-\frac{8}{27}$'
+  - '$-\frac{6}{9}$'
+  - '$\frac{6}{9}$'
 answer: 2
-explanation: 'Lũy thừa bậc lẻ của số âm mang dấu âm: $\dfrac{(-2)^3}{3^3} = -\dfrac{8}{27}$.'
+explanation: 'Lũy thừa bậc lẻ của số âm mang dấu âm: $\frac{(-2)^3}{3^3} = -\frac{8}{27}$.'
 ```
 
 ```quiz
@@ -479,26 +479,26 @@ explanation: 'Lũy thừa của một tổng không bằng tổng các lũy th�
 
 ```quiz
 type: choice
-question: 'Rút gọn biểu thức $\dfrac{3^8 \cdot 2^4}{6^4}$ ta được kết quả là:'
+question: 'Rút gọn biểu thức $\frac{3^8 \cdot 2^4}{6^4}$ ta được kết quả là:'
 options:
   - '$3^4$'
   - '$81$'
   - 'Cả A và B đều đúng'
   - '$1$'
 answer: 3
-explanation: 'Ta có $6^4 = (2 \cdot 3)^4 = 2^4 \cdot 3^4$. Do đó biểu thức bằng $\dfrac{3^8 \cdot 2^4}{3^4 \cdot 2^4} = 3^4 = 81$. Cả A và B đều đúng.'
+explanation: 'Ta có $6^4 = (2 \cdot 3)^4 = 2^4 \cdot 3^4$. Do đó biểu thức bằng $\frac{3^8 \cdot 2^4}{3^4 \cdot 2^4} = 3^4 = 81$. Cả A và B đều đúng.'
 ```
 
 ```quiz
 type: choice
-question: 'Số hữu tỉ $x$ thỏa mãn $x^2 = \dfrac{49}{81}$ là:'
+question: 'Số hữu tỉ $x$ thỏa mãn $x^2 = \frac{49}{81}$ là:'
 options:
-  - '$\dfrac{7}{9}$'
-  - '$-\dfrac{7}{9}$'
-  - '$\pm \dfrac{7}{9}$'
-  - '$\dfrac{49}{162}$'
+  - '$\frac{7}{9}$'
+  - '$-\frac{7}{9}$'
+  - '$\pm \frac{7}{9}$'
+  - '$\frac{49}{162}$'
 answer: 3
-explanation: 'Vì số mũ là 2 (chẵn) nên $x^2 = \left(\pm \dfrac{7}{9}\right)^2 \implies x = \pm \dfrac{7}{9}$.'
+explanation: 'Vì số mũ là 2 (chẵn) nên $x^2 = \left(\pm \frac{7}{9}\right)^2 \implies x = \pm \frac{7}{9}$.'
 ```
 
 ```quiz
@@ -539,14 +539,14 @@ explanation: 'Vì $2024 = 4 \cdot 506 \ \vdots \ 4$, nên $7^{2024} = (7^4)^{506
 
 ```quiz
 type: choice
-question: 'Giá trị của biểu thức $K = \left(-\dfrac{3}{4}\right)^0 + (-1)^{2025} + (-1)^{2026}$ là:'
+question: 'Giá trị của biểu thức $K = \left(-\frac{3}{4}\right)^0 + (-1)^{2025} + (-1)^{2026}$ là:'
 options:
   - '$0$'
   - '$1$'
   - '$-1$'
   - '$3$'
 answer: 2
-explanation: 'Ta có $\left(-\dfrac{3}{4}\right)^0 = 1$; $(-1)^{2025} = -1$ (mũ lẻ); $(-1)^{2026} = 1$ (mũ chẵn). Vậy $K = 1 + (-1) + 1 = 1$.'
+explanation: 'Ta có $\left(-\frac{3}{4}\right)^0 = 1$; $(-1)^{2025} = -1$ (mũ lẻ); $(-1)^{2026} = 1$ (mũ chẵn). Vậy $K = 1 + (-1) + 1 = 1$.'
 ```
 
 ```quiz
@@ -567,34 +567,34 @@ explanation: 'Ta có $(x - 2)^3 = (-5)^3 \implies x - 2 = -5 \implies x = -3$. V
 
 ### Bài 1. Tính giá trị lũy thừa
 Tính giá trị của các biểu thức sau:
-- a) $\left(\dfrac{-3}{5}\right)^2$;
-- b) $\left(-\dfrac{2}{3}\right)^3$;
+- a) $\left(\frac{-3}{5}\right)^2$;
+- b) $\left(-\frac{2}{3}\right)^3$;
 - c) $(-1{,}2)^2$;
-- d) $\left(-2\dfrac{1}{2}\right)^3$.
+- d) $\left(-2\frac{1}{2}\right)^3$.
 
 ### Bài 2. Viết kết quả dưới dạng một lũy thừa
-- a) $\left(\dfrac{3}{7}\right)^4 \cdot \left(\dfrac{3}{7}\right)^5$;
+- a) $\left(\frac{3}{7}\right)^4 \cdot \left(\frac{3}{7}\right)^5$;
 - b) $(-0{,}5)^8 : (-0{,}5)^3$;
-- c) $\left[\left(-\dfrac{2}{3}\right)^3\right]^4$;
-- d) $\left(\dfrac{5}{6}\right)^3 \cdot \left(\dfrac{12}{25}\right)^3$.
+- c) $\left[\left(-\frac{2}{3}\right)^3\right]^4$;
+- d) $\left(\frac{5}{6}\right)^3 \cdot \left(\frac{12}{25}\right)^3$.
 
 ### Bài 3. Rút gọn biểu thức lũy thừa
 Rút gọn các phân thức sau:
-- a) $A = \dfrac{2^7 \cdot 9^3}{6^5 \cdot 8^2}$;
-- b) $B = \dfrac{15^3 \cdot 4^2}{6^4 \cdot 25^2}$;
-- c) $C = \dfrac{4^6 \cdot 9^5 + 6^9 \cdot 120}{8^4 \cdot 3^{12} - 6^{11}}$.
+- a) $A = \frac{2^7 \cdot 9^3}{6^5 \cdot 8^2}$;
+- b) $B = \frac{15^3 \cdot 4^2}{6^4 \cdot 25^2}$;
+- c) $C = \frac{4^6 \cdot 9^5 + 6^9 \cdot 120}{8^4 \cdot 3^{12} - 6^{11}}$.
 
 ### Bài 4. Tìm $x$ ở cơ số
 Tìm số hữu tỉ $x$ biết:
-- a) $x^2 = \dfrac{16}{81}$;
+- a) $x^2 = \frac{16}{81}$;
 - b) $(2x - 1)^3 = -64$;
-- c) $\left(x + \dfrac{1}{3}\right)^2 = \dfrac{25}{36}$;
+- c) $\left(x + \frac{1}{3}\right)^2 = \frac{25}{36}$;
 - d) $(x - 5)^4 = 81$.
 
 ### Bài 5. Tìm số tự nhiên $n$ ở số mũ
 Tìm số tự nhiên $n$ biết:
 - a) $3^n = 81$;
-- b) $\left(\dfrac{2}{5}\right)^n = \dfrac{16}{625}$;
+- b) $\left(\frac{2}{5}\right)^n = \frac{16}{625}$;
 - c) $2^{n + 2} - 2^n = 96$;
 - d) $32 < 2^n \le 512$.
 
@@ -630,16 +630,16 @@ $$(x - 3)^2 + (y + 1)^4 = 0.$$
 ### Hướng dẫn giải chi tiết Phiếu bài tập
 
 #### Bài 1:
-- a) $\left(\dfrac{-3}{5}\right)^2 = \dfrac{(-3)^2}{5^2} = \dfrac{9}{25}$.
-- b) $\left(-\dfrac{2}{3}\right)^3 = \dfrac{(-2)^3}{3^3} = -\dfrac{8}{27}$.
-- c) $(-1{,}2)^2 = 1{,}44$ (hoặc $\left(-\dfrac{6}{5}\right)^2 = \dfrac{36}{25}$).
-- d) Đổi hỗn số $-2\dfrac{1}{2} = -\dfrac{5}{2} \implies \left(-\dfrac{5}{2}\right)^3 = -\dfrac{125}{8}$.
+- a) $\left(\frac{-3}{5}\right)^2 = \frac{(-3)^2}{5^2} = \frac{9}{25}$.
+- b) $\left(-\frac{2}{3}\right)^3 = \frac{(-2)^3}{3^3} = -\frac{8}{27}$.
+- c) $(-1{,}2)^2 = 1{,}44$ (hoặc $\left(-\frac{6}{5}\right)^2 = \frac{36}{25}$).
+- d) Đổi hỗn số $-2\frac{1}{2} = -\frac{5}{2} \implies \left(-\frac{5}{2}\right)^3 = -\frac{125}{8}$.
 
 #### Bài 2:
-- a) $\left(\dfrac{3}{7}\right)^{4 + 5} = \left(\dfrac{3}{7}\right)^9$.
+- a) $\left(\frac{3}{7}\right)^{4 + 5} = \left(\frac{3}{7}\right)^9$.
 - b) $(-0{,}5)^{8 - 3} = (-0{,}5)^5$.
-- c) $\left(-\dfrac{2}{3}\right)^{3 \cdot 4} = \left(-\dfrac{2}{3}\right)^{12}$.
-- d) $\left(\dfrac{5}{6} \cdot \dfrac{12}{25}\right)^3 = \left(\dfrac{2}{5}\right)^3$.
+- c) $\left(-\frac{2}{3}\right)^{3 \cdot 4} = \left(-\frac{2}{3}\right)^{12}$.
+- d) $\left(\frac{5}{6} \cdot \frac{12}{25}\right)^3 = \left(\frac{2}{5}\right)^3$.
 
 #### Bài 3:
 - a) Phân tích cơ số nguyên tố:
@@ -653,16 +653,16 @@ $$(x - 3)^2 + (y + 1)^4 = 0.$$
     $$C = \dfrac{2^{13} \cdot 3^{11}}{2^{11} \cdot 3^{11} \cdot 5} = \dfrac{2^2}{5} = \dfrac{4}{5}.$$
 
 #### Bài 4:
-- a) $x = \pm \dfrac{4}{9}$.
-- b) $(2x - 1)^3 = (-4)^3 \implies 2x - 1 = -4 \implies 2x = -3 \implies x = -\dfrac{3}{2}$.
-- c) $x + \dfrac{1}{3} = \pm \dfrac{5}{6}$:
-  - TH1: $x = \dfrac{5}{6} - \dfrac{1}{3} = \dfrac{3}{6} = \dfrac{1}{2}$.
-  - TH2: $x = -\dfrac{5}{6} - \dfrac{1}{3} = -\dfrac{7}{6}$.
+- a) $x = \pm \frac{4}{9}$.
+- b) $(2x - 1)^3 = (-4)^3 \implies 2x - 1 = -4 \implies 2x = -3 \implies x = -\frac{3}{2}$.
+- c) $x + \frac{1}{3} = \pm \frac{5}{6}$:
+  - TH1: $x = \frac{5}{6} - \frac{1}{3} = \frac{3}{6} = \frac{1}{2}$.
+  - TH2: $x = -\frac{5}{6} - \frac{1}{3} = -\frac{7}{6}$.
 - d) $(x - 5)^4 = (\pm 3)^4 \implies x - 5 = 3$ hoặc $x - 5 = -3 \implies x = 8$ hoặc $x = 2$.
 
 #### Bài 5:
 - a) $3^n = 3^4 \implies n = 4$.
-- b) $\left(\dfrac{2}{5}\right)^n = \left(\dfrac{2}{5}\right)^4 \implies n = 4$.
+- b) $\left(\frac{2}{5}\right)^n = \left(\frac{2}{5}\right)^4 \implies n = 4$.
 - c) $2^n(2^2 - 1) = 96 \iff 2^n \cdot 3 = 96 \iff 2^n = 32 = 2^5 \implies n = 5$.
 - d) $2^5 < 2^n \le 2^9 \implies 5 < n \le 9 \implies n \in \{6; 7; 8; 9\}$.
 
@@ -702,11 +702,11 @@ Vậy cặp số nguyên duy nhất là $(x; y) = (3; -1)$.
 ### Đề số 1
 
 #### Phần I. Trắc nghiệm (4,0 điểm — Mỗi câu 1,0 điểm)
-**Câu 1:** Giá trị của $\left(-\dfrac{1}{2}\right)^4$ là:
-- A. $-\dfrac{1}{16}$
-- B. $\dfrac{1}{16}$
-- C. $-\dfrac{1}{8}$
-- D. $\dfrac{1}{8}$
+**Câu 1:** Giá trị của $\left(-\frac{1}{2}\right)^4$ là:
+- A. $-\frac{1}{16}$
+- B. $\frac{1}{16}$
+- C. $-\frac{1}{8}$
+- D. $\frac{1}{8}$
 
 **Câu 2:** Kết quả của phép tính $3^6 : 3^2$ là:
 - A. $3^3$
@@ -745,26 +745,26 @@ $$\left(x - \dfrac{1}{3}\right)^2 = \dfrac{16}{25}.$$
 
 #### Tự luận:
 **Bài 1 (3,0 điểm):**
-- Tính $\left(\dfrac{2}{3}\right)^3 = \dfrac{8}{27}$ và $\left(\dfrac{9}{4}\right)^2 = \dfrac{81}{16}$ ($1{,}0$ điểm).
-- Tính tích: $\dfrac{8}{27} \cdot \dfrac{81}{16} = \dfrac{1 \cdot 3}{1 \cdot 2} = \dfrac{3}{2}$ ($1{,}0$ điểm).
-- Tính $(-1)^{2026} = 1 \implies M = \dfrac{3}{2} - 1 = \dfrac{1}{2}$ ($1{,}0$ điểm).
+- Tính $\left(\frac{2}{3}\right)^3 = \frac{8}{27}$ và $\left(\frac{9}{4}\right)^2 = \frac{81}{16}$ ($1{,}0$ điểm).
+- Tính tích: $\frac{8}{27} \cdot \frac{81}{16} = \frac{1 \cdot 3}{1 \cdot 2} = \frac{3}{2}$ ($1{,}0$ điểm).
+- Tính $(-1)^{2026} = 1 \implies M = \frac{3}{2} - 1 = \frac{1}{2}$ ($1{,}0$ điểm).
 
 **Bài 2 (3,0 điểm):**
-- Nhận xét $\dfrac{16}{25} = \left(\pm \dfrac{4}{5}\right)^2$ ($0{,}5$ điểm).
-- TH1: $x - \dfrac{1}{3} = \dfrac{4}{5} \iff x = \dfrac{4}{5} + \dfrac{1}{3} = \dfrac{17}{15}$ ($1{,}25$ điểm).
-- TH2: $x - \dfrac{1}{3} = -\dfrac{4}{5} \iff x = -\dfrac{4}{5} + \dfrac{1}{3} = -\dfrac{7}{15}$ ($1{,}0$ điểm).
-- Kết luận: $x \in \left\{-\dfrac{7}{15}; \dfrac{17}{15}\right\}$ ($0{,}25$ điểm).
+- Nhận xét $\frac{16}{25} = \left(\pm \frac{4}{5}\right)^2$ ($0{,}5$ điểm).
+- TH1: $x - \frac{1}{3} = \frac{4}{5} \iff x = \frac{4}{5} + \frac{1}{3} = \frac{17}{15}$ ($1{,}25$ điểm).
+- TH2: $x - \frac{1}{3} = -\frac{4}{5} \iff x = -\frac{4}{5} + \frac{1}{3} = -\frac{7}{15}$ ($1{,}0$ điểm).
+- Kết luận: $x \in \left\{-\frac{7}{15}; \frac{17}{15}\right\}$ ($0{,}25$ điểm).
 
 ---
 
 ### Đề số 2
 
 #### Phần I. Trắc nghiệm (4,0 điểm — Mỗi câu 1,0 điểm)
-**Câu 1:** Giá trị của $\left(-\dfrac{3}{4}\right)^3$ là:
-- A. $\dfrac{27}{64}$
-- B. $-\dfrac{27}{64}$
-- C. $-\dfrac{9}{12}$
-- D. $\dfrac{9}{12}$
+**Câu 1:** Giá trị của $\left(-\frac{3}{4}\right)^3$ là:
+- A. $\frac{27}{64}$
+- B. $-\frac{27}{64}$
+- C. $-\frac{9}{12}$
+- D. $\frac{9}{12}$
 
 **Câu 2:** Biểu thức $(x^3)^5$ bằng:
 - A. $x^8$
@@ -772,11 +772,11 @@ $$\left(x - \dfrac{1}{3}\right)^2 = \dfrac{16}{25}.$$
 - C. $x^2$
 - D. $x^{125}$
 
-**Câu 3:** Tích $\left(\dfrac{2}{5}\right)^3 \cdot \left(\dfrac{5}{2}\right)^3$ có giá trị bằng:
+**Câu 3:** Tích $\left(\frac{2}{5}\right)^3 \cdot \left(\frac{5}{2}\right)^3$ có giá trị bằng:
 - A. $1$
 - B. $0$
-- C. $\dfrac{4}{25}$
-- D. $\dfrac{8}{125}$
+- C. $\frac{4}{25}$
+- D. $\frac{8}{125}$
 
 **Câu 4:** Tìm $x$ biết $x^3 = -8$:
 - A. $x = 2$
@@ -798,7 +798,7 @@ $$3^{n + 2} - 3^n = 216.$$
 #### Trắc nghiệm:
 - Câu 1: **B** ($1{,}0$ điểm).
 - Câu 2: **B** ($1{,}0$ điểm).
-- Câu 3: **A** ($1{,}0$ điểm) ($\left(\dfrac{2}{5} \cdot \dfrac{5}{2}\right)^3 = 1^3 = 1$).
+- Câu 3: **A** ($1{,}0$ điểm) ($\left(\frac{2}{5} \cdot \frac{5}{2}\right)^3 = 1^3 = 1$).
 - Câu 4: **B** ($1{,}0$ điểm).
 
 #### Tự luận:

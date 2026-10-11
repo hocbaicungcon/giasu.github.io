@@ -23,7 +23,7 @@ Thế nhưng, một cuộc khủng hoảng toán học chấn động đã nổ 
 > Cho một mảnh đất hình vuông có diện tích đúng bằng $2\text{ m}^2$. Độ dài mỗi cạnh của mảnh đất đó bằng bao nhiêu mét?
 
 Gọi độ dài cạnh hình vuông đó là $x\text{ (m)}$ với $x > 0$. Theo công thức diện tích hình vuông, ta có $x^2 = 2$.
-Thế nhưng, dù cố gắng tìm kiếm bao nhiêu đi chăng nữa, người ta cũng không thể tìm được bất kỳ phân số hữu tỉ $\dfrac{a}{b}$ nào $(a, b \in \mathbb{Z}, b \ne 0)$ sao cho $\left(\dfrac{a}{b}\right)^2 = 2$. Số $x$ này khi viết dưới dạng số thập phân sẽ kéo dài vô tận mà **không bao giờ lặp lại tuần hoàn**:
+Thế nhưng, dù cố gắng tìm kiếm bao nhiêu đi chăng nữa, người ta cũng không thể tìm được bất kỳ phân số hữu tỉ $\frac{a}{b}$ nào $(a, b \in \mathbb{Z}, b \ne 0)$ sao cho $\left(\frac{a}{b}\right)^2 = 2$. Số $x$ này khi viết dưới dạng số thập phân sẽ kéo dài vô tận mà **không bao giờ lặp lại tuần hoàn**:
 $$x = 1{,}414213562373095\dots$$
 
 Con số kỳ bí ấy không thuộc tập hợp số hữu tỉ $\mathbb{Q}$. Nó mở ra một chân trời mới của thế giới toán học: **Số vô tỉ** và phép toán ngược của bình phương: **Căn bậc hai số học**!
@@ -35,19 +35,19 @@ Con số kỳ bí ấy không thuộc tập hợp số hữu tỉ $\mathbb{Q}$. 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px;">
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #1d4ed8;">1. Số vô tỉ (Tập hợp $\mathbb{I}$)</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Là số thập phân vô hạn <b>không tuần hoàn</b>.<br>• Ký hiệu tập hợp là $\mathbb{I}$.<br>• Không thể viết dưới dạng phân số $\dfrac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$).<br>• Ví dụ điển hình: $\sqrt{2}, \sqrt{3}, \pi = 3{,}14159\dots$</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Là số thập phân vô hạn <b>không tuần hoàn</b>.<br>• Ký hiệu tập hợp là $\mathbb{I}$.<br>• Không thể viết dưới dạng phân số $\frac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$).<br>• Ví dụ điển hình: $\sqrt{2}, \sqrt{3}, \pi = 3{,}14159\dots$</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #10b981; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #047857;">2. Căn bậc hai số học ($\sqrt{a}$)</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Điều kiện tồn tại: $a \geqslant 0$.<br>• Định nghĩa: $\sqrt{a} = x \iff x \geqslant 0$ và $x^2 = a$.<br>• Luôn không âm: $\sqrt{a} \geqslant 0$.<br>• Hằng đẳng thức căn bản: $(\sqrt{a})^2 = a$ và $\sqrt{a^2} = a$ ($a \geqslant 0$).</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Điều kiện tồn tại: $a \geqslant 0$.<br>• Định nghĩa: $\sqrt{a} = x \iff x \geqslant 0$ và $x^2 = a$.<br>• Luôn không âm: $\sqrt{a} \geqslant 0$.<br>• Hằng đẳng thức căn bản: $(\sqrt{a})^2 = a$ và $\sqrt{a^2} = a$ ($a \geqslant 0$).</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #f59e0b; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #b45309;">3. So sánh căn bậc hai</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Với hai số không âm $a, b \geqslant 0$:<br>&nbsp;&nbsp;$a < b \iff \sqrt{a} < \sqrt{b}$.<br>• Phương pháp kẹp hai số chính phương liên tiếp để ước lượng phần nguyên của căn thức.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Với hai số không âm $a, b \geqslant 0$:<br>&nbsp;&nbsp;$a < b \iff \sqrt{a} < \sqrt{b}$.<br>• Phương pháp kẹp hai số chính phương liên tiếp để ước lượng phần nguyên của căn thức.</p>
     </div>
     <div style="background: var(--card-bg, #ffffff); padding: 16px; border-radius: 8px; border-left: 4px solid #8b5cf6; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
       <h4 style="margin: 0 0 8px 0; color: #6d28d9;">4. Máy tính cầm tay & Làm tròn</h4>
-      <p style="margin: 0; font-size: 0.9em; line-height: 1.5;">• Sử dụng phím $\sqrt{\Box}$ trên máy tính.<br>• Quy tắc làm tròn chữ số: hàng đơn vị, phần mười, phần trăm.<br>• Nhận biết căn của số chính phương là số hữu tỉ; căn của số tự nhiên không chính phương là số vô tỉ.</p>
+      <p style="margin: 0; font-size: 0.9em; line-height: 1.7;">• Sử dụng phím $\sqrt{\Box}$ trên máy tính.<br>• Quy tắc làm tròn chữ số: hàng đơn vị, phần mười, phần trăm.<br>• Nhận biết căn của số chính phương là số hữu tỉ; căn của số tự nhiên không chính phương là số vô tỉ.</p>
     </div>
   </div>
 </div>
@@ -69,7 +69,7 @@ Trước khi tìm hiểu về căn bậc hai và số vô tỉ, hãy ôn lại k
 3. **Tìm số không âm $x$ thích hợp điền vào ô trống:**
    - a) $x^2 = 36$
    - b) $x^2 = 121$
-   - c) $x^2 = \dfrac{4}{25}$
+   - c) $x^2 = \frac{4}{25}$
    - d) $x^2 = 0{,}64$
 
 4. **Bài toán thực tế:** Một mảnh vườn hình vuông có diện tích $64\text{ m}^2$. Hãy tính độ dài cạnh của mảnh vườn đó. Nếu diện tích mảnh vườn là $50\text{ m}^2$ thì độ dài cạnh có phải là một số tự nhiên hay không?
@@ -84,7 +84,7 @@ Trước khi tìm hiểu về căn bậc hai và số vô tỉ, hãy ôn lại k
    - $12^2 = 12 \cdot 12 = 144.$
    - $15^2 = 15 \cdot 15 = 225.$
    - $(0{,}6)^2 = 0{,}6 \cdot 0{,}6 = 0{,}36.$
-   - $\left(\dfrac{3}{5}\right)^2 = \dfrac{3^2}{5^2} = \dfrac{9}{25}.$
+   - $\left(\frac{3}{5}\right)^2 = \frac{3^2}{5^2} = \frac{9}{25}.$
    - $(1{,}2)^2 = 1{,}2 \cdot 1{,}2 = 1{,}44.$
 
 2. **Nhận diện số chính phương:**
@@ -101,7 +101,7 @@ Trước khi tìm hiểu về căn bậc hai và số vô tỉ, hãy ôn lại k
 3. **Tìm số không âm $x$:**
    - a) Vì $x \geqslant 0$ và $6^2 = 36$ nên $x = 6.$
    - b) Vì $x \geqslant 0$ và $11^2 = 121$ nên $x = 11.$
-   - c) Vì $x \geqslant 0$ và $\left(\dfrac{2}{5}\right)^2 = \dfrac{4}{25}$ nên $x = \dfrac{2}{5}.$
+   - c) Vì $x \geqslant 0$ và $\left(\frac{2}{5}\right)^2 = \frac{4}{25}$ nên $x = \frac{2}{5}.$
    - d) Vì $x \geqslant 0$ và $(0{,}8)^2 = 0{,}64$ nên $x = 0{,}8.$
 
 4. **Giải bài toán thực tế:**
@@ -115,7 +115,7 @@ Trước khi tìm hiểu về căn bậc hai và số vô tỉ, hãy ôn lại k
 
 ### 1.1. Số vô tỉ là gì?
 
-Ở Bài 5, các em đã biết: mọi số hữu tỉ $\dfrac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$) đều viết được dưới dạng **số thập phân hữu hạn** hoặc **số thập phân vô hạn tuần hoàn**.
+Ở Bài 5, các em đã biết: mọi số hữu tỉ $\frac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$) đều viết được dưới dạng **số thập phân hữu hạn** hoặc **số thập phân vô hạn tuần hoàn**.
 
 Nhưng trong toán học còn tồn tại những số thập phân vô hạn mà phần thập phân của chúng **không bao giờ lặp lại tuần hoàn**.
 
@@ -123,7 +123,7 @@ Nhưng trong toán học còn tồn tại những số thập phân vô hạn m�
 > **Định nghĩa số vô tỉ:**
 > - **Số vô tỉ** là số thập phân vô hạn **không tuần hoàn**.
 > - Tập hợp các số vô tỉ được ký hiệu là $\mathbb{I}$ (viết tắt từ chữ tiếng Anh *Irrational numbers*).
-> - Số vô tỉ **không thể** viết được dưới dạng phân số $\dfrac{a}{b}$ với $a, b \in \mathbb{Z}, b \ne 0.$
+> - Số vô tỉ **không thể** viết được dưới dạng phân số $\frac{a}{b}$ với $a, b \in \mathbb{Z}, b \ne 0.$
 
 **Ví dụ về số vô tỉ:**
 1. Số $\pi$ (pi) - tỉ số giữa chu vi và đường kính của một đường tròn:
@@ -157,7 +157,7 @@ Nhưng trong toán học còn tồn tại những số thập phân vô hạn m�
 
 **Ví dụ minh họa:**
 - Vì $7 \geqslant 0$ và $7^2 = 49$ nên $\sqrt{49} = 7.$
-- Vì $\dfrac{3}{5} \geqslant 0$ và $\left(\dfrac{3}{5}\right)^2 = \dfrac{9}{25}$ nên $\sqrt{\dfrac{9}{25}} = \dfrac{3}{5}.$
+- Vì $\frac{3}{5} \geqslant 0$ và $\left(\frac{3}{5}\right)^2 = \frac{9}{25}$ nên $\sqrt{\frac{9}{25}} = \frac{3}{5}.$
 - Vì $0{,}4 \geqslant 0$ và $(0{,}4)^2 = 0{,}16$ nên $\sqrt{0{,}16} = 0{,}4.$
 
 > [!WARNING]
@@ -187,7 +187,7 @@ Với các số không âm, ta có hai tính chất tính toán rất quan trọ
 
 2. **Căn của một thương:** Với $a \geqslant 0, b > 0$:
    $$\sqrt{\dfrac{a}{b}} = \dfrac{\sqrt{a}}{\sqrt{b}}$$
-   *Ví dụ:* $\sqrt{\dfrac{49}{64}} = \dfrac{\sqrt{49}}{\sqrt{64}} = \dfrac{7}{8}.$
+   *Ví dụ:* $\sqrt{\frac{49}{64}} = \frac{\sqrt{49}}{\sqrt{64}} = \frac{7}{8}.$
 
 ---
 
@@ -244,8 +244,8 @@ Trên các máy tính cầm tay thông dụng (Casio fx-580VN X, fx-880BTG, Vina
 ### Dạng 1: Nhận biết số vô tỉ và phân loại tập hợp số
 
 **Phương pháp giải:**
-1. Số hữu tỉ ($\mathbb{Q}$): viết được dưới dạng phân số $\dfrac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$), tương đương với số thập phân hữu hạn hoặc vô hạn tuần hoàn.
-2. Căn bậc hai của một số chính phương hay bình phương của phân số hữu tỉ: là số hữu tỉ (ví dụ $\sqrt{16} = 4 \in \mathbb{Q}$, $\sqrt{\dfrac{4}{9}} = \dfrac{2}{3} \in \mathbb{Q}$).
+1. Số hữu tỉ ($\mathbb{Q}$): viết được dưới dạng phân số $\frac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$), tương đương với số thập phân hữu hạn hoặc vô hạn tuần hoàn.
+2. Căn bậc hai của một số chính phương hay bình phương của phân số hữu tỉ: là số hữu tỉ (ví dụ $\sqrt{16} = 4 \in \mathbb{Q}$, $\sqrt{\frac{4}{9}} = \frac{2}{3} \in \mathbb{Q}$).
 3. Số vô tỉ ($\mathbb{I}$): số thập phân vô hạn không tuần hoàn, số $\pi$, hoặc căn bậc hai của số tự nhiên không chính phương (ví dụ $\sqrt{2}, \sqrt{3}, \sqrt{5}, \sqrt{7}, \dots$).
 
 ---
@@ -260,11 +260,11 @@ $$\sqrt{36} \dots \mathbb{Q};\quad \sqrt{15} \dots \mathbb{Q};\quad \sqrt{15} \d
 
 **Lời giải chi tiết:**
 a) Ta xét từng số:
-- $-2{,}5 = -\dfrac{5}{2}$ là số thập phân hữu hạn nên là số hữu tỉ.
-- $\sqrt{36} = 6 = \dfrac{6}{1}$ là số tự nhiên nên là số hữu tỉ.
-- $\dfrac{4}{7}$ có dạng $\dfrac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$) nên là số hữu tỉ.
-- $0{,}(27) = \dfrac{27}{99} = \dfrac{3}{11}$ là số thập phân vô hạn tuần hoàn nên là số hữu tỉ.
-Vậy các số hữu tỉ là: $-2{,}5;\quad \sqrt{36};\quad \dfrac{4}{7};\quad 0{,}(27).$
+- $-2{,}5 = -\frac{5}{2}$ là số thập phân hữu hạn nên là số hữu tỉ.
+- $\sqrt{36} = 6 = \frac{6}{1}$ là số tự nhiên nên là số hữu tỉ.
+- $\frac{4}{7}$ có dạng $\frac{a}{b}$ ($a, b \in \mathbb{Z}, b \ne 0$) nên là số hữu tỉ.
+- $0{,}(27) = \frac{27}{99} = \frac{3}{11}$ là số thập phân vô hạn tuần hoàn nên là số hữu tỉ.
+Vậy các số hữu tỉ là: $-2{,}5;\quad \sqrt{36};\quad \frac{4}{7};\quad 0{,}(27).$
 
 b) Các số còn lại:
 - $\sqrt{15}$: Vì $15$ không phải là số chính phương nên $\sqrt{15}$ là số thập phân vô hạn không tuần hoàn, tức là số vô tỉ.
@@ -276,7 +276,7 @@ c) Điền ký hiệu:
 - $\sqrt{36} = 6 \in \mathbb{Q}.$
 - $\sqrt{15} \notin \mathbb{Q}.$
 - $\sqrt{15} \in \mathbb{I}.$
-- $\dfrac{4}{7} \notin \mathbb{I}.$
+- $\frac{4}{7} \notin \mathbb{I}.$
 
 ---
 
@@ -298,8 +298,8 @@ $$81;\quad 196;\quad 0{,}09;\quad 1{,}44;\quad \dfrac{49}{121};\quad 1\dfrac{9}{
 - $\sqrt{196} = 14$ (vì $14 \geqslant 0$ và $14^2 = 196$).
 - $\sqrt{0{,}09} = 0{,}3$ (vì $0{,}3 \geqslant 0$ và $(0{,}3)^2 = 0{,}09$).
 - $\sqrt{1{,}44} = 1{,}2$ (vì $1{,}2 \geqslant 0$ và $(1{,}2)^2 = 1{,}44$).
-- $\sqrt{\dfrac{49}{121}} = \dfrac{\sqrt{49}}{\sqrt{121}} = \dfrac{7}{11}.$
-- Đổi hỗn số $1\dfrac{9}{16} = \dfrac{1 \cdot 16 + 9}{16} = \dfrac{25}{16}$. Khi đó:
+- $\sqrt{\frac{49}{121}} = \frac{\sqrt{49}}{\sqrt{121}} = \frac{7}{11}.$
+- Đổi hỗn số $1\frac{9}{16} = \frac{1 \cdot 16 + 9}{16} = \frac{25}{16}$. Khi đó:
   $$\sqrt{1\dfrac{9}{16}} = \sqrt{\dfrac{25}{16}} = \dfrac{\sqrt{25}}{\sqrt{16}} = \dfrac{5}{4}.$$
 
 ---
@@ -315,9 +315,9 @@ $$C = \sqrt{10^2 - 6^2} + \sqrt{25 \cdot 144}.$$
   $$A = 4 \cdot 5 - 3 \cdot 8 + 2 \cdot 0{,}7 = 20 - 24 + 1{,}4 = -4 + 1{,}4 = -2{,}6.$$
 
 - Biểu thức $B$:
-  Ta có $\sqrt{\dfrac{81}{4}} = \dfrac{9}{2} = 4{,}5$;
+  Ta có $\sqrt{\frac{81}{4}} = \frac{9}{2} = 4{,}5$;
   $\sqrt{0{,}16} = 0{,}4 \implies 5\sqrt{0{,}16} = 5 \cdot 0{,}4 = 2$;
-  $\left(\sqrt{\dfrac{9}{25}}\right)^2 = \dfrac{9}{25} = 0{,}36$.
+  $\left(\sqrt{\frac{9}{25}}\right)^2 = \frac{9}{25} = 0{,}36$.
   Do đó:
   $$B = 4{,}5 + 2 - 0{,}36 = 6{,}5 - 0{,}36 = 6{,}14.$$
 
@@ -463,7 +463,7 @@ Vậy cần khoảng $41{,}7\text{ m}$ lưới thép.
 
 > [!IMPORTANT]
 > **Phương pháp phản chứng (Reductio ad absurdum):**
-> Để chứng minh số $x$ là số vô tỉ, ta giả sử điều ngược lại: giả sử $x$ là số hữu tỉ. Khi đó $x$ biểu diễn được dưới dạng phân số tối giản $\dfrac{a}{b}$ với $a, b \in \mathbb{Z}, b > 0, \text{ƯCLN}(a, b) = 1$. Dùng các phép biến đổi đại số suy ra mâu thuẫn (vô lý), từ đó kết luận điều giả sử là sai, tức $x$ phải là số vô tỉ.
+> Để chứng minh số $x$ là số vô tỉ, ta giả sử điều ngược lại: giả sử $x$ là số hữu tỉ. Khi đó $x$ biểu diễn được dưới dạng phân số tối giản $\frac{a}{b}$ với $a, b \in \mathbb{Z}, b > 0, \text{ƯCLN}(a, b) = 1$. Dùng các phép biến đổi đại số suy ra mâu thuẫn (vô lý), từ đó kết luận điều giả sử là sai, tức $x$ phải là số vô tỉ.
 
 #### Bài toán 1.1
 Chứng minh rằng $\sqrt{3}$ là một số vô tỉ.
@@ -482,7 +482,7 @@ $$(3k)^2 = 3b^2 \implies 9k^2 = 3b^2 \implies b^2 = 3k^2.$$
 Suy ra $b^2$ chia hết cho $3$, dẫn tới $b$ cũng phải chia hết cho $3$.
 
 Như vậy cả $a$ và $b$ đều cùng chia hết cho $3$, nghĩa là $3$ là ước chung của $a$ và $b$.
-Điều này mâu thuẫn trực tiếp với giả thiết ban đầu là $\text{ƯCLN}(a, b) = 1$ (phân số $\dfrac{a}{b}$ đã tối giản).
+Điều này mâu thuẫn trực tiếp với giả thiết ban đầu là $\text{ƯCLN}(a, b) = 1$ (phân số $\frac{a}{b}$ đã tối giản).
 Sự mâu thuẫn này chứng tỏ giả sử ban đầu là sai.
 Vậy $\sqrt{3}$ bắt buộc phải là một số vô tỉ. $\blacksquare$
 
@@ -493,7 +493,7 @@ Cho biết $\sqrt{3}$ là số vô tỉ. Chứng minh rằng số $A = 5 + 2\sqr
 Giả sử $A = 5 + 2\sqrt{3}$ là số hữu tỉ, đặt $A = q \in \mathbb{Q}$.
 Từ đẳng thức:
 $$5 + 2\sqrt{3} = q \implies 2\sqrt{3} = q - 5 \implies \sqrt{3} = \dfrac{q - 5}{2}.$$
-Vì $q \in \mathbb{Q}$ nên hiệu $q - 5 \in \mathbb{Q}$, và thương $\dfrac{q - 5}{2} \in \mathbb{Q}$.
+Vì $q \in \mathbb{Q}$ nên hiệu $q - 5 \in \mathbb{Q}$, và thương $\frac{q - 5}{2} \in \mathbb{Q}$.
 Điều này dẫn tới $\sqrt{3}$ là một số hữu tỉ, mâu thuẫn hoàn toàn với sự thật $\sqrt{3}$ là số vô tỉ.
 Vậy $A = 5 + 2\sqrt{3}$ là số vô tỉ. $\blacksquare$
 
@@ -549,7 +549,7 @@ $$\left[\sqrt{n^2 + 3n}\right] = n + 1.$$
 > [!TIP]
 > **Phương pháp giải:**
 > 1. Tìm điều kiện xác định ($x \geqslant 0$, mẫu khác $0$).
-> 2. Chia tử cho mẫu để tách phần nguyên: $P = \text{thương} + \dfrac{k}{\text{mẫu}}$.
+> 2. Chia tử cho mẫu để tách phần nguyên: $P = \text{thương} + \frac{k}{\text{mẫu}}$.
 > 3. Để $P \in \mathbb{Z}$ thì mẫu phải là ước số của tử $k$.
 > 4. Do $\sqrt{x} \geqslant 0$ nên mẫu có chặn dưới, giúp loại bỏ các ước không thỏa mãn.
 
@@ -561,12 +561,12 @@ $$P = \dfrac{\sqrt{x} + 7}{\sqrt{x} + 2}.$$
 Điều kiện: $x \geqslant 0$. Khi đó $\sqrt{x} \geqslant 0 \implies \sqrt{x} + 2 \geqslant 2 > 0$.
 Tách biểu thức $P$:
 $$P = \dfrac{(\sqrt{x} + 2) + 5}{\sqrt{x} + 2} = 1 + \dfrac{5}{\sqrt{x} + 2}.$$
-Để $P$ nhận giá trị nguyên thì $\dfrac{5}{\sqrt{x} + 2}$ phải là số nguyên, suy ra:
+Để $P$ nhận giá trị nguyên thì $\frac{5}{\sqrt{x} + 2}$ phải là số nguyên, suy ra:
 $$(\sqrt{x} + 2) \in \text{Ư}(5) = \{-5; -1; 1; 5\}.$$
 Vì $x \geqslant 0 \implies \sqrt{x} \geqslant 0 \implies \sqrt{x} + 2 \geqslant 2$.
 Do đó, trong các ước trên, chỉ có giá trị $5$ là thỏa mãn điều kiện $\geqslant 2$:
 $$\sqrt{x} + 2 = 5 \implies \sqrt{x} = 3 \implies x = 3^2 = 9.$$
-Kiểm tra lại: Với $x = 9$ thì $P = \dfrac{3 + 7}{3 + 2} = \dfrac{10}{5} = 2 \in \mathbb{Z}$ (thỏa mãn).
+Kiểm tra lại: Với $x = 9$ thì $P = \frac{3 + 7}{3 + 2} = \frac{10}{5} = 2 \in \mathbb{Z}$ (thỏa mãn).
 Vậy giá trị nguyên cần tìm là $x = 9.$
 
 ---
@@ -603,7 +603,7 @@ Vậy cặp số $(x; y)$ thỏa mãn đề bài là $(3; -4).$
 
 #### Bài toán 5.1
 a) Tìm giá trị nhỏ nhất của biểu thức: $A = \sqrt{x - 5} + 12.$
-b) Tìm giá trị lớn nhất của biểu thức: $B = \dfrac{18}{\sqrt{x} + 3}.$
+b) Tìm giá trị lớn nhất của biểu thức: $B = \frac{18}{\sqrt{x} + 3}.$
 
 **Lời giải chi tiết:**
 a) Xét biểu thức $A = \sqrt{x - 5} + 12$:
@@ -615,7 +615,7 @@ a) Xét biểu thức $A = \sqrt{x - 5} + 12$:
   $$\sqrt{x - 5} = 0 \iff x - 5 = 0 \iff x = 5\text{ (thỏa mãn)}.$$
 Vậy giá trị nhỏ nhất của $A$ là $12$, đạt được khi $x = 5.$
 
-b) Xét biểu thức $B = \dfrac{18}{\sqrt{x} + 3}$:
+b) Xét biểu thức $B = \frac{18}{\sqrt{x} + 3}$:
 - Điều kiện xác định: $x \geqslant 0$.
 - Với mọi $x \geqslant 0$, ta có $\sqrt{x} \geqslant 0$.
 - Cộng $3$ vào hai vế: $\sqrt{x} + 3 \geqslant 3 > 0$.
@@ -760,14 +760,14 @@ explanation: 'Vì \sqrt{x + 1} \geqslant 0 với mọi x \geqslant -1 nên K \ge
 - b) $\sqrt{10} \dots \mathbb{I}$
 - c) $\pi \dots \mathbb{Q}$
 - d) $-3{,}5 \dots \mathbb{I}$
-- e) $\sqrt{\dfrac{9}{16}} \dots \mathbb{Q}$
+- e) $\sqrt{\frac{9}{16}} \dots \mathbb{Q}$
 
 **Bài 2 (Tính toán căn thức cơ bản):** Tính căn bậc hai số học của các số sau:
 $$100;\quad 256;\quad 0{,}81;\quad 0{,}0016;\quad \dfrac{36}{49};\quad 2\dfrac{7}{9}.$$
 
 **Bài 3 (Tính giá trị biểu thức):** Thực hiện phép tính:
 - a) $A = 3\sqrt{49} - 2\sqrt{81} + \sqrt{121}.$
-- b) $B = \sqrt{0{,}36} \cdot \sqrt{25} - \sqrt{\dfrac{64}{25}} : \dfrac{4}{5}.$
+- b) $B = \sqrt{0{,}36} \cdot \sqrt{25} - \sqrt{\frac{64}{25}} : \frac{4}{5}.$
 - c) $C = \left(\sqrt{16} - \sqrt{9}\right) \cdot \left(\sqrt{16} + \sqrt{9}\right).$
 
 **Bài 4 (Tìm $x$):** Tìm số thực $x$, biết:
@@ -815,20 +815,20 @@ b) Tìm giá trị lớn nhất của $P$ và giá trị của $x$ tương ứng
 - a) $\sqrt{49} = 7 \in \mathbb{Q}.$
 - b) $10$ không phải số chính phương $\implies \sqrt{10} \in \mathbb{I}.$
 - c) $\pi \notin \mathbb{Q}$ (vì $\pi$ là số vô tỉ).
-- d) $-3{,}5 = -\dfrac{7}{2} \in \mathbb{Q} \implies -3{,}5 \notin \mathbb{I}.$
-- e) $\sqrt{\dfrac{9}{16}} = \dfrac{3}{4} \in \mathbb{Q}.$
+- d) $-3{,}5 = -\frac{7}{2} \in \mathbb{Q} \implies -3{,}5 \notin \mathbb{I}.$
+- e) $\sqrt{\frac{9}{16}} = \frac{3}{4} \in \mathbb{Q}.$
 
 **Bài 2:**
 - $\sqrt{100} = 10.$
 - $\sqrt{256} = 16.$
 - $\sqrt{0{,}81} = 0{,}9.$
 - $\sqrt{0{,}0016} = 0{,}04.$
-- $\sqrt{\dfrac{36}{49}} = \dfrac{6}{7}.$
-- $2\dfrac{7}{9} = \dfrac{25}{9} \implies \sqrt{2\dfrac{7}{9}} = \sqrt{\dfrac{25}{9}} = \dfrac{5}{3}.$
+- $\sqrt{\frac{36}{49}} = \frac{6}{7}.$
+- $2\frac{7}{9} = \frac{25}{9} \implies \sqrt{2\frac{7}{9}} = \sqrt{\frac{25}{9}} = \frac{5}{3}.$
 
 **Bài 3:**
 - a) $A = 3 \cdot 7 - 2 \cdot 9 + 11 = 21 - 18 + 11 = 14.$
-- b) $B = 0{,}6 \cdot 5 - \dfrac{8}{5} : \dfrac{4}{5} = 3 - \left(\dfrac{8}{5} \cdot \dfrac{5}{4}\right) = 3 - 2 = 1.$
+- b) $B = 0{,}6 \cdot 5 - \frac{8}{5} : \frac{4}{5} = 3 - \left(\frac{8}{5} \cdot \frac{5}{4}\right) = 3 - 2 = 1.$
 - c) $C = (4 - 3) \cdot (4 + 3) = 1 \cdot 7 = 7.$
 
 **Bài 4:**
@@ -938,7 +938,7 @@ b) Độ dài cạnh của tấm bìa có phải là một số hữu tỉ khôn
 - **Câu 5 (3,0 điểm):**
   - $\sqrt{36} = 6 \implies 2\sqrt{36} = 12$ *(1,0 điểm)*
   - $\sqrt{16} = 4 \implies 3\sqrt{16} = 12$ *(1,0 điểm)*
-  - $\sqrt{\dfrac{25}{4}} = \dfrac{5}{2} = 2{,}5$ *(0,5 điểm)*
+  - $\sqrt{\frac{25}{4}} = \frac{5}{2} = 2{,}5$ *(0,5 điểm)*
   - $M = 12 - 12 + 2{,}5 = 2{,}5$ *(0,5 điểm)*
 - **Câu 6 (3,0 điểm):**
   - a) Cạnh tấm bìa là $a = \sqrt{80} \approx 8{,}94427\dots \approx 8{,}94\text{ cm}$ *(1,5 điểm)*
@@ -973,7 +973,7 @@ b) Độ dài cạnh của tấm bìa có phải là một số hữu tỉ khôn
 - C) $x \leqslant 3$
 - D) $x \ne 3$
 
-**Câu 3:** Giá trị của biểu thức $P = \sqrt{0{,}64} + \sqrt{\dfrac{9}{100}}$ bằng:
+**Câu 3:** Giá trị của biểu thức $P = \sqrt{0{,}64} + \sqrt{\frac{9}{100}}$ bằng:
 - A) $1{,}1$
 - B) $0{,}11$
 - C) $0{,}73$
@@ -1003,7 +1003,7 @@ b) Độ dài cạnh của tấm bìa có phải là một số hữu tỉ khôn
 
 **Bài 1 (2,0 điểm):** Tính giá trị của các biểu thức sau:
 - a) $A = 5\sqrt{64} - 4\sqrt{49} + 3\sqrt{0{,}01}.$
-- b) $B = \sqrt{13^2 - 12^2} + \sqrt{\dfrac{144}{25}} \cdot \dfrac{5}{6}.$
+- b) $B = \sqrt{13^2 - 12^2} + \sqrt{\frac{144}{25}} \cdot \frac{5}{6}.$
 
 **Bài 2 (2,0 điểm):** Tìm số thực $x$, biết:
 - a) $3\sqrt{x} + 1 = 19$
@@ -1037,7 +1037,7 @@ b) Tìm giá trị lớn nhất của $Q$.
 - **Bài 1 (2,0 điểm):**
   - a) $A = 5 \cdot 8 - 4 \cdot 7 + 3 \cdot 0{,}1 = 40 - 28 + 0{,}3 = 12{,}3$ *(1,0 điểm)*.
   - b) $\sqrt{13^2 - 12^2} = \sqrt{169 - 144} = \sqrt{25} = 5$ *(0,5 điểm)*.
-    $\sqrt{\dfrac{144}{25}} \cdot \dfrac{5}{6} = \dfrac{12}{5} \cdot \dfrac{5}{6} = 2$ *(0,25 điểm)*.
+    $\sqrt{\frac{144}{25}} \cdot \frac{5}{6} = \frac{12}{5} \cdot \frac{5}{6} = 2$ *(0,25 điểm)*.
     $B = 5 + 2 = 7$ *(0,25 điểm)*.
 
 - **Bài 2 (2,0 điểm):**
@@ -1054,12 +1054,12 @@ b) Tìm giá trị lớn nhất của $Q$.
     Vậy cạnh miếng vàng hình vuông lớn hơn $7\text{ cm}$ và nhỏ hơn $8\text{ cm}$ *(0,5 điểm)*.
 
 - **Bài 4 (1,0 điểm):**
-  - a) Ta có $Q = \dfrac{(\sqrt{x} + 3) + 7}{\sqrt{x} + 3} = 1 + \dfrac{7}{\sqrt{x} + 3}$ *(0,25 điểm)*.
+  - a) Ta có $Q = \frac{(\sqrt{x} + 3) + 7}{\sqrt{x} + 3} = 1 + \frac{7}{\sqrt{x} + 3}$ *(0,25 điểm)*.
     Để $Q \in \mathbb{Z}$ thì $(\sqrt{x} + 3) \in \text{Ư}(7) = \{-7; -1; 1; 7\}$.
     Vì $x \geqslant 0 \implies \sqrt{x} \geqslant 0 \implies \sqrt{x} + 3 \geqslant 3$.
     Do đó $\sqrt{x} + 3 = 7 \implies \sqrt{x} = 4 \implies x = 16$ *(0,25 điểm)*.
     Vậy $x = 16$.
   - b) Vì $\sqrt{x} \geqslant 0 \implies \sqrt{x} + 3 \geqslant 3$.
-    Suy ra $\dfrac{7}{\sqrt{x} + 3} \leqslant \dfrac{7}{3} \implies Q = 1 + \dfrac{7}{\sqrt{x} + 3} \leqslant 1 + \dfrac{7}{3} = \dfrac{10}{3}$ *(0,25 điểm)*.
+    Suy ra $\frac{7}{\sqrt{x} + 3} \leqslant \frac{7}{3} \implies Q = 1 + \frac{7}{\sqrt{x} + 3} \leqslant 1 + \frac{7}{3} = \frac{10}{3}$ *(0,25 điểm)*.
     Dấu "$=$" xảy ra khi $x = 0$.
-    Vậy giá trị lớn nhất của $Q$ là $\dfrac{10}{3}$ khi $x = 0$ *(0,25 điểm)*.
+    Vậy giá trị lớn nhất của $Q$ là $\frac{10}{3}$ khi $x = 0$ *(0,25 điểm)*.
