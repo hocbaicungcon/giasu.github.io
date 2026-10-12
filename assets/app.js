@@ -19,13 +19,14 @@ import {matchesSubject} from './subject-groups.js';
   const getCanonicalTag=t=>{const c=cleanTag(t);if(!c)return '';const lower=c.toLowerCase();for(const p of posts){const found=(p.tags||[]).find(x=>cleanTag(x).toLowerCase()===lower);if(found)return cleanTag(found);}return c;};
 
   const params=new URLSearchParams(location.search);
+  const defaultGrade = $('#main')?.dataset?.defaultGrade || '';
   let category=params.get('category')||'', tag=getCanonicalTag(params.get('tag'));
   let page=Math.max(1, parseInt(params.get('page')||'1', 10) || 1);
   let visibleLimit = PAGE_SIZE;
 
   $('#search').value=params.get('q')||'';
-  $('#grade').value=params.get('grade')||'';
-  $('#type').value=params.get('type')||'';
+  if($('#grade')) $('#grade').value=defaultGrade || params.get('grade') || '';
+  if($('#type')) $('#type').value=params.get('type')||'';
   if($('#category-select')) $('#category-select').value=category;
 
   const sortControl=sorting(apply);
@@ -152,7 +153,7 @@ import {matchesSubject} from './subject-groups.js';
       visibleLimit = PAGE_SIZE;
     }
 
-    const q=normalize($('#search').value.trim()), grade=$('#grade').value, type=$('#type').value, sort=sortControl.value, tagNorm=cleanTag(tag).toLowerCase();
+    const q=normalize($('#search').value.trim()), grade=defaultGrade || $('#grade')?.value || '', type=$('#type')?.value || '', sort=sortControl.value, tagNorm=cleanTag(tag).toLowerCase();
     const list=posts.filter(p=>matchesSubject(p.category,category)&&(!tagNorm||p.tags.some(t=>cleanTag(t).toLowerCase()===tagNorm))&&(!grade||String(p.grade)===grade)&&(!type||p.type===type)&&(!q||normalize([p.title,p.description,p.category,...p.tags].join(' ')).includes(q))).sort((a,b)=>compareItems(a,b,sort));
 
     const totalPages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
@@ -196,7 +197,7 @@ import {matchesSubject} from './subject-groups.js';
     $('#active-filters').replaceChildren();
     const filters = [];
     if(category) filters.push({label: `Môn: ${category}`, clear: ()=>{category=''; if($('#category-select'))$('#category-select').value='';}});
-    if(grade) filters.push({label: `Lớp ${grade}`, clear: ()=>$('#grade').value=''});
+    if(grade && !defaultGrade) filters.push({label: `Lớp ${grade}`, clear: ()=>$('#grade').value=''});
     if(type) filters.push({label: `Loại: ${type}`, clear: ()=>$('#type').value=''});
     if(tag) filters.push({label: `#${tag}`, clear: ()=>tag=''});
     if($('#search').value.trim()) filters.push({label: `Tìm: "${$('#search').value.trim()}"`, clear: ()=>$('#search').value=''});
@@ -215,7 +216,7 @@ import {matchesSubject} from './subject-groups.js';
       resetBtn.textContent='Xóa tất cả bộ lọc ↺';
       resetBtn.onclick=()=>{
         category='';tag='';
-        $('#search').value='';$('#grade').value='';$('#type').value='';
+        $('#search').value='';if(!defaultGrade&&$('#grade'))$('#grade').value='';if($('#type'))$('#type').value='';
         if($('#category-select'))$('#category-select').value='';
         sortControl.reset();
         apply(true, false);
@@ -230,7 +231,7 @@ import {matchesSubject} from './subject-groups.js';
       category,
       tag,
       q:$('#search').value.trim(),
-      grade,
+      grade: defaultGrade ? '' : grade,
       type,
       sort:sort==='new'?'':sort,
       page:page>1?page:''
@@ -278,12 +279,21 @@ import {matchesSubject} from './subject-groups.js';
   });
 
   for(const id of ['grade','type']){
-    $('#'+id).addEventListener('change', ()=>apply(true, false));
+    if($('#'+id)) $('#'+id).addEventListener('change', ()=>{
+      if(id === 'grade' && !defaultGrade){
+        const val = $('#grade').value;
+        if(val && !category && !tag && !$('#search').value.trim() && !$('#type')?.value){
+          location.href = './lop-' + val + '.html';
+          return;
+        }
+      }
+      apply(true, false);
+    });
   }
 
   $('#reset').onclick=()=>{
     category='';tag='';
-    $('#search').value='';$('#grade').value='';$('#type').value='';
+    $('#search').value='';if(!defaultGrade&&$('#grade'))$('#grade').value='';if($('#type'))$('#type').value='';
     if($('#category-select'))$('#category-select').value='';
     sortControl.reset();
     apply(true, false);

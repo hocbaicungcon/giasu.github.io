@@ -259,6 +259,19 @@ footer>span {
   box-shadow: 0 10px 24px #243b4020;
 }
 
+.nav-grid-grades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  min-width: 220px;
+}
+
+.nav-grid-grades a {
+  text-align: center;
+  padding: 8px 6px;
+  font-size: 0.875rem;
+}
+
 .nav-submenu a {
   display: block;
   padding: 10px 12px;
