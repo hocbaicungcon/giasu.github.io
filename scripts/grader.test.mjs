@@ -16,3 +16,14 @@ test('integrated grader ships every offline runtime asset locally',()=>{
  assert.ok(!fs.existsSync(new URL('data/',root)),'Private student samples must not be published');
  assert.match(html,/https:\/\/giasu.ai.vn\/cham-thi\//);
 });
+
+test('grader exposes useful static SEO content and truthful application schema',()=>{
+ const html=fs.readFileSync(new URL('index.html',root),'utf8');
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+ const app=graph.find(node=>node['@type']==='WebApplication');
+ assert.equal(app.offers.price,0);assert.equal(app.applicationCategory,'EducationalApplication');
+ assert.ok(!app.aggregateRating&&!app.review);
+ assert.equal((html.match(/<h1\b/g)||[]).length,1);
+ assert.match(html,/id="huong-dan"/);assert.match(html,/<noscript>/);
+ for(const match of html.matchAll(/<script([^>]+)src="/g))assert.match(match[1],/defer/);
+});
