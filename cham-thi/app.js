@@ -99,6 +99,7 @@ for (const id of storedIds) $(id).addEventListener('input', () => {
   }
   save(id);
   if (id.startsWith('key')) {
+    discardDeletedKeys();
     const code = $('examSelect').value || preferredCode, draftCode = Inputs.matchingCode(exams,$('manualCode').value.trim()) || $('manualCode').value.trim().padStart(3,'0'), exam = exams.find(e => e.code === code);
     if (exam && (! $('manualCode').value.trim() || draftCode === code)) { exam.keys = keys(); persist('exams', JSON.stringify(exams)); }
     if (!editingKeyRow) renderKeyRows();
@@ -175,38 +176,73 @@ $('examSelect').addEventListener('change', () => {
   const code = $('examSelect').value; if (!code) return;
   preferredCode = code; persist('preferredCode', code);
   const r = current(); if (r) { r.keyCode = code; r.codeIssue = ''; r.manualKey = true; }
-  showKeys(code); refresh();
+  configureFromExam(exams.find(exam => exam.code === code)); showKeys(code); updateConfiguration();
 });
+function configureFromExam(exam) {
+  if (!exam) return;
+  for (let i = 1; i <= 3; i++) { $('n' + i).value = exam.keys['p' + i].length; save('n' + i); }
+}
+function applyImportedKeys(bank, type, source) {
+  bank.forEach(Inputs.validateExam);
+  discardDeletedKeys();
+  if (type === 'qr') {
+    const merged = exams.map(exam => ({ ...exam }));
+    for (const exam of bank) {
+      const code = Inputs.matchingCode(merged, exam.code), index = merged.findIndex(existing => existing.code === code);
+      if (index >= 0) merged[index] = { ...exam, code }; else merged.push(exam);
+    }
+    exams = merged;
+  } else exams = bank;
+  preferredCode = Inputs.matchingCode(exams, (bank.find(exam => exam.code === '000') || bank[0]).code);
+  persist('exams', JSON.stringify(exams)); persist('preferredCode', preferredCode); renderExamPicker();
+  records.forEach(record => { record.manualKey = false; chooseKey(record); });
+  configureFromExam(exams.find(exam => exam.code === preferredCode));
+  showKeys(preferredCode); updateConfiguration();
+  $('importStatus').classList.remove('error');
+  $('importStatus').textContent = `Đã nhập ${bank.length} mã đề từ ${source}. Số câu đã cập nhật theo đáp án; thang điểm giữ theo cấu hình của bạn.`;
+}
 async function importKeys(file, type) {
   if (!file) return; const version = ++importingVersion;
   $('importStatus').classList.remove('error'); $('importStatus').textContent = `Đang đọc ${file.name}…`;
   try {
     const bank = type === 'excel' ? await Inputs.excelFromFile(file) : type === 'document' ? await window.ChamTNAnswerDocuments.fromFile(file) : await Inputs.qrFromFile(file);
     if (version !== importingVersion) return;
-    if (type === 'qr') {
-      const merged = exams.map(exam => ({ ...exam }));
-      for (const exam of bank) {
-        const code = Inputs.matchingCode(merged, exam.code), index = merged.findIndex(existing => existing.code === code);
-        if (index >= 0) merged[index] = { ...exam, code }; else merged.push(exam);
-      }
-      exams = merged;
-    } else exams = bank;
-    preferredCode = (bank.find(exam => exam.code === '000') || bank[0]).code;
-    preferredCode = Inputs.matchingCode(exams, preferredCode);
-    persist('exams', JSON.stringify(exams)); persist('preferredCode', preferredCode); renderExamPicker();
-    records.forEach(record => { record.manualKey = false; chooseKey(record); });
-    const active = current(), selected = exams.find(exam => exam.code === (active?.keyCode || preferredCode));
-    if (selected) for (let i = 0; i < 3; i++) { $('n' + (i + 1)).value = selected.keys['p' + (i + 1)].length; save('n' + (i + 1)); }
-    showKeys(active?.keyCode || preferredCode); updateConfiguration();
-    $('importStatus').textContent = `Đã nhập ${bank.length} mã đề từ ${file.name}. Số câu đã cập nhật theo đáp án mẫu; thang điểm giữ theo cấu hình của bạn.`;
+    applyImportedKeys(bank, type, file.name);
   } catch (error) { if (version === importingVersion) { $('importStatus').classList.add('error'); $('importStatus').textContent = error.message; } }
 }
+let deletedKeys = null;
+function discardDeletedKeys(){deletedKeys=null;$('undoDeleteKeys').hidden=true;}
+function deleteKeys(all) {
+  importingVersion++;
+  const code = $('examSelect').value || preferredCode;
+  deletedKeys = { exams: JSON.parse(JSON.stringify(exams)), preferredCode, keys: [1,2,3].map(i => $('key'+i).value), counts: [1,2,3].map(i => $('n'+i).value), records: records.map(r => ({id:r.id,keyCode:r.keyCode,manualKey:r.manualKey,codeIssue:r.codeIssue})) };
+  exams = all ? [] : exams.filter(exam => exam.code !== code);
+  preferredCode = exams[0]?.code || '';
+  persist('exams',JSON.stringify(exams));persist('preferredCode',preferredCode);renderExamPicker();
+  for (let i=1;i<=3;i++) { $('key'+i).value='';save('key'+i); }
+  $('manualCode').value='';$('examInfo').textContent='';
+  records.forEach(r => {if(all || r.keyCode===code){r.keyCode='';r.manualKey=false;r.codeIssue='Đáp án mã đề đã xóa; nhập lại đáp án để chấm.';}});
+  if(exams.length)showKeys(preferredCode);else renderKeyRows();
+  $('undoDeleteKeys').hidden=false;updateConfiguration();
+  $('manualKeyStatus').textContent=all?'Đã xóa toàn bộ đáp án. Bài làm đã lưu được giữ lại.':`Đã xóa đáp án mã đề ${code}.`;
+}
+$('deleteExamKey').onclick=()=>deleteKeys(false);
+$('deleteAllKeys').onclick=()=>deleteKeys(true);
+$('undoDeleteKeys').onclick=()=>{
+ if(!deletedKeys)return;importingVersion++;
+ exams=deletedKeys.exams;preferredCode=deletedKeys.preferredCode;
+ persist('exams',JSON.stringify(exams));persist('preferredCode',preferredCode);renderExamPicker();
+ for(let i=1;i<=3;i++){$('key'+i).value=deletedKeys.keys[i-1];save('key'+i);$('n'+i).value=deletedKeys.counts[i-1];save('n'+i);}
+ for(const saved of deletedKeys.records){const r=records.find(r=>r.id===saved.id);if(r)Object.assign(r,saved);}
+ $('examSelect').value=preferredCode;$('manualCode').value=preferredCode;deletedKeys=null;$('undoDeleteKeys').hidden=true;updateConfiguration();$('manualKeyStatus').textContent='Đã khôi phục đáp án vừa xóa.';
+};
 $('saveManualKey').onclick = () => {
   const raw = $('manualCode').value.trim();
   if(!/^\d{1,4}$/.test(raw)){ $('manualKeyStatus').textContent='Mã đề cần từ 1 đến 4 chữ số.'; return; }
   const code=Inputs.matchingCode(exams,raw) || raw.padStart(3,'0'), bankKeys=keys();
   try { Inputs.validateExam({code,keys:bankKeys}); }
   catch(error){$('manualKeyStatus').textContent=error.message;return;}
+  discardDeletedKeys();
   const existing=exams.find(e=>e.code===code), firstBank=!exams.length;
   if(existing)existing.keys=bankKeys;else exams.push({code,keys:bankKeys});
   preferredCode=code;persist('exams',JSON.stringify(exams));persist('preferredCode',code);
@@ -222,7 +258,11 @@ $('qrKey').onchange = event => { importKeys(event.target.files[0], 'qr'); event.
 $('qrCameraKey').onchange = event => { importKeys(event.target.files[0], 'qr'); event.target.value = ''; };
 $('openQrImport').onclick = () => $('qrImportPicker').showModal();
 $('qrImportClose').onclick = () => $('qrImportPicker').close();
-$('qrTakePhoto').onclick = () => { $('qrImportPicker').close(); $('qrCameraKey').click(); };
+const qrCamera = window.ChamTNQrCamera.create({dialog:$('qrScanDialog'),video:$('qrScanVideo'),status:$('qrScanStatus'),onImport:bank=>{importingVersion++;applyImportedKeys(bank,'qr','camera QR');}});
+$('qrTakePhoto').onclick = () => { $('qrImportPicker').close(); stopCamera(); qrCamera.start(); };
+$('qrScanClose').onclick = () => qrCamera.stop();
+$('qrScanPhoto').onclick = () => { qrCamera.stop(); $('qrCameraKey').click(); };
+$('qrScanLibrary').onclick = () => { qrCamera.stop(); $('qrKey').click(); };
 $('qrChoosePhoto').onclick = () => { $('qrImportPicker').close(); $('qrKey').click(); };
 let qrBank = [], qrGroups = [], qrIndex = 0, qrVersion = 0;
 function qrSnapshot() {
@@ -654,6 +694,8 @@ $('batchCompleteClose').onclick = () => {
 $('batchCompleteDialog').addEventListener('cancel', event => { if (loading) { event.preventDefault(); $('batchCompleteClose').click(); } else pendingBatchFiles = []; });
 $('batchCompleteReview').onclick = () => { $('batchCompleteDialog').close(); document.querySelector('[data-view=results]').click(); $('batchPanel').scrollIntoView({block:'start'}); };
 function refresh() {
+  $('deleteExamKey').disabled = !exams.some(exam=>exam.code===($('examSelect').value||preferredCode));
+  $('deleteAllKeys').disabled = !exams.length && !Object.values(keys()).some(values=>values.length);
   saveSession();
   const r = current(); $('results').classList.toggle('hidden', !r?.answers); $('batchPanel').classList.toggle('hidden', !records.length);
   const items = records.map(assess), ready = items.filter(item => item.result?.scores).length;
