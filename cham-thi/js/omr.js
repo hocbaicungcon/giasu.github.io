@@ -140,6 +140,33 @@
     }
     return { value: marked ? labels[top.i] : '', flag: marked ? '' : top.value > .24 ? 'Không rõ hoặc tô nhiều' : 'Bỏ trống' };
   }
+  // Compare the physical columns of one short answer, never its answer key.
+  // A weak edge trace beside at least two strong digits may be an erasure.
+  // Keep it reviewable; an interior gap must never silently collapse a number.
+  function numericColumns(dot, positions) {
+    const columns = positions.map(rows => {
+      const evidence = [], occluded = [];
+      const values = rows.map(([x,y]) => { const score = dot(x,y); evidence.push(dot.lastEvidence); occluded.push(dot.lastOccluded); return score; });
+      const selected = choose(values, '0123456789'.split(''), true, evidence);
+      const digit = selected.value === '' ? -1 : Number(selected.value);
+      if (digit >= 0 && !selected.flag && occluded[digit] > .25 && evidence[digit] < .12)
+        selected.flag = 'Nét tô bị màu đánh dấu che · cần kiểm tra';
+      return { ...selected, score: digit < 0 ? 0 : values[digit], evidence: digit < 0 ? 0 : evidence[digit], position: digit < 0 ? null : rows[digit], erased: false };
+    });
+    const strong = columns.filter(c => c.value !== '' && c.score >= .75 && Number.isFinite(c.evidence) && c.evidence >= .22);
+    if (strong.length >= 2) {
+      const reference = Math.min(...strong.map(c => c.evidence));
+      for (let col = 0; col < columns.length; col++) {
+        const candidate = columns[col];
+        const edge = !columns.slice(0,col).some(c => c.value !== '') || !columns.slice(col+1).some(c => c.value !== '');
+        if (edge && candidate.value !== '' && candidate.score < .65 && Number.isFinite(candidate.evidence) && candidate.evidence < .1 && candidate.evidence < reference * .25) {
+          candidate.erased = true; candidate.erasedValue = candidate.value; candidate.value = '';
+          candidate.flag = 'Dấu tô mờ nghi đã xóa · cần kiểm tra';
+        }
+      }
+    }
+    return columns;
+  }
   function read(dot, profile = 'youngmix') {
     const standard = profile === 'standard' || profile === 'standard3';
     if (standard) { const original = dot; dot = (x,y) => {const score=original(x * 1229 / 1241,y);dot.lastEvidence=original.lastEvidence;dot.lastOccluded=original.lastOccluded;return score;}; }
@@ -168,10 +195,9 @@
     for (let q = 0; q < template.limits[2]; q++) {
       const x = standard ? 165 + q * 163.8 : 126 + q * 177.5, digits = [], columnFlags = [];
       const spacing = standard ? 34.4 : 30;
-      for (let col = 0; col < 4; col++) {
-        const result = chooseDots(Array.from({ length: 10 }, (_, d) => [x + spacing * col, standard ? 1340 + 27.15 * d : 1348 + 33 * d]), '0123456789'.split(''),true);
-        digits.push(result.value); columnFlags.push(result.flag);
-      }
+      const columns = numericColumns(dot, Array.from({length:4}, (_,col) => Array.from({length:10}, (_,d) => [x + spacing * col, standard ? 1340 + 27.15 * d : 1348 + 33 * d])));
+      for (const column of columns) { digits.push(column.value); columnFlags.push(column.flag); }
+      const erased = columns.flatMap((column,col) => column.erased ? [col + 1] : []);
       const negative = dot(x, standard ? 1286 : 1283) > .32;
       const commaResult = choose([dot(x + spacing, standard ? 1313 : 1317), dot(x + spacing * 2, standard ? 1313 : 1317)], ['1', '2']);
       const comma = commaResult.value ? Number(commaResult.value) : null;
@@ -188,7 +214,7 @@
       if (negative && value) value = '-' + value;
       const validNumber = /^-?(?:\d+(?:,\d+)?|,\d+)$/.test(value);
       const uncertain = columnFlags.some(flag => flag === 'Không rõ hoặc tô nhiều' || /cần kiểm tra/.test(flag)) || gap || !validNumber || commaResult.flag === 'Không rõ hoặc tô nhiều';
-      answers.p3.push(value); flags.p3.push(uncertain ? 'Kiểm tra số: có ô không rõ, khoảng trống hoặc dấu phẩy không rõ' : '');
+      answers.p3.push(value); flags.p3.push(erased.length ? `Kiểm tra số: dấu tô mờ nghi đã xóa ở cột ${erased.join(', ')} · cần kiểm tra` : uncertain ? 'Kiểm tra số: có ô không rõ, khoảng trống hoặc dấu phẩy không rõ' : '');
     }
     const digits = (x, columns) => Array.from({ length: columns }, (_, col) => choose(Array.from({ length: 10 }, (_, d) => dot(x + 24 * col, standard ? 195 + 33.9 * d : 200 + 34.5 * d)), '0123456789'.split('')));
     const threeCode = profile === 'standard3';
@@ -449,5 +475,5 @@
     if (part === 'p2') return { x: bases[Math.floor(index / 2)] + (index % 2) * 98 + (value === 'S' ? 49 : 0), y: 1060 + 30 * sub };
     return { x: 126 + index * 177.5, y: 1252 };
   }
-  return { template, project, detector, choose, read, recognize, autoAlign, rectify, choicePosition };
+  return { template, project, detector, choose, numericColumns, read, recognize, autoAlign, rectify, choicePosition };
 });

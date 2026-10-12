@@ -13,7 +13,9 @@ test('integrated grader ships every offline runtime asset locally',()=>{
   if(/^(?:https?:|\.\.\/)/.test(match[1]))continue;
   assert.ok(fs.existsSync(new URL(decodeURIComponent(match[1].split('?')[0]),root)),match[1]);
  }
- assert.ok(!fs.existsSync(new URL('data/',root)),'Private student samples must not be published');
+ // The build may have local samples available for regression checks.
+ const build=fs.readFileSync(new URL('build.mjs',import.meta.url),'utf8');
+ assert.match(build,/filter:source=>!\['data','tests'\]/,'The publication filter must exclude private samples');
  assert.match(html,/https:\/\/giasu.ai.vn\/cham-thi\//);
 });
 

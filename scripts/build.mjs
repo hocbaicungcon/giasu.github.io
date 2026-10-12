@@ -548,7 +548,9 @@ export function build(){
   fs.writeFileSync(htmlPath,html);
  }
  // The grader owns its styles, scripts and service worker (scope /cham-thi/).
- fs.cpSync(path.join(root,'cham-thi'),path.join(out,'cham-thi'),{recursive:true});
+ fs.cpSync(path.join(root,'cham-thi'),path.join(out,'cham-thi'),{recursive:true,filter:source=>!['data','tests'].includes(path.basename(source))});
+ // Private local grading samples must never be included in Pages artifacts.
+ fs.rmSync(path.join(out,'cham-thi/data'),{recursive:true,force:true});
  const allHtml=fs.readdirSync(out,{recursive:true}).filter(file=>file.endsWith('.html')&&file!=='404.html'&&!file.replace(/\\/g,'/').startsWith('o2edu/'));
  const sitemapItems=[];
  for(const file of allHtml){
