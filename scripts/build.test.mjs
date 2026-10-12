@@ -53,6 +53,18 @@ test('all published posts build with menu controls, compact metadata and games',
  const examFile=fs.readdirSync(new URL('../dist/de-kiem-tra/',import.meta.url)).find(f=>f.endsWith('.html')&&f!=='index.html');
  const exam=read('de-kiem-tra/'+examFile);assert.match(exam,/class="exam-meta"/);assert.doesNotMatch(exam.match(/class="exam-meta">([^<]*)/)[1],/Tiếng Việt|Tiếng Anh/);
  assert.match(read('giai-tri/games.html'),/logicholic\.com/);assert.match(home,/href="http:\/\/logicholic\.com\/"/);assert.match(read('giai-tri/index.html'),/English Riddles/);
+ for(let g=1; g<=12; g++){
+  assert.ok(fs.existsSync(new URL(`../dist/lop-${g}.html`,import.meta.url)));
+ }
+ const grade7=read('lop-7.html');
+ assert.match(grade7,/data-default-grade="7"/);
+ assert.match(grade7,/Bài học &amp; Bài tập Lớp 7/);
+ assert.match(grade7,/<div class="cards" id="cards">/);
+ assert.match(grade7,/class="grade-nav-item active"[^>]*href="\.\/lop-7\.html"/);
+ const math7=read('bai-viet/toan-7-bai-13-hai-tam-giac-bang-nhau-truong-hop-canh-canh-canh.html');
+ assert.match(math7,/href="\.\.\/lop-7\.html">Lớp 7<\/a>/);
+ const sitemap=read('sitemap.xml');
+ assert.match(sitemap,/https:\/\/giasu\.ai\.vn\/lop-7\.html/);
 });
 
 test('render interactive blocks and preserve ordinary code',()=>{
