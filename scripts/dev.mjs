@@ -16,6 +16,6 @@ function rebuild(){
   if(pending){pending=false;rebuild();}
  });
 }
-for(const dir of ['post','assets','scripts'])watch(path.join(root,dir),{recursive:true},()=>{clearTimeout(timer);timer=setTimeout(rebuild,500);});
+for(const dir of ['post','assets','scripts','cham-thi'])watch(path.join(root,dir),{recursive:true},()=>{clearTimeout(timer);timer=setTimeout(rebuild,500);});
 for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{server?.kill();process.exit();});
 rebuild();

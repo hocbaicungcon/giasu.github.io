@@ -356,7 +356,7 @@ export function build(){
  // Imported exams are already represented in posts; count each published item once.
  const popularSubjects=counts.filter(([,n])=>n>0).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'vi')).slice(0,6).map(([s])=>s);
   const homeBody=`<main id="main"><section class="hero wrap"><div><div class="kicker"><span></span> GÓC HỌC TẬP NHỎ, KHÁM PHÁ THẬT TO</div><h1>Học <span class="hero-accent">dễ hiểu.</span><br>Luyện <span class="hero-highlight">vững vàng.<svg viewBox="0 0 310 16" aria-hidden="true"><path d="M3 11 Q140 -3 305 8"/></svg></span></h1><p>Bài học gần gũi, bài tập vừa sức.<br>Cùng con khám phá kiến thức và tiến bộ mỗi ngày.</p><a class="primary" href="./thu-vien.html">Khám phá bài học <span>↗</span></a><div class="hero-note"><span>✦</span> Từ lớp 1 đến lớp 12 <i>·</i> Học theo nhịp của con</div></div><div class="hero-visual" aria-label="Bạn đồng hành học tập"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="float float-math">x² + y²</span><span class="float float-book">Aa <small>Học thêm điều hay</small></span><span class="spark spark-one">✳</span><span class="spark spark-two">✦</span><div class="mascot"><img src="./hocbaicungcon_round.svg" alt="Bạn robot đồng hành học tập" width="260" height="260" fetchpriority="high" decoding="async"></div><span class="float float-note">✓ <span>Mỗi ngày một chút,<br><b>hiểu biết thêm nhiều!</b></span></span></div></section><nav class="wrap grade-nav-strip home-grades" aria-label="Khám phá theo lớp"><span class="grade-nav-title">Khám phá theo lớp:</span><div class="grade-nav-list">${Array.from({length:12},(_,i)=>i+1).map(n=>`<a class="grade-nav-item" href="./lop-${n}.html">Lớp ${n}</a>`).join('')}</div></nav><section id="mon-hoc" class="subject-section"><div class="wrap subject-row"><div><span class="overline">BẮT ĐẦU TỪ ĐIỀU CON THÍCH</span><h2>Hôm nay, học gì nhỉ?</h2></div><div class="subject-picks">${popularSubjects.map(s=>`<a class="subject-pick" href="./thu-vien.html?category=${encodeURIComponent(s)}"><span>${esc(icons[s]||'✦')}</span>${esc(s)}</a>`).join('')}</div></div></section><section id="thu-vien" class="wrap library library-home"><div class="section-heading"><div><span class="overline">HỌC MỘT ĐIỀU MỚI MỖI NGÀY</span><h2>Bài học mới nhất<span class="dot">.</span></h2></div><p>Một nơi nhỏ, thật nhiều điều để học. Khám phá các bài học mới cập nhật hôm nay.</p></div><div class="cards" id="cards">${posts.slice(0,9).map(card).join('')}</div><div class="library-more wrap"><a class="primary see-more-btn" href="./thu-vien.html">Xem tiếp <span>↗</span></a></div></section><section id="gioi-thieu" class="wrap about"><span class="about-icon">✦</span><div><span class="overline">CÙNG CON TRÊN HÀNH TRÌNH HỌC TẬP</span><h2>Nuôi sự tò mò. Bồi đắp tự tin.</h2><p><strong class="about-brand">gia sư thông minh</strong> chia sẻ bài học và bài tập từ tiểu học đến THPT.<br>Để mỗi lần ngồi vào bàn học là một cơ hội khám phá điều mới.</p><p class="about-contact">Cần hỗ trợ? <a href="tel:0375839806">0375 839 806</a> · <a href="./gioi-thieu.html">Giới thiệu &amp; Miễn trừ trách nhiệm →</a></p></div><a href="./gioi-thieu.html" aria-label="Xem trang giới thiệu và miễn trừ trách nhiệm">↗</a></section></main><script>if(location.hash==='#thu-vien'||location.search){const p=new URLSearchParams(location.search);if(p.has('grade')&&!p.has('category')&&!p.has('tag')&&!p.has('type')&&!p.has('q')){location.replace('./lop-'+p.get('grade')+'.html');}else if(p.has('category')||p.has('tag')||p.has('grade')||p.has('type')||p.has('q')){location.replace('./thu-vien.html'+location.search);}}</script>`;
-  fs.writeFileSync(path.join(out,'index.html'),shell('Học dễ hiểu, luyện vững vàng','Bài học và bài tập từ lớp 1 đến lớp 12. Khám phá theo môn học, lớp và chủ đề.',homeBody));
+  fs.writeFileSync(path.join(out,'index.html'),shell('Bài học lớp 1–12 và chấm thi trắc nghiệm miễn phí','Bài học, bài tập và đề thi từ lớp 1 đến lớp 12. Công cụ chấm thi trắc nghiệm miễn phí từ ảnh, PDF, camera, xuất điểm Excel và PDF.',homeBody));
   const libraryBody=`<main id="main"><section class="wrap library-page-header"><nav class="eyebrow breadcrumb" aria-label="Đường dẫn bài viết"><a href="./">Trang chủ</a><span aria-hidden="true">/</span><span>Thư viện bài học</span></nav><div class="section-heading"><div><span class="overline">TỔNG HỢP KIẾN THỨC TỪ LỚP 1 ĐẾN LỚP 12</span><h1>Thư viện bài học<span class="dot">.</span></h1></div><p>Một nơi nhỏ, thật nhiều điều để học. Khám phá bài học và bài tập theo từng môn học và cấp lớp.</p></div></section><nav class="wrap grade-nav-strip" aria-label="Chọn khối lớp"><span class="grade-nav-title">Xem theo lớp:</span><div class="grade-nav-list">${Array.from({length:12},(_,i)=>i+1).map(n=>`<a class="grade-nav-item" href="./lop-${n}.html">Lớp ${n}</a>`).join('')}</div></nav><section id="thu-vien" class="wrap library"><nav class="library-sections" aria-label="Nhóm nội dung"><a class="active" aria-current="page" href="./thu-vien.html">Các môn học</a><a href="./giai-tri/">Giải trí</a></nav><div class="library-layout"><aside><h3>Môn học</h3><div class="category-list"><button class="category active" data-category="" aria-pressed="true"><span>Tất cả</span><small>${posts.length}</small></button>${counts.map(([s,n])=>`<button class="category" data-category="${s}" aria-pressed="false"><span>${s}</span><small>${n}</small></button>`).join('')}</div><div class="aside-note"><span>✳</span><h3>Chậm một chút,<br>chắc hơn một chút.</h3><p>Hiểu bài hôm nay là nền tảng cho ngày mai.</p></div></aside><div class="results"><div class="filter-bar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Tìm bài học, chủ đề…" aria-label="Tìm bài học"><button type="button" id="search-clear" class="search-clear" aria-label="Xóa tìm kiếm" hidden>×</button></label><select id="category-select" aria-label="Lọc theo môn học"><option value="">Tất cả môn học</option>${counts.map(([s,n])=>`<option value="${esc(s)}">${esc(s)} (${n})</option>`).join('')}</select><select id="grade" aria-label="Lọc theo lớp"><option value="">Tất cả lớp</option>${Array.from({length:12},(_,i)=>`<option value="${i+1}">Lớp ${i+1}</option>`).join('')}</select><select id="type" aria-label="Loại bài"><option value="">Tất cả loại bài</option><option>Bài học</option><option>Bài tập</option><option>Giai thoại</option><option>Câu đố</option></select></div><div class="result-meta"><span id="result-count" role="status">${posts.length} bài viết để khám phá</span><div class="sort-controls" aria-label="Sắp xếp"><button type="button" data-sort="name" aria-label="Sắp xếp tên A đến Z" title="Tên A → Z">A↓Z</button><button type="button" data-sort="date" aria-label="Sắp xếp mới đến cũ" title="Mới → cũ">◷↓</button></div></div><div id="active-filters"></div><div class="cards" id="cards">${posts.map(card).join('')}</div><div class="pagination-wrap" id="pagination-wrap"><button type="button" id="load-more" class="load-more-btn" hidden>Xem thêm bài viết ↓</button><nav class="pagination" id="pagination" aria-label="Phân trang bài viết"></nav></div><div id="empty" hidden><span>⌕</span><h3>Chưa tìm thấy bài phù hợp</h3><p>Thử một từ khóa khác hoặc bỏ bớt bộ lọc nhé.</p><button id="reset" class="primary">Xóa bộ lọc</button></div><noscript><p>Bật JavaScript để tìm kiếm và lọc bài viết. Bạn vẫn có thể đọc tất cả các bài bên trên.</p></noscript></div></div></section></main><script>if(location.search){const p=new URLSearchParams(location.search);const g=p.get('grade');if(g&&/^(?:[1-9]|1[0-2])$/.test(g)&&!p.get('category')&&!p.get('tag')&&!p.get('q')&&!p.get('type')){location.replace('./lop-'+g+'.html');}}</script><script type="module" src="./assets/app.js"></script>`;
   fs.writeFileSync(path.join(out,'thu-vien.html'),shell('Thư viện bài học và bài tập','Thư viện tổng hợp bài học, bài tập từ lớp 1 đến lớp 12 các môn Toán học, Ngữ văn, Ngoại ngữ, Vật lí, Hóa học, Sinh học, Lịch sử, Địa lí, CNTT... Khám phá theo môn học, lớp và chủ đề.',libraryBody));
   for(let g=1; g<=12; g++){
@@ -386,11 +386,12 @@ export function build(){
  const clientFiles=fs.readdirSync(path.join(out,'assets')).filter(f=>/\.(js|css)$/.test(f)).sort();
  const assetVersion=createHash('sha256').update(clientFiles.map(f=>fs.readFileSync(path.join(out,'assets',f),'utf8')).join('\n')).digest('hex').slice(0,12);
  for(const file of clientFiles.filter(f=>f.endsWith('.js'))){const target=path.join(out,'assets',file);fs.writeFileSync(target,fs.readFileSync(target,'utf8').replace(/(from\s*|import\s*)(['"])(\.\/[^'"?]+\.js)\2/g,(_,lead,quote,url)=>`${lead}${quote}${url}?v=${assetVersion}${quote}`));}
+ fs.writeFileSync(path.join(out,'404.html'),shell('Không tìm thấy trang','Trang bạn tìm không tồn tại. Trở về thư viện bài học hoặc sử dụng công cụ chấm thi trắc nghiệm.',`<main id="main" class="wrap library-page-header"><h1>Không tìm thấy trang</h1><p>Đường dẫn có thể đã thay đổi. Chọn một mục bên dưới để tiếp tục.</p><p><a href="/">Trang chủ</a> · <a href="/thu-vien.html">Thư viện bài học</a> · <a href="/cham-thi/">Chấm thi trắc nghiệm</a></p></main>`,'/'));
  const postMap=new Map(posts.map(p=>[p.slug,p]));
  for(const file of fs.readdirSync(out,{recursive:true}).filter(file=>file.endsWith('.html')&&!file.replace(/\\/g,'/').startsWith('cham-thi/'))){
   const htmlPath=path.join(out,file);let html=fs.readFileSync(htmlPath,'utf8');
   html=html.replace('<nav aria-label="Điều hướng chính">','<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><b class="sr-only">Mở menu</b></button><nav id="site-menu" aria-label="Điều hướng chính">');
-  const assetPrefix=file.includes('/')?'../':'./';
+  const assetPrefix=file==='404.html'?'/':file.includes('/')?'../':'./';
   html=html.replace('</head>',`<script src="${assetPrefix}assets/preferences.js"></script></head>`);
   html=html.replace('</nav></div></header>',`<div class="display-controls" role="group" aria-label="Tùy chỉnh hiển thị"><button type="button" data-action="less" aria-label="Giảm cỡ chữ" title="Giảm cỡ chữ">A−</button><button type="button" data-action="more" aria-label="Tăng cỡ chữ" title="Tăng cỡ chữ">A+</button><button type="button" data-action="font" aria-label="Chuyển font chữ" title="Chuyển font chữ" aria-pressed="false">𝑨</button><button type="button" data-action="theme" aria-label="Đổi giao diện" title="Đổi giao diện" aria-pressed="false"><span class="ui-symbol ui-symbol-moon" aria-hidden="true"></span></button></div></nav></div></header>`);
   html=html.replace('</body>','<button class="go-top" type="button" aria-label="Lên đầu trang" title="Lên đầu trang">↑</button><script src="'+assetPrefix+'assets/menu.js" defer></script><script src="'+assetPrefix+'assets/top.js" defer></script></body>');
@@ -400,16 +401,19 @@ export function build(){
   if(canonicalPath.endsWith('/index.html'))canonicalPath=canonicalPath.slice(0,-10);
   const canonical='https://giasu.ai.vn/'+canonicalPath;
   const seoTitle=html.match(/<title>([^<]*)<\/title>/)?.[1]||'gia sư thông minh';
-  const cleanTitle=seoTitle.replace(/ · gia sư thông minh$/,'');
+  const cleanTitle=decodeHtmlEntities(seoTitle.replace(/ · gia sư thông minh$/,''));
   const seoDescription=html.match(/<meta name="description" content="([^"]*)">/)?.[1]||'Bài học và bài tập dành cho học sinh lớp 1 đến lớp 12.';
   const slug=normFile.startsWith('bai-viet/')?path.basename(normFile,'.html'):null;
   const post=slug?postMap.get(slug):null;
   const imgMatch=html.match(/<article[\s\S]*?<img[^>]+src="([^">]+)"/);
   let ogImage='https://giasu.ai.vn/assets/og-cover.png';
   if(imgMatch){
-   let src=imgMatch[1].replace(/^\.\.\//,'/').replace(/^\.\//,'/');
-   if(!src.startsWith('/'))src='/'+src;
-   ogImage='https://giasu.ai.vn'+src;
+   try {
+    const imageUrl=new URL(imgMatch[1],canonical);
+    const isLocal=imageUrl.origin==='https://giasu.ai.vn';
+    const localExists=!isLocal||fs.existsSync(path.join(out,decodeURIComponent(imageUrl.pathname)));
+    if(/^https?:$/.test(imageUrl.protocol)&&/\.(?:png|jpe?g|webp)(?:$|\?)/i.test(imageUrl.href)&&localExists)ogImage=imageUrl.href;
+   } catch {} // A malformed or unsupported article image uses the branded default.
   }
   const twitterCard=(imgMatch||normFile==='index.html')?'summary_large_image':'summary';
   let schema;
@@ -420,7 +424,7 @@ export function build(){
      '@id':`${canonical}#article`,
      isPartOf:{'@id':canonical},
      headline:cleanTitle,
-     description:seoDescription,
+     description:decodeHtmlEntities(seoDescription),
      url:canonical,
      datePublished:`${post.date}T00:00:00+07:00`,
      dateModified:`${post.date}T00:00:00+07:00`,
@@ -431,7 +435,7 @@ export function build(){
       '@id':'https://giasu.ai.vn/#organization',
       name:'gia sư thông minh',
       url:'https://giasu.ai.vn/',
-      logo:{'@type':'ImageObject',url:'https://giasu.ai.vn/assets/og-cover.png'}
+      logo:{'@type':'ImageObject',url:'https://giasu.ai.vn/hocbaicungcon_round.svg'}
      },
      author:{'@type':'Organization',name:'gia sư thông minh',url:'https://giasu.ai.vn/'},
      articleSection:post.category,
@@ -465,7 +469,7 @@ export function build(){
      '@id':`${canonical}#collection`,
      name:pageName,
      url:canonical,
-     description:seoDescription,
+     description:decodeHtmlEntities(seoDescription),
      inLanguage:'vi',
      isPartOf:{'@id':'https://giasu.ai.vn/#website'}
     },
@@ -482,7 +486,7 @@ export function build(){
      '@id':'https://giasu.ai.vn/gioi-thieu.html#about',
      name:'Giới thiệu & Miễn trừ trách nhiệm',
      url:'https://giasu.ai.vn/gioi-thieu.html',
-     description:seoDescription,
+     description:decodeHtmlEntities(seoDescription),
      inLanguage:'vi',
      isPartOf:{'@id':'https://giasu.ai.vn/#website'},
      about:{'@id':'https://giasu.ai.vn/#organization'}
@@ -503,7 +507,7 @@ export function build(){
      '@id':'https://giasu.ai.vn/#website',
      name:'gia sư thông minh',
      url:'https://giasu.ai.vn/',
-     description:seoDescription,
+     description:decodeHtmlEntities(seoDescription),
      inLanguage:'vi',
      publisher:{'@id':'https://giasu.ai.vn/#organization'}
     },
@@ -512,7 +516,7 @@ export function build(){
      '@id':'https://giasu.ai.vn/#organization',
      name:'gia sư thông minh',
      url:'https://giasu.ai.vn/',
-     logo:'https://giasu.ai.vn/assets/og-cover.png',
+     logo:'https://giasu.ai.vn/hocbaicungcon_round.svg',
      telephone:'0375839806'
     }
    ]};
@@ -521,7 +525,7 @@ export function build(){
     {
      '@type':'WebPage',
      name:cleanTitle,
-     description:seoDescription,
+     description:decodeHtmlEntities(seoDescription),
      url:canonical,
      inLanguage:'vi'
     },
@@ -538,22 +542,21 @@ export function build(){
   if(post){
    articleMeta=`<meta property="article:published_time" content="${post.date}T00:00:00+07:00"><meta property="article:section" content="${esc(post.category)}">`+(post.tags||[]).map(t=>`<meta property="article:tag" content="${esc(t)}">`).join('');
   }
-  const seo=`<link rel="canonical" href="${canonical}"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta property="og:locale" content="vi_VN"><meta property="og:type" content="${post?'article':'website'}"><meta property="og:title" content="${seoTitle}"><meta property="og:description" content="${seoDescription}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="${ogImage}"><meta property="og:image:alt" content="${esc(cleanTitle)}"><meta name="twitter:card" content="${twitterCard}"><meta name="twitter:title" content="${seoTitle}"><meta name="twitter:description" content="${seoDescription}"><meta name="twitter:image" content="${ogImage}"><meta name="twitter:image:alt" content="${esc(cleanTitle)}">${articleMeta}<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>`;
+  const seo=`<link rel="canonical" href="${canonical}"><meta name="robots" content="${normFile==='404.html'?'noindex,follow':'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'}"><meta property="og:locale" content="vi_VN"><meta property="og:type" content="${post?'article':'website'}"><meta property="og:title" content="${seoTitle}"><meta property="og:description" content="${seoDescription}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="${ogImage}"><meta property="og:image:alt" content="${esc(cleanTitle)}"><meta name="twitter:card" content="${twitterCard}"><meta name="twitter:title" content="${seoTitle}"><meta name="twitter:description" content="${seoDescription}"><meta name="twitter:image" content="${ogImage}"><meta name="twitter:image:alt" content="${esc(cleanTitle)}">${articleMeta}<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>`;
   html=html.replace('</head>',`${seo}</head>`);
   html=html.replace(/((?:src|href)="[^"?]*assets\/[^"?]+\.(?:js|css))"/g,`$1?v=${assetVersion}"`);
   fs.writeFileSync(htmlPath,html);
  }
  // The grader owns its styles, scripts and service worker (scope /cham-thi/).
  fs.cpSync(path.join(root,'cham-thi'),path.join(out,'cham-thi'),{recursive:true});
- const today=new Date().toISOString().slice(0,10);
- const allHtml=fs.readdirSync(out,{recursive:true}).filter(file=>file.endsWith('.html'));
+ const allHtml=fs.readdirSync(out,{recursive:true}).filter(file=>file.endsWith('.html')&&file!=='404.html'&&!file.replace(/\\/g,'/').startsWith('o2edu/'));
  const sitemapItems=[];
  for(const file of allHtml){
   const norm=file.replace(/\\/g,'/');
   let urlPath=norm==='index.html'?'':norm;
   if(urlPath.endsWith('/index.html'))urlPath=urlPath.slice(0,-10);
   const loc='https://giasu.ai.vn/'+urlPath;
-  let priority='0.7';let changefreq='monthly';let lastmod=today;
+  let priority='0.7';let changefreq='monthly';let lastmod=null;
   if(norm==='index.html'){priority='1.0';changefreq='daily';}
   else if(norm==='thu-vien.html'||/^lop-\d+\.html$/.test(norm)){priority='0.9';changefreq='daily';}
   else if(norm==='gioi-thieu.html'){priority='0.8';changefreq='monthly';}
@@ -569,7 +572,7 @@ export function build(){
  }
  const uniqueUrls=Array.from(new Map(sitemapItems.map(item=>[item.loc,item])).values())
   .sort((a,b)=>(Number(b.priority)-Number(a.priority))||a.loc.localeCompare(b.loc));
- const sitemapXml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniqueUrls.map(u=>`  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>\n`;
+ const sitemapXml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniqueUrls.map(u=>`  <url>\n    <loc>${u.loc}</loc>\n${u.lastmod?`    <lastmod>${u.lastmod}</lastmod>\n`:""}    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>\n`;
  fs.writeFileSync(path.join(out,'sitemap.xml'),sitemapXml);
  fs.writeFileSync(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nDisallow: /o2edu/\nSitemap: https://giasu.ai.vn/sitemap.xml\n');
  console.log(`Built ${posts.length} posts into dist/`);return posts;
