@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 const root=path.resolve('dist');
+assert.ok(!fs.existsSync(path.join(root,'cham-thi/data')),'Private student samples must not be published');
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html')&&f!=='404.html'&&!f.startsWith('o2edu/'));
 const urls=new Set();
 for(const file of files){

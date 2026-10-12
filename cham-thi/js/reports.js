@@ -153,13 +153,9 @@
             const base = standard ? 165 + i * 163.8 : 126 + i * 177.5;
             const sx = v => standard ? v * 1229 / 1241 : v;
             const spacing = standard ? 34.4 : 30;
-            for (let col = 0; col < 4; col++) {
-              const px = sx(base + spacing * col);
-              const ys = Array.from({length:10}, (_,d) => standard ? 1340 + 27.15*d : 1348 + 33*d);
-              const evidence = [];
-              const values = ys.map(y => { const value = numericDot(px,y); evidence.push(numericDot.lastEvidence); return value; });
-              const selected = O.choose(values, '0123456789'.split(''), true, evidence);
-              if (selected.value) mark(sheetCtx, {x:px,y:ys[Number(selected.value)]}, correct);
+            const positions = Array.from({length:4}, (_,col) => Array.from({length:10}, (_,d) => [sx(base + spacing * col), standard ? 1340 + 27.15*d : 1348 + 33*d]));
+            for (const selected of O.numericColumns(numericDot, positions)) {
+              if (selected.value) mark(sheetCtx, {x:selected.position[0],y:selected.position[1]}, correct);
             }
             const negativeY = standard ? 1286 : 1283, commaY = standard ? 1313 : 1317;
             if (numericDot(sx(base), negativeY) > .32) mark(sheetCtx, {x:sx(base),y:negativeY},correct);

@@ -17,3 +17,6 @@ o2edu/*
 !o2edu/drive_links.csv
 *.wpress
 __pycache__/
+
+# Private local grading samples; never publish student papers.
+cham-thi/data/
