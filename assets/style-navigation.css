@@ -847,3 +847,11 @@ html[data-theme="dark"] footer .brand.small .dot {
   color: #b96358;
   -webkit-text-fill-color: #b96358;
 }
+
+/* Keep grading beside the brand, outside the collapsible navigation. */
+header .grading-link{display:flex;align-items:center;gap:7px;padding:10px 12px;border:1px solid #b6ddd8;border-radius:12px;background:#e6f7f5;color:#146d76;font-size:.875rem;font-weight:700;line-height:1.35;flex-shrink:0;margin-right:auto;max-width:190px}
+header .grading-link svg{width:22px;height:22px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+header .grading-link:hover{background:#cfece7}
+header .grading-link:focus-visible{outline:2px solid #1598b3;outline-offset:3px}
+@media(max-width:620px){header .nav{gap:8px}header .brand{flex-shrink:0}header .brand>span{display:none}header .grading-link{font-size:.8rem;padding:8px;max-width:170px}header .grading-link svg{width:20px;height:20px}}
+html[data-theme="dark"] header .grading-link{background:#eadabb;border-color:#d6b786;color:#624625}
