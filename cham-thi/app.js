@@ -38,6 +38,17 @@ const emptyKeys = () => ({ p1: [], p2: [], p3: [] });
 const current = () => records.find(record => record.id === activeId);
 const paperViewer = window.ChamTNPaperViewer.create({
   dialog: $('paperViewer'),
+  download: async (id,type) => {
+    const record=records.find(record=>record.id===id);if(!record)throw new Error('Phiếu không còn trong danh sách.');
+    const label=record.label.replace(/\.[a-z0-9]{2,5}(?=\s|$)/gi,'').replace(/[^\p{L}\p{N}._-]+/gu,'-').slice(0,90)||'bai-lam';
+    if(type==='original'){
+      const blob=await new Promise((resolve,reject)=>record.source.toBlob(blob=>blob?resolve(blob):reject(new Error('Không tạo được ảnh gốc.')),'image/png'));
+      download(blob,`${label}-goc.png`,'image/png');
+    }else{
+      const image=await Reports.annotatedJpeg(assess(record),config(),$('exportQuality').value);
+      download(image,`${label}-da-cham.jpg`,'image/jpeg');
+    }
+  },
   getIds: () => records.filter(record => record.answers).map(record => record.id),
   render: id => {
     selectRecord(id); annotatedView = true; draw(); saveSession();
