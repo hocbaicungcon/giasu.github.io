@@ -4,13 +4,19 @@ function swipeDirection(dx,dy,duration=0){
  if(duration>1600||Math.max(Math.abs(dx),Math.abs(dy))<45)return 0;
  return Math.abs(dx)>Math.abs(dy)?(dx>0?1:-1):(dy<0?1:-1);
 }
-function create({dialog,getIds,render}){
+function create({dialog,getIds,render,download}){
  const stage=dialog.querySelector('.paper-viewer-stage'),canvas=dialog.querySelector('canvas');
  const previous=dialog.querySelector('[data-paper-prev]'),next=dialog.querySelector('[data-paper-next]');
- let currentId='',start=null,returnFocus=null;
+ let currentId='',start=null,returnFocus=null,downloading=false;
+ const downloads=Array.from(dialog.querySelectorAll('[data-paper-download]')),status=dialog.querySelector('[data-paper-download-status]');
+ for(const button of downloads)button.onclick=async()=>{
+  if(downloading||!currentId)return;const id=currentId;downloading=true;downloads.forEach(b=>b.disabled=true);status.textContent='Đang tạo ảnh…';
+  try{await download(id,button.dataset.paperDownload);status.textContent='Đã tải ảnh của phiếu đã chọn.';}catch(error){status.textContent='Không tải được ảnh: '+error.message;}
+  finally{downloading=false;downloads.forEach(b=>b.disabled=false);}
+ };
  function show(id){
   const ids=getIds(),index=ids.indexOf(id);if(index<0)return;
-  currentId=id;const item=render(id);canvas.width=item.image.width;canvas.height=item.image.height;
+  currentId=id;if(!downloading)status.textContent='';const item=render(id);canvas.width=item.image.width;canvas.height=item.image.height;
   canvas.getContext('2d').drawImage(item.image,0,0);
   dialog.querySelector('[data-paper-title]').textContent=item.label;
   dialog.querySelector('[data-paper-counter]').textContent=`${index+1} / ${ids.length}${item.score?' · '+item.score:''}`;
