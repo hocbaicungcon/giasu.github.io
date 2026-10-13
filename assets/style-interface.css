@@ -1,0 +1,48 @@
+/* Compact course navigation, using the site's own branding. */
+body header,body:has(.lesson-course) header{background:#181923;border:0;box-shadow:0 1px 4px #0003;color:#eee}
+body header .nav,body:has(.lesson-course) header .nav{height:48px;min-height:48px;padding-block:4px}
+body header .brand,body:has(.lesson-course) header .brand{color:#f6f7fa;font:600 15px/1.1 "Source Sans Pro",sans-serif;letter-spacing:0;gap:7px}
+body header .brand-name{color:#a6dce7}
+body header .brand img,body:has(.lesson-course) header .brand img{width:30px;height:30px;background:transparent}
+body header .grading-link,body:has(.lesson-course) header .grading-link{min-height:34px;background:#ffffff0e;border-color:#ffffff25;color:#d4edf2;padding:3px 8px;box-shadow:none}
+body header .grading-label span:first-child{color:#b2d5de}
+body header .grading-free{top:-5px;font-size:8px}
+body header .nav-exams>summary{color:#d4d4da;font-weight:400}
+body header .nav-pill{color:#eee;background:transparent;border:0;box-shadow:none;padding-block:5px}
+body header .display-controls button{color:#d4d4da}
+body header .display-controls{border-color:#ffffff25}
+body header .menu-toggle{color:#fff;background:transparent;border:0}
+body header .menu-toggle span{background:#eee}
+.lesson-course .article-toc{top:48px}
+.lesson-course .article-toc .toc-nav a{border:0;padding-block:9px}
+.lesson-course .article-toc .toc-nav a:hover,.lesson-course .article-toc .toc-nav a.active{border:0;background:#ffffff20}
+.lesson-course .article-toc .toc-title{font-size:12px;text-transform:uppercase;letter-spacing:.5px;opacity:.75}
+.course-toc-toggle{display:none}
+.course-toc-dialog{position:fixed;inset:0 auto 0 0;box-sizing:border-box;width:min(300px,calc(100vw - 52px));height:100dvh;max-height:100dvh;max-width:none;margin:0;padding:0;border:0;border-radius:0;background:#205c6b;color:#fff;font:400 16px/1.4 "Source Sans Pro",sans-serif;overflow:auto;box-shadow:6px 0 24px #0003}
+.course-toc-dialog::backdrop{background:#14192366}
+.course-toc-dialog .course-sidebar-heading{padding:48px 22px 24px;min-height:0}
+.course-toc-dialog .toc-sticky{padding:18px 0;position:static}
+.course-toc-dialog .toc-title{color:#fff;padding:0 22px 12px;font-size:12px;text-transform:uppercase;opacity:.7}
+.course-toc-dialog .toc-icon{display:none}
+.course-toc-dialog .toc-list{margin:0;padding:0;list-style:none}
+.course-toc-dialog .toc-item{margin:0;padding:0}
+.course-toc-dialog .toc-nav{display:block}
+.course-toc-dialog .toc-nav a{display:block;padding:10px 22px;font:400 16px/1.4 "Source Sans Pro",sans-serif;color:#e8f4f6;border:0;border-radius:0;text-decoration:none}
+.course-toc-dialog .toc-level-3 a{padding-left:34px;font-size:15px}
+.course-toc-dialog .toc-nav a.active,.course-toc-dialog .toc-nav a:hover{background:#ffffff20;color:#fff}
+.course-toc-dialog .toc-top-btn{width:calc(100% - 44px);margin:20px 22px;color:#fff;border-color:#ffffff50;background:transparent}
+.course-toc-close{position:absolute;right:10px;top:8px;width:36px;height:36px;border:0;background:transparent;color:#fff;font:28px/1 sans-serif;cursor:pointer}
+@media(max-width:1000px){
+ .course-toc-ready .lesson-course .toc-box{display:none}
+ .course-toc-toggle{display:grid;place-items:center;position:fixed;left:20px;bottom:24px;z-index:40;width:46px;height:46px;border:0;border-radius:50%;color:#fff;background:#247f91;box-shadow:0 3px 14px #12343c40;cursor:pointer}
+ .course-toc-toggle svg{width:22px;height:22px;fill:currentColor;stroke:currentColor;stroke-width:1.5}
+}
+@media(max-width:620px){
+ body header .nav,body:has(.lesson-course) header .nav{height:52px;min-height:52px;padding-block:5px}
+ body header nav#site-menu .nav-exams>summary{color:#555}
+ body header nav#site-menu .nav-pill{color:#444;background:#e7f4f5}
+ body header nav#site-menu .display-controls button{color:#444}
+ body.menu-open header,body.menu-open:has(.lesson-course) header{background:#181923}
+ body header .grading-link svg{width:16px;height:16px}
+}
+@media print{.course-toc-toggle,.course-toc-dialog,.glossary-popup{display:none!important}}

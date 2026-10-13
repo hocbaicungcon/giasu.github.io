@@ -28,8 +28,18 @@ const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategor
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
 test('reject incorrect metadata and malformed mathematics',()=>{assert.throws(()=>parsePost(source.replace('grade: 10','grade: 13'),'thu.md'),/lớp/);assert.throws(()=>parsePost(source.replace('2026-09-17','2026-02-31'),'thu.md'),/ngày/);assert.throws(()=>parsePost(source.replace('Toán học','Không có'),'thu.md'),/môn học/);assert.throws(()=>parsePost(source.replace('x_1 + x_2','\\invalidcommand'),'thu.md'));});
 test('all published posts build with menu controls, compact metadata and games',()=>{
- assert.ok(build().every(p=>p.slug&&p.html));
+ const published=build();assert.ok(published.every(p=>p.slug&&p.html));
+ const lessons=published.filter(p=>p.type==='Bài học');
+ const audit=JSON.parse(fs.readFileSync(new URL('../dist/assets/data/lesson-interactivity-audit.json',import.meta.url),'utf8'));
+ assert.equal(audit.covered,lessons.length);assert.equal(audit.totalLessons,lessons.length);
+ for(const lesson of lessons){const page=fs.readFileSync(new URL('../dist/bai-viet/'+lesson.slug+'.html',import.meta.url),'utf8');assert.match(page,/data-lesson-practice/);assert.match(page,/lesson-course/);}
+
  const read=file=>fs.readFileSync(new URL('../dist/'+file,import.meta.url),'utf8');
+ const grader=read('cham-thi/index.html');
+ const sharedCss=grader.match(/href="(\.\.\/assets\/style\.css\?v=[^"]+)"/)[1];
+ assert.ok(JSON.parse(read('cham-thi/offline-assets.json')).includes(sharedCss),'The shared grading CSS must be available offline');
+ assert.doesNotMatch(grader,/href="style\.css/);
+ assert.match(read('assets/style.css'),/\.grading-page/);
  const home=read('index.html');assert.match(home,/<nav id="site-menu"[\s\S]*class="display-controls"[\s\S]*<\/nav>/);assert.doesNotMatch(home,/class="display-bar"|phút đọc/);
  assert.match(home,/<a[^>]*class="[^"]*see-more-btn[^"]*"[^>]*href="\.\/thu-vien\.html"[^>]*>Xem tiếp/);
  const homeCards=home.match(/<article class="card"/g)||[];assert.equal(homeCards.length,9);

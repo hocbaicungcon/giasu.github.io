@@ -1,7 +1,7 @@
 /* credit: giasu.ai.vn */
 import fs from 'node:fs';
 import path from 'node:path';
-import katex from 'katex';
+import {renderMath} from './math.mjs';
 import {escapeHTML} from './interactive.mjs';
 export const normalizeTerm = value => value.normalize('NFC').toLocaleLowerCase('vi').replace(/\s+/g,' ').trim();
 export function prepareGlossary(master,supplement=[],definitions={}){
@@ -20,7 +20,7 @@ export function prepareGlossary(master,supplement=[],definitions={}){
   const renderText=text=>text.split(/(\$[^$]+\$)/g).map(part=>{
    if(!part.startsWith('$')||!part.endsWith('$'))return escapeHTML(part);
    const tex=part.slice(1,-1).replace(/\\\\(?=[A-Za-z])/g,'\\');
-   try{return katex.renderToString(tex,{throwOnError:true,strict:false});}catch{return escapeHTML(part);}
+   try{return renderMath(tex,{throwOnError:true,strict:false});}catch{return escapeHTML(part);}
   }).join('');
   const html=renderText(definition),termHtml=renderText(term.term);
   return {...term,aliases:[...new Set(variants.map(normalizeTerm))].filter(s=>s.length>=4&&!s.includes('$')),definition,definitionSource,html,termHtml};

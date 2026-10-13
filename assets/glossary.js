@@ -21,7 +21,7 @@
   const seen=new Map(),present=new Set();
   for(const article of articles){
    const walker=document.createTreeWalker(article,NodeFilter.SHOW_TEXT,{acceptNode(node){
-    return node.parentElement.closest('a,button,input,textarea,select,form,h1,h2,h3,h4,h5,h6,summary,pre,code,svg,math,.katex,script,style,.geometry-lab,[data-no-glossary]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
+    return node.parentElement.closest('a,button,input,textarea,select,form,h1,h2,h3,h4,h5,h6,summary,pre,code,svg,math,.katex,script,style,.geometry-lab,.lesson-practice,[data-no-glossary]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
    }}),nodes=[];
    while(walker.nextNode())nodes.push(walker.currentNode);
    for(const node of nodes){
@@ -45,6 +45,27 @@
   dialog.innerHTML='<div class="glossary-dialog-heading"><h2 id="glossary-title">Tra cứu thuật ngữ Toán</h2><button type="button" data-close aria-label="Đóng tra cứu">✕</button></div><div class="glossary-search"><label for="glossary-search">Tìm thuật ngữ</label><input id="glossary-search" type="search" placeholder="Ví dụ: góc, hàm số, xác suất…" autocomplete="off"><label class="glossary-filter"><input type="checkbox" data-in-lesson> Chỉ thuật ngữ trong bài này</label></div><p class="glossary-count" role="status"></p><div class="glossary-results"></div><div class="glossary-detail" hidden></div>';
   document.body.append(dialog);
   const search=dialog.querySelector('input[type="search"]'),filter=dialog.querySelector('[data-in-lesson]'),results=dialog.querySelector('.glossary-results'),detail=dialog.querySelector('.glossary-detail'),count=dialog.querySelector('.glossary-count');
+  const popup=document.createElement('dialog');popup.className='glossary-popup';popup.setAttribute('aria-labelledby','glossary-popup-title');
+  popup.innerHTML='<button type="button" data-popup-close aria-label="Đóng giải nghĩa">×</button><h3 id="glossary-popup-title"></h3><div class="glossary-definition"></div><details class="glossary-popup-source"><summary>Nguồn tham khảo</summary><p></p></details>';
+  document.body.append(popup);
+  let popupOpener;
+  const closePopup=restore=>{if(!popup.open)return;popup.close();popupOpener?.setAttribute('aria-expanded','false');if(restore)popupOpener?.focus();};
+  const openPopup=(target,id)=>{
+   const term=byId.get(id);if(!term)return;
+   closePopup(false);popupOpener=target;
+   popup.querySelector('h3').innerHTML=term.termHtml;popup.querySelector('.glossary-definition').innerHTML=term.html||'Chưa có giải nghĩa.';
+   const source=popup.querySelector('details');source.open=false;source.querySelector('p').textContent=[term.definitionSource,term.source,term.pages].filter(Boolean).join(' · ');source.hidden=!source.querySelector('p').textContent;
+   popup.show();target.setAttribute('aria-expanded','true');
+   const anchor=target.getBoundingClientRect(),box=popup.getBoundingClientRect(),gap=10,margin=12;
+   const left=Math.max(margin,Math.min(anchor.left+anchor.width/2-box.width/2,window.innerWidth-box.width-margin));
+   const below=anchor.bottom+gap,above=anchor.top-box.height-gap;
+   popup.style.left=left+'px';popup.style.top=Math.max(margin,below+box.height<window.innerHeight-margin?below:above>=margin?above:Math.min(below,window.innerHeight-box.height-margin))+'px';
+  };
+  popup.querySelector('[data-popup-close]').addEventListener('click',()=>closePopup(true));
+  document.addEventListener('pointerdown',event=>{if(popup.open&&!popup.contains(event.target)&&!event.target.closest('.glossary-term'))closePopup(false);});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&popup.open){event.preventDefault();closePopup(true);}});
+  window.addEventListener('resize',()=>closePopup(false));
+  window.addEventListener('scroll',event=>{if(!popup.contains(event.target))closePopup(false);},true);
   let opener;
   const showList=()=>{
    detail.hidden=true;results.hidden=false;dialog.querySelector('.glossary-search').hidden=false;count.hidden=false;
@@ -73,23 +94,19 @@
    detail.append(back,title,definition,source);
   };
   const open=(target,id)=>{
-   opener=target;
+   closePopup(false);opener=target;
    if(id)showTerm(id);else showList();
    if(!dialog.open)dialog.showModal();
    if(id)dialog.querySelector('[data-close]').focus();else search.focus();
   };
   document.addEventListener('click',event=>{
    const button=event.target.closest('button[data-term]');if(!button)return;
-   if(dialog.contains(button)){showTerm(button.dataset.term);dialog.querySelector('[data-close]').focus();}else open(button,button.dataset.term);
+   if(dialog.contains(button)){showTerm(button.dataset.term);dialog.querySelector('[data-close]').focus();}else openPopup(button,button.dataset.term);
   });
   dialog.querySelector('[data-close]').addEventListener('click',()=>dialog.close());
   dialog.addEventListener('close',()=>opener?.focus());
   dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
   search.addEventListener('input',showList);filter.addEventListener('change',showList);
-  const toolbar=document.createElement('div');toolbar.className='glossary-toolbar';
-  const lookup=document.createElement('button');lookup.type='button';lookup.textContent='Tra cứu thuật ngữ Toán';lookup.setAttribute('aria-haspopup','dialog');lookup.addEventListener('click',()=>open(lookup));
-  const note=document.createElement('span');note.textContent='Bấm vào từ có gạch chân để xem giải nghĩa.';
-  toolbar.append(lookup,note);articles[0].prepend(toolbar);
   // Definitions may contain KaTeX even on lessons with no original formula.
   if(!document.querySelector('link[href*="katex.min.css"]')){
    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('katex/katex.min.css',script.src);document.head.append(link);
