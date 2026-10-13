@@ -14,8 +14,20 @@ test('upright letters and text labels use sans-serif metrics without changing th
  for(const tex of ['\\mathrm{ABC}','5\\,\\mathrm{cm}','\\text{Diện tích}','\\textrm{cm}']){
   const html=renderMath(tex,{throwOnError:true,macros:{'\\unit':'\\mathrm{cm}'}});
   assert.doesNotMatch(html,/class="[^"]*\bmathrm\b/);
-  assert.match(html,/class="[^"]*(?:mathsf|textsf)/);
+  assert.match(html,/class="[^"]*(?:mathsf|textsf|math-vietnamese)/);
   assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));
  }
  assert.match(renderMath('\\unit',{macros:{'\\unit':'\\mathrm{cm}'}}),/mathsf/);
+});
+test('Vietnamese labels retain complete Unicode glyphs and accessible source',()=>{
+ for(const label of ['ƯCLN','ƯC','ước chung lớn nhất','Số học','Diện tích']){
+  const tex=`\\text{${label}}(a,b)`,html=renderMath(tex,{throwOnError:true});
+  assert.match(html,/math-vietnamese/);assert.ok(html.includes('>'+label+'</span>'));assert.ok(html.split('katex-html')[0].includes(label.split(' ')[0]));
+  assert.doesNotMatch(html,/latin_fallback/);assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));
+ }
+ assert.doesNotMatch(renderMath('\\htmlClass{untrusted}{x}',{throwOnError:true}),/class="[^"]*untrusted/);
+});
+
+test('math comparisons embedded in raw HTML decode angle entities before rendering',()=>{
+ const html=renderMath('a &lt; b &gt; 0',{throwOnError:true});assert.match(html,/class="katex"/);assert.match(html,/<annotation encoding="application\/x-tex">a &lt; b &gt; 0<\/annotation>/);
 });

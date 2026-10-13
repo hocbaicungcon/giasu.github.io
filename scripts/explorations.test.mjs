@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {gcd,divisors,quadratic,tossCoins} from '../assets/exploration-models.js';
+import {explorationKind,renderExploration} from './explorations.mjs';
+test('number model identifies all common divisors and the greatest one',()=>{assert.equal(gcd(18,24),6);assert.deepEqual(divisors(6),[1,2,3,6]);assert.equal(gcd(17,19),1);assert.equal(gcd(120,120),120);});
+test('quadratic model handles two, repeated, absent and degenerate roots',()=>{assert.deepEqual(quadratic(1,0,-4).roots,[-2,2]);assert.deepEqual(quadratic(1,-2,1).vertex,[1,0]);assert.deepEqual(quadratic(1,0,1).roots,[]);assert.deepEqual(quadratic(0,2,-4).roots,[2]);assert.equal(quadratic(0,0,0).roots,null);});
+test('coin experiment conserves total and has predictable deterministic runs',()=>{assert.deepEqual(tossCoins(100,()=>.1),{heads:100,tails:0});assert.deepEqual(tossCoins(100,()=>.9),{heads:0,tails:100});});
+test('explorations attach only to relevant mathematics lessons',()=>{const p=title=>({title,category:'Toán học',type:'Bài học'});assert.equal(explorationKind(p('Hàm số bậc hai')),'quadratic');assert.equal(explorationKind(p('Căn bậc hai số học')),null);assert.equal(explorationKind(p('Xác suất thực nghiệm')),'probability');assert.match(renderExploration(p('Ước chung và ƯCLN')),/data-exploration="gcd"/);assert.equal(explorationKind({...p('Hàm số bậc hai'),type:'Đề thi'}),null);});

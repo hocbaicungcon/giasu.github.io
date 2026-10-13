@@ -1,5 +1,10 @@
 /* Shared vector icons for interface and lesson annotations. */
 const paths={
+ math:'<path d="M17 4H7l6 8-6 8h10"/>',
+ book:'<path d="M12 5C8 3 5 3 2 4v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-3-1-6-1-10 1zM12 5v15"/>',
+ globe:'<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/>',
+ computer:'<rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/>',
+
  info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/>',
  bulb:'<path d="M9 18h6m-5 3h4M8 14a6 6 0 1 1 8 0l-1 3H9z"/>',
  pin:'<path d="m8 3 8 0-1 6 3 3H6l3-3zM12 12v9"/>',

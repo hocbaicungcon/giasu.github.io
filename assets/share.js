@@ -13,7 +13,6 @@ document.querySelectorAll('[data-share-url]').forEach(bar=>{
   panel.hidden=opened;toggle.setAttribute('aria-expanded',String(!opened));
   if(!opened)panel.querySelector('a,button')?.focus();
  });
- bar.querySelector('[data-share-close]').addEventListener('click',()=>{close();toggle.focus();});
  document.addEventListener('click',event=>{if(!bar.contains(event.target))close();});
  bar.addEventListener('keydown',event=>{if(event.key==='Escape'){event.stopPropagation();close();toggle.focus();}});
  const copy=async()=>{

@@ -97,56 +97,34 @@ $$\mathbb{N} \subset \mathbb{Z}.$$
 
 Để hình dung trực quan toàn bộ các số nguyên, ta dùng một đường thẳng gọi là **trục số**:
 
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 20px; margin: 20px 0; overflow-x: auto; text-align: center;">
-  <div style="font-weight: 600; margin-bottom: 15px; color: #1e293b;">Mô hình Trục số nằm ngang</div>
-  <svg viewBox="0 0 700 110" style="width: 100%; max-width: 700px; height: auto; font-family: system-ui, -apple-system, sans-serif;">
-    <!-- Trục chính -->
-    <defs>
-      <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-        <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284c7"/>
-      </marker>
-    </defs>
-    <line x1="20" y1="50" x2="680" y2="50" stroke="#0284c7" stroke-width="3" marker-end="url(#arrow)" />
-    
-    <!-- Điểm mốc 0 -->
-    <line x1="350" y1="38" x2="350" y2="62" stroke="#dc2626" stroke-width="3" />
-    <circle cx="350" cy="50" r="5" fill="#dc2626" />
-    <text x="350" y="85" text-anchor="middle" font-size="16" font-weight="bold" fill="#dc2626">0</text>
-    <text x="350" y="25" text-anchor="middle" font-size="13" font-weight="600" fill="#dc2626">Gốc O</text>
-    
-    <!-- Các vạch âm -->
-    <line x1="300" y1="42" x2="300" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="300" y="80" text-anchor="middle" font-size="14" fill="#334155">-1</text>
-    <line x1="250" y1="42" x2="250" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="250" y="80" text-anchor="middle" font-size="14" fill="#334155">-2</text>
-    <line x1="200" y1="42" x2="200" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="200" y="80" text-anchor="middle" font-size="14" fill="#334155">-3</text>
-    <line x1="150" y1="42" x2="150" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="150" y="80" text-anchor="middle" font-size="14" fill="#334155">-4</text>
-    <line x1="100" y1="42" x2="100" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="100" y="80" text-anchor="middle" font-size="14" fill="#334155">-5</text>
-    <line x1="50" y1="42" x2="50" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="50" y="80" text-anchor="middle" font-size="14" fill="#334155">-6</text>
-
-    <!-- Các vạch dương -->
-    <line x1="400" y1="42" x2="400" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="400" y="80" text-anchor="middle" font-size="14" fill="#334155">1</text>
-    <line x1="450" y1="42" x2="450" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="450" y="80" text-anchor="middle" font-size="14" fill="#334155">2</text>
-    <line x1="500" y1="42" x2="500" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="500" y="80" text-anchor="middle" font-size="14" fill="#334155">3</text>
-    <line x1="550" y1="42" x2="550" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="550" y="80" text-anchor="middle" font-size="14" fill="#334155">4</text>
-    <line x1="600" y1="42" x2="600" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="600" y="80" text-anchor="middle" font-size="14" fill="#334155">5</text>
-    <line x1="650" y1="42" x2="650" y2="58" stroke="#475569" stroke-width="2" />
-    <text x="650" y="80" text-anchor="middle" font-size="14" fill="#334155">6</text>
-
-    <!-- Chú thích chiều -->
-    <text x="660" y="25" text-anchor="end" font-size="13" font-weight="bold" fill="#0284c7">Chiều dương (+)&gt;</text>
-    <text x="35" y="25" text-anchor="start" font-size="13" font-weight="bold" fill="#64748b">&lt; Chiều âm (-)</text>
-  </svg>
-</div>
+<figure class="number-line-figure">
+<svg viewBox="0 0 480 120" role="img" aria-labelledby="integer-axis-title integer-axis-desc">
+<title id="integer-axis-title">Trục số nguyên từ âm 4 đến 4</title>
+<desc id="integer-axis-desc">Các vạch chia cách đều. Số âm ở bên trái gốc 0, số dương ở bên phải. Chiều dương hướng sang phải.</desc>
+<path d="M15 60H465M457 54L467 60L457 66" fill="none" stroke="currentColor" stroke-width="2.5"/>
+<path d="M40 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="40" y="95" text-anchor="middle" font-size="20" fill="currentColor">-4</text>
+<path d="M90 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="90" y="95" text-anchor="middle" font-size="20" fill="currentColor">-3</text>
+<path d="M140 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="140" y="95" text-anchor="middle" font-size="20" fill="currentColor">-2</text>
+<path d="M190 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="190" y="95" text-anchor="middle" font-size="20" fill="currentColor">-1</text>
+<path class="axis-origin" d="M240 52V68" stroke="currentColor" stroke-width="2"/>
+<text class="axis-origin" x="240" y="95" text-anchor="middle" font-size="20" fill="currentColor">0</text>
+<path d="M290 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="290" y="95" text-anchor="middle" font-size="20" fill="currentColor">1</text>
+<path d="M340 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="340" y="95" text-anchor="middle" font-size="20" fill="currentColor">2</text>
+<path d="M390 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="390" y="95" text-anchor="middle" font-size="20" fill="currentColor">3</text>
+<path d="M440 52V68" stroke="currentColor" stroke-width="2"/>
+<text x="440" y="95" text-anchor="middle" font-size="20" fill="currentColor">4</text>
+<circle class="axis-origin" cx="240" cy="60" r="4"/>
+<text class="axis-origin" x="240" y="32" text-anchor="middle" font-size="18">Gốc O</text>
+</svg>
+<figcaption>Số âm ở bên trái · Số dương ở bên phải · Chiều dương hướng sang phải</figcaption>
+</figure>
 
 **Đặc điểm của trục số nằm ngang:**
 1. **Gốc của trục số:** Là điểm biểu diễn số $0$ (thường ký hiệu là điểm $O$).

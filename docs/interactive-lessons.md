@@ -74,3 +74,14 @@ Popup thuật ngữ mở ngay cạnh từ, đóng bằng Esc, nút ×, bấm ngo
 Theme chung dùng xanh lá, kem và cam, giảm khung nội dung. Ba nút nổi chia sẻ, lên đầu và mục lục là ngoại lệ hình tròn; các thành phần khác vuông góc. Chia sẻ nằm dưới nút lên đầu. Thanh lớp/môn gồm các ô bằng nhau, tự xuống dòng trên mobile và không dùng cuộn ngang.
 
 CSS chấm thi được chuyển sang `assets/style-grading.css`, giới hạn trong `.grading-page` và gộp vào `assets/style.css`. `cham-thi/style.css` chỉ là đường dẫn tương thích. Service worker chấm thi lưu CSS chung để dùng offline; logic chấm và dữ liệu không thay đổi.
+
+
+### Khám phá bằng thay đổi dữ liệu
+
+`assets/explorations.js` bổ sung mô hình vào những bài Toán có chủ đề phù hợp: tìm ƯCLN bằng chọn ước, tung đồng xu nhiều lần và thay đổi hệ số của parabol. `scripts/explorations.mjs` chọn chủ đề, không gắn mô hình vào bài chỉ có từ “căn bậc hai”. Các mô hình tính toán nằm trong `assets/exploration-models.js` và được kiểm tra độc lập. Báo cáo tương tác ghi loại mô hình ở trường `exploration`.
+
+Tham khảo cách học qua dự đoán và thay đổi dữ liệu tại [Quadratic Equations](https://mathigon.org/course/quadratics/introduction) và [Probability](https://vi.mathigon.org/course/probability/introduction). Nội dung, số liệu và mô hình của dự án được biên soạn riêng.
+
+`style-brand.css` định nghĩa sắc xanh lá, san hô và vàng cùng header, khu chọn lớp/môn chung. `style-typography.css` dùng một thang chữ theo rem để nút tăng/giảm cỡ chữ hoạt động nhất quán. Nhãn tiếng Việt trong công thức được giữ nguyên Unicode và dùng Source Sans Pro; phần hình học, dấu mũ và phân số vẫn dùng bộ đo chữ KaTeX. Nội dung MathML và nguồn TeX được giữ để hỗ trợ đọc và sao chép.
+
+Bộ đọc Markdown bảo vệ công thức có ký hiệu `<` trước khi xử lý chữ đậm. Quy tắc dọn dấu sao chỉ nhận khoảng trắng ngang, tránh xóa dấu đóng/mở chữ đậm giữa hai đoạn.
