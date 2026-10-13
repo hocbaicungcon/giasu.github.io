@@ -881,6 +881,6 @@ header .grading-link:focus-visible {outline:2px solid #1598b3;outline-offset:3px
  header .grading-label>span:first-child{font-size:.5625rem}
  header .menu-toggle{width:34px;height:38px;padding:6px}
 }
-html[data-theme="dark"] header .grading-link {background:#233940;border-color:#36515a;color:#b5e0e4}
-html[data-theme="dark"] header .grading-label>span:first-child {color:#8cafb7}
+html[data-theme="dark"] header .grading-link {background:transparent;border:0;color:#edf4e9;box-shadow:none}
+html[data-theme="dark"] header .grading-label>span:first-child {color:#edf4e9}
 html[data-theme="dark"] header .grading-free {background:#e9bbab;color:#59382d;border-color:var(--paper,#18212f)}
