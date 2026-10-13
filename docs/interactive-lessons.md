@@ -57,7 +57,7 @@ Quiz hỗ trợ trường `hint` tùy chọn. Trả lời sai cho phép thử l�
 
 ## Ôn tập trên toàn bộ bài học
 
-Các bài có loại `Bài học` được bổ sung thẻ tự kiểm tra bằng `scripts/lesson-activities.mjs`, ưu tiên điền cụm từ nhấn mạnh và thẻ nhớ lại từ đoạn văn hoặc bảng gốc. Bài chỉ có tài liệu liên kết nhận thẻ đọc tài liệu và ghi ý chính; nội dung quá ngắn dùng mô tả bài, được đánh dấu trong báo cáo để biên tập tiếp. Không tự tạo đáp án chuyên môn, không lấy lời giải quiz làm thẻ. Thẻ nhớ lại được học sinh tự đánh giá; tiến độ lưu trên thiết bị.
+Các bài có loại `Bài học` được bổ sung thẻ tự kiểm tra bằng `scripts/lesson-activities.mjs`, ưu tiên điền cụm từ nhấn mạnh và thẻ nhớ lại từ đoạn văn hoặc bảng gốc. Bài chỉ có tài liệu liên kết nhận thẻ đọc tài liệu và ghi ý chính; nội dung quá ngắn dùng mô tả bài, được đánh dấu trong báo cáo để biên tập tiếp. Không tự tạo đáp án chuyên môn, không lấy lời giải quiz làm thẻ. Câu điền khuyết dùng danh sách chọn ngay tại dấu “…” trong đoạn trích; lựa chọn lấy từ các cụm từ nhấn mạnh trong cùng bài, đáp án đúng luôn xuất hiện một lần. Thẻ nhớ lại được học sinh tự đánh giá; tiến độ lưu trên thiết bị.
 
 Sau mỗi lần dựng trang, `dist/assets/data/lesson-interactivity-audit.json` ghi số bài được bao phủ, số thẻ, câu điền khuyết, quiz và mô hình hình học để rà soát. Đây là lớp tương tác ôn tập dùng chung; các mô phỏng chuyên biệt vẫn cần biên soạn riêng theo từng chủ đề.
 

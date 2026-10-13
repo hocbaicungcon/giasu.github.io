@@ -1,43 +1,54 @@
-/* Flat reading surfaces: typography and spacing carry the hierarchy. */
+/* Flat reading surfaces: typography and spacing carry the hierarchy with harmonious rounded corners. */
 :root{--paper:#fff;--line:#e8ecee;--ink:#333c43;--muted:#747d83;--card-bg:#fff;--bg-secondary:#f5f8f9}
 html{scroll-padding-top:72px}
 body{font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;font-size:18px;background:var(--paper)}
 html:not([data-font="cmu"]):not([data-font="stix"]):not([data-font="serif"]) :is(h1,h2,h3,h4,.prose,.hero h1,.section-heading h2,.related-header h2,.related-card-body h3){font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;letter-spacing:0}
-body :is(.hero,.subject-section,.library-page-header){background:transparent;box-shadow:none;border-radius:0}
+body :is(.hero,.subject-section,.library-page-header){background:transparent;box-shadow:none;border-radius:16px}
 body .hero h1{font-weight:600;line-height:1.15}
-body :is(.article-wrap,.fun-page,.exam-page){border:0;border-radius:0;box-shadow:none;background:transparent}
-body :is(.card,.related-card){border:0;border-radius:0;background:transparent;box-shadow:none}
-body :is(.card,.related-card):hover{box-shadow:none;transform:none}
-body :is(.card img,.card-art,.related-card-art){border-radius:0;box-shadow:none}
-body :is(.card-body,.related-card-body){padding-inline:0}
+body :is(.article-wrap,.fun-page,.exam-page){border:0;border-radius:16px;box-shadow:none;background:transparent}
+body :is(.card,.related-card){border:1px solid var(--line);border-radius:14px;background:var(--card-bg,#fff);box-shadow:0 2px 8px rgba(0,0,0,0.03);overflow:hidden;transition:transform .15s ease,box-shadow .15s ease}
+body :is(.card,.related-card):hover{box-shadow:0 6px 18px rgba(0,0,0,0.06);transform:translateY(-2px)}
+body :is(.card img,.card-art,.related-card-art){border-radius:12px;box-shadow:none}
+body :is(.card-body,.related-card-body){padding:16px}
 body .prose blockquote.callout,body .lesson-course .prose blockquote.callout{
-  border:0;border-left:3px solid var(--teal,#248a9d);border-radius:0;
-  padding:8px 0 8px 20px;background:transparent;box-shadow:none;margin-block:30px;
+  border:0;border-left:4px solid var(--teal,#248a9d);border-radius:12px;
+  padding:14px 18px 14px 20px;background:#f5fbfc;box-shadow:0 1px 3px rgba(0,0,0,0.02);margin-block:28px;
 }
 body .prose blockquote.callout :is(.callout-title,.callout-body){background:transparent}
-body :is(.quiz,.quiz-explanation,.geometry-lab,.practice-card,.lesson-progress,.glossary-toolbar),body .lesson-course :is(.quiz,.geometry-lab,.practice-card,.lesson-progress,.glossary-toolbar){border:0;border-radius:0;box-shadow:none;background:transparent}
-body .prose .geometry-lab{padding:20px 0;margin-block:40px}
-body .quiz{padding:24px 0;margin-block:28px;border-bottom:1px solid var(--line)}
-body .quiz-option{border:0;border-radius:3px;padding:10px 12px;background:transparent}
-body .quiz-option:hover{background:#f1f7f8}
-body .quiz-option:has(input:checked){background:#e7f3f5;box-shadow:none}
-body .quiz-explanation{padding:12px 0 12px 18px;border-left:2px solid var(--teal,#248a9d)}
-body .practice-card{padding:16px 0}
-body .practice-answer{border-radius:0;background:#f5f9fa;padding:16px;border-left:2px solid var(--teal,#248a9d)}
-body .glossary-toolbar{padding:0 0 14px;border-bottom:1px solid var(--line);font-family:inherit}
-body .lesson-progress{padding:12px 0;border-bottom:1px solid var(--line)}
+body .prose blockquote:not(.callout){border-radius:10px;padding:12px 18px}
+body :is(.quiz,.quiz-explanation,.geometry-lab,.practice-card,.lesson-progress,.glossary-toolbar),body .lesson-course :is(.quiz,.geometry-lab,.practice-card,.lesson-progress,.glossary-toolbar){border-radius:14px;box-shadow:none}
+body .prose .geometry-lab{border:1px solid var(--line);border-radius:16px;padding:24px;margin-block:36px;background:var(--card-bg,#fff)}
+body .quiz{padding:22px;margin-block:28px;border:1px solid var(--line);border-radius:16px;background:var(--card-bg,#fff);box-shadow:0 1px 4px rgba(0,0,0,0.02)}
+body .quiz-option{border:1px solid var(--line);border-radius:10px;padding:11px 15px;background:var(--bg-secondary,#f8fafc);margin-block:6px;transition:all .15s ease}
+body .quiz-option:hover{background:#f1f7f8;border-color:#b2e3ec}
+body .quiz-option:has(input:checked){background:#e7f3f5;border-color:#248a9d;box-shadow:0 0 0 1px #248a9d}
+body .quiz-explanation{padding:14px 18px;border-left:3px solid var(--teal,#248a9d);border-radius:10px;background:#f5fbfc;margin-top:12px}
+body .practice-card{padding:18px 20px;border:1px solid var(--line);border-radius:14px;margin-block:16px;background:var(--card-bg,#fff)}
+body .practice-answer{border-radius:10px;background:#f5f9fa;padding:16px;border-left:3px solid var(--teal,#248a9d);margin-top:10px}
+body .glossary-toolbar{padding:10px 14px;border:1px solid var(--line);border-radius:12px;font-family:inherit;background:var(--bg-secondary,#f8fafc)}
+body .glossary-dialog{border-radius:16px}
+body .lesson-progress{padding:12px 16px;border-radius:12px;background:var(--bg-secondary,#f8fafc)}
 body .article-end{background:transparent;border-radius:0;box-shadow:none;border-top:1px solid var(--line);padding-inline:0}
-body :is(.primary,.see-more-btn,.quiz-reset,.lesson-practice button,.nav-submenu,.library-controls,.library-toolbar,.filter-bar){border-radius:4px;box-shadow:none}
+body :is(.primary,.see-more-btn,.quiz-reset,.lesson-practice button,.geometry-controls button,.geometry-actions button,.geometry-proof button,.glossary-toolbar button,.glossary-back){border-radius:10px;box-shadow:none}
+body :is(.nav-submenu,.library-controls,.library-toolbar,.filter-bar){border-radius:14px;box-shadow:none}
 body .primary{background:#247f91}
 body .primary:hover{background:#1d6878}
-body .nav-submenu{box-shadow:0 3px 12px #0001}
+body .nav-submenu{box-shadow:0 6px 20px rgba(0,0,0,0.08);border-radius:14px}
 body .related{border:0;background:transparent;box-shadow:none}
-body .tag{border-radius:3px;box-shadow:none}
+body .tag{border-radius:8px;box-shadow:none;padding:4px 10px}
+body .prose details{border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin-block:20px;background:var(--card-bg,#fff)}
+body .prose details summary{border-radius:8px}
+body .prose pre{border-radius:12px}
+body .prose table{border-radius:10px;overflow:hidden;border-collapse:separate;border-spacing:0;border:1px solid var(--line)}
 html[data-theme="dark"]{--paper:#19212b;--ink:#e4e8ed;--muted:#a5afb9;--line:#35404a;--card-bg:#19212b;--bg-secondary:#242e39}
 html[data-theme="dark"] body,html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] main.lesson-course.article-wrap{background:#19212b;color:#d3dbe2}
 html[data-theme="dark"] :is(.lesson-course .article-heading h1,.lesson-course .article-heading>p,.lesson-course .prose h2,.lesson-course .prose h3,.lesson-course .prose h4){color:inherit}
-html[data-theme="dark"] body :is(.card,.related-card,.hero,.article-end,.quiz,.geometry-lab,.practice-card,.glossary-toolbar){background:transparent;color:inherit}
-html[data-theme="dark"] body .practice-answer{background:#24353f}
-html[data-theme="dark"] body .quiz-option:has(input:checked){background:#24424b}
+html[data-theme="dark"] body :is(.card,.related-card,.hero,.article-end,.practice-card,.glossary-toolbar){color:inherit}
+html[data-theme="dark"] body :is(.card,.related-card,.quiz,.practice-card,.prose details,.prose .geometry-lab){background:#1e2733;border-color:#35404a}
+html[data-theme="dark"] body .quiz-option{background:#19212b;border-color:#35404a}
+html[data-theme="dark"] body .quiz-option:hover{background:#24323f;border-color:#48657f}
+html[data-theme="dark"] body .quiz-option:has(input:checked){background:#1c3743;border-color:#3baec3}
+html[data-theme="dark"] body :is(.quiz-explanation,.practice-answer){background:#1c2f38;border-color:#3baec3}
+html[data-theme="dark"] body .prose blockquote.callout,html[data-theme="dark"] body .lesson-course .prose blockquote.callout{background:#1c2f38}
 html[data-theme="dark"] body header nav#site-menu .nav-exams>summary,html[data-theme="dark"] body header nav#site-menu .display-controls button{color:#d4d4da}
 @media(max-width:620px){body .hero h1{font-size:2.3rem}.course-toc-toggle{left:16px;bottom:20px}}

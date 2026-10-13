@@ -11,7 +11,7 @@ document.querySelectorAll('[data-lesson-practice]').forEach(root=>{
   const card=cards[position];counter.textContent=`Thẻ ${position+1}/${cards.length}`;prev.disabled=position===0;next.disabled=position===cards.length-1;
   body.replaceChildren();
   const title=document.createElement('h3');title.textContent=card.title;
-  const prompt=document.createElement('p');prompt.textContent=card.kind==='resource'?'Mở tài liệu của bài, chọn một mục để học rồi ghi lại các ý chính em nhớ được.':card.kind==='cloze'?'Cụm từ nào được nhấn mạnh trong đoạn trích này?':'Em hãy giải thích ý chính của mục này bằng lời của mình, rồi đối chiếu với đoạn trích.';
+  const prompt=document.createElement('p');prompt.textContent=card.kind==='resource'?'Mở tài liệu của bài, chọn một mục để học rồi ghi lại các ý chính em nhớ được.':card.kind==='cloze'?'Bấm vào dấu “…” và chọn cụm từ phù hợp để hoàn thành đoạn trích.':'Em hãy giải thích ý chính của mục này bằng lời của mình, rồi đối chiếu với đoạn trích.';
   const excerpt=document.createElement('div');excerpt.className='practice-excerpt';excerpt.innerHTML=['cloze','resource'].includes(card.kind)?card.masked:'';
   const answer=document.createElement('div');answer.className='practice-answer';answer.hidden=true;answer.innerHTML=card.html;
   const feedback=document.createElement('p');feedback.className='practice-feedback';feedback.setAttribute('role','status');
@@ -23,17 +23,22 @@ document.querySelectorAll('[data-lesson-practice]').forEach(root=>{
    button.addEventListener('click',()=>{states[card.id]=value;save();self.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));});self.append(button);
   }
   const show=()=>{answer.hidden=false;self.hidden=false;reveal.hidden=true;};reveal.addEventListener('click',show);
-  body.append(title,prompt,excerpt);
+  body.append(title,prompt);
   if(card.kind==='cloze'){
    const form=document.createElement('form');form.className='practice-cloze';
-   const label=document.createElement('label');label.textContent='Cụm từ còn thiếu';
-   const input=document.createElement('input');input.type='text';input.name='answer';input.autocomplete='off';label.append(input);
-   const check=document.createElement('button');check.type='submit';check.textContent='Kiểm tra';form.append(label,check);
-   form.addEventListener('submit',event=>{event.preventDefault();if(!input.value.trim()){feedback.textContent='Em hãy nhập cụm từ trước.';return;}
+   const input=document.createElement('select');input.name='answer';input.className='practice-gap-select';input.setAttribute('aria-label','Chọn cụm từ còn thiếu');input.required=true;
+   const placeholder=document.createElement('option');placeholder.value='';placeholder.textContent='…';placeholder.disabled=true;placeholder.selected=true;input.append(placeholder);
+   for(const value of card.choices||[card.target]){const option=document.createElement('option');option.value=value;option.textContent=value;input.append(option);}
+   excerpt.querySelector('.recall-gap').replaceWith(input);
+   const resize=()=>{input.style.width=Math.min(45,Math.max(7,(input.value.length||1)*.85+3))+'ch';};
+   input.addEventListener('change',()=>{feedback.textContent='';resize();});resize();
+   const check=document.createElement('button');check.type='submit';check.textContent='Kiểm tra';form.append(excerpt,check);
+   form.addEventListener('submit',event=>{event.preventDefault();if(!input.value.trim()){feedback.textContent='Em hãy chọn một cụm từ trước.';return;}
     const correct=normalize(input.value)===normalize(card.target);feedback.textContent=correct?'Khớp với cụm từ trong bài. Em hãy đọc lại cả đoạn để ghi nhớ.':'Chưa khớp cụm từ gốc. Thử lại hoặc xem đoạn trích đầy đủ.';
     if(correct){states[card.id]='remembered';save();show();self.querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===0)));}
    });body.append(form);
   }else{
+   body.append(excerpt);
    const label=document.createElement('label');label.textContent='Ý chính em nhớ được';label.className='practice-notes';
    const notes=document.createElement('textarea');notes.rows=3;notes.placeholder='Viết ngắn gọn bằng lời của em…';label.append(notes);body.append(label);
   }

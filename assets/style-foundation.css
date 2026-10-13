@@ -39,6 +39,7 @@ button {
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   border: 0;
+  border-radius: 9px;
 }
 
 button:hover,
@@ -81,7 +82,7 @@ p {
   background: var(--ink);
   color: #fff;
   padding: 13px 22px;
-  border-radius: 8px;
+  border-radius: 10px;
   display: inline-flex;
   align-items: center;
   gap: 32px;
@@ -150,7 +151,7 @@ select {
   -webkit-tap-highlight-color: transparent;
   border: 1px solid var(--line);
   background: white;
-  border-radius: 7px;
+  border-radius: 9px;
   padding: 10px;
   max-width: 100%;
   font-size: 1rem;

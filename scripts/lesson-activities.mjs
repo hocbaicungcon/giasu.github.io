@@ -43,10 +43,18 @@ export function lessonActivities(post){
  const selected=[],used=new Set();
  for(const card of candidates){if(used.has(card.title))continue;selected.push(card);used.add(card.title);if(selected.length===4)break;}
  if(!selected.length)selected.push({id:'overview',kind:'recall',title:post.title,anchor:'',html:escapeHTML(post.description),masked:escapeHTML(post.description),target:null,sourceKind:'description'});
+ const phrases=[...new Map(candidates.filter(c=>c.target).map(c=>[c.target.toLocaleLowerCase('vi'),c.target])).values()];
+ for(const card of selected.filter(c=>c.kind==='cloze')){
+  const alternatives=phrases.filter(t=>t.toLocaleLowerCase('vi')!==card.target.toLocaleLowerCase('vi')).slice(0,3);
+  if(!alternatives.length)alternatives.push('Không có cụm từ nào phù hợp');
+  card.choices=[card.target,...alternatives];
+  const offset=parseInt(card.id.slice(0,4),16)%card.choices.length;
+  card.choices=card.choices.slice(offset).concat(card.choices.slice(0,offset));
+ }
  return selected;
 }
 export function renderLessonPractice(post,cards){
  if(!cards.length)return '';
  const data=JSON.stringify({slug:post.slug,cards}).replace(/</g,'\\u003c');
- return `<section class="lesson-practice" id="lesson-practice" data-lesson-practice aria-label="Tự kiểm tra bài học"><div class="practice-heading"><div><span class="practice-kicker">NHỚ LẠI · ĐỐI CHIẾU · ÔN TẬP</span><h2>Tự kiểm tra kiến thức</h2></div><span class="practice-position" aria-live="polite"></span></div><p class="practice-note">Các thẻ lấy từ nội dung bài học. Với câu điền khuyết, dùng cụm từ gốc của đoạn trích; với thẻ nhớ lại, em tự đối chiếu và đánh giá.</p><div class="practice-card"></div><div class="practice-navigation"><button type="button" data-practice-prev>← Thẻ trước</button><button type="button" data-practice-next>Thẻ tiếp →</button><button type="button" data-practice-reset>Làm lại</button></div><p class="practice-progress" role="status" aria-live="polite"></p><noscript>Bật JavaScript để ôn tập với thẻ nhớ lại và câu điền khuyết.</noscript><script type="application/json" data-practice-config>${data}</script></section>`;
+ return `<section class="lesson-practice" id="lesson-practice" data-lesson-practice aria-label="Tự kiểm tra bài học"><div class="practice-heading"><div><span class="practice-kicker">NHỚ LẠI · ĐỐI CHIẾU · ÔN TẬP</span><h2>Tự kiểm tra kiến thức</h2></div><span class="practice-position" aria-live="polite"></span></div><p class="practice-note">Các thẻ lấy từ nội dung bài học. Với câu điền khuyết, bấm vào dấu “…” để chọn cụm từ phù hợp; với thẻ nhớ lại, em tự đối chiếu và đánh giá.</p><div class="practice-card"></div><div class="practice-navigation"><button type="button" data-practice-prev>← Thẻ trước</button><button type="button" data-practice-next>Thẻ tiếp →</button><button type="button" data-practice-reset>Làm lại</button></div><p class="practice-progress" role="status" aria-live="polite"></p><noscript>Bật JavaScript để ôn tập với thẻ nhớ lại và câu điền khuyết.</noscript><script type="application/json" data-practice-config>${data}</script></section>`;
 }
