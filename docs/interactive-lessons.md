@@ -54,3 +54,23 @@ Giải nghĩa Dirac, Ore và Hamilton được đối chiếu [giáo trình củ
 Hình dùng san hô, xanh ngọc và vàng nhấn, cùng màu cho các đối tượng tương ứng và kèm chữ hoặc số vạch. Tiêu đề bài và đề mục dùng STIX Two Text, phần nội dung theo lựa chọn font của người đọc. Không đổi logo hoặc tùy chọn font đã lưu.
 
 Quiz hỗ trợ trường `hint` tùy chọn. Trả lời sai cho phép thử lại trước khi mở lời giải; trả lời đúng mở giải thích. Thanh tiến độ đếm số câu đang trả lời đúng trong phiên; toàn bộ nội dung luôn truy cập được. Mọi hoạt động có thanh trượt dùng được bằng bàn phím, trạng thái có nhãn và hỗ trợ đọc màn hình.
+
+## Ôn tập trên toàn bộ bài học
+
+Các bài có loại `Bài học` được bổ sung thẻ tự kiểm tra bằng `scripts/lesson-activities.mjs`, ưu tiên điền cụm từ nhấn mạnh và thẻ nhớ lại từ đoạn văn hoặc bảng gốc. Bài chỉ có tài liệu liên kết nhận thẻ đọc tài liệu và ghi ý chính; nội dung quá ngắn dùng mô tả bài, được đánh dấu trong báo cáo để biên tập tiếp. Không tự tạo đáp án chuyên môn, không lấy lời giải quiz làm thẻ. Thẻ nhớ lại được học sinh tự đánh giá; tiến độ lưu trên thiết bị.
+
+Sau mỗi lần dựng trang, `dist/assets/data/lesson-interactivity-audit.json` ghi số bài được bao phủ, số thẻ, câu điền khuyết, quiz và mô hình hình học để rà soát. Đây là lớp tương tác ôn tập dùng chung; các mô phỏng chuyên biệt vẫn cần biên soạn riêng theo từng chủ đề.
+
+## Bố cục khóa học
+
+Đối chiếu trực tiếp [trang Mathigon được yêu cầu](https://vi.mathigon.org/course/circles/spheres-cones-cylinders): Source Sans Pro, chữ nội dung 18px, dòng 30.6px, cột đọc tối đa 760px, mục lục trái 280px, nền trắng. `assets/style-course.css` áp dụng cho trang bài học; sidebar dùng màu thương hiệu gia sư. Công thức tiếp tục dùng KaTeX, cỡ 1em và có cuộn riêng khi quá dài. Trên màn hình nhỏ, mục lục chuyển thành phần mở/đóng.
+
+## Theme phẳng và tra cứu tại chỗ
+
+Mathigon dựng các phần tử công thức `mi`, `mn`, `mo`, `mfrac` trong `.math` bằng CSS và font Mathigon Symbol / Source Sans Pro (đối chiếu stylesheet công khai của trang). Website này giữ cấu trúc và các ký hiệu co giãn của KaTeX, chọn font không chân bằng `\mathsf` ngay lúc dựng KaTeX, để dấu góc được đặt theo đúng kích thước chữ; các bảng chữ chuyên biệt vẫn được giữ. Không ép font chữ của công thức bằng CSS sau khi đã tính bố cục.
+
+Popup thuật ngữ mở ngay cạnh từ, đóng bằng Esc, nút ×, bấm ngoài hoặc cuộn trang. Tìm toàn bộ thuật ngữ vẫn có ở thanh tra cứu. Mục lục mobile dùng dialog và nút nổi, đóng khi chọn mục; mục lục gốc là phương án dự phòng khi JavaScript không chạy.
+
+Theme chung dùng xanh lá, kem và cam, giảm khung nội dung. Ba nút nổi chia sẻ, lên đầu và mục lục là ngoại lệ hình tròn; các thành phần khác vuông góc. Chia sẻ nằm dưới nút lên đầu. Thanh lớp/môn gồm các ô bằng nhau, tự xuống dòng trên mobile và không dùng cuộn ngang.
+
+CSS chấm thi được chuyển sang `assets/style-grading.css`, giới hạn trong `.grading-page` và gộp vào `assets/style.css`. `cham-thi/style.css` chỉ là đường dẫn tương thích. Service worker chấm thi lưu CSS chung để dùng offline; logic chấm và dữ liệu không thay đổi.

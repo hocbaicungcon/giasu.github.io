@@ -1,5 +1,5 @@
 'use strict';
-const CACHE='chamtn-offline-v28';
+const CACHE='chamtn-offline-v29';
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const assets=await (await fetch(new URL('offline-assets.json',self.registration.scope),{cache:'no-store'})).json();
  const cache=await caches.open(CACHE);await cache.addAll(assets.map(asset=>new URL(asset,self.registration.scope).href));
@@ -11,6 +11,8 @@ self.addEventListener('activate',event=>event.waitUntil((async()=>{
 })()));
 self.addEventListener('fetch',event=>{
  const url=new URL(event.request.url);
+ const sharedStyle=url.pathname===new URL('../assets/style.css',self.registration.scope).pathname;
+ if(sharedStyle&&url.origin===self.location.origin&&event.request.method==='GET'){event.respondWith(fetch(event.request).catch(()=>caches.match(event.request,{ignoreSearch:true})));return;}
  if(event.request.method!=='GET'||url.origin!==self.location.origin||!url.href.startsWith(self.registration.scope))return;
  if(event.request.mode==='navigate'){
   event.respondWith(fetch(event.request).catch(()=>caches.match(new URL('index.html',self.registration.scope))));return;

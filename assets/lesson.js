@@ -51,6 +51,21 @@ document.querySelectorAll('form.quiz[data-answers]').forEach(form=>{
 
 // Table of Contents (TOC) ScrollSpy and navigation
 (()=>{
+  const sidebar=document.querySelector('.lesson-course .article-toc');
+  if(sidebar){
+    const mobile=document.createElement('dialog');mobile.className='course-toc-dialog';mobile.setAttribute('aria-label','Mục lục bài học');
+    const close=document.createElement('button');close.type='button';close.className='course-toc-close';close.setAttribute('aria-label','Đóng mục lục');close.textContent='×';
+    mobile.innerHTML=sidebar.innerHTML;mobile.prepend(close);document.body.append(mobile);
+    const toggle=document.createElement('button');toggle.type='button';toggle.className='course-toc-toggle';toggle.setAttribute('aria-label','Mở mục lục bài học');toggle.setAttribute('aria-haspopup','dialog');toggle.setAttribute('aria-expanded','false');
+    toggle.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>';
+    document.body.append(toggle);document.body.classList.add('course-toc-ready');
+    toggle.addEventListener('click',()=>{mobile.showModal();toggle.setAttribute('aria-expanded','true');});
+    close.addEventListener('click',()=>mobile.close());
+    mobile.addEventListener('close',()=>{toggle.setAttribute('aria-expanded','false');toggle.focus({preventScroll:true});});
+    mobile.addEventListener('click',event=>{if(event.target===mobile){const r=mobile.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)mobile.close();}});
+    mobile.querySelectorAll('.toc-nav a,.toc-top-btn').forEach(link=>link.addEventListener('click',()=>mobile.close()));
+    const viewport=matchMedia('(max-width:1000px)');viewport.addEventListener('change',event=>{if(!event.matches&&mobile.open)mobile.close();});
+  }
   const tocLinks = document.querySelectorAll('.toc-nav a');
   if (!tocLinks.length) return;
 
