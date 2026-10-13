@@ -827,7 +827,7 @@ html[data-theme="dark"] #game-water {
 
 html[data-theme="dark"] .water-world {
   background: linear-gradient(#294754 0 72%,#385c60 72% 76%,#314940 76%);
-  border-color: #527984;
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] #game-water .water-fixture {
@@ -1880,7 +1880,7 @@ html[data-theme="dark"] #game-words .word-key.absent {
 }
 
 html[data-theme="dark"] .river-world {
-  border-color: #ae9975;
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] #game-river .river-character {
@@ -1933,9 +1933,9 @@ html[data-theme="dark"] #game-hanoi #hanoi-board button:not(:where(.game-nav *, 
 }
 
 html[data-theme="dark"] .game-tabs button:not(:where(.game-nav *, .game-result *)) {
-  background: #e8ddc7;
-  color: #51422e;
-  border-color: #d3c1a0;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .game-tabs button[aria-pressed="true"]:not(:where(.game-nav *, .game-result *)) {
@@ -1946,14 +1946,14 @@ html[data-theme="dark"] .game-tabs button[aria-pressed="true"]:not(:where(.game-
 
 html[data-theme="dark"] .game-panel button:not(.primary):not(:where(.game-nav *, .game-result *)),
 html[data-theme="dark"] .game-directions button:not(:where(.game-nav *, .game-result *)) {
-  background: #e8ddc7;
-  color: #51422e;
-  border-color: #d3c1a0;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .game-panel button:not(.primary):hover:not(:where(.game-nav *, .game-result *)),
 html[data-theme="dark"] .game-directions button:hover:not(:where(.game-nav *, .game-result *)) {
-  background: #ded0b4;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .game-panel button:focus-visible:not(:where(.game-nav *, .game-result *)),
@@ -2078,8 +2078,8 @@ html[data-theme="dark"] .game-panel :is(#number-status,#sudoku-status,#hanoi-sta
 }
 
 html[data-theme="dark"] .game-panel {
-  background: #f3ead5;
-  border-color: #ddceb0;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .river-scene,
@@ -2188,11 +2188,11 @@ html[data-theme="dark"] #game-water .water-jug .jug-below-can {
 }
 
 html[data-theme="dark"] .game-panel :is(.river-intro,.water-intro,.river-help,.puzzle-instructions,.word-hint,.word-help,.puzzle-levels label) {
-  color: #75664f;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .game-panel :is(h2,h3,.river-heading,.water-heading) {
-  color: #403527;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] #water-mission {
@@ -2813,8 +2813,8 @@ html[data-theme="dark"] .soko-cell.player::before {
 }
 
 html[data-theme="dark"] .puzzle-scene {
-  background: #eee3cb;
-  border-color: #c5b28e;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .pent-cell {
@@ -2828,16 +2828,16 @@ html[data-theme="dark"] .pent-cell.filled {
 }
 
 html[data-theme="dark"] .pent-piece {
-  background: #e9dec8;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .pent-piece.selected {
-  background: #fbefcf;
+  background:var(--dark-surface, #17211b);
   border-color: #8b6941;
 }
 
 html[data-theme="dark"] .nim-row .nim-label {
-  color: #695337;
+  color:var(--dark-ink, #e5eee6);
 }
 
 @media(max-width:620px) {
@@ -3635,11 +3635,11 @@ html[data-theme="dark"] #match-scene .match-moves {
 }
 
 html[data-theme="dark"] .nonogram-clue {
-  color: #66543b;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .nonogram-clue.complete {
-  color: #9a8768;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .nonogram-board {
@@ -4030,7 +4030,7 @@ html[data-theme="dark"] #game-lightup .lightup-controls button[aria-pressed="tru
   pointer-events: none;
   color: #a34f56;
 }
-html[data-theme="dark"] .caro-win-line { color: #925329; }
+html[data-theme="dark"] .caro-win-line { color:var(--dark-ink, #e5eee6); }
 .caro-win-line path {
   fill: none;
   stroke: currentColor;
@@ -4242,8 +4242,8 @@ html[data-theme="dark"] .game-panel button.caro-cell:not(:disabled):focus-visibl
 }
 
 html[data-theme="dark"] .logic-scene {
-  background: #f6efdf;
-  border-color: #c6ad83;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .hashi-bridge {
@@ -4289,7 +4289,7 @@ html[data-theme="dark"] .game-panel button.hitori-cell.black:not(:where(.game-na
 
 
 html[data-theme="dark"] .futo-sign {
-  color: #8a5d35;
+  color:var(--dark-ink, #e5eee6);
 }
 
 @media(max-width:620px) {
@@ -4462,47 +4462,47 @@ html[data-theme="dark"] .futo-sign {
 }
 
 html[data-theme="dark"] .einstein-progress {
-  color: #766449;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-progress strong {
-  color: #8a603b;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-clues {
-  background: #f7efdf;
-  border-color: #cbb797;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .einstein-clues h3 {
-  color: #76583b;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-clue {
-  background: #fff7e9;
-  border-color: #d3bf9d;
-  color: #604b34;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-clue:nth-child(3n+2) {
-  background: #f0e3c9;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .einstein-clue:nth-child(3n) {
-  background: #f3e4d5;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .einstein-clue.wrong {
-  background: #f1d2c1;
-  border-color: #ba7765;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .einstein-clue b {
-  color: #a26959;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-clue small {
-  color: #725b3e;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-number {
@@ -4522,53 +4522,53 @@ html[data-theme="dark"] .einstein-bank-cell {
 }
 
 html[data-theme="dark"] .einstein-house {
-  background: #f7efdd;
-  color: #765333;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-house strong {
-  background: #e6d4b1;
-  color: #765333;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .game-panel button.einstein-slot:not(:where(.game-nav *, .game-result *)) {
-  background: #fff8e9;
-  color: #6b5033;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .game-panel button.einstein-slot.filled:not(:where(.game-nav *, .game-result *)) {
-  background: #f2e6cf;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .game-panel button.einstein-slot.given:not(:where(.game-nav *, .game-result *)) {
-  background: #e5d4af;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .game-panel button.einstein-slot.target:not(:where(.game-nav *, .game-result *)) {
-  background: #dfc69a;
+  background:var(--dark-surface, #17211b);
   outline-color: #9b7549;
 }
 
 html[data-theme="dark"] .game-panel button.einstein-slot:not(:disabled):hover:not(:where(.game-nav *, .game-result *)),
 html[data-theme="dark"] .game-panel button.einstein-slot:not(:disabled):focus-visible:not(:where(.game-nav *, .game-result *)) {
-  background: #ead7b3;
+  background:var(--dark-surface, #17211b);
   outline-color: #ac8757;
 }
 
 html[data-theme="dark"] .game-panel button.einstein-token:not(:where(.game-nav *, .game-result *)) {
   background: transparent;
   border-color: transparent;
-  color: #6b5033;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .game-panel button.einstein-token.selected:not(:where(.game-nav *, .game-result *)) {
-  background: #ead7b3;
-  border-color: #9d784a;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
   box-shadow: 0 3px 0 #c4a878;
 }
 
 html[data-theme="dark"] .einstein-scroll-note {
-  color: #7d6a51;
+  color:var(--dark-ink, #e5eee6);
 }
 
 @media(max-width:850px) {
@@ -4710,20 +4710,20 @@ html[data-theme="dark"] .einstein-scroll-note {
 }
 
 html[data-theme="dark"] .einstein-picker {
-  background: #fff4dd;
-  border-color: #b89e75;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
   box-shadow: 0 6px 24px #67502d33;
 }
 
 html[data-theme="dark"] .game-panel .einstein-picker button:not(:where(.game-nav *, .game-result *)) {
-  background: #eee0c4;
-  color: #6b5033;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .game-panel .einstein-picker button[aria-pressed="true"]:not(:where(.game-nav *, .game-result *)),
 html[data-theme="dark"] .game-panel .einstein-picker button:focus-visible:not(:where(.game-nav *, .game-result *)) {
-  background: #dfc69a;
-  border-color: #9b7549;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
 }
 
 @media(max-width:560px) {
@@ -4967,16 +4967,16 @@ html[data-theme="dark"] .game-panel .einstein-picker button:focus-visible:not(:w
 }
 
 html[data-theme="dark"] .einstein-slot {
-  background: #fff8e9;
-  color: #6b5033;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .einstein-slot.filled {
-  background: #f2e6cf;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .einstein-slot.given {
-  background: #e5d4af;
+  background:var(--dark-surface, #17211b);
 }
 
 @media(max-width:560px) {
@@ -5049,13 +5049,13 @@ html[data-theme="dark"] .einstein-slot.given {
 
 html[data-theme="dark"] .einstein-clue.active-clue,
 html[data-theme="dark"] .einstein-clue:focus-visible {
-  background: #e4cca2;
+  background:var(--dark-surface, #17211b);
   outline-color: #9b7549;
 }
 
 html[data-theme="dark"] .game-panel button.einstein-candidate.clue-related:not(:where(.game-nav *, .game-result *)),
 html[data-theme="dark"] .einstein-house.clue-related {
-  background: #ead2a6;
+  background:var(--dark-surface, #17211b);
   box-shadow: inset 0 0 0 2px #a17a45;
 }
 
@@ -5363,35 +5363,35 @@ html[data-theme="dark"] .game-panel button.einstein-candidate:not(:where(.game-n
 }
 
 html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="color"]:not(:where(.game-nav *, .game-result *)) {
-  color: #76551e;
+  color:var(--dark-ink, #e5eee6);
   background: transparent;
   border-color: transparent;
   box-shadow: none;
 }
 
 html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="nation"]:not(:where(.game-nav *, .game-result *)) {
-  color: #315474;
+  color:var(--dark-ink, #e5eee6);
   background: transparent;
   border-color: transparent;
   box-shadow: none;
 }
 
 html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="drink"]:not(:where(.game-nav *, .game-result *)) {
-  color: #754a35;
+  color:var(--dark-ink, #e5eee6);
   background: transparent;
   border-color: transparent;
   box-shadow: none;
 }
 
 html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="pet"]:not(:where(.game-nav *, .game-result *)) {
-  color: #7e3e56;
+  color:var(--dark-ink, #e5eee6);
   background: transparent;
   border-color: transparent;
   box-shadow: none;
 }
 
 html[data-theme="dark"] .game-panel button.einstein-candidate[data-group="hobby"]:not(:where(.game-nav *, .game-result *)) {
-  color: #544274;
+  color:var(--dark-ink, #e5eee6);
   background: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -6551,7 +6551,7 @@ html[data-theme="dark"] .game-panel.is-fullscreen {
 }
 
 html[data-theme="dark"] .new-puzzle-panel {
-  background: #f3e7cc;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .mine-cell {
@@ -6576,16 +6576,16 @@ html[data-theme="dark"] .rush-board {
 html[data-theme="dark"] .game-panel select:not(:where(.game-nav *, .game-result *)),
 html[data-theme="dark"] .game-panel select:focus:not(:where(.game-nav *, .game-result *)),
 html[data-theme="dark"] .game-panel select:active:not(:where(.game-nav *, .game-result *)) {
-  background: #fbf1d8!important;
-  color: #51422e!important;
-  border-color: #c6a978!important;
+  background:var(--dark-surface, #17211b)!important;
+  color:var(--dark-ink, #e5eee6)!important;
+  border-color:var(--dark-line, #304237)!important;
   accent-color: #a97943;
   outline-color: #b88a52;
 }
 
 html[data-theme="dark"] .game-panel select option:not(:where(.game-nav *, .game-result *)) {
-  background: #fbf1d8;
-  color: #51422e;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] .game-panel select:focus-visible:not(:where(.game-nav *, .game-result *)) {

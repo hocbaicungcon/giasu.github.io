@@ -378,7 +378,7 @@
 html[data-theme="dark"] :is(.float,.subject-pick>span,:where(#exam-nav) a) {
   background: #29474b;
   color: #d9eeee;
-  border-color: #54787a;
+  border-color:var(--dark-line, #304237);
 }
 
 .exam-policy,
@@ -443,7 +443,7 @@ html[data-theme="dark"] :is(.float,.subject-pick>span,:where(#exam-nav) a) {
 html[data-theme="dark"] .exam-warning {
   background: #523c1e;
   color: #ffe0a0;
-  border-color: #b8822d;
+  border-color:var(--dark-line, #304237);
   border-left-color: #efb953;
 }
 
@@ -576,41 +576,41 @@ html[data-font="stix"] :is(.prose,form.quiz,.exam-question) .katex {
 
 html[data-theme="dark"] :is(.hero,.subject-section,.about,.aside-note,.prose blockquote,.prose pre,.prose details,.exam-toolbar,.article-end,.fun-content,.quotes .fun-content,.tips .fun-content,.jokes .fun-content,.riddles .fun-content) {
   box-shadow: none;
-  background: #eee3ca;
-  color: #382e23;
-  border-color: #d8c6a5;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
 }
 
 
 
 html[data-theme="dark"] :is(.tag,.fun-label,.category.active,.nav-pill,.fun-tile,.card-art,.float,.subject-pick>span,:where(#exam-nav) a,.library-sections a) {
-  background: #e9ddc3;
-  color: #55432d;
-  border-color: #d1bd98;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] :is(.exam-warning,#storage-warning) {
-  background: #f2dfae;
-  color: #614923;
-  border-color: #d6b96d;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .exam-toolbar {
-  background: #eee3ca;
-  border-color: #d6c4a3;
+  background:var(--dark-surface, #17211b);
+  border-color:var(--dark-line, #304237);
   box-shadow: 0 3px 12px #50391b16;
 }
 
 html[data-theme="dark"] .exam-toolbar #submit-exam {
   background: #967044;
   color: #fff8e9;
-  border-color: #b29362;
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] :is(.lesson-solution,.exam-review,.quiz-explanation) {
-  background: #eee8d8;
-  color: #3c3327;
-  border-color: #d7c9ad;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .exam-question img[src*="assets/latex/"] {
@@ -627,19 +627,19 @@ html[data-theme="dark"] :is(.lesson-solution,.exam-review,.quiz-explanation) img
 
 html[data-theme="dark"] .exam-question>h3 {
   box-shadow: none;
-  background: #f0e3ce;
-  color: #694b32;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
   border-left-color: #bd8552;
 }
 
 html[data-theme="dark"] .exam-toolbar #exam-timer,
 html[data-theme="dark"] .exam-toolbar #exam-timer::before {
-  color: #604b30;
+  color:var(--dark-ink, #e5eee6);
 }
 
 html[data-theme="dark"] header :is(.nav-exams[open]>summary,.nav-exams>summary:hover,.nav-submenu a:hover,.nav-submenu a:focus-visible) {
-  background: #ead9b9;
-  color: #684728;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
 }
 
 header .nav-exams[open] {
@@ -647,19 +647,19 @@ header .nav-exams[open] {
 }
 
 html[data-theme="dark"] .exam-question .quiz-option {
-  background: #f1e7d3;
-  color: #382e23;
-  border-color: #cfbd9c;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
 }
 
 html[data-theme="dark"] .exam-question .quiz-option:hover {
-  background: #eadbc0;
+  background:var(--dark-surface, #17211b);
 }
 
 html[data-theme="dark"] .exam-question .quiz-option:has(input:checked) {
-  background: #e4cda7;
-  color: #42301e;
-  border-color: #a87d4c;
+  background:var(--dark-surface, #17211b);
+  color:var(--dark-ink, #e5eee6);
+  border-color:var(--dark-line, #304237);
   box-shadow: inset 0 0 0 1px #a87d4c;
 }
 
@@ -668,7 +668,7 @@ html[data-theme="dark"] .exam-question input:is([type="radio"],[type="checkbox"]
 }
 
 html[data-theme="dark"] .exam-wrap .exam-policy {
-  color: #786953;
+  color:var(--dark-ink, #e5eee6);
 }
 
 @media(max-width:620px) {

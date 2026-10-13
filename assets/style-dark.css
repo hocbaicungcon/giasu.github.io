@@ -1,0 +1,40 @@
+/* Shared dark surfaces and contrast, after all component styles. */
+html[data-theme="dark"]{color-scheme:dark;--dark-surface:#17211b;--dark-line:#304237;--dark-ink:#e5eee6;--paper:#101713;--card-bg:#17211b;--bg-secondary:#17251c;--ink:#e5eee6;--muted:#b9cabb;--line:#304237;--teal:#66d6a7}
+/* Subject choices are simple icon-and-text links, in both themes. */
+body .home-learning .subject-picks .subject-pick{background:transparent;border:0;box-shadow:none}
+body .home-learning .subject-picks .subject-pick:hover{background:transparent;border:0;color:#087858}
+html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:transparent;border:0;color:#d8efdd;box-shadow:none}
+html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:transparent;color:#ffe5b5}
+html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] body :is(.library-page-header,.article-heading,.exam-wrap,.article-wrap,.library-home,.about,.article-end,.aside-note){background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] body :is(.prose blockquote,.prose details,.prose pre,.quiz-explanation,.lesson-solution,.exam-review,.practice-card,.geometry-lab,.lesson-exploration,.fun-content){background:var(--dark-surface);color:var(--ink);border-color:var(--line)}
+html[data-theme="dark"] body :is(.prose,.exam-wrap) :is(h1,h2,h3,h4,legend,summary,p,li,td,th){color:inherit}
+html[data-theme="dark"] body :is(.card,.related-card,.about,.aside-note,.article-heading) p{color:var(--muted)}
+html[data-theme="dark"] body :is(.tag,.category,.practice-gap-select,.practice-cloze .practice-gap-select){background:#203329;color:#d8efdd;border-color:var(--line)}
+html[data-theme="dark"] body .quiz-option:has(input:checked){background:#244936;color:#e5eee6;border-color:#66d6a7}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle,.library-sections a.active){background:#087858;color:#fff;border-color:#087858}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{background:#0b916b;color:#fff}
+html[data-theme="dark"] body .prose a{color:#83e0ba}
+html[data-theme="dark"] body :is(.glossary-term,.practice-kicker,.related-action){color:#83e0ba}
+html[data-theme="dark"] body .glossary-popup{background:#17251c;color:var(--ink);border-color:#405647}
+html[data-theme="dark"] body :is(input,select,textarea){background:#101713;color:var(--ink);border-color:#405647}
+html[data-theme="dark"] body :is(table th,table td){border-color:#304237}
+html[data-theme="dark"] body :is(.fun-player,.fun-tile,.game-panel){background:#17211b;color:var(--ink);border-color:#304237}
+html[data-theme="dark"] body header :is(.nav-exams>summary,.nav-pill,.display-controls button):hover{background:transparent;color:#ffe5b5;text-decoration:none}
+/* The grading app uses the same saved preference and dark palette. */
+html[data-theme="dark"] body.grading-page{background:#101713;color:var(--ink)}
+html[data-theme="dark"] body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important,.key,.config-summary,.config-row,.upload-zone,.upload-area,.guide-links,.mobile-nav,.manual-key-form,.batch-feedback){background:#17211b;color:var(--ink);border-color:#304237}
+html[data-theme="dark"] body.grading-page :is(h1,h2,h3,h4,label,strong,.hint,.meta,.small,.step,.eyebrow,.hero-card span){color:#d8efdd}
+html[data-theme="dark"] body.grading-page .hero p:not(.eyebrow){color:#b9cabb}
+html[data-theme="dark"] body.grading-page .hero h1 em{color:#ff9580}
+html[data-theme="dark"] body.grading-page :is(.button.ghost,.small,.manual-key-form button){background:#203329;color:#d8efdd;border-color:#405647}
+html[data-theme="dark"] body.grading-page :is(.button.ghost,.small,.manual-key-form button):hover{background:#2c4936;color:#fff}
+html[data-theme="dark"] body.grading-page :is(.small.danger,#deleteExamKey,#deleteAllKeys){background:#382322;color:#ffada1;border-color:#71473f}
+html[data-theme="dark"] body.grading-page :is(.button,.small,.manual-key-form button,.key-choices button,#scanCameraButton,#deleteExamKey,#deleteAllKeys):disabled{background:#222b25;color:#98a99d;border-color:#304237}
+html[data-theme="dark"] body.grading-page .mobile-nav button[aria-current="page"]{background:#244936;color:#d8efdd}
+html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton){background:#087858;color:#fff}
+html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton):hover{background:#0b916b;color:#fff}
+body .home-learning .subject-section,body .home-learning .subject-row,body .home-learning .subject-picks{border:0;box-shadow:none}
+html[data-theme="dark"] body .home-learning .grade-nav-title{color:#b9cabb}
+html[data-theme="dark"] body .library .card .card-art,html[data-theme="dark"] body .related-card .related-card-art{background:#203329;color:#e5eee6;border-color:#304237}
+html[data-theme="dark"] body .related-grade-pill{background:#2c4936;color:#d8efdd}

@@ -47,9 +47,9 @@ html[data-theme="dark"] :is(.lesson-course .article-heading h1,.lesson-course .a
 html[data-theme="dark"] body :is(.card,.related-card,.hero,.article-end,.practice-card,.glossary-toolbar){color:inherit}
 html[data-theme="dark"] body :is(.card,.related-card,.quiz,.practice-card,.prose details,.prose .geometry-lab){background:#1e2d1f;border-color:#2c402e}
 html[data-theme="dark"] body .quiz-option{background:#1a271c;border-color:#2c402e}
-html[data-theme="dark"] body .quiz-option:hover{background:#233526;border-color:#4ade80}
-html[data-theme="dark"] body .quiz-option:has(input:checked){background:#25422d;border-color:#4ade80;color:#f0fdf4}
-html[data-theme="dark"] body :is(.quiz-explanation,.practice-answer){background:#223624;border-color:#4ade80}
-html[data-theme="dark"] body .prose blockquote.callout,html[data-theme="dark"] body .lesson-course .prose blockquote.callout{background:#223624;border-color:#4ade80}
+html[data-theme="dark"] body .quiz-option:hover{background:#233526;border-color:var(--dark-line, #304237)}
+html[data-theme="dark"] body .quiz-option:has(input:checked){background:#25422d;border-color:var(--dark-line, #304237);color:#f0fdf4}
+html[data-theme="dark"] body :is(.quiz-explanation,.practice-answer){background:#223624;border-color:var(--dark-line, #304237)}
+html[data-theme="dark"] body .prose blockquote.callout,html[data-theme="dark"] body .lesson-course .prose blockquote.callout{background:#223624;border-color:var(--dark-line, #304237)}
 html[data-theme="dark"] body header nav#site-menu .nav-exams>summary,html[data-theme="dark"] body header nav#site-menu .display-controls button{color:#e3eadb}
 @media(max-width:620px){body .hero h1{font-size:2.3rem}.course-toc-toggle{left:16px;bottom:20px}}
