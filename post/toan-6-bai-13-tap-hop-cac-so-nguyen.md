@@ -288,11 +288,32 @@ $$-6;\; -4;\; -1;\; 2;\; 5;\; 7.$$
 #### Luyện tập 2.2
 Cho trục số sau với các vạch chia cách đều nhau:
 
-```
-    E        F             G        H
-<---|---|---|---|---|---|---|---|---|---|--->
-   -6          -2       0   1           5
-```
+<figure class="number-line-figure">
+<svg viewBox="0 0 480 120" role="img" aria-label="Trục số với các vạch chia cách nhau một đơn vị" xmlns="http://www.w3.org/2000/svg">
+<title>Trục số với các vạch chia cách nhau một đơn vị</title>
+<path d="M12 60H468M20 54L12 60L20 66M460 54L468 60L460 66" fill="none" stroke="currentColor" stroke-width="2"/>
+<path d="M36 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M70 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M104 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M138 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M172 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M206 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M240 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M274 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M308 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M342 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M376 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M410 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M444 54V66" stroke="currentColor" stroke-width="1.5"/>
+<text x="36" y="96" text-anchor="middle" font-size="20">−6</text>
+<text x="240" y="96" text-anchor="middle" font-size="20">0</text>
+<text x="410" y="96" text-anchor="middle" font-size="20">5</text>
+<circle data-number="-5" cx="70" cy="60" r="4" fill="#d94e48"/><text x="70" y="38" text-anchor="middle" font-size="20" fill="#d94e48">E</text>
+<circle data-number="-2" cx="172" cy="60" r="4" fill="#d94e48"/><text x="172" y="38" text-anchor="middle" font-size="20" fill="#d94e48">F</text>
+<circle data-number="1" cx="274" cy="60" r="4" fill="#d94e48"/><text x="274" y="38" text-anchor="middle" font-size="20" fill="#d94e48">G</text>
+<circle data-number="4" cx="376" cy="60" r="4" fill="#d94e48"/><text x="376" y="38" text-anchor="middle" font-size="20" fill="#d94e48">H</text>
+</svg>
+</figure>
 
 Hãy xác định các điểm $E, F, G, H$ tương ứng với các số nguyên nào.
 
@@ -542,11 +563,33 @@ f) $78 \dots \mathbb{Z}.$
 ### Bài 3. Đọc điểm trên trục số
 Cho trục số sau với khoảng cách mỗi vạch chia là $1$ đơn vị:
 
-```
-        K           L       O   M           N
-<---|---|---|---|---|---|---|---|---|---|---|---|--->
-   -6                      0               5
-```
+<figure class="number-line-figure">
+<svg viewBox="0 0 480 120" role="img" aria-label="Trục số với các vạch chia cách nhau một đơn vị" xmlns="http://www.w3.org/2000/svg">
+<title>Trục số với các vạch chia cách nhau một đơn vị</title>
+<path d="M12 60H468M20 54L12 60L20 66M460 54L468 60L460 66" fill="none" stroke="currentColor" stroke-width="2"/>
+<path d="M36 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M70 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M104 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M138 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M172 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M206 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M240 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M274 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M308 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M342 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M376 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M410 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M444 54V66" stroke="currentColor" stroke-width="1.5"/>
+<text x="36" y="96" text-anchor="middle" font-size="20">−6</text>
+<text x="240" y="96" text-anchor="middle" font-size="20">0</text>
+<text x="410" y="96" text-anchor="middle" font-size="20">5</text>
+<circle data-number="-5" cx="70" cy="60" r="4" fill="#d94e48"/><text x="70" y="38" text-anchor="middle" font-size="20" fill="#d94e48">K</text>
+<circle data-number="-2" cx="172" cy="60" r="4" fill="#d94e48"/><text x="172" y="38" text-anchor="middle" font-size="20" fill="#d94e48">L</text>
+<circle data-number="1" cx="274" cy="60" r="4" fill="#d94e48"/><text x="274" y="38" text-anchor="middle" font-size="20" fill="#d94e48">M</text>
+<circle data-number="4" cx="376" cy="60" r="4" fill="#d94e48"/><text x="376" y="38" text-anchor="middle" font-size="20" fill="#d94e48">N</text>
+<circle data-number="0" cx="240" cy="60" r="4" fill="#d94e48"/><text x="240" y="38" text-anchor="middle" font-size="20" fill="#d94e48">O</text>
+</svg>
+</figure>
 
 a) Hãy viết tọa độ của các điểm $K, L, M, N.$  
 b) Trong bốn điểm trên, điểm nào nằm xa gốc $O$ nhất? Điểm nào nằm gần gốc $O$ nhất?

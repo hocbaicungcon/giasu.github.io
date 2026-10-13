@@ -1824,7 +1824,7 @@ html[data-theme="dark"] .sudoku-notes-grid {
   color: #bdd6d8;
 }
 
-html[data-theme="dark"] :is(header,.nav-submenu,header nav#site-menu,.card,.article-wrap,.exam-wrap,.exam-question,.quiz,.quiz-option,.fun-player,.display-controls button,input,select,textarea,.search,.menu-toggle,.game-panel):not(:where(.game-nav *, .game-result *)) {
+html[data-theme="dark"] :where(header,.nav-submenu,header nav#site-menu,.card,.article-wrap,.exam-wrap,.exam-question,.quiz,.quiz-option,.fun-player,.display-controls button,input,select,textarea,.search,.menu-toggle,.game-panel):not(:where(.game-nav *, .game-result *)) {
   background: #fbf5e7;
   color: #382e23;
   border-color: #dfd1b5;

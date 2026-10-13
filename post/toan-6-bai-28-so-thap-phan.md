@@ -149,11 +149,40 @@ Trên trục số nằm ngang có gốc là điểm $0,$ chiều dương từ tr
 - **Số thập phân âm** được biểu diễn bởi một điểm nằm ở **bên trái điểm $0$**.
 - Hai số đối nhau (như $-0{,}4$ và $0{,}4$) nằm về hai phía đối diện của điểm $0$ và có khoảng cách bằng nhau đến điểm $0.$
 
-```
-        -0,6              0         0,4             1
-<---|-----•-----|---------|---------•-----|---------|--->
-   -1          -0,5                 0,5
-```
+<figure class="number-line-figure">
+<svg viewBox="0 0 480 120" role="img" aria-label="Biểu diễn số −0,6 và 0,4 trên trục số" xmlns="http://www.w3.org/2000/svg">
+<title>Biểu diễn số −0,6 và 0,4 trên trục số</title>
+<path d="M12 60H468M20 54L12 60L20 66M460 54L468 60L460 66" fill="none" stroke="currentColor" stroke-width="2"/>
+<path d="M40 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M60 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M80 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M100 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M120 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M140 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M160 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M180 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M200 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M220 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M240 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M260 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M280 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M300 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M320 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M340 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M360 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M380 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M400 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M420 54V66" stroke="currentColor" stroke-width="1.5"/>
+<path d="M440 54V66" stroke="currentColor" stroke-width="1.5"/>
+<text x="40" y="96" text-anchor="middle" font-size="20">−1</text>
+<text x="140" y="96" text-anchor="middle" font-size="20">−0,5</text>
+<text x="240" y="96" text-anchor="middle" font-size="20">0</text>
+<text x="340" y="96" text-anchor="middle" font-size="20">0,5</text>
+<text x="440" y="96" text-anchor="middle" font-size="20">1</text>
+<circle data-number="-0.6" cx="120" cy="60" r="4" fill="#d94e48"/><text x="120" y="38" text-anchor="middle" font-size="20" fill="#d94e48">−0,6</text>
+<circle data-number="0.4" cx="320" cy="60" r="4" fill="#d94e48"/><text x="320" y="38" text-anchor="middle" font-size="20" fill="#d94e48">0,4</text>
+</svg>
+</figure>
 
 - Điểm biểu diễn số $-0{,}6$: Từ điểm $0$ đếm sang trái $6$ vạch nhỏ.
 - Điểm biểu diễn số $0{,}4$: Từ điểm $0$ đếm sang phải $4$ vạch nhỏ.
