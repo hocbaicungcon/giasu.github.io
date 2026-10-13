@@ -1,0 +1,494 @@
+[
+  {
+    "id": "goc-nhon",
+    "term": "Góc nhọn",
+    "definition": "Góc có số đo lớn hơn 0° và nhỏ hơn 90°."
+  },
+  {
+    "id": "goc-vuong",
+    "term": "Góc vuông",
+    "definition": "Góc có số đo bằng 90°."
+  },
+  {
+    "id": "goc-tu",
+    "term": "Góc tù",
+    "definition": "Góc có số đo lớn hơn 90° và nhỏ hơn 180°."
+  },
+  {
+    "id": "goc-bet",
+    "term": "Góc bẹt",
+    "definition": "Góc có số đo bằng 180°; hai cạnh của góc là hai tia đối nhau."
+  },
+  {
+    "id": "goc-phu",
+    "term": "Hai góc phụ nhau",
+    "aliases": [
+      "góc phụ nhau"
+    ],
+    "definition": "Hai góc có tổng số đo bằng 90°. Ví dụ: 38° và 52°."
+  },
+  {
+    "id": "goc-ke-bu",
+    "term": "Hai góc kề bù",
+    "aliases": [
+      "góc kề bù"
+    ],
+    "definition": "Hai góc có một cạnh chung, hai cạnh còn lại là hai tia đối nhau. Tổng số đo của chúng bằng 180°."
+  },
+  {
+    "id": "goc-ngoai",
+    "term": "Góc ngoài của tam giác",
+    "aliases": [
+      "góc ngoài"
+    ],
+    "definition": "Góc kề bù với một góc trong của tam giác. Số đo góc ngoài bằng tổng hai góc trong không kề với nó."
+  },
+  {
+    "id": "tam-giac-nhon",
+    "term": "Tam giác nhọn",
+    "definition": "Tam giác có cả ba góc nhỏ hơn 90°."
+  },
+  {
+    "id": "tam-giac-vuong",
+    "term": "Tam giác vuông",
+    "definition": "Tam giác có một góc bằng 90°. Hai góc còn lại có tổng bằng 90°."
+  },
+  {
+    "id": "tam-giac-tu",
+    "term": "Tam giác tù",
+    "definition": "Tam giác có một góc lớn hơn 90°. Hai góc còn lại là góc nhọn."
+  },
+  {
+    "id": "tam-giac-can",
+    "term": "Tam giác cân",
+    "definition": "Tam giác có hai cạnh bằng nhau. Hai góc đối diện hai cạnh ấy bằng nhau."
+  },
+  {
+    "id": "tam-giac-deu",
+    "term": "Tam giác đều",
+    "definition": "Tam giác có ba cạnh bằng nhau; mỗi góc có số đo 60°."
+  },
+  {
+    "id": "tia-phan-giac",
+    "term": "Tia phân giác",
+    "definition": "Tia nằm trong một góc và chia góc đó thành hai góc có số đo bằng nhau."
+  },
+  {
+    "id": "goc-so-le",
+    "term": "Góc so le trong",
+    "aliases": [
+      "hai góc so le trong"
+    ],
+    "definition": "Hai góc nằm giữa hai đường thẳng và ở hai phía của một cát tuyến. Khi hai đường thẳng song song, hai góc so le trong bằng nhau."
+  },
+  {
+    "id": "bo-sung-15",
+    "term": "Số tự nhiên",
+    "definition": "Các số dùng để đếm: 0, 1, 2, 3,… Trong quy ước phổ biến ở trường học Việt Nam, tập số tự nhiên có chứa 0."
+  },
+  {
+    "id": "bo-sung-16",
+    "term": "Số nguyên",
+    "definition": "Các số tự nhiên, các số đối của chúng và số 0: …, −2, −1, 0, 1, 2,…"
+  },
+  {
+    "id": "bo-sung-17",
+    "term": "Số hữu tỉ",
+    "definition": "Số viết được dưới dạng a/b với a, b là số nguyên và b khác 0; ví dụ 3/4 hoặc −2."
+  },
+  {
+    "id": "bo-sung-18",
+    "term": "Số vô tỉ",
+    "definition": "Số thực không viết được dưới dạng tỉ số hai số nguyên, như căn bậc hai của 2 hoặc π."
+  },
+  {
+    "id": "bo-sung-19",
+    "term": "Số thực",
+    "definition": "Tập hợp gồm các số hữu tỉ và vô tỉ; mỗi số thực ứng với một điểm trên trục số."
+  },
+  {
+    "id": "bo-sung-20",
+    "term": "Số nguyên tố",
+    "definition": "Số tự nhiên lớn hơn 1 chỉ có hai ước dương là 1 và chính nó. Ví dụ: 2, 3, 5, 7."
+  },
+  {
+    "id": "bo-sung-21",
+    "term": "Hợp số",
+    "definition": "Số tự nhiên lớn hơn 1 có nhiều hơn hai ước dương. Ví dụ: 4 có các ước 1, 2, 4."
+  },
+  {
+    "id": "bo-sung-22",
+    "term": "Ước số",
+    "definition": "Số nguyên d khác 0 là ước của số nguyên a nếu a chia hết cho d."
+  },
+  {
+    "id": "bo-sung-23",
+    "term": "Bội số",
+    "definition": "Số a là bội của số b nếu có một số nguyên k sao cho a=kb."
+  },
+  {
+    "id": "bo-sung-24",
+    "term": "Ước chung lớn nhất",
+    "definition": "Ước dương lớn nhất chung của các số nguyên không đồng thời bằng 0; viết tắt ƯCLN."
+  },
+  {
+    "id": "bo-sung-25",
+    "term": "Bội chung nhỏ nhất",
+    "definition": "Bội dương nhỏ nhất chung của các số nguyên dương; viết tắt BCNN."
+  },
+  {
+    "id": "bo-sung-26",
+    "term": "Phân số",
+    "definition": "Biểu thức a/b với a, b nguyên và b khác 0; a là tử số, b là mẫu số."
+  },
+  {
+    "id": "bo-sung-27",
+    "term": "Tử số",
+    "definition": "Số ở trên vạch phân số; trong a/b, tử số là a."
+  },
+  {
+    "id": "bo-sung-28",
+    "term": "Mẫu số",
+    "definition": "Số khác 0 ở dưới vạch phân số; trong a/b, mẫu số là b."
+  },
+  {
+    "id": "bo-sung-29",
+    "term": "Phân số tối giản",
+    "definition": "Phân số mà tử và mẫu không còn ước chung dương nào lớn hơn 1."
+  },
+  {
+    "id": "bo-sung-30",
+    "term": "Quy đồng mẫu số",
+    "definition": "Đưa các phân số về cùng một mẫu số bằng cách nhân cả tử và mẫu với cùng số khác 0."
+  },
+  {
+    "id": "bo-sung-31",
+    "term": "Số thập phân",
+    "definition": "Cách viết số theo hệ thập phân có dấu phẩy ngăn phần nguyên với phần thập phân; ví dụ 2,75."
+  },
+  {
+    "id": "bo-sung-32",
+    "term": "Giá trị tuyệt đối",
+    "definition": "Khoảng cách từ số x đến 0 trên trục số, kí hiệu $|x|$; luôn không âm."
+  },
+  {
+    "id": "bo-sung-33",
+    "term": "Số đối",
+    "definition": "Số có tổng với số đã cho bằng 0; số đối của x là −x."
+  },
+  {
+    "id": "bo-sung-34",
+    "term": "Số nghịch đảo",
+    "definition": "Số có tích với số khác 0 đã cho bằng 1; nghịch đảo của x là 1/x."
+  },
+  {
+    "id": "bo-sung-35",
+    "term": "Lũy thừa",
+    "definition": "Phép toán biểu diễn tích lặp lại hoặc mở rộng của tích lặp lại; với n nguyên dương, $a^n$ là tích n thừa số a."
+  },
+  {
+    "id": "bo-sung-36",
+    "term": "Căn bậc hai",
+    "definition": "Số x thỏa $x^2=a$. Với a dương có hai căn đối nhau; căn bậc hai số học $\\sqrt a$ là căn không âm."
+  },
+  {
+    "id": "bo-sung-37",
+    "term": "Căn bậc ba",
+    "definition": "Số thực x thỏa $x^3=a$; mỗi số thực a có đúng một căn bậc ba thực."
+  },
+  {
+    "id": "bo-sung-38",
+    "term": "Tỉ số",
+    "definition": "Thương của hai đại lượng cùng loại, với đại lượng ở mẫu khác 0; cần đổi về cùng đơn vị trước khi so sánh."
+  },
+  {
+    "id": "bo-sung-39",
+    "term": "Tỉ lệ thức",
+    "definition": "Đẳng thức của hai tỉ số: $a/b=c/d$ với b, d khác 0; suy ra $ad=bc$."
+  },
+  {
+    "id": "bo-sung-40",
+    "term": "Đại lượng tỉ lệ thuận",
+    "definition": "Hai đại lượng thỏa y=kx với k không đổi và khác 0; tỉ số y/x không đổi khi x khác 0."
+  },
+  {
+    "id": "bo-sung-41",
+    "term": "Đại lượng tỉ lệ nghịch",
+    "definition": "Hai đại lượng thỏa y=k/x với k không đổi khác 0; tích xy không đổi."
+  },
+  {
+    "id": "bo-sung-42",
+    "term": "Phần trăm",
+    "definition": "Tỉ số có mẫu 100; 25% nghĩa là 25/100, bằng 1/4."
+  },
+  {
+    "id": "bo-sung-43",
+    "term": "Biểu thức đại số",
+    "definition": "Biểu thức gồm số, biến và các phép toán, như $2x+3y$; giá trị phụ thuộc các biến."
+  },
+  {
+    "id": "bo-sung-44",
+    "term": "Đơn thức",
+    "definition": "Tích của một số với các biến có số mũ nguyên không âm, như $3x^2y$."
+  },
+  {
+    "id": "bo-sung-45",
+    "term": "Đa thức",
+    "definition": "Tổng hữu hạn của các đơn thức; ví dụ $x^2-3x+2$."
+  },
+  {
+    "id": "bo-sung-46",
+    "term": "Hệ số",
+    "definition": "Thừa số bằng số trong một hạng tử; trong $5x^2$, hệ số là 5."
+  },
+  {
+    "id": "bo-sung-47",
+    "term": "Bậc của đa thức",
+    "definition": "Bậc lớn nhất của các đơn thức có hệ số khác 0 sau khi thu gọn; đa thức-không không có bậc theo quy ước thông thường."
+  },
+  {
+    "id": "bo-sung-48",
+    "term": "Hằng đẳng thức",
+    "definition": "Đẳng thức đúng với mọi giá trị biến làm các biểu thức xác định, như $(a+b)^2=a^2+2ab+b^2$."
+  },
+  {
+    "id": "bo-sung-49",
+    "term": "Phân tích đa thức thành nhân tử",
+    "definition": "Viết một đa thức dưới dạng tích các đa thức đơn giản hơn; ví dụ $x^2-1=(x-1)(x+1)$."
+  },
+  {
+    "id": "bo-sung-50",
+    "term": "Phương trình",
+    "definition": "Đẳng thức chứa ẩn; giải phương trình là tìm các giá trị ẩn làm đẳng thức đúng và các biểu thức xác định."
+  },
+  {
+    "id": "bo-sung-51",
+    "term": "Nghiệm của phương trình",
+    "definition": "Giá trị của ẩn thỏa phương trình và mọi điều kiện xác định."
+  },
+  {
+    "id": "bo-sung-52",
+    "term": "Bất phương trình",
+    "definition": "Bất đẳng thức chứa ẩn; nghiệm là giá trị của ẩn làm bất đẳng thức đúng và các biểu thức xác định."
+  },
+  {
+    "id": "bo-sung-53",
+    "term": "Hệ phương trình",
+    "definition": "Nhiều phương trình cùng xét trên một bộ ẩn; nghiệm phải thỏa tất cả phương trình đồng thời."
+  },
+  {
+    "id": "bo-sung-54",
+    "term": "Hàm số bậc nhất",
+    "definition": "Hàm $y=ax+b$ với a khác 0; đồ thị là đường thẳng, đồng biến khi a dương và nghịch biến khi a âm."
+  },
+  {
+    "id": "bo-sung-55",
+    "term": "Điểm",
+    "definition": "Đối tượng hình học chỉ vị trí, không có kích thước; thường được đặt tên bằng chữ in hoa."
+  },
+  {
+    "id": "bo-sung-56",
+    "term": "Đường thẳng",
+    "definition": "Đối tượng hình học kéo dài vô hạn về hai phía; hai điểm phân biệt xác định một đường thẳng."
+  },
+  {
+    "id": "bo-sung-57",
+    "term": "Đoạn thẳng",
+    "definition": "Phần đường thẳng gồm hai đầu mút A, B và mọi điểm giữa chúng; độ dài AB là khoảng cách giữa A và B."
+  },
+  {
+    "id": "bo-sung-58",
+    "term": "Tia",
+    "definition": "Phần đường thẳng có một điểm gốc và kéo dài vô hạn theo một phía."
+  },
+  {
+    "id": "bo-sung-59",
+    "term": "Trung điểm",
+    "definition": "Điểm M nằm trên đoạn AB và thỏa MA=MB; chia đoạn thành hai phần bằng nhau."
+  },
+  {
+    "id": "bo-sung-60",
+    "term": "Góc",
+    "definition": "Hình gồm hai tia chung gốc; gốc chung là đỉnh, hai tia là hai cạnh của góc."
+  },
+  {
+    "id": "bo-sung-61",
+    "term": "Hai góc đối đỉnh",
+    "definition": "Hai góc mà mỗi cạnh của góc này là tia đối của một cạnh góc kia; chúng có số đo bằng nhau."
+  },
+  {
+    "id": "bo-sung-62",
+    "term": "Góc đồng vị",
+    "definition": "Hai góc ở vị trí tương ứng khi một cát tuyến cắt hai đường thẳng; nếu hai đường song song thì các góc đồng vị bằng nhau."
+  },
+  {
+    "id": "bo-sung-63",
+    "term": "Góc trong cùng phía",
+    "definition": "Hai góc nằm giữa hai đường thẳng và cùng phía của cát tuyến; nếu hai đường song song thì tổng hai góc bằng 180°."
+  },
+  {
+    "id": "bo-sung-64",
+    "term": "Đường trung trực",
+    "definition": "Đường thẳng vuông góc một đoạn thẳng tại trung điểm của đoạn ấy; mọi điểm trên đường này cách đều hai đầu mút."
+  },
+  {
+    "id": "bo-sung-65",
+    "term": "Đường trung tuyến",
+    "definition": "Đoạn thẳng nối một đỉnh tam giác với trung điểm cạnh đối diện."
+  },
+  {
+    "id": "bo-sung-66",
+    "term": "Đường cao",
+    "definition": "Đường vuông góc kẻ từ một đỉnh tới đường thẳng chứa cạnh đối diện; độ dài đoạn từ đỉnh đến chân vuông góc là chiều cao tương ứng."
+  },
+  {
+    "id": "bo-sung-67",
+    "term": "Đường phân giác",
+    "definition": "Trong tam giác, đoạn từ một đỉnh đến cạnh đối diện nằm trên tia phân giác của góc tại đỉnh đó."
+  },
+  {
+    "id": "bo-sung-68",
+    "term": "Trọng tâm",
+    "definition": "Giao điểm ba đường trung tuyến của tam giác; chia mỗi trung tuyến theo tỉ số 2:1 tính từ đỉnh."
+  },
+  {
+    "id": "bo-sung-69",
+    "term": "Trực tâm",
+    "definition": "Giao điểm ba đường cao của tam giác; có thể nằm trong, trên hoặc ngoài tam giác."
+  },
+  {
+    "id": "bo-sung-70",
+    "term": "Tâm đường tròn nội tiếp",
+    "definition": "Giao điểm ba đường phân giác trong của tam giác, cách đều ba cạnh."
+  },
+  {
+    "id": "bo-sung-71",
+    "term": "Tâm đường tròn ngoại tiếp",
+    "definition": "Giao điểm ba đường trung trực của tam giác, cách đều ba đỉnh."
+  },
+  {
+    "id": "bo-sung-72",
+    "term": "Hai tam giác bằng nhau",
+    "definition": "Hai tam giác có các cạnh và góc tương ứng bằng nhau; thứ tự ghi tên phải đúng tương ứng các đỉnh."
+  },
+  {
+    "id": "bo-sung-73",
+    "term": "Hai tam giác đồng dạng",
+    "definition": "Hai tam giác có các góc tương ứng bằng nhau và các cạnh tương ứng tỉ lệ."
+  },
+  {
+    "id": "bo-sung-74",
+    "term": "Định lý Pythagore",
+    "definition": "Trong tam giác vuông, bình phương cạnh huyền bằng tổng bình phương hai cạnh góc vuông: $c^2=a^2+b^2$."
+  },
+  {
+    "id": "bo-sung-75",
+    "term": "Cạnh huyền",
+    "definition": "Cạnh đối diện góc vuông trong tam giác vuông; đây là cạnh dài nhất của tam giác ấy."
+  },
+  {
+    "id": "bo-sung-76",
+    "term": "Hình thang",
+    "definition": "Tứ giác có một cặp cạnh đối song song; hai cạnh song song được gọi là hai đáy."
+  },
+  {
+    "id": "bo-sung-77",
+    "term": "Hình bình hành",
+    "definition": "Tứ giác có hai cặp cạnh đối song song; các cạnh đối bằng nhau và hai đường chéo cắt nhau tại trung điểm mỗi đường."
+  },
+  {
+    "id": "bo-sung-78",
+    "term": "Hình chữ nhật",
+    "definition": "Tứ giác có bốn góc vuông; là hình bình hành có hai đường chéo bằng nhau."
+  },
+  {
+    "id": "bo-sung-79",
+    "term": "Hình thoi",
+    "definition": "Tứ giác có bốn cạnh bằng nhau; hai đường chéo vuông góc và cắt nhau tại trung điểm."
+  },
+  {
+    "id": "bo-sung-80",
+    "term": "Hình vuông",
+    "definition": "Tứ giác có bốn cạnh bằng nhau và bốn góc vuông; vừa là hình chữ nhật vừa là hình thoi."
+  },
+  {
+    "id": "bo-sung-81",
+    "term": "Đường tròn",
+    "definition": "Tập các điểm trong mặt phẳng cách tâm O một khoảng R không đổi, với R dương."
+  },
+  {
+    "id": "bo-sung-82",
+    "term": "Hình tròn",
+    "definition": "Miền phẳng gồm đường tròn và toàn bộ các điểm bên trong nó; các điểm cách tâm không quá bán kính."
+  },
+  {
+    "id": "bo-sung-83",
+    "term": "Dây cung",
+    "definition": "Đoạn thẳng nối hai điểm trên một đường tròn."
+  },
+  {
+    "id": "bo-sung-84",
+    "term": "Đường kính",
+    "definition": "Dây cung đi qua tâm đường tròn; có độ dài bằng hai lần bán kính."
+  },
+  {
+    "id": "bo-sung-85",
+    "term": "Cung tròn",
+    "definition": "Một phần của đường tròn được giới hạn bởi hai đầu mút trên đường tròn."
+  },
+  {
+    "id": "bo-sung-86",
+    "term": "Góc ở tâm",
+    "definition": "Góc có đỉnh tại tâm đường tròn và hai cạnh chứa hai bán kính."
+  },
+  {
+    "id": "bo-sung-87",
+    "term": "Góc nội tiếp",
+    "definition": "Góc có đỉnh trên đường tròn và hai cạnh chứa hai dây cung; số đo bằng nửa số đo cung bị chắn."
+  },
+  {
+    "id": "bo-sung-88",
+    "term": "Chu vi",
+    "definition": "Độ dài đường bao quanh một hình phẳng; chu vi đa giác bằng tổng độ dài các cạnh."
+  },
+  {
+    "id": "bo-sung-89",
+    "term": "Diện tích",
+    "definition": "Số đo phần mặt phẳng một hình chiếm; đơn vị là cm², m²,…"
+  },
+  {
+    "id": "bo-sung-90",
+    "term": "Tần số",
+    "definition": "Số lần một giá trị hoặc một nhóm giá trị xuất hiện trong mẫu dữ liệu."
+  },
+  {
+    "id": "bo-sung-91",
+    "term": "Tần số tương đối",
+    "definition": "Tỉ số giữa tần số của một giá trị hoặc nhóm và tổng số quan sát; thường viết dưới dạng phần trăm."
+  },
+  {
+    "id": "bo-sung-92",
+    "term": "Trung bình cộng",
+    "definition": "Tổng các giá trị chia cho số giá trị, khi có ít nhất một giá trị."
+  },
+  {
+    "id": "bo-sung-93",
+    "term": "Không gian mẫu",
+    "definition": "Tập hợp mọi kết quả có thể xảy ra của một phép thử ngẫu nhiên."
+  },
+  {
+    "id": "bo-sung-94",
+    "term": "Xác suất",
+    "definition": "Số từ 0 đến 1 đo khả năng một biến cố xảy ra trong mô hình; với kết quả đồng khả năng hữu hạn, bằng số kết quả thuận lợi chia tổng số kết quả."
+  },
+  {
+    "id": "bo-sung-95",
+    "term": "Biến cố chắc chắn",
+    "definition": "Biến cố gồm toàn bộ không gian mẫu, luôn xảy ra trong mô hình và có xác suất bằng 1."
+  },
+  {
+    "id": "bo-sung-96",
+    "term": "Biến cố không thể",
+    "definition": "Biến cố rỗng, không có kết quả thuận lợi và có xác suất bằng 0."
+  }
+]

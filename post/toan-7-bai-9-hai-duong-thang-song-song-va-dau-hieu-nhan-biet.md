@@ -78,6 +78,11 @@ Trước khi bước vào bài học mới, hãy cùng làm nhanh $5$ câu hỏi
 
 ---
 
+```geometry
+type: angle-pairs
+mode: parallel
+```
+
 ## I. Lý thuyết trọng tâm
 
 ### 1. Các cặp góc tạo bởi một đường thẳng cắt hai đường thẳng

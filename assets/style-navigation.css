@@ -848,10 +848,35 @@ html[data-theme="dark"] footer .brand.small .dot {
   -webkit-text-fill-color: #b96358;
 }
 
-/* Keep grading beside the brand, outside the collapsible navigation. */
-header .grading-link{display:flex;align-items:center;gap:7px;padding:10px 12px;border:1px solid #b6ddd8;border-radius:12px;background:#e6f7f5;color:#146d76;font-size:.875rem;font-weight:700;line-height:1.35;flex-shrink:0;margin-right:auto;max-width:190px}
-header .grading-link svg{width:22px;height:22px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-header .grading-link:hover{background:#cfece7}
-header .grading-link:focus-visible{outline:2px solid #1598b3;outline-offset:3px}
-@media(max-width:620px){header .nav{gap:8px}header .brand{flex-shrink:0}header .brand>span{display:none}header .grading-link{font-size:.8rem;padding:8px;max-width:170px}header .grading-link svg{width:20px;height:20px}}
-html[data-theme="dark"] header .grading-link{background:#eadabb;border-color:#d6b786;color:#624625}
+/* Two-line grading shortcut with a small Free badge, aligned with the brand. */
+header .grading-link {position:relative;display:inline-flex;align-items:center;gap:9px;padding:8px 16px 8px 11px;border:1px solid #cce4e5;border-radius:12px;background:#f0f9f8;color:#245e65;font-size:.8125rem;font-weight:600;line-height:1.2;flex-shrink:0;margin-right:auto;min-height:46px;box-shadow:0 2px 5px #194b5506}
+header .grading-link svg {width:21px;height:21px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+header .grading-label {display:flex;flex-direction:column;gap:2px;white-space:nowrap;text-align:left}
+header .grading-label>span:first-child {font-size:.6875rem;font-weight:500;color:#5a7d82}
+header .grading-label>span:last-child {font-size:.8125rem;font-weight:700;letter-spacing:-.15px}
+header .grading-free {position:absolute;right:8px;top:-8px;padding:2px 7px;border:2px solid var(--paper,#fff);border-radius:8px;background:#f5cfc5;color:#714236;font-size:.5625rem;line-height:1.1;font-weight:700;letter-spacing:.15px}
+header .grading-link:hover {background:#e3f4f2;border-color:#9bcdd0;color:#146d76}
+header .grading-link:focus-visible {outline:2px solid #1598b3;outline-offset:3px}
+@media(max-width:620px){
+ header .nav{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;height:auto;min-height:82px;padding-block:14px}
+ header .brand{justify-self:start;gap:7px;font-size:1rem;white-space:nowrap}
+ header .brand>span{display:block}
+ header .grading-link{justify-self:end;margin:0;gap:7px;padding:7px 11px 7px 9px;min-height:42px}
+ header .menu-toggle{justify-self:end;margin:0}
+ header .grading-link svg{width:18px;height:18px}
+ header .grading-label>span:last-child{font-size:.75rem}
+ header .grading-label>span:first-child{font-size:.625rem}
+}
+@media(max-width:360px){
+ header .nav{gap:5px;padding-inline:12px}
+ header .brand{gap:5px;font-size:.875rem}
+ header .brand img{width:32px;height:32px}
+ header .grading-link{gap:5px;padding:6px 8px;min-height:38px}
+ header .grading-link svg{width:16px;height:16px}
+ header .grading-label>span:last-child{font-size:.6875rem}
+ header .grading-label>span:first-child{font-size:.5625rem}
+ header .menu-toggle{width:34px;height:38px;padding:6px}
+}
+html[data-theme="dark"] header .grading-link {background:#233940;border-color:#36515a;color:#b5e0e4}
+html[data-theme="dark"] header .grading-label>span:first-child {color:#8cafb7}
+html[data-theme="dark"] header .grading-free {background:#e9bbab;color:#59382d;border-color:var(--paper,#18212f)}

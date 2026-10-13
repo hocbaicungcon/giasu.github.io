@@ -1,0 +1,4668 @@
+{
+  "source": "assets/danh_sach_thuat_ngu_toan.xlsx",
+  "sheet": "Tổng hợp tất cả",
+  "terms": [
+    {
+      "id": "excel-1",
+      "term": "Biến cố (là tập con của không gian mẫu)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.78",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-2",
+      "term": "Biến cố giao",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.68",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-3",
+      "term": "Biến cố hợp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.67",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-4",
+      "term": "Biến cố xung khắc",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.72",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-5",
+      "term": "Biến cố đối",
+      "aliases": [],
+      "definition": "Biến cố đối của biến cố $E$ là biến cố xảy ra khi và chỉ khi $E$ không xảy ra.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.79",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-6",
+      "term": "Biến cố độc lập",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.69",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-7",
+      "term": "Biến ngẫu nhiên có phân bố nhị thức",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-8",
+      "term": "Biến ngẫu nhiên rời rạc",
+      "aliases": [],
+      "definition": "Đại lượng nhận giá trị bằng số thuộc một tập hợp hữu hạn nào đó và giá trị ấy là ngẫu nhiên, không dự đoán trước được",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-9",
+      "term": "Biến số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-10",
+      "term": "Biểu diễn miền nghiệm của bất phương trình bậc nhất hai ẩn",
+      "aliases": [],
+      "definition": "Biểu diễn trên mặt phẳng toạ độ $Oxy$ miền nghiệm của bất phương trình bậc nhất hai ẩn",
+      "source": "Toán 10 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-11",
+      "term": "Biểu diễn miền nghiệm của hệ bất phương trình bậc nhất hai ẩn",
+      "aliases": [],
+      "definition": "Biểu diễn trên mặt phẳng toạ độ $Oxy$ giao các miền nghiệm của các bất phương trình bậc nhất hai ẩn trong hệ",
+      "source": "Toán 10 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-12",
+      "term": "Biểu diễn một góc lượng giác trên đường tròn lượng giác",
+      "aliases": [],
+      "definition": "Phép biểu diễn giao điểm của tia cuối của một góc lượng giác với đường tròn lượng giác",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-13",
+      "term": "Biểu thức dưới dấu tích phân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-14",
+      "term": "Biểu thức toạ độ của tích vô hướng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.68",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-15",
+      "term": "Biểu đồ Ven",
+      "aliases": [],
+      "definition": "Hình phẳng giới hạn bởi một đường cong khép kín dùng để minh hoạ tập hợp",
+      "source": "Toán 10 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-16",
+      "term": "Bài toán người đưa thư",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-17",
+      "term": "Bài toán người đưa thư (trong Lí thuyết đồ thị)",
+      "aliases": [],
+      "definition": "Bài toán tìm chu trình ngắn nhất đi qua tất cả các cạnh của một đồ thị cho trước",
+      "source": "Chuyên đề Toán 11",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-18",
+      "term": "Bài toán quy hoạch tuyến tính",
+      "aliases": [],
+      "definition": "Bài toán tối ưu, trong đó hàm mục tiêu và các ràng buộc đều là tuyến tính",
+      "source": "Chuyên đề Toán 12",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-19",
+      "term": "Bài toán quy hoạch tuyến tính hai biến",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-20",
+      "term": "Bài toán tìm đường đi ngắn nhất",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-21",
+      "term": "Bài toán tìm đường đi tối ưu (trong Lí thuyết đồ thị)",
+      "aliases": [],
+      "definition": "Bài toán tìm đường đi từ đỉnh $A$ đến đỉnh $L$ trong một đồ thị có trọng số sao cho tổng các trọng số trên các cạnh của đường đi là nhỏ nhất",
+      "source": "Chuyên đề Toán 11",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-22",
+      "term": "Bài toán tối ưu",
+      "aliases": [],
+      "definition": "Bài toán cực đại hoá hoặc cực tiểu hoá một hàm số nhận giá trị thực (thường được gọi là hàm mục tiêu) với các biến số thoả mãn các ràng buộc cho trước. Ở đây cả hàm mục tiêu và các ràng buộc có thể được cho trước hoặc là phải tự xác định từ ý nghĩa của bài toán thực tế sau khi đã được mô hình hoá toán học.",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.23",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-23",
+      "term": "Bài toán tối ưu hoá",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.36",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-24",
+      "term": "Bán kính (của mặt cầu)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-25",
+      "term": "Bán kính qua tiêu (đối với elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.42",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-26",
+      "term": "Bán kính qua tiêu (đối với hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-27",
+      "term": "Bán kính qua tiêu (đối với parabol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-28",
+      "term": "Bình phương vô hướng của một vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.67",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-29",
+      "term": "Bảng biến thiên",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-30",
+      "term": "Bảng dữ liệu thống kê $2 \\times 2$",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.66",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-31",
+      "term": "Bảng giá trị lượng giác của các góc đặc biệt",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.34",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-32",
+      "term": "Bảng nguyên hàm",
+      "aliases": [],
+      "definition": "Bảng nguyên hàm của một số hàm số sơ cấp cơ bản thường gặp",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.10",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-33",
+      "term": "Bảng phân bố xác suất của biến ngẫu nhiên rời rạc",
+      "aliases": [],
+      "definition": "Bảng mô tả cụ thể xác suất để biến ngẫu nhiên rời rạc $X$ nhận giá trị cho trước",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-34",
+      "term": "Bất phương trình bậc hai một ẩn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.22",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-35",
+      "term": "Bất phương trình bậc nhất hai ẩn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.22",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-36",
+      "term": "Bất phương trình lôgarit",
+      "aliases": [],
+      "definition": "Bất phương trình có chứa ẩn số trong biểu thức dưới dấu lôgarit",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.23",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-37",
+      "term": "Bất phương trình mũ",
+      "aliases": [],
+      "definition": "Bất phương trình có chứa ẩn số trong số mũ của luỹ thừa",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.22",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-38",
+      "term": "Bậc của đỉnh",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.37",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-39",
+      "term": "Cao độ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-40",
+      "term": "Chi phí biên",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 12 - Tập 1: tr.34 | Chuyên đề Toán 12: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-41",
+      "term": "Chi phí trung bình",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-42",
+      "term": "Chiều cao của hình chóp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-43",
+      "term": "Chiều cao của hình lăng trụ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.56",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-44",
+      "term": "Chiều quay (âm, dương)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-45",
+      "term": "Chu trình",
+      "aliases": [],
+      "definition": "Một đường đi khép kín, tức là đường đi có đầu đường trùng với cuối đường",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-46",
+      "term": "Chu trình Euler",
+      "aliases": [],
+      "definition": "Một chu trình đơn giản chứa mọi cạnh của đồ thị",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-47",
+      "term": "Chu trình Hamilton",
+      "aliases": [],
+      "definition": "Một chu trình sơ cấp chứa mọi đỉnh của đồ thị",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-48",
+      "term": "Chu trình sơ cấp",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-49",
+      "term": "Chu trình đơn giản",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-50",
+      "term": "Chỉnh hợp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.67",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-51",
+      "term": "Conic",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.57",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-52",
+      "term": "Công bội",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-53",
+      "term": "Công sai",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-54",
+      "term": "Công thức Bayes",
+      "aliases": [],
+      "definition": "Công thức cho phép cập nhật xác suất xảy ra của biến cố $A$ khi biết một sự kiện liên quan $B$ đã xảy ra",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.75",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-55",
+      "term": "Công thức Bernoulli",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.15",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-56",
+      "term": "Công thức biến đổi tích thành tổng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.19",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-57",
+      "term": "Công thức biến đổi tổng thành tích",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.20",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-58",
+      "term": "Công thức cộng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1, Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 1: tr.17 | Toán 11 - Tập 2: tr.74",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-59",
+      "term": "Công thức Heron",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-60",
+      "term": "Công thức khoảng cách giữa hai điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.63",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-61",
+      "term": "Công thức lãi kép",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-62",
+      "term": "Công thức lãi đơn",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-63",
+      "term": "Công thức nhân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.76",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-64",
+      "term": "Công thức nhân xác suất",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.68",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-65",
+      "term": "Công thức tính diện tích tam giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-66",
+      "term": "Công thức tính góc giữa hai vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.68",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-67",
+      "term": "Công thức tính góc giữa hai đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-68",
+      "term": "Công thức tính khoảng cách từ một điểm đến một đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-69",
+      "term": "Công thức xác suất toàn phần",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.72",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-70",
+      "term": "Căn bậc $n$",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-71",
+      "term": "Cơ số (của luỹ thừa)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.5",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-72",
+      "term": "Cơ số (của lôgarit)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.10",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-73",
+      "term": "Cạnh",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.35",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-74",
+      "term": "Cấp số cộng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-75",
+      "term": "Cấp số nhân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-76",
+      "term": "Cấp số nhân lùi vô hạn",
+      "aliases": [],
+      "definition": "Cấp số nhân vô hạn có công bội $q$ với $|q| < 1$",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-77",
+      "term": "Cầu",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-78",
+      "term": "Cận dưới (của tích phân)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-79",
+      "term": "Cận trên (của tích phân)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-80",
+      "term": "Cận tích phân",
+      "aliases": [],
+      "definition": "Trong tích phân $\\int_a^b f(x) \\, dx$, $a$ gọi là cận dưới, $b$ gọi là cận trên của tích phân",
+      "source": "Toán 12 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-81",
+      "term": "Cặp vectơ chỉ phương (của mặt phẳng)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.31",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-82",
+      "term": "Cặp vectơ chỉ phương của mặt phẳng",
+      "aliases": [],
+      "definition": "Hai vectơ khác vectơ-không, không cùng phương với nhau và có giá song song hoặc nằm trên mặt phẳng",
+      "source": "Toán 12 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-83",
+      "term": "Cực tiểu",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-84",
+      "term": "Cực trị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-85",
+      "term": "Cực trị của hàm số",
+      "aliases": [],
+      "definition": "Giá trị cực đại hoặc giá trị cực tiểu của hàm số",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-86",
+      "term": "Cực đại",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-87",
+      "term": "Diện tích của hình phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.19",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-88",
+      "term": "Doanh thu biên",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-89",
+      "term": "Dãy số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.42",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-90",
+      "term": "Dãy số bị chặn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.45",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-91",
+      "term": "Dãy số có giới hạn 0",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.105",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-92",
+      "term": "Dãy số có giới hạn hữu hạn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.105",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-93",
+      "term": "Dãy số có giới hạn vô cực",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.108",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-94",
+      "term": "Dãy số giảm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.45",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-95",
+      "term": "Dãy số hữu hạn",
+      "aliases": [],
+      "definition": "Dãy số chỉ gồm có hữu hạn số hạng",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-96",
+      "term": "Dãy số không đổi",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-97",
+      "term": "Dãy số tăng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.45",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-98",
+      "term": "Dãy số vô hạn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.42",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-99",
+      "term": "Dấu tích phân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-100",
+      "term": "Elip",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-101",
+      "term": "Gia tốc tức thời",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2, Toán 12 - Tập 1",
+      "pages": "Toán 11 - Tập 2: tr.95 | Toán 12 - Tập 1: tr.33",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-102",
+      "term": "Giao (của hai tập hợp)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.17",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-103",
+      "term": "Giao tuyến của hai mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.73",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-104",
+      "term": "Giá của một vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-105",
+      "term": "Giá trị cực tiểu",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-106",
+      "term": "Giá trị cực đại",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-107",
+      "term": "Giá trị hiện tại",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.63",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-108",
+      "term": "Giá trị hiện tại của niên kim",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.65",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-109",
+      "term": "Giá trị lượng giác của một góc",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.34",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-110",
+      "term": "Giá trị lượng giác của một góc lượng giác",
+      "aliases": [],
+      "definition": "Các giá trị $\\sin, \\cos$ và $\\tan, \\cot$ (khi chúng xác định) của một góc lượng giác",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-111",
+      "term": "Giá trị lớn nhất",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.15",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-112",
+      "term": "Giá trị lớn nhất của hàm số",
+      "aliases": [],
+      "definition": "Số $M$ được gọi là giá trị lớn nhất của hàm số $y = f(x)$ trên tập $D$ nếu $f(x) \\le M$ với mọi $x \\in D$ và tồn tại $x_0 \\in D$ sao cho $f(x_0) = M$",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-113",
+      "term": "Giá trị nhỏ nhất",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.15",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-114",
+      "term": "Giá trị nhỏ nhất của hàm số",
+      "aliases": [],
+      "definition": "Số $m$ được gọi là giá trị nhỏ nhất của hàm số $y = f(x)$ trên tập $D$ nếu $f(x) \\ge m$ với mọi $x \\in D$ và tồn tại $x_0 \\in D$ sao cho $f(x_0) = m$",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-115",
+      "term": "Giá trị tương lai",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-116",
+      "term": "Giá trị tối ưu",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-117",
+      "term": "Giải một phương trình",
+      "aliases": [],
+      "definition": "Tìm tất cả các nghiệm của nó (nghĩa là tìm tập hợp nghiệm).",
+      "source": "Toán 10 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-118",
+      "term": "Giải tam giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-119",
+      "term": "Giới hạn của hàm số tại một điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.111",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-120",
+      "term": "Giới hạn của hàm số tại vô cực",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.114",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-121",
+      "term": "Giới hạn một bên",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.113",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-122",
+      "term": "Giới hạn một bên của hàm số tại một điểm",
+      "aliases": [],
+      "definition": "Giới hạn bên phải hoặc giới hạn bên trái của hàm số tại một điểm",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-123",
+      "term": "Giới hạn vô cực của hàm số tại một điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.115",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-124",
+      "term": "Góc giữa hai mặt phẳng",
+      "aliases": [],
+      "definition": "Góc giữa hai đường thẳng lần lượt vuông góc với hai mặt phẳng đó.",
+      "source": "Toán 11 - Tập 2, Toán 12 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.44 | Toán 12 - Tập 2: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-125",
+      "term": "Góc giữa hai vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.66 | Toán 12 - Tập 1: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-126",
+      "term": "Góc giữa hai vectơ trong không gian",
+      "aliases": [],
+      "definition": "Góc $\\widehat{AOB}$, trong đó $\\vec{OA}$ và $\\vec{OB}$ là hai vectơ chung gốc và lần lượt bằng hai vectơ khác $\\vec{0}$ đã cho",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-127",
+      "term": "Góc giữa hai đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2, Toán 11 - Tập 2, Toán 12 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.37 | Toán 11 - Tập 2: tr.28 | Toán 12 - Tập 2: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-128",
+      "term": "Góc giữa đường thẳng và mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2, Toán 12 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.41 | Toán 12 - Tập 2: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-129",
+      "term": "Góc lượng giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-130",
+      "term": "Góc nhị diện",
+      "aliases": [],
+      "definition": "Hình gồm hai nửa mặt phẳng $(P)$, $(Q)$ có chung bờ $a$ được gọi là một góc nhị diện",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-131",
+      "term": "Góc phẳng nhị diện",
+      "aliases": [],
+      "definition": "Góc $\\widehat{xOy}$, trong đó $O$ là điểm bất kì thuộc cạnh $a$ của góc nhị diện $[P, a, Q]$; $Ox, Oy$ tương ứng là hai tia thuộc $(P), (Q)$ và vuông góc với $a$",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-132",
+      "term": "Góc quay",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.16",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-133",
+      "term": "Hai biến cố xung khắc",
+      "aliases": [],
+      "definition": "Hai biến cố mà nếu biến cố này xảy ra thì biến cố kia không xảy ra",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-134",
+      "term": "Hai biến cố độc lập",
+      "aliases": [],
+      "definition": "Hai biến cố mà việc xảy ra hay không xảy ra của biến cố này không làm ảnh hưởng tới xác suất xảy ra của biến cố kia",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-135",
+      "term": "Hai hình bằng nhau",
+      "aliases": [],
+      "definition": "Nếu có một phép dời hình, biến hình này thành hình kia",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.21",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-136",
+      "term": "Hai hình đồng dạng",
+      "aliases": [],
+      "definition": "Nếu có một phép đồng dạng, biến hình này thành hình kia",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.31",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-137",
+      "term": "Hai mặt phẳng song song",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.88",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-138",
+      "term": "Hai mặt phẳng vuông góc",
+      "aliases": [],
+      "definition": "Hai mặt phẳng mà góc giữa chúng bằng $90^\\circ$",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.44",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-139",
+      "term": "Hai phương trình tương đương",
+      "aliases": [],
+      "definition": "Hai phương trình có cùng tập hợp nghiệm.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-140",
+      "term": "Hai vectơ bằng nhau",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-141",
+      "term": "Hai vectơ cùng phương",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-142",
+      "term": "Hai đường thẳng chéo nhau",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.78",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-143",
+      "term": "Hai đường thẳng cắt nhau",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.78",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-144",
+      "term": "Hai đường thẳng song song",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.78",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-145",
+      "term": "Hai đường thẳng vuông góc",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.29",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-146",
+      "term": "Hai đỉnh kề nhau",
+      "aliases": [],
+      "definition": "Hai đỉnh của đồ thị được nối với nhau bằng một cạnh",
+      "source": "Chuyên đề Toán 11",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-147",
+      "term": "Hai đỉnh liên thông",
+      "aliases": [],
+      "definition": "Hai đỉnh của một đồ thị gọi là liên thông nếu có một đường đi nối chúng",
+      "source": "Chuyên đề Toán 11",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-148",
+      "term": "Hiệu (của hai tập hợp)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.18",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-149",
+      "term": "Hiệu của hai vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.53",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-150",
+      "term": "Hoành độ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-151",
+      "term": "Hoán vị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.67",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-152",
+      "term": "Hypebol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-153",
+      "term": "Hàm chi phí",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 12 - Tập 1: tr.34 | Chuyên đề Toán 12: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-154",
+      "term": "Hàm cầu",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 12 - Tập 1: tr.38 | Chuyên đề Toán 12: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-155",
+      "term": "Hàm doanh thu",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 12 - Tập 1: tr.38 | Chuyên đề Toán 12: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-156",
+      "term": "Hàm doanh thu biên",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-157",
+      "term": "Hàm lợi nhuận",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 12 - Tập 1: tr.38 | Chuyên đề Toán 12: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-158",
+      "term": "Hàm lợi nhuận biên",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-159",
+      "term": "Hàm mục tiêu",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-160",
+      "term": "Hàm số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-161",
+      "term": "Hàm số bậc hai",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.11",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-162",
+      "term": "Hàm số cho bằng biểu đồ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-163",
+      "term": "Hàm số cho bằng bảng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-164",
+      "term": "Hàm số cho bằng công thức",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-165",
+      "term": "Hàm số chẵn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-166",
+      "term": "Hàm số dưới dấu tích phân",
+      "aliases": [],
+      "definition": "Trong tích phân $\\int_a^b f(x) \\, dx$, $f(x)$ gọi là hàm số dưới dấu tích phân",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-167",
+      "term": "Hàm số gián đoạn tại một điểm",
+      "aliases": [],
+      "definition": "Hàm số không liên tục tại điểm đó",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-168",
+      "term": "Hàm số hợp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.90",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-169",
+      "term": "Hàm số liên tục trên một khoảng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.120",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-170",
+      "term": "Hàm số liên tục trên đoạn $[a; b]$",
+      "aliases": [],
+      "definition": "Hàm số liên tục tại mọi điểm của khoảng $(a; b)$, liên tục phải tại điểm $a$ và liên tục trái tại điểm $b$",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-171",
+      "term": "Hàm số liên tục tại một điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.119",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-172",
+      "term": "Hàm số lôgarit",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.18",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-173",
+      "term": "Hàm số lượng giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.23",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-174",
+      "term": "Hàm số lẻ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-175",
+      "term": "Hàm số mũ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.16",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-176",
+      "term": "Hàm số nghịch biến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-177",
+      "term": "Hàm số sơ cấp",
+      "aliases": [],
+      "definition": "Hàm số tạo thành từ các hàm số sơ cấp cơ bản bằng một số hữu hạn các phép toán cộng, trừ, nhân, chia, phép lấy căn và phép lấy hàm hợp",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-178",
+      "term": "Hàm số sơ cấp cơ bản",
+      "aliases": [],
+      "definition": "Hàm số đa thức, hàm số lượng giác, hàm số mũ và hàm số lôgarit",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-179",
+      "term": "Hàm số tuần hoàn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-180",
+      "term": "Hàm số đồng biến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-181",
+      "term": "Hình biểu diễn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1, Chuyên đề Toán 11",
+      "pages": "Toán 11 - Tập 1: tr.98 | Chuyên đề Toán 11: tr.53",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-182",
+      "term": "Hình biểu diễn của một hình không gian",
+      "aliases": [],
+      "definition": "Hình chiếu song song của hình không gian trên một mặt phẳng hoặc hình đồng dạng với hình chiếu đó",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-183",
+      "term": "Hình biểu diễn của một vật thể",
+      "aliases": [],
+      "definition": "Hình chiếu của vật thể đó lên một mặt phẳng qua một phép chiếu",
+      "source": "Chuyên đề Toán 11",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-184",
+      "term": "Hình chiếu bằng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-185",
+      "term": "Hình chiếu cạnh",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-186",
+      "term": "Hình chiếu song song",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.96",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-187",
+      "term": "Hình chiếu trục đo",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.53",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-188",
+      "term": "Hình chiếu trục đo vuông góc đều",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.63",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-189",
+      "term": "Hình chiếu vuông góc",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2, Chuyên đề Toán 11",
+      "pages": "Toán 11 - Tập 2: tr.39 | Chuyên đề Toán 11: tr.53",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-190",
+      "term": "Hình chiếu đứng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-191",
+      "term": "Hình chóp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.75",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-192",
+      "term": "Hình chóp cụt đều",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-193",
+      "term": "Hình chóp đều",
+      "aliases": [],
+      "definition": "Hình chóp có đáy là đa giác đều và các cạnh bên bằng nhau",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-194",
+      "term": "Hình chữ nhật cơ sở (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-195",
+      "term": "Hình chữ nhật cơ sở (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-196",
+      "term": "Hình học không gian",
+      "aliases": [],
+      "definition": "Môn học nghiên cứu tính chất của các hình có thể không cùng nằm trong một mặt phẳng",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-197",
+      "term": "Hình hộp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.93",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-198",
+      "term": "Hình hộp đứng",
+      "aliases": [],
+      "definition": "Hình lăng trụ đứng có đáy là hình bình hành",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-199",
+      "term": "Hình lăng trụ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.92",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-200",
+      "term": "Hình lăng trụ đều",
+      "aliases": [],
+      "definition": "Hình lăng trụ đứng có đáy là đa giác đều",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-201",
+      "term": "Hình lăng trụ đứng",
+      "aliases": [],
+      "definition": "Hình lăng trụ có cạnh bên vuông góc với đáy",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-202",
+      "term": "Hình thang cong",
+      "aliases": [],
+      "definition": "Hình phẳng giới hạn bởi đồ thị $y = f(x)$, trục hoành và hai đường thẳng $x = a, x = b$ ($a < b$), trong đó $f(x)$ là hàm số liên tục không âm trên đoạn $[a; b]$",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.12",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-203",
+      "term": "Hình tứ diện",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.76",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-204",
+      "term": "Hệ bất phương trình bậc nhất hai ẩn",
+      "aliases": [],
+      "definition": "[Toán 10 - Tập 1] Hệ gồm một số bất phương trình bậc nhất hai ẩn $x, y$\n[Chuyên đề Toán 12] Hệ gồm hai hay nhiều bất phương trình bậc nhất hai ẩn mà ta cần tìm nghiệm chung của chúng",
+      "source": "Toán 10 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 10 - Tập 1: tr.26",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-205",
+      "term": "Hệ phương trình bậc nhất ba ẩn",
+      "aliases": [],
+      "definition": "Hệ gồm một số phương trình bậc nhất ba ẩn $x, y, z$ mà ta phải tìm nghiệm chung của chúng. Mỗi nghiệm chung đó gọi là một nghiệm của hệ phương trình bậc nhất ba ẩn đã cho.",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-206",
+      "term": "Hệ phương trình dạng hình thang",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.10",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-207",
+      "term": "Hệ phương trình dạng tam giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-208",
+      "term": "Hệ số (trong khai triển nhị thức Newton)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.32",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-209",
+      "term": "Hệ số biến dạng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-210",
+      "term": "Hệ số góc của tiếp tuyến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.85",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-211",
+      "term": "Hệ thức Chasles",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-212",
+      "term": "Hệ thức lượng giác cơ bản",
+      "aliases": [],
+      "definition": "Các hệ thức lượng giác liên hệ giữa các giá trị lượng giác $\\sin \\alpha, \\cos \\alpha, \\tan \\alpha, \\cot \\alpha$ của góc $\\alpha$",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-213",
+      "term": "Hệ thức lượng trong tam giác",
+      "aliases": [],
+      "definition": "Hệ thức về mối liên hệ giữa các yếu tố trong một tam giác",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-214",
+      "term": "Hệ toạ độ $Oxyz$",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.60",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-215",
+      "term": "Hệ toạ độ trong không gian",
+      "aliases": [],
+      "definition": "Hệ gồm ba trục vuông góc với nhau từng đôi một với ba vectơ đơn vị trên ba trục",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-216",
+      "term": "Hợp (của hai tập hợp)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.17",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-217",
+      "term": "Khoản thanh toán",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.57",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-218",
+      "term": "Khoảng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.16",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-219",
+      "term": "Khoảng biến thiên",
+      "aliases": [],
+      "definition": "Hiệu giữa giá trị lớn nhất và giá trị bé nhất trong mẫu số liệu",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.84 | Toán 12 - Tập 1: tr.76",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-220",
+      "term": "Khoảng biến thiên của mẫu số liệu ghép nhóm",
+      "aliases": [],
+      "definition": "Hiệu số giữa giá trị lớn nhất có thể và giá trị nhỏ nhất có thể của các giá trị trong mẫu số liệu",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-221",
+      "term": "Khoảng cách giữa hai mặt phẳng song song",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.56",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-222",
+      "term": "Khoảng cách giữa hai đường thẳng chéo nhau",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.53",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-223",
+      "term": "Khoảng cách giữa đường thẳng và mặt phẳng song song",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.56",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-224",
+      "term": "Khoảng cách từ một điểm đến một mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2, Toán 12 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.55 | Toán 12 - Tập 2: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-225",
+      "term": "Khoảng cách từ một điểm đến một đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-226",
+      "term": "Khoảng tứ phân vị",
+      "aliases": [],
+      "definition": "Hiệu giữa tứ phân vị thứ ba và tứ phân vị thứ nhất",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.85 | Toán 12 - Tập 1: tr.77",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-227",
+      "term": "Khuyên",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.35",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-228",
+      "term": "Khảo sát hàm số",
+      "aliases": [],
+      "definition": "Việc tìm tập xác định, xét chiều biến thiên, tìm cực trị, tìm các giới hạn đặc biệt của hàm số đó và thể hiện các kết quả này trong bảng biến thiên",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-229",
+      "term": "Khảo sát sự biến thiên của hàm số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.26",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-230",
+      "term": "Khối tròn xoay",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-231",
+      "term": "Kì vọng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-232",
+      "term": "Kí hiệu $\\forall$ và $\\exists$",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.10",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-233",
+      "term": "Luỹ thừa với số mũ hữu tỉ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-234",
+      "term": "Luỹ thừa với số mũ nguyên",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.5",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-235",
+      "term": "Luỹ thừa với số mũ thực",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-236",
+      "term": "Luỹ thừa với số mũ vô tỉ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-237",
+      "term": "Lãi kép",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-238",
+      "term": "Lãi kép liên tục",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.13",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-239",
+      "term": "Lãi kép theo định kì",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.4",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-240",
+      "term": "Lãi suất danh nghĩa",
+      "aliases": [],
+      "definition": "Tỉ lệ biểu thị sự gia tăng của tiền sau một thời gian nhất định (thường là 1 năm) nhưng chưa tính tới sự thay đổi sức mua của loại tiền đó (chưa tính đến lạm phát)",
+      "source": "Chuyên đề Toán 12",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-241",
+      "term": "Lãi suất thực",
+      "aliases": [],
+      "definition": "Nếu $r$ là lãi suất, $g$ là tỉ lệ lạm phát thì lãi suất thực là $r_{\\text{thực}} = \\frac{r - g}{1 + g}$",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-242",
+      "term": "Lãi đơn",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-243",
+      "term": "Lôgarit cơ số $a$",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.10",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-244",
+      "term": "Lôgarit thập phân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.12",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-245",
+      "term": "Lôgarit tự nhiên",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.13",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-246",
+      "term": "Lạm phát",
+      "aliases": [],
+      "definition": "Sự tăng mức giá chung một cách liên tục của hàng hoá và dịch vụ theo thời gian và sự mất giá trị của một loại tiền tệ nào đó",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-247",
+      "term": "Lợi nhuận biên",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-248",
+      "term": "Miền chấp nhận được",
+      "aliases": [],
+      "definition": "Tập tất cả các phương án chấp nhận được của một bài toán quy hoạch tuyến tính",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-249",
+      "term": "Miền nghiệm (của hệ bất phương trình bậc nhất)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-250",
+      "term": "Miền nghiệm của bất phương trình bậc nhất hai ẩn",
+      "aliases": [],
+      "definition": "Tập hợp các điểm trong mặt phẳng toạ độ $Oxy$ có toạ độ là nghiệm của bất phương trình bậc nhất hai ẩn",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-251",
+      "term": "Miền nghiệm của hệ bất phương trình bậc nhất hai ẩn",
+      "aliases": [],
+      "definition": "Giao các miền nghiệm của các bất phương trình bậc nhất hai ẩn trong hệ",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.27",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-252",
+      "term": "Mẫu số liệu ghép nhóm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.59",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-253",
+      "term": "Mặt cầu",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-254",
+      "term": "Mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.71",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-255",
+      "term": "Mặt phẳng toạ độ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.61 | Toán 12 - Tập 1: tr.60",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-256",
+      "term": "Mặt phẳng trung trực của đoạn thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.34",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-257",
+      "term": "Mệnh đề",
+      "aliases": [],
+      "definition": "Một phát biểu khẳng định một sự kiện nào đó, mà khẳng định đó chỉ nhận một trong hai giá trị “đúng” hoặc “sai”",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-258",
+      "term": "Mệnh đề chứa biến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-259",
+      "term": "Mệnh đề kéo theo",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-260",
+      "term": "Mệnh đề phụ thuộc số tự nhiên $n$",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.25",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-261",
+      "term": "Mệnh đề phủ định",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-262",
+      "term": "Mệnh đề toán học",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-263",
+      "term": "Mệnh đề tương đương",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-264",
+      "term": "Mệnh đề đảo",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-265",
+      "term": "Mốt",
+      "aliases": [],
+      "definition": "Số xuất hiện nhiều nhất trong mẫu số liệu",
+      "source": "Toán 10 - Tập 1, Toán 11 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.81 | Toán 11 - Tập 1: tr.66",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-266",
+      "term": "Nghiệm của hệ phương trình bậc nhất ba ẩn",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-267",
+      "term": "Nghiệm của phương trình bậc nhất ba ẩn",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-268",
+      "term": "Nghiệm của phương trình lượng giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.32",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-269",
+      "term": "Nghịch biến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-270",
+      "term": "Nguyên hàm",
+      "aliases": [],
+      "definition": "Nguyên hàm của một hàm số trên một khoảng là hàm số có đạo hàm bằng hàm số đã cho trên khoảng đó",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.5",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-271",
+      "term": "Nguyên lí xác suất bé",
+      "aliases": [],
+      "definition": "Nếu một biến cố có xác suất rất bé thì trong một phép thử biến cố đó sẽ không xảy ra.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.81",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-272",
+      "term": "Nguyên tắc phản chuyển",
+      "aliases": [],
+      "definition": "Các hình biểu diễn trên bản vẽ kĩ thuật xác định duy nhất hình dạng và cấu tạo của vật thể được biểu diễn",
+      "source": "Chuyên đề Toán 11",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-273",
+      "term": "Nguyên tắc đầy đủ",
+      "aliases": [],
+      "definition": "Các kích thước của vật thể được biểu diễn đầy đủ trên bản vẽ kĩ thuật",
+      "source": "Chuyên đề Toán 11",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-274",
+      "term": "Nhị thức Newton",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2, Chuyên đề Toán 10",
+      "pages": "Toán 10 - Tập 2: tr.73 | Chuyên đề Toán 10: tr.35",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-275",
+      "term": "Niên kim",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.65",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-276",
+      "term": "Nửa khoảng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.16",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-277",
+      "term": "Nửa đường tròn đơn vị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.34",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-278",
+      "term": "Parabol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-279",
+      "term": "Phân bố nhị thức",
+      "aliases": [],
+      "definition": "Phân bố xác suất rời rạc với hai tham số $n$ và $p$, kí hiệu của số lượng lượt thử thành công trong $n$ lượt thử độc lập với kết quả CÓ hoặc KHÔNG thành công",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.17",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-280",
+      "term": "Phép biến hình",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-281",
+      "term": "Phép biến đổi tương đương một phương trình",
+      "aliases": [],
+      "definition": "Phép biến đổi phương trình đó thành một phương trình tương đương.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-282",
+      "term": "Phép chiếu song song",
+      "aliases": [],
+      "definition": "Phép đặt tương ứng mỗi điểm $M$ trong không gian với điểm $M'$ là giao của đường thẳng qua $M$ và song song (hoặc trùng) với đường thẳng $l$ cho trước và mặt phẳng $(P)$ cho trước",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.96",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-283",
+      "term": "Phép chiếu vuông góc",
+      "aliases": [],
+      "definition": "Phép chiếu song song lên một mặt phẳng theo phương vuông góc với mặt phẳng đó",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-284",
+      "term": "Phép chứng minh định lí $P \\Rightarrow Q$",
+      "aliases": [],
+      "definition": "Phép chứng minh mệnh đề $P \\Rightarrow Q$ là đúng, bao gồm các bước sau: Giả thiết mệnh đề $P$ là đúng; dùng suy luận và các kiến thức toán học đã biết, chứng minh mệnh đề $Q$ là đúng; kết luận mệnh đề $P \\Rightarrow Q$ là đúng",
+      "source": "Toán 10 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-285",
+      "term": "Phép dời hình",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.21",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-286",
+      "term": "Phép quay",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.16",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-287",
+      "term": "Phép thử lặp",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.15",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-288",
+      "term": "Phép tịnh tiến",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-289",
+      "term": "Phép vị tự",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.27",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-290",
+      "term": "Phép đối xứng trục",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.12",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-291",
+      "term": "Phép đối xứng tâm",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.18",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-292",
+      "term": "Phép đồng dạng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.30",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-293",
+      "term": "Phép đồng nhất",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-294",
+      "term": "Phí sử dụng thẻ tín dụng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-295",
+      "term": "Phương pháp Gauss",
+      "aliases": [],
+      "definition": "Phương pháp giải hệ phương trình bậc nhất nhiều ẩn bằng cách biến đổi tương đương hệ đã cho về một hệ dạng tam giác hoặc hệ dạng hình thang.",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-296",
+      "term": "Phương pháp hình thang",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.83",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-297",
+      "term": "Phương pháp lôgarit hoá",
+      "aliases": [],
+      "definition": "Phương pháp giải một số phương trình mũ (có cả hai vế đều dương) bằng cách lấy lôgarit cả hai vế theo cùng một cơ số thích hợp nào đó",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-298",
+      "term": "Phương pháp quy nạp toán học",
+      "aliases": [],
+      "definition": "Một phương pháp chứng minh toán học thường dùng để chứng minh tính đúng đắn của các mệnh đề toán học phụ thuộc vào số tự nhiên $n$.",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.27",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-299",
+      "term": "Phương pháp toạ độ trong mặt phẳng",
+      "aliases": [],
+      "definition": "Đưa vào mặt phẳng một hệ trục toạ độ và chuyển các đối tượng hình học sang đối tượng đại số tương ứng, từ đó dùng phương pháp và ngôn ngữ đại số để giải quyết các bài toán hình học.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-300",
+      "term": "Phương pháp tổ hợp",
+      "aliases": [],
+      "definition": "Sử dụng các quy tắc đếm, các công thức tính số hoán vị, chỉnh hợp và tổ hợp để tính số phần tử của không gian mẫu, của các biến cố.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.83",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-301",
+      "term": "Phương pháp đưa về cùng cơ số",
+      "aliases": [],
+      "definition": "Phương pháp giải một số phương trình mũ (hoặc phương trình lôgarit) bằng cách đưa các luỹ thừa (hoặc các lôgarit) trong phương trình về luỹ thừa (hoặc lôgarit) với cùng một cơ số",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-302",
+      "term": "Phương sai",
+      "aliases": [],
+      "definition": "Số đo độ phân tán của mẫu số liệu được tính dựa trên thông tin của tất cả các giá trị trong mẫu số liệu",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 10 - Tập 1: tr.86 | Toán 12 - Tập 1: tr.80 | Chuyên đề Toán 12: tr.11",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-303",
+      "term": "Phương trình bậc nhất ba ẩn",
+      "aliases": [],
+      "definition": "Phương trình bậc nhất ba ẩn $x, y, z$ là phương trình có dạng $ax + by + cz = d$, trong đó các hệ số $a, b, c$ không đồng thời bằng $0$.",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-304",
+      "term": "Phương trình chính tắc của elip",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-305",
+      "term": "Phương trình chính tắc của hypebol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-306",
+      "term": "Phương trình chính tắc của parabol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.53",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-307",
+      "term": "Phương trình chính tắc của đường thẳng",
+      "aliases": [],
+      "definition": "Phương trình chính tắc của đường thẳng đi qua điểm $M(x_0; y_0; z_0)$ và có vectơ chỉ phương $\\vec{u} = (a; b; c)$ với $a, b, c$ đều khác $0$ là $\\frac{x - x_0}{a} = \\frac{y - y_0}{b} = \\frac{z - z_0}{c}$",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-308",
+      "term": "Phương trình lôgarit",
+      "aliases": [],
+      "definition": "Phương trình có chứa ẩn số trong biểu thức dưới dấu lôgarit",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-309",
+      "term": "Phương trình lôgarit cơ bản",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.21",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-310",
+      "term": "Phương trình lượng giác",
+      "aliases": [],
+      "definition": "Phương trình có chứa ẩn số dưới dấu hàm số lượng giác",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-311",
+      "term": "Phương trình lượng giác cơ bản",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.31",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-312",
+      "term": "Phương trình mũ",
+      "aliases": [],
+      "definition": "Phương trình có chứa ẩn số trong số mũ của luỹ thừa",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-313",
+      "term": "Phương trình mũ cơ bản",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.20",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-314",
+      "term": "Phương trình mặt cầu",
+      "aliases": [],
+      "definition": "Phương trình mặt cầu tâm $I(a; b; c)$ bán kính $R$ là $(x - a)^2 + (y - b)^2 + (z - c)^2 = R^2$",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-315",
+      "term": "Phương trình một ẩn $x$",
+      "aliases": [],
+      "definition": "Mệnh đề chứa biến có dạng $f(x) = g(x)$, trong đó $f(x)$ và $g(x)$ là những biểu thức của $x$.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-316",
+      "term": "Phương trình tham số của đường thẳng",
+      "aliases": [],
+      "definition": "Phương trình tham số của đường thẳng đi qua điểm $M(x_0; y_0; z_0)$ và có vectơ chỉ phương $\\vec{u} = (a; b; c)$ là $\\begin{cases} x = x_0 + at \\\\ y = y_0 + bt \\\\ z = z_0 + ct \\end{cases} \\quad (t \\in \\mathbb{R})$",
+      "source": "Toán 10 - Tập 2, Toán 12 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.33 | Toán 12 - Tập 2: tr.42",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-317",
+      "term": "Phương trình tiếp tuyến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.85",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-318",
+      "term": "Phương trình tổng quát của mặt phẳng",
+      "aliases": [],
+      "definition": "Phương trình có dạng $Ax + By + Cz + D = 0$, trong đó $A, B, C$ không đồng thời bằng $0$",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.33",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-319",
+      "term": "Phương trình tổng quát của đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.31",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-320",
+      "term": "Phương trình đường tròn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-321",
+      "term": "Phương án chấp nhận được",
+      "aliases": [],
+      "definition": "Phương án thoả mãn đồng thời các ràng buộc",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-322",
+      "term": "Phương án cực biên",
+      "aliases": [],
+      "definition": "Phương án nằm ở đỉnh của miền nghiệm",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.26",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-323",
+      "term": "Phương án tối ưu",
+      "aliases": [],
+      "definition": "Phương án chấp nhận được mà tại đó hàm mục tiêu đạt cực tiểu (hoặc cực đại)",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-324",
+      "term": "Phần bù",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.18",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-325",
+      "term": "Quy tắc ba điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-326",
+      "term": "Quy tắc cộng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-327",
+      "term": "Quy tắc hình bình hành",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-328",
+      "term": "Quy tắc hình hộp",
+      "aliases": [],
+      "definition": "Tổng của ba vectơ là ba cạnh cùng xuất phát từ một đỉnh của hình hộp bằng vectơ đường chéo của hình hộp xuất phát từ đỉnh đó",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-329",
+      "term": "Quy tắc nhân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.63",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-330",
+      "term": "Quy tắc tìm cực trị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.11",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-331",
+      "term": "Quy tắc tính đạo hàm bằng định nghĩa",
+      "aliases": [],
+      "definition": "Quy tắc chỉ ra các bước tính đạo hàm của hàm số tại một điểm theo định nghĩa",
+      "source": "Toán 11 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-332",
+      "term": "Quy tắc xét tính đơn điệu",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-333",
+      "term": "Radian",
+      "aliases": [],
+      "definition": "Đơn vị đo góc lượng giác",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-334",
+      "term": "Sai số tuyệt đối",
+      "aliases": [],
+      "definition": "Khoảng cách giữa số gần đúng và số đúng",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.75",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-335",
+      "term": "Sai số tương đối",
+      "aliases": [],
+      "definition": "Tỉ số giữa sai số tuyệt đối và giá trị tuyệt đối của số gần đúng",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.76",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-336",
+      "term": "Sơ đồ hình cây",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-337",
+      "term": "Số $e$",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.13",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-338",
+      "term": "Số gần đúng",
+      "aliases": [],
+      "definition": "Số dùng để xấp xỉ cho số đúng",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.74",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-339",
+      "term": "Số hạng của dãy số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-340",
+      "term": "Số hạng tổng quát của cấp số cộng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-341",
+      "term": "Số hạng tổng quát của cấp số nhân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.53",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-342",
+      "term": "Số hạng tổng quát của dãy số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.42",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-343",
+      "term": "Số quy tròn",
+      "aliases": [],
+      "definition": "Số thu được sau khi thực hiện làm tròn số",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.76",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-344",
+      "term": "Số tiền của niên kim",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.65",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-345",
+      "term": "Số trung bình",
+      "aliases": [],
+      "definition": "Trung bình cộng của mẫu số liệu",
+      "source": "Toán 10 - Tập 1, Toán 11 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.78 | Toán 11 - Tập 1: tr.62",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-346",
+      "term": "Số đo của góc lượng giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-347",
+      "term": "Tam giác Pascal",
+      "aliases": [],
+      "definition": "Bảng tam giác mà hàng thứ $n$ gồm các hệ số trong khai triển nhị thức Newton của $(a + b)^n$.",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.33",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-348",
+      "term": "Tam thức bậc hai",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.19",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-349",
+      "term": "Tham số tiêu của parabol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-350",
+      "term": "Thành phần liên thông",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-351",
+      "term": "Thẻ tín dụng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-352",
+      "term": "Thể tích của vật thể",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.22",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-353",
+      "term": "Thể tích khối chóp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-354",
+      "term": "Thể tích khối chóp cụt đều",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-355",
+      "term": "Thể tích khối hộp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-356",
+      "term": "Thể tích khối lăng trụ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-357",
+      "term": "Thể tích khối tròn xoay",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-358",
+      "term": "Tia cuối của góc lượng giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-359",
+      "term": "Tia đầu của góc lượng giác",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-360",
+      "term": "Tiêu điểm của parabol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-361",
+      "term": "Tiêu điểm, tiêu cự của elip",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-362",
+      "term": "Tiêu điểm, tiêu cự của hypebol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-363",
+      "term": "Tiếp tuyến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.84",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-364",
+      "term": "Tiếp điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.84",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-365",
+      "term": "Tiền tệ",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-366",
+      "term": "Tiệm cận (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-367",
+      "term": "Tiệm cận ngang",
+      "aliases": [],
+      "definition": "Đường thẳng $y = y_0$ gọi là tiệm cận ngang của đồ thị hàm số $y = f(x)$ nếu $\\lim_{x \\to +\\infty} f(x) = y_0$ hoặc $\\lim_{x \\to -\\infty} f(x) = y_0$",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.20",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-368",
+      "term": "Tiệm cận xiên",
+      "aliases": [],
+      "definition": "Đường thẳng $y = ax + b$ ($a \\ne 0$) gọi là tiệm cận xiên của đồ thị hàm số $y = f(x)$ nếu $\\lim_{x \\to +\\infty} [f(x) - (ax + b)] = 0$ hoặc $\\lim_{x \\to -\\infty} [f(x) - (ax + b)] = 0$",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.23",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-369",
+      "term": "Tiệm cận đứng",
+      "aliases": [],
+      "definition": "Đường thẳng $x = x_0$ gọi là tiệm cận đứng của đồ thị hàm số $y = f(x)$ nếu một trong các điều kiện sau được thoả mãn: $\\lim_{x \\to x_0^+} f(x) = +\\infty$; $\\lim_{x \\to x_0^+} f(x) = -\\infty$; $\\lim_{x \\to x_0^-} f(x) = -\\infty$; $\\lim_{x \\to x_0^-} f(x) = +\\infty$",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.21",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-370",
+      "term": "Toạ độ của vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.61 | Toán 12 - Tập 1: tr.63",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-371",
+      "term": "Toạ độ của điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-372",
+      "term": "Trung vị",
+      "aliases": [],
+      "definition": "Số chia đôi mẫu số liệu được sắp xếp theo thứ tự từ nhỏ đến lớn",
+      "source": "Toán 10 - Tập 1, Toán 11 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.79 | Toán 11 - Tập 1: tr.64",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-373",
+      "term": "Trả góp",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.57",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-374",
+      "term": "Trọng số",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.46",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-375",
+      "term": "Trục côsin",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.11",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-376",
+      "term": "Trục lớn (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-377",
+      "term": "Trục nhỏ (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-378",
+      "term": "Trục sin",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.11",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-379",
+      "term": "Trục thực (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-380",
+      "term": "Trục đối xứng (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-381",
+      "term": "Trục đối xứng (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-382",
+      "term": "Trục đối xứng (của parabol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-383",
+      "term": "Trục ảo (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-384",
+      "term": "Tung độ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.61",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-385",
+      "term": "Tâm (của mặt cầu)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-386",
+      "term": "Tâm quay",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.16",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-387",
+      "term": "Tâm sai (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-388",
+      "term": "Tâm sai (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-389",
+      "term": "Tâm sai (của parabol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-390",
+      "term": "Tâm sai (của đường conic)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.59",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-391",
+      "term": "Tâm vị tự",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.27",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-392",
+      "term": "Tâm đối xứng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.18",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-393",
+      "term": "Tâm đối xứng của elip",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-394",
+      "term": "Tâm đối xứng của hypebol",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-395",
+      "term": "Tâm đối xứng của đồ thị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.27",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-396",
+      "term": "Tích có hướng của hai vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.30",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-397",
+      "term": "Tích của vectơ với một số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-398",
+      "term": "Tích phân",
+      "aliases": [],
+      "definition": "Tích phân từ $a$ đến $b$ của hàm số liên tục $f(x)$, kí hiệu bởi $\\int_a^b f(x) \\, dx$, là hiệu số $F(b) - F(a)$, trong đó $F(x)$ là một nguyên hàm của $f(x)$ trên đoạn $[a; b]$",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-399",
+      "term": "Tích vô hướng của hai vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.67 | Toán 12 - Tập 1: tr.56",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-400",
+      "term": "Tính chất cơ bản của xác suất",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.80",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-401",
+      "term": "Tính chất của phép cộng vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-402",
+      "term": "Tính chất của phép nhân vectơ với một số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.57",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-403",
+      "term": "Tính chất của tích vô hướng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.69",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-404",
+      "term": "Tính chất quang học của các đường conic",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-405",
+      "term": "Tính gần đúng tích phân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.82",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-406",
+      "term": "Tập các phương án chấp nhận được",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.24",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-407",
+      "term": "Tập giá trị (của hàm số)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-408",
+      "term": "Tập hợp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.12",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-409",
+      "term": "Tập hợp bằng nhau",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-410",
+      "term": "Tập hợp con",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.14",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-411",
+      "term": "Tập rỗng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.13",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-412",
+      "term": "Tập xác định (của hàm số)",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-413",
+      "term": "Tập xác định của hàm số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-414",
+      "term": "Tỉ lệ lạm phát",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-415",
+      "term": "Tỉ số vị tự",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.27",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-416",
+      "term": "Tỉ số đồng dạng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.30",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-417",
+      "term": "Tốc độ phản ứng tức thời",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.33",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-418",
+      "term": "Tốc độ thay đổi tức thời",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.33",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-419",
+      "term": "Tốc độ tăng trưởng tức thời",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.33",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-420",
+      "term": "Tổ hợp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.68",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-421",
+      "term": "Tổng của cấp số nhân lùi vô hạn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.107",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-422",
+      "term": "Tổng của hai vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-423",
+      "term": "Tổng $n$ số hạng đầu của cấp số cộng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.50",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-424",
+      "term": "Tổng $n$ số hạng đầu của cấp số nhân",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-425",
+      "term": "Tứ phân vị",
+      "aliases": [],
+      "definition": "Các số chia mẫu số liệu được sắp theo thứ tự từ nhỏ đến lớn thành 4 phần, mỗi phần chứa $25\\%$ giá trị",
+      "source": "Toán 10 - Tập 1, Toán 11 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.80 | Toán 11 - Tập 1: tr.65",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-426",
+      "term": "Tứ phân vị thứ ba",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.77",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-427",
+      "term": "Tứ phân vị thứ nhất",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.77",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-428",
+      "term": "Vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.47",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-429",
+      "term": "Vectơ bằng nhau",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-430",
+      "term": "Vectơ chỉ phương của đường thẳng",
+      "aliases": [],
+      "definition": "Vectơ khác vectơ-không và có giá song song hoặc trùng với đường thẳng",
+      "source": "Toán 10 - Tập 2, Toán 12 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.32 | Toán 12 - Tập 2: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-431",
+      "term": "Vectơ cùng hướng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-432",
+      "term": "Vectơ cùng phương",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-433",
+      "term": "Vectơ ngược hướng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-434",
+      "term": "Vectơ pháp tuyến của mặt phẳng",
+      "aliases": [],
+      "definition": "Vectơ khác vectơ-không và có giá vuông góc với mặt phẳng",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.30",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-435",
+      "term": "Vectơ pháp tuyến của đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.31",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-436",
+      "term": "Vectơ đơn vị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.60 | Toán 12 - Tập 1: tr.60",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-437",
+      "term": "Vectơ đơn vị (của trục)",
+      "aliases": [],
+      "definition": "Vectơ có hướng trùng với hướng của trục và có độ dài bằng $1$",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-438",
+      "term": "Vectơ đối",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.52",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-439",
+      "term": "Vectơ-không",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-440",
+      "term": "Vận tốc tức thời",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2, Toán 12 - Tập 1",
+      "pages": "Toán 11 - Tập 2: tr.83 | Toán 12 - Tập 1: tr.33",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-441",
+      "term": "Vị trí tương đối giữa hai đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2, Toán 12 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.36 | Toán 12 - Tập 2: tr.46",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-442",
+      "term": "Xác suất có điều kiện",
+      "aliases": [],
+      "definition": "Xác suất của một biến cố $A$ nào đó, biết rằng một biến cố $B$ khác xảy ra",
+      "source": "Toán 12 - Tập 2",
+      "pages": "Toán 12 - Tập 2: tr.64",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-443",
+      "term": "Xác suất của biến cố đối",
+      "aliases": [],
+      "definition": "Tổng xác suất của biến cố $E$ với xác suất của biến cố đối bằng $1$.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.85",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-444",
+      "term": "Xét chiều biến thiên của hàm số",
+      "aliases": [],
+      "definition": "Tìm các khoảng đồng biến và các khoảng nghịch biến của hàm số.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-445",
+      "term": "Đa đồ thị",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.36",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-446",
+      "term": "Điều kiện cần",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-447",
+      "term": "Điều kiện cần và đủ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-448",
+      "term": "Điều kiện để ba điểm thẳng hàng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-449",
+      "term": "Điều kiện để hai vectơ cùng phương",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.49",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-450",
+      "term": "Điều kiện đủ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.8",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-451",
+      "term": "Điểm cực biên",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.26",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-452",
+      "term": "Điểm cực tiểu của đồ thị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-453",
+      "term": "Điểm cực trị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-454",
+      "term": "Điểm cực trị của hàm số",
+      "aliases": [],
+      "definition": "Điểm cực trị của hàm số là giá trị của biến số mà tại đó hàm số đạt cực trị",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-455",
+      "term": "Điểm cực trị của đồ thị hàm số",
+      "aliases": [],
+      "definition": "Điểm $(x_0; f(x_0))$, trong đó $x_0$ là điểm cực trị của hàm số $f(x)$",
+      "source": "Toán 12 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-456",
+      "term": "Điểm cực đại của đồ thị",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.9",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-457",
+      "term": "Đoạn",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.16",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-458",
+      "term": "Đơn điệu",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-459",
+      "term": "Đơn đồ thị",
+      "aliases": [],
+      "definition": "Một đồ thị không có khuyên, trong đó hai đỉnh được nối bằng nhiều nhất một cạnh",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.36",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-460",
+      "term": "Đường chuẩn của elip",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-461",
+      "term": "Đường chuẩn của hypebol",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.51",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-462",
+      "term": "Đường chuẩn của parabol",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2, Chuyên đề Toán 10",
+      "pages": "Toán 10 - Tập 2: tr.52 | Chuyên đề Toán 10: tr.55",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-463",
+      "term": "Đường conic",
+      "aliases": [],
+      "definition": "Tập hợp các điểm của mặt phẳng có tỉ số khoảng cách từ nó tới một điểm cố định $F$ và một đường thẳng cố định $\\Delta$ (không đi qua $F$) bằng một hằng số $e$. Điểm cố định $F$ gọi là tiêu điểm, đường thẳng cố định $\\Delta$ gọi là đường chuẩn ứng với tiêu điểm $F$ và hằng số $e$ gọi là tâm sai của conic.",
+      "source": "Toán 10 - Tập 2, Chuyên đề Toán 10",
+      "pages": "Toán 10 - Tập 2: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-464",
+      "term": "Đường hình sin",
+      "aliases": [],
+      "definition": "Đồ thị của các hàm số $y = \\sin x$ và $y = \\cos x$",
+      "source": "Toán 11 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-465",
+      "term": "Đường thẳng cắt mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.84",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-466",
+      "term": "Đường thẳng song song với mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.84",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-467",
+      "term": "Đường thẳng vuông góc với mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.31",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-468",
+      "term": "Đường tiệm cận",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-469",
+      "term": "Đường tròn lượng giác",
+      "aliases": [],
+      "definition": "Đường tròn có tâm tại gốc toạ độ, bán kính bằng $1$, được định hướng và lấy điểm $A(1; 0)$ làm điểm gốc của đường tròn",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.10",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-470",
+      "term": "Đường vuông góc chung",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.57",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-471",
+      "term": "Đường đi",
+      "aliases": [],
+      "definition": "Một dãy cạnh nối tiếp, nối hai đỉnh nào đó của đồ thị",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-472",
+      "term": "Đường đi Euler",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.41",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-473",
+      "term": "Đường đi Hamilton",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-474",
+      "term": "Đường đi sơ cấp",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-475",
+      "term": "Đường đi đơn giản",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-476",
+      "term": "Đạo hàm",
+      "aliases": [],
+      "definition": "Đạo hàm của hàm số $f(x)$ tại điểm $x_0$ là giới hạn $\\lim_{x \\to x_0} \\frac{f(x) - f(x_0)}{x - x_0}$ nếu giới hạn này tồn tại và hữu hạn",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.82",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-477",
+      "term": "Đạo hàm cấp hai",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.95",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-478",
+      "term": "Đạo hàm của hàm số hợp",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.90",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-479",
+      "term": "Đạo hàm của hàm số trên một khoảng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.83",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-480",
+      "term": "Đạo hàm của hàm số tại một điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 2",
+      "pages": "Toán 11 - Tập 2: tr.82",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-481",
+      "term": "Đầu tư",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.60",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-482",
+      "term": "Đỉnh",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.35",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-483",
+      "term": "Đỉnh (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-484",
+      "term": "Đỉnh (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-485",
+      "term": "Đỉnh (của parabol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.54",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-486",
+      "term": "Đỉnh cô lập",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.37",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-487",
+      "term": "Đỉnh treo",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.37",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-488",
+      "term": "Định luật khúc xạ ánh sáng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-489",
+      "term": "Định luật phản xạ ánh sáng",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 12",
+      "pages": "Chuyên đề Toán 12: tr.38",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-490",
+      "term": "Định lí bắt tay",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.37",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-491",
+      "term": "Định lí côsin",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-492",
+      "term": "Định lí Dirac",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-493",
+      "term": "Định lí Euler",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.42",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-494",
+      "term": "Định lí Ore",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.43",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-495",
+      "term": "Định lí sin",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-496",
+      "term": "Định lí Thalès trong không gian",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.91",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-497",
+      "term": "Định lí toán học",
+      "aliases": [],
+      "definition": "Mệnh đề đúng và thường có dạng $P \\Rightarrow Q$, trong đó $P$ là mệnh đề đúng. Khi đó $P$ gọi là giả thiết, $Q$ gọi là kết luận của định lí",
+      "source": "Toán 10 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-498",
+      "term": "Định lí về dấu của tam thức bậc hai",
+      "aliases": [],
+      "definition": "Định lí cho phép xác định dấu của tam thức bậc hai $f(x) = ax^2 + bx + c$ tuỳ theo dấu của hệ số $a$ và biệt thức $\\Delta$ của nó.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.21",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-499",
+      "term": "Định lí về giao tuyến của ba mặt phẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.81",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-500",
+      "term": "Định nghĩa cổ điển của xác suất",
+      "aliases": [],
+      "definition": "Xác suất của biến cố $E$ bằng tỉ số giữa số kết quả thuận lợi cho $E$ và tổng số kết quả có thể.",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.80",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-501",
+      "term": "Đồ thị",
+      "aliases": [],
+      "definition": "Tập hợp hữu hạn các điểm (gọi là các đỉnh của đồ thị) cùng với tập hợp các đoạn đường cong hay thẳng (gọi là cạnh của đồ thị) có đầu mút tại các đỉnh của đồ thị",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.35",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-502",
+      "term": "Đồ thị con",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.39",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-503",
+      "term": "Đồ thị có trọng số",
+      "aliases": [],
+      "definition": "Đồ thị liên thông và mỗi cạnh được gắn với một số không âm, gọi là trọng số của cạnh đó",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.46",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-504",
+      "term": "Đồ thị của hàm số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 2",
+      "pages": "Toán 10 - Tập 2: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-505",
+      "term": "Đồ thị hàm số",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-506",
+      "term": "Đồ thị đầy đủ",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.37",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-507",
+      "term": "Đồng biến",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 12 - Tập 1",
+      "pages": "Toán 12 - Tập 1: tr.6",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-508",
+      "term": "Đồng phẳng của các điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.72",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-509",
+      "term": "Đồng phẳng của hai đường thẳng",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 11 - Tập 1",
+      "pages": "Toán 11 - Tập 1: tr.78",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-510",
+      "term": "Độ chính xác",
+      "aliases": [],
+      "definition": "Cận trên nhỏ nhất của sai số tuyệt đối",
+      "source": "Toán 10 - Tập 1",
+      "pages": "",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-511",
+      "term": "Độ dài của vectơ",
+      "aliases": [],
+      "definition": "",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1",
+      "pages": "Toán 10 - Tập 1: tr.47 | Toán 12 - Tập 1: tr.46",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-512",
+      "term": "Độ dài trục lớn (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-513",
+      "term": "Độ dài trục nhỏ (của elip)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.40",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-514",
+      "term": "Độ dài trục thực (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-515",
+      "term": "Độ dài trục ảo (của hypebol)",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 10",
+      "pages": "Chuyên đề Toán 10: tr.48",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-516",
+      "term": "Độ lệch chuẩn",
+      "aliases": [],
+      "definition": "Căn bậc hai của phương sai",
+      "source": "Toán 10 - Tập 1, Toán 12 - Tập 1, Chuyên đề Toán 12",
+      "pages": "Toán 10 - Tập 1: tr.86 | Toán 12 - Tập 1: tr.80 | Chuyên đề Toán 12: tr.11",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-517",
+      "term": "Ảnh của một hình",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.7",
+      "origin": "workbook"
+    },
+    {
+      "id": "excel-518",
+      "term": "Ảnh của một điểm",
+      "aliases": [],
+      "definition": "",
+      "source": "Chuyên đề Toán 11",
+      "pages": "Chuyên đề Toán 11: tr.6",
+      "origin": "workbook"
+    }
+  ]
+}

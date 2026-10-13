@@ -8,9 +8,10 @@
 }
 
 .article-heading h1 {
-  font-size: 2.625rem;
+  font-family: "STIX Two Text",Georgia,serif;
+  font-size: clamp(1.8rem,3.4vw,2.625rem);
   line-height: 1.25;
-  letter-spacing: -1.3px;
+  letter-spacing: -.035em;
   margin: 16px 0;
 }
 
@@ -24,12 +25,20 @@
 }
 
 .prose h2 {
-  font-size: 1.5625rem;
-  margin-top: 35px;
+  font-family: "STIX Two Text",Georgia,serif;
+  color: var(--lesson-heading,#245e65);
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.35;
+  margin-top: 42px;
 }
 
 .prose h3 {
-  font-size: 1.25rem;
+  font-family: "STIX Two Text",Georgia,serif;
+  color: var(--lesson-heading,#245e65);
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 1.35rem;
   margin-top: 28px;
 }
 
@@ -74,19 +83,19 @@
 }
 
 .prose blockquote.callout-important {
-  background: #f5f3ff;
-  border-left-color: #8b5cf6;
+  background: #edf8f8;
+  border-left-color: #13839a;
 }
 .prose blockquote.callout-important .callout-title {
-  color: #6d28d9;
+  color: #176979;
 }
 
 .prose blockquote.callout-note {
-  background: #eff6ff;
-  border-left-color: #3b82f6;
+  background: #f3f8f6;
+  border-left-color: #7fa29a;
 }
 .prose blockquote.callout-note .callout-title {
-  color: #1d4ed8;
+  color: #416d64;
 }
 
 .prose blockquote.callout-tip {
@@ -98,51 +107,51 @@
 }
 
 .prose blockquote.callout-caution {
-  background: #fef2f2;
-  border-left-color: #ef4444;
+  background: #fff3ef;
+  border-left-color: #bf645a;
 }
 .prose blockquote.callout-caution .callout-title {
-  color: #b91c1c;
+  color: #9b4f45;
 }
 
 html[data-theme="dark"] .prose blockquote.callout-warning {
-  background: #272115;
-  border-left-color: #f59e0b;
+  background: #f5ead1;
+  border-left-color: #c79536;
 }
 html[data-theme="dark"] .prose blockquote.callout-warning .callout-title {
-  color: #fbbf24;
+  color: #87621f;
 }
 
 html[data-theme="dark"] .prose blockquote.callout-important {
-  background: #211c2e;
-  border-left-color: #a78bfa;
+  background: #e5eeea;
+  border-left-color: #13839a;
 }
 html[data-theme="dark"] .prose blockquote.callout-important .callout-title {
-  color: #c4b5fd;
+  color: #245e65;
 }
 
 html[data-theme="dark"] .prose blockquote.callout-note {
-  background: #152238;
-  border-left-color: #60a5fa;
+  background: #e8eddf;
+  border-left-color: #7fa29a;
 }
 html[data-theme="dark"] .prose blockquote.callout-note .callout-title {
-  color: #93c5fd;
+  color: #416d64;
 }
 
 html[data-theme="dark"] .prose blockquote.callout-tip {
-  background: #132b20;
-  border-left-color: #34d399;
+  background: #e5eedf;
+  border-left-color: #6b947f;
 }
 html[data-theme="dark"] .prose blockquote.callout-tip .callout-title {
-  color: #6ee7b7;
+  color: #416d64;
 }
 
 html[data-theme="dark"] .prose blockquote.callout-caution {
-  background: #30171a;
-  border-left-color: #f87171;
+  background: #f4e3d8;
+  border-left-color: #bf645a;
 }
 html[data-theme="dark"] .prose blockquote.callout-caution .callout-title {
-  color: #fca5a5;
+  color: #9b4f45;
 }
 
 .flowchart-container {
@@ -173,7 +182,7 @@ html[data-theme="dark"] .prose blockquote.callout-caution .callout-title {
   align-items: center;
   gap: 8px;
 }
-.flowchart-group-blue .flowchart-group-title { color: #1d4ed8; }
+.flowchart-group-blue .flowchart-group-title { color: #416d64; }
 .flowchart-group-green .flowchart-group-title { color: #15803d; }
 .flowchart-badge-blue {
   background: #2563eb;
@@ -401,13 +410,14 @@ html[data-theme="dark"] .prose :not(pre) > code {
 .prose {
   padding-top: 30px;
   overflow-wrap: anywhere;
-  font-size: 1.1875rem;
-  line-height: 1.9;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.8;
 }
 
 .prose p {
   margin-bottom: 1.1em;
-  line-height: 1.9;
+  line-height: 1.8;
 }
 
 .prose ul,
@@ -1363,3 +1373,91 @@ html[data-theme="dark"] .related-card-footer {
   border-top-color: var(--line);
 }
 
+
+/* Geometry activities: colour carries meaning, with labels for every angle. */
+.prose .geometry-lab {margin:28px 0;padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--card-bg,#fff);color:var(--ink,#1e293b);overflow:hidden}
+.geometry-kicker {font:700 .75rem/1.5 sans-serif;letter-spacing:1.5px;color:var(--muted)}
+.prose .geometry-intro h3 {margin:8px 0;font-size:1.5rem}
+.prose .geometry-intro p {margin:8px 0;color:var(--muted)}
+.geometry-canvas {display:block;width:100%;height:auto;max-height:390px;touch-action:pan-y}
+.geometry-canvas [data-drag] {cursor:grab;touch-action:none}
+.geometry-canvas text {font:600 18px sans-serif}
+.geometry-readouts,.geometry-actions {display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.geometry-readouts>* {padding:8px 12px;border-radius:8px;background:var(--bg-secondary,#f1f5f9);font:600 .95rem/1.5 sans-serif}
+.geometry-readouts .angle-a {color:#a6544b}.geometry-readouts .angle-b {color:#08758b}.geometry-readouts .angle-c {color:#96651c}
+.geometry-controls {display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:20px 0}
+.geometry-controls label {font:500 .9rem/1.5 sans-serif}
+.geometry-controls input {display:block;width:100%;accent-color:#13839a;min-height:32px}
+.geometry-actions button,.geometry-proof button {font:600 .85rem/1.4 sans-serif;border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:var(--card-bg,#fff);color:inherit;cursor:pointer;min-height:44px}
+.geometry-actions button[aria-pressed="true"] {background:#13839a;color:#fff}
+.geometry-lab button:focus-visible,.geometry-lab input:focus-visible {outline:3px solid #2563eb;outline-offset:3px}
+.geometry-proof {border-left:3px solid #2563eb;padding:0 16px;margin-top:20px}
+.geometry-proof[hidden] {display:none}
+.geometry-proof button:disabled {opacity:.5;cursor:default}
+html[data-theme="dark"] .geometry-lab {background:#18212f;color:#e2e8f0}
+html[data-theme="dark"] .geometry-readouts>* {background:#243244}
+html[data-theme="dark"] .geometry-readouts .angle-a {color:#fda4af}html[data-theme="dark"] .geometry-readouts .angle-b {color:#93c5fd}html[data-theme="dark"] .geometry-readouts .angle-c {color:#5eead4}
+@media(max-width:600px){.prose .geometry-lab{padding:16px}.geometry-controls{grid-template-columns:1fr;gap:8px}.geometry-readouts>*{padding:6px 8px}}
+
+/* Inline glossary: underlined terms remain readable and keyboard accessible. */
+.glossary-term:focus-visible,.glossary-dialog button:focus-visible {outline:3px solid #2563eb;outline-offset:3px}
+.glossary-toolbar {display:flex;align-items:center;flex-wrap:wrap;gap:8px;padding:10px 12px;margin:0 0 18px;background:transparent;border:1px solid var(--line);border-radius:12px;font:400 .8rem/1.5 sans-serif}
+.glossary-toolbar button,.glossary-back {padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:transparent;color:inherit;font:600 .8rem/1.4 sans-serif;cursor:pointer;min-height:34px}
+.glossary-dialog {box-sizing:border-box;width:min(620px,calc(100% - 28px));max-height:85dvh;border:1px solid var(--line,#cbd5e1);border-radius:18px;padding:24px;background:var(--card-bg,#fff);color:var(--ink,#1e293b);box-shadow:0 24px 80px #0003;font:400 1rem/1.7 'STIX Two Text',serif}
+.glossary-dialog::backdrop {background:#0f172a66}
+.glossary-dialog-heading {display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.glossary-dialog h2 {margin:0;font-size:1.35rem;line-height:1.4}.glossary-dialog h3 {font-size:1.5rem;margin:20px 0 12px}
+.glossary-dialog-heading button {min-width:44px;min-height:44px;cursor:pointer;border:1px solid var(--line,#cbd5e1);border-radius:8px;background:transparent;color:inherit}
+.glossary-search {margin-top:20px}.glossary-search>label:first-child {display:block}
+.glossary-search input[type="search"] {box-sizing:border-box;width:100%;min-height:44px;margin:6px 0 12px;padding:10px 12px;background:transparent;color:inherit;border:1px solid var(--line,#cbd5e1);border-radius:8px;font:inherit}
+.glossary-filter {display:flex;gap:8px;align-items:center;font-size:.9rem}
+.glossary-count,.glossary-source {font-size:.85rem;color:var(--muted,#64748b)}
+.glossary-source {border-top:1px solid var(--line,#cbd5e1);padding-top:16px;margin-top:20px}
+.glossary-results {display:grid;gap:6px}
+.glossary-results button {padding:12px;text-align:left;color:inherit;background:transparent;border:1px solid var(--line,#cbd5e1);border-radius:8px;cursor:pointer;font:inherit;min-height:44px}
+.glossary-results button:hover {background:var(--bg-secondary,#f1f5f9)}
+.glossary-definition {overflow-wrap:anywhere}.glossary-definition .katex {font-size:1em}
+.glossary-dialog [hidden] {display:none!important}
+html[data-theme="dark"] .glossary-dialog {background:#18212f;color:#e2e8f0}
+@media(max-width:600px){.glossary-dialog{padding:18px}.glossary-toolbar{align-items:flex-start}}
+
+/* Glossary terms flow like ordinary text, including across line breaks. */
+.prose button.glossary-term {all:unset;display:inline;font:inherit;color:inherit;letter-spacing:inherit;vertical-align:baseline;white-space:normal;cursor:pointer;text-decoration-line:underline;text-decoration-style:dotted;text-decoration-color:#b99b57;text-decoration-thickness:1px;text-underline-offset:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.prose button.glossary-term:hover {background:transparent;color:#087f93;text-decoration-style:solid;text-decoration-color:currentColor}
+.prose button.glossary-term:focus-visible {outline:2px solid #1496b3;outline-offset:2px;border-radius:2px}
+html[data-theme="dark"] .prose button.glossary-term:hover {background:transparent;color:#7dd3fc}
+
+/* Discover, then explain: shared lesson styling follows the logo palette. */
+:root {--lesson-heading:#245e65}
+html[data-theme="dark"] {--lesson-heading:#654c32}
+.prose .geometry-lab {background:linear-gradient(135deg,#f5fbfa,#fffaf6);border-color:#cde2df;box-shadow:0 5px 20px #254b5206}
+.geometry-intro .geometry-kicker {color:#13839a;font-weight:600;letter-spacing:1px}
+.geometry-lab .geometry-canvas {margin:14px 0;border-radius:12px;background:#ffffffa6;color:#284b52}
+.geometry-lab .geometry-actions button {border-color:#c8dedb;background:#fffdf9;color:#245e65}
+.geometry-lab .geometry-actions button:hover {background:#e8f5f3;border-color:#8fbdc1}
+.geometry-lab .geometry-actions button[aria-pressed="true"] {background:#13839a;color:#fff;border-color:#13839a}
+.geometry-actions button:disabled {opacity:.45;cursor:default}
+.geometry-controls-three {grid-template-columns:repeat(3,1fr);gap:16px}
+.geometry-single-control {display:block;font:500 .95rem/1.5 sans-serif;margin:18px 0}
+.geometry-single-control input {display:block;width:100%;min-height:40px;accent-color:#13839a}
+.geometry-observation {padding:14px 16px;background:#eaf6f4;border-radius:10px;color:#245e65;font-size:.95rem;margin:18px 0 0!important}
+.geometry-controls output {font-weight:700;color:#13839a}
+.lesson-progress {border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:18px;background:#f6fbfa;font:400 .85rem/1.5 sans-serif}
+.lesson-progress>div {display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;color:#245e65}
+.lesson-progress span {color:var(--muted);font-size:.8rem}
+.lesson-progress progress {display:block;width:100%;height:6px;margin-top:10px;border:0;border-radius:3px;overflow:hidden;accent-color:#13839a;background:#dfede9}
+.lesson-progress progress::-webkit-progress-bar {background:#dfede9;border-radius:3px}
+.lesson-progress progress::-webkit-progress-value {background:#13839a;border-radius:3px}
+.lesson-progress progress::-moz-progress-bar {background:#13839a}
+.quiz .quiz-show-solution {padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:transparent;font:500 .85rem/1.5 sans-serif;color:var(--ink)}
+.quiz .quiz-show-solution[hidden],.quiz-explanation[hidden] {display:none!important}
+.prose .quiz details.quiz-hint {background:#fff8ed;border-left:3px solid #c79536;font-size:.95rem;padding:12px 16px}
+html[data-theme="dark"] .prose .geometry-lab {background:#f6efdf;color:#382e23}
+html[data-theme="dark"] .geometry-lab .geometry-canvas {background:#fcf7ec;color:#382e23}
+html[data-theme="dark"] .geometry-lab .geometry-actions button {background:#fcf7ec;color:#654c32;border-color:#ddceb0}
+html[data-theme="dark"] .geometry-lab .geometry-actions button[aria-pressed="true"] {background:#87603d;color:#fff}
+html[data-theme="dark"] .geometry-observation,html[data-theme="dark"] .lesson-progress {background:#eee4cc;color:#654c32}
+html[data-theme="dark"] .lesson-progress>div {color:#654c32}
+@media(max-width:620px){.geometry-controls-three{grid-template-columns:1fr;gap:10px}.prose h2{font-size:1.5rem}.prose h3{font-size:1.25rem}.geometry-lab .geometry-canvas{margin-inline:-6px;width:calc(100% + 12px)}}
+@media(prefers-reduced-motion:reduce){.geometry-lab *{scroll-behavior:auto}}
+@media(max-width:620px){.geometry-lab[data-geometry="angle-pairs"] .geometry-canvas text{font-size:24px}}

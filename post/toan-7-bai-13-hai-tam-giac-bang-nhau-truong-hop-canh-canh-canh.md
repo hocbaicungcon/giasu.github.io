@@ -181,6 +181,10 @@ Từ ký hiệu $\triangle ABC = \triangle A'B'C'$, ta suy ra hệ thống $6$ y
 > Thì ta kết luận:
 > $$\triangle ABC = \triangle A'B'C' \quad (\text{c.c.c}).$$
 
+```geometry
+type: triangle-sss
+```
+
 Nhờ định lý này, một khi đã khẳng định được $\triangle ABC = \triangle A'B'C'$ (c.c.c), ta lập tức được quyền suy ra:
 $$\widehat{A} = \widehat{A'}, \quad \widehat{B} = \widehat{B'}, \quad \widehat{C} = \widehat{C'}.$$
 Đây chính là cây cầu nối quan trọng nhất giúp ta tính toán số đo góc hoặc chứng minh các góc bằng nhau mà không cần dùng đến thước đo góc!
@@ -295,7 +299,7 @@ Vậy số đo các góc còn lại là: $\widehat{D} = 55^\circ$, $\widehat{N} 
 Trình bày theo cấu trúc $3$ bước chuẩn mực:
 - **Bước 1:** Nêu rõ tên hai tam giác cần xét: *"Xét $\triangle ...$ và $\triangle ...$ có:"*
 - **Bước 2:** Liệt kê đầy đủ $3$ cặp cạnh bằng nhau kèm theo căn cứ rõ ràng (giả thiết cho, cùng độ dài, do trung điểm, hoặc là cạnh chung).
-- **Bước 3:** Kết luận hai tam giác bằng nhau theo trường hợp (c.c.c): *"Vậy $\triangle ... = \triangle ... \text{ (c.c.c)}."*
+- **Bước 3:** Kết luận hai tam giác bằng nhau theo trường hợp (c.c.c): *"Vậy $\triangle ... = \triangle ... \text{ (c.c.c)}$."*
 
 ---
 
