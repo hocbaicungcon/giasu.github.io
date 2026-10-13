@@ -93,7 +93,7 @@ test('invalid interactive blocks report filename',()=>{
 test('render callout blocks for warnings, notes and important notices',()=>{
  const p=parsePost(source+'\n\n> [!WARNING] Hãy ghi nhớ các sai lầm sau:\n> 1. Điểm cần tránh.\n\n> [!IMPORTANT]\n> Nội dung quan trọng.','callouts.md');
  assert.match(p.html,/class="callout callout-warning"/);
- assert.match(p.html,/class="callout-title">[\s\S]*?⚠️[\s\S]*?Lưu ý \/ Cảnh báo/);
+ assert.match(p.html,/class="callout-title">[\s\S]*?<svg[\s\S]*?Lưu ý \/ Cảnh báo/);
  assert.match(p.html,/class="callout callout-important"/);
  assert.doesNotMatch(p.html,/\[!WARNING\]/);
  assert.doesNotMatch(p.html,/\[!IMPORTANT\]/);

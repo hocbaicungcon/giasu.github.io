@@ -18,3 +18,10 @@ test('table lessons and resource lessons receive grounded activities',()=>{
 test('embedded review JSON cannot terminate its script element',()=>{
  const p=post('');const cards=[{id:'test',html:'</script><script>alert(1)</script>'}];const html=renderLessonPractice(p,cards);assert.doesNotMatch(html,/<script>alert/);const data=html.match(/data-practice-config>(.*?)<\/script>/s)[1];assert.deepEqual(JSON.parse(data).cards,cards);
 });
+
+test('cloze lists contain the original answer once and distinct choices from the same lesson',()=>{
+ const cards=lessonActivities(post('<h2 id="nhon">Góc</h2><p>Một <strong>tam giác nhọn</strong> có ba góc nhỏ hơn góc vuông, hãy quan sát hình minh họa.</p><h2 id="vuong">Góc vuông</h2><p>Một <strong>tam giác vuông</strong> có một góc vuông và hai góc nhọn, hãy quan sát từng góc.</p>'));
+ for(const card of cards){assert.equal(card.choices.filter(x=>x===card.target).length,1);assert.equal(new Set(card.choices).size,card.choices.length);assert.equal(card.choices.length,2);assert.ok(card.choices.includes('tam giác nhọn'));assert.ok(card.choices.includes('tam giác vuông'));}
+ const [single]=lessonActivities(post('<p>Một <strong>tam giác nhọn</strong> có ba góc nhỏ hơn góc vuông, hãy quan sát hình minh họa.</p>'));
+ assert.equal(single.choices.length,2);
+});

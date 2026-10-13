@@ -1,3 +1,4 @@
+import {uiIcon,vectorizeInterface} from '../assets/ui-icons.js';
 import {lessonActivities,renderLessonPractice} from './lesson-activities.mjs';
 import {renderShare} from './share.mjs';
 import {buildGlossary} from './glossary.mjs';
@@ -132,11 +133,11 @@ const canonicalTags = new Map([
 ]);
 
 const calloutMeta = {
-  NOTE: { cls: 'callout-note', icon: 'ℹ️', title: 'Ghi nhớ' },
-  TIP: { cls: 'callout-tip', icon: '💡', title: 'Mẹo hay' },
-  IMPORTANT: { cls: 'callout-important', icon: '📌', title: 'Quan trọng' },
-  WARNING: { cls: 'callout-warning', icon: '⚠️', title: 'Lưu ý / Cảnh báo' },
-  CAUTION: { cls: 'callout-caution', icon: '🛑', title: 'Cẩn trọng' }
+  NOTE: { cls: 'callout-note', icon: uiIcon('info'), title: 'Ghi nhớ' },
+  TIP: { cls: 'callout-tip', icon: uiIcon('bulb'), title: 'Mẹo hay' },
+  IMPORTANT: { cls: 'callout-important', icon: uiIcon('pin'), title: 'Quan trọng' },
+  WARNING: { cls: 'callout-warning', icon: uiIcon('warning'), title: 'Lưu ý / Cảnh báo' },
+  CAUTION: { cls: 'callout-caution', icon: uiIcon('stop'), title: 'Cẩn trọng' }
 };
 
 export function renderCallouts(html) {
@@ -561,7 +562,7 @@ export function build(){
   const seo=`<link rel="canonical" href="${canonical}"><meta name="robots" content="${normFile==='404.html'?'noindex,follow':'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'}"><meta property="og:locale" content="vi_VN"><meta property="og:type" content="${post?'article':'website'}"><meta property="og:title" content="${seoTitle}"><meta property="og:description" content="${seoDescription}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="${ogImage}"><meta property="og:image:alt" content="${esc(cleanTitle)}"><meta name="twitter:card" content="${twitterCard}"><meta name="twitter:title" content="${seoTitle}"><meta name="twitter:description" content="${seoDescription}"><meta name="twitter:image" content="${ogImage}"><meta name="twitter:image:alt" content="${esc(cleanTitle)}">${articleMeta}<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>`;
   html=html.replace('</head>',`${seo}</head>`);
   html=html.replace(/((?:src|href)="[^"?]*assets\/[^"?]+\.(?:js|css))"/g,`$1?v=${assetVersion}"`);
-  fs.writeFileSync(htmlPath,html);
+  fs.writeFileSync(htmlPath,vectorizeInterface(html));
  }
  // Grading scripts/service worker keep /cham-thi/ scope; CSS is shared.
  fs.cpSync(path.join(root,'cham-thi'),path.join(out,'cham-thi'),{recursive:true,filter:source=>!['data','tests'].includes(path.basename(source))});

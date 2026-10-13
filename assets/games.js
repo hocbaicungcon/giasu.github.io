@@ -1,3 +1,4 @@
+import {uiIcon} from './ui-icons.js';
 /* credit: giasu.ai.vn */
 import {mountGameNavigation,setGameControlIcon} from './game-controls.js';
 import './extra-games.js';
@@ -139,7 +140,7 @@ function renderNumbers(){
   if(typeof v==='string'){
    const clean=v.replace(/:life\d+$/,''),life=Number(v.match(/:life(\d+)$/)?.[1]||0);
    let label='',kind='';
-   if(clean.startsWith('bomb')){kind='bomb';const timer=Number(clean.split(':')[1])||5;label=`💣${timer}`;}
+   if(clean.startsWith('bomb')){kind='bomb';const timer=Number(clean.split(':')[1])||5;label=`Bom ${timer}`;}
    else if(clean==='mystery'){kind='mystery';label='?';}
    else if(clean==='wild'){kind='wild';label='★';}
    else if(clean==='swap'){kind='swap';label='↔';}
@@ -150,7 +151,7 @@ function renderNumbers(){
    }
    el.classList.add('number-special',`number-${kind}`);el.dataset.level='0';el.textContent=label;
    if(life===1)el.classList.add('number-expiring');
-   el.setAttribute('aria-label',label);
+   el.setAttribute('aria-label',label);if(kind==='bomb')el.innerHTML=uiIcon('bomb')+label.replace('Bom ','');
   }else{
    el.dataset.level=String(Math.min(11,Math.log2(v||1)));el.textContent=v||'';el.setAttribute('aria-label',v?String(v):'Ô trống');
     if(v){
@@ -193,15 +194,15 @@ function playOtherCrazyEffects(events=[]){
   const burst=document.createElement('span');
   burst.className=`crazy-event crazy-event-${event.kind}`;
   const labels={
-   bomb:'💥',bombpair:'💥',mystery:'?',wild:'★',swap:'↔',
+   bomb:'Nổ',bombpair:'Nổ',mystery:'?',wild:'★',swap:'↔',
    cancel:'× ÷',upgrade:'↑',expire:'✦'
   };
   let text=labels[event.kind]||'✦';
   if(event.kind==='wild'&&event.value)text=`★ → ${event.value}`;
   if(event.kind==='upgrade'&&event.label)text=`↑ ${String(event.label).replace(/:life\d+$/,'').replace('mul:','×').replace('div:','÷').replace(':wide','')}`;
-  if(event.kind==='mystery'&&event.label)text=`? → ${String(event.label).replace('mul:','×').replace('div:','÷').replace('bomb:5','💣')}`;
+  if(event.kind==='mystery'&&event.label)text=`? → ${String(event.label).replace('mul:','×').replace('div:','÷').replace('bomb:5','Bom')}`;
   if(event.kind==='cancel'&&event.label&&event.label!=='0')text=`× ÷ → ${String(event.label).replace('mul:','×').replace('div:','÷').replace(':wide','')}`;
-  burst.textContent=text;cell.append(burst);
+  burst.textContent=text;if(event.kind==='bomb'||event.kind==='bombpair')burst.innerHTML=uiIcon('burst');cell.append(burst);
   cell.classList.add(`crazy-cell-${event.kind}`);
   if(event.kind==='bombpair'){
    const i=event.cell,row=Math.floor(i/numberSize),col=i%numberSize;

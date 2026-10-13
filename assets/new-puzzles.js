@@ -1,3 +1,4 @@
+import {uiIcon} from './ui-icons.js';
 /* credit: giasu.ai.vn */
 import {setGameControlIcon} from './game-controls.js';
 import {sound,stopSounds} from './puzzle-audio.js';
@@ -12,7 +13,7 @@ sizeSelect.addEventListener('change',()=>{mw=mh=Number(sizeSelect.value);mb=mine
 let mines=[],opened=new Set(),flags=new Set(),minesReady=false,minesDone=false,minesLost=false,mineHit=-1,flagMode=false;
 const mineButtons=[];
 const flagButton=document.createElement('button');
-flagButton.type='button';flagButton.textContent='⚑';flagButton.title='Chế độ cắm cờ';flagButton.setAttribute('aria-label','Chế độ cắm cờ');flagButton.setAttribute('aria-pressed','false');
+flagButton.type='button';flagButton.title='Chế độ cắm cờ';flagButton.setAttribute('aria-label','Chế độ cắm cờ');flagButton.setAttribute('aria-pressed','false');
 setGameControlIcon(flagButton,'flag','Chế độ cắm cờ');
 $('#mines-reset').after(flagButton);
 $('#mines-reset').setAttribute('aria-label','Chơi lại Minesweeper');
@@ -37,10 +38,11 @@ function minesRender(){
  mineButtons.forEach((button,i)=>{const v=mines[i],isOpen=opened.has(i),showMine=minesLost&&v===-1;
   button.className='mine-cell'+(isOpen?' open':'')+(flags.has(i)?' flag':'')+(showMine?' revealed-mine':'')+(i===mineHit?' mine-hit':'');
   button.textContent=showMine?'✹':flags.has(i)?(minesLost&&v!==-1?'×':'⚑'):isOpen?(v||''):'';
+  if(showMine)button.innerHTML=uiIcon('bomb');else if(flags.has(i)&&!(minesLost&&v!==-1))button.innerHTML=uiIcon('flag');
   button.dataset.count=isOpen?String(v):'';button.disabled=minesDone;
   button.setAttribute('aria-label',`Hàng ${Math.floor(i/mw)+1}, cột ${i%mw+1}: ${showMine?'mìn':flags.has(i)?'cắm cờ':isOpen?(v?`${v} mìn lân cận`:'ô trống'):'chưa mở'}`);
  });
- $('#mines-status').textContent=minesDone?(minesLost?'Trúng mìn. Bấm ↻ để chơi lại.':'Đã mở tất cả ô an toàn!'):`⚑ ${flags.size}/${mb} · ${opened.size}/${mw*mh-mb} ô an toàn`;
+ $('#mines-status').textContent=minesDone?(minesLost?'Trúng mìn. Bấm ↻ để chơi lại.':'Đã mở tất cả ô an toàn!'):`Cờ ${flags.size}/${mb} · ${opened.size}/${mw*mh-mb} ô an toàn`;
 }
 function buildMineBoard(){
 mineButtons.length=0;
@@ -78,7 +80,7 @@ function mazeRender(){
  mazeBoard.dataset.size=String(mazeSize);
  mazeBoard.replaceChildren(...mazeMap.map((v,i)=>{const cell=document.createElement('span');cell.className='maze-cell '+(v?'wall':'floor')+(i===mazeGoal?' goal':'')+(i===mazePos?' player':'');cell.setAttribute('aria-hidden','true');if(i===mazeGoal)cell.innerHTML='<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7 29V4m1 2c5-3 9 3 17 0v15c-8 3-12-3-17 0" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';return cell;}));
  mazeBoard.setAttribute('aria-label',`Mê cung ${mazeSize}×${mazeSize}, hàng ${Math.floor(mazePos/mazeSize)+1}, cột ${mazePos%mazeSize+1}. Dùng phím mũi tên.`);
- $('#maze-status').textContent=mazeDone?`Đã đến đích sau ${mazeSteps} bước!`:`${mazeSteps} bước · Đưa chấm sáng tới ⚑`;
+ $('#maze-status').textContent=mazeDone?`Đã đến đích sau ${mazeSteps} bước!`:`${mazeSteps} bước · Đưa chấm sáng tới cờ đích`;
  document.querySelectorAll('[data-maze]').forEach(button=>button.disabled=mazeDone);
 }
 function mazeStart(fresh=false,focus=true){stopSounds();if(fresh||!mazeMap.length)generateMaze();mazePos=mazeSize+1;mazeSteps=0;mazeDone=false;mazeTouch=null;mazeRender();if(focus)mazeBoard.focus({preventScroll:true});}
