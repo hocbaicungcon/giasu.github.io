@@ -1,0 +1,25 @@
+/* credit: giasu.ai.vn */
+.site-share{position:fixed;right:24px;bottom:calc(84px + env(safe-area-inset-bottom));z-index:16;font:500 .8125rem/1.5 sans-serif;color:var(--ink,#25424a)}
+.share-toggle{display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid #b9ddd5;border-radius:50%;background:var(--ink,#25424a);color:#fff;box-shadow:0 8px 20px #243b4030;cursor:pointer}
+.share-toggle svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.share-toggle:hover,.share-toggle[aria-expanded="true"]{background:#116e80;color:#fff}
+.share-panel{position:absolute;right:-8px;bottom:60px;width:64px;padding:8px;border:1px solid var(--line,#dce5e7);border-radius:32px;background:var(--paper,#fff);color:var(--ink,#25424a);box-shadow:0 12px 40px #102a3330;max-height:calc(100dvh - 175px);overflow:auto;scrollbar-width:none}
+.share-panel[hidden],.share-actions [hidden]{display:none}
+.share-close{display:grid;place-items:center;width:44px;height:32px;margin:0 auto 4px;padding:0;border-radius:20px;background:transparent;color:var(--muted,#64748b);font-size:16px;cursor:pointer}
+.share-actions{display:grid;grid-template-columns:44px;justify-content:center;gap:6px}
+.share-actions a,.share-actions button{display:grid;place-items:center;width:44px;height:44px;min-height:44px;padding:9px;border:0;border-radius:50%;background:transparent;color:var(--ink,#25424a);cursor:pointer;text-decoration:none}
+.share-actions svg{display:block;width:25px;height:25px;overflow:visible}
+.share-actions .share-facebook{color:#1877f2;background:#1877f20c}.share-actions .share-x{color:#111;background:#00000006}.share-actions .share-telegram{color:#229ed9;background:#229ed90c}
+.share-actions .share-zalo{padding:6px}.share-actions .share-zalo svg{width:30px;height:30px}
+.share-actions a:hover,.share-actions button:hover{background:#e5f2f5;color:#087e96;transform:translateY(-1px)}
+.share-actions .share-facebook:hover{color:#1877f2}.share-actions .share-x:hover{color:#111}.share-actions .share-telegram:hover{color:#229ed9}
+.site-share [data-share-status]{position:absolute;right:60px;bottom:0;width:min(220px,calc(100vw - 112px));font-size:.8rem;margin:0;padding:10px 12px;border:1px solid var(--line,#dce5e7);border-radius:10px;background:var(--paper,#fff);box-shadow:0 6px 20px #102a3320;color:var(--ink,#25424a)}
+.site-share [data-share-status]:empty,.share-panel[hidden]~[data-share-status]{display:none}
+.share-copy-input{width:100%;padding:8px;margin-top:8px;border:1px solid #cbd5e1;border-radius:6px;font:inherit}
+.share-panel:has(.share-copy-input){width:min(280px,calc(100vw - 48px));border-radius:16px}
+html[data-theme="dark"] .share-toggle{background:#d4bb91;color:#302c25;border-color:#d4bb91}
+html[data-theme="dark"] .share-panel,html[data-theme="dark"] .site-share [data-share-status]{background:#18212f;color:#e2e8f0}
+html[data-theme="dark"] .share-actions .share-x{color:#f1f5f9}
+html[data-theme="dark"] .share-actions a:hover,html[data-theme="dark"] .share-actions button:hover{background:#203d46}
+body.camera-open .site-share,body.menu-open .site-share{visibility:hidden;pointer-events:none}
+@media print{.site-share{display:none}}

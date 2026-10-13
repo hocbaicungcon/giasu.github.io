@@ -91,6 +91,11 @@ Hãy khởi động cùng $5$ bài toán nền tảng về góc từ lớp 6:
 
 ---
 
+```geometry
+type: angle-pairs
+mode: vertical
+```
+
 ## 1. Lý thuyết trọng tâm
 
 ### 1.1. Hai góc kề nhau, hai góc bù nhau và hai góc kề bù

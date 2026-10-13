@@ -211,3 +211,35 @@ test('normalizeMarkdownFormatting normalizes bold, italic and preserves code/mat
 });
 
 
+
+test('SVG diagrams retain all shapes across blank lines without becoming code',()=>{
+ const svg='<div>\n  <svg viewBox="0 0 100 100">\n    <line x1="0" y1="0" x2="100" y2="100"/>\n\n    <!-- second shape -->\n    <polygon points="0,0 50,0 50,50"/>\n\n    <text x="20" y="20">A</text>\n  </svg>\n</div>';
+ const html=parsePost(source+'\n\n'+svg,'svg-test.md').html;
+ assert.match(html,/<svg[^>]*>[\s\S]*<polygon[\s\S]*<text[\s\S]*<\/svg>/);
+ assert.doesNotMatch(html,/&lt;polygon|&lt;!-- second shape/);
+});
+test('triangle lesson provides a reusable geometry activity and complete diagrams',()=>{
+ const lesson=fs.readFileSync(new URL('../post/toan-7-bai-12-tong-cac-goc-trong-mot-tam-giac.md',import.meta.url),'utf8');
+ const html=parsePost(lesson,'toan-7-bai-12.md').html;
+ assert.match(html,/data-geometry="triangle-angles"/);
+ assert.match(html,/data-coordinate="x"/);
+ assert.doesNotMatch(html,/&lt;polygon|&lt;circle|&lt;!-- Tam giác/);
+});
+
+test('all triangle quiz angle measurements render with KaTeX',()=>{
+ const lesson=fs.readFileSync(new URL('../post/toan-7-bai-12-tong-cac-goc-trong-mot-tam-giac.md',import.meta.url),'utf8');
+ const html=parsePost(lesson,'toan-7-bai-12.md').html;
+ const forms=[...html.matchAll(/<form class="quiz"[\s\S]*?<\/form>/g)].map(m=>m[0]);
+ assert.equal(forms.length,10);
+ assert.ok(forms[3].includes('katex'));assert.match(forms[3],/<legend>[\s\S]*class="katex"/);
+ const visibleText=forms.join('').replace(/<annotation[\s\S]*?<\/annotation>/g,'').replace(/<[^>]+>/g,'');
+ assert.doesNotMatch(visibleText,/\^\\circ/);
+});
+
+test('valid bold question labels stay valid after repeated normalization',()=>{
+ const input='**Câu 1:** Chọn đáp án đúng.';
+ const normalized=normalizeMarkdownFormatting(input);
+ assert.equal(normalized,input);
+ assert.equal(normalizeMarkdownFormatting(normalized),input);
+ assert.match(parsePost(source+'\n\n'+input,'bold-label.md').html,/<strong>Câu 1:<\/strong> Chọn đáp án đúng/);
+});

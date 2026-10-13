@@ -23,7 +23,7 @@ Trong hình học, tam giác là hình đa giác cơ bản và vững chãi nh�
 - Một tam giác vuông cứng cáp như chiếc êke của người thợ mộc hay khung mái nhà vì kèo thép.
 - Hay một tam giác tù trải rộng như cánh buồm căng gió lướt sóng ra khơi...
 
-Có một chân lý toán học kỳ diệu luôn đúng cho **mọi tam giác** trên mặt phẳng phẳng: **Tổng số đo ba góc trong một tam giác luôn luôn bằng $180^\circ$!**
+Có một chân lý toán học kỳ diệu luôn đúng cho **mọi tam giác** trên mặt phẳng: **Tổng số đo ba góc trong một tam giác luôn luôn bằng $180^\circ$!**
 
 Không phải ngẫu nhiên mà định lý này được xem là viên gạch nền móng đầu tiên của toàn bộ chương **Tam giác bằng nhau**. Nhờ định lý này, ta giải thích được vì sao một tam giác không thể có hai góc vuông, làm chủ quan hệ phụ nhau của hai góc nhọn trong tam giác vuông, và khai phá tính chất góc ngoài cực kỳ lợi hại. Bài học hôm nay sẽ cùng các em khám phá định lý tuyệt đẹp này, kèm theo $5$ chuyên đề bồi dưỡng học sinh giỏi Olympic với các công thức góc phân giác kinh điển!
 
@@ -126,6 +126,10 @@ Hãy khởi động cùng $5$ câu hỏi nhanh để kích hoạt tư duy góc v
   <p style="font-size: 0.9em; color: var(--text-secondary, #64748b); margin-top: 8px;"><b>Hình 1:</b> Chứng minh định lý bằng cách kẻ đường thẳng $xy \parallel BC$ qua đỉnh $A$.</p>
 </div>
 
+```geometry
+type: triangle-angles
+```
+
 #### Chứng minh định lý:
 Qua đỉnh $A$, kẻ đường thẳng $xy \parallel BC$ ($Ax$ nằm về phía $B$, $Ay$ nằm về phía $C$).
 1. Vì $xy \parallel BC$ bị cắt bởi cát tuyến $AB$ nên:
@@ -134,7 +138,7 @@ Qua đỉnh $A$, kẻ đường thẳng $xy \parallel BC$ ($Ax$ nằm về phía
 2. Vì $xy \parallel BC$ bị cắt bởi cát tuyến $AC$ nên:
    $$\widehat{A_3} = \widehat{C}$$
    (hai góc so le trong).
-3. Ba tia $Ax, AB, Ay$ nằm trên một đường thẳng nên góc $\widehat{xAy}$ là góc bẹt:
+3. Hai tia $Ax$ và $Ay$ là hai tia đối nhau nên góc $\widehat{xAy}$ là góc bẹt:
    $$\widehat{A_1} + \widehat{A_2} + \widehat{A_3} = 180^\circ.$$
 Thay $\widehat{A_1} = \widehat{B}$ và $\widehat{A_3} = \widehat{C}$, ta được:
 $$\widehat{B} + \widehat{BAC} + \widehat{C} = 180^\circ \iff \widehat{A} + \widehat{B} + \widehat{C} = 180^\circ.$$
@@ -384,24 +388,26 @@ Vậy đường dốc cầu thang tạo với bức tường thẳng đứng m�
 type: choice
 question: 'Tổng số đo ba góc trong một tam giác bất kỳ luôn bằng:'
 options:
-  - 'A) 90^\circ'
-  - 'B) 180^\circ'
-  - 'C) 270^\circ'
-  - 'D) 360^\circ'
+  - 'A) $90^\circ$'
+  - 'B) $180^\circ$'
+  - 'C) $270^\circ$'
+  - 'D) $360^\circ$'
+hint: 'Nhớ thí nghiệm ghép ba góc thành một góc bẹt.'
 answer: 2
-explanation: 'Theo định lý tổng ba góc trong tam giác: tổng số đo ba góc trong một tam giác luôn bằng 180^\circ.'
+explanation: 'Theo định lý tổng ba góc trong tam giác: tổng số đo ba góc trong một tam giác luôn bằng $180^\circ$.'
 ```
 
 ```quiz
 type: choice
-question: 'Tam giác ABC có góc A = 65^\circ và góc B = 55^\circ. Số đo góc C là:'
+question: 'Tam giác ABC có góc A = $65^\circ$ và góc B = $55^\circ$. Số đo góc C là:'
 options:
-  - 'A) 50^\circ'
-  - 'B) 60^\circ'
-  - 'C) 70^\circ'
-  - 'D) 80^\circ'
+  - 'A) $50^\circ$'
+  - 'B) $60^\circ$'
+  - 'C) $70^\circ$'
+  - 'D) $80^\circ$'
+hint: 'Lấy tổng ba góc trừ đi tổng hai góc đã biết.'
 answer: 2
-explanation: 'Góc C = 180^\circ - (65^\circ + 55^\circ) = 180^\circ - 120^\circ = 60^\circ.'
+explanation: 'Góc C = $180^\circ$ - ($65^\circ$ + $55^\circ$) = $180^\circ$ - $120^\circ$ = $60^\circ$.'
 ```
 
 ```quiz
@@ -412,20 +418,22 @@ options:
   - 'B) Hai góc nhọn bù nhau'
   - 'C) Hai góc nhọn phụ nhau'
   - 'D) Hai góc nhọn luôn bằng nhau'
+hint: 'Góc vuông đã chiếm 90° trong tổng 180°.'
 answer: 3
-explanation: 'Trong tam giác vuông, hai góc nhọn phụ nhau, tức là có tổng số đo bằng 90^\circ.'
+explanation: 'Trong tam giác vuông, hai góc nhọn phụ nhau, tức là có tổng số đo bằng $90^\circ$.'
 ```
 
 ```quiz
 type: choice
-question: 'Cho tam giác MNP vuông tại M, biết góc N = 35^\circ. Số đo góc P là:'
+question: 'Cho tam giác MNP vuông tại M, biết góc N = $35^\circ$. Số đo góc P là:'
 options:
-  - 'A) 55^\circ'
-  - 'B) 65^\circ'
-  - 'C) 145^\circ'
-  - 'D) 45^\circ'
+  - 'A) $55^\circ$'
+  - 'B) $65^\circ$'
+  - 'C) $145^\circ$'
+  - 'D) $45^\circ$'
+hint: 'Hai góc nhọn trong tam giác vuông có tổng 90°.'
 answer: 1
-explanation: 'Vì tam giác vuông tại M nên góc P = 90^\circ - góc N = 90^\circ - 35^\circ = 55^\circ.'
+explanation: 'Vì tam giác vuông tại M nên góc P = $90^\circ$ - góc N = $90^\circ$ - $35^\circ$ = $55^\circ$.'
 ```
 
 ```quiz
@@ -435,33 +443,36 @@ options:
   - 'A) Tổng ba góc trong của tam giác'
   - 'B) Tổng hai góc trong không kề với nó'
   - 'C) Góc trong kề với nó'
-  - 'D) 180^\circ trừ đi hai góc trong không kề'
+  - 'D) $180^\circ$ trừ đi hai góc trong không kề'
+hint: 'Phân biệt hai góc trong không kề với góc trong kề bù.'
 answer: 2
 explanation: 'Định lý tính chất góc ngoài: Mỗi góc ngoài của tam giác có số đo bằng tổng hai góc trong không kề với nó.'
 ```
 
 ```quiz
 type: choice
-question: 'Cho tam giác ABC có góc A = 70^\circ và góc B = 45^\circ. Góc ngoài tại đỉnh C có số đo bằng:'
+question: 'Cho tam giác ABC có góc A = $70^\circ$ và góc B = $45^\circ$. Góc ngoài tại đỉnh C có số đo bằng:'
 options:
-  - 'A) 65^\circ'
-  - 'B) 115^\circ'
-  - 'C) 110^\circ'
-  - 'D) 125^\circ'
+  - 'A) $65^\circ$'
+  - 'B) $115^\circ$'
+  - 'C) $110^\circ$'
+  - 'D) $125^\circ$'
+hint: 'Cộng hai góc trong không kề với góc ngoài tại C.'
 answer: 2
-explanation: 'Góc ngoài tại đỉnh C bằng tổng hai góc trong không kề: góc A + góc B = 70^\circ + 45^\circ = 115^\circ.'
+explanation: 'Góc ngoài tại đỉnh C bằng tổng hai góc trong không kề: góc A + góc B = $70^\circ$ + $45^\circ$ = $115^\circ$.'
 ```
 
 ```quiz
 type: choice
 question: 'Bộ ba số đo nào sau đây KHÔNG THỂ là ba góc của một tam giác?'
 options:
-  - 'A) 40^\circ; 60^\circ; 80^\circ'
-  - 'B) 30^\circ; 90^\circ; 60^\circ'
-  - 'C) 55^\circ; 55^\circ; 70^\circ'
-  - 'D) 50^\circ; 65^\circ; 75^\circ'
+  - 'A) $40^\circ$; $60^\circ$; $80^\circ$'
+  - 'B) $30^\circ$; $90^\circ$; $60^\circ$'
+  - 'C) $55^\circ$; $55^\circ$; $70^\circ$'
+  - 'D) $50^\circ$; $65^\circ$; $75^\circ$'
+hint: 'Tính tổng số đo góc của từng đáp án.'
 answer: 4
-explanation: 'Tổng ba góc ở đáp án D là: 50^\circ + 65^\circ + 75^\circ = 190^\circ != 180^\circ, do đó không thể tạo thành một tam giác.'
+explanation: 'Tổng ba góc ở đáp án D là: $50^\circ$ + $65^\circ$ + $75^\circ$ = $190^\circ$ ≠ $180^\circ$, do đó không thể tạo thành một tam giác.'
 ```
 
 ```quiz
@@ -472,32 +483,35 @@ options:
   - 'B) 1 góc tù'
   - 'C) 2 góc tù'
   - 'D) 3 góc tù'
+hint: 'Một góc tù lớn hơn 90°. Hai góc tù sẽ có tổng bao nhiêu?'
 answer: 2
-explanation: 'Một tam giác chỉ có thể có nhiều nhất 1 góc tù, vì nếu có 2 góc tù thì tổng hai góc đã vượt quá 180^\circ.'
+explanation: 'Một tam giác chỉ có thể có nhiều nhất 1 góc tù, vì nếu có 2 góc tù thì tổng hai góc đã vượt quá $180^\circ$.'
 ```
 
 ```quiz
 type: choice
 question: 'Tam giác đều là tam giác có ba góc bằng nhau. Mỗi góc của tam giác đều bằng:'
 options:
-  - 'A) 45^\circ'
-  - 'B) 60^\circ'
-  - 'C) 90^\circ'
-  - 'D) 120^\circ'
+  - 'A) $45^\circ$'
+  - 'B) $60^\circ$'
+  - 'C) $90^\circ$'
+  - 'D) $120^\circ$'
+hint: 'Ba góc bằng nhau chia đều tổng 180°.'
 answer: 2
-explanation: 'Vì tổng ba góc bằng 180^\circ và ba góc bằng nhau nên mỗi góc bằng: 180^\circ / 3 = 60^\circ.'
+explanation: 'Vì tổng ba góc bằng $180^\circ$ và ba góc bằng nhau nên mỗi góc bằng: $180^\circ$ / 3 = $60^\circ$.'
 ```
 
 ```quiz
 type: choice
-question: 'Cho tam giác ABC cân tại A có góc A = 50^\circ. Số đo mỗi góc ở đáy (góc B và góc C) bằng:'
+question: 'Cho tam giác ABC cân tại A có góc A = $50^\circ$. Số đo mỗi góc ở đáy (góc B và góc C) bằng:'
 options:
-  - 'A) 50^\circ'
-  - 'B) 65^\circ'
-  - 'C) 75^\circ'
-  - 'D) 130^\circ'
+  - 'A) $50^\circ$'
+  - 'B) $65^\circ$'
+  - 'C) $75^\circ$'
+  - 'D) $130^\circ$'
+hint: 'Trừ góc ở đỉnh khỏi 180°, rồi chia đều cho hai góc ở đáy.'
 answer: 2
-explanation: 'Vì tam giác cân tại A nên góc B = góc C. Ta có góc B = (180^\circ - 50^\circ) / 2 = 130^\circ / 2 = 65^\circ.'
+explanation: 'Vì tam giác cân tại A nên góc B = góc C. Ta có góc B = ($180^\circ$ - $50^\circ$) / 2 = $130^\circ$ / 2 = $65^\circ$.'
 ```
 
 ---
@@ -793,7 +807,7 @@ b) Kẻ tia phân giác $AD$ của góc $\widehat{A}$ ($D \in BC$). Tính số �
 **Bài 2 (2,0 điểm).**  
 Cho tam giác $ABC$ vuông tại $A$. Kẻ đường cao $AH$ ($H \in BC$).  
 a) Chứng minh rằng $\widehat{BAH} = \widehat{C}$ *(1,0 điểm)*.  
-b) Tia phân giác của góc $\widehat{BAH}$ cắt cạnh $BC$ tại điểm $K$. Chứng minh rằng tam giác $ABK$ có hai góc $\widehat{ABK}$ và $\widehat{AKB}$ thỏa mãn quan hệ: $\widehat{AKB} = \widehat{BAK}$ (tức $\triangle ABK$ cân tại $B$) *(1,0 điểm)*.
+b) Tia phân giác của góc $\widehat{BAH}$ cắt cạnh $BC$ tại điểm $K$. Chứng minh rằng $\widehat{AKB} = 90^\circ + \frac{\widehat{C}}{2}$ *(1,0 điểm)*.
 
 **Bài 3 (1,0 điểm — Dành cho học sinh giỏi phân hóa điểm 10).**  
 Cho tam giác $ABC$ có $\widehat{A} = \alpha$. Hai tia phân giác của hai góc ngoài tại đỉnh $B$ và đỉnh $C$ cắt nhau tại điểm $J$.  
@@ -827,14 +841,10 @@ b) Tìm giá trị của $\alpha$ để góc $\widehat{BJC} = 45^\circ$ *(0,5 đ
     - Trong $\triangle ABC$ vuông tại $A$: $\widehat{B} + \widehat{C} = 90^\circ \implies \widehat{C} = 90^\circ - \widehat{B}$ *(0,5 điểm)*.
     - Trong $\triangle ABH$ vuông tại $H$: $\widehat{BAH} + \widehat{B} = 90^\circ \implies \widehat{BAH} = 90^\circ - \widehat{B}$ *(0,25 điểm)*.
     - Suy ra $\widehat{BAH} = \widehat{C}$ *(0,25 điểm)*.
-  - **b) Chứng minh tam giác $ABK$ cân (1,0 điểm):**
-    - Vì $AK$ là phân giác của $\widehat{BAH}$ nên $\widehat{BAK} = \widehat{KAH} = \frac{1}{2}\widehat{BAH}$ *(0,25 điểm)*.
-    - Góc $\widehat{AKB}$ là góc ngoài tại đỉnh $K$ của $\triangle AHK$ vuông tại $H$:
-      $\widehat{AKB} = \widehat{AHK} + \widehat{KAH} = 90^\circ + \widehat{KAH}$ *(không, xét $\triangle AKC$: $\widehat{AKB} = \widehat{C} + \widehat{KAC}$)*.
-      Hoặc trong $\triangle AHK$ vuông tại $H$: $\widehat{AKB} = 90^\circ - \widehat{KAH}$ *(0,25 điểm)*.
-      Mặt khác $\widehat{BAK} = \frac{1}{2}\widehat{BAH}$, mà $\widehat{B} + \widehat{BAH} = 90^\circ$ nên kiểm tra trực tiếp:
-      Ta có $\widehat{AKB} = 90^\circ - \widehat{KAH} = 90^\circ - \widehat{BAK}$ *(0,25 điểm)*.
-      Do đó $\widehat{AKB} + \widehat{BAK} = 90^\circ$ trong tam giác vuông tương ứng *(0,25 điểm)*.
+  - **b) Tính góc $AKB$ (1,0 điểm):**
+    - Vì $AK$ là phân giác của $\widehat{BAH}$ và $\widehat{BAH} = \widehat{C}$ nên $\widehat{BAK} = \frac{\widehat{C}}{2}$ *(0,5 điểm)*.
+    - Trong $\triangle ABK$, do $K$ nằm trên $BC$, ta có $\widehat{ABK} = \widehat{B} = 90^\circ - \widehat{C}$.
+    - Suy ra $\widehat{AKB} = 180^\circ - (90^\circ - \widehat{C}) - \frac{\widehat{C}}{2} = 90^\circ + \frac{\widehat{C}}{2}$ *(0,5 điểm)*.
 
 - **Bài 3 (1,0 điểm):**
   - **a) Chứng minh công thức (0,5 điểm):**
