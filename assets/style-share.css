@@ -5,7 +5,6 @@
 .share-toggle:hover,.share-toggle[aria-expanded="true"]{background:#116e80;color:#fff}
 .share-panel{position:absolute;right:-8px;bottom:60px;width:64px;padding:8px;border:1px solid var(--line,#dce5e7);border-radius:32px;background:var(--paper,#fff);color:var(--ink,#25424a);box-shadow:0 12px 40px #102a3330;max-height:calc(100dvh - 175px);overflow:auto;scrollbar-width:none}
 .share-panel[hidden],.share-actions [hidden]{display:none}
-.share-close{display:grid;place-items:center;width:44px;height:32px;margin:0 auto 4px;padding:0;border-radius:20px;background:transparent;color:var(--muted,#64748b);font-size:16px;cursor:pointer}
 .share-actions{display:grid;grid-template-columns:44px;justify-content:center;gap:6px}
 .share-actions a,.share-actions button{display:grid;place-items:center;width:44px;height:44px;min-height:44px;padding:9px;border:0;border-radius:50%;background:transparent;color:var(--ink,#25424a);cursor:pointer;text-decoration:none}
 .share-actions svg{display:block;width:25px;height:25px;overflow:visible}

@@ -253,3 +253,9 @@ test('valid bold question labels stay valid after repeated normalization',()=>{
  assert.equal(normalizeMarkdownFormatting(normalized),input);
  assert.match(parsePost(source+'\n\n'+input,'bold-label.md').html,/<strong>Câu 1:<\/strong> Chọn đáp án đúng/);
 });
+
+test('bold across paragraphs and comparisons in callouts retain their formatting',()=>{
+ const p=parsePost(source+'\n\n> [!IMPORTANT]\n> Nếu $a < b$ thì $b$ **lớn hơn** số $a$.\n\nThứ tự: **Cường < Bình < An < Dũng.**\n\n**Vị trí điểm:**\nNội dung khác.','emphasis.md');
+ assert.match(p.html,/<strong>lớn hơn<\/strong>/);assert.match(p.html,/<strong>Vị trí điểm:<\/strong>/);assert.doesNotMatch(p.html,/\*\*/);
+ const code=parsePost(source+'\n\n`$a < b$ **nguyên văn**`','literal-code.md');assert.match(code.html,/<code>\$a &lt; b\$ \*\*nguyên văn\*\*<\/code>/);
+});

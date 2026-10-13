@@ -79,28 +79,23 @@ Câu trả lời chính là chủ đề của bài học hôm nay: **4 trường
 Trước khi học 4 trường hợp bằng nhau, chúng ta thống nhất về cách đặt tên trong tam giác vuông:
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 480 220" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Tam giác ABC vuông tại A -->
-    <polygon points="80,180 80,50 360,180" fill="rgba(37,99,235,0.07)" stroke="#2563eb" stroke-width="2.5" />
-    <!-- Ký hiệu góc vuông tại A -->
-    <path d="M 80,160 L 100,160 L 100,180" fill="none" stroke="#2563eb" stroke-width="2" />
-    <!-- Đỉnh -->
-    <circle cx="80" cy="180" r="4" fill="#1e293b"/>
-    <text x="60" y="198" font-family="sans-serif" font-weight="bold" font-size="16" fill="#1e293b">A</text>
-    <circle cx="80" cy="50" r="4" fill="#1e293b"/>
-    <text x="60" y="48" font-family="sans-serif" font-weight="bold" font-size="16" fill="#1e293b">B</text>
-    <circle cx="360" cy="180" r="4" fill="#1e293b"/>
-    <text x="368" y="198" font-family="sans-serif" font-weight="bold" font-size="16" fill="#1e293b">C</text>
-    <!-- Nhãn cạnh -->
-    <text x="50" y="118" font-family="sans-serif" font-size="13" fill="#2563eb" transform="rotate(-90,50,118)">AB (cgv)</text>
-    <text x="185" y="198" font-family="sans-serif" font-size="13" fill="#2563eb">AC (cgv)</text>
-    <text x="195" y="105" font-family="sans-serif" font-size="13" fill="#dc2626" transform="rotate(-22,195,105)">BC (cạnh huyền)</text>
-    <!-- Góc nhọn B và C -->
-    <path d="M 80,75 A 25 25 0 0 1 105,76" fill="none" stroke="#d97706" stroke-width="2"/>
-    <text x="108" y="80" font-family="sans-serif" font-size="12" fill="#d97706">B (nhọn)</text>
-    <path d="M 335,180 A 25 25 0 0 0 348,157" fill="none" stroke="#d97706" stroke-width="2"/>
-    <text x="290" y="162" font-family="sans-serif" font-size="12" fill="#d97706">C (nhọn)</text>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" style="width: 100%; max-width: 480px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 1: minh họa tam giác vuông và các ký hiệu góc">
+  <polygon points="80,180 80,50 360,180" fill="rgba(37,99,235,0.07)" stroke="#2563eb" stroke-width="2.5" />
+  <path d="M 80,160 L 100,160 L 100,180" fill="none" stroke="#2563eb" stroke-width="2" data-angle-kind="right" data-angle-vertex="80,180" data-angle-rays="80,50 360,180" data-angle-size="20" />
+  <circle cx="80" cy="180" r="4" fill="#1e293b" />
+  <text x="60" y="198" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="16" fill="#1e293b">A</text>
+  <circle cx="80" cy="50" r="4" fill="#1e293b" />
+  <text x="60" y="48" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="16" fill="#1e293b">B</text>
+  <circle cx="360" cy="180" r="4" fill="#1e293b" />
+  <text x="368" y="198" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="16" fill="#1e293b">C</text>
+  <text x="50" y="118" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="13" fill="#2563eb" transform="rotate(-90,50,118)">AB (cgv)</text>
+  <text x="185" y="198" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="13" fill="#2563eb">AC (cgv)</text>
+  <text x="195" y="105" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="13" fill="#dc2626" transform="rotate(-22,195,105)">BC (cạnh huyền)</text>
+  <path d="M 80,75 A 25 25 0 0 0 102.675,60.528" fill="none" stroke="#d97706" stroke-width="2" data-angle-kind="arc" data-angle-vertex="80,50" data-angle-rays="80,180 360,180" data-angle-size="25" />
+  <text x="108" y="102" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#d97706">B (nhọn)</text>
+  <path d="M 335,180 A 25 25 0 0 1 337.325,169.472" fill="none" stroke="#d97706" stroke-width="2" data-angle-kind="arc" data-angle-vertex="360,180" data-angle-rays="80,180 80,50" data-angle-size="25" />
+  <text x="312" y="174" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#d97706" text-anchor="end">C (nhọn)</text>
+</svg>
   <p style="font-size:0.9em; color: var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 1: Tam giác ABC vuông tại A — cạnh huyền BC đối diện góc vuông, hai cạnh góc vuông AB và AC</em></p>
 </div>
 
@@ -121,31 +116,30 @@ Trước khi học 4 trường hợp bằng nhau, chúng ta thống nhất về 
 **Bản chất:** Đây chính là trường hợp **c.g.c** áp dụng cho tam giác vuông, với góc xen giữa là **góc vuông $90^\circ$** (góc vuông luôn bằng nhau, nên chỉ cần kiểm tra hai cạnh góc vuông).
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 620 200" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Tam giác ABC vuông tại A -->
-    <polygon points="80,170 80,50 260,170" fill="rgba(37,99,235,0.07)" stroke="#2563eb" stroke-width="2.5"/>
-    <path d="M 80,150 L 100,150 L 100,170" fill="none" stroke="#2563eb" stroke-width="2"/>
-    <circle cx="80" cy="170" r="4" fill="#1e293b"/><text x="62" y="186" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
-    <circle cx="80" cy="50" r="4" fill="#1e293b"/><text x="62" y="46" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
-    <circle cx="260" cy="170" r="4" fill="#1e293b"/><text x="268" y="186" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
-    <!-- 1 vạch trên AB -->
-    <line x1="73" y1="105" x2="87" y2="115" stroke="#2563eb" stroke-width="2.5"/>
-    <!-- 2 vạch trên AC -->
-    <line x1="163" y1="165" x2="173" y2="175" stroke="#2563eb" stroke-width="2.5"/>
-    <line x1="167" y1="169" x2="177" y2="179" stroke="#2563eb" stroke-width="2.5"/>
-
-    <!-- Tam giác DEF vuông tại D -->
-    <polygon points="380,170 380,50 560,170" fill="rgba(16,185,129,0.07)" stroke="#10b981" stroke-width="2.5"/>
-    <path d="M 380,150 L 400,150 L 400,170" fill="none" stroke="#10b981" stroke-width="2"/>
-    <circle cx="380" cy="170" r="4" fill="#1e293b"/><text x="362" y="186" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">D</text>
-    <circle cx="380" cy="50" r="4" fill="#1e293b"/><text x="362" y="46" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">E</text>
-    <circle cx="560" cy="170" r="4" fill="#1e293b"/><text x="568" y="186" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">F</text>
-    <!-- 1 vạch trên DE -->
-    <line x1="373" y1="105" x2="387" y2="115" stroke="#10b981" stroke-width="2.5"/>
-    <!-- 2 vạch trên DF -->
-    <line x1="463" y1="165" x2="473" y2="175" stroke="#10b981" stroke-width="2.5"/>
-    <line x1="467" y1="169" x2="477" y2="179" stroke="#10b981" stroke-width="2.5"/>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" style="width: 100%; max-width: 620px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 2: minh họa tam giác vuông và các ký hiệu góc">
+  <polygon points="80,170 80,50 260,170" fill="rgba(37,99,235,0.07)" stroke="#2563eb" stroke-width="2.5" />
+  <path d="M 80,150 L 100,150 L 100,170" fill="none" stroke="#2563eb" stroke-width="2" data-angle-kind="right" data-angle-vertex="80,170" data-angle-rays="80,50 260,170" data-angle-size="20" />
+  <circle cx="80" cy="170" r="4" fill="#1e293b" />
+  <text x="62" y="186" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
+  <circle cx="80" cy="50" r="4" fill="#1e293b" />
+  <text x="62" y="46" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
+  <circle cx="260" cy="170" r="4" fill="#1e293b" />
+  <text x="268" y="186" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
+  <line x1="73" y1="110" x2="87" y2="110" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="167" y1="163" x2="167" y2="177" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="173" y1="163" x2="173" y2="177" stroke="#2563eb" stroke-width="2.5" />
+  <polygon points="380,170 380,50 560,170" fill="rgba(16,185,129,0.07)" stroke="#10b981" stroke-width="2.5" />
+  <path d="M 380,150 L 400,150 L 400,170" fill="none" stroke="#10b981" stroke-width="2" data-angle-kind="right" data-angle-vertex="380,170" data-angle-rays="380,50 560,170" data-angle-size="20" />
+  <circle cx="380" cy="170" r="4" fill="#1e293b" />
+  <text x="362" y="186" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">D</text>
+  <circle cx="380" cy="50" r="4" fill="#1e293b" />
+  <text x="362" y="46" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">E</text>
+  <circle cx="560" cy="170" r="4" fill="#1e293b" />
+  <text x="568" y="186" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">F</text>
+  <line x1="373" y1="110" x2="387" y2="110" stroke="#10b981" stroke-width="2.5" />
+  <line x1="467" y1="163" x2="467" y2="177" stroke="#10b981" stroke-width="2.5" />
+  <line x1="473" y1="163" x2="473" y2="177" stroke="#10b981" stroke-width="2.5" />
+</svg>
   <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 2: cgv–cgv — Hai tam giác vuông tại A và D có AB = DE (1 vạch) và AC = DF (2 vạch) nên bằng nhau</em></p>
 </div>
 
@@ -181,33 +175,32 @@ Nếu $\widehat{B} = \widehat{E}$ thì suy ra ngay $\widehat{C} = \widehat{F}$ (
 Kết hợp $BC = EF$ (cạnh huyền), ta có **cạnh huyền** kề **hai góc nhọn bằng nhau** $\implies$ thỏa mãn điều kiện **g.c.g**.
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 620 210" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Tam giác ABC vuông tại A -->
-    <polygon points="80,180 80,50 320,180" fill="rgba(245,158,11,0.07)" stroke="#f59e0b" stroke-width="2.5"/>
-    <path d="M 80,160 L 100,160 L 100,180" fill="none" stroke="#f59e0b" stroke-width="2"/>
-    <circle cx="80" cy="180" r="4" fill="#1e293b"/><text x="62" y="196" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
-    <circle cx="80" cy="50" r="4" fill="#1e293b"/><text x="62" y="46" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
-    <circle cx="320" cy="180" r="4" fill="#1e293b"/><text x="328" y="196" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
-    <!-- cạnh huyền 2 gạch -->
-    <line x1="191" y1="109" x2="209" y2="117" stroke="#dc2626" stroke-width="2.5"/>
-    <line x1="195" y1="117" x2="213" y2="125" stroke="#dc2626" stroke-width="2.5"/>
-    <!-- góc nhọn B -->
-    <path d="M 80,72 A 22 22 0 0 1 102,74" fill="none" stroke="#d97706" stroke-width="2.5"/>
-    <text x="108" y="80" font-family="sans-serif" font-size="12" fill="#d97706">B</text>
-
-    <!-- Tam giác DEF vuông tại D -->
-    <polygon points="380,180 380,50 620,180" fill="rgba(139,92,246,0.07)" stroke="#8b5cf6" stroke-width="2.5"/>
-    <path d="M 380,160 L 400,160 L 400,180" fill="none" stroke="#8b5cf6" stroke-width="2"/>
-    <circle cx="380" cy="180" r="4" fill="#1e293b"/><text x="362" y="196" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">D</text>
-    <circle cx="380" cy="50" r="4" fill="#1e293b"/><text x="362" y="46" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">E</text>
-    <circle cx="620" cy="180" r="4" fill="#1e293b"/><text x="626" y="196" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">F</text>
-    <!-- cạnh huyền 2 gạch -->
-    <line x1="491" y1="109" x2="509" y2="117" stroke="#dc2626" stroke-width="2.5"/>
-    <line x1="495" y1="117" x2="513" y2="125" stroke="#dc2626" stroke-width="2.5"/>
-    <!-- góc nhọn E -->
-    <path d="M 380,72 A 22 22 0 0 1 402,74" fill="none" stroke="#d97706" stroke-width="2.5"/>
-    <text x="408" y="80" font-family="sans-serif" font-size="12" fill="#d97706">E</text>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 220" style="width: 100%; max-width: 660px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 3: minh họa tam giác vuông và các ký hiệu góc">
+  <polygon points="80,180 80,50 320,180" fill="rgba(245,158,11,0.07)" stroke="#f59e0b" stroke-width="2.5" />
+  <path d="M 80,160 L 100,160 L 100,180" fill="none" stroke="#f59e0b" stroke-width="2" data-angle-kind="right" data-angle-vertex="80,180" data-angle-rays="80,50 320,180" data-angle-size="20" />
+  <circle cx="80" cy="180" r="4" fill="#1e293b" />
+  <text x="62" y="196" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
+  <circle cx="80" cy="50" r="4" fill="#1e293b" />
+  <text x="62" y="46" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
+  <circle cx="320" cy="180" r="4" fill="#1e293b" />
+  <text x="328" y="196" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
+  <line x1="200.696" y1="107.416" x2="194.028" y2="119.726" stroke="#dc2626" stroke-width="2.5" />
+  <line x1="205.972" y1="110.274" x2="199.304" y2="122.584" stroke="#dc2626" stroke-width="2.5" />
+  <path d="M 80,72 A 22 22 0 0 0 99.344,60.478" fill="none" stroke="#d97706" stroke-width="2.5" data-angle-kind="arc" data-angle-vertex="80,50" data-angle-rays="80,180 320,180" data-angle-size="22" />
+  <text x="108" y="80" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#d97706">B</text>
+  <polygon points="380,180 380,50 620,180" fill="rgba(139,92,246,0.07)" stroke="#8b5cf6" stroke-width="2.5" />
+  <path d="M 380,160 L 400,160 L 400,180" fill="none" stroke="#8b5cf6" stroke-width="2" data-angle-kind="right" data-angle-vertex="380,180" data-angle-rays="380,50 620,180" data-angle-size="20" />
+  <circle cx="380" cy="180" r="4" fill="#1e293b" />
+  <text x="362" y="196" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">D</text>
+  <circle cx="380" cy="50" r="4" fill="#1e293b" />
+  <text x="362" y="46" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">E</text>
+  <circle cx="620" cy="180" r="4" fill="#1e293b" />
+  <text x="626" y="196" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">F</text>
+  <line x1="500.696" y1="107.416" x2="494.028" y2="119.726" stroke="#dc2626" stroke-width="2.5" />
+  <line x1="505.972" y1="110.274" x2="499.304" y2="122.584" stroke="#dc2626" stroke-width="2.5" />
+  <path d="M 380,72 A 22 22 0 0 0 399.344,60.478" fill="none" stroke="#d97706" stroke-width="2.5" data-angle-kind="arc" data-angle-vertex="380,50" data-angle-rays="380,180 620,180" data-angle-size="22" />
+  <text x="408" y="80" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#d97706">E</text>
+</svg>
   <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 3: ch–gn — Cạnh huyền BC = EF (2 gạch đỏ) và góc nhọn B = E (vòng cung cam) nên hai tam giác vuông bằng nhau</em></p>
 </div>
 
@@ -277,33 +270,29 @@ Cho tứ giác $ACBD$ có hai đường chéo $AB$ và $CD$ vuông góc với nh
 Chứng minh $\triangle AEC = \triangle AED$ và suy ra $AC = AD$ và $BC = BD$.
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 440 300" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Điểm E trung tâm -->
-    <circle cx="220" cy="150" r="4.5" fill="#1e293b"/>
-    <text x="230" y="145" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">E</text>
-    <!-- Đường chéo AB dọc -->
-    <line x1="220" y1="30" x2="220" y2="270" stroke="#2563eb" stroke-width="2.5"/>
-    <!-- Đường chéo CD ngang -->
-    <line x1="60" y1="150" x2="380" y2="150" stroke="#10b981" stroke-width="2.5"/>
-    <!-- Ký hiệu vuông góc -->
-    <path d="M 220,135 L 235,135 L 235,150" fill="none" stroke="#dc2626" stroke-width="2"/>
-    <!-- Đỉnh -->
-    <circle cx="220" cy="30" r="4" fill="#1e293b"/><text x="225" y="28" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
-    <circle cx="220" cy="270" r="4" fill="#1e293b"/><text x="225" y="285" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
-    <circle cx="60" cy="150" r="4" fill="#1e293b"/><text x="40" y="158" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
-    <circle cx="380" cy="150" r="4" fill="#1e293b"/><text x="388" y="158" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">D</text>
-    <!-- Cạnh AC và AD -->
-    <line x1="220" y1="30" x2="60" y2="150" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <line x1="220" y1="30" x2="380" y2="150" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <!-- Ký hiệu bằng nhau EC=ED -->
-    <line x1="134" y1="145" x2="144" y2="155" stroke="#10b981" stroke-width="2.5"/>
-    <line x1="296" y1="145" x2="306" y2="155" stroke="#10b981" stroke-width="2.5"/>
-    <!-- Ký hiệu bằng nhau EA=EB -->
-    <line x1="215" y1="88" x2="225" y2="98" stroke="#2563eb" stroke-width="2.5"/>
-    <line x1="219" y1="92" x2="229" y2="102" stroke="#2563eb" stroke-width="2.5"/>
-    <line x1="215" y1="200" x2="225" y2="210" stroke="#2563eb" stroke-width="2.5"/>
-    <line x1="219" y1="204" x2="229" y2="214" stroke="#2563eb" stroke-width="2.5"/>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" style="width: 100%; max-width: 440px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 4: minh họa tam giác vuông và các ký hiệu góc">
+  <circle cx="220" cy="150" r="4.5" fill="#1e293b" />
+  <text x="231" y="172" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">E</text>
+  <line x1="220" y1="30" x2="220" y2="270" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="60" y1="150" x2="380" y2="150" stroke="#10b981" stroke-width="2.5" />
+  <path d="M 220,135 L 235,135 L 235,150" fill="none" stroke="#dc2626" stroke-width="2" data-angle-kind="right" data-angle-vertex="220,150" data-angle-rays="220,30 380,150" data-angle-size="15" />
+  <circle cx="220" cy="30" r="4" fill="#1e293b" />
+  <text x="225" y="28" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
+  <circle cx="220" cy="270" r="4" fill="#1e293b" />
+  <text x="225" y="285" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
+  <circle cx="60" cy="150" r="4" fill="#1e293b" />
+  <text x="40" y="158" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
+  <circle cx="380" cy="150" r="4" fill="#1e293b" />
+  <text x="388" y="158" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">D</text>
+  <line x1="220" y1="30" x2="60" y2="150" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3" />
+  <line x1="220" y1="30" x2="380" y2="150" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3" />
+  <line x1="140" y1="143" x2="140" y2="157" stroke="#10b981" stroke-width="2.5" />
+  <line x1="300" y1="143" x2="300" y2="157" stroke="#10b981" stroke-width="2.5" />
+  <line x1="227" y1="87" x2="213" y2="87" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="227" y1="93" x2="213" y2="93" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="227" y1="207" x2="213" y2="207" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="227" y1="213" x2="213" y2="213" stroke="#2563eb" stroke-width="2.5" />
+</svg>
   <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 4: Mô hình con diều — đường chéo AB và CD vuông góc nhau tại trung điểm E</em></p>
 </div>
 
@@ -330,21 +319,23 @@ Do đó $\triangle BEC = \triangle BED$ (cgv–cgv) $\implies BC = BD$.
 Cho tam giác $ABC$ cân tại $A$ ($AB = AC$). Kẻ $AM \perp BC$ tại $M$. Chứng minh $\triangle ABM = \triangle ACM$.
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 440 250" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="220,30 80,210 360,210" fill="rgba(37,99,235,0.05)" stroke="#2563eb" stroke-width="2"/>
-    <!-- Đường cao AM -->
-    <line x1="220" y1="30" x2="220" y2="210" stroke="#dc2626" stroke-width="2.5"/>
-    <path d="M 220,193 L 237,193 L 237,210" fill="none" stroke="#dc2626" stroke-width="2"/>
-    <circle cx="220" cy="30" r="4" fill="#1e293b"/><text x="215" y="18" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
-    <circle cx="80" cy="210" r="4" fill="#1e293b"/><text x="62" y="228" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
-    <circle cx="360" cy="210" r="4" fill="#1e293b"/><text x="368" y="228" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
-    <circle cx="220" cy="210" r="4" fill="#dc2626"/><text x="225" y="228" font-family="sans-serif" font-weight="bold" font-size="15" fill="#dc2626">M</text>
-    <!-- AB = AC (2 vạch) -->
-    <line x1="143" y1="112" x2="157" y2="122" stroke="#2563eb" stroke-width="2.5"/>
-    <line x1="147" y1="118" x2="161" y2="128" stroke="#2563eb" stroke-width="2.5"/>
-    <line x1="283" y1="112" x2="297" y2="122" stroke="#2563eb" stroke-width="2.5"/>
-    <line x1="287" y1="118" x2="301" y2="128" stroke="#2563eb" stroke-width="2.5"/>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 250" style="width: 100%; max-width: 440px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 5: minh họa tam giác vuông và các ký hiệu góc">
+  <polygon points="220,30 80,210 360,210" fill="rgba(37,99,235,0.05)" stroke="#2563eb" stroke-width="2" />
+  <line x1="220" y1="30" x2="220" y2="210" stroke="#dc2626" stroke-width="2.5" />
+  <path d="M 220,193 L 237,193 L 237,210" fill="none" stroke="#dc2626" stroke-width="2" data-angle-kind="right" data-angle-vertex="220,210" data-angle-rays="220,30 360,210" data-angle-size="17" />
+  <circle cx="220" cy="30" r="4" fill="#1e293b" />
+  <text x="215" y="18" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
+  <circle cx="80" cy="210" r="4" fill="#1e293b" />
+  <text x="62" y="228" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
+  <circle cx="360" cy="210" r="4" fill="#1e293b" />
+  <text x="368" y="228" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">C</text>
+  <circle cx="220" cy="210" r="4" fill="#dc2626" />
+  <text x="225" y="228" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#dc2626">M</text>
+  <line x1="157.367" y1="121.93" x2="146.316" y2="113.334" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="153.684" y1="126.666" x2="142.633" y2="118.07" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="293.684" y1="113.334" x2="282.633" y2="121.93" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="297.367" y1="118.07" x2="286.316" y2="126.666" stroke="#2563eb" stroke-width="2.5" />
+</svg>
   <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 5: Tam giác cân tại A với đường cao AM từ A xuống BC</em></p>
 </div>
 
@@ -373,25 +364,26 @@ Có một kết quả quan trọng:
 Cho góc nhọn $\widehat{xOy}$. Gọi $Oz$ là tia phân giác. Lấy điểm $M$ trên $Oz$. Kẻ $MA \perp Ox$ tại $A$, $MB \perp Oy$ tại $B$. Chứng minh $MA = MB$ và $OA = OB$.
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 460 280" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Tia Ox, Oy, Oz -->
-    <line x1="80" y1="230" x2="420" y2="230" stroke="#2563eb" stroke-width="2"/><text x="425" y="235" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2563eb">x</text>
-    <line x1="80" y1="230" x2="320" y2="50" stroke="#10b981" stroke-width="2"/><text x="326" y="48" font-family="sans-serif" font-weight="bold" font-size="14" fill="#10b981">y</text>
-    <line x1="80" y1="230" x2="370" y2="130" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/><text x="376" y="128" font-family="sans-serif" font-weight="bold" font-size="14" fill="#dc2626">z (phân giác)</text>
-    <!-- O -->
-    <circle cx="80" cy="230" r="4" fill="#1e293b"/><text x="60" y="248" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">O</text>
-    <!-- Điểm M trên Oz -->
-    <circle cx="270" cy="163" r="4.5" fill="#dc2626"/><text x="278" y="160" font-family="sans-serif" font-weight="bold" font-size="15" fill="#dc2626">M</text>
-    <!-- MA vuông góc Ox -->
-    <line x1="270" y1="163" x2="270" y2="230" stroke="#d97706" stroke-width="2.5"/>
-    <path d="M 270,215 L 255,215 L 255,230" fill="none" stroke="#d97706" stroke-width="2"/>
-    <circle cx="270" cy="230" r="3" fill="#d97706"/><text x="275" y="248" font-family="sans-serif" font-weight="bold" font-size="14" fill="#d97706">A</text>
-    <!-- MB vuông góc Oy -->
-    <line x1="270" y1="163" x2="208" y2="122" stroke="#8b5cf6" stroke-width="2.5"/>
-    <circle cx="208" cy="122" r="3" fill="#8b5cf6"/><text x="192" y="118" font-family="sans-serif" font-weight="bold" font-size="14" fill="#8b5cf6">B</text>
-    <!-- ký hiệu góc vuông -->
-    <rect x="206" y="119" width="9" height="9" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 280" style="width: 100%; max-width: 460px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 6: minh họa tam giác vuông và các ký hiệu góc">
+  <line x1="80" y1="230" x2="420" y2="230" stroke="#2563eb" stroke-width="2" />
+  <text x="425" y="235" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#2563eb">x</text>
+  <line x1="80" y1="230" x2="320" y2="50" stroke="#10b981" stroke-width="2" />
+  <text x="326" y="48" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#10b981">y</text>
+  <line x1="80" y1="230" x2="370" y2="133.333" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3" />
+  <text x="376" y="128" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#dc2626">z (phân giác)</text>
+  <circle cx="80" cy="230" r="4" fill="#1e293b" />
+  <text x="60" y="248" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">O</text>
+  <circle cx="270" cy="166.667" r="4.5" fill="#dc2626" />
+  <text x="280" y="162" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#dc2626">M</text>
+  <line x1="270" y1="166.667" x2="270" y2="230" stroke="#d97706" stroke-width="2.5" />
+  <path d="M 256,230 L 256,216 L 270,216" fill="none" stroke="#d97706" stroke-width="2" data-angle-kind="right" data-angle-vertex="270,230" data-angle-rays="80,230 270,166.667" data-angle-size="14" />
+  <circle cx="270" cy="230" r="3" fill="#d97706" />
+  <text x="275" y="248" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#d97706">A</text>
+  <line x1="270" y1="166.667" x2="232" y2="116" stroke="#8b5cf6" stroke-width="2.5" />
+  <circle cx="232" cy="116" r="3" fill="#8b5cf6" />
+  <text x="212" y="111" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#8b5cf6">B</text>
+  <path fill="none" stroke="#8b5cf6" stroke-width="2" d="M 222.4,123.2 L 229.6,132.8 L 239.2,125.6" data-angle-kind="right" data-angle-vertex="232,116" data-angle-rays="80,230 270,166.667" data-angle-size="12" />
+</svg>
   <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 6: Điểm M trên tia phân giác Oz — kẻ đường vuông góc đến hai cạnh Ox, Oy</em></p>
 </div>
 
@@ -439,28 +431,23 @@ Gọi $M$ là trung điểm $BC$. Chứng minh ba điểm $A, M, E$ thẳng hàn
 **Phân tích:** KHÔNG. Hai tam giác vuông có một góc nhọn bằng nhau chỉ khiến chúng **đồng dạng** (cùng hình dạng) — nhưng kích thước có thể hoàn toàn khác nhau!
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 560 200" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Tam giác nhỏ vuông (góc nhọn 30°) -->
-    <polygon points="60,180 60,100 180,180" fill="rgba(239,68,68,0.08)" stroke="#dc2626" stroke-width="2.5"/>
-    <path d="M 60,165 L 75,165 L 75,180" fill="none" stroke="#dc2626" stroke-width="2"/>
-    <text x="30" y="198" font-family="sans-serif" font-size="13" fill="#dc2626">Tam giác nhỏ</text>
-    <text x="30" y="215" font-family="sans-serif" font-size="13" fill="#dc2626">góc 30°</text>
-    <path d="M 60,122 A 22 22 0 0 1 80,128" fill="none" stroke="#d97706" stroke-width="2"/>
-    <text x="85" y="132" font-family="sans-serif" font-size="11" fill="#d97706">30°</text>
-
-    <!-- Tam giác to vuông (góc nhọn 30°) -->
-    <polygon points="300,180 300,30 560,180" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="2.5"/>
-    <path d="M 300,160 L 320,160 L 320,180" fill="none" stroke="#10b981" stroke-width="2"/>
-    <text x="305" y="198" font-family="sans-serif" font-size="13" fill="#10b981">Tam giác to</text>
-    <text x="305" y="215" font-family="sans-serif" font-size="13" fill="#10b981">góc 30°</text>
-    <path d="M 300,55 A 25 25 0 0 1 322,62" fill="none" stroke="#d97706" stroke-width="2"/>
-    <text x="330" y="66" font-family="sans-serif" font-size="11" fill="#d97706">30°</text>
-
-    <!-- Nhãn giải thích -->
-    <text x="230" y="100" font-family="sans-serif" font-size="22" fill="#64748b">≠</text>
-    <text x="205" y="130" font-family="sans-serif" font-size="12" fill="#64748b">Không</text>
-    <text x="205" y="145" font-family="sans-serif" font-size="12" fill="#64748b">bằng nhau!</text>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 240" style="width: 100%; max-width: 460px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 7: minh họa tam giác vuông và các ký hiệu góc">
+  <polygon points="60,180 60,100 106.188,180" fill="rgba(239,68,68,0.08)" stroke="#dc2626" stroke-width="2.5" />
+  <path d="M 60,165 L 75,165 L 75,180" fill="none" stroke="#dc2626" stroke-width="2" data-angle-kind="right" data-angle-vertex="60,180" data-angle-rays="60,100 106.188,180" data-angle-size="15" />
+  <text x="30" y="198" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="13" fill="#dc2626">Tam giác nhỏ</text>
+  <text x="30" y="215" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="13" fill="#dc2626">góc 30°</text>
+  <path d="M 60,122 A 22 22 0 0 0 71,119.053" fill="none" stroke="#d97706" stroke-width="2" data-angle-kind="arc" data-angle-vertex="60,100" data-angle-rays="60,180 106.188,180" data-angle-size="22" />
+  <text x="85" y="132" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="11" fill="#d97706">30°</text>
+  <polygon points="300,180 300,30 386.603,180" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="2.5" />
+  <path d="M 300,160 L 320,160 L 320,180" fill="none" stroke="#10b981" stroke-width="2" data-angle-kind="right" data-angle-vertex="300,180" data-angle-rays="300,30 386.603,180" data-angle-size="20" />
+  <text x="305" y="198" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="13" fill="#10b981">Tam giác to</text>
+  <text x="305" y="215" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="13" fill="#10b981">góc 30°</text>
+  <path d="M 300,55 A 25 25 0 0 0 312.5,51.651" fill="none" stroke="#d97706" stroke-width="2" data-angle-kind="arc" data-angle-vertex="300,30" data-angle-rays="300,180 386.603,180" data-angle-size="25" />
+  <text x="330" y="66" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="11" fill="#d97706">30°</text>
+  <text x="230" y="100" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="22" fill="#64748b">≠</text>
+  <text x="205" y="130" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Không</text>
+  <text x="205" y="145" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">bằng nhau!</text>
+</svg>
   <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 7: Hai tam giác vuông cùng có góc nhọn 30° nhưng kích thước khác nhau — KHÔNG bằng nhau</em></p>
 </div>
 
@@ -478,32 +465,31 @@ a) Chứng minh $OE = OF$.
 b) Chứng minh $OI$ là tia phân giác của $\widehat{xOy}$.
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 460 290" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Tia Ox, Oy -->
-    <line x1="60" y1="250" x2="430" y2="250" stroke="#2563eb" stroke-width="2"/><text x="435" y="255" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2563eb">x</text>
-    <line x1="60" y1="250" x2="280" y2="40" stroke="#10b981" stroke-width="2"/><text x="286" y="38" font-family="sans-serif" font-weight="bold" font-size="14" fill="#10b981">y</text>
-    <!-- O -->
-    <circle cx="60" cy="250" r="4" fill="#1e293b"/><text x="40" y="268" font-family="sans-serif" font-weight="bold" font-size="15" fill="#1e293b">O</text>
-    <!-- A trên Ox, B trên Oy, OA = OB -->
-    <circle cx="260" cy="250" r="4" fill="#2563eb"/><text x="258" y="268" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2563eb">A</text>
-    <circle cx="175" cy="107" r="4" fill="#10b981"/><text x="158" y="104" font-family="sans-serif" font-weight="bold" font-size="14" fill="#10b981">B</text>
-    <!-- AE vuông góc Oy -->
-    <line x1="260" y1="250" x2="200" y2="148" stroke="#d97706" stroke-width="2.5"/>
-    <circle cx="200" cy="148" r="3" fill="#d97706"/><text x="205" y="145" font-family="sans-serif" font-weight="bold" font-size="13" fill="#d97706">E</text>
-    <!-- BF vuông góc Ox -->
-    <line x1="175" y1="107" x2="175" y2="250" stroke="#dc2626" stroke-width="2.5"/>
-    <circle cx="175" cy="250" r="3" fill="#dc2626"/><text x="165" y="268" font-family="sans-serif" font-weight="bold" font-size="13" fill="#dc2626">F</text>
-    <!-- Giao điểm I -->
-    <circle cx="207" cy="204" r="4.5" fill="#8b5cf6"/><text x="215" y="200" font-family="sans-serif" font-weight="bold" font-size="14" fill="#8b5cf6">I</text>
-    <!-- Ký hiệu vuông góc -->
-    <path d="M 200,162 L 187,162 L 187,148" fill="none" stroke="#d97706" stroke-width="1.5"/>
-    <path d="M 175,237 L 189,237 L 189,250" fill="none" stroke="#dc2626" stroke-width="1.5"/>
-    <!-- OA = OB (1 vạch mỗi cái) -->
-    <line x1="157" y1="245" x2="163" y2="255" stroke="#1e293b" stroke-width="2"/>
-    <line x1="113" y1="178" x2="120" y2="170" stroke="#1e293b" stroke-width="2"/>
-    <!-- Đường OI (phân giác) -->
-    <line x1="60" y1="250" x2="260" y2="140" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="5 3"/>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 290" style="width: 100%; max-width: 460px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 8: minh họa tam giác vuông và các ký hiệu góc">
+  <line x1="60" y1="250" x2="430" y2="250" stroke="#2563eb" stroke-width="2" />
+  <text x="435" y="255" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#2563eb">x</text>
+  <line x1="60" y1="250" x2="280" y2="40" stroke="#10b981" stroke-width="2" />
+  <text x="286" y="38" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#10b981">y</text>
+  <circle cx="60" cy="250" r="4" fill="#1e293b" />
+  <text x="40" y="268" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">O</text>
+  <circle cx="260" cy="250" r="4" fill="#2563eb" />
+  <text x="258" y="268" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#2563eb">A</text>
+  <circle cx="204.671" cy="111.905" r="4" fill="#10b981" />
+  <text x="184.671" y="106.905" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#10b981">B</text>
+  <line x1="260" y1="250" x2="164.649" y2="150.108" stroke="#d97706" stroke-width="2.5" />
+  <circle cx="164.649" cy="150.108" r="3" fill="#d97706" />
+  <text x="140.649" y="146.108" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="13" fill="#d97706">E</text>
+  <line x1="204.671" y1="111.905" x2="204.671" y2="250" stroke="#dc2626" stroke-width="2.5" />
+  <circle cx="204.671" cy="250" r="3" fill="#dc2626" />
+  <text x="199.671" y="270" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="13" fill="#dc2626">F</text>
+  <circle cx="204.671" cy="192.036" r="4.5" fill="#8b5cf6" />
+  <text x="214.671" y="187.036" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="14" fill="#8b5cf6">I</text>
+  <path d="M 155.968,158.394 L 164.254,167.074 L 172.934,158.788" fill="none" stroke="#d97706" stroke-width="1.5" data-angle-kind="right" data-angle-vertex="164.649,150.108" data-angle-rays="60,250 260,250" data-angle-size="12" />
+  <path d="M 190.671,250 L 190.671,236 L 204.671,236" fill="none" stroke="#dc2626" stroke-width="1.5" data-angle-kind="right" data-angle-vertex="204.671,250" data-angle-rays="60,250 204.671,111.905" data-angle-size="14" />
+  <line x1="132.336" y1="244" x2="132.336" y2="256" stroke="#1e293b" stroke-width="2" />
+  <line x1="108.181" y1="195.714" x2="116.467" y2="204.394" stroke="#1e293b" stroke-width="2" />
+  <line x1="60" y1="250" x2="300" y2="153.842" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="5 3" />
+</svg>
   <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 8: Bài toán phân giác — giao điểm I của AE và BF nằm trên tia phân giác OI</em></p>
 </div>
 
@@ -548,53 +534,45 @@ Suy ra $MA = MB$ (hai cạnh huyền tương ứng bằng nhau).
 
 ---
 
-### Chuyên đề 4: Phương pháp đo bóng của Aristarchus — Ứng dụng thực tế của ch–gn
+### Chuyên đề 4: Đo chiều cao bằng bóng nắng — Liên hệ tam giác vuông đồng dạng
 
 Để xác định chiều cao của một cột đèn cao áp mà không cần leo lên đo trực tiếp, người ta dùng phương pháp bóng nắng: đo chiều dài bóng của cột và đặt thêm một cây thước ngay bên cạnh, rồi đo chiều dài bóng của cây thước.
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 560 260" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
-    <!-- Mặt đất -->
-    <line x1="40" y1="220" x2="520" y2="220" stroke="#92400e" stroke-width="3"/>
-    <!-- Cột đèn cao áp 1 (lớn) -->
-    <line x1="100" y1="220" x2="100" y2="50" stroke="#1e293b" stroke-width="6"/>
-    <circle cx="100" cy="45" r="8" fill="#fbbf24"/>
-    <path d="M 100,220 L 100,205 L 115,205" fill="none" stroke="#1e293b" stroke-width="2"/>
-    <text x="38" y="215" font-family="sans-serif" font-size="12" fill="#1e293b">A (đáy)</text>
-    <text x="35" y="45" font-family="sans-serif" font-size="12" fill="#1e293b">B (đỉnh)</text>
-    <!-- Bóng cột đèn -->
-    <line x1="100" y1="220" x2="320" y2="220" stroke="#64748b" stroke-width="4"/>
-    <text x="195" y="215" font-family="sans-serif" font-size="12" fill="#64748b">Bóng C</text>
-    <!-- Tia sáng -->
-    <line x1="100" y1="50" x2="320" y2="220" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <!-- Góc nghiêng ánh sáng -->
-    <path d="M 300,220 A 18 18 0 0 0 315,207" fill="none" stroke="#dc2626" stroke-width="2"/>
-    <text x="322" y="210" font-family="sans-serif" font-size="11" fill="#dc2626">α</text>
-
-    <!-- Cây thước nhỏ -->
-    <line x1="400" y1="220" x2="400" y2="170" stroke="#2563eb" stroke-width="4"/>
-    <text x="405" y="195" font-family="sans-serif" font-size="11" fill="#2563eb">D (thước)</text>
-    <!-- Bóng thước -->
-    <line x1="400" y1="220" x2="460" y2="220" stroke="#64748b" stroke-width="4"/>
-    <text x="420" y="215" font-family="sans-serif" font-size="11" fill="#64748b">Bóng E</text>
-    <!-- Tia sáng thước -->
-    <line x1="400" y1="170" x2="460" y2="220" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4 3"/>
-    <!-- Góc nghiêng ánh sáng (cùng α) -->
-    <path d="M 445,220 A 14 14 0 0 0 456,210" fill="none" stroke="#dc2626" stroke-width="2"/>
-    <text x="462" y="210" font-family="sans-serif" font-size="11" fill="#dc2626">α</text>
-  </svg>
-  <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 9: Hai tam giác vuông ABC (cột đèn) và DAE (cây thước) có góc nhọn α bằng nhau — ứng dụng ch–gn và cgv–gn</em></p>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" style="width: 100%; max-width: 560px; height: auto;" class="lesson-diagram" role="img" aria-label="Hình 9: minh họa tam giác vuông và các ký hiệu góc">
+  <line x1="40" y1="220" x2="520" y2="220" stroke="#92400e" stroke-width="3" />
+  <line x1="100" y1="220" x2="100" y2="55" stroke="#1e293b" stroke-width="6" />
+  <circle cx="100" cy="55" r="8" fill="#fbbf24" />
+  <path d="M 100,205 L 115,205 L 115,220" fill="none" stroke="#1e293b" stroke-width="2" data-angle-kind="right" data-angle-vertex="100,220" data-angle-rays="100,55 320,220" data-angle-size="15" />
+  <text x="38" y="215" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#1e293b">A (đáy)</text>
+  <text x="35" y="45" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#1e293b">B (đỉnh)</text>
+  <line x1="100" y1="220" x2="320" y2="220" stroke="#64748b" stroke-width="4" />
+  <text x="195" y="215" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="12" fill="#64748b">Bóng C</text>
+  <line x1="100" y1="55" x2="320" y2="220" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4 3" />
+  <path d="M 302,220 A 18 18 0 0 1 305.6,209.2" fill="none" stroke="#dc2626" stroke-width="2" data-angle-kind="arc" data-angle-vertex="320,220" data-angle-rays="100,220 100,55" data-angle-size="18" />
+  <text x="322" y="210" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="11" fill="#dc2626">α</text>
+  <line x1="400" y1="220" x2="400" y2="175" stroke="#2563eb" stroke-width="4" />
+  <text x="378" y="239" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="11" fill="#2563eb">D (đáy)</text>
+  <line x1="400" y1="220" x2="460" y2="220" stroke="#64748b" stroke-width="4" />
+  <text x="416" y="239" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">Bóng F</text>
+  <line x1="400" y1="175" x2="460" y2="220" stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="4 3" />
+  <path d="M 446,220 A 14 14 0 0 1 448.8,211.6" fill="none" stroke="#dc2626" stroke-width="2" data-angle-kind="arc" data-angle-vertex="460,220" data-angle-rays="400,220 400,175" data-angle-size="14" />
+  <text x="462" y="210" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-size="11" fill="#dc2626">α</text>
+  <text x="406" y="173" font-size="12" fill="#087858" font-family="Source Sans Pro, Helvetica, Arial, sans-serif">E (thước)</text>
+  <path fill="none" stroke="#087858" stroke-width="2" d="M 400,210 L 410,210 L 410,220" data-angle-kind="right" data-angle-vertex="400,220" data-angle-rays="400,175 460,220" data-angle-size="10" />
+</svg>
+  <p style="font-size:0.9em; color:var(--text-secondary,#64748b); margin-top:8px;"><em>Hình 9: Hai tam giác vuông ABC (cột đèn) và DEF (cây thước) có góc nhọn α bằng nhau — hai tam giác đồng dạng, không phải hai tam giác bằng nhau</em></p>
 </div>
 
-**Bài toán:** Đặt cây thước thẳng đứng dài $DE = 1{,}5\text{ m}$ bên cạnh cột đèn cao áp $AB$. Bóng cây thước là $AE = 2\text{ m}$, bóng cột đèn là $BC = 16\text{ m}$. Tính chiều cao cột đèn $AB$.
+**Bài toán:** Đặt cây thước thẳng đứng dài $DE = 1{,}5\text{ m}$ bên cạnh cột đèn cao áp $AB$. Bóng cây thước là $DF = 2\text{ m}$, bóng cột đèn là $AC = 16\text{ m}$. Tính chiều cao cột đèn $AB$.
 
-**Lời giải (dùng tam giác vuông đồng dạng — hệ quả của ch–gn):**
+**Lời giải (dùng tam giác vuông đồng dạng; đây là phần mở rộng):**
 Do Mặt Trời ở rất xa, các tia sáng xem như song song, tạo với mặt đất **cùng một góc nghiêng $\alpha$**. Do đó:
 - $\triangle ABC$ (cột đèn) vuông tại $A$: $\widehat{BCA} = \alpha$.
-- $\triangle DEA$ (cây thước) vuông tại $D$: $\widehat{DAE} = \alpha$ (cùng góc).
+- $\triangle DEF$ (cây thước) vuông tại $D$: $\widehat{DFE} = \alpha$ (cùng góc).
 
-Hai tam giác vuông $\triangle ABC$ và $\triangle DEA$ có góc nhọn bằng nhau ($\alpha$) nên chúng **đồng dạng** (cùng tỉ lệ). Do đó:
-$$\frac{AB}{BC} = \frac{DE}{AE} \implies AB = BC \times \frac{DE}{AE} = 16 \times \frac{1{,}5}{2} = \mathbf{12}\text{ m}.$$
+Hai tam giác vuông $\triangle ABC$ và $\triangle DEF$ có góc nhọn bằng nhau ($\alpha$) nên chúng **đồng dạng** (cùng tỉ lệ). Do đó:
+$$\frac{AB}{AC} = \frac{DE}{DF} \implies AB = AC \times \frac{DE}{DF} = 16 \times \frac{1{,}5}{2} = \mathbf{12}\text{ m}.$$
 Cột đèn cao $12\text{ m}$.
 
 ---

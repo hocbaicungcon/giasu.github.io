@@ -20,3 +20,5 @@
 .glossary-dialog h2{font-size:20px}.glossary-dialog h3{font-size:22px}
 .glossary-dialog-heading button{border:0;min-width:32px;min-height:32px}
 .glossary-results button{border:0;border-bottom:1px solid #e5eaed;border-radius:0;padding:8px 4px}
+/* Render complete Vietnamese words as Unicode instead of split fallback glyphs. */
+.katex .math-vietnamese,.katex .text .latin_fallback{font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;font-size:1em;font-style:normal;font-weight:400;text-decoration:none;letter-spacing:normal}
