@@ -203,3 +203,6 @@ html[data-theme="dark"] body header .brand{color:#edf4e9}
 html[data-theme="dark"] body header .brand-name{color:#ff9a8d}
 html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle){background:#087858;color:#fff;border-color:#087858}
 html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{background:#0b916b;color:#fff;border-color:#0b916b}
+
+html[data-theme="dark"] body header .grading-link:hover,html[data-theme="dark"] body:has(.lesson-course) header .grading-link:hover{background:transparent;color:#ffe5b5;border:0;box-shadow:none}
+html[data-theme="dark"] body header .grading-link:hover .grading-label span{color:#ffe5b5}
