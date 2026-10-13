@@ -85,7 +85,7 @@ body .number-line-figure .axis-origin{color:#d94e48;fill:currentColor;stroke:cur
 @media(max-width:1000px){body main.lesson-course.article-wrap.wrap{margin-left:0}body .lesson-course .article-toc{display:none}}
 @media(max-width:950px){body header .nav,body:has(.lesson-course) header .nav{gap:10px}body header .grading-link,body:has(.lesson-course) header .grading-link{margin-left:0;padding-left:0}body header nav#site-menu{margin:0;background:#23332e;color:#fff}body header nav#site-menu :is(summary,.nav-pill,.display-controls button){color:#fff;background:transparent}body header .nav-submenu{background:#fffdfa}body header .nav-submenu a{color:#263531}}
 @media(max-width:620px){body header .nav,body:has(.lesson-course) header .nav{height:56px;min-height:56px;gap:8px}body header .brand,body:has(.lesson-course) header .brand{font-size:.875rem;gap:6px}body header .brand img,body:has(.lesson-course) header .brand img{width:30px;height:30px}body header .grading-label{font-size:.6875rem;line-height:1.15}body header .grading-link svg{width:14px;height:14px}body header .grading-link{gap:4px}body .home-learning{padding:20px 0;margin-bottom:24px}body .home-learning-heading{display:block;margin-bottom:12px}body .home-learning-heading h2{font-size:1.25rem}body .home-learning-heading p{margin-top:5px}body .home-learning :is(.grade-nav-strip,.subject-row){grid-template-columns:1fr;gap:6px;padding-block:8px}body .home-learning .subject-pick{font-size:.8125rem;gap:4px}body .home-learning .grade-nav-item{font-size:.875rem}body .lesson-exploration button{min-height:40px}}
-html[data-theme="dark"]{--paper:#202923;--card-bg:#202923;--ink:#edf4e9;--muted:#b3c3b4;--line:#435549;--button-secondary:#30463a;--button-secondary-hover:#3b5847;--button-secondary-ink:#d2e8d5}
+html[data-theme="dark"]{color-scheme:dark;--paper:#101713;--card-bg:#17211b;--ink:#edf4e9;--muted:#b3c3b4;--line:#304237;--button-secondary:#30463a;--button-secondary-hover:#3b5847;--button-secondary-ink:#d2e8d5}
 html[data-theme="dark"] body,html[data-theme="dark"] body main.lesson-course.article-wrap.wrap{background:var(--paper);color:#dce8dc}
 html[data-theme="dark"] body .lesson-course .prose :is(h1,h2,h3,h4){color:#edf4e9}
 
@@ -141,19 +141,19 @@ body .share-panel .share-actions :is(a,button):focus-visible{outline:2px solid #
  body.menu-open header nav#site-menu,html[data-theme="dark"] body.menu-open header nav#site-menu{background:#23332e;color:#f5f7f2;border:0;top:56px;left:0;right:0;max-height:calc(100dvh - 56px);padding:12px 16px;gap:4px}
  body.menu-open header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button),html[data-theme="dark"] body.menu-open header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button){color:#f5f7f2;-webkit-text-fill-color:currentColor;background:transparent;border:0}
  body.menu-open header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button):hover,body.menu-open header nav#site-menu .nav-exams[open]>summary{background:#345647;color:#ffe5b5}
- body.menu-open header nav#site-menu .nav-submenu,html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#fffdfa;color:#263531;border:0}
- body.menu-open header nav#site-menu .nav-submenu a,html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu a{color:#263531;-webkit-text-fill-color:currentColor}
- body.menu-open header nav#site-menu .nav-submenu a:hover{background:#d9edde;color:#104b3c}
+ body.menu-open header nav#site-menu .nav-submenu,html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#23332e;color:#e6f0e8;border:0}
+ body.menu-open header nav#site-menu .nav-submenu a,html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu a{color:#e6f0e8;-webkit-text-fill-color:currentColor}
+ body.menu-open header nav#site-menu .nav-submenu a:hover{background:transparent;color:#ffe5b5}
  body.menu-open header nav#site-menu .display-controls{margin-top:12px;padding:10px 0;border-top:1px solid #456253}
 }
 body header :is(.nav-exams>summary,.nav-pill,.display-controls button,.grading-link,.badge,.menu-toggle):hover{border-color:transparent;box-shadow:none}
-/* Header hover uses ink and an underline, without changing the surface. */
-body header :is(.nav-exams>summary,.nav-pill,.display-controls button):hover,body header .nav-exams[open]>summary{background:transparent;color:#ffe5b5;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;cursor:pointer}
+/* Header hover uses warm ink, without changing the surface. */
+body header :is(.nav-exams>summary,.nav-pill,.display-controls button):hover,body header .nav-exams[open]>summary{background:transparent;color:#ffe5b5;text-decoration:none;text-decoration-thickness:1px;text-underline-offset:4px;cursor:pointer}
 body header .grading-link:hover,body:has(.lesson-course) header .grading-link:hover{background:transparent;border:0;color:#ffe5b5}
-body header .grading-link:hover .grading-label span{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
-body header .nav-submenu a:hover,body header .nav-submenu a:focus-visible{background:#fffdfa;color:#087858;text-decoration:underline;text-underline-offset:3px}
-body.grading-page header a.badge:hover{background:#354c40;border-color:transparent;color:#ffe5b5;text-decoration:underline;text-underline-offset:3px}
-@media(max-width:950px){body.menu-open header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button):hover,body.menu-open header nav#site-menu .nav-exams[open]>summary{background:transparent;color:#ffe5b5;text-decoration:underline;text-underline-offset:4px}body.menu-open header nav#site-menu .nav-submenu a:hover{background:#fffdfa;color:#087858;text-decoration:underline}}
+body header .grading-link:hover .grading-label span{text-decoration:none;text-underline-offset:3px;text-decoration-thickness:1px}
+body header .nav-submenu a:hover,body header .nav-submenu a:focus-visible{background:#fffdfa;color:#087858;text-decoration:none;text-underline-offset:3px}
+body.grading-page header a.badge:hover{background:#354c40;border-color:transparent;color:#ffe5b5;text-decoration:none;text-underline-offset:3px}
+@media(max-width:950px){body.menu-open header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button):hover,body.menu-open header nav#site-menu .nav-exams[open]>summary{background:transparent;color:#ffe5b5;text-decoration:none;text-underline-offset:4px}body.menu-open header nav#site-menu .nav-submenu a:hover{background:transparent;color:#ffe5b5;text-decoration:none}}
 body .share-panel{width:52px;right:-2px;padding:6px}
 body .share-panel .share-actions{grid-template-columns:36px;gap:4px}
 body .share-panel .share-actions :is(a,button){width:36px;height:36px;min-height:36px;padding:7px}
@@ -161,3 +161,45 @@ body .share-panel .share-actions svg{width:21px;height:21px}
 body .share-panel .share-actions .share-zalo{padding:4px}
 body .share-panel .share-actions .share-zalo svg{width:27px;height:27px}
 body .share-panel:has(.share-copy-input){width:min(260px,calc(100vw - 48px))}
+
+/* One compact display menu on desktop; direct controls in the mobile menu. */
+body header .display-settings{position:relative}
+body header .display-toggle{display:flex;align-items:center;justify-content:center;width:34px;height:34px;padding:6px;background:transparent;color:#f3f6f2;border:0;box-shadow:none;cursor:pointer}
+body header .display-toggle:hover{background:transparent;color:#ffe5b5;border:0;box-shadow:none;text-decoration:none}
+@media(min-width:951px){
+ body header .display-settings .display-controls{display:none;position:absolute;right:0;top:calc(100% + 12px);padding:10px;gap:6px;background:#23332e;border:0;box-shadow:0 8px 24px #0003;white-space:nowrap;z-index:100}
+ body header .display-settings.is-open .display-controls{display:flex}
+}
+@media(max-width:950px){body header .display-toggle{display:none}body header .display-settings{width:100%}}
+html[data-theme="dark"] body header{background:#0c120f}
+html[data-theme="dark"] body.menu-open header nav#site-menu{background:#0c120f}
+html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#0c120f}
+html[data-theme="dark"] body :is(.card,.related-card,.home-learning,.subject-section,.lesson-practice,.exploration,.quiz,.article-toc,.toc-box){background:#17211b;color:#e5eee6;border-color:#304237}
+html[data-theme="dark"] body :is(input,textarea,select){background:#101713;color:#e5eee6;border-color:#405647}
+html[data-theme="dark"] body :is(.grade-nav-list a,.subject-picks a){background:#203329;color:#d8efdd;border-color:#304c3b}
+html[data-theme="dark"] body header .nav-submenu{background:#17251c;border-color:#304237}
+html[data-theme="dark"] body header .nav-submenu a{color:#e6f0e8}
+html[data-theme="dark"] body header .nav-submenu a:hover{background:transparent;color:#ffe5b5;text-decoration:none}
+html[data-theme="dark"] body:has(.lesson-course) header,html[data-theme="dark"] body.grading-page header,html[data-theme="dark"] body.menu-open:has(.lesson-course) header{background:#0c120f}
+html[data-theme="dark"] body .hero.wrap{background:linear-gradient(120deg,#17231a,#1d2518 55%,#261c19)}
+html[data-theme="dark"] body .hero .mascot{background:#37271f}
+html[data-theme="dark"] body .float-note{background:#302a18;color:#ffe0a6}
+html[data-theme="dark"] body .home-learning :is(.grade-nav-list a,.subject-pick){background:#203329;color:#d8efdd;border-color:#304c3b}
+html[data-theme="dark"] body .home-learning :is(.grade-nav-list a,.subject-pick):hover{background:#2c4936;color:#ffe5b5}
+html[data-theme="dark"] body :is(.quiz-option,.lesson-practice-card,.exploration-stage,.glossary-popup){background:#17251c;color:#e5eee6;border-color:#304237}
+html[data-theme="dark"] body .lesson-course .article-toc{background:#101c15;color:#e5eee6}
+
+html[data-theme="dark"] body .hero h1{color:#edf4e9}
+html[data-theme="dark"] body .hero p{color:#b3c3b4}
+html[data-theme="dark"] body .hero h1 :is(span,.hero-accent){color:#ff9580}
+html[data-theme="dark"] body.menu-open header{background:#0c120f;color:#edf4e9}
+html[data-theme="dark"] body header nav#site-menu .nav-submenu{background:#17251c;color:#e6f0e8}
+@media(max-width:950px){
+ body.menu-open header nav#site-menu .nav-submenu{background:#23332e;box-shadow:none}
+ html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#0c120f;box-shadow:none}
+}
+html[data-theme="dark"] body header .grading-link,html[data-theme="dark"] body:has(.lesson-course) header .grading-link{background:transparent;color:#edf4e9;border:0;box-shadow:none}
+html[data-theme="dark"] body header .brand{color:#edf4e9}
+html[data-theme="dark"] body header .brand-name{color:#ff9a8d}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle){background:#087858;color:#fff;border-color:#087858}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{background:#0b916b;color:#fff;border-color:#0b916b}

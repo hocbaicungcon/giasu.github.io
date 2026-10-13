@@ -11,6 +11,12 @@
  apply();
  document.addEventListener('DOMContentLoaded',()=>{
   panel=document.querySelector('.display-controls');if(!panel)return;update();
+  const settings=panel.closest('.display-settings'),toggle=settings?.querySelector('.display-toggle');
+  const close=()=>{settings?.classList.remove('is-open');toggle?.setAttribute('aria-expanded','false');};
+  toggle?.addEventListener('click',()=>{const open=settings.classList.toggle('is-open');toggle.setAttribute('aria-expanded',String(open));});
+  document.addEventListener('click',event=>{if(settings&&!settings.contains(event.target))close();});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&settings?.classList.contains('is-open')){close();toggle.focus();}});
+
   panel.addEventListener('click',event=>{const action=event.target.closest('[data-action]')?.dataset.action;if(!action)return;if(action==='less')prefs.size=Math.max(80,prefs.size-10);if(action==='more')prefs.size=Math.min(130,prefs.size+10);if(action==='font')prefs.font={sans:'cmu',cmu:'stix',stix:'sans'}[prefs.font];if(action==='theme')prefs.theme=root.dataset.theme==='dark'?'light':'dark';save();});
  });
 })();
