@@ -181,17 +181,17 @@ html[data-theme="dark"] body header .nav-submenu{background:#17251c;border-color
 html[data-theme="dark"] body header .nav-submenu a{color:#e6f0e8}
 html[data-theme="dark"] body header .nav-submenu a:hover{background:transparent;color:#ffe5b5;text-decoration:none}
 html[data-theme="dark"] body:has(.lesson-course) header,html[data-theme="dark"] body.grading-page header,html[data-theme="dark"] body.menu-open:has(.lesson-course) header{background:#0c120f}
-html[data-theme="dark"] body .hero.wrap{background:linear-gradient(120deg,#17231a,#1d2518 55%,#261c19)}
+html[data-theme="dark"] body .hero.wrap{background:linear-gradient(120deg,#142019,#19231a 55%,#251c19);color:#edf4e9}
 html[data-theme="dark"] body .hero .mascot{background:#37271f}
-html[data-theme="dark"] body .float-note{background:#302a18;color:#ffe0a6}
+html[data-theme="dark"] body .hero.wrap .float-note{background:#302a18;color:#ffe0a6}
 html[data-theme="dark"] body .home-learning :is(.grade-nav-list a,.subject-pick){background:#203329;color:#d8efdd;border-color:#304c3b}
 html[data-theme="dark"] body .home-learning :is(.grade-nav-list a,.subject-pick):hover{background:#2c4936;color:#ffe5b5}
 html[data-theme="dark"] body :is(.quiz-option,.lesson-practice-card,.exploration-stage,.glossary-popup){background:#17251c;color:#e5eee6;border-color:#304237}
 html[data-theme="dark"] body .lesson-course .article-toc{background:#101c15;color:#e5eee6}
 
 html[data-theme="dark"] body .hero h1{color:#edf4e9}
-html[data-theme="dark"] body .hero p{color:#b3c3b4}
-html[data-theme="dark"] body .hero h1 :is(span,.hero-accent){color:#ff9580}
+html[data-theme="dark"] body .hero.wrap p{color:#b3c3b4}
+html[data-theme="dark"] body .hero.wrap h1 :is(span,.hero-accent){color:#ff9580}
 html[data-theme="dark"] body.menu-open header{background:#0c120f;color:#edf4e9}
 html[data-theme="dark"] body header nav#site-menu .nav-submenu{background:#17251c;color:#e6f0e8}
 @media(max-width:950px){
@@ -206,3 +206,17 @@ html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{backgroun
 
 html[data-theme="dark"] body header .grading-link:hover,html[data-theme="dark"] body:has(.lesson-course) header .grading-link:hover{background:transparent;color:#ffe5b5;border:0;box-shadow:none}
 html[data-theme="dark"] body header .grading-link:hover .grading-label span{color:#ffe5b5}
+
+/* Home surfaces keep their contrast in dark mode, including nested icon tiles. */
+html[data-theme="dark"] body .home-learning .subject-section,
+html[data-theme="dark"] body .home-learning .subject-row,
+html[data-theme="dark"] body .home-learning .subject-picks{background:transparent;color:#dce8dc;border-color:#304237}
+html[data-theme="dark"] body .home-learning .subject-picks .subject-pick>span{background:transparent;color:#ff9a8d;border:0;box-shadow:none}
+html[data-theme="dark"] body .hero.wrap :is(.kicker,.hero-note){color:#c3d3c7}
+html[data-theme="dark"] body .hero.wrap .float{background:#213328;color:#dce8dc;border-color:#405647;box-shadow:none}
+html[data-theme="dark"] body .hero.wrap .float-note{background:#302a18;color:#ffe0a6}
+html[data-theme="dark"] body .hero.wrap .float small{color:#b9cabb}
+html[data-theme="dark"] body .hero.wrap .orbit{border-color:#405647}
+html[data-theme="dark"] body .hero.wrap .hero-highlight svg{stroke:#ff9580}
+html[data-theme="dark"] body .hero.wrap .primary{background:#087858;color:#fff;border-color:#087858}
+html[data-theme="dark"] body .hero.wrap .primary:hover{background:#0b916b;color:#fff;border-color:#0b916b}
