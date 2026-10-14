@@ -58,4 +58,4 @@ Nêu rõ bài nào đã có tương tác, bài nào còn hình tĩnh, kiểm tra
 
 - Công thức đề thi và lời giải dùng cùng cỡ chữ với văn bản; dấu câu sau công thức được nối bằng word joiner để không đứng riêng dòng. Hình ảnh LaTeX đen/trắng ở theme tối dùng invert và screen; SVG dùng biến màu theme, vùng tô nhạt dùng diagram-wash.
 
-- Ô tìm đề: khi focus chỉ đổi viền ngoài sang màu theme; bỏ outline/box-shadow của input bên trong để không xuất hiện khung màu thứ hai.
+- Ô tìm đề và ô tìm bài học/chủ đề: khi focus chỉ đổi viền ngoài sang màu theme; bỏ outline/box-shadow của input bên trong để không xuất hiện khung màu thứ hai.

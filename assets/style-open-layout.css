@@ -122,3 +122,10 @@ html[data-theme="dark"] body .exam-catalog-search:focus-within{border-color:var(
 /* Focus belongs to the search container, never a second frame inside it. */
 body .exam-catalog-search input:is(:focus,:focus-visible){outline:none;box-shadow:none;background:transparent}
 body .exam-catalog-search:focus-within{outline:none;box-shadow:none;border-color:var(--teal)}
+/* Library and exam searches share one unobtrusive focus state. */
+body .search input:is(:focus,:focus-visible){outline:none;box-shadow:none;background:transparent}
+body .search:focus-within{outline:none;box-shadow:none;border-color:var(--teal)}
+html[data-theme="dark"] body .search{background:var(--dark-surface);border-color:var(--dark-line);color:var(--dark-ink)}
+html[data-theme="dark"] body .search input{background:transparent;color:var(--dark-ink)}
+html[data-theme="dark"] body .search input::placeholder{color:var(--muted);opacity:1}
+html[data-theme="dark"] body .search:focus-within{border-color:var(--teal)}
