@@ -803,6 +803,7 @@ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('./sw.js').then(async () => {
     await navigator.serviceWorker.ready;
     $('sessionStatus').dataset.offlineReady = 'true';
+    $('offlineBadge').hidden = false;
     $('offlineStatus').textContent = 'Sẵn sàng dùng khi mất mạng';
   }).catch(() => { $('offlineStatus').textContent = 'Chưa tải được bộ nhớ ngoại tuyến. Dữ liệu bài vẫn được lưu trên thiết bị.'; });
 }
