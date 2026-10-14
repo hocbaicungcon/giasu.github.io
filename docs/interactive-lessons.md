@@ -85,3 +85,11 @@ Tham khảo cách học qua dự đoán và thay đổi dữ liệu tại [Quadr
 `style-brand.css` định nghĩa sắc xanh lá, san hô và vàng cùng header, khu chọn lớp/môn chung. `style-typography.css` dùng một thang chữ theo rem để nút tăng/giảm cỡ chữ hoạt động nhất quán. Nhãn tiếng Việt trong công thức được giữ nguyên Unicode và dùng Source Sans Pro; phần hình học, dấu mũ và phân số vẫn dùng bộ đo chữ KaTeX. Nội dung MathML và nguồn TeX được giữ để hỗ trợ đọc và sao chép.
 
 Bộ đọc Markdown bảo vệ công thức có ký hiệu `<` trước khi xử lý chữ đậm. Quy tắc dọn dấu sao chỉ nhận khoảng trắng ngang, tránh xóa dấu đóng/mở chữ đậm giữa hai đoạn.
+
+### Sắp xếp sự kiện xác suất
+
+Các bài xác suất thực nghiệm có thêm danh sách sáu sự kiện để sắp xếp từ dễ xảy ra đến khó xảy ra, tham khảo nhịp trình bày của https://vi.mathigon.org/course/probability/introduction. Sự kiện dùng đồng xu/xúc xắc cân đối với xác suất chính xác (1, 5/6, 1/2, 1/6, 1/36, 0), tránh ví dụ đời sống thiếu giả thiết. Các icon là SVG nội bộ.
+
+Có thể kéo tay cầm bằng chuột/cảm ứng, bấm nút lên/xuống hoặc dùng phím mũi tên trên tay cầm. Danh sách có thông báo vị trí, nút kiểm tra/làm lại và lời giải sau khi đúng. Mô hình thứ tự được kiểm thử trong `scripts/explorations.test.mjs`; hành vi giao diện nằm ở `assets/probability-sort.js`.
+
+`style-dark.css` thống nhất bảng màu tối; `style-open-layout.css` mở rộng bố cục và giảm khung quanh các khối nội dung. Giữ nền phân biệt cho các phần có thao tác như lựa chọn quiz, ô nhập và hàng kéo thả.
