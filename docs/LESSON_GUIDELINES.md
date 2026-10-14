@@ -55,3 +55,5 @@ Nêu rõ bài nào đã có tương tác, bài nào còn hình tĩnh, kiểm tra
 
 - Thanh đồng hồ sticky đặt dưới `--site-header-height`, nền xanh lá đậm, chữ trắng, nút nộp vàng, chỉ bo hai góc dưới; kiểm tra sáng/tối và khi cuộn.
 - Phương án được render bằng Markdown inline để số có dấu chấm (ví dụ `24.`) không biến thành danh sách. Cùng cỡ chữ và công thức, cùng độ rộng/padding; cho phép phương án dài xuống dòng tự nhiên, không ép chiều cao làm mất nội dung.
+
+- Công thức đề thi và lời giải dùng cùng cỡ chữ với văn bản; dấu câu sau công thức được nối bằng word joiner để không đứng riêng dòng. Hình ảnh LaTeX đen/trắng ở theme tối dùng invert và screen; SVG dùng biến màu theme, vùng tô nhạt dùng diagram-wash.

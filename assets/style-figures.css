@@ -16,3 +16,5 @@ body .prose .geometry-kicker{color:var(--teal)}
 [data-geometry="right-triangles"] [data-drag]{touch-action:none}
 body .prose .geometry-lab input[type="range"]{accent-color:var(--teal)}
 body .prose .geometry-lab [data-leg-value]{color:var(--teal)}
+/* LaTeX images use black ink: invert on dark paper and screen out their white page. */
+html[data-theme="dark"] body :is(.prose,.exam-question,.exam-review,.lesson-solution,.quiz-explanation) img[src*="assets/latex/"]{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen;background:transparent!important}

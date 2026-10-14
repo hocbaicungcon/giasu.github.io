@@ -5,12 +5,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {renderExamCatalog} from './exam-catalog.mjs';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+// Join punctuation to the preceding inline formula without disabling formula wrapping.
+export function joinExamPunctuation(html){return html.replace(/<\/span>([.,;:!?])/g,'</span>&#8288;$1');}
 export function buildExams(imported,out,shell,markdown){
  const exams=imported.map(p=>p.exam).filter(e=>e.questions.length);
  fs.mkdirSync(path.join(out,'de-kiem-tra'),{recursive:true});
  for(const e of exams){
   const scoring=uses90MinuteScoring(e)?'90-minute-12-4-6-v1':'equal';
-  const rendered={...e,scoring,questions:e.questions.map(q=>({...q,question:markdown(q.question),options:q.options.map(o=>markdown(o,true)),solution:markdown(q.solution)}))};
+  const rendered={...e,scoring,questions:e.questions.map(q=>({...q,question:joinExamPunctuation(markdown(q.question)),options:q.options.map(o=>joinExamPunctuation(markdown(o,true))),solution:joinExamPunctuation(markdown(q.solution))}))};
   rendered.version=createHash('sha256').update(JSON.stringify(rendered)).digest('hex').slice(0,16);
   const selfReview=e.mode==='self-review';
   const mixed=e.questions.some(q=>q.kind==='proof')&&!selfReview;
