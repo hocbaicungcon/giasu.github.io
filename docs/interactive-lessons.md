@@ -19,13 +19,13 @@ SVG tĩnh được giữ thành một khối HTML trước khi dựng Markdown, 
 ## Bộ thuật ngữ
 
 - `assets/data/math-glossary.json`: 518 mục lấy từ sheet **Tổng hợp tất cả** trong `assets/danh_sach_thuat_ngu_toan.xlsx`; 134 mục có định nghĩa nguồn; 384 mục thiếu được bổ sung ở tệp riêng. Giữ ID theo STT, tên nguồn và trang tra cứu.
-- `assets/data/math-glossary-supplement.json`: giải nghĩa bổ sung của dự án, có nguồn riêng; hiện có 96 khái niệm bổ sung, chủ yếu cho tiểu học và THCS. Không sửa dữ liệu nguồn để điền định nghĩa tự biên soạn.
+- `assets/data/math-glossary-supplement.json`: giải nghĩa bổ sung của dự án, có nguồn riêng; hiện có 98 khái niệm bổ sung, chủ yếu cho tiểu học và THCS. Không sửa dữ liệu nguồn để điền định nghĩa tự biên soạn.
 - `assets/data/math-glossary-definitions.json`: 384 giải nghĩa tự biên soạn gắn với ID nguồn, không thay đổi Excel. Mỗi mục giữ riêng nguồn của định nghĩa và tài liệu/trang tra cứu.
 - `scripts/import-glossary.py`: đọc Excel bằng openpyxl và cập nhật JSON nguồn. Chạy sau khi thay Excel; commit JSON cùng thay đổi nguồn. Build thông thường không cần Python/openpyxl.
 - `scripts/glossary.mjs`: tạo dữ liệu dùng trên website, biến thể `lí/lý`, `toạ/tọa`, công thức KaTeX và kiểm tra ID.
 - `assets/glossary.js`: tự nhận diện trong bài Toán, ưu tiên cụm dài, ranh giới từ Unicode, tối đa hai lần đánh dấu mỗi thuật ngữ, gạch chân mảnh và ngắt dòng như văn bản thường. Không đánh dấu công thức, SVG, tiêu đề, liên kết, mã nguồn hay câu hỏi tương tác. Dùng `data-no-glossary` trên vùng cần loại trừ.
 
-Học sinh bấm từ gạch chân để xem định nghĩa hoặc mở **Tra cứu thuật ngữ Toán**, tìm có/không dấu và lọc mục xuất hiện trong bài. Build kiểm tra tất cả 614 mục có giải nghĩa; giao diện vẫn có thông báo dự phòng nếu gặp dữ liệu thiếu. Dialog hỗ trợ bàn phím, Escape và trả focus về nút mở. Nội dung bài vẫn đọc được nếu JavaScript/dữ liệu không tải được.
+Học sinh bấm từ gạch chân để xem định nghĩa hoặc mở **Tra cứu thuật ngữ Toán**, tìm có/không dấu và lọc mục xuất hiện trong bài. Build kiểm tra tất cả 616 mục có giải nghĩa; giao diện vẫn có thông báo dự phòng nếu gặp dữ liệu thiếu. Dialog hỗ trợ bàn phím, Escape và trả focus về nút mở. Nội dung bài vẫn đọc được nếu JavaScript/dữ liệu không tải được.
 
 Thêm mục bổ sung bằng đối tượng có `id`, `term`, `definition`, `aliases` tùy chọn. Định nghĩa là văn bản thuần với công thức `$...$`; HTML được escape khi build.
 
@@ -93,3 +93,11 @@ Các bài xác suất thực nghiệm có thêm danh sách sáu sự kiện đ�
 Có thể kéo tay cầm bằng chuột/cảm ứng, bấm nút lên/xuống hoặc dùng phím mũi tên trên tay cầm. Danh sách có thông báo vị trí, nút kiểm tra/làm lại và lời giải sau khi đúng. Mô hình thứ tự được kiểm thử trong `scripts/explorations.test.mjs`; hành vi giao diện nằm ở `assets/probability-sort.js`.
 
 `style-dark.css` thống nhất bảng màu tối; `style-open-layout.css` mở rộng bố cục và giảm khung quanh các khối nội dung. Giữ nền phân biệt cho các phần có thao tác như lựa chọn quiz, ô nhập và hàng kéo thả.
+
+Bộ nhận diện `assets/glossary-matcher.js` ưu tiên cụm dài, nhận khoảng trắng linh hoạt và bỏ highlight các từ đơn dễ nhầm (điểm, đỉnh, cạnh, đoạn, khoảng, khuyên). “Khoảng cách” và “Mẫu số liệu” có giải nghĩa riêng; không gắn “số đối” vào “số đối tượng” hoặc “trọng tâm” vào “kiến thức trọng tâm”.
+
+### Thẻ giấy note trong bản đồ kiến thức
+
+`scripts/knowledge-notes.mjs` chuẩn hóa các khối `flowchart-container` có tiêu đề BẢN ĐỒ KIẾN THỨC hoặc SƠ ĐỒ KIẾN THỨC, giữ nguyên nội dung, công thức và ID tiêu đề. Các thẻ dùng lớp `knowledge-note`, góc gấp CSS và ghim SVG nội bộ `assets/note-pin.svg`. Lưới hai cột chuyển thành một cột trên di động; bảng màu tối có nền riêng. Các sơ đồ quy trình khác không bị đổi kiểu tự động.
+
+`scripts/lesson-figures.mjs` bỏ nền/viền của SVG minh họa và chuyển nét vẽ, nhãn sang biến màu theo theme. Giữ nguyên tọa độ, hình học và các thông số góc; loại trừ SVG trong KaTeX và icon giao diện. `style-figures.css` làm nền hình và vùng chứa trong suốt. Hình tương tác cũng dùng cùng bảng màu.

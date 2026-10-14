@@ -1,6 +1,6 @@
 /* credit: giasu.ai.vn */
 import {trianglePoints} from './geometry-math.js';
-const colors=['#bf645a','#438557','#c79536'];
+const colors=['var(--diagram-coral)','var(--diagram-ink)','var(--diagram-gold)'];
 const line=(p,q,color,dashed=false)=>`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="${color}" stroke-width="3" ${dashed?'stroke-dasharray="7 4"':''}/>`;
 const labels=(points,names)=>points.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="currentColor"/><text x="${p[0]}" y="${p[1]+(i===0?-15:24)}" text-anchor="middle">${names[i]}</text>`).join('');
 document.querySelectorAll('[data-geometry="triangle-sss"]').forEach(lab=>{
@@ -19,7 +19,7 @@ document.querySelectorAll('[data-geometry="triangle-sss"]').forEach(lab=>{
   const first=local.map(([x,y])=>[baseX+x,baseY+y]);
   const second=local.map(([x,y])=>[baseX+(mobile?0:340*(1-p))+x*Math.cos(theta)-y*Math.sin(theta),baseY+(mobile?240*(1-p):0)+x*Math.sin(theta)+y*Math.cos(theta)]);
   const triangle=(ps,dashed)=>{
-   let html=`<polygon points="${ps.map(p=>p.join(',')).join(' ')}" fill="${dashed?'#438557':'#bf645a'}" fill-opacity=".05"/>`;
+   let html=`<polygon points="${ps.map(p=>p.join(',')).join(' ')}" fill="${dashed?'var(--diagram-ink)':'var(--diagram-coral)'}" fill-opacity=".05"/>`;
    [[0,1],[1,2],[2,0]].forEach(([a,b],i)=>{
     html+=line(ps[a],ps[b],colors[i],dashed);
     const dx=ps[b][0]-ps[a][0],dy=ps[b][1]-ps[a][1],len=Math.hypot(dx,dy),ux=dx/len,uy=dy/len;

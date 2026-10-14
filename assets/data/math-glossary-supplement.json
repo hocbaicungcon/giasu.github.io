@@ -490,5 +490,15 @@
     "id": "bo-sung-96",
     "term": "Biến cố không thể",
     "definition": "Biến cố rỗng, không có kết quả thuận lợi và có xác suất bằng 0."
+  },
+  {
+    "id": "bo-sung-97",
+    "term": "Khoảng cách",
+    "definition": "Độ dài ngắn nhất giữa hai đối tượng hình học. Giữa hai điểm A và B, khoảng cách là độ dài đoạn thẳng AB; từ một điểm đến một đường thẳng, khoảng cách là độ dài đoạn vuông góc kẻ từ điểm đó đến đường thẳng. Khoảng cách luôn không âm."
+  },
+  {
+    "id": "bo-sung-98",
+    "term": "Mẫu số liệu",
+    "definition": "Tập hợp các giá trị thu được khi quan sát, đo đạc hoặc khảo sát một nhóm đối tượng. Mẫu số liệu giúp mô tả và tìm hiểu đặc điểm của nhóm được khảo sát; không phải mẫu số của một phân số."
   }
 ]

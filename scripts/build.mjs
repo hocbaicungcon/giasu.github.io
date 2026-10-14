@@ -1,3 +1,5 @@
+import {renderLessonFigures} from './lesson-figures.mjs';
+import {renderKnowledgeNotes} from './knowledge-notes.mjs';
 import {renderExploration,explorationKind} from './explorations.mjs';
 import {uiIcon,vectorizeInterface} from '../assets/ui-icons.js';
 import {lessonActivities,renderLessonPractice} from './lesson-activities.mjs';
@@ -389,7 +391,7 @@ export function build(){
   for(const p of posts){
    const related=getRelatedPosts(p,posts,4);
    const solvedHtml = withLessonSolutions(p.html,imported.find(item=>item.exam.slug===p.slug)?.exam);
-   const {html: processedHtml, headings} = processArticleHeadings(solvedHtml);
+   const {html: processedHtml, headings} = processArticleHeadings(renderLessonFigures(renderKnowledgeNotes(solvedHtml)));
    const isLesson=p.type==='Bài học';
    const cards=lessonActivities({...p,html:processedHtml});
    const practice=renderLessonPractice(p,cards);
