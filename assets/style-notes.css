@@ -1,0 +1,18 @@
+/* Knowledge maps as pinned notes, with a folded paper corner. */
+body .prose .flowchart-container.knowledge-notes{padding:12px 0;margin:28px 0;border:0;background:transparent;border-radius:0}
+body .prose .knowledge-notes>h3{text-align:left;color:var(--ink);margin:0 0 20px;line-height:1.4}
+body .prose .knowledge-note-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+body .prose .knowledge-note{--note-paper:#fff2b6;--note-fold:#e0c36e;position:relative;padding:42px 20px 22px;background:var(--note-paper);color:#3f3825;border:0;border-radius:0;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);min-width:0}
+body .prose .knowledge-note:nth-child(4n+2){--note-paper:#ffe0d7;--note-fold:#e6aa97}
+body .prose .knowledge-note:nth-child(4n+3){--note-paper:#dcefdc;--note-fold:#a7cda8}
+body .prose .knowledge-note:nth-child(4n){--note-paper:#ffedc0;--note-fold:#dfbe78}
+.knowledge-note::before{content:"";position:absolute;right:38px;top:7px;width:28px;height:28px;background:url("note-pin.svg") center/contain no-repeat;transform:rotate(-18deg);pointer-events:none}
+.knowledge-note::after{content:"";position:absolute;right:0;top:0;width:22px;height:22px;background:var(--note-fold);clip-path:polygon(0 0,0 100%,100% 100%);pointer-events:none}
+body .lesson-course .prose .knowledge-note :is(h4,p){color:inherit}
+body .prose .knowledge-note h4{font-weight:600;font-size:1.125rem;line-height:1.4;margin:0 0 10px}
+body .prose .knowledge-note p{font-size:1rem;line-height:1.6;margin:0}
+html[data-theme="dark"] body .prose .knowledge-note{--note-paper:#332d1b;--note-fold:#66552d;color:#f5edd5}
+html[data-theme="dark"] body .prose .knowledge-note:nth-child(4n+2){--note-paper:#36251f;--note-fold:#715044}
+html[data-theme="dark"] body .prose .knowledge-note:nth-child(4n+3){--note-paper:#203526;--note-fold:#48674d}
+html[data-theme="dark"] body .prose .knowledge-note:nth-child(4n){--note-paper:#342b1d;--note-fold:#70603b}
+@media(max-width:620px){body .prose .knowledge-note-grid{gap:14px;grid-template-columns:1fr}body .prose .knowledge-note{padding:38px 16px 18px}}

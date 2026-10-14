@@ -7,16 +7,10 @@
   const response=await fetch(new URL('data/math-glossary.json',script.src));
   if(!response.ok)throw Error('Không tải được thuật ngữ');
   const {terms}=await response.json(),byId=new Map(terms.map(t=>[t.id,t]));
-  const aliases=new Map();
-  for(const term of terms)for(const alias of term.aliases){
-   // Avoid highlighting ordinary uses such as 'đặc điểm' or examination scores.
-   if(['điểm','đỉnh','cạnh','đoạn'].includes(alias))continue;
-   if(!aliases.has(alias))aliases.set(alias,term.id);
-  }
+  const {createGlossaryMatcher,normalizeGlossaryText}=await import(new URL('glossary-matcher.js'+new URL(script.src).search,script.src));
+  const findMatches=createGlossaryMatcher(terms);
+  const normalize=normalizeGlossaryText;
   const escapeRegex=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-  const phrases=[...aliases.keys()].sort((a,b)=>b.length-a.length);
-  const pattern=new RegExp(`(?<![\\p{L}\\p{N}_])(?:${phrases.map(escapeRegex).join('|')})(?![\\p{L}\\p{N}_])`,'giu');
-  const normalize=s=>s.normalize('NFC').toLocaleLowerCase('vi').replace(/\s+/g,' ').trim();
   const searchKey=s=>normalize(s).normalize('NFD').replace(/\p{M}/gu,'').replace(/đ/g,'d');
   const seen=new Map(),present=new Set();
   for(const article of articles){
@@ -25,18 +19,17 @@
    }}),nodes=[];
    while(walker.nextNode())nodes.push(walker.currentNode);
    for(const node of nodes){
-    pattern.lastIndex=0;
-    const matches=[...node.data.matchAll(pattern)];if(!matches.length)continue;
+    const matches=findMatches(node.data);if(!matches.length)continue;
     const fragment=document.createDocumentFragment();let offset=0,changed=false;
     for(const match of matches){
-     const id=aliases.get(normalize(match[0]));if(!id)continue;
+     const id=match.id;if(!id)continue;
      present.add(id);
      if((seen.get(id)||0)>=2)continue;
      fragment.append(document.createTextNode(node.data.slice(offset,match.index)));
      const button=document.createElement('button');button.type='button';button.className='glossary-term';
-     button.dataset.term=id;button.textContent=match[0];button.setAttribute('aria-haspopup','dialog');
-     button.setAttribute('aria-label',`Tra cứu: ${match[0]}`);
-     fragment.append(button);offset=match.index+match[0].length;changed=true;seen.set(id,(seen.get(id)||0)+1);
+     button.dataset.term=id;button.textContent=match.text;button.setAttribute('aria-haspopup','dialog');
+     button.setAttribute('aria-label',`Tra cứu: ${match.text}`);
+     fragment.append(button);offset=match.index+match.text.length;changed=true;seen.set(id,(seen.get(id)||0)+1);
     }
     if(changed){fragment.append(document.createTextNode(node.data.slice(offset)));node.replaceWith(fragment);}
    }

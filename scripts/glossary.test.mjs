@@ -8,7 +8,7 @@ const definitions=JSON.parse(fs.readFileSync(new URL('../assets/data/math-glossa
 const extra=JSON.parse(fs.readFileSync(new URL('../assets/data/math-glossary-supplement.json',import.meta.url),'utf8'));
 test('all terms have definitions and retain separate editorial provenance',()=>{
  const terms=prepareGlossary(master,extra,definitions);
- assert.equal(master.terms.length,518);assert.equal(terms.length,614);
+ assert.equal(master.terms.length,518);assert.equal(terms.length,616);
  assert.equal(master.terms.filter(t=>t.definition).length,134);
  assert.equal(Object.keys(definitions).length,384);
  assert.ok(terms.every(t=>t.definition.trim()));
@@ -35,4 +35,21 @@ test('all definition and title formulas render without raw math delimiters',()=>
   assert.ok(!term.termHtml.includes('$'),term.id+' title');
   assert.doesNotMatch(term.html,/katex-error/);
  }
+});
+
+test('highlighting prefers complete phrases and avoids ordinary prose',async()=>{
+ const {createGlossaryMatcher}=await import('../assets/glossary-matcher.js');
+ const terms=prepareGlossary(master,extra,definitions),find=createGlossaryMatcher(terms);
+ const matches=find('Khoảng cách từ A đến đường thẳng d; có khoảng 20 số đối tượng.');
+ assert.ok(matches.some(m=>m.text==='Khoảng cách'&&m.id==='bo-sung-97'));assert.ok(!matches.some(m=>m.text.toLocaleLowerCase('vi')==='khoảng'||m.text==='số đối'));
+ assert.ok(find('Khoảng cách từ một điểm đến một đường thẳng')[0].id==='excel-225');
+ assert.ok(find('mẫu số liệu gồm 20 giá trị')[0].id==='bo-sung-98');
+ assert.ok(!find('kiến thức trọng tâm của bài học').some(m=>m.text==='trọng tâm'));
+ assert.ok(find('Trọng tâm của tam giác')[0].id==='bo-sung-68');
+ assert.ok(find('khoảng   cách giữa A và B')[0].id==='bo-sung-97');
+ assert.deepEqual(find('khoảng 20 cm và lời khuyên'),[]);
+ assert.ok(!find('khoảng cáchx').some(m=>m.id==='bo-sung-97'));
+ assert.ok(!find('Xác nhận hai tam giác đều vuông').some(m=>m.text==='tam giác đều'));
+ assert.ok(find('Một tam giác đều có ba cạnh bằng nhau').some(m=>m.text==='tam giác đều'));
+ assert.ok(find('số đối của −3').some(m=>m.id==='bo-sung-33'));
 });
