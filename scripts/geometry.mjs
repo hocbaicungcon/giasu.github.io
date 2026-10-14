@@ -1,8 +1,10 @@
+import {renderRightTriangles} from './right-triangles.mjs';
 /* credit: giasu.ai.vn */
 import YAML from 'yaml';
 export const lessonColors=['#bf645a','#438557','#c79536'];
 export function renderExtraGeometry(text){
  const data=YAML.parse(text);
+ if(data?.type==='right-triangles')return renderRightTriangles();
  if(data?.type==='triangle-sss')return `<section class="geometry-lab" data-geometry="triangle-sss" aria-label="Khám phá trường hợp cạnh cạnh cạnh"><div class="geometry-intro"><span class="geometry-kicker">KHÁM PHÁ · CẠNH — CẠNH — CẠNH</span><h3>Ba cạnh bằng nhau, hai hình có khớp nhau?</h3><p>Đổi độ dài các cạnh, xoay tam giác DEF, rồi kéo thanh chồng hình. Mỗi cặp cạnh tương ứng có cùng màu và số vạch.</p></div><svg class="geometry-canvas" viewBox="0 0 680 340" role="img" aria-label="Hai tam giác ABC và DEF có ba cặp cạnh tương ứng bằng nhau"></svg><div class="geometry-controls geometry-controls-three">${[['ab','AB = DE',6],['bc','BC = EF',7],['ca','CA = FD',5]].map(([key,label,value])=>`<label>${label}: <output data-length="${key}">${value}</output><input data-side="${key}" type="range" min="3" max="9" step="0.5" value="${value}"></label>`).join('')}</div><div class="geometry-controls"><label>Xoay tam giác DEF<input data-rotation type="range" min="-160" max="160" value="45"></label><label>Chồng hai tam giác<input data-overlay type="range" min="0" max="100" value="0"></label></div><div class="geometry-actions"><button type="button" data-match>Chồng khít hai hình</button><button type="button" data-reset>Đặt lại</button></div><p class="geometry-observation" role="status" aria-live="polite"></p><noscript>Ba cặp cạnh tương ứng bằng nhau thì hai tam giác bằng nhau. Bật JavaScript để đổi cạnh và chồng hình.</noscript></section>`;
  if(data?.type==='angle-pairs'){
   const parallel=data.mode==='parallel';

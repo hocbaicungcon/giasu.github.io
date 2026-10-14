@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 30: Làm tròn và ước lượng chữ số - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 30: Làm tròn và ước lượng chữ số - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 30 Làm tròn và ước lượng chữ số: quy tắc làm tròn số thập phân và số tự nhiên, bẫy làm tròn liên tiếp, làm tròn lên và xuống trong thực tế, 5 dạng bài trọng tâm và 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Tuy nhiên, làm tròn thế nào cho đúng quy tắc? Khi nào phải làm tr�
 
 ---
 
-## 0. Khởi động — Nhận biết thực tiễn (5–7 phút)
+## Khởi động — Nhận biết thực tiễn (5–7 phút)
 
 Hãy bắt đầu bằng 5 câu hỏi tình huống thực tế sau:
 

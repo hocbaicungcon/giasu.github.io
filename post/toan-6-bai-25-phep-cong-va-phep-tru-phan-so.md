@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 25: Phép cộng và phép trừ phân số - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 25: Phép cộng và phép trừ phân số - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 25 Phép cộng và phép trừ phân số: quy tắc cùng mẫu, khác mẫu, số đối, tính chất giao hoán kết hợp, kỹ thuật tính nhanh nhóm số hạng, 5 chuyên đề nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -25,7 +25,7 @@ Bài học hôm nay sẽ giúp các em làm chủ trọn vẹn phép cộng, ph�
 
 ---
 
-## 0. Khởi động — Ôn tập và Khám phá (5–7 phút)
+## Khởi động — Ôn tập và Khám phá (5–7 phút)
 
 Hãy cùng thử sức với 5 câu hỏi gợi mở sau:
 

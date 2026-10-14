@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 4: Phép cộng và phép trừ số tự nhiên - Lý thuyết, tính nhanh và bài tập chi tiết'
+title: 'Bài 4: Phép cộng và phép trừ số tự nhiên - Lý thuyết, tính nhanh và bài tập chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 4 Phép cộng và phép trừ số tự nhiên: tính chất giao hoán, kết hợp, các kỹ thuật tính nhanh, bài toán tìm x và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -18,7 +18,7 @@ Bài học **Bài 4: Phép cộng và phép trừ số tự nhiên** thuộc Ch�
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy cùng ôn lại kiến thức trước khi bắt đầu bài học mới:
 

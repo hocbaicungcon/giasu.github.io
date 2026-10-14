@@ -261,7 +261,7 @@ function processArticleHeadings(html) {
    usedSlugs.add(slug);
   }
   headings.push({ level, text: cleanText, id: slug });
-  return `<${tag}${newAttrs}>${content}</${tag}>`;
+  return `${/^Khởi động/i.test(cleanText)?`<span class="heading-alias" id="0-${slug}" aria-hidden="true"></span>`:''}<${tag}${newAttrs}>${content}</${tag}>`;
  });
  return { html: processedHtml, headings };
 }

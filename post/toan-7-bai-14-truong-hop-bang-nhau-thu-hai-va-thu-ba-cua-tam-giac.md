@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 14: Trường hợp bằng nhau thứ hai và thứ ba của tam giác: Cạnh - Góc - Cạnh (c.g.c) và Góc - Cạnh - Góc (g.c.g) - Lý thuyết, Dạng toán và 5 Chuyên đề Olympic'
+title: 'Bài 14: Trường hợp bằng nhau thứ hai và thứ ba của tam giác: Cạnh - Góc - Cạnh (c.g.c) và Góc - Cạnh - Góc (g.c.g) - Lý thuyết, Dạng toán và 5 Chuyên đề Olympic'
 description: 'Làm chủ trường hợp bằng nhau c.g.c và g.c.g của tam giác, hệ quả tam giác vuông, các bẫy thường gặp (c-c-g), 5 chuyên đề bồi dưỡng học sinh giỏi Olympic và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -53,7 +53,7 @@ Nếu như ở Bài 13, chúng ta đã biết rằng ba cạnh xác định duy 
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Trước khi khám phá hai trường hợp bằng nhau mới, các em hãy khởi động với $5$ câu hỏi nhanh để chuẩn bị phản xạ phân tích hình học:
 

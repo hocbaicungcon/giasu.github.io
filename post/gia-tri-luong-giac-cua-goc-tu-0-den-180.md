@@ -13,7 +13,7 @@ tags:
 grade: 10
 ---
 
-# Toán 10 – Giá trị lượng giác của góc từ 0 đến 180 độ
+# Giá trị lượng giác của góc từ 0 đến 180 độ
 
 ## 1. Giá trị lượng giác của một góc từ 0 đến 1800
 

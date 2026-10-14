@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 6: Luỹ thừa với số mũ tự nhiên - Lý thuyết, dạng toán và bài tập chi tiết'
+title: 'Bài 6: Luỹ thừa với số mũ tự nhiên - Lý thuyết, dạng toán và bài tập chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 6 Luỹ thừa với số mũ tự nhiên: định nghĩa, cơ số, số mũ, số chính phương, nhân chia cùng cơ số, kèm câu hỏi trắc nghiệm tương tác và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -20,7 +20,7 @@ grade: 6
 
 ---
 
-## 0. Khởi động — Ôn tập kiến thức cũ
+## Khởi động — Ôn tập kiến thức cũ
 
 Hãy thực hiện nhanh các câu hỏi khởi động sau để làm quen với phép nhân nhiều thừa số bằng nhau.
 

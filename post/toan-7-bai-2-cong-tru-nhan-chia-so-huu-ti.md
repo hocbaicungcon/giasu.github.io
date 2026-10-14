@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 2: Cộng, trừ, nhân, chia số hữu tỉ - Quy tắc, Tính chất và 5 Chuyên đề Nâng cao'
+title: 'Bài 2: Cộng, trừ, nhân, chia số hữu tỉ - Quy tắc, Tính chất và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 2 Cộng trừ nhân chia số hữu tỉ: quy tắc thực hiện phép tính, tính chất giao hoán, kết hợp, phân phối, quy tắc chuyển vế, 5 chuyên đề Olympic (Telescoping sum, lũy thừa, chặn bất đẳng thức) và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài học hôm nay sẽ trang bị cho các em hệ thống quy tắc hoàn ch�
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ bài toán nền tảng từ lớp 6 để tạo đà cho bài học mới:
 

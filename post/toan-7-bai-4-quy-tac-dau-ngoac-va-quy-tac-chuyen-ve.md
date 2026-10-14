@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 4: Thứ tự thực hiện các phép tính. Quy tắc chuyển vế - Lý thuyết, Phương pháp và 5 Chuyên đề Nâng cao'
+title: 'Bài 4: Thứ tự thực hiện các phép tính. Quy tắc chuyển vế - Lý thuyết, Phương pháp và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 4 Thứ tự thực hiện phép tính và Quy tắc chuyển vế: thứ tự ưu tiên, quy tắc phá ngoặc, đổi dấu khi chuyển vế, 5 chuyên đề Olympic (thu gọn nhiều tầng ngoặc, GTLN GTNN giá trị tuyệt đối, phương trình nghiệm nguyên) và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Bài học hôm nay sẽ giúp các em nắm vững quy luật, tránh xa các b
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ câu hỏi kiểm tra kỹ năng thứ tự phép tính và chuyển vế:
 

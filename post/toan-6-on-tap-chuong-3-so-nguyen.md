@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6: Ôn tập Chương 3 - Số nguyên (Lý thuyết toàn diện, chuyên đề nâng cao & 3 đề kiểm tra)'
+title: 'Ôn tập Chương 3 - Số nguyên (Lý thuyết toàn diện, chuyên đề nâng cao & 3 đề kiểm tra)'
 description: 'Tổng ôn toàn diện Toán 6 Chương 3 Số nguyên: sơ đồ mạch kiến thức 5 bài học, bảng tóm tắt quy tắc dấu, bài toán thực tế, 4 chuyên đề bồi dưỡng học sinh giỏi và 3 đề kiểm tra 45 phút chuẩn ma trận có trắc nghiệm tương tác kèm lời giải chi tiết.'
 category: Toán học
 type: Bài học

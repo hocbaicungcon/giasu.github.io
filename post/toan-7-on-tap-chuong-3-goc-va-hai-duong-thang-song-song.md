@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Ôn tập Chương 3: Góc và hai đường thẳng song song - Tổng hợp Lý thuyết, Phân dạng Bài tập, 5 Chuyên đề Nâng cao và 2 Đề Kiểm tra 45 Phút'
+title: 'Ôn tập Chương 3: Góc và hai đường thẳng song song - Tổng hợp Lý thuyết, Phân dạng Bài tập, 5 Chuyên đề Nâng cao và 2 Đề Kiểm tra 45 Phút'
 description: 'Tổng ôn tập toàn diện Chương 3 Toán 7 Góc và hai đường thẳng song song: góc kề bù, đối đỉnh, tia phân giác, so le trong, đồng vị, trong cùng phía bù nhau, Tiên đề Euclid, định lí và chứng minh, 5 chuyên đề Olympic và 2 đề kiểm tra 45 phút có đáp án chi tiết.'
 category: Toán học
 type: Bài học

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 1: Tập hợp - Lý thuyết và các dạng bài tập chi tiết'
+title: 'Bài 1: Tập hợp - Lý thuyết và các dạng bài tập chi tiết'
 description: Tài liệu bài giảng Toán 6 Bài 1 Tập hợp thuộc Chương 1 Tập hợp các số tự nhiên. Bao gồm lý thuyết trọng tâm, các dạng bài tập thường gặp kèm phương pháp giải, phiếu bài tập và bài kiểm tra có lời giải chi tiết.
 category: Toán học
 type: Bài học
@@ -17,7 +17,7 @@ Bài học **Bài 1: Tập hợp** thuộc Chương I: *Tập hợp các số t�
 
 ---
 
-## 0. Khởi động — Ôn tập kiến thức cũ
+## Khởi động — Ôn tập kiến thức cũ
 
 Trước khi bước vào bài học mới, hãy cùng thực hiện nhanh một số câu hỏi ôn tập:
 

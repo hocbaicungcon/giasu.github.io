@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 21: Hình có trục đối xứng - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 21: Hình có trục đối xứng - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 21 Hình có trục đối xứng: định nghĩa trục đối xứng, bảng số trục đối xứng của các hình quen thuộc, chữ cái in hoa, biển báo giao thông, bài toán vẽ hình đối xứng trên lưới ô vuông và nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -22,7 +22,7 @@ Bí mật tạo nên sự cân đối hoàn mỹ ấy chính là **Tính đối 
 
 ---
 
-## 0. Khởi động — Quan sát vẻ đẹp cân đối quanh ta (5–7 phút)
+## Khởi động — Quan sát vẻ đẹp cân đối quanh ta (5–7 phút)
 
 Hãy kiểm tra khả năng cảm nhận hình học của các em qua 3 câu hỏi trắc nghiệm tương tác sau:
 

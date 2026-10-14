@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Ôn tập Chương 6: Phân số - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Ôn tập Chương 6: Phân số - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ kiến thức trọng tâm Toán 6 Ôn tập Chương 6 Phân số: mở rộng khái niệm, so sánh và hỗn số, 4 phép tính cộng trừ nhân chia, hai bài toán phân số, 5 chuyên đề nâng cao HSG và 3 đề kiểm tra 45 phút chuẩn ma trận độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 33: Điểm nằm giữa hai điểm. Tia - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 33: Điểm nằm giữa hai điểm. Tia - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 33 Điểm nằm giữa hai điểm và Tia: khái niệm tia, hai tia đối nhau, hai tia trùng nhau, điều kiện tương đương điểm nằm giữa, công thức đếm 2n tia, 5 dạng bài trọng tâm và 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -50,7 +50,7 @@ Bài học này sẽ cung cấp hệ thống lý thuyết chuẩn mực, quy t�
 
 ---
 
-## 0. Khởi động — Kết nối tư duy (5–7 phút)
+## Khởi động — Kết nối tư duy (5–7 phút)
 
 Hãy bắt đầu bằng 5 câu hỏi tư duy trực quan sau:
 

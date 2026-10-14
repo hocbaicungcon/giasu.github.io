@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Ôn tập Chương 9: Dữ liệu và Xác suất thực nghiệm - Toàn bộ Lý thuyết & 5 Chuyên đề Nâng cao'
+title: 'Ôn tập Chương 9: Dữ liệu và Xác suất thực nghiệm - Toàn bộ Lý thuyết & 5 Chuyên đề Nâng cao'
 description: 'Tổng ôn toàn bộ kiến thức Toán 6 Chương 9 Dữ liệu và Xác suất thực nghiệm: thu thập phân loại dữ liệu, bảng thống kê, biểu đồ tranh, biểu đồ cột, biểu đồ cột kép, kết quả có thể, sự kiện, xác suất thực nghiệm, 5 chuyên đề nâng cao HSG và 10 quiz tương tác.'
 category: Toán học
 type: Bài học

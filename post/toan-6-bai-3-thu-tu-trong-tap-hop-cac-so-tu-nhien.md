@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 3: Thứ tự trong tập hợp các số tự nhiên - Lý thuyết, tia số và bài tập chi tiết'
+title: 'Bài 3: Thứ tự trong tập hợp các số tự nhiên - Lý thuyết, tia số và bài tập chi tiết'
 description: 'Toàn bộ kiến thức Toán 6 Bài 3 Thứ tự trong tập hợp các số tự nhiên: tia số, số liền trước, số liền sau, so sánh hai số tự nhiên, kèm bài tập tương tác và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -18,7 +18,7 @@ Bài học **Bài 3: Thứ tự trong tập hợp các số tự nhiên** thuộ
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy cùng kiểm tra lại các kiến thức đã học từ bài trước:
 

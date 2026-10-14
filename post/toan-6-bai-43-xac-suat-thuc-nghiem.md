@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 43: Xác suất thực nghiệm - Công thức, Ý nghĩa và 5 Chuyên đề Nâng cao'
+title: 'Bài 43: Xác suất thực nghiệm - Công thức, Ý nghĩa và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 43 Xác suất thực nghiệm: công thức tính, khả năng xảy ra từ 0 đến 1, ứng dụng ước lượng dự đoán, 5 chuyên đề nâng cao HSG (Monte Carlo, Capture-Recapture, Luật số lớn) và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -54,7 +54,7 @@ Bài học hôm nay sẽ giúp các em làm chủ công thức tính xác suất
 
 ---
 
-## 0. Khởi động — Kết nối kiến thức nền tảng (5–7 phút)
+## Khởi động — Kết nối kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức phân số, số thập phân và tư duy xác suất:
 

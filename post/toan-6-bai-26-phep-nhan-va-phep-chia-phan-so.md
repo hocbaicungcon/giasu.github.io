@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 26: Phép nhân và phép chia phân số - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 26: Phép nhân và phép chia phân số - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 26 Phép nhân và phép chia phân số: quy tắc nhân tử với tử mẫu với mẫu, số nghịch đảo, quy tắc chia là nhân nghịch đảo, tính chất phân phối, 5 chuyên đề nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -25,7 +25,7 @@ Bài học hôm nay sẽ giúp các em nắm vững kỹ thuật nhân, chia ph�
 
 ---
 
-## 0. Khởi động — Khám phá quy luật (5–7 phút)
+## Khởi động — Khám phá quy luật (5–7 phút)
 
 Hãy cùng khởi động bằng 5 câu hỏi tư duy sau:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 15: Quy tắc dấu ngoặc - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 15: Quy tắc dấu ngoặc - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Khám phá trọn vẹn lý thuyết Toán 6 Bài 15 Quy tắc dấu ngoặc: quy tắc bỏ ngoặc có dấu cộng, dấu trừ đằng trước, đặt dấu ngoặc, biến đổi tổng đại số, tính nhanh và rút gọn biểu thức độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -23,7 +23,7 @@ Chào các em học sinh! Trong các phép tính số học, **dấu ngoặc** $
 
 ---
 
-## 0. Khởi động — Thử thách phản xạ dấu (5–7 phút)
+## Khởi động — Thử thách phản xạ dấu (5–7 phút)
 
 Hãy kiểm tra trực giác của các em qua 3 câu hỏi trắc nghiệm khởi động nhanh sau:
 

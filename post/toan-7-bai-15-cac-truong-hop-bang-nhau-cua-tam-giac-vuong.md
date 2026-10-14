@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 15: Các trường hợp bằng nhau của tam giác vuông - Lý thuyết, Dạng toán và 5 Chuyên đề Olympic'
+title: 'Bài 15: Các trường hợp bằng nhau của tam giác vuông - Lý thuyết, Dạng toán và 5 Chuyên đề Olympic'
 description: 'Làm chủ 4 trường hợp bằng nhau của tam giác vuông: hai cạnh góc vuông, cạnh góc vuông-góc nhọn kề, cạnh huyền-góc nhọn, cạnh huyền-cạnh góc vuông. Bài giảng có hình SVG, 5 chuyên đề Olympic, 10 quiz tương tác và 2 đề kiểm tra.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Câu trả lời chính là chủ đề của bài học hôm nay: **4 trường
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 1. **Tổng góc tam giác vuông:** Phát biểu định lý tổng ba góc trong một tam giác. Trong một tam giác vuông, hai góc nhọn có quan hệ gì với nhau?
 2. **Tính góc nhọn còn lại:** Cho tam giác $ABC$ vuông tại $A$, biết $\widehat{B} = 35^\circ$. Tính số đo $\widehat{C}$.
@@ -106,6 +106,10 @@ Trước khi học 4 trường hợp bằng nhau, chúng ta thống nhất về 
 > - Trong $\triangle ABC$ vuông tại $A$: cạnh huyền $= BC$, hai cgv $= AB$ và $AC$.
 
 ---
+
+```geometry
+type: right-triangles
+```
 
 ### 1. Trường hợp thứ nhất: Hai cạnh góc vuông bằng nhau (cgv – cgv)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 12: Tổng các góc trong một tam giác - Lý thuyết, Dạng toán và 5 Chuyên đề Nâng cao'
+title: 'Bài 12: Tổng các góc trong một tam giác - Lý thuyết, Dạng toán và 5 Chuyên đề Nâng cao'
 description: 'Khám phá Định lý tổng ba góc trong tam giác Toán 7: hai góc nhọn tam giác vuông phụ nhau, tính chất góc ngoài, 5 chuyên đề Olympic góc phân giác và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -53,7 +53,7 @@ Không phải ngẫu nhiên mà định lý này được xem là viên gạch n
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ câu hỏi nhanh để kích hoạt tư duy góc và tam giác:
 

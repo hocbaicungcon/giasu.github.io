@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 1: Tập hợp các số hữu tỉ - Khái niệm, Trục số, So sánh và 5 Chuyên đề Nâng cao'
+title: 'Bài 1: Tập hợp các số hữu tỉ - Khái niệm, Trục số, So sánh và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 1 Tập hợp các số hữu tỉ: định nghĩa số hữu tỉ, kí hiệu tập hợp Q, biểu diễn trên trục số, số đối, quy tắc so sánh, 5 chuyên đề bồi dưỡng HSG và 10 câu hỏi tương tác kèm đề kiểm tra 15 phút.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Bài học mở đầu này sẽ giúp các em nắm vững bản chất của s
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Trước khi vào bài học mới, hãy cùng làm mới các kỹ năng phân số và số nguyên từ lớp 6:
 

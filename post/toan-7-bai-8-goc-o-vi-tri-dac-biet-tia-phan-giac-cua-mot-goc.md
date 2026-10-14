@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 8: Góc ở vị trí đặc biệt. Tia phân giác của một góc - Lý thuyết, Tính chất và 5 Chuyên đề Nâng cao'
+title: 'Bài 8: Góc ở vị trí đặc biệt. Tia phân giác của một góc - Lý thuyết, Tính chất và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 8 Góc ở vị trí đặc biệt và Tia phân giác: hai góc kề bù, hai góc đối đỉnh, tính chất tia phân giác, 5 chuyên đề Olympic (Dirichlet góc, phân giác đối đỉnh, đếm góc n đường thẳng) và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Bước sang **Chương III: Góc và hai đường thẳng song song**, chúng 
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ bài toán nền tảng về góc từ lớp 6:
 

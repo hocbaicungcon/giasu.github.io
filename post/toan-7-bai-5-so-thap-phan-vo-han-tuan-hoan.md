@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 5: Làm quen với số thập phân vô hạn tuần hoàn - Số thực, Chu kỳ và 5 Chuyên đề Nâng cao'
+title: 'Bài 5: Làm quen với số thập phân vô hạn tuần hoàn - Số thực, Chu kỳ và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 5 Số thập phân vô hạn tuần hoàn: số thập phân hữu hạn, chu kỳ, dấu hiệu nhận biết mẫu số, đổi sang phân số tối giản, 5 chuyên đề Olympic (chữ số thứ 100, số vô tỉ) và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Bài học mở đầu Chương II sẽ giúp các em giải mã bí ẩn về *
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ bài toán nền tảng trước khi bước vào thế giới số thập phân:
 

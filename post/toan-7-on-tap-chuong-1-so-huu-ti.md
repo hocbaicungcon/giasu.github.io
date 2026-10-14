@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Ôn tập Chương 1: Số hữu tỉ - Tổng hợp Kiến thức, Dạng bài và 2 Đề Kiểm tra 45 Phút'
+title: 'Ôn tập Chương 1: Số hữu tỉ - Tổng hợp Kiến thức, Dạng bài và 2 Đề Kiểm tra 45 Phút'
 description: 'Toàn bộ lý thuyết trọng tâm Ôn tập Chương 1 Toán 7 Số hữu tỉ: tập hợp Q, bốn phép tính, lũy thừa, thứ tự phép tính và chuyển vế, 5 chuyên đề Olympic nâng cao và 2 đề kiểm tra 45 phút có đáp án.'
 category: Toán học
 type: Bài học

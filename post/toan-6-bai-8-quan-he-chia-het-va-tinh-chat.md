@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 8: Quan hệ chia hết và tính chất - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 8: Quan hệ chia hết và tính chất - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 8 Quan hệ chia hết và tính chất: khái niệm ước và bội, tính chất chia hết của tổng, hiệu, tích, các bài toán thực tế và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -20,7 +20,7 @@ Chào mừng các em bước sang **Chương II: Tính chia hết trong tập h�
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy hoàn thành các câu hỏi khởi động sau để gợi nhớ lại bản chất của phép chia hết và phép chia có dư:
 

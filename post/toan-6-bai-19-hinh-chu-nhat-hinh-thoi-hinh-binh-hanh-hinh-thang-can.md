@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 19: Hình chữ nhật, Hình thoi, Hình bình hành, Hình thang cân - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 19: Hình chữ nhật, Hình thoi, Hình bình hành, Hình thang cân - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 19: đặc điểm cạnh, góc, đường chéo của hình chữ nhật, hình thoi, hình bình hành, hình thang cân; sơ đồ phả hệ tứ giác, phương pháp vẽ hình, bài toán đếm hình và nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -24,7 +24,7 @@ Tất cả các vật thể đó là hiện thân sinh động của bốn tứ 
 
 ---
 
-## 0. Khởi động — Nhận diện tứ giác quanh ta (5–7 phút)
+## Khởi động — Nhận diện tứ giác quanh ta (5–7 phút)
 
 Hãy kiểm tra trực giác hình học của các em qua 3 câu hỏi trắc nghiệm tương tác sau:
 

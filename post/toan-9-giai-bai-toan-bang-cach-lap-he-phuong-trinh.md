@@ -1,5 +1,5 @@
 ---
-title: Toán 9 – Giải bài toán bằng cách lập hệ phương trình
+title: Giải bài toán bằng cách lập hệ phương trình
 description: Giải bài toán bằng cách lập hệ phương trình lớp 9 là một trong những
   dạng toán trọng tâm, xuất hiện trong các đề thi vào 10, đề thi học kì...
 category: Toán học

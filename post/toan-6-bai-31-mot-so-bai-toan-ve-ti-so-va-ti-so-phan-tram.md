@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 31: Một số bài toán về tỉ số và tỉ số phần trăm - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 31: Một số bài toán về tỉ số và tỉ số phần trăm - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 31 Tỉ số và tỉ số phần trăm: quy tắc lập tỉ số cùng đơn vị, ba bài toán cơ bản về phần trăm, bẫy giảm giá hai lần liên tiếp, bài toán lãi suất ngân hàng, 5 dạng bài trọng tâm và 5 chuyên đề nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài học này sẽ giúp các em hệ thống hóa toàn bộ kiến thức v�
 
 ---
 
-## 0. Khởi động — Nhớ lại kiến thức (5–7 phút)
+## Khởi động — Nhớ lại kiến thức (5–7 phút)
 
 Hãy cùng kiểm tra nhanh những hiểu biết nền tảng trước khi bước vào bài học:
 

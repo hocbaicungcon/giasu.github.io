@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 41: Biểu đồ cột kép - Cấu trúc, cách đọc, cách vẽ và 5 Chuyên đề Nâng cao'
+title: 'Bài 41: Biểu đồ cột kép - Cấu trúc, cách đọc, cách vẽ và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 41 Biểu đồ cột kép: đặc điểm cặp cột sát nhau, bảng chú giải, 3 bước vẽ chuẩn xác, kỹ năng so sánh đối chiếu hai bộ dữ liệu song song, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -53,7 +53,7 @@ Bài học này sẽ trang bị cho các em kiến thức toàn diện về cấ
 
 ---
 
-## 0. Khởi động — Trực giác về việc so sánh song song (5–7 phút)
+## Khởi động — Trực giác về việc so sánh song song (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi tình huống thực tế:
 

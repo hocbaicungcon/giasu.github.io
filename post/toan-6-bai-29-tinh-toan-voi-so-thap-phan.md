@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 29: Tính toán với số thập phân - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 29: Tính toán với số thập phân - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 29 Tính toán với số thập phân: quy tắc cộng trừ nhân chia số thập phân âm và dương, mẹo nhân chia nhẩm 0,1; 0,01; tính nhanh hợp lý, 5 dạng bài trọng tâm và 5 chuyên đề nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài viết này sẽ hướng dẫn các em nắm vững từng quy tắc đặ
 
 ---
 
-## 0. Khởi động — Nhớ lại kiến thức (5–7 phút)
+## Khởi động — Nhớ lại kiến thức (5–7 phút)
 
 Hãy kiểm tra nhanh các phép toán cơ bản trước khi bước vào bài học:
 

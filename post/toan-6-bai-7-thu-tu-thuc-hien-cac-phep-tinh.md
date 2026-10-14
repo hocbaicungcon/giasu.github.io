@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 7: Thứ tự thực hiện các phép tính - Quy tắc, dạng bài và lời giải chi tiết'
+title: 'Bài 7: Thứ tự thực hiện các phép tính - Quy tắc, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 7 Thứ tự thực hiện các phép tính: biểu thức có/không có dấu ngoặc, biểu thức có chứa chữ, phương pháp tìm x và hệ thống bài tập trắc nghiệm, tự luận có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -20,7 +20,7 @@ Khi một biểu thức gồm nhiều phép tính (cộng, trừ, nhân, chia, n
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy kiểm tra lại các kĩ năng tính toán luỹ thừa đã học ở Bài 6 qua các câu hỏi sau:
 

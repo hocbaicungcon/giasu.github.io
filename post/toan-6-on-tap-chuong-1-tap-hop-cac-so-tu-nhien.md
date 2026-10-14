@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6: Ôn tập Chương 1 - Tập hợp các số tự nhiên (Đầy đủ lý thuyết, chuyên đề nâng cao & 3 đề thi)'
+title: 'Ôn tập Chương 1 - Tập hợp các số tự nhiên (Đầy đủ lý thuyết, chuyên đề nâng cao & 3 đề thi)'
 description: 'Tổng ôn toàn diện Toán 6 Chương 1 Tập hợp các số tự nhiên: tóm tắt 7 bài học, bài toán liên môn, 5 chuyên đề bồi dưỡng học sinh giỏi và 3 đề kiểm tra 45 phút chuẩn ma trận có lời giải chi tiết.'
 category: Toán học
 type: Bài học

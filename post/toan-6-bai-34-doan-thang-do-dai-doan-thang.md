@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 34: Đoạn thẳng. Độ dài đoạn thẳng - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 34: Đoạn thẳng. Độ dài đoạn thẳng - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 34 Đoạn thẳng và độ dài đoạn thẳng: khái niệm đoạn thẳng, hai đầu mút, hệ thức cộng đoạn thẳng AM + MB = AB, cách xác định điểm nằm giữa trên tia, công thức đếm n(n-1)/2 đoạn thẳng, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài học này sẽ giúp các em nắm vững khái niệm đoạn thẳng, kh
 
 ---
 
-## 0. Khởi động — Trực giác từ phép đo thực tế (5–7 phút)
+## Khởi động — Trực giác từ phép đo thực tế (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi tình huống thực tế sau:
 

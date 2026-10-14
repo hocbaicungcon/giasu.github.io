@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 18: Tam giác đều, Hình vuông, Lục giác đều - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 18: Tam giác đều, Hình vuông, Lục giác đều - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 18 Tam giác đều, Hình vuông, Lục giác đều: đặc điểm cạnh, góc, đường chéo, cách vẽ hình bằng thước và compa, toán ghép hình, đếm hình, bài tập thực tế và nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -23,7 +23,7 @@ Từ những viên gạch lát nền nhà hình vuông, biển báo giao thông 
 
 ---
 
-## 0. Khởi động — Nhận diện hình học trực quan (5–7 phút)
+## Khởi động — Nhận diện hình học trực quan (5–7 phút)
 
 Hãy thử tài quan sát và tư duy không gian qua 3 câu hỏi trắc nghiệm tương tác sau:
 
