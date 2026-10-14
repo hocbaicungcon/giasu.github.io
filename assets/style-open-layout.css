@@ -129,3 +129,5 @@ html[data-theme="dark"] body .search{background:var(--dark-surface);border-color
 html[data-theme="dark"] body .search input{background:transparent;color:var(--dark-ink)}
 html[data-theme="dark"] body .search input::placeholder{color:var(--muted);opacity:1}
 html[data-theme="dark"] body .search:focus-within{border-color:var(--teal)}
+/* Tags are text labels without surrounding frames in either theme. */
+body .tag,body .tag:is(:hover,:focus-visible,:active){border:0!important;box-shadow:none!important}
