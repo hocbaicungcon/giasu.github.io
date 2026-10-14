@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 12: Bội chung. Bội chung nhỏ nhất - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 12: Bội chung. Bội chung nhỏ nhất - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 12 Bội chung và BCNN: khái niệm, 3 bước tìm BCNN bằng phân tích thừa số nguyên tố, ứng dụng quy đồng mẫu số, toán thực tế và nâng cao có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -21,7 +21,7 @@ grade: 6
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy cùng hoàn thành các câu hỏi trắc nghiệm nhanh sau để sẵn sàng cho bài học mới:
 

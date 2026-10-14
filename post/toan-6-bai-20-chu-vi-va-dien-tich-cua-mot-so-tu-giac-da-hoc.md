@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 20: Chu vi và diện tích của một số tứ giác đã học - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 20: Chu vi và diện tích của một số tứ giác đã học - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 20: công thức chu vi và diện tích hình vuông, hình chữ nhật, hình thoi, hình bình hành, hình thang; bảng đổi đơn vị đo, bài toán lát gạch, rào vườn, bài toán ngược và nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -25,7 +25,7 @@ Làm thế nào để tính chính xác số mét lưới thép cần mua để 
 
 ---
 
-## 0. Khởi động — Thử tài công thức chu vi và diện tích (5–7 phút)
+## Khởi động — Thử tài công thức chu vi và diện tích (5–7 phút)
 
 Hãy kiểm tra trí nhớ và phản xạ công thức của các em qua 3 câu hỏi trắc nghiệm tương tác sau:
 

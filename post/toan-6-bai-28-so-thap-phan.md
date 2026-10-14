@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 28: Số thập phân - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 28: Số thập phân - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 28 Số thập phân: phân số thập phân, số thập phân âm và dương, số đối, biểu diễn trên trục số, so sánh số thập phân, 5 dạng bài trọng tâm và 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài học này sẽ cung cấp hệ thống lý thuyết chuẩn mực, quy t�
 
 ---
 
-## 0. Khởi động — Kết nối kiến thức (5–7 phút)
+## Khởi động — Kết nối kiến thức (5–7 phút)
 
 Hãy kiểm tra nhanh kiến thức nền tảng của em qua 5 câu hỏi tư duy sau:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 23: Mở rộng khái niệm phân số. Phân số bằng nhau - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 23: Mở rộng khái niệm phân số. Phân số bằng nhau - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 23 Mở rộng khái niệm phân số và phân số bằng nhau: định nghĩa với tử mẫu nguyên, quy tắc tích chéo, tính chất cơ bản, quy tắc đổi dấu mẫu dương, rút gọn phân số tối giản và 5 chuyên đề nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -25,7 +25,7 @@ Bài học hôm nay sẽ giúp các em mở rộng trọn vẹn khái niệm ph�
 
 ---
 
-## 0. Khởi động — Kết nối tri thức (5–7 phút)
+## Khởi động — Kết nối tri thức (5–7 phút)
 
 Hãy cùng suy ngẫm và trả lời nhanh 4 câu hỏi khởi động sau đây:
 

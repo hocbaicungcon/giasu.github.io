@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 16: Phép nhân số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 16: Phép nhân số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 16 Phép nhân số nguyên: nhân hai số nguyên khác dấu, cùng dấu, quy tắc dấu, tính chất phép nhân, lũy thừa số nguyên âm, bài toán tìm x và nâng cao độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -23,7 +23,7 @@ Chắc hẳn nhiều em từng nghe câu khẩu quyết nổi tiếng: *"Âm nh�
 
 ---
 
-## 0. Khởi động — Thử tài phản xạ dấu phép nhân (5–7 phút)
+## Khởi động — Thử tài phản xạ dấu phép nhân (5–7 phút)
 
 Hãy kiểm tra trực giác và kiến thức của các em qua 3 câu hỏi trắc nghiệm tương tác sau:
 

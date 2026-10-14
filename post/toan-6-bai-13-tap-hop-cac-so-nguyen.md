@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 13: Tập hợp các số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 13: Tập hợp các số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Khám phá toàn bộ lý thuyết Toán 6 Bài 13 Tập hợp các số nguyên: số nguyên âm, số nguyên dương, tập hợp Z, biểu diễn trên trục số, quy tắc so sánh số nguyên, bài tập thực tế và bài tập nâng cao độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -29,7 +29,7 @@ Thế nhưng, thế giới thực tế phong phú hơn thế rất nhiều:
 
 ---
 
-## 0. Khởi động — Thử thách tư duy thực tế (5–7 phút)
+## Khởi động — Thử thách tư duy thực tế (5–7 phút)
 
 Hãy kiểm tra trực giác và tư duy số học của các em qua 3 câu hỏi trắc nghiệm ngắn sau:
 

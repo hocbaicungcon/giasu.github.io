@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 5: Phép nhân và phép chia số tự nhiên - Lý thuyết, tính nhanh và bài tập chi tiết'
+title: 'Bài 5: Phép nhân và phép chia số tự nhiên - Lý thuyết, tính nhanh và bài tập chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 5 Phép nhân và phép chia số tự nhiên: tính chất giao hoán, kết hợp, phân phối, phép chia hết, phép chia có dư, kèm bài tập tương tác và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -18,7 +18,7 @@ Bài học **Bài 5: Phép nhân và phép chia số tự nhiên** thuộc Chư�
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy cùng hoàn thành nhanh 5 câu hỏi ôn tập sau:
 

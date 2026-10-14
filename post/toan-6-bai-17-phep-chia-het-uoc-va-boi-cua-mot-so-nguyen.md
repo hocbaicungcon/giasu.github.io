@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 17: Phép chia hết. Ước và bội của một số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 17: Phép chia hết. Ước và bội của một số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 17 Phép chia hết, ước và bội của một số nguyên: quy tắc dấu của thương, cách tìm tập hợp ước và bội, tính chất chia hết của tổng hiệu tích, dạng toán tìm x, bài toán thực tế và nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -23,7 +23,7 @@ Nếu như ở tập số tự nhiên $\mathbb{N}$, ước của một số ch�
 
 ---
 
-## 0. Khởi động — Thử tài phản xạ phép chia và ước số nguyên (5–7 phút)
+## Khởi động — Thử tài phản xạ phép chia và ước số nguyên (5–7 phút)
 
 Hãy khởi động tư duy cùng 3 câu hỏi trắc nghiệm tương tác dưới đây:
 

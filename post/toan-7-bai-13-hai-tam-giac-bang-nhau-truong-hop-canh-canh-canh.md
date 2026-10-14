@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 13: Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất: Cạnh - Cạnh - Cạnh (c.c.c) - Lý thuyết, Dạng toán và 5 Chuyên đề Olympic'
+title: 'Bài 13: Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất: Cạnh - Cạnh - Cạnh (c.c.c) - Lý thuyết, Dạng toán và 5 Chuyên đề Olympic'
 description: 'Làm chủ định nghĩa hai tam giác bằng nhau, quy tắc ghi đúng thứ tự đỉnh, trường hợp bằng nhau cạnh - cạnh - cạnh (c.c.c), 5 chuyên đề bồi dưỡng Olympic và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -53,7 +53,7 @@ Chân lý này dẫn ta đến một trong những công cụ mạnh mẽ nhất
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Trước khi bước vào bài học mới, hãy kiểm tra lại các kỹ năng quan sát và hình học nền tảng qua $5$ câu hỏi khởi động:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6: Ôn tập Chương 4 - Một số hình phẳng trong thực tiễn (Lý thuyết toàn diện, chuyên đề nâng cao & 3 đề kiểm tra)'
+title: 'Ôn tập Chương 4 - Một số hình phẳng trong thực tiễn (Lý thuyết toàn diện, chuyên đề nâng cao & 3 đề kiểm tra)'
 description: 'Tổng ôn toàn diện Toán 6 Chương 4 Một số hình phẳng trong thực tiễn: hệ thống kiến thức 3 bài học, bảng công thức chu vi và diện tích, 4 chuyên đề bồi dưỡng học sinh giỏi và 3 đề kiểm tra 45 phút chuẩn ma trận có trắc nghiệm tương tác kèm lời giải chi tiết.'
 category: Toán học
 type: Bài học

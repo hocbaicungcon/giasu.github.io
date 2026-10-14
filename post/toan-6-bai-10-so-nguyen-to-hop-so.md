@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 10: Số nguyên tố. Hợp số - Lý thuyết, cách nhận biết và bài tập chi tiết'
+title: 'Bài 10: Số nguyên tố. Hợp số - Lý thuyết, cách nhận biết và bài tập chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 10 Số nguyên tố và hợp số: bảng số nguyên tố, phân tích ra thừa số nguyên tố, công thức tìm số ước, các bài toán thực tế và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -21,7 +21,7 @@ Trong số học, các số nguyên tố được ví như "những viên gạch
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy hoàn thành các câu hỏi khởi động sau để nhận biết sự khác biệt thú vị về số lượng ước của các số tự nhiên:
 

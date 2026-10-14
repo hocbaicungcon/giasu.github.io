@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 2: Cách ghi số tự nhiên - Lý thuyết, bài tập và số La Mã chi tiết'
+title: 'Bài 2: Cách ghi số tự nhiên - Lý thuyết, bài tập và số La Mã chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 2 Cách ghi số tự nhiên: hệ thập phân, cấu tạo số, cách đọc viết số La Mã (1-30), kèm bài tập trắc nghiệm tương tác và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -18,7 +18,7 @@ Bài học **Bài 2: Cách ghi số tự nhiên** thuộc Chương I: *Tập h�
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Trước khi vào bài mới, các em hãy cùng hoàn thành 5 câu hỏi ôn tập sau:
 

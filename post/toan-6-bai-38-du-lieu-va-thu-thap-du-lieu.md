@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 38: Dữ liệu và thu thập dữ liệu - Khái niệm, phương pháp và 5 Chuyên đề Nâng cao'
+title: 'Bài 38: Dữ liệu và thu thập dữ liệu - Khái niệm, phương pháp và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 38 Dữ liệu và thu thập dữ liệu: phân biệt số liệu (định lượng) và dữ liệu không phải là số (định tính), 4 phương pháp thu thập, 3 tiêu chí kiểm tra tính hợp lí của dữ liệu, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài học mở đầu này sẽ giúp các em phân biệt rõ ràng giữa s�
 
 ---
 
-## 0. Khởi động — Trực giác từ những thông tin xung quanh (5–7 phút)
+## Khởi động — Trực giác từ những thông tin xung quanh (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi tình huống thực tế:
 

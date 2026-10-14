@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 14: Phép cộng và phép trừ số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 14: Phép cộng và phép trừ số nguyên - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Lý thuyết toàn diện Toán 6 Bài 14 Phép cộng và phép trừ số nguyên: số đối, quy tắc cộng cùng dấu, khác dấu, phép trừ hai số nguyên, tính chất phép cộng, bài tập thực tế và bài tập nâng cao độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -23,7 +23,7 @@ Tất cả những sự biến động đó đòi hỏi chúng ta phải biết 
 
 ---
 
-## 0. Khởi động — Ôn tập và kích hoạt tư duy (5–7 phút)
+## Khởi động — Ôn tập và kích hoạt tư duy (5–7 phút)
 
 Hãy thử sức với 3 câu hỏi trắc nghiệm tương tác để khởi động trước khi vào bài mới:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 11: Ước chung. Ước chung lớn nhất - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 11: Ước chung. Ước chung lớn nhất - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 11 Ước chung và ƯCLN: khái niệm, 3 bước tìm ƯCLN bằng phân tích thừa số nguyên tố, hai số nguyên tố cùng nhau, phân số tối giản, toán thực tế và nâng cao có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -21,7 +21,7 @@ grade: 6
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy hoàn thành các câu hỏi trắc nghiệm ngắn sau để gợi nhớ lại các khái niệm nền tảng:
 

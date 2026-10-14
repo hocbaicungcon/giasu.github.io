@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 10: Tiên đề Euclid. Tính chất của hai đường thẳng song song - Lý thuyết, Dạng toán và 5 Chuyên đề Nâng cao'
+title: 'Bài 10: Tiên đề Euclid. Tính chất của hai đường thẳng song song - Lý thuyết, Dạng toán và 5 Chuyên đề Nâng cao'
 description: 'Khám phá Tiên đề Euclid và tính chất hai đường thẳng song song: các cặp góc so le trong bằng nhau, đồng vị bằng nhau, trong cùng phía bù nhau; quan hệ vuông góc và song song; định lý răng cưa zic-zac và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -50,7 +50,7 @@ Bài học hôm nay sẽ giúp các em làm chủ **Tiên đề Euclid**, khai t
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy kiểm tra lại vốn kiến thức nền tảng của mình qua $5$ câu hỏi nhanh sau:
 

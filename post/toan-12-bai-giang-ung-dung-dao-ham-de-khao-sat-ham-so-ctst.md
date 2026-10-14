@@ -1,5 +1,5 @@
 ---
-title: 'Toán 12: Bài giảng ứng dụng đạo hàm để khảo sát hàm số CTST'
+title: 'Bài giảng ứng dụng đạo hàm để khảo sát hàm số CTST'
 description: Tài liệu gồm 776 trang, được biên soạn bởi thầy giáo Trần Đình Cư, bao
   gồm kiến thức cần nắm, giải bài tập sách giáo khoa, phương pháp giải các dạng toán
   và

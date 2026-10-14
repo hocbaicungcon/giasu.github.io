@@ -1,5 +1,5 @@
 ---
-title: 'Toán 12: Bài giảng ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số KNTT'
+title: 'Bài giảng ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số KNTT'
 description: Tài liệu gồm 775 trang, được biên soạn bởi thầy giáo Trần Đình Cư, bao
   gồm kiến thức cần nắm, giải bài tập sách giáo khoa, phương pháp giải các dạng toán
   và

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 22: Hình có tâm đối xứng - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 22: Hình có tâm đối xứng - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 22 Hình có tâm đối xứng: định nghĩa phép quay 180 độ, bảng đối chiếu hình có tâm đối xứng và trục đối xứng, chữ cái in hoa, kỹ thuật vẽ điểm đối xứng và 5 bài toán nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -22,7 +22,7 @@ grade: 6
 
 ---
 
-## 0. Khởi động — Trực giác về phép quay nửa vòng (5–7 phút)
+## Khởi động — Trực giác về phép quay nửa vòng (5–7 phút)
 
 Hãy kiểm tra trực giác hình học qua 3 câu hỏi trắc nghiệm tương tác sau:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6: Ôn tập Chương 2 - Tính chia hết trong tập hợp các số tự nhiên (Lý thuyết, chuyên đề nâng cao & 3 đề thi)'
+title: 'Ôn tập Chương 2 - Tính chia hết trong tập hợp các số tự nhiên (Lý thuyết, chuyên đề nâng cao & 3 đề thi)'
 description: 'Tổng ôn toàn diện Toán 6 Chương 2 Tính chia hết trong tập hợp các số tự nhiên: hệ thống 5 bài học, sơ đồ mạch kiến thức, 5 chuyên đề bồi dưỡng học sinh giỏi và 3 đề kiểm tra 45 phút chuẩn ma trận có lời giải chi tiết.'
 category: Toán học
 type: Bài học

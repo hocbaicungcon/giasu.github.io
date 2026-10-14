@@ -16,3 +16,22 @@ html[data-theme="dark"] body .prose .knowledge-note:nth-child(4n+2){--note-paper
 html[data-theme="dark"] body .prose .knowledge-note:nth-child(4n+3){--note-paper:#203526;--note-fold:#48674d}
 html[data-theme="dark"] body .prose .knowledge-note:nth-child(4n){--note-paper:#342b1d;--note-fold:#70603b}
 @media(max-width:620px){body .prose .knowledge-note-grid{gap:14px;grid-template-columns:1fr}body .prose .knowledge-note{padding:38px 16px 18px}}
+/* Callout colours encode their meaning consistently across all lessons. */
+body .prose blockquote.callout,body .lesson-course .prose blockquote.callout{--note-paper:#fff2b6;--note-fold:#e0c36e;position:relative;background:var(--note-paper)!important;color:var(--ink);border:0;border-radius:0;padding:24px 24px 20px!important;margin:24px 0;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%)}
+body .prose .callout-tip{--note-paper:#dcefdc!important;--note-fold:#a7cda8!important}
+body .prose .callout-important{--note-paper:#ffe0d7!important;--note-fold:#e6aa97!important}
+body .prose .callout-warning{--note-paper:#ffedc0!important;--note-fold:#dfbe78!important}
+body .prose .callout-caution{--note-paper:#f0dff0!important;--note-fold:#c9a4c9!important}
+body .prose .callout::before{content:"";position:absolute;right:35px;top:7px;width:26px;height:26px;background:url("note-pin.svg") center/contain no-repeat;pointer-events:none}
+body .prose .callout::after{content:"";position:absolute;right:0;top:0;width:22px;height:22px;background:var(--note-fold);clip-path:polygon(0 0,0 100%,100% 100%)}
+body .prose .callout :is(.callout-title,p,li){color:inherit}
+html[data-theme="dark"] body .prose blockquote.callout{--note-paper:#332d1b;--note-fold:#66552d}
+html[data-theme="dark"] body .prose .callout-tip{--note-paper:#203526!important;--note-fold:#48674d!important}
+html[data-theme="dark"] body .prose .callout-important{--note-paper:#36251f!important;--note-fold:#715044!important}
+html[data-theme="dark"] body .prose .callout-warning{--note-paper:#342b1d!important;--note-fold:#70603b!important}
+html[data-theme="dark"] body .prose .callout-caution{--note-paper:#302335!important;--note-fold:#63476a!important}
+html[data-theme="dark"] body .article-wrap .tag{background:transparent!important;border:0!important;box-shadow:none!important}
+.heading-alias{display:block;height:0;scroll-margin-top:80px}
+/* KaTeX sets font families per glyph, so bold must reach its inner spans. */
+.prose :is(strong,b) .katex .katex-html span{font-weight:700}
+.prose :is(strong,b) .katex .math-vietnamese{font-weight:700}

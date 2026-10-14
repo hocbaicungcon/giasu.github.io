@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 40: Biểu đồ cột - Khái niệm, cách đọc, cách vẽ và 5 Chuyên đề Nâng cao'
+title: 'Bài 40: Biểu đồ cột - Khái niệm, cách đọc, cách vẽ và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 40 Biểu đồ cột: cấu trúc biểu đồ, 3 bước vẽ chuẩn, kỹ năng đọc và phân tích số liệu, nhận diện bẫy bóp méo dữ liệu, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Bài học này sẽ giúp các em nắm vững cấu trúc của biểu đồ c
 
 ---
 
-## 0. Khởi động — Quan sát từ đời sống thực tế (5–7 phút)
+## Khởi động — Quan sát từ đời sống thực tế (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi tình huống:
 

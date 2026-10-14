@@ -1,5 +1,5 @@
 ---
-title: Toán 9 – Các dạng toán về căn bậc hai
+title: Các dạng toán về căn bậc hai
 description: 'Chuyên đề Toán 9 Tổng hợp các dạng toán về căn bậc hai: Khái niệm, phép
   tính về căn thức bậc hai, biến đổi và rút gọn biểu thức chứa căn, phương trình chứa
   căn'

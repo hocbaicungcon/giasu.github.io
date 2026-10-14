@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Ôn tập Chương 2: Số thực - Tổng hợp Lý thuyết, Phân dạng Bài tập, 5 Chuyên đề Nâng cao và 2 Đề Kiểm tra 45 Phút'
+title: 'Ôn tập Chương 2: Số thực - Tổng hợp Lý thuyết, Phân dạng Bài tập, 5 Chuyên đề Nâng cao và 2 Đề Kiểm tra 45 Phút'
 description: 'Toàn bộ lý thuyết trọng tâm Ôn tập Chương 2 Toán 7 Số thực: số thập phân hữu hạn và vô hạn tuần hoàn, số vô tỉ, căn bậc hai số học, tập hợp R, giá trị tuyệt đối, làm tròn theo độ chính xác d, 5 chuyên đề Olympic và 2 đề kiểm tra 45 phút có đáp án chi tiết.'
 category: Toán học
 type: Bài học

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 9: Dấu hiệu chia hết cho 2, cho 5, cho 3, cho 9 - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 9: Dấu hiệu chia hết cho 2, cho 5, cho 3, cho 9 - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 9 Dấu hiệu chia hết: nhận biết chia hết cho 2, 5, 3, 9, bản chất toán học, lập số, tìm chữ số chưa biết, bài toán thực tế và lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -20,7 +20,7 @@ grade: 6
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
+## Khởi động — Kiểm tra kiến thức cũ (5–7 phút)
 
 Hãy hoàn thành các câu hỏi nhanh sau để ôn tập lại kiến thức về cấu tạo số và phép chia hết:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 39: Bảng thống kê và biểu đồ tranh - Cách lập, cách đọc và 5 Chuyên đề Nâng cao'
+title: 'Bài 39: Bảng thống kê và biểu đồ tranh - Cách lập, cách đọc và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 39 Bảng thống kê và biểu đồ tranh: phương pháp lập bảng từ dữ liệu thô, kỹ thuật đọc và vẽ biểu đồ tranh (biểu tượng nguyên và nửa biểu tượng), 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Bài học này sẽ hướng dẫn các em thành thạo kỹ năng lập và k
 
 ---
 
-## 0. Khởi động — Trực giác từ những bảng số liệu và hình vẽ (5–7 phút)
+## Khởi động — Trực giác từ những bảng số liệu và hình vẽ (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi tình huống thực tế:
 

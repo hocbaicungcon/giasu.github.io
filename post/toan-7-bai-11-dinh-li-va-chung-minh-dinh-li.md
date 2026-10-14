@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 11: Định lí và chứng minh định lí - Cấu trúc suy luận hình học và 5 Chuyên đề Nâng cao'
+title: 'Bài 11: Định lí và chứng minh định lí - Cấu trúc suy luận hình học và 5 Chuyên đề Nâng cao'
 description: 'Làm chủ Định lí và chứng minh định lí Toán 7: cấu trúc giả thiết - kết luận (Nếu... thì...), quy trình 3 bước chứng minh hình học chuẩn mực, mệnh đề đảo và phản ví dụ, 5 chuyên đề Olympic suy luận logic và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -52,7 +52,7 @@ Khẳng định đúng đắn được suy ra bằng con đường lập luận 
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền cho suy luận (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền cho suy luận (5–7 phút)
 
 Hãy kiểm tra lại "kho vũ khí lập luận" của mình qua $5$ câu hỏi nhanh sau:
 

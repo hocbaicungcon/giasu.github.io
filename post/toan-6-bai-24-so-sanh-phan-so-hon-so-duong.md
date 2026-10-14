@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 24: So sánh phân số. Hỗn số dương - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 24: So sánh phân số. Hỗn số dương - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 24 So sánh phân số và Hỗn số dương: quy đồng mẫu số, quy tắc so sánh số âm, so sánh bằng số trung gian và phần bù, chuyển đổi hỗn số, 5 chuyên đề nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -25,7 +25,7 @@ Bài học hôm nay sẽ trang bị cho các em toàn bộ phương pháp so sá
 
 ---
 
-## 0. Khởi động — Ôn cũ biết mới (5–7 phút)
+## Khởi động — Ôn cũ biết mới (5–7 phút)
 
 Hãy cùng giải nhanh 5 câu hỏi khởi động sau đây:
 

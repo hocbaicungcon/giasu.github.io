@@ -1,5 +1,5 @@
 ---
-title: Toán 12 Chuyên đề Ứng dụng đạo hàm để khảo sát hàm số Cánh Diều KNTT CTST
+title: Chuyên đề Ứng dụng đạo hàm để khảo sát hàm số Cánh Diều KNTT CTST
 description: Chuyên đề Ứng dụng đạo hàm để khảo sát hàm số dùng chung cho 3 bộ sách
   Cánh Diều, KNTT, CTST được biên soạn bởi thầy giáo Huỳnh Văn Ánh, bao gồm lý thuyết,
   hệ

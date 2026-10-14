@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 32: Điểm và đường thẳng - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 32: Điểm và đường thẳng - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 32 Điểm và đường thẳng: khái niệm cơ bản, quan hệ thuộc và không thuộc, ba điểm thẳng hàng, ba vị trí tương đối của hai đường thẳng, công thức đếm số đường thẳng và giao điểm, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài học mở đầu của Chương VIII sẽ giúp các em nắm vững các 
 
 ---
 
-## 0. Khởi động — Trực giác đời sống đến hình học (5–7 phút)
+## Khởi động — Trực giác đời sống đến hình học (5–7 phút)
 
 Hãy bắt đầu khám phá qua 5 câu hỏi tư duy trực quan:
 

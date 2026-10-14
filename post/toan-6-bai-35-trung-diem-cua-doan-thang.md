@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 35: Trung điểm của đoạn thẳng - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 35: Trung điểm của đoạn thẳng - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ kiến thức Toán 6 Bài 35 Trung điểm của đoạn thẳng: hai điều kiện cốt lõi, tính chất MA = MB = AB/2, phương pháp chứng minh, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -48,7 +48,7 @@ Bài học này sẽ giúp các em nắm vững hai điều kiện bắt buộc 
 
 ---
 
-## 0. Khởi động — Trực giác từ những phép chia đôi thực tế (5–7 phút)
+## Khởi động — Trực giác từ những phép chia đôi thực tế (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi tư duy ngắn:
 

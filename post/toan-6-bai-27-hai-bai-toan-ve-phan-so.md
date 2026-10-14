@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 27: Hai bài toán về phân số - Lý thuyết, dạng bài và lời giải chi tiết'
+title: 'Bài 27: Hai bài toán về phân số - Lý thuyết, dạng bài và lời giải chi tiết'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 27 Hai bài toán về phân số: tìm giá trị phân số của một số cho trước, tìm một số khi biết giá trị phân số của nó, mẹo phân biệt nhân và chia, bài toán phần còn lại, 5 chuyên đề nâng cao HSG độc bản có lời giải chi tiết.'
 category: Toán học
 type: Bài học
@@ -27,7 +27,7 @@ Bài học hôm nay sẽ giúp các em phân biệt chuẩn xác hai bài toán 
 
 ---
 
-## 0. Khởi động — Kết nối thực tiễn (5–7 phút)
+## Khởi động — Kết nối thực tiễn (5–7 phút)
 
 Hãy cùng khởi động với 5 câu hỏi tư duy sau:
 

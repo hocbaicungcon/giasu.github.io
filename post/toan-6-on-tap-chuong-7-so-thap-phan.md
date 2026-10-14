@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Ôn tập Chương 7: Số thập phân - Tổng ôn lý thuyết, dạng bài và 3 đề kiểm tra 45 phút'
+title: 'Ôn tập Chương 7: Số thập phân - Tổng ôn lý thuyết, dạng bài và 3 đề kiểm tra 45 phút'
 description: 'Tổng ôn toàn bộ kiến thức Toán 6 Chương 7 Số thập phân: lý thuyết 4 bài học, bảng 4 phép tính và công thức tỉ số phần trăm, 5 dạng bài tổng hợp, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác và 3 đề kiểm tra 45 phút có đáp án biểu điểm chi tiết.'
 category: Toán học
 type: Bài học

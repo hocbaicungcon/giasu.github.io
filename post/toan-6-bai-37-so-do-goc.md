@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 37: Số đo góc - Các loại góc, cách đo và 5 Chuyên đề Nâng cao'
+title: 'Bài 37: Số đo góc - Các loại góc, cách đo và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 37 Số đo góc: thước đo độ, phân loại 4 loại góc (nhọn, vuông, tù, bẹt), so sánh góc, bài toán góc giữa hai kim đồng hồ và 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -51,7 +51,7 @@ Bài học này sẽ hướng dẫn các em sử dụng thước đo góc chính
 
 ---
 
-## 0. Khởi động — Trực giác về độ mở của góc (5–7 phút)
+## Khởi động — Trực giác về độ mở của góc (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi tình huống:
 

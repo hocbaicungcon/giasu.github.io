@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 6: Số vô tỉ. Căn bậc hai số học - Bản chất toán học, Ước lượng và 5 Chuyên đề Nâng cao'
+title: 'Bài 6: Số vô tỉ. Căn bậc hai số học - Bản chất toán học, Ước lượng và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 6 Số vô tỉ và Căn bậc hai số học: bản chất số vô tỉ, tập hợp I, ký hiệu căn bậc hai số học, điều kiện xác định, kỹ năng bấm máy tính cầm tay, ước lượng kẹp số, 5 chuyên đề Olympic và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -54,7 +54,7 @@ Con số kỳ bí ấy không thuộc tập hợp số hữu tỉ $\mathbb{Q}$. 
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Trước khi tìm hiểu về căn bậc hai và số vô tỉ, hãy ôn lại kiến thức về lũy thừa bậc hai (bình phương) và số chính phương:
 

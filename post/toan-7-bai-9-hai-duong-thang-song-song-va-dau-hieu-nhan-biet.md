@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 9: Hai đường thẳng song song và dấu hiệu nhận biết - Lý thuyết, Dạng toán và 5 Chuyên đề Nâng cao'
+title: 'Bài 9: Hai đường thẳng song song và dấu hiệu nhận biết - Lý thuyết, Dạng toán và 5 Chuyên đề Nâng cao'
 description: 'Khám phá trọn vẹn Toán 7 Bài 9 Hai đường thẳng song song: các cặp góc so le trong, đồng vị, trong cùng phía; các dấu hiệu nhận biết; từ vuông góc đến song song; 5 chuyên đề Olympic góc zic-zac và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -54,7 +54,7 @@ Câu trả lời nằm ở bài học hôm nay: **dấu hiệu nhận biết hai
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Trước khi bước vào bài học mới, hãy cùng làm nhanh $5$ câu hỏi khởi động sau đây để kích hoạt tư duy hình học:
 

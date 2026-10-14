@@ -1,5 +1,5 @@
 ---
-title: 'Toán 12: Bài giảng vectơ và hệ trục tọa độ trong không gian KNTT'
+title: 'Bài giảng vectơ và hệ trục tọa độ trong không gian KNTT'
 description: Tài liệu gồm 239 trang, được biên soạn bởi thầy giáo Trần Đình Cư, bao
   gồm kiến thức cần nắm, giải bài tập sách giáo khoa, phương pháp giải các dạng toán
   và

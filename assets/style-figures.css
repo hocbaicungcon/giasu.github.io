@@ -10,3 +10,9 @@ body .prose figure img{background:transparent;border:0;box-shadow:none}
 body .prose .number-line-figure .axis-origin{color:var(--diagram-coral)}
 body .prose img{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
 body .prose :is(figcaption,div:has(>svg.lesson-diagram)>p){color:var(--muted)!important}
+[data-geometry="right-triangles"] .geometry-canvas{touch-action:pan-y}
+[data-geometry="right-triangles"] .geometry-controls select{max-width:100%;font:inherit;padding:6px 8px;background:var(--paper);color:var(--ink);border:1px solid var(--diagram-outline)}
+body .prose .geometry-kicker{color:var(--teal)}
+[data-geometry="right-triangles"] [data-drag]{touch-action:none}
+body .prose .geometry-lab input[type="range"]{accent-color:var(--teal)}
+body .prose .geometry-lab [data-leg-value]{color:var(--teal)}

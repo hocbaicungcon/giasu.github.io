@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 42: Kết quả có thể và Sự kiện trong trò chơi, thí nghiệm - Lý thuyết & 5 Chuyên đề Nâng cao'
+title: 'Bài 42: Kết quả có thể và Sự kiện trong trò chơi, thí nghiệm - Lý thuyết & 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 42 Kết quả có thể và sự kiện trong trò chơi, thí nghiệm: không gian biến cố, 3 loại sự kiện (chắc chắn, không thể, có thể), kết quả thuận lợi, 5 chuyên đề nâng cao HSG và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -53,7 +53,7 @@ Bài học này sẽ giúp các em làm chủ các khái niệm nền tảng: **
 
 ---
 
-## 0. Khởi động — Trực giác về sự may rủi quanh ta (5–7 phút)
+## Khởi động — Trực giác về sự may rủi quanh ta (5–7 phút)
 
 Hãy cùng khởi động não bộ qua 5 tình huống quan sát đời thực:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 3: Lũy thừa với số mũ tự nhiên của một số hữu tỉ - Lý thuyết, Công thức và 5 Chuyên đề Nâng cao'
+title: 'Bài 3: Lũy thừa với số mũ tự nhiên của một số hữu tỉ - Lý thuyết, Công thức và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 3 Lũy thừa của số hữu tỉ: định nghĩa, tích và thương hai lũy thừa cùng cơ số, lũy thừa của lũy thừa, lũy thừa của tích và thương, 5 chuyên đề Olympic (so sánh lũy thừa lớn, chữ số tận cùng, phương trình mũ) và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -49,7 +49,7 @@ Bài học hôm nay sẽ giúp các em làm chủ toàn bộ các công thức l
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ câu hỏi kết nối kiến thức lũy thừa từ lớp 6:
 

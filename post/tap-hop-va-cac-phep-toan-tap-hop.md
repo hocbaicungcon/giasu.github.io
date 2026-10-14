@@ -1,5 +1,5 @@
 ---
-title: Toán 10 – Tập hợp và các phép toán tập hợp
+title: Tập hợp và các phép toán tập hợp
 description: Bài này giới thiệt Lý thuyết tập hợp (tập hợp là gì, tập hợp con là gì)
   và các phép toán tập hợp (các phép toán hợp của hai tập hợp, giao của hai tập hợp,
 category: Toán học

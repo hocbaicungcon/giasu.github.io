@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Bài 36: Góc - Khái niệm, cách đọc, đếm số góc và 5 Chuyên đề Nâng cao'
+title: 'Bài 36: Góc - Khái niệm, cách đọc, đếm số góc và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 6 Bài 36 Góc: định nghĩa hai tia chung gốc, đỉnh và cạnh, góc bẹt, điểm trong của góc, công thức đếm n(n-1)/2 góc, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác.'
 category: Toán học
 type: Bài học
@@ -50,7 +50,7 @@ Bài học này sẽ trang bị cho các em kiến thức nền tảng vững ch
 
 ---
 
-## 0. Khởi động — Quan sát từ đời sống thực tế (5–7 phút)
+## Khởi động — Quan sát từ đời sống thực tế (5–7 phút)
 
 Hãy bắt đầu bài học bằng 5 câu hỏi gợi mở:
 

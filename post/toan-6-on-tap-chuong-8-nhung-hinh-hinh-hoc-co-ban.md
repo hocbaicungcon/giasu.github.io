@@ -1,5 +1,5 @@
 ---
-title: 'Toán 6 Ôn tập Chương 8: Những hình hình học cơ bản - Tổng hợp lý thuyết, bài tập và 5 Chuyên đề Nâng cao'
+title: 'Ôn tập Chương 8: Những hình hình học cơ bản - Tổng hợp lý thuyết, bài tập và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ kiến thức ôn tập Chương 8 Hình học 6: Điểm, đường thẳng, tia, đoạn thẳng, trung điểm, góc, số đo góc, công thức đếm tổ hợp n(n-1)/2, 5 chuyên đề nâng cao HSG độc bản kèm trắc nghiệm tương tác và đề kiểm tra 45 phút có đáp án chi tiết.'
 category: Toán học
 type: Bài học

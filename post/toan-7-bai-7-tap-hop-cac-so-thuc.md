@@ -1,5 +1,5 @@
 ---
-title: 'Toán 7 Bài 7: Tập hợp các số thực - Trục số, Giá trị tuyệt đối, Làm tròn số và 5 Chuyên đề Nâng cao'
+title: 'Bài 7: Tập hợp các số thực - Trục số, Giá trị tuyệt đối, Làm tròn số và 5 Chuyên đề Nâng cao'
 description: 'Toàn bộ lý thuyết Toán 7 Bài 7 Tập hợp các số thực: định nghĩa số thực R, trục số thực, so sánh số thực, số đối, giá trị tuyệt đối, quy tắc làm tròn theo độ chính xác d, 5 chuyên đề Olympic bất đẳng thức trị tuyệt đối và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
@@ -55,7 +55,7 @@ Cùng với số thực, trục số hình học sẽ được "lấp đầy" ho
 
 ---
 
-## 0. Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
+## Khởi động — Kiểm tra kiến thức nền tảng (5–7 phút)
 
 Hãy khởi động cùng $5$ bài toán nền tảng để củng cố hệ thống kiến thức trước khi bước vào tập hợp số thực:
 

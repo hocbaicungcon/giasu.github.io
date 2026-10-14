@@ -1,3 +1,4 @@
+import './right-triangles.js';
 /* credit: giasu.ai.vn */
 import {trianglePoints} from './geometry-math.js';
 const colors=['var(--diagram-coral)','var(--diagram-ink)','var(--diagram-gold)'];
