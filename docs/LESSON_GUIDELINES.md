@@ -50,3 +50,8 @@ Tài liệu bàn giao cho người tiếp tục phát triển giasu.ai.vn. Cập
 ## Bàn giao
 
 Nêu rõ bài nào đã có tương tác, bài nào còn hình tĩnh, kiểm tra đã chạy và hạn chế còn lại. Không khẳng định tất cả bài đã tương tác nếu chưa rà từng bài. Giữ tương thích slug, anchor cũ và dữ liệu lưu của người học.
+
+## Bài kiểm tra online
+
+- Thanh đồng hồ sticky đặt dưới `--site-header-height`, nền xanh lá đậm, chữ trắng, nút nộp vàng, chỉ bo hai góc dưới; kiểm tra sáng/tối và khi cuộn.
+- Phương án được render bằng Markdown inline để số có dấu chấm (ví dụ `24.`) không biến thành danh sách. Cùng cỡ chữ và công thức, cùng độ rộng/padding; cho phép phương án dài xuống dòng tự nhiên, không ép chiều cao làm mất nội dung.

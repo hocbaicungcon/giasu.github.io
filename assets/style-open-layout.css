@@ -88,3 +88,26 @@ html[data-theme="dark"] body header .display-settings .display-controls{backgrou
 
 /* Light-theme lesson lists have a visible individual card boundary. */
 html:not([data-theme="dark"]) body :is(.card,.related-card){border:1px solid var(--line);background:var(--card-bg)}
+
+/* Exam session bar sits below the shared header in both themes. */
+body .exam-toolbar{top:var(--site-header-height,52px);z-index:20;background:#176347;border:0;border-radius:0 0 12px 12px;color:#fff;padding:10px 16px;box-shadow:0 3px 10px #102d2426}
+body .exam-toolbar :is(#exam-timer,#exam-progress){color:#fff}
+body .exam-toolbar #exam-timer{font-variant-numeric:tabular-nums;font-weight:700}
+body .exam-toolbar #exam-timer::before{color:#ffcf75}
+body .exam-toolbar #submit-exam{background:#ffcf75;color:#302311;border:0}
+body .exam-toolbar #submit-exam:hover{background:#ffe1a1;color:#302311}
+html[data-theme="dark"] body .exam-wrap .exam-toolbar{background:#104b36;border:0;color:#fff}
+html[data-theme="dark"] body .exam-toolbar :is(#exam-timer,#exam-progress){color:#fff}
+html[data-theme="dark"] body .exam-toolbar #exam-timer::before{color:#ffcf75}
+html[data-theme="dark"] body .exam-toolbar #submit-exam{background:#ffcf75;color:#302311;border:0}
+html[data-theme="dark"] body .exam-toolbar #submit-exam:hover{background:#ffe1a1;color:#302311}
+body .exam-question{scroll-margin-top:calc(var(--site-header-height,52px) + 100px)}
+body .exam-question .quiz-option{width:100%;box-sizing:border-box;min-height:44px;align-items:center;font-size:1rem;line-height:1.6;border-width:1px}
+body .exam-question .quiz-option>span{min-width:0;flex:1}
+body .exam-question .quiz-option :is(p,.katex){font-size:1em}
+body .exam-question .quiz-option p{margin:0;line-height:inherit}
+body .exam-question .quiz-option:has(input:checked){border-width:1px;box-shadow:inset 0 0 0 1px var(--teal)!important}
+
+html[data-theme="dark"] body .exam-wrap .exam-question{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] body .exam-wrap .exam-question>h3{color:var(--ink)}
+body .exam-toolbar #exam-timer::before{content:"";width:20px;height:20px;display:inline-block;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-width='2'%3E%3Ccircle cx='12' cy='14' r='8'/%3E%3Cpath d='M9 2h6m-3 0v4m0 4v4l3 2m4-10 2 2'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}

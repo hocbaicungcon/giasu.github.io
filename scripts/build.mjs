@@ -411,7 +411,7 @@ export function build(){
   }
  fs.writeFileSync(path.join(out,'assets/data/lesson-interactivity-audit.json'),JSON.stringify({totalLessons:lessonAudit.length,covered:lessonAudit.filter(p=>p.cards>0).length,lessons:lessonAudit},null,2));
  buildEntertainment(root,out,shell,posts,card);
- buildExams(imported,out,shell,text=>renderMathInHtml(renderCallouts(marked.parse(normalizeMarkdownFormatting(text)))));
+ buildExams(imported,out,shell,(text,inline=false)=>renderMathInHtml(renderCallouts(inline?marked.parseInline(normalizeMarkdownFormatting(text)):marked.parse(normalizeMarkdownFormatting(text)))));
  fs.writeFileSync(path.join(out,'assets/style.css'),minifyCss(bundleStylesheet(path.join(root,'assets/style.css'))));
  const clientFiles=fs.readdirSync(path.join(out,'assets')).filter(f=>/\.(js|css)$/.test(f)).sort();
  const assetVersion=createHash('sha256').update(clientFiles.map(f=>fs.readFileSync(path.join(out,'assets',f),'utf8')).join('\n')).digest('hex').slice(0,12);

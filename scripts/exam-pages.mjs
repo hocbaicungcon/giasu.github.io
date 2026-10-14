@@ -10,7 +10,7 @@ export function buildExams(imported,out,shell,markdown){
  fs.mkdirSync(path.join(out,'de-kiem-tra'),{recursive:true});
  for(const e of exams){
   const scoring=uses90MinuteScoring(e)?'90-minute-12-4-6-v1':'equal';
-  const rendered={...e,scoring,questions:e.questions.map(q=>({...q,question:markdown(q.question),options:q.options.map(o=>markdown(o)),solution:markdown(q.solution)}))};
+  const rendered={...e,scoring,questions:e.questions.map(q=>({...q,question:markdown(q.question),options:q.options.map(o=>markdown(o,true)),solution:markdown(q.solution)}))};
   rendered.version=createHash('sha256').update(JSON.stringify(rendered)).digest('hex').slice(0,16);
   const selfReview=e.mode==='self-review';
   const mixed=e.questions.some(q=>q.kind==='proof')&&!selfReview;
