@@ -119,3 +119,6 @@ html[data-theme="dark"] body .exam-catalog-search{background:var(--dark-surface)
 html[data-theme="dark"] body .exam-catalog-search input{background:transparent;color:var(--dark-ink);border:0}
 html[data-theme="dark"] body .exam-catalog-search input::placeholder{color:var(--muted);opacity:1}
 html[data-theme="dark"] body .exam-catalog-search:focus-within{border-color:var(--teal)}
+/* Focus belongs to the search container, never a second frame inside it. */
+body .exam-catalog-search input:is(:focus,:focus-visible){outline:none;box-shadow:none;background:transparent}
+body .exam-catalog-search:focus-within{outline:none;box-shadow:none;border-color:var(--teal)}
