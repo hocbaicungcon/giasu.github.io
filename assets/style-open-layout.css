@@ -85,3 +85,6 @@ html[data-theme="dark"] body header nav#site-menu .nav-submenu a:hover,html[data
 html[data-theme="dark"] body header .display-settings .display-controls{background:#17251c;color:#edf4e9}
 @media(max-width:950px){body.menu-open header nav#site-menu{top:var(--site-header-height);max-height:calc(100dvh - var(--site-header-height))}html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#0c120f}html[data-theme="dark"] body.menu-open header nav#site-menu .display-settings .display-controls{background:transparent}}
 @media(max-width:620px){body header .nav.wrap,body:has(.lesson-course) header .nav.wrap{gap:8px}body header .brand,body:has(.lesson-course) header .brand{font-size:.875rem}body header .menu-toggle{min-height:40px}}
+
+/* Light-theme lesson lists have a visible individual card boundary. */
+html:not([data-theme="dark"]) body :is(.card,.related-card){border:1px solid var(--line);background:var(--card-bg)}

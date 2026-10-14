@@ -23,7 +23,8 @@ Tài liệu bàn giao cho người tiếp tục phát triển giasu.ai.vn. Cập
 - Bản đồ kiến thức dùng `knowledge-note`, xử lý qua `scripts/knowledge-notes.mjs`.
 - Callout Markdown: `> [!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]`, `[!CAUTION]`.
 - Màu cố định theo ý nghĩa: NOTE vàng, TIP xanh lá, IMPORTANT cam hồng, WARNING vàng cam, CAUTION tím. Phiên bản tối dùng nền tương ứng sẫm, chữ sáng.
-- Góc gấp và ghim SVG phẳng dùng chung `assets/note-pin.svg`; không thêm khung lồng nhau. Phải chừa chỗ cho ghim và góc gấp.
+- Giấy note giữ góc gấp, không có ghim trang trí; không thêm khung lồng nhau. Chừa chỗ cho góc gấp.
+- Thẻ bài học trong danh sách ở theme sáng có viền mảnh theo `--line`; theme tối giữ trình bày không khung.
 
 ## Công thức
 
