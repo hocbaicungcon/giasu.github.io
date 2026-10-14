@@ -18,3 +18,15 @@ body .prose .geometry-lab input[type="range"]{accent-color:var(--teal)}
 body .prose .geometry-lab [data-leg-value]{color:var(--teal)}
 /* LaTeX images use black ink: invert on dark paper and screen out their white page. */
 html[data-theme="dark"] body :is(.prose,.exam-question,.exam-review,.lesson-solution,.quiz-explanation) img[src*="assets/latex/"]{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen;background:transparent!important}
+/* A wide formula/table scrolls locally rather than enlarging the mobile page. */
+@media(max-width:1000px){
+ body .article-wrap :is(.article-main,.article-body,.prose,.geometry-lab,.geometry-controls,.practice-card,.quiz){min-width:0;max-width:100%;box-sizing:border-box}
+ body .prose table{display:block;width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden}
+ body .prose .katex-display{max-width:100%;overflow-x:auto;overflow-y:hidden}
+ body .prose .katex-display>.katex{display:block;overflow:visible;max-width:none}
+ body .prose .katex:not(.katex-display>.katex){display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding-block:2px;box-sizing:border-box}
+ body .prose :is(svg.lesson-diagram,.geometry-canvas){width:auto;max-width:100%}
+ body .prose .geometry-canvas{width:100%}
+}
+@media(max-width:1000px){body .prose .katex .katex-mathml{overflow:hidden!important;contain:strict}}
+@media(max-width:1000px){body .prose :is(table,.katex-display),body .prose .katex:not(.katex-display>.katex){contain:paint}}
