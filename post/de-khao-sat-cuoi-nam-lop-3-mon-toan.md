@@ -19,143 +19,160 @@ GIA SƯ THÔNG MINH xin giới thiệu với Quý thầy cô và các em học s
 
 ### PHẦN I: Trắc nghiệm: (7 điểm) Hãy khoanh vào chữ cái đặt trước kết quả đúng:
 
-**Câu1.** Số 54 175 đọc là: *(M1-0,5 điểm)
-**A.** Năm tư nghìn một trăm bảy lăm.
+**Câu 1.** Số 54 175 đọc là: (M1 – 0,5 điểm)
 
-**B.** Năm mươi tư nghìn bảy trăm mười lăm.
+- **A.** Năm tư nghìn một trăm bảy lăm.
 
-**C.** Năm mươi tư nghìn một trăm bảy mươi lăm.
+- **B.** Năm mươi tư nghìn bảy trăm mười lăm.
 
-**D.** Năm mươi tư nghìn một trăm bảy lăm.
+- **C.** Năm mươi tư nghìn một trăm bảy mươi lăm.
 
-**Câu 2.** Số liền saucủa số 68457 là: *(**M1-** 0,5 điểm)
-| A. 68467; | B. 68447 | C. 68456 | D. 68458 |
-| --- | --- | --- | --- |
+- **D.** Năm mươi tư nghìn một trăm bảy lăm.
 
-**Câu3.** Các số 48617; 47861; 48716; 47816 sắp xếp theo thứ tự từ **bé** đến lớn là: *(M1-0,5 điểm)
-**A.** 48617; 48716; 47861; 47816
+**Câu 2.** Số liền sau của số 68457 là: (M1 – 0,5 điểm)
 
-**B.** 48716; 48617; 47861; 47816
+- **A.** 68467
+- **B.** 68447
+- **C.** 68456
+- **D.** 68458
 
-**C.** 47816; 47861; 48617; 48716 
+**Câu 3.** Các số 48617; 47861; 48716; 47816 sắp xếp theo thứ tự từ **bé** đến lớn là: (M1 – 0,5 điểm)
 
-**D.** 48617; 48716; 47816; 47861
+- **A.** 48617; 48716; 47861; 47816
 
-**Câu4**. Số lẻ nhỏ nhất có5 chữ số là: *(M1-0,5 điểm)
-| A. 11000 | B. 10100 | C. 10010 | D. 10001 |
-| --- | --- | --- | --- |
+- **B.** 48716; 48617; 47861; 47816
 
-**Câu5**. Kết quả của phép cộng 36528+ 49347 là: *(M2-0,5 điểm)
-| A. 75865 | B. 85865 | C. 75875 | D. 85875 |
-| --- | --- | --- | --- |
+- **C.** 47816; 47861; 48617; 48716
 
-**Câu 6**. Giá trị của biểu thức (98725 – 87561) x 3 là: *(M2-0,5 điểm)
-**A.** 32493 
+- **D.** 48617; 48716; 47816; 47861
 
-**B.** 39432 
+**Câu 4**. Số lẻ nhỏ nhất có 5 chữ số là: (M1 – 0,5 điểm)
 
-**C.** 33492 
+- **A.** 11000
+- **B.** 10100
+- **C.** 10010
+- **D.** 10001
 
-**D.** 34293
+**Câu 5**. Kết quả của phép cộng 36528+ 49347 là: (M2 – 0,5 điểm)
 
-**Câu 7**. Thứ haituần này là ngày 26, thứ haituần trước là ngày:…
+- **A.** 75865
+- **B.** 85865
+- **C.** 75875
+- **D.** 85875
 
-*(M2-0,5 điểm)
-**A.** 19
+**Câu 6**. Giá trị của biểu thức (98725 – 87561) x 3 là: (M2 – 0,5 điểm)
 
-**B.** 18
+- **A.** 32493
 
-**C.** 16
+- **B.** 39432
 
-**D.** 17
+- **C.** 33492
 
-**Câu 8**. Số 12 được viết bằng chữ số La Mã là: *(M2-0,5 điểm)
-**A.** XI
+- **D.** 34293
 
-**B.** XII
+**Câu 7**. Thứ hai tuần này là ngày 26, thứ hai tuần trước là ngày:…
 
-**C.** VVII
+(M2 – 0,5 điểm)
 
-**D.** IIX
+- **A.** 19
 
-**Câu 9**. 8 hộp bút chì như nhau có96 cái bút chì. Hỏi 6 hộp như thế cóbaonhiêu cái bút chì? (M3-1điểm)
+- **B.** 18
 
-**A.** 18 cái.
+- **C.** 16
 
-**B.** 12 cái.
+- **D.** 17
 
-**C.** 72 cái.
+**Câu 8**. Số 12 được viết bằng chữ số La Mã là: (M2 – 0,5 điểm)
 
-**D.** 62 cái.
+- **A.** XI
 
-**Câu10.** Diện tíchmột hình vuông là 9 cm2. Hỏi chu vi hình vuông đó là baonhiêu? (M4-1điểm)
+- **B.** XII
 
-| A. 3 cm | B. 12 cm | C. 4 cm | D. 36 cm |
-| --- | --- | --- | --- |
+- **C.** VVII
 
-**Câu 11.** Hình dưới đây cóbaonhiêu hình tamgiác,baonhiêu hình tứ giác?(M3-1điểm)
+- **D.** IIX
+
+**Câu 9**. 8 hộp bút chì như nhau có 96 cái bút chì. Hỏi 6 hộp như thế có bao nhiêu cái bút chì? (M3 – 1điểm)
+
+- **A.** 18 cái.
+
+- **B.** 12 cái.
+
+- **C.** 72 cái.
+
+- **D.** 62 cái.
+
+**Câu 10.** Diện tích một hình vuông là 9 cm². Hỏi chu vi hình vuông đó là bao nhiêu? (M4 – 1điểm)
+
+- **A.** 3 cm
+- **B.** 12 cm
+- **C.** 4 cm
+- **D.** 36 cm
+
+**Câu 11.** Hình dưới đây có bao nhiêu hình tam giác,bao nhiêu hình tứ giác?(M3 – 1điểm)
 
 ![Đề khảo sát cuối năm lớp 3 môn Toán 1](assets/images/de-khao-sat-cuoi-nam-lop-3-mon-toan-image001-1.png)
 
-**A.** 4 hình tamgiác,5 hình tứ giác
+- **A.** 4 hình tam giác, 5 hình tứ giác
 
-**B.** 4 hình tamgiác,4 hình tứ giác
+- **B.** 4 hình tam giác, 4 hình tứ giác
 
-**C.** 5 hình tamgiác,4 hình tứ giác
+- **C.** 5 hình tam giác, 4 hình tứ giác
 
-**D.** 5 hình tamgiác,5 hình tứ giác
+- **D.** 5 hình tam giác, 5 hình tứ giác
 
 ### PHẦN II: TỰ LUẬN: (3 điểm)
 
-**Bài1.** Đặt tính rồi tính: *(M1-1 điểm)
-- $21628 times 3$
+**Bài 1.** Đặt tính rồi tính: (M1 – 1 điểm)
+
+- $21628 \times 3$
 
 - $45603 + 12908$
 
 - $15250: 5$
 
-- $67013- 23114$$
+- $67013 - 23114$
 
 ![Đề khảo sát cuối năm lớp 3 môn Toán 2](assets/images/de-khao-sat-cuoi-nam-lop-3-mon-toan-dong-ke-oly.jpg)
 
-**Bài2.** Một người đi bộtrong 5 phút đi được 450m. Hỏi trong 9 phút người đó đi được baonhiêu mét đường? (Quãng đường trong mỗi phút đi đều như nhau). *(**M2-** 2 điểm)
+**Bài 2.** Một người đi bộ trong 5 phút đi được 450m. Hỏi trong 9 phút người đó đi được bao nhiêu mét đường? (Quãng đường trong mỗi phút đi đều như nhau). (M2 – 2 điểm)
 ![Đề khảo sát cuối năm lớp 3 môn Toán 2](assets/images/de-khao-sat-cuoi-nam-lop-3-mon-toan-dong-ke-oly.jpg)
 
 ### Đáp án đề khảo sát cuối học kì II môn Toán 3
 
 Phần 1: Trắc nghiệm (7 điểm)
 
-**Câu1**. *(M1-0,5 điểm)* **C.** Năm mươi tư nghìn một trăm bảy mươi lăm.
+**Câu 1**. (M1 – 0,5 điểm) **C.** Năm mươi tư nghìn một trăm bảy mươi lăm.
 
-**Câu 2**. *(**M1-** 0,5 điểm)* **D.** 68458
+**Câu 2**. (M1 – 0,5 điểm) **D.** 68458
 
-**Câu3**. *(M1-0,5 điểm)* **C.** 47816; 47861; 48617; 48716 
+**Câu 3**. (M1 – 0,5 điểm) **C.** 47816; 47861; 48617; 48716
 
-**Câu4**. *(M2-0,5 điểm)* **D.** 10001
+**Câu 4**. (M2 – 0,5 điểm) **D.** 10001
 
-**Câu5**. *(M2-0,5 điểm)* **A.** 85875
+**Câu 5**. (M2 – 0,5 điểm) **D.** 85875
 
-**Câu 6**. *(M2-0,5 điểm)* **C.** 33492
+**Câu 6**. (M2 – 0,5 điểm) **C.** 33492
 
-**Câu 7:** (M2-0,5 điểm)* **A.** 19
+**Câu 7:** (M2 – 0,5 điểm) **A.** 19
 
-**Câu 8**. *(M1-0,5 điểm)* **B.** XII
+**Câu 8**. (M1 – 0,5 điểm) **B.** XII
 
-**Câu 9**. *(M3-1 điểm)* **C.** 72 cái
+**Câu 9**. (M3 – 1 điểm) **C.** 72 cái
 
-**Câu10.** *(M4-1 điểm)* **B.** 12 cm
+**Câu 10.** (M4 – 1 điểm) **B.** 12 cm
 
-**Câu 11.** *(M3-1 điểm)* **D.** 5 hình tamgiác,5 hình tứ giác
+**Câu 11.** (M3 – 1 điểm) **D.** 5 hình tam giác, 5 hình tứ giác
 
 PHẦN 2: Tự luận: (3 điểm)
 
-**Bài1.** *(M1-1 điểm)* HS đặt tính và tính đúng mỗi phần được 0,25 điểm.
+**Bài 1.** (M1 – 1 điểm) HS đặt tính và tính đúng mỗi phần được 0,25 điểm.
 
 21628 x 3 = 64884 15250: 5 = 3050
 
- 45603 + 12908 = 32695 67013- 23114 = 43899
+ 45603 + 12908 = 58511 67013- 23114 = 43899
 
-**Bài2.** (M2-2 điểm)
+**Bài 2.** (M2 – 2 điểm)
 
 Bài giải
 
@@ -163,7 +180,7 @@ Mỗi phút người đó đi được số mét là. (0, 25 điểm)
 
 450: 5 = 90 (m) (0, 75 điểm)
 
-Trong 9 phút người đó đi bộđược số mét là: (0, 25 điểm)
+Trong 9 phút người đó đi bộ được số mét là: (0, 25 điểm)
 
 90 x 9 = 810 (m) (0,5 điểm)
 
