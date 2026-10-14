@@ -1,3 +1,4 @@
+import './probability-sort.js';
 import {gcd,divisors,quadratic,tossCoins} from './exploration-models.js';
 const fmt=n=>Number(n.toFixed(2)).toLocaleString('vi');
 const svg=content=>`<svg viewBox="0 0 560 320" role="img" aria-label="Đồ thị thí nghiệm">${content}</svg>`;

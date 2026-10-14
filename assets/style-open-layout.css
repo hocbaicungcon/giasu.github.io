@@ -1,0 +1,52 @@
+/* Open lesson layout inspired by Mathigon, with the site's coral/emerald palette. */
+body .wrap{max-width:none;width:100%;padding-inline:clamp(16px,3vw,48px)}
+body .hero.wrap{border-radius:0;margin-inline:0}
+body main.lesson-course.article-wrap.wrap{padding-inline:clamp(20px,4vw,64px)}
+body .lesson-course>.article-heading,body .lesson-course .article-main,body .lesson-course>.article-end,body .lesson-course>.related{max-width:none;width:100%}
+body .lesson-course .prose{max-width:none}
+body .prose :is(blockquote.callout,blockquote:not(.callout),details,.quiz,.geometry-lab,.practice-card,.lesson-exploration,.quiz-explanation,.lesson-progress){border:0;border-radius:0;box-shadow:none;background:transparent}
+body .lesson-course .prose :is(blockquote.callout,.quiz,.geometry-lab,.practice-card,.lesson-exploration){border:0;border-radius:0;background:transparent;padding-inline:0}
+body .prose blockquote.callout{padding-block:14px;margin-block:28px}
+body .prose blockquote.callout .callout-title{color:var(--teal)}
+body .prose details{padding:12px 0;border-bottom:1px solid var(--line)}
+body .prose .quiz{padding-block:18px;margin-block:24px}
+body :is(.card,.related-card){border:0;background:transparent;box-shadow:none}
+body :is(.card,.related-card):hover{background:transparent;transform:none}
+body .card-art,body .related-card-art{border-radius:6px}
+body .home-learning,body .home-learning .subject-section{border:0;box-shadow:none;background:transparent}
+body.grading-page main{max-width:none;padding-inline:clamp(16px,3vw,48px)}
+body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important){border:0;box-shadow:none;border-radius:0;background:transparent}
+html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] body main.lesson-course.article-wrap.wrap{background:#101713;color:#e5eee6}
+html[data-theme="dark"] body .lesson-course .prose :is(blockquote.callout,.quiz,.geometry-lab,.practice-card,.lesson-exploration,.quiz-explanation,.lesson-progress){background:transparent;border:0;color:#e5eee6}
+html[data-theme="dark"] body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important){background:transparent;border:0;color:#e5eee6}
+html[data-theme="dark"] body :is(.card,.related-card,.home-learning){background:transparent}
+.probability-sort{margin-block:28px 44px}
+.sort-scale{display:flex;justify-content:space-between;gap:16px;font-size:.875rem;color:var(--muted);margin:14px 0 10px}
+body .sort-events{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-width:100%}
+body .sort-events .sort-event{display:flex;align-items:center;gap:10px;min-height:58px;margin:0;padding:8px 12px 8px 6px;border:0;border-radius:6px;background:#edf6ef;color:#263531;font-size:1rem;line-height:1.45;transition:background .15s}
+body .sort-event.is-dragging{background:#d4eadc;outline:2px solid #087858;z-index:1;cursor:grabbing}
+.sort-event-text{flex:1;min-width:0}
+.sort-event svg{width:20px;height:20px;display:block;flex:none}
+.sort-event-icon{color:#d94e48;flex:none}
+.sort-position{color:var(--muted);font-size:.875rem;width:16px;text-align:center;flex:none}
+body .sort-event :is(.sort-handle,.sort-moves button){display:flex;align-items:center;justify-content:center;width:32px;min-height:32px;padding:4px;border:0;background:transparent;color:#087858;border-radius:0;flex:none}
+body .sort-event .sort-handle{touch-action:none;cursor:grab}
+body .sort-event .sort-handle svg{stroke-width:4}
+.sort-moves{display:flex;gap:2px}
+body .sort-event .sort-moves button:disabled{opacity:.3;cursor:default;background:transparent}
+.sort-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.sort-feedback{min-height:1.5em;font-size:.9375rem;color:var(--muted)}
+.probability-sort.is-correct .sort-feedback{color:#087858}
+.sort-explanation{padding:8px 0;font-size:1rem}
+html[data-theme="dark"] body .sort-events .sort-event{background:#203329;color:#e5eee6}
+html[data-theme="dark"] body .sort-event.is-dragging{background:#2c4936;outline-color:#83e0ba}
+html[data-theme="dark"] body .sort-event :is(.sort-handle,.sort-moves button){color:#83e0ba;background:transparent}
+html[data-theme="dark"] body .sort-event-icon{color:#ff9a8d}
+html[data-theme="dark"] body .probability-sort.is-correct .sort-feedback{color:#83e0ba}
+@media(max-width:620px){body .sort-events .sort-event{gap:6px;padding:8px 6px;font-size:.9375rem;min-height:64px}.sort-moves{flex-direction:column;gap:0}body .sort-event .sort-moves button{min-height:28px;height:28px;width:28px}.sort-position{display:none}}
+body .probability-sort .sort-actions button{background:#087858;color:#fff;border:0;padding:8px 14px}
+body .probability-sort .sort-actions button:hover{background:#056047;color:#fff}
+body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#087858}
+html[data-theme="dark"] body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#83e0ba}
+html[data-theme="dark"] body .number-line-figure svg{color:#83e0ba}
+body:has(.lesson-course) footer.wrap{width:auto}
