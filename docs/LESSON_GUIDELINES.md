@@ -61,3 +61,5 @@ Nêu rõ bài nào đã có tương tác, bài nào còn hình tĩnh, kiểm tra
 - Ô tìm đề và ô tìm bài học/chủ đề: khi focus chỉ đổi viền ngoài sang màu theme; bỏ outline/box-shadow của input bên trong để không xuất hiện khung màu thứ hai.
 
 - Tag toàn website không có khung viền (cả hover/focus, cả hai theme). Đề trắc nghiệm dạng bài viết: mỗi phương án A–D một mục trong danh sách dọc, không gộp bảng; tách dòng trống giữa câu hỏi và phương án, đóng đủ ký hiệu Markdown nhấn mạnh.
+
+- Trên mobile, kiểm tra `document.documentElement.scrollWidth` bằng chiều rộng viewport. Công thức dài và bảng rộng chỉ cuộn trong vùng riêng, không làm giãn cả trang; hình SVG và vùng tương tác giới hạn theo khung nội dung. Không che lỗi bằng overflow hidden toàn trang khiến nội dung bị mất.
