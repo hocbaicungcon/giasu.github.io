@@ -111,3 +111,11 @@ body .exam-question .quiz-option:has(input:checked){border-width:1px;box-shadow:
 html[data-theme="dark"] body .exam-wrap .exam-question{background:var(--paper);color:var(--ink)}
 html[data-theme="dark"] body .exam-wrap .exam-question>h3{color:var(--ink)}
 body .exam-toolbar #exam-timer::before{content:"";width:20px;height:20px;display:inline-block;background:currentColor;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='black' stroke-width='2'%3E%3Ccircle cx='12' cy='14' r='8'/%3E%3Cpath d='M9 2h6m-3 0v4m0 4v4l3 2m4-10 2 2'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
+/* Shared exam typography keeps prose and formula scale consistent. */
+body .exam-wrap :is(.exam-question,.exam-review){font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;font-size:1rem;line-height:1.65;--lesson-math-size:1em}
+body .exam-wrap :is(.exam-question,.exam-review) .katex{font-size:1em}
+body .exam-wrap .exam-question p{font-size:inherit}
+html[data-theme="dark"] body .exam-catalog-search{background:var(--dark-surface);border-color:var(--dark-line);color:var(--dark-ink)}
+html[data-theme="dark"] body .exam-catalog-search input{background:transparent;color:var(--dark-ink);border:0}
+html[data-theme="dark"] body .exam-catalog-search input::placeholder{color:var(--muted);opacity:1}
+html[data-theme="dark"] body .exam-catalog-search:focus-within{border-color:var(--teal)}
