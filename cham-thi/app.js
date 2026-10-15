@@ -618,6 +618,7 @@ $('openCamera').onclick = async () => {
     if (version !== cameraVersion) { stream.getTracks().forEach(track => track.stop()); return; }
     const track = stream.getVideoTracks()[0], capabilities = track.getCapabilities?.() || {};
     if (capabilities.focusMode?.includes('continuous')) { try { await track.applyConstraints({advanced:[{focusMode:'continuous'}]}); } catch (_) {} }
+    if (capabilities.zoom && Number.isFinite(capabilities.zoom.min)) { try { await track.applyConstraints({advanced:[{zoom:capabilities.zoom.min}]}); } catch (_) {} }
     cameraStream = stream; $('cameraVideo').srcObject = stream; await $('cameraVideo').play();
     if (version !== cameraVersion) return;
     $('captureCamera').disabled = !$('cameraVideo').videoWidth; $('scanError').textContent = '';
