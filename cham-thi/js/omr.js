@@ -231,7 +231,7 @@
       if (negative && value) value = '-' + value;
       const validNumber = /^-?(?:\d+(?:,\d+)?|,\d+)$/.test(value);
       const uncertain = columnFlags.some(flag => flag === 'Không rõ hoặc tô nhiều' || /cần kiểm tra/.test(flag)) || gap || !validNumber || commaResult.flag === 'Không rõ hoặc tô nhiều';
-      answers.p3.push(value); flags.p3.push(erased.length ? `Kiểm tra số: dấu tô mờ nghi đã xóa ở cột ${erased.join(', ')} · cần kiểm tra` : uncertain ? 'Kiểm tra số: có ô không rõ, khoảng trống hoặc dấu phẩy không rõ' : '');
+      answers.p3.push(value); flags.p3.push(erased.length ? `Đã chọn ô đậm hơn; vẫn cần kiểm tra dấu tô mờ nghi đã xóa ở cột ${erased.join(', ')}` : uncertain ? 'Kiểm tra số: có ô không rõ, khoảng trống hoặc dấu phẩy không rõ' : '');
     }
     const digits = (x, columns) => Array.from({ length: columns }, (_, col) => choose(Array.from({ length: 10 }, (_, d) => dot(x + 24 * col, standard ? 195 + 33.9 * d : 200 + 34.5 * d)), '0123456789'.split('')));
     const threeCode = profile === 'standard3';
