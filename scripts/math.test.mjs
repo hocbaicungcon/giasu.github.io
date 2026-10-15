@@ -38,10 +38,20 @@ test('display and inline formulas render without injected line breaks',()=>{
  assert.ok(display.includes('<annotation encoding="application/x-tex">a+b=c+d</annotation>'));
 });
 
-test('only long display formulas split at top-level operators',async()=>{
+test('display formulas retain the authored line layout',async()=>{
  const {wrapLongDisplayFormula}=await import('./math.mjs');
  assert.equal(wrapLongDisplayFormula('a+b=c'), 'a+b=c');
- assert.match(wrapLongDisplayFormula('x+'.repeat(60)+'y'),/\\begin\{aligned\}/);
+ assert.equal(wrapLongDisplayFormula('x+'.repeat(60)+'y'),'x+'.repeat(60)+'y');
  assert.equal(wrapLongDisplayFormula('\\frac{a+b+c+d}{e+f+g+h}'), '\\frac{a+b+c+d}{e+f+g+h}');
- const long=renderMath('x+'.repeat(60)+'y',{displayMode:true});assert.doesNotMatch(long,/class="katex-display"[^>]*>[\\s\\S]*?class="mrel"/);assert.ok(long.includes('<annotation encoding="application/x-tex">'));
+ const long=renderMath('x+'.repeat(60)+'y',{displayMode:true});assert.ok(long.includes('<annotation encoding="application/x-tex">'));
+});
+
+test('long inline equation chains promote only when they can be aligned at equality signs',async()=>{
+ const tex='AH = \\sqrt{AB^2 - BH^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}',html=renderMath(tex);
+ const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);assert.match(html,/class="katex-display/);assert.ok(layout.startsWith('\\begin{aligned}'));assert.ok(layout.includes('\\&= '));assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));
+});
+
+test('proportional proof with an implication remains one coherent display equation',async()=>{
+ const tex='\\frac{AB}{AC} = \\frac{DE}{DF} \\implies AB = AC \\times \\frac{DE}{DF} = 16 \\times \\frac{1{,}5}{2} = \\mathbf{12}\\text{ m}.',html=renderMath(tex,{displayMode:true});
+ const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);assert.ok(layout.includes('\\\\&\\implies AB = AC'));assert.ok(layout.includes('\\\\&= 16'));assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));assert.match(html,/⟹/);
 });

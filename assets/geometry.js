@@ -1,4 +1,4 @@
-import './diagram-tools.js';
+import {GeometryScene, measureAngle} from './geometry-interaction.js';
 import './right-triangles.js';
 /* credit: giasu.ai.vn */
 import {trianglePoints} from './geometry-math.js';
@@ -74,6 +74,40 @@ document.querySelectorAll('[data-geometry="angle-pairs"]').forEach(lab=>{
  input.addEventListener('input',render);buttons.forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.pair;render();}));
  lab.querySelector('[data-reset]').addEventListener('click',()=>{input.value=60;selected=buttons[0].dataset.pair;render();});render();
 });
+// The reusable geometry scene drives a draggable triangle and its measured angles.
+document.querySelectorAll('[data-geometry="triangle-angles"]').forEach(lab=>{
+ const svg=lab.querySelector('svg'),x=lab.querySelector('[data-coordinate="x"]'),y=lab.querySelector('[data-coordinate="y"]'),colors=['#bf645a','#13839a','#c79536'];let step=-1;
+ const scene=new GeometryScene(svg,{onChange:points=>{
+  const A=[points.A.x,points.A.y],B=[100,280],C=[470,280],angles=[measureAngle(A,C,B).degrees,measureAngle(B,A,C).degrees,measureAngle(C,B,A).degrees];
+  lab.querySelectorAll('[data-angle]').forEach((out,i)=>out.textContent=angles[i].toFixed(1)+'°');
+  const max=Math.max(...angles),kind=Math.abs(max-90)<.1?'vuông':max>90?'tù':'nhọn';
+  lab.querySelector('.geometry-observation').textContent=`Tam giác ${kind}. Mỗi góc có thể thay đổi, nhưng A + B + C luôn bằng 180° (số đo hiển thị được làm tròn).`;
+  lab.querySelector('[data-proof-text]').textContent=['Bước 1/4 · Qua A, kẻ đường thẳng xy song song với BC.','Bước 2/4 · Góc xanh ngọc tại A bằng góc B: hai góc so le trong.','Bước 3/4 · Góc vàng tại A bằng góc C: hai góc so le trong.','Bước 4/4 · Ba góc san hô, xanh ngọc và vàng tại A ghép thành góc bẹt. Vì vậy A + B + C = 180°.'][Math.max(step,0)];
+  lab.querySelector('[data-next]').disabled=step===3;
+ }});
+ scene.point('A',+x.value,+y.value,{label:'A',color:colors[0],radius:7,minX:100,maxX:470,minY:65,maxY:220,step:5})
+  .point('B',100,280,{label:'B',color:colors[1],draggable:false,radius:3})
+  .point('C',470,280,{label:'C',color:colors[2],draggable:false,radius:3})
+  .point('X',560,95,{label:'',draggable:false,radius:0})
+  .point('Y',35,95,{label:'',draggable:false,radius:0})
+  .polygon('triangle',['A','B','C'],{fill:'#2563eb',fillOpacity:.035})
+  .angle('angle-a','A','C','B',{radius:32,color:colors[0]})
+  .angle('angle-b','B','C','A',{radius:32,color:colors[1]})
+  .angle('angle-c','C','A','B',{radius:32,color:colors[2]})
+  .segment('proof-line','Y','X',{stroke:'#64748b',strokeWidth:2,dash:'7 5',visible:false})
+  .text('proof-x','Y','x',{dx:5,dy:-12,color:'#64748b',visible:false})
+  .text('proof-y','X','y',{dx:-5,dy:-12,color:'#64748b',visible:false})
+  .angle('proof-b','A','Y','B',{radius:44,color:colors[1],visible:false})
+  .angle('proof-c','A','C','X',{radius:44,color:colors[2],visible:false})
+  .render();
+ const sync=()=>{scene.setPoint('A',+x.value,+y.value);scene.setPoint('X',560,+y.value);scene.setPoint('Y',35,+y.value);};
+ [x,y].forEach(input=>input.addEventListener('input',sync));
+ lab.querySelector('[data-proof]').addEventListener('click',event=>{step=step<0?0:-1;event.currentTarget.setAttribute('aria-pressed',String(step>=0));lab.querySelector('.geometry-proof').hidden=step<0;for(const id of ['proof-line','proof-x','proof-y','proof-b','proof-c'])scene.setVisible(id,step>=0);scene.render();});
+ lab.querySelector('[data-next]').addEventListener('click',()=>{step=Math.min(3,step+1);scene.render();});
+ lab.querySelectorAll('[data-shape]').forEach(button=>button.addEventListener('click',()=>{const presets={acute:[280,95],right:[100,95],obtuse:[280,220]};[x.value,y.value]=presets[button.dataset.shape];sync();}));
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{x.value=280;y.value=95;step=-1;lab.querySelector('.geometry-proof').hidden=true;lab.querySelector('[data-proof]').setAttribute('aria-pressed','false');for(const id of ['proof-line','proof-x','proof-y','proof-b','proof-c'])scene.setVisible(id,false);sync();});
+});
+
 // Progress reflects checked answers; all lesson content remains available.
 document.querySelectorAll('.prose').forEach(article=>{
  const quizzes=[...article.querySelectorAll('form.quiz')];if(!quizzes.length)return;
