@@ -54,6 +54,24 @@ body.grading-page :is(.key-row input,.key-row select,.part-box input,.part-box s
  body.grading-page #answers .answer-item[data-part="p3"] input{width:54px;flex-basis:54px}
 }
 
+/* Use desktop width to reduce scrolling without making each answer hard to edit. */
+@media(min-width:601px){
+ body.grading-page #answers .answer-item{gap:5px;padding:4px 5px;font-size:13px}
+ body.grading-page #answers .answer-item>span{min-width:0;font-size:13px}
+ body.grading-page #answers .answer-item select,
+ body.grading-page #answers .answer-item input{min-height:32px;padding:3px 2px;font-size:14px}
+}
+@media(min-width:1101px){
+ body.grading-page #answers .grid-answers:not(.part2grid):not(.part3grid){grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
+ body.grading-page #answers .part2grid{grid-template-columns:repeat(8,minmax(0,1fr));gap:5px}
+ body.grading-page #answers .part3grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+}
+@media(min-width:601px) and (max-width:1100px){
+ body.grading-page #answers .grid-answers:not(.part2grid):not(.part3grid){grid-template-columns:repeat(8,minmax(0,1fr));gap:5px}
+ body.grading-page #answers .part2grid{grid-template-columns:repeat(8,minmax(0,1fr));gap:4px}
+ body.grading-page #answers .part3grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+}
+
 /* Fill the gap directly in the sentence using a keyboard-accessible list. */
 body .practice-cloze{display:block;margin:16px 0}
 body .practice-cloze .practice-gap-select{display:inline-block;max-width:100%;width:auto;min-height:32px;padding:2px 20px 2px 6px;border:0;border-bottom:2px dotted #78a267;background:#f0f6e9;color:var(--button-primary-hover,#056047);font:600 1em/1.4 "Source Sans Pro",sans-serif;vertical-align:baseline;cursor:pointer;border-radius:6px}
