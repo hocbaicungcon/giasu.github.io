@@ -34,7 +34,7 @@ html[data-theme="dark"] body :is(.prose,.exam-question,.exam-review,.lesson-solu
 .triangle-angle-canvas [data-vertex]{cursor:grab;touch-action:none}
 .triangle-angle-canvas text{font-size:16px}
 
-/* Display formulas wrap through an aligned layout generated only for long expressions. */
+/* Long formula rows stay left aligned and fully inside the mobile viewport. */
 body .katex-display{max-width:100%;overflow:visible;white-space:normal}
 body .katex-display>.katex{display:block;max-width:100%;white-space:normal}
 body .katex .katex-html{white-space:normal;line-height:1.7}
@@ -53,4 +53,4 @@ body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;ve
  body .lesson-course .article-layout{display:block;width:100%;overflow-x:clip}
  body .lesson-course .article-toc{display:none}
 }
-@media(max-width:1000px){body .katex-display.katex-auto-wrap{font-size:.78em}}
+@media(max-width:1000px){body .katex-display.katex-auto-wrap{font-size:.78em}body .katex-display.katex-auto-wrap .mtable{margin-left:0!important;margin-right:auto!important}body .katex-display.katex-auto-wrap .col-align-l,body .katex-display.katex-auto-wrap .col-align-c,body .katex-display.katex-auto-wrap .col-align-r{text-align:left!important}}

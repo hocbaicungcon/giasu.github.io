@@ -34,7 +34,6 @@ document.querySelectorAll('[data-geometry="right-triangles"]').forEach(lab=>{
   svg.innerHTML='<title>Kéo B hoặc C; góc A và D luôn bằng 90 độ</title>'+triangle([0,0],false)+triangle(offset,true);
   const leftB=[origin[0]+model.points[1][0]*scale,origin[1]+model.points[1][1]*scale],leftC=[origin[0]+model.points[2][0]*scale,origin[1]+model.points[2][1]*scale],rightOffset=origin.map((v,i)=>v+offset[i]);
   const rightB=[rightOffset[0]+model.points[1][0]*scale,rightOffset[1]+model.points[1][1]*scale],rightC=[rightOffset[0]+model.points[2][0]*scale,rightOffset[1]+model.points[2][1]*scale];
-  scene.objects=[];scene.points.clear();
   scene.point('A',origin[0],origin[1],{label:'A',color:'var(--diagram-ink)',draggable:false,radius:5})
    .point('B',...leftB,{label:p===1?'B ≡ E':'B',color:'var(--diagram-ink)',radius:5,minX:origin[0]+2*scale,maxX:origin[0]+8*scale,minY:origin[1],maxY:origin[1],step:scale/4,constrain:([x])=>[x,origin[1]]})
    .point('C',...leftC,{label:p===1?'C ≡ F':'C',color:'var(--diagram-ink)',radius:5,minX:origin[0],maxX:origin[0],minY:origin[1]-8*scale,maxY:origin[1]-2*scale,step:scale/4,constrain:([,y])=>[origin[0],y]})
