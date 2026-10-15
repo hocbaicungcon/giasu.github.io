@@ -99,7 +99,7 @@ Bài viết này tuyển chọn **15 bài tập mẫu** để luyện các dạn
 
 ## 4. Đáp án và lời giải
 
-### Bài 1
+**Bài 1**
 
 Hai đàn bò có tất cả số con là:
 
@@ -107,7 +107,7 @@ $46+38=84$ (con)
 
 **Đáp số: 84 con bò.**
 
-### Bài 2
+**Bài 2**
 
 Hồng có tất cả số que tính là:
 
@@ -115,7 +115,7 @@ $32+18=50$ (que tính)
 
 **Đáp số: 50 que tính.**
 
-### Bài 3
+**Bài 3**
 
 Hùng còn lại số viên bi là:
 
@@ -123,7 +123,7 @@ $56-19=37$ (viên bi)
 
 **Đáp số: 37 viên bi.**
 
-### Bài 4
+**Bài 4**
 
 Lớp 2B trồng được số cây là:
 
@@ -131,7 +131,7 @@ $74-36=38$ (cây)
 
 **Đáp số: 38 cây.**
 
-### Bài 5
+**Bài 5**
 
 Ngày thứ hai cửa hàng bán được số cái ca là:
 
@@ -139,7 +139,7 @@ $24+18=42$ (cái ca)
 
 **Đáp số: 42 cái ca.**
 
-### Bài 6
+**Bài 6**
 
 Đoạn dây thứ hai dài là:
 
@@ -147,7 +147,7 @@ $46-18=28$ (dm)
 
 **Đáp số: 28 dm.**
 
-### Bài 7
+**Bài 7**
 
 Lúc này An có nhiều hơn Bình số viên bi là:
 
@@ -155,7 +155,7 @@ $16+6=22$ (viên bi)
 
 **Đáp số: 22 viên bi.**
 
-### Bài 8
+**Bài 8**
 
 Bao gạo thứ hai nặng là:
 
@@ -163,7 +163,7 @@ $54+16=70$ (kg)
 
 **Đáp số: 70 kg.**
 
-### Bài 9
+**Bài 9**
 
 a) Dưới ao còn số vịt là:
 
@@ -183,7 +183,7 @@ $110+90=200$ (con)
 
 **Đáp số:** a) 90 con; b) 110 con; c) 20 con; d) 200 con.
 
-### Bài 10
+**Bài 10**
 
 Con vịt nặng là:
 
@@ -199,7 +199,7 @@ $11-1=10$ (kg)
 
 **Đáp số: 10 kg.**
 
-### Bài 11
+**Bài 11**
 
 Bao gạo thứ hai nặng là:
 
@@ -207,7 +207,7 @@ $50+16=66$ (kg)
 
 **Đáp số: 66 kg.**
 
-### Bài 12
+**Bài 12**
 
 Lúc này An có nhiều hơn Bình số viên bi là:
 
@@ -215,7 +215,7 @@ $12+6=18$ (viên bi)
 
 **Đáp số: 18 viên bi.**
 
-### Bài 13
+**Bài 13**
 
 Lớp 2B trồng được số cây là:
 
@@ -223,7 +223,7 @@ $70-36=34$ (cây)
 
 **Đáp số: 34 cây.**
 
-### Bài 14
+**Bài 14**
 
 Ngày thứ hai cửa hàng bán được số cái ca là:
 
@@ -231,7 +231,7 @@ $23+18=41$ (cái ca)
 
 **Đáp số: 41 cái ca.**
 
-### Bài 15
+**Bài 15**
 
 Mỗi bạn mua số viên bi là:
 
