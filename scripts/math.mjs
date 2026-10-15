@@ -3,7 +3,8 @@ const escapeText=source=>source.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','
 // Unicode prose labels use the site's font; mathematical accents retain KaTeX metrics.
 export function renderMath(tex,options={}){
  const original=String(tex).replace(/&lt;/g,'<').replace(/&gt;/g,'>');
- const source=options.displayMode&&!options.skipResponsiveWrap?wrapLongDisplayFormula(original):original,labels=[];
+ const source=wrapLongDisplayFormula(original,32,60);
+ const displayMode=!!options.displayMode||source!==original,labels=[];
  const prepared=source.replace(/\\(?:text|textsf|textrm|textnormal|mathrm)\{([^{}\\$]*)\}/g,(match,label)=>{
   if(!/[\u00c0-\u024f\u1ea0-\u1ef9]/i.test(label))return match;
   const plain=label.normalize('NFC'),ascii=plain.normalize('NFD').replace(/\p{M}/gu,'').replace(/đ/g,'d').replace(/Đ/g,'D');
@@ -11,7 +12,7 @@ export function renderMath(tex,options={}){
  });
  const macros={...options.macros,'\\mathrm':'\\mathsf','\\textrm':'\\textsf','\\textnormal':'\\textsf','\\text':'\\textsf'};
  const strict=(code,message,token)=>code==='htmlExtension'&&labels.length?'ignore':typeof options.strict==='function'?options.strict(code,message,token):options.strict??'warn';
- let html=katex.renderToString(`\\mathsf{${prepared}\n}`,{...options,strict,trust:context=>context.command==='\\htmlClass'&&/^math-vietnamese vtext-\d+$/.test(context.class||''),macros});
+ let html=katex.renderToString(`\\mathsf{${prepared}\n}`,{...options,displayMode,strict,trust:context=>context.command==='\\htmlClass'&&/^math-vietnamese vtext-\d+$/.test(context.class||''),macros});
  for(const [index,{plain,ascii}] of labels.entries()){
   const opening=new RegExp(`<span class="[^"]*\\bvtext-${index}\\b[^"]*">`).exec(html);
   if(opening){const start=opening.index+opening[0].length;let depth=1,end=start;const tags=/<\/?span\b[^>]*>/g;tags.lastIndex=start;let tag;
@@ -24,24 +25,41 @@ export function renderMath(tex,options={}){
   const semantic=katex.renderToString(`\\mathsf{${source}\n}`,{...options,macros,strict:(code,message,token)=>code==='unknownSymbol'?'ignore':strict(code,message,token),output:'mathml',trust:false}).replace(/^<span class="katex">|<\/span>$/g,'');
   html=html.replace(/<span class="katex-mathml">[\s\S]*?<\/math><\/span>/,()=>`<span class="katex-mathml">${semantic}</span>`);
  }
+ if(source!==original)html=html.replace('class="katex-display"','class="katex-display katex-auto-wrap"');
  return html.replace(/(<annotation encoding="application\/x-tex">)[\s\S]*?(<\/annotation>)/,(_,start,end)=>start+escapeText(original)+end);
 }
 
 
-// Split only long display math at top-level relations/operators; grouped terms stay whole.
-export function wrapLongDisplayFormula(source,maxLine=52){
- if(source.length<=Math.max(82,maxLine*1.6)||/\\begin\s*\{/.test(source))return source;
- const operators=[];let depth=0;
+// Break only long equation chains at top-level relations. Inline fragments and
+// short formulas keep their authored layout; implications stay attached to conclusions.
+export function wrapLongDisplayFormula(source,maxLine=52,minLength=60){
+ if(source.length<minLength||/\\begin\s*\{/.test(source))return source;
+ const breaks=[];let depth=0;
  for(let i=0;i<source.length;i++){
-  const ch=source[i];
-  if(ch==='\\'){const command=source.slice(i).match(/^\\[A-Za-z]+/)?.[0];if(command){if(command==='\\left')depth++;if(command==='\\right')depth=Math.max(0,depth-1);i+=command.length-1;continue;}i++;continue;}
-  if(ch==='{'){depth++;continue;}if(ch==='}'){depth--;continue;}
-  if(depth===0&&['=','+','−','-'].includes(ch)){if(ch!=='-'||i>0&&/[\w)}\]]/.test(source[i-1]))operators.push(i);}
+  if(source[i]==='\\'){
+   const command=source.slice(i).match(/^\\[A-Za-z]+/)?.[0];
+   if(command){if(command==='\\left')depth++;if(command==='\\right')depth=Math.max(0,depth-1);if(depth===0&&command==='\\implies')breaks.push({at:i,kind:'implies'});i+=command.length-1;continue;}
+   i++;continue;
+  }
+  if(source[i]==='{'){depth++;continue;}if(source[i]==='}'){depth=Math.max(0,depth-1);continue;}
+  if(depth===0&&source[i]==='=')breaks.push({at:i,kind:'relation'});
  }
- if(!operators.length)return source;
- const cuts=[];let start=0,index=0;
- while(source.length-start>maxLine){let candidate=-1;while(index<operators.length&&operators[index]<start+maxLine){if(operators[index]>start+8)candidate=operators[index];index++;}if(candidate<0){while(index<operators.length&&operators[index]<=start)index++;if(index>=operators.length)break;candidate=operators[index++];}cuts.push(candidate);start=candidate;}
- if(!cuts.length)return source;
- const lines=[];let from=0;for(const cut of cuts){const line=source.slice(from,cut).trim();if(line)lines.push(line);from=cut;}const last=source.slice(from).trim();if(last)lines.push(last);
- return lines.length>1?`\\begin{aligned}${lines.map((line,i)=>`${i?'&':''}${line}`).join('\\\\')}\\end{aligned}`:source;
+ const implication=breaks.find(point=>point.kind==='implies');
+ if(implication){
+  const before=source.slice(0,implication.at).trim(),after=source.slice(implication.at).trim(),tailEquals=breaks.filter(point=>point.kind==='relation'&&point.at>implication.at);
+  if(after.length>maxLine&&tailEquals.length>1){
+   const cut=tailEquals[1].at,conclusion=source.slice(implication.at,cut).trim(),result=source.slice(cut).trim();
+   return `\\begin{aligned}${before}\\\\&${conclusion}\\\\&${result}\\end{aligned}`;
+  }
+  return `\\begin{aligned}${before}\\\\&${after}\\end{aligned}`;
+ }
+ if(breaks.length<2)return source;
+ const rows=[];let start=0,index=0;
+ while(source.length-start>maxLine){let candidate=-1;
+  while(index<breaks.length&&breaks[index].at<start+maxLine){if(breaks[index].at>start+12)candidate=index;index++;}
+  if(candidate<0)break;
+  const point=breaks[candidate],row=source.slice(start,point.at).trim();if(!row)break;rows.push(row);start=point.at;
+ }
+ const last=source.slice(start).trim();if(rows.length&&last)rows.push(last);
+ return rows.length>1?`\\begin{aligned}${rows.map((row,i)=>`${i?'&':''}${row}`).join('\\\\')}\\end{aligned}`:source;
 }

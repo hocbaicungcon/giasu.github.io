@@ -33,13 +33,24 @@ html[data-theme="dark"] body :is(.prose,.exam-question,.exam-review,.lesson-solu
 .triangle-angle-canvas{display:block;width:100%;max-width:560px;height:auto;margin-inline:auto;touch-action:pan-y}
 .triangle-angle-canvas [data-vertex]{cursor:grab;touch-action:none}
 .triangle-angle-canvas text{font-size:16px}
-.diagram-tools{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
-.diagram-viewport{max-width:100%;overflow:auto}
-.diagram-hide-labels text{visibility:hidden}
-body .prose .diagram-tools button{font:inherit;font-size:14px;padding:4px 8px;min-height:32px}
 
 /* Display formulas wrap through an aligned layout generated only for long expressions. */
 body .katex-display{max-width:100%;overflow:visible;white-space:normal}
 body .katex-display>.katex{display:block;max-width:100%;white-space:normal}
 body .katex .katex-html{white-space:normal;line-height:1.7}
 body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;vertical-align:baseline;box-sizing:border-box}
+
+/* Keep wide lesson content inside its own viewport; tables remain locally scrollable. */
+@media(max-width:1000px){
+ body:has(.lesson-course){width:100%;max-width:100%;overflow-x:clip}
+ body main.lesson-course.article-wrap.wrap{box-sizing:border-box;width:100%;max-width:100%;margin-inline:0;overflow-x:clip}
+ body .lesson-course .article-layout,
+ body .lesson-course .article-main,
+ body .lesson-course .prose,
+ body .lesson-course .related{box-sizing:border-box;width:100%;min-width:0;max-width:100%;overflow-wrap:anywhere}
+ body .lesson-course .prose :is(img,svg,video,iframe){max-width:100%;}
+ body .lesson-course .prose table{box-sizing:border-box;max-width:100%}
+ body .lesson-course .article-layout{display:block;width:100%;overflow-x:clip}
+ body .lesson-course .article-toc{display:none}
+}
+@media(max-width:1000px){body .katex-display.katex-auto-wrap{font-size:.78em}}
