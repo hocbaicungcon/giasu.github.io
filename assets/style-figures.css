@@ -38,12 +38,8 @@ html[data-theme="dark"] body :is(.prose,.exam-question,.exam-review,.lesson-solu
 .diagram-hide-labels text{visibility:hidden}
 body .prose .diagram-tools button{font:inherit;font-size:14px;padding:4px 8px;min-height:32px}
 
-/* Formula rows wrap at mathematical operators; structured subexpressions stay intact. */
+/* Display formulas wrap through an aligned layout generated only for long expressions. */
 body .katex-display{max-width:100%;overflow:visible;white-space:normal}
 body .katex-display>.katex{display:block;max-width:100%;white-space:normal}
 body .katex .katex-html{white-space:normal;line-height:1.7}
-body .katex .katex-html>.base{white-space:normal}
-body .katex .katex-html>.base>.mord{white-space:normal}
 body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;vertical-align:baseline;box-sizing:border-box}
-body .katex .math-break{display:inline}
-body .katex .katex-html>.base>.mord>span{white-space:nowrap}
