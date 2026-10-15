@@ -265,15 +265,17 @@ Khi gặp đường gấp khúc nối giữa hai đường thẳng song song (m�
 #### Ví dụ 2
 Cho hình vẽ: hai tia $Ax$ và $Cy$ song song với nhau ($Ax \parallel Cy$). Một điểm $B$ nằm giữa hai đường thẳng tạo thành góc $\widehat{xAB} = 40^\circ$ và $\widehat{BCy} = 50^\circ$ (hai tia $Ax, Cy$ cùng hướng sang phải). Tính số đo của góc $\widehat{ABC}$.
 
-```
-      A ------------------------> x
-       \
-        \
-         B
-        /
-       /
-      C ------------------------> y
-```
+<figure class="lesson-diagram">
+  <svg viewBox="0 0 520 300" role="img" aria-labelledby="parallel-rays-title parallel-rays-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="parallel-rays-title">Hai tia song song và đường gấp khúc ABC</title><desc id="parallel-rays-desc">Hai đường ngang song song Ax và Cy; đoạn gấp khúc nối A, B, C.</desc>
+    <path d="M45 55H475M45 245H475" fill="none" stroke="#27765b" stroke-width="3"/>
+    <path d="m461 47 14 8-14 8M461 237l14 8-14 8" fill="none" stroke="#27765b" stroke-width="3"/>
+    <path d="M150 55 270 150 150 245" fill="none" stroke="#3567a5" stroke-width="3"/>
+    <circle cx="150" cy="55" r="4" fill="#3567a5"/><circle cx="270" cy="150" r="4" fill="#3567a5"/><circle cx="150" cy="245" r="4" fill="#3567a5"/>
+    <g fill="#243b53" font-family="system-ui,sans-serif" font-size="18" font-weight="700"><text x="132" y="42">A</text><text x="280" y="155">B</text><text x="132" y="272">C</text><text x="482" y="61">x</text><text x="482" y="251">y</text></g>
+    <g stroke="#d19a2a" stroke-width="2"><path d="M58 47v16m9-16v16M58 237v16m9-16v16"/></g>
+  </svg><figcaption>Hai tia $Ax$ và $Cy$ song song; đường gấp khúc đi qua $A, B, C$.</figcaption>
+</figure>
 
 **Lời giải:**
 Qua điểm $B$, kẻ tia $Bz$ song song với tia $Ax$ và cùng hướng sang phải ($Bz \parallel Ax$).  
@@ -356,10 +358,10 @@ Vì hai đường bờ sông song song với nhau ($a \parallel b$) và đườn
 type: choice
 question: 'Tiên đề Euclid khẳng định rằng: Qua một điểm ở ngoài một đường thẳng:'
 options:
-  - 'A) Có ít nhất hai đường thẳng song song với đường thẳng đó'
-  - 'B) Chỉ có một đường thẳng song song với đường thẳng đó'
-  - 'C) Có vô số đường thẳng song song với đường thẳng đó'
-  - 'D) Không có đường thẳng nào song song với đường thẳng đó'
+  - 'Có ít nhất hai đường thẳng song song với đường thẳng đó'
+  - 'Chỉ có một đường thẳng song song với đường thẳng đó'
+  - 'Có vô số đường thẳng song song với đường thẳng đó'
+  - 'Không có đường thẳng nào song song với đường thẳng đó'
 answer: 2
 explanation: 'Tiên đề Euclid: Qua một điểm ở ngoài một đường thẳng, chỉ có duy nhất một đường thẳng song song với đường thẳng đó.'
 ```
@@ -368,10 +370,10 @@ explanation: 'Tiên đề Euclid: Qua một điểm ở ngoài một đường t
 type: choice
 question: 'Cho a // b, đường thẳng c cắt cả a và b. Nếu một góc so le trong bằng 82^\circ thì góc so le trong còn lại bằng:'
 options:
-  - 'A) 98^\circ'
-  - 'B) 82^\circ'
-  - 'C) 164^\circ'
-  - 'D) 41^\circ'
+  - '98^\circ'
+  - '82^\circ'
+  - '164^\circ'
+  - '41^\circ'
 answer: 2
 explanation: 'Theo tính chất của hai đường thẳng song song, hai góc so le trong luôn bằng nhau. Vì vậy góc còn lại cũng bằng 82^\circ.'
 ```
@@ -380,10 +382,10 @@ explanation: 'Theo tính chất của hai đường thẳng song song, hai góc 
 type: choice
 question: 'Cho a // b bị cắt bởi cát tuyến c. Hai góc trong cùng phía có số đo là:'
 options:
-  - 'A) Luôn luôn bằng nhau'
-  - 'B) Luôn luôn đối đỉnh nhau'
-  - 'C) Có tổng số đo bằng 180^\circ'
-  - 'D) Có tổng số đo bằng 90^\circ'
+  - 'Luôn luôn bằng nhau'
+  - 'Luôn luôn đối đỉnh nhau'
+  - 'Có tổng số đo bằng 180^\circ'
+  - 'Có tổng số đo bằng 90^\circ'
 answer: 3
 explanation: 'Theo tính chất của hai đường thẳng song song: Hai góc trong cùng phía bù nhau, tức là tổng số đo của chúng bằng 180^\circ.'
 ```
@@ -392,10 +394,10 @@ explanation: 'Theo tính chất của hai đường thẳng song song: Hai góc 
 type: choice
 question: 'Nếu đường thẳng c vuông góc với đường thẳng a, và a song song với b thì:'
 options:
-  - 'A) c song song với b'
-  - 'B) c vuông góc với b'
-  - 'C) c trùng với b'
-  - 'D) c không cắt b'
+  - 'c song song với b'
+  - 'c vuông góc với b'
+  - 'c trùng với b'
+  - 'c không cắt b'
 answer: 2
 explanation: 'Định lý từ vuông góc đến song song: Một đường thẳng vuông góc với một trong hai đường thẳng song song thì nó cũng vuông góc với đường thẳng kia.'
 ```
@@ -404,10 +406,10 @@ explanation: 'Định lý từ vuông góc đến song song: Một đường th�
 type: choice
 question: 'Cho ba đường thẳng phân biệt a, b, c. Biết a // c và b // c. Kết luận nào sau đây đúng?'
 options:
-  - 'A) a cắt b'
-  - 'B) a vuông góc với b'
-  - 'C) a // b'
-  - 'D) a trùng với b'
+  - 'a cắt b'
+  - 'a vuông góc với b'
+  - 'a // b'
+  - 'a trùng với b'
 answer: 3
 explanation: 'Tính chất bắc cầu: Hai đường thẳng phân biệt cùng song song với một đường thẳng thứ ba thì song song với nhau.'
 ```
@@ -416,10 +418,10 @@ explanation: 'Tính chất bắc cầu: Hai đường thẳng phân biệt cùng
 type: choice
 question: 'Cho a // b bị cắt bởi cát tuyến c. Một góc trong cùng phía bằng 3 lần góc trong cùng phía kia. Số đo của góc lớn hơn là:'
 options:
-  - 'A) 45^\circ'
-  - 'B) 90^\circ'
-  - 'C) 135^\circ'
-  - 'D) 120^\circ'
+  - '45^\circ'
+  - '90^\circ'
+  - '135^\circ'
+  - '120^\circ'
 answer: 3
 explanation: 'Gọi góc bé là x thì góc lớn là 3x. Vì hai góc trong cùng phía bù nhau: x + 3x = 180^\circ => 4x = 180^\circ => x = 45^\circ. Góc lớn là 3 * 45^\circ = 135^\circ.'
 ```
@@ -428,10 +430,10 @@ explanation: 'Gọi góc bé là x thì góc lớn là 3x. Vì hai góc trong c�
 type: choice
 question: 'Cho hai đường thẳng song song a // b. Đường thẳng d cắt a tại điểm P. Kết luận nào sau đây là ĐÚNG?'
 options:
-  - 'A) d bắt buộc phải song song với b'
-  - 'B) d bắt buộc phải cắt b'
-  - 'C) d không bao giờ có điểm chung với b'
-  - 'D) d vuông góc với b'
+  - 'd bắt buộc phải song song với b'
+  - 'd bắt buộc phải cắt b'
+  - 'd không bao giờ có điểm chung với b'
+  - 'd vuông góc với b'
 answer: 2
 explanation: 'Theo hệ quả của Tiên đề Euclid: Nếu một đường thẳng cắt một trong hai đường thẳng song song thì nó cũng cắt đường thẳng còn lại.'
 ```
@@ -440,10 +442,10 @@ explanation: 'Theo hệ quả của Tiên đề Euclid: Nếu một đường th
 type: choice
 question: 'Cho tia Ax // By. Điểm O nằm giữa sao cho góc xAO = 30^\circ và góc OBy = 40^\circ (hai tia cùng hướng sang phải). Số đo góc nhọn AOB là:'
 options:
-  - 'A) 10^\circ'
-  - 'B) 70^\circ'
-  - 'C) 110^\circ'
-  - 'D) 120^\circ'
+  - '10^\circ'
+  - '70^\circ'
+  - '110^\circ'
+  - '120^\circ'
 answer: 2
 explanation: 'Kẻ tia Oz // Ax qua O, ta có góc AOz = 30^\circ (so le trong) và góc zOB = 40^\circ (so le trong). Vậy góc AOB = 30^\circ + 40^\circ = 70^\circ.'
 ```
@@ -452,10 +454,10 @@ explanation: 'Kẻ tia Oz // Ax qua O, ta có góc AOz = 30^\circ (so le trong) 
 type: choice
 question: 'Khẳng định nào sau đây là SAI?'
 options:
-  - 'A) Hai đường thẳng phân biệt cùng song song với đường thẳng thứ ba thì song song với nhau'
-  - 'B) Hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba thì song song với nhau'
-  - 'C) Qua một điểm ở ngoài đường thẳng có vô số đường thẳng song song với đường thẳng đó'
-  - 'D) Một đường thẳng vuông góc với một trong hai đường thẳng song song thì vuông góc với đường còn lại'
+  - 'Hai đường thẳng phân biệt cùng song song với đường thẳng thứ ba thì song song với nhau'
+  - 'Hai đường thẳng phân biệt cùng vuông góc với đường thẳng thứ ba thì song song với nhau'
+  - 'Qua một điểm ở ngoài đường thẳng có vô số đường thẳng song song với đường thẳng đó'
+  - 'Một đường thẳng vuông góc với một trong hai đường thẳng song song thì vuông góc với đường còn lại'
 answer: 3
 explanation: 'Khẳng định C sai vì theo Tiên đề Euclid, qua một điểm ở ngoài đường thẳng CHỈ CÓ MỘT đường thẳng song song với nó.'
 ```
@@ -464,10 +466,10 @@ explanation: 'Khẳng định C sai vì theo Tiên đề Euclid, qua một đi�
 type: choice
 question: 'Cho a // b, một góc đồng vị có số đo bằng (5x - 20)^\circ và góc đồng vị kia có số đo bằng (3x + 10)^\circ. Giá trị của x là:'
 options:
-  - 'A) x = 10'
-  - 'B) x = 15'
-  - 'C) x = 20'
-  - 'D) x = 25'
+  - 'x = 10'
+  - 'x = 15'
+  - 'x = 20'
+  - 'x = 25'
 answer: 2
 explanation: 'Vì a // b nên hai góc đồng vị bằng nhau: 5x - 20 = 3x + 10 => 2x = 30 => x = 15.'
 ```
@@ -515,18 +517,17 @@ Nếu hai tia này hướng về hai phía đối nhau thì chúng là hai tia �
 Cho hai tia $Ax \parallel Dy$. Đường gấp khúc $A - B - C - D$ tạo thành các góc nhọn: $\widehat{xAB} = 30^\circ$, $\widehat{ABC} = 75^\circ$, $\widehat{BCD} = 85^\circ$.
 Tính số đo góc nhọn $\widehat{CDy}$ (các tia $Ax$ và $Dy$ cùng hướng sang phải).
 
-```
-      A ------------------------> x
-       \
-        \
-         B
-        /
-       /
-      C
-       \
-        \
-         D ---------------------> y
-```
+<figure class="lesson-diagram">
+  <svg viewBox="0 0 520 320" role="img" aria-labelledby="sawtooth-title sawtooth-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="sawtooth-title">Đường gấp khúc zic-zac giữa hai đường song song</title><desc id="sawtooth-desc">Đường gấp khúc A, B, C, D nối hai đường ngang song song Ax và Dy.</desc>
+    <path d="M45 45H475M45 275H475" fill="none" stroke="#27765b" stroke-width="3"/>
+    <path d="m461 37 14 8-14 8M461 267l14 8-14 8" fill="none" stroke="#27765b" stroke-width="3"/>
+    <path d="M125 45 285 130 205 205 365 275" fill="none" stroke="#3567a5" stroke-width="3"/>
+    <g fill="#3567a5"><circle cx="125" cy="45" r="4"/><circle cx="285" cy="130" r="4"/><circle cx="205" cy="205" r="4"/><circle cx="365" cy="275" r="4"/></g>
+    <g fill="#243b53" font-family="system-ui,sans-serif" font-size="18" font-weight="700"><text x="105" y="34">A</text><text x="294" y="128">B</text><text x="187" y="201">C</text><text x="373" y="281">D</text><text x="482" y="51">x</text><text x="482" y="281">y</text></g>
+    <g stroke="#d19a2a" stroke-width="2"><path d="M58 37v16m9-16v16M58 267v16m9-16v16"/></g>
+  </svg><figcaption>Đường gấp khúc $A-B-C-D$ nằm giữa hai tia song song $Ax$ và $Dy$.</figcaption>
+</figure>
 
 **Lời giải:**
 - Kẻ qua $B$ tia $B m \parallel Ax$ (hướng sang phải).
@@ -559,13 +560,14 @@ $$\widehat{A} + \widehat{B} + \widehat{C} = 180^\circ.$$
 **Lời giải:**
 Qua đỉnh $A$, kẻ đường thẳng $xy$ song song với cạnh đáy $BC$ (với tia $Ax$ và $Ay$ là hai tia đối nhau, $Ax$ nằm về phía điểm $B$, $Ay$ nằm về phía điểm $C$).
 
-```
-         x <--------- A ---------> y
-                     / \
-                    /   \
-                   /     \
-                  B-------C
-```
+<figure class="lesson-diagram">
+  <svg viewBox="0 0 520 300" role="img" aria-labelledby="triangle-parallel-title triangle-parallel-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="triangle-parallel-title">Đường thẳng qua A song song với BC</title><desc id="triangle-parallel-desc">Tam giác ABC có đường xy đi qua A và song song với cạnh BC.</desc>
+    <path d="M45 55H475M145 245H375M260 55 145 245M260 55 375 245" fill="none" stroke="#3567a5" stroke-width="3"/>
+    <g fill="#243b53" font-family="system-ui,sans-serif" font-size="18" font-weight="700"><text x="246" y="44">A</text><text x="126" y="266">B</text><text x="379" y="266">C</text><text x="22" y="61">x</text><text x="481" y="61">y</text></g>
+    <g stroke="#d19a2a" stroke-width="2"><path d="M58 47v16m9-16v16M157 237v16m9-16v16"/></g>
+  </svg><figcaption>Kẻ đường thẳng $xy$ qua $A$ sao cho $xy \parallel BC$.</figcaption>
+</figure>
 
 1. Vì $xy \parallel BC$ bị cắt bởi cát tuyến $AB$:
    Hai góc $\widehat{xAB}$ và $\widehat{ABC}$ ở vị trí so le trong, do đó:
@@ -777,13 +779,16 @@ D. Song song với nhau.
 **Bài 1 (3,0 điểm).** Cho hình vẽ bên dưới: biết đường thẳng $a \parallel b$. Cát tuyến $c$ cắt $a$ tại $A$ và cắt $b$ tại $B$ sao cho góc $\widehat{A_4} = 110^\circ$.
 Cát tuyến $d$ vuông góc với $a$ tại $C$ và cắt $b$ tại $D$.
 
-```
-         c             d
-         |             |
-   a ----A-------------C----
-         |             |
-   b ----B-------------D----
-```
+<figure class="lesson-diagram">
+  <svg viewBox="0 0 520 300" role="img" aria-labelledby="parallel-lines-title parallel-lines-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="parallel-lines-title">Hai đường thẳng song song bị cắt bởi c và d</title><desc id="parallel-lines-desc">Hai đường a và b song song; c cắt chúng lần lượt tại A và B, d vuông góc với a tại C và cắt b tại D.</desc>
+    <path d="M55 75H475M55 225H475" fill="none" stroke="#27765b" stroke-width="3"/>
+    <path d="M175 25 215 275M365 25V275" fill="none" stroke="#3567a5" stroke-width="3"/>
+    <path d="M353 75h12v12" fill="none" stroke="#c27b16" stroke-width="2.5"/>
+    <g fill="#243b53" font-family="system-ui,sans-serif" font-size="18" font-weight="700"><text x="34" y="80">a</text><text x="34" y="230">b</text><text x="163" y="20">c</text><text x="356" y="20">d</text><text x="176" y="69">A</text><text x="218" y="230">B</text><text x="370" y="69">C</text><text x="370" y="230">D</text></g>
+    <g stroke="#d19a2a" stroke-width="2"><path d="M70 67v16m9-16v16M70 217v16m9-16v16"/></g>
+  </svg><figcaption>$a \parallel b$; cát tuyến $c$ cắt hai đường tại $A, B$, còn $d \perp a$ tại $C$.</figcaption>
+</figure>
 
 a) Chứng minh rằng đường thẳng $d$ vuông góc với đường thẳng $b$ tại $D$.  
 b) Tính số đo của các góc tại đỉnh $B$: góc so le trong $\widehat{B_2}$, góc đồng vị $\widehat{B_4}$ và góc trong cùng phía $\widehat{B_1}$ với $\widehat{A_4}$.
@@ -847,14 +852,12 @@ Chứng minh rằng tia $Om$ song song với đường thẳng chứa tia $Cn$.
 
 ## VII. Tổng kết & Lời khuyên ôn tập
 
-<div style="background: var(--card-bg, #ffffff); border: 2px solid var(--primary-color, #2563eb); border-radius: 12px; padding: 20px; margin: 24px 0;">
-  <h4 style="margin-top: 0; color: var(--primary-color, #2563eb);">BỘ QUY TẮC VÀNG CẦN KHẮC CỐT GHI TÂM:</h4>
-  <ul style="margin-bottom: 0; line-height: 1.85;">
-    <li><b>Tiên đề Euclid:</b> Qua $1$ điểm ngoài đường thẳng $\implies$ vẽ được <b>duy nhất $1$</b> đường thẳng song song.</li>
-    <li><b>Tính chất hai đường song song:</b> Có song song $\implies$ So le trong bằng nhau, Đồng vị bằng nhau, Trong cùng phía bù nhau ($180^\circ$).</li>
-    <li><b>Chuyển đổi vuông góc - song song:</b>
-      $$\begin{cases} a \parallel b \\ c \perp a \end{cases} \implies c \perp b$$
-    </li>
-    <li><b>Kỹ thuật gãy khúc:</b> Gặp góc nhọn/tù ở đỉnh gấp khúc giữa hai đường thẳng song song $\implies$ <b>kẻ ngay đường phụ song song</b> qua đỉnh gãy!</li>
+<aside class="paper-note" role="note" aria-label="Ghi nhớ các quy tắc trọng tâm">
+  <h4>BỘ QUY TẮC VÀNG CẦN GHI NHỚ</h4>
+  <ul>
+    <li><b>Tiên đề Euclid:</b> Qua một điểm ngoài đường thẳng, chỉ có duy nhất một đường thẳng song song với đường thẳng đó.</li>
+    <li><b>Tính chất hai đường thẳng song song:</b> Góc so le trong bằng nhau, góc đồng vị bằng nhau, hai góc trong cùng phía bù nhau ($180^\circ$).</li>
+    <li><b>Vuông góc và song song:</b> Nếu $a \parallel b$ và $c \perp a$ thì $c \perp b$.</li>
+    <li><b>Đường gấp khúc:</b> Khi cần tính góc ở đỉnh gấp khúc giữa hai đường song song, có thể kẻ đường phụ song song qua đỉnh đó.</li>
   </ul>
-</div>
+</aside>

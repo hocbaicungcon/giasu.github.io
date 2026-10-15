@@ -1,274 +1,244 @@
 ---
-title: 100 bài toán có lời văn lớp 2
-description: Toán có lời văn lớp 2 có rất nhiều dạng khác nhau, tất cả các đề bài
-  đều được lồng ghép vào những phép tính với cách diễn đạt phong phú, dưới đây là
-  một số
+title: 'Bài toán có lời văn lớp 2: cách giải và 15 bài tập mẫu có đáp án'
+description: Hướng dẫn học sinh lớp 2 đọc đề, tóm tắt, chọn phép tính và trình bày lời giải. Gồm các dạng toán cơ bản cùng 15 bài tập mẫu có đáp án chi tiết.
 category: Toán học
 type: Bài tập
 date: '2024-10-02'
 tags:
-- Toán học
-- Toán 2
-- Toán có lời văn
+  - Toán học
+  - Toán 2
+  - Toán có lời văn
 grade: 2
 ---
+## 1. Các bước giải bài toán có lời văn
 
-## Cách giải dạng bài toán có lời văn lớp 2
+Bài toán có lời văn kể một tình huống bằng câu chữ. Nhiệm vụ của em là tìm dữ kiện đã biết, xác định điều cần tìm rồi chọn phép tính phù hợp.
 
-Toán có lời văn là dạng toán với đề bài cho dữ liệu dưới dạng lời văn, từ đó học sinh phân tích và tìm giá trị bài toán yêu cầu.
+1. **Đọc kỹ đề:** Gạch chân các số liệu và câu hỏi.
+2. **Tóm tắt:** Ghi ngắn gọn dữ kiện và mối quan hệ giữa chúng.
+3. **Chọn phép tính:** Dựa vào tình huống để quyết định cộng, trừ, nhân hoặc chia; không chọn phép tính chỉ vì thấy một từ khóa.
+4. **Trình bày:** Viết câu lời giải, phép tính kèm đơn vị và đáp số.
 
-Toán có lời văn lớp 2 có rất nhiều dạng khác nhau, tất cả các đề bài đều được lồng ghép vào những phép tính với cách diễn đạt phong phú, dưới đây là một số dạng toán có lời văn lớp 2 thường gặp:
+> [!NOTE]
+> **Mẫu trình bày**
+> - Lời giải: Nêu đại lượng cần tìm.
+> - Phép tính: Ghi phép tính và đơn vị.
+> - Đáp số: Ghi kết quả cùng đơn vị.
 
-– Dạng 1: Tìm số bị trừ
+## 2. Những dạng toán thường gặp
 
-Với dạng toán này, đề bài sẽ đưa ra một số trừ và thừa số của nó, yêu cầu học sinh đi tìm số bị trừ chưa biết.
+### Dạng 1: Tìm số ban đầu
 
-Ví dụ: Anh trai có 1 giỏ cam, Anh cho em 5 quả thì còn lại 14 quả. Hỏi Anh trai có bao nhiêu quả trong giỏ lúc đầu?
+Biết đã bớt đi một số lượng và biết phần còn lại, muốn tìm số ban đầu thì cộng phần đã bớt với phần còn lại.
 
-– Dạng 2: Tìm thừa số
+**Ví dụ:** Anh cho em 5 quả cam thì còn 14 quả. Lúc đầu anh có $14+5=19$ quả cam.
 
-Dạng toán này đã quen thuộc với các em học sinh nhưng thông qua câu hỏi miệng, lúc này bài toán này được đưa vào bài toán có lời văn.
+### Dạng 2: Bớt đi, tìm phần còn lại
 
-Ví dụ: Mẹ có 10 cái bánh, cho bé 5 cái. Hỏi mẹ còn bao nhiêu cái bánh?
+Lấy số lượng ban đầu trừ số đã bớt.
 
-– Dạng 3: Tìm số hạng chưa biết
+**Ví dụ:** Mẹ có 10 cái bánh, cho bé 5 cái. Mẹ còn $10-5=5$ cái bánh.
 
-Với dạng này các em đọc đề bài rồi xác định được tổng và một số hạng đã biết để tìm số hạng kia.
+### Dạng 3: Tìm số hạng chưa biết
 
-Ví dụ: Trong giỏ đựng cam và quýt có 30 quả, trong đó có 20 quả cam. Hỏi có bao nhiêu quả quýt trong giỏ?
+Biết tổng và một số hạng, lấy tổng trừ số hạng đã biết.
 
-– Dạng 4: Tìm số trừ
+**Ví dụ:** Có 30 quả cam và quýt, trong đó có 20 quả cam. Số quả quýt là $30-20=10$ quả.
 
-Bài toán sẽ cho biết số bị trừ và thừa số, học sinh sẽ xác định và tìm số trừ cần biết.
+### Dạng 4: Tìm số đã bớt
 
-Ví dụ: Một bến xe có 50 ô tô, khi một số xe ô tô rời đi, trong bến còn lại 35 chiếc. Hỏi có bao nhiêu ô tô đã rời bến?
+Biết số lượng ban đầu và phần còn lại, lấy số ban đầu trừ phần còn lại.
 
-– Dạng 5: Bài toán nhiều hơn, ít hơn
+**Ví dụ:** Bến xe có 50 ô tô, còn lại 35 ô tô sau khi một số xe rời đi. Số xe đã rời bến là $50-35=15$ chiếc.
 
-Khi gặp dạng toán này, các em học sinh cần biết cách xác định: số lớn, số bé, phần “nhiều hơn/ít hơn”. Vậy khi dạy dạng toán này các em chỉ cần vận dụng công thức:
+### Dạng 5: Bài toán nhiều hơn, ít hơn
 
-– Số lớn = số bé + phần “nhiều hơn”
+Trước khi tính, hãy xác định rõ số lớn, số bé và phần chênh lệch.
 
-– Số bé = Số lớn – phần “ít hơn”
+- Số lớn = số bé + phần nhiều hơn.
+- Số bé = số lớn − phần nhiều hơn.
 
-Ví dụ:
+**Ví dụ:** Lớp 2B có 20 bạn nữ. Số bạn nam ít hơn số bạn nữ 2 bạn. Lớp có $20-2=18$ bạn nam.
 
-Bài toán ít hơn: Lớp 2B có 20 bạn nữ, bạn nam của lớp ít hơn số bạn nữ là 2 bạn. Hỏi lớp 2B có bao nhiêu bạn nam?
+### Dạng 6: Các nhóm bằng nhau
 
-Bài toán nhiều hơn: Tuần trước em được 7 điểm 10, tuần này em được nhiều hơn tháng trước 4 điểm 10. Hỏi tuần này em được mấy điểm 10?
+Khi mỗi nhóm có cùng số lượng:
 
-– Dạng 6: Tìm số bị chia
+- Tìm tổng số lượng: số nhóm × số lượng mỗi nhóm.
+- Tìm số lượng mỗi nhóm hoặc số nhóm: lấy tổng chia cho số đã biết.
 
-Dạng toán này cho trước thương và số chia, các em cần xác định giá trị của chúng và vận dụng công thức: Lấy thương nhân với số chia.
+**Ví dụ:** Có 4 giỏ cam, mỗi giỏ có 5 quả. Có tất cả $4×5=20$ quả cam.
 
-Ví dụ: Có một số quả cam đựng đều trong 4 giỏ đựng, trong mỗi giỏ có 5 quả cam. Hỏi có tất cả bao nhiêu quả cam?
+### Ghi nhớ khi chọn phép tính
 
-Các bước giải toán có lời văn lớp 2:
+Các từ “thêm”, “còn lại”, “nhiều hơn”, “ít hơn” giúp em hiểu tình huống nhưng không phải lúc nào cũng quyết định phép tính. Hãy tự hỏi: **Đề cho biết gì? Cần tìm gì? Đại lượng cần tìm liên hệ với dữ kiện bằng cách nào?**
 
-– Bước 1: Tìm hiểu nội dung bài toán
+## 3. Bài tập mẫu
 
-Các em cần đọc kĩ đề toán và tìm ra các từ khóa quan trọng như “ít hơn”, “nhiều hơn”, “tất cả”… để hiểu được ý nghĩa và nội dung đề toán. Sau đó là tóm tắt đề toán để đưa ra được phép tính cần thực hiện.
+Bài viết này tuyển chọn **15 bài tập mẫu** để luyện các dạng trên.
 
-– Bước 2: Tìm cách giải bài toán
+1. Đàn bò thứ nhất có 46 con, đàn bò thứ hai có 38 con. Hỏi hai đàn bò có tất cả bao nhiêu con?
+2. Hồng có 32 que tính, Lan cho Hồng thêm 18 que tính. Hỏi Hồng có tất cả bao nhiêu que tính?
+3. Hùng có 56 viên bi, Hùng cho Dũng 19 viên bi. Hỏi Hùng còn lại bao nhiêu viên bi?
+4. Hai lớp 2A và 2B trồng được 74 cây. Lớp 2A trồng được 36 cây. Hỏi lớp 2B trồng được bao nhiêu cây?
+5. Ngày thứ nhất, cửa hàng bán được 24 cái ca. Ngày thứ hai bán nhiều hơn ngày thứ nhất 18 cái ca. Hỏi ngày thứ hai cửa hàng bán được bao nhiêu cái ca?
+6. Đoạn dây thứ nhất dài 46 dm và dài hơn đoạn dây thứ hai 18 dm. Hỏi đoạn dây thứ hai dài bao nhiêu đề-xi-mét?
+7. An có nhiều hơn Bình 16 viên bi. An mua thêm 6 viên bi, Bình không mua thêm. Lúc này An có nhiều hơn Bình bao nhiêu viên bi?
+8. Bao gạo thứ nhất nặng 54 kg và nhẹ hơn bao gạo thứ hai 16 kg. Hỏi bao gạo thứ hai nặng bao nhiêu ki-lô-gam?
+9. Một đàn vịt có 100 con dưới ao và 100 con trên bờ. Có 10 con vịt dưới ao lên bờ. Hỏi sau đó:
+   - a) Dưới ao còn bao nhiêu con vịt?
+   - b) Trên bờ có bao nhiêu con vịt?
+   - c) Số vịt trên bờ nhiều hơn số vịt dưới ao bao nhiêu con?
+   - d) Cả trên bờ và dưới ao có tất cả bao nhiêu con vịt?
+10. Con ngỗng nặng 11 kg và nặng hơn con vịt 8 kg. Con gà nhẹ hơn con vịt 2 kg. Hỏi con ngỗng nặng hơn con gà bao nhiêu ki-lô-gam?
+11. Bao gạo thứ nhất nặng 50 kg và nhẹ hơn bao gạo thứ hai 16 kg. Hỏi bao gạo thứ hai nặng bao nhiêu ki-lô-gam?
+12. An có nhiều hơn Bình 12 viên bi. An mua thêm 6 viên bi, Bình không mua thêm. Lúc này An có nhiều hơn Bình bao nhiêu viên bi?
+13. Hai lớp 2A và 2B trồng được 70 cây. Lớp 2A trồng được 36 cây. Hỏi lớp 2B trồng được bao nhiêu cây?
+14. Ngày thứ nhất, cửa hàng bán được 23 cái ca. Ngày thứ hai bán nhiều hơn ngày thứ nhất 18 cái ca. Hỏi ngày thứ hai cửa hàng bán được bao nhiêu cái ca?
+15. Có 3 bạn. Mỗi bạn mua 2 viên bi đỏ và 3 viên bi vàng. Hỏi cả 3 bạn mua tất cả bao nhiêu viên bi?
 
-Chọn pháp tính giải phù hợp. Ví dụ chọn phép tính cộng nếu bài toán yêu cầu “nhiều hơn” hoặc “tất cả”, chọn phép tính trừu nếu “bớt” hoặc “tìm phần còn lại”…
+## 4. Đáp án và lời giải
 
-Đặt lời giải thích hợp. Áp dụng các lời giải đơn giản, có thể áp dụng với nhiều bài khác nhau như dựa vào câu hỏi của bài toán rồi bỏ bớt đi từ đầu “hỏi” và từ cuối “mấy” rồi thêm từ là để có lời giải: “Anh trai có số cam trong giỏ lúc đầu là:”
+### Bài 1
 
-– Bước 3: Trình bày bài giải:
+Hai đàn bò có tất cả số con là:
 
-Các dạng bài toán có lời văn cần được trình bày đầy đủ tóm tắt, lời giải, phép tính, đáp số. Các em cần trình bày sao cho khoa học và đẹp mắt.
+$46+38=84$ (con)
 
-## Bài tập toán lớp 2 có lời văn
+**Đáp số: 84 con bò.**
 
-Bài 1: Đàn bò thứ nhất có 46 con, đàn bò thứ hai có 38 con. Hỏi hai đàn bò có bao nhiêu con?
-
-Bài 2: Hồng có 32 que tính, Lan cho Hồng thêm 18 que tính. Hỏi Hồng có tất cả bao nhiêu que tính?
-
-Bài 3: Hùng có 56 viên bi, Hùng cho Dũng 19 viên bi. Hỏi Hùng còn lại bao nhiêu viên bi?
-
-Bài 4: Hai lớp 2A và 2B trồng được 74 cây, lớp 2A trồng được 36 cây. Hỏi lớp 2B trồng được bao nhiêu cây?
-
-Bài 5: Một cửa hàng ngày thứ nhất bán được 24 cái ca, ngày thứ hai bán nhiều hơn ngày thứ nhất 18 cái ca. Hỏi ngày thứ hai cửa hàng bán được bao nhiêu cái ca?
-
-Bài 6: Đoạn dây thứ nhất dài 46dm, đoạn dây thứ nhất dài hơn đoạn dây thứ hai 18dm. Hỏi đoạn dây thứ hai dài bao nhiêu đêximet?
-
-Bài 7: An có nhiều hơn Bình 16 viên bi, An lại mua thêm 6 viên bi. Hỏi An nhiều hơn Bình tất cả bao nhiêu viên bi?
-
-Bài 8: Bao gạo thứ nhất cân nặng 54kg, bao gạo thứ nhất nhẹ hơn bao gạo thứ hai 16kg. Hỏi bao gạo thứ hai nặng bao nhiêu kilogam?
-
-Bài 9: Một đàn vịt có 100 con ở dưới ao và 100 con ở trên bờ. Bây giờ 10 con vịt dưới ao lên bờ phơi nắng. Hỏi bây giờ:
-
-a) Dưới ao còn bao nhiêu con vịt?
-
-b) Trên bờ có bao nhiêu con vịt?
-
-c) Số vịt ở trên bờ và số vịt ở dưới ao hơn kém nhau bao nhiêu con?
-
-d) Số vịt ở cả trên bờ và dưới ao là bao nhiêu con?
-
-Bài 10: Con ngỗng cân nặng 11kg. Con ngỗng cân nặng hơn con vịt 8 kg. Con gà cân nặng ít hơn con vịt 2 kg. Hỏi con ngỗng cân nặng hơn con gà mấy kg?
-
-Bài 11: Bao gạo thứ nhất cân nặng 50kg, bao gạo thứ nhất nhẹ hơn bao gạo thứ hai 16kg. Hỏi bao gạo thứ hai cân nặng bao nhiêu?
-
-Bài 12: An có nhiều hơn Bình 12 viên bi, An lại mua thêm 6 viên bi. Hỏi An nhiều hơn Bình tất cả bao nhiêu viên bi?
-
-Bài 13: Hai lớp 2A và 2B trồng được 70 cây, lớp 2A trồng được 36 cây. Hỏi số cây lớp 2B trồng được là bao nhiêu?
-
-Bài 14: Một cửa hàng ngày thứ nhất bán được 23 cái ca, ngày thứ hai bán nhiều hơn ngày thứ nhất 18 cái ca. Hỏi ngày thứ hai cửa hàng đó bán được bao nhiêu cái ca?
-
-Bài 15: Có 3 bạn, mỗi bạn mua 2 viên bi đỏ, 3 viên bi vàng. Hỏi 3 bạn đã mua tổng cộng bao nhiêu viên bi?
-
-## Đáp án các dạng bài tập toán có lời văn lớp 2
-
-Bài 1:
-
-Hai đàn bò có số con là:
-
-46 + 38 = 84 (con)
-
-Đáp số: 84 con bò
-
-Bài 2:
+### Bài 2
 
 Hồng có tất cả số que tính là:
 
-32 + 18 = 50 (que tính)
+$32+18=50$ (que tính)
 
-Đáp số: 50 que tính
+**Đáp số: 50 que tính.**
 
-Bài 3:
+### Bài 3
 
 Hùng còn lại số viên bi là:
 
-56 – 19 = 37 (viên bị)
+$56-19=37$ (viên bi)
 
-Đáp số: 37 viên bi
+**Đáp số: 37 viên bi.**
 
-Bài 4:
+### Bài 4
 
 Lớp 2B trồng được số cây là:
 
-74 – 36 = 38 (cây)
+$74-36=38$ (cây)
 
-Đáp số: 38 cây
+**Đáp số: 38 cây.**
 
-Bài 5:
+### Bài 5
 
-Ngày thứ hai cửa hàng bán được số ca là:
+Ngày thứ hai cửa hàng bán được số cái ca là:
 
-24 + 18 = 42 (cái)
+$24+18=42$ (cái ca)
 
-Đáp số: 42 cái ca
+**Đáp số: 42 cái ca.**
 
-Bài 6:
+### Bài 6
 
-Đoạn dây thứ hai dài số đề xi mét là:
+Đoạn dây thứ hai dài là:
 
-46 – 18 = 28 (dm)
+$46-18=28$ (dm)
 
-Đáp số: 28dm
+**Đáp số: 28 dm.**
 
-Bài 7:
+### Bài 7
 
-An nhiều hơn Bình số viên bi là:
+Lúc này An có nhiều hơn Bình số viên bi là:
 
-16 + 6 = 22 (viên bi)
+$16+6=22$ (viên bi)
 
-Đáp số: 22 viên bi
+**Đáp số: 22 viên bi.**
 
-Bài 8:
+### Bài 8
 
-Bao gạo thứ hai nặng số ki-lô-gam là:
+Bao gạo thứ hai nặng là:
 
-54 + 16 = 70 (kg)
+$54+16=70$ (kg)
 
-Đáp số: 70kg
+**Đáp số: 70 kg.**
 
-Bài 9:
+### Bài 9
 
-a) Dưới ao bây giờ còn số con vịt là
+a) Dưới ao còn số vịt là:
 
-100 -10 = 90 (con vịt)
+$100-10=90$ (con)
 
-b) Trên bờ bâu giờ có số con vịt là:
+b) Trên bờ có số vịt là:
 
-100 + 10 = 110 (con vịt)
+$100+10=110$ (con)
 
-c) Số vịt ở trên bờ hơn số vịt ở dưới ao số con là:
+c) Trên bờ nhiều hơn dưới ao số vịt là:
 
-110 – 90 = 20 (con vịt)
+$110-90=20$ (con)
 
-d) Số vịt ở cả trên bờ và dưới ao là:
+d) Cả trên bờ và dưới ao có số vịt là:
 
-110 + 90 = 200 (con vịt)
+$110+90=200$ (con)
 
-Đáp số:
+**Đáp số:** a) 90 con; b) 110 con; c) 20 con; d) 200 con.
 
-a, 90 con vịt
+### Bài 10
 
-b, 110 con vịt
+Con vịt nặng là:
 
-c, 20 con vịt
+$11-8=3$ (kg)
 
-d, 200 con vịt
+Con gà nặng là:
 
-Bài 10:
+$3-2=1$ (kg)
 
-Con vịt nặng số ki-lô-gam là:
+Con ngỗng nặng hơn con gà là:
 
-11 – 8 = 3(kg)
+$11-1=10$ (kg)
 
-Con gà nặng số ki-lô-gam là:
+**Đáp số: 10 kg.**
 
-3 – 2 = 1 (kg)
+### Bài 11
 
-Con ngỗng nặng hơn con gà số ki-lô-gam là:
+Bao gạo thứ hai nặng là:
 
-11 – 1 = 10 (kg)
+$50+16=66$ (kg)
 
-Đáp số: 10kg
+**Đáp số: 66 kg.**
 
-Bài 11: 
+### Bài 12
 
-Số kilogam bao gạo thứ hai nặng:
+Lúc này An có nhiều hơn Bình số viên bi là:
 
-50 + 16 = 66 (kg)
+$12+6=18$ (viên bi)
 
-Đáp số: 66 kg
+**Đáp số: 18 viên bi.**
 
-Bài 12:
+### Bài 13
 
-Số viên bi An nhiều hơn Bình là:
+Lớp 2B trồng được số cây là:
 
-12 + 6 = 18 (viên bi)
+$70-36=34$ (cây)
 
-Đáp số: 18 viên bi
+**Đáp số: 34 cây.**
 
-Bài 13:
+### Bài 14
 
-Số cây mà lớp 2B trồng được là:
+Ngày thứ hai cửa hàng bán được số cái ca là:
 
-70 – 36 = 34 (cây)
+$23+18=41$ (cái ca)
 
-Đáp số: 34 cây
+**Đáp số: 41 cái ca.**
 
-Bài 14:
+### Bài 15
 
-Số ca mà cửa hàng bán được ở ngày thứ hai là:
+Mỗi bạn mua số viên bi là:
 
-23 + 18 = 41 (cái ca)
+$2+3=5$ (viên bi)
 
-Đáp số: 41 cái ca
+Cả 3 bạn mua số viên bi là:
 
-Bài 15:
+$5×3=15$ (viên bi)
 
-Số bi mà mỗi bạn mua được là:
-
-2 + 3 = 5 (viên bi)
-
-Số bi tổng cộng của 3 bạn là:
-
-5 x 3 = 15 (viên bi)
-
-Đáp số: 15 viên bi
+**Đáp số: 15 viên bi.**

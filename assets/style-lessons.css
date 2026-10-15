@@ -98,6 +98,68 @@
   color: #416d64;
 }
 
+.prose .paper-note {
+  position: relative;
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 28px 30px 22px;
+  color: #354438;
+  background: repeating-linear-gradient(to bottom, #fffbe6 0 31px, #e8e4c9 32px, #fffbe6 33px);
+  border: 0;
+  border-left: 5px solid #e2c15d;
+  box-shadow: 0 5px 14px #263c2c24;
+  transform: rotate(-.25deg);
+}
+.prose .paper-note::before {
+  content: "";
+  position: absolute;
+  width: 88px;
+  height: 18px;
+  top: -8px;
+  left: calc(50% - 44px);
+  background: #ead278b8;
+  transform: rotate(-2deg);
+}
+.prose .paper-note::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(225deg, #f0e6bc 0 49%, #d8cc9e 50% 54%, transparent 55%);
+}
+.prose .paper-note h4 {
+  margin: 0 0 12px;
+  color: #694f16;
+  font-size: 1rem;
+}
+.prose .paper-note ul { margin: 0; padding-left: 22px; }
+.prose .paper-note li { margin: 5px 0; line-height: 1.7; }
+html[data-theme="dark"] .prose .paper-note {
+  color: #e7eadb;
+  background: repeating-linear-gradient(to bottom, #333426 0 31px, #474530 32px, #333426 33px);
+  border-left-color: #b9a14e;
+  box-shadow: 0 5px 14px #0006;
+}
+html[data-theme="dark"] .prose .paper-note h4 { color: #ead58d; }
+html[data-theme="dark"] .prose .paper-note::before { background: #9b874f99; }
+
+.prose figure.lesson-diagram {
+  max-width: 640px;
+  margin: 22px auto;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface, #fff);
+}
+.prose figure.lesson-diagram svg { display: block; width: 100%; height: auto; }
+.prose figure.lesson-diagram figcaption { margin-top: 8px; color: var(--muted); font-size: .92rem; text-align: center; }
+@media (max-width: 600px) {
+  .prose .paper-note { padding: 24px 18px 18px; }
+  .prose figure.lesson-diagram { padding: 8px; }
+}
+
 .prose blockquote.callout-tip {
   background: #ecfdf5;
   border-left-color: #10b981;
