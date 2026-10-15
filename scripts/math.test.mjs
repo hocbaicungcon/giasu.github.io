@@ -32,9 +32,16 @@ test('math comparisons embedded in raw HTML decode angle entities before renderi
  const html=renderMath('a &lt; b &gt; 0',{throwOnError:true});assert.match(html,/class="katex"/);assert.match(html,/<annotation encoding="application\/x-tex">a &lt; b &gt; 0<\/annotation>/);
 });
 
-test('formula wrapping offers breaks at outer operators while preserving structured expressions',()=>{
- const html=renderMath('a+b=c+d',{displayMode:true});assert.match(html,/<wbr class="math-break">/);
- const fraction=renderMath('\\frac{a+b}{c+d}',{displayMode:true});assert.doesNotMatch(fraction,/<wbr/);
- const root=renderMath('\\sqrt{a+b}',{displayMode:true});assert.doesNotMatch(root,/<wbr/);
- assert.ok(html.includes('<annotation encoding="application/x-tex">a+b=c+d</annotation>'));
+test('display and inline formulas render without injected line breaks',()=>{
+ const display=renderMath('a+b=c+d',{displayMode:true});assert.doesNotMatch(display,/<wbr/);
+ const inline=renderMath('a+b=c+d');assert.doesNotMatch(inline,/<wbr/);
+ assert.ok(display.includes('<annotation encoding="application/x-tex">a+b=c+d</annotation>'));
+});
+
+test('only long display formulas split at top-level operators',async()=>{
+ const {wrapLongDisplayFormula}=await import('./math.mjs');
+ assert.equal(wrapLongDisplayFormula('a+b=c'), 'a+b=c');
+ assert.match(wrapLongDisplayFormula('x+'.repeat(60)+'y'),/\\begin\{aligned\}/);
+ assert.equal(wrapLongDisplayFormula('\\frac{a+b+c+d}{e+f+g+h}'), '\\frac{a+b+c+d}{e+f+g+h}');
+ const long=renderMath('x+'.repeat(60)+'y',{displayMode:true});assert.doesNotMatch(long,/class="katex-display"[^>]*>[\\s\\S]*?class="mrel"/);assert.ok(long.includes('<annotation encoding="application/x-tex">'));
 });

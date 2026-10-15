@@ -1,4 +1,3 @@
-import './math-layout.js';
 import './diagram-tools.js';
 import './right-triangles.js';
 /* credit: giasu.ai.vn */
