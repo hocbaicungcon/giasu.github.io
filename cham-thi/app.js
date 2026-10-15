@@ -85,7 +85,6 @@ function updateButtons() {
   $('undoCorners').classList.toggle('hidden', !cornerHistory.active(r)); $('cancelCorners').classList.toggle('hidden', !cornerHistory.active(r));
   $('undoCorners').disabled = !cornerHistory.canUndo(r) || loading; $('cancelCorners').disabled = !r || loading; $('clearBatch').disabled = !records.length && !clearFailed || exporting;
   $('newBatch').disabled = !records.length && !clearFailed || exporting;
-  $('export').disabled = !r?.answers || errors.length > 0;
   for (const id of ['exportExcel', 'exportSummaryPdf', 'exportAnnotatedPdf', 'exportAnnotatedZip', 'exportImage']) $(id).disabled = !records.length || !!errors.length || loading || exporting;
 }
 let scoreRefreshTimer = null;
@@ -686,12 +685,16 @@ function renderReviewList() {
   const count = select.options.length;
   summary.textContent = count ? `Bài cần xem lại (${count})` : 'Bài cần xem lại (0)';
   disclosure.hidden = !records.length;
-  if (!count) { const p = document.createElement('p'); p.className = 'hint'; p.textContent = 'Không có bài nào cần xem lại.'; host.append(p); return; }
+  if (!count) { const p = document.createElement('p'); p.className = 'hint'; p.textContent = 'Không có bài nào cần xem lại.'; host.append(p); $('reviewPaperPreview').hidden = true; return; }
   if (priorValue && [...select.options].some(option => option.value === priorValue)) select.value = priorValue;
   else if (activeId && [...select.options].some(option => option.value === activeId)) select.value = activeId;
   const button = document.createElement('button'); button.type = 'button'; button.className = 'small'; button.textContent = 'Mở bài để kiểm tra';
+  const preview = $('reviewPaperPreview'), image = $('reviewPreviewImage'), label = $('reviewPreviewLabel');
+  const updatePreview = () => { const record = records.find(item => item.id === select.value); if (!record?.source) { preview.hidden = true; return; } image.src = record.source.toDataURL('image/jpeg', .72); image.alt = `Ảnh thu nhỏ ${record.label}`; label.textContent = `${record.label} · Bấm để xem toàn màn hình`; preview.hidden = false; };
+  select.onchange = updatePreview;
   button.onclick = () => { const recordId = select.value; if (!recordId) return; document.querySelector('[data-view=results]').click(); selectRecord(recordId); $('results').scrollIntoView({block:'start'}); };
-  host.append(select, button);
+  $('reviewPreviewButton').onclick = () => { const recordId = select.value; if (recordId) paperViewer.open(recordId); };
+  host.append(select, button); updatePreview();
 }
 function showBatchComplete(batch, errors) {
   const stats = window.ChamTNBatchFeedback.statistics(batch.map(assess), [count(0),count(1),count(2)], errors.length);
@@ -799,11 +802,6 @@ async function exportReport(type) {
 }
 $('exportImage').onclick = () => exportReport('image');
 $('exportExcel').onclick = () => exportReport('excel'); $('exportSummaryPdf').onclick = () => exportReport('summary'); $('exportAnnotatedPdf').onclick = () => exportReport('annotated'); $('exportAnnotatedZip').onclick = () => exportReport('zip');
-$('export').onclick = () => {
-  const r = current(); if (!r?.answers) return;
-  const rows = Reports.detailRows([assess(r)], config()), csv = '\ufeff' + rows.map(row => row.map(value => '"' + String(value ?? '').replaceAll('"', '""') + '"').join(',')).join('\r\n');
-  download(csv, 'chi-tiet-bai-cham.csv', 'text/csv;charset=utf-8');
-};
 renderExamPicker(); if (exams.length) showKeys(preferredCode); updateConfiguration(); draw();
 async function restoreSession() {
   const surfaces = [document.querySelector('main'), document.querySelector('.mobile-nav')];
