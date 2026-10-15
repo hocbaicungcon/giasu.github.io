@@ -41,16 +41,14 @@ body.grading-page :is(.key-row input,.key-row select,.part-box input,.part-box s
  body.grading-page #answers .answer-item>span{min-width:0;font-size:11px;line-height:1.1}
  body.grading-page #answers .answer-item select,
  body.grading-page #answers .answer-item input{box-sizing:border-box;min-width:0;height:30px;min-height:30px;margin:0;padding:2px 0;border-radius:5px;font-size:14px;line-height:1.1}
- body.grading-page #answers .answer-item[data-part="p1"] select{width:34px;flex:0 0 34px}
- body.grading-page #answers .answer-item[data-part="p2"] select{width:30px;flex:0 0 30px}
+ body.grading-page #answers .answer-item[data-part="p1"] select,
+ body.grading-page #answers .answer-item[data-part="p2"] select{width:auto;max-width:none;flex:1 1 0;padding-right:12px;text-align-last:center}
  body.grading-page #answers .answer-item[data-part="p3"] input{width:58px;flex:0 0 58px;text-align:center}
 }
 @media(max-width:360px){
  body.grading-page #answers .grid-answers{gap:2px}
  body.grading-page #answers .part3grid{gap:3px}
  body.grading-page #answers .answer-item{gap:1px;padding:1px}
- body.grading-page #answers .answer-item[data-part="p1"] select{width:32px;flex-basis:32px}
- body.grading-page #answers .answer-item[data-part="p2"] select{width:28px;flex-basis:28px}
  body.grading-page #answers .answer-item[data-part="p3"] input{width:54px;flex-basis:54px}
 }
 
