@@ -23,5 +23,25 @@ export function renderMath(tex,options={}){
   const semantic=katex.renderToString(`\\mathsf{${source}\n}`,{...options,macros,strict:(code,message,token)=>code==='unknownSymbol'?'ignore':strict(code,message,token),output:'mathml',trust:false}).replace(/^<span class="katex">|<\/span>$/g,'');
   html=html.replace(/<span class="katex-mathml">[\s\S]*?<\/math><\/span>/,()=>`<span class="katex-mathml">${semantic}</span>`);
  }
+ html=addMathBreaks(html);
  return html.replace(/(<annotation encoding="application\/x-tex">)[\s\S]*?(<\/annotation>)/,(_,start,end)=>start+escapeText(source)+end);
+}
+
+// Break only at top-level operators, never inside fractions, radicals or matrices.
+export function addMathBreaks(html){
+ const start=html.indexOf('<span class="katex-html"');
+ if(start<0)return html;
+ const prefix=html.slice(0,start),stack=[];let pending=false;
+ return prefix+html.slice(start).replace(/<\/?span\b[^>]*>/g,tag=>{
+  if(tag.startsWith('</')){
+   const entry=stack.pop();
+   if(entry?.breakAfter){pending=true;return tag;}
+   return tag;
+  }
+  const classes=tag.match(/class="([^"]*)"/)?.[1]||'';
+  const direct=stack.length===2||stack.length===3&&stack[2]?.classes==='mord';
+  const breakAfter=direct&&/\b(?:mrel|mbin)\b/.test(classes);
+  const insert=pending&&!/\bmspace\b/.test(classes);if(insert)pending=false;
+  stack.push({classes,breakAfter});return (insert?'<wbr class="math-break">':'')+tag;
+ });
 }

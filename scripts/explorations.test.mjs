@@ -12,3 +12,14 @@ test('probability sorting requires all unique events in decreasing likelihood',a
  assert.deepEqual(moveEvent(['a','b','c'],0,2),['b','c','a']);assert.deepEqual(moveEvent(['a','b','c'],2,0),['c','a','b']);assert.deepEqual(moveEvent(['a','b'],0,-1),['a','b']);assert.deepEqual(correct,probabilityEvents.map(e=>e.id));
  assert.equal(probabilityEvents.find(e=>e.id==='double').probability,1/36);
 });
+
+test('triangle exploration measures acute, right and obtuse shapes with a constant angle sum',async()=>{
+ const {triangleAngles}=await import('../assets/triangle-angles-model.js');
+ for(const [x,y] of [[280,40],[80,80],[40,230],[520,230]]){
+  const angles=triangleAngles(x,y);assert.ok(angles.every(a=>a>0&&a<180));assert.ok(Math.abs(angles.reduce((a,b)=>a+b,0)-180)<1e-10);
+ }
+ assert.ok(Math.abs(triangleAngles(80,80)[1]-90)<1e-10);
+ assert.ok(triangleAngles(40,230)[1]>90);
+ const post={title:'Bài 12: Tổng các góc trong một tam giác',type:'Bài học',category:'Toán học'};
+ assert.equal(explorationKind(post),'triangle-angles');assert.match(renderExploration(post),/data-exploration="triangle-angles"/);
+});

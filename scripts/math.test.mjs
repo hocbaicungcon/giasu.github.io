@@ -31,3 +31,10 @@ test('Vietnamese labels retain complete Unicode glyphs and accessible source',()
 test('math comparisons embedded in raw HTML decode angle entities before rendering',()=>{
  const html=renderMath('a &lt; b &gt; 0',{throwOnError:true});assert.match(html,/class="katex"/);assert.match(html,/<annotation encoding="application\/x-tex">a &lt; b &gt; 0<\/annotation>/);
 });
+
+test('formula wrapping offers breaks at outer operators while preserving structured expressions',()=>{
+ const html=renderMath('a+b=c+d',{displayMode:true});assert.match(html,/<wbr class="math-break">/);
+ const fraction=renderMath('\\frac{a+b}{c+d}',{displayMode:true});assert.doesNotMatch(fraction,/<wbr/);
+ const root=renderMath('\\sqrt{a+b}',{displayMode:true});assert.doesNotMatch(root,/<wbr/);
+ assert.ok(html.includes('<annotation encoding="application/x-tex">a+b=c+d</annotation>'));
+});
