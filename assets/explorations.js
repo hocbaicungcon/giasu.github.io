@@ -1,4 +1,5 @@
 import './probability-sort.js';
+import './triangle-angles.js';
 import {gcd,divisors,quadratic,tossCoins} from './exploration-models.js';
 const fmt=n=>Number(n.toFixed(2)).toLocaleString('vi');
 const svg=content=>`<svg viewBox="0 0 560 320" role="img" aria-label="Đồ thị thí nghiệm">${content}</svg>`;
@@ -27,7 +28,7 @@ document.querySelectorAll('[data-exploration]').forEach(root=>{
   let heads=0,tails=0;const chart=document.createElement('div');chart.className='exploration-chart';const controls=document.createElement('div');controls.className='exploration-controls';
   const update=()=>{const total=heads+tails,ratio=total?heads/total:0;chart.innerHTML=svg(`<path class="chart-guide" d="M60 150H510"/><text x="510" y="140" text-anchor="end">Lý thuyết 50%</text>${[[heads,'Ngửa',150],[tails,'Sấp',350]].map(([n,label,x])=>{const h=total?n/total*240:0;return `<rect class="chart-bar" x="${x}" y="${270-h}" width="80" height="${h}"/><text x="${x+40}" y="295" text-anchor="middle">${label}</text><text x="${x+40}" y="${Math.max(20,260-h)}" text-anchor="middle">${n}</text>`;}).join('')}`);feedback.textContent=total?`${total} lần tung · ${heads} lần ngửa · Tần suất ngửa: ${fmt(ratio*100)}%. Tần suất có thể dao động, không nhất thiết đúng 50%.`:'Chưa tung đồng xu. Em thử 1 lần, rồi tăng lên 100 hoặc 1000 lần.';};
   for(const n of [1,100,1000])controls.append(button(`Tung ${n} lần`,()=>{const result=tossCoins(n);heads+=result.heads;tails+=result.tails;update();}));controls.append(button('Làm lại',()=>{heads=tails=0;update();}));stage.append(chart,controls,feedback);update();
- }else{
+ }else if(root.dataset.exploration==='quadratic'){
   const chart=document.createElement('div');chart.className='exploration-chart';const controls=document.createElement('div');controls.className='exploration-controls';const values=[];
   for(const [name,value,min,max] of [['a',1,-3,3],['b',0,-6,6],['c',0,-4,8]]){const label=document.createElement('label');label.textContent=name+' = ';const out=document.createElement('output');out.textContent=value;const input=document.createElement('input');input.type='range';input.min=min;input.max=max;input.step=.5;input.value=value;input.setAttribute('aria-label','Hệ số '+name);label.append(out,input);controls.append(label);values.push({input,out});}
   const prediction=document.createElement('select');prediction.setAttribute('aria-label','Dự đoán hướng mở đồ thị');for(const [value,text] of [['','Chọn hướng đồ thị…'],['up','Parabol mở lên'],['down','Parabol mở xuống'],['line','Đường thẳng']]){const o=document.createElement('option');o.value=value;o.textContent=text;prediction.append(o);}

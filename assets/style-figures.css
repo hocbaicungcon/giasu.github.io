@@ -22,11 +22,28 @@ html[data-theme="dark"] body :is(.prose,.exam-question,.exam-review,.lesson-solu
 @media(max-width:1000px){
  body .article-wrap :is(.article-main,.article-body,.prose,.geometry-lab,.geometry-controls,.practice-card,.quiz){min-width:0;max-width:100%;box-sizing:border-box}
  body .prose table{display:block;width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden}
- body .prose .katex-display{max-width:100%;overflow-x:auto;overflow-y:hidden}
- body .prose .katex-display>.katex{display:block;overflow:visible;max-width:none}
- body .prose .katex:not(.katex-display>.katex){display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle;padding-block:2px;box-sizing:border-box}
+
+
+
  body .prose :is(svg.lesson-diagram,.geometry-canvas){width:auto;max-width:100%}
  body .prose .geometry-canvas{width:100%}
 }
 @media(max-width:1000px){body .prose .katex .katex-mathml{overflow:hidden!important;contain:strict}}
-@media(max-width:1000px){body .prose :is(table,.katex-display),body .prose .katex:not(.katex-display>.katex){contain:paint}}
+
+.triangle-angle-canvas{display:block;width:100%;max-width:560px;height:auto;margin-inline:auto;touch-action:pan-y}
+.triangle-angle-canvas [data-vertex]{cursor:grab;touch-action:none}
+.triangle-angle-canvas text{font-size:16px}
+.diagram-tools{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 12px}
+.diagram-viewport{max-width:100%;overflow:auto}
+.diagram-hide-labels text{visibility:hidden}
+body .prose .diagram-tools button{font:inherit;font-size:14px;padding:4px 8px;min-height:32px}
+
+/* Formula rows wrap at mathematical operators; structured subexpressions stay intact. */
+body .katex-display{max-width:100%;overflow:visible;white-space:normal}
+body .katex-display>.katex{display:block;max-width:100%;white-space:normal}
+body .katex .katex-html{white-space:normal;line-height:1.7}
+body .katex .katex-html>.base{white-space:normal}
+body .katex .katex-html>.base>.mord{white-space:normal}
+body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;vertical-align:baseline;box-sizing:border-box}
+body .katex .math-break{display:inline}
+body .katex .katex-html>.base>.mord>span{white-space:nowrap}
