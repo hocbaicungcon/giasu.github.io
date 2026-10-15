@@ -88,7 +88,8 @@ function updateButtons() {
   $('export').disabled = !r?.answers || errors.length > 0;
   for (const id of ['exportExcel', 'exportSummaryPdf', 'exportAnnotatedPdf', 'exportImage']) $(id).disabled = !records.length || !!errors.length || loading || exporting;
 }
-function updateConfiguration() {
+let scoreRefreshTimer = null;
+function updateConfiguration(deferRefresh = false) {
   const cfg = config(), errors = G.validateConfig(cfg);
   $('configError').textContent = errors.join(' '); $('levels2').classList.toggle('hidden', cfg.rule2 !== 'levels');
   cfg.parts.forEach((part, i) => {
@@ -100,7 +101,11 @@ function updateConfiguration() {
   });
   $('examSummary').textContent = errors.length ? 'Cấu hình chưa hợp lệ' : `${cfg.parts.reduce((sum, p) => sum + p.count, 0)} câu · ${format(cfg.parts.reduce((sum, p) => sum + G.maximum(p), 0), 5)} điểm`;
   renderKeyRows();
-  if (current()?.answers) renderAnswers(); refresh();
+  if (current()?.answers) renderAnswers();
+  if (deferRefresh) {
+    clearTimeout(scoreRefreshTimer);
+    scoreRefreshTimer = setTimeout(() => { scoreRefreshTimer = null; refresh(); }, 140);
+  } else refresh();
 }
 for (const id of storedIds) $(id).addEventListener('input', () => {
   if (id.startsWith('mode')) {
@@ -115,7 +120,7 @@ for (const id of storedIds) $(id).addEventListener('input', () => {
     if (exam && (! $('manualCode').value.trim() || draftCode === code)) { exam.keys = keys(); persist('exams', JSON.stringify(exams)); }
     if (!editingKeyRow) renderKeyRows();
     refresh();
-  } else updateConfiguration();
+  } else updateConfiguration(true);
 });
 function renderExamPicker() {
   $('examPicker').classList.toggle('hidden', !exams.length); $('examSelect').replaceChildren();
