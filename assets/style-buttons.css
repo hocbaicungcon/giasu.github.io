@@ -31,6 +31,29 @@ body.grading-page :is(.key-row input,.key-row select,.part-box input,.part-box s
 }
 @media(max-width:360px){body.grading-page #answers .answer-item select,body.grading-page #answers .answer-item input{width:34px;flex-basis:34px}}
 
+/* Compact answer grids: keep Parts I/II at four columns and give Part III room for short numbers. */
+@media(max-width:600px){
+ body.grading-page #answers .answer-section{margin-top:12px}
+ body.grading-page #answers .answer-section h3{margin:0 0 6px;font-size:16px;line-height:1.2}
+ body.grading-page #answers .grid-answers{grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}
+ body.grading-page #answers .part3grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+ body.grading-page #answers .answer-item{min-width:0;min-height:0;gap:2px;padding:2px;border-radius:6px;font-size:12px;line-height:1.1}
+ body.grading-page #answers .answer-item>span{min-width:0;font-size:11px;line-height:1.1}
+ body.grading-page #answers .answer-item select,
+ body.grading-page #answers .answer-item input{box-sizing:border-box;min-width:0;height:30px;min-height:30px;margin:0;padding:2px 0;border-radius:5px;font-size:14px;line-height:1.1}
+ body.grading-page #answers .answer-item[data-part="p1"] select{width:34px;flex:0 0 34px}
+ body.grading-page #answers .answer-item[data-part="p2"] select{width:30px;flex:0 0 30px}
+ body.grading-page #answers .answer-item[data-part="p3"] input{width:58px;flex:0 0 58px;text-align:center}
+}
+@media(max-width:360px){
+ body.grading-page #answers .grid-answers{gap:2px}
+ body.grading-page #answers .part3grid{gap:3px}
+ body.grading-page #answers .answer-item{gap:1px;padding:1px}
+ body.grading-page #answers .answer-item[data-part="p1"] select{width:32px;flex-basis:32px}
+ body.grading-page #answers .answer-item[data-part="p2"] select{width:28px;flex-basis:28px}
+ body.grading-page #answers .answer-item[data-part="p3"] input{width:54px;flex-basis:54px}
+}
+
 /* Fill the gap directly in the sentence using a keyboard-accessible list. */
 body .practice-cloze{display:block;margin:16px 0}
 body .practice-cloze .practice-gap-select{display:inline-block;max-width:100%;width:auto;min-height:32px;padding:2px 20px 2px 6px;border:0;border-bottom:2px dotted #78a267;background:#f0f6e9;color:var(--button-primary-hover,#056047);font:600 1em/1.4 "Source Sans Pro",sans-serif;vertical-align:baseline;cursor:pointer;border-radius:6px}
