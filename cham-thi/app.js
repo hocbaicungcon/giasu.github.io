@@ -319,9 +319,24 @@ function renderPicker() {
   for (const record of records) { const option = document.createElement('option'); option.value = record.id; option.textContent = record.label; $('recordSelect').appendChild(option); }
   $('recordSelect').value = activeId;
 }
+function renderGradedExamPicker(record) {
+  const host = $('gradedExamPicker'), select = $('gradedExamSelect'); select.replaceChildren();
+  host.classList.toggle('hidden', !record?.answers || !exams.length);
+  if (!record?.answers || !exams.length) return;
+  const placeholder = document.createElement('option'); placeholder.value = ''; placeholder.textContent = 'Chọn mã đề'; select.append(placeholder);
+  for (const exam of exams) { const option = document.createElement('option'); option.value = exam.code; option.textContent = `Mã đề ${exam.code}`; select.append(option); }
+  select.value = record.keyCode || '';
+}
+$('gradedExamSelect').addEventListener('change', () => {
+  const record = current(), code = $('gradedExamSelect').value;
+  if (!record || !code || !exams.some(exam => exam.code === code)) return;
+  record.keyCode = code; record.codeIssue = ''; record.manualKey = true;
+  preferredCode = code; persist('preferredCode', code); configureFromExam(exams.find(exam => exam.code === code));
+  showKeys(code); updateConfiguration(); refresh();
+});
 function selectRecord(id) {
   activeId = id; annotatedView = false; renderPicker();
-  const r = current(); showKeys(r?.keyCode || (r?.codeIssue ? '' : preferredCode));
+  const r = current(); renderGradedExamPicker(r); showKeys(r?.keyCode || (r?.codeIssue ? '' : preferredCode));
   $('studentId').value = r?.studentId || ''; $('detectedCode').textContent = r?.examCode || 'Chưa đọc được';
   $('scanError').textContent = r?.error || '';
   renderAnswers(); refresh(); draw();

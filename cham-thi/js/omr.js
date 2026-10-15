@@ -140,6 +140,7 @@
     }
     return { value: marked ? labels[top.i] : '', flag: marked ? '' : top.value > .24 ? 'Không rõ hoặc tô nhiều' : 'Bỏ trống' };
   }
+  const valueIsFaint = (value, reference) => Number.isFinite(value) && value >= .035 && value <= .14 && value <= reference * .35;
   // Compare the physical columns of one short answer, never its answer key.
   // A weak edge trace beside at least two strong digits may be an erasure.
   // Keep it reviewable; an interior gap must never silently collapse a number.
@@ -151,6 +152,10 @@
       const digit = selected.value === '' ? -1 : Number(selected.value);
       if (digit >= 0 && !selected.flag && occluded[digit] > .25 && evidence[digit] < .12)
         selected.flag = 'Nét tô bị màu đánh dấu che · cần kiểm tra';
+      if (digit >= 0 && !selected.flag && values[digit] >= .75 && evidence[digit] >= .22) {
+        const erased = evidence.map((value,i)=>({value,i})).filter(candidate => candidate.i !== digit && values[candidate.i] > .18 && valueIsFaint(candidate.value, evidence[digit]));
+        if (erased.length) selected.flag = `Có vết tô mờ nghi đã xóa ở ô ${erased.map(candidate=>candidate.i).join(', ')} · cần kiểm tra`;
+      }
       return { ...selected, score: digit < 0 ? 0 : values[digit], evidence: digit < 0 ? 0 : evidence[digit], position: digit < 0 ? null : rows[digit], erased: false };
     });
     const strong = columns.filter(c => c.value !== '' && c.score >= .75 && Number.isFinite(c.evidence) && c.evidence >= .22);
@@ -163,6 +168,16 @@
           candidate.erased = true; candidate.erasedValue = candidate.value; candidate.value = '';
           candidate.flag = 'Dấu tô mờ nghi đã xóa · cần kiểm tra';
         }
+      }
+    } else if (strong.length === 1) {
+      // A short answer may contain one valid digit plus a faint erased edge
+      // mark. Keep the detected digit for now, but send the answer to review.
+      const reference = strong[0].evidence;
+      for (let col = 0; col < columns.length; col++) {
+        const candidate = columns[col];
+        const edge = !columns.slice(0,col).some(c => c.value !== '') || !columns.slice(col+1).some(c => c.value !== '');
+        if (edge && candidate.value !== '' && candidate.score < .85 && Number.isFinite(candidate.evidence) && candidate.evidence < .2 && candidate.evidence < reference * .5)
+          candidate.flag = 'Nét tô mờ nghi đã xóa ở đầu hoặc cuối đáp án · cần kiểm tra';
       }
     }
     return columns;
