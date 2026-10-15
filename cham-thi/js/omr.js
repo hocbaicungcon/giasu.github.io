@@ -169,18 +169,6 @@
           candidate.flag = 'Dấu tô mờ nghi đã xóa · cần kiểm tra';
         }
       }
-    } else if (strong.length === 1) {
-      // When one digit is clearly dark and a faint endpoint is far lighter,
-      // treat the endpoint as an erased mark and keep the darker digit.
-      const reference = strong[0].evidence;
-      for (let col = 0; col < columns.length; col++) {
-        const candidate = columns[col];
-        const edge = !columns.slice(0,col).some(c => c.value !== '') || !columns.slice(col+1).some(c => c.value !== '');
-        if (edge && candidate.value !== '' && candidate.score < .75 && Number.isFinite(candidate.evidence) && candidate.evidence >= .035 && candidate.evidence <= .14 && candidate.evidence <= reference * .35) {
-          candidate.erased = true; candidate.erasedValue = candidate.value; candidate.value = '';
-          candidate.flag = 'Đã bỏ ô tô mờ ở đầu hoặc cuối đáp án; chọn ô đậm hơn · cần kiểm tra';
-        }
-      }
     }
     return columns;
   }
@@ -231,7 +219,8 @@
       if (negative && value) value = '-' + value;
       const validNumber = /^-?(?:\d+(?:,\d+)?|,\d+)$/.test(value);
       const uncertain = columnFlags.some(flag => flag === 'Không rõ hoặc tô nhiều' || /cần kiểm tra/.test(flag)) || gap || !validNumber || commaResult.flag === 'Không rõ hoặc tô nhiều';
-      answers.p3.push(value); flags.p3.push(erased.length ? `Đã chọn ô đậm hơn; vẫn cần kiểm tra dấu tô mờ nghi đã xóa ở cột ${erased.join(', ')}` : uncertain ? 'Kiểm tra số: có ô không rõ, khoảng trống hoặc dấu phẩy không rõ' : '');
+      const fadedAlternative = columnFlags.some(flag => /Dấu tô mờ ở ô khác|Có vết tô mờ/.test(flag));
+      answers.p3.push(value); flags.p3.push(erased.length || fadedAlternative ? `Đã chọn ô đậm hơn; vẫn cần kiểm tra dấu tô mờ${erased.length ? ` ở cột ${erased.join(', ')}` : ''}` : uncertain ? 'Kiểm tra số: có ô không rõ, khoảng trống hoặc dấu phẩy không rõ' : '');
     }
     const digits = (x, columns) => Array.from({ length: columns }, (_, col) => choose(Array.from({ length: 10 }, (_, d) => dot(x + 24 * col, standard ? 195 + 33.9 * d : 200 + 34.5 * d)), '0123456789'.split('')));
     const threeCode = profile === 'standard3';
