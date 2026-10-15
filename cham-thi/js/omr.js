@@ -170,14 +170,16 @@
         }
       }
     } else if (strong.length === 1) {
-      // A short answer may contain one valid digit plus a faint erased edge
-      // mark. Keep the detected digit for now, but send the answer to review.
+      // When one digit is clearly dark and a faint endpoint is far lighter,
+      // treat the endpoint as an erased mark and keep the darker digit.
       const reference = strong[0].evidence;
       for (let col = 0; col < columns.length; col++) {
         const candidate = columns[col];
         const edge = !columns.slice(0,col).some(c => c.value !== '') || !columns.slice(col+1).some(c => c.value !== '');
-        if (edge && candidate.value !== '' && candidate.score < .85 && Number.isFinite(candidate.evidence) && candidate.evidence < .2 && candidate.evidence < reference * .5)
-          candidate.flag = 'Nét tô mờ nghi đã xóa ở đầu hoặc cuối đáp án · cần kiểm tra';
+        if (edge && candidate.value !== '' && candidate.score < .75 && Number.isFinite(candidate.evidence) && candidate.evidence >= .035 && candidate.evidence <= .14 && candidate.evidence <= reference * .35) {
+          candidate.erased = true; candidate.erasedValue = candidate.value; candidate.value = '';
+          candidate.flag = 'Đã bỏ ô tô mờ ở đầu hoặc cuối đáp án; chọn ô đậm hơn · cần kiểm tra';
+        }
       }
     }
     return columns;
