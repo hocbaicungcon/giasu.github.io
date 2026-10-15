@@ -86,7 +86,7 @@ function updateButtons() {
   $('undoCorners').disabled = !cornerHistory.canUndo(r) || loading; $('cancelCorners').disabled = !r || loading; $('clearBatch').disabled = !records.length && !clearFailed || exporting;
   $('newBatch').disabled = !records.length && !clearFailed || exporting;
   $('export').disabled = !r?.answers || errors.length > 0;
-  for (const id of ['exportExcel', 'exportSummaryPdf', 'exportAnnotatedPdf', 'exportImage']) $(id).disabled = !records.length || !!errors.length || loading || exporting;
+  for (const id of ['exportExcel', 'exportSummaryPdf', 'exportAnnotatedPdf', 'exportAnnotatedZip', 'exportImage']) $(id).disabled = !records.length || !!errors.length || loading || exporting;
 }
 let scoreRefreshTimer = null;
 function updateConfiguration(deferRefresh = false) {
@@ -500,7 +500,7 @@ function cameraSource() {
   const video = $('cameraVideo'), stage = $('cameraOverlay').parentElement;
   const ratio = stage.clientWidth / stage.clientHeight;
   const width = Math.min(video.videoWidth, video.videoHeight * ratio);
-  const height = width / ratio, scale = Math.min(1, 2560 / Math.max(width, height));
+  const height = width / ratio, scale = Math.min(1, 1600 / Math.max(width, height));
   const source = document.createElement('canvas'); source.width = Math.round(width * scale); source.height = Math.round(height * scale);
   source.getContext('2d').drawImage(video, (video.videoWidth-width)/2, (video.videoHeight-height)/2, width, height, 0, 0, source.width, source.height);
   return source;
@@ -586,7 +586,7 @@ async function scanCamera(version) {
       else $('cameraStatus').textContent = state.reason === 'missing' ? 'Đưa đủ bốn mốc đen vào khung.' : state.reason === 'duplicate' ? 'Bài này đã lưu. Thay phiếu tiếp theo.' : state.reason === 'quality' ? !frame?.nearEnough ? 'Đưa máy gần phiếu hơn để đọc rõ các ô.' : 'Làm rõ nét tô và kiểm tra cấu hình, hoặc chụp thủ công.' : 'Giữ phiếu trong khung, rung nhẹ vẫn quét được…';
     }
   } catch (error) { if (version === cameraVersion) $('cameraStatus').textContent = 'Không đọc được khung hình. Giữ máy ổn định hoặc chụp thủ công.'; }
-  finally { if (version === cameraVersion && cameraStream) cameraTimer = setTimeout(() => scanCamera(version), 30); }
+  finally { if (version === cameraVersion && cameraStream) cameraTimer = setTimeout(() => scanCamera(version), 150); }
 }
 $('openCamera').onclick = async () => {
   stopCamera(); const version = cameraVersion;
@@ -597,7 +597,7 @@ $('openCamera').onclick = async () => {
   $('cameraLast').textContent = 'Lấy đủ bốn mốc đen và giữ phiếu ổn định.';
   $('cameraProgress').style.width = '0%'; $('cameraPanel').classList.remove('hidden'); document.body.classList.add('camera-open'); $('closeCamera').focus();
   try {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: { ideal: 'environment' }, width: { ideal: 2560 }, height: { ideal: 1920 } } });
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: { ideal: 'environment' }, width: { ideal: 1280, max: 1600 }, height: { ideal: 1600, max: 1920 } } });
     if (version !== cameraVersion) { stream.getTracks().forEach(track => track.stop()); return; }
     const track = stream.getVideoTracks()[0], capabilities = track.getCapabilities?.() || {};
     if (capabilities.focusMode?.includes('continuous')) { try { await track.applyConstraints({advanced:[{focusMode:'continuous'}]}); } catch (_) {} }
@@ -788,14 +788,15 @@ async function exportReport(type) {
     if (type === 'excel') download(Reports.excel(items, cfg), 'ket-qua-diem-thi.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     else if (type === 'summary') download(await Reports.summaryPdf(items, cfg), 'bang-diem-thi.pdf', 'application/pdf');
     else if (type === 'image') download(await Reports.annotatedJpeg(assess(current()), cfg, $('exportQuality').value), 'bai-lam-da-cham.jpg', 'image/jpeg');
+    else if (type === 'zip') download(await Reports.annotatedZip(items, cfg, $('exportQuality').value, (done,total) => { $('exportMessage').textContent = `Đang tạo ảnh ${done}/${total}…`; }), 'bai-lam-da-cham.zip', 'application/zip');
     else download(await Reports.annotatedPdf(items, cfg, $('exportQuality').value), 'bai-lam-da-cham.pdf', 'application/pdf');
     const unfinished = items.filter(item => !item.result?.scores).length;
-    $('exportMessage').textContent = `Đã xuất ${type === 'image' ? 1 : items.length} bài / trang${unfinished ? `; ${unfinished} bài chưa chấm được ghi rõ trạng thái trong file` : ''}.`;
+    $('exportMessage').textContent = type === 'zip' ? `Đã tải ZIP gồm ${items.length} ảnh bài làm.` : `Đã xuất ${type === 'image' ? 1 : items.length} bài / trang${unfinished ? `; ${unfinished} bài chưa chấm được ghi rõ trạng thái trong file` : ''}.`;
   } catch (error) { $('exportMessage').textContent = 'Không xuất được file: ' + error.message; }
   finally { exporting = false; updateButtons(); }
 }
 $('exportImage').onclick = () => exportReport('image');
-$('exportExcel').onclick = () => exportReport('excel'); $('exportSummaryPdf').onclick = () => exportReport('summary'); $('exportAnnotatedPdf').onclick = () => exportReport('annotated');
+$('exportExcel').onclick = () => exportReport('excel'); $('exportSummaryPdf').onclick = () => exportReport('summary'); $('exportAnnotatedPdf').onclick = () => exportReport('annotated'); $('exportAnnotatedZip').onclick = () => exportReport('zip');
 $('export').onclick = () => {
   const r = current(); if (!r?.answers) return;
   const rows = Reports.detailRows([assess(r)], config()), csv = '\ufeff' + rows.map(row => row.map(value => '"' + String(value ?? '').replaceAll('"', '""') + '"').join(',')).join('\r\n');

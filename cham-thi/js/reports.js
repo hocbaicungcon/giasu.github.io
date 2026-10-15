@@ -188,5 +188,31 @@
     return pdfFromCanvases(pages(), 'Phiếu trắc nghiệm đã chấm', preset);
   }
   async function annotatedJpeg(item, config, preset = 'compact') { return encodeCanvas(annotatedCanvas(item, config), preset); }
-  return { summaryRows, detailRows, excel, summaryCanvases, annotatedCanvas, summaryPdf, annotatedPdf, annotatedJpeg, encodeCanvas, exportPresets };
+  const crcTable = Uint32Array.from({length:256},(_,n)=>{let c=n;for(let k=0;k<8;k++)c=c&1?0xedb88320^(c>>>1):c>>>1;return c>>>0;});
+  function crc32(bytes) { let crc=0xffffffff;for(const byte of bytes)crc=crcTable[(crc^byte)&255]^(crc>>>8);return (crc^0xffffffff)>>>0; }
+  async function deflate(bytes) {
+    if (!root.CompressionStream) return null;
+    try { const stream = new Blob([bytes]).stream().pipeThrough(new CompressionStream('deflate-raw')); return new Uint8Array(await new Response(stream).arrayBuffer()); }
+    catch (_) { return null; }
+  }
+  function zipArchive(files) {
+    if (files.length > 65535) throw new Error('ZIP hỗ trợ tối đa 65.535 ảnh mỗi lượt.');
+    const encoder = new TextEncoder(), local = [], central = []; let offset=0, centralSize=0;
+    const localHeader=(file)=>{const name=encoder.encode(file.name),header=new Uint8Array(30+name.length),v=new DataView(header.buffer);v.setUint32(0,0x04034b50,true);v.setUint16(4,20,true);v.setUint16(6,0x0800,true);v.setUint16(8,file.method,true);v.setUint16(10,0,true);v.setUint16(12,0x0021,true);v.setUint32(14,file.crc,true);v.setUint32(18,file.data.length,true);v.setUint32(22,file.size,true);v.setUint16(26,name.length,true);v.setUint16(28,0,true);header.set(name,30);return header;};
+    for(const file of files){const name=encoder.encode(file.name);if(file.data.length>0xffffffff||offset>0xffffffff)throw new Error('Tệp ZIP vượt giới hạn 4 GB.');const header=localHeader(file),directory=new Uint8Array(46+name.length),v=new DataView(directory.buffer);v.setUint32(0,0x02014b50,true);v.setUint16(4,20,true);v.setUint16(6,20,true);v.setUint16(8,0x0800,true);v.setUint16(10,file.method,true);v.setUint16(12,0,true);v.setUint16(14,0x0021,true);v.setUint32(16,file.crc,true);v.setUint32(20,file.data.length,true);v.setUint32(24,file.size,true);v.setUint16(28,name.length,true);v.setUint16(30,0,true);v.setUint16(32,0,true);v.setUint16(34,0,true);v.setUint16(36,0,true);v.setUint32(38,0,true);v.setUint32(42,offset,true);directory.set(name,46);local.push(header,file.data);central.push(directory);offset+=header.length+file.data.length;centralSize+=directory.length;}
+    if(offset+centralSize>0xffffffff)throw new Error('Tệp ZIP vượt giới hạn 4 GB.');
+    const end=new Uint8Array(22),v=new DataView(end.buffer);v.setUint32(0,0x06054b50,true);v.setUint16(4,0,true);v.setUint16(6,0,true);v.setUint16(8,files.length,true);v.setUint16(10,files.length,true);v.setUint32(12,centralSize,true);v.setUint32(16,offset,true);v.setUint16(20,0,true);
+    const output=new Uint8Array(offset+centralSize+end.length);let cursor=0;for(const part of [...local,...central,end]){output.set(part,cursor);cursor+=part.length;}return output;
+  }
+  async function annotatedZip(items, config, preset='compact', onProgress=()=>{}) {
+    if(!items.length)throw new Error('Chưa có bài làm để đóng gói.');const files=[];
+    for(let i=0;i<items.length;i++){
+      const item=items[i],record=item.record,source=`${record.studentId||'chua-co-SBD'}_${record.keyCode||record.examCode||'chua-co-ma-de'}_${record.label||'bai-lam'}`;
+      const name=source.normalize('NFKC').replace(/[<>:"/\\|?*\u0000-\u001f]/g,'_').replace(/\s+/g,'_').replace(/_+/g,'_').replace(/^[._]+|[._]+$/g,'').slice(0,150)||`bai-lam-${i+1}`;
+      const bytes=await annotatedJpeg(item,config,preset),compressed=await deflate(bytes),useCompressed=compressed&&compressed.length<bytes.length;
+      files.push({name:`${String(i+1).padStart(3,'0')}_${name}.jpg`,data:useCompressed?compressed:bytes,size:bytes.length,method:useCompressed?8:0,crc:crc32(bytes)});onProgress(i+1,items.length);await new Promise(resolve=>setTimeout(resolve,0));
+    }
+    return zipArchive(files);
+  }
+  return { summaryRows, detailRows, excel, summaryCanvases, annotatedCanvas, summaryPdf, annotatedPdf, annotatedJpeg, annotatedZip, encodeCanvas, exportPresets };
 });
