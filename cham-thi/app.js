@@ -668,8 +668,8 @@ function answerItem(record, part, index, value, sub) {
 $('studentId').oninput = () => { const r = current(); if (r) { r.studentId = $('studentId').value; r.studentEdited = true; refresh(); } };
 function reviewIssues(record) { return window.ChamTNBatchFeedback.review(record, keysFor(record), [count(0),count(1),count(2)]); }
 function renderReviewList() {
-  const host = $('reviewList'); host.replaceChildren();
-  const heading = document.createElement('h3'); heading.textContent = 'Các bài cần xem lại';
+  const host = $('reviewList'), select = document.createElement('select'); host.replaceChildren();
+  select.id = 'reviewPaperSelect'; select.size = 6; select.setAttribute('aria-label', 'Chọn bài cần xem lại');
   for (const record of records) {
     const issues = reviewIssues(record), notes = [];
     if (record.error) notes.push(record.error);
@@ -678,18 +678,20 @@ function renderReviewList() {
     if (record.studentUncertain && !record.studentEdited) notes.push('Kiểm tra số báo danh.');
     if (record.examUncertain) notes.push('Kiểm tra mã đề trên phiếu.');
     if (!issues.length && !notes.length) continue;
-    if (!host.childElementCount) host.append(heading);
-    const box = document.createElement('details'); box.className = 'review-paper';
-    const summary = document.createElement('summary'); summary.textContent = `${record.label} · ${issues.length} ô cần xem lại${notes.length ? ' · kiểm tra thông tin / xử lý' : ''}`; box.append(summary);
-    const locations = document.createElement('p'); locations.className = 'review-locations'; locations.textContent = issues.map(issue => issue.label).join(' · '); summary.append(locations);
-    const list = document.createElement('ul');
-    for (const note of notes) { const li = document.createElement('li'); li.textContent = note; list.append(li); }
-    for (const issue of issues) { const li = document.createElement('li'); li.textContent = `${issue.label}: ${issue.reason}`; list.append(li); }
-    box.append(list);
-    const button = document.createElement('button'); button.type = 'button'; button.className = 'small'; button.textContent = 'Mở bài để kiểm tra';
-    button.onclick = () => { document.querySelector('[data-view=results]').click(); selectRecord(record.id); $('results').scrollIntoView({block:'start'}); }; box.append(button); host.append(box);
+    const option = document.createElement('option'); option.value = record.id;
+    option.textContent = `${record.label} · ${issues.length} ô${notes.length ? ' · cần kiểm tra thông tin' : ''}`;
+    select.append(option);
   }
-  if (records.length && !host.childElementCount) { const p = document.createElement('p'); p.className = 'hint'; p.textContent = 'Không có ô nhận dạng nào cần xem lại.'; host.append(p); }
+  const disclosure = $('reviewDisclosure'), summary = $('reviewListSummary'), priorValue = $('reviewPaperSelect')?.value;
+  const count = select.options.length;
+  summary.textContent = count ? `Bài cần xem lại (${count})` : 'Bài cần xem lại (0)';
+  disclosure.hidden = !records.length;
+  if (!count) { const p = document.createElement('p'); p.className = 'hint'; p.textContent = 'Không có bài nào cần xem lại.'; host.append(p); return; }
+  if (priorValue && [...select.options].some(option => option.value === priorValue)) select.value = priorValue;
+  else if (activeId && [...select.options].some(option => option.value === activeId)) select.value = activeId;
+  const button = document.createElement('button'); button.type = 'button'; button.className = 'small'; button.textContent = 'Mở bài để kiểm tra';
+  button.onclick = () => { const recordId = select.value; if (!recordId) return; document.querySelector('[data-view=results]').click(); selectRecord(recordId); $('results').scrollIntoView({block:'start'}); };
+  host.append(select, button);
 }
 function showBatchComplete(batch, errors) {
   const stats = window.ChamTNBatchFeedback.statistics(batch.map(assess), [count(0),count(1),count(2)], errors.length);
