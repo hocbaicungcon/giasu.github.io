@@ -82,6 +82,10 @@ Trong toán học, **tiên đề** (axiom/postulate) là một mệnh đề đư
 > **TIÊN ĐỀ EUCLID:**
 > **Qua một điểm ở ngoài một đường thẳng, chỉ có một đường thẳng song song với đường thẳng đó.**
 
+```geometry
+type: euclid-parallel
+```
+
 <div style="text-align: center; margin: 24px 0;">
   <svg viewBox="0 0 520 220" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
     <!-- Đường thẳng a -->

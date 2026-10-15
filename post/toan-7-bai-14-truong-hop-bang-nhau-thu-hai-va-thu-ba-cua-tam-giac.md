@@ -138,6 +138,10 @@ Trước khi khám phá hai trường hợp bằng nhau mới, các em hãy kh�
 > **ĐỊNH LÝ (Trường hợp c.g.c):**
 > Nếu **hai cạnh và góc xen giữa** của tam giác này bằng **hai cạnh và góc xen giữa** của tam giác kia thì hai tam giác đó bằng nhau.
 
+```geometry
+type: triangle-sas
+```
+
 <div style="text-align: center; margin: 24px 0;">
   <svg viewBox="0 0 620 240" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
     <!-- Tam giác ABC -->
@@ -192,6 +196,10 @@ $$\triangle ABC = \triangle A'B'C'\quad\text{(c.g.c)}.$$
 > [!IMPORTANT]
 > **ĐỊNH LÝ (Trường hợp g.c.g):**
 > Nếu **một cạnh và hai góc kề** của tam giác này bằng **một cạnh và hai góc kề** của tam giác kia thì hai tam giác đó bằng nhau.
+
+```geometry
+type: triangle-asa
+```
 
 <div style="text-align: center; margin: 24px 0;">
   <svg viewBox="0 0 620 240" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">

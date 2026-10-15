@@ -147,9 +147,13 @@ mode: vertical
 > 
 > **Tính chất:**
 > Nếu tia $Ot$ là tia phân giác của góc $\widehat{xOy}$ thì:
-> $$\widehat{xOt} = \widehat{tOy} = \dfrac{1}{2}\widehat{xOy}$$
+> $$\widehat{xOt} = \widehat{tOy} = \frac{1}{2}\widehat{xOy}$$
 > hay:
 > $$\widehat{xOy} = 2\widehat{xOt} = 2\widehat{tOy}.$$
+
+```geometry
+type: angle-bisector
+```
 
 **Dấu hiệu chứng minh một tia là tia phân giác:**
 Để chứng minh tia $Ot$ là tia phân giác của góc $\widehat{xOy}$, ta cần chỉ ra đủ hai điều kiện:
