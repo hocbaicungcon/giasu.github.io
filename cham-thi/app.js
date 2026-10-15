@@ -85,6 +85,7 @@ function updateButtons() {
   $('undoCorners').classList.toggle('hidden', !cornerHistory.active(r)); $('cancelCorners').classList.toggle('hidden', !cornerHistory.active(r));
   $('undoCorners').disabled = !cornerHistory.canUndo(r) || loading; $('cancelCorners').disabled = !r || loading; $('clearBatch').disabled = !records.length && !clearFailed || exporting;
   $('newBatch').disabled = !records.length && !clearFailed || exporting;
+  $('deleteCurrentRecord').disabled = !r || loading || exporting;
   for (const id of ['exportExcel', 'exportSummaryPdf', 'exportAnnotatedPdf', 'exportAnnotatedZip', 'exportImage']) $(id).disabled = !records.length || !!errors.length || loading || exporting;
 }
 let scoreRefreshTimer = null;
@@ -346,6 +347,23 @@ function selectRecord(id) {
   renderAnswers(); refresh(); draw();
 }
 $('recordSelect').onchange = () => selectRecord($('recordSelect').value);
+function deleteCurrentRecord() {
+  const record = current(); if (!record || loading || exporting) return;
+  if (!window.confirm(`Xóa ${record.label} khỏi danh sách bài đã chấm?`)) return;
+  const index = records.findIndex(item => item.id === record.id);
+  if (index < 0) return;
+  paperViewer.close();
+  records.splice(index, 1);
+  if (cameraPreviewRecord?.id === record.id) { cameraPreviewRecord = null; $('cameraPreview').classList.add('hidden'); }
+  const next = records[Math.min(index, records.length - 1)];
+  if (next) selectRecord(next.id);
+  else {
+    activeId = ''; annotatedView = false; renderPicker(); renderGradedExamPicker(null); renderAnswers();
+    $('studentId').value = ''; $('detectedCode').textContent = 'Chưa đọc được'; $('resultTitle').textContent = 'Kiểm tra & kết quả'; $('warnings').textContent = '';
+    refresh(); draw();
+  }
+}
+$('deleteCurrentRecord').onclick = deleteCurrentRecord;
 function draw() {
   const r = current(); canvas.classList.toggle('annotated', annotatedView);
   window.ChamTNIcons.label($('viewAnnotated'), annotatedView ? 'Xem ảnh gốc' : 'Xem bài đã chấm', 'eye');
