@@ -35,6 +35,19 @@ test('all published posts build with menu controls, compact metadata and games',
  for(const lesson of lessons){const page=fs.readFileSync(new URL('../dist/bai-viet/'+lesson.slug+'.html',import.meta.url),'utf8');assert.match(page,/data-lesson-practice/);assert.match(page,/lesson-course/);}
 
  const read=file=>fs.readFileSync(new URL('../dist/'+file,import.meta.url),'utf8');
+ for(const post of published){
+  const page=read('bai-viet/'+post.slug+'.html');
+  assert.match(page,/class="article-wrap wrap[^"]* lesson-course"/,post.slug);
+  assert.match(page,/class="course-sidebar-heading"/,post.slug);
+  const ids=new Set([...page.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]));
+  for(const nav of page.matchAll(/<nav class="toc-nav"[^>]*>([\s\S]*?)<\/nav>/g)){
+   for(const link of nav[1].matchAll(/href="#([^"]+)"/g))assert.ok(ids.has(link[1]),post.slug+': '+link[1]);
+  }
+ }
+ const exercise=read('bai-viet/100-bai-toan-co-loi-van-lop-2.html');
+ assert.match(exercise,/class="toc-box"/);
+ assert.match(exercise,/class="article-toc"/);
+
  const grader=read('cham-thi/index.html');
  const sharedCss=grader.match(/href="(\.\.\/assets\/style\.css\?v=[^"]+)"/)[1];
  assert.ok(JSON.parse(read('cham-thi/offline-assets.json')).includes(sharedCss),'The shared grading CSS must be available offline');
