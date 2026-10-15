@@ -48,10 +48,10 @@ test('display formulas retain the authored line layout',async()=>{
 
 test('long inline equation chains promote only when they can be aligned at equality signs',async()=>{
  const tex='AH = \\sqrt{AB^2 - BH^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12\\text{ cm}',html=renderMath(tex);
- const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);assert.match(html,/class="katex-display/);assert.ok(layout.startsWith('\\begin{aligned}'));assert.ok(layout.includes('\\&= '));assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));
+ const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);assert.match(html,/class="katex-display/);assert.ok(layout.startsWith('\\begin{array}{l}'));assert.ok(layout.includes('\\\\= '));assert.match(html,/columnalign="left"/);assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));
 });
 
 test('proportional proof with an implication remains one coherent display equation',async()=>{
  const tex='\\frac{AB}{AC} = \\frac{DE}{DF} \\implies AB = AC \\times \\frac{DE}{DF} = 16 \\times \\frac{1{,}5}{2} = \\mathbf{12}\\text{ m}.',html=renderMath(tex,{displayMode:true});
- const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);assert.ok(layout.includes('\\\\&\\implies AB = AC'));assert.ok(layout.includes('\\\\&= 16'));assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));assert.match(html,/⟹/);
+ const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);assert.ok(layout.startsWith('\\begin{array}{l}'));assert.ok(layout.includes('\\implies AB = AC'));assert.ok(layout.includes('= 16'));assert.match(html,/columnalign="left"/);assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));assert.match(html,/⟹/);
 });

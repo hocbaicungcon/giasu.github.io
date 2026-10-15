@@ -100,12 +100,12 @@ document.querySelectorAll('[data-geometry="triangle-angles"]').forEach(lab=>{
   .angle('proof-b','A','Y','B',{radius:44,color:colors[1],visible:false})
   .angle('proof-c','A','C','X',{radius:44,color:colors[2],visible:false})
   .render();
- const sync=()=>{scene.setPoint('A',+x.value,+y.value);scene.setPoint('X',560,+y.value);scene.setPoint('Y',35,+y.value);};
+ const sync=()=>scene.setPoints({A:[+x.value,+y.value],X:[560,+y.value],Y:[35,+y.value]});
  [x,y].forEach(input=>input.addEventListener('input',sync));
- lab.querySelector('[data-proof]').addEventListener('click',event=>{step=step<0?0:-1;event.currentTarget.setAttribute('aria-pressed',String(step>=0));lab.querySelector('.geometry-proof').hidden=step<0;for(const id of ['proof-line','proof-x','proof-y','proof-b','proof-c'])scene.setVisible(id,step>=0);scene.render();});
+ lab.querySelector('[data-proof]').addEventListener('click',event=>{step=step<0?0:-1;event.currentTarget.setAttribute('aria-pressed',String(step>=0));lab.querySelector('.geometry-proof').hidden=step<0;scene.transaction(current=>{for(const id of ['proof-line','proof-x','proof-y','proof-b','proof-c'])current.setVisible(id,step>=0,{render:false});});});
  lab.querySelector('[data-next]').addEventListener('click',()=>{step=Math.min(3,step+1);scene.render();});
  lab.querySelectorAll('[data-shape]').forEach(button=>button.addEventListener('click',()=>{const presets={acute:[280,95],right:[100,95],obtuse:[280,220]};[x.value,y.value]=presets[button.dataset.shape];sync();}));
- lab.querySelector('[data-reset]').addEventListener('click',()=>{x.value=280;y.value=95;step=-1;lab.querySelector('.geometry-proof').hidden=true;lab.querySelector('[data-proof]').setAttribute('aria-pressed','false');for(const id of ['proof-line','proof-x','proof-y','proof-b','proof-c'])scene.setVisible(id,false);sync();});
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{x.value=280;y.value=95;step=-1;lab.querySelector('.geometry-proof').hidden=true;lab.querySelector('[data-proof]').setAttribute('aria-pressed','false');scene.transaction(current=>{for(const id of ['proof-line','proof-x','proof-y','proof-b','proof-c'])current.setVisible(id,false,{render:false});current.setPoints({A:[+x.value,+y.value],X:[560,+y.value],Y:[35,+y.value]},{render:false});});});
 });
 
 // Progress reflects checked answers; all lesson content remains available.

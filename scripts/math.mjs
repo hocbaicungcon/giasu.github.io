@@ -49,9 +49,9 @@ export function wrapLongDisplayFormula(source,maxLine=52,minLength=60){
   const before=source.slice(0,implication.at).trim(),after=source.slice(implication.at).trim(),tailEquals=breaks.filter(point=>point.kind==='relation'&&point.at>implication.at);
   if(after.length>maxLine&&tailEquals.length>1){
    const cut=tailEquals[1].at,conclusion=source.slice(implication.at,cut).trim(),result=source.slice(cut).trim();
-   return `\\begin{aligned}${before}\\\\&${conclusion}\\\\&${result}\\end{aligned}`;
+   return `\\begin{array}{l}${before}\\\\${conclusion}\\\\${result}\\end{array}`;
   }
-  return `\\begin{aligned}${before}\\\\&${after}\\end{aligned}`;
+  return `\\begin{array}{l}${before}\\\\${after}\\end{array}`;
  }
  if(breaks.length<2)return source;
  const rows=[];let start=0,index=0;
@@ -61,5 +61,5 @@ export function wrapLongDisplayFormula(source,maxLine=52,minLength=60){
   const point=breaks[candidate],row=source.slice(start,point.at).trim();if(!row)break;rows.push(row);start=point.at;
  }
  const last=source.slice(start).trim();if(rows.length&&last)rows.push(last);
- return rows.length>1?`\\begin{aligned}${rows.map((row,i)=>`${i?'&':''}${row}`).join('\\\\')}\\end{aligned}`:source;
+ return rows.length>1?`\\begin{array}{l}${rows.join('\\\\')}\\end{array}`:source;
 }
