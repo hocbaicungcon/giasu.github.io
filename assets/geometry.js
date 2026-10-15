@@ -1,7 +1,8 @@
 import {GeometryScene, measureAngle} from './geometry-interaction.js';
 import './right-triangles.js';
+import './interactive-figures.js';
 /* credit: giasu.ai.vn */
-import {trianglePoints} from './geometry-math.js';
+import {trianglePoints, triangleSasPoints, triangleAsaPoints} from './geometry-math.js';
 const colors=['var(--diagram-coral)','var(--diagram-ink)','var(--diagram-gold)'];
 const line=(p,q,color,dashed=false)=>`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="${color}" stroke-width="3" ${dashed?'stroke-dasharray="7 4"':''}/>`;
 const labels=(points,names)=>points.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="currentColor"/><text x="${p[0]}" y="${p[1]+(i===0?-15:24)}" text-anchor="middle">${names[i]}</text>`).join('');
@@ -41,6 +42,64 @@ document.querySelectorAll('[data-geometry="triangle-sss"]').forEach(lab=>{
  lab.querySelector('[data-reset]').addEventListener('click',()=>{inputs.forEach((input,i)=>input.value=[6,7,5][i]);rotation.value=45;overlay.value=0;render();});
  render();
 });
+document.querySelectorAll('[data-geometry="triangle-sas"]').forEach(lab=>{
+ const narrow=matchMedia('(max-width:620px)');
+ const svg=lab.querySelector('svg'),abInput=lab.querySelector('[data-side="ab"]'),aInput=lab.querySelector('[data-angle-sas]'),acInput=lab.querySelector('[data-side="ac"]'),rotation=lab.querySelector('[data-rotation]'),overlay=lab.querySelector('[data-overlay]'),match=lab.querySelector('[data-match]');
+ const render=()=>{
+  const mobile=narrow.matches;svg.setAttribute('viewBox',mobile?'0 0 360 520':'0 0 680 340');
+  const ab=+abInput.value,angleA=+aInput.value,ac=+acInput.value,model=triangleSasPoints(ab,angleA,ac),p=+overlay.value/100,theta=+rotation.value*Math.PI/180;
+  lab.querySelector('[data-length="ab"]').textContent=ab.toFixed(1);lab.querySelector('[data-angle-val="a"]').textContent=angleA+'°';lab.querySelector('[data-length="ac"]').textContent=ac.toFixed(1);
+  if(!model)return;
+  const points=model.points,minX=Math.min(...points.map(pt=>pt[0])),maxX=Math.max(...points.map(pt=>pt[0])),height=Math.abs(points[2][1]);
+  const scale=Math.min(mobile?22:28,(mobile?200:220)/(maxX-minX||1),(mobile?140:190)/(height||1)),cx=(minX+maxX)/2,cy=-height/2;
+  const local=points.map(([x,y])=>[(x-cx)*scale,(y-cy)*scale]);
+  const baseX=mobile?180:170,baseY=mobile?125:155;
+  const first=local.map(([x,y])=>[baseX+x,baseY+y]);
+  const second=local.map(([x,y])=>[baseX+(mobile?0:340*(1-p))+x*Math.cos(theta)-y*Math.sin(theta),baseY+(mobile?240*(1-p):0)+x*Math.sin(theta)+y*Math.cos(theta)]);
+  const triangle=(ps,dashed)=>{
+   let html=`<polygon points="${ps.map(pt=>pt.join(',')).join(' ')}" fill="${dashed?'var(--diagram-ink)':'var(--diagram-coral)'}" fill-opacity=".06"/>`;
+   html+=line(ps[0],ps[1],colors[0],dashed)+line(ps[1],ps[2],colors[1],dashed)+line(ps[2],ps[0],colors[2],dashed);
+   return html;
+  };
+  const matched=p===1&&+rotation.value===0;
+  svg.innerHTML='<title>Trường hợp c.g.c: hai cạnh và góc xen giữa</title>'+triangle(first,false)+triangle(second,true)+labels(first,matched?['A ≡ D','B ≡ E','C ≡ F']:['A','B','C'])+(matched?'':labels(second,['D','E','F']));
+  lab.querySelector('.geometry-observation').textContent=matched?`Hai tam giác chồng khít: A ↔ D, B ↔ E, C ↔ F. Cạnh thứ ba BC = EF = ${model.bc.toFixed(2)}. Hai cặp cạnh và góc xen giữa bằng nhau xác định cùng một hình dạng và kích thước (c.g.c).`:`AB = DE = ${ab.toFixed(1)}, AC = DF = ${ac.toFixed(1)}, góc A = góc D = ${angleA}°. Xoay và chồng hai hình để kiểm chứng cạnh thứ ba BC = EF = ${model.bc.toFixed(2)}.`;
+ };
+ narrow.addEventListener('change',render);
+ [abInput,aInput,acInput,rotation,overlay].forEach(input=>input.addEventListener('input',render));
+ match.addEventListener('click',()=>{rotation.value=0;overlay.value=100;render();});
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{abInput.value=5;aInput.value=60;acInput.value=6;rotation.value=45;overlay.value=0;render();});
+ render();
+});
+document.querySelectorAll('[data-geometry="triangle-asa"]').forEach(lab=>{
+ const narrow=matchMedia('(max-width:620px)');
+ const svg=lab.querySelector('svg'),bInput=lab.querySelector('[data-angle-b]'),bcInput=lab.querySelector('[data-side="bc"]'),cInput=lab.querySelector('[data-angle-c]'),rotation=lab.querySelector('[data-rotation]'),overlay=lab.querySelector('[data-overlay]'),match=lab.querySelector('[data-match]');
+ const render=()=>{
+  const mobile=narrow.matches;svg.setAttribute('viewBox',mobile?'0 0 360 520':'0 0 680 340');
+  const angleB=+bInput.value,bc=+bcInput.value,angleC=+cInput.value,model=triangleAsaPoints(angleB,bc,angleC),p=+overlay.value/100,theta=+rotation.value*Math.PI/180;
+  lab.querySelector('[data-angle-val="b"]').textContent=angleB+'°';lab.querySelector('[data-length="bc"]').textContent=bc.toFixed(1);lab.querySelector('[data-angle-val="c"]').textContent=angleC+'°';
+  if(!model)return;
+  const points=model.points,minX=Math.min(...points.map(pt=>pt[0])),maxX=Math.max(...points.map(pt=>pt[0])),height=Math.abs(points[0][1]);
+  const scale=Math.min(mobile?22:28,(mobile?200:220)/(maxX-minX||1),(mobile?140:190)/(height||1)),cx=(minX+maxX)/2,cy=-height/2;
+  const local=points.map(([x,y])=>[(x-cx)*scale,(y-cy)*scale]);
+  const baseX=mobile?180:170,baseY=mobile?125:155;
+  const first=local.map(([x,y])=>[baseX+x,baseY+y]);
+  const second=local.map(([x,y])=>[baseX+(mobile?0:340*(1-p))+x*Math.cos(theta)-y*Math.sin(theta),baseY+(mobile?240*(1-p):0)+x*Math.sin(theta)+y*Math.cos(theta)]);
+  const triangle=(ps,dashed)=>{
+   let html=`<polygon points="${ps.map(pt=>pt.join(',')).join(' ')}" fill="${dashed?'var(--diagram-ink)':'var(--diagram-gold)'}" fill-opacity=".06"/>`;
+   html+=line(ps[1],ps[2],colors[1],dashed)+line(ps[0],ps[1],colors[0],dashed)+line(ps[2],ps[0],colors[2],dashed);
+   return html;
+  };
+  const matched=p===1&&+rotation.value===0;
+  svg.innerHTML='<title>Trường hợp g.c.g: một cạnh và hai góc kề</title>'+triangle(first,false)+triangle(second,true)+labels(first,matched?['A ≡ D','B ≡ E','C ≡ F']:['A','B','C'])+(matched?'':labels(second,['D','E','F']));
+  lab.querySelector('.geometry-observation').textContent=matched?`Hai tam giác chồng khít: A ↔ D, B ↔ E, C ↔ F. Góc A = góc D = ${model.angleA}°. Một cạnh và hai góc kề bằng nhau xác định duy nhất một hình tam giác (g.c.g).`:`BC = EF = ${bc.toFixed(1)}, góc B = góc E = ${angleB}°, góc C = góc F = ${angleC}°. Góc thứ ba A = D = ${model.angleA}°. Xoay và chồng hai hình để kiểm chứng.`;
+ };
+ narrow.addEventListener('change',render);
+ [bInput,bcInput,cInput,rotation,overlay].forEach(input=>input.addEventListener('input',render));
+ match.addEventListener('click',()=>{rotation.value=0;overlay.value=100;render();});
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{bInput.value=50;bcInput.value=7;cInput.value=60;rotation.value=45;overlay.value=0;render();});
+ render();
+});
 const sector=(center,start,end,color)=>{
  const r=28,p=[center[0]+r*Math.cos(start),center[1]+r*Math.sin(start)],q=[center[0]+r*Math.cos(end),center[1]+r*Math.sin(end)];
  return `<path d="M${center} L${p} A${r} ${r} 0 0 1 ${q} Z" fill="${color}" fill-opacity=".23" stroke="${color}" stroke-width="2"/>`;
@@ -73,6 +132,51 @@ document.querySelectorAll('[data-geometry="angle-pairs"]').forEach(lab=>{
  };
  input.addEventListener('input',render);buttons.forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.pair;render();}));
  lab.querySelector('[data-reset]').addEventListener('click',()=>{input.value=60;selected=buttons[0].dataset.pair;render();});render();
+});
+document.querySelectorAll('[data-geometry="angle-bisector"]').forEach(lab=>{
+ const svg=lab.querySelector('svg'),xoyInput=lab.querySelector('[data-angle-xoy]'),mInput=lab.querySelector('[data-dist-m]'),valXoy=lab.querySelector('[data-angle-val="xoy"]'),valM=lab.querySelector('[data-dist-val="m"]');
+ const render=()=>{
+  const theta=+xoyInput.value,dist=+mInput.value;
+  valXoy.textContent=theta+'°';valM.textContent=dist;
+  const half=theta/2,O=[140,240],lenRay=280,radX=0,X=[O[0]+lenRay*Math.cos(radX),O[1]-lenRay*Math.sin(radX)];
+  const radY=theta*Math.PI/180,Y=[O[0]+lenRay*Math.cos(radY),O[1]-lenRay*Math.sin(radY)];
+  const radT=half*Math.PI/180,T=[O[0]+(lenRay+30)*Math.cos(radT),O[1]-(lenRay+30)*Math.sin(radT)];
+  const M=[O[0]+dist*Math.cos(radT),O[1]-dist*Math.sin(radT)],H1=[M[0],O[1]],dH=dist*Math.sin(radT),H2=[M[0]-dH*Math.sin(radY),M[1]-dH*Math.cos(radY)];
+  let html=`<title>Tia phân giác Ot chia đôi góc xOy</title>`;
+  html+=line(O,X,'#64748b',false)+line(O,Y,'#64748b',false)+line(O,T,'var(--diagram-coral, #d94e48)',false);
+  html+=sector(O,-radT,0,'var(--diagram-ink)')+sector(O,-radY,-radT,'var(--diagram-gold)');
+  html+=line(M,H1,'#94a3b8',true)+line(M,H2,'#94a3b8',true);
+  html+=`<circle cx="${O[0]}" cy="${O[1]}" r="4" fill="currentColor"/><text x="${O[0]-16}" y="${O[1]+18}">O</text>`;
+  html+=`<text x="${X[0]+10}" y="${X[1]+5}">x</text><text x="${Y[0]+5}" y="${Y[1]-8}">y</text><text x="${T[0]+8}" y="${T[1]-5}" fill="var(--diagram-coral, #d94e48)" font-weight="bold">t</text>`;
+  html+=`<circle cx="${M[0]}" cy="${M[1]}" r="5" fill="var(--diagram-coral, #d94e48)"/><text x="${M[0]+12}" y="${M[1]-8}" font-weight="bold">M</text>`;
+  html+=`<circle cx="${H1[0]}" cy="${H1[1]}" r="3" fill="#64748b"/><text x="${H1[0]}" y="${H1[1]+16}">H₁</text><circle cx="${H2[0]}" cy="${H2[1]}" r="3" fill="#64748b"/><text x="${H2[0]-14}" y="${H2[1]-8}">H₂</text>`;
+  svg.innerHTML=html;
+  lab.querySelector('.geometry-observation').textContent=`Góc xOy = ${theta}°. Tia phân giác Ot chia góc thành hai góc bằng nhau: góc xOt = góc tOy = ${half.toFixed(1)}°. Điểm M trên tia phân giác cách đều hai cạnh: MH₁ = MH₂ ≈ ${(dist*Math.sin(radT)).toFixed(1)} px.`;
+ };
+ [xoyInput,mInput].forEach(inp=>inp.addEventListener('input',render));
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{xoyInput.value=70;mInput.value=130;render();});
+ render();
+});
+document.querySelectorAll('[data-geometry="euclid-parallel"]').forEach(lab=>{
+ const svg=lab.querySelector('svg'),coordM=lab.querySelector('[data-coord-m]'),slopeInput=lab.querySelector('[data-angle-slope]'),posVal=lab.querySelector('[data-pos-m]'),slopeVal=lab.querySelector('[data-slope-b]'),snapBtn=lab.querySelector('[data-snap-parallel]');
+ const render=()=>{
+  const ym=+coordM.value,slope=+slopeInput.value;
+  posVal.textContent=ym;slopeVal.textContent=slope+'°';
+  const M=[300,ym],aY=240,isParallel=slope===0;
+  let html=`<title>Tiên đề Euclid về đường thẳng song song</title>`;
+  html+=line([40,aY],[560,aY],'#64748b')+`<text x="50" y="${aY-10}" fill="#64748b" font-weight="bold">a</text>`;
+  const rad=slope*Math.PI/180,len=260,b1=[M[0]-len*Math.cos(rad),M[1]+len*Math.sin(rad)],b2=[M[0]+len*Math.cos(rad),M[1]-len*Math.sin(rad)];
+  html+=line(b1,b2,isParallel?'var(--diagram-ink, #087858)':'var(--diagram-coral, #d94e48)',!isParallel);
+  html+=`<text x="${b1[0]-14}" y="${b1[1]+5}" fill="${isParallel?'var(--diagram-ink)':'var(--diagram-coral)'}" font-weight="bold">b</text>`;
+  html+=`<circle cx="${M[0]}" cy="${M[1]}" r="5" fill="var(--diagram-ink, #087858)"/><text x="${M[0]}" y="${M[1]-12}" text-anchor="middle" font-weight="bold">M</text>`;
+  if(isParallel){html+=line([M[0],M[1]],[M[0],aY],'#94a3b8',true)+`<text x="${M[0]+12}" y="${(M[1]+aY)/2}" fill="#64748b" font-size="13">d = ${aY-ym} px</text>`;}
+  svg.innerHTML=html;
+  lab.querySelector('.geometry-observation').textContent=isParallel?`Đường thẳng b song song với a (độ lệch 0°). Tiên đề Euclid: Qua điểm M nằm ngoài đường thẳng a, chỉ có DUY NHẤT một đường thẳng song song với a!`:`Đường thẳng b lệch ${slope>0?'+':''}${slope}° so với phương song song. Khi kéo dài, b chắc chắn cắt a tại một điểm. Bấm "Chỉnh song song" để thấy vị trí duy nhất song song với a.`;
+ };
+ [coordM,slopeInput].forEach(inp=>inp.addEventListener('input',render));
+ snapBtn.addEventListener('click',()=>{slopeInput.value=0;render();});
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{coordM.value=110;slopeInput.value=15;render();});
+ render();
 });
 // The reusable geometry scene drives a draggable triangle and its measured angles.
 document.querySelectorAll('[data-geometry="triangle-angles"]').forEach(lab=>{
