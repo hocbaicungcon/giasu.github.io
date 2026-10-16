@@ -73,3 +73,35 @@ export function derivativeTangent(a,b,c,d,x0){
   behavior:sign>0?'đồng biến':(sign<0?'nghịch biến':'tiếp tuyến nằm ngang (cực trị/điểm dừng)')
  };
 }
+
+export function pieChartModel(slices){
+ const total=slices.reduce((sum,s)=>sum+Math.max(0,Number(s.value)||0),0);
+ let currentAngle=0;
+ return slices.map(s=>{
+  const val=Math.max(0,Number(s.value)||0);
+  const percent=total>0?(val/total*100):0;
+  const angleDeg=total>0?(val/total*360):0;
+  const startAngle=currentAngle;
+  const endAngle=currentAngle+angleDeg;
+  currentAngle=endAngle;
+  return {
+   label:s.label,
+   value:val,
+   percent:Math.round(percent*10)/10,
+   angleDeg:Math.round(angleDeg*10)/10,
+   startAngle,
+   endAngle,
+   color:s.color
+  };
+ });
+}
+
+export const sampleDataItems=[
+ {id:'height',name:'Chiều cao học sinh (cm)',kind:'quantitative',subtype:'continuous',example:'152.5 cm, 160.2 cm'},
+ {id:'sibling',name:'Số anh chị em trong gia đình',kind:'quantitative',subtype:'discrete',example:'0, 1, 2, 3 người'},
+ {id:'grade',name:'Xếp loại học lực',kind:'qualitative',subtype:'ordinal',example:'Xuất sắc, Giỏi, Khá, Đạt'},
+ {id:'sport',name:'Môn thể thao yêu thích',kind:'qualitative',subtype:'nominal',example:'Bóng đá, Cầu lông, Bơi lội'},
+ {id:'score',name:'Điểm bài kiểm tra 15 phút',kind:'quantitative',subtype:'discrete',example:'8.5, 9.0, 10'},
+ {id:'shirt',name:'Kích cỡ áo đồng phục',kind:'qualitative',subtype:'ordinal',example:'S, M, L, XL'}
+];
+

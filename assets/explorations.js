@@ -1,6 +1,6 @@
 import './probability-sort.js';
 import './triangle-angles.js';
-import {gcd,divisors,quadratic,tossCoins,rationalNumber,linearFunction,equationBalance,derivativeTangent} from './exploration-models.js';
+import {gcd,divisors,quadratic,tossCoins,rationalNumber,linearFunction,equationBalance,derivativeTangent,pieChartModel,sampleDataItems} from './exploration-models.js';
 const fmt=n=>Number(n.toFixed(2)).toLocaleString('vi');
 const svg=content=>`<svg viewBox="0 0 560 320" role="img" aria-label="Đồ thị thí nghiệm">${content}</svg>`;
 const button=(label,action)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',action);return b;};
