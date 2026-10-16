@@ -241,28 +241,30 @@ Giá trị $10.5$ thỏa mãn điều kiện.
 ---
 
 #### Bài toán 4: Chia số thành các phần tỉ lệ nghịch
-Chia số $370$ thành ba phần $x, y, z$ tỉ lệ nghịch với các số $2; 3; 5$. Tìm ba phần đó.
+Chia số $310$ thành ba phần $x, y, z$ tỉ lệ nghịch với các số $2; 3; 5$. Tìm ba phần đó.
 
 **Lời giải:**
 
-Vì tổng ba phần bằng $370$ nên:
-$$x + y + z = 370$$
+Gọi ba phần cần tìm là $x, y, z$ ($x, y, z > 0$).
+Vì tổng ba phần bằng $310$ nên:
+$$x + y + z = 310$$
 
 Vì $x, y, z$ tỉ lệ nghịch với $2, 3, 5$, ta có:
 $$2x = 3y = 5z$$
-Chia cả ba vế cho BCNN của $(2, 3, 5) = 30$:
+
+Chia cả ba vế cho $\text{BCNN}(2, 3, 5) = 30$:
 $$\frac{2x}{30} = \frac{3y}{30} = \frac{5z}{30} \implies \frac{x}{15} = \frac{y}{10} = \frac{z}{6}$$
 
 Áp dụng tính chất của dãy tỉ số bằng nhau:
-$$\frac{x}{15} = \frac{y}{10} = \frac{z}{6} = \frac{x + y + z}{15 + 10 + 6} = \frac{370}{31} \dots$$
-*Hãy điều chỉnh số chia để có số nguyên đẹp:* Nếu chia số $310$ thành ba phần tỉ lệ nghịch với $2, 3, 5$:
-$$\frac{x + y + z}{15 + 10 + 6} = \frac{310}{31} = 10$$
+$$\frac{x}{15} = \frac{y}{10} = \frac{z}{6} = \frac{x + y + z}{15 + 10 + 6} = \frac{310}{31} = 10$$
+
 Từ đó suy ra:
-- $x = 15 \times 10 = 150$.
-- $y = 10 \times 10 = 100$.
-- $z = 6 \times 10 = 60$.
-- Kiểm tra: $150 + 100 + 60 = 310$ và $2(150) = 3(100) = 5(60) = 300$ (chính xác tuyệt đối).
-Vậy ba phần cần tìm là $150; 100; 60$.
+- $x = 15 \cdot 10 = 150$.
+- $y = 10 \cdot 10 = 100$.
+- $z = 6 \cdot 10 = 60$.
+- Kiểm tra lại: $150 + 100 + 60 = 310$ và $2 \cdot 150 = 3 \cdot 100 = 5 \cdot 60 = 300$ (hoàn toàn chính xác).
+
+Vậy ba phần cần tìm lần lượt là $150; 100; 60$.
 
 ---
 
