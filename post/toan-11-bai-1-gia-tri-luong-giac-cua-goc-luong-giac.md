@@ -64,10 +64,10 @@ Khái niệm **Góc lượng giác** cùng công cụ tối thượng **Đườn
 > [!TIP]
 > **Đáp án nhẩm nhanh:**
 > 1. Kim đồng hồ quay theo **chiều âm** (cùng chiều kim đồng hồ) đúng nửa vòng $\implies$ Số đo là **$-180^\circ$**.
-> 2. $60^\circ = 60 \cdot \frac{\pi}{180} = \mathbf{\frac{\pi}{3}\text{ rad}}$.
-> 3. Quãng đường $l = \alpha \cdot R = \frac{\pi}{2} \cdot 10 = \mathbf{5\pi \approx 15,7\text{ m}}$.
-> 4. Trong góc phần tư thứ II: hoành độ âm nên $\mathbf{\cos \alpha < 0}$, tung độ dương nên $\mathbf{\sin \alpha > 0}$.
-> 5. Vì $75^\circ$ và $15^\circ$ phụ nhau nên $\sin 75^\circ = \cos 15^\circ \implies P = \sin^2 15^\circ + \cos^2 15^\circ = \mathbf{1}$.
+> 2. Ta có: $60^\circ = 60 \cdot \frac{\pi}{180} = \frac{\pi}{3}\text{ rad}$.
+> 3. Quãng đường cabin đã đi: $l = \alpha \cdot R = \frac{\pi}{2} \cdot 10 = 5\pi \approx 15,7\text{ m.}$
+> 4. Trong góc phần tư thứ II: hoành độ âm nên $\cos \alpha < 0$, tung độ dương nên $\sin \alpha > 0$.
+> 5. Vì $75^\circ$ và $15^\circ$ phụ nhau nên $\sin 75^\circ = \cos 15^\circ$. Suy ra: $P = \sin^2 15^\circ + \cos^2 15^\circ = 1$.
 
 ---
 
@@ -84,7 +84,7 @@ Khái niệm **Góc lượng giác** cùng công cụ tối thượng **Đườn
 - **Chiều âm (-):** Cùng chiều quay của kim đồng hồ.
 
 <div style="margin: 16px auto; max-width: 320px; text-align: center;">
-<svg viewBox="0 0 280 160" style="width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<svg data-interactive-done="true" viewBox="0 0 280 160" style="width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
 <line x1="80" y1="90" x2="230" y2="90" stroke="#0284c7" stroke-width="2" />
 <polygon points="230,86 238,90 230,94" fill="#0284c7" />
 <text x="215" y="108" font-size="12" font-weight="600" fill="#0369a1">Tia đầu Ou</text>
@@ -134,7 +134,7 @@ $$l = \alpha \cdot R$$
 
 > [!WARNING]
 > Khi sử dụng công thức $l = \alpha \cdot R$, số đo $\alpha$ **bắt buộc phải đổi ra đơn vị radian**. Nếu đề bài cho đơn vị độ ($a^\circ$), phải chuyển đổi:
-> $$l = a^\circ \cdot \frac{\pi}{180} \cdot R$$
+> $$l = a^\circ \cdot \frac{\pi}{180} \cdot R.$$
 
 ---
 
@@ -159,7 +159,7 @@ $$l = \alpha \cdot R$$
 Giả sử điểm $M(x_M; y_M)$ là điểm biểu diễn góc lượng giác $\alpha$ trên đường tròn lượng giác:
 
 <div style="margin: 16px auto; max-width: 320px; text-align: center;">
-<svg viewBox="0 0 280 240" style="width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<svg data-interactive-done="true" viewBox="0 0 280 240" style="width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
 <circle cx="140" cy="120" r="80" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3,3" />
 <circle cx="140" cy="120" r="80" fill="#38bdf8" fill-opacity="0.05" />
 <line x1="20" y1="120" x2="260" y2="120" stroke="#475569" stroke-width="1.5" />
@@ -185,26 +185,26 @@ Giả sử điểm $M(x_M; y_M)$ là điểm biểu diễn góc lượng giác $
 </div>
 
 1. **Sin của góc $\alpha$:** là tung độ $y_M$ của điểm $M$:
-   $$\sin \alpha = y_M$$
+   $$\sin \alpha = y_M.$$
    (Trục tung $Oy$ được gọi là **trục sin**).
 
 2. **Cosin của góc $\alpha$:** là hoành độ $x_M$ của điểm $M$:
-   $$\cos \alpha = x_M$$
+   $$\cos \alpha = x_M.$$
    (Trục hoành $Ox$ được gọi là **trục cos**).
 
 3. **Tang của góc $\alpha$:** (khi $\cos \alpha \ne 0$, tức $\alpha \ne \frac{\pi}{2} + k\pi$):
-   $$\tan \alpha = \frac{\sin \alpha}{\cos \alpha} = \frac{y_M}{x_M}$$
+   $$\tan \alpha = \frac{\sin \alpha}{\cos \alpha} = \frac{y_M}{x_M}.$$
 
 4. **Cô-tang của góc $\alpha$:** (khi $\sin \alpha \ne 0$, tức $\alpha \ne k\pi$):
-   $$\cot \alpha = \frac{\cos \alpha}{\sin \alpha} = \frac{x_M}{y_M}$$
+   $$\cot \alpha = \frac{\cos \alpha}{\sin \alpha} = \frac{x_M}{y_M}.$$
 
 #### Nhận xét quan trọng:
 - Vì $M(x_M; y_M)$ nằm trên đường tròn đơn vị $x_M^2 + y_M^2 = 1$ nên:
-  $$-1 \le \sin \alpha \le 1 \qquad \text{và} \qquad -1 \le \cos \alpha \le 1$$
+  $$-1 \le \sin \alpha \le 1 \qquad \text{và} \qquad -1 \le \cos \alpha \le 1.$$
 - $\tan \alpha$ và $\cot \alpha$ có thể nhận bất kỳ giá trị thực nào từ $-\infty$ đến $+\infty$.
 - Tính tuần hoàn cơ bản:
-  $$\sin(\alpha + k2\pi) = \sin \alpha, \qquad \cos(\alpha + k2\pi) = \cos \alpha \quad (k \in \mathbb{Z})$$
-  $$\tan(\alpha + k\pi) = \tan \alpha, \qquad \cot(\alpha + k\pi) = \cot \alpha \quad (k \in \mathbb{Z})$$
+  $$\sin(\alpha + k2\pi) = \sin \alpha, \qquad \cos(\alpha + k2\pi) = \cos \alpha \quad (k \in \mathbb{Z}).$$
+  $$\tan(\alpha + k\pi) = \tan \alpha, \qquad \cot(\alpha + k\pi) = \cot \alpha \quad (k \in \mathbb{Z}).$$
 
 #### Bảng dấu các giá trị lượng giác theo 4 góc phần tư:
 
@@ -247,61 +247,80 @@ Với mọi góc $\alpha$ làm cho biểu thức có nghĩa, ta luôn có 5 côn
 
 ## Ứng dụng tương tác: Khám phá Đường tròn lượng giác
 
-Kéo thanh trượt bên dưới để xoay góc $\alpha$ từ $0^\circ$ đến $360^\circ$ và quan sát trực tiếp điểm biểu diễn $M(\cos \alpha, \sin \alpha)$ di chuyển trên đường tròn đơn vị cùng các giá trị lượng giác:
+Kéo trực tiếp **điểm M** trên đường tròn đơn vị (hoặc dùng thanh trượt) để quan sát tọa độ hình chiếu $\cos \alpha$ và $\sin \alpha$ thay đổi liên tục trong 4 góc phần tư:
 
-<div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
-<h4 style="margin-top: 0; text-align: center; color: #1e293b;">ĐƯỜNG TRÒN LƯỢNG GIÁC TƯƠNG TÁC</h4>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px;">
-<svg id="trigSvg" viewBox="0 0 320 320" style="width: 100%; max-width: 320px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
-<circle cx="160" cy="160" r="110" fill="none" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3,3" />
-<circle cx="160" cy="160" r="110" fill="#38bdf8" fill-opacity="0.04" />
-<line x1="20" y1="160" x2="300" y2="160" stroke="#64748b" stroke-width="1.5" />
-<polygon points="300,157 308,160 300,163" fill="#64748b" />
-<text x="290" y="152" font-size="12" font-weight="bold" fill="#2563eb">Cos (x)</text>
-<line x1="160" y1="300" x2="160" y2="20" stroke="#64748b" stroke-width="1.5" />
-<polygon points="157,20 160,12 163,20" fill="#64748b" />
-<text x="166" y="24" font-size="12" font-weight="bold" fill="#dc2626">Sin (y)</text>
-<text x="146" y="174" font-size="11" font-weight="bold" fill="#64748b">O</text>
-<text x="272" y="174" font-size="10" fill="#64748b">1</text>
-<text x="42" y="174" font-size="10" fill="#64748b">-1</text>
-<text x="148" y="55" font-size="10" fill="#64748b">1</text>
-<text x="144" y="275" font-size="10" fill="#64748b">-1</text>
-<path id="angleArc" d="" fill="#fef08a" fill-opacity="0.5" stroke="#ca8a04" stroke-width="1.2" />
-<line id="cosProj" x1="160" y1="160" x2="237" y2="160" stroke="#2563eb" stroke-width="3" stroke-linecap="round" />
-<line id="sinProj" x1="160" y1="160" x2="160" y2="82" stroke="#dc2626" stroke-width="3" stroke-linecap="round" />
-<line id="dashX" x1="237" y1="82" x2="237" y2="160" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
-<line id="dashY" x1="237" y1="82" x2="160" y2="82" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3" />
-<line id="radiusLine" x1="160" y1="160" x2="237" y2="82" stroke="#0f172a" stroke-width="2" />
-<circle id="pointM" cx="237" cy="82" r="5.5" fill="#0284c7" stroke="#ffffff" stroke-width="1.5" />
-<text id="labelM" x="244" y="78" font-size="11" font-weight="bold" fill="#0369a1">M</text>
+<div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+<h4 style="margin-top: 0; margin-bottom: 12px; text-align: center; color: #1e40af; font-size: 1.15rem;">ĐƯỜNG TRÒN LƯỢNG GIÁC TƯƠNG TÁC</h4>
+<p style="text-align: center; font-size: 0.88rem; color: #64748b; margin-top: 0; margin-bottom: 16px;">Kéo trực tiếp <strong>điểm M</strong> trên vòng tròn hoặc dùng thanh trượt bên phải để xoay góc:</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 24px;">
+<div style="position: relative; width: 320px; height: 320px; user-select: none;">
+<svg id="trigSvg" data-interactive-done="true" viewBox="0 0 320 320" style="width: 100%; height: 100%; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; touch-action: none; cursor: crosshair;">
+<line x1="20" y1="160" x2="300" y2="160" stroke="#94a3b8" stroke-width="1.5" />
+<polygon points="300,156 308,160 300,164" fill="#64748b" />
+<text x="286" y="150" font-size="12" font-weight="bold" fill="#2563eb">Cos (x)</text>
+<line x1="160" y1="300" x2="160" y2="20" stroke="#94a3b8" stroke-width="1.5" />
+<polygon points="156,20 160,12 164,20" fill="#64748b" />
+<text x="168" y="24" font-size="12" font-weight="bold" fill="#dc2626">Sin (y)</text>
+<circle cx="160" cy="160" r="110" fill="#f0f9ff" fill-opacity="0.4" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="3,3" />
+<text x="146" y="175" font-size="11" font-weight="600" fill="#64748b">O</text>
+<circle cx="270" cy="160" r="2.5" fill="#64748b" />
+<text x="274" y="174" font-size="11" font-weight="600" fill="#64748b">A(1)</text>
+<circle cx="50" cy="160" r="2.5" fill="#64748b" />
+<text x="32" y="174" font-size="11" font-weight="600" fill="#64748b">-1</text>
+<circle cx="160" cy="50" r="2.5" fill="#64748b" />
+<text x="168" y="54" font-size="11" font-weight="600" fill="#64748b">B(1)</text>
+<circle cx="160" cy="270" r="2.5" fill="#64748b" />
+<text x="168" y="274" font-size="11" font-weight="600" fill="#64748b">-1</text>
+<path id="angleArc" d="" fill="#fef08a" fill-opacity="0.45" stroke="#ca8a04" stroke-width="1.5" />
+<line id="cosProj" x1="160" y1="160" x2="237.8" y2="160" stroke="#2563eb" stroke-width="3.5" stroke-linecap="round" />
+<line id="sinProj" x1="160" y1="160" x2="160" y2="82.2" stroke="#dc2626" stroke-width="3.5" stroke-linecap="round" />
+<line id="dashX" x1="237.8" y1="82.2" x2="237.8" y2="160" stroke="#3b82f6" stroke-width="1.2" stroke-dasharray="3,3" />
+<line id="dashY" x1="237.8" y1="82.2" x2="160" y2="82.2" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="3,3" />
+<line id="radiusLine" x1="160" y1="160" x2="237.8" y2="82.2" stroke="#0f172a" stroke-width="2" />
+<circle id="pointMRing" cx="237.8" cy="82.2" r="14" fill="#0284c7" fill-opacity="0.2" style="cursor: grab;" />
+<circle id="pointM" cx="237.8" cy="82.2" r="6" fill="#0284c7" stroke="#ffffff" stroke-width="2" style="cursor: grab;" />
+<text id="labelM" x="246" y="76" font-size="11" font-weight="bold" fill="#0369a1">M</text>
 </svg>
-<div style="flex: 1; min-width: 260px; max-width: 380px;">
-<div style="margin-bottom: 16px;">
-<label for="degSlider" style="display: flex; justify-content: space-between; font-weight: bold; color: #334155; font-size: 14px;">
-<span>Góc quay &alpha;:</span>
+</div>
+<div style="flex: 1; min-width: 280px; max-width: 380px;">
+<div style="margin-bottom: 12px;">
+<div style="display: flex; justify-content: space-between; align-items: baseline; font-weight: bold; color: #334155; font-size: 14px;">
+<span>Góc lượng giác &alpha;:</span>
 <span id="degDisplay" style="color: #2563eb; font-family: monospace; font-size: 16px;">45° (π/4 rad)</span>
-</label>
+</div>
 <input type="range" id="degSlider" min="0" max="360" value="45" step="1" style="width: 100%; margin-top: 8px; accent-color: #2563eb; cursor: pointer;" />
 </div>
-<div style="background: #f1f5f9; border-radius: 8px; padding: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-<div style="background: #ffffff; padding: 10px; border-radius: 6px; border-left: 3px solid #2563eb;">
-<div style="font-size: 11px; color: #64748b; font-weight: bold;">COS &alpha; (Hoành độ)</div>
+<div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;">
+<span style="font-size: 11px; font-weight: 600; color: #64748b; width: 100%;">Góc đặc biệt:</span>
+<button type="button" class="preset-angle-btn" data-angle="0" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">0°</button>
+<button type="button" class="preset-angle-btn" data-angle="30" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">30° (π/6)</button>
+<button type="button" class="preset-angle-btn" data-angle="45" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">45° (π/4)</button>
+<button type="button" class="preset-angle-btn" data-angle="60" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">60° (π/3)</button>
+<button type="button" class="preset-angle-btn" data-angle="90" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">90° (π/2)</button>
+<button type="button" class="preset-angle-btn" data-angle="120" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">120°</button>
+<button type="button" class="preset-angle-btn" data-angle="180" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">180° (π)</button>
+<button type="button" class="preset-angle-btn" data-angle="270" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">270°</button>
+<button type="button" class="preset-angle-btn" data-angle="360" style="padding: 3px 7px; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #f8fafc; cursor: pointer;">360° (2π)</button>
+</div>
+<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+<div style="background: #ffffff; padding: 8px; border-radius: 6px; border-left: 3px solid #2563eb; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+<div style="font-size: 11px; color: #64748b; font-weight: 600;">COS &alpha; (Hoành độ x)</div>
 <div id="valCos" style="font-size: 15px; font-weight: bold; color: #1e293b; font-family: monospace;">+0.7071</div>
 </div>
-<div style="background: #ffffff; padding: 10px; border-radius: 6px; border-left: 3px solid #dc2626;">
-<div style="font-size: 11px; color: #64748b; font-weight: bold;">SIN &alpha; (Tung độ)</div>
+<div style="background: #ffffff; padding: 8px; border-radius: 6px; border-left: 3px solid #dc2626; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+<div style="font-size: 11px; color: #64748b; font-weight: 600;">SIN &alpha; (Tung độ y)</div>
 <div id="valSin" style="font-size: 15px; font-weight: bold; color: #1e293b; font-family: monospace;">+0.7071</div>
 </div>
-<div style="background: #ffffff; padding: 10px; border-radius: 6px; border-left: 3px solid #0d9488;">
-<div style="font-size: 11px; color: #64748b; font-weight: bold;">TAN &alpha; (Sin/Cos)</div>
+<div style="background: #ffffff; padding: 8px; border-radius: 6px; border-left: 3px solid #0d9488; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+<div style="font-size: 11px; color: #64748b; font-weight: 600;">TAN &alpha; (Sin/Cos)</div>
 <div id="valTan" style="font-size: 15px; font-weight: bold; color: #1e293b; font-family: monospace;">+1.0000</div>
 </div>
-<div style="background: #ffffff; padding: 10px; border-radius: 6px; border-left: 3px solid #8b5cf6;">
-<div style="font-size: 11px; color: #64748b; font-weight: bold;">COT &alpha; (Cos/Sin)</div>
+<div style="background: #ffffff; padding: 8px; border-radius: 6px; border-left: 3px solid #8b5cf6; box-shadow: 0 1px 2px rgba(0,0,0,0.03);">
+<div style="font-size: 11px; color: #64748b; font-weight: 600;">COT &alpha; (Cos/Sin)</div>
 <div id="valCot" style="font-size: 15px; font-weight: bold; color: #1e293b; font-family: monospace;">+1.0000</div>
 </div>
 </div>
-<div style="margin-top: 12px; font-size: 12px; color: #475569; background: #e0f2fe; padding: 8px 12px; border-radius: 6px;">
+<div style="margin-top: 10px; font-size: 12px; color: #1e40af; background: #eff6ff; border: 1px solid #bfdbfe; padding: 8px 12px; border-radius: 6px;">
 <span id="quadrantDisplay">Vị trí: <strong>Góc phần tư I</strong> (sin &gt; 0, cos &gt; 0)</span>
 </div>
 </div>
@@ -309,90 +328,143 @@ Kéo thanh trượt bên dưới để xoay góc $\alpha$ từ $0^\circ$ đến 
 </div>
 <script>
 (function() {
+  var svg = document.getElementById('trigSvg');
   var slider = document.getElementById('degSlider');
-  if (!slider) return;
+  if (!svg || !slider) return;
+  var ptM = document.getElementById('pointM');
+  var ptMRing = document.getElementById('pointMRing');
+  var lblM = document.getElementById('labelM');
+  var radLine = document.getElementById('radiusLine');
+  var cosP = document.getElementById('cosProj');
+  var sinP = document.getElementById('sinProj');
+  var dx = document.getElementById('dashX');
+  var dy = document.getElementById('dashY');
+  var arc = document.getElementById('angleArc');
+  var degDisplay = document.getElementById('degDisplay');
+  var valCos = document.getElementById('valCos');
+  var valSin = document.getElementById('valSin');
+  var valTan = document.getElementById('valTan');
+  var valCot = document.getElementById('valCot');
+  var quadDisplay = document.getElementById('quadrantDisplay');
+  var r = 110, cx = 160, cy = 160;
   function toFractionPi(deg) {
     if (deg === 0 || deg === 360) return deg === 0 ? '0 rad' : '2π rad';
     if (deg === 180) return 'π rad';
     var gcd = function(a, b) { return b ? gcd(b, a % b) : a; };
     var d = gcd(deg, 180);
-    var num = deg / d;
-    var den = 180 / d;
+    var num = deg / d, den = 180 / d;
     var strNum = num === 1 ? 'π' : (num + 'π');
     return den === 1 ? strNum + ' rad' : (strNum + '/' + den + ' rad');
   }
-  function update() {
-    var deg = parseFloat(slider.value);
+  function updateAngle(deg) {
+    deg = Math.round(deg);
+    if (deg < 0) deg = ((deg % 360) + 360) % 360;
+    if (deg > 360) deg = deg % 360;
+    slider.value = deg;
     var rad = deg * Math.PI / 180;
-    document.getElementById('degDisplay').textContent = deg + '° (' + toFractionPi(deg) + ')';
+    degDisplay.textContent = deg + '° (' + toFractionPi(deg) + ')';
     var cosVal = Math.cos(rad);
     var sinVal = Math.sin(rad);
-    var r = 110;
-    var cx = 160;
-    var cy = 160;
     var mx = cx + r * cosVal;
     var my = cy - r * sinVal;
-    var ptM = document.getElementById('pointM');
-    if (ptM) { ptM.setAttribute('cx', mx); ptM.setAttribute('cy', my); }
-    var lblM = document.getElementById('labelM');
+    if (ptM) { ptM.setAttribute('cx', mx.toFixed(1)); ptM.setAttribute('cy', my.toFixed(1)); }
+    if (ptMRing) { ptMRing.setAttribute('cx', mx.toFixed(1)); ptMRing.setAttribute('cy', my.toFixed(1)); }
     if (lblM) {
-      lblM.setAttribute('x', mx + (cosVal >= 0 ? 8 : -20));
-      lblM.setAttribute('y', my + (sinVal >= 0 ? -8 : 16));
+      var lx = mx + (cosVal >= 0 ? 10 : -95);
+      var ly = my + (sinVal >= 0 ? -10 : 20);
+      lblM.setAttribute('x', lx.toFixed(1));
+      lblM.setAttribute('y', ly.toFixed(1));
+      lblM.textContent = 'M(' + (Math.abs(cosVal) < 0.0001 ? '0' : cosVal.toFixed(2)) + '; ' + (Math.abs(sinVal) < 0.0001 ? '0' : sinVal.toFixed(2)) + ')';
     }
-    var radLine = document.getElementById('radiusLine');
-    if (radLine) { radLine.setAttribute('x2', mx); radLine.setAttribute('y2', my); }
-    var cosP = document.getElementById('cosProj');
-    if (cosP) cosP.setAttribute('x2', mx);
-    var sinP = document.getElementById('sinProj');
-    if (sinP) sinP.setAttribute('y2', my);
-    var dx = document.getElementById('dashX');
-    if (dx) { dx.setAttribute('x1', mx); dx.setAttribute('y1', my); dx.setAttribute('x2', mx); dx.setAttribute('y2', cy); }
-    var dy = document.getElementById('dashY');
-    if (dy) { dy.setAttribute('x1', mx); dy.setAttribute('y1', my); dy.setAttribute('x2', cx); dy.setAttribute('y2', my); }
-    var arc = document.getElementById('angleArc');
+    if (radLine) { radLine.setAttribute('x2', mx.toFixed(1)); radLine.setAttribute('y2', my.toFixed(1)); }
+    if (cosP) cosP.setAttribute('x2', mx.toFixed(1));
+    if (sinP) sinP.setAttribute('y2', my.toFixed(1));
+    if (dx) { dx.setAttribute('x1', mx.toFixed(1)); dx.setAttribute('y1', my.toFixed(1)); dx.setAttribute('x2', mx.toFixed(1)); dx.setAttribute('y2', cy); }
+    if (dy) { dy.setAttribute('x1', mx.toFixed(1)); dy.setAttribute('y1', my.toFixed(1)); dy.setAttribute('x2', cx); dy.setAttribute('y2', my.toFixed(1)); }
     if (arc) {
       if (deg === 0) {
         arc.setAttribute('d', '');
       } else if (deg >= 360) {
-        arc.setAttribute('d', 'M 160 160 L 185 160 A 25 25 0 1 0 184.99 160 Z');
+        arc.setAttribute('d', 'M 160 160 L 186 160 A 26 26 0 1 0 185.99 160 Z');
       } else {
         var arcR = 26;
         var ax = cx + arcR * cosVal;
         var ay = cy - arcR * sinVal;
         var largeArc = deg > 180 ? 1 : 0;
-        arc.setAttribute('d', 'M 160 160 L 186 160 A 26 26 0 ' + largeArc + ' 0 ' + ax + ' ' + ay + ' Z');
+        arc.setAttribute('d', 'M 160 160 L 186 160 A 26 26 0 ' + largeArc + ' 0 ' + ax.toFixed(1) + ' ' + ay.toFixed(1) + ' Z');
       }
     }
     var strCos = (cosVal >= 0 ? '+' : '') + cosVal.toFixed(4);
     var strSin = (sinVal >= 0 ? '+' : '') + sinVal.toFixed(4);
-    document.getElementById('valCos').textContent = Math.abs(cosVal) < 0.00005 ? '0.0000' : strCos;
-    document.getElementById('valSin').textContent = Math.abs(sinVal) < 0.00005 ? '0.0000' : strSin;
-    var valTanElem = document.getElementById('valTan');
+    valCos.textContent = Math.abs(cosVal) < 0.00005 ? '0.0000' : strCos;
+    valSin.textContent = Math.abs(sinVal) < 0.00005 ? '0.0000' : strSin;
     if (Math.abs(cosVal) < 0.001) {
-      valTanElem.textContent = 'Không xác định';
+      valTan.textContent = 'Không xác định';
     } else {
       var tanVal = sinVal / cosVal;
-      valTanElem.textContent = (tanVal >= 0 ? '+' : '') + tanVal.toFixed(4);
+      valTan.textContent = (tanVal >= 0 ? '+' : '') + tanVal.toFixed(4);
     }
-    var valCotElem = document.getElementById('valCot');
     if (Math.abs(sinVal) < 0.001) {
-      valCotElem.textContent = 'Không xác định';
+      valCot.textContent = 'Không xác định';
     } else {
       var cotVal = cosVal / sinVal;
-      valCotElem.textContent = (cotVal >= 0 ? '+' : '') + cotVal.toFixed(4);
+      valCot.textContent = (cotVal >= 0 ? '+' : '') + cotVal.toFixed(4);
     }
-    var quadElem = document.getElementById('quadrantDisplay');
-    if (deg === 0 || deg === 360) quadElem.innerHTML = 'Vị trí: <strong>Tia gốc Ox dương</strong> (Điểm A)';
-    else if (deg === 90) quadElem.innerHTML = 'Vị trí: <strong>Trục tung Oy dương</strong> (Điểm B)';
-    else if (deg === 180) quadElem.innerHTML = 'Vị trí: <strong>Tia Ox âm</strong> (Điểm A\')';
-    else if (deg === 270) quadElem.innerHTML = 'Vị trí: <strong>Trục tung Oy âm</strong> (Điểm B\')';
-    else if (deg < 90) quadElem.innerHTML = 'Vị trí: <strong>Góc phần tư I</strong> (sin > 0, cos > 0)';
-    else if (deg < 180) quadElem.innerHTML = 'Vị trí: <strong>Góc phần tư II</strong> (sin > 0, cos < 0)';
-    else if (deg < 270) quadElem.innerHTML = 'Vị trí: <strong>Góc phần tư III</strong> (sin < 0, cos < 0)';
-    else quadElem.innerHTML = 'Vị trí: <strong>Góc phần tư IV</strong> (sin < 0, cos > 0)';
+    if (deg === 0 || deg === 360) quadDisplay.innerHTML = 'Vị trí: <strong>Điểm gốc A(1; 0)</strong> (Tia Ox dương)';
+    else if (deg === 90) quadDisplay.innerHTML = 'Vị trí: <strong>Điểm B(0; 1)</strong> (Trục Oy dương, tan không xác định)';
+    else if (deg === 180) quadDisplay.innerHTML = 'Vị trí: <strong>Điểm A\'(-1; 0)</strong> (Tia Ox âm, cot không xác định)';
+    else if (deg === 270) quadDisplay.innerHTML = 'Vị trí: <strong>Điểm B\'(0; -1)</strong> (Trục Oy âm, tan không xác định)';
+    else if (deg < 90) quadDisplay.innerHTML = 'Vị trí: <strong>Góc phần tư I</strong> (sin &gt; 0, cos &gt; 0, tan &gt; 0, cot &gt; 0)';
+    else if (deg < 180) quadDisplay.innerHTML = 'Vị trí: <strong>Góc phần tư II</strong> (sin &gt; 0, cos &lt; 0, tan &lt; 0, cot &lt; 0)';
+    else if (deg < 270) quadDisplay.innerHTML = 'Vị trí: <strong>Góc phần tư III</strong> (sin &lt; 0, cos &lt; 0, tan &gt; 0, cot &gt; 0)';
+    else quadDisplay.innerHTML = 'Vị trí: <strong>Góc phần tư IV</strong> (sin &lt; 0, cos &gt; 0, tan &lt; 0, cot &lt; 0)';
   }
-  slider.addEventListener('input', update);
-  update();
+  var isDragging = false;
+  function pointerToAngle(e) {
+    var rect = svg.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+    var svgX = x * 320 / rect.width;
+    var svgY = y * 320 / rect.height;
+    var dX = svgX - cx;
+    var dY = cy - svgY;
+    var rad = Math.atan2(dY, dX);
+    if (rad < 0) rad += 2 * Math.PI;
+    return Math.round(rad * 180 / Math.PI);
+  }
+  function onPointerDown(e) {
+    isDragging = true;
+    svg.setPointerCapture(e.pointerId);
+    if (ptM) ptM.style.cursor = 'grabbing';
+    if (ptMRing) ptMRing.style.cursor = 'grabbing';
+    updateAngle(pointerToAngle(e));
+  }
+  function onPointerMove(e) {
+    if (!isDragging) return;
+    updateAngle(pointerToAngle(e));
+  }
+  function onPointerUp(e) {
+    if (!isDragging) return;
+    isDragging = false;
+    try { svg.releasePointerCapture(e.pointerId); } catch(err) {}
+    if (ptM) ptM.style.cursor = 'grab';
+    if (ptMRing) ptMRing.style.cursor = 'grab';
+  }
+  svg.addEventListener('pointerdown', onPointerDown);
+  svg.addEventListener('pointermove', onPointerMove);
+  svg.addEventListener('pointerup', onPointerUp);
+  svg.addEventListener('pointercancel', onPointerUp);
+  slider.addEventListener('input', function() {
+    updateAngle(parseFloat(slider.value));
+  });
+  var presetBtns = document.querySelectorAll('.preset-angle-btn');
+  presetBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var ang = parseFloat(btn.dataset.angle);
+      updateAngle(ang);
+    });
+  });
+  updateAngle(45);
 })();
 </script>
 
@@ -459,7 +531,7 @@ Biểu diễn các họ góc lượng giác sau trên đường tròn lượng g
    - Khi $k = 0 \implies \alpha_1 = \frac{\pi}{3} = 60^\circ$ (Điểm $M_1$).
    - Khi $k = 1 \implies \alpha_2 = \frac{\pi}{3} + \pi = \frac{4\pi}{3} = 240^\circ$ (Điểm $M_2$).
    - Khi $k = 2 \implies \alpha_3 = \frac{\pi}{3} + 2\pi$, điểm này quay lại trùng với điểm $M_1$.
-   Hai điểm $M_1$ và $M_2$ đối xứng nhau qua gốc tọa độ $O$.
+   (Hai điểm $M_1$ và $M_2$ đối xứng nhau qua gốc tọa độ $O$).
 
 2. **Xét họ góc $\beta = \frac{\pi}{4} + k \frac{\pi}{2}$:**
    Ta viết lại: $\beta = \frac{\pi}{4} + k \cdot \frac{2\pi}{4}$. Do đó có đúng **4 điểm biểu diễn**:
@@ -470,7 +542,7 @@ Biểu diễn các họ góc lượng giác sau trên đường tròn lượng g
    Bốn điểm $P_1, P_2, P_3, P_4$ nối lại tạo thành một hình vuông nội tiếp đường tròn lượng giác.
 
 <div style="margin: 20px 0; text-align: center;">
-  <svg viewBox="0 0 320 220" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+  <svg data-interactive-done="true" viewBox="0 0 320 220" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
     <!-- Two circles side by side -->
     <!-- Left Circle: alpha = pi/3 + k*pi -->
     <g transform="translate(80, 110)">
@@ -728,7 +800,7 @@ Rút gọn các biểu thức sau:
 ### Bài tập Tự luyện
 
 1. **Biểu diễn góc & Đổi đơn vị:**
-   Cho góc lượng giác $\alpha = -\frac{19\pi}{6}$.
+   Cho góc lượng giác $\alpha = -\frac{19\pi}{6}$:
    a) Đổi góc $\alpha$ sang đơn vị độ.  
    b) Viết $\alpha$ dưới dạng $\alpha_0 + k2\pi$ với $0 \le \alpha_0 < 2\pi$.  
    c) Xác định điểm biểu diễn của góc $\alpha$ trên đường tròn lượng giác thuộc góc phần tư nào và tính các giá trị $\sin \alpha, \cos \alpha, \tan \alpha$.
@@ -748,7 +820,7 @@ Vòng quay quay đều theo chiều ngược chiều kim đồng hồ với tố
 Tại thời điểm $t = 0$, một du khách bước vào cabin ở vị trí thấp nhất (điểm $C_0$).
 
 <div style="margin: 20px 0; text-align: center;">
-<svg viewBox="0 0 340 260" style="max-width: 440px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<svg data-interactive-done="true" viewBox="0 0 340 260" style="max-width: 440px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
 <!-- Ground -->
 <line x1="20" y1="235" x2="320" y2="235" stroke="#475569" stroke-width="2" />
 <text x="270" y="250" font-size="11" font-weight="bold" fill="#475569">Mặt đất</text>
@@ -780,13 +852,16 @@ Tại thời điểm $t = 0$, một du khách bước vào cabin ở vị trí t
 
 > [!TIP]
 > **Hướng dẫn giải thử thách:**
-> 1. Tốc độ góc: $\omega = \frac{2\pi}{T} = \frac{2\pi}{60} = \frac{\pi}{30}\text{ (rad/s)}$.
+> 1. Tốc độ góc:
+>    $$\omega = \frac{2\pi}{T} = \frac{2\pi}{60} = \frac{\pi}{30}\text{ (rad/s)}.$$
 > 2. Vị trí ban đầu ở điểm thấp nhất ứng với góc $-\frac{\pi}{2}$ (hoặc $\frac{3\pi}{2}$). Sau thời gian $t$, góc quay tăng thêm $\omega t = \frac{\pi}{30}t$.  
->    Vậy $\alpha(t) = -\frac{\pi}{2} + \frac{\pi}{30}t\text{ (rad)}$.
-> 3. Tọa độ tung độ của cabin so với tâm $O$: $y(t) = R \sin\left(\alpha(t)\right) = 30 \sin\left(-\frac{\pi}{2} + \frac{\pi}{30}t\right) = -30 \cos\left(\frac{\pi}{30}t\right)$.  
+>    Vậy số đo góc lượng giác là:
+>    $$\alpha(t) = -\frac{\pi}{2} + \frac{\pi}{30}t\text{ (rad)}.$$
+> 3. Tọa độ tung độ của cabin so với tâm $O$:
+>    $$y(t) = R \sin\left(\alpha(t)\right) = 30 \sin\left(-\frac{\pi}{2} + \frac{\pi}{30}t\right) = -30 \cos\left(\frac{\pi}{30}t\right).$$
 >    Độ cao so với mặt đất:  
->    $$h(t) = 35 + y(t) = 35 - 30\cos\left(\frac{\pi}{30}t\right) \text{ (mét)}$$
+>    $$h(t) = 35 + y(t) = 35 - 30\cos\left(\frac{\pi}{30}t\right) \text{ (mét)}.$$
 > 4. Kiểm tra tại các mốc thời gian:
->    - $t = 10\text{s} \implies h(10) = 35 - 30\cos\left(\frac{\pi}{3}\right) = 35 - 30(0,5) = 20\text{ m}$.
->    - $t = 15\text{s} \implies h(15) = 35 - 30\cos\left(\frac{\pi}{2}\right) = 35 - 0 = 35\text{ m}$ (ngang tâm trục quay).
->    - $t = 30\text{s} \implies h(30) = 35 - 30\cos(\pi) = 35 - 30(-1) = 65\text{ m}$ (đạt đỉnh cao nhất của vòng quay!).
+>    - Khi $t = 10\text{s}$: $h(10) = 35 - 30\cos\left(\frac{\pi}{3}\right) = 35 - 30 \cdot 0,5 = 20\text{ m.}$
+>    - Khi $t = 15\text{s}$: $h(15) = 35 - 30\cos\left(\frac{\pi}{2}\right) = 35 - 0 = 35\text{ m.}$ (ngang tâm trục quay).
+>    - Khi $t = 30\text{s}$: $h(30) = 35 - 30\cos(\pi) = 35 - 30(-1) = 65\text{ m.}$ (đạt đỉnh cao nhất của vòng quay!).
