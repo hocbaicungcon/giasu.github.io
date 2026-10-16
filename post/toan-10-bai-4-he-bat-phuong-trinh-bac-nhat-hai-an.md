@@ -1,0 +1,662 @@
+---
+title: 'Toán 10 Bài 4: Hệ bất phương trình bậc nhất hai ẩn & Quy hoạch tuyến tính'
+description: 'Lý thuyết chuẩn Toán 10 Bài 4: Hệ bất phương trình bậc nhất hai ẩn, biểu diễn miền đa giác nghiệm trên hệ trục Oxy, bài toán quy hoạch tuyến tính tối ưu hóa lợi nhuận, widget tương tác đồ họa và 10 câu trắc nghiệm tự chấm.'
+category: Toán học
+type: Bài học
+date: '2026-10-16'
+tags:
+  - Toán học
+  - Toán 10
+  - Đại số 10
+  - Hệ bất phương trình bậc nhất hai ẩn
+  - Miền đa giác nghiệm
+  - Quy hoạch tuyến tính
+  - Giá trị lớn nhất nhỏ nhất
+  - Kết nối tri thức
+grade: 10
+---
+
+# Bài 4. Hệ bất phương trình bậc nhất hai ẩn
+
+Nếu như ở Bài 3, một bất phương trình bậc nhất hai ẩn giúp ta kiểm soát một ràng buộc đơn lẻ (chẳng hạn như giới hạn về ngân sách), thì trong thế giới thực, một doanh nghiệp hay một nhà hoạch định chính sách luôn phải đối mặt với **hàng loạt ràng buộc cùng một lúc**:
+- Số lượng nguyên liệu A không được vượt quá kho chứa.
+- Số giờ công lao động của công nhân có hạn.
+- Sản lượng tối thiểu mỗi ngày phải đáp ứng hợp đồng đã ký.
+- Yêu cầu bảo vệ môi trường giới hạn lượng khí thải phát ra.
+
+Khi gom tất cả các điều kiện ràng buộc đó lại, chúng ta có một **Hệ bất phương trình bậc nhất hai ẩn**.
+
+Đặc biệt, Bài 4 sẽ mở ra cánh cửa dẫn đến một trong những nhánh toán học ứng dụng vĩ đại nhất của thế kỷ XX — **Quy hoạch tuyến tính (Linear Programming)** — công cụ đã mang lại Giải Nobel Kinh tế năm 1975 cho hai nhà toán học Leonid Kantorovich và Tjalling Koopmans nhờ phát minh phương pháp phân bổ tối ưu các nguồn lực kinh tế!
+
+---
+
+## 1. Sơ đồ tư duy toàn diện: Hệ BPT & Quy hoạch tuyến tính
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #eef2ff; border-left: 4px solid #4f46e5; border-radius: 8px; padding: 16px;">
+    <h4 style="margin: 0 0 8px 0; color: #3730a3;">1. Định nghĩa Hệ BPT</h4>
+    <p style="margin: 0; font-size: 0.9em; color: #4338ca;">
+      • Gồm hai hay nhiều BPT bậc nhất hai ẩn $x, y$.<br>
+      • Cặp $(x_0; y_0)$ là nghiệm khi và chỉ khi nó là nghiệm chung của <strong>tất cả</strong> các BPT trong hệ.<br>
+      • Điều kiện thực tế thường có: $x \ge 0, y \ge 0$.
+    </p>
+  </div>
+  <div style="background: #ecfdf5; border-left: 4px solid #10b981; border-radius: 8px; padding: 16px;">
+    <h4 style="margin: 0 0 8px 0; color: #065f46;">2. Miền nghiệm hình học</h4>
+    <p style="margin: 0; font-size: 0.9em; color: #047857;">
+      • Là <strong>giao</strong> của các miền nghiệm của từng BPT.<br>
+      • Thường có dạng một <strong>miền đa giác lồi</strong> (tam giác, tứ giác, ngũ giác) hoặc miền không bị chặn.<br>
+      • Đỉnh của đa giác là giao điểm của các đường thẳng bờ.
+    </p>
+  </div>
+  <div style="background: #fffbeb; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 16px;">
+    <h4 style="margin: 0 0 8px 0; color: #92400e;">3. Định lý cực trị đỉnh</h4>
+    <p style="margin: 0; font-size: 0.9em; color: #b45309;">
+      • Cho hàm mục tiêu $F(x, y) = ax + by$.<br>
+      • Nếu miền nghiệm là đa giác lồi $A_1 A_2 \dots A_n$ (kể cả biên), thì <strong>GTLN và GTNN của $F(x, y)$ luôn đạt tại một trong các đỉnh $A_i$</strong>.<br>
+      • Không cần kiểm tra vô số điểm bên trong đa giác!
+    </p>
+  </div>
+  <div style="background: #fdf2f8; border-left: 4px solid #ec4899; border-radius: 8px; padding: 16px;">
+    <h4 style="margin: 0 0 8px 0; color: #9d174d;">4. Quy trình tối ưu 4 bước</h4>
+    <p style="margin: 0; font-size: 0.9em; color: #be185d;">
+      • <strong>Bước 1:</strong> Đặt ẩn $x, y$ & lập hệ ràng buộc.<br>
+      • <strong>Bước 2:</strong> Vẽ miền nghiệm trên $Oxy$ & tìm tọa độ các đỉnh.<br>
+      • <strong>Bước 3:</strong> Tính giá trị hàm mục tiêu tại từng đỉnh.<br>
+      • <strong>Bước 4:</strong> Kết luận phương án tối ưu nhất.
+    </p>
+  </div>
+</div>
+
+---
+
+## 2. Khởi động: 5 câu hỏi phản xạ nhanh
+
+1. **Cặp số $(1; 1)$ có là nghiệm của hệ $\left\{\begin{array}{l} x + y \le 3 \\ 2x - y \ge 0 \end{array}\right.$ không?**  
+   *Đáp án:* Có, vì $1 + 1 = 2 \le 3$ (đúng) và $2(1) - 1 = 1 \ge 0$ (đúng). Cả hai BPT đều thỏa mãn.
+2. **Miền nghiệm của hệ $\left\{\begin{array}{l} x \ge 0 \\ y \ge 0 \end{array}\right.$ trên mặt phẳng $Oxy$ là vùng nào?**  
+   *Đáp án:* Góc phần tư thứ I của mặt phẳng tọa độ (kể cả hai tia $Ox$ và $Oy$).
+3. **Nếu một hệ BPT có miền nghiệm là một tam giác, ta cần tính giá trị hàm mục tiêu tại bao nhiêu điểm để tìm GTLN?**  
+   *Đáp án:* Đúng 3 điểm (tọa độ 3 đỉnh của tam giác).
+4. **Hệ BPT $\left\{\begin{array}{l} x + y \le 2 \\ x + y \ge 5 \end{array}\right.$ có nghiệm không?**  
+   *Đáp án:* Vô nghiệm, vì không có cặp số $(x; y)$ nào mà tổng $x + y$ vừa nhỏ hơn hoặc bằng 2 lại vừa lớn hơn hoặc bằng 5.
+5. **Đỉnh của miền đa giác nghiệm được xác định bằng cách nào?**  
+   *Đáp án:* Giải hệ phương trình tạo bởi hai đường thẳng bờ tương ứng cắt nhau tại đỉnh đó.
+
+---
+
+## 3. Lý thuyết trọng tâm
+
+### 3.1. Khái niệm hệ bất phương trình bậc nhất hai ẩn
+
+- **Định nghĩa:** Hệ bất phương trình bậc nhất hai ẩn là một hệ gồm hai hay nhiều bất phương trình bậc nhất hai ẩn $x, y$.
+  Mỗi bất phương trình trong hệ có dạng $ax + by \le c$ (hoặc $<, \ge, >$).
+- **Nghiệm của hệ:** Cặp số $(x_0; y_0)$ là một **nghiệm** của hệ nếu nó đồng thời là nghiệm của tất cả các bất phương trình trong hệ.
+- **Miền nghiệm:** Miền nghiệm của hệ là **giao của các miền nghiệm** của các bất phương trình thành phần.
+
+---
+
+### 3.2. Phương pháp biểu diễn miền nghiệm của hệ trên $Oxy$
+
+Để biểu diễn miền nghiệm của hệ trên mặt phẳng tọa độ $Oxy$:
+1. Trên cùng một hệ trục tọa độ $Oxy$, lần lượt vẽ các đường thẳng bờ của từng bất phương trình.
+2. Với mỗi bất phương trình, xác định nửa mặt phẳng không phải là miền nghiệm (bằng phương pháp điểm thử) và **gạch bỏ** phần đó đi.
+3. Phần mặt phẳng **trắng (không bị gạch)** cùng với các đoạn biên thích hợp chính là miền nghiệm cần tìm.
+
+> [!WARNING]
+> Cần phân biệt rõ nét liền (được tính vào miền nghiệm) và nét đứt (không được tính vào miền nghiệm). Khi tính tọa độ đỉnh, nếu đỉnh nằm trên một đường nét đứt thì giá trị tại đỉnh đó không thể đạt được dưới dạng GTLN/GTNN thực sự (chỉ là cận trên/cận dưới).
+
+---
+
+### 3.3. Bài toán Quy hoạch tuyến tính & Định lý Cực trị tại Đỉnh
+
+Trong thực tế sản xuất và quản trị, ta thường gặp bài toán:  
+Tìm cặp số $(x; y)$ thuộc miền nghiệm của một hệ bất phương trình bậc nhất hai ẩn sao cho biểu thức mục tiêu:
+$$F(x; y) = ax + by$$
+đạt **Giá trị Lớn Nhất (GTLN)** hoặc **Giá trị Nhỏ Nhất (GTNN)**.
+
+> [!NOTE]
+> **ĐỊNH LÝ CƠ BẢN CỦA QUY HOẠCH TUYẾN TÍNH:**  
+> Nếu miền nghiệm của hệ bất phương trình bậc nhất hai ẩn là một **đa giác lồi** (tức là miền đa giác bị chặn, kể cả biên), thì hàm số $F(x, y) = ax + by$ luôn đạt giá trị lớn nhất và giá trị nhỏ nhất tại **ít nhất một trong các đỉnh** của miền đa giác đó.
+
+#### Ý nghĩa trực quan hình học:
+Đường thẳng mức $d_c: ax + by = c$ có phương không đổi với vectơ pháp tuyến $\vec{n} = (a; b)$. Khi hằng số $c$ tăng hoặc giảm, đường thẳng $d_c$ tịnh tiến song song với chính nó.
+Điểm cuối cùng mà đường thẳng $d_c$ còn chạm vào miền đa giác trước khi rời khỏi nó luôn luôn là một trong các đỉnh (hoặc cả một cạnh nối hai đỉnh nếu đường thẳng song song với cạnh đó).
+
+---
+
+## 4. Widget tương tác: Bộ giải Quy hoạch Tuyến tính Trực quan
+
+Khảo sát hệ ràng buộc kinh điển:
+$$\left\{\begin{array}{l} x \ge 0, \ y \ge 0 \\ x + y \le 6 \\ 2x + y \le 8 \end{array}\right.$$
+và hàm mục tiêu lợi nhuận $F(x, y) = 3x + 2y$. Kéo thanh trượt để đường thẳng mức $3x + 2y = c$ quét qua miền nghiệm:
+
+```html
+<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
+    <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">📊 Mô Phỏng Trực Quan Quy Hoạch Tuyến Tính</h3>
+    <div style="font-weight: 700; font-size: 1.1rem; color: #0284c7;">
+      Hàm mục tiêu: F(x, y) = 3x + 2y
+    </div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; align-items: center;">
+    <!-- Interactive Canvas SVG -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center;">
+      <svg id="lpSvg" viewBox="-20 -20 220 220" style="width: 100%; max-width: 340px; height: auto; background: #ffffff; border-radius: 6px;">
+        <!-- Axes: scale 1 unit = 20px. Origin at (30, 180) -->
+        <!-- x ranges 0 to 9 -> 30 to 210. y ranges 0 to 8 -> 180 down to 20 -->
+        <g stroke="#cbd5e1" stroke-width="0.8" stroke-dasharray="2">
+          <!-- horizontal grid lines -->
+          <line x1="30" y1="160" x2="200" y2="160" /><line x1="30" y1="140" x2="200" y2="140" />
+          <line x1="30" y1="120" x2="200" y2="120" /><line x1="30" y1="100" x2="200" y2="100" />
+          <line x1="30" y1="80" x2="200" y2="80" /><line x1="30" y1="60" x2="200" y2="60" />
+          <!-- vertical grid lines -->
+          <line x1="50" y1="40" x2="50" y2="180" /><line x1="70" y1="40" x2="70" y2="180" />
+          <line x1="90" y1="40" x2="90" y2="180" /><line x1="110" y1="40" x2="110" y2="180" />
+          <line x1="130" y1="40" x2="130" y2="180" /><line x1="150" y1="40" x2="150" y2="180" />
+        </g>
+
+        <!-- Coordinate axes -->
+        <line x1="15" y1="180" x2="205" y2="180" stroke="#334155" stroke-width="1.8" />
+        <line x1="30" y1="195" x2="30" y2="25" stroke="#334155" stroke-width="1.8" />
+        <text x="195" y="195" font-size="11" font-weight="bold" fill="#334155">x</text>
+        <text x="16" y="32" font-size="11" font-weight="bold" fill="#334155">y</text>
+        <text x="18" y="192" font-size="11" fill="#64748b">O</text>
+
+        <!-- Shaded Feasible Region Polygon: O(0,0), A(4,0), B(2,4), C(0,6) -->
+        <!-- In SVG coords: O(30, 180), A(30 + 4*20 = 110, 180), B(30 + 2*20 = 70, 180 - 4*20 = 100), C(30, 180 - 6*20 = 60) -->
+        <polygon points="30,180 110,180 70,100 30,60" fill="#38bdf8" fill-opacity="0.35" stroke="#0284c7" stroke-width="2" />
+
+        <!-- Objective Function Level Line 3x + 2y = c -->
+        <line id="levelLine" x1="15" y1="180" x2="110" y2="40" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="4,3" />
+
+        <!-- Vertices -->
+        <circle cx="30" cy="180" r="4" fill="#0f172a" />
+        <text x="35" y="175" font-size="10" font-weight="bold" fill="#0f172a">O(0;0)</text>
+
+        <circle cx="110" cy="180" r="4" fill="#0f172a" />
+        <text x="112" y="175" font-size="10" font-weight="bold" fill="#0f172a">A(4;0)</text>
+
+        <circle id="vB" cx="70" cy="100" r="5" fill="#e11d48" />
+        <text x="75" y="98" font-size="11" font-weight="bold" fill="#e11d48">B(2;4) ★ MAX</text>
+
+        <circle cx="30" cy="60" r="4" fill="#0f172a" />
+        <text x="36" y="58" font-size="10" font-weight="bold" fill="#0f172a">C(0;6)</text>
+      </svg>
+    </div>
+
+    <!-- Controls & Results Table -->
+    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px;">
+      <div style="margin-bottom: 14px;">
+        <label style="font-size: 0.9rem; font-weight: 600; color: #334155;">
+          Mức giá trị c của F(x, y): <span id="valCDisplay" style="color: #dc2626; font-size: 1.1rem;">14</span>
+        </label>
+        <input type="range" id="sliderC" min="0" max="20" step="0.5" value="14" oninput="updateLevelLine()" style="width: 100%; margin-top: 6px;" />
+      </div>
+
+      <div style="font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px;">Bảng so sánh giá trị tại các đỉnh:</div>
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: center;">
+        <thead>
+          <tr style="background: #f1f5f9; border-bottom: 1px solid #cbd5e1;">
+            <th style="padding: 6px;">Đỉnh</th>
+            <th style="padding: 6px;">Tọa độ (x; y)</th>
+            <th style="padding: 6px;">F(x, y) = 3x + 2y</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 6px; font-weight: bold;">O</td>
+            <td style="padding: 6px;">(0; 0)</td>
+            <td style="padding: 6px;">3(0) + 2(0) = <strong>0</strong> (MIN)</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0;">
+            <td style="padding: 6px; font-weight: bold;">A</td>
+            <td style="padding: 6px;">(4; 0)</td>
+            <td style="padding: 6px;">3(4) + 2(0) = <strong>12</strong></td>
+          </tr>
+          <tr style="border-bottom: 1px solid #e2e8f0; background: #fff1f2; color: #be123c;">
+            <td style="padding: 6px; font-weight: bold;">B</td>
+            <td style="padding: 6px;">(2; 4)</td>
+            <td style="padding: 6px; font-weight: bold;">3(2) + 2(4) = 14 (MAX)</td>
+          </tr>
+          <tr>
+            <td style="padding: 6px; font-weight: bold;">C</td>
+            <td style="padding: 6px;">(0; 6)</td>
+            <td style="padding: 6px;">3(0) + 2(6) = <strong>12</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div id="statusNotice" style="margin-top: 12px; background: #f0fdf4; border-left: 3px solid #22c55e; padding: 8px 10px; font-size: 0.85rem; color: #166534;">
+        Đường thẳng mức $3x + 2y = 14$ đi qua đỉnh $B(2; 4)$. Đây chính là giá trị lớn nhất $F_{\max} = 14$!
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function updateLevelLine() {
+  const c = parseFloat(document.getElementById('sliderC').value);
+  document.getElementById('valCDisplay').textContent = c;
+
+  // Level line: 3x + 2y = c
+  // Origin (0,0) in SVG is at (30, 180). Scale 1 unit = 20 px.
+  // x_math = (X_svg - 30)/20, y_math = (180 - Y_svg)/20
+  // 3*(X - 30)/20 + 2*(180 - Y)/20 = c => 3(X - 30) + 2(180 - Y) = 20*c
+  // 3X - 90 + 360 - 2Y = 20c => 2Y = 3X + 270 - 20c => Y = 1.5*X + 135 - 10*c
+  const line = document.getElementById('levelLine');
+  const x1 = 15;
+  const y1 = 1.5 * x1 + 135 - 10 * c;
+  const x2 = 180;
+  const y2 = 1.5 * x2 + 135 - 10 * c;
+
+  line.setAttribute('x1', x1);
+  line.setAttribute('y1', y1);
+  line.setAttribute('x2', x2);
+  line.setAttribute('y2', y2);
+
+  const notice = document.getElementById('statusNotice');
+  if (Math.abs(c - 14) < 0.3) {
+    notice.style.background = '#f0fdf4';
+    notice.style.borderLeftColor = '#22c55e';
+    notice.style.color = '#166534';
+    notice.innerHTML = '★ <strong>Trạng thái tối ưu:</strong> Đường thẳng mức đạt đỉnh B(2; 4) với GTLN F = 14.';
+  } else if (c > 14) {
+    notice.style.background = '#fef2f2';
+    notice.style.borderLeftColor = '#ef4444';
+    notice.style.color = '#991b1b';
+    notice.innerHTML = '⚠️ Đường thẳng mức đã vượt ra ngoài miền nghiệm khả thi (vô nghiệm).';
+  } else if (Math.abs(c - 0) < 0.3) {
+    notice.style.background = '#f8fafc';
+    notice.style.borderLeftColor = '#64748b';
+    notice.style.color = '#334155';
+    notice.innerHTML = '• Đạt giá trị nhỏ nhất tại gốc tọa độ O(0; 0) với F = 0.';
+  } else {
+    notice.style.background = '#eff6ff';
+    notice.style.borderLeftColor = '#3b82f6';
+    notice.style.color = '#1e40af';
+    notice.innerHTML = `• Đường thẳng mức F = ${c} đang cắt qua miền nghiệm.`;
+  }
+}
+</script>
+```
+
+---
+
+## 5. Bốn dạng toán điển hình & Phương pháp giải chi tiết
+
+### Dạng 1: Kiểm tra điểm thuộc miền nghiệm của hệ bất phương trình
+
+#### Phương pháp:
+Thay tọa độ điểm $(x_0; y_0)$ vào **tất cả** các bất phương trình trong hệ:
+- Nếu tất cả các bất đẳng thức đều đúng, thì điểm thuộc miền nghiệm.
+- Chỉ cần một bất đẳng thức sai, kết luận ngay điểm đó **không** thuộc miền nghiệm.
+
+---
+
+#### Bài toán 1
+Cho hệ bất phương trình:
+$$\left\{\begin{array}{l} 2x + 3y \le 12 \\ x - y \ge -1 \\ x \ge 0 \\ y \ge 0 \end{array}\right.$$
+Kiểm tra xem các điểm sau có thuộc miền nghiệm của hệ không: $M(1; 2), N(3; 3), P(0; 4)$ và $Q(4; 2)$.
+
+**Lời giải chi tiết:**
+
+- **Với điểm $M(1; 2)$:**
+  - $2(1) + 3(2) = 8 \le 12$ (Đúng).
+  - $1 - 2 = -1 \ge -1$ (Đúng).
+  - $1 \ge 0$ và $2 \ge 0$ (Đúng).  
+  Vì thỏa mãn cả 4 bất phương trình, **$M(1; 2)$ thuộc miền nghiệm**.
+
+- **Với điểm $N(3; 3)$:**
+  - $2(3) + 3(3) = 15 \le 12$ (Sai).  
+  Do vi phạm bất phương trình đầu tiên, **$N(3; 3)$ không thuộc miền nghiệm**.
+
+- **Với điểm $P(0; 4)$:**
+  - $2(0) + 3(4) = 12 \le 12$ (Đúng).
+  - $0 - 4 = -4 \ge -1$ (Sai, vì $-4 < -1$).  
+  Do đó, **$P(0; 4)$ không thuộc miền nghiệm**.
+
+- **Với điểm $Q(4; 2)$:**
+  - $2(4) + 3(2) = 14 \le 12$ (Sai).  
+  Do đó, **$Q(4; 2)$ không thuộc miền nghiệm**.
+
+---
+
+### Dạng 2: Biểu diễn miền nghiệm, xác định tọa độ đỉnh và tính diện tích đa giác
+
+#### Phương pháp:
+1. Vẽ các đường thẳng bờ trên cùng mặt phẳng tọa độ $Oxy$.
+2. Gạch bỏ phần không thỏa mãn của từng bất phương trình.
+3. Xác định tọa độ các đỉnh bằng cách giải các hệ phương trình giao điểm của các cặp đường thẳng tương ứng.
+4. Chia miền đa giác thành các tam giác hoặc hình thang vuông để tính diện tích.
+
+---
+
+#### Bài toán 2
+Biểu diễn miền nghiệm của hệ bất phương trình sau trên mặt phẳng tọa độ $Oxy$:
+$$\left\{\begin{array}{l} x - y \le 2 \\ x + 2y \le 8 \\ x \ge 0 \\ y \ge 0 \end{array}\right.$$
+1. Xác định tọa độ các đỉnh của miền nghiệm.
+2. Tính diện tích của miền nghiệm đó.
+
+**Lời giải chi tiết:**
+
+1. **Biểu diễn hình học & Tìm tọa độ các đỉnh:**
+   - Điều kiện $x \ge 0, y \ge 0$ giới hạn miền nghiệm trong góc phần tư thứ nhất.
+   - Vẽ đường thẳng $d_1: x - y = 2$ đi qua $(2; 0)$ và $(0; -2)$. Miền nghiệm $x - y \le 2$ chứa điểm $O(0; 0)$ vì $0 - 0 = 0 \le 2$.
+   - Vẽ đường thẳng $d_2: x + 2y = 8$ đi qua $(8; 0)$ và $(0; 4)$. Miền nghiệm $x + 2y \le 8$ chứa điểm $O(0; 0)$ vì $0 + 2(0) = 0 \le 8$.
+
+   Miền nghiệm của hệ là tứ giác $OABC$ với các đỉnh:
+   - Gốc tọa độ: $O(0; 0)$.
+   - Đỉnh $A$: Giao điểm của $d_1$ với trục hoành $y = 0 \Rightarrow x - 0 = 2 \Rightarrow A(2; 0)$.
+   - Đỉnh $B$: Giao điểm của $d_1$ và $d_2$. Tọa độ của $B$ là nghiệm của hệ:
+     $$\left\{\begin{array}{l} x - y = 2 \\ x + 2y = 8 \end{array}\right. \iff \left\{\begin{array}{l} 3y = 6 \\ x = y + 2 \end{array}\right. \iff \left\{\begin{array}{l} y = 2 \\ x = 4 \end{array}\right. \Rightarrow B(4; 2)$$
+   - Đỉnh $C$: Giao điểm của $d_2$ với trục tung $x = 0 \Rightarrow 0 + 2y = 8 \Rightarrow C(0; 4)$.
+
+2. **Tính diện tích tứ giác $OABC$:**
+   Ta chia tứ giác $OABC$ thành hai tam giác vuông hoặc dùng hình thang:
+   - Hạ $BH \perp Ox$ tại $H(4; 0)$.
+   - Đoạn $OA = 2$, đoạn $AH = 4 - 2 = 2$, chiều cao $BH = 2$.
+   - Diện tích tam giác $ABH$:
+     $$S_{\triangle ABH} = \frac{1}{2} AH \cdot BH = \frac{1}{2} \cdot 2 \cdot 2 = 2$$
+   - Diện tích hình thang vuông $OCHB$ (có hai đáy $OC = 4, BH = 2$, chiều cao $OH = 4$):
+     $$S_{OCHB} = \frac{(OC + BH) \cdot OH}{2} = \frac{(4 + 2) \cdot 4}{2} = 12$$
+   - Suy ra diện tích tứ giác $OABC$:
+     $$S_{OABC} = S_{OCHB} - S_{\triangle ABH} = 12 - 2 = 10 \text{ (đơn vị diện tích)}$$
+
+---
+
+### Dạng 3: Tìm GTLN, GTNN của biểu thức $F(x, y) = ax + by$ trên miền đa giác
+
+#### Phương pháp:
+1. Xác định tọa độ tất cả các đỉnh $A_1, A_2, \dots, A_n$ của miền đa giác nghiệm.
+2. Lần lượt tính giá trị $F(A_i) = ax_i + by_i$ tại từng đỉnh.
+3. So sánh các giá trị:
+   $$F_{\max} = \max \{F(A_1), F(A_2), \dots, F(A_n)\}$$
+   $$F_{\min} = \min \{F(A_1), F(A_2), \dots, F(A_n)\}$$
+
+---
+
+#### Bài toán 3
+Tìm giá trị lớn nhất và giá trị nhỏ nhất của biểu thức $F(x, y) = 4x + 3y$ với $(x; y)$ thỏa mãn hệ:
+$$\left\{\begin{array}{l} x + y \le 5 \\ 2x - y \le 4 \\ x \ge 0 \\ y \ge 1 \end{array}\right.$$
+
+**Lời giải chi tiết:**
+
+- Xác định các đường thẳng bờ:
+  - $d_1: x + y = 5$
+  - $d_2: 2x - y = 4$
+  - $d_3: x = 0$ (trục tung)
+  - $d_4: y = 1$ (đường thẳng song song trục hoành)
+
+- Tìm tọa độ các đỉnh của miền tứ giác nghiệm:
+  - Đỉnh $A$ là giao của $d_3$ và $d_4$: $\left\{\begin{array}{l} x = 0 \\ y = 1 \end{array}\right. \Rightarrow A(0; 1)$.
+  - Đỉnh $B$ là giao của $d_2$ và $d_4$: $\left\{\begin{array}{l} 2x - 1 = 4 \\ y = 1 \end{array}\right. \Rightarrow x = 2,5 \Rightarrow B(2,5; 1)$.
+  - Đỉnh $C$ là giao của $d_1$ và $d_2$: $\left\{\begin{array}{l} x + y = 5 \\ 2x - y = 4 \end{array}\right. \iff \left\{\begin{array}{l} 3x = 9 \\ y = 5 - x \end{array}\right. \Rightarrow C(3; 2)$.
+  - Đỉnh $D$ là giao của $d_1$ và $d_3$: $\left\{\begin{array}{l} 0 + y = 5 \\ x = 0 \end{array}\right. \Rightarrow D(0; 5)$.
+
+- Tính giá trị của biểu thức $F(x, y) = 4x + 3y$ tại các đỉnh:
+  - Tại $A(0; 1)$: $F(A) = 4(0) + 3(1) = 3$.
+  - Tại $B(2,5; 1)$: $F(B) = 4(2,5) + 3(1) = 10 + 3 = 13$.
+  - Tại $C(3; 2)$: $F(C) = 4(3) + 3(2) = 12 + 6 = 18$.
+  - Tại $D(0; 5)$: $F(D) = 4(0) + 3(5) = 15$.
+
+- Kết luận:
+  - Giá trị lớn nhất: $F_{\max} = 18$ đạt được tại $(x; y) = (3; 2)$.
+  - Giá trị nhỏ nhất: $F_{\min} = 3$ đạt được tại $(x; y) = (0; 1)$.
+
+---
+
+### Dạng 4: Bài toán tối ưu hóa nguồn lực trong thực tế sản xuất & kinh doanh
+
+#### Phương pháp:
+1. **Lập bảng số liệu:** Liệt kê các đại lượng, chi phí, doanh thu, định mức.
+2. **Đặt ẩn số & Tìm miền ràng buộc:** Gọi $x, y$ là số lượng cần sản xuất, lập hệ bất phương trình bậc nhất hai ẩn.
+3. **Thiết lập hàm mục tiêu:** Hàm lợi nhuận hoặc hàm chi phí $F(x, y)$.
+4. **Tìm cực trị tại đỉnh** và trả lời câu hỏi bài toán với đơn vị thực tế.
+
+---
+
+#### Bài toán 4
+Một xưởng may sản xuất hai loại áo: áo sơ mi (loại I) và áo khoác (loại II).
+- Để may 1 chiếc áo loại I cần 2 mét vải và 3 giờ công. Lợi nhuận mang lại là 120 000 đồng/chiếc.
+- Để may 1 chiếc áo loại II cần 3 mét vải và 2 giờ công. Lợi nhuận mang lại là 150 000 đồng/chiếc.
+- Mỗi ngày xưởng chỉ có tối đa 60 mét vải và 60 giờ công lao động.
+
+Hỏi xưởng may cần sản xuất bao nhiêu chiếc áo mỗi loại trong một ngày để thu được lợi nhuận lớn nhất? Lợi nhuận tối đa đó là bao nhiêu?
+
+**Lời giải chi tiết:**
+
+- **Bước 1: Gọi ẩn & Đặt điều kiện:**  
+  Gọi $x$ là số áo loại I và $y$ là số áo loại II may trong một ngày ($x, y \ge 0, x, y \in \mathbb{N}$).
+
+- **Bước 2: Thiết lập hệ bất phương trình ràng buộc:**
+  - Lượng vải sử dụng: $2x + 3y \le 60$ (mét).
+  - Số giờ công sử dụng: $3x + 2y \le 60$ (giờ).
+  - Điều kiện không âm: $x \ge 0, y \ge 0$.
+
+  Ta có hệ bất phương trình:
+  $$\left\{\begin{array}{l} 2x + 3y \le 60 \\ 3x + 2y \le 60 \\ x \ge 0 \\ y \ge 0 \end{array}\right.$$
+
+- **Bước 3: Xác định các đỉnh của miền nghiệm:**  
+  Miền nghiệm là tứ giác $OABC$ nằm trong góc phần tư thứ I:
+  - $O(0; 0)$.
+  - $A(20; 0)$: Giao của đường $3x + 2y = 60$ với trục hoành ($y = 0 \Rightarrow x = 20$).
+  - $B(12; 12)$: Nghiệm của hệ $\left\{\begin{array}{l} 2x + 3y = 60 \\ 3x + 2y = 60 \end{array}\right. \iff x = y = 12$.
+  - $C(0; 20)$: Giao của đường $2x + 3y = 60$ với trục tung ($x = 0 \Rightarrow y = 20$).
+
+- **Bước 4: Tính lợi nhuận tại các đỉnh:**  
+  Hàm mục tiêu lợi nhuận (đơn vị: nghìn đồng):
+  $$L(x, y) = 120x + 150y$$
+  - Tại $O(0; 0)$: $L(O) = 0$.
+  - Tại $A(20; 0)$: $L(A) = 120(20) + 150(0) = 2400$ (nghìn đồng).
+  - Tại $B(12; 12)$: $L(B) = 120(12) + 150(12) = 1440 + 1800 = 3240$ (nghìn đồng).
+  - Tại $C(0; 20)$: $L(C) = 120(0) + 150(20) = 3000$ (nghìn đồng).
+
+- **Kết luận:**  
+  Xưởng may cần sản xuất **12 chiếc áo loại I** và **12 chiếc áo loại II** mỗi ngày để đạt lợi nhuận lớn nhất là **3 240 000 đồng**.
+
+---
+
+## 6. Ứng dụng khoa học & Công nghệ hiện đại
+
+| Lĩnh vực ứng dụng | Đột phá từ Quy hoạch Tuyến tính (Linear Programming) |
+| :--- | :--- |
+| **Quản trị chuỗi cung ứng (SCM)** | Các tập đoàn đa quốc gia như Amazon hay Walmart sử dụng thuật toán đơn hình (Simplex Algorithm) giải hệ hàng triệu bất phương trình để quyết định lộ trình giao hàng tối ưu và vị trí lưu kho. |
+| **Hàng không dân dụng (Aviation)** | Sắp xếp lịch bay cho phi hành đoàn và phi công: Tối thiểu hóa thời gian chờ đợi tại sân bay mà vẫn tuân thủ nghiêm ngặt quy định giờ bay an toàn của ICAO. |
+| **Thiết kế vi mạch điện tử (VLSI Design)** | Sắp đặt vị trí hàng tỷ bóng bán dẫn (transistors) trên chip silicon sao cho diện tích bản mạch nhỏ nhất và đường truyền tín hiệu ngắn nhất. |
+| **Tài chính & Quản lý danh mục đầu tư** | Mô hình Markowitz: Phân bổ tỷ trọng vốn vào các loại cổ phiếu, trái phiếu sao cho rủi ro thấp nhất với mức lợi suất kỳ vọng định trước. |
+| **Kỹ thuật năng lượng & Lưới điện thông minh** | Điều độ công suất phát điện giữa nhà máy thủy điện, điện mặt trời và nhiệt điện theo từng khung giờ trong ngày để chi phí thấp nhất và giảm thiểu ô nhiễm. |
+
+---
+
+## 7. Trắc nghiệm tương tác kiểm tra năng lực (10 câu)
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q1",
+  "question": "Điểm nào sau đây thuộc miền nghiệm của hệ bất phương trình: $x + y \\ge 2$, $2x - y \\le 4$, $x \\ge 0$?",
+  "options": [
+    "$(1; 0)$",
+    "$(2; 1)$",
+    "$(0; 1)$",
+    "$(3; -1)$"
+  ],
+  "answer": 1,
+  "explanation": "Thay tọa độ $(2; 1)$ vào: $2 + 1 = 3 \\ge 2$ (đúng); $2(2) - 1 = 3 \\le 4$ (đúng); $2 \\ge 0$ (đúng). Cả 3 BPT đều đúng nên $(2; 1)$ thuộc miền nghiệm."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q2",
+  "question": "Miền nghiệm của hệ bất phương trình: $x \\ge 0$, $y \\ge 0$, $x + y \\le 4$ trên mặt phẳng tọa độ $Oxy$ là một hình phẳng có dạng:",
+  "options": [
+    "Hình vuông",
+    "Hình chữ nhật",
+    "Tam giác vuông cân",
+    "Hình thang cân"
+  ],
+  "answer": 2,
+  "explanation": "Miền nghiệm được giới hạn bởi 3 đường thẳng $x = 0$ (trục $Oy$), $y = 0$ (trục $Ox$) và $x + y = 4$. Ba đỉnh là $O(0; 0), A(4; 0), B(0; 4)$. Đây là tam giác vuông cân tại gốc tọa độ $O$ với hai cạnh góc vuông bằng 4."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q3",
+  "question": "Diện tích miền tam giác giới hạn bởi hệ bất phương trình: $x \\ge 0$, $y \\ge 0$, $2x + 3y \\le 12$ là:",
+  "options": [
+    "12",
+    "24",
+    "6",
+    "18"
+  ],
+  "answer": 0,
+  "explanation": "Ba đỉnh của tam giác là $O(0; 0), A(6; 0)$ và $B(0; 4)$. Diện tích tam giác vuông là $S = \\frac{1}{2} OA \\cdot OB = \\frac{1}{2} \\cdot 6 \\cdot 4 = 12$."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q4",
+  "question": "Giá trị lớn nhất của biểu thức $F(x, y) = 2x + 5y$ trên miền đa giác nghiệm có các đỉnh $A(1; 1), B(4; 1), C(3; 4), D(1; 3)$ là:",
+  "options": [
+    "7",
+    "13",
+    "26",
+    "17"
+  ],
+  "answer": 2,
+  "explanation": "Tính giá trị $F$ tại 4 đỉnh: $F(A) = 2(1) + 5(1) = 7$; $F(B) = 2(4) + 5(1) = 13$; $F(C) = 2(3) + 5(4) = 26$; $F(D) = 2(1) + 5(3) = 17$. Giá trị lớn nhất là 26 tại đỉnh $C(3; 4)$."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q5",
+  "question": "Giá trị nhỏ nhất của biểu thức $F(x, y) = 3x - 2y$ trên miền tứ giác có 4 đỉnh $M(0; 2), N(2; 0), P(4; 3), Q(1; 5)$ là:",
+  "options": [
+    "$-7$",
+    "$-4$",
+    "$6$",
+    "$0$"
+  ],
+  "answer": 0,
+  "explanation": "Tính $F$: $F(M) = 3(0) - 2(2) = -4$; $F(N) = 3(2) - 2(0) = 6$; $F(P) = 3(4) - 2(3) = 6$; $F(Q) = 3(1) - 2(5) = -7$. Nhỏ nhất là $-7$ tại đỉnh $Q(1; 5)$."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q6",
+  "question": "Hệ bất phương trình nào sau đây có miền nghiệm là một miền KHÔNG BỊ CHẶN (không tạo thành đa giác khép kín)?",
+  "options": [
+    "Hệ: $x \\ge 0, y \\ge 0, x + y \\le 5$",
+    "Hệ: $x \\ge 0, y \\ge 0, x + y \\ge 3$",
+    "Hệ: $0 \\le x \\le 4, 0 \\le y \\le 3$",
+    "Hệ: $x \\ge 0, y \\ge 0, 2x + y \\le 6, x + 2y \\le 6$"
+  ],
+  "answer": 1,
+  "explanation": "Hệ $x \\ge 0, y \\ge 0, x + y \\ge 3$ lấy phần mặt phẳng phía ngoài đường thẳng $x + y = 3$, trải dài vô tận về phía dương vô cực của cả hai trục $Ox$ và $Oy$, nên đây là miền không bị chặn."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q7",
+  "question": "Cho hệ bất phương trình: $x + y \\le 4$, $x - y \\ge 0$, $x \\le 3$. Tọa độ giao điểm của hai đường biên $x + y = 4$ và $x - y = 0$ là:",
+  "options": [
+    "$(2; 2)$",
+    "$(3; 1)$",
+    "$(4; 0)$",
+    "$(1; 3)$"
+  ],
+  "answer": 0,
+  "explanation": "Giải hệ phương trình: $x + y = 4$ và $x - y = 0 \\iff x = y$. Thay vào ta có $2x = 4 \\iff x = 2 \\Rightarrow y = 2$. Giao điểm là $(2; 2)$."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q8",
+  "question": "Một xưởng chế biến nông sản sản xuất hai loại mứt: mứt dâu ($x$ hộp) và mứt gừng ($y$ hộp). Lợi nhuận là $40x + 50y$ (nghìn đồng). Miền nghiệm ràng buộc có các đỉnh $O(0; 0), A(50; 0), B(30; 40), C(0; 60)$. Lợi nhuận lớn nhất xưởng có thể đạt được là:",
+  "options": [
+    "2 000 nghìn đồng",
+    "3 000 nghìn đồng",
+    "3 200 nghìn đồng",
+    "3 500 nghìn đồng"
+  ],
+  "answer": 2,
+  "explanation": "Tính lợi nhuận tại các đỉnh: $L(O) = 0$; $L(A) = 40(50) = 2000$; $L(B) = 40(30) + 50(40) = 1200 + 2000 = 3200$; $L(C) = 50(60) = 3000$. Lợi nhuận lớn nhất là 3 200 nghìn đồng (3,2 triệu đồng) tại phương án $B(30; 40)$."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q9",
+  "question": "Cặp số $(x; y)$ nào sau đây KHÔNG phải là nghiệm của hệ bất phương trình: $2x + y > 3$, $x - 2y < 4$?",
+  "options": [
+    "$(2; 1)$",
+    "$(3; 0)$",
+    "$(0; 0)$",
+    "$(1; 3)$"
+  ],
+  "answer": 2,
+  "explanation": "Thay $(0; 0)$ vào: $2(0) + 0 = 0 > 3$ là khẳng định sai. Do đó $(0; 0)$ không phải là nghiệm của hệ."
+}'></div>
+
+<div class="quiz-item" data-quiz='{
+  "id": "toan10_c2_b4_q10",
+  "question": "Theo định lý cơ bản của Quy hoạch tuyến tính, nếu hàm mục tiêu $F(x, y) = ax + by$ đạt giá trị lớn nhất tại hai đỉnh kề nhau $A$ và $B$ của miền đa giác nghiệm, thì khẳng định nào sau đây là ĐÚNG?",
+  "options": [
+    "Chỉ có duy nhất hai điểm $A$ và $B$ cho giá trị lớn nhất.",
+    "Hàm số $F(x, y)$ đạt giá trị lớn nhất tại mọi điểm thuộc đoạn thẳng $AB$.",
+    "Bài toán bị vô nghiệm.",
+    "Giá trị lớn nhất đạt được tại trung điểm của $AB$ sẽ lớn hơn tại $A$ và $B$."
+  ],
+  "answer": 1,
+  "explanation": "Khi hàm mục tiêu đạt cùng giá trị cực đại tại hai đỉnh kề nhau $A$ và $B$, đường thẳng mức song song và trùng với cả cạnh $AB$. Khi đó mọi điểm nằm trên đoạn thẳng $AB$ đều cho giá trị lớn nhất đó (vô số phương án tối ưu)."
+}'></div>
+
+---
+
+## 8. Luyện tập tự do & Thử thách thực tế
+
+### Bài tập 1 (Phân tích miền ngũ giác & Cực trị)
+Cho hệ bất phương trình:
+$$\left\{\begin{array}{l} x \ge 0, \ y \ge 0 \\ x \le 4 \\ y \le 4 \\ x + y \le 6 \end{array}\right.$$
+1. Chứng minh miền nghiệm của hệ là một miền ngũ giác.
+2. Tìm tọa độ 5 đỉnh của ngũ giác và tìm GTLN, GTNN của biểu thức $F(x, y) = 5x + 3y$.
+
+*Hướng dẫn giải:*
+1. Miền nghiệm nằm trong góc phần tư thứ I ($x \ge 0, y \ge 0$). Bị giới hạn bởi 2 đường $x = 4, y = 4$ và đường chéo $x + y = 6$.
+2. Năm đỉnh của ngũ giác lần lượt là:
+   - $O(0; 0)$
+   - $A(4; 0)$ (giao của $x = 4$ và $y = 0$)
+   - $B(4; 2)$ (giao của $x = 4$ và $x + y = 6$)
+   - $C(2; 4)$ (giao của $y = 4$ và $x + y = 6$)
+   - $D(0; 4)$ (giao của $y = 4$ và $x = 0$)
+   Tính $F(x, y) = 5x + 3y$:
+   - $F(O) = 0$ (GTNN)
+   - $F(A) = 5(4) + 3(0) = 20$
+   - $F(B) = 5(4) + 3(2) = 20 + 6 = 26$ (GTLN)
+   - $F(C) = 5(2) + 3(4) = 10 + 12 = 22$
+   - $F(D) = 5(0) + 3(4) = 12$  
+   Vậy $F_{\max} = 26$ tại $B(4; 2)$ và $F_{\min} = 0$ tại $O(0; 0)$.
+
+---
+
+### Bài tập 2 (Bài toán dinh dưỡng tối ưu chi phí)
+Một viện dưỡng lão cần thiết lập khẩu phần ăn mỗi ngày cho một cụ già từ hai loại thực phẩm $M$ và $N$:
+- Mỗi gam thực phẩm $M$ chứa 2 đơn vị canxi và 1 đơn vị vitamin C. Giá tiền: 300 đồng/gam.
+- Mỗi gam thực phẩm $N$ chứa 1 đơn vị canxi và 2 đơn vị vitamin C. Giá tiền: 400 đồng/gam.
+- Bác sĩ chỉ định mỗi ngày một cụ cần tối thiểu 100 đơn vị canxi và tối thiểu 80 đơn vị vitamin C.
+- Để tránh khó tiêu, tổng khối lượng thực phẩm $M$ và $N$ trong ngày không vượt quá 90 gam.
+
+Hãy tìm phương án mua thực phẩm để chi phí bữa ăn là nhỏ nhất mà vẫn đáp ứng đầy đủ yêu cầu y tế.
+
+*Hướng dẫn giải:*
+- Gọi $x$ là số gam thực phẩm $M$ và $y$ là số gam thực phẩm $N$ ($x, y \ge 0$).
+- Hệ điều kiện:
+  $$\left\{\begin{array}{l} 2x + y \ge 100 \text{ (canxi)} \\ x + 2y \ge 80 \text{ (vitamin C)} \\ x + y \le 90 \text{ (tổng khối lượng)} \\ x \ge 0, \ y \ge 0 \end{array}\right.$$
+- Giao điểm của các đường bờ tạo nên miền tam giác nghiệm $ABC$:
+  - Đỉnh $A$: Giao của $2x + y = 100$ và $x + 2y = 80 \Rightarrow A(40; 20)$.
+  - Đỉnh $B$: Giao của $2x + y = 100$ và $x + y = 90 \Rightarrow B(10; 80)$.
+  - Đỉnh $C$: Giao của $x + 2y = 80$ và $x + y = 90 \Rightarrow C(100; -10)$ (loại vì $y < 0$). Thay bằng giao với trục hoặc đường phù hợp:
+    Ta thấy tại $y = 0 \Rightarrow x + y = 90 \Rightarrow x = 90$ nhưng $2(90) + 0 = 180 \ge 100$ và $90 + 0 = 90 \ge 80$. Điểm $C(90; 0)$ thỏa mãn!
+    Và giao của $x + 2y = 80$ với $x + y = 90$: $x + y = 90 \Rightarrow x = 90 - y \Rightarrow (90 - y) + 2y = 80 \Rightarrow y = -10 < 0$. Do đó đường $x + 2y = 80$ cắt $2x + y = 100$ tại $A(40; 20)$ và cắt trục hoành tại $(80; 0)$.
+    Tứ giác nghiệm có 4 đỉnh: $A(40; 20), B(10; 80), D(0; 90)$? Thử $(0; 90)$: $2(0) + 90 = 90 < 100$ (không thỏa).
+    Đỉnh $B(10; 80)$: $2(10) + 80 = 100 \ge 100, 10 + 2(80) = 170 \ge 80, 10 + 80 = 90 \le 90$ (thỏa mãn).
+    Đỉnh $C(90; 0)$: $2(90) + 0 = 180 \ge 100, 90 + 0 \ge 80, 90 + 0 \le 90$ (thỏa mãn).
+    Đỉnh $E(50; 0)$: $2(50) = 100, 50 < 80$ (không thỏa). Điểm $(80; 0)$: $2(80) \ge 100, 80 \ge 80, 80 \le 90$ (thỏa mãn).
+    Vậy các đỉnh là $A(40; 20), B(10; 80), C(90; 0), E(80; 0)$.
+- Hàm chi phí: $T(x, y) = 300x + 400y$ (đồng).
+  - $T(A) = 300(40) + 400(20) = 12000 + 8000 = 20000$ đồng.
+  - $T(B) = 300(10) + 400(80) = 3000 + 32000 = 35000$ đồng.
+  - $T(C) = 300(90) + 400(0) = 27000$ đồng.
+  - $T(E) = 300(80) + 400(0) = 24000$ đồng.
+- Chi phí nhỏ nhất là **20 000 đồng** khi dùng **40g thực phẩm M** và **20g thực phẩm N**.
