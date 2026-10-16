@@ -126,16 +126,16 @@ Cho hàm số $y = f(x)$ xác định trên tập $D$ và $x_0 \in D$.
 > **Định nghĩa Cực trị:**
 > 1. Điểm $x_0$ được gọi là **điểm cực đại** của hàm số $f(x)$ nếu tồn tại một khoảng $(a; b)$ chứa $x_0$ sao cho:
 >    $$f(x) < f(x_0), \quad \forall x \in (a; b) \setminus \{x_0\}$$
->    Khi đó, $f(x_0)$ được gọi là **giá trị cực đại** (hay cực đại) của hàm số, kí hiệu là $y_{CĐ}$. Điểm $M_0(x_0; f(x_0))$ trên mặt phẳng tọa độ gọi là **điểm cực đại của đồ thị hàm số**.
+>    Khi đó, $f(x_0)$ được gọi là **giá trị cực đại** (hay cực đại) của hàm số, kí hiệu là $y_{\text{CĐ}}$. Điểm $M_0(x_0; f(x_0))$ trên mặt phẳng tọa độ gọi là **điểm cực đại của đồ thị hàm số**.
 >
 > 2. Điểm $x_0$ được gọi là **điểm cực tiểu** của hàm số $f(x)$ nếu tồn tại một khoảng $(a; b)$ chứa $x_0$ sao cho:
 >    $$f(x) > f(x_0), \quad \forall x \in (a; b) \setminus \{x_0\}$$
->    Khi đó, $f(x_0)$ được gọi là **giá trị cực tiểu** (hay cực tiểu) của hàm số, kí hiệu là $y_{CT}$. Điểm $M_0(x_0; f(x_0))$ gọi là **điểm cực tiểu của đồ thị hàm số**.
+>    Khi đó, $f(x_0)$ được gọi là **giá trị cực tiểu** (hay cực tiểu) của hàm số, kí hiệu là $y_{\text{CT}}$. Điểm $M_0(x_0; f(x_0))$ gọi là **điểm cực tiểu của đồ thị hàm số**.
 
 > [!WARNING]
 > **Phân biệt thuật ngữ để tránh mất điểm:**
 > - **Điểm cực trị của hàm số:** Là giá trị của biến số $x$ (ví dụ: $x = 2$).
-> - **Cực trị (hoặc giá trị cực trị) của hàm số:** Là giá trị của $y$ (ví dụ: $y_{CĐ} = 5$).
+> - **Cực trị (hoặc giá trị cực trị) của hàm số:** Là giá trị của $y$ (ví dụ: $y_{\text{CĐ}} = 5$).
 > - **Điểm cực trị của đồ thị hàm số:** Là một cặp tọa độ $(x; y)$ trên mặt phẳng (ví dụ: $M(2; 5)$).
 
 ### 2. Điều kiện cần để hàm số đạt cực trị (Định lý Fermat)
@@ -152,6 +152,54 @@ Giả sử hàm số $y = f(x)$ liên tục trên khoảng $(a; b)$ chứa $x_0$
 - Nếu $f'(x)$ **đổi dấu từ âm (-) sang dương (+)** khi $x$ đi qua $x_0$ (từ trái sang phải) thì $x_0$ là **điểm cực tiểu**.
 - Nếu $f'(x)$ **không đổi dấu** khi $x$ đi qua $x_0$ thì điểm $x_0$ **không phải là điểm cực trị**.
 
+<div style="margin: 20px auto; max-width: 640px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+<div style="font-weight: bold; color: #1e293b; text-align: center; margin-bottom: 12px;">HÌNH HỌC HÓA BẢNG BIẾN THIÊN THEO DẤU HIỆU 1</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+<div>
+<div style="font-size: 0.9em; font-weight: bold; color: #166534; text-align: center; margin-bottom: 6px;">1. ĐIỂM CỰC ĐẠI (Đổi dấu: + qua 0 sang −)</div>
+<svg viewBox="0 0 280 150" width="100%" class="lesson-diagram">
+<defs><marker id="arr-g" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#166534"/></marker></defs>
+<line x1="45" y1="0" x2="45" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="35" x2="280" y2="35" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="70" x2="280" y2="70" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="22" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">x</text>
+<text x="22" y="58" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">f'(x)</text>
+<text x="22" y="115" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">f(x)</text>
+<text x="70" y="24" text-anchor="middle" font-size="13" fill="#64748b">a</text>
+<text x="160" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">x₀</text>
+<text x="250" y="24" text-anchor="middle" font-size="13" fill="#64748b">b</text>
+<text x="110" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<text x="160" y="58" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<text x="210" y="58" text-anchor="middle" font-weight="bold" font-size="18" fill="#dc2626">−</text>
+<line x1="75" y1="135" x2="148" y2="92" stroke="#16a34a" stroke-width="2" marker-end="url(#arr-g)"/>
+<text x="160" y="88" text-anchor="middle" font-weight="bold" font-size="13" fill="#15803d">f(x₀) (CĐ)</text>
+<line x1="172" y1="92" x2="245" y2="135" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-g)"/>
+</svg>
+</div>
+<div>
+<div style="font-size: 0.9em; font-weight: bold; color: #b45309; text-align: center; margin-bottom: 6px;">2. ĐIỂM CỰC TIỂU (Đổi dấu: − qua 0 sang +)</div>
+<svg viewBox="0 0 280 150" width="100%" class="lesson-diagram">
+<defs><marker id="arr-o" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#b45309"/></marker></defs>
+<line x1="45" y1="0" x2="45" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="35" x2="280" y2="35" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="70" x2="280" y2="70" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="22" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">x</text>
+<text x="22" y="58" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">f'(x)</text>
+<text x="22" y="115" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">f(x)</text>
+<text x="70" y="24" text-anchor="middle" font-size="13" fill="#64748b">a</text>
+<text x="160" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">x₀</text>
+<text x="250" y="24" text-anchor="middle" font-size="13" fill="#64748b">b</text>
+<text x="110" y="58" text-anchor="middle" font-weight="bold" font-size="18" fill="#dc2626">−</text>
+<text x="160" y="58" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<text x="210" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<line x1="75" y1="92" x2="148" y2="135" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-o)"/>
+<text x="160" y="145" text-anchor="middle" font-weight="bold" font-size="13" fill="#b45309">f(x₀) (CT)</text>
+<line x1="172" y1="135" x2="245" y2="92" stroke="#16a34a" stroke-width="2" marker-end="url(#arr-o)"/>
+</svg>
+</div>
+</div>
+</div>
+
 #### Dấu hiệu 2 (Dựa vào đạo hàm cấp hai $f''(x)$)
 Giả sử hàm số $y = f(x)$ có đạo hàm cấp một và cấp hai trên khoảng $(a; b)$ chứa $x_0$, và $f'(x_0) = 0$:
 - Nếu $\mathbf{f''(x_0) < 0}$ thì hàm số đạt **cực đại** tại điểm $x_0$.
@@ -165,86 +213,102 @@ Dưới đây là đồ thị hàm số bậc ba chuẩn mực $y = \frac{1}{3}x
 Hãy kéo thanh trượt để di chuyển tiếp điểm $x$ trên đồ thị, quan sát tiếp tuyến (màu cam), dấu của đạo hàm $y' = x^2 - 2x - 3$ và vị trí hai điểm cực trị:
 
 <div id="cubic-app" style="margin: 24px 0; padding: 22px; background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
-  <h4 style="margin-top: 0; color: var(--primary-color, #2563eb);">MÔ PHỎNG ĐỒ THỊ BẬC BA: y = ⅓x³ - x² - 3x + 2</h4>
-  
-  <div style="max-width: 460px; margin: 0 auto 16px auto; background: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <label style="font-weight: 600; color: #1e293b; display: block; margin-bottom: 6px;">
-      Hoành độ tiếp điểm x: <span id="val-probe-x" style="font-size: 1.15em; color: #2563eb;">-1.00</span>
-    </label>
-    <input type="range" id="range-probe-x" min="-3" max="5" step="0.1" value="-1.00" style="width: 100%;">
-  </div>
-
-  <div style="display: flex; justify-content: center;">
-    <svg id="cubic-svg" viewBox="0 0 500 320" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
-      <!-- Grid & Axes -->
-      <!-- Origin at (220, 160). Scale: 35px per unit x, 12px per unit y -->
-      <line x1="30" y1="160" x2="470" y2="160" stroke="#94a3b8" stroke-width="1.5"/>
-      <line x1="220" y1="20" x2="220" y2="300" stroke="#94a3b8" stroke-width="1.5"/>
-      <text x="460" y="150" font-family="sans-serif" font-size="12" fill="#64748b">x</text>
-      <text x="230" y="30" font-family="sans-serif" font-size="12" fill="#64748b">y</text>
-      
-      <!-- Curve y = x^3/3 - x^2 - 3x + 2 -->
-      <path id="curve-cubic" d="" fill="none" stroke="#2563eb" stroke-width="3"/>
-      
-      <!-- Cực đại (-1, 3.67) & Cực tiểu (3, -7) -->
-      <!-- At x=-1: px = 220 - 35 = 185; py = 160 - 3.67*12 = 160 - 44 = 116 -->
-      <circle cx="185" cy="116" r="5" fill="#10b981"/>
-      <text x="145" y="105" font-family="sans-serif" font-size="11" font-weight="bold" fill="#047857">CĐ (-1; 3.67)</text>
-
-      <!-- At x=3: px = 220 + 3*35 = 325; py = 160 - (-7)*12 = 160 + 84 = 244 -->
-      <circle cx="325" cy="244" r="5" fill="#f59e0b"/>
-      <text x="315" y="265" font-family="sans-serif" font-size="11" font-weight="bold" fill="#b45309">CT (3; -7)</text>
-
-      <!-- Tangent line dynamic -->
-      <line id="probe-tangent" x1="0" y1="0" x2="0" y2="0" stroke="#ea580c" stroke-width="2"/>
-
-      <!-- Probe Point -->
-      <circle id="probe-pt" cx="0" cy="0" r="6" fill="#ea580c"/>
-    </svg>
-  </div>
-
-  <div id="probe-status" style="margin-top: 14px; padding: 12px; background: #f1f5f9; border-radius: 8px; font-family: monospace; font-size: 1.05em; text-align: left;">
-    <div>• Đạo hàm tại x: <strong id="val-deriv" style="color: #ea580c;">y' = 0.00</strong></div>
-    <div>• Trạng thái hàm số: <strong id="val-state" style="color: #047857;">Điểm Cực Đại (tiếp tuyến nằm ngang)</strong></div>
-  </div>
+<h4 style="margin-top: 0; color: var(--primary-color, #2563eb);">MÔ PHỎNG ĐỒ THỊ BẬC BA: y = ⅓x³ - x² - 3x + 2</h4>
+<div style="max-width: 500px; margin: 0 auto 16px auto; background: #f8fafc; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+<label style="font-weight: 600; color: #1e293b; display: block; margin-bottom: 8px;">
+Kéo thanh trượt điểm x: <span id="val-probe-x" style="font-size: 1.2em; color: #2563eb; font-weight: bold;">-1.00</span>
+(Tọa độ điểm M: <span id="val-probe-coord" style="font-weight: bold; color: #ea580c;">(-1.00; 3.67)</span>)
+</label>
+<input type="range" id="range-probe-x" min="-3" max="5" step="0.05" value="-1.00" style="width: 100%;">
+</div>
+<div style="display: flex; justify-content: center; overflow-x: auto;">
+<svg id="cubic-svg" viewBox="0 0 520 340" width="100%" style="max-width: 520px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+<!-- Coordinate Axes: Origin at (210, 160). Scale: 36px/unit in x, 12px/unit in y -->
+<line x1="30" y1="160" x2="490" y2="160" stroke="#64748b" stroke-width="1.5"/>
+<line x1="210" y1="325" x2="210" y2="15" stroke="#64748b" stroke-width="1.5"/>
+<polygon points="490,157 498,160 490,163" fill="#64748b"/>
+<polygon points="207,15 210,7 213,15" fill="#64748b"/>
+<text x="485" y="150" font-family="sans-serif" font-size="12" font-weight="bold" fill="#475569">x</text>
+<text x="220" y="20" font-family="sans-serif" font-size="12" font-weight="bold" fill="#475569">y</text>
+<text x="198" y="174" font-family="sans-serif" font-size="12" fill="#64748b">O</text>
+<!-- Ticks on x-axis -->
+<line x1="102" y1="157" x2="102" y2="163" stroke="#94a3b8" stroke-width="1"/>
+<text x="102" y="174" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#64748b">-3</text>
+<line x1="174" y1="157" x2="174" y2="163" stroke="#94a3b8" stroke-width="1"/>
+<text x="174" y="174" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#64748b">-1</text>
+<line x1="246" y1="157" x2="246" y2="163" stroke="#94a3b8" stroke-width="1"/>
+<text x="246" y="174" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#64748b">1</text>
+<line x1="318" y1="157" x2="318" y2="163" stroke="#94a3b8" stroke-width="1"/>
+<text x="318" y="174" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#64748b">3</text>
+<line x1="390" y1="157" x2="390" y2="163" stroke="#94a3b8" stroke-width="1"/>
+<text x="390" y="174" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#64748b">5</text>
+<!-- Ticks on y-axis -->
+<line x1="207" y1="116" x2="213" y2="116" stroke="#94a3b8" stroke-width="1"/>
+<text x="195" y="120" font-family="sans-serif" font-size="11" text-anchor="end" fill="#64748b">3.7</text>
+<line x1="207" y1="244" x2="213" y2="244" stroke="#94a3b8" stroke-width="1"/>
+<text x="195" y="248" font-family="sans-serif" font-size="11" text-anchor="end" fill="#64748b">-7</text>
+<!-- Pre-rendered smooth Cubic Curve -->
+<path id="curve-cubic" d="M 94.8 274.1 L 102 244 L 120 183.5 L 138 144 L 156 122.5 L 174 116 L 192 121.5 L 210 136 L 228 156.5 L 246 180 L 264 203.5 L 282 224 L 300 238.5 L 318 244 L 336 237.5 L 354 216 L 372 176.5 L 390 116 L 397.2 84.6" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="405" y="80" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2563eb">y = f(x)</text>
+<!-- Extremum Projections and Points -->
+<!-- Cực đại: x = -1, y = 3.67 (174, 116) -->
+<line x1="174" y1="160" x2="174" y2="116" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="210" y1="116" x2="174" y2="116" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
+<circle cx="174" cy="116" r="5" fill="#10b981"/>
+<text x="165" y="105" text-anchor="end" font-family="sans-serif" font-size="11" font-weight="bold" fill="#047857">CĐ (−1; 3.67)</text>
+<!-- Cực tiểu: x = 3, y = -7 (318, 244) -->
+<line x1="318" y1="160" x2="318" y2="244" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="210" y1="244" x2="318" y2="244" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,3"/>
+<circle cx="318" cy="244" r="5" fill="#f59e0b"/>
+<text x="325" y="260" font-family="sans-serif" font-size="11" font-weight="bold" fill="#b45309">CT (3; −7)</text>
+<!-- Dynamic Projections for Probe Point -->
+<line id="probe-proj-x" x1="174" y1="160" x2="174" y2="116" stroke="#ea580c" stroke-width="1" stroke-dasharray="2,2"/>
+<line id="probe-proj-y" x1="210" y1="116" x2="174" y2="116" stroke="#ea580c" stroke-width="1" stroke-dasharray="2,2"/>
+<!-- Dynamic Tangent line -->
+<line id="probe-tangent" x1="120" y1="116" x2="228" y2="116" stroke="#ea580c" stroke-width="2.5"/>
+<!-- Probe Point -->
+<circle id="probe-pt" cx="174" cy="116" r="6" fill="#ea580c"/>
+</svg>
+</div>
+<div id="probe-status" style="margin-top: 14px; padding: 14px; background: #f1f5f9; border-radius: 8px; font-family: monospace; font-size: 1.05em; text-align: left; line-height: 1.8;">
+<div>• Đạo hàm cấp 1: <strong id="val-deriv" style="color: #ea580c; font-size: 1.15em;">y' = 0.00</strong> <span style="color: #64748b; font-size: 0.9em;">(y' = x² - 2x - 3)</span></div>
+<div>• Đạo hàm cấp 2: <strong id="val-d2" style="color: #475569;">y'' = -4.00</strong></div>
+<div style="margin-top: 6px;">• Trạng thái khảo sát: <span id="val-state"><strong style="color: #047857; font-size: 1.1em;">ĐIỂM CỰC ĐẠI</strong> (tiếp tuyến nằm ngang k = 0, f''(x) &lt; 0)</span></div>
+</div>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const rX = document.getElementById('range-probe-x');
   const valX = document.getElementById('val-probe-x');
+  const valCoord = document.getElementById('val-probe-coord');
   const valDeriv = document.getElementById('val-deriv');
+  const valD2 = document.getElementById('val-d2');
   const valState = document.getElementById('val-state');
-  const pathCubic = document.getElementById('curve-cubic');
   const lineTan = document.getElementById('probe-tangent');
   const ptProbe = document.getElementById('probe-pt');
+  const projX = document.getElementById('probe-proj-x');
+  const projY = document.getElementById('probe-proj-y');
 
-  if (!rX || !pathCubic) return;
+  if (!rX || !lineTan || !ptProbe) return;
 
-  const originX = 220, originY = 160;
-  const scaleX = 35, scaleY = 12;
+  const originX = 210, originY = 160;
+  const scaleX = 36, scaleY = 12;
 
   function f(x) { return (x*x*x)/3 - x*x - 3*x + 2; }
   function df(x) { return x*x - 2*x - 3; }
-
-  // Draw static cubic curve
-  let dCurve = '';
-  for (let px = -3.2; px <= 5.2; px += 0.05) {
-    const py = f(px);
-    const sx = originX + px * scaleX;
-    const sy = originY - py * scaleY;
-    if (dCurve === '') dCurve += `M ${sx} ${sy}`;
-    else dCurve += ` L ${sx} ${sy}`;
-  }
-  pathCubic.setAttribute('d', dCurve);
+  function d2f(x) { return 2*x - 2; }
 
   function update() {
     const x = parseFloat(rX.value);
     const y = f(x);
     const slope = df(x);
+    const d2 = d2f(x);
 
     valX.textContent = x.toFixed(2);
+    valCoord.textContent = `(${x.toFixed(2)}; ${y.toFixed(2)})`;
     valDeriv.textContent = `y' = ${slope.toFixed(2)}`;
+    valD2.textContent = `y'' = ${d2.toFixed(2)}`;
 
     const sx = originX + x * scaleX;
     const sy = originY - y * scaleY;
@@ -252,10 +316,19 @@ document.addEventListener('DOMContentLoaded', function() {
     ptProbe.setAttribute('cx', sx);
     ptProbe.setAttribute('cy', sy);
 
+    projX.setAttribute('x1', sx);
+    projX.setAttribute('y1', 160);
+    projX.setAttribute('x2', sx);
+    projX.setAttribute('y2', sy);
+
+    projY.setAttribute('x1', 210);
+    projY.setAttribute('y1', sy);
+    projY.setAttribute('x2', sx);
+    projY.setAttribute('y2', sy);
+
     // Tangent endpoints in screen pixels
-    // Math slope k = dy/dx. In screen: dy_screen = -k * (scaleY/scaleX) * dx_screen
     const kScreen = -slope * (scaleY / scaleX);
-    const len = 50;
+    const len = 60;
     const dxScreen = len / Math.sqrt(1 + kScreen * kScreen);
     const dyScreen = kScreen * dxScreen;
 
@@ -264,14 +337,14 @@ document.addEventListener('DOMContentLoaded', function() {
     lineTan.setAttribute('x2', sx + dxScreen);
     lineTan.setAttribute('y2', sy + dyScreen);
 
-    if (Math.abs(x - (-1)) < 0.15) {
-      valState.innerHTML = '<span style="color: #047857; font-weight: bold;">Điểm Cực Đại (y\' = 0, đồ thị chuyển từ đồng biến sang nghịch biến)</span>';
-    } else if (Math.abs(x - 3) < 0.15) {
-      valState.innerHTML = '<span style="color: #b45309; font-weight: bold;">Điểm Cực Tiểu (y\' = 0, đồ thị chuyển từ nghịch biến sang đồng biến)</span>';
+    if (Math.abs(x - (-1)) < 0.12) {
+      valState.innerHTML = '<strong style="color: #047857; font-size: 1.1em;">ĐIỂM CỰC ĐẠI</strong> (y\' = 0, y\'\' = -4 &lt; 0, đồ thị chuyển từ đồng biến sang nghịch biến)';
+    } else if (Math.abs(x - 3) < 0.12) {
+      valState.innerHTML = '<strong style="color: #b45309; font-size: 1.1em;">ĐIỂM CỰC TIỂU</strong> (y\' = 0, y\'\' = 4 &gt; 0, đồ thị chuyển từ nghịch biến sang đồng biến)';
     } else if (slope > 0) {
-      valState.innerHTML = '<span style="color: #2563eb; font-weight: bold;">Hàm số ĐỒNG BIẾN (y\' > 0, đồ thị đang đi lên)</span>';
+      valState.innerHTML = '<strong style="color: #2563eb; font-size: 1.05em;">Hàm số ĐỒNG BIẾN</strong> (y\' &gt; 0, tiếp tuyến dốc lên, đồ thị đang đi lên)';
     } else {
-      valState.innerHTML = '<span style="color: #dc2626; font-weight: bold;">Hàm số NGHỊCH BIẾN (y\' < 0, đồ thị đang đi xuống)</span>';
+      valState.innerHTML = '<strong style="color: #dc2626; font-size: 1.05em;">Hàm số NGHỊCH BIẾN</strong> (y\' &lt; 0, tiếp tuyến dốc xuống, đồ thị đang đi xuống)';
     }
   }
 
@@ -300,16 +373,40 @@ $$y = f(x) = 2x^3 - 3x^2 - 12x + 1$$
   $$f(2) = 2(2)^3 - 3(2)^2 - 12(2) + 1 = 16 - 12 - 24 + 1 = -19$$
 - **Bảng biến thiên:**
 
-| $x$ | $-\infty$ | | $-1$ | | $2$ | | $+\infty$ |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $y'$ | | $+$ | $0$ | $-$ | $0$ | $+$ | |
-| $y$ | $-\infty$ | $\nearrow$ | $8$ | $\searrow$ | $-19$ | $\nearrow$ | $+\infty$ |
+<div style="margin: 20px auto; max-width: 580px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: center;">
+<div style="font-weight: bold; color: #1e293b; margin-bottom: 8px;">BẢNG BIẾN THIÊN HÀM BẬC BA: y = 2x³ - 3x² - 12x + 1</div>
+<svg viewBox="0 0 540 170" width="100%" class="lesson-diagram">
+<defs><marker id="arr-bt1" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2563eb"/></marker></defs>
+<line x1="65" y1="0" x2="65" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="36" x2="540" y2="36" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="72" x2="540" y2="72" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="32" y="24" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">x</text>
+<text x="32" y="58" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">y'</text>
+<text x="32" y="125" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">y</text>
+<text x="95" y="24" text-anchor="middle" font-size="13" fill="#64748b">−∞</text>
+<text x="210" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">−1</text>
+<text x="350" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">2</text>
+<text x="495" y="24" text-anchor="middle" font-size="13" fill="#64748b">+∞</text>
+<text x="145" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<text x="210" y="58" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<text x="280" y="58" text-anchor="middle" font-weight="bold" font-size="18" fill="#dc2626">−</text>
+<text x="350" y="58" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<text x="425" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<text x="95" y="156" text-anchor="middle" font-size="13" fill="#64748b">−∞</text>
+<line x1="115" y1="148" x2="195" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt1)"/>
+<text x="210" y="94" text-anchor="middle" font-weight="bold" font-size="14" fill="#047857">8</text>
+<line x1="225" y1="100" x2="335" y2="148" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt1)"/>
+<text x="350" y="156" text-anchor="middle" font-weight="bold" font-size="14" fill="#b45309">−19</text>
+<line x1="365" y1="148" x2="475" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt1)"/>
+<text x="495" y="94" text-anchor="middle" font-size="13" fill="#64748b">+∞</text>
+</svg>
+</div>
 
 - **Kết luận:**
   + Hàm số **đồng biến** trên các khoảng $(-\infty; -1)$ và $(2; +\infty)$.
   + Hàm số **nghịch biến** trên khoảng $(-1; 2)$.
-  + Hàm số đạt **cực đại** tại điểm $x = -1$, giá trị cực đại là $y_{CĐ} = 8$. Điểm cực đại của đồ thị là $M(-1; 8)$.
-  + Hàm số đạt **cực tiểu** tại điểm $x = 2$, giá trị cực tiểu là $y_{CT} = -19$. Điểm cực tiểu của đồ thị là $N(2; -19)$.
+  + Hàm số đạt **cực đại** tại điểm $x = -1$, giá trị cực đại là $y_{\text{CĐ}} = 8$. Điểm cực đại của đồ thị là $M(-1; 8)$.
+  + Hàm số đạt **cực tiểu** tại điểm $x = 2$, giá trị cực tiểu là $y_{\text{CT}} = -19$. Điểm cực tiểu của đồ thị là $N(2; -19)$.
 
 ---
 
@@ -327,6 +424,32 @@ a) $y = \frac{2x - 1}{x + 1}$
 - Kết luận: Hàm số **đồng biến** trên từng khoảng xác định $(-\infty; -1)$ và $(-1; +\infty)$.  
   *(Lưu ý: Tuyệt đối không kết luận hàm số đồng biến trên $\mathbb{R} \setminus \{-1\}$ hoặc $(-\infty; -1) \cup (-1; +\infty)$ vì định nghĩa đơn điệu chỉ xét trên từng khoảng!).* Hàm số này không có cực trị.
 
+<div style="margin: 20px auto; max-width: 540px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: center;">
+<div style="font-weight: bold; color: #1e293b; margin-bottom: 8px;">BẢNG BIẾN THIÊN HÀM BẬC NHẤT / BẬC NHẤT: y = (2x - 1)/(x + 1)</div>
+<svg viewBox="0 0 500 170" width="100%" class="lesson-diagram">
+<defs><marker id="arr-bt2a" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2563eb"/></marker></defs>
+<line x1="65" y1="0" x2="65" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="36" x2="500" y2="36" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="72" x2="500" y2="72" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="273" y1="36" x2="273" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="277" y1="36" x2="277" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="32" y="24" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">x</text>
+<text x="32" y="58" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">y'</text>
+<text x="32" y="125" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">y</text>
+<text x="100" y="24" text-anchor="middle" font-size="13" fill="#64748b">−∞</text>
+<text x="275" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#dc2626">−1</text>
+<text x="450" y="24" text-anchor="middle" font-size="13" fill="#64748b">+∞</text>
+<text x="180" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<text x="370" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<text x="100" y="156" text-anchor="middle" font-size="13" fill="#1e293b">2</text>
+<line x1="120" y1="148" x2="245" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt2a)"/>
+<text x="255" y="94" text-anchor="middle" font-size="13" fill="#64748b">+∞</text>
+<text x="295" y="156" text-anchor="middle" font-size="13" fill="#64748b">−∞</text>
+<line x1="315" y1="148" x2="430" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt2a)"/>
+<text x="450" y="94" text-anchor="middle" font-size="13" fill="#1e293b">2</text>
+</svg>
+</div>
+
 b) $y = \frac{x^2 - 3x + 3}{x - 1}$
 - Tập xác định: $D = \mathbb{R} \setminus \{1\}$.
 - Biến đổi: $y = x - 2 + \frac{1}{x - 1}$.
@@ -337,16 +460,47 @@ b) $y = \frac{x^2 - 3x + 3}{x - 1}$
   + Với $x = 2 \implies y = 1$.
 - Bảng biến thiên:
 
-| $x$ | $-\infty$ | | $0$ | | $1$ | | $2$ | | $+\infty$ |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $y'$ | | $+$ | $0$ | $-$ | $\|$ | $-$ | $0$ | $+$ | |
-| $y$ | $-\infty$ | $\nearrow$ | $-3$ | $\searrow$ | $-\infty \,\|\, +\infty$ | $\searrow$ | $1$ | $\nearrow$ | $+\infty$ |
+<div style="margin: 20px auto; max-width: 620px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 10px; padding: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); text-align: center;">
+<div style="font-weight: bold; color: #1e293b; margin-bottom: 8px;">BẢNG BIẾN THIÊN HÀM PHÂN THỨC: y = (x² - 3x + 3)/(x - 1)</div>
+<svg viewBox="0 0 600 170" width="100%" class="lesson-diagram">
+<defs><marker id="arr-bt2b" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2563eb"/></marker></defs>
+<line x1="65" y1="0" x2="65" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="36" x2="600" y2="36" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="0" y1="72" x2="600" y2="72" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="328" y1="36" x2="328" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="332" y1="36" x2="332" y2="170" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="32" y="24" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">x</text>
+<text x="32" y="58" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">y'</text>
+<text x="32" y="125" text-anchor="middle" font-weight="bold" font-size="15" fill="#1e293b">y</text>
+<text x="95" y="24" text-anchor="middle" font-size="13" fill="#64748b">−∞</text>
+<text x="205" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">0</text>
+<text x="330" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#dc2626">1</text>
+<text x="455" y="24" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">2</text>
+<text x="565" y="24" text-anchor="middle" font-size="13" fill="#64748b">+∞</text>
+<text x="145" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<text x="205" y="58" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<text x="265" y="58" text-anchor="middle" font-weight="bold" font-size="18" fill="#dc2626">−</text>
+<text x="390" y="58" text-anchor="middle" font-weight="bold" font-size="18" fill="#dc2626">−</text>
+<text x="455" y="58" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+<text x="515" y="58" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+<text x="95" y="156" text-anchor="middle" font-size="13" fill="#64748b">−∞</text>
+<line x1="115" y1="148" x2="190" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt2b)"/>
+<text x="205" y="94" text-anchor="middle" font-weight="bold" font-size="14" fill="#047857">−3</text>
+<line x1="220" y1="100" x2="295" y2="148" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt2b)"/>
+<text x="310" y="156" text-anchor="middle" font-size="13" fill="#64748b">−∞</text>
+<text x="350" y="94" text-anchor="middle" font-size="13" fill="#64748b">+∞</text>
+<line x1="365" y1="100" x2="440" y2="148" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt2b)"/>
+<text x="455" y="156" text-anchor="middle" font-weight="bold" font-size="14" fill="#b45309">1</text>
+<line x1="470" y1="148" x2="545" y2="100" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-bt2b)"/>
+<text x="565" y="94" text-anchor="middle" font-size="13" fill="#64748b">+∞</text>
+</svg>
+</div>
 
 - Kết luận:
   + Hàm số đồng biến trên các khoảng $(-\infty; 0)$ và $(2; +\infty)$.
   + Hàm số nghịch biến trên các khoảng $(0; 1)$ và $(1; 2)$.
-  + Điểm cực đại là $x = 0$ ($y_{CĐ} = -3$), điểm cực tiểu là $x = 2$ ($y_{CT} = 1$).  
-  *(Chú ý: Giá trị cực đại $y_{CĐ} = -3$ có thể nhỏ hơn giá trị cực tiểu $y_{CT} = 1$ vì cực trị chỉ có tính chất cục bộ!).*
+  + Điểm cực đại là $x = 0$ ($y_{\text{CĐ}} = -3$), điểm cực tiểu là $x = 2$ ($y_{\text{CT}} = 1$).  
+  *(Chú ý: Giá trị cực đại $y_{\text{CĐ}} = -3$ có thể nhỏ hơn giá trị cực tiểu $y_{\text{CT}} = 1$ vì cực trị chỉ có tính chất cục bộ!).*
 
 ---
 
@@ -520,6 +674,31 @@ Một công ty du lịch tổ chức tour khám phá vịnh Hạ Long. Giá vé 
 >    $$R'(x) = -0.08x + 0.8$$
 >    $$R'(x) = 0 \iff -0.08x + 0.8 = 0 \iff x = 10$$
 >    Vì $R''(x) = -0.08 < 0$ nên $x = 10$ chắc chắn là điểm cực đại của hàm doanh thu!
+>
+> <div style="margin: 16px auto; max-width: 500px; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 12px; text-align: center;">
+> <div style="font-weight: bold; color: #1e293b; font-size: 0.9em; margin-bottom: 6px;">BẢNG BIẾN THIÊN HÀM DOANH THU R(x) (triệu đồng)</div>
+> <svg viewBox="0 0 460 150" width="100%" class="lesson-diagram">
+> <defs><marker id="arr-r" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#16a34a"/></marker></defs>
+> <line x1="60" y1="0" x2="60" y2="150" stroke="#94a3b8" stroke-width="1.5"/>
+> <line x1="0" y1="34" x2="460" y2="34" stroke="#94a3b8" stroke-width="1.5"/>
+> <line x1="0" y1="68" x2="460" y2="68" stroke="#94a3b8" stroke-width="1.5"/>
+> <text x="30" y="23" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">x</text>
+> <text x="30" y="55" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">R'(x)</text>
+> <text x="30" y="112" text-anchor="middle" font-weight="bold" font-size="14" fill="#1e293b">R(x)</text>
+> <text x="95" y="23" text-anchor="middle" font-size="13" fill="#64748b">0</text>
+> <text x="245" y="23" text-anchor="middle" font-weight="bold" font-size="14" fill="#166534">10</text>
+> <text x="410" y="23" text-anchor="middle" font-size="13" fill="#64748b">50</text>
+> <text x="165" y="55" text-anchor="middle" font-weight="bold" font-size="16" fill="#16a34a">+</text>
+> <text x="245" y="55" text-anchor="middle" font-size="14" fill="#64748b">0</text>
+> <text x="335" y="55" text-anchor="middle" font-weight="bold" font-size="18" fill="#dc2626">−</text>
+> <text x="95" y="138" text-anchor="middle" font-size="13" fill="#1e293b">60</text>
+> <line x1="115" y1="130" x2="230" y2="88" stroke="#16a34a" stroke-width="2" marker-end="url(#arr-r)"/>
+> <text x="245" y="82" text-anchor="middle" font-weight="bold" font-size="14" fill="#15803d">64 (CĐ)</text>
+> <line x1="260" y1="88" x2="390" y2="130" stroke="#dc2626" stroke-width="2" marker-end="url(#arr-r)"/>
+> <text x="410" y="138" text-anchor="middle" font-size="13" fill="#1e293b">0</text>
+> </svg>
+> </div>
+>
 > 3. Đoàn tour tối ưu nhất là có:
 >    $$30 + 10 = 40\text{ khách}$$
 >    Doanh thu cực đại thu về là:
