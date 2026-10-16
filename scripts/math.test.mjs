@@ -55,3 +55,13 @@ test('proportional proof with an implication remains one coherent display equati
  const tex='\\frac{AB}{AC} = \\frac{DE}{DF} \\implies AB = AC \\times \\frac{DE}{DF} = 16 \\times \\frac{1{,}5}{2} = \\mathbf{12}\\text{ m}.',html=renderMath(tex,{displayMode:true});
  const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);assert.ok(layout.startsWith('\\begin{array}{l}'));assert.ok(layout.includes('\\implies AB = AC'));assert.ok(layout.includes('= 16'));assert.match(html,/columnalign="left"/);assert.ok(html.includes(`<annotation encoding="application/x-tex">${tex}</annotation>`));assert.match(html,/⟹/);
 });
+
+test('inline angle formulas with implications do not wrap into multi-line arrays',async()=>{
+ const tex='\\widehat{A} \\implies \\widehat{B} = \\widehat{C} = \\frac{180^\\circ - \\widehat{A}}{2}';
+ const {wrapLongDisplayFormula}=await import('./math.mjs'),layout=wrapLongDisplayFormula(tex);
+ assert.equal(layout,tex);
+ const html=renderMath(tex);
+ assert.ok(!html.includes('katex-auto-wrap'));
+ assert.ok(!html.includes('mtable'));
+});
+

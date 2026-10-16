@@ -146,8 +146,8 @@ $\implies \triangle ABH = \triangle ACH$ (c.c.c).
 $\implies \widehat{B} = \widehat{C}$ (hai góc tương ứng).
 
 Từ đó ta có công thức tính nhanh số đo các góc trong tam giác cân:
-- Biết góc ở đỉnh $\widehat{A} \implies \widehat{B} = \widehat{C} = \frac{180^\circ - \widehat{A}}{2}$.
-- Biết một góc ở đáy $\widehat{B} \implies \widehat{A} = 180^\circ - 2\widehat{B}$.
+- Biết góc ở đỉnh $\widehat{A}$: $\widehat{B} = \widehat{C} = \frac{180^\circ - \widehat{A}}{2}$.
+- Biết một góc ở đáy $\widehat{B}$: $\widehat{A} = 180^\circ - 2\widehat{B}$.
 
 > [!TIP]
 > **ĐỊNH LÝ 2 (Dấu hiệu nhận biết tam giác cân):**
