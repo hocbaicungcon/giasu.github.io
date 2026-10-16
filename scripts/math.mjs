@@ -3,7 +3,7 @@ const escapeText=source=>source.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','
 // Unicode prose labels use the site's font; mathematical accents retain KaTeX metrics.
 export function renderMath(tex,options={}){
  const original=String(tex).replace(/&lt;/g,'<').replace(/&gt;/g,'>');
- const source=wrapLongDisplayFormula(original,32,60);
+ const source=wrapLongDisplayFormula(original,56,68);
  const displayMode=!!options.displayMode||source!==original,labels=[];
  const prepared=source.replace(/\\(?:text|textsf|textrm|textnormal|mathrm)\{([^{}\\$]*)\}/g,(match,label)=>{
   if(!/[\u00c0-\u024f\u1ea0-\u1ef9]/i.test(label))return match;
@@ -32,34 +32,62 @@ export function renderMath(tex,options={}){
 
 // Break only long equation chains at top-level relations. Inline fragments and
 // short formulas keep their authored layout; implications stay attached to conclusions.
-export function wrapLongDisplayFormula(source,maxLine=52,minLength=60){
+export function wrapLongDisplayFormula(source,maxLine=56,minLength=68){
  if(source.length<minLength||/\\begin\s*\{/.test(source))return source;
  const breaks=[];let depth=0;
  for(let i=0;i<source.length;i++){
   if(source[i]==='\\'){
    const command=source.slice(i).match(/^\\[A-Za-z]+/)?.[0];
-   if(command){if(command==='\\left')depth++;if(command==='\\right')depth=Math.max(0,depth-1);if(depth===0&&command==='\\implies')breaks.push({at:i,kind:'implies'});i+=command.length-1;continue;}
+   if(command){
+    if(command==='\\left')depth++;
+    if(command==='\\right')depth=Math.max(0,depth-1);
+    if(depth===0&&(command==='\\implies'||command==='\\iff'))breaks.push({at:i,kind:'implies',command});
+    i+=command.length-1;continue;
+   }
    i++;continue;
   }
   if(source[i]==='{'){depth++;continue;}if(source[i]==='}'){depth=Math.max(0,depth-1);continue;}
-  if(depth===0&&source[i]==='=')breaks.push({at:i,kind:'relation'});
+  if(depth===0){
+   if(source[i]===';')breaks.push({at:i+1,kind:'semicolon'});
+   else if(source[i]==='=')breaks.push({at:i,kind:'relation'});
+  }
+ }
+ const hasSemicolon=breaks.some(b=>b.kind==='semicolon');
+ if(hasSemicolon){
+  const semiBreaks=breaks.filter(b=>b.kind==='semicolon');
+  const rows=[];let start=0,idx=0;
+  while(source.length-start>maxLine){let cand=-1;
+   while(idx<semiBreaks.length&&semiBreaks[idx].at<start+maxLine){if(semiBreaks[idx].at>start+12)cand=idx;idx++;}
+   if(cand<0)break;
+   const pt=semiBreaks[cand],row=source.slice(start,pt.at).trim();if(!row)break;rows.push(row);start=pt.at;
+  }
+  const last=source.slice(start).trim();if(rows.length&&last)rows.push(last);
+  return rows.length>1?`\\begin{array}{l}${rows.join('\\\\')}\\end{array}`:source;
  }
  const implication=breaks.find(point=>point.kind==='implies');
  if(implication){
+  const cmd=implication.command||'\\implies';
   const before=source.slice(0,implication.at).trim(),after=source.slice(implication.at).trim();
+  const tail=after.slice(cmd.length).trim();
   const hasBeforeRelation=breaks.some(point=>point.kind==='relation'&&point.at<implication.at);
   const tailEquals=breaks.filter(point=>point.kind==='relation'&&point.at>implication.at);
-  if(!hasBeforeRelation||source.length<80)return source;
-  if(after.length>maxLine&&tailEquals.length>2){
-   const cut=tailEquals[1].at,conclusion=source.slice(implication.at,cut).trim(),result=source.slice(cut).trim();
-   return `\\begin{array}{l}${before}\\\\${conclusion}\\\\${result}\\end{array}`;
+  if(!hasBeforeRelation||source.length<75)return source;
+  if(tail.length>maxLine&&tailEquals.length>2){
+   const cut=tailEquals[1].at,conclusion=source.slice(implication.at+cmd.length,cut).trim(),result=source.slice(cut).trim();
+   return `\\begin{array}{ll} & ${before}\\\\${cmd} & ${conclusion}\\\\& ${result}\\end{array}`;
   }
-  return `\\begin{array}{l}${before}\\\\${after}\\end{array}`;
+  return `\\begin{array}{ll} & ${before}\\\\${cmd} & ${tail}\\end{array}`;
  }
  if(breaks.length<2)return source;
  const rows=[];let start=0,index=0;
  while(source.length-start>maxLine){let candidate=-1;
-  while(index<breaks.length&&breaks[index].at<start+maxLine){if(breaks[index].at>start+12)candidate=index;index++;}
+  while(index<breaks.length&&breaks[index].at<start+maxLine){
+   if(breaks[index].at>start+12){
+    const remaining=source.length-breaks[index].at;
+    if(remaining>18||index===0)candidate=index;
+   }
+   index++;
+  }
   if(candidate<0)break;
   const point=breaks[candidate],row=source.slice(start,point.at).trim();if(!row)break;rows.push(row);start=point.at;
  }
