@@ -29,3 +29,16 @@ test('grader exposes useful static SEO content and truthful application schema',
  assert.match(html,/id="huong-dan"/);assert.match(html,/<noscript>/);
  for(const match of html.matchAll(/<script([^>]+)src="/g))assert.match(match[1],/defer/);
 });
+
+test('examSelect inspects answer keys without modifying active student sheet',()=>{
+ const app=fs.readFileSync(new URL('app.js',root),'utf8');
+ const examSelectBlock=app.match(/\$\('examSelect'\)\.addEventListener\('change'[\s\S]*?\}\);/)?.[0]||'';
+ assert.ok(examSelectBlock,'examSelect listener must exist');
+ assert.ok(!examSelectBlock.includes('current()'),'examSelect must not mutate the current student record');
+ assert.ok(!examSelectBlock.includes('keyCode'),'examSelect must not mutate record keyCode');
+
+ const gradedSelectBlock=app.match(/\$\('gradedExamSelect'\)\.addEventListener\('change'[\s\S]*?\}\);/)?.[0]||'';
+ assert.ok(gradedSelectBlock,'gradedExamSelect listener must exist');
+ assert.ok(gradedSelectBlock.includes('current()'),'gradedExamSelect must access current record');
+ assert.ok(gradedSelectBlock.includes('record.keyCode = code'),'gradedExamSelect must assign record.keyCode');
+});

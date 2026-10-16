@@ -171,7 +171,7 @@ function renderKeyRows() {
 }
 function showKeys(code) {
   if (!exams.length) { $('examInfo').textContent = ''; return; }
-  const exam = exams.find(e => e.code === code); $('examSelect').value = exam?.code || ''; $('manualCode').value = exam?.code || '';
+  const exam = exams.find(e => e.code === (Inputs.matchingCode(exams, code) || code)); $('examSelect').value = exam?.code || ''; $('manualCode').value = exam?.code || '';
   $('manualKeyStatus').textContent='Sửa đáp án mã đề đang chọn sẽ tự cập nhật toàn bộ bài cùng mã đề. Đổi mã rồi bấm lưu để thêm mã đề mới.';
   for (let i = 0; i < 3; i++) {
     const p = 'p' + (i + 1), values = exam?.keys[p] || [];
@@ -191,8 +191,7 @@ function chooseKey(record) {
 $('examSelect').addEventListener('change', () => {
   const code = $('examSelect').value; if (!code) return;
   preferredCode = code; persist('preferredCode', code);
-  const r = current(); if (r) { r.keyCode = code; r.codeIssue = ''; r.manualKey = true; }
-  configureFromExam(exams.find(exam => exam.code === code)); showKeys(code); updateConfiguration();
+  configureFromExam(exams.find(exam => exam.code === (Inputs.matchingCode(exams, code) || code))); showKeys(code); updateConfiguration();
 });
 function configureFromExam(exam) {
   if (!exam) return;
