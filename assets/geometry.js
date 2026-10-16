@@ -178,6 +178,74 @@ document.querySelectorAll('[data-geometry="euclid-parallel"]').forEach(lab=>{
  lab.querySelector('[data-reset]').addEventListener('click',()=>{coordM.value=110;slopeInput.value=15;render();});
  render();
 });
+document.querySelectorAll('[data-geometry="isosceles-triangle"]').forEach(lab=>{
+ const svg=lab.querySelector('svg'),hInput=lab.querySelector('[data-param="h"]'),bcInput=lab.querySelector('[data-param="bc"]'),axisBox=lab.querySelector('[data-toggle-axis]');
+ const valH=lab.querySelector('[data-val="h"]'),valBc=lab.querySelector('[data-val="bc"]');
+ const render=()=>{
+  const h=+hInput.value,bc=+bcInput.value,showAxis=axisBox.checked;
+  valH.textContent=h.toFixed(1);valBc.textContent=bc.toFixed(1);
+  const scale=24,H=[300,270],A=[H[0],H[1]-h*scale],B=[H[0]-(bc/2)*scale,H[1]],C=[H[0]+(bc/2)*scale,H[1]];
+  const side=Math.hypot(h*scale,(bc/2)*scale)/scale;
+  const radB=Math.atan2(h,bc/2),degB=radB*180/Math.PI,degA=180-2*degB;
+  const isEquil=Math.abs(degB-60)<1.5,isRight=Math.abs(degA-90)<1.5;
+  let html=`<title>Tam giác cân ABC có AB = AC</title>`;
+  html+=`<polygon points="${A.join(',')} ${B.join(',')} ${C.join(',')}" fill="var(--diagram-wash, rgba(8,120,88,0.06))" stroke="var(--diagram-ink, #087858)" stroke-width="2.5"/>`;
+  const midAB=[(A[0]+B[0])/2,(A[1]+B[1])/2],midAC=[(A[0]+C[0])/2,(A[1]+C[1])/2];
+  html+=line([midAB[0]-6,midAB[1]-4],[midAB[0]+6,midAB[1]+4],'var(--diagram-coral, #d94e48)',false);
+  html+=line([midAC[0]-6,midAC[1]+4],[midAC[0]+6,midAC[1]-4],'var(--diagram-coral, #d94e48)',false);
+  html+=sector(B,-radB,0,'var(--diagram-gold, #c79536)');
+  html+=sector(C,Math.PI,Math.PI+radB,'var(--diagram-gold, #c79536)');
+  if(showAxis){
+   html+=line(A,H,'#64748b',true);
+   html+=`<rect x="${H[0]-12}" y="${H[1]-12}" width="12" height="12" fill="none" stroke="#64748b" stroke-width="1.5"/>`;
+   html+=`<circle cx="${H[0]}" cy="${H[1]}" r="3" fill="#64748b"/><text x="${H[0]}" y="${H[1]+18}" text-anchor="middle" font-size="13">H</text>`;
+  }
+  html+=labels([A,B,C],['A','B','C']);
+  html+=`<text x="${H[0]+(bc/4)*scale}" y="${H[1]+18}" text-anchor="middle" fill="#64748b" font-size="12">${(bc/2).toFixed(1)}</text>`;
+  html+=`<text x="${H[0]-(bc/4)*scale}" y="${H[1]+18}" text-anchor="middle" fill="#64748b" font-size="12">${(bc/2).toFixed(1)}</text>`;
+  svg.innerHTML=html;
+  lab.querySelector('.geometry-observation').textContent=`Tam giác ABC cân tại A: Cạnh bên AB = AC = ${side.toFixed(2)}. Hai góc ở đáy: B = C = ${degB.toFixed(1)}°. Góc ở đỉnh A = ${degA.toFixed(1)}°. ${isEquil?'✦ TAM GIÁC ĐỀU: Ba cạnh bằng nhau, ba góc đều bằng 60°.':isRight?'✦ TAM GIÁC VUÔNG CÂN: Góc A = 90°, hai góc đáy bằng 45°.':''}`;
+ };
+ [hInput,bcInput].forEach(inp=>inp.addEventListener('input',render));
+ axisBox.addEventListener('change',render);
+ lab.querySelector('[data-equilateral]').addEventListener('click',()=>{bcInput.value=7;hInput.value=(7/2*Math.sqrt(3)).toFixed(1);render();});
+ lab.querySelector('[data-right-isosceles]').addEventListener('click',()=>{bcInput.value=8;hInput.value=4;render();});
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{hInput.value=6;bcInput.value=7;axisBox.checked=true;render();});
+ render();
+});
+document.querySelectorAll('[data-geometry="perpendicular-bisector"]').forEach(lab=>{
+ const svg=lab.querySelector('svg'),posMInput=lab.querySelector('[data-pos-m]'),lenAbInput=lab.querySelector('[data-len-ab]');
+ const posMVal=lab.querySelector('[data-pos-val="m"]'),lenAbVal=lab.querySelector('[data-val="ab"]');
+ const render=()=>{
+  const ym=+posMInput.value,len=+lenAbInput.value;
+  posMVal.textContent=ym;lenAbVal.textContent=len;
+  const I=[300,220],A=[300-len/2,220],B=[300+len/2,220],M=[300,ym];
+  const dist=Math.hypot(M[0]-A[0],M[1]-A[1]);
+  let html=`<title>Đường trung trực d của đoạn thẳng AB</title>`;
+  html+=line(A,B,'var(--diagram-ink, #087858)',false);
+  html+=line([300,30],[300,310],'#3b82f6',false);
+  html+=`<text x="312" y="45" fill="#3b82f6" font-weight="bold">d</text>`;
+  html+=`<rect x="300" y="206" width="14" height="14" fill="none" stroke="#64748b" stroke-width="1.5"/>`;
+  const midIA=[(A[0]+300)/2,220],midIB=[(B[0]+300)/2,220];
+  html+=line([midIA[0],214],[midIA[0],226],'#64748b');
+  html+=line([midIB[0],214],[midIB[0],226],'#64748b');
+  html+=line(M,A,'var(--diagram-coral, #d94e48)',true);
+  html+=line(M,B,'var(--diagram-coral, #d94e48)',true);
+  html+=`<circle cx="${A[0]}" cy="${A[1]}" r="4" fill="currentColor"/><text x="${A[0]-16}" y="${A[1]+18}">A</text>`;
+  html+=`<circle cx="${B[0]}" cy="${B[1]}" r="4" fill="currentColor"/><text x="${B[0]+16}" y="${B[1]+18}">B</text>`;
+  html+=`<circle cx="${I[0]}" cy="${I[1]}" r="3.5" fill="#64748b"/><text x="${I[0]+12}" y="${I[1]+18}">I</text>`;
+  html+=`<circle cx="${M[0]}" cy="${M[1]}" r="5.5" fill="var(--diagram-coral, #d94e48)"/><text x="${M[0]+14}" y="${M[1]-6}" font-weight="bold" fill="var(--diagram-coral, #d94e48)">M</text>`;
+  const midMA=[(M[0]+A[0])/2,(M[1]+A[1])/2],midMB=[(M[0]+B[0])/2,(M[1]+B[1])/2];
+  html+=`<text x="${midMA[0]-12}" y="${midMA[1]-8}" fill="var(--diagram-coral, #d94e48)" font-size="12">${dist.toFixed(1)}</text>`;
+  html+=`<text x="${midMB[0]+12}" y="${midMB[1]-8}" fill="var(--diagram-coral, #d94e48)" font-size="12">${dist.toFixed(1)}</text>`;
+  svg.innerHTML=html;
+  lab.querySelector('.geometry-observation').textContent=`Điểm M nằm trên đường trung trực d của đoạn thẳng AB: MA = MB = ${dist.toFixed(1)} px. Mọi điểm nằm trên đường trung trực của đoạn thẳng thì cách đều hai đầu mút của đoạn thẳng đó!`;
+ };
+ [posMInput,lenAbInput].forEach(inp=>inp.addEventListener('input',render));
+ lab.querySelector('[data-midpoint]').addEventListener('click',()=>{posMInput.value=220;render();});
+ lab.querySelector('[data-reset]').addEventListener('click',()=>{posMInput.value=100;lenAbInput.value=260;render();});
+ render();
+});
 // The reusable geometry scene drives a draggable triangle and its measured angles.
 document.querySelectorAll('[data-geometry="triangle-angles"]').forEach(lab=>{
  const svg=lab.querySelector('svg'),x=lab.querySelector('[data-coordinate="x"]'),y=lab.querySelector('[data-coordinate="y"]'),colors=['#bf645a','#13839a','#c79536'];let step=-1;

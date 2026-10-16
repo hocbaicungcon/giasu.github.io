@@ -77,4 +77,14 @@ test('extended geometry activities provide controls and observations',()=>{
  const euclid=renderExtraGeometry('type: euclid-parallel');
  assert.match(euclid,/data-coord-m/);
  assert.match(euclid,/data-angle-slope/);
+
+ const isosceles=renderExtraGeometry('type: isosceles-triangle');
+ assert.match(isosceles,/data-param="h"/);
+ assert.match(isosceles,/data-param="bc"/);
+ assert.match(isosceles,/data-equilateral/);
+
+ const bisectorLine=renderExtraGeometry('type: perpendicular-bisector');
+ assert.match(bisectorLine,/data-pos-m/);
+ assert.match(bisectorLine,/data-len-ab/);
+ assert.match(bisectorLine,/data-midpoint/);
 });
