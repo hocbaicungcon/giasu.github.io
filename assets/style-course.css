@@ -1,7 +1,7 @@
 /* credit: giasu.ai.vn */
 /* Course presentation measured from the requested Mathigon reference. */
 body:has(.lesson-course){background:#fff;color:#666;font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;--lesson-math-size:1em}
-body:has(.lesson-course) header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid #e5e5e5}
+body:has(.lesson-course) header{position:fixed;top:0;left:0;right:0;width:100%;z-index:1000;background:#fff;border-bottom:1px solid #e5e5e5}
 body:has(.lesson-course) header .nav{height:56px;min-height:56px;padding-block:4px}
 body:has(.lesson-course) header .brand{font-size:1rem;gap:7px}
 body:has(.lesson-course) header .brand img{width:34px;height:34px}

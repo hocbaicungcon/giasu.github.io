@@ -65,7 +65,10 @@ body .lesson-course .article-meta .tag{background:transparent;border:0;padding:0
 body .lesson-course .prose .flowchart-group{border:0;box-shadow:none;border-radius:0;background:transparent}
 body .lesson-course .prose .flowchart-node{box-shadow:none;border:0;background:var(--bg-secondary);border-radius:6px}
 /* Compact header; explicit dark menu ink avoids legacy ID-selector overrides. */
+html,body{overscroll-behavior-y:none}
+body{padding-top:var(--site-header-height,52px)}
 :root{--site-header-height:52px}
+header,app-header,.app-header,body header,body:has(.lesson-course) header,body.grading-page header,body:not(:has(.lesson-course))>header{position:fixed!important;top:0;left:0;right:0;width:100%;z-index:1000;-webkit-backface-visibility:hidden;backface-visibility:hidden;transform:translate3d(0,0,0)}
 body header .nav.wrap,body:has(.lesson-course) header .nav.wrap{height:var(--site-header-height);min-height:var(--site-header-height);padding:4px clamp(12px,2vw,24px);gap:12px}
 body header .brand,body:has(.lesson-course) header .brand{font-size:.9375rem;gap:6px}
 body header .brand img,body:has(.lesson-course) header .brand img{width:30px;height:30px}
