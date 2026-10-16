@@ -36,6 +36,21 @@ function shiftPathD(d,dx,dy){
  });
 }
 
+function angleMarkerPath(vertex,first,second,size,kind){
+ const u=Math.hypot(first[0]-vertex[0],first[1]-vertex[1]),v=Math.hypot(second[0]-vertex[0],second[1]-vertex[1]);
+ if(u<1e-6||v<1e-6)return '';
+ const a=[(first[0]-vertex[0])/u,(first[1]-vertex[1])/u],b=[(second[0]-vertex[0])/v,(second[1]-vertex[1])/v],r=Math.min(size,u*.35,v*.35),p=[vertex[0]+a[0]*r,vertex[1]+a[1]*r],q=[vertex[0]+b[0]*r,vertex[1]+b[1]*r];
+ if(kind==='right'){
+  if(Math.abs(a[0]*b[0]+a[1]*b[1])>0.035)return '';
+  const corner=[p[0]+q[0]-vertex[0],p[1]+q[1]-vertex[1]];
+  return `M ${p[0].toFixed(1)},${p[1].toFixed(1)} L ${corner[0].toFixed(1)},${corner[1].toFixed(1)} L ${q[0].toFixed(1)},${q[1].toFixed(1)}`;
+ }
+ let delta=Math.atan2(b[1],b[0])-Math.atan2(a[1],a[0]);while(delta>Math.PI)delta-=Math.PI*2;while(delta< -Math.PI)delta+=Math.PI*2;
+ const arcR=Math.min(r*1.25,Math.max(8,+size));
+ const start=[vertex[0]+Math.cos(Math.atan2(a[1],a[0]))*arcR,vertex[1]+Math.sin(Math.atan2(a[1],a[0]))*arcR],end=[vertex[0]+Math.cos(Math.atan2(a[1],a[0])+delta)*arcR,vertex[1]+Math.sin(Math.atan2(a[1],a[0])+delta)*arcR];
+ return `M ${start[0].toFixed(1)},${start[1].toFixed(1)} A ${arcR.toFixed(1)} ${arcR.toFixed(1)} 0 ${Math.abs(delta)>Math.PI?1:0} ${delta>=0?1:0} ${end[0].toFixed(1)},${end[1].toFixed(1)}`;
+}
+
 export function initInteractiveDiagrams(){
  const prose=document.querySelector('.lesson-course .prose, article.prose');
  if(!prose||document.querySelector('.exam-paper, [data-exam-page]'))return;
@@ -174,6 +189,13 @@ export function initInteractiveDiagrams(){
   // Angle arcs (<path>)
   const anglePaths=[...svg.querySelectorAll('path')].map(p=>{
    const d=p.getAttribute('d')||'';
+   const kind=p.getAttribute('data-angle-kind'),rayAttr=p.getAttribute('data-angle-rays'),vertexAttr=p.getAttribute('data-angle-vertex');
+   if(kind&&rayAttr&&vertexAttr){
+    const nums=rayAttr.split(/[ ,]+/).map(Number),vxvy=vertexAttr.split(/[ ,]+/).map(Number),rays=[];
+    for(let i=0;i+1<nums.length;i+=2){const point=vertices.find(v=>Math.hypot(v.origX-nums[i],v.origY-nums[i+1])<=8);rays.push(point?point.idx:null);}
+    const vertex=vertices.find(v=>Math.hypot(v.origX-vxvy[0],v.origY-vxvy[1])<=8)?.idx??null;
+    if(vertex!==null&&rays.length>=2)return {el:p,vIdx:vertex,rayIndices:rays.slice(0,2),size:+p.getAttribute('data-angle-size')||20,kind};
+   }
    const angleVertexAttr=p.getAttribute('data-angle-vertex');
    let closestV=null;
    if(angleVertexAttr){
@@ -190,7 +212,7 @@ export function initInteractiveDiagrams(){
      if(dist<minD&&dist<=60){minD=dist;closestV=v.idx;}
     });
    }
-   return closestV!==null?{el:p,vIdx:closestV,origD:d}:null;
+    return closestV!==null?{el:p,vIdx:closestV,origD:d}:null;
   }).filter(Boolean);
 
   // Right-angle marker (<rect>)
@@ -203,7 +225,7 @@ export function initInteractiveDiagrams(){
     const dist=Math.hypot((rx+rw/2)-v.origX,(ry+rh/2)-v.origY);
     if(dist<minD&&dist<=35){minD=dist;closestV=v.idx;}
    });
-   return closestV!==null?{el:r,vIdx:closestV,dx:rx-vertices[closestV].origX,dy:ry-vertices[closestV].origY}:null;
+    return closestV!==null?{el:r,vIdx:closestV,dx:rx-vertices[closestV].origX,dy:ry-vertices[closestV].origY}:null;
   }).filter(Boolean);
 
   // Text labels (<text>)
@@ -409,8 +431,8 @@ export function initInteractiveDiagrams(){
    // 5. Update angle arcs (<path>)
    anglePaths.forEach(ap=>{
     const vert=vertices[ap.vIdx];
-    const dx=vert.currentX-vert.origX,dy=vert.currentY-vert.origY;
-    ap.el.setAttribute('d',shiftPathD(ap.origD,dx,dy));
+    if(ap.rayIndices){const [a,b]=ap.rayIndices.map(i=>i===null?null:vertices[i]);if(!a||!b){ap.el.setAttribute('d','');return;}ap.el.setAttribute('d',angleMarkerPath([vert.currentX,vert.currentY],[a.currentX,a.currentY],[b.currentX,b.currentY],ap.size,ap.kind));}
+    else{const dx=vert.currentX-vert.origX,dy=vert.currentY-vert.origY;ap.el.setAttribute('d',shiftPathD(ap.origD,dx,dy));}
    });
 
    // 6. Update right-angle markers (<rect>)

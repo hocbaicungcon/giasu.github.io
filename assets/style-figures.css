@@ -53,4 +53,4 @@ body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;ve
  body .lesson-course .article-layout{display:block;width:100%;overflow-x:clip}
  body .lesson-course .article-toc{display:none}
 }
-@media(max-width:1000px){body .katex-display.katex-auto-wrap{font-size:.78em}body .katex-display.katex-auto-wrap .mtable{margin-left:0!important;margin-right:auto!important}body .katex-display.katex-auto-wrap .col-align-l,body .katex-display.katex-auto-wrap .col-align-c,body .katex-display.katex-auto-wrap .col-align-r{text-align:left!important}}
+@media(max-width:1000px){body .katex-display.katex-auto-wrap{font-size:clamp(.9em,2.5vw,1em)}body .katex-display.katex-auto-wrap .mtable{margin-left:0!important;margin-right:auto!important}body .katex-display.katex-auto-wrap .col-align-l,body .katex-display.katex-auto-wrap .col-align-c,body .katex-display.katex-auto-wrap .col-align-r{text-align:left!important}}
