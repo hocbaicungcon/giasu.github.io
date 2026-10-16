@@ -66,6 +66,19 @@ test('algebra and calculus exploration models calculate values correctly',async(
  assert.equal(explorationKind(p('Quy tắc dấu ngoặc và quy tắc chuyển vế')),'equation-balance');
  assert.equal(explorationKind(p('Hàm số bậc nhất và đồ thị')),'linear-function');
  assert.equal(explorationKind(p('Bài giảng ứng dụng đạo hàm để khảo sát hàm số CTST')),'derivative-tangent');
+ assert.equal(explorationKind(p('Bài 18: Biểu đồ hình quạt tròn')),'pie-chart');
+ assert.equal(explorationKind(p('Bài 17: Thu thập và phân loại dữ liệu')),'data-classification');
  assert.match(renderExploration(p('Tập hợp các số hữu tỉ')),/data-exploration="rational-numberline"/);
  assert.match(renderExploration(p('Ứng dụng đạo hàm để khảo sát hàm số')),/data-exploration="derivative-tangent"/);
+ assert.match(renderExploration(p('Bài 18: Biểu đồ hình quạt tròn')),/data-exploration="pie-chart"/);
+ assert.match(renderExploration(p('Bài 17: Thu thập và phân loại dữ liệu')),/data-exploration="data-classification"/);
+
+ // Pie chart model
+ const {pieChartModel,sampleDataItems}=await import('../assets/exploration-models.js');
+ const pie=pieChartModel([{label:'A',value:25},{label:'B',value:75}]);
+ assert.equal(pie[0].percent,25);
+ assert.equal(pie[0].angleDeg,90);
+ assert.equal(pie[1].percent,75);
+ assert.equal(pie[1].angleDeg,270);
+ assert.ok(sampleDataItems.length>=4);
 });

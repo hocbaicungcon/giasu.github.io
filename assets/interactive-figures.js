@@ -47,39 +47,33 @@ export function initInteractiveDiagrams(){
   if(vb&&(vb.width<120||vb.height<80))return;
 
   // Extract circles that represent geometric vertices (radius 2.5px to 8px)
+  // Extract circles that represent geometric vertices (radius 2.5px to 8px)
   const circles=[...svg.querySelectorAll('circle')].filter(c=>{
    const r=+c.getAttribute('r');
    return Number.isFinite(r)&&r>=2.5&&r<=8&&!c.classList.contains('diagram-drag-handle');
   });
 
   // Also collect polygon elements
-  const polygons=[...svg.querySelectorAll('polygon')].map(p=>({
-   el:p,
-   points:(p.getAttribute('points')||'').trim().split(/\s+/).map(pair=>{
-    const [x,y]=pair.split(',').map(Number);
-    return [x,y];
-   })
-  })).filter(p=>p.points.length>=3&&p.points.every(([x,y])=>Number.isFinite(x)&&Number.isFinite(y)));
+  const polygons=[...svg.querySelectorAll('polygon')].map(p=>{
+   const nums=(p.getAttribute('points')||'').trim().split(/[\s,]+/).map(Number).filter(Number.isFinite);
+   const pts=[];
+   for(let i=0;i<nums.length;i+=2)pts.push([nums[i],nums[i+1]]);
+   return {el:p,origPts:pts,vertexIndices:[]};
+  }).filter(p=>p.origPts.length>=3);
 
-  // Determine vertex points
-  let vertexCoords=[];
-  if(circles.length>=2){
-   vertexCoords=circles.map((c,idx)=>({
-    circleEl:c,
-    x:+c.getAttribute('cx'),
-    y:+c.getAttribute('cy'),
-    r:+c.getAttribute('r'),
-    idx
-   }));
-  }else if(polygons.length>=1){
-   polygons.forEach(p=>{
-    p.points.forEach(([x,y])=>{
-     if(!vertexCoords.some(v=>Math.hypot(v.x-x,v.y-y)<4)){
-      vertexCoords.push({circleEl:null,x,y,r:4,idx:vertexCoords.length});
-     }
-    });
+  // Determine vertex points from circles AND polygons
+  const vertexCoords=[];
+  circles.forEach(c=>{
+   const x=+c.getAttribute('cx'),y=+c.getAttribute('cy'),r=+c.getAttribute('r');
+   vertexCoords.push({circleEl:c,x,y,r,idx:vertexCoords.length});
+  });
+  polygons.forEach(p=>{
+   p.origPts.forEach(([x,y])=>{
+    if(!vertexCoords.some(v=>Math.hypot(v.x-x,v.y-y)<6)){
+     vertexCoords.push({circleEl:null,x,y,r:4,idx:vertexCoords.length});
+    }
    });
-  }
+  });
 
   if(vertexCoords.length<2)return;
   svg.dataset.interactiveDone='true';
@@ -96,6 +90,14 @@ export function initInteractiveDiagrams(){
    handle:null,
    midpointOf:null
   }));
+
+  // Bind polygon points to vertices permanently
+  polygons.forEach(p=>{
+   p.vertexIndices=p.origPts.map(([x,y])=>{
+    const v=vertices.find(vert=>Math.hypot(x-vert.origX,y-vert.origY)<=8);
+    return v?v.idx:null;
+   });
+  });
 
   vertices.forEach(vk=>{
    vertices.forEach(vi=>{
@@ -125,11 +127,11 @@ export function initInteractiveDiagrams(){
   allLines.forEach(l=>{
    const len=Math.hypot(l.x2-l.x1,l.y2-l.y1);
    if(len>25){
-    // Main segment line: bind endpoints to vertices within 5px
+    // Main segment line: bind endpoints to vertices within 8px
     const ends=[];
     vertices.forEach(v=>{
-     if(Math.hypot(l.x1-v.origX,l.y1-v.origY)<=5)ends.push({end:1,vIdx:v.idx});
-     if(Math.hypot(l.x2-v.origX,l.y2-v.origY)<=5)ends.push({end:2,vIdx:v.idx});
+     if(Math.hypot(l.x1-v.origX,l.y1-v.origY)<=8)ends.push({end:1,vIdx:v.idx});
+     if(Math.hypot(l.x2-v.origX,l.y2-v.origY)<=8)ends.push({end:2,vIdx:v.idx});
     });
     mainLines.push({el:l.el,ends});
    }else{
@@ -172,15 +174,22 @@ export function initInteractiveDiagrams(){
   // Angle arcs (<path>)
   const anglePaths=[...svg.querySelectorAll('path')].map(p=>{
    const d=p.getAttribute('d')||'';
-   const nums=d.match(/-?\d+(?:\.\d+)?/g)?.map(Number)||[];
-   if(!nums.length)return null;
-   // Find closest vertex to the start of path or center
-   const startX=nums[0],startY=nums[1];
-   let closestV=null,minD=Infinity;
-   vertices.forEach(v=>{
-    const dist=Math.hypot(startX-v.origX,startY-v.origY);
-    if(dist<minD&&dist<=60){minD=dist;closestV=v.idx;}
-   });
+   const angleVertexAttr=p.getAttribute('data-angle-vertex');
+   let closestV=null;
+   if(angleVertexAttr){
+    const [vx,vy]=angleVertexAttr.split(',').map(Number);
+    closestV=vertices.find(v=>Math.hypot(vx-v.origX,vy-v.origY)<=8)?.idx??null;
+   }
+   if(closestV===null){
+    const nums=d.match(/-?\d+(?:\.\d+)?/g)?.map(Number)||[];
+    if(!nums.length)return null;
+    const startX=nums[0],startY=nums[1];
+    let minD=Infinity;
+    vertices.forEach(v=>{
+     const dist=Math.hypot(startX-v.origX,startY-v.origY);
+     if(dist<minD&&dist<=60){minD=dist;closestV=v.idx;}
+    });
+   }
    return closestV!==null?{el:p,vIdx:closestV,origD:d}:null;
   }).filter(Boolean);
 
@@ -232,6 +241,20 @@ export function initInteractiveDiagrams(){
    return null;
   }).filter(Boolean);
 
+  // Ensure every vertex has a visible dot
+  vertices.forEach(v=>{
+   if(!v.circleEl){
+    const dot=document.createElementNS('http://www.w3.org/2000/svg','circle');
+    dot.setAttribute('cx',v.origX.toFixed(1));
+    dot.setAttribute('cy',v.origY.toFixed(1));
+    dot.setAttribute('r','4');
+    dot.setAttribute('fill','var(--diagram-label,#1e293b)');
+    dot.className.baseVal='diagram-vertex-dot';
+    svg.appendChild(dot);
+    v.circleEl=dot;
+   }
+  });
+
   // Toolbar setup
   const parent=svg.parentElement;
   let toolbar=parent.querySelector('.diagram-interactive-toolbar');
@@ -255,53 +278,45 @@ export function initInteractiveDiagrams(){
    handlesGroup.replaceChildren();
    vertices.forEach(v=>{
     const handle=document.createElementNS('http://www.w3.org/2000/svg','circle');
-    handle.setAttribute('cx',v.currentX);
-    handle.setAttribute('cy',v.currentY);
-    handle.setAttribute('r',14);
-    handle.setAttribute('fill','transparent');
+    handle.setAttribute('cx',v.currentX.toFixed(1));
+    handle.setAttribute('cy',v.currentY.toFixed(1));
+    handle.setAttribute('r','16');
+    handle.setAttribute('fill','rgba(8,120,88,0.12)');
     handle.setAttribute('stroke','var(--diagram-ink,#087858)');
     handle.setAttribute('stroke-width','2');
     handle.setAttribute('stroke-dasharray','3 3');
-    handle.setAttribute('opacity','0');
+    handle.setAttribute('opacity','0.35');
     handle.style.cssText='cursor:grab;touch-action:none;';
     handle.setAttribute('tabindex','0');
     handle.setAttribute('role','slider');
     handle.setAttribute('aria-label',`Kéo đỉnh để thay đổi kích thước`);
 
-    handle.addEventListener('mouseenter',()=>{handle.setAttribute('opacity','0.85');});
-    handle.addEventListener('mouseleave',()=>{if(activeHandle!==handle)handle.setAttribute('opacity','0');});
+    handle.addEventListener('mouseenter',()=>{if(activeHandle!==handle)handle.setAttribute('opacity','0.85');});
+    handle.addEventListener('mouseleave',()=>{if(activeHandle!==handle)handle.setAttribute('opacity','0.35');});
     handle.addEventListener('focus',()=>{handle.setAttribute('opacity','0.85');});
-    handle.addEventListener('blur',()=>{if(activeHandle!==handle)handle.setAttribute('opacity','0');});
+    handle.addEventListener('blur',()=>{if(activeHandle!==handle)handle.setAttribute('opacity','0.35');});
 
     handle.addEventListener('pointerdown',e=>{
      activeHandle=handle;
      activeVertex=v;
-     handle.setPointerCapture(e.pointerId);
+     try{handle.setPointerCapture(e.pointerId);}catch{}
      handle.style.cursor='grabbing';
-     handle.setAttribute('opacity','0.9');
+     handle.setAttribute('opacity','1');
      e.preventDefault();
      e.stopPropagation();
     });
 
-    handle.addEventListener('pointerup',e=>{
+    const endDrag=e=>{
      if(activeHandle===handle){
       try{handle.releasePointerCapture(e.pointerId);}catch{}
       activeHandle=null;
       activeVertex=null;
       handle.style.cursor='grab';
-      handle.setAttribute('opacity','0');
+      handle.setAttribute('opacity','0.35');
      }
-    });
-
-    handle.addEventListener('pointercancel',e=>{
-     if(activeHandle===handle){
-      try{handle.releasePointerCapture(e.pointerId);}catch{}
-      activeHandle=null;
-      activeVertex=null;
-      handle.style.cursor='grab';
-      handle.setAttribute('opacity','0');
-     }
-    });
+    };
+    handle.addEventListener('pointerup',endDrag);
+    handle.addEventListener('pointercancel',endDrag);
 
     handle.addEventListener('keydown',e=>{
      const step=5;
@@ -331,9 +346,9 @@ export function initInteractiveDiagrams(){
    v.currentX=clampedX;
    v.currentY=clampedY;
 
-   // Update dependent midpoints
+   // Update dependent midpoints (do not overwrite if the midpoint itself is being dragged)
    vertices.forEach(vk=>{
-    if(vk.midpointOf){
+    if(vk.midpointOf&&vk!==v){
      const [i,j]=vk.midpointOf;
      vk.currentX=(vertices[i].currentX+vertices[j].currentX)/2;
      vk.currentY=(vertices[i].currentY+vertices[j].currentY)/2;
@@ -352,13 +367,16 @@ export function initInteractiveDiagrams(){
     }
    });
 
-   // 2. Update polygons
+   // 2. Update polygons reliably using bound vertex indices
    polygons.forEach(poly=>{
-    poly.points.forEach((pt,ptIdx)=>{
-     const matched=vertices.find(vert=>Math.hypot(pt[0]-vert.origX,pt[1]-vert.origY)<=5);
-     if(matched)pt[0]=matched.currentX,pt[1]=matched.currentY;
+    const newCoords=poly.origPts.map(([ox,oy],ptIdx)=>{
+     const vIdx=poly.vertexIndices[ptIdx];
+     if(vIdx!==null&&vertices[vIdx]){
+      return `${vertices[vIdx].currentX.toFixed(1)},${vertices[vIdx].currentY.toFixed(1)}`;
+     }
+     return `${ox.toFixed(1)},${oy.toFixed(1)}`;
     });
-    poly.el.setAttribute('points',poly.points.map(pt=>`${pt[0].toFixed(1)},${pt[1].toFixed(1)}`).join(' '));
+    poly.el.setAttribute('points',newCoords.join(' '));
    });
 
    // 3. Update main lines
@@ -420,13 +438,15 @@ export function initInteractiveDiagrams(){
    if(resetBtn)resetBtn.hidden=false;
   }
 
-  svg.addEventListener('pointermove',e=>{
+  function handlePointerMove(e){
    if(!activeHandle||!activeVertex)return;
    const ctm=svg.getScreenCTM();
    if(!ctm)return;
    const pt=new DOMPoint(e.clientX,e.clientY).matrixTransform(ctm.inverse());
    moveVertex(activeVertex,pt.x,pt.y);
-  });
+  }
+
+  svg.addEventListener('pointermove',handlePointerMove);
 
   if(resetBtn){
    resetBtn.addEventListener('click',()=>{

@@ -198,6 +198,18 @@ test('moving a vertex synchronizes labels, angle arcs, right angles, and tick ma
   // Verify polygon updated
   assert.ok(polyABC.getAttribute('points').startsWith('300.0,50.0'));
 
+  // Drag handle A further to (360, 80) (large displacement +90, +50 from orig)
+  mockSvg.onPointerMove({clientX:360,clientY:80});
+  assert.equal(circleA.getAttribute('cx'),'360.0');
+  assert.equal(circleA.getAttribute('cy'),'80.0');
+  assert.ok(polyABC.getAttribute('points').startsWith('360.0,80.0'));
+
+  // Move back to (300, 50)
+  mockSvg.onPointerMove({clientX:300,clientY:50});
+  assert.equal(circleA.getAttribute('cx'),'300.0');
+  assert.equal(circleA.getAttribute('cy'),'50.0');
+  assert.ok(polyABC.getAttribute('points').startsWith('300.0,50.0'));
+
   // Verify vertex label A moved by +30, +20 (original was 265, 18)
   assert.equal(labelA.getAttribute('x'),'295.0');
   assert.equal(labelA.getAttribute('y'),'38.0');
