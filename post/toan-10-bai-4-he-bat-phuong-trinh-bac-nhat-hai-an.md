@@ -148,8 +148,8 @@ Em hãy kéo rê điểm (x; y)$ bên dưới (hoặc điều chỉnh thanh trư
 </div>
 </div>
 <div style="display: flex; justify-content: center;">
-<svg id="lpInteractiveSvg" viewBox="-15 -15 270 240" style="width: 100%; max-width: 400px; height: auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; touch-action: none; cursor: crosshair;">
-<g stroke="#f1f5f9" stroke-width="0.8">
+<svg id="lpInteractiveSvg" data-interactive-done="true" viewBox="-15 -15 270 240" style="width: 100%; max-width: 400px; height: auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; touch-action: none; cursor: crosshair;">
+<g stroke="#f1f5f9" stroke-width="0.8" style="pointer-events: none;">
 <line x1="40" y1="160" x2="220" y2="160" /><line x1="40" y1="140" x2="220" y2="140" />
 <line x1="40" y1="120" x2="220" y2="120" /><line x1="40" y1="100" x2="220" y2="100" />
 <line x1="40" y1="80" x2="220" y2="80" /><line x1="40" y1="60" x2="220" y2="60" />
@@ -159,34 +159,35 @@ Em hãy kéo rê điểm (x; y)$ bên dưới (hoặc điều chỉnh thanh trư
 <line x1="140" y1="20" x2="140" y2="180" /><line x1="160" y1="20" x2="160" y2="180" />
 <line x1="180" y1="20" x2="180" y2="180" /><line x1="200" y1="20" x2="200" y2="180" />
 </g>
-<line x1="15" y1="180" x2="235" y2="180" stroke="#334155" stroke-width="1.8" />
-<polygon points="235,180 227,176 227,184" fill="#334155" />
-<text x="230" y="196" font-size="11" font-weight="bold" fill="#334155">x</text>
-<line x1="40" y1="195" x2="40" y2="15" stroke="#334155" stroke-width="1.8" />
-<polygon points="40,15 36,23 44,23" fill="#334155" />
-<text x="24" y="22" font-size="11" font-weight="bold" fill="#334155">y</text>
-<text x="26" y="194" font-size="11" font-weight="bold" fill="#64748b">O</text>
-<text x="80" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">2</text>
-<text x="120" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">4</text>
-<text x="160" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">6</text>
-<text x="200" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">8</text>
-<text x="32" y="143" font-size="9" fill="#94a3b8" text-anchor="end">2</text>
-<text x="32" y="103" font-size="9" fill="#94a3b8" text-anchor="end">4</text>
-<text x="32" y="63" font-size="9" fill="#94a3b8" text-anchor="end">6</text>
-<text x="32" y="23" font-size="9" fill="#94a3b8" text-anchor="end">8</text>
-<line x1="20" y1="40" x2="180" y2="200" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,2" />
-<text x="165" y="165" font-size="9" font-weight="bold" fill="#2563eb">d₁: x+y=6</text>
-<line x1="30" y1="0" x2="135" y2="210" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,2" />
-<text x="50" y="30" font-size="9" font-weight="bold" fill="#7c3aed">d₂: 2x+y=8</text>
-<polygon points="40,180 120,180 80,100 40,60" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
-<circle cx="40" cy="180" r="3.5" fill="#0f172a" /><text x="44" y="174" font-size="9" font-weight="bold" fill="#0f172a">O(0;0)</text>
-<circle cx="120" cy="180" r="3.5" fill="#0f172a" /><text x="122" y="174" font-size="9" font-weight="bold" fill="#0f172a">A(4;0)</text>
-<circle cx="80" cy="100" r="4.5" fill="#e11d48" /><text x="85" y="96" font-size="10" font-weight="bold" fill="#e11d48">B(2;4) ★ MAX</text>
-<circle cx="40" cy="60" r="3.5" fill="#0f172a" /><text x="45" y="58" font-size="9" font-weight="bold" fill="#0f172a">C(0;6)</text>
-<line id="mProjX" x1="80" y1="100" x2="80" y2="180" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="3,2" />
-<line id="mProjY" x1="80" y1="100" x2="40" y2="100" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="3,2" />
+<line x1="15" y1="180" x2="235" y2="180" stroke="#334155" stroke-width="1.8" style="pointer-events: none;" />
+<polygon points="235,180 227,176 227,184" fill="#334155" style="pointer-events: none;" />
+<text x="230" y="196" font-size="11" font-weight="bold" fill="#334155" style="pointer-events: none;">x</text>
+<line x1="40" y1="195" x2="40" y2="15" stroke="#334155" stroke-width="1.8" style="pointer-events: none;" />
+<polygon points="40,15 36,23 44,23" fill="#334155" style="pointer-events: none;" />
+<text x="24" y="22" font-size="11" font-weight="bold" fill="#334155" style="pointer-events: none;">y</text>
+<text x="26" y="194" font-size="11" font-weight="bold" fill="#64748b" style="pointer-events: none;">O</text>
+<text x="80" y="193" font-size="9" fill="#94a3b8" text-anchor="middle" style="pointer-events: none;">2</text>
+<text x="120" y="193" font-size="9" fill="#94a3b8" text-anchor="middle" style="pointer-events: none;">4</text>
+<text x="160" y="193" font-size="9" fill="#94a3b8" text-anchor="middle" style="pointer-events: none;">6</text>
+<text x="200" y="193" font-size="9" fill="#94a3b8" text-anchor="middle" style="pointer-events: none;">8</text>
+<text x="32" y="143" font-size="9" fill="#94a3b8" text-anchor="end" style="pointer-events: none;">2</text>
+<text x="32" y="103" font-size="9" fill="#94a3b8" text-anchor="end" style="pointer-events: none;">4</text>
+<text x="32" y="63" font-size="9" fill="#94a3b8" text-anchor="end" style="pointer-events: none;">6</text>
+<text x="32" y="23" font-size="9" fill="#94a3b8" text-anchor="end" style="pointer-events: none;">8</text>
+<line x1="20" y1="40" x2="180" y2="200" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,2" style="pointer-events: none;" />
+<text x="165" y="165" font-size="9" font-weight="bold" fill="#2563eb" style="pointer-events: none;">d₁: x+y=6</text>
+<line x1="30" y1="0" x2="135" y2="210" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,2" style="pointer-events: none;" />
+<text x="50" y="30" font-size="9" font-weight="bold" fill="#7c3aed" style="pointer-events: none;">d₂: 2x+y=8</text>
+<polygon points="40,180 120,180 80,100 40,60" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" style="pointer-events: none;" />
+<circle cx="40" cy="180" r="3.5" fill="#0f172a" style="pointer-events: none;" /><text x="44" y="174" font-size="9" font-weight="bold" fill="#0f172a" style="pointer-events: none;">O(0;0)</text>
+<circle cx="120" cy="180" r="3.5" fill="#0f172a" style="pointer-events: none;" /><text x="122" y="174" font-size="9" font-weight="bold" fill="#0f172a" style="pointer-events: none;">A(4;0)</text>
+<circle cx="80" cy="100" r="4.5" fill="#e11d48" style="pointer-events: none;" /><text x="85" y="96" font-size="10" font-weight="bold" fill="#e11d48" style="pointer-events: none;">B(2;4) ★ MAX</text>
+<circle cx="40" cy="60" r="3.5" fill="#0f172a" style="pointer-events: none;" /><text x="45" y="58" font-size="9" font-weight="bold" fill="#0f172a" style="pointer-events: none;">C(0;6)</text>
+<line id="mProjX" x1="80" y1="100" x2="80" y2="180" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="3,2" style="pointer-events: none;" />
+<line id="mProjY" x1="80" y1="100" x2="40" y2="100" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="3,2" style="pointer-events: none;" />
 <circle id="dragM" cx="80" cy="100" r="7" fill="#f43f5e" stroke="#ffffff" stroke-width="2" style="cursor: grab;" />
-<text id="dragMLabel" x="85" y="92" font-size="11" font-weight="bold" fill="#be123c">M(2.0; 4.0)</text>
+<circle id="dragMHit" cx="80" cy="100" r="24" fill="transparent" style="cursor: grab;" />
+<text id="dragMLabel" x="85" y="92" font-size="11" font-weight="bold" fill="#be123c" style="pointer-events: none;">M(2.0; 4.0)</text>
 </svg>
 </div>
 <div style="margin-top: 14px; max-width: 420px; margin-inline: auto;">
@@ -212,11 +213,11 @@ Em hãy kéo rê điểm (x; y)$ bên dưới (hoặc điều chỉnh thanh trư
 </div>
 </div>
 </div>
-
 <script>
 (function() {
   var svg = document.getElementById('lpInteractiveSvg');
   var pt = document.getElementById('dragM');
+  var hit = document.getElementById('dragMHit');
   var lbl = document.getElementById('dragMLabel');
   var projX = document.getElementById('mProjX');
   var projY = document.getElementById('mProjY');
@@ -227,46 +228,39 @@ Em hãy kéo rê điểm (x; y)$ bên dưới (hoặc điều chỉnh thanh trư
   var coordText = document.getElementById('mCoordText');
   var valFText = document.getElementById('mValF');
   var statusBadge = document.getElementById('mStatusBadge');
-
   if (!svg || !pt) return;
-
   var originX = 40;
   var originY = 180;
   var scale = 20;
-
   function setM(x, y) {
-    x = Math.max(0, Math.min(5, Math.round(x * 10) / 10));
-    y = Math.max(0, Math.min(7, Math.round(y * 10) / 10));
-
+    x = Math.max(0, Math.min(4.5, Math.round(x * 10) / 10));
+    y = Math.max(0, Math.min(6.5, Math.round(y * 10) / 10));
     var svgX = originX + x * scale;
     var svgY = originY - y * scale;
-
     pt.setAttribute('cx', svgX);
     pt.setAttribute('cy', svgY);
-
+    if (hit) {
+      hit.setAttribute('cx', svgX);
+      hit.setAttribute('cy', svgY);
+    }
     lbl.setAttribute('x', svgX + 6);
     lbl.setAttribute('y', svgY - 6);
     lbl.textContent = 'M(' + x.toFixed(1) + '; ' + y.toFixed(1) + ')';
-
     projX.setAttribute('x1', svgX);
     projX.setAttribute('y1', svgY);
     projX.setAttribute('x2', svgX);
     projX.setAttribute('y2', originY);
-
     projY.setAttribute('x1', svgX);
     projY.setAttribute('y1', svgY);
     projY.setAttribute('x2', originX);
     projY.setAttribute('y2', svgY);
-
     rangeX.value = x;
     rangeY.value = y;
     labelX.textContent = x.toFixed(1);
     labelY.textContent = y.toFixed(1);
     coordText.textContent = 'M(' + x.toFixed(1) + '; ' + y.toFixed(1) + ')';
-
     var f = 3 * x + 2 * y;
     valFText.textContent = f.toFixed(1);
-
     var inside = (x >= 0) && (y >= 0) && (x + y <= 6.01) && (2 * x + y <= 8.01);
     if (Math.abs(x - 2) < 0.05 && Math.abs(y - 4) < 0.05) {
       statusBadge.style.background = '#ffe4e6';
@@ -290,60 +284,101 @@ Em hãy kéo rê điểm (x; y)$ bên dưới (hoặc điều chỉnh thanh trư
       statusBadge.textContent = '✖ Điểm M nằm NGOÀI miền nghiệm (Không thỏa mãn)';
     }
   }
-
   rangeX.addEventListener('input', function() {
     setM(parseFloat(rangeX.value), parseFloat(rangeY.value));
   });
   rangeY.addEventListener('input', function() {
     setM(parseFloat(rangeX.value), parseFloat(rangeY.value));
   });
-
   document.querySelectorAll('.vertex-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
       setM(parseFloat(btn.dataset.x), parseFloat(btn.dataset.y));
     });
   });
-
   var isDragging = false;
-  function getSvgCoord(evt) {
+  function getMathCoord(evt) {
+    var clientX = evt.clientX;
+    var clientY = evt.clientY;
+    if (evt.touches && evt.touches.length > 0) {
+      clientX = evt.touches[0].clientX;
+      clientY = evt.touches[0].clientY;
+    } else if (evt.changedTouches && evt.changedTouches.length > 0) {
+      clientX = evt.changedTouches[0].clientX;
+      clientY = evt.changedTouches[0].clientY;
+    }
+    if (clientX === undefined || clientY === undefined) return null;
+    var ptSVG = svg.createSVGPoint();
+    ptSVG.x = clientX;
+    ptSVG.y = clientY;
     var ctm = svg.getScreenCTM();
-    if (!ctm) return { x: 2, y: 4 };
-    var clientX = evt.clientX || (evt.touches && evt.touches[0].clientX);
-    var clientY = evt.clientY || (evt.touches && evt.touches[0].clientY);
-    var svgX = (clientX - ctm.e) / ctm.a;
-    var svgY = (clientY - ctm.f) / ctm.d;
-    var mathX = (svgX - originX) / scale;
-    var mathY = (originY - svgY) / scale;
+    if (!ctm) return null;
+    var transformed = ptSVG.matrixTransform(ctm.inverse());
+    var mathX = (transformed.x - originX) / scale;
+    var mathY = (originY - transformed.y) / scale;
     return { x: mathX, y: mathY };
   }
-
-  function startDrag(e) {
+  function handleStart(e) {
     isDragging = true;
     pt.style.cursor = 'grabbing';
-    var c = getSvgCoord(e);
-    setM(c.x, c.y);
+    if (hit) hit.style.cursor = 'grabbing';
+    try {
+      if (e.target && e.target.setPointerCapture) {
+        e.target.setPointerCapture(e.pointerId);
+      }
+    } catch(err) {}
+    var c = getMathCoord(e);
+    if (c) setM(c.x, c.y);
   }
-
-  function onDrag(e) {
+  function handleMove(e) {
     if (!isDragging) return;
-    e.preventDefault();
-    var c = getSvgCoord(e);
-    setM(c.x, c.y);
+    if (e.cancelable) e.preventDefault();
+    var c = getMathCoord(e);
+    if (c) setM(c.x, c.y);
   }
-
-  function stopDrag() {
+  function handleEnd(e) {
+    if (!isDragging) return;
     isDragging = false;
     pt.style.cursor = 'grab';
+    if (hit) hit.style.cursor = 'grab';
+    try {
+      if (e.target && e.target.releasePointerCapture) {
+        e.target.releasePointerCapture(e.pointerId);
+      }
+    } catch(err) {}
   }
-
-  pt.addEventListener('mousedown', startDrag);
-  window.addEventListener('mousemove', onDrag);
-  window.addEventListener('mouseup', stopDrag);
-
-  pt.addEventListener('touchstart', startDrag, { passive: false });
-  window.addEventListener('touchmove', onDrag, { passive: false });
-  window.addEventListener('touchend', stopDrag);
-
+  svg.addEventListener('pointerdown', handleStart);
+  window.addEventListener('pointermove', handleMove);
+  window.addEventListener('pointerup', handleEnd);
+  window.addEventListener('pointercancel', handleEnd);
+  // Mouse fallback
+  svg.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    var c = getMathCoord(e);
+    if (c) setM(c.x, c.y);
+  });
+  window.addEventListener('mousemove', function(e) {
+    if (!isDragging) return;
+    var c = getMathCoord(e);
+    if (c) setM(c.x, c.y);
+  });
+  window.addEventListener('mouseup', function() {
+    isDragging = false;
+  });
+  // Touch fallback
+  svg.addEventListener('touchstart', function(e) {
+    isDragging = true;
+    var c = getMathCoord(e);
+    if (c) setM(c.x, c.y);
+  }, { passive: false });
+  window.addEventListener('touchmove', function(e) {
+    if (!isDragging) return;
+    if (e.cancelable) e.preventDefault();
+    var c = getMathCoord(e);
+    if (c) setM(c.x, c.y);
+  }, { passive: false });
+  window.addEventListener('touchend', function() {
+    isDragging = false;
+  });
   setM(2, 4);
 })();
 </script>
@@ -389,7 +424,7 @@ Kiểm tra xem các điểm sau có thuộc miền nghiệm của hệ không: $
   Do đó, **$Q(4; 2)$ không thuộc miền nghiệm**.
 
 <div style="text-align: center; margin: 20px 0;">
-<svg viewBox="-20 -20 280 230" style="width: 100%; max-width: 360px; height: auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+<svg data-interactive-done="true" viewBox="-20 -20 280 230" style="width: 100%; max-width: 360px; height: auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
 <!-- Grid -->
 <g stroke="#f1f5f9" stroke-width="0.8">
 <line x1="40" y1="30" x2="240" y2="30" /><line x1="40" y1="55" x2="240" y2="55" />
@@ -486,7 +521,7 @@ $$\left\{\begin{array}{l} x - y \le 2 \\ x + 2y \le 8 \\ x \ge 0 \\ y \ge 0 \end
      $$S_{OABC} = S_{OCHB} - S_{\triangle ABH} = 12 - 2 = 10 \text{ (đơn vị diện tích)}$$
 
 <div style="margin: 20px 0; text-align: center;">
-<svg viewBox="0 0 340 220" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<svg data-interactive-done="true" viewBox="0 0 340 220" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
 <!-- Grid pattern -->
 <defs>
 <pattern id="grid2" width="25" height="25" patternUnits="userSpaceOnUse">
@@ -586,7 +621,7 @@ $$\left\{\begin{array}{l} x + y \le 5 \\ 2x - y \le 4 \\ x \ge 0 \\ y \ge 1 \end
   - Giá trị nhỏ nhất: $F_{\min} = 3$ đạt được tại $(x; y) = (0; 1)$.
 
 <div style="margin: 20px 0; text-align: center;">
-<svg viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<svg data-interactive-done="true" viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
 <!-- Grid pattern -->
 <defs>
 <pattern id="grid3" width="26" height="26" patternUnits="userSpaceOnUse">
@@ -698,7 +733,7 @@ Hỏi xưởng may cần sản xuất bao nhiêu chiếc áo mỗi loại trong 
   Xưởng may cần sản xuất **12 chiếc áo loại I** và **12 chiếc áo loại II** mỗi ngày để đạt lợi nhuận lớn nhất là **3 240 000 đồng**.
 
 <div style="margin: 20px 0; text-align: center;">
-<svg viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<svg data-interactive-done="true" viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
 <!-- Grid pattern -->
 <defs>
 <pattern id="grid4" width="25" height="25" patternUnits="userSpaceOnUse">
