@@ -122,47 +122,41 @@ Trong kỹ thuật điện tử, một mạch điện gồm 2 bóng đèn hoặc
 Hãy điều chỉnh xác suất đóng của rơ-le 1 ($p_1$) và rơ-le 2 ($p_2$) để so sánh độ tin cậy giữa hai cách mắc:
 
 <div id="circuit-app" style="margin: 24px 0; padding: 22px; background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: var(--primary-color, #2563eb); text-align: center;">MÔ PHỎNG ĐỘ TIN CẬY MẠCH NỐI TIẾP & SONG SONG</h4>
-  
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 18px 0;">
-    <div style="background: #eff6ff; padding: 12px; border-radius: 8px; border: 1px solid #bfdbfe;">
-      <label style="font-weight: 600; color: #1e40af; display: block; margin-bottom: 6px;">Độ tin cậy Rơ-le 1 (p₁): <span id="val-p1" style="font-size: 1.1em; color: #1d4ed8;">0.90</span></label>
-      <input type="range" id="range-p1" min="0.1" max="1" step="0.05" value="0.90" style="width: 100%;">
-    </div>
-    
-    <div style="background: #ecfdf5; padding: 12px; border-radius: 8px; border: 1px solid #a7f3d0;">
-      <label style="font-weight: 600; color: #065f46; display: block; margin-bottom: 6px;">Độ tin cậy Rơ-le 2 (p₂): <span id="val-p2" style="font-size: 1.1em; color: #047857;">0.80</span></label>
-      <input type="range" id="range-p2" min="0.1" max="1" step="0.05" value="0.80" style="width: 100%;">
-    </div>
-  </div>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
-    <!-- Series Circuit Box -->
-    <div style="background: #f8fafc; border-radius: 10px; padding: 16px; border: 1px solid #cbd5e1;">
-      <h5 style="margin: 0 0 10px 0; color: #334155; font-size: 1em;">1. Mạch Mắc Nối Tiếp (Series)</h5>
-      <div style="display: flex; align-items: center; justify-content: center; height: 50px; background: #e2e8f0; border-radius: 6px; font-family: monospace; font-weight: bold; margin-bottom: 12px;">
-        ──[ R1 ]──[ R2 ]──
-      </div>
-      <p style="margin: 4px 0; font-size: 0.9em; color: #475569;">Cả 2 linh kiện cùng thông mạch ($AB$):</p>
-      <div style="font-size: 1.25em; font-weight: bold; color: #dc2626;" id="res-series">
-        P = 0.90 × 0.80 = 0.72 (72%)
-      </div>
-      <small style="color: #64748b;">Độ tin cậy mạch giảm so với từng linh kiện đơn lẻ.</small>
-    </div>
-
-    <!-- Parallel Circuit Box -->
-    <div style="background: #f0fdf4; border-radius: 10px; padding: 16px; border: 1px solid #bbf7d0;">
-      <h5 style="margin: 0 0 10px 0; color: #166534; font-size: 1em;">2. Mạch Mắc Song Song (Parallel - Dự phòng)</h5>
-      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50px; background: #dcfce7; border-radius: 6px; font-family: monospace; font-weight: bold; margin-bottom: 12px; line-height: 1.2;">
-        ┌─[ R1 ]─┐<br>└──[ R2 ]──┘
-      </div>
-      <p style="margin: 4px 0; font-size: 0.9em; color: #14532d;">Ít nhất 1 linh kiện thông mạch ($A \cup B$):</p>
-      <div style="font-size: 1.25em; font-weight: bold; color: #16a34a;" id="res-parallel">
-        P = 1 - (1-0.9)(1-0.8) = 0.98 (98%)
-      </div>
-      <small style="color: #15803d; font-weight: 600;">Độ tin cậy mạch vượt trội hơn hẳn từng linh kiện riêng biệt!</small>
-    </div>
-  </div>
+<h4 style="margin-top: 0; color: var(--primary-color, #2563eb); text-align: center;">MÔ PHỎNG ĐỘ TIN CẬY MẠCH NỐI TIẾP & SONG SONG</h4>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 18px 0;">
+<div style="background: #eff6ff; padding: 12px; border-radius: 8px; border: 1px solid #bfdbfe;">
+<label style="font-weight: 600; color: #1e40af; display: block; margin-bottom: 6px;">Độ tin cậy Rơ-le 1 (p₁): <span id="val-p1" style="font-size: 1.1em; color: #1d4ed8;">0.90</span></label>
+<input type="range" id="range-p1" min="0.1" max="1" step="0.05" value="0.90" style="width: 100%;">
+</div>
+<div style="background: #ecfdf5; padding: 12px; border-radius: 8px; border: 1px solid #a7f3d0;">
+<label style="font-weight: 600; color: #065f46; display: block; margin-bottom: 6px;">Độ tin cậy Rơ-le 2 (p₂): <span id="val-p2" style="font-size: 1.1em; color: #047857;">0.80</span></label>
+<input type="range" id="range-p2" min="0.1" max="1" step="0.05" value="0.80" style="width: 100%;">
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+<div style="background: #f8fafc; border-radius: 10px; padding: 16px; border: 1px solid #cbd5e1;">
+<h5 style="margin: 0 0 10px 0; color: #334155; font-size: 1em;">1. Mạch Mắc Nối Tiếp (Series)</h5>
+<div style="display: flex; align-items: center; justify-content: center; height: 50px; background: #e2e8f0; border-radius: 6px; font-family: monospace; font-weight: bold; margin-bottom: 12px;">
+──[ R1 ]──[ R2 ]──
+</div>
+<p style="margin: 4px 0; font-size: 0.9em; color: #475569;">Cả 2 linh kiện cùng thông mạch (AB):</p>
+<div style="font-size: 1.25em; font-weight: bold; color: #dc2626;" id="res-series">
+P = 0.90 × 0.80 = 0.72 (72%)
+</div>
+<small style="color: #64748b;">Độ tin cậy mạch giảm so với từng linh kiện đơn lẻ.</small>
+</div>
+<div style="background: #f0fdf4; border-radius: 10px; padding: 16px; border: 1px solid #bbf7d0;">
+<h5 style="margin: 0 0 10px 0; color: #166534; font-size: 1em;">2. Mạch Mắc Song Song (Parallel - Dự phòng)</h5>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 50px; background: #dcfce7; border-radius: 6px; font-family: monospace; font-weight: bold; margin-bottom: 12px; line-height: 1.2;">
+┌─[ R1 ]─┐<br>└──[ R2 ]──┘
+</div>
+<p style="margin: 4px 0; font-size: 0.9em; color: #14532d;">Ít nhất 1 linh kiện thông mạch (A ∪ B):</p>
+<div style="font-size: 1.25em; font-weight: bold; color: #16a34a;" id="res-parallel">
+P = 1 - (1-0.9)(1-0.8) = 0.98 (98%)
+</div>
+<small style="color: #15803d; font-weight: 600;">Độ tin cậy mạch vượt trội hơn hẳn từng linh kiện riêng biệt!</small>
+</div>
+</div>
 </div>
 
 <script>

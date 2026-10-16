@@ -178,7 +178,6 @@ Hãy kéo thanh trượt để thay đổi **Chiều cao $h$** và **Độ rộn
       <g id="gVolVertices"></g>
       <g id="gVolLabels"></g>
     </svg>
-
     <div style="margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.85em; text-align: left; background: #ffffff; padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0;">
       <div>
         <label style="font-weight: bold; color: #334155;">Cạnh đáy $a$: <span id="valSide">6 cm</span></label>
