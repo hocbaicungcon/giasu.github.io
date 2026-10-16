@@ -17,3 +17,59 @@ export const probabilityEvents=[
 ];
 export function moveEvent(order,from,to){if(!Number.isInteger(from)||!Number.isInteger(to)||from<0||to<0||from>=order.length||to>=order.length)return [...order];const result=[...order];result.splice(to,0,result.splice(from,1)[0]);return result;}
 export function isProbabilityOrder(order){const byId=new Map(probabilityEvents.map(e=>[e.id,e.probability]));return order.length===byId.size&&new Set(order).size===byId.size&&order.every((id,i)=>byId.has(id)&&(i===0||byId.get(order[i-1])>=byId.get(id)));}
+
+export function rationalNumber(a,b=1){
+ if(b===0)return null;
+ const s=(a*b<0)?-1:(a===0?0:1);
+ const absA=Math.abs(a),absB=Math.abs(b);
+ const g=gcd(absA,absB);
+ const p=absA/g,q=absB/g;
+ return {
+  numerator:a,
+  denominator:b,
+  simplified:[s*p,q],
+  value:a/b,
+  opposite:-(a/b),
+  isInteger:q===1
+ };
+}
+
+export function linearFunction(a,b){
+ const root=a===0?null:-b/a;
+ const slopeAngleDeg=Math.round(Math.atan(a)*180/Math.PI*10)/10;
+ return {
+  a,
+  b,
+  root,
+  yIntercept:[0,b],
+  xIntercept:a===0?null:[root,0],
+  slopeAngleDeg,
+  monotonicity:a>0?'increasing':a<0?'decreasing':'constant'
+ };
+}
+
+export function equationBalance(a=2,b=3,c=11){
+ return {
+  a,
+  b,
+  c,
+  transferred:c-b,
+  solution:a===0?null:(c-b)/a
+ };
+}
+
+export function derivativeTangent(a,b,c,d,x0){
+ const y0=a*x0*x0*x0+b*x0*x0+c*x0+d;
+ const slope=3*a*x0*x0+2*b*x0+c;
+ const intercept=y0-slope*x0;
+ const isStationary=Math.abs(slope)<1e-5;
+ const sign=isStationary?0:(slope>0?1:-1);
+ return {
+  x0,
+  y0,
+  slope,
+  intercept,
+  sign,
+  behavior:sign>0?'đồng biến':(sign<0?'nghịch biến':'tiếp tuyến nằm ngang (cực trị/điểm dừng)')
+ };
+}

@@ -46,8 +46,11 @@ export function wrapLongDisplayFormula(source,maxLine=52,minLength=60){
  }
  const implication=breaks.find(point=>point.kind==='implies');
  if(implication){
-  const before=source.slice(0,implication.at).trim(),after=source.slice(implication.at).trim(),tailEquals=breaks.filter(point=>point.kind==='relation'&&point.at>implication.at);
-  if(after.length>maxLine&&tailEquals.length>1){
+  const before=source.slice(0,implication.at).trim(),after=source.slice(implication.at).trim();
+  const hasBeforeRelation=breaks.some(point=>point.kind==='relation'&&point.at<implication.at);
+  const tailEquals=breaks.filter(point=>point.kind==='relation'&&point.at>implication.at);
+  if(!hasBeforeRelation||source.length<80)return source;
+  if(after.length>maxLine&&tailEquals.length>2){
    const cut=tailEquals[1].at,conclusion=source.slice(implication.at,cut).trim(),result=source.slice(cut).trim();
    return `\\begin{array}{l}${before}\\\\${conclusion}\\\\${result}\\end{array}`;
   }

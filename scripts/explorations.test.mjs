@@ -23,3 +23,49 @@ test('triangle exploration measures acute, right and obtuse shapes with a consta
  const post={title:'Bài 12: Tổng các góc trong một tam giác',type:'Bài học',category:'Toán học'};
  assert.equal(explorationKind(post),'triangle-angles');assert.match(renderExploration(post),/data-exploration="triangle-angles"/);
 });
+
+test('algebra and calculus exploration models calculate values correctly',async()=>{
+ const {rationalNumber,linearFunction,equationBalance,derivativeTangent}=await import('../assets/exploration-models.js');
+ // Rational numbers
+ assert.deepEqual(rationalNumber(-6,8).simplified,[-3,4]);
+ assert.equal(rationalNumber(-6,8).value,-0.75);
+ assert.equal(rationalNumber(-6,8).opposite,0.75);
+ assert.equal(rationalNumber(6,2).isInteger,true);
+ assert.equal(rationalNumber(5,0),null);
+
+ // Linear functions
+ const lin1=linearFunction(2,-4);
+ assert.equal(lin1.root,2);
+ assert.deepEqual(lin1.yIntercept,[0,-4]);
+ assert.equal(lin1.monotonicity,'increasing');
+ const lin2=linearFunction(-1,3);
+ assert.equal(lin2.monotonicity,'decreasing');
+ const lin3=linearFunction(0,5);
+ assert.equal(lin3.monotonicity,'constant');
+
+ // Equation balance
+ const eq=equationBalance(2,3,11);
+ assert.equal(eq.transferred,8);
+ assert.equal(eq.solution,4);
+
+ // Derivative & tangent for cubic f(x) = x^3 - 3x
+ const tanAt0=derivativeTangent(1,0,-3,0,0);
+ assert.equal(tanAt0.y0,0);
+ assert.equal(tanAt0.slope,-3);
+ assert.equal(tanAt0.sign,-1);
+ const tanAtCrit=derivativeTangent(1,0,-3,0,-1);
+ assert.equal(tanAtCrit.slope,0);
+ assert.equal(tanAtCrit.sign,0);
+ const tanAtInc=derivativeTangent(1,0,-3,0,2);
+ assert.equal(tanAtInc.slope,9);
+ assert.equal(tanAtInc.sign,1);
+
+ // Exploration kind attachments
+ const p=title=>({title,category:'Toán học',type:'Bài học'});
+ assert.equal(explorationKind(p('Tập hợp các số hữu tỉ')),'rational-numberline');
+ assert.equal(explorationKind(p('Quy tắc dấu ngoặc và quy tắc chuyển vế')),'equation-balance');
+ assert.equal(explorationKind(p('Hàm số bậc nhất và đồ thị')),'linear-function');
+ assert.equal(explorationKind(p('Bài giảng ứng dụng đạo hàm để khảo sát hàm số CTST')),'derivative-tangent');
+ assert.match(renderExploration(p('Tập hợp các số hữu tỉ')),/data-exploration="rational-numberline"/);
+ assert.match(renderExploration(p('Ứng dụng đạo hàm để khảo sát hàm số')),/data-exploration="derivative-tangent"/);
+});

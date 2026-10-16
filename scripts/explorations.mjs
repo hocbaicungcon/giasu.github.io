@@ -5,12 +5,25 @@ export function explorationKind(post){
  if(/tổng các góc trong một tam giác/.test(title)&&!post.html?.includes('data-geometry="triangle-angles"'))return 'triangle-angles';
  if(/ước chung|ưcln/.test(title))return 'gcd';
  if(/xác suất thực nghiệm|xác suất tung đồng xu|dữ liệu và xác suất/.test(title))return 'probability';
+ if(/ứng dụng đạo hàm|khảo sát hàm số|khảo sát và vẽ đồ thị|tính đơn điệu|đồng biến/.test(title))return 'derivative-tangent';
+ if(/hàm số bậc nhất|nhị thức bậc nhất|phương trình đường thẳng/.test(title))return 'linear-function';
+ if(/quy tắc chuyển vế|chuyển vế/.test(title))return 'equation-balance';
+ if(/tập hợp các số hữu tỉ|số hữu tỉ|tập hợp các số thực/.test(title))return 'rational-numberline';
  if(/hàm số bậc hai|tam thức bậc hai|phương trình bậc hai/.test(title)&&!/căn bậc hai/.test(title))return 'quadratic';
  return null;
 }
 export function renderExploration(post){
  const kind=explorationKind(post);if(!kind)return '';
- const info={'triangle-angles':['Kéo đỉnh, kiểm chứng tổng ba góc','Kéo đỉnh A hoặc đổi hai thanh tọa độ. Dự đoán tổng ba góc trước khi bấm kiểm tra; thử tạo tam giác nhọn, vuông và tù.'],gcd:['Tìm ƯCLN bằng quan sát','Đổi hai số, chọn số lớn nhất mà cả hai số cùng chia hết rồi kiểm tra các ước chung.'],probability:['Khám phá khả năng xảy ra của sự kiện','Sắp xếp các sự kiện, rồi tung đồng xu để quan sát tần suất qua nhiều lần thử.'],quadratic:['Tự khám phá đồ thị bậc hai','Thay đổi a, b, c và quan sát đồ thị y = ax² + bx + c. Thử đoán hướng mở trước khi xem kết quả.']}[kind];
+ const info={
+  'triangle-angles':['Kéo đỉnh, kiểm chứng tổng ba góc','Kéo đỉnh A hoặc đổi hai thanh tọa độ. Dự đoán tổng ba góc trước khi bấm kiểm tra; thử tạo tam giác nhọn, vuông và tù.'],
+  gcd:['Tìm ƯCLN bằng quan sát','Đổi hai số, chọn số lớn nhất mà cả hai số cùng chia hết rồi kiểm tra các ước chung.'],
+  probability:['Khám phá khả năng xảy ra của sự kiện','Sắp xếp các sự kiện, rồi tung đồng xu để quan sát tần suất qua nhiều lần thử.'],
+  quadratic:['Tự khám phá đồ thị bậc hai','Thay đổi a, b, c và quan sát đồ thị y = ax² + bx + c. Thử đoán hướng mở trước khi xem kết quả.'],
+  'rational-numberline':['Trục số và biểu diễn số hữu tỉ','Thay đổi tử số và mẫu số để quan sát vị trí của số hữu tỉ a/b trên trục số, số đối và biểu diễn số thập phân.'],
+  'linear-function':['Khám phá hàm số bậc nhất y = ax + b','Kéo thanh trượt hệ số góc a và tung độ gốc b để quan sát độ dốc, góc tạo với tia Ox và tính đồng biến, nghịch biến.'],
+  'equation-balance':['Cân bằng phương trình & quy tắc chuyển vế','Khám phá quy tắc chuyển vế đổi dấu qua mô hình cân đĩa đại số trực quan.'],
+  'derivative-tangent':['Đạo hàm và tiếp tuyến đồ thị (Giải tích)','Trượt tiếp điểm x₀ trên đồ thị để quan sát tiếp tuyến động, liên hệ dấu của f\'(x₀) với tính đồng biến, nghịch biến và cực trị.']
+ }[kind];
  return `<section class="lesson-exploration" id="lesson-exploration" data-exploration="${kind}" aria-labelledby="exploration-heading"><span class="practice-kicker">THỬ · DỰ ĐOÁN · KHÁM PHÁ</span><h2 id="exploration-heading">${escapeHTML(info[0])}</h2><p>${escapeHTML(info[1])}</p>${kind==='probability'?renderProbabilitySort()+'<h3>Tung đồng xu và quan sát tần suất</h3><p>So sánh tần suất mặt ngửa với xác suất lý thuyết 1/2. Thử nhiều lần để quan sát sự dao động.</p>':''}<div data-exploration-stage></div><noscript>Bật JavaScript để thay đổi số liệu và thực hiện thí nghiệm.</noscript></section>`;
 }
 
