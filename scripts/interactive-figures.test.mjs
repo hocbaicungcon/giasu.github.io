@@ -112,7 +112,8 @@ test('moving a vertex synchronizes labels, angle arcs, right angles, and tick ma
  const polyABC=makeEl('polygon',{points:'270,30 110,230 430,230'});
  const altLine=makeEl('line',{x1:'270',y1:'30',x2:'270',y2:'230'});
  const tickAB=makeEl('line',{x1:'185',y1:'125',x2:'195',y2:'135'});
- const angleB=makeEl('path',{d:'M 140,230 A 30 30 0 0 0 126,204'});
+ const angleB=makeEl('path',{d:'M 140,230 A 30 30 0 0 0 126,204','data-angle-kind':'arc','data-angle-vertex':'110,230','data-angle-rays':'270,230 270,30','data-angle-size':'24'});
+ const rightAtH=makeEl('path',{d:'M 256,230 L 256,216 L 270,216','data-angle-kind':'right','data-angle-vertex':'270,230','data-angle-rays':'270,30 430,230','data-angle-size':'14'});
  const rectH=makeEl('rect',{x:'256',y:'216',width:'14',height:'14'});
  const labelA=makeEl('text',{x:'265',y:'18'});
  const labelEdgeAB=makeEl('text',{x:'145',y:'115'});
@@ -126,7 +127,7 @@ test('moving a vertex synchronizes labels, angle arcs, right angles, and tick ma
    if(sel==='circle')return [circleA,circleB,circleC,circleH];
    if(sel==='polygon')return [polyABC];
    if(sel==='line')return [altLine,tickAB];
-   if(sel==='path')return [angleB];
+   if(sel==='path')return [angleB,rightAtH];
    if(sel==='rect')return [rectH];
    if(sel==='text')return [labelA,labelEdgeAB];
    return [];
@@ -229,8 +230,11 @@ test('moving a vertex synchronizes labels, angle arcs, right angles, and tick ma
   handleB.trigger('pointerdown',{pointerId:2,preventDefault(){},stopPropagation(){}});
   mockSvg.onPointerMove({clientX:90,clientY:250});
 
-  // Verify angle arc at B shifted by (-20, +20)
-  assert.ok(angleB.getAttribute('d').includes('120.0,250.0'));
+  // The angle arc follows its current rays instead of translating as a rigid path.
+  assert.notEqual(angleB.getAttribute('d'),'M 140,230 A 30 30 0 0 0 126,204');
+  assert.match(angleB.getAttribute('d'),/^M /);
+  // A right-angle marker disappears when its current rays are no longer perpendicular.
+  assert.equal(rightAtH.getAttribute('d'),'');
 
   // Verify midpoint H moved automatically (midpoint of B(90, 250) and C(430, 230) is (260, 240))
   assert.equal(circleH.getAttribute('cx'),'260.0');
