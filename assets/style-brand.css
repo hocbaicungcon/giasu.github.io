@@ -95,7 +95,7 @@ body .flowchart-group-blue :is(.flowchart-group-title,.flowchart-node strong,.fl
 body .flowchart-badge-blue{background:#087858;color:#fff}
 body .flowchart-group-blue .flowchart-node{border-color:#b8d7c2}
 
-body:not(:has(.lesson-course))>header{position:sticky;top:0;z-index:80}
+body:not(:has(.lesson-course))>header{position:fixed;top:0;left:0;right:0;width:100%;z-index:1000}
 body .exploration-controls label:has(input[type="range"]){display:grid;grid-template-columns:auto 1fr;gap:6px 8px;white-space:nowrap}
 body .exploration-controls label input[type="range"]{grid-column:1/-1}
 body .exploration-controls label output{justify-self:start}

@@ -125,188 +125,229 @@ $$F(x; y) = ax + by$$
 
 ---
 
-## 4. Widget tương tác: Bộ giải Quy hoạch Tuyến tính Trực quan
+## 4. Khảo sát trực quan: Điểm thuộc miền nghiệm & Giá trị hàm mục tiêu
 
-Khảo sát hệ ràng buộc kinh điển:
-$$\left\{\begin{array}{l} x \ge 0, \ y \ge 0 \\ x + y \le 6 \\ 2x + y \le 8 \end{array}\right.$$
-và hàm mục tiêu lợi nhuận $F(x, y) = 3x + 2y$. Kéo thanh trượt để đường thẳng mức $3x + 2y = c$ quét qua miền nghiệm:
+Khảo sát hệ bất phương trình bậc nhất hai ẩn kinh điển:
+85952\left\{\begin{array}{l} x \ge 0, \ y \ge 0 \ x + y \le 6 \ 2x + y \le 8 \end{array}\right.85952
+và hàm mục tiêu lợi nhuận: (x, y) = 3x + 2y$.
 
-<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
-    <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">📊 Mô Phỏng Trực Quan Quy Hoạch Tuyến Tính</h3>
-    <div style="font-weight: 700; font-size: 1.1rem; color: #0284c7;">
-      Hàm mục tiêu: F(x, y) = 3x + 2y
-    </div>
-  </div>
+Miền nghiệm của hệ là miền tứ giác cố định $ trên mặt phẳng tọa độ $ với các đỉnh:
+85952O(0; 0), \quad A(4; 0), \quad B(2; 4), \quad C(0; 6)85952
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; align-items: center;">
-    <!-- Interactive Canvas SVG -->
-    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center;">
-      <svg id="lpSvg" viewBox="-10 -15 250 230" style="width: 100%; max-width: 340px; height: auto; background: #ffffff; border-radius: 6px;">
-        <!-- Axes: scale 1 unit = 20px. Origin O(0,0) at SVG (40, 180) -->
-        <g stroke="#e2e8f0" stroke-width="0.8" stroke-dasharray="2">
-          <!-- horizontal grid lines -->
-          <line x1="40" y1="160" x2="220" y2="160" /><line x1="40" y1="140" x2="220" y2="140" />
-          <line x1="40" y1="120" x2="220" y2="120" /><line x1="40" y1="100" x2="220" y2="100" />
-          <line x1="40" y1="80" x2="220" y2="80" /><line x1="40" y1="60" x2="220" y2="60" />
-          <line x1="40" y1="40" x2="220" y2="40" /><line x1="40" y1="20" x2="220" y2="20" />
-          <!-- vertical grid lines -->
-          <line x1="60" y1="20" x2="60" y2="180" /><line x1="80" y1="20" x2="80" y2="180" />
-          <line x1="100" y1="20" x2="100" y2="180" /><line x1="120" y1="20" x2="120" y2="180" />
-          <line x1="140" y1="20" x2="140" y2="180" /><line x1="160" y1="20" x2="160" y2="180" />
-          <line x1="180" y1="20" x2="180" y2="180" /><line x1="200" y1="20" x2="200" y2="180" />
-        </g>
+Em hãy kéo rê điểm (x; y)$ bên dưới (hoặc điều chỉnh thanh trượt , y$) để quan sát giá trị hàm mục tiêu (x, y) = 3x + 2y$ thay đổi theo vị trí của điểm $:
 
-        <!-- Coordinate axes -->
-        <line x1="20" y1="180" x2="225" y2="180" stroke="#334155" stroke-width="1.8" />
-        <line x1="40" y1="195" x2="40" y2="15" stroke="#334155" stroke-width="1.8" />
-        <polygon points="225,180 218,176 218,184" fill="#334155" />
-        <polygon points="40,15 36,22 44,22" fill="#334155" />
-        <text x="220" y="195" font-size="11" font-weight="bold" fill="#334155">x</text>
-        <text x="24" y="22" font-size="11" font-weight="bold" fill="#334155">y</text>
-        <text x="26" y="194" font-size="11" font-weight="bold" fill="#64748b">O</text>
-
-        <!-- Axis tick labels -->
-        <text x="80" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">2</text>
-        <text x="120" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">4</text>
-        <text x="160" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">6</text>
-        <text x="200" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">8</text>
-        <text x="32" y="143" font-size="9" fill="#94a3b8" text-anchor="end">2</text>
-        <text x="32" y="103" font-size="9" fill="#94a3b8" text-anchor="end">4</text>
-        <text x="32" y="63" font-size="9" fill="#94a3b8" text-anchor="end">6</text>
-        <text x="32" y="23" font-size="9" fill="#94a3b8" text-anchor="end">8</text>
-
-        <!-- Boundary line d1: x + y = 6 (blue) -->
-        <line x1="20" y1="40" x2="180" y2="200" stroke="#2563eb" stroke-width="1.6" stroke-dasharray="4,2" />
-        <text x="175" y="170" font-size="9" font-weight="bold" fill="#2563eb">d₁: x+y=6</text>
-
-        <!-- Boundary line d2: 2x + y = 8 (purple) -->
-        <line x1="30" y1="0" x2="135" y2="210" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="4,2" />
-        <text x="50" y="30" font-size="9" font-weight="bold" fill="#7c3aed">d₂: 2x+y=8</text>
-
-        <!-- Shaded Feasible Region Polygon: O(0,0), A(4,0), B(2,4), C(0,6) -->
-        <polygon points="40,180 120,180 80,100 40,60" fill="#38bdf8" fill-opacity="0.35" stroke="#0284c7" stroke-width="2.5" />
-
-        <!-- Objective Function Level Line 3x + 2y = c -->
-        <line id="levelLine" x1="15" y1="180" x2="110" y2="40" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="5,3" />
-
-        <!-- Vertices -->
-        <circle cx="40" cy="180" r="4" fill="#0f172a" />
-        <text x="45" y="174" font-size="10" font-weight="bold" fill="#0f172a">O(0;0)</text>
-
-        <circle cx="120" cy="180" r="4" fill="#0f172a" />
-        <text x="122" y="174" font-size="10" font-weight="bold" fill="#0f172a">A(4;0)</text>
-
-        <circle id="vB" cx="80" cy="100" r="5.5" fill="#e11d48" />
-        <text x="86" y="96" font-size="11" font-weight="bold" fill="#e11d48">B(2;4) ★ MAX</text>
-
-        <circle cx="40" cy="60" r="4" fill="#0f172a" />
-        <text x="46" y="58" font-size="10" font-weight="bold" fill="#0f172a">C(0;6)</text>
-      </svg>
-    </div>
-
-    <!-- Controls & Results Table -->
-    <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px;">
-      <div style="margin-bottom: 14px;">
-        <label style="font-size: 0.9rem; font-weight: 600; color: #334155;">
-          Mức giá trị c của F(x, y): <span id="valCDisplay" style="color: #dc2626; font-size: 1.1rem; font-weight: bold;">14</span>
-        </label>
-        <input type="range" id="sliderC" min="0" max="20" step="0.5" value="14" style="width: 100%; margin-top: 6px; cursor: pointer;" />
-      </div>
-
-      <div style="font-size: 0.85rem; font-weight: 600; color: #475569; margin-bottom: 6px;">Bảng so sánh giá trị tại các đỉnh:</div>
-      <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: center;">
-        <thead>
-          <tr style="background: #f1f5f9; border-bottom: 1px solid #cbd5e1;">
-            <th style="padding: 6px;">Đỉnh</th>
-            <th style="padding: 6px;">Tọa độ (x; y)</th>
-            <th style="padding: 6px;">F(x, y) = 3x + 2y</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid #e2e8f0;">
-            <td style="padding: 6px; font-weight: bold;">O</td>
-            <td style="padding: 6px;">(0; 0)</td>
-            <td style="padding: 6px;">3(0) + 2(0) = <strong>0</strong> (MIN)</td>
-          </tr>
-          <tr style="border-bottom: 1px solid #e2e8f0;">
-            <td style="padding: 6px; font-weight: bold;">A</td>
-            <td style="padding: 6px;">(4; 0)</td>
-            <td style="padding: 6px;">3(4) + 2(0) = <strong>12</strong></td>
-          </tr>
-          <tr style="border-bottom: 1px solid #e2e8f0; background: #fff1f2; color: #be123c;">
-            <td style="padding: 6px; font-weight: bold;">B</td>
-            <td style="padding: 6px;">(2; 4)</td>
-            <td style="padding: 6px; font-weight: bold;">3(2) + 2(4) = 14 (MAX)</td>
-          </tr>
-          <tr>
-            <td style="padding: 6px; font-weight: bold;">C</td>
-            <td style="padding: 6px;">(0; 6)</td>
-            <td style="padding: 6px;">3(0) + 2(6) = <strong>12</strong></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div id="statusNotice" style="margin-top: 12px; background: #f0fdf4; border-left: 3px solid #22c55e; padding: 8px 10px; font-size: 0.85rem; color: #166534;">
-        Đường thẳng mức 3x + 2y = 14 đi qua đỉnh B(2; 4). Đây chính là giá trị lớn nhất F_max = 14!
-      </div>
-    </div>
-  </div>
+<div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 18px; margin: 20px 0; font-family: system-ui, sans-serif;">
+<div style="text-align: center; margin-bottom: 14px;">
+<span style="display: inline-block; background: #e0f2fe; color: #0369a1; font-weight: 700; font-size: 13px; padding: 4px 10px; border-radius: 6px; margin-bottom: 8px;">Hàm mục tiêu: F(x, y) = 3x + 2y</span>
+<div style="display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="font-size: 15px; color: #1e293b;">Tọa độ: <strong id="mCoordText" style="color: #0f172a; font-family: monospace;">M(2.0; 4.0)</strong></div>
+<div style="font-size: 18px; font-weight: 800; color: #0284c7;">F(x, y) = <span id="mValF" style="color: #dc2626; font-size: 22px;">14.0</span></div>
+</div>
+<div id="mStatusBadge" style="margin-top: 8px; display: inline-block; font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 20px; background: #dcfce7; color: #15803d; border: 1px solid #86efac;">
+★ Đỉnh B(2; 4) — Đạt Giá Trị Lớn Nhất F_max = 14!
+</div>
+</div>
+<div style="display: flex; justify-content: center;">
+<svg id="lpInteractiveSvg" viewBox="-15 -15 270 240" style="width: 100%; max-width: 400px; height: auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; touch-action: none; cursor: crosshair;">
+<g stroke="#f1f5f9" stroke-width="0.8">
+<line x1="40" y1="160" x2="220" y2="160" /><line x1="40" y1="140" x2="220" y2="140" />
+<line x1="40" y1="120" x2="220" y2="120" /><line x1="40" y1="100" x2="220" y2="100" />
+<line x1="40" y1="80" x2="220" y2="80" /><line x1="40" y1="60" x2="220" y2="60" />
+<line x1="40" y1="40" x2="220" y2="40" /><line x1="40" y1="20" x2="220" y2="20" />
+<line x1="60" y1="20" x2="60" y2="180" /><line x1="80" y1="20" x2="80" y2="180" />
+<line x1="100" y1="20" x2="100" y2="180" /><line x1="120" y1="20" x2="120" y2="180" />
+<line x1="140" y1="20" x2="140" y2="180" /><line x1="160" y1="20" x2="160" y2="180" />
+<line x1="180" y1="20" x2="180" y2="180" /><line x1="200" y1="20" x2="200" y2="180" />
+</g>
+<line x1="15" y1="180" x2="235" y2="180" stroke="#334155" stroke-width="1.8" />
+<polygon points="235,180 227,176 227,184" fill="#334155" />
+<text x="230" y="196" font-size="11" font-weight="bold" fill="#334155">x</text>
+<line x1="40" y1="195" x2="40" y2="15" stroke="#334155" stroke-width="1.8" />
+<polygon points="40,15 36,23 44,23" fill="#334155" />
+<text x="24" y="22" font-size="11" font-weight="bold" fill="#334155">y</text>
+<text x="26" y="194" font-size="11" font-weight="bold" fill="#64748b">O</text>
+<text x="80" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">2</text>
+<text x="120" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">4</text>
+<text x="160" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">6</text>
+<text x="200" y="193" font-size="9" fill="#94a3b8" text-anchor="middle">8</text>
+<text x="32" y="143" font-size="9" fill="#94a3b8" text-anchor="end">2</text>
+<text x="32" y="103" font-size="9" fill="#94a3b8" text-anchor="end">4</text>
+<text x="32" y="63" font-size="9" fill="#94a3b8" text-anchor="end">6</text>
+<text x="32" y="23" font-size="9" fill="#94a3b8" text-anchor="end">8</text>
+<line x1="20" y1="40" x2="180" y2="200" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="4,2" />
+<text x="165" y="165" font-size="9" font-weight="bold" fill="#2563eb">d₁: x+y=6</text>
+<line x1="30" y1="0" x2="135" y2="210" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4,2" />
+<text x="50" y="30" font-size="9" font-weight="bold" fill="#7c3aed">d₂: 2x+y=8</text>
+<polygon points="40,180 120,180 80,100 40,60" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
+<circle cx="40" cy="180" r="3.5" fill="#0f172a" /><text x="44" y="174" font-size="9" font-weight="bold" fill="#0f172a">O(0;0)</text>
+<circle cx="120" cy="180" r="3.5" fill="#0f172a" /><text x="122" y="174" font-size="9" font-weight="bold" fill="#0f172a">A(4;0)</text>
+<circle cx="80" cy="100" r="4.5" fill="#e11d48" /><text x="85" y="96" font-size="10" font-weight="bold" fill="#e11d48">B(2;4) ★ MAX</text>
+<circle cx="40" cy="60" r="3.5" fill="#0f172a" /><text x="45" y="58" font-size="9" font-weight="bold" fill="#0f172a">C(0;6)</text>
+<line id="mProjX" x1="80" y1="100" x2="80" y2="180" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="3,2" />
+<line id="mProjY" x1="80" y1="100" x2="40" y2="100" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="3,2" />
+<circle id="dragM" cx="80" cy="100" r="7" fill="#f43f5e" stroke="#ffffff" stroke-width="2" style="cursor: grab;" />
+<text id="dragMLabel" x="85" y="92" font-size="11" font-weight="bold" fill="#be123c">M(2.0; 4.0)</text>
+</svg>
+</div>
+<div style="margin-top: 14px; max-width: 420px; margin-inline: auto;">
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">
+<div>
+<label for="rangeX" style="font-size: 12px; font-weight: 700; color: #475569; display: flex; justify-content: space-between;">
+<span>Hoành độ x:</span><span id="labelX" style="color: #2563eb;">2.0</span>
+</label>
+<input type="range" id="rangeX" min="0" max="4.5" step="0.1" value="2.0" style="width: 100%; accent-color: #2563eb; cursor: pointer;" />
+</div>
+<div>
+<label for="rangeY" style="font-size: 12px; font-weight: 700; color: #475569; display: flex; justify-content: space-between;">
+<span>Tung độ y:</span><span id="labelY" style="color: #7c3aed;">4.0</span>
+</label>
+<input type="range" id="rangeY" min="0" max="6.5" step="0.1" value="4.0" style="width: 100%; accent-color: #7c3aed; cursor: pointer;" />
+</div>
+</div>
+<div style="display: flex; gap: 6px; justify-content: center; flex-wrap: wrap;">
+<button type="button" class="vertex-btn" data-x="0" data-y="0" style="padding: 4px 8px; font-size: 12px; font-weight: 600; background: #fff; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer;">Đỉnh O(0; 0)</button>
+<button type="button" class="vertex-btn" data-x="4" data-y="0" style="padding: 4px 8px; font-size: 12px; font-weight: 600; background: #fff; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer;">Đỉnh A(4; 0)</button>
+<button type="button" class="vertex-btn" data-x="2" data-y="4" style="padding: 4px 8px; font-size: 12px; font-weight: 700; background: #ffe4e6; color: #be123c; border: 1px solid #f43f5e; border-radius: 6px; cursor: pointer;">Đỉnh B(2; 4) ★ MAX</button>
+<button type="button" class="vertex-btn" data-x="0" data-y="6" style="padding: 4px 8px; font-size: 12px; font-weight: 600; background: #fff; border: 1px solid #cbd5e1; border-radius: 6px; cursor: pointer;">Đỉnh C(0; 6)</button>
+</div>
+</div>
 </div>
 
 <script>
 (function() {
-  function updateLevelLine() {
-    var slider = document.getElementById('sliderC');
-    if (!slider) return;
-    var c = parseFloat(slider.value);
-    document.getElementById('valCDisplay').textContent = c;
+  var svg = document.getElementById('lpInteractiveSvg');
+  var pt = document.getElementById('dragM');
+  var lbl = document.getElementById('dragMLabel');
+  var projX = document.getElementById('mProjX');
+  var projY = document.getElementById('mProjY');
+  var rangeX = document.getElementById('rangeX');
+  var rangeY = document.getElementById('rangeY');
+  var labelX = document.getElementById('labelX');
+  var labelY = document.getElementById('labelY');
+  var coordText = document.getElementById('mCoordText');
+  var valFText = document.getElementById('mValF');
+  var statusBadge = document.getElementById('mStatusBadge');
 
-    // Origin O(0,0) at SVG (40, 180). Scale 1 unit = 20 px.
-    // 3x + 2y = c => y = -1.5x + c/2
-    // Y_svg = 180 - 20*y = 180 + 1.5*(X_svg - 40) - 10*c = 1.5*X_svg + 120 - 10*c
-    var line = document.getElementById('levelLine');
-    var x1 = 15;
-    var y1 = 1.5 * x1 + 120 - 10 * c;
-    var x2 = 190;
-    var y2 = 1.5 * x2 + 120 - 10 * c;
+  if (!svg || !pt) return;
 
-    line.setAttribute('x1', x1);
-    line.setAttribute('y1', y1);
-    line.setAttribute('x2', x2);
-    line.setAttribute('y2', y2);
+  var originX = 40;
+  var originY = 180;
+  var scale = 20;
 
-    var notice = document.getElementById('statusNotice');
-    if (Math.abs(c - 14) < 0.3) {
-      notice.style.background = '#f0fdf4';
-      notice.style.borderLeftColor = '#22c55e';
-      notice.style.color = '#166534';
-      notice.innerHTML = '★ <strong>Trạng thái tối ưu:</strong> Đường thẳng mức đạt đỉnh B(2; 4) với GTLN F = 14.';
-    } else if (c > 14) {
-      notice.style.background = '#fef2f2';
-      notice.style.borderLeftColor = '#ef4444';
-      notice.style.color = '#991b1b';
-      notice.innerHTML = '⚠️ Đường thẳng mức đã vượt ra ngoài miền nghiệm khả thi (vô nghiệm).';
-    } else if (Math.abs(c - 0) < 0.3) {
-      notice.style.background = '#f8fafc';
-      notice.style.borderLeftColor = '#64748b';
-      notice.style.color = '#334155';
-      notice.innerHTML = '• Đạt giá trị nhỏ nhất tại gốc tọa độ O(0; 0) với F = 0.';
+  function setM(x, y) {
+    x = Math.max(0, Math.min(5, Math.round(x * 10) / 10));
+    y = Math.max(0, Math.min(7, Math.round(y * 10) / 10));
+
+    var svgX = originX + x * scale;
+    var svgY = originY - y * scale;
+
+    pt.setAttribute('cx', svgX);
+    pt.setAttribute('cy', svgY);
+
+    lbl.setAttribute('x', svgX + 6);
+    lbl.setAttribute('y', svgY - 6);
+    lbl.textContent = 'M(' + x.toFixed(1) + '; ' + y.toFixed(1) + ')';
+
+    projX.setAttribute('x1', svgX);
+    projX.setAttribute('y1', svgY);
+    projX.setAttribute('x2', svgX);
+    projX.setAttribute('y2', originY);
+
+    projY.setAttribute('x1', svgX);
+    projY.setAttribute('y1', svgY);
+    projY.setAttribute('x2', originX);
+    projY.setAttribute('y2', svgY);
+
+    rangeX.value = x;
+    rangeY.value = y;
+    labelX.textContent = x.toFixed(1);
+    labelY.textContent = y.toFixed(1);
+    coordText.textContent = 'M(' + x.toFixed(1) + '; ' + y.toFixed(1) + ')';
+
+    var f = 3 * x + 2 * y;
+    valFText.textContent = f.toFixed(1);
+
+    var inside = (x >= 0) && (y >= 0) && (x + y <= 6.01) && (2 * x + y <= 8.01);
+    if (Math.abs(x - 2) < 0.05 && Math.abs(y - 4) < 0.05) {
+      statusBadge.style.background = '#ffe4e6';
+      statusBadge.style.color = '#be123c';
+      statusBadge.style.borderColor = '#f43f5e';
+      statusBadge.textContent = '★ Đỉnh B(2; 4) — Đạt Giá Trị Lớn Nhất F_max = 14!';
+    } else if (Math.abs(x - 0) < 0.05 && Math.abs(y - 0) < 0.05) {
+      statusBadge.style.background = '#f1f5f9';
+      statusBadge.style.color = '#334155';
+      statusBadge.style.borderColor = '#94a3b8';
+      statusBadge.textContent = '• Gốc O(0; 0) — Đạt Giá Trị Nhỏ Nhất F_min = 0';
+    } else if (inside) {
+      statusBadge.style.background = '#dcfce7';
+      statusBadge.style.color = '#15803d';
+      statusBadge.style.borderColor = '#86efac';
+      statusBadge.textContent = '✔ Điểm M thuộc miền nghiệm khả thi';
     } else {
-      notice.style.background = '#eff6ff';
-      notice.style.borderLeftColor = '#3b82f6';
-      notice.style.color = '#1e40af';
-      notice.innerHTML = '• Đường thẳng mức F = ' + c + ' đang cắt qua miền nghiệm.';
+      statusBadge.style.background = '#fee2e2';
+      statusBadge.style.color = '#b91c1c';
+      statusBadge.style.borderColor = '#fca5a5';
+      statusBadge.textContent = '✖ Điểm M nằm NGOÀI miền nghiệm (Không thỏa mãn)';
     }
   }
 
-  var slider = document.getElementById('sliderC');
-  if (slider) {
-    slider.addEventListener('input', updateLevelLine);
-    updateLevelLine();
+  rangeX.addEventListener('input', function() {
+    setM(parseFloat(rangeX.value), parseFloat(rangeY.value));
+  });
+  rangeY.addEventListener('input', function() {
+    setM(parseFloat(rangeX.value), parseFloat(rangeY.value));
+  });
+
+  document.querySelectorAll('.vertex-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      setM(parseFloat(btn.dataset.x), parseFloat(btn.dataset.y));
+    });
+  });
+
+  var isDragging = false;
+  function getSvgCoord(evt) {
+    var ctm = svg.getScreenCTM();
+    if (!ctm) return { x: 2, y: 4 };
+    var clientX = evt.clientX || (evt.touches && evt.touches[0].clientX);
+    var clientY = evt.clientY || (evt.touches && evt.touches[0].clientY);
+    var svgX = (clientX - ctm.e) / ctm.a;
+    var svgY = (clientY - ctm.f) / ctm.d;
+    var mathX = (svgX - originX) / scale;
+    var mathY = (originY - svgY) / scale;
+    return { x: mathX, y: mathY };
   }
+
+  function startDrag(e) {
+    isDragging = true;
+    pt.style.cursor = 'grabbing';
+    var c = getSvgCoord(e);
+    setM(c.x, c.y);
+  }
+
+  function onDrag(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+    var c = getSvgCoord(e);
+    setM(c.x, c.y);
+  }
+
+  function stopDrag() {
+    isDragging = false;
+    pt.style.cursor = 'grab';
+  }
+
+  pt.addEventListener('mousedown', startDrag);
+  window.addEventListener('mousemove', onDrag);
+  window.addEventListener('mouseup', stopDrag);
+
+  pt.addEventListener('touchstart', startDrag, { passive: false });
+  window.addEventListener('touchmove', onDrag, { passive: false });
+  window.addEventListener('touchend', stopDrag);
+
+  setM(2, 4);
 })();
 </script>
+
 
 ---
 
@@ -348,65 +389,57 @@ Kiểm tra xem các điểm sau có thuộc miền nghiệm của hệ không: $
   Do đó, **$Q(4; 2)$ không thuộc miền nghiệm**.
 
 <div style="text-align: center; margin: 20px 0;">
-  <svg viewBox="-20 -20 280 230" style="width: 100%; max-width: 360px; height: auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <!-- Grid -->
-    <g stroke="#f1f5f9" stroke-width="0.8">
-      <line x1="40" y1="30" x2="240" y2="30" /><line x1="40" y1="55" x2="240" y2="55" />
-      <line x1="40" y1="80" x2="240" y2="80" /><line x1="40" y1="105" x2="240" y2="105" />
-      <line x1="40" y1="130" x2="240" y2="130" /><line x1="40" y1="155" x2="240" y2="155" />
-      <line x1="65" y1="20" x2="65" y2="180" /><line x1="90" y1="20" x2="90" y2="180" />
-      <line x1="115" y1="20" x2="115" y2="180" /><line x1="140" y1="20" x2="140" y2="180" />
-      <line x1="165" y1="20" x2="165" y2="180" /><line x1="190" y1="20" x2="190" y2="180" />
-      <line x1="215" y1="20" x2="215" y2="180" />
-    </g>
-    <!-- Axes: Origin (40, 180), 1 unit = 25px -->
-    <line x1="15" y1="180" x2="250" y2="180" stroke="#334155" stroke-width="1.8" />
-    <line x1="40" y1="195" x2="40" y2="15" stroke="#334155" stroke-width="1.8" />
-    <polygon points="250,180 242,176 242,184" fill="#334155" />
-    <polygon points="40,15 36,23 44,23" fill="#334155" />
-    <text x="245" y="195" font-size="11" font-weight="bold" fill="#334155">x</text>
-    <text x="26" y="22" font-size="11" font-weight="bold" fill="#334155">y</text>
-    <text x="26" y="194" font-size="11" font-weight="bold" fill="#64748b">O</text>
-
-    <!-- Boundary lines -->
-    <!-- d1: 2x + 3y = 12 -> (0; 4) at (40, 80), (6; 0) at (190, 180) -->
-    <line x1="25" y1="70" x2="205" y2="190" stroke="#2563eb" stroke-width="1.6" stroke-dasharray="4,2" />
-    <text x="175" y="168" font-size="9" font-weight="bold" fill="#2563eb">d₁: 2x+3y=12</text>
-
-    <!-- d2: x - y = -1 -> (0; 1) at (40, 155), (-1; 0) at (15, 180), (3; 4) at (115, 80) -->
-    <line x1="15" y1="180" x2="135" y2="60" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="4,2" />
-    <text x="95" y="65" font-size="9" font-weight="bold" fill="#7c3aed">d₂: x-y=-1</text>
-
-    <!-- Feasible polygon OKIH: O(40,180), K(190,180), I(85,110), H(40,155) -->
-    <polygon points="40,180 190,180 85,110 40,155" fill="#38bdf8" fill-opacity="0.28" stroke="#0284c7" stroke-width="2" />
-
-    <!-- Vertices -->
-    <circle cx="40" cy="180" r="3.5" fill="#0f172a" />
-    <circle cx="190" cy="180" r="3.5" fill="#0f172a" />
-    <text x="185" y="194" font-size="9" font-weight="bold" fill="#0f172a">(6;0)</text>
-    <circle cx="85" cy="110" r="3.5" fill="#0f172a" />
-    <text x="89" y="106" font-size="9" font-weight="bold" fill="#0f172a">I(1.8; 2.8)</text>
-    <circle cx="40" cy="155" r="3.5" fill="#0f172a" />
-    <text x="14" y="158" font-size="9" font-weight="bold" fill="#0f172a">(0;1)</text>
-
-    <!-- Points M, N, P, Q -->
-    <!-- M(1; 2) -> (65, 130) inside (green) -->
-    <circle cx="65" cy="130" r="5" fill="#16a34a" />
-    <text x="73" y="133" font-size="10" font-weight="bold" fill="#16a34a">M(1; 2) ✔</text>
-
-    <!-- N(3; 3) -> (115, 105) outside (red) -->
-    <circle cx="115" cy="105" r="4.5" fill="#dc2626" />
-    <text x="122" y="108" font-size="9" font-weight="bold" fill="#dc2626">N(3; 3) ✖</text>
-
-    <!-- P(0; 4) -> (40, 80) outside (red) -->
-    <circle cx="40" cy="80" r="4.5" fill="#dc2626" />
-    <text x="47" y="83" font-size="9" font-weight="bold" fill="#dc2626">P(0; 4) ✖</text>
-
-    <!-- Q(4; 2) -> (140, 130) outside (red) -->
-    <circle cx="140" cy="130" r="4.5" fill="#dc2626" />
-    <text x="146" y="133" font-size="9" font-weight="bold" fill="#dc2626">Q(4; 2) ✖</text>
-  </svg>
-  <div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.1: Miền nghiệm tứ giác màu xanh và vị trí trực quan của các điểm M, N, P, Q</em></div>
+<svg viewBox="-20 -20 280 230" style="width: 100%; max-width: 360px; height: auto; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+<!-- Grid -->
+<g stroke="#f1f5f9" stroke-width="0.8">
+<line x1="40" y1="30" x2="240" y2="30" /><line x1="40" y1="55" x2="240" y2="55" />
+<line x1="40" y1="80" x2="240" y2="80" /><line x1="40" y1="105" x2="240" y2="105" />
+<line x1="40" y1="130" x2="240" y2="130" /><line x1="40" y1="155" x2="240" y2="155" />
+<line x1="65" y1="20" x2="65" y2="180" /><line x1="90" y1="20" x2="90" y2="180" />
+<line x1="115" y1="20" x2="115" y2="180" /><line x1="140" y1="20" x2="140" y2="180" />
+<line x1="165" y1="20" x2="165" y2="180" /><line x1="190" y1="20" x2="190" y2="180" />
+<line x1="215" y1="20" x2="215" y2="180" />
+</g>
+<!-- Axes: Origin (40, 180), 1 unit = 25px -->
+<line x1="15" y1="180" x2="250" y2="180" stroke="#334155" stroke-width="1.8" />
+<line x1="40" y1="195" x2="40" y2="15" stroke="#334155" stroke-width="1.8" />
+<polygon points="250,180 242,176 242,184" fill="#334155" />
+<polygon points="40,15 36,23 44,23" fill="#334155" />
+<text x="245" y="195" font-size="11" font-weight="bold" fill="#334155">x</text>
+<text x="26" y="22" font-size="11" font-weight="bold" fill="#334155">y</text>
+<text x="26" y="194" font-size="11" font-weight="bold" fill="#64748b">O</text>
+<!-- Boundary lines -->
+<!-- d1: 2x + 3y = 12 -> (0; 4) at (40, 80), (6; 0) at (190, 180) -->
+<line x1="25" y1="70" x2="205" y2="190" stroke="#2563eb" stroke-width="1.6" stroke-dasharray="4,2" />
+<text x="175" y="168" font-size="9" font-weight="bold" fill="#2563eb">d₁: 2x+3y=12</text>
+<!-- d2: x - y = -1 -> (0; 1) at (40, 155), (-1; 0) at (15, 180), (3; 4) at (115, 80) -->
+<line x1="15" y1="180" x2="135" y2="60" stroke="#7c3aed" stroke-width="1.6" stroke-dasharray="4,2" />
+<text x="95" y="65" font-size="9" font-weight="bold" fill="#7c3aed">d₂: x-y=-1</text>
+<!-- Feasible polygon OKIH: O(40,180), K(190,180), I(85,110), H(40,155) -->
+<polygon points="40,180 190,180 85,110 40,155" fill="#38bdf8" fill-opacity="0.28" stroke="#0284c7" stroke-width="2" />
+<!-- Vertices -->
+<circle cx="40" cy="180" r="3.5" fill="#0f172a" />
+<circle cx="190" cy="180" r="3.5" fill="#0f172a" />
+<text x="185" y="194" font-size="9" font-weight="bold" fill="#0f172a">(6;0)</text>
+<circle cx="85" cy="110" r="3.5" fill="#0f172a" />
+<text x="89" y="106" font-size="9" font-weight="bold" fill="#0f172a">I(1.8; 2.8)</text>
+<circle cx="40" cy="155" r="3.5" fill="#0f172a" />
+<text x="14" y="158" font-size="9" font-weight="bold" fill="#0f172a">(0;1)</text>
+<!-- Points M, N, P, Q -->
+<!-- M(1; 2) -> (65, 130) inside (green) -->
+<circle cx="65" cy="130" r="5" fill="#16a34a" />
+<text x="73" y="133" font-size="10" font-weight="bold" fill="#16a34a">M(1; 2) ✔</text>
+<!-- N(3; 3) -> (115, 105) outside (red) -->
+<circle cx="115" cy="105" r="4.5" fill="#dc2626" />
+<text x="122" y="108" font-size="9" font-weight="bold" fill="#dc2626">N(3; 3) ✖</text>
+<!-- P(0; 4) -> (40, 80) outside (red) -->
+<circle cx="40" cy="80" r="4.5" fill="#dc2626" />
+<text x="47" y="83" font-size="9" font-weight="bold" fill="#dc2626">P(0; 4) ✖</text>
+<!-- Q(4; 2) -> (140, 130) outside (red) -->
+<circle cx="140" cy="130" r="4.5" fill="#dc2626" />
+<text x="146" y="133" font-size="9" font-weight="bold" fill="#dc2626">Q(4; 2) ✖</text>
+</svg>
+<div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.1: Miền nghiệm tứ giác màu xanh và vị trí trực quan của các điểm M, N, P, Q</em></div>
 </div>
 
 ---
@@ -453,73 +486,62 @@ $$\left\{\begin{array}{l} x - y \le 2 \\ x + 2y \le 8 \\ x \ge 0 \\ y \ge 0 \end
      $$S_{OABC} = S_{OCHB} - S_{\triangle ABH} = 12 - 2 = 10 \text{ (đơn vị diện tích)}$$
 
 <div style="margin: 20px 0; text-align: center;">
-  <svg viewBox="0 0 340 220" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
-    <!-- Grid pattern -->
-    <defs>
-      <pattern id="grid2" width="25" height="25" patternUnits="userSpaceOnUse">
-        <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e2e8f0" stroke-width="0.8" />
-      </pattern>
-    </defs>
-    <rect width="340" height="220" fill="url(#grid2)" />
-
-    <!-- Axes: Ox at y=175, Oy at x=45 -->
-    <line x1="25" y1="175" x2="315" y2="175" stroke="#475569" stroke-width="1.5" />
-    <polygon points="315,172 323,175 315,178" fill="#475569" />
-    <text x="316" y="190" font-size="12" font-style="italic" fill="#475569">x</text>
-
-    <line x1="45" y1="205" x2="45" y2="20" stroke="#475569" stroke-width="1.5" />
-    <polygon points="42,20 45,12 48,20" fill="#475569" />
-    <text x="32" y="18" font-size="12" font-style="italic" fill="#475569">y</text>
-    <text x="32" y="190" font-size="12" font-weight="bold" fill="#475569">O</text>
-
-    <!-- Ticks on Ox -->
-    <line x1="95" y1="172" x2="95" y2="178" stroke="#475569" stroke-width="1.2" />
-    <text x="92" y="190" font-size="10" fill="#64748b">2</text>
-    <line x1="145" y1="172" x2="145" y2="178" stroke="#475569" stroke-width="1.2" />
-    <text x="142" y="190" font-size="10" fill="#64748b">4</text>
-    <line x1="245" y1="172" x2="245" y2="178" stroke="#475569" stroke-width="1.2" />
-    <text x="242" y="190" font-size="10" fill="#64748b">8</text>
-
-    <!-- Ticks on Oy -->
-    <line x1="42" y1="125" x2="48" y2="125" stroke="#475569" stroke-width="1.2" />
-    <text x="28" y="129" font-size="10" fill="#64748b">2</text>
-    <line x1="42" y1="75" x2="48" y2="75" stroke="#475569" stroke-width="1.2" />
-    <text x="28" y="79" font-size="10" fill="#64748b">4</text>
-
-    <!-- Feasible polygon OABC: O(45,175), A(95,175), B(145,125), C(45,75) -->
-    <polygon points="45,175 95,175 145,125 45,75" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
-
-    <!-- Subtraction Triangle ABH: A(95,175), H(145,175), B(145,125) with dashed outline -->
-    <polygon points="95,175 145,175 145,125" fill="#f43f5e" fill-opacity="0.12" stroke="#f43f5e" stroke-dasharray="3,3" stroke-width="1.5" />
-    <line x1="145" y1="125" x2="145" y2="175" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="3,3" />
-
-    <!-- Right angle mark at H(145, 175) -->
-    <path d="M 137 175 L 137 167 L 145 167" fill="none" stroke="#64748b" stroke-width="1" />
-
-    <!-- Boundary line d1: x - y = 2 -->
-    <line x1="75" y1="195" x2="185" y2="85" stroke="#2563eb" stroke-width="1.5" />
-    <text x="175" y="80" font-size="10" font-weight="bold" fill="#2563eb">d₁: x - y = 2</text>
-
-    <!-- Boundary line d2: x + 2y = 8 -->
-    <line x1="30" y1="68" x2="265" y2="185" stroke="#7c3aed" stroke-width="1.5" />
-    <text x="215" y="165" font-size="10" font-weight="bold" fill="#7c3aed">d₂: x + 2y = 8</text>
-
-    <!-- Vertices -->
-    <circle cx="45" cy="175" r="3.5" fill="#0f172a" />
-    <circle cx="95" cy="175" r="3.5" fill="#0f172a" />
-    <text x="86" y="166" font-size="10" font-weight="bold" fill="#0f172a">A(2;0)</text>
-    <circle cx="145" cy="125" r="4" fill="#0f172a" />
-    <text x="150" y="122" font-size="10" font-weight="bold" fill="#0f172a">B(4;2)</text>
-    <circle cx="45" cy="75" r="3.5" fill="#0f172a" />
-    <text x="50" y="72" font-size="10" font-weight="bold" fill="#0f172a">C(0;4)</text>
-    <circle cx="145" cy="175" r="3" fill="#64748b" />
-    <text x="148" y="168" font-size="9" font-style="italic" fill="#64748b">H(4;0)</text>
-
-    <!-- Area Annotation badge -->
-    <rect x="62" y="125" width="56" height="20" rx="4" fill="#ffffff" fill-opacity="0.88" stroke="#cbd5e1" stroke-width="0.8" />
-    <text x="67" y="139" font-size="10" font-weight="bold" fill="#0284c7">S = 10</text>
-  </svg>
-  <div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.2: Biểu diễn miền nghiệm tứ giác OABC và phương pháp phân rã diện tích thông qua hình thang vuông OCHB</em></div>
+<svg viewBox="0 0 340 220" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<!-- Grid pattern -->
+<defs>
+<pattern id="grid2" width="25" height="25" patternUnits="userSpaceOnUse">
+<path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e2e8f0" stroke-width="0.8" />
+</pattern>
+</defs>
+<rect width="340" height="220" fill="url(#grid2)" />
+<!-- Axes: Ox at y=175, Oy at x=45 -->
+<line x1="25" y1="175" x2="315" y2="175" stroke="#475569" stroke-width="1.5" />
+<polygon points="315,172 323,175 315,178" fill="#475569" />
+<text x="316" y="190" font-size="12" font-style="italic" fill="#475569">x</text>
+<line x1="45" y1="205" x2="45" y2="20" stroke="#475569" stroke-width="1.5" />
+<polygon points="42,20 45,12 48,20" fill="#475569" />
+<text x="32" y="18" font-size="12" font-style="italic" fill="#475569">y</text>
+<text x="32" y="190" font-size="12" font-weight="bold" fill="#475569">O</text>
+<!-- Ticks on Ox -->
+<line x1="95" y1="172" x2="95" y2="178" stroke="#475569" stroke-width="1.2" />
+<text x="92" y="190" font-size="10" fill="#64748b">2</text>
+<line x1="145" y1="172" x2="145" y2="178" stroke="#475569" stroke-width="1.2" />
+<text x="142" y="190" font-size="10" fill="#64748b">4</text>
+<line x1="245" y1="172" x2="245" y2="178" stroke="#475569" stroke-width="1.2" />
+<text x="242" y="190" font-size="10" fill="#64748b">8</text>
+<!-- Ticks on Oy -->
+<line x1="42" y1="125" x2="48" y2="125" stroke="#475569" stroke-width="1.2" />
+<text x="28" y="129" font-size="10" fill="#64748b">2</text>
+<line x1="42" y1="75" x2="48" y2="75" stroke="#475569" stroke-width="1.2" />
+<text x="28" y="79" font-size="10" fill="#64748b">4</text>
+<!-- Feasible polygon OABC: O(45,175), A(95,175), B(145,125), C(45,75) -->
+<polygon points="45,175 95,175 145,125 45,75" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
+<!-- Subtraction Triangle ABH: A(95,175), H(145,175), B(145,125) with dashed outline -->
+<polygon points="95,175 145,175 145,125" fill="#f43f5e" fill-opacity="0.12" stroke="#f43f5e" stroke-dasharray="3,3" stroke-width="1.5" />
+<line x1="145" y1="125" x2="145" y2="175" stroke="#f43f5e" stroke-width="1.5" stroke-dasharray="3,3" />
+<!-- Right angle mark at H(145, 175) -->
+<path d="M 137 175 L 137 167 L 145 167" fill="none" stroke="#64748b" stroke-width="1" />
+<!-- Boundary line d1: x - y = 2 -->
+<line x1="75" y1="195" x2="185" y2="85" stroke="#2563eb" stroke-width="1.5" />
+<text x="175" y="80" font-size="10" font-weight="bold" fill="#2563eb">d₁: x - y = 2</text>
+<!-- Boundary line d2: x + 2y = 8 -->
+<line x1="30" y1="68" x2="265" y2="185" stroke="#7c3aed" stroke-width="1.5" />
+<text x="215" y="165" font-size="10" font-weight="bold" fill="#7c3aed">d₂: x + 2y = 8</text>
+<!-- Vertices -->
+<circle cx="45" cy="175" r="3.5" fill="#0f172a" />
+<circle cx="95" cy="175" r="3.5" fill="#0f172a" />
+<text x="86" y="166" font-size="10" font-weight="bold" fill="#0f172a">A(2;0)</text>
+<circle cx="145" cy="125" r="4" fill="#0f172a" />
+<text x="150" y="122" font-size="10" font-weight="bold" fill="#0f172a">B(4;2)</text>
+<circle cx="45" cy="75" r="3.5" fill="#0f172a" />
+<text x="50" y="72" font-size="10" font-weight="bold" fill="#0f172a">C(0;4)</text>
+<circle cx="145" cy="175" r="3" fill="#64748b" />
+<text x="148" y="168" font-size="9" font-style="italic" fill="#64748b">H(4;0)</text>
+<!-- Area Annotation badge -->
+<rect x="62" y="125" width="56" height="20" rx="4" fill="#ffffff" fill-opacity="0.88" stroke="#cbd5e1" stroke-width="0.8" />
+<text x="67" y="139" font-size="10" font-weight="bold" fill="#0284c7">S = 10</text>
+</svg>
+<div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.2: Biểu diễn miền nghiệm tứ giác OABC và phương pháp phân rã diện tích thông qua hình thang vuông OCHB</em></div>
 </div>
 
 ---
@@ -564,77 +586,64 @@ $$\left\{\begin{array}{l} x + y \le 5 \\ 2x - y \le 4 \\ x \ge 0 \\ y \ge 1 \end
   - Giá trị nhỏ nhất: $F_{\min} = 3$ đạt được tại $(x; y) = (0; 1)$.
 
 <div style="margin: 20px 0; text-align: center;">
-  <svg viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
-    <!-- Grid pattern -->
-    <defs>
-      <pattern id="grid3" width="26" height="26" patternUnits="userSpaceOnUse">
-        <path d="M 26 0 L 0 0 0 26" fill="none" stroke="#e2e8f0" stroke-width="0.8" />
-      </pattern>
-    </defs>
-    <rect width="350" height="230" fill="url(#grid3)" />
-
-    <!-- Axes: Ox at y=185, Oy at x=45 -->
-    <line x1="25" y1="185" x2="320" y2="185" stroke="#475569" stroke-width="1.5" />
-    <polygon points="320,182 328,185 320,188" fill="#475569" />
-    <text x="322" y="200" font-size="12" font-style="italic" fill="#475569">x</text>
-
-    <line x1="45" y1="215" x2="45" y2="18" stroke="#475569" stroke-width="1.5" />
-    <polygon points="42,18 45,10 48,18" fill="#475569" />
-    <text x="32" y="18" font-size="12" font-style="italic" fill="#475569">y</text>
-    <text x="32" y="200" font-size="12" font-weight="bold" fill="#475569">O</text>
-
-    <!-- Ticks on Ox -->
-    <line x1="110" y1="182" x2="110" y2="188" stroke="#475569" stroke-width="1.2" />
-    <text x="103" y="200" font-size="10" fill="#64748b">2.5</text>
-    <line x1="123" y1="182" x2="123" y2="188" stroke="#475569" stroke-width="1.2" />
-    <text x="120" y="200" font-size="10" fill="#64748b">3</text>
-    <line x1="175" y1="182" x2="175" y2="188" stroke="#475569" stroke-width="1.2" />
-    <text x="172" y="200" font-size="10" fill="#64748b">5</text>
-
-    <!-- Ticks on Oy -->
-    <line x1="42" y1="159" x2="48" y2="159" stroke="#475569" stroke-width="1.2" />
-    <text x="30" y="163" font-size="10" fill="#64748b">1</text>
-    <line x1="42" y1="133" x2="48" y2="133" stroke="#475569" stroke-width="1.2" />
-    <text x="30" y="137" font-size="10" fill="#64748b">2</text>
-    <line x1="42" y1="55" x2="48" y2="55" stroke="#475569" stroke-width="1.2" />
-    <text x="30" y="59" font-size="10" fill="#64748b">5</text>
-
-    <!-- Feasible polygon ABCD: A(45,159), B(110,159), C(123,133), D(45,55) -->
-    <polygon points="45,159 110,159 123,133 45,55" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
-
-    <!-- Boundary lines -->
-    <!-- d4: y = 1 -->
-    <line x1="25" y1="159" x2="160" y2="159" stroke="#0d9488" stroke-width="1.2" stroke-dasharray="4,2" />
-    <text x="165" y="162" font-size="10" font-weight="bold" fill="#0d9488">y = 1</text>
-
-    <!-- d1: x + y = 5 -->
-    <line x1="32" y1="42" x2="188" y2="198" stroke="#2563eb" stroke-width="1.5" />
-    <text x="180" y="180" font-size="10" font-weight="bold" fill="#2563eb">d₁: x + y = 5</text>
-
-    <!-- d2: 2x - y = 4 -->
-    <line x1="90" y1="195" x2="140" y2="95" stroke="#7c3aed" stroke-width="1.5" />
-    <text x="135" y="90" font-size="10" font-weight="bold" fill="#7c3aed">d₂: 2x - y = 4</text>
-
-    <!-- Level lines (Đường mức) -->
-    <!-- F_min = 3: 4x + 3y = 3 through A(45, 159) -->
-    <line x1="27" y1="135" x2="75" y2="199" stroke="#16a34a" stroke-width="1.8" stroke-dasharray="4,3" />
-    <!-- F_max = 18: 4x + 3y = 18 through C(123, 133) -->
-    <line x1="38" y1="20" x2="178" y2="207" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="4,3" />
-
-    <!-- Vertices -->
-    <circle cx="45" cy="159" r="4.5" fill="#16a34a" />
-    <text x="52" y="155" font-size="10" font-weight="bold" fill="#16a34a">A(0; 1) [F_min = 3]</text>
-
-    <circle cx="110" cy="159" r="3.5" fill="#0f172a" />
-    <text x="112" y="173" font-size="10" font-weight="bold" fill="#0f172a">B(2.5; 1)</text>
-
-    <circle cx="123" cy="133" r="5" fill="#dc2626" />
-    <text x="130" y="130" font-size="10" font-weight="bold" fill="#dc2626">C(3; 2) [F_max = 18]</text>
-
-    <circle cx="45" cy="55" r="3.5" fill="#0f172a" />
-    <text x="52" y="52" font-size="10" font-weight="bold" fill="#0f172a">D(0; 5) [F = 15]</text>
-  </svg>
-  <div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.3: Miền nghiệm tứ giác ABCD và các đường mức F = 4x + 3y đạt cực tiểu tại A(0;1) và cực đại tại C(3;2)</em></div>
+<svg viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<!-- Grid pattern -->
+<defs>
+<pattern id="grid3" width="26" height="26" patternUnits="userSpaceOnUse">
+<path d="M 26 0 L 0 0 0 26" fill="none" stroke="#e2e8f0" stroke-width="0.8" />
+</pattern>
+</defs>
+<rect width="350" height="230" fill="url(#grid3)" />
+<!-- Axes: Ox at y=185, Oy at x=45 -->
+<line x1="25" y1="185" x2="320" y2="185" stroke="#475569" stroke-width="1.5" />
+<polygon points="320,182 328,185 320,188" fill="#475569" />
+<text x="322" y="200" font-size="12" font-style="italic" fill="#475569">x</text>
+<line x1="45" y1="215" x2="45" y2="18" stroke="#475569" stroke-width="1.5" />
+<polygon points="42,18 45,10 48,18" fill="#475569" />
+<text x="32" y="18" font-size="12" font-style="italic" fill="#475569">y</text>
+<text x="32" y="200" font-size="12" font-weight="bold" fill="#475569">O</text>
+<!-- Ticks on Ox -->
+<line x1="110" y1="182" x2="110" y2="188" stroke="#475569" stroke-width="1.2" />
+<text x="103" y="200" font-size="10" fill="#64748b">2.5</text>
+<line x1="123" y1="182" x2="123" y2="188" stroke="#475569" stroke-width="1.2" />
+<text x="120" y="200" font-size="10" fill="#64748b">3</text>
+<line x1="175" y1="182" x2="175" y2="188" stroke="#475569" stroke-width="1.2" />
+<text x="172" y="200" font-size="10" fill="#64748b">5</text>
+<!-- Ticks on Oy -->
+<line x1="42" y1="159" x2="48" y2="159" stroke="#475569" stroke-width="1.2" />
+<text x="30" y="163" font-size="10" fill="#64748b">1</text>
+<line x1="42" y1="133" x2="48" y2="133" stroke="#475569" stroke-width="1.2" />
+<text x="30" y="137" font-size="10" fill="#64748b">2</text>
+<line x1="42" y1="55" x2="48" y2="55" stroke="#475569" stroke-width="1.2" />
+<text x="30" y="59" font-size="10" fill="#64748b">5</text>
+<!-- Feasible polygon ABCD: A(45,159), B(110,159), C(123,133), D(45,55) -->
+<polygon points="45,159 110,159 123,133 45,55" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
+<!-- Boundary lines -->
+<!-- d4: y = 1 -->
+<line x1="25" y1="159" x2="160" y2="159" stroke="#0d9488" stroke-width="1.2" stroke-dasharray="4,2" />
+<text x="165" y="162" font-size="10" font-weight="bold" fill="#0d9488">y = 1</text>
+<!-- d1: x + y = 5 -->
+<line x1="32" y1="42" x2="188" y2="198" stroke="#2563eb" stroke-width="1.5" />
+<text x="180" y="180" font-size="10" font-weight="bold" fill="#2563eb">d₁: x + y = 5</text>
+<!-- d2: 2x - y = 4 -->
+<line x1="90" y1="195" x2="140" y2="95" stroke="#7c3aed" stroke-width="1.5" />
+<text x="135" y="90" font-size="10" font-weight="bold" fill="#7c3aed">d₂: 2x - y = 4</text>
+<!-- Level lines (Đường mức) -->
+<!-- F_min = 3: 4x + 3y = 3 through A(45, 159) -->
+<line x1="27" y1="135" x2="75" y2="199" stroke="#16a34a" stroke-width="1.8" stroke-dasharray="4,3" />
+<!-- F_max = 18: 4x + 3y = 18 through C(123, 133) -->
+<line x1="38" y1="20" x2="178" y2="207" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="4,3" />
+<!-- Vertices -->
+<circle cx="45" cy="159" r="4.5" fill="#16a34a" />
+<text x="52" y="155" font-size="10" font-weight="bold" fill="#16a34a">A(0; 1) [F_min = 3]</text>
+<circle cx="110" cy="159" r="3.5" fill="#0f172a" />
+<text x="112" y="173" font-size="10" font-weight="bold" fill="#0f172a">B(2.5; 1)</text>
+<circle cx="123" cy="133" r="5" fill="#dc2626" />
+<text x="130" y="130" font-size="10" font-weight="bold" fill="#dc2626">C(3; 2) [F_max = 18]</text>
+<circle cx="45" cy="55" r="3.5" fill="#0f172a" />
+<text x="52" y="52" font-size="10" font-weight="bold" fill="#0f172a">D(0; 5) [F = 15]</text>
+</svg>
+<div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.3: Miền nghiệm tứ giác ABCD và các đường mức F = 4x + 3y đạt cực tiểu tại A(0;1) và cực đại tại C(3;2)</em></div>
 </div>
 
 ---
@@ -689,74 +698,62 @@ Hỏi xưởng may cần sản xuất bao nhiêu chiếc áo mỗi loại trong 
   Xưởng may cần sản xuất **12 chiếc áo loại I** và **12 chiếc áo loại II** mỗi ngày để đạt lợi nhuận lớn nhất là **3 240 000 đồng**.
 
 <div style="margin: 20px 0; text-align: center;">
-  <svg viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
-    <!-- Grid pattern -->
-    <defs>
-      <pattern id="grid4" width="25" height="25" patternUnits="userSpaceOnUse">
-        <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e2e8f0" stroke-width="0.8" />
-      </pattern>
-    </defs>
-    <rect width="350" height="230" fill="url(#grid4)" />
-
-    <!-- Axes: Ox at y=185, Oy at x=45 -->
-    <line x1="25" y1="185" x2="320" y2="185" stroke="#475569" stroke-width="1.5" />
-    <polygon points="320,182 328,185 320,188" fill="#475569" />
-    <text x="322" y="200" font-size="12" font-style="italic" fill="#475569">x (áo I)</text>
-
-    <line x1="45" y1="215" x2="45" y2="18" stroke="#475569" stroke-width="1.5" />
-    <polygon points="42,18 45,10 48,18" fill="#475569" />
-    <text x="24" y="18" font-size="12" font-style="italic" fill="#475569">y (áo II)</text>
-    <text x="32" y="200" font-size="12" font-weight="bold" fill="#475569">O</text>
-
-    <!-- Ticks on Ox -->
-    <line x1="105" y1="182" x2="105" y2="188" stroke="#475569" stroke-width="1.2" />
-    <text x="100" y="200" font-size="10" fill="#64748b">12</text>
-    <line x1="145" y1="182" x2="145" y2="188" stroke="#475569" stroke-width="1.2" />
-    <text x="140" y="200" font-size="10" fill="#64748b">20</text>
-    <line x1="195" y1="182" x2="195" y2="188" stroke="#475569" stroke-width="1.2" />
-    <text x="190" y="200" font-size="10" fill="#64748b">30</text>
-
-    <!-- Ticks on Oy -->
-    <line x1="42" y1="125" x2="48" y2="125" stroke="#475569" stroke-width="1.2" />
-    <text x="26" y="129" font-size="10" fill="#64748b">12</text>
-    <line x1="42" y1="85" x2="48" y2="85" stroke="#475569" stroke-width="1.2" />
-    <text x="26" y="89" font-size="10" fill="#64748b">20</text>
-    <line x1="42" y1="35" x2="48" y2="35" stroke="#475569" stroke-width="1.2" />
-    <text x="26" y="39" font-size="10" fill="#64748b">30</text>
-
-    <!-- Feasible polygon OABC: O(45,185), A(145,185), B(105,125), C(45,85) -->
-    <polygon points="45,185 145,185 105,125 45,85" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
-
-    <!-- Dashed projection for B(12; 12) -->
-    <line x1="105" y1="125" x2="105" y2="185" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,3" />
-    <line x1="45" y1="125" x2="105" y2="125" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,3" />
-
-    <!-- Boundary lines -->
-    <!-- d1: 2x + 3y = 60 (vải) -->
-    <line x1="35" y1="78" x2="210" y2="195" stroke="#2563eb" stroke-width="1.5" />
-    <text x="195" y="175" font-size="10" font-weight="bold" fill="#2563eb">2x + 3y = 60</text>
-
-    <!-- d2: 3x + 2y = 60 (giờ công) -->
-    <line x1="40" y1="27" x2="155" y2="200" stroke="#7c3aed" stroke-width="1.5" />
-    <text x="110" y="45" font-size="10" font-weight="bold" fill="#7c3aed">3x + 2y = 60</text>
-
-    <!-- Objective level line: 120x + 150y = 3240 (amber dashed) -->
-    <line x1="35" y1="69" x2="195" y2="197" stroke="#ea580c" stroke-width="1.8" stroke-dasharray="4,3" />
-
-    <!-- Vertices -->
-    <circle cx="45" cy="185" r="3.5" fill="#0f172a" />
-    <circle cx="145" cy="185" r="3.5" fill="#0f172a" />
-    <text x="140" y="175" font-size="10" font-weight="bold" fill="#0f172a">A(20; 0)</text>
-
-    <circle cx="45" cy="85" r="3.5" fill="#0f172a" />
-    <text x="50" y="80" font-size="10" font-weight="bold" fill="#0f172a">C(0; 20)</text>
-
-    <!-- Optimal vertex B -->
-    <circle cx="105" cy="125" r="5" fill="#ea580c" />
-    <rect x="112" y="112" width="138" height="22" rx="4" fill="#ffffff" fill-opacity="0.9" stroke="#ea580c" stroke-width="1" />
-    <text x="116" y="127" font-size="10" font-weight="bold" fill="#c2410c">B(12; 12) ★ Max 3.240k</text>
-  </svg>
-  <div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.4: Miền nghiệm tứ giác OABC và tiếp điểm tối ưu B(12; 12) mang lại doanh thu lợi nhuận cao nhất cho xưởng may</em></div>
+<svg viewBox="0 0 350 230" style="max-width: 480px; width: 100%; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+<!-- Grid pattern -->
+<defs>
+<pattern id="grid4" width="25" height="25" patternUnits="userSpaceOnUse">
+<path d="M 25 0 L 0 0 0 25" fill="none" stroke="#e2e8f0" stroke-width="0.8" />
+</pattern>
+</defs>
+<rect width="350" height="230" fill="url(#grid4)" />
+<!-- Axes: Ox at y=185, Oy at x=45 -->
+<line x1="25" y1="185" x2="320" y2="185" stroke="#475569" stroke-width="1.5" />
+<polygon points="320,182 328,185 320,188" fill="#475569" />
+<text x="322" y="200" font-size="12" font-style="italic" fill="#475569">x (áo I)</text>
+<line x1="45" y1="215" x2="45" y2="18" stroke="#475569" stroke-width="1.5" />
+<polygon points="42,18 45,10 48,18" fill="#475569" />
+<text x="24" y="18" font-size="12" font-style="italic" fill="#475569">y (áo II)</text>
+<text x="32" y="200" font-size="12" font-weight="bold" fill="#475569">O</text>
+<!-- Ticks on Ox -->
+<line x1="105" y1="182" x2="105" y2="188" stroke="#475569" stroke-width="1.2" />
+<text x="100" y="200" font-size="10" fill="#64748b">12</text>
+<line x1="145" y1="182" x2="145" y2="188" stroke="#475569" stroke-width="1.2" />
+<text x="140" y="200" font-size="10" fill="#64748b">20</text>
+<line x1="195" y1="182" x2="195" y2="188" stroke="#475569" stroke-width="1.2" />
+<text x="190" y="200" font-size="10" fill="#64748b">30</text>
+<!-- Ticks on Oy -->
+<line x1="42" y1="125" x2="48" y2="125" stroke="#475569" stroke-width="1.2" />
+<text x="26" y="129" font-size="10" fill="#64748b">12</text>
+<line x1="42" y1="85" x2="48" y2="85" stroke="#475569" stroke-width="1.2" />
+<text x="26" y="89" font-size="10" fill="#64748b">20</text>
+<line x1="42" y1="35" x2="48" y2="35" stroke="#475569" stroke-width="1.2" />
+<text x="26" y="39" font-size="10" fill="#64748b">30</text>
+<!-- Feasible polygon OABC: O(45,185), A(145,185), B(105,125), C(45,85) -->
+<polygon points="45,185 145,185 105,125 45,85" fill="#38bdf8" fill-opacity="0.32" stroke="#0284c7" stroke-width="2" />
+<!-- Dashed projection for B(12; 12) -->
+<line x1="105" y1="125" x2="105" y2="185" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,3" />
+<line x1="45" y1="125" x2="105" y2="125" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3,3" />
+<!-- Boundary lines -->
+<!-- d1: 2x + 3y = 60 (vải) -->
+<line x1="35" y1="78" x2="210" y2="195" stroke="#2563eb" stroke-width="1.5" />
+<text x="195" y="175" font-size="10" font-weight="bold" fill="#2563eb">2x + 3y = 60</text>
+<!-- d2: 3x + 2y = 60 (giờ công) -->
+<line x1="40" y1="27" x2="155" y2="200" stroke="#7c3aed" stroke-width="1.5" />
+<text x="110" y="45" font-size="10" font-weight="bold" fill="#7c3aed">3x + 2y = 60</text>
+<!-- Objective level line: 120x + 150y = 3240 (amber dashed) -->
+<line x1="35" y1="69" x2="195" y2="197" stroke="#ea580c" stroke-width="1.8" stroke-dasharray="4,3" />
+<!-- Vertices -->
+<circle cx="45" cy="185" r="3.5" fill="#0f172a" />
+<circle cx="145" cy="185" r="3.5" fill="#0f172a" />
+<text x="140" y="175" font-size="10" font-weight="bold" fill="#0f172a">A(20; 0)</text>
+<circle cx="45" cy="85" r="3.5" fill="#0f172a" />
+<text x="50" y="80" font-size="10" font-weight="bold" fill="#0f172a">C(0; 20)</text>
+<!-- Optimal vertex B -->
+<circle cx="105" cy="125" r="5" fill="#ea580c" />
+<rect x="112" y="112" width="138" height="22" rx="4" fill="#ffffff" fill-opacity="0.9" stroke="#ea580c" stroke-width="1" />
+<text x="116" y="127" font-size="10" font-weight="bold" fill="#c2410c">B(12; 12) ★ Max 3.240k</text>
+</svg>
+<div style="font-size: 12px; color: #64748b; margin-top: 6px;"><em>Hình 4.4: Miền nghiệm tứ giác OABC và tiếp điểm tối ưu B(12; 12) mang lại doanh thu lợi nhuận cao nhất cho xưởng may</em></div>
 </div>
 
 ---
