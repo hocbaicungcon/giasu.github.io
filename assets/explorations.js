@@ -1,6 +1,6 @@
 import './probability-sort.js';
 import './triangle-angles.js';
-import {gcd,divisors,quadratic,tossCoins,rationalNumber,linearFunction,equationBalance,derivativeTangent,pieChartModel,sampleDataItems} from './exploration-models.js';
+import {gcd,divisors,quadratic,tossCoins,rationalNumber,linearFunction,equationBalance,derivativeTangent,pieChartModel,sampleDataItems,lineChartModel,movingAverage} from './exploration-models.js';
 const fmt=n=>Number(n.toFixed(2)).toLocaleString('vi');
 const svg=content=>`<svg viewBox="0 0 560 320" role="img" aria-label="Đồ thị thí nghiệm">${content}</svg>`;
 const button=(label,action)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',action);return b;};
@@ -188,6 +188,193 @@ document.querySelectorAll('[data-exploration]').forEach(root=>{
   };
   stage.append(chart,controls,presets,feedback,result);
   input.addEventListener('input',update);update();
+ }else if(root.dataset.exploration==='pie-chart'){
+  const chart=document.createElement('div');chart.className='exploration-chart';
+  const colors=['#3b82f6','#10b981','#f59e0b','#8b5cf6'];
+  const labels=['Nhóm A','Nhóm B','Nhóm C','Nhóm D'];
+  let values=[40,25,20,15];
+  const controls=document.createElement('div');controls.className='exploration-controls';
+  const inputs=values.map((v,i)=>{
+   const label=document.createElement('label');label.textContent=`${labels[i]}: `;
+   const out=document.createElement('output');out.textContent=v;
+   const inp=document.createElement('input');inp.type='range';inp.min=5;inp.max=100;inp.step=5;inp.value=v;
+   inp.setAttribute('aria-label',labels[i]);
+   label.append(out,inp);controls.append(label);
+   inp.addEventListener('input',()=>{values[i]=+inp.value;out.textContent=inp.value;update();});
+   return {inp,out};
+  });
+  const presets=document.createElement('div');presets.className='exploration-choices';
+  for(const [pName,vals] of [
+   ['Cơ cấu năng lượng',[45,25,20,10]],
+   ['Chi tiêu gia đình',[40,30,15,15]],
+   ['Sách thư viện',[35,25,25,15]],
+   ['Thị phần di động',[50,25,15,10]]
+  ]){
+   presets.append(button(pName,()=>{
+    values=[...vals];
+    values.forEach((v,i)=>{inputs[i].inp.value=v;inputs[i].out.textContent=v;});
+    update();
+   }));
+  }
+  const result=document.createElement('p');result.className='exploration-result';
+  const update=()=>{
+   const slicesData=values.map((val,i)=>({label:labels[i],value:val,color:colors[i]}));
+   const model=pieChartModel(slicesData);
+   const total=values.reduce((s,v)=>s+v,0);
+   const cx=180,cy=160,r=110;
+   const rad=deg=>deg*Math.PI/180;
+   const paths=model.map(s=>{
+    if(s.angleDeg<=0)return '';
+    if(s.angleDeg>=359.9)return `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${s.color}"/>`;
+    const x1=cx+r*Math.sin(rad(s.startAngle));
+    const y1=cy-r*Math.cos(rad(s.startAngle));
+    const x2=cx+r*Math.sin(rad(s.endAngle));
+    const y2=cy-r*Math.cos(rad(s.endAngle));
+    const large=s.angleDeg>180?1:0;
+    return `<path d="M ${cx} ${cy} L ${x1.toFixed(1)} ${y1.toFixed(1)} A ${r} ${r} 0 ${large} 1 ${x2.toFixed(1)} ${y2.toFixed(1)} Z" fill="${s.color}" stroke="#fff" stroke-width="2"/>`;
+   }).join('');
+   const legends=model.map((s,i)=>`
+    <g transform="translate(340, ${50+i*55})">
+     <rect x="0" y="0" width="18" height="18" rx="4" fill="${s.color}"/>
+     <text x="26" y="14" font-size="14" font-weight="700">${s.label}: ${s.percent}%</text>
+     <text x="26" y="32" font-size="12" fill="#64748b">Góc: ${s.angleDeg}° | Giá trị: ${s.value}</text>
+    </g>
+   `).join('');
+   chart.innerHTML=svg(`
+    <g>${paths}</g>
+    <circle cx="${cx}" cy="${cy}" r="38" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="${cx}" y="${cy-4}" text-anchor="middle" font-size="12" fill="#64748b">TỔNG</text>
+    <text x="${cx}" y="${cy+14}" text-anchor="middle" font-size="16" font-weight="700">${total}</text>
+    <g>${legends}</g>
+   `);
+   feedback.textContent=`Công thức chuyển đổi: Góc ở tâm α = (p / 100) × 360° = p × 3.6°. Tổng số đo 4 góc luôn bằng đúng 360°.`;
+   result.textContent=model.map(s=>`• ${s.label}: Chiếm ${s.percent}% tổng thể (tương ứng góc ở tâm ${s.angleDeg}°)`).join(' | ');
+  };
+  stage.append(chart,presets,controls,feedback,result);update();
+ }else if(root.dataset.exploration==='data-classification'){
+  let currentIndex=0;
+  const card=document.createElement('div');card.className='exploration-chart';
+  const choices=document.createElement('div');choices.className='exploration-choices';
+  const actions=document.createElement('div');actions.className='exploration-choices';
+  actions.append(button('Bài tập tiếp theo ➡',()=>{currentIndex=(currentIndex+1)%sampleDataItems.length;update();}));
+  const result=document.createElement('p');result.className='exploration-result';
+  const update=()=>{
+   const item=sampleDataItems[currentIndex];
+   card.innerHTML=`
+    <div style="background:var(--bg-secondary,#f8fafc);border:2px solid var(--border-color,#e2e8f0);border-radius:12px;padding:24px;text-align:center;max-width:500px;margin:0 auto;">
+     <span style="font-size:12px;font-weight:700;color:#3b82f6;text-transform:uppercase;letter-spacing:1px;">Thử thách phân loại (${currentIndex+1}/${sampleDataItems.length})</span>
+     <h3 style="margin:12px 0;font-size:20px;color:var(--text-primary,#0f172a);">${item.name}</h3>
+     <p style="margin:0 0 16px;color:#64748b;font-size:14px;">Ví dụ thực tế: <em>${item.example}</em></p>
+     <div style="font-size:13px;color:#475569;">Hãy chọn xem dữ liệu trên thuộc loại nào dưới đây:</div>
+    </div>
+   `;
+   choices.innerHTML='';
+   const options=[
+    {label:'Định tính - Không thứ tự (Nominal)',k:'qualitative',s:'nominal'},
+    {label:'Định tính - Có thứ tự (Ordinal)',k:'qualitative',s:'ordinal'},
+    {label:'Định lượng - Rời rạc (Discrete)',k:'quantitative',s:'discrete'},
+    {label:'Định lượng - Liên tục (Continuous)',k:'quantitative',s:'continuous'}
+   ];
+   options.forEach(opt=>{
+    choices.append(button(opt.label,()=>{
+     if(opt.k===item.kind&&opt.s===item.subtype){
+      feedback.style.color='#047857';
+      feedback.textContent=`🎉 Chính xác! "${item.name}" là dữ liệu ${opt.k==='quantitative'?'ĐỊNH LƯỢNG (số)':'ĐỊNH TÍNH (chữ)'} dạng ${opt.s}.`;
+      result.textContent=opt.k==='quantitative'?(opt.s==='discrete'?'Dữ liệu nhận giá trị là các số nguyên/đếm được riêng biệt.':'Dữ liệu nhận giá trị trong một khoảng số thực đo lường liên tục.'):(opt.s==='ordinal'?'Dữ liệu bằng chữ nhưng có thể so sánh thứ bậc cao thấp.':'Dữ liệu bằng chữ, chỉ dùng định danh phân loại không có thứ tự hơn kém.');
+     }else{
+      feedback.style.color='#b91c1c';
+      feedback.textContent=`Chưa chính xác. Hãy suy nghĩ: Dữ liệu này ghi bằng số hay bằng chữ? Có đo lường hay đếm được không? Thử chọn lại nhé!`;
+      result.textContent='';
+     }
+    }));
+   });
+   feedback.textContent='Chọn 1 trong 4 loại trên để kiểm tra câu trả lời.';feedback.style.color='';
+   result.textContent='';
+  };
+  stage.append(card,choices,actions,feedback,result);update();
+ }else if(root.dataset.exploration==='line-chart'){
+  const chart=document.createElement('div');chart.className='exploration-chart';
+  const months=['T1','T2','T3','T4','T5','T6'];
+  let values=[20,35,30,55,70,65];
+  let showMA=false;
+  const controls=document.createElement('div');controls.className='exploration-controls';
+  const inputs=values.map((v,i)=>{
+   const label=document.createElement('label');label.textContent=`${months[i]}: `;
+   const out=document.createElement('output');out.textContent=v;
+   const inp=document.createElement('input');inp.type='range';inp.min=0;inp.max=100;inp.step=5;inp.value=v;
+   inp.setAttribute('aria-label',months[i]);label.append(out,inp);controls.append(label);
+   inp.addEventListener('input',()=>{values[i]=+inp.value;out.textContent=inp.value;update();});
+   return {inp,out};
+  });
+  const presets=document.createElement('div');presets.className='exploration-choices';
+  for(const [pName,vals] of [
+   ['Tăng trưởng đều',[15,28,45,60,75,90]],
+   ['Biến động theo mùa',[25,60,85,90,50,30]],
+   ['Khủng hoảng & Hồi phục',[70,40,15,25,55,80]],
+   ['Đi ngang ổn định',[50,52,48,51,49,50]]
+  ]){
+   presets.append(button(pName,()=>{
+    values=[...vals];
+    values.forEach((v,i)=>{inputs[i].inp.value=v;inputs[i].out.textContent=v;});
+    update();
+   }));
+  }
+  const maBtn=button('Hiện đường trung bình động (MA3)',()=>{
+   showMA=!showMA;
+   maBtn.textContent=showMA?'Ẩn đường trung bình động (MA3)':'Hiện đường trung bình động (MA3)';
+   update();
+  });
+  presets.append(maBtn);
+  const result=document.createElement('p');result.className='exploration-result';
+  const update=()=>{
+   const pts=values.map((val,i)=>({time:months[i],value:val}));
+   const model=lineChartModel(pts);
+   const ma=movingAverage(values,3);
+   const originX=70,originY=250,plotW=430,plotH=200;
+   const stepX=plotW/(months.length-1);
+   const map=(idx,val)=>[originX+idx*stepX,originY-(val/100)*plotH];
+   const coords=values.map((val,i)=>map(i,val));
+   const linePath=coords.map((c,i)=>`${i===0?'M':'L'}${c[0].toFixed(1)} ${c[1].toFixed(1)}`).join(' ');
+   const gridLines=[0,25,50,75,100].map(yVal=>{
+    const y=originY-(yVal/100)*plotH;
+    return `<line x1="${originX}" y1="${y}" x2="${originX+plotW}" y2="${y}" stroke="#e2e8f0" stroke-dasharray="3,3"/><text x="${originX-12}" y="${y+4}" font-size="11" fill="#64748b" text-anchor="end">${yVal}</text>`;
+   }).join('');
+   const xLabels=months.map((m,i)=>{
+    const x=originX+i*stepX;
+    return `<text x="${x}" y="${originY+22}" font-size="12" fill="#475569" text-anchor="middle" font-weight="600">${m}</text>`;
+   }).join('');
+   const dots=coords.map((c,i)=>`
+    <circle cx="${c[0].toFixed(1)}" cy="${c[1].toFixed(1)}" r="5" fill="#2563eb" stroke="#fff" stroke-width="2"/>
+    <text x="${c[0].toFixed(1)}" y="${(c[1]-10).toFixed(1)}" font-size="12" font-weight="700" fill="#1e40af" text-anchor="middle">${values[i]}</text>
+   `).join('');
+   let maPathSvg='';
+   if(showMA){
+    const maCoords=[];
+    ma.forEach((v,i)=>{if(v!==null)maCoords.push(map(i,v));});
+    if(maCoords.length>1){
+     const maPath=maCoords.map((c,i)=>`${i===0?'M':'L'}${c[0].toFixed(1)} ${c[1].toFixed(1)}`).join(' ');
+     maPathSvg=`<path d="${maPath}" fill="none" stroke="#e11d48" stroke-width="2.5" stroke-dasharray="6,4"/><text x="490" y="45" font-size="12" fill="#e11d48" font-weight="700">MA(3)</text>`;
+    }
+   }
+   chart.innerHTML=svg(`
+    ${gridLines}
+    <line x1="${originX}" y1="${originY}" x2="${originX+plotW+15}" y2="${originY}" stroke="#475569" stroke-width="2"/>
+    <line x1="${originX}" y1="${originY}" x2="${originX}" y2="${originY-plotH-15}" stroke="#475569" stroke-width="2"/>
+    <polygon points="${originX+plotW+20},${originY} ${originX+plotW+12},${originY-4} ${originX+plotW+12},${originY+4}" fill="#475569"/>
+    <polygon points="${originX},${originY-plotH-20} ${originX-4},${originY-plotH-12} ${originX+4},${originY-plotH-12}" fill="#475569"/>
+    <text x="${originX+plotW+22}" y="${originY+4}" font-size="11" fill="#475569">Thời gian</text>
+    <text x="${originX}" y="${originY-plotH-25}" font-size="11" fill="#475569" text-anchor="middle">Giá trị</text>
+    ${xLabels}
+    <path d="${linePath}" fill="none" stroke="#2563eb" stroke-width="3"/>
+    ${dots}
+    ${maPathSvg}
+   `);
+   const incText=model.steepestInc?`Tăng nhanh nhất từ ${model.steepestInc.from} đến ${model.steepestInc.to} (+${model.steepestInc.diff})`:'Không có giai đoạn tăng';
+   const decText=model.steepestDec?`Giảm mạnh nhất từ ${model.steepestDec.from} đến ${model.steepestDec.to} (${model.steepestDec.diff})`:'Không có giai đoạn giảm';
+   feedback.textContent=`Phân tích xu hướng: Giá trị cao nhất = ${model.max}, thấp nhất = ${model.min}, trung bình = ${model.avg}. ${incText}. ${decText}.`;
+   result.textContent=model.deltas.map(d=>`${d.from}→${d.to}: ${d.trend} (${d.diff>=0?'+'+d.diff:d.diff}${d.pct!==null?' | '+d.pct+'%':''})`).join('  •  ');
+  };
+  stage.append(chart,presets,controls,feedback,result);update();
  }
 });
 
