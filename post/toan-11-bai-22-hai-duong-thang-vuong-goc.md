@@ -195,7 +195,6 @@ Dưới đây là mô hình không gian của hình chóp tứ giác đều $S.A
       <g id="gVertices"></g>
       <g id="gLabels"></g>
     </svg>
-
     <div style="margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.85em; text-align: left; background: #ffffff; padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0;">
       <div>
         <label style="font-weight: bold; color: #334155;">Góc xoay ngang (Yaw): <span id="valYaw">35°</span></label>

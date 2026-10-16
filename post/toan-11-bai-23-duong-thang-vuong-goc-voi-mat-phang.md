@@ -193,7 +193,6 @@ Hãy **kéo chuột hoặc ngón tay để xoay khối hình 3D**, và bấm cá
       <g id="gPyramidVertices"></g>
       <g id="gPyramidLabels"></g>
     </svg>
-
     <div style="margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.85em; text-align: left; background: #ffffff; padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0;">
       <div>
         <label style="font-weight: bold; color: #334155;">Góc xoay ngang (Yaw): <span id="valPyramidYaw">40°</span></label>

@@ -129,34 +129,30 @@ $$P(A \cup B \cup C) = P(A) + P(B) + P(C) - [P(AB) + P(BC) + P(CA)] + P(ABC)$$
 Hãy điều chỉnh các thanh trượt $P(A)$, $P(B)$ và $P(AB)$ bên dưới để thấy ngay giá trị của $P(A \cup B)$ và kiểm tra các giới hạn xác suất:
 
 <div id="prob-calc-app" style="margin: 24px 0; padding: 22px; background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-  <h4 style="margin-top: 0; color: var(--primary-color, #2563eb); text-align: center;">BỘ TÍNH CÔNG THỨC CỘNG XÁC SUẤT TỰ ĐỘNG</h4>
-  
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 18px 0;">
-    <div style="background: #f0fdf4; padding: 12px; border-radius: 8px; border: 1px solid #bbf7d0;">
-      <label style="font-weight: 600; color: #166534; display: block; margin-bottom: 6px;">Xác suất P(A): <span id="val-pa" style="font-size: 1.1em; color: #15803d;">0.60</span></label>
-      <input type="range" id="range-pa" min="0" max="1" step="0.05" value="0.60" style="width: 100%;">
-    </div>
-    
-    <div style="background: #eff6ff; padding: 12px; border-radius: 8px; border: 1px solid #bfdbfe;">
-      <label style="font-weight: 600; color: #1e40af; display: block; margin-bottom: 6px;">Xác suất P(B): <span id="val-pb" style="font-size: 1.1em; color: #1d4ed8;">0.50</span></label>
-      <input type="range" id="range-pb" min="0" max="1" step="0.05" value="0.50" style="width: 100%;">
-    </div>
-
-    <div style="background: #fefce8; padding: 12px; border-radius: 8px; border: 1px solid #fef08a;">
-      <label style="font-weight: 600; color: #854d0e; display: block; margin-bottom: 6px;">Phần giao P(AB): <span id="val-pab" style="font-size: 1.1em; color: #a16207;">0.25</span></label>
-      <input type="range" id="range-pab" min="0" max="0.50" step="0.05" value="0.25" style="width: 100%;">
-    </div>
-  </div>
-
-  <div style="background: #f8fafc; border-radius: 8px; padding: 16px; border: 1px solid #e2e8f0; font-family: monospace; font-size: 1.05em; line-height: 1.8;">
-    <div style="color: #334155;"><strong>Công thức tính:</strong> P(A ∪ B) = P(A) + P(B) - P(AB)</div>
-    <div id="calc-step" style="color: #2563eb; font-weight: bold; font-size: 1.15em; margin: 6px 0;">P(A ∪ B) = 0.60 + 0.50 - 0.25 = 0.85</div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 10px; font-size: 0.9em; font-family: sans-serif;">
-      <span style="background: #e2e8f0; padding: 4px 8px; border-radius: 4px;">P(chỉ A): <strong id="val-only-a">0.35</strong></span>
-      <span style="background: #e2e8f0; padding: 4px 8px; border-radius: 4px;">P(chỉ B): <strong id="val-only-b">0.25</strong></span>
-      <span style="background: #e2e8f0; padding: 4px 8px; border-radius: 4px;">P(cả hai không xảy ra): <strong id="val-neither">0.15</strong></span>
-    </div>
-  </div>
+<h4 style="margin-top: 0; color: var(--primary-color, #2563eb); text-align: center;">BỘ TÍNH CÔNG THỨC CỘNG XÁC SUẤT TỰ ĐỘNG</h4>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 18px 0;">
+<div style="background: #f0fdf4; padding: 12px; border-radius: 8px; border: 1px solid #bbf7d0;">
+<label style="font-weight: 600; color: #166534; display: block; margin-bottom: 6px;">Xác suất P(A): <span id="val-pa" style="font-size: 1.1em; color: #15803d;">0.60</span></label>
+<input type="range" id="range-pa" min="0" max="1" step="0.05" value="0.60" style="width: 100%;">
+</div>
+<div style="background: #eff6ff; padding: 12px; border-radius: 8px; border: 1px solid #bfdbfe;">
+<label style="font-weight: 600; color: #1e40af; display: block; margin-bottom: 6px;">Xác suất P(B): <span id="val-pb" style="font-size: 1.1em; color: #1d4ed8;">0.50</span></label>
+<input type="range" id="range-pb" min="0" max="1" step="0.05" value="0.50" style="width: 100%;">
+</div>
+<div style="background: #fefce8; padding: 12px; border-radius: 8px; border: 1px solid #fef08a;">
+<label style="font-weight: 600; color: #854d0e; display: block; margin-bottom: 6px;">Phần giao P(AB): <span id="val-pab" style="font-size: 1.1em; color: #a16207;">0.25</span></label>
+<input type="range" id="range-pab" min="0" max="0.50" step="0.05" value="0.25" style="width: 100%;">
+</div>
+</div>
+<div style="background: #f8fafc; border-radius: 8px; padding: 16px; border: 1px solid #e2e8f0; font-family: monospace; font-size: 1.05em; line-height: 1.8;">
+<div style="color: #334155;"><strong>Công thức tính:</strong> P(A ∪ B) = P(A) + P(B) - P(AB)</div>
+<div id="calc-step" style="color: #2563eb; font-weight: bold; font-size: 1.15em; margin: 6px 0;">P(A ∪ B) = 0.60 + 0.50 - 0.25 = 0.85</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 10px; font-size: 0.9em; font-family: sans-serif;">
+<span style="background: #e2e8f0; padding: 4px 8px; border-radius: 4px;">P(chỉ A): <strong id="val-only-a">0.35</strong></span>
+<span style="background: #e2e8f0; padding: 4px 8px; border-radius: 4px;">P(chỉ B): <strong id="val-only-b">0.25</strong></span>
+<span style="background: #e2e8f0; padding: 4px 8px; border-radius: 4px;">P(cả hai không xảy ra): <strong id="val-neither">0.15</strong></span>
+</div>
+</div>
 </div>
 
 <script>

@@ -165,105 +165,129 @@ $$\mathbf{y - y_0 = f'(x_0)(x - x_0)} \iff \mathbf{y = f'(x_0)(x - x_0) + y_0}$$
 Hãy kéo thanh trượt $\Delta x$ bên dưới từ giá trị lớn về gần $0$. Quan sát điểm $M$ trượt trên parabol $y = x^2$ về phía $M_0(1; 1)$, đường cát tuyến (nét đứt) xoay dần và áp sát hoàn toàn vào đường tiếp tuyến (nét liền màu đỏ có hệ số góc $k = 2$):
 
 <div id="tangent-app" style="margin: 24px 0; padding: 22px; background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
-  <h4 style="margin-top: 0; color: var(--primary-color, #2563eb);">MÔ PHỎNG GIỚI HẠN CÁT TUYẾN TRỞ THÀNH TIẾP TUYẾN TRÊN ĐỒ THỊ y = x²</h4>
-  
-  <div style="max-width: 480px; margin: 0 auto 16px auto; background: #f8fafc; padding: 12px; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <label style="font-weight: 600; color: #1e293b; display: block; margin-bottom: 6px;">
-      Khoảng cách số gia Δx: <span id="val-dx" style="font-size: 1.15em; color: #2563eb;">1.00</span> (Điểm M có hoành độ x = <span id="val-x">2.00</span>)
-    </label>
-    <input type="range" id="range-dx" min="0.05" max="1.5" step="0.05" value="1.00" style="width: 100%;">
-  </div>
-
-  <div style="display: flex; justify-content: center;">
-    <svg id="tangent-svg" viewBox="0 0 440 320" width="100%" style="max-width: 440px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
-      <!-- Grid & Axes -->
-      <line x1="40" y1="280" x2="420" y2="280" stroke="#94a3b8" stroke-width="1.5"/>
-      <line x1="80" y1="20" x2="80" y2="300" stroke="#94a3b8" stroke-width="1.5"/>
-      <text x="410" y="270" font-family="sans-serif" font-size="12" fill="#64748b">x</text>
-      <text x="90" y="30" font-family="sans-serif" font-size="12" fill="#64748b">y</text>
-      
-      <!-- Curve y = 0.5 * x^2 for display scale: origin (80, 280), scale 70px per unit -->
-      <!-- At x=1 (px = 80+70=150, py = 280-70=210) -->
-      <!-- Let plot y = 0.4*x^2: x from 0 to 3 -->
-      <!-- x=0 => (80, 280). x=1 => (150, 240). x=2 => (220, 120). x=2.5 => (255, 30) -->
-      <path d="M 80 280 Q 150 280 255 30" fill="none" stroke="#3b82f6" stroke-width="3"/>
-      <text x="260" y="45" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb">y = x²</text>
-      
-      <!-- Tangent line at x0=1: slope is 2. Red line -->
-      <line x1="80" y1="310" x2="220" y2="30" stroke="#ef4444" stroke-width="2"/>
-      
-      <!-- Secant line dynamic (dashed) -->
-      <line id="secant-line" x1="50" y1="270" x2="300" y2="10" stroke="#8b5cf6" stroke-width="2.5" stroke-dasharray="6,4"/>
-
-      <!-- Point M0 (1, 1) -->
-      <circle cx="150" cy="210" r="5" fill="#ef4444"/>
-      <text x="125" y="205" font-family="sans-serif" font-size="12" font-weight="bold" fill="#b91c1c">M₀(1; 1)</text>
-
-      <!-- Point M dynamic -->
-      <circle id="point-m" cx="220" cy="120" r="6" fill="#8b5cf6"/>
-      <text id="label-m" x="230" y="125" font-family="sans-serif" font-size="12" font-weight="bold" fill="#6d28d9">M</text>
-    </svg>
-  </div>
-
-  <div style="margin-top: 14px; padding: 12px; background: #f1f5f9; border-radius: 8px; font-family: monospace; font-size: 1em; text-align: left;">
-    <div>• Hệ số góc cát tuyến: <strong id="slope-sec" style="color: #6d28d9;">k_sec = Δy/Δx = 3.00</strong></div>
-    <div>• Hệ số góc tiếp tuyến thực sự: <strong style="color: #b91c1c;">k_tan = f'(1) = 2.00</strong></div>
-    <div style="color: #475569; font-size: 0.9em; margin-top: 4px;">Khi Δx → 0, điểm M tiến về M₀, tỉ số Δy/Δx hội tụ chính xác về giá trị đạo hàm f'(1) = 2.</div>
-  </div>
+<h4 style="margin-top: 0; color: var(--primary-color, #2563eb);">MÔ PHỎNG GIỚI HẠN CÁT TUYẾN TRỞ THÀNH TIẾP TUYẾN TRÊN ĐỒ THỊ y = x²</h4>
+<div style="max-width: 520px; margin: 0 auto 16px auto; background: #f8fafc; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
+<label style="font-weight: 600; color: #1e293b; display: block; margin-bottom: 8px;">
+Kéo thanh trượt số gia Δx: <span id="val-dx" style="font-size: 1.15em; color: #2563eb; font-weight: bold;">1.00</span>
+(Điểm M có tọa độ: <span id="val-coord-m" style="color: #7c3aed; font-weight: bold;">(2.00; 4.00)</span>)
+</label>
+<input type="range" id="range-dx" min="0.05" max="1.15" step="0.05" value="1.00" style="width: 100%;">
+</div>
+<div style="display: flex; justify-content: center; overflow-x: auto;">
+<svg id="tangent-svg" viewBox="0 0 480 340" width="100%" style="max-width: 480px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+<!-- Coordinate Axes -->
+<line x1="30" y1="290" x2="460" y2="290" stroke="#64748b" stroke-width="1.5"/>
+<line x1="70" y1="330" x2="70" y2="15" stroke="#64748b" stroke-width="1.5"/>
+<polygon points="460,287 468,290 460,293" fill="#64748b"/>
+<polygon points="67,15 70,7 73,15" fill="#64748b"/>
+<text x="455" y="280" font-family="sans-serif" font-size="12" font-weight="bold" fill="#475569">x</text>
+<text x="80" y="20" font-family="sans-serif" font-size="12" font-weight="bold" fill="#475569">y</text>
+<text x="56" y="304" font-family="sans-serif" font-size="12" fill="#64748b">O</text>
+<!-- Ticks on x-axis -->
+<line x1="210" y1="287" x2="210" y2="293" stroke="#64748b" stroke-width="1.5"/>
+<text x="207" y="306" font-family="sans-serif" font-size="11" fill="#64748b">1</text>
+<line x1="350" y1="287" x2="350" y2="293" stroke="#64748b" stroke-width="1.5"/>
+<text x="347" y="306" font-family="sans-serif" font-size="11" fill="#64748b">2</text>
+<!-- Ticks on y-axis -->
+<line x1="67" y1="235" x2="73" y2="235" stroke="#64748b" stroke-width="1.5"/>
+<text x="54" y="239" font-family="sans-serif" font-size="11" fill="#64748b">1</text>
+<line x1="67" y1="70" x2="73" y2="70" stroke="#64748b" stroke-width="1.5"/>
+<text x="54" y="74" font-family="sans-serif" font-size="11" fill="#64748b">4</text>
+<!-- Curve y = x^2 -->
+<path d="M 70,290 L 98,287.8 L 126,281.2 L 154,270.2 L 182,254.8 L 210,235 L 238,210.8 L 266,182.2 L 294,149.2 L 322,111.8 L 350,70 L 378,23.8" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="385" y="35" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2563eb">y = x²</text>
+<!-- Tangent Line at x0=1 (passes through M0(210, 235), y = 2x - 1) -->
+<line x1="98" y1="323" x2="392" y2="92" stroke="#dc2626" stroke-width="2.5"/>
+<text x="396" y="102" font-family="sans-serif" font-size="11" font-weight="bold" fill="#dc2626">Tiếp tuyến (k=2)</text>
+<!-- Projections for M0(1; 1) -->
+<line x1="210" y1="290" x2="210" y2="235" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3"/>
+<line x1="70" y1="235" x2="210" y2="235" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3"/>
+<!-- Dynamic Secant Line -->
+<line id="secant-line" x1="112" y1="305" x2="370" y2="40" stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="6,4"/>
+<!-- Dynamic slope triangle M0 - H - M -->
+<line id="tri-dx" x1="210" y1="235" x2="350" y2="235" stroke="#059669" stroke-width="1.8" stroke-dasharray="3,3"/>
+<line id="tri-dy" x1="350" y1="235" x2="350" y2="70" stroke="#059669" stroke-width="1.8" stroke-dasharray="3,3"/>
+<!-- Point M0(1; 1) -->
+<circle cx="210" cy="235" r="5" fill="#dc2626"/>
+<text x="175" y="230" font-family="sans-serif" font-size="12" font-weight="bold" fill="#b91c1c">M₀(1; 1)</text>
+<!-- Dynamic Point M -->
+<circle id="point-m" cx="350" cy="70" r="6" fill="#7c3aed"/>
+<text id="label-m" x="358" y="70" font-family="sans-serif" font-size="12" font-weight="bold" fill="#6d28d9">M(2; 4)</text>
+</svg>
+</div>
+<div style="margin-top: 14px; padding: 14px; background: #f1f5f9; border-radius: 8px; font-family: monospace; font-size: 1.05em; text-align: left; line-height: 1.8;">
+<div>• Tỉ số số gia: <strong>Δy / Δx</strong> = (<span id="calc-dy">3.00</span>) / (<span id="calc-dx">1.00</span>) = <strong id="slope-sec" style="color: #7c3aed; font-size: 1.15em;">3.00</strong></div>
+<div>• Hệ số góc tiếp tuyến thực sự: <strong style="color: #dc2626; font-size: 1.15em;">k = f'(1) = 2.00</strong></div>
+<div style="color: #334155; font-size: 0.9em; margin-top: 4px; font-family: sans-serif;">
+💡 <em>Nhận xét:</em> Khi kéo <strong>Δx → 0</strong>, tam giác số gia nhỏ dần, điểm $M$ tiến sát về $M_0$, cát tuyến xoay dần và <strong>trùng khít với tiếp tuyến màu đỏ</strong>. Tỉ số $\frac{\Delta y}{\Delta x}$ hội tụ đúng về $2$!
+</div>
+</div>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const rDx = document.getElementById('range-dx');
   const valDx = document.getElementById('val-dx');
-  const valX = document.getElementById('val-x');
+  const valCoordM = document.getElementById('val-coord-m');
   const ptM = document.getElementById('point-m');
   const lblM = document.getElementById('label-m');
   const secLine = document.getElementById('secant-line');
   const slopeSec = document.getElementById('slope-sec');
+  const calcDx = document.getElementById('calc-dx');
+  const calcDy = document.getElementById('calc-dy');
+  const triDx = document.getElementById('tri-dx');
+  const triDy = document.getElementById('tri-dy');
 
   if (!rDx || !ptM || !secLine) return;
 
+  function toSvgX(x) { return 70 + x * 140; }
+  function toSvgY(y) { return 290 - y * 55; }
+
   function update() {
     const dx = parseFloat(rDx.value);
-    const x0 = 1;
+    const x0 = 1, y0 = 1;
     const x = x0 + dx;
-    const y0 = 1;
     const y = x * x;
+    const dy = y - y0;
+    const kMath = dy / dx;
 
     valDx.textContent = dx.toFixed(2);
-    valX.textContent = x.toFixed(2);
+    valCoordM.textContent = `(${x.toFixed(2)}; ${y.toFixed(2)})`;
+    calcDx.textContent = dx.toFixed(2);
+    calcDy.textContent = dy.toFixed(2);
+    slopeSec.textContent = kMath.toFixed(2);
 
-    // SVG coordinates: Origin (80, 280). Scale 70px per unit in x, 70px per unit in y.
-    // x0=1 => cx0 = 80 + 70 = 150. cy0 = 280 - 70 = 210.
-    const cx0 = 150, cy0 = 210;
-    const cxM = 80 + x * 70;
-    const cyM = 280 - y * 70;
+    const xmSvg = toSvgX(x);
+    const ymSvg = toSvgY(y);
 
-    ptM.setAttribute('cx', cxM);
-    ptM.setAttribute('cy', cyM);
-    lblM.setAttribute('x', cxM + 8);
-    lblM.setAttribute('y', cyM);
+    ptM.setAttribute('cx', xmSvg);
+    ptM.setAttribute('cy', ymSvg);
+    lblM.setAttribute('x', xmSvg + 8);
+    lblM.setAttribute('y', ymSvg + 2);
+    lblM.textContent = `M(${x.toFixed(1)}; ${y.toFixed(1)})`;
 
-    // Secant slope in math:
-    const kMath = (y - y0) / dx;
-    slopeSec.textContent = `k_sec = Δy/Δx = ${kMath.toFixed(2)}`;
+    // Triangle components: M0 is at (toSvgX(1), toSvgY(1)) = (210, 235)
+    // H is at (xmSvg, 235)
+    triDx.setAttribute('x1', 210);
+    triDx.setAttribute('y1', 235);
+    triDx.setAttribute('x2', xmSvg);
+    triDx.setAttribute('y2', 235);
 
-    // Draw secant line across the canvas
-    const xStart = 0.4;
+    triDy.setAttribute('x1', xmSvg);
+    triDy.setAttribute('y1', 235);
+    triDy.setAttribute('x2', xmSvg);
+    triDy.setAttribute('y2', ymSvg);
+
+    // Secant line extended
+    const xStart = 0.3;
     const yStart = y0 + kMath * (xStart - x0);
-    const xEnd = 2.4;
+    const xEnd = Math.min(2.35, x0 + 4.8 / kMath);
     const yEnd = y0 + kMath * (xEnd - x0);
 
-    const sx1 = 80 + xStart * 70;
-    const sy1 = 280 - yStart * 70;
-    const sx2 = 80 + xEnd * 70;
-    const sy2 = 280 - yEnd * 70;
-
-    secLine.setAttribute('x1', sx1);
-    secLine.setAttribute('y1', sy1);
-    secLine.setAttribute('x2', sx2);
-    secLine.setAttribute('y2', sy2);
+    secLine.setAttribute('x1', toSvgX(xStart));
+    secLine.setAttribute('y1', toSvgY(yStart));
+    secLine.setAttribute('x2', toSvgX(xEnd));
+    secLine.setAttribute('y2', toSvgY(yEnd));
   }
 
   rDx.addEventListener('input', update);
