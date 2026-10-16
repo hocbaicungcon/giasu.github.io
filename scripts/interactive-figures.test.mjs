@@ -243,6 +243,13 @@ test('moving a vertex synchronizes labels, angle arcs, right angles, and tick ma
   // Verify right-angle rect at H moved with H (orig rect was 256, 216; dx = -14, dy = -14 from H(270, 230))
   assert.equal(rectH.getAttribute('x'),'246.0');
   assert.equal(rectH.getAttribute('y'),'226.0');
+
+  // Restoring the original perpendicular rays brings the right-angle mark back.
+  handleB.trigger('pointerdown',{pointerId:3,preventDefault(){},stopPropagation(){}});
+  mockSvg.onPointerMove({clientX:110,clientY:230});
+  handleA.trigger('pointerdown',{pointerId:4,preventDefault(){},stopPropagation(){}});
+  mockSvg.onPointerMove({clientX:270,clientY:30});
+  assert.notEqual(rightAtH.getAttribute('d'),'');
  }finally{
   delete globalThis.DOMPoint;
   delete globalThis.document;
