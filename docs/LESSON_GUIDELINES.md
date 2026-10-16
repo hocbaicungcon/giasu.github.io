@@ -63,3 +63,10 @@ Nêu rõ bài nào đã có tương tác, bài nào còn hình tĩnh, kiểm tra
 - Tag toàn website không có khung viền (cả hover/focus, cả hai theme). Đề trắc nghiệm dạng bài viết: mỗi phương án A–D một mục trong danh sách dọc, không gộp bảng; tách dòng trống giữa câu hỏi và phương án, đóng đủ ký hiệu Markdown nhấn mạnh.
 
 - Trên mobile, kiểm tra `document.documentElement.scrollWidth` bằng chiều rộng viewport. Công thức dài và bảng rộng chỉ cuộn trong vùng riêng, không làm giãn cả trang; hình SVG và vùng tương tác giới hạn theo khung nội dung. Không che lỗi bằng overflow hidden toàn trang khiến nội dung bị mất.
+
+## Kiểm tra hồi quy mobile (16/10/2026)
+
+- Không đặt `transform` trên header chứa menu `position:fixed`: nó làm menu lấy header làm khung tham chiếu, khiến chiều cao chỉ còn vài pixel. Menu mở phải chạy từ chiều cao header tới đáy viewport, có cuộn dọc riêng; kiểm tra mở/đóng, submenu, Escape và sau khi cuộn trang.
+- Không dùng `overflow-x:clip` trên body/main để che lỗi tràn. Giới hạn công thức/bảng tại vùng nội dung của chúng bằng max-width, overflow và paint containment. KaTeX có SVG dấu căn rất rộng theo thiết kế; phải giữ vùng vẽ đó trong khung công thức, không thay kích thước SVG toán bằng quy tắc dành cho hình minh họa.
+- Kiểm tra cả scrollWidth của trang và của vùng prose: trang vừa màn hình nhưng prose bị cắt vẫn là lỗi. Rà bài có căn thức, bảng, hình tương tác và bài tập cũ; thử 320 px và 390 px, cả sáng/tối. Khôi phục viewport sau kiểm tra.
+- Các grid viết trực tiếp trong nội dung (ví dụ `minmax(280px,1fr)` hoặc `1fr 240px`) phải chuyển một cột dưới 620 px; không để cột cố định đẩy hình hoặc bộ điều khiển ra ngoài rồi bị khung cha cắt mất.
