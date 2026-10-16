@@ -67,18 +67,36 @@ test('algebra and calculus exploration models calculate values correctly',async(
  assert.equal(explorationKind(p('Hàm số bậc nhất và đồ thị')),'linear-function');
  assert.equal(explorationKind(p('Bài giảng ứng dụng đạo hàm để khảo sát hàm số CTST')),'derivative-tangent');
  assert.equal(explorationKind(p('Bài 18: Biểu đồ hình quạt tròn')),'pie-chart');
+ assert.equal(explorationKind(p('Bài 19: Biểu đồ đoạn thẳng')),'line-chart');
  assert.equal(explorationKind(p('Bài 17: Thu thập và phân loại dữ liệu')),'data-classification');
  assert.match(renderExploration(p('Tập hợp các số hữu tỉ')),/data-exploration="rational-numberline"/);
  assert.match(renderExploration(p('Ứng dụng đạo hàm để khảo sát hàm số')),/data-exploration="derivative-tangent"/);
  assert.match(renderExploration(p('Bài 18: Biểu đồ hình quạt tròn')),/data-exploration="pie-chart"/);
+ assert.match(renderExploration(p('Bài 19: Biểu đồ đoạn thẳng')),/data-exploration="line-chart"/);
  assert.match(renderExploration(p('Bài 17: Thu thập và phân loại dữ liệu')),/data-exploration="data-classification"/);
 
  // Pie chart model
- const {pieChartModel,sampleDataItems}=await import('../assets/exploration-models.js');
+ const {pieChartModel,sampleDataItems,lineChartModel,movingAverage}=await import('../assets/exploration-models.js');
  const pie=pieChartModel([{label:'A',value:25},{label:'B',value:75}]);
  assert.equal(pie[0].percent,25);
  assert.equal(pie[0].angleDeg,90);
  assert.equal(pie[1].percent,75);
  assert.equal(pie[1].angleDeg,270);
  assert.ok(sampleDataItems.length>=4);
+
+ // Line chart model
+ const pts=[{time:'T1',value:10},{time:'T2',value:25},{time:'T3',value:15},{time:'T4',value:40}];
+ const line=lineChartModel(pts);
+ assert.equal(line.min,10);
+ assert.equal(line.max,40);
+ assert.equal(line.avg,22.5);
+ assert.equal(line.deltas.length,3);
+ assert.equal(line.deltas[0].diff,15);
+ assert.equal(line.deltas[0].trend,'tăng');
+ assert.equal(line.deltas[1].diff,-10);
+ assert.equal(line.deltas[1].trend,'giảm');
+ assert.equal(line.steepestInc.diff,25);
+ assert.equal(line.steepestDec.diff,-10);
+ const ma=movingAverage([10,20,30,40],3);
+ assert.deepEqual(ma,[null,null,20,30]);
 });

@@ -105,3 +105,38 @@ export const sampleDataItems=[
  {id:'shirt',name:'Kích cỡ áo đồng phục',kind:'qualitative',subtype:'ordinal',example:'S, M, L, XL'}
 ];
 
+export function lineChartModel(points){
+ if(!points||!points.length)return {points:[],min:0,max:0,avg:0,deltas:[],steepestInc:null,steepestDec:null};
+ const values=points.map(p=>Number(p.value)||0);
+ const min=Math.min(...values);
+ const max=Math.max(...values);
+ const total=values.reduce((s,v)=>s+v,0);
+ const avg=Math.round((total/values.length)*10)/10;
+ const deltas=[];
+ let maxInc=0,steepestInc=null;
+ let maxDec=0,steepestDec=null;
+ for(let i=1;i<points.length;i++){
+  const diff=values[i]-values[i-1];
+  const pct=values[i-1]!==0?Math.round((diff/Math.abs(values[i-1]))*1000)/10:null;
+  const trend=diff>0?'tăng':diff<0?'giảm':'không đổi';
+  deltas.push({from:points[i-1].time,to:points[i].time,diff,pct,trend});
+  if(diff>maxInc){maxInc=diff;steepestInc={from:points[i-1].time,to:points[i].time,diff};}
+  if(diff<maxDec){maxDec=diff;steepestDec={from:points[i-1].time,to:points[i].time,diff};}
+ }
+ return {points,min,max,avg,deltas,steepestInc,steepestDec};
+}
+
+export function movingAverage(values,windowSize=3){
+ const res=[];
+ for(let i=0;i<values.length;i++){
+  if(i<windowSize-1){
+   res.push(null);
+  }else{
+   let sum=0;
+   for(let j=0;j<windowSize;j++)sum+=values[i-j];
+   res.push(Math.round((sum/windowSize)*10)/10);
+  }
+ }
+ return res;
+}
+
