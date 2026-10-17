@@ -965,6 +965,15 @@ form.quiz .katex {
   font-size: var(--lesson-math-size);
 }
 
+.katex-punct {
+  display: inline;
+  white-space: nowrap;
+}
+
+.katex-punct > .katex {
+  white-space: normal;
+}
+
 .katex-html .math-digits {
   display: inline;
   transform: none;
