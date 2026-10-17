@@ -20,24 +20,35 @@ grade: 8
 > [!NOTE] Thông tin tác giả & Bản quyền tài liệu
 > - **Tác giả / Chủ biên:** TS. Nguyễn Văn Lợi
 > - **Đơn vị phát hành:** LOISCENTER
-> - **Mục đích:** Bồi dưỡng học sinh khá giỏi, rèn luyện tư duy logic, kỹ năng giải toán sáng tạo và nâng cao năng lực toán học cho học sinh phổ thông.
+> - **Mục đích:** Bồi dưỡng học sinh khá giỏi, rèn luyện tư duy logic, kỹ năng giải toán sáng tạo và nâng cao năng lực toán học cho học sinh THCS các lớp 7, 8, 9.
 
 ---
 
-Tuyển tập các bài toán đố về chuyển động
+## Đồng hành cùng LOISCENTER: Chương trình bồi dưỡng và phát triển năng lực
 
-### 1.1 Gợi ý giải phần toán đố về chuyễn động
+Mục đích: Trước 18 tuổi, học sinh được trang bị nền tảng kiến thức vững chắc:
+- **Khoa học Toán - Máy tính**
+- **Kỹ năng lập trình code - hệ thống**
+- **Toán kinh tế - MBA**
+- **Văn hóa, lịch sử và nghệ thuật**
 
-## 2 Số học
+### Đôi lời chia sẻ từ TS. Nguyễn Văn Lợi
 
-Đại số
-Các bài toán tổng hợp
+Chỉ 10 - 20 năm nữa khi làn sóng công nghệ 4.0 sẽ định hình lại cấu trúc cuộc sống và xã hội. Cái đói nghèo đã được trả về cho quá khứ, lúc đó lao động không còn là để tồn tại mà chủ yếu nhằm mục đích sáng tạo và tiến bộ.
 
-## 5 Các bài toán hay nước Nga
+Các công việc trong tương lai sẽ tập trung vào 4 nhóm:
+1. **Nghệ thuật**
+2. **Khoa học kỹ thuật**
+3. **Dịch vụ**
+4. **Quản trị & Khởi nghiệp**
 
-Hà Nội, ngày 4 tháng 3 năm 2019
+Chính vì vậy, việc rèn luyện tư duy toán học đỉnh cao kết hợp với kỹ năng giải quyết vấn đề thực tiễn là hành trang quý giá nhất dành cho thế hệ trẻ.
 
-## 1 Tuyến tập các bài toán đố về chuyễn động
+*Hà Nội, ngày 4 tháng 3 năm 2019*  
+**TS. Nguyễn Văn Lợi**
+
+---
+## 1. Tuyển tập các bài toán đố về chuyển động
 
 1.1. Một người đi một quãng đường 42km (độ dài đường đua Marathon) bằng cách sau đây:
 5 phút chạy, sau đó 1 phút đi bộ và cứ như vậy thay đổi nhau cho đến khi về đích. Biết rằng
@@ -49,14 +60,14 @@ môt người khác cung đi bộ cùng hướng trên quang đương đó và s
 người thứ hai đuổi kịp người thứ nhất tại điểm bao nhiêu phần của quãng đường?
 1.3. Một chuyến tầu hỏa chở thư dự định xuất phát lúc 8h. Đến 12h họ phải đến một thành
 phố cách đó 240km. Vì lý do kĩ thuật nên chuyến tầu khởi hành chậm hơn 24 phút. Vì trục
-trặc nên trên g quảng đường tầu chỉ chạy được với vận tốc bằng 75% vận tốc dự định. Khi đó
+trặc nên trên $\frac{1}{6}$ quãng đường tàu chỉ chạy được với vận tốc bằng 75% vận tốc dự định. Khi đó
 họ nhận được động cơ mới (thời gian thay động cơ không đáng kể). Hỏi phải tăng bao nhiêu
 % tốc độ đang đi để đảm bảo thời gian đến đích theo dự kiến?
 1.4. Khoảng cách giữa hai thành phố A và B là 130km. Có 3 người phải đi từ A đến B. Họ có
 thể sử dụng một chiếc mô tô ngoài người lái còn có thể chở thêm một người khác. Trong khi
 hai người đi xe thì người thứ 3 tiếp tục hành trình bằng đi bộ. Vận tốc mô tô là 50 km/h bất
 kể có khách hay chỉ một người đi, nếu đi bộ thì vận tốc là 5 km/h. Phải tổ chức hành trình
-như thế nào để sau 6, 2h cả ba người có mặt ở thành phố B.
+như thế nào để sau $6{,}2\text{ h}$ cả ba người có mặt ở thành phố B.
 1.5. Lúc 10h một người đi xe đạp xuất phát từ A đến B. Cùng lúc đó cũng có một người đi
 xe đạp xuất phát từ B đến A. Cả hai người đi với vận tốc đều (không thay đổi). Người đi từ
 A đến B lúc 13h. Người đi từ B đến A lúc 13h45. Hỏi dọc đường họ gặp nhau khi nào?
@@ -82,7 +93,7 @@ người thắng cuộc. Nếu hai người tiếp tục chạy theo vận tốc
 nhiêu m khi Bình về tới đích?
 1.11. Một người đi xe đạp khởi hành từ A đến B. Cùng lúc đó một người đi bộ cũng khởi
 hành từ B đến A. Họ đi với vận tốc không đổi trên cùng một con đường. Khi Người đi xe đạp
-đón B thì người đi bộ mới đi dược - quáng đường. Nếu người đi xe đạp giần tốc độ 10 kra/h
+đến $B$ thì người đi bộ mới đi được $\frac{1}{5}$ quãng đường. Nếu người đi xe đạp giảm tốc độ $10\text{ km/h}$
 và người đi bộ tăng thêm tốc độ 3km/h thì khi người xe đạp đến đích người đi bộ thực hiện
 được = quãng đường của mình. Hỏi vận tốc của mỗi người là bao nhiêu km/h?
 1.12. Hai người đi bộ ngược chiều nhau từ làng A đến làng B khởi hành cùng một thời gian.
@@ -152,7 +163,7 @@ Bài 1.1.
 
 **Bài 1.7.** 300m.
 
-## 2 Số học
+## 2. Số học
 
 2.1. Có bao nhiêu số nguyên dương không lớn hơn 1000 và:
 - a) Chỉ chứa đúng một chữ số trong các số 2 và 3
@@ -187,9 +198,9 @@ số nào?
 con nào ăn con nào, tức là môi hàng và mỗi cột chỉ có một con xe. Hỏi trong cách xắp xếp nào
 tổng của các số dưới chân các con xe có giá trị lớn cực đại?
 2.8. Giải phương trình nghiệm tự nhiên: 314x + 25y = 1995.
-3 · 8 · 15 · ... · 899
-2.9. Biết rằng:
-4- 9 16 - ... - 900 = ≤ với p, q > 0 tự nhiên và (p,g) = 1. Hãy tính giá trị của
+**2.9.** Biết rằng:
+$$\frac{3 \cdot 8 \cdot 15 \cdot \ldots \cdot 899}{4 \cdot 9 \cdot 16 \cdot \ldots \cdot 900} = \frac{p}{q}$$
+với $p, q > 0$ tự nhiên và $(p, q) = 1$. Hãy tính giá trị của $p$ và $q$? Hãy tính giá trị của
 p và q:
 2.10. Cho trước góc 19°. Chỉ dùng thước và compa dựng góc 1°.
 2.11. Cho một số có 3 chữ số và số ngược của nó. Trong hiệu của hai số này; số đầu tiên là 3.
@@ -210,8 +221,8 @@ Hỏi:
 - b) 9
 - e) 8.
 được số dư nào?
-2.16. CMR nếu p và p' + 8 là số nguyên tố thì p? + p + 1 cũng là số nguyên tố.
-2.17. Có tồn tại số n nguyên dương sao cho 17 | 11"?
+**2.16.** Chứng minh rằng nếu $p$ và $p^2 + 8$ là số nguyên tố thì $p^3 + p + 1$ cũng là số nguyên tố.
+**2.17.** Có tồn tại số $n$ nguyên dương sao cho $17 \mid 11^n + 1$ hay không?
 2.18. Hai số 8 và 9 là hai số liên tiếp nhau và có tính chất chung là lũy thừa (có số mũ lơn
 hơn 1) của một số nguyên dương khác. Một câu hỏi chưa có lời giải đáp là có tồn tại những
 cặp số khác có tính chất trên. Một câu hỏi chưa có giải đáp nữa là có tồn tại 3 số liên tiếp có
@@ -227,8 +238,9 @@ nào?
 - b) Có nhiều vô cùng các số chia hết cho 7?
 2.23. CMR trong cấp số cộng sau: 14,27, 40, 53.66,.... Có nhiều võ cùng các số mà các chữ
 số của nó toàn là chữ số 2?
-2.24. Khảo sát tổng: j + 2 + ...+
-CMR tổng này không thể là số nguyên trong các trường hợp:
+**2.24.** Khảo sát tổng:
+$$H_n = \frac{1}{1} + \frac{1}{2} + \ldots + \frac{1}{n}$$
+Chứng minh rằng tổng này không thể là số nguyên trong các trường hợp:
 - a) n = 1024; 1021; 1000.
 - b) Tồn tại hay không giá trị n > 1 sao cho tổng trên có giá trị nguyên?
 2.25. Các số nguyên dương a1; a2; ...; 049 có tổng là 999. Hỏi ước số chung lớn nhất có thể của
@@ -245,8 +257,7 @@ chia thành 6 đống như thế nào?
 2.28. Hãy điền vào các ô trong bảng 2 x 3 các chữ số khác 0 sao cho các số được lập thành từ
 các hàng (trái qua phải ) và các cột (trên xuống) là các số chính phương.
 2.29. Giải mã:
-S+ A=U+ D +E
-S' = A + Ư' + D' + E2
+$$\begin{aligned} S + A &= U + D + E \\ S^2 &= A^2 + U^2 + D^2 + E^2 \end{aligned}$$
 Các chữ giống nhau là các chữ số giống nhau, khác nhau thì khác nhau.
 2.30. Tìm tất cả các số có 4 chữ số có tận cùng bằng 9 và chia hết cho tất cả các số là chữ số
 của nó.
@@ -255,8 +266,7 @@ số 1. Người thứ n được chọn nói các số lớn hơn số trực t
 đơn vị. Người nào nói số 100 là người thắng trận.
 Hỏi ai là người có chiến thuật để luôn luôn thắng?
 100!
-2.32. Sau khi tối giản phân số
-mẫu số của nó là số nào?
+**2.32.** Sau khi tối giản phân số $\frac{100!}{2^{100}}$, mẫu số của nó là số nào?
 2.33. Vương quốc Ngọc Anh người ta phát hành các loại phiếu mua sách toán trị giá 5 và 7
 NA.
 - a) Có thể mua một quyển sách số học giá 101 NA không phải trả lại không?
@@ -470,22 +480,26 @@ Vào các ô trong bảng 3 x 3 sao cho tổng các số trong mỗi hàng, mỗ
 chéo có giá trị băng nhau.
 3.14. Bảng ô vuông 3 x 3 thần bí có số bí hiểm là B. (Tổng các số trong mỗi hàng, mỗi cột có
 giá trị bằng B). Hãy xác định giá trị ở giữa của bảng này.
-3.15. Hãy ghi tiếp các số vào ô trống trong các bảng ô vuông thần bí sau:
+**3.15.** Hãy ghi tiếp các số vào ô trống trong các bảng ô vuông thần bí sau:
+
+![Bảng ô vuông thần bí - Bài 3.15](/assets/images/tuyen-tap-hsg/bai-3-15.png)
 b)
 3.16. Có thể xếp 9 số sau vào bảng thần bí được không?
 - a) 1, 3, 6, 11, 17, 42, 57, 58, 70.
 - b) 0, 3, 3, 4, 5, 6, 7, 8, 9.
 3.17. Có thể điền vào ba ô trống nào đó 3 số của bảng 3 x 3 sao cho có thể có nhiều cách để
 tạo nên bảng ô vuỗng thần kì khác nhau?
-3.18. Hãy điền các số 1, 2, 3, ..., 8 vào các ô trống trong hình vẽ sao cho tổng các số trên
-mỗi đường tròn bằng nhau?
+**3.18.** Hãy điền các số 1, 2, 3, ..., 8 vào các ô trống trong hình vẽ sao cho tổng các số trên mỗi đường tròn bằng nhau?
+
+![Ba vòng tròn giao nhau - Bài 3.18](/assets/images/tuyen-tap-hsg/bai-3-18.png)
 3.19. Một bảng ô vuông 3 x 3 người ta viết một số nào đó từ các số 7, 8, 9. Có thể tạo dược
 như vậy một bảng số sao cho tổng các số trong mỗi hàng, mỗi cột và các đường chéo có giá trị
 khác nhau?
 3.20. Xếp các số 2, 5; 3,2; 3, 9; 4,6; 5,3 và 6 vào các ô trong hình vẽ sao cho tổng các số trên
 mỗi cạnh của hình vuông có giá trị bằng nhau.
-3.21. Hãy ghi các số nguyên nhỏ hơn 13 vào các ô trống trong hình vẽ sao cho tổng các số trên
-mỗi cạnh của hình vuông bằng 22.
+**3.21.** Hãy ghi các số nguyên nhỏ hơn 13 vào các ô trống trong hình vẽ sao cho tổng các số trên mỗi cạnh của hình vuông bằng 22.
+
+![Hai hình vuông lồng nhau - Bài 3.21](/assets/images/tuyen-tap-hsg/bai-3-21.png)
 3.22. Hãy ghi các số từ 1, 2, ..., 9 vào các ô trống trong hình sao cho tổng của bốn số trên
 mỗi cạnh có giá trị ...
 - a) bằng 20
@@ -514,7 +528,9 @@ bị sơn là bao nhiêu?
   3.31. Một nhà thương gia bỏ ra 100 quan tiên mua bò, cừu, và thỏ, tổng cộng 100 con. Giá
   của một con bò là 10 quan, một con cừu là 3 quan và một con thỏ là 1 quan tiền vàng. Hỏi
   mỗi loại có bao nhiêu con?
-  3.32. Điền các số thích hợp vào chỗ trống để nhận được một phép nhân đúng:
+  **3.32.** Điền các số thích hợp vào chỗ trống để nhận được một phép nhân đúng:
+
+![Phép nhân có chữ số khuyết - Bài 3.32](/assets/images/tuyen-tap-hsg/bai-3-32.png)
   4 2
   3.33. Trong phép tính sau các chữ cái giống nhau là các chữ số giống nhau, các chữ cái khác
   nhau là các chữ số khác nhau. Thay các chữ cái bằng các chữ số để được phép tính đúng.
@@ -636,7 +652,7 @@ bị sơn là bao nhiêu?
   3,65. lÌm z: uẾW: Ÿª + gøtŁ + 35 + 32+3 = Ş
   3.66. Hãy tính tổng các chữ số của lập phương của số gồm có 2000 chữ số 9 tạo thành?
 
-## 4 Các bài toán tổng hợp
+## 4. Các bài toán tổng hợp
 
 4.1. Các chữ khác nhau có giá trị khác nhau: BA x BA = NNN hỏi BAN = ?
 4.2. Diền các dấu ngoặc vào biểu thức 2 : 3 : 4 : 5 : 6 = 5 để nhận được đẳng thức đúng.
@@ -796,7 +812,7 @@ bình. Hỏi góc lớn nhất của tam giác có giá trị lớn nhất có t
 An sẽ trả cho Bình 200 quan tiền, nếu kết quả khác thì Bình trả cho An 100 quan tiền. Bình
 tính sao: Có nên chấp nhận không?
 
-## 5 Các bài toán hay của Nga
+## 5. Các bài toán hay của nước Nga
 
 5.1. Ở quốc gia nọ chỉ có những người luôn nói thật và những người luôn nói dối. Một buổi
 chiều nọ có 10 người lần lượt ghé vào một ngôi nhà. Mỗi người (trừ người cuối cùng) ghi lại
