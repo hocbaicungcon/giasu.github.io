@@ -6,7 +6,23 @@ const red=new Set(['#dc2626','#ef4444','#d94e48','#bf645a','#f43f5e','#be185d','
 const gold=new Set(['#d97706','#f59e0b','#b45309','#c79536','#ca8a04','#eab308','#f97316']);
 const blue=new Set(['#2563eb','#3b82f6','#1d4ed8','#1e40af','#0ea5e9','#0284c7','#06b6d4','#0891b2','#438557','#10b981','#047857','#16a34a','#22c55e','#15803d','#087858']);
 function ink(value,label=false){const v=value.toLowerCase();if(red.has(v))return 'var(--diagram-coral)';if(gold.has(v))return 'var(--diagram-gold)';if(blue.has(v))return 'var(--diagram-ink)';if(['#8b5cf6','#6d28d9','#a855f7','#7c3aed'].includes(v))return 'var(--diagram-coral)';if(['#fff','#ffffff','white'].includes(v))return label?'var(--diagram-label)':'none';if(!label&&/^#[0-9a-f]{6}$/.test(v)){const rgb=[1,3,5].map(i=>parseInt(v.slice(i,i+2),16));if(Math.min(...rgb)>170&&Math.max(...rgb)>220)return 'var(--diagram-wash)';}if(/^#[0-9a-f]{3,6}$/.test(v))return label?'var(--diagram-label)':'var(--diagram-outline)';if(/^rgba?\(/.test(v)){const numbers=v.match(/[\d.]+/g)?.map(Number)||[];if(!label&&numbers.length===4&&numbers[3]<.3)return 'var(--diagram-wash)';const [r=0,g=0,b=0]=numbers;if(label)return 'var(--diagram-label)';if(r>g*1.3&&r>b*1.3)return 'var(--diagram-coral)';if(r>150&&g>100&&b<100)return 'var(--diagram-gold)';return 'var(--diagram-ink)';}return value;}
+// Hand-written widgets bring their own blue/indigo palette and low-contrast accents; map them to the brand
+// (green ink, coral, light green washes) and darken text accents that fail contrast on light cards.
+const rebrand=new Map([
+ ...['#2563eb','#3b82f6','#1d4ed8','#1e40af','#60a5fa','#0ea5e9','#0284c7','#1e3a8a'].map(c=>[c,'#087858']),
+ ...['#6366f1','#4f46e5','#4338ca','#8b5cf6','#7c3aed','#6d28d9','#a855f7'].map(c=>[c,'#d94e48']),
+ ...['#eff6ff','#dbeafe','#eef2ff','#e0e7ff','#e0f2fe','#f0f9ff'].map(c=>[c,'#e8f5ee']),
+ ...['#f5f3ff','#ede9fe'].map(c=>[c,'#fdeceb']),
+ ...['#bfdbfe','#c7d2fe','#93c5fd','#a5b4fc','#bae6fd'].map(c=>[c,'#b7dcc8']),
+]);
+const textFix=new Map([['#10b981','#047857'],['#059669','#047857'],['#d97706','#b45309'],['#f59e0b','#b45309'],['#94a3b8','#64748b'],['#22c55e','#15803d']]);
+export function rebrandWidgetColors(html){
+ return html.split(/(<pre\b[\s\S]*?<\/pre>)/i).map((part,i)=>i%2?part:part
+  .replace(/#[0-9a-f]{6}\b/gi,c=>rebrand.get(c.toLowerCase())||c)
+  .replace(/(^|[;"'\s{])color\s*:\s*(#[0-9a-f]{6})\b/gi,(m,lead,c)=>`${lead}color: ${textFix.get(c.toLowerCase())||c}`)).join('');
+}
 export function renderLessonFigures(html){
+ html=rebrandWidgetColors(html);
  const stack=[];return html.replace(/<svg\b[^>]*>[\s\S]*?<\/svg>|<\/?[a-z][^>]*>/gi,token=>{
   if(/^<svg\b/i.test(token)){
    if(stack.some(t=>/\bkatex\b|^<math\b/i.test(t)))return token;

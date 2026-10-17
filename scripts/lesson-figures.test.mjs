@@ -1,3 +1,4 @@
+import {rebrandWidgetColors} from './lesson-figures.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';
 import {renderLessonFigures} from './lesson-figures.mjs';
 test('figures lose frames and use theme inks while retaining geometric data',()=>{
@@ -13,4 +14,10 @@ test('formula accents and small UI icons remain unchanged',()=>{
 test('opaque RGB lines and text keep their contrast; only translucent areas use a wash',()=>{
  const output=renderLessonFigures('<svg viewBox="0 0 480 220"><line stroke="rgb(37,99,235)"/><text fill="rgb(0,0,0)">A</text><polygon fill="rgba(37,99,235,0.07)"/></svg>');
  assert.match(output,/stroke="var\(--diagram-ink\)"/);assert.match(output,/fill="var\(--diagram-label\)"/);assert.match(output,/fill="var\(--diagram-wash\)"/);
+});
+
+test('widget palettes are mapped to brand colours and low-contrast text accents are darkened',()=>{
+ const html=rebrandWidgetColors('<div style="background:#eff6ff;border:1px solid #bfdbfe;color:#10b981"><b style="color:#2563eb">x</b></div><pre><code>#2563eb</code></pre>');
+ assert.match(html,/background:#e8f5ee/);assert.match(html,/border:1px solid #b7dcc8/);assert.match(html,/color: #047857/);assert.match(html,/color: #087858/);
+ assert.match(html,/<pre><code>#2563eb<\/code><\/pre>/,'code samples keep their original text');
 });

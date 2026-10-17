@@ -95,3 +95,9 @@ test('long equation chains break into balanced rows with aligned equals signs an
  assert.ok(Math.min(...widths)>=0.4*Math.max(...widths),`unbalanced rows ${widths}`);
  assert.ok(visualWidth('\\frac{a+b+c}{d}')<8&&visualWidth('\\sqrt{x}')<4,'fractions and roots count by rendered width');
 });
+
+test('very wide inline formulas become their own block rather than a scrolling inline box',()=>{
+ const wide='\\sqrt{2x^3+3x^2+6x+16}-\\sqrt{4-x}\\ge 2\\sqrt{3}+\\sqrt{x^2+1}+\\sqrt{x+9}-\\sqrt{x-2}+\\sqrt{3x}+x+y+z';
+ assert.match(renderMath(wide),/class="katex-display/);
+ assert.ok(!/class="katex-display/.test(renderMath('a+b=c')));
+});

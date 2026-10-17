@@ -49,6 +49,8 @@ Tài liệu bàn giao cho người tiếp tục phát triển giasu.ai.vn. Cập
 - Không hiện thanh cuộn ngang ở công thức (CSS ẩn thanh cuộn, vẫn vuốt/cuộn được). Công thức trong dòng rộng hơn khung được `lesson.js` gắn `katex-wide` để cuộn trong hộp riêng ở mọi cỡ màn hình, thay vì làm rộng cả trang. Không thu nhỏ chữ để vừa khung.
 - Sau khi đổi bộ ngắt, đo lại trên các bài nhiều công thức (390 px và 1280 px): tỉ lệ phân số bị nhỏ, số công thức phải cuộn, `scrollWidth` của trang.
 
+- Màu của widget viết tay được `rebrandWidgetColors` (scripts/lesson-figures.mjs) đổi lúc build: xanh dương → xanh lá thương hiệu, tím/chàm → san hô, nền xanh nhạt → xanh lá nhạt; màu chữ nhấn kém tương phản (xanh ngọc, cam, xám nhạt) được làm đậm. Khối `<pre>` giữ nguyên. Công thức inline rộng từ khoảng 44 ký tự hiển thị trở lên được tách thành khối riêng thay vì cuộn trong đoạn văn.
+
 ## Tra cứu thuật ngữ
 
 - Dữ liệu sinh từ bảng thuật ngữ và bổ sung trong scripts/glossary.mjs. Ghép cụm dài trước, đúng ranh giới từ, tránh highlight từ thông thường như “khoảng” thay cho “khoảng cách”.

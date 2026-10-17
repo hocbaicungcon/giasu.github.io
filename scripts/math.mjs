@@ -5,7 +5,9 @@ export function renderMath(tex,options={}){
  const original=String(tex).replace(/&lt;/g,'<').replace(/&gt;/g,'>');
  // Inline formulas are only promoted to a block when long in the source, so sentences are not split needlessly.
  const source=options.displayMode?wrapLongDisplayFormula(original):original.length>=68?wrapLongDisplayFormula(original,28,30):original;
- const displayMode=!!options.displayMode||source!==original,labels=[];
+ // An inline formula far wider than a line is shown as its own block instead of a scrolling box inside the paragraph.
+ const tooWide=!options.displayMode&&visualWidth(original)>=44;
+ const displayMode=!!options.displayMode||source!==original||tooWide,labels=[];
  const prepared=source.replace(/\\(?:text|textsf|textrm|textnormal|mathrm)\{([^{}\\$]*)\}/g,(match,label)=>{
   if(!/[\u00c0-\u024f\u1ea0-\u1ef9]/i.test(label))return match;
   const plain=label.normalize('NFC'),ascii=plain.normalize('NFD').replace(/\p{M}/gu,'').replace(/đ/g,'d').replace(/Đ/g,'D');
@@ -26,7 +28,7 @@ export function renderMath(tex,options={}){
   const semantic=katex.renderToString(`\\mathsf{${source}\n}`,{...options,macros,strict:(code,message,token)=>code==='unknownSymbol'?'ignore':strict(code,message,token),output:'mathml',trust:false}).replace(/^<span class="katex">|<\/span>$/g,'');
   html=html.replace(/<span class="katex-mathml">[\s\S]*?<\/math><\/span>/,()=>`<span class="katex-mathml">${semantic}</span>`);
  }
- if(source!==original)html=html.replace('class="katex-display"','class="katex-display katex-auto-wrap"');
+ if(source!==original||tooWide)html=html.replace('class="katex-display"','class="katex-display katex-auto-wrap"');
  return html.replace(/(<annotation encoding="application\/x-tex">)[\s\S]*?(<\/annotation>)/,(_,start,end)=>start+escapeText(original)+end);
 }
 
