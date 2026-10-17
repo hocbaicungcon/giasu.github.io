@@ -51,7 +51,7 @@ $V=\frac{1}{3}\pi {{r}^{2}}h=\frac{8\pi }{3}.$
 **Lời giải.  C họn D
 ![bài tập khối nón khối trụ](assets/images/100-bai-tap-khoi-non-vdc-bai-tap-khoi-non-vdc-2.png)
 
-Đặt độ dài cạnh $AB=x$\left( x>0 \right)$và$M$là trung điểm$AB.$
+Đặt độ dài cạnh $AB=x\left( x>0 \right)$ và $M$ là trung điểm $AB.$
 
 Vì tam giác ${O}’AB$ đều nên ${O}’A={O}’B=AB=x$$\Rightarrow {O}’M=\frac{x\sqrt{3}}{2}$.
 
@@ -61,7 +61,7 @@ Xét tam giác ${O}’OM$ vuông tại $O$ ta có: $\cos \widehat{{O}’MO}=\fra
 
 $\cos 60{}^\circ =\frac{OM}{\frac{x\sqrt{3}}{2}}\Leftrightarrow OM=\frac{x\sqrt{3}}{4}$
 
-Xét tam giác $OAM$vuông ở $M$ có: $O{{A}^{2}}=O{{M}^{2}}+A{{M}^{2}}$ nên
+Xét tam giác $OAM$ vuông ở $M$ có: $O{{A}^{2}}=O{{M}^{2}}+A{{M}^{2}}$ nên
 
 ${{R}^{2}}={{\left( \frac{x\sqrt{3}}{4} \right)}^{2}}+{{\left( \frac{x}{2} \right)}^{2}}\Leftrightarrow {{R}^{2}}=\frac{7}{16}{{x}^{2}}\Rightarrow x=\frac{4\sqrt{7}}{7}R$
 
@@ -83,7 +83,7 @@ D.**$50\pi.$
 Lời giải.  Chọn B
 Thiết diện là hình chữ nhật và giả sử là $ABCD$ như hình vẽ.
 
-Gọi $M$là trung điểm $AB.$ Ta có: $\left\{ {\begin{array}{c} {AD = OO’ = 10}\\ {OB = 5,OM = 3} \end{array}} \right. \Rightarrow MB = \sqrt {O{B^2} – O{M^2}} = 4 \Rightarrow AB = 8.$
+Gọi $M$ là trung điểm $AB.$ Ta có: $\left\{ {\begin{array}{c} {AD = OO’ = 10}\\ {OB = 5,OM = 3} \end{array}} \right. \Rightarrow MB = \sqrt {O{B^2} – O{M^2}} = 4 \Rightarrow AB = 8.$
 
 Suy ra, diện tích thiết diện bằng: ${S_{ABCD}} = AD.AB = 10.8 = 80 \Rightarrow$Chọn B
 

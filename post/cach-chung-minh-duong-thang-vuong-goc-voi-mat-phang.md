@@ -143,7 +143,7 @@ $$
 
 4. Chỉ ra $AI$ vuông góc với hai đường thẳng cắt nhau của mặt phẳng $(SAC)$ là $SA$ và $SC.$
 
-**Ví dụ 7.** Cho hình chóp $S.ABC$, biết $SA = SB = SC = a,$\widehat{ASB} = 60^\circ,$\widehat{BSC} = 90^\circ,$\widehat{CSA} = 120^\circ .$ Gọi$ H $là trung điểm$ AC .$ Chứng minh$ SH $vuông góc với mặt phẳng$ (ABC) .$
+**Ví dụ 7.** Cho hình chóp $S.ABC$, biết $SA = SB = SC = a,$ $\widehat{ASB} = 60^\circ,$ $\widehat{BSC} = 90^\circ,$ $\widehat{CSA} = 120^\circ .$ Gọi $H$ là trung điểm $AC .$ Chứng minh $SH$ vuông góc với mặt phẳng $(ABC) .$
 
 **Hướng dẫn.** Tam giác $SAB$ đều nên $AB = SA = a.$ Tam giác $SBC$ vuông tại $S$ nên có 
 
