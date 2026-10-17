@@ -227,12 +227,7 @@ Hãy trực quan hóa bất đẳng thức $a < b$ qua hình ảnh chiếc cân 
       document.getElementById('val-a').value = parseFloat(document.getElementById('val-a').value) + 3;
       document.getElementById('val-b').value = parseFloat(document.getElementById('val-b').value) + 3;
       updateScale();
-    };
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', __initApp);
-    } else {
-      __initApp();
-    }
+    });
 
     document.getElementById('btn-mul-pos').addEventListener('click', function() {
       document.getElementById('val-a').value = parseFloat(document.getElementById('val-a').value) * 2;
@@ -253,7 +248,12 @@ Hãy trực quan hóa bất đẳng thức $a < b$ qua hình ảnh chiếc cân 
     });
 
     updateScale();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

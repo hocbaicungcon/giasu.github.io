@@ -215,7 +215,7 @@ Dưới đây là mô phỏng đường cong parabol $y = \sqrt{x}$ trên đoạ
       <!-- Trục quay Ox -->
       <line x1="50" y1="${originY}" x2="${W - 40}" y2="${originY}" stroke="#64748b" stroke-width="1.5" stroke-dasharray="6 3" />
       <polygon points="${W-35},${originY} ${W-45},${originY-4} ${W-45},${originY+4}" fill="#64748b" />
-      <text x="${W-40}" y="${originY + 20}" font-size="12" fill="#64748b" font-weight="bold">x (Trục quay Ox)</text>
+      <text x="${W-6}" y="${originY + 20}" text-anchor="end" font-size="12" fill="#64748b" font-weight="bold">x (Trục quay Ox)</text>
 
       <!-- Khối tròn xoay -->
       <path d="${topPath} L ${toScreenX(4)} ${toScreenY(0)} ${botPath.replace('M', 'L')} Z" fill="url(#bodyGrad)" />

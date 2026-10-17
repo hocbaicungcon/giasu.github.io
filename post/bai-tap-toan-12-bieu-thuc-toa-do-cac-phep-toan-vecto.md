@@ -25,7 +25,9 @@ grade: 12
 
 - $a+b=\left ( { a_{ 1 } +b_{ 1 } ;a_{ 2 } +b_{ 2 } ;a_{ 3 } +b_{ 3 } } \right.  )$
 - $a-b=\left ( { a_{ 1 } -b_{ 1 } ;a_{ 2 } -b_{ 2 } ;a_{ 3 } -b_{ 3 } } \right.  )$
-- $ka=\left ( { ka_{ 1 } ;ka_{ 2 } ;ka_{ 3 } } \right.  )$⁂ Nhận xét: Hai vectơ $a;b$ với $b≠0$ cùng phương $a=k.b⇔\left\{ \begin{array}{l} a_{ 1 } =k.b_{ 1 } a_{ 2 } =k.b_{ 2 } a_{ 3 } =k.b_{ 3 } \end{array} \right.$
+- $ka=\left ( { ka_{ 1 } ;ka_{ 2 } ;ka_{ 3 } } \right.  )$
+
+> **Nhận xét:**  Hai vectơ $a;b$ với $b≠0$ cùng phương $a=k.b⇔\left\{ \begin{array}{l} a_{ 1 } =k.b_{ 1 } a_{ 2 } =k.b_{ 2 } a_{ 3 } =k.b_{ 3 } \end{array} \right.$
 - Từ nay, các bài tập liên quan đến toạ độ đều được xét trong không gian $Oxyz$. Chú ý
 
 ### 2. Biểu thức tọa độ của tích vô hướng

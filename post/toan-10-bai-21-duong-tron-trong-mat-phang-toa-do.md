@@ -23,7 +23,7 @@ Bánh răng cơ khí, vòng xuyến giao thông thông minh, bán kính quét c�
 
 ## 1. Sơ đồ tư duy (Mindmap) Đường tròn trong Oxy
 
-```html
+```widget
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0;">
   <div style="background: #f8fafc; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
     <h4 style="margin: 0 0 8px 0; color: #1e40af;">1. Dạng chính tắc</h4>
@@ -117,7 +117,7 @@ Bánh răng cơ khí, vòng xuyến giao thông thông minh, bán kính quét c�
 
 Thay đổi tọa độ tâm $I(a; b)$ và bán kính $R$ để quan sát đường tròn co giãn, cùng đường tiếp tuyến xoay quanh tiếp điểm $M_0$:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">🎯 Thí Nghiệm Đường Tròn & Tiếp Tuyến Oxy</h3>

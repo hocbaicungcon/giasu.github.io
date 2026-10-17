@@ -15,7 +15,7 @@
   const seen=new Map(),present=new Set();
   for(const article of articles){
    const walker=document.createTreeWalker(article,NodeFilter.SHOW_TEXT,{acceptNode(node){
-    return node.parentElement.closest('a,button,input,textarea,select,form,h1,h2,h3,h4,h5,h6,summary,pre,code,svg,math,.katex,script,style,.geometry-lab,.lesson-practice,[data-no-glossary]')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
+    return node.parentElement.closest('a,button,input,textarea,select,form,h1,h2,h3,h4,h5,h6,summary,pre,code,svg,math,.katex,script,style,.geometry-lab,.lesson-practice,[data-no-glossary],.prose>div[style*="border"]:has(svg,input,button)')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
    }}),nodes=[];
    while(walker.nextNode())nodes.push(walker.currentNode);
    for(const node of nodes){

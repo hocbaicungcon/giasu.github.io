@@ -1621,3 +1621,6 @@ html[data-theme="dark"] .lesson-progress>div {color:var(--dark-ink, #e5eee6)}
 @media(max-width:620px){.geometry-controls-three{grid-template-columns:1fr;gap:10px}.prose h2{font-size:1.5rem}.prose h3{font-size:1.25rem}.geometry-lab .geometry-canvas{margin-inline:-6px;width:calc(100% + 12px)}}
 @media(prefers-reduced-motion:reduce){.geometry-lab *{scroll-behavior:auto}}
 @media(max-width:620px){.geometry-lab[data-geometry="angle-pairs"] .geometry-canvas text{font-size:24px}}
+
+.quiz-set-title{margin:1.6em 0 .4em}
+.quiz-set-count{margin:1.4em 0 .2em;font-size:.875rem;font-weight:600;color:var(--muted)}

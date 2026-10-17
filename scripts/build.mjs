@@ -36,7 +36,7 @@ export function normalizeMarkdownFormatting(text) {
     });
   };
 
-  protect(/(?:```|~~~)[a-zA-Z0-9_-]*\r?\n[\s\S]*?\r?\n(?:```|~~~)/g);
+  protect(/(`{3,}|~{3,})[^\r\n]*\r?\n[\s\S]*?\r?\n\1/g); // the closing fence repeats the opening run, so ````quiz survives
   // Keep SVG as one HTML block: blank lines otherwise end Marked's raw HTML token.
   text = text.replace(/<svg\b[\s\S]*?<\/svg>/gi, svg => svg.replace(/\r?\n\s*/g, ' '));
   protect(/`[^`\r\n]+`/g);
@@ -124,6 +124,7 @@ marked.use({extensions:[
 ]});
 marked.use({renderer:{code(token){
  if(token.lang==='geometry')return renderGeometry(token.text);
+ if(token.lang==='widget')return token.text; // trusted raw HTML widget (see README)
  if(token.lang==='youtube')return renderVideo(token.text);
  if(token.lang==='quiz')return renderQuiz(token.text,text=>renderLessonMarkdown(text,true));
  return false;
@@ -203,7 +204,7 @@ export function renderMathInHtml(html) {
 
 export function renderLessonMarkdown(source,inline=false){
  const blocks=[],formulae=[];
- let prepared=source.replace(/(?:```|~~~)[^\n]*\n[\s\S]*?\n(?:```|~~~)|`[^`\n]+`|<(svg|pre|code|script|style|textarea|math)\b[\s\S]*?<\/\1>/gi,block=>{blocks.push(block);return `@@MATH_BLOCK_${blocks.length-1}@@`;});
+ let prepared=source.replace(/(`{3,}|~{3,})[^\n]*\n[\s\S]*?\n\1|`[^`\n]+`|<(svg|pre|code|script|style|textarea|math)\b[\s\S]*?<\/\2>/gi,block=>{blocks.push(block);return `@@MATH_BLOCK_${blocks.length-1}@@`;});
  prepared=prepared.replace(/(?<!\$)\$(?!\$)((?:\\.|[^$\n])+?)\$(?!\$)([.,;:?!…)]*)/g,(_,tex,punct)=>{
    let html = renderMath(tex,{throwOnError:true,macros:mathMacros});
    if (punct) {

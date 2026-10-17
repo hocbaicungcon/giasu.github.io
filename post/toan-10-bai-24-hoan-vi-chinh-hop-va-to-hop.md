@@ -144,7 +144,7 @@ Các giá trị thường dùng:
 
 Nhập giá trị $n$ và $k$ để hệ thống tự động tính toán $P_n, A_n^k, C_n^k$ và hiển thị tất cả các tập con mẫu từ danh sách chữ cái:
 
-```html
+```widget
 <div style="max-width: 760px; margin: 20px auto; font-family: system-ui, -apple-system, sans-serif; border: 1px solid #cbd5e1; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.06); overflow: hidden;">
   <div style="background: linear-gradient(135deg, #1e3a8a, #0f172a); padding: 16px 20px; color: #ffffff;">
     <h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 700; color: #f8fafc;">Máy Tính Hoán Vị - Chỉnh Hợp - Tổ Hợp</h3>
@@ -270,6 +270,7 @@ Nhập giá trị $n$ và $k$ để hệ thống tự động tính toán $P_n, 
   update();
 })();
 </script>
+```
 
 ---
 
@@ -360,7 +361,7 @@ b) Dùng phương pháp đếm phần bù (gián tiếp):
 
 #### Bài toán 4
 Tìm số nguyên dương $n$ thỏa mãn phương trình:
-$$A_n^3 + 2C_n^2 = 48n$$
+$$A_n^3 + 2C_n^2 = 49n$$
 
 **Lời giải:**
 Điều kiện xác định: $n \in \mathbb{N}^*$ và $n \ge 3$.
@@ -368,23 +369,11 @@ Biến đổi các số hạng theo công thức chỉnh hợp và tổ hợp:
 $$A_n^3 = n(n - 1)(n - 2)$$
 $$C_n^2 = \frac{n(n - 1)}{2} \implies 2C_n^2 = n(n - 1)$$
 Thay vào phương trình ta được:
-$$n(n - 1)(n - 2) + n(n - 1) = 48n$$
-Vì $n \ge 3 \implies n \ne 0$, ta chia cả hai vế cho $n$:
-$$(n - 1)(n - 2) + (n - 1) = 48$$
-$$\iff (n - 1)[(n - 2) + 1] = 48 \iff (n - 1)^2 = 48$$
-Wait! Thử kiểm tra lại phương trình:
-$$(n - 1)(n - 2 + 1) = (n - 1)^2 = 48$$
-Vì $48$ không phải số chính phương, hãy xét phương trình chuẩn:
-$A_n^3 + 2C_n^2 = 48n \iff n(n-1)(n-2) + n(n-1) = 48n \iff (n-1)^2 = 48$.
-Nếu vế phải là $50n$:
-$$n(n-1)(n-2) + n(n-1) = 50n \iff (n-1)^2 = 50$$ (vẫn không nguyên).
-Nếu đề bài là $A_n^3 + 2C_n^2 = 49n$:
-$$\iff (n - 1)^2 = 49 \implies n - 1 = 7 \implies n = 8$$ (thỏa mãn $n \ge 3$).
-
-Xét phương trình với vế phải là $49n$:
-$$A_n^3 + 2C_n^2 = 49n$$
-Biến đổi:
-$$n(n - 1)(n - 2) + n(n - 1) = 49n \iff (n - 1)^2 = 49 \implies n = 8$$
+$$n(n - 1)(n - 2) + n(n - 1) = 49n$$
+Vì $n \ge 3$ nên $n \ne 0$, ta chia cả hai vế cho $n$:
+$$(n - 1)(n - 2) + (n - 1) = 49$$
+$$\iff (n - 1)\left[(n - 2) + 1\right] = 49 \iff (n - 1)^2 = 49$$
+Do $n - 1 > 0$ nên $n - 1 = 7$, suy ra $n = 8$ (thỏa mãn $n \ge 3$).
 Vậy nghiệm nguyên dương duy nhất của phương trình là $n = 8$.
 
 ---

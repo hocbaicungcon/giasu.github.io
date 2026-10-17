@@ -297,107 +297,107 @@ Từ những kiến thức toán thống kê lớp 7 hôm nay, con đường đ�
 Hãy tự đánh giá mức độ thấu hiểu toàn bộ Chương 5 qua $10$ câu hỏi trắc nghiệm dưới đây:
 
 ````quiz
-title: Kiểm tra Tổng ôn Chương 5 (Thu thập và Biểu diễn Dữ liệu)
+title: "Kiểm tra Tổng ôn Chương 5 (Thu thập và Biểu diễn Dữ liệu)"
 questions:
-  - question: Dãy dữ liệu nào sau đây thuộc loại dữ liệu định lượng rời rạc?
+  - question: "Dãy dữ liệu nào sau đây thuộc loại dữ liệu định lượng rời rạc?"
     options:
-      - Cân nặng của các bạn học sinh trong lớp (kg).
-      - Xếp loại hạnh kiểm học kỳ 1 (Tốt, Khá, Đạt, Chưa đạt).
-      - Số anh chị em ruột trong gia đình mỗi học sinh.
-      - Tên các thủ đô của các quốc gia Đông Nam Á.
+      - "Cân nặng của các bạn học sinh trong lớp (kg)."
+      - "Xếp loại hạnh kiểm học kỳ 1 (Tốt, Khá, Đạt, Chưa đạt)."
+      - "Số anh chị em ruột trong gia đình mỗi học sinh."
+      - "Tên các thủ đô của các quốc gia Đông Nam Á."
     answer: 2
-    hint: Dữ liệu định lượng là số, rời rạc là số thu được qua việc đếm và nhận giá trị nguyên.
-    explanation: Số anh chị em ruột là số nguyên không âm (0, 1, 2, 3...) thu được từ việc đếm, do đó là dữ liệu định lượng rời rạc.
+    hint: "Dữ liệu định lượng là số, rời rạc là số thu được qua việc đếm và nhận giá trị nguyên."
+    explanation: "Số anh chị em ruột là số nguyên không âm (0, 1, 2, 3...) thu được từ việc đếm, do đó là dữ liệu định lượng rời rạc."
 
-  - question: Khi muốn biểu diễn tỉ lệ phần trăm các loại chi phí trong dự án xây dựng trường học, loại biểu đồ nào sau đây là lựa chọn tối ưu nhất?
+  - question: "Khi muốn biểu diễn tỉ lệ phần trăm các loại chi phí trong dự án xây dựng trường học, loại biểu đồ nào sau đây là lựa chọn tối ưu nhất?"
     options:
-      - Biểu đồ đoạn thẳng.
-      - Biểu đồ hình quạt tròn.
-      - Biểu đồ tranh.
-      - Biểu đồ đường cong parabol.
+      - "Biểu đồ đoạn thẳng."
+      - "Biểu đồ hình quạt tròn."
+      - "Biểu đồ tranh."
+      - "Biểu đồ đường cong parabol."
     answer: 1
-    hint: Tỉ lệ phần trăm các thành phần so với tổng thể 100% là thế mạnh tuyệt đối của biểu đồ hình quạt tròn.
-    explanation: Biểu đồ hình quạt tròn chuyên dùng để trực quan hóa cơ cấu phần trăm các thành phần trong tổng thể 100%.
+    hint: "Tỉ lệ phần trăm các thành phần so với tổng thể 100% là thế mạnh tuyệt đối của biểu đồ hình quạt tròn."
+    explanation: "Biểu đồ hình quạt tròn chuyên dùng để trực quan hóa cơ cấu phần trăm các thành phần trong tổng thể 100%."
 
-  - question: Trong một biểu đồ hình quạt tròn, góc ở tâm của một hình quạt bằng 126°. Hình quạt đó biểu diễn tỉ lệ bao nhiêu phần trăm?
+  - question: "Trong một biểu đồ hình quạt tròn, góc ở tâm của một hình quạt bằng 126°. Hình quạt đó biểu diễn tỉ lệ bao nhiêu phần trăm?"
     options:
-      - 25%
-      - 30%
-      - 35%
-      - 40%
+      - "25%"
+      - "30%"
+      - "35%"
+      - "40%"
     answer: 2
-    hint: Áp dụng công thức ngược: p = (alpha / 360) * 100%.
-    explanation: Ta có p = (126 / 360) * 100% = 0.35 * 100% = 35%.
+    hint: "Áp dụng công thức ngược: p = (alpha / 360) * 100%."
+    explanation: "Ta có p = (126 / 360) * 100% = 0.35 * 100% = 35%."
 
-  - question: Để theo dõi sự biến động giá vàng SJC trong từng ngày của một tuần lễ, loại biểu đồ nào thích hợp nhất?
+  - question: "Để theo dõi sự biến động giá vàng SJC trong từng ngày của một tuần lễ, loại biểu đồ nào thích hợp nhất?"
     options:
-      - Biểu đồ đoạn thẳng.
-      - Biểu đồ hình quạt tròn.
-      - Biểu đồ tranh.
-      - Biểu đồ Venn.
+      - "Biểu đồ đoạn thẳng."
+      - "Biểu đồ hình quạt tròn."
+      - "Biểu đồ tranh."
+      - "Biểu đồ Venn."
     answer: 0
-    hint: Biến động của một đại lượng theo trục thời gian liên tục.
-    explanation: Biểu đồ đoạn thẳng là công cụ tốt nhất để theo dõi sự thay đổi của dữ liệu theo thời gian.
+    hint: "Biến động của một đại lượng theo trục thời gian liên tục."
+    explanation: "Biểu đồ đoạn thẳng là công cụ tốt nhất để theo dõi sự thay đổi của dữ liệu theo thời gian."
 
-  - question: Điều kiện nào sau đây bắt buộc đối với một biểu đồ hình quạt tròn hợp lý?
+  - question: "Điều kiện nào sau đây bắt buộc đối với một biểu đồ hình quạt tròn hợp lý?"
     options:
-      - Tổng các số đo góc ở tâm của các hình quạt phải bằng 180°.
-      - Tổng các tỉ lệ phần trăm của tất cả các thành phần phải bằng đúng 100%.
-      - Số lượng thành phần phải luôn lớn hơn 10.
-      - Phải có ít nhất hai hình quạt có diện tích bằng nhau.
+      - "Tổng các số đo góc ở tâm của các hình quạt phải bằng 180°."
+      - "Tổng các tỉ lệ phần trăm của tất cả các thành phần phải bằng đúng 100%."
+      - "Số lượng thành phần phải luôn lớn hơn 10."
+      - "Phải có ít nhất hai hình quạt có diện tích bằng nhau."
     answer: 1
-    hint: Toàn bộ hình tròn tượng trưng cho toàn thể tổng thể.
-    explanation: Toàn bộ hình tròn biểu diễn 100% tổng thể, nên tổng tỉ lệ phần trăm của các thành phần bắt buộc phải bằng 100%.
+    hint: "Toàn bộ hình tròn tượng trưng cho toàn thể tổng thể."
+    explanation: "Toàn bộ hình tròn biểu diễn 100% tổng thể, nên tổng tỉ lệ phần trăm của các thành phần bắt buộc phải bằng 100%."
 
-  - question: Một cửa hàng khảo sát 5 khách hàng quen và kết luận "100% người dân thành phố thích sản phẩm của chúng tôi". Kết luận này vi phạm tiêu chuẩn nào của thống kê?
+  - question: "Một cửa hàng khảo sát 5 khách hàng quen và kết luận \"100% người dân thành phố thích sản phẩm của chúng tôi\". Kết luận này vi phạm tiêu chuẩn nào của thống kê?"
     options:
-      - Tính thẩm mỹ của biểu đồ.
-      - Tính đại diện của mẫu khảo sát (mẫu quá nhỏ và bị thiên vị).
-      - Tính chính xác của phép cộng.
-      - Không có công thức toán học nào bị vi phạm.
+      - "Tính thẩm mỹ của biểu đồ."
+      - "Tính đại diện của mẫu khảo sát (mẫu quá nhỏ và bị thiên vị)."
+      - "Tính chính xác của phép cộng."
+      - "Không có công thức toán học nào bị vi phạm."
     answer: 1
-    hint: Mẫu chỉ có 5 người quen thì không thể đại diện cho toàn bộ cư dân thành phố.
-    explanation: Kết luận này không có tính đại diện vì quy mô mẫu quá nhỏ (chỉ 5 người) và phạm vi đối tượng bị thiên vị (khách hàng quen).
+    hint: "Mẫu chỉ có 5 người quen thì không thể đại diện cho toàn bộ cư dân thành phố."
+    explanation: "Kết luận này không có tính đại diện vì quy mô mẫu quá nhỏ (chỉ 5 người) và phạm vi đối tượng bị thiên vị (khách hàng quen)."
 
-  - question: Trên biểu đồ đoạn thẳng thể hiện số ca sốt xuất huyết qua các tuần, đoạn thẳng nối tuần 3 và tuần 4 dốc xuống. Điều đó chứng tỏ:
+  - question: "Trên biểu đồ đoạn thẳng thể hiện số ca sốt xuất huyết qua các tuần, đoạn thẳng nối tuần 3 và tuần 4 dốc xuống. Điều đó chứng tỏ:"
     options:
-      - Số ca sốt xuất huyết ở tuần 4 nhiều hơn tuần 3.
-      - Số ca sốt xuất huyết ở tuần 4 ít hơn tuần 3 (dịch bệnh có dấu hiệu giảm).
-      - Số ca sốt xuất huyết ở tuần 4 bằng 0.
-      - Dữ liệu tuần 4 bị ghi chép sai.
+      - "Số ca sốt xuất huyết ở tuần 4 nhiều hơn tuần 3."
+      - "Số ca sốt xuất huyết ở tuần 4 ít hơn tuần 3 (dịch bệnh có dấu hiệu giảm)."
+      - "Số ca sốt xuất huyết ở tuần 4 bằng 0."
+      - "Dữ liệu tuần 4 bị ghi chép sai."
     answer: 1
-    hint: Đoạn dốc xuống từ trái qua phải thể hiện giá trị sau nhỏ hơn giá trị trước.
-    explanation: Đoạn thẳng dốc xuống biểu thị giá trị đại lượng giảm đi, tức số ca nhiễm ở tuần 4 ít hơn tuần 3.
+    hint: "Đoạn dốc xuống từ trái qua phải thể hiện giá trị sau nhỏ hơn giá trị trước."
+    explanation: "Đoạn thẳng dốc xuống biểu thị giá trị đại lượng giảm đi, tức số ca nhiễm ở tuần 4 ít hơn tuần 3."
 
-  - question: Giá trị nào sau đây là KHÔNG HỢP LÝ trong danh sách dữ liệu về "Điểm thi kết thúc học kỳ môn Toán (thang điểm 10)" của học sinh?
+  - question: "Giá trị nào sau đây là KHÔNG HỢP LÝ trong danh sách dữ liệu về \"Điểm thi kết thúc học kỳ môn Toán (thang điểm 10)\" của học sinh?"
     options:
-      - 0
-      - 7.5
-      - 10
-      - 10.5
+      - "0"
+      - "7.5"
+      - "10"
+      - "10.5"
     answer: 3
-    hint: Thang điểm chuẩn của bài thi kết thúc học kỳ ở trường phổ thông là từ 0 đến 10.
-    explanation: Điểm thi theo thang điểm 10 chỉ có thể nhận giá trị từ 0 đến 10, do đó giá trị 10.5 là không hợp lý.
+    hint: "Thang điểm chuẩn của bài thi kết thúc học kỳ ở trường phổ thông là từ 0 đến 10."
+    explanation: "Điểm thi theo thang điểm 10 chỉ có thể nhận giá trị từ 0 đến 10, do đó giá trị 10.5 là không hợp lý."
 
-  - question: Cho biểu đồ đoạn thẳng kép về doanh thu hai cơ sở. Nếu tại mốc Quý 2 hai đường cắt nhau tại tung độ 300 triệu đồng, điều đó có nghĩa là:
+  - question: "Cho biểu đồ đoạn thẳng kép về doanh thu hai cơ sở. Nếu tại mốc Quý 2 hai đường cắt nhau tại tung độ 300 triệu đồng, điều đó có nghĩa là:"
     options:
-      - Tổng doanh thu hai cơ sở trong Quý 2 là 300 triệu đồng.
-      - Tại Quý 2, cả hai cơ sở đều có doanh thu bằng nhau và bằng 300 triệu đồng.
-      - Cơ sở 1 có doanh thu cao hơn cơ sở 2 là 300 triệu đồng.
-      - Doanh thu hai cơ sở không thể so sánh được.
+      - "Tổng doanh thu hai cơ sở trong Quý 2 là 300 triệu đồng."
+      - "Tại Quý 2, cả hai cơ sở đều có doanh thu bằng nhau và bằng 300 triệu đồng."
+      - "Cơ sở 1 có doanh thu cao hơn cơ sở 2 là 300 triệu đồng."
+      - "Doanh thu hai cơ sở không thể so sánh được."
     answer: 1
-    hint: Giao điểm của hai đường trên cùng một mốc thời gian.
-    explanation: Giao điểm tại (Quý 2; 300) biểu thị ở Quý 2, doanh thu của cả hai cơ sở đều bằng nhau và đạt 300 triệu đồng.
+    hint: "Giao điểm của hai đường trên cùng một mốc thời gian."
+    explanation: "Giao điểm tại (Quý 2; 300) biểu thị ở Quý 2, doanh thu của cả hai cơ sở đều bằng nhau và đạt 300 triệu đồng."
 
-  - question: Khi nào thì biểu đồ cột được ưu tiên sử dụng hơn biểu đồ đoạn thẳng?
+  - question: "Khi nào thì biểu đồ cột được ưu tiên sử dụng hơn biểu đồ đoạn thẳng?"
     options:
-      - Khi muốn so sánh quy mô giữa các nhóm đối tượng độc lập không có thứ tự thời gian.
-      - Khi muốn biểu diễn nhiệt độ biến đổi liên tục trong ngày.
-      - Khi muốn tính đạo hàm của hàm số.
-      - Khi muốn dự báo xu hướng tương lai qua 10 năm.
+      - "Khi muốn so sánh quy mô giữa các nhóm đối tượng độc lập không có thứ tự thời gian."
+      - "Khi muốn biểu diễn nhiệt độ biến đổi liên tục trong ngày."
+      - "Khi muốn tính đạo hàm của hàm số."
+      - "Khi muốn dự báo xu hướng tương lai qua 10 năm."
     answer: 0
-    hint: Biểu đồ cột xuất sắc khi so sánh các đối tượng rời rạc, độc lập (ví dụ: các khối lớp, các tỉnh thành).
-    explanation: Khi các đối tượng khảo sát độc lập và không liên kết với nhau theo trục thời gian, ta ưu tiên dùng biểu đồ cột.
+    hint: "Biểu đồ cột xuất sắc khi so sánh các đối tượng rời rạc, độc lập (ví dụ: các khối lớp, các tỉnh thành)."
+    explanation: "Khi các đối tượng khảo sát độc lập và không liên kết với nhau theo trục thời gian, ta ưu tiên dùng biểu đồ cột."
 ````
 
 ---

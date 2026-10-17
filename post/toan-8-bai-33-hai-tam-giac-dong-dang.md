@@ -97,7 +97,7 @@ Trong hình học, khái niệm hai hình "có cùng hình dạng nhưng kích t
     <!-- Tam giác ABC lớn bên phải -->
     <polygon points="390,20 280,190 500,190" fill="rgba(16,185,129,0.08)" stroke="#10b981" stroke-width="2.5" />
     <circle cx="390" cy="20" r="4" fill="#1e293b" />
-    <text x="385" y="12" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
+    <text x="385" y="16" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">A</text>
     <circle cx="280" cy="190" r="4" fill="#1e293b" />
     <text x="260" y="205" font-family="Source Sans Pro, Helvetica, Arial, sans-serif" font-weight="bold" font-size="15" fill="#1e293b">B</text>
     <circle cx="500" cy="190" r="4" fill="#1e293b" />

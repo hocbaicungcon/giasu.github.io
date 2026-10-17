@@ -155,19 +155,19 @@ Thực hành kiểm tra các biểu thức căn số phức tạp. Chọn biểu
         btns.forEach(b => {
           b.style.background = '#e2e8f0';
           b.style.color = '#1e293b';
-        };
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', __initApp);
-        } else {
-          __initApp();
-        }
+        });
         this.style.background = '#2563eb';
         this.style.color = 'white';
         renderRev(this.getAttribute('data-ex'));
       });
     });
     renderRev(1);
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

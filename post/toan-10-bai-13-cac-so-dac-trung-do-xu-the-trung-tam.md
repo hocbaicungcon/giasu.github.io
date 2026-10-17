@@ -24,7 +24,7 @@ Trong thời đại dữ liệu số, khả năng phân tích và tổng hợp t
 
 ## 1. Sơ đồ tư duy (Mindmap) Xu thế trung tâm
 
-```html
+```widget
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0;">
   <div style="background: #f8fafc; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
     <h4 style="margin: 0 0 8px 0; color: #1e40af;">1. Số trung bình ($\bar{x}$)</h4>
@@ -128,7 +128,7 @@ Tứ phân vị gồm ba giá trị $Q_1, Q_2, Q_3$ chia mẫu số liệu đã 
 
 Nhập các số liệu phân cách bằng dấu phẩy để hệ thống tự động sắp xếp, vẽ biểu đồ chấm và tính toán ngay lập tức $\bar{x}, M_e, Q_1, Q_3, M_o$:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">📊 Máy Tính Thống Kê Tức Thời</h3>
@@ -141,7 +141,7 @@ Nhập các số liệu phân cách bằng dấu phẩy để hệ thống tự 
   </div>
 
   <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; margin-bottom: 16px;">
-    <div style="font-size: 0.9rem; color: #64748b; margin-bottom: 8px;">Dãy số đã sắp xếp tăng dần ($n = <span id="sampleSize">9</span>$):</div>
+    <div style="font-size: 0.9rem; color: #64748b; margin-bottom: 8px;">Dãy số đã sắp xếp tăng dần ($n =$ <span id="sampleSize">9</span>):</div>
     <div id="sortedList" style="font-family: monospace; font-size: 1.05rem; font-weight: bold; color: #1e293b; background: #f1f5f9; padding: 8px 12px; border-radius: 6px; overflow-x: auto;">3, 5, 7, 8, 9, 11, 14, 15, 18</div>
   </div>
 

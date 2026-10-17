@@ -169,7 +169,7 @@ $$\frac{x}{a} = \frac{y}{b} = \frac{z}{c} = \frac{mx}{ma} = \frac{ny}{nb} = \fra
 #### Bài toán 2:
 Tìm ba số $x, y, z$ biết:
 a) $\frac{x}{2} = \frac{y}{3} = \frac{z}{5}$ và $x + y + z = 60$.
-b) $x : y : z = 3 : 4 : 5$ và $2x + 3y - z = 76$.
+b) $x : y : z = 3 : 4 : 5$ và $2x + 3y - z = 65$.
 
 **Lời giải:**
 
@@ -186,9 +186,7 @@ $$\frac{x}{3} = \frac{y}{4} = \frac{z}{5}$$
 Để tạo ra biểu thức $2x + 3y - z$, ta biến đổi các tỉ số:
 $$\frac{x}{3} = \frac{2x}{6};\quad \frac{y}{4} = \frac{3y}{12};\quad \frac{z}{5}$$
 Áp dụng tính chất dãy tỉ số bằng nhau:
-$$\frac{x}{3} = \frac{y}{4} = \frac{z}{5} = \frac{2x + 3y - z}{6 + 12 - 5} = \frac{76}{13} \dots$$
-*Khoan đã, hãy điều chỉnh số liệu cho số nguyên đẹp:* Nếu $2x + 3y - z = 65$:
-$$\frac{2x + 3y - z}{6 + 12 - 5} = \frac{65}{13} = 5$$
+$$\frac{x}{3} = \frac{y}{4} = \frac{z}{5} = \frac{2x + 3y - z}{6 + 12 - 5} = \frac{65}{13} = 5$$
 Suy ra:
 - $x = 3 \times 5 = 15$.
 - $y = 4 \times 5 = 20$.
@@ -329,107 +327,107 @@ Các nhà toán học nổi tiếng như Alexander Hamilton và Thomas Jefferson
 Hãy thử sức với $10$ câu hỏi trắc nghiệm dưới đây:
 
 ````quiz
-title: Kiểm tra Dãy tỉ số bằng nhau (Toán 7 - Bài 21)
+title: "Kiểm tra Dãy tỉ số bằng nhau (Toán 7 - Bài 21)"
 questions:
-  - question: Cho a/b = c/d (với b khác d và b khác -d). Đẳng thức nào sau đây là ĐÚNG?
+  - question: "Cho a/b = c/d (với b khác d và b khác -d). Đẳng thức nào sau đây là ĐÚNG?"
     options:
-      - a/b = (a + c)/(b - d)
-      - a/b = (a - c)/(b + d)
-      - a/b = (a + c)/(b + d)
-      - a/b = (a * c)/(b * d)
+      - "a/b = (a + c)/(b - d)"
+      - "a/b = (a - c)/(b + d)"
+      - "a/b = (a + c)/(b + d)"
+      - "a/b = (a * c)/(b * d)"
     answer: 2
-    hint: Cộng tử tương ứng với cộng mẫu, trừ tử tương ứng với trừ mẫu.
-    explanation: Theo tính chất của dãy tỉ số bằng nhau: a/b = c/d = (a + c)/(b + d) = (a - c)/(b - d).
+    hint: "Cộng tử tương ứng với cộng mẫu, trừ tử tương ứng với trừ mẫu."
+    explanation: "Theo tính chất của dãy tỉ số bằng nhau: a/b = c/d = (a + c)/(b + d) = (a - c)/(b - d)."
 
-  - question: Cho x/3 = y/5 và x + y = 32. Giá trị của x và y lần lượt là:
+  - question: "Cho x/3 = y/5 và x + y = 32. Giá trị của x và y lần lượt là:"
     options:
-      - x = 12; y = 20
-      - x = 10; y = 22
-      - x = 15; y = 17
-      - x = 9; y = 23
+      - "x = 12; y = 20"
+      - "x = 10; y = 22"
+      - "x = 15; y = 17"
+      - "x = 9; y = 23"
     answer: 0
-    hint: x/3 = y/5 = (x + y)/(3 + 5) = 32/8 = 4.
-    explanation: Tỉ số chung là 32 / (3 + 5) = 4. Do đó x = 3 * 4 = 12 và y = 5 * 4 = 20.
+    hint: "x/3 = y/5 = (x + y)/(3 + 5) = 32/8 = 4."
+    explanation: "Tỉ số chung là 32 / (3 + 5) = 4. Do đó x = 3 * 4 = 12 và y = 5 * 4 = 20."
 
-  - question: Cho a/2 = b/5 và b - a = 18. Giá trị của a và b là:
+  - question: "Cho a/2 = b/5 và b - a = 18. Giá trị của a và b là:"
     options:
-      - a = 10; b = 28
-      - a = 12; b = 30
-      - a = 14; b = 32
-      - a = 16; b = 34
+      - "a = 10; b = 28"
+      - "a = 12; b = 30"
+      - "a = 14; b = 32"
+      - "a = 16; b = 34"
     answer: 1
-    hint: a/2 = b/5 = (b - a)/(5 - 2) = 18/3 = 6.
-    explanation: Ta có a/2 = b/5 = (b - a)/(5 - 2) = 18/3 = 6. Suy ra a = 2*6 = 12 và b = 5*6 = 30.
+    hint: "a/2 = b/5 = (b - a)/(5 - 2) = 18/3 = 6."
+    explanation: "Ta có a/2 = b/5 = (b - a)/(5 - 2) = 18/3 = 6. Suy ra a = 2*6 = 12 và b = 5*6 = 30."
 
-  - question: Kí hiệu a : b : c = 2 : 4 : 5 tương đương với dãy tỉ số nào sau đây?
+  - question: "Kí hiệu a : b : c = 2 : 4 : 5 tương đương với dãy tỉ số nào sau đây?"
     options:
-      - a/2 = b/4 = c/5
-      - a/5 = b/4 = c/2
-      - 2/a = 4/b = 5/c
-      - a + 2 = b + 4 = c + 5
+      - "a/2 = b/4 = c/5"
+      - "a/5 = b/4 = c/2"
+      - "2/a = 4/b = 5/c"
+      - "a + 2 = b + 4 = c + 5"
     answer: 0
-    hint: Mỗi số ở vế trái tương ứng với số ở vị trí cùng thứ tự ở vế phải.
-    explanation: Kí hiệu a : b : c = 2 : 4 : 5 có nghĩa là a/2 = b/4 = c/5.
+    hint: "Mỗi số ở vế trái tương ứng với số ở vị trí cùng thứ tự ở vế phải."
+    explanation: "Kí hiệu a : b : c = 2 : 4 : 5 có nghĩa là a/2 = b/4 = c/5."
 
-  - question: Cho x/2 = y/3 = z/4 và x + y + z = 45. Giá trị của z là:
+  - question: "Cho x/2 = y/3 = z/4 và x + y + z = 45. Giá trị của z là:"
     options:
-      - z = 10
-      - z = 15
-      - z = 20
-      - z = 25
+      - "z = 10"
+      - "z = 15"
+      - "z = 20"
+      - "z = 25"
     answer: 2
-    hint: Tỉ số chung = 45 / (2 + 3 + 4) = 45 / 9 = 5.
-    explanation: Ta có x/2 = y/3 = z/4 = (x + y + z)/(2 + 3 + 4) = 45/9 = 5. Suy ra z = 4 * 5 = 20.
+    hint: "Tỉ số chung = 45 / (2 + 3 + 4) = 45 / 9 = 5."
+    explanation: "Ta có x/2 = y/3 = z/4 = (x + y + z)/(2 + 3 + 4) = 45/9 = 5. Suy ra z = 4 * 5 = 20."
 
-  - question: Ba lớp 7A, 7B, 7C quyên góp sách theo tỉ lệ 3 : 4 : 5. Biết lớp 7A quyên góp được 60 quyển. Hỏi lớp 7C quyên góp được bao nhiêu quyển sách?
+  - question: "Ba lớp 7A, 7B, 7C quyên góp sách theo tỉ lệ 3 : 4 : 5. Biết lớp 7A quyên góp được 60 quyển. Hỏi lớp 7C quyên góp được bao nhiêu quyển sách?"
     options:
-      - 80 quyển
-      - 90 quyển
-      - 100 quyển
-      - 120 quyển
+      - "80 quyển"
+      - "90 quyển"
+      - "100 quyển"
+      - "120 quyển"
     answer: 2
-    hint: 7A tương ứng 3 phần = 60 quyển -> 1 phần = 20 quyển.
-    explanation: Ta có 7A tương ứng 3 phần = 60 quyển, suy ra 1 phần = 20 quyển. Lớp 7C có 5 phần nên quyên góp được 5 * 20 = 100 quyển.
+    hint: "7A tương ứng 3 phần = 60 quyển -> 1 phần = 20 quyển."
+    explanation: "Ta có 7A tương ứng 3 phần = 60 quyển, suy ra 1 phần = 20 quyển. Lớp 7C có 5 phần nên quyên góp được 5 * 20 = 100 quyển."
 
-  - question: Cho x/3 = y/4. Đẳng thức nào sau đây KHÔNG ĐÚNG theo tính chất dãy tỉ số bằng nhau?
+  - question: "Cho x/3 = y/4. Đẳng thức nào sau đây KHÔNG ĐÚNG theo tính chất dãy tỉ số bằng nhau?"
     options:
-      - x/3 = (x + y)/7
-      - x/3 = (y - x)/1
-      - x/3 = (2x + y)/10
-      - x/3 = (x * y)/12
+      - "x/3 = (x + y)/7"
+      - "x/3 = (y - x)/1"
+      - "x/3 = (2x + y)/10"
+      - "x/3 = (x * y)/12"
     answer: 3
-    hint: Tính chất chỉ áp dụng cho phép cộng trừ bậc 1, không áp dụng cho phép nhân tích.
-    explanation: (x * y) / (3 * 4) = k^2 chứ không bằng k, do đó không bằng x/3.
+    hint: "Tính chất chỉ áp dụng cho phép cộng trừ bậc 1, không áp dụng cho phép nhân tích."
+    explanation: "(x * y) / (3 * 4) = k^2 chứ không bằng k, do đó không bằng x/3."
 
-  - question: Cho x/2 = y/3 và x * y = 54 (với x, y > 0). Giá trị của x + y là:
+  - question: "Cho x/2 = y/3 và x * y = 54 (với x, y > 0). Giá trị của x + y là:"
     options:
-      - 12
-      - 15
-      - 18
-      - 21
+      - "12"
+      - "15"
+      - "18"
+      - "21"
     answer: 1
-    hint: Đặt x = 2k, y = 3k -> 6k^2 = 54 -> k = 3.
-    explanation: Đặt x = 2k, y = 3k thì x*y = 6k^2 = 54 suy ra k^2 = 9 suy ra k = 3 (do x, y > 0). Khi đó x = 6, y = 9 và x + y = 15.
+    hint: "Đặt x = 2k, y = 3k -> 6k^2 = 54 -> k = 3."
+    explanation: "Đặt x = 2k, y = 3k thì x*y = 6k^2 = 54 suy ra k^2 = 9 suy ra k = 3 (do x, y > 0). Khi đó x = 6, y = 9 và x + y = 15."
 
-  - question: Chu vi một tam giác bằng 36 cm và độ dài ba cạnh tỉ lệ với 3 : 4 : 5. Độ dài cạnh lớn nhất của tam giác đó là:
+  - question: "Chu vi một tam giác bằng 36 cm và độ dài ba cạnh tỉ lệ với 3 : 4 : 5. Độ dài cạnh lớn nhất của tam giác đó là:"
     options:
-      - 9 cm
-      - 12 cm
-      - 15 cm
-      - 18 cm
+      - "9 cm"
+      - "12 cm"
+      - "15 cm"
+      - "18 cm"
     answer: 2
-    hint: Cạnh lớn nhất tương ứng với 5 phần; tổng số phần = 3 + 4 + 5 = 12.
-    explanation: Tỉ số chung là 36 / (3 + 4 + 5) = 36 / 12 = 3. Cạnh lớn nhất là 5 * 3 = 15 cm.
+    hint: "Cạnh lớn nhất tương ứng với 5 phần; tổng số phần = 3 + 4 + 5 = 12."
+    explanation: "Tỉ số chung là 36 / (3 + 4 + 5) = 36 / 12 = 3. Cạnh lớn nhất là 5 * 3 = 15 cm."
 
-  - question: Cho dãy tỉ số a/b = c/d = e/f. Biểu thức nào sau đây bằng với tỉ số a/b?
+  - question: "Cho dãy tỉ số a/b = c/d = e/f. Biểu thức nào sau đây bằng với tỉ số a/b?"
     options:
-      - (a + 2c - 3e)/(b + 2d - 3f)
-      - (a + c + e)/(b + d - f)
-      - (a - c - e)/(b + d + f)
-      - (a + 2c)/(b + d)
+      - "(a + 2c - 3e)/(b + 2d - 3f)"
+      - "(a + c + e)/(b + d - f)"
+      - "(a - c - e)/(b + d + f)"
+      - "(a + 2c)/(b + d)"
     answer: 0
-    hint: Các hệ số ở tử và mẫu phải đồng nhất: hệ số 1, 2, -3 ở tử tương ứng 1, 2, -3 ở mẫu.
-    explanation: Ta có a/b = 2c/(2d) = (-3e)/(-3f) = (a + 2c - 3e)/(b + 2d - 3f) (chính xác).
+    hint: "Các hệ số ở tử và mẫu phải đồng nhất: hệ số 1, 2, -3 ở tử tương ứng 1, 2, -3 ở mẫu."
+    explanation: "Ta có a/b = 2c/(2d) = (-3e)/(-3f) = (a + 2c - 3e)/(b + 2d - 3f) (chính xác)."
 ````
 
 ---

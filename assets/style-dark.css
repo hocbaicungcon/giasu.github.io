@@ -38,3 +38,12 @@ body .home-learning .subject-section,body .home-learning .subject-row,body .home
 html[data-theme="dark"] body .home-learning .grade-nav-title{color:#b9cabb}
 html[data-theme="dark"] body .library .card .card-art,html[data-theme="dark"] body .related-card .related-card-art{background:#203329;color:#e5eee6;border-color:#304237}
 html[data-theme="dark"] body .related-grade-pill{background:#2c4936;color:#d8efdd}
+
+/* Hand-written widgets use fixed light-theme colours, so in the dark theme they stay a light island
+   with the light variables restored; text without its own colour inherits dark ink from the island. */
+html[data-theme="dark"] .prose>div[style*="border"]:has(:is(svg,button,input,select,canvas,table)){color-scheme:light;--ink:#243b40;--muted:#5f7478;--line:#cbdedb;--paper:#f4f8f6;--card-bg:#ffffff;--bg-secondary:#f1f5f9;--border-color:#e2e8f0;color:#1e293b;background-color:#ffffff}
+html[data-theme="dark"] .prose>div[style*="border"][style]:has(:is(svg,button,input,select,canvas,table)) :is(td,th,p,li,label,span,div,h3,h4,h5,b,strong,small,output,summary,button,input,select){color:inherit}
+html[data-theme="dark"] .prose>div[style*="border"][style]:has(:is(svg,button,input,select,canvas,table)) :is(input,select,button){background-color:#ffffff}
+/* Glossary terms inside hand-coloured light cards take the card's own ink instead of the dark theme's light green. */
+html[data-theme="dark"] body .prose :is([style*="background: #e"],[style*="background: #f"],[style*="background:#e"],[style*="background:#f"],[style*="background: white"],[style*="background: #fff"]) .glossary-term{color:inherit}
+

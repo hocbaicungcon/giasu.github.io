@@ -55,7 +55,8 @@ I. PHƯƠNG PHÁP
 
 - **Bước 2:** Đưa bài toán về mối quan hệ hàm số, lập bảng biến thiên để xét tính tăng giảm $y'$ theo biến $x$, tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số với điều kiện ràng buộc cho trước.
 
-❀ Bài toán chuyển động: Tính vận tốc tức thời, tính gia tốc tại thời điểm vận tốc lớn nhất;
+
+- **Bài toán chuyển động: Tính vận tốc tức thời, tính gia tốc tại thời điểm vận tốc lớn nhất;
 
 → Nếu $s=s\left ( { t } \right.  )$ là hàm vị trí của một vật chuyển động trên một đường thẳng thì $v\left ( { t } \right.  )=s'\left ( { t } \right.  )$ biểu thị vận tốc tức thời của vật (tốc độ thay đổi của độ dịch chuyển theo thời gian).
 
@@ -67,7 +68,8 @@ I. PHƯƠNG PHÁP
 
 → Để xác định vận tốc lớn nhất hoặc nhỏ nhất lập bảng biến thiên của hàm số $v\left ( { t } \right.  )$. Dựa vào bảng biến thiên để kết luận. (Có thể dùng bất đẳng thức đánh giá).
 
-❀ Bài toán về dòng điện:
+
+- **Bài toán về dòng điện:
 
 → Điện lượng $Q$ truyền qua dây dẫn là một hàm số của thời gian $t$,$Q=Q\left ( { t } \right.  )$. Cường độ dòng điện tức thời tại thời điểm $t_{ o }$ được tính bằng công thức $I\left ( { t_{ 0 } } \right.  )=Q'\left ( { t_{ 0 } } \right.  )$.
 
@@ -642,9 +644,9 @@ Do đó $S(x)=4xh+x ^ { 2 }$.
 
 (c) Khối lượng vàng cần dùng tỉ lệ thuận với diện tích của phần hộp cần mạ.
 
-Ta có khối lượng vàng cần dùng là:$m=P_{ { \rm{ v } }{ \rm{ µ } }{ \rm{ n } }{ \rm{ g } } } .d.S\left ( { x } \right.  )$,
+Ta có khối lượng vàng cần dùng là:$m=P_{\text{vùng}} .d.S\left ( { x } \right.  )$,
 
-với $P_{ { \rm{ v } }{ \rm{ µ } }{ \rm{ n } }{ \rm{ g } } }$ là khối lượng riêng của vàng (là hằng số).
+với $P_{\text{vùng}}$ là khối lượng riêng của vàng (là hằng số).
 
 Suy ra khối lượng vàng cần dùng tỉ lệ thuận với diện tích của phần hộp cần mạ.
 

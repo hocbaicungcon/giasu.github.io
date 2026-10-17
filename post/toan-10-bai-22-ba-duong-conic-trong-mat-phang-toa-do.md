@@ -170,7 +170,7 @@ Các yếu tố hình học của parabol $(P)$:
 
 Tương tác trực quan với các tham số của ba đường conic để quan sát hình dạng, tiêu điểm, đường chuẩn và tâm sai:
 
-```html
+```widget
 <div style="max-width: 760px; margin: 20px auto; font-family: system-ui, -apple-system, sans-serif; border: 1px solid #cbd5e1; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.06); overflow: hidden;">
   <div style="background: linear-gradient(135deg, #1e293b, #0f172a); padding: 16px 20px; color: #ffffff;">
     <h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 700; color: #f8fafc;">Phòng Thí Nghiệm Conic 2D</h3>
@@ -404,6 +404,7 @@ Tương tác trực quan với các tham số của ba đường conic để qua
   draw();
 })();
 </script>
+```
 
 ---
 

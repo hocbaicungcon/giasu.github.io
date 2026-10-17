@@ -361,7 +361,7 @@ Một bảng thống kê phân loại học sinh lớp 6C theo giới tính và 
 
 | Xếp loại | Tốt | Khá | Đạt | Tổng số |
 | :---: | :---: | :---: | :---: | :---: |
-| **Nam** | $8$ | $?$ | $3$ | $21$ |
+| **Nam** | $8$ | $?$ | $3$ | $18$ |
 | **Nữ** | $?$ | $9$ | $2$ | $?$ |
 | **Tổng cả lớp** | $19$ | $?$ | $5$ | $40$ |
 
@@ -370,29 +370,18 @@ Hãy tìm các số liệu bị khuyết và hoàn thiện lại bảng thống 
 **Lời giải:**
 Sử dụng các mối quan hệ tổng hàng và tổng cột:
 1. **Tìm số học sinh Nam xếp loại Khá:**
-   Tổng số học sinh Nam là $21,$ nên số bạn Nam xếp loại Khá là:
-   $$21 - (8 + 3) = 21 - 11 = 10\quad \text{(bạn)}.$$
+   Tổng số học sinh Nam là $18,$ nên số bạn Nam xếp loại Khá là:
+   $$18 - (8 + 3) = 18 - 11 = 7\quad \text{(bạn)}.$$
 2. **Tìm số học sinh Nữ xếp loại Tốt:**
    Tổng số học sinh xếp loại Tốt của cả lớp là $19,$ nên số bạn Nữ xếp loại Tốt là:
    $$19 - 8 = 11\quad \text{(bạn)}.$$
 3. **Tìm tổng số học sinh Nữ:**
    Số học sinh Nữ gồm $11$ bạn Tốt, $9$ bạn Khá, $2$ bạn Đạt:
    $$11 + 9 + 2 = 22\quad \text{(bạn)}.$$
-   *(Kiểm tra lại tổng sĩ số: Nam $+$ Nữ $= 21 + 22 = 43 \ne 40$).*
-   Khoan! Hãy kiểm tra tổng sĩ số cả lớp:
-   Tổng cả lớp đề bài cho là $40.$
-   Số học sinh Nam là $21 \implies$ Số học sinh Nữ phải là:
-   $$40 - 21 = 19\quad \text{(bạn)}.$$
-   Khi đó số bạn Nữ xếp loại Khá $+$ Đạt là $9 + 2 = 11 \implies$ Số bạn Nữ xếp loại Tốt là:
-   $$19 - 11 = 8\quad \text{(bạn)}.$$
-   Khi đó tổng số học sinh xếp loại Tốt là:
-   $$8\text{ (Nam)} + 8\text{ (Nữ)} = 16\text{ (bạn)}.$$
-   Nếu đề bài đã cố định tổng xếp loại Tốt là $19$ và tổng lớp là $40,$ ta tính:
-   - Tổng Khá cả lớp: $40 - (19 + 5) = 16$ bạn.
-   - Nam Khá: $16 - 9 = 7$ bạn.
-   - Khi đó tổng Nam: $8 + 7 + 3 = 18$ bạn.
-   - Tổng Nữ: $40 - 18 = 22$ bạn.
-   - Nữ Tốt: $19 - 8 = 11$ bạn.
+4. **Tìm tổng số học sinh xếp loại Khá của cả lớp:**
+   $$7 + 9 = 16\quad \text{(bạn)}.$$
+5. **Kiểm tra:** Nam $+$ Nữ $= 18 + 22 = 40$ và Tốt $+$ Khá $+$ Đạt $= 19 + 16 + 5 = 40,$ khớp với tổng cả lớp.
+
    Bảng thống kê hoàn chỉnh khớp $100\%$ mọi hàng và cột:
 
 | Xếp loại | Tốt | Khá | Đạt | Tổng số |

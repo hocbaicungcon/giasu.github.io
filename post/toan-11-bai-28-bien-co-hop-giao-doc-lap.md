@@ -243,12 +243,7 @@ const __initApp = function() {
       buttons.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      };
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', __initApp);
-      } else {
-        __initApp();
-      }
+      });
       const mode = this.dataset.mode;
       this.style.background = '#2563eb';
       this.style.color = '#ffffff';
@@ -283,7 +278,12 @@ const __initApp = function() {
       desc.innerHTML = cfg.text;
     });
   });
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

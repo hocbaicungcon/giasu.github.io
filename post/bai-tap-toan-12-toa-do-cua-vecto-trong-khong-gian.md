@@ -25,7 +25,7 @@ grade: 12
 
 - Gọi $i,j,k$ lần lượt là ba vectơ đơn vị trên các trục $Ox,Oy,Oz$.
 
-- Hệ ba trục như vậy được gọi là hệ trục tọ̣a độ Descartes vuông gócOxyztrong không gian hay gọi đơn giản hệ tọa độ $Oxyz$.
+- Hệ ba trục như vậy được gọi là hệ trục tọa độ Descartes vuông gócOxyztrong không gian hay gọi đơn giản hệ tọa độ $Oxyz$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b2_image9.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 

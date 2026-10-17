@@ -160,7 +160,7 @@ Với mọi góc $\alpha$ ($0^\circ \le \alpha \le 180^\circ$) thỏa mãn đi�
 
 Kéo thanh trượt góc $\alpha$ từ $0^\circ$ đến $180^\circ$ để quan sát tọa độ điểm $M(x_0, y_0)$, hình chiếu lên trục $\sin$ (tung độ) và trục $\cos$ (hoành độ):
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">⭕ Phòng Khám Phá Nửa Đường Tròn Đơn Vị</h3>
@@ -178,7 +178,7 @@ Kéo thanh trượt góc $\alpha$ từ $0^\circ$ đến $180^\circ$ để quan s
           <line x1="-130" y1="0" x2="130" y2="0" />
           <line x1="0" y1="10" x2="0" y2="-130" />
         </g>
-        <text x="120" y="16" font-size="11" fill="#475569" font-weight="bold">x (Cos)</text>
+        <text x="136" y="16" text-anchor="end" font-size="11" fill="#475569" font-weight="bold">x (Cos)</text>
         <text x="6" y="-120" font-size="11" fill="#475569" font-weight="bold">y (Sin)</text>
         <text x="-12" y="14" font-size="10" fill="#64748b">O</text>
 

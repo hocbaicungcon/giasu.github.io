@@ -24,7 +24,7 @@ Tia laser định hướng thi công nhà chọc trời, đường bay thẳng c
 
 ## 1. Sơ đồ tư duy (Mindmap) Phương trình đường thẳng
 
-```html
+```widget
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0;">
   <div style="background: #f8fafc; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
     <h4 style="margin: 0 0 8px 0; color: #1e40af;">1. Vectơ chỉ phương & Pháp tuyến</h4>
@@ -123,7 +123,7 @@ Tia laser định hướng thi công nhà chọc trời, đường bay thẳng c
 
 Di chuyển điểm đi qua $M_0(x_0; y_0)$ và vectơ pháp tuyến $\vec{n} = (a; b)$ để quan sát đường thẳng xoay chuyển động, tự động cập nhật cả hai dạng phương trình tham số và tổng quát:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">📐 Studio Hình Học Giải Tích: Đường Thẳng Trong Oxy</h3>

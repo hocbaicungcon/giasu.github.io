@@ -147,7 +147,7 @@ Ba điểm phân biệt $A, B, C$ thẳng hàng khi và chỉ khi hai vectơ $\v
 
 Nhập tọa độ điểm $A$ và $B$ hoặc kéo trực tiếp trên hệ trục để kiểm tra tọa độ $\vec{AB}$, độ dài đoạn thẳng và tọa độ trung điểm $I$:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">🌐 Không Gian Tọa Độ Giải Tích Oxy</h3>
@@ -311,8 +311,8 @@ Nhập tọa độ điểm $A$ và $B$ hoặc kéo trực tiếp trên hệ tr�
     const rect = svg.getBoundingClientRect();
     const cx = e.clientX || (e.touches && e.touches[0].clientX);
     const cy = e.clientY || (e.touches && e.touches[0].clientY);
-    const svgX = (cx - rect.left) * (240 / rect.width) - 120;
-    const svgY = (cy - rect.top) * (240 / rect.height) - 120;
+    const svgX = Math.max(-112, Math.min(112, (cx - rect.left) * (240 / rect.width) - 120));
+    const svgY = Math.max(-112, Math.min(112, (cy - rect.top) * (240 / rect.height) - 120));
     return {
       x: Math.round((svgX / scale) * 2) / 2,
       y: Math.round((-svgY / scale) * 2) / 2

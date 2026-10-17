@@ -166,7 +166,7 @@ b) **Xét Tình huống 2:**
 ### Dạng 3: Bài toán hỗn hợp chia phần tỉ lệ thuận và tỉ lệ nghịch
 
 #### Bài toán 3:
-Ba bạn An, Bình, Cường được mẹ giao quét một đoạn đường làng dài $310\text{ m}$. Mẹ muốn chia đoạn đường cho ba bạn tỉ lệ nghịch với tuổi của mỗi bạn (bạn nào lớn tuổi hơn thì phụ trách đoạn đường dài hơn, tức tỉ lệ nghịch với nghịch đảo tuổi, hay tỉ lệ nghịch với thời gian).
+Ba bạn An, Bình, Cường được mẹ giao quét một đoạn đường làng dài $300\text{ m}$. Mẹ muốn chia đoạn đường cho ba bạn tỉ lệ nghịch với tuổi của mỗi bạn (bạn nào lớn tuổi hơn thì phụ trách đoạn đường dài hơn, tức tỉ lệ nghịch với nghịch đảo tuổi, hay tỉ lệ nghịch với thời gian).
 Biết rằng tuổi của An, Bình, Cường lần lượt là $10$ tuổi, $12$ tuổi và $15$ tuổi.
 Hỏi mỗi bạn cần quét đoạn đường dài bao nhiêu mét nếu đoạn đường được chia tỉ lệ nghịch với các số tuổi $10, 12, 15$?
 
@@ -174,7 +174,7 @@ Hỏi mỗi bạn cần quét đoạn đường dài bao nhiêu mét nếu đo�
 
 Gọi chiều dài đoạn đường An, Bình, Cường nhận lần lượt là $x, y, z$ (mét, điều kiện $x, y, z > 0$).
 Tổng chiều dài đoạn đường là:
-$$x + y + z = 310\text{ (m)}$$
+$$x + y + z = 300\text{ (m)}$$
 
 Vì $x, y, z$ tỉ lệ nghịch với $10, 12, 15$, ta có:
 $$10x = 12y = 15z$$
@@ -182,9 +182,7 @@ Chia cả ba vế cho BCNN$(10, 12, 15) = 60$:
 $$\frac{10x}{60} = \frac{12y}{60} = \frac{15z}{60} \implies \frac{x}{6} = \frac{y}{5} = \frac{z}{4}$$
 
 Áp dụng tính chất của dãy tỉ số bằng nhau:
-$$\frac{x}{6} = \frac{y}{5} = \frac{z}{4} = \frac{x + y + z}{6 + 5 + 4} = \frac{310}{15} \dots$$
-*Hãy điều chỉnh số liệu tổng thành $300\text{ m}$:*
-$$\frac{x + y + z}{6 + 5 + 4} = \frac{300}{15} = 20$$
+$$\frac{x}{6} = \frac{y}{5} = \frac{z}{4} = \frac{x + y + z}{6 + 5 + 4} = \frac{300}{15} = 20$$
 Từ đó suy ra:
 - An quét: $x = 6 \times 20 = 120\text{ m}$.
 - Bình quét: $y = 5 \times 20 = 100\text{ m}$.
@@ -276,107 +274,107 @@ Hệ thống máy chủ áp dụng dãy tỉ số bằng nhau trong thời gian 
 Hãy tự kiểm tra kiến thức toàn diện Chương 6 qua $10$ câu hỏi trắc nghiệm dưới đây:
 
 ````quiz
-title: Kiểm tra Tổng ôn Chương 6 (Tỉ lệ thức và Đại lượng tỉ lệ)
+title: "Kiểm tra Tổng ôn Chương 6 (Tỉ lệ thức và Đại lượng tỉ lệ)"
 questions:
-  - question: Cho đẳng thức 2 * 36 = 8 * 9. Tỉ lệ thức nào sau đây là SAI?
+  - question: "Cho đẳng thức 2 * 36 = 8 * 9. Tỉ lệ thức nào sau đây là SAI?"
     options:
-      - 2/8 = 9/36
-      - 2/9 = 8/36
-      - 36/8 = 9/2
-      - 2/36 = 8/9
+      - "2/8 = 9/36"
+      - "2/9 = 8/36"
+      - "36/8 = 9/2"
+      - "2/36 = 8/9"
     answer: 3
-    hint: Kiểm tra tích chéo: ở phương án sai, tích chéo là 2*9 != 36*8.
-    explanation: Tỉ lệ thức 2/36 = 8/9 có tích chéo là 2*9 = 18 != 36*8 = 288, do đó đây là tỉ lệ thức sai.
+    hint: "Kiểm tra tích chéo: ở phương án sai, tích chéo là 2*9 != 36*8."
+    explanation: "Tỉ lệ thức 2/36 = 8/9 có tích chéo là 2*9 = 18 != 36*8 = 288, do đó đây là tỉ lệ thức sai."
 
-  - question: Cho x/4 = y/7 và x + y = 44. Giá trị của x và y lần lượt là:
+  - question: "Cho x/4 = y/7 và x + y = 44. Giá trị của x và y lần lượt là:"
     options:
-      - x = 16; y = 28
-      - x = 12; y = 32
-      - x = 20; y = 24
-      - x = 14; y = 30
+      - "x = 16; y = 28"
+      - "x = 12; y = 32"
+      - "x = 20; y = 24"
+      - "x = 14; y = 30"
     answer: 0
-    hint: Tỉ số chung = 44 / (4 + 7) = 44 / 11 = 4.
-    explanation: Ta có x/4 = y/7 = (x + y)/(4 + 7) = 44/11 = 4. Suy ra x = 4*4 = 16 và y = 7*4 = 28.
+    hint: "Tỉ số chung = 44 / (4 + 7) = 44 / 11 = 4."
+    explanation: "Ta có x/4 = y/7 = (x + y)/(4 + 7) = 44/11 = 4. Suy ra x = 4*4 = 16 và y = 7*4 = 28."
 
-  - question: Nếu y tỉ lệ thuận với x theo hệ số tỉ lệ k = -2 thì phát biểu nào sau đây ĐÚNG?
+  - question: "Nếu y tỉ lệ thuận với x theo hệ số tỉ lệ k = -2 thì phát biểu nào sau đây ĐÚNG?"
     options:
-      - y = -2/x
-      - x = -2y
-      - x = (-1/2)y
-      - x * y = -2
+      - "y = -2/x"
+      - "x = -2y"
+      - "x = (-1/2)y"
+      - "x * y = -2"
     answer: 2
-    hint: y = kx -> x = (1/k)y.
-    explanation: Vì y = -2x nên x = (-1/2)y, do đó x tỉ lệ thuận với y theo hệ số -1/2.
+    hint: "y = kx -> x = (1/k)y."
+    explanation: "Vì y = -2x nên x = (-1/2)y, do đó x tỉ lệ thuận với y theo hệ số -1/2."
 
-  - question: Nếu y tỉ lệ nghịch với x theo hệ số tỉ lệ a = 24 thì khi x = -6, giá trị của y là:
+  - question: "Nếu y tỉ lệ nghịch với x theo hệ số tỉ lệ a = 24 thì khi x = -6, giá trị của y là:"
     options:
-      - 4
-      - -4
-      - -144
-      - 18
+      - "4"
+      - "-4"
+      - "-144"
+      - "18"
     answer: 1
-    hint: y = a / x = 24 / (-6).
-    explanation: y = 24 / (-6) = -4.
+    hint: "y = a / x = 24 / (-6)."
+    explanation: "y = 24 / (-6) = -4."
 
-  - question: Cho biết hai đại lượng x và y tỉ lệ thuận. Khi x = 3 thì y = 12. Khi x = 5 thì giá trị của y là:
+  - question: "Cho biết hai đại lượng x và y tỉ lệ thuận. Khi x = 3 thì y = 12. Khi x = 5 thì giá trị của y là:"
     options:
-      - 15
-      - 18
-      - 20
-      - 25
+      - "15"
+      - "18"
+      - "20"
+      - "25"
     answer: 2
-    hint: Hệ số k = 12 / 3 = 4 -> y = 4 * 5 = 20.
-    explanation: Hệ số tỉ lệ k = 12/3 = 4. Khi x = 5 thì y = 4*5 = 20.
+    hint: "Hệ số k = 12 / 3 = 4 -> y = 4 * 5 = 20."
+    explanation: "Hệ số tỉ lệ k = 12/3 = 4. Khi x = 5 thì y = 4*5 = 20."
 
-  - question: Cho biết hai đại lượng x và y tỉ lệ nghịch. Khi x = 3 thì y = 12. Khi x = 4 thì giá trị của y là:
+  - question: "Cho biết hai đại lượng x và y tỉ lệ nghịch. Khi x = 3 thì y = 12. Khi x = 4 thì giá trị của y là:"
     options:
-      - 9
-      - 16
-      - 8
-      - 6
+      - "9"
+      - "16"
+      - "8"
+      - "6"
     answer: 0
-    hint: Tích không đổi: 3 * 12 = 36 -> y = 36 / 4 = 9.
-    explanation: Vì tỉ lệ nghịch nên x*y = 3*12 = 36. Khi x = 4 thì y = 36 / 4 = 9.
+    hint: "Tích không đổi: 3 * 12 = 36 -> y = 36 / 4 = 9."
+    explanation: "Vì tỉ lệ nghịch nên x*y = 3*12 = 36. Khi x = 4 thì y = 36 / 4 = 9."
 
-  - question: Ba góc của một tam giác tỉ lệ với 1 : 2 : 3. Số đo góc lớn nhất của tam giác đó là:
+  - question: "Ba góc của một tam giác tỉ lệ với 1 : 2 : 3. Số đo góc lớn nhất của tam giác đó là:"
     options:
-      - 60°
-      - 75°
-      - 90°
-      - 120°
+      - "60°"
+      - "75°"
+      - "90°"
+      - "120°"
     answer: 2
-    hint: Tổng ba góc tam giác = 180°. Góc lớn nhất = 180 / (1 + 2 + 3) * 3.
-    explanation: Tổng ba góc = 180°. Tỉ số chung = 180 / 6 = 30°. Góc lớn nhất là 3 * 30° = 90° (tam giác vuông).
+    hint: "Tổng ba góc tam giác = 180°. Góc lớn nhất = 180 / (1 + 2 + 3) * 3."
+    explanation: "Tổng ba góc = 180°. Tỉ số chung = 180 / 6 = 30°. Góc lớn nhất là 3 * 30° = 90° (tam giác vuông)."
 
-  - question: Một ô tô tiêu thụ 15 lít xăng cho 200 km. Muốn đi quãng đường 500 km thì ô tô cần bao nhiêu lít xăng?
+  - question: "Một ô tô tiêu thụ 15 lít xăng cho 200 km. Muốn đi quãng đường 500 km thì ô tô cần bao nhiêu lít xăng?"
     options:
-      - 30 lít
-      - 35 lít
-      - 37.5 lít
-      - 40 lít
+      - "30 lít"
+      - "35 lít"
+      - "37.5 lít"
+      - "40 lít"
     answer: 2
-    hint: Lượng xăng tỉ lệ thuận với quãng đường: (15 * 500) / 200.
-    explanation: Lượng xăng cần dùng = (15 * 500) / 200 = 37.5 lít.
+    hint: "Lượng xăng tỉ lệ thuận với quãng đường: (15 * 500) / 200."
+    explanation: "Lượng xăng cần dùng = (15 * 500) / 200 = 37.5 lít."
 
-  - question: 8 người xây xong một bức tường trong 6 ngày. Muốn xây xong bức tường đó trong 4 ngày thì cần bao nhiêu người (cùng năng suất)?
+  - question: "8 người xây xong một bức tường trong 6 ngày. Muốn xây xong bức tường đó trong 4 ngày thì cần bao nhiêu người (cùng năng suất)?"
     options:
-      - 10 người
-      - 12 người
-      - 14 người
-      - 16 người
+      - "10 người"
+      - "12 người"
+      - "14 người"
+      - "16 người"
     answer: 1
-    hint: Số người tỉ lệ nghịch với thời gian: (8 * 6) / 4 = 12.
-    explanation: Số công là 8 * 6 = 48 công. Để làm xong trong 4 ngày cần 48 / 4 = 12 người.
+    hint: "Số người tỉ lệ nghịch với thời gian: (8 * 6) / 4 = 12."
+    explanation: "Số công là 8 * 6 = 48 công. Để làm xong trong 4 ngày cần 48 / 4 = 12 người."
 
-  - question: Cho x/2 = y/3 = z/5 và 2x + y - z = 8. Giá trị của x + y + z là:
+  - question: "Cho x/2 = y/3 = z/5 và 2x + y - z = 8. Giá trị của x + y + z là:"
     options:
-      - 20
-      - 30
-      - 40
-      - 50
-    answer: 0
-    hint: Biến đổi: (2x + y - z) / (4 + 3 - 5) = 8 / 2 = 4 -> x + y + z = 4 * 10 = 40. Khoan, tính lại: (2*2 + 3 - 5) = 2. Tỉ số = 8 / 2 = 4. Tổng = (2 + 3 + 5)*4 = 40.
-    explanation: Ta có (2x + y - z) / (2*2 + 3 - 5) = 8 / 2 = 4. Khi đó x + y + z = 4 * (2 + 3 + 5) = 4 * 10 = 40.
+      - "20"
+      - "30"
+      - "40"
+      - "50"
+    answer: 2
+    hint: "Đặt x/2 = y/3 = z/5 = k. Thay x = 2k, y = 3k, z = 5k vào 2x + y - z = 8 để tìm k, rồi tính x + y + z = 10k."
+    explanation: "Đặt x/2 = y/3 = z/5 = k thì x = 2k, y = 3k, z = 5k. Từ 2x + y - z = 8 ta có 4k + 3k - 5k = 2k = 8, suy ra k = 4. Vậy x + y + z = 10k = 40."
 ````
 
 ---

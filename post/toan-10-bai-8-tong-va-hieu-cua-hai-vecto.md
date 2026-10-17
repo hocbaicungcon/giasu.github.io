@@ -165,7 +165,7 @@ $$\vec{AB} - \vec{AC} = \vec{CB}$$
 
 Kéo các điểm ngọn của hai vectơ $\vec{u}$ và $\vec{v}$ để quan sát vectơ tổng $\vec{w} = \vec{u} + \vec{v}$ tự động cập nhật theo quy tắc hình bình hành:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">⚡ Mô Phỏng Hợp Lực Hình Bình Hành</h3>
@@ -306,8 +306,8 @@ Kéo các điểm ngọn của hai vectơ $\vec{u}$ và $\vec{v}$ để quan sá
     const cx = e.clientX || (e.touches && e.touches[0].clientX);
     const cy = e.clientY || (e.touches && e.touches[0].clientY);
     return {
-      x: (cx - rect.left) * (320 / rect.width),
-      y: (cy - rect.top) * (240 / rect.height)
+      x: Math.max(8, Math.min(312, (cx - rect.left) * (320 / rect.width))),
+      y: Math.max(8, Math.min(232, (cy - rect.top) * (240 / rect.height)))
     };
   }
 

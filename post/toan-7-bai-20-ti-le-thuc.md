@@ -346,107 +346,107 @@ Toán học tỉ lệ thức chính là ngôn ngữ định lượng chính xác
 Hãy rèn luyện phản xạ tính chất tỉ lệ thức qua $10$ câu hỏi trắc nghiệm dưới đây:
 
 ````quiz
-title: Kiểm tra kiến thức Tỉ lệ thức (Toán 7 - Bài 20)
+title: "Kiểm tra kiến thức Tỉ lệ thức (Toán 7 - Bài 20)"
 questions:
-  - question: Tỉ lệ thức là đẳng thức của yếu tố nào sau đây?
+  - question: "Tỉ lệ thức là đẳng thức của yếu tố nào sau đây?"
     options:
-      - Hai tổng đại số.
-      - Hai hiệu số.
-      - Hai tỉ số.
-      - Hai tích số.
+      - "Hai tổng đại số."
+      - "Hai hiệu số."
+      - "Hai tỉ số."
+      - "Hai tích số."
     answer: 2
-    hint: Xem lại định nghĩa cơ bản ở mục I.1.
-    explanation: Tỉ lệ thức là đẳng thức của hai tỉ số a/b = c/d.
+    hint: "Xem lại định nghĩa cơ bản ở mục I.1."
+    explanation: "Tỉ lệ thức là đẳng thức của hai tỉ số a/b = c/d."
 
-  - question: Trong tỉ lệ thức a/b = c/d, các số nào được gọi là ngoại tỉ?
+  - question: "Trong tỉ lệ thức a/b = c/d, các số nào được gọi là ngoại tỉ?"
     options:
-      - b và c
-      - a và d
-      - a và c
-      - b và d
+      - "b và c"
+      - "a và d"
+      - "a và c"
+      - "b và d"
     answer: 1
-    hint: Ngoại tỉ là hai số nằm ở hai đầu rìa ngoài cùng.
-    explanation: a và d là hai số hạng nằm ở ngoài cùng nên được gọi là các ngoại tỉ.
+    hint: "Ngoại tỉ là hai số nằm ở hai đầu rìa ngoài cùng."
+    explanation: "a và d là hai số hạng nằm ở ngoài cùng nên được gọi là các ngoại tỉ."
 
-  - question: Nếu a/b = c/d thì đẳng thức tích nào sau đây là ĐÚNG?
+  - question: "Nếu a/b = c/d thì đẳng thức tích nào sau đây là ĐÚNG?"
     options:
-      - a * c = b * d
-      - a * b = c * d
-      - a * d = b * c
-      - a + d = b + c
+      - "a * c = b * d"
+      - "a * b = c * d"
+      - "a * d = b * c"
+      - "a + d = b + c"
     answer: 2
-    hint: Tính chất tích chéo: tích ngoại tỉ bằng tích trung tỉ.
-    explanation: Theo tính chất cơ bản của tỉ lệ thức, a/b = c/d suy ra a*d = b*c.
+    hint: "Tính chất tích chéo: tích ngoại tỉ bằng tích trung tỉ."
+    explanation: "Theo tính chất cơ bản của tỉ lệ thức, a/b = c/d suy ra a*d = b*c."
 
-  - question: Cặp tỉ số nào sau đây lập thành một tỉ lệ thức?
+  - question: "Cặp tỉ số nào sau đây lập thành một tỉ lệ thức?"
     options:
-      - 3/5 và 9/20
-      - 4/7 và 12/21
-      - 2/3 và 4/9
-      - 5/8 và 15/25
+      - "3/5 và 9/20"
+      - "4/7 và 12/21"
+      - "2/3 và 4/9"
+      - "5/8 và 15/25"
     answer: 1
-    hint: Rút gọn 12/21 bằng cách chia cả tử và mẫu cho 3.
-    explanation: Ta có 12/21 = 4/7, do đó 4/7 = 12/21 lập thành một tỉ lệ thức.
+    hint: "Rút gọn 12/21 bằng cách chia cả tử và mẫu cho 3."
+    explanation: "Ta có 12/21 = 4/7, do đó 4/7 = 12/21 lập thành một tỉ lệ thức."
 
-  - question: Tìm x trong tỉ lệ thức x/12 = 5/4.
+  - question: "Tìm x trong tỉ lệ thức x/12 = 5/4."
     options:
-      - x = 10
-      - x = 15
-      - x = 20
-      - x = 60
+      - "x = 10"
+      - "x = 15"
+      - "x = 20"
+      - "x = 60"
     answer: 1
-    hint: Nhân chéo chia thẳng: x = (12 * 5) / 4.
-    explanation: Ta có x = (12 * 5) / 4 = 60 / 4 = 15.
+    hint: "Nhân chéo chia thẳng: x = (12 * 5) / 4."
+    explanation: "Ta có x = (12 * 5) / 4 = 60 / 4 = 15."
 
-  - question: Từ đẳng thức 3 * 16 = 4 * 12, tỉ lệ thức nào sau đây KHÔNG THỂ lập được?
+  - question: "Từ đẳng thức 3 * 16 = 4 * 12, tỉ lệ thức nào sau đây KHÔNG THỂ lập được?"
     options:
-      - 3/4 = 12/16
-      - 3/12 = 4/16
-      - 16/4 = 12/3
-      - 3/16 = 4/12
+      - "3/4 = 12/16"
+      - "3/12 = 4/16"
+      - "16/4 = 12/3"
+      - "3/16 = 4/12"
     answer: 3
-    hint: Kiểm tra tích chéo: ở phương án sai, tích chéo là 3*12 != 16*4.
-    explanation: Tỉ lệ thức 3/16 = 4/12 có tích chéo 3*12 = 36 != 4*16 = 64, nên không thể lập từ đẳng thức đã cho.
+    hint: "Kiểm tra tích chéo: ở phương án sai, tích chéo là 3*12 != 16*4."
+    explanation: "Tỉ lệ thức 3/16 = 4/12 có tích chéo 3*12 = 36 != 4*16 = 64, nên không thể lập từ đẳng thức đã cho."
 
-  - question: Giá trị của x thỏa mãn (x + 1)/3 = 8/6 là:
+  - question: "Giá trị của x thỏa mãn (x + 1)/3 = 8/6 là:"
     options:
-      - x = 2
-      - x = 3
-      - x = 4
-      - x = 5
+      - "x = 2"
+      - "x = 3"
+      - "x = 4"
+      - "x = 5"
     answer: 1
-    hint: Rút gọn vế phải: 8/6 = 4/3, suy ra x + 1 = 4.
-    explanation: Ta có (x + 1)/3 = 4/3 suy ra x + 1 = 4, do đó x = 3.
+    hint: "Rút gọn vế phải: 8/6 = 4/3, suy ra x + 1 = 4."
+    explanation: "Ta có (x + 1)/3 = 4/3 suy ra x + 1 = 4, do đó x = 3."
 
-  - question: Một bản đồ có tỉ lệ 1 : 200 000. Khoảng cách đo được trên bản đồ giữa hai điểm A và B là 4 cm. Khoảng cách thực địa giữa hai điểm đó là:
+  - question: "Một bản đồ có tỉ lệ 1 : 200 000. Khoảng cách đo được trên bản đồ giữa hai điểm A và B là 4 cm. Khoảng cách thực địa giữa hai điểm đó là:"
     options:
-      - 800 m
-      - 8 km
-      - 80 km
-      - 800 km
+      - "800 m"
+      - "8 km"
+      - "80 km"
+      - "800 km"
     answer: 1
-    hint: Nhân khoảng cách trên bản đồ với mẫu số tỉ lệ rồi đổi sang km.
-    explanation: Khoảng cách thực địa = 4 * 200 000 = 800 000 cm = 8 000 m = 8 km.
+    hint: "Nhân khoảng cách trên bản đồ với mẫu số tỉ lệ rồi đổi sang km."
+    explanation: "Khoảng cách thực địa = 4 * 200 000 = 800 000 cm = 8 000 m = 8 km."
 
-  - question: Biết rằng 4 chiếc bánh pizza có giá 360 nghìn đồng. Giá tiền của 7 chiếc bánh pizza cùng loại là:
+  - question: "Biết rằng 4 chiếc bánh pizza có giá 360 nghìn đồng. Giá tiền của 7 chiếc bánh pizza cùng loại là:"
     options:
-      - 540 nghìn đồng
-      - 630 nghìn đồng
-      - 700 nghìn đồng
-      - 720 nghìn đồng
+      - "540 nghìn đồng"
+      - "630 nghìn đồng"
+      - "700 nghìn đồng"
+      - "720 nghìn đồng"
     answer: 1
-    hint: Tính giá 1 chiếc: 360 / 4 = 90 nghìn, rồi nhân 7.
-    explanation: Lập tỉ lệ thức x/7 = 360/4 suy ra x = (7 * 360) / 4 = 630 nghìn đồng.
+    hint: "Tính giá 1 chiếc: 360 / 4 = 90 nghìn, rồi nhân 7."
+    explanation: "Lập tỉ lệ thức x/7 = 360/4 suy ra x = (7 * 360) / 4 = 630 nghìn đồng."
 
-  - question: Tỉ lệ thức nào sau đây tương đương với đẳng thức x * y = z * t (với x, y, z, t khác 0)?
+  - question: "Tỉ lệ thức nào sau đây tương đương với đẳng thức x * y = z * t (với x, y, z, t khác 0)?"
     options:
-      - x/z = y/t
-      - x/z = t/y
-      - x/y = z/t
-      - x/t = z/y
+      - "x/z = y/t"
+      - "x/z = t/y"
+      - "x/y = z/t"
+      - "x/t = z/y"
     answer: 1
-    hint: Tích chéo phải đảm bảo x nhân y và z nhân t.
-    explanation: Từ x/z = t/y nhân chéo ta được x*y = z*t (chính xác).
+    hint: "Tích chéo phải đảm bảo x nhân y và z nhân t."
+    explanation: "Từ x/z = t/y nhân chéo ta được x*y = z*t (chính xác)."
 ````
 
 ---

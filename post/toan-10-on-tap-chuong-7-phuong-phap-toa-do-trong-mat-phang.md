@@ -274,7 +274,7 @@ $$\Delta: x - y + 4 = 0$$
 - **Ý 2 (1,0 điểm):**
   - Tính khoảng cách $IM$:
     $$IM = \sqrt{(5 - 2)^2 + (1 - (-3))^2} = \sqrt{3^2 + 4^2} = 5 = R$$
-    Wait, $IM = \sqrt{9 + 16} = 5 = R \implies M$ nằm **trên** đường tròn $(C)$! *(0,25đ)*
+    Suy ra $M$ nằm **trên** đường tròn $(C)$ *(0,25đ)*.
   - Vì $M(5; 1) \in (C)$, tiếp tuyến tại $M$ nhận vectơ $\vec{IM} = (5 - 2; 1 - (-3)) = (3; 4)$ làm vectơ pháp tuyến *(0,25đ)*.
   - Phương trình tiếp tuyến:
     $$3(x - 5) + 4(y - 1) = 0 \iff 3x + 4y - 19 = 0$$

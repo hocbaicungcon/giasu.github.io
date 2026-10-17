@@ -309,12 +309,7 @@ const __initApp = function() {
       btns.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      };
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', __initApp);
-      } else {
-        __initApp();
-      }
+      });
       this.style.background = '#2563eb';
       this.style.color = '#fff';
       draw(this.dataset.type);
@@ -322,7 +317,12 @@ const __initApp = function() {
   });
 
   draw('cubic');
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

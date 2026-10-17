@@ -466,7 +466,7 @@ Bằng cách đo chính xác một cạnh đáy $AB$ duy nhất trên mặt đ�
       ],
       "answer": 1,
       "hint": "Bất đẳng thức kép: $6 - 1 < MN < 6 + 1 \\implies 5 < MN < 7$. Không có số nguyên nào giữa 5 và 7? Hãy kiểm tra lại: $6 - 1 = 5, 6 + 1 = 7$.",
-      "explanation": "Bất đẳng thức kép: $6 - 1 < MN < 6 + 1 \\implies 5 < MN < 7$. Trong khoảng $(5; 7)$ không có số nguyên nào, do đó đề bài trên không tồn tại cạnh nguyên. Nhưng nếu $MN$ thuộc $\{5; 7\}$ thì suy biến. Chọn đáp án logic suy diễn đúng."
+      "explanation": "Bất đẳng thức kép: $6 - 1 < MN < 6 + 1 \\implies 5 < MN < 7$. Trong khoảng $(5; 7)$ không có số nguyên nào, do đó đề bài trên không tồn tại cạnh nguyên. Nhưng nếu $MN$ thuộc $\\{5; 7\\}$ thì suy biến. Chọn đáp án logic suy diễn đúng."
     },
     {
       "question": "Nếu ba điểm A, B, C thỏa mãn AB = 5 cm, BC = 3 cm, AC = 8 cm thì khẳng định nào sau đây là ĐÚNG?",

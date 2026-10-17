@@ -362,107 +362,107 @@ Nếu lặp lại phép trừ này $n$ lần, kết quả cuối cùng sẽ là 
 Hãy kiểm tra năng lực cộng trừ đa thức qua $10$ câu hỏi trắc nghiệm sau:
 
 ````quiz
-title: Kiểm tra Cộng và Trừ Đa thức một biến (Toán 7 - Bài 26)
+title: "Kiểm tra Cộng và Trừ Đa thức một biến (Toán 7 - Bài 26)"
 questions:
-  - question: Cho hai đa thức P(x) = 3x^2 - 4x + 1 và Q(x) = 2x^2 + 4x - 5. Tổng P(x) + Q(x) bằng:
+  - question: "Cho hai đa thức P(x) = 3x^2 - 4x + 1 và Q(x) = 2x^2 + 4x - 5. Tổng P(x) + Q(x) bằng:"
     options:
-      - 5x^2 - 4
-      - 5x^2 + 8x - 4
-      - x^2 - 4
-      - 5x^2 - 8x + 6
+      - "5x^2 - 4"
+      - "5x^2 + 8x - 4"
+      - "x^2 - 4"
+      - "5x^2 - 8x + 6"
     answer: 0
-    hint: Nhóm (3x^2 + 2x^2) + (-4x + 4x) + (1 - 5).
-    explanation: P(x) + Q(x) = (3+2)x^2 + (-4+4)x + (1-5) = 5x^2 - 4.
+    hint: "Nhóm (3x^2 + 2x^2) + (-4x + 4x) + (1 - 5)."
+    explanation: "P(x) + Q(x) = (3+2)x^2 + (-4+4)x + (1-5) = 5x^2 - 4."
 
-  - question: Cho hai đa thức A(x) = 4x^3 - 2x + 7 và B(x) = 4x^3 + 5x - 3. Hiệu A(x) - B(x) bằng:
+  - question: "Cho hai đa thức A(x) = 4x^3 - 2x + 7 và B(x) = 4x^3 + 5x - 3. Hiệu A(x) - B(x) bằng:"
     options:
-      - 8x^3 + 3x + 4
-      - -7x + 10
-      - 7x + 10
-      - -7x + 4
+      - "8x^3 + 3x + 4"
+      - "-7x + 10"
+      - "7x + 10"
+      - "-7x + 4"
     answer: 1
-    hint: Phá ngoặc đổi dấu B(x): 4x^3 - 2x + 7 - 4x^3 - 5x + 3.
-    explanation: A(x) - B(x) = (4-4)x^3 + (-2-5)x + (7+3) = -7x + 10.
+    hint: "Phá ngoặc đổi dấu B(x): 4x^3 - 2x + 7 - 4x^3 - 5x + 3."
+    explanation: "A(x) - B(x) = (4-4)x^3 + (-2-5)x + (7+3) = -7x + 10."
 
-  - question: Bậc của hiệu A(x) - B(x) trong câu hỏi trên là:
+  - question: "Bậc của hiệu A(x) - B(x) trong câu hỏi trên là:"
     options:
-      - Bậc 3
-      - Bậc 2
-      - Bậc 1
-      - Bậc 0
+      - "Bậc 3"
+      - "Bậc 2"
+      - "Bậc 1"
+      - "Bậc 0"
     answer: 2
-    hint: Kết quả là -7x + 10, số mũ lớn nhất của x là 1.
-    explanation: Hai hạng tử bậc 3 triệt tiêu nhau, kết quả là -7x + 10 có bậc là 1.
+    hint: "Kết quả là -7x + 10, số mũ lớn nhất của x là 1."
+    explanation: "Hai hạng tử bậc 3 triệt tiêu nhau, kết quả là -7x + 10 có bậc là 1."
 
-  - question: Khi thực hiện phép trừ hai đa thức theo cột dọc, quy tắc nào sau đây là BẮT BUỘC?
+  - question: "Khi thực hiện phép trừ hai đa thức theo cột dọc, quy tắc nào sau đây là BẮT BUỘC?"
     options:
-      - Phải nhân cả hai đa thức với 2.
-      - Các hạng tử có cùng số mũ của biến phải đặt thẳng cột với nhau.
-      - Luôn phải cộng các hệ số thay vì trừ.
-      - Đa thức nào có bậc nhỏ hơn phải đặt ở trên.
+      - "Phải nhân cả hai đa thức với 2."
+      - "Các hạng tử có cùng số mũ của biến phải đặt thẳng cột với nhau."
+      - "Luôn phải cộng các hệ số thay vì trừ."
+      - "Đa thức nào có bậc nhỏ hơn phải đặt ở trên."
     answer: 1
-    hint: Tương tự như đặt tính cộng trừ số học theo hàng đơn vị, hàng chục.
-    explanation: Khi đặt tính cột dọc, các đơn thức cùng số mũ phải thẳng cột với nhau để cộng trừ chính xác.
+    hint: "Tương tự như đặt tính cộng trừ số học theo hàng đơn vị, hàng chục."
+    explanation: "Khi đặt tính cột dọc, các đơn thức cùng số mũ phải thẳng cột với nhau để cộng trừ chính xác."
 
-  - question: Tìm đa thức M(x) biết M(x) + (2x^2 - 5) = 6x^2 + 1.
+  - question: "Tìm đa thức M(x) biết M(x) + (2x^2 - 5) = 6x^2 + 1."
     options:
-      - 4x^2 + 6
-      - 4x^2 - 4
-      - 8x^2 - 4
-      - 4x^2 - 6
+      - "4x^2 + 6"
+      - "4x^2 - 4"
+      - "8x^2 - 4"
+      - "4x^2 - 6"
     answer: 0
-    hint: M(x) = (6x^2 + 1) - (2x^2 - 5) = 6x^2 + 1 - 2x^2 + 5.
-    explanation: M(x) = 6x^2 + 1 - 2x^2 + 5 = 4x^2 + 6.
+    hint: "M(x) = (6x^2 + 1) - (2x^2 - 5) = 6x^2 + 1 - 2x^2 + 5."
+    explanation: "M(x) = 6x^2 + 1 - 2x^2 + 5 = 4x^2 + 6."
 
-  - question: Cho P(x) = x^4 - 3x^2 + 2 và Q(x) = -x^4 + 3x^2 - 2. Đa thức tổng P(x) + Q(x) là:
+  - question: "Cho P(x) = x^4 - 3x^2 + 2 và Q(x) = -x^4 + 3x^2 - 2. Đa thức tổng P(x) + Q(x) là:"
     options:
-      - 2x^4 - 6x^2 + 4
-      - 0 (đa thức không)
-      - x^4 + 1
-      - Không xác định được
+      - "2x^4 - 6x^2 + 4"
+      - "0 (đa thức không)"
+      - "x^4 + 1"
+      - "Không xác định được"
     answer: 1
-    hint: Hai đa thức có các hệ số tương ứng đối nhau từng đôi một.
-    explanation: Mọi cặp hệ số đối nhau nên tổng triệt tiêu hoàn toàn thành số 0 (đa thức không).
+    hint: "Hai đa thức có các hệ số tương ứng đối nhau từng đôi một."
+    explanation: "Mọi cặp hệ số đối nhau nên tổng triệt tiêu hoàn toàn thành số 0 (đa thức không)."
 
-  - question: Cho P(x) có bậc 4 và Q(x) có bậc 2. Bậc của đa thức tổng P(x) + Q(x) chắc chắn là:
+  - question: "Cho P(x) có bậc 4 và Q(x) có bậc 2. Bậc của đa thức tổng P(x) + Q(x) chắc chắn là:"
     options:
-      - Bậc 2
-      - Bậc 4
-      - Bậc 6
-      - Bậc 8
+      - "Bậc 2"
+      - "Bậc 4"
+      - "Bậc 6"
+      - "Bậc 8"
     answer: 1
-    hint: Vì hai đa thức có bậc khác nhau (4 != 2), hạng tử bậc 4 không thể bị triệt tiêu.
-    explanation: Khi bậc khác nhau, bậc của tổng bằng số lớn hơn giữa hai bậc, tức là bậc 4.
+    hint: "Vì hai đa thức có bậc khác nhau (4 != 2), hạng tử bậc 4 không thể bị triệt tiêu."
+    explanation: "Khi bậc khác nhau, bậc của tổng bằng số lớn hơn giữa hai bậc, tức là bậc 4."
 
-  - question: Cho đa thức H(x) = P(x) - Q(x). Biết hệ số tự do của P(x) là 8 và của Q(x) là -5. Hệ số tự do của H(x) là:
+  - question: "Cho đa thức H(x) = P(x) - Q(x). Biết hệ số tự do của P(x) là 8 và của Q(x) là -5. Hệ số tự do của H(x) là:"
     options:
-      - 3
-      - 13
-      - -13
-      - -40
+      - "3"
+      - "13"
+      - "-13"
+      - "-40"
     answer: 1
-    hint: Lấy hệ số tự do của P trừ đi hệ số tự do của Q: 8 - (-5).
-    explanation: Hệ số tự do của H(x) = 8 - (-5) = 8 + 5 = 13.
+    hint: "Lấy hệ số tự do của P trừ đi hệ số tự do của Q: 8 - (-5)."
+    explanation: "Hệ số tự do của H(x) = 8 - (-5) = 8 + 5 = 13."
 
-  - question: Biểu thức chu vi của một tam giác có độ dài ba cạnh lần lượt là (x + 2), (2x - 1) và (3x + 5) cm là:
+  - question: "Biểu thức chu vi của một tam giác có độ dài ba cạnh lần lượt là (x + 2), (2x - 1) và (3x + 5) cm là:"
     options:
-      - 6x + 6
-      - 5x + 6
-      - 6x + 8
-      - 6x - 6
+      - "6x + 6"
+      - "5x + 6"
+      - "6x + 8"
+      - "6x - 6"
     answer: 0
-    hint: Chu vi là tổng độ dài ba cạnh: (x + 2) + (2x - 1) + (3x + 5).
-    explanation: Chu vi = (x + 2x + 3x) + (2 - 1 + 5) = 6x + 6 (cm).
+    hint: "Chu vi là tổng độ dài ba cạnh: (x + 2) + (2x - 1) + (3x + 5)."
+    explanation: "Chu vi = (x + 2x + 3x) + (2 - 1 + 5) = 6x + 6 (cm)."
 
-  - question: Khẳng định nào sau đây là ĐÚNG về phép trừ đa thức: -(a - b + c)?
+  - question: "Khẳng định nào sau đây là ĐÚNG về phép trừ đa thức: -(a - b + c)?"
     options:
-      - -a - b + c
-      - -a + b - c
-      - -a - b - c
-      - a + b - c
+      - "-a - b + c"
+      - "-a + b - c"
+      - "-a - b - c"
+      - "a + b - c"
     answer: 1
-    hint: Đổi dấu toàn bộ: +a thành -a, -b thành +b, +c thành -c.
-    explanation: Quy tắc bỏ dấu ngoặc có dấu trừ đằng trước: -(a - b + c) = -a + b - c.
+    hint: "Đổi dấu toàn bộ: +a thành -a, -b thành +b, +c thành -c."
+    explanation: "Quy tắc bỏ dấu ngoặc có dấu trừ đằng trước: -(a - b + c) = -a + b - c."
 ````
 
 ---

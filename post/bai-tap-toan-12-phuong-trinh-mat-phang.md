@@ -260,11 +260,21 @@ có phương trình là $7\left ( { x-\frac { 13 } { 2 } } \right.  )+4\left ( {
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image334.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-⌘ Cách 1:≫ Véctơ pháp tuyến $\left ( { α } \right.  )$ là:$n_{ \left ( { α } \right.  ) } =n_{ \left ( { β } \right.  ) } =\left ( { A\,;\,B\,;\,C } \right.  )$.≫ Mặt phẳng $\left ( { α } \right.  )$ qua điểm $M$. ⌘ Cách 2: ≫ Do $\left ( { α } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { β } \right.  )⇒$ $\left ( { α } \right.  ):Ax+By+Cz+D'=0$ $\left ( { D≠D' } \right.  )$≫ Thay điểm $M$ vào $\left ( { α } \right.  )⇒D'=?⇒$ $\left ( { α } \right.  )$.⑵ Song song $\left ( { P } \right.  ):Ax+By+Cz+D=0$ và cách $\left ( { P } \right.  )$ một khoảng bằng $k$.
+
+- **Cách 1:**
+- **Véctơ pháp tuyến:** $\left ( { α } \right.  )$ là:$n_{ \left ( { α } \right.  ) } =n_{ \left ( { β } \right.  ) } =\left ( { A\,;\,B\,;\,C } \right.  )$.
+
+- Mặt phẳng $\left ( { α } \right.  )$ qua điểm $M$. 
+- **Cách 2:**
+
+- Do $\left ( { α } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { β } \right.  )⇒$ $\left ( { α } \right.  ):Ax+By+Cz+D'=0$ $\left ( { D≠D' } \right.  )$
+- Thay điểm $M$ vào $\left ( { α } \right.  )⇒D'=?⇒$ $\left ( { α } \right.  )$.⑵ Song song $\left ( { P } \right.  ):Ax+By+Cz+D=0$ và cách $\left ( { P } \right.  )$ một khoảng bằng $k$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image348.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Vì $\left ( { α } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { P } \right.  )⇒$ $\left ( { α } \right.  ):Ax+By+Cz+D'=0$ $\left ( { D≠D' } \right.  )$.
 
-≫ Vì $\left ( { α } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { P } \right.  )⇒$ $\left ( { α } \right.  ):Ax+By+Cz+D'=0$ $\left ( { D≠D' } \right.  )$.≫ Vì $\left ( { α } \right.  )$ cách $\left ( { P } \right.  )$ một khoảng bằng $k$ $⇒d\left ( { \left ( { α } \right. )\,;\,\left ( { P } \right. ) } \right. )=k d\left ( { M\,;\,\left ( { P } \right. ) } \right. )=k$ $⇔\frac { \left | { D-D' } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }=k⇒D'=?$≫ Có $D'⇒$ phương trình mặt $\left ( { P } \right.  )$ hoàn chỉnh. Phương pháp
+- Vì $\left ( { α } \right.  )$ cách $\left ( { P } \right.  )$ một khoảng bằng $k$ $⇒d\left ( { \left ( { α } \right. )\,;\,\left ( { P } \right. ) } \right. )=k d\left ( { M\,;\,\left ( { P } \right. ) } \right. )=k$ $⇔\frac { \left | { D-D' } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }=k⇒D'=?$
+- Có $D'⇒$ phương trình mặt $\left ( { P } \right.  )$ hoàn chỉnh. Phương pháp
 
 **Ví dụ 5.1.** Trong không gian $Oxyz$, mặt phẳng qua điểm $A\left ( { -1;1;2 } \right.  )$ và song song với mặt phẳng $\left ( { α } \right.  ):2x-2y+z-1=0$ có phương trình là?
 
@@ -318,12 +328,16 @@ Vậy phương trình mặt phẳng $\left ( { Q } \right.  ):2x-2y+z-14=0$.
 - Trong không gian $Oxyz$, viết phương trình mặt phẳng $\left ( { α } \right.  )$ LoạiPhương phápQua $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$ và $⊥$ 2 mặt $\left ( { P } \right.  ):Ax+By+Cz+D=0$,$\,\left ( { Q } \right.  ):A'x+B'y+C'z+D'=0$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image425.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Tìm cặp véctơ $n_{ \left ( { P } \right.  ) }$ và $n_{ \left ( { Q } \right.  ) }$.
+- **Véctơ pháp tuyến:** $\left ( { α } \right.  )$ là:$n=\left[ n_{ \left ( { Q } \right.  ) } \,;\,n_{ \left ( { P } \right.  ) } \right]$.
 
-≫ Tìm cặp véctơ $n_{ \left ( { P } \right.  ) }$ và $n_{ \left ( { Q } \right.  ) }$.≫ Véctơ pháp tuyến $\left ( { α } \right.  )$ là:$n=\left[ n_{ \left ( { Q } \right.  ) } \,;\,n_{ \left ( { P } \right.  ) } \right]$.≫ Mặt phẳng $\left ( { α } \right.  )$ qua điểm $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$. Hoặc bài toán sẽ gặp: “Qua $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$ và vuông góc với giao tuyến của $\left ( { P } \right.  ):Ax+By+Cz+D=0$;$\,\left ( { Q } \right.  ):A'x+B'y+C'z+D'=0$”LoạiPhương phápQua điểm $A\,;\,B$ và vuông góc $\left ( { δ } \right.  ):Ax+By+Cz+D=0$.
+- Mặt phẳng $\left ( { α } \right.  )$ qua điểm $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$. Hoặc bài toán sẽ gặp: “Qua $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$ và vuông góc với giao tuyến của $\left ( { P } \right.  ):Ax+By+Cz+D=0$;$\,\left ( { Q } \right.  ):A'x+B'y+C'z+D'=0$”LoạiPhương phápQua điểm $A\,;\,B$ và vuông góc $\left ( { δ } \right.  ):Ax+By+Cz+D=0$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image434.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Tìm cặp véctơ $\overrightarrow { AB }$ và $\left. n=\left[ \overrightarrow { AB }\,;\,n_{ \left ( { δ } \right.  ) } \right] \right.$.
+- **Véctơ pháp tuyến:** $\left ( { α } \right.  )$ là:$\left. n=\left[ \overrightarrow { AB }\,;\,n_{ \left ( { δ } \right.  ) } \right] \right.$.
 
-≫ Tìm cặp véctơ $\overrightarrow { AB }$ và $\left. n=\left[ \overrightarrow { AB }\,;\,n_{ \left ( { δ } \right.  ) } \right] \right.$.≫ Véctơ pháp tuyến $\left ( { α } \right.  )$ là:$\left. n=\left[ \overrightarrow { AB }\,;\,n_{ \left ( { δ } \right.  ) } \right] \right.$.≫ Mặt phẳng $\left ( { α } \right.  )$ qua điểm $A$. Phương pháp
+- Mặt phẳng $\left ( { α } \right.  )$ qua điểm $A$. Phương pháp
 
 **Ví dụ 6.1.** Trong không gian $Oxyz$, cho hai mặt phẳng $\left ( { α } \right.  ):3x-2y+2z+7=0,$ $\left ( { β } \right.  ):5x-4y+3z+1=0$. Phương trình mặt phẳng đi qua gốc tọa độ $O$ đồng thời vuông góc với cả $\left ( { α } \right.  )$ và $\left ( { β } \right.  )$ là?
 
@@ -408,7 +422,9 @@ $d\left ( { S,\left ( { MNP } \right.  ) } \right.  )=\frac { \left | { 4.\frac 
 
 ### Dạng 8. Vị trí tương đối hai mặt phẳng
 
-Xét điểm mặt phẳng $\left ( { P } \right.  ):Ax+By+Cz+D=0$ có vecto pháp tuyến $n_{ P }$, với:≫ Mặt phẳng $\left ( { Q } \right.  ):A'x+B'y+C'z+D'=0$ có vecto pháp tuyến $n_{ Q }$,Ta có các vị trí tương đối sau:Mặt phẳng $\left ( { P } \right.  )$ Mặt phẳng $\left ( { Q } \right.  )$ $\frac { A } { A' }≠\frac { B } { B' }≠\frac { C } { C' }$ Mặt $\left ( { P } \right.  )$ cắt mặt $\left ( { Q } \right.  )$ $\frac { A } { A' }=\frac { B } { B' }=\frac { C } { C' }≠\frac { D } { D' }$ Mặt $\left ( { P } \right.  )$ song song mặt $\left ( { Q } \right.  )$ $\frac { A } { A' }=\frac { B } { B' }=\frac { C } { C' }=\frac { D } { D' }$ Mặt $\left ( { P } \right.  )$ trùng mặt $\left ( { Q } \right.  )$ $A.A'+B.B'+C.C'=0$ Mặt $\left ( { P } \right.  )$ vuông góc mặt $\left ( { Q } \right.  )$ Phương pháp
+Xét điểm mặt phẳng $\left ( { P } \right.  ):Ax+By+Cz+D=0$ có vecto pháp tuyến $n_{ P }$, với:
+
+- Mặt phẳng $\left ( { Q } \right.  ):A'x+B'y+C'z+D'=0$ có vecto pháp tuyến $n_{ Q }$,Ta có các vị trí tương đối sau:Mặt phẳng $\left ( { P } \right.  )$ Mặt phẳng $\left ( { Q } \right.  )$ $\frac { A } { A' }≠\frac { B } { B' }≠\frac { C } { C' }$ Mặt $\left ( { P } \right.  )$ cắt mặt $\left ( { Q } \right.  )$ $\frac { A } { A' }=\frac { B } { B' }=\frac { C } { C' }≠\frac { D } { D' }$ Mặt $\left ( { P } \right.  )$ song song mặt $\left ( { Q } \right.  )$ $\frac { A } { A' }=\frac { B } { B' }=\frac { C } { C' }=\frac { D } { D' }$ Mặt $\left ( { P } \right.  )$ trùng mặt $\left ( { Q } \right.  )$ $A.A'+B.B'+C.C'=0$ Mặt $\left ( { P } \right.  )$ vuông góc mặt $\left ( { Q } \right.  )$ Phương pháp
 
 **Ví dụ 8.1.** Cho ba mặt phẳng $\left ( { P_{ 1 } } \right.  ):2x-y-2z+1=0$,$\left ( { P_{ 2 } } \right.  ):4x-2y-4z+4=0$,$\left ( { P_{ 3 } } \right.  ):x+4y-z+1=0$. Chứng minh $\left ( { P_{ 1 } } \right.  ){ \rm{ / } }{ \rm{ / } }\,\left ( { P_{ 2 } } \right.  )$ và $\left ( { P_{ 1 } } \right.  )⊥\left ( { P_{ 3 } } \right.  )$.
 

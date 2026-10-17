@@ -42,6 +42,13 @@ Tài liệu bàn giao cho người tiếp tục phát triển giasu.ai.vn. Cập
 - Các khám phá ƯCLN/xác suất/hàm bậc hai nằm trong scripts/explorations.mjs và assets/explorations.js. Sắp xếp xác suất hỗ trợ kéo, bàn phím, nút lên/xuống, kiểm tra và giải thích; tránh bài chỉ trang trí.
 - Bài điền khuyết ưu tiên chọn từ danh sách. Quiz có phản hồi và giải thích, không lộ đáp án trước thao tác.
 
+## Công thức dài
+
+- Công thức khối dài (`$$...$$`) được `scripts/math.mjs` ngắt theo **độ rộng hiển thị ước lượng** (`visualWidth`), không theo độ dài mã: phân số rộng bằng phần rộng hơn của tử/mẫu. Bố cục dùng `aligned` ở kiểu chữ display: không dùng `array` vì KaTeX dựng ô `array` ở cỡ chữ inline, làm phân số, tổng, giới hạn bị nhỏ lại.
+- Chuỗi đẳng thức ngắt bằng quy hoạch động để các dòng cân đối, không để dòng cuối lẻ loi; dấu `=` các dòng thẳng hàng (`lhs &= a \\ &= b`). Mỗi dấu suy ra (`\implies`, `\iff`, ⇔, ⇒) mở một dòng riêng, ký hiệu nằm ở cột trái. Công thức trong dòng chỉ được nâng thành khối khi mã nguồn từ 68 ký tự.
+- Không hiện thanh cuộn ngang ở công thức (CSS ẩn thanh cuộn, vẫn vuốt/cuộn được). Công thức trong dòng rộng hơn khung được `lesson.js` gắn `katex-wide` để cuộn trong hộp riêng ở mọi cỡ màn hình, thay vì làm rộng cả trang. Không thu nhỏ chữ để vừa khung.
+- Sau khi đổi bộ ngắt, đo lại trên các bài nhiều công thức (390 px và 1280 px): tỉ lệ phân số bị nhỏ, số công thức phải cuộn, `scrollWidth` của trang.
+
 ## Tra cứu thuật ngữ
 
 - Dữ liệu sinh từ bảng thuật ngữ và bổ sung trong scripts/glossary.mjs. Ghép cụm dài trước, đúng ranh giới từ, tránh highlight từ thông thường như “khoảng” thay cho “khoảng cách”.

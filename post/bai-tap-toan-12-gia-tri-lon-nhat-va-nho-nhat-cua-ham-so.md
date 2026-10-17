@@ -75,7 +75,9 @@ Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số $f\left ( 
 - $f'\left ( { x } \right.  )$ không xác định.
 - **Bước 4:** Lập bảng biến thiên của hàm số $y=f\left ( { x } \right.  )$ trên khoảng $\left ( { a;b } \right.  )$ cho trước.
 - **Bước 5:** Xác định điểm “cao nhất” và điểm “thấp nhất” của đồ thị hàm số trên $\left ( { a;b } \right.  )$.
-- **Bước 6:** Kết luận giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y=f\left ( { x } \right.  )$.⁂ Nhận xét: Nếu đề bài không cho sẵn $\left ( { a;b } \right.  )$ thì thường sẽ lấy luôn tập xác định làm khoảng phải xét. Đây là phương pháp tổng quát, tùy vào bài toán sẽ giản lược bớt 1 vài bước. Phương pháp
+- **Bước 6:** Kết luận giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y=f\left ( { x } \right.  )$.
+
+> **Nhận xét:**  Nếu đề bài không cho sẵn $\left ( { a;b } \right.  )$ thì thường sẽ lấy luôn tập xác định làm khoảng phải xét. Đây là phương pháp tổng quát, tùy vào bài toán sẽ giản lược bớt 1 vài bước. Phương pháp
 
 **Ví dụ 2.2.** Tìm giá trị lớn nhất của hàm số $y=-x ^ { 2 } +2x+4$ trên khoảng $\left ( { 0;3 } \right.  )$.
 
@@ -125,7 +127,8 @@ Vậy hàm số không có giá trị lớn nhất và giá trị nhỏ nhất.
 
 ### Dạng 3. Sử dụng cách đánh giá để tìm giá trị lớn nhất – nhỏ nhất
 
-⁂ Sử dụng bất đẳng thức thường gặp:Bất đẳng thức Cô-si:
+
+### Sử dụng bất đẳng thức thường gặp:Bất đẳng thức Cô-si:
 
 - Với hai số thực không âm:$a+b≥2\sqrt{ ab }$. Dấu bằng xảy ra $⇔$ $a=b$.
 
@@ -134,7 +137,9 @@ Vậy hàm số không có giá trị lớn nhất và giá trị nhỏ nhất.
 - Với $n$ thực không âm:$a_{ 1 } +a_{ 2 } +…+a_{ n } ≥n\sqrt[n] { a_{ 1 } a_{ 2 } …a_{ n } }$. Dấu bằng xảy ra $⇔$ $a_{ 1 } =a_{ 2 } =…=a_{ n }$. Bất đẳng thức Bunhiacopxki
 - Dạng cơ bản:$\left ( { a ^ { 2 } +b ^ { 2 } } \right.  )\left ( { c ^ { 2 } +d ^ { 2 } } \right.  )≥\left ( { ac+bd } \right.  ) ^ { 2 }$. Dấu “$=$” xảy ra $⇔$ $\frac { a } { c }=\frac { b } { d }$.
 
-- Dạng tổng quát: Với hai bộ số $\left ( { a_{ 1 } ,a_{ 2 } ,…,a_{ n } } \right.  )$ và $\left ( { b_{ 1 } ,b_{ 2 } ,…,b_{ n } } \right.  )$ ta có:$\left ( { a_{ 1 } ^{ 2 }+a_{ 1 } ^{ 2 }+…+a_{ n } ^{ 2 } } \right.  )\left ( { b_{ 1 } ^{ 2 }+b_{ 2 } ^{ 2 }+…+b_{ n } ^{ 2 } } \right.  )≥\left ( { a_{ 1 } b_{ 1 } +a_{ 2 } b_{ 2 } +…+a_{ n } b_{ n } } \right.  ) ^ { 2 }$ Dấu “$=$” xảy ra $⇔$ $\frac { a_{ 1 } } { b_{ 1 } }=\frac { a_{ 2 } } { b_{ 2 } }=...=\frac { a_{ n } } { b_{ n } }$.⁂ Sử dụng “Tập giá trị” của hàm số lượng giác:
+- Dạng tổng quát: Với hai bộ số $\left ( { a_{ 1 } ,a_{ 2 } ,…,a_{ n } } \right.  )$ và $\left ( { b_{ 1 } ,b_{ 2 } ,…,b_{ n } } \right.  )$ ta có:$\left ( { a_{ 1 } ^{ 2 }+a_{ 1 } ^{ 2 }+…+a_{ n } ^{ 2 } } \right.  )\left ( { b_{ 1 } ^{ 2 }+b_{ 2 } ^{ 2 }+…+b_{ n } ^{ 2 } } \right.  )≥\left ( { a_{ 1 } b_{ 1 } +a_{ 2 } b_{ 2 } +…+a_{ n } b_{ n } } \right.  ) ^ { 2 }$ Dấu “$=$” xảy ra $⇔$ $\frac { a_{ 1 } } { b_{ 1 } }=\frac { a_{ 2 } } { b_{ 2 } }=...=\frac { a_{ n } } { b_{ n } }$.
+
+- Sử dụng “Tập giá trị” của hàm số lượng giác:
 
 - Dựa vào tập giá trị của hàm số lượng giác:$⇒$ Phương pháp
 
@@ -169,7 +174,9 @@ Bài toán bất phương trình
 - $m≥f\left ( { x } \right.  )$ nghiệm đúng với mọi $x∈D$ thì $m≥\mathop { max } \limits_{ D } f\left ( { x } \right.  )$
 - $m≤f\left ( { x } \right.  )$ nghiệm đúng với mọi $x∈D$ thì $m≤\mathop { min } \limits_{ D } f\left ( { x } \right.  )$
 - $m≥f\left ( { x } \right.  )$ có nghiệm $x∈D$ thì $m≥\mathop { min } \limits_{ D } f\left ( { x } \right.  )$
-- $m≥f\left ( { x } \right.  )$ có nghiệm $x∈D$ thì $m≥\mathop { min } \limits_{ D } f\left ( { x } \right.  )$⁂ Nhận xét: Nếu $y=f\left ( { x } \right.  )$: đồng biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  ) \end{array} \right.$. nghịch biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  ) \end{array} \right.$<p align="center"><img src="/assets/images/toan-12/c1_b2_image153.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- $m≥f\left ( { x } \right.  )$ có nghiệm $x∈D$ thì $m≥\mathop { min } \limits_{ D } f\left ( { x } \right.  )$
+
+> **Nhận xét:**  Nếu $y=f\left ( { x } \right.  )$: đồng biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  ) \end{array} \right.$. nghịch biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  ) \end{array} \right.$<p align="center"><img src="/assets/images/toan-12/c1_b2_image153.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 <p align="center"><img src="/assets/images/toan-12/c1_b2_image154.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -833,7 +840,7 @@ TXĐ:$D=\mathbb{R}$. Nhận xét: Hàm số $f\left ( { x } \right.  )$ liên t�
 
 > **Đáp số:** `1`
 
-ТXĐ:$D=\mathbb{R}$ Ta có:$y=sin ^ { 4 } x-cos ^ { 4 } x=\left ( { sin ^ { 2 } x-cos ^ { 2 } x } \right.  )\left ( { sin ^ { 2 } x+cos ^ { 2 } x } \right.  )=-cos2x$ Mà $-1≤cos2x≤1⇔-1≤-cos2x≤1⇒maxy=1$.
+TXĐ:$D=\mathbb{R}$ Ta có:$y=sin ^ { 4 } x-cos ^ { 4 } x=\left ( { sin ^ { 2 } x-cos ^ { 2 } x } \right.  )\left ( { sin ^ { 2 } x+cos ^ { 2 } x } \right.  )=-cos2x$ Mà $-1≤cos2x≤1⇔-1≤-cos2x≤1⇒maxy=1$.
 
 </details>
 

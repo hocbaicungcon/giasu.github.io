@@ -186,7 +186,7 @@ Theo quy tắc nhân, có $4\times 10^3\times 5=20000$ số.
 
 - Phân công các thanh niên tình nguyện về tỉnh thứ ba: Có $C_{1}^{1}C_{4}^{4}$ cách.
 
-Theo quy tắc nhân, có có: $C_{3}^{1}C_{12}^{4}.$$C_{2}^{1}C_{8}^{4}.$$C_{1}^{1}C_{4}^{4}$=207900 cách phân công đội thanh niên tình nguyện về 3 tỉnh thỏa mãn yêu cầu bài toán.
+Theo quy tắc nhân, có: $C_{3}^{1}C_{12}^{4}\cdot C_{2}^{1}C_{8}^{4}\cdot C_{1}^{1}C_{4}^{4}=207900$ cách phân công đội thanh niên tình nguyện về 3 tỉnh thỏa mãn yêu cầu bài toán.
 
 **Ví dụ 10.** [B2004] Trong một môn học, thầy giáo có 30 câu hỏi khác nhau gồm 5 câu hỏi khó, 10 câu hỏi trung bình, 15 câu hỏi dễ. Từ 30 câu hỏi đó có thể lập được bao nhiêu đề kiểm tra, mỗi đề gồm 5 câu hỏi khác nhau, sao cho trong mỗi đề nhất thiết phải có đủ 3 loại câu hỏi (khó, trung bình, dễ) và số câu hỏi dễ không ít hơn 2?
 

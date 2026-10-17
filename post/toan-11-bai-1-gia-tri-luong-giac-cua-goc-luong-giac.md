@@ -257,7 +257,7 @@ Kéo trực tiếp **điểm M** trên đường tròn đơn vị (hoặc dùng 
 <svg id="trigSvg" data-interactive-done="true" viewBox="0 0 320 320" style="width: 100%; height: 100%; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; touch-action: none; cursor: crosshair;">
 <line x1="20" y1="160" x2="300" y2="160" stroke="#94a3b8" stroke-width="1.5" />
 <polygon points="300,156 308,160 300,164" fill="#64748b" />
-<text x="286" y="150" font-size="12" font-weight="bold" fill="#2563eb">Cos (x)</text>
+<text x="276" y="150" font-size="12" font-weight="bold" fill="#2563eb">Cos (x)</text>
 <line x1="160" y1="300" x2="160" y2="20" stroke="#94a3b8" stroke-width="1.5" />
 <polygon points="156,20 160,12 164,20" fill="#64748b" />
 <text x="168" y="24" font-size="12" font-weight="bold" fill="#dc2626">Sin (y)</text>

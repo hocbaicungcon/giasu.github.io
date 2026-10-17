@@ -187,7 +187,7 @@ Dưới đây là mô phỏng mặt phẳng tọa độ $Oxy$. Nhấp vào các 
       <text x="-86" y="96" font-size="12" font-weight="bold" fill="#10b981">C(-2; -2)</text>
       <!-- D(3, -1) -> svg (120, 40) -->
       <circle cx="120" cy="40" r="5" fill="#f59e0b" />
-      <text x="126" y="44" font-size="12" font-weight="bold" fill="#f59e0b">D(3; -1)</text>
+      <text x="112" y="44" font-size="12" font-weight="bold" fill="#f59e0b">D(3; -1)</text>
     </svg>
   </div>
   <p style="text-align: center; font-size: 0.9em; color: var(--text-secondary, #64748b); margin-top: 4px;">

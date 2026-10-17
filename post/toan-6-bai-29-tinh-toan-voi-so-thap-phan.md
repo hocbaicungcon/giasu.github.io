@@ -540,50 +540,21 @@ Vậy hai số cần tìm là $23{,}6$ và $23{,}2.$
 
 ### Chuyên đề 3: Bài toán dịch dấu phẩy số thập phân
 
-**Bài toán 3:** Khi thực hiện phép cộng một số tự nhiên với một số thập phân có một chữ số ở phần thập phân, bạn Nam sơ ý quên viết dấu phẩy của số thập phân nên thực hiện cộng như hai số tự nhiên và được kết quả là $2\,214.$ Biết rằng tổng đúng phải là $425{,}4.$ Tìm số tự nhiên và số thập phân đã cho.
+**Bài toán 3:** Khi thực hiện phép cộng một số tự nhiên với một số thập phân có một chữ số ở phần thập phân, bạn Nam sơ ý quên viết dấu phẩy của số thập phân nên thực hiện cộng như hai số tự nhiên và được kết quả là $2\,211.$ Biết rằng tổng đúng phải là $425{,}4.$ Tìm số tự nhiên và số thập phân đã cho.
 
 **Lời giải chi tiết:**
 - Gọi số tự nhiên là $N$ và số thập phân là $A.$
 - Vì $A$ có một chữ số ở phần thập phân nên khi quên viết dấu phẩy, giá trị của số đó được gấp lên $10$ lần (trở thành $10 \cdot A$).
 - Theo bài ra:
   - Tổng đúng: $N + A = 425{,}4$
-  - Tổng sai: $N + 10 \cdot A = 2\,214$
+  - Tổng sai: $N + 10 \cdot A = 2\,211$
 - Lấy tổng sai trừ đi tổng đúng:
-$$(N + 10 \cdot A) - (N + A) = 2\,214 - 425{,}4$$
-$$9 \cdot A = 1\,788{,}6.$$
+$$(N + 10 \cdot A) - (N + A) = 2\,211 - 425{,}4 \implies 9 \cdot A = 1\,785{,}6.$$
 - Suy ra số thập phân $A$ là:
-$$A = 1\,788{,}6 : 9 = 198{,}7.$$
-- Số tự nhiên $N$ là:
-$$N = 425{,}4 - 198{,}7 = 226{,}7 \quad (\text{loại nếu } N \in \mathbb{N}).$$
-Khoan! Hãy kiểm tra lại: Phần thập phân của tổng đúng $425{,}4$ phải do chính phần thập phân của $A$ tạo ra, vì $N$ là số tự nhiên (phần thập phân bằng $0$).
-Do đó phần thập phân của $A$ có chữ số tận cùng là $,4.$
-Vậy nếu số thập phân có một chữ số ở phần thập phân, thì đuôi là $,4.$
-Tại sao $A = 198{,}7$? Vì $1\,788{,}6 : 9 = 198{,}7333\dots$
-Hãy kiểm tra phép trừ:
-$2\,214 - 425{,}4 = 1\,788{,}6.$
-$1\,788{,}6 : 9 = 198{,}733\dots$ không chia hết!
-Để chia hết cho $9,$ tổng các chữ số của số bị trừ phải chia hết cho $9.$
-Tổng các chữ số của $1\,788{,}6$: $1 + 7 + 8 + 8 + 6 = 30$ (không chia hết cho 9).
-Hãy chọn đề bài chuẩn xác:
-Tổng đúng là $425{,}4.$ Để hiệu chia hết cho $9,$ tổng sai phải có dạng thích hợp:
-Giả sử $A = 198{,}4.$
-Khi đó $10 \cdot A = 1\,984.$
-Số tự nhiên $N = 425{,}4 - 198{,}4 = 227.$
-Khi đó tổng sai: $N + 10 \cdot A = 227 + 1\,984 = 2\,211.$
-Hãy hiệu chỉnh đề bài với số liệu chuẩn mực:
-Tổng sai là $2\,211$ và tổng đúng là $425{,}4.$
-
-**Đề bài chuẩn hóa:** Khi cộng số tự nhiên $N$ với số thập phân $A$ (có một chữ số ở phần thập phân), bạn Nam quên dấu phẩy nên được tổng là $2\,211.$ Biết tổng đúng là $425{,}4.$ Tìm $N$ và $A.$
-
-**Lời giải chuẩn mực:**
-- Quên dấu phẩy khiến số thập phân $A$ tăng lên $10$ lần.
-- Hiệu giữa tổng sai và tổng đúng là:
-$$2\,211 - 425{,}4 = 1\,785{,}6.$$
-- Giá trị này chính là $10 - 1 = 9$ lần số thập phân $A$:
-$$9 \cdot A = 1\,785{,}6 \implies A = 1\,785{,}6 : 9 = 198{,}4.$$
+$$A = 1\,785{,}6 : 9 = 198{,}4.$$
 - Số tự nhiên $N$ là:
 $$N = 425{,}4 - 198{,}4 = 227.$$
-Thử lại: $227 + 1\,984 = 2\,211$ (Hoàn toàn chính xác).
+Thử lại: $227 + 1\,984 = 2\,211$ (đúng).
 Vậy số tự nhiên là $227$ và số thập phân là $198{,}4.$
 
 ---

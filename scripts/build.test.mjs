@@ -23,7 +23,7 @@ Trước $$f(v)=\frac{8}{v}$$ Sau.`;
  assert.doesNotMatch(html,/katex-error/);
  assert.throws(()=>convertLatex(String.raw`\begin{tabular}{cc}A & B & C\end{tabular}`),/số ô/);
 });
-import {parsePost,build,normalizeMarkdownFormatting,renderCallouts,renderMathInHtml,searchTitle,searchDescription,lazyImages} from './build.mjs';
+import {parsePost,build,normalizeMarkdownFormatting,renderCallouts,renderMathInHtml,searchTitle,searchDescription,lazyImages,renderLessonMarkdown} from './build.mjs';
 import {compareItems} from '../assets/sort.js';
 const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategory: Toán học\ngrade: 10\ntype: Bài học\ndate: "2026-09-17"\ntags: [toán 10]\n---\nCông thức $x_1 + x_2$.\n\n$$\n\\frac{a}{b} = x^2\n$$\n\n```js\nconst cost = "$5";\n```';
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
@@ -312,3 +312,25 @@ test('only images after the first one are lazy loaded and the logo stays eager',
  const html=lazyImages('<img src="hocbaicungcon_round.svg"><img src="a.png"><img src="b.png"><img loading="eager" src="c.png">');
  assert.equal(html,'<img src="hocbaicungcon_round.svg"><img src="a.png"><img loading="lazy" decoding="async" src="b.png"><img loading="eager" src="c.png">');
 });
+
+test('four-backtick quiz sets render every question and never leak protection tokens',()=>{
+ const set='{"title":"Bộ thử","questions":[{"question":"Q1 $a$","options":["a","b","c","d"],"answer":0,"explanation":"e1"},{"question":"Q2","options":["x","Cả hai"],"answer":1,"hint":"h","explanation":"e2"}]}';
+ const html=normalizeAndRender('Trước\n\n````quiz\n'+set+'\n````\n\nSau');
+ assert.equal((html.match(/<form class="quiz"/g)||[]).length,2);
+ assert.ok(!/PROTECTED_TOKEN|MATH_BLOCK/.test(html));
+ assert.match(html,/Câu 2\/2/);
+ // "Cả hai" is positional: it keeps its place and its answer index stays 2
+ assert.match(html,/data-answers="\[&quot;2&quot;\]"/);
+ const answers=[...html.matchAll(/data-answers="\[&quot;(\d)&quot;\]"/g)].map(m=>Number(m[1]));
+ const options=[...html.matchAll(/<form class="quiz"[\s\S]*?<\/fieldset>/g)][0][0].match(/<span>([^<]*)<\/span>/g).map(x=>x.replace(/<\/?span>/g,''));
+ assert.equal(options[answers[0]-1],'a','shuffled answer index must still point at the right option');
+});
+test('invalid quiz set fails with the question number',()=>{
+ assert.throws(()=>renderLessonMarkdown('````quiz\n{"questions":[{"question":"Q","options":["a","b"],"answer":5,"explanation":"e"}]}\n````'),/câu 1\/1/);
+});
+test('widget fences emit raw HTML while html fences stay code',()=>{
+ const html=renderLessonMarkdown('```widget\n<div id="w">\n\n<button>Go</button>\n</div>\n```\n\n```html\n<div>mã</div>\n```');
+ assert.match(html,/<div id="w">[\s\S]*<button>Go<\/button>/);
+ assert.match(html,/<pre><code class="language-html">&lt;div&gt;mã&lt;\/div&gt;/);
+});
+function normalizeAndRender(md){return renderLessonMarkdown(normalizeMarkdownFormatting(md));}

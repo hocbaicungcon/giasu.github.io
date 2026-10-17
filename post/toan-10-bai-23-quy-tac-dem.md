@@ -132,7 +132,7 @@ Sơ đồ hình cây là một sơ đồ phân nhánh giúp liệt kê có hệ 
 
 Tùy chỉnh số lượng lựa chọn ở từng công đoạn (Màu áo, Loại quần, Phụ kiện) để quan sát sơ đồ cây tự động mở rộng và đếm tổng số kết hợp:
 
-```html
+```widget
 <div style="max-width: 760px; margin: 20px auto; font-family: system-ui, -apple-system, sans-serif; border: 1px solid #cbd5e1; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.06); overflow: hidden;">
   <div style="background: linear-gradient(135deg, #047857, #065f46); padding: 16px 20px; color: #ffffff;">
     <h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 700; color: #f8fafc;">Bộ Đếm Tổ Hợp & Sơ Đồ Cây Tương Tác</h3>
@@ -246,6 +246,7 @@ Tùy chỉnh số lượng lựa chọn ở từng công đoạn (Màu áo, Lo�
   renderTree();
 })();
 </script>
+```
 
 ---
 
