@@ -10,7 +10,7 @@ function create({dialog,video,status,onImport}){
    if(!navigator.mediaDevices?.getUserMedia)throw new Error('Camera không khả dụng. Hãy chọn ảnh QR từ thư viện hoặc chụp ảnh.');
    const next=await navigator.mediaDevices.getUserMedia({audio:false,video:{facingMode:{ideal:'environment'},width:{ideal:1280},height:{ideal:720}}});
    if(token!==version){next.getTracks().forEach(track=>track.stop());return;}
-   stream=next;video.srcObject=stream;await video.play();if(token!==version)return;
+   stream=next;video.srcObject=stream;await Promise.all([video.play(),root.ChamTNVendor?.load('jsqr')]);if(token!==version)return;
    status.textContent='Đưa toàn bộ QR vào khung. Đáp án sẽ tự nhập khi nhận diện được.';
    const scan=async()=>{
     if(token!==version)return;

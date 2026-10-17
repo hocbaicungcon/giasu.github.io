@@ -23,7 +23,7 @@ Trước $$f(v)=\frac{8}{v}$$ Sau.`;
  assert.doesNotMatch(html,/katex-error/);
  assert.throws(()=>convertLatex(String.raw`\begin{tabular}{cc}A & B & C\end{tabular}`),/số ô/);
 });
-import {parsePost,build,normalizeMarkdownFormatting,renderCallouts,renderMathInHtml} from './build.mjs';
+import {parsePost,build,normalizeMarkdownFormatting,renderCallouts,renderMathInHtml,searchTitle,searchDescription,lazyImages} from './build.mjs';
 import {compareItems} from '../assets/sort.js';
 const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategory: Toán học\ngrade: 10\ntype: Bài học\ndate: "2026-09-17"\ntags: [toán 10]\n---\nCông thức $x_1 + x_2$.\n\n$$\n\\frac{a}{b} = x^2\n$$\n\n```js\nconst cost = "$5";\n```';
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
@@ -295,4 +295,20 @@ test('trailing punctuation after inline math does not wrap or orphan onto separa
 test('both sorting directions use names and publication dates',()=>{
  const a={title:'Đề 2',date:'2026-01-01'},b={title:'Đề 10',date:'2026-02-01'};
  assert.ok(compareItems(a,b,'title')<0);assert.ok(compareItems(a,b,'title-desc')>0);assert.ok(compareItems(a,b,'new')>0);assert.ok(compareItems(a,b,'old')<0);
+});
+
+test('search titles and descriptions stay unique, informative and within snippet length',()=>{
+ assert.equal(searchTitle('Hàm số bậc hai'),'Hàm số bậc hai · gia sư thông minh');
+ const long='Đề thi thử tốt nghiệp THPT môn Toán năm 2026 trường chuyên có lời giải chi tiết';
+ assert.equal(searchTitle(long),long);
+ const post={type:'Bài tập',category:'Hóa học',grade:11};
+ assert.equal(searchDescription('Đề hóa 11','Đề hóa 11',post),'Đề hóa 11. Bài tập Hóa học lớp 11 miễn phí trên gia sư thông minh.');
+ assert.match(searchDescription('Ngắn gọn','Tiêu đề riêng',null),/^Tiêu đề riêng: Ngắn gọn$/);
+ const clipped=searchDescription('từ '.repeat(100),'Tiêu đề',null);
+ assert.ok(clipped.length<=160&&clipped.endsWith('…'));
+});
+
+test('only images after the first one are lazy loaded and the logo stays eager',()=>{
+ const html=lazyImages('<img src="hocbaicungcon_round.svg"><img src="a.png"><img src="b.png"><img loading="eager" src="c.png">');
+ assert.equal(html,'<img src="hocbaicungcon_round.svg"><img src="a.png"><img loading="lazy" decoding="async" src="b.png"><img loading="eager" src="c.png">');
 });

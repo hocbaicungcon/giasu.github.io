@@ -808,7 +808,7 @@ async function exportReport(type) {
   if (!records.length || G.validateConfig(config()).length) return;
   const cfg = config(), items = records.map(assess); exporting = true; updateButtons(); $('exportMessage').textContent = 'Đang tạo file…';
   try {
-    if (type === 'excel') download(Reports.excel(items, cfg), 'ket-qua-diem-thi.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+    if (type === 'excel') download(await Reports.excel(items, cfg), 'ket-qua-diem-thi.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     else if (type === 'summary') download(await Reports.summaryPdf(items, cfg), 'bang-diem-thi.pdf', 'application/pdf');
     else if (type === 'image') download(await Reports.annotatedJpeg(assess(current()), cfg, $('exportQuality').value), 'bai-lam-da-cham.jpg', 'image/jpeg');
     else if (type === 'zip') download(await Reports.annotatedZip(items, cfg, $('exportQuality').value, (done,total) => { $('exportMessage').textContent = `Đang tạo ảnh ${done}/${total}…`; }), 'bai-lam-da-cham.zip', 'application/zip');

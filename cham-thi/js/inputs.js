@@ -5,6 +5,7 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function () {
   'use strict';
   const base = typeof document !== 'undefined' ? new URL('.', document.currentScript.src) : null;
+  const vendor = name => window.ChamTNVendor.load(name);
   let pdfPromise;
   let fallbackWorkerPromise;
   function trimTail(values, empty = value => !String(value ?? '').trim()) {
@@ -110,23 +111,21 @@
     finally { URL.revokeObjectURL(url); }
   }
   async function qrFromFile(file) {
-    const image = await imageFromFile(file);
+    const [image, jsQR] = await Promise.all([imageFromFile(file), vendor('jsqr')]);
     for (const scale of [1, 1.5, .75]) {
       const factor = Math.min(1, 1800 / Math.max(image.width, image.height)) * scale;
       const canvas = document.createElement('canvas'); canvas.width = Math.round(image.width * factor) + 80; canvas.height = Math.round(image.height * factor) + 80;
       const ctx = canvas.getContext('2d', { willReadFrequently: true }); ctx.fillStyle = 'white'; ctx.fillRect(0, 0, canvas.width, canvas.height); ctx.imageSmoothingEnabled = false;
       ctx.drawImage(image, 40, 40, canvas.width - 80, canvas.height - 80);
-      const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height), result = window.jsQR(pixels.data, pixels.width, pixels.height, { inversionAttempts: 'attemptBoth' });
+      const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height), result = jsQR(pixels.data, pixels.width, pixels.height, { inversionAttempts: 'attemptBoth' });
       if (result) return parseQrPayload(result.data);
       await new Promise(resolve => setTimeout(resolve, 0));
     }
     throw new Error('Không đọc được QR trong ảnh. Hãy chọn ảnh QR rõ nét và đủ cả mã.');
   }
-  async function excelFromFile(file) { return workbookExams(window.XLSX.read(await file.arrayBuffer(), { type: 'array' }), window.XLSX); }
+  async function excelFromFile(file) { const [X, bytes] = await Promise.all([vendor('xlsx'), file.arrayBuffer()]); return workbookExams(X.read(bytes, { type: 'array' }), X); }
   async function pdfLibrary() {
-    if (!pdfPromise) pdfPromise = Promise.resolve().then(() => {
-      const lib = window.pdfjsLib;
-      if (!lib) throw new Error('Chưa tải được bộ đọc PDF cục bộ. Tải lại trang khi có mạng một lần rồi thử lại.');
+    if (!pdfPromise) pdfPromise = vendor('pdf').then(lib => {
       lib.GlobalWorkerOptions.workerSrc = new URL('../vendor/pdfjs/pdf.worker.min.js', base).href; return lib;
     }).catch(error => { pdfPromise = null; throw error; });
     return pdfPromise;

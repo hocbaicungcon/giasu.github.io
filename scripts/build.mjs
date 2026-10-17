@@ -251,6 +251,35 @@ export function parsePost(source, filename) {
 const gradeLabel=p=>p.grade===undefined?'Mọi lớp':`Lớp ${p.grade}`;
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>','CNTT':'</>'};
 const date=s=>new Date(s+'T00:00:00Z').toLocaleDateString('vi-VN',{timeZone:'UTC'});
+// Search snippets show about 60 title and 160 description characters.
+const fold=s=>s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
+function clip(text,max){
+ if(text.length<=max)return text;
+ const cut=text.slice(0,max-1),space=cut.lastIndexOf(' ');
+ return (space>max*.6?cut.slice(0,space):cut).replace(/[\s,;:.–—-]+$/,'')+'…';
+}
+export function searchTitle(title){
+ const branded=`${title} · gia sư thông minh`;
+ return branded.length<=65?branded:title;
+}
+export function searchDescription(description,title,post){
+ let text=description.replace(/\s+/g,' ').trim();
+ if(!text||fold(text)===fold(title))text=title;
+ else if(text.length<70&&!fold(text).includes(fold(title)))text=`${title}: ${text}`;
+ if(post&&text.length<110){
+  const grade=post.grade===undefined?'':` lớp ${post.grade}`;
+  text=`${text.replace(/[\s.:;,]+$/,'')}. ${post.type||'Tài liệu'} ${post.category}${grade} miễn phí trên gia sư thông minh.`;
+ }
+ return clip(text||'Bài học và bài tập dành cho học sinh lớp 1 đến lớp 12.',160);
+}
+// The first image may be the largest paint; later ones load as they scroll into view.
+export function lazyImages(html){
+ let seen=0;
+ return html.replace(/<img\b(?![^>]*\bloading=)([^>]*)>/g,(tag,attrs)=>{
+  if(/class="[^"]*brand|hocbaicungcon_round/.test(attrs))return tag;
+  return seen++?`<img loading="lazy" decoding="async"${attrs}>`:tag;
+ });
+}
 function decodeHtmlEntities(s) {
  return String(s)
   .replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(Number(dec)))
@@ -322,7 +351,7 @@ function getRelatedPosts(p, allPosts, limit = 4) {
 function shell(title,description,body,prefix='./',hasMath=false) {
  const needsKatex=hasMath||body.includes('katex');
  const katexCss=needsKatex?`<link rel="stylesheet" href="${prefix}assets/katex/katex.min.css">`:'';
- return `<!doctype html><!-- credit: giasu.ai.vn --><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · gia sư thông minh</title><meta name="description" content="${esc(description)}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://drive.google.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"><meta name="theme-color" content="#23332e"><link rel="icon" type="image/svg+xml" sizes="any" href="${prefix}favicon.svg"><link rel="apple-touch-icon" href="${prefix}assets/og-cover.png"><link rel="stylesheet" href="${prefix}assets/style.css">${katexCss}</head><body><a class="skip" href="#main">Đến nội dung</a><header><div class="nav wrap"><a class="brand" href="${prefix}"><img src="${prefix}hocbaicungcon_round.svg" alt="Gia Sư Thông Minh" width="46" height="46"><span><strong class="brand-name">gia sư</strong> <b>thông minh<span class="dot">.</span></b></span></a><a class="grading-link" href="${prefix}cham-thi/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12l3 3 7-7"/></svg><span class="grading-label"><span>Chấm thi</span><span>trắc nghiệm</span></span><span class="grading-free">Free</span></a><nav aria-label="Điều hướng chính"><details class="nav-exams nav-library"><summary>Môn</summary><div class="nav-submenu"><a href="${prefix}thu-vien.html">Tất cả bài học</a>${subjectGroups.map(g=>`<a href="${prefix}thu-vien.html?category=${encodeURIComponent(g.label)}">${esc(g.subjects[0]||g.label)}</a>`).join('')}</div></details><details class="nav-exams"><summary>Lớp</summary><div class="nav-submenu nav-grid-grades">${Array.from({length:12},(_,i)=>`<a href="${prefix}lop-${i+1}.html">Lớp ${i+1}</a>`).join('')}</div></details><details class="nav-exams"><summary>Đề thi</summary><div class="nav-submenu"><a href="${prefix}de-kiem-tra/">Tất cả đề</a><a href="${prefix}de-kiem-tra/?group=vi%E1%BB%87t+nam">Đề Việt Nam</a><a href="${prefix}de-kiem-tra/?group=qu%E1%BB%91c+t%E1%BA%BF">Toán quốc tế</a></div></details>${funMenu(prefix)}<a class="nav-pill" href="${prefix}gioi-thieu.html">Giới thiệu <span>↗</span></a></nav></div></header>${body}<script src="${prefix}assets/lesson.js" defer></script><script src="${prefix}assets/lesson-practice.js" defer></script>${body.includes('data-exploration=')?`<script type="module" src="${prefix}assets/explorations.js"></script>`:''}<script type="module" src="${prefix}assets/geometry.js"></script><script src="${prefix}assets/glossary.js" defer></script><script src="${prefix}assets/share.js" defer></script>${body.includes('data-share-url=')?'':renderShare('https://giasu.ai.vn/',title,true,true)}<footer class="wrap"><a class="brand small" href="${prefix}"><span class="footer-brand-first">gia sư</span><span class="footer-brand-second">thông minh</span><span class="dot">.</span></a><p>✦ Mỗi bài học, một bước tiến!</p><a class="footer-link" href="${prefix}gioi-thieu.html">Giới thiệu &amp; Miễn trừ trách nhiệm</a><a class="footer-link" href="https://amthanhnhapkhau.com.vn/danh-muc/phong-hop/thiet-bi-may-tro-giang/">loa - micro trợ giảng</a></footer></body></html>`;
+ return `<!doctype html><!-- credit: giasu.ai.vn --><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · gia sư thông minh</title><meta name="description" content="${esc(description)}"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://drive.google.com"><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"></noscript><meta name="theme-color" content="#23332e"><link rel="icon" type="image/svg+xml" sizes="any" href="${prefix}favicon.svg"><link rel="apple-touch-icon" href="${prefix}assets/og-cover.png"><link rel="stylesheet" href="${prefix}assets/style.css">${katexCss}</head><body><a class="skip" href="#main">Đến nội dung</a><header><div class="nav wrap"><a class="brand" href="${prefix}"><img src="${prefix}hocbaicungcon_round.svg" alt="Gia Sư Thông Minh" width="46" height="46"><span><strong class="brand-name">gia sư</strong> <b>thông minh<span class="dot">.</span></b></span></a><a class="grading-link" href="${prefix}cham-thi/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12l3 3 7-7"/></svg><span class="grading-label"><span>Chấm thi</span><span>trắc nghiệm</span></span><span class="grading-free">Free</span></a><nav aria-label="Điều hướng chính"><details class="nav-exams nav-library"><summary>Môn</summary><div class="nav-submenu"><a href="${prefix}thu-vien.html">Tất cả bài học</a>${subjectGroups.map(g=>`<a href="${prefix}thu-vien.html?category=${encodeURIComponent(g.label)}">${esc(g.subjects[0]||g.label)}</a>`).join('')}</div></details><details class="nav-exams"><summary>Lớp</summary><div class="nav-submenu nav-grid-grades">${Array.from({length:12},(_,i)=>`<a href="${prefix}lop-${i+1}.html">Lớp ${i+1}</a>`).join('')}</div></details><details class="nav-exams"><summary>Đề thi</summary><div class="nav-submenu"><a href="${prefix}de-kiem-tra/">Tất cả đề</a><a href="${prefix}de-kiem-tra/?group=vi%E1%BB%87t+nam">Đề Việt Nam</a><a href="${prefix}de-kiem-tra/?group=qu%E1%BB%91c+t%E1%BA%BF">Toán quốc tế</a></div></details>${funMenu(prefix)}<a class="nav-pill" href="${prefix}gioi-thieu.html">Giới thiệu <span>↗</span></a></nav></div></header>${body}<script src="${prefix}assets/lesson.js" defer></script><script src="${prefix}assets/lesson-practice.js" defer></script>${body.includes('data-exploration=')?`<script type="module" src="${prefix}assets/explorations.js"></script>`:''}<script type="module" src="${prefix}assets/geometry.js"></script><script src="${prefix}assets/glossary.js" defer></script><script src="${prefix}assets/share.js" defer></script>${body.includes('data-share-url=')?'':renderShare('https://giasu.ai.vn/',title,true,true)}<footer class="wrap"><a class="brand small" href="${prefix}"><span class="footer-brand-first">gia sư</span><span class="footer-brand-second">thông minh</span><span class="dot">.</span></a><p>✦ Mỗi bài học, một bước tiến!</p><a class="footer-link" href="${prefix}gioi-thieu.html">Giới thiệu &amp; Miễn trừ trách nhiệm</a><a class="footer-link" href="https://amthanhnhapkhau.com.vn/danh-muc/phong-hop/thiet-bi-may-tro-giang/">loa - micro trợ giảng</a></footer></body></html>`;
 }
 function card(p,i){return `<article class="card" data-slug="${p.slug}"><a class="card-link" href="./bai-viet/${p.slug}.html"><div class="card-art tone-${i%4}" aria-hidden="true"><span class="art-label">${esc(p.category)}</span><span class="art-symbol">${icons[p.category]||'✧'}</span><span class="art-grade">${p.grade===undefined?'✦':String(p.grade).padStart(2,'0')}<small>${p.grade===undefined?'MỌI LỚP':'LỚP'}</small></span></div><div class="card-content"><div class="eyebrow"><span>${esc(p.type)}</span><span>•</span><span>${gradeLabel(p)}</span></div><h3>${esc(p.title)}</h3><p>${esc(p.description)}</p></div></a><div class="card-bottom"><div class="tags">${p.tags.slice(0,2).map(t=>`<button class="tag" data-tag="${esc(t)}">#${esc(t)}</button>`).join('')}</div></div></article>`;}
 function withLessonSolutions(html,exam){
@@ -470,11 +499,13 @@ export function build(){
   let canonicalPath=normFile==='index.html'?'':normFile;
   if(canonicalPath.endsWith('/index.html'))canonicalPath=canonicalPath.slice(0,-10);
   const canonical='https://giasu.ai.vn/'+canonicalPath;
-  const seoTitle=html.match(/<title>([^<]*)<\/title>/)?.[1]||'gia sư thông minh';
-  const cleanTitle=decodeHtmlEntities(seoTitle.replace(/ · gia sư thông minh$/,''));
-  const seoDescription=html.match(/<meta name="description" content="([^"]*)">/)?.[1]||'Bài học và bài tập dành cho học sinh lớp 1 đến lớp 12.';
   const slug=normFile.startsWith('bai-viet/')?path.basename(normFile,'.html'):null;
   const post=slug?postMap.get(slug):null;
+  const cleanTitle=decodeHtmlEntities((html.match(/<title>([^<]*)<\/title>/)?.[1]||'gia sư thông minh').replace(/ · gia sư thông minh$/,''));
+  const seoTitle=esc(searchTitle(cleanTitle));
+  const seoDescription=esc(searchDescription(decodeHtmlEntities(html.match(/<meta name="description" content="([^"]*)">/)?.[1]||''),cleanTitle,post));
+  html=html.replace(/<title>[^<]*<\/title>/,`<title>${seoTitle}</title>`).replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${seoDescription}">`);
+  html=lazyImages(html);
   const imgMatch=html.match(/<article[\s\S]*?<img[^>]+src="([^">]+)"/);
   let ogImage='https://giasu.ai.vn/assets/og-cover.png';
   if(imgMatch){
@@ -612,7 +643,7 @@ export function build(){
   if(post){
    articleMeta=`<meta property="article:published_time" content="${post.date}T00:00:00+07:00"><meta property="article:section" content="${esc(post.category)}">`+(post.tags||[]).map(t=>`<meta property="article:tag" content="${esc(t)}">`).join('');
   }
-  const seo=`<link rel="canonical" href="${canonical}"><meta name="robots" content="${normFile==='404.html'?'noindex,follow':'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'}"><meta property="og:locale" content="vi_VN"><meta property="og:type" content="${post?'article':'website'}"><meta property="og:title" content="${seoTitle}"><meta property="og:description" content="${seoDescription}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="${ogImage}"><meta property="og:image:alt" content="${esc(cleanTitle)}"><meta name="twitter:card" content="${twitterCard}"><meta name="twitter:title" content="${seoTitle}"><meta name="twitter:description" content="${seoDescription}"><meta name="twitter:image" content="${ogImage}"><meta name="twitter:image:alt" content="${esc(cleanTitle)}">${articleMeta}<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>`;
+  const seo=`<link rel="canonical" href="${canonical}"><meta name="robots" content="${normFile==='404.html'?'noindex,follow':'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'}"><meta property="og:locale" content="vi_VN"><meta property="og:type" content="${post?'article':'website'}"><meta property="og:title" content="${esc(cleanTitle)}"><meta property="og:description" content="${seoDescription}"><meta property="og:url" content="${canonical}"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="${ogImage}"><meta property="og:image:alt" content="${esc(cleanTitle)}"><meta name="twitter:card" content="${twitterCard}"><meta name="twitter:title" content="${esc(cleanTitle)}"><meta name="twitter:description" content="${seoDescription}"><meta name="twitter:image" content="${ogImage}"><meta name="twitter:image:alt" content="${esc(cleanTitle)}">${articleMeta}<script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script>`;
   html=html.replace('</head>',`${seo}</head>`);
   html=html.replace(/((?:src|href)="[^"?]*assets\/[^"?]+\.(?:js|css))"/g,`$1?v=${assetVersion}"`);
   fs.writeFileSync(htmlPath,vectorizeInterface(html));
@@ -643,6 +674,7 @@ export function build(){
    priority='0.7';changefreq='monthly';
   }else if(norm.endsWith('/index.html')||norm.startsWith('de-kiem-tra/')||norm.startsWith('giai-tri/')){
    priority='0.8';changefreq='weekly';
+   if(norm.startsWith('de-kiem-tra/'))lastmod=postMap.get(path.basename(norm,'.html'))?.date||null;
   }
   sitemapItems.push({loc,priority,changefreq,lastmod});
  }
