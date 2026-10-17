@@ -42,3 +42,13 @@ test('examSelect inspects answer keys without modifying active student sheet',()
  assert.ok(gradedSelectBlock.includes('current()'),'gradedExamSelect must access current record');
  assert.ok(gradedSelectBlock.includes('record.keyCode = code'),'gradedExamSelect must assign record.keyCode');
 });
+
+test('grader page loads heavy vendor libraries on demand from local files',()=>{
+ const html=fs.readFileSync(new URL('index.html',root),'utf8');
+ assert.doesNotMatch(html,/<script[^>]+src="vendor\//,'Vendor libraries must not block the first render');
+ const loader=fs.readFileSync(new URL('js/vendor-loader.js',root),'utf8');
+ for(const [,src] of loader.matchAll(/\['(vendor\/[^'?]+)/g))assert.ok(fs.existsSync(new URL(src,root)),src);
+ const offline=JSON.parse(fs.readFileSync(new URL('offline-assets.json',root),'utf8'));
+ assert.ok(offline.includes('vendor/pdfjs/pdf.min.js?v=1')&&offline.includes('vendor/pdfjs/pdf.worker.min.js'));
+ assert.ok(!offline.some(asset=>asset.endsWith('.mjs')),'Unused ES module builds must not be precached');
+});

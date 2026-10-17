@@ -8,6 +8,10 @@
 - Sitemap tự sinh chứa các URL công khai, loại 404 và o2edu. Chỉ ghi lastmod cho bài có ngày nội dung đã biết; không lấy ngày build cho các trang còn lại. Trang 404 dùng noindex và liên kết khôi phục điều hướng.
 - CI chạy `npm run audit:seo` sau build; lỗi canonical, mô tả, H1, JSON-LD, ảnh chia sẻ hay URL thiếu trong sitemap sẽ chặn triển khai.
 
+- Build chuẩn hoá thẻ tìm kiếm: chỉ gắn hậu tố “· gia sư thông minh” khi tiêu đề ≤ 65 ký tự; mô tả trùng tiêu đề hoặc quá ngắn được bổ sung loại bài, môn, lớp; mô tả dài được cắt ở 160 ký tự theo ranh giới từ. og:title/twitter:title dùng tiêu đề không hậu tố.
+- Trang làm đề `/de-kiem-tra/<slug>.html` có tiêu đề “Làm online: …” và mô tả riêng (số câu, thời lượng, cách chấm) để không trùng bài viết cùng nguồn; sitemap ghi lastmod theo ngày của bài.
+- Ảnh thứ hai trở đi dùng `loading="lazy" decoding="async"`; font Google tải không chặn hiển thị. Audit chặn tiêu đề trùng và mô tả > 160 ký tự.
+
 ## Quy trình kiểm tra
 ```
 npm test

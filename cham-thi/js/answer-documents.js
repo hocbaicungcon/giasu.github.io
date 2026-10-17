@@ -106,7 +106,7 @@
       const lines=[];for await(const page of Inputs.pdfTextPages(file))lines.push(...pdfLines(page.items));
       return parseLines(lines);
     }
-    if(/\.docx$/i.test(file.name))return docxExams(new Uint8Array(await file.arrayBuffer()),root.XLSX);
+    if(/\.docx$/i.test(file.name)){const [bytes,xlsx]=await Promise.all([file.arrayBuffer(),root.ChamTNVendor.load('xlsx')]);return docxExams(new Uint8Array(bytes),xlsx);}
     throw new Error('Hỗ trợ PDF có văn bản và Word .docx. Với Word .doc, hãy lưu lại thành .docx.');
   }
   return {pdfLines,parseLines,docxLines,docxExams,fromFile};

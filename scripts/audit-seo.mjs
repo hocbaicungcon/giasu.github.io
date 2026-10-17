@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 const root=path.resolve('dist');
 assert.ok(!fs.existsSync(path.join(root,'cham-thi/data')),'Private student samples must not be published');
 const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html')&&f!=='404.html'&&!f.startsWith('o2edu/'));
-const urls=new Set();
+const urls=new Set(),titles=new Map();
 for(const file of files){
  const html=fs.readFileSync(path.join(root,file),'utf8');
  const head=html.match(/<head>[\s\S]*?<\/head>/)?.[0]||'';
@@ -13,6 +13,8 @@ for(const file of files){
  const canonical=canonicals[0][1];assert.ok(canonical.startsWith('https://giasu.ai.vn/'),file);assert.ok(!urls.has(canonical),`${file}: duplicate canonical`);urls.add(canonical);
  assert.match(head,/<title>[^<]+<\/title>/,file);assert.match(head,/<meta name="description" content="[^"]+"/,file);
  assert.match(html,/<h1\b/,file);
+ const title=head.match(/<title>([^<]+)<\/title>/)?.[1];assert.ok(!titles.has(title),`${file}: title duplicates ${titles.get(title)}`);titles.set(title,file);
+ const description=head.match(/<meta name="description" content="([^"]+)"/)?.[1]||'';assert.ok(description.replace(/&[^;]+;/g,'x').length<=160,`${file}: description longer than 160 characters`);
  for(const match of head.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g))JSON.parse(match[1]);
  const image=head.match(/property="og:image" content="([^"]+)"/)?.[1];assert.ok(image,`${file}: missing social image`);
  const imageUrl=new URL(image);if(imageUrl.origin==='https://giasu.ai.vn')assert.ok(fs.existsSync(path.join(root,decodeURIComponent(imageUrl.pathname))),`${file}: missing OG file ${image}`);

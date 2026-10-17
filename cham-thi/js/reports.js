@@ -29,8 +29,8 @@
     }
     return rows;
   }
-  function excel(items, config) {
-    const X = root.XLSX, book = X.utils.book_new();
+  async function excel(items, config) {
+    const X = await root.ChamTNVendor.load('xlsx'), book = X.utils.book_new();
     const summary = X.utils.aoa_to_sheet(summaryRows(items));
     summary['!cols'] = [{ wch: 6 }, { wch: 38 }, { wch: 16 }, { wch: 16 }, ...Array.from({ length: 4 }, () => ({ wch: 12 })), { wch: 45 }];
     summary['!autofilter'] = { ref: summary['!ref'] };
@@ -72,7 +72,7 @@
     return new Uint8Array(await blob.arrayBuffer());
   }
   async function pdfFromCanvases(canvases, title, preset = 'compact', lossless = false) {
-    const pdf = await root.PDFLib.PDFDocument.create(); pdf.setTitle(title); pdf.setCreator('CHẤM TN');
+    const pdf = await (await root.ChamTNVendor.load('pdflib')).PDFDocument.create(); pdf.setTitle(title); pdf.setCreator('CHẤM TN');
     for await (const canvas of canvases) {
       const bytes = await encodeCanvas(canvas, preset, lossless);
       const image = lossless ? await pdf.embedPng(bytes) : await pdf.embedJpg(bytes);
