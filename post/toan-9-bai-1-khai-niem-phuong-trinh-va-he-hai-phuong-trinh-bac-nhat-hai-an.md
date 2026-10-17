@@ -311,8 +311,12 @@ function updateSystemVisual() {
       dot.setAttribute('cx', ox + x0 * scale);
       dot.setAttribute('cy', oy - y0 * scale);
       txt.style.display = 'block';
-      txt.setAttribute('x', ox + x0 * scale + 8);
-      txt.setAttribute('y', oy - y0 * scale - 6);
+      // Keep the label inside the 460x260 drawing: flip left of the point near the right edge, clamp vertically.
+      var labelX = ox + x0 * scale, labelY = oy - y0 * scale;
+      var flip = labelX > 360;
+      txt.setAttribute('x', flip ? labelX - 8 : labelX + 8);
+      txt.setAttribute('text-anchor', flip ? 'end' : 'start');
+      txt.setAttribute('y', Math.max(16, Math.min(250, labelY - 6)));
       txt.textContent = 'M(' + x0.toFixed(1) + '; ' + y0.toFixed(1) + ')';
     }
     resBox.innerHTML = 

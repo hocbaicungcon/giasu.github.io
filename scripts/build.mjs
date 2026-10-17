@@ -247,7 +247,11 @@ export function parsePost(source, filename) {
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
  const body=normalizeLocalAssetPaths(match[2]);
  const formattedBody=normalizeMarkdownFormatting(body);
- return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{const parsed=renderMathInHtml(renderCallouts(renderLessonMarkdown(formattedBody).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">')));return optimizeImages(parsed,data.title);}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
+ return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{const parsed=renderMathInHtml(renderCallouts(renderLessonMarkdown(formattedBody).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*<strong>[A-Da-d][.)]<\/strong>)/g,'<ul class="answer-options">')));const html=optimizeImages(parsed,data.title);
+  // Placeholders are internal: seeing one means a fence or formula was not restored and the lesson is broken.
+  const leaked=html.match(/@@(?:PROTECTED_TOKEN|MATH_BLOCK)_\d+@@|GiasuInlineFormula\d+End/);
+  if(leaked)throw Error(`dấu giữ chỗ nội bộ ${leaked[0]} bị lộ ra trang (kiểm tra khối mã chưa đóng hoặc công thức dính nhau)`);
+  return html;}catch(error){throw Error(`${filename}: ${error.message}`);}})()};
 }
 const gradeLabel=p=>p.grade===undefined?'Mọi lớp':`Lớp ${p.grade}`;
 const icons={'Toán học':'∑','Ngữ văn':'Aa','Tiếng Việt':'Ă','Tiếng Anh':'En','Vật lí':'↗','Hóa học':'⚗','Sinh học':'♧','Tin học':'</>','CNTT':'</>'};

@@ -334,3 +334,10 @@ test('widget fences emit raw HTML while html fences stay code',()=>{
  assert.match(html,/<pre><code class="language-html">&lt;div&gt;mã&lt;\/div&gt;/);
 });
 function normalizeAndRender(md){return renderLessonMarkdown(normalizeMarkdownFormatting(md));}
+
+test('an unclosed code fence does not leak internal placeholders into the page',()=>{
+ // build.mjs also throws if a placeholder ever reaches the output; this guards the common authoring slip.
+ const broken=source+'\n\n```widget\n<div>không đóng</div>\n\n## Bài tập\n\nNội dung bị nuốt';
+ const html=parsePost(broken,'unclosed.md').html;
+ assert.ok(!/@@(?:PROTECTED_TOKEN|MATH_BLOCK)/.test(html));
+});
