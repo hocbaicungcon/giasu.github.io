@@ -389,6 +389,9 @@ export function build(){
  const mdFiles=fs.readdirSync(path.join(root,'post')).filter(f=>f.endsWith('.md'));
  const posts=getCachedPosts(mdFiles,imported).sort((a,b)=>b.date.localeCompare(a.date)||a.title.localeCompare(b.title,'vi'));
  fs.mkdirSync(path.join(out,'bai-viet'),{recursive:true});
+ if(fs.existsSync(path.join(out,'assets/docs'))){
+  fs.rmSync(path.join(out,'assets/docs'),{recursive:true,force:true});
+ }
  fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true});
  buildGlossary(root,out);
  if(!fs.existsSync(path.join(out,'assets/katex'))){
