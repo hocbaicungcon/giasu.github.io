@@ -371,3 +371,8 @@ test('print stylesheet and @page rules include title header, giasu.ai.vn footer,
  assert.match(css, /\.print-footer/);
 });
 
+
+test('local SVG images without a natural size get their viewBox size so they are not stretched to the column',()=>{
+ const html=parsePost(source+'\n\n![Hình](assets/images/goc-giua-hai-mat-phang-dinh-nghia.svg)\n','svg-size.md').html;
+ assert.match(html,/<img[^>]*src="[^"]*goc-giua-hai-mat-phang-dinh-nghia\.svg"[^>]*width="520" height="420"/);
+});

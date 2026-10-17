@@ -20,7 +20,7 @@
   <line x1="190" y1="50" x2="280" y2="320" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="6,4"/>
 
   <!-- Arc at O for angle SOA -->
-  <path d="M 268,314 A 18,18 0 0,1 274,302" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 263.6,312.7 A 18,18 0 0,1 274.3,302.9" fill="none" stroke="#000" stroke-width="2"/>
 
   <!-- Solid edges: BC, CD, SB, SC, SD -->
   <line x1="100" y1="360" x2="370" y2="360" stroke="#6366f1" stroke-width="2.8"/>
@@ -38,6 +38,10 @@
 
   <!-- Point H dot on SC -->
   <circle cx="280" cy="205" r="4.5" fill="#dc2626"/>
+
+  <!-- SA is perpendicular to the base: right-angle marks with AB and AD -->
+  <path d="M 190.0,266.0 L 204.0,266.0 L 204.0,280.0" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 190.0,266.0 L 179.5,275.3 L 179.5,289.3" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linejoin="round"/>
 
   <!-- Vertex Labels -->
   <text x="175" y="42" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="24" fill="#1e3a8a">S</text>

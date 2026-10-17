@@ -101,3 +101,20 @@ test('very wide inline formulas become their own block rather than a scrolling i
  assert.match(renderMath(wide),/class="katex-display/);
  assert.ok(!/class="katex-display/.test(renderMath('a+b=c')));
 });
+
+test('imported formulas lose invisible delimiter pairs and get row breaks in separator-less arrays',async()=>{
+ const {normalizeImportedFormula}=await import('./math.mjs');
+ const rows=normalizeImportedFormula('\\left\\{ \\begin{array}{l} a_{ 1 } =k.b_{ 1 } a_{ 2 } =k.b_{ 2 } \\end{array} \\right.');
+ assert.ok(rows.includes('\\\\')&&rows.includes('\\right.'),'a real brace group stays');
+ assert.equal(normalizeImportedFormula('\\left. x=1 \\right.'),'x=1');
+ assert.equal(normalizeImportedFormula('\\left. x \\rightarrow y \\right.'),'x \\rightarrow y');
+ assert.equal(normalizeImportedFormula('\\left ( { y } \\right.  )'),'\\left ( { y } \\right.  )');
+});
+
+test('a long side of an equation may continue at a plus or minus sign, indented under the equals sign',async()=>{
+ const {wrapLongDisplayFormula}=await import('./math.mjs');
+ const tex='P(A)=P(A\\cap B)+P(A\\cap\\bar B)+P(B)\\cdot P(A\\mid B)+P(\\bar B)\\cdot P(A\\mid\\bar B)+P(C)+P(D)+P(E)';
+ const layout=wrapLongDisplayFormula(tex);
+ assert.match(layout,/\\\\&\\quad [+-]/);
+ assert.ok(layout.startsWith('\\begin{aligned}P(A) &='));
+});

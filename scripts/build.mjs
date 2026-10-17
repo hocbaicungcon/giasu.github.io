@@ -89,6 +89,23 @@ export function normalizeMarkdownFormatting(text) {
   text = text.replace(/@@PROTECTED_TOKEN_(\d+)@@/g, (_, idx) => tokens[Number(idx)]);
   return text;
 }
+const svgSizes=new Map();
+export function svgDesignSize(src){
+  if(/^[a-z]+:|^\/\//i.test(src))return null;
+  const file=path.join(root,src.replace(/^(?:\.\.\/|\.\/|\/)+/,'').split(/[?#]/)[0]);
+  if(!svgSizes.has(file)){
+    let size=null;
+    try{
+      const tag=fs.readFileSync(file,'utf8').slice(0,2000).match(/<svg\b[^>]*>/i)?.[0]||'';
+      const absolute=n=>{const m=tag.match(new RegExp('\\s'+n+'="([\\d.]+)(?:px)?"'));return m?+m[1]:null;};
+      const view=tag.match(/viewBox="([^"]+)"/)?.[1].trim().split(/[ ,]+/).map(Number);
+      const w=absolute('width')??(view&&view[2]),h=absolute('height')??(view&&view[3]);
+      if(w>0&&h>0)size=[Math.round(w),Math.round(h)];
+    }catch{}
+    svgSizes.set(file,size);
+  }
+  return svgSizes.get(file);
+}
 export function optimizeImages(html, postTitle = '') {
   let imgIndex = 0;
   return html.replace(/<img\b([^>]*)>/gi, (match, attrs) => {
@@ -108,6 +125,9 @@ export function optimizeImages(html, postTitle = '') {
         newAttrs += ' loading="lazy"';
       }
     }
+    // An SVG with only a viewBox (width="100%") has no natural size in <img>, so it would stretch to the whole column.
+    const src=newAttrs.match(/\bsrc\s*=\s*"([^"]+\.svg)"/i)?.[1];
+    if(src&&!/\bwidth\s*=/i.test(newAttrs)){const size=svgDesignSize(src);if(size)newAttrs+=` width="${size[0]}" height="${size[1]}"`;}
     imgIndex++;
     return `<img${newAttrs}>`;
   });

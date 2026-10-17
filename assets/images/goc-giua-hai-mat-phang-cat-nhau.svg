@@ -16,8 +16,7 @@
   <!-- Plane (P) -->
   <polygon points="160,100 390,110 390,345 160,335" fill="url(#pGrad3)" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
   <!-- Plane P Corner Arc & Label -->
-  <path d="M 160,305 A 30,30 0 0,0 190,336" fill="none" stroke="#000" stroke-width="1.8"/>
-  <text x="168" y="325" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">P</text>
+  <text x="168" y="328" font-family="'STIX Two Text', serif" font-weight="700" font-size="20" fill="#000">(<tspan font-style="italic">P</tspan>)</text>
 
   <!-- Plane (Q) hidden bottom-back edge (dashed) -->
   <line x1="270" y1="355" x2="390" y2="345" stroke="#15803d" stroke-width="2.2" stroke-dasharray="6,4"/>
@@ -25,8 +24,7 @@
   <!-- Plane (Q) polygon -->
   <polygon points="390,110 270,195 270,435 390,345" fill="url(#qGrad3)" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
   <!-- Plane Q Corner Arc & Label -->
-  <path d="M 270,405 A 30,30 0 0,0 300,412" fill="none" stroke="#000" stroke-width="1.8"/>
-  <text x="277" y="425" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">Q</text>
+  <text x="276" y="425" font-family="'STIX Two Text', serif" font-weight="700" font-size="20" fill="#000">(<tspan font-style="italic">Q</tspan>)</text>
 
   <!-- Line a in plane P, perpendicular to Delta at I(390, 220) -->
   <line x1="205" y1="215" x2="390" y2="220" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round"/>
@@ -37,7 +35,9 @@
   <text x="325" y="295" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#000">b</text>
 
   <!-- Angle arc at point I between line a and line b -->
-  <path d="M 358,219 A 32,32 0 0,0 368,238" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 358.0,219.1 A 32,32 0 0,0 365.3,240.3" fill="none" stroke="#000" stroke-width="2"/>
+  <path d="M 390.0,208.0 L 378.0,207.7 L 378.0,219.7" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 390.0,232.0 L 380.7,239.6 L 380.7,227.6" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linejoin="round"/>
 
   <!-- Point I -->
   <circle cx="390" cy="220" r="4.5" fill="#dc2626"/>

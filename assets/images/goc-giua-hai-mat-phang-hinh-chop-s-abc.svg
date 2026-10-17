@@ -24,7 +24,7 @@
   <line x1="140" y1="45" x2="225" y2="325" stroke="#1e3a8a" stroke-width="2.8"/>
 
   <!-- Right angle mark at B in base ABC -->
-  <path d="M 296,367 L 304,354 L 318,362" fill="none" stroke="#15803d" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M 297.9,367.9 L 309.8,360.5 L 321.9,367.6" fill="none" stroke="#15803d" stroke-width="2" stroke-linejoin="round"/>
 
   <!-- Vertices E and F dots -->
   <circle cx="225" cy="325" r="3.5" fill="#dc2626"/>

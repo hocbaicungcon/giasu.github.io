@@ -993,6 +993,11 @@ form.quiz .katex {
   margin-inline: auto;
 }
 
+/* Illustration SVGs are drawn on a 520-540px canvas; keep them proportionate to the reading column. */
+.prose img[src$=".svg"] {
+  max-width: min(100%, 420px);
+}
+
 .quiz-explanation img {
   display: block;
   max-width: 100%;
