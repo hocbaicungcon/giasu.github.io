@@ -44,25 +44,6 @@ Việc đăng tải các tư liệu giảng dạy của mình, chúng tôi chỉ
 
 ---
 
-## Mục lục
-
-1. [Các bài toán chia hết (Bài 1 – Bài 8)](#1-các-bài-toán-chia-hết)
-2. [Số ước số của một số (Bài 9 – Bài 14)](#2-số-ước-số-của-một-số)
-3. [Các bài toán về số học (Bài 15 – Bài 20)](#3-các-bài-toán-về-số-học)
-4. [Tận cùng của các số lũy thừa (Bài 21 – Bài 30)](#4-tận-cùng-của-các-số-lũy-thừa)
-5. [Các số nguyên tố I (Bài 31 – Bài 40)](#5-các-số-nguyên-tố-i)
-6. [Các số nguyên tố II (Bài 41 – Bài 44)](#6-các-số-nguyên-tố-ii)
-7. [Tại sao không phải là số chính phương (Bài 45 – Bài 51)](#7-tại-sao-không-phải-là-số-chính-phương)
-8. [Số chính phương (Bài 52 – Bài 58)](#8-số-chính-phương)
-9. [Phương trình nghiệm nguyên (DIOPHANT) (Bài 59 – Bài 64)](#9-phương-trình-nghiệm-nguyên-diophant)
-10. [Nguyên lý Dirichlet trong số học (Bài 65 – Bài 68)](#10-nguyên-lý-dirichlet-trong-số-học)
-11. [Chữ số của một số (Bài 69 – Bài 80)](#11-chữ-số-của-một-số)
-12. [Các hệ đếm có cơ số khác nhau (Bài 81 – Bài 108)](#12-các-hệ-đếm-có-cơ-số-khác-nhau)
-13. [Một số định nghĩa và định lý cần thiết](#13-một-số-định-nghĩa-và-định-lý-cần-thiết)
-14. [Thay cho lời kết](#14-thay-cho-lời-kết)
-
----
-
 ## 1 Các bài toán chia hết
 
 **Ví dụ 1.** Chứng minh rằng $72 \mid (10^{20} + 8)$.  

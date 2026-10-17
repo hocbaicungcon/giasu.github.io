@@ -31,25 +31,6 @@ grade: 8
 
 ---
 
-## Mục lục
-
-1. [Chương 1: Đa thức](#chương-1-đa-thức)
-   - 1.1 [Phép nhân các đa thức](#11-phép-nhân-các-đa-thức)
-   - 1.2 [Hằng đẳng thức](#12-hằng-đẳng-thức)
-   - 1.3 [Phân tích đa thức thành nhân tử](#13-phân-tích-đa-thức-thành-nhân-tử)
-   - 1.4 [Phép chia đa thức](#14-phép-chia-đa-thức)
-   - 1.5 [Phân thức đại số](#15-phân-thức-đại-số)
-   - 1.6 [Giải phương trình](#16-giải-phương-trình)
-   - 1.7 [Giải bài toán bằng cách lập phương trình](#17-giải-bài-toán-bằng-cách-lập-phương-trình)
-   - 1.8 [Bất đẳng thức](#18-bất-đẳng-thức)
-2. [Chương 2: Hình học](#chương-2-hình-học)
-   - 2.1 [Đa giác](#21-đa-giác)
-   - 2.2 [Tam giác đồng dạng](#22-tam-giác-đồng-dạng)
-   - 2.3 [Các bài hình học đặc biệt](#23-các-bài-hình-học-đặc-biệt)
-3. [Chương 3: Lời giải một số bài chọn lọc](#chương-3-lời-giải-một-vài-bài-chọn-lọc)
-
----
-
 ## Chương 1: Đa thức
 
 ### 1.1 Phép nhân các đa thức

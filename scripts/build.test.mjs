@@ -23,7 +23,7 @@ Trước $$f(v)=\frac{8}{v}$$ Sau.`;
  assert.doesNotMatch(html,/katex-error/);
  assert.throws(()=>convertLatex(String.raw`\begin{tabular}{cc}A & B & C\end{tabular}`),/số ô/);
 });
-import {parsePost,build,normalizeMarkdownFormatting,renderCallouts,renderMathInHtml,searchTitle,searchDescription,lazyImages,renderLessonMarkdown} from './build.mjs';
+import {parsePost,build,normalizeMarkdownFormatting,renderCallouts,renderMathInHtml,searchTitle,searchDescription,lazyImages,renderLessonMarkdown,renderTitleHtml,plainTitle} from './build.mjs';
 import {compareItems} from '../assets/sort.js';
 const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategory: Toán học\ngrade: 10\ntype: Bài học\ndate: "2026-09-17"\ntags: [toán 10]\n---\nCông thức $x_1 + x_2$.\n\n$$\n\\frac{a}{b} = x^2\n$$\n\n```js\nconst cost = "$5";\n```';
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
@@ -341,3 +341,11 @@ test('an unclosed code fence does not leak internal placeholders into the page',
  const html=parsePost(broken,'unclosed.md').html;
  assert.ok(!/@@(?:PROTECTED_TOKEN|MATH_BLOCK)/.test(html));
 });
+
+test('math formulas in titles render to KaTeX in HTML and plain text in metadata',()=>{
+ assert.match(renderTitleHtml('Làm quen với Không cân bằng $\\ge \\le$'),/class="katex"/);
+ assert.match(renderTitleHtml('Không gian $Oxyz$'),/class="katex"/);
+ assert.equal(plainTitle('Làm quen với Không cân bằng $\\ge \\le$'),'Làm quen với Không cân bằng ≥ ≤');
+ assert.equal(plainTitle('Không gian $Oxyz$'),'Không gian Oxyz');
+});
+

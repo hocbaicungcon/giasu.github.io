@@ -23,36 +23,7 @@ CHƯƠNG TRÌNH GIÁO DỤC PHỔ THÔNG
 
 **Hà Nội, 2018**
 
-# MỤC LỤC
-
-*Trang*
-
-1. ĐẶC ĐIỂM MÔN HỌC 3
-
-2. QUAN ĐIỂM XÂY DỰNG CHƯƠNG TRÌNH 3
-
-3. MỤC TIÊU CHƯƠNG TRÌNH 5
-
-4. YÊU CẦU CẦN ĐẠT 5
-
-5. NỘI DUNG GIÁO DỤC 7
-
-LỚP 10 11
-
-LỚP 11 20
-
-LỚP 12 33
-
-1. PHƯƠNG PHÁP GIÁO DỤC 45
-
-2. ĐÁNH GIÁ KẾT QUẢ GIÁO DỤC 48
-
-3. GIẢI THÍCH VÀ HƯỚNG DẪN THỰC HIỆN CHƯƠNG TRÌNH 49
-
-   
-   
-
-   # ĐẶC ĐIỂM MÔN HỌC
+# ĐẶC ĐIỂM MÔN HỌC
 
 Hoá học là ngành khoa học thuộc lĩnh vực khoa học tự nhiên, nghiên cứu về thành phần cấu trúc, tính chất và sự biến đổi của các đơn chất và hợp chất.
 

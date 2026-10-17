@@ -15,25 +15,9 @@ tags:
 grade: 9
 ---
 
-# 108 bài tập toán tổ hợp cho tất cả mọi người: Từ cơ bản đến nâng cao
-
 > [!NOTE] Thông tin tác giả & Bản quyền tài liệu
 > - **Tác giả / Chủ biên:** TS. Nguyễn Văn Lợi và Nhóm Sigma-Maths (ThS. Hoàng Văn Tựu, Ngô Thị Nhã, Lợi Center)
 > - **Mục đích:** Bồi dưỡng học sinh khá giỏi THCS & THPT, rèn luyện tư duy logic, tổ hợp và phương pháp giải toán sáng tạo.
-
----
-
-## Mục lục
-
-1. [Kiến thức căn bản](#1-kiến-thức-căn-bản)
-2. [Các bài toán đếm (Bài 1 – 20)](#2-các-bài-toán-đếm)
-3. [Biểu đồ Ven - Logic (Bài 21 – 30)](#3-biểu-đồ-ven---logic)
-4. [Nguyên lý Dirichlet (Bài 31 – 40)](#4-nguyên-lý-dirichlet)
-5. [Các bài toán trên bàn cờ (Bài 41 – 50)](#5-các-bài-toán-trên-bàn-cờ)
-6. [Tổ hợp - Hình học (Bài 51 – 60)](#6-tổ-hợp---hình-học)
-7. [Trò chơi – Games (Bài 61 – 70)](#7-trò-chơi--games)
-8. [Qui nạp (Bài 71 – 80)](#8-qui-nạp)
-9. [Mini Combinatorics (Bài 81 – 108)](#9-mini-combinatorics)
 
 ---
 

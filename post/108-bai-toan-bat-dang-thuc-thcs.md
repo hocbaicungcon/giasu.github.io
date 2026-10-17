@@ -16,8 +16,6 @@ tags:
 grade: 9
 ---
 
-# Làm quen với $\ge \le$ Không cân bằng: 108 bài tập và vấn đề về bất đẳng thức
-
 > [!NOTE] Thông tin tác giả & Bản quyền tài liệu
 > - **Tác giả / Chủ biên:** TS. Nguyễn Văn Lợi và Nhóm Sigma-Maths
 > - **Email liên hệ:** sigmathsgroup@gmail.com / loiscenter@gmail.com
@@ -44,32 +42,6 @@ Sách gồm 4 phần:
 
 *Hà Nội, 09/03/2017*  
 *Ý kiến xin chuyển về: sigmathsgroup@gmail.com / loiscenter@gmail.com*
-
----
-
-## Mục lục
-
-1. [Làm quen với bất đẳng thức](#1-làm-quen-với-bất-đẳng-thức)
-   - [1.1 Bất phương trình (Bài 1 – Bài 4)](#11-bất-phương-trình)
-   - [1.2 Các trung bình thường gặp (Bài 5 – Bài 7)](#12-các-trung-bình-thường-gặp)
-   - [1.3 Trung bình cộng, nhân, bình phương, điều hòa của hai số (Bài 8 – Bài 17)](#13-trung-bình-cộng-nhân-bình-phương-điều-hòa-của-hai-số)
-   - [1.4 Bất đẳng thức trong bất đẳng thức (Bài 18 – Bài 24)](#14-bất-đẳng-thức-trong-bất-đẳng-thức)
-   - [1.5 Trung bình cộng và trung bình nhân của nhiều số (Bài 25 – Bài 34)](#15-trung-bình-cộng-và-trung-bình-nhân-của-nhiều-số)
-   - [1.6 Định lý về các sắp xếp (Bài 35 – Bài 39)](#16-định-lý-về-các-sắp-xếp)
-   - [1.7 Bất đẳng thức tam giác (Bài 40)](#17-bất-đẳng-thức-tam-giác)
-   - [1.8 Bất đẳng thức CBS (Bài 41 – Bài 50)](#18-bất-đẳng-thức-cbs)
-   - [1.9 Bất đẳng thức Jensen (Bài 51 – Bài 53)](#19-bất-đẳng-thức-jensen)
-   - [1.10 Các bài tập tổng hợp (Bài 54 – Bài 66)](#110-các-bài-tập-tổng-hợp)
-2. [Trầm ngâm trong lâu đài Bất Đẳng Thức](#2-trầm-ngâm-trong-lâu-đài-bất-đẳng-thức)
-   - [2.1 Bất đẳng thức sắp xếp - BĐT hoán vị (Bài 67 – Bài 81)](#21-bất-đẳng-thức-sắp-xếp---hay-còn-gọi-là-bđt-hoán-vị)
-   - [2.2 Bất đẳng thức Shapiro : giải xong mà chưa thể hết (Bài 82 – Bài 83)](#22-bất-đẳng-thức-shapiro--giải-xong-mà-chưa-thể-hết)
-3. [Luyện tập](#3-luyện-tập)
-   - [3.1 Áp dụng các BĐT nổi tiếng (Bài 84 – Bài 94)](#31-áp-dụng-các-bđt-nổi-tiếng)
-   - [3.2 Bất đẳng thức trong hình học (Bài 95 – Bài 108)](#32-bất-đẳng-thức-trong-hình-học)
-4. [Appendix (Phụ lục)](#4-appendix)
-   - [4.1 Những bất đẳng thức bậc 2 "kiểu thầy Mậu"](#41-những-bất-đẳng-thức-bậc-2-kiểu-thầy-mậu)
-   - [4.2 Trong căn hầm bí mật của các phù thủy ra đề](#42-trong-căn-hầm-bí-mật-của-các-phù-thủy-ra-đề)
-   - [4.3 Cùng bài thi này các anh tài BĐT sẽ hành động thế nào?](#43-cùng-bài-thi-này-các-anh-tài-bđt-sẽ-hành-động-thế-nào)
 
 ---
 

@@ -112,22 +112,6 @@ $$F(n) = F(n-1) + F(n-2)$$
 
 ---
 
-## Mục lục tuyển tập
-
-1. [Biểu đồ Venn – Logic (Bài 1 – 9)](#1-biểu-đồ-venn--logic)
-2. [Nguyên lý Dirichlet (chuồng và thỏ) I (Bài 10 – 30)](#2-nguyên-lý-dirichlet-chuồng-và-thỏ-i)
-3. [Nguyên lý Dirichlet II (Bài 31 – 48*)](#3-nguyên-lý-dirichlet-ii)
-4. [Các bài toán trên bàn cờ (Bài 49 – 58)](#4-các-bài-toán-trên-bàn-cờ)
-5. [Hình học tổ hợp (Bài 59 – 70)](#5-hình-học-tổ-hợp)
-6. [Chuyên đề số học (Bài 71 – 80)](#6-chuyên-đề-số-học)
-7. [Trò chơi – Games (Bài 81 – 91)](#7-trò-chơi--games)
-8. [Quy nạp (Bài 92 – 98)](#8-quy-nạp)
-9. [Tổng hợp (Bài 99 – 108)](#9-tổng-hợp)
-10. [Thêm thêm (Bài 108.1 – 108.5)](#10-thêm-thêm)
-11. [Những viên ngọc của xứ sở kim cương (Bài 108.6 – 108.8)](#11-những-viên-ngọc-của-xứ-sở-kim-cương)
-
----
-
 ## 1. Biểu đồ Venn – Logic
 
 **Bài 1.** Giữa các số tự nhiên từ 1 đến 1000 có bao nhiêu số chia hết cho:

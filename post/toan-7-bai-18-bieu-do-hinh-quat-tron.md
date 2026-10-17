@@ -1,6 +1,6 @@
 ---
 title: 'Bài 18: Biểu đồ hình quạt tròn - Lý thuyết, Cách vẽ, Phân tích số liệu và 5 Chuyên đề Thực tế'
-description: 'Làm chủ biểu đồ hình quạt tròn (Pie Chart), công thức tính góc ở tâm \alpha = (p/100) \times 360^\circ, cách vẽ và phân tích dữ liệu, 5 dạng toán và 10 quiz tương tác.'
+description: 'Làm chủ biểu đồ hình quạt tròn (Pie Chart), công thức tính góc ở tâm α = (p/100) × 360°, cách vẽ và phân tích dữ liệu, 5 dạng toán và 10 quiz tương tác.'
 category: Toán học
 type: Bài học
 date: '2026-10-16'
