@@ -379,107 +379,107 @@ Phép chia đa thức lớp 7 chính là bước dọn đường then chốt cho
 Hãy rèn luyện phản xạ phép chia đa thức qua $10$ câu hỏi trắc nghiệm sau:
 
 ````quiz
-title: Kiểm tra Phép chia Đa thức một biến (Toán 7 - Bài 28)
+title: "Kiểm tra Phép chia Đa thức một biến (Toán 7 - Bài 28)"
 questions:
-  - question: Kết quả của phép chia đơn thức (15x^5) : (3x^2) là:
+  - question: "Kết quả của phép chia đơn thức (15x^5) : (3x^2) là:"
     options:
-      - 5x^3
-      - 5x^7
-      - 12x^3
-      - 5x^2.5
+      - "5x^3"
+      - "5x^7"
+      - "12x^3"
+      - "5x^2.5"
     answer: 0
-    hint: Chia hệ số (15 : 3 = 5) và trừ số mũ (5 - 2 = 3).
-    explanation: (15x^5) : (3x^2) = (15 : 3) * x^(5 - 2) = 5x^3.
+    hint: "Chia hệ số (15 : 3 = 5) và trừ số mũ (5 - 2 = 3)."
+    explanation: "(15x^5) : (3x^2) = (15 : 3) * x^(5 - 2) = 5x^3."
 
-  - question: Kết quả của phép chia đa thức (6x^3 - 9x^2 + 3x) : (3x) là:
+  - question: "Kết quả của phép chia đa thức (6x^3 - 9x^2 + 3x) : (3x) là:"
     options:
-      - 2x^2 - 3x + 1
-      - 2x^2 - 3x
-      - 2x^2 - 3x + 3
-      - 2x^3 - 3x^2 + 1
+      - "2x^2 - 3x + 1"
+      - "2x^2 - 3x"
+      - "2x^2 - 3x + 3"
+      - "2x^3 - 3x^2 + 1"
     answer: 0
-    hint: Chia từng hạng tử cho 3x: (6x^3:3x) - (9x^2:3x) + (3x:3x).
-    explanation: (6x^3 - 9x^2 + 3x) : (3x) = 2x^2 - 3x + 1.
+    hint: "Chia từng hạng tử cho 3x: (6x^3:3x) - (9x^2:3x) + (3x:3x)."
+    explanation: "(6x^3 - 9x^2 + 3x) : (3x) = 2x^2 - 3x + 1."
 
-  - question: Điều kiện để đơn thức a*x^m chia hết cho đơn thức b*x^n (với a, b khác 0) là:
+  - question: "Điều kiện để đơn thức a*x^m chia hết cho đơn thức b*x^n (với a, b khác 0) là:"
     options:
-      - m < n
-      - m >= n
-      - m = n
-      - m + n >= 0
+      - "m < n"
+      - "m >= n"
+      - "m = n"
+      - "m + n >= 0"
     answer: 1
-    hint: Số mũ của biến bị chia phải lớn hơn hoặc bằng số mũ của biến chia.
-    explanation: Đơn thức chia hết khi và chỉ khi số mũ m >= n.
+    hint: "Số mũ của biến bị chia phải lớn hơn hoặc bằng số mũ của biến chia."
+    explanation: "Đơn thức chia hết khi và chỉ khi số mũ m >= n."
 
-  - question: Cho phép chia đa thức A(x) = B(x) * Q(x) + R(x). Điều kiện của đa thức dư R(x) là gì?
+  - question: "Cho phép chia đa thức A(x) = B(x) * Q(x) + R(x). Điều kiện của đa thức dư R(x) là gì?"
     options:
-      - Bậc của R(x) phải lớn hơn bậc của B(x).
-      - Bậc của R(x) phải nhỏ hơn bậc của B(x) hoặc R(x) = 0.
-      - Bậc của R(x) bằng bậc của B(x).
-      - R(x) luôn phải bằng 0.
+      - "Bậc của R(x) phải lớn hơn bậc của B(x)."
+      - "Bậc của R(x) phải nhỏ hơn bậc của B(x) hoặc R(x) = 0."
+      - "Bậc của R(x) bằng bậc của B(x)."
+      - "R(x) luôn phải bằng 0."
     answer: 1
-    hint: Phép chia dừng lại khi đa thức dư có bậc nhỏ hơn đa thức chia hoặc bằng 0.
-    explanation: Theo định nghĩa phép chia có dư, bậc của R(x) nhỏ hơn bậc của B(x) hoặc R(x) = 0.
+    hint: "Phép chia dừng lại khi đa thức dư có bậc nhỏ hơn đa thức chia hoặc bằng 0."
+    explanation: "Theo định nghĩa phép chia có dư, bậc của R(x) nhỏ hơn bậc của B(x) hoặc R(x) = 0."
 
-  - question: Thương của phép chia (x^2 - 4) : (x - 2) là:
+  - question: "Thương của phép chia (x^2 - 4) : (x - 2) là:"
     options:
-      - x - 2
-      - x + 2
-      - x + 4
-      - 2
+      - "x - 2"
+      - "x + 2"
+      - "x + 4"
+      - "2"
     answer: 1
-    hint: Phân tích x^2 - 4 = (x - 2)(x + 2).
-    explanation: (x^2 - 4) : (x - 2) = (x - 2)(x + 2) : (x - 2) = x + 2.
+    hint: "Phân tích x^2 - 4 = (x - 2)(x + 2)."
+    explanation: "(x^2 - 4) : (x - 2) = (x - 2)(x + 2) : (x - 2) = x + 2."
 
-  - question: Thực hiện phép chia (x^2 + 5x + 6) : (x + 2) ta được thương là:
+  - question: "Thực hiện phép chia (x^2 + 5x + 6) : (x + 2) ta được thương là:"
     options:
-      - x + 1
-      - x + 2
-      - x + 3
-      - x + 4
+      - "x + 1"
+      - "x + 2"
+      - "x + 3"
+      - "x + 4"
     answer: 2
-    hint: x^2 + 5x + 6 = (x + 2)(x + 3).
-    explanation: (x^2 + 5x + 6) : (x + 2) = x + 3 (phép chia hết).
+    hint: "x^2 + 5x + 6 = (x + 2)(x + 3)."
+    explanation: "(x^2 + 5x + 6) : (x + 2) = x + 3 (phép chia hết)."
 
-  - question: Số dư trong phép chia đa thức P(x) = x^3 + 2 cho nhị thức (x - 1) là:
+  - question: "Số dư trong phép chia đa thức P(x) = x^3 + 2 cho nhị thức (x - 1) là:"
     options:
-      - 1
-      - 2
-      - 3
-      - 0
+      - "1"
+      - "2"
+      - "3"
+      - "0"
     answer: 2
-    hint: Áp dụng định lý Bézout: Số dư R = P(1) = 1^3 + 2.
-    explanation: Theo định lý Bézout, R = P(1) = 1^3 + 2 = 3.
+    hint: "Áp dụng định lý Bézout: Số dư R = P(1) = 1^3 + 2."
+    explanation: "Theo định lý Bézout, R = P(1) = 1^3 + 2 = 3."
 
-  - question: Đa thức A(x) bậc 5 chia cho đa thức B(x) bậc 2 thì đa thức thương Q(x) có bậc là:
+  - question: "Đa thức A(x) bậc 5 chia cho đa thức B(x) bậc 2 thì đa thức thương Q(x) có bậc là:"
     options:
-      - Bậc 2
-      - Bậc 3
-      - Bậc 5
-      - Bậc 7
+      - "Bậc 2"
+      - "Bậc 3"
+      - "Bậc 5"
+      - "Bậc 7"
     answer: 1
-    hint: Bậc của thương bằng hiệu hai bậc: 5 - 2 = 3.
-    explanation: Bậc(Q) = Bậc(A) - Bậc(B) = 5 - 2 = 3.
+    hint: "Bậc của thương bằng hiệu hai bậc: 5 - 2 = 3."
+    explanation: "Bậc(Q) = Bậc(A) - Bậc(B) = 5 - 2 = 3."
 
-  - question: Cho phép chia (2x^2 + x + 3) : (x + 1). Đa thức dư của phép chia này là:
+  - question: "Cho phép chia (2x^2 + x + 3) : (x + 1). Đa thức dư của phép chia này là:"
     options:
-      - 1
-      - 2
-      - 3
-      - 4
+      - "1"
+      - "2"
+      - "3"
+      - "4"
     answer: 3
-    hint: Đặt tính chia hoặc dùng Bézout với x = -1: 2(-1)^2 + (-1) + 3 = 2 - 1 + 3 = 4.
-    explanation: Số dư R = P(-1) = 2(-1)^2 + (-1) + 3 = 2 - 1 + 3 = 4.
+    hint: "Đặt tính chia hoặc dùng Bézout với x = -1: 2(-1)^2 + (-1) + 3 = 2 - 1 + 3 = 4."
+    explanation: "Số dư R = P(-1) = 2(-1)^2 + (-1) + 3 = 2 - 1 + 3 = 4."
 
-  - question: Giá trị của m để đa thức x^2 - 5x + m chia hết cho (x - 2) là:
+  - question: "Giá trị của m để đa thức x^2 - 5x + m chia hết cho (x - 2) là:"
     options:
-      - m = 6
-      - m = -6
-      - m = 10
-      - m = -10
+      - "m = 6"
+      - "m = -6"
+      - "m = 10"
+      - "m = -10"
     answer: 0
-    hint: Để chia hết thì P(2) = 0: 2^2 - 5*2 + m = 0 -> 4 - 10 + m = 0.
-    explanation: P(2) = 4 - 10 + m = -6 + m = 0 suy ra m = 6.
+    hint: "Để chia hết thì P(2) = 0: 2^2 - 5*2 + m = 0 -> 4 - 10 + m = 0."
+    explanation: "P(2) = 4 - 10 + m = -6 + m = 0 suy ra m = 6."
 ````
 
 ---

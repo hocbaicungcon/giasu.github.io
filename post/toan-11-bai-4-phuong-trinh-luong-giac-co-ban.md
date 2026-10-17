@@ -93,7 +93,7 @@ Trong [Bài 3: Hàm số lượng giác](toan-11-bai-3-ham-so-luong-giac.html), 
 <!-- Trục tọa độ -->
 <line x1="30" y1="160" x2="370" y2="160" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr1)"/>
 <line x1="200" y1="300" x2="200" y2="20" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr1)"/>
-<text x="375" y="164" font-size="13" fill="#475569">x (cos)</text>
+<text x="396" y="164" text-anchor="end" font-size="13" fill="#475569">x (cos)</text>
 <text x="205" y="24" font-size="13" fill="#475569">y (sin)</text>
 <text x="186" y="176" font-size="13" fill="#64748b">O</text>
 <!-- Đường tròn đơn vị R = 110 -->

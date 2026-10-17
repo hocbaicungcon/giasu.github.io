@@ -360,6 +360,19 @@ export function initInteractiveDiagrams(){
 
   let activeHandle=null,activeVertex=null;
 
+  // A label bound to a moved vertex must never leave the drawing area, where the SVG would clip it.
+  function keepLabelInside(el){
+   if(el.closest?.('g[transform]'))return;
+   try{
+    const b=el.getBBox();if(!b.width)return;
+    const vbx=vb?.x||0,vby=vb?.y||0,vbw=vb?.width||600,vbh=vb?.height||340,margin=2;
+    let dx=0,dy=0;
+    if(b.x<vbx+margin)dx=vbx+margin-b.x;else if(b.x+b.width>vbx+vbw-margin)dx=vbx+vbw-margin-(b.x+b.width);
+    if(b.y<vby+margin)dy=vby+margin-b.y;else if(b.y+b.height>vby+vbh-margin)dy=vby+vbh-margin-(b.y+b.height);
+    if(dx||dy){el.setAttribute('x',(+el.getAttribute('x')+dx).toFixed(1));el.setAttribute('y',(+el.getAttribute('y')+dy).toFixed(1));}
+   }catch{}
+  }
+
   function moveVertex(v,nx,ny){
    const vbx=vb?.x||0,vby=vb?.y||0,vbw=vb?.width||600,vbh=vb?.height||340;
    const clampedX=Math.max(vbx+8,Math.min(vbx+vbw-8,nx));
@@ -456,6 +469,7 @@ export function initInteractiveDiagrams(){
      tb.el.setAttribute('y',(my+tb.dy).toFixed(1));
     }
    });
+   textBindings.forEach(tb=>keepLabelInside(tb.el));
 
    if(resetBtn)resetBtn.hidden=false;
   }

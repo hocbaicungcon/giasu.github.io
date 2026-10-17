@@ -168,19 +168,19 @@ Trải nghiệm việc quy đồng và kiểm tra giá trị của mẫu thức.
         btns.forEach(b => {
           b.style.background = '#e2e8f0';
           b.style.color = '#1e293b';
-        };
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', __initApp);
-        } else {
-          __initApp();
-        }
+        });
         this.style.background = '#2563eb';
         this.style.color = 'white';
         render(this.getAttribute('data-id'));
       });
     });
     render(1);
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

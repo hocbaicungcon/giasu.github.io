@@ -193,10 +193,14 @@ Dưới đây là mô phỏng trực quan họ nguyên hàm $F(x) = \frac{x^3}{3
       const tanX1 = x0 - tLen, tanY1 = y0 - slope * tLen;
       const tanX2 = x0 + tLen, tanY2 = y0 + slope * tLen;
 
+      // Label the curve where it is still inside the drawing area (the upper curves leave through the top).
+      let labelX = 2.5;
+      while (labelX > -2.5 && (toScreenY(F(labelX, C)) < 18 || toScreenY(F(labelX, C)) > H - 8)) labelX -= 0.1;
+
       html += `
         <line x1="${toScreenX(tanX1)}" y1="${toScreenY(tanY1)}" x2="${toScreenX(tanX2)}" y2="${toScreenY(tanY2)}" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="3 3" />
         <circle cx="${ptSx}" cy="${ptSy}" r="4" fill="${color}" stroke="#ffffff" stroke-width="1.5" />
-        <text x="${toScreenX(2.5)}" y="${toScreenY(F(2.5, C))}" font-size="10" fill="${color}" font-weight="bold">C = ${C}</text>
+        <text x="${toScreenX(labelX)}" y="${toScreenY(F(labelX, C)) - 4}" font-size="10" fill="${color}" font-weight="bold">C = ${C}</text>
       `;
     });
 

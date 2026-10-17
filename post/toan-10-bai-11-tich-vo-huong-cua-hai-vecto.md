@@ -153,7 +153,7 @@ Với ba vectơ $\vec{a}, \vec{b}, \vec{c}$ và số thực $k$:
 
 Kéo đầu mút của hai vectơ $\vec{u}$ và $\vec{v}$ để quan sát góc $\theta$, giá trị $\cos\theta$ và tích vô hướng $x x' + y y'$ biến thiên theo thời gian thực:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">⚡ Máy Tính Tích Vô Hướng Trực Quan</h3>
@@ -250,6 +250,14 @@ Kéo đầu mút của hai vectơ $\vec{u}$ và $\vec{v}$ để quan sát góc $
   let v = { x: 2.5, y: 3.5 };
   let activeHandle = null;
 
+  // Keep a vector label inside the drawing area: flip it to the left of the tip near the right edge.
+  function placeLabel(id, sx, sy, dy) {
+    const el = document.getElementById(id), flip = sx > 35;
+    el.setAttribute('x', flip ? sx - 8 : sx + 8);
+    el.setAttribute('y', Math.max(-104, Math.min(112, sy + dy)));
+    el.setAttribute('text-anchor', flip ? 'end' : 'start');
+  }
+
   function update() {
     const sxU = u.x * scale, syU = -u.y * scale;
     const sxV = v.x * scale, syV = -v.y * scale;
@@ -267,16 +275,14 @@ Kéo đầu mút của hai vectơ $\vec{u}$ và $\vec{v}$ để quan sát góc $
     document.getElementById('lineUdot').setAttribute('y2', syU);
     document.getElementById('hUdot').setAttribute('cx', sxU);
     document.getElementById('hUdot').setAttribute('cy', syU);
-    document.getElementById('lblUdot').setAttribute('x', sxU + 8);
-    document.getElementById('lblUdot').setAttribute('y', syU + 14);
+    placeLabel('lblUdot', sxU, syU, 14);
     document.getElementById('lblUdot').textContent = `u(${u.x.toFixed(1)}; ${u.y.toFixed(1)})`;
 
     document.getElementById('lineVdot').setAttribute('x2', sxV);
     document.getElementById('lineVdot').setAttribute('y2', syV);
     document.getElementById('hVdot').setAttribute('cx', sxV);
     document.getElementById('hVdot').setAttribute('cy', syV);
-    document.getElementById('lblVdot').setAttribute('x', sxV + 8);
-    document.getElementById('lblVdot').setAttribute('y', syV - 6);
+    placeLabel('lblVdot', sxV, syV, -6);
     document.getElementById('lblVdot').textContent = `v(${v.x.toFixed(1)}; ${v.y.toFixed(1)})`;
 
     // Angle text and arc
@@ -319,8 +325,8 @@ Kéo đầu mút của hai vectơ $\vec{u}$ và $\vec{v}$ để quan sát góc $
     const rect = svg.getBoundingClientRect();
     const cx = e.clientX || (e.touches && e.touches[0].clientX);
     const cy = e.clientY || (e.touches && e.touches[0].clientY);
-    const svgX = (cx - rect.left) * (240 / rect.width) - 120;
-    const svgY = (cy - rect.top) * (240 / rect.height) - 120;
+    const svgX = Math.max(-112, Math.min(112, (cx - rect.left) * (240 / rect.width) - 120));
+    const svgY = Math.max(-112, Math.min(112, (cy - rect.top) * (240 / rect.height) - 120));
     return {
       x: Math.round((svgX / scale) * 2) / 2,
       y: Math.round((-svgY / scale) * 2) / 2

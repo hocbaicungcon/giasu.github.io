@@ -24,7 +24,7 @@ Hình dáng của những chiếc cầu treo dây võng kì vĩ, vòi phun nư�
 
 ## 1. Sơ đồ tư duy (Mindmap) Hàm số bậc hai
 
-```html
+```widget
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0;">
   <div style="background: #f8fafc; border-left: 4px solid #3b82f6; border-radius: 8px; padding: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
     <h4 style="margin: 0 0 8px 0; color: #1e40af;">1. Dạng tổng quát & Đỉnh</h4>
@@ -119,7 +119,7 @@ Hình dáng của những chiếc cầu treo dây võng kì vĩ, vòi phun nư�
 
 Kéo các thanh trượt $a, b, c$ để quan sát đồ thị Parabol biến đổi hình dạng tức thì, cùng sự dịch chuyển của đỉnh $I$ và trục đối xứng:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">⚡ Thí Nghiệm Parabol Biến Thiên $y = ax^2 + bx + c$</h3>

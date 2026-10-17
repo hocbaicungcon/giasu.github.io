@@ -298,18 +298,20 @@ $$R = \frac{(x - 2)(x + 1)}{(x - 2)(x + 2)} = \frac{x + 1}{x + 2}$$
 ---
 
 #### Bài toán 3:
-Tính giá trị của các biểu thức sau một cách hợp lý:
-$$M = \frac{x^2 + 38x + 4}{2x + 17} + \frac{3x - 4}{x - 1} - \frac{4x^2 - 4x - 68}{2x + 17}$$
+Rút gọn biểu thức sau một cách hợp lý:
+$$M = \frac{x^2 + 38x + 4}{2x + 17} + \frac{3x - 4}{x - 1} - \frac{x^2 + 4x - 285}{2x + 17}$$
 
 **Lời giải:**
 
+Điều kiện xác định: $x \ne -\dfrac{17}{2}$ và $x \ne 1$.
+
 Nhận thấy phân thức thứ nhất và phân thức thứ ba có cùng mẫu thức là $(2x + 17)$. Ta áp dụng tính chất giao hoán và kết hợp để nhóm hai phân thức này:
-$$M = \left( \frac{x^2 + 38x + 4}{2x + 17} - \frac{4x^2 - 4x - 68}{2x + 17} \right) + \frac{3x - 4}{x - 1}$$
+$$M = \left( \frac{x^2 + 38x + 4}{2x + 17} - \frac{x^2 + 4x - 285}{2x + 17} \right) + \frac{3x - 4}{x - 1}$$
 Thực hiện phép trừ trong ngoặc:
-$$\text{Tử trong ngoặc} = (x^2 + 38x + 4) - (4x^2 - 4x - 68) = x^2 + 38x + 4 - 4x^2 + 4x + 68 = -3x^2 + 42x + 72$$
-Tuy nhiên, ta có thể kiểm tra một cách nhóm khác hoặc đề bài chuẩn hóa số liệu:
-$$M_1 = \frac{(x^2 + 38x + 4) - (x^2 + 4x - 30)}{2x + 17}$$
-Với bài toán tổng quát, việc nhóm các phân thức cùng mẫu giúp triệt tiêu bậc 2 và rút gọn về biểu thức bậc nhất đơn giản, giúp việc tính toán trở nên nhẹ nhàng hơn rất nhiều!
+$$\frac{(x^2 + 38x + 4) - (x^2 + 4x - 285)}{2x + 17} = \frac{34x + 289}{2x + 17} = \frac{17(2x + 17)}{2x + 17} = 17$$
+Do đó:
+$$M = 17 + \frac{3x - 4}{x - 1} = \frac{17(x - 1) + 3x - 4}{x - 1} = \frac{20x - 21}{x - 1}$$
+Việc nhóm các phân thức cùng mẫu giúp triệt tiêu bậc hai và rút gọn nhanh hơn nhiều so với quy đồng cả ba phân thức.
 
 ---
 

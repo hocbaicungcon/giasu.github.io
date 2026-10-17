@@ -57,7 +57,9 @@ Chú ý
 
 - $\left[ \mathop { lim } \limits_{ x→x_{ 0 } ^{ - } } y=+∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ - } } y=-∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ + } } y=+∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ + } } y=-∞ \right. ⇒x=x_{ 0 }$ là đường tiệm cận đứng của đồ thị hàm số.
 
-- $\left[ \mathop { lim } \limits_{ x→-∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0\mathop { lim } \limits_{ x→+∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0 \right.$ thì $y=ax+b$ là tiệm cận xiên của đồ thị hàm số.⁂ Chú ý:
+- $\left[ \mathop { lim } \limits_{ x→-∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0\mathop { lim } \limits_{ x→+∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0 \right.$ thì $y=ax+b$ là tiệm cận xiên của đồ thị hàm số.
+
+> **Chú ý:** 
 
 - $\mathop { lim } \limits_{ x→+∞ } y=y_{ 1 } ;\mathop { lim } \limits_{ x→-∞ } y=y_{ 2 } ⇒y=y_{ 1 } ;y=y_{ 2 }$ là hai đường tiệm cận ngang của đồ thị hàm số.
 - **Tập xác định:** không có chứa $+∞;-∞$ thì đồ thị hàm số không có đường tiện cận ngang.
@@ -120,7 +122,9 @@ Tổng số đường tiệm cận đứng và tiệm cận ngang của đồ th
 - **Bước 3:** Tìm tiệm cận đứng của đồ thị hàm số bằng cách tính các giới hạn (nếu có):$\mathop { lim } \limits_{ x→k ^ { + } } f\left ( { x } \right.  )$ và $\mathop { lim } \limits_{ x→k ^ { - } } f\left ( { x } \right.  )$
 - **Bước 4:** Tìm tiệm cận xiên (dành cho hàm số có dạng phân thức có bậc tử số lớn hơn bậc mẫu số 1 bậc) bằng một trong hai cách sau:
 - **Cách 1:** Nếu biểu diễn $f\left ( { x } \right.  )=ax+b+g\left ( { x } \right.  )$ thì tính $\left\{ \begin{array}{l} \mathop { lim } \limits_{ x→-∞ } \left ( { f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) } \right.  )\mathop { lim } \limits_{ x→+∞ } \left ( { f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) } \right.  ) \end{array} \right.$
-- **Cách 2:** Xác định đường tiệm cận xiên $y=ax+b$ bằng cách xác định hệ số $a,b$:$a=\mathop { lim } \limits_{ x→-∞ } \frac { f\left ( { x } \right.  ) } { x }$ hoặc $a=\mathop { lim } \limits_{ x→+∞ } \frac { f\left ( { x } \right.  ) } { x }$ với $a≠0$. Khi đó tương ứng ta có $b=\mathop { lim } \limits_{ x→-∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$ hoặc $b=\mathop { lim } \limits_{ x→+∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$⁂ Chú ý: 
+- **Cách 2:** Xác định đường tiệm cận xiên $y=ax+b$ bằng cách xác định hệ số $a,b$:$a=\mathop { lim } \limits_{ x→-∞ } \frac { f\left ( { x } \right.  ) } { x }$ hoặc $a=\mathop { lim } \limits_{ x→+∞ } \frac { f\left ( { x } \right.  ) } { x }$ với $a≠0$. Khi đó tương ứng ta có $b=\mathop { lim } \limits_{ x→-∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$ hoặc $b=\mathop { lim } \limits_{ x→+∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$
+
+> **Chú ý:**  
 - **Đồ thị:** hàm số chỉ có thể có một trong hai loại tiệm cận ngang hoặc tiệm cận xiên.
 
 - Nếu hàm số xác định trên toàn bộ tập số thực thì không có tiệm cận đứng.

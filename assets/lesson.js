@@ -137,3 +137,19 @@ document.querySelectorAll('form.quiz[data-answers]').forEach(form=>{
     });
   });
 })();
+
+// Mark inline formulas wider than their line so CSS can contain them without touching the short ones.
+(function markWideFormulas(){
+ const mark=()=>{
+  const wide=[];
+  for(const formula of document.querySelectorAll('.prose .katex:not(.katex-display > .katex)')){
+   if(formula.classList.contains('katex-wide'))continue;
+   const box=formula.parentElement;
+   if(box&&formula.getBoundingClientRect().width>box.clientWidth+1)wide.push(formula);
+  }
+  for(const formula of wide)formula.classList.add('katex-wide');
+ };
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mark);else mark();
+ if(document.fonts?.ready)document.fonts.ready.then(mark);
+ let timer;addEventListener('resize',()=>{clearTimeout(timer);timer=setTimeout(mark,150);});
+})();

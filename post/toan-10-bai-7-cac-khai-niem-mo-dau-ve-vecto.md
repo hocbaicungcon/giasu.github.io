@@ -134,7 +134,7 @@ Tuy nhiên, có vô vàn đại lượng vật lý quan trọng khác mà một 
 
 Kéo điểm đầu $A$ hoặc điểm cuối $B$ của vectơ $\vec{u} = \vec{AB}$ và quan sát độ dài, phương, hướng cùng các vectơ đối chứng:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">🏹 Phòng Thí Nghiệm Động Học Vectơ</h3>
@@ -278,8 +278,8 @@ Kéo điểm đầu $A$ hoặc điểm cuối $B$ của vectơ $\vec{u} = \vec{A
     const cx = e.clientX || (e.touches && e.touches[0].clientX);
     const cy = e.clientY || (e.touches && e.touches[0].clientY);
     return {
-      x: (cx - rect.left) * (320 / rect.width),
-      y: (cy - rect.top) * (220 / rect.height)
+      x: Math.max(8, Math.min(312, (cx - rect.left) * (320 / rect.width))),
+      y: Math.max(8, Math.min(212, (cy - rect.top) * (220 / rect.height)))
     };
   }
 

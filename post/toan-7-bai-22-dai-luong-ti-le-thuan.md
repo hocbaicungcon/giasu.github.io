@@ -330,107 +330,107 @@ Doanh thu $R$ tỉ lệ thuận với số lượng hàng bán $Q$ theo hệ s�
 Hãy kiểm tra năng lực hiểu biết về đại lượng tỉ lệ thuận qua $10$ câu hỏi trắc nghiệm sau:
 
 ````quiz
-title: Kiểm tra Đại lượng tỉ lệ thuận (Toán 7 - Bài 22)
+title: "Kiểm tra Đại lượng tỉ lệ thuận (Toán 7 - Bài 22)"
 questions:
-  - question: Đại lượng y tỉ lệ thuận với đại lượng x theo hệ số tỉ lệ k (k khác 0) nếu liên hệ theo công thức nào?
+  - question: "Đại lượng y tỉ lệ thuận với đại lượng x theo hệ số tỉ lệ k (k khác 0) nếu liên hệ theo công thức nào?"
     options:
-      - y = k / x
-      - y = k * x
-      - y = x + k
-      - y = x - k
+      - "y = k / x"
+      - "y = k * x"
+      - "y = x + k"
+      - "y = x - k"
     answer: 1
-    hint: Xem lại định nghĩa cơ bản ở mục I.1.
-    explanation: Theo định nghĩa, y tỉ lệ thuận với x nếu y = kx (với k là hằng số khác 0).
+    hint: "Xem lại định nghĩa cơ bản ở mục I.1."
+    explanation: "Theo định nghĩa, y tỉ lệ thuận với x nếu y = kx (với k là hằng số khác 0)."
 
-  - question: Nếu y tỉ lệ thuận với x theo hệ số tỉ lệ k = 4 thì x tỉ lệ thuận với y theo hệ số tỉ lệ nào?
+  - question: "Nếu y tỉ lệ thuận với x theo hệ số tỉ lệ k = 4 thì x tỉ lệ thuận với y theo hệ số tỉ lệ nào?"
     options:
-      - 4
-      - -4
-      - 1/4
-      - -1/4
+      - "4"
+      - "-4"
+      - "1/4"
+      - "-1/4"
     answer: 2
-    hint: Hệ số tỉ lệ của x đối với y là 1/k.
-    explanation: Nếu y = 4x thì x = (1/4)y, do đó x tỉ lệ thuận với y theo hệ số 1/4.
+    hint: "Hệ số tỉ lệ của x đối với y là 1/k."
+    explanation: "Nếu y = 4x thì x = (1/4)y, do đó x tỉ lệ thuận với y theo hệ số 1/4."
 
-  - question: Cho biết y tỉ lệ thuận với x và khi x = 3 thì y = -15. Hệ số tỉ lệ của y đối với x là:
+  - question: "Cho biết y tỉ lệ thuận với x và khi x = 3 thì y = -15. Hệ số tỉ lệ của y đối với x là:"
     options:
-      - -5
-      - 5
-      - -1/5
-      - -45
+      - "-5"
+      - "5"
+      - "-1/5"
+      - "-45"
     answer: 0
-    hint: k = y / x.
-    explanation: Ta có k = (-15) / 3 = -5.
+    hint: "k = y / x."
+    explanation: "Ta có k = (-15) / 3 = -5."
 
-  - question: Cho y tỉ lệ thuận với x theo công thức y = 2.5x. Khi x = 8 thì giá trị của y là:
+  - question: "Cho y tỉ lệ thuận với x theo công thức y = 2.5x. Khi x = 8 thì giá trị của y là:"
     options:
-      - 16
-      - 20
-      - 25
-      - 30
+      - "16"
+      - "20"
+      - "25"
+      - "30"
     answer: 1
-    hint: Thay x = 8 vào công thức y = 2.5 * 8.
-    explanation: y = 2.5 * 8 = 20.
+    hint: "Thay x = 8 vào công thức y = 2.5 * 8."
+    explanation: "y = 2.5 * 8 = 20."
 
-  - question: Cho bảng giá trị của hai đại lượng x và y tỉ lệ thuận: khi x = 2 thì y = 6. Khi y = 24 thì giá trị của x là:
+  - question: "Cho bảng giá trị của hai đại lượng x và y tỉ lệ thuận: khi x = 2 thì y = 6. Khi y = 24 thì giá trị của x là:"
     options:
-      - 6
-      - 8
-      - 12
-      - 16
+      - "6"
+      - "8"
+      - "12"
+      - "16"
     answer: 1
-    hint: Hệ số tỉ lệ k = 6 / 2 = 3 -> x = y / 3 = 24 / 3.
-    explanation: Hệ số tỉ lệ k = 6/2 = 3. Khi y = 24 thì x = 24 / 3 = 8.
+    hint: "Hệ số tỉ lệ k = 6 / 2 = 3 -> x = y / 3 = 24 / 3."
+    explanation: "Hệ số tỉ lệ k = 6/2 = 3. Khi y = 24 thì x = 24 / 3 = 8."
 
-  - question: Đại lượng nào sau đây tỉ lệ thuận với nhau trong thực tế?
+  - question: "Đại lượng nào sau đây tỉ lệ thuận với nhau trong thực tế?"
     options:
-      - Quãng đường đi được và thời gian đi (với vận tốc không đổi).
-      - Thời gian hoàn thành công việc và số người làm (với cùng năng suất).
-      - Chiều dài và chiều rộng của một hình chữ nhật có diện tích không đổi.
-      - Tuổi của cha và tuổi của con theo từng năm.
+      - "Quãng đường đi được và thời gian đi (với vận tốc không đổi)."
+      - "Thời gian hoàn thành công việc và số người làm (với cùng năng suất)."
+      - "Chiều dài và chiều rộng của một hình chữ nhật có diện tích không đổi."
+      - "Tuổi của cha và tuổi của con theo từng năm."
     answer: 0
-    hint: Quãng đường s = v * t (khi v không đổi thì s và t tỉ lệ thuận).
-    explanation: Khi vận tốc không đổi, s = vt nên quãng đường tỉ lệ thuận với thời gian chuyển động.
+    hint: "Quãng đường s = v * t (khi v không đổi thì s và t tỉ lệ thuận)."
+    explanation: "Khi vận tốc không đổi, s = vt nên quãng đường tỉ lệ thuận với thời gian chuyển động."
 
-  - question: Một ô tô chạy đều tiêu thụ 7 lít xăng cho quãng đường 100 km. Muốn đi hết quãng đường 350 km thì ô tô cần bao nhiêu lít xăng?
+  - question: "Một ô tô chạy đều tiêu thụ 7 lít xăng cho quãng đường 100 km. Muốn đi hết quãng đường 350 km thì ô tô cần bao nhiêu lít xăng?"
     options:
-      - 21 lít
-      - 24.5 lít
-      - 28 lít
-      - 35 lít
+      - "21 lít"
+      - "24.5 lít"
+      - "28 lít"
+      - "35 lít"
     answer: 1
-    hint: Lập tỉ số: x / 350 = 7 / 100 -> x = 3.5 * 7.
-    explanation: Lượng xăng cần dùng là: (350 * 7) / 100 = 24.5 lít.
+    hint: "Lập tỉ số: x / 350 = 7 / 100 -> x = 3.5 * 7."
+    explanation: "Lượng xăng cần dùng là: (350 * 7) / 100 = 24.5 lít."
 
-  - question: Đồ thị biểu diễn mối quan hệ giữa hai đại lượng tỉ lệ thuận y = kx trên mặt phẳng tọa độ Oxy có đặc điểm gì?
+  - question: "Đồ thị biểu diễn mối quan hệ giữa hai đại lượng tỉ lệ thuận y = kx trên mặt phẳng tọa độ Oxy có đặc điểm gì?"
     options:
-      - Là một đường tròn tâm O.
-      - Là một đường thẳng luôn đi qua gốc tọa độ O(0; 0).
-      - Là một đường cong parabol.
-      - Là một đường thẳng song song với trục hoành.
+      - "Là một đường tròn tâm O."
+      - "Là một đường thẳng luôn đi qua gốc tọa độ O(0; 0)."
+      - "Là một đường cong parabol."
+      - "Là một đường thẳng song song với trục hoành."
     answer: 1
-    hint: Xem Chuyên đề 2 về đồ thị hàm số y = kx.
-    explanation: Đồ thị hàm số y = kx là một đường thẳng luôn đi qua gốc tọa độ O(0; 0).
+    hint: "Xem Chuyên đề 2 về đồ thị hàm số y = kx."
+    explanation: "Đồ thị hàm số y = kx là một đường thẳng luôn đi qua gốc tọa độ O(0; 0)."
 
-  - question: Ba số x, y, z tỉ lệ thuận với 2; 3; 5 và có tổng x + y + z = 70. Giá trị của số lớn nhất là:
+  - question: "Ba số x, y, z tỉ lệ thuận với 2; 3; 5 và có tổng x + y + z = 70. Giá trị của số lớn nhất là:"
     options:
-      - 14
-      - 21
-      - 35
-      - 40
+      - "14"
+      - "21"
+      - "35"
+      - "40"
     answer: 2
-    hint: Số lớn nhất tương ứng với 5 phần: 70 / (2 + 3 + 5) * 5.
-    explanation: Giá trị một phần = 70 / 10 = 7. Số lớn nhất là z = 5 * 7 = 35.
+    hint: "Số lớn nhất tương ứng với 5 phần: 70 / (2 + 3 + 5) * 5."
+    explanation: "Giá trị một phần = 70 / 10 = 7. Số lớn nhất là z = 5 * 7 = 35."
 
-  - question: Biết độ dài cạnh hình vuông tỉ lệ thuận với chu vi của nó. Hệ số tỉ lệ của chu vi đối với cạnh hình vuông là:
+  - question: "Biết độ dài cạnh hình vuông tỉ lệ thuận với chu vi của nó. Hệ số tỉ lệ của chu vi đối với cạnh hình vuông là:"
     options:
-      - 2
-      - 4
-      - 8
-      - 16
+      - "2"
+      - "4"
+      - "8"
+      - "16"
     answer: 1
-    hint: Chu vi P = 4 * a.
-    explanation: Công thức chu vi hình vuông là P = 4a, do đó chu vi P tỉ lệ thuận với cạnh a theo hệ số k = 4.
+    hint: "Chu vi P = 4 * a."
+    explanation: "Công thức chu vi hình vuông là P = 4a, do đó chu vi P tỉ lệ thuận với cạnh a theo hệ số k = 4."
 ````
 
 ---

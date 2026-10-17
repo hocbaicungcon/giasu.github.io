@@ -370,7 +370,7 @@ Anh ta đã mắc phải cái bẫy tâm lý kinh điển gọi là **Ngụy bi�
       ],
       "answer": 2,
       "hint": "Các mặt có số chấm lẻ là: 1, 3, 5.",
-      "explanation": "Có 3 kết quả thuận lợi $\{1; 3; 5\}$ trên tổng số 6 kết quả có thể. Xác suất là $P = \\frac{3}{6} = \\frac{1}{2}$."
+      "explanation": "Có 3 kết quả thuận lợi $\\{1; 3; 5\\}$ trên tổng số 6 kết quả có thể. Xác suất là $P = \\frac{3}{6} = \\frac{1}{2}$."
     },
     {
       "question": "Một túi đựng 6 quả cầu xanh và 4 quả cầu đỏ có cùng khối lượng và kích thước. Rút ngẫu nhiên 1 quả cầu. Xác suất rút được quả cầu màu đỏ là:",

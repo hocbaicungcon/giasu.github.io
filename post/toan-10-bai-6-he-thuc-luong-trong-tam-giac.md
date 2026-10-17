@@ -147,7 +147,7 @@ Cho tam giác $ABC$ có độ dài ba cạnh $a, b, c$, chiều cao $h_a, h_b, h
 
 Kéo 3 đỉnh $A, B, C$ trên khung vẽ bên dưới để quan sát hệ thống tự động giải tam giác, kiểm chứng Định lí Sin, Định lí Cosin và công thức Heron trong thời gian thực:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">📐 Phòng Khám Phá Hệ Thức Lượng Tam Giác</h3>
@@ -225,6 +225,7 @@ Kéo 3 đỉnh $A, B, C$ trên khung vẽ bên dưới để quan sát hệ th�
     C: { x: 260, y: 190 }
   };
   let activeVertex = null;
+  const lastValid = { A: { ...pts.A }, B: { ...pts.B }, C: { ...pts.C } };
 
   function dist(p1, p2) {
     return Math.hypot(p1.x - p2.x, p1.y - p2.y);
@@ -235,6 +236,13 @@ Kéo 3 đỉnh $A, B, C$ trên khung vẽ bên dưới để quan sát hệ th�
     const a = dist(pts.B, pts.C) / scale;
     const b = dist(pts.A, pts.C) / scale;
     const c = dist(pts.A, pts.B) / scale;
+
+    // Two vertices on top of each other make the angles undefined: keep the last valid triangle.
+    if (Math.min(a, b, c) < 0.25) {
+      for (const v of ['A', 'B', 'C']) { pts[v].x = lastValid[v].x; pts[v].y = lastValid[v].y; }
+      return update();
+    }
+    for (const v of ['A', 'B', 'C']) lastValid[v] = { x: pts[v].x, y: pts[v].y };
 
     // Angles by Law of Cosines
     let cosA = (b*b + c*c - a*a) / (2*b*c);
@@ -301,8 +309,8 @@ Kéo 3 đỉnh $A, B, C$ trên khung vẽ bên dưới để quan sát hệ th�
     const clientX = e.clientX || (e.touches && e.touches[0].clientX);
     const clientY = e.clientY || (e.touches && e.touches[0].clientY);
     return {
-      x: (clientX - rect.left) * (320 / rect.width),
-      y: (clientY - rect.top) * (240 / rect.height)
+      x: Math.max(8, Math.min(312, (clientX - rect.left) * (320 / rect.width))),
+      y: Math.max(8, Math.min(232, (clientY - rect.top) * (240 / rect.height)))
     };
   }
 

@@ -744,7 +744,7 @@ Hỏi xưởng may cần sản xuất bao nhiêu chiếc áo mỗi loại trong 
 <!-- Axes: Ox at y=185, Oy at x=45 -->
 <line x1="25" y1="185" x2="320" y2="185" stroke="#475569" stroke-width="1.5" />
 <polygon points="320,182 328,185 320,188" fill="#475569" />
-<text x="322" y="200" font-size="12" font-style="italic" fill="#475569">x (áo I)</text>
+<text x="346" y="200" text-anchor="end" font-size="12" font-style="italic" fill="#475569">x (áo I)</text>
 <line x1="45" y1="215" x2="45" y2="18" stroke="#475569" stroke-width="1.5" />
 <polygon points="42,18 45,10 48,18" fill="#475569" />
 <text x="24" y="18" font-size="12" font-style="italic" fill="#475569">y (áo II)</text>

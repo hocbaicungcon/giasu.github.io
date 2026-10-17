@@ -263,7 +263,7 @@ Nhận xét: Giá trị của biểu thức $P$ luôn luôn bằng $3$ với m�
 Một sân khấu ngoài trời hình chữ nhật ban đầu có chiều dài hơn chiều rộng $6\text{ m}$. Trong đợt nâng cấp, nhà trường quyết định mở rộng sân khấu bằng cách tăng chiều rộng thêm $3\text{ m}$ và tăng chiều dài thêm $4\text{ m}$.
 a) Gọi chiều rộng ban đầu là $x$ (mét, $x > 0$). Hãy viết đa thức biểu diễn diện tích ban đầu $S_1$ và diện tích sau khi mở rộng $S_2$ của sân khấu theo $x$.
 b) Viết đa thức biểu diễn phần diện tích tăng thêm $\Delta S = S_2 - S_1$.
-c) Biết rằng phần diện tích tăng thêm là $102\text{ m}^2$. Hãy tính kích thước ban đầu của sân khấu.
+c) Biết rằng phần diện tích tăng thêm là $100\text{ m}^2$. Hãy tính kích thước ban đầu của sân khấu.
 
 **Lời giải:**
 
@@ -280,9 +280,7 @@ b) Phần diện tích tăng thêm $\Delta S = S_2 - S_1$:
 $$\Delta S = (x^2 + 13x + 30) - (x^2 + 6x) = x^2 + 13x + 30 - x^2 - 6x$$
 $$\Delta S = (x^2 - x^2) + (13x - 6x) + 30 = 7x + 30\text{ (m}^2\text{)}$$
 
-c) Theo đề bài, phần diện tích tăng thêm bằng $102\text{ m}^2$, ta có:
-$$7x + 30 = 102 \implies 7x = 102 - 30 \implies 7x = 72 \dots$$
-*Hãy điều chỉnh số liệu đề bài để $x$ là số nguyên đẹp:* Nếu diện tích tăng thêm là $100\text{ m}^2$:
+c) Theo đề bài, phần diện tích tăng thêm bằng $100\text{ m}^2$, ta có:
 $$7x + 30 = 100 \implies 7x = 70 \implies x = 10\text{ (m)}$$
 Giá trị $x = 10$ thỏa mãn điều kiện $x > 0$.
 - Chiều rộng ban đầu là $10\text{ m}$.
@@ -352,107 +350,107 @@ Nhân đa thức giúp các nhà kinh tế xây dựng đường cong doanh thu 
 Hãy kiểm tra kỹ năng nhân đa thức qua $10$ câu hỏi trắc nghiệm sau:
 
 ````quiz
-title: Kiểm tra Phép nhân Đa thức một biến (Toán 7 - Bài 27)
+title: "Kiểm tra Phép nhân Đa thức một biến (Toán 7 - Bài 27)"
 questions:
-  - question: Tích của hai đơn thức 4x^3 và -2x^2 là:
+  - question: "Tích của hai đơn thức 4x^3 và -2x^2 là:"
     options:
-      - 8x^5
-      - -8x^5
-      - -8x^6
-      - 2x^5
+      - "8x^5"
+      - "-8x^5"
+      - "-8x^6"
+      - "2x^5"
     answer: 1
-    hint: Nhân hệ số (4 * -2 = -8) và cộng số mũ (3 + 2 = 5).
-    explanation: (4x^3) * (-2x^2) = [4 * (-2)] * x^(3 + 2) = -8x^5.
+    hint: "Nhân hệ số (4 * -2 = -8) và cộng số mũ (3 + 2 = 5)."
+    explanation: "(4x^3) * (-2x^2) = [4 * (-2)] * x^(3 + 2) = -8x^5."
 
-  - question: Kết quả của phép nhân 3x(2x - 5) là:
+  - question: "Kết quả của phép nhân 3x(2x - 5) là:"
     options:
-      - 6x^2 - 15
-      - 6x^2 - 15x
-      - 5x^2 - 15x
-      - 6x - 15
+      - "6x^2 - 15"
+      - "6x^2 - 15x"
+      - "5x^2 - 15x"
+      - "6x - 15"
     answer: 1
-    hint: Phân phối 3x cho từng hạng tử: 3x * 2x - 3x * 5.
-    explanation: 3x * (2x - 5) = 3x * 2x - 3x * 5 = 6x^2 - 15x.
+    hint: "Phân phối 3x cho từng hạng tử: 3x * 2x - 3x * 5."
+    explanation: "3x * (2x - 5) = 3x * 2x - 3x * 5 = 6x^2 - 15x."
 
-  - question: Khai triển tích (x + 4)(x - 3) ta được đa thức thu gọn là:
+  - question: "Khai triển tích (x + 4)(x - 3) ta được đa thức thu gọn là:"
     options:
-      - x^2 + x - 12
-      - x^2 - x - 12
-      - x^2 + 7x - 12
-      - x^2 - 12
+      - "x^2 + x - 12"
+      - "x^2 - x - 12"
+      - "x^2 + 7x - 12"
+      - "x^2 - 12"
     answer: 0
-    hint: (x + 4)(x - 3) = x^2 - 3x + 4x - 12.
-    explanation: (x + 4)(x - 3) = x^2 - 3x + 4x - 12 = x^2 + x - 12.
+    hint: "(x + 4)(x - 3) = x^2 - 3x + 4x - 12."
+    explanation: "(x + 4)(x - 3) = x^2 - 3x + 4x - 12 = x^2 + x - 12."
 
-  - question: Bậc của đa thức tích P(x) * Q(x), biết P(x) có bậc 3 và Q(x) có bậc 4, là:
+  - question: "Bậc của đa thức tích P(x) * Q(x), biết P(x) có bậc 3 và Q(x) có bậc 4, là:"
     options:
-      - Bậc 4
-      - Bậc 7
-      - Bậc 12
-      - Bậc 1
+      - "Bậc 4"
+      - "Bậc 7"
+      - "Bậc 12"
+      - "Bậc 1"
     answer: 1
-    hint: Bậc của tích bằng tổng các bậc: 3 + 4.
-    explanation: Bậc của đa thức tích bằng tổng bậc của hai đa thức nhân tử: 3 + 4 = 7.
+    hint: "Bậc của tích bằng tổng các bậc: 3 + 4."
+    explanation: "Bậc của đa thức tích bằng tổng bậc của hai đa thức nhân tử: 3 + 4 = 7."
 
-  - question: Hệ số tự do của tích (2x^2 - 3x + 5)(x^3 - 4) là:
+  - question: "Hệ số tự do của tích (2x^2 - 3x + 5)(x^3 - 4) là:"
     options:
-      - 5
-      - -4
-      - -20
-      - 20
+      - "5"
+      - "-4"
+      - "-20"
+      - "20"
     answer: 2
-    hint: Hệ số tự do của tích bằng tích hai hệ số tự do: 5 * (-4).
-    explanation: Hệ số tự do là tích của hai số hạng không chứa x: 5 * (-4) = -20.
+    hint: "Hệ số tự do của tích bằng tích hai hệ số tự do: 5 * (-4)."
+    explanation: "Hệ số tự do là tích của hai số hạng không chứa x: 5 * (-4) = -20."
 
-  - question: Khai triển tích (2x - 1)(2x + 1) ta được kết quả:
+  - question: "Khai triển tích (2x - 1)(2x + 1) ta được kết quả:"
     options:
-      - 4x^2 - 1
-      - 4x^2 + 1
-      - 4x^2 - 4x + 1
-      - 2x^2 - 1
+      - "4x^2 - 1"
+      - "4x^2 + 1"
+      - "4x^2 - 4x + 1"
+      - "2x^2 - 1"
     answer: 0
-    hint: (2x - 1)(2x + 1) = 4x^2 + 2x - 2x - 1.
-    explanation: (2x - 1)(2x + 1) = 4x^2 - 1 (hằng đẳng thức hiệu hai bình phương).
+    hint: "(2x - 1)(2x + 1) = 4x^2 + 2x - 2x - 1."
+    explanation: "(2x - 1)(2x + 1) = 4x^2 - 1 (hằng đẳng thức hiệu hai bình phương)."
 
-  - question: Cho biểu thức M = x(x + 2) - x^2. Giá trị của M là:
+  - question: "Cho biểu thức M = x(x + 2) - x^2. Giá trị của M là:"
     options:
-      - 2
-      - 2x
-      - x
-      - 0
+      - "2"
+      - "2x"
+      - "x"
+      - "0"
     answer: 1
-    hint: Khai triển: x^2 + 2x - x^2.
-    explanation: M = x^2 + 2x - x^2 = 2x.
+    hint: "Khai triển: x^2 + 2x - x^2."
+    explanation: "M = x^2 + 2x - x^2 = 2x."
 
-  - question: Rút gọn biểu thức A = (x - 2)(x + 2) - x(x - 1) ta được:
+  - question: "Rút gọn biểu thức A = (x - 2)(x + 2) - x(x - 1) ta được:"
     options:
-      - x - 4
-      - -x - 4
-      - x + 4
-      - 4
+      - "x - 4"
+      - "-x - 4"
+      - "x + 4"
+      - "4"
     answer: 0
-    hint: (x^2 - 4) - (x^2 - x) = x^2 - 4 - x^2 + x.
-    explanation: A = (x^2 - 4) - (x^2 - x) = x^2 - 4 - x^2 + x = x - 4.
+    hint: "(x^2 - 4) - (x^2 - x) = x^2 - 4 - x^2 + x."
+    explanation: "A = (x^2 - 4) - (x^2 - x) = x^2 - 4 - x^2 + x = x - 4."
 
-  - question: Một hình chữ nhật có kích thước hai cạnh là (x + 5) cm và (x - 2) cm. Diện tích của hình chữ nhật biểu thị bởi đa thức:
+  - question: "Một hình chữ nhật có kích thước hai cạnh là (x + 5) cm và (x - 2) cm. Diện tích của hình chữ nhật biểu thị bởi đa thức:"
     options:
-      - x^2 + 3x - 10
-      - x^2 - 3x - 10
-      - x^2 + 7x - 10
-      - 2x + 3
+      - "x^2 + 3x - 10"
+      - "x^2 - 3x - 10"
+      - "x^2 + 7x - 10"
+      - "2x + 3"
     answer: 0
-    hint: Nhân (x + 5)(x - 2) = x^2 - 2x + 5x - 10.
-    explanation: S = (x + 5)(x - 2) = x^2 + 3x - 10.
+    hint: "Nhân (x + 5)(x - 2) = x^2 - 2x + 5x - 10."
+    explanation: "S = (x + 5)(x - 2) = x^2 + 3x - 10."
 
-  - question: Hệ số cao nhất của đa thức tích (3x^2 - 1)(2x^3 + 5x) là:
+  - question: "Hệ số cao nhất của đa thức tích (3x^2 - 1)(2x^3 + 5x) là:"
     options:
-      - 3
-      - 2
-      - 6
-      - 15
+      - "3"
+      - "2"
+      - "6"
+      - "15"
     answer: 2
-    hint: Lấy tích hai hệ số cao nhất: 3 * 2 = 6 (ứng với lũy thừa x^5).
-    explanation: Hạng tử có bậc cao nhất là (3x^2) * (2x^3) = 6x^5. Hệ số cao nhất là 6.
+    hint: "Lấy tích hai hệ số cao nhất: 3 * 2 = 6 (ứng với lũy thừa x^5)."
+    explanation: "Hạng tử có bậc cao nhất là (3x^2) * (2x^3) = 6x^5. Hệ số cao nhất là 6."
 ````
 
 ---

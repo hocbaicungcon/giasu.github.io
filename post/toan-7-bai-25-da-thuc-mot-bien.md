@@ -357,107 +357,107 @@ Chỉ cần tính giá trị của một đa thức bậc $7$, máy tính đã c
 Hãy thử sức với $10$ câu hỏi trắc nghiệm sau:
 
 ````quiz
-title: Kiểm tra Đa thức một biến (Toán 7 - Bài 25)
+title: "Kiểm tra Đa thức một biến (Toán 7 - Bài 25)"
 questions:
-  - question: Biểu thức nào sau đây là một đơn thức một biến?
+  - question: "Biểu thức nào sau đây là một đơn thức một biến?"
     options:
-      - 3x^2 + 1
-      - -5x^4
-      - 2x + y
-      - 4/x
+      - "3x^2 + 1"
+      - "-5x^4"
+      - "2x + y"
+      - "4/x"
     answer: 1
-    hint: Đơn thức một biến chỉ gồm tích của một số với lũy thừa của biến.
-    explanation: -5x^4 là đơn thức một biến. 3x^2 + 1 là đa thức; 2x + y có 2 biến; 4/x biến ở mẫu số.
+    hint: "Đơn thức một biến chỉ gồm tích của một số với lũy thừa của biến."
+    explanation: "-5x^4 là đơn thức một biến. 3x^2 + 1 là đa thức; 2x + y có 2 biến; 4/x biến ở mẫu số."
 
-  - question: Bậc của đa thức P(x) = 3x^5 - 7x^2 + 2x - 9 là:
+  - question: "Bậc của đa thức P(x) = 3x^5 - 7x^2 + 2x - 9 là:"
     options:
-      - 2
-      - 3
-      - 5
-      - 9
+      - "2"
+      - "3"
+      - "5"
+      - "9"
     answer: 2
-    hint: Bậc là số mũ lớn nhất của biến trong đa thức đã thu gọn.
-    explanation: Số mũ lớn nhất của x trong P(x) là 5, nên bậc của đa thức là 5.
+    hint: "Bậc là số mũ lớn nhất của biến trong đa thức đã thu gọn."
+    explanation: "Số mũ lớn nhất của x trong P(x) là 5, nên bậc của đa thức là 5."
 
-  - question: Hệ số cao nhất và hệ số tự do của đa thức Q(x) = -4x^3 + 6x^2 - 8 lần lượt là:
+  - question: "Hệ số cao nhất và hệ số tự do của đa thức Q(x) = -4x^3 + 6x^2 - 8 lần lượt là:"
     options:
-      - -4 và -8
-      - 6 và -8
-      - -4 và 8
-      - 3 và -8
+      - "-4 và -8"
+      - "6 và -8"
+      - "-4 và 8"
+      - "3 và -8"
     answer: 0
-    hint: Hệ số cao nhất đi với lũy thừa bậc cao nhất (-4x^3), hệ số tự do là số hạng không chứa x.
-    explanation: Bậc cao nhất là bậc 3 có hệ số -4. Hệ số tự do là -8.
+    hint: "Hệ số cao nhất đi với lũy thừa bậc cao nhất (-4x^3), hệ số tự do là số hạng không chứa x."
+    explanation: "Bậc cao nhất là bậc 3 có hệ số -4. Hệ số tự do là -8."
 
-  - question: Thu gọn đa thức A(x) = 5x^2 - 3x + 2x^2 + 7x - 4 ta được kết quả:
+  - question: "Thu gọn đa thức A(x) = 5x^2 - 3x + 2x^2 + 7x - 4 ta được kết quả:"
     options:
-      - 7x^2 + 4x - 4
-      - 7x^2 - 4x - 4
-      - 3x^2 + 4x - 4
-      - 7x^2 + 10x - 4
+      - "7x^2 + 4x - 4"
+      - "7x^2 - 4x - 4"
+      - "3x^2 + 4x - 4"
+      - "7x^2 + 10x - 4"
     answer: 0
-    hint: Nhóm (5x^2 + 2x^2) và (-3x + 7x).
-    explanation: A(x) = (5 + 2)x^2 + (-3 + 7)x - 4 = 7x^2 + 4x - 4.
+    hint: "Nhóm (5x^2 + 2x^2) và (-3x + 7x)."
+    explanation: "A(x) = (5 + 2)x^2 + (-3 + 7)x - 4 = 7x^2 + 4x - 4."
 
-  - question: Giá trị của đa thức P(x) = x^2 - 5x + 6 tại x = 2 là:
+  - question: "Giá trị của đa thức P(x) = x^2 - 5x + 6 tại x = 2 là:"
     options:
-      - 20
-      - 0
-      - -4
-      - 6
+      - "20"
+      - "0"
+      - "-4"
+      - "6"
     answer: 1
-    hint: Thay x = 2: P(2) = 2^2 - 5*2 + 6.
-    explanation: P(2) = 4 - 10 + 6 = 0 (vậy x = 2 là một nghiệm của P(x)).
+    hint: "Thay x = 2: P(2) = 2^2 - 5*2 + 6."
+    explanation: "P(2) = 4 - 10 + 6 = 0 (vậy x = 2 là một nghiệm của P(x))."
 
-  - question: Số nào sau đây là nghiệm của đa thức B(x) = 2x - 8?
+  - question: "Số nào sau đây là nghiệm của đa thức B(x) = 2x - 8?"
     options:
-      - x = -4
-      - x = 2
-      - x = 4
-      - x = 8
+      - "x = -4"
+      - "x = 2"
+      - "x = 4"
+      - "x = 8"
     answer: 2
-    hint: Cho 2x - 8 = 0 -> 2x = 8.
-    explanation: 2x - 8 = 0 suy ra 2x = 8 suy ra x = 4.
+    hint: "Cho 2x - 8 = 0 -> 2x = 8."
+    explanation: "2x - 8 = 0 suy ra 2x = 8 suy ra x = 4."
 
-  - question: Đa thức nào sau đây KHÔNG CÓ NGHIỆM trên tập số thực?
+  - question: "Đa thức nào sau đây KHÔNG CÓ NGHIỆM trên tập số thực?"
     options:
-      - x^2 - 4
-      - x^2 + 1
-      - x + 5
-      - 3x - 6
+      - "x^2 - 4"
+      - "x^2 + 1"
+      - "x + 5"
+      - "3x - 6"
     answer: 1
-    hint: x^2 >= 0 với mọi x nên x^2 + 1 >= 1 > 0.
-    explanation: Vì x^2 >= 0 với mọi x nên x^2 + 1 >= 1 > 0, do đó x^2 + 1 không thể bằng 0.
+    hint: "x^2 >= 0 với mọi x nên x^2 + 1 >= 1 > 0."
+    explanation: "Vì x^2 >= 0 với mọi x nên x^2 + 1 >= 1 > 0, do đó x^2 + 1 không thể bằng 0."
 
-  - question: Một đa thức một biến bậc 4 có thể có tối đa bao nhiêu nghiệm?
+  - question: "Một đa thức một biến bậc 4 có thể có tối đa bao nhiêu nghiệm?"
     options:
-      - 2 nghiệm
-      - 3 nghiệm
-      - 4 nghiệm
-      - Vô số nghiệm
+      - "2 nghiệm"
+      - "3 nghiệm"
+      - "4 nghiệm"
+      - "Vô số nghiệm"
     answer: 2
-    hint: Đa thức bậc n có tối đa n nghiệm.
-    explanation: Theo định lý số nghiệm, một đa thức một biến bậc 4 có tối đa 4 nghiệm.
+    hint: "Đa thức bậc n có tối đa n nghiệm."
+    explanation: "Theo định lý số nghiệm, một đa thức một biến bậc 4 có tối đa 4 nghiệm."
 
-  - question: Sắp xếp đa thức F(x) = 2x - 5x^3 + 7 - x^4 theo lũy thừa giảm dần của biến:
+  - question: "Sắp xếp đa thức F(x) = 2x - 5x^3 + 7 - x^4 theo lũy thừa giảm dần của biến:"
     options:
-      - F(x) = -x^4 - 5x^3 + 2x + 7
-      - F(x) = 7 + 2x - 5x^3 - x^4
-      - F(x) = -x^4 + 5x^3 + 2x + 7
-      - F(x) = x^4 - 5x^3 + 2x + 7
+      - "F(x) = -x^4 - 5x^3 + 2x + 7"
+      - "F(x) = 7 + 2x - 5x^3 - x^4"
+      - "F(x) = -x^4 + 5x^3 + 2x + 7"
+      - "F(x) = x^4 - 5x^3 + 2x + 7"
     answer: 0
-    hint: Số mũ giảm dần: bậc 4 -> bậc 3 -> bậc 1 -> bậc 0. Chú ý dấu của các hạng tử.
-    explanation: Sắp xếp đúng theo số mũ giảm dần kèm theo dấu của từng số hạng là: -x^4 - 5x^3 + 2x + 7.
+    hint: "Số mũ giảm dần: bậc 4 -> bậc 3 -> bậc 1 -> bậc 0. Chú ý dấu của các hạng tử."
+    explanation: "Sắp xếp đúng theo số mũ giảm dần kèm theo dấu của từng số hạng là: -x^4 - 5x^3 + 2x + 7."
 
-  - question: Cho đa thức M(x) = ax^2 + bx + c. Biết M(0) = 5. Giá trị của hệ số c là:
+  - question: "Cho đa thức M(x) = ax^2 + bx + c. Biết M(0) = 5. Giá trị của hệ số c là:"
     options:
-      - c = 0
-      - c = 5
-      - c = -5
-      - Không xác định được
+      - "c = 0"
+      - "c = 5"
+      - "c = -5"
+      - "Không xác định được"
     answer: 1
-    hint: M(0) = a*(0)^2 + b*(0) + c = c.
-    explanation: Khi thay x = 0 thì M(0) = c. Do đó c = 5 (hệ số tự do).
+    hint: "M(0) = a*(0)^2 + b*(0) + c = c."
+    explanation: "Khi thay x = 0 thì M(0) = c. Do đó c = 5 (hệ số tự do)."
 ````
 
 ---

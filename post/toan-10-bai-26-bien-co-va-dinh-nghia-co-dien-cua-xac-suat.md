@@ -140,7 +140,7 @@ Các biến cố đặc biệt:
 
 Tự mình thực nghiệm phép thử ngẫu nhiên gieo đồng xu hoặc gieo xúc xắc ảo với hàng trăm lượt thử để chứng kiến sự hội tụ kỳ diệu của tần suất thực nghiệm về xác suất lý thuyết (Luật số lớn):
 
-```html
+```widget
 <div style="max-width: 760px; margin: 20px auto; font-family: system-ui, -apple-system, sans-serif; border: 1px solid #cbd5e1; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.06); overflow: hidden;">
   <div style="background: linear-gradient(135deg, #0284c7, #0369a1); padding: 16px 20px; color: #ffffff;">
     <h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 700; color: #f8fafc;">Phòng Thí Nghiệm Xác Suất Ảo</h3>
@@ -287,6 +287,7 @@ Tự mình thực nghiệm phép thử ngẫu nhiên gieo đồng xu hoặc gieo
   resetSim();
 })();
 </script>
+```
 
 ---
 

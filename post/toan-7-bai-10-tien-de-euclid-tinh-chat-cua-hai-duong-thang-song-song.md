@@ -98,7 +98,7 @@ type: euclid-parallel
 
     <!-- Đường thẳng b song song với a đi qua M -->
     <line x1="50" y1="70" x2="470" y2="70" stroke="#047857" stroke-width="3" stroke-dasharray="8 4" />
-    <text x="480" y="75" font-family="sans-serif" font-weight="bold" font-size="18" fill="#047857">b (duy nhất, b // a)</text>
+    <text x="470" y="58" text-anchor="end" font-family="sans-serif" font-weight="bold" font-size="18" fill="#047857">b (duy nhất, b // a)</text>
 
     <!-- Một đường thẳng d khác đi qua M -->
     <line x1="120" y1="20" x2="400" y2="190" stroke="#94a3b8" stroke-width="2" />

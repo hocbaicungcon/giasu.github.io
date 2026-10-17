@@ -315,9 +315,8 @@ $$248, \quad 249, \quad 250, \quad 250, \quad 251, \quad 251, \quad 252, \quad 2
 - **Ý 3 (0,5 điểm):**
   - Rào trên phát hiện outlier:
     $$Q_3 + 1,5\Delta_Q = 10 + 1,5(3) = 10 + 4,5 = 14,5$$
-    Khoan, xét rào dưới: $Q_1 - 1,5\Delta_Q = 7 - 4,5 = 2,5$.
-    À, với điểm 4: $4 > 2,5$.
-    Nhưng hãy xét rào trên theo ngưỡng điểm tối đa thang điểm 10: Điểm $13 > 10$ là điểm vô lí trên thực tế. Về mặt rào cản thống kê, nếu nhóm Y không có điểm 13 mà là điểm khác: Với rào $14,5$, điểm $13 < 14,5$. Tuy nhiên vì thang điểm chuẩn là $10$, giá trị $13$ là lỗi nhập liệu ngoại lai hiển nhiên *(0,5đ)*.
+  - Rào dưới: $Q_1 - 1,5\Delta_Q = 7 - 4,5 = 2,5$. Điểm nhỏ nhất là $4 > 2,5$ nên không có giá trị ngoại lai ở phía dưới.
+  - Điểm $13 < 14,5$ nên theo quy tắc rào thì không bị loại. Tuy nhiên thang điểm tối đa là $10$, nên $13$ là giá trị vô lí, được xem là lỗi nhập liệu *(0,5đ)*.
 - **Ý 4 (0,5 điểm):**
   - Loại bỏ điểm 13, nhóm Y còn 7 điểm: $4, 6, 8, 8, 9, 10, 10$.
     $\bar{x}_Y = \frac{55}{7} \approx 7,86$.

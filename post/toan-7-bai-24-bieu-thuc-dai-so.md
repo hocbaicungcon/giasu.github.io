@@ -348,107 +348,107 @@ Biểu thức đại số giúp người nông dân rào được diện tích c
 Hãy rèn luyện phản xạ biểu thức đại số qua $10$ câu hỏi trắc nghiệm sau:
 
 ````quiz
-title: Kiểm tra Biểu thức đại số (Toán 7 - Bài 24)
+title: "Kiểm tra Biểu thức đại số (Toán 7 - Bài 24)"
 questions:
-  - question: Biểu thức nào sau đây là một biểu thức đại số?
+  - question: "Biểu thức nào sau đây là một biểu thức đại số?"
     options:
-      - 3x^2 - 5x + 1
-      - 2 + 5 = 7
-      - x > 4
-      - 5x - 2 < 8
+      - "3x^2 - 5x + 1"
+      - "2 + 5 = 7"
+      - "x > 4"
+      - "5x - 2 < 8"
     answer: 0
-    hint: Biểu thức đại số gồm số, biến và các phép toán; không chứa dấu so sánh (=, <, >).
-    explanation: 3x^2 - 5x + 1 là biểu thức đại số. Các phương án còn lại là đẳng thức hoặc bất đẳng thức.
+    hint: "Biểu thức đại số gồm số, biến và các phép toán; không chứa dấu so sánh (=, <, >)."
+    explanation: "3x^2 - 5x + 1 là biểu thức đại số. Các phương án còn lại là đẳng thức hoặc bất đẳng thức."
 
-  - question: Trong biểu thức đại số 4a^2 - 7b + 9, các chữ a và b được gọi là gì?
+  - question: "Trong biểu thức đại số 4a^2 - 7b + 9, các chữ a và b được gọi là gì?"
     options:
-      - Hằng số
-      - Biến số
-      - Phép toán
-      - Tỉ số
+      - "Hằng số"
+      - "Biến số"
+      - "Phép toán"
+      - "Tỉ số"
     answer: 1
-    hint: Chữ cái đại diện cho các giá trị số tùy ý trong biểu thức.
-    explanation: a và b là các biến số (hay biến).
+    hint: "Chữ cái đại diện cho các giá trị số tùy ý trong biểu thức."
+    explanation: "a và b là các biến số (hay biến)."
 
-  - question: Biểu thức đại số biểu thị "Hiệu của hai lần số x và ba lần số y" là:
+  - question: "Biểu thức đại số biểu thị \"Hiệu của hai lần số x và ba lần số y\" là:"
     options:
-      - 2x + 3y
-      - 2x - 3y
-      - 3y - 2x
-      - (2x)(3y)
+      - "2x + 3y"
+      - "2x - 3y"
+      - "3y - 2x"
+      - "(2x)(3y)"
     answer: 1
-    hint: Hai lần x là 2x, ba lần y là 3y. Hiệu lấy 2x trừ 3y.
-    explanation: Hai lần số x là 2x, ba lần số y là 3y. Hiệu của chúng là 2x - 3y.
+    hint: "Hai lần x là 2x, ba lần y là 3y. Hiệu lấy 2x trừ 3y."
+    explanation: "Hai lần số x là 2x, ba lần số y là 3y. Hiệu của chúng là 2x - 3y."
 
-  - question: Giá trị của biểu thức P = 3x - 4 tại x = -2 là:
+  - question: "Giá trị của biểu thức P = 3x - 4 tại x = -2 là:"
     options:
-      - 2
-      - -2
-      - -10
-      - 10
+      - "2"
+      - "-2"
+      - "-10"
+      - "10"
     answer: 2
-    hint: Thay x = -2: P = 3*(-2) - 4.
-    explanation: P = 3*(-2) - 4 = -6 - 4 = -10.
+    hint: "Thay x = -2: P = 3*(-2) - 4."
+    explanation: "P = 3*(-2) - 4 = -6 - 4 = -10."
 
-  - question: Giá trị của biểu thức Q = x^2 - 2xy + y^2 tại x = 3 và y = -1 là:
+  - question: "Giá trị của biểu thức Q = x^2 - 2xy + y^2 tại x = 3 và y = -1 là:"
     options:
-      - 4
-      - 8
-      - 16
-      - 20
+      - "4"
+      - "8"
+      - "16"
+      - "20"
     answer: 2
-    hint: Q = (x - y)^2 = (3 - (-1))^2 = 4^2 = 16.
-    explanation: Q = 3^2 - 2*(3)*(-1) + (-1)^2 = 9 + 6 + 1 = 16. Hoặc nhận dạng Q = (x - y)^2 = (3 - (-1))^2 = 4^2 = 16.
+    hint: "Q = (x - y)^2 = (3 - (-1))^2 = 4^2 = 16."
+    explanation: "Q = 3^2 - 2*(3)*(-1) + (-1)^2 = 9 + 6 + 1 = 16. Hoặc nhận dạng Q = (x - y)^2 = (3 - (-1))^2 = 4^2 = 16."
 
-  - question: Quy ước viết nào sau đây là KHÔNG ĐÚNG trong biểu thức đại số?
+  - question: "Quy ước viết nào sau đây là KHÔNG ĐÚNG trong biểu thức đại số?"
     options:
-      - Viết xy thay cho x * y
-      - Viết 5x thay cho 5 * x
-      - Viết x5 thay cho 5 * x
-      - Viết -x thay cho (-1) * x
+      - "Viết xy thay cho x * y"
+      - "Viết 5x thay cho 5 * x"
+      - "Viết x5 thay cho 5 * x"
+      - "Viết -x thay cho (-1) * x"
     answer: 2
-    hint: Trong tích giữa số và chữ, số phải được viết trước chữ.
-    explanation: Quy ước chuẩn là số viết trước chữ (5x), không viết x5.
+    hint: "Trong tích giữa số và chữ, số phải được viết trước chữ."
+    explanation: "Quy ước chuẩn là số viết trước chữ (5x), không viết x5."
 
-  - question: Giá trị của x để biểu thức 5x - 15 nhận giá trị bằng 0 là:
+  - question: "Giá trị của x để biểu thức 5x - 15 nhận giá trị bằng 0 là:"
     options:
-      - x = 0
-      - x = 3
-      - x = -3
-      - x = 5
+      - "x = 0"
+      - "x = 3"
+      - "x = -3"
+      - "x = 5"
     answer: 1
-    hint: Giải phương trình 5x - 15 = 0.
-    explanation: 5x - 15 = 0 suy ra 5x = 15 suy ra x = 3.
+    hint: "Giải phương trình 5x - 15 = 0."
+    explanation: "5x - 15 = 0 suy ra 5x = 15 suy ra x = 3."
 
-  - question: Một hình tam giác có độ dài đáy là a (cm) và chiều cao tương ứng là h (cm). Biểu thức biểu thị diện tích hình tam giác đó là:
+  - question: "Một hình tam giác có độ dài đáy là a (cm) và chiều cao tương ứng là h (cm). Biểu thức biểu thị diện tích hình tam giác đó là:"
     options:
-      - a * h
-      - (1/2) * a * h
-      - 2 * a * h
-      - a + h
+      - "a * h"
+      - "(1/2) * a * h"
+      - "2 * a * h"
+      - "a + h"
     answer: 1
-    hint: Diện tích tam giác bằng một nửa tích đáy nhân chiều cao.
-    explanation: Diện tích hình tam giác là S = (1/2)ah.
+    hint: "Diện tích tam giác bằng một nửa tích đáy nhân chiều cao."
+    explanation: "Diện tích hình tam giác là S = (1/2)ah."
 
-  - question: Giá trị nhỏ nhất của biểu thức A = (x + 2)^2 - 5 là:
+  - question: "Giá trị nhỏ nhất của biểu thức A = (x + 2)^2 - 5 là:"
     options:
-      - -5
-      - 5
-      - 0
-      - -2
+      - "-5"
+      - "5"
+      - "0"
+      - "-2"
     answer: 0
-    hint: (x + 2)^2 >= 0 với mọi x.
-    explanation: Vì (x + 2)^2 >= 0 nên A = (x + 2)^2 - 5 >= -5. Giá trị nhỏ nhất là -5 khi x = -2.
+    hint: "(x + 2)^2 >= 0 với mọi x."
+    explanation: "Vì (x + 2)^2 >= 0 nên A = (x + 2)^2 - 5 >= -5. Giá trị nhỏ nhất là -5 khi x = -2."
 
-  - question: Một người đi xe máy với vận tốc x (km/h) trong 2 giờ, sau đó đi tiếp bằng ô tô với vận tốc y (km/h) trong 3 giờ. Tổng quãng đường người đó đã đi là:
+  - question: "Một người đi xe máy với vận tốc x (km/h) trong 2 giờ, sau đó đi tiếp bằng ô tô với vận tốc y (km/h) trong 3 giờ. Tổng quãng đường người đó đã đi là:"
     options:
-      - 5(x + y)
-      - 2x + 3y
-      - 3x + 2y
-      - 6xy
+      - "5(x + y)"
+      - "2x + 3y"
+      - "3x + 2y"
+      - "6xy"
     answer: 1
-    hint: Quãng đường xe máy là 2x, quãng đường ô tô là 3y.
-    explanation: Tổng quãng đường là 2x + 3y (km).
+    hint: "Quãng đường xe máy là 2x, quãng đường ô tô là 3y."
+    explanation: "Tổng quãng đường là 2x + 3y (km)."
 ````
 
 ---

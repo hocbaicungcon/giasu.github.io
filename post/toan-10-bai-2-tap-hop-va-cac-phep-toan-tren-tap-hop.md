@@ -184,7 +184,7 @@ $$C_E A = \{x \in E \mid x \notin A\}$$
 
 Hãy bấm các nút bên dưới để chuyển đổi giữa các phép toán tập hợp và quan sát trực quan vùng kết quả:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">🔬 Phòng Thí Nghiệm Trực Quan Hóa Tập Hợp</h3>

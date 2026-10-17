@@ -323,107 +323,107 @@ Nếu nhà máy đầu tư robot tự động hóa để tăng gấp $3$ lần n
 Hãy kiểm tra năng lực hiểu biết về đại lượng tỉ lệ nghịch qua $10$ câu hỏi trắc nghiệm sau:
 
 ````quiz
-title: Kiểm tra Đại lượng tỉ lệ nghịch (Toán 7 - Bài 23)
+title: "Kiểm tra Đại lượng tỉ lệ nghịch (Toán 7 - Bài 23)"
 questions:
-  - question: Đại lượng y tỉ lệ nghịch với đại lượng x theo hệ số tỉ lệ a (a khác 0) nếu liên hệ theo công thức nào?
+  - question: "Đại lượng y tỉ lệ nghịch với đại lượng x theo hệ số tỉ lệ a (a khác 0) nếu liên hệ theo công thức nào?"
     options:
-      - y = a * x
-      - y = a / x
-      - y = x / a
-      - y = a - x
+      - "y = a * x"
+      - "y = a / x"
+      - "y = x / a"
+      - "y = a - x"
     answer: 1
-    hint: Tỉ lệ nghịch là tích x * y = a hay y = a / x.
-    explanation: Theo định nghĩa, y tỉ lệ nghịch với x nếu y = a/x (với a là hằng số khác 0).
+    hint: "Tỉ lệ nghịch là tích x * y = a hay y = a / x."
+    explanation: "Theo định nghĩa, y tỉ lệ nghịch với x nếu y = a/x (với a là hằng số khác 0)."
 
-  - question: Nếu y tỉ lệ nghịch với x theo hệ số tỉ lệ a = 18 thì x tỉ lệ nghịch với y theo hệ số tỉ lệ nào?
+  - question: "Nếu y tỉ lệ nghịch với x theo hệ số tỉ lệ a = 18 thì x tỉ lệ nghịch với y theo hệ số tỉ lệ nào?"
     options:
-      - 18
-      - 1/18
-      - -18
-      - 9
+      - "18"
+      - "1/18"
+      - "-18"
+      - "9"
     answer: 0
-    hint: Tỉ lệ nghịch có tính đối xứng: xy = a thì x = a/y.
-    explanation: Vì x*y = 18 nên x = 18/y, do đó x cũng tỉ lệ nghịch với y theo chính hệ số 18.
+    hint: "Tỉ lệ nghịch có tính đối xứng: xy = a thì x = a/y."
+    explanation: "Vì x*y = 18 nên x = 18/y, do đó x cũng tỉ lệ nghịch với y theo chính hệ số 18."
 
-  - question: Cho biết x và y là hai đại lượng tỉ lệ nghịch và khi x = 4 thì y = 9. Hệ số tỉ lệ a là:
+  - question: "Cho biết x và y là hai đại lượng tỉ lệ nghịch và khi x = 4 thì y = 9. Hệ số tỉ lệ a là:"
     options:
-      - 13
-      - 36
-      - 2.25
-      - 5
+      - "13"
+      - "36"
+      - "2.25"
+      - "5"
     answer: 1
-    hint: a = x * y.
-    explanation: Hệ số tỉ lệ là a = 4 * 9 = 36.
+    hint: "a = x * y."
+    explanation: "Hệ số tỉ lệ là a = 4 * 9 = 36."
 
-  - question: Cho x và y tỉ lệ nghịch với nhau theo công thức y = 40/x. Khi x = -5 thì giá trị của y là:
+  - question: "Cho x và y tỉ lệ nghịch với nhau theo công thức y = 40/x. Khi x = -5 thì giá trị của y là:"
     options:
-      - 8
-      - -8
-      - -35
-      - 45
+      - "8"
+      - "-8"
+      - "-35"
+      - "45"
     answer: 1
-    hint: Thay x = -5 vào công thức: y = 40 / (-5).
-    explanation: y = 40 / (-5) = -8.
+    hint: "Thay x = -5 vào công thức: y = 40 / (-5)."
+    explanation: "y = 40 / (-5) = -8."
 
-  - question: Cặp đại lượng nào sau đây tỉ lệ nghịch với nhau?
+  - question: "Cặp đại lượng nào sau đây tỉ lệ nghịch với nhau?"
     options:
-      - Quãng đường đi được và thời gian đi (với vận tốc không đổi).
-      - Chu vi và bán kính của một hình tròn.
-      - Vận tốc và thời gian chuyển động trên cùng một quãng đường cố định.
-      - Số lượng vở mua và tổng số tiền phải trả.
+      - "Quãng đường đi được và thời gian đi (với vận tốc không đổi)."
+      - "Chu vi và bán kính của một hình tròn."
+      - "Vận tốc và thời gian chuyển động trên cùng một quãng đường cố định."
+      - "Số lượng vở mua và tổng số tiền phải trả."
     answer: 2
-    hint: Vận tốc nhân thời gian bằng quãng đường không đổi: v * t = s.
-    explanation: Trên cùng một quãng đường s không đổi, v * t = s nên vận tốc và thời gian là hai đại lượng tỉ lệ nghịch.
+    hint: "Vận tốc nhân thời gian bằng quãng đường không đổi: v * t = s."
+    explanation: "Trên cùng một quãng đường s không đổi, v * t = s nên vận tốc và thời gian là hai đại lượng tỉ lệ nghịch."
 
-  - question: Cho hai đại lượng x và y tỉ lệ nghịch. Biết x1 = 3 thì y1 = 12. Khi x2 = 9 thì giá trị của y2 là:
+  - question: "Cho hai đại lượng x và y tỉ lệ nghịch. Biết x1 = 3 thì y1 = 12. Khi x2 = 9 thì giá trị của y2 là:"
     options:
-      - 36
-      - 4
-      - 27
-      - 18
+      - "36"
+      - "4"
+      - "27"
+      - "18"
     answer: 1
-    hint: Tích không đổi: x1 * y1 = x2 * y2 -> 3 * 12 = 9 * y2.
-    explanation: Ta có x1 * y1 = 3 * 12 = 36. Suy ra y2 = 36 / 9 = 4.
+    hint: "Tích không đổi: x1 * y1 = x2 * y2 -> 3 * 12 = 9 * y2."
+    explanation: "Ta có x1 * y1 = 3 * 12 = 36. Suy ra y2 = 36 / 9 = 4."
 
-  - question: Một ô tô chạy từ Hà Nội về Hải Phòng hết 2 giờ với vận tốc 60 km/h. Nếu ô tô chạy với vận tốc 80 km/h thì hết bao nhiêu thời gian?
+  - question: "Một ô tô chạy từ Hà Nội về Hải Phòng hết 2 giờ với vận tốc 60 km/h. Nếu ô tô chạy với vận tốc 80 km/h thì hết bao nhiêu thời gian?"
     options:
-      - 1 giờ 15 phút
-      - 1 giờ 30 phút
-      - 1 giờ 45 phút
-      - 2 giờ 40 phút
+      - "1 giờ 15 phút"
+      - "1 giờ 30 phút"
+      - "1 giờ 45 phút"
+      - "2 giờ 40 phút"
     answer: 1
-    hint: Quãng đường = 60 * 2 = 120 km. Thời gian = 120 / 80 = 1.5 giờ.
-    explanation: Quãng đường là 60 * 2 = 120 km. Thời gian chạy với vận tốc 80 km/h là 120 / 80 = 1.5 giờ = 1 giờ 30 phút.
+    hint: "Quãng đường = 60 * 2 = 120 km. Thời gian = 120 / 80 = 1.5 giờ."
+    explanation: "Quãng đường là 60 * 2 = 120 km. Thời gian chạy với vận tốc 80 km/h là 120 / 80 = 1.5 giờ = 1 giờ 30 phút."
 
-  - question: Ba số x, y, z tỉ lệ nghịch với 2; 3; 6 tương đương với dãy tỉ số bằng nhau nào sau đây?
+  - question: "Ba số x, y, z tỉ lệ nghịch với 2; 3; 6 tương đương với dãy tỉ số bằng nhau nào sau đây?"
     options:
-      - x/2 = y/3 = z/6
-      - x/3 = y/2 = z/1
-      - 2x = 3y = 6z
-      - x + 2 = y + 3 = z + 6
+      - "x/2 = y/3 = z/6"
+      - "x/3 = y/2 = z/1"
+      - "2x = 3y = 6z"
+      - "x + 2 = y + 3 = z + 6"
     answer: 2
-    hint: Tỉ lệ nghịch nghĩa là tích với từng hệ số bằng nhau.
-    explanation: Ba số x, y, z tỉ lệ nghịch với 2, 3, 6 có nghĩa là 2x = 3y = 6z.
+    hint: "Tỉ lệ nghịch nghĩa là tích với từng hệ số bằng nhau."
+    explanation: "Ba số x, y, z tỉ lệ nghịch với 2, 3, 6 có nghĩa là 2x = 3y = 6z."
 
-  - question: Một hình chữ nhật có diện tích không đổi. Nếu chiều dài tăng gấp 3 lần thì chiều rộng thay đổi như thế nào?
+  - question: "Một hình chữ nhật có diện tích không đổi. Nếu chiều dài tăng gấp 3 lần thì chiều rộng thay đổi như thế nào?"
     options:
-      - Tăng gấp 3 lần.
-      - Giảm đi 3 lần.
-      - Không thay đổi.
-      - Tăng thêm 3 đơn vị.
+      - "Tăng gấp 3 lần."
+      - "Giảm đi 3 lần."
+      - "Không thay đổi."
+      - "Tăng thêm 3 đơn vị."
     answer: 1
-    hint: Tích chiều dài và chiều rộng là diện tích không đổi.
-    explanation: Vì diện tích không đổi S = Dài * Rộng, nên khi chiều dài tăng gấp 3 thì chiều rộng phải giảm đi 3 lần để tích không đổi.
+    hint: "Tích chiều dài và chiều rộng là diện tích không đổi."
+    explanation: "Vì diện tích không đổi S = Dài * Rộng, nên khi chiều dài tăng gấp 3 thì chiều rộng phải giảm đi 3 lần để tích không đổi."
 
-  - question: 15 công nhân hoàn thành một công việc trong 8 ngày. Muốn hoàn thành công việc đó trong 6 ngày thì cần bao nhiêu công nhân (với cùng năng suất)?
+  - question: "15 công nhân hoàn thành một công việc trong 8 ngày. Muốn hoàn thành công việc đó trong 6 ngày thì cần bao nhiêu công nhân (với cùng năng suất)?"
     options:
-      - 18 công nhân
-      - 20 công nhân
-      - 24 công nhân
-      - 25 công nhân
+      - "18 công nhân"
+      - "20 công nhân"
+      - "24 công nhân"
+      - "25 công nhân"
     answer: 1
-    hint: Số công = 15 * 8 = 120 công -> Số công nhân = 120 / 6 = 20.
-    explanation: Áp dụng tính chất tỉ lệ nghịch: Số công nhân cần = (15 * 8) / 6 = 120 / 6 = 20 công nhân.
+    hint: "Số công = 15 * 8 = 120 công -> Số công nhân = 120 / 6 = 20."
+    explanation: "Áp dụng tính chất tỉ lệ nghịch: Số công nhân cần = (15 * 8) / 6 = 120 / 6 = 20 công nhân."
 ````
 
 ---

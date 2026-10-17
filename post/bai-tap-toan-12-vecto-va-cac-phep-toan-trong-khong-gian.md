@@ -179,7 +179,8 @@ Tính $SA=\sqrt{ OA ^ { 2 } +SO ^ { 2 } }=\sqrt{ \frac { a ^ { 2 } } { 2 }+h ^ {
 
 ### Dạng 2. Tổng và hiệu của hai vectơ
 
-⁂ Các quy tắc: Quy tắc ba điểm và quy tắc hình bình hành:
+
+- **Các quy tắc:** Quy tắc ba điểm và quy tắc hình bình hành:
 
 - Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }+\overrightarrow { BC }=\overrightarrow { AC } \right. \right.$ (Quy tắc ba điểm phép cộng).
 
@@ -258,7 +259,10 @@ Trong không gian, cho số $k≠0$ và vectơ $a≠0$.
 - Tích của số $k$ với vectơ $a$ là một vectơ. Ký hiệu là $ka$. Có độ dài bằng $\left | { k } \right.  |.\left | { a } \right.  |$.
 
 - Cùng hướng với $a$ nếu $k>0$,
-- Ngược hướng với $a$ nếu $k < 0$⁂ Với hai vectơ $a$ và $b$ bất kì, với mọi số $h$ và $k$, ta luôn có⑴$k\left ( { a+b } \right.  )=ka+kb$⑵$\left ( { h+k } \right.  )a=ha+ka$⑶$h\left ( { ka } \right.  )=\left ( { hk } \right.  )a$⑷$1⋅a=a$⑸$\left ( { -1 } \right.  )⋅a=-a$⑹ Hai vectơ $a$ và $b$ $\left ( { b≠0 } \right.  )$ cùng phương khi và chỉ khi có số $k$ sao cho $a=kb$.⑺ Ba điểm phân biệt $A,B,C$ thẳng hàng khi và chỉ khi có số $k≠0$ để $\left. \overrightarrow { AB }=k\overrightarrow { AC } \right.$..⁂ Hệ quả:⑴$I$ là trung điểm của đoạn thẳng $AB$ $\left. \left. ⇔\overrightarrow { IA }+\overrightarrow { IB }=0 \right. \right.$ $\left. \left. \left. ⇔2\overrightarrow { OI }=\overrightarrow { OA }+\overrightarrow { OB } \right. \right. \right.$, với mọi điểm $O$.⑵$G$ là trọng tâmtam giác $ABC$ $\left. \left. \left. ⇔\overrightarrow { GA }+\overrightarrow { GB }+\overrightarrow { GC }=0 \right. \right. \right.$ $\left. \left. \left. \left. ⇔3\overrightarrow { OG }=\overrightarrow { OA }+\overrightarrow { OB }+\overrightarrow { OC } \right. \right. \right. \right.$, với mọi điểm $O$. Phương pháp
+- Ngược hướng với $a$ nếu $k < 0$
+- Với hai vectơ $a$ và $b$ bất kì, với mọi số $h$ và $k$, ta luôn có⑴$k\left ( { a+b } \right.  )=ka+kb$⑵$\left ( { h+k } \right.  )a=ha+ka$⑶$h\left ( { ka } \right.  )=\left ( { hk } \right.  )a$⑷$1⋅a=a$⑸$\left ( { -1 } \right.  )⋅a=-a$⑹ Hai vectơ $a$ và $b$ $\left ( { b≠0 } \right.  )$ cùng phương khi và chỉ khi có số $k$ sao cho $a=kb$.⑺ Ba điểm phân biệt $A,B,C$ thẳng hàng khi và chỉ khi có số $k≠0$ để $\left. \overrightarrow { AB }=k\overrightarrow { AC } \right.$..
+
+- Hệ quả:⑴$I$ là trung điểm của đoạn thẳng $AB$ $\left. \left. ⇔\overrightarrow { IA }+\overrightarrow { IB }=0 \right. \right.$ $\left. \left. \left. ⇔2\overrightarrow { OI }=\overrightarrow { OA }+\overrightarrow { OB } \right. \right. \right.$, với mọi điểm $O$.⑵$G$ là trọng tâmtam giác $ABC$ $\left. \left. \left. ⇔\overrightarrow { GA }+\overrightarrow { GB }+\overrightarrow { GC }=0 \right. \right. \right.$ $\left. \left. \left. \left. ⇔3\overrightarrow { OG }=\overrightarrow { OA }+\overrightarrow { OB }+\overrightarrow { OC } \right. \right. \right. \right.$, với mọi điểm $O$. Phương pháp
 
 **Ví dụ 3.1.** Cho tứ diệnABCD. Gọi $G$ là trọng tâm của tam giác $BCD$ và $O$ là trung điểm đoạn thẳng $AG$. Chứng minh rằng:⑴$\left. \left. \left. \left. 3\overrightarrow { OA }+\overrightarrow { OB }+\overrightarrow { OC }+\overrightarrow { OD }=0 \right. \right. \right. \right.$;⑵$\left. \left. \left. \left. \left. 3\overrightarrow { MA }+\overrightarrow { MB }+\overrightarrow { MC }+\overrightarrow { MD }=6\overrightarrow { MO } \right. \right. \right. \right. \right.$ ($M$ là điểm bất kì trong không gian).
 
@@ -330,11 +334,16 @@ Lúc này $\frac { MN } { BD' }=\left | { k } \right.  |=\frac { 1 } { 3 }$.
 
 ### Dạng 4. Tích vô hướng và góc của hai vectơ
 
-⁂ Góc giữa hai vectơ:Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
 
-- Lấy một điểm $A$ bất kì, Gọi $B$ và $C$ là hai điểm sao cho $\left. \overrightarrow { AB }=u,\overrightarrow { AC }=v \right.$. Ta gọi $\widehat { BAC }$ là góc giữa hai vectơ $u$ và $v$. Kí hiệu là $\left ( { u,v } \right.  )$.⁂ Tích vô hướng hai vectơ:Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
+- **Góc giữa hai vectơ:**Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
 
-- Tích vô hướng của hai vectơ $u$ và $v$ là một số. Kí hiệu là $u⋅v$. Được xác định bởi công thức:$u⋅v=\left | { u\left | { ⋅ } \right.  |v } \right.  |⋅{ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )$⁂ Chú ý:⑴$0°≤\left ( { u,v } \right.  )≤180°$⑵ Nếu $\left ( { u,v } \right.  )=90°$ thì ta nói $u$ và $v$ vuông góc với nhau, kí hiệu $u⊥v$.⑶ Khi $u$ và $v$ cùng hướng thì $\left ( { u,v } \right.  )=0°$.⑷ Khi $u$ và $v$ ngược hướng thì $\left ( { u,v } \right.  )=180°$.⑸$u.u=u ^ { 2 } =\left | { u } \right.  | ^ { 2 } ;u ^ { 2 } ≥0,u ^ { 2 } =0⇔u=0$ Phương pháp
+- Lấy một điểm $A$ bất kì, Gọi $B$ và $C$ là hai điểm sao cho $\left. \overrightarrow { AB }=u,\overrightarrow { AC }=v \right.$. Ta gọi $\widehat { BAC }$ là góc giữa hai vectơ $u$ và $v$. Kí hiệu là $\left ( { u,v } \right.  )$.
+
+- Tích vô hướng hai vectơ:Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
+
+- Tích vô hướng của hai vectơ $u$ và $v$ là một số. Kí hiệu là $u⋅v$. Được xác định bởi công thức:$u⋅v=\left | { u\left | { ⋅ } \right.  |v } \right.  |⋅{ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )$
+
+> **Chú ý:** ⑴$0°≤\left ( { u,v } \right.  )≤180°$⑵ Nếu $\left ( { u,v } \right.  )=90°$ thì ta nói $u$ và $v$ vuông góc với nhau, kí hiệu $u⊥v$.⑶ Khi $u$ và $v$ cùng hướng thì $\left ( { u,v } \right.  )=0°$.⑷ Khi $u$ và $v$ ngược hướng thì $\left ( { u,v } \right.  )=180°$.⑸$u.u=u ^ { 2 } =\left | { u } \right.  | ^ { 2 } ;u ^ { 2 } ≥0,u ^ { 2 } =0⇔u=0$ Phương pháp
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image262.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>Ví dụ 4.1.Cho hình lập phươngABCD.A'B'C'D'. Xác định các góc:⑴$\left. \left. \left ( { \overrightarrow { AB },\overrightarrow { A'D' } } \right.  ) \right. \right.$⑵$\left. \left. \left ( { \overrightarrow { AB },\overrightarrow { A'C' } } \right.  ) \right. \right.$⑶$\left. \left. \left ( { \overrightarrow { AB },\overrightarrow { D'C' } } \right.  ) \right. \right.$⑷$\left. \left. \left ( { \overrightarrow { AD },\overrightarrow { C'B' } } \right.  ) \right. \right.$
 

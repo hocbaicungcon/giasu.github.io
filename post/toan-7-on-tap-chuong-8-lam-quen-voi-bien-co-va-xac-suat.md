@@ -370,7 +370,7 @@ Máy tính áp dụng thuật toán **Lọc hạt Monte Carlo (Particle Filter)*
       ],
       "answer": 0,
       "hint": "Các số nguyên tố từ 1 đến 10 là: 2, 3, 5, 7.",
-      "explanation": "Có 4 số nguyên tố $\{2; 3; 5; 7\}$ trong 10 số. Xác suất là $P = \\frac{4}{10} = \\frac{2}{5}$."
+      "explanation": "Có 4 số nguyên tố $\\{2; 3; 5; 7\\}$ trong 10 số. Xác suất là $P = \\frac{4}{10} = \\frac{2}{5}$."
     },
     {
       "question": "Gieo đồng thời hai con xúc xắc cân đối. Xác suất để tổng số chấm xuất hiện bằng 12 là:",

@@ -223,12 +223,7 @@ const __initApp = function() {
       btns.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      };
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', __initApp);
-      } else {
-        __initApp();
-      }
+      });
       this.style.background = '#2563eb';
       this.style.color = '#ffffff';
 
@@ -239,7 +234,12 @@ const __initApp = function() {
       dExample.innerHTML = item.example;
     });
   });
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

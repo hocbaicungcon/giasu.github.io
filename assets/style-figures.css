@@ -56,7 +56,7 @@ body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;ve
  body .lesson-course .article-layout{display:block;width:100%;min-width:0}
  body .lesson-course .article-toc{display:none}
 }
-@media(max-width:1000px){body .katex-display.katex-auto-wrap{font-size:clamp(.9em,2.5vw,1em)}body .katex-display.katex-auto-wrap .mtable{margin-left:0!important;margin-right:auto!important}body .katex-display.katex-auto-wrap .col-align-l,body .katex-display.katex-auto-wrap .col-align-c,body .katex-display.katex-auto-wrap .col-align-r{text-align:left!important}}
+@media(max-width:1000px){body .katex-display.katex-auto-wrap .mtable{margin-left:0!important;margin-right:auto!important}body .katex-display.katex-auto-wrap .col-align-l,body .katex-display.katex-auto-wrap .col-align-c,body .katex-display.katex-auto-wrap .col-align-r{text-align:left!important}}
 
 /* Bound the scrolling surface itself, including KaTeX's oversized radical SVGs. */
 @media(max-width:1000px){
@@ -74,3 +74,18 @@ body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;ve
  body .prose :is(div,section)[style*="grid-template-columns"]{grid-template-columns:minmax(0,1fr)!important;min-width:0;max-width:100%;box-sizing:border-box}
  body .prose :is(div,section)[style*="grid-template-columns"]>*{min-width:0;max-width:100%;box-sizing:border-box}
 }
+
+/* Formulas keep full size; a rare overflow scrolls by touch or trackpad without a scrollbar. */
+body .katex-display,
+body .prose .katex-display,
+body .prose .katex:not(.katex-display>.katex),
+.katex-punct>.katex{scrollbar-width:none;-ms-overflow-style:none}
+body .katex-display::-webkit-scrollbar,
+body .prose .katex-display::-webkit-scrollbar,
+body .prose .katex:not(.katex-display>.katex)::-webkit-scrollbar,
+.katex-punct>.katex::-webkit-scrollbar{display:none}
+
+/* A flex option must be allowed to shrink below its formula, otherwise the whole page widens. */
+body .quiz-option>span,body .exam-question .quiz-option>span{min-width:0;max-width:100%}
+/* Inline formulas wider than their line (marked by lesson.js) scroll inside their own box on every screen. */
+body .prose .katex.katex-wide:not(.katex-display>.katex){display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;contain:paint;vertical-align:middle;padding-block:3px}

@@ -403,8 +403,8 @@ Thay vì tính toán trên tập số thực $\mathbb{R}$, các thuật toán m�
         "{0; 9}"
       ],
       "answer": 2,
-      "hint": "Đặt nhân tử chung: $x(x^2 - 9) = 0 \iff x(x - 3)(x + 3) = 0$.",
-      "explanation": "$x^3 - 9x = 0 \iff x(x^2 - 9) = 0 \iff x = 0$ hoặc $x^2 = 9 \iff x = \pm 3$. Đa thức có 3 nghiệm phân biệt là $\{-3; 0; 3\}$."
+      "hint": "Đặt nhân tử chung: $x(x^2 - 9) = 0 \\iff x(x - 3)(x + 3) = 0$.",
+      "explanation": "$x^3 - 9x = 0 \\iff x(x^2 - 9) = 0 \\iff x = 0$ hoặc $x^2 = 9 \\iff x = \\pm 3$. Đa thức có 3 nghiệm phân biệt là $\\{-3; 0; 3\\}$."
     },
     {
       "question": "Tìm hằng số $a$ để đa thức $A(x) = x^3 - 2x^2 + ax - 6$ chia hết cho nhị thức $(x - 3)$:",
@@ -416,7 +416,7 @@ Thay vì tính toán trên tập số thực $\mathbb{R}$, các thuật toán m�
       ],
       "answer": 0,
       "hint": "Áp dụng định lý Bézout: $A(3) = 0$.",
-      "explanation": "Để $A(x)$ chia hết cho $x - 3$, số dư $R = A(3) = 0 \iff 3^3 - 2(3^2) + 3a - 6 = 0 \iff 27 - 18 + 3a - 6 = 0 \iff 3a + 3 = 0 \iff a = -1$."
+      "explanation": "Để $A(x)$ chia hết cho $x - 3$, số dư $R = A(3) = 0 \\iff 3^3 - 2(3^2) + 3a - 6 = 0 \\iff 27 - 18 + 3a - 6 = 0 \\iff 3a + 3 = 0 \\iff a = -1$."
     },
     {
       "question": "Trong các đa thức sau, đa thức nào không có nghiệm trên tập số thực?",
@@ -427,8 +427,8 @@ Thay vì tính toán trên tập số thực $\mathbb{R}$, các thuật toán m�
         "2x + 5"
       ],
       "answer": 1,
-      "hint": "Bình phương của mọi số thực đều không âm: $x^2 \ge 0$.",
-      "explanation": "Với mọi $x \in \mathbb{R}$, ta luôn có $x^2 \ge 0 \implies x^2 + 16 \ge 16 > 0$. Vậy đa thức $x^2 + 16$ không thể bằng 0, tức là vô nghiệm."
+      "hint": "Bình phương của mọi số thực đều không âm: $x^2 \\ge 0$.",
+      "explanation": "Với mọi $x \\in \\mathbb{R}$, ta luôn có $x^2 \\ge 0 \\implies x^2 + 16 \\ge 16 > 0$. Vậy đa thức $x^2 + 16$ không thể bằng 0, tức là vô nghiệm."
     },
     {
       "question": "Một đa thức một biến có bậc là 4 thì có thể có tối đa bao nhiêu nghiệm phân biệt?",
@@ -439,7 +439,7 @@ Thay vì tính toán trên tập số thực $\mathbb{R}$, các thuật toán m�
         "Vô số nghiệm"
       ],
       "answer": 2,
-      "hint": "Định lý cơ bản: Một đa thức một biến bậc $n$ ($n \ge 1$) có không quá $n$ nghiệm phân biệt.",
+      "hint": "Định lý cơ bản: Một đa thức một biến bậc $n$ ($n \\ge 1$) có không quá $n$ nghiệm phân biệt.",
       "explanation": "Theo định lý về số nghiệm của đa thức một biến, một đa thức bậc 4 có không quá 4 nghiệm phân biệt."
     }
   ]

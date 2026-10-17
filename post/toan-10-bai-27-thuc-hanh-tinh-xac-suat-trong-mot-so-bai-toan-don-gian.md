@@ -117,7 +117,7 @@ $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
 
 Mô phỏng phép thử bốc thăm các viên bi trong hộp kín. Bạn có thể tự đặt số lượng bi đỏ, xanh, vàng và số viên bi bốc ra để xem xác suất lý thuyết cũng như thực hiện bốc thăm ngẫu nhiên trực tiếp:
 
-```html
+```widget
 <div style="max-width: 760px; margin: 20px auto; font-family: system-ui, -apple-system, sans-serif; border: 1px solid #cbd5e1; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.06); overflow: hidden;">
   <div style="background: linear-gradient(135deg, #059669, #047857); padding: 16px 20px; color: #ffffff;">
     <h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 700; color: #f8fafc;">Hộp Bốc Thăm May Mắn (Lucky Draw)</h3>
@@ -199,6 +199,13 @@ Mô phỏng phép thử bốc thăm các viên bi trong hộp kín. Bạn có th
   var totalSims = 0;
   var simCounts = { allRed: 0, allDiff: 0, atLeastRed: 0 };
 
+  // Typed values can ignore min/max, so clamp them before any counting.
+  function clampInput(el) {
+    var lo = parseInt(el.min, 10) || 1, hi = parseInt(el.max, 10) || 99, v = parseInt(el.value, 10);
+    if (isNaN(v)) v = lo;
+    return Math.max(lo, Math.min(hi, v));
+  }
+
   function comb(n, k) {
     if (k < 0 || k > n) return 0;
     if (k === 0 || k === n) return 1;
@@ -208,10 +215,10 @@ Mô phỏng phép thử bốc thăm các viên bi trong hộp kín. Bạn có th
   }
 
   function updateTheory() {
-    var r = parseInt(inpR.value, 10) || 1;
-    var b = parseInt(inpB.value, 10) || 1;
-    var y = parseInt(inpY.value, 10) || 1;
-    var k = parseInt(inpK.value, 10) || 1;
+    var r = clampInput(inpR);
+    var b = clampInput(inpB);
+    var y = clampInput(inpY);
+    var k = clampInput(inpK);
 
     var n = r + b + y;
     if (k > n) { k = n; inpK.value = k; }
@@ -243,10 +250,10 @@ Mô phỏng phép thử bốc thăm các viên bi trong hộp kín. Bạn có th
   }
 
   function drawOnce() {
-    var r = parseInt(inpR.value, 10);
-    var b = parseInt(inpB.value, 10);
-    var y = parseInt(inpY.value, 10);
-    var k = parseInt(inpK.value, 10);
+    var r = clampInput(inpR);
+    var b = clampInput(inpB);
+    var y = clampInput(inpY);
+    var k = clampInput(inpK);
 
     var urn = [];
     for (var i = 0; i < r; i++) urn.push('red');
@@ -298,6 +305,7 @@ Mô phỏng phép thử bốc thăm các viên bi trong hộp kín. Bạn có th
   updateTheory();
 })();
 </script>
+```
 
 ---
 

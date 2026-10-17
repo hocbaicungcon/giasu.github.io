@@ -511,7 +511,7 @@ Hãy cùng quan sát thí nghiệm hình học sau: Cho đoạn thẳng $AB = 6\
 Đây là kỹ thuật kinh điển nhất trong các kỳ thi học sinh giỏi lớp 7. Khi đề bài cho một **đường trung tuyến** (ví dụ $AM$ với $M$ là trung điểm của $BC$), ta hãy **kéo dài $AM$ lấy điểm $D$ sao cho $MD = MA$**.
 
 <div style="text-align: center; margin: 24px 0;">
-  <svg viewBox="0 0 520 280" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 520 300" style="max-width: 100%; height: auto; background: var(--card-bg, #ffffff); border-radius: 12px; border: 1px solid var(--border-color, #e2e8f0); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);" xmlns="http://www.w3.org/2000/svg">
     <!-- Tam giác ABC -->
     <polygon points="180,40 60,180 340,180" fill="rgba(37, 99, 235, 0.05)" stroke="#2563eb" stroke-width="2" />
 

@@ -78,7 +78,8 @@ Góc giữa hai mặt phẳng:Trong không gian $Oxyz$, cho hai mặt phẳng $\
 
 - Phương trình tham số $\Delta :\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.\,\,\left ( { t∈\mathbb{R} } \right.  )$ có VTCP $u=\left ( { a\,;\,b\,;\,c } \right.  )$ (hệ số trước t).
 
-- Phương trình chính tắc $\Delta :\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ có VTCP $u=\left ( { a\,;\,b\,;\,c } \right.  )$ (hệ số ở mẫu).≫ Nhận xét: Với phương trình tham số lấy đúng thứ tự hệ số trước tham số t. Với phương trình chính tắc lấy hệ số dưới mẫu. Nếu giả thiết chưa đúng cấu trúc, ta phải sắp xếp lại rồi mới lấy hệ số. Phương pháp
+- Phương trình chính tắc $\Delta :\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ có VTCP $u=\left ( { a\,;\,b\,;\,c } \right.  )$ (hệ số ở mẫu).
+- **Nhận xét:** Với phương trình tham số lấy đúng thứ tự hệ số trước tham số t. Với phương trình chính tắc lấy hệ số dưới mẫu. Nếu giả thiết chưa đúng cấu trúc, ta phải sắp xếp lại rồi mới lấy hệ số. Phương pháp
 
 **Ví dụ 1.1.** Trong không gian $Oxyz$,xác định một vectơ chỉ phương của đường thẳng dưới đây:⑴$d:\left\{ \begin{array}{l} x=2-ty=1+2tz=3+t \end{array} \right.$⑵$d:\frac { x-1 } { 2 }=\frac { y-2 } { 1 }=\frac { z+1 } { 2 }$⑶$d:\frac { x-1 } { 2 }=\frac { y-1 } { 2 }=\frac { 2-z } { 1 }$
 
@@ -99,7 +100,8 @@ Ta viết lại $d:\frac { x-1 } { 2 }=\frac { y-1 } { 2 }=\frac { 2-z } { 1 }�
 ### Dạng 2. Đường thẳng qua điểm & có sẵn VTCP
 - Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápQua $M$, có véctơ chỉ phương $a=\left ( { a\,;\,b\,;\,c } \right.  )$<p align="center"><img src="/assets/images/toan-12/c5_b2_image118.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-≫ Phương trình $\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.$ hoặc $\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ nếu $\left\{ \begin{array}{l} a\,;\,b\,;\,c \end{array} \right\}≠0$.
+
+- **Phương trình:** $\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.$ hoặc $\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ nếu $\left\{ \begin{array}{l} a\,;\,b\,;\,c \end{array} \right\}≠0$.
 
 - Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
 
@@ -143,8 +145,9 @@ Khi đó đường thẳng $d$ đi qua điểm $N\left ( { 2;0;-2 } \right.  )$ 
 - Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápQua hai điểm $A$ và $B$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b2_image145.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Chọn $A$ hoặc $B$ là điểm mà $\Delta $ đi qua.
 
-≫ Chọn $A$ hoặc $B$ là điểm mà $\Delta $ đi qua.≫ Nhận $\overrightarrow { AB }$ làm VTCP $\left. →u=\overrightarrow { AB } \right.$.
+- Nhận $\overrightarrow { AB }$ làm VTCP $\left. →u=\overrightarrow { AB } \right.$.
 
 - Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm tra. Phương pháp
 
@@ -176,8 +179,8 @@ Khi đó phương trình đường trung tuyến $AM:\,\frac { x+1 } { 2 }=\frac
 
 ### Dạng 4. Đường thẳng là giao tuyến của hai mặt phẳng
 - Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápGiao tuyến của hai mặt phẳng $\left ( { α } \right.  ):Ax+By+Cz+D=0$ và $\left ( { β } \right.  ):A'x+B'y+C'z+D'=0$<p align="center"><img src="/assets/images/toan-12/c5_b2_image172.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-≫ Cho 1 trong 3 ẩn $x;y;z$ $=0$ để tìm 2 ẩn còn lại $x=0$ $\left. \rightarrow \right.$ $\left\{ \begin{array}{l} By+Cz+D=0B'y+C'z+D'=0 \end{array} \right.⇔\left\{ \begin{array}{l} y=?z=? \end{array} \right.⇒M\left ( { 0;?;? } \right.  )$≫ Vecto chỉ phương $u=\left[ n_{ α } ;n_{ β } \right]$.
+- Cho 1 trong 3 ẩn $x;y;z$ $=0$ để tìm 2 ẩn còn lại $x=0$ $\left. \rightarrow \right.$ $\left\{ \begin{array}{l} By+Cz+D=0B'y+C'z+D'=0 \end{array} \right.⇔\left\{ \begin{array}{l} y=?z=? \end{array} \right.⇒M\left ( { 0;?;? } \right.  )$
+- Vecto chỉ phương $u=\left[ n_{ α } ;n_{ β } \right]$.
 
 - Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
 
@@ -229,8 +232,11 @@ Do đó $d':\left\{ \begin{array}{l} x=1+3ty=2tz=1+t \end{array} \right.$, suy r
 
 ### Dạng 5. Đường thẳng là đường vuông góc chung của hai đường thẳng
 - Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápLà đường vuông góc chung của $d_{ 1 }$ và $d_{ 2 }$<p align="center"><img src="/assets/images/toan-12/c5_b2_image242.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Gọi $\left. \left\{ \begin{array}{l} M∈d_{ 1 } N∈d_{ 2 } \end{array} \right.⇒\overrightarrow { MN }\left ( { ? } \right.  ) \right.$ (tọa độ theo $t\,;\,k$).
 
-≫ Gọi $\left. \left\{ \begin{array}{l} M∈d_{ 1 } N∈d_{ 2 } \end{array} \right.⇒\overrightarrow { MN }\left ( { ? } \right.  ) \right.$ (tọa độ theo $t\,;\,k$).≫$MN$ là đường vuông góc chung $\left. \left. ⇔\left\{ \begin{array}{l} u_{ 1 } .\overrightarrow { MN }=0u_{ 2 } .\overrightarrow { MN }=0 \end{array} \right.⇔\left\{ \begin{array}{l} t=?k=? \end{array} \right.⇒\left\{ \begin{array}{l} M\left ( { ? } \right.  )N\left ( { ? } \right.  ) \end{array} \right. \right. \right.$.≫ Khi đó đường thẳng $\left. \Delta :\left\{ \begin{array}{l} qua\,\left[ MN \right. u_{ \Delta  } =\overrightarrow { MN } \end{array} \right. \right.$.
+- $MN$ là đường vuông góc chung $\left. \left. ⇔\left\{ \begin{array}{l} u_{ 1 } .\overrightarrow { MN }=0u_{ 2 } .\overrightarrow { MN }=0 \end{array} \right.⇔\left\{ \begin{array}{l} t=?k=? \end{array} \right.⇒\left\{ \begin{array}{l} M\left ( { ? } \right.  )N\left ( { ? } \right.  ) \end{array} \right. \right. \right.$.
+
+- Khi đó đường thẳng $\left. \Delta :\left\{ \begin{array}{l} qua\,\left[ MN \right. u_{ \Delta  } =\overrightarrow { MN } \end{array} \right. \right.$.
 
 - Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
 

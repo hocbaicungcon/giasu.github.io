@@ -289,12 +289,7 @@ const __initApp = function() {
       btns.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      };
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', __initApp);
-      } else {
-        __initApp();
-      }
+      });
       this.style.background = this.dataset.mode === 'nhan' ? '#2563eb' : '#10b981';
       this.style.color = '#fff';
       render(this.dataset.mode);
@@ -302,7 +297,12 @@ const __initApp = function() {
   });
 
   render('nhan');
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

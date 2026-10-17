@@ -367,7 +367,7 @@ Máy tính sử dụng các thuật toán gọi là **Bộ tạo số giả ng�
       ],
       "answer": 1,
       "hint": "Xúc xắc 6 mặt chỉ có số chấm từ 1 đến 6.",
-      "explanation": "Số chấm trên mặt xúc xắc thuộc tập $\{1; 2; 3; 4; 5; 6\}$. Do đó không bao giờ có thể xuất hiện mặt có số chấm lớn hơn 6. Đây là biến cố không thể."
+      "explanation": "Số chấm trên mặt xúc xắc thuộc tập $\\{1; 2; 3; 4; 5; 6\\}$. Do đó không bao giờ có thể xuất hiện mặt có số chấm lớn hơn 6. Đây là biến cố không thể."
     },
     {
       "question": "Một túi đựng 4 viên bi xanh, 4 viên bi đỏ và 4 viên bi vàng có cùng kích thước. Lấy ngẫu nhiên 1 viên bi. Biến cố 'Lấy được viên bi có màu xanh hoặc đỏ hoặc vàng' là:",
@@ -414,8 +414,8 @@ Máy tính sử dụng các thuật toán gọi là **Bộ tạo số giả ng�
         "Số được chọn là số chính phương"
       ],
       "answer": 1,
-      "hint": "Đếm số kết quả thuận lợi của từng biến cố trong tập $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ gồm 10 số.",
-      "explanation": "- Số nguyên tố: $\{2, 3, 5, 7\} \implies 4$ số.\n- Số chẵn: $\{0, 2, 4, 6, 8\} \implies 5$ số.\n- Lớn hơn 7: $\{8, 9\} \implies 2$ số.\n- Số chính phương: $\{0, 1, 4, 9\} \implies 4$ số.\nBiến cố 'chọn được số chẵn' có nhiều kết quả thuận lợi nhất (5 kết quả) nên có khả năng xảy ra cao nhất."
+      "hint": "Đếm số kết quả thuận lợi của từng biến cố trong tập $\\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\}$ gồm 10 số.",
+      "explanation": "- Số nguyên tố: $\\{2, 3, 5, 7\\} \\implies 4$ số.\\n- Số chẵn: $\\{0, 2, 4, 6, 8\\} \\implies 5$ số.\\n- Lớn hơn 7: $\\{8, 9\\} \\implies 2$ số.\\n- Số chính phương: $\\{0, 1, 4, 9\\} \\implies 4$ số.\\nBiến cố 'chọn được số chẵn' có nhiều kết quả thuận lợi nhất (5 kết quả) nên có khả năng xảy ra cao nhất."
     },
     {
       "question": "Một hộp có 10 chiếc bút chì màu đen và 2 chiếc bút chì màu đỏ. Bạn Minh rút ngẫu nhiên 1 chiếc bút. Nhận xét nào sau đây là ĐÚNG?",
@@ -439,7 +439,7 @@ Máy tính sử dụng các thuật toán gọi là **Bộ tạo số giả ng�
       ],
       "answer": 1,
       "hint": "Kiểm tra các số từ 1 đến 6: $1 = 3 \\cdot 0 + 1$ và $4 = 3 \\cdot 1 + 1$.",
-      "explanation": "Trong tập $\{1; 2; 3; 4; 5; 6\}$, các số chia cho 3 dư 1 là $1$ và $4$. Có đúng 2 kết quả thuận lợi."
+      "explanation": "Trong tập $\\{1; 2; 3; 4; 5; 6\\}$, các số chia cho 3 dư 1 là $1$ và $4$. Có đúng 2 kết quả thuận lợi."
     },
     {
       "question": "Biến cố nào sau đây có xác suất bằng 0?",

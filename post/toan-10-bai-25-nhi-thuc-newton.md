@@ -142,7 +142,7 @@ Dòng 5:     1   5  10  10   5   1
 
 Khám phá trực quan cấu trúc của Tam giác Pascal và theo dõi từng bước khai triển lũy thừa bậc 4, bậc 5:
 
-```html
+```widget
 <div style="max-width: 760px; margin: 20px auto; font-family: system-ui, -apple-system, sans-serif; border: 1px solid #cbd5e1; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.06); overflow: hidden;">
   <div style="background: linear-gradient(135deg, #4f46e5, #3730a3); padding: 16px 20px; color: #ffffff;">
     <h3 style="margin: 0 0 6px 0; font-size: 18px; font-weight: 700; color: #f8fafc;">Phòng Thí Nghiệm Tam Giác Pascal & Nhị Thức Newton</h3>
@@ -282,6 +282,7 @@ Khám phá trực quan cấu trúc của Tam giác Pascal và theo dõi từng b
   render();
 })();
 </script>
+```
 
 ---
 

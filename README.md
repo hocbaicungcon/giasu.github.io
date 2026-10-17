@@ -182,6 +182,27 @@ explanation: 'Chuyển vế được $2x=-4$, nên $x=-2$.'
 
 `answer` là vị trí đáp án đúng, bắt đầu từ **1**. `options` cần ít nhất hai lựa chọn.
 
+### Bộ nhiều câu hỏi trong một khối
+
+Dùng một khối `quiz` (đủ 3 hoặc 4 dấu huyền, dấu đóng giống dấu mở) chứa JSON hoặc YAML có `questions`:
+
+`````markdown
+````quiz
+{
+  "title": "Kiểm tra năng lực",
+  "questions": [
+    {"question": "Tính $2+3$.", "options": ["5", "6", "4", "7"], "answer": 0, "hint": "Cộng hai số.", "explanation": "$2+3=5$."}
+  ]
+}
+````
+`````
+
+Trong bộ câu hỏi, `answer` là vị trí **từ 0** của lựa chọn đúng (khác khối một câu hỏi bắt đầu từ 1). Build xáo thứ tự lựa chọn theo nội dung câu hỏi (cố định giữa các lần build) để đáp án không luôn nằm đầu; lựa chọn mở đầu bằng “Cả…”, “Tất cả…”, “Không có…” giữ nguyên thứ tự. Trong JSON, ký hiệu LaTeX phải viết `\\frac`; nên đặt chuỗi có dấu hai chấm trong ngoặc kép khi dùng YAML. Câu thiếu `explanation` hoặc `answer` ngoài phạm vi làm build thất bại và báo rõ số câu.
+
+### Hình tương tác viết bằng HTML
+
+Khối ` ```widget ` chèn nguyên HTML/CSS/JS (nội dung đáng tin cậy do người quản lý repository viết) vào bài; có thể chứa dòng trống. Dùng khối ` ```html ` khi chỉ muốn **hiển thị mã nguồn** HTML. Script trong widget phải khởi tạo bằng `DOMContentLoaded` hoặc kiểm tra `document.readyState`, và không đặt id trùng giữa các widget trong cùng bài.
+
 ### Nhập đáp án ngắn
 
 ````markdown

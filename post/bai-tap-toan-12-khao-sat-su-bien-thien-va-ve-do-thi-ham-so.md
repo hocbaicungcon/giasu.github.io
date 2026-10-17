@@ -21,13 +21,13 @@ grade: 12
 
 ### 1. Sơ đồ khảo sát hàm số
 
-> **Định nghĩa:** ①. Tìm tập xác định của hàm số.②. Xét sự biến thiên của hàm số:
+> **Định nghĩa:** - **Bước 1:** Tìm tập xác định của hàm số.- **Bước 2:** Xét sự biến thiên của hàm số:
 
 - Tìm $y'$, xét dấu $y'$, xác định khoảng đơn điệu, cực trị (nếu có) của hàm số.
 
 - Tìm giới hạn tại vô cực, giới hạn vô cực của hàm số và các đường tiệm cận của đồ thị hàm số (nếu có).
 
-- Lập bảng biến thiên của hàm số.③. Vẽ đồ thị của hàm số:
+- Lập bảng biến thiên của hàm số.- **Bước 3:** Vẽ đồ thị của hàm số:
 
 - Xác định các điểm cực trị (nếu có), giao điểm của đồ thị với các trục tọa độ (nếu có và dễ tìm), ...
 
@@ -103,7 +103,7 @@ Hàm số đồng biến trên khoảng $\left ( { 0;2 } \right.  )$; nghịch b
 
 Hàm số đạt giá trị cực tiểu $y_{ CT } =-4$ tại $x_{ CT } =0$
 
-Hàm số đạt giá trị cực đại $y_{ CÐ } =0$ tại $x_{ CD } =2$
+Hàm số đạt giá trị cực đại $y_{ CĐ } =0$ tại $x_{ CD } =2$
 
 
 - **Đồ thị:** đi qua điểm $A\left ( { -1;0 } \right.  ),\,B\left ( { 3;-4 } \right.  )$ và có tâm đối xứng là $I\left ( { 1;-2 } \right.  )$.
@@ -209,7 +209,9 @@ Khảo sát sự biến thiên và vẽ đồ thị của hàm số $y=\frac { a
 - **Đồ thị:** hàm số:
 
 - Tìm giao điểm của đồ thị với các trục tọa độ (nếu có).
-- **Đồ thị:** hàm số nhận giao điểm $I$ của hai đường tiệm cận làm tâm đối xứng.⁂ Nhận xét: 
+- **Đồ thị:** hàm số nhận giao điểm $I$ của hai đường tiệm cận làm tâm đối xứng.
+
+> **Nhận xét:**  
 - **Đồ thị:** hàm số nhận giao điểm hai đường tiệm cận làm tâm đối xứng
 - **Đồ thị:** hàm có cực đại, cực tiểu $⇔y'=0$ có hai nghiệm phân biệt khác $-\frac { e } { d }.$
 - Trong trường hợp đồ thị hàm số có cực đại, cực tiểu thì phương trình đường thẳng qua hai cực trị là $y=\frac { 2ax+b } { d }$.
@@ -299,7 +301,8 @@ Nhận hai đường phân giác của góc tạo bởi hai đường tiệm c�
 
 ### Dạng 4. Nhận dạng hàm số khi biết đồ thị - bảng biến thiên
 
-⁂ Hàm số $y=ax ^ { 3 } +bx ^ { 2 } +cx+d,\,\,a≠0$ Ta có $y'=3ax ^ { 2 } +2bx+c$ Bảng biến thiênĐồ thị
+
+- **Hàm số** $y=ax ^ { 3 } +bx ^ { 2 } +cx+d,\,\,a≠0$ Ta có $y'=3ax ^ { 2 } +2bx+c$ Bảng biến thiênĐồ thị
 - TH1:$y'$ có 2 nghiệm phân biệt $x_{ 1 } ,\,x_{ 2 } \,\,\left ( { x_{ 1 } < x_{ 2 } } \right.  )$ $a>0$<p align="center"><img src="/assets/images/toan-12/c1_b4_image210.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 <p align="center"><img src="/assets/images/toan-12/c1_b4_image211.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>$a < 0$<p align="center"><img src="/assets/images/toan-12/c1_b4_image213.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
@@ -318,7 +321,8 @@ Nhận hai đường phân giác của góc tạo bởi hai đường tiệm c�
 
 Phương pháp
 
-⁂ Hàm số $y=\frac { ax+b } { cx+d }\,\,\left ( { c≠0,ad-bc≠0 } \right.  )$ có $y'=\frac { ad-bc } { \left ( { cx+d } \right.  ) ^ { 2 } }$ và TCĐ:$x=-\frac { d } { c }$ và TCN:$y=\frac { a } { c }$ Bảng biến thiênĐồ thị
+
+- **Hàm số** $y=\frac { ax+b } { cx+d }\,\,\left ( { c≠0,ad-bc≠0 } \right.  )$ có $y'=\frac { ad-bc } { \left ( { cx+d } \right.  ) ^ { 2 } }$ và TCĐ:$x=-\frac { d } { c }$ và TCN:$y=\frac { a } { c }$ Bảng biến thiênĐồ thị
 - TH1 :$ad-bc>0⇔y'>0\,\,\,∀x≠-\frac { d } { c }$<p align="center"><img src="/assets/images/toan-12/c1_b4_image236.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 <p align="center"><img src="/assets/images/toan-12/c1_b4_image29.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
@@ -326,7 +330,8 @@ Phương pháp
 
 <p align="center"><img src="/assets/images/toan-12/c1_b4_image30.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-⁂ Hàm số $y=\frac { ax ^ { 2 } +bx+c } { mx+n }\,\,\left ( { \,a≠0,\,m≠0 } \right.  )$ có $y=Ax+B+\frac { C } { mx+n }$ $⇒y'=A-\frac { C } { \left ( { mx+n } \right.  ) ^ { 2 } }$ và TCĐ:$x=-\frac { n } { m }$ và TCX:$y=Ax+B$ Bảng biến thiênĐồ thị
+
+- **Hàm số** $y=\frac { ax ^ { 2 } +bx+c } { mx+n }\,\,\left ( { \,a≠0,\,m≠0 } \right.  )$ có $y=Ax+B+\frac { C } { mx+n }$ $⇒y'=A-\frac { C } { \left ( { mx+n } \right.  ) ^ { 2 } }$ và TCĐ:$x=-\frac { n } { m }$ và TCX:$y=Ax+B$ Bảng biến thiênĐồ thị
 - TH1:$y'$ có 2 nghiệm phân biệt $A>0$<p align="center"><img src="/assets/images/toan-12/c1_b4_image246.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 <p align="center"><img src="/assets/images/toan-12/c1_b4_image247.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>$A < 0$<p align="center"><img src="/assets/images/toan-12/c1_b4_image249.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
@@ -483,7 +488,9 @@ Mặt khác $\mathop { lim } \limits_{ x→\left ( { -1 } \right.  ) ^ { + } } y
 
 - $x_{ U }$ là nghiệm của phương trình $y''=0$.
 
-- Điểm $U$ là trung điểm của đoạn thẳng nối hai điểm cực trị.⁂ Nhận xét: Bảng biến thiên mô phỏng đồ thị hàm số. Cách đọc bảng biến thiên giống như cách đọc đồ thị. 
+- Điểm $U$ là trung điểm của đoạn thẳng nối hai điểm cực trị.
+
+> **Nhận xét:**  Bảng biến thiên mô phỏng đồ thị hàm số. Cách đọc bảng biến thiên giống như cách đọc đồ thị. 
 - **Loại 2:** Hàm phân thức $y=\frac { ax+b } { cx+d }$ và $y=\frac { ax ^ { 2 } +bx+c } { dx+e }$.
 - **Bước 1:** Xác định các đường tiệm cận. Dùng công thức tính nhanh định nghĩa) để tìm mối quan hệ giữa các hệ số. Lưu ý: Giao điểm của hai đường tiệm cận là tâm đối xứng của đồ thị hàm số. 
 - **Bước 2:** Xác định các điểm thuộc đồ thị hàm số: giao với các trục tọa độ, cực trị. 
@@ -1460,7 +1467,7 @@ $C\left ( { x } \right.  )=0,0001x ^ { 2 } -0,2x+10000,$ trong đó $C\left ( { 
 
 $C\left ( { x } \right.  )=x ^ { 3 } -3x ^ { 2 } -20x+500.$ Giả sử hộ làm nghề dệt này bán hết sản phẩm mỗi ngày với giá 220 nghìn đồng/mét. Gọi $B\left ( { x } \right.  )$ là số tiền bán được và $L\left ( { x } \right.  )$ là lợi nhuận thu được khi bán $x\,$ mét vải lụa. Hộ làm nghề dệt này cần sản xuất và bán ra mỗi ngày bao nhiêu mét vải lụa để thu được lợi nhuận tối đa. Hãy tính lợi nhuận tối đa đó. (đơn vị đồng)
 - Khi bán $x$ mét vải lụa: Số tiền thu được là:$B\left ( { x } \right.  )=220x$ (nghìn đồng). Lợi nhuận thu được là:$L\left ( { x } \right.  )=B\left ( { x } \right.  )-C\left ( { x } \right.  )=-x ^ { 3 } +3x ^ { 2 } +240x-500$ (nghìn đồng). Hàm số $L\left ( { x } \right.  )$ xác định trên $\left[ 1;18 \right]$. 
-- **Sự biến thiên:** + Chiều biến thiên: Đạo hàm $L'\left ( { x } \right.  )=-3x ^ { 2 } +6x+240;L'\left ( { x } \right.  )=0⇔x=10$ hoặc $x=-8$ (loại). Trên khoảng $\left ( { 1;10 } \right.  ),L'\left ( { x } \right.  )>0$ nên hàm số đồng biến trên khoảng này. Trên khoảng $\left ( { 1;10 } \right.  ),L'\left ( { x } \right.  ) < 0$ nên hàm số nghịch biến trên khoảng này. + Cực trị: Hàm số $L(x)$ đạt cực đại tại $x=10$ và $L_{ CÐ } =L(10)=1200$. + Bảng biến thiên: <p align="center"><img src="/assets/images/toan-12/c1_b4_image1528.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Từ bảng biến thiên, ta nhận thấy khi $x=10$ thì hàm số đạt giá trị lớn nhất là 1200 . Như vậy, hộ làm nghề dệt cần sản xuất và bán ra mỗi ngày 10 mét vải lụa để thu được lợi nhuận tối đa. Lợi nhuận tối đa này là 1200 nghìn đồng.
+- **Sự biến thiên:** + Chiều biến thiên: Đạo hàm $L'\left ( { x } \right.  )=-3x ^ { 2 } +6x+240;L'\left ( { x } \right.  )=0⇔x=10$ hoặc $x=-8$ (loại). Trên khoảng $\left ( { 1;10 } \right.  ),L'\left ( { x } \right.  )>0$ nên hàm số đồng biến trên khoảng này. Trên khoảng $\left ( { 1;10 } \right.  ),L'\left ( { x } \right.  ) < 0$ nên hàm số nghịch biến trên khoảng này. + Cực trị: Hàm số $L(x)$ đạt cực đại tại $x=10$ và $L_{ CĐ } =L(10)=1200$. + Bảng biến thiên: <p align="center"><img src="/assets/images/toan-12/c1_b4_image1528.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Từ bảng biến thiên, ta nhận thấy khi $x=10$ thì hàm số đạt giá trị lớn nhất là 1200 . Như vậy, hộ làm nghề dệt cần sản xuất và bán ra mỗi ngày 10 mét vải lụa để thu được lợi nhuận tối đa. Lợi nhuận tối đa này là 1200 nghìn đồng.
 
 </details>
 

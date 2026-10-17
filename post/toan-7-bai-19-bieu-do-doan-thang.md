@@ -101,7 +101,7 @@ Các em hãy cùng thực hiện nhanh $5$ câu hỏi khởi động sau đây:
     <line x1="80" y1="240" x2="565" y2="240" stroke="#334155" stroke-width="2" />
     <polygon points="570,240 558,236 558,244" fill="#334155" />
     <!-- Nhãn trục -->
-    <text x="565" y="260" font-size="12" font-weight="600" fill="#334155" text-anchor="end">Thời gian (Tháng)</text>
+    <text x="552" y="260" font-size="12" font-weight="600" fill="#334155" text-anchor="end">Thời gian (Tháng)</text>
     <text x="75" y="18" font-size="12" font-weight="600" fill="#334155">Sản lượng (Tấn)</text>
     <!-- Số liệu trục Oy -->
     <text x="68" y="244" font-size="11" fill="#64748b" text-anchor="end">0</text>
@@ -390,107 +390,107 @@ Trong thời đại Internet of Things (IoT) và Điện toán đám mây:
 Hãy kiểm tra năng lực đọc hiểu và phân tích biểu đồ đoạn thẳng qua $10$ câu hỏi trắc nghiệm dưới đây:
 
 ````quiz
-title: Kiểm tra kiến thức Biểu đồ đoạn thẳng (Toán 7 - Bài 19)
+title: "Kiểm tra kiến thức Biểu đồ đoạn thẳng (Toán 7 - Bài 19)"
 questions:
-  - question: Biểu đồ đoạn thẳng là công cụ trực quan thích hợp nhất để biểu diễn nội dung nào sau đây?
+  - question: "Biểu đồ đoạn thẳng là công cụ trực quan thích hợp nhất để biểu diễn nội dung nào sau đây?"
     options:
-      - Cơ cấu các loại quả trong một vườn cây ăn trái.
-      - Sự thay đổi nhiệt độ của một bệnh nhân theo từng giờ trong ngày.
-      - So sánh số lượng học sinh giỏi giữa các khối 6, 7, 8, 9.
-      - Tỉ lệ phần trăm thị phần của các hãng điện thoại trong năm 2026.
+      - "Cơ cấu các loại quả trong một vườn cây ăn trái."
+      - "Sự thay đổi nhiệt độ của một bệnh nhân theo từng giờ trong ngày."
+      - "So sánh số lượng học sinh giỏi giữa các khối 6, 7, 8, 9."
+      - "Tỉ lệ phần trăm thị phần của các hãng điện thoại trong năm 2026."
     answer: 1
-    hint: Biểu đồ đoạn thẳng chuyên dùng để theo dõi sự biến thiên của dữ liệu theo chuỗi thời gian.
-    explanation: Biểu đồ đoạn thẳng thích hợp nhất để biểu diễn sự thay đổi của một đại lượng theo thời gian (ở đây là nhiệt độ bệnh nhân theo từng giờ).
+    hint: "Biểu đồ đoạn thẳng chuyên dùng để theo dõi sự biến thiên của dữ liệu theo chuỗi thời gian."
+    explanation: "Biểu đồ đoạn thẳng thích hợp nhất để biểu diễn sự thay đổi của một đại lượng theo thời gian (ở đây là nhiệt độ bệnh nhân theo từng giờ)."
 
-  - question: Trong biểu đồ đoạn thẳng chuẩn, trục nằm ngang thường dùng để biểu diễn yếu tố nào?
+  - question: "Trong biểu đồ đoạn thẳng chuẩn, trục nằm ngang thường dùng để biểu diễn yếu tố nào?"
     options:
-      - Giá trị số liệu đo được.
-      - Tỉ lệ phần trăm.
-      - Các mốc thời gian.
-      - Tên của biểu đồ.
+      - "Giá trị số liệu đo được."
+      - "Tỉ lệ phần trăm."
+      - "Các mốc thời gian."
+      - "Tên của biểu đồ."
     answer: 2
-    hint: Trục hoành là trục chạy từ quá khứ đến hiện tại/tương lai.
-    explanation: Trục ngang (trục hoành) luôn biểu diễn các mốc thời gian (ngày, tháng, năm, giờ...).
+    hint: "Trục hoành là trục chạy từ quá khứ đến hiện tại/tương lai."
+    explanation: "Trục ngang (trục hoành) luôn biểu diễn các mốc thời gian (ngày, tháng, năm, giờ...)."
 
-  - question: Trên biểu đồ đoạn thẳng, nếu đoạn thẳng nối giữa hai thời điểm dốc xuống từ trái sang phải, điều đó biểu thị xu hướng gì?
+  - question: "Trên biểu đồ đoạn thẳng, nếu đoạn thẳng nối giữa hai thời điểm dốc xuống từ trái sang phải, điều đó biểu thị xu hướng gì?"
     options:
-      - Đại lượng tăng lên.
-      - Đại lượng giảm đi.
-      - Đại lượng không thay đổi.
-      - Dữ liệu bị ghi chép sai.
+      - "Đại lượng tăng lên."
+      - "Đại lượng giảm đi."
+      - "Đại lượng không thay đổi."
+      - "Dữ liệu bị ghi chép sai."
     answer: 1
-    hint: Khi đi từ trái sang phải, chiều dốc đi xuống tương ứng giá trị sau nhỏ hơn giá trị trước.
-    explanation: Đoạn dốc xuống biểu thị giá trị của đại lượng có xu hướng giảm đi trong khoảng thời gian đó.
+    hint: "Khi đi từ trái sang phải, chiều dốc đi xuống tương ứng giá trị sau nhỏ hơn giá trị trước."
+    explanation: "Đoạn dốc xuống biểu thị giá trị của đại lượng có xu hướng giảm đi trong khoảng thời gian đó."
 
-  - question: Lượng mưa tại một trạm đo trong 4 tháng lần lượt là 50 mm, 80 mm, 120 mm, 90 mm. Trong giai đoạn nào lượng mưa tăng nhanh nhất?
+  - question: "Lượng mưa tại một trạm đo trong 4 tháng lần lượt là 50 mm, 80 mm, 120 mm, 90 mm. Trong giai đoạn nào lượng mưa tăng nhanh nhất?"
     options:
-      - Từ tháng 1 đến tháng 2.
-      - Từ tháng 2 đến tháng 3.
-      - Từ tháng 3 đến tháng 4.
-      - Tăng đều nhau ở tất cả các giai đoạn.
+      - "Từ tháng 1 đến tháng 2."
+      - "Từ tháng 2 đến tháng 3."
+      - "Từ tháng 3 đến tháng 4."
+      - "Tăng đều nhau ở tất cả các giai đoạn."
     answer: 1
-    hint: So sánh mức tăng tuyệt đối: tháng 1 -> 2 tăng 30 mm; tháng 2 -> 3 tăng 40 mm.
-    explanation: Từ tháng 1 đến tháng 2 tăng 80 - 50 = 30 mm. Từ tháng 2 đến tháng 3 tăng 120 - 80 = 40 mm. Vậy từ tháng 2 đến tháng 3 lượng mưa tăng nhanh nhất.
+    hint: "So sánh mức tăng tuyệt đối: tháng 1 -> 2 tăng 30 mm; tháng 2 -> 3 tăng 40 mm."
+    explanation: "Từ tháng 1 đến tháng 2 tăng 80 - 50 = 30 mm. Từ tháng 2 đến tháng 3 tăng 120 - 80 = 40 mm. Vậy từ tháng 2 đến tháng 3 lượng mưa tăng nhanh nhất."
 
-  - question: Trên biểu đồ đoạn thẳng, một đoạn thẳng nằm ngang song song với trục hoành có ý nghĩa gì?
+  - question: "Trên biểu đồ đoạn thẳng, một đoạn thẳng nằm ngang song song với trục hoành có ý nghĩa gì?"
     options:
-      - Đại lượng đạt giá trị bằng 0.
-      - Đại lượng tăng đột biến.
-      - Đại lượng không thay đổi (ổn định) trong giai đoạn đó.
-      - Không đủ dữ liệu để kết luận.
+      - "Đại lượng đạt giá trị bằng 0."
+      - "Đại lượng tăng đột biến."
+      - "Đại lượng không thay đổi (ổn định) trong giai đoạn đó."
+      - "Không đủ dữ liệu để kết luận."
     answer: 2
-    hint: Nằm ngang nghĩa là giá trị tại thời điểm sau bằng thời điểm trước.
-    explanation: Đoạn thẳng nằm ngang biểu thị giá trị của đại lượng giữ nguyên, không đổi trong khoảng thời gian đó.
+    hint: "Nằm ngang nghĩa là giá trị tại thời điểm sau bằng thời điểm trước."
+    explanation: "Đoạn thẳng nằm ngang biểu thị giá trị của đại lượng giữ nguyên, không đổi trong khoảng thời gian đó."
 
-  - question: Doanh thu một cửa hàng trong 2 tháng liên tiếp là 40 triệu đồng và 50 triệu đồng. Tốc độ tăng trưởng doanh thu trong tháng thứ hai là bao nhiêu?
+  - question: "Doanh thu một cửa hàng trong 2 tháng liên tiếp là 40 triệu đồng và 50 triệu đồng. Tốc độ tăng trưởng doanh thu trong tháng thứ hai là bao nhiêu?"
     options:
-      - 10%
-      - 20%
-      - 25%
-      - 125%
+      - "10%"
+      - "20%"
+      - "25%"
+      - "125%"
     answer: 2
-    hint: Tính tỉ số giữa mức tăng thêm và giá trị ban đầu nhân 100%.
-    explanation: Mức tăng thêm là 50 - 40 = 10 triệu. Tốc độ tăng trưởng là (10 / 40) * 100% = 25%.
+    hint: "Tính tỉ số giữa mức tăng thêm và giá trị ban đầu nhân 100%."
+    explanation: "Mức tăng thêm là 50 - 40 = 10 triệu. Tốc độ tăng trưởng là (10 / 40) * 100% = 25%."
 
-  - question: Hiện tượng "cắt xén trục tung" (không bắt đầu từ số 0) trong biểu đồ đoạn thẳng thường dẫn đến hậu quả gì?
+  - question: "Hiện tượng \"cắt xén trục tung\" (không bắt đầu từ số 0) trong biểu đồ đoạn thẳng thường dẫn đến hậu quả gì?"
     options:
-      - Làm cho biểu đồ trở nên chính xác hơn.
-      - Tạo ảo giác thị giác phóng đại mức độ biến động của dữ liệu.
-      - Làm giảm kích thước file hình ảnh.
-      - Khiến các đường biểu diễn không thể nối với nhau.
+      - "Làm cho biểu đồ trở nên chính xác hơn."
+      - "Tạo ảo giác thị giác phóng đại mức độ biến động của dữ liệu."
+      - "Làm giảm kích thước file hình ảnh."
+      - "Khiến các đường biểu diễn không thể nối với nhau."
     answer: 1
-    hint: Xem lại Chuyên đề 1 về Truncated Graph.
-    explanation: Cắt xén trục tung khiến cho những biến động rất nhỏ trông như những cú tăng/giảm vọt khổng lồ, đánh lừa thị giác người đọc.
+    hint: "Xem lại Chuyên đề 1 về Truncated Graph."
+    explanation: "Cắt xén trục tung khiến cho những biến động rất nhỏ trông như những cú tăng/giảm vọt khổng lồ, đánh lừa thị giác người đọc."
 
-  - question: Biểu đồ đoạn thẳng kép thường được sử dụng nhằm mục đích chính nào?
+  - question: "Biểu đồ đoạn thẳng kép thường được sử dụng nhằm mục đích chính nào?"
     options:
-      - Biểu diễn tổng số của 100 đối tượng khác nhau.
-      - So sánh xu hướng phát triển theo thời gian giữa hai đối tượng cùng loại.
-      - Thay thế hoàn toàn cho biểu đồ hình quạt tròn.
-      - Tính diện tích của hình phẳng dưới đường cong.
+      - "Biểu diễn tổng số của 100 đối tượng khác nhau."
+      - "So sánh xu hướng phát triển theo thời gian giữa hai đối tượng cùng loại."
+      - "Thay thế hoàn toàn cho biểu đồ hình quạt tròn."
+      - "Tính diện tích của hình phẳng dưới đường cong."
     answer: 1
-    hint: Đoạn thẳng kép có 2 đường vẽ chung trên một hệ trục.
-    explanation: Biểu đồ đoạn thẳng kép dùng để đối chiếu, so sánh sự biến thiên theo thời gian giữa hai đối tượng (như doanh thu 2 chi nhánh, nhiệt độ 2 thành phố).
+    hint: "Đoạn thẳng kép có 2 đường vẽ chung trên một hệ trục."
+    explanation: "Biểu đồ đoạn thẳng kép dùng để đối chiếu, so sánh sự biến thiên theo thời gian giữa hai đối tượng (như doanh thu 2 chi nhánh, nhiệt độ 2 thành phố)."
 
-  - question: Dãy số liệu nhiệt độ trong 3 ngày là 20°C, 24°C, 28°C. Giá trị trung bình động 3 ngày (MA3) tại ngày thứ 3 là bao nhiêu?
+  - question: "Dãy số liệu nhiệt độ trong 3 ngày là 20°C, 24°C, 28°C. Giá trị trung bình động 3 ngày (MA3) tại ngày thứ 3 là bao nhiêu?"
     options:
-      - 22°C
-      - 24°C
-      - 26°C
-      - 28°C
+      - "22°C"
+      - "24°C"
+      - "26°C"
+      - "28°C"
     answer: 1
-    hint: Trung bình động 3 ngày là trung bình cộng của 3 giá trị liên tiếp.
-    explanation: MA3 = (20 + 24 + 28) / 3 = 72 / 3 = 24°C.
+    hint: "Trung bình động 3 ngày là trung bình cộng của 3 giá trị liên tiếp."
+    explanation: "MA3 = (20 + 24 + 28) / 3 = 72 / 3 = 24°C."
 
-  - question: Trường hợp nào sau đây KHÔNG NÊN dùng biểu đồ đoạn thẳng để biểu diễn?
+  - question: "Trường hợp nào sau đây KHÔNG NÊN dùng biểu đồ đoạn thẳng để biểu diễn?"
     options:
-      - Giá vàng biến động qua các ngày trong tuần.
-      - Chiều cao của một học sinh đo vào mỗi dịp sinh nhật từ 1 đến 12 tuổi.
-      - Số lượng vé xem phim bán được của các rạp chiếu phim khác nhau tại TP.HCM trong ngày hôm nay.
-      - Lượng điện tiêu thụ hàng tháng của một nhà máy sản xuất.
+      - "Giá vàng biến động qua các ngày trong tuần."
+      - "Chiều cao của một học sinh đo vào mỗi dịp sinh nhật từ 1 đến 12 tuổi."
+      - "Số lượng vé xem phim bán được của các rạp chiếu phim khác nhau tại TP.HCM trong ngày hôm nay."
+      - "Lượng điện tiêu thụ hàng tháng của một nhà máy sản xuất."
     answer: 2
-    hint: Kiểm tra xem các đối tượng khảo sát có mang tính thời gian liên tục hay là các địa điểm độc lập.
-    explanation: Danh sách các rạp chiếu phim khác nhau là các đối tượng độc lập, không có tính thứ tự liên tục theo thời gian, do đó nên dùng biểu đồ cột chứ không được dùng biểu đồ đoạn thẳng.
+    hint: "Kiểm tra xem các đối tượng khảo sát có mang tính thời gian liên tục hay là các địa điểm độc lập."
+    explanation: "Danh sách các rạp chiếu phim khác nhau là các đối tượng độc lập, không có tính thứ tự liên tục theo thời gian, do đó nên dùng biểu đồ cột chứ không được dùng biểu đồ đoạn thẳng."
 ````
 
 ---

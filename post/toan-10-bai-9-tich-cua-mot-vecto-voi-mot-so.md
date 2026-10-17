@@ -139,7 +139,7 @@ Cặp số $(m; n)$ này được gọi là tọa độ của vectơ $\vec{x}$ �
 
 Điều chỉnh hai hệ số $m$ và $n$ bằng thanh trượt để quan sát sự tổng hợp của hai vectơ thành phần $m\vec{a} + n\vec{b}$ tạo nên vectơ mục tiêu $\vec{x}$:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">🧩 Mô Phỏng Phân Tích Vectơ x = m a + n b</h3>

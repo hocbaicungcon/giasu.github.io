@@ -142,7 +142,7 @@ Trong mặt phẳng tọa độ $Oxy$, đường thẳng bờ $d: ax + by = c$ c
 
 Hãy điều chỉnh các hệ số $a, b, c$ và dấu bất đẳng thức để quan sát trực quan sự thay đổi của đường thẳng bờ và miền nghiệm:
 
-```html
+```widget
 <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 20px; margin: 24px 0; font-family: system-ui, sans-serif;">
   <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
     <h3 style="margin: 0; font-size: 1.15rem; color: #1e293b;">📐 Phòng Thí Nghiệm Đồ Họa Miền Nghiệm Oxy</h3>
