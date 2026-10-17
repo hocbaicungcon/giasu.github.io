@@ -29,34 +29,34 @@ Thời gian làm bài: 90 phútBiên soạn theo chương trình GDPT 2018 của
 
 Thí sinh trả lời từ câu hỏi dưới đây. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn Đúng hoặc Sai.
 
-**Câu 1:** Một hộp có$8$quả bóng màu xanh,$6$quả bóng màu đỏ; các quả bóng có kích thước và khối lượng như nhau. Lấy ngẫu nhiên lần lượt hai quả bóng trong hộp, lấy không hoàn lại. Gọi A là biến cố “Lần thứ nhất lấy được quả màu xanh”. B là biến cố “Lần thứ hai lấy được quả màu đỏ”. Xét tính đúng sai của các khẳng định sau:
+**Câu 1:** Một hộp có $8$ quả bóng màu xanh,$6$ quả bóng màu đỏ; các quả bóng có kích thước và khối lượng như nhau. Lấy ngẫu nhiên lần lượt hai quả bóng trong hộp, lấy không hoàn lại. Gọi A là biến cố “Lần thứ nhất lấy được quả màu xanh”. B là biến cố “Lần thứ hai lấy được quả màu đỏ”. Xét tính đúng sai của các khẳng định sau:
 
 <details>
 <summary><b>Xem lời giải chi tiết & đáp án các ý a, b, c, d</b></summary>
 
-a) Số cách lấy được hai quả bóng của phép thử trên là$48$.
+a) Số cách lấy được hai quả bóng của phép thử trên là $48$.
 
-b) Số cách lấy lần thứ nhất được quả bóng màu xanh, lần thứ hai được$1$quả bóng màu bất kỳ khi là$104$.
+b) Số cách lấy lần thứ nhất được quả bóng màu xanh, lần thứ hai được $1$ quả bóng màu bất kỳ khi là $104$.
 
-c) Số cách lấy lần thứ hai được$1$quả bóng màu đỏ khi lần thứ nhất đã lấy được quả bóng màu xanh là$84$.
+c) Số cách lấy lần thứ hai được $1$ quả bóng màu đỏ khi lần thứ nhất đã lấy được quả bóng màu xanh là $84$.
 
-d) Xác suất$P\left ( { B\|A } \right.  )=\frac { 6 } { 13 }$.
+d) Xác suất $P\left ( { B\|A } \right.  )=\frac { 6 } { 13 }$.
 
 Lời giải
 
-a) Sai: Lấy ngẫu nhiên lần lượt hai quả bóng trong hộp, lấy không hoàn lại, lần thứ nhất lấy một quả bóng có$14$cách chọn, lần thứ hai lấy một quả bóng có$13$cách chọn.
+a) Sai: Lấy ngẫu nhiên lần lượt hai quả bóng trong hộp, lấy không hoàn lại, lần thứ nhất lấy một quả bóng có $14$ cách chọn, lần thứ hai lấy một quả bóng có $13$ cách chọn.
 
-Do đó$n\left ( { Ω } \right.  )=14.13=182$.
+Do đó $n\left ( { Ω } \right.  )=14.13=182$.
 
-b) Đúng: Lần thứ nhất lấy bóng có$8$cách chọn một quả bóng màu xanh, lần thứ hai có$13$cách chọn một quả bóng từ$13$quả bóng còn lại trong hộp. Do đó có$8.13=104$
+b) Đúng: Lần thứ nhất lấy bóng có $8$ cách chọn một quả bóng màu xanh, lần thứ hai có $13$ cách chọn một quả bóng từ $13$ quả bóng còn lại trong hộp. Do đó có $8.13=104$
 
-c) Sai: Lần thứ nhất lấy được một quả bóng màu xanh, trong hộp còn$13$quả với$7$quả màu xanh và$6$quả bóng màu đỏ. Do đó lần thứ hai được một quả bóng màu đỏ là có$6$cách.
+c) Sai: Lần thứ nhất lấy được một quả bóng màu xanh, trong hộp còn $13$ quả với $7$ quả màu xanh và $6$ quả bóng màu đỏ. Do đó lần thứ hai được một quả bóng màu đỏ là có $6$ cách.
 
-d) Đúng: Lần thứ nhất được một quả bóng màu xanh, trong hộp còn$13$quả với$7$quả màu xanh và$6$quả bóng màu đỏ. Do đó$P\left ( { B\left | { A } \right.  . } \right.  )=\frac { 6 } { 13 }$.
+d) Đúng: Lần thứ nhất được một quả bóng màu xanh, trong hộp còn $13$ quả với $7$ quả màu xanh và $6$ quả bóng màu đỏ. Do đó $P\left ( { B\left | { A } \right.  . } \right.  )=\frac { 6 } { 13 }$.
 
 </details>
 
-**Câu 2:** Một túi có$10$hộp sữa chua dâu và$10$hộp sữa chua nha đam; các hộp sữa chua có kích thước và khối lượng như nhau. Có$12$hộp sữa chua trong túi là sữa chua không đường, trong đó có$6$hộp sữa chua dâu và$6$hộp sữa chua nha đam. Lấy ngẫu nhiên một hộp sữa chua trong túi, xét các biến cố sau:
+**Câu 2:** Một túi có $10$ hộp sữa chua dâu và $10$ hộp sữa chua nha đam; các hộp sữa chua có kích thước và khối lượng như nhau. Có $12$ hộp sữa chua trong túi là sữa chua không đường, trong đó có $6$ hộp sữa chua dâu và $6$ hộp sữa chua nha đam. Lấy ngẫu nhiên một hộp sữa chua trong túi, xét các biến cố sau:
 
 <details>
 <summary><b>Xem lời giải chi tiết & đáp án các ý a, b, c, d</b></summary>
@@ -67,7 +67,7 @@ B: “Hộp sữa chua được lấy ra là sữa chua không đường”.
 
 Xét tính đúng sai của các khẳng định sau:
 
-a)$P\left ( { A\left | { B } \right.  . } \right.  )=0,5$.
+a) $P\left ( { A\left | { B } \right.  . } \right.  )=0,5$.
 
 b)
 
@@ -81,17 +81,17 @@ Ta có:: “Hộp sữa chua được lấy ra là hộp sữa chua nha đam”.
 
 : “Hộp sữa chua được lấy ra là sữa chua có đường”.
 
-a) Đúng: Trong$12$hộp sữa chua không đường, có$6$cách lấy hộp sữa chua dâu. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa chua dâu, không đường là$P\left ( { A\left | { B } \right.  . } \right.  )=0,5$.
+a) Đúng: Trong $12$ hộp sữa chua không đường, có $6$ cách lấy hộp sữa chua dâu. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa chua dâu, không đường là $P\left ( { A\left | { B } \right.  . } \right.  )=0,5$.
 
-b) Đúng: Trong$8$hộp sữa chua có đường, có$4$cách lấy hộp sữa chua dâu. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa chua dâu, có đường là .
+b) Đúng: Trong $8$ hộp sữa chua có đường, có $4$ cách lấy hộp sữa chua dâu. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa chua dâu, có đường là .
 
-c) Sai: Trong$12$hộp sữa chua không đường, có$6$cách lấy hộp sữa chua nha đam. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa chua nha đam, không đường là .
+c) Sai: Trong $12$ hộp sữa chua không đường, có $6$ cách lấy hộp sữa chua nha đam. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa chua nha đam, không đường là .
 
-d) Đúng: Trong$8$hộp sữa chua có đường, có$4$cách lấy hộp sữa chua nha đam. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa nha đam, có đường là .
+d) Đúng: Trong $8$ hộp sữa chua có đường, có $4$ cách lấy hộp sữa chua nha đam. Vậy xác suất để hộp sữa chua được lấy ra là hộp sữa nha đam, có đường là .
 
 </details>
 
-**Câu 3:** Khối$11$của một trường THPT có$450$học sinh trong đó có$250$nữ và$200$nam. Kết quả học tập cuối năm có$45$học sinh xuất sắc trong đó có$24$nữ và$21$nam. Chọn ngẫu nhiên một học sinh trong$450$học sinh của khối$11$.
+**Câu 3:** Khối $11$ của một trường THPT có $450$ học sinh trong đó có $250$ nữ và $200$ nam. Kết quả học tập cuối năm có $45$ học sinh xuất sắc trong đó có $24$ nữ và $21$ nam. Chọn ngẫu nhiên một học sinh trong $450$ học sinh của khối $11$.
 
 <details>
 <summary><b>Xem lời giải chi tiết & đáp án các ý a, b, c, d</b></summary>
@@ -102,11 +102,11 @@ B là biến cố: “Học sinh được chọn là học sinh nam”.
 
 Xét tính đúng sai của các khẳng định sau:
 
-a)$P\left ( { A } \right.  )=\frac { 1 } { 10 }$.
+a) $P\left ( { A } \right.  )=\frac { 1 } { 10 }$.
 
-b)$P\left ( { AB } \right.  )=\frac { 7 } { 150 }$.
+b) $P\left ( { AB } \right.  )=\frac { 7 } { 150 }$.
 
-c)$P\left ( { A\|B } \right.  )=\frac { 7 } { 10 }$.
+c) $P\left ( { A\|B } \right.  )=\frac { 7 } { 10 }$.
 
 d) .
 
@@ -114,32 +114,29 @@ Lời giải
 
 a) Đúng:$n\left ( { A } \right.  )=45,\,n\left ( { Ω } \right.  )=450⇒P\left ( { A } \right.  )=\frac { 45 } { 450 }=\frac { 1 } { 10 }$.
 
-b) Đúng: Do có$21$học sinh nam và đạt xuất sắc nên ta có:
+b) Đúng: Do có $21$ học sinh nam và đạt xuất sắc nên ta có:
 
 $n\left ( { AB } \right.  )=21,\,n\left ( { Ω } \right.  )=450⇒P\left ( { AB } \right.  )=\frac { 21 } { 450 }=\frac { 7 } { 150 }$
 
-c) Sai: Do có$200$học sinh nam nên$n\left ( { B } \right.  )=200,n\left ( { Ω } \right.  )=450⇒P\left ( { B } \right.  )=\frac { 200 } { 450 }=\frac { 4 } { 9 }\,$.
+c) Sai: Do có $200$ học sinh nam nên $n(B)=200, n(Ω)=450 \Rightarrow P(B)=\frac{200}{450}=\frac{4}{9}$.
+Khi đó: $P(A|B) = \frac{P(AB)}{P(B)} = \frac{21}{200} \ne \frac{7}{10}$.
 
-Khi đó: .
-
-d) Đúng: Ta có$n\left ( { \bar AB } \right.  )=179,n\left ( { Ω } \right.  )=450⇒P\left ( { \bar AB } \right.  )=\frac { 179 } { 450 }$.
-
-Khi đó:$ࠃ79$.
+d) Đúng: Ta có $n(\bar{A}B)=179, n(Ω)=450 \Rightarrow P(\bar{A}B)=\frac{179}{450}$.
 
 </details>
 
-**Câu 4:** Giả sử trong một nhóm người có 10 người nhiễm bệnh, 90 người còn lại là không nhiễm bệnh. Để phát hiện ra người nhiễm bệnh, người ta tiến hành xét nghiệm tất cả mọi người của nhóm đó. Biết rằng đối với người nhiễm bệnh thì xác suất xét nghiệm có kết quả dương tính là 80%, nhưng đối với người không nhiễm bệnh thì xác suất xét nghiệm có phản ứng dương tính là 9%. Gọi$X$là một người trong nhóm được xét nghiệm. Xét tính đúng sai của các khẳng định sau:
+**Câu 4:** Giả sử trong một nhóm người có 10 người nhiễm bệnh, 90 người còn lại là không nhiễm bệnh. Để phát hiện ra người nhiễm bệnh, người ta tiến hành xét nghiệm tất cả mọi người của nhóm đó. Biết rằng đối với người nhiễm bệnh thì xác suất xét nghiệm có kết quả dương tính là 80%, nhưng đối với người không nhiễm bệnh thì xác suất xét nghiệm có phản ứng dương tính là 9%. Gọi $X$ là một người trong nhóm được xét nghiệm. Xét tính đúng sai của các khẳng định sau:
 
 <details>
 <summary><b>Xem lời giải chi tiết & đáp án các ý a, b, c, d</b></summary>
 
-a) Giả sử$X$có kết quả xét nghiệm dương tính. Xác suất để$X$là người nhiễm bệnh là$\frac { 1 } { 2 }$.
+a) Giả sử $X$ có kết quả xét nghiệm dương tính. Xác suất để $X$ là người nhiễm bệnh là $\frac { 1 } { 2 }$.
 
-b) Giả sử$X$có kết quả xét nghiệm dương tính. Xác suất để$X$là người không bị nhiễm bệnh là$\frac { 81 } { 161 }$.
+b) Giả sử $X$ có kết quả xét nghiệm dương tính. Xác suất để $X$ là người không bị nhiễm bệnh là $\frac { 81 } { 161 }$.
 
-c) Giả sử$X$có kết quả xét nghiệm âm tính. Xác suất để$X$là người nhiễm bệnh là$\frac { 20 } { 839 }$.
+c) Giả sử $X$ có kết quả xét nghiệm âm tính. Xác suất để $X$ là người nhiễm bệnh là $\frac { 20 } { 839 }$.
 
-d) Giả sử$X$có kết quả xét nghiệm âm tính. Xác suất để$X$là người không bị nhiễm bệnh là$\frac { 800 } { 839 }$.
+d) Giả sử $X$ có kết quả xét nghiệm âm tính. Xác suất để $X$ là người không bị nhiễm bệnh là $\frac { 800 } { 839 }$.
 
 Lời giải
 
@@ -153,7 +150,7 @@ $B$: “X là người nhiễm bệnh”
 
 : “X là người không bị nhiễm bệnh”
 
-Xác suất X là người bị nhiễm bệnh là${ \rm{ P } }\left ( { B } \right.  )=\frac { 10 } { 100 }=0,1$.
+Xác suất X là người bị nhiễm bệnh là ${ \rm{ P } }\left ( { B } \right.  )=\frac { 10 } { 100 }=0,1$.
 
 Xác suất X là người không bị nhiễm bệnh là .
 
@@ -167,7 +164,7 @@ a) Sai: Xác suất X là người nhiễm bệnh, biết X có kết quả xét
 
 $=\frac { 0,1.0,8 } { 0,1.0,8+0,9.0,09 }=\frac { 80 } { 161 }$.
 
-b) Đúng: Xác suất để$X$là người không bị nhiễm bệnh, biết X có kết quả xét nghiệm dương tính là: .
+b) Đúng: Xác suất để $X$ là người không bị nhiễm bệnh, biết X có kết quả xét nghiệm dương tính là: .
 
 c) Đúng: Xác suất để X là người nhiễm bệnh, biết X có kết quả xét nghiệm âm tính là
 
@@ -183,12 +180,12 @@ d) Sai: Xác suất để X là người không bị nhiễm bệnh, biết X c�
 
 Thí sinh giải bài toán và điền đáp số vào ô trống tương ứng.
 
-**Câu 1:** Khoa học đã chứng minh bệnh béo phì sẽ làm tăng nguy cơ bị bệnh tim mạch. Khảo sát trên hồ sơ các bệnh nhân bị béo phì ở một bệnh viện, bệnh béo phì do yếu tố lối sống sinh hoạt là$90\%$, trong số người đó có$60\%$người bị mắc bệnh tim mạch. Béo phì do yếu tố di truyền là$10\%$, trong số người đó có$25\%$người bị mắc bệnh về tim mạch. Tính xác xuất để rút ra một hồ sơ là của một người bị béo phì do di truyền biết người đó bị bệnh tim mạch. (Kết quả làm tròn đến chữ số thập phân thứ hai sau dấu phẩy)
+**Câu 1:** Khoa học đã chứng minh bệnh béo phì sẽ làm tăng nguy cơ bị bệnh tim mạch. Khảo sát trên hồ sơ các bệnh nhân bị béo phì ở một bệnh viện, bệnh béo phì do yếu tố lối sống sinh hoạt là $90\%$, trong số người đó có $60\%$ người bị mắc bệnh tim mạch. Béo phì do yếu tố di truyền là $10\%$, trong số người đó có $25\%$ người bị mắc bệnh về tim mạch. Tính xác xuất để rút ra một hồ sơ là của một người bị béo phì do di truyền biết người đó bị bệnh tim mạch. (Kết quả làm tròn đến chữ số thập phân thứ hai sau dấu phẩy)
 
 <details>
 <summary><b>Xem đáp số & lời giải chi tiết</b></summary>
 
-Gọi$A_{ 1 }$là biến cố lấy được hồ sơ một người bị bệnh béo phì do lối sống sinh hoạt. Gọi$A_{ 2 }$là biến cố lấy được hồ sơ một người bị bệnh béo phì do di truyền. Gọi$B$là biến cố hồ sơ là của một người bị tim mạch. Ta có$P\left ( { B } \right.  )=P\left ( { A_{ 1 } } \right.  ).P\left ( { B\left | { A_{ 1 } } \right.  . } \right.  )+P\left ( { A_{ 2 } } \right.  ).P\left ( { B\left | { A_{ 2 } } \right.  . } \right.  )=0,9⋅0,6+0,1.0,25=0,565$. Suy ra$P\left ( { A_{ 2 } \left | { B } \right.  . } \right.  )=\frac { P\left ( { A_{ 2 } } \right.  ).P\left ( { B\left | { A_{ 2 } } \right.  . } \right.  ) } { P\left ( { B } \right.  ) }=\frac { 0,1.0,25 } { 0,565 }=\frac { 5 } { 113 }≈0,04$.
+Gọi $A_{ 1 }$ là biến cố lấy được hồ sơ một người bị bệnh béo phì do lối sống sinh hoạt. Gọi $A_{ 2 }$ là biến cố lấy được hồ sơ một người bị bệnh béo phì do di truyền. Gọi $B$ là biến cố hồ sơ là của một người bị tim mạch. Ta có $P\left ( { B } \right.  )=P\left ( { A_{ 1 } } \right.  ).P\left ( { B\left | { A_{ 1 } } \right.  . } \right.  )+P\left ( { A_{ 2 } } \right.  ).P\left ( { B\left | { A_{ 2 } } \right.  . } \right.  )=0,9⋅0,6+0,1.0,25=0,565$. Suy ra $P\left ( { A_{ 2 } \left | { B } \right.  . } \right.  )=\frac { P\left ( { A_{ 2 } } \right.  ).P\left ( { B\left | { A_{ 2 } } \right.  . } \right.  ) } { P\left ( { B } \right.  ) }=\frac { 0,1.0,25 } { 0,565 }=\frac { 5 } { 113 }≈0,04$.
 
 </details>
 
@@ -197,29 +194,29 @@ Gọi$A_{ 1 }$là biến cố lấy được hồ sơ một người bị bệnh
 <details>
 <summary><b>Xem đáp số & lời giải chi tiết</b></summary>
 
-Gọi$A:''$Con thỏ lấy ra từ chuồng I sang chuồng II là con thỏ màu đen$''$. Khi đó . Gọi$B:''$Con thỏ lấy ra từ chuồng II là con thỏ màu đen$''$. Ta có . Áp dụng công thức tính xác suất toàn phần, ta có .
+Gọi $A:''$ Con thỏ lấy ra từ chuồng I sang chuồng II là con thỏ màu đen $''$. Khi đó . Gọi $B:''$ Con thỏ lấy ra từ chuồng II là con thỏ màu đen $''$. Ta có . Áp dụng công thức tính xác suất toàn phần, ta có .
 
 </details>
 
-**Câu 3:** Vào mỗi buổi sáng ở tuyến phố$X$, xác suất xảy ra tắc đường khi trời mưa và không mưa lần lượt là$0,6$và$0,15$. Xác suất có mưa vào một buổi sáng là$0,05$. Tính xác suất để buổi sáng có mưa khi tuyến phố$X$bị tắc đường (tính chính xác đến hàng phần trăm).
+**Câu 3:** Vào mỗi buổi sáng ở tuyến phố $X$, xác suất xảy ra tắc đường khi trời mưa và không mưa lần lượt là $0,6$ và $0,15$. Xác suất có mưa vào một buổi sáng là $0,05$. Tính xác suất để buổi sáng có mưa khi tuyến phố $X$ bị tắc đường (tính chính xác đến hàng phần trăm).
 
 <details>
 <summary><b>Xem đáp số & lời giải chi tiết</b></summary>
 
-Gọi$A$là biến cố “có mưa vào buổi sáng”. Gọi$B$là biến cố “tuyến phố$X$tắc đường”. Khi đó ta có:$P\left ( { A } \right.  )=0,05$và$P\left ( { \bar A } \right.  )=1-P\left ( { A } \right.  )=0,95$. $P\left ( { B\left | { A } \right.  . } \right.  )=0,6$và$P\left ( { B\left | { \bar A } \right.  . } \right.  )=0,15$. Xác suất để buổi sáng tuyến phố$X$tắc đường là $P\left ( { B } \right.  )=P\left ( { A } \right.  ).\,P\left ( { B\left | { A } \right.  . } \right.  )+P\left ( { \bar A } \right.  ).\,P\left ( { B\left | { \bar A } \right.  . } \right.  )=0,05.0,6+0,95.0,15=\frac { 69 } { 400 }=0,1725$. Xác suất để buổi sáng có mưa khi tuyến phố$X$bị tắc đường là $P\left ( { A\left | { B } \right.  . } \right.  )=\frac { P\left ( { A } \right.  ).\,P\left ( { B\left | { A } \right.  . } \right.  ) } { P\left ( { B } \right.  ) }=\frac { 0,05.0,6 } { 0,1725 }=\frac { 4 } { 23 }≈0,17$.
+Gọi $A$ là biến cố “có mưa vào buổi sáng”. Gọi $B$ là biến cố “tuyến phố $X$ tắc đường”. Khi đó ta có:$P\left ( { A } \right.  )=0,05$ và $P\left ( { \bar A } \right.  )=1-P\left ( { A } \right.  )=0,95$. $P\left ( { B\left | { A } \right.  . } \right.  )=0,6$ và $P\left ( { B\left | { \bar A } \right.  . } \right.  )=0,15$. Xác suất để buổi sáng tuyến phố $X$ tắc đường là $P\left ( { B } \right.  )=P\left ( { A } \right.  ).\,P\left ( { B\left | { A } \right.  . } \right.  )+P\left ( { \bar A } \right.  ).\,P\left ( { B\left | { \bar A } \right.  . } \right.  )=0,05.0,6+0,95.0,15=\frac { 69 } { 400 }=0,1725$. Xác suất để buổi sáng có mưa khi tuyến phố $X$ bị tắc đường là $P\left ( { A\left | { B } \right.  . } \right.  )=\frac { P\left ( { A } \right.  ).\,P\left ( { B\left | { A } \right.  . } \right.  ) } { P\left ( { B } \right.  ) }=\frac { 0,05.0,6 } { 0,1725 }=\frac { 4 } { 23 }≈0,17$.
 
 </details>
 
-**Câu 4:** Giả sử có khoảng$40\%$thư điện tử (email) gửi đến một địa chỉ là thư rác. Người ta sử dụng một thuật toán để phân loại thư rác, biết rằng thuật toán này có thể phân loại đến$99\%$thư rác và tỉ lệ sai sót khi phân loại thư bình thường thành thư rác là$5\%$. Tính xác suất một thư điện tử là thư bình thường nếu thư này đã được phân loại đúng (làm tròn$2$chữ số thập phân).
+**Câu 4:** Giả sử có khoảng $40\%$ thư điện tử (email) gửi đến một địa chỉ là thư rác. Người ta sử dụng một thuật toán để phân loại thư rác, biết rằng thuật toán này có thể phân loại đến $99\%$ thư rác và tỉ lệ sai sót khi phân loại thư bình thường thành thư rác là $5\%$. Tính xác suất một thư điện tử là thư bình thường nếu thư này đã được phân loại đúng (làm tròn $2$ chữ số thập phân).
 
 <details>
 <summary><b>Xem đáp số & lời giải chi tiết</b></summary>
 
-Ta có công thức:$P\left ( { A\|B } \right.  )=\frac { P\left ( { B\|A } \right.  ).P\left ( { A } \right.  ) } { P\left ( { B } \right.  ) }$ Trong đó:$A$: Thư điện tử là thư bình thường;$B$: Thư đã được phân loại đúng. $P\left ( { A } \right.  )$: Xác suất một thư điện tử là thư bình thường ban đầu. Vì có$40\%$thư rác nên$P\left ( { A } \right.  )=1-0,4=0,6$. $P\left ( { B\|A } \right.  )$: Xác suất một thư bình thường được phân loại đúng. Do tỉ lệ sai sót là$5\%$nên$P\left ( { B\|A } \right.  )=1-0,05=0,95$. $P\left ( { B\| \bar A } \right.  )$: Xác suất một thư rác được phân loại chính xác là$99\%$nên$P\left ( { B\| \bar A } \right.  )=0,99$. $P\left ( { B } \right.  )$: Xác suất một thư nào đó được phân loại đúng, tính bằng tổng xác suất một thư rác được phân loại đúng và xác suất một thư bình thường được phân loại đúng $P\left ( { B } \right.  )=P\left ( { B\|A } \right.  ){ \rm{ . } }P\left ( { A } \right.  )+P\left ( { B\| \bar A } \right.  ){ \rm{ . } }P\left ( { \bar A } \right.  )=0,95.0,6+0,99.0,4=0,966$ Áp dụng định lý Bayes:$P\left ( { A\|B } \right.  )=\frac { P\left ( { B\|A } \right.  ).P\left ( { A } \right.  ) } { P\left ( { B } \right.  ) }=\frac { 0,95⋅0,6 } { 0,966 }=\frac { 95 } { 161 }≈0,59$.
+Ta có công thức:$P\left ( { A\|B } \right.  )=\frac { P\left ( { B\|A } \right.  ).P\left ( { A } \right.  ) } { P\left ( { B } \right.  ) }$ Trong đó:$A$: Thư điện tử là thư bình thường;$B$: Thư đã được phân loại đúng. $P\left ( { A } \right.  )$: Xác suất một thư điện tử là thư bình thường ban đầu. Vì có $40\%$ thư rác nên $P\left ( { A } \right.  )=1-0,4=0,6$. $P\left ( { B\|A } \right.  )$: Xác suất một thư bình thường được phân loại đúng. Do tỉ lệ sai sót là $5\%$ nên $P\left ( { B\|A } \right.  )=1-0,05=0,95$. $P\left ( { B\| \bar A } \right.  )$: Xác suất một thư rác được phân loại chính xác là $99\%$ nên $P\left ( { B\| \bar A } \right.  )=0,99$. $P\left ( { B } \right.  )$: Xác suất một thư nào đó được phân loại đúng, tính bằng tổng xác suất một thư rác được phân loại đúng và xác suất một thư bình thường được phân loại đúng $P\left ( { B } \right.  )=P\left ( { B\|A } \right.  ){ \rm{ . } }P\left ( { A } \right.  )+P\left ( { B\| \bar A } \right.  ){ \rm{ . } }P\left ( { \bar A } \right.  )=0,95.0,6+0,99.0,4=0,966$ Áp dụng định lý Bayes:$P\left ( { A\|B } \right.  )=\frac { P\left ( { B\|A } \right.  ).P\left ( { A } \right.  ) } { P\left ( { B } \right.  ) }=\frac { 0,95⋅0,6 } { 0,966 }=\frac { 95 } { 161 }≈0,59$.
 
 </details>
 
-**Câu 5:** Có hai chiếc hộp, hộp I có$5$viên bi màu trắng và$5$viên bi màu đen; hộp II có$6$viên bi màu trắng và$4$viên bi màu đen. Các viên bi có cùng kích thước và khối lượng. Lấy ngẫu nhiên đồng thời hai viên bi từ hộp I bỏ sang hộp II. Sau đó lấy ngẫu nhiên một viên bi từ hộp II. Lấy ra ngẫu nhiên một viên bi, giả sử viên bi được lấy ra là viên bi màu trắng. Tính xác suất viên bi màu trắng đó thuộc hộp I (làm tròn$2$chữ số thập phân).
+**Câu 5:** Có hai chiếc hộp, hộp I có $5$ viên bi màu trắng và $5$ viên bi màu đen; hộp II có $6$ viên bi màu trắng và $4$ viên bi màu đen. Các viên bi có cùng kích thước và khối lượng. Lấy ngẫu nhiên đồng thời hai viên bi từ hộp I bỏ sang hộp II. Sau đó lấy ngẫu nhiên một viên bi từ hộp II. Lấy ra ngẫu nhiên một viên bi, giả sử viên bi được lấy ra là viên bi màu trắng. Tính xác suất viên bi màu trắng đó thuộc hộp I (làm tròn $2$ chữ số thập phân).
 
 <details>
 <summary><b>Xem đáp số & lời giải chi tiết</b></summary>
@@ -228,11 +225,11 @@ Xét các biến cố:$A$: “Viên bi lấy ra từ hộp II ở bước 2 là 
 
 </details>
 
-**Câu 6:** Một cuộc thi có$36$bộ câu hỏi, trong đó có$16$bộ câu hỏi về chủ đề tự nhiên và$20$bộ câu hỏi về chủ đề xã hội. Bạn An lấy ngẫu nhiên$1$bộ câu hỏi (lấy không hoàn lại), sau đó bạn Phúc lấy ngẫu nhiên 1 bộ câu hỏi. Xác suất bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên bằng$\frac { a } { b }$với$\frac { a } { b }$là phân số tối giản. Giá trị$100a-99b$bằng bao nhiêu?
+**Câu 6:** Một cuộc thi có $36$ bộ câu hỏi, trong đó có $16$ bộ câu hỏi về chủ đề tự nhiên và $20$ bộ câu hỏi về chủ đề xã hội. Bạn An lấy ngẫu nhiên $1$ bộ câu hỏi (lấy không hoàn lại), sau đó bạn Phúc lấy ngẫu nhiên 1 bộ câu hỏi. Xác suất bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên bằng $\frac { a } { b }$ với $\frac { a } { b }$ là phân số tối giản. Giá trị $100a-99b$ bằng bao nhiêu?
 
 <details>
 <summary><b>Xem đáp số & lời giải chi tiết</b></summary>
 
-Xét các biến cố: A: "Bạn An lấy được bộ câu hỏi về chủ đề xã hội"; B: "Bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên". Khi đó: . Nếu bạn An chọn được một bộ câu hỏi về chủ đề xã hội thì sau đó còn 35 bộ câu hỏi, trong đó có 16 bộ câu hỏi về chủ đề tự nhiên thì suy ra$P\left ( { B∣A } \right.  )=\frac { 16 } { 35 }$. Nếu bạn An chọn được một bộ câu hỏi về chủ đề tự nhiên thì sau đó còn 35 bộ câu hỏi, trong đó có 15 bộ câu hỏi về chủ đề tự nhiên thì suy ra . Theo công thức xác suất toàn phần, xác suất bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên là: . Suy ra$a=4,b=9$và$100a-99b=-491$. -----------------HẾT-----------------
+Xét các biến cố: A: "Bạn An lấy được bộ câu hỏi về chủ đề xã hội"; B: "Bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên". Khi đó: . Nếu bạn An chọn được một bộ câu hỏi về chủ đề xã hội thì sau đó còn 35 bộ câu hỏi, trong đó có 16 bộ câu hỏi về chủ đề tự nhiên thì suy ra $P\left ( { B∣A } \right.  )=\frac { 16 } { 35 }$. Nếu bạn An chọn được một bộ câu hỏi về chủ đề tự nhiên thì sau đó còn 35 bộ câu hỏi, trong đó có 15 bộ câu hỏi về chủ đề tự nhiên thì suy ra . Theo công thức xác suất toàn phần, xác suất bạn Phúc lấy được bộ câu hỏi về chủ đề tự nhiên là: . Suy ra $a=4,b=9$ và $100a-99b=-491$. -----------------HẾT-----------------
 
 </details>

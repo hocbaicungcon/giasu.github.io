@@ -23,11 +23,9 @@ grade: 3
 > - **Mục đích:** Bồi dưỡng học sinh khá giỏi, rèn luyện tư duy logic, kỹ năng giải toán sáng tạo và nâng cao năng lực toán học cho học sinh phổ thông.
 
 ---
+## 1. Số học
 
-
-## 1 Số học
-
-### 1.1 Các số trong phạm vi 1000
+### 1.1. Các số trong phạm vi 1000
 
 **Bài 1.** Viết các số sau:
 - a) Chín trăm bảy mươi mốt;
@@ -49,7 +47,8 @@ grade: 3
 
 **Bài 4.** So sánh mỗi cặp số sau bằng cách nhanh nhất:
   536 và 583 747 và 744; 333 và 333; 512 và 513; 299 và 301.
-  5.
+
+**Bài 5.**
 - a) Tính các tổng sau:
   451 + 437
   723 + 100
@@ -92,8 +91,6 @@ grade: 3
   49 + 6 × 6 =
   38 + 5 × 9 =
   65 + 2 x 8 =
-
-### 1.1 Các số trong phạm vi 1000
 
 - e) 49 - 42 : 6 = 49 -7 = 42
 75 - 35 :7=
@@ -147,8 +144,6 @@ grade: 3
 
 **Bài 16.** Điền số thích hợp vào chỗ chấm trong các câu sau:
 
-### 1.1 Các số trong phạm vi 1000
-
 - a) Có 15 = 3 x 5, ta nói:
 15 chia hết cho ... và 15 chia hết cho ...
 15 chia cho 3 được thương là ... và có số dư là ...
@@ -192,8 +187,6 @@ grade: 3
   hàng phải dùng đến ít nhất bao nhiều thùng nhựa?
 
 **Bài 26.** Nối hai phép tính có cùng kết quả với nhau:
-
-### 1.1 Các số trong phạm vi 1000
 
 32 × 3
 364 : 7
@@ -270,8 +263,6 @@ grade: 3
 **Bài 43.** Thay dấu (?) bằng số thích hợp:
   8) * 40 - 10 = 5
 
-### 1.2 Các số trong phạm vi 100 000
-
 **Bài 44.** Viết các số sau:
 - a) Hai mươi bảy nghìn bốn trăm linh bảy.
 - b) Bốn mươi nghìn tám trăm chín mươi lăm.
@@ -294,8 +285,6 @@ grade: 3
 
 **Bài 48.** Tìm chữ số thích hợp thay vào x:
 
-### 1.2 Các số trong phạm vi 100 000
-
 - a) 5x47 < 5137
 - b) x568 > 8668
 
@@ -315,6 +304,8 @@ grade: 3
 
 **Bài 51.** Cho một số có ba chữ số được viết bởi ba chữ số liên tiếp từ bé đến lớn. Nếu ta sắp xếp
   các chữ số đó theo thứ tự ngược lại thì được số mới lớn hơn số cũ bao nhiêu đơn vị?
+
+### 1.2. Các số trong phạm vi 100 000
 
 **Bài 52.** Điền số thích hợp vào ô trống:
   Thừa số
@@ -349,8 +340,6 @@ grade: 3
 - b) x là số liền sau số lớn nhất có bốn chữ số, y là số liền trước số bé nhất có năm chữ số.
 
 **Bài 61.** Tính giá trị của biểu thức sau:
-
-### 1.2 Các số trong phạm vi 100 000
 
 - a) 52643 + 2628 + 32
 - b) 5024 + 7 + 20008
@@ -404,8 +393,6 @@ grade: 3
 **Bài 72.** Điễn dầu (>, <,=) thích hợp vào ô trống:
 - c) 98-(25-7) x3
 
-### 1.2 Các số trong phạm vi 100 000
-
 - a) 32 - 14 : 2 · 16 + 8 x 2
 - b) 42:3 x 4 · 72 x 4:6
 - c) 5 x (12 - 3) · (74 +22) : 2
@@ -449,7 +436,7 @@ grade: 3
 - b) Chia → nhân → cộng
 - d) Cộng → nhân → chia
 
-## 2 Hình học
+## 2. Hình học
 
 **Bài 83.** Trên mỗi hình sau có bao nhiêu đoạn thẳng? Ghi tên các đoạn thằng đó.
   CI
@@ -467,6 +454,8 @@ grade: 3
   D
 
 **Bài 85.** Hình vẽ dưới đây có bao nhiêu hình vuông?
+
+![Đếm hình vuông - Bài 85](/assets/images/108-toan-3/bai-85.png)
 
 **Bài 86.** Trong hình bên, đoạn thắng AD là cạnh chung của những tam giác nào?
   BI
@@ -490,16 +479,24 @@ grade: 3
 
 **Bài 91.** Cắt hình dưới đây thành năm mảnh và ghép lại để được một hình vuông.
 
-**Bài 92.** Cắt hình tam giác lớn như hình sau rồi ghép lại thành một hình tứ giác.
+**Bài 92.** Cắt hình dấu cộng và tam giác lớn dưới đây rồi ghép lại thành một hình tứ giác:
+
+![Cắt ghép hình - Bài 92](/assets/images/108-toan-3/bai-92a.png)
+
+![Tam giác lớn - Bài 92](/assets/images/108-toan-3/bai-92b.png)
 
 **Bài 93.** Hãy dùng 10 que diêm để xếp thành 3 hình vuỗng.
 
-**Bài 94.** Tích chu vi và diện tích hình sau với kích thước như hình vẽ.
+**Bài 94.** Tính chu vi và diện tích hình sau với kích thước như hình vẽ:
+
+![Tính chu vi và diện tích hình bậc thang - Bài 94](/assets/images/108-toan-3/bai-94.png)
   2cm
   2cm
   2cm
 
 ## 3 Những bài toán chọn lọc
+
+## 3. Những bài toán chọn lọc phát triển tư duy
 
 **Bài 95.** Trong một cái thùng có 5 chiếc vali, trong mỗi vali có 3 hộp sắt đựng tiền. Mỗi hộp có 100
   đồng tiền vàng, cả thùng, vali, hộp sắt đều được khóa. Hỏi phải mở bao nhiêu chiếc khóa để
