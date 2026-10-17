@@ -18,7 +18,7 @@ Giáo án powerpoint hóa 11 bài 11 phương pháp tách biệt và tính chế
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [BAI-11.-PP-TACH-BIET-VA-TINH-CHE-HCHC-NGUYEN-THI-THAO](/assets/docs/BAI-11.-PP-TACH-BIET-VA-TINH-CHE-HCHC-NGUYEN-THI-THAO.pptx)
+- [BAI-11.-PP-TACH-BIET-VA-TINH-CHE-HCHC-NGUYEN-THI-THAO](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

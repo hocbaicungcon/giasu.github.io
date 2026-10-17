@@ -11,7 +11,7 @@ tags:
 grade: 12
 ---
 
-***CHUYÊN ĐỀ 4:*** **PHƯƠNG PHÁP BẢO TOÀN ĐIỆN TÍCH**
+**CHUYÊN ĐỀ 4:** **PHƯƠNG PHÁP BẢO TOÀN ĐIỆN TÍCH**
 
 **I. Phương pháp bảo toàn điện tích**
 
@@ -23,7 +23,7 @@ Suy ra trong phân tử hợp chất ion hoặc dung dịch chất điện li*, 
 
 – Hệ quả của của định luật bảo toàn điện tích : 
 
-● ***Hệ quả 1 :*** 
+● **Hệ quả 1 :** 
 
 Trong dung dịch : *Tổng giá trị điện tích dương số mol ion dương = Tổng giá trị điện tích âm số mol ion âm.*
 
@@ -31,7 +31,7 @@ Trong dung dịch : *Tổng giá trị điện tích dương số mol ion dươn
 
 Theo hệ quả 1 của định luật bảo toàn điện tích, ta có :
 
-● ***Hệ quả 2 :*** **
+● **Hệ quả 2 :** **
 
 Trong phản ứng trao đổi : *Tổng giá trị điện tích dương số mol ion dương phản ứng = Tổng giá trị điện tích âm số mol ion âm phản ứng.*
 
@@ -43,7 +43,7 @@ Bản chất phản ứng là ion H+ tác dụng hoàn toàn với các ion và 
 
 Áp dụng hệ quả 2 của định luật bảo toàn điện tích, ta có :
 
-● ***Hệ quả 3 :*** 
+● **Hệ quả 3 :** 
 
 Khi thay thế ion này bằng ion khác : *Số mol ion ban đầu giá trị điện tích của nó = Số mol ion thay thế giá trị điện tích của nó.*
 
@@ -61,15 +61,15 @@ Phương pháp bảo toàn điện tích *là phương pháp giải bài tập h
 
 **a. Xét các hướng giải bài tập sau :**
 
-***Câu 30 – Mã đề 384:*** Cho hỗn hợp K2CO3 và NaHCO3 (tỉ lệ mol 1 : 1) vào bình dung dịch Ba(HCO3)2 thu được kết tủa X và dung dịch Y. Thêm từ từ dung dịch HCl 0,5M vào bình đến khi không còn khí thoát ra thì hết 560 ml. Biết toàn bộ Y phản ứng vừa đủ với 200 ml dung dịch NaOH 1M. Khối lượng kết tủa X là
+**Câu 30 – Mã đề 384:** Cho hỗn hợp K2CO3 và NaHCO3 (tỉ lệ mol 1 : 1) vào bình dung dịch Ba(HCO3)2 thu được kết tủa X và dung dịch Y. Thêm từ từ dung dịch HCl 0,5M vào bình đến khi không còn khí thoát ra thì hết 560 ml. Biết toàn bộ Y phản ứng vừa đủ với 200 ml dung dịch NaOH 1M. Khối lượng kết tủa X là
 
- **A.** 3,94 gam. **B.** 7,88 gam. **C.** 11,28 gam. **D.** 9,85 gam.
+ **A.** 3,94 gam. B.** 7,88 gam. **C.** 11,28 gam. D.** 9,85 gam.
 
 *(Đề thi tuyển sinh Đại học khối A năm 2012)*
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
-● ***Cách 1 :*** *Phương pháp thông thường – Tính toán theo phương trình phản ứng*
+● **Cách 1 :** *Phương pháp thông thường – Tính toán theo phương trình phản ứng*
 
 Đặt 
 
@@ -101,25 +101,25 @@ Từ (*) và (**) suy ra : x = 0,04; y = 0,08.
 
 Do 
 
-● ***Cách 2 :*** *Phương pháp bảo toàn điện tích* (vẫn sử dụng cách gọi số mol như trên) :
+● **Cách 2 :** *Phương pháp bảo toàn điện tích* (vẫn sử dụng cách gọi số mol như trên) :
 
 Sơ đồ phản ứng :
 
 Để lập được phương trình như ở trên, ta có thể đi theo 1 trong 2 hướng như sau:
 
-** **Hướng 1 :*** *Áp dụng bảo toàn điện tích trong dung dịch sau phản ứng*
+** **Hướng 1 :** *Áp dụng bảo toàn điện tích trong dung dịch sau phản ứng***
 
 Theo sơ đồ phản ứng ta thấy : Sau khi cho HCl phản ứng vừa hết với các chất trong bình thì dung dịch thu được chứa các ion K+, Na+, Ba2+ và 
 
 Áp dụng bảo toàn điện tích trong dung dịch sau phản ứng, ta có :
 
-** **Hướng 2 :*** *Áp dụng bảo toàn điện tích trong phản ứng*
+** **Hướng 2 :** *Áp dụng bảo toàn điện tích trong phản ứng***
 
 Bản chất *của phản ứng giữa các cặp ion trái dấu là tạo ra những chất kết tủa, bay hơi, điện li yếu trung hòa về điện*. Phản ứng của HCl với các chất ở trong bình là phản ứng của H+ với các ion (nằm trong kết tủa và có thể cả trong dung dịch) và trong dung dịch nên ta có :
 
 Khi cho dung dịch Y phản ứng với dung dịch NaOH thì chỉ có ion phản ứng với ion tạo ra .
 
-+  ***+*H2O 
++  **+*H2O 
 
 Suy ra : 
 
@@ -133,7 +133,7 @@ Với cách 1 : Viết nhiều phản ứng (mặc dù đã sử dụng phản �
 
 Với cách 2 : Mối liên quan về số mol các chất được tính toán trực tiếp dựa vào sự bảo toàn điện tích nên không phải viết phương trình phản ứng. 
 
-Ở cách 1, (*) được thiết lập dựa vào phản ứng ion rút gọn. Ở cách 2, (*) được thiết lập dựa vào bảo toàn điện tích. Từ đó suy ra : ***Sử dụng phương trình ion rút gọn là đã gián tiếp sử dụng bảo toàn điện tích.***
+Ở cách 1, (*) được thiết lập dựa vào phản ứng ion rút gọn. Ở cách 2, (*) được thiết lập dựa vào bảo toàn điện tích. Từ đó suy ra : **Sử dụng phương trình ion rút gọn là đã gián tiếp sử dụng bảo toàn điện tích.**
 
 **c. Kết luận :**
 
@@ -179,7 +179,7 @@ Một số dạng bài tập thường dùng bảo toàn điện tích là :
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
-- [PP4 – BẢO TOÀN ĐIỆN TÍCH](/assets/docs/PP4-BAO-TOAN-DIEN-TICH.pdf)
+- [PP4 – BẢO TOÀN ĐIỆN TÍCH](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

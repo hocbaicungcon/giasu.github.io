@@ -74,7 +74,7 @@ Ancol etylic Etilen Andehit axetic Ancol etylic Axit axetic Đồng (II) axetat 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [ĐỀ 11 HK2 (chính thức)](/assets/docs/DE-11-HK2-chinh-thuc.doc)
+- [ĐỀ 11 HK2 (chính thức)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

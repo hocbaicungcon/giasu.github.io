@@ -133,7 +133,7 @@ Họ và tên thí sinh:………………………………………………�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề thi
 
-- [Đề HSG Hà Nội – vòng 1 (2011)](/assets/docs/De-HSG-Ha-Noi-vong-1-2011.docx)
+- [Đề HSG Hà Nội – vòng 1 (2011)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

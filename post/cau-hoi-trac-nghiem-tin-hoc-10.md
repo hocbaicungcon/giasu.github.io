@@ -61,7 +61,7 @@ A. Máy tính tính toán rất nhanh         
 
 B. Thiết bị số có thể lưu trữ lượng dữ liệu khổng lồ
 
-**C. Máy tính hoàn toàn có thể thay thế con người trong công việc
+**C. Máy tính hoàn toàn có thể thay thế con người trong công việc**
 D. Máy tính có khả năng làm việc tự động và chính xác
 
 Câu 2: Máy tính mới ra đời, người dùng máy tính phải lập trình bằng ngôn ngữ nào?
@@ -144,7 +144,7 @@ Câu 3: **Ghim một biểu tượng** trình ứng dụng từ trong danh sách
 
 A. Tìm kiếm biểu tượng cần ghim trong danh sách Start, sau đó nhấp chuột phải chọn Pin to Start. 
 
-**B. Tìm kiếm biểu tượng cần ghim trong danh sách Start, sau đó nhấp chuột phải chọn More -> chọn Pin to taskbar.
+**B. Tìm kiếm biểu tượng cần ghim trong danh sách Start, sau đó nhấp chuột phải chọn More -> chọn Pin to taskbar.**
 **C.** Tìm kiếm biểu tượng cần ghim trong thanh nhiệm vụ, sau đó nhấp chuột phải chọn Unpin to Start.      
 
 D. Tìm kiếm biểu tượng cần ghim trong thanh nhiệm vụ, sau đó nhấp chuột phải chọn More -> chọn Unpin to taskbar.
@@ -154,12 +154,12 @@ Câu 4: **Gỡ một biểu tượng** khỏi thanh nhiệm vụ
 A. Tìm kiếm biểu tượng cần gỡ trong thanh nhiệm vụ taskbar, sau đó nhấp chuột phải chọn **Pin to Start.
 B. Tìm kiếm biểu tượng cần gỡ trong thanh nhiệm vụ taskbar, sau đó nhấp chuột phải chọn More -> chọn Pin to taskbar.        
 
-**C.  Tìm kiếm biểu tượng cần  gỡ  trong  thanh nhiệm vụ  taskbar, sau đó nhấp chuột phải chọn Unpin From  Start .
+**C.  Tìm kiếm biểu tượng cần  gỡ  trong  thanh nhiệm vụ  taskbar, sau đó nhấp chuột phải chọn Unpin From  Start .**
 D. Tìm kiếm biểu tượng cần gỡ trong thanh nhiệm vụ taskbar, sau đó nhấp chuột phải chọn More -> chọn Unpin From taskbar.
 
 Câu 5: Khám phá hộp thoại Properties cho ta biết thông tin gì?
 
-**A. Tên, loại tệp tin, nội dung tệp in, kích thước, thư mục cha, vùng trống, thông tin truy cập, thông tin sửa đổi.
+**A. Tên, loại tệp tin, nội dung tệp in, kích thước, thư mục cha, vùng trống, thông tin truy cập, thông tin sửa đổi.**
 B. Không có gì cả
 
 C. Chỉ biết được kích thước tệp
@@ -212,7 +212,7 @@ A. Máy chấm công nhận diện khuôn mặt
 
 B. Robot lau nhà, hút bụi thông minh
 
-**C. Bếp từ
+**C. Bếp từ**
 D. Điện thoại thông minh
 
 Câu 8: Thế giới và và đang diễn ra mấy cuộc Cách mạng công nghiệp?
@@ -227,7 +227,7 @@ Câu 10: Thiết bị nào sau đây **không phải** là thiết bị thông m
 
       A. Đồng hồ kết nối bluetooth
 
-      **B. Đồng hồ lịch vạn niên
+      **B. Đồng hồ lịch vạn niên**
       C. Điện thoại di động
 
       D. Camera kết nối Internet
@@ -244,7 +244,7 @@ Câu 12:  Hãy chọn phát biểu đúng?
 
       C. Tin học chỉ có ứng dụng trong giao tiếp cộng đồng.
 
-      **D. Tin học có ứng dụng trong hầu hết các lĩnh vực của xã hội.
+      **D. Tin học có ứng dụng trong hầu hết các lĩnh vực của xã hội.**
 ## Câu hỏi trắc nghiệm Tin học 10 Chủ đề B: Mạng máy tính và internet internet hôm nay và ngày mai
 
 ### Bài 1: Mạng máy tính với cuộc sống
@@ -257,14 +257,14 @@ B. Dùng USB để sao chép tệp từ máy tính lại mà không kiểm tra b
 
 C. Nháy chuột vào một quảng cáo hấp dẫn rồi được chuyển tới một trang web lạ
 
-**D. Không cập nhập phiên bản Microsoft Office mới
+**D. Không cập nhập phiên bản Microsoft Office mới**
 Câu 2: Trước kia một dịch vụ văn bản hoặc lời nói từ một ngôn ngữ này sang một ngôn ngữ khác là điều khó khăn. Ngày nay, với sự giúp đỡ của phần mềm dịch tự động có thể dễ dàng thực hiện việc đó. Em xếp phần mềm đó vào nhóm nào sau đây?
 
          A. Nâng cao chất lượng cuộc sống
 
          B. Mở rộng phương thức làm việc và nâng cao chất lượng công việc
 
-         **C. Mở rộng phương thức học tập
+         **C. Mở rộng phương thức học tập**
  D. Không thuộc nhóm nào
 
 Câu 3: Chọn phản ánh tác động tích cực của mạng máy tính?
@@ -273,7 +273,7 @@ A. Khi làm bài tập về nhà, đầu tiên An vào mạng để tìm kiếm 
 
 B. Học trực tuyến làm một số học sinh chay lười và có một số thói xấu
 
-**C. Nhờ có hình thức thanh toán trực tuyến nên ngồi tại nhà người dân vẫn có thể mua được vé máy bay mà không cần đến tận nơi đại lí bán vé
+**C. Nhờ có hình thức thanh toán trực tuyến nên ngồi tại nhà người dân vẫn có thể mua được vé máy bay mà không cần đến tận nơi đại lí bán vé**
 D. Người bị lộ thông tin cá nhân rất có thể bị đánh cắp tiền trong tài khoản ngân hàng
 
 Câu 4: Những lợi ích nào sau đây không do mạng Internet mang lại??
@@ -283,7 +283,7 @@ Câu 4: Những lợi ích nào sau đây không do mạng Internet mang lại??
      B.Mở rộng phương thức làm việc và nâng cao chất lượng công việc     **C. Nâng cao chất lượng cuộc sống D. Đến thư viện đọc sách nhiều hơn
 Câu 5: Nhờ mạng máy tính mà Các nguồn học liệu mở cung cấp cho người học bài giảng, tài liệu tham khảo, bài tập, thí nghiệm ảo, bài kiểm tra phong phú. Đó là mở rộng phương thức gì?
 
-**A. Mở rộng phương thức học tập
+**A. Mở rộng phương thức học tập**
 B.Mở rộng phương phương tiện và hình thức giải trí như xem ti vi, chơi game  
 
 C. Mở rộng phương thức làm việc và nâng cao chất lượng công việc**
@@ -299,7 +299,7 @@ Câu 7: Trong các phần mềm sau phần mềm  nào là phần mềm diệt 
 1. Unikey                  B. WINDOWS 7            C. Microsoft  office        **D.  AntiVirus
 Câu 8: Internet đã đem lại một số thay đổi có tính ưu việt như Giúp giao lưu với bạn bè người thân và cộng đồng qua mạng xã hội, trò chuyện qua mạng, phát trực tiếp trên mạng, … Vậy Inertnet đã góp phần?
 
-         **A. Nâng cao chất lượng cuộc sống
+         **A. Nâng cao chất lượng cuộc sống**
          B. Mở rộng phương thức làm việc và nâng cao chất lượng công việc
 
          C. Mở rộng phương thức học tập
@@ -312,13 +312,13 @@ A. Chỉ sử dụng các phần mềm có nguồn gốc rõ ràng và trang web
 
 B. Thường xuyên cập nhật hệ điều hành, trình quyệt và phần mềm diệt virus
 
-**C. Sử dụng USB, thẻ nhớ, đĩa CD hay các thiết bị nhớ của người khác mà không dùng phần mềm diệt virus để kiểm tra những thiết bị đó trước khi sử dụng
+**C. Sử dụng USB, thẻ nhớ, đĩa CD hay các thiết bị nhớ của người khác mà không dùng phần mềm diệt virus để kiểm tra những thiết bị đó trước khi sử dụng**
 D. Không tò mò truy cập vào đường link lạ
 
-**Bài 2: Điện toán đám mây và internet vạn vật
+**Bài 2: Điện toán đám mây và internet vạn vật**
 Câu 1: Kết nối các máy tính trong phạm vi nhỏ như: tòa nhà, cơ quan, xí nghiệp…. Thuộc quyền sở hữu của một tổ chức. Đó là kết nối?
 
-**A. Mạng LAN
+**A. Mạng LAN**
 B. Internet
 
 C. Điện toán đám mây
@@ -329,7 +329,7 @@ Câu 2: Kết nối các máy tính trên toàn thế giới, Phải thuê bao 
 
 A. Mạng LAN
 
-**B. Internet
+**B. Internet**
 C. Điện toán đám mây
 
 D. Mạng WAN
@@ -340,7 +340,7 @@ A. Thiết bị số
 
 B. Internet
 
-**C. Điện toán đám mây
+**C. Điện toán đám mây**
 D. Mạng WAN
 
 Câu 4: Các công ty điện toán đám mây có sẵn nguồn tài nguyên to lớn (máy chủ, đường truyền và các phần mềm mạng). Sau đây tên nào là tên công ty điện toán đám mây?
@@ -349,7 +349,7 @@ Câu 4: Các công ty điện toán đám mây có sẵn nguồn tài nguyên to
 
 Câu 5: Thiết bị điện tử có khả năng tự động cảm nhận và giám sát những trạng thái của môi trường như: ánh sáng, nhiệt độ, độ ẩm. Đó là?
 
-**A. Cảm biến (Sensor)
+**A. Cảm biến (Sensor)**
 B. Máy tính
 
 C. Điện toán đám mây
@@ -360,7 +360,7 @@ Câu 6: Các thiết bị được gắn các cảm biến, được cài đặt
 
           A. Máy tính
 
-**B. Thiết bị thông minh
+**B. Thiết bị thông minh**
 C. Điện toán đám mây
 
 D. Bếp từ
@@ -371,7 +371,7 @@ A. Dịch vụ lưu trữ
 
 B. Dịch vụ thư tín điện tử
 
-**C.  Dịch vụ bảo trì phần cứng và phần mềm tại gia đình
+**C.  Dịch vụ bảo trì phần cứng và phần mềm tại gia đình**
 D. Dịch vụ cung cấp máy chủ
 
 Câu 8: Phát biểu nào sau đây về các thiết bị trong hệ thống IoTlad sai?
@@ -382,14 +382,14 @@ B. Được Trang bị trí tuệ nhân tạo (AI) để có khả năng tự th
 
 C. Được kết nối mạng Internet để phối hợp với nhau tạo thành hệ thống tự động
 
-         **D. Là những cảm biến được kết nối mạng với nhau tạo thành hệ thống
+         **D. Là những cảm biến được kết nối mạng với nhau tạo thành hệ thống**
 Câu 9: Điện thoại thông minh được kết nối với Internet bằng cách?
 
 A. Dịch vụ 3G, 4G, 5G
 
 B. Kết nối gián tiếp qua Wifi
 
-**C.  Bằng điện thoại bàn
+**C.  Bằng điện thoại bàn**
 D. Đáp A và B đúng
 
 Câu 10: Trong các dịch vụ sau, dịch vụ nào không là dịch vụ đám mây?
@@ -401,7 +401,7 @@ SMS là từ viết tắt của Short Message Services, hay dịch ra tiếng vi
 
 Câu 12: Mang Internet và Mạng LAN không có kết nối internet giống nhau ở chức năng nào?
 
-**A. trao đổi thông tin giữa các máy tính trong mạng
+**A. trao đổi thông tin giữa các máy tính trong mạng**
 B. tìm kiếm thông tin
 
 C. đăng hình lên mạng xã hội
@@ -420,7 +420,7 @@ B. Chỉ kết bạn với những người mà chúng ta quen biết trong đ�
 
 C. Cân nhắc trước khi chia sẻ hình ảnh, video clip hay thông tin trên mạng xã hội
 
-**D. Tất cả các phương án trên
+**D. Tất cả các phương án trên**
 Câu 2: Sóng wifi có tác động đến sức khỏe của những đối tượng nào?
 
 A. Chỉ ảnh hưởng đến sức khỏe của trẻ em
@@ -429,7 +429,7 @@ B. Chỉ ảnh hưởng đến sức khỏe của trẻ em và người già
 
 C. Chỉ ảnh hưởng đến người thường xuyên làm việc với máy tính
 
-**D. Có thể ảnh hưởng đến sức khỏe của tất cả mọi đối tượng
+**D. Có thể ảnh hưởng đến sức khỏe của tất cả mọi đối tượng**
 Trả lời: Có thể ảnh hưởng đến sức khỏe của tất cả mọi đối tượng Với sự phổ biến của công nghệ, sóng wifi xuất hiện ở mọi nơi, từ công sở, tới các quán cà phê, đa phần các hộ gia đình cũng trang bị các thiết bị phát sóng mạng không dây, thậm chí wifi còn được phủ sóng toàn thành phố. Từ sáng đến tối, chúng ta đều tiếp xúc với sóng wifi, và tất cả mọi đối tượng đều có khả năng bị ảnh hưởng đến sức khỏe. Một số hậu quả có thể kể đến như: – Mất ngủ do tiếp xúc với bức xạ từ wifi trong thời gian dài – Ảnh hưởng đến sự phát triển của thai nhi và trẻ em do tác động đến sự phát triển, tăng trưởng của tế bào – Suy giảm hoạt động của não bộ, gây mất tập trung, giảm trí nhớ ở người lớn nếu tiếp xúc quá lâu – Ảnh hưởng đến khả năng sinh sản do tần số wifi làm giảm khả năng di chuyển của tinh trùng và gây ra sự phân mảnh DNA
 
 Câu 3: Các biện pháp hạn chế tác động có hại của sóng wifi?
@@ -440,7 +440,7 @@ B. Đặt thiết bị phát sóng ở xa nơi sinh hoạt thường xuyên củ
 
 C. Sử dụng dây cáp mạng thay cho bộ phát wifi
 
-**D. Tất cả các phương án trên
+**D. Tất cả các phương án trên**
 Trả lời:  Tất cả các phương án trên Để hạn chế tác động có hại của sóng wifi lên sức khỏe con người, chúng ta nên đặt thiết bị phát sóng wifi ở xa khu vực thường xuyên sinh hoạt như phòng khách, phòng ngủ; đặt cục phát sóng ở trên cao và đặc biệt cách xa chỗ ngủ của trẻ em. Sử dụng dây cáp mạng kết nối trực tiếp vào máy tính ngoài hạn chế bớt sóng điện từ do wifi phát ra mà còn giúp tăng tốc độ kết nối mạng trên máy tính. Ngoài ra, trước khi đi ngủ nên tắt wifi và chuyển điện thoại sang chế độ máy bay, để xa giường ngủ để giảm tác hại của sóng wifi và sóng điện từ.
 
 Câu 4/ Đâu là **Không Phải** hạn chế của mạng xã hội?
@@ -455,7 +455,7 @@ Câu 4/ Đâu là **Không Phải** hạn chế của mạng xã hội?
 
 Câu 5/ Hành vi nào không phải về sự vi phạm pháp luật, vi phạm đạo đức hoặc thiếu văn hóa thường gặp trong giao tiếp qua mạng?
 
-**A.  Qua mạng xã hội, An thông báo rủ các bạn tới chúc mừng sinh nhật An tại nhà.
+**A.  Qua mạng xã hội, An thông báo rủ các bạn tới chúc mừng sinh nhật An tại nhà.**
 B.  Tự ý đăng hình ảnh của một người lên mạng xã hội và có những bình luận không tích cực về người đó.
 
 C.  Đưa các thông tin sai sự thật, bịa đặt thông tin rồi đi tuyên truyền cho mọi người.
@@ -468,14 +468,14 @@ Câu 1/ Diễn viên T đăng thông tin sai sự thật trên mạng xã hội 
 
 A. Sự vi phạm luật sở hữu trí tuệ?
 
-**B. Tính hợp pháp trong chia sẻ thông tin số
+**B. Tính hợp pháp trong chia sẻ thông tin số**
 C. Tính an toàn trong chia sẻ thông tin số
 
 D. Tính hợp pháp trong cung cấp sản phẩm số
 
 Câu 2/  Một nhân viên thiết kế đã tự bẻ khóa phần mềm chỉnh sửa ảnh để sử dụng không phải trả phí bản quyền để sửa ảnh trong công việc hàng ngày ở cơ quan. Hành vi đó đã vi phạm mãng nào sau đây?
 
-**A. Sự vi phạm luật sở hữu trí tuệ?
+**A. Sự vi phạm luật sở hữu trí tuệ?**
 B. Tính hợp pháp trong chia sẻ thông tin số
 
 C. Tính an toàn trong chia sẻ thông tin số
@@ -488,7 +488,7 @@ A. Sự vi phạm luật sở hữu trí tuệ?
 
 B. Tính hợp pháp trong chia sẻ thông tin số
 
-**C. Tính an toàn trong chia sẻ thông tin số
+**C. Tính an toàn trong chia sẻ thông tin số**
 D. Tính hợp pháp trong cung cấp sản phẩm số
 
 Câu 4/ Những biện pháp dưới đây, biện pháp nào không phải giúp chia sẻ thông tin một cách an toàn trong môi trường số ?
@@ -499,7 +499,7 @@ Câu 4/ Những biện pháp dưới đây, biện pháp nào không phải giú
 
    C. Trên mạng xã hội đặt những thông tin cá nhân ở chế độ Ẩn
 
-**   D. Nên gửi những thông tin quan trọng qua mạng cho mọi người biết
+**   D. Nên gửi những thông tin quan trọng qua mạng cho mọi người biết**
 ## Câu hỏi trắc nghiệm Tin học 10 ỨNG DỤNG TIN HỌC. ICT – PHẦN MỀM THIẾT KẾ ĐỒ HỌA
 
 ### Bài 1: Tạo văn bản tô màu và ghép ảnh
@@ -516,7 +516,7 @@ A.  chỉnh sửa ảnh, làm video, phim hoạt hình, …
 
            B. tạo ra sản phẩm logo, banner, topic quảng cáo, băng rôn, áp phích, poster và thiệp chúc mừng.
 
-**C. Tạo phim điện ảnh
+**C. Tạo phim điện ảnh**
 D. trợ giúp một cách hiệu quả cả chỉnh sửa ảnh và thiết kế đồ họa dựa trên đồ họa raster.
 
 Câu 3/ Bảng chứa các công cụ thiết kế và chỉnh sửa như: tạo văn bản, chọn, cắt, xóa, vẽ, tô màu và biến đổi hình. Đó là ?
@@ -603,7 +603,7 @@ B. File / New hoặc Tổ hợp phím Ctrl + N
 
 C. File / File\Close View hoặc Tổ hợp phím Ctrl + W
 
-**D.  File / Save hoặc  Tổ hợp phím  Ctrl + S
+**D.  File / Save hoặc  Tổ hợp phím  Ctrl + S**
 Câu 19/ Trong khi làm việc với GIMP để lưu ảnh đích đã tạo xong, ta dùng lệnh?
 
 A. File\Open As Layers                              B. File\Open             
@@ -634,7 +634,7 @@ A.  xóa lớp ảnh                              
 C. di chuyển lớp ảnh                        **D. để ẩn (hoặc hiện) lớp
 Câu 5. Tại sao ta cần sử dụng vùng chọn?
 
-**A. giúp xử lý riêng biệt một vùng nào đó trên ảnh, ví dụ như: tô màu, vẽ hình.
+**A. giúp xử lý riêng biệt một vùng nào đó trên ảnh, ví dụ như: tô màu, vẽ hình.**
 B. giúp di chuyển lớp ảnh
 
 C. hợp nhất các lớp ảnh                  
@@ -649,7 +649,7 @@ B. Sử dụng Ellipse Select (hình Elip)                   
 
 C. Sử dụng Paths (đường dẫn)                  
 
-**D. Sử dụng Move
+**D. Sử dụng Move**
 Câu 7. Trong hình dưới đây có tất cả bao nhiêu lớp
 
 A.  1               B. 3                 **C. 4**                D. 5
@@ -698,11 +698,11 @@ A. Sử dụng Rectangle Select (hình chữ nhật)              �
 
 B. Sử dụng Ellipse Select (hình Elip)                   
 
-**C. Sử dụng  Paths  (đường dẫn)
+**C. Sử dụng  Paths  (đường dẫn)**
 D. Sử dụng Move    
 
 Câu15/ **Công cụ Paths có 2 chế độ , Đó là gì?
-**A. C hế độ thiết kế (Design) và chế độ chỉnh sửa (Edit) đường dẫn.
+**A. C hế độ thiết kế (Design) và chế độ chỉnh sửa (Edit) đường dẫn.**
 B. Tô màu gradient và Tô màu thuần nhất
 
 C. Vẽ Rectangle Select (hình chữ nhật) và Ellipse Select (hình Elip)
@@ -717,7 +717,7 @@ B. Nháy chuột vào nút lệnh Selection From Path
 
 C. Nhấn phím Enter
 
-**D. Dùng lệnh Select\To Path
+**D. Dùng lệnh Select\To Path**
 Câu17/ Để chuyển một vùng chọn thành một đường dẫn, ta thực hiện?
 
 **A.** Dùng lệnh Select\From Path
@@ -726,10 +726,10 @@ B. Nháy chuột vào nút lệnh Selection From Path
 
 C. Nhấn phím Enter
 
-**D. Dùng lệnh Select\To Path
+**D. Dùng lệnh Select\To Path**
 ### Bài 3: Tách ảnh và thiết kế đồ họa với kênh alpha
 
-**Câu 1.** Thực hành với Kênh alpha*.* Cách tách ảnh phổ biến bằng công cụ **Free Select.** Có nghĩa là**?
+**Câu 1.** Thực hành với Kênh alpha*.* Cách tách ảnh phổ biến bằng công cụ **Free Select.** Có nghĩa là**?**
 **A.  Công cụ chọn tự do**                  B. Công cụ chọn màu bắt buộc                 
 
 C. Không có tác dụng gì                  D. Công cụ tô màu

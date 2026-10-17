@@ -181,10 +181,10 @@ thu được m gam kim loại và hỗn hợp khí có tỉ khối so với H2 l
 **====HẾT====
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 12 – Nguyen Khuyen – da](/assets/docs/Hoa-12-Nguyen-Khuyen-da.docx)
-- [Hoa 12 – Nguyen Khuyen – de](/assets/docs/Hoa-12-Nguyen-Khuyen-de.doc)
-- [Nguyễn Khuyến deda hoa 12 Dap an](/assets/docs/Nguyen-Khuyen-deda-hoa-12-Dap-an.xls)
-- [Nguyễn Khuyến deda hoa 12 MĐ401](/assets/docs/Nguyen-Khuyen-deda-hoa-12-MD401.doc)
+- [Hoa 12 – Nguyen Khuyen – da](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoa 12 – Nguyen Khuyen – de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Nguyễn Khuyến deda hoa 12 Dap an](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Nguyễn Khuyến deda hoa 12 MĐ401](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -16,20 +16,20 @@ grade: 10
 | SỞ GIÁO DỤC VÀ ĐÀO TẠO HÀ NỘI TRƯỜNG THPT NGUYỄN VĂN CỪ        ĐỀ CHÍNH THỨC | KÌ THI CHỌN HỌC SINH GIỎI CẤP TRƯỜNG LỚP 10 NĂM HỌC 2023 – 2024                                        Môn thi: HÓA Ngày thi: 7/1/2024 Thời gian làm bài: 90 phút |
 | --- | --- |
 
-***– Cho biết khối lượng nguyên tử (theo amu) của các nguyên tố:
+**– Cho biết khối lượng nguyên tử (theo amu) của các nguyên tố:**
 H = 1; Mg = 24; C = 12; O = 16; N = 14; Na = 23; Si = 28; P = 31; S = 32; Cl = 35,5; K = 39; Ca = 40; Al = 27 ; Cr = 52; Mn = 55; Fe = 56; Cu = 64; Zn = 65; Br = 80; Ag = 108; I = 127; Ba = 137; Hg = 201.
 
-**– *Cho biết số hiệu nguyên tử của một số nguyên tố:***1H; 6C; 7N; 8O; 9F; 10Ne; 11Na; 12Mg; 13Al; 14Si; 15P; 16S; 17Cl; 18Ar; 19K; 20Ca.
+**– *Cho biết số hiệu nguyên tử của một số nguyên tố:**1H; 6C; 7N; 8O; 9F; 10Ne; 11Na; 12Mg; 13Al; 14Si; 15P; 16S; 17Cl; 18Ar; 19K; 20Ca.
 
 **Bài I** (6 điểm)
 
-***1. (2 điểm)***  Nguyên tố X được dùng để chế tạo hợp kim nhẹ, bền, dùng trong nhiều lĩnh vực: hàng không, ô tô, xây dựng, hàng tiêu dùng,… Nguyên tố Y ở dạng YO43-, đóng vai trò quan trọng trong các phân tử sinh học như DNA và RNA.Các tế bào sống sử dụng YO43-,để vận chuyển năng lượng. Nguyên tử của nguyên tố X có cấu hình electron kết thúc ở phân lớp 3p1. Nguyên tử của nguyên tố Y có cấu hình electron kết thúc ở phân lớp 3p3.
+**1. (2 điểm)**  Nguyên tố X được dùng để chế tạo hợp kim nhẹ, bền, dùng trong nhiều lĩnh vực: hàng không, ô tô, xây dựng, hàng tiêu dùng,… Nguyên tố Y ở dạng YO43-, đóng vai trò quan trọng trong các phân tử sinh học như DNA và RNA.Các tế bào sống sử dụng YO43-,để vận chuyển năng lượng. Nguyên tử của nguyên tố X có cấu hình electron kết thúc ở phân lớp 3p1. Nguyên tử của nguyên tố Y có cấu hình electron kết thúc ở phân lớp 3p3.
 
 a.Viết cấu hình electron nguyên tử và sự phân bố electron vào các AO của X và Y.
 
 b.Nguyên tố X và Y có tính kim loại hay phi kim? Tại sao?
 
-***2. (2 điểm)*** Trong thí nghiệm của Rutherford, ông sử dụng các hạt alpha (ion He2+, kí hiệu là ????) bắn vào lá vàng mỏng, xung quanh đặt màn huỳnh quang để quan sát sự chuyển động của các hạt ????. Kết quả thấy rằng:
+**2. (2 điểm)** Trong thí nghiệm của Rutherford, ông sử dụng các hạt alpha (ion He2+, kí hiệu là ????) bắn vào lá vàng mỏng, xung quanh đặt màn huỳnh quang để quan sát sự chuyển động của các hạt ????. Kết quả thấy rằng:
 
       – Hầu hết các hạt ???? xuyên thẳng qua lá vàng.
 
@@ -45,7 +45,7 @@ b.Nguyên tố X và Y có tính kim loại hay phi kim? Tại sao?
 
 3. Qua thí nghiệm có thể nhận xét gì về cấu tạo của nguyên tử.
 
-***3. (2 điểm)*** Một nguyên tố R có 3 đồng vị X, Y, Z, tổng số hạt cơ bản (e, p, n) của 3 đồng vị bằng 129. Số neutron của đồng vị X bằng số proton , số neutron của đồng vị Z hơn đồng vị Y 1 hạt.
+**3. (2 điểm)** Một nguyên tố R có 3 đồng vị X, Y, Z, tổng số hạt cơ bản (e, p, n) của 3 đồng vị bằng 129. Số neutron của đồng vị X bằng số proton , số neutron của đồng vị Z hơn đồng vị Y 1 hạt.
 
       a. Xác định số khối của 3 đồng vị .
 
@@ -53,7 +53,7 @@ b.Nguyên tố X và Y có tính kim loại hay phi kim? Tại sao?
 
 **Bài II** (4 điểm)
 
-***1. ( 2 điểm )*** Cho các nguyên tố A, B, X, Y biết: 
+**1. ( 2 điểm )** Cho các nguyên tố A, B, X, Y biết: 
 
 – Hai nguyên tố A, B đứng kế tiếp nhau trong một chu kì của bảng tuần hoàn, có tổng số điện tích hạt nhân là  hạt. 
 
@@ -63,7 +63,7 @@ a. Xác định các nguyên tố A, B, X, Y
 
 b. So sánh bán kính nguyên tử và các ion sau: A2-, B‑, X2+, X và Y2+
 
-***2/ (2 điểm)*** Trong công thức oxit cao nhất của nguyên tố M (nằm ở nhóm A) oxi chiếm 72,73% khối lượng .
+**2/ (2 điểm)** Trong công thức oxit cao nhất của nguyên tố M (nằm ở nhóm A) oxi chiếm 72,73% khối lượng .
 
 1. Xác định công thức phân tử của oxit trên.
 
@@ -71,9 +71,9 @@ b. So sánh bán kính nguyên tử và các ion sau: A2-, B‑, X2+, X và Y2+
 
 **Bài III**(6 điểm)
 
-**1. *(2 điểm)***Viết công thức Lewis, công thức cấu tạo, của các phân tử và ion sau: H2S, NF3, HCHO,  H2CO3.
+**1. *(2 điểm)**Viết công thức Lewis, công thức cấu tạo, của các phân tử và ion sau: H2S, NF3, HCHO,  H2CO3.
 
-**2. *(2 điểm)***Giải thích hiện tượng sau:
+**2. *(2 điểm)**Giải thích hiện tượng sau:
 
 a. Nước đá lại nhẹ hơn nước lỏng.
 
@@ -85,11 +85,11 @@ c.Sự biến đổi về nhiệt độ nóng chảy của dãy hydrogen halide 
 | --- | --- | --- | --- | --- |
 | Nhiệt độ nóng chảy (0C) | -83,1 | -114,8 | -88,5 | -50,8 |
 
-**3. *(2 điểm)***Nguyên tử Fe ở 20 °C có khối lượng riêng là 7,87 g/cm3. Với giả thiết này, tinh thể nguyên tử Fe là những hình cầu chiếm 75% thể tích tinh thể, phần còn lại là những khe rỗng giữa các quả cầu. Cho biết khối lượng nguyên tử của Fe là 55,847, Tính bán kính nguyên tử gần đúng của Fe.
+**3. *(2 điểm)**Nguyên tử Fe ở 20 °C có khối lượng riêng là 7,87 g/cm3. Với giả thiết này, tinh thể nguyên tử Fe là những hình cầu chiếm 75% thể tích tinh thể, phần còn lại là những khe rỗng giữa các quả cầu. Cho biết khối lượng nguyên tử của Fe là 55,847, Tính bán kính nguyên tử gần đúng của Fe.
 
 **Bài IV** (4 điểm)
 
-**1. *(2 điểm)*** Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron. Chỉ rõ chất khử và chất oxi hóa.
+**1. *(2 điểm)** Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron. Chỉ rõ chất khử và chất oxi hóa.
 
 a) NaI + H2SO4 (đặc, nóng)    H2S + I2 + Na2SO4 + H2O
 
@@ -99,7 +99,7 @@ b) HCHO + AgNO3 + NH3 + H2O    (NH4)2CO3 + Ag + NH4NO3
 
 - FeSO4 + NaNO3 +  NaHSO4   Fe2(SO4)3 + NO + Na2SO4 + H2O
 
-**2.*(2 điểm)***  Có nhiều vụ tai nạn giao thông xảy ra do người lái xe uống rượu. Theo luật định, hàm lượng ethanol trong máu người lái xe không vượt quá 0,02% theo khối lượng. Để xác định hàm lượng ethanol trong máu của người lái xe cần chuẩn độ ethanol bằng K2Cr2O7 trong môi trường acid. Khi đó Cr+6 bị khử thành Cr+3, ethanol (C2H5OH) bị oxi hóa thành acetaldehyde (CH3CHO).
+**2.*(2 điểm)**  Có nhiều vụ tai nạn giao thông xảy ra do người lái xe uống rượu. Theo luật định, hàm lượng ethanol trong máu người lái xe không vượt quá 0,02% theo khối lượng. Để xác định hàm lượng ethanol trong máu của người lái xe cần chuẩn độ ethanol bằng K2Cr2O7 trong môi trường acid. Khi đó Cr+6 bị khử thành Cr+3, ethanol (C2H5OH) bị oxi hóa thành acetaldehyde (CH3CHO).
 
       (a) Hãy viết phương trình hóa học của phản ứng.
 
@@ -107,8 +107,8 @@ b) HCHO + AgNO3 + NH3 + H2O    (NH4)2CO3 + Ag + NH4NO3
 
       Giả sử rằng trong thí nghiệm trên chỉ có ethanol tác dụng với K2Cr2O7.
 
-**————-HẾT————-
-**ĐÁP ÁN
+**————-HẾT————-**
+**ĐÁP ÁN**
 | Câu | Nội dung | Điểm |
 | --- | --- | --- |
 | I.1 2đ | a.Nguyên tử của nguyên tố X có cấu hình electron kết thúc ở phân lớp 3p1=> Al Nguyên tử của nguyên tố Y có cấu hình electron kết thúc ở phân lớp 3p3=> P cấu hình electron nguyên tử và sự phân bố electron vào các AO của X cấu hình electron nguyên tử và sự phân bố electron vào các AO của Y. b.Nguyên tử X là kim loại vì có 3 electron ở lớp ngoài cùng Nguyên tử Y là phi kim vì có 5 electron ở lớp ngoài cùng   | 0,25đ 0,25đ 0,25đ 0,25đ   0,5đ   0,5đ |
@@ -130,7 +130,7 @@ b) HCHO + AgNO3 + NH3 + H2O    (NH4)2CO3 + Ag + NH4NO3
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC](/assets/docs/2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-NGUYEN-VAN-CU-HA-NOI-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -13,9 +13,9 @@ tags:
 grade: 10
 ---
 
-**Bài 22: HYDROGEN HALIDE. MUỐI HALIDE
-**I. Mục tiêu
-**1. Kiến thức
+**Bài 22: HYDROGEN HALIDE. MUỐI HALIDE**
+**I. Mục tiêu**
+**1. Kiến thức**
 – Nhận xét và giải thích được xu hướng biến dổi nhiệt độ sôi của các hydrogen halide từ HCl tới HI. Giải thích được sự bất thường về nhiệt độ sôi của HF so với HX khác.
 
 – Trình bày được xu hướng biến đổi tính acid của dãy hydrohalic acid.
@@ -26,14 +26,14 @@ grade: 10
 
 – Nêu được một số ứng dụng của một số hydrogen halide.
 
-**2. Năng lực:
-**2.1.  Năng lực chung:
+**2. Năng lực:**
+**2.1.  Năng lực chung:**
 *–**Năng lực tự chủ và tự học**:* Kĩ năng tìm kiếm thông tin trong SGK, quan sát hình ảnh về mô hình liên kết HX; Vẽ biểu độ hình cột  nhiệt độ sội của hydrogen halide HX.
 
 *–**Năng lực giao tiếp và hợp tác**:*Làm việc nhóm giải thích được sự bất thường nhiệt sôi HF so với các HX khác.
 
 *–**Năng lực giải quyết vấn đề và sáng tạo**:
-**2.2. Năng lực hóa học:
+**2.2. Năng lực hóa học:**
 *a. Nhận thức hoá học: Học sinh đạt được các yêu cầu sau:
 Trình bày được:
 
@@ -48,12 +48,12 @@ Trình bày được:
 *b. Tìm hiểu tự nhiên dưới góc độ hóa học* được thực hiện thông qua các hoạt động: Thảo luận, quan sát thí nghiệm nhìn ra được hiện tượng thí nghiệm.
 
 *c. Vận dụng kiến thức, kĩ năng đã học để giải thích được* sự bất thường về nhiệt độ sôi của HF so với HX khác**.
-**3. Phẩm chất:
+**3. Phẩm chất:**
 – Chăm chỉ, tự tìm tòi thông tin trong SGK về ứng dụng của hydrogen halide; Vai trò và cách tinh chế muối ăn.
 
 – HS có trách nhiệm trong việc hoạt động nhóm, hoàn thành các nội dung được giao.
 
-**II. Thiết bị dạy học và học liệu
+**II. Thiết bị dạy học và học liệu**
          Hóa chất: Dung dịch HCl  loãng, dung dịch: AgNO3, NaF, NaBr, NaI;  Zn dạng hạt, Cu dạng lá, muối NaHCO3 rắn.
 
 Dụng cụ: thìa thủy tinh, ống nghiệm, pipet…
@@ -69,8 +69,8 @@ Dụng cụ: thìa thủy tinh, ống nghiệm, pipet…
 | 03 |
 | 04 |
 
-**III. Tiến trình dạy học
-**1. Hoạt động 1: Khởi động
+**III. Tiến trình dạy học**
+**1. Hoạt động 1: Khởi động**
           a) Mục tiêu: Thông qua việc ứng dụng của HCl trong thực tế giúp đặt ra câu hỏi Dựa vào tính chất gì của HCl mà có ứng dụng như vậy?          
 
           b) Nội dung: GV giới thiệu về một số ứng dụng của HCl: Hydrochloric acid được sử dụng rộng rãi trong sản xuất, điển hình là dùng để đánh sạch bề mặt kim loại trước khi gia công, sơn, hàn, mạ điện… Trong công đoạn này, thép được đưa qua các bể chứa dung dịch HCl(được gọi là để Picking) để tẩy bỏ lớp rỉ sét, sau đó rửa sạch bằng nước trước khi qua các công đoạn tiếp theo. Vậy các ứng dụng trên dựa vào tính chất quan trọng của hydrochloric acid?
@@ -79,7 +79,7 @@ c) Sản phẩm: Hs dựa vào ứng dụng đưa ra dự đoán của bản th�
 
 d) Tổ chức thực hiện: HS làm việc theo bàn, GV gợi ý, hỗ trợ HS.
 
-**2. Hoạt động 2: Hình thành kiến thức mới
+**2. Hoạt động 2: Hình thành kiến thức mới**
 | Hoạt động 1: Cấu tạo phân tử Mục tiêu:  – HS viết được CTCT, CTPT của HX.  – Rút ra nhận xét về sự biến đổi về năng lượng liên kết và độ dài liên kết của HX. |
 | --- |
 | Hoạt động của GV và HS |
@@ -109,7 +109,7 @@ d) Tổ chức thực hiện: HS làm việc theo bàn, GV gợi ý, hỗ trợ 
 | Giao nhiệm vụ học  Gv yêu cầu HS tìm hiểu vai trò và cách tinh chế muối ăn trong SGK.   Thực hiện nhiệm vụ:  HS hoạt động cặp đôi đọc sgk tìm hiểu vai trò và cách tinh chế muối ăn. Báo cáo, thảo luận: GV gọi HS trình bày. HS-GV: nhận xét, bổ sung. Kết luận, nhận định: GV chốt lại kiến thức . | 3. Muối ăn a) Vai trò của muối ăn.   Trong cơ thể sống muối ăn có vai trò quan trọng trong việc cân bằng chất điện giải, truyền dẫn xung điện thần kinh… Trong đời sống, muối ăn được dùng để bảo quản và chế biến thực phẩm. Trong y học, muối ăn dùng để sản xuất nước muối sinh lí, thuốc nhỏ mắt, dịch truyền tĩnh mạch. Trong công nghiệp muối ăn là nguyên liệu để sản xuất xút, chlorine… b) Tinh chế muối ăn. Muối ăn thường được sản xuất từ nước biển bằng phương pháp kết tinh. Để đạt độ tinh khiết cao sử dụng trong y học, muối ăn thô cần được kết tinh lại loại bỏ tạp chất như muối magnesium, calcium. |
 |  |  |
 
-**3. Hoạt động 3: Luyện tập
+**3. Hoạt động 3: Luyện tập**
           a) Mục tiêu: Củng cố lại phần kiến thức đã học về hydrogen halide và muối halide.
 
    b) Nội dung: GV đưa ra các bài tập cụ thể, gọi HS lên làm và chữa lại.
@@ -151,7 +151,7 @@ B. Độ bền liên kết giảm dần.                    
 **Câu 1:** B      Câu 2: B        Câu 3: A        Câu 4: B   Câu 5:D   Câu 6: A   Câu 7: A
  *d) Tổ chức thực hiện:* HS làm việc cá nhân.
 
-**4. Hoạt động 4: Vận dụng
+**4. Hoạt động 4: Vận dụng**
           **a) Mục tiêu:** giúp HS vận dụng kiến thức đã được học trong bài để giải quyết các câu hỏi, nội dung gắn liền với thực tiễn và mở rộng thêm kiến thức của HS .
 
           **b) Nội dung:** GV đưa ra câu hỏi, HS suy nghĩ trả lời theo cặp hoặc cá nhân.
@@ -178,7 +178,7 @@ b) Khối lượng muối ăn cần dùng khoảng 9 gam.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [Bai-22-Pham-Thi-Huong-Hydrogen-Halide-Muoi-Halide-KNTT](/assets/docs/Bai-22-Pham-Thi-Huong-Hydrogen-Halide-Muoi-Halide-KNTT.docx)
+- [Bai-22-Pham-Thi-Huong-Hydrogen-Halide-Muoi-Halide-KNTT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 - 
 

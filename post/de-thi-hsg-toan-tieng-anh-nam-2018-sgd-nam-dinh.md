@@ -384,4 +384,4 @@ Let $a,\,\,b,\,\,c$ be the real numbers that satisfy the following conditions $\
 Prove that ${a^2} + {b^2} + {c^2} \leqslant 38.$
 
 **———– THE END ———-
-Tải đề thi tại đây: [De Toan tieng Anh 2018](/assets/docs/De-Toan-tieng-Anh-2018.pdf)
+Tải đề thi tại đây: [De Toan tieng Anh 2018](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

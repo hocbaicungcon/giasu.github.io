@@ -140,7 +140,7 @@ Họ tên và chữ kí của cán bộ coi thi số 1: Họ tên và chữ kí 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [3.-HDC-HSG-Hoa-10-CUM-HD](/assets/docs/3.-HDC-HSG-Hoa-10-CUM-HD-giasu.ai.vn.pdf)
+- [3.-HDC-HSG-Hoa-10-CUM-HD](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

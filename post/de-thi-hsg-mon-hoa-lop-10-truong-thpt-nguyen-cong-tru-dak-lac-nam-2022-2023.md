@@ -104,7 +104,7 @@ HCl (k) + aq  HCl (dd)                            �
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa_10_THPT-Nguyen-Cong-Tru](/assets/docs/Hoa_10_THPT-Nguyen-Cong-Tru.docx)
+- [Hoa_10_THPT-Nguyen-Cong-Tru](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

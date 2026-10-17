@@ -26,4 +26,4 @@ CHỦ ĐỀ 5. ỨNG DỤNG TÍCH PHÂN TRONG THỰC TIỄN.
 
 ## Download Bài tập tích phân Toán 12 Cánh Diều
 
-- [cac-dang-bai-tap-tich-phan-toan-12-canh-dieu](/assets/docs/cac-dang-bai-tap-tich-phan-toan-12-canh-dieu.pdf)
+- [cac-dang-bai-tap-tich-phan-toan-12-canh-dieu](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

@@ -64,7 +64,7 @@ Tính hiệu suất phản ứng tạo ete của X, Y ?
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề và đáp án đề thi
 
-- [Vĩnh Phúc 2014-2015](/assets/docs/Vinh-Phuc-2014-2015-1.doc)
+- [Vĩnh Phúc 2014-2015](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

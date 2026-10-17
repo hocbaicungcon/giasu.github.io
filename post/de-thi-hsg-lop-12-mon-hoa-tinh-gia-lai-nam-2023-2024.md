@@ -103,7 +103,7 @@ Viết các phương trình phản ứng hóa học và tính % ancol bị oxi h
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-12-Gia-Lai-File-De-HDC](/assets/docs/2023-2024-HSG-12-Gia-Lai-File-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-12-Gia-Lai-File-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -12,27 +12,27 @@ tags:
 grade: 11
 ---
 
-**Sôû Giaùo Duïc Tp Hoà Chí Minh****ĐỀ KIỂM TRA HỌC KỲ II – MÔN HÓA HỌC*** ***
+**Sôû Giaùo Duïc Tp Hoà Chí Minh**ĐỀ KIỂM TRA HỌC KỲ II – MÔN HÓA HỌC** **
 
-**Tröôøng THPT Maïc Ñónh Chi********LỚP 1*** *1****– NĂM HỌC: 2017 – 2018**
+**Tröôøng THPT Maïc Ñónh Chi**LỚP 1** *1**– NĂM HỌC: 2017 – 2018**
 
 **ĐỀ CHÍNH THỨC**
 
  **Thôøi gian laøm baøi : 45 phuùt ( khoâng keå thôøi gian phaùt ñeà )**
 
-**Câu 1:****(*** *2****điểm*** *)** Viết phương trình hóa học thực hiện chuỗi biến hóa sau dạng công thức cấu tạo thu gọn (ghi rõ điều kiện phản ứng nếu có)
+**Câu 1:** (** *2**điểm** *)** Viết phương trình hóa học thực hiện chuỗi biến hóa sau dạng công thức cấu tạo thu gọn (ghi rõ điều kiện phản ứng nếu có)
 
 C6H12O6 C2H5OH  CH3-CHO CH3CH(OH)CN
 
 (CH3CO)2OCH3COOH  CH3COOH CH3COOCH(CH3)2
 
-**Câu****2*** *:********(*** *1,75****điểm)** Bằng phương pháp hoá học hãy phân biệt các lọ mất nhãn của những chất :
+**Câu 2:** *:**(** *1,75**điểm)** Bằng phương pháp hoá học hãy phân biệt các lọ mất nhãn của những chất :
 
 Glixerol (C3H8O3) , Andehit propionic (C2H5CHO) , Axit axetic, Ancol propylic , 
 
 Viết phương trình hóa học minh họa .
 
-**Câu 3****: (*** *2,5****điểm)** Dùng công thức cấu tạo thu gọn, viết phương trình hóa học minh họa (ghi rõ điều kiện, nếu có):
+**Câu 3:** : (** *2,5**điểm)** Dùng công thức cấu tạo thu gọn, viết phương trình hóa học minh họa (ghi rõ điều kiện, nếu có):**
 
 **a.** Phenol có tính axit  và tính axit yếu hơn axit cacbonic. 
 
@@ -40,13 +40,13 @@ Viết phương trình hóa học minh họa .
 
 vai trò của andehit benzoic trong mỗi phản ứng.
 
-**c****.** Đun nóng hỗn hợp gồm CH3OH và C2H5OH ( có mặt H2SO4 đặc) từ 1400C đến 1800C.
+**c**.** Đun nóng hỗn hợp gồm CH3OH và C2H5OH ( có mặt H2SO4 đặc) từ 1400C đến 1800C.**
 
-**Câu****4*** *:********(*** *0.75****điểm)**  Viết CTCT thu gọn và gọi tên các đồng phân mạch hở có cùng CTPT C3H6O biết các đồng phân đều có phản ứng với H2 tạo sản phẩm là ancol.
+**Câu 4:** *:**(** *0.75**điểm)**  Viết CTCT thu gọn và gọi tên các đồng phân mạch hở có cùng CTPT C3H6O biết các đồng phân đều có phản ứng với H2 tạo sản phẩm là ancol.
 
-**Câu****5*** *:********(****2*** *điểm)** Hỗn hợp X gồm axit propionic ( C2H5COOH)  và metanol (CH3OH) . 
+**Câu 5:** *:**(**2** *điểm)** Hỗn hợp X gồm axit propionic ( C2H5COOH)  và metanol (CH3OH) . 
 
-– Cho m gam X tác dụng với Na ( dư ) thấy thoát ra **5,****6** lít H2 ( đktc ) 
+– Cho m gam X tác dụng với Na ( dư ) thấy thoát ra **5,**6** lít H2 ( đktc ) 
 
 – Cho m gam X tác dụng với CaCO3 ( dư ) thấy thoát ra **3,36** lít CO2 ( đktc ) 
 
@@ -56,7 +56,7 @@ b) Đun nóng hỗn hợp X ( có mặt H2SO4 đặc). Tính khối lượng est
 
 ứng este hóa là **80** %
 
-**Câu****6*** *:********(****1*** *điểm) **Cho** 4,6******gam một ancol no, đơn chức (A) phản ứng với CuO nung nóng, thu được** 6,2** gam hỗn hợp X gồm anđehit, nước và ancol dư. Cho toàn bộ lượng hỗn hợp X phản ứng hoàn toàn với lượng dư dung dịch AgNO3 trong NH3, đun nóng, thu được m gam Ag.
+**Câu 6:** *:**(**1** *điểm) **Cho** 4,6**gam một ancol no, đơn chức (A) phản ứng với CuO nung nóng, thu được** 6,2** gam hỗn hợp X gồm anđehit, nước và ancol dư. Cho toàn bộ lượng hỗn hợp X phản ứng hoàn toàn với lượng dư dung dịch AgNO3 trong NH3, đun nóng, thu được m gam Ag.
 
 Xác định công thức ancol (A) và tính giá trị của m .
 
@@ -70,8 +70,8 @@ Cho:  C = 12, H = 1 , O = 16 , Cu = 64 , Ca=40 , Ag =108, N=14 ,Na=23
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 11- Mac Dinh Chi-da](/assets/docs/Hoa-11-Mac-Dinh-Chi-da.doc)
-- [Hoa 11- Mac Dinh Chi-de](/assets/docs/Hoa-11-Mac-Dinh-Chi-de.doc)
+- [Hoa 11- Mac Dinh Chi-da](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoa 11- Mac Dinh Chi-de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

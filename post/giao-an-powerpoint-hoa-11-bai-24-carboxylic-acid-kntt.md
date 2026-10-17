@@ -15,13 +15,13 @@ grade: 11
 
 Giáo án powerpoint hóa 11 bài 24 carboxylic acid KNTT
 
-**Bài 24:
-**CARBOXYLIC ACID
-**I. KHÁI NIỆM– DANH PHÁP
-**Nhiệm vụ 1:
+**Bài 24:**
+**CARBOXYLIC ACID**
+**I. KHÁI NIỆM– DANH PHÁP**
+**Nhiệm vụ 1:**
 1. Nêu khái niệm carboxylic acid: …………………………………… . . . . . ……………………………………………………………………………………………………….……………………………………………………………
 
-**VD : Bao nhiêu chất sau đây là carboxylic acid:
+**VD : Bao nhiêu chất sau đây là carboxylic acid:**
 HCHO, HCOOH, OHC – CHO, HOOC – COOH, CH3OH, HCOOCH3, CH3COCH3, CH2=CH-COOH, CH3COOH, C6H5CHO.
 
 A. 2                B. 3                    C. 4                    D. 5
@@ -36,19 +36,19 @@ A. 2                B. 3                    C.
 | Gốc là vòng thơm   |   |   |
 | * Từ 2 nhóm – COOH trở lên |   |   |
 
-**Nhiệm vụ 2:
-**2.  DANH PHÁP
-**a. Tên thay thế
+**Nhiệm vụ 2:**
+**2.  DANH PHÁP**
+**a. Tên thay thế**
 ………………………………………………………………………………
 
 ………………………………………………………………………………
 
-**Chú ý:
+**Chú ý:**
 – Mạch chính là mạch carbon ……………………………………………………
 
 – Nếu mạch carbon có nhánh thì ………………………………………………
 
-**Gọi tên các acid sau
+**Gọi tên các acid sau**
  **H-COOH** ……………………………………
 
 **CH3-COOH** ……………………………………
@@ -57,7 +57,7 @@ A. 2                B. 3                    C.
 
 **CH3-CH2-CH2-COOH**…………………………………… CH2 = CH – COOH      **…………………………………… C6H5 – COOH** ……………………………………
 
-**b. Tên thông thường
+**b. Tên thông thường**
 ………………………………………………………………………………………………………………………………………………………………
 
 | Công thức cấu tạo | Tên thông thường | Nguồn gốc |
@@ -72,7 +72,7 @@ A. 2                B. 3                    C.
 
 ………………………………………………………………………………
 
-**Nhiệm vụ 3:
+**Nhiệm vụ 3:**
 Luyện tập
 
 **Bài 1:** Viết công thức cấu tạo và gọi tên theo danh pháp thông thường và danh pháp thay thế
@@ -93,7 +93,7 @@ c. 3-methylbutanoic acid                    d. 2,2-dimethylpr
 
 ……………………………………………………….…………………………………………………………………………………………………………………………………….…………………………………………………………………………………………………………. . ……………………………. …………………………………………………………………………………
 
-**II. ĐẶC ĐIỂM CẤU TẠO
+### Ii. Đặc Điểm Cấu Tạo
   …………………………………………………………………………………
 
 …………………………………….……………………………………………
@@ -106,7 +106,7 @@ c. 3-methylbutanoic acid                    d. 2,2-dimethylpr
 
 ………………………………………………………………………………
 
-** III. TÍNH CHẤT VẬT LÍ
+** III. TÍNH CHẤT VẬT LÍ**
 **?** So sánh và giải thích nhiệt độ sôi của carboxylic acid với các chất hữu cơ khác?
 
 …………………………………… ………………………. . ……………….
@@ -151,16 +151,16 @@ Một số acid có trong tự nhiên
 
 – Trong nọc độc của con kiến, ong: ……………………………….…
 
-**Nhiệm vụ 4:
-**IV. TÍNH CHẤT HÓA HỌC
-**1.Tính acid:
+**Nhiệm vụ 4:**
+### Iv. Tính Chất Hóa Học
+**1.Tính acid:**
 a) Sự phân ly:
 
 ?: Nhận xét về khả năng phân li của carboxylic acid. Chúng là acid mạnh hay yếu và có những phản ứng đặc trưng nào?
 
 …………………………………………………….………………………………………………………………………………………………………………
 
-**Thí nghiệm:    Tính acid của acetic acid
+**Thí nghiệm:    Tính acid của acetic acid**
 – Lớp chia thành 4 nhóm, lần lượt tiến hành các thí nghiệm và hoàn thành vào phiếu học tập sau:
 
 | Tên thí nghiệm | Dụng cụ, hoá chất | Cách tiến hành thí nghiệm | Hiện tượng và PT hoá học |
@@ -199,8 +199,8 @@ CH3COOH  +  KOH   …………………………………….
 
             CH3COOH  +  Ca(OH)2    …………………………………….
 
-**2. Phản ứng ester hoá
-**Carboxylic acid tác dụng với alcohot tạo thành ester:
+**2. Phản ứng ester hoá**
+**Carboxylic acid tác dụng với alcohot tạo thành ester:**
 Phương trình tổng quát
 
 …………………………………………………………………………………
@@ -213,8 +213,8 @@ Ví dụ:
 
 …………………………………………………………………………………
 
-**V. ĐIỀU CHẾ
-**1. Phương pháp lên men giấm
+### V. Điều Chế
+**1. Phương pháp lên men giấm**
 – Nguyên liệu: …………………………………………………………………
 
 – Phương pháp …………………………………….………………….………
@@ -225,7 +225,7 @@ Ví dụ:
 
 ………………………………………………………………………………
 
-**2. Phương pháp oxi hoá alkane
+**2. Phương pháp oxi hoá alkane**
 – Nguyên tắc: …………………………………………………………………
 
 – Phương trình tổng quát
@@ -236,12 +236,12 @@ Ví dụ:
 
 …………………………………………………………………………………
 
-**VI. ỨNG DỤNG
+### Vi. Ứng Dụng
 ?Carboxylic acid có những ứng dụng gì?
 
 ……………………………………………………………………………………………………….…………………………………………………………………………………………………………………………………………………………………….……………………………………………………………………………………………………….……………………………………………………………………………………………………….…………………
 
-**BÀI TẬP CỦNG CỐ
+**BÀI TẬP CỦNG CỐ**
 **Câu 1. C** arboxylic acid nào sau đây là acid no, đơn chức, mạch hở
 
       **A**. HOOC-COOH               **B**. CH3CH2COOH
@@ -250,7 +250,7 @@ Ví dụ:
 
 …………………………………………………………………………………….………………………………………………………………………………
 
-**Câu 2**. acid sau CH3CH2CH(CH3)COOH có tên là
+**Câu 2:** . acid sau CH3CH2CH(CH3)COOH có tên là
 
  **A**. butanoic acid                   **B**. 3-metyl butanoic acid
 
@@ -264,7 +264,7 @@ Na, Cu(OH)2, Cu, Na2CO3, CH3OH, NaCl
 
 Số phản ứng xảy ra là
 
-**A.** 3.                **B.** 4.                **C.** 5.                **D.** 6.
+**A.** 3.                B.** 4.                **C.** 5.                D.** 6.
 
 ……………………….……………………………………………………………………………………………………………………………………….….
 
@@ -280,7 +280,7 @@ Số phản ứng xảy ra là
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [B24_-carboxylic-acid_Ho-Van-Quan](/assets/docs/B24_-carboxylic-acid_Ho-Van-Quan.docx)
+- [B24_-carboxylic-acid_Ho-Van-Quan](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [bai-24_carboxylic-acid](https://drive.google.com/file/d/1Idli8fbd_-4tDMMp1gi1gpdWGj3TxtBO/view?usp=sharing)
 
 Mời các thầy cô và các em xem thêm

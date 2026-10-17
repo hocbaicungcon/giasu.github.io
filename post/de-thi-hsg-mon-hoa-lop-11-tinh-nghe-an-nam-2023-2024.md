@@ -14,17 +14,17 @@ grade: 11
 
 Đề thi hsg môn hóa lớp 11 tỉnh Nghệ An năm 2023 2024
 
-**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN******* * ** **ĐÁP ÁN*** *KỲ THI CHỌN HSG CẤP********TRƯỜNG*** *.****NĂM HỌC 2023-2024**
+**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN** * ** **ĐÁP ÁN** *KỲ THI CHỌN HSG CẤP**TRƯỜNG** *.**NĂM HỌC 2023-2024**
 
- ******CỤM*** *TRƯỜNG THPT****ĐH-CĐ*** *-1/5** ***** *   ** **Môn thi: HÓA HỌC*** *. Lớp 11**
+ **CỤM** *TRƯỜNG THPT**ĐH-CĐ** *-1/5** ** *   ** **Môn thi: HÓA HỌC** *. Lớp 11**
 
- *****(** Đề thi có 2 trang**) *****                       *** *              ***Thời gian làm bài 150 phút (không kể thời gian giao đề)*
+ **(** Đề thi có 2 trang**) **                       ** *              **Thời gian làm bài 150 phút (không kể thời gian giao đề)*
 
 *Cho NTK: K = 39; Cl = 35,5; H = 1; O = 16; N = 14; Cu = 64; S = 32; Zn = 65; Na = 23; C = 12;*
 
 *Fe = 56; Ba = 137, P = 31; Mg = 24; Ag = 108*
 
-**Câu 1****(2 điểm):**
+**Câu 1:** (2 điểm):**
 
 X và Y là các nguyên tố thuộc nhóm A trong BTH, đều tạo hợp chất với hyđrogen có dạng RH (R là kí hiệu của nguyên tố X hoặc Y). Gọi A và B lần lượt là hyđroxide ứng với hóa trị cao nhất của X và Y. Trong B, Y chiếm 35,323% khối lượng. Trung hòa hoàn toàn 50 gam dung dịch A 16,8% cần dùng 150 mL dung dịch B 1M.
 
@@ -55,7 +55,7 @@ b) KClO3 + NH3  → KCl + KNO2+ Cl2 + H2O
 | 1) Cân bằng các phản ứng hóa học sau bằng phương pháp thăng bằng electron: a) 5SO2 + 2H2O + 2KMnO4 → 2H2SO4 + 2MnSO4 + K2SO4                 5 x    S+4 → S+6 + 2e                 2 x  Mn+7 + 5e → Mn+2 b) KClO3 + NH3  → KCl + KNO2+ Cl2 + H2O                (6x+10y)  N-3       →   N+3 + 6e                     6          (x+2y) Cl+5   + (6x + 10y)e   →  xCl-1 + yCl20 6(x+2y)KClO3 + (6x+10y)NH3  → 6xKCl + (6x+10y)KNO2+ 6yCl2 + (9x+15y)H2O Bảo toàn nguyên tố K: 6x + 12y = 12x + 10y →3x = y 42xKClO3 + 36NH3  → 6xKCl + 36xKNO2+ 18xCl2 + 54xH2O 7KClO3 + 6NH3  → KCl + 6KNO2+ 6Cl2 + 9H2O |   |
 | a) Quang hợp của cây xanh: quá trình thu nhiệt Nhờ có chất diệp lục cây xanh hấp thụ năng lượng mặt trời, sẽ hút nước và khí CO2. Quá trình này hình thành nên đường hay tinh bột và đồng thời nhả khí O2 b) Sự hô hấp cung cấp oxygen cho các phản ứng oxi hóa chất béo, chất đường, tinh bột,… trong cơ thể con người là quá trình giải phóng năng lượng (quá trình tỏa nhiệt). Quá trình này cung cấp năng lượng cho các hoạt động sống của con người. |   |
 
-**Câu 3****(2 điểm):*** ***
+**Câu 3:** (2 điểm):** **
 
 Hỗn hợp gồm 1,92 gam Mg và 4,48 gam Fe phản ứng vừa hết với hỗn hợp khí X gồm chlorin và oxygen thu được hỗn hợp Y chỉ gồm các oxide và muối chloride. Hòa tan Y bằng một lượng vừa đủ 120 ml dung dịch HCl 2M, thu được dung dịch Z. Cho AgNO3  dư vào dung dịch Z, phản ứng hoàn toàn, thu được 56,69 gam kết tủa. Tính phần trăm theo thể tích của khí chlorin trong hỗn hợp X.
 
@@ -63,7 +63,7 @@ Hỗn hợp gồm 1,92 gam Mg và 4,48 gam Fe phản ứng vừa hết với h�
 | --- | --- |
 | Quá trình cho nhận e:    2a  +  4b  +  x  = 0,4  (1) |             0,5 điểm             0,5 điểm                   0,5 điểm     0,5 điểm |
 
-**Câu 4****(2 điểm):**
+**Câu 4:** (2 điểm):**
 
 1) Viết phương trình điện li của các chất sau: HF, HI, Ba(OH)2, Na2SO4
 2) Trong cơ thể người, hemoglobin (Hb) kết hợp với oxygen theo phản ứng thuận nghịch được biểu diễn đơn giản như sau: Hb + O2 ⇌ HbO2
@@ -79,7 +79,7 @@ b) Khi lên núi cao, một số người cũng gặp hiện tượng bị đau 
 | 1) Viết phương trình điện li của các chất sau: HF, HI, Ba(OH)2, Na2SO4 HF ⇌ H+ + F–  HI  H+ + I– Ba(OH)2  Ba2+ + 2OH– Na2SO4   2Na+ + SO42- |   0,25 điểm 0,25 điểm 0,25 điểm 0,25 điểm |
 | 2) a) Để oxygen lên não nhiều hơn thì hàm lượng oxygen hít vào phổi cũng phải nhiều hơn. Một số biện pháp đề xuất để oxygen lên não nhiều hơn: + Tập thể dục và hít thở đúng cách. + Giảm lo âu, căng thẳng và có chế độ dinh dưỡng hợp lí. + Không hút thuốc lá, tránh xa nơi có khói thuốc. + Bảo vệ môi trường không khí trong lành, tránh ô nhiễm không khí. + Trồng nhiều cây xanh… b) Khi lên núi cao, một số người cũng gặp hiện tượng bị đau đầu, chóng mặt. Do ở trên núi cao, hàm lượng oxygen loãng, dẫn đến khi đến các mô cân bằng: Hb + O2 ⇌ HbO2 chuyển dịch theo chiều nghịch, giải phóng oxygen. |   HS đề xuất được mỗi biện pháp cho 0,125 điểm (HS đề xuất được 4 biện pháp trở lên cho điểm tối đa (0,5 điểm))   0,5 Điểm |
 
-**Câu****5 (2 điểm):**
+**Câu**5 (2 điểm):**
 
 Một bình gas (khí hóa lỏng) chứa hỗn hợp propane và butane với tỉ lệ mol 1 : 2 có khối lượng 12 kg. Khi đốt cháy hoàn toàn 1 mol propane hoặc 1 mol butane thì lượng nhiệt tỏa ra lần lượt là 2220 kJ và 2850 kJ. Trung bình lượng nhiệt tiêu thụ từ đốt khí gas của một hộ gia đình là 10000 kJ/ngày, hiệu suất sử dụng nhiệt là 70%, giá của bình gas trên là 400000 đồng. Tính số tiền một hộ gia đình cần chi trả cho việc mua ga sử dụng trong một tháng (30 ngày) .
 
@@ -87,7 +87,7 @@ Một bình gas (khí hóa lỏng) chứa hỗn hợp propane và butane với t
 | --- | --- |
 |  |   0,5 điểm   0,5 điểm       0,5 điểm     0,5 điểm     |
 
-**Câu 6****(3 điểm):**
+**Câu 6:** (3 điểm):**
 
 1) Sục từ từ đến dư khí SO2 vào dung dịch chứa hỗn hợp KOH và Ba(OH)2. Viết thứ tự phản ứng xảy ra.
 
@@ -107,7 +107,7 @@ Một bình gas (khí hóa lỏng) chứa hỗn hợp propane và butane với t
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-11-Nghe-An-De-HDC](/assets/docs/2023-2024-HSG-11-Nghe-An-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-11-Nghe-An-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

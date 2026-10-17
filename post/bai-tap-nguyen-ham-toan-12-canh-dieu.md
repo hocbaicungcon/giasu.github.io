@@ -29,4 +29,4 @@ CHỦ ĐỀ 4. ỨNG DỤNG NGUYÊN HÀM TRONG THỰC TIỄN. + Dạng 1. Ứng 
 
 ## Download Bài tập nguyên hàm Toán 12 Cánh Diều
 
-- [cac-dang-bai-tap-nguyen-ham-toan-12-canh-dieu](/assets/docs/cac-dang-bai-tap-nguyen-ham-toan-12-canh-dieu.pdf)
+- [cac-dang-bai-tap-nguyen-ham-toan-12-canh-dieu](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

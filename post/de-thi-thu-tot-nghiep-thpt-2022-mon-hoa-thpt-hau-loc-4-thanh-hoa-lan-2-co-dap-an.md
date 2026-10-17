@@ -224,7 +224,7 @@ A. 59,20%.       B. 18,00%.       C. 20,52%.       D. 22,87%.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hau-Loc-4-Thanh-Hoa-lan-2](/assets/docs/Hau-Loc-4-Thanh-Hoa-lan-2.docx)
+- [Hau-Loc-4-Thanh-Hoa-lan-2](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể tham khảo thêm nhiều đề thi hơn tại
 

@@ -13,13 +13,13 @@ grade: 11
 
 Đề thi hsg môn hóa lớp 11 THPT Quỳnh Lưu 3 Nghệ An năm 2023 2024
 
-**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN             KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT
-**  TRƯỜNG THPT QUỲNH LƯU 3                                                              KHỐI 1 1 –  LẦN 1
+**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN             KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT**
+**  TRƯỜNG THPT QUỲNH LƯU 3                                                              KHỐI 1 1 –  LẦN 1**
 | ĐỀ CHÍNH THỨC   |
 | --- |
 
-**                                                                                                                 NĂM HỌC 2023 – 2024
-**                                                                                                           Môn thi: HÓA HỌC
+**                                                                                                                 NĂM HỌC 2023 – 2024**
+**                                                                                                           Môn thi: HÓA HỌC**
  **Đề thi có 5 trang** *Thời gian làm bài 150 phút (không kể thời gian giao đề)
 |  |
 | --- |
@@ -27,32 +27,32 @@ grade: 11
 
  Nguyên tử khối: K = 39; Cl = 35,5; H = 1; O = 16; N = 14; Cu = 64; S = 32;**Mn**=** 5**5; Na = 23; C = 12; Fe = 56;** Ca**=** 40**, P = 31
 1. **TRẮC NGHIỆM
-**PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn. Thí sinh trả lời từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án.
+**PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn. Thí sinh trả lời từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án.**
 **Câu 1:** Yếu tố nào sau đây luôn luôn **không** làm dịch chuyển cân bằng của hệ phản ứng?
 
-     **A**. Nhiệt độ.                       **B.** Áp suất.                         **C.** Nồng độ.                        **D.** Chất xúc tác.
+     **A**. Nhiệt độ.                       **B.** Áp suất.                         C.** Nồng độ.                        **D.** Chất xúc tác.**
 
 **Câu 2:** Ion X2- có cấu hình electron lớp ngoài cùng là 3s23p6. X là nguyên tố nào trong bảng hệ thống tuần hoàn?
 
-**A.** Oxygen. **B.** Sulfur. **C.** Calcium **D.** Magnesium.
+**A.** Oxygen. B.** Sulfur. **C.** Calcium D.** Magnesium.
 
 **Câu 3:** Dãy nào sau đây chỉ gồm các chất thuộc dãy đồng đẳng của alkane?
 
- **A.** C2H2, C3H4, C4H6, C5H8. **B.** CH4, C2H2, C3H4, C4H10.
+ **A.** C2H2, C3H4, C4H6, C5H8. B.** CH4, C2H2, C3H4, C4H10.**
 
- **C.** CH4, C2H6, C4H10, C5H12. **D.** C2H6, C3H8, C5H10, C6H12.
+ **C.** CH4, C2H6, C4H10, C5H12. D.** C2H6, C3H8, C5H10, C6H12.**
 
 **Câu 4:** Ở điều kiện thường CH4 , C3H8, C6H14  tồn tại các thể lần lượt sau đây
 
- **A.** Gas – gas- solid                                                        **B.** Gas –  liquid – liquid            
+ **A.** Gas – gas- solid                                                        B.** Gas –  liquid – liquid            **
 
-     **C.** Gas – gas – liquid                                                     **D.** Gas – liquid – solid
+     **C.** Gas – gas – liquid                                                     D.** Gas – liquid – solid**
 
 **Câu 5.** Công thức cấu tạo sau có tên gọi là:
 
- **A.** 2-methyl-3-butyl pentane.                                      **B**. 3-Ethyl-2-methyl heptane.
+ **A.** 2-methyl-3-butyl pentane.                                      B**. 3-Ethyl-2-methyl heptane.**
 
- **C.** 3-isopropyl heptane. **D.** 2-Methyl-3-ethyl heptane.
+ **C.** 3-isopropyl heptane. D.** 2-Methyl-3-ethyl heptane.**
 
 **Câu 6:** Sử dụng phương pháp tách biệt và tinh chế nào dưới đây không phù hợp 
 
@@ -66,31 +66,31 @@ grade: 11
 
 **Câu 7:** Để diệt chuột trong một nhà kho người ta dùng phương pháp đốt sulfur, đóng kín cửa nhà kho lại. Chuột hít phải khói sẽ bị sưng yết hầu, co giật, tê liệt cơ quan hô hấp dẫn đến bị ngạt mà chết. Chất nào sau đây là nguyên nhân chính gây ra các hiện tượng trên?
 
- **A.** H2S.                              **B**. SO2.                              **C.** SO3**.                              D.** H2SO4
+ **A.** H2S.                              B**. SO2.                              **C.** SO3.                              D.** H2SO4
 
 **Câu 8:** Quá trình cháy của xăng, dầu diesel trong động cơ các phương tiện giao thông tạo ra sản phẩm cuối cùng là khí X. Khí X này là nguyên nhân chính gây hiệu ứng nhà kính làm Trái Đất nóng lên. Khí X là
 
- **A.** CO                                **B.** CO2                               **C**. NO2                                          **D.** CH4
+ **A.** CO                                B.** CO2                               **C**. NO2                                          **D.** CH4**
 
 **Câu 9:** Các chai nhựa, túi, màng mỏng trong suốt, không độc, được sử dụng làm chai đựng nước, thực phẩm, màng bọc thực phẩm được sản xuất từ polymer của chất nào sau đây?
 
- **A.** Butadiene.                    **B.** Propene.                        **C.** Vinyl chloride.              **D.** Ethylene.
+ **A.** Butadiene.                    B.** Propene.                        **C.** Vinyl chloride.              D.** Ethylene.
 
 **Câu 10:** Nitro hoá benzene bằng hỗn hợp HNO3 đặc và H2SO4 đặc ở nhiệt độ ≤50°C, tạo thành chất hữu cơ X. Phát biểu nào sau đây về X **không** đúng?
 
-     **A.** Tên của X là nitrobenzene.                                     **B.** X là chất lỏng, sánh như dầu.
+     **A.** Tên của X là nitrobenzene.                                     B.** X là chất lỏng, sánh như dầu.**
 
-     **C.** X có màu vàng.                                                       **D.** X tan tốt trong nước.
+     **C.** X có màu vàng.                                                       D.** X tan tốt trong nước.**
 
 **Câu 11:** Arene là những chất độc nên khi làm việc với arene cần tuân thủ đúng quy tắc an toàn. **X** là chất làm tăng nguy cơ gây ung thư và các bệnh khác, vì vậy không được tiếp xúc trực tiếp với hóa chất này.
 
 Chất X là
 
- **A.** toluene                          **B.** benzene                         **C.** styrene                          **D.** Ethyne
+ **A.** toluene                          B.** benzene                         **C.** styrene                          D.** Ethyne
 
 **Câu 12.** Trong số các chất sau đây, chất nào là đồng đẳng của ?
 
- **A**.                                            **B.**             C**.** D.
+ **A**.                                            **B.** C.** D.**
 **Câu 13:** | Dịch vị dạ dày thường có pH trong khoảng từ 1,5 -3,5. Những người nào bị mắc bệnh viêm loét dạ dày, tá tràng thường có pH< 1,5. Để chữa căn bệnh này, người bệnh thường uống trước bữa ăn chất nào sau đây? A. Dung dịch sodium hydrogen carbonate                 B. Nước đun sôi để nguội C.Nước đường saccarose                                            D. Một ít giấm ăn |   |
 | --- | --- |
 
@@ -118,7 +118,7 @@ X là chất nào sau đây ?
 
 **D.** CH3COOCH3.
 
-**Câu 16**. Thành phần dầu tẩy trang hoa hồng Cocoon có C15-19 Alkane, tức là các alkane có từ 15 đến 19C. Hãy cho biết vì sao người ta dùng alkane vào thành phần dầu tẩy trang?
+**Câu 16:** . Thành phần dầu tẩy trang hoa hồng Cocoon có C15-19 Alkane, tức là các alkane có từ 15 đến 19C. Hãy cho biết vì sao người ta dùng alkane vào thành phần dầu tẩy trang?
 
 **A.** Do các alkane này có khả năng làm mềm da, trơ về mặt hóa học, vô hại với sức khỏe con người, không phân cực, dễ hòa tan các chất không phân cực trong phấn, kem, bụi bẩn kéo theo và bị rửa trôi đi
 
@@ -132,7 +132,7 @@ X là chất nào sau đây ?
 
 Công thức phân tử của methadone là
 
- **A.** C17H27NO. **B.** C17H22NO. **C.** C21H29NO. **D.** C21H27NO.
+ **A.** C17H27NO. B.** C17H22NO. **C.** C21H29NO. D.** C21H27NO.
 
 **Câu 18:** Bột sắn dây là tinh bột thu được từ củ sắn dây, bột sắn dây là đồ uống giải khát có nhiều tác dụng đối với sức khỏe. Ngoài ra bột sắn dây còn là các vị thuốc, bài thuốc chữa được nhiều bệnh. Để thu được bột sắn dây, đầu tiên củ sắn dây được rửa sạch, cạo hết lớp vỏ bên ngoài rồi xay nhuyễn với nước, thu được hỗn hợp màu nâu.
 
@@ -140,9 +140,9 @@ Hỗn hợp này được thêm nước, khuấy kĩ rồi lọc nhiều lần q
 
 Cho biết phương pháp chủ yếu dùng làm bột sắn dây?
 
- **A.** Kết tinh.     **B.** Chiết.          **C.** Sắc kí.        **D.** Chưng cất.
+ **A.** Kết tinh.     B.** Chiết.          **C.** Sắc kí.        D.** Chưng cất.
 
-**PHẦN II. Câu trắc nghiệm đúng sai. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.
+**PHẦN II. Câu trắc nghiệm đúng sai. Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.**
 **Câu 19:** Năm 1911, Rơ-đơ-pho (E. Rutherford) và các cộng sự đã dùng các hạt α bắn phá lá vàng mỏng và dùng màn huỳnh quang đặt sau lá vàng để theo dõi đường đi của các hạt α. Kết quả thí nghiệm đã rút ra các kết luận về nguyên tử:
 
 - Nguyên tử có cấu tạo rỗng.
@@ -186,7 +186,7 @@ Cho biết phương pháp chủ yếu dùng làm bột sắn dây?
 
 (d) Hydroxide cao nhất của Y có dạng Y(OH)6 và có tính base.
 
-**PHẦN III. Câu trắc nghiệm trả lời ngắn, gồm 6 câu, tổng 1,5 điểm (mỗi câu 0,25 điểm). Thí sinh trả lời từ câu 23 đến câu 28.
+**PHẦN III. Câu trắc nghiệm trả lời ngắn, gồm 6 câu, tổng 1,5 điểm (mỗi câu 0,25 điểm). Thí sinh trả lời từ câu 23 đến câu 28.**
 **Câu 23.** Cho các chất sau: H2O, Cl2, K2O, NaF, N2, HCl, MgO. Có bao nhiêu chất chứa liên kết ion trong phân tử?
 
 **Câu 24.** Cho các phân tử sau: Cl2, H2O, NaF và CH4. Có bao nhiêu nguyên tử trong các phân tử trên đạt cấu hình electron bền của khí hiếm neon?
@@ -207,8 +207,8 @@ CaCO3(s) →CaO(s) + CO2(s) )= 178,29 kJ.
 
 Ở điều kiện tiêu chuẩn, cần phải đốt cháy hoàn toàn bao nhiêu gam CH4(g) để cung cấp nhiệt cho phản ứng tạo 2 mol CaO bằng cách nung CaCO3. Giả thiết hiệu suất các quá trình đều là 100%.
 
-**PHẦN B: TỰ LUẬN Trình bày lời giải câu hỏi tự luận, gồm 4 câu, tổng 10 điểm.
-**Câu 1 (2,5 điểm)
+**PHẦN B: TỰ LUẬN Trình bày lời giải câu hỏi tự luận, gồm 4 câu, tổng 10 điểm.**
+**Câu 1 (2,5 điểm)**
 **1.1. (1,5 điểm)** Một xe tải đang vận chuyển đất đèn (thành phần chính là CaC2 và CaO) gặp mưa xảy ra sự cố, xe tải đã bốc cháy.
 
 a)Viết phản ứng của CaC2 và CaO với nước.
@@ -225,21 +225,21 @@ Dựa vào bảng năng lượng liên kết, tính biến thiên enthalpy của
 
 **1.2. (1 điểm)** Bình “ga” sử dụng trong hộ gia đình Y có chứa 11,36 kg khí hóa lỏng (LPG) gồm propane và butane với tỉ lệ mol tương ứng là 5 : 6. Khi được đốt cháy hoàn toàn, 1 mol propane tỏa ra lượng nhiệt là 2220 kJ và 1 mol butane tỏa ra lượng nhiệt là 2850 kJ. Giả sử hộ gia đình Y dùng bình gas cho việc đun nước, mỗi ấm nước chứa 2 lít nước ở 25oC, nhiệt dung của nước là 4,2 J/g.K, có 37% nhiệt đốt cháy khí bị thất thoát ra ngoài môi trường. Một bình gas nói trên có thể đun sôi bao nhiêu ấm nước?
 
-**Câu 2. (2,5 điểm)
-** 2.1 ( 1 điểm ).
+**Câu 2. (2,5 điểm)**
+** 2.1 ( 1 điểm ).**
 Trong hai chất ammonia (NH3) và phosphine (PH3), theo em chất nào có nhiệt độ sôi và độ tan trong nước lớn hơn? Giải thích.
 
-**2.2 ( 1,5 điểm ).
-**a) (0,5 điểm).
+**2.2 ( 1,5 điểm ).**
+**a) (0,5 điểm).**
 | Camphor (có trong cây long não) là một chất rắn kết tinh màu trắng hay trong  suốt giống như sáp với mùi thơm đặc trưng, thường dùng trong y học. Phần trăm khối lượng các nguyên tố trong camphor lần lượt là 78,94% carbon, 10,53% hydrogen và 10,53% oxygen. Từ phổ khối lượng của camphor xác định được giá trị m/z của peak [M+] .Xác định công thức phân tử của camphor.   |     |
 | --- | --- |
 
-                 **Cây và tinh dầu long não
-**                                                                                          Phổ khối lượng của camphor
+                 **Cây và tinh dầu long não**
+**                                                                                          Phổ khối lượng của camphor**
 - **(1,5 điểm)
      Methamphetamine (hay còn gọi là [Ma túy đá](https://medlatec.vn/tin-tuc/nhung-hau-qua-nguy-hiem-cua-ma-tuy-da-methamphetamine-s159-n18463), hàng đá) là một loại ma túy tổng hợp được tìm ra vào năm 1983 tại Nhật Bản bởi nhà khoa học có tên là Nagai Nagayoshi. Nó là một dạng chất gây nghiện khi dùng sẽ tác động lên hệ thần kinh trung ương và giải phóng ra dopamine hàng loạt.  Methamphetamine có nhiều dạng khác nhau trên thị trường như dạng bột trắng, vàng hoặc nâu đỏ; dạng muối dễ hòa tan trong nước và tiêm vào người; dạng tinh thể màu trắng hay còn gọi là hàng đá. Đốt cháy 14,9 gam Meth thu được 24,79 lít CO2, 13,5 gam H2O và 1,2395 lít N2 (đkc). Công thức phân tử của Meth trùng với công thức đơn giản nhất. Lập công thức phân tử của Meth.
 
-**Câu 3. (2,0 điểm)
+**Câu 3. (2,0 điểm)**
 **3.1 ( 1 điểm ):** Hòa tan hoàn toàn 2,44 gam hỗn hợp bột X gồm FexOy và Cu bằng dung dịch H2SO4 đặc nóng (dư). Sau phản ứng thu được 0,557775 lít khí SO2 (sản phẩm khử duy nhất, ở đkc) và dung dịch chứa 6,6 gam hỗn hợp muối sulfate.
 
 1. Tính phần trăm khối lượng của FexOy trong X ?
@@ -248,8 +248,8 @@ Tính số mol của H2SO4 phản ứng?
 
 **3.2 ( 1 điểm ).** Hàm lượng cho phép của sulfur trong nhiên liệu là 0,3% về khối lượng. Để xác định hàm lượng sulfur trong một loại nhiên liệu người ta lấy 100,0 gam nhiên liệu đó và đốt cháy hoàn toàn. Khí tạo thành chỉ chứa carbon dioxide, sulfur dioxide và hơi nước được dẫn vào nước tạo ra 500,0 mL dung dịch. Biết rằng tất cả sulfur dioxide đã tan vào dung dịch. Lấy 10,0 mL dung dịch này cho tác dụng với dung dịch KMnO4 5,00.10-3 mol/L thì thể tích dung dịch KMnO4 cần dùng là 12,5 ml. Tính phần trăm khối lượng của sulfur trong nhiên liệu trên?
 
-**  Câu 4. (3,0 điểm)
-*** * 4.1 ( 1 điểm ).**Hãy cho biết bản chất của các cách làm sau đây thuộc loại phương pháp tách biệt và tinh chế nào?
+**  Câu 4. (3,0 điểm)**
+** * 4.1 ( 1 điểm ).**Hãy cho biết bản chất của các cách làm sau đây thuộc loại phương pháp tách biệt và tinh chế nào?
 
 a) Giã lá cây chàm, cho vào nước, lọc lấy dung dịch màu để nhuộm sợi, vải.
 
@@ -269,21 +269,21 @@ c) Thí nghiệm này chứng tỏ những nguyên tố nào có mặt trong alk
 
 **4.3 (1,5 điểm)** Trong thí nghiệm điều chế và thử tính chất của ethylene trong phòng thí nghiệm
 
-**Điều chế và thử tính chất của ethylene trong phòng thí nghiệm
+**Điều chế và thử tính chất của ethylene trong phòng thí nghiệm**
 a. Tại sao phải dẫn khí đi qua ống nghiệm có nhánh đựng dung dịch NaOH trong thí nghiệm.
 
 b. Viết phương trình hóa học của phản ứng điều chế và thử tính chất C2H4 trong thí nghiệm.
 
 ……………………. Hết ……………………..
 
-***(Học sinh không sử dụng bảng tuần hoàn các nguyên tố hóa học)
-**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN             KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT
-**  TRƯỜNG THPT QUỲNH LƯU 3                                                              KHỐI 1 1 –  LẦN 1
+**(Học sinh không sử dụng bảng tuần hoàn các nguyên tố hóa học)**
+**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN             KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT**
+**  TRƯỜNG THPT QUỲNH LƯU 3                                                              KHỐI 1 1 –  LẦN 1**
 | ĐỀ CHÍNH THỨC   |
 | --- |
 
-**                                                                                                                 NĂM HỌC 2023 – 2024
-**                                                                                                           Môn thi: HÓA HỌC
+**                                                                                                                 NĂM HỌC 2023 – 2024**
+**                                                                                                           Môn thi: HÓA HỌC**
  **Đề thi có 5 trang** *Thời gian làm bài 150 phút (không kể thời gian giao đề)
 |  |
 | --- |
@@ -291,32 +291,32 @@ b. Viết phương trình hóa học của phản ứng điều chế và thử 
 
  Nguyên tử khối: K = 39; Cl = 35,5; H = 1; O = 16; N = 14; Cu = 64; S = 32;**Mn**=** 5**5; Na = 23; C = 12; Fe = 56;** Ca**=** 40**, P = 31
 - **TRẮC NGHIỆM
-**PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn. Thí sinh trả lời từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án.
+**PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn. Thí sinh trả lời từ câu 1 đến câu 18. Mỗi câu hỏi thí sinh chỉ chọn một phương án.**
 **Câu 1:** Yếu tố nào sau đây luôn luôn **không** làm dịch chuyển cân bằng của hệ phản ứng?
 
-     **A**. Nhiệt độ.                       **B.** Áp suất.                         **C.** Nồng độ.                        **D.** Chất xúc tác.
+     **A**. Nhiệt độ.                       **B.** Áp suất.                         C.** Nồng độ.                        **D.** Chất xúc tác.**
 
 **Câu 2:** Ion X2- có cấu hình electron lớp ngoài cùng là 3s23p6. X là nguyên tố nào trong bảng hệ thống tuần hoàn?
 
-**A.** Oxygen. **B.** Sulfur. **C.** Calcium **D.** Magnesium.
+**A.** Oxygen. B.** Sulfur. **C.** Calcium D.** Magnesium.
 
 **Câu 3:** Dãy nào sau đây chỉ gồm các chất thuộc dãy đồng đẳng của alkane?
 
- **A.** C2H2, C3H4, C4H6, C5H8. **B.** CH4, C2H2, C3H4, C4H10.
+ **A.** C2H2, C3H4, C4H6, C5H8. B.** CH4, C2H2, C3H4, C4H10.**
 
- **C.** CH4, C2H6, C4H10, C5H12. **D.** C2H6, C3H8, C5H10, C6H12.
+ **C.** CH4, C2H6, C4H10, C5H12. D.** C2H6, C3H8, C5H10, C6H12.**
 
 **Câu 4:** Ở điều kiện thường CH4 , C3H8, C6H14  tồn tại các thể lần lượt sau đây
 
- **A.** Gas – gas- solid                                                        **B.** Gas –  liquid – liquid            
+ **A.** Gas – gas- solid                                                        B.** Gas –  liquid – liquid            **
 
-     **C.** Gas – gas – liquid                                                     **D.** Gas – liquid – solid
+     **C.** Gas – gas – liquid                                                     D.** Gas – liquid – solid**
 
 **Câu 5.** Công thức cấu tạo sau có tên gọi là:
 
- **A.** 2-methyl-3-butyl pentane.                                      **B**. 3-Ethyl-2-methyl heptane.
+ **A.** 2-methyl-3-butyl pentane.                                      B**. 3-Ethyl-2-methyl heptane.**
 
- **C.** 3-isopropyl heptane. **D.** 2-Methyl-3-ethyl heptane.
+ **C.** 3-isopropyl heptane. D.** 2-Methyl-3-ethyl heptane.**
 
 **Câu 6:** Sử dụng phương pháp tách biệt và tinh chế nào dưới đây không phù hợp 
 
@@ -330,31 +330,31 @@ b. Viết phương trình hóa học của phản ứng điều chế và thử 
 
 **Câu 7:** Để diệt chuột trong một nhà kho người ta dùng phương pháp đốt sulfur, đóng kín cửa nhà kho lại. Chuột hít phải khói sẽ bị sưng yết hầu, co giật, tê liệt cơ quan hô hấp dẫn đến bị ngạt mà chết. Chất nào sau đây là nguyên nhân chính gây ra các hiện tượng trên?
 
- **A.** H2S.                              **B**. SO2.                              **C.** SO3**.                              D.** H2SO4
+ **A.** H2S.                              B**. SO2.                              **C.** SO3.                              D.** H2SO4
 
 **Câu 8:** Quá trình cháy của xăng, dầu diesel trong động cơ các phương tiện giao thông tạo ra sản phẩm cuối cùng là khí X. Khí X này là nguyên nhân chính gây hiệu ứng nhà kính làm Trái Đất nóng lên. Khí X là
 
- **A.** CO                                **B.** CO2                               **C**. NO2                                          **D.** CH4
+ **A.** CO                                B.** CO2                               **C**. NO2                                          **D.** CH4**
 
 **Câu 9:** Các chai nhựa, túi, màng mỏng trong suốt, không độc, được sử dụng làm chai đựng nước, thực phẩm, màng bọc thực phẩm được sản xuất từ polymer của chất nào sau đây?
 
- **A.** Butadiene.                    **B.** Propene.                        **C.** Vinyl chloride.              **D.** Ethylene.
+ **A.** Butadiene.                    B.** Propene.                        **C.** Vinyl chloride.              D.** Ethylene.
 
 **Câu 10:** Nitro hoá benzene bằng hỗn hợp HNO3 đặc và H2SO4 đặc ở nhiệt độ ≤50°C, tạo thành chất hữu cơ X. Phát biểu nào sau đây về X **không** đúng?
 
-     **A.** Tên của X là nitrobenzene.                                     **B.** X là chất lỏng, sánh như dầu.
+     **A.** Tên của X là nitrobenzene.                                     B.** X là chất lỏng, sánh như dầu.**
 
-     **C.** X có màu vàng.                                                       **D.** X tan tốt trong nước.
+     **C.** X có màu vàng.                                                       D.** X tan tốt trong nước.**
 
 **Câu 11:** Arene là những chất độc nên khi làm việc với arene cần tuân thủ đúng quy tắc an toàn. **X** là chất làm tăng nguy cơ gây ung thư và các bệnh khác, vì vậy không được tiếp xúc trực tiếp với hóa chất này.
 
 Chất X là
 
- **A.** toluene                          **B.** benzene                         **C.** styrene                          **D.** Ethyne
+ **A.** toluene                          B.** benzene                         **C.** styrene                          D.** Ethyne
 
 **Câu 12.** Trong số các chất sau đây, chất nào là đồng đẳng của ?
 
- **A**.                                            **B.**             C**.** D.
+ **A**.                                            **B.** C.** D.**
 **Câu 13:** | Dịch vị dạ dày thường có pH trong khoảng từ 1,5 -3,5. Những người nào bị mắc bệnh viêm loét dạ dày, tá tràng thường có pH< 1,5. Để chữa căn bệnh này, người bệnh thường uống trước bữa ăn chất nào sau đây? A. Dung dịch sodium hydrogen carbonate                 B. Nước đun sôi để nguội C.Nước đường saccarose                                            D. Một ít giấm ăn |   |
 | --- | --- |
 
@@ -382,7 +382,7 @@ X là chất nào sau đây ?
 
 **D.** CH3COOCH3.
 
-**Câu 16**. Thành phần dầu tẩy trang hoa hồng Cocoon có C15-19 Alkane, tức là các alkane có từ 15 đến 19C. Hãy cho biết vì sao người ta dùng alkane vào thành phần dầu tẩy trang?
+**Câu 16:** . Thành phần dầu tẩy trang hoa hồng Cocoon có C15-19 Alkane, tức là các alkane có từ 15 đến 19C. Hãy cho biết vì sao người ta dùng alkane vào thành phần dầu tẩy trang?
 
 **A.** Do các alkane này có khả năng làm mềm da, trơ về mặt hóa học, vô hại với sức khỏe con người, không phân cực, dễ hòa tan các chất không phân cực trong phấn, kem, bụi bẩn kéo theo và bị rửa trôi đi
 
@@ -396,13 +396,13 @@ X là chất nào sau đây ?
 
 Công thức phân tử của methadone là
 
- **A.** C17H27NO. **B.** C17H22NO. **C.** C21H29NO. **D.** C21H27NO.
+ **A.** C17H27NO. B.** C17H22NO. **C.** C21H29NO. D.** C21H27NO.
 
 **Câu 18:** Bột sắn dây là tinh bột thu được từ củ sắn dây, bột sắn dây là đồ uống giải khát có nhiều tác dụng đối với sức khỏe. Ngoài ra bột sắn dây còn là các vị thuốc, bài thuốc chữa được nhiều bệnh. Để thu được bột sắn dây, đầu tiên củ sắn dây được rửa sạch, cạo hết lớp vỏ bên ngoài rồi xay nhuyễn với nước, thu được hỗn hợp màu nâu.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-QUYNH-LUU-3-NGHE-AN-HSG-HH11-TNTL](/assets/docs/2023-2024-QUYNH-LUU-3-NGHE-AN-HSG-HH11-TNTL-giasu.ai.vn.docx)
+- [2023-2024-QUYNH-LUU-3-NGHE-AN-HSG-HH11-TNTL](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

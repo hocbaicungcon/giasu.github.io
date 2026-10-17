@@ -18,4 +18,4 @@ Các dạng bài tập xác suất có điều kiện Toán 12 CTST tổng hợp
 Bài 1. Xác suất có điều kiện.
 Bài 2. Công thức xác suất toàn phần. Công thức Bayes. Xem thêm [Xác suất có điều kiện – Công thức Bayes](/bai-viet/xac-suat-co-dieu-kien-cong-thuc-bayes.html)
 
-- [cac-dang-bai-tap-xac-suat-co-dieu-kien-toan-12-ctst](/assets/docs/cac-dang-bai-tap-xac-suat-co-dieu-kien-toan-12-ctst.pdf)
+- [cac-dang-bai-tap-xac-suat-co-dieu-kien-toan-12-ctst](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

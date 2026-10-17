@@ -442,8 +442,8 @@ b) Xác định nồng độ % các chất trong dung dịch B.
 *CBCT 1:……………………………………………..       CBCT 2:……………………………………….
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HUONG-DAN-CHAM](/assets/docs/HUONG-DAN-CHAM-giasu.ai.vn.docx)
-- [HOA-10-MA-301](/assets/docs/HOA-10-MA-301-giasu.ai.vn.docx)
+- [HUONG-DAN-CHAM](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HOA-10-MA-301](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

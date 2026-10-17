@@ -19,7 +19,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
 - [100 câu lý thuyết đếm hóa hữu cơ lớp 12 thi TN THPT](/bai-viet/100-cau-ly-thuyet-dem-hoa-huu-co-lop-12-thi-tn-thpt.html)
 
-**([Lời giải](/bai-viet/cho-cac-phat-bieu-sau-1-saccarozo-duoc-cau-tao-tu-hai-%ce%b1-glucozo.html)) Câu 1 :******Cho các phát biểu sau :
+**([Lời giải](/bai-viet/cho-cac-phat-bieu-sau-1-saccarozo-duoc-cau-tao-tu-hai-%ce%b1-glucozo.html)) Câu 1 :**Cho các phát biểu sau :
 
  (1) Saccarozơ được cấu tạo từ hai α-glucozơ;
 
@@ -35,7 +35,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Trong các phát biểu trên, số phát biểu đúng là
 
-******◯*** *A.**2.** ****◯*** *B.**3.** ****◯*** *C.**5.** ****◯*** *D.**4.
+**A.** 2. **B.** 3. **C.** 5. **D.**4.
 
  (1) Sai, saccarozơ cấu tạo từ 1 gốc α-glucozơ và 1 gốc β-fructozơ
 
@@ -63,7 +63,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Trong các phát biểu trên, số phát biểu đúng là
 
-******◯*** *A.**4.** ****◯*** *B.**2.** ****◯*** *C.**5.** ****◯*** *D.**3.
+**A.** 4. **B.** 2. **C.** 5. **D.**3.
 
  (1) Đúng: CH3COOCH=CH2 + NaOH —> CH3COONa + CH3CHO
 
@@ -87,9 +87,9 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (5) Điều chế poli(vinyl ancol) bằng cách trùng hợp ancol vinylic.
 
-****Trong các nhận định trên, số nhận định sai là
+**Trong các nhận định trên, số nhận định sai là**
 
-******◯*** *A.**2.** ****◯*** *B.**1.** ****◯*** *C.**3.** ****◯*** *D.**4.
+**A.** 2. **B.** 1. **C.** 3. **D.**4.
 
  (1) Sai, tùy loại protein và cacbohyđrat
 
@@ -101,7 +101,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (5) Sai, thủy phân (-CH2-CH(OOC-CH3)-)n
 
-**([Lời giải](/bai-viet/trong-cac-thi-nghiem-sau-a-cho-mg-phan-ung-voi-dung-dich-hno3-loang-du.html)) Câu 4 :******Trong các thí nghiệm sau:
+**([Lời giải](/bai-viet/trong-cac-thi-nghiem-sau-a-cho-mg-phan-ung-voi-dung-dich-hno3-loang-du.html)) Câu 4 :**Trong các thí nghiệm sau:
 
  (a) Cho Mg phản ứng với dung dịch HNO3 loãng dư.
 
@@ -115,17 +115,17 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số thí nghiệm chắc chắn có khí thoát ra là
 
-******◯*** *A.**4.** ****◯*** *B.**3.** ****◯*** *C.**2.** ****◯*** *D.**5.
+**A.** 4. **B.** 3. **C.** 2. **D.**5.
 
  (a) Không chắc chắn, có thể Mg + HNO3 —> Mg(NO3)2 + NH4NO3 + H2O
 
-******(b)** Cu + H2SO4 đặc nóng —> CuSO4 + SO2 + H2O
+**(b)** Cu + H2SO4 đặc nóng —> CuSO4 + SO2 + H2O
 
  (c) NaHCO3 + Ca(OH)2 —> CaCO3 + NaOH + H2O
 
-******(d)** Al + H2O + KOH —> KAlO2 + H2
+**(d)** Al + H2O + KOH —> KAlO2 + H2
 
-******(e)** KNO3 —> KNO2 + O2
+**(e)** KNO3 —> KNO2 + O2
 
 **(Lời giải) Câu 5 :** Xét các phát biểu:
 
@@ -139,7 +139,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**4.** ****◯*** *B.**3.** ****◯*** *C.**2** ****◯*** *D.**1
+**A.** 4. **B.** 3. **C.** 2 **D.**1
 
  (a) Đúng
 
@@ -165,7 +165,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Trong các thí nghiệm trên, số thí nghiệm xảy ra phản ứng oxi hoá – khử là
 
-******◯*** *A.**4.** ****◯*** *B.**5.** ****◯*** *C.**2.** ****◯*** *D.**3.
+**A.** 4. **B.** 5. **C.** 2. **D.**3.
 
  Các thí nghiệm xảy ra phản ứng oxi hóa khử: (3)(5)(6)
 
@@ -185,7 +185,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Trong các phát biểu trên, số phát biểu đúng là
 
-******◯*** *A.**5.** ****◯*** *B.**3.** ****◯*** *C.**4** ****◯*** *D.**2.
+**A.** 5. **B.** 3. **C.** 4 **D.**2.
 
  (1) Đúng, anilin tạo vẩn đục trong dung dịch NaOH (do không tan), ancol etylic trong suốt
 
@@ -199,7 +199,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (6) Đúng
 
-**(Lời giải) Câu 8 :******Cho các phát biểu sau:
+**(Lời giải) Câu 8 :**Cho các phát biểu sau:
 
  (a) Lưu hóa cao su buna, thu được cao su buna-S.
 
@@ -215,7 +215,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**4.** ****◯*** *B.**6.** ****◯*** *C.**5.** ****◯*** *D.**3.
+**A.** 4. **B.** 6. **C.** 5. **D.**3.
 
  (a) Sai, buna-S điều chế từ đồng trùng hợp CH2=CH-CH=CH2 và C6H5-CH=CH2
 
@@ -243,17 +243,17 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Sau khi các phản ứng xảy ra, số thí nghiệm sinh ra chất khí là
 
-******◯*** *A.**2.** ****◯*** *B.**3.** ****◯*** *C.**4.** ****◯*** *D.**5.
+**A.** 2. **B.** 3. **C.** 4. **D.**5.
 
-******(a)** Cu(NO3)2 —> CuO + NO2 + O2
+**(a)** Cu(NO3)2 —> CuO + NO2 + O2
 
-******(b)** Ba + H2O —> Ba(OH)2 + H2
+**(b)** Ba + H2O —> Ba(OH)2 + H2
 
  Ba(OH)2 + CuSO4 —> Cu(OH)2 + BaSO4
 
-******(c)** KHSO4 + Ba(HCO3)2 —> BaSO4 + K2SO4 + CO2 + H2O
+**(c)** KHSO4 + Ba(HCO3)2 —> BaSO4 + K2SO4 + CO2 + H2O
 
-******(d)** NaHCO3 + CaCl2 đun nóng —> CaCO3 + NaCl + CO2 + H2O
+**(d)** NaHCO3 + CaCl2 đun nóng —> CaCO3 + NaCl + CO2 + H2O
 
  (e) AlCl3 + Ba(OH)2 dư —> Ba(AlO2)2 + BaCl2 + H2O
 
@@ -273,25 +273,25 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Sau khi các phản ứng xảy ra, số thí nghiệm sinh ra hỗn hợp khí là
 
-******◯*** *A.**4** ****◯*** *B.**6** ****◯*** *C.**2** ****◯*** *D.**5
+**A.** 4 **B.** 6 **C.** 2 **D.**5
 
-******(a)** Cu(NO3)2 —> CuO + NO2 + O2
+**(a)** Cu(NO3)2 —> CuO + NO2 + O2
 
-******(b)** FeCO3 + H2SO4 đặc nóng —> Fe2(SO4)3 + SO2 + CO2 + H2O
+**(b)** FeCO3 + H2SO4 đặc nóng —> Fe2(SO4)3 + SO2 + CO2 + H2O
 
  (c) Na + Al + H2O —> NaAlO2 + H2
 
  (d) KHSO4 + NaHCO3 —> K2SO4 + Na2SO4 + CO2 + H2O
 
-******(e)** Na + H2O —> NaOH + H2
+**(e)** Na + H2O —> NaOH + H2
 
  NaOH + NH4Cl —> NaCl + NH3 + H2O
 
-******(g)** H2O + C —> CO + H2
+**(g)** H2O + C —> CO + H2
 
  H2O + C —> CO2 + H2
 
-**(Lời giải) Câu 11 :******Cho các phát biểu sau:
+**(Lời giải) Câu 11 :**Cho các phát biểu sau:
 
  (a) Vinylaxetilen và glucozơ đều phản ứng với dung dịch AgNO3/NH3 dư.
 
@@ -307,7 +307,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**3** ****◯*** *B.**1** ****◯*** *C.**2** ****◯*** *D.**4
+**A.** 3 **B.** 1 **C.** 2 **D.**4
 
  (a) Đúng, AgNO3/NH3 phản ứng với CH≡C- và -CHO
 
@@ -321,7 +321,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (g) Sai, thu được glucozơ.
 
-**(Lời giải) Câu 12 :******Cho các phát biểu sau:
+**(Lời giải) Câu 12 :**Cho các phát biểu sau:
 
  (1) Công thức của alanin là H2N-CH(CH3)COOH.
 
@@ -335,7 +335,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu sai là
 
-******◯*** *A.**1.** ****◯*** *B.**2.** ****◯*** *C.**4.** ****◯*** *D.**3.
+**A.** 1. **B.** 2. **C.** 4. **D.**3.
 
  (1) Đúng
 
@@ -369,13 +369,13 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số thí nghiệm có tạo ra kết tủa sau khi kết thúc phản ứng là
 
-******◯*** *A.**1** ****◯*** *B.**4** ****◯*** *C.**3** ****◯*** *D.**2
+**A.** 1 **B.** 4 **C.** 3 **D.**2
 
-******(a)** Ca(HCO3)2 + Ca(OH)2 —> CaCO3 + CO2 + H2O
+**(a)** Ca(HCO3)2 + Ca(OH)2 —> CaCO3 + CO2 + H2O
 
  (b) Zn + FeCl3 dư —> ZnCl2 + FeCl2
 
-******(c)** Ba(OH)2 dư + Al2(SO4)3 —> Ba(AlO2)2 + BaSO4 + H2O
+**(c)** Ba(OH)2 dư + Al2(SO4)3 —> Ba(AlO2)2 + BaSO4 + H2O
 
  (d) CO2 dư + Ba(OH)2 —> Ba(HCO3)2
 
@@ -383,9 +383,9 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (e) HCl dư + NaAlO2 —> AlCl3 + NaCl + H2O
 
-******(f)** NaOH + MgCl2 —> Mg(OH)2 + NaCl
+**(f)** NaOH + MgCl2 —> Mg(OH)2 + NaCl
 
-**(Lời giải) Câu 14 :******Cho các phát biểu sau:
+**(Lời giải) Câu 14 :**Cho các phát biểu sau:
 
  (a) Chất béo chứa các gốc axit no thường là chất lỏng ở nhiệt độ thường.
 
@@ -403,7 +403,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu sai là
 
-******◯*** *A.**4** ****◯*** *B.**2** ****◯*** *C.**3** ****◯*** *D.**5
+**A.** 4 **B.** 2 **C.** 3 **D.**5
 
  (a) Sai, chất béo chứa gốc axit no là chất rắn điều kiện thường
 
@@ -435,7 +435,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số nhận xét đúng là
 
-******◯*** *A.**5** ****◯*** *B.**3** ****◯*** *C.**4** ****◯*** *D.**6
+**A.** 5 **B.** 3 **C.** 4 **D.**6
 
  (1) Sai
 
@@ -449,7 +449,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (6) Đúng
 
-**(Lời giải) Câu 16 :******Cho các phát biểu sau:
+**(Lời giải) Câu 16 :**Cho các phát biểu sau:
 
  (a) Điện phân dung dịch NaCl (điện cực trơ), thu được khí H2 ở anot.
 
@@ -463,7 +463,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**4.** ****◯*** *B.**2.** ****◯*** *C.**3.** ****◯*** *D.**5.
+**A.** 4. **B.** 2. **C.** 3. **D.**5.
 
  (a) Sai, thu được H2 ở catot
 
@@ -491,21 +491,21 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Sau khi các phản ứng xảy ra hoàn toàn, số thí nghiệm tạo ra sản phẩm khí là
 
-******◯*** *A.**6.** ****◯*** *B.**4.** ****◯*** *C.**2.** ****◯*** *D.**5.
+**A.** 6. **B.** 4. **C.** 2. **D.**5.
 
-******(1)** CuSO4 + H2O —> Cu + O2 + H2SO4
+**(1)** CuSO4 + H2O —> Cu + O2 + H2SO4
 
-******(2)** Al + H2SO4 —> Al2(SO4)3 + H2
+**(2)** Al + H2SO4 —> Al2(SO4)3 + H2
 
-******(3)** FeS + HCl —> FeCl2 + H2
+**(3)** FeS + HCl —> FeCl2 + H2
 
  (4) CO2 + H2O + Na2SiO3 —> Na2CO3 + H2SiO3
 
-******(5)** C + Fe3O4 —> Fe + CO2
+**(5)** C + Fe3O4 —> Fe + CO2
 
-******(6)** M(HCO3)2 —> MCO3 + CO2 + H2O (M là Mg, Ca)
+**(6)** M(HCO3)2 —> MCO3 + CO2 + H2O (M là Mg, Ca)
 
-**(Lời giải) Câu 18 :******Cho các phát biểu sau:
+**(Lời giải) Câu 18 :**Cho các phát biểu sau:
 
  (1) Đun nóng hỗn hợp rượu trắng, giấm ăn và H2SO4 loãng, thu được etyl axetat.
 
@@ -521,7 +521,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**5.** ****◯*** *B.**6.** ****◯*** *C.**4.** ****◯*** *D.**3.
+**A.** 5. **B.** 6. **C.** 4. **D.**3.
 
  (1) Sai, phản ứng este hóa không xảy ra trong điều kiện như vậy
 
@@ -549,19 +549,19 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số thí nghiệm mà hỗn hợp chất rắn tan hoàn toàn và tạo thành dung dịch trong suốt là
 
-******◯*** *A.**2.** ****◯*** *B.**5.** ****◯*** *C.**4.** ****◯*** *D.**3
+**A.** 2. **B.** 5. **C.** 4. **D.**3
 
-******(a)** Al2O3 + 2Na + H2O —> 2NaAlO2 + H2
+**(a)** Al2O3 + 2Na + H2O —> 2NaAlO2 + H2
 
-******(b)** Fe2(SO4)3 + Cu —> 2FeSO4 + CuSO4
+**(b)** Fe2(SO4)3 + Cu —> 2FeSO4 + CuSO4
 
  (c) BaO + Na2SO4 + H2O —> BaSO4 + 2NaOH
 
-******(d)** Al4C3 + 2CaC2 +8H2O —> 2Ca(AlO2)2 + 3CH4 + 2C2H2
+**(d)** Al4C3 + 2CaC2 +8H2O —> 2Ca(AlO2)2 + 3CH4 + 2C2H2
 
  (e) BaCl2 + NaHCO3 + NaOH —> BaCO3 + 2NaCl + H2O
 
-**(Lời giải) Câu 20 :******Cho các phát biểu sau:
+**(Lời giải) Câu 20 :**Cho các phát biểu sau:
 
  (a) Điện phân dung dịch MgCl2 có vách ngăn (điện cực trơ), thu được Mg.
 
@@ -577,7 +577,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**2.** ****◯*** *B.**3.** ****◯*** *C.**4.** ****◯*** *D.**5.
+**A.** 2. **B.** 3. **C.** 4. **D.**5.
 
  (a) Sai, MgCl2 + H2O —> Mg(OH)2 + Cl2 + H2
 
@@ -591,7 +591,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (g) Sai, là phương pháp bảo vệ bề mặt.
 
-**(Lời giải) Câu 21 :******Cho các phát biểu sau:
+**(Lời giải) Câu 21 :**Cho các phát biểu sau:
 
  (a) Vinyl clorua làm mất màu dung dịch brom.
 
@@ -607,7 +607,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**4.** ****◯*** *B.**2.** ****◯*** *C.**3.** ****◯*** *D.**5.
+**A.** 4. **B.** 2. **C.** 3. **D.**5.
 
  (a) Đúng
 
@@ -621,7 +621,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (f) Sai, chỉ anđehit bị oxi hóa thành muối CH3COONH4.
 
-**(Lời giải) Câu 22 :******Cho các phát biểu sau:
+**(Lời giải) Câu 22 :**Cho các phát biểu sau:
 
  (a) Vải làm từ chất liệu nilon-6,6 kém bền trong nước xà phòng có tính kiềm.
 
@@ -633,7 +633,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**3.** ****◯*** *B.**4.** ****◯*** *C.**1.** ****◯*** *D.**2.
+**A.** 3. **B.** 4. **C.** 1. **D.**2.
 
  (a) Đúng, do nhóm -CONH- dễ bị thủy phân trong kiềm.
 
@@ -657,19 +657,19 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Sau khi các phản ứng xảy ra hoàn toàn, số thí nghiệm thu được dung dịch chứa một muối là
 
-******◯*** *A.**3** ****◯*** *B.**2** ****◯*** *C.**4** ****◯*** *D.**5
+**A.** 3 **B.** 2 **C.** 4 **D.**5
 
-******(a)** CO2 dư + Ba(OH)2 —> Ba(HCO3)2
+**(a)** CO2 dư + Ba(OH)2 —> Ba(HCO3)2
 
  (b) 2KHSO4 + 2NaHCO3 —> K2SO4 + Na2SO4 + 2CO2 + 2H2O
 
-******(c)** BaO + Al2O3 —> Ba(AlO2)2
+**(c)** BaO + Al2O3 —> Ba(AlO2)2
 
  (d) Fe3O4 + Cu + 8HCl —> 3FeCl2 + CuCl2 + 4H2O
 
  (e) 4HCl + NaAlO2 —> NaCl + AlCl3 + 2H2O
 
-**(Lời giải) Câu 24 :******Cho các phát biểu sau đây về chất béo:
+**(Lời giải) Câu 24 :**Cho các phát biểu sau đây về chất béo:
 
  (a) Chất béo là trieste của glixerol với axit béo.
 
@@ -685,7 +685,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**1.** ****◯*** *B.**2.** ****◯*** *C.**3.** ****◯*** *D.**4.
+**A.** 1. **B.** 2. **C.** 3. **D.**4.
 
  (a) Đúng
 
@@ -699,7 +699,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (g) Đúng
 
-**(Lời giải) Câu 25 :******Cho các phát biểu sau:
+**(Lời giải) Câu 25 :**Cho các phát biểu sau:
 
  (a) Độ cứng của Cr lớn hơn Al.
 
@@ -715,7 +715,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Trong các phát biểu trên, số phát biểu đúng là
 
-******◯*** *A.**4.** ****◯*** *B.**1.** ****◯*** *C.**2.** ****◯*** *D.**3.
+**A.** 4. **B.** 1. **C.** 2. **D.**3.
 
  (a) Đúng
 
@@ -731,7 +731,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (g) Sai, Be không phản ứng, Mg phản ứng chậm
 
-**(Lời giải) Câu 26 :******Cho các phát biểu sau:
+**(Lời giải) Câu 26 :**Cho các phát biểu sau:
 
  (1) Crom là kim loại có tính khử mạnh hơn sắt.
 
@@ -747,7 +747,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu không đúng là
 
-******◯*** *A.**2.** ****◯*** *B.**1.** ****◯*** *C.**4.** ****◯*** *D.**3.
+**A.** 2. **B.** 1. **C.** 4. **D.**3.
 
  (1) Đúng
 
@@ -763,7 +763,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  (6) Đúng
 
-**(Lời giải) Câu 27 :******Cho các phát biểu sau:
+**(Lời giải) Câu 27 :**Cho các phát biểu sau:
 
  (a) Anilin và metyl amin đều là amin bậc 1.
 
@@ -779,7 +779,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu đúng là
 
-******◯*** *A.**5.** ****◯*** *B.**4.** ****◯*** *C.**2.** ****◯*** *D.**3.
+**A.** 5. **B.** 4. **C.** 2. **D.**3.
 
  (a) Đúng
 
@@ -807,7 +807,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Số phát biểu không đúng là
 
-******◯*** *A.**2** ****◯*** *B.**5** ****◯*** *C.**3** ****◯*** *D.**4
+**A.** 2 **B.** 5 **C.** 3 **D.**4
 
  (1) Sai, nhiều amin có tính bazơ yếu hơn NH3 như anilin…
 
@@ -835,21 +835,21 @@ Các thầy cô và các em có thể xem bài tương tự
 
  Sau khi các phản ứng xảy ra hoàn toàn, các thí nghiệm thu được chất rắn không tan là
 
-******◯*** *A.**1, 2, 4, 6** ****◯*** *B.**2, 3, 4, 6.
+**A.** 1, 2, 4, 6 **B.**2, 3, 4, 6.
 
-******◯*** *C.**1, 2, 6** ****◯*** *D.**1, 2, 4, 5, 6
+**C.** 1, 2, 6 **D.**1, 2, 4, 5, 6
 
-******(1)** Thu được Ag
+**(1)** Thu được Ag
 
-******(2)** Thu được C6H2Br3-NH2
+**(2)** Thu được C6H2Br3-NH2
 
  (3) Hỗn hợp sau phản ứng có CH3COOH, C2H5OH, CH3COOC2H5, H2SO4, H2O. Các chất tan hoặc không tan nhưng dạng lỏng, không có kết tủa.
 
-******(4)** Thu được Al(OH)3
+**(4)** Thu được Al(OH)3
 
  (5) Hòa tan Cu(OH)2 tạo phức màu tím
 
-******(6)** Thu được Ag
+**(6)** Thu được Ag
 
 Nguồn: Cậu Vàng – Thầy Lê Viết Long
 

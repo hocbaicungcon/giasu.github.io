@@ -186,18 +186,18 @@ Những câu thơ khép lại tác phẩm ca ngợi vẻ đẹp của cảnh s�
 Cho đoạn thơ:
 
 *“Họ giữ và truyền cho ta hạt lúa ta trồng
-**Họ truyền lửa cho mỗi nhà từ hòn than qua con cúi
-**Họ truyền giọng điệu mình cho con tập nói
-**Họ gánh theo tên xã, tên làng trong mỗi chuyến di dân
-**Họ đắp đập be bờ cho người sau trông cây hái trái
-**Có ngoại xâm thì chống ngoại xâm
-**Có nội thù thì vùng lên đánh bại
-**Để Đất Nước này là Đất Nước Nhân dân
-**Đất Nước của Nhân dân, Đất Nước của ca dao thần thoại
-**Dạy anh biết “yêu em từ thuở trong nôi”
-**Biết quý công cầm vàng những ngày lặn lội
-**Biết trồng tre đợi ngày thành gậy
-**Đi trả thù mà không sợ dài lâu”*
+**Họ truyền lửa cho mỗi nhà từ hòn than qua con cúi**
+**Họ truyền giọng điệu mình cho con tập nói**
+**Họ gánh theo tên xã, tên làng trong mỗi chuyến di dân**
+**Họ đắp đập be bờ cho người sau trông cây hái trái**
+**Có ngoại xâm thì chống ngoại xâm**
+**Có nội thù thì vùng lên đánh bại**
+**Để Đất Nước này là Đất Nước Nhân dân**
+**Đất Nước của Nhân dân, Đất Nước của ca dao thần thoại**
+**Dạy anh biết “yêu em từ thuở trong nôi”**
+**Biết quý công cầm vàng những ngày lặn lội**
+**Biết trồng tre đợi ngày thành gậy**
+**Đi trả thù mà không sợ dài lâu”***
 
 *(Trích Đất nước (Mặt đường khát vọng), Nguyễn Khoa Điềm, SGK Ngữ văn 12, tập một,  013, trang 121, 122)*
 
@@ -218,13 +218,13 @@ Mở bài nêu được vấn đề, Thân bài triển khai được vấn đ�
 
 *Khi ta lớn lên Đất nước đã có rồi
 **Đất Nước có trong những cái “ngày xửa ngày xưa …..” mẹ** thường hay kể
-**Đất Nước bắt đầu với miếng trầu bây giờ bà ăn
-**Đất Nước lớn lên khi dân mình biết trồng tre mà đánh giặc
-**Tóc mẹ thì bới sau đầu
-**Cha mẹ thương nhau bằng gừng cay muối mặn
-**Cái kèo, cái cột thành tên
-**Hạt gạo, phải một nắng hai sương xay, giã, giần, sàng
-**Đất Nước có từ ngày đó …*
+**Đất Nước bắt đầu với miếng trầu bây giờ bà ăn**
+**Đất Nước lớn lên khi dân mình biết trồng tre mà đánh giặc**
+**Tóc mẹ thì bới sau đầu**
+**Cha mẹ thương nhau bằng gừng cay muối mặn**
+**Cái kèo, cái cột thành tên**
+**Hạt gạo, phải một nắng hai sương xay, giã, giần, sàng**
+**Đất Nước có từ ngày đó …***
 
 (Trích *Đất nước* – Nguyễn Khoa Điềm, Ngữ văn 12, tập 1, trang 118, NXB Giáo dục, 2010 )
 
@@ -248,16 +248,16 @@ Cảm nhận của Anh (chị) về đoạn thơ trên. Từ đó, bình luận 
 Trong đoạn trích *Đất nước* (trích trường ca *Mặt đường khát vọng*), Nguyễn Khoa Điềm có viết:
 
 *Đất là nơi anh đến trường
-**Nước là nơi em tắm
-**Đất Nước là nơi ta hò hẹn
-**Đất nước là nơi em đánh rơi chiếc khăn trong nỗi nhớ thầm.*
+**Nước là nơi em tắm**
+**Đất Nước là nơi ta hò hẹn**
+**Đất nước là nơi em đánh rơi chiếc khăn trong nỗi nhớ thầm.***
 
 và:
 
 *Em ơi em Đất Nước là máu xương của mình
-**Phải biết gắn bó và san sẻ
-**Phải biết hóa thân cho dáng hình xứ sở
-**Làm nên đất nước muôn đời…*
+**Phải biết gắn bó và san sẻ**
+**Phải biết hóa thân cho dáng hình xứ sở**
+**Làm nên đất nước muôn đời…***
 
 (Ngữ văn 12, tập một, NXB Giáo dục Việt Nam, 2016)
 

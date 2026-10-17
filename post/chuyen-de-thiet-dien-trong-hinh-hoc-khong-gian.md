@@ -350,4 +350,4 @@ Thiết diện là hình thang vuông $MNPQ$ có diện tích bằng $2a\left( {
 
 ## Link tải Chuyên đề thiết diện
 
-Quý thầy cô tải tại đây [chuyen_de_thiet_dien](/assets/docs/chuyen_de_thiet_dien.pdf)
+Quý thầy cô tải tại đây [chuyen_de_thiet_dien](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

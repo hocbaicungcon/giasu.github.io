@@ -56,17 +56,17 @@ Các em học sinh cần luyện tập viết từng đoạn văn một, sau khi
 
 ### Luyện viết đoạn văn tương ứng với luận điểm
 
-***Yêu cầu :*** Trình bày rõ ràng, chính xác nội dung luận điểm trong câu chủ đề. Câu chủ đề thường đặt ở vị trí đầu đoạn (đoạn diễn dịch) hoặc cuối đoạn (đoạn quy nạp)
+**Yêu cầu :** Trình bày rõ ràng, chính xác nội dung luận điểm trong câu chủ đề. Câu chủ đề thường đặt ở vị trí đầu đoạn (đoạn diễn dịch) hoặc cuối đoạn (đoạn quy nạp)
 
-***Minh họa:*** *Bình luận cách nhìn của Nam Cao về người nông dân qua tác phẩm “Đôi mắt”?
-**Mẫu: *Luận điểm:* Sự đối lập về cách nhìn của Hoàng và Độ về người nông dân.
+**Minh họa:** *Bình luận cách nhìn của Nam Cao về người nông dân qua tác phẩm “Đôi mắt”?
+**Mẫu: *Luận điểm:* Sự đối lập về cách nhìn của Hoàng và Độ về người nông dân.**
 *Đoạn văn:* Hai nhân vật trung tâm trong truyện ngắn này là Hoàng và Độ. Hai người đại diện cho hai cách nhìn về người nông dân. Người kia chỉ nhìn thấy cái hình thức bên ngoài lố bịch  , ngu dốt, đáng khinh và đáng cười của người nông dân. Người kia biết vượt qua được hình thức bên ngoài, nhìn thấy “những nguyên cớ thật đẹp bên trong” của người dân cày. Nam Cao đã làm nổi bật tư tưởng , thái độ cũng như quan điểm của mình qua sự đối lập cách nhìn của hai nhân vật này về người nông dân.
 
 ### Viết đoạn văn tương ứng với luận cứ.
 
-*Yêu cầu:*** Cách viết các đoạn văn tương ứng với luận cứ  phải căn cứ vào yêu cầu của từng dạng đề như phân tích, chứng minh, giải thích, bình giảng…
+*Yêu cầu:** Cách viết các đoạn văn tương ứng với luận cứ  phải căn cứ vào yêu cầu của từng dạng đề như phân tích, chứng minh, giải thích, bình giảng…
 
-***Minh họa: *Đề 1:* Phân tích vẻ đẹp của tình người và niềm hi vọng vào cuộc sống ở các nhân vật: Tràng, người vợ nhặt, bà cụ Tứ trong truyện ngắn “Vợ nhặt” của Kim Lân?
+**Minh họa: *Đề 1:* Phân tích vẻ đẹp của tình người và niềm hi vọng vào cuộc sống ở các nhân vật: Tràng, người vợ nhặt, bà cụ Tứ trong truyện ngắn “Vợ nhặt” của Kim Lân?**
 Luận cứ: Tình huống của vợ nhặt.
 Đoạn văn: Có thể nói Kim Lân đã thật xuất sắc khi dựng lên tình huống “nhặt vợ” của anh cu Tràng. Tình huống ấy là cánh cửa khép mở để nhân vật bộc lộ nét đẹp trong tâm hồn mình. Dường như trong đói khổ người ta dễ đối xử tàn nhẫn với nhau, khi miếng ăn của mỗi người chưa đủ thì làm sao có thể đèo bòng thêm người này, người kia. Trong tình huống ấy, người dễ cấu xé nhau, dễ ích kỉ hơn là vị tha và người ta dễ đối xử tàn nhẫn làm cho nhau đau khổ. Nhưng nhà văn lại khám phá ra một điều ngược lại như ở nhân vật anh cu Tràng, người vợ nhặt và bà cụ Tứ. Chúng ta từng kinh hãi trước “xác người chết đói ngập đầy đường” “người lớn xanh xám như những bóng ma” , trước không khí “vẩn lên mùi hôi của rác rưởi và mùi gây của xác người”, từng ớn lạnh trước “tiếng quạ kêu từng hồi thê thiết” ấy, nhưng lạ thay, chúng ta không thể cầm lòng xúc động trước nghĩa cử cao đẹp mà bình thường, dung dị ấy của Tràng, bà cụ Tứ và cả người vợ ấy của Tràng nữa.
 
@@ -81,7 +81,7 @@ Nét dữ tợn của người lính Tây Tiến ở đây không hề bị nh�
 
 ### Luyện viết ngắn, viết dài
 
-*Yêu cầu:*** Cách luyện này rất có ích , hữu hiệu đối với tất cả các em. Tại sao vậy? Tại đặc điểm của văn nghị luận cũng giống như vũ trụ mà chúng ta đang sống vậy. Có thể dài rộng vô cùng nhưng cũng có thể rút gọn thành tối giản. Và bài văn cũng vậy có thể kéo dài thành một cuốn sách cũng có thể rút lại ở một vài câu.
+*Yêu cầu:** Cách luyện này rất có ích , hữu hiệu đối với tất cả các em. Tại sao vậy? Tại đặc điểm của văn nghị luận cũng giống như vũ trụ mà chúng ta đang sống vậy. Có thể dài rộng vô cùng nhưng cũng có thể rút gọn thành tối giản. Và bài văn cũng vậy có thể kéo dài thành một cuốn sách cũng có thể rút lại ở một vài câu.
 
 Sau khi luyện viết ngắn thành thạo thì sẽ luyện viết dài thành bài văn nghị luận. các bài văn dài thật ra là sự phát triển của một bài văn ngắn. Tuy nhiên cần lưu ý khi viết một bài nghị luận thì không thể kéo dài như viết một cuốn sách mà là độ dài phù hợp với một bài viết, khi viết một bài nghị luận thường là viết theo một khía cạnh của vấn đề vì vậy kích thước phù hợp sẽ là một yếu tố tạo nên thành công của bài nghị luận.
 

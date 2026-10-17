@@ -17,7 +17,7 @@ grade: 11
 | SỞ GIÁO DỤC VÀ ĐÀO TẠO TỈNH BÀ RỊA – VŨNG TÀU     ĐỀ THI CHÍNH THỨC | ĐỀ THI OLYMPIC 27/4 CHỌN HỌC SINH GIỎI THPT CẤP TỈNH NĂM HỌC 2023 – 2024   MÔN: HÓA HỌC 11 Thời gian làm bài thi: 180 phút Ngày thi: 19/3/2024 (Đề thi có 03 trang) |
 | --- | --- |
 
-**Cho nguyên tử khối các nguyên tố: *H =1; C= 12; N = 14; O = 16; Na = 23; Cl = 35,5; K = 39; Ag = 108; Mn = 55; Ba = 137; S = 32; Fe = 56; Ca = 40.***
+**Cho nguyên tử khối các nguyên tố: *H =1; C= 12; N = 14; O = 16; Na = 23; Cl = 35,5; K = 39; Ag = 108; Mn = 55; Ba = 137; S = 32; Fe = 56; Ca = 40.**
 
 **Câu 1 (2 điểm):**
 
@@ -27,9 +27,9 @@ grade: 11
 
 **b.** Viết công thức hydroxide tương ứng với oxide cao nhất của X và Y, nêu tính acid-base của chúng.
 
-**1.2.******Nguyên tố chlorine (Cl) có nguyên tử khối trung bình là 35,5 amu gồm hai đồng vị bền 35Cl và 37Cl. Để ghi phổ khối lượng của chlorine, phân tử Cl2 được phân li thành các nguyên tử Cl, rồi những nguyên tử này bị ion hóa thành ion Cl+. Các tín hiệu thu được sau quá trình phân tách ion đồng vị được chuyển thành đồ thị (phổ đồ). Trục hoành biểu thị tỉ số giữa khối lượng ion đồng vị theo đơn vị amu (*m*) và điện tích (* z*) của ion đồng vị đó, tỉ số này được kí hiệu là *m/z*. Trục tung biểu thị cường độ tương đối, tỉ lệ thuận với phần trăm số mol của các đồng vị.
+**1.2.**Nguyên tố chlorine (Cl) có nguyên tử khối trung bình là 35,5 amu gồm hai đồng vị bền 35Cl và 37Cl. Để ghi phổ khối lượng của chlorine, phân tử Cl2 được phân li thành các nguyên tử Cl, rồi những nguyên tử này bị ion hóa thành ion Cl+. Các tín hiệu thu được sau quá trình phân tách ion đồng vị được chuyển thành đồ thị (phổ đồ). Trục hoành biểu thị tỉ số giữa khối lượng ion đồng vị theo đơn vị amu (*m*) và điện tích (* z*) của ion đồng vị đó, tỉ số này được kí hiệu là *m/z*. Trục tung biểu thị cường độ tương đối, tỉ lệ thuận với phần trăm số mol của các đồng vị.
 
-**a.** Bằng tính toán, hãy cho biết phổ khối lượng nào sau đây phù hợp nhất?****
+**a.** Bằng tính toán, hãy cho biết phổ khối lượng nào sau đây phù hợp nhất?**
 
 **b.** Phân tử Cl2 cũng có thể bị ion hóa thành cation Cl2+. Hãy cho biết số lượng tín hiệu và cường độ tương đối của các tín hiệu trên phổ khối lượng tương ứng với cation Cl2+.
 
@@ -61,11 +61,11 @@ grade: 11
 
 **b.** Viết các phương trình hóa học thực hiện sơ đồ chuyển hóa sau (*ghi rõ điều kiện, nếu có*):
 
-X ****Y** ** Cl2****Z*** * khí Q
+X **Y** ** Cl2**Z** * khí Q
 
 **Câu 4 (3 điểm):**
 
-**4.1.** Ở 27,3oC, khí N2O4 bị phân hủy theo phương trình sau:  N2O4*(g)* ****2NO2 *(g)* (1)
+**4.1.** Ở 27,3oC, khí N2O4 bị phân hủy theo phương trình sau:  N2O4*(g)* **2NO2 *(g)* (1)**
 
  *(không màu)      (màu nâu đỏ)*
 
@@ -126,7 +126,7 @@ Chấp nhận sai số không đáng kể, các thành phần khác trong mẫu 
 
 **Câu 7 (3 điểm):**
 
-**7.1.** Các hydrocarbon X, Y, Z, T (MX < MY < MZ < MT) đều có 92,3077% khối lượng carbon trong phân tử. Tỉ khối hơi của T so với hydrogen nhỏ hơn 58. Biết:****
+**7.1.** Các hydrocarbon X, Y, Z, T (MX < MY < MZ < MT) đều có 92,3077% khối lượng carbon trong phân tử. Tỉ khối hơi của T so với hydrogen nhỏ hơn 58. Biết:**
 
 – Cứ 1 mol chất T tác dụng tối đa với 1 mol Br2 trong dung môi CCl4.
 
@@ -164,8 +164,8 @@ Số báo danh: ………………………………………
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [BA-RIA-VUNG-TAU-DE-CT-HOA-11](/assets/docs/BA-RIA-VUNG-TAU-DE-CT-HOA-11-giasu.ai.vn.doc)
-- [BA-RIA-VUNG-TAU-HDC-HOA-11](/assets/docs/BA-RIA-VUNG-TAU-HDC-HOA-11-giasu.ai.vn.docx)
+- [BA-RIA-VUNG-TAU-DE-CT-HOA-11](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [BA-RIA-VUNG-TAU-HDC-HOA-11](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

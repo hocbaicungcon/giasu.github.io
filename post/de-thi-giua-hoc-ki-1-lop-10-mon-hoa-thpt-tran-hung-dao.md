@@ -294,7 +294,7 @@ HƯỚNG DẪN CHẤM MÔN: HÓA HỌC LỚP: 10
 
 GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
-- [GIỮA HỌC KÌ I](/assets/docs/GIUA-HOC-KI-I-6.docx)
+- [GIỮA HỌC KÌ I](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

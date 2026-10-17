@@ -14,5 +14,5 @@ grade: 10
 
 ## #1 Đề thi chọn học sinh giỏi Toán 10 Trại hè Hùng Vương lần thứ 18 năm 2024
 
-- [2024 de-thi-chon-hoc-sinh-gioi-toan-10-trai-he-hung-vuong-lan-thu-18](/assets/docs/2024-de-thi-chon-hoc-sinh-gioi-toan-10-trai-he-hung-vuong-lan-thu-18.docx)
-- [2024-de-thi-chon-hoc-sinh-gioi-toan-10-trai-he-hung-vuong-lan-thu-18](/assets/docs/2024-de-thi-chon-hoc-sinh-gioi-toan-10-trai-he-hung-vuong-lan-thu-18.pdf)
+- [2024 de-thi-chon-hoc-sinh-gioi-toan-10-trai-he-hung-vuong-lan-thu-18](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2024-de-thi-chon-hoc-sinh-gioi-toan-10-trai-he-hung-vuong-lan-thu-18](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

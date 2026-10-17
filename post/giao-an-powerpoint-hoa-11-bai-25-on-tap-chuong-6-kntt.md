@@ -118,7 +118,7 @@ d. propanic acid + CH3OH/H2SO4 đặc
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [B25-LUYEN-TAP-LOP-11-NGUYEN-THI-THAO](/assets/docs/B25-LUYEN-TAP-LOP-11-NGUYEN-THI-THAO.docx)
+- [B25-LUYEN-TAP-LOP-11-NGUYEN-THI-THAO](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 - [BAI-25-LUYEN-TAP-LOP-11-GUYENX-THI-THAO](https://drive.google.com/file/d/1Wf1w1iGNzo9e39D5hFXsZDBPsG6CAdLR/view?usp=sharing)
 

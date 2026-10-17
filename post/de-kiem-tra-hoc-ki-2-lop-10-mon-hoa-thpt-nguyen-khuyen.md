@@ -16,9 +16,9 @@ grade: 10
 SỞ GIÁO DỤC VÀ ĐÀO TẠO TPHCM
 
 TRƯỜNG THCS -THPT NGUYỄN KHUYẾN **ĐỀ CHÍNH THỨC
-**ĐỀ KIỂM TRA HỌC KÌ 2 (2017-2018) MÔN: HÓA HỌC LỚP 10
-**Thời gian làm bài: 45 phút ; Ngày 28/04/2018
-**Câu I: (3,5 điểm)
+**ĐỀ KIỂM TRA HỌC KÌ 2 (2017-2018) MÔN: HÓA HỌC LỚP 10**
+**Thời gian làm bài: 45 phút ; Ngày 28/04/2018**
+**Câu I: (3,5 điểm)**
 1.  **(2đ)** Bổ túc và hoàn thành các phương trình hóa học sau:
 
 a- MnO2 + HCl(đ)  b- SO2 + Br2 + H2O 
@@ -27,7 +27,7 @@ c- Fe + S  d- O3 + KI + H2O 
 
 1. **(1,5đ)** Cho AgNO3 lần lượt vào các dung dịch đựng các chất sau: HCl, KNO3, Na2S. Trường hợp nào xảy ra phản ứng, viết phương trình hóa học xảy ra (*nếu có*).
 
-**Câu II: (2,5 điểm)
+**Câu II: (2,5 điểm)**
 1. **(0,75đ)** Trong phòng thí nghiệm, có thể dùng mô hình thí nghiệm nào (hình 1, 2, 3) để thu khí O2 (*xác định hình nào, không cần giải thích, không cần viết phương trình hóa học*).
 
 ![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Nguyễn Khuyến 1](file:///C:/Users/Admin/AppData/Local/Temp/lu3580oahkb.tmp/lu3580oaib8_tmp_d17dcc74aeaffe3e.png)
@@ -50,7 +50,7 @@ c- Fe + S  d- O3 + KI + H2O 
 
 3. Nung hỗn hợp bột đá vôi, đất sét và thạch cao ở nhiệt độ cao để sản xuất clinke trong công nghiệp sản xuất xi măng.
 
-**Câu III: (4 điểm)
+**Câu III: (4 điểm)**
 1. **(3,25đ)** Hòa tan hoàn toàn 27,6 (gam) hỗn hợp X gồm Fe và FeO trong dung dịch HCl dư. Sau phản ứng hoàn toàn thu được 6,72 lít khí (đktc).
 
 1. (1,5đ) Tính khối lượng từng chất trong hỗn hợp X.
@@ -65,12 +65,12 @@ c- Fe + S  d- O3 + KI + H2O 
 
 N = 14; Fe = 56; O = 16; H = 1; Mn = 55; Ag = 108; Cu = 64; Mg = 24; Sr = 87; Be = 9; Ca = 40.
 
-**=== Hết ===
+**=== Hết ===**
 SỞ GIÁO DỤC VÀ ĐÀO TẠO TPHCM
 
 TRƯỜNG THCS -THPT NGUYỄN KHUYẾN **ĐỀ CHÍNH THỨC
-**ĐÁP ÁNĐỀ KIỂM TRA HỌC KÌ 2 (2017-2018) MÔN HÓA HỌC LỚP 10
-**Câu I: (3,5 điểm).
+**ĐÁP ÁNĐỀ KIỂM TRA HỌC KÌ 2 (2017-2018) MÔN HÓA HỌC LỚP 10**
+**Câu I: (3,5 điểm).**
 1. Mỗi phương trình đúng: 0,5đ…………………………………………………………**0,5x 4 = 2đ.
 (Cân bằng sai: **…….– 0,25đ**). 
 
@@ -80,11 +80,11 @@ Mỗi phương trình đúng:…0,5đ……………………………………�
 
 (Cân bằng sai…….-0,25đ). 
 
-**Câu II: (2,5đ)
+**Câu II: (2,5đ)**
 1. Hình 2:…………(**0,25đ)**; hình **3:**…(** 0,5đ. )**……………………….………………………..**.0,75 đ
 2. Xác định đúng mỗi chất: 0,25đ……………………………………………….……**0,25x 4 = 1đ.
 3. Chất xúc tác, diện tích bề mặt, nhiệt độ ……………………………………….….**0,25x 3 = 0,75đ
-**Câu III: (4 điểm)
+**Câu III: (4 điểm)**
 1. **a)** 2 phương trình đúng **0,25đ**……………………………………………………….** 0,25x 2 = 0,5đ**.
 
 (sai cân bằng 1 phương trình…không trừ; 2 phương trình **…– 0,25đ**) . 
@@ -92,7 +92,7 @@ Mỗi phương trình đúng:…0,5đ……………………………………�
 Số mol Fe = 0,3mol……………**0,25đ**; khối lượng Fe = 16,8 gam………** 0,25đ**. ……………** 0,5đ
 Khối lượng FeO = 10,8 gam ………………………………………………………………….**0,5đ**. 
 
-**b)** 2 phương trình đúng ….**0,25đ**…………………………………………………….** 0,25x 2 = 0,5đ.
+**b)** 2 phương trình đúng ….**0,25đ**…………………………………………………….** 0,25x 2 = 0,5đ.**
 (sai cân bằng 1 phương trình…không trừ; 2 phương trình …– 0,25đ).
 
 Thể tích khí SO2 là 11,76 lít (0,525 mol)……………………………………………..……**0,5đ.
@@ -132,7 +132,7 @@ Vì nồng độ % H2SO4 dư = nồng độ % CuSO4 nên ta có:
 %= ; %mCuO = 65,22%……………………………………**0,25x 2 = 0,5đ
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 10 – Nguyen Khuyen – deda](/assets/docs/Hoa-10-Nguyen-Khuyen-deda.docx)
+- [Hoa 10 – Nguyen Khuyen – deda](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

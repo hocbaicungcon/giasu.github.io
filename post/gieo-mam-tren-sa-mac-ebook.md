@@ -23,4 +23,4 @@ Chúng tôi mong muốn cuốn sách đến được với thật nhiều ngư�
 
 Cùng chúng tôi Đáp-Đền-Tiếp-Nối nhé!
 
-Link tải ebook PDF Gieo mầm trên sa mạc: [ebook_gieo_mam_tren_sa_mac_mobile_v1](/assets/docs/ebook_gieo_mam_tren_sa_mac_mobile_v1.pdf)
+Link tải ebook PDF Gieo mầm trên sa mạc: [ebook_gieo_mam_tren_sa_mac_mobile_v1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

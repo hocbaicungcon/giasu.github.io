@@ -38,8 +38,8 @@ b) Cho toàn bộ khí SO2 **trên vào** 60 **gam dung dịch NaOH** 10% **thu 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [hoa 10-NTMK-da](/assets/docs/hoa-10-NTMK-da.docx)
-- [hoa 10-NTMK-de](/assets/docs/hoa-10-NTMK-de.doc)
+- [hoa 10-NTMK-da](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [hoa 10-NTMK-de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

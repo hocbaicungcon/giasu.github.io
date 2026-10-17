@@ -25,14 +25,14 @@ Tài liệu được biên soạn bởi Nhóm Toán và LaTeX, tuyển tập bà
 
 #### Download bài tập trắc nghiệm dạng đúng sai Toán 12
 
-- [bai-tap-trac-nghiem-dang-dung-sai-mon-toan-12](/assets/docs/bai-tap-trac-nghiem-dang-dung-sai-mon-toan-12.pdf)
+- [bai-tap-trac-nghiem-dang-dung-sai-mon-toan-12](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## #2 Luyện kỹ năng trắc nghiệm đúng sai tổng hợp chủ đề khảo sát hàm số
 
 Tài liệu được biên soạn bởi thầy giáo Đặng Công Đức (Giang Sơn), tuyển chọn các bài tập luyện kỹ năng trắc nghiệm đúng – sai tổng hợp chủ đề khảo sát hàm số môn Toán 12 THPT.
 
-- [luyen-ky-nang-trac-nghiem-dung-sai-tong-hop-chu-de-khao-sat-ham-so](/assets/docs/luyen-ky-nang-trac-nghiem-dung-sai-tong-hop-chu-de-khao-sat-ham-so.pdf)
+- [luyen-ky-nang-trac-nghiem-dung-sai-tong-hop-chu-de-khao-sat-ham-so](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## #3 Luyện kỹ năng trắc nghiệm đúng – sai vector và hệ trục tọa độ trong không gian
 
-- [luyen-ky-nang-trac-nghiem-dung-sai-vector-va-he-truc-toa-do-trong-khong-gian](/assets/docs/luyen-ky-nang-trac-nghiem-dung-sai-vector-va-he-truc-toa-do-trong-khong-gian.pdf)
+- [luyen-ky-nang-trac-nghiem-dung-sai-vector-va-he-truc-toa-do-trong-khong-gian](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

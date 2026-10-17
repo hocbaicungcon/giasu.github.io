@@ -138,8 +138,8 @@ Viết các phương trình phản ứng xảy ra.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-11-NGUYEN-VAN-CU-HA-NOI](/assets/docs/2023-2024-HSG-11-NGUYEN-VAN-CU-HA-NOI-giasu.ai.vn.docx)
-- [2023-2024-HSG-11-Truong-Nguyen-Van-Cu-Ha-Noi-File-De-HDC](/assets/docs/2023-2024-HSG-11-Truong-Nguyen-Van-Cu-Ha-Noi-File-De-HDC-giasu.ai.vn.doc)
+- [2023-2024-HSG-11-NGUYEN-VAN-CU-HA-NOI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2023-2024-HSG-11-Truong-Nguyen-Van-Cu-Ha-Noi-File-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

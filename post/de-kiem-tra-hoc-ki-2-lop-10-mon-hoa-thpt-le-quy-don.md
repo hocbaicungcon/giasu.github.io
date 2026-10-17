@@ -128,7 +128,7 @@ Những biện pháp nào dưới đây làm cân bằng trên chuyển dịch t
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 10 – Le Quy Don – deda.docx](/assets/docs/Hoa-10-Le-Quy-Don-deda.docx.doc)
+- [Hoa 10 – Le Quy Don – deda.docx](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

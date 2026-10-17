@@ -15,8 +15,8 @@ grade: 11
 
 Câu hỏi trắc nghiệm bài 2 phân bón vô cơ chuyên đề cánh diều
 
-**BÀI 2 – CĐ – CD: PHÂN BÓN VÔ CƠ
-**A. TÓM TẮT LÝ THUYẾT
+**BÀI 2 – CĐ – CD: PHÂN BÓN VÔ CƠ**
+**A. TÓM TẮT LÝ THUYẾT**
 **1.  Phân loại** nguyên tố dinh dưỡng: chia thành 3 loại:
 
 + Nguyên tố dinh dưỡng đa lượng: N, P, K.
@@ -25,21 +25,21 @@ Câu hỏi trắc nghiệm bài 2 phân bón vô cơ chuyên đề cánh diều
 
 + Nguyên tố dinh dưỡng vi lượng: Fe, Co, Mn, Zn, Cu, Mo, B.
 
-**2. Vai trò nguyên tố dinh dưỡng:
-**a) Nitrogen
+**2. Vai trò nguyên tố dinh dưỡng:**
+**a) Nitrogen**
 **–** Có trong chlorophyll (chất diệp lục), amino acid, nucleic acid, protein, vitamin, enzyme.
 
 – Nitrogen thúc đẩy quá trình giúp cây ra nhiều nhánh, nhiều cành, nhiều lá, lá có màu xanh, kích thước to, quang hợp mạnh, làm tăng năng suất cây trồng.
 
-**b) Phosphorus
+**b) Phosphorus**
 + Tham gia vào thành phần các enzyme, xúc tác cho quá trình tổng hợp amino acid, protein trong cây, có mặt trong nhân tế bào cần cho hình thành bộ phận mới của cây.
 
 + Kích thích sự phát triển của rễ cây, làm cho rễ cây ăn sâu và lan rộng trong đất, giúp cây chống chịu được hạn và ít đổ ngã, kich thích quá trình để nhánh và nảy chồi, thúc đẩy cây ra hoa, quả sớm, nhiều, làm tăng khả năng chống chịu của cây trồng đối với rét hại, một số loại bệnh và đất chua, phèn.
 
-**c) Potassium
+**c) Potassium**
 + Giúp hoạt hóa enzim để xúc tác cho các quá trình tổng hợp và làm tăng hàm lượng tinh bột, protein, đường… trong quả, củ, thân, làm tăng khả năng chống chịu của cây trồng đối với tác động bên ngoài như hạn hán, rét hại, sâu bệnh.
 
-**3. Phân loại phân bón vô cơ
+**3. Phân loại phân bón vô cơ**
 **3.1. Phân bón đa lượng:** có ít nhất một nguyên tố dinh dưỡng đa lượng N,P, K, chia thành:
 
 **a) Phân bón đơn dinh dưỡng:** chỉ chứa một trong ba nguyên tố dinh dưỡng N, P, K
@@ -66,21 +66,21 @@ Câu hỏi trắc nghiệm bài 2 phân bón vô cơ chuyên đề cánh diều
 
 **3.3. Phân bón vi lượng:** chứa ít nhất 1 nguyên tố dinh dưỡng vi lượng Fe, Co, Mn, Zn, Cu, Mo, B.
 
-**4 . Quy trình sản xuất và cách sử dụng một số loại phân bón vô cơ
-**a. Phân uera
+**4 . Quy trình sản xuất và cách sử dụng một số loại phân bón vô cơ**
+**a. Phân uera**
 **– Thành phần:** carbonyl diamide: (NH2)2CO, hạt màu trắng, dễ hút ẩm, tan tốt trong nước.
 
 **– Sản xuất:** CO2 + 2NH3        (NH2)2CO + H2O
 
-**–  Cách sử dụng:** dùng bón thúc (rải hạt, pha thành dung dịch): bón phân trong thời kỳ cây trồng đang sinh trưởng, phù hợp nhiều loại đất, ***không làm tăng độ chua*** của đất.
+**–  Cách sử dụng:** dùng bón thúc (rải hạt, pha thành dung dịch): bón phân trong thời kỳ cây trồng đang sinh trưởng, phù hợp nhiều loại đất, **không làm tăng độ chua** của đất.
 
-**b. Phân ammonium sulfate (phân bón SA)
+**b. Phân ammonium sulfate (phân bón SA)**
 **– Thành phần:** ammonium sulfate (NH4)2SO4 hạt mịn, trắng ngà hoặc xám xanh, có mùi ammonia, vị mặn hơi chua, không vón cục, tan tốt trong nước tạo môi trường acid.
 
 **–  Sản xuất:** 2NH3 + H2SO4  → (NH4)2SO4
 
-**–  Cách sử dụng:** Dùng để bón thúc (rải hạt, pha thành dung dịch), phù hợp nhiều loại đất (đặc biệt đất bazan, đất xám) tuy nhiên ***dễ làm chua đất .
-**c. Phân hỗn hợp NPK
+**–  Cách sử dụng:** Dùng để bón thúc (rải hạt, pha thành dung dịch), phù hợp nhiều loại đất (đặc biệt đất bazan, đất xám) tuy nhiên **dễ làm chua đất .**
+**c. Phân hỗn hợp NPK**
 **–  Các bước phối trộn**:
 
 **B ước  1:** Nguyên liệu: các phân đơn dinh dưỡng đa lượng, chất phụ gia (mùn hữu cơ, humic acid, bột dolomite, bột bentonite, bột đá vôi ….)
@@ -95,7 +95,7 @@ Câu hỏi trắc nghiệm bài 2 phân bón vô cơ chuyên đề cánh diều
 
 **B ước  6:** Tiến hành tạo hạt, thu được phân hỗn hợp có màu sắc, kích thước khá đồng nhất.
 
-**d. Phân phức hợp chứa N, P và ammophos
+**d. Phân phức hợp chứa N, P và ammophos**
 **– Thành phần:** hợp chất giữa ammonium với gốc phosphate
 
 **– Sản xuất:** Tùy tỉ lệ sẽ tạo các loại phân phức hợp khác nhau.
@@ -112,8 +112,8 @@ DAP
 
 TAP
 
-– Điều chỉnh tỉ lệ ammonia và phosphoric acid thu được ***hỗn hợp cả DAP và MAP gọi là phân phức hợp ammophos.
-**e. Phân superphosphate
+– Điều chỉnh tỉ lệ ammonia và phosphoric acid thu được **hỗn hợp cả DAP và MAP gọi là phân phức hợp ammophos.
+**e. Phân superphosphate**
 **– Nguyên liệu:** Từ quặng apatite đem nghiền, loại bở tạp chất thu apatite tinh luyện.
 
 **–  Quy trình 1:** apatite tinh luyện   Ca(H2PO4)2 + CaSO4 + các khí
@@ -124,34 +124,34 @@ TAP
 
 **–  Cách sử dụng:** Phân superphosphate dùng để bón lót và bón thúc, thích hợp cho các loại cây ngắn ngày và các cây cần nhiều sulfur.
 
-**5 . Bảo quản phân bón vô cơ
+**5 . Bảo quản phân bón vô cơ**
 – Không để phân bón bị ẩm ướt.
 
 – Không để phân bón bị nóng.
 
 – Không để lẫn các loại phân bón với nhau.
 
-**B. BÀI TẬP TRẮC NGHIỆM
-**MỨC ĐỘ 1: BIẾT
+**B. BÀI TẬP TRẮC NGHIỆM**
+**MỨC ĐỘ 1: BIẾT**
 **Câu 1.** Dựa vào hàm lượng mà cây trồng cần nguyên tố nào sau đây là nguyên tố dinh dưỡng đa lượng?
 
- **A.** Calcium. **B.** Nitrogen. **C.** Sulfur. **D.** Zinc.
+ **A.** Calcium. B.** Nitrogen. **C.** Sulfur. D.** Zinc.
 
 **Câu 2.** Dựa vào hàm lượng mà cây trồng cần nguyên tố nào sau đây là nguyên tố dinh dưỡng vi lượng?
 
- **A.** Phosphorus. **B.** Nitrogen. **C.** Potssium. **D.** Cobalt.
+ **A.** Phosphorus. B.** Nitrogen. **C.** Potssium. D.** Cobalt.
 
 **Câu  3 .** Loại phân bón nào sau đây chứa nguyên tố dinh dưỡng nitrogen?
 
- **A.** Potassium sulfate. **B.** Urea.       C.**Superphosphate.**                                                        D.**Potassium chloride.
+ **A.** Potassium sulfate. B.** Urea.       C.**Superphosphate.**                                                        D.**Potassium chloride.
 
 **Câu 4.** Chất lượng phân lân được đánh giá qua hàm lượng
 
-     **A.** %P2O5hh. **B.**%K2Ohh. **C.**%P2O3hh. **D.**%PH3hh.
+     **A.** %P2O5hh. B.**%K2Ohh. **C.** %P2O3hh. D.**%PH3hh.
 
 **Câu 5.** Phân bón đa lượng đa dinh dưỡng là
 
-**A.** loại phân bón chỉ chứa một trong ba nguyên tố dinh dưỡng đa lượng N, P, K. B.** loại phân bón chứa từ hai nguyên tố dinh dưỡng đa lượng trở lên.
+**A.** loại phân bón chỉ chứa một trong ba nguyên tố dinh dưỡng đa lượng N, P, K. B. loại phân bón chứa từ hai nguyên tố dinh dưỡng đa lượng trở lên.
 
 **C.** loại phân bón chứa cả ba nguyên tố dinh dưỡng đa lượng N, P, K..
 
@@ -159,51 +159,51 @@ TAP
 
 **Câu 6.** Phân bón nào sau đây là phân bón phức hợp?
 
- **A.** Potassium sulfate. **B.** Urea.       C.**Superphosphate.**                                                        D.**ammophos.
+ **A.** Potassium sulfate. B.** Urea.       C.**Superphosphate.**                                                        D.**ammophos.
 
 **Câu 7.** Phân bón rễ trung lượng là loại phân bón trong thành phần có chứa ít nhất mấy nguyên tố dinh dưỡng trung lượng?
 
- **A.** 1. **B.** 2.                                   **C.** 3. **D.** 4.
+ **A.** 1. B.** 2.                                   **C.** 3. D.** 4.
 
 **Câu 8.** Phân urea có thành phần chính là
 
- **A.** NH4NO3.                       **B.** (NH4)2CO3.                   **C.** (NH2)2CO.                    **D**. (NH4)2CO.
+ **A.** NH4NO3.                       B.** (NH4)2CO3.                   **C.** (NH2)2CO.                    D**. (NH4)2CO.
 
 **Câu  9.** Nguyên liệu để sản xuất phân urea là 
 
  **A**. ammonia và sulfuric acid đặc.                                **B.** ammonia và carbon dioxide.
 
-     **C.** ammonia và phosphoric acid.                                 **D.** ammonia và nitric acid.
+     **C.** ammonia và phosphoric acid.                                 D.** ammonia và nitric acid.**
 
 **Câu 10.** Phân bón SA được sản xuất theo phản ứng giữa ammonia và
 
  **A**. sulfuric acid đặc.                                                     **B.** carbon dioxide.
 
-     **C.** phosphoric acid.                                                      **D.** nitric acid.
+     **C.** phosphoric acid.                                                      D.** nitric acid.**
 
 **Câu  11.** Nguyên liệu để sản xuất phân phức hợp N, P là 
 
  **A**. ammonia và sulfuric acid đặc.                                **B.** ammonia và carbon dioxide.
 
-     **C.** ammonia và phosphoric acid.                                 **D.** ammonia và nitric acid.
+     **C.** ammonia và phosphoric acid.                                 D.** ammonia và nitric acid.**
 
 **Câu  12.** Thành phần của phân phức hợp ammophos gồm
 
- **A.** DAP và TAP.                                                          **B.** DAP và MAP.
+ **A.** DAP và TAP.                                                          B.** DAP và MAP.**
 
-     **C.** MAP và TAP.                                                         **D.** DAP, MAP và TAP.
+     **C.** MAP và TAP.                                                         D.** DAP, MAP và TAP.**
 
 **Câu  13 .** Phân superphosphate được sản xuất theo quy trình sử dụng phosphoric acid (H3PO4) với nồng độ phù hợp phản ứng với apatite tinh luyện có thành phần chủ yếu là
 
-   **A.** Ca3(PO4)2.                                                               **B.** Ca(H2PO4)2.                
+   **A.** Ca3(PO4)2.                                                               B.** Ca(H2PO4)2.                **
 
- **C.** Ca(H2PO4)2 và CaSO4.                                           **D**. CaHPO4.
+ **C.** Ca(H2PO4)2 và CaSO4.                                           D**. CaHPO4.**
 
 **Câu  14 .** Phân superphosphate được sản xuất theo quy trình sử dụng sulfuric acid đặc với lượng phù hợp phản ứng với apatite tinh luyện có thành phần chủ yếu là
 
-   **A.** Ca3(PO4)2.                                                               **B.** Ca(H2PO4)2.                
+   **A.** Ca3(PO4)2.                                                               B.** Ca(H2PO4)2.                **
 
- **C.** Ca(H2PO4)2 và CaSO4.                                           **D**. CaHPO4 và CaSO4.
+ **C.** Ca(H2PO4)2 và CaSO4.                                           D**. CaHPO4 và CaSO4.**
 
 **Câu 15.** Biện pháp nào sau đây **không** dùng để bảo quản phân bón vô cơ?
 
@@ -215,7 +215,7 @@ TAP
 
      **D.** Để lẫn các loại phân bón vô cơ với nhau.
 
-**MỨC ĐỘ 2 : HIỂU
+**MỨC ĐỘ 2 : HIỂU**
 **Câu 1.** Nhận xét nào sau đây là **không** đúng?
 
  **A.** Nitrogen thuộc nhóm nguyên tố dinh dưỡng đa lượng.
@@ -228,11 +228,11 @@ TAP
 
 **Câu 2.** Hàm lượng đạm tổng số của phân ammonium nitrate nguyên chất là
 
- **A.** 26,17%                         **B.** 35%                               **C.** 46,47%                                     **D.** 17,5%.
+ **A.** 26,17%                         B.** 35%                               **C.** 46,47%                                     D.** 17,5%.
 
 **Câu 3.** Hàm lượng kali hữu hiệu của phân potassium chloride nguyên chất là
 
- **A.** 52,35%                         **B.** 54,02%                          **C.** 63,09%                                     **D.** 73,83%           
+ **A.** 52,35%                         B.** 54,02%                          **C.** 63,09%                                     D.** 73,83%           
 
 **Câu 4.** Nhận xét nào sau đây là đúng?
 
@@ -304,7 +304,7 @@ TAP
 
      **D.** Phân urea có thành phần chính là ammonium carbonate.
 
-**MỨC ĐỘ 3, 4: VẬN DỤNG – VẬN DỤNG CAO
+**MỨC ĐỘ 3, 4: VẬN DỤNG – VẬN DỤNG CAO**
 **Câu  1.** Cho các phát biểu sau:
 
       (a) Phân đạm ammonium chloride là loại phân bón đơn dinh dưỡng đa lượng.
@@ -319,9 +319,9 @@ TAP
 
       Số nhận phát biểu đúng là
 
- **A.** 2. **B.** 3.                                  **C.** 4. **D.** 5.
+ **A.** 2. B.** 3.                                  **C.** 4. D.** 5.
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
  (a), (c), (d) đúng.
 
      (b) sai vì chất lượng của phân kali được đánh giá qua hàm lượng kali hữu hiệu, kí hiệu là %K2Ohh.
@@ -330,11 +330,11 @@ TAP
 
 **Câu 2.** Hàm lượng đạm tổng số của phân bón vô cô nguyên chất nào sau đây cao nhất?
 
-      **A.** Ammonium chloride.                                             **B.** Urea. 
+      **A.** Ammonium chloride.                                             B.** Urea. **
 
-      **C.** Ammonium nitrate                                                 **D.** Ammonium sulfate
+      **C.** Ammonium nitrate                                                 D.** Ammonium sulfate**
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
      NH4Cl: %N = = 26,17%;
 
      (NH2)2CO: %N = = 46,67%;
@@ -345,9 +345,9 @@ TAP
 
 **Câu 3.** Cho các loại phân bón vô cơ sau: Urea, ammonium chloride, ammonium sulfate, potassium sulfate và superphosphate. Số loại phân bón làm tăng độ chua của đất là
 
- **A.** 2. **B.** 3.                                  **C.** 4. **D.** 5.
+ **A.** 2. B.** 3.                                  **C.** 4. D.** 5.
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
      * NH4Cl, (NH4)2SO4 thủy phân tạo môi trường axit:
 
      NH4Cl NH4+ + Cl–
@@ -366,25 +366,25 @@ TAP
 
      Phân lân superphosphate thu được theo quy trình trên chứa Ca­­(H2PO4)2 và các chất khác không chứa phosphorus. Hàm lượng P2O5hh có trong phân lân đó là 56,8%. Khối lượng quặng apatite (chứa 90% Ca5(PO4)3F và 10% tạp chất không chứa phosphorus) để điều chế được 120 tấn phân lân đó là
 
- **A.** 168,9 tấn.                 **B.** 184,6 tấn.                                 **C.** 179,2 tấn.                             **D.** 173,5 tấn.
+ **A.** 168,9 tấn.                 B.** 184,6 tấn.                                 **C.** 179,2 tấn.                             D.** 173,5 tấn.
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
 tấn:
 
 Bảo toàn nguyên tố P ta có:
 
 **Câu  5.** Ngô là loại cây trồng “phàm ăn”, để đảm bảo độ dinh dưỡng trong đất, với mỗi hecta đất trồng ngô, người nông dân cần cung cấp 150kg N; 60 kg P2O5 và 110 kg K2O. Loại phân mà người nông dân sử dụng là phân hỗn hợp NPK (20 – 20 – 15) trộn với phân kali (%K2Ohh = 60%) và urea (%Nt = 46%). Tổng khối lượng phân bón đã sử dụng cho 1 hecta đất **gần nhất** với giá trị nào sau đây?
 
- **A.** 300 kg.                          **B.** 810kg.                           **C.** 604 kg.                              **D.** 783 kg.
+ **A.** 300 kg.                          B.** 810kg.                           **C.** 604 kg.                              D.** 783 kg.
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
 a = 300; b = 325/3; c = 4500/23
 
 a +b + c 604
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [83.-Bai-2-Phan-bon-vo-co-Ha-Tran.ok_](/assets/docs/83.-Bai-2-Phan-bon-vo-co-Ha-Tran.ok_.docx)
+- [83.-Bai-2-Phan-bon-vo-co-Ha-Tran.ok_](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

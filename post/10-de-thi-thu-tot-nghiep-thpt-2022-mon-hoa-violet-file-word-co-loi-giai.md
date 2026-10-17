@@ -261,7 +261,7 @@ Phát biểu nào sau đây **không** đúng?
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [FILE_20220501_071836_10-DE-THI-THU-THPT-TANG](/assets/docs/FILE_20220501_071836_10-DE-THI-THU-THPT-TANG.docx)
+- [FILE_20220501_071836_10-DE-THI-THU-THPT-TANG](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể tham khảo thêm nhiều đề thi hơn tại
 

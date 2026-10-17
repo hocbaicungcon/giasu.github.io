@@ -40,7 +40,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi và đáp án
 
-- [Phuc-Trach-Ha-Tinh-Lan-1](/assets/docs/Phuc-Trach-Ha-Tinh-Lan-1.docx)
+- [Phuc-Trach-Ha-Tinh-Lan-1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 

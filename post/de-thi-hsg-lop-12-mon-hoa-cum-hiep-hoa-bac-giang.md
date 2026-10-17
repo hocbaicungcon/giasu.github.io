@@ -310,9 +310,9 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Cụm Hiệp Hòa 2017-2018
 
-- [1. DE HH_CT (Hoa)](/assets/docs/1.-DE-HH_CT-Hoa.doc)     [2. DAP AN DE HSG HOA LOP 12_HH_CT](/assets/docs/2.-DAP-AN-DE-HSG-HOA-LOP-12_HH_CT.doc)
+- [1. DE HH_CT (Hoa)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)     [2. DAP AN DE HSG HOA LOP 12_HH_CT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-Cụm Hiệp Hòa 2014-2015  [Đề thi HSG cơ sở 12(2014-2015)](/assets/docs/De-thi-HSG-co-so-122014-2015-Huong-ra-de..doc)
+Cụm Hiệp Hòa 2014-2015  [Đề thi HSG cơ sở 12(2014-2015)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

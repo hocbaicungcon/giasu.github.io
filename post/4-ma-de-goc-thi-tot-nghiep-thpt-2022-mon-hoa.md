@@ -239,17 +239,17 @@ Biết tại catot ion Cu2+ điện phân hết thành Cu trước khi ion H+ đ
 
      **A.** 0,15.                              **B.** 0,20.                              **C.** 0,25.                              **D.** 0,10.
 
-- [201-207-209-215-217-223](/assets/docs/201-207-209-215-217-223.docx)
-- [202-208-210-216-218-224](/assets/docs/202-208-210-216-218-224.docx)
-- [203-205-211-213-219-221](/assets/docs/203-205-211-213-219-221.docx)
-- [204-206-212-214-220-222](/assets/docs/204-206-212-214-220-222.docx)
+- [201-207-209-215-217-223](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [202-208-210-216-218-224](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [203-205-211-213-219-221](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [204-206-212-214-220-222](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Hoặc các file khác
 
-- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-201.-TTB](/assets/docs/2022.-De-tot-nghiep-THPT-mon-Hoa-ma-201.-TTB.docx)
-- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-202.-TTB](/assets/docs/2022.-De-tot-nghiep-THPT-mon-Hoa-ma-202.-TTB.docx)
-- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-203.-TTB](/assets/docs/2022.-De-tot-nghiep-THPT-mon-Hoa-ma-203.-TTB.docx)
-- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-204.-TTB](/assets/docs/2022.-De-tot-nghiep-THPT-mon-Hoa-ma-204.-TTB.docx)
+- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-201.-TTB](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-202.-TTB](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-203.-TTB](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2022.-De-tot-nghiep-THPT-mon-Hoa-ma-204.-TTB](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô xem và download các đề thi khác tại
 

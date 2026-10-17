@@ -119,7 +119,7 @@ HƯỠNG DẪN CHẤM MÔN HÓA HỌC LỚP 11 – BẢNG A |
 ***Chú ý: Học sinh giải cách khác đúng vẫn cho điểm tối đa của câu đó.
 GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề thi
 
-- [17-18](/assets/docs/17-18.docx)
+- [17-18](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

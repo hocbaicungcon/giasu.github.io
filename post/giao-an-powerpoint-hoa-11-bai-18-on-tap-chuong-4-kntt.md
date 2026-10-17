@@ -103,7 +103,7 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [Bai-18_On-tap-chuong-4_Nguyen-Thi-Thanh-Thuy](https://drive.google.com/file/d/187a_uJA53bBGZd8hQ13_0aEVqHz8OKnU/view?usp=sharing)
 
-- [Bai-18-ON-TAP-CHUONG-4-Nguyen-Thi-Thanh-Thuy](/assets/docs/Bai-18-ON-TAP-CHUONG-4-Nguyen-Thi-Thanh-Thuy.docx)
+- [Bai-18-ON-TAP-CHUONG-4-Nguyen-Thi-Thanh-Thuy](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

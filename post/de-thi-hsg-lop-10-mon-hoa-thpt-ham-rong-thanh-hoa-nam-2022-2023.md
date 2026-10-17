@@ -26,23 +26,23 @@ Họ, tên thí sinh:…………………………………………………�
 
 **Câu 1:** Khí carbon dioxide (CO2) là khí gây nên hiệu ứng nhà kính mạnh. Cho biết carbon (C) có 2 đồng vị là và oxygen (O) có 3 đồng vị . Số phân tử khí carbon dioxide có thể được tạo bởi các đồng vị trên là
 
-   **A.** 12.                                **B.** 8.                                  **C.** 10.                                **D.** 14.
+   **A.** 12.                                B.** 8.                                  **C.** 10.                                D.** 14.
 
 **Câu 2:** Ion X+ và Y – đều có cấu hình electron ở lớp ngoài cùng là 3s23p6. Liên kết được tạo thành trong hợp chất XY là loại liên kết
 
-   **A.** cộng hóa trị có cực.                                               **B.** ion.
+   **A.** cộng hóa trị có cực.                                               B.** ion.**
 
-   **C.** cho – nhận.                                                            **D.** cộng hóa trị không cực.
+   **C.** cho – nhận.                                                            D.** cộng hóa trị không cực.**
 
 **Câu 3:** Phản ứng toả nhiệt là phản ứng
 
-   **A.** biến thiên enthalpy có giá trị dương.      **B.** biến thiên enthalpy có giá trị âm.
+   **A.** biến thiên enthalpy có giá trị dương.      B.** biến thiên enthalpy có giá trị âm.**
 
-   **C.** biến thiên enthalpy bằng 0.              **D.** năng lượng của hệ chất phản ứng thấp hơn của hệ sản phẩm.
+   **C.** biến thiên enthalpy bằng 0.              D.** năng lượng của hệ chất phản ứng thấp hơn của hệ sản phẩm.**
 
 **Câu 4:** Trong phản ứng hóa học: 2Na + 2H2O → 2NaOH + H2, chất nào tham gia vào quá trình khử?
 
-   **A.** NaOH.                         **B.** Na.                               **C.** H2.                               **D.** H2O.
+   **A.** NaOH.                         B.** Na.                               **C.** H2.                               D.** H2O.
 
 **Câu 5:** Phương trình nhiệt hoá học sau:
 
@@ -50,35 +50,35 @@ H2(g) + I2(s)  HI(g)          ∆ f H0298 = 26,48 (kJmol-1)
 
 Ở cùng điều kiện phản ứng, nếu thu được 2 mol HI thì lượng nhiệt cần thu vào là bao nhiêu?
 
-   **A.** 26,48 kJ.                      **B.** 79,44 kJ.                       **C.** 52,96 kJ.                      **D.** 794,4 kJ.
+   **A.** 26,48 kJ.                      B.** 79,44 kJ.                       **C.** 52,96 kJ.                      D.** 794,4 kJ.
 
 **Câu 6:** Nguyên tố có cấu hình electron hóa trị 4d25s2 ở vị trí nào trong bảng tuần hoàn?
 
-   **A.** Chu kì 5, nhóm IVB.                                             **B.** Chu kì 4, nhóm IIA.
+   **A.** Chu kì 5, nhóm IVB.                                             B.** Chu kì 4, nhóm IIA.**
 
-   **C.** Chu kì 5, nhóm IIA.                                              **D.** Chu kì 4, nhóm VB.
+   **C.** Chu kì 5, nhóm IIA.                                              D.** Chu kì 4, nhóm VB.**
 
 **Câu 7:** Cho phản ứng: Br2 (*l*) + HCOOH (* aq*)⟶ 2HBr (* aq*) + CO2 (* s*)
 
 Nồng độ ban đầu của Br2 là aM, sau 50 giây nồng độ Br2 còn lại là 0,02M. Tốc độ trung bình của phản ứng trên là 4.10-5M/s. Giá trị của a là
 
-   **A.** 0,02 M                         **B.** 0,07 M                          **C.** 0,02 M                         **D.** 0,022 M.
+   **A.** 0,02 M                         B.** 0,07 M                          **C.** 0,02 M                         D.** 0,022 M.
 
 **Câu 8:** Người ta đã sử dụng nhiệt độ của phản ứng đốt cháy than đá để nung vôi, biện pháp kỹ thuật nào sau đây **không** được sử dụng để tăng tốc độ phản ứng nung vôi?
 
-   **A.** Đập nhỏ đá vôi với kích thước khoảng 10 cm. **B.** Tăng nhiệt độ phản ứng lên khoảng 9000C.
+   **A.** Đập nhỏ đá vôi với kích thước khoảng 10 cm. B.** Tăng nhiệt độ phản ứng lên khoảng 9000C.**
 
-   **C.** Tăng nồng độ khí cacbonic.                               **D.** Thổi không khí nén vào lò nung vôi.
+   **C.** Tăng nồng độ khí cacbonic.                               D.** Thổi không khí nén vào lò nung vôi.**
 
 **Câu 9:** Cho công thức Lewis của các phân tử sau:
 
 Số phân tử mà nguyên tử trung tâm **không** thoả mãn quy tắc octet là
 
-   **A.** 4                                   **B. 2**                                   **C.** 1                                   **D.** 3
+   **A.** 4                                   B. 2**                                   **C.** 1                                   D.** 3
 
 **Câu 10:** Oxide cao nhất của một nguyên tố R có công thức R2O5. Nguyên tố R đó là
 
-   **A.** Magnesium                **B.** Sulfur                          **C.** Carbon                        **D.** Nitrogen
+   **A.** Magnesium                B.** Sulfur                          **C.** Carbon                        D.** Nitrogen
 
 **Câu 11:** Dựa vào phương trình nhiệt hóa học của phản ứng sau:
 
@@ -92,7 +92,7 @@ Số phân tử mà nguyên tử trung tâm **không** thoả mãn quy tắc oct
 
 Cặp phản ứng thu nhiệt là:
 
-   **A.** (2) và (3).                     **B.** (1) và (4).                     **C.** (1) và (2).                     **D.** (3) và (4).
+   **A.** (2) và (3).                     B.** (1) và (4).                     **C.** (1) và (2).                     D.** (3) và (4).
 
 **Câu 12:** Phản ứng nào sau đây **không** là phản ứng oxi hóa-khử ?
 
@@ -106,13 +106,13 @@ Cặp phản ứng thu nhiệt là:
 
 **Câu 13:** Lượng nhiệt (toả ra hoặc thu vào) của phản ứng ở điều kiện chuẩn gọi là
 
-   **A.** biến thiên enthalpy chuẩn.                                     **B.** nhiệt lượng tỏa ra.
+   **A.** biến thiên enthalpy chuẩn.                                     B.** nhiệt lượng tỏa ra.**
 
-   **C.** nhiệt lượng thu vào.                                              **D.** biến thiên năng lượng.
+   **C.** nhiệt lượng thu vào.                                              D.** biến thiên năng lượng.**
 
 **Câu 14:** Nguyên tử sodium (Na) có điện tích hạt nhân là 11+ và có 12 neutron. Nguyên tử này có kí hiệu là
 
-   **A.**.                            **B.**.                            **C.**.                            **D.**.
+   **A.** .                            B.**.                            **C.** .                            D.**.
 
 **Câu 15:** Bạc tiếp xúc với không khí có lẫn H2S bị hóa đen do phản ứng
 
@@ -120,25 +120,25 @@ Cặp phản ứng thu nhiệt là:
 
 Phát biểu nào sau đây đúng?
 
-   **A.** Ag là chất oxi hóa; H2S là chất khử.                  **B.** Ag là chất khử; O2 là chất oxi hóa.
+   **A.** Ag là chất oxi hóa; H2S là chất khử.                  B.** Ag là chất khử; O2 là chất oxi hóa.**
 
-   **C.** O2 là chất oxi hóa; H2S là chất khử.                   **D.** Ag là chất khử; H2S và O2 là các chất oxi hóa.
+   **C.** O2 là chất oxi hóa; H2S là chất khử.                   D.** Ag là chất khử; H2S và O2 là các chất oxi hóa.**
 
 **Câu 16:** Nguyên tố X thuộc chu kỳ 3, nhóm IIA. Nguyên tử của nguyên tố X có cấu hình electron là
 
-   **A.** 1s22s22p6                     **B.** 1s22s22p63s1                 **C.** 1s22s22p63s2                **D.** 1s22s22p53p4
+   **A.** 1s22s22p6                     B.** 1s22s22p63s1                 **C.** 1s22s22p63s2                D.** 1s22s22p53p4
 
-**Câu 17:** Số oxi hoá của nguyên tử hydrogen (H) ***không*** phải là +1 trong hợp chất nào?
+**Câu 17:** Số oxi hoá của nguyên tử hydrogen (H) **không** phải là +1 trong hợp chất nào?
 
-   **A.** NH3.                            **B.** NaH.                            **C.** HCl.                             **D.** H2O.
+   **A.** NH3.                            B.** NaH.                            **C.** HCl.                             D.** H2O.
 
 **Câu 18:** Chất nào có nhiệt tạo thành chuẩn bằng 0?
 
-   **A.** CO2(g).                        **B.** Na2O(g).                      **C.** O2(g).                           **D.** H2O(l).
+   **A.** CO2(g).                        B.** Na2O(g).                      **C.** O2(g).                           D.** H2O(l).
 
 **Câu 19:** Khí oxygen thể hiện tính chất gì khi tham gia các phản ứng đốt cháy nhiên liệu?
 
-   **A.** tính khử.                       **B.** tính oxi hóa.                **C.** tính base.                     **D.** tính acid.
+   **A.** tính khử.                       B.** tính oxi hóa.                **C.** tính base.                     D.** tính acid.
 
 **Câu 20:** Phát biểu nào sau đây **không đúng**?
 
@@ -152,15 +152,15 @@ Phát biểu nào sau đây đúng?
 
 **Câu 21:** Trong phản ứng: FexOy + HNO3 → Fe(NO3)3 + NO + H2O thì một phân tử FexOy sẽ
 
-   **A.** nhường (2y – 3x) electron                                     **B.** nhận (3x – 2y) electron
+   **A.** nhường (2y – 3x) electron                                     B.** nhận (3x – 2y) electron**
 
-   **C.** nhường (3x – 2y) electron                                     **D.** nhận (2y – 3x) electron
+   **C.** nhường (3x – 2y) electron                                     D.** nhận (2y – 3x) electron**
 
 **Câu 22:** Cho biết các nguyên tố O (Z = 8) và Fe (Z = 26). Cấu hình electron của ion O2- và Fe3+ lần lượt là
 
-   **A.** 1s22s22p6 và 1s22s22p63s23p63d5.                         **B.** 1s22s22p63s2 và 1s22s22p63s23p63d5.
+   **A.** 1s22s22p6 và 1s22s22p63s23p63d5.                         B.** 1s22s22p63s2 và 1s22s22p63s23p63d5.**
 
-   **C.** 1s22s22p4 và 1s22s22p63s23p63d5.                          **D.** 1s22s22p6 và 1s22s22p63s23p63d34s2.
+   **C.** 1s22s22p4 và 1s22s22p63s23p63d5.                          D.** 1s22s22p6 và 1s22s22p63s23p63d34s2.**
 
 **Câu 23:** Nguyên tử của nguyên tố X có cấu hình [Ne]3s23p5. Y là nguyên tố cùng nhóm với X và thuộc chu kì kế tiếp. Phát biểu nào sau đây là **không** đúng?
 
@@ -176,7 +176,7 @@ Phát biểu nào sau đây đúng?
 
  *Sơ đồ biểu diễn biến thiên enthalpy của một phản ứng hóa học*
 
- ****Kết luận nào sau đây là đúng?
+ **Kết luận nào sau đây là đúng?**
 
    **A.** Năng lượng chất tham gia phản ứng nhỏ hơn năng lượng chất sản phẩm.
 
@@ -198,7 +198,7 @@ Phát biểu nào sau đây đúng?
 
 Trong các phản ứng trên, số phản ứng oxi hóa – khử là
 
-   **A.** 3.                                  **B.** 1.                                  **C.** 2.                                  **D.** 4.
+   **A.** 3.                                  B.** 1.                                  **C.** 2.                                  D.** 4.
 
 **Câu 26:** Cấu hình electron của nguyên tử 39X là 1s22s22p63s23p64s1. Nguyên tử X có đặc điểm:
 
@@ -212,7 +212,7 @@ Trong các phản ứng trên, số phản ứng oxi hóa – khử là
 
 Số phát biểu **đúng**:
 
-   **A.** 4.                                  **B.** 3.                                  **C.** 2.                                  **D.** 1.
+   **A.** 4.                                  B.** 3.                                  **C.** 2.                                  D.** 1.
 
 **Câu 27:** Một phần của BTH với ký hiệu hóa học của các nguyên tố được thay bằng các chữ cái X, Y, Z, T, E, G và  độ âm điện của chúng được trình bày trong bảng sau:
 
@@ -225,13 +225,13 @@ Số phát biểu **đúng**:
 
 Chọn phát biểu **sai**:
 
-   **A.** E và Y có cùng số electron hóa trị.                       **B.** Hóa trị cao nhất của T với oxygen là 5.
+   **A.** E và Y có cùng số electron hóa trị.                       B.** Hóa trị cao nhất của T với oxygen là 5.**
 
-   **C.** E và Y là kim loại, G là phi kim.                           **D.** Tính phi kim của T>G>E.
+   **C.** E và Y là kim loại, G là phi kim.                           D.** Tính phi kim của T>G>E.**
 
 **Câu 28:** Ở điều kiện thường chromium có cấu trúc mạng lập phương tâm khối (hình vẽ) trong đó thể tích các nguyên tử chiếm 68% thể tích tinh thể. Khối lượng riêng của Cr là 7,2 g/cm3. Biết khối lượng mol của Cr là 52, nếu coi nguyên tử Cr có dạng hình cầu thì bán kính của nó **gần nhất** với
 
-   **A.** 0,125 nm.                     **B.** 0,155 nm.                     **C.** 0,165 nm.                     **D.** 0,134 nm.
+   **A.** 0,125 nm.                     B.** 0,155 nm.                     **C.** 0,165 nm.                     D.** 0,134 nm.
 
 **Câu 29:** Một nguyên tử  X có điện tích của hạt nhân là + 27,2.10-19 Culông. Cho các nhận định sau về X:
 
@@ -245,7 +245,7 @@ Chọn phát biểu **sai**:
 
 Số nhận định đúng là
 
-   **A.** 3.                                  **B.** 1.                                  **C.** 4.                                  **D.** 2.
+   **A.** 3.                                  B.** 1.                                  **C.** 4.                                  D.** 2.
 
 **Câu 30:** Cho các phản ứng:
 
@@ -259,15 +259,15 @@ Số nhận định đúng là
 
 Số phản ứng oxi hóa – khử là
 
-   **A.** 1.                                  **B.** 3.                                  **C.** 4.                                  **D.** 2.
+   **A.** 1.                                  B.** 3.                                  **C.** 4.                                  D.** 2.
 
 **Câu 31:** Hòa tan hoàn toàn m gam hỗn hợp X gồm Fe,Mg và Zn bằng x gam dung dịch H2SO4 9,8% (loãng,vừa đủ) thu được dung dịch chứa (m + 12) gam muối sunfat khan. Giá trị của x  là :
 
-   **A.** 375.                              **B.** 125.                              **C.** 12,25.                           **D.** 250.
+   **A.** 375.                              B.** 125.                              **C.** 12,25.                           D.** 250.
 
 **Câu 32:** Trong các chất sau MgF2, CaO, NH3, Na2O, HBr, CCl4, SO2. Số chất có liên kết ion trong phân tử là
 
-   **A.** 2.                                  **B.** 5.                                  **C.** 4.                                  **D.** 3.
+   **A.** 2.                                  B.** 5.                                  **C.** 4.                                  D.** 3.
 
 **Câu 33:** Phương trình hóa học của phản ứng:
 
@@ -285,17 +285,17 @@ Cho các phát biểu sau:
 
 Các phát biểu đúng là
 
-**A.** (1) và (3).                                                    **B.** (2) và (4).               
+**A.** (1) và (3).                                                    B.** (2) và (4).               **
 
-**C.** (1), (2) và (4).                                             **D.** (1), (3) và (4).
+**C.** (1), (2) và (4).                                             D.** (1), (3) và (4).**
 
 **Câu 34:** Tổng số hạt mang điện trong ion  bằng 82. Số hạt mang điện trong hạt nhân của nguyên tử A nhiều hơn số hạt mang điện trong hạt nhân của nguyên tử B là 8. Số hiệu nguyên tử của A và B là
 
-   **A.** 6; 14.                            **B.** 13; 9.                            **C.** 16; 8.                            **D.** 9; 16.
+   **A.** 6; 14.                            B.** 13; 9.                            **C.** 16; 8.                            D.** 9; 16.
 
 **Câu 35:** Cho m gam Ba vào 250 ml dung dịch HCl aM, thu được dung dịch X và 6,72 lít H2 (đktc). Cô cạn dung dịch X thu được 55 gam chất rắn khan. Giá trị của a là
 
-   **A.** 2,4 M.                          **B.** 1,2 M.                           **C.** 1,0 M.                          **D.** 0,8 M.
+   **A.** 2,4 M.                          B.** 1,2 M.                           **C.** 1,0 M.                          D.** 0,8 M.
 
 **Câu 36:** Cho nguyên tử các nguyên tố: X(Z=17), Y (Z=19), R (Z=9), T (Z=20) và các kết luận sau:
 
@@ -313,7 +313,7 @@ Các phát biểu đúng là
 
 Số kết luận đúng là :
 
-   **A.** 5.                                  **B.** 2.                                  **C.** 3.                                  **D.** 4.
+   **A.** 5.                                  B.** 2.                                  **C.** 3.                                  D.** 4.
 
 **Câu 37:** Cho các phát biểu sau:
 
@@ -329,7 +329,7 @@ Số kết luận đúng là :
 
 Số phát biểu đúng là
 
-   **A.** 4.                                  **B.** 2.                                  **C.** 5                                   **D.** 3.
+   **A.** 4.                                  B.** 2.                                  **C.** 5                                   D.** 3.
 
 **Câu 38:** Cho sơ đồ phản ứng:
 
@@ -337,7 +337,7 @@ C2H4 + KMnO4 + H2SO4 ¾® (COOH)2 + MnSO4 + K2SO4 + H2O
 
 Trong phương trình hóa học, tỉ lệ về hệ số giữa chất khử và chất oxi hoá tương ứng là
 
-   **A.** 2 : 1.                             **B.** 5 : 2.                             **C.** 2 : 5.                             **D.** 1 : 2.
+   **A.** 2 : 1.                             B.** 5 : 2.                             **C.** 2 : 5.                             D.** 1 : 2.
 
 **Câu 39:** Cho phương trình hóa học:
 
@@ -345,7 +345,7 @@ aFe3P + b + cH+xFe3+ + y + zNO + tH2O
 
 Khi x bằng 9 thì tổng (a + b + c) bằng
 
-   **A.** 50.                                **B.** 52.                                **C.** 55.                                **D.** 46.
+   **A.** 50.                                B.** 52.                                **C.** 55.                                D.** 46.
 
 **Câu 40:** X và Y là hai nguyên tố thuộc cùng một chu kỳ, hai nhóm A liên tiếp. Số proton của nguyên tử Y nhiều hơn số proton của nguyên tử X. Tổng số hạt proton trong nguyên tử X và Y là 33. Nhận xét nào sau đây về X, Y là đúng?
 
@@ -357,7 +357,7 @@ Khi x bằng 9 thì tổng (a + b + c) bằng
 
    **D.** Phân lớp ngoài cùng của nguyên tử X (ở trạng thái cơ bản) có 4 electron
 
-**Câu 41****.** Cho sơ đồ phản ứng:
+**Câu 41:** .** Cho sơ đồ phản ứng:**
 
 aNa2SO3 +  bKMnO4 +  cNaHSO4   xNa2SO4  + yMnSO4 +  zK2SO4 + tH2O
 
@@ -391,13 +391,13 @@ Công thức A là ……………………………………………………�
 
 Kim loại M là…………………………………………………………………………………
 
-**Câu 48.******Để giảm đau cho vận động viên khi bị va chạm, người ta tạo ra nhiệt độ thấp tức thời tại chỗ đau dựa vào sự thu nhiệt khi hoà tan muối NH4NO3 khanvào nước. Một túi giảm đau chứa 150 ml nước và một lượng muối NH4NO3 khanđể có thể hạ nhiệt độ chỗ đau từ 25oC xuống OoC.
+**Câu 48.**Để giảm đau cho vận động viên khi bị va chạm, người ta tạo ra nhiệt độ thấp tức thời tại chỗ đau dựa vào sự thu nhiệt khi hoà tan muối NH4NO3 khanvào nước. Một túi giảm đau chứa 150 ml nước và một lượng muối NH4NO3 khanđể có thể hạ nhiệt độ chỗ đau từ 25oC xuống OoC.
 
 Cho biết: nhiệt hoà tan (kí hiệu DH) của  NH4NO3 khan là 26,2 kJ.mol-1; nhiệt dung riêng của dung dịch trong túi này C = 3,8 J.g-1. K-1  (là lượng nhiệt kèm theo khi làm thay đổi nhiệt độ 1 độ của 1 gram dung dịch đó).
 
 Khối lượng muối NH4NO3 khantrong túi đó là……………………………………
 
-**Câu 49****:** Đốt cháy hoàn toàn 4,741 gam đơn chất X trong oxi rồi cho toàn bộ sản phẩm thu được hấp thụ hết vào 100 ml dung dịch NaOH 25% có khối lượng riêng d = 1,28 g/ml được dung dịch A. Nồng độ của NaOH trong dung dịch A giảm đi 1/4  so với nồng độ của nó trong dung dịch ban đầu. Dung dịch A có khả năng hấp thụ tối đa 19,832 lít khí CO2 (đkc) thu được dung dịch B.  Cho các nhận định sau:
+**Câu 49:** :** Đốt cháy hoàn toàn 4,741 gam đơn chất X trong oxi rồi cho toàn bộ sản phẩm thu được hấp thụ hết vào 100 ml dung dịch NaOH 25% có khối lượng riêng d = 1,28 g/ml được dung dịch A. Nồng độ của NaOH trong dung dịch A giảm đi 1/4  so với nồng độ của nó trong dung dịch ban đầu. Dung dịch A có khả năng hấp thụ tối đa 19,832 lít khí CO2 (đkc) thu được dung dịch B.  Cho các nhận định sau:**
 
 (1) Đơn chất X là chất rắn ở điều kiện thường.
 
@@ -409,7 +409,7 @@ Khối lượng muối NH4NO3 khantrong túi đó là………………………
 
 Các phát biểu đúng là:………………………………………………………………………..
 
-**Câu 50.******Cho 82,05 gram hỗn hợp X gồm 3 muối MgCl2, BaCl2, KCl tác dụng với 900ml dung dịch AgNO3 2M, sau khi phản ứng kết thúc thu được dung dịch Y và kết tủa Z. Lọc lấy kết tủa Z, cho 33,6 gram bột sắt vào dung dịch Y, sau khi phản ứng kết thúc thu được chất rắn T và dung dịch M. Cho T vào dung dịch HCl dư, thu được 0,3 mol H2. Cho NaOH dư vào dung dịch M thu được kết tủa, nung kết tủa trong không khí dư ở nhiệt độ cao thu được 36 gram chất rắn. Biết các phản ứng xảy ra hoàn toàn.
+**Câu 50.**Cho 82,05 gram hỗn hợp X gồm 3 muối MgCl2, BaCl2, KCl tác dụng với 900ml dung dịch AgNO3 2M, sau khi phản ứng kết thúc thu được dung dịch Y và kết tủa Z. Lọc lấy kết tủa Z, cho 33,6 gram bột sắt vào dung dịch Y, sau khi phản ứng kết thúc thu được chất rắn T và dung dịch M. Cho T vào dung dịch HCl dư, thu được 0,3 mol H2. Cho NaOH dư vào dung dịch M thu được kết tủa, nung kết tủa trong không khí dư ở nhiệt độ cao thu được 36 gram chất rắn. Biết các phản ứng xảy ra hoàn toàn.
 
 Tỉ lệ số mol giữa BaCl2 và KCl trong X tương ứng là …………………………………………….
 
@@ -417,9 +417,9 @@ Tỉ lệ số mol giữa BaCl2 và KCl trong X tương ứng là …………�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HOAN_HSG10_132](/assets/docs/HOAN_HSG10_132.doc)[](/assets/docs/HOAN_HSG10_132.doc)
-- [HOAN_HSG10_132-1](/assets/docs/HOAN_HSG10_132-1.doc)
-- [Hoan_Hoa-10_Dap-an-4-ma-de](/assets/docs/Hoan_Hoa-10_Dap-an-4-ma-de.xlsx)
+- [HOAN_HSG10_132](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)[](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HOAN_HSG10_132-1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoan_Hoa-10_Dap-an-4-ma-de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

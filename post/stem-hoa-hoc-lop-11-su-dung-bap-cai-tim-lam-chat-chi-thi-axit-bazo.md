@@ -13,10 +13,10 @@ tags:
 grade: 11
 ---
 
-**1. Tên chủ đề:
-**SỬ DỤNG BẮP CẢI TÍM LÀM CHẤT CHỈ THỊ AXIT- BAZƠ
-**( Hóa học 11)
-**2. Mô tả chủ đề
+**1. Tên chủ đề:**
+**SỬ DỤNG BẮP CẢI TÍM LÀM CHẤT CHỈ THỊ AXIT- BAZƠ**
+**( Hóa học 11)**
+**2. Mô tả chủ đề**
      Bắp cải tím là một nguyên liệu rất phổ biến và dễ kiếm trong cuộc sống. Sắc tố chính được chiết xuất từ lá cải tím là cyanidin 3,5-diglucoside của hệ màu anthocyanin (màu tím) và có màu sắc thay đổi rõ rệt theo pH của môi trường cần xác định. Trong môi trường axit nó có màu đỏ bền, trong môi trường bazơ nó chuyển sang màu xanh và bền trong thời gian dài. Sử dụng nước bắp cải tím dùng để nhận biết dung dịch axit, dung dịch bazơ của các chất, nhận biết được môi trường đất theo phương pháp đơn giản, giúp lựa chọn cây trồng sao cho phù hợp. Bên cạnh đó, chế tạo giấy quỳ giúp HS nhận biết được môi trường các chất, giúp người nông dân nhận biết môi trường đất một cách đơn giản.
 
   – Khoa học**-Khoa học (S): Cách xác định môi trường của các chất, môi trường của đất trồng, định lượng pH của dung dịch.
@@ -67,7 +67,7 @@ d. Định hướng phát triển năng lực:– Năng lực thực nghiệm, n
 
 nước uống có ga; nước rửa chén, cốc thủy tinh
 
-5. Tiến hành dạy học:Hoạt động 1:***Xác định yêu cầu thiết kế dung dịch chỉ thị axit- bazo từ củ cải tím** (tiết 1 – 45 phút)a. Mục đích:Học sinh trình bày được kiến thức về ưu nhược điểm của giấy quỳ tím hiện nay; Nhận ra được khả năng thay đổi màu của giấy chỉ thị tạo ra từ các loại củ, quả; tiếp nhận được nhiệm vụ thiết kế giấy chỉ thị và hiểu rõ các tiêu chí đánh giá sản phẩm.
+5. Tiến hành dạy học:Hoạt động 1:**Xác định yêu cầu thiết kế dung dịch chỉ thị axit- bazo từ củ cải tím** (tiết 1 – 45 phút)a. Mục đích:Học sinh trình bày được kiến thức về ưu nhược điểm của giấy quỳ tím hiện nay; Nhận ra được khả năng thay đổi màu của giấy chỉ thị tạo ra từ các loại củ, quả; tiếp nhận được nhiệm vụ thiết kế giấy chỉ thị và hiểu rõ các tiêu chí đánh giá sản phẩm.
 
 b. Nội dung:– HS trình bày về ưu nhược điểm của  giấy quỳ (đã được giao tìm hiểu trước ở nhà).
 
@@ -151,7 +151,7 @@ Bước 3.**GV giao nhiệm vụ cho HS và xác lập tiêu chí đánh giá s�
 
 ![STEM hóa học lớp 11 sử dụng bắp cải tím làm chất chỉ thị axit bazo 2](file:///C:/Users/Admin/AppData/Local/Temp/lu2164a0m6hn.tmp/lu2164a0m6ln_tmp_51319c2d2a37f49e.jpg)
 
- **Trong đó, GV nêu rõ nhiệm vụ ở nhà củ hoạt động 2:
+ **Trong đó, GV nêu rõ nhiệm vụ ở nhà củ hoạt động 2:**
 
 -Nghiên cứu kiến thức liên quan: Thành phần và nguyên tắc hoạt động của chất chỉ thị; Quy luật biến đổi màu của chất chỉ thị.
 
@@ -170,7 +170,7 @@ Bước 3.**GV giao nhiệm vụ cho HS và xác lập tiêu chí đánh giá s�
 | Trình bày rõ ràng, logic, sinh động. | 2 |
 | Tổng điểm | 10 |
 
- **GV cần nhấn mạnh:** Khi báo cáo phương án thiết kế sản phẩm học sinh phải vận dụng kiến thức niền để giải thích, trình bày nguyên lí hoạt động của sản phẩm. Vì vậy, tiêu chí này có trọng số điểm lớn nhất.***Hoạt động 2:Nghiên cứu về chất chỉ thị và đề xuất giải pháp thiết kế chất chỉ thị (HS làm việc ở nhà- 1 tuần).a. Mục đích:HS tự học được kiến thức liên quan thông qua việc nghiên cứu tài liệu và làm các TN để hiểu về chất chỉ thị axit-bazo , chuẩn bị bộ dụng cụ thí nghiệm, thiết kế và bản vẽ kĩ thuật … từ đó thiết kế bộ dụng cụ thí nghiệm và bản vẽ kĩ thuật về việc sử dụng bắp cải tím xácc định tính axit- bazơ.
+ **GV cần nhấn mạnh:** Khi báo cáo phương án thiết kế sản phẩm học sinh phải vận dụng kiến thức niền để giải thích, trình bày nguyên lí hoạt động của sản phẩm. Vì vậy, tiêu chí này có trọng số điểm lớn nhất.**Hoạt động 2:Nghiên cứu về chất chỉ thị và đề xuất giải pháp thiết kế chất chỉ thị (HS làm việc ở nhà- 1 tuần).a. Mục đích:HS tự học được kiến thức liên quan thông qua việc nghiên cứu tài liệu và làm các TN để hiểu về chất chỉ thị axit-bazo , chuẩn bị bộ dụng cụ thí nghiệm, thiết kế và bản vẽ kĩ thuật … từ đó thiết kế bộ dụng cụ thí nghiệm và bản vẽ kĩ thuật về việc sử dụng bắp cải tím xácc định tính axit- bazơ.**
 
 b. Nội dung:HS tự học và làm việc nhóm thảo luận thống nhất các kiến thức liên quan, làm TN, vẽ bộ dụng cụ thí nghiệm.
 
@@ -208,15 +208,15 @@ b. Nội dung:– GV tổ chức cho HS từng nhóm trình bày phương án th
 
 c. Dự kiến sản phẩm hoạt động của học sinh:Kết thúc hoạt động, HS cần đạt được sản phẩm là bản thiết kế hoàn chỉnh cho việc chế tạo nguồn điện hóa từ củ, quả.
 
-d. Cách thức tổ chức hoạt động:Bước 1:* **Lân lượt từng nhóm trình bày phương án thiết kế trong 5 phút. Các nhóm còn lại chú ý nghe.*** Bước 2:* **GV tổ chức cho các nhóm còn lại nêu câu hỏi, nhận xét về phương án thiết kế của nhóm bạn; nhóm trình bày trả lời, bảo vệ, thu nhập góp ý, đưa ra sửa chữa phù hợp.*** Bước 3:* **GV nhận xét, tổng kết và chuẩn hóa các kiến thức liên quan, chốt lại các vấn đề cần chú ý, chỉnh sửa của các nhóm.*** Bước 4:* **GV giao nhiệm vụ cho các nhóm về nhà triển khai chế tạo sản phẩm theo bản thiết kế.*** Hoạt động 4:Chế tạo và thử nghiệm dung dịchchỉ thị axit- bazơ(HS làm việc ở nhà hoặc phòng TN – 1 tuần)a. Mục đích:Các nhóm HS thực hành, chế tạo được dung dịch chỉ thị axit- bazo từ bắp cải tím.
+d. Cách thức tổ chức hoạt động:Bước 1:* **Lân lượt từng nhóm trình bày phương án thiết kế trong 5 phút. Các nhóm còn lại chú ý nghe.** Bước 2:* **GV tổ chức cho các nhóm còn lại nêu câu hỏi, nhận xét về phương án thiết kế của nhóm bạn; nhóm trình bày trả lời, bảo vệ, thu nhập góp ý, đưa ra sửa chữa phù hợp.** Bước 3:* **GV nhận xét, tổng kết và chuẩn hóa các kiến thức liên quan, chốt lại các vấn đề cần chú ý, chỉnh sửa của các nhóm.** Bước 4:* **GV giao nhiệm vụ cho các nhóm về nhà triển khai chế tạo sản phẩm theo bản thiết kế.** Hoạt động 4:Chế tạo và thử nghiệm dung dịchchỉ thị axit- bazơ(HS làm việc ở nhà hoặc phòng TN – 1 tuần)a. Mục đích:Các nhóm HS thực hành, chế tạo được dung dịch chỉ thị axit- bazo từ bắp cải tím.
 
 b. Nội dung:HS làm việc theo nhóm trong thời gian 1 tuần để chế tạo dung dịch axit- bazo, quả và trao đổi với GV khi gặp khó khăn
 
 c. Dự kiến sản phẩm hoạt động của học sinh:Kết thúc hoạt động, HS cần đạt được sản phẩm là bản thiết kế hoàn chỉnh cho việc chế tạo nguồn điện hóa từ củ, quả đáp ứng được các tiêu chí trong Phiếu đánh giá số 1.
 
-d. Cách thức tổ chức hoạt động:Bước 1:* **HS tìm kiếm, chuẩn bị các vật liệu dự kiến.*** Bước 2:* **HS lắp đặt các thành phần của nguồn điện theo bản thiết kế.*** Bước 3:* **HS thử nghiệm hoạt động của  sản phẩm, so sánh với các tiêu chí đánh giá sản phẩm (Phiếu số 1). HS điều chỉnh lại thiết kế, ghi lại nội dung điều chỉnh và giải thích lý do(Nếu cần điều chỉnh).*** Bước 4:* **HS hoàn thiện bảng ghi danh mục các vật liệu và tính giá thành chế tạo sản phẩm.*** Bước 5:* **HS hoàn thiên sản phẩm; chuẩn bị bài giới thiệu sản phẩm.** GV đôn đốc,  hỗ trợ các nhóm trong quá trình hoàn thiện các sản phẩm.
+d. Cách thức tổ chức hoạt động:Bước 1:* **HS tìm kiếm, chuẩn bị các vật liệu dự kiến.** Bước 2:* **HS lắp đặt các thành phần của nguồn điện theo bản thiết kế.** Bước 3:* **HS thử nghiệm hoạt động của  sản phẩm, so sánh với các tiêu chí đánh giá sản phẩm (Phiếu số 1). HS điều chỉnh lại thiết kế, ghi lại nội dung điều chỉnh và giải thích lý do(Nếu cần điều chỉnh).** Bước 4:* **HS hoàn thiện bảng ghi danh mục các vật liệu và tính giá thành chế tạo sản phẩm.** Bước 5:* **HS hoàn thiên sản phẩm; chuẩn bị bài giới thiệu sản phẩm.** GV đôn đốc,  hỗ trợ các nhóm trong quá trình hoàn thiện các sản phẩm.
 
-*Hoạt động 5:***Trình bày sản phẩm “chế tạo dung dịch chất chỉ thị axit- bazo từ bắp cải tím”**                                                   ( Tiết 3 – 45 phút)a. Mục đích:– HS biết giới thiệu về sản phẩm  pin điện hóa từ củ, quả đáp ứng được các tiêu chí đánh giá đã đặt ra; biết thuyết trình, giới thiệu được sản phẩm, đưa ra ý kiến nhận xét, phản biện, giải thích được bằng các kiến thức liên quan; Có ý thức về cải tiến, phát triển sản phâm.
+*Hoạt động 5:**Trình bày sản phẩm “chế tạo dung dịch chất chỉ thị axit- bazo từ bắp cải tím”**                                                   ( Tiết 3 – 45 phút)a. Mục đích:– HS biết giới thiệu về sản phẩm  pin điện hóa từ củ, quả đáp ứng được các tiêu chí đánh giá đã đặt ra; biết thuyết trình, giới thiệu được sản phẩm, đưa ra ý kiến nhận xét, phản biện, giải thích được bằng các kiến thức liên quan; Có ý thức về cải tiến, phát triển sản phâm.
 
 b. Nội dung:– Các nhóm trưng bày sản phẩm trước lớp;
 
@@ -247,7 +247,7 @@ d. Cách thức tổ chức hoạt động:
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file word tài liệu STEM
 
-- [HÓA 11. SỬ DỤNG BẮP CẢI TÍM LÀM CHẤT CHỈ THỊ AXIT- BAZƠ](/assets/docs/HOA-11.-SU-DUNG-BAP-CAI-TIM-LAM-CHAT-CHI-THI-AXIT-BAZO.docx)
+- [HÓA 11. SỬ DỤNG BẮP CẢI TÍM LÀM CHẤT CHỈ THỊ AXIT- BAZƠ](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

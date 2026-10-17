@@ -289,14 +289,14 @@ Thông qua các thí nghiệm cho biết điều khẳng định nào sau đây 
 4. Nhiệt độ sôi của chúng tăng khi số nguyên tử cacbon tăng.
 
 *(Đề thi thử THPT Quốc Gia lần 2–THPT Phan Bội Châu, năm 2015)
-- Link download bản pdf hệ thống câu hỏi trắc nghiệm ancol phenol – không có đáp án: [HỆ THỐNG CÂU HỎI TRẮC NGHIỆM ANCOL PHENOL – không có đáp án](/assets/docs/HỆ-THỐNG-CÂU-HỎI-TRẮC-NGHIỆM-ANCOL-PHENOL-không-có-đáp-án.pdf)
+- Link download bản pdf hệ thống câu hỏi trắc nghiệm ancol phenol – không có đáp án: [HỆ THỐNG CÂU HỎI TRẮC NGHIỆM ANCOL PHENOL – không có đáp án](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-- Link download bả pdf hệ thống câu hỏi trắc nghiệm ancol phenol – có đáp án: [HỆ THỐNG CÂU HỎI TRẮC NGHIỆM ANCOL PHENOL – có đáp án](/assets/docs/HỆ-THỐNG-CÂU-HỎI-TRẮC-NGHIỆM-ANCOL-PHENOL-có-đáp-án.pdf)
+- Link download bả pdf hệ thống câu hỏi trắc nghiệm ancol phenol – có đáp án: [HỆ THỐNG CÂU HỎI TRẮC NGHIỆM ANCOL PHENOL – có đáp án](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-- [ANCOL- HS CO BAN](/assets/docs/ANCOL-HS-CO-BAN.docx)
-- [bai tap ve ancol phenol hay](/assets/docs/bai-tap-ve-ancol-phenol-hay.doc)
-- [CD ANCOL – PHENOL – ETE -TAP HUAN](/assets/docs/CD-ANCOL-PHENOL-ETE-TAP-HUAN.doc)
-- [CHUYEN DE ANCOL-SOAN](/assets/docs/CHUYEN-DE-ANCOL-SOAN.doc)
+- [ANCOL- HS CO BAN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [bai tap ve ancol phenol hay](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [CD ANCOL – PHENOL – ETE -TAP HUAN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [CHUYEN DE ANCOL-SOAN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

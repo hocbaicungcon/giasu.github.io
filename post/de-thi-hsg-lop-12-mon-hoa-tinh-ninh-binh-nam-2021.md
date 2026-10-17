@@ -453,12 +453,12 @@ Giá trị của a là
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG 12 HOA HOC_128](/assets/docs/HSG-12-HOA-HOC_128.doc)
-- [HSG 12 HOA HOC_219](/assets/docs/HSG-12-HOA-HOC_219.doc)
-- [HSG 12 HOA HOC_387](/assets/docs/HSG-12-HOA-HOC_387.doc)
-- [HSG 12 HOA HOC_468](/assets/docs/HSG-12-HOA-HOC_468.doc)
-- [HDC Hoa Hoc – TL](/assets/docs/HDC-Hoa-Hoc-TL.doc)
-- [HSG 12 HOA HOC_dapan- cham](/assets/docs/HSG-12-HOA-HOC_dapan-cham.xlsx)
+- [HSG 12 HOA HOC_128](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HSG 12 HOA HOC_219](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HSG 12 HOA HOC_387](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HSG 12 HOA HOC_468](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HDC Hoa Hoc – TL](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HSG 12 HOA HOC_dapan- cham](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

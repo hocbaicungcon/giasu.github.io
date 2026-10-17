@@ -96,8 +96,8 @@ Cho: H=1; O=16; S=32; Cu=64; Al=27.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HOA 10-Mac Dinh Chi-da](/assets/docs/HOA-10-Mac-Dinh-Chi-da.doc)
-- [HOA 10-Mac Dinh Chi-de](/assets/docs/HOA-10-Mac-Dinh-Chi-de.doc)
+- [HOA 10-Mac Dinh Chi-da](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HOA 10-Mac Dinh Chi-de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

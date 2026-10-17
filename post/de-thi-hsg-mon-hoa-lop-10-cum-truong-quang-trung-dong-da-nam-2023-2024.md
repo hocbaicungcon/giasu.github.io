@@ -124,8 +124,8 @@ b/ Tính nồng độ mol mỗi chất trong dung dịch X.
 ————————*Hết——————–
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Quang-Trung-Dong-Da-De-2023-2024](/assets/docs/Quang-Trung-Dong-Da-De-2023-2024-giasu.ai.vn.docx)
-- [Quang-Trung-Dong-Da-Huong-dan-cham-2023-2024](/assets/docs/Quang-Trung-Dong-Da-Huong-dan-cham-2023-2024-giasu.ai.vn.docx)
+- [Quang-Trung-Dong-Da-De-2023-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Quang-Trung-Dong-Da-Huong-dan-cham-2023-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

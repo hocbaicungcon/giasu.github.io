@@ -18,4 +18,4 @@ Chúng tôi xin gửi tới bạn đọc cuốn sách **Sanskrit for Beginners**
 
 ## Tải sách tự học tiếng Phạn
 
-- [Sanskrit for Beginners](/assets/docs/Sanskrit-for-Beginners.pdf)
+- [Sanskrit for Beginners](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

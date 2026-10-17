@@ -47,8 +47,8 @@ Ngày thi: 08/05/2018 |
 | Cu(OH)2 | – | Dung dịch xanh lam |
 | Br2/CCl4 | – | – |
 
-**Xác định các chất A, B, C, D và viết phương trình hóa học các phản ứng xảy ra.
-***1,25 điểm
+**Xác định các chất A, B, C, D và viết phương trình hóa học các phản ứng xảy ra.**
+**1,25 điểm**
 A: benzandehit; B: glyxerol; C: ancol anlylic; D: Axit axetic *(Đúng 2 chất**** 0,25 điểm)
 *0,5
 2 C3H5(OH)3 + Cu(OH)2  [C3H5(OH)2O]2Cu + 2 H2O
@@ -61,15 +61,15 @@ CH2=CH-CH2-OH + Br2  CH2Br – CHBr – CH2-OH
 
 *0,25
 *Trừ ½ số điểm nếu thiếu cân bằng, viết công thức dạng khác vẫn cho đủ điểm
-**Câu 6.
-**D
+**Câu 6.**
+**D**
 
 ![Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân 2](file:///C:/Users/Admin/AppData/Local/Temp/lu10860csip29.tmp/lu10860csiqv6_tmp_77696d159ae97cef.png)
 
  ầu chuối là một este của axit axetic và ancol isoamylic, loại dầu này có mùi thơm đặc trưng, kích thích vị giác, nên người ta thường cho nhiều vào các món ăn. Tuy nhiên, các chuyên gia khuyến cáo, nếu ăn nhiều dầu chuối, gan sẽ tích trữ lại chất độc, có thể dẫn tới ung thư. Để điều chế dầu chuối người ta có thể sử dụng sơ đồ như hình vẽ bên:
-**a) Nêu tên dụng cụ số (1) và (2).
-**b) Nêu hiện tượng khi kết thúc thí nghiệm và viết phương trình hóa học điều chế este trên.
-***0,75 điểm
+**a) Nêu tên dụng cụ số (1) và (2).**
+**b) Nêu hiện tượng khi kết thúc thí nghiệm và viết phương trình hóa học điều chế este trên.**
+**0,75 điểm**
 (1): ống sinh hàn; (2): bình cầu đáy tròn *(học sinh ghi đúng 1 trong 2 vẫn cho đủ điểm)
 *0,25
 Hiện tượng: Hỗn hợp tách lớp
@@ -78,9 +78,9 @@ Hiện tượng: Hỗn hợp tách lớp
 PTHH: (CH3)2CHCH2CH2OH + CH3COOH  CH3COOCH2CH2CH(CH3)2 + H2O 
 
 *0,25
-**Câu 7.
-**Cho dung dịch brom vào hỗn hợp X gồm phenol và axit axetic đến khi ngừng mất màu thì lọc và thu được 82,75g kết tủa trắng. Để trung hòa phần nước lọc, cần dùng hết 300ml dung dịch NaOH 10(D = 1,2g/ml).Tính phần trăm khối lượng mỗi chất trong hỗn hợp X?
-**2 điểm
+**Câu 7.**
+**Cho dung dịch brom vào hỗn hợp X gồm phenol và axit axetic đến khi ngừng mất màu thì lọc và thu được 82,75g kết tủa trắng. Để trung hòa phần nước lọc, cần dùng hết 300ml dung dịch NaOH 10(D = 1,2g/ml).Tính phần trăm khối lượng mỗi chất trong hỗn hợp X?**
+**2 điểm**
 C6H5OH + 3Br2  C6H2(OH)Br3 ↓ + 3 HBr (1) 
 
 0,25  0,25  0,75 (mol)
@@ -109,12 +109,12 @@ nNaOH = 300. 1,2. 0,1:40 = 0,9 mol
 mhh = 0,25. 94 + 0,15. 60 = 32,5 gam %mPhenol=72,31% và %maxit =27,69% 
 
 *0,25
-**Câu 8.
-**CB
-**Hiđro hóa hoàn toàn 2,99 gam hỗn hợp X gồm hai anđehit no, đơn chức, mạch hở kế tiếp trong dãy đồng đẳng cần 1,344 lít H2 (đktc).
-**a) Xác định công thức phân tử của hai anđehit.
-**b) Cho hỗn hợp X trên vào lượng dư dung dịch AgNO3trong NH3cho đến khi phản ứng xảy ra hoàn toàn thu được m gam kết tủa. Viết các phương trình hóa học học các phản ứng xảy ra và tính giá trị m.
-***2 điểm
+**Câu 8.**
+**CB**
+**Hiđro hóa hoàn toàn 2,99 gam hỗn hợp X gồm hai anđehit no, đơn chức, mạch hở kế tiếp trong dãy đồng đẳng cần 1,344 lít H2 (đktc).**
+**a) Xác định công thức phân tử của hai anđehit.**
+**b) Cho hỗn hợp X trên vào lượng dư dung dịch AgNO3trong NH3cho đến khi phản ứng xảy ra hoàn toàn thu được m gam kết tủa. Viết các phương trình hóa học học các phản ứng xảy ra và tính giá trị m.**
+**2 điểm**
 CnH2nO hoặc CnH2n+1CHO hoặc R-CHO 
 
 *0,25
@@ -173,8 +173,8 @@ Ngày thi: 08/05/2018 |
 | Cu(OH)2 | – | Dung dịch xanh lam |
 | Br2/CCl4 | – | – |
 
-**Xác định các chất A, B, C, D và viết phương trình hóa học các phản ứng xảy ra.
-***1,25 điểm
+**Xác định các chất A, B, C, D và viết phương trình hóa học các phản ứng xảy ra.**
+**1,25 điểm**
 A: benzandehit; B: glyxerol; C: ancol anlylic; D: Axit axetic *(Đúng 2 chất**** 0,25 điểm)
 *0,5
 2 C3H5(OH)3 + Cu(OH)2  [C3H5(OH)2O]2Cu + 2 H2O
@@ -187,15 +187,15 @@ CH2=CH-CH2-OH + Br2  CH2Br – CHBr – CH2-OH
 
 *0,25
 *Trừ ½ số điểm nếu thiếu cân bằng, viết công thức dạng khác vẫn cho đủ điểm
-**Câu 6.
-**D
+**Câu 6.**
+**D**
 
 ![Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân 4](file:///C:/Users/Admin/AppData/Local/Temp/lu10860csip29.tmp/lu10860csiqv6_tmp_77696d159ae97cef.png)
 
  ầu chuối là một este của axit axetic và ancol isoamylic, loại dầu này có mùi thơm đặc trưng, kích thích vị giác, nên người ta thường cho nhiều vào các món ăn. Tuy nhiên, các chuyên gia khuyến cáo, nếu ăn nhiều dầu chuối, gan sẽ tích trữ lại chất độc, có thể dẫn tới ung thư. Để điều chế dầu chuối người ta có thể sử dụng sơ đồ như hình vẽ bên:
-**a) Nêu tên dụng cụ số (1) và (2).
-**b) Nêu hiện tượng khi kết thúc thí nghiệm và viết phương trình hóa học điều chế este trên.
-***0,75 điểm
+**a) Nêu tên dụng cụ số (1) và (2).**
+**b) Nêu hiện tượng khi kết thúc thí nghiệm và viết phương trình hóa học điều chế este trên.**
+**0,75 điểm**
 (1): ống sinh hàn; (2): bình cầu đáy tròn *(học sinh ghi đúng 1 trong 2 vẫn cho đủ điểm)
 *0,25
 Hiện tượng: Hỗn hợp tách lớp
@@ -204,9 +204,9 @@ Hiện tượng: Hỗn hợp tách lớp
 PTHH: (CH3)2CHCH2CH2OH + CH3COOH  CH3COOCH2CH2CH(CH3)2 + H2O 
 
 *0,25
-**Câu 7.
-**Cho dung dịch brom vào hỗn hợp X gồm phenol và axit axetic đến khi ngừng mất màu thì lọc và thu được 82,75g kết tủa trắng. Để trung hòa phần nước lọc, cần dùng hết 300ml dung dịch NaOH 10(D = 1,2g/ml).Tính phần trăm khối lượng mỗi chất trong hỗn hợp X?
-**2 điểm
+**Câu 7.**
+**Cho dung dịch brom vào hỗn hợp X gồm phenol và axit axetic đến khi ngừng mất màu thì lọc và thu được 82,75g kết tủa trắng. Để trung hòa phần nước lọc, cần dùng hết 300ml dung dịch NaOH 10(D = 1,2g/ml).Tính phần trăm khối lượng mỗi chất trong hỗn hợp X?**
+**2 điểm**
 C6H5OH + 3Br2  C6H2(OH)Br3 ↓ + 3 HBr (1) 
 
 0,25  0,25  0,75 (mol)
@@ -235,10 +235,10 @@ nNaOH = 300. 1,2. 0,1:40 = 0,9 mol
 mhh = 0,25. 94 + 0,15. 60 = 32,5 gam %mPhenol=72,31% và %maxit =27,69% 
 
 *0,25
-***Câu 8
-***NC
-***Cho 5,8 gam chất hữu cơ (X) (chứa C, H, O) tác dụng với lượng dư dung dịch AgNO3 trong NH3 thu được 43,2 gam Ag. Mặt khác, hiđro hóa hoàn toàn 0,1 mol (X) thì thu được sản phẩm (Y) tác dụng vừa đủ với 4,6 gam Na. Tìm công thức phân tử và tên của (X) và viết các phương trình hóa học học các phản ứng xảy ra?
-***1 điểm
+**Câu 8**
+**NC**
+**Cho 5,8 gam chất hữu cơ (X) (chứa C, H, O) tác dụng với lượng dư dung dịch AgNO3 trong NH3 thu được 43,2 gam Ag. Mặt khác, hiđro hóa hoàn toàn 0,1 mol (X) thì thu được sản phẩm (Y) tác dụng vừa đủ với 4,6 gam Na. Tìm công thức phân tử và tên của (X) và viết các phương trình hóa học học các phản ứng xảy ra?**
+**1 điểm**
 Viết PTHH dạng tổng quát hoặc dùng sơ đồ   x = 2 
 
 *0,25
@@ -253,10 +253,10 @@ CTPT: C2H2O2 : anđehit oxalic
 (CH=O)2 + 2 H2  HO-CH2-CH2-OH 
 
 C2H4(OH)2 + 2 Na  C2H4(OH)2  + H2 *(Học sinh viết được 2 PTHH**** 0,25 điểm)
-***Câu 9
-***NC
-***Đốt cháy hoàn toàn hỗn hợp (X) gồm hai ancol đơn chức, kế tiếp nhau trong dãy đồng đẳng, thu được 1,792 lít khí CO2 (đktc) và 2,34 gam H2O. Tìm công thức phân tử của hai ancol trong hỗn hợp (X)?
-***1 điểm
+**Câu 9**
+**NC**
+**Đốt cháy hoàn toàn hỗn hợp (X) gồm hai ancol đơn chức, kế tiếp nhau trong dãy đồng đẳng, thu được 1,792 lít khí CO2 (đktc) và 2,34 gam H2O. Tìm công thức phân tử của hai ancol trong hỗn hợp (X)?**
+**1 điểm**
 *nCO2= 0,08 mol và nH2O= 0,13 mol
 *0,25
 *nH2O > nCO2  ancol no   CnH2n+2O
@@ -269,7 +269,7 @@ CnH­2n+2O + 1,5n O2  n CO2 + (n+1) H2O
 *Học sinh không viết PTHH, mà dùng n =**= 1,6**** 0,25 điểm
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 11- Bui Thi Xuan – Da](/assets/docs/Hoa-11-Bui-Thi-Xuan-Da.docx)
+- [Hoa 11- Bui Thi Xuan – Da](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

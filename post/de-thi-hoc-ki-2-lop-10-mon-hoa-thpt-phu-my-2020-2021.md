@@ -23,7 +23,7 @@ grade: 10
 ……….. |
 | --- | --- | --- |
 
-**A. PHẦN TRẮC NGHIỆM KHÁCH QUAN ( 7 điểm)
+**A. PHẦN TRẮC NGHIỆM KHÁCH QUAN ( 7 điểm)**
 | Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Đáp án |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -32,12 +32,12 @@ grade: 10
 
 **PHẦN TRẮC NGHIỆM**.
 
-***Haõy choïn phöông aùn ñuùng trong caùc caâu sau ñaây vaø ghi vaøo phieáu traû lôøi traéc nghieäm
+**Haõy choïn phöông aùn ñuùng trong caùc caâu sau ñaây vaø ghi vaøo phieáu traû lôøi traéc nghieäm**
 **Câu 1.** Chất nào sau đây tác dụng được với H2 ngay cả khi ở trong bóng tối và ở nhiệt độ rất thấp?
 
 A. F2     B. Cl2     C. Br2     D. I2
 
-**Câu 2**. Thí nghiệm nào sau đây thu được khí hiđroclorua?
+**Câu 2:** . Thí nghiệm nào sau đây thu được khí hiđroclorua?
 
 A. dung dịch NaCl + dung dịch HNO3 B. dung dịch BaCl2 + dung dịch H2SO4
 
@@ -53,7 +53,7 @@ C. NaCl (rắn) + H2SO4 (đặc nóng) D. dung dịch NaCl + dung dịch H2SO4 l
 
 **Câu 5:** Số nguyên tử oxi trong phân tử lưu huỳnh trioxit là
 
-**A.** 1. **B.** 2. **C.** 3. **D.** 4.
+**A.** 1. B.** 2. **C.** 3. D.** 4.
 
 **Câu 6:** Ở điều kiện thường, hiđro sunfua là chất
 
@@ -131,7 +131,7 @@ A. Fe2O3 B. Al2O3 C. Fe3O4 D. ZnO
 
 A. 10,08 lít B. 5,04 lít C. 3,36 lít D. 22,4 lít
 
-**Câu 25:** H2SO4 đặc không làm khô được khí nào sau đây? **A.** H2S **B.** CO2 **C.** Cl2 **D.** O2
+**Câu 25:** H2SO4 đặc không làm khô được khí nào sau đây? **A.** H2S B.** CO2 **C.** Cl2 D.** O2
 
 **Câu 26:** Người ta đã lợi dụng yếu tố nào để tăng tốc độ phản ứng khi dùng không khí nén, nóng thổi vào lò cao để đốt cháy than cốc trong sản xuất gang? 
 
@@ -155,7 +155,7 @@ A. Al + dd NaOH ở 25oC B. Al + dd NaOH ở 30oC
 
 C. Al + dd NaOH ở 40oC D. Al + dd NaOH ở 50oC
 
-**B. TỰ LUẬN (3 điểm)
+**B. TỰ LUẬN (3 điểm)**
 **Câu 29:** Cho cân bằng: CaCO3(r) ⇄ CaO(r) + CO2(K) ; ∆H>0 . Cân bằng chuyển dịch theo chiều nào khi thay đổi lần lượt các yếu tố sau:
 
 a. Thêm ít giọt NaOH.
@@ -170,26 +170,26 @@ a/ Viết PTHH xảy ra
 
 b/ Tính % khối lượng Fe, CuO trong hỗn hợp và khối lượng muối thu được?
 
-**Câu 31:** (0,5đ)**Dẫn khí H2S đi qua dung dịch KMnO4 và H2SO4 sẽ có hiện tượng gì? Viết PTHH chứng minh.
+**Câu 31:** (0,5đ)**Dẫn khí H2S đi qua dung dịch KMnO4 và H2SO4 sẽ có hiện tượng gì? Viết PTHH chứng minh.**
 
-**Câu 32:** (0,5đ)** Hỗn hợp X gồm SO2 và O2 có tỉ khối so với hiđro bằng 28. Lấy 2,24 lít ở đktc hỗn hợp X cho đi qua bình đựng V2O5 nung nóng. Hỗn hợp thu được sau phản ứng cho lội qua dung dịch BaCl2 (dư) thấy tạo ra 6,99 gam kết tủa. Viết PTHH các phản ứng xảy ra và tính hiệu suất của phản ứng oxi hoá SO2 thành SO3.
+**Câu 32:** (0,5đ)** Hỗn hợp X gồm SO2 và O2 có tỉ khối so với hiđro bằng 28. Lấy 2,24 lít ở đktc hỗn hợp X cho đi qua bình đựng V2O5 nung nóng. Hỗn hợp thu được sau phản ứng cho lội qua dung dịch BaCl2 (dư) thấy tạo ra 6,99 gam kết tủa. Viết PTHH các phản ứng xảy ra và tính hiệu suất của phản ứng oxi hoá SO2 thành SO3.**
 
-**Cho: Fe-56, Cu=64, Ba=137, S=32, O=16.
-**—————–HẾT——————
+**Cho: Fe-56, Cu=64, Ba=137, S=32, O=16.**
+**—————–HẾT——————**
 | SỞ GD VÀ ĐT BÌNH ĐỊNH | ĐÁP ÁN VÀ HƯỚNG DẪN CHẤM
 ĐỀ KIỂM TRA CUỐI HKII NĂM HỌC 2020-2021 |
 | --- | --- |
 | TRƯỜNG THPT SỐ 1 PHÙ MỸ | MÔN: Hóa  THỜI GIAN: 45 phút ( Không kể thời gian phát đề) |
 
-**A. PHẦN TRẮC NGHIỆM KHÁCH QUAN ( 7 điểm) Mã đề 121
-**Mã đề 101
+**A. PHẦN TRẮC NGHIỆM KHÁCH QUAN ( 7 điểm) Mã đề 121**
+**Mã đề 101**
 | Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Đáp án | A | C | C | D | C | A | C | C | A | B | A | B | D | C |
 | Câu | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 |
 | Đáp án | B | B | D | B | D | D | A | C | C | B | A | C | C | A |
 
-**B. PHẦN TỰ LUẬN
+**B. PHẦN TỰ LUẬN**
 | Câu hỏi | Nội dung | Điểm |
 | --- | --- | --- |
 | Câu 29 (1 điểm) | a, Thêm ít giọt NaOH, nồng độ CO2 giảm (vì CO2 + NaOH →NaHCO3) cân bằng chuyển dịch theo chiều tăng nồng độ CO2, chiều tăng nồng độ CO2 là chiều thuận. b. Khi tăng nhiệt độ, cân bằng chuyển dịch theo chiều giảm nhiệt độ, mà phản ứng nung vôi, chiều thuận là phản ứng thu nhiệt (∆H>0)  nên chiều giảm nhiệt độ là chiều thuận (vì phản ứng thu nhiệt, phản ứng càng xảy ra theo chiều thuận, nhiệt độ càng giảm) | 0,25 0,25 0,25 0,25 |
@@ -197,10 +197,10 @@ b/ Tính % khối lượng Fe, CuO trong hỗn hợp và khối lượng muối 
 | Câu 31 (0,5 điểm) | -Màu tím của dung dịch chuyển sang không màu -Có vẩn đục vàng 5H­2­S + 2KMnO4 +3H2SO4 → 5S +K2SO4+2MnSO4 + 8H2O | 0,25 0,25 |
 | Câu 32 (0,5 điểm) | Dùng sơ đồ đường chéo, tính được tỉ lệ mol: nSO2/nO2 = 3/1  Hiệu suất phản ứng tính theo oxi. Trong 2,24 lít hh X ở đktc, tức 0,1 mol có: nSO2 = 0,075 mol; nO2 = 0,025 mol. Các PTPƯ: 2SO2 + O2  2SO3 (1) . Hỗn hợp sau p.ư (1) gồm có SO2, O2 và sản phẩn SO3 khi dẫn qua dd BaCl2­ dư, chỉ có p.ư: SO3 + BaCl2 + H2O  BaSO4+ 2HCl nBaSO4= 6,99/233 = 0,03 mol nO2 p.ư(1) = 0,015 mol H% p.ư(1) = 0,15.100%/0,25 = 60%. | 0,25 0,25 |
 
-**Học sinh làm cách nào đúng vẫn có điểm tối đa.
+**Học sinh làm cách nào đúng vẫn có điểm tối đa.**
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [(2020-2021)THPT Phù Mỹ – Bình Định](/assets/docs/2020-2021THPT-Phu-My-Binh-Dinh.doc)
+- [(2020-2021)THPT Phù Mỹ – Bình Định](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -15,7 +15,7 @@ grade: 10
 
 - Cuốn sách chúng tôi đang viết dở dang, nếu có thời gian sẽ hoàn thiện thêm.
 
-- Download: [Lap_trinh_Python-giasu.ai.vn](/assets/docs/Lap_trinh_Python-giasu.ai.vn.pdf)
+- Download: [Lap_trinh_Python-giasu.ai.vn](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 1. Hướng dẫn lập trình Python
 
@@ -47,7 +47,7 @@ grade: 10
 
 - Bạn có thể đọc online tại đây [https://greenteapress.com/wp/think-python-2e/](https://greenteapress.com/wp/think-python-2e/)
 
-- Download PDF: [thinkpython2](/assets/docs/thinkpython2.pdf)
+- Download PDF: [thinkpython2](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 4. Automate Boring Stuff With Python
 
@@ -97,7 +97,7 @@ grade: 10
 
 - Download: [https://www.py4e.com/book](https://www.py4e.com/book)
 
-- PDF: [pythonlearn](/assets/docs/pythonlearn.pdf)
+- PDF: [pythonlearn](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 9. Python Cookbook
 

@@ -16,8 +16,8 @@ grade: 11
 
 Giáo án powerpoint hóa 11 bài 5 ammonia muối ammonium KNTT
 
-**. AMMONIA
-***1. Cấu tạo phân tử
+**. AMMONIA**
+**1. Cấu tạo phân tử**
 1. Viết cấu hình electron c
 
 | BÀI 5. AMMONIA . MUỐI AMMONIUM |
@@ -57,7 +57,7 @@ Từ đặc điểm cấu tạo của ammonia, hãy giải thích tại sao phâ
 
 …………………………………………………………………………………………………………………………………………………………
 
-***2. Tính chất vật lý
+**2. Tính chất vật lý**
  ……….……………………………………………………………………….
 
 ..……………………………………………………………………………
@@ -81,8 +81,8 @@ Giải thích tại sao ammonia tan nhiều trong nước ?
 
 ……………………………………………………………………………
 
-***2. Tính chất hóa học
-***a. Tính base
+**2. Tính chất hóa học**
+**a. Tính base**
 Trong công nghiệp, phản ứng giữa ammonia với acid được dùng để sản xuất phân bón:
 
 NH3 + HCl → NH4Cl
@@ -109,7 +109,7 @@ Dung dịch ammonia có môi trường…………………, làm quỳ tím…�
 
 Ví dụ :……………………………………………………………………..
 
-***b. Tính khử
+**b. Tính khử**
 Xác định số oxi hóa của N trong NH3 và cho biết xu hướng thay đổi số oxi hóa của N trong các phản ứng hóa học? Dự đoán thêm về tính chất hóa học của NH3?
 
 ..…………………………………………………………………………… …………………………………………………………………………………………………………………………………………………………
@@ -140,12 +140,12 @@ Trong hai phản ứng oxi hóa ammonia bằng oxygen ở trên, hãy:
 
 ……………………………………………………………………………
 
-***4. Ứng dụng
+**4. Ứng dụng**
  ……….……………………………………………………………………….
 
 ..……………………………………………………………………………
 
-***5. Sản xuất
+**5. Sản xuất**
  ……….……………………………………………………………………….
 
 ..……………………………………………………………………………
@@ -174,11 +174,11 @@ Vận dụng các kiến thức về cân bằng hóa học, tốc độ phản 
 
 ……………………………………………………………………………
 
-**II. MUỐI AMMONIUM
-***1. Tính tan, sự điện li*
+### Ii. Muối Ammonium
+**1. Tính tan, sự điện li***
 ………………………………………………………………..……………………………………………………………………………..………………………………………………………………………………………
 
-***2. Tác dụng với dung dịch kiềm – Nhận biết ion ammonium
+**2. Tác dụng với dung dịch kiềm – Nhận biết ion ammonium**
  Thí nghiệm: Nhận biết ion ammonium trong phân đạm
 
 Chuẩn bị
@@ -213,7 +213,7 @@ Hiện tượng
 
 ..……………………………………………………………………………
 
-***3. Tính kém bền nhiệt
+**3. Tính kém bền nhiệt**
  Muối ammonium tạo bởi acid không có tính oxi hóa khi đun nóng tạo ra …………………
 
 ..……………………………………………………………………………
@@ -226,7 +226,7 @@ Hiện tượng
 
 …………………………………………………………………………….
 
-…………………………………………………………………………….***4. Ứng dụng
+…………………………………………………………………………….**4. Ứng dụng
  ………………………………………………………………………..
 
 ..……………………………………………………………………………
@@ -241,8 +241,8 @@ a. So sánh phân tử ammonia và ion ammonium về dạng hình học, số li
 
 ……………………………………………………………………………………………………………………………………………………………..……………………………………………………………………………
 
-**III. LUYỆN TẬP
-***Chọn đáp án đúng cho mỗi câu hỏi sau
+### Iii. Luyện Tập
+**Chọn đáp án đúng cho mỗi câu hỏi sau**
 **Câu 1:** Trong dung dịch, ammonia là một base yếu là do:
 
 **A.** Ammonia tan nhiều trong nước.
@@ -265,9 +265,9 @@ a. So sánh phân tử ammonia và ion ammonium về dạng hình học, số li
 
 **Câu 3:** Có thể dùng chất nào sau đây để làm khô khí NH3?
 
-**A.** H2SO4.                                                                   **B.** P2O5.                             
+**A.** H2SO4.                                                                   B.** P2O5.                             **
 
-**C.** CaO.                                                                      **D.** CuSO4 khan.
+**C.** CaO.                                                                      D.** CuSO4 khan.**
 
 **Câu 4:** Ammonia phản ứng được với những chất nào sau đây?
 
@@ -281,7 +281,7 @@ a. So sánh phân tử ammonia và ion ammonium về dạng hình học, số li
 
 **Câu 5:** Trong công nghiệp NH3 được điều chế từ N2 và H2. Hỏi từ 8 lit N2 với hiệu suất 25% thì thu được bao nhiêu lit NH3?
 
-**A.** 16 L.                                  **B.** 4L.                         **C.** 8L.             **D.** 6L.
+**A.** 16 L.                                  B.** 4L.                         **C.** 8L.             D.** 6L.
 
 ……………………………………………………………………………………………………………………………………………………………..……………………………………………………………………………
 
@@ -293,7 +293,7 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [B05_AMMONIA.-MUOI-AMMONIUM_-Ha-Giang](https://drive.google.com/file/d/1aNPkyjef4cW6jR7gnS410XaAB2XiFqVl/view?usp=sharing)
 
-- [B05_AMMONIA.MUOI-AMMONIUM_Ha-Giang](/assets/docs/B05_AMMONIA.MUOI-AMMONIUM_Ha-Giang.docx)
+- [B05_AMMONIA.MUOI-AMMONIUM_Ha-Giang](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

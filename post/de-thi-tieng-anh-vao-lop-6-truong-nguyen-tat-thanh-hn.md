@@ -13,10 +13,10 @@ grade: 6
 
 ## Đề thi tiếng Anh vào lớp 6 trường Nguyễn Tất Thành
 
-**TRƯỜNG THCS NGUYỄN TẤT THÀNH
-**ĐỀ THI CHÍNH THỨC VÀO 6 NĂM 2020
-**MÔN: TIẾNG ANH
-**Circle the letter A, B, C or D to indicate the correct answer to each of the following questions.
+**TRƯỜNG THCS NGUYỄN TẤT THÀNH**
+**ĐỀ THI CHÍNH THỨC VÀO 6 NĂM 2020**
+**MÔN: TIẾNG ANH**
+**Circle the letter A, B, C or D to indicate the correct answer to each of the following questions.**
 **Question 1.** I like going to the beach in   because it’s hot and sunny.
 
 A. spring                          B. summer                       C. winter                          D. autumn
@@ -59,18 +59,18 @@ A. took                              B. take   �
 
 #  
 
-**Question 11: Look at four step-by-step processes for effective hand washing. Circle the letter A, B, C or D to indicate the correct one.
+**Question 11: Look at four step-by-step processes for effective hand washing. Circle the letter A, B, C or D to indicate the correct one.**
 ![Đề thi tiếng Anh vào lớp 6 trường Nguyễn Tất Thành - HN 1](assets/images/de-thi-tieng-anh-vao-lop-6-truong-nguyen-tat-thanh-hn-image-69.png)
 
 ![Đề thi tiếng Anh vào lớp 6 trường Nguyễn Tất Thành - HN 2](assets/images/de-thi-tieng-anh-vao-lop-6-truong-nguyen-tat-thanh-hn-image-70.png)
 
-**Question 12: Look at the notice. Circle the correct answer
+**Question 12: Look at the notice. Circle the correct answer**
 ![Đề thi tiếng Anh vào lớp 6 trường Nguyễn Tất Thành - HN 3](assets/images/de-thi-tieng-anh-vao-lop-6-truong-nguyen-tat-thanh-hn-image-71.png)
 
-**Question 13: Look at the message. Circle the letter A, B, C or D to indicate the correct sentence.
+**Question 13: Look at the message. Circle the letter A, B, C or D to indicate the correct sentence.**
 ![Đề thi tiếng Anh vào lớp 6 trường Nguyễn Tất Thành - HN 4](assets/images/de-thi-tieng-anh-vao-lop-6-truong-nguyen-tat-thanh-hn-image-72.png)
 
-**Question 14-16: Circle the letter A, B, C or D to indicate the most suitable response to each of the following questions.
+**Question 14-16: Circle the letter A, B, C or D to indicate the most suitable response to each of the following questions.**
 **Question 14:** Jane: “Mum, I’ve won the girl’s long jump.” Mary: “____________”
 
 A. It’s nothing.
@@ -93,7 +93,7 @@ A. She is a shopkeeper.                            �
 
 C. Playing table tennis and doing judo                 D. I’m fine, thanks.
 
-**Question 17-19: Read the passage and answer the following question and circle the letter A, B, C or D to indicate the correct answer to each of the following questions.
+**Question 17-19: Read the passage and answer the following question and circle the letter A, B, C or D to indicate the correct answer to each of the following questions.**
 Ants are incredible creatures. Each colony has its own smell. Each of the ants in the colony knows the smell. Enemies will not be able to enter their camp without being discovered. Several types of ants have a sting to protect their nest when strangers get in.
 
 The queen ant is the only one who can lay eggs for the colony. None of the other ants can lay eggs at all. The worker ants cannot lay eggs. They take care of new-born baby ants. They also search for food. These worker ants protect their nest from enemies. They also keep the nest spick and span. They take out the “trash” from the nest and place it in one area.
@@ -115,10 +115,10 @@ A. sting                             B. eggs    
 
 ………………………………………
 
-**Question 20: The following sentence has ONE WORD that is not correct. Write the correction in the box.
+**Question 20: The following sentence has ONE WORD that is not correct. Write the correction in the box.**
 *My parents want to sunbath in the morning when the sun is not hot.*…………………….
 
-**Question 21-25: Complete the following passage by writing ONE WORD for each gap with given pictures.
+**Question 21-25: Complete the following passage by writing ONE WORD for each gap with given pictures.**
 I have really great time at the (21)                    this weekend with my mum and dad. We saw a lot of big (22) _________ and even got to feed some.
 
 I also saw some (23) ________. There were not too scary. I can show some funny pictures of them. Do you know what I liked most about the trip? I got to see (24)                         jumping and (25)        in the water.
@@ -127,10 +127,10 @@ I also saw some (23) ________. There were not too scary. I can show some funny p
 
 ![Đề thi tiếng Anh vào lớp 6 trường Nguyễn Tất Thành - HN 6](assets/images/de-thi-tieng-anh-vao-lop-6-truong-nguyen-tat-thanh-hn-image-75.png)
 
-**Question 26: Vietnam has tried to save the British pilot, a coronavirus patient. He is getting better. Play the role of the pilot, write a note/ letter of about 30-50 words to Vietnamese doctors and Vietnam to share feelings.
+**Question 26: Vietnam has tried to save the British pilot, a coronavirus patient. He is getting better. Play the role of the pilot, write a note/ letter of about 30-50 words to Vietnamese doctors and Vietnam to share feelings.**
 ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………
 
-**————— The end —————
+**————— The end —————**
 ## Đáp án tiếng Anh vào lớp 6 trường Nguyễn Tất Thành
 
 1. B

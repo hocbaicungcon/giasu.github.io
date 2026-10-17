@@ -21,88 +21,88 @@ GIA SƯ THÔNG MINH xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 
 
 ## Đề Tiếng Anh SGD Nam Định 2023 mã 311
 
-***Mark the letter A, B, C or D on your answer sheet to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.
-**Question 1: A.** wealth            **B.** theatre        **C.** breath                     **D.** weather
+**Mark the letter A, B, C or D on your answer sheet to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.**
+**Question 1: A.** wealth            **B.** theatre        C.** breath                     **D.** weather**
 
-**Question 2: A.** pick         **B.** hide            **C.** shine             **D.** like
+**Question 2: A.** pick         **B.** hide            C.** shine             **D.** like**
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress in each of the following questions.
-**Question 3: A.** career            **B.** hacker                      **C.** custom                    **D.** leaflet **Question 4: A.** activate          **B.** specialize                 **C.** abandon                 **D.** classify
+**Mark the letter A, B, C, or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress in each of the following questions.**
+**Question 3: A.** career            **B.** hacker                      C.** custom                    **D.** leaflet Question 4: A.** activate          **B.** specialize                 C.** abandon                 **D.** classify**
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the following questions.**
 **Question 5:** Tom’s parents insisted that he ______ hard for the GCSE exams.
 
-**A.** studies                   **B.** studied                      **C.** study                       **D.** was studying
+**A.** studies                   B.** studied                      **C.** study                       D.** was studying
 
 **Question 6:** My younger sister is much ______ at English than me.
 
-**A.** good                              **B.** better                        **C.** the best                         **D.** best
+**A.** good                              B.** better                        **C.** the best                         D.** best
 
 **Question 7:** My brother feels too exhausted. He ______ in the garden all morning. 
 
-**A**. works                **B.** worked                **C.** has worked                   **D.** has been working
+**A**. works                **B.** worked                C.** has worked                   **D.** has been working**
 
 **Question 8:** My son became addicted ______ social networking when he was at the age of eleven.
 
-**A.** at                                   **B.** for                            **C.** with                               **D.** to
+**A.** at                                   B.** for                            **C.** with                               D.** to
 
 **Question 9:** How long will you have worked on this assignment ______ ?
 
-**A.** when you submitted it                        **B.** by the time you submit it  
-**C.** after you had submitted it                 **D.** as soon as you will submit it
+**A.** when you submitted it                        B.** by the time you submit it  **
+**C.** after you had submitted it                 D.** as soon as you will submit it**
 
 **Question 10:** Do ______ English drink tea or coffee at breakfast?
 
-     **A.** a                                    **B.** an                             **C.** the                                 **D.** Ø (no article) 
+     **A.** a                                    B.** an                             **C.** the                                 D.** Ø (no article) 
 
 **Question 11:** When I was in Hanoi, I often saw ______ faces of people coming from the rural areas.
 
-            **A.** weather-beaten       **B.** thought-provoking  **C.** cost-effective         **D.** well-paid **Question 12:** The workers are trying to ______ the source of the oil leak.         
+            **A.** weather-beaten       B.** thought-provoking  **C.** cost-effective         D.** well-paid **Question 12:** The workers are trying to ______ the source of the oil leak.         
 
-     **A.** look up                          **B.** carry out                   **C.** search for                      **D.** rely on
+     **A.** look up                          B.** carry out                   **C.** search for                      D.** rely on
 
 **Question 13:** My father offered ______ all of us to the airport.
 
-     **A.** to take                           **B.** taking                       **C.** take                               **D.** taken 
+     **A.** to take                           B.** taking                       **C.** take                               D.** taken 
 
 **Question 14:** We must stay ahead of the ______, so we are changing our marketing strategies and the advertising will now include TikTok. 
 
-     **A.** play                               **B.** event                        **C.** game                             **D.** match
+     **A.** play                               B.** event                        **C.** game                             D.** match
 
 **Question 15:** The children ______ video games when the father came into the room.
 
-     **A.** are playing                    **B.** play                          **C.** played                           **D.** were playing
+     **A.** are playing                    B.** play                          **C.** played                           D.** were playing
 
 **Question 16:** If you ______ your CV to suit the job requirements, you can increase your chances of getting a job interview. 
 
-    **A.** sailor                              **B.** tailor                         **C.** give                               **D.** make  
+    **A.** sailor                              B.** tailor                         **C.** give                               D.** make  
 
 **Question 17:** I couldn’t attend your party because I got the fence that fell over the garden ______.
 
-     **A.** repair                            **B.** was repaired             **C.** repaired                        **D.** to repair
+     **A.** repair                            B.** was repaired             **C.** repaired                        D.** to repair
 
 **Question 18:** One of the popular ______ used in smartphones at present is voice recognition.
 
-     **A.** applicants                      **B.** applicable                 **C.** apply                             **D.** applications Question 19:** Don’t forget to [send](https://dictionary.cambridge.org/dictionary/english/send)[](https://dictionary.cambridge.org/dictionary/english/send)a ______[](https://dictionary.cambridge.org/dictionary/english/letter)[letter](https://dictionary.cambridge.org/dictionary/english/letter)[](https://dictionary.cambridge.org/dictionary/english/letter)with[](https://dictionary.cambridge.org/dictionary/english/your)[your](https://dictionary.cambridge.org/dictionary/english/your)[](https://dictionary.cambridge.org/dictionary/english/application)[application](https://dictionary.cambridge.org/dictionary/english/application)[](https://dictionary.cambridge.org/dictionary/english/form)[form,](https://dictionary.cambridge.org/dictionary/english/form) please.
+     **A.** applicants                      B.** applicable                 **C.** apply                             D.** applications Question 19:** Don’t forget to [send](https://dictionary.cambridge.org/dictionary/english/send)[](https://dictionary.cambridge.org/dictionary/english/send)a ______[](https://dictionary.cambridge.org/dictionary/english/letter)[letter](https://dictionary.cambridge.org/dictionary/english/letter)[](https://dictionary.cambridge.org/dictionary/english/letter)with[](https://dictionary.cambridge.org/dictionary/english/your)[your](https://dictionary.cambridge.org/dictionary/english/your)[](https://dictionary.cambridge.org/dictionary/english/application)[application](https://dictionary.cambridge.org/dictionary/english/application)[](https://dictionary.cambridge.org/dictionary/english/form)[form,](https://dictionary.cambridge.org/dictionary/english/form) please.**
 
-     **A.** suggesting                     **B.** covering                   **C.** applying                        **D.** inviting
+     **A.** suggesting                     B.** covering                   **C.** applying                        D.** inviting
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the option that best completes each of the following exchanges in each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the option that best completes each of the following exchanges in each of the following questions.**
 **Question 20:** Tim and Mary are in the kitchen. 
 
      **Mary**: “Would you like some cookies? I have just baked them.”   **Tim**: “______. I’m hungry now.” 
 
-     **A.** No, thanks                     **B.** Yes, of course          **C.** Here you are                 **D.** Take it easy
+     **A.** No, thanks                     B.** Yes, of course          **C.** Here you are                 D.** Take it easy
 
 **Question 21:** Thomas and Tom are talking about a book they have just read.
 
 **Thomas**: “The book is really interesting and educational.”  **Tom**: “_____. I think everyone should read it.”
 
-     **A.** I’d love it                                                             **B.** That’s nice of you to say so
+     **A.** I’d love it                                                             B.** That’s nice of you to say so**
 
-      **C.** You can say that again                                       **D.** Don’t mention it
+      **C.** You can say that again                                       D.** Don’t mention it**
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that is closest in meaning to each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that is closest in meaning to each of the following questions.**
 **Question 22**: My friends said: “We will be here next week.”
 
 1. My friends said we would be there the following week.
@@ -123,11 +123,11 @@ GIA SƯ THÔNG MINH xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 
 
 **Question 24:** It wasn’t necessary for you to do all this work.
 
- **A.** You mustn’t have done all this work.                    **B.** You couldn’t have done all this work.
+ **A.** You mustn’t have done all this work.                    B.** You couldn’t have done all this work.**
 
-     **C.** You may not have done all this work                    **D.** You needn’t have done all this work.
+     **C.** You may not have done all this work                    D.** You needn’t have done all this work.**
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that is combines each pair of sentences in the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that is combines each pair of sentences in the following questions.**
 **Question 25:** Lucy really wants to attend the Halloween event. She doesn’t have a Halloween costume.
 
 1. Provided that Lucy has a Halloween costume, she can’t attend the Halloween event.
@@ -148,40 +148,40 @@ GIA SƯ THÔNG MINH xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 
 
 4. Not only did the basketball team lose the match but they blamed each other as well.
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.**
 **Question 27:** He is overweight because he eats too much junk food and he exercises **infrequently**.
 
- **A.** very often **B.** very poorly                   **C.** very little                      **D.** very weakly
+ **A.** very often B.** very poorly                   **C.** very little                      D.** very weakly
 
 **Question 28:** I studied and studied for my final test until I **knew it by heart**.
 
- **A.** knew it very well                                                **B.** was unaware of it
+ **A.** knew it very well                                                B.** was unaware of it**
 
-     **C.** learnt it as much as possible                              **D.** did it the best 
+     **C.** learnt it as much as possible                              D.** did it the best **
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.**
 **Question 29:** According to the weather forecast, fog will **blanket** the western area of the island.
 
- **A.** report                        **B.** remove                          **C.** increase                         **D.** cover 
+ **A.** report                        B.** remove                          **C.** increase                         D.** cover 
 
 **Question 30:** Here customers can eat delicious food prepared by a **master** chef who came from Vietnam.
 
- **A.** serious                      **B.** tasty                              **C.** skillful                           **D.** polite
+ **A.** serious                      B.** tasty                              **C.** skillful                           D.** polite
 
-***Mark the letter A, B, C or D on your answer sheet to indicate the underlined part that needs correction in each of the following questions.*
+**Mark the letter A, B, C or D on your answer sheet to indicate the underlined part that needs correction in each of the following questions.***
 **Question 31:** People that are walking across the desert are the kind of industrial and courageous people and they are fully confident in their mental and physical health.
 
- **A.** confident                  **B.** industrial                       **C.** desert                            **D.** health
+ **A.** confident                  B.** industrial                       **C.** desert                            D.** health
 
 **Question 32:** When an animal disappeared totally from the surface of the Earth, we said that they became extinct.
 
- **A.** surface                      **B.** When                            **C.** disappeared                   **D.** they
+ **A.** surface                      B.** When                            **C.** disappeared                   D.** they
 
 **Question 33:** Hackers take her Facebook account last week and they used it to ask others on her social network for money.
 
- **A.** for                             **B.** it                                    **C.** take                               **D.** social
+ **A.** for                             B.** it                                    **C.** take                               D.** social
 
-***Read the following passage and mark the letter A, B, C or D on your answer sheet to indicate the correct word or phrase that best fits each of the numbered blanks from 34 to 38.
+**Read the following passage and mark the letter A, B, C or D on your answer sheet to indicate the correct word or phrase that best fits each of the numbered blanks from 34 to 38.**
 Plastic bags are being used everyday, not only in Viet Nam but all over the world. They are thought harmful to **(34)** _______ development. The impacts of plastic bags have long been studied and bad effects of plastic bags are undeniable. Plastic bags **(35)** _______ end up in landfills or nature can take about 500 years to fully degrade, which is awful for the environment. **(36)** _______ bad effect is that when plastic bags reach 7080 degrees Celsius, they can indirectly cause cancer and neuron loss. For such reasons, environmentalists want to get rid of plastic bags and set higher tax on plastic bags producers.
 
 **(37)** _______, plastic bags are sometimes believed to be the most environmentally friendly option in
@@ -190,17 +190,17 @@ supermarkets. Studies say that “greener” options like paper bags are worse f
 
 (Adapted from *FCE Use of English by* Virginia Evans)
 
-**Question 34: A.** expensive **B.** changeable    **C.** unsuitable                     **D.** sustainable
+**Question 34: A.** expensive **B.** changeable    C.** unsuitable                     **D.** sustainable**
 
-**Question 35: A.** whose          **B.** who.        **C.** which                            **D.** what
+**Question 35: A.** whose          **B.** who.        C.** which                            **D.** what**
 
-**Question 36: A.** Few            **B.** Another        **C.** Many                            **D.** Much
+**Question 36: A.** Few            **B.** Another        C.** Many                            **D.** Much**
 
-**Question 37: A.** Hence          **B.** Moreover        **C.** Therefore                      **D.** However
+**Question 37: A.** Hence          **B.** Moreover        C.** Therefore                      **D.** However**
 
-**Question 38: A.** have             **B.** do         **C.** make                             **D.** take
+**Question 38: A.** have             **B.** do         C.** make                             **D.** take**
 
-***Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the questions from 39 to 43.
+**Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the questions from 39 to 43.**
 Lee Kuan Yew was appointed as the first prime minister of Singapore in 1959 when the nation became one of the self-governing states. At that time, Singapore per capita income was only about USD 400. When Lee retired in 1990, the figure was USD 11,000 and in 2014 it went up to over 56,000 even higher than that of its former colonizer, Great Britain. In his impassioned speeches and his famous memoirs, he said “there were also some probable opponents and **they** laughed at us, but I was confident that we would have the last laugh.”
 
 Born into a middle-class Chinese family in Singapore, Lee was influenced by the language and institutions of the British rulers. He was destined to go to the UK to study law, but the Second World War broke out and he had to go to the local Raffles College where he learnt some economics. It was not until 1946 when he talked his way to Cambridge and graduated three years later with a starred first. It was during this time that he nurtured ambitions beyond starting a legal career back home.
@@ -221,7 +221,7 @@ As a prime minister, he has always been described as an efficient and inventive 
 
 **Question 40:** The word **They** in paragraph 1 refers to _______.
 
-**A.** self-governing states      **B.** impassioned speeches            **C.** probable opponents      **D.** famous memoirs
+**A.** self-governing states      B.** impassioned speeches            **C.** probable opponents      D.** famous memoirs
 
 **Question 41:** According to the text, Lee Kuan Yew’s policies_________.
 
@@ -232,7 +232,7 @@ As a prime minister, he has always been described as an efficient and inventive 
 
 **Question 42:** The word **forward-looking** in paragraph 3 mostly means _______.
 
-**A.** conservative             **B.** developing          **C.** absent-minded             **D.** progressive
+**A.** conservative             B.** developing          **C.** absent-minded             D.** progressive
 
 **Question 43:** Which of the following is NOT true about Lee Kuan Yew?
 
@@ -244,7 +244,7 @@ As a prime minister, he has always been described as an efficient and inventive 
 
 **D.** He postponed his law study because the Second World War broke out.
 
-***Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the questions from 44 to 50.
+**Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the questions from 44 to 50.**
 Chat GPT is a language model developed by Open AI that uses deep learning techniques to generate human-like responses to text-based prompts or questions. GPT stands for “Generative Pre-trained Transformer”. The GPT model is capable of generating coherent and contextually relevant responses to a wide range of prompts, making it useful for a variety of applications, such as chatbots, language translation, and content creation. Chat GPT gets its information from a vast **corpus** of text data that has been preprocessed and used to train the model. This corpus includes a diverse range of sources, such as books, articles, web pages, and other forms of text-based content that are available on the Internet. 
 
 However, the responses it generates can incorporate knowledge and information that it has learned from this training data. People wonder if this tool will eliminate the majority of jobs and put a huge majority of **them** out of work. The development of advanced language models like Chat GPT has led to concerns that they could replace human workers and lead to job losses. While it is true that these models are capable of automating certain tasks that were previously performed by humans, they are not necessarily designed to replace human workers. Instead, language models like Chat GPT are often used to increase human labor, enabling workers to be more productive and efficient in their roles. For example, they can be used to assist customer service representatives by answering common questions, freeing up their time to focus on more complex issues. They can also be used to improve the accuracy and efficiency of translation services or to generate content for news articles, social media posts, and other forms of written content.
@@ -253,11 +253,11 @@ In some cases, the development of language models may lead to the displacement o
 
 (Adapted from *https://en.islcollective.com*)
 
-**Question 44:** Which of the following can be the best title for the passage? A.**A Definition of Chat GPT** B.**The Drawbacks of Chat GPT**         C.**An Overview of Chat GPT** D.**Chat GPT and Its Origin
+**Question 44:** Which of the following can be the best title for the passage? A.**A Definition of Chat GPT** B.**The Drawbacks of Chat GPT**         C.**An Overview of Chat GPT** D.**Chat GPT and Its Origin**
 
 **Question 45:** The word**corpus** in paragraph 1 is **CLOSEST** in meaning to _______.
 
-**A.** website                     **B.** collection **C.** audience                   **D.** shortage 
+**A.** website                     B.** collection **C.** audience                   D.** shortage 
 
 **Question 46:** According to the passage, which of the following statements is NOT true?
 
@@ -271,7 +271,7 @@ In some cases, the development of language models may lead to the displacement o
 
 **Question 47:** The word **them** in paragraph 2 refers to _______.
 
-**A.** concerns                   **B.** people                  **C.** jobs                          **D.** responses
+**A.** concerns                   B.** people                  **C.** jobs                          D.** responses
 
 **Question 48:** According to paragraph 2, how does Chat GPT help workers improve their work efficiency?
 
@@ -285,7 +285,7 @@ In some cases, the development of language models may lead to the displacement o
 
 **Question 49:** The word **offer** in paragraph  3 is **CLOSEST** in meaning to _______.
 
-**A.** cancel                     **B.** create          **C.** have            **D.** take
+**A.** cancel                     B.** create          **C.** have            D.** take
 
 **Question 50:** Which of the following can be inferred from the passage? 
 
@@ -293,16 +293,16 @@ In some cases, the development of language models may lead to the displacement o
 
 **B.** Everyone is indifferent to the influences of Chat GPT on their lives.
 
-**C.** Employees fail to work productively due to language models like Chat GPT.  D.** Chat GPT can generate content for all kinds of media thanks to its brain.
+**C.** Employees fail to work productively due to language models like Chat GPT.  D. Chat GPT can generate content for all kinds of media thanks to its brain.
 
-**———- THE END ———-
+**———- THE END ———-**
 ## Đáp án Tiếng Anh SGD Nam Định 2023
 
 **SỞ GIÁO DỤC VÀ ĐÀO TẠO** THI KHẢO SÁT CHẤT LƯỢNG HỌC KỲ II
 
                 **NAM ĐỊNH** NĂM HỌC 2022-2023
 
-**HƯỚNG DẪN CHẤM MÔN TIẾNG ANH LỚP 12 THPT
+**HƯỚNG DẪN CHẤM MÔN TIẾNG ANH LỚP 12 THPT**
 | Câu | Mã đề 311 | Mã đề 313 | Mã đề 315 | Mã đề 317 |
 | --- | --- | --- | --- | --- |
 | 1 | D | A | B | C |
@@ -356,4 +356,4 @@ In some cases, the development of language models may lead to the displacement o
 | 49 | B | D | D | A |
 | 50 | A | A | C | B |
 
-**Làm tròn điểm tổng sau dấu phảy 01 chữ số
+**Làm tròn điểm tổng sau dấu phảy 01 chữ số**

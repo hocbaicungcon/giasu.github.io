@@ -129,8 +129,8 @@ Tìm công thức phân tử của X. Viết công thức cấu tạo và gọi 
 *(Thí sinh không được sử dụng tài liệu)
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2024-DE-THI-HSG-11](/assets/docs/2024-DE-THI-HSG-11-giasu.ai.vn.docx)
-- [HUONG-DAN-CHAM-HSG-LOP-11](/assets/docs/HUONG-DAN-CHAM-HSG-LOP-11-giasu.ai.vn.pdf)
+- [2024-DE-THI-HSG-11](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HUONG-DAN-CHAM-HSG-LOP-11](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

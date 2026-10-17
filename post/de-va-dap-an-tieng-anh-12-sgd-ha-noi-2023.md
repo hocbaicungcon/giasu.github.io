@@ -15,7 +15,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 ## Đề tiếng Anh 12 SGD Hà Nội 2023 mã 401
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.**
 **Question 1:** The convention is an opportunity to **enhance** your business knowledge and polish your networking skills.
 
 **A.** diminish
@@ -36,7 +36,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **D.** lack of responsibility
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that best complete each of the following exchanges.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that best complete each of the following exchanges.**
 **Question 3:**  Joe and Nam are talking about the use of tablets.
 
 - **Joe**: “Using tablets to jot down ideas can be great.”
@@ -65,82 +65,82 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **D.** Yes, it is fairly expensive.
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress in each of the following questions.
-**Question 5: A.** effective                  **B.** romantic                   **C.** elegant                     **D.** dependent
+**Mark the letter A, B, C, or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress in each of the following questions.**
+**Question 5: A.** effective                  **B.** romantic                   C.** elegant                     **D.** dependent**
 
-**Question 6: A.** visit                         **B.** invite                       **C.** finish                       **D.** open
+**Question 6: A.** visit                         **B.** invite                       C.** finish                       **D.** open**
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the following questions.**
 **Question 7:**  The electricity will be reconnected _____ the bill.
 
-     **A.** when you will pay                                                 **B.** when you pay
+     **A.** when you will pay                                                 B.** when you pay**
 
-     **C.** when you are paying                                              **D.** when you are going to pay
+     **C.** when you are paying                                              D.** when you are going to pay**
 
 **Question 8:**  I am passionate about playing _____ guitar while my sister is fond of watching movies.
 
-     **A.** Ø (no article)                **B.** an                                 **C.** the                               **D.** a
+     **A.** Ø (no article)                B.** an                                 **C.** the                               D.** a
 
 **Question 9:**  Everyone was surprised when that little-known band _____ the night’s biggest award.
 
-     **A.** took off                        **B.** carried off                     **C.** went off                        **D.** ran off
+     **A.** took off                        B.** carried off                     **C.** went off                        D.** ran off
 
 **Question 10:**  Anne always does whatever Frank tells her to do. She’s like _____ in his hands.
 
-     **A.** butter                           **B.** glue                              **C.** putty                            **D.** clay
+     **A.** butter                           B.** glue                              **C.** putty                            D.** clay
 
 **Question 11:**  Kate was the first applicant _____ a thank-you letter to the company.
 
-     **A.** wrote                            **B.** written                          **C.** to write                         **D.** writing
+     **A.** wrote                            B.** written                          **C.** to write                         D.** writing
 
 **Question 12:**  Applicants will be expected to have a good _____ of English.
 
-     **A.** order                            **B.** aptitude                        **C.** attitude                         **D.** command
+     **A.** order                            B.** aptitude                        **C.** attitude                         D.** command
 
 **Question 13:**  The coastal areas have been severely _____ by the disposal of harmful chemical rubbish.
 
-     **A.** pollute                         **B.** polluted                        **C.** polluting                       **D.** pollution
+     **A.** pollute                         B.** polluted                        **C.** polluting                       D.** pollution
 
 **Question 14:** The museum of modern art we went to yesterday was fantastic, but the entrance _____ was a bit expensive.
 
-     **A.** charge                          **B.** cost                              **C.** fee                               **D.** ticket
+     **A.** charge                          B.** cost                              **C.** fee                               D.** ticket
 
 **Question 15:**  If people paid more attention to the environment, the Earth _____ greener.
 
-     **A.** would be                      **B.** would have been           **C.** had been                       **D.** will be
+     **A.** would be                      B.** would have been           **C.** had been                       D.** will be
 
 **Question 16:**  The shop often closes at 7 p.m., _____?
 
-     **A.** does it                           **B.** isn’t it                           **C.** is it                               **D.** doesn’t it
+     **A.** does it                           B.** isn’t it                           **C.** is it                               D.** doesn’t it
 
 **Question 17:**  Since our last meeting most of the students _____ more involved in volunteering.
 
-     **A.** become                        **B.** have become                 **C.** will become                  **D.** became
+     **A.** become                        B.** have become                 **C.** will become                  D.** became
 
 **Question 18:**  Facebook users should set strong passwords to avoid _____ into their accounts by strange people.
 
-     **A.** to be hacked                 **B.** being hacked                 **C.** hacking                        **D.** to hack
+     **A.** to be hacked                 B.** being hacked                 **C.** hacking                        D.** to hack
 
 **Question 19:**  We are going to Japan _____ the beginning of July.
 
-     **A.** in                                 **B.** on                                 **C.** at                                 **D.** by
+     **A.** in                                 B.** on                                 **C.** at                                 D.** by
 
 **Question 20:**  People have always depended on wildlife and plants for food, medicine, shelter and many other _____.
 
-     **A.** needs                            **B.** provisions                     **C.** demands                       **D.** requirements
+     **A.** needs                            B.** provisions                     **C.** demands                       D.** requirements
 
 **Question 21:**  Mary tries to study as hard as possible _____ she can get  a full scholarship to study in England.
 
-     **A.** despite                         **B.** in order to                     **C.** because                        **D.** so that
+     **A.** despite                         B.** in order to                     **C.** because                        D.** so that
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the underlined part that needs correction in each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the underlined part that needs correction in each of the following questions.**
 **Question 22:**  High school students should be provided with adequate career orientation so that they can make more informative decisions about their future majors.
 
-     **A.** with                             **B.** High                             **C.** orientation                    **D.** informative
+     **A.** with                             B.** High                             **C.** orientation                    D.** informative
 
 **Question 23:**  Coffee, one of the most popular drinks in the world, can have a stimulating effect on humans because of their caffeine content.
 
-     **A.** their                             **B.** the                                **C.** humans                         **D.** stimulating
+     **A.** their                             B.** the                                **C.** humans                         D.** stimulating
 
 **Question 24:**  A presentation about gender equality ought to make by each group of students.
 
@@ -152,7 +152,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **D.** make
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that is closest in meaning to each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that is closest in meaning to each of the following questions.**
 **Question 25:** People believe that the Prime Minister is in favour of the new law.
 
 **A.** People believe the Prime Minister to be in favour of the new law.
@@ -183,7 +183,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **D.** Joan forgot having called so late last night.
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that best combines each pair of sentences in the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the sentence that best combines each pair of sentences in the following questions.**
 **Question 28:**  We arrived at the cinema. Then we realized that our tickets were still at home.
 
 1. No sooner had we realized that our tickets were still at home than we arrived at the cinema.
@@ -204,21 +204,21 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **D.** His debut album was impressive and rather expensive.
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the word CLOSEST in meaning to the underlined word in each of the following questions.
+**Mark the letter A, B, C, or D on your answer sheet to indicate the word CLOSEST in meaning to the underlined word in each of the following questions.**
 **Question 30: Prospects** for employment remain bleak for most people in the area.
 
-     **A.** Futures                         **B.** Opportunities                **C.** Potentials                     **D.** Likelihoods
+     **A.** Futures                         B.** Opportunities                **C.** Potentials                     D.** Likelihoods
 
 **Question 31:**  He is a truly**reliable** friend. He always supports me and never lets me down.
 
-     **A.** decisive                        **B.** dependable                    **C.** sensitive                       **D.** independent
+     **A.** decisive                        B.** dependable                    **C.** sensitive                       D.** independent
 
-***Mark the letter A, B, C, or D on your answer sheet to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.
-**Question 32: A.** resemble **B.** legal **C.** female **D.** reunion
+**Mark the letter A, B, C, or D on your answer sheet to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.**
+**Question 32: A.** resemble **B.** legal C.** female **D.** reunion**
 
-**Question 33: A.** stomach **B.** champion **C.** mechanic **D.** character
+**Question 33: A.** stomach **B.** champion C.** mechanic **D.** character**
 
-***Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the questions from 34 to 38.
+**Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct answer to each of the questions from 34 to 38.**
  Newspapers and television news programs always seem to report about the bad things happening in society. However, there is a place where readers can find some good news. That place is the website called *HappyNews*. The man behind *HappyNews* is Byron Reese. Reese set up *HappyNews* because he thought other news sources were giving people an unbalanced view of the world. Reese said about *HappyNews*, “The news media gives you a distorted view of the world by exaggerating bad news, misery, and despair. We’re trying to balance out the scale.”
 
  Not everyone agrees with Reese’s view, though. Many people think that news sources have a responsibility to provide news that is helpful to people. People need to know about issues or problems in today’s society. Then people are better able to make their own decisions about things that affect their daily lives. Reese said that *HappyNews* is not trying to stop people from learning about issues or problems. *HappyNews* is just trying to provide a balanced picture of today’s world.
@@ -237,7 +237,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **Question 35:**  How is *HappyNews* different than other news sources?
 
-**A.***HappyNews* does not exaggerate its stories.
+**A.**HappyNews* does not exaggerate its stories.
 
 **B.** All of the stories are written by Reese.
 
@@ -267,9 +267,9 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **Question 38:**  What does the word **unique** mean in this reading?
 
-     **A.** one of a kind                 **B.** different                        **C.** interesting                    **D.** awful
+     **A.** one of a kind                 B.** different                        **C.** interesting                    D.** awful
 
-***Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct word or phrase that best fits each of the numbered blanks from 39 to 43.
+**Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate the correct word or phrase that best fits each of the numbered blanks from 39 to 43.**
  The trend for children to multitask by juggling all sorts of electronic gadgets at the same time is (39) _____ damaging their levels of concentration, scientists have warned. Rocketing use of the Internet, iPods, mobile phones, and DVDs lies behind that finding. Scientists have confirmed the belief of many parents that it is impossible to concentrate on more than one thing at the same time. They found that children (40) _____ homework while sending messages via the Internet can end up spending 50% longer than if they had done each task separately.  
 
  David E Meyer, (41) _____ is the Professor of Cognitive Psychology at the University of Michigan, said that true multitasking is only possible for simple activities such as ironing and listening to the radio. He ran experiments demonstrating that young adults who had to switch from one Maths problem to (42) _____ wasted significant amounts of time. Meyer said: “For situations involving more complex tasks, especially those requiring language, the total time taken to (43) _____ all the tasks done will increase greatly. Over long periods, this kind of multitasking can stress you out and lead to mental and physical exhaustion.”
@@ -281,7 +281,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 | Question 42: A. other | B. many | C. much | D. another |
 | Question 43: A. bring | B. put | C. make | D. get |
 
-***Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate thecorrect answer to each of the questions from 44 to 50.
+**Read the following passage and mark the letter A, B, C, or D on your answer sheet to indicate thecorrect answer to each of the questions from 44 to 50.**
  Do you know the indispensable part of your computer that is more than a century old? The modern typewriter was born in the back of Kleinsteuber’s Machine Shop in Milwaukee. That’s where Christopher Sholes took some piano wire and a telegraph key and built a crude typing device in 1868. **It** could type only one letter, a rather fuzzylooking *w*, but it was still pretty amazing for its time. Sholes and his partners designed a more ambitious model with all the letters in the alphabet.
 
  The typewriter had a problem, though. Try to type quickly on it, and the type bars banged into one another and got stuck. The solution to that problem resulted in the keyboard we know today.
@@ -321,7 +321,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 
 **D.** low efficiency
 
-**Question 47:*** *What does the passage state?
+**Question 47:** *What does the passage state?
 
 1. Typists slowed down the improvement of the keyboard.
 
@@ -342,7 +342,7 @@ Mời các em tham khảo thêm [Đề và đáp án môn Văn lớp 12 SGD Hà 
 **D.** They were widely advertised*.
 **Question 49:**  The word **awkward** in paragraph 4 is closest in meaning to _____.
 
-     **A.** gracious                       **B.** graceful                        **C.** handful                         **D.** inconvenient
+     **A.** gracious                       B.** graceful                        **C.** handful                         D.** inconvenient
 
 **Question 50:**  Which of the following can be inferred from the last paragraph?
 

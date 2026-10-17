@@ -20,7 +20,7 @@ Trả lời: Tiến trình dạy học của một bài dạy theo hướng phá
 
 **I. Mục tiêu**
 
-**1****.*** *N****ăng lực*** *hoá học:**
+**1**.** *N**ăng lực** *hoá học:**
 
 *a. Nhận thức hoá học:*
 
@@ -28,7 +28,7 @@ Trả lời: Tiến trình dạy học của một bài dạy theo hướng phá
 
 *c. Vận dụng kiến thức, kĩ năng đã học*
 
-**2.****Năng lực chung:**
+**2.**Năng lực chung:**
 
 *– Năng lực giải quyết vấn đề và sáng tạo:*
 
@@ -44,9 +44,9 @@ Trả lời: Tiến trình dạy học của một bài dạy theo hướng phá
 
 **1. Giáo viên**
 
-* **+ Dụng cụ:***
+* **+ Dụng cụ:**
 
-* **+ Hóa chất:***
+* **+ Hóa chất:**
 
 **2. Học sinh**
 
@@ -60,7 +60,7 @@ b) Nội dung:
 
 c) Sản phẩm
 
-**2. Hoạt động 2: Hình thành kiến thức mới/giải quyết vấn đề/thực thi nhiệm vụ đặt ra từ Hoạt động 1***.*
+**2. Hoạt động 2: Hình thành kiến thức mới/giải quyết vấn đề/thực thi nhiệm vụ đặt ra từ Hoạt động 1**.*
 
 a) Mục tiêu:
 
@@ -70,7 +70,7 @@ c) Sản phẩm
 
 **Có thể chia thành các hoạt động nhỏ hơn 2.1, 2.2, 2.3…**
 
-**3. Hoạt động 3: Luyện tập****
+**3. Hoạt động 3: Luyện tập**
 
 a) Mục tiêu:
 
@@ -78,7 +78,7 @@ b) Nội dung:
 
 c) Sản phẩm
 
-**4. Hoạt động 4: Vận dụng****
+**4. Hoạt động 4: Vận dụng**
 
 a) Mục tiêu:
 

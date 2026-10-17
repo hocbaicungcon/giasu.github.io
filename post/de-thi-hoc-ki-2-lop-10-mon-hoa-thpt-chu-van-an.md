@@ -17,7 +17,7 @@ grade: 10
 | TRƯỜNG TiH, THCS VÀ THPT | MÔN HÓA HỌC – LỚP 10 |
 | CHU VĂN AN | Thời gian làm bài: 45 phút |
 
-**Câu 1*********(1,5 điểm)*** **:** Viết các phương trình hóa học thực hiện chuỗi phản ứng sau và ghi rõ điều kiện phản ứng (nếu có):
+**Câu 1:** (1,5 điểm)** **:** Viết các phương trình hóa học thực hiện chuỗi phản ứng sau và ghi rõ điều kiện phản ứng (nếu có):**
 
 H2S  
 
@@ -45,13 +45,13 @@ H2S
 
   BaSO4
 
-**Câu****2*** ******(1,5 điểm)*** **:** Nêu hiện tượng và viết phương trình phản ứng xảy ra khi dẫn khí SO2 (dư) vào dung dịch brom.
+**Câu 2:** (1,5 điểm)** **:** Nêu hiện tượng và viết phương trình phản ứng xảy ra khi dẫn khí SO2 (dư) vào dung dịch brom.**
 
-**Câu 3*********(1,5 điểm)*** **:** Nhận biết các dung dịch đựng trong các lọ mất nhãn sau bằng phương pháp hóa học và viết phương trình phản ứng minh họa:
+**Câu 3:** (1,5 điểm)** **:** Nhận biết các dung dịch đựng trong các lọ mất nhãn sau bằng phương pháp hóa học và viết phương trình phản ứng minh họa:**
 
 Na2SO3, KNO3, K2S, NaCl, H2SO4.
 
-**Câu 4*********(1 điểm)*** **:** Hệ cân bằng sau xảy ra trong một bình kín: 
+**Câu 4:** (1 điểm)** **:** Hệ cân bằng sau xảy ra trong một bình kín: **
 
 2SO2 (k) + O2 (k)  
 
@@ -65,17 +65,17 @@ Cho biết cân bằng trên chuyển dịch theo chiều nào khi
 
 **b)** Tăng áp suất?
 
-**Câu 5*********(1,5 điểm)*** **:** Hấp thụ hoàn toàn 0,896 lít khí SO2 (đktc) vào 200ml dung dịch NaOH 0,15M.
+**Câu 5:** (1,5 điểm)** **:** Hấp thụ hoàn toàn 0,896 lít khí SO2 (đktc) vào 200ml dung dịch NaOH 0,15M.**
 
 Tính khối lượng các chất sau phản ứng.
 
-**Câu 6*********(3 điểm)*** **:** Hòa tan hoàn toàn 8,8 gam hỗn hợp 2 kim loại Fe và Cu vào dung dịch H2SO4 98% đặc, nóng, dư. Khi phản ứng kết thúc thu được 4,48 lít khí SO2 (đktc)..
+**Câu 6:** (3 điểm)** **:** Hòa tan hoàn toàn 8,8 gam hỗn hợp 2 kim loại Fe và Cu vào dung dịch H2SO4 98% đặc, nóng, dư. Khi phản ứng kết thúc thu được 4,48 lít khí SO2 (đktc)..**
 
 **a)** Tính phần trăm khối lượng của mỗi kim loại trong hỗn hợp đầu.
 
 **b)** Để trung hòa lượng H2SO4 dư cần dùng 25 ml dung dịch KOH 32% (d=1,4 g/ml). Tính khối lượng dung dịch H2SO4 ban đầu.
 
-**Cho Fe=56, Cu=64;****Na=23, K=39, S=32, O=16, H=1*** **.***
+**Cho Fe=56, Cu=64;**Na=23, K=39, S=32, O=16, H=1** **.**
 
 ……………………………….HẾT……………………………
 
@@ -219,8 +219,8 @@ H2SO4 + 2KOH  K2SO4 + 2H2O
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 10 – Chu Van An – da](/assets/docs/Hoa-10-Chu-Van-An-da.doc)
-- [Hoa 10 – Chu Van An – de](/assets/docs/Hoa-10-Chu-Van-An-de.doc)
+- [Hoa 10 – Chu Van An – da](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoa 10 – Chu Van An – de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -101,8 +101,8 @@ Xác định công thức của X.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HN-2022De-chinh-thuc-5](/assets/docs/HN-2022De-chinh-thuc-5.docx)[](/assets/docs/HN-2022De-chinh-thuc-5.docx)
-- [HN-2022HDC_De-chinh-thuc](/assets/docs/HN-2022HDC_De-chinh-thuc.docx)
+- [HN-2022De-chinh-thuc-5](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)[](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HN-2022HDC_De-chinh-thuc](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

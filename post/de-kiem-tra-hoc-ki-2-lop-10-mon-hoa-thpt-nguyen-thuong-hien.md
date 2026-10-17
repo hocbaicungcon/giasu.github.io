@@ -19,15 +19,15 @@ MÔN: HÓA HỌC – KHỐI: 10
 Thời gian làm bài: 45 phút |
 | --- | --- |
 
-**Câu 1:****(2 điểm)** Hoàn thành chuỗi phản ứng sau, ghi rõ điều kiện xảy ra phản ứng (nếu có):
+**Câu 1:** (2 điểm)** Hoàn thành chuỗi phản ứng sau, ghi rõ điều kiện xảy ra phản ứng (nếu có):**
 
 KMnO4 O2 SO2 NaHSO3 Na2SO3SO2 H2SO4Fe2(SO4)3FeCl3
 
-**Câu 2:****(2 điểm)** Bằng phương pháp hóa học, hãy nhận biết 5 dung dịch không màu sau và viết phương trình phản ứng minh họa (không dùng chất chỉ thị màu): 
+**Câu 2:** (2 điểm)** Bằng phương pháp hóa học, hãy nhận biết 5 dung dịch không màu sau và viết phương trình phản ứng minh họa (không dùng chất chỉ thị màu): **
 
 Na2SO3, Na2S, Na2SO4, NaI, NaNO3.
 
-**Câu 3:****(1 điểm)** Cho phản ứng: CO(k) + H2O ( k) CO2(k) + H2 ( k) ∆H < 0 
+**Câu 3:** (1 điểm)** Cho phản ứng: CO(k) + H2O ( k) CO2(k) + H2 ( k) ∆H < 0 **
 
 Cân bằng hóa học của phản ứng sẽ chuyển dịch theo chiều phản ứng nào khi :
 
@@ -39,13 +39,13 @@ Cân bằng hóa học của phản ứng sẽ chuyển dịch theo chiều ph�
 
 – Tăng áp suất chung củahệ.
 
-**Câu 4:****(3 điểm)** Hòa tan hoàn toàn 17,1 gam hỗn hợp X gồm Al, Fe, Cu bằng dung dịch HCl (dư) thu được 7,84 lít khí H2 (đktc). Mặt khác, nếu hòa tan hoàn toàn 17,1 gam hỗn hợp X trên bằng dung dịch H2SO4 đặc 80% đun nóng (dư) thu được 11,2 lít SO2 (đktc).
+**Câu 4:** (3 điểm)** Hòa tan hoàn toàn 17,1 gam hỗn hợp X gồm Al, Fe, Cu bằng dung dịch HCl (dư) thu được 7,84 lít khí H2 (đktc). Mặt khác, nếu hòa tan hoàn toàn 17,1 gam hỗn hợp X trên bằng dung dịch H2SO4 đặc 80% đun nóng (dư) thu được 11,2 lít SO2 (đktc).**
 
 a) Tính khối lượng mỗi chất trong hỗn hợp X .
 
 b) Lượng H2SO4 đặc nóng còn dư ở trên có thể hòa tan tối đa 23,2 gam Fe3O4 thu được khí SO2. Tính khối lượng dung dịch H2SO4 80% đã dùng ban đầu.
 
-**Câu 5:****(2 điểm)**
+**Câu 5:** (2 điểm)**
 
 a) Cho 6,72 lít khí SO2 (đktc) tác dụng với 400 ml dung dịch KOH 1,875M. Tính nồng độ mol các chất trong dung dịch thu được sau phản ứng. Biết thể tích dung dịch thay đổi không đáng kể.
 
@@ -53,7 +53,7 @@ b) Hòa tan hoàn toàn 2,58 gam một oleum A vào nước thu được dung d�
 
  
 
-***Cho Fe(56), Al(27), Cu(64), K(39), S(32), O(16), Cl(35,5).***
+**Cho Fe(56), Al(27), Cu(64), K(39), S(32), O(16), Cl(35,5).**
 
  **HẾT**
 
@@ -211,7 +211,7 @@ Ta có : 2,58 = 0,03/ (n+1). (98+80n) → n =2 CT : H2SO4.2SO3
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoá 10 Nguyễn Thượng Hiền](/assets/docs/Hoa-10-Nguyen-Thuong-Hien.docx)
+- [Hoá 10 Nguyễn Thượng Hiền](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -34,4 +34,4 @@ CHỦ ĐỀ 5. TIỆM CẬN CỦA HÀM SỐ KHI BIẾT HÀM SỐ y = f'(x). + D�
 
 ## Download Bài tập đường tiệm cận của đồ thị hàm số Toán 12 CTST
 
-- [cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-ctst](/assets/docs/cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-ctst.pdf)
+- [cac-dang-bai-tap-duong-tiem-can-cua-do-thi-ham-so-toan-12-ctst](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

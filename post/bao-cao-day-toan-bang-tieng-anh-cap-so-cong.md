@@ -313,4 +313,4 @@ Phần này xin được trình bày bằng tiếng Anh, các bài tập do tôi
 
 - general term: số hạng tổng quát
 
-Tải tại đây: [SKKN Day Toan tieng Anh chuong cap so cong](/assets/docs/SKKN-Day-Toan-tieng-Anh-chuong-cap-so-cong.pdf)
+Tải tại đây: [SKKN Day Toan tieng Anh chuong cap so cong](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

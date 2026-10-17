@@ -15,19 +15,19 @@ grade: 10
 
 Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và nổ
 
-**CHUYÊN ĐỀ: HÓA HỌC TRONG VIỆC PHÒNG CHỐNG CHÁY NỔ
-**Bài 6: HÓA HỌC VỀ PHẢN ỨNG CHÁY, NỔ
-**BỘ SÁCH**: **CÁNH DIỀU; SỐ TIẾT: 3
-**I. MỤC TIÊU
-**1. Về năng lực
-**1.1. Năng lực chung
+**CHUYÊN ĐỀ: HÓA HỌC TRONG VIỆC PHÒNG CHỐNG CHÁY NỔ**
+**Bài 6: HÓA HỌC VỀ PHẢN ỨNG CHÁY, NỔ**
+**BỘ SÁCH**: **CÁNH DIỀU; SỐ TIẾT: 3**
+### I. Mục Tiêu
+**1. Về năng lực**
+**1.1. Năng lực chung**
 – Năng lực tự chủ tự học: HS chủ động tích cực tìm hiểu về các loại phản ứng cháy, nổ và cách đánh giá về mức độ mãnh liệt của chúng. (1)
 
 – Năng lực giải quyết vấn đề và sáng tạo: Từ kiến thức đã học HS vận dụng giải quyết các nhiệm vụ học tập và câu hỏi bài tập. (2)
 
 – Năng lực giao tiếp và hợp tác: Biết chủ động giao tiếp khi có vấn đề thắc mắc, tự tin thuyết trình trước đám đông và hợp tác làm việc nhóm có hiệu quả (3)
 
-**1.2. Năng lực Hóa học
+**1.2. Năng lực Hóa học**
 – Năng lực nhận thức kiến thức hóa học:
 
 + Nêu được ý nghĩa của dấu và giá trị  trong phản ứng cháy, nổ (các phản ứng cháy, nổ đều là phản ứng tỏa nhiệt và có  < 0) (4)
@@ -40,21 +40,21 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 
 + Tính được sự thay đổi của tốc độ phản ứng cháy, “tốc độ phản ứng hô hấp” theo giả định về sự phụ thuộc vào nồng độ O2. (7)
 
-**2. Về phẩm chất
+**2. Về phẩm chất**
 – Trung thực: Thật thà, ngay thẳng trong kết quả làm việc nhóm. (8)
 
 – Trách nhiệm: Có tinh thần trách nhiệm cao trong học tập. (9)
 
-**II. THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU
-**1. Thiết bị:
-**– Giáo viên:
+### Ii. Thiết Bị Dạy Học Và Học Liệu
+**1. Thiết bị:**
+**– Giáo viên:**
 + Kế hoạch dạy học.
 
 + Bài giảng powerpoint.
 
 + Phiếu học tập.
 
-**– Học sinh:
+**– Học sinh:**
 + Sách giáo khoa.
 
 + Đọc trước bài ở nhà.
@@ -63,7 +63,7 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 
 [Hoá học và phòng chống cháy nổ](https://tuhochoa.vn/hoa-hoc-va-phong-chong-chay-no/)
 
-**  III. TIẾN TRÌNH DẠY HỌC
+**  III. TIẾN TRÌNH DẠY HỌC**
 | Tiết | Hoạt động | Phương pháp/Kỹ thuật dạy học | Phương pháp/Công cụ đánh giá |
 | --- | --- | --- | --- |
 | 1 | 1: Mở đầu (4’) | – Đàm thoại gợi mở | – Đánh giá qua câu trả lời của HS |
@@ -73,15 +73,15 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 
 **1.  Hoạt động 1: Mở đầu/ khởi động**(thời gian 3 phút)
 
-**a) Mục tiêu:
+**a) Mục tiêu:**
  **–** Kích thích hứng thú, tạo tư thế sẵn sàng học tập và tiếp cận nội dung bài học.
 
-**  b) Nội dung:
+**  b) Nội dung:**
   – Nêu vấn đề và dẫn dắt vào nội dung bài học.
 
  **c) Sản phẩm:** Tốc độ phản ứng nổ bom nguyên tử ở Hiroshima Nhật Bản lớn hơn tốc độ nổ pháo hoa trên bầu trời, lớn lơn tốc độ của than củi đang cháy.
 
-**  d) Tổ chức thực hiện:
+**  d) Tổ chức thực hiện:**
  – Chuyển giao nhiệm vụ: Đặt vấn đề: Các em hãy quan sát các hình ảnh sau về đốt cháy than củi, đốt cháy pháo hoa, nổ bom nguyên tử ở Nhật Bản năm 1945. Từ việc quan sát hình ảnh, hãy so sánh tốc độ của các phản ứng đó.
 
 – Thực hiện nhiệm vụ: HS quan sát các hình ảnh một số phản ứng cháy, nổ do GV chiếu để trả lời.
@@ -92,7 +92,7 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 
 **2.  Hoạt động 2: Hình thành kiến thức mới/giải quyết vấn đề**(thời gian 41 phút)
 
-**      2.1:  Biến thiên enthalpy của phản ứng cháy, nổ
+**      2.1:  Biến thiên enthalpy của phản ứng cháy, nổ**
 **a) Mục tiêu: –** Tính được  một số phản ứng cháy, nổ (theo   hoặc năng lượng liên kết) để dự đoán mức độ mãnh liệt của phản ứng cháy, nổ
 
 **b) Nội dung:**– Sử dụng phương pháp đàm thoại gợi mở, hoạt động cá nhân, hoạt động nhóm để tính nhiệt của một số phản ứng, từ đó đánh giá được mức độ mãnh liệt của các phản ứng.
@@ -112,7 +112,7 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 | PHIẾU HỌC TẬP 2 – Tính theo nhiệt tạo thành ta có: Đốt cháy 1 mol ethanol và 1 mol octane thì nhiệt lượng tỏa ra lần lượt là : DrH298 (ethanol)= -1234,8 kJ và DrH298 (octane)= -5074,2 kJ. Từ giá trị DrH298 cho thấy mức độ xảy ra phản ứng cháy rất mãnh liệt. – Không dùng nước để dập tắt các đám cháy do xăng dầu vì chúng không ta trong nước, dễ làm đám cháy lan rộng. Một số vật liệu dùng chữa cháy xăng, dầu như bình chứa khí CO2, cát.   |
 | PHIẾU HỌC TẬP 3 KClO3 là một chất oxi hóa mạnh dùng để chế tạo thuốc nổ, sản xuất pháo hoa…. Xét phản ứng nhiệt phân: 2KClO3 (s)2KCl(s) + 3O2 (k) (1) Phản ứng nhiệt phân khi có thêm Carbon: 2KClO3 (s) +3 C2KCl(s) + 3CO2 (k) (2) – DrH298 của (1)= 2.(-436 ) – 2.(-397,73)=-76,54 kJ và – DrH298 của (2)= -1257,04 kJ. Như vậy thêm C, nhiệt của phản ứng tăng gấp hơn 16 lần so với ban đầu, có nghĩa là phản ứng xảy ra mãnh liệt hơn. Thuốc nổ đen thông thường sẽ là các muối giàu oxygen có tính oxi hóa mạnh như KNO3, KClO3 được trộn với các chất như C, S theo tỉ lệ nhất định để tạo ra hỗn hợp gây nổ. Ví dụ trộn KNO3 với C và S theo tỉ lệ khối lượng là 75%KNO3, 10%S và 15%C. – Đầu que diêm chứa thành phần KClO3, vỏ que diêm là P đỏ. Phản ứng xảy ra khi quẹt diêm vào vỏ bao diêm để  ma sát tạo ra sự cháy:  6P + 5KClO3→3P2O5 + 5KCl |
 
-** d) Tổ chức thực hiện:
+** d) Tổ chức thực hiện:**
       – Chuyển giao nhiệm vụ:
 
 + GV yêu cầu HS nhắc lại cách tính biến thiên enthalpy chuẩn phản ứng, HS trả lời theo hình thức cá nhân.
@@ -138,7 +138,7 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 
 + Khi trộn các chất oxi hóa với nhiên liệu theo tỉ lệ nhất định sẽ làm phản ứng trở lên mãnh liệt hơn.
 
-**2 .2.  Sự thay đổi tốc độ phản ứng theo nồng độ oxygen – Phản ứng cháy.
+**2 .2.  Sự thay đổi tốc độ phản ứng theo nồng độ oxygen – Phản ứng cháy.**
 **a) Mục tiêu:** Tính được sự thay đổi tốc độ phản ứng cháy theo giả định về sự phụ thuộc vào nồng độ oxygen
 
 **b) Nội dung:** GV giới thiệu phần kiến thức nền trong sgk và học sinh hoạt động cá nhân, nhóm  thực hiện phiếu học tập
@@ -155,7 +155,7 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 | PHIẾU HỌC TẬP 2 a) (M) b) (M) c)  Tốc độ phản ứng cháy của than đá giảm 1,4 lần. |
 | PHIẾU HỌC TẬP 3 1. Nêu những yếu tố ảnh hưởng đến tốc độ phản ứng cháy. Từ đó hãy nêu một số biện pháp dập tắt một đám cháy. – Các yếu tố chính ảnh hưởng đến tốc độ phản ứng cháy: chất cháy, chất oxi hóa, nguồn nhiệt. Bản chất và trạng thái của chất cháy có ảnh hưởng rất lớn đến tốc độ cháy. Chất cháy rất phong phú, có thể ở dạng rắn, dạng cục hay dạng bột như than, gỗ, tre nứa, xăng, dầu, khí methane, hydrogen, khí carbon monooxide, … Nguồn nhiệt cũng có nhiều dạng như ngọn lửa trần, tia lửa điện, hồ quang điện, tia lửa sinh ra do ma sát, do chập điện, … – Một số phương pháp dập tắt đám cháy: Phương pháp làm lạnh: Làm giảm nhiệt độ của phản ứng cháy hoặc làm cho nhiệt độ của vật cháy xuống thấp hơn nhiệt độ bất cháy.Phương pháp cách li: Ngăn cản chất cháy tiếp xúc với chất oxi hóa.Phương pháp giảm nồng độ: Làm giảm nồng độ các chất tham gia cháy. 2. Giải thích vì sao ở một số nơi, người ta bơm khí nitrogen vào lốp ô tô thay cho không khí?   |
 
-**    d) Tổ chức thực hiện:
+**    d) Tổ chức thực hiện:**
 – Chuyển giao nhiệm vụ: Yêu cầu hs đọc sách giáo khoa, hoạt động cá nhân, hoạt động nhóm hoàn thành các phiếu học tập số .
 
        – Thực hiện nhiệm vụ: HS tham gia hoạt động cá nhân, thảo luận nhóm và đưa ra kết luận dựa trên câu hỏi ở phiếu số . Ghi chép lại những gì học được.**
@@ -163,7 +163,7 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 
             – Kết quả, nhận định: GV đánh giá, kết luận và chốt kiến thức, lưu ý một số trường hợp ngoại lệ và chuyển sang nội dung mới.
 
-       **2 .3.  Sự thay đổi tốc độ phản ứng theo nồng độ oxygen – Phản ứng hô hấp.
+       **2 .3.  Sự thay đổi tốc độ phản ứng theo nồng độ oxygen – Phản ứng hô hấp.**
 **a) Mục tiêu:** Tính được sự thay đổi tốc độ phản ứng hô hấp theo giả định về sự phụ thuộc vào nồng độ oxygen
 
 **b) Nội dung:** hoạt động cá nhân kết hợp với các câu hỏi vấn đáp, đàm thoại gợi mở để hình thành kiến thức và hoàn thành các phiếu học tập
@@ -178,7 +178,7 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 | --- |
 | PHIẾU HỌC TẬP 5 Giải thích các yếu tố nguy hiểm trong ba trường hợp sau: a. Ngủ trong phòng nhỏ và kín. – Nồng độ O2 ít nên quá trình hô hấp của con người sẽ gặp khó khăn b. Hít thở trong khu vực kín có đám cháy. – Nồng độ O2 giảm mạnh và với đám cháy sản sinh thêm khí CO2 làm cho quá trình hô hấp của con người khó khan có thể gây tử vong c. Đốt than trong phòng kín. Cho biết khi thiếu không khí, than cháy sinh ra nhiều khí CO. – Trong phòng kín thiếu O2 tạo đk cho phản ứng đốt than sinh ra khí CO (khí độc) ngăn cản quá trình vận chuyển O2 vào trong máu nên ảnh hưởng đến quá trình hô hấp dẫn đến tử vong ở con người. |
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
             – Chuyển giao nhiệm vụ: cho học sinh hoạt động cá nhân, kết hợp các câu hỏi đàm thoại gợi mở để học sinh hoàn thiện các phiếu học tập
 
 – Thực hiện nhiệm vụ: HS suy nghĩ và hoàn thành phiếu học tập. Ghi chép lại những gì học được.**
@@ -200,33 +200,33 @@ Giáo án chuyên đề hoá 10 Bài 6 Hoá học về phản ứng cháy và n�
 
 **b) Nội dung:** Dạy học trên lớp, hoạt động nhóm, hoạt động cá nhân
 
-**PHIẾU HỌC TẬP 1
+**PHIẾU HỌC TẬP 1**
 **Câu 1:** Hexachlorobenzene rắn (C6Cl6) là chất cực kì độc hại với con người nên được bảo quản rất kĩ lưỡng. Nếu xảy ra hỏa hoạn nhà kho có chứa C6Cl6 thì chất này có dễ dàng bị tiêu hủy bởi phản ứng cháy với oxygen hay không? Hãy dự đoán bằng cách tính biến thiên enthalpy của phản ứng. Biết rằng phản ứng chát sinh ra CO2 và Cl2.
 
 **c) Sản phẩm:** HS hoàn thiện các phiếu học tập
 
-**TRẢ LỜI:
+**TRẢ LỜI:**
 C6Cl6(s) + 6O2(g) →  6CO2(g) + 3Cl2(g)
 
 DrH298 = 6.(-393,5) + 3.0 – (-127,6) – 6.0 = -2233,4 kJ
 
 Biến thiên enthalpy của phản ứng là rất âm ⇒ Nếu xảy ra hỏa hoạn nhà kho có chứa C6Cl6 thì chất này dễ dàng bị tiêu hủy bởi phản ứng cháy với oxygen.
 
-**PHIẾU HỌC TẬP 2
+**PHIẾU HỌC TẬP 2**
 **Câu 2.** Cho hình ảnh bên:
 
 Viết phương trình hóa học xảy ra của phản ứng và nêu nhận xét về sự thay đổi nhiệt độ của phản ứng đó?
 
 **Sản phẩm:** HS hoàn thiện các phiếu học tập
 
-** TRẢ LỜI
+** TRẢ LỜI**
 Phản ứng nhiệt nhôm:
 
 2Al + Fe2O3  Al2O3 + 2Fe
 
 Phản ứng tỏa nhiệt rất lớn (trên 2500oC).
 
-**PHIẾU HỌC TẬP 3
+**PHIẾU HỌC TẬP 3**
 **Câu 3.**  Cho các phản ứng sau xảy ra ở điều kiện chuẩn:
 
 CH4(g) + 2O2(g) →CO2(g) + 2H2O(l)= -890,36 kJ
@@ -237,7 +237,7 @@ CaCO3(s) →CaO(s) + CO2(s) )= 178,29 kJ
 
 **Sản phẩm:** HS hoàn thiện phiếu học tập
 
-**TRẢ LỜI
+**TRẢ LỜI**
 CH4(g) + 2O2(g) →CO2(g) + 2H2O(l) = -890,36 kJ).
 
 →Ở điều kiện chuẩn, khi đốt cháy hoàn toàn 1 mol CH4, sản phẩm là CO2(g) và H2O(l) thì sẽ giải phóng một nhiệt lượng là 890,36 kJ.
@@ -259,7 +259,7 @@ Vậy: Ở điều kiện tiêu chuẩn, để cung cấp nhiệt cho phản ứ
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Đáp án | C | C | D | B | A | D | D | D | D | B |
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 – Chuyển giao nhiệm vụ: Cho học sinh hoạt động cá nhân, kết hợp các câu hỏi đàm thoại gợi mở để học sinh hoàn thiện các phiếu học tập
 
 – Thực hiện nhiệm vụ: HS suy nghĩ và hoàn thành phiếu học tập. Ghi chép lại những gì học được.
@@ -274,7 +274,7 @@ Vậy: Ở điều kiện tiêu chuẩn, để cung cấp nhiệt cho phản ứ
 
 **b) Nội dung:** Dạy học trên lớp, hoạt động nhóm, hoạt động cá nhân
 
-**PHIẾU HỌC TẬP 6
+**PHIẾU HỌC TẬP 6**
 **Câu 6:** Một bình gas (khí hoá lỏng) chứa hỗn hợp propane và butane với tỉ lệ số mol 1:2. Xác định nhiệt lượng toả ra khi đốt cháy hoàn toàn 12 kg khí gas trên ở điều kiện chuẩn.
 
 Cho biết các phản ứng:
@@ -287,7 +287,7 @@ Trung bình mỗi ngày, một hộ gia đình cần đốt gas để cung cấp
 
 **c) Sản phẩm:** HS hoàn thành các phiếu học tập, nộp sản phẩm .
 
-**TRẢ LỜI:
+**TRẢ LỜI:**
 Gọi x là số mol của propane trong bình gas.
 
 ⇒ 2x là số mol của butane trong bình gas.
@@ -300,7 +300,7 @@ Tổng nhiệt lượng tỏa ra khi đốt cháy hoàn toàn một bình gas l�
 
 Số ngày mà hộ gia đình sử dụng hết bình gas là 597600.0,810000≈47,8597600.0,810000≈47,8 ngày ≈ 48 ngày
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 – Chuyển giao nhiệm vụ: Cho học sinh hoạt động cá nhân, sau đó hoạt động nhóm, vận dụng các kiến thức đã học, áp dụng, tìm hiểu cuộc sống có liên quan đến kiến thức đã học.
 
 – Thực hiện nhiệm vụ: HS suy nghĩ, tìm hiểu các tài liệu và cuộc sống xung quanh và hoàn thành phiếu học tập. Ghi chép lại những gì học được.
@@ -309,20 +309,20 @@ Số ngày mà hộ gia đình sử dụng hết bình gas là 597600.0,810000�
 
 – Kết quả, nhận định: GV đánh giá, kết luận và chốt kiến thức, HS viết bài vào vở.
 
-**5. Hoạt động 5: Giao nhiệm vụ về nhà.
-**a. Mục tiêu
+**5. Hoạt động 5: Giao nhiệm vụ về nhà.**
+**a. Mục tiêu**
 – Nhận xét kết quả học tập và nhắc nhở HS khắc phục.
 
 – Hướng dẫn tự rèn luyện và tìm tài liệu liên quan đến nội dung của bài học.
 
-**b. Nội dung
+**b. Nội dung**
 **Câu hỏi**: 1. Tìm hiểu tranh ảnh, tài liệu về các vụ cháy, nổ lớn trên thế giới?
 
                                                     2. Cho biết nguyên nhân và viết phương trình phản ứng hóa học?
 
                 3. Đề xuất cách phòng tránh các vụ cháy, nổ lớn? 
 
-**c. Tổ chức hoạt động học
+**c. Tổ chức hoạt động học**
 – Chuyển giao nhiệm vụ: Giáo viên nhận xét tiết học và giao nhiệm vụ về nhà.
 
 – Thực hiện nhiệm vụ: HS suy nghĩ, tìm hiểu các tài liệu và cuộc sống xung quanh và hoàn thành phiếu học tập. Ghi chép lại những gì học được.
@@ -331,10 +331,10 @@ Số ngày mà hộ gia đình sử dụng hết bình gas là 597600.0,810000�
 
 – Kết quả, nhận định: GV đánh giá, kết luận và chốt kiến thức, HS viết bài vào vở vào tiết học sau.
 
-**V. NHẬN XÉT
+### V. Nhận Xét
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no](/assets/docs/Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no.docx)
+- [Tiet_-567_-Hoa-hoc-ve-phan-ung-chay-no](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

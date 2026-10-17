@@ -347,7 +347,7 @@ Lượng nhiệt thải ra khí quyển là: 8926,08 kJ. Þ đáp án D.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [33.-Bai-8-Che-bien-dau-mo-Hoa-Truong.OK_](/assets/docs/33.-Bai-8-Che-bien-dau-mo-Hoa-Truong.OK_.docx)
+- [33.-Bai-8-Che-bien-dau-mo-Hoa-Truong.OK_](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

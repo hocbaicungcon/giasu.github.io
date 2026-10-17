@@ -16,13 +16,13 @@ grade: 12
 
 Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được ancol Y (no, hai chức) và hai muối của hai axit cacboxylic *Z* và T (MZ < MT). Chất Y không hòa tan được Cu(OH)2 trong môi trường kiềm. Phát biểu nào sau đây **sai**? 
 
-******A.*** ***Axit *Z* có phản ứng tráng bạc. 
+**A.** Axit *Z* có phản ứng tráng bạc. 
 
-******B.*** ***Oxi hóa Y bằng CuO dư, đun nóng, thu được anđehit hai chức. 
+**B.** Oxi hóa Y bằng CuO dư, đun nóng, thu được anđehit hai chức. 
 
-******C.*** ***Axit T có đồng phân hình học. 
+**C.** Axit T có đồng phân hình học. 
 
-******D.*** ***Có một công thức cấu tạo thỏa mãn tính chất của X.
+**D.** Có một công thức cấu tạo thỏa mãn tính chất của X.
 
 **Lời giải**
 

@@ -159,11 +159,11 @@ Các em học sinh có thể xem đáp án phần tự luận [tại đây](/bai
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [402](/assets/docs/402.pdf)
-- [404](/assets/docs/404.pdf)
-- [406](/assets/docs/406.pdf)
-- [408](/assets/docs/408.pdf)
-- [HDC_HOÁ 10_THPT](/assets/docs/HDC_HOA-10_THPT.pdf)
+- [402](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [404](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [406](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [408](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HDC_HOÁ 10_THPT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

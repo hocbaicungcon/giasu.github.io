@@ -1,5 +1,5 @@
 ---
-title: 100 Bài tập phương pháp tọa độ trong mặt phẳng
+title: 'Phương pháp tọa độ trong mặt phẳng: 100 bài tập chọn lọc có lời giải chi tiết'
 description: Bài tập phương pháp tọa độ trong mặt phẳng, viết phương trình đường thẳng,
   phương trình đường tròn, các bài toán liên quan đến tam giác, tứ giác, hình chữ
   nhật, hình vuông...
@@ -25,17 +25,17 @@ Xem thêm [Toán 10 – Biện luận hệ phương trình, hệ bất phương
 
 ![phương pháp tọa độ trong mặt phẳng](assets/images/bai-tap-phuong-phap-toa-do-trong-mat-phang-hetructoadodescartes.png)
 
-- **Tọa độ của một điểm:
+- **Tọa độ của một điểm:**
   $$
   M(x,y) \Leftrightarrow \overrightarrow{OM}=x\vec{i}+y\vec{j}
   $$
 
-- **Tọa độ của một véc-tơ:
+- **Tọa độ của một véc-tơ:**
   $$
   \vec{v}=(x,y) \Leftrightarrow \vec{v}=x\vec{i}+y\vec{j}
   $$
 
-- **Các phép toán và công thức.** Cho ba điểm $A(x_A,y_A) ,B(x_B,y_B)$, và các véc-tơ $\vec{v}_1(x_1,y_1),$\vec{v}_2(x_2,y_2) $ thì ta có:
+- **Các phép toán và công thức.** Cho ba điểm $A(x_A,y_A) ,B(x_B,y_B)$, và các véc-tơ $\vec{v}_1(x_1,y_1), \vec{v}_2(x_2,y_2)$ thì ta có:
 
 Hai véc-tơ bằng nhau $\vec{v}_1=\vec{v}_2 \Leftrightarrow \begin{cases} x_1=x_2\\y_1=y_2\end{cases}$
 
@@ -54,7 +54,7 @@ Hai véc-tơ bằng nhau $\vec{v}_1=\vec{v}_2 \Leftrightarrow \begin{cases} x_1=
   $$
   \overrightarrow{MA}+\lambda \overrightarrow{MB}=\vec{0} \Leftrightarrow \begin{cases} 
   x_M=\frac{x_A+\lambda x_B}{1+\lambda}\\ 
-  x_M=\frac{y_A+\lambda y_B}{1+\lambda} 
+  y_M=\frac{y_A+\lambda y_B}{1+\lambda} 
   \end{cases}
   $$
 
@@ -150,19 +150,19 @@ $\vec{v}_1\perp \vec{v}_2 \Leftrightarrow \vec{v}_1\cdot \vec{v}_2= 0$
   ax+by-(ax_{0}+by_{0})=0
   $$
 
-- Phương trình tham số} của đường thẳng $\Delta$ đi qua $M(x_{0},y_{0})$ và có một véc-tơ chỉ phương $\vec{u}(a,b)$ là:
+- Phương trình tham số của đường thẳng $\Delta$ đi qua $M(x_{0},y_{0})$ và có một véc-tơ chỉ phương $\vec{u}(a,b)$ là:
 
   $$
   \begin{cases} x =x_{0}+at\\ y =y_{0}+bt \end{cases}, (t\in \mathbb{R})
   $$
 
-- Phương trình chính tắc} của đường thẳng đi qua $M(x_0,y_0)$ và có véc-tơ chỉ phương $\vec{u}(a,b)$ mà $ab\ne0$ là
+- Phương trình chính tắc của đường thẳng đi qua $M(x_0,y_0)$ và có véc-tơ chỉ phương $\vec{u}(a,b)$ mà $ab\ne0$ là
 
   $$
   \frac{x-x_{0}}{a}=\frac{y-y_{0}}{b}
   $$
 
-- Đường thẳng đi qua điểm $M(x_{0},y_{0})$ và cóhệ số góc} $k$ có phương trình:
+- Đường thẳng đi qua điểm $M(x_{0},y_{0})$ và có hệ số góc $k$ có phương trình:
 
   $$
   y-y_{0}=k(x-x_{0})
@@ -195,7 +195,7 @@ Lấy một điểm thuộc đường thẳng ta có thể rút tọa độ $x$ 
 
 - Góc giữa hai véc-tơ $\vec{a},\vec{b}$ có $\cos(\vec{a},\vec{b})=\frac{\vec{a}.\vec{b}}{|\vec{a}|.|\vec{b}|}=\frac{\text{tích vô hướng}}{\text{tích độ dài}}$
 
-- Góc giữa hai đường thẳng\footnote{Bằng trị tuyệt đối của tích vô hướng chia tích độ dài các véc-tơ pháp tuyến của hai đường thẳng.} $\Delta$ và $\Delta’$ có
+- Góc giữa hai đường thẳng (Bằng trị tuyệt đối của tích vô hướng chia tích độ dài các véc-tơ pháp tuyến của hai đường thẳng.) $\Delta$ và $\Delta’$ có
 
   $$
   \cos(\Delta,\Delta’)=|\cos(\vec{n},\vec{n’})|=\frac{|\vec{n}.\vec{n’}|}{|\vec{n}|.|\vec{n’}|}
@@ -577,7 +577,7 @@ $$
 (d_1): 2x + y – 3 = 0, (d_2): x + y – 2 = 0.
 $$
 
- Điểm $M$ thuộc đường thẳng $AB$, đường thẳng r ngoại tiếp tam giác $ABC$ có bán kính bằng $\sqrt{5}.$ Biết đỉnh $A$ có hoành độ dương, xác định toạ độ các đỉnh của tam giác $ABC.$
+ Điểm $M$ thuộc đường thẳng $AB$, đường tròn ngoại tiếp tam giác $ABC$ có bán kính bằng $\sqrt{5}.$ Biết đỉnh $A$ có hoành độ dương, xác định toạ độ các đỉnh của tam giác $ABC.$
 
 **Hướng dẫn.**$A(3; 1)$, $B(1;1)$, $C(1;- 3).$
 
@@ -595,7 +595,8 @@ $$
 
 **Bài 59.** Viết phương trình của đường thẳng $\Delta$ đi qua gốc toạ độ và tạo với hai đường thẳng $(d_1): x – y + 12 = 0$ và $(d_2): 2x + y + 9 = 0$ một tam giác có diện tích là 1.5 đơn vị diện tích. (Write the equations of the line passing through the origin and forming, together with the line $(d_1): x – y + 12 = 0$ and $(d_2): 2x + y + 9 = 0$ a triangle of an equal to 1.5 square units.)
 
-**Hướng dẫn.
+**Hướng dẫn:**
+
 - Gọi phương trình $\Delta$ có dạng $y = kx.$
 
 - Đường thẳng $\Delta$ cắt $(d_1)$ tại $A\left(\frac{12}{k-1}; \frac{12k}{k – 1}\right)$ và cắt cắt $(d_2)$ tại $B\left(\frac{-9}{k + 2}; \frac{-9k}{k + 2}\right)$; $(d_1)$ cắt $(d_2)$ tại điểm $C(-7; 5).$
@@ -618,7 +619,8 @@ $$
 
  Tìm toạ độ các đỉnh của tam giác $ABC.$
 
-**Hướng dẫn.
+**Hướng dẫn:**
+
 - Gọi $A(x_1; x_1 + 2)$, $B(x_2; 5x_2 – 2).$ Điểm $G(1;3)$ là trọng tâm tam giác $ABC$, nên tìm được toạ độ điểm $C$ theo $x_1$ và $x_2.$
 
 - Tìm $x_1$, $x_2$ từ các điều kiện $C$ thuộc trung tuyến $\Delta_3$ và tam giác $ABC$ có diện tích bằng 24.
@@ -825,7 +827,7 @@ $$
 
   hoặc $\Delta$ vuông góc với bán kính tại tiếp điểm.
 
-- Đường thẳng $\Delta$ cắt đường tròn $(I,R)$ theo dây cung\index{độ dài dây cung} $AB,$ gọi $H$ là trung điểm $AB$ thì $IH\perp AB$ và $R^2=IH^2+AH^2.$
+- Đường thẳng $\Delta$ cắt đường tròn $(I,R)$ theo dây cung $AB,$ gọi $H$ là trung điểm $AB$ thì $IH\perp AB$ và $R^2=IH^2+AH^2.$
 
 - Chỉ có bài toán lập phương trình đường tròn đi qua ba điểm thì gọi phương trình đường tròn rồi giải hệ ba ẩn, các bài toán còn lại ta đi tìm tọa độ tâm và bán kính.
 
@@ -905,7 +907,8 @@ Hướng dẫn.$x-1=0,3x +4y -15 = 0$
 
 **Bài 5.** [Đề thi thử ĐH Vinh 2014] Cho tam giác $ABC$ có $A(3,3)$ và tâm đường tròn ngoại tiếp tam giác là $I(2,1).$ Phân giác trong của góc $\widehat{BAC}$ là $x-y=0.$ Tìm tọa độ điểm $B,C$ biết $BC=\frac{8}{\sqrt{5}}$ và tam giác $ABC$ nhọn.
 
-**Hướng dẫn.
+**Hướng dẫn:**
+
 - $AD$ là phân giác trong nên $AD$ cắt đường tròn tại $E$ là điểm chính giữa cung $BC \Rightarrow IE\perp BC.$
 
 - $E\in AD$ và $IE=IA=R$ nên tìm được $E(0,0) \Rightarrow BC:2x+y+m=0.$
@@ -918,7 +921,8 @@ Hướng dẫn.$x-1=0,3x +4y -15 = 0$
 
 **Bài 7.** [Đề thi thử ĐH Vinh K.A] Trong mặt phẳng với hệ tọa độ $Oxy,$ cho đường tròn $(C):(x-2)^2+(y-1)^2=5$ và đường thẳng $d:x-3y-9=0.$ Từ điểm $M$ thuộc $d$ kẻ hai đường thẳng tiếp xúc với $(C)$ lần lượt tại $A$ và $B.$ Tìm tọa độ điểm $M$ sao cho độ dài $AB$ nhỏ nhất.
 
-**Hướng dẫn.
+**Hướng dẫn:**
+
 - Đường tròn $(C)$ có tâm $I(2,1)$ và bán kính $R=\sqrt{5}.$ Vì $d(I,d)>R$ nên $d$ không cắt $(C).$
 
 - Giả sử $(3m+9,m) \in d.$ Từ tính chất tiếp tuyến ta có $MI\perp AB$ tại trung điểm $H$ của $AB.$ Tính được $AH^2=R^2-\frac{R^4}{IM^2}.$ Từ đó có $AB$ nhỏ nhất $\Leftrightarrow IM$ nhỏ nhất khi $m=-2.$
@@ -933,7 +937,7 @@ Hướng dẫn.$x-1=0,3x +4y -15 = 0$
 
 **Hướng dẫn.**$\left(x + \frac{1}{2\sqrt{3}}\right)^2 + \left(y + \frac{3}{2}\right)^2 = 1.$
 
-**Bài 10.** Cho đường tròn $\mathcal{(C)}: (x – 4)^2 + y^2 = 25$ và điểm $M(1;-1).$ Viết phương trình đường thẳng $\Delta$ đi qua điểm $M$ và cắt đường thẳng r $\mathcal{(C)}$ tại hai điểm $A$, $B$ sao cho $MA = 3MB.$
+**Bài 10.** Cho đường tròn $\mathcal{(C)}: (x – 4)^2 + y^2 = 25$ và điểm $M(1;-1).$ Viết phương trình đường thẳng $\Delta$ đi qua điểm $M$ và cắt đường tròn $(C)$ tại hai điểm $A$, $B$ sao cho $MA = 3MB.$
 
 **Hướng dẫn.**$2x + y + 3 = 0,x + 2y + 1 = 0.$
 
@@ -947,17 +951,23 @@ $$
 
 **Hướng dẫn.**$x – 2y = 0$, $x – 2y – 10 = 0$ hoặc $x + y – 2 = 0$, $x + 7y – 6 = 0.$
 
-**Bài 12.** Cho hai đường tròn \begin{equation*}
+**Bài 12.** Cho hai đường tròn
 
+$$
 \mathcal{(C)}: (x – 1)^2 + y^2 = \frac{1}{2} \text{ và } \mathcal{(C’)}: (x – 2)^2 + (y – 2)^2 = 4.
+$$
 
-\end{equation*} Viết phương trình đường thẳng $\Delta$ tiếp xúc với $\mathcal{(C)}$ và cắt $\mathcal{(C’)}$ tại hai điểm $A$, $B$ sao cho $AB = 2\sqrt{2}.$
+Viết phương trình đường thẳng $\Delta$ tiếp xúc với $\mathcal{(C)}$ và cắt $\mathcal{(C’)}$ tại hai điểm $A$, $B$ sao cho $AB = 2\sqrt{2}.$
 
-**Hướng dẫn.**$x – y – 2 = 0$, $7x – y – 2 = 0.$
+**Hướng dẫn.** $x – y – 2 = 0$, $7x – y – 2 = 0.$
 
-**Bài 13.** Cho tam giác $ABC$ nội tiếp trong đường tròn \begin{equation*}
+**Bài 13.** Cho tam giác $ABC$ nội tiếp trong đường tròn
 
-\mathcal{(C)}: x^2 + y^2 -4x -2y – 8 = 0. \end{equation*} Đỉnh $A$ thuộc tia $Oy$, đường cao vẽ từ $C$ nằm trên đường thẳng $(d): x + 5y = 0.$ Tìm toạ độ các đỉnh $A$, $B$, $C$ biết rằng đỉnh $C$ có hoành độ là một số nguyên.
+$$
+\mathcal{(C)}: x^2 + y^2 -4x -2y – 8 = 0.
+$$
+
+Đỉnh $A$ thuộc tia $Oy$, đường cao vẽ từ $C$ nằm trên đường thẳng $(d): x + 5y = 0.$ Tìm toạ độ các đỉnh $A$, $B$, $C$ biết rằng đỉnh $C$ có hoành độ là một số nguyên.
 
 **Hướng dẫn.**$A(0;4)$, $B(-1;-1)$, $C(5;-1)$
 
@@ -975,7 +985,7 @@ $$
 
 **Hướng dẫn.**$(-4;4)$ và $(0;2)$
 
-**Bài 18.** [B2006] Cho đường thẳng r $(C):x^2+y^2-2x-6y+6=0$ và điểm $M(-3;1).$ Gọi $T_1$ và $T_2$ là các tiếp điểm của các tiếp tuyến kẻ từ điểm $M$ đến $(C).$ Viết phương trình đường thẳng $T_1T_2.$
+**Bài 18.** [B2006] Cho đường tròn $(C):x^2+y^2-2x-6y+6=0$ và điểm $M(-3;1).$ Gọi $T_1$ và $T_2$ là các tiếp điểm của các tiếp tuyến kẻ từ điểm $M$ đến $(C).$ Viết phương trình đường thẳng $T_1T_2.$
 
 **Hướng dẫn.**$2x+y-3=0$
 
@@ -995,7 +1005,7 @@ $$
 
 **Hướng dẫn.**$m = 19$, $m = -41.$
 
-**Bài 23.** Cho đường tròn $\mathcal{(C)}: x^2 + y^2 +2x -4y – 20 = 0$ và điểm $A(5;-6).$ Từ $B$ vẽ các tiếp tuyến $AB$, $AC$ với đường tròn ($B$, $C$ là các tiếp điểm). Viết phương trình đường thẳng r nội tiếp tam giác $ABC.$
+**Bài 23.** Cho đường tròn $\mathcal{(C)}: x^2 + y^2 +2x -4y – 20 = 0$ và điểm $A(5;-6).$ Từ $B$ vẽ các tiếp tuyến $AB$, $AC$ với đường tròn ($B$, $C$ là các tiếp điểm). Viết phương trình đường tròn nội tiếp tam giác $ABC.$
 
 **Hướng dẫn.** $(x – 2)^2 + (y + 2)^2 = \frac{25}{4}.$
 

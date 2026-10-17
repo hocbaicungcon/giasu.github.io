@@ -13,19 +13,19 @@ grade: 10
 
 Đề thi hsg môn hóa lớp 10 THPT Quỳnh Lưu 2 Nghệ An năm 2023 2024
 
-**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN     KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT
-**  TRƯỜNG THPT QUỲNH LƯU 2                                              KHỐI  10 – LẦN 1
+**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN     KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT**
+**  TRƯỜNG THPT QUỲNH LƯU 2                                              KHỐI  10 – LẦN 1**
 | ĐỀ CHÍNH THỨC   |
 | --- |
 
-**                                                                                                        NĂM HỌC 2023 – 2024
-**                                                                                                           Môn thi: HÓA HỌC
+**                                                                                                        NĂM HỌC 2023 – 2024**
+**                                                                                                           Môn thi: HÓA HỌC**
  **Đề thi có 2 trang** *Thời gian làm bài 150 phút (không kể thời gian giao đề)
 Nguyên tử khối: H= 1; O = 16; K = 39; Mg = 24; Fe = 56; F = 19; Cl = 35,5;
 
 *Ca = 40; Be=9; Ba=137; Cu= 64; Zn = 65;**Na=23; S=32** và*số Avgadro (NA= 6,023.1023)
 
-**Câu I ( 5 ,0 điểm)
+**Câu I ( 5 ,0 điểm)**
  **1**. Cho đặc điểm của nguyên tử các nguyên tố X, Y, Z, M, Q, E như sau:
 
 X có số hiệu nguyên tử là 13.
@@ -54,7 +54,7 @@ c. Sắp xếp (có giải thích) các nguyên tố Z, M, T theo chiều tăng 
 
             **c.** Trong hợp chất HClOx, nguyên tử đồng vị 35Cl chiếm 26,12% về khối lượng. Xác định công thức phân tử của hợp chất HClOx.
 
-**Câu II( 3 điểm)
+**Câu II( 3 điểm)**
 **1.** Nguyên tử X có tổng số hạt là 82 trong đó số hạt mang điện nhiều hơn số hạt không mang điện là 22.
 
 **a.** Tìm số hạt electron, proton và neutron có trong nguyên tử X.
@@ -69,7 +69,7 @@ c. Sắp xếp (có giải thích) các nguyên tố Z, M, T theo chiều tăng 
 
 **c.** Viết phương trình hóa học xảy ra khi cho oxide ứng với hóa trị cao nhất của R phản ứng với nước.
 
-**Câu III( 4 điểm)
+**Câu III( 4 điểm)**
 **1.** Hai nguyên tố X, Y cùng một chu kỳ trong bảng tuần hoàn các nguyên tố hóa học, X thuộc nhóm IIA, Y thuộc nhóm IIIA. Biết ZX + ZY = 51. Viết cấu hình electron nguyên tử của nguyên tố X, Y.
 
 **2**. Viết công thức cấu tạo cho các chất có công thức phân tử: N2, CO2, C2H4, C2H2.
@@ -91,7 +91,7 @@ c. Sắp xếp (có giải thích) các nguyên tố Z, M, T theo chiều tăng 
 
 **4**. Trình bày sự hình thành liên kết ion trong phân tử Al2O3 và CaCl2.
 
-**Câu IV( 4 điểm)
+**Câu IV( 4 điểm)**
 **1**.Viết các phương trình phản ứng sao cho phù hợp với các biến đổi sau (mỗi biến đổi chỉ viết 1 phương trình):
 
 **a**. oxide + H2SO4(loãng) muối  + muối + H2O.
@@ -122,7 +122,7 @@ c. Sắp xếp (có giải thích) các nguyên tố Z, M, T theo chiều tăng 
 
  **3.** Cho hỗn hợp X gồm Fe và 1 kim loại M hóa trị II (có tính khử mạnh hơn H2) tác dụng với dung dịch H2SO4 19,6% vừa đủ, thu được dung dịch trong đó nồng độ FeSO4 là 11,369% và nồng độ của MSO4 là 13,463%. Xác định kim loại M?
 
-**Câu V (4 điểm)
+**Câu V (4 điểm)**
 **1.** Trong phòng thí nghiệm lắp đặt bộ dụng cụ điều chế và thu khí như hai hình vẽ dưới đây:
 
 |                                  Hình a |                              Hình b |
@@ -136,12 +136,12 @@ c. Sắp xếp (có giải thích) các nguyên tố Z, M, T theo chiều tăng 
 
 **3**. Từ dung dịch H2SO4 98% (d=1,84g/ml) em hãy trình bày cách pha chế để được 100ml dung dịch H2SO4 1M.
 
-***— HẾT —
-***Họ và tên thí sinh: ………………………………. Số báo danh: …………………..
+**— HẾT —**
+**Họ và tên thí sinh: ………………………………. Số báo danh: …………………..**
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-File-De](/assets/docs/2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-File-De-giasu.ai.vn.doc)
-- [2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-HDC](/assets/docs/2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-File-De](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2023-2024-HSG-10-Truong-Quynh-Luu-2-Nghe-An-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

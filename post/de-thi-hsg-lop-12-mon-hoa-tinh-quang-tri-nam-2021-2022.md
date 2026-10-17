@@ -138,7 +138,7 @@ Thí sinh không được sử dụng tài liệu.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG-12-QUANG-TRI-NAM-2021-2022](/assets/docs/HSG-12-QUANG-TRI-NAM-2021-2022.docx)
+- [HSG-12-QUANG-TRI-NAM-2021-2022](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

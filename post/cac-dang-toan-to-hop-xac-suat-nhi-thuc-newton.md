@@ -83,4 +83,4 @@ Các dạng toán Tổ Hợp Xác Suất Nhị Thức Newton điển hình trong
 
 4.3 Bài tập . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
 
-Tải tài liệu PDF: [Tải về To-Hop-Xac-Suat-Nhi-Thuc-Newton.pdf](/assets/docs/To-Hop-Xac-Suat-Nhi-Thuc-Newton.pdf)
+Tải tài liệu PDF: [Tải về To-Hop-Xac-Suat-Nhi-Thuc-Newton.pdf](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

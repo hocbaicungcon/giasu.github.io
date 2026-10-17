@@ -51,7 +51,7 @@ Cho: C= 12; H= 1; O=16; Ag= 108; Br= 80.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [hoa 11-NTMK-da](/assets/docs/hoa-11-NTMK-da.docx) [hoa 11-NTMK-de](/assets/docs/hoa-11-NTMK-de.docx)
+- [hoa 11-NTMK-da](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing) [hoa 11-NTMK-de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

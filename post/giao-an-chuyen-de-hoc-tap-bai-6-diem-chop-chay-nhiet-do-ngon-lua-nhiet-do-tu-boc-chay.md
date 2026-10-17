@@ -15,11 +15,11 @@ tags:
 grade: 11
 ---
 
-**TÊN BÀI DẠY:  ĐIỂM CHỚP CHÁY, NHIỆT ĐỘ NGỌN LỬA, NHIỆT ĐỘ TỰ BỐC CHÁY.
+**TÊN BÀI DẠY:  ĐIỂM CHỚP CHÁY, NHIỆT ĐỘ NGỌN LỬA, NHIỆT ĐỘ TỰ BỐC CHÁY.**
 **BỘ SÁCH**: KNTT          –   **SỐ TIẾT**  (2 tiết)
 
-**I. MỤC TIÊU
-**1. Về năng lực
+### I. Mục Tiêu
+**1. Về năng lực**
 a) Nhận thức hóa học:
 
 – Nêu được khái niệm về điểm chớp cháy( là nhiệt độ thấp nhất ở áp suất của khí quyển mà một hợp chất hữu cơ hoặc vật liệu dễ bay hơi ( có thể thay bằng cụm từ chất lỏng cháy dễ bay hơi vì nhiều hợp chất hữu cơ không có khả năng cháy) tạo thành lượng hơi đủ để bốc cháy trong không khí khi gặp nguồn phát tia lửa).
@@ -36,7 +36,7 @@ b)Tìm hiểu thế giới tự nhiên dưới góc độ hoá học: Xác đị
 
 c)Vận dụng kiến thức, kĩ năng đã học: để tìm được các chất lỏng dễ cháy.
 
-**2. Về phẩm chất
+**2. Về phẩm chất**
 – *Trách nhiệm*: nghiêm túc thực hiện các nhiệm vụ học tập được giao đúng tiến độ, có trách nhiệm trong việc phòng chống cháy, nổ.
 
 – *Trung thực*: thành thật trong việc thu thập các tài liệu, viết báo cáo và các bài tập.
@@ -45,14 +45,14 @@ c)Vận dụng kiến thức, kĩ năng đã học: để tìm được các ch�
 
    – *Nhân ái*: quan tâm, giúp đỡ, chia sẻ những khó khăn trong việc thực hiện nhiệm vụ học tập.
 
-**II. THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU
+### Ii. Thiết Bị Dạy Học Và Học Liệu
  **1. Thiết bị:  –** Máy tính, phiếu học tập.
 
  **2. Học liệu:**–   SGK , các tài liệu trên goole.[                                  –     daihocpccc.edu.vn › ](https://daihocpccc.edu.vn/2021/01/20/khi-gap-dam-chay-chat-long-xang-dau-hoa-chat-phai-lam-gi/)
 
                                 –    video : [https://youtu.be/NjgD0lJFbFk](https://youtu.be/NjgD0lJFbFk))
 
-**III. TIẾN TRÌNH DẠY HỌC
+### Iii. Tiến Trình Dạy Học
 | Tiết | Hoạt động | Phương pháp/Kỹ thuật dạy học | Phương pháp/Công cụ đánh giá |
 | --- | --- | --- | --- |
 |         1 | 1: Mở đầu (10’) | Phương pháp: Dạy học đàm thoại, gợi mở qua trò chơi ô chữ. – Kĩ thuật: Vấn đáp | – Quan sát – Hỏi đáp – thang đo |
@@ -64,16 +64,16 @@ c)Vận dụng kiến thức, kĩ năng đã học: để tìm được các ch�
 
 **1.  Hoạt động 1: Mở đầu/ khởi động**(thời gian 10 phút)
 
-**a. Mục tiêu:
+**a. Mục tiêu:**
 - Tạo bầu không khí vui vẻ, khởi động lớp học, đưa ra mâu thuẫn vấn đề cần được giải quyết.
 
 - **Trả lời được** các câu hỏi và từ khoá của trò chơi.
 
-**                        b) Nội dung: Tham gia các câu hỏi thông qua trò chơi, để vào tình huống có vấn đề.
+**                        b) Nội dung: Tham gia các câu hỏi thông qua trò chơi, để vào tình huống có vấn đề.**
  **c) Sản phẩm:** HS biết được những vấn đề liên quan đến bài học mới.
 
-**              d) Tổ chức thực hiện:
-**                             *  Chuẩn bị:
+**              d) Tổ chức thực hiện:**
+**                             *  Chuẩn bị:**
 - GV chọn 4 học sinh tham gia trò chơi, chọn người dẫn, thư kí, giám khảo…
 
 - Bảng trả lời.
@@ -85,7 +85,7 @@ c)Vận dụng kiến thức, kĩ năng đã học: để tìm được các ch�
 | Câu hỏi 1: quá trình C0→ C+4 + 4e gọi là quá trình … Câu hỏi 2: phản ứng có 3 đặc điểm sau: có xảy ra phản ứng hoá học, có toả nhiệt và có phát sáng là phản ứng gì? Câu hỏi 3: Phản ứng khi xảy ra kèm theo sự truyền nhiệt từ chất phản ứng ra môi trường gọi là phản ứng gì? Câu hỏi 4: tốc độ … nhanh hơn tốc độ âm thanh. | Thư kí báo cáo kết quả. |  |
 | Vào bài |   |   |
 
-**– thực hiện nhiệm vụ.
+**– thực hiện nhiệm vụ.**
 HS trả lời được các câu hỏi trong trò chơi.
 
                   – HS báo cáo kết quả thực hiện nhiệm vụ học tập: Học sinh trình bày, học sinh khác thảo luận, nhận xét.
@@ -98,26 +98,26 @@ HS trả lời được các câu hỏi trong trò chơi.
 | 4. | tốc độ … nhanh hơn tốc độ âm thanh. | ÁNH SÁNG |
 | CHƯỚNG NGẠI VẬT: LỬA |  |  |
 
-**                             – Kết quả, nhận định:
+**                             – Kết quả, nhận định:**
 – GV đánh giá mức độ tham gia hoạt động, câu trả lời của HS.
 
 **– Vào bài :** Từ khi biết sử dụng lửa là một bước ngoặt trong khía cạnh văn hoá của sự tiến hóa của con người. Bên cạnh đó lửa cũng gây không ít khó khăn cho cuộc sống như hoả hoạn … Tại các trạm bán xăng dầu, yêu cầu về an toàn cháy, nổ được đặt lên hàng đầu. Khi vào đổ xăng, chúng ta phải tuân thủ các biển báo cấm lửa, cấm hút thuốc vì xăng là chất lỏng dễ bay hơi và bắt lửa ngay điều kiện thường. Vậy, những loại nhiệt độ giới hạn nào được sử dụng để cảnh báo nguy cơ cháy, nổ của một chất lỏng cháy dễ bay hơi? Chúng ta cùng nghiên cứu bài học ngày hôm nay…
 
 **2.Hoạt động 2: Hình thành kiến thức mới/giải quyết vấn đề**(thời gian 50phút)
 
-**  2.1 Điểm chớp nháy ( 20 phút)
-**           a) Mục tiêu:
+**  2.1 Điểm chớp nháy ( 20 phút)**
+**           a) Mục tiêu:**
 – Nêu được khái niệm về điểm chớp cháy( là nhiệt độ thấp nhất ở áp suất của khí quyển mà một hợp chất hữu cơ hoặc vật liệu dễ bay hơi ( có thể thay bằng cụm từ chất lỏng cháy dễ bay hơi vì nhiều hợp chất hữu cơ không có khả năng cháy) tạo thành lượng hơi đủ để bốc cháy trong không khí khi gặp nguồn phát tia lửa).
 
 — Trình bày được việc sử dụng điểm chớp cháy để phân biệt chất lỏng dễ cháy và có thể gây cháy, ( chất cháy có điểm chớp cháy nhỏ hơn 37,80 C được gọi là chất lỏng dễ cháy. Trong khi các chất lỏng có điểm chớp cháy trên nhiệt độ đó gọi là chất lỏng có thể gây cháy).
 
 **b) Nội dung:** Thảo luận theo nhóm
 
-** Nội dung 1:  Tìm hiểu về khái niệm điểm chớp cháy theo nhóm qua phiếu học tập:
-**Phiếu học tập  số 1
+** Nội dung 1:  Tìm hiểu về khái niệm điểm chớp cháy theo nhóm qua phiếu học tập:**
+**Phiếu học tập  số 1**
 Các em đã từng gặp các an toàn khi vận chuyển bằng đường hàng không vật liệu có điểm chớp cháy thấp chưa? Hay đã từng nghe đến điểm chớp cháy của xăng là -43°C, điểm chớp cháy của etylen glycol (chất chống đông) là 111°C,.. ethanol (70%) có điểm chớp cháy là 16,6°C? Vậy **điểm chớp cháy (Flash Point) là gì**?
 
-**      Phiếu học tập  số 2
+**      Phiếu học tập  số 2**
 Tại các trạm bán xăng dầu, yêu cầu về an toàn cháy, nổ được đặt lên hàng đầu. Khi vào đổ xăng, chúng ta phải tuân thủ các biển báo cấm lửa, cấm hút thuốc vì xăng là chất lỏng dễ bay hơi và bắt lửa ngay ở nhiệt độ thường. Vậy, những loại nhiệt độ giới hạn nào được sử dụng để cảnh báo nguy cơ cháy, nổ của một chất lỏng cháy dễ bay hơi?
 
  PHIẾU HỌC TẬP SỐ  3
@@ -130,10 +130,10 @@ Từ điểm chớp cháy có thể đánh giá nguy cơ về hỏa hoạn của
 
 +  Tại sao không phải tất cả các chất lỏng đều có điểm chớp cháy?
 
-**PHI ẾU HỌC TẬP SỐ  4
+**PHI ẾU HỌC TẬP SỐ  4**
 Tại sao nghiêm cấm nguồn lửa tại các trạm xăng, biết điểm chớp cháy của octane, chất có nhiều trong xăng là 14 °C.
 
-**c) Sản phẩm:
+**c) Sản phẩm:**
           – HS hoàn thành phiếu học tập
 
 PHT1: – **Điểm chớp cháy** là nhiệt độ thấp nhất tại áp suất khí quyển mà chất cháy bốc cháy trong không khí khi gặp nguồn lửa.
@@ -143,7 +143,7 @@ PHT2:
 – **Điểm chớp cháy
 – **Nhiệt độ tự bốc cháy** là nhiệt độ thấp nhất mà tại đó chất cháy tự cháy trong không khí mà không cần tiếp xúc với nguồn lửa.
 
-**PHT3:***– Chất lỏng có điểm chớp cháy nhỏ hơn 37,8oC gọi là chất lỏng dễ cháy.
+**PHT3:**– Chất lỏng có điểm chớp cháy nhỏ hơn 37,8oC gọi là chất lỏng dễ cháy.
 *– Chất lỏng có điểm chớp cháy lớn hơn 37,8oC gọi là chất lỏng có thể gây cháy.
 + Loại chất lỏng dễ cháy: propane, pentane, hexan, benzene, ethanol, methamol, diethyl ether, acetal dehyde, acetone, triethylamine.
 
@@ -155,24 +155,24 @@ PHT2:
 
 ⇒ Cấm nguồn lửa tại các trạm xăng.
 
-**d) Tổ chức thực hiện:
-***Chuyển giao nhiệm vụ học tập*
+**d) Tổ chức thực hiện:**
+**Chuyển giao nhiệm vụ học tập***
    + GV chia lớp thành 4 nhóm để thực hiện nhiệm vụ.
 
    + GV yêu cầu nhóm trưởng chia nhóm mình thành 3 nhóm nhỏ. Mỗi nhóm nhỏ phân tích sâu 1 vấn đề mà GV yêu cầu trong phiếu học tập.
 
-**Nhóm chuyên gia v ề:
+**Nhóm chuyên gia v ề:**
 + Sau khi các nhóm ở vòng 1 hoàn tất công việc nhóm chuyên gia thì hình thành nhóm mới từ 3 nhóm trên (nhóm mảnh ghép).
 
 Cùng nhau chia sẻ những điều mình đã biết và học với những điều mình chưa biết.  (*Thời gian: 3 phút**)
-***Thực hiện nhiệm vụ *
+**Thực hiện nhiệm vụ ***
 + “Nhóm chuyên gia”: Học sinh làm việc theo nhóm nhỏ, thảo luận trong vòng 2 phút.
 
 + “Nhóm mảnh ghép”: chuyên gia các nhóm nêu những kiến thức đã nắm được, trao  đổi, thảo luận trong nhóm, hoàn thành phiếu học tập, trong thời gian 3 phút.
 
 + Giáo viên quan sát sự làm việc của các nhóm, sẵn sàng giúp đỡ các nhóm khi cần thiết,  dự đoán trước các khó khăn của học sinh trong hoạt động này: có thể học sinh gặp khó  khăn; thì giáo viên cũng có thể đưa ra gợi ý, giúp học sinh các nhóm hoàn thành nhiệm  vụ của mình.
 
-***– Báo cáo kết quả, thảo luận *
+**– Báo cáo kết quả, thảo luận ***
 + HS cử đại diện nhóm trình bày một nội dung.
 
 + Các nhóm khác bổ sung ý kiến.
@@ -183,7 +183,7 @@ Cùng nhau chia sẻ những điều mình đã biết và học với những �
 
 + GV hướng dẫn học sinh tự học
 
-– ***Đánh giá kết quả thực hiện nhiệm vụ học tập*
+– **Đánh giá kết quả thực hiện nhiệm vụ học tập*
 + GV đánh giá thông qua quan sát: bài làm trên phiếu học tập, thảo luận, trình bày.
 
 + GV đánh giá thông qua vấn đáp và chốt nội dung bài học.
@@ -193,16 +193,16 @@ Cùng nhau chia sẻ những điều mình đã biết và học với những �
         ¯ Chất lỏng có điểm chớp cháy nhỏ hơn 37,8°C được gọi là *chất lỏng dễ cháy*. Trong khi các chất lỏng có điểm chớp cháy trên nhiệt độ đó gọi là *chất lỏng có thể gây cháy.
      VD: Điểm chớp cháy của xăng là –43°C , điểm chớp cháy của dầu Diesel (2-D) là 52°C, điểm chớp cháy của dầu Diesel sinh học là 130°C,… và dầu hỏa là 38 – 72°C.
 
-**2.2 Nhiệt độ ngọn lửa  ( 15 phút) .
+**2.2 Nhiệt độ ngọn lửa  ( 15 phút) .**
 **a) Mục tiêu:**– Nêu được khái niệm về nhiệt độ ngọn lửa (là nhiệt độ cao nhất tạo ra bởi phản ứng bởi phản ứng đốt cháy chất cháy ở áp suất khí quyển)
 
 **–** Phân tích được dấu hiệu để nhận biết về những nguy cơ và cách giảm nguy cơ gây cháy, nổ; cách xử lí khi có cháy, nổ. (Chú ý tìm hiểu, thu thập thông tin về điểm chớp cháy, nhiệt độ cháy của những chất hay gặp trong cuộc sống như: xăng, dầu, vật liệu xây dựng).
 
-**b) Nội dung:  Học sinh nghiên cứu sách giáo khoa,mạng intenet, tài liệu sách báo… trả lời phiếu học tập số 5
+**b) Nội dung:  Học sinh nghiên cứu sách giáo khoa,mạng intenet, tài liệu sách báo… trả lời phiếu học tập số 5**
 | PHIẾU HỌC TẬP SỐ 5 1) Nêu khái niệm nhiệt độ ngọn lửa 2) Dựa vào bảng 6.2 (sgk) cho biết chất nào tạo ra nhiệt độ ngọn lửa cao nhất, chất nào có nhiệt độ ngọn lửa thấp nhất . 3) Vì sao nhiên liệu cháy trong không khí tạo ra nhiệt độ ngọn lửa thấp hơn so với cháy trong oxygen tinh khiết. 4) Tại sao phản ứng đốt cháy các nhiên liệu thường có nhiệt độ ngọn lửa cao? Điều này có ý nghĩa gì trong đời sống và sản xuất? 5) Nêu những thiệt hại do các chất như axetilen, dầu đốt, carbon monoxide, than đá…gây ra trong thực tiễn |
 | --- |
 
-**c) Sản phẩm:
+**c) Sản phẩm:**
              1)  Nêu khái niệm nhiệt độ ngọn lửa; Là nhiệt độ cao nhất tạo ra bởi phản ứng bởi phản ứng đốt cháy chất cháy ở áp suất khí quyển.
 
            2) Trong bảng 6.2
@@ -219,7 +219,7 @@ Trong đời sống, sản xuất, nhiệt độ ngọn lửa cao sẽ làm tăn
 
 5) Các thiệt hại : gây hỏa hoạn do nhiệt độ nóng chảy cao làm tiềm ẩn nguy cơ các đám cháy mạnh thiệt hại lớn về người và tài sản,  làm ô nhiễm môi trường không khí.
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 – Chuyển giao nhiệm vụ: Yêu cầu hs đọc sách giáo khoa, hoạt động cá nhân, hoạt động nhóm hoàn thành phiếu học tập số 2.
 
 – Thực hiện nhiệm vụ: HS tham gia hoạt động cá nhân, thảo luận nhóm và đưa ra kết luận dựa trên câu hỏi ở phiếu số 2. Ghi chép lại những gì học được.
@@ -228,7 +228,7 @@ Trong đời sống, sản xuất, nhiệt độ ngọn lửa cao sẽ làm tăn
 
 – Kết quả, nhận định: GV đánh giá, kết luận và chốt kiến thức, lưu ý một số trường hợp ngoại lệ và chuyển sang nội dung mới.
 
-**2.3 Nhiệt độ tự bốc cháy ( 15 phút)
+**2.3 Nhiệt độ tự bốc cháy ( 15 phút)**
 **a) Mục tiêu:-** Nêu được khái niệm về nhiệt độ tự bốc cháy (là nhiệt độ thấp nhất mà tại đó, chất cháy tự cháy mà không cần tiếp xúc với nguồn nhiệt tại điều kiện áp suất khí quyển).
 
 – Phân tích được dấu hiệu để nhận biết về những nguy cơ và cách giảm nguy cơ gây    cháy, nổ; cách xử lí khi có cháy, nổ. (Chú ý tìm hiểu, thu thập thông tin về điểm chớp cháy, nhiệt độ  cháy của những chất hay gặp trong cuộc sống như: xăng, dầu, vật liệu xây dựng)
@@ -244,37 +244,37 @@ Trong đời sống, sản xuất, nhiệt độ ngọn lửa cao sẽ làm tăn
 | PHT 8: Nghiên cứu trả lời câu hỏi sau: Một số vụ nổ xe bồn chở xăng, dầu xảy ra khi thợ sửa chữa đang hàn xì nắp bồn. a) Hãy chỉ ra 3 yếu tố gây nổ dù bồn đã được tháo hết nhiên liệu lỏng. b) Nếu trong quá trình hàn xì, nắp bồn vẫn đóng thì vụ nổ gây ra bởi hỗn hợp hơi trong bồn đã đạt điểm chớp cháy hay đã đạt nhiệt độ tự bốc cháy? …………………………………………………………………………………………………………………………………………………………………………………………   |
 | --- |
 
-**PHT 9
+**PHT 9**
 Tìm cụm từ còn thiếu điền vào bảng sau
 
 |     Nhiệt độ tự bốc cháy | – Khái niệm: nhiệt độ tự bốc cháy là gì………. – Đặc điểm……………………. – Cách bảo quản chất cháy: |
 | --- | --- |
 
-**c) Sản phẩm:  PHT  6 :
+**c) Sản phẩm:  PHT  6 :**
 1. Video clip trên cho biết khả năng tự bốc cháy của một số chất ở các nhiệt độ khác nhau
 
 2. Khái niệm về  nhiệt độ tự bốc cháy
 
 – Là nhiệt độ thấp nhất mà tại đó, chất cháy tự cháy mà không cần tiếp xúc với nguồn nhiệt tại điều kiện áp suất khí quyển
 
-**      PHT  7 :
+**      PHT  7 :**
 **1.** Diethyl ether vì có nhiệt độ tự bốc cháy thấp nhất.
 
 2.  Nhiệt độ tự bốc cháy càng thấp thì khả năng gây cháy, nổ càng cao. Vì vậy cần bảo quản bình chứa chất cháy xa nguồn nhiệt, kho chứa thông thoáng, khi vậ chuyển tránh va đập, cọ xát.
 
-**PHT  8 :
+**PHT  8 :**
 a)  Mặc dù xe bồn đã tháo hết xăng và việc hàn xì ở ngoài vỏ bình, nắp bình đậy kín thì vẫn có nguy cơ gây nổ vì 3 yếu tố gây cháy nổ: (1) trong bồn vẫn còn nhiều hơi xăng, (2) trong bồn có không khí, (3) hàn xì tạo ra nguồn nhiệt.
 
 b) Khi hàn xì, nhiệt độ từ ngoài vỏ bồn bằng kim loại được truyền vào trong, gây tăng nhiệt mạnh ở nơi hàn xì. Khi đạt tới nhiệt độ tự bốc cháy, hỗn hợp hơi xăng trong bình sẽ tự bốc cháy, phản ứng lan truyền rất nhanh, tỏa nhiệt lớn và gây nổ mạnh, phá vỡ vỏ bồn.
 
-**   PHT  9 :
+**   PHT  9 :**
  **– Khái niệm:** Nhiệt độ tự bốc cháy là nhiệt độ thấp nhất ở áp suất khí quyển, tại đó chất cháy tự cháy trong không khí mà không cần tiếp xúc với nguồn lửa.
 
  **– Đặc điểm:** Nhiệt độ tự bốc chát càng thấp thì khả năng gây cháy, nổ càng cao.
 
 **– Các cách bảo quản chất cháy :** Để bình chứa xa nguồn nhiệt, kho chứa thông thoáng, khi vận chuyển cần tránh va đập, cọ sát.
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 – Chuyển giao nhiệm vụ, thực hiện nhiệm vụ: Mỗi góc để một PHT, lần lượt từng nhóm đến các góc  hoàn thành bài làm của mình.
 
             – Báo cáo thảo luận: Mỗi nhóm cử hai đại diện lên trình bày, các nhóm khác thảo luận chất vấn.
@@ -317,10 +317,10 @@ GV nhận xét và đưa ra kết luận:     – Nhiệt độ tự bốc ch
 
      – Cách xử lý khi có cháy nổ:
 
-**        + Báo động, hô hoán cho mọi người biết có đám cháy.
-**        + Cắt điện khu vực xảy ra cháy.
-**        + Sử dụng các phương tiện để dập cháy.
-**        + Gọi  114  cháy để  báo cháy  cho lực lượng cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ .
+**        + Báo động, hô hoán cho mọi người biết có đám cháy.**
+**        + Cắt điện khu vực xảy ra cháy.**
+**        + Sử dụng các phương tiện để dập cháy.**
+**        + Gọi  114  cháy để  báo cháy  cho lực lượng cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ .**
 **3. Hoạt động 3: Luyện tập**(thời gian 20 phút)
 
  **a) Mục tiêu:** Luyện tập, củng cố kiến thức đã học trong bài.
@@ -329,51 +329,51 @@ GV nhận xét và đưa ra kết luận:     – Nhiệt độ tự bốc ch
 
  **c) Sản phẩm:** Phiếu học tập, sơ đồ tư duy câm và bài tập vận dụng cho HS
 
-**               d) Tổ chức thực hiện:
+**               d) Tổ chức thực hiện:**
                 – Chuyển giao nhiệm vụ: HS làm việc cặp đôi, hoàn thành phiếu học tập số 10.
 
-**PHIẾU HỌC TẬP SỐ 10:  S Ơ ĐỒ TƯ DUY CÂM TỔNG KẾT LẠI CÁC KIẾN THỨC
-** TRỌNG TÂM:  ĐIỂM CHỚP CHÁY, NHIỆT ĐỘ NGỌN LỬA, NHIỆT ĐỘ TỰ BỐC CHÁY
-**PHIẾU HỌC TẬP SỐ 11:  LUYỆN TẬP VỀ ĐIỂM CHỚP CHÁY NHIỆT ĐỘ NGỌN LỬA
-**Mức độ nhận biết
+**PHIẾU HỌC TẬP SỐ 10:  S Ơ ĐỒ TƯ DUY CÂM TỔNG KẾT LẠI CÁC KIẾN THỨC**
+** TRỌNG TÂM:  ĐIỂM CHỚP CHÁY, NHIỆT ĐỘ NGỌN LỬA, NHIỆT ĐỘ TỰ BỐC CHÁY**
+**PHIẾU HỌC TẬP SỐ 11:  LUYỆN TẬP VỀ ĐIỂM CHỚP CHÁY NHIỆT ĐỘ NGỌN LỬA**
+**Mức độ nhận biết**
 **Câu 1.** Chất nào là chất lỏng có thể gây cháy
 
-**A.** stearic acid.                     **B.** benzene.                      **C.** acetal dehyde.            **D.** methamol.
+**A.** stearic acid.                     B.** benzene.                      **C.** acetal dehyde.            D.** methamol.
 
 **Câu 2.** Chất lỏng dễ cháy:
 
-**A.** nitrobenzene.                               **B.** acetone.
+**A.** nitrobenzene.                               B.** acetone.**
 
-**C.**  ethylene glycol.                        **D.** fomic acid.
+**C.** ethylene glycol.                        D.** fomic acid.**
 
 **Câu 3.** Khi vào đổ xăng chúng ta phải tuân thủ các biển báo. Biển báo nào không có ở cửa hàng xăng dầu
 
-**A.** Không sử dụng điện thoại di động.                        **B.** Cấm chụp ảnh.          
+**A.** Không sử dụng điện thoại di động.                        B.** Cấm chụp ảnh.          **
 
-**C.** Cấm lửa.                                                                     **D.** Cấm hút thuốc.
+**C.** Cấm lửa.                                                                     D.** Cấm hút thuốc.**
 
 **Câu 4. ………………..** là nhiệt độ thấp nhất tại áp suất khí quyển mà chất cháy bốc cháy trong không khí khi gặp nguồn lửa.
 
-**A.** Nhiệt độ ngọn lửa.                                                    **B.** Điểm chớp cháy.       
+**A.** Nhiệt độ ngọn lửa.                                                    B.** Điểm chớp cháy.       **
 
-**C.** Nhiệt độ tự bốc cháy.                                               **D.** Điểm cháy.
+**C.** Nhiệt độ tự bốc cháy.                                               D.** Điểm cháy.**
 
 **Câu 5.** Cho các chất lỏng sau: propane, pentane, benzene, nitrobenzene, ethylene glycol, hexan, triethylamine. Số chất lỏng thuộc loại chất lỏng dễ cháy:
 
-**A.** 5.                            **B.** 6. **C.** 7.                                        **D.** 4.
+**A.** 5.                            B.** 6. **C.** 7.                                        D.** 4.
 
 **Câu 6.** Khi sử dụng cồn để đốt, nếu không cần thận có thể bị bỏng cồn. Có mấy đặc điểm sau đây tiềm ẩn nguy cơ gây bỏng cồn: cồn dễ bay hơi, hơi cồn dễ bắt lửa, phản ứng toả nhiệt mạnh, nhiệt độ ngọn lửa cao?
 
-**A.** 4.                                       **B.** 2.                                  **C.** 3.                                  **D.** 5.
+**A.** 4.                                       B.** 2.                                  **C.** 3.                                  D.** 5.
 
-**Mức độ thông hiểu
+**Mức độ thông hiểu**
 **Câu 7.** Tại sao nghiêm cấm nguồn lửa tại các trạm xăng, biết điểm chớp cháy của octane, chất có nhiều trong xăng là 14 °C.
 
 **Câu 8.** a) Tại sao phản ứng đốt cháy các nhiên liệu thường có nhiệt độ ngọn lửa cao? Điều này có ý nghĩa gì trong đời sống và sản xuất?
 
 **Câu 9.** Nêu các biện pháp đảm bảo an toàn khi dùng cồn đề đốt.
 
-**Mức độ vận dụng
+**Mức độ vận dụng**
 **Câu 10.** Một số vụ nổ xe bồn chở xăng, dầu xảy ra khi thợ sửa chữa đang hàn xì nắp bồn.
 
 a) Hãy chỉ ra 3 yếu tố gây nổ dù bồn đã được tháo hết nhiên liệu lỏng.
@@ -396,12 +396,12 @@ Chia lớp thành bốn nhóm: mỗi nhóm 10 thành viên. Chuẩn bị bộ c�
 
 **4. Hoạt động 4: Vận dụng**(thời gian 10 phút)
 
-**              a) Mục tiêu:
+**              a) Mục tiêu:**
 – HĐ vận dụng và tìm tòi mở rộng được thiết kế cho HS về nhà làm, nhằm mục đích giúp HS vận dụng kiến thức, kĩ năng đã học trong bài để giải quyết các các câu hỏi, bài tập gắn với thực tiễn và mở rộng kiến thức của HS, bắt buộc tất cả HS đều phải làm.
 
  **b) Nội dung:** Dạy học trên lớp, hoạt động nhóm theo PHT
 
-**PHIẾU HỌC TẬP SỐ 12
+**PHIẾU HỌC TẬP SỐ 12**
 Các hộ gia đình thường sử dụng bếp ga để đun nấu. Thành phần của gas là hỗn hợp 2 khí propane và butane. Thực tế có rất nhiều vụ nổ khí gas gây thiệt hại rất lớn về người và của.
 
 Em hãy sưu tầm video về một số vụ nổ khí gas, thuyết trình về sự nguy hiểm khi nổ khí gas. Thảo luận tìm câu trả lời:
@@ -414,7 +414,7 @@ Em hãy sưu tầm video về một số vụ nổ khí gas, thuyết trình v�
 
 **c) Sản phẩm:** video về sự nguy hiểm trong nổ khí gas
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 + Chuyển giao nhiệm vụ: Chia lớp thành 4 tổ, GV yêu cầu mỗi tổ chuẩn bị 1 tờ giấy Ao.
 
 1. Đọc nội dung trong phiếu học tập số 3:
@@ -437,11 +437,11 @@ HS giải quyết các câu hỏi 1, 2, 3 trong phiếu học tập số 3 sau �
 
 – GV nhận xét, phân tích kết quả thực hiện nhiệm vụ của các tổ, đánh giá mức độ hoàn thành, chốt lại kết quả và cho điểm các tổ.
 
-**BÀI TẬP CHO CHUYÊN ĐỀ
-**BÀI 6: Điểm chớp cháy (nhiệt độ chớp cháy),
+**BÀI TẬP CHO CHUYÊN ĐỀ**
+**BÀI 6: Điểm chớp cháy (nhiệt độ chớp cháy),**
 nhiệt độ tự bốc cháy và nhiệt độ cháy
-**I. MỤC TIÊU
-**Yêu cầu cần đạt theo chương trình 2018
+### I. Mục Tiêu
+**Yêu cầu cần đạt theo chương trình 2018**
 + Nêu được khái niệm về điểm chớp cháy (là nhiệt độ thấp nhất ở áp suất của khí quyển mà một hợp chất hữu cơ hoặc vật liệu dễ bay hơi (có thể thay bằng cụm từ chất lỏng cháy dễ bay hơi vì nhiều hợp chất hữu cơ không có khả năng cháy) tạo thành lượng hơi đủ để bốc cháy trong không khí khi gặp nguồn phát tia lửa).
 
 + Nêu được khái niệm về nhiệt độ tự bốc cháy (là nhiệt độ thấp nhất mà tại đó, chất cháy tự cháy mà không cần tiếp xúc với nguồn nhiệt tại điều kiện áp suất khí quyển).
@@ -454,7 +454,7 @@ nhiệt độ tự bốc cháy và nhiệt độ cháy
 
 + Phân tích được dấu hiệu để nhận biết về những nguy cơ và cách giảm nguy cơ gây cháy, nổ; cách xử lí khi có cháy, nổ. (Chú ý tìm hiểu, thu thập thông tin về điểm chớp cháy, nhiệt độ cháy của những chất hay gặp trong cuộc sống như: xăng, dầu, vật liệu xây dựng).
 
-**II. NỘI DUNG TRỌNG TÂM BÀI HỌC
+### Ii. Nội Dung Trọng Tâm Bài Học
 + **Đ iểm chớp cháy** là nhiệt độ thấp nhất ở áp suất khí quyển mà một chất lỏng hoặc vật liệu dễ bay hơi tạo thành lượng hơi đủ để bốc cháy trong không khí khi tiếp xúc với nguồn lửa.
 
 + **N hiệt độ tự bốc cháy** là nhiệt độ thấp nhất mà tại đó, chất cháy tự cháy mà không cần tiếp xúc với nguồn lửa tại điều kiện áp suất khí quyển.
@@ -467,11 +467,11 @@ nhiệt độ tự bốc cháy và nhiệt độ cháy
 
 + Khi xảy ra hỏa hoạn, cần bình tĩnh để xử lý kịp thời và đúng quy trình, tuân theo các bước được hướng dẫn trong tiêu lệnh chữa cháy để hạn chế tối đa những thiệt hại gây ra.
 
-**III. CÂU HỎI – BÀI TẬP LUYỆN TẬP
-**TỰ LUẬN (15 câu)
+**III. CÂU HỎI – BÀI TẬP LUYỆN TẬP**
+**TỰ LUẬN (15 câu)**
 **Câu 1.** Tinh dầu trầm hương được chiết xuất từ nhựa cây Dó bầu bị nhiễm dầu (tụ trầm) bằng phương pháp chưng cất lôi cuốn hơi nước. một số tác dụng của tinh dầu trầm hương được biết đến như: giảm căng thẳng, giảm nguy cơ trầm cảm, ngủ ngon giấc hơn; ngăn ngừa sự phát triển của tế bào ung thư; tốt cho hệ tiêu hóa; xám triệu chứng dị ứng ở đường hô hấp trên; chăm sóc da do đặc tính chống viêm, kháng khuẩn và chống oxy hóa;… tinh dầu trầm hương có điểm chớp cháy là 51℃. Hãy cho biết tinh dầu trầm hương được gọi là chất lỏng dễ cháy hay chất lỏng có thể gây cháy.
 
-***Trả lời:
+**Trả lời:**
 Tinh dầu trầm hương là chất lỏng có thể gây cháy vì có điểm chớp cháy lớn hơn 37,8℃.
 
 **Câu 2.** Cho bảng số liệu sau:
@@ -493,7 +493,7 @@ a) Cho biết nhiên liệu nào là chất lỏng dễ cháy và chất lỏng 
 
 b) Giải thích vì sao xăng dễ bốc cháy hơn dầu hỏa (Vì sao ở ngay điều kiện nhiệt độ phòng (khoảng 25℃), cần phải bảo quản xăng cẩn thận hơn so với dầu hỏa?)
 
-***Trả lời:
+**Trả lời:**
 a)
 
 – Chất lỏng dễ cháy: xăng, propane, pentane, diethyl ether, acetone, benzene, isooctane, n–hexane, ethanol, methanol, isopropyl alcohol, pyridine, xylene, toluene.
@@ -520,7 +520,7 @@ a) Cho biết nhiên liệu nào là chất lỏng dễ cháy và chất lỏng 
 
 b) Tại sao không phảỉ tất cả các chất lỏng đều có điểm chớp cháy?
 
-***Trả lời:
+**Trả lời:**
 a)
 
 – Chất lỏng dễ cháy: propane, pentane, n–hexane, benzene, ethanol, methanol, diethyl ether, acetaldehyde, acetone, trimethylamine.
@@ -541,7 +541,7 @@ Bảng 3. Điểm chớp cháy của một số tinh dầu
 
 Điểm chớp cháy được áp dụng trong các quy định an toàn và vận chuyển. Cục Hàng không Việt Nam đã quy định: tinh dầu được coi là chất lỏng dễ cháy và là hàng hóa nguy hiểm nếu có điểm chớp cháy nhỏ hơn 60℃. Hãy cho biết các hãng hàng không có thể từ chối vận chuyển các loại tinh dầu nào.
 
-**Trả lời:
+**Trả lời:**
 Tinh dầu trà, dứa, nhựa thông, cam, sả chanh.
 
 **Câu 5.** Hãy cho biết nhiên liệu nào trong bảng sau có khả năng gây cháy, nổ cao nhất.
@@ -555,19 +555,19 @@ Bảng 4. Nhiệt độ tự bốc cháy của một số nhiên liệu
 | Methanol | 385 | Hydrogen | 400 |
 | Ethanol | 558 | Butane | 405 |
 
-**Trả lời:
+**Trả lời:**
 Diethyl ether vì có nhiệt độ tự bốc cháy thấp nhất.
 
 **Câu 6.** Tại sao nghiêm cấm nguồn lửa tại các trạm xăng, biết điểm chớp cháy của octane, chất có nhiều trong xăng là 14℃.
 
-**Trả lời:
+**Trả lời:**
 Tại các trạm bán xăng dầu luôn có hàm lượng hới xăng bay ra nhất định trong quá trình bơm xăng. Điểm chớp cháy của octane là 14℃, nhỏ hơn nhiệt độ thường (25℃) chứng tỏ octane có thể bắt lửa và cháy ngay ở nhiệt độ thường.
 
 Do vậy, việc tạo nguồn lửa tại các trạm bán xăng dầu bị nghiêm cấm vì bất kì nguồn lửa nào xuất hiện ở trạm xăng dầu đều có nguy cơ gây hỏa hoạn.
 
 **Câu 7.** Hãy giải thích vì sao than chất thành đống lớn có thể tự bốc cháy.
 
-**Trả lời:
+**Trả lời:**
 Do than tác dụng chậm với O2 trong không khí tạo CO2, phản ứng này tỏa nhiệt. khi than chất thành đống lớn, phản ứng này diễn ra nhiều và liên tục, nhiệt toả ra được tích góp dần tới khi đạt tới nhiệt độ tự bốc cháy của than thì than sẽ tự bốc cháy.
 
 **Câu 8.** Khi sử dụng cồn để đốt, nếu không cẩn thận có thể bị bỏng cồn.
@@ -576,19 +576,19 @@ a) Những đặc điểm nào sau đây tiềm ẩn nguy cơ gây bỏng cồn:
 
 b) Nêu các biện pháp đảm bảo an toàn khi dùng cồn để đốt.
 
-**Trả lời:
+**Trả lời:**
 a) Tất cả các đặc điểm trên đều tiềm ẩn nguy cơ gây bỏng cồn.
 
 b) Không sử dụng nhiều cồn cùng một lúc, không đổ cồn trực tiếp vào lửa, sử dụng ở nơi thoáng gió, xung quang không có vật dụng dễ cháy,…
 
 **Câu 9.** Vì sao nhiên liệu cháy trong không khí tạo ra nhiệt độ ngọn lửa thấp hơn so với cháy trong oxygen tinh khiết.
 
-**Trả lời:
+**Trả lời:**
 Sự cháy trong không khí xảy ra chậm hơn và tạo ra nhiệt độ thấp hơn sự cháy trong oxygen vì không khí là một hỗn hợp khí trong đó oxygen chiếm khoảng 20% về thể tích, còn lại là nhiều chất khí khác. Do đó khi cháy trong không khí, lượng oxygen có thể cung cấp không đủ cho sự cháy hoặc cung cấp không liên tục. Mặt khác, nhiệt lượng tỏa ra còn bị tiêu hao do làm nóng các khí khác (như nitrogen, carbon dioxide,…) hoặc trao đổi với môi trường. vì vậy nhiệt độ ngọn lửa cũng thấp hơn so với trái trong oxygen tinh khiết.
 
 **Câu 10.** Tại sao phản ứng đốt cháy các nhiên liệu thường có nhiệt độ ngọn lửa cao? Điều này có ý nghĩa gì trong đời sống và sản xuất?
 
-**Trả lời:
+**Trả lời:**
 Nhiên liệu là các chất có năng suất tỏa nhiệt lớn, tạo ra được nhiều nhiệt ở vùng cháy, dẫn tới nhiệt độ ngọn lửa cao.
 
 Trong đời sống, sản xuất, nhiệt độ ngọn lửa cao sẽ làm tăng tốc độ và hiệu suất các quá trình theo mục đích của con người.
@@ -599,7 +599,7 @@ a) Hãy chỉ ra 3 yếu tố gây nổ dù bồn đã được tháo hết nhi�
 
 b) Nếu trong quá trình hàn xì, nắp bồn vẫn đóng thì vụ nổ gây ra bởi hỗn hợp hơi trong bồn đã đạt điểm chớp cháy hay đã đạt nhiệt độ tự bốc cháy?
 
-**Trả lời:
+**Trả lời:**
 a)  Mặc dù xe bồn đã tháo hết xăng và việc hàn xì ở ngoài vỏ bình, nắp bình đậy kín thì vẫn có nguy cơ gây nổ vì 3 yếu tố gây cháy nổ: (i) trong bồn vẫn còn nhiều hơi xăng, (ii) trong bồn có không khí, (iii) hàn xì tạo ra nguồn nhiệt.
 
 b) Khi hàn xì, nhiệt độ từ ngoài vỏ bồn bằng kim loại được truyền vào trong, gây tăng nhiệt mạnh ở nơi hàn xì. Khi đạt tới nhiệt độ tự bốc cháy, hỗn hợp hơi xăng trong bình sẽ tự bốc cháy, phản ứng lan truyền rất nhanh, tỏa nhiệt lớn và gây nổ mạnh, phá vỡ vỏ bồn.
@@ -612,7 +612,7 @@ b) Khi hàn xì, nhiệt độ từ ngoài vỏ bồn bằng kim loại được
 
 **Hình.** Một số nguồn phát sinh chất oxi hóa
 
-**Trả lời:
+**Trả lời:**
 + Nguồn nhiệt: tia sét, Mặt Trời, nguồn điện.
 
 + Nguồn phát sinh chất cháy: trạm xăng dầu, bình gas.
@@ -621,7 +621,7 @@ b) Khi hàn xì, nhiệt độ từ ngoài vỏ bồn bằng kim loại được
 
 **Câu 13.** Quan sát hình bên dưới, mô tả chi tiết quy trình 4 bước theo tiêu lệnh chữa cháy khi xảy ra hỏa hoạn.
 
-**Trả lời:
+**Trả lời:**
 **Bước 1:** Báo động, hô hoán cho mọi người biết có đám cháy.
 
 Người phát hiện sự cố cháy có thể hô hoán bằng lời hoặc sử dụng các phương tiện báo động khác như kèng, loa, phát thanh, nhấn nút chuông báo cháy,… nhằm thông báo cho mọi người trong khu vực đang xảy ra cháy biết và cùng phối hợp dập tắt đám cháy hoặc cùng thoát nạn an toàn khi thấy đám cháy đã phát triển lớn.
@@ -646,7 +646,7 @@ Nhanh chóng gọi điện đến số 114 nhằm báo cho lực lượng Cảnh
 
 **Câu 14.** Hãy nêu một số biện pháp giảm thiểu nguy cơ cháy, nổ từ các vật dụng, thiết bị trong gia đình.
 
-**Trả lời:
+**Trả lời:**
 + Kiểm tra nơi để vật dụng, đồ dùng, thiết bị và các vật liệu khác có khả năng cháy được, phải cách xa nơi đun nấu và các nguồn nhiệt khác.
 
 + Kiểm tra hệ thống điện, khắc phục các hỏng hóc có nguy cơ dẫn đến chạm chập, ngắt mạch điện. các dây dẫn vỏ cách điện bị lão hóa, rạn nứt phải được thay thế; các mối nối trên dây dẫn điện phải được siết chặt; các thiết bị điện lắp đặt trong nhà phải đảm bảo an toàn.
@@ -657,15 +657,15 @@ Nhanh chóng gọi điện đến số 114 nhằm báo cho lực lượng Cảnh
 
 **Câu 15.** Hãy mô tả cấu tạo của một loại bình chữa cháy thông dụng và cho biết cách sử dụng loại bình này.
 
-**Trả lời:
-**Cấu tạo bình chữa cháy CO2
+**Trả lời:**
+**Cấu tạo bình chữa cháy CO2**
 + Thành bình cứu hỏa làm bằng thép đúc, hình trụ đứng và thường được sơn màu đỏ. Cụm van làm bằng hợp kim đồng theo kiểu van lò xo nén một chiều, có cò bóp phía trên đồng thời là tay xách. Tại đây có khóa an toàn.
 
 + Trong bình và dưới van là ống nhựa cứng dẫn khí CO2 được nén lỏng từ bên trong bình ra ngoài. Ở trên cụm van có một van an toàn sẽ xả khí ra ngoài khi áp suất trong bình tăng quá mức quy định để đảm bảo an toàn. Loa phun làm bằng kim loại hay cao su, nhựa cứng và được gắn với khớp nối bộ van qua một ống thép cứng hoặc ống mềm.
 
 + Khi chữa cháy, chỉ cần vặn van hay rút khóa an toàn rồi bóp cò là khí CO2 được nén chặt trong mình với áp suất cao sẽ chuyển sang thể lỏng, phun ra dập tắt đám cháy.
 
-**Cấu tạo bình bột chữa cháy
+**Cấu tạo bình bột chữa cháy**
 + Thân bình được làm từ thép chịu được áp lực cao, bình hình trụ đứng, thường được sơn màu đỏ lên vỏ bình. Trên thân bình có nhãn, trên đó ghi thông tin đặc điểm, hình ảnh sử dụng, cách bảo quản,… của bình. Trên miệng mình có cụm van, van khóa, đồng hồ đo áp lực khí đẩy, vòi phun, ống dẫn, cò bóp.
 
 + Cụm van được gắn liền với nắp đậy ở miệng bình, có thể tháo cụm van và nạp lại bình chữa cháy.
@@ -680,7 +680,7 @@ Nhanh chóng gọi điện đến số 114 nhằm báo cho lực lượng Cảnh
 
 + Khi chữa cháy chỉ cần bặn van hay rút khóa an toàn rồi bóp cò là khí đẩy cùng với bột chữa cháy sẽ phun ra dặp tắt đám cháy.
 
-**TRẮC NGHIỆM (12 câu)
+**TRẮC NGHIỆM (12 câu)**
 **Câu 1.** Điểm chớp cháy là
 
  **A.** nhiệt độ thấp nhất ở áp suất của khí quyển mà một hợp chất hữu cơ hoặc vật liệu dễ bay hơi tạo thành lượng hơi đủ để bốc cháy trong không khí khi gặp nguồn lửa.
@@ -713,9 +713,9 @@ Nhanh chóng gọi điện đến số 114 nhằm báo cho lực lượng Cảnh
 
 Thứ tự đúng của các bước trên là
 
- **A.** (d), (c), (a), (b). **B.** (c), (d), (a), (b).
+ **A.** (d), (c), (a), (b). B.** (c), (d), (a), (b).**
 
- **C.** (d), (b), (a), (c). **D.** (c), (d), (b), (a).
+ **C.** (d), (b), (a), (c). D.** (c), (d), (b), (a).**
 
 **Câu 4.** Nhiệt độ ngọn lửa cho biết
 
@@ -729,29 +729,29 @@ Thứ tự đúng của các bước trên là
 
 **Câu 5.** Chất lỏng dễ cháy là chất lỏng có điểm chớp cháy
 
- **A.** nhỏ hơn 37,8℃. **B.** lớn hơn 37,8℃.      C.**nhỏ hơn 25℃.**                                                            D.**lớn hơn 25℃.
+ **A.** nhỏ hơn 37,8℃. B.** lớn hơn 37,8℃.      C.**nhỏ hơn 25℃.**                                                            D.**lớn hơn 25℃.
 
 **Câu 6.** Chất lỏng có thể gây cháy là chất lỏng có điểm chớp cháy
 
- **A.** nhỏ hơn 37,8℃. **B.** lớn hơn 37,8℃.      C.**nhỏ hơn 25℃.**                                                            D.**lớn hơn 25℃.
+ **A.** nhỏ hơn 37,8℃. B.** lớn hơn 37,8℃.      C.**nhỏ hơn 25℃.**                                                            D.**lớn hơn 25℃.
 
 **Câu 7.** Chất nào sau đây dễ bốc cháy nhất? Biết điểm chớp cháy của từng chất được cho trong ngoặc.
 
- **A.** Acetone (–20℃). **B.** Biodisel (130℃).
+ **A.** Acetone (–20℃). B.** Biodisel (130℃).**
 
- **C.** Dầu hỏa (38–72℃). **D.** Ethylen glycol (111℃).
+ **C.** Dầu hỏa (38–72℃). D.** Ethylen glycol (111℃).**
 
 **Câu 8.** Chất nào sau đây là chất lỏng dễ cháy? Biết điểm chớp cháy của từng chất được cho trong ngoặc.
 
- **A.** Formic acid (50℃). **B.** Stearic acid (196℃).
+ **A.** Formic acid (50℃). B.** Stearic acid (196℃).**
 
- **C.** Ethanol (13℃). **D.** Nitrobenzene (88℃).
+ **C.** Ethanol (13℃). D.** Nitrobenzene (88℃).**
 
 **Câu 9.** Chất nào sau đây **không phải** là chất lỏng dễ cháy? Biết điểm chớp cháy của từng chất được cho trong ngoặc.
 
- **A.** n–hexane (–22℃). **B.** Methanol (11℃).
+ **A.** n–hexane (–22℃). B.** Methanol (11℃).**
 
- **C.** Toluene (4℃). **D.** Benzyl alcohol (101℃).
+ **C.** Toluene (4℃). D.** Benzyl alcohol (101℃).**
 
 **Câu 10.** Cho bảng số liệu sau:
 
@@ -765,23 +765,23 @@ Thứ tự đúng của các bước trên là
 
 Số chất lỏng dễ cháy trong bảng trên là
 
- **A.** 6. **B.** 7. **C.** 8. **D.** 9.
+ **A.** 6. B.** 7. **C.** 8. D.** 9.
 
 **Câu 11.** Một chất lỏng dễ cháy có điểm chớp cháy là a℃. Giá trị của a phù hợp nhất là
 
- **A.** 88℃. **B.** 50℃. **C.** 13℃. **D.** 101℃.
+ **A.** 88℃. B.** 50℃. **C.** 13℃. D.** 101℃.
 
 **Câu 12.** Tại sao ở khu vực cây xăng lại thường có biển báo cấm lửa?
 
- **A.** Xăng là chất lỏng dễ bay hơi. **B.** Các thiết bị bơm xăng dễ cháy.
+ **A.** Xăng là chất lỏng dễ bay hơi. B.** Các thiết bị bơm xăng dễ cháy.**
 
- **C.** Xăng là chất lỏng dễ cháy. **D.** Xăng là chất lỏng có thể gây cháy.
+ **C.** Xăng là chất lỏng dễ cháy. D.** Xăng là chất lỏng có thể gây cháy.**
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 ﻿
 
-- [Tiet_34_Nhiet-do-chop-chay.-Nhiet-do-ngon-lua.-Nhiet-do-tu-boc-chay](/assets/docs/Tiet_34_Nhiet-do-chop-chay.-Nhiet-do-ngon-lua.-Nhiet-do-tu-boc-chay.docx)
+- [Tiet_34_Nhiet-do-chop-chay.-Nhiet-do-ngon-lua.-Nhiet-do-tu-boc-chay](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

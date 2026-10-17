@@ -13,8 +13,8 @@ tags:
 grade: 12
 ---
 
-**1****. TÊN CHỦ ĐỀ: LÀM XÀ PHÒNG TỪ DẦU, MỠ ĐÃ QUA SỬ DỤNG
-****(Số tiết: 3 – Hóa học 12)
+**1**. TÊN CHỦ ĐỀ: LÀM XÀ PHÒNG TỪ DẦU, MỠ ĐÃ QUA SỬ DỤNG
+**(Số tiết: 3 – Hóa học 12)**
 
 2. MÔ TẢ CHỦ ĐỀ:**
 
@@ -174,7 +174,7 @@ Học sinh hoàn thiện được quy trình sản xuất xà phòng của nhóm
 
 1. Nội dung hoạt động
 
-**–** Học sinh trình bày, giải thích và bảo vệ quy trình sản xuất xà phòng theo các tiêu chí đề ra. Minh chứng sản phẩm của phản ứng xà phòng hoá tạo ra bánh xà phòng như yêu cầu.**– Thảo luận, đặt câu hỏi và phản biện các ý kiến về quy trình; ghi lại các nhận xét, góp ý; tiếp thu và điều chỉnh bản thiết kế nếu cần.
+**–** Học sinh trình bày, giải thích và bảo vệ quy trình sản xuất xà phòng theo các tiêu chí đề ra. Minh chứng sản phẩm của phản ứng xà phòng hoá tạo ra bánh xà phòng như yêu cầu.**– Thảo luận, đặt câu hỏi và phản biện các ý kiến về quy trình; ghi lại các nhận xét, góp ý; tiếp thu và điều chỉnh bản thiết kế nếu cần.**
 
 – Phân công công việc, lên kế hoạch sản xuất và thử nghiệm sản phẩm.
 
@@ -202,7 +202,7 @@ Hoạt động 4. CHẾ TẠO MẪU THỬ NGHIỆM VÀ ĐÁNH GIÁ**
 
 b. Nội dung hoạt động**
 
-**–** Học sinh sử dụng các nguyên vật liệu và dụng cụ cho trước (dầu, mỡ qua sử dụng được làm sạch sẽ, tinh dầu tram, dung dịch NaHO, giấy quỳ, nồi Inox, đủa quấy thuỷ tinh, bếp, khuôn) để tiến hành chế tạo bánh xà phòng theo quy trình.**– Trong quá trình chế tạo các nhóm đồng thời thử nghiệm và điều chỉnh bằng việc sử dụng bánh xà phòng để rửa tay.
+**–** Học sinh sử dụng các nguyên vật liệu và dụng cụ cho trước (dầu, mỡ qua sử dụng được làm sạch sẽ, tinh dầu tram, dung dịch NaHO, giấy quỳ, nồi Inox, đủa quấy thuỷ tinh, bếp, khuôn) để tiến hành chế tạo bánh xà phòng theo quy trình.**– Trong quá trình chế tạo các nhóm đồng thời thử nghiệm và điều chỉnh bằng việc sử dụng bánh xà phòng để rửa tay.**
 
 c. Sản phẩm của học sinh**
 
@@ -210,7 +210,7 @@ Mỗi nhóm có một sản phầm là một bánh xà phòng đã được hoà
 
 ![STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng 2](file:///C:/Users/Admin/AppData/Local/Temp/lu9252a0hu4d.tmp/lu9252a0hu4q_tmp_c2a87131a2d1b791.jpg)
 
- **d. Cách thức tổ chức****–  Giáo viên giao nhiệm vụ:
+ **d. Cách thức tổ chức**–  Giáo viên giao nhiệm vụ:
 
 - Sử dụng các nguyên vật liệu và dụng cụ cho trước để chế tạo bánh xà phòng đơn giản theo yêu cầu.
 
@@ -270,7 +270,7 @@ Xà phòng đã được hoàn thiện và nội dung trình bày báo cáo củ
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [HÓA 12. LÀM XÀ PHÒNG TỪ DẦU, MỠ ĐÃ QUA SỬ DỤNG](/assets/docs/HOA-12.-LAM-XA-PHONG-TU-DAU-MO-DA-QUA-SU-DUNG.docx)
+- [HÓA 12. LÀM XÀ PHÒNG TỪ DẦU, MỠ ĐÃ QUA SỬ DỤNG](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

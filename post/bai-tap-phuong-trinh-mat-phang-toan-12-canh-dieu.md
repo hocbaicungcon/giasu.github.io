@@ -27,4 +27,4 @@ CHỦ ĐỀ 2. LẬP PHƯƠNG TRÌNH TỔNG QUÁT MẶT PHẲNG. + Dạng 1. Vi�
 CHỦ ĐỀ 3. ỨNG DỤNG MẶT PHẲNG TRONG KHÔNG GIAN.
 ## Download bài tập phương trình mặt phẳng Toán 12 Cánh Diều
 
-- [cac-dang-bai-tap-phuong-trinh-mat-phang-toan-12-canh-dieu](/assets/docs/cac-dang-bai-tap-phuong-trinh-mat-phang-toan-12-canh-dieu.pdf)
+- [cac-dang-bai-tap-phuong-trinh-mat-phang-toan-12-canh-dieu](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

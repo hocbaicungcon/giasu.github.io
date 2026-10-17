@@ -38,7 +38,7 @@ Khi giải bài toán bằng cách lập phương trình dạng năng suất, *
 
 Một đội máy kéo dự định mỗi ngày cày 40 ha. Khi thực hiện mỗi ngày cày được 52 ha, vì vậy  đội không những cày xong trước thời hạn 2 ngày mà còn cày  thêm được 4 ha nữa. Tính diện tích thửa ruộng mà đội phải cày theo kế hoạch.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi diện tích mà đội phải cày theo kế hoạch là x, (ha), (  x> 0).
 
 Thời gian đội dự định cày là: $\frac{x}{40}$ (giờ).
@@ -57,7 +57,7 @@ Vậy diện tích mà đội dự định cày theo kế hoạch là: 360 ha.
 
 Hai người thợ cùng làm một công việc trong 16 giờ thì xong. Nếu người thứ nhất làm trong 3 giờ, người thợ thứ hai làm trong 6 giờ thì học làm được 25% khối lượng công việc. Hỏi mỗi người thợ làm  một mình  công việc đó trong bao lâu.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi thời gian để Người thứ nhất làm  một mình xong công việc là x, (giờ), x > 16.
 
 Gọi thời gian để Người thứ hai làm  một mình xong công việc là y, (giờ), y > 16.
@@ -88,7 +88,7 @@ Thời gian để người thứ hai làm  một mình xong công việc là: 4
 
 Hai tổ công nhân làm chung trong 12 giờ sẽ hoàn thành một công việc đã định. Họ làm chung với nhau trong 4 giờ thì tổ thứ nhất được điều đi làm công việc khác, tổ thứ hai làm một mình phần công việc còn lại trong 10 giờ. Hỏi tổ thứ hai nếu làm một mình thì sau  bao lâu sẽ hoàn thành công việc.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi thời gian tổ hai làm một nmình hoàn thành công việc là x, (giờ), x> 12.
 
 Trong 1 giờ tổ hai làm được khối lượng công việc: $\frac{1}{x}$ (KLCV).
@@ -105,7 +105,7 @@ Giải PTBN ta được x= 15.    Vậy thời gian tổ hai làm  một mì
 
 Một đội công nhân hoàn thành một công việc với mức 420 ngày công. Hãy tính số công nhân của đội,  biết rằng nếu đội tăng thêm 5 người thì số ngày để hoàn thành công việc sẽ giảm đi 7 ngày.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi số công nhân của đội là x, (người), x> 0, (nguyên dương).
 
 Số ngày hoàn thành công việc với x người là: $\frac{420}{x}$ (ngày).
@@ -126,7 +126,7 @@ Vậy số công nhân của đội là 15 người.
 
 Hai đội xây dựng  cùng làm chung một công việc và dự đinh  xong trong 12 ngày. Họ cùng làm chung với nhau được 8 ngày thì đội  1  được điều động đi làm công việc khác, đội 2 tiếp tục làm. Do  cải tiến kỹ thuật,  năng suất tăng gấp đôi nên đội 2 đẵ làm xong phần việc còn lại trong 3,5 ngày. Hỏi mỗi đội làm một mình thì sau bao  nhiêu ngày sẽ  làm xong công việc nói trên (với năng suất bình thường).
 
-**Lời Giải:
+**Lời Giải:**
 Gọi thời gian để  đội I làm  một mình xong công việc là x, (ngày), x > 12.
 
 Gọi thời gian để đội II làm  một mình xong công việc là y, (ngày), y > 12.
@@ -161,7 +161,7 @@ Thời gian để  đội II làm  một mình xong công việc là: 21 (ngà
 
 Hải và Sơn  cùng làm một công việc trong 7 giờ 20 phút thì xong. Nếu Hải làm trong 5 giờ và  Sơn làm  trong 6 giờ thì cả hai làm được $\frac{3}{4}$  khối lượng công việc. Hỏi mỗi người làm  công  việc đó  trong mấy giờ thì  xong.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi thời gian Hải làm một mình xong công việc là x (giờ), x > $\frac{22}{3}.$
 
 Gọi thời gian Sơn làm một mình xong công việc là y (giờ), y > $\frac{22}{3}.$
@@ -192,7 +192,7 @@ Vậy Hải làm công việc đó một mình trong:   44/3  giờ , Sơn l�
 
 Hai vòi nước chảy chung vào một bể thì sau 4$\frac{4}{5}$ giờ đầy bể. Mỗi giờ lượng nước của vòi I chảy được bằng 1$\frac{1}{2}$ lượng nước chảy được  của vòi II. Hỏi  mỗi vòi chảy riêng thì trong bao  lâu đầy bể.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi thời gian để vòi I chảy  một mình đầy bể là x, (giờ), x > $\frac{24}{5}.$
 
 Gọi thời gian để vòi II chảy  một mình đầy bể là y, (giờ), y > $\frac{24}{5}.$
@@ -215,7 +215,7 @@ Vậy vòi I chảy  một mình đầy bể trong 8 giờ, Vòi II chảy mộ
 
 Một Máy bơm  muốn bơm đầy nước vào một bể chứa trong một  thời gian quy định thì mỗi giờ phải bơm  được 10m3. Sau khi bơm được $\frac{1}{3}$ dung tích bể chứa, người công nhân  vận hành cho máy bơm công xuất lớn hơn mỗi giờ bơm được 15 m3. Do đó bể được bơm đầy trước 48 phút so  với  thời  gian quy định. Tính dung tích của bể chứa.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi dung tích của bể chứa là x, (m3), x > 0.
 
 Ta có thời gian dự định để bơ   m  đầy bể là: $\frac{x}{10}$  (giờ).
@@ -230,7 +230,7 @@ Do công suất tăng khi bơm  $\frac{2}{3}$ bể  còn lại nên thời gia
 
 Hai vòi  nước cùng chảy vào một bể sau 1 giờ 20 phút thì đầy bể. Nếu mở vòi thứ nhất chảy trong 10 phút và vòi thứ  hai chảy trong 12 phút thì đầy  $\frac{2}{15}$  bể. Hỏi nếu mỗi vòi chảy một mình thì bao lâu mới đầy bể.
 
-**Lời Giải:
+**Lời Giải:**
 Gọi thời gian để Vòi thứ nhất chảy  một mình đầy bể là x, (phút), x > 80.
 
 Gọi thời gian để Vòi thứ hai chảy  một mình đầy bể là y, (phút), y > 80.

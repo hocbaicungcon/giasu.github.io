@@ -346,7 +346,7 @@ Số ngày sử dụng:  (ngày).
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_](/assets/docs/61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_.docx)
+- [61.-Bai-8-Che-bien-dau-mo-Do-Khac-Hung.ok_](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

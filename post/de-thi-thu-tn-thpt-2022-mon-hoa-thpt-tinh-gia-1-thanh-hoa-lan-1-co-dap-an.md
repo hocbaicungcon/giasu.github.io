@@ -275,7 +275,7 @@ A. 4.         B. 2.         C. 5.         D. 3.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Tĩnh Gia 1 – Thanh Hóa (Lần 1)](/assets/docs/Tinh-Gia-1-–-Thanh-Hoa-Lan-1.docx)
+- [Tĩnh Gia 1 – Thanh Hóa (Lần 1)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -39,7 +39,7 @@ Xét các phát biểu sau:
 
  Trong các phát biểu trên, số phát biểu đúng là
 
-******◯*** *A.**5.** ****◯*** *B.**3.** ****◯*** *C.**4** ****◯*** *D.**2.
+**A.** 5. **B.** 3. **C.** 4 **D.**2.
 
  (1) Đúng, anilin tạo vẩn đục trong dung dịch NaOH (do không tan), ancol etylic trong suốt
 

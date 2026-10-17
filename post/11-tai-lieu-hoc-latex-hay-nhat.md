@@ -16,11 +16,11 @@ tags:
 
 1. Cuốn sách kinh điển nhất là SOẠN TÀI LIỆU KHOA HỌC với LATEX của Gary L. Gray được dịch sang tiếng Việt bởi Nguyễn Phi Hùng.
 
-- [gary-l-gray-a-course-of-latex](/assets/docs/gary-l-gray-a-course-of-latex.pdf)
+- [gary-l-gray-a-course-of-latex](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 2. Một tài liệu ngắn gọn giới thiệu về LATEX 2ε của Tobias Oetiker, Hubert Partl, Irene Hyna và Elisabeth Schlegl dịch bởi Nguyễn Tân Khoa
 
-- [lshort-vi](/assets/docs/lshort-vi.pdf)
+- [lshort-vi](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 3. LaTeX sắp chữ – Vẽ hình và Đại số máy tính của TS Nguyễn Thái Sơn
 

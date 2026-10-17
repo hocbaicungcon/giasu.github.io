@@ -19,7 +19,7 @@ grade: 11
 | --- | --- |
 |                                                                                                                  Mã đề thi: 112 Họ và tên thí sinh:…………………………………………………………… Số báo danh: ……………………….. |  |
 
-**PHẦN I (6,0 điểm): Câu trắc nghiệm nhiều phương án lựa chọn.
+**PHẦN I (6,0 điểm): Câu trắc nghiệm nhiều phương án lựa chọn.**
      Thí sinh trả lời từ câu 1 đến câu 15.Mỗi câu hỏi thí sinh chỉ chọn một phương án.
 
 **Câu 1:** Hợp chất hữu cơ X chứa C, H và O. Phân tích X thu được phần trăm khối lượng của C và O lần lượt là 54,54% và 36,37%. Phổ khối lượng của X như sau:
@@ -50,7 +50,7 @@ Nhiệt tạo thành chuẩn của NO(g) là – 90,3 kJ/mol.  
 
         Các khẳng định đúng là:
 
-   **A.** (b); (c); (e)                   **B.** (a); (c); (e)                    **C.** (a); (b); (d)                   **D.** (a); (b); (d); (e)
+   **A.** (b); (c); (e)                   B.** (a); (c); (e)                    **C.** (a); (b); (d)                   D.** (a); (b); (d); (e)
 
 **Câu 3:** Cho các phát biểu sau:
 
@@ -66,13 +66,13 @@ Nhiệt tạo thành chuẩn của NO(g) là – 90,3 kJ/mol.  
 
         Số phát biểu đúng là:
 
-   **A.** 2.                                  **B.** 5.                                  **C.** 3.                                  **D.** 4.
+   **A.** 2.                                  B.** 5.                                  **C.** 3.                                  D.** 4.
 
 **Câu 4:** Để xác định hàm lượng FeCO3 trong quặng siderite, người ta làm như sau:
 
 Cân 0,6 gam mẫu quặng, chế hóa nó theo một quy trình hợp lí, thu được FeSO4 trong môi trường H2SO4 loãng. Chuẩn độ dung dịch thu được bằng dung dịch chuẩn KMnO4 0,025M thì dùng vừa hết 25,2ml. % theo khối lượng của FeCO3 là
 
-   **A.** 24,26%.                        **B.** 60,9%                           **C.** 12,18%.                       **D.** 30,45%.
+   **A.** 24,26%.                        B.** 60,9%                           **C.** 12,18%.                       D.** 30,45%.
 
 **Câu 5:** Xét các chất sau:
 
@@ -100,7 +100,7 @@ Cân 0,6 gam mẫu quặng, chế hóa nó theo một quy trình hợp lí, thu 
 
 Trong các nhận định này, số nhận định đúng là:
 
-   **A.** 2                                   **B.** 1                                   **C.** 4                                   **D.** 3
+   **A.** 2                                   B.** 1                                   **C.** 4                                   D.** 3
 
 **Câu 7:** Ester là hợp chất hữu cơ dễ bay hơi, một số ester được sử dụng làm chất tạo mùi thơm cho các loại bánh, thực phẩm. Phản ứng điều chế ester là một phản ứng thuận nghịch:
 
@@ -121,15 +121,15 @@ CH3COOH(*l*) + C2H5OH(* l*)CH3COOC2H5(* l*) + H2O(* l*)
 
 **Câu 8:** Nhỏ từ từ dung dịch HCl vào dung dịch NaOH thu được dung dịch X. Đồ thị nào sau đây mô tả đúng về sự phụ thuộc của pH dung dịch X vào thể tích dung dịch HCl
 
-   **A. B.
-   **C. D.
+   **A. B.**
+   **C. D.**
 **Câu 9:** Trong công nghiệp, hydrogen được sản xuất từ phản ứng:
 
                  CH4(g) + H2O(g) 3H2(g) + CO(g)
 
 Ở 760oC, tất cả các chất đều ở thể khí và nồng độ mol của CH4, H2O, H2 và CO ở trạng thái cân bằng lần lượt là 0,126M; 0,242M; 1,150M và 0,126M. Giả sử ban đầu chỉ có CH4 và H2O có nồng độ bằng nhau và bằng x M. Xác định x? Biết nồng độ của H2 ở trạng thái cân bằng là 0,6 M.
 
-   **A.** 0,206                            **B.** 0,116                            **C.** 0,212                            **D.** 0,283
+   **A.** 0,206                            B.** 0,116                            **C.** 0,212                            D.** 0,283
 
 **Câu 10:** Sulfur dioxide là một trong các tác nhân gây mưa acid, phát thải chủ yếu từ các quá trình đốt cháy nhiên liệu như than đá, xăng, dầu …
 
@@ -137,7 +137,7 @@ Một nhà máy nhiệt điện than sử dụng hết 6000 tấn than đá/ngà
 
 Tính thể tích nước mưa (m3) bị nhiễm acid trong 1 ngày? Giả thiết nồng độ sulfuric acid trong nước mưa là 1.10-5 M.
 
-   **A.** 1,764.109                     **B.** 1,5.106                          **C.** 37,185.104                   **D.** 1,5.105
+   **A.** 1,764.109                     B.** 1,5.106                          **C.** 37,185.104                   D.** 1,5.105
 
 **Câu 11:** Vitamin A (retinol) rất cần thiết đối với sức khỏe con người: tăng miễn dịch, tăng sức đề kháng và tăng cường chức năng thị giác. Vitamin A là chất không tan trong nước, hòa tan tốt trong chất béo. Công thức của vitamin A như sau:
 
@@ -157,11 +157,11 @@ Tính thể tích nước mưa (m3) bị nhiễm acid trong 1 ngày? Giả thi�
 
      Số phát biểu không đúng là:
 
-   **A.** 3.                                  **B.** 2.                                  **C.** 4.                                  **D.** 5.
+   **A.** 3.                                  B.** 2.                                  **C.** 4.                                  D.** 5.
 
 **Câu 12:** Monochlorine hoá propane (có chiếu sáng, ở 25oC), thu được 45% 1-chloropropane và 55% 2-chloropropane; còn monobromine hoá propane (có chiếu sáng và đun nóng đến 127oC) thu được 4% 1-bromopropane và 96% 2-bromopropane. Dựa trên các kết quả thực nghiệm này, ta thấy khi tính oxi hóa của Cl2 và Br2 khác nhau thì khả năng chọn lọc vị trí thế của các halogen khác nhau. Khả năng phản ứng thế monochlorine của H liên kết với carbon bậc II gấp k lần khả năng thế của H liên kết với carbon bậc I. Giá trị của k gần nhất là:
 
-   **A.** 3,7                                **B.** 1,2                                **C.** 3,3                                **D.** 1,5
+   **A.** 3,7                                B.** 1,2                                **C.** 3,3                                D.** 1,5
 
 **Câu 13:** Nhận xét nào sau đây không đúng?
 
@@ -177,9 +177,9 @@ Tính thể tích nước mưa (m3) bị nhiễm acid trong 1 ngày? Giả thi�
 
 Hằng số cân bằng KC của phản ứng được biểu diễn bằng biểu thức nào sau đây?
 
-   **A.**.                                            **B.**.
+   **A.** .                                            B.**.**
 
-   **C.**.                                            **D.**.
+   **C.** .                                            D.**.**
 
 **Câu 15:** Cho các phát biểu sau:
 
@@ -197,9 +197,9 @@ Hằng số cân bằng KC của phản ứng được biểu diễn bằng bi�
 
 Có bao nhiêu phát biểu đúng?
 
-   **A.** 4.                                  **B.** 2.                                  **C.** 3.                                  **D.** 5.
+   **A.** 4.                                  B.** 2.                                  **C.** 3.                                  D.** 5.
 
-**PHẦN II (4,0 điểm): Câu trắc nghiệm đúng sai.
+**PHẦN II (4,0 điểm): Câu trắc nghiệm đúng sai.**
 Thí sinh trả lời từ câu 1 đến câu 4.Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.
 
 **Câu 1.** Cho sơ đồ phản ứng sau:
@@ -228,10 +228,10 @@ Biết các sản phẩm hữu cơ thu được đều là sản phẩm chính.
 
 **d.** Phenolphthalein chuyển sang màu hồng, chứng tỏ dung dịch thu được có tính acid.
 
-**Câu 3.  Thực hiện thí nghiệm chưng cất ethanol từ dung dịch ethanol – nước
-***Chuẩn bị:*** Rượu (được nấu thủ công); bình cầu có nhánh 250 mL, nhiệt kế, ống sinh hàn nước, ống nối, ống đong 50 mL, bình tam giác 100 mL, đá bọt, nguồn nhiệt (bếp điện, đèn cồn).
+**Câu 3.  Thực hiện thí nghiệm chưng cất ethanol từ dung dịch ethanol – nước**
+**Chuẩn bị:** Rượu (được nấu thủ công); bình cầu có nhánh 250 mL, nhiệt kế, ống sinh hàn nước, ống nối, ống đong 50 mL, bình tam giác 100 mL, đá bọt, nguồn nhiệt (bếp điện, đèn cồn).
 
-***Tiến hành:
+**Tiến hành:**
 – Cho 60 mL rượu được nấu thủ công vào bình cầu có nhánh (chú ý chất lỏng trong bình không vượt quá 2/3 thể tích bình), thêm vài viên đá bọt.
 
 – Lắp dụng cụ như hình dưới.
@@ -256,10 +256,10 @@ Biết các sản phẩm hữu cơ thu được đều là sản phẩm chính.
 
 **d.** Dung dịch đó được điều chế từ hai muối Na2SO4 và Mg(NO3)2.
 
-**PHẦN III (10,0 điểm): Câu hỏi tự luận.
+**PHẦN III (10,0 điểm): Câu hỏi tự luận.**
 Thí sinh trình bày phần trả lời từ câu 1 đến câu 5 ra tờ giấy thi.
 
-**Câu 1 (2,0 điểm):
+**Câu 1 (2,0 điểm):**
 **a.** Muối epsome (MgSO4.nH2O) có nhiều lợi ích cho sức khỏe, thường được dùng để pha chế thuốc nhuận tràng, chất làm vườn như một loại phân bón cho cây, hay dung dịch khử khuẩn.
 
 Khi làm lạnh 110g dung dịch MgSO4 27,27% thấy có 12,3g muối epsome tách ra, phần dung dịch bão hòa có nồng độ 24,56%. Biết độ tan của MgSO4 tại 80°C và 20°C lần lượt là 54,8 và 35,1. Tính số gam epsome được tách ra khi làm lạnh 1857,6g dung dịch bão hòa MgSO4 từ 80°C xuống 20°C?
@@ -276,7 +276,7 @@ Khi làm lạnh 110g dung dịch MgSO4 27,27% thấy có 12,3g muối epsome tá
 
 Nếu tăng áp suất và giữ nguyên nhiệt độ, các cân bằng trên chuyển dịch theo chiều nào? Giải thích?
 
-**Câu 2  (2,0 điểm) :
+**Câu 2  (2,0 điểm) :**
 **a.** Đốt cháy hoàn toàn m gam hỗn hợp X gồm ba alcohol (đơn chức, thuộc cùng dãy đồng đẳng), thu được 9,916 lít khí CO­2­ (đkc) và 11,7 gam H­2­O. Mặt khác, nếu đun nóng m gam X với H2SO­4­ đặc thì tổng khối lượng ete tối đa thu được là bao nhiêu?
 
 **b.** Viết công thức cấu tạo của các hợp chất hữu cơ ứng với danh pháp thay thế sau:     
@@ -289,15 +289,15 @@ trans-3-methylpent-2-ene
 
 3-methylbutan-1-ol
 
-**Câu 3  (2,0 điểm) :
+**Câu 3  (2,0 điểm) :**
 **a.** Hoà tan hoàn toàn 12,42 gam Al bằng dung dịch HNO3 loãng (dư), thu được dung dịch X và 1,4874 lít (đkc) hỗn hợp khí Y gồm hai khí là N2O và N2. Tỉ khối của hỗn hợp khí Y so với khí H2 là 18. Cô cạn dung dịch X, thu được m gam chất rắn khan. Tính giá trị của m?
 
-**b.
+**b.**
 – Viết phương trình điện li của các chất sau HCl, CH3COOH, (NH4)2SO4?
 
 – Giải thích vì sao dung dịch HCl dẫn điện tốt hơn dung dịch CH3COOH có cùng nồng độ?
 
-**Câu 4:** a.**Hợp chất X hiện nay được sử dụng phổ biến trong công nghiệp làm lạnh để thay thế CFC do X không gây hại đến tầng ozone. Biết thành phần của X chứa 23,08% C, 3,84% H và 73,08% F về khối lượng và có phân tử khối là 52. Xác định công thức phân tử của X?
+**Câu 4:** a.**Hợp chất X hiện nay được sử dụng phổ biến trong công nghiệp làm lạnh để thay thế CFC do X không gây hại đến tầng ozone. Biết thành phần của X chứa 23,08% C, 3,84% H và 73,08% F về khối lượng và có phân tử khối là 52. Xác định công thức phân tử của X?**
 
 **b.** Cho các phản ứng (theo đúng hệ số tỉ lệ):
 
@@ -307,7 +307,7 @@ trans-3-methylpent-2-ene
 
 Từ X1 đến X4 là các hydrocarbon không no, mạch hở. Xác định công thức cấu tạo của X1 đến X4? Viết phương trình hoá học các phản ứng xảy ra?
 
-**Câu 5  (2,0 điểm) :
+**Câu 5  (2,0 điểm) :**
 | a. Trong vỏ quả cây vanilla có hợp chất mùi thơm dễ chịu, tên thường là vanillin. Công thức cấu tạo của vanillin như hình bên. – Viết công thức phân tử của vanillin? – Dự đoán khả năng tan trong nước, trong ethanol và trong dung dịch kiềm như NaOH, KOH của vanillin? – Mẫu vanillin đủ tiêu chuẩn dùng trong công nghiệp sản xuất dược phẩm và thực phẩm cần có trên 99% về khối lượng là vanillin. Để định lượng một mẫu vanillin, người ta làm như sau: Hòa tan 0,120 gam mẫu trong 20 ml ethanol 96% và thêm 60 ml nước cất, thu được dung dịch X. Biết X phản ứng vừa đủ với 7,82 ml dung dịch NaOH nồng độ 0,1 M và tạp chất trong mẫu không phản ứng với NaOH. Mẫu vanillin trên có đủ tiêu chuẩn dùng trong công nghiệp sản xuất dược phẩm và thực phẩm không? |  |
 | --- | --- |
 
@@ -325,11 +325,11 @@ Giả sử rằng: Xăng chỉ chứa octane (C8H18); LPG chỉ gồm propane (C
 
 Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có thể sử dụng LPG làm nhiên liệu thay thế cho ô tô này, quãng đường ô tô đi được với 1 lít LPG bằng bao nhiêu km? Coi hiệu suất động cơ của ô tô là như nhau đối với cả xăng và LPG.
 
-**——- Hết ———
+**——- Hết ———**
 | SỞ GIÁO DỤC VÀ ĐÀO TẠO THÁI BÌNH | HƯỚNG DẪN CHẤM KỲ THI CHỌN HỌC SINH GIỎI LỚP 10, 11 THPT NĂM HỌC 2023-2024 |
 | --- | --- |
 
-**A . HƯỚNG DẪN CHẤM PHẦN TR ẮC NGHIỆM
+**A . HƯỚNG DẪN CHẤM PHẦN TR ẮC NGHIỆM**
 | HOA11 | 112 | 1 | C |
 | --- | --- | --- | --- |
 | HOA11 | 112 | 2 | B |
@@ -347,9 +347,9 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 | HOA11 | 112 | 14 | A |
 | HOA11 | 112 | 15 | A |
 
-**B . HƯỚNG DẪN CHẤM PHẦN TỰ LUẬN
-**Môn: HÓA HỌC 11
-**Câu 1.
+**B . HƯỚNG DẪN CHẤM PHẦN TỰ LUẬN**
+**Môn: HÓA HỌC 11**
+**Câu 1.**
 | NỘI DUNG | ĐIỂM |
 | --- | --- |
 |  a. mMgSO4 = 110.27,27% = 30 gam | 0,25 |
@@ -361,7 +361,7 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 | (3) PTHH:  Tổng số mol khí chất phản ứng = 1, mol khí chất sản phẩm =2. Khi tăng áp suất chung của hệ, thì cân bằng chuyển dịch theo chiểu làm giảm áp suất, tức là chiều giảm số mol khí → chiều nghịch. | 0,25 |
 | (4) PTHH:  Tổng số mol khí chất phản ứng = 2, mol khí chất sản phẩm =2. Số mol khí ở hai vế của phương trình bằng nhau thì trạng thái cân bằng không bị thay đổi khi thay đổi áp suất chung của hệ. | 0,25 |
 
-**Câu 2.
+**Câu 2.**
 | NỘI DUNG | ĐIỂM |
 | --- | --- |
 | a. Vì số mol H2O > số mol CO2 => alcohol là no, đơn chức, mạch hở | 0,25 |
@@ -373,7 +373,7 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 |   | 0,25 |
 |  | 0,25 |
 
-**Câu 3.
+**Câu 3.**
 | Nội dung | Điểm |
 | --- | --- |
 | a.   | 0,25 |
@@ -384,7 +384,7 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 |        (NH4)2SO4  | 0,25 |
 |      Trong dung dịch, các phân tử HCl phân li hoàn toàn thành các ion, còn CH3COOH chỉ phân li một phần nên dung dịch HCl dẫn điện tốt hơn dung dịch CH3COOH có cùng nồng độ | 0,25 |
 
-**Câu 4.
+**Câu 4.**
 | NỘI DUNG | ĐIỂM |
 | --- | --- |
 | a.  Đặt công thức phân tử của X là CxHyFz. Ta có: x : y : z = |   0,5 |
@@ -395,7 +395,7 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 | (3) Sản phẩm có 2C và là aldehyde => (X3) là alkyne có 2C, là CH≡CH      CH≡CH + H2O   CH3−CH=O | 0,25 |
 | (4) X4 + 1H2 → but-2-ene => (X4) là alkyne CH3−C≡C−CH3 CH3−C≡C−CH3 + H2 CH3−CH=CH−CH3 | 0,25 |
 
-**Câu 5.
+**Câu 5.**
 | NỘI DUNG | ĐIỂM |
 | --- | --- |
 | Công thức phân tử của vanillin: C8H8O3. |  0,25 |
@@ -409,7 +409,7 @@ Một chiếc xe có mức tiêu thụ xăng là 13,0 lít/100 km. Nếu có th�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG_HOA11_THAIBINH_2023-2024](/assets/docs/HSG_HOA11_THAIBINH_2023-2024-giasu.ai.vn.docx)
+- [HSG_HOA11_THAIBINH_2023-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

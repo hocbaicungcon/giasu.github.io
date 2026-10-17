@@ -85,7 +85,7 @@ Trên lớp: 2 tiết
 
 Mời các thầy cô và các em tải bản **word** đầy đủ tại đây
 
-- [STEM 10-Bình điện phân tạo nước Giaven](/assets/docs/STEM-10-Binh-dien-phan-tao-nuoc-Giaven.docx)
+- [STEM 10-Bình điện phân tạo nước Giaven](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 
