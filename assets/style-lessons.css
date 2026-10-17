@@ -400,9 +400,27 @@ html[data-theme="dark"] .prose :not(pre) > code {
   display: block;
   width: fit-content;
   max-width: 100%;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   border-collapse: collapse;
   margin: 24px auto;
+  box-sizing: border-box;
+}
+
+.prose table::-webkit-scrollbar {
+  height: 5px;
+}
+.prose table::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+.prose table::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+html[data-theme="dark"] .prose table::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .prose td,
@@ -410,6 +428,15 @@ html[data-theme="dark"] .prose :not(pre) > code {
   border: 1px solid var(--line);
   padding: 8px 15px;
   text-align: left;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.prose tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.018);
+}
+html[data-theme="dark"] .prose tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .prose details {
