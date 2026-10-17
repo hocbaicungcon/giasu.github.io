@@ -82,6 +82,9 @@ export function normalizeMarkdownFormatting(text) {
   // Ensure standalone download link lines are formatted as bullet list items
   text = text.replace(/^([ \t]*)\[([^\]\r\n]+)\]\(((?:\/assets\/docs\/|https?:\/\/drive\.google\.com\/)[^)\r\n]+)\)[ \t]*$/gm, '$1- [$2]($3)');
 
+  // Remove erroneous spaces before punctuation immediately following inline math tokens
+  text = text.replace(/(@@PROTECTED_TOKEN_\d+@@)[ \t]+([.,;:?!])/g, '$1$2');
+
   // Restore protected tokens
   text = text.replace(/@@PROTECTED_TOKEN_(\d+)@@/g, (_, idx) => tokens[Number(idx)]);
   return text;
@@ -117,7 +120,7 @@ const mathMacros={'\\ge':'\\geqslant','\\le':'\\leqslant'};
 marked.use({extensions:[
  {name:'mathBlock',level:'block',start:s=>s.indexOf('$$'),tokenizer(s){const m=/^(?:[ \t]*\n)?\$\$\s*\n?([\s\S]+?)\$\$(?:\n|$)/.exec(s);if(m)return {type:'mathBlock',raw:m[0],text:m[1]};},renderer:t=>renderMath(t.text,{displayMode:true,throwOnError:true,macros:{...mathMacros}})},
  {name:'mathDisplayInline',level:'inline',start:s=>s.indexOf('$$'),tokenizer(s){const m=/^\$\$([\s\S]+?)\$\$/.exec(s);if(m)return {type:'mathDisplayInline',raw:m[0],text:m[1]};},renderer:t=>renderMath(t.text,{displayMode:true,throwOnError:true,macros:{...mathMacros}})},
- {name:'mathInline',level:'inline',start:s=>s.indexOf('$'),tokenizer(s){const m=/^\$(?!\$)((?:\\.|[^$\n])+?)\$/.exec(s);if(m)return {type:'mathInline',raw:m[0],text:m[1]};},renderer:t=>renderMath(t.text,{throwOnError:true,macros:{...mathMacros}})}
+ {name:'mathInline',level:'inline',start:s=>s.indexOf('$'),tokenizer(s){const m=/^\$(?!\$)((?:\\.|[^$\n])+?)\$(?!\$)([.,;:?!…)]*)/.exec(s);if(m)return {type:'mathInline',raw:m[0],text:m[1],punct:m[2]};},renderer(t){let html=renderMath(t.text,{throwOnError:true,macros:{...mathMacros}});if(t.punct){if(html.includes('class="katex-display')&&!t.punct.startsWith(')')){try{return renderMath(t.text+t.punct,{throwOnError:true,macros:{...mathMacros}});}catch{}}return `<span class="katex-punct">${html}${t.punct}</span>`;}return html;}}
 ]});
 marked.use({renderer:{code(token){
  if(token.lang==='geometry')return renderGeometry(token.text);
@@ -178,9 +181,18 @@ export function renderMathInHtml(html) {
       return match;
     }
   });
-  html = html.replace(/(?<!\$)\$(?!\$)((?:\\.|[^$\n])+?)\$(?!\$)/g, (match, tex) => {
+  html = html.replace(/(?<!\$)\$(?!\$)((?:\\.|[^$\n])+?)\$(?!\$)([.,;:?!…)]*)/g, (match, tex, punct) => {
     try {
-      return renderMath(tex, {throwOnError: true, macros: mathMacros});
+      let rendered = renderMath(tex, {throwOnError: true, macros: mathMacros});
+      if (punct) {
+        if (rendered.includes('class="katex-display') && !punct.startsWith(')')) {
+          try {
+            return renderMath(tex + punct, {throwOnError: true, macros: mathMacros});
+          } catch {}
+        }
+        return `<span class="katex-punct">${rendered}${punct}</span>`;
+      }
+      return rendered;
     } catch {
       return match;
     }
@@ -192,9 +204,24 @@ export function renderMathInHtml(html) {
 export function renderLessonMarkdown(source,inline=false){
  const blocks=[],formulae=[];
  let prepared=source.replace(/(?:```|~~~)[^\n]*\n[\s\S]*?\n(?:```|~~~)|`[^`\n]+`|<(svg|pre|code|script|style|textarea|math)\b[\s\S]*?<\/\1>/gi,block=>{blocks.push(block);return `@@MATH_BLOCK_${blocks.length-1}@@`;});
- prepared=prepared.replace(/(?<!\$)\$(?!\$)((?:\\.|[^$\n])+?)\$(?!\$)/g,(_,tex)=>{formulae.push(renderMath(tex,{throwOnError:true,macros:mathMacros}));return `GiasuInlineFormula${formulae.length-1}End`;});
+ prepared=prepared.replace(/(?<!\$)\$(?!\$)((?:\\.|[^$\n])+?)\$(?!\$)([.,;:?!…)]*)/g,(_,tex,punct)=>{
+   let html = renderMath(tex,{throwOnError:true,macros:mathMacros});
+   if (punct) {
+     if (html.includes('class="katex-display') && !punct.startsWith(')')) {
+       try {
+         html = renderMath(tex + punct, {throwOnError:true, macros:mathMacros});
+         punct = '';
+       } catch {}
+     }
+   }
+   formulae.push({ html, punct });
+   return `GiasuInlineFormula${formulae.length-1}End`;
+ });
  prepared=prepared.replace(/@@MATH_BLOCK_(\d+)@@/g,(_,i)=>blocks[Number(i)]);
- let html = (inline?marked.parseInline(prepared):marked.parse(prepared)).replace(/GiasuInlineFormula(\d+)End/g,(_,i)=>formulae[Number(i)]);
+ let html = (inline?marked.parseInline(prepared):marked.parse(prepared)).replace(/GiasuInlineFormula(\d+)End/g,(_,i)=>{
+   const f = formulae[Number(i)];
+   return f.punct ? `<span class="katex-punct">${f.html}${f.punct}</span>` : f.html;
+ });
  if (!inline) {
   html = html.replace(/(?:<div class="table-container">\s*)?<table>([\s\S]*?)<\/table>(?:\s*<\/div>)?/g, '<div class="table-container"><table>$1</table></div>');
  }

@@ -40,6 +40,8 @@ body .katex-display{max-width:100%;overflow:visible;white-space:normal}
 body .katex-display>.katex{display:block;max-width:100%;white-space:normal}
 body .katex .katex-html{white-space:normal;line-height:1.7}
 body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;vertical-align:baseline;box-sizing:border-box}
+.katex-punct{display:inline;white-space:nowrap}
+.katex-punct>.katex{white-space:normal}
 
 /* Keep wide lesson content inside its own viewport; tables remain locally scrollable. */
 @media(max-width:1000px){
@@ -61,7 +63,8 @@ body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;ve
  body .article-wrap{box-sizing:border-box;min-width:0;max-width:100%}
  body .prose .katex-display{max-width:100%;overflow-x:auto;overflow-y:hidden;contain:paint;padding-block:8px}
  body .prose .katex-display>.katex{display:block;max-width:none;overflow:visible}
- body .prose .katex:not(.katex-display>.katex){display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;contain:paint;vertical-align:middle;padding-block:3px}
+ body .prose .katex:not(.katex-display>.katex),
+ .katex-punct>.katex{display:inline-block;max-width:calc(100% - 1.2ch);overflow-x:auto;overflow-y:hidden;contain:paint;vertical-align:middle;padding-block:3px}
  body .prose table{contain:paint}
  body .prose :is(pre,.table-wrapper,.table-scroll){max-width:100%;overflow-x:auto;box-sizing:border-box}
  body .prose :is(.geometry-controls,.practice-cloze)>*{min-width:0;max-width:100%;box-sizing:border-box}

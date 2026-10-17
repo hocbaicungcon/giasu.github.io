@@ -272,3 +272,22 @@ test('bold across paragraphs and comparisons in callouts retain their formatting
  assert.match(p.html,/<strong>lớn hơn<\/strong>/);assert.match(p.html,/<strong>Vị trí điểm:<\/strong>/);assert.doesNotMatch(p.html,/\*\*/);
  const code=parsePost(source+'\n\n`$a < b$ **nguyên văn**`','literal-code.md');assert.match(code.html,/<code>\$a &lt; b\$ \*\*nguyên văn\*\*<\/code>/);
 });
+
+test('trailing punctuation after inline math does not wrap or orphan onto separate line',()=>{
+ const input = [
+   '1. $P(A) = \\frac{4}{52} = \\frac{1}{13}$, $P(B) = \\frac{4}{52} = \\frac{1}{13}$. $A$ và $B$ ($A \\cap B = \\emptyset$).',
+   '2. $P(A \\cup B) = P(A) + P(B) = \\frac{1}{13} + \\frac{1}{13} = \\frac{2}{13}$.',
+   '3. $P(\\overline{E}) = 1 - 0.25 = 0.75$.'
+ ].join('\n\n');
+ const post = parsePost(source + '\n\n' + input, 'math-punct-test.md');
+ // Formula with trailing comma wrapped in katex-punct
+ assert.match(post.html, /<span class="katex-punct">[\s\S]*?class="katex"[\s\S]*?,<\/span>/);
+ // Formula with trailing period wrapped in katex-punct
+ assert.match(post.html, /<span class="katex-punct">[\s\S]*?class="katex"[\s\S]*?\.<\/span>/);
+ // Formula with closing paren dot wrapped in katex-punct
+ assert.match(post.html, /<span class="katex-punct">[\s\S]*?class="katex"[\s\S]*?\)\.<\/span>/);
+ // Long formula promoted to display mode includes period inside equation and has no orphaned period after block
+ assert.match(post.html, /<annotation encoding="application\/x-tex">P\(A \\cup B\) = P\(A\) \+ P\(B\) = \\frac\{1\}\{13\} \+ \\frac\{1\}\{13\} = \\frac\{2\}\{13\}\.<\/annotation>/);
+ assert.doesNotMatch(post.html, /<\/span>\.<\/li>|<\/span>\.<\/p>/);
+});
+
