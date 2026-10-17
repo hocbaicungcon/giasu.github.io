@@ -210,19 +210,19 @@ Giả sử hàm số $y = f(x)$ có đạo hàm cấp một và cấp hai trên 
 ## Công cụ trực quan: Mô phỏng Đơn điệu & Cực trị Hàm số bậc ba
 
 Dưới đây là đồ thị hàm số bậc ba chuẩn mực $y = \frac{1}{3}x^3 - x^2 - 3x + 2$.
-Hãy kéo thanh trượt để di chuyển tiếp điểm $x$ trên đồ thị, quan sát tiếp tuyến (màu cam), dấu của đạo hàm $y' = x^2 - 2x - 3$ và vị trí hai điểm cực trị:
+Hãy kéo thanh trượt hoặc chạm/kéo trực tiếp điểm $M$ trên đồ thị để quan sát tiếp tuyến (màu cam), dấu của đạo hàm $y' = x^2 - 2x - 3$ và vị trí hai điểm cực trị:
 
 <div id="cubic-app" style="margin: 24px 0; padding: 22px; background: var(--card-bg, #ffffff); border: 1px solid var(--border-color, #e2e8f0); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center;">
 <h4 style="margin-top: 0; color: var(--primary-color, #2563eb);">MÔ PHỎNG ĐỒ THỊ BẬC BA: y = ⅓x³ - x² - 3x + 2</h4>
 <div style="max-width: 500px; margin: 0 auto 16px auto; background: #f8fafc; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;">
 <label style="font-weight: 600; color: #1e293b; display: block; margin-bottom: 8px;">
-Kéo thanh trượt điểm x: <span id="val-probe-x" style="font-size: 1.2em; color: #2563eb; font-weight: bold;">-1.00</span>
+Kéo thanh trượt hoặc kéo thả điểm M: <span id="val-probe-x" style="font-size: 1.2em; color: #2563eb; font-weight: bold;">-1.00</span>
 (Tọa độ điểm M: <span id="val-probe-coord" style="font-weight: bold; color: #ea580c;">(-1.00; 3.67)</span>)
 </label>
 <input type="range" id="range-probe-x" min="-3" max="5" step="0.05" value="-1.00" style="width: 100%;">
 </div>
 <div style="display: flex; justify-content: center; overflow-x: auto;">
-<svg id="cubic-svg" viewBox="0 0 520 340" width="100%" style="max-width: 520px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+<svg id="cubic-svg" data-interactive-done="true" viewBox="0 0 520 340" width="100%" style="max-width: 520px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1; user-select: none; touch-action: none; cursor: crosshair;">
 <!-- Coordinate Axes: Origin at (210, 160). Scale: 36px/unit in x, 12px/unit in y -->
 <line x1="30" y1="160" x2="490" y2="160" stroke="#64748b" stroke-width="1.5"/>
 <line x1="210" y1="325" x2="210" y2="15" stroke="#64748b" stroke-width="1.5"/>
@@ -247,10 +247,10 @@ Kéo thanh trượt điểm x: <span id="val-probe-x" style="font-size: 1.2em; c
 <text x="195" y="120" font-family="sans-serif" font-size="11" text-anchor="end" fill="#64748b">3.7</text>
 <line x1="207" y1="244" x2="213" y2="244" stroke="#94a3b8" stroke-width="1"/>
 <text x="195" y="248" font-family="sans-serif" font-size="11" text-anchor="end" fill="#64748b">-7</text>
-<!-- Pre-rendered smooth Cubic Curve -->
-<path id="curve-cubic" d="M 94.8 274.1 L 102 244 L 120 183.5 L 138 144 L 156 122.5 L 174 116 L 192 121.5 L 210 136 L 228 156.5 L 246 180 L 264 203.5 L 282 224 L 300 238.5 L 318 244 L 336 237.5 L 354 216 L 372 176.5 L 390 116 L 397.2 84.6" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- Smooth Mathematically Exact Cubic Curve -->
+<path id="curve-cubic" d="M 93.0 283.1 L 94.8 274.8 L 96.6 266.7 L 98.4 258.9 L 100.2 251.3 L 102.0 244.0 L 103.8 236.9 L 105.6 230.1 L 107.4 223.5 L 109.2 217.1 L 111.0 210.9 L 112.8 205.0 L 114.6 199.3 L 116.4 193.8 L 118.2 188.6 L 120.0 183.5 L 121.8 178.7 L 123.6 174.0 L 125.4 169.6 L 127.2 165.3 L 129.0 161.3 L 130.8 157.5 L 132.6 153.8 L 134.4 150.4 L 136.2 147.1 L 138.0 144.0 L 139.8 141.1 L 141.6 138.4 L 143.4 135.8 L 145.2 133.4 L 147.0 131.2 L 148.8 129.1 L 150.6 127.2 L 152.4 125.5 L 154.2 123.9 L 156.0 122.5 L 157.8 121.2 L 159.6 120.1 L 161.4 119.1 L 163.2 118.3 L 165.0 117.6 L 166.8 117.0 L 168.6 116.6 L 170.4 116.2 L 172.2 116.1 L 174.0 116.0 L 175.8 116.1 L 177.6 116.2 L 179.4 116.5 L 181.2 116.9 L 183.0 117.4 L 184.8 118.1 L 186.6 118.8 L 188.4 119.6 L 190.2 120.5 L 192.0 121.5 L 193.8 122.6 L 195.6 123.8 L 197.4 125.0 L 199.2 126.4 L 201.0 127.8 L 202.8 129.3 L 204.6 130.9 L 206.4 132.5 L 208.2 134.2 L 210.0 136.0 L 211.8 137.8 L 213.6 139.7 L 215.4 141.7 L 217.2 143.6 L 219.0 145.7 L 220.8 147.8 L 222.6 149.9 L 224.4 152.1 L 226.2 154.3 L 228.0 156.5 L 229.8 158.8 L 231.6 161.1 L 233.4 163.4 L 235.2 165.7 L 237.0 168.1 L 238.8 170.4 L 240.6 172.8 L 242.4 175.2 L 244.2 177.6 L 246.0 180.0 L 247.8 182.4 L 249.6 184.8 L 251.4 187.2 L 253.2 189.6 L 255.0 191.9 L 256.8 194.3 L 258.6 196.6 L 260.4 198.9 L 262.2 201.2 L 264.0 203.5 L 265.8 205.7 L 267.6 207.9 L 269.4 210.1 L 271.2 212.2 L 273.0 214.3 L 274.8 216.4 L 276.6 218.3 L 278.4 220.3 L 280.2 222.2 L 282.0 224.0 L 283.8 225.8 L 285.6 227.5 L 287.4 229.1 L 289.2 230.7 L 291.0 232.2 L 292.8 233.6 L 294.6 235.0 L 296.4 236.2 L 298.2 237.4 L 300.0 238.5 L 301.8 239.5 L 303.6 240.4 L 305.4 241.2 L 307.2 241.9 L 309.0 242.6 L 310.8 243.1 L 312.6 243.5 L 314.4 243.8 L 316.2 243.9 L 318.0 244.0 L 319.8 243.9 L 321.6 243.8 L 323.4 243.4 L 325.2 243.0 L 327.0 242.4 L 328.8 241.7 L 330.6 240.9 L 332.4 239.9 L 334.2 238.8 L 336.0 237.5 L 337.8 236.1 L 339.6 234.5 L 341.4 232.8 L 343.2 230.9 L 345.0 228.8 L 346.8 226.6 L 348.6 224.2 L 350.4 221.6 L 352.2 218.9 L 354.0 216.0 L 355.8 212.9 L 357.6 209.6 L 359.4 206.2 L 361.2 202.5 L 363.0 198.7 L 364.8 194.7 L 366.6 190.4 L 368.4 186.0 L 370.2 181.3 L 372.0 176.5 L 373.8 171.4 L 375.6 166.2 L 377.4 160.7 L 379.2 155.0 L 381.0 149.1 L 382.8 142.9 L 384.6 136.5 L 386.4 129.9 L 388.2 123.1 L 390.0 116.0 L 391.8 108.7 L 393.6 101.1 L 395.4 93.3 L 397.2 85.2 L 399.0 76.9" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="405" y="80" font-family="sans-serif" font-size="12" font-weight="bold" fill="#2563eb">y = f(x)</text>
-<!-- Extremum Projections and Points -->
+<!-- Extremum Projections and Points (Fixed Markers) -->
 <!-- Cực đại: x = -1, y = 3.67 (174, 116) -->
 <line x1="174" y1="160" x2="174" y2="116" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
 <line x1="210" y1="116" x2="174" y2="116" stroke="#10b981" stroke-width="1" stroke-dasharray="3,3"/>
@@ -261,13 +261,13 @@ Kéo thanh trượt điểm x: <span id="val-probe-x" style="font-size: 1.2em; c
 <line x1="210" y1="244" x2="318" y2="244" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,3"/>
 <circle cx="318" cy="244" r="5" fill="#f59e0b"/>
 <text x="325" y="260" font-family="sans-serif" font-size="11" font-weight="bold" fill="#b45309">CT (3; −7)</text>
-<!-- Dynamic Projections for Probe Point -->
+<!-- Dynamic Projections for Probe Point M -->
 <line id="probe-proj-x" x1="174" y1="160" x2="174" y2="116" stroke="#ea580c" stroke-width="1" stroke-dasharray="2,2"/>
 <line id="probe-proj-y" x1="210" y1="116" x2="174" y2="116" stroke="#ea580c" stroke-width="1" stroke-dasharray="2,2"/>
 <!-- Dynamic Tangent line -->
 <line id="probe-tangent" x1="120" y1="116" x2="228" y2="116" stroke="#ea580c" stroke-width="2.5"/>
-<!-- Probe Point -->
-<circle id="probe-pt" cx="174" cy="116" r="6" fill="#ea580c"/>
+<!-- Probe Point M (Draggable along curve) -->
+<circle id="probe-pt" cx="174" cy="116" r="7" fill="#ea580c" stroke="#ffffff" stroke-width="2" style="cursor: grab; touch-action: none;"/>
 </svg>
 </div>
 <div id="probe-status" style="margin-top: 14px; padding: 14px; background: #f1f5f9; border-radius: 8px; font-family: monospace; font-size: 1.05em; text-align: left; line-height: 1.8;">
@@ -289,8 +289,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const ptProbe = document.getElementById('probe-pt');
   const projX = document.getElementById('probe-proj-x');
   const projY = document.getElementById('probe-proj-y');
+  const svg = document.getElementById('cubic-svg');
 
-  if (!rX || !lineTan || !ptProbe) return;
+  if (!rX || !lineTan || !ptProbe || !svg) return;
 
   const originX = 210, originY = 160;
   const scaleX = 36, scaleY = 12;
@@ -349,6 +350,56 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   rX.addEventListener('input', update);
+
+  // Drag interaction exclusively for point M along the curve
+  let isDragging = false;
+  function getSvgX(e) {
+    const rect = svg.getBoundingClientRect();
+    const clientX = e.clientX !== undefined ? e.clientX : (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+    return (clientX - rect.left) * (520 / rect.width);
+  }
+
+  function onPointerDown(e) {
+    isDragging = true;
+    ptProbe.style.cursor = 'grabbing';
+    try { svg.setPointerCapture(e.pointerId); } catch {}
+    onPointerMove(e);
+  }
+
+  function onPointerMove(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+    const svgX = getSvgX(e);
+    let x = (svgX - originX) / scaleX;
+    if (x < -3) x = -3;
+    if (x > 5) x = 5;
+    rX.value = x.toFixed(2);
+    update();
+  }
+
+  function onPointerUp(e) {
+    if (isDragging) {
+      isDragging = false;
+      ptProbe.style.cursor = 'grab';
+      try { svg.releasePointerCapture(e.pointerId); } catch {}
+    }
+  }
+
+  svg.addEventListener('pointerdown', function(e) {
+    const svgX = getSvgX(e);
+    const curX = parseFloat(rX.value);
+    const curSx = originX + curX * scaleX;
+    const dist = Math.abs(svgX - curSx);
+    // Allow dragging when clicking near probe point M or anywhere on the graph
+    if (dist < 45 || e.target.id === 'probe-pt' || e.target.id === 'curve-cubic') {
+      onPointerDown(e);
+    }
+  });
+
+  svg.addEventListener('pointermove', onPointerMove);
+  svg.addEventListener('pointerup', onPointerUp);
+  svg.addEventListener('pointercancel', onPointerUp);
+
   update();
 });
 </script>

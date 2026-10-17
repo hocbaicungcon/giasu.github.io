@@ -21,10 +21,11 @@ html[data-theme="dark"] body :is(.prose,.exam-question,.exam-review,.lesson-solu
 /* A wide formula/table scrolls locally rather than enlarging the mobile page. */
 @media(max-width:1000px){
  body .article-wrap :is(.article-main,.article-body,.prose,.geometry-lab,.geometry-controls,.practice-card,.quiz){min-width:0;max-width:100%;box-sizing:border-box}
- body .prose table{display:block;width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden}
-
-
-
+ body .prose table{display:block;width:100%;max-width:100%;overflow-x:auto!important;overflow-y:hidden;-webkit-overflow-scrolling:touch}
+ body .prose table > :is(thead,tbody,tfoot){display:table;width:100%;min-width:max-content}
+ body .prose :is(table,th,td){overflow-wrap:normal!important;word-break:normal}
+ body .prose :is(th,td){min-width:85px;padding:7px 10px;box-sizing:border-box;font-size:0.875rem;line-height:1.45}
+ body .prose th{white-space:nowrap;background:var(--card-bg,#f8fafc)}
  body .prose :is(svg.lesson-diagram,.geometry-canvas){width:auto;max-width:100%}
  body .prose .geometry-canvas{width:100%}
 }
@@ -62,7 +63,7 @@ body .prose .katex:not(.katex-display>.katex){max-width:100%;overflow:visible;ve
  body .prose .katex-display>.katex{display:block;max-width:none;overflow:visible}
  body .prose .katex:not(.katex-display>.katex){display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;contain:paint;vertical-align:middle;padding-block:3px}
  body .prose table{contain:paint}
- body .prose :is(pre,.table-wrapper){max-width:100%;overflow-x:auto;box-sizing:border-box}
+ body .prose :is(pre,.table-wrapper,.table-scroll){max-width:100%;overflow-x:auto;box-sizing:border-box}
  body .prose :is(.geometry-controls,.practice-cloze)>*{min-width:0;max-width:100%;box-sizing:border-box}
 }
 /* Older hand-authored grids also need a single column on narrow phones. */

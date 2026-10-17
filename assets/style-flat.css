@@ -40,7 +40,7 @@ body .tag{border-radius:8px;box-shadow:none!important;padding:4px 10px;backgroun
 body .prose details{border:1.5px solid var(--line);border-radius:12px;padding:12px 18px;margin-block:20px;background:var(--card-bg,#fff);box-shadow:none!important}
 body .prose details summary{border-radius:8px}
 body .prose pre{border-radius:12px;box-shadow:none!important;border:1px solid var(--line)}
-body .prose table{border-radius:10px;overflow:hidden;border-collapse:separate;border-spacing:0;border:1.5px solid var(--line);box-shadow:none!important}
+body .prose table{border-radius:10px;overflow-x:auto;overflow-y:hidden;border-collapse:separate;border-spacing:0;border:1.5px solid var(--line);box-shadow:none!important}
 html[data-theme="dark"]{--paper:#172218;--ink:#e3ede1;--muted:#9db398;--line:#2c402e;--card-bg:#1e2d1f;--bg-secondary:#263828;--teal:#4ade80}
 html[data-theme="dark"] body,html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] main.lesson-course.article-wrap{background:#172218;color:#dce7da}
 html[data-theme="dark"] :is(.lesson-course .article-heading h1,.lesson-course .article-heading>p,.lesson-course .prose h2,.lesson-course .prose h3,.lesson-course .prose h4){color:inherit}
