@@ -138,7 +138,7 @@ document.querySelectorAll('[data-geometry="angle-bisector"]').forEach(lab=>{
  const render=()=>{
   const theta=+xoyInput.value,dist=+mInput.value;
   valXoy.textContent=theta+'°';valM.textContent=dist;
-  const half=theta/2,O=[140,240],lenRay=280,radX=0,X=[O[0]+lenRay*Math.cos(radX),O[1]-lenRay*Math.sin(radX)];
+  const half=theta/2,O=[230,240],lenRay=210,radX=0,X=[O[0]+lenRay*Math.cos(radX),O[1]-lenRay*Math.sin(radX)];
   const radY=theta*Math.PI/180,Y=[O[0]+lenRay*Math.cos(radY),O[1]-lenRay*Math.sin(radY)];
   const radT=half*Math.PI/180,T=[O[0]+(lenRay+30)*Math.cos(radT),O[1]-(lenRay+30)*Math.sin(radT)];
   const M=[O[0]+dist*Math.cos(radT),O[1]-dist*Math.sin(radT)],H1=[M[0],O[1]],dH=dist*Math.sin(radT),H2=[M[0]-dH*Math.sin(radY),M[1]-dH*Math.cos(radY)];
