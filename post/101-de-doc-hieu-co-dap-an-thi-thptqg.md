@@ -14,7 +14,7 @@ grade: 12
 
 ## Đề đọc hiểu có đáp án số 1
 
-***Đọc đoạn trích sau đây và trả lời các câu hỏi từ Câu 1 đến Câu 4:
+**Đọc đoạn trích sau đây và trả lời các câu hỏi từ Câu 1 đến Câu 4:**
 … (1) Cái thú tự học cũng giống cái thú đi chơi bộ ấy. Tự học cũng là một cuộc du lịch, du lịch bằng trí óc, một cuộc du lịch say mê gấp trăm lần du lịch bằng chân, vì nó là du lịch trong không gian lẫn thời gian. Những sự hiểu biết của loài người là một thế giới mênh mông. Kể làmsao hết được những vật hữu hình và vô hình mà ta sẽ thấy trong cuộc du lịch bằng sách vở ?
 
 1. Ta cũng được tự do, muốn đi đâu thì đi, ngừng đâu thì ngừng. Bạn thích cái xã hội ở thời Đường bên Trung Quốc thì đã có những thi nhân đại tài tả viên ―Dạ minh châu‖ của Đường Minh Hoàng, khúc ―Nghê thường vũ y‖ của Dương Quý Phi cho bạn biết. Tôi thích nghiên cứu đời con kiến, con sâu – mỗi vật là cả một thế giới huyền bí đấy, bạn ạ
@@ -184,26 +184,26 @@ PHẦN ĐỌC HIỂU (3,0 điểm)
 *Vẫn tiếng làng tiếng nước của riêng ta Tiếng chẳng mất khi Loa Thành đã mất Nàng Mị Châu quỳ xuống lạy cha già.
 *Tiếng thao thức lòng trai ôm ngọc sáng Dưới cát vùi sóng dập chẳng hề nguôi Tiếng tủi cực kẻ ăn cầu ngủ quán
 *Thành Nguyễn Du vằng vặc nỗi thương đời.
-(Trích *Tiếng Việt***– Lưu Quang Vũ, *Thơ Việt Nam* 1945 – 1985, NXB Giáo dục, 1985, tr.218)
+(Trích *Tiếng Việt**– Lưu Quang Vũ, *Thơ Việt Nam* 1945 – 1985, NXB Giáo dục, 1985, tr.218)
 
-**Câu 1**. Sự mượt mà và tinh tế của tiếng Việt được thể hiện ở những từ ngữ nào trong khổ thơ thứ nhất?
+**Câu 1:** . Sự mượt mà và tinh tế của tiếng Việt được thể hiện ở những từ ngữ nào trong khổ thơ thứ nhất?
 
-**Câu 2**. Kể tên hai biện pháp tu từ được sử dụng trong khổ thơ thứ hai và thứ ba.
+**Câu 2:** . Kể tên hai biện pháp tu từ được sử dụng trong khổ thơ thứ hai và thứ ba.
 
-**Câu 3**. Nêu nội dung chính của đoạn trích.
+**Câu 3:** . Nêu nội dung chính của đoạn trích.
 
-**Câu 4**. Từ đoạn trích, anh/ chị hãy bày tỏ cảm nghĩ của mình về tiếng Việt. (Trình bày khoảng 7 đến 10 dòng)
+**Câu 4:** . Từ đoạn trích, anh/ chị hãy bày tỏ cảm nghĩ của mình về tiếng Việt. (Trình bày khoảng 7 đến 10 dòng)
 Đọc đoạn trích sau và thực hiện các yêu cầu từ câu 5 đến câu 8:
 *“Cuộc sống riêng không biết gì hết ở bên kia ngưỡng cửa nhà mình là một cuộc sống nghèo nàn, dù nó có đầy đủ tiện nghi đến đâu đi nữa. Nó giống như một mảnh vườn được chăm sóc cẩn thận, đầy hoa thơm, sạch sẽ và gọn gàng. Mảnh vườn này có thể làm chủ nhân của nó êm ấm một thời gian dài, nhất là khi lớp rào bao quanh không còn làm họ vướng mắt nữa. Nhưng hễ có một cơn dông tố nổi lên là cây cối sẽ bị bật khỏi đất, hoa sẽ nát và mảnh vườn sẽ xấu xí hơn bất kì một nơi hoang dại nào. Con người không thể hạnh phúc với một hạnh phúc mong manh như thế. Con người cần một đại dương mênh mông bị bão táp làm nổi sóng nhưng rồi lại phẳng lì và trong sáng như trước. Số phận cảu những cái tuyệt đối cá nhân không bộc lộ ra khỏi bản thân, chẳng có gì đáng thèm muốn.”
 (Theo A. L. Ghéc-xen, *Ngữ văn 11*, Tập hai, NXB Giáo dục Việt Nam, 2015, tr.31)
 
 **Câu 5.** Xác định phương thức biểu đạt chính được sử dụng trong đoạn trích.
 
-**Câu 6**. Vẻ bề ngoài đẹp đẽ của *“cuộc sống riêng không biết gì hết ở bên kia ngưỡng cửa nhà mình”* được thể hiện rõ nhất qua hình ảnh so sánh nào?
+**Câu 6:** . Vẻ bề ngoài đẹp đẽ của *“cuộc sống riêng không biết gì hết ở bên kia ngưỡng cửa nhà mình”* được thể hiện rõ nhất qua hình ảnh so sánh nào?
 
-**Câu 7**. Tại sao tác giả cho rằng: *“Số phận của những cái tuyệt đối cá nhân, không bộc lộ ra khỏi bản thân, chẳng có gì đáng thèm muốn”*?
+**Câu 7:** . Tại sao tác giả cho rằng: *“Số phận của những cái tuyệt đối cá nhân, không bộc lộ ra khỏi bản thân, chẳng có gì đáng thèm muốn”*?
 
-**Câu 8**. Anh/ Chị suy nghĩ như thế nào về cuộc sống của con người khi thoát ra khỏi *“cái tuyệt đối cá nhân”*? (Trình bày khoảng 7 đến 10 dòng)
+**Câu 8:** . Anh/ Chị suy nghĩ như thế nào về cuộc sống của con người khi thoát ra khỏi *“cái tuyệt đối cá nhân”*? (Trình bày khoảng 7 đến 10 dòng)
 
 Đáp án:**Câu 1:** Sự mượt mà và tinh tế của Tiếng Việt được thể hiện ở những từ ngữ sau:
 
@@ -375,7 +375,7 @@ Câu 4: Học sinh triển khai thành đoạn trong khoảng 5 – 7 dòng vi�
 *Điều đó không xấu, nhưng sẽ tốt hơn nếu chúng ta có thể đọc cả những điều mình không thích, nhưng cần. Bởi đọc không chỉ là để giải trí. Đọc cần phải có mục đích, và rất nhiều sự kiên nhẫn.
 (*9 thói quen sai lầm của người Việt khi đọc sách*, dẫn theo Internet)
 
-*Câu 1***. Nêu ngắn gọn nội dung của đoạn trích trên? *(0,5 điểm)Câu 2.***Nêu cách hiểu các từ: *chúng ta sẽ đạo*; *đính chính. (0,25 điểm)Câu 3.***Căn cứ vào nội dung đoạn trích, hãy cho biết tại sao tác giả lại cho rằng: *nghi ngờ sách là một thái độ đáng tôn trọng không kém gì tôn sùng sách*? *(0,25 điểm)Câu 4.***Nêu ít nhất 02 tác dụng của việc đọc sách theo quan điểm riêng của anh/chị, viết trong khoảng 5 – 7 dòng. *(0,5 điểm)
+*Câu 1**. Nêu ngắn gọn nội dung của đoạn trích trên? *(0,5 điểm)Câu 2.**Nêu cách hiểu các từ: *chúng ta sẽ đạo*; *đính chính. (0,25 điểm)Câu 3.**Căn cứ vào nội dung đoạn trích, hãy cho biết tại sao tác giả lại cho rằng: *nghi ngờ sách là một thái độ đáng tôn trọng không kém gì tôn sùng sách*? *(0,25 điểm)Câu 4.**Nêu ít nhất 02 tác dụng của việc đọc sách theo quan điểm riêng của anh/chị, viết trong khoảng 5 – 7 dòng. *(0,5 điểm)
 ## Đọc đoạn thơ sau và trả lời câu hỏi từ Câu 5 đến Câu 8:
 
 *Con tàu này lên Tây Bắc anh đi chăng? Bạn bè đi xa anh giữ trời Hà NộiAnh có nghe gió ngàn đang rú gọi
@@ -383,16 +383,16 @@ Câu 4: Học sinh triển khai thành đoạn trong khoảng 5 – 7 dòng vi�
  Đất nước mênh mông đời anh nhỏ hẹp Tàu gọi anh đi sao chẳng ra đi? Chẳng có thơ đâu giữa lòng đóng khép Tâm hồn anh chờ gặp anh trên kia.
 (*Tiếng hát con tàu –* Chế Lan Viên)
 
-*Câu 5***. Trong đoạn thơ trên tác giả đã sử dụng những phương thức biểu đạt nào? *(0,25 điểm)Câu 6.***Nêu ý nghĩa biểu tượng của hình ảnh *con tàu* và *vành trăng* trong đoạn thơ. *(0,5 điểm)Câu 7.***Câu thơ *Đất nước mênh mông đời anh nhỏ hẹp* thể hiện điều gì? *(0,25 điểm) Câu 8.***Chỉ ra và nêu tác dụng của những biện pháp nghệ thuật đặc sắc trong khổ 1 đoạn thơ.** (*0,5 điểm*)
+*Câu 5**. Trong đoạn thơ trên tác giả đã sử dụng những phương thức biểu đạt nào? *(0,25 điểm)Câu 6.**Nêu ý nghĩa biểu tượng của hình ảnh *con tàu* và *vành trăng* trong đoạn thơ. *(0,5 điểm)Câu 7.**Câu thơ *Đất nước mênh mông đời anh nhỏ hẹp* thể hiện điều gì? *(0,25 điểm) Câu 8.**Chỉ ra và nêu tác dụng của những biện pháp nghệ thuật đặc sắc trong khổ 1 đoạn thơ.** (*0,5 điểm*)
 
 # HƯỚNG DẪN GIẢI ĐỀ VÀ CHẤM
 
-*Câu 1.***Câu chủ đề: *Lòng đố kị có thể gắn với sự hiếu thắng – một tâm lí muốn chứng tỏ mình không thua chúng kém bạn, thậm chí hơn người.
+*Câu 1.**Câu chủ đề: *Lòng đố kị có thể gắn với sự hiếu thắng – một tâm lí muốn chứng tỏ mình không thua chúng kém bạn, thậm chí hơn người.
 - Điểm 0,25: Nêu đủ những vấn đề cơ bản trên.
 
 - Điểm 0: Nêu ý khác không liên quan nội dung hoặc không trả lời.
 
-***Câu 2.*** Nêu cách hiểu về các từ: Biến dạng – thay đổi so với hình dạng gốc; ích kỷ: chỉ nghĩ đến mình, vì lợi ích của bản thân, không biết nghĩ cho người khác.
+**Câu 2.** Nêu cách hiểu về các từ: Biến dạng – thay đổi so với hình dạng gốc; ích kỷ: chỉ nghĩ đến mình, vì lợi ích của bản thân, không biết nghĩ cho người khác.
 
 - Điểm 0,5: Nêu được đúng nghĩa của các từ như trên.
 
@@ -400,13 +400,13 @@ Câu 4: Học sinh triển khai thành đoạn trong khoảng 5 – 7 dòng vi�
 
 - Điểm 0: Giải thích chung chung, mơ hồ, sai lệch hoặc không trả lời.
 
-***Câu 3.*** Lí giải:
+**Câu 3.** Lí giải:
 
 - Điểm 0,25: Nêu được các ý trên hoặc diễn đạt được tương tự các ý cơ bản đó.
 
 - Điểm 0: Nêu ý khác không liên quan nội dung hoặc không trả lời.
 
-***Câu 4.*** Nêu 02 tác dụng của việc đọc sách theo quan điểm riêng. Hs diễn đạt tốt, nêu đủ ý, không lạc đề.
+**Câu 4.** Nêu 02 tác dụng của việc đọc sách theo quan điểm riêng. Hs diễn đạt tốt, nêu đủ ý, không lạc đề.
 
 - Điểm 0,5: đảm bảo những yêu cầu trên.
 
@@ -416,7 +416,7 @@ Câu 4: Học sinh triển khai thành đoạn trong khoảng 5 – 7 dòng vi�
 
 - Điểm 0: + Nêu biện pháp nhưng không liên quan tới câu hỏi.
 
-+ Không trả lời.***Câu 5.*** Những phương thức biểu đạt được sử dụng trong đoạn thơ: Tự sự, miêu tả, biểu cảm, nghị luận.
++ Không trả lời.**Câu 5.** Những phương thức biểu đạt được sử dụng trong đoạn thơ: Tự sự, miêu tả, biểu cảm, nghị luận.
 
 - Điểm 0,25: Nêu đủ các phương thức biểu đạt trên.
 
@@ -436,7 +436,7 @@ Câu 4: Học sinh triển khai thành đoạn trong khoảng 5 – 7 dòng vi�
 
 - Điểm 0: Nêu sai hoặc không trả lời.
 
-***Câu 7.*** Câu thơ *Đất nước mênh mông đời anh nhỏ hẹp* thể hiện sự tương phản giữa sự mênh mông, rộng lớn của đất nước, cộng đồng với sự bé nhỏ, chật hẹp của cái tôi cá nhân.
+**Câu 7.** Câu thơ *Đất nước mênh mông đời anh nhỏ hẹp* thể hiện sự tương phản giữa sự mênh mông, rộng lớn của đất nước, cộng đồng với sự bé nhỏ, chật hẹp của cái tôi cá nhân.
 
 - Điểm 0,25: Nêu được đầy đủ các ý trên.
 
@@ -444,7 +444,7 @@ Câu 4: Học sinh triển khai thành đoạn trong khoảng 5 – 7 dòng vi�
 
 - Điểm 0: Nêu sai hoặc không trả lời.
 
-***Câu 8.*** Biện pháp nghệ thuật tiêu biểu nhất: Câu hỏi tu từ, nhân hóa, ẩn dụ, tương phản đối lập. Tác dụng: Thể hiện sự trăn trở, chất vấn, giục giã chính mình của nhân vật trữ tình, qua đó bộc lộ khát vọng mãnh liệt muốn được lên Tây Bắc và đến với những chân trời mới.
+**Câu 8.** Biện pháp nghệ thuật tiêu biểu nhất: Câu hỏi tu từ, nhân hóa, ẩn dụ, tương phản đối lập. Tác dụng: Thể hiện sự trăn trở, chất vấn, giục giã chính mình của nhân vật trữ tình, qua đó bộc lộ khát vọng mãnh liệt muốn được lên Tây Bắc và đến với những chân trời mới.
 
 - Điểm 0,5: Nêu được đầy đủ các ý trên.
 
@@ -458,7 +458,7 @@ sài. + Nêu được đúng (từ 3-4) biện pháp nhưng chưa chỉ ra đư�
 
 # Đề 6 : Đọc đoạn trích sau và trả lời các câu hỏi:
 
-Trong sổ tay ghi chép của một Hs, có đoạn chép như sau:***Kẻ thù lớn nhất của tất cả chúng ta là sự lười biếng. Nếu chúng ta không lười biếng thì mọi cái mà chúng ta chông thấy đều là các cơ hội, bởi vì càng khó khăn cơ hội càng lớn. Tôi có một lý thuyết cho cá nhân tôi. Gọi là lý thuyết bên bờ vực. Tôi không bao giờ làm việc gì rễ và không làm việc gì mà người khác có thể ngay lập tức làm giống tôi được.
+Trong sổ tay ghi chép của một Hs, có đoạn chép như sau:**Kẻ thù lớn nhất của tất cả chúng ta là sự lười biếng. Nếu chúng ta không lười biếng thì mọi cái mà chúng ta chông thấy đều là các cơ hội, bởi vì càng khó khăn cơ hội càng lớn. Tôi có một lý thuyết cho cá nhân tôi. Gọi là lý thuyết bên bờ vực. Tôi không bao giờ làm việc gì rễ và không làm việc gì mà người khác có thể ngay lập tức làm giống tôi được.
 *Tôi gọi là lý thuyết bên bờ vực bởi vì kẻ định cạnh tranh với mình không dám theo gia mép vực để cạnh tranh và kẻ thù cũng không dám theo mình ra mép vực. Tôi nghĩ rằng không lười biếng và phải dũng cảm, hai cái đấy tạo ra cơ hội. Các bạn đừng sợ. Khó
 *khăn là thuốc kích thích để mỗi con người dũng cảm, sáng suốt và sống có lý tưởng. Mọi khó khăn là điềm báo tạo cơ hội.
 (*Ông Nguyễn Trần Bạt đối thoại với sinh viên Học viện Ngoại giao*, nguồn chungta.com)
@@ -484,9 +484,9 @@ Trong sổ tay ghi chép của một Hs, có đoạn chép như sau:***Kẻ thù
 
 + Không bao giờ làm việc gì dễ, không làm việc gì mà người khác có thể ngay lập tức làm giống như mình được.**+ Khiến kẻ định cạnh tranh với mình không dám theo ra mép vực để cạnh tranh và kẻ thù cũng không dám theo mình ra mép vực.
 
-*Lưu ý:***Chấp nhận cả phương án học sinh trích nguyên văn hai câu văn có nêu đặc điểm trên, tuy nhiên lỗi chính tả phải được sửa.
+*Lưu ý:**Chấp nhận cả phương án học sinh trích nguyên văn hai câu văn có nêu đặc điểm trên, tuy nhiên lỗi chính tả phải được sửa.
 - **Viết đoạn văn (8- 10 dòng) về chủ đề  *Kẻ thù lớn nhất của tất cả chúng ta là sự lười biếng* (1,0 điểm)
-**–***Về hình thức: *Hs phải đảm bảo đúng yêu cầu về mặt hình thức của một đoạn văn hoàn chỉnh, không xuống dòng tạo thành hai đoạn văn. Câu chủ đề có thể đặt ở đầu hay cuối đoạn đều được.***– Về nội dung: *Đoạn văn phải bám sát nội dung của câu chủ đề đã cho, làm rõ điều đó, tránh lan man, lạc đề.
+**–**Về hình thức: *Hs phải đảm bảo đúng yêu cầu về mặt hình thức của một đoạn văn hoàn chỉnh, không xuống dòng tạo thành hai đoạn văn. Câu chủ đề có thể đặt ở đầu hay cuối đoạn đều được.**– Về nội dung: *Đoạn văn phải bám sát nội dung của câu chủ đề đã cho, làm rõ điều đó, tránh lan man, lạc đề.**
 
 ## Đề 7 : Đọc đoạn trích sau đây và trả lời câu hỏi từ Câu 1 đến Câu 4:
 
@@ -496,7 +496,7 @@ Trong sổ tay ghi chép của một Hs, có đoạn chép như sau:***Kẻ thù
 *Chế giễu công khai là một môn thể thao đổ máu cần phải dừng lại. Hãy bình luận bằng những ngôn từ tích cực, tiếp nhận tin tức và click chuột bằng sự bao dung, bởi chúng ta đã gieo những hạt giống của sự xấu hổ và sự tổn thương trên mảnh đất văn hóa của mình, cả ở thế giới thật và ảo.
 (*Bài thuyết trình chấn động của nữ thực tập sinh nổi tiếng*, Vietnamnet.vn)
 
-*Câu 1***. Nêu ngắn gọn nội dung của đoạn trích trên? *(0,25 điểm) Câu 2.***Đặt nhan đề cho đoạn trích. *(0,25 điểm)Câu 3.***Căn cứ vào nội dung đoạn trích, hãy cho biết tại sao tác giả lại gọi *chế giễu công khai* là *một môn thể thao đổ máu*? *(0,5 điểm)Câu 4.***Theo quan điểm riêng của anh/chị, cần phải làm gì để dừng *môn thể thao đổ máu* này? Viết trong khoảng 5 – 7 dòng. *(0,5 điểm)
+*Câu 1**. Nêu ngắn gọn nội dung của đoạn trích trên? *(0,25 điểm) Câu 2.**Đặt nhan đề cho đoạn trích. *(0,25 điểm)Câu 3.**Căn cứ vào nội dung đoạn trích, hãy cho biết tại sao tác giả lại gọi *chế giễu công khai* là *một môn thể thao đổ máu*? *(0,5 điểm)Câu 4.**Theo quan điểm riêng của anh/chị, cần phải làm gì để dừng *môn thể thao đổ máu* này? Viết trong khoảng 5 – 7 dòng. *(0,5 điểm)
 ## Đọc đoạn thơ sau và trả lời câu hỏi từ Câu 5 đến Câu 8:
 
 *Năm 20 của thế kỷ 20Tôi sinh ra. Nhưng chưa được làm người Nước đã mất. Cha đã làm nô lệ.
@@ -511,11 +511,11 @@ Nếu chậm mùa xuân ấy, em ơi! (*Một nhành xuân* – Tố Hữu)
 
 *Câu 5*. Trong đoạn thơ trên tác giả đã sử dụng những phương thức biểu đạt nào? *(0,25 điểm)
 *Câu 6.* Nêu ý nghĩa biểu tượng của hình ảnh *mặt trời* và *nước mắt* trong đoạn thơ. *(0,5 điểm)
-*Câu 7.***Cụm từ *Có lẽ vậy thôi* thể hiện điều gì trong tư tưởng, tình cảm của nhân vật trữ tình *(0,25 điểm)Câu 8.***Chỉ ra và phân tích tác dụng của biện pháp nghệ thuật đặc sắc nhất được thể hiện trong 7 dòng thơ cuối? (*0,5 điểm*)
+*Câu 7.**Cụm từ *Có lẽ vậy thôi* thể hiện điều gì trong tư tưởng, tình cảm của nhân vật trữ tình *(0,25 điểm)Câu 8.**Chỉ ra và phân tích tác dụng của biện pháp nghệ thuật đặc sắc nhất được thể hiện trong 7 dòng thơ cuối? (*0,5 điểm*)
 
 # HƯỚNG DẪN GIẢI ĐỀ
 
-***Câu 1.*** Nội dung của đoạn trích: Nói về sự sỉ nhục/ xúc phạm/chế giễu công khai trong thế giới ảo và những hậu quả đáng báo động của nó, đồng thời kêu gọi mọi người chấm dứt môn thể thao đổ máu này.
+**Câu 1.** Nội dung của đoạn trích: Nói về sự sỉ nhục/ xúc phạm/chế giễu công khai trong thế giới ảo và những hậu quả đáng báo động của nó, đồng thời kêu gọi mọi người chấm dứt môn thể thao đổ máu này.
 
 - Điểm 0,5: Nêu đủ 2 vấn đề cơ bản trên, có thể diễn đạt bằng một số từ ngữ gần nghĩa.
 
@@ -523,13 +523,13 @@ Nếu chậm mùa xuân ấy, em ơi! (*Một nhành xuân* – Tố Hữu)
 
 - Điểm 0: Nêu ý khác không liên quan nội dung hoặc không trả lời.
 
-***Câu 2.*** Đặt nhan đề cho đoạn trích: Hậu quả của sự xúc phạm trong thế giới ảo; Chế giễu công khai trong thế giới ảo – môn thể thao đổ máu…
+**Câu 2.** Đặt nhan đề cho đoạn trích: Hậu quả của sự xúc phạm trong thế giới ảo; Chế giễu công khai trong thế giới ảo – môn thể thao đổ máu…
 
 - Điểm 0,25: Nhan đề như trên hoặc diễn đạt khác, miễn là gọi được đúng tên vấn đề chính.
 
 - Điểm 0: Nhan đề không liên quan nội dung đoạn trích hoặc không trả lời.
 
-***Câu 3.*** Tác giả đoạn trích gọi *chế giễu công khai* là một *môn thể thao đổ máu*:**Gọi là *môn thể thao* vì nó hấp dẫn, thu hút đông đảo, đem lại cảm giác mạnh cho người tham gia; gọi là *môn thể thao đổ máu* vì nó khiến người bị chế giễu/sỉ nhục bị tổn thương nghiêm trọng, dẫn tới một số thảm kịch, thậm chí đưa tới việc tự tử.
+**Câu 3.** Tác giả đoạn trích gọi *chế giễu công khai* là một *môn thể thao đổ máu*:**Gọi là *môn thể thao* vì nó hấp dẫn, thu hút đông đảo, đem lại cảm giác mạnh cho người tham gia; gọi là *môn thể thao đổ máu* vì nó khiến người bị chế giễu/sỉ nhục bị tổn thương nghiêm trọng, dẫn tới một số thảm kịch, thậm chí đưa tới việc tự tử.**
 
 - Điểm 0,25: Nêu được các ý trên.
 
@@ -537,7 +537,7 @@ Nếu chậm mùa xuân ấy, em ơi! (*Một nhành xuân* – Tố Hữu)
 
 - Điểm 0: Nêu ý khác không liên quan nội dung hoặc không trả lời.
 
-*Câu 4.***Biện pháp, cách thức để dừng môn thể thao đổ máu này lại: Nêu ít nhất 02 biện pháp, không nhắc lại nội dung của tác giả. Câu trả lời phải chặt chẽ, thuyết phục.
+*Câu 4.**Biện pháp, cách thức để dừng môn thể thao đổ máu này lại: Nêu ít nhất 02 biện pháp, không nhắc lại nội dung của tác giả. Câu trả lời phải chặt chẽ, thuyết phục.
 
 - Điểm 0,5: đảm bảo những yêu cầu trên.
 
@@ -547,7 +547,7 @@ Nếu chậm mùa xuân ấy, em ơi! (*Một nhành xuân* – Tố Hữu)
 
 + Nêu biện pháp nhưng không thuyết phục.**+ Không trả lời.
 
-*Câu 5.***Những phương thức biểu đạt được sử dụng trong đoạn thơ: Tự sự, miêu tả, biểu cảm.
+*Câu 5.**Những phương thức biểu đạt được sử dụng trong đoạn thơ: Tự sự, miêu tả, biểu cảm.
 
 - Điểm 0,25: Nêu đủ các phương thức biểu đạt trên.
 
@@ -555,7 +555,7 @@ Nếu chậm mùa xuân ấy, em ơi! (*Một nhành xuân* – Tố Hữu)
 
 - Điểm 0: Nêu sai hoặc không trả lời.
 
-***Câu 6.*** Ý nghĩa biểu tượng của hình ảnh:***Mặt trời *– tượng trưng cho tự do/ ánh sáng của lí tưởng/cuộc sống tươi đẹp;
+**Câu 6.** Ý nghĩa biểu tượng của hình ảnh:**Mặt trời *– tượng trưng cho tự do/ ánh sáng của lí tưởng/cuộc sống tươi đẹp;**
 
 *Nước mắt* – tượng trưng cho sự thương đau/ mất mát/ nô lệ/ lầm than/ cuộc sống tối tăm.
 
@@ -565,7 +565,7 @@ Nếu chậm mùa xuân ấy, em ơi! (*Một nhành xuân* – Tố Hữu)
 
 - Điểm 0: Nêu sai hoặc không trả lời.
 
-*Câu 7.***Cụm từ *Có lẽ vậy thôi* diễn tả tư tưởng buông xuôi, phó mặc cho số phận/ an phận; tình cảm chán nản, tuyệt vọng.
+*Câu 7.**Cụm từ *Có lẽ vậy thôi* diễn tả tư tưởng buông xuôi, phó mặc cho số phận/ an phận; tình cảm chán nản, tuyệt vọng.
 
 - Điểm 0,25: Nêu được đầy đủ các ý trên.
 
@@ -573,7 +573,7 @@ Nếu chậm mùa xuân ấy, em ơi! (*Một nhành xuân* – Tố Hữu)
 
 - Điểm 0: Nêu sai hoặc không trả lời.
 
-***Câu 8.*** Biện pháp nghệ thuật tiêu biểu nhất: So sánh. Tác dụng: thể hiện rõ tình trạng mất phương hướng, mất niềm tin và mơ ước, sống vô nghĩa, lay lắt của nhân vật trữ tình/*tôi* khi chưa gặp được mùa xuân của lí tưởng.
+**Câu 8.** Biện pháp nghệ thuật tiêu biểu nhất: So sánh. Tác dụng: thể hiện rõ tình trạng mất phương hướng, mất niềm tin và mơ ước, sống vô nghĩa, lay lắt của nhân vật trữ tình/*tôi* khi chưa gặp được mùa xuân của lí tưởng.
 
 - Điểm 0,5: Nêu được đầy đủ các ý trên.
 
@@ -1675,10 +1675,10 @@ Luỹ tre xa ẩn hiện
 
 *L
 *u
-***( Lũy Tre Làng – Lê Trường Hưởng ) Câu 1. Bài thơ trên viết bằng thể thơ nào ?
+**( Lũy Tre Làng – Lê Trường Hưởng ) Câu 1. Bài thơ trên viết bằng thể thơ nào ?**
 ## Câu3. Xác định biện pháp nghệ thuật được tác giả sử dụng trong hai dòng thơ đầu của bài thơ trên ? Trình bày ngắn gọn hiệu quả thẩm mĩ của biện pháp
 
-***Câu 4. Theo anh/ chị, khổ thơ sau biểu đạt ý nghĩa gì ? (0,25*
+**Câu 4. Theo anh/ chị, khổ thơ sau biểu đạt ý nghĩa gì ? (0,25***
 bền vững và dài lâu**Trả lời :
 
 Câu 1 : Thể thơ năm chữ / ngũ ngôn Câu 2 : Nội dung chính của bài thơ:
@@ -1976,7 +1976,7 @@ Tôi chan lên suốt dọc tuổi thơ mình.
 (*Thời nắng xanh*, Trương Nam Hương) Câu hỏi
 
 Câu 1:**Chỉ ra phương thức biểu đạt chính của đoạn thơ trên. (0,25 đ)** Câu 2: **Xác định 02 biện pháp tu từ được tác giả sử dụng trong đoạn thơ trên. (0,5 đ)** Câu 3:** Xác định thể loại của bài thơ trên (0,25 đ)
-Câu 4:**Nêu nội dung chính của đoạn thơ trên. (0,5 đ)***Đề thi được sưu tầm và biên soạn bởi Thu Trang, Trường THPT Tạ Uyên ,Yên Mô, Ninh Bình
+Câu 4:**Nêu nội dung chính của đoạn thơ trên. (0,5 đ)**Đề thi được sưu tầm và biên soạn bởi Thu Trang, Trường THPT Tạ Uyên ,Yên Mô, Ninh Bình
 HưỚNG DẪN TRẢ LỜI:
 
 Câu 1:**Phương thức biểu đạt chính là phương thức biểu cảm. Nêu đúng được 0,25 điểm.** Câu 2:** Biện pháp so sánh Cũng xanh mơn *như* thể lá trầu Biện pháp liệt kê :**Rủ *châu chấu, cào cà* o về cháu bắt Rủ *rau má, rau sam
@@ -2569,7 +2569,7 @@ tư tưởng…đều phải đơn độc chống lại những người cùng t
 
 - Vì trong những bước chân đầu tiên trên con đường mới, những người sáng tạo thường đơn độc vì những ý tưởng, những công trình mà họ đưa ra thường không dễ chấp nhận ngay được, bởi nó vượt qua khỏi suy nghĩ, tầm nhìn của mọi người đương thời.
 
-Đề 63 : “***Bi kịch ấy họ gửi cả vào tiếng Việt. Họ yêu vô cùng thứ tiếng trong mấy mươi thế kỉ đã chia sẻ vui buồn với cha ông. Họ dồn tình yêu quê hương trong tình yêu tiếng Việt. Tiếng Việt, họ nghĩ, là tấm lụa đã hứng vong hồn những thế hệ qua. Đến lượt họ, họ cũng mượn tấm hồn bạch chung để gửi nỗi băn khoăn riêng.” (trích Một thời đại trong thi ca– Hoài Thanh)
+Đề 63 : “**Bi kịch ấy họ gửi cả vào tiếng Việt. Họ yêu vô cùng thứ tiếng trong mấy mươi thế kỉ đã chia sẻ vui buồn với cha ông. Họ dồn tình yêu quê hương trong tình yêu tiếng Việt. Tiếng Việt, họ nghĩ, là tấm lụa đã hứng vong hồn những thế hệ qua. Đến lượt họ, họ cũng mượn tấm hồn bạch chung để gửi nỗi băn khoăn riêng.” (trích Một thời đại trong thi ca– Hoài Thanh)
 - Đoạn trích được viết theo phong cách ngôn ngữ nào ? Xác định các phương thức biểu đạt
 
 được sử dụng *(0.5 điểm)

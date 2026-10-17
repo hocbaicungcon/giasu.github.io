@@ -18,7 +18,7 @@ Mời thầy cô và các em tham khảo [Bến đò ngày mưa: Đề văn lớ
 
 ## Đề văn bài Chiều xuân
 
-**Phần I. Đọc hiểu
+**Phần I. Đọc hiểu**
 Đọc bài thơ sau đây và thực hiện các yêu cầu
 
 CHIỀU XUÂN
@@ -37,10 +37,10 @@ Anh Thơ
 Lũ cò con chốc chốc vụt bay ra,
 Làm giật mình một cô nàng yếm thắm.
 Cúi cuốc cào cỏ ruộng sắp ra hoa.
-**Câu 1**. Bài thơ trên được viết theo thể thơ nào? Chỉ ra 02 PTBĐ được sử dụng trong bài thơ**.
+**Câu 1:** . Bài thơ trên được viết theo thể thơ nào? Chỉ ra 02 PTBĐ được sử dụng trong bài thơ**.**
 **Câu 2.** Xác định đề tài của bài thơ.
 
-**Câu 3**. Cảnh xuân trong bài thơ được khắc hoạ trong thời gian và không gian nào? **Câu 4**. Những hình ảnh trong bức tranh chiều xuân ở bài thơ gợi nên điều gì?
+**Câu 3:** . Cảnh xuân trong bài thơ được khắc hoạ trong thời gian và không gian nào? **Câu 4:** . Những hình ảnh trong bức tranh chiều xuân ở bài thơ gợi nên điều gì?
 
 **Câu 5:** Đặc điểm về cách sử dụng từ ngữ trong bài thơ?
 
@@ -50,24 +50,24 @@ Cúi cuốc cào cỏ ruộng sắp ra hoa.
 
 **Câu 8:** Bức tranh quen thuộc của làng quê đồng bằng Bắc Bộ được gợi ra trong đoạn thơ đủ sức lay động lòng người khi chúng ta đang sống trong bối cảnh quá trình đô thi hoá nông thôn diễn ra mạnh mẽ. Anh/chị hãy nêu một tác động tích cực và một tác động tiêu cực của quá trình đô thị hoá đến việc giữ gìn bản sắc văn hoá làng quê. Hãy viết trong một đoạn văn từ 5- 7 câu
 
-**II. LÀM VĂN (4,0 điểm)
+**II. LÀM VĂN (4,0 điểm)**
 Anh/chị hãy viết bài văn (khoảng 500 chữ) giới thiệu, đánh giá về nội dung và nghệ thuật của văn bản trên.
 
 ## Đáp án đề văn bài Chiều xuân
 
-**I. ĐỌC – HIỂU
+**I. ĐỌC – HIỂU**
 **Câu 1:** -Thể thơ: 8 chữ
 
 – 02 PTBĐ được sử dung: Miêu tả và biểu cảm
 
-**Câu 2
+**Câu 2**
 – Đề tài: Mùa xuân- đề tài quen thuộc trong thơ ca
 
 **Câu 3:** – Thời gian: Buổi chiều -> gợi buồn, gợi nhớ
 
 – Không gian: Làng quê với bến vắng, triền đê, cánh đồng **->** bình dị, gần gũi
 
-**Câu 4.
+**Câu 4.**
 – Hình ảnh chiều xuân trong bài thơ **:** *bến vắng, con đò, nước sông, quán tranh , mưa đổ bụi, chòm hoa xoan hoa tím rụng tơi bời, đường đê cỏ non tràn cỏ biếc, đàn sáo đen, cánh bướm rập rờn trôi trước gió, trâu bò thong thả cúi ăn mưa, đồng lúa xanh rờn, ướt lặng, lũ cò con chốc chốc bay ra, cô nàng yếm thắm …
 -> Những hình ảnh bình dị, thân thuộc mở ra khung cảnh êm đềm, tĩnh lặng, và rất đỗi thơ mộng, lãng mạn của bức tranh chiều xuân nơi làng quê. Hình ảnh đó cho thấy tình yêu sự gắn bó sâu nặng của tác giả với làng quê đồng thời gieo vào lòng người nỗi niềm làng mạc, quê hương để ta thêm yêu vẻ đẹp của làng quê.
 
@@ -78,7 +78,7 @@ Anh/chị hãy viết bài văn (khoảng 500 chữ) giới thiệu, đánh giá
 
 =>Tác dụng: Làm cho sự vật hiện lên cụ thể, sinh động, có hồn, người đọc có cảm giác như bức tranh chiều xuân với những hình ảnh thân thuộc đang hiển hiện trước mắt với bao cảm xúc yêu thương, gắn bó cùng sự sự thư thái trong tâm hồn.
 
-**Câu 6.
+**Câu 6.**
 **– Nhịp điệu** : ngắt nhịp 3/5 từ đầu đến cuối bài
 
 ->âm điệu nhẹ nhàng, sâu lắng gợi tả được sự yên bình êm ả của buổi chiều xuân nơi làng quê
@@ -94,24 +94,24 @@ Anh/chị hãy viết bài văn (khoảng 500 chữ) giới thiệu, đánh giá
 
 + Gắn bó và có những rung rộng tinh tế với vẻ đẹp của làng quê
 
-**Câu 8
-**+ Đảm bảo hình thức đoạn văn từ 5-7 câu
-**+ Nội dung : có thể tham khảo gợi ý sau
+**Câu 8**
+**+ Đảm bảo hình thức đoạn văn từ 5-7 câu**
+**+ Nội dung : có thể tham khảo gợi ý sau**
 – Nêu một tác động tích cực như quá trình đô thị hoá khiến nông thôn VN trở nên hiện đại hơn hoặc đời sống tinh thần cũng như vật chất của người nông dân được cải thiện …
 
 – Nêu một tác động tiêu cực như một số nét đẹp mang tính bản sắc văn hoá làng quê dần trở nên mai một, ô nhiễm môi trường, môi trường sống không còn trong lành…
 
 => Mỗi chúng ta cần có ý thức giữ gìn bản sắc văn hoá làng quê trong bối cảnh đô thị hoá nông thôn nói riêng và quá trình hội nhập nói chung.
 
-**II. LÀM VĂN (Đảm bảo các luận điểm cơ bản dưới đây)
-**Dàn ý
+**II. LÀM VĂN (Đảm bảo các luận điểm cơ bản dưới đây)**
+**Dàn ý**
 **1. Mở bài:** Giới thiệu ngắn gọn về tác giả, tác phẩm.
 
 – Nữ sĩ Anh Thơ xuất hiện trong phong trào Thơ mới với những bài thơ viết về đề tài nông thôn tràn ngập những hình ảnh gần gũi, quen thuộc, gợi nhớ những kỉ niệm êm đềm về làng mạc, quê hương trong tâm thức của mỗi con người. Thơ của bà mỗi bài là một bức tranh thiên nhiên tươi mát, hài hoà, gợi nên không khí và nhịp sống êm đềm ở miền quê Bắc Bộ.
 
 – Chiều xuân được in trong tập Bức tranh quê (xuất bản năm 1941) là bài thơ tiêu biểu cho phong cách nghệ thuật của Anh Thơ. Bức tranh thiên nhiên mùa xuân tươi mát, thơ mộng và khung cảnh làng quê tĩnh lặng, thanh bình khiến cho con người thêm gắn bó với quê hương **2. Thân bài:** Phân tích, đánh giá những nét đặc sắc, độc đáo của bài thơ:
 
-*** Phân tích, đánh giá mạch ý tưởng, cảm xúc của nhân vật trữ tình:
+** Phân tích, đánh giá mạch ý tưởng, cảm xúc của nhân vật trữ tình:**
 (Chủ đề, mạch cảm xúc, hình ảnh, điểm nhìn…)
 
 – Ý nghĩa nhan đề: – Chiều xuân – nhan đề ngắn gọn nhưng khái quát được nội dung của toàn bài thơ , hé mở cho người đọc thời điểm khơi gợi cảm xúc của nhà thơ – buổi chiều gợi nhớ, gợi thương. Đồng thời hé mở không gian nghệ thuật của bài thơ – bức tranh xuân vào thời điểm buổi chiều =>Chiều xuân ghi nhận thời điểm đặc biệt trên dòng chảy thời gian vừa diễn tả không gian.
@@ -129,9 +129,9 @@ Anh/chị hãy viết bài văn (khoảng 500 chữ) giới thiệu, đánh giá
 
 -> quan sát, miêu tả chiều xuân trong nhiều không gian khiến cảnh vật được hiện lên cụ thể, sinh động
 
-*** Phân tích đánh giá sự phát triển của hình tượng chính và tính độc đáo của các phương diện ngôn từ.
+** Phân tích đánh giá sự phát triển của hình tượng chính và tính độc đáo của các phương diện ngôn từ.**
 *– Sự phát triển của hình tượng chính
-**a. Khổ 1: Cảnh bến sông
+**a. Khổ 1: Cảnh bến sông**
 – Không gian mở ra trên bến đò xưa cũ và bức tranh mùa xuân hiên lên có sự có cả âm thanh, màu sắc, hình ảnh. Tứ thơ mùa xuân lan toả trong từng hình ảnh từng chi tiết, từng lời thơ. Đó là những hình ảnh đặc trưng của mùa xuân xứ Bắc: mưa bụi êm đềm, chùm hoa xoan tím rụng trên quán nhỏ… hình ảnh cơn mưa bụi gợi lên sự êm đềm phảng phất của những hạt mưa xuân nhỏ nhẹ êm êm.
 
 – Chiều xuân cũng vắng như những buổi chiều, con đò được nhân hoá như biết lười biếng để mặc cho nước trôi lững lờ cong mình thì nằm im lìm trên bến vắng đó. Trước mắt ta là một cảnh tượng hữu tình sông nước bến vắng với con đò. Anh Thơ không phải tìm đâu xa mà những hình ảnh bình thường nhưng lại nên thơ ấy đã như phô trước mắt chỉ cần một tâm hồn biết cảm nhận là toát lên những lời thơ tuyệt vời. Quán nước cũng lim lìm trong sự vắng lặng ấy, chòm xoan hoa tím rụng tơi bời. Mùa chiều vốn tàn tạ nhưng mùa xuân thì nảy nở sinh sôi. Vậy Anh Thơ đã cho ta biết thêm một vẻ đẹp nhẹ nhàng lững lờ của mùa xuân nữa.
@@ -148,7 +148,7 @@ Bên chòm xoan hoa tím rụng tơi bời.”
 
 – Nữ sĩ quan sát, thưởng thức bằng cái nhìn tâm tưởng nên đã cảm nhận được cái hồn của cảnh vật thân quen. Trong chiều mưa lạnh, quang cảnh bến sông ven làng càng tiêu điều, vắng vẻ. Một bức tranh dường như thiếu sắc màu và ánh sáng. Trong sự tĩnh lặng gần như tuyệt đối của không gian vẫn có sự hoạt động của cảnh vật, dù là nhẹ đến mức như có như không: Mưa đổ bụi êm êm trên bến vắng mở ra không gian hư ảo. Con đò thường ngày tất bật chở khách sang sông, giờ đây dường như mệt mỏi, biếng lười nằm mặc nước sông trôi. con đò được nhân hoá trở nên có hồn, mang nét tâm trạng như con người. Còn quán tranh cũng như thu mình lại, đứng im lìm trong vắng lặng bởi không còn khách vào ra với tiếng cười, tiếng nói rộn ràng. Chòm xoan hoa tím rụng tơi bời trước ngọn gió xuân còn vương hơi lạnh của buổi tàn đông. Mọi thứ đều hoạt động một cách nhẹ nhàng phảng phất buồn trong sự vắng lặng của con người và dường sau cảnh ẩn chứa một nỗi buồn man mác mà sâu lắng khó nói thành lời.
 
-**b. Khổ 2: Cảnh xuân trên triền đê
+**b. Khổ 2: Cảnh xuân trên triền đê**
 – Sang khổ thơ thứ hai lại là một phiên cảnh khác, không phải là cảnh bến vắng con đò lười nữa mà là cảnh mùa xuân trên những triền đê:
 
 Ngoài đường đê cỏ non tràn biếc cỏ,
@@ -165,7 +165,7 @@ Những trâu bò thong thả cúi ăn mưa.
 
 =>Đoạn thơ có nhiều nét tươi mát và thơ mộng, chứng tỏ tác giả có tài quan sát và có sự rung động tinh tế nên nhận thấy cảnh vừa thực lại vừa ảo, vừa quen, vừa lạ.
 
-**c. Khổ 3: Cảnh xuân ở cánh đồng
+**c. Khổ 3: Cảnh xuân ở cánh đồng**
 Sang khổ 3, tác giả đưa người đọc đến với cảnh xuân trên trong ruộng lúa nước thân quen:
 
 Trong đồng hoa lúa xanh rờn và ướt lặng,
@@ -193,7 +193,7 @@ Cúi cuốc cào cỏ ruộng sắp ra hoa.
 
 ->âm điệu nhẹ nhàng, sâu lắng gợi tả được sự yên bình êm ả của buổi chiều xuân nơi làng quê
 
-*** Phân tích, đánh giá nét hấp dẫn riêng của bài thơ so với những sáng tác khác cùng đề tài, chủ đề, thể loại
+** Phân tích, đánh giá nét hấp dẫn riêng của bài thơ so với những sáng tác khác cùng đề tài, chủ đề, thể loại**
 – Viết về mùa xuân quen thuộc nhưng bài thơ tạo được ấn tượng riêng
 
 + Mùa xuân ở làng quê Bắc Bộ với những hình ảnh gần gũi , giản dị mang nét đặc trưng
@@ -216,7 +216,7 @@ Gắn bó sâu sắc với làng quê
 
 – Sự tác động của bài thơ đến tâm hồn bạn đọc
 
-**Bài viết tham khảo
+**Bài viết tham khảo**
 Nữ sĩ Anh Thơ xuất thân trong một gia đình có truyền thống Nho học. Tuy chưa học hết tiểu học nhưng vốn có khiếu văn chương nên bà rất thích đọc sách và làm thơ. Bút danh Anh Thơ xuất hiện trong phong trào Thơ mới với những bài thơ viết về đề tài nông thôn tràn ngập những hình ảnh gần gũi, quen thuộc, gợi nhớ những ki niệm êm đềm về làng mạc, quê hương trong tâm thức của mỗi con người. Thơ của bà mỗi bài là một bức tranh thiên nhiên tươi mát, hài hoà, gợi nên không khí và nhịp sống êm đềm ở miền quê Bắc Bộ. Nữ sĩ Anh Thơ được Nhà nước tặng Giải thưởng Hồ Chí Minh về văn học nghệ thuật năm 2007.Chiều xuân được in trong tập Bức tranh quê (xuất bản năm 1941) là bài thơ tiêu biểu cho phong cách nghệ thuật của Anh Thơ. Bức tranh thiên nhiên mùa xuân tươi mát, thơ mộng và khung cảnh làng quê tĩnh lặng, thanh bình khiến cho con người thêm gắn bó với quê hương.
 
 Chiều xuân – nhan đề ngắn gọn nhưng khái quát được nội dung của toàn bài thơ hé mở cho người đọc thời điểm khơi gợi cảm xúc của nhà thơ – buổi chiều gợi nhớ, gợi thương. Đồng thời hé mở không gian nghệ thuật của bài thơ – bức tranh xuân vào thời điểm buổi chiều. Chiều xuân ghi nhận thời điểm đặc biệt trên dòng chảy thời gian vừa diễn tả không gian.

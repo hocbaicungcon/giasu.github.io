@@ -49,8 +49,8 @@ Bài 4: Hợp chất X hiện nay được sử dụng phổ biến trong công 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [BXX_BAI-22.-ON-TAP-CHUONG-5_Nguyen-Phuong](/assets/docs/BXX_BAI-22.-ON-TAP-CHUONG-5_Nguyen-Phuong.docx)
-- [BXX_Bai-22_ON-TAP-CHUONG-5_NGUYEN-PHUONG](/assets/docs/BXX_Bai-22_ON-TAP-CHUONG-5_NGUYEN-PHUONG.pptx)
+- [BXX_BAI-22.-ON-TAP-CHUONG-5_Nguyen-Phuong](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [BXX_Bai-22_ON-TAP-CHUONG-5_NGUYEN-PHUONG](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

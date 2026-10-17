@@ -150,8 +150,8 @@ trên với xăng thông thường.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023HK-HBT_10_HDC-Hoa](/assets/docs/2023HK-HBT_10_HDC-Hoa-giasu.ai.vn.pdf)
-- [2023HK-HBT_10-Hoa](/assets/docs/2023HK-HBT_10-Hoa-giasu.ai.vn.pdf)
+- [2023HK-HBT_10_HDC-Hoa](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2023HK-HBT_10-Hoa](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

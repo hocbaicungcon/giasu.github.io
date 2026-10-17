@@ -241,7 +241,7 @@ rừng rậm. |
 
 86.**火** Hỏa: Lửa giốn như ngọn lửa bố cao, cách viết khác:**灬**.
 
-87.**爪** Trảo: Móng vuốt, Cách viết khác:**爪****,*** *爫**.
+87.**爪** Trảo: Móng vuốt, Cách viết khác:**爪**,** *爫**.
 
 88.**父** Phụ: Cha, Tay cầm roi đánh dậy con cái.
 
@@ -315,7 +315,7 @@ rừng rậm. |
 
 121.**缶** Phữu (Phẫu): Đồ sành như: vò, chum, vại, be có nắp đậy.
 
-122.**网** Võng: Lưới để bắt thú hay đánh cá. Cách viết khác: **罒****,*** *罓****.**
+122.**网** Võng: Lưới để bắt thú hay đánh cá. Cách viết khác: **罒**,** *罓**.**
 
 123.**羊** Dương: Con dê.
 
@@ -351,7 +351,7 @@ rừng rậm. |
 
 139.**色** Sắc: Sắc mặt. diện mạo.
 
-140.**艸** Thảo: Cỏ. cách viết khác: **丱****,** **艸****,** **艹**.
+140.**艸** Thảo: Cỏ. cách viết khác: **丱**,** **艸**,** **艹**.
 
 141.**虍** Hô: Vằn lông con cọp.
 

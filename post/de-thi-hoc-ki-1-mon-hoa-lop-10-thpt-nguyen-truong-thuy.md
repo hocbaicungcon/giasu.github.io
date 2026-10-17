@@ -13,7 +13,7 @@ grade: 10
 
 GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
-- [CUỐI HỌC KÌ I](/assets/docs/CUOI-HOC-KI-I-4.doc)
+- [CUỐI HỌC KÌ I](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

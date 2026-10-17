@@ -132,7 +132,7 @@ grade: 10
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [PPCT-hoa-10-KNTT-co-chuyen-de](/assets/docs/PPCT-hoa-10-KNTT-co-chuyen-de-giasu.ai.vn.docx)
+- [PPCT-hoa-10-KNTT-co-chuyen-de](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

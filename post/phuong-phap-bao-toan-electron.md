@@ -11,19 +11,19 @@ tags:
 grade: 12
 ---
 
-***CHUYÊN ĐỀ 5:*** **PHƯƠNG PHÁP BẢO TOÀN ELECTRON**
+**CHUYÊN ĐỀ 5:** **PHƯƠNG PHÁP BẢO TOÀN ELECTRON**
 
 **I. Phương pháp bảo toàn electron**
 
 **1. Nội dung phương pháp bảo toàn electron**
 
-– Cơ sở của phương pháp bảo toàn electron là định luật bảo toàn electron :*Trong phản ứng oxi hóa – khử, tổng****số electron*** *mà các chất khử nhường luôn bằng tổng****số electron*** *mà các chất oxi hóa nhận.*
+– Cơ sở của phương pháp bảo toàn electron là định luật bảo toàn electron :*Trong phản ứng oxi hóa – khử, tổng**số electron** *mà các chất khử nhường luôn bằng tổng**số electron** *mà các chất oxi hóa nhận.*
 
 – Hệ quả của của định luật bảo toàn electron :
 
-● ***Hệ quả 1 :*** *Trong phản ứng oxi hóa – khử, tổng****số mol electron*** *mà các chất khử nhường luôn bằng tổng****số mol electron*** *mà các chất oxi hóa nhận.*
+● **Hệ quả 1 :** *Trong phản ứng oxi hóa – khử, tổng**số mol electron** *mà các chất khử nhường luôn bằng tổng**số mol electron** *mà các chất oxi hóa nhận.*
 
-● ***Hệ quả 2 :*** *Đối với những bài tập liên quan đến phản ứng oxi hóa – khử, nếu số mol electron mà chất khử nhường lớn hơn số mol electron mà chất oxi hóa nhận thì chất khử dư và ngược lại.*
+● **Hệ quả 2 :** *Đối với những bài tập liên quan đến phản ứng oxi hóa – khử, nếu số mol electron mà chất khử nhường lớn hơn số mol electron mà chất oxi hóa nhận thì chất khử dư và ngược lại.*
 
 – Phương pháp bảo toàn electron là*phương pháp giải bài tập hóa học sử dụng các hệ quả của định luật bảo toàn electron.*
 
@@ -31,15 +31,15 @@ grade: 12
 
 **a. Xét các hướng giải bài tập sau :**
 
-***Câu 40 – Mã đề 359:*** ****Dẫn luồng khí CO đi qua hỗn hợp gồm CuO và Fe2O3 nung nóng, sau một thời gian thu được chất rắn X và khí Y. Cho Y hấp thụ hoàn toàn vào dung dịch Ba(OH)2 dư, thu được 29,55 gam kết tủa. Chất rắn X phản ứng với dung dịch HNO3 dư thu được V lít khí NO (sản phẩm khử duy nhất ở đktc). Giá trị của V là :
+**Câu 40 – Mã đề 359:** **Dẫn luồng khí CO đi qua hỗn hợp gồm CuO và Fe2O3 nung nóng, sau một thời gian thu được chất rắn X và khí Y. Cho Y hấp thụ hoàn toàn vào dung dịch Ba(OH)2 dư, thu được 29,55 gam kết tủa. Chất rắn X phản ứng với dung dịch HNO3 dư thu được V lít khí NO (sản phẩm khử duy nhất ở đktc). Giá trị của V là :**
 
-**A.** 2,24. **B.** 4,48. **C.** 6,72 . **D.** 3,36.**
+**A.** 2,24. B.** 4,48. **C.** 6,72 . D.** 3,36.**
 
 *(Đề thi tuyển sinh đại học khối B năm 2012)*
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
-● ***Cách 1 :** Giải theo phương pháp thông thường****– Tính toán theo phương trình phản ứng*** **
+● **Cách 1 :** Giải theo phương pháp thông thường**– Tính toán theo phương trình phản ứng** **
 
 Chất rắn X có thể gồm các chất : Cu, Fe, (Fe2O3 và CuO) dư; Y là khí CO2 và có thể còn CO dư.
 
@@ -73,7 +73,7 @@ mol: (x+3y) (x+3y)
 
 Theo các phương trình phản ứng và giả thiết, ta có :
 
-● ***Cách 2 :** Sử dụng phương pháp bảo toàn electron*****
+● **Cách 2 :** Sử dụng phương pháp bảo toàn electron**
 
 Sơ đồ phản ứng :
 
@@ -89,7 +89,7 @@ Theo bảo toàn nguyên tố C và bảo toàn electron, ta có :
 
 **b. Kết luận :**
 
-So sánh 2 cách giải ở trên, ta thấy : Phương pháp bảo toàn electron có ưu điểm là trong quá trình làm bài tập*thay vì phải viết phương trình phản ứng, học sinh chỉ cần lập sơ đồ phản ứng,**tính toán đơn giản****và** c**ho kết quả nhanh.*
+So sánh 2 cách giải ở trên, ta thấy : Phương pháp bảo toàn electron có ưu điểm là trong quá trình làm bài tập*thay vì phải viết phương trình phản ứng, học sinh chỉ cần lập sơ đồ phản ứng,**tính toán đơn giản**và** c**ho kết quả nhanh.*
 
  Như vậy, nếu sử dụng phương pháp bảo toàn electron một cách hiệu quả thì *có thể tăng đáng kể tốc độ làm bài so với việc sử dụng phương pháp thông thường*. Đây là điều rất có ý nghĩa đối với các em học sinh trong quá trình làm bài thi trắc nghiệm.
 
@@ -113,9 +113,9 @@ Một số dạng bài tập thường dùng phương pháp bảo toàn electron
 
 Từ ví dụ ở trên, ta thấy có thể tính nhanh số mol electron trao đổi như sau :
 
-*–****Số mol electron*** *mà chất khử nhường =****số electron*** *chất khử nhường********số mol chất khử =*** *số electron****chất khử nhường*** *****số mol sản phẩm oxi hóa.*
+*–**Số mol electron** *mà chất khử nhường =**số electron** *chất khử nhường**số mol chất khử =** *số electron**chất khử nhường** **số mol sản phẩm oxi hóa.*
 
-*–****Số mol electron*** *mà chất oxi hóa nhận =****số electron*** *chất oxi hóa nhận********số mol chất oxi hóa =*** *số electron****chất oxi hóa nhận số mol sản phẩm khử.*
+*–**Số mol electron** *mà chất oxi hóa nhận =**số electron** *chất oxi hóa nhận**số mol chất oxi hóa =** *số electron**chất oxi hóa nhận số mol sản phẩm khử.*
 
 **Bảng tính nhanh số electron trao đổi trong một số quá trình oxi hóa – khử thường gặp**
 
@@ -145,13 +145,13 @@ Từ ví dụ ở trên, ta thấy có thể tính nhanh số mol electron trao 
 
 Đối với các quá trình oxi hóa – khử khác ta tính tương tự.
 
-** **Bổ sung kiến thức: Viết bán phản ứng oxi hóa*** **–** ***khử trong môi trường axit***
+** **Bổ sung kiến thức: Viết bán phản ứng oxi hóa** **–** **khử trong môi trường axit**
 
 Ví dụ: Viết quá trình khử của phản ứng sau : 
 
 Cu + H+ + Cu2+ + NO + H2O
 
-● ***Cách 1 :*** *Bảo toàn nguyên tố N, O và H*
+● **Cách 1 :** *Bảo toàn nguyên tố N, O và H*
 
 *Bước 1:* Viết : + 3e NO (1)
 
@@ -159,7 +159,7 @@ Cu + H+ + Cu2+ + NO + H2O
 
 4H+ + + 3e NO + 2H2O
 
-● ***Cách 2 :*** *Bảo toàn N, bảo toàn điện tích và bảo toàn H.*
+● **Cách 2 :** *Bảo toàn N, bảo toàn điện tích và bảo toàn H.*
 
 *Bước 1 :* Viết : + 3e NO (1)
 
@@ -171,11 +171,11 @@ Cu + H+ + Cu2+ + NO + H2O
 
 **II. Phân dạng bài tập và các ví dụ minh họa**
 
-**1.****Dạng 1: Tính lượng chất trong phản ứng oxi hóa – khử**
+**1.**Dạng 1: Tính lượng chất trong phản ứng oxi hóa – khử**
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
-- [PP5 – BẢO TOÀN ELECTRON](/assets/docs/PP5-BAO-TOAN-ELECTRON.pdf)
+- [PP5 – BẢO TOÀN ELECTRON](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

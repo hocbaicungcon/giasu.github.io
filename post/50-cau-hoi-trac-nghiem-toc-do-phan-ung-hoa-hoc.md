@@ -695,7 +695,7 @@ Dựa vào bảng số liệu sau, hãy tính tốc độ trung bình của ph�
 
 Gia Sư AI gửi các thầy cô và các em học sinh file Word tài liệu đầy đủ:
 
-- [Tải về file Word: cau-hoi-TN-td-puhh-UP.docx](/assets/docs/cau-hoi-TN-td-puhh-UP.docx)
+- [Tải về file Word: cau-hoi-TN-td-puhh-UP.docx](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm các bài viết liên quan:
 - [Tổng hợp giáo án và các chuyên đề dạy học hóa học 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)

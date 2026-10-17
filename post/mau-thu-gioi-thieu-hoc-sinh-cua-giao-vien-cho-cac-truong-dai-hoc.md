@@ -70,7 +70,7 @@ Tôi xin chân thành cảm ơn!
 
 Người giới thiệu
 
-GIA SƯ THÔNG MINH gửi các thầy cô link download file thư giới thiệu [Mẫu thư giới thiệu của giáo viên](/assets/docs/Mau-thu-gioi-thieu-cua-giao-vien.doc)
+GIA SƯ THÔNG MINH gửi các thầy cô link download file thư giới thiệu [Mẫu thư giới thiệu của giáo viên](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ←[Đề thi thử TN THPT 2022 môn hóa THPT Trần Quốc Tuấn Quảng Ngãi lần 1 có đáp án](/bai-viet/de-thi-thu-tn-thpt-2022-mon-hoa-thpt-tran-quoc-tuan-quang-ngai-lan-1-co-dap-an.html)
 [Đề thi HSG lớp 12 môn hóa tỉnh Bắc Giang năm 2021 2022](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-bac-giang-nam-2021-2022.html)→

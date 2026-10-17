@@ -255,7 +255,7 @@ b) Khi chuẩn độ 25 gam huyết tương máu của một lái xe cần dùng
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-truong-THPT-A-Kim-Bang-Ha-Nam.doc](/assets/docs/2023-2024-HSG-10-truong-THPT-A-Kim-Bang-Ha-Nam.doc-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-truong-THPT-A-Kim-Bang-Ha-Nam.doc](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

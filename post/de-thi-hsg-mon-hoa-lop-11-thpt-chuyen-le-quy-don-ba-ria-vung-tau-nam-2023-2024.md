@@ -139,8 +139,8 @@ Cán bộ coi thi không giải thích gì thêm.
 *Trường: ……………………………………………………………… Tỉnh/TP:………………………
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [11-HOA-HUONG-DAN-CHAM](/assets/docs/11-HOA-HUONG-DAN-CHAM-giasu.ai.vn.docx)
-- [11-HOA-DE](/assets/docs/11-HOA-DE-giasu.ai.vn.docx)
+- [11-HOA-HUONG-DAN-CHAM](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [11-HOA-DE](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -164,8 +164,8 @@ Cho các phương trình nhiệt hóa sau:
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG-HOA-HOC-11-CUM-TRUONG-THPT-GL-LB-2024](/assets/docs/HSG-HOA-HOC-11-CUM-TRUONG-THPT-GL-LB-2024-giasu.ai.vn.docx)
-- [HSG-HOA-HOC-11-HDC-CUM-TRUONG-THPT-GL-LB-2024](/assets/docs/HSG-HOA-HOC-11-HDC-CUM-TRUONG-THPT-GL-LB-2024-giasu.ai.vn.docx)
+- [HSG-HOA-HOC-11-CUM-TRUONG-THPT-GL-LB-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HSG-HOA-HOC-11-HDC-CUM-TRUONG-THPT-GL-LB-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

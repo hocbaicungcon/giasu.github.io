@@ -17,9 +17,9 @@ grade: 11
 
 Câu hỏi trắc nghiệm bài 9 ngành sản suất dầu mỏ vấn đề môi trường nguồn nhiên liệu thay thế dầu mỏ chuyên đề CTST
 
-**BÀI 9- SẢN XUẤT DẦU MỎ- VẤN ĐỀ MÔI TRƯỜNG- NGUỒN NGUYÊN LIỆU THAY THẾ DẦU MỎ
-**A. TÓM TẮT LÝ THUYẾT
-**1. TRỮ LƯỢNG DẦU MỎ
+**BÀI 9- SẢN XUẤT DẦU MỎ- VẤN ĐỀ MÔI TRƯỜNG- NGUỒN NGUYÊN LIỆU THAY THẾ DẦU MỎ**
+**A. TÓM TẮT LÝ THUYẾT**
+**1. TRỮ LƯỢNG DẦU MỎ**
 -Trữ lượng và sản lượng dầu khí của thế giới phân bố không đều giữa các châu lục và khu vực kinh tế.
 
 +Các nước OPEC kiểm soát hơn 40%sản lượng dầu mỏ.
@@ -46,7 +46,7 @@ Câu hỏi trắc nghiệm bài 9 ngành sản suất dầu mỏ vấn đề mô
 
 ètrữ lượng và sự tiêu thụ dầu mỏ trên thế giới là nguồn nguyên liệu quý nhưng không thể tái tạo.
 
-**II. DẦU MỎ VIỆT NAM
+### Ii. Dầu Mỏ Việt Nam
 Việt Nam là quốc gia có tài nguyên dầu khí và ngành công nghiệp dầu khí có nhiều đóng góp quan trọng đối với kinh tế quốc dân. Dầu khí mang lại trên 20% tổng thu ngân sách, đóng góp 16 – 18% GDP trong các năm qua.
 
 -Dầu mỏ và khí thiên nhiên ở nước ta *tập trung chủ yếu ở thềm lục địa phía Nam.
@@ -65,7 +65,7 @@ Từ đó đến nay, việc khai thác dầu và khí thiên nhiên không ng�
 
 +các nhà máy chế biến condensate (khí ngưng tụ) 
 
-**Mục tiêu đặt ra cho ngành Dầu khí :
+**Mục tiêu đặt ra cho ngành Dầu khí :**
 – Đóng góp lớn cho GDP và ngân sách quốc gia.
 
 – Duy trì sự tăng trưởng các mục tiêu về gia tăng trữ lượng, sản lượng khai thác dầu khí. –
@@ -78,7 +78,7 @@ Từ đó đến nay, việc khai thác dầu và khí thiên nhiên không ng�
 
 -Quản lý vốn đầu tư, công tác quản lý cán bộ và xây dựng lực lượng lao động trình độ kỹ thuật cao.
 
-***Tên một vài công ty kinh doanh xăng dầu:
+**Tên một vài công ty kinh doanh xăng dầu:**
 
 Tập đoàn Xăng dầu Việt Nam (Petrolimex)
 
@@ -94,7 +94,7 @@ Công ty Cổ Phần Petro Times 
 
 Công ty Cổ phần Dầu khí Đông Phương (Orient Oil) 
 
-**III. VẤN ĐỀ MÔI TRƯỜNG TRONG KHAI THÁC DẦU MỎ
+### Iii. Vấn Đề Môi Trường Trong Khai Thác Dầu Mỏ
 1. **Sự cố tràn dầu do:
 + Hoạt động tìm kiếm
 
@@ -115,15 +115,15 @@ Ví dụ, các hiện tượng rò rỉ, phụt dầu, vỡ đường ống, v�
 
 +**Hóa học:** đốt, tác nhân tao gel, sử dụng chất liệu hấp phụ..
 
-**IV. VẤN ĐỀ RÁC DẦU TRONG QUÁ TRÌNH KHAI THÁC DẦU MỎ
-**Rác dầu là gì?
+### Iv. Vấn Đề Rác Dầu Trong Quá Trình Khai Thác Dầu Mỏ
+**Rác dầu là gì?**
 +Trong quá trình khai thác dầu mỏ một số loại rác dầu phát sinh từ các  hoạt động khoan tìm kiếm, thăm dò và khai thác dầu khí.
 
 +Hoạt động vệ sinh, súc rửa tàu, hoạt động chế biến dầu
 
 àPhải xử lí những rác dầu, nếu không sẽ ảnh hưởng đến  hiệu suất quá trình, chất lượng sản phẩm, môi trường,…
 
-**V. MỘT SỐ NHIÊN LIỆU THAY THẾ DẦU MỎ
+### V. Một Số Nhiên Liệu Thay Thế Dầu Mỏ
 1. **Than đá.
 2. **Khí thiên nhiên.
 3. **Đá phiến.
@@ -150,17 +150,17 @@ Một số nguồn năng lượng tái tạo được: 
 
 Hiện nay nhiên liệu hydrogen chưa được sử dụng phổ biến vì trong điều kiện bình thường, H2 là nguồn năng lượng thứ cấp, nghĩa là nó không có sẵn để khai thác trực tiếp mà phải được tạo ra từ một nguồn sơ cấp ban đầu là nước hoặc các hợp chất hydrocarbon khác (sản xuất từ methane, than, điện phân nước, …)
 
-**B. CÂU HỎI TRẮC NGHIỆM
-**MỨC ĐỘ 1 : BIẾT
+**B. CÂU HỎI TRẮC NGHIỆM**
+**MỨC ĐỘ 1 : BIẾT**
 **Câu 1.** Dầu mỏ và khí thiên nhiên ở nước ta tập trung ở
 
- **A.** ở thềm lục địa phía Nam. **B.** ở thềm lục địa phía Bắc*.* C. **ở vùng vùng núi phía Nam.**                                   D. **ở vùng vùng núi phía Bắc. Câu 2.** Trong tự nhiên, dầu mỏ có ở đâu?
+ **A.** ở thềm lục địa phía Nam. B.** ở thềm lục địa phía Bắc*.* C. **ở vùng vùng núi phía Nam.**                                   D. **ở vùng vùng núi phía Bắc. Câu 2.** Trong tự nhiên, dầu mỏ có ở đâu?**
 
- **A.** Trong lòng đất.             **B**. Trong khí metan.          **C.** Trên khí quyển.            **D.** Trong lòng biển.
+ **A.** Trong lòng đất.             B**. Trong khí metan.          **C.** Trên khí quyển.            D.** Trong lòng biển.
 
 **Câu 3.** Dầu mỏ nước ta có hàm lượng hợp chất chứa lưu huỳnh là
 
-     **A.** nhỏ hơn 0,5%.                **B.** lớn hơn 0,5%. **C.** bằng 0,5%. **D.** bằng 0,05%.
+     **A.** nhỏ hơn 0,5%.                B.** lớn hơn 0,5%. **C.** bằng 0,5%. D.** bằng 0,05%.
 
 **Câu 4.** Nhận xét nào sau đây là đúng về dầu mỏ?
 
@@ -168,21 +168,21 @@ Hiện nay nhiên liệu hydrogen chưa được sử dụng phổ biến vì t
 
  **B.** chất lỏng sánh, màu đen, không tan trong nước, nặng hơn nước.
 
- **C.** hất lỏng sánh, màu nâu đen, tan trong nước, nhẹ hơn nước.      D.** chất lỏng sánh, màu nâu đen, tan trong nước, nặng hơn nước..
+ **C.** hất lỏng sánh, màu nâu đen, tan trong nước, nhẹ hơn nước.      D. chất lỏng sánh, màu nâu đen, tan trong nước, nặng hơn nước..
 
 **Câu  5 .** Trong lịch sử gần đây, quốc gia nào nằm trong top nhà sản xuất dầu hàng đầu thế giới?
 
- **A.** Hoa Kỳ.                                                                   **B.** Ả-rập Xê-út       C. **tiểu vương quốc Ả rập Thống nhất.**                        D.**  Nga.
+ **A.** Hoa Kỳ.                                                                   B.** Ả-rập Xê-út       C. **tiểu vương quốc Ả rập Thống nhất.**                        D.**  Nga.
 
 **Câu 6:** Quốc gia nào có trữ lượng dầu đã được chứng minh nhiều nhất trên thế giới?
 
- **A.** Ả-rập Xê-út                  **B.** Hoa Kỳ.                        **C.** Venezuela.                 **D.**  Nga.
+ **A.** Ả-rập Xê-út                  B.** Hoa Kỳ.                        **C.** Venezuela.                 D.**  Nga.
 
 **Câu 7:** Từ viết tắt OPEC là viết tắt của từ gì?
 
-**A.** Tổ chức các nước xuất khẩu dầu mỏ.                     **B.** Tổ chức các nước sản xuất dầu mỏ.                
+**A.** Tổ chức các nước xuất khẩu dầu mỏ.                     B.** Tổ chức các nước sản xuất dầu mỏ.                **
 
-**C.** Tổ chức các nước xuất khẩu khí đốt.                      **D.** Tổ chức các nước chế biến dầu mỏ.
+**C.** Tổ chức các nước xuất khẩu khí đốt.                      D.** Tổ chức các nước chế biến dầu mỏ.**
 
 **Câu 8:** Dầu mỏ không có nhiệt độ sôi nhất định vì: 
 
@@ -204,27 +204,27 @@ Hiện nay nhiên liệu hydrogen chưa được sử dụng phổ biến vì t
 
      **D.** Cung cấp nhiên liệu cho ô tô, xe tải, máy bay và tàu thuỷ.
 
-**Câu 10:** T**rữ lượng dầu mỏ thế giới tập trung nhiều nhất ở vùng nào?
+**Câu 10:** T**rữ lượng dầu mỏ thế giới tập trung nhiều nhất ở vùng nào?**
 
-      **A.** Bắc Mĩ. **B.** Trung Đông.                  **C.** Châu Đại Dương.         **D.** Châu Âu.
+      **A.** Bắc Mĩ. B.** Trung Đông.                  **C.** Châu Đại Dương.         D.** Châu Âu.
 
 **Câu 11:** Công ty kinh doanh xăng dầu gọi tắt Petrolimex là
 
- **A.** Tập đoàn Xăng dầu Việt Nam.                               **B.** Công ty Xăng dầu Quân đội .                          
+ **A.** Tập đoàn Xăng dầu Việt Nam.                               B.** Công ty Xăng dầu Quân đội .                          **
 
- **C.** Tổng công ty Dầu Việt Nam – CTCP.                    **D.** Công ty xăng dầu Bà rịa – Vũng tàu.
+ **C.** Tổng công ty Dầu Việt Nam – CTCP.                    D.** Công ty xăng dầu Bà rịa – Vũng tàu.**
 
 **Câu 12:** Có mấy phương pháp xử lý sự cố tràn dầu?
 
- **A.** 1.                                  **B.** 2.                                   **C.** 3.                                   **D.** 4.
+ **A.** 1.                                  B.** 2.                                   **C.** 3.                                   D.** 4.
 
 **Câu 13:** Hoạt động thăm dò, khai thác và vận chuyển dầu khí đã mang lại nhiều lợi ích cho nền kinh tế và xã hội nhưng cũng chứa đựng những tiềm ẩn về nguy cơ gây ô nhiễm môi trường do
 
-**A.** các sự cố khí dầu thoát ra.                                      **B.** các sự cố tràn dầu. C.**rác thải con người thải ra.** D.** khí thải sinh ra.
+**A.** các sự cố khí dầu thoát ra.                                      B.** các sự cố tràn dầu. C.**rác thải con người thải ra.** D.** khí thải sinh ra.
 
 **Câu 14:** Cho một số nguồn nguyên liệu như sau: than đá, đá dầu, khí thiên nhiên, hidrogen… nguyên liệu sạch là
 
- **A.** hidrogen.                      **B.** than đá                          **C.** đá dầu                           **D.** dầu mỏ.
+ **A.** hidrogen.                      B.** than đá                          **C.** đá dầu                           D.** dầu mỏ.
 
 **Câu 15:** Vì sao hydrogen được coi là nhiên liệu không gây ô nhiễm môi trường?
 
@@ -236,7 +236,7 @@ Hiện nay nhiên liệu hydrogen chưa được sử dụng phổ biến vì t
 
 **D.** vì được sản xuất từ các nguyên liệu rẻ, sẵn có .
 
-**MỨC ĐỘ 2 : HIỂU
+**MỨC ĐỘ 2 : HIỂU**
 **Câu 1.** Nhận xét nào sau đây là **sai**?
 
 **A.** Dầu mỏ là hỗn hợp tự nhiên của nhiều loại hiđrocacbon.
@@ -249,18 +249,18 @@ Hiện nay nhiên liệu hydrogen chưa được sử dụng phổ biến vì t
 
 **Câu 2.** Dầu được đo bằng thùng, một thùng chứa bao nhiêu US gallon dầu thô:
 
- **A.** 42.                                 **B.** 112.                               **C.** 82.                                 **D.** 100.
+ **A.** 42.                                 B.** 112.                               **C.** 82.                                 D.** 100.
 
 **Câu 3.** Quan sát các Hình 9.6, Hình 9.7 và Hình 9.8, hãy cho biết cách xử lí sự cố tràn dầu nào hiện nay được các nước sử dụng hiệu quả.
 
 **A.** Sử dụng các chất phân hủy dầu nhờ tác nhân tự nhiên hay vi sinh vật( nấm. vi khuẩn)
 
-**B.** sử dụng chất hấp phụ**.
-**C.** Sử dụng phương pháp vật lí (Dùng phao giữ dầu nổi trên mặt nước, dùng máy hút dầu, sử dụng Skimmer (hút dầu), dùng nước nóng và rửa cao áp). D.** Sử dụng các chất phân hủy dầu nhờ tác nhân tự nhiên hay vi sinh vật( nấm. vi khuẩn) thuc đẩy quá trình phân hủy Hidrocacbon.
+**B.** sử dụng chất hấp phụ.
+**C.** Sử dụng phương pháp vật lí (Dùng phao giữ dầu nổi trên mặt nước, dùng máy hút dầu, sử dụng Skimmer (hút dầu), dùng nước nóng và rửa cao áp). D. Sử dụng các chất phân hủy dầu nhờ tác nhân tự nhiên hay vi sinh vật( nấm. vi khuẩn) thuc đẩy quá trình phân hủy Hidrocacbon.
 
 **Câu 4.** Vì sao khi có sự cố tràn dầu trên biển, dầu lan rất nhanh trên mặt nước rồi phân tán vào nước, bề mặt nước bị ô nhiễm cũng lan rộng rất nhanh?
 
-**A.** vì dầu có khối lượng riêng lớn hơn nước, không tan trong nước. B. **vì dầu có khối lượng riêng nhỏ hơn nước, không tan trong nước. C.** Dầu mỏ nổi trên bề mặt nước làm biển bị che phủ, làm giảm sự trao đổi oxygen giữ không khí và nước.
+**A.** vì dầu có khối lượng riêng lớn hơn nước, không tan trong nước. B. vì dầu có khối lượng riêng nhỏ hơn nước, không tan trong nước. C.** Dầu mỏ nổi trên bề mặt nước làm biển bị che phủ, làm giảm sự trao đổi oxygen giữ không khí và nước.**
 
 **D.** các chất độc có trong dầu làm biến đổi, phá hủy cấu trúc tế bào sinh vật.
 
@@ -278,23 +278,23 @@ Hiện nay nhiên liệu hydrogen chưa được sử dụng phổ biến vì t
 
 Số phát biểu đúng là
 
-**A.** 2.                                   **B.** 5.                                   **C.** 3.                                   **D.** 4.
+**A.** 2.                                   B.** 5.                                   **C.** 3.                                   D.** 4.
 
-**Câu 6.**  Dầu mỏ được tìm thấy trong loại đá nào là       A.**đá lửa** B. **Đá vôi** C. **đá trầm tích** D.** đá biến chất.
+**Câu 6.**  Dầu mỏ được tìm thấy trong loại đá nào là       A.**đá lửa** B. **Đá vôi** C. **đá trầm tích** D.** đá biến chất.**
 
 **Câu 7.** Từ “dầu khí” có nguồn gốc từ hai từ Hy Lạp cổ đại, từ “petra” có nghĩa là gì trong tiếng Hy Lạp?
 
- **A.** đá.                                 **B.** Nước.                            **C.** Cây.                              **D.** đất.
+ **A.** đá.                                 B.** Nước.                            **C.** Cây.                              D.** đất.
 
 **Câu 8.** Đá phiến dầu là một loại đá trầm tích hạt mịn giàu chất hữu cơ và chứa một lượng lớn chất A, là một chất [hữu cơ](https://energyeducation.ca/encyclopedia/Organic_molecule) dạng sáp, không hòa tan , hình thành khi [đá phiến sét](https://energyeducation.ca/encyclopedia/Shale) hữu cơ bị chôn vùi dưới nhiều lớp [trầm tích](https://energyeducation.ca/encyclopedia/Sediment) và được nung nóng. Nếu chất kerogen này được đốt nóng liên tục, nó sẽ dẫn đến việc giải phóng chậm [các nhiên liệu hóa thạch](https://energyeducation.ca/encyclopedia/Fossil_fuel) như [dầu](https://energyeducation.ca/encyclopedia/Oil) và [khí tự nhiên , cũng như than chì hợp chất ](https://energyeducation.ca/encyclopedia/Natural_gas)[carbon](https://energyeducation.ca/encyclopedia/Carbon) phi nhiên liệu. Vật chất A là
 
- **A.** khí gas                          **B.** Đá phiến sét . **C.** than đá.                         **D.** Kerogen .
+ **A.** khí gas                          B.** Đá phiến sét . **C.** than đá.                         D.** Kerogen .
 
 **Câu 9.** Để loại bỏ các khí HCl, Cl2, CO2 và SO2 có lẫn trong khí N2 người ta sử dụng lượng dư dung dịch
 
-    **A.** AgNO3.                         **B.** Ca(OH)2.                      **C.** H2SO4.                          **D.** CuCl2.
+    **A.** AgNO3.                         B.** Ca(OH)2.                      **C.** H2SO4.                          D.** CuCl2.
 
-**Câu 10.** Trong các nguồn năng lượng dưới đây, bao nhiêu nguồn năng lượng ***không phải*** là năng lượng sạch ? (Khi sử dụng năng lượng đó sẽ tạo ra khí thải gây ồ nhiễm môi trường) ?
+**Câu 10.** Trong các nguồn năng lượng dưới đây, bao nhiêu nguồn năng lượng **không phải** là năng lượng sạch ? (Khi sử dụng năng lượng đó sẽ tạo ra khí thải gây ồ nhiễm môi trường) ?
 (1) Năng lượng mặt trời.
 
 (2) Năng lượng gió.
@@ -305,7 +305,7 @@ Số phát biểu đúng là
 
 (5) Năng lượng nước.
 
- **A.** 3.                                   **B.** 2.                                   **C.** 1.                                   **D.** 4.
+ **A.** 3.                                   B.** 2.                                   **C.** 1.                                   D.** 4.
 
 **Câu 11.** Để giảm thiểu sự ảnh hưởng tới môi trường của các nhiên liệu hoá thạch này, các quốc gia có các giải pháp sau: 
 
@@ -313,18 +313,18 @@ Số phát biểu đúng là
 
 Nhóm nào sau đây chỉ gồm các câu đúng?
 
- **A.** a, b,c, d.                        **B.** a, c, d.                           **C.** a, b, c, d, e.                   **D.** b, c, d, e.
+ **A.** a, b,c, d.                        B.** a, c, d.                           **C.** a, b, c, d, e.                   D.** b, c, d, e.
 
-**MỨC ĐỘ 3, 4 : VẬN DỤNG – VẬN DỤNG CAO
+**MỨC ĐỘ 3, 4 : VẬN DỤNG – VẬN DỤNG CAO**
 **Câu 1:** Xăng E5 được sản xuất bằng cách phối trộn xăng khoáng RON 92 với etanol
 (d = 0,8 gam/ml) theo tỉ lệ thể tích tương ứng là 95: 5. Etanol được sản xuất từ tinh bột bằng phương
 pháp lên men. Tính khối lượng bột sắn khô (chứa 75% khối lượng là tinh bột, các thành phần khác
 không tạo etanol) cần dùng để sản xuất etanol đủ phối trộn thành 140 m3 xăng E5, biết hiệu suất của
 toàn bộ các quá trình nêu trên đạt 80%.
 
-     **A.** 16,435 tấn                     **B.** 279.39 tấn                     **C.** 7,88869tấn **D.** 5,9165 tấn
+     **A.** 16,435 tấn                     B.** 279.39 tấn                     **C.** 7,88869tấn D.** 5,9165 tấn
 
-***Hướng dẫn giải
+**Hướng dẫn giải**
  – Khối lượng C2H5OH trong 100m3 xăng E5 = 140 . 5% . 0,8 = 5,6 tấn
 
 – Quá trình tạo C2H5OH: (C6H10O5)n → nC6H12O6 → 2nC2H5OH
@@ -332,9 +332,9 @@ toàn bộ các quá trình nêu trên đạt 80%.
 – Khối lượng sắn cần dùng =  = **16,435 tấn
 **Câu 2:** Xăng E90 có tỉ lệ 90% ethanol và 10% xăng về thể tích. Người ta phải thêm bao nhiêu lít ethanol vào 1 lít xăng E85 để có xăng E90? (Giả sử không có hao hụt thể tích khi pha trộn)
 
- **A.** 0,5 lít.                           **B**. 1 lít.                               **C.** 0,1 lít.                           **D**. 0,6 lít.
+ **A.** 0,5 lít.                           B**. 1 lít.                               **C.** 0,1 lít.                           D**. 0,6 lít.
 
-***Hướng dẫn giải
+**Hướng dẫn giải**
 Trong 1 lít xăng E85 có 0,15 lít xăng và 0,85 lít ethanol
 
 Trong 1 lít xăng E90 có 0,1 lít xăng và 0,9 lít ethanol => Thể tích ethanol gấp 9 lần thể tích xăng
@@ -351,21 +351,21 @@ Gọi số ethanol cần thêm vào 1 lít xăng E85 là a lít
 
 Vậy số ethanol cần thêm vào 1 lít xăng E85 là 0,5 lít để tạo thành xăng E90
 
-*** * Câu 3.**Vì sao dầu mỏ được xem là nguồn nhiên liệu quan trọng của thế giới hiện nay? Tìm dẫn chứng để chứng minh ngành công nghiệp dầu mỏ đã góp phần quan trọng vào việc phát triển của kinh tế của nước ta.
+** * Câu 3.**Vì sao dầu mỏ được xem là nguồn nhiên liệu quan trọng của thế giới hiện nay? Tìm dẫn chứng để chứng minh ngành công nghiệp dầu mỏ đã góp phần quan trọng vào việc phát triển của kinh tế của nước ta.
 
-***Hướng dẫn giải
+**Hướng dẫn giải**
                Dầu mỏ là nguồn tài nguyên vô cùng quý giá đối với mỗi quốc gia. Cùng với việc cung cấp nhiên liệu (xăng, dầu diesel, dầu hoả) cho các phương tiện giao thông, các động cơ phát điện,…, dầu mỏ cũng là nguyên liệu chủ yếu của ngành hoá dầu, tạo ra dung môi, phân bón, thuốc trừ sâu, nhựa dẻo, nhựa đường,… 
 
 Dẫn chứng để chứng minh ngành công nghiệp dầu mỏ đã góp phần quan trọng vào việc phát triển kinh tế của Việt Nam trong những năm qua: 
 
 **Câu 4:** Từ trữ lượng và sản lượng dầu mỏ của thế giới cho thấy dầu mỏ không phải vô tận, em hãy đề xuất cách tiết kiệm nhiên liệu ở gia đình và địa phương.
 
-***Hướng dẫn giải
+**Hướng dẫn giải**
 *    Tiết kiệm nhiên liệu khi đi xe máy, ô tô
 *Tiết kiệm nhiên liệu khi đun nấu:
 **Câu 5:** Một loại than đá có chứa 2% sulfur dùng cho một nhà máy nhiệt điện. Nếu nhà máy đốt hết 100 tấn than trong một ngày đêm, tính khối lượng SO2 do nhà máy nhiệt điện xả vào khí quyển trong thời gian đó. Đề xuất nhiên liệu thay thế để hạn chế ô nhiễm môi trường.
 
-***Hướng dẫn giải
+**Hướng dẫn giải**
 Khối lượng lưu huỳnh trong 1 tấn than đá là: 100.2% = 2 (tấn).
 
 Khối lượng SO2 tạo thành trong 1 ngày đêm là: 2.64 / 32 = 4 (tấn)
@@ -376,8 +376,8 @@ Nguyên liệu thay thế có thể sử dụng: Hydrogen, than sinh học, Khí
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_](/assets/docs/62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_.docx)
-- [62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le](/assets/docs/62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le.docx)
+- [62.1-CTST-Bai-9-CDHT-NguyenThiCamAn.ok_](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [62.2.BAI-9-CDHT-CTST-San-xuat-dau-mo-van-de-moi-truong-nguon-nguyen-lieu-thay-the-dau-mo-Thienmy-Le](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

@@ -153,8 +153,8 @@ K1 = 1,0 ´ 10-7 và K2 = 1,3 ´ 10-13.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [DAP-AN-HOA-10](/assets/docs/DAP-AN-HOA-10.doc)
-- [DAP-AN-HOA-10](/assets/docs/DAP-AN-HOA-10.pdf)
+- [DAP-AN-HOA-10](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [DAP-AN-HOA-10](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

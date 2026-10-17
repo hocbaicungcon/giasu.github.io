@@ -20,20 +20,20 @@ Giáo án chuyên đề hoá 10 Bài 9 thực hành vẽ cấu trúc phân tử
 |   |  |
 |   |   |
 
-**I. MỤC TIÊU
-**1.  Về năng lực
-**a) Nhận thức hóa học
+### I. Mục Tiêu
+**1.  Về năng lực**
+**a) Nhận thức hóa học**
 – Vẽ được công thức cấu tạo, công thức Lewis của một số chất vô cơ và hữu cơ.
 
 – Lưu được các flie, chèn được hình ảnh vào file Word, PowerPoint.
 
-**b) Tìm hiểu thế giới tự nhiên dưới góc độ hóa học
+**b) Tìm hiểu thế giới tự nhiên dưới góc độ hóa học**
 – Thảo luận, quan sát, vẽ, lắp ráp được cấu tạo của một số chất vô cơ và hữu cơ. Chèn được hình ảnh đã vẽ vào file Word, PowerPoint.
 
-**c) Vận dụng kiến thức, kĩ năng đã học
+**c) Vận dụng kiến thức, kĩ năng đã học**
 – Sử dụng phần mềm để biểu diễn cấu tạo của một số chất, từ đó xác định được mối liên hệ giữa cấu tạo và tính chất của chất
 
-**2. Về phẩm chất
+**2. Về phẩm chất**
 – *Trách nhiệm*: nghiêm túc thực hiện các nhiệm vụ học tập được giao đúng tiến độ.
 
 – *Trung thực*: thành thật trong việc thu thập các tài liệu, viết báo cáo và các bài tập.
@@ -42,14 +42,14 @@ Giáo án chuyên đề hoá 10 Bài 9 thực hành vẽ cấu trúc phân tử
 
    – *Nhân ái*: quan tâm, giúp đỡ, chia sẻ những khó khăn trong việc thực hiện nhiệm vụ học tập
 
-**II.  THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU
-**1. Thiết bị:
+### Ii.  Thiết Bị Dạy Học Và Học Liệu
+**1. Thiết bị:**
    – Máy tính để vẽ công thức.
 
 – Phiếu học tập
 
-**2. Học liệu:
-**III. TIẾN TRÌNH DẠY HỌC
+**2. Học liệu:**
+### Iii. Tiến Trình Dạy Học
 | Tiết | Hoạt động | Phương pháp/Kỹ thuật dạy học | Phương pháp/Công cụ đánh giá |
 | --- | --- | --- | --- |
 |  | 1: Mở đầu |   |   |
@@ -57,15 +57,15 @@ Giáo án chuyên đề hoá 10 Bài 9 thực hành vẽ cấu trúc phân tử
 | 3 | 2.3. Vẽ công thức Lewis của amoniac. 2.4. Hiển thị cấu trúc phân tử C2H6 và H2SO4 dưới dạng 3D. | – Phương pháp: Nhóm. – Kĩ thuật: Hỏi và trả lời | – Quan sát – Hỏi đáp   |
 | 4 | 2.5. Sao chép công thức hoặc mô hình phân tử sang file word hoặc pp có thể chỉnh sửa. 2.6. Sao chép công thức hoặc mô hình phân tử sang file word hoặc pp dưới dạng tĩnh. | – Phương pháp: Nhóm. – Kĩ thuật: Hỏi và trả lời | – Quan sát – Hỏi đáp   |
 
-**III. TIẾN TRÌNH DẠY HỌC
-**1. Hoạt động 1:  Khởi động
-**a) Mục tiêu: Kích thích hứng thú, tạo tư thế sẵn sàng học tập và tiếp cận nội dung bài học.
+### Iii. Tiến Trình Dạy Học
+**1. Hoạt động 1:  Khởi động**
+**a) Mục tiêu: Kích thích hứng thú, tạo tư thế sẵn sàng học tập và tiếp cận nội dung bài học.**
 **b) Nội dung:** GV trình bày vấn đề, HS lắng nghe.
 
 **c) Sản phẩm:** HS biết được những vấn đề liên quan đến bài học mới.
 
-**d) Tổ chức thực hiện:
-*** Chuyển giao  nhiệm vụ học tập:
+**d) Tổ chức thực hiện:**
+** Chuyển giao  nhiệm vụ học tập:**
 – GV chiếu các hình ảnh sau:
 
 | CÔNG THỨC CẤU TẠO CỦA C2H4 | CÔNG THỨC LEWIS CỦA NH3 |
@@ -74,21 +74,21 @@ Giáo án chuyên đề hoá 10 Bài 9 thực hành vẽ cấu trúc phân tử
 
 – GV đặt vấn đề: Hiện nay, có nhiều phần mềm máy tính để vẽ công thức cấu tạo, công thức Lewis và cấu trúc phân tử của các chất như các hình trên. Vậy các phần mềm đó là gì và chúng ta cần thực hiện các bước như thế nào để vẽ được công thức cấu tạo, công thức Lewis, cấu trúc phân tử và chèn được chúng vào file Word hoặc PowerPoint?
 
-*** Thực hiện nhiệm vụ:
+** Thực hiện nhiệm vụ:**
 – HS lắng nghe để hiểu rõ mục tiêu của bài học.
 
-***  Báo cáo , thảo luận:
+**  Báo cáo , thảo luận:**
 – HS thảo luận để trả lời câu hỏi: Các phần mềm vẽ công thức cấu tạo, công thức Lewis và cấu trúc phân tử của các chất? Các bước thực hiện như thế nào?
 
-*** Kết quả, nhận định:
+** Kết quả, nhận định:**
 – GV dẫn dắt vào bài mới
 
 – HS biết được những vấn đề liên quan đến bài học mới.
 
 **2.  Hoạt động 2: Hình thành kiến thức mới/giải quyết vấn đề**(thời gian ………………)
 
-**Hoạt động 2.1 và 2.2: Vẽ công thức cấu tạo và công thức Lewis của chất  (20 phút)
-**a) Mục tiêu:
+**Hoạt động 2.1 và 2.2: Vẽ công thức cấu tạo và công thức Lewis của chất  (20 phút)**
+**a) Mục tiêu:**
 – Vẽ được công thức cấu tạo và công thức Lewis của một số chất.
 
 **b) Nội dung:** Lớp chia thành 4 nhóm tìm hiểu **ở nhà** lên báo cáo:
@@ -101,7 +101,7 @@ Giáo án chuyên đề hoá 10 Bài 9 thực hành vẽ cấu trúc phân tử
 
 – Sau đó nhóm 3 sẽ hướng dẫn nhóm 1 vẽ công thức cấu tạo của các sulfuric acid H2SO4, nhóm 4 sẽ hướng dẫn nhóm 2 vẽ công thức cấu tạo của sulfuric acid H2SO4.
 
-**PHIẾU HỌC TẬP SỐ 1
+**PHIẾU HỌC TẬP SỐ 1**
 Hoàn thành bảng sau:
 
 | Các bước | Ethane C2H6 | Ethene C2H4 | Ethyne C2H2 |
@@ -113,7 +113,7 @@ Hoàn thành bảng sau:
 | Bước 5. |   |   |   |
 | Bước 6. |   |   |   |
 
-**PHIẾU HỌC TẬP SỐ 2
+**PHIẾU HỌC TẬP SỐ 2**
 Hoàn thành bảng sau:
 
 | Các bước | sulfuric acid H2SO4 |
@@ -128,7 +128,7 @@ Hoàn thành bảng sau:
 
 – Nhóm 1, 2: Báo cáo cách vẽ công thức cấu tạo của các chất ethane C2H6, ethene C2H4 và ethyne C2H2.
 
-**PHIẾU HỌC TẬP SỐ 1
+**PHIẾU HỌC TẬP SỐ 1**
 Hoàn thành bảng sau:
 
 | Các bước | Ethane C2H6 | Ethene C2H4 | Ethyne C2H2 |
@@ -142,7 +142,7 @@ Hoàn thành bảng sau:
 
 – Nhóm 3, 4: Báo cáo cách vẽ công thức cấu tạo của sulfuric acid H2SO4.
 
-**PHIẾU HỌC TẬP SỐ 2
+**PHIẾU HỌC TẬP SỐ 2**
 Hoàn thành bảng sau:
 
 | Các bước | Sulfuric acid H2SO4 |
@@ -157,7 +157,7 @@ Hoàn thành bảng sau:
 
 – Sau đó nhóm 3 sẽ hướng dẫn nhóm 1 vẽ công thức cấu tạo của các sulfuric acid H2SO4, nhóm 4 sẽ hướng dẫn nhóm 2 vẽ công thức cấu tạo của sulfuric acid H2SO4.
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 – Chuyển giao nhiệm vụ: Yêu cầu hs cử đại diện lên báo cáo theo nhóm phần chuẩn bị ở nhà và dạy các nhóm còn lại vẽ công thức phần mình chuẩn bị:
 
 + Nhóm 1 sẽ hướng dẫn nhóm 3 vẽ công thức cấu tạo của các chất ethane C2H6, ethene C2H4 và ethyne C2H2, nhóm 2 sẽ hướng dẫn nhóm 4 vẽ công thức cấu tạo của các chất ethane C2H6, ethene C2H4 và ethyne C2H2.
@@ -170,16 +170,16 @@ Hoàn thành bảng sau:
 
          – Kết quả, nhận định: GV đánh giá, kết luận và chốt kiến thức.
 
-**Hoạt động 2.3: Vẽ công thức Lewis của ammonia (NH3)
-**a) Mục tiêu:
+**Hoạt động 2.3: Vẽ công thức Lewis của ammonia (NH3)**
+**a) Mục tiêu:**
 – Vẽ được công thức Lewis của một số chất trên phần mềm Chemsketch
 
 **b) Nội dung:** Thảo luận theo nhóm và đàm thoại gợi mở để tìm hiểu cách vẽ công thức Lewis trên phần mềm Chemsketch.
 
 **c) Sản phẩm:** HS vẽ được công thức Lewis của NH3, HCl, H2O, CO2trên phần mềm Chemsketch
 
-**d) Tổ chức thực hiện:
-*** Chuyển giao  nhiệm vụ học tập:
+**d) Tổ chức thực hiện:**
+** Chuyển giao  nhiệm vụ học tập:**
 **–** Kiểm tra bài cũ: vẽ công thức cấu tạo của NH3,C2H6, H2SO4 trong giao diệnChemsketch (thực hiện trên máy tính của GV có kết nối với máy chiếu để cho các HS bên dưới quan sát).
 
 – GV hướng dẫn HS các bước tiếp theo để vẽ công thức Lewis của NH3 (thực hiện trên máy tính của GV có kết nối với máy chiếu để cho các HS bên dưới quan sát)
@@ -196,26 +196,26 @@ Màn hình sẽ xuất hiện công thức Lewis của NH3.
 
 * **Thực hiện nhiệm vụ:** HS tham gia hoạt động, thảo luận nhóm để hoàn thành nhiệm vụ được giao. Ghi chép lại các thao tác tiến hành.
 
-*** Báo cáo, thảo luận:
+** Báo cáo, thảo luận:**
 **–** GV chiếu sản phẩm của các nhóm và gọi đại diện 1 HS bất kì trong 1 nhóm bất kì lên bảng tóm tắt lại các bước thực hiện của nhóm mình.
 
 – Các nhóm còn lại quan sát và nhận xét
 
 * **Kết quả, nhận định:** GV đánh giá, kết luận và chốt kiến thức, cho các nhóm chấm sản phẩm chéo nhau.
 
-**Hoạt động 2.4: Hiển thị cấu trúc phân tử của ethane (C2H6) và sulfuric acid (H2SO4) dưới dạng 3D
-**a) Mục tiêu:
+**Hoạt động 2.4: Hiển thị cấu trúc phân tử của ethane (C2H6) và sulfuric acid (H2SO4) dưới dạng 3D**
+**a) Mục tiêu:**
 – Hiển thị cấu trúc phân tử dưới dạng 3D của một số chất trên phần mềm Chemsketch
 
 **b) Nội dung:** Thảo luận theo nhóm và đàm thoại gợi mở để tìm hiểu cách hiển thị cấu trúc phân tử dưới dạng 3D của một số chất trên phần mềm Chemsketch.
 
-**c) Sản phẩm:
+**c) Sản phẩm:**
 – HS hiển thị cấu trúc phân tử dưới dạng 3D của các chất C2H6, H2SO4**,** CH4, NH3, H2O trên phần mềm Chemsketch
 
 – Mô hình làm bằng đất sét cấu trúc phân tử dưới dạng 3D của các chất CH4, NH3, H2O
 
-**d) Tổ chức thực hiện:
-*** Chuyển giao  nhiệm vụ học tập:
+**d) Tổ chức thực hiện:**
+** Chuyển giao  nhiệm vụ học tập:**
 – GV hướng dẫn HS các bước tiếp theo để hiển thị cấu trúc phân tử dưới dạng 3D của C2H6 và H2SO4 (thực hiện trên máy tính của GV có kết nối với máy chiếu để cho các HS bên dưới quan sát)
 
 **Bước 1:** Vẽ công thức cấu tạo của C2H6 và H2SO4
@@ -224,7 +224,7 @@ Màn hình sẽ xuất hiện công thức Lewis của NH3.
 
 **Bước 3:** Nháy chuột vào công cụ 2-Copy to 3D ở góc dưới, bên trái màn hình. Khi đó cấu trúc không gian 3 chiều của các phân tử C2H6 và H2SO4 xuấthiện trong màn hình 3D Viewer
 
-***Cấu trúc không gian 3 chiều của phân tử C2H6 và H2SO4
+**Cấu trúc không gian 3 chiều của phân tử C2H6 và H2SO4**
 – GV chia lớp thành 6 nhóm và giao nhiệm vụ cho các nhóm:
 
 1. Hiển thị cấu trúc phân tử dưới dạng 3D của CH4, NH3, H2O trong phần mềmChemsketch (mỗi nhóm có 1 máy tính đã cài phần mềm Chemsketch)
@@ -233,26 +233,26 @@ Màn hình sẽ xuất hiện công thức Lewis của NH3.
 
 * **Thực hiện nhiệm vụ:** HS tham gia hoạt động, thảo luận nhóm để hoàn thành nhiệm vụ được giao. Ghi chép lại các thao tác tiến hành.
 
-*** Báo cáo, thảo luận:
+** Báo cáo, thảo luận:**
 **–** GV chiếu sản phẩm của các nhóm và gọi đại diện 1 HS bất kì trong 1 nhóm bất kì lên bảng tóm tắt lại các bước thực hiện của nhóm mình.
 
 – Các nhóm còn lại quan sát và nhận xét
 
 * **Kết quả, nhận định:** GV đánh giá, kết luận và chốt kiến thức, cho các nhóm chấm sản phẩm chéo nhau.
 
-**Hoạt động 2.5: Chèn hình ảnh vào file word, powerpoint
-**a) Mục tiêu:
+**Hoạt động 2.5: Chèn hình ảnh vào file word, powerpoint**
+**a) Mục tiêu:**
 – Chèn được các công thức cấu tạo, công thức Lewis đã vẽ, hoặc các cấu trúc phân tử đã được hiển thị bằng 3D view vào các ứng dụng khác như word, powerpoint dưới dạng có thể chỉnh sửa được hoặc dưới dạng hình ảnh tĩnh.
 
 **b) Nội dung:** Tự nghiên cứu, đàm thoại gợi mở để tìm hiểu cách chèn hình ảnh vào file word, powerpoint..
 
 **c) Sản phẩm:** HS chèn được hình ảnh đã vẽ vào file word, powerpoint dưới dạng hình ảnh có thể chỉnh sửa và dưới dạng hình ảnh tĩnh.
 
-**d) Tổ chức thực hiện:
-*** Chuyển giao nhiệm vụ
+**d) Tổ chức thực hiện:**
+** Chuyển giao nhiệm vụ**
 **–** GV gợi mở: Có thể để đưa các hình ảnh đã vẽ sang file word hoặc powerpoint được không? Liệu hình ảnh đã chuyển sang có thể chỉnh sửa hay ở dạng tĩnh không thể chỉnh sửa?
 
-*** Thực hiện nhiệm vụ
+** Thực hiện nhiệm vụ**
 – GV hướng dẫn HS tự nghiên cứu sách để tìm câu trả lời.
 
 – HS nghiên cứu sách, ghi lại cách để chèn hình ảnh dưới dạng có thể chỉnh sửa và khi ở dạng ảnh tĩnh.
@@ -272,24 +272,24 @@ Màn hình sẽ xuất hiện công thức Lewis của NH3.
 
 – GV chiếu sản phẩm của các nhóm bất kì và gọi đại diện 1 HS trong nhóm đó lên bảng tóm tắt lại các bước thực hiện của nhóm mình.
 
-*** Kết quả, nhận định
+** Kết quả, nhận định**
 – GV đánh giá ý thức tự giác của HS.
 
 – GV chốt lại kiến thức
 
-**Hoạt động 3: Luyện tập
-**a) Mục tiêu:
+**Hoạt động 3: Luyện tập**
+**a) Mục tiêu:**
 – HS rèn lại các thao tác để vẽ được công thức cấu tạo và công thức Lewis, hiển thị được công thức 3D của một số chất
 
 – Chèn các hình ảnh đã vẽ sang file word, powerpoint.
 
 **b) Nội dung:** HS thực hiện theo nhóm, các nhóm trình bày sản phẩm, nhận xét rút kinh nghiệm.
 
-**c) Sản phẩm:
+**c) Sản phẩm:**
 – Các công thức cấu tạo, công thức Lewis hiển thị 3D được chèn trong word, powerpoint dưới dạng có thể chỉnh sửa và dưới dạng ảnh tĩnh.
 
-**d) Tổ chức thực hiện:
-*** Chuyển giao nhiệm vụ
+**d) Tổ chức thực hiện:**
+** Chuyển giao nhiệm vụ**
 **– GV** hướng dẫn HS hoạt động nhóm (4-5 nhóm).
 
 – GV tổ chức chia nhóm, giao nhiệm vụ cho mỗi nhóm
@@ -326,10 +326,10 @@ Nhóm 4:
 
 3. Chèn công thức C4H6 sang file word dưới dạng có thể chỉnh sửa, công thức H2SO3 sang file powerpoint dạng ảnh tĩnh.
 
-*** Thực hiện nhiệm vụ
+** Thực hiện nhiệm vụ**
 – Các nhóm HS thực hiện nhiệm vụ được giao.
 
-*** Báo cáo, thảo luận
+** Báo cáo, thảo luận**
 – GV tổ chức cho HS các nhóm báo cáo kết quả
 
 * **Kết quả, nhận định
@@ -337,7 +337,7 @@ Nhóm 4:
 
 – GV nhận xét, cho điểm các nhóm.
 
-**4. Hoạt động 4: Vận dụng
+**4. Hoạt động 4: Vận dụng**
 a) Mục tiêu:
 
 + Rèn luyện kĩ năng thực hành vẽ cấu trúc các phân tử
@@ -352,7 +352,7 @@ d) Tổ chức thực hiện: GV hướng dẫn HS về nhà làm và hướng d
 
 **CÁC PHỤ LỤC**(nếu có)
 
-**Bảng đánh giá cá nhân trong nhóm:
+**Bảng đánh giá cá nhân trong nhóm:**
 |  Họ và tên |  Nhiệm vụ được phân công | Nhận xét, đánh giá |
 | --- | --- | --- |
 | Hoàn thành hoạt động chuẩn bị cá nhân | Thực hiện nhiệm vụ theo phân công trong nhóm | Tham gia thảo luận nhóm, đóng góp ý kiến |
@@ -362,7 +362,7 @@ d) Tổ chức thực hiện: GV hướng dẫn HS về nhà làm và hướng d
 | HS4 | Thành viên |   |
 | HS… |   |   |
 
- **2) Thang đo giữa các nhóm với nhau:
+ **2) Thang đo giữa các nhóm với nhau:**
 Thang đánh giá
 
 Mức 1: Đạt được 6 tiêu chí
@@ -385,7 +385,7 @@ Mức 4: Đạt được 3 tiêu chí trở xuống.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU](/assets/docs/BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)
+- [BAI-TAP-CHUYEN-DE-THUC-HANH-VE-CAU-TRUC-PHAN-TU](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU](#drive-pending-Tiet-123_-Bai-9-THUC-HANH-VE-CAU-TRUC-PHAN-TU.docx)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại

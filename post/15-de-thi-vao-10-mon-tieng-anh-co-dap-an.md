@@ -16,7 +16,7 @@ Mời thầy cô và các em tham khảo thêm [Đề ôn tập tiếng anh vào
 
 ### 1. Đề thi tiếng Anh vào 10 có đáp án – Đề số 1
 
-**I  –  Choose the word whose  underlined  part is pronounced differently from the others. (0,2)
+**I  –  Choose the word whose  underlined  part is pronounced differently from the others. (0,2)**
 | 1. A. passed | B. watched | C. played | D. washed |
 | --- | --- | --- | --- |
 | 2. A. proud | B. about | C. around | D. would |
@@ -24,7 +24,7 @@ Mời thầy cô và các em tham khảo thêm [Đề ôn tập tiếng anh vào
 | 4. A. entrance | B. paddy | C. bamboo | D. banyan |
 | 5. A. problem | B. love | C. box | D. hobby |
 
-**II  –  Choose the best answer from the four options given (marked A, B, C, or D) to complete each sentence. (0,2)
+**II  –  Choose the best answer from the four options given (marked A, B, C, or D) to complete each sentence. (0,2)**
 6. My house _________in 1986.
 
 A. is built
@@ -175,7 +175,7 @@ C. would see
 
 D. had seen
 
-**III – Identify the  underlined  word/ phrase (A or B, C,  D ) that needs correcting to become an exact one. (0,2)
+**III – Identify the  underlined  word/ phrase (A or B, C,  D ) that needs correcting to become an exact one. (0,2)**
 21. The (A) picture was (B) painting by (C) Michael last year (D).
 
 22. There’s (A) the woman (B) who she (C) sold me (D) the handbag.
@@ -186,7 +186,7 @@ D. had seen
 
 25. If (A) I were you (B), I didn’t (C) buy that expensive (D) car.
 
-**IV – Read the following passage, then choose the correct answer to questions 26 – 30. (0,2)
+**IV – Read the following passage, then choose the correct answer to questions 26 – 30. (0,2)**
 I went to Australia on a student program last year and I like to (26)_______you about it. I was very (27)_______when I knew I was going to Australia because I had never been there before. I didn’t think about the problems of speaking English (28)_______I met my host family. At first I couldn’t communicate with them because my English was so bad. All the five years I had been learning English wasn’t much used at all (29)_______we didn’t have real practice at school. Even though my grammar was good, my pronunciation wasn’t. My problem is (30)_______ ‘l’ and ‘r’. For example, Australian people often asked “What do you eat in Vietnam?” I wanted to tell them that we eat rice, but they didn’t understand when I said “We eat lice”…
 
 | 26. A. say | B. tell | C. talk | D. speak |
@@ -196,7 +196,7 @@ I went to Australia on a student program last year and I like to (26)_______you 
 | 29. A. although | B. even | C. because | D. so |
 | 30. A. pronouncing | B. speaking | C. reading | D. telling |
 
-**V. Complete the second sentence so that it has a similar meaning to the first one. (0,4)
+**V. Complete the second sentence so that it has a similar meaning to the first one. (0,4)**
 0. They suggested banning advertisements on TV.
 
 They suggested that *advertisements on TV should be banned.
@@ -243,7 +243,7 @@ I haven’t___________________________________________________________.
 It*___________________________________________________________________.
 ### 2. Đề thi vào 10 môn tiếng Anh có đáp án – Đề số 2
 
-**I – Choose the word whose underlined part is pronounced differently from the others. (0,2)
+**I – Choose the word whose underlined part is pronounced differently from the others. (0,2)**
 1. A. claimed B. warned C. occurred D. existed
 
 2. A. health B. appear C. ready D. heavy
@@ -254,7 +254,7 @@ It*___________________________________________________________________.
 
 5. A. thunder B. erupt C. trust D. pull
 
-**II – Choose the best answer from the four options given (marked A, B, C, or D) to complete each sentence. (0,2)
+**II – Choose the best answer from the four options given (marked A, B, C, or D) to complete each sentence. (0,2)**
 6. I can’t understand the French visitors. I wish I ________French.
 
 A. knew B. will know C. know D. have known
@@ -315,7 +315,7 @@ A. lived B. is living C. has lived D. will live
 
 A. isn’t B. didn’t C. wasn’t D. doesn’t
 
-**III- Identify the underlined word/ phrase (A or B,C,D) that needs correcting to become an exact one. (0,2)
+**III- Identify the underlined word/ phrase (A or B,C,D) that needs correcting to become an exact one. (0,2)**
 21. My sister enjoys (A) read (B) about wild animals (C) and natural (D) mysteries.
 
 22. Mr. Thach (A) who sing (B) English songs (C) very well is (D) my teacher of English.
@@ -326,7 +326,7 @@ A. isn’t B. didn’t C. wasn’t D. doesn’t
 
 25. We can save (A) nature resources (B) by using (C) solar energy (D).
 
-**IV – Read the following passage, then choose the correct answer to questions 26 – 30. (0,2)
+**IV – Read the following passage, then choose the correct answer to questions 26 – 30. (0,2)**
 Today, supermarkets are found in almost every large city in the world. But the first supermarket (26)_________opened only fifty years ago. It was opened in New York by a man named Michael Cullen.
 
 A supermarket is different (27)___________other types of stores in several ways. In supermarkets, goods are placed on open shelves. The (28)__________ choose what they want and take them to the checkout counter. This means that fewer shop assistants are needed than in other stores. The way products are displayed is another difference between supermarkets and many other types of stores; (29)__________ example, in supermarkets, there is usually a display of small inexpensive items just in front of the checkout counter: candies, chocolates, magazines, cheap foods and so on.
@@ -343,7 +343,7 @@ Most customers (30)__________go to a supermarket buy goods from a shopping list.
 
 30. A. who B. what C. which D. whom
 
-**V – Complete the second sentence so that it has a similar meaning to the first one. (0,4)
+**V – Complete the second sentence so that it has a similar meaning to the first one. (0,4)**
 31. They have just sold that old house.
 
 – That old house______________________________________________________________.
@@ -364,7 +364,7 @@ Most customers (30)__________go to a supermarket buy goods from a shopping list.
 
 – Although_______________________________________________________________.
 
-**VI – Complete each of the following sentences, using the words given. (0,4)
+**VI – Complete each of the following sentences, using the words given. (0,4)**
 36. If/ it/ not rain/ tomorrow/ I/ go/ camping/ my friends.
 
 – ___________________________________________________________________.
@@ -387,7 +387,7 @@ Most customers (30)__________go to a supermarket buy goods from a shopping list.
 
 ### 3. Đề thi vào 10 môn tiếng Anh có đáp án – Đề số 3
 
-**I – Choose the word whose underlined part is pronounced differently from the others. (0,2)
+**I – Choose the word whose underlined part is pronounced differently from the others. (0,2)**
 1. A. information B. informative C. forward D. formal
 
 2. A. shout B. through C. mountain D. household
@@ -398,7 +398,7 @@ Most customers (30)__________go to a supermarket buy goods from a shopping list.
 
 5. A. access B. website C. violent D. internet
 
-**II – Choose the best answer from the four options given (marked A, B, C, or D) to complete each sentence. (0,2)
+**II – Choose the best answer from the four options given (marked A, B, C, or D) to complete each sentence. (0,2)**
 6. They _________Ho Chi Minh City last summer.
 
 A. visit B. will visit C. have visit D. visited
@@ -461,7 +461,7 @@ A. do you B. will you C. shall you D. don’t you
 
 A. whether B. how C. if D. why
 
-**III – Identify the underlined word/ phrase (A or B,C,D) that needs correcting to become an exact one. (0,2)
+**III – Identify the underlined word/ phrase (A or B,C,D) that needs correcting to become an exact one. (0,2)**
 21. I saw the men, the women (A) and the cattle (B) which (C) went to (D) the field.
 
 22. Look at the two dictionarys (A)and you will see (B) they are the same (C) in some ways (D).
@@ -472,7 +472,7 @@ A. whether B. how C. if D. why
 
 25. Would (A) you mind turn on (B) the lights, please? It’s too dark (C) for me to read (D).
 
-**IV – Read the following passage, then choose the correct answer to questions 26 – 30. (0,2)
+**IV – Read the following passage, then choose the correct answer to questions 26 – 30. (0,2)**
 Today, computer companies sell many different programs for computers. First, there are programs for doing math problems. (26)_________, there are programs for scientific studies. Third, some programs are like fancy typewriters. They are often used by writers and business people. Other (27)_________are made for courses in schools and universities. And finally, there are programs for fun. They include word games and puzzles for children and adults.
 
 There are many wonderful new computer programs, but there are other reasons to like (28)_________. Some people like the way computers hum and sing when they (29)_________. It is a happy sound, like the sounds of toy and childhood. Computers also have lights and pretty pictures. And computers even seem to have personalities. That may sound strange, but computers seem to have feelings. Sometimes they seem happy, sometimes they seem angry. It is easy (30)_________they are like people.
@@ -487,7 +487,7 @@ There are many wonderful new computer programs, but there are other reasons to l
 
 30. A. to think B. thinking C. for thinking D. that thought
 
-**V – Complete the second sentence so that it has a similar meaning to the first one. (0,4)
+**V – Complete the second sentence so that it has a similar meaning to the first one. (0,4)**
 31. Can you use this computer?
 
 – You can________________________________________?
@@ -508,7 +508,7 @@ There are many wonderful new computer programs, but there are other reasons to l
 
 – It is___________________________________________________________________ .
 
-**VI – Complete each of the following sentences, using the words given. (0,4)
+**VI – Complete each of the following sentences, using the words given. (0,4)**
 36. You / mind / if I / borrow / car / ?
 
 -__________________________________________.
@@ -531,7 +531,7 @@ There are many wonderful new computer programs, but there are other reasons to l
 
 ### 4. Đề thi vào lớp 10 môn tiếng Anh có đáp án – Đề số 4
 
-**I – Choose the word whose underlined part is pronounced differently from the others. (0,2)
+**I – Choose the word whose underlined part is pronounced differently from the others. (0,2)**
 1. A. wanted B. needed C. dedicated D. watched
 
 2. A. dislike B. design C. music D. light
@@ -542,7 +542,7 @@ There are many wonderful new computer programs, but there are other reasons to l
 
 5. A. number B. return C. summer D. product
 
-**II – Choose the best answer from the four options given (marked A, B, C, or D) tocompleteeach sentence. (0,2)
+**II – Choose the best answer from the four options given (marked A, B, C, or D) tocompleteeach sentence. (0,2)**
 6. Have you ever met the man ________Mary’s cousin?
 
 A. who married B. who is married C. whom married D. who was married
@@ -573,7 +573,7 @@ A. such B. enough C. too D. so
 
 ### 5. Đề tiếng Anh thi vào 10 năm 2022 có đáp án – Đề số 5
 
-**I – Choose the word whose underlined part is pronounced differently fromthe others. (0,2)
+**I – Choose the word whose underlined part is pronounced differently fromthe others. (0,2)**
 1. A. think B. therefore C. throughout D. thanks
 
 2. A. cleaned B. played C. used D. hoped
@@ -584,7 +584,7 @@ A. such B. enough C. too D. so
 
 5. A. books B. clubs C. hats D. stamps
 
-**II- Choose the best answer from the four options given (A, B, C, or D) to complete each sentence. (0,2)
+**II- Choose the best answer from the four options given (A, B, C, or D) to complete each sentence. (0,2)**
 6. Helen: “Where do you come from?” ~ Ann “________.”
 
 A. I come from London B. In London

@@ -92,11 +92,11 @@ Phosphorous        Nguyên tố P hoặc đơn chất P4 (thường viế
 | 87 | Fr | Francium | /ˈfrænsiəm/ |
 | 88 | Ra | Radium | /ˈreɪdiəm/ |
 
-****
+**
 
-****
+**
 
-****
+**
 
 1. **PHÂN LOẠI VÀ CÁCH GỌI TÊN MỘT SỐ PHÂN LOẠI HỢP CHẤT VÔ CƠ**
 
@@ -110,17 +110,17 @@ Mg         magiesium              Mg2+    magiesium ion
 
 Al           aluminum               Al3+     aluminum ion
 
-****
+**
 
 – Ion âm (Anion):
 
-Cl           chlorine****       Cl–       chloride ion
+Cl           chlorine**       Cl–       chloride ion
 
 O            oxygen                   O2-       oxide ion
 
 N            nitrogen                  N3-       nitride ion
 
-****
+**
 
 **2.2. OXIDE**
 
@@ -149,7 +149,7 @@ MgO: **magnesium oxide** – /mæɡˈniːziəm ˈɒksaɪd/.
 | Chromium (Cr) | Cr (II): chromous – /ˈkrəʊməs/ | CrO: chromium (II) oxide chromous oxide |
 | Cr (III): chromic – /ˈkrəʊmik/ | Cr2O3: chromium (III) oxide chromic oxide |  |
 
-****
+**
 
 **– Đối với oxide của phi kim (hoặc acidic oxide – oxit axit của kim loại):**
 
@@ -193,7 +193,7 @@ P2O5: **phosphorus (V) oxide** hay**diphosphorus pentoxide**
 
 CrO3: **chromium (VI) oxide** hay **chromium trioxide**
 
-****
+**
 
 **2.3. BASE**
 
@@ -213,7 +213,7 @@ Fe(OH)3: **iron (III) hydroxide** hay **ferric hydroxide**
 
 Fe(OH)2: **iron (II) hydroxide** hay **ferrous hydroxide**
 
-****
+**
 
 **2.4. ACID**
 
@@ -245,7 +245,7 @@ Fe(OH)2: **iron (II) hydroxide** hay **ferrous hydroxide**
 | CO2 + H2O (H2CO3) | carbonic acid | /kɑːˌbɒnɪk ˈæsɪd/ /kɑːrˌbɑːnɪk ˈæsɪd/ | [carbonic acid](https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/c/car/carbo/carbonic_acid_1_gb_1.mp3) |
 | H3BO3 | boric acid | /ˌbɔː.rɪk ˈæs.ɪd/ | [boric acid](https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/b/bor/boric/boric_acid_1_gb_1.mp3) |
 
-****
+**
 
 **2.5. MUỐI VÀ MỘT SỐ HỢP CHẤT CỘNG HÓA TRỊ KHÁC**
 
@@ -294,10 +294,10 @@ Fe(OH)2: **iron (II) hydroxide** hay **ferrous hydroxide**
 
 GIA SƯ THÔNG MINH gửi các thầy cô và các em link download file đầy đủ tại đây
 
-- [Danh pháp các chất hóa học chương trình mới](/assets/docs/Danh-phap-cac-chat-hoa-hoc-chuong-trinh-moi.docx)
-- [DANH PHÁP HOA HOC (VÔ CƠ – NGUYỄN ĐĂNG MINH QUÂN, HỮU CƠ – NGUYỄN MINH LÝ)](/assets/docs/DANH-PHAP-HOA-HOC-VO-CO-NGUYEN-DANG-MINH-QUAN-HUU-CO-NGUYEN-MINH-LY.docx)
-- [DANH PHÁP HỢP CHẤT HỮU CƠ 2020](/assets/docs/DANH-PHAP-HOP-CHAT-HUU-CO-2020.docx)
-- [GỌI TÊN](/assets/docs/GOI-TEN.pptx)
+- [Danh pháp các chất hóa học chương trình mới](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [DANH PHÁP HOA HOC (VÔ CƠ – NGUYỄN ĐĂNG MINH QUÂN, HỮU CƠ – NGUYỄN MINH LÝ)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [DANH PHÁP HỢP CHẤT HỮU CƠ 2020](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [GỌI TÊN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

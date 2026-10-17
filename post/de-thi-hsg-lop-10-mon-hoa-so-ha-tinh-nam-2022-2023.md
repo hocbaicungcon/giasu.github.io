@@ -69,7 +69,7 @@ Biết chu kì bán rã của  là 8,02 ngày.
 
 **Câu 4.** (2,0 điểm)
 
-**1.** Dựa vào cấu tạo nguyên tử, phân tử hãy giải thích:****
+**1.** Dựa vào cấu tạo nguyên tử, phân tử hãy giải thích:**
 
 **a.** Năng lượng ion hóa thứ nhất của phosphorus lớn hơn năng lượng ion thứ nhất của sulfur.
 
@@ -87,9 +87,9 @@ Biết chu kì bán rã của  là 8,02 ngày.
 
 **Câu 5.** (2,0 điểm)
 
-**1.** Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron:****
+**1.** Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron:**
 
-**a.** H2O2  +  KMnO4  +  H2SO4 → MnSO4  +  O2 +   K2SO4  + H2O.****
+**a.** H2O2  +  KMnO4  +  H2SO4 → MnSO4  +  O2 +   K2SO4  + H2O.**
 
 **b.** Cr2S3  + Mn(NO3)2  + K2CO3  → K2CrO4  + K2SO4  + K2MnO4  + NO  + CO2
 
@@ -218,7 +218,7 @@ Biết chu kì bán rã của  là 8,02 ngày.
 
 **Câu 4.** (2,0 điểm)
 
-**1.** Dựa vào cấu tạo nguyên tử, phân tử hãy giải thích:****
+**1.** Dựa vào cấu tạo nguyên tử, phân tử hãy giải thích:**
 
 **a.** Năng lượng ion hóa thứ nhất của phosphorus lớn hơn năng lượng ion thứ nhất của sulfur.
 
@@ -244,9 +244,9 @@ Biết chu kì bán rã của  là 8,02 ngày.
 
 **Câu 5.** (2,0 điểm)
 
-**1.** Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron.****
+**1.** Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron.**
 
-**a.** H2O2  +  KMnO4  +  H2SO4 → MnSO4  +  O2 +   K2SO4  + H2O.****
+**a.** H2O2  +  KMnO4  +  H2SO4 → MnSO4  +  O2 +   K2SO4  + H2O.**
 
 **b.** Cr2S3  + Mn(NO3)2  + K2CO3  → K2CrO4  + K2SO4  + K2MnO4  + NO  + CO2
 
@@ -323,11 +323,11 @@ Biết 1ppm = 10-6,  một số giá trị năng lượng liên kết (E, tính
 
 **————————HẾT——————–**
 
-***Lưu ý: Học sinh làm cách khác đúng vẫn cho điểm tối đa.***
+**Lưu ý: Học sinh làm cách khác đúng vẫn cho điểm tối đa.**
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023](/assets/docs/HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023-giasu.ai.vn.docx)
+- [HSG-Hoa-10-So-Ha-Tinh-nam-2022-2023](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

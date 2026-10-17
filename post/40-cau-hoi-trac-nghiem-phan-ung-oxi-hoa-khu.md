@@ -256,7 +256,7 @@ Số phản ứng trong đó HCl thể hiện tính oxi hóa là
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [Cau-hoi-trac-nghiem-phan-ung-oxi-hoa-khu](/assets/docs/Cau-hoi-trac-nghiem-phan-ung-oxi-hoa-khu.docx)
+- [Cau-hoi-trac-nghiem-phan-ung-oxi-hoa-khu](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

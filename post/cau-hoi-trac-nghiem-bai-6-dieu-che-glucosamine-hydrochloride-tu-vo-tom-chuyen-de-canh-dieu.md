@@ -17,29 +17,29 @@ grade: 12
 
 Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ vỏ tôm chuyên đề cánh diều
 
-**BÀI 6: ĐIỀU CHẾ GLUCOSAMINE HYDROCHLORIDE TỪ VỎ TÔM
-**A. TÓM TẮT LÝ THUYẾT
-**B. BÀI TẬP TRẮC NGHIỆM
-**MỨC ĐỘ 1: BIẾT
-**Câu 1. Chọn phát biểu sai trong các phát biểu sau:
+**BÀI 6: ĐIỀU CHẾ GLUCOSAMINE HYDROCHLORIDE TỪ VỎ TÔM**
+**A. TÓM TẮT LÝ THUYẾT**
+**B. BÀI TẬP TRẮC NGHIỆM**
+**MỨC ĐỘ 1: BIẾT**
+**Câu 1. Chọn phát biểu sai trong các phát biểu sau:**
  **A.** Chitin là một loại polymer thiên nhiên.
 
  **B.** Chitin và chitosan được coi là dẫn xuất của xellulose
 
  **C.** Chitin có màu trắng hay phớt hồng, dạng vảy hoặc bột, không mùi, không vị, không tan trong nước.
 
-**     D. Chitin kém bền với các chất oxi hóa mạnh như thuốc tím, nước oxi già, nước Javel,…
-**Câu  2 . Do quá trình khử acetyl ở chitin xảy ra không hoàn toàn nên người ta quy ước gọi là chitosan khi:
- **A.** DD < 50% **B.  DD > 50%                     C.** DD = 50% **D.** DD < 10%
+**     D. Chitin kém bền với các chất oxi hóa mạnh như thuốc tím, nước oxi già, nước Javel,…**
+**Câu  2 . Do quá trình khử acetyl ở chitin xảy ra không hoàn toàn nên người ta quy ước gọi là chitosan khi:**
+ **A.** DD < 50% B.  DD > 50%                     C.** DD = 50% **D.** DD < 10%**
 
-**Câu 3. Để tạo thành chitosan, đun nóng chitin với hóa chất nào sau đây?
- **A.** NaOH loãng (1-2M)**                                                B. NaOH nồng độ cao (40-50%)
- **C.** HCl loãng **D.** H2SO4 đậm đặc
+**Câu 3. Để tạo thành chitosan, đun nóng chitin với hóa chất nào sau đây?**
+ **A.** NaOH loãng (1-2M)                                                B. NaOH nồng độ cao (40-50%)
+ **C.** HCl loãng D.** H2SO4 đậm đặc**
 
-**Câu 4. Điền từ thích hợp vào chỗ trống: ……………… là monomer của chitosan
-1. Chitin **B.** Chitosan **C. Glucosamine                     D.** Cellulose
+**Câu 4. Điền từ thích hợp vào chỗ trống: ……………… là monomer của chitosan**
+1. Chitin **B.** Chitosan C. Glucosamine                     D.** Cellulose
 
-**Câu 5. Sắp xếp đúng các bước theo đúng quy trình điều chế glucosamine hydrochloride từ vỏ tôm:
+**Câu 5. Sắp xếp đúng các bước theo đúng quy trình điều chế glucosamine hydrochloride từ vỏ tôm:**
 - Cho vỏ tôm vừa rửa sạch vào bình cầu 250mL, cho thêm 60mL dung dịch HCl 5%. Đun cách thủy trong 2 giờ, sau đó rửa bằng nước đến pH = 7.
 
 - Lấy 10 gam vỏ tôm khô cho vào bình cầu 250mL. Cho nước ngập vỏ tôm và đun cách thủy trong 2 giờ.
@@ -48,8 +48,8 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 - Cho vỏ tôm thu được vào bình cầu 250mL, đổ ngập vỏ tôm bằng dung dịch NaOH 5%, rồi đun cách thủy (90oC-95oC) trong 4 giờ. Rửa bằng nước đến pH=7 và đem sấy khô.
 
-- (1), (2), (3), (4)            **B.** (2), (1), (3), (4)             **C.** (3), (1), (2), (4)                   **D. (2), (1), (4), (3)
-**Câu 6. Hydrochloric acid là một acid bốc khói. Để hạn chế sự bay hơi của hydrochloride, cần:
+- (1), (2), (3), (4)            **B.** (2), (1), (3), (4)             C.** (3), (1), (2), (4)                   **D. (2), (1), (4), (3)
+**Câu 6. Hydrochloric acid là một acid bốc khói. Để hạn chế sự bay hơi của hydrochloride, cần:**
 1. Đậy kín bình cầu khi đun cách thủy.
 
 2. **Lắp sinh hàn hồi lưu vào bình cầu khi đun cách thủy.
@@ -57,7 +57,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 4. Sử dụng dung dịch HCl có nồng độ thấp hơn (loãng hơn).
 
-**Câu 7. Chitin trong vỏ tôm liên kết bền vững với các thành phần khác như protein, lipid, khoáng và chất màu. Do đó, để thu nhận chitin từ vỏ tôm cần sử dụng các quá trình loại bỏ khoáng bằng hóa chất nào sau đây?
+**Câu 7. Chitin trong vỏ tôm liên kết bền vững với các thành phần khác như protein, lipid, khoáng và chất màu. Do đó, để thu nhận chitin từ vỏ tôm cần sử dụng các quá trình loại bỏ khoáng bằng hóa chất nào sau đây?**
 1. **Dung dịch acid loãng
 2. Dung dịch NaCl bão hòa
 
@@ -65,7 +65,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 4. Dung dịch kiềm
 
-**Câu 8. Chitin trong vỏ tôm liên kết bền vững với các thành phần khác như protein, lipid, khoáng và chất màu. Do đó, để thu nhận chitin từ vỏ tôm cần sử dụng các quá trình khử protein bằng hóa chất nào sau đây?
+**Câu 8. Chitin trong vỏ tôm liên kết bền vững với các thành phần khác như protein, lipid, khoáng và chất màu. Do đó, để thu nhận chitin từ vỏ tôm cần sử dụng các quá trình khử protein bằng hóa chất nào sau đây?**
 1. Dung dịch acid loãng
 
 2. Dung dịch NaCl bão hòa
@@ -73,7 +73,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 3. Dung dịch KMnO4
 
 4. **Dung dịch kiềm
-**Câu 9. Chitin trong vỏ tôm liên kết bền vững với các thành phần khác như protein, lipid, khoáng và chất màu. Do đó, để thu nhận chitin từ vỏ tôm cần sử dụng các quá trình khử màu bằng hóa chất nào sau đây?
+**Câu 9. Chitin trong vỏ tôm liên kết bền vững với các thành phần khác như protein, lipid, khoáng và chất màu. Do đó, để thu nhận chitin từ vỏ tôm cần sử dụng các quá trình khử màu bằng hóa chất nào sau đây?**
 1. Dung dịch acid loãng.
 
 2. Dung dịch NaCl bão hòa.
@@ -81,7 +81,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 3. **Dung dịch KMnO4, H2O2, than hoạt tính hoặc ánh sáng mặt trời.
 4. Dung dịch kiềm.
 
-**Câu 10. Để đánh giá chất lượng và hiệu suất của quá trình điều chế glucosamine hydrochloride có thể dựa vào một số tiêu chí đánh giá nào?
+**Câu 10. Để đánh giá chất lượng và hiệu suất của quá trình điều chế glucosamine hydrochloride có thể dựa vào một số tiêu chí đánh giá nào?**
 1. Sản phẩm có màu vàng, mùi tanh, hơi ẩm.
 
 2. Sản phẩm có màu hồng nhạt, còn mùi tanh của tôm.
@@ -89,25 +89,25 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 3. **Sản phẩm có màu trắng, đồng nhất, không còn mùi tanh của tôm.
 4. Sản phẩm có màu nâu, không còn mùi tanh của tôm.
 
-**Câu 11. Ngoài vỏ tôm, chúng ta còn có thể sử dụng nguyên liệu nào để điều chế glucosamine  hydrochloride?
-1. Vỏ ốc                          **B.** Vỏ trứng                          **C. Vỏ cua đồng D.** Bã mía
+**Câu 11. Ngoài vỏ tôm, chúng ta còn có thể sử dụng nguyên liệu nào để điều chế glucosamine  hydrochloride?**
+1. Vỏ ốc                          **B.** Vỏ trứng                          C. Vỏ cua đồng D.** Bã mía
 
-**Câu 12. Khi đun nóng chitin trong dung dịch NaOH đặc (40-50%), ở nhiệt độ cao thì chitin sẽ tạo thành hợp chất hữu cơ nào sau đây?
-1. **Chitosan                      B.** Glucosamine **C.** Glucose **D.** Xellulose
+**Câu 12. Khi đun nóng chitin trong dung dịch NaOH đặc (40-50%), ở nhiệt độ cao thì chitin sẽ tạo thành hợp chất hữu cơ nào sau đây?**
+1. **Chitosan                      B.** Glucosamine **C.** Glucose D.** Xellulose
 
-**Câu 13. Khi đun nóng chitin trong axit HCl đậm đặc, ở nhiệt độ cao thì chitin sẽ bị cắt mạch thu được hợp chất hữu cơ nào sau đây:
+**Câu 13. Khi đun nóng chitin trong axit HCl đậm đặc, ở nhiệt độ cao thì chitin sẽ bị cắt mạch thu được hợp chất hữu cơ nào sau đây:**
 1. Chitosan **B. Glucosamine                     C.** Glucose **D.** Xellulose
 
-**Câu 14. Xác định công thức phân tử và phân tử khối của glucosamine hydroclorua:
+**Câu 14. Xác định công thức phân tử và phân tử khối của glucosamine hydroclorua:**
 1. C6H13O5N.H2SO4, M= 277 amu **B.** C6H13O5N, M= 179 amu   
 
 **C. C6H13O5N.HCl, M = 215,5 amu                                 D.** C5H12O4CHO, M = 165 amu
 
-**Câu 15. Trong cấu tạo của glucosamine chứa các loại nhóm chức nào?
-1. -OH, -NH2, -CHO **B.**-OH, -NHCOCH3 **C.** NH2, -NHCOCH3 **D.**-NH2, -COOH
+**Câu 15. Trong cấu tạo của glucosamine chứa các loại nhóm chức nào?**
+1. -OH, -NH2, -CHO **B.** -OH, -NHCOCH3 C.** NH2, -NHCOCH3 **D.**-NH2, -COOH
 
-**MỨC ĐỘ 2 : HIỂU
-**Câu 1. Dựa vào công thức cấu tạo của glucosamine, hãy dự đoán tính chất hóa học:
+**MỨC ĐỘ 2 : HIỂU**
+**Câu 1. Dựa vào công thức cấu tạo của glucosamine, hãy dự đoán tính chất hóa học:**
 - Phản ứng tráng bạc.
 
 - Hòa tan Cu(OH)2 tạo dung dịch phức màu xanh lam thẫm.
@@ -116,15 +116,15 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 - Làm giấy quỳ tím hóa đỏ.
 
-- (1), (3), (4) **B.** (2), (3), (4) **C.** (1), (2), (4)**             D. (1), (2), (3)
-**Câu 2. Điền số liệu thích hợp vào bảng điều chế chitosan từ chitin:
+- (1), (3), (4) **B.** (2), (3), (4) C.** (1), (2), (4)**             D. (1), (2), (3)
+**Câu 2. Điền số liệu thích hợp vào bảng điều chế chitosan từ chitin:**
 | STT | Chitin (g) | Chitosan (g) | Hiệu suất (%) |
 | --- | --- | --- | --- |
 | 1 | 10 | 6,33 |   |
 | 2 | 10 |   | 65,6 |
 | 3 |   | 7,23 | 70,0 |
 
-**Câu 3. Dựa vào cấu tạo của Chitin, chọn phát biểu đúng:
+**Câu 3. Dựa vào cấu tạo của Chitin, chọn phát biểu đúng:**
 1. **Chitin là polymer sinh học được tạo thành từ các đơn phân N-acetyl-β-D-glucosamin liên kết với nhau qua liên kết β-1,4-glucosid.
 2. Chitin là polymer sinh học được tạo thành từ các đơn phân N-acetyl-β-L-glucosamin liên kết với nhau qua liên kết β-1,4-glucosid
 
@@ -132,8 +132,8 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 4. Chitin là polymer sinh học được tạo thành từ các đơn phân N-acetyl-β-D-glucosamin liên kết với nhau qua liên kết β-1,3-glucosid
 
-*** Dựa vào hình 1_ số liệu thực nghiệm thu được trong quá trình điều chế glucosamine từ vỏ tôm bằng phương pháp hóa học, trả lời câu hỏi số 4 và 5.
-**Câu 4. Quan sát hình 1.a, nhận xét nào sau đây là không đúng?
+** Dựa vào hình 1_ số liệu thực nghiệm thu được trong quá trình điều chế glucosamine từ vỏ tôm bằng phương pháp hóa học, trả lời câu hỏi số 4 và 5.**
+**Câu 4. Quan sát hình 1.a, nhận xét nào sau đây là không đúng?**
 1. Khi tăng nồng độ HCl, hàm lượng khoáng còn lại giảm.
 
 2. Khi tăng nhiệt độ đun cách thủy, hàm lượng khoáng còn lại giảm.
@@ -141,7 +141,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 3. **Khi tăng nồng độ HCl, hàm lượng khoáng còn lại tăng.
 4. Hàm lượng khoáng còn lại trong thành phẩm tỉ lệ nghịch với nhiệt độ đun cách thủy.
 
-**Câu 5. Quan sát hình 1.b, nhận xét nào sau đây là đúng?
+**Câu 5. Quan sát hình 1.b, nhận xét nào sau đây là đúng?**
 1. Khi tăng nhiệt độ đun cách thủy, hiệu suất khử khoáng giảm.
 
 2. **Khi tăng thời gian đun cách thủy, hàm lượng khoáng còn lại trong thành phẩm giảm.
@@ -149,8 +149,8 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 4. Khi giảm nhiệt độ và giảm thời gian đun cách thủy hiệu suất khử khoáng tăng.
 
-** * Dựa vào hình 2_ số liệu thực nghiệm thu được trong quá trình điều chế glucosamine từ vỏ tôm bằng phương pháp hóa học, trả lời câu hỏi số 6 và 7.
-**Câu 6. Dựa vào hình 2.a, xác định số phát biểu đúng trong các phát biểu sau:
+** * Dựa vào hình 2_ số liệu thực nghiệm thu được trong quá trình điều chế glucosamine từ vỏ tôm bằng phương pháp hóa học, trả lời câu hỏi số 6 và 7.**
+**Câu 6. Dựa vào hình 2.a, xác định số phát biểu đúng trong các phát biểu sau:**
 - Khi tăng nồng độ dung dịch NaOH, đồng thời tăng nhiệt độ đun cách thủy thì hàm lượng protein còn lại giảm.
 
 - Nhiệt độ tối ưu để thực hiện chưng cách thủy là 900C.
@@ -165,7 +165,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 **C. (1), (2), (3)                                                                 D.** (3), (4), (5)
 
-**Câu 7. Dựa vào hình 2.b, tìm phát biểu không đúng trong các phát biểu sau:
+**Câu 7. Dựa vào hình 2.b, tìm phát biểu không đúng trong các phát biểu sau:**
 1. Khi tăng nhiệt độ và thời gian chưng cất hiệu suất khử protein càng thấp.
 
 2. **Để tăng hiệu suất khử protein ta có thể giảm nhiệt độ xuống 300C và tăng thời gian đun.
@@ -173,7 +173,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 4. Nhiệt độ và thời gian đun cách thủy ảnh hưởng đến hiệu suất quá trình khử protein.
 
-**Câu 8. Phản ứng hóa học chứng minh glucosamine chứa nhiều nhóm -OH liền kề
+**Câu 8. Phản ứng hóa học chứng minh glucosamine chứa nhiều nhóm -OH liền kề**
 1. **Tác dụng với Cu(OH)2 tạo dung dịch phức màu xanh lam thẫm.
 2. Tác dụng với AgNO3 trong NH­3 tạo kết tủa Ag.
 
@@ -181,7 +181,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 4. Phản ứng este hóa với acetic acid.
 
-**Câu 9. Phản ứng hóa học chứng minh glucosamine chứa nhóm chức aldehyde (-CHO):
+**Câu 9. Phản ứng hóa học chứng minh glucosamine chứa nhóm chức aldehyde (-CHO):**
 1. Tác dụng với Cu(OH)2 tạo dung dịch phức màu xanh lam thẫm.
 
 2. **Tác dụng với AgNO3 trong NH­3 tạo kết tủa Ag.
@@ -189,7 +189,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 4. Phản ứng ester hóa với acetic acid.
 
-**Câu 10. Chọn phát biểu sai trong các phát biểu sau:
+**Câu 10. Chọn phát biểu sai trong các phát biểu sau:**
 1. Nồng độ acid quá thấp sẽ không khử được hết khoáng dẫn đến sản phẩm còn nhiều tạp chất. Nồng độ quá cao sẽ gây đứt mạch chitin, giảm chất lượng sản phẩm.
 
 2. Nhiệt độ và thời gian là hai yếu tố rất quan trọng, ảnh hưởng đến chất lượng sản phẩm.
@@ -197,25 +197,25 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 3. Nếu thời gian xử lý dài và nhiệt độ cao thì sản phẩm sẽ bị nát, ảnh hưởng đến độ nhớt của sản phẩm.
 
 4. **Nếu thời gian xử lý ngắn và nhiệt độ thấp thì chất lượng chitin sẽ tốt hơn.
-**MỨC ĐỘ 3, 4: VẬN DỤNG – VẬN DỤNG CAO
-**Câu 1. Tính hàm lượng chitin thu được khi sử dụng 10 gam vỏ tôm (độ ẩm: 20%) cho vào bình cầu, tiến hành khử protein và loại bỏ khoáng. Sấy khô ở 110oC đến trọng lượng không đổi thu được 1,4 gam thành phẩm.
-1. **17,5%                          B.** 28,3% **C.** 83,7% **D.** 65,4%
+**MỨC ĐỘ 3, 4: VẬN DỤNG – VẬN DỤNG CAO**
+**Câu 1. Tính hàm lượng chitin thu được khi sử dụng 10 gam vỏ tôm (độ ẩm: 20%) cho vào bình cầu, tiến hành khử protein và loại bỏ khoáng. Sấy khô ở 110oC đến trọng lượng không đổi thu được 1,4 gam thành phẩm.**
+1. **17,5%                          B.** 28,3% **C.** 83,7% D.** 65,4%
 
-**Hàm lượng chitin được tính theo công thức:
-**Trong đó, m1, m2 là khối lượng nguyên liệu vỏ tôm trước và sau khi sấy. MC là độ ẩm của vỏ tôm ban đầu.
-**Câu 2. Khi đun nóng 20,3 gam chitin trong dung dịch NaOH 40-50% ở nhiệt độ cao thu được m gam chitosan. Xác định giá trị m. Biết hiệu suất của cả quá trình điều chế đạt 70%.
-1. **11,27 gam            B.** 16,1 gam **C.** 23 gam **D.** 12,17 gam
+**Hàm lượng chitin được tính theo công thức:**
+**Trong đó, m1, m2 là khối lượng nguyên liệu vỏ tôm trước và sau khi sấy. MC là độ ẩm của vỏ tôm ban đầu.**
+**Câu 2. Khi đun nóng 20,3 gam chitin trong dung dịch NaOH 40-50% ở nhiệt độ cao thu được m gam chitosan. Xác định giá trị m. Biết hiệu suất của cả quá trình điều chế đạt 70%.**
+1. **11,27 gam            B.** 16,1 gam **C.** 23 gam D.** 12,17 gam
 
-**Câu 3. Cho 1,79 gam glucosamin tác dụng hoàn toàn với dung dịch AgNO3 trong NH3 dư. Sau khi phản ứng xảy ra hoàn toàn thu được m gam Ag kết tủa. Giá trị của m là:
-1. **2,16 gam                B.** 1,08 gam. **C.** 6,48 gam. **D.** 6,12 gam
+**Câu 3. Cho 1,79 gam glucosamin tác dụng hoàn toàn với dung dịch AgNO3 trong NH3 dư. Sau khi phản ứng xảy ra hoàn toàn thu được m gam Ag kết tủa. Giá trị của m là:**
+1. **2,16 gam                B.** 1,08 gam. **C.** 6,48 gam. D.** 6,12 gam
 
-**C5H12O4N-CHO + 2[Ag(NH3)]OH → C5H12O4NCOONH4 + 2Ag + 3NH3 + H2O
-**Câu 4. Dựa vào kết quả phân tích phổ hồng ngoại của chitosan, theo thứ tự từ trái sang phải các đỉnh hấp thụ (11; 28; 72) đặc trưng cho dao động hóa trị của nhóm chức nào của chitosan?
+**C5H12O4N-CHO + 2[Ag(NH3)]OH → C5H12O4NCOONH4 + 2Ag + 3NH3 + H2O**
+**Câu 4. Dựa vào kết quả phân tích phổ hồng ngoại của chitosan, theo thứ tự từ trái sang phải các đỉnh hấp thụ (11; 28; 72) đặc trưng cho dao động hóa trị của nhóm chức nào của chitosan?**
 1. **–** CH3, -NH2, C-OH.                                                      **B.** C-O-C, -NH2, -OH.
 
 **C. -OH, -NH2, C-O-C. D.** C-O-C, -NH2, C-OH.
 
-**Câu 5. Dựa vào kết quả phân tích phổ hồng ngoại của chitin, theo thứ tự từ trái sang phải các peak (72; 25; 26) đặc trưng cho dao động hóa trị của nhóm chức nào của chitin?
+**Câu 5. Dựa vào kết quả phân tích phổ hồng ngoại của chitin, theo thứ tự từ trái sang phải các peak (72; 25; 26) đặc trưng cho dao động hóa trị của nhóm chức nào của chitin?**
 1. **hydroxyl (-OH), carbonyl (C=O), N-H.
 2. carbonyl (C=O), N-H, hydroxyl (-OH).
 
@@ -225,7 +225,7 @@ Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ v
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_](/assets/docs/87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_.docx)
+- [87.-Bai-6-CD-CDHT-Dieu-che-glucosamine-hydrochloride-tu-vo-tom-Hoang-Thi-Quynh-Nga.ok_](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

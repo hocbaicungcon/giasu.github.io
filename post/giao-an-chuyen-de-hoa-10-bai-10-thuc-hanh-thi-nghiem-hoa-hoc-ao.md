@@ -13,11 +13,11 @@ grade: 10
 
 Giáo án chuyên đề hoá 10 Bài 10 Thực hành thí nghiệm hoá học ảo
 
-**CHUYÊN ĐỀ  DẠY: THỰC HÀNH THÍ NGHIỆM HÓA HỌC ẢO
+**CHUYÊN ĐỀ  DẠY: THỰC HÀNH THÍ NGHIỆM HÓA HỌC ẢO**
 **BỘ SÁCH**: KẾT NỐI TRI THỨC  **SỐ TIẾT**:  3
 
-**I. MỤC TIÊU
-**1. Về năng lực
+### I. Mục Tiêu
+**1. Về năng lực**
 **a) Nhận thức hóa học**:
 
 – Xác định được tính chất của chất có trong nội dung cần thực hành.
@@ -46,7 +46,7 @@ Giáo án chuyên đề hoá 10 Bài 10 Thực hành thí nghiệm hoá học �
 
 – Liên hệ và giải thích được các hiện tượng trong thực tiễn cuộc sống.
 
-**2. Về phẩm chất
+**2. Về phẩm chất**
 – Yêu nước: HS biết vận dụng kiến thức đã được học để sử dụng cho an toàn, hợp lý , bảo vệ môi trường, an toàn cho sức khỏe
 
 – Nhân ái: Biết chia sẻ hiểu biết của mình với người thân, bạn bè, với những người xung quanh.
@@ -57,12 +57,12 @@ Giáo án chuyên đề hoá 10 Bài 10 Thực hành thí nghiệm hoá học �
 
 – Trách nhiệm: Có tinh thần trách nhiệm cao để hoàn thành tốt nhiệm vụ được phân công.
 
-**II. THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU
+### Ii. Thiết Bị Dạy Học Và Học Liệu
 **1. Thiết bị:** Vi tính, KHDH, bài giảng powerpoit
 
 **2. Học liệu:** Tài liệu tham khảo về kiến thức, phần mềm thí nghiệm ảo  hoặc các video trên Youtube coppy đường link
 
-**III. TIẾN TRÌNH DẠY HỌC
+### Iii. Tiến Trình Dạy Học
 | Tiết | Hoạt động | Phương pháp/Kỹ thuật dạy học | Phương pháp/Công cụ đánh giá |
 | --- | --- | --- | --- |
 | 1 | 1: Mở đầu (10’) |  Quan sát,hỏi đáp | Câu hỏi |
@@ -91,7 +91,7 @@ Giáo án chuyên đề hoá 10 Bài 10 Thực hành thí nghiệm hoá học �
 
  + Khó khăn
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 – Chuyển giao nhiệm vụ:
 
 + Chia lớp thành 4 nhóm.
@@ -108,13 +108,13 @@ Giáo án chuyên đề hoá 10 Bài 10 Thực hành thí nghiệm hoá học �
 
 **2. Hoạt động 2: Hình thành kiến thức mới/giải quyết vấn đề**( 80 phút) 
 
-**B. HÌNH THÀNH KIẾN THỨC MỚI
-**Hoạt động 1: Làm quen với phần mềm thí nghiệm ảo ( Yenka) ( 35 phút)
+**B. HÌNH THÀNH KIẾN THỨC MỚI**
+**Hoạt động 1: Làm quen với phần mềm thí nghiệm ảo ( Yenka) ( 35 phút)**
 **a) Mục tiêu:** HS biết cài đặt phần mêm và làm quen với các tính năng thông dụng của phần mềm Yenka.
 **b) Nội dung:** Tìm hiểu các thư mục, chức năng trên giao diện của phần mền Yenka.
 
-**c) Tổ chức thực hiện:
-**Bước 1: Chuyển giao nhiệm vụ
+**c) Tổ chức thực hiện:**
+**Bước 1: Chuyển giao nhiệm vụ**
 GV yêu cầu HS đọc thông tin mục I sgk và trả lời câu hỏi sau:
 
 – Cách cài đạt phần mền Yenka như thế nào?
@@ -123,27 +123,27 @@ GV yêu cầu HS đọc thông tin mục I sgk và trả lời câu hỏi sau:
 
 Kho chứa các dụng cụ, thiết bị thí nghiệm ở chỗ nào?
 
-**Bước 2: Thực hiện nhiệm vụ:
+**Bước 2: Thực hiện nhiệm vụ:**
 – HS nghiên cứu SGK, chú ý nghe, tiếp nhận kiến thức.
 
 – HS suy nghĩ trả lời câu hỏi.
 
-**Bước 3: Báo cáo, thảo luận:
+**Bước 3: Báo cáo, thảo luận:**
 – HS giơ tay phát biểu, lên bảng trình bày.
 
 – Một số HS khác nhận xét, bổ sung cho bạn.
 
-**Bước 4: Kết luận, nhận định:
+**Bước 4: Kết luận, nhận định:**
 – GV tổng quát lưu ý lại kiến thức trọng tâm và yêu cầu HS ghi chép đầy đủ vào vở.
 
-**d) Sản phẩm dự kiến:
+**d) Sản phẩm dự kiến:**
 Cách cài đặt phần mền Yenka
 
 Bước 1: Trên google nhập yenka và tải về máy.
 
 Bước 2: Mở giao diện Yenka hiện như hình vẽ
 
-**Bước 3:** nhập gmail để xác thực, vào địa chỉ gmail đó bấm vào [http://www.yenka.com/inst/verify.action?email=hoangvanht09@gmail.com](http://www.yenka.com/inst/verify.action?email=hoangvanht09@gmail.com)**.
+**Bước 3:** nhập gmail để xác thực, vào địa chỉ gmail đó bấm vào [http://www.yenka.com/inst/verify.action?email=hoangvanht09@gmail.com](http://www.yenka.com/inst/verify.action?email=hoangvanht09@gmail.com)**.**
 **Bước 4:** quay lại giao diện Yenka bấm vào Ok.
 
 **Bước 5**: Muốn có phần mền Yenka liên quan đến môn Hoá học, thì bấm theo thứ tự: Open local -> change -> Science -> Ok
@@ -154,12 +154,12 @@ Bước 2: Mở giao diện Yenka hiện như hình vẽ
 
 – Kho chứa các dụng cụ, thiết bị thí nghiệm ( new)
 
-** Hoạt động 2: Dùng thí nghiệm được thiết kế sẵn trong thẻ Open – Local ( 25 phút)
+** Hoạt động 2: Dùng thí nghiệm được thiết kế sẵn trong thẻ Open – Local ( 25 phút)**
 **a) Mục tiêu:**  HS tự làm được các mô phỏng thí nghiệm được thiết kế sẵn trong cửa sổ Open – local của phần mền Yenka.
 
 **b) Nội dung:** Thiết kế các thí nghiệm ảo được thiết kế sẵn trong cửa sổ Open – local của phần mền Yenka.
 
-**c) Tổ chức thực hiện:
+**c) Tổ chức thực hiện:**
 **Bước 1:**-GV chia lớp thành 5 nhóm, yêu cầu các nhóm phân công nhóm trưởng, thư kí, cử người báo cáo sản phẩm.
 
 GV đưa ra tiêu chí đánh giá bào báo cáo sản phẩm.
@@ -190,17 +190,17 @@ H2O2 ( xt MnO2)**→** H2 + O2
 
 + GV
 
-**Bước 2: Thực hiện nhiệm vụ:
+**Bước 2: Thực hiện nhiệm vụ:**
  – HS làm việc theo nhóm.
 
 – Hoàn thành nội dung trong phiếu học tập
 
-**Bước 3: Báo cáo, thảo luận:
+**Bước 3: Báo cáo, thảo luận:**
 – Đại diện các nhóm lên báo cáo.
 
 – Một số HS khác nhận xét, bổ sung cho bạn.
 
-**Bước 4: Kết luận, nhận định:
+**Bước 4: Kết luận, nhận định:**
 – GV tổng quát lưu ý lại kiến thức trọng tâm và yêu cầu HS ghi chép đầy đủ vào vở.
 
 **d) Sản phẩm dự kiến:** Video các thí nghiệm ảo gồm
@@ -217,7 +217,7 @@ H2O2 ( xt MnO2)**→** H2 + O2
 
 + Bài thuyết trình các nhóm.
 
-**Hoạt động 3: Tự thiết kế mô phỏng một thí nghiệm ( 20phút).
+**Hoạt động 3: Tự thiết kế mô phỏng một thí nghiệm ( 20phút).**
 **a) Mục tiêu:**  HS tự thiết kế được một số thí nghiệm mô phỏng sử dụng phần mền Yenka.
 
 **b) Nội dung:** Thiết kế các thí nghiệm ảo không có sẵn trong cửa sổ Open – local của phần mền Yenka Cu + HNO3
@@ -226,29 +226,29 @@ H2O2 ( xt MnO2)**→** H2 + O2
 
 **Bước 1:** Giao nhiệm vụ cho các nhóm: Các nhóm thực hiện theo phiếu học tập số 2.
 
-**Bước 2: Thực hiện nhiệm vụ:
+**Bước 2: Thực hiện nhiệm vụ:**
  – HS thảo luận.
 
 – HS suy nghĩ hoàn thành phiếu học tập
 
-**Bước 3: Báo cáo, thảo luận:
+**Bước 3: Báo cáo, thảo luận:**
 – Báo cáo sản phẩn nhóm
 
 – Một số HS phản biện, bổ sung cho bạn.
 
-**Bước 4: Kết luận, nhận định:
+**Bước 4: Kết luận, nhận định:**
 – GV tổng quát lưu ý lại kiến thức trọng tâm và yêu cầu HS ghi chép đầy đủ vào vở.
 
 – GV đặt câu hỏi yêu cầu HS so sánh giữa thí nghiệm ảo và thí nghiệm thực tế.
 
 – HS trả lời
 
-**d) Sản phẩm dự kiến:
+**d) Sản phẩm dự kiến:**
 **+** Video các thí nghiệm ảo gồm
 
 + Bài thuyết trình các nhóm.
 
-**3. Hoạt động 3: Luyện tập (thời gian 20 phút)
+**3. Hoạt động 3: Luyện tập (thời gian 20 phút)**
  **a) Mục tiêu:** HS tự làm được các mô phỏng thí nghiệm được thiết kế sẵn trong cửa sổ Open – local của phần mền Yenka.
 
     HS làm bài tập ở dạng lập sơ đồ tư duy, hoặc sơ đồ Gap
@@ -257,7 +257,7 @@ H2O2 ( xt MnO2)**→** H2 + O2
 
 lập sơ đồ tư duy, hoặc sơ đồ Gap
 
-**c) Sản phẩm:
+**c) Sản phẩm:**
  **+ Nhóm 1:** Thí nghiệm đo tốc độ phản ứng hoá học
 
                                     H­2SO4 (aq) + CaCO3(r) **→** CaSO4 (r) + CO2 + H2O
@@ -280,22 +280,22 @@ lập sơ đồ tư duy, hoặc sơ đồ Gap
 
 + HS nghiên cứu và hoạt động nhóm, cử nhóm trưởng, thư kí, phân công nhiệm vụ, cử người báo cáo.
 
-**d) Tổ chức thực hiện:
+**d) Tổ chức thực hiện:**
 **Bước 1: Giao nhiệm vụ cho các nhóm**:
 
   – Các nhóm thực hiện theo phiếu học tập
 
-**Bước 2: Thực hiện nhiệm vụ:
+**Bước 2: Thực hiện nhiệm vụ:**
  – HS thảo luận.
 
 – HS suy nghĩ hoàn thành phiếu học tập
 
-**Bước 3: Báo cáo, thảo luận:
+**Bước 3: Báo cáo, thảo luận:**
 – Báo cáo sản phẩn nhóm
 
 – Một số HS phản biện, bổ sung cho bạn.
 
-**Bước 4: Kết luận, nhận định:
+**Bước 4: Kết luận, nhận định:**
 – GV tổng quát lưu ý lại kiến thức trọng tâm và yêu cầu HS ghi chép đầy đủ vào vở.
 
 – GV đặt câu hỏi yêu cầu HS so sánh giữa thí nghiệm ảo và thí nghiệm thực tế.
@@ -308,7 +308,7 @@ lập sơ đồ tư duy, hoặc sơ đồ Gap
 
 **b) Nội dung:** Hệ thống bài tập
 
-**c) Sản phẩm:
+**c) Sản phẩm:**
 1. Tốc độ phản ứng
 
 Câu 1: Quan sát hình trong phần Khởi động, nhận xét về mức độ nhanh hay chậm của phản ứng hóa học xảy ra trong đám cháy lá cây khô và thân tàu biển bị oxi hóa trong điều kiện tự nhiên.
@@ -317,7 +317,7 @@ Trả lời:
 
 Phản ứng hóa học xảy ra trong đám cháy lá cây khô nhanh còn phản ứng thân tàu biển bị oxi hóa chậm
 
-**B. Bài tập và hướng dẫn giải
+**B. Bài tập và hướng dẫn giải**
 Câu 2: Trong tự nhiên và cuộc sống, ở cùng điều kiện, nhiều chất khác nhau sẽ biến đổi hóa học nhanh, chậm khác nhau; với cùng một chất, trong điều kiện khác nhau cũng biến đổi hóa học nhanh, chậm khác nhau. Tìm các ví dụ minh họa cho 2 nhận định trên.
 
 => Xem hướng dẫn giải
@@ -350,7 +350,7 @@ b) Tốc độ phản ứng thay đổi thế nào khi nồng độ H2 giảm 2 
 
 => Xem hướng dẫn giải
 
-**Bài tập
+**Bài tập**
 Câu 1: Cho phản ứng đơn giản xảy ra trong bình kín: 2NO(g) + O2(g) —>2NO2(g)
 
 a) Viết biểu thức tốc độ tức thời của phản ứng
@@ -395,20 +395,20 @@ b) Sau 100 phút, nồng độ của SO2Cl2 còn lại là bao nhiêu?
 
 c) Sau 200 phút, nồng độ của SO2 và Cl2 thu được là bao nhiêu?
 
-**d) Tổ chức thực hiện:
-**Bước 1: Giao nhiệm vụ
+**d) Tổ chức thực hiện:**
+**Bước 1: Giao nhiệm vụ**
 **Bước 2: Thực hiện nhiệm vụ**:
 
  – HS thảo luận.
 
 – HS suy nghĩ hoàn thành phiếu học tập
 
-**Bước 3: Báo cáo, thảo luận:
+**Bước 3: Báo cáo, thảo luận:**
 – Báo cáo sản phẩm
 
 – Một số HS phản biện, bổ sung cho bạn.
 
-**Bước 4: Kết luận, nhận định:
+**Bước 4: Kết luận, nhận định:**
 – GV tổng quát lưu ý lại kiến thức trọng tâm và yêu cầu HS ghi chép đầy đủ vào vở..
 
 – HS trả lời
@@ -421,8 +421,8 @@ c) Sau 200 phút, nồng độ của SO2 và Cl2 thu được là bao nhiêu?
 | PHIẾU HỌC TẬP 2  Thiết kế thí nghiệm ảo không có sẵn trong thẻ open – local Nhóm 1: – Thực hiện thí nghiệm ảo copper tác dụng với dung dịch nitric acid đặc, loãng trên thẻ New. Câu 1: Thực hiện thí nghiệm ảo theo hướng dẫn sau Bước 1: Chọn hoá chất: – Nháy chuột vào thẻ New rồi chọn Chemicals, chọn tiếp Metals, chọn tiếp Copper rồi kéo thả sang màn hình mô phỏng. – Chọn nitric acid, nháy chuột vào Chemical chọn mục Acids rồi chọn Nitric acid rồi thả vào màn hình mô phỏng. Bước 2: Chọn thiết bị, dụng cụ. + Trên thẻ chọn Glassware, chọn mục Standard, sau đó nhấn tiếp vào Beaker 100 ml, rồi kéo thả vào màn hình mô phỏng. Bước 3: Thực hiện thí nghiệm mô phỏng của phản ứng Cu + HNO3 đ ( HNO310M) Cu + HNO3 loãng ( HNO3 1M) Câu 2: Trả lời các câu hỏi sau: a. Em nêu hiện tượng của thí nghiệm. b. Viết phương trình hoá học xảy ra. |
 | --- |
 
-**PHIẾU TIÊU CHÍ ĐÁNH GIÁ
-***Đánh giá bài báo cáo và tiến trình làm thí nghiệm
+**PHIẾU TIÊU CHÍ ĐÁNH GIÁ**
+**Đánh giá bài báo cáo và tiến trình làm thí nghiệm**
 | Yêu cầu | Điểm tối đa | Điểm đạt được |
 | --- | --- | --- |
 | Cách thiết kế thí nghiệm ảo được rõ ràng, đúng các bước; | 3 |   |
@@ -434,7 +434,7 @@ c) Sau 200 phút, nồng độ của SO2 và Cl2 thu được là bao nhiêu?
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [Tiet-123-_-BAI-10-THUC-HANH-THI-NGHIEM-HOA-HOC-AO](/assets/docs/Tiet-123-_-BAI-10-THUC-HANH-THI-NGHIEM-HOA-HOC-AO.docx)
+- [Tiet-123-_-BAI-10-THUC-HANH-THI-NGHIEM-HOA-HOC-AO](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [BAI-TAP-CHUYEN-DE-THUC-HANH-THI-NGHIEM-HOA-HOC-AO](https://drive.google.com/file/d/1OJiFiwpHaNhAI6Wz-R3aINqrQRnBieb8/view?usp=sharing)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại

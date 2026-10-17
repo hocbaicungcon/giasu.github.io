@@ -11,15 +11,15 @@ tags:
 grade: 12
 ---
 
-***PHƯƠNG PHÁP 11:*** **SỬ DỤNG CÁC GIÁ TRỊ TRUNG BÌNH**
+**PHƯƠNG PHÁP 11:** **SỬ DỤNG CÁC GIÁ TRỊ TRUNG BÌNH**
 
 **I. PHƯƠNG PHÁP TRUNG BÌNH**
 
 **1. Nội dung phương pháp trung bình**
 
-Đối với hỗn hợp các chất, các đại lượng trung bình như có ý nghĩa hết sức quan trọng.****Khi biết giá trị của các đại lượng này, ta có thể tìm được thành phần các chất trong hỗn hợp hoặc có thể tính toán được lượng chất trong phản ứng (lượng chất tham gia phản ứng hoặc lượng chất tạo thành).*** *
+Đối với hỗn hợp các chất, các đại lượng trung bình như có ý nghĩa hết sức quan trọng.**Khi biết giá trị của các đại lượng này, ta có thể tìm được thành phần các chất trong hỗn hợp hoặc có thể tính toán được lượng chất trong phản ứng (lượng chất tham gia phản ứng hoặc lượng chất tạo thành).** *
 
-Ở đây,**** lần lượt là khối lượng mol trung bình, số nguyên tử C, H, O trung bình, số nhóm chức anđehit, axit trung bình và số liên kết trung bình,… của các chất trong hỗn hợp.
+Ở đây,** lần lượt là khối lượng mol trung bình, số nguyên tử C, H, O trung bình, số nhóm chức anđehit, axit trung bình và số liên kết trung bình,… của các chất trong hỗn hợp.
 
 Phương pháp trung bình là phương pháp*sử dụng tính chất và giá trị của các đại lượng trung bình để giải bài tập hóa học*.
 
@@ -43,29 +43,29 @@ Tính chất của đại lượng trung bình :
 
 Tổng quát : Gọi là đại lượng trung bình của các đại lượng X1, X2, X3,… trong hỗn hợp thì :
 
-**2. Ưu điểm của phương pháp****trung bình**
+**2. Ưu điểm của phương pháp**trung bình**
 
 **a. Xét các hướng giải bài tập sau :**
 
-***Câu 30 – Mã đề 175:*** Hỗn hợp khí X gồm anken M và ankin N có cùng số nguyên tử cacbon trong phân tử. Hỗn hợp X có khối lượng 12,4 gam và thể tích 6,72 lít (ở đktc). Số mol, công thức phân tử của M và N lần lượt là :
+**Câu 30 – Mã đề 175:** Hỗn hợp khí X gồm anken M và ankin N có cùng số nguyên tử cacbon trong phân tử. Hỗn hợp X có khối lượng 12,4 gam và thể tích 6,72 lít (ở đktc). Số mol, công thức phân tử của M và N lần lượt là :
 
-**A.** 0,1 mol C2H4 và 0,2 mol C2H2. **B.** 0,1mol C3H6 và 0,2 mol C3H4. 
+**A.** 0,1 mol C2H4 và 0,2 mol C2H2. B.** 0,1mol C3H6 và 0,2 mol C3H4. **
 
-**C.** 0,2 mol C2H4 và 0,1 mol C2H2. **D.** 0,2 mol C3H6 và 0,1 mol C3H4.
+**C.** 0,2 mol C2H4 và 0,1 mol C2H2. D.** 0,2 mol C3H6 và 0,1 mol C3H4.**
 
 *(Đề thi tuyển sinh Đại học khối A năm 2009)*
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
-● ***Cách 1 :** Sử dụng phương pháp tìm khoảng giới hạn số nguyên tử C*
+● **Cách 1 :** Sử dụng phương pháp tìm khoảng giới hạn số nguyên tử C*
 
 Đặt công thức của M và N lần lượt là CnH2n (x mol) và CnH2n-2 (y mol).
 
 Theo giả thiết, ta có : 
 
-Suy ra D là đáp án đúng :******
+Suy ra D là đáp án đúng :**
 
-● ***Cách 2 :** Sử dụng phương pháp trung bình*
+● **Cách 2 :** Sử dụng phương pháp trung bình*
 
 Vì M, N có cùng số nguyên tử C, nên đặt công thức trung bình của chúng là 
 
@@ -99,17 +99,17 @@ Một số dạng bài tập thường sử dụng phương pháp trung bình :
 
 *Phương pháp trung bình thường dùng để giải các bài tập tìm các chất trong hỗn hợp hoặc tính toán lượng chất trong phản ứng*
 
-***Phương pháp giải***
+**Phương pháp giải**
 
-***– Bước 1*** *****:*** *Lập sơ đồ phản ứng biểu diễn quá trình chuyển hóa giữa các chất, để thấy rõ****bản chất hóa học*** *của bài toán.*******
+**– Bước 1** **:** *Lập sơ đồ phản ứng biểu diễn quá trình chuyển hóa giữa các chất, để thấy rõ**bản chất hóa học** *của bài toán.**
 
-***– Bước 2 :*** *Nhận dạng nhanh phương pháp giải bài tập : Khi gặp dạng bài tập tìm các chất trong hỗn hợp thì ta nên sử dụng phương pháp trung bình.*
+**– Bước 2 :** *Nhận dạng nhanh phương pháp giải bài tập : Khi gặp dạng bài tập tìm các chất trong hỗn hợp thì ta nên sử dụng phương pháp trung bình.*
 
-***– Bước 3 :*** *Dựa vào yêu cầu đề bài để đánh giá, lựa chọn nên sử dụng giá trị trung bình nào của hỗn hợp thì tối ưu nhất, chỉ cần sử dụng một giá trị trung bình hay phải sử dụng nhiều giá trị trung bình.*
+**– Bước 3 :** *Dựa vào yêu cầu đề bài để đánh giá, lựa chọn nên sử dụng giá trị trung bình nào của hỗn hợp thì tối ưu nhất, chỉ cần sử dụng một giá trị trung bình hay phải sử dụng nhiều giá trị trung bình.*
 
-***– Bước 4 :*** *Dựa vào giả thiết và sự bảo toàn electron, bảo toàn điện tích, bảo toàn khối lượng, bảo toàn nguyên tố để tìm các giá trị trung bình, kết hợp với tính chất của giá trị trung bình để trả lời các câu hỏi mà đề bài yêu cầu.*
+**– Bước 4 :** *Dựa vào giả thiết và sự bảo toàn electron, bảo toàn điện tích, bảo toàn khối lượng, bảo toàn nguyên tố để tìm các giá trị trung bình, kết hợp với tính chất của giá trị trung bình để trả lời các câu hỏi mà đề bài yêu cầu.*
 
-► ***Các ví dụ minh họa ◄***
+► **Các ví dụ minh họa ◄**
 
 **1. Tính lượng chất trong phản ứng**
 
@@ -117,13 +117,13 @@ Một số dạng bài tập thường sử dụng phương pháp trung bình :
 
 *Với một số bài tập chứa hỗn hợp các chất, ta chỉ cần khai thác một giá trị trung bình là tìm được kết quả.*
 
-***Ví dụ 1:*** Hòa tan hoàn toàn m gam Al bằng dung dịch HNO3 loãng, thu được 5,376 lít (đktc) hỗn hợp khí X gồm N2, N2O và dung dịch chứa 8m gam muối. Tỉ khối của X so với H2 bằng 18. Giá trị của m là
+**Ví dụ 1:** Hòa tan hoàn toàn m gam Al bằng dung dịch HNO3 loãng, thu được 5,376 lít (đktc) hỗn hợp khí X gồm N2, N2O và dung dịch chứa 8m gam muối. Tỉ khối của X so với H2 bằng 18. Giá trị của m là
 
- **A.** 17,28. **B.** 19,44. **C.** 18,90. **D.** 21,60.
+ **A.** 17,28. B.** 19,44. **C.** 18,90. D.** 21,60.
 
 *(Đề thi tuyển sinh Đại học khối A năm 2013)*
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
 Nhận thấy : 
 
@@ -133,13 +133,13 @@ Suy ra phản ứng tạo ra cả muối NH4NO3.
 
 Áp dụng bảo toàn electron, ta có : 
 
-***Ví dụ 2:*** Hòa tan hoàn toàn 12,42 gam Al bằng dung dịch HNO3 loãng (dư), thu được dung dịch X và 1,344 lít (ở đktc) hỗn hợp khí Y gồm hai khí là N2O và N2. Tỉ khối của hỗn hợp khí Y so với khí H­2 là 18. Cô cạn dung dịch X, thu được m gam chất rắn khan. Giá trị của m là :
+**Ví dụ 2:** Hòa tan hoàn toàn 12,42 gam Al bằng dung dịch HNO3 loãng (dư), thu được dung dịch X và 1,344 lít (ở đktc) hỗn hợp khí Y gồm hai khí là N2O và N2. Tỉ khối của hỗn hợp khí Y so với khí H­2 là 18. Cô cạn dung dịch X, thu được m gam chất rắn khan. Giá trị của m là :
 
-**A.** 97,98. **B.** 106,38. **C.** 38,34. **D.** 34,08.
+**A.** 97,98. B.** 106,38. **C.** 38,34. D.** 34,08.
 
 *(Đề thi tuyển sinh Đại học khối A năm 2009)*
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
 Thay hai khí N2 và N2O thành N2Ox. Ta có : .
 
@@ -147,13 +147,13 @@ Với x = 0,5 thì số oxi hóa trong N2Ox là 0,5. Như vậy số oxi hóa c�
 
 Giả sử phản ứng tạo ra muối NH4NO3, ta có :
 
-***Ví dụ 3:*** Hoà tan hoàn toàn 8,862 gam hỗn hợp gồm Al và Mg vào dung dịch HNO3 loãng, thu được dung dịch X và 3,136 lít (ở đktc) hỗn hợp Y gồm hai khí không màu, trong đó có một khí hóa nâu trong không khí. Khối lượng của Y là 5,18 gam. Cho dung dịch NaOH (dư) vào X và đun nóng, không có khí mùi khai thoát ra. Phần trăm khối lượng của Al trong hỗn hợp ban đầu là : 
+**Ví dụ 3:** Hoà tan hoàn toàn 8,862 gam hỗn hợp gồm Al và Mg vào dung dịch HNO3 loãng, thu được dung dịch X và 3,136 lít (ở đktc) hỗn hợp Y gồm hai khí không màu, trong đó có một khí hóa nâu trong không khí. Khối lượng của Y là 5,18 gam. Cho dung dịch NaOH (dư) vào X và đun nóng, không có khí mùi khai thoát ra. Phần trăm khối lượng của Al trong hỗn hợp ban đầu là : 
 
-**A.** 19,53%. **B.** 15,25%. **C.** 10,52%. **D.** 12,80%. 
+**A.** 19,53%. B.** 15,25%. **C.** 10,52%. D.** 12,80%. 
 
 *(Đề thi tuyển sinh Cao đẳng năm 2009*
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
 Hỗn hợp Y gồm hai khí không màu, trong đó có một khí hóa nâu trong không khí. Suy ra Y có NO và còn lại là một trong hai khí N2 (M = 28) hoặc N2O (M = 44).
 
@@ -169,7 +169,7 @@ Theo giả thiết và bảo toàn electron, ta có :
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
-- [PP11 – TRUNG BÌNH](/assets/docs/PP11-TRUNG-BINH.pdf)
+- [PP11 – TRUNG BÌNH](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

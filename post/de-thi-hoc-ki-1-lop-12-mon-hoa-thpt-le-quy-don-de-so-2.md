@@ -254,9 +254,9 @@ Những phát biểu đúng là:
 
 GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
-- [12_HOAHOC_Nguyễn Thị Oanh_Đe so 1](/assets/docs/12_HOAHOC_Nguyen-Thi-Oanh_De-so-1.doc)
-- [12_HOAHOC_Nguyễn Thị Oanh_Đe so 2](/assets/docs/12_HOAHOC_Nguyen-Thi-Oanh_De-so-2.docx)
-- [12_HOAHOC_Nguyễn Thị Oanh_Đe so 3](/assets/docs/12_HOAHOC_Nguyen-Thi-Oanh_De-so-3.docx)
+- [12_HOAHOC_Nguyễn Thị Oanh_Đe so 1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [12_HOAHOC_Nguyễn Thị Oanh_Đe so 2](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [12_HOAHOC_Nguyễn Thị Oanh_Đe so 3](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

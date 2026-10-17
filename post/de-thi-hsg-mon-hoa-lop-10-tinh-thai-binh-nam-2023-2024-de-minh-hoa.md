@@ -24,7 +24,7 @@ Họ và tên thí sinh…………………………………….
 
 Số báo danh: …………………………………………
 
-**PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn.
+**PHẦN I. Câu trắc nghiệm nhiều phương án lựa chọn.**
 Thí sinh trả lời từ câu 1 đến câu 15.Mỗi câu hỏi thí sinh chỉ chọn một phương án.
 
 **Câu 1:** Cho nguyên tử nguyên tố X có tổng số electron trong phân lớp p là 11, nguyên tử nguyên tố Y có số hạt mang điện nhiều hơn số hạt mang điện của X là 4 hạt. Cho các phát biểu về nguyên tố X,Y:
@@ -41,7 +41,7 @@ Thí sinh trả lời từ câu 1 đến câu 15.Mỗi câu hỏi thí sinh ch�
 
 Số phát biểu đúng là
 
-**A.** 2.                                   **B.** 3.                                   **C.** 4.                                   **D.** 5.
+**A.** 2.                                   B.** 3.                                   **C.** 4.                                   D.** 5.
 
 **Câu 2.** Năm 1911, Rơ-đơ-pho (E. Rutherford) và các cộng sự đã dùng các hạt α bắn phá lá vàng mỏng và dùng màn huỳnh quang đặt sau lá vàng để theo dõi đường đi của các hạt α. Kết quả thu được
 
@@ -63,7 +63,7 @@ Kết quả thí nghiệm đã rút ra các kết luận về nguyên tử như 
 
 Số kết luận **sai** là:
 
-**A.** 1.                        **B.** 2.                             **C.** 3.                                         **D.** 4.
+**A.** 1.                        B.** 2.                             **C.** 3.                                         D.** 4.
 
 **Câu 3.** Phổ khối lượng của zirconium được biểu diễn như hình sau đây (điện tích Z của các ion đồng vị zirconium đều bằng 1+). Số lượng đồng vị bền và nguyên tử khối trung bình của zirconium là:
 
@@ -77,9 +77,9 @@ Số kết luận **sai** là:
 
 **Câu 4:** Theo quy luật biến đổi tính chất các đơn chất trong bảng tuần hoàn thì:
 
-**A.** Kim loại mạnh nhất là sodium                                  **B.** Phi kim mạnh nhất là chlorine
+**A.** Kim loại mạnh nhất là sodium                                  B.** Phi kim mạnh nhất là chlorine**
 
-**C.** Phi kim mạnh nhất là oxygen                                    **D.** Phi kim mạnh nhất là florine
+**C.** Phi kim mạnh nhất là oxygen                                    D.** Phi kim mạnh nhất là florine**
 
 **Câu 5:** Xét phân tử H2O, có bao nhiêu phát biểu đúng trong các phát biểu sau?
 
@@ -93,7 +93,7 @@ Số kết luận **sai** là:
 
 (e) Nguyên tử O còn hai cặp electron hoá trị riêng.
 
-**A.** 2                                    **B.** 3                                    **C.** 4                                    **D.** 5
+**A.** 2                                    B.** 3                                    **C.** 4                                    D.** 5
 
 **Câu 6:** Biết số hiệu nguyên tử của hai nguyên tố X và Y lần lượt là 19 và 17. Cho các phát biểu sau:
 
@@ -107,21 +107,21 @@ Số kết luận **sai** là:
 
 Số phát biểu đúng là
 
-**A.** 2.                                   **B.** 3.                                   **C.** 1.                                   **D.** 4.
+**A.** 2.                                   B.** 3.                                   **C.** 1.                                   D.** 4.
 
 **Câu 7:** Cho phản ứng sau: Fe3O4 + HNO3  Fe(NO3)3 + NO + H2O
 
 Hệ số cân bằng của HNO3 trong phương trình hoá học trên là bao nhiêu ?
 
- **A.** 30                              **B.** 28                                  **C.** 10                                  **D.** 4
+ **A.** 30                              B.** 28                                  **C.** 10                                  D.** 4
 
 **Câu 8:** Cho phản ứng: 2FeCl2 + Cl2 → 2FeCl3
 
 Trong phản ứng trên:
 
-**A.** Ion Fe2+ bị khử và nguyên tử Cl bị oxi hóa.               **B.** Ion Fe3+ bị khử và ion Cl– bịoxi hóa.
+**A.** Ion Fe2+ bị khử và nguyên tử Cl bị oxi hóa.               B.** Ion Fe3+ bị khử và ion Cl– bịoxi hóa.**
 
-**C.** Ion Fe2+ bị oxi hóa và nguyên tử Cl bị khử.              **D.** Ion Fe3+ bị oxi hóa và ion Cl– bị khử.
+**C.** Ion Fe2+ bị oxi hóa và nguyên tử Cl bị khử.              D.** Ion Fe3+ bị oxi hóa và ion Cl– bị khử.**
 
 **Câu 9:** Cho bảng giá trị ΔfHo298 của một số chất:
 
@@ -131,7 +131,7 @@ Trong phản ứng trên:
 
        Tính ΔrHo298 của phản ứng 2H2S(g) + 3O2 (g) **à** 2SO2 (g) + 2H2O(g) ?
 
-**A.** –1036,04 kJ.                  **B.** 1063,04 kJ.                    **C.** –1036,40 kJ.                  **D.** 1036,04 kJ.
+**A.** –1036,04 kJ.                  B.** 1063,04 kJ.                    **C.** –1036,40 kJ.                  D.** 1036,04 kJ.
 
 **Câu 10:** Mô tả nào sau đây là đúng theo phương trình nhiệt hóa học sau :
 
@@ -168,9 +168,9 @@ Dựa vào bảng số liệu sau, hãy tính tốc độ trung bình của ph�
 | --- | --- | --- | --- | --- |
 | Nồng độ H2O2, mol/l | 0,3033 | 0,2610 | 0,2330 | 0,2058 |
 
-**A.** 2,929.10−4 mol.(l.s)−1                                                          **B.** 5,858.10−4 mol.(l.s)−1
+**A.** 2,929.10−4 mol.(l.s)−1                                                          B.** 5,858.10−4 mol.(l.s)−1**
 
-**C.** 4,667.10−4 mol.(l.s)−1                                                          **D.** 2,333.10−4 mol.(l.s)−1
+**C.** 4,667.10−4 mol.(l.s)−1                                                          D.** 2,333.10−4 mol.(l.s)−1**
 
 **Câu 13:** Sulfur được sử dụng trong quá trình lưu hóa cao su, làm chất diệt nấm và có trong thuốc nổ đen. Sulfur là nguyên tố nhóm VIA. Cho các phát biểu sau về sulfur:
 
@@ -184,7 +184,7 @@ Dựa vào bảng số liệu sau, hãy tính tốc độ trung bình của ph�
 
 Số phát biểu đúng là?
 
-**A.** 1.                                   **B.** 2.                                   **C.** 3.                                   **D.** 4.
+**A.** 1.                                   B.** 2.                                   **C.** 3.                                   D.** 4.
 
 **Câu 14:** Cho các phát biểu sau:
 
@@ -200,7 +200,7 @@ Số phát biểu đúng là?
 
 Số phát biểu**đúng** là:
 
-**A.** 2.                                   **B.** 5.                                   **C.** 4.                                   **D.** 3.
+**A.** 2.                                   B.** 5.                                   **C.** 4.                                   D.** 3.
 
 **Câu 15:** Nhiên liệu được sử dụng phổ biến cho động cơ đốt trong là xăng bao gồm hỗn hợp nhiều chất trong đó hydrocarbon ở thể lỏng là chủ yếu. Nếu giả sử trong xăng chỉ chứa C8H18, cho phương trình nhiệt hóa học của các phản ứng đốt cháy xăng như sau:
 
@@ -208,7 +208,7 @@ C8H18(l) + 12,5O2(g)  8CO2(g) + 9H2O(l)   = – 5016 kJ
 
 Để tránh ô nhiễm môi trường người ta nghiên cứu thay ô tô chạy bằng động cơ nhiên liệu khí hydrogen (H2) cho ô tô chạy bằng động cơ xăng. Để chạy 100 km, ô tô chạy bằng động cơ xăng hết 8,5 lít loại xăng trên, hỏi ô tô chạy bằng động cơ nhiên liệu khí hydrogen cần dùng V m3 khí (đkc). Biết khối lượng riêng của C8H18 là 0,70 kg/L, ∆f (H2O) = – 241,8 kJ/mol, coi hiệu suất động cơ của hai loại ô tô là như nhau. Giá trị của V **gần nhất** với:
 
-**A.** 26,8                     **B.** 24,3                         **C.** 53,6                         **D.** 20,2
+**A.** 26,8                     B.** 24,3                         **C.** 53,6                         D.** 20,2
 
 **PHẦN II. Câu trắc nghiệm đúng sai.** Thí sinh trả lời từ câu 1 đến câu 6.Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.
 
@@ -291,12 +291,12 @@ b) Cho bảng nhiệt độ sôi của ethanol ( CH3CH2OH ) và dimethyl ether (
 
 Hãy giải thích vì sao hai chất có khối lượng phân tử bằng nhau nhưng nhiệt độ sôi lại khác xa nhau.
 
-**Câu 2.
+**Câu 2.**
 a)Cho các phân tử:PCl3, MgCl2, SO3, Al2O3. Hãy viết sơ đồ hình thành liên kết của các phân tử có liên kết ion và viết công thức Lewis của các phân tử có liên kết cộng hóa trị.
 
 b) Phân tử M được tạo thành từ 5 nguyên tử của hai nguyên tố Y và R tạo nên (Số hiệu nguyên tử Y nhỏ hơn của R). Tổng số hạt mang điện trong phân tử M là 20.Xác định công thức phân tử M.
 
-**Câu 3.
+**Câu 3.**
 a)Dựa vào cấu tạo nguyên tử, phân tử hãy giải thích:
 
  – ion CO không thể nhận thêm một nguyên tử oxygen để tạo ion COtrong khi đó ion  SO có thể nhận thêm 1 nguyên tử oxygen để tạo thành ion  SO?
@@ -311,7 +311,7 @@ b)Cân bằng các phương trình phản ứng sau theo phương pháp thăng b
 
 (2) Cr2S3  + Mn(NO3)2  + K2CO3  → K2CrO4  + K2SO4  + K2MnO4  + NO  + CO2
 
-**Câu 4.
+**Câu 4.**
  a) Ở điều kiện chuẩn, 2 mol aluminium (nhôm) tác dụng vừa đủ với khí chlorine tạo muối aluminium chloride và giải phóng một lượng nhiệt 1390,81 kJ.
 
 **–** Biến thiên enthalpy chuẩn của phản ứng bằng bao nhiêu? Phản ứng trên thu nhiệt hay toả nhiệt?
@@ -326,7 +326,7 @@ Tính biến thiên Enthalpy chuẩn của phản ứng dựa vào năng lượn
 
 Eb(N-H) = 391(kJ/mol); Eb(O=O) = 498(kJ/mol); Eb(N-H) = 391(kJ/mol);  Eb(NºN) = 945(kJ/mol); Eb(O-H) = 467(kJ/mol).
 
-**Câu 5.
+**Câu 5.**
 a) Tốc độ phản ứng sau chịu ảnh hưởng của yếu tố nào?
 
 – Than củi đang cháy, dùng quạt thổi thêm không khí vào, sự cháy diễn ra mạnh hơn.
@@ -339,11 +339,11 @@ a) Tốc độ phản ứng sau chịu ảnh hưởng của yếu tố nào?
 
 b) Khi để ở nhiệt độ 30 oC, một quả táo bị hư sau 3 ngày. Khi được bảo quản ở 0 oC (trong tủ lạnh), quả táo bị hư sau 24 ngày. Nếu bảo quản ở 20 oC, quả táo bị hư sau bao nhiêu ngày
 
-**——- Hết ———
+**——- Hết ———**
 | SỞ GIÁO DỤC VÀ ĐÀO TẠO THÁI BÌNH   | KỲ THI CHỌN HỌC SINH GIỎI LỚP 10 THPT NĂM HỌC 2023-2024 ĐÁP ÁN ĐỀ MINH HỌA MÔN HÓA HỌC   |
 | --- | --- |
 
-**Phần I.
+**Phần I.**
 (Mỗi câu trả lời đúng thí sinh được **0,4 điểm**).
 
 | Câu | Đáp án | Câu | Đáp án |
@@ -359,7 +359,7 @@ b) Khi để ở nhiệt độ 30 oC, một quả táo bị hư sau 3 ngày. Khi
 | 9 | A |   |   |
 | 10 | B |   |   |
 
-**Phần II: Đáp án
+**Phần II: Đáp án**
 Điểm tối đa của 01 câu hỏi là 1,0 điểm
 
      – Thí sinh chỉ lựa chọn chính xác 01 ý trong 1 câu hỏi được **0,1** điểm.
@@ -381,8 +381,8 @@ b) Khi để ở nhiệt độ 30 oC, một quả táo bị hư sau 3 ngày. Khi
 | c | S | c | Đ |  |  |
 | d | S | d | Đ |  |  |
 
-**Phần III:
-**Câu 1.
+**Phần III:**
+**Câu 1.**
 a)
 
 | ∆f của HCl = – 92,3 kJ/mol | 0,25 |
@@ -396,7 +396,7 @@ b)
 | Trong công thức cấu tạo của ethanol  Liên kết O-H phân cực làm cho nguyên tử H trở nên linh động, giữa các phân tử ethanol có liên kết hydrogen liên phân tử  Còn trong công thức cấu tạo của dimethyl ether  Không có H linh động, nên giữa các phân tử dimethyl ether không có liên kết hydrogen. Vì vậy nhiệt độ sôi của ethanol cao hơn nhiều so với nhiệt độ sôi của dimethyl ether. |           0.5           0.5   |
 | --- | --- |
 
-**Câu 2.
+**Câu 2.**
 a)
 
 |    hoặc     Mg    +      2Cl    ®   Mg2+                     Mg ® Mg2+ + 2e [Ne]3s2      [Ne]3s23p5     [Ne][Ar]                 Cl   + 1e  ® Cl–                                                                            Mg2+  + 2Cl– ®  MgCl2 | 0,25 |
@@ -410,7 +410,7 @@ b)
 | Từ (1) và (2), ta có – Số proton trung bình của Y và R là         Do đó Y phải là H (PY=1) |   0,25 |
 | – Biện luận a 1 2 3 4 b 4 3 2 1 PR 2,25 2,67 3,5 6 Kết luận loại loại loại Carbon C – chọn Vậy Y là H, R là C, M là CH4 |         0, 5 |
 
-**Câu 3.
+**Câu 3.**
 a)
 
 | Nộ dung | Điểm |
@@ -426,7 +426,7 @@ b)
 | (1)  5H2O2  +  2KMnO4  +  3H2SO4 → 2MnSO4  +  5O2 +   K2SO4  + 8H2O. |   0,25   0,25 |
 | (2)    1 x     Cr2S3               →      2Cr+ 6  +  3S+ 6 + 30e     15 x    Mn(NO3)2  +  2e    →              Mn+ 6  +  2N+2  Cr2S3 + 15Mn(NO3)2 + 20K2CO3  →  2K2CrO4 + 3K2SO4 +15K2MnO4 + 30NO + 20CO2 |   0,25   0,25 |
 
-**Câu 4.
+**Câu 4.**
 a)
 
 | HƯỚNG DẪN CHẤM | ĐIỂM |
@@ -434,12 +434,12 @@ a)
 | ; phản ứng trên tỏa nhiệt | 0,5 |
 | Nhiệt lượng giải phóng bằng: | 0,5 |
 
-**b)
+**b)**
 | HƯỚNG DẪN CHẤM | ĐIỂM |
 | --- | --- |
 | Biến thiên Enthalpy của phản ứng tính theo Eb: 4NH3(g) + 3O2(g) ” 2N2(g) + 6H2O(g) |     0,5     0,5   |
 
-**Câu 5.
+**Câu 5.**
 a)
 
 | – Ảnh hưởng bởi yếu tố nồng độ. Than cháy luôn cần oxygen để duy trì sự cháy, khi thổi không khí vào, làm tăn nồng độ oxygen, than cháy mạnh hơn.   | 0,25 |
@@ -457,7 +457,7 @@ b)
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-DE-MINH-HOA-THAI-MINH-mau-2025](/assets/docs/2023-2024-HSG-10-DE-MINH-HOA-THAI-MINH-mau-2025-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-DE-MINH-HOA-THAI-MINH-mau-2025](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

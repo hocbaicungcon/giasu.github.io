@@ -21,4 +21,4 @@ Bài 2. Công thức xác suất toàn phần. Công thức Bayes. Xem thêm [X�
 
 ## Download Các dạng bài tập một số yếu tố xác suất Toán 12 Cánh Diều
 
-- [cac-dang-bai-tap-mot-so-yeu-to-xac-suat-toan-12-canh-dieu](/assets/docs/cac-dang-bai-tap-mot-so-yeu-to-xac-suat-toan-12-canh-dieu.pdf)
+- [cac-dang-bai-tap-mot-so-yeu-to-xac-suat-toan-12-canh-dieu](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

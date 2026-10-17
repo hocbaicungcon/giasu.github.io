@@ -20,7 +20,7 @@ VẬN DỤNG
 
 **VÍ DỤ MINH HỌA**
 
-**Câu****1*** *.** Xét quá trình đốt cháy khí propane C3H8(g):C3H8(g) + 5O2(g) 3CO2(g) + 4H2O(g)
+**Câu 1:** Xét quá trình đốt cháy khí propane C3H8(g):C3H8(g) + 5O2(g) 3CO2(g) + 4H2O(g)
 
 Cho nhiệt tạo thành và năng lượng liên kết như sau:
 
@@ -38,7 +38,7 @@ Tính biến thiên enthalpy chuẩn của phản ứng theo hai cách.
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 3](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-13.png)
 
-**Câu****3*** *.** Cho 3 hydrocarbon X, Y, Z lần lượt là acetylene, ethylene, ethane.
+**Câu 3:** Cho 3 hydrocarbon X, Y, Z lần lượt là acetylene, ethylene, ethane.
 
 (a) Viết công thức cấu tạo và công thức phân tử của X, Y, Z.
 
@@ -54,7 +54,7 @@ Tính biến thiên enthalpy chuẩn của phản ứng theo hai cách.
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 4](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-14.png)
 
-**Câu 4.** **[CTST – SGK]** Cho phương trình nhiệt hóa học đốt cháy methane và propane:****
+**Câu 4.** **[CTST – SGK]** Cho phương trình nhiệt hóa học đốt cháy methane và propane:**
 
 (a) Nếu lấy cùng số mol methane và propane, chất nào toả nhiều nhiệt hơn?
 
@@ -100,19 +100,19 @@ Trung bình mỗi ngày, một hộ gia đình cần đốt gas để cung cấp
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 9](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-19.png)
 
-**Câu 8.****[MH – 2023]*** ***Bình “ga” loại 12 cân sử dụng trong hộ gia đình Y có chứa 12 kg khí hóa lỏng (LPG) gồm propane và butane với tỉ lệ mol tương ứng là 2 : 3. Khi đốt cháy hoàn toàn, 1 mol propane tỏa ra lượng nhiệt là 2220 kJ và 1 mol butane tỏa ra lượng nhiệt là 2850 kJ. Trung bình, lượng nhiệt tiêu thụ từ đốt khí “ga” của hộ gia đình Y là 10 000 kJ/ngày và hiệu suất sử dụng nhiệt là 67,3%. Sau bao nhiêu ngày hộ gia đình Y sử dụng hết bình ga trên?****
+**Câu 8.**[MH – 2023]** **Bình “ga” loại 12 cân sử dụng trong hộ gia đình Y có chứa 12 kg khí hóa lỏng (LPG) gồm propane và butane với tỉ lệ mol tương ứng là 2 : 3. Khi đốt cháy hoàn toàn, 1 mol propane tỏa ra lượng nhiệt là 2220 kJ và 1 mol butane tỏa ra lượng nhiệt là 2850 kJ. Trung bình, lượng nhiệt tiêu thụ từ đốt khí “ga” của hộ gia đình Y là 10 000 kJ/ngày và hiệu suất sử dụng nhiệt là 67,3%. Sau bao nhiêu ngày hộ gia đình Y sử dụng hết bình ga trên?**
 
-**A.** 30 ngày. **B.** 60 ngày. **C.** 40 ngày. **D.** 20 ngày.
+**A.** 30 ngày. B.** 60 ngày. **C.** 40 ngày. D.** 20 ngày.
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 10](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-20.png)
 
 **Câu 9.** Một loại bình gas có chứa 13 kg khí thiên nhiên có thành phần chính là khí methane, ethane và một số thành phần khác, trong đó tỉ lệ thể tích của methane : ethane là 85 : 15 (thành phần khác không đáng kể). Khi đốt cháy hoàn toàn, 1 mol methane cháy tỏa ra lượng nhiệt là 802 kJ và 1 mol ethane cháy tỏa lượng nhiệt là 1428 kJ. Trung bình, lượng nhiệt tiêu thụ từ đốt khí gas trên của một hộ gia đình X là 10000 kJ/ngày, hiệu suất sử dụng nhiệt là 62%, giá của bình gas trên là 450000 đồng. Số tiền một hộ gia đình X cần trả cho việc mua gas trong một tháng (30 ngày) **gần nhất** với giá trị nào sau đây?
 
-**A.** 345000 đồng. **B.** 297000 đồng. **C.** 414000 đồng. **D.** 333000 đồng.
+**A.** 345000 đồng. B.** 297000 đồng. **C.** 414000 đồng. D.** 333000 đồng.
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 11](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-21.png)
 
-**❖****BÀI TẬP TỰ LUYỆN**
+**❖**BÀI TẬP TỰ LUYỆN**
 
 **1. Trắc nghiệm nhiều phương án lựa chọn**
 
@@ -120,23 +120,23 @@ Trung bình mỗi ngày, một hộ gia đình cần đốt gas để cung cấp
 
 (a) Biết để làm nóng 1 kg nước lên 1 độ thì cần cung cấp nhiệt lượng là 4 200 J. Để đun sôi 30 kg nước từ nhiệt độ 20oC cần cung cấp bao nhiêu kJ nhiệt?
 
-**A.** 2520 kJ.                        **B.** 5040 kJ.                        **C.** 10080 kJ.                            **D.** 6048 kJ.
+**A.** 2520 kJ.                        B.** 5040 kJ.                        **C.** 10080 kJ.                            D.** 6048 kJ.
 
 (b) Cần đốt cháy hoàn toàn bao nhiêu kg gas để cung cấp đủ nhiệt lượng trên, biết hiệu suất hấp thụ nhiệt đạt 80%?
 
-**A.** 0,02 kg.                        **B.** 0,25 kg.                        **C.** 0,16 kg.                              **D.** 0,40 kg.
+**A.** 0,02 kg.                        B.** 0,25 kg.                        **C.** 0,16 kg.                              D.** 0,40 kg.
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 12](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-22.png)
 
 **Câu 11.** Một mẫu khí gas X chứa hỗn hợp propane và butane. Đốt cháy hoàn toàn 12 gam mẫu khí gas X tỏa ra nhiệt lượng 594 kJ. Biết rằng, khi đốt cháy hoàn toàn, 1 mol propane tỏa ra lượng nhiệt là 2220 kJ và 1 mol butane tỏa ra lượng nhiệt là 2850 kJ. Tỉ lệ số mol của propane và butane trong X là
 
-**A.** 1 : 2. **B.** 2 : 3. **C.** 1 : 1. **D.** 3 : 2.
+**A.** 1 : 2. B.** 2 : 3. **C.** 1 : 1. D.** 3 : 2.
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 13](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-23.png)
 
 **Câu 12.** Một bình gas (khí hóa lỏng) có chứa 12 kg hỗn hợp propane và butane, trong đó propane chiếm 27,5% về khối lượng. Khi đốt cháy hoàn toàn, 1 mol propan tỏa ra lượng nhiệt là 2220 kJ và 1 mol butan tỏa ra lượng nhiệt là 2850 kJ. Trung bình, lượng nhiệt tiêu thụ từ đốt khí gas của một hộ gia đình X là 10000 kJ/ngày, hiệu suất sử dụng nhiệt là 70%, giá của bình gas trên là 400000 đồng. Số tiền hộ gia đình X cần trả cho việc mua gas trong một tháng (30 ngày) **gần nhất** với giá trị nào sau đây?
 
-**A.** 250000 đồng. **B.** 290000 đồng. **C.** 310000 đồng. **D.** 350000 đồng.
+**A.** 250000 đồng. B.** 290000 đồng. **C.** 310000 đồng. D.** 350000 đồng.
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 14](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-24.png)
 

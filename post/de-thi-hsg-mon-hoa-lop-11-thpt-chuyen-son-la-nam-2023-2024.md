@@ -221,7 +221,7 @@ Sử dụng nguyên lý trạng thái dừng đối với NO và NO3 hãy chứn
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-CHUYEN-SON-LA-HOA-11](/assets/docs/2023-CHUYEN-SON-LA-HOA-11-giasu.ai.vn.docx)
+- [2023-CHUYEN-SON-LA-HOA-11](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -234,17 +234,17 @@ True
 
 Kết quả trả về của một phép toán so sánh là `True` (đúng) hoặc `False` (sai), hai giá trị này thuộc [kiểu dữ liệu logic](/bai-viet/kieu-logic-boolean-trong-python.html) `bool`. Python cung cấp các phép toán so sánh sau đây:
 
-- **So sánh đồng nhất (giống nhau, bằng nhau) `==`******Cần chú ý rằng phép so sánh đồng nhất khác với phép toán `is`
+- **So sánh đồng nhất (giống nhau, bằng nhau) `==`**Cần chú ý rằng phép so sánh đồng nhất khác với phép toán `is`
 
-- **So sánh lớn hơn****`>`**
+- **So sánh lớn hơn**`>`**
 
-- **So sánh lớn hơn hoặc bằng****`>=`**
+- **So sánh lớn hơn hoặc bằng**`>=`**
 
-- **So sánh nhỏ hơn****`<`**
+- **So sánh nhỏ hơn**`<`**
 
-- **So sánh nhỏ hơn hoặc bằng****`<=`**
+- **So sánh nhỏ hơn hoặc bằng**`<=`**
 
-- **So sánh không bằng (khác nhau)****`!=`**
+- **So sánh không bằng (khác nhau)**`!=`**
 
 Giả sử biến `a` có giá trị `10` và biến `b` có giá trị `20`, thì:
 

@@ -21,4 +21,4 @@ Mời bạn tham khảo [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/ca
 
 Mời bạn tải 50 bộ thủ thường dùng PDF được biên soạn khổ A5 để có thể xem trên điện thoại, máy đọc sách dễ dàng.
 
-- [50-bo-thu-tieng-trung](/assets/docs/50-bo-thu-tieng-trung.pdf)
+- [50-bo-thu-tieng-trung](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

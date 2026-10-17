@@ -242,15 +242,15 @@ Các thầy cô tải tại đây: [GIÁO ÁN KHOA HỌC TỰ NHIÊN 6](#drive-p
 
 ## 32. Phụ lục I, II, III – Giáo dục đia phương
 
-Các thầy cô tải tại đây: [PHỤ LỤC I – II – III GIÁO DỤC ĐỊA PHƯƠNG](/assets/docs/PHU-LUC-I-II-III-GIAO-DUC-DIA-PHUONG.docx)
+Các thầy cô tải tại đây: [PHỤ LỤC I – II – III GIÁO DỤC ĐỊA PHƯƠNG](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 31. Giáo án HĐTNHN-6-KNTT
 
-Các thầy cô tải tại đây: [G.AN-HĐTNHN-6-KNTT](/assets/docs/G.AN-HDTNHN-6-KNTT.docx)
+Các thầy cô tải tại đây: [G.AN-HĐTNHN-6-KNTT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 30. Power point SINH HOẠT LỚP – HỌP PHỤ HUYNH ĐẦU NĂM
 
-Các thầy cô tải tại đây: [sinhhoatchunhiem](/assets/docs/shcn.pptx) và  [PPT hop phu huynh dau nam 2021-2022](#drive-pending-PPT-hop-phu-huynh-dau-nam-2021-2022-1.pptx)
+Các thầy cô tải tại đây: [sinhhoatchunhiem](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing) và  [PPT hop phu huynh dau nam 2021-2022](#drive-pending-PPT-hop-phu-huynh-dau-nam-2021-2022-1.pptx)
 
 ## 29. Giáo án công nghệ 6 (Kết nối tri thức với cuộc sống)
 
@@ -258,7 +258,7 @@ Các thầy cô tải tại đây: [giáo án CÔNG NGHỆ 6 (KẾT NỐI TRI TH
 
 ## 28.  Giáo án HĐTN 6 năm học 2020-2021
 
-Các thầy cô tải tại đây: [GIÁO-ÁN-HĐTN-6-NĂM-21-22-1](/assets/docs/GIAO-AN-HDTN-6-NAM-21-22-1.docx)
+Các thầy cô tải tại đây: [GIÁO-ÁN-HĐTN-6-NĂM-21-22-1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 27. Tất cả về KHTN 6 sách mới
 
@@ -278,19 +278,19 @@ Các thầy cô download tại đây: [Toán 7 8 9-20210830T023759Z-001](https:/
 
 ## 23. PHỤ LỤC 1,2,3 – VẬT LÝ 7,8,9
 
-Các thầy cô download tại đây: [PHỤ LỤC 1,2,3 – VẬT LÝ 7,8,9](/assets/docs/PHU-LUC-123-VAT-LY-789.doc)
+Các thầy cô download tại đây: [PHỤ LỤC 1,2,3 – VẬT LÝ 7,8,9](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 22. Sổ chủ nhiệm
 
-Các thầy cô download tại đây:  [SỔ CHỦ NHIỆM](/assets/docs/SO-CHU-NHIEM.doc)
+Các thầy cô download tại đây:  [SỔ CHỦ NHIỆM](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 21. giáo án hoạt động trải nghiệm hướng nghiệp 6 kết nối tri thức
 
-Các thầy cô download tại đây: [giao-an-HdTNHN-6-ket-noi-tri-thuc-đã chuyển đổi](/assets/docs/giao-an-HdTNHN-6-ket-noi-tri-thuc-da-chuyen-doi.docx)
+Các thầy cô download tại đây: [giao-an-HdTNHN-6-ket-noi-tri-thuc-đã chuyển đổi](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 20. Nội quy lớp học trực tuyến
 
-- [noi quy lớp học trực tuyến](/assets/docs/noi-quy-lop-hoc-truc-tuyen.pptx)
+- [noi quy lớp học trực tuyến](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 19. Giáo án điện tử power point môn toán lớp 10 và lớp 11
 
@@ -304,7 +304,7 @@ Các thầy cô download tại đây: [giao-an-HdTNHN-6-ket-noi-tri-thuc-đã ch
 
 ### a. Họp PHHS đầu năm Lớp 7 – bản thầy Nguyễn Phi Long chia sẻ:
 
-Các thầy cô download tại đây: [NOI DUNG VA BIEN BAN HOP PHU HUYNH DAU NAM18-19](/assets/docs/NOI-DUNG-VA-BIEN-BAN-HOP-PHU-HUYNH-DAU-NAM18-19.doc)
+Các thầy cô download tại đây: [NOI DUNG VA BIEN BAN HOP PHU HUYNH DAU NAM18-19](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ### b. Họp PHHS các kì khác của website GIA SƯ THÔNG MINH
 
@@ -320,11 +320,11 @@ bản powerpoint trình chiếu màn hình tải tại đây: [Power point trìn
 
 ### b. Kế hoạch giảng dạy toán 6 (KNTT)
 
-Các thầy cô tải tại đây: [KHGD-Toan6 (KNTT)](/assets/docs/KHGD-Toan6-KNTT.doc)
+Các thầy cô tải tại đây: [KHGD-Toan6 (KNTT)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ### c. Giáo án thể dục cánh diều
 
-Các thầy cô tải tại đây: [GIÁO ÁN THỂ DỤC CÁNH DIỀU](/assets/docs/GIAO-AN-THE-DUC-CANH-DIEU.docx)
+Các thầy cô tải tại đây: [GIÁO ÁN THỂ DỤC CÁNH DIỀU](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ### d. KHDH 6 – các môn KHTN phụ lục I, II, II
 
@@ -332,7 +332,7 @@ Các thầy cô tải tại đây: [GIÁO ÁN THỂ DỤC CÁNH DIỀU](/assets/
 
 ### e. Phụ lục I, II, II lịch sử và địa lí lớp 6 sách kết nối tri thức
 
-Các thầy cô tải tại đây: [PHỤ LỤC 1, 2, 3 LỊCH SỬ VÀ ĐỊA LÍ LỚP 6 SÁCH KẾT NỐI TRI THỨC](/assets/docs/PHU-LUC-1-2-3-LICH-SU-VA-DIA-LI-LOP-6-SACH-KET-NOI-TRI-THUC.docx)
+Các thầy cô tải tại đây: [PHỤ LỤC 1, 2, 3 LỊCH SỬ VÀ ĐỊA LÍ LỚP 6 SÁCH KẾT NỐI TRI THỨC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ### f. BGĐT môn KHTN Chân trời sáng tạo thầy Hoàng Sanh chia sẻ lại
 
@@ -340,7 +340,7 @@ Các thầy cô tải tại đây: [PHỤ LỤC 1, 2, 3 LỊCH SỬ VÀ ĐỊA L
 
 ### f. KHBG Lịch sử 6 – KNTT cô Trần Thủy Thương chia sẻ
 
-Các thầy cô tải tại đây: [KẾ HOẠCH BÀI DẠY – LỊCH SỬ 6 (KNTT)](/assets/docs/KE-HOACH-BAI-DAY-LICH-SU-6-KNTT.docx)
+Các thầy cô tải tại đây: [KẾ HOẠCH BÀI DẠY – LỊCH SỬ 6 (KNTT)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 15. TỔNG HỢP TÀI LIỆU KHGD, KHGD … THEO Cv 5512, Cv3280 mới nhất 2021
 

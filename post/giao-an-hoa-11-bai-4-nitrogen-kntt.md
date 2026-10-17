@@ -15,10 +15,10 @@ grade: 11
 
 Giáo án hóa 11 bài 4 nitrogen  KNTT
 
-**CHỦ ĐỀ 2:  NITROGEN – SULFUR
-**BÀI 4: NITROGEN
-**I. Mục tiêu
-**1. Kiến thức
+**CHỦ ĐỀ 2:  NITROGEN – SULFUR**
+**BÀI 4: NITROGEN**
+**I. Mục tiêu**
+**1. Kiến thức**
 Trình bày được:
 
 – Trạng thái tự nhiên; cấu tạo nguyên tử, phân tử của nguyên tố nitrogen.
@@ -27,23 +27,23 @@ Trình bày được:
 
 – Ứng dụng của nitrogen trong thực tiễn.
 
-**2. Năng lực:
-**2.1. Năng lực chung
+**2. Năng lực:**
+**2.1. Năng lực chung**
 – Năng lực tự chủ tự học: HS nghiêm túc thực hiện nhiệm vụ, trả lời câu hỏi tìm hiểu về nguyên tố nitrogen.
 
 – Năng lực giải quyết vấn đề và sáng tạo: Từ kiến thức đã học HS vận dụng giải quyết các nhiệm vụ học tập và câu hỏi bài tập.
 
 – Năng lực giao tiếp và hợp tác: Sử dụng ngôn ngữ hóa học đọc tên nguyên tố và hợp chất của nitrogen. Biết chủ động giao tiếp khi có vấn đề thắc mắc. Thông qua làm việc nhóm nâng cao khả năng trình bày ý kiến của bản thân, tự tin thuyết trình trước đám đông.
 
-**2.2. Năng lực Hóa học
-***– Năng lực nhận thức kiến thức hóa học:
+**2.2. Năng lực Hóa học**
+**– Năng lực nhận thức kiến thức hóa học:**
 + Phát biểu được trạng thái tự nhiên của nguyên tố nitrogen.
 
 + Trình bày được sự hoạt động của đơn chất nitrogen ở nhiệt độ cao đối với hydrogen, oxygen. 
 
      Liên hệ quá trình tạo và cung cấp nitrate cho đất từ nước mưa.
 
-***– Năng lực vận dụng kiến thức, kĩ năng đã học:
+**– Năng lực vận dụng kiến thức, kĩ năng đã học:**
 + Giải thích được tính trơ của đơn chất nitrogen ở nhiệt độ thường thông qua liên kết và giá
 
  trị năng lượng liên kết.
@@ -54,18 +54,18 @@ Trình bày được:
 
 + Viết được phương trình hóa học của nitrogen với hydrogen, oxygen.
 
-***– Năng lực tìm hiểu thế giới tự nhiên dưới góc độ hóa học
+**– Năng lực tìm hiểu thế giới tự nhiên dưới góc độ hóa học**
           + Được thực hiện thông qua hoạt động thảo luận nhóm về nội dung liên hệ quá trình tạo
 
             và cung cấp nitrate cho đất từ nước mưa.
 
-**2. Phẩm chất
+**2. Phẩm chất**
 – Trung thực: Thật thà, ngay thẳng trong kết quả làm việc nhóm.
 
 – Trách nhiệm: Có tinh thần trách nhiệm cao để hoàn thành tốt nhiệm vụ được phân công.
 
-**II. Thiết bị dạy học và học liệu
-**1. Giáo viên:
+**II. Thiết bị dạy học và học liệu**
+**1. Giáo viên:**
 – Kế hoạch dạy học.
 
 – Bài giảng powerpoint.
@@ -76,21 +76,21 @@ Trình bày được:
 
 – Video, hình ảnh liên quan.
 
-**2. Học sinh:
+**2. Học sinh:**
 – Sách giáo khoa.
 
 – Đọc trước bài ở nhà.
 
-**III. Tiến trình dạy học
-**1. Hoạt động 1: Khởi động ( 5 phút)
-**a)  Mục tiêu:
+**III. Tiến trình dạy học**
+**1. Hoạt động 1: Khởi động ( 5 phút)**
+**a)  Mục tiêu:**
 **–** Tạo hứng thú cho HS học tập, tạo sự tò mò cho hs có nhu cầu tìm hiểu kiến thức mới, tạo tâm thế thoải mái cho tiết học.
 
 **–** Cho HS thông tin bước đầu về nguyên tố nitrogen.
 
 **b) Nội dung:** Tìm hiểu vị trí và cấu hình electron của nguyên tử N
 
-**c)  *Sản phẩm, đánh giá kết quả của hoạt động
+**c)  *Sản phẩm, đánh giá kết quả của hoạt động**
 -Sản phẩm hoạt động
 
 X thuộc ô 7; chu kì 2; nhóm VA.
@@ -101,7 +101,7 @@ X thuộc ô 7; chu kì 2; nhóm VA.
 
 + Thông qua kết quả của một số cá nhân HS  và sự góp ý, bổ sung của các HS khác, GV biết được HS đã có được những kiến thức nào, những kiến thức nào cần phải điều chỉnh, bổ sung các HĐ tiếp theo.
 
-**d) Phương thức tổ chức hoạt động
+**d) Phương thức tổ chức hoạt động**
 *–* HĐ cá nhân:  GV yêu cầu HS  dựa vào các câu thơ sau xác định vị trí của nguyên tố X.
 
 “*Nhà em ở chu kì hai.
@@ -115,16 +115,16 @@ X thuộc ô 7; chu kì 2; nhóm VA.
 
 HS có thể lung túng khi xã định nhóm của nguyên tố X. GV có thể gợi ý vào vị trí của ô để khẳng định X thuộc  nhóm A và dựa vào số e lớp ngoài cùng để xác định thứ tự nhóm
 
-**2. Hoạt động : Hình thành kiến thức
+**2. Hoạt động : Hình thành kiến thức**
 **Hoạt động 1: Trạng thái tự nhiên**(*5 phút*)
 
-**a. Mục tiêu
+**a. Mục tiêu**
 – Trình bày được trạng thái tự nhiên của nguyên tố nitrogen.
 
-**b. Nội dung
+**b. Nội dung**
 – Sử dụng phương pháp đàm thoại gợi mở, nhóm để tìm hiểu về trạng thái tự nhiên của nitrogen.
 
-**c. Sản phẩm
+**c. Sản phẩm**
 – Phát biểu được trạng thái tự nhiên của nguyên tố nitrogen:
 
   + Trong khí quyển Trái Đất, nitrogen là nguyên tố phổ biến nhất, chiếm 75,5% khối lượng, 78,1% thể tích.
@@ -133,7 +133,7 @@ HS có thể lung túng khi xã định nhóm của nguyên tố X. GV có thể
 
 + Nguyên tố nitrogen tồn tại trong tự nhiên với 2 đồng vị bền là *714N* (99,63%) và *715N* (0,37%).
 
-**d) Tổ chức thực hiện
+**d) Tổ chức thực hiện**
 + HĐ chất vấn HS về trạng thái tự nhiên của nitrogen.
 
 **Hoạt động 2: Cấu tạo nguyên tử, phân tử**(*5 phút*)
@@ -191,10 +191,10 @@ b) Nội dung : Hoàn thành các câu hỏi/bài tập trong **phiếu học t�
 
 *d) Tổ chức thực hiện*: Làm việc cá nhân.
 
-**4.  Hoạt động vận dụng và tìm tòi mở rộng***(3 phút)
+**4.  Hoạt động vận dụng và tìm tòi mở rộng**(3 phút)
 *a) Mục tiêu:* giúp HS vận dụng kiến thức đã được học trong bài để giải quyết các câu hỏi, nội dung gắn liền với thực tiễn và mở rộng thêm kiến thức của HS về các ứng dụng của nitrogen trong đời sống.
 
-**b) Nội dung
+**b) Nội dung**
 HS giải quyết các câu hỏi/bài tập sau
 
 1. Dân gian có câu ca dao:
@@ -213,8 +213,8 @@ HS giải quyết các câu hỏi/bài tập sau
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [04-KNTT-BAI-4-NITROGEN-NGO-LAN](/assets/docs/04-KNTT-BAI-4-NITROGEN-NGO-LAN.docx)
-- [04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man](/assets/docs/04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man.docx)
+- [04-KNTT-BAI-4-NITROGEN-NGO-LAN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [04.2-KNTT-Bai-4-NITROGEN-Giang-Cu-Man](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

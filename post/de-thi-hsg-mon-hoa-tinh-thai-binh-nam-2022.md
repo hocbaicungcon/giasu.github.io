@@ -466,8 +466,8 @@ Phát biểu nào sau đây về X và Y là đúng?
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [File WORD: 2021-2022](/assets/docs/2021-2022.docx)
-- [File PDF: 2021-2022](/assets/docs/2021-2022.pdf)
+- [File WORD: 2021-2022](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [File PDF: 2021-2022](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

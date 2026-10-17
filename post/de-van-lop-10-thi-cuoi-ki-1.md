@@ -16,7 +16,7 @@ grade: 10
 
 ### I. ĐỌC – HIỂU (6,0 điểm)
 
-**Đọc văn bản sau và thực hiện yêu cầu:
+**Đọc văn bản sau và thực hiện yêu cầu:**
 *BẾN ĐÒ NGÀY MƯA* (Anh Thơ)
 
 *Tre rũ rợi ven bờ chen ướt át,
@@ -31,7 +31,7 @@ grade: 10
 *Thúng đội đầu như đội cả trời mưa.
 *Và họa hoằn một con thuyền ghé chở
 *Rồi âm thầm bến lại lặng trong mưa.
-(Theo ***Thi nhân Việt Nam***, Hoài Thanh, Hoài Chân, NXB Văn học)
+(Theo **Thi nhân Việt Nam**, Hoài Thanh, Hoài Chân, NXB Văn học)
 
 **Câu 1.** Xác định thể thơ của bài thơ. (0, 5đ)
 
@@ -39,7 +39,7 @@ grade: 10
 
 **Câu 3.** Xác định 5 từ láy có trong bài thơ?( 0.75đ)
 
-**Câu 4**. Nêu tác dụng của biện pháp tu từ so sánh được sử dụng trong hai câu thơ: (0.75 đ)*Ngoài đường lội hoạ hoằn người đến chợ
+**Câu 4:** . Nêu tác dụng của biện pháp tu từ so sánh được sử dụng trong hai câu thơ: (0.75 đ)*Ngoài đường lội hoạ hoằn người đến chợ
 *Thúng đội đầu như đội cả trời mưa
 **Câu 5.** Nhận xét cách gieo vần của tác giả trong bài thơ. (0.75đ)
 
@@ -59,7 +59,7 @@ Anh/chị hãy viết bài văn (khoảng 500 chữ) giới thiệu, đánh giá
 
 ## Đáp án Đề văn lớp 10 thi cuối kì 1
 
-**ĐỌC HIỂU
+**ĐỌC HIỂU**
 **1.** Thể thơ 8 tiếng hoặc 8 chữ
 
 **2.** HS nêu được 3 ý trong các đáp án sau: Con người ở bến đò ngày mưa được tái hiện qua những hình ảnh là: “Vài quán hàng không khách đứng xo ro. Một bác lái ghé buồm vào hút điếu, Mặc bà hàng sù sụ sặc hơi, ho. Ngoài đường lội hoạ hoằn người đến chợ Thúng đội đầu như đội cả trời mưa.”
@@ -84,7 +84,7 @@ Anh/chị hãy viết bài văn (khoảng 500 chữ) giới thiệu, đánh giá
 
 **Giải thích: Vì** tác giả phải là một người yêu quê hương tha thiết mới có thể miêu tả đến chân thực như vậy, cảnh vật cũng như con người ở chợ lúc trời mưa. Không chỉ thế , tài quan sát và khả năng đưa vào tác phẩm của mình cũng giúp nhà thơ khẳng định sự yêu thương, trân quý quê hương, đất nước của chính mình.(0.75 đ)
 
-**II. Viết bài văn nghị luận phân tích, đánh giá nét đặc sắc về nội dung và nghệ thuật của bài thơ *Bến đò ngày mưa* (Anh Thơ).
+**II. Viết bài văn nghị luận phân tích, đánh giá nét đặc sắc về nội dung và nghệ thuật của bài thơ *Bến đò ngày mưa* (Anh Thơ).**
 *a*. *Đảm bảo cấu trúc bài nghị luận:* Mở bài nêu được vấn đề, thân bài triển khai được vấn đề, kết bài khái quát được vấn đề
 
 *b. Xác định đúng vấn đề cần nghị luận:* phân tích, đánh giá nét đặc sắc về nội dung và nghệ thuật của bài thơ *Bến đò ngày mưa* (Anh Thơ)
@@ -94,21 +94,21 @@ Anh/chị hãy viết bài văn (khoảng 500 chữ) giới thiệu, đánh giá
 
 – Kết hợp được lí lẽ và dẫn chứng để tạo tính chặt chẽ, logic của mỗi luận điểm.
 
-**Dàn ý:
-**Mở bài: Giới thiệu ngắn gọn về tác giả, tác phẩm.
+**Dàn ý:**
+**Mở bài: Giới thiệu ngắn gọn về tác giả, tác phẩm.**
 Anh Thơ là một gương mặt hiền hòa lặng lẽ, nhưng cũng không kém vẻ tân kỳ. Chị đem lại cho Thơ mới một phong cách độc đáo, đặc biệt. Sau Tương Phố mười lăm năm, cùng các nhà thơ nữ đương thời Vân Ðài, Mộng Tuyết, Hằng Phương…, Anh Thơ đã góp phần chứng tỏ truyền thống nữ lưu văn học không hề đứt đoạn, mà càng nảy nở. Thơ của Anh Thơ hiền hoà ở cấu trúc, giọng điệu, ở bút pháp, nhưng tân kì ở những chi tiết. hình ảnh, những câu thơ rất ảo rất say. *Bến đò ngày mưa* dựng lại một khung cảnh bến đò nhỏ nơi làng quê vào ngày mưa. Nét vẽ thơ là nét tả thực, không bộn bề chi tiết, nhưng cũng gợi được cái hồn xưa cảnh cũ của thôn cảnh xứ Bắc thuở nào.
 
-**Thân bài: Phân tích, đánh giá những nét đặc sắc, độc đáo của bài thơ:
+**Thân bài: Phân tích, đánh giá những nét đặc sắc, độc đáo của bài thơ:**
 * Phân tích, đánh giá mạch ý tưởng, cảm xúc của nhân vật trữ tình:
 
 **Mạch cảm xúc:** Bài thơ gợi tả quang cảnh của một bến đò trong ngày mưa. Qua việc khắc họa bức tranh cảnh vật và con người nơi bên đò, Anh Thơ đã gợi lên nét đặc trưng quen thuộc của phong cảnh làng quê Việt. Tuy không trực tiếp khẳng định nhưng tác giả cũng đã bộc lộ tình cảm yêu mến đối với cảnh với người và gởi đến thông điệp về tình yêu đối với những bình dị, thân thuộc của quê hương.
 
-**Hình ảnh:
+**Hình ảnh:**
 + Hình ảnh thiên nhiên quen thuộc, bình dị, được miêu tả sinh động: *tre, chuối, bến, dòng sông, con thuyền, vài quán hàng;* hình ảnh con người hiện lên chân thực, gần gũi, gợi lên nhịp sống chậm rãi, bình yên nơi thôn quê: một bác lái…, bà già…, người đến chợ…
 
 **Điểm nhìn**: *Bến đò ngày mưa* là tranh thơ được vẽ bằng con mắt đa cảm, con mắt tình quê của nữ sĩ Anh Thơ. Vì vậy, bức tranh là một góc nhìn, ghi lại ấn tượng, cảm xúc về cảnh quê đơn sơ mà có hồn. Cảnh quê, nét nào cũng hoang vắng, bình lặng và buồn; nhưng thấm sâu trong cảnh là tâm trạng bâng khuâng, luyến níu của thi sĩ. Hai nét cảnh quê và tình quê làm nên linh hồn của từng bài thơ
 
-*** Phân tích đánh giá sự phát triển của hình tượng chính và tính độc đáo của các phương diện ngôn từ.
+** Phân tích đánh giá sự phát triển của hình tượng chính và tính độc đáo của các phương diện ngôn từ.**
 – **Sự phát triển của hình tượng chính
 Bài thơ mở ra là cảnh ven bờ, đầu bến. Trong không gian nghiêng nghiêng xa cách ấy, những tạo vật tre, chuối, dòng sông, con đò – những hình ảnh quen thuộc ở làng quê Bắc Bộ – như đang phơi mình tắm mưa.
 
@@ -133,17 +133,17 @@ Và hoạ hoằn một con thuyền ghé chở
 Rồi âm thầm bến lại lặng trong mưa.
 Khổ thơ có hai nét cảnh với hai không gian con đường và bến sông. Hai không gian gợi sự chuyển vận, gợi sự sống của con người.
 
-**– Tính độc đáo của các phương diện ngôn từ:
+**– Tính độc đáo của các phương diện ngôn từ:**
 + Từ ngữ: tác giả sử dụng nhiều từ ngữ giàu sức gợi hình, rất nhiều từ láy (*rũ rợi, ướt át, bơ phờ, rào rạt, chơ vơ, lạnh lẽo, xo ro, sù sụ, họa hoằn, âm thầm*) vừa góp phần gợi hình ảnh, vừa góp phần tạo nhạc tính cho bài thơ
 
 + Biện pháp tu từ: Biện pháp điệp từ “dầm mưa”, “họa hoằn”; biện pháp nhân hóa và liệt kê, so sánh có tác dụng vừa diễn tả cụ thể, vừa diễn tả sinh động, gợi cái hồn quê nơi bến vắng.
 
 + Bài được viết theo thể tự do, gieo vần linh hoạt, chủ yếu là vẫn chân (“at, “ơ”, “o”); nhịp thơ chậm rãi, phù hợp với việc miêu tả không gian, nhịp sống nơi làng quê.
 
-*** Phân tích, đánh giá nét hấp dẫn riêng của bài thơ so với những sáng tác khác cùng đề tài, chủ đề, thể loại
+** Phân tích, đánh giá nét hấp dẫn riêng của bài thơ so với những sáng tác khác cùng đề tài, chủ đề, thể loại**
 *Bến đò ngày mưa* có cấu trúc chặt chẽ, chi tiết bình thường đã được nhà thơ thổi vào đấy sức sống mới nên có sức hấp dẫn riêng. Cùng với “Chiều xuân”, “Trưa hè”,… bài thơ đã thể hiện rõ nét riêng trong sáng tác của Anh Thơ. Cái đẹp của tác phẩm được tạo thành bởi bút pháp lấy động tả tĩnh, cách sử dụng từ láy, các từ ngữ giàu sắc thái biểu cảm,…
 
-**3. Kết bài: Khẳng định giá trị tư tưởng và giá trị thẩm mĩ của bài thơ
+**3. Kết bài: Khẳng định giá trị tư tưởng và giá trị thẩm mĩ của bài thơ**
 *d. Chính tả, ngữ pháp:* Đảm bảo chuẩn chính tả, ngữ pháp Tiếng Việt.
 
 *e. Sáng tạo:* Thể hiện suy nghĩ sâu sắc về vấn đề nghị luận; có cách diễn đạt mới mẻ.
@@ -167,7 +167,7 @@ Khổ thơ có hai nét cảnh với hai không gian con đường và bến sô
 *Thúng đội đầu như đội cả trời mưa.
 *Và họa hoằn một con thuyền ghé chở
 *Rồi âm thầm bến lại lặng trong mưa.
-(Theo ***Thi nhân Việt Nam***, Hoài Thanh, Hoài Chân, NXB Văn học)
+(Theo **Thi nhân Việt Nam**, Hoài Thanh, Hoài Chân, NXB Văn học)
 
 Anh Thơ là một gương mặt hiền hòa lặng lẽ, nhưng cũng không kém vẻ tân kỳ. Chị đem lại cho Thơ mới một phong cách độc đáo, đặc biệt. Sau Tương Phố mười lăm năm, cùng các nhà thơ nữ đương thời Vân Ðài, Mộng Tuyết, Hằng Phương…, Anh Thơ đã góp phần chứng tỏ truyền thống nữ lưu văn học không hề đứt đoạn, mà càng nảy nở. Thơ của Anh Thơ hiền hoà ở cấu trúc, giọng điệu, ở bút pháp, nhưng tân kì ở những chi tiết. hình ảnh, những câu thơ rất ảo rất say. *Bến đò ngày mưa* dựng lại một khung cảnh bến đò nhỏ nơi làng quê vào ngày mưa. Nét vẽ thơ là nét tả thực, không bộn bề chi tiết, nhưng cũng gợi được cái hồn xưa cảnh cũ của thôn cảnh xứ Bắc thuở nào.
 

@@ -11,32 +11,32 @@ tags:
 - Báo cáo biện pháp
 ---
 
-**SỞ GIÁO DỤC VÀ ĐÀO TẠO TỈNH NAM ĐỊNH
-**TRƯỜNG THPT …………
-**BÁO CÁO BIỆN PHÁP NÂNG CAO CHẤT LƯỢNG CÔNG TÁC GIẢNG DẠY MÔN ….
-**Họ và tên:
-**Môn giảng dạy:
-**Trình độ chuyên môn:
-**Chức vụ:
+**SỞ GIÁO DỤC VÀ ĐÀO TẠO TỈNH NAM ĐỊNH**
+**TRƯỜNG THPT …………**
+**BÁO CÁO BIỆN PHÁP NÂNG CAO CHẤT LƯỢNG CÔNG TÁC GIẢNG DẠY MÔN ….**
+**Họ và tên:**
+**Môn giảng dạy:**
+**Trình độ chuyên môn:**
+**Chức vụ:**
 **Đơn vị công tác**:
 
-***Nam Định, n** gày tháng năm 2020
-**MỤC LỤC
-**PHẦN I: ĐẶT VẤN ĐỀ
-**PHẦN II: GIẢI QUYẾT VẤN ĐỀ
-**1. Thực trạng công tác dạy và học…..
+**Nam Định, n** gày tháng năm 2020
+**MỤC LỤC**
+**PHẦN I: ĐẶT VẤN ĐỀ**
+**PHẦN II: GIẢI QUYẾT VẤN ĐỀ**
+**1. Thực trạng công tác dạy và học…..**
 a) Ưu điểm
 
 b) Hạn chế và nguyên nhân hạn chế
 
-**2. Biện pháp nâng cao chất lượng giảng dạy…
+**2. Biện pháp nâng cao chất lượng giảng dạy…**
 a) Biện pháp 1
 
 b) Biện pháp 2
 
 ….
 
-**3. Thực nghiệm sư phạm
+**3. Thực nghiệm sư phạm**
 a) Mô tả cách thức thực hiện
 
 b) Kết quả đạt được
@@ -45,19 +45,19 @@ c) Điều chỉnh, bổ sung sau thực nghiệm
 
 …..
 
-**4. Kết luận
-**5. Kiến nghị, đề xuất
+**4. Kết luận**
+**5. Kiến nghị, đề xuất**
 a) Đối với tổ/nhóm chuyên môn
 
 b) Đối với Lãnh đạo nhà trường
 
 c) Đối với Sở Giáo dục và Đào tạo
 
-**PHẦN III: MINH CHỨNG VỀ HIỆU QUẢ CỦA BIỆN PHÁP
+**PHẦN III: MINH CHỨNG VỀ HIỆU QUẢ CỦA BIỆN PHÁP**
 *(Liệt kê và đính kèm các văn bản, báo cáo, số liệu…về sự tiến bộ của học sinh).
 …………………
 
-**PHẦN IV: CAM KẾT
+**PHẦN IV: CAM KẾT**
 *(Giáo viên cam kết không sao chép hoặc vi phạm bản quyền; các biện pháp đã triển khai thực hiện và minh chứng về sự tiến bộ của học sinh là trung thực).
 ……………………………
 
@@ -87,8 +87,8 @@ c) Đối với Sở Giáo dục và Đào tạo
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file mẫu
 
-- [Mau_bao_cao_bien_phap_nang_cao_chat_luong](/assets/docs/Mau_bao_cao_bien_phap_nang_cao_chat_luong_20200922113128731731.docx)
-- [PHIEU_DANH_GIA_BIEN_PHAP_NCCL](/assets/docs/PHIEU_DANH_GIA_BIEN_PHAP_NCCL_20201120110011387392.docx)
+- [Mau_bao_cao_bien_phap_nang_cao_chat_luong](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [PHIEU_DANH_GIA_BIEN_PHAP_NCCL](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

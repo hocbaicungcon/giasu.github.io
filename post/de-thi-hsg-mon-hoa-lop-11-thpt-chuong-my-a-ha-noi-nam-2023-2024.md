@@ -122,8 +122,8 @@ cho tác dụng với dung dịch NH3 dư, thu được 45,52 gam kết tủa. T
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [De-thi-chon-HSG-lop-11-mon-Hoa-hoc-2023-2024](/assets/docs/De-thi-chon-HSG-lop-11-mon-Hoa-hoc-2023-2024-giasu.ai.vn.pdf)
-- [Huong-dan-cham-HSG-lop-11-2023-2024](/assets/docs/Huong-dan-cham-HSG-lop-11-2023-2024-giasu.ai.vn.pdf)
+- [De-thi-chon-HSG-lop-11-mon-Hoa-hoc-2023-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Huong-dan-cham-HSG-lop-11-2023-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

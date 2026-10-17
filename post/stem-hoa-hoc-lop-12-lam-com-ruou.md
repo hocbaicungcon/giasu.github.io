@@ -21,8 +21,8 @@ grade: 12
 
 ## 1. Tên chủ đề: LÀM CƠM RƯỢU
 
-**(Số tiết: 04tiết – Lớp 12)
-**2. Mô tả chủ đề:
+**(Số tiết: 04tiết – Lớp 12)**
+**2. Mô tả chủ đề:**
 Như chúng ta đã biết, cơm rượu có vị ngọt, nồng, chua nhẹ và thơm, có tác dụng kích thích tiêu hóa, giúp ăn ngon miệng, bồi bổ cơ thể. Cơm rượu có thể được làm dễ dàng từ các nguyên liệu sẵn có chứa nhiều tinh bột như gạo, ngô, khoai, sắn, lúa mì,…Hiện nay, sau mỗi bữa cơm gia đình thường có một lượng nhỏ cơm dư thừa, nếu không sử dụng lượng cơm dư thừa này thì sẽ gây lãng phí một lượng lương thực. Để tránh sự lãng phí này, chúng ta có thể sử dụng nguồn cơm này để làm cơm rượu.
 
 Trong chủ đề này, HS sẽ thực hiện
@@ -37,10 +37,10 @@ Theo đó, HS phải tìm hiểu và chiếm lĩnh các kiến thức mới:
 
 – Sinh trưởng của vi sinh vật. (Bài 25– Sinh học lớp 10);
 
-**3. Mục tiêu:
+**3. Mục tiêu:**
 Sau khi hoàn thành chủ đề này, học sinh có khả năng:
 
-**a. Kiến thức, kĩ năng:
+**a. Kiến thức, kĩ năng:**
 – Nêu được công thức phân tử, cấu tạo và tính chất vật lý.
 
 – Giải thích được tính chất hóa học của glucozơ, saccarozơ, tinh bột và xenlulozơ. 
@@ -59,45 +59,45 @@ Sau khi hoàn thành chủ đề này, học sinh có khả năng:
 
 – Hợp tác trong nhóm để cùng thực hiện nhiệm vụ học tập.
 
-**b. Phát triển phẩm chất:
+**b. Phát triển phẩm chất:**
 – Có thái độ tích cực, hợp tác trong làm việc nhóm
 
 – Yêu thích, say mê nghiên cứu khoa học
 
 – Có ý thức bảo vệ môi trường
 
-**c. Phát triển năng lực:
+**c. Phát triển năng lực:**
  – Năng lực khoa học tự nhiên
 
 – Năng lực giải quyết vấn đề và sáng tạo
 
 – Năng lực giao tiếp và hợp tác nhóm để thống nhất bản thiết kế và phân công thực hiện từng phần nhiệm vụ cụ thể.
 
-**4. Thiết bị:
+**4. Thiết bị:**
 GV sẽ hướng dẫn HS sử dụng một số thiết bị sau khi học chủ đề:
 
 Một số nguyên vật liệu như: Cơm, men, hộp đựng, đũa, thìa.
 
-**5. Tiến trình dạy học:
-***Hoạt động 1:XÁC ĐỊNH YÊU CẦULÀM CƠM RƯỢU
-**(Tiết 1 – 45 phút)
-**A. Mục đích:
+**5. Tiến trình dạy học:**
+**Hoạt động 1:XÁC ĐỊNH YÊU CẦULÀM CƠM RƯỢU**
+**(Tiết 1 – 45 phút)**
+**A. Mục đích:**
 Học sinh trình bày được kiến thức về cơm rượu và các nguyên liệu làm cơm rượu. Tiếp nhận được nhiệm vụ làm cơm rượu từ cơm và men rượu và hiểu rõ các tiêu chí đánh giá sản phẩm. 
 
-**B. Nội dung:
+**B. Nội dung:**
 – HS trình bày được cơm rượu là gì, tác dụng và các nguyên liệu để làm cơm rượu.
 
 – GV thống nhất với HS về kế hoạch triển khai dự án và tiêu chí đánh giá sản phẩm của dự án. 
 
-**C. Dự kiến sản phẩm hoạt động của học sinh:
+**C. Dự kiến sản phẩm hoạt động của học sinh:**
 Kết thúc hoạt động, HS cần đạt được các sản phẩm sau:
 
 – Bản ghi chép kiến thức mới về cơm rượu, tác dụng và nguyên liệu làm cơm rượu
 
 – Bảng mô tả nhiệm vụ của dự án và nhiệm vụ các thành viên; thời gian thực hiện dự án và các yêu cầu của sản phẩm trong dự án. 
 
-**D. Cách thức tổ chức hoạt động:
-***Bước 1.*** Đặt vấn đề, chuyển giao nhiệm vụ
+**D. Cách thức tổ chức hoạt động:**
+**Bước 1.** Đặt vấn đề, chuyển giao nhiệm vụ
 
 Trên cơ sở GV đã giao nhiệm vụ cho HS về nhà tìm hiểu thông tin về cơm rượu, tác dụng và nguyên liệu làm cơm rượu, GV đặt câu hỏi để HS trả lời: 
 
@@ -105,19 +105,19 @@ Cơm rượu là gì, cơm rượu có tác dụng gì, để làm cơm rượu 
 
 GV tổng kết bổ sung, chỉ ra được: Cơm rượu là hỗn hợp sau lên men cơm nguội trong đó có chứa nước, đường, etanol, axit axetic,…Cơm rượu có vị ngọt, nồng, chua nhẹ và thơm, có tác dụng kích thích tiêu hóa, giúp ăn ngon miệng, bồi bổ cơ thể. Cơm rượu có thể được làm dễ dàng từ các nguyên liệu sẵn có như cơm tẻ, cơm nếp, men rượu.
 
-***Bước 2.*** Giao nhiệm vụ cho HS và xác lập yêu cầu của sản phẩm
+**Bước 2.** Giao nhiệm vụ cho HS và xác lập yêu cầu của sản phẩm
 
 GV nêu nhiệm vụ: Căn cứ vào kết quả vừa tìm hiểu, các nhóm sẽ thực hiện dự án “Làm cơm rượu” từ cơm nguội và men rượu.
 
 Sản phẩm cơm rượu cần đạt được các yêu cầu như sau:
 
-***Yêucầu đối vớisản phẩm cơm rượu:
-✓ ***Cơm rượu có mùi thơm
-✓ ***Vị ngọt vừa
-✓ ***Ít chua
-✓ ***Vị nồng nhẹ
-✓ ***Khối lượng khoảng 100-200 gam
-***Bước3.*** GV thống nhất kế hoạch triển khai
+**Yêucầu đối vớisản phẩm cơm rượu:**
+✓ **Cơm rượu có mùi thơm
+✓ **Vị ngọt vừa
+✓ **Ít chua
+✓ **Vị nồng nhẹ
+✓ **Khối lượng khoảng 100-200 gam
+**Bước3.** GV thống nhất kế hoạch triển khai
 
  
 
@@ -133,8 +133,8 @@ Sản phẩm cơm rượu cần đạt được các yêu cầu như sau:
 
 **Trong đó, GV nêu rõ nhiệm vụ ở nhà của hoạt động 2:** Nghiên cứu kiến thức liên quan: Glucozơ (Bài 5 – Hóa học lớp 12); Saccarozơ, tinh bột và xenllulozơ (Bài 6 – Hóa học lớp 12)
 
-***Hoạt động 2:NGHIÊN CỨU VỀ CẤU TẠO VÀ TÍNH CHẤT CỦA GLUCOZƠ, SACCAROZƠ, TINH BỘT VÀ XENLULOZƠ; CẤC YẾU TỐ ẢNH HƯỞNG ĐẾN QUÁ TRÌNH LÊN MEN RƯỢU
-**(Tiết 2 – 45 phút)
+**Hoạt động 2:NGHIÊN CỨU VỀ CẤU TẠO VÀ TÍNH CHẤT CỦA GLUCOZƠ, SACCAROZƠ, TINH BỘT VÀ XENLULOZƠ; CẤC YẾU TỐ ẢNH HƯỞNG ĐẾN QUÁ TRÌNH LÊN MEN RƯỢU**
+**(Tiết 2 – 45 phút)**
 *(HS làm việc ở nhà – 3 ngày, rồi báo cáo tại lớp)
 **a. Mục đích**:
 
@@ -152,7 +152,7 @@ Sản phẩm cơm rượu cần đạt được các yêu cầu như sau:
 
  
 
-**b. Nội dung:
+**b. Nội dung:**
 Trong 3 ngày, HS tìm hiểu, thảo luận ở nhà để tìm hiểu các kiến thức được phân công.
 
 **Chủ đề 1**. Glucozơ
@@ -171,28 +171,28 @@ Học sinh tự học và làm việc nhóm thảo luận thống nhất các ki
 
 Trong tiết học trên lớp, HS báo cáo theo nhóm. GV và các bạn học phản biện. Cuối tiết học, GV sẽ giao nhiệm vụ cho các nhóm về phương án làm cơm rượu.
 
-**c. Dự kiến sản phẩm hoạt động của học sinh:
+**c. Dự kiến sản phẩm hoạt động của học sinh:**
 – Bài báo cáo của các nhóm.
 
 – Bản ghi nhận các ý kiến đóng góp của bạn học, các câu hỏi, phản biện của nhóm bạn.
 
-**d. Cách thức tổ chức hoạt động:
-**Mở đầu – Tổ chức báo cáo
-***– GV thông báo tiến trình báo cáo
+**d. Cách thức tổ chức hoạt động:**
+**Mở đầu – Tổ chức báo cáo**
+**– GV thông báo tiến trình báo cáo**
 + Thời gian báo cáo của mỗi nhóm: 5 phút
 
 + Thời gian đặt câu hỏi và trao đổi: 3 phút
 
 + Trong khi nhóm bạn báo cáo, mỗi HS sẽ ghi chú vào nhật ký học tập của cá nhân và đặt câu hỏi tương ứng.
 
-***– Báo cáo
+**– Báo cáo**
  + Các nhóm HS trình bày các chủ đề được phân công.
 
  + GV sử dụng câu hỏi định hướng để trao đổi về mặt nội dung.
 
  + GV sử dụng phiếu đánh giá để đánh giá phần trình bày của học sinh.
 
-***– Tổng kết và giao nhiệm vụ
+**– Tổng kết và giao nhiệm vụ**
  + GV đánh giá phần báo cáo của HS dựa trên các tiêu chí: Nội dung; hình thức báo cáo; kĩ năng thuyết trình (trình bày và trả lời câu hỏi).
 
 + GV đặt câu hỏi: Vận dụng những kiến thức nào trong chủ đề để thực hiện sản phẩm của dự án?
@@ -215,11 +215,11 @@ Poster sản phẩm bao gồm các nội dung:
 
  * Các phản ứng hóa học xảy ra
 
-***Hoạt động 3:THIẾT KẾ, TRÌNH BÀY VÀ BẢO VỆ PHƯƠNG ÁN THIẾT KẾ
+**Hoạt động 3:THIẾT KẾ, TRÌNH BÀY VÀ BẢO VỆ PHƯƠNG ÁN THIẾT KẾ**
 
 LÀM CƠM RƯỢU TỪ CƠM NGUỘI VÀ MEN RƯỢU
-**(Tiết 3 – 45 phút)
-**a. Mục đích:
+**(Tiết 3 – 45 phút)**
+**a. Mục đích:**
 1. Thảo luận, đưa ra thiết kế quy trình làm cơm rượu
 
 2. Thảo luận, lựa chọn thiết kế quy trình làm cơm rượu
@@ -235,7 +235,7 @@ GV tổ chức cho HS từng nhóm thảo luận theo các bước:
 
  3. Trình bày bản thiết kế trước lớp. Vận dụng các kiến thức đã biết để bảo vệ bản thiết kế. GV và các HS khác phản biện. Nhóm HS ghi nhận xét, điều chỉnh và đề xuất phương án tối ưu để làm sản phẩm.
 
-**c. Dự kiến sản phẩm hoạt động của học sinh:
+**c. Dự kiến sản phẩm hoạt động của học sinh:**
 – Bản thiết kế quy trình làm cơm rượu
 
 – Bản ghi nhận ý kiến đóng góp của bạn học, thầy cô giáo
@@ -244,22 +244,22 @@ GV tổ chức cho HS từng nhóm thảo luận theo các bước:
 
  
 
-**d. Cách thức tổ chức hoạt động:
-***Bước 1:*** GV tổ chức cho các nhóm hoạt động để đưa ra bản thiết kế và lựa chọn bản thiết kế cho nhóm.
+**d. Cách thức tổ chức hoạt động:**
+**Bước 1:** GV tổ chức cho các nhóm hoạt động để đưa ra bản thiết kế và lựa chọn bản thiết kế cho nhóm.
 
-***Bước 2:*** Lần lượt từng nhóm trình bày phương án thiết kế trong 5 phút. Các nhóm còn lại chú ý nghe.
+**Bước 2:** Lần lượt từng nhóm trình bày phương án thiết kế trong 5 phút. Các nhóm còn lại chú ý nghe.
 
-***Bước 3:*** GV tổ chức cho các nhóm còn lại nêu câu hỏi, nhận xét về phương án thiết kế của nhóm bạn; nhóm trình bày trả lời, bảo vệ, thu nhận góp ý, đưa ra sửa chữa phù hợp.
+**Bước 3:** GV tổ chức cho các nhóm còn lại nêu câu hỏi, nhận xét về phương án thiết kế của nhóm bạn; nhóm trình bày trả lời, bảo vệ, thu nhận góp ý, đưa ra sửa chữa phù hợp.
 
-***Bước 4:*** GV nhận xét, tổng kết và chuẩn hoá các kiến thức liên quan, chốt lại các vấn đề cần chú ý, chỉnh sửa của các nhóm.
+**Bước 4:** GV nhận xét, tổng kết và chuẩn hoá các kiến thức liên quan, chốt lại các vấn đề cần chú ý, chỉnh sửa của các nhóm.
 
-***Bước 5:*** GV giao nhiệm vụ cho các nhóm về nhà triển khai chế tạo sản phẩm theo bản thiết kế. 
+**Bước 5:** GV giao nhiệm vụ cho các nhóm về nhà triển khai chế tạo sản phẩm theo bản thiết kế. 
 
 Hình ảnh dự kiến:
 
 ![STEM hóa học lớp 12 làm cơm rượu 1](file:///C:/Users/Admin/AppData/Local/Temp/lu2832a09xht.tmp/lu2832a09xil_tmp_dda52a569a68db6a.jpg)
 
-**Một số câu hỏi của giáo viên:
+**Một số câu hỏi của giáo viên:**
 – Loại cơm nào đã sử dụng?
 
 – Tỉ lệ cơm/men tiến hành trộn?
@@ -270,51 +270,51 @@ Hình ảnh dự kiến:
 
 – Nhiệt độ ủ?
 
-***Hoạt động 4:CHẾ TẠO VÀ THỬ NGHIỆM
+**Hoạt động 4:CHẾ TẠO VÀ THỬ NGHIỆM**
 
 LÀM CƠM RƯƠU TỪ CƠM NGUỘI VÀ MEN RƯỢU
 *(HS làm việc ở nhà hoặc trên phòng thí nghiệm – 1 tuần )
-**a. Mục đích
+**a. Mục đích**
 Các nhóm HS thực hành, làm được cơm rượu căn cứ trên bản thiết kế đã chỉnh sửa. 
 
-**b. Nội dung
+**b. Nội dung**
 Học sinh làm việc theo nhóm trong thời gian 1 tuần để làm cơm rượu, trao đổi với giáo viên khi gặp khó khăn.
 
-**c. Dự kiến sản phẩm hoạt động của học sinh
+**c. Dự kiến sản phẩm hoạt động của học sinh**
 Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộp cơm rượu đáp ứng được các yêu cầu trong Phiếu đánh giá số 1.
 
-**d. Cách thức tổ chức hoạt động
-***Bước 1.*** HS tìm kiếm, chuẩn bị các vật liệu dự kiến;
+**d. Cách thức tổ chức hoạt động**
+**Bước 1.** HS tìm kiếm, chuẩn bị các vật liệu dự kiến;
 
-***Bước 2.*** HS làm cơm rượu theo bản thiết kế;
+**Bước 2.** HS làm cơm rượu theo bản thiết kế;
 
-***Bước 3.*** HS thử chất lượng cơm rượu, so sánh với các tiêu chí đánh giá sản phẩm (Phiếu đánh giá số 1). HS điều chỉnh lại thiết kế, ghi lại nội dung điều chỉnh và giải thích lý do (nếu cần phải điều chỉnh);
+**Bước 3.** HS thử chất lượng cơm rượu, so sánh với các tiêu chí đánh giá sản phẩm (Phiếu đánh giá số 1). HS điều chỉnh lại thiết kế, ghi lại nội dung điều chỉnh và giải thích lý do (nếu cần phải điều chỉnh);
 
-***Bước 4.*** HS hoàn thiện bảng ghi danh mục các vật liệu chế tạo sản phẩm;
+**Bước 4.** HS hoàn thiện bảng ghi danh mục các vật liệu chế tạo sản phẩm;
 
-***Bước 5.*** HS hoàn thiện sản phẩm; chuẩn bị bài giới thiệu sản phẩm.
+**Bước 5.** HS hoàn thiện sản phẩm; chuẩn bị bài giới thiệu sản phẩm.
 
 GV đôn đốc, hỗ trợ các nhóm trong quá trình hoàn thiện các sản phẩm. 
 
-***Hoạt động 5:TRÌNH BÀY SẢN PHẨM
+**Hoạt động 5:TRÌNH BÀY SẢN PHẨM**
 “**LÀM CƠM RƯỢU” TỪ CƠM NGUỘI VÀ MEN RƯỢU
 
 VÀ THẢO LUẬN
-**(Tiết 4 – 45 phút)
-**a. Mục đích
+**(Tiết 4 – 45 phút)**
+**a. Mục đích**
 HS biết giới thiệu về sản phẩm cơm rượu đáp ứng được các yêu cầu sản phẩm đã đặt ra; biết thuyết trình, giới thiệu được sản phẩm, đưa ra ý kiến nhận xét, phản biện, giải thích được bằng các kiến thức liên quan; có ý thức về cải tiến, phát triển sản phẩm.
 
-**b. Nội dung
+**b. Nội dung**
 – Các nhóm trưng bày sản phẩm trước lớp;
 
 – Các nhóm lần lượt báo cáo sản phẩm và trả lời các câu hỏi của GV và các nhóm bạn.
 
 – Đề xuất phương án cải tiến sản phẩm.
 
-**c. Dự kiến sản phẩm hoạt động của học sinh
+**c. Dự kiến sản phẩm hoạt động của học sinh**
 Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộp cơm rượu và bài thuyết trình giới thiệu sản phẩm. 
 
-**d. Cách thức tổ chức hoạt động
+**d. Cách thức tổ chức hoạt động**
 – Tổ chức cho HS chuẩn bị và trưng bày sản phẩm cùng lúc. Cho đại diện các nhóm và GV kiểm tra, thử sản phẩm, chấm điểm vào phiếu đánh giá.
 
 – Yêu cầu HS của từng nhóm trình bày các tiến hành và các phản ứng hóa học xảy ra.
@@ -333,7 +333,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
 *+ Các em đã học được những kiến thức và kỹ năng nào trong quá trình triển khai dự án này?
 *+ Điều gì làm em ấn tượng nhất/nhớ nhất khi triển khai dự án này?
-**PHỤ LỤCPhụ lục 1.Các bảng tiêu chí đánh giáBảng tiêu chí đánh giá hoạt động báo cáo kiến thức nền (10 điểm)
+**PHỤ LỤCPhụ lục 1.Các bảng tiêu chí đánh giáBảng tiêu chí đánh giá hoạt động báo cáo kiến thức nền (10 điểm)**
 | TT | Tiêu chí | Điểm |
 | --- | --- | --- |
 | Bài báo cáo kiến thức (5) |  |  |
@@ -350,7 +350,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  
 
-**Bảng tiêu chí đánh giá hoạt động báo cáo phương án thiết kế (10 điểm)
+**Bảng tiêu chí đánh giá hoạt động báo cáo phương án thiết kế (10 điểm)**
 | Bản quy trình thực hiện (5) |
 | --- |
 | 1 |
@@ -369,7 +369,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  
 
-**Bảng tiêu chí đánh giá hoạt động báo cáo sản phẩm (30 điểm)
+**Bảng tiêu chí đánh giá hoạt động báo cáo sản phẩm (30 điểm)**
 | Làm cơm rượu (15) |
 | --- |
 | 1 |
@@ -388,7 +388,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  
 
-**Bảng tiêu chí đánh giá kĩ năng làm việc nhóm (10 điểm)
+**Bảng tiêu chí đánh giá kĩ năng làm việc nhóm (10 điểm)**
 | 1 | Kế hoạch có tiến trình và phân công nhiệm vụ rõ ràng và hợp lí. | 5 |
 | --- | --- | --- |
 | 2 | Mỗi thành viên tham gia đóng góp ý tưởng, hợp tác hiệu quả để hoàn thành dự án. | 5 |
@@ -396,8 +396,8 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  
 
-**Phụ lục 2: Hệ thống câu hỏi định hướng cho các chủ đề kiến thức
-***Chủ đề 1. Glucozơ
+**Phụ lục 2: Hệ thống câu hỏi định hướng cho các chủ đề kiến thức**
+**Chủ đề 1. Glucozơ**
  1. Nêu tính chất vật lý, trạng thái tự nhiên của glucozơ
 
  2. Nêu cấu tạo dạng mạch hở, mạch vòng của glucozơ
@@ -410,7 +410,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  6. Nêu các nguyên liệu có thể điều chế glucozơ.
 
-***Chủ đề 2. Saccarozơ
+**Chủ đề 2. Saccarozơ**
  1. Nêu tính chất vật lý, trạng thái tự nhiên của saccarozơ
 
  2. Nêu đặc điểm cấu tạo của saccarozơ
@@ -421,7 +421,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  5. Nêu các nguyên liệu có thể điều chế saccarozơ.
 
-***Chủ đề 3. Tinh bột
+**Chủ đề 3. Tinh bột**
  1. Nêu tính chất vật lý, trạng thái tự nhiên của tinh bột
 
  2. Nêu đặc điểm cấu tạo, cấu trúc của tinh bột 
@@ -430,7 +430,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  4. Nêu các ứng dụng của tinh bột
 
-***Chủ đề 4. Xenlulozơ
+**Chủ đề 4. Xenlulozơ**
  1. Nêu tính chất vật lý, trạng thái tự nhiên của xenlulozơ
 
  2. Nêu đặc điểm cấu tạo, cấu trúc của xenlulozơ
@@ -439,7 +439,7 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  4. Nêu các ứng dụng của xenlulozơ
 
-***Chủ đề 5. Các yếu tố ảnh hưởng đến quá trình lên men rượu
+**Chủ đề 5. Các yếu tố ảnh hưởng đến quá trình lên men rượu**
 1. Nhiệt độ
 
  2. Độ ẩm
@@ -450,9 +450,9 @@ Kết thúc hoạt động, HS cần đạt được sản phẩm là một hộ
 
  5. Tỉ lệ cơm/men
 
-**KIẾN THỨC NỀN
-***Glucozơ
-**Glucozơ là chất kết tinh, không màu, dễ tan trong nước, có vị ngọt nhưng không ngọt bằng đường mía
+**KIẾN THỨC NỀN**
+**Glucozơ**
+**Glucozơ là chất kết tinh, không màu, dễ tan trong nước, có vị ngọt nhưng không ngọt bằng đường mía**
 – Công thức phân tử C6H12O6.
 
 – Công thức cấu tạo CH2OH – (CHOH)4 – CHO.
@@ -544,7 +544,7 @@ C12H22O11 + H2O → C6H12O6 (glucozơ) + C6H12O6 (fructozơ)
 6HCHO → C6H12O6 (Ca(OH)2, t0)
 
 Fructozơ
-**Fructozơ là đồng phân của glucozo, vậy fructozo có cấu tạo như thế nào? Tính chất gì khác so với glucozo? Cùng tìm hiểu qua bài viết này nhé
+**Fructozơ là đồng phân của glucozo, vậy fructozo có cấu tạo như thế nào? Tính chất gì khác so với glucozo? Cùng tìm hiểu qua bài viết này nhé**
 *Lý thuyết về Fructozơ
 – Công thức phân tử C6H12O6.
 
@@ -558,14 +558,14 @@ Fructozơ
 
 ![STEM hóa học lớp 12 làm cơm rượu 5](file:///C:/Users/Admin/AppData/Local/Temp/lu2832a09xht.tmp/lu2832a09xil_tmp_f122e83b9c02ec90.jpg)
 
-**1. Tính chất vật lí và trạng thái tự nhiên
+**1. Tính chất vật lí và trạng thái tự nhiên**
 – Là chất rắn kết tính, dễ tan trong nước.
 
 – Vị ngọt hơn đường mía.
 
 – Có nhiều trong hoa quả và đặc biệt trong mật ong (40%)
 
-**2. Tính chất hóa học
+**2. Tính chất hóa học**
 Vì phân tử fructozơ chứa 5 nhóm OH trong đó có 4 nhóm liền kề và 1 nhóm chức C = O nên có các tính chất hóa học của ancol đa chức và xeton.
 
 – Hòa tan Cu(OH)2 ở ngay nhiệt độ thường.
@@ -683,7 +683,7 @@ Trong tự nhiên, tinh bột được tổng hợp chủ yếu nhờ quá trìn
  
 
 PHIẾU HỌC TẬP
-***Chủ đề 1. Glucozơ
+**Chủ đề 1. Glucozơ**
  1. Nêu tính chất vật lý, trạng thái tự nhiên của glucozơ
 
  2. Nêu cấu tạo dạng mạch hở, mạch vòng của glucozơ
@@ -706,7 +706,7 @@ PHIẾU HỌC TẬP
 
  
 
-**KHUNG ĐÁNH GIÁ
+**KHUNG ĐÁNH GIÁ**
 |  | Sản phẩm học tập | Kĩ năng thuyết trình | Kĩ năng làm |
 | --- | --- | --- | --- |
 | Báo cáo kiến thức | PPT/Poster | X | Đánh giá cả dự án |
@@ -749,7 +749,7 @@ PHIẾU HỌC TẬP
 
  
 
-**PHIẾU ĐÁNH GIÁ DÀNH CHO GIÁO VIÊN*(dùng trong các buổi báo cáo và đánh giá cuối dự án)
+**PHIẾU ĐÁNH GIÁ DÀNH CHO GIÁO VIÊN*(dùng trong các buổi báo cáo và đánh giá cuối dự án)**
 *Lớp:
 
 Nhóm:
@@ -779,7 +779,7 @@ Nhóm:
 | 16 | Mỗi thành viên tham gia đóng góp ý tưởng, hợp tác hiệu quả để hoàn thành dự án. | 10 |  |
 | Tổng số điểm |  |  |  |
 
-**PHIẾU ĐÁNH GIÁ DÀNH CHO NHÓM HỌC SINH*(dán bản này vào nhật kí dự án nhóm, dùng trong các buổi báo cáo và đánh giá
+**PHIẾU ĐÁNH GIÁ DÀNH CHO NHÓM HỌC SINH*(dán bản này vào nhật kí dự án nhóm, dùng trong các buổi báo cáo và đánh giá**
 
 cuối dự án)
 *Lớp:
@@ -817,7 +817,7 @@ Nhóm:
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [CHU DE STEM – LAM COM RUOU](/assets/docs/CHU-DE-STEM-LAM-COM-RUOU.docx)
+- [CHU DE STEM – LAM COM RUOU](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

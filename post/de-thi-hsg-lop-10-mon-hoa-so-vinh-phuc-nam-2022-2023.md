@@ -19,7 +19,7 @@ grade: 10
 
 *Họ và tên thí sinh:………………………………………………..Số báo danh……………………*
 
-*Thí sinh được sử dụng bảng tuần hoàn các nguyên tố hóa học; không sử dụng tài liệu nào khác.*****
+*Thí sinh được sử dụng bảng tuần hoàn các nguyên tố hóa học; không sử dụng tài liệu nào khác.**
 
 C*án bộ coi thi không giải thích gì thêm.*
 
@@ -27,7 +27,7 @@ Cho nguyên tử khối: N = 14; Al = 27; Ca = 40; Fe = 56; Mg = 24; Zn = 65; Mn
 
 Cl = 35,5; Ba = 137; Cu = 64; Na = 23; O = 16; C = 12.
 
-**Câu 1.******Cho các phát biểu sau:
+**Câu 1.**Cho các phát biểu sau:
 
 (1) Liên kết giữa một kim loại và một phi kim luôn là liên kết ion.
 
@@ -43,21 +43,21 @@ Cl = 35,5; Ba = 137; Cu = 64; Na = 23; O = 16; C = 12.
 
 Số phát biểu đúng là
 
-**A.** 5.                                   **B.** 2.                                   **C.** 4.                                   **D.** 3.
+**A.** 5.                                   B.** 2.                                   **C.** 4.                                   D.** 3.
 
-**Câu 2.******Cho hỗn hợp X gồm 5,4 gam Al và 3,6 gam Mg tác dụng vừa đủ với 0,35 mol hỗn hợp Y gồm Cl2 và O2 thu được m gam hỗn hợp chất rắn Z. Giá trị của m là
+**Câu 2.**Cho hỗn hợp X gồm 5,4 gam Al và 3,6 gam Mg tác dụng vừa đủ với 0,35 mol hỗn hợp Y gồm Cl2 và O2 thu được m gam hỗn hợp chất rắn Z. Giá trị của m là
 
-**A.** 24,45.                            **B.** 30,45.                            **C.** 29,95.                            **D.** 19,80.
+**A.** 24,45.                            B.** 30,45.                            **C.** 29,95.                            D.** 19,80.
 
-**Câu 3.******Trong tự nhiên Chlorine có 2 đồng vị 35Cl và 37Cl còn hydrogen có 3 đồng vị 1H, 2H, 3H. Số loại phân tử HCl có thể có trong tự nhiên là
+**Câu 3.**Trong tự nhiên Chlorine có 2 đồng vị 35Cl và 37Cl còn hydrogen có 3 đồng vị 1H, 2H, 3H. Số loại phân tử HCl có thể có trong tự nhiên là
 
-**A.** 3.                                   **B.** 1.                                   **C.** 6.                                   **D.** 9.
+**A.** 3.                                   B.** 1.                                   **C.** 6.                                   D.** 9.
 
-**Câu 4.******Cho từng chất Fe, FeO, Fe(OH)2, Fe(OH)3, Fe3O4, Fe2O3, Fe(NO3)2, Fe(NO3)3, FeSO4, Fe2(SO4)3, FeCO3, FeS lần lượt phản ứng với HNO3 đặc, nóng. Số phản ứng thuộc loại phản ứng oxi hóa khử là
+**Câu 4.**Cho từng chất Fe, FeO, Fe(OH)2, Fe(OH)3, Fe3O4, Fe2O3, Fe(NO3)2, Fe(NO3)3, FeSO4, Fe2(SO4)3, FeCO3, FeS lần lượt phản ứng với HNO3 đặc, nóng. Số phản ứng thuộc loại phản ứng oxi hóa khử là
 
-**A.** 8.                                   **B.** 6.                                   **C.** 7.                                   **D.** 5.
+**A.** 8.                                   B.** 6.                                   **C.** 7.                                   D.** 5.
 
-**Câu 5.******Cho phản ứng: 2Cl2(g) + 2H2O(g) → 4HCl(g) + O2(g)                      ∆H
+**Câu 5.**Cho phản ứng: 2Cl2(g) + 2H2O(g) → 4HCl(g) + O2(g)                      ∆H
 
 Biết tổng năng lượng liên kết trong mỗi chất như sau:
 
@@ -67,11 +67,11 @@ Biết tổng năng lượng liên kết trong mỗi chất như sau:
 
 Giá trị ∆H và đặc điểm của phản ứng trên là
 
-**A.** 2141,7 kJ, phản ứng thu nhiệt.                                **B.** 282,3 kJ, phản ứng thu nhiệt.
+**A.** 2141,7 kJ, phản ứng thu nhiệt.                                B.** 282,3 kJ, phản ứng thu nhiệt.**
 
-**C.** 200,1 kJ, phản ứng thu nhiệt.                                  **D.**–200,1 kJ, phản ứng tỏa nhiệt.
+**C.** 200,1 kJ, phản ứng thu nhiệt.                                  D.**–200,1 kJ, phản ứng tỏa nhiệt.**
 
-**Câu 6.******Cho các phát biểu sau:
+**Câu 6.**Cho các phát biểu sau:
 
 (1) Nguyên tử có 12 proton có điện tích hạt nhân bằng 12.
 
@@ -93,9 +93,9 @@ Giá trị ∆H và đặc điểm của phản ứng trên là
 
 Số phát biểu sai là
 
-**A.** 4.  **B.** 3.  **C.** 6.                                   **D.** 5.
+**A.** 4.  B.** 3.  **C.** 6.                                   D.** 5.
 
-**Câu 7.******Hai kim loại X và Y thuộc cùng một nhóm A trong bảng tuần hoàn hóa học. Biết tổng số đơn vị điện tích hạt nhân của X và Y là 32 và Z** X**< Z** Y**.
+**Câu 7.**Hai kim loại X và Y thuộc cùng một nhóm A trong bảng tuần hoàn hóa học. Biết tổng số đơn vị điện tích hạt nhân của X và Y là 32 và Z** X**< Z** Y**.
 
 Cho các phát biểu sau:
 
@@ -111,23 +111,23 @@ Cho các phát biểu sau:
 
 (6) Các ion tạo ra từ X và Y đều có 8 electron ở lớp ngoài cùng. Các phát biểu đúng là
 
-**A.** (2), (3), (4), (5).            **B.** (1), (4), (5), (6).             **C.** (1), (2), (3), (5).            **D.** (1), (2), (5), (6).
+**A.** (2), (3), (4), (5).            B.** (1), (4), (5), (6).             **C.** (1), (2), (3), (5).            D.** (1), (2), (5), (6).
 
-**Câu 8.******Nguyên tử X có 14 electron ở lớp M. Vị trí của X trong bảng tuần hoàn là
+**Câu 8.**Nguyên tử X có 14 electron ở lớp M. Vị trí của X trong bảng tuần hoàn là
 
-**A.** chu kỳ 4, nhóm VIB.                                               **B.** chu kỳ 4, nhóm VIIIA.
+**A.** chu kỳ 4, nhóm VIB.                                               B.** chu kỳ 4, nhóm VIIIA.**
 
-**C.** chu kỳ 4, nhóm VIA.                                               **D.** chu kỳ 4, nhóm VIIIB.
+**C.** chu kỳ 4, nhóm VIA.                                               D.** chu kỳ 4, nhóm VIIIB.**
 
-**Câu 9.******Cho phương trình nhiệt hóa học của phản ứng:
+**Câu 9.**Cho phương trình nhiệt hóa học của phản ứng:
 
 2H2(g) + O2(g) → 2H2O(g)                                         rH0298 = –572 kJ
 
 Phản ứng trên là phản ứng
 
-**A.** không có sự thay đổi năng lượng.  **B.** tỏa nhiệt.
+**A.** không có sự thay đổi năng lượng.  B.** tỏa nhiệt.**
 
-**C.** thu nhiệt.  **D.** có sự hấp thụ nhiệt lượng từ môi trường xung quanh.
+**C.** thu nhiệt.  D.** có sự hấp thụ nhiệt lượng từ môi trường xung quanh.**
 
 **Câu 10.** Cho các phát biểu sau:
 
@@ -141,19 +141,19 @@ Phản ứng trên là phản ứng
 
 (e) Tất cả các khí hiếm đều có 8 electron lớp ngoài cùng. Số phát biểu đúng là
 
-**A.** 3.                                   **B.** 5.                                   **C.** 4.                                   **D.** 2.
+**A.** 3.                                   B.** 5.                                   **C.** 4.                                   D.** 2.
 
 **Câu 11.** Từ KMnO4, NaHCO3, Fe, CuS, NaHSO3 và dung dịch HCl đặc, số khí thu được có thể làm khô bằng dung dịch CaCl2 khan là
 
-**A.** 5.  **B.** 3.  **C.** 2.  **D.** 4.
+**A.** 5.  B.** 3.  **C.** 2.  D.** 4.
 
 **Câu 12.** Cho hai quá trình sau: Mg+2 + 2e  Mg0          (1);                  O-2  O0 + 2e (2).
 
 Hãy cho biết kết luận nào sau đây đúng?
 
-**A.** (1) và (2) đều là quá trình oxi hóa. **B.** (1) là quá trình khử; (2) là quá trình oxi hóa.
+**A.** (1) và (2) đều là quá trình oxi hóa. B.** (1) là quá trình khử; (2) là quá trình oxi hóa.**
 
-**C.** (1) và (2) đều là quá trình khử. **D.** (1) là quá trình oxi hóa; (2) là quá trình khử.
+**C.** (1) và (2) đều là quá trình khử. D.** (1) là quá trình oxi hóa; (2) là quá trình khử.**
 
 **Câu 13.** Liên kết cộng hóa trị trong phân tử HCl có đặc điểm
 
@@ -167,11 +167,11 @@ Hãy cho biết kết luận nào sau đây đúng?
 
 **Câu 14.** Nguyên tử của nguyên tố X có cấu hình electron 1s22s22p63s2, nguyên tử của nguyên tố Y có cấu hình electron 1s22s22p5. Liên kết hoá học giữa nguyên tử X và nguyên tử Y thuộc loại liên kết
 
-**A.** kim loại.                        **B.** hydrogen.                      **C.** cộng hóa trị.                  **D.** ion.
+**A.** kim loại.                        B.** hydrogen.                      **C.** cộng hóa trị.                  D.** ion.
 
 **Câu 15.** Hạt mang điện trong hạt nhân nguyên tử là
 
-**A.** neutron.                        **B.** proton.                          **C.** electron.                        **D.** neutron và electron.
+**A.** neutron.                        B.** proton.                          **C.** electron.                        D.** neutron và electron.
 
 **Câu 16.** Tiến hành hai thí nghiệm sau:
 
@@ -189,17 +189,17 @@ Hãy cho biết kết luận nào sau đây đúng?
 
 **Câu 17.** Thực hiện phản ứng H2(g) + Br2(g) → 2HBr(g) trong bình kín. Lúc đầu nồng độ hơi Br2 là 0,072 mol/L. Sau 2 phút, nồng độ hơi Br2 còn lại là 0,048 mol/L. Tốc độ trung bình của phản ứng tính theo Br2 trong khoảng thời gian trên là
 
-**A.** 8 10-4 mol/( L.s).  **B.** 6 10-4 mol/(L.s).  **C.** 4 10-4 mol/(L.s).  **D.** 2 10-4 mol/(L.s).
+**A.** 8 10-4 mol/( L.s).  B.** 6 10-4 mol/(L.s).  **C.** 4 10-4 mol/(L.s).  D.** 2 10-4 mol/(L.s).
 
 **Câu 18.** Trong phản ứng: KMnO4 + HCl  KCl + MnCl2 + Cl2 + H2O. Số phân tử HCl đóng vai trò chất khử là
 
-**A.** 9.  **B.** 11.  **C.** 16.  **D.** 10.
+**A.** 9.  B.** 11.  **C.** 16.  D.** 10.
 
 **Câu 19.** Cho các nguyên tố X, Y, T, R thuộc cùng một chu kỳ và thuộc nhóm A trong bảng tuần hoàn hóa học. Bán kính nguyên tử của các nguyên tố được biểu diễn như hình vẽ sau:
 
 Nguyên tố có độ âm điện lớn nhất là
 
-**A.** Y.                                  **B.** T.                                   **C.** X.                                  **D.** R.
+**A.** Y.                                  B.** T.                                   **C.** X.                                  D.** R.
 
 **Câu 20.** Cho các phát biểu sau:
 
@@ -215,7 +215,7 @@ Nguyên tố có độ âm điện lớn nhất là
 
 (6) Fluorine là nguyên tố có độ âm điện lớn nhất. Số phát biểu đúng là
 
-**A.** 4.                                   **B.** 2.                                   **C.** 3.                                   **D.** 1.
+**A.** 4.                                   B.** 2.                                   **C.** 3.                                   D.** 1.
 
 **Câu 21.** Cho các thí nghiệm sau:
 
@@ -231,7 +231,7 @@ Nguyên tố có độ âm điện lớn nhất là
 
 (6) Cho AgNO3 dư vào dung dịch FeCl2. Số thí nghiệm có xảy ra phản ứng oxi hóa – khử là
 
-**A.** 2.  **B.** 5.  **C.** 3.  **D.** 6.****
+**A.** 2.  B.** 5.  **C.** 3.  D.** 6.**
 
 **Câu 22.** Nguyên tố X có hoá trị cao nhất đối với oxygen bằng hoá trị trong hợp chất khí với hydrogen. Tỉ khối hơi của oxide cao nhất so với hợp chất khí với hydrogen của X là 2,75. Nguyên tố Y có hoá trị cao nhất đối với oxygen bằng 3 lần hoá trị trong hợp chất khí với hydrogen. Tỉ khối hơi của hợp chất khí với hydrogen so với oxide cao nhất của Y là 0,425. Trong hạt nhân nguyên tử X và Y đều có số hạt mang điện bằng số hạt không mang điện.
 
@@ -247,7 +247,7 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
-**A.** 4.                                   **B.** 3.                                   **C.** 2.                                   **D.** 5.
+**A.** 4.                                   B.** 3.                                   **C.** 2.                                   D.** 5.
 
 **Câu 23.** Tiến hành thí nghiệm với bốn dung dịch muối X, Y, Z và T chứa trong các lọ riêng biệt, kết quả được ghi nhận ở bảng sau:
 
@@ -258,13 +258,13 @@ Số phát biểu đúng là
 
 Các dung dịch X, Y, Z, T lần lượt là
 
-**A.** Ca(HSO4)2, BaCl2, NaHCO3, Na2CO3.  **B.** Na2CO3, Ba(HCO3)2, Ca(HSO4)2, (NH4)2SO4.
+**A.** Ca(HSO4)2, BaCl2, NaHCO3, Na2CO3.  B.** Na2CO3, Ba(HCO3)2, Ca(HSO4)2, (NH4)2SO4.**
 
-**C.** Ca(HCO3)2, Fe(NO3)2, (NH4)2SO4, (NH4)2CO3.    **D.** KHCO3, Ca(HSO4)2, (NH4)2SO4, Fe(NO3)2.
+**C.** Ca(HCO3)2, Fe(NO3)2, (NH4)2SO4, (NH4)2CO3.    D.** KHCO3, Ca(HSO4)2, (NH4)2SO4, Fe(NO3)2.**
 
 **Câu 24.** Một hợp chất ion cấu tạo từ ion M2+ và X–, tổng số hạt cơ bản trong phân tử MX2 là 186 hạt, trong đó số hạt mang điện nhiều hơn số hạt không mang điện là 54 hạt. Số neutron của ion M2+ nhiều hơn trong X– là 12. Tổng số hạt M2+ nhiều hơn trong X– là 27 hạt. Công thức phân tử của MX2 là
 
-**A.** FeCl2.                           **B.** ZnBr2.                           **C.** CaCl2.                           **D.** BaBr2.****
+**A.** FeCl2.                           B.** ZnBr2.                           **C.** CaCl2.                           D.** BaBr2.**
 
 **Câu 25.** Cho các phát biểu sau:
 
@@ -282,7 +282,7 @@ Các dung dịch X, Y, Z, T lần lượt là
 
 **C** ác phát biểu đúng là
 
-**A.** (2), (3), (6).                   **B.** (1), (3), (6).                   **C.** (1), (2), (5).                   **D.** (2), (4), (6).
+**A.** (2), (3), (6).                   B.** (1), (3), (6).                   **C.** (1), (2), (5).                   D.** (2), (4), (6).
 
 **Câu 26.** Thực hiện các thí nghiệm sau:
 
@@ -302,15 +302,15 @@ Các dung dịch X, Y, Z, T lần lượt là
 
 Khi phản ứng kết thúc, số thí nghiệm thu được kết tủa là
 
-**A.** 3.                                   **B.** 4.                                   **C.** 5.                                   **D.** 2.
+**A.** 3.                                   B.** 4.                                   **C.** 5.                                   D.** 2.
 
-**Câu 27.** Trong tự nhiên, nguyên tố Chlorine có 2 đồng vị là 35Cl và 37Cl. Nguyên tử khối trung bình của Chlorine là 35,5. Trong hợp chất HClOx , nguyên tử đồng vị 35Cl chiếm 26,12% về khối lượng. Giá trị của x là****
+**Câu 27.** Trong tự nhiên, nguyên tố Chlorine có 2 đồng vị là 35Cl và 37Cl. Nguyên tử khối trung bình của Chlorine là 35,5. Trong hợp chất HClOx , nguyên tử đồng vị 35Cl chiếm 26,12% về khối lượng. Giá trị của x là**
 
-**A.** 2.                                   **B.** 1.                                   **C.** 3.                                   **D.** 4.
+**A.** 2.                                   B.** 1.                                   **C.** 3.                                   D.** 4.
 
 **Câu 28.** X, Y là các dung dịch HCl có nồng độ mol khác nhau. Lấy V lít dung dịch X cho tác dụng với AgNO3 dư tạo thành 35,875 gam kết tủa. Để trung hòa V’ lít dung dịch Y cần dùng 500 mL dung dịch NaOH 0,3M. Lấy riêng 100 mL dung dịch X và 100 mL dung dịch Y cho tác dụng với Fe dư, lượng H2 thoát ra trong hai trường hợp chênh lệch nhau 0,448 lít (ở đktc). Biết V + V’ = 2 lít, nồng độ mol của các dung dịch X, Y lần lượt là
 
-**A.** 0,1M; 0,3M.                  **B.** 0,145M; 0,545M.          **C.** 0,5M; 0,2M.                  **D.** 0,345M; 0,125M.
+**A.** 0,1M; 0,3M.                  B.** 0,145M; 0,545M.          **C.** 0,5M; 0,2M.                  D.** 0,345M; 0,125M.
 
 **Câu 29.** Cho các phát biểu sau:
 
@@ -328,11 +328,11 @@ Khi phản ứng kết thúc, số thí nghiệm thu được kết tủa là
 
 Số phát biểu đúng là
 
-**A.** 5.                                   **B.** 7.                                   **C.** 6.                                   **D.** 4.
+**A.** 5.                                   B.** 7.                                   **C.** 6.                                   D.** 4.
 
 **Câu 30.** Hỗn hợp X gồm Fe và kim loại M (hóa trị n không đổi). Hòa tan hoàn toàn m gam X trong dung dịch H2SO4 đặc, nóng, dư thu được dung dịch A và khí SO2 (đktc) là sản phẩm khử duy nhất. Hấp thụ hoàn toàn lượng SO2 trên bằng 500 mL dung dịch NaOH 0,2M (dư) thu được dung dịch chứa 5,725 gam chất tan. Thêm vào m gam X một lượng M gấp đôi lượng M ban đầu thu được hỗn hợp Y. Cho Y tan hết trong dung dịch HCl thu được 1,736 lít H2 (đktc). Thêm một lượng Fe vào m gam X thu được hỗn hợp Z chứa lượng sắt gấp đôi lượng sắt có trong X. Cho Z tác dụng với dung dịch H2SO2 loãng, dư thu được dung dịch B chứa 5,605 gam muối. Kim loại M và phần trăm khối lượng của Fe trong hỗn hợp X là
 
-**A.** Zn và 46,28%.              **B.** Al và 67,47%.               **C.** Zn và 36,48%.              **D.** Al và 58,03%.
+**A.** Zn và 46,28%.              B.** Al và 67,47%.               **C.** Zn và 36,48%.              D.** Al và 58,03%.
 
 **Câu 31.** Nhiệt lượng tỏa ra khi tạo thành 2 mol HCl (ở đktc) của phản ứng:
 
@@ -350,7 +350,7 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
-**A.** 2.  **B.** 1.  **C.** 4.  **D.** 3.
+**A.** 2.  B.** 1.  **C.** 4.  D.** 3.
 
 **Câu 32.** Cho các phản ứng:
 
@@ -380,7 +380,7 @@ Số phát biểu đúng là
 
 Trong các phản ứng trên, số phản ứng tạo đơn chất là
 
-**A.** 6.  **B.** 7.  **C.** 8.  **D.** 9.
+**A.** 6.  B.** 7.  **C.** 8.  D.** 9.
 
 **Câu 33.** Cho các phát biểu sau:
 
@@ -400,10 +400,10 @@ Trong các phản ứng trên, số phản ứng tạo đơn chất là
 
 Số phát biểu **sai** là
 
-**A.** 4.                                   **B.** 3.                                   **C.** 5.                                   **D.** 2.
+**A.** 4.                                   B.** 3.                                   **C.** 5.                                   D.** 2.
 
 **Câu 34.** 
-****Hình vẽ sau mô tả thí nghiệm điều chế khí Cl2 từ MnO2 và dung dịch HCl****
+**Hình vẽ sau mô tả thí nghiệm điều chế khí Cl2 từ MnO2 và dung dịch HCl**
 
 Cho các phát biểu sau:
 
@@ -421,19 +421,19 @@ Cho các phát biểu sau:
 
 Số phát biểu **sai** là
 
-**A.** 6.                                   **B.** 4.                                   **C.** 3.                                   **D.** 5.
+**A.** 6.                                   B.** 4.                                   **C.** 3.                                   D.** 5.
 
 **Câu 35.** Đốt cháy hoàn toàn 47,101 lít hỗn hợp khí X (ở đktc) (gồm H2, O2 và Cl2 lần lượt theo tỉ lệ thể tích 25 : 12 : 1). Sau khi làm lạnh và đưa về điều kiện ban đầu thu được dung dịch Y. Nồng độ phần trăm của chất tan trong dung dịch Y là
 
-**A.** 14,46%.                        **B.** 25,62%.                         **C.** 14,64%.                        **D.** 25,26%.
+**A.** 14,46%.                        B.** 25,62%.                         **C.** 14,64%.                        D.** 25,26%.
 
 **Câu 36.** X và Y là các nguyên tố thuộc nhóm A trong bảng tuần hoàn, đều tạo hợp chất với hydrogen có dạng RH (R là kí hiệu của nguyên tố X hoặc Y). Gọi E và F lần lượt là hydroxide ứng với hóa trị cao nhất của X và Y. Trong F, Y chiếm 35,323% khối lượng. Trung hòa hoàn toàn 50 gam dung dịch E 16,8% cần 150 mL dung dịch F 1M. Hai nguyên tố X và Y lần lượt là
 
-**A.** Na và Cl.                       **B.** Li và Br.                        **C.** K và Cl.                        **D.** F và Cl.
+**A.** Na và Cl.                       B.** Li và Br.                        **C.** K và Cl.                        D.** F và Cl.
 
 **Câu 37.** Đốt 67,2 gam bột Ca bằng O2 thu được m gam chất rắn X gồm Ca và CaO. Cho chất rắn X tác dụng vừa đủ với acid trong dung dịch gồm HCl 1M và H2SO4 0,5M thu được H2 và dung dịch Y. Cô cạn dung dịch Y thu được (m + 126,84) gam chất rắn khan. Nếu hòa tan hết m gam chất rắn X vào dung dịch HNO3 loãng, dư thu được 5,376 lít NO (đktc) và dung dịch Z. Cô cạn dung dịch Z thu được bao nhiêu gam chất rắn khan?
 
-**A.** 288,72 gam.                  **B.** 304,32 gam.                  **C.** 275,52 gam.                  **D.** 285,12 gam.
+**A.** 288,72 gam.                  B.** 304,32 gam.                  **C.** 275,52 gam.                  D.** 285,12 gam.
 
 **Câu 38.** Hòa tan hoàn toàn hỗn hợp chất rắn X, Y (có cùng số mol) vào nước thu được dung dịch Z. Tiến hành các thí nghiệm sau:
 
@@ -441,11 +441,11 @@ Số phát biểu **sai** là
 
 -Thí nghiệm 2: Cho dung dịch Na2CO3 dư vào V lít dung dịch Z, thu được n2 mol kết tủa.
 
--Thí nghiệm 3: Cho dung dịch AgNO3 dư vào V lít dung dịch Z, thu được n3 mol kết tủa.****
+-Thí nghiệm 3: Cho dung dịch AgNO3 dư vào V lít dung dịch Z, thu được n3 mol kết tủa.**
 
-Biết các phản ứng xảy ra hoàn toàn và n1 = n2, n3 = 4n1 . Hai chất X, Y lần lượt là****
+Biết các phản ứng xảy ra hoàn toàn và n1 = n2, n3 = 4n1 . Hai chất X, Y lần lượt là**
 
-**A.** Ca(HCO3)2, CaCl2.      **B.** NaCl, FeCl2 .                **C.** KCl, Ba(HCO3)2 **D.** NaNO3, Fe(NO3)2.
+**A.** Ca(HCO3)2, CaCl2.      B.** NaCl, FeCl2 .                **C.** KCl, Ba(HCO3)2 D.** NaNO3, Fe(NO3)2.
 
 **Câu 39.** Cho các phát biểu sau:
 
@@ -457,7 +457,7 @@ Biết các phản ứng xảy ra hoàn toàn và n1 = n2, n3 = 4n1 . Hai chấ
 
 (4) Nguyên tố có cấu hình electron hóa trị là [Ar] 3d104s1 thuộc chu kì 4, nhóm VIB.
 
-(5) Các nguyên tố họ d và f (phân nhóm****B đều là phi kim điển hình).
+(5) Các nguyên tố họ d và f (phân nhóm**B đều là phi kim điển hình).
 
 (6) Halogen có độ âm điện lớn nhất là Fluorine.
 
@@ -467,15 +467,15 @@ Biết các phản ứng xảy ra hoàn toàn và n1 = n2, n3 = 4n1 . Hai chấ
 
 Số phát biểu **sai** là
 
-**A.** 4.                                   **B.** 6.                                   **C.** 7.                                   **D.** 5.
+**A.** 4.                                   B.** 6.                                   **C.** 7.                                   D.** 5.
 
 **Câu 40.** Cho dung dịch chứa a mol HCl vào dung dịch chứa 0,2 mol NaOH và 0,25 mol KOH, thu được dung dịch X. Cô cạn X, thu được 27,55 gam hỗn hợp chất rắn khan. Giá trị của a là
 
-**A.** 0,25.                              **B.** 0,40.                              **C.** 0,15.                              **D.** 0,30.
+**A.** 0,25.                              B.** 0,40.                              **C.** 0,15.                              D.** 0,30.
 
 **Câu 41.** Hỗn hợp X gồm Fe và Cu. Chia m gam hỗn hợp X thành 2 phần. Phần 1 cho tác dụng với dung dịch HCl dư, thấy thoát ra 2,24 lít khí (đktc). Phần 2 cho tác dụng với dung dịch H2SO4 đặc, nóng, dư thu được 8,96 lít SO2 (sản phẩm khử duy nhất, đktc) và dung dịch sau phản ứng chứa 56 gam muối. Giá trị của m là
 
-**A.** 26,4.                              **B.** 38,4.                              **C.** 21,6.                              **D.** 43,2.
+**A.** 26,4.                              B.** 38,4.                              **C.** 21,6.                              D.** 43,2.
 
 **Câu 42.** Nguyên tố R là phi kim thuộc chu kì 3, công thức phân tử hợp chất khí với hydrogen là RH2. Nguyên tố R tạo với kim loại M hợp chất có công thức MR. Đốt cháy hoàn toàn 46,6 gam MR, thu được 4,48 lít khí RO2 (ở đktc).
 
@@ -491,19 +491,19 @@ Cho các phát biểu sau:
 
 (e) Nguyên tố R có số hiệu là 15, độ âm điện của R lớn hơn của oxygen. Các phát biểu đúng là:
 
-**A.** (a), (b), (c), (d).            **B.** (a), (b), (d), (e).             **C.** (b), (c), (d), (e).             **D.** (a), (c), (d), (e).
+**A.** (a), (b), (c), (d).            B.** (a), (b), (d), (e).             **C.** (b), (c), (d), (e).             D.** (a), (c), (d), (e).
 
 **Câu 43.** Nhiệt phân 98 gam KClO3 (có xúc tác MnO2), sau một thời gian thu được 93,2 gam chất rắn và khí T. Cho toàn bộ lượng khí T phản ứng hết với hỗn hợp kim loại X gồm Mg, Fe thu được hỗn hợp chất rắn Y có khối lượng 15,6 gam. Hòa tan hoàn toàn hỗn hợp Y bằng dung dịch H2SO4 đặc, nóng, dư thu được 0,56 lít khí SO2 (đktc, sản phẩm khử duy nhất của S+6). Phần trăm khối lượng của Mg trong hỗn hợp X là
 
-**A.** 33,33%.                        **B.** 77,78%.                         **C.** 22,22%.                        **D.** 66,67%.
+**A.** 33,33%.                        B.** 77,78%.                         **C.** 22,22%.                        D.** 66,67%.
 
 **Câu 44.** Thổi từ từ CO đi qua ống sứ đựng m gam hỗn hợp X gồm FeO và Fe3O4. Các phản ứng xảy ra hoàn toàn, kết thúc phản ứng thu được hỗn hợp khí Y. Cho toàn bộ lượng khí Y hấp thụ vào dung dịch Ca(OH)2 thu được 30 gam kết tủa và dung dịch Z. Cho dung dịch Z phản ứng với lượng dư dung dịch Ba(OH)2 dư tạo thành 29,7 gam kết tủa. Mặt khác, cho m gam hỗn hợp X tác dụng với H2SO4 đặc, nóng, dư thu được 2,24 lít SO2 (đktc, sản phẩm khử duy nhất của S+6). Phần trăm khối lượng của FeO trong hỗn hợp X là
 
-**A.** 23,68%.                        **B.** 25,65%.                         **C.** 21,62%.                        **D.** 28,34%.
+**A.** 23,68%.                        B.** 25,65%.                         **C.** 21,62%.                        D.** 28,34%.
 
 **Câu 45.** Nung nóng 30,005 gam hỗn hợp X gồm KMnO4, KClO3 và MnO2 đến khi KClO3 bị nhiệt phân hết, thu được khí O2 và 24,405 gam chất rắn Y gồm K2MnO4, MnO2, KMnO4, KCl. Để tác dụng hết với hỗn hợp Y cần vừa đủ dung dịch chứa 0,8 mol HCl, thu được 4,844 lít khí Cl2 ở (đktc). Phần trăm khối lượng KMnO4 bị nhiệt phân là
 
-**A.** 72,92%.                        **B.** 58,64%.                         **C.** 64,87%.                        **D.** 82,36%.
+**A.** 72,92%.                        B.** 58,64%.                         **C.** 64,87%.                        D.** 82,36%.
 
 **Câu 46.** Từ carbon graphite có thể điều chế CO2 theo 2 cách
 
@@ -515,19 +515,19 @@ CO(g) + O2(g) → CO2(g)                            
 
 Giá trị của ∆H1 là
 
-**A.** 55 kJ.                            **B.**–676 kJ.                        **C.**–110 kJ.                        **D.** 110 kJ.
+**A.** 55 kJ.                            B.**–676 kJ.                        **C.** –110 kJ.                        D.** 110 kJ.
 
 **Câu 47.** Bình gas loại 12 cân (không tính vỏ bằng thép) sử dụng trong hộ gia đình Y có chứa 12 kg khí hóa lỏng (LPG) gồm propane và butane với tỉ lệ mol tương ứng là 1 : 2. Khi được đốt cháy hoàn toàn, 1 mol propane (C3H8) tỏa ra lượng nhiệt là 2220 kJ và 1 mol butane (C4H10) tỏa ra lượng nhiệt là 2890 kJ. Trung bình, lượng nhiệt tiêu thụ từ đốt khí gas của hộ gia đình Y là 10.000 kJ/ngày và hiệu suất sử dụng nhiệt là 80%. Sau bao nhiêu ngày hộ gia đình Y sử dụng hết bình gas trên?
 
-**A.** 60 ngày.                        **B.** 40 ngày.                        **C.** 48 ngày.                        **D.** 50 ngày.
+**A.** 60 ngày.                        B.** 40 ngày.                        **C.** 48 ngày.                        D.** 50 ngày.
 
 **Câu 48.** Hỗn hợp X gồm MgO, Al2O3, Mg, Al. Hòa tan m gam hỗn hợp X bằng dung dịch HCl vừa đủ thì thu được dung dịch chứa (m + 70,295) gam muối. Cho 2m gam hỗn hợp X tác dụng với dung dịch H2SO4 đặc, nóng dư thu được 26,656 lít SO2 (đktc, sản phẩm khử duy nhất). Nếu cho 2m gam hỗn hợp X tác dụng với dung dịch HNO3 loãng, dư thu được 7,616 lít hỗn hợp khí NO và N2O (đktc) có tỉ khối so với hydrogen là 318/17. Cô cạn dung dịch Y thu được 324,3 gam muối khan.
 
 Giá trị của m **gần nhất** với giá trị nào sau đây?
 
-**A.** 61,18.                            **B.** 30,90.                            **C.** 31,00.                            **D.** 62,00.
+**A.** 61,18.                            B.** 30,90.                            **C.** 31,00.                            D.** 62,00.
 
-**Câu 49.** X, Y, T là các kim loại chuyển tiếp (nhóm****B*** *và đều thuộc chu kỳ 4 trong bảng tuần hoàn
+**Câu 49.** X, Y, T là các kim loại chuyển tiếp (nhóm**B** *và đều thuộc chu kỳ 4 trong bảng tuần hoàn
 
 (ZX < ZY < ZT ). Biết rằng tổng số electron lớp ngoài cùng của X, Y và T bằng 4; tổng số electron ở lớp ngoài cùng và phân lớp sát ngoài cùng của Y là 8. Điều khẳng định nào sau đây về X, Y, T là đúng?
 
@@ -535,7 +535,7 @@ Giá trị của m **gần nhất** với giá trị nào sau đây?
 
 **B.** Tổng số khối: MX + MY + MT = 79.
 
-**C.** Công thức oxide cao nhất của X có dạng X2O3.****
+**C.** Công thức oxide cao nhất của X có dạng X2O3.**
 
 **D.** X, Y, T đều tác dụng được với dung dịch H2SO4 loãng giải phóng khí H2.
 
@@ -547,7 +547,7 @@ Giá trị của m **gần nhất** với giá trị nào sau đây?
 
 Nồng độ mol/lít của KCl trong dung dịch Y và giá trị của V là
 
-**A.** 0,32M; 118,64.             **B.** 0,64M; 118,64.             **C.** 0,64M; 59,32.               **D.** 0,32M; 59,32.
+**A.** 0,32M; 118,64.             B.** 0,64M; 118,64.             **C.** 0,64M; 59,32.               D.** 0,32M; 59,32.
 
 **——————- Hết ——————-**
 
@@ -564,12 +564,12 @@ SỞ GD&ĐT VĨNH PHÚC          **KỲ THI CHỌN HSG LỚP 10, 11 CH�
 | 31A | 32B | 33B | 34C | 35A | 36C | 37D | 38B | 39D | 40D |
 | 41A | 42A | 43C | 44A | 45A | 46C | 47C | 48C | 49A | 50A |
 
-**GIẢI CHI TIẾT****
+**GIẢI CHI TIẾT**
 **
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023](/assets/docs/HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023-giasu.ai.vn.docx)
+- [HSG-Hoa-10-So-Vinh-Phuc-nam-2022-2023](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

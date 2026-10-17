@@ -16,10 +16,10 @@ grade: 10
 | SỞ GIÁO DỤC VÀ ĐÀO TẠO THÁI BÌNH   ĐỀ CHÍNH THỨC   | ĐỀ THI CHỌN HỌC SINH GIỎI LỚP 10, 11 THPT NĂM HỌC 2023 – 2024 Môn: Hóa học 10 Thời gian làm bài: 120 phút, không kể thời gian giao đề. (Đề gồm 04 trang) |
 | --- | --- |
 
-**                                                                                                                  Mã đề thi: 103
+**                                                                                                                  Mã đề thi: 103**
 Họ, tên thí sinh: …………………………………………………………… Số báo danh: ………………………..
 
-**PHẦN I (6,0 điểm): Câu trắc nghiệm nhiều phương án lựa chọn.
+**PHẦN I (6,0 điểm): Câu trắc nghiệm nhiều phương án lựa chọn.**
      Thí sinh trả lời từ câu 1 đến câu 15.Mỗi câu hỏi thí sinh chỉ chọn một phương án.
 
 **Câu 1:** Tại áp suất 1 bar, nước có nhiệt độ nóng chảy và nhiệt độ sôi tương ứng là 0oC và (xấp xỉ) 100oC, cao hơn so với nhiều chất có khối lượng phân tử lớn hơn nước. Tính chất này là do
@@ -50,7 +50,7 @@ Họ, tên thí sinh: …………………………………………………�
 
 Số phát biểu đúng là
 
-   **A.** 4.                                  **B.** 7.                                  **C.** 5.                                  **D.** 6.
+   **A.** 4.                                  B.** 7.                                  **C.** 5.                                  D.** 6.
 
 **Câu 3:** Cho các phản ứng:
 
@@ -60,7 +60,7 @@ Số phát biểu đúng là
 
 Các phản ứng oxi hóa – khử là:
 
-   **A.** (1), (2), (3), (4).           **B.** (1), (3), (4).                  **C.** (1), (4).                         **D.** (1), (2), (4).
+   **A.** (1), (2), (3), (4).           B.** (1), (3), (4).                  **C.** (1), (4).                         D.** (1), (2), (4).
 
 **Câu 4:** Potassium (Z = 19) là nguyên tố dinh dưỡng cần thiết cho cả con người và thực vật, nó có mặt trong nhiều loại thực phẩm cho con người cũng như các loại phân bón dành cho cây trồng. Cho các khẳng định sau về Potassium.
 
@@ -76,7 +76,7 @@ Các phản ứng oxi hóa – khử là:
 
 Số khẳng định đúng là
 
-   **A.** 3.                                  **B.** 2.                                  **C.** 4.                                  **D.** 5.
+   **A.** 3.                                  B.** 2.                                  **C.** 4.                                  D.** 5.
 
 **Câu 5:** Phản ứng chuyển hóa giữa hai dạng đơn chất của phosphorus (P):
 
@@ -84,9 +84,9 @@ P (s, đỏ) → P (s, trắng)        Δr = 17,6 kJ
 
 Điều này chứng tỏ phản ứng:
 
-   **A.** thu nhiệt, P đỏ bền hơn P trắng.                            **B.** thu nhiệt, P trắng bền hơn P đỏ.
+   **A.** thu nhiệt, P đỏ bền hơn P trắng.                            B.** thu nhiệt, P trắng bền hơn P đỏ.**
 
-   **C.** tỏa nhiệt, P đỏ bền hơn P trắng.                            **D.** tỏa nhiệt, P trắng bền hơn P đỏ.
+   **C.** tỏa nhiệt, P đỏ bền hơn P trắng.                            D.** tỏa nhiệt, P trắng bền hơn P đỏ.**
 
 **Câu 6:** Cho các phát biểu sau:
 
@@ -104,13 +104,13 @@ P (s, đỏ) → P (s, trắng)        Δr = 17,6 kJ
 
 Số phát biểu **đúng** là
 
-   **A.** 3.                                  **B.** 1.                                  **C.** 2.                                  **D.** 4.
+   **A.** 3.                                  B.** 1.                                  **C.** 2.                                  D.** 4.
 
 **Câu 7:** Nguyên tử nguyên tố X có cấu hình electron 1s22s22p63s2; Nguyên tử nguyên tố Y có cấu hình electron 1s22s22p5. Liên kết hóa học giữa hai nguyên tử X và Y thuộc loại liên kết
 
-   **A.** Hydrogen.                                                             **B.** Ion.
+   **A.** Hydrogen.                                                             B.** Ion.**
 
-   **C.** Cộng hóa trị phân cực.                                          **D.** Cộng hóa trị không phân cực.
+   **C.** Cộng hóa trị phân cực.                                          D.** Cộng hóa trị không phân cực.**
 
 **Câu 8:** Cho phản ứng: 2Cl2(g) + 2H2O(g) → 4HCl(g) + O2(g)                     ∆H
 
@@ -122,9 +122,9 @@ Biết tổng năng lượng liên kết trong mỗi chất như sau:
 
 Giá trị ∆H và đặc điểm của phản ứng trên là
 
-   **A.** 2141,7 kJ, phản ứng thu nhiệt.                              **B.**–200,1 kJ, phản ứng tỏa nhiệt.
+   **A.** 2141,7 kJ, phản ứng thu nhiệt.                              B.**–200,1 kJ, phản ứng tỏa nhiệt.**
 
-   **C.** 282,3 kJ, phản ứng thu nhiệt.                                **D.** 200,1 kJ, phản ứng thu nhiệt.
+   **C.** 282,3 kJ, phản ứng thu nhiệt.                                D.** 200,1 kJ, phản ứng thu nhiệt.**
 
 **Câu 9:** Có những phát biểu sau đây về các đồng vị của một nguyên tố hóa học:
 
@@ -138,7 +138,7 @@ Giá trị ∆H và đặc điểm của phản ứng trên là
 
 Trong các phát biểu trên, số phát biểu đúng là:
 
-   **A.** 4.                                  **B.** 1.                                  **C.** 2.                                  **D.** 3.
+   **A.** 4.                                  B.** 1.                                  **C.** 2.                                  D.** 3.
 
 **Câu 10:** Hình trên cho biết độ âm điện của các nguyên tử từ W đến Z thuộc chu kì 2 và 3 của bảng tuần hoàn các nguyên tố hóa học. W và X là các nguyên tố thuộc nhóm IVA, còn Y và Z là các nguyên tố thuộc nhóm VIIA.
 
@@ -154,17 +154,17 @@ Cho các phát biểu sau:
 
 Số các phát biểu đúng là
 
-   **A.** 3.                                  **B.** 2.                                  **C.** 4.                                  **D.** 1.
+   **A.** 3.                                  B.** 2.                                  **C.** 4.                                  D.** 1.
 
 **Câu 11:** Hợp chất A tạo bởi kim loại M và phi kim X (X thuộc chu kỳ 3). Công thức hóa học của A có dạng MXn trong đó kim loại M chiếm 20,4545% về khối lượng, tổng số hạt proton trong hợp chất A là 64. Trong hạt nhân của nguyên tử M cũng như X có số hạt mang điện dương ít hơn số hạt còn lại là 1 hạt. Công thức của A là
 
-   **A.** MnCl2.                         **B.** AlCl3.                           **C.** FeS2.                            **D.** ZnS2.
+   **A.** MnCl2.                         B.** AlCl3.                           **C.** FeS2.                            D.** ZnS2.
 
 **Câu 12:** Cho phản ứng : 2FeCl2 (aq) + Cl2 (g) → 2FeCl3 (aq). Trong phản ứng này xảy ra quá trình
 
-   **A.** Ion Fe3+ bị oxi hóa và ion Cl– bị khử                    **B.** Ion Fe3+ bị khử và ion Cl– bị oxi hóa.
+   **A.** Ion Fe3+ bị oxi hóa và ion Cl– bị khử                    B.** Ion Fe3+ bị khử và ion Cl– bị oxi hóa.**
 
-   **C.** Ion Fe2+ bị khử và nguyên tử Cl bị oxi hóa.          **D.** Ion Fe2+ bị oxi hóa và nguyên tử Cl bị khử.
+   **C.** Ion Fe2+ bị khử và nguyên tử Cl bị oxi hóa.          D.** Ion Fe2+ bị oxi hóa và nguyên tử Cl bị khử.**
 
 **Câu 13:** Các liên kết trong phân tử nitrogen được hình thành do sự xen phủ của
 
@@ -194,15 +194,15 @@ Sự hình thành liên kết cộng hoá trị trong phân tử nitrogen
 
 **C** ác phát biểu đúng là
 
-   **A.** (2), (3), (6).                  **B.** (2), (4), (6).                  **C.** (1), (3), (6).                  **D.** (1), (2), (5).
+   **A.** (2), (3), (6).                  B.** (2), (4), (6).                  **C.** (1), (3), (6).                  D.** (1), (2), (5).
 
 **Câu 15:** Phương trình nhiệt hoá học:
 
 Lượng nhiệt toả ra khi dùng 9 gam H2*(g)* để tạo thành  là
 
-   **A.**.                 **B.**.                   **C.**.                 **D.**.
+   **A.** .                 B.**.                   **C.** .                 D.**.
 
-**PHẦN II  (4,0 điểm):  Câu trắc nghiệm đúng/sai
+**PHẦN II  (4,0 điểm):  Câu trắc nghiệm đúng/sai**
 Thí sinh trả lời từ câu 1 đến câu 4, trong mỗi ý a) b) c) d) ở mỗi câu thí sinh chọn đúng hoặc sai.
 
 **Câu 1.** X, Y, T là các kim loại chuyển tiếp (nhómB)và đều thuộc chu kỳ 4 trong bảng tuần hoàn (ZX < ZY < ZT). Biết rằng tổng số electron lớp ngoài cùng của X, Y và T bằng 4, tổng số electron ở lớp ngoài cùng và phân lớp sát ngoài cùng của Y là 8.
@@ -251,7 +251,7 @@ Gắn vào miệng mỗi bình các quả bóng bay (bền), có độ đàn h�
 
 **d.** Trong phản ứng đốt cháy FeR2, tổng hệ số các chất (số nguyên tối giản) trong phương trình là 23
 
-**PHẦN III (10 điểm): Câu hỏi tự luận.
+**PHẦN III (10 điểm): Câu hỏi tự luận.**
 Thí sinh trình bày phần trả lời từ câu 1 đến câu 5 ra tờ giấy thi.
 
 **Câu 1 (2,0 điểm).** Phân tử XY2 có tổng số hạt proton, neutron, electron bằng 178. Trong đó, số hạt mang điện nhiều hơn số hạt không mang điện là 54. Số hạt mang điện của nguyên tử X nhiều hơn số hạt mang điện của nguyên tử Y là 20 hạt.
@@ -260,7 +260,7 @@ Thí sinh trình bày phần trả lời từ câu 1 đến câu 5 ra tờ giấ
 
 **b.** Viết cấu hình electron của nguyên tử X, Y và cấu hình electron của ion X, Y.
 
-**Câu 2 (2,0 điểm).
+**Câu 2 (2,0 điểm).**
 **1.** Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron:
 
              (1)  Al + HNO3 → Al(NO3)3 + NH4NO3 + H2O
@@ -273,7 +273,7 @@ Thí sinh trình bày phần trả lời từ câu 1 đến câu 5 ra tờ giấ
 
 **b )** Hãy giải thích vì sao phân tử NO2 có thể nhị hợp tạo thành phân tử N2O4, trong khi phân tử SO2 không có khả năng nhị hợp?
 
-**Câu 3 (2,0 điểm) .
+**Câu 3 (2,0 điểm) .**
 **a.** Quá trình đốt cháy hoàn toàn benzene và propane trong khí oxygen đều cho sản phẩm là CO2(g) và H2O(l). Khi đốt cháy hoàn toàn 1 gam propane C3H8(g) và đốt cháy hoàn toàn 1 gam benzene C6H6(l) quá trình nào sẽ giải phóng lượng nhiệt nhiều hơn? Giải thích dựa trên giá trị enthalpy chuẩn (tính theo enthalpy tạo thành) biết enthalpy tạo thành chuẩn của các chất được cho trong bảng sau:
 
 | Chất | H2O(l) | CO2(g) | C6H6(l) | C3H8(g) |
@@ -282,7 +282,7 @@ Thí sinh trình bày phần trả lời từ câu 1 đến câu 5 ra tờ giấ
 
 **b.** Dung dịch glucose (C6H12O6) 5%, có khối lượng riêng là 1,02 g/ml, phản ứng oxi hoá 1 mol glucose tạo thành CO2 (g) và H2O (l) toả ra nhiệt lượng là 2803,0 kJ. Một người bệnh được truyền một chai chứa 500 ml dung dịch glucose 5%. Tính năng lượng tối đa từ phản ứng oxi hoá hoàn toàn glucose mà bệnh nhân đó có thể nhận được.
 
-**Câu 4 (2,0 điểm) .
+**Câu 4 (2,0 điểm) .**
 **a.** Tính biến thiên enthalpy phản ứng theo năng lượng liên kết cho phản ứng sau và giải thích vì sao nitrogen (N≡N) chỉ phản ứng với oxygen (O=O) ở nhiệt độ cao hoặc có tia lửa điện để tạo thành nitrogen monoxide (N=O).
 
 N2(g) + O2(g) → 2NO(g)
@@ -301,7 +301,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 
 – Nhiệt phân calcium carbonate biết khi nhiệt phân 1 mol calcium carbonate cần cung cấp 178,49 kJ nhiệt lượng.
 
-**Câu 5 (2,0 điểm).
+**Câu 5 (2,0 điểm).**
 **a.** Nêu biện pháp đã được sử dụng để làm tăng tốc độ phản ứng hóa học trong các trường hợp sau:
 
 – Rắc men vào tinh bột đã được nấu chín (cơm, ngô, khoai, sắn…) để ủ rượu.
@@ -318,7 +318,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | SỞ GIÁO DỤC & ĐÀO TẠO THÁI BÌNH      | HƯỚNG DẪN CHẤM KỲ THI CHỌN HỌC SINH GIỎI LỚP 10, 11 THPT NĂM HỌC:   2023 – 2024 |
 | --- | --- |
 
-**A .  HƯỚNG DẪN CHẤM MÔN HÓA HỌC 10 PHẦN TR ẮC NGHIỆM
+**A .  HƯỚNG DẪN CHẤM MÔN HÓA HỌC 10 PHẦN TR ẮC NGHIỆM**
 | HOA10 | 103 | 1 | C |
 | --- | --- | --- | --- |
 | HOA10 | 103 | 2 | D |
@@ -336,8 +336,8 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | HOA10 | 103 | 14 | A |
 | HOA10 | 103 | 15 | D |
 
-**B .  HƯỚNG DẪN CHẤM MÔN HÓA HỌC 10 PHẦN TỰ LUẬN
-**Câu 1 (2,0 điểm).
+**B .  HƯỚNG DẪN CHẤM MÔN HÓA HỌC 10 PHẦN TỰ LUẬN**
+**Câu 1 (2,0 điểm).**
 | Ý | NỘI DUNG | ĐIỂM |
 | --- | --- | --- |
 | a)   | Do nguyên tử trung hòa điện nên: – Trong nguyên tử X có: số p = số e = Z1; N1 là số nơtron   – Trong nguyên tử Y có: số p = số e = Z2; N2 là số nơtron   Theo bài ta có hệ: | 0,5 |
@@ -345,7 +345,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | b)   | Cấu hình e của nguyên tử:   – Nguyên tử X là Fe (Z = 26): 1s22s22p63s23p63d64s2 hay [Ar]3d64s2. – Nguyên tử Y là S (Z = 16): 1s22s22p63s23p4 hay [Ne]3s23p4. | 0,5 |
 | – Quá trình tạo ion: Fe  Fe3+ + 3e                                     S + 2e S2- – Cấu hình e của ion Fe3+ là: 1s22s22p63s23p63d5 hay [Ar]3d5. – Cấu hình e của ion S2- là: 1s22s22p63s23p6 hay [Ar]. | 0,5 |  |
 
-**Câu 2 (2,0 điểm).
+**Câu 2 (2,0 điểm).**
 | Ý | NỘI DUNG | ĐIỂM |
 | --- | --- | --- |
 | 1. | Cân bằng các phương trình phản ứng sau theo phương pháp thăng bằng electron: |   |
@@ -356,7 +356,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | 2.   | a)  *Phân tử CO2 có nguyên tử trung tâm (nguyên tử cacbon) lai hóa sp nên phân tử dạng đường thẳng 2 nguyên tử O ở 2 đầu nên phân tử không phân cực.*  Trong khi phân tử SO2 có nguyên tử trung tâm (nguyên tử lưu huỳnh) lai hóa sp2 nên phân tử có dạng góc. Mặt khác liên kết S với O là liên kết phân cực nên phân tử phân cực. Lưu ý: HS khi trả lời đúng mà không nêu lai hóa thì vẫn cho đủ số điểm của câu hỏi. |       0,5 |
 | b)  *Phân tử NO2 có nguyên tử trung tâm lai hóa sp2 (nguyên tử nitơ) nên phân tử có dạng góc. Mặt khác trên nguyên tử N trong phân tử NO2 có 1 electron độc thân nên 2 phân tử NO2 dễ nhị hợp tạo thành phân tử N2O4.*  Phân tử SO2 như đã mô tả ở trên không có orbital nào tương tự để các phân tử SO2 có thể nhị hợp. Lưu ý: HS khi trả lời đúng mà không nêu lai hóa thì vẫn cho đủ số điểm của câu hỏi. |       0,5 |  |
 
-**Câu 3  (2,0 điểm) .
+**Câu 3  (2,0 điểm) .**
 | Ý | Nội dung | Điểm |
 | --- | --- | --- |
 | a)   | C6H6(l) + 15/2 O2(g)  6CO2(g) + 3H2O(l) Khi đốt cháy 1 mol C6H6(l)  = 6. (-393,50) + 3.(-285,84) – (+49,00) – 15/2.0                                                                        = -3267,52 kJ. | 0,25   |
@@ -366,7 +366,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | b)   | Số mol glucose:  (mol) | 0,5 |
 | Do lượng nhiệt từ phản ứng tỏa ra, cung cấp cho người bệnh nên => Q =  kJ | 0,5 |  |
 
-**Câu 4 (2,0 điểm).
+**Câu 4 (2,0 điểm).**
 | Ý | NỘI DUNG | ĐIỂM |
 | --- | --- | --- |
 | a)   | + N2 có 1 liên kết N≡N với Eb = 945 kJ/mol    + O2 có 1 liên kết O=O với Eb = 498 kJ/mol    + NO có 1 liên kết N=O với Eb = 607 kJ/mol | 0,25 |
@@ -377,7 +377,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 |  | 0,25 |  |
 | Phản ứng thu nhiệt | 0,25 |  |
 
-**Câu 5.
+**Câu 5.**
 | Ý | NỘI DUNG | ĐIỂM |
 | --- | --- | --- |
 | a)   | – Ảnh hưởng bởi yếu tố xúc tác. Xúc tác giúp phản ứng dễ xảy ra hơn. | 0,25 |
@@ -390,7 +390,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 **Ghi chú:** *Nếu học sinh giải theo cách khác mà vẫn đúng thì vẫn cho điểm tối đa.
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG_HOA10_THAIBINH_2023-2024](/assets/docs/HSG_HOA10_THAIBINH_2023-2024-giasu.ai.vn.docx)
+- [HSG_HOA10_THAIBINH_2023-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

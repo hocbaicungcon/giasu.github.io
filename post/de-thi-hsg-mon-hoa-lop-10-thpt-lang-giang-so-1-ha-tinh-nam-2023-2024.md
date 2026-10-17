@@ -23,12 +23,12 @@ Họ và tên học sinh :…………………………………………….. 
 
 Cho biết nguyên tử khối: H=1; C=12; N=14; O=16; Cl=35,5; Na=23; K=39; Mg=24; Ba=137; P=31; S=32; Ca=40; Fe=56; Cu=64; Br=80, Mn=55 ; F=19; I=127; Al=27.
 
-**A. PHẦN TRẮC NGHIỆM ( 14,0 ĐIỂM)
+**A. PHẦN TRẮC NGHIỆM ( 14,0 ĐIỂM)**
 **Câu 1.** Cho sơ đồ chuyển hoá sau (mỗi mũi tên là một phản ứng):
 
 Tổng số phản ứng thuộc loại phản ứng oxi hoá – khử trong dãy chuyển hoá trên là
 
- **A.** 6. **B.** 5. **C.** 4. **D.** 3.
+ **A.** 6. B.** 5. **C.** 4. D.** 3.
 
 **Câu 2.** Hình dưới đây biểu diễn vị trí tương đối của các nguyên tố thuộc chu kỳ nhỏ X, Y, Z và T trong bảng tuần hoàn:
 
@@ -46,25 +46,25 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
- **A.** 2. **B.** 4. **C.** 1. **D.** 3.
+ **A.** 2. B.** 4. **C.** 1. D.** 3.
 
 **Câu 3.** Cho phản ứng: N2(g) + 3H2(g)  2NH3 (g), ∆H298 = -92,4 kJ.
 
 Chọn phát biểu đúng
 
- **A.** Nhiệt tạo thành của NH3 là 92,4 kJ/mol.                  **B.** Nhiệt phân hủy của NH3 là 46,2 kJ/mol.
+ **A.** Nhiệt tạo thành của NH3 là 92,4 kJ/mol.                  B.** Nhiệt phân hủy của NH3 là 46,2 kJ/mol.**
 
- **C.** Nhiệt tạo thành của N2 là 92,4 kJ/mol.                     **D.** Nhiệt phân hủy của NH3 là 92,4 kJ/mol.
+ **C.** Nhiệt tạo thành của N2 là 92,4 kJ/mol.                     D.** Nhiệt phân hủy của NH3 là 92,4 kJ/mol.**
 
 **Câu 4.** Nguyên tố X có Z = 17. Electron lớp ngoài cùng của nguyên tử nguyên tố X thuộc lớp
 
- **A.** M. **B.** N. **C.** L. **D.** K.
+ **A.** M. B.** N. **C.** L. D.** K.
 
 **Câu 5.** Xét 3 nguyên tố có cấu hình electron lần lượt: X: 1s22s22p63s1; Q: 1s22s22p63s2; Z: 1s22s22p63s23p1. Tính base tăng dần của các hydroxide là
 
- **A.** Z(OH)3 < Q(OH)2 < XOH. **B.** Z(OH)3 < XOH< Q(OH)2.
+ **A.** Z(OH)3 < Q(OH)2 < XOH. B.** Z(OH)3 < XOH< Q(OH)2.**
 
- **C.** XOH < Z(OH)3 < Q(OH)2. **D.** XOH < Q(OH)2< Z(OH)3.
+ **C.** XOH < Z(OH)3 < Q(OH)2. D.** XOH < Q(OH)2< Z(OH)3.**
 
 **Câu 6.** Nhiên liệu rắn dành cho tên lửa tăng tốc của tàu vũ trụ con thoi là một hỗn hợp ammonium perchlorate (amoni peclorat: NH4ClO4) và bột aluminum (nhôm: Al). Khi được đốt đến trên 200oC, NH4ClO4 giải phóng oxygen theo sơ đồ: NH4ClO4 N2 + Cl2 + O2 + H2O
 
@@ -80,7 +80,7 @@ Mỗi một lần phóng tàu con thoi tiêu tốn 94 tấn NH4ClO4. Giả sử 
 
 Số phát biểu đúng là
 
- **A.** 5. **B.** 2. **C.** 3. **D.** 4.
+ **A.** 5. B.** 2. **C.** 3. D.** 4.
 
 **Câu 7.** Hỗn hợp X gồm Al và kim loại M (trong đó số mol M lớn hơn số mol của Al). Hòa tan hoàn toàn 1,08 gam hỗn hợp X bằng 100 ml dung dịch HCl, thu được 0,0525 mol khí H2 và dung dịch Y. Cho dung dịch Y tác dụng với dung dịch AgNO3 dư, thu được 17,9375 gam chất rắn. Biết M có hóa trị II trong muối tạo thành, nhận xét nào sau đây đúng?
 
@@ -96,14 +96,14 @@ Số phát biểu đúng là
 
 Phát biểu nào sau đây là đúng?
 
- **A.** Hợp chất YX2 không phân cực. **B.** Độ âm điện của X < Y < Z.
+ **A.** Hợp chất YX2 không phân cực. B.** Độ âm điện của X < Y < Z.**
 
- **C.** Số electron hóa trị của X < Y. **D.** W và Y thuộc cùng một chu kì.
+ **C.** Số electron hóa trị của X < Y. D.** W và Y thuộc cùng một chu kì.**
 
 **Câu 9.** Nguyên tử nguyên tố X có cấu hình electron lớp ngoài cùng là 4s1. Nguyên tố Y thuộc chu kỳ 3, nhóm VIA. Phát biểu đúng về X và Y là
 
- **A.** Tính phi kim của X > Y. **B.** Độ âm điện của X > Y**.
- **C.** Tính kim loại của X < Y. **D.** Bán kính nguyên tử của X > Y**.
+ **A.** Tính phi kim của X > Y. B.** Độ âm điện của X > Y**.
+ **C.** Tính kim loại của X < Y. D.** Bán kính nguyên tử của X > Y**.
 **Câu 10.** Cho X, Y, Z, T là các nguyên tố khác nhau trong số bốn nguyên tố: 11Na, 12Mg, 13Al, 19K và các tính chất được ghi trong bảng sau:
 
 | Nguyên tố | X | Y | Z | T |
@@ -112,16 +112,16 @@ Phát biểu nào sau đây là đúng?
 
 Nhận xét nào sau đây đúng:
 
- **A.** X là Na, Y là K. **B.** Y là K, T là Na.             **C.** Z là Al, T là Mg. **D.** X là Na, Z là Al.
+ **A.** X là Na, Y là K. B.** Y là K, T là Na.             **C.** Z là Al, T là Mg. D.** X là Na, Z là Al.
 
 **Câu 11.** Krypton là một trong những khí hiếm được ứng dụng trong chiếu sáng và nhiếp ảnh. Ánh sáng của krypton có nhiều dải phổ, do đó nó được sử dụng nhiều làm tia laser có mức năng lượng cao. Quan sát biểu thị phổ khối của krypton
 
 Tính thể tích của 1 gam krypton (đkc).
 
- **A.** 0,267**.                            B.** 0,224. **C.** 0,296. **D.** 0,448**.
+ **A.** 0,267.                            B.** 0,224. **C.** 0,296. D.** 0,448**.**
 **Câu 12.** Cho các phân tử: H2O, NH3, HF, H2S, HCl, CO2. Số phân tử có thể tạo liên kết hydrogen với phân tử cùng loại là
 
- **A.** 4. **B.** 3. **C.** 6. **D.** 5.
+ **A.** 4. B.** 3. **C.** 6. D.** 5.
 
 **Câu 13.** Biến thiên enthalpy của một phản ứng được ghi ở sơ đồ dưới.
 
@@ -144,13 +144,13 @@ Cho các hình ảnh xen phủ orbital sau:
 
 Sự xen phủ orbital ở hinfhh nào hình thành liên kết π (pi)?
 
- **A.** Hình 3. **B.** Hình 2. **C.** Hình 1. **D.** Hình 4.
+ **A.** Hình 3. B.** Hình 2. **C.** Hình 1. D.** Hình 4.
 
 **Câu 15.** Cho sơ đồ phản ứng: FeO + HNO3 → Fe(NO3)3 + NxOy + H2O
 
 (biết x, y là các số nguyên). Sau khi cân bằng với hệ số nguyên tối giản, tổng hệ số của các chất tham gia phản ứng là
 
- **A.** 16x − 4y. **B.** 10x − 4y. **C.** 21x − 8y. **D.** 12x − 6y.
+ **A.** 16x − 4y. B.** 10x − 4y. **C.** 21x − 8y. D.** 12x − 6y.
 
 **Câu 16.** Cho các phương trình nhiệt hóa học sau:
 
@@ -159,17 +159,17 @@ Sự xen phủ orbital ở hinfhh nào hình thành liên kết π (pi)?
       (c) CH4(g) + 2O2(g) → CO2 (g) + 2H2O(l)**
 Số phản ứng tỏa nhiệt là
 
- **A.** 3. **B.** 2. **C.** 0. **D.** 1.
+ **A.** 3. B.** 2. **C.** 0. D.** 1.
 
 **Câu 17.** Nguyên tố X được dùng để chế tạo hợp kim nhẹ, bền, dùng trong nhiều lĩnh vực: hàng không, ô tô, xây dựng, hàng tiêu dùng,… Nguyên tố Y ở dạng , đóng vai trò quan trọng trong các phân tử sinh học như DNA và RNA. Các tế bào sống sử dụng  để vận chuyển năng lượng. Nguyên tử của các nguyên tố X có cấu hình electron kết thúc ở phân lớp 3p1. Nguyên tử của nguyên tố Y có cấu hình electron kết thúc ở phân lớp 3p3. Viết cấu hình electron nguyên tử của X và Y. Tính số electron trong các nguyên tử X và Y. Nguyên tử X, Y lần lượt là
 
- **A.** kim loại và phi kim. **B.** phi kim và kim loại.       **C.** kim loại và kim loại. **D.** khí hiếm và kim loại.
+ **A.** kim loại và phi kim. B.** phi kim và kim loại.       **C.** kim loại và kim loại. D.** khí hiếm và kim loại.
 
 **Câu 18.** Cho phản ứng: 4HNO3 (đặc) + Cu  Cu(NO3)2 + 2NO2 + 2H2O. Trong phản ứng này, HNO3 đóng vai trò
 
- **A.** Vừa là chất khử, vừa là môi trường.                         **B.** vừa là chất oxi hóa vừa là môi trường.
+ **A.** Vừa là chất khử, vừa là môi trường.                         B.** vừa là chất oxi hóa vừa là môi trường.**
 
- **C.** là chất khử.                    **D.** là chất oxi hóa.
+ **C.** là chất khử.                    D.** là chất oxi hóa.**
 
 **Câu 19.** Ở trạng thái cơ bản, nguyên tử nguyên tố X có tổng số hạt electron trong phân lớp p là 11. Y là kim loại kiềm thuộc cùng chu kỳ với X. Điều khẳng định nào sau đây là sai?
 
@@ -195,21 +195,21 @@ Số phản ứng tỏa nhiệt là
 
 Số phản ứng oxi hóa – khử là
 
- **A.** 4. **B.** 3. **C.** 2. **D.** 5.
+ **A.** 4. B.** 3. **C.** 2. D.** 5.
 
 **Câu 21.** Nguyên tố Cu có nguyên tử khối trung bình là 63,54 có 2 đồng vị X và Y, biết tổng số khối là 128. Số nguyên tử đồng vị X = 0,37 số nguyên tử đồng vị Y. Vậy số neutron của đồng vị Y ít hơn số neutron của đồng vị X là:
 
- **A.** 4. **B.** 1. **C.** 6. **D.** 2.
+ **A.** 4. B.** 1. **C.** 6. D.** 2.
 
 **Câu 22.** Quá trình hình thành phân tử X2 có sự xen phủ orbital như sau:
 
 X2 là chất nào sau đây?
 
- **A.** H2. **B.** N2. **C.** O2. **D.** Br2.
+ **A.** H2. B.** N2. **C.** O2. D.** Br2.
 
 **Câu 23.** Y và Z là hai nguyên tố thuộc nhóm IIA và ở 2 chu kỳ liên tiếp nhau trong bảng tuần hoàn. Đây là hai nguyên tố đồng hành song song, có tác dụng bảo vệ xương chắc khỏe, phòng tránh loãng xương, giúp trẻ cao lớn và khỏe mạnh. Nếu thiếu Y thì nguyên tố Z trong cơ thể sẽ phải lấy Y từ các mô mềm để bù lại và gây tình trạng viêm khớp ảnh hưởng lớn đến sức khỏe. Cho m gam hỗn hợp X vào nước dư thấy thoát ra V lít khí H2. Mặt khác, cho m gam hỗn hợp X vào dung dịch HCl dư, sau phản ứng hoàn toàn thấy thoát ra 3V lít khí H2 (thể tích các khí đo ở cùng điều kiện). Phần trăm khối lượng của Y trong hỗn hợp X là:
 
- **A.** 37,68%. **B.** 30,59%. **C.** 54,54%. **D.** 56,88%.
+ **A.** 37,68%. B.** 30,59%. **C.** 54,54%. D.** 56,88%.
 
 **Câu 24.** Cho phản ứng đốt cháy khí butane sau: C4H10(g) + O2(g)  CO2(g) + H2O(g)
 
@@ -223,17 +223,17 @@ Biết năng lượng liên kết trong các hợp chất cho trong bảng sau:
 
 Biến thiên enthalpy ( ) của phản ứng đốt cháy butane là
 
- **A.** +2626,5 kJ. **B.** -2626,5 kJ. **C.** -2356,5 kJ. **D.** +2356,5 kJ.
+ **A.** +2626,5 kJ. B.** -2626,5 kJ. **C.** -2356,5 kJ. D.** +2356,5 kJ.
 
 **Câu 25.** Trong phản ứng: K2Cr2O7 + HCl CrCl3 + Cl2 + KCl + H2O
 
 Số phân tử HCl đóng vai trò chất khử bằng k lần tổng số phân tử HCl tham gia phản ứng.Giá trị của k là
 
- **A.** 4/7. **B.** 3/14. **C.** 1/7. **D.** 3/7.
+ **A.** 4/7. B.** 3/14. **C.** 1/7. D.** 3/7.
 
 **Câu 26.** Cho phản ứng: 3Cu + 8HNO3  3Cu(NO3)2 + 2NO + 4H2O. Tỉ lệ số phân tử HNO3 đóng vai trò là chất oxi hóa và tổng số phân tử HNO3 tham gia phản ứng là
 
- **A.** 1/5. **B.** 3/8. **C.** 3/10. **D.** 2/8.
+ **A.** 1/5. B.** 3/8. **C.** 3/10. D.** 2/8.
 
 **Câu 27.** Cho các phát biểu sau về phân tử CO2
 
@@ -253,7 +253,7 @@ Số phân tử HCl đóng vai trò chất khử bằng k lần tổng số phâ
 
 Số phát biểu **không** đúng là
 
- **A.** 4. **B.** 5. **C.** 2. **D.** 3.
+ **A.** 4. B.** 5. **C.** 2. D.** 3.
 
 **Câu 28.** Từ kí hiệu  ta có thể suy ra:
 
@@ -277,7 +277,7 @@ Số phát biểu **không** đúng là
 
 Số phát biểu **sai** là
 
- **A.** 4**.                                   B.** 3. **C.** 1**.                                   D.** 2**.
+ **A.** 4.                                   B.** 3. **C.** 1.                                   D.** 2**.**
 **Câu 30.** Từ carbon graphite có thể điều chế CO2 theo 2 cách
 
  **C** ách 1: C(s) + O2(g) → CO2(g)                                   ∆H = –393 kJ
@@ -288,13 +288,13 @@ Cách 2: C(s)+ O2(g) → CO(g)                         
 
 Giá trị của x là
 
- **A.** –110 kJ. **B.** 110 kJ. **C.** –676 kJ. **D.** 55 kJ.
+ **A.** –110 kJ. B.** 110 kJ. **C.** –676 kJ. D.** 55 kJ.
 
 **Câu 31.** Dãy gồm các chất trong phân tử chỉ có liên kết cộng hoá trị phân cực là:
 
- **A.** HF, Cl2, H2O. **B.** HCl, H2, H2S. **C.** H2O, HF, H2S. **D.** O2, H2O, NH3.
+ **A.** HF, Cl2, H2O. B.** HCl, H2, H2S. **C.** H2O, HF, H2S. D.** O2, H2O, NH3.
 
-**Câu 32.** Tính chất nào sau đây là ***không*** đúng khi nói đến nguyên tố X( Z=17)?
+**Câu 32.** Tính chất nào sau đây là **không** đúng khi nói đến nguyên tố X( Z=17)?
 
  **A.** Công thức oxide cao nhất là X2O7
 
@@ -306,7 +306,7 @@ Giá trị của x là
 
 **Câu 33.** Dãy chất nào sau đây xếp theo thứ tự nhiệt độ sôi tăng dần?
 
- **A.** CH4, H2O, H2S. **B.** H2S, CH4, H2O. **C.** H2O, H2S, CH4. **D.** CH4, H2S, H2O.
+ **A.** CH4, H2O, H2S. B.** H2S, CH4, H2O. **C.** H2O, H2S, CH4. D.** CH4, H2S, H2O.
 
 **Câu 34.** Cho phản ứng hoá học xảy ra ở điều kiện chuẩn sau
 
@@ -324,7 +324,7 @@ Biết NO2 và N2O4 có  tương ứng là 33,18 kJ/mol và 9,16 kJ/mol. Điề
 
 **Câu 35.** Bán kính nguyên tử gần đúng của nguyên tử R ở 20000C là 1,965.10-8 cm biết tại nhiệt độ đó khối lượng riêng của R bằng 1,55 g/cm3. Giả thiết trong tinh thể các nguyên tử R có hình cầu, có độ đặc khít là 74%. R là nguyên tố.
 
- **A.** Al**.                                  B.** Cu**.                                 C.** Ca**.                                 D.** Mg.
+ **A.** Al.                                  B.** Cu**.                                 C.** Ca**.                                 D.** Mg.**
 
 **Câu 36.** Dung dịch X là dung dịch HCl. Dung dịch Y là dung dịch NaOH. Cho 60 ml dung dịch X vào cốc chứa 100 gam dung dịch Y, tạo ra dung dịch chỉ chứa một chất tan. Cô cạn dung dịch thu được 14,175 gam chất rắn Z. Nung Z đến khối lượng không đổi, thì chỉ còn lại 8,775 gam chất rắn.
 
@@ -338,7 +338,7 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
- **A.** 3. **B.** 4. **C.** 1. **D.** 2.
+ **A.** 3. B.** 4. **C.** 1. D.** 2.
 
 **Câu 37.** Ion Ca2+ cần thiết cho máu của người hoạt động bình thường. Nồng độ ion calcium không bình thường là dấu hiệu của bệnh. Để xác định nồng độ ion calcium, người ta lấy mẫu máu, sau đó kết tủa ion calcium dưới dạng calcium oxalate (CaC2O4) rồi cho calcium oxalate tác dụng với dung dịch potassium permanganate trong môi trường acid theo phản ứng sau:
 
@@ -346,7 +346,7 @@ KMnO4 + CaC2O4 + H2SO4  CaSO4 + K2SO4 + MnSO4 + CO2 + H2O
 
 Giả sử calcium oxalate kết tủa từ 1 mL máu một người tác dụng vừa hết với 2,05 mL dung dịch potassium permanganate (KMnO4) 4,88.10-4M. Nồng độ ion calcium trong máu người đó bằng đơn vị mg Ca2+/100 mL máu là:
 
- **A.** 10 mg. **B.** 8 mg. **C.** 9 mg. **D.** 11 mg.
+ **A.** 10 mg. B.** 8 mg. **C.** 9 mg. D.** 11 mg.
 
 **Câu 38.** Nguyên tố R là phi kim thuộc chu kì 3, có công thức phân tử hợp chất khí với hydrogen là RH2. Nguyên tố R tạo với kim loại M hợp chất có công thức MR. Đốt cháy hoàn toàn 46,6 gam MR, thu được 4,48 lít khí RO2 (đktc). Có các phát biểu sau:
 
@@ -362,22 +362,22 @@ Giả sử calcium oxalate kết tủa từ 1 mL máu một người tác dụng
 
 Số phát biểu đúng là:
 
- **A.** 3. **B.** 2. **C.** 5. **D.** 4.
+ **A.** 3. B.** 2. **C.** 5. D.** 4.
 
 **Câu 39.** Biểu đồ sau biểu diễn nhiệt độ sôi của các hydrogen halide
 
 HF có nhiệt độ sôi cao bất thường so với HCl, HBr, HI là do
 
- **A.** fluoride chỉ có số oxi hoá âm trong hợp chất.          **B.** liên kết H – F phân cực mạnh nhất.
+ **A.** fluoride chỉ có số oxi hoá âm trong hợp chất.          B.** liên kết H – F phân cực mạnh nhất.**
 
- **C.** HF có liên kết hydrogen. **D.** fluoride có tính oxi hoá mạnh nhất.
+ **C.** HF có liên kết hydrogen. D.** fluoride có tính oxi hoá mạnh nhất.**
 
 **Câu 40.** Hợp kim cobalt (Co) được sử dụng rộng rãi cho các bộ phận động cơ máy bay vì độ bền nhiệt độ cao là một yếu tố quan trọng. Nguyên tử cobalt có cấu hình electron ngoài cùng là 3d74s2. Số hiệu nguyên tử của cobalt là
 
- **A.** 24. **B.** 29. **C.** 25. **D.** 27.
+ **A.** 24. B.** 29. **C.** 25. D.** 27.
 
-**B. PHẦN TỰ LUẬN ( 6,0 ĐIỂM)
-**Câu 1 (2 điểm):
+**B. PHẦN TỰ LUẬN ( 6,0 ĐIỂM)**
+**Câu 1 (2 điểm):**
 **1. (1 điểm):** Cấu hình e lớp ngoài cùng của nguyên tử X là 4s1.
 
       a) Viết cấu hình electron của nguyên tử X.
@@ -390,7 +390,7 @@ a. Xác định nguyên tố M, X và công thức phân tử MX2.
 
 b. So sánh (có giải thích) bán kính của các nguyên tử và ion: M, M2+, X–.
 
-**Câu 2 (2 điểm):
+**Câu 2 (2 điểm):**
 **1. (1 điểm):** Lập phương trình hóa học của các phản ứng sau bằng phương pháp thăng bằng electron, nêu rõ chất oxi hóa, chất khử.
 
       a) Al + HNO3  Al(NO3)3 + NO++ N2O + H2O
@@ -409,7 +409,7 @@ Theo nghiên cứu, khi hô hấp, thể tích khí carb
 
 on dioxide một người thải ra xấp xỉ thể tích oxygen hút vào. Cần trộn Na2O2 và KO2 theo tỉ lệ số mol như thế nào để thể tích khí carbon dioxide hấp thụ bằng thể tích khí oxygen sinh ra?
 
-**Câu 3 (2 điểm):
+**Câu 3 (2 điểm):**
 **1.** Cho phương trình nhiệt hoá học:
 
       C2H4(g) + H2(g)  C2H6(g)                                   
@@ -436,9 +436,9 @@ on dioxide một người thải ra xấp xỉ thể tích oxygen hút vào. C�
 
       – Tại thời điểm đã hết một nửa lượng I2.
 
-**—— HẾT ——
-**HƯỚNG DẪN CHẤM
-**I. TRẮC NGHIỆM
+**—— HẾT ——**
+**HƯỚNG DẪN CHẤM**
+### I. Trắc Nghiệm
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | B | B | B | B | B | B | B | B | B | B |
@@ -449,7 +449,7 @@ on dioxide một người thải ra xấp xỉ thể tích oxygen hút vào. C�
 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 |
 | C | C | D | D | C | A | A | D | C | D |
 
-**II. TỰ LUẬN
+### Ii. Tự Luận
 | Câu | Ý | Đáp án | Biểu điểm |
 | --- | --- | --- | --- |
 | 1 | 1 | a.Viết được 3 cấu hình e của K, Cr, Cu | 0,5đ |
@@ -470,7 +470,7 @@ on dioxide một người thải ra xấp xỉ thể tích oxygen hút vào. C�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL](/assets/docs/2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-LANG-GIANG-SO-1-HA-TINH-TNTL](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

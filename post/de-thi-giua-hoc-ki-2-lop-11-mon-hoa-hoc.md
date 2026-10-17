@@ -93,7 +93,7 @@ Bài 3: Một hỗn hợp khí X gồm ankan A và anken B, A có nhiều hơn B
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [THPT Ngô Quyên – Hải Phòng](/assets/docs/THPT-Ngo-Quyen-Hai-Phong.doc)
+- [THPT Ngô Quyên – Hải Phòng](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

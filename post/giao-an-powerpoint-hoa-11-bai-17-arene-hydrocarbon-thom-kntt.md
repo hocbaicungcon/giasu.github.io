@@ -17,18 +17,18 @@ Giáo án powerpoint hóa 11 bài 17 Arene hydrocarbon thơm KNTT
 | BÀI 17. ARENE (HYDROCARBON THƠM) |
 | --- |
 
-**I .   KHÁI NIỆM VÀ DANH PHÁP
-***1 . Khái niệm
+**I .   KHÁI NIỆM VÀ DANH PHÁP**
+**1 . Khái niệm**
 - Khái niệm:   ……………………………………………………………………………………………………………..
 
 ………………………………………………………………………………………………………………………………………………………………………………………………………………………………
 
 Benzen C6H… và các hidrocacbon thơm khác C7H…, C8H… Lập thành dãy đồng đẳng có CTPT chung là…………………………..
 
-***2. Công thức cấu tạo và danh pháp
+**2. Công thức cấu tạo và danh pháp**
 * Tên thay thế benzene và các đồng đẳng của benzene
 * **số chỉ……………….**– tên nhóm**………………….**+benzene
-**1. Gọi tên thông thường, tên thay thế các hydrocarbon thơm, gốc hydrocacbon sau
+**1. Gọi tên thông thường, tên thay thế các hydrocarbon thơm, gốc hydrocacbon sau**
 | CTPT | CTCT | Tên thông thường | Tên thay thế |
 | --- | --- | --- | --- |
 | C6H6 |  | ……………………………… ……………………………… | ……………………………… ……………………………… |
@@ -40,15 +40,15 @@ Benzen C6H… và các hidrocacbon thơm khác C7H…, C8H… Lập thành dãy 
 | C6H5– |   | ……………………………… ……………………………… | ……………………………… ……………………………… |
 | C6H5-CH2– |   | ……………………………… ……………………………… | ……………………………… ……………………………… |
 
-***Tên một số arene khác
+**Tên một số arene khác**
 ….………… …          ………………………
 
-**II. ĐẶC ĐIỂM CẤU TẠO CỦA BENZENE
+### Ii. Đặc Điểm Cấu Tạo Của Benzene
  **–** Phân tử có cấu trúc …………., hình ……………
 
  **–** 6C và 6H cùng ……………………………………
 
-**III. TÍNH CHẤT VẬT LÝ VÀ TRẠNG THÁI TỰ NHIÊN
+### Iii. Tính Chất Vật Lý Và Trạng Thái Tự Nhiên
 + Ở nhiệt độ thường benzene, toluene, xylene, styrene thường là :                                                        
 
 - chất ………., không ………, có mùi …………., ………….. hơn nước, không tan trong ………….., độc                                                      
@@ -61,9 +61,9 @@ Benzen C6H… và các hidrocacbon thơm khác C7H…, C8H… Lập thành dãy 
 
 + Naphtalene và các arene đa vòng khác có trong ……………và nhựa ………….
 
-**IV. TÍNH CHẤT HÓA HỌC
-**– Tính thơm : Dễ**………………..,** khó**………….** bền với chất oxi hóa
-1. ***Phản ứng thế
+### Iv. Tính Chất Hóa Học
+**– Tính thơm : Dễ**………………..,** khó**………….** bền với chất oxi hóa**
+1. **Phản ứng thế
 **à  Quy tắc thế**: …………………………………………………………………………………………
 
 ………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………………
@@ -82,12 +82,12 @@ Benzen C6H… và các hidrocacbon thơm khác C7H…, C8H… Lập thành dãy 
 
           ……………………………
 
-**Lưu ý thế H  của nhánh
+**Lưu ý thế H  của nhánh**
           ………………………………………
 
-***2. Phản ứng cộng
+**2. Phản ứng cộng**
 *a.Phản ứng cộng chlorine
-*** Quan sát video thí nghiệm benzene tác dụng với chlorine
+** Quan sát video thí nghiệm benzene tác dụng với chlorine**
 Hiện tượng………………………………………………………………………..
 
 Giải thích………………………………………………………………………….
@@ -97,7 +97,7 @@ Giải thích…………………………………………………………�
 *b. Phản ứng cộng hydrogen
              ……………………………………………….
 
-***3. Phản ứng oxi hóa
+**3. Phản ứng oxi hóa**
 *a. Phản ứng oxi hóa hoàn toàn
     ……………………………………………….
 
@@ -116,7 +116,7 @@ Giải thích…………………………………………………………�
 
 => Phản ứng này có thể dùng để  ……………………………………………….  benzene với các alkylbenzene khác
 
-**V. ỨNG DỤNG
+### V. Ứng Dụng
 ……………………………………………………………………………………………………………………………………………………………..…………………………………………………………………
 
 ……………………………………………………………………………………………………………………………………………………………..…………………………………………………………………
@@ -133,7 +133,7 @@ Một số giải pháp
 
 ……………………………………………………………………………………………………………………………………………………………..………………………………………………………………………………………………………………………………………………………………………………………………………………………………..…………………………………………………………………………………………………………………………………………………………………………………..
 
-**VI. ĐIỀU CHẾ
+### Vi. Điều Chế
 Điều chế benzene và toluene từ ………………………………………………………….
 
 |  |
@@ -155,56 +155,56 @@ Một số giải pháp
 Điều chế styrene
 
 *                                                         ……………………………                      ……………………………..
-**Củng cố
-***BÀI TẬP TRẮC NGHIỆM
-***Chọn đáp án đúng cho mỗi câu hỏi sau
+**Củng cố**
+**BÀI TẬP TRẮC NGHIỆM**
+**Chọn đáp án đúng cho mỗi câu hỏi sau**
 **Câu 1:** Công thức tổng quát của dãy đồng đẳng alkylbenzene là
 
 **A**. CnH2n  (n≥2)                                       **C.** CnH2n-2  (n≥2)
 
-**B.** CnH2n+2  (n≥1)                                    **D.** CnH2n-6  (n≥6)
+**B.** CnH2n+2  (n≥1)                                    D.** CnH2n-6  (n≥6)**
 
 **Câu 2:** Tên gọi của hợp chất    C6H5-CH3     là
 
-**A.** Methylbenzene                                 **B.** Toluene
+**A.** Methylbenzene                                 B.** Toluene**
 
 **C**. A và B đúng                                      **D**. A và B đều sai
 
 **Câu 3:** Tên gọi của            là
 
-**A.** 1,2-dimethylbenzene                       **B.***o*-dimethylbenzene
+**A.** 1,2-dimethylbenzene                       B.**o*-dimethylbenzene**
 
-**C.***o*-xilene                                            **D**. Tất cả đều đúng
+**C.**o*-xilene                                            **D**. Tất cả đều đúng
 
 **Câu 4:** C8H10 có bao nhiêu đồng phân hydrocarbon thơm
 
-**A**. 4                             **B**. 3                    **C.** 2                 **D.** 5
+**A**. 4                             **B**. 3                    **C.** 2                 D.** 5**
 
 **Câu 5:** Alkylbenzene có phản ứng cộng
 
-**A.** H2 để thành vòng no                              **B.** H2O
+**A.** H2 để thành vòng no                              B.** H2O**
 
-**C.** Br2                                                                                       **D.** HBr
+**C.** Br2                                                                                       D.** HBr**
 
 **Câu 6:** Phân tử benzene có cấu trúc
 
-**A.** Phẳng, lục giác đều                                **B.** Tam giác
+**A.** Phẳng, lục giác đều                                B.** Tam giác**
 
-**C.** Tứ giác                                                   **D.** Đa giác
+**C.** Tứ giác                                                   D.** Đa giác**
 
 **Câu 7:** Alkylbenzen có phản ứng thế ở
 
-**A.** Thế ở nhánh                                           **B.** Thế ở vòng
+**A.** Thế ở nhánh                                           B.** Thế ở vòng**
 
-**C.** Không tham gia thế                               **D.** Tuỳ vào điều kiện của phản ứng
+**C.** Không tham gia thế                               D.** Tuỳ vào điều kiện của phản ứng**
 
 **Câu 8:** Alkylbenzene dễ thế hơn benzene, và khi thế ưu tiên vị trí
 
-**A.** metha                                                     **B.** octho
+**A.** metha                                                     B.** octho**
 
- **C.** para                                                       **D.** Octho và para
+ **C.** para                                                       D.** Octho và para**
 
-**BÀI TẬP TỰ LUẬN
+**BÀI TẬP TỰ LUẬN**
 **Câu 1:** Viết công thức cấu tạo và gọi tên các hydrocarbon thơm có công thức phân tử C8H10, C8H8.
 
 ……………………………………………………………………………………………………………………………………………………………..…………………………………………………………………
@@ -239,7 +239,7 @@ d – Ethylbenzene + dd KMnO4 (t0).
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [B17_ARENE_TRANTHIPHUONG](/assets/docs/B17_ARENE_TRANTHIPHUONG.docx)
+- [B17_ARENE_TRANTHIPHUONG](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 [Powerpoint](https://o2edu-my.sharepoint.com/:p:/g/personal/polime_o2_edu_vn/EWdIPrf9hURLstjYYaJbtW4BMGYd7oNfsIQmWzktzrb7SA?e=c1FahK) (thầy cô chọn file -> Save as -> Download a Copy)
 

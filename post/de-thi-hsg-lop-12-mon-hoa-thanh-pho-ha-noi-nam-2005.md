@@ -73,7 +73,7 @@ Cho H = 1; C = 12; N = 14; O = 16; Na = 23; Mg = 24; Al = 27; P = 31; S = 32; Cl
 ***(Giám thị không giải thích gì thêm)
 GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề thi
 
-- [Đề HSG Hà Nội – vòng 1 (2005)](/assets/docs/De-HSG-Ha-Noi-vong-1-2005.docx)
+- [Đề HSG Hà Nội – vòng 1 (2005)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

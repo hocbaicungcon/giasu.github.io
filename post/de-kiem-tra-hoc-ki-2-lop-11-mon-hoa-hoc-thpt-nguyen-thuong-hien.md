@@ -172,7 +172,7 @@ a = m(CO2) = 35,2 gam
 *0,25
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoá 11 Nguyễn Thượng Hiền](/assets/docs/Hoa-11-Nguyen-Thuong-Hien.docx)
+- [Hoá 11 Nguyễn Thượng Hiền](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -251,7 +251,7 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download
 
 - [bai-14_on-tap-chuong-3_Ho-Van-Quan1](https://drive.google.com/file/d/1Czxp5i2MlXidM6paW5YuO-z7c8N22CQU/view?usp=sharing)
 
-- [B14_-on-tap-chuong-5_Ho-Van-Quan1](/assets/docs/B14_-on-tap-chuong-5_Ho-Van-Quan1.docx)
+- [B14_-on-tap-chuong-5_Ho-Van-Quan1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

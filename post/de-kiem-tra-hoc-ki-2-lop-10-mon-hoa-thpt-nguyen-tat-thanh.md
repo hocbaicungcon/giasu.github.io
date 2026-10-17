@@ -70,7 +70,7 @@ f)**(1,0 điểm)** Hòa tanhoàn toànm1 gam Fe cần tối đa a gam dung dị
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 10 – Nguyen Tat Thanh-deda](/assets/docs/Hoa-10-Nguyen-Tat-Thanh-deda.docx)
+- [Hoa 10 – Nguyen Tat Thanh-deda](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

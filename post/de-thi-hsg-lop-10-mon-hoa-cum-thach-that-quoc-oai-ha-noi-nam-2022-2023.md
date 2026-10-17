@@ -67,7 +67,7 @@ gian gia đình A sử dung hết mạch khí gas nêu trên
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG-Hoa-10-cum-truong-Thach-That-Quoc-Oai-nam-2022-2023](/assets/docs/HSG-Hoa-10-cum-truong-Thach-That-Quoc-Oai-nam-2022-2023-giasu.ai.vn.pdf)
+- [HSG-Hoa-10-cum-truong-Thach-That-Quoc-Oai-nam-2022-2023](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

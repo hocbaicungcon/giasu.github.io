@@ -163,7 +163,7 @@ Andehit, 2 chức, 3 cacbon chỉ có duy nhất 1 công thức phù hợp
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HOA 11-NGUYEN HIEN-DEDA](/assets/docs/HOA-11-NGUYEN-HIEN-DEDA.docx)
+- [HOA 11-NGUYEN HIEN-DEDA](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

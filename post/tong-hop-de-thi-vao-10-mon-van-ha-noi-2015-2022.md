@@ -51,7 +51,7 @@ Dưới đây là đoạn trích trong tác phẩm Những ngôi sao xa xôi c�
 
 **Câu 3:** Từ đoạn trích trên và những hiểu biết về xã hội, em hãy viết một đoạn văn (khoảng nửa trang giấy thi) trình bày suy nghĩ về thái độ của mỗi người trong mối quan hệ giữa cá nhân và tập thể.
 
-**GỢI Ý ĐÁP ÁN
+**GỢI Ý ĐÁP ÁN**
 ### Phần I: (7 điểm)
 
 **Câu 1:** Ghi tên bài thơ có những câu thơ trên. Từ những câu thơ ấy, kết hợp với hiểu biết về tác phẩm, em hãy cho biết mạch cảm xúc của bài thơ được triển khai theo trình tự nào?
@@ -157,14 +157,14 @@ rồi trở về thực tại:
 
 **Câu 4:** Hãy nêu tên một tác phẩm khác trong chương trình môn Ngữ Văn cấp trung học cơ sở cũng viết về tình cảm bà cháu và ghi rõ tên tác giả.
 
-**GỢI Ý ĐÁP ÁN
+**GỢI Ý ĐÁP ÁN**
 ### Phần I. ( 4 điểm)
 
-**Câu 1:** Vẻ đẹp phong cách Hồ Chí Minh **được kết hợp hài hòa giữa những ảnh hưởng văn hóa Quốc tế và gốc văn hóa dân tộc.
+**Câu 1:** Vẻ đẹp phong cách Hồ Chí Minh **được kết hợp hài hòa giữa những ảnh hưởng văn hóa Quốc tế và gốc văn hóa dân tộc.**
 
 – Qua đó tác giả Lê Anh Trà thể hiện tình cảm kính trọng, ca ngợi Bác Hồ, tự hào về Người như một đại diện của một con người ưu tú Việt Nam.
 
-**Câu 2:** Hai danh từ được sử dụng như tính từ: **Việt Nam, Phương Tây. Cách dùng từ ấy có hiệu quả nghệ thuật cao Tác giả nhấn mạnh bản sắc văn hóa dân tộc Việt Nam, bản sắc Phương Đông trong con người Bác.
+**Câu 2:** Hai danh từ được sử dụng như tính từ: **Việt Nam, Phương Tây. Cách dùng từ ấy có hiệu quả nghệ thuật cao Tác giả nhấn mạnh bản sắc văn hóa dân tộc Việt Nam, bản sắc Phương Đông trong con người Bác.**
 
 **Câu 3:** Trách nhiệm thế hệ trẻ đối với việc giữ gìn văn hóa dân tộc trong thời kỳ hội nhập:
 – Giải thích: thời kỳ hội nhập: các nền kinh tế thế giới mở cửa, hội nhập dẫn đến sự giao lưu, ảnh hưởng văn hóa giữa các nước.
@@ -194,9 +194,9 @@ rồi trở về thực tại:
 **Câu 3:** Viết đoạn văn (3,5 điểm)
    Học sinh trình bày cảm nhận, suy nghĩ của bản thân về đoạn thơ theo những cách khác nhau nhưng cần đảm bảo các yêu cầu cơ bản:
 
-***– Về nội dung:** * Tình bà cháu sâu nặng vượt trên cả khoảng cách không gian (“cháu đã đi xa”, đến những phương trời mới, đất nước xa xôi), khoảng cách thời gian (người cháu đã khôn lớn, trưởng thành), vượt lên cả sự khác biệt về hoàn cảnh sống (cuộc sống đủ đầy về vật chất, tiện nghi). Nỗi nhớ về bà, về những kỉ niệm tuổi thơ luôn luôn thường trực trong tâm thức, trong trái tim người cháu.
+**– Về nội dung:** * Tình bà cháu sâu nặng vượt trên cả khoảng cách không gian (“cháu đã đi xa”, đến những phương trời mới, đất nước xa xôi), khoảng cách thời gian (người cháu đã khôn lớn, trưởng thành), vượt lên cả sự khác biệt về hoàn cảnh sống (cuộc sống đủ đầy về vật chất, tiện nghi). Nỗi nhớ về bà, về những kỉ niệm tuổi thơ luôn luôn thường trực trong tâm thức, trong trái tim người cháu.
 
-***– Về hình thức:
+**– Về hình thức:**
     + Học sinh viết đoạn văn theo cách lập luận diễn dịch, với dung lượng phù hợp với yêu cầu đề bài (khoảng 12 câu). Diễn đạt lưu loát, mạch lạc, logic.
 
     + Trong đoạn văn có sử dụng câu bị động và phép nối để liên kết câu (gạch chân)
@@ -241,7 +241,7 @@ Cho đoạn trích:
 
 ###  
 
-**GỢI Ý ĐÁP ÁN
+**GỢI Ý ĐÁP ÁN**
 ### Phần I (4 điểm)
 
 **Câu 1:** Ghi lại chính xác 7 dòng tiếp theo những dòng thơ trên. (1 điểm)
@@ -310,7 +310,7 @@ Không có tình yêu thương, mỗi con người sống trong sự cô đơn, 
 
 – Không mắc các lỗi về chính tả, dùng từ, đặt câu. Diễn đạt ngắn gọn, mạch lạc.
 
-*** Yêu cầu về nội dung:
+** Yêu cầu về nội dung:**
 – Giới thiệu về tác giả, tác phẩm, nội dung chính: Khắc họa thành công hình tượng những người nông dân trong kháng chiến.
 
 – Hình tượng người nông dân được thể hiện tập trung qua nhân vật ông Hai với những phẩm chất tiêu biểu:
@@ -363,7 +363,7 @@ Biện pháp tu từ nói quá cùng những hình ảnh giàu sức liên tư�
 
 ###  
 
-**GỢI Ý ĐÁP ÁN
+**GỢI Ý ĐÁP ÁN**
 ### Phần I (6.0 điểm)
 
 **Câu 1:** Tác giả: Huy Cận . Năm sáng tác: 1958.
@@ -385,7 +385,7 @@ Biện pháp tu từ nói quá cùng những hình ảnh giàu sức liên tư�
 
 – Thực hiện đủ yêu cầu Tiếng Việt trong bài viết: phép lặp và câu có thành phần phụ chú.
 
-**b. Nội dung:
+**b. Nội dung:**
 – Khái quát: Đoạn thơ là một khúc ca ca ngợi hình ảnh con người lao động với kết quả rực rỡ, ca ngợi vẻ đẹp tươi sáng của bình minh trên biển Hạ Long.
 
 – Chi tiết:
@@ -411,7 +411,7 @@ Từ “tiên nhân” trong đoạn văn chỉ : người đời trước (cha 
 
 – Vũ Nương còn nặng lòng với trần gian, khát khao phục hồi danh dự.
 
-**– Nội dung:
+**– Nội dung:**
     + Hiểu ý niệm về gia đình.
 
     + Bàn luận xác đáng về vai trò của gia đình trong cuộc sống của mỗi người (là chiếc nôi nuôi dưỡng và hình thành nhân cách; là điểm tựa, bến đỗ bình yên, nơi chắp cánh ước mơ…)
@@ -430,7 +430,7 @@ Từ “tiên nhân” trong đoạn văn chỉ : người đời trước (cha 
 
 **Câu 2:** Trong khổ thơ đầu, tác giả đã đón nhận thu về với “hương ổi”, “gió se”, “sương chùng chình” bằng những giác quan nào? Cũng trong khổ thơ này, các từ “bỗng” và “hình như” giúp em hiểu gì về cảm xúc, tâm trạng của nhà thơ?
 
-**Câu 3:** Phân tích hiệu quả nghệ thuật của phép tu từ nhân hóa trong câu thơ *“Sương chùng ch**ình qua ngõ”.
+**Câu 3:** Phân tích hiệu quả nghệ thuật của phép tu từ nhân hóa trong câu thơ *“Sương chùng ch**ình qua ngõ”.**
 **Câu 4:** Khép lại bài thơ, Hữu Thỉnh viết:
 
 *   “Vẫn còn bao nhiêu nắng
@@ -455,7 +455,7 @@ Từ “tiên nhân” trong đoạn văn chỉ : người đời trước (cha 
 
 **Câu 3:** Từ nội dung đoạn trích trên, em hãy trình bày suy nghĩ (khoảng 2/3 trang giấy thi) về ý kiến: Phải chăng hoàn cảnh khó khăn cũng là cơ hội để mỗi người khám phá khả năng của chính mình?
 
-**GỢI Ý ĐÁP ÁN
+**GỢI Ý ĐÁP ÁN**
 ### Phần I (7,0 điểm)
 
 **Câu 1:** HS nêu đúng:
@@ -480,13 +480,13 @@ Từ “tiên nhân” trong đoạn văn chỉ : người đời trước (cha 
 
 – Gợi tâm trạng lưu luyến (vương vấn, bịn rịn…), sự tinh tế và tình yêu thiên nhiên của tác giả.
 
-**Câu 4:** – Nội dung: **Biết bám sát ngữ liệu, khai thác hiệu quả các tín hiệu nghệ thuật (từ ngữ, hình ảnh, biện pháp tu từ… ) làm sáng tỏ những cảm nhận tinh tế và sâu sắc của tác giả:
+**Câu 4:** – Nội dung: **Biết bám sát ngữ liệu, khai thác hiệu quả các tín hiệu nghệ thuật (từ ngữ, hình ảnh, biện pháp tu từ… ) làm sáng tỏ những cảm nhận tinh tế và sâu sắc của tác giả:**
 
     + Về thiên nhiên, đất trời.
 
     + về đời người.
 
-**– Hình thức:
+**– Hình thức:**
     + Đảm bảo dung lượng, có trình tự mạch lạc, diễn đạt rõ ý; không mắc lỗi chính tả…
 
     + Đúng đoạn văn tổng-phân-hợp.
@@ -516,7 +516,7 @@ Từ “tiên nhân” trong đoạn văn chỉ : người đời trước (cha 
 
 ## ĐỀ THI VÀO LỚP 10 MÔN NGỮ VĂN HÀ NỘI 2020
 
-**Phần I (6,5 điểm)
+**Phần I (6,5 điểm)**
 *Viếng lăng Bác* là bài thơ ân tình, cảm động của Viễn Phương viết về Bác Hồ kính yêu.
 
 1. Em hãy cho biết hoàn cảnh ra đời của bài thơ.
@@ -540,7 +540,7 @@ Bằng một đoạn văn khoảng 12 câu theo phép lập luận diễn dịch
 
 4. Hãy nêu một văn bản khác trong chương trình Ngữ văn Trung học cơ sở cũng viết về Bác Hồ, ghi rõ tên tác giả.
 
-**Phần II (3,5 điểm)
+**Phần II (3,5 điểm)**
 Đọc văn bản sau và thực hiện các yêu cầu:
 
 *“Chuyện kể, một danh tướng có lần đi ngang qua trường học cũ của mình, liền ghé vào thăm. Ông gặp lại người thầy từng dạy mình hồi nhỏ và kính cẩn thưa:
@@ -556,8 +556,8 @@ Bằng một đoạn văn khoảng 12 câu theo phép lập luận diễn dịch
 
 3. Từ cách ứng xử của danh tướng và thầy giáo trong văn bản trên, kết hợp với hiểu biết xã hội, em hãy trình bày suy nghĩ (khoảng 2/3 trang giấy thi) về ý kiến: Cách ứng xử là tấm gương phản chiếu nhân cách của mỗi con người.“
 
-**GỢI Ý ĐÁP ÁN
-**Phần I
+**GỢI Ý ĐÁP ÁN**
+**Phần I**
 Câu 1: Bài thơ ra đời năm 1976 – một năm sau khi đất nước thống nhất, lăng Bác được khánh thành.Viễn Phương ra miền Bắc, vào lăng viếng Bác Hồ. Bài thơ in trong tập “Như mây mùa xuân”.
 
 Câu 2:
@@ -608,7 +608,7 @@ Câu 4.
 
 Văn bản khác: “*Đêm nay Bác không ngủ*” của Minh Huệ hay “* Phong cách Hồ Chí Minh*” của Lê Anh Trà hoặc “* Đức tính giản dị của Bác Hồ*” của Phạm Văn Đồng.
 
-**Phần II
+**Phần II**
 Câu 1: Phương thức biểu đạt: tự sự
 
 Câu 2: Câu nói đó thể hiện vị danh tướng là người:
@@ -645,7 +645,7 @@ b. Nội dung:
 
 ## ĐỀ THI VÀO LỚP 10 MÔN NGỮ VĂN HÀ NỘI 2021
 
-**Phần 1(6,0 điểm)
+**Phần 1(6,0 điểm)**
 Đồng chí là một trong những tác phẩm tiêu biểu của nhà thơ Chính Hữu và thơ ca kháng chiến chống Pháp. Mở đầu bài thơ, tác giả viết:
 
 “Quê hương anh nước mặn, đồng chua
@@ -670,7 +670,7 @@ Súng bên súng, đầu sát bên đầu,
 
 3. Đoạn cuối bài thơ có một hình ảnh giản dị mà giàu sức gợi: “Đứng cạnh bên nhau chờ giặc tới”.Hình ảnh thơ đó giúp em hiểu gì về vẻ đẹp của những anh bộ đội Cụ Hồ”
 
-**Phần II (4,0 điểm)
+**Phần II (4,0 điểm)**
 Đọc đoạn trích sau và thực hiện các yêu cầu:
 
 “Người ta kể rằng, có một máy phát điện cỡ lớn của công ti Pho bị hỏng. Một hội đồng gồm nhiều kĩ sư họp 3 tháng liền tìm không ra nguyên nhân. Người ta phải mời đến chuyện gia Xien-mét-xơ.Ông xem xét và làm cho máy hoạt động trở lại. Công ti phải trả cho ông 10.000 đôla. Nhiều người cho Xten-mét-xơ là tham, bắt bí để lấy tiền. Nhưng trong giấy biên nhận, Xien-mét-xơ ghi: “Tiền vạch một đường thẳng là 1 đôla. Tiền tìm ra chỗ để vạch đúng đường ấy giá: 9 999 đô la”. Rõ ràng người có tri thức thâm hậu có thể làm được những việc mà nhiều người khác không làm nổi (Ngữ văn 9, tập hai, NXB Giáo dục Việt Nam, 2020)
@@ -679,8 +679,8 @@ Súng bên súng, đầu sát bên đầu,
 
 2. Dựa vào đoạn trích trên kết hợp với những hiểu biết xã hội, hãy trình bày suy nghĩ của em (khoảng 2/3 trang giấy thi) về ý kiến: Phải chăng tri thức làm nên giá trị con người.
 
-**GỢI Ý ĐÁP ÁN
-**Phần I.
+**GỢI Ý ĐÁP ÁN**
+**Phần I.**
 1.
 
 “Đồng chí” sáng tác đầu năm 1948. Tác phẩm được in trong tập thơ “Đầu súng trăng treo”.
@@ -743,7 +743,7 @@ Tư thế chiến đấu hiện ngang, chủ động, mạnh mẽ và hết sứ
 
 -> Chỉ với một câu thơ nhưng Chính Hữu đã tạc nên một bức tranh chân dung đẹp đẽ về ý chí kiên cường, sự dũng cảm và tinh thần yêu nước nồng nàn của họ.
 
-**Phần II.
+**Phần II.**
 Câu 1.
 
 Xten-mét-xơ cho rằng “vạch một đường thẳng” có giá 1 đôla nhưng tìm ra chỗ vạch đúng đường ấy” lại có giá 9999 đôla vì:
@@ -820,7 +820,7 @@ Trong quá trình làm, học sinh lấy dẫn chứng phù hợp.
 
 ## ĐỀ THI VÀO LỚP 10 MÔN NGỮ VĂN HÀ NỘI 2022
 
-**Phần I (6,5 điểm)
+**Phần I (6,5 điểm)**
 Trong những ngày tháng cuối đời, nhà thơ Thanh Hải vẫn thiết tha đón nhận vẻ đẹp của cuộc sống:
 
 “Từng giọt long lanh rơi
@@ -851,7 +851,7 @@ Tất cả như xôn xao…”
 
 Em hãy viết một đoạn văn khoảng 12 câu theo phép lập luận tổng hợp – phân tích – tổng hợp làm rõ vẻ đẹp mùa xuân đất nước và cảm xúc của tác giả ở khổ thơ trên, trong đó có sử dụng câu bị động và phép thế để liên kết (gạch dưới, chú thích rõ một câu bị động và từ ngữ dùng làm phép thế).
 
-**Phần II (3,5 điểm)
+**Phần II (3,5 điểm)**
 Đọc đoạn trích sau và thực hiện các yêu cầu:
 
 *“Có một gương mặt đẹp soi vào gương quả là hạnh phúc. Nhưng hạnh phúc càng trọn vẹn hơn nếu có một tâm hồn đẹp để mỗi khi soi vào tấm gương lương tâm sâu thẳm mà lòng không hổ thẹn.”
@@ -863,8 +863,8 @@ Em hãy viết một đoạn văn khoảng 12 câu theo phép lập luận tổn
 
 3. Từ đoạn trích trên, kết hợp với những hiểu biết xã hội, em hãy trình bày suy nghĩ của mình (khoảng 2/3 trang giấy thi) về vấn đề: Sự cần thiết của việc nuôi dưỡng vẻ đẹp tâm hồn.
 
-**GỢI Ý ĐÁP ÁN
-**PHẦN I:
+**GỢI Ý ĐÁP ÁN**
+**PHẦN I:**
 Câu 1: Cách giải: – Thể thơ của tác phẩm Mùa xuân nho nhỏ: 5 chữ.
 
 – Mạch cảm xúc: Bài thơ mở đầu bằng vẻ đẹp, sức sống của mùa xuân thiên nhiên. Tiếp đó là cảm xúc của tác về mùa xuân của đất nước. Sau đó là những ước nguyện chân thành, tha thiết của tác giả và cuối cùng là lời ngợi ca quê hương đất nước.
@@ -897,7 +897,7 @@ Câu 4: Cách giải:
 
 3. Tổng kết: Khái quát, tổng kết vấn đề.
 
-**PHẦN II:
+**PHẦN II:**
 Câu 1: Cách giải:
 
 – Học sinh có thể chỉ 1 trong 2 phép liên kết sau:

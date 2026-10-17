@@ -138,11 +138,11 @@ A) 0,24 mol B) 0,45 mol C) 0,69 mol D) 0,72 mol
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HOA 12-NGUYEN HIEN-DE 1](/assets/docs/HOA-12-NGUYEN-HIEN-DE-1.docx)
-- [HOA 12-NGUYEN HIEN-DE 2](/assets/docs/HOA-12-NGUYEN-HIEN-DE-2.docx)
-- [HOA 12-NGUYEN HIEN-DE 3](/assets/docs/HOA-12-NGUYEN-HIEN-DE-3.docx)
-- [HOA 12-NGUYEN HIEN-DE 4](/assets/docs/HOA-12-NGUYEN-HIEN-DE-4.docx)
-- [HOA 12-NGUYEN HIEN-DE TU LUAN](/assets/docs/HOA-12-NGUYEN-HIEN-DE-TU-LUAN.docx)
+- [HOA 12-NGUYEN HIEN-DE 1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HOA 12-NGUYEN HIEN-DE 2](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HOA 12-NGUYEN HIEN-DE 3](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HOA 12-NGUYEN HIEN-DE 4](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HOA 12-NGUYEN HIEN-DE TU LUAN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -21,9 +21,9 @@ grade: 11
 | ĐỀ CHÍNH THỨC |
 | --- |
 
-**Câu 1 (****4*** *điểm).**
+**Câu 1 (**4** *điểm).**
 
-**1.1.****(2,5 điểm).*** ***Xét cân bằng sau trong một bình kín: 
+**1.1.**(2,5 điểm).** **Xét cân bằng sau trong một bình kín: 
 
 Ở 8200C hằng số cân bằng .
 
@@ -35,13 +35,13 @@ c) Khi phản ứng đang ở trạng thái cân bằng, nếu biến đổi m�
 
 • Giảm nhiệt độ của phản ứng.
 
-• Nạp thêm khí CO2 vào****bình phản ứng.
+• Nạp thêm khí CO2 vào**bình phản ứng.
 
 • Thực hiện phản ứng trên trong bình có dung tích lớn hơn.
 
 • Lấy bớt một lượng CaCO3 ra khỏi bình phản ứng.
 
-**1****.2. (1,5 điểm).** Hỗn hợp gồm 1 mol H2 và 1 mol I2 được đốt nóng trong bình phản ứng có thể tích 30 lít đến nhiệt độ 4700C. Cho phản ứng: 
+**1**.2. (1,5 điểm).** Hỗn hợp gồm 1 mol H2 và 1 mol I2 được đốt nóng trong bình phản ứng có thể tích 30 lít đến nhiệt độ 4700C. Cho phản ứng: **
 
 Hãy tính:
 
@@ -51,7 +51,7 @@ b) Áp suất tổng cộng trong bình phản ứng.
 
 c) Nếu đưa tiếp vào hỗn hợp 1 mol H2, đến khi phản ứng đạt trạng thái cân bằng mới, hãy xác định số mol H2 còn lại trong bình phản ứng. 
 
-**Câu 2 (****5,5*** *điểm).**
+**Câu 2 (**5,5** *điểm).**
 
 **2.1. (2,75 điểm).** Cho sơ đồ chuyển hóa sau:
 
@@ -67,7 +67,7 @@ b) Hoàn thành các phương trình phản ứng theo sơ đồ chuyển hóa.
 
 2.3. (1 điểm). Trộn 400 gam một loại phân bón X có chứa a% muối (NH4)2HPO4 với 100 gam phân bón Y chứa b% KNO3, thu được hỗn hợp Z là một loại phân bón NPK (các chất còn lại trong X, Y không chứa N, P, K). Phân bón Z có độ dinh dưỡng theo đạm và kali lần lượt là 13,3% và 7,05%. Tính tỉ lệ a : b?
 
-**Câu 3 (****2,5*** *điểm).******Hợp chất hữu cơ (E) có các dữ liệu thực nghiệm sau:
+**Câu 3 (**2,5** *điểm).**Hợp chất hữu cơ (E) có các dữ liệu thực nghiệm sau:
 
 – Kết quả phân tích nguyên tố của (E) có 53,33% oxygen về khối lượng.
 
@@ -83,7 +83,7 @@ b) Dùng dung dịch NaOH 0,1 M với chất chỉ thị phenolphtalein để ch
 | --- | --- | --- | --- |
 | VNaOH (ml) | 4,25 | 4,30 | 4,20 |
 
-Chấp nhận sai số không đáng kể, các thành phần khác trong dung dịch X không ảnh hưởng đến kết quả chuẩn độ. Biết khối lượng riêng của dung dịch X là 1,05g/ml. Tính nồng độ phần trăm của chất E trong dung dịch X?****
+Chấp nhận sai số không đáng kể, các thành phần khác trong dung dịch X không ảnh hưởng đến kết quả chuẩn độ. Biết khối lượng riêng của dung dịch X là 1,05g/ml. Tính nồng độ phần trăm của chất E trong dung dịch X?**
 
 **Câu 4 (4,5 điểm).**
 
@@ -121,8 +121,8 @@ C**án bộ coi thi số 2**:  ………………………………………
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Dap-an-Hoa-11](/assets/docs/Dap-an-Hoa-11-giasu.ai.vn.docx)
-- [De-Hoa-11_2024](/assets/docs/De-Hoa-11_2024-giasu.ai.vn.docx)
+- [Dap-an-Hoa-11](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [De-Hoa-11_2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

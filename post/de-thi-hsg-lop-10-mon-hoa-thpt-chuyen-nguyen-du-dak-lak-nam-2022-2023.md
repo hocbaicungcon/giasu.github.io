@@ -151,8 +151,8 @@ Chữ ký của cán bộ coi thi 1: ………………………………; Chữ
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Nguyen-Du-Dak-Lak-De](/assets/docs/Nguyen-Du-Dak-Lak-De.doc)
-- [Nguyen-Du-Dak-Lak-DA](/assets/docs/Nguyen-Du-Dak-Lak-DA.docx)
+- [Nguyen-Du-Dak-Lak-De](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Nguyen-Du-Dak-Lak-DA](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

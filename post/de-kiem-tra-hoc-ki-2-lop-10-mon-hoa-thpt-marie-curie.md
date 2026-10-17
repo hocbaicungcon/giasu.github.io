@@ -88,8 +88,8 @@ Dẫn 0,784 lít khí SO2 (đktc) vào 200ml dung dịch KOH aM thì thu đượ
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HÓA- MArieCurie-HK II-Hóa-10A-17-18](/assets/docs/HOA-MArieCurie-HK-II-Hoa-10A-17-18.doc)
-- [HÓA- MArieCurie-HK II-Hóa-10D-17-18](/assets/docs/HOA-MArieCurie-HK-II-Hoa-10D-17-18.doc)
+- [HÓA- MArieCurie-HK II-Hóa-10A-17-18](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [HÓA- MArieCurie-HK II-Hóa-10D-17-18](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

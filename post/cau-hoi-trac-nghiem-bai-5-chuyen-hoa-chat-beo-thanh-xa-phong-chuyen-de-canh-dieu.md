@@ -16,25 +16,25 @@ grade: 12
 
 Câu hỏi trắc nghiệm bài 5 chuyển hóa chất béo thành xà phòng chuyên đề cánh diều
 
-**BÀI 5 : CHUYỂN HÓA CHẤT BÉO THÀNH XÀ PHÒNG
-**A. TÓM TẮT LÝ THUYẾT
-**1. Khái niệm xà phòng
+**BÀI 5 : CHUYỂN HÓA CHẤT BÉO THÀNH XÀ PHÒNG**
+**A. TÓM TẮT LÝ THUYẾT**
+**1. Khái niệm xà phòng**
      Xà phòng có thành phần chính là muối sodium hoặc potassium của acid béo, dùng để tẩy rửa, làm sạch các chất bản bám trên bề mặt vải, da tay, …
 
-**2. Phản ứng điều chế xà phòng
+**2. Phản ứng điều chế xà phòng**
      Phản ứng điều chế xà phòng từ dầu thực vật hoặc mỡ động vật xảy ra theo phương trình hoá học sau:
 
      Quá trình này được gọi là sự xà phòng hoá và muối sodium carboxylate thu được dùng để sản xuất xà phòng rắn. Người ta có thể thay thể dung dịch NaOH bằng dung dịch KOH và thu được các muối potassium dùng để sản xuất xà Xà phòng được sản xuất từ chất béo (các loại mỡ động vật, dầu thực vật), kiềm (sodium hydroxide hoặc potassium hydroxide) và chất phụ gia.
 
-**3. Nguyên liệu để điều chế xà phòng
+**3. Nguyên liệu để điều chế xà phòng**
      Mỡ động vật và dầu thực vật là những ester của glycerol và các acid béo.
 
-**a) Mỡ động vật
+**a) Mỡ động vật**
      Mỡ động vật phổ biến nhất là mỡ bò, mỡ cừu, mỡ lợn, mỡ cá,… Những loại mỡ động vật này có thành phần khác nhau nên có tính chất khác nhau.
 
 Chỉ số xà phòng hoá (Saponification value, viết tắt là SAP): Lượng KOH cẩn thiết (tính bằng milligam) để phản ứng hết với 1 gam dầu, mỡ theo phản ứng xà phòng hoá và trung hoà hết carboxylic acid tự do có trong dầu, mỡ. Ví dụ: Chỉ số xà phòng hoá của dầu olive là 190 có nghĩa là cần 190 milligam KOH để phản ứng hoàn toàn với 1 gam dầu, mỡ trong phản ứng xà phòng hoá và trung hoà acid tự do có trong dầu olive đó.
 
-**EM CÓ BIẾT
+**EM CÓ BIẾT**
      Cách tính lượng NaOH sử dụng cho phản ứng xà phòng hoá dựa vào chỉ số SAP.Trong kĩ thuật, để tínhlượng NaOH dùng cho phản ứng xà phòng hoá người ta xác định hệ số a.
 
 mNaOH = a.m chất béo
@@ -43,18 +43,18 @@ mNaOH = a.m chất béo
 
 = 0,1818 (g) mNaOH=0,1818.200=36,36g.
 
-**b) Dầu thực vật
+**b) Dầu thực vật**
      Bất cứ loại dầu thực vật nào cũng có thể được sử dụng để nấu xà phòng, như dầu dừa, dầu hướng dương, dầu lạc, dầu vừng, dầu hạt hướng dương, dầu lanh, dầu trẩu….
 
      Tuy nhiên, trong thực tế, người ta ít khi dùng dầu lanh và dầu trẩu cho phản ứng xà phòng hoá vì chúng là nguyên liệu có giá thành cao và được sử dụng trong ngành sản xuất sơn, mực in. Ngoài ra, trong các loại dầu này, hàm lượng các acid béo có độ không no cao (linoleic acid và linolenic acid) dễ bị oxi hoá trong quá trình chế biến và bảo quản khiến sản phẩm có mùi hôi, khét ảnh hưởng đến chất lượng xà phòng. Giống mỡ động vật, những loại dầu khác nhau thì có tính chất khác nhau.
 
-**c) Sodium hydroxide
+**c) Sodium hydroxide**
      Sodium hydroxide NaOH (xút ăn da) là nguyên liệu vô cơ chủ yếu trong phản ứng xà phòng hoá. Xút được cung cấp dưới hai dạng: rắn và dung dịch. Xút rắn bán ngoài thị trường thường ghi hàm lượng NaOH nguyên chất. Trong khi dạng dung dịch NaOH thường ghi nồng độ phần trăm hoặc nồng độ mol của dung dịch.
 
-**d) Sodium chloride
+**d) Sodium chloride**
      Sodium chloride (NaCl) được dùng nhiều trong công nghiệp sản xuất xà phòng, dưới dạng dung dịch bão hoà, với khối lượng riêng là 1,205 g mL. Dung dịch muối ăn được cho vào trong giai đoạn cuối của quá trình xà phòng hoá để tách xà phòng ra khỏi hỗn hợp sản phẩm.
 
-**e) Hương liệu và phẩm màu
+**e) Hương liệu và phẩm màu**
      Để xà phòng có mùi thơm và có màu sắc đẹp, người ta thường bổ sung các hương liệu và chất tạo màu vào giai đoạn cuối của quá trình sản xuất xà phòng.
 
      • Sử dụng tinh dầu là một trong những cách tạo hương thơm cho xà phòng dễ dàng nhất. Tuỳ thuộc vào sở thích và điều kiện thực tế, có thể sử dụng như tinh dầu  quế, oai hương, chanh, sả, bưởi, tràm trả, đỉnh hương, sài đất, hương nhu,…
@@ -63,9 +63,9 @@ mNaOH = a.m chất béo
 
 Lưu ý: Không nên sử dụng quá nhiều chất tạo màu và những chất có màu sắc thay đổi theo pH của môi trường.
 
-**4. Một số quy trình điều chế xà phòng
-     **a) Quy trình diều chế xà phòng không gia nhiệt
-**(phương pháp lạnh)
+**4. Một số quy trình điều chế xà phòng**
+     **a) Quy trình diều chế xà phòng không gia nhiệt**
+**(phương pháp lạnh)**
 **Bước 1.** Chuẩn bị các nguyên liệu Chuẩn bị các loại nguyên liệu cần thiết vả cân, đong nguyên liệu đảm bảo đúng lượng cần thiết. Các nguyên liệu cơ bản cần phải có dể làm xà phòng bao gồm chất béo từ dầu thực vật hoặc mỡ động vật, kiềm và nước.
 
 **Bước 2.** Phối trộn các nguyên liệu
@@ -78,7 +78,7 @@ Lưu ý: Không nên sử dụng quá nhiều chất tạo màu và những ch�
 
      Sau khi gỡ ra khỏi khuôn, xà phòng được cắt thành từng bánh nhỏ phù hợp với nhu cầu sử dụng trong thực tế. Tuy nhiên, xả phòng vẫn chưa sử dụng được ngay, mà cần tiếp tục được bảo quản ở nơi thoáng mát trong khoảng thời gian từ 6 – 7 tuần mới đạt đến chất lượng tốt nhất.
 
-**b) Quy trình điều chế xà phòng có gia nhiệt (phương pháp nóng)
+**b) Quy trình điều chế xà phòng có gia nhiệt (phương pháp nóng)**
 **Bước 1.** Chuẩn bị các nguyên liệu
 
 Các nguyên liệu cũng được chuẩn bị giống như trong quy trình sản xuất xà phòng không gia nhiệt. Các nguyên liệu được chuẩn bị theo đúng thành phần và khối lượng cần thiết.
@@ -89,33 +89,33 @@ Chất béo, kiềm và nước được trộn và khuấy đều cho đến kh
 
 **Bước 3.** Vào khuôn, định hình và thiết lập kết cấu sản phẩm Sau khi quá trình xà phòng hoàn tất, xà phòng trở nên rắn, được cho vào khuôn, rồi để nguội. Xà phòng thu được băng quy trình có gia nhiệt có thể dùng được luôn sau khi nấu.
 
-**5. Một số tiêu chỉ đánh giá chất lượng xà phòng
+**5. Một số tiêu chỉ đánh giá chất lượng xà phòng**
 Để đánh giá chất lượng sản phẩm xả phòng tạo thành theo Tiêu chuẩn Việt Nam (TCVN 1557 1991 về xà phòng bánh – phương pháp thử), có thể xây dựng một số tiêu chí đánh giá xà phòng dựa trên quan sát và trải nghiệm sản phẩm như dưới dây.
 
-**II. HOẠT ĐỘNG TRẢI NGHIỆM: THỰC HÀNH ĐIỀU CHẾ VÀ PHÒNG
-**1. Đề xuất vấn đề
+**II. HOẠT ĐỘNG TRẢI NGHIỆM: THỰC HÀNH ĐIỀU CHẾ VÀ PHÒNG**
+**1. Đề xuất vấn đề**
 • Em hãy nêu vai trò của xà phòng trong cuộc sống.
 
  • Em hãy cho biết nguồn nguyên liệu (ở địa phương) có sẵn có thể dùng để sản xuất xà phòng: dầu dừa, dầu cọ, dầu ăn, mỡ động vật,…
 
-**2. Xây dựng giả thuyết
+**2. Xây dựng giả thuyết**
 • Theo em nên chọn nguyên liệu gì để sản xuất xà phòng? Vì sao?
 
 • Trình bày quy trình sản xuất xà phòng (dụng cụ, dụng mối, nguyên liệu, thời gian,…).
 
 • Trong các tiêu chí đánh giá sản phẩm ở mục I.5, em có dụng được những tiêu chí nào để đánh giá sản phẩm? Làm thế nào để đánh giá được các tiêu chí đó? 
 
-**3. Lập kế hoạch thực hiện
+**3. Lập kế hoạch thực hiện**
 Tìm hiểu lựa chọn quy trình điều chế xà phòng. Phân tích các tiêu chí đánh giá sản phẩm để:
 
 • Xây dựng sơ đồ các bước thực hiện quy trình điều chế xà phòng; lựa chọn nguyên liệu, hoá chất, dụng cụ thí nghiệm, cách thức bố trí và phương pháp thí nghiệm,…
 
 • Lập kế hoạch triển khai quy trình thí nghiệm điều chế xà phòng.
 
-**4. Thực hiện thí nghiệm theo kế hoạch đã lập
+**4. Thực hiện thí nghiệm theo kế hoạch đã lập**
 Quan sát, ghi chép, thu thập các số liệu.
 
-**5. Báo cáo kết quả
+**5. Báo cáo kết quả**
 a) Báo cáo sau thực hành
 
 • Mục tiêu
@@ -134,8 +134,8 @@ a) Báo cáo sau thực hành
 
 Lắng nghe các ý kiến đóng góp, ý kiến đánh giá do người khác đưa ra để tiếp thu tích cực và giải trình, phản biện một cách thuyết phục. Hoàn thiện quy trình sản xuất xả phòng.
 
-**III. ĐÁNH GIÁ
-**1. Dựa trên các tiêu chí về sản phẩm
+### Iii. Đánh Giá
+**1. Dựa trên các tiêu chí về sản phẩm**
 Việc đánh giá sản phẩm dựa trên các tiêu chỉ sau:
 
  • Kết cấu bánh xà phòng.
@@ -150,17 +150,17 @@ Việc đánh giá sản phẩm dựa trên các tiêu chỉ sau:
 
 • Khả năng làm sạch.
 
-**2. Dựa trên kĩ năng thuyết trình/ Báo cáo và trả lời câu hỏi của thầy cô giáo và các học sinh khác
-**3. Các tiêu chí khác
+**2. Dựa trên kĩ năng thuyết trình/ Báo cáo và trả lời câu hỏi của thầy cô giáo và các học sinh khác**
+**3. Các tiêu chí khác**
  • Sự sáng tạo về hình thức (hình dạng, mẫu mã, bao bì,…) của sản phẩm.
 
  • Sự sáng tạo dựa trên màu sắc của sản phẩm.
 
  • Sự sáng tạo dựa trên mùi của sản phẩm.
 
-**B. BÀI TẬP TRẮC NGHIỆM
-**MỨC ĐỘ 1: BIẾT
-**Câu 1. Phát biểu nào sau đây đúng
+**B. BÀI TẬP TRẮC NGHIỆM**
+**MỨC ĐỘ 1: BIẾT**
+**Câu 1. Phát biểu nào sau đây đúng**
  **A.** Xà phòng có thành phần chính là muối sodium hoặc potassium của acid béo, dùng để tẩy rửa, làm sạch các chất bản bám trên bề mặt vải, da tay, …
 
  **B.** Xà phòng có thành phần chính là các acid béo, dùng để tẩy rửa, làm sạch các chất bản bám trên bề mặt vải, da tay, …
@@ -199,7 +199,7 @@ D. CH3(CH2)5O(CH2)5CH3.
 
  **D.** Đề hiđro hóa mỡ tự nhiên
 
-**Câu 5. Chỉ số xà phòng hoá là
+**Câu 5. Chỉ số xà phòng hoá là**
  **A.** Lượng KOH cần thiết (tính bằng gam) để phản ứng hết với 1 gam dầu, mỡ theo phản ứng xà phòng hoá và trung hoà hết carboxylic acid tự do có trong dầu, mỡ.
 
  **B.** Lượng KOH cẩn thiết (tính bằng kilogam) để phản ứng hết với 1 gam dầu, mỡ theo phản ứng xà phòng hoá và trung hoà hết carboxylic acid tự do có trong dầu, mỡ.
@@ -210,7 +210,7 @@ D. CH3(CH2)5O(CH2)5CH3.
 
 là nguyên liệu vô cơ chủ yếu trong phản ứng xà phòng hoá. Xút được cung cấp dưới hai dạng: rắn và dung dịch
 
-**Câu 6. Nguyên liệu nào sao đây là nguyên liệu vô cơ chủ yếu trong phản ứng xà phòng hoá
+**Câu 6. Nguyên liệu nào sao đây là nguyên liệu vô cơ chủ yếu trong phản ứng xà phòng hoá**
  **A.** Calxium hydroxide Ca(OH)2 .
 
  **B.** Sodium hydroxide NaOH.
@@ -221,43 +221,43 @@ là nguyên liệu vô cơ chủ yếu trong phản ứng xà phòng hoá. Xút 
 
 **Câu 7.** Chất **không** phải axit béo là
 
-**A.** axit axetic. **B.** axit stearic. **C.** axit oleic. **D.** axit panmitic.
+**A.** axit axetic. B.** axit stearic. **C.** axit oleic. D.** axit panmitic.
 
 **Câu 8.** Chất nào sau đây là axit béo?
 
-**A.** Panmitic acid.  **B.** Axetic acid.  **C.** Fomic acid.  **D.** Propionic acid.
+**A.** Panmitic acid.  B.** Axetic acid.  **C.** Fomic acid.  D.** Propionic acid.
 
 **Câu 9.** Công thức của axit oleic là
 
-**A.** C2H5COOH. **B.** C17H33COOH. **C.** HCOOH. **D.** CH3COOH.
+**A.** C2H5COOH. B.** C17H33COOH. **C.** HCOOH. D.** CH3COOH.
 
 **Câu 10.** Công thức stearic acid là
 
-**A.** C2H5COOH. **B.** CH3COOH. **C.** C17H35COOH. **D.** HCOOH.
+**A.** C2H5COOH. B.** CH3COOH. **C.** C17H35COOH. D.** HCOOH.
 
 **Câu 11.** Số nguyên tử hiđro trong phân tử oleic acid là
 
-**A.** 36. **B.** 31. **C.** 35. **D.** 34.
+**A.** 36. B.** 31. **C.** 35. D.** 34.
 
 **Câu 12.** Số nguyên tử cacbon trong phân tử panmitic acid là
 
-**A.** 17. **B.** 18. **C.** 19. **D.** 16.
+**A.** 17. B.** 18. **C.** 19. D.** 16.
 
 **Câu 13.** Số nguyên tử cacbon trong phân tử stearic acid là:
 
-**A.** 16. **B.** 15. **C.** 18. **D.** 19.
+**A.** 16. B.** 15. **C.** 18. D.** 19.
 
 **Câu 14.** Số nguyên tử hiđro trong phân tử stearic acid là
 
-**A.** 33.  **B.** 36. **C.** 34.  **D.** 31.
+**A.** 33.  B.** 36. **C.** 34.  D.** 31.
 
 **Câu 15.** Công thức nào sau đây có thể là công thức của chất béo?
 
-**A.** CH3COOCH2C6H5. **B.** C15H31COOCH3.
+**A.** CH3COOCH2C6H5. B.** C15H31COOCH3.**
 
-**C.** (C17H33COO)2C2H4. **D.** (C17H35COO)3C3H5.
+**C.** (C17H33COO)2C2H4. D.** (C17H35COO)3C3H5.**
 
-**MỨC ĐỘ 2 : HIỂU
+**MỨC ĐỘ 2 : HIỂU**
 **Câu 16:** Để thử tính tan của chất béo, người ta lấy mỗi lọ 5ml dầu ăn rồi lần lượt nhỏ vào 2 ống nghiệm a và b hai chất lỏng. Hiện tượng thí nghiệm như sau: ống nghiệm a và b có thể chứa chất nào sau đây.
 
 ######       A. a chứa nước, b chứa benzen
@@ -318,7 +318,7 @@ C. Vì trong bồ kết có những chất oxi hóa mạnh
 
 D. Vì bồ kết có những chất có cấu tạo kiểu đầu phân cực gắn với đuôi không phân cực
 
-**Câu 22.** Nguyên nhân nào sau đây người ta ít dùng dầu lanh và dầu trẩu khi thực hiện phản ứng xà phòng hoá là **không đúng
+**Câu 22.** Nguyên nhân nào sau đây người ta ít dùng dầu lanh và dầu trẩu khi thực hiện phản ứng xà phòng hoá là **không đúng**
  **A.** Chúng là nguyên liệu có giá thành cao.
 
  **B.** được sử dụng trong ngành sản xuất sơn, mực in
@@ -327,7 +327,7 @@ D. Vì bồ kết có những chất có cấu tạo kiểu đầu phân cực 
 
  **D.** Các acid béo trong 2 loại dầu này khó bị oxi hoá trong quá trình chế biến và bảo quản xà phòng.
 
-**Câu 23.** Nguyên nhân nào sau đây người ta ít dùng dầu lanh và dầu trẩu khi thực hiện phản ứng xà phòng hoá là **không đúng
+**Câu 23.** Nguyên nhân nào sau đây người ta ít dùng dầu lanh và dầu trẩu khi thực hiện phản ứng xà phòng hoá là **không đúng**
  **A.** Chúng là nguyên liệu có giá thành cao.
 
  **B.** được sử dụng trong ngành sản xuất sơn, mực in
@@ -348,16 +348,16 @@ D. Phản ứng thủy phân este trong môi trường kiềm.
 
 **Câu 25.** Xà phòng hóa hoàn toàn 17,8 gam chất béo X cần vừa đủ dung dịch chứa 0,06 mol NaOH. Cô cạn dung dịch sau phản ứng thu được m gam muối khan. Giá trị của m là
 
-**A.** 19,12. **B.** 18,36. **C.** 19,04. **D.** 14,68.
+**A.** 19,12. B.** 18,36. **C.** 19,04. D.** 14,68.
 
-**MỨC ĐỘ 3, 4: VẬN DỤNG – VẬN DỤNG CAO
+**MỨC ĐỘ 3, 4: VẬN DỤNG – VẬN DỤNG CAO**
 **Câu 26.** Muốn trung hòa 5,6 gam một chất béo X đó cần 6ml dung dịch KOH 0,1M. Hãy tính chỉ số axit của chất béo X và tính lượng KOH cần trung hòa 4 gam chất béo có Y chỉ số axit bằng 7.
 
 A. 5 và 14mg KOH                                                                                                                                                            B. 4 và 26mg KOH
 
 C. 3 và 56mg KOH                                                                                                                                                D. 6 và 28mg KOH
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
 Chỉ số axit 
 
 Trung hòa 4g chất béo cần mKOH = 4.7 = 28 (mg)
@@ -366,7 +366,7 @@ Trung hòa 4g chất béo cần mKOH = 4.7 = 28 (mg)
 
 A. 26,0                                                                                           B. 86,2                                                            C. 82,3                                                            D. 102,0
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
 Phản ứng: (C17H33COO)3C3H5 + 3I2 → (C17H33COOI2)3C3H5
 
 ⇒Chỉ số iot là:  = 86,2
@@ -375,7 +375,7 @@ Phản ứng: (C17H33COO)3C3H5 + 3I2 → (C17H33COOI2)3C3H5
 
 A. 175                                                        B. 168                                                                                     C. 184                                                                                                      D. 158
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
 Khối lượng KOH trung hòa axit: 0,007 (gam)
 
 nKOH =   = 0,125.10-3 (mol)
@@ -412,9 +412,9 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
-**A .** 4. **B.** 5. **C.** 2. **D.** 3.
+**A .** 4. **B.** 5. C.** 2. **D.** 3.**
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
 Bao gồm: 2, 3, 4, 5.
 
 (1) Sai vì lớp chất rắn màu trắng nổi lên là muối của axit béo (xà phòng).
@@ -449,9 +449,9 @@ Cho các phát biểu sau:
 
 Số phát biểu đúng là
 
-**A.** 3. **B.** 4. **C.** 5. **D.** 2.
+**A.** 3. B.** 4. **C.** 5. D.** 2.
 
-**Hướng dẫn giải
+**Hướng dẫn giải**
 Bao gồm: 1, 2, 3, 5.
 
 (1) Đúng.
@@ -466,7 +466,7 @@ Bao gồm: 1, 2, 3, 5.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [86.-Bai-5-chuyen-hoa-chat-beo-thanh-xa-phong-nguyen-phuc-tham.ok_](/assets/docs/86.-Bai-5-chuyen-hoa-chat-beo-thanh-xa-phong-nguyen-phuc-tham.ok_.docx)
+- [86.-Bai-5-chuyen-hoa-chat-beo-thanh-xa-phong-nguyen-phuc-tham.ok_](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

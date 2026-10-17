@@ -137,7 +137,7 @@ PPCT hóa 11 KNTT có chuyên đề học tập
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [PPCT-HOA-11-KNTT-co-CD](/assets/docs/PPCT-HOA-11-KNTT-co-CD.docx)
+- [PPCT-HOA-11-KNTT-co-CD](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ﻿
 

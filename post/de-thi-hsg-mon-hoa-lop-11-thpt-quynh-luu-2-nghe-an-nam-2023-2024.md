@@ -13,13 +13,13 @@ grade: 11
 
 Đề thi hsg môn hóa lớp 11 THPT Quỳnh Lưu 2 Nghệ An năm 2023 2024
 
-**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN             KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT
-**  TRƯỜNG THPT QUỲNH LƯU 2                                                              KHỐI 1 1 –  LẦN 1
+**SỞ GIÁO DỤC & ĐÀO TẠO NGHỆ AN             KỲ THI CHỌN HỌC SINH GIỎI TRƯỜNG CẤP THPT**
+**  TRƯỜNG THPT QUỲNH LƯU 2                                                              KHỐI 1 1 –  LẦN 1**
 | ĐỀ CHÍNH THỨC   |
 | --- |
 
-**                                                                                                                 NĂM HỌC 2023 – 2024
-**                                                                                                           Môn thi: HÓA HỌC
+**                                                                                                                 NĂM HỌC 2023 – 2024**
+**                                                                                                           Môn thi: HÓA HỌC**
  **Đề thi có 2 trang** *Thời gian làm bài 150 phút (không kể thời gian giao đề)
 *Nguyên tử khối: K = 39; Cl = 35,5; H = 1; O = 16; N = 14; Cu = 64; S = 32; Zn = 65; Na = 23; C = 12; Fe = 56; Ba = 137, P = 31
 **Câu 1:** ( 2 điểm)
@@ -110,7 +110,7 @@ Tính tổng khối lượng các muối khan thu được khi cô cạn dung d�
 
    **2.** Hòa tan hoàn toàn 1,42 gam hỗn hợp gồm carbon, phosphorus và sulfur trong 35 gam dung dịch HNO3 63%, thu được dung dịch X và 0,36 mol hỗn hợp khí chỉ gồm CO2 và NO2 (tỉ lệ mol tương ứng 1 : 8). Cho dung dịch X tác dụng tối đa với dung dịch chứa a mol Ba(OH)2, thu được m gam kết tủa. Tính a và m.
 
-**Câu 7:** (1 điểm)** Cho phản ứng:
+**Câu 7:** (1 điểm)** Cho phản ứng:**
 
       a) Xác định và gọi tên loại nhóm chức có mặt trong phân tử mỗi chất hữu cơ ở phản ứng trên.
 
@@ -120,14 +120,14 @@ Tính tổng khối lượng các muối khan thu được khi cô cạn dung d�
 
 - (b)
 
-**Câu 8:** (2 điểm)** Hình vẽ dưới đây mô tảthí nghiệm sinh ra khí C:
+**Câu 8:** (2 điểm)** Hình vẽ dưới đây mô tảthí nghiệm sinh ra khí C:**
 
  Hãy xác định chất rắn A, dung dịch B,  khí C (có thể có) trong thí nghiệm trên. Viết phương trình phản ứng minh họa. [các điều kiện khác (to) coi như có đủ].
 
-***— HẾT —
-***Họ và tên thí sinh: ………………………………. Số báo danh: …………………..
-**ĐÁP ÁN
-**Câu 1 *( 2 điểm)
+**— HẾT —**
+**Họ và tên thí sinh: ………………………………. Số báo danh: …………………..**
+**ĐÁP ÁN**
+**Câu 1 *( 2 điểm)**
 | Ý | Nội dung | Điểm |
 | --- | --- | --- |
 |   |  Do tổng số hạt Tổng số hạt proton, neutron và electron trong nguyên tử nguyên tố M là 58, trong đó số hạt mang điện nhiều hơn số hạt không mang điện là 18 nên ta có hệ phương trình  Vậy M là K | Oxide cao nhất của X có công thức là X2O7 nên công thức hợp chất hydride là HX Trong HX nguyên tố X chiếm 97,26% về khối lượng nên ta có phương trình   Vậy X là Cl |
@@ -137,7 +137,7 @@ Tính tổng khối lượng các muối khan thu được khi cô cạn dung d�
 |   | Công thức oxide cao nhất: K2O Công thức hydroxide tương ứng: KOH Chúng đều có tính base. | Công thức oxide cao nhất: Cl2O7 Công thức hydroxide tương ứng: HClO4 Chúng đều có tính acid |
 |   |  K   K+  + 1e Cl + 1e  Cl– Cl–   + K+    KCl (bản chất là lực hút tĩnh điện giữa các ion mang điện tích trái dấu | 0,25đ |
 
-**Câu  2 *( 3 ,0 điểm)
+**Câu  2 *( 3 ,0 điểm)**
 | Ý | Nội dung | Điểm |
 | --- | --- | --- |
 |  1 | 0   0         +2          -2     Cu + H2SO4 + O2 → CuSO4 + H2O             0         +2   Chất khử Cu Sự oxi hóa Cu → Cu + 2e x 2         0           -2   Chất oxi hóa O2 Sự khử O2 + 4e → 2O x 1 0   0           +2          -2     2Cu + 2H2SO4 + O2 → 2CuSO4 + 2H2O     |       0,375đ |
@@ -146,7 +146,7 @@ Tính tổng khối lượng các muối khan thu được khi cô cạn dung d�
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-11-Truong-Quynh-Luu-2-Nghe-An-File-De-HDC](/assets/docs/2023-2024-HSG-11-Truong-Quynh-Luu-2-Nghe-An-File-De-HDC.docx)
+- [2023-2024-HSG-11-Truong-Quynh-Luu-2-Nghe-An-File-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

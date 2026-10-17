@@ -30,7 +30,7 @@ Cho biết thời gian tính phép + là P, thời gian tính phép * là Q, ng�
 
 - Nếu X và Y là 2 biểu thức đủ; thời gian tính X là TX thời gian tính Y là TY thì thời gian tính
 
-**(X+Y) là max(TX,TY)+P** thời gian tính **(X*Y) là max(TX,TY)+Q
+**(X+Y) là max(TX,TY)+P** thời gian tính **(X*Y) là max(TX,TY)+Q**
 Từ 1 biểu thức đủ người ta có thể biến đổi về một biểu thức tương đương bằng các luật:
 
 - Giao hoán: (X+Y) ⇔ (Y+X); (X*Y) ⇔ (Y* X)
@@ -58,7 +58,7 @@ Với mỗi biểu thức E trong file PO.INP ghi ra file PO.OUT 3 dòng
 - Dòng thứ ba: Ghi thời gian tính toán E’
 
 *Chú ý: Để cho gọn, mỗi biểu thức đủ trong input/output file có thể viết mà không cần đến cặp dấu ngoặc ngoài cùng, dữ liệu vào được coi là đúng đắn và không cần kiểm tra.
-**Ví dụ:
+**Ví dụ:**
 ![150 bài Toán Tin 1](assets/images/150-bai-toan-tin-150-bai-toan-tin-01.jpg)
 
 ## 02. BẢNG SỐ
@@ -140,7 +140,7 @@ Kết quả: ghi ra file văn bản DAY.OUT
 
 - Các dòng tiếp theo ghi dãy m chỉ số các phần tử của dãy đã cho có mặt trong dãy con tìm được. Các chỉ số ghi cách nhau ít nhất một dấu trắng hoặc một dấu xuống dòng.
 
-***Ví dụ:*
+**Ví dụ:***
 | DAY.INP | DAY.OUT |
 | --- | --- |
 | 10 3 | 9 |
@@ -237,7 +237,7 @@ Xét văn bản T gồm N ký tự (N ≤ 1000000, N không cho trước) và v�
 
 Hai cửa sổ của T gọi là khác nhau nếu chúng bắt đầu từ những vị trí khác nhau trong T. Hãy xác định số cửa sổ khác nhau trong văn bản T chứa P.
 
-**Dữ liệu:
+**Dữ liệu:**
 - File văn bản INP
 
 - Dòng đầu chứa hai số nguyên W, M
@@ -246,7 +246,7 @@ Hai cửa sổ của T gọi là khác nhau nếu chúng bắt đầu từ nhữ
 
 - File TXT chứa văn bản T
 
-**Kết quả:
+**Kết quả:**
 Đưa ra file WINDOW.OUT một số nguyên xác định số cửa sổ tìm được theo yêu cầu.
 
 Lưu ý: Đa số trường hợp, file WINDOWT.TXT không phải là Text file, có nghĩa là nó chứa các ký tự trong khoảng  #0..#255 (file of Char). Như vậy tính cả CR(#13) và LF(#10)
@@ -397,7 +397,7 @@ Dữ liệu: vào từ file văn bản STONE.INP
 
 - Dòng thứ i trong số n dòng tiếp theo có dạng: i m i1 i2 … im. Trong đó m là số nút con của nút i; i1, i2, …, im: Các nút con của nút i.
 
-***Kết quả: đưa ra file STONE.OUT*** số lượng viên sỏi tối thiểu cần thiết
+**Kết quả: đưa ra file STONE.OUT** số lượng viên sỏi tối thiểu cần thiết
 
 ## 15.   ĐIỆP VIÊN
 
@@ -469,7 +469,7 @@ Kết quả: Ghi ra file văn bản STREDIT.OUT
 
 Cho một bảng ô vuông gồm m hàng và n cột. Các ô được đánh chỉ số theo (hàng, cột) từ (0, 0) đến (m – 1, n – 1). Trên m x n ô người ta viết các số tự nhiên từ 0 đến m x n – 1 theo một thứ tự tuỳ ý. Cho phép đổi chỗ hai số đặt trong hai ô ở thế mã giao chân. Cần tìm cách đổi chỗ các số sao cho thu được bảng có tính chất: **Số ở ô (i, j) là n x i + j**.
 
-***Dữ liệu vào từ file văn bản BOARD.INP:*** các số ghi trên 1 dòng cách nhau ít nhất 1 dấu trống.
+**Dữ liệu vào từ file văn bản BOARD.INP:** các số ghi trên 1 dòng cách nhau ít nhất 1 dấu trống.
 
 - Dòng đầu ghi 2 số m, n (5 ≤ m, n ≤ 80)
 
@@ -493,21 +493,21 @@ Ví dụ: Để đi thăm loại nghệ thuật B, Thủ tướng có thể đi:
 
 (1,1), (1,2), (1,3), (1,4), (1,5), (1,6), (2,6), (3,6), (4,6), (4,7), (4,8), (4,9), (4,10), (5,10), (6,10),(6,11).
 
-***Nhưng không phải luôn tồn tại đường đi như vậy, ví dụ : nếu Thủ tướng muốn đi thăm loại nghệ thuật A thì không thể tìm được một đường đi (Bởi cột 6 của bảng không có một chữ A nào).
+**Nhưng không phải luôn tồn tại đường đi như vậy, ví dụ : nếu Thủ tướng muốn đi thăm loại nghệ thuật A thì không thể tìm được một đường đi (Bởi cột 6 của bảng không có một chữ A nào).**
 Để có đường đi của vị thủ tướng đi thăm loại nghệ thuật A thì những người quản lý triển lãm phải tìm cách đổi loại nghệ thuật tại hai phòng nào đó. Trong ví dụ này thì để có đường đi chúng ta có thể đổi loại nghệ thuật B ở phòng (5,6) cho loại nghệ thuật A ở phòng (3,1) hoặc phòng (3,7), (3,8),
 
 …
 
 Trong những cách đổi đó, người ta thường quan tâm đến việc phải đổi sao cho tổng số phòng phải đổi là ít nhất có thể được. Trong những cách đổi với số cặp phòng phải đổi ít nhất hãy chỉ ra cách đổi mà con đường thủ tướng phải đi là ngắn nhất có thể được. Có thể có nhiều nghiệm thì chỉ cần chỉ ra một nghiệm.
 
-**Dữ liệu vào từ file văn bản TL.INP bao gồm:
+**Dữ liệu vào từ file văn bản TL.INP bao gồm:**
 - Dòng đầu tiên ghi số m, n
 
 - Dòng thứ hai ghi một chữ cái in hoa thể hiện loại nghệ thuật thủ tướng muốn thăm.
 
 - m dòng tiếp theo, dòng thứ i là một xâu ký tự độ dài n biểu diễn các loại nghệ thuật trong các phòng trên hàng i theo đúng thứ tự từ cột 1 đến cột n.
 
-**Kết quả cho ra file văn bản TL.OUT bao gồm:
+**Kết quả cho ra file văn bản TL.OUT bao gồm:**
 - Dòng đầu tiên là số cặp phòng cần đổi (p).
 
 - p dòng tiếp theo mỗi dòng gồm 4 số a, b, c, d có nghĩa là ta cần đổi loại nghệ thuật tại phòng (a,b) cho phòng (c,d).
@@ -520,7 +520,7 @@ Trong những cách đổi đó, người ta thường quan tâm đến việc p
 
 NO SOLUTION
 
-***Ví dụ: Với khu triển lãm như trên:
+**Ví dụ: Với khu triển lãm như trên:**
 | TL.INP | TL.OUT |
 | --- | --- |
 | 10 11 | 0 |
@@ -581,15 +581,15 @@ Ví dụ: Bản đồ đánh dấu và bản đồ mật độ tương ứng: (m
 
 ![150 bài Toán Tin 5](assets/images/150-bai-toan-tin-do-min.jpg)
 
-Về nguyên tắc, lúc cài bãi mìn phải vẽ cả bản đồ đánh dấu và bản đồ mật độ, tuy nhiên sau một thời gian dài, khi người ta muốn gỡ mìn ra khỏi bãi thì vấn đề hết sức khó khăn bởi bản đồ đánh dấu đã bị thất lạc !!. ***Công việc của các lập trình viên là: Từ bản đồ mật độ, hãy tái tạo lại bản đồ đánh dấu của bãi mìn.
-** Dữ liệu: Vào từ file văn bản MINE.INP, các số trên 1 dòng cách nhau ít nhất 1 dấu cách
+Về nguyên tắc, lúc cài bãi mìn phải vẽ cả bản đồ đánh dấu và bản đồ mật độ, tuy nhiên sau một thời gian dài, khi người ta muốn gỡ mìn ra khỏi bãi thì vấn đề hết sức khó khăn bởi bản đồ đánh dấu đã bị thất lạc !!. **Công việc của các lập trình viên là: Từ bản đồ mật độ, hãy tái tạo lại bản đồ đánh dấu của bãi mìn.
+** Dữ liệu: Vào từ file văn bản MINE.INP, các số trên 1 dòng cách nhau ít nhất 1 dấu cách**
 - Dòng 1: Ghi 2 số nguyên dương m, n (2 ≤ m, n ≤ 80)
 
 - m dòng tiếp theo, dòng thứ i ghi n số trên hàng i của bản đồ mật độ theo đúng thứ tự từ trái qua phải.
 
-**Kết quả: Ghi ra file văn bản MINE.OUT, các số trên 1 dòng ghi cách nhau ít nhất 1 dấu cách
+**Kết quả: Ghi ra file văn bản MINE.OUT, các số trên 1 dòng ghi cách nhau ít nhất 1 dấu cách**
 - Dòng 1: Ghi tổng số lượng mìn trong bãi
 
 - m dòng tiếp theo, dòng thứ i ghi n số trên hàng i của bản đồ đánh dấu theo đúng thứ tự từ trái qua phải.
 
-Các bài tiếp theo, mời bạn đọc tải tại đây [150 BAI TOAN TIN – LE MINH HOANG](/assets/docs/150-BAI-TOAN-TIN-LE-MINH-HOANG.pdf)
+Các bài tiếp theo, mời bạn đọc tải tại đây [150 BAI TOAN TIN – LE MINH HOANG](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

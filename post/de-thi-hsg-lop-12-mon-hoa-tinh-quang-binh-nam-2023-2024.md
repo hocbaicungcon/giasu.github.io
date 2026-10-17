@@ -124,7 +124,7 @@ Tính phần trăm về khối lượng của Z trong hỗn hợp E, biết các
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-12-Quang-Binh-HDC](/assets/docs/2023-2024-HSG-12-Quang-Binh-HDC-giasu.ai.vn.pdf)
+- [2023-2024-HSG-12-Quang-Binh-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

@@ -311,7 +311,7 @@ hiđrocacbon < anđehit, xeton, este < ancol < axit
 
 ## II. Link tải tài liệu ôn tập đầu năm Hoá 12
 
-GIA SƯ THÔNG MINH gửi các thầy cô và các em link download tài liệu [ÔN TẬP ĐÂU NĂM HÓA 12](/assets/docs/ON-TAP-DAU-NAM-HOA-12-1.pdf)
+GIA SƯ THÔNG MINH gửi các thầy cô và các em link download tài liệu [ÔN TẬP ĐÂU NĂM HÓA 12](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

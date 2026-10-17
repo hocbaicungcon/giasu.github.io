@@ -21,17 +21,17 @@ Quý thầy cô và các em học sinh tham khảo thêm
 
 - [ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN SỐ 4](/bai-viet/de-on-tap-tn-thpt-tieng-anh-co-dap-an-so-4.html)
 
-***Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.
+**Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.**
 **Question 1**. **A**. visited **B**. played **C**. hated **D**. needed
 
 **Question 2**. **A**. academic **B**. grade **C**. behave **D**. examination
 
-***Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of the primary stress in each of the following questions.
+**Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of the primary stress in each of the following questions.**
 **Question 3**. **A**. cartoon **B**. answer **C**. reason **D**. paper
 
 **Question 4**. **A**. survival **B**. industry **C**. endanger **D**. commercial
 
-***Mark the letter A, B, C or D to indicate the correct answer to each of the following questions.
+**Mark the letter A, B, C or D to indicate the correct answer to each of the following questions.**
 **Question5**. Neither of the boys came to school yesterday, ________? 
 
 **A**. didn’t they  **B**. does they  **C**. did they  **D**. doesn’t they
@@ -100,7 +100,7 @@ Quý thầy cô và các em học sinh tham khảo thêm
 
 **A**. omen **B**. premonition **C**. foreboding **D**. prediction
 
-***Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.
+**Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.**
 **Question 20**. Emissions from factories and exhaust fumes from vehicles can have **detrimental** effects on our health. 
 
 **A**. beneficial **B**. neutral **C**. needy **D**. harmful
@@ -109,7 +109,7 @@ Quý thầy cô và các em học sinh tham khảo thêm
 
 **A**. luxurious  **B**. economical  **C**. sensible  **D**. miserable
 
-***Mark the letter A, B, C or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.
+**Mark the letter A, B, C or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.**
 **Question 22**. His physical condition was not an **impediment** to his career as a violinist. He has won a lot of prizes. 
 
 **A**. advantage **B**. obstacle **C**. barrier **D**. disadvantage
@@ -118,7 +118,7 @@ Quý thầy cô và các em học sinh tham khảo thêm
 
 **A**. get into trouble  **B**. stay safe  **C**. fall into disuse  **D**. keep calm
 
-***Mark the letter A, B, C, or D to indicate the sentence that best completes each of the following exchanges.
+**Mark the letter A, B, C, or D to indicate the sentence that best completes each of the following exchanges.**
 **Question 24**. *Nam and Lan are talking about the jobs which only men or women can do*. 
 
 – Nam: “Do you think that there are any jobs which only men or only women can or should do?”
@@ -143,7 +143,7 @@ Quý thầy cô và các em học sinh tham khảo thêm
 
 **C**. You can borrow books from the library.  **D**. You mean the podcasts from other students?
 
-***Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each the numbered blanks.
+**Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each the numbered blanks.**
 The first thing that is included in the “living together” (26) ________ is the expected good relations with your family. This also involves sharing equally the housework. (27) ________of people think that everyone should share the housework equally, but in many homes parents do most of it. To certain minds, many families can’t share the housework whereas they should try it. In fact, sharing the housework equally is not very possible because of the families’ timetable. So, it is somehow believed that children and parents must do things together. For this they can establish a housework planning.
 
 (28) ________, housework’s contributions of the teenager make him more responsible. He will think that he has an important role in his family. According to researchers, teenagers should share the housework because (29) ________ will help them when they have to establish their own family in the future. Too many teenagers and young adults leave home without knowing how to cook or clean, but if parents delegate basic housework to teens as they are old enough to do it, they won’t be destabilized by doing the housework in their new grown-up life.
@@ -161,7 +161,7 @@ It can be (30) ________concluded that many parents don’t really prepare their 
 
 **Question30**. **A**. likely **B**. probably **C**. auspiciously **D**. possibly
 
-***Read the following passage and mark the letter A, B, C, or D to indicate the answer to each of the question.
+**Read the following passage and mark the letter A, B, C, or D to indicate the answer to each of the question.**
 Vietnam’s population is ageing quickly. In 2017, more than 10 per cent of the population will be 60 and older, and in 15-20 years the elderly will account for one third of the total population. This raises concerns about healthcare, welfare and pensions for the elderly at a time when Vietnam is focusing on economic integration and requires a large labor force. So far two solutions have been proposed: to loosen the two-child policy and to increase the retirement age to 58 for women and 62 for men. By ending the two-child policy the government expects to make up for the ageing population within the next 20 years. But **its** effect could be creating an uncontrollable boom in the Vietnamese population. When the government loosened the two-child policy in 2015 in a trial period, in the first 6 months of 2016 the third child birth rate increased remarkably by 7.5 per cent
 
 Raising the retirement age has been proposed by the Ministry of Labor pending parliamentary evaluation in May 2017. While the policy is beneficial in utilizing the work experience of the elderly while creating savings in the pension budget, it also means fewer job prospects and promotion opportunities for younger generations. It is also not in the interest of all the elderly, especially the 70 per cent of Vietnam’s labor force working in manual labor-intensive sectors such as agriculture, manufacturing and construction where working above the age of 50 can be dangerous and unproductive. Despite these drawbacks, raising the retirement age is still considered by policymakers as one of the key solutions to the ageing population problem in Vietnam. However, these are only **temporary** solutions.
@@ -200,7 +200,7 @@ Raising the retirement age has been proposed by the Ministry of Labor pending pa
 
 **A**. constant **B**. permanent **C**. short-term **D**. long-term
 
-***Read the following passage and mark the letter A, B, C, or D to indicate the answer to each of the question.
+**Read the following passage and mark the letter A, B, C, or D to indicate the answer to each of the question.**
 Coral reefs are some of the most diverse ecosystems in the world, housing tens of thousands of marine species. With their hardened surfaces, corals are sometimes mistaken as being rocks. And, because they are attached, “taking root” to the seafloor, they are often mistaken for plants. However, unlike rocks, corals are alive. And unlike plants, corals do not make their own food. Corals are in fact animals. Appearing as **solitary** forms in the fossil record more than 400 million years ago, corals are extremely ancient animals that evolved into modern reef-building forms over the last 25 million years.
 
 Coral reefs are the largest structures on earth of biological origin. Coral reefs are unique and complex systems. **Rivaling** old growth forests in longevity of their ecological communities, well-developed reefs reflect thousands of years of history.
@@ -264,7 +264,7 @@ There are over 2,500 kinds (species) of corals. About 1,000 are the hard corals 
 
 **D**. Because it is one kind of 1,000 hard corals that protect the shoreline. 
 
-***Mark the letter A, B, C or D to indicate the underlined part that needs correction in each of the following questions.
+**Mark the letter A, B, C or D to indicate the underlined part that needs correction in each of the following questions.**
 **Question 43**. The composer Verdi has written the opera Aida to celebrate the opening of the Suez Canal, 
 
 but the opera was not performed until 1871.
@@ -279,7 +279,7 @@ but the opera was not performed until 1871.
 
 **A**. office buildings **B**. false ﬂoors **C**. which **D**. can be lain
 
-***Mark the letter A, B, C, or D to indicate the sentence that is closest in meaning to each of the following questions.
+**Mark the letter A, B, C, or D to indicate the sentence that is closest in meaning to each of the following questions.**
 **Question 46**. It is over twenty years since I last got in touch with them. 
 
 **A**. I can’t help keeping getting in touch with them for over 20 years. 
@@ -302,7 +302,7 @@ but the opera was not performed until 1871.
 
 **C**. Joanna mightn’t have received my message.  **D**. Joanna can’t have received my message.
 
-***Mark the letter A, B, C, or D to indicate the sentence that best combines each pair of sentences in the following questions.
+**Mark the letter A, B, C, or D to indicate the sentence that best combines each pair of sentences in the following questions.**
 **Question 49**. Peter moved abroad for a fresh start. He regrets it now. 
 
 **A**. Peter wishes he hadn’t moved abroad for a fresh start. 
@@ -371,7 +371,7 @@ THE END
 | – Đảo ngữ | 1 |  |  | x |  |  |  |
 | Tổng | 50 | 15 | 15 | 14 | 6 |  |  |
 
-**ĐÁP ÁN
+**ĐÁP ÁN**
 | 1. B | 6. C | 11. B | 16. A | 21. B | 26. C | 31. A | 36. B | 41. C | 46. B |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2. A | 7. C | 12. B | 17. C | 22. A | 27. A | 32. D | 37. A | 42. C | 47. C |
@@ -379,8 +379,8 @@ THE END
 | 4. B | 9. C | 14. C | 19. B | 24. B | 29. C | 34. B | 39. D | 44. D | 49. A |
 | 5. C | 10. A | 15. A | 20. D | 25. C | 30. D | 35. C | 40. A | 45. D | 50. C |
 
-**ĐỀ SỐ 3 – ĐÁP ÁN CHI TIẾT
-**Question 1**. **Đáp án:B
+**ĐỀ SỐ 3 – ĐÁP ÁN CHI TIẾT**
+**Question 1**. **Đáp án:B**
 Kiến thức : Phát âm đuôi – ED
 
 Giải thích:
@@ -393,7 +393,7 @@ Giải thích:
 
 Vậy đáp án là B
 
-**Question 2**. **Đáp án: A
+**Question 2**. **Đáp án: A**
 Kiến thức : Phát âm nguyên âm
 
 Giải thích:
@@ -408,7 +408,7 @@ C. behave /bɪˈheɪv/ (v) cư xử
 
 D. examination /ɪɡˌzæmɪˈneɪʃn/ (n) kì thi
 
-**Question 3**. **Đáp án: A
+**Question 3**. **Đáp án: A**
 Kiến thức : Trọng âm của từ 2 âm tiết
 
 Giải thích:
@@ -423,7 +423,7 @@ D. paper /ˈpeɪpə(r)/: Từ này trọng âm rơi vào âm tiết thứ nhất
 
 => Phương án A trọng âm rơi vào âm tiết thứ hai, các phương án còn lại trọng âm rơi vào âm tiết thứ nhất.
 
-**Question 4**. **Đáp án: B
+**Question 4**. **Đáp án: B**
 Kiến thức : Trọng âm của từ 3 âm tiết 
 
 Giải thích:
@@ -436,7 +436,7 @@ C. endanger / ɪnˈdeɪndʒ/ (adj): Trọng âm rơi vào âm tiết thứ 2 vì
 
 D. commercial / kəˈmɜːʃl / (adj): Trọng âm rơi vào âm tiết thứ 2 vì đuôi –cial trọng âm rơi vào âm tiết trước nó.
 
-**Question5**. **Đáp án :C
+**Question5**. **Đáp án :C**
 Kiến thức: câu hỏi đuôi
 
 Giải thích: 
@@ -457,7 +457,7 @@ Với những câu hỏi về câu hỏi đuôi nếu mệnh đề chính không
 
 Tạm dịch: Không một ai trong hai cậu bé này đến trường vào ngày hôm qua có phải không?
 
-**Question 6**. **Đáp án: C
+**Question 6**. **Đáp án: C**
 Kiến thức : Thể bị động
 
 Giải thích: 
@@ -470,7 +470,7 @@ Vậy đáp án đúng: C
 
 Tạm dịch: Người ta cho rằng các nhà máy điện hạt nhân mới được thiết kế để an toàn hơn các nhà máy hiện tại sẽ sớm được xây dựng.
 
-**Question 7**. **Đáp án:C
+**Question 7**. **Đáp án:C**
 Kiến thức : giới từ
 
 Giải thích: 
@@ -479,7 +479,7 @@ Khi muốn nói theo một cách nào đó ta dùng cụm giới từ in ….way
 
 Tạm dịch: Truyền hình có thể khiến mọi thứ trở nên đáng nhớ vì nó trình bày thông tin theo một cách hiệu quả.
 
-**Question 8**. **Đáp ánA
+**Question 8**. **Đáp ánA**
 Kiến thức : So sánh kép
 
 Giải thích: 
@@ -494,14 +494,14 @@ Xét các đáp án:
 
 Tạm dịch: Bạn càng học chăm chỉ cho những bài thi này, bạn làm bài càng tốt.
 
-**Question 9**. **Đáp án: C
+**Question 9**. **Đáp án: C**
 Kiến thức : Trật tự tính từ
 
 Giải thích: Vị trí của tính từ trước danh từ: Opinion (quan điểm) – beautiful + Color (màu sắc) – yellow + Material (chất liệu) – silk + Noun (danh từ) 
 
 Tạm dịch:Chồng cô đã mua cho cô chiếc khăn lụa màu vàng tuyệt đẹp khi anh đi nghỉ ở Singapore tuần trước. 
 
-**Question 10**. **Đáp án A
+**Question 10**. **Đáp án A**
 Kiến thức : Thì của động từ và sự phối hợp các thì 
 
 Giải thích:
@@ -514,7 +514,7 @@ Trong quá khứ, một sự việc đang diễn ra thì sự việc khác xen v
 
 **Tạm dịch:** Tối qua, khi Carol gọi thì tôi đang xem chương trình yêu thích của mình trên tivi. 
 
-**Question 11**. **Đáp ánB
+**Question 11**. **Đáp ánB**
 Kiến thức : Liên từ
 
 Giải thích:
@@ -545,7 +545,7 @@ Phân biệt Instead of và Rather than:
 
  
 
-**Question 12**. **Đáp án B
+**Question 12**. **Đáp án B**
 Kiến thức : Mệnh đề thời gian
 
 Giải thích : 
@@ -556,7 +556,7 @@ Dấu hiệu nhận biết: By + mốc thời gian trong tương lai/ hành đ�
 
 Tạm dịch: Vào trước thứ bảy tới, Tom sẽ trải qua cả tháng không hút thuốc lá
 
-**Question 13**. **Đáp án: A
+**Question 13**. **Đáp án: A**
 Kiến thức : Rút gọn mệnh đề trạng ngữ
 
 Giải thích :
@@ -569,7 +569,7 @@ Câu rút gọn: **Discovered** in large quantities in the Middle East, oil beca
 
 **Tạm dịch:** Được phát hiện với số lượng lớn ở Trung Đông, dầu được gọi là vàng đen vì lợi nhuận lớn mà nó mang lại. 
 
-**Question 14**. **Đáp án C
+**Question 14**. **Đáp án C**
 Kiến thức : Từ loại
 
 Giải thích : Chỗ trống cần 1 tính từ vì tính từ đứng sau các đại từ bất định như : something, anything, somebody, anybody …
@@ -584,7 +584,7 @@ D. constructor /kənˈstrʌktə(r)/ (n): kỹ sư xây dựng
 
 Tạm dịch: Nếu bạn không thể nói gì mang tính xây dựng, tốt hơn là bạn không nên nói gì cả.
 
-**Question 15**. **Đáp án A
+**Question 15**. **Đáp án A**
 Kiến thức : Cụm động từ
 
 Giải thích: 
@@ -599,7 +599,7 @@ D. go up (phr.v): tăng lên
 
 Tạm dịch: Còn nhiều vấn đề khác về cuộc sống thành thị cái mà tôi không muốn đi vào sâu để thảo luận kỹ ngay lúc này.
 
-**Question 16**. **Đáp án: A
+**Question 16**. **Đáp án: A**
 Kiến thức: Cụm từ cố định
 
 Giải thích: 
@@ -614,7 +614,7 @@ Cấu trúc khác cần lưu ý:
 
 + Catch a glimpse of sb = catch sight of sb = see for a moment (coll): nhìn lướt qua, nhìn thoáng qua nhanh chỉ trong chốc lát
 
-**Question 17**. **Đáp ánC
+**Question 17**. **Đáp ánC**
 Kiến thức : Thành ngữ
 
 Giải thích:
@@ -627,7 +627,7 @@ throw out the baby with the bathwater: vứt bỏ cái gì đó quý báu cùng 
 
 Tạm dịch: Đôi khi trong những tình huống tồi tệ thì vẫn có những điều tốt đẹp. Cố gắng đừng vứt đi những thứ đáng giá chỉ vì những thứ ta không thích.
 
-**Question 18**. **Đáp ánD
+**Question 18**. **Đáp ánD**
 Kiến thức : Từ vựng
 
 Giải thích:
@@ -646,7 +646,7 @@ D. Damage /ˈdæm.ɪdʒ/ (n): sự hư hại, sự phá hoại
 
 Tạm dịch: Cơn bão đã gây ra rất nhiều thiệt hại cho ngôi làng của chúng tôi. Tất cả các vụ mùa đã bị tàn phá một cách nặng nề và rất nhiều ngôi nhà đã bị cuốn trôi. 
 
-**Question 19**. **Đáp án:B
+**Question 19**. **Đáp án:B**
 Kiến thức: từ vựng
 
 Giải thích: 
@@ -669,7 +669,7 @@ Cấu trúc khác cần lưu ý:
 
 withdraw from st: rút lui khỏi cái gì
 
-**Question 20**. **Đáp ánD
+**Question 20**. **Đáp ánD**
 Kiến thức : Đồng nghĩa – trái nghĩa
 
 Giải thích:
@@ -682,7 +682,7 @@ Giải thích:
 
 Dịch: Khí thải từ các nhà máy và các phương tiện đi lại có thể tác động có hại đến sức khỏe của chúng ta.
 
-**Question 21**. **Đáp án B
+**Question 21**. **Đáp án B**
 Kiến thức : Đồng nghĩa – trái nghĩa
 
 Giải thích:
@@ -695,7 +695,7 @@ Sensible (adj): hợp lý Miserable (adj): khổ sở, phiền muộn
 
 Tạm dịch: Bằng việc tiết kiệm và mua bán thông minh, các bà nội trợ ở thành phố có thể nuôi cả gia đình chỉ với 500.000 đồng mỗi tuần
 
-**Question 22**. **Đáp án A
+**Question 22**. **Đáp án A**
 Kiến thức : Đồng nghĩa – trái nghĩa
 
 Giải thích:
@@ -708,7 +708,7 @@ C. barrier (n): thanh chắn D. disadvantage (n): bất lợi
 
 Tạm dịch. Tình trạng thể chất của anh ấy không phải là một trở ngại cho sự nghiệp là một nghệ sỹ chơi vĩ cầm của mình. Anh ấy đã dành được rất nhiều giải thưởng
 
-**Question 23**. **Đáp án B
+**Question 23**. **Đáp án B**
 Kiến thức : Đồng nghĩa – trái nghĩa
 
 Giải thích:
@@ -721,7 +721,7 @@ Giải thích:
 
 Dịch: Tom có thể gặp rắc rối khi lái xe quá tốc độ sau khi uống rượu.
 
-**Question 24**. **Đáp án B
+**Question 24**. **Đáp án B**
 Kiến thức : Giao tiếp
 
 Giải thích: Nam và Lan đang nói chuyện về một số công việc chỉ có nam giới hoặc nữ giới có thể làm hoặc nên làm.
@@ -738,7 +738,7 @@ C. Đàn ông và phụ nữ nên hợp tác lẫn nhau.
 
 D. Đàn ông thường được ủng hộ trong một số nghề nghiệp nhất định.
 
-**Question 25**. **Đáp ánC
+**Question 25**. **Đáp ánC**
 Kiến thức : Giao tiếp
 
 Giải thích: 
@@ -755,7 +755,7 @@ C. Em có thể mượn sách từ thư viện.
 
 D. Ý em là những bản audio từ những học sinh khác? 
 
-**Question 26: Đáp ánC
+**Question 26: Đáp ánC**
 Kiến thức : Đọc điền từ
 
 Giải thích: 
@@ -772,7 +772,7 @@ Thông tin: “The first thing that is included in the “living together” (26
 
 Tạm dịch: Điều đầu tiên được bao gồm trong quan niệm “sống chung” là niềm mong đợi về các mối quan hệ tốt đẹp trong gia đình bạn. 
 
-**Question 27: Đáp ánA
+**Question 27: Đáp ánA**
 Kiến thức : Đọc điền từ
 
 Giải thích: 
@@ -781,7 +781,7 @@ Thông tin: (27) __**Lots**__of people think that everyone should share the hous
 
 Tạm dịch: Nhiều người nghĩ rằng mỗi thành viên nên chia sẻ việc nhà một cách đồng đều cho nhau, nhưng trong nhiều gia đình thì cha mẹ làm hầu hết mọi việc.
 
-**Question 28: Đáp ánA
+**Question 28: Đáp ánA**
 Kiến thức : Đọc điền từ
 
 Giải thích: 
@@ -796,7 +796,7 @@ Tạm dịch: Theo nhiều quan điểm nhất định, nhiều gia đình khôn
 
 Vì hai đoạn văn nối với nhau có ý tưởng trợ, bổ sung lẫn nhau nên ta chọn A. 
 
-**Question 29: Đáp ánC
+**Question 29: Đáp ánC**
 Kiến thức : Đọc điền từ
 
 Giải thích: 
@@ -809,7 +809,7 @@ Nhận thấy câu có ba vế có chủ vị rõ ràng được nối với nha
 
 Người ta dùng đại từ chỉ định “that” để thay thế cho điều đã nói phía trước khi họ không muốn lặp lại câu đó bởi sẽ làm câu nói lủng củng, rườm rà. 
 
-**Question 30: Đáp ánD
+**Question 30: Đáp ánD**
 Kiến thức : Đọc điền từ
 
 Giải thích: 
@@ -836,7 +836,7 @@ Cấu trúc cần lưu ý:
 
 -Run a house: quán xuyến việc nhà
 
-**Question 31**. **Đáp án: A
+**Question 31**. **Đáp án: A**
 Kiến thức : Đọc hiểu
 
 Giải thích: Tiêu đề tốt nhất cho đoạn văn này có thể là _________.
@@ -851,7 +851,7 @@ D. Cách giải quyết vấn đề già hóa dân số ở Việt Nam
 
 Căn cứ vào thông tin toàn bài: “chính sách 2 con; tăng tuổi nghỉ hưu; cách giải quyết vấn đề già hóa dân số” đều được đề cập trong bài nhưng chưa bao quát toàn bài. => Đáp án A.
 
-**Question 32**. **Đáp án: D
+**Question 32**. **Đáp án: D**
 Kiến thức : Đọc hiểu
 
 Giải thích: Phát biểu nào có lẽ là ĐÚNG theo thông tin trong đoạn văn 1?
@@ -868,7 +868,7 @@ Thông tin: “in 15-20 years the elderly will account for one third of the tota
 
 Tạm dịch: …trong 15- 20 năm nữa, người cao tuổi sẽ chiếm một phần ba tổng dân số. Điều này làm tăng mối lo ngại về chăm sóc sức khỏe, phúc lợi và lương hưu cho người cao tuổi tại thời điểm Việt Nam đang tập trung vào hội nhập kinh tế và đòi hỏi một lực lượng lao động lớn.
 
-**Question 33**. **Đáp án: A
+**Question 33**. **Đáp án: A**
 Kiến thức : Đọc hiểu
 
 Giải thích: Từ “its” trong đoạn 1 thay thế cho từ _________.
@@ -881,7 +881,7 @@ Thông tin: By ending the two-child policy the government expects to make up for
 
 Tạm dịch: Bằng cách chấm dứt chính sách hai con, chính phủ hy vọng sẽ bù đắp cho dân số già trong vòng 20 năm tới. Nhưng hiệu quả của nó có thể tạo ra sự bùng nổ không thể kiểm soát trong dân số Việt Nam.
 
-**Question 34**. **Đáp án: B
+**Question 34**. **Đáp án: B**
 Kiến thức : Đọc hiểu
 
 Giải thích: Trong đoạn 2, tác giả gợi ý rằng _________.
@@ -898,7 +898,7 @@ Thông tin: While the policy is beneficial in utilizing the work experience of t
 
 Tạm dịch: Mặc dù chính sách này có lợi trong việc sử dụng kinh nghiệm làm việc của người cao tuổi trong khi tạo ra các khoản tiết kiệm trong ngân sách lương hưu, nhưng điều đó cũng có nghĩa là ít triển vọng việc làm và cơ hội thăng tiến cho thế hệ trẻ.
 
-**Question 35**. **Đáp án: C
+**Question 35**. **Đáp án: C**
 Kiến thức : Đọc hiểu
 
 Giải thích: Từ “ temporatory” trong đoạn 2 có nghĩa là _________.
@@ -913,7 +913,7 @@ Thông tin: Despite these drawbacks, raising the retirement age is still conside
 
 Tạm dịch: Bất chấp những hạn chế này, việc tăng tuổi nghỉ hưu vẫn được các nhà hoạch định chính sách coi là một trong những giải pháp chính cho vấn đề dân số giờ ở Việt Nam. Nhưng đây chỉ là những giải pháp tạm thời.
 
-**Question 36: Đáp án B
+**Question 36: Đáp án B**
 Kiến thức : Đọc hiểu
 
 Giải thích: Câu nào sau đây thể hiện chính xác nhất mục đích chính của tác giả trong bài đọc?
@@ -930,7 +930,7 @@ Căn cứ vào thông tin toàn bài:
 
 Bài đọc cung cấp cho chúng ta toàn bộ thông tin về loài san hô, từ cấu tạo (đoạn 2, 3), nơi sinh sống (đoạn 4) và các loại san hô (đoạn cuối). 
 
-**Question 37: Đáp án A
+**Question 37: Đáp án A**
 Kiến thức : Đọc hiểu
 
 Giải thích: Từ “solitary” trong đoạn đầu có thể được thay thế bởi từ _______.
@@ -943,7 +943,7 @@ Từ đồng nghĩa: solitary (đơn độc, riêng lẻ) = single
 
 Thông tin: Appearing as solitary forms in the fossil record more than 400 million years ago, corals are extremely ancient animals that evolved into modern reef-building forms over the last 25 million years. Tạm dịch: Xuất hiện dưới dạng đơn độc trong hồ sơ hóa thạch cách đây hơn 400 triệu năm, san hô là loài động vật cực kì cổ xưa đã tiến hóa thành các rạn san hô hiện nay trong 25 triệu năm qua. 
 
-**Question 38: Đáp án B
+**Question 38: Đáp án B**
 Kiến thức : Đọc hiểu
 
 Giải thích: Từ “rivaling” trong đoạn 2 gần nghĩa nhất với từ __________.
@@ -958,7 +958,7 @@ Thông tin: Rivaling old growth forests in longevity of their ecological communi
 
 Tạm dịch: Ví như những khu rừng tồn tại lâu đời trong cộng đồng sinh thái của chúng, các rặng san hô phát triển tốt cũng phản chiếu hàng ngàn năm lịch sử. 
 
-**Question 39: Đáp án D
+**Question 39: Đáp án D**
 Kiến thức : Đọc hiểu
 
 Giải thích: Theo đoạn văn, các câu sau đây là đúng về dải san hô ngầm, ngoại trừ __________.
@@ -979,7 +979,7 @@ Thông tin 3: The polyp uses calcium carbonate (limestone) from seawater to buil
 
 Thông tin 4: The polyps extend their tentacles at night to sting and ingest tiny organisms called plankton and other small creatures. (Đoạn 3) (Các sinh vật đơn bào dạng ống mở rộng các xúc tu vào ban đêm để chích và tiêu thụ các sinh vật nhỏ xíu được gọi là sinh vật phù du và các sinh vật nhỏ khác). 
 
-**Question 40: Đáp án A
+**Question 40: Đáp án A**
 Kiến thức : Đọc hiểu
 
 Giải thích: Với sự giúp sức của rất nhiều loài tảo nhỏ bé, các rạn san hô _________.
@@ -996,7 +996,7 @@ Thông tin: Various types of microscopic algae, known as Symbiodinium, live insi
 
 Tạm dịch: Nhiều loài tảo nhỏ, được biết đến là Symbiodinium, sống bên trong san hô, cung cấp cho chúng thức ăn và giúp chúng phát triển nhanh hơn. 
 
-**Question 41: Đáp án C
+**Question 41: Đáp án C**
 Kiến thức : Đọc hiểu
 
 Giải thích: Từ “they” trong đoạn cuối đề cập đến từ nào?
@@ -1011,7 +1011,7 @@ Tạm dịch: Có 3 loại rạn san hô là rạn san hô gần bờ, rạn san
 
 Vậy, “they” ở đây là rạn san hô gần bờ. 
 
-**Question 42: Đáp án C
+**Question 42: Đáp án C**
 Kiến thức : Đọc hiểu
 
 Giải thích: Như được nhắc đến trong đoạn cuối, tại sao một rạn san hô lại được gọi là “barrier reef”?
@@ -1028,7 +1028,7 @@ Thông tin đoạn cuối: Any reef that is called a barrier reef gets its name 
 
 Tạm dịch: Bất kì rạn san hô nào được gọi tên là “barrier reef” là bởi vì sự tồn tại của chúng bảo vệ các vùng biển cạn dọc các bờ biển khỏi biển khơi.
 
-**Question 43: Đáp án: A
+**Question 43: Đáp án: A**
 Kiến thức: Thì của động từ
 
 Giải thích: 
@@ -1039,7 +1039,7 @@ Sửa lỗi: has written → wrote
 
 Tạm dịch: Nhà soạn nhạc Verdi đã viết vở opera Aida để kỷ niệm việc mở kênh đào Suez, nhưng vở opera đã không được biểu diễn cho đến năm 1871.
 
-**Question 44**. **Đáp án : D
+**Question 44**. **Đáp án : D**
 Kiến thức: Đại từ nhân xưng
 
 Giải thích: Những người trong số chúng ta đặt lịch hẹn bác sỹ của chúng ta chứ không thể là đặt lịch hẹn bác sỹ của họ.
@@ -1048,7 +1048,7 @@ Sửa lỗi: their → our
 
 Tạm dịch: Những ai trong chúng ta có tiền sử gia đình mắc bệnh tim nên đặt lịch hẹn hàng năm với bác sĩ của họ.
 
-**Question 45**. **Đáp án: D
+**Question 45**. **Đáp án: D**
 Kiến thức: sử dụng từ
 
 Giải thích: 
@@ -1061,7 +1061,7 @@ Sửa: can be lain → can be laid
 
 Tạm dịch: Những tòa văn phòng hiện đại có những sàn nâng, bên dưới chúng, dây điện máy vi tính và dâ
 
-**Question 46**. **Đáp ánB
+**Question 46**. **Đáp ánB**
 Kiến thức: Thì của động từ
 
 Giải thích: 
@@ -1072,7 +1072,7 @@ Câu đề bài: Đã hơn hai mươi năm kể từ lần cuối tôi liên l�
 
 Công thức: S + haven’t/ hasn’t + Vp2 + for + time = It’s + time + since + S + (last) Vp1
 
-**Question 47**. **Đáp ánC
+**Question 47**. **Đáp ánC**
 Kiến thức: Lời nói gián tiếp
 
 Giải thích: 
@@ -1085,7 +1085,7 @@ Promise to do st: Hứa hẹn sẽ làm gì
 
 Đề bài: Cô ấy nói: “John, tớ sẽ dẫn bạn đi thăm thành phố của tớ trong lúc bạn ở đây = C. Cô ấy hứa sẽ dẫn John đi thăn thành phố của cô ấy.
 
-**Question 48**. **Đáp ánC
+**Question 48**. **Đáp ánC**
 Kiến thức: Động từ khuyết thiếu ở thức giả định
 
 Giải thích: 
@@ -1112,7 +1112,7 @@ can’t have P 2 : không thể nào đã làm
 
 Phù hợp nhất với nghĩa gốc là đáp án C
 
-**Question 49**. **Đáp ánA
+**Question 49**. **Đáp ánA**
 Kiến thức: Câu ước
 
 Giải thích: 
@@ -1129,7 +1129,7 @@ D. Giá như Peter đã chuyển ra nước ngoài cho một khởi đầu mới
 
 → Chọn đáp án A
 
-**Question 50**. **Đáp án C
+**Question 50**. **Đáp án C**
 Kiến thức: đảo ngữ 
 
 Giải thích: 

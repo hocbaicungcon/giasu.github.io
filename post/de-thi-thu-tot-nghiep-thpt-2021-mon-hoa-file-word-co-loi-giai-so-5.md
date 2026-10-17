@@ -263,8 +263,8 @@ Biết các phản ứng xảy ra hoàn toàn và m3 < m1 = m2. Hai chất X, Y 
 
 GIA SƯ THÔNG MINH gửi các thầy cô và các em link download đề thi
 
-- [ĐỀ 05 – ĐÁP ÁN](/assets/docs/DE-05-DAP-AN-1.doc)
-- [ĐỀ 05](/assets/docs/DE-05.doc)
+- [ĐỀ 05 – ĐÁP ÁN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [ĐỀ 05](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

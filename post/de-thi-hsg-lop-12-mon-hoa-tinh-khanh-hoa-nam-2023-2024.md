@@ -134,8 +134,8 @@ Viết phương trình hóa học của các phản ứng xảy ra và tính m.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-12-Khanh-Hoa-File-Anh-HDC](/assets/docs/2023-2024-HSG-12-Khanh-Hoa-File-Anh-HDC-giasu.ai.vn.docx)
-- [2023-2024-HSG-12-Khanh-Hoa-File-De](/assets/docs/2023-2024-HSG-12-Khanh-Hoa-File-De-giasu.ai.vn.docx)
+- [2023-2024-HSG-12-Khanh-Hoa-File-Anh-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2023-2024-HSG-12-Khanh-Hoa-File-De](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

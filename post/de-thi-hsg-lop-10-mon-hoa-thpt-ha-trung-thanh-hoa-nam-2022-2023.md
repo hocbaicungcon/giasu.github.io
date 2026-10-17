@@ -388,8 +388,8 @@ Mỗi mũi tên ứng với một phản ứng hoá học. Số phản ứng mà
  **A.** 1. **B.** 0. **C.** 2.                                   **D.** 3.
 
 **—-HẾT—
-- [Hoahoc10_hsg_2023_301](/assets/docs/Hoahoc10_hsg_2023_301.docx)
-- [Hoahoc10_hsg_2023_dap-an](/assets/docs/Hoahoc10_hsg_2023_dap-an.xlsx)
+- [Hoahoc10_hsg_2023_301](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoahoc10_hsg_2023_dap-an](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 

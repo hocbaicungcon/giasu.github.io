@@ -17,8 +17,8 @@ grade: 10
 | UBND TỈNH HÀ NAM SỞ GIÁO DỤC VÀ ĐÀO TẠO      | KỲ THI CHỌN HỌC SINH GIỎI LỚP 10 THPT CẤP TỈNH  NĂM HỌC 2023 – 2024 Môn: Hoá học Thời gian làm bài: 180 phút |
 | --- | --- |
 
-**HƯỚNG DẪN CHẤM
-**Câu 1. *(2,0 điểm)
+**HƯỚNG DẪN CHẤM**
+**Câu 1. *(2,0 điểm)**
 **1.** Phổ khối lượng (MS: Mass Spectrum) chủ yếu được sử dụng để xác định phân tử khối, nguyên tử khối của các chất và hàm lượng các đồng vị bền của một nguyên tố. Trục tung biểu thị hàm lượng phần trăm về số nguyên tử của từng đồng vị, trục hoành biểu thị tỉ số của nguyên tử khối (m) của mỗi đồng vị với điện tích của các ion đồng vị tương ứng (điện tích z của các đồng vị copper đều bằng 1+).
 
  **a)** Nguyên tử khối trung bình của copper (Cu) là 63,52. Hình phổ khối nào dưới đây phù hợp với dữ kiện này. Giải thích?
@@ -37,7 +37,7 @@ Cho O (Z = 8), F (Z = 9), Cl (Z = 17), Na (Z = 11), K (Z = 19), S (Z = 16).
 | – Nếu A có dạng M2X  Các ion tạo A là M+ và X2- Do:  M+ có cấu hình 1s22s22p63s23p6  M  có cấu hình electron: 1s22s22p63s23p64s1  Þ M là Potassium (K). X2- có cấu hình 1s22s22p63s23p6  X có cấu hình electron: 1s22s22p63s23p4 Þ X là Sulfur (S).  A là K2S    (Potassium sulfide)                                                 | 0,25 |  |
 | – Nếu A có dạng MX2  Các ion tạo A là M2+ và X– Do:  M2+ có cấu hình 1s22s22p63s23p6  M có cấu hình electron: 1s22s22p63s23p64s2  M là Calcium (Ca). X– có cấu hình 1s22s22p63s23p6 Þ X có cấu hình electron: 1s22s22p63s23p5   X là Chlorine (Cl).  A là CaCl2 (Calcium chloride).                                                      | 0,25 |  |
 
-**Câu 2. *(2,0 điểm)
+**Câu 2. *(2,0 điểm)**
             **1.** Nguyên tử hydrogen và các ion giống hydrogen (ví dụ He+) là hệ 1 electron, 1 hạt nhân. Năng lượng của electron trong hệ này được tính theo biểu thức:
 
  Với: n là số lượng tử chính, cho biết mức năng lượng của electron (n = 1, 2, 3,…) ; Z là số đơn vị điện tích hạt nhân.
@@ -48,7 +48,7 @@ Cho O (Z = 8), F (Z = 9), Cl (Z = 17), Na (Z = 11), K (Z = 19), S (Z = 16).
 
  **b)** Khi chuyển từ các trạng thái có năng lượng cao về trạng thái có mức năng lượng thấp hơn, nguyên tử hay ion sẽ phát ra năng lượng dưới dạng bức xạ điện từ ứng với các bước sóng nhất định. Các bước sóng này được ghi lại (các vạch) và gọi là quang phổ phát xạ.
 
-Xác định bước sóng (l) theo ***nm*** của bức xạ điện từ phát ra khi electron trong nguyên tử hydrogen chuyển từ trạng thái có mức năng lượng cao hơn (n = 3) về trạng thái có mức năng lượng thấp hơn (n = 2).
+Xác định bước sóng (l) theo **nm** của bức xạ điện từ phát ra khi electron trong nguyên tử hydrogen chuyển từ trạng thái có mức năng lượng cao hơn (n = 3) về trạng thái có mức năng lượng thấp hơn (n = 2).
 
 Cho biết năng lượng của bức xạ điện từ được tính theo hệ thức Einstein:
 
@@ -72,7 +72,7 @@ Cho biết năng lượng của bức xạ điện từ được tính theo hệ
 |   | b) Trong một chu kì, theo chiều tăng dần của điện tích hạt nhân, độ âm điện của các nguyên tố tăng dần, bán kính nguyên tử giảm dần: – Độ âm điện: 12Mg < 13Al < 14Si. – Bán kính nguyên tử: 12Mg > 13Al > 14Si. |   0,25 |
 |   | c) Tính base: Mg(OH)2 > Al(OH)3 > H2SiO3 Mg(OH)2 là một base yếu, Al(OH)3 là hydroxide lưỡng tính và H2SiO3 là một acid yếu. |   0,25 |
 
-**Câu 3. *(2,0 điểm)
+**Câu 3. *(2,0 điểm)**
            **1.** Dựa vào mô hình lực đẩy giữa các cặp electron vỏ hoá trị (VSERP: Valence Shell Electron Pair Repulsion) và thuyết lai hóa.
 
 Viết công thức Lewis, dự đoán dạng hình học và trạng thái lai hóa của nguyên tử trung tâm của các phân tử sau (có giải thích): SO2; CO2; CH4; SOCl2, PCl5.
@@ -90,7 +90,7 @@ Trình bày cách xác định X, Y, Z.
 | 1. | Phân tử Công thức Lewis Công thức VSEPR Trạng thái lai hóa của NTTT Dạng hình học của phân tử SO2 AX2E1 sp2 Gấp khúc (Góc, chữ V) CO2 AX2 sp Đường thẳng SOCl2 AX3E1 sp3 Tháp tam giác   CH4 AX4E sp3 Tứ diện PCl5 AX5E0 sp3d Lưỡng tháp tam giác |     1,25 |
 | 2. | – Do điện tích O2- lớn hơn điện tích của F–, trong khi bán kính anion O2- và F– là khác biệt không đáng kể (O và F cùng thuộc chu kì 2) nên hợp chất MgO bền hơn MgF2. Do đó MgF2 phải có nhiệt độ nóng chảy thấp hơn MgO. – Do điện tích Mg2+ lớn hơn điện tích của Na+, trong khi bán kính Mg2+ lại nhỏ hơn bán kính Na+ nên MgF2 bền hơn NaF. Do đó NaF  phải có nhiệt độ nóng chảy thấp hơn MgF2 ⇒ Nhiệt độ nóng chảy: NaF < MgF2 < MgO Vậy X là NaF; Y là MgF2 và Z là MgO. |   0,25     0,25     0,25 |
 
-**Câu 4. *(2,0 điểm)
+**Câu 4. *(2,0 điểm)**
 **1.** Đồng vị  dùng trong y học để điều trị bệnh ung thư tuyến giáp thường được điều chế bằng cách bắn phá bia chứa  bằng neutron trong lò phản ứng hạt nhân. Trong phương pháp này, trước tiên  nhận 1 neutron chuyển hóa thành , rồi đồng vị này phân rã tạo thành .
 
 **a )** Viết phương trình các phản ứng hạt nhân xảy ra khi điều chế .
@@ -133,7 +133,7 @@ Trong đó: A0 là hoạt độ phóng xạ ban đầu của chất (số phân 
 | 2. a) |  | 0,25 |
 |   b) | Tuổi của mẫu gỗ là:  năm |   0,5 |
 
-**Câu 5. *(2,0 điểm)
+**Câu 5. *(2,0 điểm)**
 **1.** Nhiệt độ sôi của các hợp chất với hydrogen của các nguyên tố nhóm VA, VIA và VIIA được biểu diễn qua đồ thị sau:
 
 **a)** Giải thích tại sao nhiệt độ sôi của H2O, HF, NH3 cao bất thường so với các hợp chất với hydrogen của các nguyên tố còn lại trong nhóm?
@@ -148,7 +148,7 @@ Trong đó: A0 là hoạt độ phóng xạ ban đầu của chất (số phân 
 | b) | Nhiệt độ sôi của các hợp chất còn lại trong dãy tăng dần do tăng phân tử khối, lực tương tác Van der Walls tăng. | 0,5 |
 | 2. | Kí hiệu hai kim loại kiềm kế tiếp là M, có nguyên tử khối trung bình là .      Ba + 2H2O → Ba(OH)2+ H2      2M + 2H2O → MOH+ H2      Ba(OH)2 + Na2SO4 → BaSO4 ¯ + 2 NaOH Þ Khi thêm 0,009 mol Na2SO4thì Ba2+ dư còn khi thêm 0,011 mol Na2SO4 thì dư, Ba2+ hết. Coi số mol Ba và M lần lượt là x và y. Với 0,009 < x < 0,011 Þ 0,028 < y < 0,032. Þ 0,028 <  < 0,032 Þ 8,32 <  < 15,84. ⇒ Hai kim loại kiềm thỏa mãn đề bài là Lithium (7) và Sodium (23). |             0,25         0,25              0,5 |
 
-**Câu 6. *(2,0 điểm)
+**Câu 6. *(2,0 điểm)**
 **1.** Kim loại calcium kết tinh theo mạng lập phương tâm diện. Cấu trúc tinh thể của calcium được mô tả như hình sau:
 
 Bán kính nguyên tử của calcium rCa = 197pm. Tính khối lượng riêng của calcium kim loại theo đơn vị gam/cm3.
@@ -160,7 +160,7 @@ Bán kính nguyên tử của calcium rCa = 197pm. Tính khối lượng riêng 
 |    1.   | Ta có Ca kết tinh theo mạng lập phương tâm diện. – Số nguyên tử Ca trong 1 ô mạng cơ sở là: 8.1/8 + 6.1/2 = 4 (nguyên tử) – Các nguyên tử Ca tiếp xúc với nhau trên đường chéo của mỗi mặt hình lập phương cạnh a:  Khối lượng riêng của Ca: |           1,0       |
 |  b)   |  Gọi số phân tử CaCl2 trong 1 ô mạng cơ sở là N. – Khối lượng riêng của CaCl2 được tính theo công thức: |   1,0 |
 
-**Câu 7. *(2,0 điểm)
+**Câu 7. *(2,0 điểm)**
             **1.** Xác định số oxi hoá của các nguyên tử trong các chất sau:
 
 ;  ;     ;  
@@ -180,7 +180,7 @@ Bán kính nguyên tử của calcium rCa = 197pm. Tính khối lượng riêng 
 | b) | Có nguyên tố ở một mức oxi hoá ban đầu, vừa là chất khử vừa là chất oxi hoá. Ví dụ: Cl2 + 2NaOH ® NaCl  +  NaClO + H2O  (Phản ứng điều chế nước Javen). 2NO2 + 2NaOH ® NaNO3 + NaNO2 + H2O | 0,25   |
 | c) | – Phản ứng điều chế khí oxygen trong phòng thí nghiệm: 2KMnO4 K2MnO4 + MnO2 + O2 2KClO3 2KCl + 3O2 | 0,25 |
 
-**Câu 8. *(2,0 điểm)
+**Câu 8. *(2,0 điểm)**
 **1.** Muối ăn khi khai thác từ nước biển, mỏ muối, hồ muối thường có lẫn nhiều tạp chất như MgCl2, CaCl2, CaSO4 làm cho muối có vị đắng chát và dễ bị chảy nước gây ảnh hưởng xấu tới chất lượng muối. Một trong những phương pháp loại bỏ tạp chất ở muối ăn là dùng hỗn hợp A gồm Na2CO3, NaOH, BaCl2 tác dụng với dung dịch nước muối để loại tạp chất dưới dạng các chất kết tủa CaCO3, Mg(OH)­­2, BaSO4. Một mẫu muối thô thu được bằng phương pháp bay hơi nước biển vùng Ninh Thuận có thành phần khối lượng như sau: 96,525% NaCl; 0,190% MgCl2; 1,224% CaSO4; 0,010% CaCl2; 0,951% H2O.
 
 **a )** Viết các phương trình hoá học xảy ra khi dùng hỗn hợp A để loại bỏ tạp chất có trong mẫu muối trên.
@@ -204,7 +204,7 @@ Bán kính nguyên tử của calcium rCa = 197pm. Tính khối lượng riêng 
 |   | * Thành phần phần trăm khối lượng các chất trong X: %mMg = 0,105.24/4,32 . 100% = 58,33% %mMgO = 41,67% | 0,25 |
 |   | * Thành phần phần trăm khối lượng các chất trong Z: BTNT O: nMgO(Z) = 0,045 + 0,15.4 – 0,105.4 – 0,03.2 – 0,15 = 0,015 mol nMg(Z) = 0,045 – 0,015 = 0,03 mol nS(Z) = 0,15 – 0,03 – 0,105 = 0,015 mol Vậy trong Z:  %MgO = 0,015.40/1,8 .100% = 33,33%                     %Mg = 0,03.24/1,8 .100% = 40% | 0,25 |
 
-**Câu 9. *(2,0 điểm)
+**Câu 9. *(2,0 điểm)**
 **1.** Bạn biết không, “gas” trong bật lửa ga thực chất là hỗn hợp propane (C3H8) và butane (C4H10) (tên thương mại là “propane”). “Gas” là một phân đoạn của dầu mỏ, được thêm lượng nhỏ phụ gia là có thể bơm vào bật lửa ga, bếp ga thậm chí cả ô tô. Để bảo quản, hỗn hợp khí được nén ở -430C dưới áp suất 1,6 MPa cho hỗn hợp lỏng với khối lượng riêng rL =0,547 g.ml-1; hỗn hợp lỏng hoá hơi cho hỗn hợp khí có khối lượng riêng rg = 4,03 g.L-1 ở 200C và 2 atm.
 
 Để vận chuyển “gas” lỏng thường chứa trong các bồn thể tích 86,7 m3. Cho biết enthalpy tạo thành chuẩn (kJ.mol-1) các chất được cho trong bảng:
@@ -225,7 +225,7 @@ Bán kính nguyên tử của calcium rCa = 197pm. Tính khối lượng riêng 
 | 2. | Xét phản ứng: – Xét phản ứng: |           0,5 |
 | 3. | – Trong bồn đầy thể tích 86,7 m3 có khối lượng hỗn hợp là : mhỗn hợp = 0,547.86,7.106 = 47,4249.106 (gam) Hỗn hợp khí có: Ta có: Lượng nhiệt toả ra khi đốt cháy gas trong bồn đầy: |       0,5                 0,5 |
 
-**Câu 10. *(2,0 điểm)
+**Câu 10. *(2,0 điểm)**
             Phân tích nhiệt trọng là kĩ thuật phân tích để xác định thành phần của các chất rắn bị phân huỷ khi đun nóng. Sự thay đổi khối lượng được đo trong quá trình đun nóng sẽ cung cấp thông tin về thành phần của chất cần phân tích. Đun nóng hỗn hợp calcium oxalate và magnesium oxalate đến 9000C. Trong quá trình này, khối lượng hỗn hợp được đo liên tục. Biết rằng có 2 phản ứng phân huỷ ở khoảng 4000C:
 
             Ở 7000C quan sát được phản ứng phân huỷ thứ 3.
@@ -248,10 +248,10 @@ Bán kính nguyên tử của calcium rCa = 197pm. Tính khối lượng riêng 
 | 2. | Gọi số mol MgC2O4 và CaC2O4 trong hỗn hợp đầu lần lượt là x và y mol. Các phản ứng: – Ở 5000C: xảy ra phản ứng (1) và (2). Chất rắn thu được gồm MgO và CaCO3. – Ở 9000C  xảy ra thêm phản ứng (3). Chất rắn thu được gồm MgO và CaO.  Ta có: Thành phần mẫu ban đầu: |                 0,25               0,5 |
 | 3. | Sự giảm khối lượng đầu tiên là do mất nước:    Gọi khối lượng mol của C là a (gam/mol) Vậy khối lượng mol của carbon là 12,06 g/mol. |       0,5                               0,5 |
 
-**——— HẾT——–
+**——— HẾT——–**
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-Ha-Nam-De-HDC](/assets/docs/2023-2024-HSG-10-Ha-Nam-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-Ha-Nam-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

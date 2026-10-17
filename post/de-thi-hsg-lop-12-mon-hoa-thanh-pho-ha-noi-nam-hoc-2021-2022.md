@@ -112,7 +112,7 @@ Nguồn: Thầy Ngô Xuân Quỳnh
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [21.22 – Đề và đáp án kì thi HSG – Hóa Học 12 – cấp TP](/assets/docs/21.22-De-va-dap-an-ki-thi-HSG-Hoa-Hoc-12-cap-TP.docx)
+- [21.22 – Đề và đáp án kì thi HSG – Hóa Học 12 – cấp TP](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

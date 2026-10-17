@@ -26,14 +26,14 @@ Mời Thầy Cô và các em tham khảo thêm:
 
 ## I. Những dạng đề thi về bài Tây Tiến
 
-**Dạng 1: Cảm nhận về đoạn thơ, bài thơ Đề thi thường trích dẫn 1 hoặc 2 khổ thơ trong bài Tây Tiến và yêu cầu nêu cảm nhận. Rất ít khi cho phân tích cả bài.
+**Dạng 1: Cảm nhận về đoạn thơ, bài thơ Đề thi thường trích dẫn 1 hoặc 2 khổ thơ trong bài Tây Tiến và yêu cầu nêu cảm nhận. Rất ít khi cho phân tích cả bài.**
 
 Dạng 2: Nghị luận ý kiến** bàn về bài Tây Tiến- Quang Dũng
 
 **Dạng 3: So sánh** đoạn thơ trong bài Tây Tiến- Quang Dũng với đoạn thơ trong bài thơ khác có cùng chủ đề hoặc có điểm tương đồng về nội dung.
 Với bài Tây Tiến- Quang Dũng, đề thi có thể yêu cầu so sánh với Việt Bắc, [Đất nước](/bai-viet/bo-de-thi-van-tac-pham-dat-nuoc.html), hoặc đoạn thơ miêu tả hình tượng người lính,…
 
-**Dạng 4: Liên hệ thực tế Ví dụ đề bài cho phân tích hình tượng người lính Tây Tiến , từ đó liên hệ tới hình ảnh người chiến sĩ đang ngày đêm bảo vệ biển đảo quê hương chẳng hạn,… hoặc liên hệ tới lí tưởng sống của thanh niên thời nay.
+**Dạng 4: Liên hệ thực tế Ví dụ đề bài cho phân tích hình tượng người lính Tây Tiến , từ đó liên hệ tới hình ảnh người chiến sĩ đang ngày đêm bảo vệ biển đảo quê hương chẳng hạn,… hoặc liên hệ tới lí tưởng sống của thanh niên thời nay.**
 
 Trọng tâm kiến thức:** Bức tranh thiên nhiên hùng vĩ, dữ dội nhưng mĩ lệ, trữ tình và hình ảnh người lính Tây Tiến với vẻ đẹp hào hùng, hào hoa.
 **Kiến thức phân loại:** So sánh với hình tượng người lính trong Đồng Chí của Chính Hữu. Bút pháp lãng mạn đặc sắc, ngôn từ giàu tính tạo hình.
@@ -44,13 +44,13 @@ Trọng tâm kiến thức:** Bức tranh thiên nhiên hùng vĩ, dữ dội nh
 ### 1. Cảm nhận vẻ đẹp hình tượng người lính Tây Tiến
 
 *“**Tây Tiến đoàn binh không mọc tóc,
-**Quân xanh màu lá dữ oai hùm.
-**Mắt trừng gửi mộng qua biên giới,
-**Đêm mơ Hà Nội dáng kiều thơm.
-**Rải rác biên cương mồ viễn xứ,
-**Chiến trường đi chẳng tiếc đời xanh,
-**Áo bào thay chiếu anh về đất,
-**Sông Mã gầm lên khúc độc hành.”
+**Quân xanh màu lá dữ oai hùm.**
+**Mắt trừng gửi mộng qua biên giới,**
+**Đêm mơ Hà Nội dáng kiều thơm.**
+**Rải rác biên cương mồ viễn xứ,**
+**Chiến trường đi chẳng tiếc đời xanh,**
+**Áo bào thay chiếu anh về đất,**
+**Sông Mã gầm lên khúc độc hành.”**
 Cảm nhận vẻ đẹp hình tượng người lính Tây Tiến. Bình luận ngắn gọn về nét độc đáo của hình tượng này
 
 HƯỚNG DẪN
@@ -67,19 +67,19 @@ HƯỚNG DẪN
 ### 2. Cảm nhận về thiên nhiên Tây Bắc trong bài thơ Tây Tiến
 
 *Sông Mã xa rồi Tây Tiến ơi!
-**Nhớ về rừng núi, nhớ chơi vơi.
-**Sài Khao sương lấp đoàn quân mỏi,
-**Mường Lát hoa về trong đêm hơi.
-**Dốc lên khúc khuỷu dốc thăm thẳm,
-**Heo hút cồn mây, súng ngửi trời.
-**Ngàn thước lên cao, ngàn thước xuống,
-**Nhà ai Pha Luông  mưa xa khơi.
-**Anh bạn dãi dầu không bước nữa,
-**Gục lên súng mũ bỏ quên đời!
-**Chiều chiều oai linh thác gầm thét,
-**Đêm đêm Mường Hịch cọp trêu người.
-**Nhớ ôi Tây Tiến cơm lên khói,
-**Mai Châu  mùa em thơm nếp xôi.
+**Nhớ về rừng núi, nhớ chơi vơi.**
+**Sài Khao sương lấp đoàn quân mỏi,**
+**Mường Lát hoa về trong đêm hơi.**
+**Dốc lên khúc khuỷu dốc thăm thẳm,**
+**Heo hút cồn mây, súng ngửi trời.**
+**Ngàn thước lên cao, ngàn thước xuống,**
+**Nhà ai Pha Luông  mưa xa khơi.**
+**Anh bạn dãi dầu không bước nữa,**
+**Gục lên súng mũ bỏ quên đời!**
+**Chiều chiều oai linh thác gầm thét,**
+**Đêm đêm Mường Hịch cọp trêu người.**
+**Nhớ ôi Tây Tiến cơm lên khói,**
+**Mai Châu  mùa em thơm nếp xôi.**
 ( Trích *Tây tiến*, Quang Dũng, *Ngữ văn 12*, tập 1, NXB GD 2020)
 
 Cảm nhận về thiên nhiên Tây Bắc trong đoạn thơ trên. Từ đó, nhận xét về chất nhạc, họa trong đoạn thơ.
@@ -98,13 +98,13 @@ Cảm nhận về thiên nhiên Tây Bắc trong đoạn thơ trên. Từ đó, 
 ### 3. Tính bi tráng được thể hiện qua bài Tây Tiến
 
 *“Tây Tiến đoàn binh không mọc tóc,
-**Quân xanh màu lá dữ oai hùm.
-**Mắt trừng gửi mộng qua biên giới
-** Đêm mơ Hà Nội dáng kiều thơm.
-**Rải rác biên cương mồ viễn xứ,
-**Chiến trường đi chẳng tiếc đời xanh,
-**Áo bào thay chiếu anh về đất,
-**Sông Mã gầm lên khúc độc hành.
+**Quân xanh màu lá dữ oai hùm.**
+**Mắt trừng gửi mộng qua biên giới**
+** Đêm mơ Hà Nội dáng kiều thơm.**
+**Rải rác biên cương mồ viễn xứ,**
+**Chiến trường đi chẳng tiếc đời xanh,**
+**Áo bào thay chiếu anh về đất,**
+**Sông Mã gầm lên khúc độc hành.**
                   (Trích:*Tây Tiến*– Quang Dũng, *Ngữ văn 12*, tập 1, NXB Giáo dục Việt Nam.)
 
 Phân tích hình tượng người lính Tây Tiến trong đoạn trích trên. Từ đó, nhận xét tính chất bi tráng được thể hiện qua đoạn thơ.
@@ -122,15 +122,15 @@ Phân tích hình tượng người lính Tây Tiến trong đoạn trích trên
 
 ### 4. Nét đẹp cổ điển và hiện đại của người lính trong bài Tây Tiến
 
-Trong bài thơ ***Tây Tiến*** (Quang Dũng), hình tượng người lính Tây Tiến có khi được miêu tả vẻ đẹp tư thế giống như những trang nam nhi thời xưa:
+Trong bài thơ **Tây Tiến** (Quang Dũng), hình tượng người lính Tây Tiến có khi được miêu tả vẻ đẹp tư thế giống như những trang nam nhi thời xưa:
 
 “*Anh bạn dãi dầu không bước nữa
-**Gục lên súng mũ bỏ quên đời*”
+**Gục lên súng mũ bỏ quên đời*”**
 
 Nhưng có khi người lính Tây Tiến lại được khắc họa đúng với vẻ đẹp tâm hồn của những người lính trong thời kì kháng chiến chống Pháp:
 
 *“Mắt trừng gửi mộng qua biên giới
-**Đêm mơ Hà Nội dáng kiều thơm”
+**Đêm mơ Hà Nội dáng kiều thơm”**
 Anh/ chị hãy cảm nhận về hình tượng người lính Tây Tiến qua những dòng thơ trên để thấy được nét đẹp *cổ điển* và *hiện đại* của hình tượng này. Từ đó, nhận xét chung về vẻ đẹp trong lí tưởng của người lính trong thơ ca kháng chiến chống Pháp.
 
 | Trong bài thơ Tây Tiến (Quang Dũng), hình tượng người lính Tây Tiến có khi được miêu tả vẻ đẹp tư thế giống như những trang nam nhi thời xưa:   “ Anh bạn dãi dầu không bước nữa    Gục lên súng mũ bỏ quên đời” Nhưng có khi người lính Tây Tiến lại được khắc họa đúng với vẻ đẹp tâm hồn của những người lính trong thời kì kháng chiến chống Pháp: “Mắt trừng gửi mộng qua biên giới    Đêm mơ Hà Nội dáng kiều thơm” Anh/ chị hãy cảm nhận về hình tượng người lính Tây Tiến qua những dòng thơ trên để thấy được nét đẹp cổ điển  vàhiện đại của hình tượng này. Từ đó, nhận xét chung về vẻ đẹp trong lí tưởng của người lính trong thơ ca kháng chiến chống Pháp. | 10,0 |
@@ -148,13 +148,13 @@ Anh/ chị hãy cảm nhận về hình tượng người lính Tây Tiến qua 
 Về đoạn thơ:
 
 *Tây Tiến đoàn quân không mọc tóc
-**Quân xanh màu lá dữ oai hùm
-**Mắt trừng gửi mộng qua biên giới
-**Đêm mơ Hà Nội dáng kiều thơm
-**Rải rác biên cương mồ viễn xứ
-**Chiến trường đi chẳng tiếc đời xanh
-**Áo bào thay chiếu anh về đất
-**Sông Mã gầm lên khúc độc hành
+**Quân xanh màu lá dữ oai hùm**
+**Mắt trừng gửi mộng qua biên giới**
+**Đêm mơ Hà Nội dáng kiều thơm**
+**Rải rác biên cương mồ viễn xứ**
+**Chiến trường đi chẳng tiếc đời xanh**
+**Áo bào thay chiếu anh về đất**
+**Sông Mã gầm lên khúc độc hành**
                      (Trích **“Tây Tiến”-** Quang Dũng)
 
 Trình bày cảm nhận của anh/chị về vẻ đẹp người lính Tây Tiến qua khổ thơ trên. Từ đó nhận xét về cảm hứng lãng mạn trong bài thơ “Tây Tiến”.
@@ -171,13 +171,13 @@ Trình bày cảm nhận của anh/chị về vẻ đẹp người lính Tây Ti
 Cảm nhận vẻ đẹp hình tượng người lính Tây Tiến trong đoạn thơ sau. Từ đó hãy nhận xét về bút pháp hiện thực và lãng mạn trong thơ Quang Dũng.
 
 *“Tây Tiến đoàn binh không mọc tóc
-**                                           Quân xanh màu lá giữ oai hùm
-**                                           Mắt trừng gửi mộng qua biên giới
-**                                           Đêm mơ Hà Nội dáng kiều thơm
-**                                           Rải rác biên cương mồ viên xứ
-**                                           Chiến trường đi chẳng tiếc đời xanh
-**                                           Áo bào thay chiếu anh về đất
-**                                           Sông mã gầm lên khúc độc hành”
+**                                           Quân xanh màu lá giữ oai hùm**
+**                                           Mắt trừng gửi mộng qua biên giới**
+**                                           Đêm mơ Hà Nội dáng kiều thơm**
+**                                           Rải rác biên cương mồ viên xứ**
+**                                           Chiến trường đi chẳng tiếc đời xanh**
+**                                           Áo bào thay chiếu anh về đất**
+**                                           Sông mã gầm lên khúc độc hành”**
 (Trích Tây tiến – Quang Dũng, Ngữ văn 12, tập 1. NXB Giáo dục).
 
 | Cảm nhận vẻ đẹp hình tượng người lính Tây Tiến trong đoạn thơ . Từ đó nhận xét về bút pháp hiện thực và lãng mạn trong thơ Quang Dũng.   |  5.0 |

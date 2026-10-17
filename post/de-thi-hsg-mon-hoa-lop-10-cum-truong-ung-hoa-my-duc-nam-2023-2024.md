@@ -160,8 +160,8 @@ Chữ ký giám thị coi thi số 1: Chữ ký giám thị coi thi số 2:
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-TDN-dap-an-HSG-hoa-10-cum-ung-hoa-my-duc](/assets/docs/2023-2024-TDN-dap-an-HSG-hoa-10-cum-ung-hoa-my-duc-giasu.ai.vn.pdf)
-- [2023-2024-TDN-De-hoa-lop-10-cum-UH-MD](/assets/docs/2023-2024-TDN-De-hoa-lop-10-cum-UH-MD-giasu.ai.vn.pdf)
+- [2023-2024-TDN-dap-an-HSG-hoa-10-cum-ung-hoa-my-duc](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2023-2024-TDN-De-hoa-lop-10-cum-UH-MD](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

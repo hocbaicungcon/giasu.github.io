@@ -11,9 +11,9 @@ tags:
 grade: 10
 ---
 
-**Bài 23: Ôn tập chương 7
-**I. Mục tiêu
-**1. Kiến thức
+**Bài 23: Ôn tập chương 7**
+**I. Mục tiêu**
+**1. Kiến thức**
 – Nêu được trạng thái tự nhiên của các nguyên tố halogen.
 
 – Mô tả được trạng thái màu sắc, nhiệt độ nóng chảy, nhiệt độ sôi của các đơn chất halogen.
@@ -38,27 +38,27 @@ sulfuric acid đặc.
 
 – Nêu được ứng dụng của một số hydrogen halide.
 
-**2. Năng lực:
-**2.1.  Năng lực chung:
+**2. Năng lực:**
+**2.1.  Năng lực chung:**
 | Tự chủ – tự học | (7) Hoàn thành các phiếu học tập cá nhân màu trắng tại vòng chuyên gia và phiếu học tập nhóm dựa trên cơ sở kiến thức cũ hoặc tra cứu từ tài liệu |
 | --- | --- |
 | Giao tiếp – hợp tác | (8) Trao đổi thảo luận hoàn thành 2 phiếu học tập cá nhân màu xanh và phiếu học tập A1 của cả nhóm |
 | Giải quyết vấn đề sáng tạo | (9) Vận dụng các nội lý thuyết đã được ôn lại trong phiếu học tập cá nhân hoàn thành được các bài tập trong phiếu học tập nhóm |
 
-**2.2. Năng lực hóa học:
+**2.2. Năng lực hóa học:**
 | Năng lực nhận thức hoá học | Xu hướng các halogen nhận thêm 1 electron (từ kim loại) hoặc dùng chung electron (với phi kim) để tạo hợp chất ion hoặc hợp chất cộng hóa trị dựa theo cấu hình electron. Xu hướng phản ứng của các đơn chất halogen với hydrogen. |
 | --- | --- |
 | Năng lực tìm hiểu tự nhiên dưới góc độ hóa học | Ứng dụng của một số halogen, hydrogen halide. |
 | Năng lực vận dụng kiến thức đã học | Thực hiện (hoặc quan sát video) một số thí nghiệm chứng minh tính oxi hóa mạnh của các halogen và so sánh tính oxi hóa của các halogen trong nhóm VIIA Thực hiện hoặc mô tả thí nghiệm phân biệt các ion F–, Cl–, Br–, I–. |
 
-**3. Phẩm chất:
+**3. Phẩm chất:**
 | Chăm chỉ | Chủ động thực hiện các nhiệm vụ của các phiếu học tập cá nhân và phiếu học tập nhóm |
 | --- | --- |
 | Trung thực | Từ các nội dung phiếu học tập nhóm của từng thành viên tổng hợp ra kết quả của cả nhóm trình bày trong phiếu học tập khổ A1 (không tham khảo ý kiến của các nhóm khác) Không nhắc bài bạn khác khi trả lời các câu hỏi trong phần khởi động và củng cố, trả lời các câu hỏi dựa trên quan điểm cá nhân (không nghe ý kiến từ các bạn khác) |
 | Trách nhiệm | Tích cực hoàn thành các phiếu học tập các nhân, đóng góp các ý kiến cho nhóm để hoàn thành phiếu học tập nhóm |
 
-**II. Thiết bị dạy học và học liệu
-**1. Giáo viên (GV)
+**II. Thiết bị dạy học và học liệu**
+**1. Giáo viên (GV)**
 **–** Làm các slide trình chiếu, kế hoạch dạy học.
 
 **–** Phiếu học tập:
@@ -75,12 +75,12 @@ Nhóm 3: Phiếu học tập cá nhân 3 màu trắng, phiếu học tập cá n
 
 **–** Phiếu QR code.
 
-**2. Học sinh (HS)
+**2. Học sinh (HS)**
 **–** Ôn tập các bài: Bài 21: Nhóm halogen, Bài 22: Hydrogen halide – muối halide
 
 **–** Đồ dùng học tập.
 
-**III. Tiến trình dạy học
+**III. Tiến trình dạy học**
 1. Mục tiêu:
 
 – Tìm hiểu kiến thức học sinh đã nắm bắt được thông qua câu hỏi trắc nghiệm của trò chơi.
@@ -130,7 +130,7 @@ Trong dãy hydrohalic acid, tính acid tăng từ … (yếu) đến … (rất 
 **Câu 5:** Viết phương trình hóa học của NaBr, NaI với H2SO4 đặc. Và cho biết vai trò của NaBr và NaI khi tham gia phản ứng với sulfuric acid đặc.
 
 *GV có thể đưa câu hỏi 4, 5 lên trước để gọi HS lên bảng trình bày sau đó hỏi các câu hỏi 1, 2, 3 để HS đứng tại chỗ trả lời
-**2. Hoạt động 2: Hình thành kiến thức mới
+**2. Hoạt động 2: Hình thành kiến thức mới**
 1. Mục tiêu:
 
 – Củng cố các kiến thức HS cần nắm vững trong chương 7.
@@ -174,9 +174,9 @@ Và cuối cùng là tính chất hóa học của các muối halide.
 
 Chúng ta cùng vào bài 23: Ôn tập chương 7
 
-**1. Chuyển giao nhiệm vụ học tập
-**VÒNG 1: VÒNG CHUYÊN GIA  (thời gian 3 phút).
-–***Lớp chia thành 3 nhóm:
+**1. Chuyển giao nhiệm vụ học tập**
+**VÒNG 1: VÒNG CHUYÊN GIA  (thời gian 3 phút).**
+–**Lớp chia thành 3 nhóm:
 Nhóm 1: A1→ A15
 
 Nhóm 2: B1→ B15
@@ -185,7 +185,7 @@ Nhóm 3: C1→ C15
 
 (Dự kiến với lớp có 45 HS, với sĩ số khác, GV sẽ chia nhóm sao cho số lượng HS mỗi nhóm đều nhau để thực hiện vòng 2 mảnh ghép thuận lợi)
 
-– * **Nhiệm vụ:*** Tự nghiên cứu hoàn thành phiếu học tập cá nhân màu trắng.
+– * **Nhiệm vụ:** Tự nghiên cứu hoàn thành phiếu học tập cá nhân màu trắng.
 
 GV yêu cầu từng HS tham khảo SGK hoàn thành phiếu học tập cá nhân màu trắng.
 
@@ -193,13 +193,13 @@ Trong thời gian HS hoàn thành phiếu học tập màu trắng, GV chuyển 
 
 GV đi đến từng nhóm quan sát và phát hiện khó khăn của HS để giải đáp, hoặc hướng dẫn nếu có nhóm chưa làm được bài.
 
-**2. Thực hiện nhiệm vụ học tập
+**2. Thực hiện nhiệm vụ học tập**
 HS trong mỗi nhóm thực hiện nội dung trong phiếu học tập cá nhân màu trắng trong thời gian 3 phút.
 
-**VÒNG 2: VÒNG MẢNH GHÉP ( thời gian 6 phút)
+**VÒNG 2: VÒNG MẢNH GHÉP ( thời gian 6 phút)**
 HS được chỉ định di chuyển về các nhóm mới tạo nhóm mới thời gian 1 phút.
 
-*** T ạ o nhóm m ớ i:
+** T ạ o nhóm m ớ i:**
 Nhóm 1: (A1→A5) + (C6→C10) + (B11→B15)
 
 Nhóm 2: (B1→B5) + (A6→A10) + (C11→C15)
@@ -212,8 +212,8 @@ HS trong các nhóm đã được chỉ định (làm phiếu học tập cá nh
 
 GV đi đến từng nhóm quan sát và phát hiện khó khăn của HS để giải đáp, hoặc hướng dẫn HS trong nhóm nếu HS thuyết trình mà các HS khác chưa hiểu đề hoàn thành các phiếu học tập cá nhân màu xanh.
 
-**PHIẾU HỌC TẬP CÁ NHÂN SỐ 1
-**Nội dung 1:
+**PHIẾU HỌC TẬP CÁ NHÂN SỐ 1**
+**Nội dung 1:**
 *a. Nguyên tử halogen
 – Cấu hình lớp electron ngoài cùng của các nguyên tử halogen:……………….
 
@@ -235,8 +235,8 @@ Trong công nghiệp: …………………………………………………�
 
 Trong phòng thí nghiệm: ……………………………………………………………………..
 
-**PHIẾU HỌC TẬP CÁ NHÂN SỐ 2
-**Nội dung 2:
+**PHIẾU HỌC TẬP CÁ NHÂN SỐ 2**
+**Nội dung 2:**
 c. Hydrogen halide
 
 – Sự biến đổi nhiệt độ sôi của các hydrogen halide từ HF đến HI……………………………
@@ -255,13 +255,13 @@ d. Muối halide
 
 – Sắp xếp các ion F–, Cl–, Br–, I–  theo thứ tự tính khử tăng dần: ………………………………
 
-**PHIẾU HỌC TẬP CÁ NHÂN SỐ 3
-**Nội dung 3:
+**PHIẾU HỌC TẬP CÁ NHÂN SỐ 3**
+**Nội dung 3:**
 e. Một nhà máy nước sử dụng 5 mg Cl2 để khử trùng 1 L nước sinh hoạt. Tính khối lượng Cl2 nhà máy cần dùng để khử trùng 80 000 m3 nước sinh hoạt.
 
 f. Để pha loãng 1 lít nước muối sinh lí NaCl 0,9% dùng làm nước súc miệng thì cần bao nhiêu gam muối ăn?
 
-**3. Hoạt động 3: Luyện tập
+**3. Hoạt động 3: Luyện tập**
             a) Mục tiêu:
 
 – Củng cố các kiến thức HS cần nắm vững trong chương 7.
@@ -290,10 +290,10 @@ d) Tổ chức thực hiện:
 
 Vận dụng các lý thuyết đã được ôn tập trong phiếu học tập cá nhân, các em hãy hoàn thiện phiếu học tập nhóm (giấy A4) sau đó tổng hợp kết quả của cà nhóm, bạn thư kí của nhóm ghi vào phiếu học tập chung của nhóm khổ A1
 
-**1. Chuyển giao nhiệm vụ học tập
+**1. Chuyển giao nhiệm vụ học tập**
 **– HĐ nhóm:** GV yêu cầu các nhóm thảo luận để hoàn thành các yêu cầu trong phiếu học tập nhóm.
 
-**2. Thực hiện nhiệm vụ học tập
+**2. Thực hiện nhiệm vụ học tập**
 – Các nhóm phân công nhiệm vụ cho từng thành viên: tiến hành thảo luận làm các nội dung trong phiếu học tập nhóm, quan sát và thống nhất để ghi lại kết quả vào phiếu học tập.
 
 – Thư kí của nhóm thống nhất kết quả của cả nhóm ghi chép lại bằng bút dạ *màu đen* vào phiếu học tập in khổ A1.
@@ -301,12 +301,12 @@ Vận dụng các lý thuyết đã được ôn tập trong phiếu học tập
 – Chuyển phiếu học tập nhóm khổ A1 để chấm chéo giữa các nhóm theo sơ đồ: Nhóm 1 => nhóm 2 => nhóm 3 => nhóm 1
 
 – Các HS trong nhóm sau khi nhận được phiếu học tập của nhóm khác chuyển đến nhận xét và chỉnh sửa bổ sung bằng bút dạ *màu xanh.
-**3. Báo cáo, thảo luận
+**3. Báo cáo, thảo luận**
 **– HĐ chung cả lớp:** GV tổng hợp kết quả của các nhóm, cho  các nhóm khác nhận xét, góp ý, bổ sung, phản biện. GV chốt lại kiến thức.
 
 GV dán các phiếu học tập của cả 3 nhóm lên bảng bằng nam châm, chữa và sửa lỗi sai của từng nhóm bằng bút dạ *màu đỏ*. Liên hệ các phần lý thuyết từ phiếu học tập cá nhân sang phiếu học tập nhóm để HS hình dung các dạng bài tập của chương được xây dựng từ phần kiến thức lý thuyết nào.
 
-**PHIẾU HỌC TẬP NHÓM
+**PHIẾU HỌC TẬP NHÓM**
 **Bài 1:** Viết phương trình hóa học của các phản ứng xảy ra trong các trường hợp:
 
 1. Kim loại Mg phản ứng với dung dịch HBr.
@@ -325,7 +325,7 @@ Kí hiệu của nguyên tố X và Y lần lượt là
 
             A. F và Cl                  B. Cl và Br                C.  Br và I                  D.  Cl và I
 
-**4. Hoạt động 4: Vận dụng
+**4. Hoạt động 4: Vận dụng**
             a) Mục tiêu:
 
 – Củng cố các kiến thức HS cần nắm vững trong chương 7.
@@ -356,7 +356,7 @@ d) Tổ chức thực hiện:
 
 + Thông qua HĐ chung của cả lớp, GV hướng dẫn HS thực hiện các yêu cầu và điều chỉnh.
 
-**Câu hỏi củng cố bằng ứng dụng plickers
+**Câu hỏi củng cố bằng ứng dụng plickers**
 **Câu 1:** Liên kết trong phân tử nào sau đây có độ phân cực lớn nhất
 
 A. H – F                     B. H – Cl                   C.  H – Br                  D.  H – I
@@ -377,7 +377,7 @@ Khối lượng muối hộ gia đình thu được là:
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [Giao-an-bai-23-ON-TAP-CHUONG-7-Pham-Duy-Khanh](/assets/docs/Giao-an-bai-23-ON-TAP-CHUONG-7-Pham-Duy-Khanh.docx)
+- [Giao-an-bai-23-ON-TAP-CHUONG-7-Pham-Duy-Khanh](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

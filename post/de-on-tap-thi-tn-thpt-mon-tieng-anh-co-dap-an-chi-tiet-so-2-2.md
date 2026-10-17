@@ -29,19 +29,19 @@ grade: 12
 
 ## 1. ĐỀ ÔN TẬP THI TN THPT MÔN TIẾNG ANH CÓ ĐÁP ÁN CHI TIẾT
 
-***Mark the letter A, B, C or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions*** **.**
+**Mark the letter A, B, C or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions** **.**
 
 1. A. hatr**ed** B. nak**ed** C. knock**ed** D. sacr**ed**
 
 2. A. br**ought** B. dr**ought** C. s**ought** D. th**ought**
 
-***Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress in each of the following questions.***
+**Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress in each of the following questions.**
 
-1. A. purpose****B. compose C. propose D. suppose
+1. A. purpose**B. compose C. propose D. suppose
 
 2. A. entertain B. engineer C. committee D. referee
 
-***Mark the letter A, B, C or D to indicate the correct answer to each of the following questions.*** ****
+**Mark the letter A, B, C or D to indicate the correct answer to each of the following questions.** **
 
 1. All my friends have big new cars, ____________?
 
@@ -101,23 +101,23 @@ grade: 12
 
 1. You are under no____________to help as assistance is purely voluntary.
 
- A. control B. obligation C. circumstance D. judgement ***Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.***
+ A. control B. obligation C. circumstance D. judgement **Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.**
 
 1. From a financial point of view, it was a very **risky** plan.
 
  A. dangerous B. spoiled C. adventurous D. safe 
 
-1. The conference was really messy and a complete **waste of time****.**
+1. The conference was really messy and a complete **waste of time**.**
 
- A. disorganized B. useless C. chaotic D. useful ***Mark the letter A, B, C or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.***
+ A. disorganized B. useless C. chaotic D. useful **Mark the letter A, B, C or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.**
 
-1. She’s very **efficient****.** She can be relied on to do her job properly.
+1. She’s very **efficient**.** She can be relied on to do her job properly.
 
  A. cautious B. haughty C. ineffective D. incompetent 
 
 1. She has **taken power** after winning the election.
 
- A. ruled B. resigned C. given in D. lost the way ***Mark the letter A, B, C or D to indicate the option that best completes each of the following exchanges.***
+ A. ruled B. resigned C. given in D. lost the way **Mark the letter A, B, C or D to indicate the option that best completes each of the following exchanges.**
 
 1. **Jane:** “Could you show me the way to the station?”
 
@@ -125,7 +125,7 @@ grade: 12
 
 1. **Peter:** “The air quality in Hanoi is getting worse and worse”.
 
-**Jenny:”** ____________”. I can’t see anything in the morning because of too much smog.   A. I don’t really think so. B. I don’t quite agree.   C. You can say that again. D. That’s not a matter. ***Read the following passage and mark the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks.***
+**Jenny:”** ____________”. I can’t see anything in the morning because of too much smog.   A. I don’t really think so. B. I don’t quite agree.   C. You can say that again. D. That’s not a matter. **Read the following passage and mark the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks.**
 
  Psychologists and neuroscientists have divided memory systems into two broad (26) _______, declarative and nondeclarative. The declarative memory system is the system of memory (27) ______ is perhaps the most familiar. It is the memory system that has a conscious component and it includes the memories of facts and events. A fact like ‘Paris is the capital of France’, or an event like a prior vacation to Paris. Nondeclarative memory, also called implicit memory, includes the types of memory systems that do not have a conscious component but are nevertheless extremely (28)______. They include the memories for skills and habits (e.g., riding a bicycle, driving a car, playing golf or tennis or a piano), a phenomenon called priming, simple forms of associative learning and finally (29)______ simple forms of nonassociative learning such as habituation and sensitization. Declarative memory is “knowing what”; (30) ______, nondeclarative memory is “knowing how”.
 
@@ -141,7 +141,7 @@ grade: 12
 
 5. A. but B. besides C. as long as D. therefore
 
-***Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.***
+**Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.**
 
  Edward Patrick Eagan was born April 26, 1897, in Denver, Colorado, and his father died in a railroad accident when Eagan was only a year old. He and his four brothers were raised by his mother, **who** earned a small income from teaching foreign languages. Inspired by Frank Merriwell, the hero of a series of popular novels for boys, Eagan pursued an education for himself as well as an interest in boxing. He attended the University of Denver for a year before serving in the U.S. Army as an artillery lieutenant during World War I. After the war, he entered Yale University and, while studying there, won the U.S. national amateur heavyweight boxing title. He graduated from Yale in 1921, attended Harvard Law School, and received a Rhodes scholarship to the University of Oxford where he received his A.M. in 1928.
 
@@ -165,7 +165,7 @@ grade: 12
 
 1. The word **“attained”** in the last paragraph is closest in meaning to_________ .
 
- A. defeated B. inducted C. achieved D. handed in ***Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.***
+ A. defeated B. inducted C. achieved D. handed in **Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.**
 
  Tomatoes are probably the most popular garden vegetable grown in the United States. This can be **attributed to** their unique flavor, attractiveness, richness as a source of vitamins C and A, and versatility as a food. The popularity of peppers as a garden plant can be attributed to the same factors, although they are usually not consumed in large enough quantities to make them an important nutritional factor in the diet. 
 
@@ -173,7 +173,7 @@ grade: 12
 
  Tomatoes, actually a fruit that is used as a vegetable, began gaining wide acceptance as a food plant in the United States between 1820 and 1850. Modern plant growers have done much to improve the tomato and to add to its usefulness. Its productivity has been doubled, and varieties with larger, smoother, more even shapes and meatier pulps have been developed. The tomato is the leading crop canned in the Unites States today. 
 
- Peppers are also native to America and were grown by American Indian tribes in both North and South America over 2,000 years ago. The small red hot peppers were discovered by Columbus in the West Indies and introduced into Europe, where they became popular before gaining widespread acceptance in the United States. Peppers became one of the first New World foods used commercially in Europe. Botanists class the fruit of the bush-type garden pepper as a berry. Although most varieties of peppers produce red fruits (which are green in their immature stage), there are some yellow-fruited varieties, and peppers are of both mild and pungent types. Peppers enjoy warm climates, and young plants can be injured by frosts. **Seasonings******such as paprika and chili powder and food products such as canned pimentos are commercial uses of garden peppers that are grown in the United States today. 
+ Peppers are also native to America and were grown by American Indian tribes in both North and South America over 2,000 years ago. The small red hot peppers were discovered by Columbus in the West Indies and introduced into Europe, where they became popular before gaining widespread acceptance in the United States. Peppers became one of the first New World foods used commercially in Europe. Botanists class the fruit of the bush-type garden pepper as a berry. Although most varieties of peppers produce red fruits (which are green in their immature stage), there are some yellow-fruited varieties, and peppers are of both mild and pungent types. Peppers enjoy warm climates, and young plants can be injured by frosts. **Seasonings**such as paprika and chili powder and food products such as canned pimentos are commercial uses of garden peppers that are grown in the United States today. 
 
  The familiar spice black pepper known in households throughout the world is the product of a trailing or climbing shrub grown in Indonesia and other hot countries. The islands of Java and Madura furnish most of the black pepper used in American homes. The United States buys almost 25,000 tons of this spice annually. 
 
@@ -203,7 +203,7 @@ grade: 12
 
 1. What can be inferred from the passage?
 
- A. The familiar spice black pepper is the product of a trailing or climbing shrub only grown in Indonesia.   B. America is home to both tomatoes and peppers.   C. Tomato is not a kind of fruit.   D. The United States produces a large amount of pepper spice per year. ***Mark letter A, B, C or D to indicate the underlined part that needs correction.***
+ A. The familiar spice black pepper is the product of a trailing or climbing shrub only grown in Indonesia.   B. America is home to both tomatoes and peppers.   C. Tomato is not a kind of fruit.   D. The United States produces a large amount of pepper spice per year. **Mark letter A, B, C or D to indicate the underlined part that needs correction.**
 
 1. Not Scotland again! It rains every day last time. I want to go somewhere sunny this summer.
 
@@ -215,7 +215,7 @@ grade: 12
 
 1. This is an exhausting list of grammar rules you will need to know for the exam.
 
- A. exhausting B. rules C. to know D. the ***Mark the letter A, B, C or D to indicate the sentence that is closest in meaning to each of the following questions.***
+ A. exhausting B. rules C. to know D. the **Mark the letter A, B, C or D to indicate the sentence that is closest in meaning to each of the following questions.**
 
 1. I haven’t heard from him for ages.
 
@@ -227,7 +227,7 @@ grade: 12
 
 1. Jane still wants to go to the supermarket although the fridge is full of fruits.
 
-A. There is no need for Jane to go to the supermarket.   B. Jane should go to the supermarket.   C. Jane hadn’t better go to the supermarket.   D. Jane mustn’t go to the supermarket. ***Mark the letter A, B, C or D to indicate the sentence that best combines each pair of sentences in the following questions.***
+A. There is no need for Jane to go to the supermarket.   B. Jane should go to the supermarket.   C. Jane hadn’t better go to the supermarket.   D. Jane mustn’t go to the supermarket. **Mark the letter A, B, C or D to indicate the sentence that best combines each pair of sentences in the following questions.**
 
 1. We couldn’t see the mountains because of the rain.
 
@@ -239,20 +239,20 @@ A. There is no need for Jane to go to the supermarket.   B. Jane should go to th
 
 ## 2. HƯỚNG DẪN GIẢI ĐỀ ÔN TẬP THI TN THPT MÔN TIẾNG ANH
 
-***Mark the letter A, B, C or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions*** **.**
+**Mark the letter A, B, C or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions** **.**
 **1.** A. hatr**ed** /id/ B. nak**ed /id/** C. knock**ed** /t/ D. sacr**ed** /id/ **Đáp án C /t/ khác /id/**
-**2.** A. br**ought** /ɔːt/ B. dr**ought**** **/aʊt/ C. s** ought**/ɔːt/ D. th** ought**/ɔːt/** Đáp án B**/aʊt/ khác /ɔːt/
-***Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress in each of the following questions.***
-**3.** A. purpose/1/****B. compose /2/ C. propose /2/ D. suppose /2/** Đáp án A**/1/ khác /2/
+**2.** A. br**ought** /ɔːt/ B. dr**ought** **/aʊt/ C. s** ought**/ɔːt/ D. th** ought**/ɔːt/** Đáp án B**/aʊt/ khác /ɔːt/**
+**Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress in each of the following questions.**
+**3.** A. purpose/1/**B. compose /2/ C. propose /2/ D. suppose /2/** Đáp án A**/1/ khác /2/**
 **4.** A. entertain/3/ B. engineer /3/ C. committee /2/ D. referee/3/ **Đáp án C**/2/ khác /3/ 
-***Mark the letter A, B, C or D to indicate the correct answer to each of the following questions.*** ****
+**Mark the letter A, B, C or D to indicate the correct answer to each of the following questions.** **
 **5.** All my friends have big new cars, ____________?   A. don’t they B. do all C. haven’t they D. do they  **Đáp án A** **Câu hỏi đuôi**  Thì hiện tại đơn mượn trợ động từ **do thêm not thành don’t** vì phía trước không có Phủ định All my friends => they
 **6.** He ____________ that day. He had to pay $500 for that faulty part.   A. had his car repaired B. got the car to repair   C. had the mechanic repaired D. had the car repair  **Đáp án A** **Bị động :** had sb do sth ( nhờ ai làm gì) => Bị động had sth done
 **7.** Fiona is very angry ____________her boss’s decision to sack several members of staffs.   A. against B. with C. about D. at **Đáp án C** **Angry + with sb about sth**
 **8.** The older I am, ____________ I become.   A. more forgetful B. the most increasingly forgetful   C. the more forgetful increasingly D. the more increasingly forgetful  **Đáp án D** **So sánh càng càng :** The so sánh hơn S V, The so sánh hơn S V
 **9.** My roommate has just bought a ____________car.   A. Japanese small old reddish B. small old reddish Japanese   C. small reddish old Japanese D. reddish small old Japanese  **Đáp án B** **Trật tự tính từ :** ASASCOMP
-**10.** The passengers were waiting to board the game when it____________  A. rains B. was raining C. rained D. would rain  **Đáp án C****** Hành động đang xảy ra có hành động khác xen vào thì hành động xen vào chia ở quá khư đơn nếu hành động đang diễn ra chia ở quá khứ tiếp diễn.
-**11.**____________she worked harder, she couldn’t make the deadline.   A. In spite of B. Even though C. Because D. Due to **Đáp án B**** **Mặt dù cô ấy làm việc rất chăm chỉ nhưng cô ấy vẫn không kịp deadline loại C , D** In spite of + N****Even though + S + V** 
+**10.** The passengers were waiting to board the game when it____________  A. rains B. was raining C. rained D. would rain  **Đáp án C** Hành động đang xảy ra có hành động khác xen vào thì hành động xen vào chia ở quá khư đơn nếu hành động đang diễn ra chia ở quá khứ tiếp diễn.
+**11.**____________she worked harder, she couldn’t make the deadline.   A. In spite of B. Even though C. Because D. Due to **Đáp án B** **Mặt dù cô ấy làm việc rất chăm chỉ nhưng cô ấy vẫn không kịp deadline loại C , D** In spite of + N**Even though + S + V** 
 **12.**____________, the plans had been made for an intermediate evacuation(sơ tán) of the city.   A. As soon as the bombing starts B. When the bombing had started   C. By the time the bombing started D. As long as the bombing started  **Đáp án C**
 
 *By the time S + V HTĐ/HTHT, S + TLHT*
@@ -267,7 +267,7 @@ A. There is no need for Jane to go to the supermarket.   B. Jane should go to th
 **15.** In my opinion, it’s a common sense to____________a seat belt in a car.   A. carry on (tiếp tuc B. put out (dập tắt) C. put on=wear (cài) D. carry out (tiến hành) **Đáp án C** **Cụm động từ** Theo quan điểm tôi thấy nó rất bình thường chúng ta phải cài dây an toàn trong xe ô tô
 **16.** How do you____________about the pollution problem in this country?   A. react + to B. feel + about (cảm tấy thế nào)   C. believe D. view  **Đáp án B** **Từ vựng**
 
-***feel + about (cảm tấy thế nào)***
+**feel + about (cảm tấy thế nào)**
 
 **17.** Nobody died in the *terrorism(vụ khủng bố)*, but 20 people were ____________  A. damaged(phá hủy)   B. injured(bị thương trong tai nạn không may xảy ra)   C. spoiled( hư hỏng)   D. wounded (bị thương do boom, khủng bố) **Đáp án D** Không ai bị chết trong vụ khủng bố nhưng khoảng 20 người bị thương
 **18.** My uncle____________of the**inheritance(thừa kế)**.   A. let the cat out of the bag(tiết lộ)   B. got the lion’s share (chiếm phần nhiều)(hậu hĩnh)  C. rolled up his sleeves( chuẩn bị để làm việc chăm chỉ)   D. broke a leg (chúc may mắn) **Đáp án B** **Chú của tôi nhận được tài sản hậu hĩnh trong vụ thừa kế**
@@ -275,17 +275,17 @@ A. There is no need for Jane to go to the supermarket.   B. Jane should go to th
 
 *under no obligation (không có nghĩa vụ phải làm gì)*
 
-Ngoài ra ta còn có under no control : không bị kiểm soát ***Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.***
+Ngoài ra ta còn có under no control : không bị kiểm soát **Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word(s) in each of the following questions.**
 **20.** From a financial point of view, it was a very **risky** (mạo hiểm) plan.   A. dangerous (nguy hiểm) B. spoiled(hư)   C. adventurous (mạo hiểm) D. safe (an toàn) **Đáp án C**
 
 **Từ quan điểm tài chính, đó là một kế hoạch rất rủi ro (mạo hiểm).**
 
-**22.** The conference was really messy and a complete **waste of time(lãng phí mất thời gian)****.**   A. disorganized(vô tổ chức) B. useless (vô ích)   C. chaotic(lung tung) D. useful(có ích) **Đáp án B**
+**22.** The conference was really messy and a complete **waste of time(lãng phí mất thời gian)**.**   A. disorganized(vô tổ chức) B. useless (vô ích)   C. chaotic(lung tung) D. useful(có ích) **Đáp án B**
 
 **Hội nghị thực sự lộn xộn và lãng phí thời gian.**
 
-***Mark the letter A, B, C or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.***
-**23.** She’s very **efficient(hiệu quả)****.** She can be relied on to do her job properly.   A. cautious (cẩn thận) B. haughty (kiêu ngao   C. ineffective (không hiệu quả) D. incompetent (không có năng lực) **Đáp án D**
+**Mark the letter A, B, C or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s) in each of the following questions.**
+**23.** She’s very **efficient(hiệu quả)**.** She can be relied on to do her job properly.   A. cautious (cẩn thận) B. haughty (kiêu ngao   C. ineffective (không hiệu quả) D. incompetent (không có năng lực) **Đáp án D**
 
 **Cô ấy rất hiệu quả. Cô ấy có thể được dựa vào để làm công việc của mình một cách đúng đắn.**
 
@@ -293,7 +293,7 @@ Ngoài ra ta còn có under no control : không bị kiểm soát ***Mark the le
 
 **Cô ấy đã nắm quyền sau khi thắng cử.**
 
-***Mark the letter A, B, C or D to indicate the option that best completes each of the following exchanges.***
+**Mark the letter A, B, C or D to indicate the option that best completes each of the following exchanges.**
 **25.Jane:** “Could you show me the way to the station?” **Jack:** “___________”   A. About ten minutes. B. The show is not interesting.   C. The station is far from here. D. Go ahead, then turn left. 
 
 **Đáp án D**
@@ -320,7 +320,7 @@ C.Nhà ga là xa đây. D. Đi tiếp, sau đó rẽ trái.
 
 C.Đồng ý D.Đó không phải là một vấn đề
 
-***Read the following passage and mark the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks.***
+**Read the following passage and mark the letter A, B, C or D to indicate the correct word or phrase that best fits each of the numbered blanks.**
 
 **26.** **Đáp án A**
 
@@ -352,7 +352,7 @@ C.Đồng ý D.Đó không phải là một vấn đề
 
  Các nhà tâm lý học và nhà khoa học thần kinh đã chia hệ thống trí nhớ thành hai loại lớn, có tính khai báo và không so sánh được. Hệ thống bộ nhớ khai báo là hệ thống bộ nhớ có lẽ là quen thuộc nhất. Đó là hệ thống trí nhớ có một thành phần ý thức và nó bao gồm những ký ức về các sự kiện và sự kiện. Một sự kiện như ‘Paris là thủ đô của Pháp’, hoặc một sự kiện như một kỳ nghỉ trước khi đến Paris. Trí nhớ không xác định, còn được gọi là trí nhớ ngầm, bao gồm các loại hệ thống trí nhớ không có thành phần ý thức nhưng vẫn cực kỳ quan trọng. Chúng bao gồm ký ức về các kỹ năng và thói quen (ví dụ: đi xe đạp, lái xe ô tô, chơi gôn hoặc quần vợt hoặc đàn piano), một hiện tượng gọi là mồi, các hình thức học tập kết hợp đơn giản và cuối cùng là các hình thức học tập không liên kết đơn giản khác như thói quen và sự nhạy cảm. Bộ nhớ khai báo là “biết những gì”; ngoài ra, trí nhớ không phân biệt là “biết như thế nào”.
 
-***Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.***
+**Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.**
 
 **31. Đáp án C**
 
@@ -388,7 +388,7 @@ Edward Patrick Eagan sinh ngày 26 tháng 4 năm 1897 tại Denver, Colorado, v�
 
 Trong thời gian học tại Oxford, Eagan trở thành người Mỹ đầu tiên giành chức vô địch quyền anh nghiệp dư của Anh. Eagan đã giành được huy chương vàng Olympic đầu tiên của mình với tư cách là một võ sĩ quyền anh hạng nặng nhẹ tại Thế vận hội Olympic 1920 ở Antwerp, Bỉ. Eagan cũng từng tham chiến tại Thế vận hội 1924 ở Paris với tư cách là một võ sĩ hạng nặng nhưng không giành được huy chương. Mặc dù mới tham gia môn thể thao này chỉ ba tuần trước cuộc thi, nhưng ông đã giành được huy chương vàng thứ hai với tư cách là thành viên của đội đua xe trượt tuyết bốn người tại Thế vận hội 1932 ở Lake Placid, New York. Như vậy, anh trở thành vận động viên duy nhất giành huy chương vàng ở cả Thế vận hội mùa hè và mùa đông. Eagan là thành viên của nhóm vận động viên đầu tiên được giới thiệu vào Đại sảnh Danh vọng Olympic Hoa Kỳ vào năm 1983. Eagan trở thành một luật sư được kính trọng, từng là trợ lý luật sư quận phía nam New York và là chủ tịch của Ủy ban thể thao bang New York (1945 – 51). Ông kết hôn với nữ thừa kế Margaret Colgate và đạt cấp bậc trung tá trong Thế chiến thứ hai.
 
-***Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.***
+**Read the following passage and mark the letter A, B, C or D to indicate the correct answer to each of the questions.**
 
 **36.** Đáp án B
 
@@ -408,7 +408,7 @@ Thông tin : This can be attributed to their unique flavor, attractiveness, rich
 Thông tin :It was introduced to other areas of the world by Indians and European travelers. Its seeds were taken to Europe, where a superstition soon arose that the tomato stimulated love. Because of this, the tomato was called the “love apple”. The first report of the tomato in North America was in 1710, where it was grown primarily as an ornamental plant. Early colonists brought the seeds to Virginia and grew tomatoes in flower gardens. (Nó đã được giới thiệu đến các khu vực khác trên thế giới bởi người Ấn Độ và du khách châu Âu. Hạt giống của nó đã được đưa đến châu Âu, nơi một sự mê tín đã sớm nảy sinh rằng cà chua kích thích tình yêu. Chính vì vậy mà cà chua được mệnh danh là “quả táo tình yêu”. Báo cáo đầu tiên về cà chua ở Bắc Mỹ là vào năm 1710, nơi nó được trồng chủ yếu như một loại cây cảnh. Những người thực dân ban đầu đã mang hạt giống đến Virginia và trồng cà chua trong các vườn hoa.) |
 | --- |
 
-**39.****Đáp án A**
+**39.**Đáp án A**
 
 | Theo đoạn văn, các loại cà chua khác nhau đã được phát triển _________ .
 Thông tin : Its productivity has been doubled, and varieties with larger, smoother, more even shapes and meatier pulps have been developed.( Năng suất của nó đã được tăng gấp đôi và các giống có hình dạng lớn hơn, mịn hơn, đồng đều hơn và bột thịt nhiều hơn đã được phát triển)
@@ -450,43 +450,43 @@ Cà chua, thực sự là một loại trái cây được sử dụng như mộ
 
 Hạt tiêu đen gia vị quen thuộc được biết đến trong các hộ gia đình trên khắp thế giới là sản phẩm của một loại cây bụi hay cây leo được trồng ở Indonesia và các nước nóng khác. Các đảo Java và Madura cung cấp hầu hết tiêu đen được sử dụng trong các ngôi nhà của người Mỹ. Hoa Kỳ mua gần 25.000 tấn gia vị này hàng năm.
 
-  ***Mark letter A, B, C or D to indicate the underlined part that needs correction.*** **43.****Đáp án B** Ta thấy có ***Last time*** chứng tỏ đã xa ở quá khứ vì thế rains sai
+  **Mark letter A, B, C or D to indicate the underlined part that needs correction.** **43.**Đáp án B** Ta thấy có **Last time** chứng tỏ đã xa ở quá khứ vì thế rains sai**
 
-***Sửa lại rains => rained***
+**Sửa lại rains => rained**
 
-**44.****Đáp án C** Ta thấy it thay thế cho the cornea mà the cornea là N số ít không thể dùng their vì vậy their sai
+**44.**Đáp án C** Ta thấy it thay thế cho the cornea mà the cornea là N số ít không thể dùng their vì vậy their sai**
 
-***Sửa lại their => its***
+**Sửa lại their => its**
 
-**45.****Đáp án A** **Từ gây nhầm lẫn** Exhaustive : hoàn thành, đầy đủ Exhausting : kiệt sức
+**45.**Đáp án A** **Từ gây nhầm lẫn** Exhaustive : hoàn thành, đầy đủ Exhausting : kiệt sức**
 
-***Sửa lại exhausting => exhaustive***
+**Sửa lại exhausting => exhaustive**
 
 **Dịch :** Đây là danh sách đầy đủ các quy tắc ngữ pháp bạn sẽ cần biết cho kỳ thi.
 
-***Mark the letter A, B, C or D to indicate the sentence that is closest in meaning to each of the following questions.*** **46.****Đáp án B** **Chuyển đổi từ quá khứ đơn sang hiện tại hoàn thành và ngược lại**
+**Mark the letter A, B, C or D to indicate the sentence that is closest in meaning to each of the following questions.** **46.**Đáp án B** **Chuyển đổi từ quá khứ đơn sang hiện tại hoàn thành và ngược lại**
 
 **S +have/has + not + V3/ed + for + khoảng thời gian.**
 
 **+ since + mốc thời gian**
 
-**=>****S + Last +V2/ed + time +ago/in+ mốc thời gian./when + clause**
+**=>**S + Last +V2/ed + time +ago/in+ mốc thời gian./when + clause**
 
 **Dựa vào công thức ta chọn được B**
 
-**47.****Đáp án A**
+**47.**Đáp án A**
 
 **“Tôi có thể xem vé của bạn không?”, Người phụ trách nói.**
 
-**Câu tường thuật : S +** required + to V **48.****Đáp án A**
+**Câu tường thuật : S +** required + to V **48.**Đáp án A**
 
-**Jane vẫn muốn đi siêu thị mặc dù****tủ lạnh đầy hoa quả.*** *=> Không cần thiết để đi chợ nửa dễ dàng chọn A**
+**Jane vẫn muốn đi siêu thị mặc dù**tủ lạnh đầy hoa quả.** *=> Không cần thiết để đi chợ nửa dễ dàng chọn A**
 
-***Mark the letter A, B, C or D to indicate the sentence that best combines each pair of sentences in the following questions.*** **49.****Đáp án C**
+**Mark the letter A, B, C or D to indicate the sentence that best combines each pair of sentences in the following questions.** **49.**Đáp án C**
 
 **Câu điều ước : Chúng tôi không thể nhìn thấy những ngọn núi vì mưa.**
 
-We couldn’t see the mountains because of the rain. (đã xảy ra)  A. If only it didn’t rain so we could see the mountains. (ước hiện tại sai)  B. If it hadn’t rained, we could see the mountains. (sai ngữ pháp)  C. I wish I had been able to see the mountains without rain. (ước muốn đã xảy ra trong quá khứ đúng)   D. But for the rain, I could see the mountains. (sai ngữ pháp) **50.****Đáp án B**
+We couldn’t see the mountains because of the rain. (đã xảy ra)  A. If only it didn’t rain so we could see the mountains. (ước hiện tại sai)  B. If it hadn’t rained, we could see the mountains. (sai ngữ pháp)  C. I wish I had been able to see the mountains without rain. (ước muốn đã xảy ra trong quá khứ đúng)   D. But for the rain, I could see the mountains. (sai ngữ pháp) **50.**Đáp án B**
 
 **Đảo ngữ : Khi băng qua cánh đồng, chúng tôi nhìn thấy một ngôi nhà nhỏ xíu dưới chân núi.**
 

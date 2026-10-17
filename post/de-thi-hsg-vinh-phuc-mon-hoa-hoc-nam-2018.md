@@ -19,7 +19,7 @@ Thời gian làm bài: 180 phút, không kể thời gian phát đề.
 Đề thi gồm 02 trang |
 | --- | --- |
 
-**Câu 1 (1,0 điểm)
+**Câu 1 (1,0 điểm)**
 1. Bằng phương pháp hóa học và chỉ dùng một thuốc thử là dung dịch H2SO4 loãng, hãy nhận biết các ống nghiệm chứa các dung dịch riêng biệt sau: BaS, Na2S2O3, Na2SO4, Na2CO3, Fe(NO3)2. Viết các phương trình hóa học xảy ra.
 
 2. Nêu và giải thích hiện tượng xảy ra khi tiến hành các thí nghiệm sau:
@@ -28,7 +28,7 @@ Thời gian làm bài: 180 phút, không kể thời gian phát đề.
 
 *Thí nghiệm 2*: Cho nước ép quả chuối chín vào dung dịch AgNO3 trong NH3 dư, sau đó đun nóng nhẹ. 
 
-**Câu 2(1,0 điểm)
+**Câu 2(1,0 điểm)**
 1. Hai chất hữu cơ X và Y đều đơn chức, mạch hở, tham gia phản ứng tráng bạc.X, Y có cùng số nguyên tử cacbon và MX< MY. Khi đốt cháy hoàn toàn mỗi chất trong oxi dư chỉ thu được CO2, H2O và số mol H2O bằng số mol CO2. Cho 0,15 mol hỗn hợp E gồm X và Y phản ứng hoàn toàn với lượng dư dung dịch AgNO3 trong NH3, thu được 42,12 gam Ag. Tính khối lượng của Y trong hỗn hợp E.
 
 2. X có công thức phân tửC6H10O5, X phản ứng với NaHCO3 và với Na đều sinh ra chất khí có số mol đúng bằng số mol X đã dùng. X, B và D thỏa mãn sơ đồ sau theo đúng tỉ lệ mol.
@@ -41,7 +41,7 @@ B + 2NaOH  2D.
 
 Xác định công thức cấu tạo của X, B, D. Biết D có nhóm metyl.
 
-**Câu 3(1,0 điểm)
+**Câu 3(1,0 điểm)**
 1. Chất hữu cơX có công thức phân tử C7H18O2N2 thỏa mãn các phương trình hóa học sau theo đúng tỉ lệ mol. 
 
 (1) C7H18O2N2 (X) + NaOH X1 + X2 + H2O 
@@ -56,26 +56,26 @@ Xác định công thức cấu tạo của các chất X, X1, X2, X3, X4.
 
 2. X có công thức phân tử C6H6. X chỉ có các vòng đơn, không có liên kết π,cộng Br2 theo tỉ lệ 1:2, tác dụng với H2tỉ lệ 1:5. X tác dụng với Cl2(ánh sáng) theo tỉ lệ 1:1 thu được một sản phẩm monoclo duy nhất. Xác định công thức cấu tạo của X.
 
-**Câu 4(1,0 điểm)
+**Câu 4(1,0 điểm)**
 Viết phương trình hóa học điều chế các chất sau, ghi rõ điều kiện phản ứng (nếu có).
 
 1. Trong phòng thí nghiệm: N2, H3PO4, CO, C2H4, C2H2. 
 
 2. Trong công nghiệp: photpho, urê, etin, etanal, supephotphat đơn. 
 
-**Câu 5(1,0 điểm)
+**Câu 5(1,0 điểm)**
 1. Cho X là axit cacboxylic, Y là amino axit (phân tử có một nhóm NH2). Đốt cháy hoàn toàn 0,5 mol hỗn hợp gồm X và Y, thu được khí N2; 15,68 lít khí CO2 (đktc) và 14,4 gam H2O. Xác định công thức cấu tạo của X, Y.
 
  2. Hỗn hợp X gồm 2 este đơn chức và đều chứa vòng benzen trong phân tử, tỉ khối hơi của X đối với O2 luôn bằng 4,25 với mọi tỉ lệ số mol giữa 2 este. Cho 34 gam X tác dụng vừa đủ với 175ml dung dịch NaOH 2M. Cô cạn dung dịch sau phản ứng thu được m gam hỗn hợp Y gồm 2 muối khan. Tính m.
 
-**Câu 6 (1,0 điểm)
+**Câu 6 (1,0 điểm)**
 Hòa tan hết m gam hỗn hợp gồm Na, Na2O, Ba và BaO vào nước, thu được 0,15 mol khí H2 và dung dịch X. Sục 0,32 mol khí CO2 vào dung dịch X, thu được dung dịch Y chỉ chứa các ion Na+, và kết tủa Z. Chia dung dịch Y làm 2 phần bằng nhau.
 
 – Cho từ từ đến hết phần 1 vào 200 ml dung dịch HCl 0,6M thấy thoát ra 0,075 mol khí CO2, coi tốc độ phản ứng của  với H+ bằng nhau.
 
 – Cho từ từ đến hết 200 ml dung dịch HCl 0,6M vào phần 2, thấy thoát ra 0,06 mol khí CO2. Các phản ứng xảy ra hoàn toàn, H2O phân li không đáng kể. Tính m.
 
-**Câu 7 (1,0 điểm)
+**Câu 7 (1,0 điểm)**
 1. Viết các phương trình hóa học trong sơ đồ sau đây:
 
 .
@@ -84,18 +84,18 @@ Biết rằng X, Z, T, M là các chất hữu cơ; Y có tên gọi là*p*-nitr
 
 2. Tiến hành lên men m gam glucozơ thành C2H­5OH với hiệu suất 75%, rồi hấp thụ hết lượng CO2 sinh ra vào 2 lít dung dịch NaOH 0,5M (d = 1,05 gam/ml) thu được dung dịch hỗn hợp hai muối có tổng nồng độ phần trăm là 3,211%. Tính m.
 
-**Câu 8 (1,0 điểm)
+**Câu 8 (1,0 điểm)**
 Hòa tan hết m gam hỗn hợp rắn A gồm Mg, Cu(NO3)2, Fe, FeCO3 bằng dung dịch chứa H2SO4 và 0,054 mol NaNO3, thu được dung dịch B chỉ chứa 75,126 gam các muối (không có ion Fe3+) và thấy thoát ra 7,296 gam hỗn hợp khí X gồm N2, N2O, NO, H2, CO2 (trong X có chứa 0,024 mol H2). Cho dung dịch NaOH 1M vào dung dịch B đến khi thu được lượng kết tủa lớn nhất là 38,064 gam thì dùng hết 1038 ml dung dịch NaOH. Mặt khác, cho BaCl2 vào dung dịch B vừa đủ để kết tủa hết **,** sau đó cho tiếp dung dịch AgNO3 dư vào thì thu được 307,248 gam kết tủa. Biết các phản ứng xảy ra hoàn toàn. Tính % khối lượng của FeCO3 có trong hỗn hợp A.
 
-**Câu 9(1,0 điểm)
+**Câu 9(1,0 điểm)**
  Hỗn hợp E chứa các chất hữu cơ mạch hở gồm tetrapeptit X; pentapeptit Y và Z là este của α-amino axit có công thức phân tử C3H7O2N. Đun nóng 36,86 gam hỗn hợp E với dung dịch NaOH vừa đủ, cô cạn dung dịch sau phản ứng thu được phần hơi chứa ancol T có khối lượng 3,84 gam và phần rắn gồm 2 muối của glyxin và alanin. Đốt cháy hết hỗn hợp muối cần dùng 1,455 mol O2,thu được CO2, H2O, N2 và 26,5 gam Na2CO3. Tính phần trăm khối lượng của Y trong E.
 
-**Câu 10 (1,0 điểm)
+**Câu 10 (1,0 điểm)**
 1. Đốt cháy hoàn toàn 2,54 gam este A (không chứa nhóm chức khác) mạch hở, được tạo ra từ một axit cacboxylic đơn chức và ancol no, thu được 2,688 lít khí CO2 (đktc) và 1,26 gam nước. Cho 0,1 mol A tác dụng vừa đủ với 200ml NaOH 1,5M tạo ra m gam muối và ancol.Tính giá trị m.
 
 2. Cho 7,65 gam hỗn hợp X gồm Al và Mg tan hoàn toàn trong 500 ml dung dịch H2SO40,8M, thu được dung dịch X và khí H2. Cho 850 ml dung dịch gồm NaOH 1M vào X, sau khi các phản ứng xảy ra hoàn toàn thu được 16,5 gam kết tủa gồm 2 chất. Tính % khối lượng của Al, Mg trong X.
 
-**————–Hết—————
+**————–Hết—————**
 *Thí sinh được**sử dụng bảng tuần hoàn các nguyên tố hóa học**.
 *Cán bộ coi thi không giải thích gì thêm.
 *Họ và tên thí sinh:*…………………….………….…….….….; *Số báo danh*:……………………….
@@ -106,12 +106,12 @@ Hòa tan hết m gam hỗn hợp rắn A gồm Mg, Cu(NO3)2, Fe, FeCO3 bằng du
 Đáp án gồm có 6 trang |
 | --- | --- |
 
-**I. LƯU Ý CHUNG:
+**I. LƯU Ý CHUNG:**
 – Hướng dẫn chấm chỉ trình bày một cách giải với những ý cơ bản phải có. Khi chấm bài học sinh làm theo cách khác nếu đúng và đủ ý thì vẫn cho điểm tối đa.
 
 – Điểm toàn bài tính đến 0,25 và không làm tròn.
 
-**II. ĐÁP ÁN:
+**II. ĐÁP ÁN:**
 | CÂU | NỘI DUNG TRÌNH BÀY | ĐIỂM |
 | --- | --- | --- |
 | 1 | 1. – Mẫu thử tạo khí mùi trứng thối và kết tủa trắng là BaS BaS + H2SO4 H2S + BaSO4 . – Mẫu thử vừa tạo khí mùi sốc vừa tạo kết tủa vàng với H2SO4 loãng là Na2S2O3 Na2S2O3 + H2SO4 S + SO2 + Na2SO4 + H2O. – Mẫu thử tạo khí không màu không mùi với H2SO4 loãng là Na2CO3 Na2CO3 + H2SO4 CO2 + Na2SO4 + H2O – Mẫu thử tạo khí không màu hóa nâu trong không khí là Fe(NO3)2. 3Fe2+ + 4H+ + 3Fe3+ + NO + 2H2O.  2NO + O2 2NO2 Còn lại là Na2SO4. | 0,25 0,25 |
@@ -136,7 +136,7 @@ Hòa tan hết m gam hỗn hợp rắn A gồm Mg, Cu(NO3)2, Fe, FeCO3 bằng du
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file word đề và đáp án đề thi
 
-- [DE HSG VINH PHUC 20172018](/assets/docs/DE-HSG-VINH-PHUC-20172018.docx)
+- [DE HSG VINH PHUC 20172018](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

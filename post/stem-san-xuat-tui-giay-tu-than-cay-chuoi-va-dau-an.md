@@ -349,7 +349,7 @@ pectin và lignin cung cấp các sợi có đặc tính cơ học mạnh (Manil
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [SẢN XUAT GIẤY TỪ THÂN CÂY CHUỐI](/assets/docs/SAN-XUAT-GIAY-TU-THAN-CAY-CHUOI.pdf)
+- [SẢN XUAT GIẤY TỪ THÂN CÂY CHUỐI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

@@ -16,7 +16,7 @@ grade: 12
 | SỞ GIÁO DỤC VÀ ĐÀO TẠO QUẢNG TRỊ ĐỀ THI CHÍNH THỨC     (Đề thi có 02 trang) | KỲ THI CHỌN HỌC SINH GIỎI VĂN HÓA LỚP 12 THPT Khóa thi ngày 19 tháng 9 năm 2023 MÔN THI: HÓA HỌC Thời gian làm bài: 180 phút, không kể thời gian phát đề   |
 | --- | --- |
 
-**Câu 1.***(5,0 điểm)
+**Câu 1.**(5,0 điểm)
 1. Viết các phương trình hoá học để hoàn thành dãy biến hoá sau:
 
 2. Chỉ dùng chất chỉ thị phenolphtalein, hãy phân biệt các dung dịch sau đựng trong các lọ riêng biệt bị mất nhãn: NaHSO4, Na2­CO3, BaCl2, NaCl, Mg(NO3)2, AlCl3. Viết phương trình hóa học của các phản ứng xảy ra.
@@ -25,7 +25,7 @@ grade: 12
 
 **4.** Cho hỗn hợp gồm Al và Mg tác dụng với 1 lít dung dịch gồm AgNO3 bM và Cu(NO3)2 2bM, thu được 45,2 gam chất rắn B. Cho B tác dụng với dung dịch HNO3 đặc, nóng, dư; thu được 0,7 mol NO2 (sản phẩm khử duy nhất của HNO3). Biết các phản ứng xảy ra hoàn toàn. Tính giá trị của b.
 
-**Câu 2.***(5,0 điểm)
+**Câu 2.**(5,0 điểm)
 **1.** Nung hỗn hợp gồm Al, Fe3O4 và Cu ở nhiệt độ cao (không có mặt O2), thu được chất rắn X. Cho X vào dung dịch NaOH dư, thu được chất rắn Y và khí H2. Cho Y vào dung dịch chứa AgNO3, thu được chất rắn Z và dung dịch E chứa 3 muối. Cho dung dịch HCl vào E, thu được khí NO. Các phản ứng xảy ra hoàn toàn. Viết phương trình hoá học của các phản ứng xảy ra.
 
 **2.** Viết phương trình hóa học trong các trường hợp sau:
@@ -46,7 +46,7 @@ grade: 12
 
 **b)** Xác định kim loại M.
 
-**Câu  3.***(4,0 điểm)
+**Câu  3.**(4,0 điểm)
 **1.** Hoàn thành các phương trình hoá học theo sơ đồ sau đây:
 
 **a)** NaCl + H2SO4 đặc, nóng →           
@@ -63,7 +63,7 @@ grade: 12
 
 **4.** Hỗn hợp X gồm Cu, CuO, Fe và Fe3O4. Hòa tan hoàn toàn m gam X trong dung dịch chứa 0,775 mol HCl (dư 25% so với lượng phản ứng), thu được 0,06 mol H2 và 250 gam dung dịch Y. Mặt khác, hòa tan hoàn toàn m gam X trong dung dịch H2SO4 đặc, nóng; thu được dung dịch Z chứa 3 chất tan và 0,09 mol SO2 (sản phẩm khử duy nhất của H2SO4). Cho Z tác dụng với dung dịch Ba(OH)2 dư, kết thúc phản ứng, thu được kết tủa T. Nung T trong không khí đến khối lượng không đổi, thu được 103,22 gam chất rắn. Tính nồng độ phần trăm FeCl3 trong Y.
 
-**Câu 4.***(6,0 điểm)
+**Câu 4.**(6,0 điểm)
 **1.** Viết các phương trình hoá học để hoàn thành dãy biến hoá sau:
 
 Biết C1, C2, B1, B2 là các chất hữu cơ khác nhau.
@@ -96,18 +96,18 @@ Cho: H = 1; C = 12; N = 14; O = 16; Na = 23; Mg = 24; Al = 27; S = 32; Cl = 35,5
 
  Ca = 40; Fe = 56; Cu = 64; Zn = 65; Br = 80; Ag = 108
 
-**—————– HẾT —————–
+**—————– HẾT —————–**
 Thí sinh được phép sử dụng Bảng tuần hoàn các nguyên tố hóa học và Bảng tính tan
 
-***Họ và tên thí sinh: …………………………………… Số báo danh: ………………
+**Họ và tên thí sinh: …………………………………… Số báo danh: ………………**
 *
 | SỞ GIÁO DỤC VÀ ĐÀO TẠO QUẢNG TRỊ | KỲ THI CHỌN HỌC SINH GIỎI VĂN HÓA LỚP 12 THPT Khóa thi ngày 19 tháng 9 năm 2023 |
 | --- | --- |
 
-**HƯỚNG DẪN CHẤM ĐỀ THI CHÍNH THỨC
-**MÔN  HÓA HỌC
+**HƯỚNG DẪN CHẤM ĐỀ THI CHÍNH THỨC**
+**MÔN  HÓA HỌC**
 *(Hướng dẫn chấm có 07 trang)
-**Câu 1.***(5,0 điểm)
+**Câu 1.**(5,0 điểm)
 1. Viết các phương trình hoá học để hoàn thành dãy biến hoá sau:
 
 2. Chỉ dùng chất chỉ thị phenolphtalein, hãy phân biệt các dung dịch sau đựng trong các lọ riêng biệt bị mất nhãn: NaHSO4, Na2­CO3, BaCl2, NaCl, Mg(NO3)2, AlCl3. Viết  phương trình hóa học của các phản ứng xảy ra.
@@ -123,10 +123,10 @@ Thí sinh được phép sử dụng Bảng tuần hoàn các nguyên tố hóa 
 | 3 | Bảo toàn khối lượng: mO = (m – 28,8) gam | 1,0 |  |
 | 4 | PTHH: Ag + 2HNO3 đặc  AgNO3 + NO2 + H2O (1)  Cu + 4HNO3 đặc Cu(NO3)2 + 2NO2 + 2H2O (2) – Giả sử Y chỉ có a mol Ag: a=45,2 : 108 ≈ 0,419 mol   – Giả sử Y có b mol Ag và 2b mol Cu: – Như vậy hỗn hợp Y gồm a mol Ag và mol Cu Theo (1,2): | 1,0 |  |
 
-**Câu 2.***(5,0 điểm)
+**Câu 2.**(5,0 điểm)
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-12-Quang-Tri-File-De-HDC](/assets/docs/2023-2024-HSG-12-Quang-Tri-File-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-12-Quang-Tri-File-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

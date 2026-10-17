@@ -17,15 +17,15 @@ Giáo án powerpoint hóa 11 bài 15 alkane KNTT
 | CHƯƠNG 4: HYDROCARBON BÀI 15: ALKANE |
 | --- |
 
-**I .   KHÁI NIỆM – DANH PHÁP
-**1. Khái niệm và công thức chung của alkane
+**I .   KHÁI NIỆM – DANH PHÁP**
+**1. Khái niệm và công thức chung của alkane**
 1. Alkane là các ……………………… mạch ……chỉ chứa liên kết ……………… trong phân tử.
 
 2. Công thức chung của alkane: …… …… (n là ………………).
 
 Ví dụ: …………………………………………
 
-**2. Danh pháp
+**2. Danh pháp**
 *a) Alkane không phân nhánh
 Tên theo danh pháp thay thế của alkane mạch không phân nhánh:
 
@@ -103,14 +103,14 @@ Ví dụ:
 
 .…………………………………………………….…………………………………………………….…………………………………………
 
-**II .   ĐẶC ĐIỂM CẤU TẠO
+**II .   ĐẶC ĐIỂM CẤU TẠO**
   Trong phân tử alkane chỉ chứa các liên kết ………… C–C và C–H, các liên kết này là liên kết ……………….…và …………….
 
 → Do vậy, phân tử alkane hầu như …………………………và ở điều kiện thường chúng tương đối …………… về mặt hoá học.
 
   Trong phân tử methane, bốn liên kết C–H giống nhau tạo với nhau một góc 109,5° và hướng về bốn đỉnh của một tứ diện đều (Hình 15.1a).
 
-**III. TÍNH CHẤT VẬT LÍ
+### Iii. Tính Chất Vật Lí
   Ở điều kiện thường,
 
 - Alkane từ …… đến …… và ………………… ở trạng thái ……
@@ -135,7 +135,7 @@ Ví dụ:
 
 .…………………………………………………….……………………
 
-**IV. TÍNH CHẤT HÓA HỌC:
+**IV. TÍNH CHẤT HÓA HỌC:**
 1. **Phản ứng thế với halogen X2
 2. Trộn methane với chlorine, chiếu ánh sáng tử ngoại
 
@@ -155,7 +155,7 @@ CHCl3 + Cl2      …………………………… +  ……..      
 
 CH3-CH2-CH3 + Cl2  ………………………………………
 
-  **Thí nghiệm: phản ứng bromine hoá hexane
+  **Thí nghiệm: phản ứng bromine hoá hexane**
 - Chuẩn bị: ống nghiệm, hexane, nước bromine, cốc thuỷ tinh.
 
 *Tiến hành:
@@ -192,7 +192,7 @@ Trả lời câu hỏi:
 
 .…………………………………………………….……………………
 
-**2. Phản ứng cracking
+**2. Phản ứng cracking**
  *Cracking alkane là quá trình*………………* liên kết*…………*(bẻ gãy mạch carbon) của các alkane mạch*………* để tạo thành hỗn hợp các hydrocarbon có mạch carbon*………………*.
  *Phản ứng cracking được ứng dụng trong công nghiệp lọc dầu. Phản ứng cracking được thực hiện trong điều kiện nhiệt độ cao và thường có xúc tác.
 Ví dụ: Cracking nonane
@@ -203,7 +203,7 @@ C9H20   ………………………………………………
 
  ………………………………………………
 
-**3. Phản ứng reforming
+**3. Phản ứng reforming**
  *Reforming alkane là quá trình chuyển các alkane mạch*……………………………… *thành các alkane mạch*………………* và các hydrocarbon*……………… *nhưng*…………………………… ………… * trong phân tử và cũng không làm thay đổi đáng kể nhiệt độ sôi của chúng.
  Reforming alkane xảy ra quá trình đồng phân hoá (isomer hoá) và arene hoá (thơm hoá).
 
@@ -213,7 +213,7 @@ Ví dụ: reforming hexane thu được các alkane mạch nhánh và các hydro
 
 Quá trình reforming được ứng dụng trong công nghiệp lọc dầu để làm tăng chỉ số octane của xăng và sản xuất các arene (benzene, toluene, xylene) làm nguyên liệu cho công nghiệp tổng hợp hữu cơ.
 
-**4. Phản ứng oxi hóa
+**4. Phản ứng oxi hóa**
 *a.**Phản ứng oxi hóa hoàn toàn:
 CnH2n+2   +  …….O2 ……………+………….
 
@@ -230,13 +230,13 @@ RCH2-CH2R’ +     O2   →.………….……………………………
 
  Các acid béo mạch dài dùng để sản xuất xà phòng và các chất tẩy rửa được điều chế bằng phương pháp oxi hoá cắt mạch các alkane C25 – C35.
 
-**Thí nghiệm:  phản ứng oxi hoá hexane
+**Thí nghiệm:  phản ứng oxi hoá hexane**
 Chuẩn bị: hexane, dung dịch KMnO4 1%, ống nghiệm, bát sứ, que đóm. Tiến hành.
 
-***1. Phản ứng của hexane với dung dịch KMnO4
+**1. Phản ứng của hexane với dung dịch KMnO4**
 Cho khoảng 1 mL hexane vào ống nghiệm, thêm vài giọt dung dịch KMnO4 1%, lắc đều ống nghiệm trong khoảng 5 phút, sau đó đặt ống nghiệm vào giá rồi để yên khoảng 10 phút. Quan sát thấy ống nghiệm có 2 lớp, lớp dưới là dung dịch KMnO4 trong nước màu tím, lớp trên là hexane không màu.
 
-***2. Phản ứng đốt cháy hexane
+**2. Phản ứng đốt cháy hexane**
 Cho khoảng 1 mL hexane (lưu ý không được lấy nhiều hơn) vào bát sứ nhỏ, cần thận đưa que đóm đang chảy vào bề mặt chất lỏng, hexane bốc cháy cho ngọn lửa màu vàng.
 
 *Trả lời câu hỏi:
@@ -260,10 +260,10 @@ c) Nếu đốt cháy hexane trong điều kiện thiếu oxygen sẽ tạo ra c
 
 ……………………….……………………………………………………
 
-*** 6.* Viết phương trình hóa học của phản ứng đốt cháy hoàn toàn pentan
+** 6.* Viết phương trình hóa học của phản ứng đốt cháy hoàn toàn pentan**
 ……………………….……………………………………………………
 
-**V. ỨNG DỤNG
+### V. Ứng Dụng
  Khí thiên nhiên và khí dầu mỏ là …………………………và được ………………………………trên thế giới. Chúng được sử dụng làm ………………………………………………………………
 
  LPG (…………………………………………) thương phẩm chứa ……………………và …………………….
@@ -276,45 +276,45 @@ c) Nếu đốt cháy hexane trong điều kiện thiếu oxygen sẽ tạo ra c
 
  Các alkane từ C11 đến C20 (…………) được dùng làm …………… ………, …………, ……………………. Các alkane từ C20 đến C35 (……………………) được dùng làm …………, …………,…
 
-  **7.   Tại sao ở các cây xăng, kho chứa xăng dầu thường treo các biển cấm dưới đây?
+  **7.   Tại sao ở các cây xăng, kho chứa xăng dầu thường treo các biển cấm dưới đây?**
 ……………………….……………………………………………………
 
 ……………………….……………………………………………………
 
 ……………………….……………………………………………………
 
-**VI. ĐIỀU CHẾ
-**1. Phương pháp điều chế alkane ở thể khí trong công nghiệp
+### Vi. Điều Chế
+**1. Phương pháp điều chế alkane ở thể khí trong công nghiệp**
  Các alkane ở thể khí chủ yếu được lấy từ ……………………và ……………………. Sau khi loại bỏ các ………………………………… (đặc biệt là ……………………), khí được dẫn qua đường ống dẫn đến nơi tiêu thụ hoặc được nén lại ở dạng ………… (……………………………) để dễ dàng …………………….
 
  Khí dầu mỏ hoá lỏng là …………, còn khí thiên nhiên hoá lỏng là ………… (…………………………………………).
 
-**2. Phương pháp điều chế alkane ở thể lỏng, rắn trong công nghiệp
+**2. Phương pháp điều chế alkane ở thể lỏng, rắn trong công nghiệp**
  Khi ……………………dầu mỏ nhận được ……………………có chiều dài ………………………………ở các ……………………………. Để nhận được các alkane tinh khiết cần phải có ………………………….
 
 ………………………………
 
  Khi ngưng tụ chứa chủ yếu alkane ……………………, là sản phẩm thu được khi ………………………………. Chúng được bơm lên cùng với ………… và được ngưng tụ thành ……………………. Khi ngưng tụ thường được chế biến thành ………….
 
-**VII. Ô NHIỄM KHÔNG KHÍ DO PHƯƠNG TIỆN GIAO THÔNG
-**1. Các chất trong khí thải của phương tiện giao thông gây ô nhiễm không khí
+### Vii. Ô Nhiễm Không Khí Do Phương Tiện Giao Thông
+**1. Các chất trong khí thải của phương tiện giao thông gây ô nhiễm không khí**
 – Quá trình …………. của ………….………….trong động cơ các phương tiện giao thông là nguyên nhân chính gây ………….………….làm Trái Đất ………….………….
 
 – Ngoài ra quá trình …………. tạo ………….………….khiến oxygen và nitrogen trong không khí ………….………….với nhau, tạo thành các loại ………….của nitrogen (………….…………). Các chất này gây ……… ………….môi trường không khí. 
 
-**2. Một số biện pháp hạn chế ô nhiễm môi trường do các phương tiện giao thông
+**2. Một số biện pháp hạn chế ô nhiễm môi trường do các phương tiện giao thông**
 – Sử dụng ………….………….………….. 
 
 – Sử dụng ………….………….………….như xăng pha thêm ethanol (E5, E10…), blodiesel.
 
 – Sử dụng các phương tiện giao thông ………….………….………….và chuyển đổi sang ………….………….…………..
 
-**VIII. LUYỆN TẬP
+### Viii. Luyện Tập
 - Công thức chung của dãy đồng đẳng của methane là
 
-**A.** Cn+1H2n+2.                                       **B.** CnH2n. 
+**A.** Cn+1H2n+2.                                       B.** CnH2n. **
 
-**C.** CnH2n-2.                                           **D.** CnH2n+2.
+**C.** CnH2n-2.                                           D.** CnH2n+2.**
 
 -  Dãy chất nào sau đây thuộc dãy đồng đẳng có công thức chung là CnH2n+2.
 
@@ -328,32 +328,32 @@ c) Nếu đốt cháy hexane trong điều kiện thiếu oxygen sẽ tạo ra c
 
 - Có bao nhiêu đồng phân cấu tạo có công thức phân tử C5H12
 
-**A.** 3 đồng phân.                                  **B.** 4 đồng phân. 
+**A.** 3 đồng phân.                                  B.** 4 đồng phân. **
 
-**C.** 5 đồng phân.                                  **D.** 6 đồng phân
+**C.** 5 đồng phân.                                  D.** 6 đồng phân**
 
 - Sản phẩm tạo thành của phản ứng CH4 + Cl2 (1:1) là
 
-**A.** CH3Cl + HCl.                                **B.** CH2Cl2 + HCl.          
+**A.** CH3Cl + HCl.                                B.** CH2Cl2 + HCl.          **
 
-**C.** CHCl3 + HCl.                                **D.** CCl4 + HCl.
+**C.** CHCl3 + HCl.                                D.** CCl4 + HCl.**
 
 - Hợp chất 2,3 – dimethylbutane có công thức cấu tạo là
 
-**A.** CH3C(CH3)2CH2CH3.                   **B.** CH3CH(CH3)CH2CH3.
+**A.** CH3C(CH3)2CH2CH3.                   B.** CH3CH(CH3)CH2CH3.**
 
-**C.** CH3CH(CH3)CH3.                         **D.** CH3CH(CH3)CH(CH3)CH3.
+**C.** CH3CH(CH3)CH3.                         D.** CH3CH(CH3)CH(CH3)CH3.**
 
 - Hợp chất có công thức cấu tạo CH3-CH2-CH2-CH2-CH3 có tên là
 
-**A.** Pentane.                                         **B.** butane.
+**A.** Pentane.                                         B.** butane.**
 
-**C.** Iso pentane.                                   **D.** neo Pentan.
+**C.** Iso pentane.                                   D.** neo Pentan.**
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download
 
-- [B15.-alkane.-Nguyen-Phuong-Anh](/assets/docs/B15.-alkane.-Nguyen-Phuong-Anh.pptx)
-- [B15.ALKANE.-Nguyen-Phuong-Anh_](/assets/docs/B15.ALKANE.-Nguyen-Phuong-Anh_.docx)
+- [B15.-alkane.-Nguyen-Phuong-Anh](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [B15.ALKANE.-Nguyen-Phuong-Anh_](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

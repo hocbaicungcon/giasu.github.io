@@ -12,7 +12,7 @@ tags:
 grade: 10
 ---
 
-**I.MA TRẬN
+**I.MA TRẬN**
 | SỞ GD & ĐT NAN ĐỊNH
 Trường THPT Nguyễn Khuyến | MA TRẬN KIỂM TRA GIỮA HỌC KỲ I
 MÔN HOÁ HỌC 10
@@ -39,10 +39,10 @@ Thời gian làm bài: 45 phút |
 | 3. Xác định kim loại +) Xác định 2 kim loại kiềm liên tiếp trong phản ứng với H2O +) Tính C% hoặc CM ( không có KLR) |  | 1,5 điểm Xác định 2 kim loại kiềm liên tiếp trong phản ứng với H2O | 1điểm Tính C% hoặc CM ( không có KLR) | 0 điểm |
 | 4. Bài toán khó (1 điểm) |  |  |  | 1 điểm |
 
-**Nam Định ngày 16 tháng 10 năm 2020
-**Người làm ma trận
-**Phạm Thị Dung
-**II. ĐỀ KIỂM TRA
+**Nam Định ngày 16 tháng 10 năm 2020**
+**Người làm ma trận**
+**Phạm Thị Dung**
+### Ii. Đề Kiểm Tra
 | SỞ GD & ĐT NAN ĐỊNH
 Trường THPT Nguyễn Khuyến | ĐỀ  KIỂM TRA GIỮA HỌC KỲ I
 MÔN HOÁ HỌC 10
@@ -51,46 +51,46 @@ Thời gian làm bài: 45 phút |
 | --- | --- |
 
 *Đề thi có 2 trang. Học sinh không được dùng bảng tuần hoàn.
-**Mã đề : 123
-**I. Trắc nghiệm(2 điểm)
-**Chọn đáp án đúng nhất ghi vào bài làm
+**Mã đề : 123**
+**I. Trắc nghiệm(2 điểm)**
+**Chọn đáp án đúng nhất ghi vào bài làm**
 **Câu 1:** Trong nguyên tử hạt mang điện tích âm là 
 
-**A.** Electron **B**. Nơtron **C.** Proton **D**. Electron và Proton
+**A.** Electron B**. Nơtron **C.** Proton D**. Electron và Proton
 
 **Câu 2:** Số nơtron trong nguyên tử là:
 
-**A.** 20 **B.** 39 **C.** 19 **D.** 58
+**A.** 20 B.** 39 **C.** 19 D.** 58
 
 **Câu 3:** Cho cấu hình electron của nguyên tử X là 1s²2s²2p63s²3p3 , nguyên tử thuộc loại 
 
-**A.** Kim loại **B.** Khí hiếm **C.** Phi kim **D.** Vừa kim loại vừa phi kim 
+**A.** Kim loại B.** Khí hiếm **C.** Phi kim D.** Vừa kim loại vừa phi kim 
 
 **Câu 4:** Trong 1 chu kì, theo chiều tăng dần của điện tích hạt nhân, độ âm điện của các nguyên tử:
 
-**A.** Tăng dần **B.** Giảm dần
+**A.** Tăng dần B.** Giảm dần**
 
-**C.** Không tăng, không giảm **D.** Vừa tăng, vừa giảm
+**C.** Không tăng, không giảm D.** Vừa tăng, vừa giảm**
 
 **Câu 5:** Số nguyên tố thuộc chu kỳ 2 là 
 
-**A.** 2 **B.** 8 **C.** 18 **D.** 32
+**A.** 2 B.** 8 **C.** 18 D.** 32
 
 **Câu 6:** Nguyên tố X thuộc nhóm VIA trong bảng tuần hoàn , hóa trị cao nhất với oxi của nguyên tố X là 
 
- **A**. 2 **B.** 4 **C**. 6 **D**. 1 
+ **A**. 2 **B.** 4 C**. 6 **D**. 1 **
 
 **Câu 7:** Hợp chất khí với hidro của nguyên tố A có công thức là H3A. Trong oxit mà A có hóa trị cao nhất O chiếm 56,34% về khối lượng. Nguyên tố A là
 
-**A**. N **B.** P **C**. Al **D.** S 
+**A**. N **B.** P C**. Al **D.** S **
 
 **Câu 8:** The particles that make up the nucleus most of atoms are
 
-**A.** Electronts and protons **B**. Neutrons and electronts 
+**A.** Electronts and protons B**. Neutrons and electronts **
 
-**C.** Protons and neutrons **D**. Electronts, protons and neutrons
+**C.** Protons and neutrons D**. Electronts, protons and neutrons**
 
-**II. Phần tự luận
+**II. Phần tự luận**
 **Bài 1( 2,5 điểm)**: Cho các nguyên tử 
 
 Na ( Z= 11), O( Z= 8) , Cl (Z= 17), Ne(Z=10), Fe ( Z= 26) 
@@ -139,46 +139,46 @@ Thời gian làm bài: 45 phút |
 | --- | --- |
 
 *Đề thi có 2 trang. Học sinh không được dùng bảng tuần hoàn.
-**Mã đề : 234
-**I. Trắc nghiệm(2 điểm)
-**Chọn đáp án đúng nhất ghi vào bài làm
+**Mã đề : 234**
+**I. Trắc nghiệm(2 điểm)**
+**Chọn đáp án đúng nhất ghi vào bài làm**
 **Câu 1:** Nguyên tố X thuộc nhóm VIA trong bảng tuần hoàn , hóa trị cao nhất với oxi của nguyên tố X là 
 
- **A**. 2 **B.** 4 **C.** 1 **D**. 6 
+ **A**. 2 **B.** 4 C.** 1 **D**. 6 **
 
 **Câu 2:** Số nguyên tố thuộc chu kỳ 2 là 
 
-**A.** 2 **B.** 8 **C.** 18 **D.** 32
+**A.** 2 B.** 8 **C.** 18 D.** 32
 
 **Câu 3:** Hợp chất khí với hidro của nguyên tố A có công thức là H3A. Trong oxit mà A có hóa trị cao nhất O chiếm 56,34% về khối lượng. Nguyên tố A là
 
-**A**. P **B.** N **C**. Al **D.** S 
+**A**. P **B.** N C**. Al **D.** S **
 
 **Câu 4:** The particles that make up the nucleus most of atoms are
 
-**A.** Protons and neutrons **B**. Neutrons and electronts 
+**A.** Protons and neutrons B**. Neutrons and electronts **
 
-**C.** Electronts and protons **D**. Electronts, protons and neutrons
+**C.** Electronts and protons D**. Electronts, protons and neutrons**
 
 **Câu 5:** Số nơtron trong nguyên tử là:
 
-**A.** 20 **B.** 39 **C.** 19 **D.** 58
+**A.** 20 B.** 39 **C.** 19 D.** 58
 
 **Câu 6:** Trong nguyên tử hạt mang điện tích âm là 
 
-**A.** Electron **B**. Nơtron **C.** Proton **D**. Electron và Proton
+**A.** Electron B**. Nơtron **C.** Proton D**. Electron và Proton
 
 **Câu 7:** Cho cấu hình electron của nguyên tử X là 1s²2s²2p63s²3p3 , nguyên tử thuộc loại 
 
-**A.** Kim loại **B.** Khí hiếm **C.** Vừa kim loại vừa phi kim **D.** Phi kim 
+**A.** Kim loại B.** Khí hiếm **C.** Vừa kim loại vừa phi kim D.** Phi kim 
 
 **Câu 8:** Trong 1 chu kì, theo chiều tăng dần của điện tích hạt nhân, độ âm điện của các nguyên tử:
 
-**A.** Tăng dần **B.** Giảm dần
+**A.** Tăng dần B.** Giảm dần**
 
-**C.** Không tăng, không giảm **D.** Vừa tăng, vừa giảm
+**C.** Không tăng, không giảm D.** Vừa tăng, vừa giảm**
 
-**II. Phần tự luận
+**II. Phần tự luận**
 **Bài 1( 2,5 điểm)**: Cho các nguyên tử 
 
 Na ( Z= 11), O( Z= 8) , Cl (Z= 17), Ne(Z=10), Fe ( Z= 26) 
@@ -227,46 +227,46 @@ Thời gian làm bài: 45 phút |
 | --- | --- |
 
 *Đề thi có 2 trang. Học sinh không được dùng bảng tuần hoàn.
-**Mã đề : 345
-**I. Trắc nghiệm(2 điểm)
-**Chọn đáp án đúng nhất
+**Mã đề : 345**
+**I. Trắc nghiệm(2 điểm)**
+**Chọn đáp án đúng nhất**
 **Câu 1:** Trong 1 chu kì, theo chiều tăng dần của điện tích hạt nhân, độ âm điện của các nguyên tử:
 
-**A.** Tăng dần **B.** Vừa tăng, vừa giảm
+**A.** Tăng dần B.** Vừa tăng, vừa giảm**
 
-**C.** Không tăng, không giảm **D.** Giảm dần 
+**C.** Không tăng, không giảm D.** Giảm dần **
 
 **Câu 2:** Trong nguyên tử hạt mang điện tích âm là 
 
-**A.** Nơtron **B**. Electron **C.** Proton **D**. Electron và Proton
+**A.** Nơtron B**. Electron **C.** Proton D**. Electron và Proton
 
 **Câu 3:** Số nơtron trong nguyên tử là:
 
-**A.** 20 **B.** 39 **C.** 19 **D.** 58
+**A.** 20 B.** 39 **C.** 19 D.** 58
 
 **Câu 4:** Số nguyên tố thuộc chu kỳ 2 là 
 
-**A.** 2 **B.** 32 **C.** 18 **D.** 8
+**A.** 2 B.** 32 **C.** 18 D.** 8
 
 **Câu 5:** Nguyên tố X thuộc nhóm VIA trong bảng tuần hoàn , hóa trị cao nhất với oxi của nguyên tố X là 
 
- **A**. 2 **B.** 4 **C.** 1 **D**. 6 
+ **A**. 2 **B.** 4 C.** 1 **D**. 6 **
 
 **Câu 6:** The particles that make up the nucleus most of atoms are
 
-**A.** Neutrons and electronts **B**. Electronts and protons 
+**A.** Neutrons and electronts B**. Electronts and protons **
 
-**C.** Protons and neutrons **D**. Electronts, protons and neutrons
+**C.** Protons and neutrons D**. Electronts, protons and neutrons**
 
 **Câu 7:** Hợp chất khí với hidro của nguyên tố A có công thức là H3A. Trong oxit mà A có hóa trị cao nhất O chiếm 56,34% về khối lượng. Nguyên tố A là
 
-**A**. N **B.** P **C**. Al **D.** S 
+**A**. N **B.** P C**. Al **D.** S **
 
 **Câu 8:** Cho cấu hình electron của nguyên tử X là 1s²2s²2p63s²3p3 , nguyên tử thuộc loại 
 
-**A.** Kim loại **B.** Khí hiếm **C.** Phi kim **D.** Vừa kim loại vừa phi kim 
+**A.** Kim loại B.** Khí hiếm **C.** Phi kim D.** Vừa kim loại vừa phi kim 
 
-**II. Phần tự luận
+**II. Phần tự luận**
 **Bài 1( 2,5 điểm)**: Cho các nguyên tử 
 
 Na ( Z= 11), O( Z= 8) , Cl (Z= 17), Ne(Z=10), Fe ( Z= 26) 
@@ -315,46 +315,46 @@ Thời gian làm bài: 45 phút |
 | --- | --- |
 
 *Đề thi có 2 trang. Học sinh không được dùng bảng tuần hoàn.
-**Mã đề : 456
-**I. Trắc nghiệm(2 điểm)
-**Chọn đáp án đúng nhất
+**Mã đề : 456**
+**I. Trắc nghiệm(2 điểm)**
+**Chọn đáp án đúng nhất**
 **Câu 1:** Số nguyên tố thuộc chu kỳ 2 là 
 
-**A.** 2 **B.** 18 **C.** 8 **D.** 32
+**A.** 2 B.** 18 **C.** 8 D.** 32
 
 **Câu 2:** Nguyên tố X thuộc nhóm VIA trong bảng tuần hoàn , hóa trị cao nhất với oxi của nguyên tố X là 
 
- **A**. 6 **B.** 4 **C.** 2 **D**. 1 
+ **A**. 6 **B.** 4 C.** 2 **D**. 1 **
 
 **Câu 3:** Hợp chất khí với hidro của nguyên tố A có công thức là H3A. Trong oxit mà A có hóa trị cao nhất O chiếm 56,34% về khối lượng. Nguyên tố A là
 
-**A**. N **B.** Al **C**. P **D.** S 
+**A**. N **B.** Al C**. P **D.** S **
 
 **Câu 4:** The particles that make up the nucleus most of atoms are
 
-**A.** Electronts, protons and neutrons **B**. Neutrons and electronts 
+**A.** Electronts, protons and neutrons B**. Neutrons and electronts **
 
-**C.** Protons and neutrons **D**. Electronts and protons 
+**C.** Protons and neutrons D**. Electronts and protons **
 
 **Câu 5:** Trong nguyên tử hạt mang điện tích âm là 
 
-**A.** Electron **B**. Nơtron **C.** Proton **D**. Electron và Proton
+**A.** Electron B**. Nơtron **C.** Proton D**. Electron và Proton
 
 **Câu 6:** Số nơtron trong nguyên tử là:
 
-**A.** 39 **B.** 20 **C.** 19 **D.** 58
+**A.** 39 B.** 20 **C.** 19 D.** 58
 
 **Câu 7:** Cho cấu hình electron của nguyên tử X là 1s²2s²2p63s²3p3 , nguyên tử thuộc loại 
 
-**A.** Kim loại **B.** Phi kim **C.** Khí hiếm **D.** Vừa kim loại vừa phi kim 
+**A.** Kim loại B.** Phi kim **C.** Khí hiếm D.** Vừa kim loại vừa phi kim 
 
 **Câu 8:** Trong 1 chu kì, theo chiều tăng dần của điện tích hạt nhân, độ âm điện của các nguyên tử:
 
-**A.** Tăng dần **B.** Giảm dần
+**A.** Tăng dần B.** Giảm dần**
 
-**C.** Không tăng, không giảm **D.** Vừa tăng, vừa giảm
+**C.** Không tăng, không giảm D.** Vừa tăng, vừa giảm**
 
-**II. Phần tự luận
+**II. Phần tự luận**
 **Bài 1( 2,5 điểm)**: Cho các nguyên tử 
 
 Na ( Z= 11), O( Z= 8) , Cl (Z= 17), Ne(Z=10), Fe ( Z= 26) 
@@ -396,10 +396,10 @@ VIIA: Cl : 35,5
 
 Fe : 56 
 
-**III.ĐÁP ÁN
-**ĐÁP ÁN KIỂM TRA GIỮA KỲ I MÔN HÓA 10
-**NĂM HỌC 2020-2021
-**Phần trắc nghiệm 0,25 đ
+**III.ĐÁP ÁN**
+**ĐÁP ÁN KIỂM TRA GIỮA KỲ I MÔN HÓA 10**
+**NĂM HỌC 2020-2021**
+**Phần trắc nghiệm 0,25 đ**
 |  | Câu 1 | Câu 2 | Câu 3 | Câu 4 | Câu 5 | Câu 6 | Câu 7 | Câu 8 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 123 | A | A | C | A | B | C | B | C |
@@ -407,13 +407,13 @@ Fe : 56
 | 345 | A | B | A | D | D | C | B | C |
 | 456 | C | A | C | C | A | B | B | A |
 
-**Phần tự luận
-**Bài 1:
+**Phần tự luận**
+**Bài 1:**
 a.Viết mỗi cấu hình đúng 0,25 
 
 b. Xác định vị trí đúng ( không cần giải thích) 0,25 
 
-**Bài 2**: 
+**Bài 2:** : 
 
 a.  0,25đ
 
@@ -429,7 +429,7 @@ b. số mol CuSO4 = 0,4 0,25
 
  số nguyên tử  = 0,4.6,02. 1023. 73%= 1,76 .1023 0,25
 
- **Bài 3**:a. số mol H2 = 0,15 0,25
+ **Bài 3:** :a. số mol H2 = 0,15 0,25
 
  viết phhh 0,25
 
@@ -447,7 +447,7 @@ b. Tính số mol mỗi kim loại Na 0,2 và K 0,1 0, 25đ
 
 C% NaOH = 3,84% C% KOH = 2,69% 0,5 đ
 
-**Bài 4:
+**Bài 4:**
 a.(2ZX + 4) : b.2ZY = 93,33: 6,67 = 14 
 
 a.ZX + b.ZY = 84 
@@ -466,7 +466,7 @@ khối lượng e = 84. 6,02.1023 . 50. 9,1.10-31kg = 230.10-5kg = 2,3 gam 0,5 �
 
 GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
-- [GIỮA HỌC KỲ I](/assets/docs/GIUA-HOC-KY-I-3.docx)
+- [GIỮA HỌC KỲ I](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

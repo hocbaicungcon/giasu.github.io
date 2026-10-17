@@ -219,10 +219,10 @@ Chọn phát biểu đúng?
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa 12 – Nguyen Huu Tho – da TN](/assets/docs/Hoa-12-Nguyen-Huu-Tho-da-TN.docx)
-- [Hoa 12 – Nguyen Huu Tho – da XH](/assets/docs/Hoa-12-Nguyen-Huu-Tho-da-XH.doc)
-- [Hoa 12 – Nguyen Huu Tho – de TN 132](/assets/docs/Hoa-12-Nguyen-Huu-Tho-de-TN-132.doc)
-- [Hoa 12 – Nguyen Huu Tho – de XH 131](/assets/docs/Hoa-12-Nguyen-Huu-Tho-de-XH-131.doc)
+- [Hoa 12 – Nguyen Huu Tho – da TN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoa 12 – Nguyen Huu Tho – da XH](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoa 12 – Nguyen Huu Tho – de TN 132](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Hoa 12 – Nguyen Huu Tho – de XH 131](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

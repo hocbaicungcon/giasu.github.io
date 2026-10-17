@@ -285,4 +285,4 @@ Exercise 3: Rearrange the words to make meaningful sentences.
 
 ## 2. Đề thi chuyên tiếng Anh lớp 6 số 2-5
 
-Mời Quý Phụ huynh và các em học sinh tải trong file Word: [5 đề thi chuyên tiếng Anh vào lớp 6 có đáp án](/assets/docs/5-de-thi-chuyen-tieng-anh-vao-lop-6-giasu.ai.vn.docx)
+Mời Quý Phụ huynh và các em học sinh tải trong file Word: [5 đề thi chuyên tiếng Anh vào lớp 6 có đáp án](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

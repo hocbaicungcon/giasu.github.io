@@ -137,8 +137,8 @@ môi trường, các thể tích khí đo ở 27,3oC và 1 atm, các phản ứn
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-12-Long-An-Vong-1-File-De](/assets/docs/2023-2024-HSG-12-Long-An-Vong-1-File-De-giasu.ai.vn.docx)
-- [2023-2024-HSG-12-Long-An-Vong-1-File-HDC](/assets/docs/2023-2024-HSG-12-Long-An-Vong-1-File-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-12-Long-An-Vong-1-File-De](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [2023-2024-HSG-12-Long-An-Vong-1-File-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

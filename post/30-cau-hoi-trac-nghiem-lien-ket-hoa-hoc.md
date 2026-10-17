@@ -367,7 +367,7 @@ Số phát biểu đúng là
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [Cau-hoi-trac-nghiem-nang-luong-hoa-hoc](/assets/docs/Cau-hoi-trac-nghiem-nang-luong-hoa-hoc.docx)
+- [Cau-hoi-trac-nghiem-nang-luong-hoa-hoc](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Mời các thầy cô và các em xem thêm
 

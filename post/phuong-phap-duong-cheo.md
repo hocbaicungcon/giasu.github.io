@@ -11,7 +11,7 @@ tags:
 grade: 12
 ---
 
-***CHUYÊN ĐỀ 9 :*** **PHƯƠNG PHÁP ĐƯỜNG CHÉO**
+**CHUYÊN ĐỀ 9 :** **PHƯƠNG PHÁP ĐƯỜNG CHÉO**
 
 **I. Phương pháp đường chéo :**
 
@@ -27,15 +27,15 @@ Phương pháp đường chéo là *phương pháp sử dụng mối liên hệ 
 
 **a. Xét các hướng giải bài tập sau :**
 
-***Câu 47 – Mã đề 285:*** Cho m gam hỗn hợp bột Zn và Fe vào lượng dư dung dịch CuSO4. Sau khi kết thúc các phản ứng, lọc bỏ phần dung dịch thu được m gam bột rắn. Thành phần phần trăm theo khối lượng của Zn trong hỗn hợp bột ban đầu là :
+**Câu 47 – Mã đề 285:** Cho m gam hỗn hợp bột Zn và Fe vào lượng dư dung dịch CuSO4. Sau khi kết thúc các phản ứng, lọc bỏ phần dung dịch thu được m gam bột rắn. Thành phần phần trăm theo khối lượng của Zn trong hỗn hợp bột ban đầu là :
 
-**A.** 90,27%. **B.** 85,30%. **C.** 82,20%. **D.** 12,67%. 
+**A.** 90,27%. B.** 85,30%. **C.** 82,20%. D.** 12,67%. 
 
 *(Đề thi tuyển sinh đại học khối B năm 2007)*
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
-● ***Cách 1 :*** *Sử dụng phương pháp tăng giảm khối lượng*
+● **Cách 1 :** *Sử dụng phương pháp tăng giảm khối lượng*
 
 Bản chất của phản ứng là Zn, Fe khử ion Cu2+ thành Cu; Cu2+ oxi hóa Zn, Fe thành Zn2+ và Fe2+.
 
@@ -49,9 +49,9 @@ Vì khối lượng kim loại trước và sau phản ứng không đổi, ch�
 
 Suy ra : 
 
-● ***Cách 2 :*** *Sử dụng phương pháp đường chéo*
+● **Cách 2 :** *Sử dụng phương pháp đường chéo*
 
-Theo giả thiết và bảo toàn electron, suy ra :****
+Theo giả thiết và bảo toàn electron, suy ra :**
 
 Áp dụng phương pháp đường chéo, ta có : 
 
@@ -84,17 +84,17 @@ Phương pháp đường chéo có thể giải quyết được những dạng 
 
 **1. Dạng 1 : Pha chế dung dịch**
 
-***Phương pháp giải***
+**Phương pháp giải**
 
-***– Bước 1 :*** *Nhận dạng nhanh phương pháp giải bài tập : Khi gặp các dấu hiệu :****Tính lượng chất, tỉ lệ lượng chất*** *để pha chế được dung dịch****chứa 1 chất tan*** *thì ta nên sử dụng phương pháp đường chéo.*
+**– Bước 1 :** *Nhận dạng nhanh phương pháp giải bài tập : Khi gặp các dấu hiệu :**Tính lượng chất, tỉ lệ lượng chất** *để pha chế được dung dịch**chứa 1 chất tan** *thì ta nên sử dụng phương pháp đường chéo.*
 
-***– Bước 2 :*** *Dựa vào giả thiết để lựa chọn đường chéo phù hợp.*
+**– Bước 2 :** *Dựa vào giả thiết để lựa chọn đường chéo phù hợp.*
 
-***– Bước 3 :*** *Dựa vào sơ đồ đường chéo để tính tỉ lệ lượng chất cần pha trộn. Kết hợp với các giả thiết khác để suy ra kết quả của bài toán.*******
+**– Bước 3 :** *Dựa vào sơ đồ đường chéo để tính tỉ lệ lượng chất cần pha trộn. Kết hợp với các giả thiết khác để suy ra kết quả của bài toán.**
 
-► ***Các ví dụ minh họa ◄***
+► **Các ví dụ minh họa ◄**
 
-***a. Sử dụng đường chéo liên quan đến nồng độ phần trăm của dung dịch***
+**a. Sử dụng đường chéo liên quan đến nồng độ phần trăm của dung dịch**
 
 Khi gặp dạng bài tập mà đề bài yêu cầu pha chế để tạo ra dung dịch mới có *nồng độ phần trăm là* thì ta sử dụng đường chéo sau (giả sử ) : 
 
@@ -103,11 +103,11 @@ Khi gặp dạng bài tập mà đề bài yêu cầu pha chế để tạo ra d
 |  |  |  |
 | mdd2 C2% |  | – C1% |
 
-***Ví dụ 1:*** Từ 20 gam dung dịch HCl 40% và nước cất, pha chế dung dịch HCl 16%. Khối lượng nước (gam) cần dùng là :
+**Ví dụ 1:** Từ 20 gam dung dịch HCl 40% và nước cất, pha chế dung dịch HCl 16%. Khối lượng nước (gam) cần dùng là :
 
-**A.** 27. **B.** 25,5. **C.** 54. **D.** 30.
+**A.** 27. B.** 25,5. **C.** 54. D.** 30.
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
 Coi nước là dung dịch HCl có nồng độ 0%.
 
@@ -120,11 +120,11 @@ Coi nước là dung dịch HCl có nồng độ 0%.
 
 Mặt khác, 
 
-***Ví dụ 2:*** Để thu được 500 gam dung dịch HCl 25% cần lấy m1 gam dung dịch HCl 35% pha với m2 gam dung dịch HCl 15%. Giá trị m1 và m2 lần lượt là :
+**Ví dụ 2:** Để thu được 500 gam dung dịch HCl 25% cần lấy m1 gam dung dịch HCl 35% pha với m2 gam dung dịch HCl 15%. Giá trị m1 và m2 lần lượt là :
 
- **A.** 400 và 100. **B.** 325 và 175. **C.** 300 và 200. **D.** 250 và 250.
+ **A.** 400 và 100. B.** 325 và 175. **C.** 300 và 200. D.** 250 và 250.
 
-***Hướng dẫn giải***
+**Hướng dẫn giải**
 
 Áp dụng sơ đồ đường chéo, ta có :
 
@@ -139,7 +139,7 @@ Mặt khác m1 + m2 = 500 nên suy ra
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download file pdf đầy đủ
 
-- [PP9 – ĐƯỜNG CHÉO](/assets/docs/PP9-DUONG-CHEO.pdf)
+- [PP9 – ĐƯỜNG CHÉO](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

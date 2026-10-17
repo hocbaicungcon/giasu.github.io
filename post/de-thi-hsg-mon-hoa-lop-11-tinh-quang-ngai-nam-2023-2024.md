@@ -123,7 +123,7 @@ MS cho giá trị     M 154   . Kết quả đo phổ IR như 
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [De-HSG-Hoa-11-Quang-ngai-2023-2024](/assets/docs/De-HSG-Hoa-11-Quang-ngai-2023-2024-giasu.ai.vn.pdf)
+- [De-HSG-Hoa-11-Quang-ngai-2023-2024](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

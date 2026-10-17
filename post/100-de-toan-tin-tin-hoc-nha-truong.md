@@ -1937,4 +1937,4 @@ Ví dụ:
 
 ## Phần 2: LỜI GIẢI 100 đề Toán Tin (Tin học & Nhà trường)
 
-Lời giải cho các bài toán, mời bạn đọc xem trong file: [File PDF: Lời giải 100 đề Toán Tin](/assets/docs/100DeToanTin-giasu.ai.vn.pdf)
+Lời giải cho các bài toán, mời bạn đọc xem trong file: [File PDF: Lời giải 100 đề Toán Tin](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

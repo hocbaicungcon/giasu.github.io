@@ -14,15 +14,15 @@ grade: 10
 
 Giáo án chuyên đề hoá 10 Bài 8 Phòng chống cháy nổ
 
-**TÊN BÀI DẠY:****PHÒNG CHỐNG CHÁY, NỔ**
+**TÊN BÀI DẠY:**PHÒNG CHỐNG CHÁY, NỔ**
 
-**BỘ SÁCH:****KẾT NỐI TRI THỨC*** * ******
+**BỘ SÁCH:**KẾT NỐI TRI THỨC** * **
 
 **SỐ TIẾT**: 2
 
 **I. MỤC TIÊU**
 
-**1. Về năng lực******
+**1. Về năng lực**
 
 a) Nhận thức hóa học:
 
@@ -40,9 +40,9 @@ c) Vận dụng kiến thức, kĩ năng đã học:
 
 – Giải thích được tại sao đám cháy có mặt các kim loại hoạt động mạnh như kim loại kiềm, kiềm thổ và nhôm… không sử dụng nước, CO2, cát (thành phần chính là SiO2), bọt chữa cháy (hỗn hợp không khí, nước và chất hoạt động bề mặt) để dập tắt đám cháy.
 
-**2. Về phẩm chất******
+**2. Về phẩm chất**
 
-****– Yêu nước: Tích lũy kiến thức về phòng chống cháy, nổ để giúp bản thân và tuyên truyền tới mọi người xung quanh cách phòng cháy chữa cháy để bảo vệ tài sản của cá nhân cũng như của nhà nước tránh hỏa hoạn có thể xảy ra.
+**– Yêu nước: Tích lũy kiến thức về phòng chống cháy, nổ để giúp bản thân và tuyên truyền tới mọi người xung quanh cách phòng cháy chữa cháy để bảo vệ tài sản của cá nhân cũng như của nhà nước tránh hỏa hoạn có thể xảy ra.**
 
 – Nhân ái: Giúp đỡ mọi người trong những trường hợp cần thiết khi hỏa hoạn xảy ra.
 
@@ -54,7 +54,7 @@ c) Vận dụng kiến thức, kĩ năng đã học:
 
  **II. THIẾT BỊ DẠY HỌC VÀ HỌC LIỆU**
 
- **1. Thiết bị:** Tranh ảnhvề cháy nổ, tranh cổ động tuyên truyền phòng cháy, chữa cháy. ****
+ **1. Thiết bị:** Tranh ảnhvề cháy nổ, tranh cổ động tuyên truyền phòng cháy, chữa cháy. **
 
  **2. Học liệu:** Sách chuyên đề**,** tài liệu tham khảo về phòng cháy, chữa cháy, các video về phòng chống cháy nổ của EVN và VTV.
 
@@ -72,17 +72,17 @@ c) Vận dụng kiến thức, kĩ năng đã học:
 
 **1. HOẠT DỘNG KHỞI ĐỘNG**
 
-**1.1.** **Mục tiêu**:****Kích thích hứng thú, tạo tư thế sẵn sàng học tập và tiếp cận nội dung bài học.
+**1.1.** **Mục tiêu**:**Kích thích hứng thú, tạo tư thế sẵn sàng học tập và tiếp cận nội dung bài học.**
 
 **1.2. Nội dung:** Tổ chức chơi trò chơi ô chữ**,** nêu vấn đề và dẫn dắt vào nội dung bài học.
 
 **1.3. Sản phẩm: Từ khóa “ phản ứng cháy nổ”**
 
-**1.4.****Tổ chức thực*** *hiện:****Tổ chức trò chơi ô chữ**
+**1.4.**Tổ chức thực** *hiện:**Tổ chức trò chơi ô chữ**
 
 Học sinh nào có đáp án nhanh nhất được trả lời.Nếu trả lời đúng thì được nhận một phần quà và có quyền chọn hàng ngang tiếp theo
 
-**Câu 1**: Định nghĩa: Là nhiệt độ thấp nhất ở áp suất, khí quyển mà một chất hữu cơ hoặc vật liệu dễ bay hơi tạo thành lượng hơi đủ để bốc cháy trong không khí khi gặp nguồn phát tia lửa điện
+**Câu 1:** : Định nghĩa: Là nhiệt độ thấp nhất ở áp suất, khí quyển mà một chất hữu cơ hoặc vật liệu dễ bay hơi tạo thành lượng hơi đủ để bốc cháy trong không khí khi gặp nguồn phát tia lửa điện
 
 *Đáp án: Điểm chớp nháy*
 
@@ -106,15 +106,15 @@ Học sinh nào có đáp án nhanh nhất được trả lời.Nếu trả lờ
 
 *Đáp án: Entropy*
 
-**Câu 7**: Định nghĩa một chất lỏng dễ cháy có nguồn gốc từ dầu mỏ , được sử dụng chủ yếu làm nhiên liệu trong hầu hết các động cơ đốt trong
+**Câu 7:** : Định nghĩa một chất lỏng dễ cháy có nguồn gốc từ dầu mỏ , được sử dụng chủ yếu làm nhiên liệu trong hầu hết các động cơ đốt trong
 
 *Đáp án: Xăng*
 
-**Câu 8**: Loại khí sản sinh ra trong quá trình hô hấp của sinh vật hoặc trong quá trình đốt cháy nhiên liệu
+**Câu 8:** : Loại khí sản sinh ra trong quá trình hô hấp của sinh vật hoặc trong quá trình đốt cháy nhiên liệu
 
 *Đáp án: Cacbonic*
 
-**Câu 9**: Đây là một tính chất vật lý của chất có thể dùng thang đo Celius, thang đo Kelvin
+**Câu 9:** : Đây là một tính chất vật lý của chất có thể dùng thang đo Celius, thang đo Kelvin
 
 *Đáp án: Nhiệt độ*
 
@@ -122,11 +122,11 @@ Học sinh nào có đáp án nhanh nhất được trả lời.Nếu trả lờ
 
 *Đáp án: Ánh sáng*
 
-**Câu 11**: Định nghĩa chất lỏng chuyển thành hơi ở lớp bề mặt
+**Câu 11:** : Định nghĩa chất lỏng chuyển thành hơi ở lớp bề mặt
 
 *Đáp án: Bay hơi*
 
-**Câu 12**: định nghĩa nhiệt lượng mà hệ trao đổi trong quá trình đẳng áp
+**Câu 12:** : định nghĩa nhiệt lượng mà hệ trao đổi trong quá trình đẳng áp
 
 *Đáp án: Enthalpy*
 
@@ -138,11 +138,11 @@ Học sinh nào có đáp án nhanh nhất được trả lời.Nếu trả lờ
 
 **2.1.** **Mục tiêu:** Giúp học sinh tích cực, chủ động rút ra được kiến thức về phòng cháy, nổ.
 
-**2.2. Nội dung****:** 4 nhóm sẽ nghiên cứu 4 dự án : Poster bình chữa cháy mini, mặt nạ phòng độc, tập huấn kĩ năng phòng cháy chữa cháy, khảo sát tình hình ý thức của người dân địa phương về PCCC.
+**2.2. Nội dung**:** 4 nhóm sẽ nghiên cứu 4 dự án : Poster bình chữa cháy mini, mặt nạ phòng độc, tập huấn kĩ năng phòng cháy chữa cháy, khảo sát tình hình ý thức của người dân địa phương về PCCC.**
 
 **2.3. Sản phẩm:** Học sinh nghiên cứu nội dung dự án của nhóm mình và thuyết trình trước lớp.
 
-**2.4.****Tổ chức hoạt động học*** *:**Sử dụng phương pháp dạy học dự án
+**2.4.**Tổ chức hoạt động học** *:**Sử dụng phương pháp dạy học dự án
 
 **2.4.1. Chia lớp thành 4 nhóm thực hiện 4 dự án**
 
@@ -163,8 +163,8 @@ Học sinh nào có đáp án nhanh nhất được trả lời.Nếu trả lờ
 
 Hiện nay, trên thị trường có hai loại bình chữa cháy được sử dụng rất nhiều là**bình chữa cháy khí CO2 và bình chữa cháy dạng bột** (dạng bột sẽ có hai loại bột là BC và ABC).
 
-***Bình chữa cháy khí CO2.
-****– Cấu tạo:*** ***
+**Bình chữa cháy khí CO2.**
+**– Cấu tạo:** **
 
 **– Đặc điểm:** Các loại bình chữa cháy khí CO2 có tác dụng làm loãng đám cháy, vì vậy các loại bình này không thể sử dụng được ngoài trời mà chỉ dùng trong nhà.
 **– Công dụng:** Bình chữa cháy khí CO2 chuyên sử dụng để chữa cháy chất lỏng (xăng, dầu, cồn), chữa cháy khí (methan, gas) và các thiết bị điện khi cháy.
@@ -175,7 +175,7 @@ Ngoài ra, khi CO2 được phun ra sẽ có nhiệt độ rất lạnh là -73 
 Bình CO2 cũng không được sử dụng để chữa các chất cháy mà trong đó có gốc là kim loại kiềm, kiềm thổ (như nhôm, chất nổ đen…), vì sẽ làm đám cháy mạnh hơn.
 **–  Cách sử dụng và nguyên lý chữa cháy:**
 Khi xảy ra cháy, xách bình CO2 tiếp cận đám cháy, một tay cầm loa phun hướng vào gốc lửa tối thiểu là 0,5m còn tay kia mở khóa van bình. Khi mở van bình, do có sự chênh lệch về áp suất, CO2 lỏng trong bình thoát ra ngoài qua hệ thống ống lặn và loa phun chuyển thành dạng như tuyết thán khí, lạnh tới -790C. Khi phun vào đám cháy CO2 có tác dụng làm loãng nồng độ hỗn hợp hơi khí cháy, đồng thời làm lạnh vùng cháy dẫn tới triệt tiêu đám cháy.
-***Bình chữa cháy dạng bột.
+**Bình chữa cháy dạng bột.**
 – Cấu tạo.**
 
 **– Đặc điểm:** Các loại bình chữa cháy dạng bột rất đa dạng, trên thị trường có nhiều loại khác nhau, để chữa các vật liệu cháy có đặc tính khác nhau, được ký hiệu lần lượt là A (chữa cháy chất rắn), B (chữa cháy chất lỏng), C (chữa cháy chất khí) và D hoặc E (chữa cháy điện).
@@ -185,14 +185,14 @@ Ví dụ, nếu bình ghi BC sẽ dập được đám cháy chất lỏng hoặ
 Bột chữa cháy không độc, không dẫn điện, có hiệu quả cao; thao tác sử dụng bình đơn giản, dễ kiểm tra, dùng để chữa cháy những đám cháy nhỏ, mới phát sinh.
 **– Phân loại:** Bình chữa cháy dạng bột được sản xuất theo trọng lượng, có các loại bình 8kg, 2kg và 1kg. Các loại bình chữa cháy dạng bột thường nhận biết bằng các ký hiệu như MFZ, MFZL hoặc BC, ABC.
 **– Nhược điểm:** Các loại bình bột tuyệt đối không được dùng để phun vào các thiết bị điện tử, thiết bị công nghệ cao như máy tính, vì bột có thành phần muối, sẽ làm hư hại thiết bị.
-**– Cách sử dụng:*** Đối với loại xách tay: Khi có cháy xảy ra xách bình tới gẩn địa điểm cháy. Lắc xóc bình từ 3-4 lần để bột tơi, giật chốt hãm kẹp chì, chọn đầu hướng gió hướng loa phun vào gốc lửa. Giữ bình ở khoảng cách 1,5 m tuỳ loại bình, bóp van bình để bột chữa cháy phun ra, khi khí yếu thì tiến lại gần và đưa loa phun qua lại để dập tắt hoàn toàn đám cháy.
+**– Cách sử dụng:** Đối với loại xách tay: Khi có cháy xảy ra xách bình tới gẩn địa điểm cháy. Lắc xóc bình từ 3-4 lần để bột tơi, giật chốt hãm kẹp chì, chọn đầu hướng gió hướng loa phun vào gốc lửa. Giữ bình ở khoảng cách 1,5 m tuỳ loại bình, bóp van bình để bột chữa cháy phun ra, khi khí yếu thì tiến lại gần và đưa loa phun qua lại để dập tắt hoàn toàn đám cháy.
 * Đối với bình chữa cháy xe đẩy:
 – Đẩy xe đến chỗ có hỏa hoạn, kéo vòi rulo dẫn bột ra, hướng lăng phun bột vào gốc lửa.
 – Giật chốt an toàn (kẹp chì), kéo van chính trên miệng bình vuông góc với mặt đất.
 – Cầm chặt lăng phun chọn thuận chiều gió và bóp cò, bột sẽ được phun ra.
 Khi mở van (tuỳ từng loại bình có cấu tạo van khoá khác nhau thì cách mở khác nhau) bột khô trong bình được phun ra ngoài nhờ lực đẩy của khí nén (nén trực tiếp với bột hoặc trong chai riêng) qua hệ thống ống dẫn. Khi phun vào đám cháy bột có tác dụng kìm hãm phản ứng cháy và cách ly chất cháy với ôxy không khí, mặt khác ngăn cản hơi khí cháy tiến vào vùng cháy dẫn đến đám cháy bị dập tắt.
-***Bọt Foam chữa cháy 
-**        Bọt Foam chữa cháy thông dụng có hai loại : Foam chữa cháy AFFF và ARC 
+**Bọt Foam chữa cháy **
+**        Bọt Foam chữa cháy thông dụng có hai loại : Foam chữa cháy AFFF và ARC **
 – Foam ARC (alcohol-resistant concentrate) là chất bọt mà sẽ tạo ra một màn nhấy trên mặt phẳng của loại nhiên liệu không hòa tan.
 – Foam AFFF( water- based) là chất bọt mà sẽ tạo ra một màn sương phủ  trên mặt phẳng của nhiên liệu có hydrocarbon.
        Bọt Foam chữa cháy được tạo bởi 3 thành phần chính đó là : nước, bọt cô đặc và không khí, Nước được trộn với bọt cô đặc, tạo thành một dung dịch foam. Bọt foam có đặc tính là có tính bền, chứa đầy không khí, có tỷ trọng nhỏ hơn dầu, xăng, hoặc nước. . Dung dịch Foam này lại được trộn với không khí (hút không khí) để tạo ra một loại bọt chữa cháy có đủ tính năng, sẵn sàng phun lên bề mặt vật gây cháy và dập tắt cháy.
@@ -437,7 +437,7 @@ Xin chân thành cảm ơn ý kiến chia sẻ của quý vị
 
 **3.4. Tổ chức hoạt động:** Giáo viên sử dụng trò chơi “Ai nhanh hơn” tạo không khí hào hứng cho học sinh trả lời câu hỏi tình huống.
 
-**4. HOẠT ĐỘNG VẬN****DỤNG**
+**4. HOẠT ĐỘNG VẬN**DỤNG**
 
 **4.1. Mục tiêu:** Giúp học sinh vận dụng kiến thức đã học có thể sáng tạo ra các sản phẩm để tuyên truyền cho mọi người xung quanh về phòng chống cháy, nổ.
 
@@ -453,7 +453,7 @@ Các nhóm làm tập san tuyên truyền về phòng chống cháy nổ gồm c
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
-- [Tiet_89_-Phong-chong-chay-no](/assets/docs/Tiet_89_-Phong-chong-chay-no.docx)
+- [Tiet_89_-Phong-chong-chay-no](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các loại kế hoạch tại
 

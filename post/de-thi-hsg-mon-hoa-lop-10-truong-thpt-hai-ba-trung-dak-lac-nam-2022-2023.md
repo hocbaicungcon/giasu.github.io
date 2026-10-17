@@ -64,7 +64,7 @@ a.. Hãy thiết lập  biểu thức liên quan giữa n, a và KC.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [Hoa_10_THPT-Hai-Ba-Trung](/assets/docs/Hoa_10_THPT-Hai-Ba-Trung.docx)
+- [Hoa_10_THPT-Hai-Ba-Trung](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

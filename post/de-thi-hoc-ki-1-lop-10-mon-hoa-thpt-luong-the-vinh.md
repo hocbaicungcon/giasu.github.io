@@ -13,12 +13,12 @@ grade: 10
 
 GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
-- [ĐÁP ÁN HÓA 10 – KÌ 1](/assets/docs/DAP-AN-HOA-10-KI-1.docx)
-- [MÃ ĐỀ 001 (4)](/assets/docs/MA-DE-001-4.docx)
-- [MÃ ĐỀ 002](/assets/docs/MA-DE-002.docx)
-- [Mã đề 003](/assets/docs/Ma-de-003.docx)
-- [Mã đề 004](/assets/docs/Ma-de-004.docx)
-- [MA TRẬN ĐỀ THI KÌ I HÓA – LỚP 10 – 2020 -2-21](/assets/docs/MA-TRAN-DE-THI-KI-I-HOA-LOP-10-2020-2-21.docx)
+- [ĐÁP ÁN HÓA 10 – KÌ 1](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [MÃ ĐỀ 001 (4)](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [MÃ ĐỀ 002](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Mã đề 003](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [Mã đề 004](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [MA TRẬN ĐỀ THI KÌ I HÓA – LỚP 10 – 2020 -2-21](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

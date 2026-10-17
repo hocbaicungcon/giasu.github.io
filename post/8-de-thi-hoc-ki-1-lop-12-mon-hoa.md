@@ -22,39 +22,39 @@ Cho biết nguyên tử khối của các nguyên tố: H=1; O=16; S=32; F=19; C
 
 **Câu 1:** Polietilen có khối lượng phân tử 7000 đvC có hệ số polime hóa là:
 
- **A.** 250 **B.** 100 **C.** 340 **D.** 1000
+ **A.** 250 B.** 100 **C.** 340 D.** 1000
 
 **Câu 2:** Cho 11,25 gam H2NCH2COOH tác dụng vừa đủ với 100 ml dung dịch HCl aM. Giá trị của a là
 
- **A.** 1M. **B.** 2M. **C.** 1,5M. **D.** 0,5M.
+ **A.** 1M. B.** 2M. **C.** 1,5M. D.** 0,5M.
 
 **Câu 3:** Cho các chất: axit glutamic, saccarozơ, metylamoni clorua, vinyl axetat, phenol, glixerol, Gly-Gly. Số chất tác dụng với dung dịch NaOH loãng, nóng là
 
- **A.** 6. **B.** 4. **C.** 3. **D.** 5.
+ **A.** 6. B.** 4. **C.** 3. D.** 5.
 
 **Câu 4:** Cho hỗn hợp gồm 27 gam glucozơ và 9 gam fructozơ phản ứng hoàn toàn với lượng dư dung dịch AgNO3 trong NH3, thu được m gam Ag. Giá trị của m là
 
- **A.** 32,4. **B.** 21,6. **C.** 43,2. **D.** 16,2.
+ **A.** 32,4. B.** 21,6. **C.** 43,2. D.** 16,2.
 
 **Câu 5:** Xà phòng hóa hoàn toàn 0,15 mol một este no, đơn chức X bằng 200 ml dung dịch NaOH 1,25M, cô cạn dung dịch sau phản ứng, thu được 14,2 gam chất rắn khan. Đốt cháy hết 0,1 mol X rồi cho toàn bộ sản phẩm cháy vào dung dịch Ba(OH)2 (dư), thu được 59,1 gam kết tủa. Công thức cấu tạo thu gọn của X là
 
- **A.** HCOOC2H5. **B.** CH3COOCH3. **C.** CH3COOC3H7.  **D.** HCOOC3H7.
+ **A.** HCOOC2H5. B.** CH3COOCH3. **C.** CH3COOC3H7.  D.** HCOOC3H7.
 
 **Câu 6:** Chất hữu cơ X mạch hở có dạng H2N*–* R*–* COOR’ (R, R’ là các gốc hiđrocacbon), phần trăm khối lượng nitơ trong X là 15,73%. Cho m gam X phản ứng hoàn toàn với dung dịch NaOH, toàn bộ lượng ancol sinh ra cho tác dụng hết với CuO (đun nóng) được anđehit Y (ancol chỉ bị oxi hóa thành anđehit). Cho toàn bộ Y tác dụng với một lượng dư dung dịch AgNO3 trong NH3, thu được 12,96 gam Ag kết tủa. Giá trị của m là :
 
- **A.** 2,67. **B.** 4,45. **C.** 3,56. **D.** 5,34.
+ **A.** 2,67. B.** 4,45. **C.** 3,56. D.** 5,34.
 
 **Câu 7:** Da nhân tạo (PVC) được điều chế từ khí thiên nhiên theo sơ đồ:
 
 Nếu hiệu suất của toàn bộ quá trình điều chế là 20%, muốn điều chế được 1 tấn PVC thì thể tích khí thiên nhiên (chứa 80% metan) ở điều kiện tiêu chuẩn cần dùng là
 
- **A.** 4480 m3 **B.** 6875 m3. **C.** 4450 m3 **D.** 4375 m3
+ **A.** 4480 m3 B.** 6875 m3. **C.** 4450 m3 D.** 4375 m3
 
 **Câu 8:** Este X có công thức cấu tạo thu gọn CH3COOCH2CH2CH3. Vậy tên gọi của X là
 
- **A.** metyl butirat. **B.** propyl axetat.
+ **A.** metyl butirat. B.** propyl axetat.**
 
- **C.** isopropyl axetat. **D.** etyl propionat.
+ **C.** isopropyl axetat. D.** etyl propionat.**
 
 **Câu 9:** Kết quả thí nghiệm của các dung dịch X, Y, Z, T với thuốc thử được ghi ở bảng sau:
 
@@ -81,11 +81,11 @@ Các dung dịch X, Y, Z, T lần lượt là:
 
 **Câu 10:** Cho 24,36 gam tripeptit mạch hở Gly-Ala-Gly tác dụng với lượng dung dịch HCl vừa đủ, sau phản ứng thu được dung dịch Y chứa m gam muối. Giá trị m là:
 
- **A.** 37,50 gam **B.** 38,45 gam **C.** 41,82 gam **D.** 40,42 gam
+ **A.** 37,50 gam B.** 38,45 gam **C.** 41,82 gam D.** 40,42 gam
 
 **Câu 11:** Cho các este : etyl fomat (1), vinyl axetat (2), triolein (3), metyl acrylat (4), phenyl axetat (5). Dãy gồm các este đều phản ứng được với dung dịch NaOH (đun nóng) sinh ra ancol là
 
- **A.** (1), (3), (4). **B.** (1), (2), (3). **C.** (3), (4), (5). **D.** (2), (3), (5).
+ **A.** (1), (3), (4). B.** (1), (2), (3). **C.** (3), (4), (5). D.** (2), (3), (5).
 
 **Câu 12:** Những nhận xét nào trong các nhận xét sau là đúng?
 
@@ -97,51 +97,51 @@ Các dung dịch X, Y, Z, T lần lượt là:
 
 (4) Lực bazơ của các amin luôn lớn hơn lực bazơ của amoniac.
 
- **A.** (1), (2). **B.** (2), (3), (4). **C.** (1), (2), (4). **D.** (1), (2), (3).
+ **A.** (1), (2). B.** (2), (3), (4). **C.** (1), (2), (4). D.** (1), (2), (3).
 
 **Câu 13:** Dung dịch X chứa 0,02 mol C1H3NCH2COOH, 0,04 mol CH3CH(NH2)COOH và 0,1 mol HCOOC6H5. Cho dung dịch X tác dụng với 320 ml dung dịch KOH 1M đun nóng để phản ứng xảy ra hoàn toàn. Cô cạn dung dịch sau phản ứng thu được m gam chắt rắn khan. Giá trị của m là :
 
- **A.** 27,55 gam. **B.** 32,67 gam. **C.** 13,775 gam. **D.** 34,46 gam.
+ **A.** 27,55 gam. B.** 32,67 gam. **C.** 13,775 gam. D.** 34,46 gam.
 
 **Câu 14:** Trong các hợp chất sau, hợp chất nào là chất béo? 
 
- **A.** (C6H5COO)3C3H5.  **B.** (C2H5COO)3C3H5. 
+ **A.** (C6H5COO)3C3H5.  B.** (C2H5COO)3C3H5. **
 
- **C.** (C2H3COO)3C3H5. **D.** (C17H31COO)3C3H5.
+ **C.** (C2H3COO)3C3H5. D.** (C17H31COO)3C3H5.**
 
 **Câu 15:** Đun sôi a gam một triglixerit X với dung dịch KOH cho đến khi phản ứng hoàn toàn, thu được 0,92 gam glixerol và 9,58 gam hỗn hợp Y gồm muối của axit linoleic và axit oleic Giá trị của a là :
 
- **A.** 9,91 gam. **B.** 8,82 gam. **C.** 10,90 gam. **D.** 8,92 gam
+ **A.** 9,91 gam. B.** 8,82 gam. **C.** 10,90 gam. D.** 8,92 gam
 
 **Câu 16:** Hỗn hợp X gồm 2 amino axit no (chỉ có nhóm chức –COOH và –NH2 trong phân tử), trong đó tỉ lệ mO : mN = 80 : 21. Để tác dụng vừa đủ với 3,83 gam hỗn hợp X cần 30 ml dung dịch HCl 1M. Mặt khác, đốt cháy hoàn toàn 3,83 gam hỗn hợp X cần 3,192 lít O2 (đktc). Dẫn toàn bộ sản phẩm cháy (CO2, H2O và N2) vào nước vôi trong dư thì khối lượng kết tủa thu được là:
 
- **A.** 15 gam. **B.** 20 gam. **C.** 10 gam. **D.** 13 gam.
+ **A.** 15 gam. B.** 20 gam. **C.** 10 gam. D.** 13 gam.
 
 **Câu 17:** Tên gốc – chức của (CH3)2NC­2H5 là
 
- **A.** etylđimetylamin. **B.** metyletylamin. 
+ **A.** etylđimetylamin. B.** metyletylamin. **
 
- **C.** đietylamin. **D.** đimetylamin.
+ **C.** đietylamin. D.** đimetylamin.**
 
 **Câu 18:** Cho m gam hỗn hợp X gồm axit glutamic và alanin tác dụng với dung dịch HCl dư. Sau phản ứng làm bay hơi cẩn thận dung dịch, thu được (m + 17,52) gam muối khan. Nếu cho m gam hỗn hợp X tác dụng với dung dịch KOH vừa đủ, sau phản ứng làm bay hơi cẩn thận dung dịch, thu được (m + 28,5) gam muối khan. Giá trị của m là:
 
- **A.** 57,915 gam. **B.** 53,1 gam. **C.** 54,9 gam. **D.** 58,38 gam.
+ **A.** 57,915 gam. B.** 53,1 gam. **C.** 54,9 gam. D.** 58,38 gam.
 
 **Câu 19:** Cho các chất sau: caprolactam, phenol, stiren, toluen, metyl metacrylat, isopren. Số chất có khả năng tham gia phản ứng trùng hợp là
 
- **A.** 6. **B.** 4. **C.** 3. **D.** 5.
+ **A.** 6. B.** 4. **C.** 3. D.** 5.
 
 **Câu 20:** Cho dãy các chất tinh bột, xenlulozơ, glucozơ, fructozơ, saccarozơ. Số chất trong dãy thuộc loại monosaccarit là
 
- **A.** 4. **B.** 1. **C.** 2. **D.** 3.
+ **A.** 4. B.** 1. **C.** 2. D.** 3.
 
 **Câu 21:** Chất nào có nhiệt độ sôi thấp nhất ?
 
- **A.** C4H9OH. **B.** C3H7COOH. **C.** CH3COOC2H5. **D.** C6H5OH.
+ **A.** C4H9OH. B.** C3H7COOH. **C.** CH3COOC2H5. D.** C6H5OH.
 
 **Câu 22:** Khi đốt cháy polime X chỉ thu được khí CO2 và hơi nước với tỉ lệ số mol tương ứng là 1 : 1. X là polime nào dưới đây ?
 
- **A.** Tinh bột. **B.** Polivinyl clorua (PVC). **C.** Polistiren (PS). **D.** Polipropilen.
+ **A.** Tinh bột. B.** Polivinyl clorua (PVC). **C.** Polistiren (PS). D.** Polipropilen.
 
 **Câu 23:** Peptit Ala-Val-Gly có công thức cấu tạo là:
 
@@ -155,40 +155,40 @@ Các dung dịch X, Y, Z, T lần lượt là:
 
 **Câu 24:** Đốt cháy hoàn toàn 3,7 gam một este đơn chức X thu được 3,36 lít khí CO2 (đktc) và 2,7 gam nước. Công thức phân tử của X là
 
- **A.** C5H8O2. **B.** C4H8O2. **C.** C3H6O2. **D.** C2H4O2.
+ **A.** C5H8O2. B.** C4H8O2. **C.** C3H6O2. D.** C2H4O2.
 
 **Câu 25:** Cho dãy các dung dịch: Glucozơ, saccarozơ, etanol, glixerol. Số dung dịch phản ứng với Cu(OH)2 ở nhiệt độ thường tạo dung dịch có màu xanh lam là 
 
- **A.** 1. **B.** 3. **C.** 4. **D.** 2.
+ **A.** 1. B.** 3. **C.** 4. D.** 2.
 
 **Câu 26:** Cho m gam tinh bột lên men thành C2H5OH với hiệu suất 81%, hấp thụ hết lượng CO2 sinh ra vào dung dịch Ca(OH)2 được 55 gam kết tủa và dung dịch X. Đun nóng dung dịch X lại có 10 gam kết tủa nữa. Giá trị m là :
 
- **A.** 150 gam. **B.** 75 gam. **C.** 125 gam. **D.** 225 gam.
+ **A.** 150 gam. B.** 75 gam. **C.** 125 gam. D.** 225 gam.
 
 **Câu 27:** Để điều chế etyl axetat trong phòng thí nghiệm, người ta lắp dụng cụ như hình vẽ sau:
 
 ![8+ đề thi học kì 1 lớp 12 môn hóa 1](file:///C:/Users/Admin/AppData/Local/Temp/lu119646emwzr.tmp/lu119646emxhz_tmp_74c405feab85f4a.png)
 
- **Hóa chất được cho vào bình 1 trong thí nghiệm trên là
+ **Hóa chất được cho vào bình 1 trong thí nghiệm trên là**
 
  A.**CH3COOH, C2H5OH và H2SO4 đặc.** B.**CH3COOH, CH3OH và H2SO4 đặc.
 
- **C.** CH3COOH và C2H5OH. **D.** CH3COOH và CH3OH.
+ **C.** CH3COOH và C2H5OH. D.** CH3COOH và CH3OH.**
 
 **Câu 28:** Trong các dung dịch CH3-CH2-NH2; H2N-CH2-COOH; H2N-CH2-CH(NH2)-COOH, HOOC-CH2-CH2-CH(NH2)-COOH, số dung dịch làm xanh quỳ tím là
 
- **A.** 2. **B.** 1. **C.** 3. **D.** 4.
+ **A.** 2. B.** 1. **C.** 3. D.** 4.
 
 **Câu 29:** Cho 15,5gam metylamin tác dụng đủ HCl khối lượng sản phẩm là
 
- **A.** 23,499 gam. **B.** 33,57gam. **C.** 23,495gam. **D.** 33,75 gam 
+ **A.** 23,499 gam. B.** 33,57gam. **C.** 23,495gam. D.** 33,75 gam 
 
 **Câu 30:** Polietilen là sản phẩm của phản ứng trùng hợp
 
- **A.** CH2=CH-CH3. **B.** CH2=CH2. **C.** CH2=CH-Cl. **D.** CH2=CH-CH=CH2.
+ **A.** CH2=CH-CH3. B.** CH2=CH2. **C.** CH2=CH-Cl. D.** CH2=CH-CH=CH2.
 
-***—— HẾT ——
-**ĐÁP ÁN
+**—— HẾT ——**
+**ĐÁP ÁN**
 | 1 | A | 11 | A | 21 | C |
 | --- | --- | --- | --- | --- | --- |
 | 2 | C | 12 | A | 22 | D |
@@ -402,7 +402,7 @@ Số trường hợp xuất hiện ăn mòn điện hóa học là
 
 ==============HẾT=============
 
-**ĐÁP ÁN
+**ĐÁP ÁN**
 1. B 2. B 3. B 4. B 5. A 6. B 7. B 8. A 9. A 10. B 11. B 12. B 13. B 14. A 15. D 16. A 17. C 18. C 19. C 20. D 21. D 22. C 23. D 24. C 25. A 26. D 27. C 28. C 29. A 30. C 31. D 32. D 33. D 34. A 35. C 36. A 37. C 38. A 39. D 40. D
 
  
@@ -414,8 +414,8 @@ Thời gian: 45 phút |
 
  
 
-**Cho biết nguyên tử khối của các nguyên tố
- **H= 1;C= 12; N= 14; 0= 16; S = 32; C1 = 35,5; Na = 23; Mg = 24; Al= 27;Ca = 40; Cr = 52; Fe = 56; Cu = 64; Zn = 65; Ag = 108; Ba = 137.
+**Cho biết nguyên tử khối của các nguyên tố**
+ **H= 1;C= 12; N= 14; 0= 16; S = 32; C1 = 35,5; Na = 23; Mg = 24; Al= 27;Ca = 40; Cr = 52; Fe = 56; Cu = 64; Zn = 65; Ag = 108; Ba = 137.**
 **Câu 1:** Thành phần chính của tơ nitron (tơ olon) là polime được tạo thành từ hợp chất nào sau đây?
 
 **A**. CH2=C(CH3)-COOCH3. **B**. C6H5-CH=CH2. **C**. CH2=CH-Cl. **D**. CH2=CH-CN.
@@ -606,7 +606,7 @@ Thời gian: 45 phút |
 
 **A**. 11,2 gam. **B**. 12,0 gam. **C**. 16,8 gam. **D**. 14,0 gam.
 
-**ĐÁP ÁN
+**ĐÁP ÁN**
 1D 2B 3B 4B 5A 6C 7D 8C 9B 10D 11B 12C 13D 14A 15C
 
 16D 17C 18B 19C 20D 21C 22D 23B 24D 25B 26A 27C 28A 29A 30C
@@ -622,7 +622,7 @@ Thời gian: 45 phút |
 
  
 
-**A. PHẦN TRẮC NGHIỆM (6,0 Đ)
+**A. PHẦN TRẮC NGHIỆM (6,0 Đ)**
 *Cho: H=1; C=12; N=14; O=16; S= 32; Na=23; K=39; Al=27; Cl=35,5; Fe=56; Zn=65; Ag=108; Cu=64; Be=9; Mg= 24; Ca=40; Sr= 88; Ba=137
 **Câu 1:** Cho các chất sau: (X1) C6H5NH2; (X2) CH3NH2 ; (X3) H2NCH2COOH; (X4) C6H12O6;
 
@@ -630,7 +630,7 @@ Thời gian: 45 phút |
 
 Dung dịch nào làm quỳ tím hóa xanh?
 
-**A.** X2, X3,X4,X6 **B.** X1, X5, X4 **C.** X1, X2, X5,X7 **D.** X2, X6
+**A.** X2, X3,X4,X6 B.** X1, X5, X4 **C.** X1, X2, X5,X7 D.** X2, X6
 
 **Câu 2:** Mô tả nào dưới đây không đúng với glucozơ ?
 
@@ -644,17 +644,17 @@ Dung dịch nào làm quỳ tím hóa xanh?
 
 **Câu 3:** Lọai thực phẩm nào không chứa nhiều saccarôzơ là:
 
-**A.** mật mía. **B.** đường kính. **C.** mật ong. **D.** đường phèn.
+**A.** mật mía. B.** đường kính. **C.** mật ong. D.** đường phèn.
 
 **Câu 4:** Poli (vinyl clorua) có công thức là
 
-**A.** (-CH2-CH2-)n. **B.** (-CH2-CHF-)n. **C.** (-CH2-CHBr-)n. **D.** (-CH2-CHCl-)n.
+**A.** (-CH2-CH2-)n. B.** (-CH2-CHF-)n. **C.** (-CH2-CHBr-)n. D.** (-CH2-CHCl-)n.
 
 **Câu 5:** Chất nào dưới đây không cho phản ứng trùng ngưng?
 
-**A.** Axit aminoaxetic **B.** Axit -aminocaproic
+**A.** Axit aminoaxetic B.** Axit -aminocaproic**
 
-**C.** Axit -aminoenantoic **D.** Axit acrylic
+**C.** Axit -aminoenantoic D.** Axit acrylic**
 
 **Câu 6:** Khi nói về peptit và protein, phát biểu nào sau đây là *sai* ?
 
@@ -668,89 +668,89 @@ Dung dịch nào làm quỳ tím hóa xanh?
 
 **Câu 7:** Cấu hình electron của X2+ : 1s22s22p63s23p6 Vậy vị trí của X trong bảng tuần hoàn là
 
-**A.** ô 16, chu kỳ 3, nhóm VIA. **B.** ô 18, chu kỳ 3, nhóm VIA.
+**A.** ô 16, chu kỳ 3, nhóm VIA. B.** ô 18, chu kỳ 3, nhóm VIA.**
 
-**C.** ô 20, chu kỳ 4, nhóm IIA. **D.** ô 18, chu kỳ 3, nhóm VIIIA.
+**C.** ô 20, chu kỳ 4, nhóm IIA. D.** ô 18, chu kỳ 3, nhóm VIIIA.**
 
 **Câu 8:** Cho một số tính chất: có dạng sợi (1); tan trong nước (2); tan trong nước Svayde (3); phản ứng với axit nitric đặc (xúc tác axit sunfuric đặc) (4); tham gia phản ứng tráng bạc (5); bị thuỷ phân trong dung dịch axit đun nóng (6). Các tính chất của xenlulozơ là:
 
-**A.** (1), (3), (4) và (6). **B.** (1), (2), (3) và (4). **C.** (3), (4), (5) và (6). **D.** (2), (3), (4) và (5).
+**A.** (1), (3), (4) và (6). B.** (1), (2), (3) và (4). **C.** (3), (4), (5) và (6). D.** (2), (3), (4) và (5).
 
 **Câu 9:** Một mẫu kim loại Fe có lẫn tạp chất là các kim loại Al, Mg. Để loại bỏ tạp chất thì dùng dung dịch nào sau đây?
 
-**A.** Cu(NO3)2. **B.** NaOH. **C.** Fe(NO3)2. **D.** Fe(NO3)3.
+**A.** Cu(NO3)2. B.** NaOH. **C.** Fe(NO3)2. D.** Fe(NO3)3.
 
 **Câu 10:** Quá trình nhiều phân tử nhỏ (monome) kết hợp với nhau thành phân tử lớn (polime) đồng thời giải phóng những phân tử nhỏ như nước gọi là phản ứng
 
-**A.** nhiệt phân. **B.** trao đổi. **C.** trùng ngưng. **D.** trùng hợp.
+**A.** nhiệt phân. B.** trao đổi. **C.** trùng ngưng. D.** trùng hợp.
 
 **Câu 11:** Tìm từ thích hợp để điền vào chỗ trống trong đoạn văn sau : Ở dạng mạch hở glucozơ và fructozơ đều có nhóm cacbonyl, nhưng trong phân tử glucozơ nhóm cacbonyl ở nguyên tử C số …, còn trong phân tử fructozơ nhóm cacbonyl ở nguyên tử C số…. Trong môi trường bazơ, fructozơ có thể chuyển hoá thành … và …
 
-**A.** 1, 2, glucozơ, ngược lại. **B.** 2, 1, glucozơ, ngược lại.
+**A.** 1, 2, glucozơ, ngược lại. B.** 2, 1, glucozơ, ngược lại.**
 
-**C.** 2, 2, glucozơ, ngược lại. **D.** 1, 2, glucozơ, mantozơ.
+**C.** 2, 2, glucozơ, ngược lại. D.** 1, 2, glucozơ, mantozơ.**
 
 **Câu 12:** Trong số các kim lọai: nhôm, bạc, sắt, đồng, crom thì kim loại cứng nhất, dẫn điện tốt nhất lần lượt là:
 
-**A.** Crom, đồng. **B.** Sắt, nhôm. **C.** Sắt, bạc. **D.** Crom, bạc.
+**A.** Crom, đồng. B.** Sắt, nhôm. **C.** Sắt, bạc. D.** Crom, bạc.
 
 **Câu 13:** Cho sơ đồ biến hóa sau: Alanin  X Y. Chất Y là chất nào sau đây ?
 
-**A.** CH3-CH(NH2)-COONa **B.** CH3-CH(NH3Cl)COOH
+**A.** CH3-CH(NH2)-COONa B.** CH3-CH(NH3Cl)COOH**
 
-**C.** CH3-H(NH3Cl)COONa **D.** H2N-CH2-CH2-COOH
+**C.** CH3-H(NH3Cl)COONa D.** H2N-CH2-CH2-COOH**
 
 **Câu 14:** Số đồng phân tripeptit tạo thành từ 1 phân tử glyxin và 2 phân tử alanin là
 
-**A.** 2. **B.** 4. **C.** 5. **D.** 3.
+**A.** 2. B.** 4. **C.** 5. D.** 3.
 
 **Câu 15:** Các chất vừa tác dụng được với dung dịch HCl vừa tác dụng được với dung dịch AgNO3 là:
 
-**A.** CuO, Al, Mg. **B.** Zn, Ni, Sn. **C.** MgO, Na, Ba. **D.** Zn, Cu, Fe.
+**A.** CuO, Al, Mg. B.** Zn, Ni, Sn. **C.** MgO, Na, Ba. D.** Zn, Cu, Fe.
 
 **Câu 16:** X là một Tetrapeptit cấu tạo từ Aminoacid Y, trong phân tử Y có 1 nhóm(-NH2), 1 nhóm (-COOH) ,no, mạch hở. Trong Y Oxi chiếm 42,67% khối lượng. Thủy phân m gam X trong môi trường acid thì thu được 28,35(g) tripeptit; 79,2(g) đipeptit và 101,25(g) Y. Giá trị của m là?
 
-**A.** 405,9. **B.** 202,95. **C.** 258,3. **D.** 184,5.
+**A.** 405,9. B.** 202,95. **C.** 258,3. D.** 184,5.
 
 **Câu 17:** Cho nước brom dư vào anilin thu được 16,5 g kết tủa. Giả sử H = 100%. Khối lượng anilin trong dung dịch là
 
-**A.** 9,3. **B.** 46,5. **C.** 4,65. **D.** 4**,** 5.
+**A.** 9,3. B.** 46,5. **C.** 4,65. D.** 4**,** 5.
 
 **Câu 18:** Cho 1,67 gam hỗn hợp gồm hai kim loại ở 2 chu kỳ liên tiếp thuộc nhóm IIA tác dụng hết với dung dịch HCl (dư), thoát ra 0,672 lít khí H2 (ở đktc). Hai kim loại đó là
 
-**A.** Mg và Ca. **B.** Ca và Sr. **C.** Be và Mg. **D.** Sr và Ba.
+**A.** Mg và Ca. B.** Ca và Sr. **C.** Be và Mg. D.** Sr và Ba.
 
 **Câu 19:** Cho m gam tinh bột lên men thành ancol (rượu) etylic với hiệu suất 81%. Toàn bộ lượng CO2 sinh ra được hấp thụ hoàn toàn vào dung dịch Ca(OH)2, thu được 550 gam kết tủa và dung dịch X. Đun kỹ dung dịch X thu thêm được 100 gam kết tủa. Giá trị của m là
 
-**A.** 750. **B.** 550. **C.** 650. **D.** 850.
+**A.** 750. B.** 550. **C.** 650. D.** 850.
 
 **Câu 20:** Đun nóng dung dịch chứa 0,1 mol saccarozơ và 0,1 mol glucozơ với dung dịch H2SO4 loãng dư cho đến khi phản ứng thủy phân xảy ra hoàn toàn rồi trung hòa axit bằng kiềm, sau đó thực hiện phản ứng tráng gương với AgNO3 dư. Khối lượng Ag thu được sau phản ứng là:
 
-**A.** 43,2g **B.** 21,6g. **C.** 32,4g **D.** 64,8g
+**A.** 43,2g B.** 21,6g. **C.** 32,4g D.** 64,8g
 
 **Câu 21:** Phân tử khối trung bình của PVC là 750000. Hệ số polime hoá của PVC là
 
-**A.** 25.000. **B.** 12.000 **C.** 15.000 **D.** 24.000
+**A.** 25.000. B.** 12.000 **C.** 15.000 D.** 24.000
 
 **Câu 22:** Để phân biệt dung dịch các chất sau: metyl amin, axit aminoaxetic, amoni axetat, anbumin (dd lòng trắng trứng) người ta dùng các thuốc thử là :
 
-**A.** Quỳ tím, Cu(OH)2. **B.** Cu(OH)2, phenolphthalein, dd HCl.
+**A.** Quỳ tím, Cu(OH)2. B.** Cu(OH)2, phenolphthalein, dd HCl.**
 
-**C.** Quỳ tím, ddHCl, dd NaOH. **D.** Quỳ tím, dd HNO3 đặc, dd NaOH.
+**C.** Quỳ tím, ddHCl, dd NaOH. D.** Quỳ tím, dd HNO3 đặc, dd NaOH.**
 
 **Câu 23:** Hòa tan hoàn toàn 11,9 g hỗn hợp gồm *Al* và *Zn* bằng *H**2** SO**4 *đặc nóng thu được7,616 lít* SO**2* (đktc), 0,64 g S và dung dịch X. Khối lượng muối trong dung dịch X là:
 
-**A.** 35,0 g **B.** 50,3 g **C.** 30,5 g **D.** 30,05 g
+**A.** 35,0 g B.** 50,3 g **C.** 30,5 g D.** 30,05 g
 
 **Câu 24:** Để nhận biết các dung dịch : lòng trắng trứng, anilin, glyxin, vinyl axetat, hồ tinh bột, ta có thể tiến hành theo trình tự sau:
 
-**A.** Quỳ tím, iot, Cu(OH)2 **B.** Na, iot, Cu(OH)2
+**A.** Quỳ tím, iot, Cu(OH)2 B.** Na, iot, Cu(OH)2**
 
-**C.** Nước brom, Cu(OH)2,iot **D.** NaOH, nước brom, iot.
+**C.** Nước brom, Cu(OH)2,iot D.** NaOH, nước brom, iot.**
 
 ———————————————–
 
-**B. PHẦN TỰ LUẬN (4,0 Đ)
+**B. PHẦN TỰ LUẬN (4,0 Đ)**
 **Câu 1:** (1 điểm)
 Viết phương trình hóa học:
 
@@ -775,7 +775,7 @@ Cho: H = 1; C = 12; N = 14; O = 16; Na = 23; Fe = 56
 
 —HẾT—
 
-**A. ĐÁP ÁN ĐỀ TRẮC NGHIỆM (6 điểm)
+**A. ĐÁP ÁN ĐỀ TRẮC NGHIỆM (6 điểm)**
 | Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ĐA | D | A | C | D | D | B | C | A | C | C |
@@ -784,7 +784,7 @@ Cho: H = 1; C = 12; N = 14; O = 16; Na = 23; Fe = 56
 | Câu | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 |
 | ĐA | B | A | B | C |  |  |  |  |  |  |
 
-**B. ĐÁP ÁN ĐỀ TỰ LUẬN (4 điểm)
+**B. ĐÁP ÁN ĐỀ TỰ LUẬN (4 điểm)**
 | CÂU | NỘI DUNG | ĐIỂM |
 | --- | --- | --- |
 | Câu 1 | Viết đúng 2 phương trình hóa học | 1 điểm |
@@ -806,7 +806,7 @@ Câu 4:
 
 * Nếu cân bằng sai thì không chấm phần bị ảnh hưởng yếu tố sai này.
 
-**—HẾT—
+**—HẾT—**
 | ĐỀ 5 | ĐỀ KIỂM TRA HỌC KỲ I
 Môn HÓA HỌC LỚP 12
 Thời gian: 45 phút |
@@ -814,7 +814,7 @@ Thời gian: 45 phút |
 
  
 
-**Cho biết khối lượng nguyên tử (theo đvC) của các nguyên tố:
+**Cho biết khối lượng nguyên tử (theo đvC) của các nguyên tố:**
 H = 1; C = 12; N = 14; O = 16; Na = 23; S = 32; Cl = 35,5; K = 39; Ca = 40; Ba = 137.
 
  **Câu 1:** Thủy phân một lượng tetrapeptit X (mạch hở) chỉ thu được 14,6 gam Ala-Gly; 7,3 gam Gly-Ala; 6,125 gam Gly-Ala-Val; 1,875 gam Gly; 8,775 gam Val; m gam hỗn hợp gồm Ala-Val và Ala. Giá trị **gần nhất** với m là
@@ -987,8 +987,8 @@ f) Chất béo lỏng chứa chủ yếu các gốc axit béo no.
 
  A. 2. B. 3. C. 4. D. 5.
 
-***——-Hết——-
-**Ghi chú:Cán bộ coi thi không giải thích gì thêm!
+**——-Hết——-**
+**Ghi chú:Cán bộ coi thi không giải thích gì thêm!**
 ĐÁP ÁN
 
  
@@ -1018,29 +1018,29 @@ Thời gian: 45 phút |
 
 **Câu 1:** Trong các tên gọi dưới đây, tên nào **không** phù hợp với chất CH3–CH(NH2)–COOH ?
 
-**A.** Axit -aminopropionic. **B.** Anilin. **C.** Alanin. **D.** Axit 2-aminopropanoic.
+**A.** Axit -aminopropionic. B.** Anilin. **C.** Alanin. D.** Axit 2-aminopropanoic.
 
 **Câu 2:** Cho 50ml dung dịch glucozơ chưa rõ nồng độ tác dụng với một lượng dư AgNO3 trong dung dịch NH3 thu được 2,16 gam bạc kết tủa. Nồng độ mol (hoặc mol/l) của dung dịch glucozơ đã dùng là
 
-**A.** 0,20M **B.** 0,02M **C.** 0,01M **D.** 0,10M
+**A.** 0,20M B.** 0,02M **C.** 0,01M D.** 0,10M
 
 **Câu 3:** Hợp chất X là axit glutamic. Cho 1,47 gam X tác dụng hết với 200ml dd HCl 0,25M thu được dung dịch Y. Cho một lượng NaOH vừa đủ vào dung dịch Y thu được dung dịch Z. Cô cạn Z được m gam muối khan. Giá trị **gần đúng nhất** của m là
 
-**A.** 2,27. **B.** 2,92. **C.** 4,83. **D.** 1,90.
+**A.** 2,27. B.** 2,92. **C.** 4,83. D.** 1,90.
 
 **Câu 4:** Xà phòng hóa hoàn toàn một trieste X bằng dung dịch NaOH thu được 9,2 gam glixerol và 83,4 gam muối của một axit béo no B. Chất B là:
 
-**A.** axit oleic **B.** axit axetic **C.** axit stearic **D.** axit panmitic
+**A.** axit oleic B.** axit axetic **C.** axit stearic D.** axit panmitic
 
 **Câu 5:** Đun nóng este CH3COOCH=CH2 với một lượng vừa đủ dung dịch NaOH, sản phẩm thu được là
 
-**A.** C2H5COONa và CH3OH. **B.** CH2=CHCOONa và CH3OH.
+**A.** C2H5COONa và CH3OH. B.** CH2=CHCOONa và CH3OH.**
 
-**C.** CH3COONa và CH2=CHOH. **D.** CH3COONa và CH3CHO.
+**C.** CH3COONa và CH2=CHOH. D.** CH3COONa và CH3CHO.**
 
 **Câu 6:** Xenlulozơ trinitrat là chất dễ cháy và nổ mạnh, được điều chế từ xenlulozơ và axit nitric. Muốn điều chế 29,7 kg xenlulozơ trintrat (hiệu suất 90%) thì thể tích axit ntric 96% (D = 1,52 g/ml) cần dùng là:
 
-**A.** 20,36 lít. **B.** 14,39 lit. **C.** 14,52 lít **D.** 15,24 lít.
+**A.** 20,36 lít. B.** 14,39 lit. **C.** 14,52 lít D.** 15,24 lít.
 
 **Câu 7:** Trong các chất dưới đây, chất nào là đipeptit ?
 
@@ -1054,13 +1054,13 @@ Thời gian: 45 phút |
 
 **Câu 8:** Phân tử khối trung bình của PE là 364000, của PVC là 750000. Hệ số polime hóa của loại PE và PVC trên lần lượt là:
 
-**A.** 15000 và 12000 **B.** 12000 và 13000 **C.** 13000 và 12000 **D.** 12000 và 15000
+**A.** 15000 và 12000 B.** 12000 và 13000 **C.** 13000 và 12000 D.** 12000 và 15000
 
 **Câu 9:** Dãy gồm các chất được dùng để tổng hợp cao su Buna-S là:
 
-**A.** CH2=CH-CH=CH2, lưu huỳnh. **B.** CH2=C(CH3)-CH=CH2, lưu huỳnh.
+**A.** CH2=CH-CH=CH2, lưu huỳnh. B.** CH2=C(CH3)-CH=CH2, lưu huỳnh.**
 
-**C.** CH2=C(CH3)-CH=CH2, C6H5CH=CH2. **D.** CH2=CH-CH=CH2, C6H5CH=CH2.
+**C.** CH2=C(CH3)-CH=CH2, C6H5CH=CH2. D.** CH2=CH-CH=CH2, C6H5CH=CH2.**
 
 **Câu 10:** Cho các phát biểu sau:
 
@@ -1076,7 +1076,7 @@ Thời gian: 45 phút |
 
 Số phát biểu đúng là
 
-**A.** 5 **B.** 2 **C.** 3 **D.** 4
+**A.** 5 B.** 2 **C.** 3 D.** 4
 
 **Câu 11:** Dãy các polime được điều chế bằng phản ứng trùng hợp là
 
@@ -1090,91 +1090,91 @@ Số phát biểu đúng là
 
 **Câu 12:** Đốt cháy hoàn toàn m gam amin X đơn chức bằng không khí vừa đủ thu được 13,44 lit CO2 (đktc); 16,2 gam H2O và V lit N2 ở đktc. Giá trị V là
 
-**A.** 92,96. **B.** 90,72. **C.** 22,4. **D.** 2,24.
+**A.** 92,96. B.** 90,72. **C.** 22,4. D.** 2,24.
 
 **Câu 13:** Đốt cháy hoàn toàn 1,48 gam một este X (tạo nên từ một axit cacboxylic đơn chức và một ancol đơn chức) thu được 1,344 lít khí CO2 (đktc) và 1,08 gam H2O. Số este đồng phân của X là:
 
-**A.** 1 **B.** 4 **C.** 3 **D.** 2
+**A.** 1 B.** 4 **C.** 3 D.** 2
 
 **Câu 14:** Cho các dung dịch: C6H5NH3Cl, H2NCH2COOH, CH3COOH, (NH2)2C3H5COOH, CH3COOCH3, H2NC3H5(COOH)2. Số dung dịch làm quỳ tím hóa đỏ là:
 
-**A.** 3 **B.** 5 **C.** 2 **D.** 4
+**A.** 3 B.** 5 **C.** 2 D.** 4
 
 **Câu 15:** Cho dãy các chất: C6H5NH2 (1), C2H5NH2 (2), (C6H5)2NH (3), (C2H5)2NH (4), NH3 (5) (C6H5– là gốc phenyl). Dãy các chất sắp xếp theo thứ tự lực bazơ giảm dần là :
 
-**A.** (4), (2), (5), (1), (3). **B.** (4), (1), (5), (2), (3). **C.** (4), (2), (3), (1), (5). **D.** (3), (1), (5), (2), (4).
+**A.** (4), (2), (5), (1), (3). B.** (4), (1), (5), (2), (3). **C.** (4), (2), (3), (1), (5). D.** (3), (1), (5), (2), (4).
 
 **Câu 16:** Cho 7,5 gam Glyxin phản ứng hết với dung dịch HCl. Sau phản ứng, khối lượng muối thu được là (Cho H = 1, C = 12, O = 16, Cl = 35, 5)
 
-**A.** 43,00 gam. **B.** 11,15 gam. **C.** 11,05 gam. **D.** 44,00 gam.
+**A.** 43,00 gam. B.** 11,15 gam. **C.** 11,05 gam. D.** 44,00 gam.
 
 **Câu 17:** Có thể gọi tên este (C17H33COO)3C3H5 là
 
-**A.** stearic **B.** tristearin **C.** tripanmitin **D.** triolein
+**A.** stearic B.** tristearin **C.** tripanmitin D.** triolein
 
 **Câu 18:** Xà phòng hóa 8,8 gam propyl fomat bằng 200 ml dung dịch NaOH 0,2M. Sau khi phản ứng xảy ra hoàn toàn, cô cạn dung dịch thu được m gam chất rắn khan.  Giá trị **gần đúng nhất** của m là
 
-**A.** 2,71 gam. **B.** 8,2 gam. **C.** 3,28 gam. **D.** 8,15 gam.
+**A.** 2,71 gam. B.** 8,2 gam. **C.** 3,28 gam. D.** 8,15 gam.
 
 **Câu 19:** Cho các chất: polietilen, poli(metyl metacrylat), poli(vinyl xianua), polibutađien. Số chất polime dùng làm chất dẻo là
 
-**A.** 4. **B.** 1. **C.** 2. **D.** 3.
+**A.** 4. B.** 1. **C.** 2. D.** 3.
 
 **Câu 20:** Đun nóng 32,9 gam một peptit mạch hở X với 200 gam dung dịch NaOH 10% (vừa đủ). Sau phản ứng thu được dung dịch Y. Cô cạn dung dịch Y thu được 52 gam muối khan. Biết răng X tạo thành từ các α-amino axit mà phân tử chứa 1 nhóm NH2 và 1 nhóm COOH. Số liên kết peptit trong X là:
 
-**A.** 4 **B.** 9 **C.** 5 **D.** 10
+**A.** 4 B.** 9 **C.** 5 D.** 10
 
 **Câu 21:** Este etyl fomat có công thức là
 
-**A.** HCOOCH3. **B.** HCOOC2H5. **C.** CH3COOCH3. **D.** HCOOCH=CH2.
+**A.** HCOOCH3. B.** HCOOC2H5. **C.** CH3COOCH3. D.** HCOOCH=CH2.
 
 **Câu 22:** Chất thuộc loại polisaccarit là
 
-**A.** glucozơ. **B.** xenlulozơ. **C.** fructozơ. **D.** saccarozơ.
+**A.** glucozơ. B.** xenlulozơ. **C.** fructozơ. D.** saccarozơ.
 
 **Câu 23:** Khi cho este của axit aminoaxetic phản ứng với dung dịch NaOH dư thu được ancol metylic. Công thức phân tử của este trên là?
 
-**A.** NH2CH2COOH **B.** NH2CH2COOCH3
+**A.** NH2CH2COOH B.** NH2CH2COOCH3**
 
-**C.** NH2CH2COOC2H5 **D.** NH2CH(CH3)COOCH3
+**C.** NH2CH2COOC2H5 D.** NH2CH(CH3)COOCH3**
 
 **Câu 24:** Công thức nào sau đây là của xenlulozơ?
 
-**A.** [C6H8O2(OH)3]n. **B.** [C6H7O2(OH)3]n. **C.** [C6H5O2(OH)3]n. **D.** [C6H7O3(OH)3]n.
+**A.** [C6H8O2(OH)3]n. B.** [C6H7O2(OH)3]n. **C.** [C6H5O2(OH)3]n. D.** [C6H7O3(OH)3]n.
 
 **Câu 25:** Đốt cháy hoàn toàn chất nào sau đây thu được sản phẩm có chứa nitơ ?
 
-**A.** Nhựa PE **B.** Chất béo **C.** Tơ tằm **D.** Tinh bột
+**A.** Nhựa PE B.** Chất béo **C.** Tơ tằm D.** Tinh bột
 
 **Câu 26:** Dung dịch của chất nào trong các chất dưới đây **không** làm đổi màu quỳ tím ?
 
-**A.** HOOCCH2CH2CH(NH2)COOH. **B.** CH3NH2.
+**A.** HOOCCH2CH2CH(NH2)COOH. B.** CH3NH2.**
 
-**C.** NH2CH2COOH **D.** CH3COOH.
+**C.** NH2CH2COOH D.** CH3COOH.**
 
 **Câu 27:** Hỗn hợp X gồm vinyl axetat, metyl axetat và etyl fomat. Đốt cháy hoàn toàn 3,08 gam X, thu được 2,16 gam H2O. Số mol của vinyl axetat trong X là
 
-**A.** 0,01 **B.** 0,02 **C.** 0,04 **D.** 0,03
+**A.** 0,01 B.** 0,02 **C.** 0,04 D.** 0,03
 
 **Câu 28:** Các polime có cấu trúc mạng không gian (mạng lưới) là:
 
-**A.** Nhựa Bakelit, cao su lưu hóa **B.** PVC, Amilozơ
+**A.** Nhựa Bakelit, cao su lưu hóa B.** PVC, Amilozơ**
 
-**C.** PE, PVC **D.** Amilopectin, cao su thiên nhiên
+**C.** PE, PVC D.** Amilopectin, cao su thiên nhiên**
 
 **Câu 29:** Số đồng phân amin có công thức phân tử C3H9N là
 
-**A.** 2. **B.** 3. **C.** 5. **D.** 4.
+**A.** 2. B.** 3. **C.** 5. D.** 4.
 
 **Câu 30:** Dãy các chất nào sau đây đều có phản ứng thuỷ phân trong môi trường axit?
 
-**A.** Tinh bột, xenlulozơ, saccarozơ. **B.** Tinh bột, xenlulozơ, glucozơ.
+**A.** Tinh bột, xenlulozơ, saccarozơ. B.** Tinh bột, xenlulozơ, glucozơ.**
 
-**C.** Tinh bột, xenlulozơ, fructozơ. **D.** Tinh bột, saccarozơ, fructozơ
+**C.** Tinh bột, xenlulozơ, fructozơ. D.** Tinh bột, saccarozơ, fructozơ**
 
 ———– HẾT ———-
 
-**ĐÁP ÁN
+**ĐÁP ÁN**
 | Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ĐA | B | A | C | D | D | B | C | C | D | C |
@@ -1192,7 +1192,7 @@ Thời gian: 45 phút |
 
  
 
-**Cho biết khối lượng nguyên tử (theo đvC) của các nguyên tố:
+**Cho biết khối lượng nguyên tử (theo đvC) của các nguyên tố:**
 H = 1; C = 12; N = 14; O = 16; Na = 23; S = 32; Cl = 35,5; K = 39; Ca = 40; Ba = 137.
 
 **Câu 1:** Đun nóng este CH3COOCH=CH2 với một lượng vừa đủ dung dịch NaOH, sản phẩm thu được là
@@ -1357,8 +1357,8 @@ Số phát biểu đúng là
 
  A. 96,0. B. 48,0. C. 54,0. D. 72,0.
 
-***——-Hết——-
-**ĐÁP ÁN
+**——-Hết——-**
+**ĐÁP ÁN**
 | Câu | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | ĐA | C | B | A | D | C | A | B | A | B | A |
@@ -1376,44 +1376,44 @@ Thời gian: 45 phút |
 
  
 
-**PHẦN I: TRẮC NGHIỆM (8,0 điểm)
+**PHẦN I: TRẮC NGHIỆM (8,0 điểm)**
 **Câu 1:** Cho hỗn hợp Al2O3, ZnO, MgO, FeO tác dụng với luồng khí CO(t0) dư. Sau khi phản ứng xảy ra hoàn toàn thu được:
 
-**A.** Al2O3, Zn, MgO, FeO. **B.** Al, Zn, Mg, Fe.
+**A.** Al2O3, Zn, MgO, FeO. B.** Al, Zn, Mg, Fe.**
 
-**C.** Al2O3, Zn, MgO, Fe. **D.** Al, Zn, MgO, Fe
+**C.** Al2O3, Zn, MgO, Fe. D.** Al, Zn, MgO, Fe**
 
 **Câu 2:** Hỗn hợp A có khối lượng 17,86g gồm CuO, Al2O3 và FeO. Cho H2 dư đi qua A nung nóng, sau khi pư xong thu được 3,6g H2O. Mặt khác, hòa tan hoàn toàn A bằng dd HCl(dư), được dd B. Cô cạn dd B thu được 33,81g muối khan. Khối lượng Al2O3 trong hh ban đầu là
 
-**A.** 3,46g. **B.** 1,53g. **C.** 3,06g. **D.** 1,86
+**A.** 3,46g. B.** 1,53g. **C.** 3,06g. D.** 1,86
 
 **Câu 3:** Công thức của xenlulozơ là:
 
-**A.** [C6H7O3­(OH)3]n **B.** [C6H7O2­(OH)3]n **C.** [C6H8O2(OH)3]n **D.** [C6H7O3­(OH)2]n
+**A.** [C6H7O3­(OH)3]n B.** [C6H7O2­(OH)3]n **C.** [C6H8O2(OH)3]n D.** [C6H7O3­(OH)2]n
 
 **Câu 4:** Công thức tổng quát của các aminoaxit là :
 
-**A.** (NH2)xR(COOH)y **B.** H2N-CxHy-COOH **C.** (NH2)x(COOH)y **D.** (NH2)R(COOH)
+**A.** (NH2)xR(COOH)y B.** H2N-CxHy-COOH **C.** (NH2)x(COOH)y D.** (NH2)R(COOH)
 
 **Câu 5:** Để khử ion Cu2+ trong dung dịch CuSO4 có thể dùng kim loại
 
-**A.** Fe **B.** K **C.** Ba **D.** Na
+**A.** Fe B.** K **C.** Ba D.** Na
 
 **Câu 6:** Trong các chất dưới đây chất nào có tính bazơ mạnh nhất?
 
-**A.** C6H5-CH2-NH2. **B.** (CH3)2NH. **C.** NH3. **D.** C6H5-NH2.
+**A.** C6H5-CH2-NH2. B.** (CH3)2NH. **C.** NH3. D.** C6H5-NH2.
 
 **Câu 7:** Đun nóng dung dịch chứa 27 gam glucozơ với AgNO3 trong dung dịch NH3(dư) thì khối lượng Ag tối đa thu được là :
 
-**A.** 21,6 gam **B.** 32,4 gam **C.** 16,62 gam **D.** 10,8 gam
+**A.** 21,6 gam B.** 32,4 gam **C.** 16,62 gam D.** 10,8 gam
 
 **Câu 8:** Để khử hoàn toàn 30g hỗn hợp gồm CuO, Fe, FeO, Fe2O3 Fe3O4, MgO cần dùng 5,6 lít khí CO( đkc). Số gam chất rắn thu được sau phản ứng là
 
-**A.** 25. **B.** 26. **C.** 23. **D.** 24.
+**A.** 25. B.** 26. **C.** 23. D.** 24.
 
 **Câu 9:** Số lượng đồng phân amin bậc 2 ứng với công thức phân tử C4H11N là:
 
-**A.** 4. **B.** 2. **C.** 3. **D.** 5.
+**A.** 4. B.** 2. **C.** 3. D.** 5.
 
 **Câu 10:** Thả Na vào dung dịch CuSO4 quan sát thấy hiện tượng
 
@@ -1425,69 +1425,69 @@ Thời gian: 45 phút |
 
 **D.** có khí thoát ra, xuất hiện kết tủa xanh, sau đó kết tủa không tan.
 
-**Câu 11:** Tính chất vật lý nào dưới đây của kim loại ***không*** phải do các electron tự do gây ra?
+**Câu 11:** Tính chất vật lý nào dưới đây của kim loại **không** phải do các electron tự do gây ra?
 
-**A.** Ánh kim. **B.** Tính cứng
+**A.** Ánh kim. B.** Tính cứng**
 
-**C.** Tính dẻo. **D.** Tính dẫn điện và nhiệt.
+**C.** Tính dẻo. D.** Tính dẫn điện và nhiệt.**
 
 **Câu 12:** Kim loại nào sau đây có tính dẫn điện tốt nhất trong tất cả các kim loại?
 
-**A.** Bạc. **B.** Nhôm **C.** Đồng. **D.** Vàng.
+**A.** Bạc. B.** Nhôm **C.** Đồng. D.** Vàng.
 
 **Câu 13:** Cho dãy các kim loại: Na, Cu, Fe, Ag, Zn. Số kim loại trong dãy phản ứng được với dung dịch HCl là
 
-**A.** 5. **B.** 4. **C.** 2. **D.** 3.
+**A.** 5. B.** 4. **C.** 2. D.** 3.
 
 **Câu 14:** Hoà tan hoàn toàn 15,4g hỗn hợp Mg và Zn trong dung dịch HCl dư thấy có 0,6 g khí H2 bay ra. Số (g) muối tạo ra là
 
-**A.** 35,7. **B.** 53,7 **C.** 63,7. **D.** 36,7.
+**A.** 35,7. B.** 53,7 **C.** 63,7. D.** 36,7.
 
 **Câu 15:** Một este no đơn chức X. Cứ 9 gam X tác dụng vừa đủ với 200ml dung dịch NaOH 0,75M. Vậy công thức cấu tạo của X là
 
-**A.** HCOOCH3 **B.** HCOOC2H5 **C.** CH3COOCH3 **D.** CH3COOC2H5
+**A.** HCOOCH3 B.** HCOOC2H5 **C.** CH3COOCH3 D.** CH3COOC2H5
 
 **Câu 16:** Khi xà phòng hóa tristearin ta thu được sản phẩm là:
 
-**A.** C15H31COOH và glixerol. **B.** C15H31COONa và etanol.
+**A.** C15H31COOH và glixerol. B.** C15H31COONa và etanol.**
 
-**C.** C17H35COOH và glixerol. **D.** C17H35COONa**.** và glixerol.
+**C.** C17H35COOH và glixerol. D.** C17H35COONa**.** và glixerol.**
 
 **Câu 17:** Để chứng minh trong phân tử glucozơ có nhiều nhóm OH, người ta cho dung dịch glucozơ phản ứng với:
 
-**A.** AgNO3/NH3đun nóng. **B.** NaOH.
+**A.** AgNO3/NH3đun nóng. B.** NaOH.**
 
-**C.** Cu(OH)2 trong NaOH , đun nóng. **D.** Cu(OH)2 ở nhiệt độ thường.
+**C.** Cu(OH)2 trong NaOH , đun nóng. D.** Cu(OH)2 ở nhiệt độ thường.**
 
 **Câu 18:** Monome được dùng để điều chế polipropilen là
 
-**A.** CH2=CH-CH=CH2. **B.** CH≡CH.
+**A.** CH2=CH-CH=CH2. B.** CH≡CH.**
 
-**C.** CH2=CH-CH3. **D.** CH2=CH2.
+**C.** CH2=CH-CH3. D.** CH2=CH2.**
 
 **Câu 19:** Dung dịch glucozơ và dung dịch fructozơ đều **không** có tính chất hoá học nào sau đây :
 
-**A.** Tác dụng với H2 ( xt Ni. t0) **B.** Hoà tan Cu(OH)2 tạo dd màu xanh lam
+**A.** Tác dụng với H2 ( xt Ni. t0) B.** Hoà tan Cu(OH)2 tạo dd màu xanh lam**
 
-**C.** Tham gia phản ứng tráng gương **D.** Bị thuỷ phân trong môi trường axit
+**C.** Tham gia phản ứng tráng gương D.** Bị thuỷ phân trong môi trường axit**
 
-**Câu 20:** Chất ***không*** có khả năng tham gia phản ứng trùng hợp là
+**Câu 20:** Chất **không** có khả năng tham gia phản ứng trùng hợp là
 
-**A.** stiren. **B.** toluen. **C.** isopren. **D.** propen.
+**A.** stiren. B.** toluen. **C.** isopren. D.** propen.
 
 **Câu 21:** Etyl axetat có công thức cấu tạo thu gọn là:
 
-**A.** HCOOCH=CH2 **B.** CH2 = CH – COOC2H5
+**A.** HCOOCH=CH2 B.** CH2 = CH – COOC2H5**
 
-**C.** CH3COOCH2CH3 **D.** CH3COOCH = CH2
+**C.** CH3COOCH2CH3 D.** CH3COOCH = CH2**
 
 **Câu 22:** Polivinyl clorua có công thức là
 
-**A.** (-CH2-CHCl-)n. **B.** (-CH2-CHBr-)n. **C.** (-CH2-CH2-)n. **D.** (-CH2-CHF-)n.
+**A.** (-CH2-CHCl-)n. B.** (-CH2-CHBr-)n. **C.** (-CH2-CH2-)n. D.** (-CH2-CHF-)n.
 
 **Câu 23:** Thuỷ phân không hoàn toàn tetrapeptit (X), ngoài các -amino axit còn thu được các đipetit: Gly-Ala; Phe-Val; Ala-Phe. Cấu tạo đúng của X là:
 
-**A.** Gly-Ala-Val-Phe **B.** Ala-Val-Phe-Gly. **C.** Gly-Ala-Phe–Val. **D.** Val-Phe-Gly-Ala.
+**A.** Gly-Ala-Val-Phe B.** Ala-Val-Phe-Gly. **C.** Gly-Ala-Phe–Val. D.** Val-Phe-Gly-Ala.
 
 **Câu 24:** X là một 
 
@@ -1495,11 +1495,11 @@ Thời gian: 45 phút |
 
  – amioaxit no chỉ chứa 1 nhóm -NH2 và 1 nhóm -COOH. Cho 23,4 gam X tác dụng với HCl dư thu được 30,7 gam muối. Công thức cấu tạo của X là:
 
-**A.** CH3-CH(CH3)CH(NH2)COOH **B.** H2N-CH2CH2-COOH
+**A.** CH3-CH(CH3)CH(NH2)COOH B.** H2N-CH2CH2-COOH**
 
-**C.** CH3-CH(NH2)-COOH **D.** H2N-CH2-COOH
+**C.** CH3-CH(NH2)-COOH D.** H2N-CH2-COOH**
 
-**PHẦN II: TỰ LUẬN (2,0 điểm)
+**PHẦN II: TỰ LUẬN (2,0 điểm)**
 Hòa tan hoàn toàn 15g hỗn hợp bột Al và Mg vào dung dịch H2SO4 loãng thì thu được 16,8 lít khí (đktc) và dung dịch chứa m gam muối.
 
  a. Tính m
@@ -1510,8 +1510,8 @@ Hòa tan hoàn toàn 15g hỗn hợp bột Al và Mg vào dung dịch H2SO4 loã
 
 *Cho**biết k** h**ối** l**ượng nguyên tử (theo đvc) của các nguyên tố**:
 *H=**1;** L**i=** 7;**C=** 12;**N=** 14;**O=** 16;**Na=** 23;**Mg=** 24;**Al=** 27;**P=** 31;**S=** 32;**Cl=** 35,5; K= 39; Ca= 40; Fe= 56; Cu= 64; Zn= 65; As= 75; Br= 80; Rb = 85,5; Ag= 108; Ba= 137; Ni= 59; Cr= 52; Mn= 55.
-***Lưu ý: Thí sinh không sử dụng bảng tuần hoàn
-**ĐÁP ÁN
+**Lưu ý: Thí sinh không sử dụng bảng tuần hoàn**
+**ĐÁP ÁN**
 ——————————————–
 
  
@@ -1530,7 +1530,7 @@ Hòa tan hoàn toàn 15g hỗn hợp bột Al và Mg vào dung dịch H2SO4 loã
 
 GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
-- [BO-DE-THI-HK1-HOA-12-CO-DAP-AN](/assets/docs/BO-DE-THI-HK1-HOA-12-CO-DAP-AN.doc)
+- [BO-DE-THI-HK1-HOA-12-CO-DAP-AN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

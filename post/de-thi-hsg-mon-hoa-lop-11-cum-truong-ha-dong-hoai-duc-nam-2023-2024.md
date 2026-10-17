@@ -19,7 +19,7 @@ grade: 11
 | --- | --- |
 | ĐỀ CHÍNH THỨC |                Môn thi:HÓA HỌC 11                Ngày thi: 28/3/2024                Thời gian làm bài: 120 phút   (Đề thi gồm 03 trang) |
 
-**Câu I***(4,0 điểm)
+**Câu I**(4,0 điểm)
 **1.** Cho sơ đồ phản ứng sau:
 
           (1)  A  +   D   E                                                
@@ -45,7 +45,7 @@ Biết A, B, D, E, F, G, H, X, M là kí hiệu của các chất khác nhau, tr
 
       **3.** Để xác định nồng độ dung dịch chuẩn NaOH trong chuẩn độ acid- base, người ta tiến hành như sau: Cân 1,26 gam oxalic acid ngậm nước (H2C2O4.2H2O) hòa tan hoàn toàn vào nước, định mức thành 100 ml. Lấy 10 ml dung dịch này thêm vào đó vài giọt phenolphthalein, đem chuẩn độ bằng dung dịch NaOH đến xuất hiện màu hồng (ở pH = 9) thì hết 17,5 ml dung dịch NaOH. Tính nồng độ dung dịch NaOH đã dùng.
 
-**Câu II***(4,0 điểm)
+**Câu II**(4,0 điểm)
  **1.** Cho phản ứng tổng hợp ammonia trong công nghiệp theo quá trình Haber như sau:
 
     N2(g)  +  3H2 (g)  ⇌ 2NH3 (g) (*)
@@ -72,8 +72,8 @@ Kết quả nghiên cứu sự phụ thuộc của hiệu suất tổng hợp am
 
 **b.** Biết a = 12 gam, xác định công thức của tinh thể T.
 
-**Câu III***(4,0 điểm)
-*       ***1.** Hãy giải thích hiện tượng sau, viết phương trình hóa học xảy ra:
+**Câu III**(4,0 điểm)
+*       **1.** Hãy giải thích hiện tượng sau, viết phương trình hóa học xảy ra:
 
      Ở những vùng gần các vỉa quặng pyrite( thành phần chính là FeS2), đất thường bị chua và chứa nhiều sắt, chủ yếu là do quá trình oxi hóa chậm pyrite bởi oxygen trong không khí khi có nước (ở đây các nguyên tố bị oxi hóa đến trạng thái oxi hóa cao nhất). Để khắc phục vấn đề trên, người ta thường bón vôi (CaO) vào đất.
 
@@ -108,7 +108,7 @@ Biết các phản ứng xảy ra hoàn toàn và n1 < n2 < n3.
 
       Tiến hành xử lý hai mẫu nước thải bằng phương pháp trên, sau khi xử lý, mẫu nào đạt tiêu chuẩn cho phép về hàm lượng ammonium?
 
-**Câu IV***(4,0 điểm)
+**Câu IV**(4,0 điểm)
  **1.** Chỉ số octane được dùng để đánh giá chất lượng của xăng theo mức độ chịu nén của hỗn hợp xăng và không khí trong động cơ. Chỉ số octane càng cao thì xăng đưa vào động cơ càng chịu nén tốt và cháy triệt để, giảm lượng khí thải độc hại, góp phần bảo vệ môi trường. Hiện nay, hệ thống đánh giá chỉ số octane RON ( Research Octane Number) đang được nhiều quốc gia sử dụng. Heptane được qui ước có chỉ số octane RON bằng 0, trong khi 2,2,4-trimethylpentane (isooctane) được qui ước có chỉ số octane RON bằng 100. Ví dụ xăng RON87 có khả năng chịu nén tương đương hỗn hợp chứa 87% 2,2,4-trimethylpentane và 13% heptane ( về thể tích). Một loại xăng gồm heptane và isooctane có chỉ số octane bằng 95.
 
       **a.** Tính % khối lượng mỗi chất trong xăng và khối lượng riêng của xăng. Biết heptane (D = 0,6795 g/cm3) và isooctane (D = 0,692 g/cm3).
@@ -119,7 +119,7 @@ Biết các phản ứng xảy ra hoàn toàn và n1 < n2 < n3.
 
       **2.** Hydrocarbon mạch hở X chứa 7,69% hydrogen về khối lượng (74 < MX < 100). X phản ứng với H2 dư có xúc tác Ni, đun nóng thu được hydrocarbon Y. Y phản ứng với Cl2 trong điều kiện chiếu sáng thu được 4 dẫn xuất monochloro. Z là đồng phân của X và Z không làm mất màu nước bromine. Xác định công thức cấu tạo của X, Y, Z.
 
-**Câu V***(4,0 điểm)
+**Câu V**(4,0 điểm)
 **1.** Một mẫu hoa hòe được xác định có hàm lượng rutin là 26%. Người ta đun sôi hoa hòe với nước ( 100oC) để chiết lấy rutin. Biết độ tan của rutin là 5,2 gam trong 1 lít nước ở 100oC và là 0,125 g trong 1 lít nước ở 25oC.
 
  **a.** Cần dùng thể tích nước tối thiểu là bao nhiêu để chiết được lượng rutin có trong 100 gam hoa hòe?
@@ -153,8 +153,8 @@ Họ tên và chữ kí của cán bộ coi thi số 1:             
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [3.De-thi-cum-HD-HD-2024-Hoa-11](/assets/docs/3.De-thi-cum-HD-HD-2024-Hoa-11-giasu.ai.vn.docx)
-- [3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD](/assets/docs/3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD-giasu.ai.vn.docx)
+- [3.De-thi-cum-HD-HD-2024-Hoa-11](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [3.Huong-dan-cham-HSG-Hoa-11-cum-HD-HD](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

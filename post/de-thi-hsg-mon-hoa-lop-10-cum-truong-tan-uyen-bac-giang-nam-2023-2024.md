@@ -25,7 +25,7 @@ Họ và tên học sinh :…………………………………………….. 
 | Cho nguyên tử khối (amu) của H= 1;Li=7; Be=9; C=12; N=14; O=16; Na=23; Mg=24; Al=27;P=31; S=32; Cl=35,5; K=39; Ca=40;Fe=56; Ba=137. |
 | --- |
 
-**I. PHẦN TRẮC NGHIỆM
+### I. Phần Trắc Nghiệm
 **Câu 1.** Cho các phát biểu sau:
 
 (1) Sodium (Na) chỉ có số oxi hóa (+1) trong các hợp chất.
@@ -44,11 +44,11 @@ Họ và tên học sinh :…………………………………………….. 
 
 Số phát biểu đúnglà
 
- **A.** 6. **B.** 3. **C.** 4. **D.** 5.
+ **A.** 6. B.** 3. **C.** 4. D.** 5.
 
 **Câu 2.** Cho m gam Cu phản ứng hết với dung dịch HNO3 thu được 9,916 lít (đkc) hỗn hợp khí NO và NO2 có tỉ khối đối với H2 là 19. Giá trị của m là
 
- **A.** 8 gam. **B.** 16 gam. **C.** 2,56 gam. **D.** 25,6 gam.
+ **A.** 8 gam. B.** 16 gam. **C.** 2,56 gam. D.** 25,6 gam.
 
 **Câu 3.** Nguyên tử nguyên tố R có tổng số hạt cơ bản proton, neutron, electron là 28. Nhận xét nào sau đây đúng?
 
@@ -72,25 +72,25 @@ Số phát biểu đúnglà
 
 **Câu 5.** Trong công thức Lewis của phân tử H2O, số cặp electron hoá trị chưa tham gia liên kết của nguyên tử trung tâm là
 
- **A.** 0. **B.** 1. **C.** 2. **D.** 3.
+ **A.** 0. B.** 1. **C.** 2. D.** 3.
 
 **Câu 6.** Cho các chất sau: CH4, H₂O, HF, BF3, C2H5OH, PCl5. Số chất tạo được liên kết hydrogen là
 
- **A.** 2. **B.** 3. **C.** 4. **D.** 5.
+ **A.** 2. B.** 3. **C.** 4. D.** 5.
 
 **Câu 7.** X, R, Y là những nguyên tố hoá học có số đơn vị điện tích hạt nhân tương ứng là 9, 19, 8. Công thức và loại liên kết hoá học có thể có giữa các cặp X và R, R và Y, X và Y là
 
- **A.** R2X, liên kết ion. **B.** R2Y, liên kết cộng hoá trị.
+ **A.** R2X, liên kết ion. B.** R2Y, liên kết cộng hoá trị.**
 
- **C.** YX2, liên kết cộng hoá trị. **D.** Y2X, liên kết cộng hoá trị.
+ **C.** YX2, liên kết cộng hoá trị. D.** Y2X, liên kết cộng hoá trị.**
 
 **Câu 8.** Cho phản ứng tổng hợp ammonia: N2(g) + 3H2(g)  2NH3(g). Biết năng lượng liên kết (kJ/mol) của N ≡ N; N – H và H – H lần lượt là 946; 391 và 436. Nhiệt tạo thành của NH3(g) là
 
- **A.**+92 kJ. **B.**–92 kJ. **C.**+46 kJ. **D.**–46 kJ.
+ **A.** +92 kJ. B.**–92 kJ. **C.** +46 kJ. D.**–46 kJ.
 
 **Câu 9.** Tại một khu vực của Úc, gia súc không phát triển mạnh mặc dù có thức ăn thô xanh thích hợp. Một cuộc điều tra cho thấy nguyên nhân là do không có đủ cobalt trong đất. Cobalt tạo thành 2 dạng cation là và (Z = 27). Số electron độc thân trong trong 2 ion lần lượt là
 
- **A.**  4 và 5. **B.**  1 và 2. **C.**  2 và 3. **D.** 3 và 4.
+ **A.** 4 và 5. B.**  1 và 2. **C.** 2 và 3. D.** 3 và 4.
 
 **Câu 10.** Cho các phản ứng sau:
 
@@ -110,7 +110,7 @@ Số phát biểu đúnglà
 
 Số phản ứng oxi hóa – khử là
 
- **A.** 5. **B.** 2. **C.** 4. **D.** 3.
+ **A.** 5. B.** 2. **C.** 4. D.** 3.
 
 **Câu 11.** So sánh nhiệt độ sôi và nhiệt độ nóng chảy nào sau đây về 2 chất sau là đúng ?
 
@@ -124,25 +124,25 @@ Số phản ứng oxi hóa – khử là
 
 **Câu 12.** Hỗn hợp X gồm Fe và Cu. Chia m gam hỗn hợp X thành 2 phần. Phần 1 cho tác dụng với dung dịch HCl dư, thấy thoát ra 2,479 lít khí (đktc). Phần 2 cho tác dụng với dung dịch H2SO4 đặc, nóng, dư thu được 8,96 lít SO2 (sản phẩm khử duy nhất, đktc) và dung dịch sau phản ứng chứa 56 gam muối. Giá trị của m là
 
- **A.** 43,2. **B.** 26,4. **C.** 38,4. **D.** 21,6.
+ **A.** 43,2. B.** 26,4. **C.** 38,4. D.** 21,6.
 
 **Câu 13.** Nguyên tử của nguyên tố X có phân mức năng lượng cao nhất là 4s1, Nguyên tử của nguyên tố Y có tổng số elechtron p bằng 10. Công thức, loại liên kết và trạng thái của hợp chất tạo thành giữa X và Y là
 
- **A.** X2Y, cộng hóa trị, khí. **B.** Y2X, liên kết ion, rắn.
+ **A.** X2Y, cộng hóa trị, khí. B.** Y2X, liên kết ion, rắn.**
 
- **C.** X4Y, cộng hóa trị,khí. **D.** X2Y, liên kết ion, rắn.
+ **C.** X4Y, cộng hóa trị,khí. D.** X2Y, liên kết ion, rắn.**
 
 **Câu 14.** Cho các nguyên tố M, N, Q, T với số hiệu nguyên tử lần lượt là 6, 8, 11, 14.
 
 Nguyên tố có độ âm điện lớn nhất là:
 
- **A.** M. **B.** N. **C.** Q. **D.** T.
+ **A.** M. B.** N. **C.** Q. D.** T.
 
 **Câu 15.** Cho thông tin của hai nguyên tố sau:
 
 Số electron của ion  là
 
- **A.** 52. **B.** 50. **C.** 46. **D.** 48
+ **A.** 52. B.** 50. **C.** 46. D.** 48
 
 **Câu 16.** Phương trình nhiệt hóa học giữa nitrogen và oxygen như sau:
 
@@ -160,7 +160,7 @@ Kết luận nào sau đây đúng?
 
 **Câu 17.** Chất vừa có liên kết cộng hoá trị phân cực, vừa có liên kết cộng hoá trị không phân cực là
 
- **A.** C2F6. **B.** H2O. **C.** NH3. **D.** CO2.
+ **A.** C2F6. B.** H2O. **C.** NH3. D.** CO2.
 
 **Câu 18.** Biết hạt nhân nguyên tử phosphorus (P) có 15 hạt proton. Kết luận nào sau đây là đúng?
 
@@ -190,13 +190,13 @@ Kết luận nào sau đây đúng?
 
 Số phát biểu đúng là
 
- **A.** 6. **B.** 4. **C.** 5. **D.** 7.
+ **A.** 6. B.** 4. **C.** 5. D.** 7.
 
 **Câu 20.** Cho phản ứng hóa học: Fe + CuSO4  FeSO4 + Cu. Trong phản ứng trên xảy ra
 
- **A.** sự oxi hóa Fe và sự khử Cu2+. **B.** sự khử Fe2+ và sự khử Cu2+.
+ **A.** sự oxi hóa Fe và sự khử Cu2+. B.** sự khử Fe2+ và sự khử Cu2+.**
 
- **C.** sự oxi hóa Fe và sự oxi hóa Cu. **D.** sự khử Fe2+ và sự oxi hóa Cu.
+ **C.** sự oxi hóa Fe và sự oxi hóa Cu. D.** sự khử Fe2+ và sự oxi hóa Cu.**
 
 **Câu 21.** Nguyên tử nguyên tố X có điện tích hạt nhân là +20,826.10-19C. Cho các nhận định sau về X:
 
@@ -214,25 +214,25 @@ Số phát biểu đúng là
 
 Có bao nhiêu nhận định**không** đúng trong các nhận định cho ở trên ?
 
- **A.** 3. **B.** 4. **C.** 2. **D.** 1.
+ **A.** 3. B.** 4. **C.** 2. D.** 1.
 
 **Câu 22.** Tính base tăng dần trong dãy nào sau đây? (Biết: Mg (Z=12); Al (Z=13); K(Z=19); Ca (Z=20))
 
- **A.** CaO; Al2O3; K2O; MgO. **B.** K2O; Al2O3; MgO; CaO.
+ **A.** CaO; Al2O3; K2O; MgO. B.** K2O; Al2O3; MgO; CaO.**
 
- **C.** Al2O3; MgO; CaO; K2O. **D.** MgO; CaO; Al2O3; K2O.
+ **C.** Al2O3; MgO; CaO; K2O. D.** MgO; CaO; Al2O3; K2O.**
 
 **Câu 23.** Cho phương trình phản ứng sau:
 
 Khi cho 2 gam khí H2 tác dụng hoàn toàn với 32 gam khí O2 thì phản ứng
 
- **A.** toả ra nhiệt lượng . **B.** thu vào nhiệt lượng .
+ **A.** toả ra nhiệt lượng . B.** thu vào nhiệt lượng .**
 
- **C.** toả ra nhiệt lượng . **D.** thu vào nhiệt lượng .
+ **C.** toả ra nhiệt lượng . D.** thu vào nhiệt lượng .**
 
 **Câu 24.** Cho dãy các chất và ion: Cl2, F2, SO2, Na+, Ca2+, Fe2+, Al3+, S2-, Cl–. Số chất và ion trong dãy đều có tính oxi hoá và tính khử là
 
- **A.** 5. **B.** 6. **C.** 3. **D.** 4.
+ **A.** 5. B.** 6. **C.** 3. D.** 4.
 
 **Câu 25.** Hình ảnh bên mô tả AO p với hai thùy.
 
@@ -248,11 +248,11 @@ phát biểu nào sau đây là đúng?
 
 **Câu 26.** Chromium (Cr) có cấu trúc mạng lập phương tâm khối trong đó thể tích các nguyên tử chiếm x % thể tích tinh thể, phần còn lại là khe rỗng. Cho khối lượng của nguyên tử Cr là 52, khối lượng riêng của Cr là 7,2 g/cm3. Nếu xem nguyên tử Cr có dạng hình cầu thì bán kính gần đúng của nó là 0,125 nm. Giá trị của x là
 
- **A.** 69. **B.** 68,2. **C.** 75. **D.** 74,5
+ **A.** 69. B.** 68,2. **C.** 75. D.** 74,5
 
 **Câu 27.** Một loại quặng Q trong tự nhiên chứa 80% hợp chất X có công thức ABY2, còn lại là tạp chất trơ. Q được khai thác và sử dụng nhiều trong luyện kim hoặc sản xuất acid. Trong phân tử X, nguyên tử của hai nguyên tố A và B đều có phân lớp ngoài cùng là 4s, các ion A2+, B2+ có số electron lớp ngoài cùng lần lượt là 17 và 14. Tổng số proton trong X là 87. Hòa tan hoàn toàn 46 gam quặng Q bằng lượng dư H2SO4 đặc, nóng, dư thu được V lít khí SO2 (là sản phẩm khử duy nhất ở đkc,biết 1 mol khí chiếm 24,79 lít đo ở đkc  bar). V có giá trị là
 
- **A.** 52,67875. **B.** 38,08. **C.** 19,04. **D.** 42,143.
+ **A.** 52,67875. B.** 38,08. **C.** 19,04. D.** 42,143.
 
 **Câu 28.** Cho các phát biểu sau:
 
@@ -269,13 +269,13 @@ phát biểu nào sau đây là đúng?
 
 Số phát biểu đúng là
 
- **A.** 1. **B.** 4. **C.** 2. **D.** 3.
+ **A.** 1. B.** 4. **C.** 2. D.** 3.
 
 **Câu 29.** Sao neutron là một dạng trong một số khả năng kết thúc của quá trình tiến hoá sao. Sao neutron được hình thành khi một ngôi sao lớn hết nhiên liệu và sụp đổ. Các ngôi sao neutron trong vũ trụ được cấu tạo chủ yếu từ các hạt neutron (coi neutron có dạng hình cầu bán kính là khoảng 10-13 cm).
 
 Giả sử các ngôi sao neutron có cùng khối lượng riêng với neutron. Khối lượng của một mảnh ngôi sao neutron có kích thước bằng một hạt cát hình cầu với bán kính 0,10 mm là
 
- **A.** 1,6605 tấn. **B.** 1660,5 tấn. **C.** 3,321 gam. **D.** 1660,5 kg.
+ **A.** 1,6605 tấn. B.** 1660,5 tấn. **C.** 3,321 gam. D.** 1660,5 kg.
 
 **Câu 30.** Cho các nguyên tố X, Y, Z với số hiệu nguyên tử lần lượt là 4, 12, 20. Phát biểu nào sau đây không đúng?
 
@@ -309,7 +309,7 @@ Giả sử các ngôi sao neutron có cùng khối lượng riêng với neutron
 
 Số phát biểu đúng là
 
- **A.** 4 **B.** 6 **C.** 3 **D.** 5
+ **A.** 4 B.** 6 **C.** 3 D.** 5
 
 **Câu 33.** Cho phản ứng: 2Cl2(g) + 2H2O(g) → 4HCl(g) + O2(g)∆H
 
@@ -321,17 +321,17 @@ Biết tổng năng lượng liên kết trong mỗi chất như sau:
 
 Giá trị ∆H và đặc điểm của phản ứng trên là
 
- **A.** 200,1 kJ, phản ứng thu nhiệt. **B.**–200,1 kJ, phản ứng tỏa nhiệt.
+ **A.** 200,1 kJ, phản ứng thu nhiệt. B.**–200,1 kJ, phản ứng tỏa nhiệt.**
 
- **C.** 2141,7 kJ, phản ứng thu nhiệt. **D.** 282,3 kJ, phản ứng thu nhiệt.
+ **C.** 2141,7 kJ, phản ứng thu nhiệt. D.** 282,3 kJ, phản ứng thu nhiệt.**
 
 **Câu 34.** Nguyên tố X nằm ở chu kì 3 của bảng tuần hoàn và M là nguyên tố s có electron lớp ngoài cùng là ns1. X có công thức oxide ứng với hoá trị cao nhất là XO3. Một hợp chất của M và X, trong đó M chiếm 58,97% về khối lượng, là một hoá chất công nghiệp quan trọng, được sử dụng trong sản xuất giấy Kraft, thuốc nhuộm, thuộc da, dầu mỏ, xử lí ô nhiễm kim loại nặng,… Công thức oxide ứng với hoá trị cao nhất và hydroxide tương ứng của M là
 
- **A.** MgO và Mg(OH)2. **B.** Na2O và NaOH. **C.** K2O và KOH. **D.** Li2O và LiOH.
+ **A.** MgO và Mg(OH)2. B.** Na2O và NaOH. **C.** K2O và KOH. D.** Li2O và LiOH.
 
 **Câu 35.** Trong phản ứng: Cu + HNO3  Cu(NO3)2 + NO +H2O. Sau khi cân bằng với hệ số nguyên tối giản, số phân tử HNO3 bị khử là
 
- **A.** 8**.                                      B.** 2. **C.** 4. **D.** 6.
+ **A.** 8.                                      B.** 2. **C.** 4. D.** 6.
 
 **Câu 36.** Cho hai phản ứng cùng xảy ra ở điều kiện chuẩn:
 
@@ -353,7 +353,7 @@ Cho các phát biểu sau:
 
 Số phát biểuđúng là
 
- **A.** 3. **B.** 4. **C.** 5. **D.** 2.
+ **A.** 3. B.** 4. **C.** 5. D.** 2.
 
 **Câu 37.** Cho các phản ứng dưới đây:
 
@@ -367,7 +367,7 @@ Số phát biểuđúng là
 
 Phản ứng xảy ra thuận lợi nhất là
 
- **A.** Phản ứng (3). **B.** Phản ứng (2). **C.** Phản ứng (4). **D.** Phản ứng (1).
+ **A.** Phản ứng (3). B.** Phản ứng (2). **C.** Phản ứng (4). D.** Phản ứng (1).
 
 **Câu 38.** Nguyên tử nguyên tố X có tổng số hạt là 52 trong đó số hạt mang điện gấp 1,889 lần số hạt không mang điện. Phát biểu nào sau đây đúng?
 
@@ -399,13 +399,13 @@ Phản ứng xảy ra thuận lợi nhất là
 
  **D.** Tính phi kim của X mạnh hơn tính phi kim của Y.
 
-**II. PHẦN TỰ LUẬN
-**Câu 1.***(2,0 điểm)
+### Ii. Phần Tự Luận
+**Câu 1.**(2,0 điểm)
 **1.** Nguyên tử nguyên tố X có cấu hình electron lớp ngoài cùng là 4s1. Nguyên tử nguyên tố R có phân mức năng lượng cao nhất là 4s2. Hãy viết cấu hình electron nguyên tử của X và R.
 
 **2.** Nguyên tử nguyên tố Y có 3 lớp electron, số electron ở phân lớp có mức năng lượng cao nhất là 5. Y1, Y2 là hai đồng vị của Y (số nơtron của Y1 ít hơn Y2). Trong nguyên tử Y1, số hạt mang điện nhiều hơn số hạt không mang điện là 16 hạt. Hiệu số nơtron giữa Y1 và Y2 bằng  số hạt mang điện dương của nguyên tử nguyên tố T có số hiệu nguyên tử bằng 16. Tỉ lệ số nguyên tử của Y1, Y2 tương ứng là 3: 1. Tính phần trăm khối lượng của đồng vị Y1 trong hợp chất HYO3?
 
-**Câu 2.***(2,0 điểm)
+**Câu 2.**(2,0 điểm)
 Một số loại máy đo nồng độ cồn trong hơi thở dựa trên phản ứng của ethanol (cồn) (C2H5OH) có trong hơi thở với hợp chất potassium dichromate trong môi trường sulfuric acid loãng. Phản ứng (chưa được cân bằng) như sau:**
 C2H5OH + K2Cr2O7 + H2SO4 CH3COOH + Cr2(SO4)3 + K2SO4 + H2O    **(1)
 Dung dịch chứa ion **Cr2O72-** ban đầu có màu da cam, khi xảy ra phản ứng **(1)** dưới tác dụng của chất xúc tác ion Ag+ tạo thành sản phẩm là dung dịch chứa ion **Cr3+** có màu xanh lá cây trong khoảng chưa đến 1,0 phút. Dựa vào sự thay đổi màu sắc này có thể xác định người tham gia giao thông có sử dụng thức uống có cồn hay không. Bảng sau (*trích từ**nghị định 46/2016/NĐ-CP)* đưa ra mức độ phạt người tham gia giao thông có sử dụng hàm lượng cồn.                                     **
@@ -440,20 +440,20 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | C=O | 745 |
 | O-H | 467 |
 
-**—————— HẾT ——————
+**—————— HẾT ——————**
 (*Học sinh không được sử dụng tài liệu. Cán bộ coi thi không giải thích gì thêm.*)
 
-**ĐÁP ÁN CHẤM
-**I. PHẦN TRẮC NGHIỆM (14 ĐIỂM)
-**Mã đề [201]
+**ĐÁP ÁN CHẤM**
+**I. PHẦN TRẮC NGHIỆM (14 ĐIỂM)**
+**Mã đề [201]**
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | C | D | B | C | C | B | C | D | D | C | C | B | D | B | B | D | A | C | A | A |
 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 |
 | A | C | A | C | D | B | D | C | B | A | D | A | A | B | B | A | A | B | D | D |
 
-**II. PHẦN TỰ LUẬN (14 ĐIỂM)
-**Câu 1.***(2 điểm)
+**II. PHẦN TỰ LUẬN (14 ĐIỂM)**
+**Câu 1.**(2 điểm)
 1. Nguyên tử nguyên tố X có cấu hình electron lớp ngoài cùng là 4s1. Nguyên tử nguyên tố R có phân mức năng lượng cao nhất là 4s2. Hãy viết cấu hình electron nguyên tử của X và R.
 
 2. Nguyên tử nguyên tố Y có 3 lớp electron, số electron ở phân lớp có mức năng lượng cao nhất là 5. Y1, Y2 là hai đồng vị của Y (số nơtron của Y1 ít hơn Y2). Trong nguyên tử Y1, số hạt mang điện nhiều hơn số hạt không mang điện là 16 hạt. Hiệu số nơtron giữa Y1 và Y2 bằng  số hạt mang điện dương của nguyên tử nguyên tố T có số hiệu nguyên tử bằng 16. Tỉ lệ số nguyên tử của Y1, Y2 tương ứng là 3: 1. Tính phần trăm khối lượng của đồng vị Y1 trong hợp chất HYO3?
@@ -463,7 +463,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 | 1 | Nguyên tử nguyên tố X có cấu hình electron lớp ngoài cùng là 4s1. => cấu hình electron của X: 1s2 2s22p6 3s23p6 4s1                              hoặc 1s2 2s22p6 3s23p63d5 4s1                                                                                  hoặc 1s2 2s22p6 3s23p63d10 4s1                                                                                 Nguyên tử nguyên tố R có phân mức năng lượng cao nhất là 4s2. => cấu hình electron của R: 1s2 2s22p6 3s23p6 4s2                     |   0,25đ 0,25đ 0,25đ       0,25đ |
 | 2 | Viết cấu hình e của Y: 1s22s22p63s23p5­ → ZY = 17 ==  Có: 2 – = 16 →= 18; – = .16 →= 20 – Tính được: = 17 + 18 = 35,= 17 + 20 = 37 – Vì tỉ lệ số nguyên tử của Y1 và Y2 là = 3: 1 => phần trăm số nguyên tử của đồng vị Y1 là 75%  – Xét 1 mol HYO3 có: = 1 x(1 + 35,5 + 16.3) = 84,5 (g) Có nY = 1 (mol)→= 1.75% = 0,75 (mol) →= 0,75.35 = 26,25 (g) → |                       0,5 đ                   0,5 đ |
 
-**Câu 2.***(2 điểm)* Một số loại máy đo nồng độ cồn trong hơi thở dựa trên phản ứng của ethanol (cồn) (C2H5OH) có trong hơi thở với hợp chất potassium dichromate trong môi trường sulfuric acid loãng. Phản ứng (chưa được cân bằng) như sau:**
+**Câu 2.**(2 điểm)* Một số loại máy đo nồng độ cồn trong hơi thở dựa trên phản ứng của ethanol (cồn) (C2H5OH) có trong hơi thở với hợp chất potassium dichromate trong môi trường sulfuric acid loãng. Phản ứng (chưa được cân bằng) như sau:**
 C2H5OH + K2Cr2O7 + H2SO4 CH3COOH + Cr2(SO4)3 + K2SO4 + H2O    **(1)
 Dung dịch chứa ion **Cr2O72-** ban đầu có màu da cam, khi xảy ra phản ứng **(1)** dưới tác dụng của chất xúc tác ion Ag+ tạo thành sản phẩm là dung dịch chứa ion **Cr3+** có màu xanh lá cây trong khoảng chưa đến 1,0 phút. Dựa vào sự thay đổi màu sắc này có thể xác định người tham gia giao thông có sử dụng thức uống có cồn hay không. Bảng sau (*trích từ**nghị định 46/2016/NĐ-CP)* đưa ra mức độ phạt người tham gia giao thông có sử dụng hàm lượng cồn.                                     **
 | Mức độ vi phạm | ≤ 0,25 mg cồn / 1 lít khí thở | 0,25 – 0,4 mg cồn / 1 lít khí thở | > 0,4 mg cồn / 1 lít khí thở |
@@ -481,7 +481,7 @@ Dung dịch chứa ion **Cr2O72-** ban đầu có màu da cam, khi xảy ra ph�
 | Trong 1000 ml hơi thở có: (1000 . 2,63 . 10–5 : 52,5) = 5,007.10-4 gam C2H5OH Hay 0,5007 mg C2H5OH > 0,4 mg Vi phạm luật giao thông   | 0,75 đ |  |
 | Đối chiếu bảng: 0,5007 > 0,4 mg  Mức phạt từ 6 đến 8 triệu đồng | 0,25đ |  |
 
-**Câu 3:** (2 điểm)** *Cho 2 phản ứng sau:
+**Câu 3:** (2 điểm)** *Cho 2 phản ứng sau:**
 
 2H2(g) + O2(g) 2H2O(g) (1)
 
@@ -511,7 +511,7 @@ Biết năng lượng liên kết được cho trong bảng sau:
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-10-Cum-Tan-Uyen-Bac-Giang-De-HDC](/assets/docs/2023-2024-HSG-10-Cum-Tan-Uyen-Bac-Giang-De-HDC-giasu.ai.vn.docx)
+- [2023-2024-HSG-10-Cum-Tan-Uyen-Bac-Giang-De-HDC](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

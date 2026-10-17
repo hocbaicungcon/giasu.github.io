@@ -96,7 +96,7 @@ Viết các phương trình phản ứng.
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG 12 TPHCM 2019-2020](/assets/docs/HSG-12-TPHCM-2019-2020.doc)
+- [HSG 12 TPHCM 2019-2020](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
  
 

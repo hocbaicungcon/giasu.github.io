@@ -115,7 +115,7 @@ b. Tính phần trăm khối lượng của muối có phân tử khối nhỏ n
 *Chữ ký CBCT số 1……………………………………………..
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [HSG_Hoa_12_23-24_Dechinhthuc](/assets/docs/HSG_Hoa_12_23-24_Dechinhthuc-giasu.ai.vn.docx)
+- [HSG_Hoa_12_23-24_Dechinhthuc](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 - 
 

@@ -252,7 +252,7 @@ hợp chất khác nhau của phosphorus. Xác định các chất X, Y, Z và v
 
 GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
-- [2023-2024-HSG-11_Luong-Ngoc-Quyen-Thai-Nguyen](/assets/docs/2023-2024-HSG-11_Luong-Ngoc-Quyen-Thai-Nguyen-giasu.ai.vn.docx)
+- [2023-2024-HSG-11_Luong-Ngoc-Quyen-Thai-Nguyen](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khác tại
 

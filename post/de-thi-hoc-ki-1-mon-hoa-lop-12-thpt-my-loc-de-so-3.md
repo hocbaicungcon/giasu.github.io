@@ -187,8 +187,8 @@ grade: 12
 
 GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
-- [12_HOAHOC_Trần Khắc Định đề 1 docx](/assets/docs/12_HOAHOC_Tran-Khac-Dinh-de-1-docx.docx)
-- [12_HOAHOC_Trần Khắc ĐỊnh đề số 2](/assets/docs/12_HOAHOC_Tran-Khac-DInh-de-so-2.docx)
+- [12_HOAHOC_Trần Khắc Định đề 1 docx](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [12_HOAHOC_Trần Khắc ĐỊnh đề số 2](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Xem thêm
 

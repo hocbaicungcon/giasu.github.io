@@ -24,7 +24,7 @@ LUYỆN KỸ NĂNG TOÁN 12 THPT TÍNH ĐƠN ĐIỆU CỦA HÀM SỐ. + Cơ bả
 + Vận dụng tính đơn điệu hàm số.
 + Vận dụng cao tính đơn điệu hàm số.
 
-- [on-kien-thuc-luyen-ky-nang-bai-giang-tinh-don-dieu-cua-ham-so](/assets/docs/on-kien-thuc-luyen-ky-nang-bai-giang-tinh-don-dieu-cua-ham-so.pdf)
+- [on-kien-thuc-luyen-ky-nang-bai-giang-tinh-don-dieu-cua-ham-so](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## Ôn kiến thức, luyện kỹ năng bài giảng cực trị của hàm số
 
@@ -36,7 +36,7 @@ LUYỆN KỸ NĂNG TOÁN 12 THPT CỰC TRỊ CỦA HÀM SỐ (CỰC ĐẠI, CỰ
 + Vận dụng cực trị của hàm số.
 + Vận dụng cao cực trị của hàm số.
 
-- [on-kien-thuc-luyen-ky-nang-bai-giang-cuc-tri-cua-ham-so](/assets/docs/on-kien-thuc-luyen-ky-nang-bai-giang-cuc-tri-cua-ham-so.pdf)
+- [on-kien-thuc-luyen-ky-nang-bai-giang-cuc-tri-cua-ham-so](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## Ôn kiến thức, luyện kỹ năng bài giảng GTLN – GTNN của hàm số
 
@@ -47,7 +47,7 @@ LUYỆN KỸ NĂNG TOÁN 12 THPT GIÁ TRỊ LỚN NHẤT, GIÁ TRỊ NHỎ NHẤ
 + Vận dụng GTLN – GTNN của hàm số.
 + Vận dụng cao GTLN – GTNN.
 
-- [on-kien-thuc-luyen-ky-nang-bai-giang-gtln-gtnn-cua-ham-so](/assets/docs/on-kien-thuc-luyen-ky-nang-bai-giang-gtln-gtnn-cua-ham-so.pdf)
+- [on-kien-thuc-luyen-ky-nang-bai-giang-gtln-gtnn-cua-ham-so](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## Ôn kiến thức, luyện kỹ năng bài giảng đồ thị, bảng biến thiên của hàm số
 
@@ -59,4 +59,4 @@ LUYỆN KỸ NĂNG TOÁN 12 THPT ĐỒ THỊ, BẢNG BIẾN THIÊN CỦA HÀM S�
 + Vận dụng đồ thị, bảng biến thiên.
 + Vận dụng cao đồ thị, bảng biến thiên.
 
-- [on-kien-thuc-luyen-ky-nang-bai-giang-do-thi-bang-bien-thien-cua-ham-so](/assets/docs/on-kien-thuc-luyen-ky-nang-bai-giang-do-thi-bang-bien-thien-cua-ham-so.pdf)
+- [on-kien-thuc-luyen-ky-nang-bai-giang-do-thi-bang-bien-thien-cua-ham-so](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

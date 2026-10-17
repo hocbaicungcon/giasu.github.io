@@ -15,9 +15,9 @@ grade: 12
 
 GIA SƯ THÔNG MINH xin giới thiệu với Quý thầy cô và các em học sinh **65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án.** Quý Thầy cô và các em học sinh có thể tải tài liệu tại đây:
 
-- **[PDF]** [65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án](/assets/docs/65-de-thi-thu-tot-nghiep-THPT-mon-Van-2021-co-dap-an.pdf)
+- **[PDF]** [65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-- **[WORD]**[65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án](/assets/docs/65-de-thi-thu-tot-nghiep-THPT-mon-Van-2021-co-dap-an.doc)
+- **[WORD]**[65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 Dưới đây, chúng tôi xin giới thiệu một vài đề thi để Quý thầy cô tham khảo.
 
@@ -80,7 +80,7 @@ Viết một đoạn văn ( khoảng 200 chữ) trình bày suy nghĩ của anh/
 
 Cảm nhận của anh/ chị về vẻ đẹp sử thi của nhân vật Tnú trong truyện ngắn “Rừng xà nu” của Nguyễn Trung Thành- Trích Ngữ Văn 12, tập 2, NXB Giáo dục.
 
-**HƯỚNG DẪN CHẤM VÀ ĐÁP ÁN
+**HƯỚNG DẪN CHẤM VÀ ĐÁP ÁN**
 | Phần | Câu | Nội dung | Điểm |
 | --- | --- | --- | --- |
 | Phần I |  | Đọc hiểu | 3,0 |
@@ -114,9 +114,9 @@ Cảm nhận của anh/ chị về vẻ đẹp sử thi của nhân vật Tnú t
 
 ## Đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án số 2
 
-**I. PHẦN ĐỌC HIỂU (3,0 điểm)
-**Đọc văn bản sau:
-***CHÂN QUÊ
+**I. PHẦN ĐỌC HIỂU (3,0 điểm)**
+**Đọc văn bản sau:**
+**CHÂN QUÊ**
 *(Nguyễn Bính)
 *Hôm qua em đi tỉnh về
 *Đợi em ở mãi con đê đầu làng
@@ -136,7 +136,7 @@ Cảm nhận của anh/ chị về vẻ đẹp sử thi của nhân vật Tnú t
 *Hương đồng gió nội bay đi ít nhiều.
 1936
 
-(***Nguyễn Bính – Thơ và đời***, NXB Văn học, 2003)
+(**Nguyễn Bính – Thơ và đời**, NXB Văn học, 2003)
 
 T**hực hiện các yêu cầu:
 **Câu 1 (0,5 điểm)** Xác định các từ trực tiếp thể hiện tâm trạng, cảm xúc của nhân vật “tôi”.
@@ -151,23 +151,23 @@ T**hực hiện các yêu cầu:
 
 **Câu 4 (1,0 điểm)** Anh / chị có đồng tình với tâm sự của nhà thơ trong câu thơ “*Van em, em hãy giữ nguyên quê mùa*” không? Tại sao?
 
-**II. LÀM VĂN (7,0 điểm)
-**Câu 1. (2,0 điểm)
-Từ đầu thế kỉ XX, Nguyễn Bính đã vì lo lắng về sự mai một của những giá trị làm nên hồn quê mà thiết tha gửi gắm trong bài thơ “***Chân quê***”:
+**II. LÀM VĂN (7,0 điểm)**
+**Câu 1. (2,0 điểm)**
+Từ đầu thế kỉ XX, Nguyễn Bính đã vì lo lắng về sự mai một của những giá trị làm nên hồn quê mà thiết tha gửi gắm trong bài thơ “**Chân quê**”:
 
 “*Van em, em hãy giữ nguyên quê mùa*” 
 
 Bằng tâm thế của một thanh niên đang sống những năm đầu thế kỉ XXI, anh / chị hãy viết đoạn văn khoảng 200 chữ trình bày suy nghĩ về ý nghĩa của việc bảo tồn những giá trị văn hoá truyền thống trong cuộc sống hiện nay.
 
-**Câu 2. (5,0 điểm)
+**Câu 2. (5,0 điểm)**
 Khi hồn Trương Ba kiên quyết đòi trả xác cho hàng thịt, Đế Thích định cho hồn Trương Ba nhập vào cu Tị, hồn Trương Ba đã trả lời: “*Tôi không nhập vào hình thù ai nữa! Tôi đã chết rồi, hãy để tôi chết hẳn!*”.
 
-(***Hồn Trương Ba, da hàng thịt***, Lưu Quang Vũ, trang 151 – Ngữ Văn 12 tập II, NXB GD).
+(**Hồn Trương Ba, da hàng thịt**, Lưu Quang Vũ, trang 151 – Ngữ Văn 12 tập II, NXB GD).
 
 Suy nghĩ của anh/chị về sự lựa chọn trên của nhân vật Trương Ba.
 
-**———–Hết———–
-**ĐÁP ÁN
+**———–Hết———–**
+**ĐÁP ÁN**
 I. ĐỌC HIỂU (3,0 điểm)
 
 | Câu | Nội dung | Điểm |
@@ -185,7 +185,7 @@ I. ĐỌC HIỂU (3,0 điểm)
 | d. Chính tả, dùng từ, đặt câu: Đảm bảo chuẩn chính tả, ngữ nghĩa, ngữ pháp tiếng Việt | 0,25 |  |
 | e. Sáng tạo: Có cách diễn đạt mới mẻ, thể hiện suy nghĩ sâu sắc về vấn đề cần nghị luận. | 0,25 |  |
 
-**Câu 2.
+**Câu 2.**
 | Viết bài văn bàn luận về vấn đề: Sự lựa chọn của nhân vật Trương Ba. | 5,0 |
 | --- | --- |
 | a. Đảm bảo cấu trúc bài nghị luận: Có đủ các phần mở bài, thân bài, kết bài. Mở bài nêu được vấn đề; thân bài biết tổ chức thành nhiều đoạn văn; kết bài kết luận được vấn đề. | 0,25 |
@@ -200,7 +200,7 @@ I. ĐỌC HIỂU (3,0 điểm)
 
 ## Đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án số 3
 
-**Ph ầ n I.  Đọ c hi ể u (3,0  đ i ể m)
+**Ph ầ n I.  Đọ c hi ể u (3,0  đ i ể m)**
 Đọc văn bản sau và thực hiện các yêu cầu:
 
 *[…]Cứ tới chủ đề về ơn nghĩa sinh thành thì ngập hộp thư “Thay lời muốn nói ” sẽ là những câu xin lỗi ba mẹ từ các bạn trẻ. Là những lời xin lỗi được gửi đến những ba-mẹ-còn-sống. Mà, nội dung của những lời xin lỗi cũng… na ná nhau, kiểu như “Con biết ba mẹ rất cực khổ vì con… Con biết con đã làm cho ba mẹ buồn rất nhiều. Con xin lỗi ba mẹ. Xin lỗi, nhưng mình hay gọi đây là “những lời xin lỗi mang tính phong trào ”, và những áy náy ray rứt này là “những áy náy ray rứt theo làn sóng”, mỗi khi có ai hay có chương trình nào gợi nhắc, thì các bạn mới sực nhớ ra. Mà khổ cái, bản thân những lời xin lỗi ấy sợ rằng khó làm người được xin lỗi vui hơn, bởi vì đâu đợi tới chính họ, ngay cả chúng mình là những người làm chương trình đây cũng đều hiểu rằng, có lẽ chỉ vài ngày sau chương trình, cùng với nhịp sống ngày càng nhanh ngày càng vội, cùng với lịch đi học, đi làm, đi giải trí sau giờ học, giờ làm…, những lời xin lỗi ấy sợ rằng sẽ sớm được vứt ra khỏi đầu; và những cảm giác áy náy, ăn năn ấy sẽ sớm chìm sâu, chẳng còn mảy may gợn sóng. Cho đến khi… lại được nhắc mà sực nhớ ra, lần kể tiếp.
@@ -215,10 +215,10 @@ I. ĐỌC HIỂU (3,0 điểm)
 
 4. Theo anh/chị, điều gì quan trọng nhất trong một lời xin lỗi? Vì sao?
 
-**Ph** ầ**n II. Làm v** ă**n (7,0** đ**i** ể**m)
-***Câu 1. (2,0đi*** ể***m)
+**Ph** ầ**n II. Làm v** ă**n (7,0** đ**i** ể**m)**
+**Câu 1. (2,0đi** ể**m)**
 Từ thông điệp của đoạn trích, hãy viết một đoạn văn khoảng 200 chữ với chủ đề: *Giá trị của lời xin lỗi đúng cách.
-***Câu 2. (5,0đi*** ể***m)
+**Câu 2. (5,0đi** ể**m)**
 Trong truyện *Vợ chồng A Phủ,* nhà văn Tô Hoài đã hai lần nói về việc Mị “vùng bước đi” và “băng đi” ở hai đoạn văn sau:
 
 Đoạn 1:
@@ -238,7 +238,7 @@ Phân tích nhân vật Mị qua hai lần miêu tả trên, từ đó làm nổ
 
 . ———–HẾT———-
 
-**HƯỚNG DẪN CHẤM
+**HƯỚNG DẪN CHẤM**
 | Phần | Câu/Ý | Nội dung | Điểm |
 | --- | --- | --- | --- |
 | I |  | Đọc hiểu | 3.0 |
@@ -261,8 +261,8 @@ Phân tích nhân vật Mị qua hai lần miêu tả trên, từ đó làm nổ
 
 ## Đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án số 4
 
-**I. Đọc- hiểu ( 3.0 điểm)
-**Đọc đoạn trích và thực hiện các yêu cầu sau:
+**I. Đọc- hiểu ( 3.0 điểm)**
+**Đọc đoạn trích và thực hiện các yêu cầu sau:**
 *Mỗi người trên thế giới đều là những người khách bộ hành, mỗi ngày đều bước đi một cách chủ động hoặc bị động trên con đường mình đã chọn…
 *Cuộc đời không chỉ là con đường đi khó, đôi khi chúng ta còn gặp phải những hố sâu do người khác đào ra, gặp phải sự tấn cống của thú dữ, mưa bão và tuyết lạnh. Bất luận gian khó thế nào, chỉ cần chúng ta còn sống, chúng ta còn phải đối mặt. Sống tức là thực hiện một cuộc hành trình không thể trì hoãn.
 *Trước muôn vàn lối rẽ, không ai có được bản đồ trong tay, cũng không phải ai cũng có kim chỉ nam dẫn đường, tất cả đều phải dựa vào sự phán đoán và lựa chọn của bản thân. Nếu bạn rẽ nhầm lối, khoảng cách với xuất phát điểm sẽ bị rút ngắn ngược lại, nếu rẽ đúng, con đường phía trước sẽ bằng phẳng, rộng rãị
@@ -274,10 +274,10 @@ Phân tích nhân vật Mị qua hai lần miêu tả trên, từ đó làm nổ
 **Câu 3.** Anh/chị hiểu như thế nào về câu nói: *Nếu bạn rẽ nhầm lối, khoảng cách với xuất phát điểm sẽ bị rút ngắn ngược lại, nếu rẽ đúng, con đường phía trước sẽ bằng phẳng, rộng rãị
 **Câu 4.** Thông điệp nào trong đoạn trích có ý nghĩa nhất với Anh/chị ? 
 
-**II. Làm văn (7.0 điểm)
-**Câu 1 (2.0 điểm)
+**II. Làm văn (7.0 điểm)**
+**Câu 1 (2.0 điểm)**
 Từ văn bản ở phần Đọc hiểu, anh/chị hãy viết một đoạn văn (khoảng 200 chữ), trình bày suy nghĩ: *Sống tức là thực hiện một cuộc hành trình không thể trì hoãn.
-**Câu 2 (5.0 điểm)
+**Câu 2 (5.0 điểm)**
  Trong truyện ngắn *Chiếc thuyền ngoài xa* (Nguyễn Minh Châu – *Ngữ văn 12, tập hai*, Nxb Giáo dục Việt Nam, 2017), hai nhân vật Phùng và Đẩu từng có lúc thốt lên: *Không thể nào hiểu được, không thể nào hiểu được!*.
 
  Qua phân tích tình huống dẫn đến cảm giác ngạc nhiên, bối rối chứa đựng trong lời nói ấy của các nhân vật, anh/ chị hãy làm sáng tỏ nội dung và ý nghĩa thông điệp mà nhà văn muốn gửi gắm.
@@ -308,9 +308,9 @@ III/ HƯỚNG DẪN CHẤM
 
 ## Đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án số 5
 
-**I. ĐỌC HIỂU: (3 điểm)
-**Đọc văn bản sau và thực hiện các yêu cầu:
-**I.Đọc văn bản sau:
+**I. ĐỌC HIỂU: (3 điểm)**
+**Đọc văn bản sau và thực hiện các yêu cầu:**
+**I.Đọc văn bản sau:**
 *Trong mỗi chúng ta dường như luôn tồn tại hai con người đối lập. Khi ta làm một việc gì, một con người sẽ ủng hộ quyết định ta đưa ra và ngược lại, một con người lại lên tiếng phản đối, đưa ra những câu hỏi như: “Việc mình làm có đúng hay không?”, “ Quyết định như thế đã chính xác chưa?”. Tuy nhiên, đừng vội nản lòng hoặc quá khắc khe với bản thân trước những lời tự vấn ấy. Hãy xem đó là dấu hiệu cho thấy ta đang bắt đầu thay đổi. Thiếu đi tiếng nói ngăn cản, ta sẽ không thể hiếu thấu đáo việc mình đang làm.
 *Khi ta yêu cầu bản thân thay đổi cách nhìn nhận mọi việc và rèn luyện một thế giới quan tích cực, mang tính chất xây dựng nhiều hơn thì rất nhiều rào cản sẽ hình thành trong tâm trí ta, chúng liên tục phát tín hiệu rằng ta không thể làm được việc đó, rằng việc đó không xứng đáng để ta bận lòng…những lúc như vậy, hãy tỉnh táo suy xét tình hình, hiểu rõ những rào cản tâm lý và tự tin vào những quyết định của bản thân. Đừng quên rằng, thay đổi đồng nghĩa với việc phát triển đang bắt đầu diễn ra.
 (*Quên hôm qua, sống cho ngày mai* – Tian Dayton, NXB Tổng hợp TP.HCM, tr.57)
@@ -323,7 +323,7 @@ III/ HƯỚNG DẪN CHẤM
 
 **Câu 4:** Anh/Chị có đồng tình với ý kiến của tác giả*: Thiếu đi tiếng nói ngăn cản, ta sẽ không thể hiểu thấu đáo việc mình đang làm*? Tại sao?
 
-**II.Làm văn(7 điểm)
+**II.Làm văn(7 điểm)**
 **Câu 1:** (2 điểm)
 Từ nội dung đoạn trích của phần Đọc hiểu, hãy viết 01 đoạn văn (khoảng 200 chữ) trình bày ý kiến của anh/chị về mối quan hệ giữa sự thay đổi và thành công của con người trong cuộc sống.
 
@@ -332,8 +332,8 @@ Câu 2:  (5điểm)
 *Cảm nhận của anh/ chị về chi tiết bát cháo hành trong truyện Chí Phèo (Nam Cao) và bát cháo cám trong truyện Vợ nhặt (Kim Lân).
 …………Hết………..
 
-**C/ HƯỚNG DẪN CHẤM
-**Hướng dẫn chung
+**C/ HƯỚNG DẪN CHẤM**
+**Hướng dẫn chung**
 – Thầy cô giáo cần nắm bắt được nội dung trình bày của học sinh để đánh giá một cách tổng quát bài làm, tránh đếm ý cho điểm. Cần chủ động và linh hoạt khi vận dụng Hướng dẫn chấm này.
 
 – Trân trọng những bài viết có cách nhìn riêng, cách trình bày riêng.
