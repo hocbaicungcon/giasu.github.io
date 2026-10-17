@@ -349,3 +349,25 @@ test('math formulas in titles render to KaTeX in HTML and plain text in metadata
  assert.equal(plainTitle('Không gian $Oxyz$'),'Không gian Oxyz');
 });
 
+test('manual lettered and numbered subquestions use answer-options class without bullets',()=>{
+ const md = source + '\n\n**Bài 1:**\n- a) Tìm $x$\n- b) Tìm $y$\n\n**Bài 2:**\n- A. Đúng\n- B. Sai';
+ const post = parsePost(md, 'manual-list.md');
+ assert.match(post.html, /<ul class="answer-options">\s*<li>a\) /);
+ assert.match(post.html, /<ul class="answer-options">\s*<li>A\. /);
+});
+
+test('print stylesheet and @page rules include title header, giasu.ai.vn footer, page numbers and hide navigation',()=>{
+ const read = file => fs.readFileSync(new URL('../dist/' + file, import.meta.url), 'utf8');
+ const page = read('bai-viet/80-bai-hoc-sinh-gioi-toan-lop-2.html');
+ assert.match(page, /<style>@page\{size:A4/);
+ assert.match(page, /@top-left\{content:"80 bài toán bồi dưỡng/);
+ assert.match(page, /@bottom-left\{content:"Truy cập https:\/\/giasu\.ai\.vn để tải thêm nhiều bài giảng, đề thi\."/);
+ assert.match(page, /@bottom-right\{content:"Trang " counter\(page\) " \/ " counter\(pages\)/);
+ assert.match(page, /<div class="print-footer" aria-hidden="true"><p>Truy cập <strong>https:\/\/giasu\.ai\.vn<\/strong> để tải thêm nhiều bài giảng, đề thi\.<\/p><\/div>/);
+
+ const css = read('assets/style.css');
+ assert.match(css, /@media print/);
+ assert.match(css, /\.article-toc/);
+ assert.match(css, /\.print-footer/);
+});
+
