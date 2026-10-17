@@ -172,7 +172,7 @@ Kéo thanh trượt góc $\alpha$ từ $0^\circ$ đến $180^\circ$ để quan s
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: center;">
     <!-- Interactive Unit Circle SVG -->
     <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; text-align: center;">
-      <svg id="trigSvg" viewBox="-140 -140 280 160" style="width: 100%; max-width: 340px; height: auto;">
+      <svg data-interactive-done="true" id="trigSvg" viewBox="-140 -140 280 160" style="width: 100%; max-width: 340px; height: auto;">
         <!-- Axes -->
         <g stroke="#94a3b8" stroke-width="1.5">
           <line x1="-130" y1="0" x2="130" y2="0" />

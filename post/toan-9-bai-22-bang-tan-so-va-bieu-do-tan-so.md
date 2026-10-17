@@ -156,7 +156,7 @@ Dưới đây là công cụ phân tích thống kê tự động. Các em có t
         <button id="btnBar" type="button" style="padding: 4px 10px; font-size: 0.8em; border-radius: 4px; border: 1px solid #cbd5e1; background: #2563eb; color: #ffffff; cursor: pointer;">Biểu đồ cột</button>
         <button id="btnLine" type="button" style="padding: 4px 10px; font-size: 0.8em; border-radius: 4px; border: 1px solid #cbd5e1; background: #ffffff; color: #475569; cursor: pointer;">Đoạn thẳng</button>
       </div>
-      <svg id="chartSvg" viewBox="0 0 380 240" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);"></svg>
+      <svg data-interactive-done="true" id="chartSvg" viewBox="0 0 380 240" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);"></svg>
     </div>
 
     <!-- Frequency Table & Stats -->

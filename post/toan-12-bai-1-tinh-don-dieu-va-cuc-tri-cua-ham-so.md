@@ -278,7 +278,8 @@ Kéo thanh trượt hoặc kéo thả điểm M: <span id="val-probe-x" style="f
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+  function initCubicApp() {
   const rX = document.getElementById('range-probe-x');
   const valX = document.getElementById('val-probe-x');
   const valCoord = document.getElementById('val-probe-coord');
@@ -401,7 +402,14 @@ document.addEventListener('DOMContentLoaded', function() {
   svg.addEventListener('pointercancel', onPointerUp);
 
   update();
-});
+ }
+
+ if (document.readyState === 'loading') {
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initCubicApp); } else { initCubicApp(); }
+ } else {
+  initCubicApp();
+ }
+})();
 </script>
 
 ---

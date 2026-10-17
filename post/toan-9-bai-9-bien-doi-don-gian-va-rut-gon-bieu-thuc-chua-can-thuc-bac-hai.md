@@ -177,14 +177,19 @@ Khám phá cách nhân lượng liên hợp để triệt tiêu căn thức ở 
     `;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     const btns = document.querySelectorAll('.conj-btn');
     btns.forEach(btn => {
       btn.addEventListener('click', function() {
         btns.forEach(b => {
           b.style.background = '#e2e8f0';
           b.style.color = '#1e293b';
-        });
+        };
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', __initApp);
+        } else {
+          __initApp();
+        }
         this.style.background = '#2563eb';
         this.style.color = 'white';
         renderConj(this.getAttribute('data-type'));

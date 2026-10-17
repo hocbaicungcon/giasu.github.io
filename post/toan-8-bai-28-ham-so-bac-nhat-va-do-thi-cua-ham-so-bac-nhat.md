@@ -139,7 +139,7 @@ Dưới đây là mô phỏng động đồ thị hàm số bậc nhất $y = ax
     </div>
   </div>
   <div style="display: flex; justify-content: center; margin: 16px 0;">
-    <svg id="interactive-line-svg" width="320" height="320" viewBox="-160 -160 320 320" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px;">
+    <svg data-interactive-done="true" id="interactive-line-svg" width="320" height="320" viewBox="-160 -160 320 320" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px;">
       <!-- Lưới trục -->
       <g stroke="#e2e8f0" stroke-width="1">
         <line x1="-150" y1="-120" x2="150" y2="-120" />

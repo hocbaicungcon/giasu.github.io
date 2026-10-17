@@ -583,7 +583,7 @@ b) ($1.0$ điểm) Tính chuỗi trung bình động $3$ tháng (MA3) cho Tháng
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. B \| 2. B \| 3. B \| 4. C \| 5. B \| 6. A** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. B · 2. B · 3. B · 4. C · 5. B · 6. A** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | - Tổng số xe bán được: $45 + 60 + 90 + 75 = 270$ (chiếc).<br>- Số xe bán trung bình mỗi quý: $\frac{270}{4} = 67.5$ (chiếc/quý). | $0.5$ đ<br>$0.5$ đ |
 | **Bài 1b** | - Mức tăng Quý 1 $\to$ Quý 2: $60 - 45 = 15$ chiếc.<br>- Mức tăng Quý 2 $\to$ Quý 3: $90 - 60 = 30$ chiếc.<br>- Quý 3 $\to$ Quý 4 giảm $15$ chiếc.<br>$\implies$ **Quý 3** tăng nhiều nhất ($30$ chiếc).<br>- Tỉ lệ tăng của Quý 3 so với Quý 2: $\frac{30}{60} \times 100\% = 50\%$. | $0.5$ đ<br><br>$0.5$ đ |
 | **Bài 2a** | - Bạn Minh: Điểm số tăng liên tục từ $6.5 \to 7.0 \to 8.0 \to 8.5 \to 9.0$. Xu hướng học tập ngày càng **tiến bộ vững chắc**.<br>- Bạn Hoàng: Điểm số giảm dần từ bài 1 đến bài 4 ($9.0 \to 8.5 \to 8.0 \to 7.5$), sau đó hồi phục nhẹ ở bài 5 ($8.0$). Xu hướng có phần **chững lại và biến động**. | $0.75$ đ<br><br>$0.75$ đ |

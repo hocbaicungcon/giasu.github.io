@@ -153,7 +153,7 @@ Hãy di chuyển thanh trượt bán kính $R$ và chiều cao $h$ để quan s�
   </div>
 
   <div style="display: flex; justify-content: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
-    <svg id="svgCylinder" width="460" height="280" viewBox="0 0 460 280" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="svgCylinder" width="460" height="280" viewBox="0 0 460 280" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div id="cylCalcStats" style="margin-top: 14px; padding: 12px; background: #eff6ff; border-radius: 8px; text-align: center; font-size: 0.9em; border: 1px solid #bfdbfe;"></div>
@@ -299,7 +299,7 @@ function renderCylinderDemo() {
   `;
 }
 
-window.addEventListener('DOMContentLoaded', renderCylinderDemo);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderCylinderDemo); } else { renderCylinderDemo(); }
 </script>
 
 ---

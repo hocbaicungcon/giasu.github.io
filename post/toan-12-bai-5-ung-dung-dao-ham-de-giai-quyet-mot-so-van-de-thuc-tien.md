@@ -125,7 +125,7 @@ Hãy kéo thanh trượt điểm cập bờ $x$ (khoảng cách từ điểm ch�
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <svg id="pipe-svg" viewBox="0 0 500 240" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+    <svg data-interactive-done="true" id="pipe-svg" viewBox="0 0 500 240" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
       <!-- Biển (phía trên) & Đất liền (phía dưới) -->
       <rect x="20" y="20" width="460" height="110" fill="#e0f2fe" stroke="none"/>
       <rect x="20" y="130" width="460" height="90" fill="#fef3c7" stroke="none"/>
@@ -167,7 +167,7 @@ Hãy kéo thanh trượt điểm cập bờ $x$ (khoảng cách từ điểm ch�
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const rX = document.getElementById('range-pipe-x');
   const valX = document.getElementById('val-pipe-x');
   const lineSea = document.getElementById('line-sea');
@@ -211,7 +211,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   rX.addEventListener('input', update);
   update();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

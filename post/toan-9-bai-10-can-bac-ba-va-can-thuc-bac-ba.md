@@ -140,7 +140,7 @@ Về mặt hình học không gian, căn bậc ba số học $\sqrt[3]{V}$ chín
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <svg id="cube-svg" width="300" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="cube-svg" width="300" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Isometric 3D Cube SVG -->
     </svg>
     <div id="cube-res" style="margin-top: 12px; font-weight: bold; font-size: 1.1em; color: #047857; text-align: center;">
@@ -195,10 +195,15 @@ Về mặt hình học không gian, căn bậc ba số học $\sqrt[3]{V}$ chín
     res.innerHTML = `Độ dài cạnh: a = &radic;[3]{${V}} = <span style="color: #b91c1c;">${side.toFixed(3)}</span> &hArr; (${side.toFixed(3)})&sup3; = ${V}`;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     document.getElementById('cube-vol').addEventListener('input', drawCube);
     drawCube();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

@@ -177,11 +177,16 @@ Hãy nhập vào một số tự nhiên bất kỳ $N$, công cụ sẽ tự đ�
     out.innerHTML = html;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     const btn = document.getElementById('btn-simplify-sqrt');
     if (btn) btn.addEventListener('click', simplify);
     simplify();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

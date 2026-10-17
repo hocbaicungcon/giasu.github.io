@@ -190,7 +190,7 @@ Kéo thanh trượt để thay đổi cạnh đáy $a$ và chiều cao $h$. Hệ
   </div>
 
   <div style="text-align: center; margin: 16px 0;">
-    <svg id="pyr-svg" viewBox="0 0 520 250" style="width: 100%; max-width: 520px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <svg data-interactive-done="true" id="pyr-svg" viewBox="0 0 520 250" style="width: 100%; max-width: 520px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
       <!-- Khung đáy và cạnh -->
       <line id="svg-ac" x1="120" y1="190" x2="400" y2="180" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4,4" />
       <line id="svg-ab" x1="120" y1="190" x2="250" y2="235" stroke="#2563eb" stroke-width="2.2" />
@@ -275,9 +275,14 @@ function updatePyramidTri() {
       '• <strong>Thể tích khối chóp:</strong> $V = \\frac{1}{3} S_{\\text{day}} \\cdot h \\approx \\frac{1}{3} \\cdot ' + Sday.toFixed(1) + ' \\cdot ' + h + ' \\approx ' + V.toFixed(1) + '\\text{ cm}^3$.';
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   updatePyramidTri();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

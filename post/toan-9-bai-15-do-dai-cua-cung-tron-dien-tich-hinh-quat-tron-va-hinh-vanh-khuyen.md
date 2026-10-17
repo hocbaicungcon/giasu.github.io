@@ -147,7 +147,7 @@ Thực nghiệm trực tiếp với bộ tính toán động dưới đây. Hãy
   <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; margin-top: 16px;">
     <!-- Visual Canvas -->
     <div style="flex: 1 1 300px; max-width: 340px; text-align: center;">
-      <svg id="calcSvg" viewBox="0 0 320 320" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+      <svg data-interactive-done="true" id="calcSvg" viewBox="0 0 320 320" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
         <!-- Annulus outer -->
         <circle cx="160" cy="160" r="130" fill="none" stroke="#e2e8f0" stroke-width="2" />
         <!-- Annulus fill ring -->

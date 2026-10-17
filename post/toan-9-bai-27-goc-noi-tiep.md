@@ -150,7 +150,7 @@ Hãy kéo thanh trượt góc của đỉnh $A$ di chuyển dọc trên đườn
   </div>
 
   <div style="display: flex; justify-content: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
-    <svg id="svgInscribed" width="360" height="340" viewBox="-180 -170 360 340" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="svgInscribed" width="360" height="340" viewBox="-180 -170 360 340" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div id="inscribedStats" style="margin-top: 16px; padding: 12px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; text-align: center; font-size: 0.95em;"></div>
@@ -264,7 +264,7 @@ function resetInscribedDemo() {
   updateInscribedDemo();
 }
 
-window.addEventListener('DOMContentLoaded', updateInscribedDemo);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', updateInscribedDemo); } else { updateInscribedDemo(); }
 </script>
 
 ---

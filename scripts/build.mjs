@@ -43,6 +43,9 @@ export function normalizeMarkdownFormatting(text) {
   protect(/\$\$[\s\S]+?\$\$/g);
   protect(/(?<!\$)\$(?!\$)((?:\\.|[^$\r\n])+?)\$(?!\$)/g);
 
+  // Strip leading whitespace before HTML tags/comments to prevent Marked from treating 4-space indented HTML as code blocks!
+  text = text.replace(/^[ \t]+(?=<[a-zA-Z0-9_\/!?-])/gm, '');
+
   // Clean malformed question numbers and options from bad bold tags
   text = text.replace(/\*+Câu[^\S\r\n*]*(\d+)[^\S\r\n*]*:[^\S\r\n*]*(?:\*+)?[^\S\r\n*]*/g, '**Câu $1:** ');
   text = text.replace(/\*\*([A-Da-d])[^\S\r\n]*\*+\.[^\S\r\n]*\*+/g, '**$1.** ');
@@ -191,7 +194,11 @@ export function renderLessonMarkdown(source,inline=false){
  let prepared=source.replace(/(?:```|~~~)[^\n]*\n[\s\S]*?\n(?:```|~~~)|`[^`\n]+`|<(svg|pre|code|script|style|textarea|math)\b[\s\S]*?<\/\1>/gi,block=>{blocks.push(block);return `@@MATH_BLOCK_${blocks.length-1}@@`;});
  prepared=prepared.replace(/(?<!\$)\$(?!\$)((?:\\.|[^$\n])+?)\$(?!\$)/g,(_,tex)=>{formulae.push(renderMath(tex,{throwOnError:true,macros:mathMacros}));return `GiasuInlineFormula${formulae.length-1}End`;});
  prepared=prepared.replace(/@@MATH_BLOCK_(\d+)@@/g,(_,i)=>blocks[Number(i)]);
- return (inline?marked.parseInline(prepared):marked.parse(prepared)).replace(/GiasuInlineFormula(\d+)End/g,(_,i)=>formulae[Number(i)]);
+ let html = (inline?marked.parseInline(prepared):marked.parse(prepared)).replace(/GiasuInlineFormula(\d+)End/g,(_,i)=>formulae[Number(i)]);
+ if (!inline) {
+  html = html.replace(/(?:<div class="table-container">\s*)?<table>([\s\S]*?)<\/table>(?:\s*<\/div>)?/g, '<div class="table-container"><table>$1</table></div>');
+ }
+ return html;
 }
 
 export function parsePost(source, filename) {

@@ -174,7 +174,7 @@ Trải nghiệm trực quan hóa phân phối điểm thi / thời gian chạy v
   </div>
 
   <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px; display: flex; justify-content: center;">
-    <svg id="histSvg" width="540" height="280" viewBox="0 0 540 280" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="histSvg" width="540" height="280" viewBox="0 0 540 280" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div style="margin-top: 16px; overflow-x: auto;">
@@ -368,7 +368,7 @@ function renderHistogram() {
   tbody.appendChild(sumTr);
 }
 
-window.addEventListener('DOMContentLoaded', renderHistogram);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderHistogram); } else { renderHistogram(); }
 </script>
 
 ---

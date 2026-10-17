@@ -139,7 +139,7 @@ Bạn hãy chọn các dạng hàm số khác nhau để quan sát trực quan �
 
   <div style="display: grid; grid-template-columns: 1fr 240px; gap: 16px; align-items: center;">
     <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center;">
-      <svg id="fnSvg" viewBox="0 0 360 260" style="width: 100%; max-width: 380px; height: auto;">
+      <svg data-interactive-done="true" id="fnSvg" viewBox="0 0 360 260" style="width: 100%; max-width: 380px; height: auto;">
         <!-- Grid -->
         <g stroke="#f1f5f9" stroke-width="1">
           <line x1="30" y1="30" x2="330" y2="30" /><line x1="30" y1="80" x2="330" y2="80" />

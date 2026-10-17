@@ -156,7 +156,7 @@ Hãy bấm vào các nút bên dưới để quan sát trực quan mối quan h�
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <svg id="venn-svg" viewBox="0 0 460 260" width="100%" style="max-width: 460px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+    <svg data-interactive-done="true" id="venn-svg" viewBox="0 0 460 260" width="100%" style="max-width: 460px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
       <!-- Background Universe Omega -->
       <rect x="10" y="10" width="440" height="240" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" id="venn-bg"/>
       <text x="28" y="36" font-family="sans-serif" font-size="16" font-weight="bold" fill="#64748b">Ω</text>
@@ -181,7 +181,7 @@ Hãy bấm vào các nút bên dưới để quan sát trực quan mối quan h�
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const buttons = document.querySelectorAll('.btn-venn');
   const circleA = document.getElementById('circle-a');
   const circleB = document.getElementById('circle-b');
@@ -243,7 +243,12 @@ document.addEventListener('DOMContentLoaded', function() {
       buttons.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      });
+      };
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', __initApp);
+      } else {
+        __initApp();
+      }
       const mode = this.dataset.mode;
       this.style.background = '#2563eb';
       this.style.color = '#ffffff';

@@ -169,7 +169,7 @@ Dưới đây là công cụ mô phỏng trực quan giúp các em thay đổi k
   
   <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; margin-top: 16px;">
     <div style="flex: 1 1 300px; max-width: 380px; text-align: center;">
-      <svg id="chordSvg" viewBox="0 0 320 320" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+      <svg data-interactive-done="true" id="chordSvg" viewBox="0 0 320 320" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
         <!-- Circle -->
         <circle cx="160" cy="160" r="120" fill="#f0f9ff" stroke="#0284c7" stroke-width="2" />
         <!-- Diameter (dotted reference) -->

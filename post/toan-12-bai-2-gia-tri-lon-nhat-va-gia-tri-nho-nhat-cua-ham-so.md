@@ -153,7 +153,7 @@ Hãy kéo thanh trượt cạnh cắt $x$ để quan sát đồ thị thể tíc
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <svg id="box-svg" viewBox="0 0 480 260" width="100%" style="max-width: 480px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+    <svg data-interactive-done="true" id="box-svg" viewBox="0 0 480 260" width="100%" style="max-width: 480px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
       <!-- Trục tọa độ: Gốc (50, 220). Scale x: 60px per unit (0 to 6 cm). Scale V: 1.2px per cm^3 (0 to 150) -->
       <line x1="40" y1="220" x2="450" y2="220" stroke="#94a3b8" stroke-width="1.5"/>
       <line x1="50" y1="20" x2="50" y2="230" stroke="#94a3b8" stroke-width="1.5"/>
@@ -181,7 +181,7 @@ Hãy kéo thanh trượt cạnh cắt $x$ để quan sát đồ thị thể tíc
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const rX = document.getElementById('range-box-x');
   const valX = document.getElementById('val-box-x');
   const ptBox = document.getElementById('box-pt');
@@ -231,7 +231,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   rX.addEventListener('input', update);
   update();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

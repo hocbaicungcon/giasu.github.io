@@ -150,9 +150,14 @@ function runMasterSimilarityCheck() {
 
   resBox.innerHTML = html;
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   runMasterSimilarityCheck();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

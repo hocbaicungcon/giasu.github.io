@@ -211,7 +211,7 @@ Hãy di chuyển thanh trượt để thay đổi độ phân tán của mẫu d
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const rDisp = document.getElementById('range-disp');
   const valDisp = document.getElementById('val-disp-factor');
   const resR = document.getElementById('res-r');
@@ -295,7 +295,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   rDisp.addEventListener('input', update);
   update();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

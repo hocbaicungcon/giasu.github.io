@@ -125,7 +125,7 @@ Dưới đây là mô phỏng tương tác giúp các em quan sát góc tạo b�
     <button onclick="setRelationCase(3)" id="btn-rel-3" style="padding: 6px 14px; border-radius: 6px; border: 1px solid #cbd5e1; background: #f8fafc; color: #334155; cursor: pointer;">Hai đường thẳng Vuông góc</button>
   </div>
   <div style="display: flex; justify-content: center; margin: 16px 0;">
-    <svg id="slope-svg" width="320" height="260" viewBox="-160 -130 320 260" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px;">
+    <svg data-interactive-done="true" id="slope-svg" width="320" height="260" viewBox="-160 -130 320 260" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px;">
       <!-- Trục Ox và Oy -->
       <line x1="-150" y1="0" x2="150" y2="0" stroke="#64748b" stroke-width="2" />
       <polygon points="150,0 142,-4 142,4" fill="#64748b" />

@@ -157,7 +157,7 @@ Kéo 3 đỉnh $A, B, C$ trên khung vẽ bên dưới để quan sát hệ th�
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; align-items: center;">
     <!-- Interactive Triangle Canvas SVG -->
     <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center;">
-      <svg id="triSvg" viewBox="0 0 320 240" style="width: 100%; max-width: 330px; height: auto; touch-action: none; cursor: crosshair;">
+      <svg data-interactive-done="true" id="triSvg" viewBox="0 0 320 240" style="width: 100%; max-width: 330px; height: auto; touch-action: none; cursor: crosshair;">
         <!-- Circumcircle -->
         <circle id="cCircle" cx="160" cy="130" r="80" fill="none" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4,4" />
         <!-- Inscribed Circle -->

@@ -151,7 +151,7 @@ Cặp số $(m; n)$ này được gọi là tọa độ của vectơ $\vec{x}$ �
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; align-items: center;">
     <!-- Interactive Vector Canvas SVG -->
     <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center;">
-      <svg id="decompSvg" viewBox="0 0 320 220" style="width: 100%; max-width: 340px; height: auto; background: #ffffff;">
+      <svg data-interactive-done="true" id="decompSvg" viewBox="0 0 320 220" style="width: 100%; max-width: 340px; height: auto; background: #ffffff;">
         <defs>
           <marker id="arrBaseA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
             <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" />

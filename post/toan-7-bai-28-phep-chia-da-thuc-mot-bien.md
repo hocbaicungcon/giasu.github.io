@@ -564,7 +564,7 @@ Hãy tìm đa thức dư $R(x)$ trong phép chia đa thức $P(x)$ cho tích $(x
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. B \| 2. A \| 3. B \| 4. C \| 5. C \| 6. A** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. B · 2. A · 3. B · 4. C · 5. C · 6. A** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | - Chia từng hạng tử cho $-4x^2$:<br>$[16x^5 : (-4x^2)] - [12x^4 : (-4x^2)] + [8x^3 : (-4x^2)] - [4x^2 : (-4x^2)]$.<br>- Kết quả: $-4x^3 + 3x^2 - 2x + 1$. | $0.5$ đ<br><br>$0.5$ đ |
 | **Bài 1b** | - $(2x^4 + 5x^3 - 3x^2) : x^2 = (2x^4 : x^2) + (5x^3 : x^2) - (3x^2 : x^2)$.<br>- Kết quả: $2x^2 + 5x - 3$. | $0.5$ đ<br>$0.5$ đ |
 | **Bài 2a** | - Đặt tính chia cột dọc đúng chuẩn:<br>$2x^3 : x = 2x^2 \to 2x^2(x - 1) = 2x^3 - 2x^2 \to$ Dư 1: $-x^2 + 4x - 3$.<br>$-x^2 : x = -x \to -x(x - 1) = -x^2 + x \to$ Dư 2: $3x - 3$.<br>$3x : x = 3 \to 3(x - 1) = 3x - 3 \to$ Dư cuối: $0$.<br>- Kết luận: Thương $Q(x) = 2x^2 - x + 3$, số dư $R = 0$ (phép chia hết). | $0.5$ đ<br><br>$0.25$ đ<br>$0.25$ đ |

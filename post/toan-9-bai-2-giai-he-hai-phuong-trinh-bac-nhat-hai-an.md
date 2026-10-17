@@ -235,9 +235,14 @@ function solveStepByStep() {
   html += '🎉 <strong>KẾT LUẬN:</strong> Hệ phương trình có nghiệm duy nhất là: $\\mathbf{(x; y) = (' + x0.toFixed(2) + '; ' + y0.toFixed(2) + ')}$.';
   box.innerHTML = html;
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   solveStepByStep();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

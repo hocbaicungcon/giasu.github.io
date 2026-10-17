@@ -145,7 +145,7 @@ Hãy bấm chọn chuyển đổi giữa 3 dạng hàm số bên dưới để q
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <svg id="canvas-graph" viewBox="0 0 500 320" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+    <svg data-interactive-done="true" id="canvas-graph" viewBox="0 0 500 320" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
       <!-- Trục tọa độ: Gốc (240, 160). Scale 30px per unit -->
       <line x1="20" y1="160" x2="480" y2="160" stroke="#94a3b8" stroke-width="1.5"/>
       <line x1="240" y1="20" x2="240" y2="300" stroke="#94a3b8" stroke-width="1.5"/>
@@ -174,7 +174,7 @@ Hãy bấm chọn chuyển đổi giữa 3 dạng hàm số bên dưới để q
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const btns = document.querySelectorAll('.btn-graph');
   const p1 = document.getElementById('graph-path1');
   const p2 = document.getElementById('graph-path2');
@@ -309,7 +309,12 @@ document.addEventListener('DOMContentLoaded', function() {
       btns.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      });
+      };
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', __initApp);
+      } else {
+        __initApp();
+      }
       this.style.background = '#2563eb';
       this.style.color = '#fff';
       draw(this.dataset.type);

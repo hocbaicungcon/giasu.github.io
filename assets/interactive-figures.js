@@ -57,7 +57,7 @@ export function initInteractiveDiagrams(){
 
  const svgs=prose.querySelectorAll('svg');
  svgs.forEach((svg,svgIndex)=>{
-  if(svg.closest('.quiz')||svg.closest('.lesson-practice')||svg.dataset.geometry||svg.classList.contains('ui-symbol')||svg.dataset.interactiveDone)return;
+  if(svg.closest('.quiz')||svg.closest('.lesson-practice')||svg.dataset.geometry||svg.classList.contains('ui-symbol')||svg.dataset.interactiveDone||(svg.id&&!svg.id.startsWith('diagram-'))||svg.closest('[id$="-app"]')||svg.closest('.flowchart-container'))return;
   const vb=svg.viewBox?.baseVal;
   if(vb&&(vb.width<120||vb.height<80))return;
 

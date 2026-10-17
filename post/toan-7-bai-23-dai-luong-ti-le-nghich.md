@@ -514,7 +514,7 @@ Hỏi mỗi đội có bao nhiêu máy cày?
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. B \| 2. B \| 3. C \| 4. A \| 5. B \| 6. C** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. B · 2. B · 3. C · 4. A · 5. B · 6. C** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | - Vì $x$ và $y$ tỉ lệ nghịch nên $a = x \cdot y = 6 \times 10 = 60$.<br>- Biểu diễn: $y = \frac{60}{x}$. | $0.5$ đ<br>$0.5$ đ |
 | **Bài 1b** | - Khi $x = -5 \implies y = \frac{60}{-5} = -12$.<br>- Khi $x = 15 \implies y = \frac{60}{15} = 4$.<br>- Khi $y = -12 \implies x = \frac{60}{-12} = -5$. | $0.25$ đ<br>$0.25$ đ<br>$0.5$ đ |
 | **Bài 2** | - Từ cột đầu tiên: $a = (-8) \times 6 = -48 \implies xy = -48$.<br>- Ô 1 ($x = -4$): $y = \frac{-48}{-4} = 12$.<br>- Ô 2 ($x = 3$): $y = \frac{-48}{3} = -16$.<br>- Ô 3 ($y = -16$): $x = \frac{-48}{-16} = 3$.<br>- Ô 4 ($x = 12$): $y = \frac{-48}{12} = -4$. | $0.5$ đ<br>$0.25$ đ<br>$0.5$ đ<br>$0.5$ đ<br>$0.25$ đ |

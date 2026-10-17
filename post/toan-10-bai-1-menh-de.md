@@ -296,7 +296,7 @@ function updateTruthTable() {
   document.getElementById('logicExplain').innerHTML = note;
 }
 
-window.addEventListener('DOMContentLoaded', updateTruthTable);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', updateTruthTable); } else { updateTruthTable(); }
 </script>
 
 ---

@@ -154,7 +154,7 @@ Hãy điều chỉnh các hệ số $a, b, c$ và dấu bất đẳng thức đ�
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: center;">
     <!-- Interactive Canvas SVG -->
     <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center;">
-      <svg id="geoSvg" viewBox="-150 -150 300 300" style="width: 100%; max-width: 320px; height: auto; background: #fafafa; border-radius: 6px;">
+      <svg data-interactive-done="true" id="geoSvg" viewBox="-150 -150 300 300" style="width: 100%; max-width: 320px; height: auto; background: #fafafa; border-radius: 6px;">
         <!-- Grid lines -->
         <g stroke="#f1f5f9" stroke-width="1">
           <line x1="-150" y1="-120" x2="150" y2="-120" />

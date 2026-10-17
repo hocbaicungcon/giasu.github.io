@@ -340,7 +340,7 @@ Hãy dùng chuột (hoặc ngón tay trên điện thoại) để **kéo và xoa
   }
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', setupEvents);
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupEvents); } else { setupEvents(); }
   } else {
     setupEvents();
   }

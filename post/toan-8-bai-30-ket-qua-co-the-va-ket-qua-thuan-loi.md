@@ -140,7 +140,7 @@ Dưới đây là công cụ mô phỏng phép thử gieo một con xúc xắc 6
   <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; margin: 16px 0;">
     <!-- Khối SVG Xúc xắc 6 mặt -->
     <div id="dice-visual" style="display: flex; justify-content: center; align-items: center; width: 90px; height: 90px; background: white; border: 3px solid #1e293b; border-radius: 16px; box-shadow: 0 8px 16px rgba(0,0,0,0.15);">
-      <svg id="dice-svg" width="70" height="70" viewBox="0 0 70 70">
+      <svg data-interactive-done="true" id="dice-svg" width="70" height="70" viewBox="0 0 70 70">
         <circle cx="35" cy="35" r="7" fill="#dc2626" />
       </svg>
     </div>

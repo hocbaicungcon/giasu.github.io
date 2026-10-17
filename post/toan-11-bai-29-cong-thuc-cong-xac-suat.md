@@ -156,58 +156,65 @@ Hãy điều chỉnh các thanh trượt $P(A)$, $P(B)$ và $P(AB)$ bên dưới
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const rangeA = document.getElementById('range-pa');
-  const rangeB = document.getElementById('range-pb');
-  const rangeAB = document.getElementById('range-pab');
+(function() {
+  function initProbCalc() {
+    const rangeA = document.getElementById('range-pa');
+    const rangeB = document.getElementById('range-pb');
+    const rangeAB = document.getElementById('range-pab');
 
-  const valA = document.getElementById('val-pa');
-  const valB = document.getElementById('val-pb');
-  const valAB = document.getElementById('val-pab');
+    const valA = document.getElementById('val-pa');
+    const valB = document.getElementById('val-pb');
+    const valAB = document.getElementById('val-pab');
 
-  const calcStep = document.getElementById('calc-step');
-  const valOnlyA = document.getElementById('val-only-a');
-  const valOnlyB = document.getElementById('val-only-b');
-  const valNeither = document.getElementById('val-neither');
+    const calcStep = document.getElementById('calc-step');
+    const valOnlyA = document.getElementById('val-only-a');
+    const valOnlyB = document.getElementById('val-only-b');
+    const valNeither = document.getElementById('val-neither');
 
-  if (!rangeA || !rangeB || !rangeAB) return;
+    if (!rangeA || !rangeB || !rangeAB) return;
 
-  function update() {
-    let pa = parseFloat(rangeA.value);
-    let pb = parseFloat(rangeB.value);
-    
-    // P(AB) cannot exceed min(pa, pb) and cannot be less than max(0, pa + pb - 1)
-    let maxAB = Math.min(pa, pb);
-    let minAB = Math.max(0, Math.round((pa + pb - 1) * 100) / 100);
-    
-    rangeAB.max = maxAB;
-    rangeAB.min = minAB;
-    if (parseFloat(rangeAB.value) > maxAB) rangeAB.value = maxAB;
-    if (parseFloat(rangeAB.value) < minAB) rangeAB.value = minAB;
+    function update() {
+      let pa = parseFloat(rangeA.value);
+      let pb = parseFloat(rangeB.value);
+      
+      let maxAB = Math.min(pa, pb);
+      let minAB = Math.max(0, Math.round((pa + pb - 1) * 100) / 100);
+      
+      rangeAB.max = maxAB;
+      rangeAB.min = minAB;
+      if (parseFloat(rangeAB.value) > maxAB) rangeAB.value = maxAB;
+      if (parseFloat(rangeAB.value) < minAB) rangeAB.value = minAB;
 
-    let pab = parseFloat(rangeAB.value);
+      let pab = parseFloat(rangeAB.value);
 
-    valA.textContent = pa.toFixed(2);
-    valB.textContent = pb.toFixed(2);
-    valAB.textContent = pab.toFixed(2);
+      if (valA) valA.textContent = pa.toFixed(2);
+      if (valB) valB.textContent = pb.toFixed(2);
+      if (valAB) valAB.textContent = pab.toFixed(2);
 
-    let pub = Math.round((pa + pb - pab) * 100) / 100;
-    calcStep.textContent = `P(A ∪ B) = ${pa.toFixed(2)} + ${pb.toFixed(2)} - ${pab.toFixed(2)} = ${pub.toFixed(2)}`;
+      let pub = Math.round((pa + pb - pab) * 100) / 100;
+      if (calcStep) calcStep.textContent = `P(A ∪ B) = ${pa.toFixed(2)} + ${pb.toFixed(2)} - ${pab.toFixed(2)} = ${pub.toFixed(2)}`;
 
-    let onlyA = Math.round((pa - pab) * 100) / 100;
-    let onlyB = Math.round((pb - pab) * 100) / 100;
-    let neither = Math.round((1 - pub) * 100) / 100;
+      let onlyA = Math.round((pa - pab) * 100) / 100;
+      let onlyB = Math.round((pb - pab) * 100) / 100;
+      let neither = Math.round((1 - pub) * 100) / 100;
 
-    valOnlyA.textContent = onlyA.toFixed(2);
-    valOnlyB.textContent = onlyB.toFixed(2);
-    valNeither.textContent = neither.toFixed(2);
+      if (valOnlyA) valOnlyA.textContent = onlyA.toFixed(2);
+      if (valOnlyB) valOnlyB.textContent = onlyB.toFixed(2);
+      if (valNeither) valNeither.textContent = neither.toFixed(2);
+    }
+
+    rangeA.addEventListener('input', update);
+    rangeB.addEventListener('input', update);
+    rangeAB.addEventListener('input', update);
+    update();
   }
 
-  rangeA.addEventListener('input', update);
-  rangeB.addEventListener('input', update);
-  rangeAB.addEventListener('input', update);
-  update();
-});
+  if (document.readyState === 'loading') {
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initProbCalc); } else { initProbCalc(); }
+  } else {
+    initProbCalc();
+  }
+})();
 </script>
 
 ---

@@ -293,7 +293,7 @@ Hãy kéo các thanh trượt $x, y, z$ để quan sát điểm $M$ di chuyển 
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const rx = document.getElementById('range-x');
   const ry = document.getElementById('range-y');
   const rz = document.getElementById('range-z');
@@ -401,7 +401,12 @@ document.addEventListener('DOMContentLoaded', function() {
   ry.addEventListener('input', update);
   rz.addEventListener('input', update);
   update();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

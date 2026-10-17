@@ -160,33 +160,41 @@ P = 1 - (1-0.9)(1-0.8) = 0.98 (98%)
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const r1 = document.getElementById('range-p1');
-  const r2 = document.getElementById('range-p2');
-  const val1 = document.getElementById('val-p1');
-  const val2 = document.getElementById('val-p2');
-  const resSeries = document.getElementById('res-series');
-  const resParallel = document.getElementById('res-parallel');
+(function() {
+  function initCircuitApp() {
+    const r1 = document.getElementById('range-p1');
+    const r2 = document.getElementById('range-p2');
+    const val1 = document.getElementById('val-p1');
+    const val2 = document.getElementById('val-p2');
+    const resSeries = document.getElementById('res-series');
+    const resParallel = document.getElementById('res-parallel');
 
-  if (!r1 || !r2) return;
+    if (!r1 || !r2) return;
 
-  function calc() {
-    const p1 = parseFloat(r1.value);
-    const p2 = parseFloat(r2.value);
-    val1.textContent = p1.toFixed(2);
-    val2.textContent = p2.toFixed(2);
+    function calc() {
+      const p1 = parseFloat(r1.value);
+      const p2 = parseFloat(r2.value);
+      if (val1) val1.textContent = p1.toFixed(2);
+      if (val2) val2.textContent = p2.toFixed(2);
 
-    const series = Math.round(p1 * p2 * 1000) / 1000;
-    const parallel = Math.round((1 - (1 - p1) * (1 - p2)) * 1000) / 1000;
+      const series = Math.round(p1 * p2 * 1000) / 1000;
+      const parallel = Math.round((1 - (1 - p1) * (1 - p2)) * 1000) / 1000;
 
-    resSeries.innerHTML = `P = ${p1.toFixed(2)} × ${p2.toFixed(2)} = <strong>${series.toFixed(3)}</strong> (${(series * 100).toFixed(1)}%)`;
-    resParallel.innerHTML = `P = 1 - (1 - ${p1.toFixed(2)})(1 - ${p2.toFixed(2)}) = <strong>${parallel.toFixed(3)}</strong> (${(parallel * 100).toFixed(1)}%)`;
+      if (resSeries) resSeries.innerHTML = `P = ${p1.toFixed(2)} × ${p2.toFixed(2)} = <strong>${series.toFixed(3)}</strong> (${(series * 100).toFixed(1)}%)`;
+      if (resParallel) resParallel.innerHTML = `P = 1 - (1 - ${p1.toFixed(2)})(1 - ${p2.toFixed(2)}) = <strong>${parallel.toFixed(3)}</strong> (${(parallel * 100).toFixed(1)}%)`;
+    }
+
+    r1.addEventListener('input', calc);
+    r2.addEventListener('input', calc);
+    calc();
   }
 
-  r1.addEventListener('input', calc);
-  r2.addEventListener('input', calc);
-  calc();
-});
+  if (document.readyState === 'loading') {
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initCircuitApp); } else { initCircuitApp(); }
+  } else {
+    initCircuitApp();
+  }
+})();
 </script>
 
 ---

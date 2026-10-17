@@ -276,7 +276,7 @@ function resetMarbleSim() {
   updateMarbleSetup();
 }
 
-window.addEventListener('DOMContentLoaded', updateMarbleSetup);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', updateMarbleSetup); } else { updateMarbleSetup(); }
 </script>
 
 ---

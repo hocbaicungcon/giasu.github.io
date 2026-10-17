@@ -488,7 +488,7 @@ b) ($0.75$ điểm) Tính tỉ lệ tăng trưởng doanh thu chung của toàn 
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. B \| 2. B \| 3. C \| 4. B \| 5. B \| 6. C** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. B · 2. B · 3. C · 4. B · 5. B · 6. C** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | Nhiệt độ là dữ liệu **định lượng**, dạng **liên tục** (Continuous) vì nhiệt độ thu được từ việc đo đạc và có thể nhận các giá trị số thập phân. | $1.0$ đ |
 | **Bài 1b** | - Vẽ hệ trục vuông góc đúng chuẩn, trục hoành ghi Ngày 1..5, trục tung chia vạch tỉ lệ nhiệt độ ($^\circ\text{C}$).<br>- Xác định đúng $5$ điểm: $(1; 22), (2; 25), (3; 28), (4; 24), (5; 21)$ và nối thành đường gấp khúc liền mạch.<br>- Ghi đầy đủ số liệu trên các điểm và tiêu đề biểu đồ. | $0.5$ đ<br>$0.25$ đ<br>$0.25$ đ |
 | **Bài 1c** | - Từ Ngày 1 đến Ngày 3: Nhiệt độ có xu hướng **tăng liên tục** (từ $22^\circ\text{C} \to 28^\circ\text{C}$).<br>- Từ Ngày 3 đến Ngày 5: Nhiệt độ có xu hướng **giảm liên tục** (từ $28^\circ\text{C} \to 21^\circ\text{C}$).<br>- Nhiệt độ cao nhất là **$28^\circ\text{C}$** vào **Ngày 3**.<br>- Nhiệt độ trung bình trong 5 ngày: $\frac{22 + 25 + 28 + 24 + 21}{5} = \frac{120}{5} = 24^\circ\text{C}$. | $0.25$ đ<br>$0.25$ đ<br>$0.25$ đ<br>$0.25$ đ |

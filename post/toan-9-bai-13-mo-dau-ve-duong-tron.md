@@ -144,7 +144,7 @@ Kéo điểm $M$ chạy dọc theo nửa đường tròn đường kính $AB = 1
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <svg id="thales-svg" width="320" height="180" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="thales-svg" width="320" height="180" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Thales semi-circle SVG -->
     </svg>
     <div id="thales-info" style="margin-top: 12px; font-weight: bold; font-size: 1.1em; color: #047857; text-align: center;">
@@ -212,10 +212,15 @@ Kéo điểm $M$ chạy dọc theo nửa đường tròn đường kính $AB = 1
     info.innerHTML = `Góc &ang;AMB = <span style="color: #dc2626; font-size: 1.2em;">90&deg;</span> (Luôn vuông tại mọi vị trí M trên đường tròn!) &bull; OM = R = ${(R/11).toFixed(1)} cm`;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     document.getElementById('thales-slider').addEventListener('input', updateThales);
     updateThales();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

@@ -275,7 +275,7 @@ Hãy kéo thanh trượt góc $\theta$ hoặc điều chỉnh độ dài $|\vec{
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const rAngle = document.getElementById('range-angle');
   const rU = document.getElementById('range-u');
   const rV = document.getElementById('range-v');
@@ -356,7 +356,12 @@ document.addEventListener('DOMContentLoaded', function() {
   rU.addEventListener('input', update);
   rV.addEventListener('input', update);
   update();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

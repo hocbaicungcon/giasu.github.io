@@ -174,7 +174,7 @@ Bộ công cụ dưới đây cho phép các em tự do thay đổi ba hệ số
   <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; margin-top: 16px;">
     <!-- Graphical Canvas -->
     <div style="flex: 1 1 300px; max-width: 380px; text-align: center;">
-      <svg id="quadSvg" viewBox="-150 -120 300 240" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+      <svg data-interactive-done="true" id="quadSvg" viewBox="-150 -120 300 240" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
         <!-- Axes -->
         <line x1="-140" y1="0" x2="140" y2="0" stroke="#64748b" stroke-width="1.8" />
         <line x1="0" y1="110" x2="0" y2="-110" stroke="#64748b" stroke-width="1.8" />

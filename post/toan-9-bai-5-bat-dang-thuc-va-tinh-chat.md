@@ -153,7 +153,7 @@ Hãy trực quan hóa bất đẳng thức $a < b$ qua hình ảnh chiếc cân 
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <svg id="scale-svg" width="340" height="180" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="scale-svg" width="340" height="180" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Scale beam and pans rendered dynamically -->
     </svg>
     <div id="scale-status" style="margin-top: 12px; font-weight: bold; font-size: 1.1em; color: #1e3a8a; text-align: center;">
@@ -219,7 +219,7 @@ Hãy trực quan hóa bất đẳng thức $a < b$ qua hình ảnh chiếc cân 
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     document.getElementById('val-a').addEventListener('input', updateScale);
     document.getElementById('val-b').addEventListener('input', updateScale);
 
@@ -227,7 +227,12 @@ Hãy trực quan hóa bất đẳng thức $a < b$ qua hình ảnh chiếc cân 
       document.getElementById('val-a').value = parseFloat(document.getElementById('val-a').value) + 3;
       document.getElementById('val-b').value = parseFloat(document.getElementById('val-b').value) + 3;
       updateScale();
-    });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', __initApp);
+    } else {
+      __initApp();
+    }
 
     document.getElementById('btn-mul-pos').addEventListener('click', function() {
       document.getElementById('val-a').value = parseFloat(document.getElementById('val-a').value) * 2;

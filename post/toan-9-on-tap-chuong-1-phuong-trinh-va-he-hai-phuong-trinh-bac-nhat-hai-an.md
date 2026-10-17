@@ -135,7 +135,7 @@ Dưới đây là công cụ tương tác cho phép các em thay đổi trực t
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <svg id="system-plane" width="360" height="300" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="system-plane" width="360" height="300" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Grid & Axes will be drawn dynamically -->
     </svg>
     <div id="sim-result" style="margin-top: 12px; font-weight: bold; font-size: 1.05em; color: #1e3a8a; text-align: center;">
@@ -239,11 +239,16 @@ Dưới đây là công cụ tương tác cho phép các em thay đổi trực t
     svg.innerHTML = svgHtml;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     const btn = document.getElementById('btn-update-sim');
     if (btn) btn.addEventListener('click', drawSystem);
     drawSystem();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

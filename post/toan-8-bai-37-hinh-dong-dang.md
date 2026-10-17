@@ -164,7 +164,7 @@ Kéo thanh trượt để thay đổi tỉ số phối cảnh $k$. Quan sát tr�
   </div>
 
   <div style="text-align: center; margin: 16px 0;">
-    <svg id="persp-svg" viewBox="0 0 560 230" style="width: 100%; max-width: 560px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <svg data-interactive-done="true" id="persp-svg" viewBox="0 0 560 230" style="width: 100%; max-width: 560px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
       <!-- Tâm O tại (50, 115) -->
       <circle cx="50" cy="115" r="4.5" fill="#ef4444" />
       <text x="35" y="120" font-family="sans-serif" font-weight="bold" font-size="14" fill="#ef4444">O</text>
@@ -244,9 +244,14 @@ function updatePerspectiveSim() {
       '<em>Nhận xét: Mọi góc của hình $\\mathcal{H}\\\'$ hoàn toàn bằng các góc của hình $\\mathcal{H}$, hình dạng được bảo toàn nguyên vẹn $100\\%$!</em>';
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   updatePerspectiveSim();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---
