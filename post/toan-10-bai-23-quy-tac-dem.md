@@ -156,7 +156,7 @@ Tùy chỉnh số lượng lựa chọn ở từng công đoạn (Màu áo, Lo�
 
   <div style="padding: 16px; display: grid; grid-template-columns: 1fr 220px; gap: 16px; align-items: center;">
     <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; overflow-x: auto; min-height: 280px; display: flex; align-items: center; justify-content: center;">
-      <svg id="tree-svg" viewBox="0 0 460 260" style="width: 100%; min-width: 380px; height: 260px; font-family: monospace;"></svg>
+      <svg data-interactive-done="true" id="tree-svg" viewBox="0 0 460 260" style="width: 100%; min-width: 380px; height: 260px; font-family: monospace;"></svg>
     </div>
 
     <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px;">

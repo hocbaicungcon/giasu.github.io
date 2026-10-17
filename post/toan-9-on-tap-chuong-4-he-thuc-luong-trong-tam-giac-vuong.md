@@ -110,7 +110,7 @@ Hãy mô phỏng một kỹ sư trắc địa đo chiều cao của một tòa n
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <svg id="survey-svg" width="340" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="survey-svg" width="340" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Survey Building and Theodolite line -->
     </svg>
     <div id="survey-result" style="margin-top: 12px; font-weight: bold; font-size: 1.1em; color: #047857; text-align: center;">
@@ -184,11 +184,16 @@ Hãy mô phỏng một kỹ sư trắc địa đo chiều cao của một tòa n
     res.innerHTML = `Chiều cao tòa nhà: H = d &times; tan(&alpha;) + h<sub>0</sub> = ${d} &times; tan(${ang}&deg;) + 1,5 = <span style="color: #b91c1c; font-size: 1.15em;">${buildingH.toFixed(2)} mét</span>`;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     document.getElementById('survey-d').addEventListener('input', drawSurvey);
     document.getElementById('survey-ang').addEventListener('input', drawSurvey);
     drawSurvey();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

@@ -144,7 +144,7 @@ Dưới đây là mô phỏng hình học động. Các em có thể kéo thanh 
   <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; margin-top: 16px;">
     <!-- SVG Canvas -->
     <div style="flex: 1 1 320px; max-width: 420px; text-align: center;">
-      <svg id="twoCirclesSvg" viewBox="0 0 420 280" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+      <svg data-interactive-done="true" id="twoCirclesSvg" viewBox="0 0 420 280" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
         <!-- Center line OO' -->
         <line id="svgLineCenter" x1="120" y1="140" x2="300" y2="140" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4" />
         <!-- Circle O -->

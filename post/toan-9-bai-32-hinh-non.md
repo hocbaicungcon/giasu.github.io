@@ -162,7 +162,7 @@ Hãy điều chỉnh bán kính đáy $R$ và chiều cao $h$ để kiểm chứ
   </div>
 
   <div style="display: flex; justify-content: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
-    <svg id="svgCone" width="460" height="280" viewBox="0 0 460 280" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="svgCone" width="460" height="280" viewBox="0 0 460 280" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div id="coneCalcStats" style="margin-top: 14px; padding: 12px; background: #eff6ff; border-radius: 8px; text-align: center; font-size: 0.9em; border: 1px solid #bfdbfe;"></div>
@@ -305,7 +305,7 @@ function renderConeDemo() {
   `;
 }
 
-window.addEventListener('DOMContentLoaded', renderConeDemo);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderConeDemo); } else { renderConeDemo(); }
 </script>
 
 ---

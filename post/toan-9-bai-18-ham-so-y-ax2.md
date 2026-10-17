@@ -142,7 +142,7 @@ Hãy trực tiếp kéo thanh trượt hệ số $a$ dưới đây từ số âm
   <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; align-items: center; margin-top: 16px;">
     <!-- SVG Graph -->
     <div style="flex: 1 1 320px; max-width: 400px; text-align: center;">
-      <svg id="parabolaSvg" viewBox="-200 -200 400 400" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+      <svg data-interactive-done="true" id="parabolaSvg" viewBox="-200 -200 400 400" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
         <!-- Grid lines -->
         <g stroke="#f1f5f9" stroke-width="1">
           <line x1="-180" y1="-150" x2="180" y2="-150" />

@@ -531,7 +531,7 @@ $$\frac{a + b}{a - b} = \frac{c + d}{c - d}$$
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. B \| 2. A \| 3. B \| 4. B \| 5. A \| 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. B · 2. A · 3. B · 4. B · 5. A · 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | - Cách 1 (Rút gọn): $\frac{24}{36} = \frac{2}{3}$; $\frac{30}{45} = \frac{2}{3}$. Vì cả hai bằng $\frac{2}{3}$ nên lập thành tỉ lệ thức.<br>- Cách 2 (Tích chéo): $24 \times 45 = 1080$ và $36 \times 30 = 1080$. Tích bằng nhau nên lập thành tỉ lệ thức. | $0.5$ đ<br><br>$0.5$ đ |
 | **Bài 1b** | - Xét tích: $4 \times 32 = 128$ và $8 \times 16 = 128 \implies 4 \cdot 32 = 8 \cdot 16$.<br>- Lập đủ 4 tỉ lệ thức:<br>1) $\frac{4}{8} = \frac{16}{32}$ &nbsp;&nbsp;&nbsp;&nbsp; 2) $\frac{4}{16} = \frac{8}{32}$<br>3) $\frac{32}{8} = \frac{16}{4}$ &nbsp;&nbsp;&nbsp;&nbsp; 4) $\frac{32}{16} = \frac{8}{4}$ | $0.25$ đ<br><br>$0.75$ đ |
 | **Bài 2a** | - Nhân chéo: $x \cdot 20 = 15 \cdot (-8) \implies 20x = -120$.<br>- Suy ra $x = \frac{-120}{20} = -6$. | $0.5$ đ<br>$0.5$ đ |

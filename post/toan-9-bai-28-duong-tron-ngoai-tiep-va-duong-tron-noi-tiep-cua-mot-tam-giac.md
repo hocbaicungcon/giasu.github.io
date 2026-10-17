@@ -149,7 +149,7 @@ Trải nghiệm trực quan sự khác biệt giữa **Đường tròn ngoại t
   </div>
 
   <div style="display: flex; justify-content: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
-    <svg id="svgTriCircles" width="380" height="340" viewBox="-190 -160 380 340" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="svgTriCircles" width="380" height="340" viewBox="-190 -160 380 340" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div id="triCircleStats" style="margin-top: 16px; padding: 12px; background: #f1f5f9; border-radius: 8px; text-align: center; font-size: 0.9em;"></div>
@@ -260,7 +260,7 @@ function drawTriCircles() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', () => setTriMode('equilateral'));
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', () => setTriMode('equilateral')); } else { setTriMode('equilateral'); }
 </script>
 
 ---

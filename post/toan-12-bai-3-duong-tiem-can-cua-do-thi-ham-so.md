@@ -170,7 +170,7 @@ Hãy bấm chọn chuyển đổi giữa hai hàm số mẫu kinh điển bên d
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <svg id="asymp-svg" viewBox="0 0 500 320" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+    <svg data-interactive-done="true" id="asymp-svg" viewBox="0 0 500 320" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
       <!-- Trục tọa độ: Gốc (220, 160). Scale 30px per unit -->
       <line x1="20" y1="160" x2="480" y2="160" stroke="#94a3b8" stroke-width="1.5"/>
       <line x1="220" y1="20" x2="220" y2="300" stroke="#94a3b8" stroke-width="1.5"/>
@@ -201,7 +201,7 @@ Hãy bấm chọn chuyển đổi giữa hai hàm số mẫu kinh điển bên d
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const btns = document.querySelectorAll('.btn-asymp');
   const pathL = document.getElementById('curve-left');
   const pathR = document.getElementById('curve-right');
@@ -289,7 +289,12 @@ document.addEventListener('DOMContentLoaded', function() {
       btns.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      });
+      };
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', __initApp);
+      } else {
+        __initApp();
+      }
       this.style.background = this.dataset.mode === 'nhan' ? '#2563eb' : '#10b981';
       this.style.color = '#fff';
       render(this.dataset.mode);

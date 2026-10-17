@@ -152,7 +152,7 @@ Nhập các hệ số $a, b, c$ và chọn dấu bất đẳng thức để theo
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <svg id="numline-svg" width="360" height="100" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="numline-svg" width="360" height="100" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Number line rendered dynamically -->
     </svg>
   </div>
@@ -247,11 +247,16 @@ Nhập các hệ số $a, b, c$ và chọn dấu bất đẳng thức để theo
     svg.innerHTML = svgHtml;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     const btn = document.getElementById('btn-solve-ineq');
     if (btn) btn.addEventListener('click', solveAndDraw);
     solveAndDraw();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

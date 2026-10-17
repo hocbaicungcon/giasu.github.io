@@ -181,7 +181,7 @@ Chọn một trong 3 trường hợp đồng dạng (c-c-c, c-g-c, g-g) và nh�
   </div>
 
   <div style="text-align: center; margin: 16px 0;">
-    <svg id="case-svg" viewBox="0 0 560 210" style="width: 100%; max-width: 560px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <svg data-interactive-done="true" id="case-svg" viewBox="0 0 560 210" style="width: 100%; max-width: 560px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
       <!-- Tam giác 1 (xanh lam) -->
       <polygon id="poly-1" points="60,160 130,40 190,160" fill="rgba(37,99,235,0.12)" stroke="#2563eb" stroke-width="2.5" />
       <text id="lbl-t1-a" x="125" y="30" font-family="sans-serif" font-weight="bold" font-size="13" fill="#1e293b">A</text>
@@ -325,9 +325,14 @@ function updateCase3(angVal) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   renderCaseControls();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

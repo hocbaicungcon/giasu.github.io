@@ -129,7 +129,7 @@ Việc sử dụng hai ẩn số giúp các mối quan hệ thực tế được
   </div>
 
   <div style="text-align: center; margin: 16px 0;">
-    <svg id="cano-svg" viewBox="0 0 520 160" style="width: 100%; max-width: 520px; height: auto; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;">
+    <svg data-interactive-done="true" id="cano-svg" viewBox="0 0 520 160" style="width: 100%; max-width: 520px; height: auto; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px;">
       <!-- Dòng sông -->
       <rect x="20" y="30" width="480" height="100" fill="#e0f2fe" rx="6" />
       
@@ -200,9 +200,14 @@ function updateCanoSimulation() {
       '$$\\begin{cases} (x + y) \\cdot ' + tDown.toFixed(2) + ' = ' + s + ' \\\\ (x - y) \\cdot ' + tUp.toFixed(2) + ' = ' + s + ' \\end{cases} \\implies \\begin{cases} x = ' + x + '\\text{ km/h} \\\\ y = ' + y + '\\text{ km/h} \\end{cases}$$';
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   updateCanoSimulation();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

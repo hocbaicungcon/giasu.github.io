@@ -291,7 +291,7 @@ Khối hình 3D dưới đây mô phỏng một **Hình lăng trụ tam giác $A
   }
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', setupEvents13);
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupEvents13); } else { setupEvents13(); }
   } else {
     setupEvents13();
   }

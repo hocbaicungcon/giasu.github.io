@@ -160,7 +160,7 @@ Hãy kéo thanh trượt góc $\alpha$ (từ $15^\circ$ đến $75^\circ$) để
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; align-items: center;">
     <div style="display: flex; justify-content: center;">
-      <svg id="triangle-svg" width="280" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+      <svg data-interactive-done="true" id="triangle-svg" width="280" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
         <!-- Right Triangle SVG -->
       </svg>
     </div>
@@ -232,10 +232,15 @@ Hãy kéo thanh trượt góc $\alpha$ (từ $15^\circ$ đến $75^\circ$) để
     `;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     document.getElementById('angle-slider').addEventListener('input', updateTrig);
     updateTrig();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

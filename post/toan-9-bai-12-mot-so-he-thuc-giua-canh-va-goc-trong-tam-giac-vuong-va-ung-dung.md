@@ -131,7 +131,7 @@ Nhập số đo các cạnh và góc của tam giác vuông để máy tính t�
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; align-items: center;">
     <div style="display: flex; justify-content: center;">
-      <svg id="solve-svg" width="280" height="180" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+      <svg data-interactive-done="true" id="solve-svg" width="280" height="180" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
         <!-- SVG dynamic triangle -->
       </svg>
     </div>
@@ -197,11 +197,16 @@ Nhập số đo các cạnh và góc của tam giác vuông để máy tính t�
     svg.innerHTML = svgHtml;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     const btn = document.getElementById('btn-calc-triangle');
     if (btn) btn.addEventListener('click', solveRightTriangle);
     solveRightTriangle();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

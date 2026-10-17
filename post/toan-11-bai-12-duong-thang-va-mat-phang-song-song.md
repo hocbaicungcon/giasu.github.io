@@ -265,7 +265,7 @@ Mô hình 3D dưới đây mô phỏng một hình chóp $S.ABCD$ với mặt đ
   }
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', setupEvents12);
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupEvents12); } else { setupEvents12(); }
   } else {
     setupEvents12();
   }

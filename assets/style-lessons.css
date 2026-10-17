@@ -396,6 +396,46 @@ html[data-theme="dark"] .prose :not(pre) > code {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
+.table-container {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  margin: 24px 0;
+  box-sizing: border-box;
+}
+
+.table-container::-webkit-scrollbar,
+.prose table::-webkit-scrollbar {
+  height: 6px;
+}
+.table-container::-webkit-scrollbar-track,
+.prose table::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+.table-container::-webkit-scrollbar-thumb,
+.prose table::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+html[data-theme="dark"] .table-container::-webkit-scrollbar-thumb,
+html[data-theme="dark"] .prose table::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.table-container table {
+  display: table !important;
+  width: max-content !important;
+  min-width: 100% !important;
+  max-width: none !important;
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .prose table {
   display: block;
   width: fit-content;
@@ -408,28 +448,21 @@ html[data-theme="dark"] .prose :not(pre) > code {
   box-sizing: border-box;
 }
 
-.prose table::-webkit-scrollbar {
-  height: 5px;
-}
-.prose table::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.04);
-  border-radius: 4px;
-}
-.prose table::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-html[data-theme="dark"] .prose table::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-}
-
 .prose td,
 .prose th {
   border: 1px solid var(--line);
-  padding: 8px 15px;
+  padding: 8px 14px;
   text-align: left;
   overflow-wrap: normal;
   word-break: normal;
+}
+
+.prose th {
+  background: rgba(0, 0, 0, 0.03);
+  font-weight: 600;
+}
+html[data-theme="dark"] .prose th {
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .prose tbody tr:nth-child(even) {
@@ -437,6 +470,36 @@ html[data-theme="dark"] .prose table::-webkit-scrollbar-thumb {
 }
 html[data-theme="dark"] .prose tbody tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.025);
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    margin: 18px 0;
+    background:
+      linear-gradient(to right, var(--card-bg, #fff) 30%, rgba(255,255,255,0)),
+      linear-gradient(to right, rgba(255,255,255,0), var(--card-bg, #fff) 70%) 100% 0,
+      radial-gradient(farthest-side at 0 50%, rgba(0,0,0,0.12), rgba(0,0,0,0)),
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.12), rgba(0,0,0,0)) 100% 0;
+    background-repeat: no-repeat;
+    background-color: var(--card-bg, #fff);
+    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
+  .prose th {
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+  .prose td {
+    padding: 8px 12px;
+    font-size: 0.88em;
+    min-width: 75px;
+  }
+  .prose td:empty,
+  .prose td:has(.katex:only-child) {
+    min-width: 32px;
+    text-align: center;
+  }
 }
 
 .prose details {

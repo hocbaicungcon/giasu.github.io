@@ -149,7 +149,7 @@ Dưới đây là mô phỏng mặt phẳng tọa độ $Oxy$. Nhấp vào các 
     Khảo sát tọa độ các điểm trên mặt phẳng: $A(2; 3)$, $B(-3; 2)$, $C(-2; -2)$, $D(3; -1)$
   </p>
   <div style="display: flex; justify-content: center; margin: 16px 0;">
-    <svg id="coordinate-plane-svg" width="320" height="320" viewBox="-160 -160 320 320" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px;">
+    <svg data-interactive-done="true" id="coordinate-plane-svg" width="320" height="320" viewBox="-160 -160 320 320" style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px;">
       <!-- Lưới tọa độ -->
       <g stroke="#e2e8f0" stroke-width="1">
         <line x1="-150" y1="-120" x2="150" y2="-120" />

@@ -167,7 +167,7 @@ Hãy thử kéo các đỉnh $A, B, C, D$ chạy trên đường tròn để th�
   </div>
 
   <div style="display: flex; justify-content: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
-    <svg id="svgCyclic" width="340" height="340" viewBox="-170 -170 340 340" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="svgCyclic" width="340" height="340" viewBox="-170 -170 340 340" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div id="cyclicStats" style="margin-top: 14px; padding: 12px; background: #eff6ff; border-radius: 8px; text-align: center; font-size: 0.9em; border: 1px solid #bfdbfe;"></div>
@@ -278,7 +278,7 @@ function setCyclicPreset(type) {
   drawCyclicQuad();
 }
 
-window.addEventListener('DOMContentLoaded', drawCyclicQuad);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', drawCyclicQuad); } else { drawCyclicQuad(); }
 </script>
 
 ---

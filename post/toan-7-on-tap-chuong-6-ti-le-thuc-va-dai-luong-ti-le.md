@@ -464,7 +464,7 @@ $$4(a - b)(b - c) = (c - a)^2$$
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. C \| 2. A \| 3. B \| 4. B \| 5. C \| 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. C · 2. A · 3. B · 4. B · 5. C · 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | - Áp dụng tính chất: $\frac{x}{3} = \frac{y}{5} = \frac{z}{7} = \frac{x + y + z}{3 + 5 + 7} = \frac{75}{15} = 5$.<br>- Suy ra: $x = 3 \times 5 = 15$; $y = 5 \times 5 = 25$; $z = 7 \times 5 = 35$. Kết luận đúng. | $0.5$ đ<br>$0.5$ đ |
 | **Bài 1b** | - Ta có: $\frac{x}{2} = \frac{2x}{4}$; $\frac{y}{3} = \frac{3y}{9}$; $\frac{z}{4}$.<br>- Áp dụng tính chất: $\frac{2x - 3y + z}{4 - 9 + 4} = \frac{-5}{-1} = 5$.<br>- Suy ra: $x = 2 \times 5 = 10$; $y = 3 \times 5 = 15$; $z = 4 \times 5 = 20$. Kết luận đúng. | $0.25$ đ<br>$0.5$ đ<br>$0.25$ đ |
 | **Bài 2a** | - Số trang in và thời gian là hai đại lượng tỉ lệ thuận.<br>- Lập tỉ số: $\frac{75}{3} = \frac{S_2}{8}$.<br>- Suy ra: $S_2 = \frac{75 \times 8}{3} = 25 \times 8 = 200$ (trang). Kết luận đúng. | $0.5$ đ<br>$0.5$ đ<br>$0.5$ đ |

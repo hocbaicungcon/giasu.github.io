@@ -537,7 +537,7 @@ b) ($0.5$ điểm) Tìm giá trị lớn nhất của biểu thức $Q = 100 - (
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. C \| 2. B \| 3. B \| 4. A \| 5. C \| 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. C · 2. B · 3. B · 4. A · 5. C · 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | Biểu thức là: $(x + y)x^2$ hoặc $x^2(x + y)$. | $0.5$ đ |
 | **Bài 1b** | Biểu thức quãng đường: $25t$ (km). | $0.5$ đ |
 | **Bài 1c** | - Giá cước gồm $14\,000$ đồng cho km đầu và $12\,000$ đồng cho $(x - 1)$ km tiếp theo.<br>- Biểu thức: $14\,000 + 12\,000(x - 1)$ (đồng) (hoặc rút gọn: $12\,000x + 2\,000$). | $0.5$ đ<br>$0.5$ đ |

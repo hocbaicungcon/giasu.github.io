@@ -166,9 +166,14 @@ function calcMasterPyramid() {
       '• <strong>Thể tích khối chóp:</strong> $V = \\frac{1}{3} a^2 \\cdot h = \\frac{1}{3} \\cdot ' + Sday + ' \\cdot ' + h + ' \\approx ' + V.toFixed(2) + '$.';
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   calcMasterPyramid();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

@@ -213,7 +213,7 @@ Hệ thống tự động vẽ hai đường thẳng $d_1$ (xanh lam) và $d_2$ 
   </div>
 
   <div style="text-align: center; margin: 14px 0;">
-    <svg id="system-svg" viewBox="0 0 460 260" style="width: 100%; max-width: 460px; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="system-svg" viewBox="0 0 460 260" style="width: 100%; max-width: 460px; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Lưới tọa độ Oxy -->
       <!-- Gốc tọa độ O tại (230, 130). Tỉ lệ: 1 đơn vị = 20px. x từ -10 đến 10, y từ -6 đến 6 -->
       <line x1="20" y1="130" x2="440" y2="130" stroke="#94a3b8" stroke-width="1.5" />
@@ -338,9 +338,14 @@ function updateSystemVisual() {
     }
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   updateSystemVisual();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

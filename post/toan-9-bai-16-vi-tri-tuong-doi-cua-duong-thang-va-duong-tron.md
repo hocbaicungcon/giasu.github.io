@@ -168,7 +168,7 @@ Dưới đây là mô hình tương tác động thể hiện điểm $M$ bên n
   <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; margin-top: 16px;">
     <!-- SVG Canvas -->
     <div style="flex: 1 1 320px; max-width: 400px; text-align: center;">
-      <svg id="tangentSvg" viewBox="0 0 380 280" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+      <svg data-interactive-done="true" id="tangentSvg" viewBox="0 0 380 280" style="width: 100%; height: auto; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
         <!-- Circle (O) -->
         <circle cx="250" cy="140" r="70" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" />
         <!-- Line OM -->

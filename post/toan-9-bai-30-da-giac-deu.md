@@ -153,7 +153,7 @@ Hãy di chuyển thanh trượt số cạnh từ $n = 3$ đến $n = 12$ để q
   </div>
 
   <div style="display: flex; justify-content: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
-    <svg id="svgPoly" width="340" height="340" viewBox="-170 -170 340 340" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="svgPoly" width="340" height="340" viewBox="-170 -170 340 340" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div id="polyCalcStats" style="margin-top: 14px; padding: 12px; background: #eff6ff; border-radius: 8px; text-align: center; font-size: 0.9em; border: 1px solid #bfdbfe;"></div>
@@ -241,7 +241,7 @@ function renderRegularPoly() {
   `;
 }
 
-window.addEventListener('DOMContentLoaded', renderRegularPoly);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderRegularPoly); } else { renderRegularPoly(); }
 </script>
 
 ---

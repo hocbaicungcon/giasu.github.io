@@ -136,7 +136,7 @@ Di chuyển điểm $M_0$ và xoay đường thẳng $\Delta$ để quan sát h�
 
   <div style="display: grid; grid-template-columns: 1fr 240px; gap: 16px;">
     <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 8px; text-align: center;">
-      <svg id="distSvg" viewBox="0 0 360 280" style="width: 100%; max-width: 400px; height: auto;">
+      <svg data-interactive-done="true" id="distSvg" viewBox="0 0 360 280" style="width: 100%; max-width: 400px; height: auto;">
         <!-- Grid -->
         <g stroke="#f1f5f9" stroke-width="1">
           <line x1="20" y1="40" x2="340" y2="40" /><line x1="20" y1="90" x2="340" y2="90" />

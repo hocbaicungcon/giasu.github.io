@@ -170,7 +170,7 @@ Hãy thử thay đổi số lượng từng danh mục bên dưới để quan s
     <div>
       <h4 style="margin: 0 0 10px 0; color: #334155; text-align: center;">Biểu đồ Hình quạt tròn (Pie Chart)</h4>
       <div style="display: flex; justify-content: center;">
-        <svg id="pieSvg" width="260" height="260" viewBox="-130 -130 260 260" style="transform: rotate(-90deg); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));"></svg>
+        <svg data-interactive-done="true" id="pieSvg" width="260" height="260" viewBox="-130 -130 260 260" style="transform: rotate(-90deg); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));"></svg>
       </div>
       <div id="pieLegend" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; font-size: 0.85em;"></div>
     </div>
@@ -288,7 +288,7 @@ function setSamplePreset(type) {
   updateRelChart();
 }
 
-window.addEventListener('DOMContentLoaded', updateRelChart);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', updateRelChart); } else { updateRelChart(); }
 </script>
 
 ---

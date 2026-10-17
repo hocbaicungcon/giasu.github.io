@@ -161,7 +161,7 @@ Kéo thanh trượt để di chuyển vị trí chân đường cao $H$ trên c�
   </div>
 
   <div style="text-align: center; margin: 16px 0;">
-    <svg id="rt-svg" viewBox="0 0 540 220" style="width: 100%; max-width: 540px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <svg data-interactive-done="true" id="rt-svg" viewBox="0 0 540 220" style="width: 100%; max-width: 540px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
       <!-- Tam giác lớn ABC -->
       <polygon id="rt-poly-abc" points="140,40 40,180 500,180" fill="none" stroke="#f59e0b" stroke-width="3" />
       <!-- Tam giác HBA (tô màu xanh dương nhạt) -->
@@ -257,9 +257,14 @@ function updateRightTriangleSim() {
       '• Kiểm chứng tích diện tích: $AB \\cdot AC \\approx ' + (ab*ac).toFixed(1) + '$, $AH \\cdot BC \\approx ' + (h*16).toFixed(1) + '$ (Hai giá trị bằng nhau tuyệt đối!).';
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   updateRightTriangleSim();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

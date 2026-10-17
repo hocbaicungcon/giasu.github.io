@@ -520,7 +520,7 @@ Chứng minh rằng đại lượng $z$ cũng tỉ lệ thuận với đại lư
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. B \| 2. B \| 3. C \| 4. C \| 5. B \| 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. B · 2. B · 3. C · 4. C · 5. B · 6. B** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | - Vì $y$ tỉ lệ thuận với $x$ nên $y = kx \implies k = \frac{y}{x} = \frac{-15}{5} = -3$.<br>- Công thức: $y = -3x$. | $0.5$ đ<br>$0.5$ đ |
 | **Bài 1b** | - Khi $x = -2 \implies y = -3 \times (-2) = 6$.<br>- Khi $x = 4 \implies y = -3 \times 4 = -12$.<br>- Khi $y = 30 \implies -3x = 30 \implies x = -10$. | $0.25$ đ<br>$0.25$ đ<br>$0.5$ đ |
 | **Bài 2** | - Từ cột đầu tiên: $k = \frac{12}{-3} = -4 \implies y = -4x$.<br>- Ô 1 ($x = -1$): $y = -4 \times (-1) = 4$.<br>- Ô 2 ($x = 2$): $y = -4 \times 2 = -8$.<br>- Ô 3 ($y = -16$): $x = \frac{-16}{-4} = 4$.<br>- Ô 4 ($x = 6$): $y = -4 \times 6 = -24$. | $0.5$ đ<br>$0.25$ đ<br>$0.5$ đ<br>$0.5$ đ<br>$0.25$ đ |

@@ -288,7 +288,7 @@ Mô hình 3D dưới đây mô phỏng một **tam giác $ABC$ trong không gian
   }
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', setupEvents14);
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupEvents14); } else { setupEvents14(); }
   } else {
     setupEvents14();
   }

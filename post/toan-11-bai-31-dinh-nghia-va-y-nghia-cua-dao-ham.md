@@ -174,7 +174,7 @@ Kéo thanh trượt số gia Δx: <span id="val-dx" style="font-size: 1.15em; co
 <input type="range" id="range-dx" min="0.05" max="1.15" step="0.05" value="1.00" style="width: 100%;">
 </div>
 <div style="display: flex; justify-content: center; overflow-x: auto;">
-<svg id="tangent-svg" viewBox="0 0 480 340" width="100%" style="max-width: 480px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+<svg id="tangent-svg" data-interactive-done="true" viewBox="0 0 480 340" width="100%" style="max-width: 480px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
 <!-- Coordinate Axes -->
 <line x1="30" y1="290" x2="460" y2="290" stroke="#64748b" stroke-width="1.5"/>
 <line x1="70" y1="330" x2="70" y2="15" stroke="#64748b" stroke-width="1.5"/>
@@ -225,7 +225,8 @@ Kéo thanh trượt số gia Δx: <span id="val-dx" style="font-size: 1.15em; co
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
+  function initTangent() {
   const rDx = document.getElementById('range-dx');
   const valDx = document.getElementById('val-dx');
   const valCoordM = document.getElementById('val-coord-m');
@@ -292,7 +293,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
   rDx.addEventListener('input', update);
   update();
-});
+ }
+
+ if (document.readyState === 'loading') {
+  if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initTangent); } else { initTangent(); }
+ } else {
+  initTangent();
+ }
+})();
 </script>
 
 ---

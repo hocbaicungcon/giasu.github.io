@@ -190,7 +190,7 @@ Tương tác trực quan với các tham số của ba đường conic để qua
 
   <div style="display: grid; grid-template-columns: 1fr 240px; gap: 16px; padding: 16px;">
     <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; display: flex; justify-content: center; align-items: center; min-height: 320px;">
-      <svg id="conic-canvas" viewBox="-120 -120 240 240" style="width: 100%; max-width: 380px; height: 320px; touch-action: none; background: #fdfdfd;"></svg>
+      <svg data-interactive-done="true" id="conic-canvas" viewBox="-120 -120 240 240" style="width: 100%; max-width: 380px; height: 320px; touch-action: none; background: #fdfdfd;"></svg>
     </div>
 
     <div style="display: flex; flex-direction: column; gap: 14px; justify-content: center;">

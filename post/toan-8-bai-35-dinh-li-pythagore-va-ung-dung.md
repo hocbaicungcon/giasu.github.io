@@ -172,7 +172,7 @@ Kéo thanh trượt để thay đổi hai cạnh góc vuông $a$ và $b$. Hệ t
   </div>
 
   <div style="text-align: center; margin: 16px 0;">
-    <svg id="pyth-svg" viewBox="0 0 540 230" style="width: 100%; max-width: 540px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <svg data-interactive-done="true" id="pyth-svg" viewBox="0 0 540 230" style="width: 100%; max-width: 540px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
       <!-- Tam giác vuông trung tâm -->
       <polygon id="pyth-tri" points="160,170 160,60 300,170" fill="rgba(37,99,235,0.15)" stroke="#2563eb" stroke-width="2.5" />
       <rect x="160" y="152" width="18" height="18" fill="none" stroke="#ef4444" stroke-width="2" />
@@ -244,9 +244,14 @@ function updatePythagoras() {
       (isInteger ? '🎉 <strong>Tuyệt vời!</strong> $(' + a + ', ' + b + ', ' + c + ')$ là một <strong>bộ ba số Pythagore nguyên</strong>!' : '<em>($' + c2 + '$ không phải số chính phương, cạnh huyền là số vô tỉ $\\sqrt{' + c2 + '}$)</em>');
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   updatePythagoras();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

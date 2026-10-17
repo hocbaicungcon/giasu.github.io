@@ -145,7 +145,7 @@ Về mặt hình học, căn bậc hai số học $\sqrt{S}$ chính là **độ 
   </div>
 
   <div style="display: flex; flex-direction: column; align-items: center;">
-    <svg id="square-svg" width="280" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="square-svg" width="280" height="200" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- Dynamic Square SVG -->
     </svg>
     <div id="sqrt-calc" style="margin-top: 12px; font-weight: bold; font-size: 1.1em; color: #047857; text-align: center;">
@@ -184,10 +184,15 @@ Về mặt hình học, căn bậc hai số học $\sqrt{S}$ chính là **độ 
     calc.innerHTML = `Căn bậc hai số học: &radic;${S} = <span style="color: #b91c1c;">${side.toFixed(4)}</span> &hArr; (${side.toFixed(4)})&sup2; = ${S}`;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     document.getElementById('slider-area').addEventListener('input', drawSquare);
     drawSquare();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

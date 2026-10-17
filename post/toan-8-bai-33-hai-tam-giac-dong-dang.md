@@ -180,7 +180,7 @@ Kéo thanh trượt để thay đổi tỉ số đồng dạng $k$. Quan sát tr
   </div>
 
   <div style="text-align: center; margin: 16px 0;">
-    <svg id="sim-svg" viewBox="0 0 600 240" style="width: 100%; max-width: 600px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
+    <svg data-interactive-done="true" id="sim-svg" viewBox="0 0 600 240" style="width: 100%; max-width: 600px; height: auto; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px;">
       <!-- Tam giác gốc ABC cố định (màu xanh lá) -->
       <polygon id="orig-tri" points="60,190 140,50 200,190" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="2.5" />
       <text x="50" y="205" font-family="sans-serif" font-weight="bold" font-size="13" fill="#1e293b">B</text>
@@ -255,9 +255,14 @@ function updateSimilarTriangles(kVal) {
       '<em>Nhận xét: Khi phóng to cạnh gấp ' + k.toFixed(1) + ' lần thì diện tích tăng vọt gấp ' + kSquare + ' lần!</em>';
   }
 }
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   updateSimilarTriangles(1.5);
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

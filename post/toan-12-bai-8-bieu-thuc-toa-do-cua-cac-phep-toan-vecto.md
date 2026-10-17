@@ -154,7 +154,7 @@ Nhập hoặc chọn toạ độ của hai vectơ $\vec{u}$ và $\vec{v}$ để 
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const ux = document.getElementById('inp-u-x');
   const uy = document.getElementById('inp-u-y');
   const uz = document.getElementById('inp-u-z');
@@ -220,7 +220,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   [ux, uy, uz, vx, vy, vz].forEach(inp => inp.addEventListener('input', calculate));
   calculate();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

@@ -100,7 +100,7 @@ Dưới đây là cỗ máy tích hợp mô phỏng kép: **Gieo xúc xắc 6 m�
     <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:14px; text-align:center;">
       <h5 style="margin:0 0 10px 0; color:#1e293b;">GIEO XÚC XẮC 6 MẶT</h5>
       <div id="dice-combo-box" style="display:inline-flex; justify-content:center; align-items:center; width:64px; height:64px; background:white; border:2px solid #334155; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); margin-bottom:10px;">
-        <svg id="dice-combo-svg" width="50" height="50" viewBox="0 0 70 70">
+        <svg data-interactive-done="true" id="dice-combo-svg" width="50" height="50" viewBox="0 0 70 70">
           <circle cx="35" cy="35" r="7" fill="#dc2626" />
         </svg>
       </div>

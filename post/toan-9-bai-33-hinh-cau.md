@@ -162,7 +162,7 @@ Hãy điều chỉnh bán kính $R$ và kéo thanh trượt khoảng cách mặt
   </div>
 
   <div style="display: flex; justify-content: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;">
-    <svg id="svgSphere" width="380" height="280" viewBox="-190 -140 380 280" style="max-width: 100%; height: auto;"></svg>
+    <svg data-interactive-done="true" id="svgSphere" width="380" height="280" viewBox="-190 -140 380 280" style="max-width: 100%; height: auto;"></svg>
   </div>
 
   <div id="sphereCalcStats" style="margin-top: 14px; padding: 12px; background: #eff6ff; border-radius: 8px; text-align: center; font-size: 0.9em; border: 1px solid #bfdbfe;"></div>
@@ -301,7 +301,7 @@ function renderSphereDemo() {
   `;
 }
 
-window.addEventListener('DOMContentLoaded', renderSphereDemo);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', renderSphereDemo); } else { renderSphereDemo(); }
 </script>
 
 ---

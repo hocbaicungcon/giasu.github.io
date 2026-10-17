@@ -291,7 +291,7 @@ Dưới đây là mô hình không gian 3D trực quan. Các em hãy xoay khối
   }
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', setupEvents11);
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupEvents11); } else { setupEvents11(); }
   } else {
     setupEvents11();
   }

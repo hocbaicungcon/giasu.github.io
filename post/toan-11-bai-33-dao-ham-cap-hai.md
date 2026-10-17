@@ -158,7 +158,7 @@ Hãy điều chỉnh tần số góc $\omega$ và biên độ $A$ bên dưới �
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <svg id="osc-svg" viewBox="0 0 500 240" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
+    <svg data-interactive-done="true" id="osc-svg" viewBox="0 0 500 240" width="100%" style="max-width: 500px; background: #f8fafc; border-radius: 8px; border: 1px solid #cbd5e1;">
       <!-- Trục tọa độ -->
       <line x1="30" y1="120" x2="480" y2="120" stroke="#94a3b8" stroke-width="1.5"/>
       <line x1="50" y1="15" x2="50" y2="225" stroke="#94a3b8" stroke-width="1.5"/>
@@ -183,7 +183,7 @@ Hãy điều chỉnh tần số góc $\omega$ và biên độ $A$ bên dưới �
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const rAmp = document.getElementById('range-amp');
   const rOmega = document.getElementById('range-omega');
   const valAmp = document.getElementById('val-amp');
@@ -234,7 +234,12 @@ document.addEventListener('DOMContentLoaded', function() {
   rAmp.addEventListener('input', render);
   rOmega.addEventListener('input', render);
   render();
-});
+};
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', __initApp);
+} else {
+  __initApp();
+}
 </script>
 
 ---

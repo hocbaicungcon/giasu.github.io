@@ -175,7 +175,7 @@ Kéo các điểm ngọn của hai vectơ $\vec{u}$ và $\vec{v}$ để quan sá
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; align-items: center;">
     <!-- Interactive Canvas SVG -->
     <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px; text-align: center;">
-      <svg id="addVecSvg" viewBox="0 0 320 240" style="width: 100%; max-width: 340px; height: auto; touch-action: none; cursor: crosshair;">
+      <svg data-interactive-done="true" id="addVecSvg" viewBox="0 0 320 240" style="width: 100%; max-width: 340px; height: auto; touch-action: none; cursor: crosshair;">
         <defs>
           <marker id="arrU" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
             <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" />

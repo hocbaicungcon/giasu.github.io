@@ -187,7 +187,7 @@ Hãy chọn dạng hàm số để xem công thức mẫu, quy tắc bước là
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+const __initApp = function() {
   const btns = document.querySelectorAll('.btn-deriv');
   const dFormula = document.getElementById('deriv-formula');
   const dRule = document.getElementById('deriv-rule');
@@ -223,7 +223,12 @@ document.addEventListener('DOMContentLoaded', function() {
       btns.forEach(b => {
         b.style.background = '';
         b.style.color = '';
-      });
+      };
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', __initApp);
+      } else {
+        __initApp();
+      }
       this.style.background = '#2563eb';
       this.style.color = '#ffffff';
 

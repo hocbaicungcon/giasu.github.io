@@ -128,7 +128,7 @@ Công cụ tương tác dưới đây hỗ trợ các em giải nhanh bất kỳ
   </div>
 
   <div style="display: flex; justify-content: center;">
-    <svg id="review-svg" width="350" height="90" style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
+    <svg data-interactive-done="true" id="review-svg" width="350" height="90" style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px;">
       <!-- SVG dynamic numberline -->
     </svg>
   </div>
@@ -206,11 +206,16 @@ Công cụ tương tác dưới đây hỗ trợ các em giải nhanh bất kỳ
     svg.innerHTML = svgHtml;
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
+  const __initApp = function() {
     const btn = document.getElementById('btn-review-solve');
     if (btn) btn.addEventListener('click', runSolve);
     runSolve();
-  });
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __initApp);
+  } else {
+    __initApp();
+  }
 })();
 </script>
 

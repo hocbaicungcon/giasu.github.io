@@ -516,7 +516,7 @@ Tính giá trị của biểu thức $P = \frac{a + b}{c + d} + \frac{b + c}{d +
 
 | Phần / Câu | Đáp án / Hướng dẫn giải | Điểm |
 | :--- | :--- | :---: |
-| **Phần I** | **1. A \| 2. B \| 3. A \| 4. C \| 5. A \| 6. D** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
+| **Phần I** | **1. A · 2. B · 3. A · 4. C · 5. A · 6. D** (mỗi câu đúng $0.5$ điểm) | **$3.0$ đ** |
 | **Bài 1a** | - Áp dụng tính chất: $\frac{x}{5} = \frac{y}{9} = \frac{x + y}{5 + 9} = \frac{42}{14} = 3$.<br>- Suy ra $x = 5 \times 3 = 15$ và $y = 9 \times 3 = 27$. Kết luận đúng. | $0.5$ đ<br>$0.5$ đ |
 | **Bài 1b** | - Áp dụng tính chất: $\frac{x}{7} = \frac{y}{3} = \frac{x - y}{7 - 3} = \frac{24}{4} = 6$.<br>- Suy ra $x = 7 \times 6 = 42$ và $y = 3 \times 6 = 18$. Kết luận đúng. | $0.5$ đ<br>$0.5$ đ |
 | **Bài 2a** | - Áp dụng tính chất: $\frac{x}{2} = \frac{y}{3} = \frac{z}{4} = \frac{x + y + z}{2 + 3 + 4} = \frac{72}{9} = 8$.<br>- Suy ra $x = 2 \times 8 = 16$; $y = 3 \times 8 = 24$; $z = 4 \times 8 = 32$. Kết luận đúng. | $0.5$ đ<br>$0.5$ đ |

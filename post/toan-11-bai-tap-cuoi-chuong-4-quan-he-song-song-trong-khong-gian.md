@@ -278,7 +278,7 @@ Hãy bấm các nút dưới đây để **chuyển đổi linh hoạt giữa 4 
   }
 
   if(document.readyState === 'loading'){
-    document.addEventListener('DOMContentLoaded', setupEventsRev);
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupEventsRev); } else { setupEventsRev(); }
   } else {
     setupEventsRev();
   }
