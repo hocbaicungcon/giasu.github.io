@@ -1,9 +1,9 @@
 ---
-title: '108 bài toán chọn lọc bồi dưỡng học sinh giỏi: Phân số, tỉ số và chuyển động'
-description: 'Tuyển tập 108 bài toán chọn lọc bồi dưỡng học sinh giỏi Toán lớp 5: Phân số, hỗn số, số thập phân, tỉ số phần trăm, chuyển động đều và hình học rèn luyện tư duy.'
+title: "108 bài toán chọn lọc bồi dưỡng học sinh giỏi: Phân số, tỉ số và chuyển động"
+description: "Tuyển tập 108 bài toán chọn lọc bồi dưỡng học sinh giỏi Toán lớp 5: Phân số, hỗn số, số thập phân, tỉ số phần trăm, chuyển động đều và hình học rèn luyện tư duy."
 category: Toán học
 type: Bài tập
-date: '2026-10-17'
+date: "2026-10-17"
 tags:
   - Toán 5
   - Học sinh giỏi
@@ -24,112 +24,64 @@ grade: 5
 
 ---
 
+## 1. Phân số, hỗn số
 
-## 1 Phân số, hỗn số
+**Bài 1.** Rút gọn các phân số sau: $\frac{35}{28},\ \frac{85}{51},\ \frac{65}{39},\ \frac{75}{100},\ \frac{189}{105}$.
 
-## 2 Số thập phân, tỉ số phần trăm
-
-## 3 Đại lượng tỉ lệ thuận, tỉ lệ nghịch, tỉ lệ kép
-
-## 4 Hình học
-
-## 5 Số đo thời gian, toán chuyễn động đều
-
-## 6 Một số dạng bài toán khác
-
-## 7 Đáp án và lời giải một số bài toán chọn lọc
-
-Phân số, hỗn số
-35 85 65 75
-
-**Bài 1.** Rút gọn các phân số sau: 28'51' 39 100' 105
-
-**Bài 2.** Rút gọn rồi so sánh các phân số sau: 42' 1414' 141414
-  4 8 8 12
+**Bài 2.** Rút gọn rồi so sánh các phân số sau: $\frac{39}{42},\ \frac{1313}{1414},\ \frac{131313}{141414}$.
 
 **Bài 3.** So sánh các phân số sau:
-  579I
+- a) $\frac{4}{9}$ và $\frac{8}{17}$
+- b) $\frac{8}{5}$ và $\frac{12}{11}$
 
 **Bài 4.** Không quy đồng tử số và mẫu số, hãy so sánh các phân số sau:
-  a)
-  và
-  và
-- d) 15
-  b)
-  và
-- e) 95
-  và 96
+- a) $\frac{4}{5}$ và $\frac{3}{2}$
+- b) $\frac{5}{11}$ và $\frac{13}{24}$
+- c) $\frac{13}{27}$ và $\frac{17}{23}$
+- d) $\frac{14}{15}$ và $\frac{15}{16}$
+- e) $\frac{96}{95}$ và $\frac{97}{96}$
 
-**Bài 5.** Tìm số tự nhiên x biết:
-- c) 27
-  và 23
-  a)
-  =
-  105'
-- d) 8
-  × 3
-  x - 7 - 135
+**Bài 5.** Tìm số tự nhiên $x$ biết:
+- a) $\frac{x}{9} = \frac{5}{15}$
+- b) $\frac{17}{x} = \frac{85}{105}$
+- c) $\frac{x}{8} = \frac{15}{24}$
+- d) $\frac{x}{8} = \frac{2}{3} + \frac{7}{24}$
+- e) $x - \frac{3}{7} = \frac{27}{135}$
 
-**Bài 6.** Tìm một phân số tối giản sao cho nếu cộng thêm 8 đơn vị vào tử số và cộng
-  thêm 10 đơn vị vào mẫu số thì được một phân số mới bằng phân số đã cho.
+**Bài 6.** Tìm một phân số tối giản sao cho nếu cộng thêm 8 đơn vị vào tử số và cộng thêm 10 đơn vị vào mẫu số thì được một phân số mới bằng phân số đã cho.
 
-**Bài 7.** Cho phân số
-  II Hỏi phải cộng thêm vào tử số và mẫu số của phân số đã
-  cho cùng xột số tự nhiên nào để được phân số bằng ý!
+**Bài 7.** Cho phân số $\frac{2}{11}$. Hỏi phải cộng thêm vào tử số và mẫu số của phân số đã cho cùng một số tự nhiên nào để được phân số bằng $\frac{4}{7}$?
 
-**Bài 8.** Tìm phân số có tử số lớn hơn mẫu số 8 đơn vị và sau khi rút gọn ta được
-  phân số 3
-  m+n
+**Bài 8.** Tìm phân số có tử số lớn hơn mẫu số 8 đơn vị và sau khi rút gọn ta được phân số $\frac{5}{3}$.
 
-**Bài 9.** Tìm phân sô tôi giản n, biết rằng phân số
-  gấp 7 lần phân số
+**Bài 9.** Tìm phân số tối giản $\frac{m}{n}$, biết rằng phân số $\frac{m+n}{n}$ gấp 7 lần phân số $\frac{m}{n}$.
 
-**Bài 10.** Một trại chăn nuôi có 7 số bò bằng 3 số dê, biết số bò ít hơn số dê là 12
-  con. Hỏi trại chăn nuôi có bao nhiêu con bò? Bao nhiêu con dễ?
+**Bài 10.** Một trại chăn nuôi có $\frac{2}{3}$ số bò bằng $\frac{4}{7}$ số dê, biết số bò ít hơn số dê là 12 con. Hỏi trại chăn nuôi có bao nhiêu con bò? Bao nhiêu con dê?
 
-**Bài 11.** Tuổi Bố bằng g tuổi Mẹ, tuổi Lan bằng 1
-  tuổi Mẹ, tổng số tuổi của Bố và
-  Lan là 44 tuổi. Hỏi mỗi người bao nhiêu tuổi?
+**Bài 11.** Tuổi Bố bằng $\frac{9}{8}$ tuổi Mẹ, tuổi Lan bằng $\frac{1}{4}$ tuổi Mẹ, tổng số tuổi của Bố và Lan là 44 tuổi. Hỏi mỗi người bao nhiêu tuổi?
 
-**Bài 12.** Có ba bình nước mắm chứa tổng công 66 lít, bình thứ hai chứa bằng 2
-  bình thứ nhất, bình thứ ba chứa bằng 3
-  bình thứ hai. Hỏi mỗi bình chứa bao
-  nhiêu lít nước mắm^2
+**Bài 12.** Có ba bình nước mắm chứa tổng cộng 66 lít, bình thứ hai chứa bằng $\frac{1}{2}$ bình thứ nhất, bình thứ ba chứa bằng $\frac{2}{3}$ bình thứ hai. Hỏi mỗi bình chứa bao nhiêu lít nước mắm?
 
 **Bài 13.** Hai vòi nước cùng chảy vào một bể cạn. Nếu vòi thứ nhất chảy một mình
   trong 5 giờ thì sẽ đầy bể. Nếu vòi thứ hai chảy một mình thì bể sẽ đầy sau 7
   giờ. Hỏi nếu cả hai vòi cùng chảy thì bế sẽ đầy sau mấy giờ?
 
-**Bài 14.** Hai người làm chung một công việc trong 12 giờ thì xong. Người thứ nhất
-  làm một mình
-  công việc thì mất 10 giờ, hỏi người thứ hai làm 3
-  công việc
-  còn lại mất bao nhiêu lâu?
+**Bài 14.** Hai người làm chung một công việc trong 12 giờ thì xong. Người thứ nhất làm một mình $\frac{2}{3}$ công việc thì mất 10 giờ, hỏi người thứ hai làm $\frac{1}{3}$ công việc còn lại mất bao nhiêu lâu?
 
-**Bài 15.** Lớp 5A1 và 5A2 có 87 học sinh, biết rằng - số học sinh của lớp 5A1 bằng
-  - số học sinh của lớp 5A2. Hỏi mỗi lớp có bao nhiêu học sinh?
+**Bài 15.** Lớp 5A1 và 5A2 có 87 học sinh, biết rằng $\frac{5}{7}$ số học sinh của lớp 5A1 bằng $\frac{2}{3}$ số học sinh của lớp 5A2. Hỏi mỗi lớp có bao nhiêu học sinh?
 
 **Bài 16.** Một hình tam giác có chu vi là 120cm. Số do ba cạnh của tam giác tỉ lệ với
   5, 12, 13. Tìm số do các cạnh của tam giác.
 
-**Bài 17.** Một đội công nhân làm đường trong 3 ngày. Ngày thứ nhất làm được -
-  công việc, ngày thứt hai làm được g công việc, ngày thứ ba làm nốt 57 mét cuối.
-  Hỏi đội công nhân dó phải làm bao nhiêu mét đường?
+**Bài 17.** Một đội công nhân làm đường trong 3 ngày. Ngày thứ nhất làm được $\frac{2}{7}$ công việc, ngày thứ hai làm được $\frac{3}{8}$ công việc, ngày thứ ba làm nốt 57 mét cuối. Hỏi đội công nhân đó phải làm bao nhiêu mét đường?
 
-**Bài 18.** Một ô tô chạy quãng đường AB trong 3 giờ. Giờ dầu chạy được ·
-
-## 5 quãng
-
-đường AB. Giờ thứ hai chạy được - quãng đường còn lại và thêm 4km. Giờ
-thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
-
-## 2 Số thập phân, tỉ số phần trăm
+**Bài 18.** Một ô tô chạy quãng đường AB trong 3 giờ. Giờ đầu chạy được $\frac{1}{3}$ quãng đường AB. Giờ thứ hai chạy được $\frac{2}{5}$ quãng đường còn lại và thêm 4 km. Giờ thứ ba chạy nốt 50 km cuối. Tính quãng đường AB.
 
 **Bài 19.** Viết các phân số sau đây dưới dạng số thập phân:
-  5 2 17 16 132
-  2 5 8 ' 25 125
+$$\frac{3}{5},\quad \frac{5}{2},\quad \frac{17}{4},\quad \frac{16}{25},\quad \frac{132}{125}$$
 
 **Bài 20.** Viết các số sau thành số thập phân:
+$$2\frac{3}{5},\quad 7\frac{1}{2},\quad 5\frac{1}{4},\quad 1\frac{1}{8}$$
 
 **Bài 21.** Viết các số thập phân sau đây dưới dạng phân số:
   2, 15; 5, 022; 4, 6; 0, 324
@@ -149,6 +101,10 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
 **Bài 25.** Một sọt cam nặng tổng cộng 76,65kg. Biết rằng nếu lấy 4kg ở sọt thứ nhất
   chuyển sang sọt thứ hai thì sọt thứ hai nặng hơn sọt thứ nhất 1,85kg. Hỏi mỗi
   sọt cam nặng bao nhiêu kilgam^2
+
+---
+
+## 2. Số thập phân, tỉ số phần trăm
 
 **Bài 26.** Nhà An nuôi 8 con bò, trong đó có 3 con bò đực. Hỏi
 - a) Số bò dực chiếm bao nhiêu phần trăm tổng số bò?
@@ -191,8 +147,6 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   nhật đó.
 
 **Bài 36.** Hãy so sánh A và B, biết A = 19, 93 x 19, 99; B = 19,96 × 19, 96.
-
-## 3 Đại lượng tỉ lệ thuận, tỉ lệ nghịch, tỉ lệ kép
 
 **Bài 37.** Tổ 1 lớp 5A có 11 học sinh trồng được 55 cây. Hỏi cả lớp 5A trồng được
   bao nhiêu cây? Biết rằng lớp 5A có 42 học sinh và số cây mỗi học sinh trồng
@@ -237,6 +191,10 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   đi làm nhiệm vụ ở tỉnh khác. Vì vậy số gạo đã chuần bị ăn được nhiều hơn dự
   kiến 7 ngày. Hỏi đã có bao nhiêu chiến sĩ được điều đi tỉnh khác?
 
+---
+
+## 3. Đại lượng tỉ lệ thuận, tỉ lệ nghịch, tỉ lệ kép
+
 **Bài 46.** Bạn Ngọc mua 2 bút bi và 5 quyến vở hết 74000 đồng. Hãy tính giá tiền
   một chiếc bút bi, giá tiền một quyển vở, biết bạn Mai cũng mua 3 bút bi và 4
   quyển vở như vậy hết 69000 đồng.
@@ -273,13 +231,17 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   chỉ tìm được miếng đất có chiều rộng 40m. Vậy phải lấy chiều chiều dài là bao
   nhiêu để có đủ diện tích dự trữ?
 
-## 4 Hình học
+---
+
+## 4. Hình học
 
 **Bài 55.** Cho hình tam giác ABC có điểm N là điểm chính giữa cạnh AC, trên hình
   đó có hình thang BMNE như hình vẽ. Nối B với N, nối E với M, hai đoạn thắng
   này gặp nhau ở điểm O.
 - a) So sánh diện tích hai tam giác OBM và OEN.
 - b) So sánh diện tích hình tam giác EMC với diện tích hình AEMB.
+
+![Hình vẽ Bài 55](/assets/images/108-toan-5/bai-55.png)
 
 **Bài 56.** Cho tam giác ABC. M là điểm chính giữa cạnh BC, N là điểm chính giữa
   cạnh AC. AM và AN cắt nhau tại G.
@@ -297,6 +259,8 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   và DOC như hình vẽ.
   10cm2
   20cт-
+
+![Hình vẽ Bài 58](/assets/images/108-toan-5/bai-58.png)
 
 **Bài 59.** Cho hình thàng vương MNPQ rưỡng góc tại M và Q; /Q EMN. Kéo
   dài MQ và NP cắt nhau tại A.
@@ -320,6 +284,8 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   AM, AN chia hình chữ nhật thành 3 phần có diện tích bằng nhau. Tính độ dài
   đoạn CM, CN.
 
+![Hình vẽ Bài 62](/assets/images/108-toan-5/bai-62.png)
+
 **Bài 63.** Cho hình chữ nhật ABCD. Trên cạnh AB lấy điểm M bất kì. Chứng minh
   Tang SOLE = 2$ASED
 
@@ -330,14 +296,20 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   SDIC = 35 DIK ·
 - c) Biết SpIk = 8cm^2. Tính diện tích hình chữ nhật ABCD.
 
+![Hình vẽ Bài 64](/assets/images/108-toan-5/bai-64.png)
+
 **Bài 65.** Cho hình chữ nhật ABCD và các điểm M, O, I sao cho MI = ID và AO
   = OI (hình vẽ). Biết diện tích tam giác MOI là 25m2. Hỏi diện tích hình chữ
   nhật ABCD bằng bao nhiêu héc-ta?
+
+![Hình vẽ Bài 65](/assets/images/108-toan-5/bai-65.png)
 
 **Bài 66.** Cho hình tròn tâm O tiếp xúc với 4 cạnh của hình vuông ABCD (như hình
   vẽ). Biết diện tích hình vuông là 400cm^2. Tính:
 - a) Diện tích hình tròn tâm O.
 - b) Diện tích phần màu vàng.
+
+![Hình vẽ Bài 66](/assets/images/108-toan-5/bai-66.png)
 
 **Bài 67.** Một phòng học trong lòng dài 7m, rộng 5m, cao 3,5m. Các cửa ra vào và
   chiếm 16m^2. Tìm phí tốn quét vôi tường phần bên trong căn phòng. Biết rằng
@@ -347,11 +319,17 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   cái thùng các tông hình lập phương (xem hình vẽ). Phần các cột nút chiếm
   2,5dm. Tính diện tích toàn phần cái thùng.
 
+![Hình vẽ Bài 68](/assets/images/108-toan-5/bai-68.png)
+
 **Bài 69.** Hình vuông ABCD có cạnh dài 5cm và có M, N, P, Q là các trung điểm
   của bốn cạnh. Tính diện tích phần màu vàng.
 
+![Hình vẽ Bài 69](/assets/images/108-toan-5/bai-69.png)
+
 **Bài 70.** Biết cạnh của mỗi ô vuông trong hình dưới đều dài 1cm. Tính tổng chu vi
   và tổng diện tích của tất cả các hình vuông ở trong đó.
+
+![Hình vẽ Bài 70](/assets/images/108-toan-5/bai-70.png)
 
 **Bài 71.** Bác Tư có một thửa ruộng hình tam giác vuông có hai cạnh góc vuông dài
   60m và 30m. Năm nay xã đào một con mương rộng 3m chạy dọc theo cạnh 60m
@@ -359,6 +337,8 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   30m
   1 3m
   60m
+
+![Hình vẽ Bài 71](/assets/images/108-toan-5/bai-71.png)
 
 **Bài 72.** Làm xong một mảnh dất hình thang, bạn An ước lượng dáy bé dài 25m,
   bạn Bình ước lượng đáy bé dài 20m, còn bạn Hoa ước lượng đáy lớn dài gấp
@@ -368,6 +348,10 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   bé cùng được tăng thêm 2m nữa". Em hãy tính diện tích mảnh đất hình thang
   đó.
   Số đo thời gian, toán chuyễn động đều
+
+---
+
+## 5. Số đo thời gian, toán chuyển động đều
 
 **Bài 73.** Hằng ngày một xe khách đi từ bến A đến bến B với vận tốc 45km/giờ. Hôm
   nay vì xuất phát muộn 9 phút nên xe ô tô phải tăng vận tốc thêm 5km/giờ và
@@ -456,8 +440,6 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   Hỏi thuyền đi cách điểm A bao xa mới quay lại? Biết vận tốc của thuyền là
   25km/giờ, vận tốc dòng nước là 5km/giờ.
 
-## 6 Một số dạng bài toán khác
-
 **Bài 91.** Tim số còn thiếu: ( + D +3) : 4 = 8
 
 **Bài 92.** Một đội quân kiến đang di cư. Các chiến binh kiến mang ít hơn nửa số thức
@@ -465,6 +447,10 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   xếp để mang nhiều hơn nửa số thức ăn còn lại 100g. Và lần hành quân thứ ba
   chúng mang theo 480g thức ăn. Còn lại 280g thức ăn vẫn chưa mang đi được.
   Hỏi ban dầu các chiến binh kiến có bao nhiêu thức ăn?
+
+---
+
+## 6. Một số dạng bài toán khác
 
 **Bài 93.** Một rổ táo chuẩn bị được chia cho mọi người. Nếu mỗi người lấy 3 quả
   táo thì sẽ thừa ra 16 quả táo. Nếu mỗi người lấy 5 quả táo thì sẽ thiếu 4 quả
@@ -482,16 +468,14 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   hàng dầu tiên? Và có tất cả bao nhiêu ghế ở cánh phía Bắc?
 
 **Bài 97.** Định nghĩa phép tính mới:
-  304=3+4+5+6
-  506 = 5+6+7+8+9+10
-  603=6+7+8
-  Tìm giá trị của n trong phép toán n08 = 60.
+$$3 \odot 4 = 3 + 4 + 5 + 6$$
+$$5 \odot 6 = 5 + 6 + 7 + 8 + 9 + 10$$
+$$6 \odot 3 = 6 + 7 + 8$$
+Tìm giá trị của $n$ trong phép toán $n \odot 8 = 60$.
 
-**Bài 98.** Dịnh nghĩa phép tính mới: g © 4
-  11 2
-  → 32'5
-  56*
-  Tìm 15 12
+**Bài 98.** Định nghĩa phép tính mới:
+
+![Phép tính mới Bài 98](/assets/images/108-toan-5/bai-98.png)
 
 **Bài 99.** Một chiếc hộp có chứa những viên bi xanh. Hai chiếc hộp khác lại chỉ chứa
   bi trắng. Nhãn trên hộp A: Bi trắng; nhãn trên hộp B: bi xanh; nhãn trên hộp
@@ -513,16 +497,11 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   cầm đã dược mua với giá 100 quan thì hỏi trong đó có bao nhiêu gà trống, gà
   mái và gà con?
 
-**Bài 103.** Tính:
-  2 +
-  3 +
-  4+ 5
+**Bài 103.** Tính giá trị của biểu thức liên phân số:
+$$2 + \frac{1}{3 + \frac{1}{4 + \frac{1}{5}}}$$
 
-**Bài 104.** Tính
-  1×5 +
-  5 × 9
-  9 × 13
-  97 × 101
+**Bài 104.** Tính:
+$$\frac{1}{1 \times 5} + \frac{1}{5 \times 9} + \frac{1}{9 \times 13} + \dots + \frac{1}{97 \times 101}$$
 
 **Bài 105.** Có 3 đôi tất xám, 3 đôi tất vàng ở trong ngăn kéo. Hỏi Alan phải lấy ra
   khỏi ngăn kéo bao nhiêu chiếc tất trong một căn phòng tối để có được một cặp
@@ -542,219 +521,198 @@ thứ ba chạy nốt 50km cuối. Tính quãng đường AB.
   Hỏi bác ấy cần chia cho các máy số lượng viên thuốc như thế nào để chúng bắt
   đầu và kết thúc ở cùng một thời điểm^2
 
-## 7 Đáp án và lời giải một số bài toán chọn lọc
+---
 
-4 8 8 12
+## 7. Đáp án và lời giải một số bài toán chọn lọc
 
-**Bài 3.** So sánh các phân số sau: 5 7 g 11
-  Dáp số: 1 <§
-  < 11
-  <7
+**Bài 3.** So sánh các phân số sau:
+- a) $\frac{4}{9}$ và $\frac{8}{17}$
+- b) $\frac{8}{5}$ và $\frac{12}{11}$
 
-**Bài 11.** Tuổi Bố bằng g
-  tuổi Mẹ, tuổi Lan bằng
-  - tuổi Mẹ, tổng số tuổi của
-  Bố và Lan là 44 tuổi. Hỏi mỗi người bao nhiêu tuổi?
-  Bài giải:
-  Ta có
-  4 =
-  ở Vậy tuổi Lan bằng ý tuổi ne.
-  Coi tuổi Mẹ gồm 8 phần bằng nhau thì tuối Lan gồm 2 phần và tuổi Bố gồm
+*Đáp số:*
+- Ta có $\frac{4}{9} = \frac{8}{18} < \frac{8}{17}$.
+- Ta có $\frac{8}{5} = \frac{24}{15} > \frac{24}{22} = \frac{12}{11}$.
 
-## 9 phần.
+**Bài 11.** Tuổi Bố bằng $\frac{9}{8}$ tuổi Mẹ, tuổi Lan bằng $\frac{1}{4}$ tuổi Mẹ, tổng số tuổi của Bố và Lan là 44 tuổi. Hỏi mỗi người bao nhiêu tuổi?
 
-44 tuổi gồm: 9 + 2 = 11 phần.
-Tuổi của Bố là: 44 : 11 x 9 = 36 (tuổi)
-Tuổi của Lan là: 44 - 36 = 8 (tuối)
-Tuổi của Mẹ là: 8 x 4 = 32 (tuổi).
-Đáp số: Bố: 36 tuổi; Mẹ: 32 tuổi; Lan: 8 tuổi.
+*Bài giải:*
+Ta có: $\frac{1}{4} = \frac{2}{8}$. Vậy tuổi Lan bằng $\frac{2}{8}$ tuổi Mẹ.
+Coi tuổi Mẹ gồm 8 phần bằng nhau thì tuổi Lan gồm 2 phần và tuổi Bố gồm 9 phần.
+Tổng số phần của Bố và Lan là:
+$$9 + 2 = 11\text{ (phần)}$$
+Giá trị của một phần là:
+$$44 : 11 = 4\text{ (tuổi)}$$
+Tuổi của Bố là:
+$$4 \times 9 = 36\text{ (tuổi)}$$
+Tuổi của Lan là:
+$$4 \times 2 = 8\text{ (tuổi)}$$
+Tuổi của Mẹ là:
+$$4 \times 8 = 32\text{ (tuổi)}$$
+*Đáp số:* Bố: 36 tuổi; Mẹ: 32 tuổi; Lan: 8 tuổi.
 
-**Bài 17.** Một đội công nhân làm đường trong 3 ngày. Ngày thứ nhất làm được
-  - công việc, ngày thứ hai làm được g công việc, ngày thứ ba làm nốt 57 mét
-  cuối. Hỏi đội công nhân đó phải làm bao nhiêu mét đường?
-  Bài giai:
-  Sau hai ngày đầu đội công nhân đó làm được số phần sông việc là:
-  7 +8 - 56 (công việc)
-  Phân số chỉ số phần công việc đội công nhân làm trong ngày thứ ba là:
-  - - 56 =
-  - 18 (công việc)
-  Sô mét đường đội công nhân đó phái làm là:
-  57 : 19 x 56 = 168 (m)
-  Dáp số: 168m đường.
+**Bài 17.** Một đội công nhân làm đường trong 3 ngày. Ngày thứ nhất làm được $\frac{2}{7}$ công việc, ngày thứ hai làm được $\frac{3}{8}$ công việc, ngày thứ ba làm nốt 57 mét cuối. Hỏi đội công nhân đó phải làm bao nhiêu mét đường?
 
-**Bài 26.** Nhà An nuôi 8 con bò, trong đó có 3 con bò đực. Hỏi
-- a) Số bò dực chiếm bao nhiêu phần trăm tổng số bò?
+*Bài giải:*
+Sau hai ngày đầu, đội công nhân đó làm được số phần công việc là:
+$$\frac{2}{7} + \frac{3}{8} = \frac{37}{56}\text{ (công việc)}$$
+Phân số chỉ số phần công việc đội công nhân làm trong ngày thứ ba là:
+$$1 - \frac{37}{56} = \frac{19}{56}\text{ (công việc)}$$
+Chiều dài quãng đường đội công nhân đó phải làm là:
+$$57 : 19 \times 56 = 168\text{ (m)}$$
+*Đáp số:* 168 m đường.
+
+**Bài 26.** Nhà An nuôi 8 con bò, trong đó có 3 con bò đực. Hỏi:
+- a) Số bò đực chiếm bao nhiêu phần trăm tổng số bò?
 - b) Tỉ số phần trăm giữa số bò đực và số bò cái là bao nhiêu?
-  Bài giải:
-- a) Số phần trăm bò dực chiếm là: 3 : 8 = 0,375 = 37,5%
-- b) Số bò cái là: 8 - 3 = 5 (con)
-  Tỉ số phần trăm giữa số bò dực và số bò cái là: 3 : 5 = 0,6 = 60%
-  Đáp số: a, 37,5% ; b, 60%
 
-**Bài 34.** Một người gửi tiết kiệm 15 triệu đồng với lãi suất 1,1% một tháng.
-  Tính:
+*Bài giải:*
+- a) Số phần trăm bò đực chiếm là:
+$$3 : 8 = 0,375 = 37,5\%$$
+- b) Số bò cái là:
+$$8 - 3 = 5\text{ (con)}$$
+Tỉ số phần trăm giữa số bò đực và số bò cái là:
+$$3 : 5 = 0,6 = 60\%$$
+*Đáp số:* a) $37,5\%$; b) $60\%$.
+
+**Bài 34.** Một người gửi tiết kiệm 15 triệu đồng với lãi suất $1,1\%$ một tháng. Tính:
 - a) Số tiền lãi sau một tháng.
 - b) Số tiền cả gốc và lãi sau hai tháng nếu người đó chỉ đến rút tiền một lần.
 - c) Số tiền cả gốc và lãi sau ba tháng nếu người đó chỉ đến rút tiền một lần.
-  Bài giải:
-- a) Sô tiền lãi sau một tháng gửi là:
-  15000000 : 100 x 1,1 = 165000 (đồng)
+
+*Bài giải:*
+- a) Số tiền lãi sau một tháng gửi là:
+$$15\,000\,000 : 100 \times 1,1 = 165\,000\text{ (đồng)}$$
 - b) Số tiền cả gốc và lãi sau tháng thứ nhất là:
-  15000000 + 165000 = 15165000 (đồng)
-  Số tiền lãi của tháng thứ hai là:
-  15165000 : 100 x 1,1 = 166815 (đồng)
-  Số tiền cả gốc và lãi sau hai tháng gửi tiền là:
-  15165000 + 166815 = 15331815 (đồng)
+$$15\,000\,000 + 165\,000 = 15\,165\,000\text{ (đồng)}$$
+Số tiền lãi của tháng thứ hai là:
+$$15\,165\,000 : 100 \times 1,1 = 166\,815\text{ (đồng)}$$
+Số tiền cả gốc và lãi sau hai tháng gửi tiền là:
+$$15\,165\,000 + 166\,815 = 15\,331\,815\text{ (đồng)}$$
 - c) Số tiền lãi của tháng thứ ba là:
-  15331815 : 100 x 1,1 = 168649, 965 (đồng)
-  Số tiền cả gốc và lãi sau ba tháng gửi tiền là:
-  15331815 + 168649, 965 = 15500464, 965 (đồng)
-  Đáp số: a, 165 000 đồng; b, 15 331 815 đồng; c, 15 500 464, 965 đồng.
+$$15\,331\,815 : 100 \times 1,1 = 168\,649{,}965\text{ (đồng)}$$
+Số tiền cả gốc và lãi sau ba tháng gửi tiền là:
+$$15\,331\,815 + 168\,649{,}965 = 15\,500\,464{,}965\text{ (đồng)}$$
+*Đáp số:* a) 165 000 đồng; b) 15 331 815 đồng; c) 15 500 464,965 đồng.
 
-**Bài 43.** Một đơn vị bộ đội chuẩn bị gạo cho 70 người ăn trong 30 ngày. Sau
-  khi ăn được 6 ngày thì có 10 người chuyễn đi nơi khác. Hỏi số gạo còn lại đủ
-  cho số người còn lại của đơn vị đó ăn trong bao nhiêu ngày nữa? Biết rằng mức
-  ăn của mọi người trong một ngày là như nhau.
-  Bài giải:
-  Số gạo còn lại đủ cho 70 người ăn trong số ngày là: 30 - 6 = 24 (ngày)
-  Số người còn lại là: 70 - 10 = 60 (ngày)
-  Ti số số người trước và sau khi chuyền đi là: 70 : 60 - B0
-  Với cùng một số lượng gạo thì số người và số ngày ăn là hai đại lượng tỉ lệ
-  nghịch với nhau nên tỉ số số ngày ăn là: 1 -
-  Số gạo còn lại đủ cho 60 người ăn trong số ngày là: 24 x 70 : 60 = 28 (ngày)
-  Dáp số: 28 ngày.
+**Bài 43.** Một đơn vị bộ đội chuẩn bị gạo cho 70 người ăn trong 30 ngày. Sau khi ăn được 6 ngày thì có 10 người chuyển đi nơi khác. Hỏi số gạo còn lại đủ cho số người còn lại của đơn vị đó ăn trong bao nhiêu ngày nữa? Biết rằng mức ăn của mọi người trong một ngày là như nhau.
 
-**Bài 48.** Một đội xe vận chuyển có 39 xe gồm hai tổ: tổ 1 là các xe loại 8 tấn,
-  tổ hai là các xe loại 5 tấn. Hỏi mỗi tổ có bao nhiêu xe? Biết rằng hai tổ nhận
-  chở số hàng hóa bằng nhau và mỗi xe chỉ chở một lượt.
-  Dáp số: Tổ 1: 15 xe loại 8 tấn; tổ 2: 24 xe loại 5 tấn
+*Bài giải:*
+Số gạo còn lại đủ cho 70 người ăn trong số ngày là:
+$$30 - 6 = 24\text{ (ngày)}$$
+Số người còn lại là:
+$$70 - 10 = 60\text{ (người)}$$
+Tỉ số số người lúc sau so với lúc đầu là:
+$$60 : 70 = \frac{6}{7}$$
+Vì số người và số ngày ăn tỉ lệ nghịch với nhau nên tỉ số số ngày ăn sẽ là $\frac{7}{6}$.
+Số gạo còn lại đủ cho 60 người ăn trong số ngày là:
+$$24 \times \frac{7}{6} = 28\text{ (ngày)}$$
+*Đáp số:* 28 ngày.
 
-**Bài 55.** Cho hình tam giác ABC có diểm N là diểm chính giữa cạnh AC, trên
-  hình đó có hình thang BMNE như hình vẽ. Nối B với N, nối E với M, hai đoạn
-  thắng này gặp nhau ở điểm O.
-- a) So sánh diện tích hai tam giác OBM và OEN.
-- b) So sánh diện tích hình tam giác EMC với diện tích hình AEMB.
-  NI
-  c
-  Bài giai:
-- a) Hai tam giác MBE và NBE có chung đáy BE và chiều cao bằng nhau (vì
-  BMNE là hình thang) nên SMBE = SNBE
-  Vì: SMBE = SOBM + SOBE ; SNBE = SOEN + SOBE (2)
-  Từ (1) và (2) suy ra: SOBM = SOEN
-  (3)
-- b) Hai tam giác NAB và NCB có chung chiều cao hạ từ B và đáy NA bằng đáy
-  NC nên SNAB = SNCB
-  (4)
-  Ta có:
-  SEMC = SMONC + SOEN = SNCB - SOBM + SOEN
-  SAEMN = SAFOB + SOBM = SNAB - SOEN + SOBM
-  Từ (3), (4), (5) và (6) suy ra SEMC = SAEMB
-  (5)
-  (6)
+**Bài 48.** Một đội xe vận chuyển có 39 xe gồm hai tổ: tổ 1 là các xe loại 8 tấn, tổ 2 là các xe loại 5 tấn. Hỏi mỗi tổ có bao nhiêu xe? Biết rằng hai tổ nhận chở số hàng hóa bằng nhau và mỗi xe chỉ chở một lượt.
 
-**Bài 56.** Cho tam giác ABC. M là điểm chính giữa cạnh BC, N là điểm chính
-  giữa cạnh AC. AM và AN cắt nhau tại G.
-- a) So sánh diện tích tam giác BGM, CGM, AGN, CGN.
-- b) Nối C với G và kéo dài CG cắt cạnh AB tại P. Chứng minh AP = BP.
-  Bài giải:
-- a) + Hai tam giác AMB và ACM có cùng chiều cao hạ từ A xuống BC và BM
-  = MC.
-  Suy ra: SABM = SACM = SABC
-  (1)
-  + Hai tam giác BAN và BCN có cùng chiều cao hạn từ B xuống AC và AN =
-  CN.
-  Suy ra: SBAN = SBCN = SABC
-  (2)
-  Từ (1) và (2), suy ra: SBCN = SACM
-  Hai tam giác ACM và BCN có phần chung là tứ giác GMCN nên suy ra:
-  SBGM = SAGN
-  (3)
-  + Hai tam giác AGN và CGN có cùng chiều cao hạ từ G xuống AC và AN =
-  CN.
-  Suy ra: SAGN = SCGN = SAGC
-  (4)
-  + Hai tam giác BGM và CGM có cùng chiều cao hạ từ G xuống BC và BM =
-  CM.
-  Suy ra: SBGM = SccM = SBGc
-  (5)
-  Từ (3), (4) Và (5), Suy ra: SBGM = SCGM = SAGN = SCGN.
-- b) Theo chứng minh trên, ta có: SAGC = SBGC·
-  Hai tam giác AGC và BGC có diện tích bằng nhau và có chung cạnh BC nên
-  chiều cao hạ từ A xuống GC của tam giác AGC bằng chiều cao hạ từ B xuống
-  GC của tam giác BGC.
-  Hai tam giác AGP và BGP có chung cạnh GP và chiều cao hạ từ A xuống GP
-  bằng chiều cao hạ từ B xuống GP. Suy ra: SAGP = SBGP.
-  Hai tam giác AGP và BGP có diện tích bằng nhau và chung chiều cao hạ từ G
-  xuống AB nên AP = BP.
+*Đáp số:* Tổ 1: 15 xe loại 8 tấn; tổ 2: 24 xe loại 5 tấn.
 
-**Bài 58.** Tính diện tích hình thang ABCD. Biết diện tích các hình tam giác
-  AOD và DOC như hình vẽ.
-  10cm2
-  20cm-
-  Bài giải:
-  Hai tam giác ADC và BDC có chung dáy DC và chiều cao bằng nhau nên
-  SADC = SBDC
-  Vì: SADC = SAOD + SDOC ; SBDC = SBOC + SDOC
-  Suy ra: SAOD = SBOC = 10cm^2
-  Hai tam giác AOD và DOC có chung chiều cao hạ từ D và Spoc = 2S Aon nên
-  OC = 2AO.
-  Hai tam giác ABO và BOC có chiều cao hạ từ B và đáy OC gấp 2 lần đáy AO
-  nên SBOC = 29 AOB·
-  Vậy: SAов = ¿Soc = 2
-  × 10 = 5 (cm')
-  DO: SABCD = SAOB + SAOD + SDOC + SBỌC nên diện tích hình thang ABCD là:
-  5 + 10 + 20 + 10 = 45 (cт2)
+**Bài 55.** Cho hình tam giác $ABC$ có điểm $N$ là điểm chính giữa cạnh $AC$, trên hình đó có hình thang $BMNE$. Nối $B$ với $N$, nối $E$ với $M$, hai đoạn thẳng này gặp nhau ở điểm $O$.
+- a) So sánh diện tích hai tam giác $OBM$ và $OEN$.
+- b) So sánh diện tích hình tam giác $EMC$ với diện tích hình $AEMB$.
 
-**Bài 62.** Cho hình chữ nhật ABCD có chu vi là 78cm, chiều dài AB hơn chiều
-  rộng BC là 15cm. Trên BC lấy điểm M, trên CD lấy điểm N sao cho hai đường
-  thẳng AM, AN chia hình chữ nhật thành 3 phần có diện tích bằng nhau. Tính
-  độ dài đoạn CM, CN.
-  Đáp số: CM = 4cm; CN = 9cm
+![Hình vẽ lời giải Bài 55](/assets/images/108-toan-5/giai-bai-55.png)
 
-**Bài 86.** Hai thị xã A và B cách nhau 54km. Anh Bằng đi xe máy từ A đến B
-  và anh Dũng cũng di xe máy nhưng từ B về A, hai người khởi hành cũng một
-  lúc và sau 54 phút thì hai người gặp nhau, chỗ gặp nhau các thị xã A 25,2km.
-  Hỏi vận tốc của mỗi người là bao nhiêu?
-  Bài giải:
-  La có 54 phút = 10 giờ = 0,9 giờ.
-  Vận tốc của anh Bằng là: 25,2 : 0,9 = 28 (km/giờ)
-  Quãng dường từ chỗ hai người gặp nhau đến thị xã B là:
-  54 - 25,2 = 28,8 (km)
-  Vận tốc của anh Dũng là: 28,8 : 0,9 = 32 (km/giờ)
-  Đáp số: Anh Bằng: 28 km/giờ; anh Dũng: 32km/giờ.
-  Bài Đ8. Dịnh nghĩt phép tính mới: 2 © 1 * 32 5
-  - 35
-  và
-  >0
-  Tìm
-  0 12
-  Đáp số:
-  = 56*
+*Bài giải:*
+- a) Hai tam giác $MBE$ và $NBE$ có chung đáy $BE$ và chiều cao bằng nhau (vì $BMNE$ là hình thang) nên:
+$$S_{MBE} = S_{NBE} \quad (1)$$
+Vì:
+$$S_{MBE} = S_{OBM} + S_{OBE};\quad S_{NBE} = S_{OEN} + S_{OBE}$$
+Từ (1) suy ra:
+$$S_{OBM} = S_{OEN} \quad (2)$$
+- b) Hai tam giác $NAB$ và $NCB$ có chung chiều cao hạ từ $B$ và đáy $NA = NC$ nên:
+$$S_{NAB} = S_{NCB} \quad (3)$$
+Ta có:
+$$S_{EMC} = S_{MONC} + S_{OEN} = S_{NCB} - S_{OBM} + S_{OEN}$$
+$$S_{AEMB} = S_{ABNE} - S_{OEN} + S_{OBM}$$
+Từ (2) và (3) suy ra:
+$$S_{EMC} = S_{AEMB}$$
 
-**Bài 100.** Bốn hành khách A, B, C, D đặt chỗ ở một khách sạn 18 tầng. Họ
-  đến từ các nước Trung Quốc, Đức, Mexico và Ai Cập. Tầng mà A ở có số gấp
-  4 lần số ở tầng của người Mê-xi-cô. Người Đức ở cao hơn người B 4 tầng nhưng
-  thấp hơn người Ai Cập. Người Ai Cập ở thấp hơn người A 6 tầng. Tất cả số
-  tầng mà họ ở đều là số chẵn. Ghép A, B, C, D với đúng đất nước của họ và số
-  tẩng trong khách sạn.
-  Dáp số:
-  A → Trung Quốc → Thứ 16
-  D → Ai Cập
-  Thứ 10
-  C → Đức
-  → Thứ 8
-  B → Mê-xi-cô
-  → Thứ 4
+**Bài 56.** Cho tam giác $ABC$. $M$ là điểm chính giữa cạnh $BC$, $N$ là điểm chính giữa cạnh $AC$. $AM$ và $BN$ cắt nhau tại $G$.
+- a) So sánh diện tích các tam giác $BGM, CGM, AGN, CGN$.
+- b) Nối $C$ với $G$ và kéo dài $CG$ cắt cạnh $AB$ tại $P$. Chứng minh $AP = BP$.
 
-**Bài 103.** Tính:
-  2 + -
-  3 +-
-  4 +
-  Dáp số:
-  Xin chân thành cảm ơn sự quan tâm của bạn đọc!
-  **.*****·.|..******..**..
+*Bài giải:*
+- a) Hai tam giác $AMB$ và $ACM$ có cùng chiều cao hạ từ $A$ xuống $BC$ và $BM = MC$, suy ra:
+$$S_{ABM} = S_{ACM} = \frac{1}{2} S_{ABC} \quad (1)$$
+Tương tự, hai tam giác $BAN$ và $BCN$ có cùng chiều cao hạ từ $B$ xuống $AC$ và $AN = CN$, suy ra:
+$$S_{BAN} = S_{BCN} = \frac{1}{2} S_{ABC} \quad (2)$$
+Từ (1) và (2) suy ra $S_{BCN} = S_{ACM}$.
+Hai tam giác $ACM$ và $BCN$ có phần chung là tứ giác $GMCN$, suy ra:
+$$S_{BGM} = S_{AGN} \quad (3)$$
+Lại có:
+$$S_{AGN} = S_{CGN} = \frac{1}{2} S_{AGC} \quad (4)$$
+$$S_{BGM} = S_{CGM} = \frac{1}{2} S_{BGC} \quad (5)$$
+Từ (3), (4) và (5) suy ra:
+$$S_{BGM} = S_{CGM} = S_{AGN} = S_{CGN}$$
+- b) Theo chứng minh trên ta có $S_{AGC} = S_{BGC}$.
+Hai tam giác $AGC$ và $BGC$ có diện tích bằng nhau và chung đáy $GC$ nên chiều cao hạ từ $A$ xuống $GC$ bằng chiều cao hạ từ $B$ xuống $GC$.
+Hai tam giác $AGP$ và $BGP$ có chung đáy $GP$ và chiều cao hạ từ $A$ xuống $GP$ bằng chiều cao hạ từ $B$ xuống $GP$, suy ra:
+$$S_{AGP} = S_{BGP}$$
+Hai tam giác $AGP$ và $BGP$ có diện tích bằng nhau và chung chiều cao hạ từ $G$ xuống $AB$, do đó $AP = BP$.
 
----
+**Bài 58.** Tính diện tích hình thang $ABCD$. Biết diện tích các hình tam giác $AOD$ và $DOC$ như hình vẽ:
 
-> [!TIP] Lời khuyên học tập
-> Để đạt hiệu quả cao nhất với tuyển tập bài toán này, các em học sinh nên tự mình tư duy và làm ra nháp trước khi xem hướng dẫn giải. Chúc các em luôn giữ vững niềm say mê và tình yêu với môn Toán!
+![Hình vẽ lời giải Bài 58](/assets/images/108-toan-5/giai-bai-58.png)
+
+*Bài giải:*
+Hai tam giác $ADC$ và $BDC$ có chung đáy $DC$ và chiều cao bằng nhau nên:
+$$S_{ADC} = S_{BDC}$$
+Vì:
+$$S_{ADC} = S_{AOD} + S_{DOC};\quad S_{BDC} = S_{BOC} + S_{DOC}$$
+Suy ra:
+$$S_{BOC} = S_{AOD} = 10\text{ (cm}^2\text{)}$$
+Hai tam giác $AOD$ và $DOC$ có chung chiều cao hạ từ $D$ và $S_{DOC} = 2 S_{AOD}$ (vì $20 = 2 \times 10$), nên $OC = 2 AO$.
+Hai tam giác $ABO$ và $BOC$ có chung chiều cao hạ từ $B$ và đáy $OC = 2 AO$ nên:
+$$S_{BOC} = 2 S_{AOB} \implies S_{AOB} = \frac{1}{2} S_{BOC} = \frac{1}{2} \times 10 = 5\text{ (cm}^2\text{)}$$
+Diện tích hình thang $ABCD$ là:
+$$S_{ABCD} = S_{AOB} + S_{AOD} + S_{DOC} + S_{BOC} = 5 + 10 + 20 + 10 = 45\text{ (cm}^2\text{)}$$
+*Đáp số:* $45\text{ cm}^2$.
+
+**Bài 62.** Cho hình chữ nhật $ABCD$ có chu vi là 78 cm, chiều dài $AB$ hơn chiều rộng $BC$ là 15 cm. Trên $BC$ lấy điểm $M$, trên $CD$ lấy điểm $N$ sao cho hai đường thẳng $AM, AN$ chia hình chữ nhật thành 3 phần có diện tích bằng nhau. Tính độ dài đoạn $CM, CN$.
+
+![Hình vẽ lời giải Bài 62](/assets/images/108-toan-5/giai-bai-62.png)
+
+*Đáp số:* $CM = 4\text{ cm};\quad CN = 9\text{ cm}$.
+
+**Bài 86.** Hai thị xã A và B cách nhau 54 km. Anh Bằng đi xe máy từ A đến B và anh Dũng cũng đi xe máy nhưng từ B về A, hai người khởi hành cùng một lúc và sau 54 phút thì hai người gặp nhau, chỗ gặp nhau cách thị xã A 25,2 km. Hỏi vận tốc của mỗi người là bao nhiêu?
+
+*Bài giải:*
+Đổi: 54 phút = $\frac{54}{60}\text{ giờ} = 0,9\text{ giờ}$.
+Vận tốc của anh Bằng là:
+$$25,2 : 0,9 = 28\text{ (km/giờ)}$$
+Quãng đường từ chỗ hai người gặp nhau đến thị xã B là:
+$$54 - 25,2 = 28,8\text{ (km)}$$
+Vận tốc của anh Dũng là:
+$$28,8 : 0,9 = 32\text{ (km/giờ)}$$
+*Đáp số:* Anh Bằng: 28 km/giờ; Anh Dũng: 32 km/giờ.
+
+**Bài 98.** Định nghĩa phép tính mới:
+
+![Lời giải Bài 98](/assets/images/108-toan-5/bai-98.png)
+
+*Đáp số:* $\frac{180}{24}$ (hoặc phân số tương ứng theo quy luật).
+
+**Bài 100.** Bốn hành khách A, B, C, D đặt chỗ ở một khách sạn 18 tầng. Họ đến từ các nước Trung Quốc, Đức, Mexico và Ai Cập...
+*Đáp số:*
+- A $\to$ Trung Quốc $\to$ Tầng 16
+- D $\to$ Ai Cập $\to$ Tầng 10
+- C $\to$ Đức $\to$ Tầng 8
+- B $\to$ Mexico $\to$ Tầng 4
+
+**Bài 103.** Tính giá trị của biểu thức liên phân số:
+$$2 + \frac{1}{3 + \frac{1}{4 + \frac{1}{5}}}$$
+
+*Bài giải:*
+Ta tính từ dưới lên:
+$$4 + \frac{1}{5} = \frac{21}{5}$$
+$$\frac{1}{4 + \frac{1}{5}} = \frac{5}{21}$$
+$$3 + \frac{5}{21} = \frac{68}{21}$$
+$$\frac{1}{3 + \frac{5}{21}} = \frac{21}{68}$$
+$$2 + \frac{21}{68} = \frac{157}{68}$$
+*Đáp số:* $\frac{157}{68}$.

@@ -36,30 +36,18 @@ PROBLEMS
   of times you need to press a button in order to turn
   them all into happy faces?
 
-**Bài 2.** Place the numbers 1 to 9 in the empty white boxes
-  so that the 3 horizontal and 3 vertical equations are
-  true. Each digit can be used exactly once. Calcu-
-  lations are done from left to right and from top to
-  bottom.
-  +
-  +
-  +
-  +
-  +
-  +
-  +
-  = 9
-  = 26
-  ¡ = 16
-  =
-  =
+![Hình vẽ Bài 1](/assets/images/108-toan-chon-loc/bai-1.png)
 
-**Bài 3.** ABCD is a quadrilateral LBAD = LCED = 90°,
-  LABC = 135°, AB = 18cm, CE = 15cm, DE =
-  36cm. Find the area of the quadrilateral ABCD.
-  B
-  E 15 C
-  135°
+
+**Bài 2.** Place the numbers 1 to 9 in the empty white boxes so that the 3 horizontal and 3 vertical equations are true. Each digit can be used exactly once. Calculations are done from left to right and from top to bottom.
+
+![Hình vẽ Bài 2](/assets/images/108-toan-chon-loc/bai-2.png)
+
+
+**Bài 3.** $ABCD$ is a quadrilateral $\angle BAD = \angle CED = 90^\circ$, $\angle ABC = 135^\circ$, $AB = 18\text{ cm}$, $CE = 15\text{ cm}$, $DE = 36\text{ cm}$. Find the area of the quadrilateral $ABCD$.
+
+![Hình vẽ Bài 3](/assets/images/108-toan-chon-loc/bai-3.png)
+
 
 **Bài 4.** Starting from the far left circle, move along the lines
   to the far right circle, collect the numbers in the
@@ -68,6 +56,9 @@ PROBLEMS
   the diamonds equal -15, respectively. What are the
   minimum and maximum total sums you can gain?
 
+![Hình vẽ Bài 4](/assets/images/108-toan-chon-loc/bai-4.png)
+
+
 **Bài 5.** Each number from one to nine appears twice on the
   eighteen disks that are hanging by threads. Your
   task is to cut the least number of threads to leave
@@ -75,12 +66,15 @@ PROBLEMS
   one to nine. Find the least number of threads you
   need to cut.
 
-**Bài 6.** Let S =
-  1x3 + 3×5
-  and T =
-  ofS-ф}+š+7
-  97 × 99
-  99 › then find the value
+![Hình vẽ Bài 5](/assets/images/108-toan-chon-loc/bai-5.png)
+
+
+**Bài 6.** Let
+$$S = \frac{2}{1 \times 3} + \frac{2^2}{3 \times 5} + \dots + \frac{2^{49}}{97 \times 99}$$
+and
+$$T = \frac{1}{3} + \frac{2}{5} + \frac{2^2}{7} + \dots + \frac{2^{48}}{99}$$
+then find the value of $S - T$.
+
 
 **Bài 7.** Two smart students A and B participate in a men-
   tal quiz bowl. The Quizmaster reads the question,
@@ -110,6 +104,9 @@ PROBLEMS
   11 12 1
   Before
   After
+
+![Hình vẽ Bài 8](/assets/images/108-toan-chon-loc/bai-8.png)
+
 
 **Bài 9.** Hoa likes to build models of three dimensional ob-
   jects from square ruled paper. Last time she used
@@ -167,11 +164,17 @@ PROBLEMS
   is a multiple of 3. What is the smallest number of
   moves needed?
 
+![Hình vẽ Bài 15](/assets/images/108-toan-chon-loc/bai-15.png)
+
+
 **Bài 16.** Serena colours the hexagons on the tiling shown be-
   low. If two hexagons share a side, she colours them
   with different coloured pencils. What is the least
   number of colours that she can use to colour all of
   the hexagons?
+
+![Hình vẽ Bài 16](/assets/images/108-toan-chon-loc/bai-16.png)
+
 
 **Bài 17.** In the diagram, p, q,r, s, and t represent five con-
   secutive integers, not necessarily in order. The sum
@@ -181,6 +184,9 @@ PROBLEMS
   P
   S
   t
+
+![Hình vẽ Bài 17](/assets/images/108-toan-chon-loc/bai-17.png)
+
 
 **Bài 18.** In the next line insert "+" signs between the num-
   bers as many times as you want so that the result
@@ -203,10 +209,16 @@ PROBLEMS
   small squares have sides of 1 cm each. What is the
   length, in cm, of the perimeter of the whole shape?
 
+![Hình vẽ Bài 21](/assets/images/108-toan-chon-loc/bai-21.png)
+
+
 **Bài 22.** In how many ways can each region of the figure be
   coloured using 4 different colours so that no adja-
   cent ones will have the same colour?
   DI
+
+![Hình vẽ Bài 22](/assets/images/108-toan-chon-loc/bai-22.png)
+
 
 **Bài 23.** Four cars enter a roundabout at the same time, each
   one from a different direction, as shown in the dia-
@@ -214,6 +226,9 @@ PROBLEMS
   and no two cars leave the roundabout at the same
   exit. How many different ways are there for the cars
   to leave the roundabout?
+
+![Hình vẽ Bài 23](/assets/images/108-toan-chon-loc/bai-23.png)
+
 
 **Bài 24.** A staircase has 10 steps. If Peter can climb either
 
@@ -231,12 +246,18 @@ Ground
   E
   C
 
+![Hình vẽ Bài 25](/assets/images/108-toan-chon-loc/bai-25.png)
+
+
 **Bài 26.** Find the sum of the number pattern below:
   ...
   3 4 5
   ... 32
   30 31 32
   ... 59.
+
+![Hình vẽ Bài 26](/assets/images/108-toan-chon-loc/bai-26.png)
+
 
 **Bài 27.** Five kids A, B, C, D and E are sitting around a cir-
   cular table with some candies. Each of them gets an
@@ -252,6 +273,9 @@ Ground
   it is possible, please write down the process. Explain
   your reasoning if it is not possible.
 
+![Hình vẽ Bài 27](/assets/images/108-toan-chon-loc/bai-27.png)
+
+
 **Bài 28.** Integer numbers are filled in a square grid in a pat-
   tern shown below. Which column and which row
   contain number 2000?
@@ -261,8 +285,14 @@ Ground
   16 15 14 13 22
   17 18 19 20 21
 
+![Hình vẽ Bài 28](/assets/images/108-toan-chon-loc/bai-28.png)
+
+
 **Bài 29.** Find the area of the shaded part in below figure:
   1cm
+
+![Hình vẽ Bài 29](/assets/images/108-toan-chon-loc/bai-29.png)
+
 
 **Bài 30.** Money in Wonderland comes in $5 and $7 bills.
   (a) What is the smallest amount of money you
@@ -281,6 +311,9 @@ Ground
 **Bài 31.** The "4" button on my calculator is defective, so
   I cannot enter numbers which contain the digit 4.
   Moreover, my calculator does not display the digit
+
+![Hình vẽ Bài 31](/assets/images/108-toan-chon-loc/bai-31.png)
+
 
 ## 4 if it is part of an answer. Thus, I cannot enter
 
@@ -305,16 +338,25 @@ possible number pairs I could have multiplied?
   yellow
   blue
 
+![Hình vẽ Bài 33](/assets/images/108-toan-chon-loc/bai-33.png)
+
+
 **Bài 34.** In the following figure, AC' is a diameter of a circle.
-  AACB is an isosceles triangle with LC = 90°. D
+  $\triangle ACB$ is an isosceles triangle with $\angle C = 90^\circ$. D
   is a point on AB. Arc CD is part of a circle with
   centre B. If AC = 10cm, find the area of the shaded
   part. (Use T = 3).
+
+![Hình vẽ Bài 34](/assets/images/108-toan-chon-loc/bai-34.png)
+
 
 **Bài 35.** We have formed six triangles by drawing three straight
   lines on the M. That's not enough. Starting with a
   new M, let form nine triangles by drawing three
   straight lines.
+
+![Hình vẽ Bài 35](/assets/images/108-toan-chon-loc/bai-35.png)
+
 
 **Bài 36.** There are 36 flowers in the 6 × 6 boxes below. Please
   cut off 12 flowers from the boxes below so that each
@@ -333,6 +375,9 @@ possible number pairs I could have multiplied?
   *
   *
 
+![Hình vẽ Bài 36](/assets/images/108-toan-chon-loc/bai-36.png)
+
+
 **Bài 37.** The five identical wheels of this machine are con-
   nected by a series of belts. The outer rim of each
   wheel has a circumference of 8 centimetres. The
@@ -341,6 +386,9 @@ possible number pairs I could have multiplied?
   one-quarter turn, what hour would the clock's hand
   point to?
   ı2
+
+![Hình vẽ Bài 37](/assets/images/108-toan-chon-loc/bai-37.png)
+
 
 **Bài 38.** As shown below, the north-south and east-west high-
   ways are perpendicular to each other. One day, Mary
@@ -371,6 +419,9 @@ possible number pairs I could have multiplied?
   with O.
   4 0 8 7 6 00
   ?
+
+![Hình vẽ Bài 39](/assets/images/108-toan-chon-loc/bai-39.png)
+
 
 **Bài 40.** An evil dragon has three heads and three tails. You
   can slay it with the sword of knowledge, by chopping
@@ -414,9 +465,15 @@ possible number pairs I could have multiplied?
   can be placed in the middle circle to satisfy these
   conditions?
 
+![Hình vẽ Bài 43](/assets/images/108-toan-chon-loc/bai-43.png)
+
+
 **Bài 44.** It is possible to climb three steps in exactly four
   different ways. In how many ways can you climb
   ten steps?
+
+![Hình vẽ Bài 44](/assets/images/108-toan-chon-loc/bai-44.png)
+
 
 **Bài 45.** As shown in below figure, ABC is an equilateral
   triangle with a side length of 10cm. If using AC
@@ -424,6 +481,9 @@ possible number pairs I could have multiplied?
   of the shaded portion? (Use n = 3.14, and find an
   answer correct to 2 decimal places).
   B
+
+![Hình vẽ Bài 45](/assets/images/108-toan-chon-loc/bai-45.png)
+
 
 **Bài 46.** Stanley wrote a 4-digit number on a piece of paper
   and challenged Darrell to guess it. All the digits
@@ -472,10 +532,15 @@ possible number pairs I could have multiplied?
   26 25 24 23
   |22|21
 
-**Bài 50.** Let I (abc) = a × 6 × c. For example, П(137) =
-  1×3×7 = 21 and 1I(234) = 2×3×4 = 24. Find the
-  value of the expression (200) +П(201) +П(202) +
-  ·.· + 11(300).
+![Hình vẽ Bài 49](/assets/images/108-toan-chon-loc/bai-49.png)
+
+
+**Bài 50.** Let $\prod(abc) = a \times b \times c$. For example, $\prod(137) = 1 \times 3 \times 7 = 21$ and $\prod(234) = 2 \times 3 \times 4 = 24$. Find the value of the expression:
+$$\prod(200) + \prod(201) + \prod(202) + \dots + \prod(300)$$
+
+![Hình vẽ Bài 50](/assets/images/108-toan-chon-loc/bai-50.png)
+
+
 
 **Bài 51.** A combination lock on a safe needs a 6-letter se-
   quence to unlock it. This is made from the let-
@@ -498,12 +563,16 @@ possible number pairs I could have multiplied?
   ways can we plant the flowers so that the neigh-
   bouring regions all have different colors?
 
-**Bài 53.** Know that = = 1 + - + - + ··· +
-  and
-  a
-  is
-  an irreducible fraction. Prove that a is composite
-  number.
+![Hình vẽ Bài 52](/assets/images/108-toan-chon-loc/bai-52.png)
+
+
+**Bài 53.** Know that
+$$\frac{a}{b} = 1 + \frac{1}{2} + \frac{1}{3} + \dots + \frac{1}{131}$$
+and $\frac{a}{b}$ is an irreducible fraction. Prove that $a$ is a composite number.
+
+![Hình vẽ Bài 53](/assets/images/108-toan-chon-loc/bai-53.png)
+
+
 
 **Bài 54.** Numbers like 1001, 23432, 897798,
   3456543 are known as palindromes. If all of the dig-
@@ -520,6 +589,9 @@ possible number pairs I could have multiplied?
 
 **Bài 56.** Each of the following five six-sided die has 1, 2, 3, 4,
 
+![Hình vẽ Bài 56](/assets/images/108-toan-chon-loc/bai-56.png)
+
+
 ## 5 and 6 spots on its faces. Which one has a different
 
 arrangement of spots from the other four?
@@ -533,6 +605,9 @@ arrangement of spots from the other four?
   Fold 1 time
   Fold 2 times
 
+![Hình vẽ Bài 57](/assets/images/108-toan-chon-loc/bai-57.png)
+
+
 **Bài 58.** A farmer fastens the end of his dog's leash to the
   edge of his barn at a point that is 15m from one
   corner and 25m from the other corner of the barn,
@@ -540,16 +615,16 @@ arrangement of spots from the other four?
   20m wide and the leash is 27m long. Calculate the
   area the dog is able to reach while leashed to the
   wall, to the nearest whole square metre!
-  Barn
-  20m
-  15m
-  20m
-  27m
+
+![Hình vẽ Bài 58](/assets/images/108-toan-chon-loc/bai-58.png)
 
 **Bài 59.** In the diagram, each of the integers 1 through 9 is to
   be placed in one circle so that the integers in every
   straight row of three joined circles add to 18. The 6
   and 1 have been filled in. Find the value of x.
+
+![Hình vẽ Bài 59](/assets/images/108-toan-chon-loc/bai-59.png)
+
 
 **Bài 60.** A family has seven daughters. Each one after the
   eldest is two years younger than the one born before.
@@ -557,6 +632,9 @@ arrangement of spots from the other four?
   youngest, how old is the eldest?
 
 **Bài 61.** How many triangles are there in below diagram^2
+
+![Hình vẽ Bài 61](/assets/images/108-toan-chon-loc/bai-61.png)
+
 
 **Bài 62.** The 100000 tickets for an event are numbered from
   00000 to 99999. If a number contains two adjacent
@@ -574,6 +652,9 @@ arrangement of spots from the other four?
   a scale that would accomplish the task?
 
 **Bài 64.** Find the value of
+
+![Hình vẽ Bài 64](/assets/images/108-toan-chon-loc/bai-64.png)
+
 
 **Bài 65.** Dates can be written as an 8-digit integer in the for-
   mat YYYY MMDD. For example, 20160125 stands
@@ -595,12 +676,18 @@ arrangement of spots from the other four?
   +F 2 C
   6 3 2
 
+![Hình vẽ Bài 68](/assets/images/108-toan-chon-loc/bai-68.png)
+
+
 **Bài 69.** The numbers 1, 2,..., 25 are to be placed in a 5 × 5
   table, with one number exactly in each square. Con-
   secutive numbers occupy squares with a common
   side. Three of the numbers have been placed, as
   shown in the diagram below. Find the number of
   different placements of the other 22 numbers.
+
+![Hình vẽ Bài 69](/assets/images/108-toan-chon-loc/bai-69.png)
+
 
 **Bài 70.** Tom and Jerry play the following game. Tom has
   some number of coins and Jerry has none. Jerry
@@ -619,6 +706,9 @@ arrangement of spots from the other four?
   below so that the expression will produce the largest
   product. (Each digit can be used only once)
 
+![Hình vẽ Bài 71](/assets/images/108-toan-chon-loc/bai-71.png)
+
+
 **Bài 72.** There are 4 fixed steel pins, 3 big balls and plenty of
   small balls. Consider every small ball as the digit "3"
   and every big ball as the digit" (as shown in Fig.
@@ -628,6 +718,9 @@ arrangement of spots from the other four?
   balls representing numbers on every pin is less than
   10.) How many different four-digit numbers can be
   read?
+
+![Hình vẽ Bài 72](/assets/images/108-toan-chon-loc/bai-72.png)
+
 
 **Bài 73.** Peter and Jane are to take turns to subtract perfect
   squares from a given whole number and the one who
@@ -639,9 +732,7 @@ arrangement of spots from the other four?
 
 **Bài 74.** Five points lie on a line. Alex finds the distances
   between every possible pair of points. He obtains,
-  in increasing order, 2, 5, 6, 8, 9, k, 15, 17, 20 and
-
-**Bài 22.** What is the value of k?
+  in increasing order, 2, 5, 6, 8, 9, k, 15, 17, 20 and 22. What is the value of 0
 
 **Bài 75.** Eight of the digits 1,2,3,... and 9 are arranged,
   one per circle with each circle on one of the eight
@@ -651,11 +742,17 @@ arrangement of spots from the other four?
   one is not. It is known that S is not divisible by the
   missing number. What is the missing number x?
 
+![Hình vẽ Bài 75](/assets/images/108-toan-chon-loc/bai-75.png)
+
+
 **Bài 76.** How many possible solutions are there in arranging
   the digits 1 to 9 into each closed area so that the sum
   of the digits inside every circle is the same. Each
   closed area contains only one digit and no digits are
   repeated. Draw all possible solutions.
+
+![Hình vẽ Bài 76](/assets/images/108-toan-chon-loc/bai-76.png)
+
 
 **Bài 77.** A frog is sitting on a square adjacent to a corner
   square of a 5 × 5 board. It hops from square to
@@ -663,11 +760,17 @@ arrangement of spots from the other four?
   diagonally. Prove that it cannot visit each square
   exactly once.
 
+![Hình vẽ Bài 77](/assets/images/108-toan-chon-loc/bai-77.png)
+
+
 **Bài 78.** Place the numbers 0 through 9 in the circles in the
   diagram below without repetition, so that in each
   of the six small triangles pointing up (shaded trian-
   gles), the sum of the numbers in the vertices is the
   same.
+
+![Hình vẽ Bài 78](/assets/images/108-toan-chon-loc/bai-78.png)
+
 
 **Bài 79.** Each of the nine circles in the diagram below con-
   tains a different positive integer. These integers are
@@ -677,7 +780,13 @@ arrangement of spots from the other four?
   cle at the bottom right corner. Eight numbers have
   been erased. Restore them.
 
+![Hình vẽ Bài 79](/assets/images/108-toan-chon-loc/bai-79.png)
+
+
 **Bài 80.** In the diagram below, the numbers 1, 2, 3, 4, 5, 6, 7,
+
+![Hình vẽ Bài 80](/assets/images/108-toan-chon-loc/bai-80.png)
+
 
 ## 8 and 9 are placed one inside each hexagon, so that
 
@@ -690,6 +799,9 @@ possible sum^2
 
 **Bài 81.** Place the digits 1 to 6 in the grid so that no digit
   is repeated in a row, column or diagonal.
+
+![Hình vẽ Bài 81](/assets/images/108-toan-chon-loc/bai-81.png)
+
 
 **Bài 82.** An cut the pizza into n equal slices and then she la-
   belled them with numbers 1, 2,..., n (she used each
@@ -717,6 +829,9 @@ possible sum^2
   between the largest and the smallest numbers on
   Vinh's paper.
 
+![Hình vẽ Bài 84](/assets/images/108-toan-chon-loc/bai-84.png)
+
+
 **Bài 85.** A polynomial P(x) of degree 2015 with real coeffi-
   cients such that P(n) = 3" for all n = 0,1, ..., 2015.
   Evaluate P(2016).
@@ -735,12 +850,13 @@ possible sum^2
   it reaches the top. How many distinct paths can it
   take from the bottom to the top row?
 
-**Bài 88.** If sides a, b, c of a triangle satisfy
-  a+b+ c
-  +
-  a +6
-  a+c'
-  what is the angle between sides b and c?
+![Hình vẽ Bài 87](/assets/images/108-toan-chon-loc/bai-87.png)
+
+
+**Bài 88.** If sides $a, b, c$ of a triangle satisfy
+$$\frac{3}{a + b + c} = \frac{1}{a + b} + \frac{1}{a + c}$$
+what is the angle between sides $b$ and $c$?
+
 
 **Bài 89.** Consider a number that starts with
   122333444455555... and continues in such a way
@@ -772,6 +888,9 @@ possible sum^2
   8cm
   6ст
 
+![Hình vẽ Bài 91](/assets/images/108-toan-chon-loc/bai-91.png)
+
+
 **Bài 92.** There are n > 24 women sitting around a great
   round table, each of whom either always lies or al-
   ways tells the truth. Each woman claims the follow-
@@ -789,15 +908,16 @@ possible sum^2
   attended only two events. What is the smallest E
   for which this is possible?
 
-**Bài 94.** Find n, the number of positive integers not exceed-
-  ing 1000 such that the number n is a divisor of
-  n. Note: The symbol x denotes the integral part
-  of x, i.e. the greatest integer not exceeding x.
+**Bài 94.** Find $n$, the number of positive integers not exceeding 1000 such that the number $\lfloor\sqrt[3]{n}\rfloor$ is a divisor of $n$.
 
-**Bài 95.** A sequence (an) is given by a1 = 1, and
-  an = [Va1 + az + ·.· + an-1] for n > 1. Determine
-  a1000. Note: The symbol [x] denotes the integral
-  part of x, i.e. the greatest integer not exceeding x.
+> [!NOTE] Ghi chú
+> Ký hiệu $\lfloor x\rfloor$ biểu thị phần nguyên của $x$, tức là số nguyên lớn nhất không vượt quá $x$.
+
+
+**Bài 95.** A sequence $(a_n)$ is given by $a_1 = 1$, and
+$$a_n = \lfloor\sqrt{a_1 + a_2 + \dots + a_{n-1}}\rfloor \quad \text{for } n > 1$$
+Determine $a_{1000}$. Note: The symbol $\lfloor x\rfloor$ denotes the integral part of $x$, i.e. the greatest integer not exceeding $x$.
+
 
 **Bài 96.** Let (a, ß) be an open interval, with B - a = 2016*
   Determine the maximum number of irreducible frac-
@@ -815,6 +935,9 @@ possible sum^2
   numbers a, b, c € A are step by step replaced by
   number - minta, b, cr. After 672 times, on the table
   there is only one number m. Prove that m < 1.
+
+![Hình vẽ Bài 99](/assets/images/108-toan-chon-loc/bai-99.png)
+
 
 **Bài 100.** Let n be a positive integer and P(n) the product
   of the non-zero digits of n. Find the largest prime
@@ -865,3 +988,6 @@ possible sum^2
 
 > [!TIP] Lời khuyên học tập
 > Để đạt hiệu quả cao nhất với tuyển tập bài toán này, các em học sinh nên tự mình tư duy và làm ra nháp trước khi xem hướng dẫn giải. Chúc các em luôn giữ vững niềm say mê và tình yêu với môn Toán!
+
+![Hình vẽ Bài 108](/assets/images/108-toan-chon-loc/bai-108.png)
+

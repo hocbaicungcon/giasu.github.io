@@ -37,7 +37,7 @@ Với phương châm viết vừa phải, dạy vừa đủ, giữ lấy cái ha
 
 Việc đăng tải các tư liệu giảng dạy của mình, chúng tôi chỉ nhằm mục đích giúp các bạn giáo viên, các bạn học sinh, các gia đình hiểu, làm quen với công nghệ giáo dục chúng tôi lựa chọn, trên cơ sở đó cùng cộng tác, tham gia, góp ý với chúng tôi để ngày càng hoàn thiện công nghệ giáo dục của mình:
 
-$$\textbf{HAY – ĐẸP – SAY – THỰC DỤNG – THÀNH QUẢ}$$
+> **HAY – ĐẸP – SAY – THỰC DỤNG – THÀNH QUẢ**
 
 *Hà Nội, 05/04/2017*  
 *Ý kiến xin chuyển về: sigmathsgroup@gmail.com / loiscenter@gmail.com*

@@ -21,20 +21,44 @@ grade: 12
 
 ### 1. Định nghĩa xác suất có điều kiện
 
-> **Định nghĩa:** Cho hai biến cố $A$ và $B$. » Xác suất của biến cố $A$ với điều kiện biến cố $B$ đã xảy ra được gọi là xác suất của $A$ với điều kiện $B$. » Kí hiệu $P\left ( { A\left | { B } \right.  . } \right.  )$.
+> **Định nghĩa:** Cho hai biến cố $A$ và $B$.
+
+- Xác suất của biến cố $A$ với điều kiện biến cố $B$ đã xảy ra được gọi là xác suất của $A$ với điều kiện $B$.
+
+- Kí hiệu $P\left ( { A\left | { B } \right.  . } \right.  )$.
 
 ### 2. Công thức tính xác suất có điều kiện
 
 > **Định nghĩa:** Cho hai biến cố $A$ và $B$ trong đó $P\left ( { B } \right.  )>0$ khi đó $P\left ( { A\left | { B } \right.  . } \right.  )=\frac { P\left ( { A∩B } \right.  ) } { P\left ( { B } \right.  ) }$
+- Nếu $P\left ( { B } \right.  )>0$ thì $P\left ( { A∩B } \right.  )=P\left ( { B } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )$
+- Nếu $A$ và $B$ là hai biến cố bất kì thì:$P\left ( { A∩B } \right.  )=P\left ( { A } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { B } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )$.
 
-» Nếu $P\left ( { B } \right.  )>0$ thì $P\left ( { A∩B } \right.  )=P\left ( { B } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )$» Nếu $A$ và $B$ là hai biến cố bất kì thì:$P\left ( { A∩B } \right.  )=P\left ( { A } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { B } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )$.» Cho $A$ và $B$ là hai biến cố với $P\left ( { B } \right.  )>0$. Khi đó, ta có:$P\left ( { A\left | { B } \right.  . } \right.  )=\frac { n\left ( { A∩B } \right.  ) } { n\left ( { B } \right.  ) }$ Trong đó $n\left ( { A∩B } \right.  )$ là số các trường hợp thuận lợi của $\left ( { A∩B } \right.  )$;$n\left ( { B } \right.  )$ là số các trường hợp thuận lợi của $B$.» Nếu $A$ và $B$ là hai biến cố bất kì, với $P\left ( { B } \right.  )>0$ thì:$P\left ( { \bar A\left | { B } \right.  . } \right.  )=1-P\left ( { A\left | { B } \right.  . } \right.  )$» Cho $A$ và $B$ là hai biến cố với $0 < P\left ( { A } \right.  ) < 1;{ \rm{ } }0 < P\left ( { B } \right.  ) < 1$. Khi đó,$A$ và $B$ là hai biến cố độc lập khi và chỉ khi:$P\left ( { A } \right.  )=P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { A\left | { \bar B } \right.  . } \right.  )$ và $P\left ( { B } \right.  )=P\left ( { B\left | { A } \right.  . } \right.  )=P\left ( { B\left | { \bar A } \right.  . } \right.  )$» Nếu $A$ và $B$ là hai biến cố bất kì, với $P\left ( { B } \right.  )>0$ thì:$P\left ( { \bar A\left | { B } \right.  . } \right.  )=1-P\left ( { A\left | { B } \right.  . } \right.  )$ Chú ý
+- Cho $A$ và $B$ là hai biến cố với $P\left ( { B } \right.  )>0$. Khi đó, ta có:$P\left ( { A\left | { B } \right.  . } \right.  )=\frac { n\left ( { A∩B } \right.  ) } { n\left ( { B } \right.  ) }$ Trong đó $n\left ( { A∩B } \right.  )$ là số các trường hợp thuận lợi của $\left ( { A∩B } \right.  )$;$n\left ( { B } \right.  )$ là số các trường hợp thuận lợi của $B$.
 
-KIẾN THỨC CẦN NHỚ 1. Xác suất điều kiện:$P\left ( { A\left | { B } \right.  . } \right.  )\frac { P\left ( { A∩B } \right.  ) } { P\left ( { B } \right.  ) }=\frac { n\left ( { A∩B } \right.  ) } { n\left ( { B } \right.  ) }$ 2. Công thức nhân xác suất:$P\left ( { A∩B } \right.  )=P\left ( { A } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { B } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )$ Chú ý 1: Cho hai biến cố độc lập $A$ và $B$, với $0 < P\left ( { A } \right.  ) < 1;{ \rm{ } }0 < P\left ( { B } \right.  ) < 1$. »$P\left ( { A } \right.  )=P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { A\left | { \bar B } \right.  . } \right.  )$»$P\left ( { B } \right.  )=P\left ( { B\left | { A } \right.  . } \right.  )=P\left ( { B\left | { \bar A } \right.  . } \right.  )$ Chú ý 2: »$P\left ( { A } \right.  )+P\left ( { \bar A } \right.  )=1$»$P\left ( { A\left | { B } \right.  . } \right.  )+P\left ( { \bar A\left | { B } \right.  . } \right.  )=1$»$P\left ( { A∩B } \right.  )+P\left ( { A∩ \bar B } \right.  )=P\left ( { A } \right.  )$»$P\left ( { A∩B } \right.  )+P\left ( { \bar A∩B } \right.  )=P\left ( { B } \right.  )$» Cách ghi $P\left ( { A∩B } \right.  )$ với $P\left ( { AB } \right.  )$ hoàn toàn như nhau. Chú ý 3: » Những bài toán xảy ra xác suất điều kiện thường đi kèm với việc sử dụng quy tắc nhân xác suất, khi gặp bài toán này ta cần lưu ý đến sự độc lập của biến cố để vận dụng công thức đúng.
+- Nếu $A$ và $B$ là hai biến cố bất kì, với $P\left ( { B } \right.  )>0$ thì:$P\left ( { \bar A\left | { B } \right.  . } \right.  )=1-P\left ( { A\left | { B } \right.  . } \right.  )$
+- Cho $A$ và $B$ là hai biến cố với $0 < P\left ( { A } \right.  ) < 1;{ \rm{ } }0 < P\left ( { B } \right.  ) < 1$. Khi đó,$A$ và $B$ là hai biến cố độc lập khi và chỉ khi:$P\left ( { A } \right.  )=P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { A\left | { \bar B } \right.  . } \right.  )$ và $P\left ( { B } \right.  )=P\left ( { B\left | { A } \right.  . } \right.  )=P\left ( { B\left | { \bar A } \right.  . } \right.  )$
+- Nếu $A$ và $B$ là hai biến cố bất kì, với $P\left ( { B } \right.  )>0$ thì:$P\left ( { \bar A\left | { B } \right.  . } \right.  )=1-P\left ( { A\left | { B } \right.  . } \right.  )$ Chú ý
+
+KIẾN THỨC CẦN NHỚ 1. Xác suất điều kiện:$P\left ( { A\left | { B } \right.  . } \right.  )\frac { P\left ( { A∩B } \right.  ) } { P\left ( { B } \right.  ) }=\frac { n\left ( { A∩B } \right.  ) } { n\left ( { B } \right.  ) }$ 2. Công thức nhân xác suất:$P\left ( { A∩B } \right.  )=P\left ( { A } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { B } \right.  ).P\left ( { A\left | { B } \right.  . } \right.  )$ Chú ý 1: Cho hai biến cố độc lập $A$ và $B$, với $0 < P\left ( { A } \right.  ) < 1;{ \rm{ } }0 < P\left ( { B } \right.  ) < 1$.
+
+- $P\left ( { A } \right.  )=P\left ( { A\left | { B } \right.  . } \right.  )=P\left ( { A\left | { \bar B } \right.  . } \right.  )$
+- $P\left ( { B } \right.  )=P\left ( { B\left | { A } \right.  . } \right.  )=P\left ( { B\left | { \bar A } \right.  . } \right.  )$ Chú ý 2:
+
+- $P\left ( { A } \right.  )+P\left ( { \bar A } \right.  )=1$
+- $P\left ( { A\left | { B } \right.  . } \right.  )+P\left ( { \bar A\left | { B } \right.  . } \right.  )=1$
+- $P\left ( { A∩B } \right.  )+P\left ( { A∩ \bar B } \right.  )=P\left ( { A } \right.  )$
+- $P\left ( { A∩B } \right.  )+P\left ( { \bar A∩B } \right.  )=P\left ( { B } \right.  )$
+- Cách ghi $P\left ( { A∩B } \right.  )$ với $P\left ( { AB } \right.  )$ hoàn toàn như nhau. Chú ý 3:
+
+- Những bài toán xảy ra xác suất điều kiện thường đi kèm với việc sử dụng quy tắc nhân xác suất, khi gặp bài toán này ta cần lưu ý đến sự độc lập của biến cố để vận dụng công thức đúng.
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Tính xác suất có điều kiện không sử dụng công thức.
 
-Mô tả không gian mẫu» Cách 1: Liệt kê các phần tử của không gian mẫu và biến cố rồi đếm.» Cách 2: Sử dụng quy tắc đếm, hoán vị, chỉnh hợp, tổ hợp để đếm só phần tử của không gian mẫu và biến cố.» Chú ý:1. chia hết cho $2$ (hay là số chẵn) thì chữ số $c∈\left\{ \begin{array}{l} 0;2;4;6;8 \end{array} \right\}$.2. chia hết cho $5$ thì chữ số $c∈\left\{ \begin{array}{l} 0;5 \end{array} \right\}$.3. chia hết cho $3$ thì chữ số $a+b+c$ chia hết cho $3$.4. chia hết cho $9$ thì chữ số $a+b+c$ chia hết cho $9$. Phương pháp
+Mô tả không gian mẫu
+- **Cách 1:** Liệt kê các phần tử của không gian mẫu và biến cố rồi đếm.
+- **Cách 2:** Sử dụng quy tắc đếm, hoán vị, chỉnh hợp, tổ hợp để đếm só phần tử của không gian mẫu và biến cố.
+- **Chú ý:**1. chia hết cho $2$ (hay là số chẵn) thì chữ số $c∈\left\{ \begin{array}{l} 0;2;4;6;8 \end{array} \right\}$.2. chia hết cho $5$ thì chữ số $c∈\left\{ \begin{array}{l} 0;5 \end{array} \right\}$.3. chia hết cho $3$ thì chữ số $a+b+c$ chia hết cho $3$.4. chia hết cho $9$ thì chữ số $a+b+c$ chia hết cho $9$. Phương pháp
 
 **Ví dụ 1.1.** Cho các chữ số $1;2;3;4;5;6$. Lấy ngẫu nhiên ba chữ số và sắp xếp theo một thứ tự. Xét biến Số $A$:“Ba số lập thành một số chia hết cho $2$”. Kết quả thuận lợi của biến cố $A$ bằng?
 
@@ -214,7 +238,9 @@ Có hai nhánh cây đi tới $B$ là $OAB$ và .
 
 Vậy:$P\left ( { B } \right.  )=0,4\,.\,0,3+0,6\,.\,0,4=0,36$.
 
-**Ví dụ 3.2.** Tại một nhà máy sản xuất linh kiện điện tử tỉ lệ sản phẩm đạt tiêu chuẩn là $80\%$. Trước khi xuất xưởng ra thị trường, các linh kiện điện tử đều phải qua khâu kiểm tra chất lượng để đóng dấu OTK. Vì sự kiểm tra không tuyệt đối hoàn hảo nên » Nếu một linh kiện điện tử đạt tiêu chuẩn thì nó có xác suất $0,99$ được đóng dấu OTK; » Nếu một linh kiện điện tử không đạt tiêu chuẩn thì nó có xác suất $0,95$ không được đóng dấu OTK. Chọn ngẫu nhiên một linh kiện điện tử của nhà máy này trên thị trường. Dùng sơ đồ hình cây, hãy mô tả cách tính xác suất để linh kiện điện tử được chọn không được đóng dấu OTK.
+**Ví dụ 3.2.** Tại một nhà máy sản xuất linh kiện điện tử tỉ lệ sản phẩm đạt tiêu chuẩn là $80\%$. Trước khi xuất xưởng ra thị trường, các linh kiện điện tử đều phải qua khâu kiểm tra chất lượng để đóng dấu OTK. Vì sự kiểm tra không tuyệt đối hoàn hảo nên
+- Nếu một linh kiện điện tử đạt tiêu chuẩn thì nó có xác suất $0,99$ được đóng dấu OTK;
+- Nếu một linh kiện điện tử không đạt tiêu chuẩn thì nó có xác suất $0,95$ không được đóng dấu OTK. Chọn ngẫu nhiên một linh kiện điện tử của nhà máy này trên thị trường. Dùng sơ đồ hình cây, hãy mô tả cách tính xác suất để linh kiện điện tử được chọn không được đóng dấu OTK.
 
 *Lời giải:*
 

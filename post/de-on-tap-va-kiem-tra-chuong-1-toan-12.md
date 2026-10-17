@@ -46,7 +46,7 @@ options:
   - 'C. Đồ thị hàm số có điểm cực tiểu là $\left ( { 1;3 } \right.  )$'
   - 'D. Đồ thị hàm số có điểm cực tiểu là $\left ( { 1;1 } \right.  )$'
 answer: 2
-explanation: 'Đáp án đúng là B.'
+explanation: 'Từ đồ thị hàm số ta thấy đồ thị đạt cực tiểu tại điểm $(-1; -1)$ và đạt cực đại tại điểm $(1; 3)$. Do đó khẳng định B là đúng.'
 ```
 
 ## V. Bài tập trắc nghiệm Trả lời ngắn (Cấu trúc mới GDPT 2018)

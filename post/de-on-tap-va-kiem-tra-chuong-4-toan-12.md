@@ -32,14 +32,14 @@ Học sinh làm bài trực tiếp trên hệ thống để được chấm đi�
 
 ```quiz
 type: choice
-question: 'Câu 1: Tìm nguyên hàm biết $F\left ( { 0 } \right.  )=19$. Ta có:$=\frac { x ^ { 2 } } { 2 }-cosx+C$ Mà $F\left ( { 0 } \right.  )=19⇔-1+C=19$ $⇔C=20$ $⇒F\left ( { x } \right.  )=\frac { x ^ { 2 } } { 2 }-cosx+20$'
+question: 'Câu 1: Cho hàm số $f(x) = x + \sin x$. Tìm nguyên hàm $F(x)$ của hàm số $f(x)$ biết $F(0) = 19$.'
 options:
-  - 'A. $F\left ( { x } \right.  )=x ^ { 2 } +cosx+20$'
-  - 'B. $F\left ( { x } \right.  )=x ^ { 2 } -cosx+20$'
-  - 'C. $F\left ( { x } \right.  )=\frac { 1 } { 2 }x ^ { 2 } -cosx+20$'
-  - 'D. $F\left ( { x } \right.  )=\frac { 1 } { 2 }x ^ { 2 } +cosx+20$'
-answer: 1
-explanation: 'Đáp án đúng là .'
+  - 'A. $F(x) = x^2 + \cos x + 20$'
+  - 'B. $F(x) = x^2 - \cos x + 20$'
+  - 'C. $F(x) = \frac{1}{2}x^2 - \cos x + 20$'
+  - 'D. $F(x) = \frac{1}{2}x^2 + \cos x + 20$'
+answer: 3
+explanation: 'Ta có $F(x) = \int (x + \sin x)dx = \frac{x^2}{2} - \cos x + C$. Mà $F(0) = 19 \Leftrightarrow -1 + C = 19 \Leftrightarrow C = 20$. Do đó $F(x) = \frac{1}{2}x^2 - \cos x + 20$.'
 ```
 
 ```quiz
@@ -56,14 +56,14 @@ explanation: 'Ta có $F(x) = \int (e^x+2x)dx = e^x + x^2 + C$. Do $F(0) = 1 + C 
 
 ```quiz
 type: choice
-question: 'Câu 3: Một quả bóng được ném lên từ độ cao 24,5 m với vận tốc $v\left ( { t } \right.  )=-9,8t+19,6$ (m/s). Công thức tính độ cao của quả bóng theo thời gian $t$. Gọi $h\left ( { t } \right.  )$ là độ cao của quả bóng tại thời điểm .$t$. trong đó $h\left ( { t } \right.  )$ tính theo mét,$t$ tính theo giây. Khi đó ta có: Quả bóng được ném lên từ độ cao $24,5$ m tức là tại thời điểm $t=0$ thì $h=24,5$ Khi đó:$h\left ( { 0 } \right.  )=24,5⇒C=24,5$ Vậy công thức tính độ cao $h\left ( { t } \right.  )$ của quả bóng theo thời gian $t$ là:$h\left ( { t } \right.  )=-4,9t ^ { 2 } +19,6t+24,5$.'
+question: 'Câu 3: Một quả bóng được ném lên từ độ cao $24,5\text{ m}$ với vận tốc $v(t) = -9,8t + 19,6\text{ (m/s)}$. Công thức tính độ cao $h(t)$ của quả bóng theo thời gian $t$ là:'
 options:
-  - 'A. $h\left ( { t } \right.  )=-4,9t ^ { 2 } +19,6t$'
-  - 'B. $h\left ( { t } \right.  )=-4,9t ^ { 2 } +19,6t+24,5$'
-  - 'C. $h\left ( { t } \right.  )=-4,9t ^ { 2 } +19,6t+5$'
-  - 'D. $h\left ( { t } \right.  )=-4,9t ^ { 2 } +19,6t+C$'
-answer: 1
-explanation: 'Đáp án đúng là .'
+  - 'A. $h(t) = -4,9t^2 + 19,6t$'
+  - 'B. $h(t) = -4,9t^2 + 19,6t + 24,5$'
+  - 'C. $h(t) = -4,9t^2 + 19,6t + 5$'
+  - 'D. $h(t) = -4,9t^2 + 19,6t + C$'
+answer: 2
+explanation: 'Gọi $h(t)$ là độ cao của quả bóng tại thời điểm $t$ ($h(t)$ tính theo mét, $t$ tính theo giây). Ta có $h(t) = \int v(t)dt = \int (-9,8t + 19,6)dt = -4,9t^2 + 19,6t + C$. Quả bóng ném lên từ độ cao $24,5\text{ m}$ nên $h(0) = 24,5 \Rightarrow C = 24,5$. Vậy $h(t) = -4,9t^2 + 19,6t + 24,5$.'
 ```
 
 ## IV. Bài tập trắc nghiệm Đúng / Sai (Cấu trúc mới GDPT 2018)

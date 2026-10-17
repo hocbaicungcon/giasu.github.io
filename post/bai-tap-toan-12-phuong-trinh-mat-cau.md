@@ -149,8 +149,7 @@ Như vậy, điểm $M$ thuộc mặt cầu $\left ( { S } \right.  )$ tâm $I\l
 Do đó $OM$ lớn nhất bằng $OI+R=\sqrt{ \left ( { -6 } \right.  ) ^ { 2 } +6 ^ { 2 } +\left ( { -6 } \right.  ) ^ { 2 } }+6\sqrt{ 3 }=12\sqrt{ 3 }$.
 
 ### Dạng 2. Mặt cầu có tâm và đi qua một điểm
-
-▶ Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R$. Từ giả thiết ta đã có sẵn tâm $I$ và bán kính $R$. Phương trình $\left ( { S } \right.  ):\left ( { x-a } \right.  ) ^ { 2 } +\left ( { y-b } \right.  ) ^ { 2 } +\left ( { z-c } \right.  ) ^ { 2 } =R ^ { 2 }$. Tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và qua điểm $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$.≫ Bán kính mặt cầu $\left. R=IM=\left | { \overrightarrow { IM } } \right.  |=\sqrt{ \left ( { x_{ 0 } -a } \right.  ) ^ { 2 } +\left ( { y_{ 0 } -b } \right.  ) ^ { 2 } +\left ( { z_{ 0 } -c } \right.  ) ^ { 2 } } \right.$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IM$. Phương pháp
+- Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R$. Từ giả thiết ta đã có sẵn tâm $I$ và bán kính $R$. Phương trình $\left ( { S } \right.  ):\left ( { x-a } \right.  ) ^ { 2 } +\left ( { y-b } \right.  ) ^ { 2 } +\left ( { z-c } \right.  ) ^ { 2 } =R ^ { 2 }$. Tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và qua điểm $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$.≫ Bán kính mặt cầu $\left. R=IM=\left | { \overrightarrow { IM } } \right.  |=\sqrt{ \left ( { x_{ 0 } -a } \right.  ) ^ { 2 } +\left ( { y_{ 0 } -b } \right.  ) ^ { 2 } +\left ( { z_{ 0 } -c } \right.  ) ^ { 2 } } \right.$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IM$. Phương pháp
 
 **Ví dụ 2.1.** Trong không gian $Oxyz$,viết phương trình các mặt cầu sau:⑴ Tâm $I\left ( { -1\,;\,2\,;\,-3 } \right.  )$, bán kính $R=3$⑵ Tâm $I\left ( { 0;-4;1 } \right.  )$ đường kính bằng $4.$
 
@@ -181,8 +180,7 @@ Bán kính của mặt cầu là $R=IA=\sqrt{ 0 ^ { 2 } +1 ^ { 2 } +1 ^ { 2 } }=
 Phương trình của mặt cầu tâm $I\left ( { 1;2;3 } \right.  )$ qua $A\left ( { 1;1;2 } \right.  )$ là $\left ( { x-1 } \right.  ) ^ { 2 } +\left ( { y-2 } \right.  ) ^ { 2 } +\left ( { z-3 } \right.  ) ^ { 2 } =2$.
 
 ### Dạng 3. Mặt cầu có đường kính
-
-▶ Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápNhận $M\left ( { x_{ M } \,;\,y_{ M } \,;\,z_{ M } } \right.  )$ và $N\left ( { x_{ N } \,;\,y_{ N } \,;\,z_{ N } } \right.  )$ làm đường kính≫ Gọi $I$ là tâm mặt cầu $\left ( { S } \right.  )$ $⇒I$ là trung điểm của $MN$ $⇒I\left ( { \frac { x_{ M } +x_{ N } } { 2 }\,;\,\frac { y_{ M } +y_{ N } } { 2 }\,;\,\frac { z_{ M } +z_{ N } } { 2 } } \right.  )$.≫ Bán kính mặt cầu $R=\frac { MN } { 2 }=IM$. Phương pháp
+- Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápNhận $M\left ( { x_{ M } \,;\,y_{ M } \,;\,z_{ M } } \right.  )$ và $N\left ( { x_{ N } \,;\,y_{ N } \,;\,z_{ N } } \right.  )$ làm đường kính≫ Gọi $I$ là tâm mặt cầu $\left ( { S } \right.  )$ $⇒I$ là trung điểm của $MN$ $⇒I\left ( { \frac { x_{ M } +x_{ N } } { 2 }\,;\,\frac { y_{ M } +y_{ N } } { 2 }\,;\,\frac { z_{ M } +z_{ N } } { 2 } } \right.  )$.≫ Bán kính mặt cầu $R=\frac { MN } { 2 }=IM$. Phương pháp
 
 **Ví dụ 3.1.** Trong không gian $Oxyz$, cho hai điểm $A\left ( { 1;0;-3 } \right.  )$ và $B\left ( { 3;2;1 } \right.  ).$ Phương trình mặt cầu đường kính $AB$ là?
 
@@ -209,8 +207,7 @@ Phương trình mặt cầu $\left ( { x-4 } \right.  ) ^ { 2 } +\left ( { y-3 }
 Vậy phương trình mặt cầu $\left ( { S } \right.  ){ \rm{ } }\left ( { x-4 } \right.  ) ^ { 2 } +\left ( { y-3 } \right.  ) ^ { 2 } +\left ( { z-1 } \right.  ) ^ { 2 } =26$
 
 ### Dạng 4. Mặt cầu qua 4 điểm không đồng phẳng
-
-▶ Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápĐi qua 4 điểm $A\,;\,B\,;\,C\,;\,D$ không đồng phẳng≫ Gọi $I\left ( { a\,;\,b\,;\,c } \right.  )$ là tọa độ tâm mặt cầu cần tìm.≫ Mặt cầu $\left ( { S } \right.  )$ đi qua 4 điểm $⇔IA=IB=IC=ID⇔\left\{ \begin{array}{l} IA ^ { 2 } =IB ^ { 2 } IA ^ { 2 } =IC ^ { 2 } IA ^ { 2 } =ID ^ { 2 } \end{array} \right.⇒$ tọa độ $I$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IA$. Phương pháp
+- Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápĐi qua 4 điểm $A\,;\,B\,;\,C\,;\,D$ không đồng phẳng≫ Gọi $I\left ( { a\,;\,b\,;\,c } \right.  )$ là tọa độ tâm mặt cầu cần tìm.≫ Mặt cầu $\left ( { S } \right.  )$ đi qua 4 điểm $⇔IA=IB=IC=ID⇔\left\{ \begin{array}{l} IA ^ { 2 } =IB ^ { 2 } IA ^ { 2 } =IC ^ { 2 } IA ^ { 2 } =ID ^ { 2 } \end{array} \right.⇒$ tọa độ $I$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IA$. Phương pháp
 
 **Ví dụ 4.1.** Trong không gian $Oxyz$, nếu mặt cầu .$\left ( { S } \right.  )$. đi qua bốn điểm $M\left ( { 2;2;2 } \right.  ),N\left ( { 4;0;2 } \right.  ),P\left ( { 4;2;0 } \right.  )$ và $Q\left ( { 4;2;2 } \right.  )$ thì tâm $I$ của $\left ( { S } \right.  )$ có tọa độ là?
 
@@ -235,8 +232,7 @@ Ta có:$\left\{ \begin{array}{l} 4+4a+d=04+4b+d=04+4c+d=012+4a+4b+4c+d=0 \end{ar
 Suy ra phương trình mặt cầu là $x ^ { 2 } +y ^ { 2 } +z ^ { 2 } -2x-2y-2z=0$.
 
 ### Dạng 5. Mặt cầu có tâm thuộc đường thẳng/mặt phẳng
-
-▶ Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I∈\left ( { P } \right.  )$ và đi qua $A\,;\,B\,;\,C$. Với $\left ( { P } \right.  ):α.x+β.y+γ.z+δ=0$ hoặc $\left ( { P } \right.  )$ là các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$.⌘ Nhận xét:Trong trường hợp $I∈$ một trong các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$ bài toán sẽ đơn giản hơn.≫ Gọi $I\left ( { a\,;\,b\,;\,c } \right.  )$ là tâm mặt cầu≫ Ta có $I∈\left ( { P } \right.  )⇒α.a+β.b+γ.c+δ=0\,\,\left ( { 1 } \right.  )$.≫ Mặt cầu $\left ( { S } \right.  )$ đi qua ba điểm $A\,;\,B\,;\,C$ $⇔IA=IB=IC⇔\left\{ \begin{array}{l} IA ^ { 2 } =IB ^ { 2 } \,\,\left ( { 2 } \right.  )IA ^ { 2 } =IC ^ { 2 } \,\,\left ( { 3 } \right.  ) \end{array} \right.$.≫ Từ $\left ( { 1 } \right.  )\,;\,\left ( { 2 } \right.  )$ và $\left ( { 3 } \right.  )⇒I$ là thỏa hệ:$\left\{ \begin{array}{l} α.a+β.b+γ.c+δ=0IA ^ { 2 } =IB ^ { 2 } IA ^ { 2 } =IC ^ { 2 } \end{array} \right.⇒$ tọa độ $I$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IA$. Tâm $I∈d$ và đi qua $A\,;\,B$. Với $d:\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ hoặc $d$ là các trục $Ox\,;\,Oy\,;\,Oz$.⌘ Nhận xét:Trong trường hợp $I∈$ một trong các trục $Ox\,;\,Oy\,;\,Oz$ bài toán sẽ đơn giản hơn.≫ Gọi $I\left ( { a\,;\,b\,;\,c } \right.  )$ là tâm mặt cầu≫ Ta có $I∈d⇒I\left ( { x_{ 0 } +at;y_{ 0 } +bt;z_{ 0 } +ct } \right.  )$.≫ Viết $\left. \overrightarrow { IA }\,;\overrightarrow { IB } \right.$ theo $t$ và tính độ dài $\left. \left. \left | { \overrightarrow { IA } } \right.  |\,;\left | { \overrightarrow { IB } } \right.  | \right. \right.$≫ Mặt cầu $\left ( { S } \right.  )$ đi qua hai điểm $A\,;\,B$ $\left. \left. ⇔IA=IB⇔\left | { \overrightarrow { IA } } \right.  |=\left | { \overrightarrow { IB } } \right.  |⇒t=? \right. \right.$.≫ Từ $t=?$ $⇒$ tọa độ $I$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IA$. Phương pháp
+- Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I∈\left ( { P } \right.  )$ và đi qua $A\,;\,B\,;\,C$. Với $\left ( { P } \right.  ):α.x+β.y+γ.z+δ=0$ hoặc $\left ( { P } \right.  )$ là các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$.⌘ Nhận xét:Trong trường hợp $I∈$ một trong các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$ bài toán sẽ đơn giản hơn.≫ Gọi $I\left ( { a\,;\,b\,;\,c } \right.  )$ là tâm mặt cầu≫ Ta có $I∈\left ( { P } \right.  )⇒α.a+β.b+γ.c+δ=0\,\,\left ( { 1 } \right.  )$.≫ Mặt cầu $\left ( { S } \right.  )$ đi qua ba điểm $A\,;\,B\,;\,C$ $⇔IA=IB=IC⇔\left\{ \begin{array}{l} IA ^ { 2 } =IB ^ { 2 } \,\,\left ( { 2 } \right.  )IA ^ { 2 } =IC ^ { 2 } \,\,\left ( { 3 } \right.  ) \end{array} \right.$.≫ Từ $\left ( { 1 } \right.  )\,;\,\left ( { 2 } \right.  )$ và $\left ( { 3 } \right.  )⇒I$ là thỏa hệ:$\left\{ \begin{array}{l} α.a+β.b+γ.c+δ=0IA ^ { 2 } =IB ^ { 2 } IA ^ { 2 } =IC ^ { 2 } \end{array} \right.⇒$ tọa độ $I$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IA$. Tâm $I∈d$ và đi qua $A\,;\,B$. Với $d:\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ hoặc $d$ là các trục $Ox\,;\,Oy\,;\,Oz$.⌘ Nhận xét:Trong trường hợp $I∈$ một trong các trục $Ox\,;\,Oy\,;\,Oz$ bài toán sẽ đơn giản hơn.≫ Gọi $I\left ( { a\,;\,b\,;\,c } \right.  )$ là tâm mặt cầu≫ Ta có $I∈d⇒I\left ( { x_{ 0 } +at;y_{ 0 } +bt;z_{ 0 } +ct } \right.  )$.≫ Viết $\left. \overrightarrow { IA }\,;\overrightarrow { IB } \right.$ theo $t$ và tính độ dài $\left. \left. \left | { \overrightarrow { IA } } \right.  |\,;\left | { \overrightarrow { IB } } \right.  | \right. \right.$≫ Mặt cầu $\left ( { S } \right.  )$ đi qua hai điểm $A\,;\,B$ $\left. \left. ⇔IA=IB⇔\left | { \overrightarrow { IA } } \right.  |=\left | { \overrightarrow { IB } } \right.  |⇒t=? \right. \right.$.≫ Từ $t=?$ $⇒$ tọa độ $I$.≫ Mặt cầu có tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=IA$. Phương pháp
 
 **Ví dụ 5.1.** Trong không gian $Oxyz$, cho mặt cầu $\left ( { S } \right.  )$ đi qua 2 điểm $A\left ( { 1;2;3 } \right.  ),\,B\left ( { 2;0;-2 } \right.  ),\,$ và có tâm nằm trên trục $Ox$. Viết phương trình mặt cầu $\left ( { S } \right.  )$?
 
@@ -279,8 +275,7 @@ $⇔\left\{ \begin{array}{l} -2c=20b=9 \end{array} \right.⇔\left\{ \begin{arra
 Phương trình mặt cầu là $x ^ { 2 } +\left ( { y-9 } \right.  ) ^ { 2 } +\left ( { z+10 } \right.  ) ^ { 2 } =209$.
 
 ### Dạng 6. Mặt cầu tiếp xúc đường thẳng/mặt phẳng
-
-▶ Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và tiếp xúc với $\left ( { P } \right.  )$. Với $\left ( { P } \right.  ):Ax+By+Cz+D=0$ hoặc $\left ( { P } \right.  )$ là các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$.⌘ Nhận xét:Trong trường hợp $I$ tiếp xúc một trong các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$ bài toán sẽ đơn giản hơn.≫ Bán kính mặt cầu $R=\left[ d\left ( { I\,;\,\left ( { α } \right.  ) } \right.  )=\frac { \left | { Aa+Bb+Cc+D } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }\,\,Tiep\,\,xuc\,\,\left ( { α } \right.  )d\left ( { I\,;\,\left ( { Oxy } \right.  ) } \right.  )=\sqrt{ z_{ I } ^{ 2 } }\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,Tiep\,\,xuc\,\,\left ( { Oxy } \right.  )d\left ( { I\,;\,\left ( { Oxz } \right.  ) } \right.  )=\sqrt{ y_{ I } ^{ 2 } }\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,Tiep\,\,xuc\,\,\left ( { Oxz } \right.  )d\left ( { I\,;\,\left ( { Oyz } \right.  ) } \right.  )=\sqrt{ x_{ I } ^{ 2 } }\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,Tiep\,\,xuc\,\,\left ( { Oyz } \right.  ) \right.$.≫ Mặt cầu tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=d\left ( { I\,;\,\left ( { α } \right.  ) } \right.  )$. Tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và tiếp xúc với $\Delta $. Với $\Delta :\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ hoặc $\Delta $ là các trục $Ox\,;\,Oy\,;\,Oz$.⌘ Nhận xét:Trong trường hợp $I$ tiếp xúc một trong các trục $Ox\,;\,Oy\,;\,Oz$ bài toán sẽ đơn giản hơn.≫ Bán kính mặt cầu $\left. R=\left[ d\left ( { I\,;\,\Delta  } \right.  )=\frac { \left | { \left[ u\,;\,\overrightarrow { MI } \right] } \right.  | } { \left | { u } \right.  | }\,\,\,\,Tiep\,\,xuc\,\,\Delta d\left ( { I\,;\,Ox } \right.  )=\sqrt{ y_{ I } ^{ 2 }+z_{ I } ^{ 2 } }\,\,\,\,Tiep\,\,xuc\,\,Oxd\left ( { I\,;\,Oy } \right.  )=\sqrt{ x_{ I } ^{ 2 }+z_{ I } ^{ 2 } }\,\,\,\,Tiep\,\,xuc\,\,Oyd\left ( { I\,;\,Oz } \right.  )=\sqrt{ x_{ I } ^{ 2 }+y_{ I } ^{ 2 } }\,\,\,\,Tiep\,\,xuc\,\,Oz \right.  \right.$.≫ Mặt cầu tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=d\left ( { I\,;\,\Delta  } \right.  )$. Phương pháp
+- Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và tiếp xúc với $\left ( { P } \right.  )$. Với $\left ( { P } \right.  ):Ax+By+Cz+D=0$ hoặc $\left ( { P } \right.  )$ là các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$.⌘ Nhận xét:Trong trường hợp $I$ tiếp xúc một trong các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$ bài toán sẽ đơn giản hơn.≫ Bán kính mặt cầu $R=\left[ d\left ( { I\,;\,\left ( { α } \right.  ) } \right.  )=\frac { \left | { Aa+Bb+Cc+D } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }\,\,Tiep\,\,xuc\,\,\left ( { α } \right.  )d\left ( { I\,;\,\left ( { Oxy } \right.  ) } \right.  )=\sqrt{ z_{ I } ^{ 2 } }\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,Tiep\,\,xuc\,\,\left ( { Oxy } \right.  )d\left ( { I\,;\,\left ( { Oxz } \right.  ) } \right.  )=\sqrt{ y_{ I } ^{ 2 } }\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,Tiep\,\,xuc\,\,\left ( { Oxz } \right.  )d\left ( { I\,;\,\left ( { Oyz } \right.  ) } \right.  )=\sqrt{ x_{ I } ^{ 2 } }\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,Tiep\,\,xuc\,\,\left ( { Oyz } \right.  ) \right.$.≫ Mặt cầu tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=d\left ( { I\,;\,\left ( { α } \right.  ) } \right.  )$. Tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và tiếp xúc với $\Delta $. Với $\Delta :\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ hoặc $\Delta $ là các trục $Ox\,;\,Oy\,;\,Oz$.⌘ Nhận xét:Trong trường hợp $I$ tiếp xúc một trong các trục $Ox\,;\,Oy\,;\,Oz$ bài toán sẽ đơn giản hơn.≫ Bán kính mặt cầu $\left. R=\left[ d\left ( { I\,;\,\Delta  } \right.  )=\frac { \left | { \left[ u\,;\,\overrightarrow { MI } \right] } \right.  | } { \left | { u } \right.  | }\,\,\,\,Tiep\,\,xuc\,\,\Delta d\left ( { I\,;\,Ox } \right.  )=\sqrt{ y_{ I } ^{ 2 }+z_{ I } ^{ 2 } }\,\,\,\,Tiep\,\,xuc\,\,Oxd\left ( { I\,;\,Oy } \right.  )=\sqrt{ x_{ I } ^{ 2 }+z_{ I } ^{ 2 } }\,\,\,\,Tiep\,\,xuc\,\,Oyd\left ( { I\,;\,Oz } \right.  )=\sqrt{ x_{ I } ^{ 2 }+y_{ I } ^{ 2 } }\,\,\,\,Tiep\,\,xuc\,\,Oz \right.  \right.$.≫ Mặt cầu tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R=d\left ( { I\,;\,\Delta  } \right.  )$. Phương pháp
 
 **Ví dụ 6.1.** Trong không gian $Oxyz$, viết phương trình mặt cầu tâm $I\left ( { 1\,;\,-2\,;\,1 } \right.  )$ và tiếp xúc với mặt phẳng $\left ( { Oxy } \right.  )$.
 
@@ -331,8 +326,7 @@ $IB ^ { 2 } =IC ^ { 2 }$ $⇔3 ^ { 2 } +\left ( { c-9 } \right.  ) ^ { 2 } =c ^ 
 Vậy phương trình mặt cần tìm là:$\left ( { x-1 } \right.  ) ^ { 2 } +\left ( { y-4 } \right.  ) ^ { 2 } +\left ( { z-5 } \right.  ) ^ { 2 } =25$.
 
 ### Dạng 7. Mặt cầu cắt đường thẳng/mặt phẳng
-
-▶ Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và cắt $\left ( { P } \right.  )$ theo giao tuyến là đường tròn tâm $I'$ bán kính $r$. Với $\left ( { P } \right.  ):Ax+By+Cz+D=0$ hoặc $\left ( { P } \right.  )$ là các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$.⌘ Nhận xét:Trong trường hợp $I$ tiếp xúc một trong các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$ bài toán sẽ đơn giản hơn.≫ Tính $d\left ( { I\,;\,\left ( { α } \right.  ) } \right.  )=\frac { \left | { Aa+Bb+Cc+D } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }$≫ Bán kính:$R ^ { 2 } =d ^ { 2 } \left ( { I\,;\,\left ( { α } \right.  ) } \right.  )+r ^ { 2 } =OH ^ { 2 } +HM ^ { 2 }$≫ Mặt cầu tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R$.
+- Trong không gian $Oxyz$, viết phương trình mặt cầu $\left ( { S } \right.  )$ LoạiPhương phápTâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và cắt $\left ( { P } \right.  )$ theo giao tuyến là đường tròn tâm $I'$ bán kính $r$. Với $\left ( { P } \right.  ):Ax+By+Cz+D=0$ hoặc $\left ( { P } \right.  )$ là các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$.⌘ Nhận xét:Trong trường hợp $I$ tiếp xúc một trong các mặt phẳng $\left ( { Oxy } \right.  ),\left ( { Oxz } \right.  ),\left ( { Oyz } \right.  )$ bài toán sẽ đơn giản hơn.≫ Tính $d\left ( { I\,;\,\left ( { α } \right.  ) } \right.  )=\frac { \left | { Aa+Bb+Cc+D } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }$≫ Bán kính:$R ^ { 2 } =d ^ { 2 } \left ( { I\,;\,\left ( { α } \right.  ) } \right.  )+r ^ { 2 } =OH ^ { 2 } +HM ^ { 2 }$≫ Mặt cầu tâm $I\left ( { a\,;\,b\,;\,c } \right.  )$ và bán kính $R$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b3_image44.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -752,25 +746,25 @@ Tâm $I\left ( { 1;-2;0 } \right.  )$.
 
 Ta có $\left ( { 1-1 } \right.  ) ^ { 2 } +\left ( { 2+2 } \right.  ) ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } =17>16$ $⇒$ điểm $A\left ( { 1;2;-1 } \right.  )$ nằm bên ngoài mặt cầu $\left ( { C } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Điểm $B\left ( { 0;0;1 } \right.  )$ nằm bên trong mặt cầu $\left ( { C } \right.  )$.
 
 Ta có $\left ( { 0-1 } \right.  ) ^ { 2 } +\left ( { 0+2 } \right.  ) ^ { 2 } +1 ^ { 2 } =6 < 16$ $⇒$ điểm $B\left ( { 0;0;1 } \right.  )$ nằm bên trong mặt cầu $\left ( { C } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Điểm $C\left ( { 0;2;1 } \right.  )$ nằm trên mặt cầu $\left ( { C } \right.  )$.
 
 Ta có $\left ( { 0-1 } \right.  ) ^ { 2 } +\left ( { 2+2 } \right.  ) ^ { 2 } +1 ^ { 2 } =18>16$ $⇒$ điểm $C\left ( { 0;2;1 } \right.  )$ nằm bên ngoài mặt cầu $\left ( { C } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Với điểm $D\left ( { 2;1;-1 } \right.  )$, ta có $ID < 4$.
 
 Ta có $ID=\sqrt{ \left ( { 2-1 } \right.  ) ^ { 2 } +\left ( { 1+2 } \right.  ) ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } }=\sqrt{ 11 } < 4$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -785,13 +779,13 @@ Lời giải
 
 Phương trình mặt cầu tâm $I\left ( { 1;-1;2 } \right.  )$, bán kính $R=3$ là $\left ( { x-1 } \right.  ) ^ { 2 } +\left ( { y+1 } \right.  ) ^ { 2 } +\left ( { z-2 } \right.  ) ^ { 2 } =9$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Điểm $A\left ( { 0;2;-3 } \right.  )$ nằm trong mặt cầu.
 
 Ta có:$\left ( { 0+1 } \right.  ) ^ { 2 } +\left ( { 2-1 } \right.  ) ^ { 2 } +\left ( { -3+2 } \right.  ) ^ { 2 } =3=R=3$, do đó điểm $A$ nằm trên mặt cầu.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Điểm $J\left ( { 1;2;3 } \right.  )$ nằm ngoài mặt cầu và khoảng cách từ tâm $I$ đến điểm $J$ bằng $\sqrt{ 10 }$.
 
@@ -799,7 +793,7 @@ Ta có:$\left ( { 1+1 } \right.  ) ^ { 2 } +\left ( { 2-1 } \right.  ) ^ { 2 } +
 
 Và $\left. \overrightarrow { IJ }=\left ( { 0;3;1 } \right.  )⇒\left | { \overrightarrow { IJ } } \right.  |=\sqrt{ 0 ^ { 2 } +3 ^ { 2 } +1 ^ { 2 } }=\sqrt{ 10 } \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Khoảng cách từ tâm $I$ đến tâm mặt cầu $\left ( { S' } \right.  ):x ^ { 2 } +y ^ { 2 } +\left ( { z-1 } \right.  ) ^ { 2 } =3$ bằng $\sqrt{ 2 }$.
 
@@ -809,7 +803,7 @@ Mặt cầu $\left ( { S' } \right.  )$ có tâm $K\left ( { 0;0;1 } \right.  )$
 
 Khi đó $\left. \overrightarrow { IK }=\left ( { -1;1;-1 } \right.  )⇒\left | { \overrightarrow { IK } } \right.  |=\sqrt{ \left ( { -1 } \right.  ) ^ { 2 } +1 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } }=\sqrt{ 3 }≠\sqrt{ 2 } \right.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -826,7 +820,7 @@ Mặt cầu $\left ( { S } \right.  ):x ^ { 2 } +y ^ { 2 } +z ^ { 2 } -2x+4y+1=0
 
 $⇒$ tâm $I\left ( { 1;-2;0 } \right.  )$ và bán kính $R=\sqrt{ a ^ { 2 } +b ^ { 2 } +c ^ { 2 } -d }=2$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Bán kính của mặt cầu $\left ( { S } \right.  )$ là đoạn $IM$ với điểm $M\left ( { 1;1;2 } \right.  )$.
 
@@ -834,7 +828,7 @@ Xét $M\left ( { 1;1;2 } \right.  )$:$1 ^ { 2 } +1 ^ { 2 } +2 ^ { 2 } -2.1+4.1+1
 
 Vậy bán kính mặt cầu $\left ( { S } \right.  )$ không là đoạn $IM$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Mặt cầu $\left ( { S } \right.  )$ có đường kính $AB$ với $A\left ( { 0;1;-2 } \right.  )$ và $B\left ( { 2;-1;-4 } \right.  )$.
 
@@ -842,7 +836,7 @@ Mặt cầu $\left ( { S } \right.  )$ nhận $AB$ làm đường kính thì $\f
 
 Ta có $\left. \overrightarrow { AB }=\left ( { 2;-2;-2 } \right.  )⇒\left | { \overrightarrow { AB } } \right.  |=\sqrt{ 2 ^ { 2 } +\left ( { -2 } \right.  ) ^ { 2 } +\left ( { -2 } \right.  ) ^ { 2 } }=2\sqrt{ 3 }⇒\frac { AB } { 2 }=\sqrt{ 3 }≠R=2 \right.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Mặt cầu $\left ( { S } \right.  )$ tiếp xúc với mặt phẳng $\left ( { P } \right.  ):x+y-z-2=0$.
 
@@ -850,7 +844,7 @@ Mặt cầu $\left ( { S } \right.  )$ tiếp xúc với mặt phẳng $\left ( 
 
 Ta có $d\left ( { I,\,\left ( { P } \right.  ) } \right.  )=\frac { \left | { 1+\left ( { -2 } \right.  ) } \right.  | } { \sqrt{ 1 ^ { 2 } +1 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } } }=\sqrt{ 3 }≠R=2$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -865,13 +859,13 @@ Lời giải
 
 Mặt cầu tâm $B$, bán kính $R=3$ có phương trình là $x ^ { 2 } +\left ( { y-2 } \right.  ) ^ { 2 } +z ^ { 2 } =9$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Mặt cầu tâm $A$, đi qua $B$ có phương trình là $\left ( { x-1 } \right.  ) ^ { 2 } +y ^ { 2 } +z ^ { 2 } =5$.
 
 Ta có bán kính mặt cầu là $R=AB=\sqrt{ 5 }$, nên phương trình mặt cầu là $\left ( { x-1 } \right.  ) ^ { 2 } +y ^ { 2 } +z ^ { 2 } =5$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Mặt cầu nhận $BC$ làm đường kính có phương trình là $x ^ { 2 } +\left ( { y-1 } \right.  ) ^ { 2 } +\left ( { z-3 } \right.  ) ^ { 2 } =\frac { 13 } { 4 }$.
 
@@ -879,13 +873,13 @@ Gọi $I$ là trung điểm của $BC⇒I\left ( { 0;1;\frac { 3 } { 2 } } \righ
 
 Vậy phương trình mặt cầu đường kính $BC$ là $x ^ { 2 } +\left ( { y-1 } \right.  ) ^ { 2 } +\left ( { z-\frac { 3 } { 2 } } \right.  ) ^ { 2 } =\frac { 13 } { 4 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Mặt cầu tâm $O$ và có bán kính $R=OG$ với $G$ là trọng tâmtam giác $ABC$, có phương trình là $x ^ { 2 } +y ^ { 2 } +z ^ { 2 } =\frac { 14 } { 9 }$.
 
 Ta có $G\left ( { \frac { 1 } { 3 };\frac { 2 } { 3 };1 } \right.  )⇒OG=\frac { \sqrt{ 14 } } { 3 }$ nên phương trình mặt cầu cần tìm là $x ^ { 2 } +y ^ { 2 } +z ^ { 2 } =\frac { 14 } { 9 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -902,13 +896,13 @@ Lời giải
 
 Ta có mặt cầu mô tả ranh giới của vùng phủ sáng trên biển của hải đăng, biết rằng ngọn hải đăng đó được thiết kế với bán kính phủ sáng $R=5\,{ \rm{ k } }{ \rm{ m } }=5000\,{ \rm{ m } }$, có phương trình là $\left ( { x-25 } \right.  ) ^ { 2 } +\left ( { y-30 } \right.  ) ^ { 2 } +\left ( { z-50 } \right.  ) ^ { 2 } =5000 ^ { 2 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Điểm $A\left ( { 1025;30;50 } \right.  )$ nằm bên trong mặt cầu $\left ( { S } \right.  )$.
 
 Ta có $IA=\sqrt{ \left ( { 1025-25 } \right.  ) ^ { 2 } }=1000 < 5000=R$. Suy ra điểm $A$ nằm bên trong mặt cầu $\left ( { S } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Một người đi biển ở vị trí $M\left ( { 45;60;50 } \right.  )$ thì có thể được chiếu sáng bởi ánh sáng của ngọn hải đăng.
 
@@ -916,7 +910,7 @@ Ta có $IM=\sqrt{ 20 ^ { 2 } +30 ^ { 2 } }=10\sqrt{ 13 } < 5000=R$, suy ra đi�
 
 Do đó người ở vị trí $M\left ( { 45;60;50 } \right.  )$ thì có thể được chiếu sáng bởi ánh sáng của ngọn hải đăng.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Một người đi biển ở vị trí $N\left ( { 5125;30;0 } \right.  )$ thì không thể được chiếu sáng bởi ánh sáng của ngọn hải đăng.
 
@@ -924,7 +918,7 @@ Ta có $IN=\sqrt{ 5100 ^ { 2 } +\left ( { -50 } \right.  ) ^ { 2 } }>5000=R$, su
 
 Do đó người ở vị trí $N\left ( { 5125;30;0 } \right.  )$ thì không thể được chiếu sáng bởi ánh sáng của ngọn hải đăng.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -945,13 +939,13 @@ $O\left ( { 0;0;0 } \right.  ),A\left ( { 2;0;0 } \right.  );B\left ( { 2;3;0 } 
 
 Ta có $OA=2$, mặt cầu tâm $O$, bán kính $OA$ có phương trình là $x ^ { 2 } +y ^ { 2 } +z ^ { 2 } =4$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Mặt cầu tâm $A$, đi qua $C$ có phương trình là $\left ( { x-2 } \right.  ) ^ { 2 } +y ^ { 2 } +z ^ { 2 } =13$.
 
 Ta có $AC ^ { 2 } =OA ^ { 2 } +OC ^ { 2 } =4+9=13⇒$ mặt cầu tâm $A$, đi qua $C$ có phương trình là $\left ( { x-2 } \right.  ) ^ { 2 } +y ^ { 2 } +z ^ { 2 } =13$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Gọi $H$ là hình chiếu vuông góc của $O$ lên $\left ( { ACO' } \right.  )$, mặt cầu tâm $O$ đi qua $H$ có phương trình là $x ^ { 2 } +y ^ { 2 } +z ^ { 2 } =\frac { 12 } { 61 }$.
 
@@ -959,7 +953,7 @@ Ta có $\left ( { ACO' } \right.  ):\frac { x } { 2 }+\frac { y } { 3 }+\frac { 
 
 $R=d\left ( { O,\left ( { ACO' } \right.  ) } \right.  )=\frac { \left | { -12 } \right.  | } { \sqrt{ 36+16+9 } }=\frac { 12 } { \sqrt{ 61 } }$. Vậy phương trình mặt cầu $x ^ { 2 } +y ^ { 2 } +z ^ { 2 } =\frac { 144 } { 61 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Mặt cầu đi qua các đỉnh của hình hộp có phương trình là $\left ( { x-1 } \right.  ) ^ { 2 } +\left ( { y-\frac { 3 } { 2 } } \right.  ) ^ { 2 } +\left ( { z-2 } \right.  ) ^ { 2 } =\frac { 29 } { 4 }$.
 
@@ -967,7 +961,7 @@ Mặt cầu đi qua các đỉnh của hình hộp có tâm $I$ là trung điể
 
 Phương trình mặt cầu là $\left ( { x-1 } \right.  ) ^ { 2 } +\left ( { y-\frac { 3 } { 2 } } \right.  ) ^ { 2 } +\left ( { z-2 } \right.  ) ^ { 2 } =\frac { 29 } { 4 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -982,19 +976,19 @@ Lời giải
 
 $\left ( { P } \right.  ):\,\,3x+y-z-5=0$ có VTPT là $n=\left ( { 3;1;-1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Tọa độ tổng quát của tâm $I$ là $\left ( { t\,;-\,1+2t\,;-2-t } \right.  )$.
 
 Ta có:$d:x=\frac { y-1 } { 2 }=\frac { z-2 } { -1 }⇒d:\,\,\,\,,\,\,t∈\mathbb{R}I∈d⇒I\left ( { t\,;\,1+2t\,;2-t } \right. )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $d\left ( { I,\left ( { P } \right.  ) } \right.  )=3$.
 
 Do giao tuyến của $\left ( { S } \right.  )$ và $\left ( { P } \right.  )$ là đường tròn lớn nên $I∈\left ( { P } \right.  )⇒d\left ( { I,\left ( { P } \right.  ) } \right.  )=0$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Mặt cầu $\left ( { S } \right.  )$ có phương trình là $\left ( { x-1 } \right.  ) ^ { 2 } +\left ( { y-3 } \right.  ) ^ { 2 } +\left ( { z-1 } \right.  ) ^ { 2 } =25$.
 
@@ -1010,7 +1004,7 @@ Vì $\left ( { S } \right.  )∩\left ( { P } \right.  )$ theo giao tuyến là 
 
 Vậy mặt cầu có phương trình là:$\left ( { x-1 } \right.  ) ^ { 2 } +\left ( { y-3 } \right.  ) ^ { 2 } +\left ( { z-1 } \right.  ) ^ { 2 } =25$.
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 </details>
 

@@ -21,21 +21,47 @@ grade: 12
 
 ### 1. Vectơ pháp tuyến và cặp vectơ chỉ phương của mặt phẳng
 
-Vectơ pháp tuyến của mặt phẳng:Cho mặt phẳng $\left ( { α } \right.  )$. Vectơ $\left. n≠\overrightarrow { 0 } \right.$ và có giá vuông góc với mặt phẳng $\left ( { α } \right.  )$ gọi là vectơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$. Nhận xét:» Nếu $n$ là một vectơ pháp tuyến của $\left ( { α } \right.  )$ thì $k⋅n$ $\left ( { k≠0 } \right.  )$ cũng là một vectơ pháp tuyến của $\left ( { α } \right.  )$.» Một mặt phẳng hoàn toàn được xác định khi biết một điểm và một vectơ pháp tuyến của nó.
+Vectơ pháp tuyến của mặt phẳng:Cho mặt phẳng $\left ( { α } \right.  )$. Vectơ $\left. n≠\overrightarrow { 0 } \right.$ và có giá vuông góc với mặt phẳng $\left ( { α } \right.  )$ gọi là vectơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$. Nhận xét:
 
-Cặp vectơ chỉ phương của mặt phẳng:Cho mặt phẳng $\left ( { α } \right.  )$. Nếu hai vectơ $a$ và $\overrightarrow { b }$ không cùng phương và giá của chúng song song hoặc nằm trên mặt phẳng $\left ( { α } \right.  )$ thì $a,b$ là cặp véctơ chỉ phương của mặt phẳng $\left ( { α } \right.  )$. Nhận xét:» Một mặt phẳng hoàn toàn được xác định khi biết một điểm và cặp vectơ chỉ phương của nó. Vectơ pháp tuyến của mặt phẳng khi biết một cặp vectơ chỉ phương :» Trong không gian $Oxyz$, nếu mặt phẳng $\left ( { α } \right.  )$ nhận hai vectơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $\overrightarrow { b }=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$. làm cặp vectơ chỉ phương thì $\left ( { α } \right.  )$ nhận $\left. n=\left[ a,\overrightarrow { b } \right] \right.$ làm vectơ pháp tuyến.
+- Nếu $n$ là một vectơ pháp tuyến của $\left ( { α } \right.  )$ thì $k⋅n$ $\left ( { k≠0 } \right.  )$ cũng là một vectơ pháp tuyến của $\left ( { α } \right.  )$.
+
+- Một mặt phẳng hoàn toàn được xác định khi biết một điểm và một vectơ pháp tuyến của nó.
+
+Cặp vectơ chỉ phương của mặt phẳng:Cho mặt phẳng $\left ( { α } \right.  )$. Nếu hai vectơ $a$ và $\overrightarrow { b }$ không cùng phương và giá của chúng song song hoặc nằm trên mặt phẳng $\left ( { α } \right.  )$ thì $a,b$ là cặp véctơ chỉ phương của mặt phẳng $\left ( { α } \right.  )$. Nhận xét:
+
+- Một mặt phẳng hoàn toàn được xác định khi biết một điểm và cặp vectơ chỉ phương của nó. Vectơ pháp tuyến của mặt phẳng khi biết một cặp vectơ chỉ phương :
+
+- Trong không gian $Oxyz$, nếu mặt phẳng $\left ( { α } \right.  )$ nhận hai vectơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $\overrightarrow { b }=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$. làm cặp vectơ chỉ phương thì $\left ( { α } \right.  )$ nhận $\left. n=\left[ a,\overrightarrow { b } \right] \right.$ làm vectơ pháp tuyến.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image20.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Vectơ $\left. n=\left[ a,\overrightarrow { b } \right]=\left ( { a_{ 2 } b_{ 3 } -a_{ 3 } b_{ 2 } ;a_{ 3 } b_{ 1 } -a_{ 1 } b_{ 3 } ;a_{ 1 } b_{ 2 } -a_{ 2 } b_{ 1 } } \right.  ) \right.$ được gọi là tích có hướng của hai vectơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $\overrightarrow { b }=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$.
 
-» Vectơ $\left. n=\left[ a,\overrightarrow { b } \right]=\left ( { a_{ 2 } b_{ 3 } -a_{ 3 } b_{ 2 } ;a_{ 3 } b_{ 1 } -a_{ 1 } b_{ 3 } ;a_{ 1 } b_{ 2 } -a_{ 2 } b_{ 1 } } \right.  ) \right.$ được gọi là tích có hướng của hai vectơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $\overrightarrow { b }=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$.»$\left. \left[ a,\overrightarrow { b } \right]=\left ( { \left | { a_{ 2 } { \rm{ } }{ \rm{ } }{ \rm{ } }a_{ 3 } b_{ 2 } { \rm{ } }{ \rm{ } }{ \rm{ } }b_{ 3 } } \right.  |;\left | { a_{ 3 } { \rm{ } }{ \rm{ } }{ \rm{ } }a_{ 1 } { \rm{ } }b_{ 3 } { \rm{ } }{ \rm{ } }{ \rm{ } }b_{ 1 } } \right.  |;\left | { a_{ 1 } { \rm{ } }{ \rm{ } }a_{ 2 } b_{ 1 } { \rm{ } }{ \rm{ } }b_{ 2 } } \right.  | } \right.  )\,=\left ( { a_{ 2 } b_{ 3 } -a_{ 3 } b_{ 2 } ;a_{ 3 } b_{ 1 } -a_{ 1 } b_{ 3 } ;a_{ 1 } b_{ 2 } -a_{ 2 } b_{ 1 } } \right.  ) \right.$.»$a$ cùng phương với $\overrightarrow { b }$ $\left. \left. ⇔\left[ a,\overrightarrow { b } \right]=\overrightarrow { 0 } \right. \right.$.» Nếu $\left. n=\left[ a,\overrightarrow { b } \right] \right.$ thì vectơ $n$ vuông góc với cả hai vectơ $a$ và $\overrightarrow { b }$. Chú ý
+- $\left. \left[ a,\overrightarrow { b } \right]=\left ( { \left | { a_{ 2 } { \rm{ } }{ \rm{ } }{ \rm{ } }a_{ 3 } b_{ 2 } { \rm{ } }{ \rm{ } }{ \rm{ } }b_{ 3 } } \right.  |;\left | { a_{ 3 } { \rm{ } }{ \rm{ } }{ \rm{ } }a_{ 1 } { \rm{ } }b_{ 3 } { \rm{ } }{ \rm{ } }{ \rm{ } }b_{ 1 } } \right.  |;\left | { a_{ 1 } { \rm{ } }{ \rm{ } }a_{ 2 } b_{ 1 } { \rm{ } }{ \rm{ } }b_{ 2 } } \right.  | } \right.  )\,=\left ( { a_{ 2 } b_{ 3 } -a_{ 3 } b_{ 2 } ;a_{ 3 } b_{ 1 } -a_{ 1 } b_{ 3 } ;a_{ 1 } b_{ 2 } -a_{ 2 } b_{ 1 } } \right.  ) \right.$.
+
+- $a$ cùng phương với $\overrightarrow { b }$ $\left. \left. ⇔\left[ a,\overrightarrow { b } \right]=\overrightarrow { 0 } \right. \right.$.
+
+- Nếu $\left. n=\left[ a,\overrightarrow { b } \right] \right.$ thì vectơ $n$ vuông góc với cả hai vectơ $a$ và $\overrightarrow { b }$. Chú ý
 
 ### 2. Phương trình tổng quát của mặt phẳng
 
-Phương trình tổng quát của mặt phẳng:Trong không gian $Oxyz$, mỗi mặt phẳng đều có dạng phương trình:$Ax+By+Cz+D=0\,\,$ với $A ^ { 2 } +B ^ { 2 } +C ^ { 2 } ≠0$, được gọi là phương trình tổng quát của mặt phẳng. Nhận xét:» Nếu mặt phẳng $\left ( { α } \right.  )$ có phương trình $Ax+By+Cz+D=0\,$ (với $A ^ { 2 } +B ^ { 2 } +C ^ { 2 } ≠0$) thì vectơ $\,n=\left ( { A;\,B;\,C } \right.  )$ là một vectơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$» Cho mặt phẳng $\left ( { α } \right.  )$ có phương trình $Ax+By+Cz+D=0\,$. Khi đó:$N_{ 0 } (x_{ 0 } ;y_{ 0 } ;z_{ 0 } )∈\left ( { α } \right.  )⇔Ax_{ 0 } +By_{ 0 } +Cz_{ 0 } +D=0\,$
+Phương trình tổng quát của mặt phẳng:Trong không gian $Oxyz$, mỗi mặt phẳng đều có dạng phương trình:$Ax+By+Cz+D=0\,\,$ với $A ^ { 2 } +B ^ { 2 } +C ^ { 2 } ≠0$, được gọi là phương trình tổng quát của mặt phẳng. Nhận xét:
 
-Lập phương trình tổng quát của mặt phẳng khi biết một số điều kiện: Lập phương trình tổng quát của mặt phẳng đi qua điểm và biết vectơ pháp tuyến:» Trong không gian $Oxyz$, phương trình tổng quát của mặt phẳng đi qua điểm $M_{ 0 } \left ( { x_{ 0 } ;y_{ 0 } ;z_{ 0 } } \right.  )$ và có vectơ pháp tuyến $\,n=\left ( { A;\,B;\,C } \right.  )$ là:$A\left ( { x-x_{ 0 } } \right.  )+B\left ( { y-y_{ 0 } } \right.  )+C\left ( { z-z_{ 0 } } \right.  )=0$ hay $Ax+By+Cz+D=0\,$ với $D=-Ax_{ 0 } -By_{ 0 } -Cz_{ 0 }$ Lập phương trình tổng quát của mặt phẳng đi qua điểm và biết cặp vectơ chỉ phương:» Để lập phương trình tổng quát của mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $M_{ 0 } \left ( { x_{ 0 } ;y_{ 0 } ;z_{ 0 } } \right.  )$ và có cặp vectơ chỉ phương $a;b$, ta thực hiện như sau:Bước 1: Tìm một vectơ pháp tuyến $n=\left[ a;b \right]$. Bước 2: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $M_{ 0 } \left ( { x_{ 0 } ;y_{ 0 } ;z_{ 0 } } \right.  )$ và có vectơ pháp tuyến $n$.
+- Nếu mặt phẳng $\left ( { α } \right.  )$ có phương trình $Ax+By+Cz+D=0\,$ (với $A ^ { 2 } +B ^ { 2 } +C ^ { 2 } ≠0$) thì vectơ $\,n=\left ( { A;\,B;\,C } \right.  )$ là một vectơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$
+- Cho mặt phẳng $\left ( { α } \right.  )$ có phương trình $Ax+By+Cz+D=0\,$. Khi đó:$N_{ 0 } (x_{ 0 } ;y_{ 0 } ;z_{ 0 } )∈\left ( { α } \right.  )⇔Ax_{ 0 } +By_{ 0 } +Cz_{ 0 } +D=0\,$
 
-Phương trình mặt phẳng qua 3 điểm không thẳng hàng: Lập phương trình tổng quát của mặt phẳng đi qua ba điểm không thẳng hàng:» Để lập phương trình tổng quát của mặt phẳng $\left ( { α } \right.  )$ đi qua ba điểm $A,B,C$ không thẳng hàng, ta thực hiện như sau:Bước 1: Tìm cặp vectơ chỉ phương $\left. \overrightarrow { AB },\overrightarrow { AC } \right.$. Bước 2: Tìm một vectơ pháp tuyến $\left. \left. n=\left[ \overrightarrow { AB },\overrightarrow { AC } \right] \right. \right.$. Bước 3: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $A$ (hoặc điểm $B$ hoặc điểm $C$) và có vectơ pháp tuyến $n$. Nhận xét:» Mặt phẳng $\left ( { α } \right.  )$ không đi qua gốc tọa độ $O$ và lần lượt cắt trục $Ox$ tại $A\left ( { a;0;0 } \right.  )$, cắt trục $Oy$ tại $B\left ( { 0;b;0 } \right.  )$, cắt trục $Oz$ tại $C\left ( { 0;0;c } \right.  )$ có phương trình là $\frac { x } { a }+\frac { y } { b }+\frac { z } { c }=1$. với $a.b.c≠0$.» Phương trình trên được gọi là phương trình mặt phẳng theo đoạn chắn.
+Lập phương trình tổng quát của mặt phẳng khi biết một số điều kiện: Lập phương trình tổng quát của mặt phẳng đi qua điểm và biết vectơ pháp tuyến:
+
+- Trong không gian $Oxyz$, phương trình tổng quát của mặt phẳng đi qua điểm $M_{ 0 } \left ( { x_{ 0 } ;y_{ 0 } ;z_{ 0 } } \right.  )$ và có vectơ pháp tuyến $\,n=\left ( { A;\,B;\,C } \right.  )$ là:$A\left ( { x-x_{ 0 } } \right.  )+B\left ( { y-y_{ 0 } } \right.  )+C\left ( { z-z_{ 0 } } \right.  )=0$ hay $Ax+By+Cz+D=0\,$ với $D=-Ax_{ 0 } -By_{ 0 } -Cz_{ 0 }$ Lập phương trình tổng quát của mặt phẳng đi qua điểm và biết cặp vectơ chỉ phương:
+
+- Để lập phương trình tổng quát của mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $M_{ 0 } \left ( { x_{ 0 } ;y_{ 0 } ;z_{ 0 } } \right.  )$ và có cặp vectơ chỉ phương $a;b$, ta thực hiện như sau:Bước 1: Tìm một vectơ pháp tuyến $n=\left[ a;b \right]$. Bước 2: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $M_{ 0 } \left ( { x_{ 0 } ;y_{ 0 } ;z_{ 0 } } \right.  )$ và có vectơ pháp tuyến $n$.
+
+Phương trình mặt phẳng qua 3 điểm không thẳng hàng: Lập phương trình tổng quát của mặt phẳng đi qua ba điểm không thẳng hàng:
+
+- Để lập phương trình tổng quát của mặt phẳng $\left ( { α } \right.  )$ đi qua ba điểm $A,B,C$ không thẳng hàng, ta thực hiện như sau:Bước 1: Tìm cặp vectơ chỉ phương $\left. \overrightarrow { AB },\overrightarrow { AC } \right.$. Bước 2: Tìm một vectơ pháp tuyến $\left. \left. n=\left[ \overrightarrow { AB },\overrightarrow { AC } \right] \right. \right.$. Bước 3: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $A$ (hoặc điểm $B$ hoặc điểm $C$) và có vectơ pháp tuyến $n$. Nhận xét:
+
+- Mặt phẳng $\left ( { α } \right.  )$ không đi qua gốc tọa độ $O$ và lần lượt cắt trục $Ox$ tại $A\left ( { a;0;0 } \right.  )$, cắt trục $Oy$ tại $B\left ( { 0;b;0 } \right.  )$, cắt trục $Oz$ tại $C\left ( { 0;0;c } \right.  )$ có phương trình là $\frac { x } { a }+\frac { y } { b }+\frac { z } { c }=1$. với $a.b.c≠0$.
+
+- Phương trình trên được gọi là phương trình mặt phẳng theo đoạn chắn.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image20.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -43,11 +69,15 @@ Phương trình mặt phẳng qua 3 điểm không thẳng hàng: Lập phương
 
 ### 3. Điều kiện để hai mặt phẳng song song, vuông góc
 
-Điều kiện để hai mặt phẳng song song:Trong không gian $Oxyz$, cho 2 mặt phẳng $\left ( { α_{ 1 } } \right.  ):A_{ 1 } x+B_{ 1 } y+C_{ 1 } z+D_{ 1 } =0$ và $\left ( { α_{ 1 } } \right.  ):A_{ 2 } x+B_{ 2 } y+C_{ 2 } z+D_{ 2 } =0$ có vectơ pháp tuyến lần lượt là $n_{ 1 } =\left ( { A_{ 1 } ;B_{ 1 } ;C_{ 1 } } \right.  ),\,{ \rm{ } }n_{ 2 } =\left ( { A_{ 2 } ;B_{ 2 } ;C_{ 2 } } \right.  )$. » Khi đó:$\left ( { α_{ 1 } } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { α_{ 2 } } \right.  )⇔\left\{ \begin{array}{l} \,n_{ 1 } =kn_{ 2 } D_{ 1 } ≠k.D_{ 2 } \end{array} \right.{ \rm{ } }\left ( { k∈\mathbb{R} } \right.  )$
+Điều kiện để hai mặt phẳng song song:Trong không gian $Oxyz$, cho 2 mặt phẳng $\left ( { α_{ 1 } } \right.  ):A_{ 1 } x+B_{ 1 } y+C_{ 1 } z+D_{ 1 } =0$ và $\left ( { α_{ 1 } } \right.  ):A_{ 2 } x+B_{ 2 } y+C_{ 2 } z+D_{ 2 } =0$ có vectơ pháp tuyến lần lượt là $n_{ 1 } =\left ( { A_{ 1 } ;B_{ 1 } ;C_{ 1 } } \right.  ),\,{ \rm{ } }n_{ 2 } =\left ( { A_{ 2 } ;B_{ 2 } ;C_{ 2 } } \right.  )$.
 
-»$\left ( { α_{ 1 } } \right.  )≡\left ( { α_{ 2 } } \right.  )⇔\left\{ \begin{array}{l} \,n_{ 1 } =kn_{ 2 } D_{ 1 } =kD_{ 2 } \end{array} \right.{ \rm{ } }\left ( { k∈\mathbb{R} } \right.  )$»$\left ( { α_{ 1 } } \right.  )∩\left ( { α_{ 2 } } \right.  )$ $⇔\,n_{ 1 }$ và $n_{ 2 }$ không cùng phương.. Chú ý
+- Khi đó:$\left ( { α_{ 1 } } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { α_{ 2 } } \right.  )⇔\left\{ \begin{array}{l} \,n_{ 1 } =kn_{ 2 } D_{ 1 } ≠k.D_{ 2 } \end{array} \right.{ \rm{ } }\left ( { k∈\mathbb{R} } \right.  )$
+- $\left ( { α_{ 1 } } \right.  )≡\left ( { α_{ 2 } } \right.  )⇔\left\{ \begin{array}{l} \,n_{ 1 } =kn_{ 2 } D_{ 1 } =kD_{ 2 } \end{array} \right.{ \rm{ } }\left ( { k∈\mathbb{R} } \right.  )$
+- $\left ( { α_{ 1 } } \right.  )∩\left ( { α_{ 2 } } \right.  )$ $⇔\,n_{ 1 }$ và $n_{ 2 }$ không cùng phương.. Chú ý
 
-Điều kiện để hai mặt phẳng vuông góc:Trong không gian $Oxyz$, cho 2 mặt phẳng $\left ( { α_{ 1 } } \right.  ):A_{ 1 } x+B_{ 1 } y+C_{ 1 } z+D_{ 1 } =0$ và $\left ( { α_{ 1 } } \right.  ):A_{ 2 } x+B_{ 2 } y+C_{ 2 } z+D_{ 2 } =0$ có vectơ pháp tuyến lần lượt là $n_{ 1 } =\left ( { A_{ 1 } ;B_{ 1 } ;C_{ 1 } } \right.  ),\,{ \rm{ } }n_{ 2 } =\left ( { A_{ 2 } ;B_{ 2 } ;C_{ 2 } } \right.  )$. » Khi đó:$\left ( { α_{ 1 } } \right.  )⊥\left ( { α_{ 2 } } \right.  )⇔n_{ 1 } .n_{ 2 } =0⇔A_{ 1 } A_{ 2 } +B_{ 1 } B_{ 2 } +C_{ 1 } C_{ 2 } =0$
+Điều kiện để hai mặt phẳng vuông góc:Trong không gian $Oxyz$, cho 2 mặt phẳng $\left ( { α_{ 1 } } \right.  ):A_{ 1 } x+B_{ 1 } y+C_{ 1 } z+D_{ 1 } =0$ và $\left ( { α_{ 1 } } \right.  ):A_{ 2 } x+B_{ 2 } y+C_{ 2 } z+D_{ 2 } =0$ có vectơ pháp tuyến lần lượt là $n_{ 1 } =\left ( { A_{ 1 } ;B_{ 1 } ;C_{ 1 } } \right.  ),\,{ \rm{ } }n_{ 2 } =\left ( { A_{ 2 } ;B_{ 2 } ;C_{ 2 } } \right.  )$.
+
+- Khi đó:$\left ( { α_{ 1 } } \right.  )⊥\left ( { α_{ 2 } } \right.  )⇔n_{ 1 } .n_{ 2 } =0⇔A_{ 1 } A_{ 2 } +B_{ 1 } B_{ 2 } +C_{ 1 } C_{ 2 } =0$
 
 ### 4. Khoảng cách từ một điểm đến một mặt phẳng
 
@@ -55,12 +85,18 @@ Phương trình mặt phẳng qua 3 điểm không thẳng hàng: Lập phương
 
 ### 5. Các mặt phẳng đặc biệt
 
-Các mặt phẳng đặc biệt:TÍNH CHẤT MẶT PHẲNGPHƯƠNG TRÌNHHỆ SỐ ĐẶC BIỆT $\left ( { α } \right.  )$ đi qua/chứa gốc $O$.$\left ( { α } \right.  ):Ax+By+Cz=0$ $D=0$ $\left ( { α } \right.  )$ song song/chứa $Ox$.$\left ( { α } \right.  ):By+Cz+D=0$ $A=0$ $\left ( { α } \right.  )$ song song/chứa $Oy$.$\left ( { α } \right.  ):Ax+Cz+D=0$ $B=0$ $\left ( { α } \right.  )$ song song/chứa $Oz$.$\left ( { α } \right.  ):Ax+By+D=0$ $C=0$ $\left ( { α } \right.  )$ song song/trùng $\left ( { Oxy } \right.  )$.$\left ( { α } \right.  ):Cz+D=0$ $A=B=0$ $\left ( { α } \right.  )$ song song/trùng $\left ( { Oxz } \right.  )$.$\left ( { α } \right.  ):By+D=0$ $A=C=0$ $\left ( { α } \right.  )$ song song/trùng $\left ( { Oyz } \right.  )$.$\left ( { α } \right.  ):Ax+D=0$ $B=C=0$ Nhận xét:» Mặt phẳng không chứa ẩn nào thì mặt phẳng sẽ song song/chứa trục đó hoặc mặt phẳng không chứa ẩn nào thì mặt phẳng sẽ song song/chứa mặt phẳng đó.
+Các mặt phẳng đặc biệt:TÍNH CHẤT MẶT PHẲNGPHƯƠNG TRÌNHHỆ SỐ ĐẶC BIỆT $\left ( { α } \right.  )$ đi qua/chứa gốc $O$.$\left ( { α } \right.  ):Ax+By+Cz=0$ $D=0$ $\left ( { α } \right.  )$ song song/chứa $Ox$.$\left ( { α } \right.  ):By+Cz+D=0$ $A=0$ $\left ( { α } \right.  )$ song song/chứa $Oy$.$\left ( { α } \right.  ):Ax+Cz+D=0$ $B=0$ $\left ( { α } \right.  )$ song song/chứa $Oz$.$\left ( { α } \right.  ):Ax+By+D=0$ $C=0$ $\left ( { α } \right.  )$ song song/trùng $\left ( { Oxy } \right.  )$.$\left ( { α } \right.  ):Cz+D=0$ $A=B=0$ $\left ( { α } \right.  )$ song song/trùng $\left ( { Oxz } \right.  )$.$\left ( { α } \right.  ):By+D=0$ $A=C=0$ $\left ( { α } \right.  )$ song song/trùng $\left ( { Oyz } \right.  )$.$\left ( { α } \right.  ):Ax+D=0$ $B=C=0$ Nhận xét:
+
+- Mặt phẳng không chứa ẩn nào thì mặt phẳng sẽ song song/chứa trục đó hoặc mặt phẳng không chứa ẩn nào thì mặt phẳng sẽ song song/chứa mặt phẳng đó.
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Xác định vecto pháp tuyến của mặt phẳng
 
-Một mặt phẳng có vô số véctơ pháp tuyến và chúng cùng phương với nhau. » Chẳng hạn $n$ là véctơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$ thì $k⋅n$ $\left ( { k≠0 } \right.  )$ cũng là véctơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$.» Nếu mặt phẳng $\left ( { P } \right.  )$ có cặp véctơ chỉ phương là $u_{ 1 } ;u_{ 2 }$ thì $\left ( { P } \right.  )$ có véctơ pháp tuyến là $n=\left[ u_{ 1 } ;u_{ 2 } \right]$ Phương pháp
+Một mặt phẳng có vô số véctơ pháp tuyến và chúng cùng phương với nhau.
+
+- Chẳng hạn $n$ là véctơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$ thì $k⋅n$ $\left ( { k≠0 } \right.  )$ cũng là véctơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$.
+
+- Nếu mặt phẳng $\left ( { P } \right.  )$ có cặp véctơ chỉ phương là $u_{ 1 } ;u_{ 2 }$ thì $\left ( { P } \right.  )$ có véctơ pháp tuyến là $n=\left[ u_{ 1 } ;u_{ 2 } \right]$ Phương pháp
 
 **Ví dụ 1.1.** Trong không gian $Oxyz$,mặt phẳng $\left ( { α } \right.  )$ song song với giá của hai vectơ $a=\left ( { 1;-2;3 } \right.  ),\,\,b=\left ( { 3;0;5 } \right.  )$. Tìm vectơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$.
 
@@ -87,8 +123,9 @@ Ta có:$\left. \left. \left. \overrightarrow { AB }=\left ( { -2;-3;8 } \right. 
 Vậy:$\left. \left. n=\left[ \overrightarrow { AB },\overrightarrow { AC } \right]=\left ( { -18;4;-3 } \right.  ) \right. \right.$.
 
 ### Dạng 2. PTMP khi biết điểm đi qua và cặp vecto chỉ phương
+- Phương trình tổng quát của mặt phẳng $\left ( { P } \right.  )$ đi qua điểm $M\left ( { x_{ 0 } ;\,y_{ 0 } \,;z_{ 0 } } \right.  )$ và có véctơ pháp tuyến là $n=\left ( { A;\,B;\,C } \right.  )$ có dạng:$A\left ( { x-x_{ 0 } } \right.  )+B\left ( { y-y_{ 0 } } \right.  )+C\left ( { z-z_{ 0 } } \right.  )=0$ $⇒Ax+By+Cz+D=0$ (với $D=-Ax_{ 0 } -By_{ 0 } -Cz_{ 0 }$).
 
-» Phương trình tổng quát của mặt phẳng $\left ( { P } \right.  )$ đi qua điểm $M\left ( { x_{ 0 } ;\,y_{ 0 } \,;z_{ 0 } } \right.  )$ và có véctơ pháp tuyến là $n=\left ( { A;\,B;\,C } \right.  )$ có dạng:$A\left ( { x-x_{ 0 } } \right.  )+B\left ( { y-y_{ 0 } } \right.  )+C\left ( { z-z_{ 0 } } \right.  )=0$ $⇒Ax+By+Cz+D=0$ (với $D=-Ax_{ 0 } -By_{ 0 } -Cz_{ 0 }$).» Nếu mặt phẳng $\left ( { P } \right.  )$ có cặp véctơ chỉ phương là $u_{ 1 } ;u_{ 2 }$ thì $\left ( { P } \right.  )$ có véctơ pháp tuyến là $n=\left[ u_{ 1 } ;u_{ 2 } \right]$<p align="center"><img src="/assets/images/toan-12/c5_b1_image156.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Nếu mặt phẳng $\left ( { P } \right.  )$ có cặp véctơ chỉ phương là $u_{ 1 } ;u_{ 2 }$ thì $\left ( { P } \right.  )$ có véctơ pháp tuyến là $n=\left[ u_{ 1 } ;u_{ 2 } \right]$<p align="center"><img src="/assets/images/toan-12/c5_b1_image156.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 Phương pháp
 
@@ -107,8 +144,9 @@ Mặt phẳng $\left ( { P } \right.  )$ có cặp véctơ chỉ phương là $a
 Phương trình tổng quát của mặt phẳng $\left ( { P } \right.  )$ đi qua điểm $M\left ( { 2\,;\,-1\,;0 } \right.  )$ có véctơ pháp tuyến là $n=\left ( { -1\,;-1\,;1 } \right.  )$ có dạng:$-1\left ( { x-2 } \right.  )-1\left ( { y+1 } \right.  )+1\left ( { z-0 } \right.  )=0$ $⇔-x-y+z+1=0$.
 
 ### Dạng 3. PTMP qua ba điểm không thẳng hàng
+- Phương trình mặt phẳng $\left ( { P } \right.  )$ di qua $A\,;\,B\,;\,C$ không thẳng hàng. Bước 1: Tìm cặp vectơ chỉ phương $\left. \overrightarrow { AB },\overrightarrow { AC } \right.$. Bước 2: Tìm một vectơ pháp tuyến $\left. \left. n=\left[ \overrightarrow { AB },\overrightarrow { AC } \right] \right. \right.$. Bước 3: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $A$ (hoặc điểm $B$ hoặc điểm $C$) và có vectơ pháp tuyến $n$.
 
-» Phương trình mặt phẳng $\left ( { P } \right.  )$ di qua $A\,;\,B\,;\,C$ không thẳng hàng. Bước 1: Tìm cặp vectơ chỉ phương $\left. \overrightarrow { AB },\overrightarrow { AC } \right.$. Bước 2: Tìm một vectơ pháp tuyến $\left. \left. n=\left[ \overrightarrow { AB },\overrightarrow { AC } \right] \right. \right.$. Bước 3: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $A$ (hoặc điểm $B$ hoặc điểm $C$) và có vectơ pháp tuyến $n$.» Phương trình mặt phẳng $\left ( { P } \right.  )$ là phương trình mặt chắn, tức mặt phẳng $\left ( { P } \right.  )$ đi qua $A\left ( { a\,;\,0\,;\,0 } \right.  )\,;\,B\left ( { 0\,;\,b\,;\,0 } \right.  )\,;\,C\left ( { 0\,;\,0\,;\,c } \right.  )$ có dạng:$\left ( { P } \right.  ):\frac { x } { a }+\frac { y } { b }+\frac { z } { c }=1$.
+- Phương trình mặt phẳng $\left ( { P } \right.  )$ là phương trình mặt chắn, tức mặt phẳng $\left ( { P } \right.  )$ đi qua $A\left ( { a\,;\,0\,;\,0 } \right.  )\,;\,B\left ( { 0\,;\,b\,;\,0 } \right.  )\,;\,C\left ( { 0\,;\,0\,;\,c } \right.  )$ có dạng:$\left ( { P } \right.  ):\frac { x } { a }+\frac { y } { b }+\frac { z } { c }=1$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image20.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -165,8 +203,7 @@ Khi đó $a=2$,$c=8$.
 Vậy phương trình mặt phẳng $\left ( { P } \right.  )$ là:$\frac { x } { 2 }+\frac { y } { 4 }+\frac { z } { 8 }=1$ $⇔4x+2y+z-8=0$.
 
 ### Dạng 4. PTMP trung trực của đoạn thẳng
-
-» Trong không gian $Oxyz$, viết phương trình mặt phẳng $\left ( { α } \right.  )$ trung trực đoạn thẳng $AB$ Bước 1: Véctơ pháp tuyến của mặt $\left ( { α } \right.  )$ là:$\left. n=\overrightarrow { AB } \right.$. Bước 2: Tìm tọa độ trung điểm $I$ của đoạn $AB$. Bước 3: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $I$ và có vectơ pháp tuyến $\left. n=\overrightarrow { AB } \right.$.
+- Trong không gian $Oxyz$, viết phương trình mặt phẳng $\left ( { α } \right.  )$ trung trực đoạn thẳng $AB$ Bước 1: Véctơ pháp tuyến của mặt $\left ( { α } \right.  )$ là:$\left. n=\overrightarrow { AB } \right.$. Bước 2: Tìm tọa độ trung điểm $I$ của đoạn $AB$. Bước 3: Viết phương trình mặt phẳng $\left ( { α } \right.  )$ đi qua điểm $I$ và có vectơ pháp tuyến $\left. n=\overrightarrow { AB } \right.$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image259.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -219,8 +256,7 @@ Khi đó mặt phẳng trung trực của $C'D$:$\left. \left\{ \begin{array}{l}
 có phương trình là $7\left ( { x-\frac { 13 } { 2 } } \right.  )+4\left ( { y-2 } \right.  )+3\left ( { z-\frac { 5 } { 2 } } \right.  )=0$ $⇔7x+4y+3z-61=0$.
 
 ### Dạng 5. PTMP 1 điểm kèm điều kiện song song với mặt phẳng khác
-
-» Trong không gian $Oxyz$, viết phương trình mặt phẳng $\left ( { α } \right.  )$ LoạiPhương pháp⑴ Qua $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$ và song song $\left ( { β } \right.  ):Ax+By+Cz+D=0$.
+- Trong không gian $Oxyz$, viết phương trình mặt phẳng $\left ( { α } \right.  )$ LoạiPhương pháp⑴ Qua $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$ và song song $\left ( { β } \right.  ):Ax+By+Cz+D=0$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image334.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -273,16 +309,13 @@ Vậy $2x+21y-z-23=0$.
 $\left ( { Q } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { P } \right.  )$ nên mặt phẳng $\left ( { Q } \right.  ):2x-2y+z+C=0$;$C≠-5$, chọn $M\left ( { 0\,;\,0\,;\,5 } \right.  )∈\left ( { P } \right.  )$
 
 Ta có $d\left ( { \left ( { P } \right.  )\,;\,\left ( { Q } \right.  ) } \right.  )=d\left ( { M\,;\,\left ( { Q } \right.  ) } \right.  )=\frac { \left | { 5+C } \right.  | } { \sqrt{ 2 ^ { 2 } +\left ( { -2 } \right.  ) ^ { 2 } +1 ^ { 2 } } }=3$ $⇔\left[ C=4C=-14 \right.$
-
-» Với $C=4⇒\left ( { Q } \right.  ):2x-2y+z+4=0$ khi đó $\left ( { Q } \right.  )$ cắt $Ox$ tại điểm $M_{ 1 } \left ( { -2\,;\,0\,;\,0 } \right.  )$ có hoành độ âm nên trường hợp này $\left ( { Q } \right.  )$ không thỏa đề bài.
-
-» Với $C=-14⇒\left ( { Q } \right.  ):2x-2y+z-14=0$ khi đó $\left ( { Q } \right.  )$ cắt $Ox$ tại điểm $M_{ 2 } \left ( { 7\,;\,0\,;\,0 } \right.  )$ có hoành độ dương do đó $\left ( { Q } \right.  ):2x-2y+z-14=0$ thỏa đề bài.
+- Với $C=4⇒\left ( { Q } \right.  ):2x-2y+z+4=0$ khi đó $\left ( { Q } \right.  )$ cắt $Ox$ tại điểm $M_{ 1 } \left ( { -2\,;\,0\,;\,0 } \right.  )$ có hoành độ âm nên trường hợp này $\left ( { Q } \right.  )$ không thỏa đề bài.
+- Với $C=-14⇒\left ( { Q } \right.  ):2x-2y+z-14=0$ khi đó $\left ( { Q } \right.  )$ cắt $Ox$ tại điểm $M_{ 2 } \left ( { 7\,;\,0\,;\,0 } \right.  )$ có hoành độ dương do đó $\left ( { Q } \right.  ):2x-2y+z-14=0$ thỏa đề bài.
 
 Vậy phương trình mặt phẳng $\left ( { Q } \right.  ):2x-2y+z-14=0$.
 
 ### Dạng 6. PTMP 1 điểm kèm điều kiện vuông góc với mặt phẳng khác
-
-▶ Trong không gian $Oxyz$, viết phương trình mặt phẳng $\left ( { α } \right.  )$ LoạiPhương phápQua $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$ và $⊥$ 2 mặt $\left ( { P } \right.  ):Ax+By+Cz+D=0$,$\,\left ( { Q } \right.  ):A'x+B'y+C'z+D'=0$.
+- Trong không gian $Oxyz$, viết phương trình mặt phẳng $\left ( { α } \right.  )$ LoạiPhương phápQua $M\left ( { x_{ 0 } \,;\,y_{ 0 } \,;\,z_{ 0 } } \right.  )$ và $⊥$ 2 mặt $\left ( { P } \right.  ):Ax+By+Cz+D=0$,$\,\left ( { Q } \right.  ):A'x+B'y+C'z+D'=0$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b1_image425.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -327,8 +360,7 @@ Mặt phẳng $\left ( { P } \right.  )$ đi qua $A\left ( { 0\,;\,1\,;\,0 } \ri
 Vậy phương trình mặt phẳng $\left ( { P } \right.  )$ là $4x-3y-2z+3=0$.
 
 ### Dạng 7. Khoảng cách từ một điểm đến một mặt phẳng
-
-» Tính khoảng cách từ điểm $M_{ 0 } \left ( { x_{ 0 } \,;y_{ 0 } \,;z_{ 0 } } \right.  )$ đến mặt phẳng $(P):Ax+By+Cz+D=0$ như sauBước 1: Tìm $M_{ 0 } \left ( { x_{ 0 } \,;y_{ 0 } \,;z_{ 0 } } \right.  )$; viết phương trình mặt phẳng $\left ( { P } \right.  ):Ax+By+Cz+D=0$. Bước 2: Tính khoảng cách từ điểm $M_{ 0 }$ đến mặt phẳng $\left ( { P } \right.  ):Ax+By+Cz+D=0$ theo công thức $d\left ( { M_{ 0 } ,\left ( { P } \right.  ) } \right.  )=\frac { \left | { Ax_{ 0 } +By_{ 0 } +Cz_{ 0 } +D } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }$ Lưu ý:$d\left ( { M_{ 0 } ,\left ( { Oxy } \right.  ) } \right.  )=\sqrt{ \left ( { z_{ 0 } } \right.  ) ^ { 2 } }$ $d\left ( { M_{ 0 } ,Ox } \right.  )=\sqrt{ \left ( { y_{ 0 } } \right.  ) ^ { 2 } +\left ( { z_{ 0 } } \right.  ) ^ { 2 } }$ Phương pháp
+- Tính khoảng cách từ điểm $M_{ 0 } \left ( { x_{ 0 } \,;y_{ 0 } \,;z_{ 0 } } \right.  )$ đến mặt phẳng $(P):Ax+By+Cz+D=0$ như sauBước 1: Tìm $M_{ 0 } \left ( { x_{ 0 } \,;y_{ 0 } \,;z_{ 0 } } \right.  )$; viết phương trình mặt phẳng $\left ( { P } \right.  ):Ax+By+Cz+D=0$. Bước 2: Tính khoảng cách từ điểm $M_{ 0 }$ đến mặt phẳng $\left ( { P } \right.  ):Ax+By+Cz+D=0$ theo công thức $d\left ( { M_{ 0 } ,\left ( { P } \right.  ) } \right.  )=\frac { \left | { Ax_{ 0 } +By_{ 0 } +Cz_{ 0 } +D } \right.  | } { \sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }$ Lưu ý:$d\left ( { M_{ 0 } ,\left ( { Oxy } \right.  ) } \right.  )=\sqrt{ \left ( { z_{ 0 } } \right.  ) ^ { 2 } }$ $d\left ( { M_{ 0 } ,Ox } \right.  )=\sqrt{ \left ( { y_{ 0 } } \right.  ) ^ { 2 } +\left ( { z_{ 0 } } \right.  ) ^ { 2 } }$ Phương pháp
 
 **Ví dụ 7.1.** Cho hình lập phươngABCD.EFGHcạnh $1$. Điểm $M$ được cho thỏa mãn hệ thức $\left. \left. \overrightarrow { AM }+\overrightarrow { AE }=3\overrightarrow { CD } \right. \right.$. Tính khoảng cách từ điểm $M$ đến mặt phẳng $\left ( { EBD } \right.  )$.
 
@@ -422,7 +454,10 @@ Vậy phương trình của $\left ( { P } \right.  )$ là $6x+3y+2z-24=0$.
 
 ### Dạng 9. Ứng dụng tích có hướng
 
-⑴ Bốn điểm $A,B,C,D$ tạo thành tứ diện:$\left. \left. \left. \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\overrightarrow { AD }≠0 \right. \right. \right.$.$⇔$ $A,B,C,D$ không đồng phẳng⑵ Diện tíchtam giác $ABC$:$\left. \left. S_{ \Delta ABC } =\frac { 1 } { 2 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | \right. \right.$.$⇒$Đường caotam giác $ABC$:$\left. \left. \left. S_{ \Delta ABC } =\frac { 1 } { 2 }AH.BC⇒AH=\frac { 2S_{ \Delta ABC } } { BC }=\frac { \left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | } { \left | { \overrightarrow { BC } } \right.  | } \right. \right. \right.$⑶ Diện tích hình bình hànhABCD:$\left. \left. S_{ ABCD } =2S_{ \Delta ABC } =\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | \right. \right.$.⑷ Thể tích tứ diệnABCD:$\left. \left. \left. V=\frac { 1 } { 6 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } } \right.  | \right. \right. \right.$.$⇒$Đường cao chópABCD:$\left. \left. \left. \left. \left. V_{ ABCD } =\frac { 1 } { 3 }d\left ( { A,\left ( { BCD } \right.  ) } \right.  ).S_{ \Delta BCD } ⇒d\left ( { A,\left ( { BCD } \right.  ) } \right.  )=\frac { 3V_{ ABCD } } { S_{ \Delta BCD } }=\frac { \left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } } \right.  | } { \left | { \left[ \overrightarrow { BC },\overrightarrow { BD } \right] } \right.  | } \right. \right. \right. \right. \right.$▶ Bài toán tính diện tích tam giác: Trong không gian $Oxyz$,cho $A\left ( { ... } \right.  ),B\left ( { ... } \right.  ),C\left ( { ... } \right.  )$. Tính diện tích tam giác $ABC$ Hướng giải quyếtBước 1: Tìm tọa độ các vectơ $\left. \left. \left. \overrightarrow { AB },\overrightarrow { AC }⇒\left[ \overrightarrow { AB },\overrightarrow { AC } \right] \right. \right. \right.$. Bước 2: Sử dụng $\left. \left. S_{ \Delta ABC } =\frac { 1 } { 2 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | \right. \right.$ để tính diện tíchtam giác $ABC$. Nếu bài toán yêu cầu tính đường cao trong tam giác:Bước 3: Sử dụng $S_{ \Delta OAB } =\frac { 1 } { 2 }AH.OB⇒AH=\frac { 2S_{ \Delta OAB } } { OB }$ để tính độ dài đường cao $AH$.▶ Bài toán tính thể tích tứ diện: Trong không gian $Oxyz$,cho $A\left ( { ... } \right.  ),B\left ( { ... } \right.  ),C\left ( { ... } \right.  ),D\left ( { ... } \right.  )$. Tính thể tích tứ diệnABCDHướng giải quyếtBước 1: Tìm tọa độ các vectơ $\left. \left. \left. \left. \left. \overrightarrow { AB },\overrightarrow { AC },\overrightarrow { AD }⇒\left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } \right. \right. \right. \right. \right.$. Bước 2: Sử dụng $\left. \left. \left. V=\frac { 1 } { 6 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } } \right.  | \right. \right. \right.$ để tính thể tích tứ diệnABCD. Nếu bài toán yêu cầu tính khoảng cách hạ từ đỉnh:Bước 3: Sử dụng $V_{ ABCD } =\frac { 1 } { 3 }d\left ( { A,\left ( { BCD } \right.  ) } \right.  ).S_{ \Delta BCD } ⇒d\left ( { A,\left ( { BCD } \right.  ) } \right.  )=\frac { 3V_{ ABCD } } { S_{ \Delta BCD } }$ để tính độ dài khoảng cáchPhương pháp
+⑴ Bốn điểm $A,B,C,D$ tạo thành tứ diện:$\left. \left. \left. \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\overrightarrow { AD }≠0 \right. \right. \right.$.$⇔$ $A,B,C,D$ không đồng phẳng⑵ Diện tíchtam giác $ABC$:$\left. \left. S_{ \Delta ABC } =\frac { 1 } { 2 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | \right. \right.$.$⇒$Đường caotam giác $ABC$:$\left. \left. \left. S_{ \Delta ABC } =\frac { 1 } { 2 }AH.BC⇒AH=\frac { 2S_{ \Delta ABC } } { BC }=\frac { \left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | } { \left | { \overrightarrow { BC } } \right.  | } \right. \right. \right.$⑶ Diện tích hình bình hànhABCD:$\left. \left. S_{ ABCD } =2S_{ \Delta ABC } =\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | \right. \right.$.⑷ Thể tích tứ diệnABCD:$\left. \left. \left. V=\frac { 1 } { 6 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } } \right.  | \right. \right. \right.$.$⇒$Đường cao chópABCD:$\left. \left. \left. \left. \left. V_{ ABCD } =\frac { 1 } { 3 }d\left ( { A,\left ( { BCD } \right.  ) } \right.  ).S_{ \Delta BCD } ⇒d\left ( { A,\left ( { BCD } \right.  ) } \right.  )=\frac { 3V_{ ABCD } } { S_{ \Delta BCD } }=\frac { \left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } } \right.  | } { \left | { \left[ \overrightarrow { BC },\overrightarrow { BD } \right] } \right.  | } \right. \right. \right. \right. \right.$
+- Bài toán tính diện tích tam giác: Trong không gian $Oxyz$,cho $A\left ( { ... } \right.  ),B\left ( { ... } \right.  ),C\left ( { ... } \right.  )$. Tính diện tích tam giác $ABC$ Hướng giải quyếtBước 1: Tìm tọa độ các vectơ $\left. \left. \left. \overrightarrow { AB },\overrightarrow { AC }⇒\left[ \overrightarrow { AB },\overrightarrow { AC } \right] \right. \right. \right.$. Bước 2: Sử dụng $\left. \left. S_{ \Delta ABC } =\frac { 1 } { 2 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right] } \right.  | \right. \right.$ để tính diện tíchtam giác $ABC$. Nếu bài toán yêu cầu tính đường cao trong tam giác:Bước 3: Sử dụng $S_{ \Delta OAB } =\frac { 1 } { 2 }AH.OB⇒AH=\frac { 2S_{ \Delta OAB } } { OB }$ để tính độ dài đường cao $AH$.
+
+- Bài toán tính thể tích tứ diện: Trong không gian $Oxyz$,cho $A\left ( { ... } \right.  ),B\left ( { ... } \right.  ),C\left ( { ... } \right.  ),D\left ( { ... } \right.  )$. Tính thể tích tứ diệnABCDHướng giải quyếtBước 1: Tìm tọa độ các vectơ $\left. \left. \left. \left. \left. \overrightarrow { AB },\overrightarrow { AC },\overrightarrow { AD }⇒\left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } \right. \right. \right. \right. \right.$. Bước 2: Sử dụng $\left. \left. \left. V=\frac { 1 } { 6 }\left | { \left[ \overrightarrow { AB },\overrightarrow { AC } \right].\,\overrightarrow { AD } } \right.  | \right. \right. \right.$ để tính thể tích tứ diệnABCD. Nếu bài toán yêu cầu tính khoảng cách hạ từ đỉnh:Bước 3: Sử dụng $V_{ ABCD } =\frac { 1 } { 3 }d\left ( { A,\left ( { BCD } \right.  ) } \right.  ).S_{ \Delta BCD } ⇒d\left ( { A,\left ( { BCD } \right.  ) } \right.  )=\frac { 3V_{ ABCD } } { S_{ \Delta BCD } }$ để tính độ dài khoảng cáchPhương pháp
 
 **Ví dụ 9.1.** Trong không gian $Oxyz$,cho hai điểm $A\left ( { 1\,;\,2\,;\,-1 } \right.  )$,$B\left ( { 0\,;\,-2\,;\,3 } \right.  )$. ⑴ Tính diện tích tam giác $OAB$ với $O$ là gốc tạo độ.⑵ Tính độ dài đường cao $AH$ hạ từ đỉnh $A$ của tam giác $OAB.$
 
@@ -594,25 +629,25 @@ Lời giải
 
 Véctơ pháp tuyến của $\left ( { P } \right.  )$ là $n_{ 2 } \left ( { 2;3;1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Mặt phẳng $\left ( { P } \right.  )$ có vectơ pháp tuyến là $n=\left ( { 6;9;3 } \right.  )$.
 
 Ta có $n=\left ( { 6;9;3 } \right.  )=3\left ( { 2;3;1 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Mặt phẳng $\left ( { P } \right.  )$ có vectơ pháp tuyến là $n=\left ( { -4;-6;-2 } \right.  )$.
 
 $n=\left ( { -4;-6;-2 } \right.  )=-2\left ( { 2;3;1 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Điểm $M\left ( { 0;0;2024 } \right.  )$ không thuộc mặt phẳng $\left ( { P } \right.  )$.
 
 Thay điểm $M\left ( { 0;0;2024 } \right.  )$ vào mặt phẳng $\left ( { P } \right.  )$:$2.0+3.0+2024-2024=0⇒M∈\left ( { P } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -627,7 +662,7 @@ Lời giải
 
 Ta có $\overrightarrow { AB }=\left ( { 3;1;2 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Mặt phẳng đi qua A và vuông góc với $AB$ có phương trình là $3x+y+2z-3=0$.
 
@@ -637,19 +672,19 @@ Suy ra mặt phẳng $\left ( { Q } \right.  )$ nhận vectơ $\overrightarrow {
 
 Vậy phương trình mặt phẳng $(Q)$ cần tìm: $3(x-1) + y + 2z = 0 \Leftrightarrow 3x + y + 2z - 3 = 0$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Nếu $I$ là trung điểm đoạn thẳng $AB$ thì $I\left ( { \frac { 5 } { 2 };\frac { 1 } { 2 };1 } \right.  )$.
 
 $I$ là trung điểm đoạn thẳng $AB$ nên $I\left ( { \frac { 5 } { 2 };\frac { 1 } { 2 };1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Mặt phẳng trung trực đoạn thẳng $AB$ có phương trình là $3x+y+2z-12=0$.
 
 Mặt phẳng trung trực đoạn thẳng $AB$ là mặt phẳng đi qua I và vuông góc $AB$ nên có phương trình là $3\left ( { x-\frac { 5 } { 2 } } \right.  )+y-\frac { 1 } { 2 }+2\left ( { z-1 } \right.  )=0$ $⇔3x+y+2z-10=0$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -666,13 +701,13 @@ Ta có $\overrightarrow { AB }=\left ( { 1;6;5 } \right.  )$;$\overrightarrow { 
 
 $\overrightarrow { AB }=\left ( { 1;6;5 } \right.  )$ $\left. \left. \left. \left. ⇒\overrightarrow { AB }=\overrightarrow { i }+6\overrightarrow { j }+5\overrightarrow { k } \right. \right. \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\left. \overrightarrow { AB }⊥\overrightarrow { AC } \right.$.
 
 $\overrightarrow{AB} \perp \overrightarrow{AC} \Leftrightarrow 1.(-1) + 6.8 + 5.9 = 0$ vô lí.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Phương trình mặt phẳng đi qua điểm $B$ và vuông góc với $AC$ là $x-8y-9z+14=0$.
 
@@ -680,7 +715,7 @@ Phương trình mặt phẳng đi qua điểm $B$ và vuông góc với $AC$ có
 
 $-\left ( { x-2 } \right.  )+8\left ( { y-7 } \right.  )+9\left ( { z-9 } \right.  )=0⇔x-8y-9z+135=0$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Phương trình mặt phẳng chứa $AB$ song song với $CD$ là $8x-7y-13z+50=0$.
 
@@ -690,7 +725,7 @@ Phương trình mặt phẳng cần tìm:
 
 $-13\left ( { x-1 } \right.  )+8\left ( { y-1 } \right.  )-7\left ( { z-4 } \right.  )=0$ $⇔13x-8y+17z-33=0$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -705,25 +740,25 @@ Lời giải
 
 $A\left ( { 1;1;4 } \right.  )$,$B\left ( { 2;7;9 } \right.  )$ $\left. ⇒\overrightarrow { AB }=\left ( { 1;6;5 } \right.  ) \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Mặt phẳng $\left ( { ABC } \right.  )$ có 1 vectơ pháp tuyến là $n=\left ( { 1;-1;1 } \right.  )$.
 
 $\left. \left. \left[ \overrightarrow { AB },\overrightarrow { AC } \right] \right. \right.$ $=\left ( { 14;-14;14 } \right.  )$ $=14\left ( { 1;-1;1 } \right.  )$ nên $\left ( { ABC } \right.  )$ có 1 vectơ pháp tuyến là $n=\left ( { 1;-1;1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $\left ( { ABC } \right.  )$:$x-y+z-4=0$
 
 $\left ( { ABC } \right.  )$ đi qua $A\left ( { 1;1;4 } \right.  )$ có vtpt $n=\left ( { 1;-1;1 } \right.  )$ nên có phương trình $x-y+z-4=0$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $O∈\left ( { ABC } \right.  )$.
 
 Tọa độ $O$ không thỏa phương trình $\left ( { ABC } \right.  )$ nên $O∉\left ( { ABC } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -740,7 +775,7 @@ $\left ( { P } \right.  )$ có VTPT $\overrightarrow { n_{ 1 } }=\left ( { 1;2;-
 
 $\left. \overrightarrow { n_{ 1 } }.\overrightarrow { n_{ 2 } }=0 \right.$ nên $\left ( { P } \right.  )⊥\left ( { Q } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $\left ( { α } \right.  )$ qua $O$ và song song $\left ( { P } \right.  )$ có phương trình là $\left ( { α } \right.  ):x+2y-z=0$.
 
@@ -748,7 +783,7 @@ $\left ( { α } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { P } \right.  )$ nên
 
 $O∈\left ( { α } \right.  )⇒D=0$. Vậy $\left ( { α } \right.  ):x+2y-z=0$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $\left ( { P } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { R } \right.  )$ khi $m=2$.
 
@@ -758,13 +793,13 @@ $\left ( { P } \right.  ){ \rm{ / } }{ \rm{ / } }\left ( { R } \right.  )$ $\lef
 
 Vậy không có giá trị của $m$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) $\left ( { P } \right.  )⊥\left ( { R } \right.  )$ khi $m=-10$.
 
 $\left ( { P } \right.  )⊥\left ( { R } \right.  )$ $\left. \left. ⇔\overrightarrow { n_{ 1 } }.\overrightarrow { n_{ 3 } }=0⇔1.2+2.4-1.(-m)=0⇔m=-10 \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -779,19 +814,19 @@ Lời giải
 
 $d\left ( { M,\left ( { P } \right.  ) } \right.  )=\frac { \left | { 2.(-2)+4+2.3-3 } \right.  | } { \sqrt{ 2 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } +2 ^ { 2 } } }=1$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $M$ cách đều hai mặt phẳng $\left ( { P } \right.  )$ và $\left ( { Q } \right.  )$.
 
 $d\left ( { M,\left ( { Q } \right.  ) } \right.  )=\frac { \left | { 2.(-2)+4+2.3-6 } \right.  | } { \sqrt{ 2 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } +2 ^ { 2 } } }=0⇒M∈\left ( { Q } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $d\left ( { \left ( { P } \right.  ),\left ( { Q } \right.  ) } \right.  )=1$.
 
 $d\left ( { \left ( { P } \right.  ),\left ( { Q } \right.  ) } \right.  )=d\left ( { M,\left ( { P } \right.  ) } \right.  )=\frac { \left | { 2.(-2)+4+2.3-3 } \right.  | } { \sqrt{ 2 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } +2 ^ { 2 } } }=1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\left ( { α } \right.  )$ song song và cách $\left ( { Q } \right.  )$ một khoảng bằng 2 có phương trình là $\left ( { α } \right.  ):2x–y+2z–9=0$.
 
@@ -801,7 +836,7 @@ $d\left ( { \left ( { α } \right.  ),\left ( { Q } \right.  ) } \right.  )=2⇔
 
 Vậy $\left ( { α } \right.  ):\left ( { P } \right.  ):2x–y+2z=0$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -816,7 +851,7 @@ Lời giải
 
 Khoảng cách từ $M$ đến mặt phẳng $\left ( { P } \right.  )$:$d\left ( { M;\left ( { P } \right.  ) } \right.  )=\frac { \left | { 2.2-1+2.5-5 } \right.  | } { \sqrt{ 2 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } +2 ^ { 2 } } }=\frac { 8 } { 3 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Với $m=0$ thì khoảng cách $M$ đến mặt phẳng $\left ( { Q } \right.  )$ bằng $\frac { 9 } { 2 }$.
 
@@ -824,7 +859,7 @@ Với $m=0$ thì $\left ( { Q } \right.  ):4x-2y+4z+1=0$.
 
 Khoảng cách từ $M$ đến mặt phẳng $\left ( { Q } \right.  )$:$d\left ( { M;\left ( { Q } \right.  ) } \right.  )=\frac { \left | { 4.2-2.1+4.5+1 } \right.  | } { \sqrt{ 4 ^ { 2 } +\left ( { -2 } \right.  ) ^ { 2 } +4 ^ { 2 } } }=\frac { 9 } { 2 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Với $m=3$ thì khoảng cách giữa mặt phẳng $\left ( { P } \right.  )$ và mặt phẳng $\left ( { Q } \right.  )$ bằng $3$.
 
@@ -832,7 +867,7 @@ Với $m=3$ thì $\left ( { Q } \right.  ):4x-2y+4z-2=0⇔\left ( { Q } \right. 
 
 Chọn $N\left ( { 0;-5;0 } \right.  )∈\left ( { P } \right.  )$. Vì $\left ( { P } \right.  )\,{ \rm{ / } }{ \rm{ / } }\,\left ( { Q } \right.  )$ nên $d\left ( { \left ( { P } \right.  )\,{ \rm{ ; } }\left ( { Q } \right.  ) } \right.  )=d\left ( { N;\left ( { Q } \right.  ) } \right.  )=\frac { \left | { 2.0-\left ( { -5 } \right.  )+2.0-1 } \right.  | } { \sqrt{ 2 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } +2 ^ { 2 } } }=\frac { 4 } { 3 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Có hai giá trị của $m$ để khoảng cách từ $M$ đến mặt phẳng $\left ( { Q } \right.  )$ bằng $1$. Khi đó tổng tất cả giá trị của $m$ bằng $5$.
 
@@ -842,7 +877,7 @@ $⇔\frac { \left | { 27-m } \right.  | } { 6 }=1⇔\left | { 27-m } \right.  |=
 
 Vậy tổng các giá trị của $m$ bằng $21+33=54$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 

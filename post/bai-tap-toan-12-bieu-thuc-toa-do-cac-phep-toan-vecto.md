@@ -21,9 +21,12 @@ grade: 12
 
 ### 1. Biểu thức tọa độ của tổng, hiệu hai vectơ và tích của một số với một vectơ
 
-> **Định nghĩa:** Trong không gian $Oxyz$, cho hai vectơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $b=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$ và số $k$. Khi đó:»$a+b=\left ( { a_{ 1 } +b_{ 1 } ;a_{ 2 } +b_{ 2 } ;a_{ 3 } +b_{ 3 } } \right.  )$»$a-b=\left ( { a_{ 1 } -b_{ 1 } ;a_{ 2 } -b_{ 2 } ;a_{ 3 } -b_{ 3 } } \right.  )$»$ka=\left ( { ka_{ 1 } ;ka_{ 2 } ;ka_{ 3 } } \right.  )$⁂ Nhận xét: Hai vectơ $a;b$ với $b≠0$ cùng phương $a=k.b⇔\left\{ \begin{array}{l} a_{ 1 } =k.b_{ 1 } a_{ 2 } =k.b_{ 2 } a_{ 3 } =k.b_{ 3 } \end{array} \right.$
+> **Định nghĩa:** Trong không gian $Oxyz$, cho hai vectơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $b=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$ và số $k$. Khi đó:
 
-» Từ nay, các bài tập liên quan đến toạ độ đều được xét trong không gian $Oxyz$. Chú ý
+- $a+b=\left ( { a_{ 1 } +b_{ 1 } ;a_{ 2 } +b_{ 2 } ;a_{ 3 } +b_{ 3 } } \right.  )$
+- $a-b=\left ( { a_{ 1 } -b_{ 1 } ;a_{ 2 } -b_{ 2 } ;a_{ 3 } -b_{ 3 } } \right.  )$
+- $ka=\left ( { ka_{ 1 } ;ka_{ 2 } ;ka_{ 3 } } \right.  )$⁂ Nhận xét: Hai vectơ $a;b$ với $b≠0$ cùng phương $a=k.b⇔\left\{ \begin{array}{l} a_{ 1 } =k.b_{ 1 } a_{ 2 } =k.b_{ 2 } a_{ 3 } =k.b_{ 3 } \end{array} \right.$
+- Từ nay, các bài tập liên quan đến toạ độ đều được xét trong không gian $Oxyz$. Chú ý
 
 ### 2. Biểu thức tọa độ của tích vô hướng
 
@@ -218,7 +221,11 @@ $\overrightarrow { BM }=\left ( { -14{ \rm{ ; } }-6{ \rm{ ; } }-2 } \right.  )$,
 
 ### Dạng 5. Tích vô hướng và ứng dụng
 
-Xét hai véctơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $b=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$ ta có:⑴ Tích vô hướng hai véctơ:$\left[ a.b=\left | { a } \right.  |.\left | { b } \right.  |.cos\left ( { a\,;\,b } \right.  )a.b=a_{ 1 } .b_{ 1 } +a_{ 2 } .b_{ 2 } +a_{ 3 } .b_{ 3 } \right.$ $\left. \rightarrow \right.$ Góc giữa 2 véctơ:$cos\left ( { a\,;\,b } \right.  )=\frac { a.b } { \left | { a } \right.  |.\left | { b } \right.  | }=\frac { a_{ 1 } .b_{ 1 } +a_{ 2 } .b_{ 2 } +a_{ 3 } .b_{ 3 } } { \sqrt{ \left ( { a_{ 1 } } \right.  ) ^ { 2 } +\left ( { a_{ 2 } } \right.  ) ^ { 2 } +\left ( { a_{ 3 } } \right.  ) ^ { 2 } }.\sqrt{ \left ( { b_{ 1 } } \right.  ) ^ { 2 } +\left ( { b_{ 2 } } \right.  ) ^ { 2 } +\left ( { b_{ 3 } } \right.  ) ^ { 2 } } }$ Chú ý: Khi $a\,.\,b>0$ thì $cos\left ( { a;\,b } \right.  )>0$ $⇒\left ( { a;\,b } \right.  )$ là góc nhọn, Khi $a\,.\,b < 0$ thì $cos\left ( { a\,;\,b } \right.  ) < 0$ $⇒\left ( { a\,;\,b } \right.  )$ là góc tù.⑵ Véctơ $a$ vuông góc véctơ $b$:$a.b=0⇔a_{ 1 } .b_{ 1 } +a_{ 2 } .b_{ 2 } +a_{ 3 } .b_{ 3 } =0$▶ Bài toán liên quan giữa độ dài và tích vô hướng: Cho hai vectơ $u$ và $v$ có $\left | { u } \right.  |=m;\,\,\left | { v } \right.  |=n$ và tạo với nhau một góc $α$. Tính $\left | { u+v } \right.  |$ hoặc $\left | { u-v } \right.  |$ hoặc tùy vào yêu cầu bài toán. Hướng giải quyết» Bước 1: Biến đổi $\left ( { \left | { u+v } \right.  | } \right.  ) ^ { 2 } =\left ( { u+v } \right.  ) ^ { 2 } =u ^ { 2 } +2u.v+v ^ { 2 }$» Bước 2: Áp dụng:$\left\{ \begin{array}{l} u ^ { 2 } =\left | { u } \right.  | ^ { 2 } a.b=\left | { a } \right.  |.\left | { b } \right.  |.cos\left ( { a\,;\,b } \right.  ) \end{array} \right.$Để biến đổi:$u ^ { 2 } +2u.v+v ^ { 2 } =\left | { u } \right.  | ^ { 2 } +2\left | { u } \right.  |.\left | { v } \right.  |cos\left ( { u;\,v } \right.  )+\left | { v } \right.  | ^ { 2 } \,\,\,\,\left ( { * } \right.  )$» Bước 3: Lắp các dữ kiện giả thiết vào $\left ( { * } \right.  )⇒\left | { u+v } \right.  |=?$ Phương pháp
+Xét hai véctơ $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ và $b=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  )$ ta có:⑴ Tích vô hướng hai véctơ:$\left[ a.b=\left | { a } \right.  |.\left | { b } \right.  |.cos\left ( { a\,;\,b } \right.  )a.b=a_{ 1 } .b_{ 1 } +a_{ 2 } .b_{ 2 } +a_{ 3 } .b_{ 3 } \right.$ $\left. \rightarrow \right.$ Góc giữa 2 véctơ:$cos\left ( { a\,;\,b } \right.  )=\frac { a.b } { \left | { a } \right.  |.\left | { b } \right.  | }=\frac { a_{ 1 } .b_{ 1 } +a_{ 2 } .b_{ 2 } +a_{ 3 } .b_{ 3 } } { \sqrt{ \left ( { a_{ 1 } } \right.  ) ^ { 2 } +\left ( { a_{ 2 } } \right.  ) ^ { 2 } +\left ( { a_{ 3 } } \right.  ) ^ { 2 } }.\sqrt{ \left ( { b_{ 1 } } \right.  ) ^ { 2 } +\left ( { b_{ 2 } } \right.  ) ^ { 2 } +\left ( { b_{ 3 } } \right.  ) ^ { 2 } } }$ Chú ý: Khi $a\,.\,b>0$ thì $cos\left ( { a;\,b } \right.  )>0$ $⇒\left ( { a;\,b } \right.  )$ là góc nhọn, Khi $a\,.\,b < 0$ thì $cos\left ( { a\,;\,b } \right.  ) < 0$ $⇒\left ( { a\,;\,b } \right.  )$ là góc tù.⑵ Véctơ $a$ vuông góc véctơ $b$:$a.b=0⇔a_{ 1 } .b_{ 1 } +a_{ 2 } .b_{ 2 } +a_{ 3 } .b_{ 3 } =0$
+- Bài toán liên quan giữa độ dài và tích vô hướng: Cho hai vectơ $u$ và $v$ có $\left | { u } \right.  |=m;\,\,\left | { v } \right.  |=n$ và tạo với nhau một góc $α$. Tính $\left | { u+v } \right.  |$ hoặc $\left | { u-v } \right.  |$ hoặc tùy vào yêu cầu bài toán. Hướng giải quyết
+- **Bước 1:** Biến đổi $\left ( { \left | { u+v } \right.  | } \right.  ) ^ { 2 } =\left ( { u+v } \right.  ) ^ { 2 } =u ^ { 2 } +2u.v+v ^ { 2 }$
+- **Bước 2:** Áp dụng:$\left\{ \begin{array}{l} u ^ { 2 } =\left | { u } \right.  | ^ { 2 } a.b=\left | { a } \right.  |.\left | { b } \right.  |.cos\left ( { a\,;\,b } \right.  ) \end{array} \right.$Để biến đổi:$u ^ { 2 } +2u.v+v ^ { 2 } =\left | { u } \right.  | ^ { 2 } +2\left | { u } \right.  |.\left | { v } \right.  |cos\left ( { u;\,v } \right.  )+\left | { v } \right.  | ^ { 2 } \,\,\,\,\left ( { * } \right.  )$
+- **Bước 3:** Lắp các dữ kiện giả thiết vào $\left ( { * } \right.  )⇒\left | { u+v } \right.  |=?$ Phương pháp
 
 **Ví dụ 5.1.** Trong không gian $Oxyz$, cho $a=\left ( { -3;4;0 } \right.  ),b=\left ( { 5;0;12 } \right.  )$. Tính côsin của góc giữa $a$;$b$.
 
@@ -265,8 +272,15 @@ $=u ^ { 2 } +2u.v+v ^ { 2 } =\left | { u } \right.  | ^ { 2 } +2\left | { u } \r
 Suy ra $\left | { u+v } \right.  |=\sqrt{ 19 }$.
 
 ### Dạng 6. Tâm tỷ cự
-
-▶ Bài toán cực trị độ dài vecto: Cho $n$ điểm $A_{ 1 } \,;\,A_{ 2 } \,;\,\,\ldots \,;\,A_{ n }$ và các hệ số $k_{ 1 } \,;\,k_{ 2 } \,;\,\ldots \,;\,k_{ n }$ sao cho $k=k_{ 1 } \,+\,k_{ 2 } \,+\ldots \,+\,k_{ n } ≠0$ và đường thẳng $d$ hoặc mặt phẳng $\left ( { P } \right.  )$. Tìm điểm $M$ trên đường thẳng $d$ hoặc mặt phẳng $\left ( { P } \right.  )$, sao cho $\left. \left. \left. \left | { k_{ 1 } .\overrightarrow { MA_{ 1 } }+k_{ 2 } .\overrightarrow { MA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { MA_{ n } } } \right.  | \right. \right. \right.$ nhỏ nhất. Hướng giải quyết» Bước 1: Gọi $I$ là điểm thỏa mãn $\left. \left. \left. k_{ 1 } .\overrightarrow { IA_{ 1 } }+k_{ 2 } .\overrightarrow { IA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { IA_{ n } }=0 \right. \right. \right.$.» Bước 2: Áp dụng quy tắc ba điểm biến đổi:$\left. \left. \left. \left. \left. \left | { k_{ 1 } .\overrightarrow { MA_{ 1 } }+k_{ 2 } .\overrightarrow { MA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { MA_{ n } } } \right.  |=\left | { \left ( { k_{ 1 } +k_{ 2 } +...k_{ n } } \right.  )\overrightarrow { MI } } \right.  |=\left | { k } \right.  |\left | { \overrightarrow { MI } } \right.  | \right. \right. \right. \right. \right.$» Bước 3: Tìm độ dài nhỏ nhất của các vecto đã cho xảy ra khi $M$ xảy ra ở vị trí nào?▶ Bài toán cực trị độ dài bình phương vecto: Cho đa giác $A_{ 1 } A_{ 2 } \ldots A_{ n }$ và các hệ số $k_{ 1 } \,;\,k_{ 2 } \,;\,\ldots \,;\,k_{ n }$ sao cho $k=k_{ 1 } \,+\,k_{ 2 } \,+\ldots \,+\,k_{ n } >0$. Tìm điểm $M$ trên đường thẳng $d$ hoặc mặt phẳng $\left ( { P } \right.  )$, sao cho tổng $S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ đạt giá trị nhỏ nhất. Hướng giải quyết» Bước 1: Gọi $I$ là điểm thỏa mãn $\left. \left. \left. k_{ 1 } .\overrightarrow { IA_{ 1 } }+k_{ 2 } .\overrightarrow { IA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { IA_{ n } }=0 \right. \right. \right.$.» Bước 2: Thấy rằng $\left. \left. \left. \left. \left. \left. \left. \left. MA_{ 1 } ^{ 2 }=\left | { \overrightarrow { MA_{ 1 } } } \right.  | ^ { 2 } =\left ( { \overrightarrow { MA_{ 1 } } } \right.  ) ^ { 2 } =\left ( { \overrightarrow { MI }+\overrightarrow { IA_{ 1 } } } \right.  ) ^ { 2 } =\left ( { \overrightarrow { MI } } \right.  ) ^ { 2 } +2\left ( { \overrightarrow { MI }.\overrightarrow { IA_{ 1 } } } \right.  )+\left ( { \overrightarrow { IA_{ 1 } } } \right.  ) ^ { 2 } \right. \right. \right. \right. \right. \right. \right. \right.$Áp dụng quy tắc ba điểm biến đổi:$S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ $\left. \left. \left. \left. \left. \left. \left. \left. =k_{ 1 } \left[ \left ( { \overrightarrow { MI } } \right.  ) ^ { 2 } +2\left ( { \overrightarrow { MI }.\overrightarrow { IA_{ 1 } } } \right.  )+\left ( { \overrightarrow { IA_{ 1 } } } \right.  ) ^ { 2 } \right]+...+k_{ n } \left[ \left ( { \overrightarrow { MI } } \right.  ) ^ { 2 } +2\left ( { \overrightarrow { MI }.\overrightarrow { IA_{ n } } } \right.  )+\left ( { \overrightarrow { IA_{ n } } } \right.  ) ^ { 2 } \right] \right. \right. \right. \right. \right. \right. \right. \right.$ $=\left ( { k_{ 1 } +k_{ 2 } +...+k_{ n } } \right.  )MI ^ { 2 } +\left ( { k_{ 1 } ⋅IA_{ 1 } ^{ 2 }+...+k_{ n } ⋅IA_{ n } ^{ 2 } } \right.  )$» Bước 3: Do $k>0$, để $S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ đạt giá trị nhỏ nhất thì ta xác định vị trí điểm $M$ cần tìm.▶ Chú ý:Cho đa giác $A_{ 1 } A_{ 2 } \ldots A_{ n }$ và các hệ số $k_{ 1 } \,;\,k_{ 2 } \,;\,\ldots \,;\,k_{ n }$ sao cho $k=k_{ 1 } \,+\,k_{ 2 } \,+\ldots \,+\,k_{ n } < 0$. Tìm điểm $M$ trên $d$ hoặc $\left ( { P } \right.  )$, sao cho tổng $S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ đạt giá trị lớn nhất. Ta cũng thực hiện tương tự. Phương pháp
+- Bài toán cực trị độ dài vecto: Cho $n$ điểm $A_{ 1 } \,;\,A_{ 2 } \,;\,\,\ldots \,;\,A_{ n }$ và các hệ số $k_{ 1 } \,;\,k_{ 2 } \,;\,\ldots \,;\,k_{ n }$ sao cho $k=k_{ 1 } \,+\,k_{ 2 } \,+\ldots \,+\,k_{ n } ≠0$ và đường thẳng $d$ hoặc mặt phẳng $\left ( { P } \right.  )$. Tìm điểm $M$ trên đường thẳng $d$ hoặc mặt phẳng $\left ( { P } \right.  )$, sao cho $\left. \left. \left. \left | { k_{ 1 } .\overrightarrow { MA_{ 1 } }+k_{ 2 } .\overrightarrow { MA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { MA_{ n } } } \right.  | \right. \right. \right.$ nhỏ nhất. Hướng giải quyết
+- **Bước 1:** Gọi $I$ là điểm thỏa mãn $\left. \left. \left. k_{ 1 } .\overrightarrow { IA_{ 1 } }+k_{ 2 } .\overrightarrow { IA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { IA_{ n } }=0 \right. \right. \right.$.
+- **Bước 2:** Áp dụng quy tắc ba điểm biến đổi:$\left. \left. \left. \left. \left. \left | { k_{ 1 } .\overrightarrow { MA_{ 1 } }+k_{ 2 } .\overrightarrow { MA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { MA_{ n } } } \right.  |=\left | { \left ( { k_{ 1 } +k_{ 2 } +...k_{ n } } \right.  )\overrightarrow { MI } } \right.  |=\left | { k } \right.  |\left | { \overrightarrow { MI } } \right.  | \right. \right. \right. \right. \right.$
+- **Bước 3:** Tìm độ dài nhỏ nhất của các vecto đã cho xảy ra khi $M$ xảy ra ở vị trí nào?
+- Bài toán cực trị độ dài bình phương vecto: Cho đa giác $A_{ 1 } A_{ 2 } \ldots A_{ n }$ và các hệ số $k_{ 1 } \,;\,k_{ 2 } \,;\,\ldots \,;\,k_{ n }$ sao cho $k=k_{ 1 } \,+\,k_{ 2 } \,+\ldots \,+\,k_{ n } >0$. Tìm điểm $M$ trên đường thẳng $d$ hoặc mặt phẳng $\left ( { P } \right.  )$, sao cho tổng $S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ đạt giá trị nhỏ nhất. Hướng giải quyết
+- **Bước 1:** Gọi $I$ là điểm thỏa mãn $\left. \left. \left. k_{ 1 } .\overrightarrow { IA_{ 1 } }+k_{ 2 } .\overrightarrow { IA_{ 2 } }+\ldots +k_{ n } .\overrightarrow { IA_{ n } }=0 \right. \right. \right.$.
+- **Bước 2:** Thấy rằng $\left. \left. \left. \left. \left. \left. \left. \left. MA_{ 1 } ^{ 2 }=\left | { \overrightarrow { MA_{ 1 } } } \right.  | ^ { 2 } =\left ( { \overrightarrow { MA_{ 1 } } } \right.  ) ^ { 2 } =\left ( { \overrightarrow { MI }+\overrightarrow { IA_{ 1 } } } \right.  ) ^ { 2 } =\left ( { \overrightarrow { MI } } \right.  ) ^ { 2 } +2\left ( { \overrightarrow { MI }.\overrightarrow { IA_{ 1 } } } \right.  )+\left ( { \overrightarrow { IA_{ 1 } } } \right.  ) ^ { 2 } \right. \right. \right. \right. \right. \right. \right. \right.$Áp dụng quy tắc ba điểm biến đổi:$S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ $\left. \left. \left. \left. \left. \left. \left. \left. =k_{ 1 } \left[ \left ( { \overrightarrow { MI } } \right.  ) ^ { 2 } +2\left ( { \overrightarrow { MI }.\overrightarrow { IA_{ 1 } } } \right.  )+\left ( { \overrightarrow { IA_{ 1 } } } \right.  ) ^ { 2 } \right]+...+k_{ n } \left[ \left ( { \overrightarrow { MI } } \right.  ) ^ { 2 } +2\left ( { \overrightarrow { MI }.\overrightarrow { IA_{ n } } } \right.  )+\left ( { \overrightarrow { IA_{ n } } } \right.  ) ^ { 2 } \right] \right. \right. \right. \right. \right. \right. \right. \right.$ $=\left ( { k_{ 1 } +k_{ 2 } +...+k_{ n } } \right.  )MI ^ { 2 } +\left ( { k_{ 1 } ⋅IA_{ 1 } ^{ 2 }+...+k_{ n } ⋅IA_{ n } ^{ 2 } } \right.  )$
+- **Bước 3:** Do $k>0$, để $S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ đạt giá trị nhỏ nhất thì ta xác định vị trí điểm $M$ cần tìm.
+- **Chú ý:**Cho đa giác $A_{ 1 } A_{ 2 } \ldots A_{ n }$ và các hệ số $k_{ 1 } \,;\,k_{ 2 } \,;\,\ldots \,;\,k_{ n }$ sao cho $k=k_{ 1 } \,+\,k_{ 2 } \,+\ldots \,+\,k_{ n } < 0$. Tìm điểm $M$ trên $d$ hoặc $\left ( { P } \right.  )$, sao cho tổng $S=k_{ 1 } ⋅MA_{ 1 } ^{ 2 }+k_{ 2 } ⋅MA_{ 2 } ^{ 2 }+...+k_{ n } ⋅MA_{ n } ^{ 2 }$ đạt giá trị lớn nhất. Ta cũng thực hiện tương tự. Phương pháp
 
 **Ví dụ 6.1.** Trong không gianO xyz, cho bốn điểm $A\left ( { 2;-3;7 } \right.  ),B\left ( { 0;4;1 } \right.  ),C\left ( { 3;0;5 } \right.  )$ và $D\left ( { 3;3;3 } \right.  )$. Gọi $M$ là điểm nằm trên mặt phẳng $\left ( { O yz } \right.  )$ sao cho biểu thức $\left. \left. \left. \left. \left | { \overrightarrow { MA }+\overrightarrow { MB }+\overrightarrow { MC }+\overrightarrow { MD } } \right.  | \right. \right. \right. \right.$ đạt giá trị nhỏ nhất. Khi đó xác định tọa độ điểm $M$.
 
@@ -378,25 +392,25 @@ Lời giải
 
 $a+b=\left ( { 2+(-1);-1+5;3+2 } \right.  )=\left ( { 1;4;5 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $a-\,b=\left ( { 3;-6;1 } \right.  )$.
 
 $a-\,b=\left ( { 2-\left ( { -1) } \right.  );;3-2 } \right.  )=\left ( { 3;-6;1 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $3\,b=\left ( { -3;15;6 } \right.  )$.
 
 $3\,b=\left ( { -1.3;3.5;3.2 } \right.  )=\left ( { -3;15;6 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $2a-b=\left ( { 5;-7;4 } \right.  )$.
 
 $2a-b=\left ( { 2.2+1;-1.2-5;2.3-2 } \right.  )=\left ( { 5;-7;4 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -411,25 +425,25 @@ Lời giải
 
 $-2a+b=\left ( { -2.2-1;-2.1;-2 } \right.  )=\left ( { -5;-2;-2 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\,b⊥c⇔m=8$.
 
 $\,b⊥c⇔b.c=0⇔-m-8=0⇔m=-8$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $cos\left ( { a,b } \right.  )=\frac { 2 } { 5 }$.
 
 $cos\left ( { a,b } \right.  )=\frac { a.b } { \left | { a } \right.  |.\left | { b } \right.  | }=\frac { -2 } { \sqrt{ 5 }.\sqrt{ 5 } }-\frac { 2 } { 5 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) $\left | { c } \right.  |=2\left | { a } \right.  |⇔m=0$.
 
 $\left | { c } \right.  |=2\left | { a } \right.  |⇔\sqrt{ m ^ { 2 } +20 }=2\sqrt{ 5 }⇔m ^ { 2 } +20=20⇔m=0$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -444,13 +458,13 @@ Lời giải
 
 $G\left ( { x;y;z } \right.  )$ là trọng tâm tam giác $ABC$ $⇔\left\{ \begin{array}{l} x=\frac { -1+4+3 } { 3 }=2y=\frac { 0+2+1 } { 3 }=1z=\frac { 3+0-3 } { 3 }=0 \end{array} \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $D\left ( { -2;-1;0 } \right.  )$ là một đỉnh của hình bình hànhABCD.
 
 $D$ là một đỉnh của hình bình hànhABCD $\left. \overrightarrow { AD }=\overrightarrow { BC }⇔\left\{ \begin{array}{l} x+1=3-4y-0=1-2z-3= \end{array} \right.⇔\left\{ \begin{array}{l} x=-2y=-1z=0 \end{array} \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $M\left ( { a;b;c } \right.  )$ thoả mãn $\left. \overrightarrow { AM }=3\overrightarrow { CB } \right.$. Khi đó $a+b+c=-13$
 
@@ -462,7 +476,7 @@ $\left. \overrightarrow { AM }=3\overrightarrow { CB }⇔\left\{ \begin{array}{l
 
 Suy ra $a+b+c=17$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) $M\left ( { a;b;c } \right.  )∈Ox$ sao cho $BM$ vuông góc với đường thẳng $AC$. Khi đó $4a ^ { 2 } +b ^ { 2 } +c ^ { 2 } =162$
 
@@ -474,7 +488,7 @@ $BM$ vuông góc với đường thẳng $AC$ khi $\left. \left. \left. \overrig
 
 $4a ^ { 2 } +b ^ { 2 } +c ^ { 2 } =81$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -491,7 +505,7 @@ Khi vectơ $v=\left ( { 1;3;-2n } \right.  )$ cùng phương với $\overrightar
 
 Ta có:$\left. \left\{ \begin{array}{l} \overrightarrow { AB }=\left ( { 1;3;1 } \right.  )v=\left ( { 1;3;-2n } \right.  ) \end{array} \right. \right.$, để hai vectơ $v$,$\overrightarrow { AB }$ cùng phương $⇔\frac { 1 } { 1 }=\frac { 3 } { 3 }=\frac { -2n } { 1 }⇔n=-\frac { 1 } { 2 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) KhiABCDlà hình bình hành thì điểm $D\left ( { -1;-1;-1 } \right.  )$
 
@@ -499,7 +513,7 @@ Gọi $D\left ( { a;b;c } \right.  )$, ta có:$\left. \left. \left\{ \begin{arra
 
 $\left. \left. ⇔\overrightarrow { AB }=\overrightarrow { DC }⇔\left\{ \begin{array}{l} -a=12-b=3-c=1 \end{array} \right. \right. \right.$ $⇔\left\{ \begin{array}{l} a=-1b=-1c=-1 \end{array} \right.$ $⇒D\left ( { -1;-1;-1 } \right.  )$
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (c) Với điểm $E\left ( { x;y;-2 } \right.  )$ để $A,B,E$ thẳng hàng thì $x+y=-\frac { 1 } { 2 }$
 
@@ -507,7 +521,7 @@ $\left. \left. ⇔\overrightarrow { AB }=\overrightarrow { DC }⇔\left\{ \begin
 
 $⇔\frac { x-2 } { -2 }=\frac { y-5 } { -3 }=\frac { -6 } { -4 }=\frac { 3 } { 2 }$ $⇔\left\{ \begin{array}{l} x=-1y=\frac { 1 } { 2 } \end{array} \right.$ $⇒x+y=-\frac { 1 } { 2 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Điểm $M∈\left ( { Oxy } \right.  )$ sao cho $A,B,M$ thẳng hàng có toạ độ là $M\left ( { -2;7;0 } \right.  )$
 
@@ -517,7 +531,7 @@ Ta có $M∈\left ( { Oxy } \right.  )⇒M\left ( { m;n;0 } \right.  )$, với $
 
 $\left. \left. ⇔\overrightarrow { AB },\ \overrightarrow { AM } \right. \right.$ cùng phương $⇔\frac { m-1 } { 1 }=\frac { n-2 } { 3 }=\frac { -3 } { 1 }⇔\left\{ \begin{array}{l} m=-2n=-7 \end{array} \right.$ $⇒M\left ( { -2;-7;0 } \right.  )$
 
-» Chọn SAI
+**Chọn SAI.**
 
 </details>
 
@@ -532,19 +546,19 @@ Lời giải
 
 Ta có:$\left. \left. \left. \left. \left\{ \begin{array}{l} \overrightarrow { AB }=\left ( { -3;4;-2 } \right.  )\overrightarrow { BC }=\left ( { 6;-6;5 } \right.  ) \end{array} \right.⇒\overrightarrow { AB }.\overrightarrow { BC }=\left ( { -3 } \right.  ).6+4.\left ( { -6 } \right.  )+\left ( { -2 } \right.  ).5=-52 \right. \right. \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Góc $\widehat { ABC }$ là góc tù.
 
 Ta có:$\left. \overrightarrow { BA }.\overrightarrow { BC }=52>0 \right.$ nên góc $\widehat { ABC }$ là góc nhọn
 
-» Chọn SAI
+**Chọn SAI.**
 
 (c) Côsin giữa hai vectơ $\overrightarrow { AB }$,$\overrightarrow { AC }$ bằng $\frac { -23 } { \sqrt{ 638 } }$
 
 Ta có:$\left. \left. \left\{ \begin{array}{l} \overrightarrow { AB }=\left ( { -3;4;-2 } \right.  )\overrightarrow { AC }=\left ( { 3;-2;3 } \right.  ) \end{array} \right. \right. \right.$ $\left. \left. \left. \left. \left. \left. ⇒cos\left ( { \overrightarrow { AB },\ \overrightarrow { AC } } \right.  )=\frac { \overrightarrow { AB }.\ \overrightarrow { AC } } { \left | { \overrightarrow { AB } } \right.  |.\left | { \overrightarrow { AC } } \right.  |. } \right. \right. \right. \right. \right. \right.$ $\frac { -6 } { \sqrt{ \left ( { -3 } \right.  ) ^ { 2 } +4 ^ { 2 } +\left ( { -2 } \right.  ) ^ { 2 } }.\sqrt{ 3 ^ { 2 } +\left ( { -2 } \right.  ) ^ { 2 } +3 ^ { 2 } } }=\frac { -23 } { \sqrt{ 638 } }$
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (d) Điểm $D\left ( { 1;2;x } \right.  )$ vớiΔABDvuông tại $B$ thì giá trị $x=-6$
 
@@ -552,7 +566,7 @@ Ta có:ΔABDvuông tại $B$ $\left. \left. \left. \left. ⇔\overrightarrow { A
 
 $⇔-2\left ( { x+1 } \right.  )=0⇔x=-6$
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -569,7 +583,7 @@ Ta có $\left. \left. \left\{ \begin{array}{l} \overrightarrow { AC }=\left ( { 
 
 Ba điểm $A,\ B,\ C$ không thẳng hàng do $\frac { 1 } { -1 }≠\frac { -2 } { -1 }≠\frac { 2 } { 4 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $AB⊥CD$.
 
@@ -577,7 +591,7 @@ Ta có $\left. \left. \left\{ \begin{array}{l} \overrightarrow { AB }=\left ( { 
 
 Xét $\left. \left. \left. \overrightarrow { AB }⋅\overrightarrow { CD }=2.1-1.4-2.\left ( { -1 } \right.  )=0⇒\overrightarrow { AB }⊥\overrightarrow { CD }⇔AB⊥CD \right. \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Tam giác $BCD$ là tam giác đều.
 
@@ -585,7 +599,7 @@ Ta có $\left. \left. \left. \left\{ \begin{array}{l} \overrightarrow { BC }=\le
 
 Suy ra tam giác $BCD$ là tam giác đều do $BC=BD=CD$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Gọi $M$ là trung điểm của $BC$ thì $cos \widehat { AMD }=\frac { \sqrt{ 3 } } { 2 }$.
 
@@ -595,7 +609,7 @@ Ta có $\left. \left. \left\{ \begin{array}{l} \overrightarrow { MA }=\left ( { 
 
 Xét $\left. \left. \left. \left. cos \widehat { AMD }=cos\left ( { \overrightarrow { MA },\overrightarrow { MD } } \right.  )=\frac { \overrightarrow { MA }⋅\overrightarrow { MD } } { MA⋅MD }=\frac { -\frac { 3 } { 2 }.\frac { 1 } { 2 }-\frac { 3 } { 2 }.\frac { 7 } { 2 }+0.1 } { \frac { 3\sqrt{ 2 } } { 2 }.\frac { 3\sqrt{ 6 } } { 2 } }=-\frac { 4\sqrt{ 3 } } { 9 } \right. \right. \right. \right.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -610,7 +624,7 @@ Lời giải
 
 Ta có $I\left ( { \frac { x_{ B } +x_{ D } } { 2 };\frac { y_{ B } +y_{ D } } { 2 };\frac { z_{ B } +z_{ D } } { 2 } } \right.  )⇔I\left ( { \frac { 3 } { 2 };\frac { 3 } { 2 };0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Tọa độ điểm $C'\left ( { 3;3;-3 } \right.  )$.
 
@@ -626,7 +640,7 @@ $\left. \left. \left. \left. \left. \left. \left. \left. \left. ⇔\overrightarr
 
 $⇒C'\left ( { 3;3;-3 } \right.  )$
 
-» Chọn Đúng.
+**Chọn ĐÚNG.**
 
 (c) Tọa độ trọng tâm tam giác $A'B'C$ là $G\left ( { 2;1;-1 } \right.  )$.
 
@@ -640,7 +654,7 @@ $⇒B'\left ( { 3;0;-3 } \right.  )$
 
 Ta có $G\left ( { \frac { x_{ A' } +x_{ B' } +x_{ C } } { 3 };\frac { y_{ A' } +y_{ B' } +y_{ C } } { 3 };\frac { z_{ A' } +z_{ B' } +z_{ C } } { 3 } } \right.  )⇔G\left ( { 2;\frac { 3 } { 2 };-2 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Khoảng cách từ điểm $A$ đến mặt phẳng $\left ( { A'BD } \right.  )$ bằng $\sqrt{ 3 }$.
 
@@ -654,7 +668,7 @@ $⇒\frac { 1 } { h_{ AHA' } ^{ 2 } }=\frac { 1 } { 3 ^ { 2 } }+\frac { 1 } { \l
 
 Ta có $d\left ( { A,\left ( { A'BD } \right.  ) } \right.  )=h_{ AHA' } =\sqrt{ 3 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -669,13 +683,13 @@ Lời giải
 
 Trọng tâm $G$ của tam giác $ABC$ có toạ độ $\left ( { 2;1;2 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Chu vi của tam giác $ABC$ bằng $\sqrt{ 11 }+2\sqrt{ 2 }$.
 
 Tam giác $ABC$ có $AB=\sqrt{ 4+0+4 }=2\sqrt{ 2 };AC=\sqrt{ 1+9+1 }=\sqrt{ 11 };BC=\sqrt{ 1+9+1 }=\sqrt{ 11 }$; Chu vi của tam giác $ABC$ bằng $2\sqrt{ 2 }+2\sqrt{ 11 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Hoành độ điểm $M$ trên trục $Ox$ để $AM⊥BC$ thuộc khoảng $\left ( { 3;5 } \right.  )$.
 
@@ -685,7 +699,7 @@ $\left. \overrightarrow { AM }=\left ( { x-1; } \right.  );\overrightarrow { BC 
 
 Để $\left. \left. AM⊥BC⇔\overrightarrow { AM }.\overrightarrow { BC }=0⇔-\left ( { x-1 } \right.  )+6-3=0⇔x=4∈\left ( { 3;5 } \right.  ) \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Có hai điểm $K$ thuộc mặt phẳng $\left ( { Oyz } \right.  )$ để tam giác $ABK$ vuông cân tại $A$.
 
@@ -703,7 +717,7 @@ $AB ^ { 2 } =AK ^ { 2 } ⇔8=\left ( { y-2 } \right.  ) ^ { 2 } +2⇔\left ( { y
 
 Vậy $K\left ( { 0;2±\sqrt{ 6 };2 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 

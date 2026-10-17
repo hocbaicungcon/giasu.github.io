@@ -25,7 +25,11 @@ Vectơ chỉ phương của đường thẳng:Cho đường thẳng $\Delta $ v�
 
 <p align="center"><img src="/assets/images/toan-12/c5_b2_image13.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
- Nhận xét:» Một đường thẳng hoàn toàn được xác định khi biết một điểm mà nó đi qua và một vectơ chỉ phương của nó.» Nếu $u$ là một vectơ chỉ phương của đường thẳng thì $k.u{ \rm{ } }\left ( { k≠0 } \right.  )$ cũng là một vectơ chỉ phương của đường thẳng đó.
+ Nhận xét:
+
+- Một đường thẳng hoàn toàn được xác định khi biết một điểm mà nó đi qua và một vectơ chỉ phương của nó.
+
+- Nếu $u$ là một vectơ chỉ phương của đường thẳng thì $k.u{ \rm{ } }\left ( { k≠0 } \right.  )$ cũng là một vectơ chỉ phương của đường thẳng đó.
 
 Phương trình tham số của đường thẳng:Trong không gian $Oxyz$, phương trình tham số của đường thẳng $\Delta $ qua điểm $M\left ( { x_{ 0 } ;y_{ 0 } ;z_{ 0 } } \right.  )$ và nhận $u=\left ( { a;b;c } \right.  )$ làm vectơ chỉ phương có dạng:$\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.$ với $t∈\mathbb{R}$ ($t$ được gọi là tham số và $a ^ { 2 } +b ^ { 2 } +c ^ { 2 } ≠0$)
 
@@ -35,21 +39,28 @@ Phương trình đường thẳng qua hai điểm cho trước:Trong không gian
 
 ### 2. Vị trí tương đối hai đường thẳng. Điều kiện để hai đường thẳng vuông góc
 
-Sự cùng phương – Sự đồng phẳng:Trong không gian $Oxyz$, ▪Hai vectơ được gọi là cùng phương khi giá của chúng cùng song song với một đường thẳng.▪Ba vectơ được gọi là đồng phẳng khi giá của chúng cùng song song với một mặt phẳng. Trong không gian $Oxyz$, cho ba vecto $\left. a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  ),\overrightarrow { b }=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  ) \right.$ và $c=\left ( { c_{ 1 } ;c_{ 2 } ;c_{ 3 } } \right.  )$ Hai $a,\,\,b$ cùng phương $\left. ⇔\left[ a,\,\,b \right]=\overrightarrow { 0 } \right.$. Hai $a,\,\,b$ không cùng phương $\left. ⇔\left[ a,\,\,b \right]≠\overrightarrow { 0 } \right.$. Ba vectơ $a,\,\,b,\,\,c$ đồng phẳng $⇔\left[ a,\,\,b \right].\,c=0$. Ba vectơ $a,\,\,b,\,\,c$ không đồng phẳng $⇔\left[ a,\,\,b \right].\,c≠0$.
+Sự cùng phương – Sự đồng phẳng:Trong không gian $Oxyz$,
+- Hai vectơ được gọi là cùng phương khi giá của chúng cùng song song với một đường thẳng.
 
-Vị trí tương đối giữa hai đường thẳng:Trong không gian $Oxyz$, cho hai đường thẳng $\Delta _{ 1 } ,\Delta _{ 2 }$ lần lượt đi qua các điểm $M_{ 1 } ,M_{ 2 }$ và tương ứng có $u_{ 1 } =\left ( { a_{ 1 } ;b_{ 1 } ;c_{ 1 } } \right.  );u_{ 2 } =\left ( { a_{ 2 } ;b_{ 2 } ;c_{ 2 } } \right.  )$ là hai vectơ chỉ phương. Khi đó, ta có:
+- Ba vectơ được gọi là đồng phẳng khi giá của chúng cùng song song với một mặt phẳng. Trong không gian $Oxyz$, cho ba vecto $\left. a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  ),\overrightarrow { b }=\left ( { b_{ 1 } ;b_{ 2 } ;b_{ 3 } } \right.  ) \right.$ và $c=\left ( { c_{ 1 } ;c_{ 2 } ;c_{ 3 } } \right.  )$ Hai $a,\,\,b$ cùng phương $\left. ⇔\left[ a,\,\,b \right]=\overrightarrow { 0 } \right.$. Hai $a,\,\,b$ không cùng phương $\left. ⇔\left[ a,\,\,b \right]≠\overrightarrow { 0 } \right.$. Ba vectơ $a,\,\,b,\,\,c$ đồng phẳng $⇔\left[ a,\,\,b \right].\,c=0$. Ba vectơ $a,\,\,b,\,\,c$ không đồng phẳng $⇔\left[ a,\,\,b \right].\,c≠0$.
 
-<p align="center"><img src="/assets/images/toan-12/c5_b2_image47.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+Vị trí tương đối giữa hai đường thẳng:
 
-<p align="center"><img src="/assets/images/toan-12/c5_b2_image48.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+Trong không gian $Oxyz$, cho hai đường thẳng $\Delta_1, \Delta_2$ lần lượt đi qua các điểm $M_1(x_1; y_1; z_1), M_2(x_2; y_2; z_2)$ và có các vectơ chỉ phương $\vec{u_1} = (a_1; b_1; c_1), \vec{u_2} = (a_2; b_2; c_2)$.
 
-<p align="center"><img src="/assets/images/toan-12/c5_b2_image49.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+**Phương pháp vectơ:**
+- **$\Delta_1 \parallel \Delta_2$:** $[\vec{u_1}, \vec{u_2}] = \vec{0}$ và $[\vec{u_1}, \vec{M_1M_2}] \ne \vec{0}$ (hai VTCP cùng phương và $M_1 \notin \Delta_2$).
+- **$\Delta_1 \equiv \Delta_2$:** $[\vec{u_1}, \vec{u_2}] = \vec{0}$ và $[\vec{u_1}, \vec{M_1M_2}] = \vec{0}$ (hai VTCP cùng phương và $M_1 \in \Delta_2$).
+- **$\Delta_1$ cắt $\Delta_2$:** $[\vec{u_1}, \vec{u_2}] \ne \vec{0}$ và $[\vec{u_1}, \vec{u_2}] \cdot \vec{M_1M_2} = 0$ (hai VTCP không cùng phương và 3 vectơ đồng phẳng).
+- **$\Delta_1, \Delta_2$ chéo nhau:** $[\vec{u_1}, \vec{u_2}] \cdot \vec{M_1M_2} \ne 0$ (ba vectơ không đồng phẳng).
 
-<p align="center"><img src="/assets/images/toan-12/c5_b2_image50.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-$\Delta _{ 1 }$ song song $\Delta _{ 2 }$ $\Delta _{ 1 }$ cắt $\Delta _{ 2 }$ $\Delta _{ 1 }$ chéo $\Delta _{ 2 }$
-
-Để xét vị trí tương đối giữa hai đường thẳng. Trong không gian $Oxyz$, hai đường thẳng $\Delta _{ 1 } ,\Delta _{ 2 }$ tương ứng có $u_{ 1 } =\left ( { a_{ 1 } ;b_{ 1 } ;c_{ 1 } } \right.  )$ và $u_{ 2 } =\left ( { a_{ 2 } ;b_{ 2 } ;c_{ 2 } } \right.  )$ là hai vectơ chỉ phương và có phương trình tham số:$\Delta _{ 1 } :\left\{ \begin{array}{l} x=x_{ 1 } +a_{ 1 } t_{ 1 } y=y_{ 1 } +b_{ 1 } t_{ 1 } z=z_{ 1 } +c_{ 1 } t_{ 1 } \end{array} \right.{ \rm{ } }\left ( { t_{ 1 } ∈\mathbb{R} } \right.  ),{ \rm{ } }{ \rm{ } }\Delta _{ 2 } :\left\{ \begin{array}{l} x=x_{ 2 } +a_{ 2 } t_{ 2 } y=y_{ 2 } +b_{ 2 } t_{ 2 } z=z_{ 2 } +c_{ 2 } t_{ 2 } \end{array} \right.{ \rm{ } }{ \rm{ } }\left ( { t_{ 2 } ∈\mathbb{R} } \right.  )$ Xét hệ phương trình hai ẩn $t_{ 1 } ,t_{ 2 }$:$\left\{ \begin{array}{l} x_{ 1 } +a_{ 1 } t_{ 1 } =x_{ 2 } +a_{ 2 } t_{ 2 } y_{ 1 } +b_{ 1 } t_{ 1 } =y_{ 2 } +b_{ 2 } t_{ 2 } z_{ 1 } +c_{ 1 } t_{ 1 } =z_{ 2 } +c_{ 2 } t_{ 2 } \end{array} \right.{ \rm{ } }{ \rm{ } }\left ( { * } \right.  )$ Khi đó :»$\Delta _{ 1 } ≡\Delta _{ 2 } ⇔$ $u_{ 1 }$ cùng phương với $u_{ 2 }$ và hệ $\left ( { * } \right.  )$ vô nghiệm.»$\Delta _{ 1 } { \rm{ } }{ \rm{ / } }{ \rm{ / } }{ \rm{ } }\Delta _{ 2 } ⇔$ Hệ $\left ( { * } \right.  )$ có vô số nghiệm.»$\Delta _{ 1 }$ cắt $\Delta _{ 2 } ⇔$ Hệ $\left ( { * } \right.  )$ có nghiệm duy nhất.»$\Delta _{ 1 }$ và $\Delta _{ 2 }$ chéo nhau $⇔u_{ 1 }$ không cùng phương với $u_{ 2 }$ và hệ $\left ( { * } \right.  )$ vô nghiệm. Chú ý
+**Phương pháp xét hệ phương trình:**
+Từ phương trình tham số của $\Delta_1$ (tham số $t_1$) và $\Delta_2$ (tham số $t_2$), xét hệ phương trình hai ẩn $t_1, t_2$:
+$$\begin{cases} x_1 + a_1 t_1 = x_2 + a_2 t_2 \\ y_1 + b_1 t_1 = y_2 + b_2 t_2 \\ z_1 + c_1 t_1 = z_2 + c_2 t_2 \end{cases} \quad (*)$$
+- **$\Delta_1 \parallel \Delta_2$:** $\vec{u_1}, \vec{u_2}$ cùng phương và hệ $(*)$ vô nghiệm.
+- **$\Delta_1 \equiv \Delta_2$:** Hệ $(*)$ có vô số nghiệm.
+- **$\Delta_1$ cắt $\Delta_2$:** Hệ $(*)$ có nghiệm duy nhất $(t_1; t_2)$.
+- **$\Delta_1$ và $\Delta_2$ chéo nhau:** $\vec{u_1}, \vec{u_2}$ không cùng phương và hệ $(*)$ vô nghiệm.
 
 Điều kiện để hai đường thẳng vuông góc:Trong không gian $Oxyz$, cho hai đường thẳng $\Delta _{ 1 } ,\Delta _{ 2 }$ tương ứng có $u_{ 1 } =\left ( { a_{ 1 } ;b_{ 1 } ;c_{ 1 } } \right.  )$ và $u_{ 2 } =\left ( { a_{ 2 } ;b_{ 2 } ;c_{ 2 } } \right.  )$ là hai vectơ chỉ phương. Khi đó, ta có:$\Delta _{ 1 } ⊥\Delta _{ 2 } ⇔u_{ 1 } ⊥u_{ 2 } ⇔u_{ 1 } .u_{ 2 } =0⇔a_{ 1 } a_{ 2 } +b_{ 1 } b_{ 2 } +c_{ 1 } c_{ 2 } =0$
 
@@ -63,8 +74,11 @@ Góc giữa hai mặt phẳng:Trong không gian $Oxyz$, cho hai mặt phẳng $\
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Xác định vecto chỉ phương của đường thẳng
+- Trong không gian $Oxyz$, vectơ $u=\left ( { a;b;c } \right.  )≠0$ là vectơ chỉ phương của đường thẳng $\Delta $ thì vecto $m=k.u$ cũng là vectơ chỉ phương của đường thẳng $\Delta $.
 
-» Trong không gian $Oxyz$, vectơ $u=\left ( { a;b;c } \right.  )≠0$ là vectơ chỉ phương của đường thẳng $\Delta $ thì vecto $m=k.u$ cũng là vectơ chỉ phương của đường thẳng $\Delta $.» Phương trình tham số $\Delta :\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.\,\,\left ( { t∈\mathbb{R} } \right.  )$ có VTCP $u=\left ( { a\,;\,b\,;\,c } \right.  )$ (hệ số trước t).» Phương trình chính tắc $\Delta :\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ có VTCP $u=\left ( { a\,;\,b\,;\,c } \right.  )$ (hệ số ở mẫu).≫ Nhận xét: Với phương trình tham số lấy đúng thứ tự hệ số trước tham số t. Với phương trình chính tắc lấy hệ số dưới mẫu. Nếu giả thiết chưa đúng cấu trúc, ta phải sắp xếp lại rồi mới lấy hệ số. Phương pháp
+- Phương trình tham số $\Delta :\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.\,\,\left ( { t∈\mathbb{R} } \right.  )$ có VTCP $u=\left ( { a\,;\,b\,;\,c } \right.  )$ (hệ số trước t).
+
+- Phương trình chính tắc $\Delta :\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ có VTCP $u=\left ( { a\,;\,b\,;\,c } \right.  )$ (hệ số ở mẫu).≫ Nhận xét: Với phương trình tham số lấy đúng thứ tự hệ số trước tham số t. Với phương trình chính tắc lấy hệ số dưới mẫu. Nếu giả thiết chưa đúng cấu trúc, ta phải sắp xếp lại rồi mới lấy hệ số. Phương pháp
 
 **Ví dụ 1.1.** Trong không gian $Oxyz$,xác định một vectơ chỉ phương của đường thẳng dưới đây:⑴$d:\left\{ \begin{array}{l} x=2-ty=1+2tz=3+t \end{array} \right.$⑵$d:\frac { x-1 } { 2 }=\frac { y-2 } { 1 }=\frac { z+1 } { 2 }$⑶$d:\frac { x-1 } { 2 }=\frac { y-1 } { 2 }=\frac { 2-z } { 1 }$
 
@@ -83,10 +97,11 @@ Góc giữa hai mặt phẳng:Trong không gian $Oxyz$, cho hai mặt phẳng $\
 Ta viết lại $d:\frac { x-1 } { 2 }=\frac { y-1 } { 2 }=\frac { 2-z } { 1 }⇔d:\frac { x-1 } { 2 }=\frac { y-1 } { 2 }=\frac { z-2 } { -1 }$ $⇒u_{ 1 } =\left ( { 2;2;-1 } \right.  )$.
 
 ### Dạng 2. Đường thẳng qua điểm & có sẵn VTCP
+- Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápQua $M$, có véctơ chỉ phương $a=\left ( { a\,;\,b\,;\,c } \right.  )$<p align="center"><img src="/assets/images/toan-12/c5_b2_image118.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-▶ Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápQua $M$, có véctơ chỉ phương $a=\left ( { a\,;\,b\,;\,c } \right.  )$<p align="center"><img src="/assets/images/toan-12/c5_b2_image118.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+≫ Phương trình $\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.$ hoặc $\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ nếu $\left\{ \begin{array}{l} a\,;\,b\,;\,c \end{array} \right\}≠0$.
 
-≫ Phương trình $\left\{ \begin{array}{l} x=x_{ 0 } +aty=y_{ 0 } +btz=z_{ 0 } +ct \end{array} \right.$ hoặc $\frac { x-x_{ 0 } } { a }=\frac { y-y_{ 0 } } { b }=\frac { z-z_{ 0 } } { c }$ nếu $\left\{ \begin{array}{l} a\,;\,b\,;\,c \end{array} \right\}≠0$.▶ Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
+- Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
 
 **Ví dụ 2.1.** Trong không gian $Oxyz$, viết phương trình tham số và phương trình chính tắc của đường thẳng đi qua điểm ⑴$M\left ( { 2;0;-1 } \right.  )$ và có véctơ chỉ phương $a=\left ( { 2;-3;1 } \right.  )$⑵$N\left ( { 1;0;-2 } \right.  )$ và có vectơ chỉ phương $u=\left ( { 2;3;1 } \right.  )$
 
@@ -125,12 +140,13 @@ Xét $t=-1⇒\left\{ \begin{array}{l} x=3+\left ( { -1 } \right.  )y=2+2.\left (
 Khi đó đường thẳng $d$ đi qua điểm $N\left ( { 2;0;-2 } \right.  )$ có VTCP $u=\left ( { 1;2;3 } \right.  )$ là $d:\left\{ \begin{array}{l} x=2+ty=0+2tz=-2+3t \end{array} \right.$.
 
 ### Dạng 3. Đường thẳng qua hai điểm
-
-▶ Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápQua hai điểm $A$ và $B$.
+- Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápQua hai điểm $A$ và $B$.
 
 <p align="center"><img src="/assets/images/toan-12/c5_b2_image145.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-≫ Chọn $A$ hoặc $B$ là điểm mà $\Delta $ đi qua.≫ Nhận $\overrightarrow { AB }$ làm VTCP $\left. →u=\overrightarrow { AB } \right.$.▶ Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm tra. Phương pháp
+≫ Chọn $A$ hoặc $B$ là điểm mà $\Delta $ đi qua.≫ Nhận $\overrightarrow { AB }$ làm VTCP $\left. →u=\overrightarrow { AB } \right.$.
+
+- Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm tra. Phương pháp
 
 **Ví dụ 3.1.** Trong không gian $Oxyz$, viết phương trình chính tắc của đường thẳng ⑴ Đi qua gốc tọa độ và $H\left ( { 1;4;-2 } \right.  )$.⑵ Đi qua hai điểm $M\left ( { 2;0;-1 } \right.  )$ và $N\left ( { 2;-3;1 } \right.  )$
 
@@ -159,10 +175,11 @@ Ta có $\overrightarrow { AM }=u=\left ( { 2;-4;1 } \right.  )$
 Khi đó phương trình đường trung tuyến $AM:\,\frac { x+1 } { 2 }=\frac { y-3 } { -4 }=\frac { z-2 } { 1 }$
 
 ### Dạng 4. Đường thẳng là giao tuyến của hai mặt phẳng
+- Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápGiao tuyến của hai mặt phẳng $\left ( { α } \right.  ):Ax+By+Cz+D=0$ và $\left ( { β } \right.  ):A'x+B'y+C'z+D'=0$<p align="center"><img src="/assets/images/toan-12/c5_b2_image172.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-▶ Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápGiao tuyến của hai mặt phẳng $\left ( { α } \right.  ):Ax+By+Cz+D=0$ và $\left ( { β } \right.  ):A'x+B'y+C'z+D'=0$<p align="center"><img src="/assets/images/toan-12/c5_b2_image172.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+≫ Cho 1 trong 3 ẩn $x;y;z$ $=0$ để tìm 2 ẩn còn lại $x=0$ $\left. \rightarrow \right.$ $\left\{ \begin{array}{l} By+Cz+D=0B'y+C'z+D'=0 \end{array} \right.⇔\left\{ \begin{array}{l} y=?z=? \end{array} \right.⇒M\left ( { 0;?;? } \right.  )$≫ Vecto chỉ phương $u=\left[ n_{ α } ;n_{ β } \right]$.
 
-≫ Cho 1 trong 3 ẩn $x;y;z$ $=0$ để tìm 2 ẩn còn lại $x=0$ $\left. \rightarrow \right.$ $\left\{ \begin{array}{l} By+Cz+D=0B'y+C'z+D'=0 \end{array} \right.⇔\left\{ \begin{array}{l} y=?z=? \end{array} \right.⇒M\left ( { 0;?;? } \right.  )$≫ Vecto chỉ phương $u=\left[ n_{ α } ;n_{ β } \right]$.▶ Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
+- Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
 
 **Ví dụ 4.1.** Trong không gian $Oxyz$, cho hai mặt phẳng $\left ( { P } \right.  ):2x+y-z-1=0$,$\left ( { Q } \right.  ):x-2y+z-5=0$. Giao tuyến hai mặt phẳng $\left ( { P } \right.  )$ và $\left ( { Q } \right.  )$ có một vectơ chỉ phương là?
 
@@ -211,10 +228,11 @@ Giải hệ ta được $\left ( { x;y;z } \right.  )=\left ( { 1;0;1 } \right. 
 Do đó $d':\left\{ \begin{array}{l} x=1+3ty=2tz=1+t \end{array} \right.$, suy ra đường thẳng $d'$ đi qua điểm $P\left ( { 4;2;2 } \right.  )$.
 
 ### Dạng 5. Đường thẳng là đường vuông góc chung của hai đường thẳng
+- Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápLà đường vuông góc chung của $d_{ 1 }$ và $d_{ 2 }$<p align="center"><img src="/assets/images/toan-12/c5_b2_image242.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-▶ Trong không gian $Oxyz$, viết phương trình đường thẳng $\Delta $ LoạiPhương phápLà đường vuông góc chung của $d_{ 1 }$ và $d_{ 2 }$<p align="center"><img src="/assets/images/toan-12/c5_b2_image242.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+≫ Gọi $\left. \left\{ \begin{array}{l} M∈d_{ 1 } N∈d_{ 2 } \end{array} \right.⇒\overrightarrow { MN }\left ( { ? } \right.  ) \right.$ (tọa độ theo $t\,;\,k$).≫$MN$ là đường vuông góc chung $\left. \left. ⇔\left\{ \begin{array}{l} u_{ 1 } .\overrightarrow { MN }=0u_{ 2 } .\overrightarrow { MN }=0 \end{array} \right.⇔\left\{ \begin{array}{l} t=?k=? \end{array} \right.⇒\left\{ \begin{array}{l} M\left ( { ? } \right.  )N\left ( { ? } \right.  ) \end{array} \right. \right. \right.$.≫ Khi đó đường thẳng $\left. \Delta :\left\{ \begin{array}{l} qua\,\left[ MN \right. u_{ \Delta  } =\overrightarrow { MN } \end{array} \right. \right.$.
 
-≫ Gọi $\left. \left\{ \begin{array}{l} M∈d_{ 1 } N∈d_{ 2 } \end{array} \right.⇒\overrightarrow { MN }\left ( { ? } \right.  ) \right.$ (tọa độ theo $t\,;\,k$).≫$MN$ là đường vuông góc chung $\left. \left. ⇔\left\{ \begin{array}{l} u_{ 1 } .\overrightarrow { MN }=0u_{ 2 } .\overrightarrow { MN }=0 \end{array} \right.⇔\left\{ \begin{array}{l} t=?k=? \end{array} \right.⇒\left\{ \begin{array}{l} M\left ( { ? } \right.  )N\left ( { ? } \right.  ) \end{array} \right. \right. \right.$.≫ Khi đó đường thẳng $\left. \Delta :\left\{ \begin{array}{l} qua\,\left[ MN \right. u_{ \Delta  } =\overrightarrow { MN } \end{array} \right. \right.$.▶ Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
+- Lưu ý: Phương trình tìm được không nằm trong các phương án, ta có thể thay tọa độ điểm mà đường thẳng đi qua để kiểm traPhương pháp
 
 **Ví dụ 5.1.** Trong không gian $Oxyz$, cho đường thẳng $d_{ 1 } :\left\{ \begin{array}{l} x=1+2ty=2+tz=-2+5t \end{array} \right.$ và $d_{ 2 } :\left\{ \begin{array}{l} x=1+sy=2+sz=1+3s \end{array} \right.$. Viết phương trình đường vuông góc chung của hai đường thẳng $d_{ 1 } ;d_{ 2 }$.
 
@@ -235,8 +253,7 @@ Suy ra $B\left ( { 1;2;1 } \right.  )$ và $\overrightarrow { AB }=\left ( { -1;
 Phương trình đường thẳng đi qua $B$ và có VTCP $\overrightarrow { u }=\left ( { -2;-1;1 } \right.  )$ là $\left\{ \begin{array}{l} x=1-2ty=2-tz=1+t \end{array} \right.$.
 
 ### Dạng 6. Góc
-
-▶ Trong không gian $Oxyz$, LoạiHình vẽHai đường thẳng $\Delta _{ 1 } ,\Delta _{ 2 }$ tương ứng có $u_{ 1 } =\left ( { a_{ 1 } ;b_{ 1 } ;c_{ 1 } } \right.  )$ và $u_{ 2 } =\left ( { a_{ 2 } ;b_{ 2 } ;c_{ 2 } } \right.  )$ là hai vectơ chỉ phương. Khi đó, ta có:$cos\left ( { \Delta _{ 1 } ,\Delta _{ 2 } } \right.  )=\left | { cos\left ( { u_{ 1 } .u_{ 2 } } \right.  ) } \right.  |=\frac { \left | { u_{ 1 } .u_{ 2 } } \right.  | } { \left | { u_{ 1 } } \right.  |.\left | { u_{ 2 } } \right.  | }=\frac { \left | { a_{ 1 } a_{ 2 } +b_{ 1 } b_{ 2 } +c_{ 1 } c_{ 2 } } \right.  | } { \sqrt{ a_{ 1 } ^{ 2 }+b_{ 1 } ^{ 2 }+c_{ 1 } ^{ 2 } }.\sqrt{ a_{ 2 } ^{ 2 }+b_{ 2 } ^{ 2 }+c_{ 2 } ^{ 2 } } }$<p align="center"><img src="/assets/images/toan-12/c5_b2_image76.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Trong không gian $Oxyz$, LoạiHình vẽHai đường thẳng $\Delta _{ 1 } ,\Delta _{ 2 }$ tương ứng có $u_{ 1 } =\left ( { a_{ 1 } ;b_{ 1 } ;c_{ 1 } } \right.  )$ và $u_{ 2 } =\left ( { a_{ 2 } ;b_{ 2 } ;c_{ 2 } } \right.  )$ là hai vectơ chỉ phương. Khi đó, ta có:$cos\left ( { \Delta _{ 1 } ,\Delta _{ 2 } } \right.  )=\left | { cos\left ( { u_{ 1 } .u_{ 2 } } \right.  ) } \right.  |=\frac { \left | { u_{ 1 } .u_{ 2 } } \right.  | } { \left | { u_{ 1 } } \right.  |.\left | { u_{ 2 } } \right.  | }=\frac { \left | { a_{ 1 } a_{ 2 } +b_{ 1 } b_{ 2 } +c_{ 1 } c_{ 2 } } \right.  | } { \sqrt{ a_{ 1 } ^{ 2 }+b_{ 1 } ^{ 2 }+c_{ 1 } ^{ 2 } }.\sqrt{ a_{ 2 } ^{ 2 }+b_{ 2 } ^{ 2 }+c_{ 2 } ^{ 2 } } }$<p align="center"><img src="/assets/images/toan-12/c5_b2_image76.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 Đường thẳng $\Delta $ có vectơ chỉ phương $u=\left ( { a;b;c } \right.  )$ và mặt phẳng $\left ( { P } \right.  )$ có vectơ pháp tuyến $\,n=\left ( { A;\,B;\,C } \right.  )$. Khi đó, ta có:$sin\left ( { \Delta ,\left ( { P } \right.  ) } \right.  )=\left | { cos\left ( { u.\,n } \right.  ) } \right.  |=\frac { \left | { u.\,n } \right.  | } { \left | { u } \right.  |.\left | { \,n } \right.  | }=\frac { \left | { aA+bB+cC } \right.  | } { \sqrt{ a ^ { 2 } +b ^ { 2 } +c ^ { 2 } }.\sqrt{ A ^ { 2 } +B ^ { 2 } +C ^ { 2 } } }$<p align="center"><img src="/assets/images/toan-12/c5_b2_image83.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -275,8 +292,7 @@ Mặt phẳng $\left ( { Q } \right.  )$ có một VTPT là $n_{ 2 } =\left ( { 
 Ta có:$cos\left ( { \widehat { \left ( { P } \right.  ),\left ( { Q } \right.  ) } } \right.  )=\frac { \left | { n_{ 1 } .n_{ 2 } } \right.  | } { \left | { n_{ 1 } } \right.  |.\left | { n_{ 2 } } \right.  | }=\frac { \left | { 1.\left ( { -1 } \right.  )+2.1+1.2 } \right.  | } { \sqrt{ 1 ^ { 2 } +2 ^ { 2 } +1 ^ { 2 } }.\sqrt{ \left ( { -1 } \right.  ) ^ { 2 } +1 ^ { 2 } +2 ^ { 2 } } }=\frac { 1 } { 2 }⇒\left ( { \widehat { \left ( { P } \right.  ),\left ( { Q } \right.  ) } } \right.  )=60 ^ { { \rm{ o } } }$
 
 ### Dạng 7. Vị trí tương đối của hai đường thẳng
-
-▶ Trong không gian $Oxyz$, cho hai đường thẳng:
+- Trong không gian $Oxyz$, cho hai đường thẳng:
 - Đường thẳng $d$ đi qua $M_0(x_0; y_0; z_0)$ có vectơ chỉ phương $\vec{u} = (a_1; a_2; a_3)$.
 - Đường thẳng $d'$ đi qua $M'_0(x'_0; y'_0; z'_0)$ có vectơ chỉ phương $\vec{u}' = (a'_1; a'_2; a'_3)$.
 
@@ -470,7 +486,7 @@ Lời giải
 
 Vectơ chỉ phương của đường thẳng $\Delta _{ 1 }$ là $a=\left ( { 0;-3;4 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Đường thẳng $d_{ 1 }$ vuông góc với $\left ( { P } \right.  )$ có vectơ chỉ phương là $u=\left ( { 1;3;-2 } \right.  )$
 
@@ -478,7 +494,7 @@ Mặt phẳng $\left ( { P } \right.  )$ có 1 vectơ pháp tuyến là $u=\left
 
 Đường thẳng $d_{ 1 }$ vuông góc với $\left ( { P } \right.  )$ nên có 1 vectơ chỉ phương là $u=\left ( { 1;3;-2 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Đường thẳng $d_{ 2 }$ vuông góc với $\Delta _{ 2 }$ và song song với mặt phẳng $\left ( { Oxy } \right.  )$ có vectơ chỉ phương là $u_{ 2 } =\left ( { 3;-3;2 } \right.  )$
 
@@ -488,7 +504,7 @@ Mặt phẳng $\left ( { Oxy } \right.  )$ có 1 vectơ pháp tuyến là $k=\le
 
 Đường thẳng $d_{ 2 }$ vuông góc với $\Delta _{ 2 }$ và song song với mặt phẳng $\left ( { Oxy } \right.  )$ có vectơ chỉ phương là $u_{ 2 } =\left[ v,k \right]=\left ( { -3;3;0 } \right.  )=-3\left ( { 1;-1;0 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Đường thẳng $d_{ 3 }$ qua $A\left ( { 1;-1;2 } \right.  )$, cắt và vuông góc với trục $Oz$ có vectơ chỉ phương là $u_{ 3 } =\left ( { -1;-1;0 } \right.  )$
 
@@ -498,7 +514,7 @@ Suy ra $H$ là hình chiếu của $A$ lên $Oz$ $⇒H\left ( { 0;0;2 } \right. 
 
 Vậy đường thẳng $d_{ 3 }$ có 1 vectơ chỉ phương là $\overrightarrow { AH }=\left ( { -1;1;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -519,7 +535,7 @@ $cos\left ( { d_{ 1 } ,d_{ 2 } } \right.  )=\left | { cos\left ( { u,v } \right.
 
 Suy ra số đo góc giữa hai đường thẳng $d_{ 1 }$ và $d_{ 2 }$ bằng $45 ^ { \circ }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $cos\left ( { d_{ 1 } ,Ox } \right.  )=\frac { -1 } { 3 }$.
 
@@ -527,7 +543,7 @@ Trục $Ox$ có vectơ chỉ phương là $i=\left ( { 1;0;0 } \right.  )$
 
 $cos\left ( { d_{ 1 } ,Ox } \right.  )=\left | { cos\left ( { u,i } \right.  ) } \right.  |=\frac { 1 } { 3 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Đường thẳng $\Delta $ đi qua gốc toạ độ $O$ và vuông góc với $\left ( { P } \right.  )$ tạo với đường thẳng $d_{ 1 }$ một góc $α$ có ${ \rm{ c } }{ \rm{ o } }{ \rm{ s } }α=\frac { 4 } { 9 }$.
 
@@ -537,7 +553,7 @@ Mặt phẳng $\left ( { P } \right.  ):2x+2y+z-3=0$ có vectơ pháp tuyến l�
 
 $cos\left ( { d_{ 1 } ,\Delta  } \right.  )=\left | { cos\left ( { u,n } \right.  ) } \right.  |=\frac { 4 } { 9 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Khi $m=\frac { a } { b },\,a,b∈\mathbb{Z}$,$\frac { a } { b }$ là phân số tối giản, số đo góc giữa hai đường thẳng $d_{ 1 }$ và $d_{ 2 }$ bằng $90 ^ { \circ }$. Giá trị biểu thức $a ^ { 2 } +b ^ { 2 } =13$.
 
@@ -549,7 +565,7 @@ Suy ra $a=-3;b=2$
 
 Vậy $a ^ { 2 } +b ^ { 2 } =13$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -568,7 +584,7 @@ $\left ( { P } \right.  ):x+2y-z+2025=0$ có vectơ pháp tuyến là $v=\left (
 
 $sin\left ( { \Delta ,\left ( { P } \right.  ) } \right.  )=\left | { cos\left ( { u,v } \right.  ) } \right.  |=0$, suy ra số đo góc giữa hai đường thẳng $\Delta $ và mặt phẳng $\left ( { P } \right.  ):x+2y-z+2025=0$ bằng $0 ^ { \circ }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Biết hình chiếu của $O$ lên mặt phẳng $\left ( { P } \right.  )$ là $H\left ( { 3;-1;2 } \right.  )$.$α$ là số đo góc giữa mặt phẳng $\left ( { P } \right.  )$ và đường thẳng $\Delta $,${ \rm{ c } }{ \rm{ o } }{ \rm{ s } }α=\frac { 1 } { 14 }$
 
@@ -576,7 +592,7 @@ Hình chiếu của $O$ lên mặt phẳng $\left ( { P } \right.  )$ là $H\lef
 
 $\left. sinα=\left | { cos\left ( { u,\overrightarrow { OH } } \right.  ) } \right.  |=\frac { \left | { +6 } \right.  | } { 14 }=\frac { 1 } { 14 } \right.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Đường thẳng $d_{ 1 }$ là giao tuyến của $\left ( { P } \right.  )$ và $\left ( { Oxy } \right.  )$. Gọi $β$ là góc giữa $d_{ 1 }$ và mặt phẳng $\left ( { Oxz } \right.  )$. Khi đó $β>30 ^ { \circ }$
 
@@ -588,7 +604,7 @@ Suy ra vectơ chỉ phương của $d$ là $\left[ k,v \right]=\left ( { -2,1,0 
 
 $sinβ=\left | { cos\left ( { a,j } \right.  ) } \right.  |=\frac { 1 } { \sqrt{ 5 } }⇒β≈27 ^ { \circ } < 30 ^ { \circ }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Đường thẳng $d_{ 2 }$ vuông góc với $\left ( { P } \right.  )$ tạo với $\left ( { Q } \right.  ):x+my-3=0$ một góc $30 ^ { \circ }$. Khi đó tổng tất cả các giá trị của tham số $m$ bằng $\frac { -16 } { 5 }$.
 
@@ -604,7 +620,7 @@ $⇔2\left ( { 4+8m+4m ^ { 2 } } \right.  )=3\left ( { m ^ { 2 } +1 } \right.  )
 
 Tổng tất cả các giá trị của tham số $m$ bằng $\frac { -16 } { 5 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -619,7 +635,7 @@ Lời giải
 
 Nhận xét bốn điểm $S\left ( { 0;0;3 } \right.  )$,$A\left ( { 0;0;0 } \right.  )$,$B\left ( { 1;0;0 } \right.  )$,$C\left ( { 0;2;0 } \right.  )$ thuộc một tứ diện vuông $S.ABC$ nên dễ thấy $\left ( { SAB } \right.  )⊥\left ( { ABC } \right.  )$ $⇒cos\left ( { \left ( { SAB } \right.  );\ \left ( { ABC } \right.  ) } \right.  )=0$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Côsin góc giữa hai mặt phẳng $\left ( { SBC } \right.  )$ và mặt phẳng $\left ( { ABC } \right.  )$ bằng $\frac { 2 } { 7 }$
 
@@ -629,7 +645,7 @@ $\left ( { ABC } \right.  )$ có $\left. n_{ \left ( { ABC } \right.  ) } =\over
 
 $cos\left ( { \left ( { SBC } \right.  );\left ( { ABC } \right.  ) } \right.  )=\frac { \left | { n_{ \left ( { ABC } \right.  ) } .n_{ \left ( { SBC } \right.  ) } } \right.  | } { \left | { n_{ \left ( { ABC } \right.  ) } } \right.  |.\left | { n_{ \left ( { SBC } \right.  ) } } \right.  | }$ $=\frac { \left | { 6.0+3.0+2.3 } \right.  | } { \sqrt{ 0 ^ { 2 } +0 ^ { 2 } +3 ^ { 2 } }.\sqrt{ 6 ^ { 2 } +3 ^ { 2 } +2 ^ { 2 } } }=\frac { 2 } { 7 }$
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (c) Côsin góc giữa hai mặt phẳng $\left ( { SBC } \right.  )$ và mặt phẳng $\left ( { P } \right.  )$ bằng $\frac { 10\sqrt{ 3 } } { 21 }$
 
@@ -637,13 +653,13 @@ Ta có:$\left\{ \begin{array}{l} n_{ \left ( { SBC } \right.  ) } =\left ( { 6;3
 
 Nên $cos\left ( { \left ( { SBC } \right.  );\left ( { P } \right.  ) } \right.  )=\frac { \left | { n_{ \left ( { SBC } \right.  ) } .n_{ \left ( { P } \right.  ) } } \right.  | } { \left | { n_{ \left ( { SBC } \right.  ) } } \right.  |.\left | { n_{ \left ( { P } \right.  ) } } \right.  | }$ $=\frac { \left | { 6.1+3.1+2.1 } \right.  | } { \sqrt{ 6 ^ { 2 } +3 ^ { 2 } +2 ^ { 2 } }.\sqrt{ 1 ^ { 2 } +1 ^ { 2 } +1 ^ { 2 } } }=\frac { 10\sqrt{ 3 } } { 21 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Góc giữa hai mặt phẳng $\left ( { SAC } \right.  )$ và mặt phẳng $\left ( { ABC } \right.  )$ bằng $90°$
 
 Nhận xét bốn điểm $S\left ( { 0;0;3 } \right.  )$,$A\left ( { 0;0;0 } \right.  )$,$B\left ( { 1;0;0 } \right.  )$,$C\left ( { 0;2;0 } \right.  )$ thuộc một tứ diện vuông $S.ABC$ nên dễ thấy $\left ( { SAC } \right.  )⊥\left ( { ABC } \right.  )$ $⇒\left ( { \left ( { SAB } \right.  );\left ( { ABC } \right.  ) } \right.  )=90°$
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -658,7 +674,7 @@ Lời giải
 
 Ta có:$\left\{ \begin{array}{l} u_{ d } =\left ( { 2;-1;4 } \right.  )u_{ d' } =\left ( { 3;2;-1 } \right.  ) \end{array} \right.$ và $u_{ d } .u_{ d' } =2.3+\left ( { -1 } \right.  ).2+4.\left ( { -1 } \right.  )=0$ $⇒d⊥d'$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hai đường thẳng $d$ và $d'$ cắt nhau tại điểm có tọa độ $\left ( { -1;0;3 } \right.  )$
 
@@ -670,13 +686,13 @@ Xét hệ phương trình: $\left\{ \begin{array}{l} -3+2t = -4+3t' \\ 1-t = -2+
 
 Vậy tọa độ giao điểm của $d$ và $d'$ là $\left ( { -1;0;3 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hai đường thẳng $d'$ và $\left ( { \Delta  } \right.  )$ song song hoặc trùng nhau
 
 Ta có:$\left\{ \begin{array}{l} u_{ \Delta  } =\left ( { -3;-2;1 } \right.  )u_{ d' } =\left ( { 3;2;-1 } \right.  ) \end{array} \right.$, có:$\frac { -3 } { 3 }=\frac { -2 } { 2 }=\frac { 1 } { -1 }$ $⇒u_{ \Delta  }$ cùng phương $u_{ d' }$ suy ra $\left[ d'{ \rm{ / } }{ \rm{ / } }\Delta d'≡\Delta  \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hai đường thẳng $d'$ và $\left ( { \Delta  } \right.  )$ trùng nhau
 
@@ -684,7 +700,7 @@ Ta có:$A\left ( { -4;-2;4 } \right.  )∈d'$, ta kiểm tra $A$ có thuộc $\D
 
 $\frac { } { -3 }=\frac { } { -2 }=\frac { 4-1 } { 1 }$ (vô lí) $⇒A∉\Delta $ nên $d'{ \rm{ / } }{ \rm{ / } }\Delta $
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -701,7 +717,7 @@ Giả sử đường bay của máy bay số 1 là $\left ( { \Delta _{ 1 } } \r
 
 Ta có:$cos\left ( { \Delta _{ 1 } ,\Delta _{ 2 } } \right.  )=\frac { \left | { u_{ 1 } .u_{ 2 } } \right.  | } { \left | { u_{ 1 } } \right.  |.\left | { u_{ 2 } } \right.  | }=\frac { \left | { 2.1+1.1+2 } \right.  | } { \sqrt{ 2 ^ { 2 } +1 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } }.\sqrt{ 1 ^ { 2 } +1 ^ { 2 } +\left ( { -1 } \right.  ) ^ { 2 } } }=\frac { 5\sqrt{ 2 } } { 6 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Sau $10$ giờ kể từ thời điểm bay hai máy bay gần nhau nhất.
 
@@ -713,13 +729,13 @@ Ta có:$\Delta _{ 1 } ∩\Delta _{ 2 } ⇔\left\{ \begin{array}{l} 20+2t=30+t'20
 
 Vậy sau $10$ giờ thì hai máy bay gần nhau nhất.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Nếu máy bay số một vẫn ở phi trường (đứng ở vị trí ban đầu) thì vị trí tọa độ của máy bay là $\left ( { 20;20;-10 } \right.  )$
 
 Nếu máy bay số một vẫn ở phi trường thì thời điểm lúc đó là $0$ giờ $⇒t=0$ thay $\left ( { \Delta _{ 1 } } \right.  ):\left\{ \begin{array}{l} x=20+2ty=20+tz=-10-t \end{array} \right.$ $⇒\left\{ \begin{array}{l} x=20y=20z=-10 \end{array} \right.$ thì vị trí tọa độ của máy bay là $\left ( { 20;20;-10 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Sau $5$ giờ thì vị trí tọa dộ máy bay số 2 trong không gian là $\left ( { 35;25;-10 } \right.  )$
 
@@ -727,7 +743,7 @@ Sau $5$ giờ thì vị trí tọa dộ máy bay số 2 trong không gian nên $
 
 Suy ra $\left\{ \begin{array}{l} x=30+5y=20+5z= \end{array} \right.⇔\left\{ \begin{array}{l} x=35y=25z=-15 \end{array} \right.$, vậy trí tọa độ máy bay số 2 trong không gian là $\left ( { 35;25;-15 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -748,7 +764,7 @@ Gắn hệ trục tọa độ $Oxyz$
 
 Phương trình tham số của đường cáp là:$\left\{ \begin{array}{l} x=10+2ty=3-2tz=t \end{array} \right.,t∈\mathbb{R}$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Giả sử sau thời gian $t\left ( { { \rm{ s } } } \right.  )$ kể từ lúc xuất phát $\left ( { t≥0 } \right.  )$, cabin đến điểm $M$. Khi đó tọa độ điểm $M$ là $M\left ( { 3t+10;-3t+3;\frac { 3t } { 2 } } \right.  )$.
 
@@ -764,7 +780,7 @@ Vì $\overrightarrow { AM }=\left ( { 3t;-3t;\frac { 3t } { 2 } } \right.  )$ n�
 
 Vậy điểm $M$ có tọa độ là $M\left ( { 3t+10;-3t+3;\frac { 3t } { 2 } } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Cabin dừng ở điểm $B$ có hoành độ $x_{ B } =550$, khi đó quảng đường $AB$ dài $800{ \rm{ m } }$.
 
@@ -774,7 +790,7 @@ Do đó điểm $B\left ( { 550;-537;270 } \right.  )$.
 
 Vậy $AB=\sqrt{ \left ( { 550-10 } \right.  ) ^ { 2 } +\left ( { } \right.  ) ^ { 2 } +\left ( { 270-0 } \right.  ) ^ { 2 } }=\sqrt{ 656100 }=810\left ( { { \rm{ m } } } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Đường cáp $AB$ tạo với mặt phẳng $\left ( { Oxy } \right.  )$ một góc $30°$.
 
@@ -782,7 +798,7 @@ Vậy $AB=\sqrt{ \left ( { 550-10 } \right.  ) ^ { 2 } +\left ( { } \right.  ) ^
 
 Vậy $\left ( { AB,\left ( { Oxy } \right.  ) } \right.  )≈19°$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -797,13 +813,13 @@ Lời giải
 
 Vì $d:$ nên khi $A\left ( { t;-1-t;2+2t } \right.  )$ thì $A$ thuộc đường thẳng $d$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Một vectơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$ là $n=\left ( { 1;1;-1 } \right.  )$.
 
 Một vectơ pháp tuyến của mặt phẳng $\left ( { α } \right.  )$ là $n=\left ( { 1;1;-1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Điểm $M$ thuộc đường thẳng $d$.
 
@@ -811,7 +827,7 @@ Thay tọa độ điểm $M$ vào phương trình đường thẳng $d$, ta th�
 
 Vậy điểm $M$ không thuộc đường thẳng $d$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Đường thẳng $\Delta $ đi qua $M$, cắt đường thẳng $d$ và song song với mặt phẳng $\left ( { α } \right.  )$ có phương trình là $\frac { x-1 } { 2 }=\frac { y+2 } { 3 }=\frac { z-4 } { 5 }$.
 
@@ -829,7 +845,7 @@ Suy ra $u_{ \Delta  } =\left ( { -2;-3;-5 } \right.  )$ và $N\left ( { 1;-2;4 }
 
 Khi đó :$\Delta :\frac { x-1 } { 2 }=\frac { y+2 } { 3 }=\frac { z-4 } { 5 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 

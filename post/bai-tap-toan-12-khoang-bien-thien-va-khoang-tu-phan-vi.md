@@ -23,21 +23,42 @@ grade: 12
 ### 1. Khoảng biến thiên.
 
 > **Định nghĩa:** Khoảng biến thiên, kí hiệu $R$, của mẫu số liệu ghép nhóm là hiệu số giữa đầu mút phải của nhóm cuối cùng và đầu mút trái của nhóm đầu tiên có chứa dữ liệu của mẫu số liệu.
+- Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { u_{ 1 } ;u_{ 2 } } \right.  )$ $\left [ { u_{ 2 } ;u_{ 3 } } \right.  )$ $...$ $\left [ { u_{ k } ;u_{ k+1 } } \right.  )$ Tần số $n_{ 1 }$ $n_{ 2 }$ $...$ $n_{ k }$
+- Nếu $n_{ 1 }$ và $n_{ k+1 }$ cùng khác 0 thì $R=u_{ k+1 } -u_{ 1 }$.
 
-» Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { u_{ 1 } ;u_{ 2 } } \right.  )$ $\left [ { u_{ 2 } ;u_{ 3 } } \right.  )$ $...$ $\left [ { u_{ k } ;u_{ k+1 } } \right.  )$ Tần số $n_{ 1 }$ $n_{ 2 }$ $...$ $n_{ k }$» Nếu $n_{ 1 }$ và $n_{ k+1 }$ cùng khác 0 thì $R=u_{ k+1 } -u_{ 1 }$.▪Khoảng biến thiên của mẫu số liệu ghép nhóm luôn lớn hơn hoặc bằng khoảng biến thiên của mẫu số liệu gốc.▪Khoảng biến thiên của mẫu số liệu ghép nhóm là giá trị xấp xỉ khoảng biến thiên của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của mẫu số liệu.▪Khoảng biến thiên $R=u_{ k+1 } -u_{ 1 }$ chưa phản ánh được đầy đủ mức độ phân tán của phần lớn các số liệu. ▪Hơn nữa, giá trị của $R$ thường tăng vọt khi xuất hiện giá trị ngoại lệ trong mẫu số liệu. Do đó, để phản ánh mức độ phân tán của số liệu, người ta còn dùng các số đặc trưng khác.Ý nghĩa
+- Khoảng biến thiên của mẫu số liệu ghép nhóm luôn lớn hơn hoặc bằng khoảng biến thiên của mẫu số liệu gốc.
+
+- Khoảng biến thiên của mẫu số liệu ghép nhóm là giá trị xấp xỉ khoảng biến thiên của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của mẫu số liệu.
+
+- Khoảng biến thiên $R=u_{ k+1 } -u_{ 1 }$ chưa phản ánh được đầy đủ mức độ phân tán của phần lớn các số liệu.
+
+- Hơn nữa, giá trị của $R$ thường tăng vọt khi xuất hiện giá trị ngoại lệ trong mẫu số liệu. Do đó, để phản ánh mức độ phân tán của số liệu, người ta còn dùng các số đặc trưng khác.Ý nghĩa
 
 ### 2. Khoảng tứ phân vị
 
 > **Định nghĩa:** Khoảng tứ phân vị của mẫu số liệu ghép nhóm cho ở Bảng 1, kí hiệu ${ \rm{ \Delta  } }_{ Q }$, là hiệu giữa tứ phân vị thứ ba $Q_{ 3 }$ và tứ phân vị thứ nhất $Q_{ 1 }$ của mẫu số liệu ghép nhóm đó, tức là:${ \rm{ \Delta  } }_{ Q } =Q_{ 3 } -Q_{ 1 } .$
+- Khoảng tứ phân vị của mẫu số liệu ghép nhóm là giá trị xấp xỉ cho khoảng tứ phân vị của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của nửa giữa của mẫu số liệu (tập hợp gồm $50{ \rm{ \% } }$ số liệu nằm chính giữa mẫu số liệu).
 
-▪Khoảng tứ phân vị của mẫu số liệu ghép nhóm là giá trị xấp xỉ cho khoảng tứ phân vị của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của nửa giữa của mẫu số liệu (tập hợp gồm $50{ \rm{ \% } }$ số liệu nằm chính giữa mẫu số liệu).▪Khoảng tứ phân vị của mẫu số liệu ghép nhóm càng nhỏ thì dữ liệu càng tập trung xung quanh trung vị.▪Khoảng tứ phân vị được dùng để xác định giá trị ngoại lệ trong mẫu số liệu. Giá trị $x$ trong mẫu số liệu là giá trị ngoại lệ nếu $x>Q_{ 3 } +1,5{ \rm{ \Delta  } }_{ Q }$ hoặc $x < Q_{ 1 } -1,5{ \rm{ \Delta  } }_{ Q }$▪Khoảng tứ phân vị của mẫu số liệu ghép nhóm không bị ảnh hưởng nhiều bởi các giá trị ngoại lệ trong mẫu số liệu.Ý nghĩa
+- Khoảng tứ phân vị của mẫu số liệu ghép nhóm càng nhỏ thì dữ liệu càng tập trung xung quanh trung vị.
 
-▪Tứ phân vị thứ $i$, kí hiệu là $Q_{ i }$ với $i=1,2,3$ của mẫu số liệu ghép nhóm được xác định như sau:$Q_{ i } =u_{ m } +\frac { \frac { in } { 4 }-C } { n_{ m } }\left ( { u_{ m+1 } -u_{ m } } \right.  )$. Trong đó:»$n=n_{ 1 } +n_{ 2 } +...+n_{ k }$ là cỡ mẫu.»$\left [ { u_{ m } ;u_{ m+1 } } \right.  )$ là nhóm chứa tứ phân vị thứ $i$.»$n_{ m }$ là tần số của nhóm chứa tứ phân vị thứ $i$.»$C=n_{ 1 } +n_{ 2 } +...+n_{ m-1 }$Ý nghĩa
+- Khoảng tứ phân vị được dùng để xác định giá trị ngoại lệ trong mẫu số liệu. Giá trị $x$ trong mẫu số liệu là giá trị ngoại lệ nếu $x>Q_{ 3 } +1,5{ \rm{ \Delta  } }_{ Q }$ hoặc $x < Q_{ 1 } -1,5{ \rm{ \Delta  } }_{ Q }$
+- Khoảng tứ phân vị của mẫu số liệu ghép nhóm không bị ảnh hưởng nhiều bởi các giá trị ngoại lệ trong mẫu số liệu.Ý nghĩa
+- Tứ phân vị thứ $i$, kí hiệu là $Q_{ i }$ với $i=1,2,3$ của mẫu số liệu ghép nhóm được xác định như sau:$Q_{ i } =u_{ m } +\frac { \frac { in } { 4 }-C } { n_{ m } }\left ( { u_{ m+1 } -u_{ m } } \right.  )$. Trong đó:
+
+- $n=n_{ 1 } +n_{ 2 } +...+n_{ k }$ là cỡ mẫu.
+
+- $\left [ { u_{ m } ;u_{ m+1 } } \right.  )$ là nhóm chứa tứ phân vị thứ $i$.
+
+- $n_{ m }$ là tần số của nhóm chứa tứ phân vị thứ $i$.
+
+- $C=n_{ 1 } +n_{ 2 } +...+n_{ m-1 }$Ý nghĩa
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Khoảng biến thiên của MSL ghép nhóm
+- Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { u_{ 1 } ;u_{ 2 } } \right.  )$ $\left [ { u_{ 2 } ;u_{ 3 } } \right.  )$ $...$ $\left [ { u_{ k } ;u_{ k+1 } } \right.  )$ Tần số $n_{ 1 }$ $n_{ 2 }$ $...$ $n_{ k }$
+- Nếu $n_{ 1 }$ và $n_{ k+1 }$ cùng khác 0 thì $R=u_{ k+1 } -u_{ 1 }$.
 
-» Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { u_{ 1 } ;u_{ 2 } } \right.  )$ $\left [ { u_{ 2 } ;u_{ 3 } } \right.  )$ $...$ $\left [ { u_{ k } ;u_{ k+1 } } \right.  )$ Tần số $n_{ 1 }$ $n_{ 2 }$ $...$ $n_{ k }$» Nếu $n_{ 1 }$ và $n_{ k+1 }$ cùng khác 0 thì $R=u_{ k+1 } -u_{ 1 }$.» Khoảng biến thiên của MSL ghép nhóm luôn $≥$ khoảng biến thiên của MSL gốc. Phương pháp
+- Khoảng biến thiên của MSL ghép nhóm luôn $≥$ khoảng biến thiên của MSL gốc. Phương pháp
 
 **Ví dụ 1.1.** Dữ liệu về tốc độ của 100 xe ô tô lưu thông trên một đoạn đường cao tốc vào giờ cao điểm, được trích xuất từ camera của cơ quan cảnh sát giao thông. Hãy tìm khoảng biến thiên của mẫu số liệu (bảng số liệu hình bên dưới). Tốc độ (km/h) $\left [ { 60;70 } \right.  )$ $\left [ { 70;80 } \right.  )$ $\left [ { 80;90 } \right.  )$ $\left [ { 90;100 } \right.  )$ $\left [ { 100;110 } \right.  )$ Số xe $10$ $20$ $20$ $35$ $15$
 
@@ -62,8 +83,13 @@ Khoảng biến thiên của mẫu số liệu gốc là $43-27=16$ phút.
 Vậy khoảng biến thiên của mẫu số liệu ghép nhóm nhỏ hơn khoảng biến thiên của mẫu số liệu gốc.
 
 ### Dạng 2. Ý nghĩa của khoảng biến thiên trong việc đo mức độ phân tán
+- Khoảng biến thiên của MSL ghép nhóm luôn $≥$ khoảng biến thiên của MSL gốc.
 
-» Khoảng biến thiên của MSL ghép nhóm luôn $≥$ khoảng biến thiên của MSL gốc.» Khoảng biến thiên của mẫu số liệu ghép nhóm là giá trị xấp xỉ khoảng biến thiên của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của mẫu số liệu.» Khoảng biến thiên $R=u_{ k+1 } -u_{ 1 }$ chưa phản ánh được đầy đủ mức độ phân tán của phần lớn các số liệu. » Hơn nữa, giá trị của $R$ thường tăng vọt khi xuất hiện giá trị ngoại lệ trong mẫu số liệu. Do đó, để phản ánh mức độ phân tán của số liệu, người ta còn dùng các số đặc trưng khác. Phương pháp
+- Khoảng biến thiên của mẫu số liệu ghép nhóm là giá trị xấp xỉ khoảng biến thiên của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của mẫu số liệu.
+
+- Khoảng biến thiên $R=u_{ k+1 } -u_{ 1 }$ chưa phản ánh được đầy đủ mức độ phân tán của phần lớn các số liệu.
+
+- Hơn nữa, giá trị của $R$ thường tăng vọt khi xuất hiện giá trị ngoại lệ trong mẫu số liệu. Do đó, để phản ánh mức độ phân tán của số liệu, người ta còn dùng các số đặc trưng khác. Phương pháp
 
 **Ví dụ 2.1.** Để chuẩn bị mở một trung tâm thể dục thể thao, anh Sơn đã tiến hành điều tra tuổi thọ của máy chạy bộ (đơn vị: năm) do hai hãng X, Y sản xuất. Bảng biểu thị hai mẫu số liệu mà anh thu thập được qua Internet. Tuổi thọ $\left [ { 2;4 } \right.  )$ $\left [ { 4;6 } \right.  )$ $\left [ { 6;8 } \right.  )$ $\left [ { 8;10 } \right.  )$ $\left [ { 10;12 } \right.  )$ Số máy của hãng X720362017Số máy của hãng Y020353510Khoảng biến thiên của mẫu số liệu nào lớn hơn? Từ đó có thể nói là máy chạy bộ do hãng nào sản xuất có tuổi thọ phân tán hơn?
 
@@ -99,7 +125,20 @@ Kết quả này cho biết thời gian sử dụng Internet hằng ngày của 
 
 ### Dạng 3. Ý nghĩa của khoảng biến thiên trong việc đo mức độ phân tán
 
-Tứ phân vị thứ k, kí hiệu là $Q_{ k }$ với $k=1,2,3,$ của MSL ghép nhóm được xác định như sau:$Q_{ k } =u_{ m } +\frac { \frac { kn } { 4 }-C } { n_{ m } }\left ( { u_{ m+1 } -u_{ m } } \right.  )$ Trong đó:»$n=n_{ 1 } +n_{ 2 } +...+n_{ k }$ là cỡ mẫu.»$\left [ { u_{ m } ;u_{ m+1 } } \right.  )$ là nhóm chứa tứ phân vị thứ $i$.»$n_{ m }$ là tần số của nhóm chứa tứ phân vị thứ $i$.»$C=n_{ 1 } +n_{ 2 } +...+n_{ m-1 }$» Khoảng tứ phân vị của MSL ghép nhóm cũng được xác định dựa trên tứ phân vị thứ nhất và tứ phân vị thứ ba như đối với MSL không ghép nhóm.» Khoảng tứ phân vị của MSL ghép nhóm có kí hiệu $\Delta _{ Q }$, là hiệu giữa tứ phân vị thứ ba $Q_{ 3 }$ và tứ phân vị thứ nhất $Q_{ 1 }$ của MSL ghép nhóm đó, tức là $\Delta _{ Q } =Q_{ 3 } -Q_{ 1 }$.▪Bước 1: Xác định cỡ mẫu, tính tứ phân vị thứ nhất và tứ phân vị thứ ba của mẫu số liệu.▪Bước 2: Tính khoảng tứ phân vị của mẫu số liệu. Phương pháp
+Tứ phân vị thứ k, kí hiệu là $Q_{ k }$ với $k=1,2,3,$ của MSL ghép nhóm được xác định như sau:$Q_{ k } =u_{ m } +\frac { \frac { kn } { 4 }-C } { n_{ m } }\left ( { u_{ m+1 } -u_{ m } } \right.  )$ Trong đó:
+
+- $n=n_{ 1 } +n_{ 2 } +...+n_{ k }$ là cỡ mẫu.
+
+- $\left [ { u_{ m } ;u_{ m+1 } } \right.  )$ là nhóm chứa tứ phân vị thứ $i$.
+
+- $n_{ m }$ là tần số của nhóm chứa tứ phân vị thứ $i$.
+
+- $C=n_{ 1 } +n_{ 2 } +...+n_{ m-1 }$
+- Khoảng tứ phân vị của MSL ghép nhóm cũng được xác định dựa trên tứ phân vị thứ nhất và tứ phân vị thứ ba như đối với MSL không ghép nhóm.
+
+- Khoảng tứ phân vị của MSL ghép nhóm có kí hiệu $\Delta _{ Q }$, là hiệu giữa tứ phân vị thứ ba $Q_{ 3 }$ và tứ phân vị thứ nhất $Q_{ 1 }$ của MSL ghép nhóm đó, tức là $\Delta _{ Q } =Q_{ 3 } -Q_{ 1 }$.
+- **Bước 1:** Xác định cỡ mẫu, tính tứ phân vị thứ nhất và tứ phân vị thứ ba của mẫu số liệu.
+- **Bước 2:** Tính khoảng tứ phân vị của mẫu số liệu. Phương pháp
 
 **Ví dụ 3.1.** Một người ghi lại thời gian đàm thoại của một số cuộc gọi cho kết quả như bảng sau:Thời gian $t$ (phút) $0≤t < 1$ $1≤t < 2$ $2≤t < 3$ $3≤t < 4$ $4≤t < 5$ Số cuộc gọi817252010Tính khoảng tứ phân vị của mẫu số liệu ghép nhóm trên.
 
@@ -178,8 +217,12 @@ $Q_{ 3 } =6,3+\frac { \frac { 3⋅25 } { 4 }-\left ( { 3+4+6+5 } \right.  ) } { 
 Vậy khoảng tứ phân vị của mẫu số liệu ghép nhóm là:$\Delta _{ Q } =6,33-5,8625=0,4675$.
 
 ### Dạng 4. Ý nghĩa của khoảng tứ phân vị trong việc đo mức độ phân tán
+- Khoảng tứ phân vị của mẫu số liệu ghép nhóm là giá trị xấp xỉ cho khoảng tứ phân vị của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của nửa giữa của mẫu số liệu (tập hợp gồm $50{ \rm{ \% } }$ số liệu nằm chính giữa mẫu số liệu).
 
-▪Khoảng tứ phân vị của mẫu số liệu ghép nhóm là giá trị xấp xỉ cho khoảng tứ phân vị của mẫu số liệu gốc và có thể dùng để đo mức độ phân tán của nửa giữa của mẫu số liệu (tập hợp gồm $50{ \rm{ \% } }$ số liệu nằm chính giữa mẫu số liệu).▪Khoảng tứ phân vị của mẫu số liệu ghép nhóm càng nhỏ thì dữ liệu càng tập trung xung quanh trung vị.▪Khoảng tứ phân vị được dùng để xác định giá trị ngoại lệ trong mẫu số liệu. Giá trị $x$ trong mẫu số liệu là giá trị ngoại lệ nếu $x>Q_{ 3 } +1,5{ \rm{ \Delta  } }_{ Q }$ hoặc $x < Q_{ 1 } -1,5{ \rm{ \Delta  } }_{ Q }$▪Khoảng tứ phân vị của mẫu số liệu ghép nhóm không bị ảnh hưởng nhiều bởi các giá trị ngoại lệ trong mẫu số liệu. Phương pháp
+- Khoảng tứ phân vị của mẫu số liệu ghép nhóm càng nhỏ thì dữ liệu càng tập trung xung quanh trung vị.
+
+- Khoảng tứ phân vị được dùng để xác định giá trị ngoại lệ trong mẫu số liệu. Giá trị $x$ trong mẫu số liệu là giá trị ngoại lệ nếu $x>Q_{ 3 } +1,5{ \rm{ \Delta  } }_{ Q }$ hoặc $x < Q_{ 1 } -1,5{ \rm{ \Delta  } }_{ Q }$
+- Khoảng tứ phân vị của mẫu số liệu ghép nhóm không bị ảnh hưởng nhiều bởi các giá trị ngoại lệ trong mẫu số liệu. Phương pháp
 
 **Ví dụ 4.1.** Kết quả đo chiều cao của 100 cây dừa trồng sau 10 năm tại một vườn trái cây ở Bến Tre cho ở bảng sau:Chiều cao (m) $\left [ { 8,4;8,6 } \right.  )$ $\left [ { 8,6;8,8 } \right.  )$ $\left [ { 8,8;9,0 } \right.  )$ $\left [ { 9,0;9,2 } \right.  )$ $\left [ { 9,2;9,4 } \right.  )$ Số cây512254414⑴ Hãy tìm khoảng biến thiên, khoảng tứ phân vị của mẫu số liệu ghép nhóm trên.⑵ Trong 100 cây dừa trên có 1 cây cao 8,4 m. Hỏi chiều cao của cây dừa này có phải là giá trị ngoại lệ không?
 
@@ -228,8 +271,7 @@ Vì $Q_{ 1 } -1,5\Delta _{ Q } =8,435$ và $Q_{ 3 } +1,5\Delta _{ Q } =9,579$ n�
 Ta có:
 
 ⑵ Nếu so sánh theo khoảng tứ phân vị của mẫu số liệu ghép nhóm thì học sinh trường nào có điểm trung bình đều hơn?
-
-▪Xét mẫu số liệu trường A.
+- Xét mẫu số liệu trường A.
 
 Cỡ mẫu $n=18$.
 
@@ -250,8 +292,7 @@ Do đó, tứ phân vị thứ ba của mẫu số liệu ghép nhóm là:
 $Q_{ 3 } =8+\frac { \frac { 3⋅18 } { 4 }-\left ( { 4+5+3 } \right.  ) } { 4 }\left ( { 9-8 } \right.  )=8,375$.
 
 Vậy khoảng tứ phân vị của mẫu số liệu ghép nhóm là:$\Delta _{ Q\left ( { A } \right.  ) } =8,375-6,1=2,275$.
-
-▪Xét mẫu số liệu ở trường B.
+- Xét mẫu số liệu ở trường B.
 
 Cỡ mẫu $n=15$.
 
@@ -413,25 +454,25 @@ Lời giải
 
 (a) Tổng số bệnh nhân chờ khám bệnh ở phòng khám số 1 dưới 5 phút là $3$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Khoảng biến thiên của mẫu số liệu ghép nhóm về thời gian chờ khám bệnh của phòng khám số 1 là $R_{ 1 } =15$.
 
 Khoảng biến thiên của mẫu số liệu ghép nhóm về thời gian chờ khám bệnh của phòng khám số 1 là $R_{ 1 } =20-0=20$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Khoảng biến thiên của mẫu số liệu ghép nhóm về thời gian chờ khám bệnh của phòng khám số 2 là $R_{ 2 } =20$.
 
 Khoảng biến thiên của mẫu số liệu ghép nhóm về thời gian chờ khám bệnh của phòng khám số 2 là $R_{ 2 } =15-0=15$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Thời gian chờ khám bệnh ở phòng khám số 2 phân tán hơn thời gian chờ khám bệnh ở phòng khám số 1.
 
 Vì $R_{ 1 } >R_{ 2 }$ nên thời gian khám bệnh ở phòng khám số 1 phân tán hơn thời gian chờ khám bệnh ở phòng khám số 2.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -446,7 +487,7 @@ Lời giải
 
 (a) Cỡ mẫu là $n=22$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Tứ phân vị thứ nhất của mẫu số liệu ghép nhóm là $Q_{ 1 } =10$.
 
@@ -456,7 +497,7 @@ Tứ phân vị thứ nhất của mẫu số liệu gốc là $x_{ 6 }$ nên nh
 
 Do đó $Q_{ 1 } =5+\frac { \frac { 1.22 } { 4 }-5 } { 10 }.2=5,1$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Tứ phân vị thứ ba của mẫu số liệu ghép nhóm là $Q_{ 3 } =5$.
 
@@ -464,13 +505,13 @@ Tứ phân vị thứ ba của mẫu số liệu gốc là $x_{ 17 }$ nên nhóm
 
 Do đó $Q_{ 3 } =7+\frac { \frac { 3.22 } { 4 }-15 } { 5 }.2=7,6$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Khoảng tứ phân vị của mẫu số liệu ghép nhóm là $\Delta _{ Q } =5$.
 
 Khoảng tứ phân vị của mẫu số liệu ghép nhóm là $\Delta _{ Q } =7,6-5,1=2,5$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -487,25 +528,25 @@ Lời giải
 
 Số người thay đổi theo chiều hướng giảm cân là $5+6=11$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Khoảng biến thiên của mẫu số liệu ghép nhóm về sự thay đổi cân nặng của nam là $R_{ 1 } =5$.
 
 Khoảng biến thiên của mẫu số liệu ghép nhóm về sự thay đổi cân nặng của nam là $R_{ 1 } =4-\left ( { -1 } \right.  )=5$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Khoảng biến thiên của mẫu số liệu ghép nhóm về sự thay đổi cân nặng của nữ là $R_{ 2 } =3$.
 
 Khoảng biến thiên của mẫu số liệu ghép nhóm về sự thay đổi cân nặng của nữ là $R_{ 2 } =3-\left ( { -1 } \right.  )=4$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Nếu biết nữ tăng cân nhiều nhất là 2 kg và giảm cân được nhiều nhất 1 kg thì khoảng biến thiên của mẫu số liệu gốc là 1.
 
 Nếu biết nữ tăng cân nhiều nhất là 2 kg và giảm cân được nhiều nhất 1 kg thì khoảng biến thiên của mẫu số liệu gốc là $R_{ 2 } =2-\left ( { -1 } \right.  )=3$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -532,19 +573,19 @@ $17-5=12$ triệu đồng.
 
 (a) Trong 20 người lao động ở nhà máy A, hiệu số thu nhập của hai người lao động bất kì không vượt quá 15 triệu đồng.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Trong 20 người lao động ở nhà máy B, hiệu số thu nhập của hai người lao động bất kì không vượt quá 18 triệu đồng.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Nếu dựa vào khoảng biến thiên thì thu nhập của người lao động ở nhà máy A phân tán hơn so với người lao động ở nhà máy B.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Nếu dựa vào khoảng biến thiên thì thu nhập của người lao động ở nhà máy C phân tán hơn so với người lao động ở nhà máy A.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -563,7 +604,7 @@ Ta có $n=100$. Mà $8 < \frac { n } { 4 }=\frac { 100 } { 4 }=25 < 8+20$.
 
 Do đó, nhóm chứa tứ phân vị thứ nhất là $\left [ { 60;\,\,70 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Nhóm chứa tứ phân vị thứ ba của mẫu số liệu ở Bảng b là $\left [ { 90;\,\,100 } \right.  )$.
 
@@ -571,7 +612,7 @@ Ta có $n=100$. Mà $65 < \frac { 3n } { 4 }=\frac { 3.100 } { 4 }=75 < 85$.
 
 Do đó, nhóm chứa tứ phân vị thứ ba là $\left [ { 80;\,\,90 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Khoảng tứ phân vị của mẫu số liệu ở Bảng a là $10$.
 
@@ -587,7 +628,7 @@ $⇒Q_{ 3 } =70+\frac { \frac { 3.100 } { 4 }-(8+20) } { 50 }.\left ( { 80-70 } 
 
 Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q } =Q_{ 3 } -Q_{ 1 } =79,4-68,5=10,9$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Khoảng tứ phân vị của mẫu số liệu ở Bảng b là $20$.
 
@@ -603,7 +644,7 @@ $⇒Q_{ 3 } =80+\frac { \frac { 3.100 } { 4 }-65 } { 20 }.\left ( { 80-70 } \rig
 
 Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q } =Q_{ 3 } -Q_{ 1 } =85-65=20$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -615,8 +656,7 @@ Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q } 
 Khi đó:
 
 Lời giải
-
-» Xét mẫu số liệu thống kê chiều cao của học sinh lớp 12A1
+- Xét mẫu số liệu thống kê chiều cao của học sinh lớp 12A1
 
 Ta có $n=40$.
 
@@ -629,8 +669,7 @@ Lại có $14 < \frac { 3n } { 4 }=\frac { 3.40 } { 4 }=30 < 32$. Do đó, nhóm
 $⇒Q_{ 3 } =160+\frac { \frac { 3.40 } { 4 }-14 } { 18 }.\left ( { 165-160 } \right.  )=\frac { 1480 } { 9 }$.
 
 Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q }' = Q_{ 3 } - Q_{ 1 } = \frac { 1480 } { 9 } - \frac { 2060 } { 13 } = \frac { 700 } { 117 }$.
-
-» Xét mẫu số liệu thống kê chiều cao của học sinh lớp 12A2
+- Xét mẫu số liệu thống kê chiều cao của học sinh lớp 12A2
 
 Ta có $n=40$.
 
@@ -643,8 +682,7 @@ Lại có $12 < \frac { 3n } { 4 }=\frac { 3.40 } { 4 }=30 < 32$. Do đó, nhóm
 $⇒Q_{ 3 } =160+\frac { \frac { 3.40 } { 4 }-12 } { 20 }.\left ( { 165-160 } \right.  )=\frac { 329 } { 2 }$.
 
 Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q } ^ {  }$.
-
-» Xét mẫu số liệu thống kê chiều cao của học sinh lớp 12A3
+- Xét mẫu số liệu thống kê chiều cao của học sinh lớp 12A3
 
 Ta có $n=40$.
 
@@ -662,25 +700,25 @@ Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q } 
 
 Ta có $\Delta _{ Q }' > \Delta _{ Q }$ $\left ( { \frac { 700 } { 117 }>\frac { 16 } { 3 } } \right.  )$. Do đó, mẫu số liệu thống kê chiều cao của học sinh lớp 12A1 phân tán hơn so với lớp 12A2.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Nếu dựa vào khoảng tứ phân vị thì mẫu số liệu thống kê chiều cao của học sinh lớp 12A2 phân tán hơn so với lớp 12A3.
 
 Ta có $\Delta _{ Q } ^ {  }$ $\left ( { \frac { 16 } { 3 } < \frac { 91 } { 12 } } \right.  )$. Do đó, mẫu số liệu thống kê chiều cao của học sinh lớp 12A3 phân tán hơn so với lớp 12A2.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Ở lớp 12A2 có một học sinh có chiều cao là 173 cm, chiều cao của học sinh đó là giá trị ngoại lệ của mẫu số liệu của lớp 12A2.
 
 Xét mẫu số liệu lớp 12A2, ta có $\Delta _{ Q } ^ {  }$. Khi đó, giá trị ngoại lệ là các giá trị $x>Q_{ 3 } +1,5\Delta _{ Q } ^ {  }$. Do đó, giá trị 173 cm là giá trị ngoại lệ của mẫu số liệu lớp 12A2.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Ở lớp 12A3 có một học sinh có chiều cao là 177 cm, chiều cao của học sinh đó là giá trị ngoại lệ của mẫu số liệu của lớp 12A3.
 
 Xét mẫu số liệu lớp 12A3, ta có $\Delta _{ Q } ^ {  }$. Khi đó, giá trị ngoại lệ là các giá trị $x>Q_{ 3 } +1,5\Delta _{ Q } ^ {  }$. Do đó, giá trị 177 cm là không là giá trị ngoại lệ của mẫu số liệu lớp 12A3.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -709,19 +747,19 @@ Ta có $R_{ Z } =R_{ X } =10>8=R_{ Y }$
 
 (a) Khoảng biến thiên của máy chạy bộ do hãng X sản xuất bằng 10.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Khoảng biến thiên của máy chạy bộ do hãng Y sản xuất không vượt quá 6.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Khoảng biến thiên của máy chạy bộ do hãng Z sản xuất thì lớn hơn khoảng biến thiên của máy chạy bộ do hãng Y sản xuất.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Nếu dựa vào khoảng biến thiên thì máy chạy bộ do hãng Z sản xuất có tuổi thọ phân tán nhất trong ba hãng.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -742,7 +780,7 @@ Gọi $x_{ 1 } ≤x_{ 2 } ≤...≤x_{ 41 }$ là số điểm kiểm tra Toán �
 
 Do đó tứ phân vị thứ nhất của mẫu số liệu là $x_{ 11 } ∈\left [ { 7,5;\,\,8 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Nhóm chứa tứ phân vị thứ ba của mẫu số liệu ở Bảng B là $\left [ { 8,5;\,\,9 } \right.  )$.
 
@@ -752,7 +790,7 @@ Gọi $y_{ 1 } ≤y_{ 2 } ≤...≤y_{ 41 }$ là số điểm kiểm tra Toán �
 
 Do đó tứ phân vị thứ ba của mẫu số liệu là $y_{ 31 } ∈\left [ { 8,5;\,\,9 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Khoảng tứ phân vị của mẫu số liệu ở Bảng A thì lớn hơn 2.
 
@@ -770,7 +808,7 @@ $⇒Q_{ 3 } =8,5+\frac { \frac { 3.41 } { 4 }-28 } { 7 }.\left ( { 9-8,5 } \righ
 
 Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q } =Q_{ 3 } -Q_{ 1 } =8,70-7,07=1,63$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Khoảng tứ phân vị của mẫu số liệu ở Bảng B nhỏ hơn khoảng tứ phân vị của mẫu số liệu ở bảng A.
 
@@ -788,7 +826,7 @@ $⇒Q_{ 3 } =8,5+\frac { \frac { 3.41 } { 4 }-28 } { 8 }.\left ( { 9-8,5 } \righ
 
 Vậy khoảng tứ phân vị của mẫu số liệu trên là $\Delta _{ Q } =Q_{ 3 } -Q_{ 1 } =85-65=1,08$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -924,6 +962,10 @@ Tính khoảng biến của mẫu số liệu ghép nhóm dãy số liệu trên
 
 > **Đáp số:** `13,75`
 
-Tính khoảng tứ phân vị của mẫu số liệu ghép nhóm có tuổi thọ trung bình đồng đều nhất. Cỡ mẫu $n=50$. » Gọi $x_{ 1 } ;x_{ 2 } ;...;x_{ 50 }$ là mẫu số liệu gốc về tuổi thọ trung bình của nam giới ở $50$ quốc gia được xếp theo thứ tự không giảm. Ta có:$x_{ 1 } ;x_{ 2 } ;...;x_{ 4 } ∈\left [ { 50;55 } \right.  )$;$x_{ 5 } ;x_{ 6 } ;...;x_{ 11 } ∈\left [ { 55;60 } \right.  )$;$x_{ 12 } ;x_{ 13 } ;...;x_{ 15 } ∈\left [ { 60;65 } \right.  )$;$x_{ 16 } ;x_{ 17 } ;...;x_{ 21 } ∈\left [ { 65;70 } \right.  )$;$x_{ 22 } ;x_{ 23 } ;...;x_{ 36 } ∈\left [ { 70;75 } \right.  )$,$x_{ 37 } ;x_{ 38 } ;...;x_{ 48 } ∈\left [ { 75;80 } \right.  )$;$x_{ 49 } ;x_{ 50 } ∈\left [ { 80;85 } \right.  )$ Tứ phân vị thứ nhất của mẫu số liệu gốc là $x_{ 13 } ∈\left [ { 60;65 } \right.  )$. Do đó, tứ phân vị thứ nhất của mẫu số liệu ghép nhóm là: $Q_{ 1 } =60+\frac { \frac { 50 } { 4 }-\left ( { 4+7 } \right.  ) } { 4 }\left ( { 65-60 } \right.  )=61,875$. Tứ phân vị thứ ba của mẫu số liệu gốc là $x_{ 38 } ∈\left [ { 75;80 } \right.  )$. Do đó, tứ phân vị thứ ba của mẫu số liệu ghép nhóm là: $Q_{ 3 } =75+\frac { \frac { 3.50 } { 4 }-\left ( { 4+7+4+6+15 } \right.  ) } { 12 }\left ( { 80-75 } \right.  )=75,625$. Khoảng tứ phân vị của mẫu số liệu ghép nhóm là:$\Delta _{ Q } =Q_{ 3 } -Q_{ 1 } =13,75$. » Gọi $y_{ 1 } ;y_{ 2 } ;...;y_{ 50 }$ là mẫu số liệu gốc về tuổi thọ trung bình của nữ giới ở $50$ quốc gia được xếp theo thứ tự không giảm. Ta có:$y_{ 1 } ;y_{ 2 } ;y_{ 3 } ∈\left [ { 50;55 } \right.  )$;$y_{ 4 } ;...;y_{ 7 } ∈\left [ { 55;60 } \right.  )$;$y_{ 8 } ;...;y_{ 12 } ∈\left [ { 60;65 } \right.  )$;$y_{ 13 } ;...;y_{ 15 } ∈\left [ { 65;70 } \right.  )$;$y_{ 16 } ;...;y_{ 22 } ∈\left [ { 70;75 } \right.  )$,$y_{ 23 } ;...;y_{ 36 } ∈\left [ { 75;80 } \right.  )$;$y_{ 37 } ;...;y_{ 49 } ∈\left [ { 80;85 } \right.  )$;$y_{ 50 } ∈\left [ { 85;90 } \right.  )$. Tứ phân vị thứ nhất của mẫu số liệu gốc là $y_{ 13 } ∈\left [ { 65;70 } \right.  )$. Do đó, tứ phân vị thứ nhất của mẫu số liệu ghép nhóm là: $Q_{ 1 }' = 65 + \frac { \frac { 50 } { 4 }-\left ( { 3+4+5 } \right.  ) } { 3 }\left ( { 70-65 } \right.  )=\frac { 395 } { 6 }$. Tứ phân vị thứ ba của mẫu số liệu gốc là $y_{ 38 } ∈\left [ { 80;85 } \right.  )$. Do đó, tứ phân vị thứ ba của mẫu số liệu ghép nhóm là: $Q_{ 3 }' = 80 + \frac { \frac { 3.50 } { 4 }-\left ( { 3+4+5+3+7+14 } \right.  ) } { 13 }\left ( { 85-80 } \right.  )=\frac { 2095 } { 26 }$. Khoảng tứ phân vị của mẫu số liệu ghép nhóm là:$\Delta _{ Q' } =Q_{ 3 } ' - Q_{ 1 } ' = \frac { 575 } { 39 }$. Suy ra $\Delta _{ Q' } >\Delta _{ Q }$ nên độ tuổi trung bình của nam giới đồng đều hơn. Vậy khoảng tứ phân vị của mẫu số liệu ghép nhóm có tuổi thọ trung bình đồng đều nhất là $13,75$. ------------------------------- Hết -------------------------------
+Tính khoảng tứ phân vị của mẫu số liệu ghép nhóm có tuổi thọ trung bình đồng đều nhất. Cỡ mẫu $n=50$.
+
+- Gọi $x_{ 1 } ;x_{ 2 } ;...;x_{ 50 }$ là mẫu số liệu gốc về tuổi thọ trung bình của nam giới ở $50$ quốc gia được xếp theo thứ tự không giảm. Ta có:$x_{ 1 } ;x_{ 2 } ;...;x_{ 4 } ∈\left [ { 50;55 } \right.  )$;$x_{ 5 } ;x_{ 6 } ;...;x_{ 11 } ∈\left [ { 55;60 } \right.  )$;$x_{ 12 } ;x_{ 13 } ;...;x_{ 15 } ∈\left [ { 60;65 } \right.  )$;$x_{ 16 } ;x_{ 17 } ;...;x_{ 21 } ∈\left [ { 65;70 } \right.  )$;$x_{ 22 } ;x_{ 23 } ;...;x_{ 36 } ∈\left [ { 70;75 } \right.  )$,$x_{ 37 } ;x_{ 38 } ;...;x_{ 48 } ∈\left [ { 75;80 } \right.  )$;$x_{ 49 } ;x_{ 50 } ∈\left [ { 80;85 } \right.  )$ Tứ phân vị thứ nhất của mẫu số liệu gốc là $x_{ 13 } ∈\left [ { 60;65 } \right.  )$. Do đó, tứ phân vị thứ nhất của mẫu số liệu ghép nhóm là: $Q_{ 1 } =60+\frac { \frac { 50 } { 4 }-\left ( { 4+7 } \right.  ) } { 4 }\left ( { 65-60 } \right.  )=61,875$. Tứ phân vị thứ ba của mẫu số liệu gốc là $x_{ 38 } ∈\left [ { 75;80 } \right.  )$. Do đó, tứ phân vị thứ ba của mẫu số liệu ghép nhóm là: $Q_{ 3 } =75+\frac { \frac { 3.50 } { 4 }-\left ( { 4+7+4+6+15 } \right.  ) } { 12 }\left ( { 80-75 } \right.  )=75,625$. Khoảng tứ phân vị của mẫu số liệu ghép nhóm là:$\Delta _{ Q } =Q_{ 3 } -Q_{ 1 } =13,75$.
+
+- Gọi $y_{ 1 } ;y_{ 2 } ;...;y_{ 50 }$ là mẫu số liệu gốc về tuổi thọ trung bình của nữ giới ở $50$ quốc gia được xếp theo thứ tự không giảm. Ta có:$y_{ 1 } ;y_{ 2 } ;y_{ 3 } ∈\left [ { 50;55 } \right.  )$;$y_{ 4 } ;...;y_{ 7 } ∈\left [ { 55;60 } \right.  )$;$y_{ 8 } ;...;y_{ 12 } ∈\left [ { 60;65 } \right.  )$;$y_{ 13 } ;...;y_{ 15 } ∈\left [ { 65;70 } \right.  )$;$y_{ 16 } ;...;y_{ 22 } ∈\left [ { 70;75 } \right.  )$,$y_{ 23 } ;...;y_{ 36 } ∈\left [ { 75;80 } \right.  )$;$y_{ 37 } ;...;y_{ 49 } ∈\left [ { 80;85 } \right.  )$;$y_{ 50 } ∈\left [ { 85;90 } \right.  )$. Tứ phân vị thứ nhất của mẫu số liệu gốc là $y_{ 13 } ∈\left [ { 65;70 } \right.  )$. Do đó, tứ phân vị thứ nhất của mẫu số liệu ghép nhóm là: $Q_{ 1 }' = 65 + \frac { \frac { 50 } { 4 }-\left ( { 3+4+5 } \right.  ) } { 3 }\left ( { 70-65 } \right.  )=\frac { 395 } { 6 }$. Tứ phân vị thứ ba của mẫu số liệu gốc là $y_{ 38 } ∈\left [ { 80;85 } \right.  )$. Do đó, tứ phân vị thứ ba của mẫu số liệu ghép nhóm là: $Q_{ 3 }' = 80 + \frac { \frac { 3.50 } { 4 }-\left ( { 3+4+5+3+7+14 } \right.  ) } { 13 }\left ( { 85-80 } \right.  )=\frac { 2095 } { 26 }$. Khoảng tứ phân vị của mẫu số liệu ghép nhóm là:$\Delta _{ Q' } =Q_{ 3 } ' - Q_{ 1 } ' = \frac { 575 } { 39 }$. Suy ra $\Delta _{ Q' } >\Delta _{ Q }$ nên độ tuổi trung bình của nam giới đồng đều hơn. Vậy khoảng tứ phân vị của mẫu số liệu ghép nhóm có tuổi thọ trung bình đồng đều nhất là $13,75$. ------------------------------- Hết -------------------------------
 
 </details>

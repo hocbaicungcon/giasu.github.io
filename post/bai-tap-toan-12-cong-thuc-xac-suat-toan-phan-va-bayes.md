@@ -24,15 +24,21 @@ grade: 12
 > **Định nghĩa:** Cho hai biến cố $A$ và $B$ với ${ \rm{ } }0 < P\left ( { B } \right.  ) < 1$, ta có:$P\left ( { A } \right.  )=P\left ( { A∩B } \right.  )+P\left ( { A∩ \bar B } \right.  )\,\,\,\,\,\,\,\,\,\,\,\,\,\,=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )$
 
 ### 2. Công thức Bayes
+- Cho hai biến cố $A$ và $B$ với $P\left ( { A } \right.  )>0,P\left ( { B } \right.  )>0$, do $P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )$ Nên công thức Bayes còn có dạng:$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  ) }$ Nhận xétĐịnh nghĩa:Cho hai biến cố $A$ và $B$ với $P\left ( { A } \right.  )>0,P\left ( { B } \right.  )>0$, ta có:$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$
 
-» Cho hai biến cố $A$ và $B$ với $P\left ( { A } \right.  )>0,P\left ( { B } \right.  )>0$, do $P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )$ Nên công thức Bayes còn có dạng:$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  ) }$ Nhận xétĐịnh nghĩa:Cho hai biến cố $A$ và $B$ với $P\left ( { A } \right.  )>0,P\left ( { B } \right.  )>0$, ta có:$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$
-
-KIẾN THỨC CẦN NHỚ 1. Công thức xác suất toàn phần:$P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )$ 2. Công thức Bayes:$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$ hoặc $P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  ) }$ Chú ý 1: Các công thúc cần nhớ»$P\left ( { A } \right.  )+P\left ( { \bar A } \right.  )=1$»$P\left ( { A\left | { B } \right.  . } \right.  )+P\left ( { \bar A\left | { B } \right.  . } \right.  )=1$»$P\left ( { A∩B } \right.  )+P\left ( { A∩ \bar B } \right.  )=P\left ( { A } \right.  )$»$P\left ( { A∩B } \right.  )+P\left ( { \bar A∩B } \right.  )=P\left ( { B } \right.  )$ Chú ý 2: Công thức xác suất toàn phần và Công thức Bayes được áp dụng trong các trường hợp sự việc bài toán đề cập đến gồm nhiều giai đoạn có sự liên đới nhau trong quá trình xảy ra.
+KIẾN THỨC CẦN NHỚ 1. Công thức xác suất toàn phần:$P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )$ 2. Công thức Bayes:$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$ hoặc $P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  ) }$ Chú ý 1: Các công thúc cần nhớ
+- $P\left ( { A } \right.  )+P\left ( { \bar A } \right.  )=1$
+- $P\left ( { A\left | { B } \right.  . } \right.  )+P\left ( { \bar A\left | { B } \right.  . } \right.  )=1$
+- $P\left ( { A∩B } \right.  )+P\left ( { A∩ \bar B } \right.  )=P\left ( { A } \right.  )$
+- $P\left ( { A∩B } \right.  )+P\left ( { \bar A∩B } \right.  )=P\left ( { B } \right.  )$ Chú ý 2: Công thức xác suất toàn phần và Công thức Bayes được áp dụng trong các trường hợp sự việc bài toán đề cập đến gồm nhiều giai đoạn có sự liên đới nhau trong quá trình xảy ra.
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Công thức xác suất toàn phần và công thức Bayes.
+- Công thức xác suất toàn phần: Cho hai biến cố A và B với $0 < P\left ( { B } \right.  ) < 1$. Khi đó:
+- **Chú ý:** Công thức xác suất toàn phần cũng đúng với biến cố B bất kì.
 
-» Công thức xác suất toàn phần: Cho hai biến cố A và B với $0 < P\left ( { B } \right.  ) < 1$. Khi đó:▪Chú ý: Công thức xác suất toàn phần cũng đúng với biến cố B bất kì. » Công thức Bayes: Giả sử A và B là hai biến cố ngẫu nhiên thoả mãn $P\left ( { A } \right.  )>0$ và $0 < P\left ( { B } \right.  ) < 1$. Khi đó▪Chú ý: Với $P\left ( { A } \right.  )>0$,$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  )P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$ cũng được gọi là công thức Bayes. Phương pháp
+- Công thức Bayes: Giả sử A và B là hai biến cố ngẫu nhiên thoả mãn $P\left ( { A } \right.  )>0$ và $0 < P\left ( { B } \right.  ) < 1$. Khi đó
+- **Chú ý:** Với $P\left ( { A } \right.  )>0$,$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  )P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$ cũng được gọi là công thức Bayes. Phương pháp
 
 **Ví dụ 1.1.** Cho hai biến cố $A$ và $B$ với $0 < P\left ( { A } \right.  ) < 1$. ⑴ Viết công thức xác suất toàn phần tính $P\left ( { B } \right.  )$.⑵ Với . Tính $P\left ( { B } \right.  )$?
 
@@ -75,8 +81,8 @@ $P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  
 Công thức Bayes $P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  ).P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }=\frac { 0,8.0,7 } { 0,65 }=\frac { 56 } { 65 }$
 
 ### Dạng 2. Các bài toán liên quan đến công thức xác suất toàn phần.
-
-» Công thức xác suất toàn phần: Cho hai biến cố A và B với $0 < P\left ( { B } \right.  ) < 1$. Khi đó:▪Chú ý: Công thức xác suất toàn phần cũng đúng với biến cố B bất kì. Phương pháp
+- Công thức xác suất toàn phần: Cho hai biến cố A và B với $0 < P\left ( { B } \right.  ) < 1$. Khi đó:
+- **Chú ý:** Công thức xác suất toàn phần cũng đúng với biến cố B bất kì. Phương pháp
 
 **Ví dụ 2.1.** Người ta khảo sát khả năng chơi nhạc cụ của một nhóm học sinh nam nữ tại một trường phổ thông H. Xét phép thử chọn ngẫu nhiên 1 học sinh trong nhóm đó. gọi $A$ là biến cố “học sinh được chọn biết chơi ít nhất một nhạc cụ”, và $B$ là biến cố “học sinh được chọn là nam”. Biết xác xuất học sinh được chọn là nam bằng 0,6; xác suất học sinh được chọn là nam và biết chơi ít nhất một nhạc cụ là 0,3; xác suất học sinh được chọn là nữ và biết chơi ít nhất một nhạc cụ là 0,15. Tính $P\left ( { A } \right.  )$.
 
@@ -105,8 +111,8 @@ Theo công thức xác suất từng phần, ta có xác suất học sinh đư�
 .
 
 ### Dạng 3. Các bài toán liên quan đến công thức Bayes.
-
-» Công thức Bayes: Giả sử A và B là hai biến cố ngẫu nhiên thoả mãn $P\left ( { A } \right.  )>0$ và $0 < P\left ( { B } \right.  ) < 1$. Khi đó▪Chú ý: Với $P\left ( { A } \right.  )>0$,$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  )P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$ cũng được gọi là công thức Bayes. Phương pháp
+- Công thức Bayes: Giả sử A và B là hai biến cố ngẫu nhiên thoả mãn $P\left ( { A } \right.  )>0$ và $0 < P\left ( { B } \right.  ) < 1$. Khi đó
+- **Chú ý:** Với $P\left ( { A } \right.  )>0$,$P\left ( { B\|A } \right.  )=\frac { P\left ( { B } \right.  )P\left ( { A\|B } \right.  ) } { P\left ( { A } \right.  ) }$ cũng được gọi là công thức Bayes. Phương pháp
 
 **Ví dụ 3.1.** Một hộp có 4 viên bi, mỗi viên có thể là màu đen hoặc trắng. Lấy ngẫu nhiên ra 2 viên bi. Tính xác suất để lấy được 2 bi trắng.
 
@@ -292,13 +298,13 @@ Lời giải
 
 Ta có:$B$ là biến cố “Viên bi được lấy ra từ hộp thứ nhất chuyển sang hộp thứ hai là bi đỏ” nên $P\left ( { B } \right.  )=\frac { n\left ( { B } \right.  ) } { n\left ( { Ω } \right.  ) }=\frac { 5 } { 10 }=0,5$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Giả sử viên bi lấy ra từ hộp thứ nhất chuyển sang hộp thứ hai là bị đỏ thì khi đó $P\left ( { A\|B } \right.  )=\frac { 7 } { 11 }$.
 
 Giả sử viên bi lấy ra từ hộp thứ nhất chuyển sang hộp thứ hai là bị đỏ thì sau khi chuyển, hộp thứ hai có 7 bi đỏ và 4 bi xanh nên $P\left ( { A\|B } \right.  )=\frac { 7 } { 11 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Gọi $\bar B$:“Viên bi được lấy ra từ hộp thứ nhất chuyển sang hộp thứ hai là bi xanh” thì $P\left ( { A\| \bar B } \right.  )=\frac { 7 } { 11 }$
 
@@ -306,7 +312,7 @@ Gọi $\bar B$: “Viên bi được lấy ra từ hộp thứ nhất chuyển s
 
 Nếu viên bi được lấy ra từ hộp thứ nhất chuyển sang hộp thứ hai là bi xanh thì sau khi chuyển, hộp thứ hai có 6 bi đỏ và 5 bi xanh. Khi đó $P\left ( { A\| \bar B } \right.  )=\frac { 6 } { 11 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Xác suất để viên bi được lấy ra từ hộp thứ hai là viên bi đỏ là $P\left ( { A } \right.  )=\frac { 13 } { 22 }$.
 
@@ -318,7 +324,7 @@ Xác suất để viên bi được lấy ra từ hộp thứ hai là viên bi �
 
 $P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )=0,5.\frac { 7 } { 11 }+0,5.\frac { 6 } { 11 }=\frac { 13 } { 22 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -337,25 +343,25 @@ Và $B$: “Người mua thứ hai mua được con gà trống”
 
 Ta có $P\left ( { A } \right.  )=\frac { 5 } { 5+2 }=\frac { 5 } { 7 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Xác suất để người đó mua được con gà trống là $\frac { 2 } { 5 }$.
 
 Ta có
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Một người thứ hai lại đến mua gà, người bán gà lại bắt ngẫu nhiên ra 1 con, xác suất để người thứ hai mua được con gà trống khi người thứ nhất mua được con gà mái là $\frac { 1 } { 3 }.$
 
 $P\left ( { B\|A } \right.  )=\frac { 2 } { 7-1 }=\frac { 1 } { 3 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Trong trường hợp người bán gà quên mất rằng con gà bán cho người thứ nhất là gà trống hay gà mái. Xác suất để người thứ hai mua được con gà trống bằng $\frac { 3 } { 7 }$.
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -370,13 +376,13 @@ Lời giải
 
 Số viên bi màu đỏ có đánh số là $60\%.50=30$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Số viên bi màu vàng không đánh số là $15$.
 
 Số viên bi màu vàng không đánh số là $50\%.30=15$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Lấy ra ngẫu nhiên một viên bi trong hộp. Xác suất để viên bi được lấy ra có đánh số là $\frac { 3 } { 5 }$.
 
@@ -400,7 +406,7 @@ $P\left ( { A\| \bar B } \right.  )=100\%-50\%=\frac { 1 } { 2 }$
 
 Vậy $P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )=\frac { 5 } { 8 }.\frac { 3 } { 5 }+\frac { 3 } { 8 }.\frac { 1 } { 2 }=\frac { 9 } { 16 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Lấy ra ngẫu nhiên một viên bi trong hộp. Xác suất để viên bi được lấy ra không có đánh số $\frac { 7 } { 16 }$.
 
@@ -410,7 +416,7 @@ $⇒ \bar A$ là biến cố “viên bi được lấy ra không có đánh s�
 
 Ta có:$P\left ( { \bar A } \right.  )=1-P\left ( { A } \right.  )=1-\frac { 9 } { 16 }=\frac { 7 } { 16 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -437,7 +443,7 @@ Có $4{ \rm{ \% } }$ mặt hàng do Máy I sản xuất bị lỗi.
 
 Suy ra nếu vật phẩm được sản xuất bởi máy I thì xác suất sản phẩm đó bị lỗi là $0,04$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Xác suất để vật lấy ra được tạo bởi máy II và không bị lỗi là $0,384$.
 
@@ -445,7 +451,7 @@ Biến cố “Vật lấy ra được tạo bởi máy II và không bị lỗi
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Xác suất để vật lấy ra không bị lỗi là $0,046$.
 
@@ -453,7 +459,7 @@ Xác suất để vật lấy ra không bị lỗi là:
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Nếu vật được rút ra bị lỗi, xác suất để vật đó được tạo ra bởi Máy II bằng $\frac { 15 } { 23 }$.
 
@@ -461,7 +467,7 @@ Xác suất để vật lấy ra không bị lỗi là:
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -488,13 +494,13 @@ Mà $P\left ( { B_{ 1 } } \right.  )=\frac { 1 } { 2 }$,$P\left ( { B_{ 2 } } \r
 
 Vậy $P\left ( { A } \right.  )=\frac { 1 } { 2 }.\frac { 3 } { 4 }+\frac { 1 } { 2 }.\frac { 1 } { 2 }=\frac { 5 } { 8 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Xác suất để sản phẩm lấy ra là sản phẩm lỗi bằng $\frac { 3 } { 8 }.$
 
 Ta có:$P\left ( { A } \right.  )=\frac { 5 } { 8 }⇒P\left ( { \bar A } \right.  )=1-P\left ( { A } \right.  )=1-\frac { 5 } { 8 }=\frac { 3 } { 8 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Giả sử sản phẩm lấy ra là sản phẩm tốt . Xác suất đế sản phẩm đó của lô thứ II bằng $\frac { 2 } { 5 }.$
 
@@ -502,7 +508,7 @@ Ta có:$P\left ( { B_{ 2 } } \right.  )=\frac { 1 } { 2 }$,$P\left ( { A\|B_{ 2 
 
 Vậy $P\left ( { B_{ 2 } \|A } \right.  )=\frac { P\left ( { B_{ 2 } } \right.  ).P\left ( { A\|B_{ 2 } } \right.  ) } { P\left ( { A } \right.  ) }=\frac { 0,5.0,5 } { \frac { 5 } { 8 } }=\frac { 2 } { 5 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Giả sử sản phẩm lấy ra là phế phẩm . Xác suất đế sản phẩm đó của lô thứ I bằng $\frac { 1 } { 2 }.$
 
@@ -510,7 +516,7 @@ Ta có:$P\left ( { A } \right.  )=\frac { 5 } { 8 }⇒P\left ( { \bar A } \right
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -525,7 +531,7 @@ Lời giải
 
 Chọn 2 sản phẩm tốt từ 13 sản phẩm tốt trong hộp loại I là $C_{ 13 } ^{ 2 }=78$ cách.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Xác suất chọn được 2 phế phẩm trong hộp loại II là $\frac { 12 } { 15 }$.
 
@@ -535,7 +541,7 @@ Tổng số cách chọn 2 sản phẩm từ 10 sản phẩm (6 tốt và 4 ph�
 
 Vậy xác suất chọn được 2 phế phẩm là $\frac { 6 } { 45 }=\frac { 2 } { 15 }.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Chọn ngẫu nhiên trong thùng một hộp và từ hộp đó lấy ra hai sản phẩm để kiểm tra, xác suất để hai sản phẩm này đều tốt là $\frac { 87 } { 175 }.$
 
@@ -555,7 +561,7 @@ Vậy xác suất hai sản phẩm lấy ra từ một hộp trong thùng đều
 
 $P\left ( { C } \right.  )=P\left ( { C\left | { A } \right.  . } \right.  ).P\left ( { A } \right.  )+P\left ( { C\left | { B } \right.  . } \right.  ).P\left ( { B } \right.  )=\frac { 26 } { 35 }.\frac { 2 } { 5 }+\frac { 1 } { 3 }.\frac { 3 } { 5 }=\frac { 87 } { 175 }.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Chọn ngẫu nhiên trong thùng một hộp và từ hộp đó lấy ra hai sản phẩm để kiểm tra, giả sử hai sản phẩm đó đều tốt thì xác suất để hai sản phẩm đó thuộc hộp loại I là $\frac { 52 } { 87 }.$
 
@@ -563,7 +569,7 @@ Xác suất lấy ra hai sản phẩm đều tốt thuộc hộp loại I là
 
 Công thức Bayes:$P\left ( { A\left | { C } \right.  . } \right.  )=\frac { P\left ( { C\left | { A } \right.  . } \right.  ).P\left ( { A } \right.  ) } { P\left ( { C } \right.  ) }=\frac { \frac { 26 } { 35 }.\frac { 2 } { 5 } } { \frac { 87 } { 125 } }=\frac { 52 } { 87 }.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -582,13 +588,13 @@ Và $B$: “Email bị lọc đúng email rác của hệ thống lọc email r�
 
 Vì $5\%$ email nhận được là rác nên xác suất nhận được một email rác là $P\left ( { A } \right.  )=5\%=0,05$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Xác suất bị lọc của email rác là $0,93.$
 
 Xác suất email bị lọc của email rác là $P\left ( { \left | { B } \right.  .A } \right.  )=95\%=0,95.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Xác suất chọn một email trong số những email bị lọc bất kể có là rác hay không là $0,1425.$
 
@@ -598,7 +604,7 @@ Xác suất email bị lọc của email không phải rác là
 
 Vậy xác suất chọn một email bị lọc bất kể là rác hay không là
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Xác suất chọn một email trong số những email bị lọc thực sự là email rác là $\frac { 7 } { 19 }.$
 
@@ -606,7 +612,7 @@ Xác suất chọn một email trong số những email bị lọc thực sự l
 
 Công thức Bayes:$P\left ( { A∣B } \right.  )=\frac { P\left ( { B∣A } \right.  ).P\left ( { A } \right.  ) } { P\left ( { B } \right.  ) }=\frac { 0,95.0,05 } { 0,1425 }=\frac { 1 } { 3 }.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -627,7 +633,7 @@ $⇒ \bar B$ là biến cố “bạn Việt lấy ra viên bi không có tô m�
 
 Xác suất để bạn Nam lấy ra viên bi có tô màu là $P\left ( { B } \right.  )=\frac { 70 } { 100 }=\frac { 7 } { 10 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Sơ đồ cây biểu thị tình huống trên là
 
@@ -641,7 +647,7 @@ Sơ đồ cây biểu thị tình huống trên là
 
 <p align="center"><img src="/assets/images/toan-12/c6_b2_image633.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Xác suất để bạn Việt lấy ra viên bi có tô màu là $\frac { 191 } { 330 }$.
 
@@ -649,7 +655,7 @@ Xác suất để bạn Việt lấy ra viên bi có tô màu là
 
 $P\left ( { A } \right.  )=P\left ( { B } \right.  ).P\left ( { A\|B } \right.  )+P\left ( { \bar B } \right.  ).P\left ( { A\| \bar B } \right.  )=\frac { 7 } { 10 }.\frac { 23 } { 33 }+\frac { 3 } { 10 }.\frac { 70 } { 99 }=\frac { 7 } { 10 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Xác suất để bạn Việt lấy ra viên bi không có tô màu là $\frac { 139 } { 330 }$.
 
@@ -659,7 +665,7 @@ $⇒ \bar A$ là biến cố “bạn Việt lấy ra viên bi không có tô m�
 
 Ta có:$P\left ( { \bar A } \right.  )=1-P\left ( { A } \right.  )=1-\frac { 7 } { 10 }=\frac { 3 } { 10 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -692,7 +698,7 @@ Nếu trời không mưa, An có 70% khả năng đi xem bóng đá nghĩa là .
 
 Nếu trời không mưa, khả năng An không đi xem đá bóng là
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Xác suất An đi xem đá bóng là 0, 61.
 
@@ -700,7 +706,7 @@ Ta có: .
 
 Xác suất An đi xem bóng đá ông là:
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Xác suất Bảo không đi xem đá bóng là 0, 51.
 
@@ -708,7 +714,7 @@ Nếu An đi, Bảo có 80% khả năng đi nghĩa là $P\left ( { B\|A } \right
 
 $=0,61.\left ( { 1-0,8 } \right.  )+\left ( { 1-0,61 } \right.  ).\left ( { 1-0 } \right.  )=0,512$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Xác suất để ít nhất hai trong ba người bạn cùng đi xem trận bóng đá là 0, 5612.
 
@@ -730,7 +736,7 @@ Trường hợp 3: An, Bình, Châu đi xem bóng đá:
 
 $P\left ( { ABC } \right.  )=P\left ( { AB } \right.  )P\left ( { C } \right.  )=P\left ( { A } \right.  ).P\left ( { B\|A } \right.  ).P\left ( { C } \right.  )=0,61.0,8.0,6=0,2928$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -833,7 +839,11 @@ Lấy ra ngẫu nhiên một viên bi trong hộp. Xác suất để viên bi đ
 
 > **Đáp số:** `0,77`
 
-Gọi $A$: “Học sinh đó chọn tổ hợp $A00$”; Và $B$: “Học sinh đó đỗ đại học”. Ta cần tính $P\left ( { A\|B } \right.  )$. Theo công thức Bayes, ta cần biết: . Ta có:$P\left ( { A } \right.  )=0,8;$. »$P\left ( { B\|A } \right.  )$ là xác suất để một học sinh đỗ đại học với điều kiện học sinh đó chọn tổ hợp $A00$ ⇒$P\left ( { B\|A } \right.  )=0,6$. » là xác suất để một học sinh đỗ đại học với điều kiện học sinh đó không chọn tổ hợp $A00$. Thay vào công thức Bayes ta được: .
+Gọi $A$: “Học sinh đó chọn tổ hợp $A00$”; Và $B$: “Học sinh đó đỗ đại học”. Ta cần tính $P\left ( { A\|B } \right.  )$. Theo công thức Bayes, ta cần biết: . Ta có:$P\left ( { A } \right.  )=0,8;$.
+
+- $P\left ( { B\|A } \right.  )$ là xác suất để một học sinh đỗ đại học với điều kiện học sinh đó chọn tổ hợp $A00$ ⇒$P\left ( { B\|A } \right.  )=0,6$.
+
+- là xác suất để một học sinh đỗ đại học với điều kiện học sinh đó không chọn tổ hợp $A00$. Thay vào công thức Bayes ta được: .
 
 </details>
 
@@ -844,7 +854,15 @@ Gọi $A$: “Học sinh đó chọn tổ hợp $A00$”; Và $B$: “Học sinh
 
 > **Đáp số:** `0,64`
 
-Xét $A$:“Con thỏ được lấy ra từ chuồng II để cho vào chuồng I là con thỏ trắng”. Và $B$: “Con thỏ được lấy ra từ chuồng I là con thỏ trắng”. Ta có . » Tính $P\left ( { A } \right.  )$: Đây là xác suất để lấy ra ngẫu nhiên 1 con thỏ trắng từ chuồng II rồi cho vào chuồng I. Có $n\left ( { Ω } \right.  )=C_{ 10 } ^{ 1 },{ \rm{ } }n\left ( { A } \right.  )=C_{ 3 } ^{ 1 }$ Vậy $P\left ( { A } \right.  )=\frac { 3 } { 10 }$. » Tính : . » Tính $P\left ( { B\|A } \right.  )$: Đây là xác suất để lấy ra ngẫu nhiên 1 con thỏ trắng từ chuồng I với điều kiện đã chọn ra 1 con thỏ trắng từ chuồng II rồi cho vào chuồng I, Tức là có 5 con thỏ đen và 11 con thỏ trắng ở trong chuồng I. Tương tự như trên ta có $P\left ( { B\|A } \right.  )=\frac { 11 } { 16 }$. » Tính : Đây là để lấy ra ngẫu nhiên 1 con thỏ trắng từ chuồng I với điều kiện đã chọn ra 1 con thỏ đen từ chuồng II rồi cho vào chuồng I. Tức là có 6 con thỏ đen và 10 con thỏ trắng ở trong chuồng I. Tương tự như trên ta có . Vậy Vậy xác suất để con thỏ được lấy ra là con thỏ trắng là $0,64375$.
+Xét $A$:“Con thỏ được lấy ra từ chuồng II để cho vào chuồng I là con thỏ trắng”. Và $B$: “Con thỏ được lấy ra từ chuồng I là con thỏ trắng”. Ta có .
+
+- Tính $P\left ( { A } \right.  )$: Đây là xác suất để lấy ra ngẫu nhiên 1 con thỏ trắng từ chuồng II rồi cho vào chuồng I. Có $n\left ( { Ω } \right.  )=C_{ 10 } ^{ 1 },{ \rm{ } }n\left ( { A } \right.  )=C_{ 3 } ^{ 1 }$ Vậy $P\left ( { A } \right.  )=\frac { 3 } { 10 }$.
+
+- Tính : .
+
+- Tính $P\left ( { B\|A } \right.  )$: Đây là xác suất để lấy ra ngẫu nhiên 1 con thỏ trắng từ chuồng I với điều kiện đã chọn ra 1 con thỏ trắng từ chuồng II rồi cho vào chuồng I, Tức là có 5 con thỏ đen và 11 con thỏ trắng ở trong chuồng I. Tương tự như trên ta có $P\left ( { B\|A } \right.  )=\frac { 11 } { 16 }$.
+
+- Tính : Đây là để lấy ra ngẫu nhiên 1 con thỏ trắng từ chuồng I với điều kiện đã chọn ra 1 con thỏ đen từ chuồng II rồi cho vào chuồng I. Tức là có 6 con thỏ đen và 10 con thỏ trắng ở trong chuồng I. Tương tự như trên ta có . Vậy Vậy xác suất để con thỏ được lấy ra là con thỏ trắng là $0,64375$.
 
 </details>
 
@@ -910,6 +928,12 @@ Gọi các biến cố $A$ là biến cố “Hệ thống radar phát cảnh b�
 
 > **Đáp số:** `0,9`
 
-Biết rằng, xác suất bắn trúng máy bay của mỗi quả tên lửa là $0,8$ và các bệ phóng tên lửa hoạt động độc lập. Máy bay bị bắn hạ nếu nó trúng ít nhất 1 quả tên lửa. Tính xác suất bắn hạ máy bay đối phương trong phương án tác chiến nêu trên? Làm tròn kết quả đến hàng phần mười. Xét biến cố $A$: “Máy bay xuất hiện ở vị trí $X$”, điều đó có nghĩa là biến cố : “Máy bay xuất hiện ở vị trí $Y$”. Xét biến cố $B$: “Máy bay bị bắn hạ”. Ta có $P\left ( { B } \right.  )=P\left ( { A } \right.  )·P\left ( { B\|A } \right.  )+P\left ( { A } \right.  )·P\left ( { B\|A } \right.  )$. » Tính $P\left ( { A } \right.  )$,$P\left ( { A } \right.  )=0,55$ và . » Tính $P\left ( { B\|A } \right.  )$: Đây là xác suất để máy bay bị bắn hạ tại vị trí $X$. Máy bay bị bắn hạ nếu nó trúng ít nhất một 1 quả tên lửa (trong 2 quả tên lửa đối với máy bay ở vị trí $X$), mà xác suất bắn trúng máy bay của mỗi quả tên lửa là $0,8$, vậy: $P\left ( { B\|A } \right.  )=1-\left ( { 1-0,8 } \right.  )\left ( { 1-0,8 } \right.  )=0,96$. » Tính : Đây là xác suất để máy bay bị bắn hạ tại vị trí $Y$. Máy bay bị bắn hạ nếu nó trúng ít nhất một 1 quả tên lửa (trong 1 quả tên lửa đối với máy bay ở vị trí $Y$), mà xác suất bắn trúng máy bay của mỗi quả tên lửa là 0,8, vậy: . Vậy . Vậy xác suất để máy bay bị bắn hạ là $~0,9$. ---------------------------------- Hết ----------------------------------
+Biết rằng, xác suất bắn trúng máy bay của mỗi quả tên lửa là $0,8$ và các bệ phóng tên lửa hoạt động độc lập. Máy bay bị bắn hạ nếu nó trúng ít nhất 1 quả tên lửa. Tính xác suất bắn hạ máy bay đối phương trong phương án tác chiến nêu trên? Làm tròn kết quả đến hàng phần mười. Xét biến cố $A$: “Máy bay xuất hiện ở vị trí $X$”, điều đó có nghĩa là biến cố : “Máy bay xuất hiện ở vị trí $Y$”. Xét biến cố $B$: “Máy bay bị bắn hạ”. Ta có $P\left ( { B } \right.  )=P\left ( { A } \right.  )·P\left ( { B\|A } \right.  )+P\left ( { A } \right.  )·P\left ( { B\|A } \right.  )$.
+
+- Tính $P\left ( { A } \right.  )$,$P\left ( { A } \right.  )=0,55$ và .
+
+- Tính $P\left ( { B\|A } \right.  )$: Đây là xác suất để máy bay bị bắn hạ tại vị trí $X$. Máy bay bị bắn hạ nếu nó trúng ít nhất một 1 quả tên lửa (trong 2 quả tên lửa đối với máy bay ở vị trí $X$), mà xác suất bắn trúng máy bay của mỗi quả tên lửa là $0,8$, vậy: $P\left ( { B\|A } \right.  )=1-\left ( { 1-0,8 } \right.  )\left ( { 1-0,8 } \right.  )=0,96$.
+
+- Tính : Đây là xác suất để máy bay bị bắn hạ tại vị trí $Y$. Máy bay bị bắn hạ nếu nó trúng ít nhất một 1 quả tên lửa (trong 1 quả tên lửa đối với máy bay ở vị trí $Y$), mà xác suất bắn trúng máy bay của mỗi quả tên lửa là 0,8, vậy: . Vậy . Vậy xác suất để máy bay bị bắn hạ là $~0,9$. ---------------------------------- Hết ----------------------------------
 
 </details>

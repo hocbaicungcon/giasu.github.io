@@ -21,7 +21,13 @@ grade: 12
 
 ### 1. Nguyên hàm
 
-> **Định nghĩa:** Cho hàm số $f\left ( { x } \right.  )$ xác định trên $K$. Hàm số $F\left ( { x } \right.  )$ được gọi là nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ nếu $F'\left ( { x } \right.  )=f\left ( { x } \right.  )$ với mọi $x$ thuộc $K$. Tổng quát, ta có: Cho $F\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$. Khi đó:» Với mỗi hằng số $C$, hàm số $F\left ( { x } \right.  )+C$ cũng là một nguyên hàm của $f\left ( { x } \right.  )$ trên $K$. » Nếu $G\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ thì tồn tại hằng số $C$ sao cho $G\left ( { x } \right.  )=F\left ( { x } \right.  )+C$ với mọi $x$ thuộc $K$. Như vậy, mọi nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ đều có dạng $F\left ( { x } \right.  )+C$, với $C$ là hằng số. Ta gọi $F\left ( { x } \right.  )+C$,$C∈\mathbb{R}$ là họ tất cả các nguyên hàm của $f\left ( { x } \right.  )$ trên $K$, » Kí hiệu » Viết
+> **Định nghĩa:** Cho hàm số $f\left ( { x } \right.  )$ xác định trên $K$. Hàm số $F\left ( { x } \right.  )$ được gọi là nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ nếu $F'\left ( { x } \right.  )=f\left ( { x } \right.  )$ với mọi $x$ thuộc $K$. Tổng quát, ta có: Cho $F\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$. Khi đó:
+
+- Với mỗi hằng số $C$, hàm số $F\left ( { x } \right.  )+C$ cũng là một nguyên hàm của $f\left ( { x } \right.  )$ trên $K$.
+
+- Nếu $G\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ thì tồn tại hằng số $C$ sao cho $G\left ( { x } \right.  )=F\left ( { x } \right.  )+C$ với mọi $x$ thuộc $K$. Như vậy, mọi nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ đều có dạng $F\left ( { x } \right.  )+C$, với $C$ là hằng số. Ta gọi $F\left ( { x } \right.  )+C$,$C∈\mathbb{R}$ là họ tất cả các nguyên hàm của $f\left ( { x } \right.  )$ trên $K$,
+- Kí hiệu
+- Viết
 
 ### 2. Nguyên hàm một số hàm số sơ cấp cơ bản
 
@@ -34,7 +40,13 @@ Cho $f\left ( { x } \right.  )$,$g\left ( { x } \right.  )$ là hai hàm số li
 
 ### Dạng 1. Áp dụng định nghĩa
 
-Cho $F\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$. Khi đó:» Với mỗi hằng số $C$, hàm số $F\left ( { x } \right.  )+C$ cũng là một nguyên hàm của $f\left ( { x } \right.  )$ trên $K$. » Nếu $G\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ thì tồn tại hằng số $C$ sao cho $G\left ( { x } \right.  )=F\left ( { x } \right.  )+C\,\,∀x∈K$. Như vậy, mọi nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ đều có dạng $F\left ( { x } \right.  )+C$, với $C$ là hằng số. Ta gọi $F\left ( { x } \right.  )+C$,$C∈\mathbb{R}$ là họ tất cả các nguyên hàm của $f\left ( { x } \right.  )$ trên $K$, » Kí hiệu » Viết Phương pháp
+Cho $F\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$. Khi đó:
+
+- Với mỗi hằng số $C$, hàm số $F\left ( { x } \right.  )+C$ cũng là một nguyên hàm của $f\left ( { x } \right.  )$ trên $K$.
+
+- Nếu $G\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ thì tồn tại hằng số $C$ sao cho $G\left ( { x } \right.  )=F\left ( { x } \right.  )+C\,\,∀x∈K$. Như vậy, mọi nguyên hàm của hàm số $f\left ( { x } \right.  )$ trên $K$ đều có dạng $F\left ( { x } \right.  )+C$, với $C$ là hằng số. Ta gọi $F\left ( { x } \right.  )+C$,$C∈\mathbb{R}$ là họ tất cả các nguyên hàm của $f\left ( { x } \right.  )$ trên $K$,
+- Kí hiệu
+- Viết Phương pháp
 
 **Ví dụ 1.1.** Chứng minh $F\left ( { x } \right.  )=2x ^ { 3 } -5x+4$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )=6x ^ { 2 } -5$ trên $\mathbb{R}$.
 
@@ -68,7 +80,13 @@ Vì $F'\left ( { x } \right.  )=e ^ { sinx } cosx≠f\left ( { x } \right.  )=e 
 
 ### Dạng 2. Nguyên hàm hàm số lũy thừa
 
-⑴ ⑵ ⑶ ⑷ ⑸ ⑹ Ta có thể áp dụng lũy thừa với số mũ thực để biến đổi. Cho $a,b$ là những số thực dương,$α,β$ là những số thực bất kì. Khi đó:»$a ^ { α } a ^ { β } =a ^ { α+β }$»$\frac { a ^ { α } } { a ^ { β } }=a ^ { α-β }$»$\left ( { a ^ { α } } \right.  ) ^ { β } =a ^ { α.β }$»$\left ( { ab } \right.  ) ^ { α } =a ^ { α } b ^ { α }$»$\left ( { \frac { a } { b } } \right.  ) ^ { α } =\frac { a ^ { α } } { b ^ { α } }$ Phương pháp
+⑴ ⑵ ⑶ ⑷ ⑸ ⑹ Ta có thể áp dụng lũy thừa với số mũ thực để biến đổi. Cho $a,b$ là những số thực dương,$α,β$ là những số thực bất kì. Khi đó:
+
+- $a ^ { α } a ^ { β } =a ^ { α+β }$
+- $\frac { a ^ { α } } { a ^ { β } }=a ^ { α-β }$
+- $\left ( { a ^ { α } } \right.  ) ^ { β } =a ^ { α.β }$
+- $\left ( { ab } \right.  ) ^ { α } =a ^ { α } b ^ { α }$
+- $\left ( { \frac { a } { b } } \right.  ) ^ { α } =\frac { a ^ { α } } { b ^ { α } }$ Phương pháp
 
 **Ví dụ 2.1.** Nguyên hàm của hàm số $f\left ( { x } \right.  )=x ^ { 3 } +x$ là
 
@@ -138,7 +156,13 @@ Ta có:
 
 ### Dạng 4. Nguyên hàm hàm số mũ
 
-⑴ ⑵ Ta có thể áp dụng các công thức liên quan để biến đổi:Cho $a,b$ là những số thực dương,$α,β$ là những số thực bất kì. Khi đó:»$a ^ { α } a ^ { β } =a ^ { α+β }$»$\frac { a ^ { α } } { a ^ { β } }=a ^ { α-β }$»$\left ( { a ^ { α } } \right.  ) ^ { β } =a ^ { α.β }$»$\left ( { ab } \right.  ) ^ { α } =a ^ { α } b ^ { α }$»$\left ( { \frac { a } { b } } \right.  ) ^ { α } =\frac { a ^ { α } } { b ^ { α } }$ Phương pháp
+⑴ ⑵ Ta có thể áp dụng các công thức liên quan để biến đổi:Cho $a,b$ là những số thực dương,$α,β$ là những số thực bất kì. Khi đó:
+
+- $a ^ { α } a ^ { β } =a ^ { α+β }$
+- $\frac { a ^ { α } } { a ^ { β } }=a ^ { α-β }$
+- $\left ( { a ^ { α } } \right.  ) ^ { β } =a ^ { α.β }$
+- $\left ( { ab } \right.  ) ^ { α } =a ^ { α } b ^ { α }$
+- $\left ( { \frac { a } { b } } \right.  ) ^ { α } =\frac { a ^ { α } } { b ^ { α } }$ Phương pháp
 
 **Ví dụ 4.1.** Nguyên hàm của các hàm số ⑴$f\left ( { x } \right.  )={ \rm{ e } } ^ { 2x-1 }$⑵$f\left ( { x } \right.  )=3 ^ { -x }$⑶$f\left ( { x } \right.  )=7 ^ { x } .2 ^ { x+2 }$
 
@@ -166,7 +190,10 @@ Ta có: .
 
 ### Dạng 5. Nguyên hàm có điều kiện
 
-Bài toán: Tìm nguyên hàm $F\left ( { x } \right.  )$ của $f\left ( { x } \right.  )$ thỏa $F\left ( { a } \right.  )=b$» Bước 1: Dựa vào bảng nguyên hàm, tính chất nguyên hàm, các phương pháp biến đổi.» Bước 2: Dựa vào điều kiện của giả thiết:$F\left ( { a } \right.  )=b$ để tìm $C$.» Bước 3: Kết luận. Phương pháp
+Bài toán: Tìm nguyên hàm $F\left ( { x } \right.  )$ của $f\left ( { x } \right.  )$ thỏa $F\left ( { a } \right.  )=b$
+- **Bước 1:** Dựa vào bảng nguyên hàm, tính chất nguyên hàm, các phương pháp biến đổi.
+- **Bước 2:** Dựa vào điều kiện của giả thiết:$F\left ( { a } \right.  )=b$ để tìm $C$.
+- **Bước 3:** Kết luận. Phương pháp
 
 **Ví dụ 5.1.** Cho hàm số $f'\left ( { x } \right.  )=3x ^ { 2 } .$ Tìm nguyên hàm $f\left ( { x } \right.  )$ của $f'\left ( { x } \right.  )$ thỏa $f\left ( { 0 } \right.  )=1.$
 
@@ -230,7 +257,13 @@ $F\left ( { 0 } \right.  )=2⇒C_{ 2 } =2⇒F\left ( { x } \right.  )=x ^ { 4 } 
 
 ### Dạng 6. Bài toán thực tế (liên quan đến vận tốc, gia tốc, quãng đường,…)
 
-Bài toán: Tìm nguyên hàm $F\left ( { x } \right.  )$ của $f\left ( { x } \right.  )$ thỏa $F\left ( { a } \right.  )=b$» Bước 1: Xét mối liên hệ giữa các đại lượng▪Xét mối quan hệ giữa các đại lượng vận tốc $v\left ( { t } \right.  )$, quãng đường $s\left ( { t } \right.  )$ và thời gian $t$+ Đạo hàm của quãng đường là vận tốc:$s'\left ( { t } \right.  )=v\left ( { t } \right.  )$+ Nguyên hàm của vận tốc là quãng đường: ▪Xét mối quan hệ giữa các đại lượng vận tốc $v\left ( { t } \right.  )$, gia tốc $a\left ( { t } \right.  )$ và thời gian $t$+ Đạo hàm của vận tốc là gia tốc:$v'\left ( { t } \right.  )=a\left ( { t } \right.  )$+ Nguyên hàm của gia tốc là vận tốc: » Bước 2: Dựa vào điều kiện của giả thiết để tìm đại lượng yêu cầu.» Bước 3: Kết luận. Phương pháp
+Bài toán: Tìm nguyên hàm $F\left ( { x } \right.  )$ của $f\left ( { x } \right.  )$ thỏa $F\left ( { a } \right.  )=b$
+- **Bước 1:** Xét mối liên hệ giữa các đại lượng
+- Xét mối quan hệ giữa các đại lượng vận tốc $v\left ( { t } \right.  )$, quãng đường $s\left ( { t } \right.  )$ và thời gian $t$+ Đạo hàm của quãng đường là vận tốc:$s'\left ( { t } \right.  )=v\left ( { t } \right.  )$+ Nguyên hàm của vận tốc là quãng đường:
+
+- Xét mối quan hệ giữa các đại lượng vận tốc $v\left ( { t } \right.  )$, gia tốc $a\left ( { t } \right.  )$ và thời gian $t$+ Đạo hàm của vận tốc là gia tốc:$v'\left ( { t } \right.  )=a\left ( { t } \right.  )$+ Nguyên hàm của gia tốc là vận tốc: 
+- **Bước 2:** Dựa vào điều kiện của giả thiết để tìm đại lượng yêu cầu.
+- **Bước 3:** Kết luận. Phương pháp
 
 **Ví dụ 6.1.** Một ô tô đang chạy với vận tốc $19\,\,{ \rm{ m } }{ \rm{ / } }{ \rm{ s } }$ thì hãm phanh và chuyển động chậm dần với tốc độ $v\left ( { t } \right.  )=19-2t\,\,\left ( { { \rm{ m } }{ \rm{ / } }{ \rm{ s } } } \right.  ).$ Kể từ khi hãm phanh, quãng đường ô tô đi được sau 5 giây là bao nhiêu?
 
@@ -474,7 +507,7 @@ Với $a=b=1$, ta có $f\left ( { x } \right.  )=x ^ { 3 } +x$
 
 Khi đó .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Biết $a=b=4$, nguyên hàm của hàm số $f\left ( { x } \right.  )$ là $x ^ { 4 } +2x ^ { 2 } +C$.
 
@@ -482,7 +515,7 @@ Với $a=b=4$, ta có $f\left ( { x } \right.  )=4x ^ { 3 } +4x$
 
 Khi đó .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Biết $f\left ( { 1 } \right.  )=6;f\left ( { 2 } \right.  )=36$, nguyên hàm của hàm số $f\left ( { x } \right.  )$ là $x ^ { 4 } -x ^ { 2 } +C$.
 
@@ -490,7 +523,7 @@ Ta có $\left\{ \begin{array}{l} f\left ( { 1 } \right.  )=6f\left ( { 2 } \righ
 
 Khi đó .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Biết $f\left ( { 1 } \right.  )=2;f\left ( { -2 } \right.  )=-52$, nguyên hàm của hàm số $f\left ( { x } \right.  )$ là $2x ^ { 4 } -3x ^ { 2 } +C$.
 
@@ -498,7 +531,7 @@ Ta có $\left\{ \begin{array}{l} f\left ( { 1 } \right.  )=2f\left ( { -2 } \rig
 
 Khi đó .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -513,25 +546,25 @@ Lời giải
 
 Theo đề ta có $f\left ( { x } \right.  )=F'\left ( { x } \right.  )=\left ( { \frac { 2x ^ { 2 } -1 } { x } } \right.  ) ' = \left ( { 2x-\frac { 1 } { x } } \right.  ) ' = 2+\frac { 1 } { x ^ { 2 } }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) .
 
 Theo đề ta có .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) .
 
 Theo đề ta có .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) .
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -548,19 +581,19 @@ Ta có
 
 Theo $\left ( { 1 } \right.  )$ ta có $F\left ( { x } \right.  )=\frac { 2x ^ { 3 } \sqrt{ x } } { 7 }-2x ^ { 2 } \sqrt{ x }+\frac { 2 } { 3 }x\sqrt{ x }+C$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Tổng $a+b+c=12$.
 
 Theo $\left ( { 1 } \right.  )$ ta có $a=2;\,b=7;\,c=3⇒$ $a+b+c=2+7+3=12$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Tích $a.b.c=42$.
 
 Theo $\left ( { 1 } \right.  )$ ta có $a=2;\,b=7;\,c=3⇒$ $a.b.c=2.7.3=42$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $F\left ( { 1 } \right.  )=\frac { 2002 } { 21 }$ thì $F\left ( { x } \right.  )=\frac { 2x ^ { 3 } \sqrt{ x } } { 7 }-2x ^ { 2 } \sqrt{ x }+\frac { 2 } { 3 }x\sqrt{ x }+2024$.
 
@@ -568,7 +601,7 @@ Theo $\left ( { 1 } \right.  )$ ta có $F\left ( { 1 } \right.  )=\frac { 2.1 ^ 
 
 $⇒F\left ( { x } \right.  )=\frac { 2x ^ { 3 } \sqrt{ x } } { 7 }-2x ^ { 2 } \sqrt{ x }+\frac { 2 } { 3 }x\sqrt{ x }+\frac { 2024 } { 21 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -583,19 +616,19 @@ Lời giải
 
 Vì .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $I_{ 2 } =\frac { e ^ { 2x-1 } } { 2 }+ln\left | { x } \right.  |+C$.
 
 Ta có:
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $I_{ 1 } +I_{ 2 } =e ^ { x } +\frac { e ^ { 2x-1 } } { 2 }+C$.
 
 Ta có:
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Gọi $F\left ( { x } \right.  )$ là nguyên hàm của hàm số $f\left ( { x } \right.  )$, với $f\left ( { x } \right.  )=e ^ { x } +\frac { 1 } { x ^ { 2 } }$. Nếu $F\left ( { 1 } \right.  )=e$ thì $F\left ( { ln2 } \right.  )=1-\frac { 1 } { ln2 }$.
 
@@ -603,7 +636,7 @@ Ta có: . Vì $F\left ( { 1 } \right.  )=e⇒e-1+C=e⇒C=1$.
 
 $F\left ( { x } \right.  )=e ^ { x } -\frac { 1 } { x }+1⇒F\left ( { ln2 } \right.  )=e ^ { ln2 } -\frac { 1 } { ln2 }+1=2-\frac { 1 } { ln2 }+1=3-\frac { 1 } { ln2 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -618,7 +651,7 @@ Lời giải
 
 Ta có:$\left ( { -2\sin x+C } \right.  )' = -2\cos x \ne 4\cos ^ { 2 } \frac { x } { 2 }$ nên hàm số $F\left ( { x } \right.  )=-2sinx$ không phải là nguyên hàm của hàm số $f\left ( { x } \right.  )$ đã cho.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Biết rằng , khi đó $a+b=4$.
 
@@ -626,7 +659,7 @@ Ta có: .
 
 Suy ra:$\left\{ \begin{array}{l} a=2b=2 \end{array} \right.⇒a+b=4$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Nguyên hàm $F\left ( { x } \right.  )$ của hàm số $f\left ( { x } \right.  )$ thỏa mãn $F\left ( { 0 } \right.  )=1$ là $F\left ( { x } \right.  )=2\left ( { x+sinx } \right.  )+1$.
 
@@ -636,7 +669,7 @@ Vì $F\left ( { 0 } \right.  )=1$ nên $C=1$.
 
 Vậy ta có:$F\left ( { x } \right.  )=2\left ( { x+sinx } \right.  )+1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Nguyên hàm $F\left ( { x } \right.  )$ của hàm số $f\left ( { x } \right.  )$ thỏa mãn $F\left ( { \frac { π } { 2 } } \right.  )=0$ là $F\left ( { x } \right.  )=2\left ( { x+sinx } \right.  )-π$.
 
@@ -646,7 +679,7 @@ Vì $F\left ( { \frac { π } { 2 } } \right.  )=1$ nên $2\left ( { \frac { π }
 
 Vậy ta có:$F\left ( { x } \right.  )=2\left ( { x+sinx } \right.  )-π-2$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -661,7 +694,7 @@ Lời giải
 
 Có $f'\left ( { x } \right.  )=2+3sinx=g\left ( { x } \right.  )⇒$ $f\left ( { x } \right.  )$ là một nguyên hàm của hàm số $g\left ( { x } \right.  )=2+3sinx$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Một nguyên hàm của hàm số $f\left ( { x } \right.  )=2x-3cosx$ là $h\left ( { x } \right.  )=x ^ { 2 } +3sinx+2024$.
 
@@ -669,7 +702,7 @@ $h\left ( { x } \right.  )$ không phải là một nguyên hàm của hàm số
 
 Vì $h'\left ( { x } \right.  )=2x+3cosx≠f\left ( { x } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Nguyên hàm $F\left ( { x } \right.  )$ của hàm số $f\left ( { x } \right.  )$ thoả mãn điều kiện $\ F\left ( { \frac { π } { 2 } } \right.  )=3$ là $F\left ( { x } \right.  )=x ^ { 2 } -3sinx+6-\frac { π ^ { 2 } } { 4 }$.
 
@@ -679,7 +712,7 @@ $F\left ( { \frac { π } { 2 } } \right.  )=3⇔\frac { π ^ { 2 } } { 4 }-3+C=3
 
 Vậy $F\left ( { x } \right.  )=x ^ { 2 } -3sinx+6-\frac { π ^ { 2 } } { 4 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $f\left ( { x } \right.  )=2x-3cosx$ là một nguyên hàm của hàm số $k\left ( { x } \right.  ).{ \rm{ e } } ^ { x }$, họ tất cả các nguyên hàm của hàm số $k'\left ( { x } \right.  ).{ \rm{ e } } ^ { x }$ là $3sinx+3cosx+2x+C$.
 
@@ -693,7 +726,7 @@ $⇒k'\left ( { x } \right.  ).{ \rm{ e } } ^ { x } =3cosx-3sinx-2$
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -706,7 +739,7 @@ Lời giải
 
 (a) Hàm số $y=f\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f'\left ( { x } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Biết $f\left ( { 0 } \right.  )=3$. Khi đó,$f\left ( { x } \right.  )=2x ^ { 4 } -cosx+3$.
 
@@ -718,11 +751,11 @@ $⇒\left\{ \begin{array}{l} f\left ( { x } \right.  )=2x ^ { 4 } -cosx+C_{ 1 } 
 
 Vì $f\left ( { 0 } \right.  )=3⇒C_{ 1 } =4⇒f\left ( { x } \right.  )=2x ^ { 4 } -cosx+4$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) , với $C$ là hằng số.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Biết $F\left ( { x } \right.  )$ là nguyên hàm của $f\left ( { x } \right.  )$ thoả mãn $F\left ( { 0 } \right.  )=2$. Khi đó,$F\left ( { 1 } \right.  )=\frac { 32 } { 5 }-sin1$.
 
@@ -732,7 +765,7 @@ $⇒\left\{ \begin{array}{l} F\left ( { x } \right.  )=\frac { 2 } { 5 }x ^ { 5 
 
 Vì $F\left ( { 0 } \right.  )=2⇒C=2⇒F\left ( { x } \right.  )=\frac { 2 } { 5 }x ^ { 5 } -sinx+4x+2⇒F\left ( { 1 } \right.  )=\frac { 32 } { 5 }-sin1$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -747,7 +780,7 @@ Lời giải
 
 $f\left ( { x } \right.  )=F'\left ( { x } \right.  )=6x+2-\frac { 1 } { x },x∈\left ( { 0;+∞ } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $F\left ( { 1 } \right.  )=3$. Khi đó $F\left ( { 2 } \right.  )=14-ln2$
 
@@ -757,13 +790,13 @@ Suy ra $F\left ( { x } \right.  )=3x ^ { 2 } +2x-lnx-2,x∈\left ( { 0;+∞ } \r
 
 Vậy $F\left ( { 2 } \right.  )=14-ln2$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $f\left ( { 1 } \right.  )=1$.
 
 $f\left ( { x } \right.  )=6x+2-\frac { 1 } { x },x∈\left ( { 0;+∞ } \right.  )$. Suy ra $f\left ( { 1 } \right.  )=7$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Bất phương trình $f\left ( { x } \right.  )+\frac { 1 } { x }-8 < 0$ có tập nghiệm là $\left ( { -∞;1 } \right.  )$.
 
@@ -773,7 +806,7 @@ $\left\{ \begin{array}{l} f\left ( { x } \right.  )+\frac { 1 } { x }-8 < 0x>0 \
 
 Vậy tập nghiệm bất phương trình là $\left ( { 0;1 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -790,7 +823,7 @@ $F\left ( { x } \right.  )=\frac { x ^ { 2 } } { 2 }+lnx+C$
 
 Một nguyên hàm $F\left ( { x } \right.  )=\frac { x ^ { 2 } } { 2 }+lnx+2025$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Biết $F\left ( { 1 } \right.  )=\frac { 3 } { 2 }$, khi đó $F\left ( { e } \right.  )=\frac { e ^ { 2 } } { 2 }+1$
 
@@ -800,13 +833,13 @@ $F\left ( { 1 } \right.  )=\frac { 3 } { 2 }⇔\frac { 1 } { 2 }+C=\frac { 3 } {
 
 Vậy $F\left ( { e } \right.  )=\frac { e ^ { 2 } } { 2 }+2$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $F\left ( { x } \right.  )=f'\left ( { x } \right.  ),∀x∈\left ( { 0;+∞ } \right.  )$
 
 Theo định nghĩa nguyên hàm $F\left ( { x } \right.  )$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$ khi và chỉ khi $F'\left ( { x } \right.  )=f\left ( { x } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Biết rằng đồ thị của hàm số $F\left ( { x } \right.  )$ đi qua $M\left ( { e;\frac { e ^ { 2 } } { 2 } } \right.  )$. Khi đó $F\left ( { 1 } \right.  )=\frac { 1 } { 2 }$
 
@@ -814,7 +847,7 @@ $F\left ( { x } \right.  )=\frac { x ^ { 2 } } { 2 }+lnx+C$, đồ thị của h
 
 $F\left ( { x } \right.  )=\frac { x ^ { 2 } } { 2 }+lnx-1$. Suy ra $F\left ( { 1 } \right.  )=\frac { 1 } { 2 }+ln1-1=-\frac { 1 } { 2 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -831,7 +864,7 @@ $f\left ( { 1 } \right.  )=2⇒C=2$
 
 Suy ra $f\left ( { x } \right.  )=x ^ { 2 } -\frac { 1 } { x }+2$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $f\left ( { 1 } \right.  )=0$. Phương trình $f\left ( { x } \right.  )=0$ có hai nghiệm.
 
@@ -841,7 +874,7 @@ Suy ra $f\left ( { x } \right.  )=0⇔x ^ { 2 } -\frac { 1 } { x }=0⇔x ^ { 3 }
 
 Vậy phương trình $f\left ( { x } \right.  )=0$ có duy nhất một nghiệm.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Đồ thị hàm số $y=f\left ( { x } \right.  )$ đi qua điểm $M\left ( { -1;2 } \right.  )$. Khi đó $f\left ( { 2 } \right.  )=\frac { 13 } { 2 }$
 
@@ -853,7 +886,7 @@ Suy ra $f\left ( { x } \right.  )=x ^ { 2 } -\frac { 1 } { x }+3$
 
 $f\left ( { 2 } \right.  )=2 ^ { 2 } -\frac { 1 } { 2 }+3=\frac { 13 } { 2 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $f\left ( { -2 } \right.  )=\frac { 1 } { 4 }$. Hàm số $g\left ( { x } \right.  )=xf\left ( { x } \right.  )$ có 3 điểm cực trị.
 
@@ -865,7 +898,7 @@ $g\left ( { x } \right.  )=xf\left ( { x } \right.  )=x\left ( { x ^ { 2 } -\fra
 
 $g'\left ( { x } \right.  )=3x ^ { 2 } -4$,$g'\left ( { x } \right.  )=0⇔x=±\frac { 2\sqrt{ 3 } } { 3 }$, nên hàm số $y=g\left ( { x } \right.  )$ có 2 điểm cực trị.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -880,13 +913,13 @@ Lời giải
 
 Ta có:$=ln\left | { x } \right.  |-\frac { 1 } { x }+C$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số , với $C_{ 1 } ,\ C_{ 2 }$ là hằng số.
 
 Ta có:$f\left ( { x } \right.  )=ln\left | { x } \right.  |-\frac { 1 } { x }+C$, nên ta có hai trường hợp $\left | { x } \right.  |=\left\{ \begin{array}{l} x, khi\ x>0-x, khi\ x < 0 \end{array} \right.$
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (c) Giá trị $f\left ( { -1 } \right.  )=2-ln2$.
 
@@ -894,13 +927,13 @@ Từ dữ kiện đề bài ta có:$\left\{ \begin{array}{l} f\left ( { -2 } \ri
 
 $⇒f\left ( { x } \right.  )=\left\{ \begin{array}{l} lnx-\frac { 1 } { x }+ln2-1, khi\ x>0ln\left ( { -x } \right.  )-\frac { 1 } { x }+1-ln2, khi\ x < 0 \end{array} \right.$. Giá trị $f\left ( { -1 } \right.  )=ln1+1+1-ln2=2-ln2$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Giá trị $f\left ( { 4 } \right.  )=3ln2$
 
 Ta có:$f\left ( { 4 } \right.  )=ln4-\frac { 1 } { 4 }+ln2-1=3ln2-\frac { 5 } { 4 }$
 
-» Chọn SAI
+**Chọn SAI.**
 
 </details>
 
@@ -915,7 +948,7 @@ Lời giải
 
 Ta có quãng đường vật đi được sau 2 giây là:
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Quãng đường vật đi được khi gia tốc bị triệt tiêu là $\frac { 1 } { 3 }\ \left ( { m } \right.  )$
 
@@ -923,7 +956,7 @@ Ta có: gia tốc $a\left ( { t } \right.  )=v'\left ( { t } \right.  )=2t-2$, d
 
 Quãng đường vật đi được sau $1$ giây là:
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (c) Quãng đường vật đi được trong khoảng từ $2$ giây đến thời gian mà vận tốc đạt $9\ \left ( { m/s } \right.  )$ là:$\frac { 26 } { 3 }$ $\left ( { m } \right.  )$
 
@@ -931,7 +964,7 @@ Ta có: vận tốc đạt $9\ \left ( { m/s } \right.  )$ $⇔v\left ( { t } \r
 
 Quãng đường vật đi được trong khoảng từ $2$ giây đến $4$ giây là
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (d) Quãng đường vật đi được từ $0$ giây đến thời gian mà gia tốc bằng $10\left ( { m/s ^ { 2 } } \right.  )$ là $44\ \left ( { m } \right.  )$
 
@@ -939,7 +972,7 @@ Ta có: gia tốc $a\left ( { t } \right.  )=10⇔2t-2=10⇔t=6\ \left ( { s } \
 
 Quãng đường vật đi được từ $0$ giây đến $6$ giây là
 
-» Chọn SAI
+**Chọn SAI.**
 
 </details>
 
@@ -968,13 +1001,13 @@ Hệ số góc của tiếp tuyến của đồ thị $\left ( { C } \right.  )$
 
 $k=3.\left ( { -1 } \right.  ) ^ { 2 } +2.\left ( { -1 } \right.  )-2=-1$.
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (b) $f\left ( { 1 } \right.  )=0$.
 
 $f\left ( { 1 } \right.  )=1 ^ { 3 } +1 ^ { 2 } -2.1=0$.
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (c) Điểm $B\left ( { 2;7 } \right.  )$ thuộc đồ thị hàm số $y=f\left ( { x } \right.  )$.
 
@@ -982,7 +1015,7 @@ Ta có $f\left ( { 2 } \right.  )=2 ^ { 3 } +2 ^ { 2 } -2.2=8$.
 
 Vậy điểm $B\left ( { 2;7 } \right.  )$ không thuộc đồ thị hàm số $y=f\left ( { x } \right.  )$.
 
-» Chọn SAI
+**Chọn SAI.**
 
 (d) Hàm số $F\left ( { x } \right.  )=\frac { x ^ { 4 } } { 4 }+\frac { x ^ { 3 } } { 3 }-x ^ { 2 } +1$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$.
 
@@ -990,7 +1023,7 @@ Ta có $F'\left ( { x } \right.  )=x ^ { 3 } +x ^ { 2 } -2x=f\left ( { x } \righ
 
 Vậy hàm số $F\left ( { x } \right.  )=\frac { x ^ { 4 } } { 4 }+\frac { x ^ { 3 } } { 3 }-x ^ { 2 } +1$ là một nguyên hàm của hàm số $f\left ( { x } \right.  )$.
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -1009,13 +1042,13 @@ Do $s\left ( { 0 } \right.  )=0$ nên $C=0$.
 
 Vậy $s\left ( { t } \right.  )=-5t ^ { 2 } +30t\,\,\left ( { m } \right.  )$.
 
-» Chọn SAI
+**Chọn SAI.**
 
 (b) Thời gian kể từ lúc đạp phanh đến khi xe ô tô dừng hẳn là $3$ giây.
 
 Xe ô tô dừng hẳn khi $v\left ( { t } \right.  )=0⇔-10t+30=0⇔t=3$.
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (c) Sau 3 giây kể từ lúc đạp phanh, quãng đường xe ô tô di chuyển được là $45\,\,\left ( { m } \right.  )$.
 
@@ -1023,7 +1056,7 @@ Sau 3 giây kể từ lúc đạp phanh, quãng đường xe ô tô di chuyển 
 
 $s\left ( { 3 } \right.  )=-5.3 ^ { 2 } +30.3=45\,\,\left ( { m } \right.  )$.
 
-» Chọn ĐÚNG
+**Chọn ĐÚNG.**
 
 (d) Quãng đường xe ô tô đã di chuyển kể từ lúc người lái xe phát hiện chướng ngại vật trên đường đến khi xe ô tô dừng hẳn là $120\,\,\left ( { m } \right.  )$.
 
@@ -1031,7 +1064,7 @@ Ta có $72\,\,km{ \rm{ / } }h=20\,\,m{ \rm{ / } }s$.
 
 Vậy quãng đường xe ô tô đã di chuyển kể từ lúc người lái xe phát hiện chướng ngại vật trên đường đến khi xe ô tô dừng hẳn là $20+45=65\,\,\left ( { m } \right.  )$.
 
-» Chọn SAI
+**Chọn SAI.**
 
 </details>
 
@@ -1050,13 +1083,13 @@ Sau $3$ giây xe máy đi được quãng đường là:$10.3=30\,{ \rm{ m } }$.
 
 Khi đó xe máy bắt đầu giảm tốc và quãng đường xe máy đi được từ lúc bắt đầu giảm tốc lần thứ nhất đến khi dừng hẳn tại vị trí đèn tín hiệu là:$80-30=50\,{ \rm{ m } }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Giá trị của hệ số $b$ là $10$.
 
 Khi xe bắt đầu giảm tốc lần thứ nhất ta có:$v_{ 1 } \left ( { 0 } \right.  )=a.0+b\,=10\,\,{ \rm{ m } }{ \rm{ / } }{ \rm{ s } }⇒b=10$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Xe máy dừng hẳn tại vị trí đèn tín hiệu sau $10$ giây kể từ khi bắt đầu giảm tốc lần thứ nhất.
 
@@ -1070,7 +1103,7 @@ Từ câu a ta có:$s_{ 1 } \left ( { \frac { -10 } { a } } \right.  )\,=50⇒\f
 
 Do đó $t=\frac { -10 } { -1 }=10\,\,\left ( { { \rm{ s } } } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Khoảng cách từ vị trí đèn tín hiệu đến vị trí quán ăn là $200$ m.
 
@@ -1088,7 +1121,7 @@ Theo đề:$s_{ 2 } \left ( { 0 } \right.  )=0⇒C_{ 2 } =0⇒s_{ 2 } \left ( { 
 
 Do đó khoảng cách từ vị trí đèn tín hiệu đến vị trí quán ăn là:$s_{ 2 } \left ( { 30 } \right.  )=300\,\,{ \rm{ m } }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 

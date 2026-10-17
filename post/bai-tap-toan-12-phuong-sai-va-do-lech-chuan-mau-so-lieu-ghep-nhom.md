@@ -23,10 +23,15 @@ grade: 12
 Phương sai:Phương sai của mẫu số liệu ghép nhóm, kí hiệu $S ^ { 2 }$, được tính bởi công thức:$S ^ { 2 } =\frac { 1 } { n }\left[ n_{ 1 } \left ( { c_{ 1 } - \bar x } \right.  ) ^ { 2 } +n_{ 2 } \left ( { c_{ 2 } - \bar x } \right.  ) ^ { 2 } +…+n_{ k } \left ( { c_{ k } - \bar x } \right.  ) ^ { 2 } \right]$ Trong đó:$n=n_{ 1 } +n_{ 2 } +…+n_{ k }$ là cỡ mẫu;$\bar x=\frac { 1 } { n }\left ( { n_{ 1 } c_{ 1 } +n_{ 2 } c_{ 2 } +…+n_{ k } c_{ k } } \right.  )$ là số trung bình
 
 Độ lệch chuẩn:Độ lệch chuẩn của mẫu số liệu ghép nhóm kí hiệu $S$, Độ lệch chuẩn là căn bậc hai số học của phương sai:Độ lệch chuẩn $=\sqrt{ S ^ { 2 } }{ \rm{   } }$
+- Phương sai của mẫu số liệu ghép nhóm có thể được tính theo công thức sau:$S ^ { 2 } =\frac { 1 } { n }\left ( { n_{ 1 } c_{ 1 } ^{ 2 }+n_{ 2 } c_{ 2 } ^{ 2 }+…+n_{ k } c_{ k } ^{ 2 } } \right.  )- \bar x ^ { 2 }$
+- Trong thống kê, người ta còn dùng đại lượng sau để đo mức độ phân tán của mẫu số liệu ghép nhóm:$S ^ { 2 } =\frac { 1 } { n-1 }\left[ n_{ 1 } \left ( { c_{ 1 } - \bar x } \right.  ) ^ { 2 } +n_{ 2 } \left ( { c_{ 2 } - \bar x } \right.  ) ^ { 2 } +…+n_{ k } \left ( { c_{ k } - \bar x } \right.  ) ^ { 2 } \right].$ Chú ý
+- Phương sai của MSL ghép nhóm là giá trị xấp xỉ cho phương sai của MSL gốc.
 
-» Phương sai của mẫu số liệu ghép nhóm có thể được tính theo công thức sau:$S ^ { 2 } =\frac { 1 } { n }\left ( { n_{ 1 } c_{ 1 } ^{ 2 }+n_{ 2 } c_{ 2 } ^{ 2 }+…+n_{ k } c_{ k } ^{ 2 } } \right.  )- \bar x ^ { 2 }$» Trong thống kê, người ta còn dùng đại lượng sau để đo mức độ phân tán của mẫu số liệu ghép nhóm:$S ^ { 2 } =\frac { 1 } { n-1 }\left[ n_{ 1 } \left ( { c_{ 1 } - \bar x } \right.  ) ^ { 2 } +n_{ 2 } \left ( { c_{ 2 } - \bar x } \right.  ) ^ { 2 } +…+n_{ k } \left ( { c_{ k } - \bar x } \right.  ) ^ { 2 } \right].$ Chú ý
+- Độ lệch chuẩn của MSL ghép nhóm cũng là giá trị xấp xỉ cho độ lệch chuẩn của MSL gốc.$\left. \rightarrow \right.$Được dùng để đo mức độ phân tán của mẫu số liệu ghép nhóm.
 
-» Phương sai của MSL ghép nhóm là giá trị xấp xỉ cho phương sai của MSL gốc. » Độ lệch chuẩn của MSL ghép nhóm cũng là giá trị xấp xỉ cho độ lệch chuẩn của MSL gốc.$\left. \rightarrow \right.$Được dùng để đo mức độ phân tán của mẫu số liệu ghép nhóm. » Phương sai và độ lệch chuẩn càng lớn thì dữ liệu càng phân tán.» Độ lệch chuẩn có cùng đơn vị với đơn vị của mẫu số liệu.Ý nghĩa
+- Phương sai và độ lệch chuẩn càng lớn thì dữ liệu càng phân tán.
+
+- Độ lệch chuẩn có cùng đơn vị với đơn vị của mẫu số liệu.Ý nghĩa
 
 Xét ví dụ:Thầy giáo thống kê lại điểm trung bình cuối năm của các học sinh lớp $11{ \rm{   } }{ \rm{ A } }$ và 11B ở bảng sau:Điểm trung bình $\left [ { 5;6 } \right.  )$ $\left [ { 6;7 } \right.  )$ $\left [ { 7;8 } \right.  )$ $\left [ { 8;9 } \right.  )$ $\left [ { 9;10 } \right.  )$ 11A101122611B0681412⑴ Nếu so sánh theo khoảng biến thiên thì học sinh lớp nào có điểm trung bình ít phân tán hơn?⑵ Nếu so sánh theo độ lệch chuẩn thì học sinh lớp nào có điểm trung bình ít phân tán hơn?
 
@@ -43,8 +48,7 @@ Nếu so sánh theo khoảng biến thiên thì điểm trung bình của các h
 ⑵ Nếu so sánh theo độ lệch chuẩn thì học sinh lớp nào có điểm trung bình ít phân tán hơn?
 
 Ta có bảng thống kê điểm trung bình theo giá trị đại diện:
-
-» Xét mẫu số liệu của lớp 11A:
+- Xét mẫu số liệu của lớp 11A:
 
 Cỡ mẫu là $n_{ 1 } =1+11+22+6=40$.
 
@@ -57,8 +61,7 @@ Phương sai của mẫu số liệu ghép nhóm là
 $S_{ 1 } ^{ 2 }=\frac { 1 } { 40 }\left ( { 1⋅5,5 ^ { 2 } +11⋅7,5 ^ { 2 } +22⋅8,5 ^ { 2 } +6⋅9,5 ^ { 2 } } \right.  )-8,3 ^ { 2 } =0,61.$
 
 Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ I } =\sqrt{ 0,61 }$.
-
-» Xét mẫu số liệu của lớp 11B:
+- Xét mẫu số liệu của lớp 11B:
 
 Cỡ mẫu là $n_{ 2 } =6+8+14+12=40$.
 
@@ -73,13 +76,16 @@ $S_{ 2 } ^{ 2 }=\frac { 1 } { 40 }\left ( { 6⋅6,5 ^ { 2 } +8⋅7,5 ^ { 2 } +14
 Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ 2 } =\sqrt{ 1,06 }$.
 
 Do $S_{ 1 } < S_{ 2 }$ nên nếu so sánh theo độ lệch chuẩn thì học sinh lớp $11{ \rm{   } }{ \rm{ A } }$ có điểm trung bình ít phân tán hơn học sinh lớp 11B.
+- Trong ví dụ trên, kết quả so sánh độ phân tán theo giá trị trung bình và độ lệch chuẩn có sự khác biệt. Điều này là do mẫu số liệu của học sinh lớp 11A có một giá trị ngoại lệ.
 
-» Trong ví dụ trên, kết quả so sánh độ phân tán theo giá trị trung bình và độ lệch chuẩn có sự khác biệt. Điều này là do mẫu số liệu của học sinh lớp 11A có một giá trị ngoại lệ.» Với các mẫu số liệu ghép nhóm có cùng số trung bình (hoặc xấp xỉ nhau), ta thường sử dụng phương sai và độ lệch chuẩn để so sánh mức độ phân tán của các mẫu số liệu đó. Chú ý
+- Với các mẫu số liệu ghép nhóm có cùng số trung bình (hoặc xấp xỉ nhau), ta thường sử dụng phương sai và độ lệch chuẩn để so sánh mức độ phân tán của các mẫu số liệu đó. Chú ý
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Lập mẫu số liệu ghép nhóm và tính giá trị trung bình
-
-» Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Số trung bình cộng được tính như sau: ▪Bước 1: tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.▪Bước 2: tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.▪Bước 3:$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$. Phương pháp
+- Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Số trung bình cộng được tính như sau: 
+- **Bước 1:** tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.
+- **Bước 2:** tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.
+- **Bước 3:**$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$. Phương pháp
 
 **Ví dụ 1.1.** Chiều cao của $20$ cây giống được cho bởi bảng sau:Chiều cao (cm) $\left [ { 40;44 } \right.  )$ $\left [ { 45;49 } \right.  )$ $\left [ { 50;54 } \right.  )$ $\left [ { 55;59 } \right.  )$ $\left [ { 60;64 } \right.  )$ $\left [ { 65;69 } \right.  )$ Số cây giống253433Tính số trung bình $\bar x$ (làm tròn đến chữ số thứ hai sau dấu phẩy) của bảng nói trên.
 
@@ -116,8 +122,11 @@ Vậy giá trị trung bình là
 $\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$ $=\frac { 53.3+82.8+48.13+39.18+18.23 } { 240 }=10,375$.
 
 ### Dạng 2. Tính phương sai của mẫu số liệu ghép nhóm
-
-» Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Phương sai $s ^ { 2 }$ được tính như sau: ▪Bước 1: tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.▪Bước 2: tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.▪Bước 3:$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$.▪Bước 4:$s ^ { 2 } =\frac { m_{ 1 } .\left ( { x_{ 1 } - \bar x } \right.  ) ^ { 2 } +m_{ 2 } .\left ( { x_{ 2 } - \bar x } \right.  ) ^ { 2 } +...+m_{ k } .\left ( { x_{ k } - \bar x } \right.  ) ^ { 2 } } { n }$ Hoặc :$s ^ { 2 } =\frac { 1 } { n }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_{ 2 } .x_{ 2 } ^ { 2 } +...+m_{ k } .x_{ k } ^ { 2 } } \right.  )-\left ( { \bar x } \right.  ) ^ { 2 }$. Phương pháp
+- Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Phương sai $s ^ { 2 }$ được tính như sau: 
+- **Bước 1:** tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.
+- **Bước 2:** tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.
+- **Bước 3:**$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$.
+- **Bước 4:**$s ^ { 2 } =\frac { m_{ 1 } .\left ( { x_{ 1 } - \bar x } \right.  ) ^ { 2 } +m_{ 2 } .\left ( { x_{ 2 } - \bar x } \right.  ) ^ { 2 } +...+m_{ k } .\left ( { x_{ k } - \bar x } \right.  ) ^ { 2 } } { n }$ Hoặc :$s ^ { 2 } =\frac { 1 } { n }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_{ 2 } .x_{ 2 } ^ { 2 } +...+m_{ k } .x_{ k } ^ { 2 } } \right.  )-\left ( { \bar x } \right.  ) ^ { 2 }$. Phương pháp
 
 **Ví dụ 2.1.** Cân nặng (kg) của một số quả mít trong một khu vườn được thống kê ở bảng sau:Cân nặng (kg) $\left [ { 4;6 } \right.  )$ $\left [ { 6;8 } \right.  )$ $\left [ { 8;10 } \right.  )$ $\left [ { 10;12 } \right.  )$ $\left [ { 12;14 } \right.  )$ Số cây giống6121994Hãy tính phương sai của mẫu số liệu ghép nhóm trên.
 
@@ -136,16 +145,14 @@ Phương sai:$s ^ { 2 } =\frac { 1 } { n }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_
 *Lời giải:*
 
 Ta có bảng thống kê điểm trung bình theo giá trị đại diện như sau:
-
-» Xét mẫu số liệu lớp 12A:
+- Xét mẫu số liệu lớp 12A:
 
 Cỡ mẫu:$n_{ 1 } =40$.
 
 Số trung bình:$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n_{ 1 } }$ $=\frac { 1.5,5+0.6,5+11.7,5+22.8,5+6.9,5 } { 40 }=8,3$.
 
 Phương sai:$s_{ 1 } ^ { 2 } =\frac { 1 } { n_{ 1 } }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_{ 2 } .x_{ 2 } ^ { 2 } +...+m_{ k } .x_{ k } ^ { 2 } } \right.  )-\left ( { \bar x } \right.  ) ^ { 2 }$ $=\frac { 1 } { 40 }\left ( { 1.5,5 ^ { 2 } +0.6,5 ^ { 2 } +11.7,5 ^ { 2 } +22.8,5 ^ { 2 } +6.9,5 ^ { 2 } } \right.  )-\left ( { 8,3 } \right.  ) ^ { 2 } =0,61$.
-
-» Xét mẫu số liệu lớp 12B:
+- Xét mẫu số liệu lớp 12B:
 
 Cỡ mẫu:$n_{ 2 } =40$.
 
@@ -160,16 +167,14 @@ $\left. \rightarrow \right.$ Vì $s_{ 1 } ^ { 2 } < s_{ 2 } ^ { 2 }$ nên điể
 *Lời giải:*
 
 Ta có bảng thống kê điểm trung bình theo giá trị đại diện như sau:
-
-» Xét mẫu số liệu Phân xưởng 1:
+- Xét mẫu số liệu Phân xưởng 1:
 
 Tổng số linh kiện:$4+9+13+8+6=40$
 
 Giá trị trung bình $\bar x_{ 1 } =\frac { 1,75.4+2,25.9+2,75.13+3,25.8+3,75.6 } { 4+9+13+8+6 }=\frac { 223 } { 80 }$
 
 Phương sai:$s_{ 1 } ^{ 2 }=\frac { 1 } { 40 }\left ( { 1,75 ^ { 2 } .4+2,25 ^ { 2 } .9+2,75 ^ { 2 } .13+3,25 ^ { 2 } .8+3,75 ^ { 2 } .6 } \right.  )-\left ( { \frac { 223 } { 80 } } \right.  ) ^ { 2 } =\frac { 2271 } { 6400 }≈0,354$
-
-» Xét mẫu số liệu Phân xưởng 2:
+- Xét mẫu số liệu Phân xưởng 2:
 
 Tổng số linh kiện:$2+8+20+7+3=40$
 
@@ -180,8 +185,12 @@ Phương sai:$s_{ 2 } ^{ 2 }=\frac { 1 } { 40 }\left ( { 1,75 ^ { 2 } .2+2,25 ^ 
 $\left. \rightarrow \right.$ Vì $s_{ 1 } ^ { 2 } >s_{ 2 } ^ { 2 }$ nên số linh kiện phân xưởng 2 phân tán nhiều hơn số linh kiện phân xưởng 1.
 
 ### Dạng 3. Tính độ lệch chuẩn của mẫu số liệu ghép nhóm & ý nghĩa
-
-» Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Phương sai $s ^ { 2 }$ được tính như sau: ▪Bước 1: tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.▪Bước 2: tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.▪Bước 3:$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$.▪Bước 4: Phương sai $s ^ { 2 } =\frac { m_{ 1 } .\left ( { x_{ 1 } - \bar x } \right.  ) ^ { 2 } +m_{ 2 } .\left ( { x_{ 2 } - \bar x } \right.  ) ^ { 2 } +...+m_{ k } .\left ( { x_{ k } - \bar x } \right.  ) ^ { 2 } } { n }$ Hoặc :$s ^ { 2 } =\frac { 1 } { n }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_{ 2 } .x_{ 2 } ^ { 2 } +...+m_{ k } .x_{ k } ^ { 2 } } \right.  )-\left ( { \bar x } \right.  ) ^ { 2 }$.▪Bước 5: Độ lệch chuẩn $S=\sqrt{ S ^ { 2 } }$⁂ Ý nghĩa: Khi hai mẫu số liệu ghép nhóm có cùng đơn vị đo và có số trung bình cộng xấp xỉ nhau, mẫu số liệu nào có độ lệch chuẩn nhỏ hơn thì mức độ phân tán so với số trung bình cộng của các số liệu trong mẫu đó sẽ thấp hơn. Phương pháp
+- Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Phương sai $s ^ { 2 }$ được tính như sau: 
+- **Bước 1:** tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.
+- **Bước 2:** tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.
+- **Bước 3:**$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$.
+- **Bước 4:** Phương sai $s ^ { 2 } =\frac { m_{ 1 } .\left ( { x_{ 1 } - \bar x } \right.  ) ^ { 2 } +m_{ 2 } .\left ( { x_{ 2 } - \bar x } \right.  ) ^ { 2 } +...+m_{ k } .\left ( { x_{ k } - \bar x } \right.  ) ^ { 2 } } { n }$ Hoặc :$s ^ { 2 } =\frac { 1 } { n }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_{ 2 } .x_{ 2 } ^ { 2 } +...+m_{ k } .x_{ k } ^ { 2 } } \right.  )-\left ( { \bar x } \right.  ) ^ { 2 }$.
+- **Bước 5:** Độ lệch chuẩn $S=\sqrt{ S ^ { 2 } }$⁂ Ý nghĩa: Khi hai mẫu số liệu ghép nhóm có cùng đơn vị đo và có số trung bình cộng xấp xỉ nhau, mẫu số liệu nào có độ lệch chuẩn nhỏ hơn thì mức độ phân tán so với số trung bình cộng của các số liệu trong mẫu đó sẽ thấp hơn. Phương pháp
 
 **Ví dụ 3.1.** Cho mẫu số liệu ghép nhóm về độ tuổi của cư dân trong một khu phố. Độ tuổi $\left [ { 20;30 } \right.  )$ $\left [ { 30;40 } \right.  )$ $\left [ { 40;50 } \right.  )$ $\left [ { 50;60 } \right.  )$ $\left [ { 60;70 } \right.  )$ $\left [ { 70;80 } \right.  )$ Giá trị đại diện253545556575Số cư dân25202015146Tính phương sai và độ lệch chuẩn của mẫu số liệu đó. (Kết quả làm tròn đến hàng phần mười)
 
@@ -198,16 +207,14 @@ Phương sai là $S ^ { 2 } =\frac { n_{ 1 } \left ( { x_{ 1 } - \bar x } \right
 *Lời giải:*
 
 ⑴ Tính phương sai và độ lệch chuẩn của mẫu số liệu ghép nhóm lần lượt biểu diễn mức lương của hai công ty $A$,$B$. (Kết quả làm tròn đến hàng phần mười)
-
-» Xét Mức lương tại công ty A
+- Xét Mức lương tại công ty A
 
 Số trung bình của công ty $A$ là $\bar x_{ A } =\frac { n_{ 1 } x_{ 1 } +n_{ 2 } x_{ 2 } +\ldots +n_{ k } x_{ k } } { N }=\frac { 62 } { 3 }≈20,7$ (triệu đồng).
 
 Phương sai của công ty $A$ là $S_{ A } ^ { 2 } =\frac { n_{ 1 } \left ( { x_{ 1 } - \bar x } \right.  ) ^ { 2 } +n_{ 2 } \left ( { x_{ 2 } - \bar x } \right.  ) ^ { 2 } +\ldots +n_{ k } \left ( { x_{ k } - \bar x } \right.  ) ^ { 2 } } { N }=\frac { 1769 } { 36 }$.
 
 Độ lệch chuẩn của công ty $A$ là $S_{ A } =\sqrt{ S_{ A } ^ { 2 } }≈7$ (triệu đồng).
-
-» Xét Mức lương tại công ty B
+- Xét Mức lương tại công ty B
 
 Số trung bình của công ty $B$ là $\bar x_{ B } =\frac { n_{ 1 } x_{ 1 } +n_{ 2 } x_{ 2 } +\ldots +n_{ k } x_{ k } } { N }=\frac { 229 } { 12 }≈19,1$ (triệu đồng).
 
@@ -220,8 +227,12 @@ Phương sai của công ty $B$ là $S_{ A } ^ { 2 } =\frac { n_{ 1 } \left ( { 
 Vì độ lệch chuẩn của công ty $A$ nhỏ hơn độ lệch chuẩn của công ty $B$ và lương bình quân của cả hai công ty xấp xỉ nhau nên công ty $A$ có mức lương đồng đều hơn.
 
 ### Dạng 4. Sử dụng phương sai, độ lệch chuẩn đo độ rủi ro
-
-» Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Phương sai $s ^ { 2 }$ được tính như sau: ▪Bước 1: tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.▪Bước 2: tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.▪Bước 3:$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$.▪Bước 4: Phương sai $s ^ { 2 } =\frac { m_{ 1 } .\left ( { x_{ 1 } - \bar x } \right.  ) ^ { 2 } +m_{ 2 } .\left ( { x_{ 2 } - \bar x } \right.  ) ^ { 2 } +...+m_{ k } .\left ( { x_{ k } - \bar x } \right.  ) ^ { 2 } } { n }$ Hoặc :$s ^ { 2 } =\frac { 1 } { n }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_{ 2 } .x_{ 2 } ^ { 2 } +...+m_{ k } .x_{ k } ^ { 2 } } \right.  )-\left ( { \bar x } \right.  ) ^ { 2 }$.▪Bước 5: Độ lệch chuẩn $S=\sqrt{ S ^ { 2 } }$⁂ Ý nghĩa: Khi hai mẫu số liệu ghép nhóm có cùng đơn vị đo và có số trung bình cộng xấp xỉ nhau, mẫu số liệu nào có phương sai và độ lệch chuẩn cao hơn thì mức độ rủi ro lớn hơn. Phương pháp
+- Xét mẫu số liệu ghép nhóm được cho ở bảng sau:Nhóm $\left [ { a_{ 1 } ;a_{ 2 } } \right.  )$ $...$ $\left [ { a_{ i } ;a_{ i+1 } } \right.  )$ $...$ $\left [ { a_{ k } ;a_{ k+1 } } \right.  )$ Tần số $m_{ 1 }$ $...$ $m_{ i }$ $...$ $m_{ k }$ Phương sai $s ^ { 2 }$ được tính như sau: 
+- **Bước 1:** tính giá trị đại diện mỗi nhóm $x_{ i } =\frac { a_{ i } +a_{ i+1 } } { 2 }\,;\,i=1,2,3,...,k$.
+- **Bước 2:** tính $n=m_{ 1 } +m_{ 2 } +...+m_{ k }$.
+- **Bước 3:**$\bar x=\frac { m_{ 1 } .x_{ 1 } +m_{ 2 } .x_{ 2 } +...+m_{ k } .x_{ k } } { n }$.
+- **Bước 4:** Phương sai $s ^ { 2 } =\frac { m_{ 1 } .\left ( { x_{ 1 } - \bar x } \right.  ) ^ { 2 } +m_{ 2 } .\left ( { x_{ 2 } - \bar x } \right.  ) ^ { 2 } +...+m_{ k } .\left ( { x_{ k } - \bar x } \right.  ) ^ { 2 } } { n }$ Hoặc :$s ^ { 2 } =\frac { 1 } { n }\left ( { m_{ 1 } .x_{ 1 } ^ { 2 } +m_{ 2 } .x_{ 2 } ^ { 2 } +...+m_{ k } .x_{ k } ^ { 2 } } \right.  )-\left ( { \bar x } \right.  ) ^ { 2 }$.
+- **Bước 5:** Độ lệch chuẩn $S=\sqrt{ S ^ { 2 } }$⁂ Ý nghĩa: Khi hai mẫu số liệu ghép nhóm có cùng đơn vị đo và có số trung bình cộng xấp xỉ nhau, mẫu số liệu nào có phương sai và độ lệch chuẩn cao hơn thì mức độ rủi ro lớn hơn. Phương pháp
 
 **Ví dụ 4.1.** Giá đóng cửa của một cổ phiếu là giá của cổ phiếu đó cuối một phiên giao dịch. Bảng sau thống kê giá đóng của (đơn vị là nghìn đồng) của hai mã cổ phiếu $A$ và $B$ trong $50$ ngày giao dịch liên tiếp. Giá đóng cửa $\left [ { 120;122 } \right.  )$ $\left [ { 122;124 } \right.  )$ $\left [ { 124;126 } \right.  )$ $\left [ { 126;128 } \right.  )$ $\left [ { 128;130 } \right.  )$ Cổ phiếu A9811139Cổ phiếu B1465205⑴ Tính phương sai và độ lệch chuẩn của hai mã cổ phiếu $A$,$B$. (Kết quả làm tròn đến hàng phần mười)⑵ So sánh độ rủi ro của cố phiếu $A$ và $B$?
 
@@ -383,13 +394,13 @@ Lời giải
 
 Giá trị đại diện của nhóm $\left [ { 20;30 } \right.  )$ là $\frac { 20+30 } { 2 }=25$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) giá trị đại diện của nhóm $\left [ { 60;70 } \right.  )$ là 70.
 
 Giá trị đại diện của nhóm $\left [ { 60;70 } \right.  )$ là $\frac { 60+70 } { 2 }=65$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Công thức tính độ tuổi bình quân của khách hàng mua bảo hiểm trong bảng thống kê là $\bar x=\frac { 20.4+30.6+40.10+50.7+60.3 } { 30 }$.
 
@@ -397,7 +408,7 @@ Công thức tính độ tuổi bình quân của khách hàng mua bảo hiểm 
 
 $\bar x=\frac { 25.4+35.6+45.10+55.7+65.3 } { 30 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) độ tuổi trung bình (làm tròn đến hàng phần trăm) của khách hàng mua bảo hiểm là 44,67.
 
@@ -405,7 +416,7 @@ $\bar x=\frac { 25.4+35.6+45.10+55.7+65.3 } { 30 }$
 
 $\bar x=\frac { 25.4+35.6+45.10+55.7+65.3 } { 30 }≈44,67$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -420,17 +431,17 @@ Lời giải
 
 (a) giá trị đại diện của $\left [ { u_{ 2 } ;u_{ 3 } } \right.  )$ là $c_{ 2 } =\frac { u_{ 2 } +u_{ 3 } } { 2 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) giá trị trung bình của mẫu số liệu ghép nhóm là $\bar x=\frac { 1 } { n }\left ( { c_{ 1 } +c_{ 2 } +\cdots +c_{ k } } \right.  )$.
 
 Giá trị trung bình của mẫu số liệu ghép nhóm là $\bar x=\frac { 1 } { n }\left ( { n_{ 1 } c_{ 1 } +n_{ 2 } c_{ 2 } +\cdots +n_{ k } c_{ k } } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) phương sai của mẫu số liệu ghép nhóm là $s ^ { 2 } =\frac { 1 } { n }\left[ n_{ 1 } \left ( { c_{ 1 } - \bar x } \right.  ) ^ { 2 } +n_{ 2 } \left ( { c_{ 2 } - \bar x } \right.  ) ^ { 2 } +\cdots +n_{ k } \left ( { c_{ k } - \bar x } \right.  ) ^ { 2 } \right]$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) phương sai của mẫu số liệu ghép nhóm là $s ^ { 2 } =\frac { 1 } { n }\left ( { n_{ 1 } c_{ _{ 1 } } ^{ 2 }+n_{ 2 } c_{ _{ 2 } } ^{ 2 }+...+n_{ k } c_{ _{ k } } ^{ 2 } } \right.  )- \bar x$.
 
@@ -438,7 +449,7 @@ Phương sai của mẫu số liệu ghép nhóm là
 
 $s ^ { 2 } =\frac { 1 } { n }\left ( { n_{ 1 } c_{ _{ 1 } } ^{ 2 }+n_{ 2 } c_{ _{ 2 } } ^{ 2 }+...+n_{ k } c_{ _{ k } } ^{ 2 } } \right.  )- \bar x ^ { 2 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -453,23 +464,23 @@ Lời giải
 
 (a) giá trị đại diện của lớp $\left [ { 36;41 } \right.  )$ là 38,5.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) công thức tính số trung bình là $\bar x=\frac { 18,5.4+23,5.6+28,5.8+33,5.18+38,5.4 } { 40 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) số trung bình là 30.
 
 số trung bình là $\bar x=\frac { 18,5.4+23,5.6+28,5.8+33,5.18+38,5.4 } { 40 }=30$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) phương sai của mẫu số liệu là $S ^ { 2 } =32,75$.
 
 Phương sai của mẫu số liệu là $S ^ { 2 } =\frac { 1 } { 40 }\left[ 4\left ( { 18,5-30 } \right.  ) ^ { 2 } +6\left ( { 23,5-30 } \right.  ) ^ { 2 } +8\left ( { 28,5-30 } \right.  ) ^ { 2 } +18\left ( { 33,5-30 } \right.  ) ^ { 2 } +4\left ( { 38,5-30 } \right.  ) ^ { 2 } \right]=32,75$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -488,25 +499,25 @@ Giá trị đại diện của nhóm $\left [ { 30;40 } \right.  )$ là $35$.
 
 Ta có giá trị đại diện của nhóm $\left [ { 30;40 } \right.  )$ là:$\frac { 30+40 } { 2 }=35$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Cỡ mẫu là $n=20$.
 
 Cỡ mẫu là:$n=3+9+6+4+2=24$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Số trung bình của mẫu số liệu ghép nhóm là $42,08$ (làm tròn đến hàng phần trăm).
 
 $\bar x=\frac { 25.3+35.9+45.6+55.4+65.2 } { 24 }=\frac { 1010 } { 24 }≈42,08$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Phương sai của mẫu số liệu ghép nhóm là $129,99$ (làm tròn đến hàng phần trăm).
 
 $S ^ { 2 } =\frac { 1 } { 24 }\left ( { 3.25 ^ { 2 } +9.35 ^ { 2 } +6.45 ^ { 2 } +4.55 ^ { 2 } +2.65 ^ { 2 } } \right.  )-\left ( { \frac { 1010 } { 24 } } \right.  ) ^ { 2 } ≈128,99$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -533,13 +544,13 @@ Phương sai:
 
 $S_{ 1 } ^{ 2 }=\frac { 1 } { 25 }\left ( { 2.5,5 ^ { 2 } +10.15,5 ^ { 2 } +6.25,5 ^ { 2 } +4.35,5 ^ { 2 } +3.45,5 ^ { 2 } } \right.  )-23,9 ^ { 2 } =133,44$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Độ lệch chuẩn của mẫu số liệu lớp 11A là:$11,77$ (làm tròn đến hàng phần trăm).
 
 $S_{ 1 } =\sqrt{ 133,44 }≈11,55$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Độ lệch chuẩn của mẫu số liệu lớp 11B là:$11,55$ (làm tròn đến hàng phần trăm).
 
@@ -553,7 +564,7 @@ $S_{ 2 } ^{ 2 }=\frac { 1 } { 27 }\left ( { 3.5,5 ^ { 2 } +8.15,5 ^ { 2 } +10.25
 
 $S_{ 2 } ≈\sqrt{ 138,47 }≈11,77$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Nếu so sánh theo độ lệch chuẩn thì thời gian để học sinh hoàn thành một câu hỏi thi của lớp 11A ít phân tán hơn lớp 11B.
 
@@ -561,7 +572,7 @@ Ta có:$S_{ 1 } < S_{ 2 }$
 
 Nên nếu so sánh theo độ lệch chuẩn thì thời gian để học sinh hoàn thành một câu hỏi thi của lớp 11A ít phân tán hơn lớp 11B.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -596,7 +607,7 @@ $S_{ 1 } ^{ 2 }=\frac { 1 } { 21 }\left ( { 2.7,5 ^ { 2 } +4.12,5 ^ { 2 } +7.17,
 
 $S_{ 1 } =\sqrt{ \frac { 5000 } { 147 } }≈5,83$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Độ lệch chuẩn của mẫu số liệu số nhà đầu tư vào lĩnh vực B là:$7,01$ (làm tròn đến hàng phần trăm).
 
@@ -610,7 +621,7 @@ $S_{ 2 } ^{ 2 }=\frac { 1 } { 21 }\left ( { 5.7,5 ^ { 2 } +4.12,5 ^ { 2 } +6.17,
 
 $S_{ 2 } =\sqrt{ \frac { 21650 } { 441 } }≈7,01$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Về trung bình, đầu tư vào lĩnh vực B đem lại tiền lãi cao hơn lĩnh vực A.
 
@@ -620,7 +631,7 @@ Số trung bình:
 
 Về trung bình, đầu tư vào lĩnh vực A đem lại tiền lãi cao hơn lĩnh vực B.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Nếu so sánh theo độ lệch chuẩn thì tiền lãi của các nhà đầu tư trong lĩnh vực A có xu hướng phân tán rộng hơn so với tiền lãi của các nhà đầu tư trong lĩnh vực B.
 
@@ -628,7 +639,7 @@ Ta có:$S_{ 1 } < S_{ 2 }$
 
 Vậy nếu so sánh theo độ lệch chuẩn thì tiền lãi của các nhà đầu tư trong lĩnh vực B có xu hướng phân tán rộng hơn so với tiền lãi của các nhà đầu tư trong lĩnh vực A.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -667,11 +678,11 @@ $S ^ { 2 } =\frac { x_{ 1 } ^ { 2 } +x_{ 2 } ^ { 2 } +x_{ 3 } ^ { 2 } +....+x_{ 
 
 Độ lệch chuẩn của mẫu số liệu trên do bác sĩ $A$ điều trị bằng $σ=\sqrt{ S ^ { 2 } }=0,61$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Bảng tần số ghép nhóm với nhóm đầu tiên là $\left [ { 3,7;4,14 } \right.  )$ và độ dài mỗi nhóm bằng $0,44$ do bác sĩ $A$ điều trị được thống kê dưới đây
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Giá trị độ lệch chuẩn của mẫu số liệu ghép nhóm đầu tiên là $\left [ { 3,7;4,14 } \right.  )$ và độ dài mỗi nhóm bằng $0,44$ do bác sĩ $A$ điều trị là $0,58$
 
@@ -683,7 +694,7 @@ $S_{ A } ^ { 2 } =\frac { 4.3,92 ^ { 2 } +4.4,36 ^ { 2 } +4.4,8 ^ { 2 } +3.5,24 
 
 Độ lệch chuẩn của mẫu số liệu trên do bác sĩ $A$ điều trị bằng $σ_{ A } =\sqrt{ S_{ A } ^ { 2 } }=0,609$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Biết rằng bác sĩ $B$ cũng điều trị $18$ bệnh nhân trên với với nhóm đầu tiên là $\left [ { 3,7;4,14 } \right.  )$ và độ dài mỗi nhóm bằng $0,44$ được thống kê dưới đây
 
@@ -697,7 +708,7 @@ $S_{ B } ^ { 2 } =\frac { 3.3,92 ^ { 2 } +4.4,36 ^ { 2 } +3.4,8 ^ { 2 } +4.5,24 
 
 Vì $σ_{ A } < σ_{ B }$ nên so sánh về độ lệch chuẩn thì chỉ số Cholesterol toàn phần bác sĩ $A$ điều trị ít phân tán hơn bác sĩ $B$ điều trị.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -714,7 +725,7 @@ Lời giải
 
 (a) Bảng giá trị đại diện cho mỗi nhóm và bảng tần số ghép nhóm cho mẫu số liệu tương ứng với biểu đồ trên
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Độ lệch chuẩn của mẫu số liệu ghép nhóm của ngân hàng $A$ bằng $\frac { 661 } { 361 }$.
 
@@ -728,7 +739,7 @@ $S_{ A } ^{ 2 }=\frac { 6.1,5 ^ { 2 } +7.2,5 ^ { 2 } +9.3,5 ^ { 2 } +10.4,5 ^ { 
 
 Độ lệch chuẩn của mẫu số liệu ngân hàng $A$ bằng $σ_{ A } =\sqrt{ S_{ A } ^ { 2 } }=\frac { \sqrt{ 661 } } { 19 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Độ lệch chuẩn của mẫu số liệu ghép nhóm của ngân hàng $B$ bằng $\frac { 3221 } { 1444 }$.
 
@@ -742,13 +753,13 @@ $S_{ B } ^{ 2 }=\frac { 8.1,5 ^ { 2 } +6.2,5 ^ { 2 } +8.3,5 ^ { 2 } +9.4,5 ^ { 2
 
 Độ lệch chuẩn của mẫu số liệu ngân hàng $B$ bằng $σ_{ B } =\sqrt{ S_{ B } ^ { 2 } }=\sqrt{ \frac { 3221 } { 1444 } }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Người ta dùng độ lệch chuẩn để so sánh mức độ rủi ro của số tiền khách hàng nợ ngân hàng. Ngân hàng nào có độ lệch chuẩn cao hơn thì có độ rủi ro lớn hơn. Theo quan điểm trên, độ rủi ro của ngân hàng $A$ cao hơn ngân hàng $B$
 
 Vì $σ_{ A } < σ_{ B }$ nên rủi ro của ngân hàng $A$ thấp hơn rủi ro của ngân hàng $B$ khi cho khách hàng vay nợ.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -873,7 +884,11 @@ Tính $S_{ X } -S_{ Y }$ bằng bao nhiêu? (Làm tròn kết quả đến hàng
 
 > **Đáp số:** `3,42`
 
-So sánh giá trị trung bình và độ lệch chuẩn của số tiền thu được mỗi tháng khi bắt đầu tư vào từng lĩnh vực $A,{ \rm{ } }B$. Kí hiệu $\Delta =S_{ A } -S_{ B }$ nếu $\Delta >0$ thì đầu tư vào lĩnh vực $A$“rủi ro” hơn, ngược lại nếu $\Delta  < 0$ thì đầu tư vào lĩnh vực $B$“rủi ro” hơn. Tính $\Delta =S_{ A } -S_{ B }$ ( làm tròn kết quả đến hàng phần trăm). Chọn giá trị đại diện cho các nhóm dữ liệu có: » Xét mẫu số liệu của lĩnh vực $A$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ A } =\frac { 20⋅7,5+5.12,5+10.17,5+5.22,5+20⋅27,5 } { 60 }=17,5{ \rm{ } }$ ( triệu đồng) Phương sai của mẫu số liệu ghép nhóm là $S_{ A } ^{ 2 }=\frac { 1 } { 60 }\left ( { 20⋅7,5 ^ { 2 } +5.12,5 ^ { 2 } +10.17,5 ^ { 2 } +5.22,5 ^ { 2 } +20⋅27,5 ^ { 2 } } \right.  )-(17,5) ^ { 2 } =70,83$ Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ A } =\sqrt{ S_{ A } ^{ 2 } }=\sqrt{ 70,83 }≈8,42$. » Xét mẫu số liệu của lĩnh vực $B$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ B } =\frac { 5⋅7,5+10.12,5+30.17,5+10.22,5+5⋅27,5 } { 60 }=17,5{ \rm{ } }$ ( triệu đồng) Phương sai của mẫu số liệu ghép nhóm là $S_{ B } ^{ 2 }=\frac { 1 } { 60 }\left ( { 5⋅7,5 ^ { 2 } +10.12,5 ^ { 2 } +30.17,5 ^ { 2 } +10.22,5 ^ { 2 } +5⋅27,5 ^ { 2 } } \right.  )-(17,5) ^ { 2 } =25$ Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ B } =\sqrt{ S_{ B } ^{ 2 } }=\sqrt{ 25 }=5$. $⇒\Delta =S_{ A } -S_{ B } =8,42-5=3,42$
+So sánh giá trị trung bình và độ lệch chuẩn của số tiền thu được mỗi tháng khi bắt đầu tư vào từng lĩnh vực $A,{ \rm{ } }B$. Kí hiệu $\Delta =S_{ A } -S_{ B }$ nếu $\Delta >0$ thì đầu tư vào lĩnh vực $A$“rủi ro” hơn, ngược lại nếu $\Delta  < 0$ thì đầu tư vào lĩnh vực $B$“rủi ro” hơn. Tính $\Delta =S_{ A } -S_{ B }$ ( làm tròn kết quả đến hàng phần trăm). Chọn giá trị đại diện cho các nhóm dữ liệu có:
+
+- Xét mẫu số liệu của lĩnh vực $A$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ A } =\frac { 20⋅7,5+5.12,5+10.17,5+5.22,5+20⋅27,5 } { 60 }=17,5{ \rm{ } }$ ( triệu đồng) Phương sai của mẫu số liệu ghép nhóm là $S_{ A } ^{ 2 }=\frac { 1 } { 60 }\left ( { 20⋅7,5 ^ { 2 } +5.12,5 ^ { 2 } +10.17,5 ^ { 2 } +5.22,5 ^ { 2 } +20⋅27,5 ^ { 2 } } \right.  )-(17,5) ^ { 2 } =70,83$ Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ A } =\sqrt{ S_{ A } ^{ 2 } }=\sqrt{ 70,83 }≈8,42$.
+
+- Xét mẫu số liệu của lĩnh vực $B$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ B } =\frac { 5⋅7,5+10.12,5+30.17,5+10.22,5+5⋅27,5 } { 60 }=17,5{ \rm{ } }$ ( triệu đồng) Phương sai của mẫu số liệu ghép nhóm là $S_{ B } ^{ 2 }=\frac { 1 } { 60 }\left ( { 5⋅7,5 ^ { 2 } +10.12,5 ^ { 2 } +30.17,5 ^ { 2 } +10.22,5 ^ { 2 } +5⋅27,5 ^ { 2 } } \right.  )-(17,5) ^ { 2 } =25$ Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ B } =\sqrt{ S_{ B } ^{ 2 } }=\sqrt{ 25 }=5$. $⇒\Delta =S_{ A } -S_{ B } =8,42-5=3,42$
 
 </details>
 
@@ -884,6 +899,10 @@ So sánh giá trị trung bình và độ lệch chuẩn của số tiền thu �
 
 > **Đáp số:** `-0,8`
 
-So sánh giá trị trung bình và độ lệch chuẩn của số tiền thu được mỗi tháng khi bắt đầu tư vào từng lĩnh vực $A,{ \rm{ } }B$. Kí hiệu $\Delta =S_{ A } -S_{ B }$ nếu $\Delta >0$ thì đầu tư vào lĩnh vực $A$“rủi ro” hơn, ngược lại nếu $\Delta  < 0$ thì đầu tư vào lĩnh vực $B$“rủi ro” hơn. Tính $\Delta =S_{ A } -S_{ B }$ ( làm tròn kết quả đến hàng phần mười). Ta có bảng thống kê giá đóng cửa theo giá trị đại diện: » Xét mẫu số liệu của cổ phiếu $A$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ A } =\frac { 8.121+9⋅123+12⋅125+10⋅127+11⋅129 } { 50 }=125,28.$ Phương sai của mẫu số liệu ghép nhóm là $S_{ A } ^{ 2 }=\frac { 1 } { 50 }\left ( { 8.121 ^ { 2 } +9.123 ^ { 2 } +12.125 ^ { 2 } +10.127 ^ { 2 } +11.129 ^ { 2 } } \right.  )-\left ( { 125,28 } \right.  ) ^ { 2 } =7,5216$. Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ A } =\sqrt{ S_{ A } ^{ 2 } }=\sqrt{ 7,5216 }≈2,7425$. » Xét mẫu số liệu của cổ phiếu $B$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ B } =\frac { 16.121+4.123+3.125+6⋅127+21.129 } { 50 }=\frac { 3137 } { 25 }{ \rm{ . } }{ \rm{ } }$ Phương sai của mẫu số liệu ghép nhóm là $S_{ B } ^{ 2 }=\frac { 1 } { 50 }\left ( { 16⋅121 ^ { 2 } +4.123 ^ { 2 } +3.125 ^ { 2 } +6.127 ^ { 2 } +21.129 ^ { 2 } } \right.  )-\left ( { \frac { 3137 } { 25 } } \right.  ) ^ { 2 } =\frac { 7756 } { 625 }$ Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ B } =\sqrt{ S_{ B } ^{ 2 } }=\sqrt{ 12,4 }≈3,5227$. $⇒\Delta =S_{ A } -S_{ B } =2,7425-3,5227=-0,8$ ------------------------------- Hết -------------------------------
+So sánh giá trị trung bình và độ lệch chuẩn của số tiền thu được mỗi tháng khi bắt đầu tư vào từng lĩnh vực $A,{ \rm{ } }B$. Kí hiệu $\Delta =S_{ A } -S_{ B }$ nếu $\Delta >0$ thì đầu tư vào lĩnh vực $A$“rủi ro” hơn, ngược lại nếu $\Delta  < 0$ thì đầu tư vào lĩnh vực $B$“rủi ro” hơn. Tính $\Delta =S_{ A } -S_{ B }$ ( làm tròn kết quả đến hàng phần mười). Ta có bảng thống kê giá đóng cửa theo giá trị đại diện:
+
+- Xét mẫu số liệu của cổ phiếu $A$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ A } =\frac { 8.121+9⋅123+12⋅125+10⋅127+11⋅129 } { 50 }=125,28.$ Phương sai của mẫu số liệu ghép nhóm là $S_{ A } ^{ 2 }=\frac { 1 } { 50 }\left ( { 8.121 ^ { 2 } +9.123 ^ { 2 } +12.125 ^ { 2 } +10.127 ^ { 2 } +11.129 ^ { 2 } } \right.  )-\left ( { 125,28 } \right.  ) ^ { 2 } =7,5216$. Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ A } =\sqrt{ S_{ A } ^{ 2 } }=\sqrt{ 7,5216 }≈2,7425$.
+
+- Xét mẫu số liệu của cổ phiếu $B$: Số trung bình của mẫu số liệu ghép nhóm là $\bar x_{ B } =\frac { 16.121+4.123+3.125+6⋅127+21.129 } { 50 }=\frac { 3137 } { 25 }{ \rm{ . } }{ \rm{ } }$ Phương sai của mẫu số liệu ghép nhóm là $S_{ B } ^{ 2 }=\frac { 1 } { 50 }\left ( { 16⋅121 ^ { 2 } +4.123 ^ { 2 } +3.125 ^ { 2 } +6.127 ^ { 2 } +21.129 ^ { 2 } } \right.  )-\left ( { \frac { 3137 } { 25 } } \right.  ) ^ { 2 } =\frac { 7756 } { 625 }$ Độ lệch chuẩn của mẫu số liệu ghép nhóm là $S_{ B } =\sqrt{ S_{ B } ^{ 2 } }=\sqrt{ 12,4 }≈3,5227$. $⇒\Delta =S_{ A } -S_{ B } =2,7425-3,5227=-0,8$ ------------------------------- Hết -------------------------------
 
 </details>
