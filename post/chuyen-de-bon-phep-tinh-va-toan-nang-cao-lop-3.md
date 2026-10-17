@@ -24,294 +24,320 @@ grade: 3
 ---
 
 
-## 1 Bốn phép tính
+## 1. Bốn phép tính
 
-### 1.1 Phép cộng, phép trừ
+### 1.1. Phép cộng, phép trừ
 
 1.1. Tính tổng. Kết quả thay đổi thế nào? Vì sao?
-- a) +
-- b) +
-- c) +
-· 56
-+
-+ 79
-+ 53
-+ 54
+- a)
+  $$\begin{array}{rrrr}
+  42 & 62 & 82 & 102 \\
+  +\; 79 & +\; 79 & +\; 79 & +\; 579 \\
+  \hline
+  \end{array}$$
+- b)
+  $$\begin{array}{rrrr}
+  45 & 45 & 45 & 435 \\
+  +\; 53 & +\; 53 & +\; 53 & +\; 354 \\
+  \hline
+  \end{array}$$
+- c)
+  $$\begin{array}{rrrr}
+  78 & 79 & 80 & 381 \\
+  +\; 56 & +\; 55 & +\; 54 & +\; 353 \\
+  \hline
+  \end{array}$$
+
 1.2. Tìm những tổng bằng nhau. Tại sao chúng bằng nhau?
-+ 579
-+ 354
-+
-- a) +
-- b) + 354
-- c) + 68
-- d) + 178
+- a) $493 + 38$
+- b) $416 + 354$
+- c) $373 + 68$
+- d) $263 + 178$
+
 1.3. Thực hiện phép tính:
-- a) 312 + 68 + 12 + 66 =
-306 + 14 + 12 + 106 =
-- b) 68 + 241 + 57 + 33 =
-96 + 30 + 46 + 34 =
-1.4. Thay chữ bằng số thích hợp biết 73 + 121 = 194:
-- a) (73 + 7) + 121 = 194 + a;
-- c) (73 + 127) + 121 = 194 + c;
-- e) (73 - 19) + 121 = 194 - e;
-- b) (73 - 41) + 121 = 194 - 6;
-- d) (73 + d) + (121 - d) = 194;
-- f) (73 - f) + (121 + f) = 194.
-a=? b=? c=? d=? e=? f=?
-1.5. Thay chữ bằng số thích hợp biết 73 + 121 = 194:
-- a) 73 + (121 + a) = 194 + 5;
-- c) 73 + (121 + c) = 194 + 9;
-- e) 73 + (121 - e) = 194 - e ;
-- b) 73 + (121 - 94) = 194 - b;
-- d) (73 + d) + (121 + d) = 194 + 8;
-- f) (73 - f) + (121 - f) = 194 - 12.
-a=? b=? c=? d=? e=? f=?
+- a)
+  - $312 + 68 + 12 + 66 =$
+  - $306 + 14 + 12 + 106 =$
+- b)
+  - $68 + 241 + 57 + 33 =$
+  - $96 + 30 + 46 + 34 =$
+
+1.4. Thay chữ bằng số thích hợp biết $73 + 121 = 194$:
+- a) $(73 + 7) + 121 = 194 + a$;
+- b) $(73 - 41) + 121 = 194 - b$;
+- c) $(73 + 127) + 121 = 194 + c$;
+- d) $(73 + d) + (121 - d) = 194$;
+- e) $(73 - 19) + 121 = 194 - e$;
+- f) $(73 - f) + (121 + f) = 194$.
+
+$a = ?\quad b = ?\quad c = ?\quad d = ?\quad e = ?\quad f = ?$
+
+1.5. Thay chữ bằng số thích hợp biết $73 + 121 = 194$:
+- a) $73 + (121 + a) = 194 + 5$;
+- b) $73 + (121 - 94) = 194 - b$;
+- c) $73 + (121 + c) = 194 + 9$;
+- d) $(73 + d) + (121 + d) = 194 + 8$;
+- e) $73 + (121 - e) = 194 - e$;
+- f) $(73 - f) + (121 - f) = 194 - 12$.
+
+$a = ?\quad b = ?\quad c = ?\quad d = ?\quad e = ?\quad f = ?$
+
 1.6. Thay chữ bằng số thích hợp trong bảng sau:
-- a) (73 + a) + (121 + b) = 194 + 8;
-- e) (73 - h) + (121 - i) = 194 - 4;
-- b) (73 + c) + (121 - d) = 194 + 6;
-- f) (73 - j) + (121 + k) = 194 - 8;
-- c) (73 - e) + (121 + f) = 194 + 5;
-- d) (73-9) + (121-9) =191-4; →
-- g) (73 - 1) + (121 - m) = 194 - 7.
-9 =?
-1.7. Biết 150 + 29 + 71 = 250, hỏi x bằng bao nhiêu?
-а) (150 + 50) + (29 + 12) + (71 - x) = 300;
-- b) (150 - 17) + (29 - x) + (71 + 20) = 250;
-- c) (150 - x) + (29 - 17) + (71 - 20) = 200.
-1.8. Không thực hiện phép tính, hãy xác định tổng nào lớn hơn và hơn bao
-nhiêu? Vẽ mũi tên chỉ từ số nhỏ đến số lớn?
-1018 + 937
-1028 + 937
-1020 + 937
-1038 + 927
-1.9. Cho x + y = z, thì các ô trống cần phải ghi giá trị gì hoặc phép tính gì?
-- a) (x+9) + (y+7) =%+D;
-- b) (x+0) + (y- 4) = *+ 10;
-с) (x+ 43) + (y-43) =%- Д;
-- d) (x - 124) + (y + 24) = x · Д.
-1.10. Diền các dấu phép tính thích hợp vào ô trống:
-- a) (72 · 27) + (50 · 27) = 122;
+- a) $(73 + a) + (121 + b) = 194 + 8$;
+- b) $(73 + c) + (121 - d) = 194 + 6$;
+- c) $(73 - e) + (121 + f) = 194 + 5$;
+- d) $(73 - g) + (121 - g) = 194 - 4 \implies g = ?$;
+- e) $(73 - h) + (121 - i) = 194 - 4$;
+- f) $(73 - j) + (121 + k) = 194 - 8$;
+- g) $(73 - l) + (121 - m) = 194 - 7$.
+
+| Cặp chữ | Giá trị 1 | Giá trị 2 | Giá trị 3 | Giá trị 4 | Giá trị 5 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| $a$ | | | | | |
+| $b$ | | | | | |
+| $c$ | | | | | |
+| $d$ | | | | | |
+| $e$ | | | | | |
+| $f$ | | | | | |
+| $h$ | | | | | |
+| $i$ | | | | | |
+| $j$ | | | | | |
+| $k$ | | | | | |
+| $m$ | | | | | |
+| $l$ | | | | | |
+
+1.7. Biết $150 + 29 + 71 = 250$, hỏi $x$ bằng bao nhiêu?
+- a) $(150 + 50) + (29 + 12) + (71 - x) = 300$;
+- b) $(150 - 17) + (29 - x) + (71 + 20) = 250$;
+- c) $(150 - x) + (29 - 17) + (71 - 20) = 200$.
+
+1.8. Không thực hiện phép tính, hãy xác định tổng nào lớn hơn và hơn bao nhiêu? Vẽ mũi tên chỉ từ số nhỏ đến số lớn:
+- $1018 + 937$
+- $1028 + 937$
+- $1020 + 937$
+- $1038 + 927$
+
+1.9. Cho $x + y = z$, thì các ô trống cần phải ghi giá trị gì hoặc phép tính gì?
+- a) $(x + 9) + (y + 7) = z + \square$;
+- b) $(x + \square) + (y - \Delta) = z + 10$;
+- c) $(x + 43) + (y - 43) = z - \Delta$;
+- d) $(x - 124) + (y + 24) = z \;\square\; \Delta$.
+
+1.10. Điền các dấu phép tính thích hợp vào ô trống:
+- a) $(72 \;\square\; 27) + (50 \;\square\; 27) = 122$;
+- b) $(48 \;\square\; 72) + (50 \;\square\; 48) = 122$.
+
 1.11. Tính nhẩm rồi ghi kết quả. Bạn đã làm thế nào?
-- b) (48 · 72) + (50 · 48) = 122.
-- a) 25 + 24 =
-- c) 725 + 223 =
-- e) 154 + 106 =
-- b) 208 + 192 =
-- d) 607 + 1393 =
-- f) 2009 + 314 =
-1.12. Ghi tiếp bảng dưới đây:
-a
-b
-c
-1.13. Hãy ghi các số vào ô trống sao cho kết quả luôn tăng 14 đơn vị:
-a)
-· + 20
-O+1
-246 + 28
-·+9
-· + 209
-b)
-· + 13
-· + 28
-246 + 28
-J + 14
-246 + U
-1.14. Thực hiện phép trừ. Hãy kiểm tra kết quả (bằng phép cộng).
-- b) -
-d)
-1.15. Nhận xét gì về mối liên quan giữa các hiệu? Giải thích các nhận biết
-của bạn.
-b)
-c)
+- a) $25 + 24 =$
+- b) $208 + 192 =$
+- c) $725 + 223 =$
+- d) $607 + 1393 =$
+- e) $154 + 106 =$
+- f) $2009 + 314 =$
+
+1.12. Ghi tiếp bảng dưới đây (biết $a + b = c$):
+
+| Đại lượng | Cột 1 | Cột 2 | Cột 3 | Cột 4 | Cột 5 | Cột 6 | Cột 7 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $a$ | $516$ | $500$ | $520$ | | | $616$ | $1516$ |
+| $b$ | $1081$ | $1081$ | $1085$ | $1081$ | $1092$ | | |
+| $c$ | $1597$ | | $1600$ | $1992$ | $1597$ | $1597$ | |
+
+1.13. Hãy ghi các số vào ô trống sao cho kết quả luôn tăng $14$ đơn vị:
+- a) $[\;\square + 20\;] < [\;\square + 1\;] < [246 + 28] < [\;\square + 9\;] < [\;\square + 209\;]$
+- b) $[\;\square + 13\;] < [\;\square + 28\;] < [246 + 28] < [\;\square + 14\;] < [246 + \;\square\;]$
+
+1.14. Thực hiện phép trừ. Hãy kiểm tra kết quả (bằng phép cộng):
+- a) $216 - 49$
+- b) $811 - 36$
+- c) $324 - 108$
+- d) $936 - 639$
+
+1.15. Nhận xét gì về mối liên quan giữa các hiệu? Giải thích các nhận biết của bạn:
+- a) $3427 - 692$
+- b) $3627 - 692$
+- c) $3627 - 892$
+- d) $3227 - 492$
+
 1.16. Thực hiện phép tính và kiểm tra lại. Các hiệu thay đổi thế nào?
-a)
-d)
+- a) $15840 - 7965$
+- b) $15000 - 7125$
+- c) $16840 - 6965$
+- d) $14840 - 8965$
+
 1.17. Thực hiện phép tính và kiểm tra lại. Các hiệu thay đổi thế nào?
-- a) - 2253
-b)
-- 2133
-- c) - 2013
-- d) - 1893
-1.18. Thực hiện phép tính:
+- a) $6341 - 2253$
+- b) $6341 - 2133$
+- c) $6341 - 2013$
+- d) $6341 - 1893$
+
+1.18. Cho phép trừ: $5421 - 2916$.
 - a) Hãy thay đổi số bị trừ để hiệu tăng 136 đơn vị.
 - b) Hãy thay đổi số trừ để hiệu tăng 72 đơn vị.
 - c) Hãy thay đổi cả số bị trừ và số trừ để hiệu tăng 10 đơn vị.
 - d) Hãy thay đổi cả số bị trừ và số trừ để hiệu không thay đổi!
-1.19. Thực hiện phép tính:
+
+1.19. Cho phép trừ: $4312 - 2458$.
 - a) Hãy thay đổi số bị trừ để hiệu giảm 75 đơn vị.
 - b) Hãy thay đổi số trừ để hiệu giảm 130 đơn vị.
 - c) Hãy thay đổi cả số bị trừ và số trừ để hiệu giảm 20 đơn vị.
 - d) Hãy thay đổi cả số bị trừ và số trừ để hiệu không thay đổi.
+
 1.20. Thực hiện phép tính. Bạn nhận ra điều gì? Tại sao?
-- a) 36 + 42 =
-42 + 36 =
-- b) 712 + 188 =
-188 + 172 =
-- c) 653 + 278 =
-278 + 653 =
-- d) 318 + 93 =
-93 + 318 =
+- a) $36 + 42 = \dots$; $42 + 36 = \dots$
+- b) $712 + 188 = \dots$; $188 + 172 = \dots$
+- c) $653 + 278 = \dots$; $278 + 653 = \dots$
+- d) $318 + 93 = \dots$; $93 + 318 = \dots$
+
 1.21. Hãy thực hiện phép tính theo cột. Bạn nhận ra điều gì? Tại sao?
-- a) 93 + 68 =
-68 + 93 =
-- b) 19 + 811 =
-811 + 19 =
-- c) 57 + 104 =
-104 + 57 =
-- d) 184 + 97 =
-97 + 184 =
+- a) $93 + 68 = \dots$; $68 + 93 = \dots$
+- b) $19 + 811 = \dots$; $811 + 19 = \dots$
+- c) $57 + 104 = \dots$; $104 + 57 = \dots$
+- d) $184 + 97 = \dots$; $97 + 184 = \dots$
+
 1.22. Thực hiện phép tính. Bạn nhận ra điều gì?
-- a) 739 + (186 + 73) =
-(739 + 186) + 73 =
-739 + 186 + 73 =
-- b) (6444 + 188) + 1050 =
-6444 + (1050 + 188) =
-6444 + 188 + 1050 =
-- c) 1543 + (118 + 293) =
-(1543 + 118) + 293 =
-1543 + 118 + 293 =
-- d) 2043 + (795 + 9244) =
-(2013 + 9214) + 795 =
-2043 + 9244 + 795 =
-1.23. Thực hiện phép tính. Ta có thể cộng một số với một hiệu bằng cách
-nào?
-- a) 1424 + (645 - 77) =
-(1424 + 645) - 77 =
-1424 + 645 - 77 =
-- c) 2526 + (3470 - 583) =
-2526 + 3470 - 583 =
-- b) 699 + (2001 - 199) =
-(699 + 2001) - 199 =
-699 + 2001 - 199 =
-- d) 4881 + (1149 - 673) =
-4881 + 1149 - 673 =
-1.24. Thực hiện phép tính khéo nhất bằng sử dụng các tính chất của phép
-tính:
-- a) (3976 + 649) - 376 =
-- c) (3976 + 649) - 449 =
-- e) (693 + 3415) + 585 =
-- g) (693 + 34415) + 307 =
+- a) $739 + (186 + 73) = \dots$; $(739 + 186) + 73 = \dots$; $739 + 186 + 73 = \dots$
+- b) $(6444 + 188) + 1050 = \dots$; $6444 + (1050 + 188) = \dots$; $6444 + 188 + 1050 = \dots$
+- c) $1543 + (118 + 293) = \dots$; $(1543 + 118) + 293 = \dots$; $1543 + 118 + 293 = \dots$
+- d) $2043 + (795 + 9244) = \dots$; $(2043 + 9244) + 795 = \dots$; $2043 + 9244 + 795 = \dots$
+
+1.23. Thực hiện phép tính. Ta có thể cộng một số với một hiệu bằng cách nào?
+- a) $1424 + (645 - 77) = \dots$; $(1424 + 645) - 77 = \dots$; $1424 + 645 - 77 = \dots$
+- b) $699 + (2001 - 199) = \dots$; $(699 + 2001) - 199 = \dots$; $699 + 2001 - 199 = \dots$
+- c) $2526 + (3470 - 583) = \dots$; $2526 + 3470 - 583 = \dots$
+- d) $4881 + (1149 - 673) = \dots$; $4881 + 1149 - 673 = \dots$
+
+1.24. Thực hiện phép tính khéo nhất bằng sử dụng các tính chất của phép tính:
+- a) $(3976 + 649) - 376 =$
+- b) $(8416 + 397) - 416 =$
+- c) $(3976 + 649) - 449 =$
+- d) $(8416 + 397) - 397 =$
+- e) $(693 + 3415) + 585 =$
+- f) $(1222 + 766) + 778 =$
+- g) $(693 + 34415) + 307 =$
+- h) $(1222 + 766) + 234 =$
+
 1.25. Thực hiện phép tính. Bạn nhận ra điều gì?
-- b) (8416 + 397) - 416 =
-- d) (8416 + 397) - 397 =
-- f) (1222 + 766) + 778 =
-- h) (1222 + 766) + 234 =
-- a) 2461 - (1789 + 211) =
-2461 - 1789 - 211 =
-2461 - 1789 + 211 =
-- b) 1816 - (916 + 847) =
-1816 - 916 + 847 =
-1816 - 916 - 847 =
-1.26. Thực hiện phép tính. Ta có thể trừ từ một số đi một tổng bằng cách
-nào?
-- a) 7264 - (3128 + 872) =
-7264 - 3128 - 872 =
-- c) 8312 - (6355 + 645) =
-8312 - 6355 - 645 =
-- b) 6542 - (3726 + 542) =
-6542 - (3726 + 274) =
-- d) 3486 - (1614 + 386) =
-3486 - (1486 + 755) =
-1.27. Thực hiện phép tính. Ta có thể trừ từ một số đi một hiệu bằng cách
-nào?
-- a) 1721 - (1432 - 150) =
-1721 - 1432 - 150 =
-1721 - 1432 + 150 =
-- c) 18650 - (9446 - 1517) =
-18650 - 9446 + 1517 =
-18650 - 9446 - 1517 =
-- b) 2043 - (1812 - 875) =
-2043 - 1812 + 875 =
-2043 - 1812 - 875 =
-- d) 23610 - (11643 - 2547) =
-23610 - 11643 - 2547 =
-23610 - 11643 + 2547 =
+- a) $2461 - (1789 + 211) = \dots$; $2461 - 1789 - 211 = \dots$; $2461 - 1789 + 211 = \dots$
+- b) $1816 - (916 + 847) = \dots$; $1816 - 916 + 847 = \dots$; $1816 - 916 - 847 = \dots$
+
+1.26. Thực hiện phép tính. Ta có thể trừ từ một số đi một tổng bằng cách nào?
+- a) $7264 - (3128 + 872) = \dots$; $7264 - 3128 - 872 = \dots$
+- b) $6542 - (3726 + 542) = \dots$; $6542 - (3726 + 274) = \dots$
+- c) $8312 - (6355 + 645) = \dots$; $8312 - 6355 - 645 = \dots$
+- d) $3486 - (1614 + 386) = \dots$; $3486 - (1486 + 755) = \dots$
+
+1.27. Thực hiện phép tính. Ta có thể trừ từ một số đi một hiệu bằng cách nào?
+- a) $1721 - (1432 - 150) = \dots$; $1721 - 1432 - 150 = \dots$; $1721 - 1432 + 150 = \dots$
+- b) $2043 - (1812 - 875) = \dots$; $2043 - 1812 + 875 = \dots$; $2043 - 1812 - 875 = \dots$
+- c) $18650 - (9446 - 1517) = \dots$; $18650 - 9446 + 1517 = \dots$; $18650 - 9446 - 1517 = \dots$
+- d) $23610 - (11643 - 2547) = \dots$; $23610 - 11643 - 2547 = \dots$; $23610 - 11643 + 2547 = \dots$
+
 1.28. Hãy giải bài toán chú ý cách càng đơn giản càng tốt!
-- a) 6976 - (876 - 350) =
-- c) 4368 - (1368 - 559) =
-- e) 7563 - (463 - 321) =
-- g) 9265 - (3265 - 846) =
+- a) $6976 - (876 - 350) =$
+- b) $6976 - (691 - 191) =$
+- c) $4368 - (1368 - 559) =$
+- d) $4368 - (2541 - 1541) =$
+- e) $7563 - (463 - 321) =$
+- f) $8417 - (7644 - 3644) =$
+- g) $9265 - (3265 - 846) =$
+- h) $9265 - (6412 - 3412) =$
+
 1.29. Hãy giải bài toán chú ý cách càng đơn giản càng tốt!
-- b) 6976 - (691 - 191) =
-- d) 4368 - (2541 - 1541) =
-- f) 8417 - (7644 - 3644) =
-- h) 9265 - (6412 - 3412) =
-- a) 6942 + (3058 - 109) =
-- b) 7875 + (1832 - 875) =
-- c) (3634 + 799) + 1366 =
-- d) 15204 + 6700 + 96 =
-- e) (10704 + 956) - 704 =
-- f) 9144 - 760 + (242 + 418) =
-- g) 42860 - 1500 + (700 + 800) =
-- h) 8888 + 1253 - 153 =
-1.30. Thay chữ bằng số thích hợp. Hãy sử dụng kết quả: 3705 - 1043 = 2662
-- a) (3705 + 295) - 1043 = 2662 + a;
-- c) 3705 + 53 - 1043 = 2662 + c;
-- e) (3705 - 305) - 1043 = 2662 - e;
-- b) (3075 - 400) - 1043 = 2662 - b;
-- d) (3705 + d) - (1043 + d) = 2662;
-- f) (3705 - f) - (1043 - f) = 2662.
-a=? b=? c=? d=? e=? f=?
-1.31. Thay chữ bằng số thích hợp. Hãy sử dụng kết quả biết 3705 - 1043 =
-2662:
-- a) 3705 - (1043 - a) = 2662 + 43;
-- b) 3705 - (1043 + 157) = 2662 - b;
-- c) 3705 - (1043 -c) = 2662 + 1000; d) (3705+d)-(1043-d) = 2662+2;
-- e) 3705 - (1043 + e) = 2662 - e;
-- f) (3705 - J) - (1043 - f) = 2662.
-a=? b=? c=? d=? e=? f=?
-1.32. Diền kết quả vào bảng. Hãy sử dụng kết quả biết 3705 - 1043 = 2662:
-- a) (3705+a)-(1043-b) = 2662+6;
-- b) (3705+c)-(1043+d) = 2662+6;
-- c) (3705 - e) - (1043 - f) =
-2662 + 5;
-- d) (3705-g)-(1043+g) = 2662-4;
-- e) (3705-h)-(1043-i) = 2662-4;
-- f) (3705-j)-(1043+k) = 2662-8;
-m
-- g) (3705-1) - (1043-m) = 2662-
-1.33. Biết 72 - 3600 - 600 = 3000. Hỏi x bằng bao nhiêu?
-- a) (7200 + 1000) - (3600 + 200) - (600 + x) = 3700;
-- b) (7200 + 1000) - (3600 - x) - (600 + 400) = 3000;
-- c) (7200 - x) - (3600 + 1000) - (600 - 400) = 2300.
-1.34. Không thực hiện phép trừ hãy xác định các kết quả thay đổi ra sao?
-Vẽ mũi tên từ số nhỏ đến số lớn.
-9307 - 625
-9037 - 525
-9317 - 525
-9407 - 625
-1.35. Nếu x - y = z thì các số và các dấu phép tính nào cần điền vào chỗ
-trống?
-- a) (x+9) - (y-7) =z+ D;
-- c) (x + D) - (y + 4) = z + 10;
-1.36. Diền phép tính vào chỗ trống:
-- b) (x+43) - (У + 23) = 2- Д;
-- d) (x - 124) - (y - 24) = z D 4
-- a) (627 · 58) - (342 · 58) = 285;
-- b) (627 · 42) - (342 · 42) = 285.
-1.37. Tính nhẫm, điền kết quả. Hãy nói bạn đã nghĩ thể nào?
-- a) 1730 - 222 =
-- c) 725 - 127 =
-- e) 1371 - 1008 =
-- b) 2080 - 1992 =
-- d) 5555 - 999 =
-- f) 2003 - 313 =
+- a) $6942 + (3058 - 109) =$
+- b) $7875 + (1832 - 875) =$
+- c) $(3634 + 799) + 1366 =$
+- d) $15204 + 6700 + 96 =$
+- e) $(10704 + 956) - 704 =$
+- f) $9144 - 760 + (242 + 418) =$
+- g) $42860 - 1500 + (700 + 800) =$
+- h) $8888 + 1253 - 153 =$
+
+1.30. Thay chữ bằng số thích hợp. Hãy sử dụng kết quả: $3705 - 1043 = 2662$:
+- a) $(3705 + 295) - 1043 = 2662 + a$;
+- b) $(3705 - 400) - 1043 = 2662 - b$;
+- c) $3705 + 53 - 1043 = 2662 + c$;
+- d) $(3705 + d) - (1043 + d) = 2662$;
+- e) $(3705 - 305) - 1043 = 2662 - e$;
+- f) $(3705 - f) - (1043 - f) = 2662$.
+
+$a = ?\quad b = ?\quad c = ?\quad d = ?\quad e = ?\quad f = ?$
+
+1.31. Thay chữ bằng số thích hợp. Hãy sử dụng kết quả biết $3705 - 1043 = 2662$:
+- a) $3705 - (1043 - a) = 2662 + 43$;
+- b) $3705 - (1043 + 157) = 2662 - b$;
+- c) $3705 - (1043 - c) = 2662 + 1000$;
+- d) $(3705 + d) - (1043 - d) = 2662 + 2$;
+- e) $3705 - (1043 + e) = 2662 - e$;
+- f) $(3705 - f) - (1043 - f) = 2662$.
+
+$a = ?\quad b = ?\quad c = ?\quad d = ?\quad e = ?\quad f = ?$
+
+1.32. Điền kết quả vào bảng. Hãy sử dụng kết quả biết $3705 - 1043 = 2662$:
+- a) $(3705 + a) - (1043 - b) = 2662 + 6$;
+- b) $(3705 + c) - (1043 + d) = 2662 + 6$;
+- c) $(3705 - e) - (1043 - f) = 2662 + 5$;
+- d) $(3705 - g) - (1043 + g) = 2662 - 4 \implies g = ?$;
+- e) $(3705 - h) - (1043 - i) = 2662 - 4$;
+- f) $(3705 - j) - (1043 + k) = 2662 - 8$;
+- g) $(3705 - l) - (1043 - m) = 2662 - 7$.
+
+| Cặp chữ | Giá trị 1 | Giá trị 2 | Giá trị 3 | Giá trị 4 | Giá trị 5 |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| $a$ | | | | | |
+| $b$ | | | | | |
+| $c$ | | | | | |
+| $d$ | | | | | |
+| $e$ | | | | | |
+| $f$ | | | | | |
+| $h$ | | | | | |
+| $i$ | | | | | |
+| $j$ | | | | | |
+| $k$ | | | | | |
+| $m$ | | | | | |
+| $l$ | | | | | |
+
+1.33. Biết $7200 - 3600 - 600 = 3000$. Hỏi $x$ bằng bao nhiêu?
+- a) $(7200 + 1000) - (3600 + 200) - (600 + x) = 3700$;
+- b) $(7200 + 1000) - (3600 - x) - (600 + 400) = 3000$;
+- c) $(7200 - x) - (3600 + 1000) - (600 - 400) = 2300$.
+
+1.34. Không thực hiện phép trừ hãy xác định các kết quả thay đổi ra sao? Vẽ mũi tên từ số nhỏ đến số lớn:
+- $9307 - 625$
+- $9037 - 525$
+- $9317 - 525$
+- $9407 - 625$
+
+1.35. Nếu $x - y = z$ thì các số và các dấu phép tính nào cần điền vào chỗ trống?
+- a) $(x + 9) - (y - 7) = z + \square$;
+- b) $(x + 43) - (y + 23) = z - \Delta$;
+- c) $(x + \square) - (y + \Delta) = z + 10$;
+- d) $(x - 124) - (y - 24) = z \;\square\; \Delta$.
+
+1.36. Điền phép tính vào chỗ trống:
+- a) $(627 \;\square\; 58) - (342 \;\square\; 58) = 285$;
+- b) $(627 \;\square\; 42) - (342 \;\square\; 42) = 285$.
+
+1.37. Tính nhẩm, điền kết quả. Hãy nói bạn đã nghĩ thế nào?
+- a) $1730 - 222 =$
+- b) $2080 - 1992 =$
+- c) $725 - 127 =$
+- d) $5555 - 999 =$
+- e) $1371 - 1008 =$
+- f) $2003 - 313 =$
+
 1.38. Hãy điền số vào chỗ trống sao cho các kết quả luôn tăng 24 đơn vị:
-- 191
-- 167
-357 - 143
-381 - ·
-· - 117
-333 - I
-357 - ·
-357 - 143 < · - 119
-<
-· · - 100
-1.39. Diền kết quả vào bảng:
-a
-b
-c
+- a) $[\;\square - 191\;] < [\;\square - 167\;] < [357 - 143] < [381 - \;\square\;] < [\;\square - 117\;]$
+- b) $[333 - \;\square\;] < [357 - \;\square\;] < [357 - 143] < [\;\square - 119\;] < [\;\square - 100\;]$
+
+1.39. Điền kết quả vào bảng (biết $a - b = c$):
+
+| Đại lượng | Cột 1 | Cột 2 | Cột 3 | Cột 4 | Cột 5 | Cột 6 | Cột 7 | Cột 8 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $a$ | $1992$ | $1900$ | $2000$ | | | $2092$ | $1792$ | $18712$ |
+| $b$ | $1029$ | $1029$ | $1037$ | $1029$ | $1329$ | | | $7749$ |
+| $c$ | $963$ | | | $1963$ | $1063$ | $963$ | $963$ | |
+
 1.40. Hãy lấy tổng của 2472 và 985 cộng với hiệu của hai số.
 1.41. Hãy lấy tổng của 6848 và 1674 trừ với hiệu của hai số.
 1.42. Số nào lớn hơn
@@ -402,15 +428,14 @@ nhiêu viên bi?
 sợi dây thứ ba 27dm. Hỏi sợi dây thứ nhất dài hơn sợi dây thứ ba bao nhiêu
 dêximet?
 
-### 1.2 Phép nhân
+### 1.2. Phép nhân
 
-1.79. Giải bài toán bằng cách đơn giản.
-- a) 32
-+ 32
-+ 94
-- c) 227
-+ 227
-d)
+1.79. Giải bài toán bằng cách đơn giản:
+- a) $32 + 32 + 32 + 32 + 32 = 32 \times 5$
+- b) $94 + 94 + 94 + 94 = 94 \times 4$
+- c) $227 + 227 + 227 + 227 + 227 = 227 \times 5$
+- d) $783 + 783 + 783 + 783 = 783 \times 4$
+
 1.80. Thực hiện phép tính. Phát biểu mối liên hệ của các kết quả.
 + 783
 - a) 62 x 7 =
@@ -594,7 +619,7 @@ biểu về các cách làm của mình.
 - a) 1 km = .... m;
 1 m = .... dm;
 
-## 1 cm = .... mm;
+- $1\text{ cm} = \dots\text{ mm}$;
 
 - b) 1 km = .... cm;
 1 m = .... cm;
@@ -630,9 +655,9 @@ biểu về các cách làm của mình.
 91 × 1000 =
 910 × 100 =
 
-## 1 dm = .... cm;
+- $1\text{ dm} = \dots\text{ cm}$;
 
-## 1 dm = .... mm;
+- $1\text{ dm} = \dots\text{ mm}$;
 
 100 km = .... cm;
 150 km = .... m.
@@ -751,7 +776,7 @@ Ingày = ... giờ;
 - b) 3 giờ = ... phút;
 - c) 7 phút = ... giây;
 
-## 4 phút = ... giây;
+- $4\text{ phút} = \dots\text{ giây}$;
 
 3giờ30phút =... phút;
 10 phút = ... giây;
@@ -759,19 +784,19 @@ Ingày = ... giờ;
 =…giây;
 4ngày = ... giờ;
 
-## 7 giờ = ... phút;
+- $7\text{ giờ} = \dots\text{ phút}$;
 
 70 phút = ... giây;
 - d) 5 giờ = ... giây;
 1.109. Diền vào chỗ trống các đại lượng thích hợp:
 
-## 6 giờ = ... giây.
+- $6\text{ giờ} = \dots\text{ giây}$.
 
 - a) 1 giờ = ... phút = ... giây;
 
-## 1 ngày = ... giờ = ... phút;
+- $1\text{ ngày} = \dots\text{ giờ} = \dots\text{ phút}$;
 
-## 1 tuẫn = ... ngày = ... giờ;
+- $1\text{ tuần} = \dots\text{ ngày} = \dots\text{ giờ}$;
 
 - b) 9 giờ = ... phút = ... giây;
 10 giờ =
@@ -867,7 +892,7 @@ nặng bao nhiêu kilogam^2
 số và số nhỏ nhất có 2 chữ số.
 1.128. Tìm một số có 2 chữ số, biết rằng chữ số hàng chục lớn hơn 5 và gấp
 
-## 4 lần chữ số hàng đơn vị.
+gấp 4 lần chữ số hàng đơn vị.
 
 1.129. Mỗi trang trại có 250 con vịt. Hỏi 4 trang trại như thế có bao nhiêu
 con vịt?
@@ -886,8 +911,7 @@ sinh. Hỏi lớp học có bao nhiêu học sinh?
 1.136. Tìm hai số có tích bằng 6 và có hiệu bằng 5.
 1.137. Tìm hai số có tích bằng 0 và tổng bằng 4.
 1.138. Tìm hai số có tích bằng 0 và có tổng cũng bằng 0.
-1.3
-Phép chia
+### 1.3. Phép chia
 1.139. Thực hiện phép tính. Hãy phát biểu những gì bạn quan sát được.
 - a) 45 :9 =
 450 : 9 =
@@ -1216,11 +1240,11 @@ nhỏ nhất có 2 chữ số.
 - c) Sọt bưởi nặng bao nhiêu kilogam^2
 1.184. Cho phép tính chia, biết rằng thương của nó bằng - số bị chia và gấp
 
-## 7 lần số chia. Hỏi thương của phép chia đó là bao nhiêu?
+7 lần số chia. Hỏi thương của phép chia đó là bao nhiêu?
 
 1.185. Tìm một số, biết rằng nếu gấp số đó lên 2 lần được bao nhiêu gấp lên
 
-## 9 lần thì được kết quả cuối cùng là 36.
+9 lần thì được kết quả cuối cùng là 36.
 
 1.186. Tuấn đi bộ từ nhà đến trường mất 15 phút, nếu cũng quãng đường đó
 mà Tuấn đi bằng xe đạp thì thời gian giảm đi 3 lần. Hỏi khi đo học bằng xe
@@ -1265,10 +1289,9 @@ phép tính đúng.
 1.199. Sau khi thu hoạch bưởi, chị Tâm chia đều 245 quả bưởi vào 7 cái giỏ.
 Hỏi mỗi giỏ được bao nhiêu quả bưởi?
 
-## 2 Các bài toán mở rộng
+## 2. Các bài toán mở rộng
 
-2.1
-Toán đố
+### 2.1. Toán đố
 2.1. Em hãy cho biết số bé nhất có ba chữ số là số nào, số lớn nhất có hai
 chữ số là số nào và tổng của hai số đó bằng bao nhiêu?
 2.2. Em hãy viết tất cả các số có ba chữ số mà tổng của ba chữ số bằng 3.
@@ -1331,7 +1354,7 @@ bằng hai cách.
 bán được bao nhiêu tiền?
 2.28. Một bao đường nặng hơn một bao gạo 8 kg. Hỏi 5 bao đường nặng hơn
 
-## 4 bao gạo bao nhiêu kilogam, biết một bao đường nặng 42 kg.
+4 bao gạo bao nhiêu kilogam, biết một bao đường nặng 42 kg.
 
 2.29. Có 5 thùng kẹo như nhau chứa tổng cộng 720 viên kẹo, mỗi thùng kẹo
 có 6 gói. Hỏi mỗi gói chứa bao nhiêu viên kẹo?
@@ -1405,7 +1428,7 @@ An trả lời câu hỏi của Dũng.
 2.56. Hiện nay bố 32 tuổi gấp bốn lần tuổi con. Hỏi bao nhiêu năm nữa tuổi
 bố chỉ còn gấp 3 lần tuổi con?
 
-### 2.2 Hình học
+### 2.2. Hình học
 
 2.57. Cho hai điểm A và B
 - a) Hãy nối A và B lại và lấy điểm M là trung điểm của đoạn thắng AB.
@@ -1434,7 +1457,8 @@ Em hãy cho biết Hồng trồng hoa như thế nào?
 2.69. Cho một hình vuông có chu vi bằng 16 cm và một hình chữ nhật có
 chiều dài hơn cạnh hình vuông 2cm, chiều rộng kém cạnh hình vuông 1 cm.
 Hãy tính diện tích hình chữ nhật.
-Phân số
+## 3. Phân số
+
 3.1. Diền số thích hợp vào hình vuông để được phân số nhỏ hơn 1:
 i)
 16'
@@ -2119,7 +2143,7 @@ k) ₫:6-}:6=
 - c) ]+=×8+ =×6=
 d)·-5:5+-2×2=
 
-### 3.1 Đối đơn vị
+### 3.1. Đổi đơn vị
 
 3.62. Dối ra mét.
 - a) [kim =... m;
@@ -2196,15 +2220,15 @@ k) 10 phút = ... giờ;
 3.69. Diền dấu so sánh
 - a) 3 giờ 15 phút
 
-## 3 giờ 15 phút
+- $3\text{ giờ } 15\text{ phút}$
 
-## 3 giờ 15 phút
+- $3\text{ giờ } 15\text{ phút}$
 
 - c) 3 giờ 15 phút
 
-## 3 giờ 15 phút
+- $3\text{ giờ } 15\text{ phút}$
 
-## 3 giờ 15 phút
+- $3\text{ giờ } 15\text{ phút}$
 
 tuần
 tuần
@@ -2225,11 +2249,11 @@ giờ;
 18 500 giây;
 11 000 giây:
 
-## 3 ngày;
+- $3\text{ ngày}$;
 
 một nửa của
 
-## 5 ngày;
+- $5\text{ ngày}$;
 
 48 giờ;
 b)
@@ -2238,13 +2262,13 @@ f)
 giờ
 giờ
 
-## 3 giờ 15 phút
+- $3\text{ giờ } 15\text{ phút}$
 
 13½ siờ
 
-## 8 giờ
+- $8\text{ giờ}$
 
-## 3 giờ 15 phút
+- $3\text{ giờ } 15\text{ phút}$
 
 200 phút;
 200 phút;
@@ -2263,7 +2287,7 @@ m = ... dm;
 - b) 1 km = ... m;
 km = ... m;
 
-## 3 kom =.. m.
+- $3\text{ km} = \dots\text{ m}$.
 
 Làm tương tự
 c)
@@ -2444,7 +2468,7 @@ giờ. Cho hai vòi đó cùng chảy vào bể rỗng. Hỏi:
 5 m. Hỏi mỗi buối bán được bao nhiêu mét vải?
 3.91. Một tiệm buôn sau khi bán lần thứ nhất
 
-## 5 cây vài, lần thứ hai 7 cây
+5 cây vải, lần thứ hai 7 cây
 
 vải thì còn lại 13 m. Hỏi cả cây vải lúc đầu dài mẫy mét?
 3.92. Một hình chữ nhật có chiều dài - m, chiều rộng - m. Tính chu vi và
@@ -2576,7 +2600,7 @@ Tìm hai số khi biết tổng và tỉ số của hai số đó
   3.131. Có tất cả 18 quả táo, cam và xoài. Số quả cam bằng - số quả táo. Số
   quả xoài gấp 3 lần số quả cam. Tính số quả táo.
 
-### 3.4 Tìm hai số khi biết hiệu và tỉ số của hai số
+### 3.4. Tìm hai số khi biết hiệu và tỉ số
 
 3.132. Hiệu của hại sồ là 62. Ti só của hai số đó là Tìm hại số đó.
 3.133. Tú có số nhãn vở bằng - số nhãn vở của Tín. Tính số nhẫn vở của
@@ -2633,7 +2657,8 @@ A =
 h)
 —
 14 =
-Số thập phân
+## 5. Số thập phân
+
 5.1. Dọc các số thập phân sau:
 - a) 2, 7; 0,9; 3,24; 0, 72; 5, 112; 0, 571;
 - b) 4,07; 0,09; 10,01; 12, 012; 3,0115; 0,009;
@@ -2874,7 +2899,7 @@ vốn. Tính tiền vốn của một cái quạt máy.
 cái bát còn lại người đó bán với giá 6000 đồng và được lãi 18% so với số tiền
 mua bát. Hỏi giá tiền mua mỗi tá bát là bao nhiêu đồng?
 
-## 6 Tìm giá trị của x
+## 6. Tìm giá trị của $x$
 
 6.1. Thay vào rồi tìm x biết:
 - a) x +5 = 12;
@@ -3284,31 +3309,34 @@ k) 7x + 11 = 88;
 - c) 3(2 + x) = 2(x - 5) + 1;
 - d) 7(x+1) -3 = 3(x-1) +3;
 
-## 8 Hình học
+## 8. Hình học
 
 8.1. Cho các hình sau:
-E
-N
-D
-B
-P
-H
+
+![Các góc không vuông và góc vuông](/assets/images/bon-phep-tinh-lop-3/hinh-8-1.png)
+
 - a) Hãy nêu tên đỉnh và cạnh của các góc không vuông.
-- b) Làm sao để kiếm tra góc PEQ có vuông hay không?
-8.2. Dúng ghi D, sai ghi S vào ô trống.
-Hình bên có:
-- a) 2 góc vuông
+- b) Làm sao để kiểm tra góc $PEQ$ có vuông hay không?
 
-## 4 góc vuông
+8.2. Đúng ghi Đ, sai ghi S vào ô trống. Hình bên có:
 
-## 6 góc vuông
+![Hình đếm số góc vuông và không vuông](/assets/images/bon-phep-tinh-lop-3/hinh-8-2.png)
+
+- a)
+  - [ ] 2 góc vuông
+  - [ ] 4 góc vuông
+  - [ ] 6 góc vuông
+- b)
+  - [ ] 3 góc không vuông
+  - [ ] 5 góc không vuông
+  - [ ] 8 góc không vuông
 
 8.3. Cho hình vẽ:
 - b) 3 góc không vuông
 
-## 5 góc không vuông
+- 5 góc không vuông
 
-## 8 góc không vuông
+- 8 góc không vuông
 
 - a) Hình trên có bao nhiêu góc vuông?
 - b) Dánh dấu góc vuông như hình vẽ.
@@ -3320,17 +3348,17 @@ cạnh của góc. Hãy vẽ cạnh còn lại để các góc này là góc vu�
 và kim phút là góc vuông?
 8.7. Viết số thích hợp vào chỗ chấm (theo mẫu):
 
-## 5 dm 4 cm = ... cm
+- $5\text{ dm } 4\text{ cm} = \dots\text{ cm}$
 
-## 7 dam 4 m = ... m
+- $7\text{ dam } 4\text{ m} = \dots\text{ m}$
 
-## 3 km 5 hm = ... dam
+- $3\text{ km } 5\text{ hm} = \dots\text{ dam}$
 
 5 m 4 cm = ... cm
 
-## 9 hm 5 dam 3 m = ... m
+- $9\text{ hm } 5\text{ dam } 3\text{ m} = \dots\text{ m}$
 
-## 4 dm 2 mm = ... mm
+- $4\text{ dm } 2\text{ mm} = \dots\text{ mm}$
 
 8.8. Chiều dài cạnh mỗi viên gạch lát nền là 20 cm. Hỏi dọc theo chiều dài
 của căn phòng 6 m có bao nhiêu viên gạch?
@@ -3415,37 +3443,34 @@ Có 5 điểm A, B, C, D, E mà không có 3 điểm nào thẳng hàng. Ta kẻ
 - b) 7 đường thẳng đi qua 5 điểm A, B, C, D, E.
 - c) 9 đường thẳng đi qua 5 điểm A, B, C, D, E.
 - d) 10 đường thẳng đi qua 5 điểm A, B, C, D, E.
-8.27. Dúng ghi D, sai ghi S vào chỗ trống:
+8.27. Đúng ghi Đ, sai ghi S vào chỗ trống:
+
 Hình bên có:
-M
-N
-P
-Q
-- a) 3 đoạn thẳng
 
-## 5 đoạn thẳng
+![Đoạn thẳng và tia trên đường thẳng xy](/assets/images/bon-phep-tinh-lop-3/hinh-8-27.png)
 
-## 6 đoạn thẳng
-
-- b) 1 đường thăng
-
-## 2 đường thẳng
-
-## 3 đường thắng
+- a)
+  - [ ] 3 đoạn thẳng
+  - [ ] 5 đoạn thẳng
+  - [ ] 6 đoạn thẳng
+- b)
+  - [ ] 1 đường thẳng
+  - [ ] 2 đường thẳng
+  - [ ] 3 đường thẳng
+- c)
+  - [ ] 2 tia
+  - [ ] 4 tia
+  - [ ] 6 tia
+  - [ ] 8 tia
 
 8.28. Hình dưới có:
-- a) Bao nhiêu cặp đoạn thắng song song?
-- b) Bao nhiêu cặp đoạn thắng vuông góc?
+
+![Hình vuông chia bốn và đường chéo](/assets/images/bon-phep-tinh-lop-3/hinh-8-28.png)
+
+- a) Bao nhiêu cặp đoạn thẳng song song?
+- b) Bao nhiêu cặp đoạn thẳng vuông góc?
 - c) Bao nhiêu hình tam giác?
-- c) 2 tia
 
-## 4 tia
-
-## 6 tia
-
-## 8 tia
-
-У
 8.29. Cho tam giác MNP vuông góc ở M (hình vẽ). Hãy kẻ thêm 2 đoạn thắng
 đề có 5 góc vuông và 5 hình tam giác.
 N
@@ -3517,35 +3542,22 @@ thực giữa trường Tiểu học và Ủy ban phường?
 1000 có hình vẽ khu đất hình bình hành
 với chiều cao 4 m, cạnh đáy 7 cm. Tính diện tích thực tế khu đất hình bình
 hành bằng mấy mét vuông?
-Hình diện tích
-9.1. Diền vào chỗ trống với a, b là chiều dài, chiều rộng của hình chữ nhật, K
-là chu vi và T là diện tích:
-a
-4cm
-10cm
-22 Cm
-3ст.
-5m
-0, 04dm
-z mm
-K
-3, 6dm
-И ст
-T
-3000 dm'
-20mm
-lờmm^2
+## 9. Hình diện tích
+
+9.1. Điền vào chỗ trống với $a, b$ là chiều dài, chiều rộng của hình chữ nhật, $K$ là chu vi và $T$ là diện tích:
+
+| Đại lượng | Hình 1 | Hình 2 | Hình 3 | Hình 4 | Hình 5 | Hình 6 | Hình 7 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $a$ | $4\text{ cm}$ | $10\text{ cm}$ | | | $\frac{3}{22}\text{ cm}$ | | $3\frac{11}{13}$ |
+| $b$ | $3\text{ cm}$ | | $5\text{ m}$ | $0{,}04\text{ dm}$ | | $2\frac{3}{4}\text{ mm}$ | |
+| $K$ | | $3{,}6\text{ dm}$ | | | $\frac{18}{11}\text{ cm}$ | | $8\frac{15}{16}$ |
+| $T$ | | | $3000\text{ dm}^2$ | $20\text{ mm}^2$ | | $\frac{89}{16}\text{ mm}^2$ | |
+
 9.2. Sắp xếp từ bé đến lớn theo độ lớn của chu vi, của diện tích:
-9.3. Sơ đỗ một khu vườn như trong hình. Tính diện tích khu vườn, biết tỉ lệ
-bản đồ là 1 : 400:
-2cm
-0,25cm 1.5cm
-Cây ăn quả
-Vườn hoa
-Lỏi đi
-Vườn rau
-Nhà kho
-Công
+9.3. Sơ đồ một khu vườn như trong hình. Tính diện tích khu vườn, biết tỉ lệ bản đồ là $1 : 400$:
+
+![Sơ đồ khu vườn theo tỉ lệ 1 : 400](/assets/images/bon-phep-tinh-lop-3/hinh-9-3.png)
+
 9.4. Chu vi và diện tích hình vuông thay đổi thế nào nếu cạnh của hình
 vuông:
 - a) Gấp 2 lần;
@@ -3655,36 +3667,19 @@ m
 8 m
 4,5 cm
 2, 4 dm
-6450 ст'
-500 mm₴
-4,8 dm'
-9.16. Diền vào chỗ trống trong bảng sau biết rằng a, b, c, d là độ dài các
-cạnh, m là độ dài đường cao, K là chu vi, T là diện tích hình thang.
-b
-d
-m
-a
-a
-8 cm
-13 m
-10 cm
-22 mm
-c
-6 ст
-1,5 cm
-8 m
-d
-8 cm
-0, 12 dm
-600 ст
-m
-7,6 cm
-1 ст
-50 dm
-K
-T
-2,81 cm₴
-3230 cm
+$6450\text{ cm}^2$
+$500\text{ mm}^2$
+$4{,}8\text{ dm}^2$
+9.16. Điền vào chỗ trống trong bảng sau biết rằng $a, b, c, d$ là độ dài các cạnh, $m$ là độ dài đường cao, $K$ là chu vi, $T$ là diện tích hình thang:
+
+![Hình thang có đáy a, c và chiều cao m](/assets/images/bon-phep-tinh-lop-3/hinh-9-16.png)
+
+| $a$ | $b$ | $c$ | $d$ | $m$ | $K$ | $T$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| $8\text{ cm}$ | $10\text{ cm}$ | $6\text{ cm}$ | $8\text{ cm}$ | $7{,}6\text{ cm}$ | | |
+| | $22\text{ mm}$ | $1{,}5\text{ cm}$ | $0{,}12\text{ dm}$ | $1\text{ cm}$ | | $2{,}81\text{ cm}^2$ |
+| $13\text{ m}$ | | $8\text{ m}$ | $600\text{ cm}$ | $50\text{ dm}$ | $3230\text{ cm}$ | |
+
 9.17. Tính diện tích các hình sau biết mỗi ô vuông là 1cm^2. Sau đó xếp theo
 thứ tự tăng dần:
 
