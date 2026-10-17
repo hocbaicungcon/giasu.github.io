@@ -19,14 +19,6 @@ BrSE (Kỹ sư cầu nối – Bridge Software Engineer) là chức danh chỉ x
 
 Mời bạn xem thêm [214 BỘ THỦ KANJI DÀNH CHO CÁC BẠN HỌC TIẾNG NHẬT](/bai-viet/214-bo-thu-kanji-danh-cho-cac-ban-hoc-tieng-nhat.html)
 
-[![Từ vựng tiếng Nhật cho BrSE 1](assets/images/tu-vung-tieng-nhat-cho-brse-SACH-CHU-HAN.jpeg)](https://shorten.asia/CwEUaUWW)
-
-[MUA NGAY](https://shorten.asia/CwEUaUWW)
-
-[![Từ vựng tiếng Nhật cho BrSE 2](assets/images/tu-vung-tieng-nhat-cho-brse-sach-kanji.jpeg)](https://shorten.asia/tKbQNsgH)
-
-[MUA NGAY](https://shorten.asia/tKbQNsgH)
-
 | Hán tự/Katakana | Cách đọc | Âm hán | Nghĩa | Ví dụ |
 | --- | --- | --- | --- | --- |
 | 集約 | しゅうやく | tập ước | tóm lại, thống nhất ý kiến |   |

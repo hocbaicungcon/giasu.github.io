@@ -15,8 +15,6 @@ grade: 11
 
 Bài toán xác định góc giữa đường thẳng và mặt phẳng là một dạng toán quan trọng của chương trình HHKG lớp 11. Bài toán này cùng với các bài toán tính góc giữa 2 mặt phẳng, khoảng cách từ điểm tới mặt phẳng đều sử dụng kiến thức về [đường thẳng vuông góc với mặt phẳng](/bai-viet/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang.html).
 
-[BỘ SÁCH HHKG GIÁ TỐT TRÊN SHOPEE](https://rentracks.vn/3CGELp)
-
 Xem thêm:
 
 - [Cách chứng minh đường thẳng vuông góc với mặt phẳng](/bai-viet/cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang.html)
@@ -24,8 +22,6 @@ Xem thêm:
 - [Cách tính góc giữa hai mặt phẳng trong không gian](/bai-viet/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian.html)
 
 - [Cách tính khoảng cách từ một điểm đến một mặt phẳng](/bai-viet/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang.html)
-
-- [38+ tài liệu hình học không gian 11 hay nhất](https://rentracks.vn/3CGELp)
 
 ## 1. Lý thuyết góc giữa đường thẳng và mặt phẳng
 

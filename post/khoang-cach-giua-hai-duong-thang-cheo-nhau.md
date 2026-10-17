@@ -119,8 +119,6 @@ $$
 d(A,(SCD))=AK=\frac{a}{\sqrt{2}}
 $$
 
-Nếu bài viết hữu ích, bạn có thể tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
-
 **Ví dụ 3.** [Đề Đại học Khối D năm 2008] Cho lăng trụ đứng tam giác $ABC.A’B’C’$ có đáy $ABC$ là tam giác vuông với $BA=BC=a$, cạnh bên $AA’=a\sqrt{2}.$ Gọi $M$ là trung điểm của $BC.$ Tính khoảng cách giữa hai đường thẳng $AM$ và $B’C.$
 
 ![Khối D năm 2008 Cho lang tru dung tam giac ABC](assets/images/khoang-cach-giua-hai-duong-thang-cheo-nhau-Cho-lang-tru-dung-tam-gia-ABC.jpg)

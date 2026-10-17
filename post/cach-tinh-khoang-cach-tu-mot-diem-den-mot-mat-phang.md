@@ -12,8 +12,6 @@ tags:
 grade: 11
 ---
 
-[BỘ SÁCH HHKG GIÁ TỐT TRÊN SHOPEE](https://rentracks.vn/3CGELp)
-
 Bài toán khoảng cách trong hình học không gian là một vấn đề quan trọng, thường xuất hiện ở các câu hỏi có mức độ vận dụng và vận dụng cao. Các bài toán tính khoảng cách trong không gian bao gồm:
 
 1. Khoảng cách từ một điểm tới một mặt phẳng;
@@ -25,8 +23,6 @@ Bài toán khoảng cách trong hình học không gian là một vấn đề qu
 4. [Khoảng cách giữa hai đường thẳng chéo nhau trong không gian.](/bai-viet/khoang-cach-giua-hai-duong-thang-cheo-nhau.html)
 
 Như vậy, 3 dạng toán đầu tiên đều quy về Cách tính khoảng cách từ một điểm đến một mặt phẳng, chính là nội dung của bài viết này.
-
-[BỘ SÁCH HHKG GIÁ TỐT TRÊN SHOPEE](https://rentracks.vn/3CGELp)
 
 Ngoài ra, các em cũng cần thành thạo 2 dạng toán liên quan đến góc trong không gian:
 
@@ -67,8 +63,6 @@ $$
 $$
 
  Mà $BC, AH$ là hai đường thẳng cắt nhau nằm trong mặt phẳng $(SBC)$, nên suy ra $AK$ vuông góc với $(SBC)$, hay $K$ là hình chiếu vuông góc của $A$ lên mặt phẳng $(SBC).$
-
-Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
 
 Dưới đây là hình minh họa trong các trường hợp đáy $ABC$ là tam giác vuông tại $A,$ vuông tại $B,$ vuông tại $C$, tam giác cân, tam giác đều…
 

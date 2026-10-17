@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 370" width="100%" height="auto" style="max-width:540px;display:block;margin:16px auto;">
+  <defs>
+    <linearGradient id="pGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0e7ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#c7d2fe" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="qGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffedd5" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fed7aa" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="hGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="hPrimeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fde047" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Upper Plane (P) -->
+  <polygon points="35,35 390,35 520,205 165,205" fill="url(#pGrad4)" stroke="#1e3a8a" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Plane P Corner Arc & Label -->
+  <path d="M 68,35 A 35,35 0 0,1 70,70" fill="none" stroke="#000" stroke-width="1.8"/>
+  <text x="56" y="65" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#000">P</text>
+
+  <!-- Lower Plane (Q) -->
+  <polygon points="165,205 520,205 405,345 50,345" fill="url(#qGrad4)" stroke="#1e3a8a" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Plane Q Corner Arc & Label -->
+  <path d="M 85,345 A 35,35 0 0,1 92,315" fill="none" stroke="#000" stroke-width="1.8"/>
+  <text x="70" y="340" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#000">Q</text>
+
+  <!-- Intersection line between P and Q -->
+  <line x1="165" y1="205" x2="520" y2="205" stroke="#1e3a8a" stroke-width="2.5"/>
+
+  <!-- Vertical projection lines (dashed blue) from each vertex of H to H' -->
+  <line x1="175" y1="95" x2="175" y2="255" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="260" y1="92" x2="260" y2="252" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="330" y1="140" x2="330" y2="288" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="250" y1="180" x2="250" y2="318" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6,4"/>
+  <line x1="160" y1="142" x2="160" y2="278" stroke="#1d4ed8" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Polygon (H) in Plane P -->
+  <polygon points="175,95 260,92 330,140 250,180 160,142" fill="url(#hGrad)" stroke="#1d4ed8" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Vertices of H -->
+  <circle cx="175" cy="95" r="4" fill="#dc2626"/>
+  <circle cx="260" cy="92" r="4" fill="#dc2626"/>
+  <circle cx="330" cy="140" r="4" fill="#dc2626"/>
+  <circle cx="250" cy="180" r="4" fill="#dc2626"/>
+  <circle cx="160" cy="142" r="4" fill="#dc2626"/>
+  <!-- Label (H) -->
+  <text x="225" y="145" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#000">(H)</text>
+
+  <!-- Projected Polygon (H') in Plane Q -->
+  <polygon points="175,255 260,252 330,288 250,318 160,278" fill="url(#hPrimeGrad)" stroke="#b45309" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Vertices of H' -->
+  <circle cx="175" cy="255" r="4" fill="#dc2626"/>
+  <circle cx="260" cy="252" r="4" fill="#dc2626"/>
+  <circle cx="330" cy="288" r="4" fill="#dc2626"/>
+  <circle cx="250" cy="318" r="4" fill="#dc2626"/>
+  <circle cx="160" cy="278" r="4" fill="#dc2626"/>
+  <!-- Label (H') -->
+  <text x="215" y="295" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#000">(H')</text>
+</svg>

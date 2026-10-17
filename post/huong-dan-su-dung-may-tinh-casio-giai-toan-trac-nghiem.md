@@ -17,8 +17,6 @@ grade: 12
 
 Đối với hình thức thi trắc nghiệm thì việc thành thạo cách sử dụng máy tính CASIO, VINACAL… sẽ giúp chúng ta tiết kiệm được kha khá thời gian. Đặc biệt là các dạng toán mà có thể sử dụng máy tính để thử tính đúng/sai của từng phương án. Tài liệu này tôi viết đã khá lâu, hi vọng vẫn giúp ích được cho thầy cô phần nào.
 
-[MUA MÁY TÍNH CASIO 580VNX GIÁ TỐT](https://rentracks.vn/T0KArl)
-
 ![hướng dẫn sử dụng máy tính casio giải toán trắc nghiệm](assets/images/huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem-o2-huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem_Page1-scaled.jpg)
 
 ![Cách sử dụng máy tính caiso](assets/images/huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem-o2-huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem_Page2-scaled.jpg)
@@ -26,8 +24,6 @@ grade: 12
 ![Hướng dẫn sử dụng máy tính CASIO giải toán trắc nghiệm 1](assets/images/huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem-o2-huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem_Page3-scaled.jpg)
 
 ![Hướng dẫn sử dụng máy tính CASIO giải toán trắc nghiệm 2](assets/images/huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem-o2-huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem_Page4-scaled.jpg)
-
-[MUA MÁY TÍNH CASIO 580VNX GIÁ TỐT](https://rentracks.vn/T0KArl)
 
 ![Hướng dẫn sử dụng máy tính CASIO giải toán trắc nghiệm 3](assets/images/huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem-o2-huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem_Page5-scaled.jpg)
 
@@ -62,7 +58,5 @@ Về những điểm mới, tính năng ưu việt, nổi trội của máy CASI
 https://www.youtube.com/watch?v=TYqS8uSQP30
 
 ### 3.2. Sách hướng dẫn sử dụng fx 570 VN Plus
-
-[MUA MÁY TÍNH CASIO 580VNX GIÁ TỐT](https://rentracks.vn/T0KArl)
 
 Mời thầy cô và các em học sinh tải tại đây [Hướng dẫn sử dụng máy tính CASIO fx-570VN Plus](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

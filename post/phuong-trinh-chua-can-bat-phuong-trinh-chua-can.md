@@ -27,8 +27,6 @@ Nguyên tắc chung để khử dấu căn thức là bình phương 2 vế củ
 
 Do đó, về bản chất, chúng ta lần lượt kiểm tra 2 trường hợp âm, và không âm của các biểu thức (thường là 1 vế của phương trình, bất phương trình đã cho).
 
-Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
-
 ## 2. Các dạng phương trình chứa căn, bất phương trình chứa căn cơ bản
 
 Có khoảng 4 dạng phương trình chứa căn, bất phương trình chứa căn cơ bản đó là

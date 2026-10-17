@@ -15,8 +15,6 @@ tags:
 
 Khối Rubik hay đơn giản là Rubik tiêu chuẩn có dạng khối lập phương, là một trò chơi giải đố trí tuệ được giáo sư người Hungary, Ernox Rubik phát minh vào năm 1974.
 
-[MUA RUBIK GIÁ TỐT](https://shope.ee/8erSnwmTXE)
-
 Rubik là một trong số những trò chơi được yêu thích nhất trên thế giới. Phiên bản tiêu chuẩn của khối rubik là khối 3×3. Từ khối Rubik tiêu chuẩn 3×3 hình lập phương, ngày nay Rubik được phát triển thêm nhiều biến thể khác nhau với nhiều hình dạng và kích cỡ để tăng độ khó cho trò chơi.
 
 Mời bạn tham khảo [cách giải rubik 3×3 đơn giản nhất](/bai-viet/cach-giai-rubik-3x3-don-gian-nhat.html)!

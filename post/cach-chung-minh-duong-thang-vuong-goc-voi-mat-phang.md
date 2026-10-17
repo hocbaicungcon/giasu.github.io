@@ -12,8 +12,6 @@ tags:
 grade: 11
 ---
 
-[BỘ SÁCH HHKG GIÁ TỐT TRÊN SHOPEE](https://rentracks.vn/3CGELp)
-
 Cách chứng minh đường thẳng vuông góc với mặt phẳng, cách dựng một đường thẳng vuông góc với một mặt phẳng cho trước là bài toán quyết định của hình học không gian lớp 11, và cũng là cơ sở để giải quyết bài toán tính thể tích khối đa diện ở lớp 12.
 
 Xem thêm [Cách tìm giao tuyến của hai mặt phẳng](/bai-viet/cach-tim-giao-tuyen-cua-hai-mat-phang.html)
