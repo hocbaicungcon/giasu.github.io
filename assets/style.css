@@ -1,6 +1,5 @@
 /* credit: giasu.ai.vn */
 /* Website styles: edit each component at its source, not with end-of-file overrides.
- * Navigation and result screens share tokens defined in style-game-controls.css.
  * All modules live beside this entry point so image and font URLs stay unchanged.
  */
 @import url("style-foundation.css");
@@ -9,8 +8,6 @@
 @import url("style-lessons.css");
 @import url("style-exams.css");
 @import url("style-entertainment.css");
-@import url("style-games.css");
-@import url("style-game-controls.css");
 
 @import url("style-share.css");
 
