@@ -1,6 +1,6 @@
 ---
 title: HỆ THỨC LƯỢNG TRONG TAM GIÁC LỚP 10
-description: 'Trong một tam giác $ABC$ thì chúng ta thường kí hiệu:'
+description: 'Tóm tắt kiến thức hệ thức lượng trong tam giác Lớp 10: định lý Cosin, định lý Sin, công thức tính diện tích tam giác và bài tập áp dụng.'
 category: Toán học
 type: Bài học
 date: '2024-10-02'

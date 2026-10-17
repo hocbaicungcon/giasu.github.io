@@ -29,31 +29,6 @@ grade: 7
 
 ---
 
-## Mục lục
-
-1. [Chương 1: Số học và Đại số](#chương-1-số-học-và-đại-số)
-   - 1.1 [Tỉ lệ thức](#11-tỉ-lệ-thức)
-     - 1.1.1 [Bài toán có nội dung tính toán](#111-bài-toán-có-nội-dung-tính-toán)
-     - 1.1.2 [Bài toán có nội dung chứng minh](#112-bài-toán-có-nội-dung-chứng-minh)
-   - 1.2 [Hàm số và đồ thị](#12-hàm-số-và-đồ-thị)
-     - 1.2.1 [Tỉ lệ thuận và tỉ lệ nghịch](#121-tỉ-lệ-thuận-và-tỉ-lệ-nghịch)
-     - 1.2.2 [Hàm số và đồ thị của hàm số](#122-hàm-số-và-đồ-thị-của-hàm-số)
-   - 1.3 [Biểu thức đại số](#13-biểu-thức-đại-số)
-2. [Chương 2: Hình học](#chương-2-hình-học)
-   - 2.1 [Quan hệ vuông góc và quan hệ song song](#21-quan-hệ-vuông-góc-và-quan-hệ-song-song)
-   - 2.2 [Các trường hợp bằng nhau của hai tam giác](#22-các-trường-hợp-bằng-nhau-của-hai-tam-giác)
-   - 2.3 [Các bài toán dựng hình cơ bản](#23-các-bài-toán-dựng-hình-cơ-bản)
-   - 2.4 [Quan hệ giữa các yếu tố trong tam giác](#24-quan-hệ-giữa-các-yếu-tố-trong-tam-giác)
-   - 2.5 [Quan hệ các đường thẳng đồng quy trong tam giác](#25-quan-hệ-các-đường-thẳng-đồng-quy-trong-tam-giác)
-     - 2.5.1 [Ba đường trung tuyến của tam giác](#251-ba-đường-trung-tuyến-của-tam-giác)
-     - 2.5.2 [Ba đường phân giác của tam giác](#252-ba-đường-phân-giác-của-tam-giác)
-     - 2.5.3 [Ba đường trung trực của tam giác](#253-ba-đường-trung-trực-của-tam-giác)
-     - 2.5.4 [Ba đường cao của tam giác](#254-ba-đường-cao-của-tam-giác)
-   - 2.6 [Các bài toán có nội dung tính góc](#26-các-bài-toán-có-nội-dung-tính-góc)
-3. [Chương 3: Lời giải một vài bài chọn lọc](#chương-3-lời-giải-một-vài-bài-chọn-lọc)
-
----
-
 ## Chương 1: Số học và Đại số
 
 ### 1.1 Tỉ lệ thức

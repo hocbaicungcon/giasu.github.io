@@ -60,32 +60,6 @@ sigmathsgroup@gmail.com
 Diện thoại: 01633749151
 ---
 
-## Mục lục tuyển tập
-
-1. **[1. Số tự nhiên](#1-số-tự-nhiên)** (Bài 1 – 54)
-2. **[2. Số nguyên](#2-số-nguyên)** (Bài 55 – 90)
-3. **[3. Phân số](#3-phân-số)** (Bài 91 – 212)
-4. **[4. Số học](#4-số-học)** (Bài 213 – 230)
-5. **[5. Bài toán tỉ lệ, chuyển động đều, số đo thời gian](#5-bài-toán-tỉ-lệ-chuyển-động-đều-số-đo-thời-gian)** (Bài 231 – 288)
-   - 5.1 Đại lượng tỉ lệ thuận, tỉ lệ nghịch, tỉ lệ kép
-   - 5.2 Số đo thời gian, toán chuyển động đều
-   - 5.3 Một số dạng bài toán điển hình
-6. **[6. Hình học](#6-hình-học)** (Bài 289 – 385)
-   - 6.1 Tính diện tích
-   - 6.2 Tính góc
-   - 6.3 Khối lập phương
-7. **[7. Các phương pháp suy luận](#7-các-phương-pháp-suy-luận)** (Bài 386 – 508)
-   - 7.1 Tổ hợp, chỉnh hợp đơn giản
-   - 7.2 Bi đỏ bi xanh
-   - 7.3 Những bài toán logic - đối thoại
-   - 7.4 Biểu đồ Ven - logic
-   - 7.5 Nguyên lý Dirichlet
-   - 7.6 Hình học tổ hợp
-   - 7.7 Trò chơi - Games
-8. **[8. Một số dạng toán khác](#8-một-số-dạng-toán-khác)** (Bài 509 – 540)
-
----
-
 ## 1. Số tự nhiên
 
 **Bài 1.** Cho tập hợp D = {0;1;2;3; · ; 20j.
