@@ -20,14 +20,6 @@ Tiếng Nhật hiện nay sử dụng ba loại chữ là Kanji (chữ Hán), Hi
 
 Chữ viết không phải là thứ có vai trò chính để ghi lại phát âm, mà vai trò chính là để đọc. Đọc chữ kanji (hay chữ Hán) sẽ nắm bắt được ý nghĩa nhanh hơn nhiều so với đọc chữ la tinh.
 
-[![Vì sao tiếng Nhật dùng 3 loại chữ Kanji, Hiragana, Katakana? 1](assets/images/vi-sao-tieng-nhat-dung-3-loai-chu-kanji-hiragana-katakana-SACH-CHU-HAN.jpeg)](https://shorten.asia/CwEUaUWW)
-
-[MUA NGAY](https://shorten.asia/CwEUaUWW)
-
-[![Vì sao tiếng Nhật dùng 3 loại chữ Kanji, Hiragana, Katakana? 2](assets/images/vi-sao-tieng-nhat-dung-3-loai-chu-kanji-hiragana-katakana-sach-kanji.jpeg)](https://shorten.asia/tKbQNsgH)
-
-[MUA NGAY](https://shorten.asia/tKbQNsgH)
-
 Trong các ngôn ngữ châu Âu, tiếng Anh và tiếng Pháp không phải là ngôn ngữ ký âm (ghi lại đúng cách phát âm). Một từ tiếng Anh hay tiếng Pháp nếu bạn muốn biết cách đọc bạn phải tra từ điển (Ví dụ Monica phải đọc là Mo-nơ-cờ với trọng âm là “Mo”). Thế kỷ 18 đã có phong trào đòi cải cách tiếng Anh và tiếng Pháp sao cho cách viết đúng với cách phát âm, nhưng đều thất bại. Tương tự với tiếng Trung, người ta cố cải cách bằng cách bỏ chữ tượng hình và thay vào ký âm la tinh nhưng phần lớn độc giả đọc đều không hiểu hoặc với tốc độ rất chậm.
 
 Tiếng Việt là ngoại lệ vì phát âm tiếng Việt phong phú hơn nên ít gây hiểu lầm khi đọc hơn, tuy nhiên do không biết mặt chữ Hán nên nhiều người không giỏi tiếng Việt cũng như không biết nguồn gốc các từ trong tiếng Việt. Nếu bạn biết chữ Hán thì các bạn có thể thấy những từ như “quần”, “áo” cũng là chữ gốc hán, hay chữ “cắt” từ chữ “cát”, “thêm” là từ chữ “thiêm” (thêm vào) mà ra.

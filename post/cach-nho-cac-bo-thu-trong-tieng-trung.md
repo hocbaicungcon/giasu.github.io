@@ -20,14 +20,6 @@ Bắt đầu học tiếng Trung hoặc Nhật, Hàn thì việc học các bộ
 
 Bộ thủ (首都) là một yếu tố quan trọng của Hán tự, giúp việc tra cứu Hán tự tương đối dễ dàng vì nhiều chữ được gom thành nhóm có chung một bộ thủ. Từ đời Hán, Hứa Thận 許慎 phân loại chữ Hán thành 540 nhóm hay còn gọi là 540 bộ.
 
-[![Cách nhớ các bộ thủ trong tiếng Trung 1](assets/images/cach-nho-cac-bo-thu-trong-tieng-trung-SACH-CHU-HAN.jpeg)](https://shorten.asia/CwEUaUWW)
-
-[MUA NGAY](https://shorten.asia/CwEUaUWW)
-
-[![Cách nhớ các bộ thủ trong tiếng Trung 2](assets/images/cach-nho-cac-bo-thu-trong-tieng-trung-sach-kanji.jpeg)](https://shorten.asia/tKbQNsgH)
-
-[MUA NGAY](https://shorten.asia/tKbQNsgH)
-
 Thí dụ, những chữ 論 , 謂 , 語 đều liên quan tới ngôn ngữ, lời nói, đàm luận v.v… nên được xếp chung vào một bộ, lấy bộ phận 言 (ngôn) làm bộ thủ (cũng gọi là «thiên bàng» 偏旁).
 
 Đến đời Minh, Mai Ưng Tộ 梅膺祚 xếp gọn lại còn 214 bộ thủ và được dùng làm tiêu chuẩn cho đến nay.

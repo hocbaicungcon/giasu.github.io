@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="100%" height="auto" style="max-width:520px;display:block;margin:16px auto;">
+  <defs>
+    <!-- 3D Plane P (Left, Yellow) -->
+    <linearGradient id="pGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef9c3" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0.9"/>
+    </linearGradient>
+    <!-- 3D Plane Q (Right, Coral) -->
+    <linearGradient id="qGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fee2e2" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fca5a5" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Plane (P) -->
+  <polygon points="100,105 295,45 295,335 100,395" fill="url(#pGrad)" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Plane P Corner Arc & Label -->
+  <path d="M 100,365 A 30,30 0 0,0 130,386" fill="none" stroke="#000" stroke-width="1.8"/>
+  <text x="110" y="380" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">P</text>
+
+  <!-- Plane (Q) -->
+  <polygon points="295,45 435,135 435,415 295,335" fill="url(#qGrad)" stroke="#15803d" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Plane Q Corner Arc & Label -->
+  <path d="M 405,400 A 30,30 0 0,0 435,385" fill="none" stroke="#000" stroke-width="1.8"/>
+  <text x="412" y="405" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">Q</text>
+
+  <!-- Spine / Intersection -->
+  <line x1="295" y1="45" x2="295" y2="335" stroke="#15803d" stroke-width="2.5"/>
+
+  <!-- Line b perpendicular to plane Q (drawn with break behind line a) -->
+  <!-- Part of b entering from behind -->
+  <line x1="220" y1="262" x2="260" y2="238" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Main part of b passing foot and going into Q -->
+  <line x1="275" y1="229" x2="370" y2="175" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Foot of b on plane Q and Right Angle Symbol for b perp Q -->
+  <path d="M 355,166 L 366,160 L 372,174" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Label b -->
+  <text x="325" y="215" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#000">b</text>
+
+  <!-- Line a perpendicular to plane P -->
+  <line x1="145" y1="205" x2="260" y2="345" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right Angle Symbol for a perp P at foot (185, 255) -->
+  <path d="M 148,220 L 165,232 L 182,218" fill="none" stroke="#1e3a8a" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Label a -->
+  <text x="185" y="215" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#000">a</text>
+</svg>

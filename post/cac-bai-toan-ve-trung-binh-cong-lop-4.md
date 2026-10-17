@@ -26,10 +26,6 @@ Muốn tìm **trung bình cộng** của hai hay nhiều số, ta **tính tổng
 
 - Nếu bài toán cho tổng các số hạng và trung bình cộng thì Số các số hạng = Tổng các số chia Trung bình cộng
 
-Mời ba mẹ đặt mua sách tham khảo lớp 4 để học cùng bé tốt nhất → [https://shope.ee/fpBDHjhT6](https://shope.ee/fpBDHjhT6)
-
-[![CÁC BÀI TOÁN VỀ TRUNG BÌNH CỘNG LỚP 4 2](assets/images/cac-bai-toan-ve-trung-binh-cong-lop-4-image-2.png)](https://shope.ee/fpBDHjhT6)
-
 **Ví dụ 1.** Tìm trung bình cộng của hai số $1$ và $17.$
 
 **Hướng dẫn.
@@ -102,8 +98,6 @@ Mời Quý Thầy Cô và các em học sinh xem thêm các dạng toán quan tr
 ### c. Tìm trung bình cộng của các số cách đều
 
 Để làm được các bài tập dạng này, các em học sinh cần xem thêm về dãy số cách đều trong bài [Chuyên đề các dạng toán về dãy số toán lớp 4](/bai-viet/cac-dang-toan-ve-day-so-toan-lop-4.html)
-
-Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
 
 **Ví dụ.** Tính trung bình cộng của các số trong dãy số: $3,6,9,…, 105.$
 

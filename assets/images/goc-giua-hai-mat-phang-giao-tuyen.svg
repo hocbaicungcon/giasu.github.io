@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 450" width="100%" height="auto" style="max-width:540px;display:block;margin:16px auto;">
+  <defs>
+    <linearGradient id="pGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fef9c3" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="qGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fee2e2" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fca5a5" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="rGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bbf7d0" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#86efac" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Upper vertical axis Delta behind R -->
+  <line x1="275" y1="45" x2="275" y2="225" stroke="#1d4ed8" stroke-width="2.8"/>
+
+  <!-- Upper half of Plane P (above R) -->
+  <polygon points="105,160 275,100 275,225 105,225" fill="url(#pGrad2)" stroke="#15803d" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Upper half of Plane Q (above R) -->
+  <polygon points="275,100 390,170 390,225 275,225" fill="url(#qGrad2)" stroke="#15803d" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Plane (R) hidden back boundary (dashed) -->
+  <line x1="135" y1="225" x2="390" y2="225" stroke="#16a34a" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Plane (R) polygon -->
+  <polygon points="50,315 135,225 500,225 415,315" fill="url(#rGrad)" stroke="#16a34a" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Corner Arc & Label for R -->
+  <path d="M 465,225 A 35,35 0 0,1 475,252" fill="none" stroke="#000" stroke-width="1.8"/>
+  <text x="473" y="245" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">R</text>
+
+  <!-- Intersection line a: on Plane P and Plane R -->
+  <line x1="180" y1="262" x2="275" y2="225" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round"/>
+  <text x="180" y="250" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">a</text>
+
+  <!-- Intersection line b: on Plane Q and Plane R -->
+  <line x1="275" y1="225" x2="350" y2="268" stroke="#1e3a8a" stroke-width="3" stroke-linecap="round"/>
+  <text x="345" y="255" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">b</text>
+
+  <!-- Angle arc between line a and line b -->
+  <path d="M 256,233 A 22,22 0 0,0 292,235" fill="none" stroke="#000" stroke-width="2"/>
+
+  <!-- Lower half of Plane P (below R) -->
+  <polygon points="105,225 275,225 275,370 105,405" fill="url(#pGrad2)" fill-opacity="0.75" stroke="#15803d" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Plane P Corner Arc & Label -->
+  <path d="M 105,380 A 30,30 0 0,0 135,398" fill="none" stroke="#000" stroke-width="1.8"/>
+  <text x="115" y="395" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">P</text>
+
+  <!-- Lower half of Plane Q (below R) -->
+  <polygon points="275,225 390,225 390,420 275,370" fill="url(#qGrad2)" fill-opacity="0.75" stroke="#15803d" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Plane Q Corner Arc & Label -->
+  <path d="M 360,405 A 30,30 0 0,0 390,390" fill="none" stroke="#000" stroke-width="1.8"/>
+  <text x="368" y="410" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="20" fill="#000">Q</text>
+
+  <!-- Lower vertical axis Delta extending downwards -->
+  <line x1="275" y1="225" x2="275" y2="425" stroke="#1d4ed8" stroke-width="2.8"/>
+  <text x="286" y="395" font-family="'STIX Two Text', serif" font-size="22" font-weight="700" fill="#000">Δ</text>
+</svg>

@@ -15,8 +15,6 @@ grade: 10
 
 Từ [định lí về dấu tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html) chúng ta có thể giải được các phương trình, bất phương trình tích, [phương trình chứa căn, giải bất phương trình chứa căn](/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html). Đồng thời, từ đó có thể suy ra cách giải bài toán tìm điều kiện của tham số để tam thức bậc 2 (bất phương trình bậc hai) luôn dương, luôn âm với mọi $x$ thuộc $\mathbb{R}$, tìm điều kiện để bất phương trình nghiệm đúng với mọi số thực $x$, tìm điều kiện để bất phương trình vô nghiệm… Đây là một dạng toán quan trọng, xuyên suốt chương trình Đại số và Giải tích ở cấp THPT.
 
-Nếu bài viết hữu ích, bạn hãy tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
-
 Để hiểu về các dạng toán tìm điều kiện để phương trình luôn đúng, vô nghiệm… chúng ta cần thành thạo các dạng bài [Lý thuyết và bài tập dấu tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html).
 
 **✅Xem thêm [ĐỀ CƯƠNG HỌC KÌ 2 TOÁN 10](/bai-viet/de-cuong-hoc-ki-2-toan-10.html)** 

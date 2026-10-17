@@ -12,8 +12,6 @@ tags:
 grade: 11
 ---
 
-[BỘ SÁCH HHKG GIÁ TỐT TRÊN SHOPEE](https://rentracks.vn/3CGELp)
-
 Bài toán xác định góc giữa hai mặt phẳng trong không gian là một dạng toán quan trọng xuất hiện trong các đề thi THPTQG, thi học kì 2 lớp 11. Ngoài tính góc giữa 2 mặt phẳng thì các em cần thành thạo [Cách tính góc giữa đường thẳng và mặt phẳng](/bai-viet/cach-tinh-goc-giua-duong-thang-va-mat-phang-lop-11.html).
 
 Một số dạng toán hình học không gian quan trọng mà các em có thể ôn tập:
@@ -34,13 +32,11 @@ Nếu hai mặt phẳng song song hoặc trùng nhau thì góc giữa chúng b�
 
 **Bài toán.** Xác định góc giữa hai mặt phẳng $(P)$ và $(Q)$ trong không gian.
 
-[BỘ SÁCH HHKG GIÁ TỐT TRÊN SHOPEE](https://rentracks.vn/3CGELp)
-
 ### 1.1. Sử dụng định nghĩa góc giữa hai mặt phẳng trong không gian.
 
 Tìm hai đường thẳng $a$ và $b$ lần lượt vuông góc với hai mặt phẳng $(P)$ và $(Q).$ Góc giữa hai mặt phẳng $(P)$ và $(Q)$ chính bằng góc giữa hai đường thẳng $a$ và $b.$
 
-![định nghĩa góc giữa hai mặt phẳng trong không gian](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-định-nghĩa-góc-giữa-hai-mặt-phẳng-trong-không-gian.jpg)
+![định nghĩa góc giữa hai mặt phẳng trong không gian](assets/images/goc-giua-hai-mat-phang-dinh-nghia.svg)
 
 Vì chúng ta được quyền lựa chọn các đường thẳng $a$ và $b$ nên ta thường chọn sao cho hai đường thẳng này cắt nhau, để việc tính góc giữa chúng dễ dàng hơn.
 
@@ -54,29 +50,27 @@ Vì chúng ta được quyền lựa chọn các đường thẳng $a$ và $b$ n
 
 - Tính góc giữa hai đường thẳng $a$ và $b$, đây chính là góc giữa hai mặt phẳng $(P)$ và $(Q).$
 
-![Phương pháp xác định góc giữa hai mặt phẳng trong không gian Cách dựng góc giữa 2 mp trong kg](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-Phương-pháp-xác-định-góc-giữa-hai-mặt-phẳng-trong-không-gian.jpg)
+![Phương pháp xác định góc giữa hai mặt phẳng trong không gian Cách dựng góc giữa 2 mp trong kg](assets/images/goc-giua-hai-mat-phang-giao-tuyen.svg)
 
 **Nhận xét.** Thay vì tìm một mặt phẳng $(R)$ vuông góc với giao tuyến $\Delta$, ta có thể đi tìm một điểm $I$ nào đó trên $\Delta.$ Sau đó, từ điểm $I$ này lần lượt dựng hai đường thẳng $a$ và $b$ nằm trong từng mặt phẳng rồi tính góc giữa chúng.
 
-![Cách xác định góc giữa hai mặt phẳng cắt nhau trong không gian](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-Cách-xác-định-góc-giữa-hai-mặt-phẳng-cắt-nhau-trong-không-gian.jpg)
+![Cách xác định góc giữa hai mặt phẳng cắt nhau trong không gian](assets/images/goc-giua-hai-mat-phang-cat-nhau.svg)
 
 ### 1.3. Tính góc giữa 2 mp bằng công thức diện tích hình chiếu
 
 Giả sử góc giữa hai mặt phẳng $(P)$ và $(Q)$ bằng $\varphi.$ Lấy trong mặt phẳng $(P)$ một đa giác $(H)$ có diện tích $S$, hình chiếu vuông góc của đa giác $(H)$ lên mặt phẳng $(Q)$ là đa giác $(H’)$ có diện tích $S’.$ Khi đó ta luôn có công thức
 
 $$
-S’=S\cos\varphi.
+S'=S\cos\varphi.
 $$
 
-![tính góc giữa hai mặt phẳng bằng công thức diện tích hình chiếu](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-công-thức-diện-tích-hình-chiếu.jpg)
+![tính góc giữa hai mặt phẳng bằng công thức diện tích hình chiếu](assets/images/goc-giua-hai-mat-phang-dien-tich-hinh-chieu.svg)
 
 ## 2. Ví dụ tính góc giữa 2 mặt phẳng trong không gian
 
-Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
-
 **Ví dụ 1.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a.$ Cạnh $SA=a\sqrt{3}$ và vuông góc với đáy. Tính góc giữa hai mặt phẳng $(SBC)$ và $(ABCD),$ góc giữa mặt phẳng $(SBD)$ và mặt phẳng $(ABCD).$
 
-![Hình chóp S.ABCD đáy là hình vuông SA vuông góc với đáy tính góc (SBD) và (ABCD)](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-Hình-chóp-S.ABCD-đáy-là-hình-vuông-SA-vuông-góc-với-đáy-tính-góc-SBD-và-ABCD.jpg)
+![Hình chóp S.ABCD đáy là hình vuông SA vuông góc với đáy tính góc (SBD) và (ABCD)](assets/images/goc-giua-hai-mat-phang-hinh-chop-s-abcd-1.svg)
 
 **Hướng dẫn.** Để tính góc giữa hai mặt phẳng $(SBC)$ và $(ABCD)$, chúng ta sử dụng cách thứ 2.
 
@@ -93,15 +87,13 @@ Cuối cùng, chúng ta đi tính góc giữa hai đường thẳng $AB$ và $SB
 
 Để tính góc giữa hai mặt phẳng $(SBD)$ và $(ABCD)$, các em hãy thực hiện đúng các bước như trên. Gợi ý, góc giữa hai mặt phẳng này chính bằng góc $SOA.$
 
-Nếu thấy bài viết hữu ích, bạn có thể ủng hộ chúng tôi bằng cách bấm vào các banner quảng cáo. Xin cảm ơn.
-
 **Ví dụ 2.** Cho hình chóp $S.ABC,$ có đáy $ABC$ là tam giác vuông cân với $BA = BC = a$; cạnh $SA$ vuông góc với đáy và $SA = a.$ Gọi $E, F$ lần lượt là trung điểm của các cạnh $AB$ và $AC.$
 
 1. Tính góc giữa hai mặt phẳng $(ABC)$ và $(SBC).$
 2. Tính góc giữa hai mặt phẳng $(SEF)$ và $(SBC).$
 3. Tính góc giữa hai mặt phẳng $(SAC)$ và $(SBC).$
 
-![Hình chóp S.ABC đáy là tam giác vuông cân tại B](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-Hình-chóp-S.ABC-đáy-là-tam-giác-vuông-cân-tại-B.jpg)
+![Hình chóp S.ABC đáy là tam giác vuông cân tại B](assets/images/goc-giua-hai-mat-phang-hinh-chop-s-abc.svg)
 
 **Hướng dẫn.**
 
@@ -131,7 +123,7 @@ Nếu vẫn sử dụng cách dựng mặt phẳng vuông góc với giao tuyế
 
 **Ví dụ 3.** Cho hình chóp $S.ABCD$ có đáy là hình vuông $ABCD$ cạnh bằng $a$, tâm của đáy là điểm $O.$ Cạnh bên $SA$ vuông góc với đáy $(ABCD).$ Tính độ dài cạnh $SA$ theo $a$ để số đo của góc giữa hai mặt phẳng $(SCB)$ và $(SCD)$ bằng $60^\circ.$
 
-![Hình chóp S.ABCD đáy là hình vuông SA vuông góc với đáy](assets/images/cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian-Hình-chóp-S.ABCD-đáy-là-hình-vuông-SA-vuông-góc-với-đáy.jpg)
+![Hình chóp S.ABCD đáy là hình vuông SA vuông góc với đáy](assets/images/goc-giua-hai-mat-phang-hinh-chop-s-abcd-2.svg)
 
 **Hướng dẫn.** Dễ thấy giao tuyến của hai mặt phẳng $(SCB)$ và $(SCD)$ là đường thẳng $SC.$
 Bây giờ, chúng ta cần tìm một mặt phẳng vuông góc với $SC.$ Trong tam giác $SBC$ kẻ đường cao $BH$ xuống cạnh $SC$ thì chứng minh được $DH$ cũng là đường cao của tam giác $SCD.$
@@ -140,7 +132,7 @@ Suy ra $SC$ vuông góc với mặt phẳng $BHD$ và góc giữa hai mặt ph�
 
 - $\left((SCB),(SCD)\right) =\widehat{BHD}$ tức là $\widehat{BHD}= 60^\circ$
 
-- $\left((SCB),(SCD)\right)=180^\circ – \widehat{BHD}$ tức là $\widehat{BHD}= 120^\circ$
+- $\left((SCB),(SCD)\right)=180^\circ - \widehat{BHD}$ tức là $\widehat{BHD}= 120^\circ$
 
 Lần lượt xét hai trường hợp này, thấy trường hợp $\widehat{BHD}= 120^\circ$ thỏa mãn yêu cầu và tìm được đáp số $SA = a.$
 

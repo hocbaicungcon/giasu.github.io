@@ -16,8 +16,6 @@ grade: 10
 
 Hướng dẫn cách tìm các hệ số $a,b,c$ của hàm số hậc hai $y=ax^2+bx+c$ bằng máy tính biết parabol đi qua 3 điểm có tọa độ cụ thể cho trước.
 
-[MUA MÁY TÍNH CASIO 580VNX GIÁ TỐT](https://rentracks.vn/T0KArl)
-
 Xem thêm: [Đề thi học kì 1 Toán 10 Xuân Trường B năm 2020](/bai-viet/de-thi-hoc-ki-1-toan-10-xuan-truong-b-nam-2020.html)
 
 ## Phương pháp xác định hệ số hàm số bậc 2 bằng máy tính

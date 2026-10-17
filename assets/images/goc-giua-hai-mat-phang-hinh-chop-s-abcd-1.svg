@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 430" width="100%" height="auto" style="max-width:540px;display:block;margin:16px auto;">
+  <!-- Apex S: (170, 50) -->
+  <!-- Base vertices: A(170, 290), B(80, 370), C(360, 370), D(450, 290) -->
+  <!-- Center O: intersection of AC and BD at (265, 330) -->
+
+  <!-- Dashed edges of pyramid: SA, AB, AD -->
+  <line x1="170" y1="50" x2="170" y2="290" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="7,5"/>
+  <line x1="170" y1="290" x2="80" y2="370" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="7,5"/>
+  <line x1="170" y1="290" x2="450" y2="290" stroke="#6366f1" stroke-width="2.5" stroke-dasharray="7,5"/>
+
+  <!-- Solid base edges: BC, CD -->
+  <line x1="80" y1="370" x2="360" y2="370" stroke="#6366f1" stroke-width="2.8"/>
+  <line x1="360" y1="370" x2="450" y2="290" stroke="#6366f1" stroke-width="2.8"/>
+
+  <!-- Red dashed diagonals: AC and BD -->
+  <line x1="170" y1="290" x2="360" y2="370" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="6,4"/>
+  <line x1="80" y1="370" x2="450" y2="290" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="6,4"/>
+
+  <!-- Red dashed line SO -->
+  <line x1="170" y1="50" x2="265" y2="330" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="7,5"/>
+
+  <!-- Arc at O for angle SOA -->
+  <path d="M 252,324 A 18,18 0 0,1 258,309" fill="none" stroke="#000" stroke-width="2"/>
+
+  <!-- Solid lateral edges: SB, SC, SD -->
+  <line x1="170" y1="50" x2="80" y2="370" stroke="#6366f1" stroke-width="2.8"/>
+  <line x1="170" y1="50" x2="360" y2="370" stroke="#6366f1" stroke-width="2.8"/>
+  <line x1="170" y1="50" x2="450" y2="290" stroke="#6366f1" stroke-width="2.8"/>
+
+  <!-- Vertex Labels -->
+  <text x="155" y="42" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="24" fill="#1e3a8a">S</text>
+  <text x="150" y="315" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#1e3a8a">A</text>
+  <text x="56" y="390" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="24" fill="#1e3a8a">B</text>
+  <text x="360" y="395" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="24" fill="#1e3a8a">C</text>
+  <text x="458" y="295" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="24" fill="#1e3a8a">D</text>
+  <text x="260" y="358" font-family="'STIX Two Text', serif" font-style="italic" font-weight="700" font-size="22" fill="#1e3a8a">O</text>
+</svg>

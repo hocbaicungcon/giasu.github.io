@@ -14,15 +14,11 @@ tags:
 
 ## Rubik 2×2 là gì?
 
-Rubik 2×2 hay **Rubik bỏ túi** **(Pocket Cube)** được tạo ra bởi  **Lary Nichols** vào năm 1970. Giải thi đấu WCA cũng đưa Giải Rubik 2x2x2 vào thi đấu chính thức với Kết quả giải nhanh nhất thế giới chỉ dưới 2 giây.
-
-[![Hướng dẫn cách giải Rubik 2x2x2](assets/images/huong-dan-cach-giai-rubik-2x2x2-Rubik_2x2.webp)](https://shope.ee/8erSnwmTXE)
+![Hướng dẫn cách giải Rubik 2x2x2](assets/images/huong-dan-cach-giai-rubik-2x2x2-Rubik_2x2.webp)
 
 Rubik 2×2 đã truyền cảm hứng cho rất nhiều nhà sáng tạo và thiết kế trên thế giới để tạo ra thêm nhiều các phiên bản mới từ năm 1981 đến nay.
 
-[MUA RUBIK GIÁ TỐT](https://shope.ee/8erSnwmTXE)
-
-[![Hướng dẫn cách giải Rubik 2x2x2 1](assets/images/huong-dan-cach-giai-rubik-2x2x2-bien-the-Rubik_2x2.webp)](https://shope.ee/8erSnwmTXE)
+![Hướng dẫn cách giải Rubik 2x2x2 1](assets/images/huong-dan-cach-giai-rubik-2x2x2-bien-the-Rubik_2x2.webp)
 
 ## Quy tắc kí hiệu các mặt và cách xoay
 

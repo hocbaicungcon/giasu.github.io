@@ -80,8 +80,6 @@ $$
 
 Vậy phương trình đã cho có nghiệm duy nhất $x=2.$
 
-Nếu bài viết hữu ích, bạn có thể  tặng tôi 1 cốc cafe vào số tài khoản Agribank 3205215033513.  Xin cảm ơn!
-
 **Ví dụ 2.** Giải phương trình 
 
 $$

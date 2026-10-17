@@ -15,8 +15,6 @@ tags:
 
 Các Trò chơi [PowerPoint](/bai-viet/tai-lieu-huong-dan-powerpoint.html) dưới đây giúp cho giờ học trở nên sôi nổi, hào hứng hơn. Nhiều nghiên cứu chỉ ra rằng, các trò chơi trong lớp học nói chung và các trò chơi power point nói riêng khuyến khích sự cạnh tranh, thi đua giữa các học sinh, giữa các nhóm học sinh với nhau và làm giảm không khí căng thẳng của giờ học.
 
-[✅ KHÓA HỌC POWERPOINT TỪ A-Z CHỈ 199K](https://shope.ee/1AlfLyBVvl)
-
 - [Tổng hợp tài liệu hướng dẫn Powerpoint](/bai-viet/tai-lieu-huong-dan-powerpoint.html)
 
 - [Giáo trình powerpoint 2016 PDF](/bai-viet/giao-trinh-powerpoint-2016-pdf.html)

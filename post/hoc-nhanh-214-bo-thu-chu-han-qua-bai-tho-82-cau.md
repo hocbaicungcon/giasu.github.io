@@ -18,14 +18,6 @@ Nếu bạn mới học chữ Kanji, chúng tôi khuyên bạn thành thạo [50
 
 ![214 BỘ THỦ HÁN NGỮ, Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu](assets/images/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau-214-bo-thu-chu-han-632x365.png)
 
-[![Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu 1](assets/images/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau-SACH-CHU-HAN.jpeg)](https://shorten.asia/CwEUaUWW)
-
-[MUA NGAY](https://shorten.asia/CwEUaUWW)
-
-[![Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu 2](assets/images/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau-sach-kanji.jpeg)](https://shorten.asia/tKbQNsgH)
-
-[MUA NGAY](https://shorten.asia/tKbQNsgH)
-
 1. MỘC (木) – cây, THỦY (水) – nước, KIM (金) – vàng
 
 2. HỎA (火) – lửa, THỔ (土) – đất, NGUYỆT (月)- trăng, NHẬT (日) – trời
