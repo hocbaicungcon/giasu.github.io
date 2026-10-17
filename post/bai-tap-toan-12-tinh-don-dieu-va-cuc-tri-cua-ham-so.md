@@ -23,8 +23,9 @@ grade: 12
 ### 1. Tính đồng biến, nghịch biến của hàm số
 
 > **Định nghĩa:** Kí hiệu $K$ là khoảng; đoạn; nửa khoảng. Giả sử hàm số $y=f\left ( { x } \right.  )$ xác định trên $K$. Hàm số $y=f\left ( { x } \right.  )$ Gọi là đồng biến trên $K$ nếu $∀x_{ 1 } ,\,x_{ 2 } ∈K$ mà $x_{ 1 } < \,x_{ 2 }$ thì $f\left ( { x_{ 1 } } \right.  ) < f\left ( { x_{ 2 } } \right.  )$. Gọi là nghịch biến trên $K$ nếu $∀x_{ 1 } ,\,x_{ 2 } ∈K$ mà $x_{ 1 } < \,x_{ 2 }$ thì $f\left ( { x_{ 1 } } \right.  )>f\left ( { x_{ 2 } } \right.  )$.
+- Hàm số $y=f\left ( { x } \right.  )$ đồng biến trên $K$ thì đồ thị đi lên từ trái sang phải (Hình 1a).
 
-» Hàm số $y=f\left ( { x } \right.  )$ đồng biến trên $K$ thì đồ thị đi lên từ trái sang phải (Hình 1a).» Hàm số $y=f\left ( { x } \right.  )$ nghịch biến trên $K$ thì đồ thị đi xuống từ trái sang phải (Hình 1b).
+- Hàm số $y=f\left ( { x } \right.  )$ nghịch biến trên $K$ thì đồ thị đi xuống từ trái sang phải (Hình 1b).
 
 <p align="center"><img src="/assets/images/toan-12/c1_b1_image21.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -33,26 +34,30 @@ Hình 1aHình 1bChú ý
 ### 2. Tính đơn điệu của hàm số
 
 > **Định lý:** Cho hàm số $y=f\left ( { x } \right.  )$ có đạo hàm trên $K$. Nếu $f'\left ( { x } \right.  )>0$ với mọi $x$ thuộc $K$ thì hàm số $y=f\left ( { x } \right.  )$ đồng biến trên $K$. Nếu $f'\left ( { x } \right.  )>0$ với mọi $x$ thuộc $K$ thì hàm số $y=f\left ( { x } \right.  )$ nghịch biến trên $K$.
+- Định lí vẫn đúng trong trường hợp $f'\left ( { x } \right.  )=0$ tại một số hữu hạn điểm trong $K$.
 
-» Định lí vẫn đúng trong trường hợp $f'\left ( { x } \right.  )=0$ tại một số hữu hạn điểm trong $K$.» Nếu $f'\left ( { x } \right.  )=0$ với mọi $x∈K$ thì hàm số $f\left ( { x } \right.  )$ không đổi trên khoảng $K$. Chú ý
+- Nếu $f'\left ( { x } \right.  )=0$ với mọi $x∈K$ thì hàm số $f\left ( { x } \right.  )$ không đổi trên khoảng $K$. Chú ý
 
 ### 3. Khái niệm cực trị của hàm số
 
 > **Định nghĩa:** Cho hàm số $y=f\left ( { x } \right.  )$ xác định và liên tục trên khoảng $\left ( { a;b } \right.  )$ ($a$ có thể là $-∞,$ $b$ có thể là $+∞$) và điểm $x_{ 0 } ∈\left ( { a;b } \right.  )$.$∃\,h>0$ sao cho $f\left ( { x } \right.  ) < f\left ( { x_{ 0 } } \right.  )$ với mọi $x∈\left ( { x_{ 0 } -h;x_{ 0 } +h } \right.  )⊂\left ( { a;b } \right.  )$ và $x≠x_{ 0 }$ thì ta nói hàm số $f\left ( { x } \right.  )$ đạt cực đại tại $x_{ 0 }$.$∃\,h>0$ sao cho $f\left ( { x } \right.  )>f\left ( { x_{ 0 } } \right.  )$ với mọi $x∈\left ( { x_{ 0 } -h;x_{ 0 } +h } \right.  )⊂\left ( { a;b } \right.  )$ và $x≠x_{ 0 }$ thì ta nói hàm số $f\left ( { x } \right.  )$ đạt cực tiểu tại $x_{ 0 }$.
+- Hàm số $y=f\left ( { x } \right.  )$ đạt cực đại tại $x_{ 0 }$ thì $x_{ 0 }$ được gọi là điểm cực đại của hàm số $f\left ( { x } \right.  )$. Khi đó,$f\left ( { x_{ 0 } } \right.  )$ được gọi là giá trị cực đại của hàm số $f\left ( { x } \right.  )$ và kí hiệu là $f_{\text{CĐ}}$ hay $y_{\text{CĐ}}$. Điểm $M_{ 0 } \left ( { x_{ 0 } ;f\left ( { x_{ 0 } } \right.  ) } \right.  )$ được gọi là điểm cực đại của đồ thị hàm số.
 
-» Hàm số $y=f\left ( { x } \right.  )$ đạt cực đại tại $x_{ 0 }$ thì $x_{ 0 }$ được gọi là điểm cực đại của hàm số $f\left ( { x } \right.  )$. Khi đó,$f\left ( { x_{ 0 } } \right.  )$ được gọi là giá trị cực đại của hàm số $f\left ( { x } \right.  )$ và kí hiệu là $f_{\text{CĐ}}$ hay $y_{\text{CĐ}}$. Điểm $M_{ 0 } \left ( { x_{ 0 } ;f\left ( { x_{ 0 } } \right.  ) } \right.  )$ được gọi là điểm cực đại của đồ thị hàm số. » Hàm số $y=f\left ( { x } \right.  )$ đạt cực tiểu tại $x_{ 0 }$ thì $x_{ 0 }$ được gọi là điểm cực tiểu của hàm số $f\left ( { x } \right.  )$. Khi đó,$f\left ( { x_{ 0 } } \right.  )$ được gọi là giá trị cực tiểu của hàm số $f\left ( { x } \right.  )$ và kí hiệu là $f_{\text{CT}}$ hay $y_{\text{CT}}$. Điểm $M_{ 0 } \left ( { x_{ 0 } ;f\left ( { x_{ 0 } } \right.  ) } \right.  )$ được gọi là điểm cực tiểu của đồ thị hàm số.» Các điểm cực đại và điểm cực tiểu được gọi chung là điểm cực trị. Giá trị cực đại và giá trị cực tiểu được gọi chung là giá trị cực trị (cực trị) của hàm số. Chú ý
+- Hàm số $y=f\left ( { x } \right.  )$ đạt cực tiểu tại $x_{ 0 }$ thì $x_{ 0 }$ được gọi là điểm cực tiểu của hàm số $f\left ( { x } \right.  )$. Khi đó,$f\left ( { x_{ 0 } } \right.  )$ được gọi là giá trị cực tiểu của hàm số $f\left ( { x } \right.  )$ và kí hiệu là $f_{\text{CT}}$ hay $y_{\text{CT}}$. Điểm $M_{ 0 } \left ( { x_{ 0 } ;f\left ( { x_{ 0 } } \right.  ) } \right.  )$ được gọi là điểm cực tiểu của đồ thị hàm số.
+
+- Các điểm cực đại và điểm cực tiểu được gọi chung là điểm cực trị. Giá trị cực đại và giá trị cực tiểu được gọi chung là giá trị cực trị (cực trị) của hàm số. Chú ý
 
 ### 4. Cách tìm cực trị của hàm số
 
 > **Định lý:** Giả sử hàm số $y=f\left ( { x } \right.  )$ liên tục trên khoảng $\left ( { a;b } \right.  )$ chứa điểm $x_{ 0 }$ và có đạo hàm trên các khoảng $\left ( { a;x_{ 0 } } \right.  )$ và $\left ( { x_{ 0 } ;b } \right.  )$. Khi đó: Nếu $f'\left ( { x } \right.  ) < 0$ với mọi $x∈\left ( { a;x_{ 0 } } \right.  )$ và $f'\left ( { x } \right.  )>0$ với mọi $x∈\left ( { x_{ 0 } ;b } \right.  )$ thì $x_{ 0 }$ là một điểm cực tiểu của hàm số $f\left ( { x } \right.  )$. Nếu $f'\left ( { x } \right.  )>0$ với mọi $x∈\left ( { a;x_{ 0 } } \right.  )$ và $f'\left ( { x } \right.  ) < 0$ với mọi $x∈\left ( { x_{ 0 } ;b } \right.  )$ thì $x_{ 0 }$ là một điểm cực đại của hàm số $f\left ( { x } \right.  )$.
-
-» Định lí trên được viết gọn lại trong hai bảng biến thiên sau:
+- Định lí trên được viết gọn lại trong hai bảng biến thiên sau:
 
 <p align="center"><img src="/assets/images/toan-12/c1_b1_image87.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 <p align="center"><img src="/assets/images/toan-12/c1_b1_image88.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Từ định lí trên ta có các bước tìm cực trị của hàm số $y=f\left ( { x } \right.  )$ như sau:⑴ Tìm tập xác định của hàm số.⑵ Tính $f'\left ( { x } \right.  )$. Tìm các điểm mà tại đó $f'\left ( { x } \right.  )$ bằng 0 hoặc $f'\left ( { x } \right.  )$ không tồn tại.⑶ Lập bảng biến thiên suy ra các cực trị của hàm số.
 
-» Từ định lí trên ta có các bước tìm cực trị của hàm số $y=f\left ( { x } \right.  )$ như sau:⑴ Tìm tập xác định của hàm số.⑵ Tính $f'\left ( { x } \right.  )$. Tìm các điểm mà tại đó $f'\left ( { x } \right.  )$ bằng 0 hoặc $f'\left ( { x } \right.  )$ không tồn tại.⑶ Lập bảng biến thiên suy ra các cực trị của hàm số.» Nếu $f'\left ( { x_{ 0 } } \right.  )=0$ nhưng $f'\left ( { x } \right.  )$ không đổi dấu khi $x$ qua $x_{ 0 }$ thì $x_{ 0 }$ không phải là điểm cực trị của hàm số. Chẳng hạn, hàm số $f\left ( { x } \right.  )=x ^ { 3 }$ có $\left\{ \begin{array}{l} f'\left ( { x } \right.  )=3x ^ { 2 } f'\left ( { 0 } \right.  )=0 \end{array} \right.$, nhưng $x=0$ không phải là điểm cực trị của hàm số.
+- Nếu $f'\left ( { x_{ 0 } } \right.  )=0$ nhưng $f'\left ( { x } \right.  )$ không đổi dấu khi $x$ qua $x_{ 0 }$ thì $x_{ 0 }$ không phải là điểm cực trị của hàm số. Chẳng hạn, hàm số $f\left ( { x } \right.  )=x ^ { 3 }$ có $\left\{ \begin{array}{l} f'\left ( { x } \right.  )=3x ^ { 2 } f'\left ( { 0 } \right.  )=0 \end{array} \right.$, nhưng $x=0$ không phải là điểm cực trị của hàm số.
 
 <p align="center"><img src="/assets/images/toan-12/c1_b1_image97.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -61,7 +66,11 @@ Chú ý
 
 ### Dạng 1. Xét tính đơn điệu của hàm số cho bởi một công thức
 
-» Bước 1: Tìm tập xác định $D$ của hàm số.» Bước 2: Tính đạo hàm $f'\left ( { x } \right.  )$ của các hàm số. Tìm các điểm $\left\{ \begin{array}{l} x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n } \end{array} \right\}∈D$ mà tại đó đạo hàm $f'\left ( { x } \right.  )$ bằng $0$ hoặc không tồn tại.» Bước 3: Sắp xếp các điểm $x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n }$ theo thứ tự tăng dần. Xét dấu $f'\left ( { x } \right.  )$ và lập bảng biến thiên.» Bước 4: Nêu kết luận về các khoảng đồng biến, nghịch biến của hàm số. Phương pháp
+
+- **Bước 1:** Tìm tập xác định $D$ của hàm số.
+- **Bước 2:** Tính đạo hàm $f'\left ( { x } \right.  )$ của các hàm số. Tìm các điểm $\left\{ \begin{array}{l} x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n } \end{array} \right\}∈D$ mà tại đó đạo hàm $f'\left ( { x } \right.  )$ bằng $0$ hoặc không tồn tại.
+- **Bước 3:** Sắp xếp các điểm $x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n }$ theo thứ tự tăng dần. Xét dấu $f'\left ( { x } \right.  )$ và lập bảng biến thiên.
+- **Bước 4:** Nêu kết luận về các khoảng đồng biến, nghịch biến của hàm số. Phương pháp
 
 **Ví dụ 1.1.** Xét tính đơn điệu của hàm số $y=4x ^ { 3 } +3x ^ { 2 } -36x+6$.
 
@@ -124,8 +133,11 @@ Hàm số nghịch biến trên khoảng $\left ( { -∞;0 } \right.  ).$
 Hàm số đồng biến trên khoảng $\left ( { 2;+∞ } \right.  ).$
 
 ### Dạng 2. Xét tính đơn điệu của hàm số cho bởi đồ thị - bảng biến thiên
+- Với đồ thị hàm số, quan sát: hướng lên – xuống của đường cong (chiều từ trái sang phải).
 
-» Với đồ thị hàm số, quan sát: hướng lên – xuống của đường cong (chiều từ trái sang phải).» Với bảng biến thiên, quan sát: hướng lên – xuống của mũi tên (chiều từ trái sang phải).» Với bảng xét dấu, quan sát: dấu âm - dương của $f'\left ( { x } \right.  )$. Phương pháp
+- Với bảng biến thiên, quan sát: hướng lên – xuống của mũi tên (chiều từ trái sang phải).
+
+- Với bảng xét dấu, quan sát: dấu âm - dương của $f'\left ( { x } \right.  )$. Phương pháp
 
 **Ví dụ 2.1.** Cho hàm số $y=f\left ( { x } \right.  )$ xác định trên $\mathbb{R}$ và có bảng biến thiên như sau:
 
@@ -136,12 +148,10 @@ Xét tính đơn điệu của hàm số $y=f\left ( { x } \right.  )$.
 *Lời giải:*
 
 Từ BBT của hàm số, ta có:
-
-» Trong $\left ( { 0;\,1 } \right.  )$ mũi tên “đi xuống” nên
+- Trong $\left ( { 0;\,1 } \right.  )$ mũi tên “đi xuống” nên
 
 Hàm số nghịch biến trên khoảng $\left ( { 0;\,1 } \right.  )$.
-
-» Trong $\left ( { -∞;\,0 } \right.  )$ và $\left ( { 1;\,+∞ } \right.  )$ mũi tên “đi lên” nên
+- Trong $\left ( { -∞;\,0 } \right.  )$ và $\left ( { 1;\,+∞ } \right.  )$ mũi tên “đi lên” nên
 
 Hàm số đồng biến trên khoảng $\left ( { -∞;\,0 } \right.  )$ và $\left ( { 1;\,+∞ } \right.  )$.
 
@@ -152,24 +162,26 @@ Hàm số đồng biến trên khoảng $\left ( { -∞;\,0 } \right.  )$ và $\
 *Lời giải:*
 
 Từ đồ thị của hàm số, ta có:
-
-» Trong $\left ( { -3;\,-1 } \right.  )$ và $\left ( { 1;\,3 } \right.  )$ đồ thị “đi lên” nên
+- Trong $\left ( { -3;\,-1 } \right.  )$ và $\left ( { 1;\,3 } \right.  )$ đồ thị “đi lên” nên
 
 Hàm số đồng biến trên khoảng $\left ( { -3;\,-1 } \right.  )$ và $\left ( { 1;\,3 } \right.  )$.
-
-» Trong $\left ( { -1;\,1 } \right.  )$ đồ thị “đi xuống” nên
+- Trong $\left ( { -1;\,1 } \right.  )$ đồ thị “đi xuống” nên
 
 Hàm số nghịch biến trên khoảng $\left ( { -1;\,1 } \right.  )$.
 
 ### Dạng 3. Xác định cực trị của hàm số cho bởi công thức
 
-» Bước 1: Tìm tập xác định $D$ của hàm số.» Bước 2: Tính đạo hàm $f'\left ( { x } \right.  )$ của các hàm số. Tìm các điểm $\left\{ \begin{array}{l} x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n } \end{array} \right\}∈D$ mà tại đó đạo hàm $f'\left ( { x } \right.  )=0$ hoặc $f'\left ( { x } \right.  )$ không tồn tại.» Bước 3: Sắp xếp các điểm $x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n }$ theo thứ tự tăng dần. Xét dấu $f'\left ( { x } \right.  )$ và lập bảng biến thiên.» Bước 4: Kết luận hàm số đạt cực trị tại $x=?,\,\,y=?$ (nếu có). Phương pháp
+
+- **Bước 1:** Tìm tập xác định $D$ của hàm số.
+- **Bước 2:** Tính đạo hàm $f'\left ( { x } \right.  )$ của các hàm số. Tìm các điểm $\left\{ \begin{array}{l} x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n } \end{array} \right\}∈D$ mà tại đó đạo hàm $f'\left ( { x } \right.  )=0$ hoặc $f'\left ( { x } \right.  )$ không tồn tại.
+- **Bước 3:** Sắp xếp các điểm $x_{ 1 } ;\,x_{ 2 } ;\,...;\,x_{ n }$ theo thứ tự tăng dần. Xét dấu $f'\left ( { x } \right.  )$ và lập bảng biến thiên.
+- **Bước 4:** Kết luận hàm số đạt cực trị tại $x=?,\,\,y=?$ (nếu có). Phương pháp
 
 **Ví dụ 3.1.** Tìm cực trị của hàm số $y=2x ^ { 3 } -3x ^ { 2 } +1$
 
 *Lời giải:*
 
-Tập xác định:$D=$.
+Tập xác định: $D = \mathbb{R}$.
 
 Đạo hàm:$y'=6x ^ { 2 } -6x;\,\,y'=0⇔\left[ x=0⇒y=1x=1⇒y=0 \right.$.
 
@@ -181,7 +193,7 @@ Vậy hàm số đạt cực đại tại $x=0⇒y_{ CD } =1$ và đạt cực t
 
 *Lời giải:*
 
-Tập xác định:$D=$.
+Tập xác định: $D = \mathbb{R}$.
 
 Đạo hàm:$y'=-4x ^ { 3 } +6x ^ { 2 } -2;\,\,y'=0⇔\left[ x=1⇒y=-2x=-\frac { 1 } { 2 }⇒y=-\frac { 5 } { 16 } \right.$.
 
@@ -189,23 +201,21 @@ Tập xác định:$D=$.
 
 Vậy hàm số đạt cực đại tại $x=-\frac { 1 } { 2 }⇒y_{ CD } =-\frac { 5 } { 16 }$.
 
-**Ví dụ 3.3.** Tìm cực trị của hàm số $y=\frac { x+2 } { 3x-1 }$
+**Ví dụ 3.3.** Tìm cực trị của hàm số $y=\frac{x+2}{3x-1}$
 
 *Lời giải:*
 
-Tập xác định:$D=$.
+Tập xác định: $D = \mathbb{R} \setminus \left\{ \frac{1}{3} \right\}$.
 
-Đạo hàm:$y'=-\frac { 7 } { \left ( { 3x-1 } \right.  ) ^ { 2 } } < 0,\,\,∀x≠\frac { 1 } { 3 }$.
+Đạo hàm: $y' = -\frac{7}{(3x-1)^2} < 0, \; \forall x \ne \frac{1}{3}$.
 
-<p align="center"><img src="/assets/images/toan-12/c1_b1_image172.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+Do $y' < 0$ với mọi $x \ne \frac{1}{3}$ nên hàm số luôn nghịch biến trên từng khoảng xác định $(-\infty; \frac{1}{3})$ và $(\frac{1}{3}; +\infty)$, do đó hàm số không có cực trị.
 
-Vậy hàm số không có cực trị.
-
-**Ví dụ 3.4.** Tìm cực trị của hàm số $y=\frac { x ^ { 2 } -4x+4 } { 1-x }$
+**Ví dụ 3.4.** Tìm cực trị của hàm số $y=\frac{x^2-4x+4}{1-x}$
 
 *Lời giải:*
 
-Tập xác định:$D=$.
+Tập xác định: $D = \mathbb{R} \setminus \{1\}$.
 
 Đạo hàm:$y'=\frac { -x ^ { 2 } +2x } { \left ( { 1-x } \right.  ) ^ { 2 } }$. Cho $y'=0⇔\left[ x=0x=2 \right.$.
 
@@ -227,7 +237,10 @@ Vậy hàm số đạt cực tiểu tại $x=\frac { 5 } { 2 }⇒y_{ CT } =2 ^ {
 
 ### Dạng 4. Xác định cực trị của hàm số cho bởi bảng biến thiên – đồ thị
 
-Nhận xét:» Hàm số $f\left ( { x } \right.  )$ có cực trị $y'$ đổi dấukhông cực trị $y'$ không đổi dấuchỉ có 1 cực trị $y'$ đổi dấu 1 lầncó 2 cực trị $y'$ đổi dấu 2 lầncó 3 cực trị $y'$ đổi dấu 3 lần» Đối với một hàm số bất kì, hàm số chỉ có thể đạt cực trị tại những điểm $x_{ 0 }$ mà tại đó đạo hàm triệt tiêu $f'\left ( { x_{ 0 } } \right.  )=0$ hoặc đạo hàm không xác định tại đó. Phương pháp
+Nhận xét:
+
+- Hàm số $f\left ( { x } \right.  )$ có cực trị $y'$ đổi dấukhông cực trị $y'$ không đổi dấuchỉ có 1 cực trị $y'$ đổi dấu 1 lầncó 2 cực trị $y'$ đổi dấu 2 lầncó 3 cực trị $y'$ đổi dấu 3 lần
+- Đối với một hàm số bất kì, hàm số chỉ có thể đạt cực trị tại những điểm $x_{ 0 }$ mà tại đó đạo hàm triệt tiêu $f'\left ( { x_{ 0 } } \right.  )=0$ hoặc đạo hàm không xác định tại đó. Phương pháp
 
 <p align="center"><img src="/assets/images/toan-12/c1_b1_image194.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -286,8 +299,9 @@ Từ bảng biến thiên, ta nhận thấy đồ thị hàm số có hai điể
 Vậy công thức của hàm số cần tìm có dạng:$y=f\left ( { x } \right.  )=\frac { 4 } { 9 }x ^ { 3 } -2x ^ { 2 } +2$.
 
 ### Dạng 5. Toán thực tế áp dụng tính đơn điệu của hàm số
+- Nếu hàm số $s=f\left ( { t } \right.  )$ biểu thị quãng đường di chuyển của vật theo thời gian $t$ thì $f'\left ( { t_{ 0 } } \right.  )$ biểu thị tốc độ tức thời của chuyển động tại $t_{ 0 }$.
 
-» Nếu hàm số $s=f\left ( { t } \right.  )$ biểu thị quãng đường di chuyển của vật theo thời gian $t$ thì $f'\left ( { t_{ 0 } } \right.  )$ biểu thị tốc độ tức thời của chuyển động tại $t_{ 0 }$.» Đạo hàm cấp hai $f'$ là gia tốc tức thời tại thời điểm $t$ của vật chuyển động có phương trình $s=f\left ( { t } \right.  )$. Phương pháp
+- Đạo hàm cấp hai $f'$ là gia tốc tức thời tại thời điểm $t$ của vật chuyển động có phương trình $s=f\left ( { t } \right.  )$. Phương pháp
 
 **Ví dụ 5.1.** Trong 8 phút đầu kể từ khi xuất phát, độ cao $h$ (tính bằng mét) của khinh khí cầu vào thời điểm $t$ phút được cho bởi $h\left ( { t } \right.  )=6t ^ { 3 } -81t ^ { 2 } +324t$. Đồ thị của hàm số $h\left ( { t } \right.  )$ được biểu diễn như hình bên. Trong các khoảng thời gian nào khinh khí cầu tăng dần độ cao, giảm dần độ cao?
 
@@ -371,7 +385,12 @@ Vậy $m>2$.
 
 ### Dạng 7. Bài toán hàm hợp
 
-Tìm khoảng đơn điệu của hàm số $y=f\left ( { u\left ( { x } \right.  ) } \right.  )$ từ bảng biến thiên/đồ thị của $f'\left ( { x } \right.  )$» Bước 1: Tính $y'=u'.f'\left ( { u } \right.  )⇒y'=0⇔\left[ u'=0f'\left ( { u } \right.  )=0\,\,\,\left ( { * } \right.  ) \right.$» Bước 2: Để giải $\left ( { * } \right.  )$ ta tìm $f'\left ( { x } \right.  )=0$ (đồ thị cắt trục hoành). Giả sử $\left. f'\left ( { x } \right. )=0⇔\left[ x=a\vdots x=b \right. \rightarrow f'\left ( { u } \right. )=0⇔\left[ u=a\vdots u=b \right. → \right.$ nghiệm của $\left ( { * } \right.  )$.» Bước 3: Lập bảng xét dấu của $y'=u'.f'\left ( { u } \right.  )⇒$ khoảng đơn điệu cần tìm.» Lưu ý: Bài toán tìm cực trị của hàm số $y=f\left ( { u\left ( { x } \right.  ) } \right.  )$ ta làm tương tựPhương pháp
+Tìm khoảng đơn điệu của hàm số $y=f\left ( { u\left ( { x } \right.  ) } \right.  )$ từ bảng biến thiên/đồ thị của $f'\left ( { x } \right.  )$
+- **Bước 1:** Tính $y'=u'.f'\left ( { u } \right.  )⇒y'=0⇔\left[ u'=0f'\left ( { u } \right.  )=0\,\,\,\left ( { * } \right.  ) \right.$
+- **Bước 2:** Để giải $\left ( { * } \right.  )$ ta tìm $f'\left ( { x } \right.  )=0$ (đồ thị cắt trục hoành). Giả sử $\left. f'\left ( { x } \right. )=0⇔\left[ x=a\vdots x=b \right. \rightarrow f'\left ( { u } \right. )=0⇔\left[ u=a\vdots u=b \right. → \right.$ nghiệm của $\left ( { * } \right.  )$.
+- **Bước 3:** Lập bảng xét dấu của $y'=u'.f'\left ( { u } \right.  )⇒$ khoảng đơn điệu cần tìm.
+
+- Lưu ý: Bài toán tìm cực trị của hàm số $y=f\left ( { u\left ( { x } \right.  ) } \right.  )$ ta làm tương tựPhương pháp
 
 **Ví dụ 7.1.** Cho hàm số $f\left ( { x } \right.  )$ có bảng xét dấu đạo hàm như hình bên dưới. Xác định các khoảng đồng biến của hàm số $y=f\left ( { 1-2x } \right.  )$.
 
@@ -567,25 +586,25 @@ Nhìn vào biến thiên ta thấy đồ thị hàm số đã cho đồng biến
 
 Hàm số đã cho đồng biến trên các khoảng $\left ( { -∞;-5 } \right.  )$ và $\left ( { -3;-2 } \right.  )$ là mệnh đề đúng
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số đã cho đồng biến trên khoảng $\left ( { -∞;-5 } \right.  )$
 
 Hàm số đã cho đồng biến trên khoảng $\left ( { -∞;-5 } \right.  )$ là mệnh đề sai
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Hàm số đã cho nghịch biến trên khoảng $\left ( { -2;+∞ } \right.  )$
 
 Hàm số đã cho nghịch biến trên khoảng $\left ( { -2;+∞ } \right.  )$ là mệnh đề đúng
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hàm số đã cho đồng biến trên khoảng $\left ( { -∞;-2 } \right.  )$
 
 Hàm số đã cho đồng biến trên khoảng $\left ( { -∞;-2 } \right.  )$ là mệnh đề đúng
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -610,25 +629,25 @@ $y'>0,∀x∈\left ( { -∞;-3 } \right.  )∪\left ( { 3;+∞ } \right.  )$ nê
 
 Xét: Hàm số đồng biến trên khoảng $\left ( { -3;0 } \right.  )$ là mệnh đề sai
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hàm số nghịch biến trên khoảng $\left ( { 0;3 } \right.  )$.
 
 Xét: Hàm số nghịch biến trên khoảng $\left ( { 0;3 } \right.  )$ là mệnh đề đúng
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hàm số đồng biến trên khoảng $\left ( { -∞;0 } \right.  )$.
 
 Xét: Hàm số đồng biến trên khoảng $\left ( { -∞;0 } \right.  )$ là mệnh đề sai vì trên $\left ( { -3;0 } \right.  )$ hàm số nghịch biến
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hàm số nghịch biến trên khoảng $\left ( { -∞;-3 } \right.  )$.
 
 Xét: Hàm số nghịch biến trên khoảng $\left ( { -∞;-3 } \right.  )$ là mệnh đề sai
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -645,13 +664,13 @@ Lời giải
 
 Đồ thị hàm số cắt trục tung tại điểm có tung độ bằng $3$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số nghịch biến trên khoảng $\left ( { -3;0 } \right.  )$.
 
 Hàm số nghịch biến trên $\left ( { -∞;-1 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Đồng biến trên khoảng $\left ( { -1;0 } \right.  )$.
 
@@ -659,13 +678,13 @@ Hàm số đồng biến trên $\left ( { -1;0 } \right.  )$ và $\left ( { 2;+�
 
 Nên: Hàm số đồng biến trên $\left ( { -1;0 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Nghịch biến trên khoảng $\left ( { 0;3 } \right.  )$.
 
 Hàm số nghịch biến trên $\left ( { 0;2 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -686,19 +705,19 @@ Ta có bảng biến thiên
 
 Từ bảng biến thiên, ta có hàm số nghịch biến trên $\left ( { -∞;0 } \right.  )$ và $\left ( { 2;+∞ } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số nghịch biến trên $\left ( { 2;+∞ } \right.  )$.
 
 Từ bảng biến thiên, ta có hàm số nghịch biến trên $\left ( { -∞;0 } \right.  )$ và $\left ( { 2;+∞ } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hàm số đồng biến trên $\left ( { 0;2 } \right.  )$.
 
 Từ bảng biến thiên, ta có hàm số đồng biến trên $\left ( { 0;2 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hàm số đồng biến trên $\mathbb{R}$.
 
@@ -706,7 +725,7 @@ Từ bảng biến thiên, ta có hàm số đồng biến trên $\left ( { 0;2 
 
 và nghịch biến trên $\left ( { -∞;0 } \right.  )$ và $\left ( { 2;+∞ } \right.  )$. Nên không thể đồng biến trên $\mathbb{R}$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -723,25 +742,25 @@ Lời giải
 
 Từ đồ thị, ta có hàm số đồng biến trên $\left ( { -∞;-2 } \right.  )$ và $\left ( { 0;+∞ } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số đồng biến trên $\left ( { 0;1 } \right.  )$.
 
 Từ đồ thị, ta có hàm số đồng biến trên $\left ( { -∞;-2 } \right.  )$ và $\left ( { 0;+∞ } \right.  )$ nên hàm số cũng đồng biến trên $\left ( { 0;1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hàm số nghịch biến trên $\left ( { -2;1 } \right.  )$.
 
 Từ đồ thị, ta có hàm số nghịch biến trên $\left ( { -2;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Hàm số nghịch biến trên $\mathbb{R}$.
 
 Từ đồ thị, ta có hàm số nghịch biến trên $\left ( { -2;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -758,25 +777,25 @@ Lời giải
 
 Dựa vào đồ thị, ta có hàm số $y=g\left ( { x } \right.  )$ đạt cực tiểu tại điểm $0 < x_{ 0 } < 1$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hàm số $y=g\left ( { x } \right.  )$ có hai điểm cực trị.
 
 Dựa vào đồ thị, ta có hàm số $y=g\left ( { x } \right.  )$ có đúng một điểm cực trị.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Đồ thị hàm số $y=f\left ( { x } \right.  )$ có điểm cực tiểu là $x=1$.
 
 Dựa vào đồ thị, ta có điểm cực tiểu của đồ thị hàm số $y=f\left ( { x } \right.  )$ là điểm $\left ( { 1;-3 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Giá trị cực đại của hàm số $y=f\left ( { x } \right.  )$ là $y_{ 0 } =1$.
 
 Dựa vào đồ thị, ta có giá trị cực đại của hàm số $y=f\left ( { x } \right.  )$ là $y_{ 0 } =1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -799,25 +818,25 @@ Bảng biến thiên
 
 Dựa vào bảng biến thiên, hàm số nghịch biến trên $\left ( { -1;0 } \right.  )$ và $\left ( { 0;1 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hàm số nghịch biến trên $\left ( { -1;0 } \right.  )$ và $\left ( { 0;1 } \right.  )$.
 
 Dựa vào bảng biến thiên, hàm số nghịch biến trên $\left ( { -1;0 } \right.  )$ và $\left ( { 0;1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hàm số đồng biến trên từng khoảng xác định.
 
 Dựa vào bảng biến thiên, hàm số đồng biến trên $\left ( { -∞;-1 } \right.  )$ và $\left ( { 1;+∞ } \right.  )$ và nghịch biến trên $\left ( { -1;0 } \right.  )$ và $\left ( { 0;1 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Hàm số đồng biến trên $\left ( { -∞;-1 } \right.  )∪\left ( { 1;+∞ } \right.  )$.
 
 Dựa vào bảng biến thiên, hàm số đồng biến trên $\left ( { -∞;-1 } \right.  )$ và $\left ( { 1;+∞ } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -838,23 +857,23 @@ Bảng biến thiên:
 
 Vậy hàm số đã cho có 2 điểm cực trị.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Giá trị cực tiểu của hàm số là $x=3$.
 
 Từ bảng biến thiên, suy ra giá trị cực tiểu là $y_{ 0 } =\frac { 2 } { 3 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Điểm cực đại của đồ thị hàm số đã cho là $x=1.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Khoảng cách giữa hai điểm cực trị của đồ thị hàm số đã cho là $\frac { \sqrt{ 13 } } { 13 }$.
 
 Gọi $A\left ( { 1;2 } \right.  )$,$B\left ( { 3;\frac { 2 } { 3 } } \right.  )$ là tọa độ hai điểm cực trị. Khi đó $AB=\frac { 2\sqrt{ 13 } } { 3 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -875,25 +894,25 @@ Ta có số điểm cực trị chính là số giao điểm của đồ thị $
 
 Do đó hàm số đã cho có 5 điểm cực trị.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hàm số $y=f\left ( { x } \right.  )$ có 3 điểm cực tiểu.
 
 Dựa vào đồ thị hàm số $y=f'\left ( { x } \right.  )$ ta thấy dấu của đạo hàm đổi từ âm sang dương khi qua 3 điểm $x=x_{ 1 } ;x=x_{ 3 } ;x=x_{ 5 }$ (hình vẽ) nên hàm số $y=f\left ( { x } \right.  )$ có $3$ điểm cực tiểu.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hàm số $y=f\left ( { x } \right.  )$ có 3 điểm cực đại.
 
 Hàm số $y=f\left ( { x } \right.  )$ có 2 điểm cực đại là $x=x_{ 2 } ;x=x_{ 4 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Hàm số $y=f\left ( { x } \right.  )$ có 1 điểm cực đại dương.
 
 Hàm số $y=f\left ( { x } \right.  )$ có 1 điểm cực đại dương.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -910,13 +929,13 @@ Tập xác định:$D=\mathbb{R}$.
 
 Ta có:$y'=3x ^ { 2 } +2\left ( { m+1 } \right.  )x+3$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Khi $m=-1$ thì hàm số đồng biến trên $\left ( { -∞;+∞ } \right.  )$
 
 Khi $m=-1$ ta có $y'=3x ^ { 2 } +3>0$ nên hàm số luôn đồng biến trên $\left ( { -∞;+∞ } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Có 3 giá trị nguyên dương của tham số $m$ để hàm số $y=x ^ { 3 } +\left ( { m+1 } \right.  )x ^ { 2 } +3x+2$ đồng biến trên $\mathbb{R}$
 
@@ -926,11 +945,11 @@ $⇔\Delta '=\left ( { m+1 } \right.  ) ^ { 2 } -9≤0⇔m ^ { 2 } +2m-8≤0⇔-
 
 Vậy $m∈\left[ -4;2 \right]$ do đó có 7 giá trị nguyên của tham số m.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Có 6 giá trị nguyên của tham số $m$ để hàm số $y=x ^ { 3 } +\left ( { m+1 } \right.  )x ^ { 2 } +3x+2$ đồng biến trên $\mathbb{R}$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -969,25 +988,25 @@ Vậy tổng các giá trị nguyên của tham số $m$ ta được bằng $1$.
 
 Từ $(*)$ nên mệnh đề sai
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Khi $m=0$ thì hàm số nghịch biến trên khoảng $\left ( { -∞\,;+∞ } \right.  )$
 
 Với $m=0$ ta có $y'=-3x ^ { 2 } -2x-1 < 0∀x∈\left ( { -∞;+∞ } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Có 3 giá trị nguyên của tham số m để hàm số đã cho nghịch biến trên khoảng $\left ( { -∞\,;+∞ } \right.  )$
 
 Từ (2*) nên mệnh đề sai
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Tổng các giá trị nguyên của tham số $m$ để hàm số $y=\left ( { m ^ { 2 } -1 } \right.  )x ^ { 3 } +\left ( { m-1 } \right.  )x ^ { 2 } -x+4$ nghịch biến trên khoảng $\left ( { -∞\,;+∞ } \right.  )$ bằng 2
 
 Từ (3*) nên mệnh đề sai
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -1018,25 +1037,25 @@ Vậy:$m∈\left ( { 3;6 } \right.  ]$.
 
 Với $m=1⇒y'=\frac { -2 } { \left ( { x+1 } \right.  ) ^ { 2 } } < 0\,\,∀x∈\left ( { -∞;-1 } \right.  );\left ( { -1;+∞ } \right.  )$
 
-» Chọn Đúng.
+**Chọn ĐÚNG.**
 
 (b) Khi $m=4$ thì hàm số nghịch biến trên các khoảng xác định của nó
 
 Vì hàm số nghịch biến trên các khoảng xác định của nó $⇔m < 3$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Tập hợp tất cả các giá trị thực của $m$ để hàm số $y=\frac { x+3 } { x+m }$ nghịch biến trên khoảng $\left ( { -∞;-6 } \right.  )$ là $\left ( { 3;6 } \right.  ]$
 
 Tập hợp tham số m để hàm số nghịch biến trên các khoảng xác định của nó:$m∈\left ( { -∞;3 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Tập hợp tất cả các giá trị thực của $m$ để hàm số $y=\frac { x+3 } { x+m }$ đồng biến trên khoảng $\left ( { -∞;-6 } \right.  )$ là $\left ( { 3;6 } \right.  ]$
 
 Tập hợp tham số m để hàm số đồng biến trên $\left ( { -∞;-6 } \right.  )$:$m∈\left ( { 3;6 } \right.  ]$
 
-» Chọn Đúng.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -1063,11 +1082,11 @@ $f'\left ( { x } \right.  )≤0⇔x≤2$ và $f'\left ( { x } \right.  )≥0$ $�
 
 (a) Hàm số $g\left ( { x } \right.  )$ nghịch biến trên $\left ( { 0;2 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số $g\left ( { x } \right.  )$ đồng biến trên $\left ( { 2;+∞ } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hàm số $g\left ( { x } \right.  )$ nghịch biến trên $\left ( { -1;0 } \right.  )$.
 
@@ -1075,11 +1094,11 @@ Hàm số đồng biến trên $\left ( { -2;0 } \right.  )$ và $\left ( { 2;+�
 
 Do $\left ( { -1;0 } \right.  )⊂\left ( { -2;0 } \right.  )$ nên hàm số đồng biến trên $\left ( { -1;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Hàm số $g\left ( { x } \right.  )$ nghịch biến trên $\left ( { -∞;-2 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -1104,19 +1123,19 @@ Bảng biến thiên:
 
 Vậy hàm số đã cho có 6 điểm cực trị.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hàm số $g\left ( { x } \right.  )$ có 3 điểm cực đại.
 
 Từ bảng biến thiên, suy ra Hàm số có 3 điểm cực đại.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hàm số $g\left ( { x } \right.  )$ có 4 điểm cực tiểu.
 
 Hàm số có 3 điểm cực tiểu.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Điểm $x_{ 0 } =0$ là điểm cực tiểu của hàm số $y=g\left ( { x } \right.  )$.
 

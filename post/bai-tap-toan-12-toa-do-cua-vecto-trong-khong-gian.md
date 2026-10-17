@@ -21,22 +21,36 @@ grade: 12
 
 ### 1. Hệ tọa độ trong không gian.
 
-> **Định nghĩa:** Trong không gian, cho ba trục $Ox,Oy,Oz$ đôi một vuông góc. » Gọi $i,j,k$ lần lượt là ba vectơ đơn vị trên các trục $Ox,Oy,Oz$.» Hệ ba trục như vậy được gọi là hệ trục tọ̣a độ Descartes vuông gócOxyztrong không gian hay gọi đơn giản hệ tọa độ $Oxyz$.
+> **Định nghĩa:** Trong không gian, cho ba trục $Ox,Oy,Oz$ đôi một vuông góc.
+
+- Gọi $i,j,k$ lần lượt là ba vectơ đơn vị trên các trục $Ox,Oy,Oz$.
+
+- Hệ ba trục như vậy được gọi là hệ trục tọ̣a độ Descartes vuông gócOxyztrong không gian hay gọi đơn giản hệ tọa độ $Oxyz$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b2_image9.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 ### 2. Tọa độ của điểm và vectơ.
 
-Tọa độ điểmTrong không gian $Oxyz$, cho điểm $M$.» Nếu $\overrightarrow { OM }=xi+yj+zk$ thì ta gọi bộ ba số $\left ( { x;y;z } \right.  )$ là tọa độ của điểm $M$ đối với hệ trục toạ độ $Oxyz$.» Viết $M=\left ( { x;y;z } \right.  )$ hoặc $M\left ( { x;y;z } \right.  )$; Trong đó $x$ là hoành độ,$y$ là tung độ,$z$ là cao độ của điểm $M$.
+Tọa độ điểmTrong không gian $Oxyz$, cho điểm $M$.
+
+- Nếu $\overrightarrow { OM }=xi+yj+zk$ thì ta gọi bộ ba số $\left ( { x;y;z } \right.  )$ là tọa độ của điểm $M$ đối với hệ trục toạ độ $Oxyz$.
+
+- Viết $M=\left ( { x;y;z } \right.  )$ hoặc $M\left ( { x;y;z } \right.  )$; Trong đó $x$ là hoành độ,$y$ là tung độ,$z$ là cao độ của điểm $M$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b2_image24.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-Tọa độ vectoTrong không gian $Oxyz$, cho vectơ $a$. » Nếu $a=a_{ 1 } i+a_{ 2 } j+a_{ 3 } k$ thì ta gọi bộ ba số $\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ là tọ độ của vectơ $a$ đối với hệ toạ độ $Oxyz$» Viết $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ hoặc $a\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  );$. Trong đó $a_{ 1 }$ là hoành độ,$a_{ 2 }$ là tung độ,$a_{ 3 }$ là cao độ của vectơ $a$.
+Tọa độ vectoTrong không gian $Oxyz$, cho vectơ $a$.
+
+- Nếu $a=a_{ 1 } i+a_{ 2 } j+a_{ 3 } k$ thì ta gọi bộ ba số $\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ là tọ độ của vectơ $a$ đối với hệ toạ độ $Oxyz$
+- Viết $a=\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  )$ hoặc $a\left ( { a_{ 1 } ;a_{ 2 } ;a_{ 3 } } \right.  );$. Trong đó $a_{ 1 }$ là hoành độ,$a_{ 2 }$ là tung độ,$a_{ 3 }$ là cao độ của vectơ $a$.
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Tọa độ điểm
+- Nếu $a=a_{ 1 } i+a_{ 2 } j+a_{ 3 } k$ thì $a=\left ( { a_{ 1 } \,;\,a_{ 2 } \,;\,a_{ 3 } } \right.  )$.
 
-» Nếu $a=a_{ 1 } i+a_{ 2 } j+a_{ 3 } k$ thì $a=\left ( { a_{ 1 } \,;\,a_{ 2 } \,;\,a_{ 3 } } \right.  )$.» Nếu $\overrightarrow { OM }=m_{ 1 } i+m_{ 2 } j+m_{ 3 } k$ thì $\overrightarrow { OM }=\left ( { m_{ 1 } ;m_{ 2 } ;m_{ 3 } } \right.  )⇒M\left ( { m_{ 1 } ;m_{ 2 } ;m_{ 3 } } \right.  )$.» Nếu $\overrightarrow { MO }=m_{ 1 } i+m_{ 2 } j+m_{ 3 } k$ thì $\overrightarrow { MO }=\left ( { m_{ 1 } ;m_{ 2 } ;m_{ 3 } } \right.  )⇒M\left ( { -m_{ 1 } ;-m_{ 2 } ;-m_{ 3 } } \right.  )$.⑴$M$ thuộc các trục tọa độ:$\left | { M∈Ox→M\left ( { x\,;0\,;0 } \right.  )M∈Oy→M\left ( { 0\,;y\,;0 } \right.  )M∈Oz→M\left ( { 0\,;0\,;z } \right.  ) } \right.  .$⑵$M$ thuộc các mặt phẳng tọa độ:$\left | { M∈\left ( { Oxy } \right.  )→M\left ( { x\,;y;0 } \right.  )M∈\left ( { Oxz } \right.  )→M\left ( { x\,;0\,;z } \right.  )M∈\left ( { Oyz } \right.  )→M\left ( { 0\,;y\,;z } \right.  ) } \right.  .$ Phương pháp
+- Nếu $\overrightarrow { OM }=m_{ 1 } i+m_{ 2 } j+m_{ 3 } k$ thì $\overrightarrow { OM }=\left ( { m_{ 1 } ;m_{ 2 } ;m_{ 3 } } \right.  )⇒M\left ( { m_{ 1 } ;m_{ 2 } ;m_{ 3 } } \right.  )$.
+
+- Nếu $\overrightarrow { MO }=m_{ 1 } i+m_{ 2 } j+m_{ 3 } k$ thì $\overrightarrow { MO }=\left ( { m_{ 1 } ;m_{ 2 } ;m_{ 3 } } \right.  )⇒M\left ( { -m_{ 1 } ;-m_{ 2 } ;-m_{ 3 } } \right.  )$.⑴$M$ thuộc các trục tọa độ:$\left | { M∈Ox→M\left ( { x\,;0\,;0 } \right.  )M∈Oy→M\left ( { 0\,;y\,;0 } \right.  )M∈Oz→M\left ( { 0\,;0\,;z } \right.  ) } \right.  .$⑵$M$ thuộc các mặt phẳng tọa độ:$\left | { M∈\left ( { Oxy } \right.  )→M\left ( { x\,;y;0 } \right.  )M∈\left ( { Oxz } \right.  )→M\left ( { x\,;0\,;z } \right.  )M∈\left ( { Oyz } \right.  )→M\left ( { 0\,;y\,;z } \right.  ) } \right.  .$ Phương pháp
 
 **Ví dụ 1.1.** Xác định tọa độ điểm $M$ trong các trường hợp sau⑴$\overrightarrow { MO }=2i-3k$⑵$\left. \overrightarrow { OM }=2\overrightarrow { OA }+i \right.$ với $A\left ( { 2;-3;1 } \right.  )$
 
@@ -163,14 +177,12 @@ $\left. ⇒\overrightarrow { AB }{ \rm{ } }=\left ( { \frac { 15 } { 2 };\frac {
 <p align="center"><img src="/assets/images/toan-12/c2_b2_image160.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 *Lời giải:*
-
-»ΔKCMvuông tại $C$ có $OC=OM.cos65°=14.cos65°≈5,9$
+- ΔKCMvuông tại $C$ có $OC=OM.cos65°=14.cos65°≈5,9$
 
 và $CM=OM.sin65°=14.sin65°≈12,7$.
 
 $ON=CM,\,\,AN=OB$.
-
-»ΔOANvuông tại $A$ có $OA=ON.cos58°=12,7.cos58°≈6,7$
+- ΔOANvuông tại $A$ có $OA=ON.cos58°=12,7.cos58°≈6,7$
 
 và $AN=ON.sin58°=12,7.sin58°≈10,8$.
 
@@ -233,25 +245,25 @@ Lời giải
 
 $\left. \left. \overrightarrow { ON }=2\overrightarrow { i }+\overrightarrow { k } \right. \right.$, suy ra tọa độ điểm $N\left ( { 2;0;1 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hình chiếu vuông góc của $M$ trên trục $Oz$ là điểm $M'\left ( { 0;0;6 } \right.  )$.
 
 Hình chiếu vuông góc của $M\left ( { 2;\,4;\,6 } \right.  )$ trên trục $Oz$ là điểm $M'\left ( { 0;0;6 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hình chiếu vuông góc của $M$ trên mặt $\left ( { Oxy } \right.  )$ là điểm $N\left ( { 2;4;0 } \right.  )$.
 
 Hình chiếu vuông góc của $M\left ( { 2;\,4;\,6 } \right.  )$ trên mặt phẳng $\left ( { Oxy } \right.  )$ là điểm $N\left ( { 2;4;0 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Đối xứng với điểm $M$ qua mặt $\left ( { Oyz } \right.  )$ là điểm $K\left ( { -2;0;0 } \right.  )$.
 
 Đối xứng với điểm $M\left ( { 2;\,4;\,6 } \right.  )$ qua mặt phẳng $\left ( { Oyz } \right.  )$ là điểm $K\left ( { -2;\,4;\,6 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -266,19 +278,19 @@ Lời giải
 
 Trong không gian $Oxyz$, gốc tọa độ $O\left ( { 0;0;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Tọa độ vectơ $\overrightarrow { OA }=\left ( { 1; 2; 3 } \right.  )$.
 
 Điểm $A\left ( { 1; 2; 3 } \right.  )$, suy ra $\left. \left. \left. \overrightarrow { OA }=1.\overrightarrow { i }+2.\overrightarrow { j }+3.\overrightarrow { k }=\left ( { 1; 2; 3 } \right.  ) \right. \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $\left. \left. \overrightarrow { OB }=5.\overrightarrow { i }-\overrightarrow { k } \right. \right.$.
 
 Ta có $B\left ( { 5; 0; -1 } \right.  )$. Suy ra vectơ $\left. \left. \overrightarrow { OB }=5.\overrightarrow { i }-1.\overrightarrow { k } \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) NếuOABChình bình hành, thì $a+b+c=2$.
 
@@ -286,7 +298,7 @@ Ta có $\left. \left. \left. \overrightarrow { OA }=1.\overrightarrow { i }+2.\o
 
 OABChình bình hành, thì $\left\{ \begin{array}{l} 5-a=1b=-c=3 \end{array} \right.⇔\left\{ \begin{array}{l} a=4b=-2c=-4 \end{array} \right.$. Khi đó $a+b+c=2$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -305,13 +317,13 @@ Lời giải
 
 $\left. \left. \left. B\left ( { 3;\,\,0;\,\,0 } \right.  )⇒\overrightarrow { OB }=\overrightarrow { AB }=3\overrightarrow { i } \right. \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $A'\left ( { 0;0;3 } \right.  )$.
 
 Điểm $D'\left ( { 0;\,\,3;\,\,3 } \right.  )$ có hình chiếu lên trục $Oz$ là $A'\left ( { 0;0;3 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $M$ là trung điểm $DD'$. Khi đó, tọa độ điểm $M\left ( { 0;3;-3 } \right.  )$.
 
@@ -325,7 +337,7 @@ Mà $M$ là trung điểm $DD'$ $\left. \left. \left. \left. \left. \left. \left
 
 Suy ra $M\left ( { 0;3;\frac { 3 } { 2 } } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Tọa độ điểm $C'\left ( { 3;\,\,3;\,\,0 } \right.  )$.
 
@@ -335,7 +347,7 @@ Khi đó $B\left ( { 3;\,\,0;\,\,0 } \right.  )$ $\left. \left. \overrightarrow 
 
 Nên $\left. \left. \left. \left. \left. \left. \overrightarrow { AC' }=\overrightarrow { AB }+\overrightarrow { AD }+\overrightarrow { AA' }=3\overrightarrow { i }+3\overrightarrow { j }+3\overrightarrow { k } \right. \right. \right. \right. \right. \right.$. Vậy $C'\left ( { 3;\,\,3;\,\,3 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -350,25 +362,25 @@ Lời giải
 
 Ta có:$\left. \left. \left. \overrightarrow { OM }=2\overrightarrow { i }+\overrightarrow { j }+\overrightarrow { k } \right. \right. \right.$. Suy ra:$M\left ( { 2;1;1 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hình chiếu của điểm $M$ lên trục $Ox$ là:$\left ( { 2;1;0 } \right.  )$
 
 Hình chiếu của điểm $M$ lên trục $Ox$ là:$\left ( { 2;0;0 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Hình chiếu của điểm $M$ lên trục $Oy$ là:$\left ( { 0;1;0 } \right.  )$
 
 Hình chiếu của điểm $M$ lên trục $Oy$ là:$\left ( { 0;1;0 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hình chiếu của điểm $M$ lên mặt phẳng $Oxy$ là:$\left ( { 2;0;1 } \right.  )$.
 
 Hình chiếu của điểm $M$ lên mặt phẳng $Oxy$ là:$\left ( { 2;1;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -387,7 +399,7 @@ Do $\overrightarrow { OD }$ cùng hướng với $\overrightarrow { j }$ và $\l
 
 Suy ra:$D\left ( { 0;4;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Tọa độ của điểm $C$ là:$\left ( { 0;4;0 } \right.  )$
 
@@ -397,7 +409,7 @@ Theo quy tắc hình bình hành, ta có:$\left. \left. \left. \left. \left. \ov
 
 Suy ra:$C\left ( { 4;4;0 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Tọa độ của điểm $A'$ là:$\left ( { 0;0;4 } \right.  )$
 
@@ -405,7 +417,7 @@ Do $\overrightarrow { OA' }$ cùng hướng với $\overrightarrow { k }$ và $\
 
 Suy ra:$A'\left ( { 0;0;4 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Tọa độ của điểm $C'$ là:$\left ( { 4;4;4 } \right.  )$.
 
@@ -413,7 +425,7 @@ Theo quy tắc hình hộp, ta có:$\left. \left. \left. \left. \left. \left. \o
 
 Suy ra:$C'\left ( { 4;4;4 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -432,7 +444,7 @@ Do $\overrightarrow { AB }$ cùng hướng với $\overrightarrow { i }$ và $\l
 
 Suy ra:$\overrightarrow { AB }=\left ( { 3;0;0 } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Tọa độ của vectơ $\overrightarrow { AC }$ là:$\left ( { 3;4;6 } \right.  )$
 
@@ -444,7 +456,7 @@ Trong hình bình hànhABCD, ta có:$\left. \left. \left. \left. \left. \overrig
 
 Suy ra:$\overrightarrow { AC }=\left ( { 3;4;0 } \right.  )$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Tọa độ của vectơ $\overrightarrow { AC' }$ là:$\left ( { 3;-4;6 } \right.  )$
 
@@ -454,7 +466,7 @@ Trong hình bình hành $AA'C'C$, ta có:$\left. \left. \left. \left. \left. \ov
 
 Suy ra:$\overrightarrow { AC' }=\left ( { 3;4;6 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Tọa độ của vectơ $\overrightarrow { AM }$ là:$\left ( { \frac { 3 } { 2 };4;6 } \right.  )$, với $M$ là trung điểm của $C'D'$.
 
@@ -462,7 +474,7 @@ Vì $\left. \left. \left. \left. \left. \overrightarrow { AM }=\frac { 1 } { 2 }
 
 Suy ra:$\overrightarrow { AC }=\left ( { \frac { 3 } { 2 };4;6 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -479,7 +491,7 @@ Lời giải
 
 Ta có $\overrightarrow { AB }=\left ( { 1;\,\,1;\,\,1 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Tọa độ $C\left ( { 2;\,\,1;\,\,2 } \right.  )$.
 
@@ -487,7 +499,7 @@ Gọi $\left. C\left ( { x;\,y;\,\,z } \right.  )⇒\overrightarrow { DC }=\left
 
 VìABCDlà hình bình hành $\left. \left. ⇔\overrightarrow { DC }=\overrightarrow { AB } \right. \right.$ $⇔\left\{ \begin{array}{l} x-1=1y+1=1z-1=1 \end{array} \right.⇔\left\{ \begin{array}{l} x=2y=0z=2 \end{array} \right.$ $⇒C\left ( { 2;0;2 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Tọa độ $A'\left ( { 3;5;-6 } \right.  )$.
 
@@ -495,7 +507,7 @@ Ta có $\overrightarrow { AD }=\left ( { 0;\,\,-1;\,\,0 } \right.  )$. Gọi $\l
 
 $ADD'A'$ là hình bình hành $\left. \left. ⇔\overrightarrow { A'D' }=\overrightarrow { AD } \right. \right.$ $⇔\left\{ \begin{array}{l} 3-x'=04-y'=-z'=0 \end{array} \right.⇔\left\{ \begin{array}{l} x'=3y'=5z'=-6 \end{array} \right.$ $⇒A'\left ( { 3;5;-6 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Toạ độ trọng tâm tam giác $A'B'C$ là $G\left ( { 3;\,\,4;\,\,-3 } \right.  )$.
 
@@ -505,7 +517,7 @@ $ABB'A'$ là hình bình hành $\left. \left. ⇔\overrightarrow { A'B' }=\overr
 
 $G$ là trọng tâm tam giác $A'B'C$ $⇒\left\{ \begin{array}{l} x_{ G } =\frac { 2+3+4 } { 3 }=3y_{ G } =\frac { 0+5+6 } { 3 }=\frac { 11 } { 3 }z_{ G } =\frac { 2 } { 3 }=-3 \end{array} \right.⇒G\left ( { 3;\,\,\frac { 11 } { 3 };\,\,-3 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -530,7 +542,7 @@ $F_{ Z } =400cos60°=200\ N$
 
 $\left. \left. \left. \left. ⇒\overrightarrow { F_{ 2 } }=-200\overrightarrow { i }+282,84\overrightarrow { j }+200\overrightarrow { k } \right. \right. \right. \right.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $\left. \left. \left. \overrightarrow { F_{ 1 } }=86,547\overrightarrow { i }+185,601\overrightarrow { j }-143,394\overrightarrow { k } \right. \right. \right.$
 
@@ -554,7 +566,7 @@ $F_{ Y } =204,788.{ \rm{ c } }{ \rm{ o } }{ \rm{ s } }25°=185,601N$
 
 Vậy $\left. \left. \left. \overrightarrow { F_{ 1 } }=86,547\overrightarrow { i }+185,601\overrightarrow { j }-143,394\overrightarrow { k } \right. \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Độ lớn lực tổng hợp lên giá đỡ bằng $485,297N$
 
@@ -564,7 +576,7 @@ $\left. \left. \left. \left. \left. \overrightarrow { F_{ R } }=\overrightarrow 
 
 $F_{ R } =\sqrt{ 113,453 ^ { 2 } +468,441 ^ { 2 } +56,606 ^ { 2 } }≈485,297N$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Góc tạo bởi lực tổng hợp lên trục $Oy$ là $16,145°$
 
@@ -572,7 +584,7 @@ Gọi $α$ là góc tạo bởi lực tổng hợp lên trục $Oy$
 
 ${ \rm{ c } }{ \rm{ o } }{ \rm{ s } }α{ \rm{ = } }\frac { 468,441 } { 485,297 }⇒α≈15,145°$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -699,7 +711,15 @@ Mặt khác, $\overrightarrow{BC} = (x-940; y-550; z-9)$ nên $\left\{ \begin{ar
 
 > **Đáp số:** `33`
 
-<p align="center"><img src="/assets/images/toan-12/c2_b2_image947.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Ta có$O\left ( { 0;0;0 } \right.  )$ Gọi$B\left ( { x_{ B } ;y_{ B } ;z_{ B } } \right.  )$. Ta có$\left. \left. \overrightarrow { OA }=(2;3;1);\overrightarrow { OC }=(-1;2;3);\overrightarrow { OB }=\left ( { x_{ B } ;y_{ B } ;z_{ B } } \right.  ) \right. \right.$. VìOABClà hình bình hành nên theo quy tắc hình bình hành ta có: »$\overrightarrow   OB  =\overrightarrow   OA  +\overrightarrow   OC  ⇔    ⇔$ $\left. ⇒B\left ( { 1;5;4 } \right.  )⇒\overrightarrow { OB }=\left ( { 1;5;4 } \right.  ) \right.$. Có$\left. \left. \overrightarrow { OO' }=(1;-2;2);\overrightarrow { CC' }=\left ( { x_{ C' } +1;y_{ C' } -2;z_{ C' } -3 } \right.  );\overrightarrow { BB' }=\left ( { x_{ B' } -1;y_{ B' } -5;z_{ B' } -4 } \right.  ) \right. \right.$; $\overrightarrow { AA' }=\left ( { x_{ A' } -2;y_{ A' } -3;z_{ A' } -1 } \right.  )$ VìOABC. O'A'B'C'là hình hộp nên: »$\overrightarrow   OO'  =\overrightarrow   CC'  ⇔    ⇔$ $\left. ⇒C\left ( { 0;0;5 } \right.  )⇒\overrightarrow { OC }=\left ( { 0;0;5 } \right.  ) \right.$. »$\overrightarrow   OO'  =\overrightarrow   AA'  ⇔    ⇔$ $\left. ⇒A'\left ( { 3;1;3 } \right.  )⇒\overrightarrow { OA' }=\left ( { 3;1;3 } \right.  ) \right.$. »$\overrightarrow   OO'  =\overrightarrow   BB'  ⇔    ⇔       ⇒$ $\left. B'\left ( { 2;3;6 } \right.  )⇒\overrightarrow { OB' }=\left ( { 2;3;6 } \right.  ) \right.$. $\left. \left. \left. \left. \left. ⇒\overrightarrow { d }=\overrightarrow { OB }+\overrightarrow { OC }+\overrightarrow { OA' }+\overrightarrow { OB' }=\left ( { 6;9;18 } \right.  )⇒a+b+c=6+9+18=33 \right. \right. \right. \right. \right.$.
+<p align="center"><img src="/assets/images/toan-12/c2_b2_image947.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Ta có$O\left ( { 0;0;0 } \right.  )$ Gọi$B\left ( { x_{ B } ;y_{ B } ;z_{ B } } \right.  )$. Ta có$\left. \left. \overrightarrow { OA }=(2;3;1);\overrightarrow { OC }=(-1;2;3);\overrightarrow { OB }=\left ( { x_{ B } ;y_{ B } ;z_{ B } } \right.  ) \right. \right.$. VìOABClà hình bình hành nên theo quy tắc hình bình hành ta có:
+
+- $\overrightarrow   OB  =\overrightarrow   OA  +\overrightarrow   OC  ⇔    ⇔$ $\left. ⇒B\left ( { 1;5;4 } \right.  )⇒\overrightarrow { OB }=\left ( { 1;5;4 } \right.  ) \right.$. Có$\left. \left. \overrightarrow { OO' }=(1;-2;2);\overrightarrow { CC' }=\left ( { x_{ C' } +1;y_{ C' } -2;z_{ C' } -3 } \right.  );\overrightarrow { BB' }=\left ( { x_{ B' } -1;y_{ B' } -5;z_{ B' } -4 } \right.  ) \right. \right.$; $\overrightarrow { AA' }=\left ( { x_{ A' } -2;y_{ A' } -3;z_{ A' } -1 } \right.  )$ VìOABC. O'A'B'C'là hình hộp nên:
+
+- $\overrightarrow   OO'  =\overrightarrow   CC'  ⇔    ⇔$ $\left. ⇒C\left ( { 0;0;5 } \right.  )⇒\overrightarrow { OC }=\left ( { 0;0;5 } \right.  ) \right.$.
+
+- $\overrightarrow   OO'  =\overrightarrow   AA'  ⇔    ⇔$ $\left. ⇒A'\left ( { 3;1;3 } \right.  )⇒\overrightarrow { OA' }=\left ( { 3;1;3 } \right.  ) \right.$.
+
+- $\overrightarrow   OO'  =\overrightarrow   BB'  ⇔    ⇔       ⇒$ $\left. B'\left ( { 2;3;6 } \right.  )⇒\overrightarrow { OB' }=\left ( { 2;3;6 } \right.  ) \right.$. $\left. \left. \left. \left. \left. ⇒\overrightarrow { d }=\overrightarrow { OB }+\overrightarrow { OC }+\overrightarrow { OA' }+\overrightarrow { OB' }=\left ( { 6;9;18 } \right.  )⇒a+b+c=6+9+18=33 \right. \right. \right. \right. \right.$.
 
 </details>
 

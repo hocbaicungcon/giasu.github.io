@@ -58,53 +58,35 @@ lời khách quan công bằng và sáng tỏ.
 Y kiến xin chuyển về:
 sigmathsgroup@gmail.com
 Diện thoại: 01633749151
+---
 
-## 1 Số tự nhiên
+## Mục lục tuyển tập
 
-## 2 Số nguyên
+1. **[1. Số tự nhiên](#1-số-tự-nhiên)** (Bài 1 – 54)
+2. **[2. Số nguyên](#2-số-nguyên)** (Bài 55 – 90)
+3. **[3. Phân số](#3-phân-số)** (Bài 91 – 212)
+4. **[4. Số học](#4-số-học)** (Bài 213 – 230)
+5. **[5. Bài toán tỉ lệ, chuyển động đều, số đo thời gian](#5-bài-toán-tỉ-lệ-chuyển-động-đều-số-đo-thời-gian)** (Bài 231 – 288)
+   - 5.1 Đại lượng tỉ lệ thuận, tỉ lệ nghịch, tỉ lệ kép
+   - 5.2 Số đo thời gian, toán chuyển động đều
+   - 5.3 Một số dạng bài toán điển hình
+6. **[6. Hình học](#6-hình-học)** (Bài 289 – 385)
+   - 6.1 Tính diện tích
+   - 6.2 Tính góc
+   - 6.3 Khối lập phương
+7. **[7. Các phương pháp suy luận](#7-các-phương-pháp-suy-luận)** (Bài 386 – 508)
+   - 7.1 Tổ hợp, chỉnh hợp đơn giản
+   - 7.2 Bi đỏ bi xanh
+   - 7.3 Những bài toán logic - đối thoại
+   - 7.4 Biểu đồ Ven - logic
+   - 7.5 Nguyên lý Dirichlet
+   - 7.6 Hình học tổ hợp
+   - 7.7 Trò chơi - Games
+8. **[8. Một số dạng toán khác](#8-một-số-dạng-toán-khác)** (Bài 509 – 540)
 
-## 3 Phân số
+---
 
-## 4 Số học
-
-## 5 Bài toán tỉ lệ, chuyển động đều, số đo thời gian
-
-### 5.1 Đại lượng tỉ lệ thuận, tỉ lệ nghịch, tỉ lệ kép............ .
-
-5.2
-Số đo thời gian, toán chuyển động đều
-5.3
-Một số dạng bài toán điển hình
-
-## 6 Hình học
-
-### 6.1 Tính diện tích
-
-6.2
-Tính góc
-
-### 6.3 Khối lập phương
-
-## 7 Các phương pháp suy luận
-
-7.1
-Tổ hợp, chỉnh hợp đơn gián
-7.2
-Bi đỏ bi xanh
-
-### 7.3 Những bài toán logic - đối thoại . . .
-
-### 7.4 Biểu đồ Ven - logic
-
-### 7.5 Nguyên lý Dirichlet . . . . . . . . . .
-
-### 7.6 Hình học tổ hợp . .
-
-### 7.7 Trò chơi - Games
-
-## 8 Một số dạng toán khác
-
-## 1 Số tự nhiên
+## 1. Số tự nhiên
 
 **Bài 1.** Cho tập hợp D = {0;1;2;3; · ; 20j.
 - a) Viết tập hợp D bằng cách chỉ ra tính chất đặc trưng cho các phần tử của nó.
@@ -224,6 +206,16 @@ Bi đỏ bi xanh
 - d) Chia hết cho 125.
 
 **Bài 29.** Có bao nhiêu số tựt nhiên có ba chữ số và chia hết cho 3?
+
+**Bài 30.** Biết rằng $A = 7^n + 17 \cdot 3^n - 1$ là một số chia hết cho 9. Có thể sử dụng kết quả này để chứng tỏ rằng $B = 7^{n+1} + 18 \cdot 3^{n+1} - 1$ cũng chia hết cho 9 không?
+
+> [!NOTE] Chú ý
+> Ta có thể chứng minh kết quả tổng quát hơn: Với mọi số tự nhiên $n$, nếu $7^n + 3n - 1$ chia hết cho 9 thì $7^{n+1} + 3(n + 1) - 1$ cũng chia hết cho 9 (chuẩn bị làm quen với phương pháp quy nạp toán học).
+
+**Bài 31.**
+a) Cho $n$ là một số không chia hết cho 3. Chứng minh rằng $n^2$ chia cho 3 dư 1.
+b) Cho $p$ là một số nguyên tố lớn hơn 3. Hỏi $p^2 + 2003$ là số nguyên tố hay hợp số?
+
   ớng tớ rằng B = 78 + 18 -3 - 1 là gột số cha hết cho 9. Có thể sử dụng kết quả này để
   Chú ý: Ta có thể chứng minh kết quả tổng quát hơn:
   Với mọi số tự nhiên n, nếu 7 + 3n - 1 chia hết cho 9 thì 7n+1 + 3(n + 1) - 1 cũng chia hết
@@ -308,7 +300,7 @@ Bi đỏ bi xanh
 **Bài 54.** Tìm ba số tự nhiên a, b, c khác 0 sao cho các tích 140a, 180b, 200c bằng nhau và có giá trị
   nhỏ nhất.
 
-## 2 Số nguyên
+## 2. Số nguyên
 
 **Bài 55.** Tính nhanh:
 - a) -37 + 54 + (-70) + (-163) + 246;
@@ -442,7 +434,6 @@ Bi đỏ bi xanh
   lại mua lại giá 900, vì hết tiền về nhà anh ta đành bán con bò giá 1000. Hỏi anh ta thiệt hay
   lợi khi mua bán con bò?
 
-## 3 Phân sô
 
 Phân số, hỗn số
 
@@ -465,6 +456,8 @@ Phân số, hỗn số
 **Bài 90.** Tính giá trị biểu thức: A =
   (2.314)2
   1 ·5 · 6 + 2 · 10 · 12 + 4 · 20 · 24 + 9 · 45 · 54
+
+## 3. Phân số
 
 **Bài 91.** Tính nhanh:
   1·3 · 5 + 2 · 6 · 10 + 4 · 12 · 20 + 9 · 27· 45
@@ -788,11 +781,7 @@ Phân số, hỗn số
   sẽ đầy bể. Nếu vòi thứ hai chảy một mình thì bể sẽ đầy sau 7 giờ. Hỏi nếu cả hai vòi cùng chảy
   thì bể sẽ đầy sau mấy giờ?
 
-**Bài 136.** Hai người làm chung một công việc trong 12 giờ thì xong. Người thứ nhất làm một mình
-
-## 3 công việc thì mất 10 giờ, hỏi người thứ hai làm
-
-công việc còn lại mất bao nhiêu lâu?
+**Bài 136.** Hai người làm chung một công việc trong 12 giờ thì xong. Người thứ nhất làm một mình $\frac{2}{3}$ công việc thì mất 10 giờ, hỏi người thứ hai làm $\frac{1}{3}$ công việc còn lại mất bao nhiêu lâu?
 
 **Bài 137.** Lớp SAI và 5A2 có 8ĩ học sinh, biết rằng " số học sinh của lớp SA1 bằng g
   số học sinh
@@ -801,20 +790,13 @@ công việc còn lại mất bao nhiêu lâu?
 **Bài 138.** Một hình tam giác có chu vi là 120cm. Số đo ba cạnh của tam giác tỉ lệ với 5; 12; 13. Tìm
   số đo các cạnh của tam giác.
 
-**Bài 139.** Một đội công nhân làm đường trong 3 ngày. Ngày thứ nhất làm được - công việc, ngày
-  thứ hai làm được
-  g công việc, ngày thứ ba làm nốt 57 mét cuối. Hỏi đội công nhân đó phải
+**Bài 139.** Một đội công nhân làm đường trong 3 ngày. Ngày thứ nhất làm được $\frac{2}{7}$ công việc, ngày thứ hai làm được $\frac{3}{8}$ công việc, ngày thứ ba làm nốt 57 mét cuối. Hỏi đội công nhân đó phải
   làm bao nhiều mét đường?
 
-**Bài 140.** Một ô tô chạy quãng đường AB trong 3 giờ. Giờ đầu chạy được 2 quảng đường AB. Giờ
-  thứ hai chạy được 5 quảng đường còn lại và thêm 4km. Giờ thứ ba chạy nót 50km cuối. Tính
+**Bài 140.** Một ô tô chạy quãng đường AB trong 3 giờ. Giờ đầu chạy được $\frac{2}{5}$ quãng đường AB. Giờ thứ hai chạy được $\frac{2}{5}$ quãng đường còn lại và thêm 4km. Giờ thứ ba chạy nót 50km cuối. Tính
   quãng đường AB.
 
-**Bài 141.** Một ca nô xuối dòng sông từ A đến B trong 3 giờ rồi đi ngược dòng trở về A mất 4
-
-## 2 Siờ.
-
-Nếu một bè nứa trôi tự do xuôi dòng thì mất bao nhiêu thời gian để trôi từ A đến B?
+**Bài 141.** Một ca nô xuối dòng sông từ A đến B trong 3 giờ rồi đi ngược dòng trở về A mất $4\frac{1}{2}$ giờ. Nếu một bè nứa trôi tự do xuôi dòng thì mất bao nhiêu thời gian để trôi từ A đến B?
 
 **Bài 142.** Khi nhân một số với 124, một bạn học sinh đã đặt các tích riêng thằng cột với nhau nên
   dẫn đến kết quả sai là 88,2. Em hãy tìm kết quả đúng của phép nhân.
@@ -849,9 +831,7 @@ Nếu một bè nứa trôi tự do xuôi dòng thì mất bao nhiêu thời gia
   học sinh đã quên đặt một số 0 ở thương nên lúc thử lại bằng cách lấy thương nhân với số chia,
   được một số nhỏ hơn số bị chia 432,9 đơn vị. Tìm số bị chia và số chia.
 
-**Bài 151.** Có ba xe tải chở tổng cộng 15,6 tấn hàng hóa. Xe thứ nhất chở bằng
-
-## 4 xe thứ hai, xe
+**Bài 151.** Có ba xe tải chở tổng cộng 15,6 tấn hàng hóa. Xe thứ nhất chở bằng $\frac{3}{4}$ xe thứ hai, xe
 
 thứ ba chở ít hơn tổng số hàng hóa hai xe đầu chở được là 1,2 tấn. Hỏi mỗi xe chở được bao
 nhiêu tấn hàng hóa?
@@ -873,6 +853,9 @@ nhiêu tấn hàng hóa?
   kia. Hỏi mỗi tốp có bao nhiêu học sinh?
 
 **Bài 156.** Trong khối học sinh lớp 9 của một trường trung học cơ sở có 60% số học sinh thích bóng
+
+**Bài 157.** Năm nay con 12 tuổi, bố 42 tuổi. Tính tỉ số giữa tuổi con và tuổi bố ở những thời điểm: hiện nay; trước đây 7 năm; sau đây 28 năm.
+
   đá, 3 sô học sinh thích bóng bàn, 40% số học sinh thích bóng truyền và -
   T5 số học sinh thích
   đá cầu. Hãy tìm số học sinh của mỗi nhóm cùng thích một môn thể thao, biết số học sinh của
@@ -908,13 +891,7 @@ nhiêu tấn hàng hóa?
 - a) Tính số mét vải cửa hàng đã bán trong 3 ngày.
 - b) Tính số mét vải bán trong mỗi ngày thứ nhất và thứ hai?
 
-**Bài 164.** Khối lớp 6 ở một trường học có 4 lớp A, B, C, D. loc sinh lớp &A bằng g học sinh khỏi
-
-## 6 và hằng g
-
-- học sinh lớp 6B. Học sinh lớp 6C bằng g
-số học sinh lớp 6B và ít hơn học sinh
-lớp 6D là 5 học sinh. Hỏi số học sinh khối 6 của trường là bao nhiêu?
+**Bài 164.** Khối lớp 6 ở một trường học có 4 lớp A, B, C, D. Số học sinh lớp 6A bằng $\frac{9}{10}$ học sinh khối 6 và bằng $\frac{8}{9}$ học sinh lớp 6B. Học sinh lớp 6C bằng $\frac{3}{5}$ số học sinh lớp 6B và ít hơn học sinh lớp 6D là 5 học sinh. Hỏi số học sinh khối 6 của trường là bao nhiêu?
 
 **Bài 165.** Nhà trường phát 30 suất học bổng cho 3 lớp khối 6. Số học bổng của lớp 6A nhận bằng
   g số suất học bổng của 2 lớp 6B và 6C. Số học bổng của lớp 6B bằng = số suất của lớp 6C.
@@ -953,12 +930,7 @@ lớp 6D là 5 học sinh. Hỏi số học sinh khối 6 của trường là ba
   thì chu vi không thay đổi. Tính diện tích của hình chữ nhật đó.
 
 **Bài 174.** Sau buổi biểu diễn văn nghệ, nhà trường tặng cam cho các tiết mục. Lần đầu tặng tiết
-  mục đồng ca hết g số cam và - quả; lần thứ hai tặng tiết mục tổp ca hết - số cam còn lại và
-  - quả; lần thứ ba tặng tiết mục đơn ca hết
-
-## 4 số cam còn lại và
-
-## 4 quả thì vừa hết. Tính số
+  tặng tiết mục đồng ca hết $\frac{5}{6}$ số cam và $\frac{1}{6}$ quả; lần thứ hai tặng tiết mục tốp ca hết $\frac{6}{7}$ số cam còn lại và $\frac{1}{7}$ quả; lần thứ ba tặng tiết mục đơn ca hết $\frac{3}{4}$ số cam còn lại và $\frac{1}{4}$ quả thì vừa hết. Tính số
 
 cam trường đó đã tặng và số cam tặng riêng cho các tiết mục đồng ca, tốp ca và đơn ca.
 
@@ -1007,6 +979,13 @@ cam trường đó đã tặng và số cam tặng riêng cho các tiết mục 
   = và tổng bình phương của chúng bằng 4736.
 
 **Bài 185.** Cho phân số B = 2n - 3in € 2
+
+**Bài 186.**
+a) Tìm các chữ số $a, b, c$ khác nhau sao cho: $\overline{a,bc} : (a + b + c) = 0{,}25$.
+b) Tìm số tự nhiên có 2 chữ số sao cho tỉ số của số đó với tổng các chữ số của nó là:
+- Nhỏ nhất.
+- Lớn nhất.
+
 - a) Tìm n để B có giá trị là số chính phương.
 - b) Tìm n để B là phân số tối giản.
 - c) Tìm n để B đạt GTNN? GTLN? và tính các giá trị đó.
@@ -1054,7 +1033,6 @@ cam trường đó đã tặng và số cam tặng riêng cho các tiết mục 
 **Bài 191.** Từ 0 giờ đến 24 giờ số thời gian còn lại bằng 60% số thời gian đã trôi qua. Hỏi bây giờ
   là mấy giờ?
 
-## 4 Số học
 
 **Bài 192.** Tìm số nguyên dương n sao cho n + 2 là ước của 111 còn n - 2 là bội của 11.
 
@@ -1116,6 +1094,8 @@ cam trường đó đã tặng và số cam tặng riêng cho các tiết mục 
 
 **Bài 212.** Tìm số tự nhiên nhỏ nhất mà chia hết cho tất cả các số 1,2,3, 4,5,6,7,8,9,10.
 
+## 4. Số học
+
 **Bài 213.** Số 19941994 có thể là tổng của hai số nguyên liên tiếp hay không? Có thể là tích của ba
   số nguyên liên tiếp hay không?
 
@@ -1169,6 +1149,10 @@ cam trường đó đã tặng và số cam tặng riêng cho các tiết mục 
 
 **Bài 230.** Tổng của một số có 5 chữ số và một số có 4 chữ số là 33190. Nếu viết các số này theo
   chiều ngược lai, thì tổng của các số nhận được là 48400. Hỏi các số này là các số nào?
+
+## 5. Bài toán tỉ lệ, chuyển động đều, số đo thời gian
+
+### 5.1 Đại lượng tỉ lệ thuận, tỉ lệ nghịch, tỉ lệ kép
 
 **Bài 231.** Một cửa hàng có sáu hòm hàng có khối lượng 316kg, 327kg, 336kg, 338kg, 349kg, 351kg.
   Trong một ngày, cửa hàng đã bán 5 hòm, trong đó khối lượng hàng bán buổi sáng gấp đúng 4
@@ -1238,9 +1222,7 @@ cam trường đó đã tặng và số cam tặng riêng cho các tiết mục 
 **Bài 246.** Khối lớp 5 có tổng cộng 147 học sinh, tính ra cứ 3 học sinh nam thì có 4 học sinh nữ. Hỏi
   khối lớp năm có bao nhiều học sinh nam^2 Bao nhiêu học sinh nữ?
 
-**Bài 247.** Ba người làm xong một con đường trong 14 ngày. Hỏi muốn làm xong con đường đó trong
-
-## 7 ngày thì phải cần có bao nhiêu người?
+**Bài 247.** Ba người làm xong một con đường trong 14 ngày. Hỏi muốn làm xong con đường đó trong 7 ngày thì phải cần có bao nhiêu người?
 
 **Bài 248.** Một cửa hàng có một số dầu được chia thành hai phần bằng nhau. Phần thứ nhất chứa
   trong các thùng 15 lít, phần thứ hai chứa trong các thùng 20 lít, tổng số thùng dầu hai loại là
@@ -1256,6 +1238,8 @@ cam trường đó đã tặng và số cam tặng riêng cho các tiết mục 
 
 5.2
 Số đo thời gian, toán chuyển động đều
+
+### 5.2 Số đo thời gian, toán chuyển động đều
 
 **Bài 251.** Hằng ngày một xe khách di từ bến A đến bến B với vận tốc 45km/giờ. Hôm nay vì xuất
   phát muộn 9 phút nên xe ô tô phải tăng vận tốc thêm 5km/giờ và đến B đúng thời gian như
@@ -1388,6 +1372,9 @@ Số đo thời gian, toán chuyển động đều
   3 +-
   4+5
 
+![Hình vẽ Bài 279](/assets/images/108x5-toan-5-6/bai-279.png)
+
+
 **Bài 280.** Có 3 đôi tất xám, 3 đồi tất vàng ở trong ngăn kéo. Hỏi Alan phải lấy ra khỏi ngăn kéo
   bao nhiêu chiếc tất trong một căn phòng tối để có được một cặp tất cùng màu?
 
@@ -1417,7 +1404,7 @@ Số đo thời gian, toán chuyển động đều
 **Bài 288.** Một tờ giấy hình vuông được nối hai điểm giữa của 2 cạnh liền nhau, sau đó người ta cắt
   hình vuông theo đường nối trên. Hỏi mảnh to có bao nhiêu cạnh?
 
-## 6 Hình học
+## 6. Hình học
 
 ### 6.1 Tính diện tích
 
@@ -1426,11 +1413,20 @@ Số đo thời gian, toán chuyển động đều
   M
   B
 
+![Hình vẽ Bài 289](/assets/images/108x5-toan-5-6/bai-289.png)
+
+
 **Bài 290.** Trong tam giác ABC, cạnh AB chia thành 3 phần bằng nhau, cạnh BC chia thành 2 phần
   bằng nhau. Tính diện tích phần màu đỏ.
   BI
 
+![Hình vẽ Bài 290](/assets/images/108x5-toan-5-6/bai-290.png)
+
+
 **Bài 291.** Tính diện tích con bướm.
+
+![Hình vẽ Bài 291](/assets/images/108x5-toan-5-6/bai-291.png)
+
 
 ### 6.1 Tính diện tích
 
@@ -1443,26 +1439,47 @@ Số đo thời gian, toán chuyển động đều
   10cm
   Sem
 
+![Hình vẽ Bài 293](/assets/images/108x5-toan-5-6/bai-293.png)
+
+
 **Bài 294.** Cho hình chữ nhật ABCD có chu vi là 78cm, chiều dài AB hơn chiều rộng BC là 15cm.
   Trên BC lấy điểm M, trên CD lấy điểm N sao cho hai đường thẳng AM, AN chia hình chữ nhật
   thành 3 phần có diện tích bằng nhau. Tính độ dài đoạn CM, CN.
 
+![Hình vẽ Bài 294](/assets/images/108x5-toan-5-6/bai-294.png)
+
+
 **Bài 295.** Tính diện tích phần màu đỏ.
+
+![Hình vẽ Bài 295](/assets/images/108x5-toan-5-6/bai-295.png)
+
 
 ### 6.1 Tính diện tích
 
 **Bài 296.** Tính diện tích phần tô màu xanh.
 
+![Hình vẽ Bài 296](/assets/images/108x5-toan-5-6/bai-296.png)
+
+
 **Bài 297.** Tính diện tích phần tô màu tím.
   6cт
   4cm
 
+![Hình vẽ Bài 297](/assets/images/108x5-toan-5-6/bai-297.png)
+
+
 **Bài 298.** Hình vuông bên trái có diện tích 60cm^2. Tính diện tích tam giác được tô mầu.
+
+![Hình vẽ Bài 298](/assets/images/108x5-toan-5-6/bai-298.png)
+
 
 **Bài 299.** Cho AE = 20cm, BF = 30cm. Tính diện tích hình chữ nhật.
   F
   E
   B
+
+![Hình vẽ Bài 299](/assets/images/108x5-toan-5-6/bai-299.png)
+
 
 ### 6.1 Tính diện tích
 
@@ -1470,19 +1487,31 @@ Số đo thời gian, toán chuyển động đều
   Xanh: 68cm^2 Tim = 17cm^2
   Tính ·
 
+![Hình vẽ Bài 300](/assets/images/108x5-toan-5-6/bai-300.png)
+
+
 **Bài 301.** Tính diện tích phần tô màu.
   7 cm
   3cm
   3cm
   7cm
 
+![Hình vẽ Bài 301](/assets/images/108x5-toan-5-6/bai-301.png)
+
+
 **Bài 302.** Chu vi của hình bình hành ABCD là 80cm. AE = 9cm và AF = 7cm. Tính diện tích của
   hình bình hành ABCD.
   E
 
+![Hình vẽ Bài 302](/assets/images/108x5-toan-5-6/bai-302.png)
+
+
 **Bài 303.** Hình vuông ABCD. Cho điểm E như hình vẽ, biết DE = 10cm, AADE = 18cm^2,
   ACDE = 10cm2. Tính diện tích hình vuông ABCD.
   E
+
+![Hình vẽ Bài 303](/assets/images/108x5-toan-5-6/bai-303.png)
+
 
 ### 6.1 Tính diện tích
 
@@ -1492,15 +1521,27 @@ Số đo thời gian, toán chuyển động đều
   B
   C'
 
+![Hình vẽ Bài 304](/assets/images/108x5-toan-5-6/bai-304.png)
+
+
 **Bài 305.** Tính diện tích hình chữ nhật ABCD.
   бет
+
+![Hình vẽ Bài 305](/assets/images/108x5-toan-5-6/bai-305.png)
+
 
 **Bài 306.** Biết cạnh của mỗi ô vuông trong hình dưới đều dài 1cm. Tính tổng chu vi và tổng diện
   tích của tất cả các hình vuông ở trong đó.
 
+![Hình vẽ Bài 306](/assets/images/108x5-toan-5-6/bai-306.png)
+
+
 ### 6.1 Tính diện tích
 
 **Bài 307.** Tính tỉ lệ diện tích hai hình lục giác đều ABCDEF và A' B'CD'E' F'.
+
+![Hình vẽ Bài 307](/assets/images/108x5-toan-5-6/bai-307.png)
+
 
 **Bài 308.** Bác Tư có một thửa ruộng hình tam giác vuông có hai cạnh góc vuông dài 60m và 30m.
   Năm nay xã đào một con mương rộng 3m chạy dọc theo cạnh 60m (xem hình vẽ). Em hãy tính
@@ -1509,24 +1550,39 @@ Số đo thời gian, toán chuyển động đều
   3m
   60m
 
+![Hình vẽ Bài 308](/assets/images/108x5-toan-5-6/bai-308.png)
+
+
 **Bài 309.** Tính diện tích hình thang ABCD. Biết diện tích các hình tam giác AOD và DOC như
   hình vẽ.
   10cm₴
   20cm₴
+
+![Hình vẽ Bài 309](/assets/images/108x5-toan-5-6/bai-309.png)
+
 
 **Bài 310.** Tính diện tích hình tứ giác.
   13cm
   13cm
   12cm
 
+![Hình vẽ Bài 310](/assets/images/108x5-toan-5-6/bai-310.png)
+
+
 ### 6.1 Tính diện tích
 
 **Bài 311.** Biết diện tích tứ giác là 112. Tính diện tích phần tô mẫu.
+
+![Hình vẽ Bài 311](/assets/images/108x5-toan-5-6/bai-311.png)
+
 
 **Bài 312.** Tính diện tích ADEF.
   B
   20cтŻ
   C
+
+![Hình vẽ Bài 312](/assets/images/108x5-toan-5-6/bai-312.png)
+
 
 **Bài 313.** Cho hình chữ nhật ABCD. I là điểm chính giữa cạnh AB. Nỗi D với 1, đoạn thắng DB
   cắt đoạn thắng IC tại K (hình vẽ).
@@ -1536,6 +1592,9 @@ Số đo thời gian, toán chuyển động đều
   B
   K
 
+![Hình vẽ Bài 313](/assets/images/108x5-toan-5-6/bai-313.png)
+
+
 ### 6.1 Tính diện tích
 
 **Bài 314.** Cho hình chữ nhật ABCD và các điểm M, O, I sao cho MI = ID và AO = OI (hình
@@ -1544,11 +1603,17 @@ Số đo thời gian, toán chuyển động đều
   M
   C
 
+![Hình vẽ Bài 314](/assets/images/108x5-toan-5-6/bai-314.png)
+
+
 **Bài 315.** Cho hình thang vuỡng MNPQ vưông góc tại M rà Q; PQ = 2MN. Kéo dài NQ rà NP
   cắt nhau tại A.
 - a) So sánh diện tích hai tam giác MNP và MQN.
 - b) So sánh diện tích hai tam giác AQP và AQN.
 - c) Diện tích hình thang MNPQ bằng 63cm2. Tính diện tích tam giác AQP.
+
+![Hình vẽ Bài 315](/assets/images/108x5-toan-5-6/bai-315.png)
+
 
 ### 6.1 Tính diện tích
 
@@ -1560,12 +1625,21 @@ Số đo thời gian, toán chuyển động đều
   N
   C
 
+![Hình vẽ Bài 316](/assets/images/108x5-toan-5-6/bai-316.png)
+
+
 **Bài 317.** Cho hình thang ABCD có AB song song với CD và diện tích bằng 40cm^2. Kéo dài AB
   một đoạn BM sao cho AB = BM, kéo dài BC một đoạn CN sao cho BC = CN, kéo dài CD
   một đoạn DP sao cho CD = DP, kéo dài DA một đoạn AQ sao cho DA = AQ. Nối M, N, P,
   Q. Tìm diện tích tứ giác MNPQ.
 
+![Hình vẽ Bài 317](/assets/images/108x5-toan-5-6/bai-317.png)
+
+
 **Bài 318.** Tính diện tích tô mẫu vàng (biết rằng hình thang có đáy nhỏ bằng 3 đáy lớn).
+
+![Hình vẽ Bài 318](/assets/images/108x5-toan-5-6/bai-318.png)
+
 
 **Bài 319.** Cho hình tam giác ABC có điểm N là điểm chính giữa cạnh AC, trên hình đó có hình
   thang BMNE như hình vẽ. Nỗi B với N, nổi E với M, hai đoạn thắng này gặp nhau ở điểm O.
@@ -1583,38 +1657,64 @@ M
 - a) Tổng diện tích hai hình vuông bằng 202cm2.
 - b) Hiệu diện tích hai hình vuông bằng 95cm^2.
 
+![Hình vẽ Bài 320](/assets/images/108x5-toan-5-6/bai-320.png)
+
+
 **Bài 321.** Tính hiệu diện tích hai hình được tô màu.
   /5cm
   6ст
+
+![Hình vẽ Bài 321](/assets/images/108x5-toan-5-6/bai-321.png)
+
 
 ### 6.1 Tính diện tích
 
 **Bài 322.** Tính tỉ lệ các hình tô màu với nhau.
   12cm
 
+![Hình vẽ Bài 322](/assets/images/108x5-toan-5-6/bai-322.png)
+
+
 **Bài 323.** Tính tỉ lệ diện tích phần tô đậm và hình vuông lớn nhất.
+
+![Hình vẽ Bài 323](/assets/images/108x5-toan-5-6/bai-323.png)
+
 
 **Bài 324.** Biết diện tích hình vuông lớn là 252cm^2. Tìm x và y.
   yem^2
+
+![Hình vẽ Bài 324](/assets/images/108x5-toan-5-6/bai-324.png)
+
 
 **Bài 325.** Diện tích hình chữ nhật nhỏ hơn 160cm^2. Ba hình vuông A, B, C có các cạnh đều nguyên
   dương. Tỉ số A : B = 4 : 9. Tính diện tích phần tô đậm.
   C
 
+![Hình vẽ Bài 325](/assets/images/108x5-toan-5-6/bai-325.png)
+
+
 ### 6.1 Tính diện tích
 
 **Bài 326.** Chia lục giác đều thành 8 phần giống nhau và bằng nhau.
 
+![Hình vẽ Bài 326](/assets/images/108x5-toan-5-6/bai-326.png)
+
+
 **Bài 327.** Có thể lát hình vuông thiếu hai đỉnh bằng domino 1 x 2 không?
+
+![Hình vẽ Bài 327](/assets/images/108x5-toan-5-6/bai-327.png)
+
 
 **Bài 328.** Dùng 2 đường thẳng chia tờ giấy kẻ ô vuông thành 4 phần có tỷ lệ diện tích là 1 : 2 : 3 : 4.
 
+![Hình vẽ Bài 328](/assets/images/108x5-toan-5-6/bai-328.png)
+
+
 **Bài 329.** Hình chữ nhật được gấp theo hình 1 được hình 2. Từ hình 2 gấp theo trục đối xứng được
-  hình 3. Tính diện tích của hình 3 biết tổng diện tích phần tô đậm là 10 cm^2 và diện tích hình
+  hình 3. Tính diện tích của hình 3 biết tổng diện tích phần tô đậm là $10\text{ cm}^2$ và diện tích hình 3 bằng $\frac{4}{11}$ diện tích hình chữ nhật.
 
-## 3 bằng
+![Hình vẽ Bài 329](/assets/images/108x5-toan-5-6/bai-329.png)
 
-diện tích hình chữ nhật.
 
 ### 6.1 Tính diện tích
 
@@ -1624,14 +1724,23 @@ diện tích hình chữ nhật.
 - b) Diện tích phần màu vàng.
   D
 
+![Hình vẽ Bài 330](/assets/images/108x5-toan-5-6/bai-330.png)
+
+
 **Bài 331.** Đem 9,25m dây gai buộc thành hình chữ nhật trên tất cả các mặt của một cái thùng các
   tông hình lập phương (xem hình vẽ). Phần các cột nút chiếm 2,5dm. Tính diện tích toàn phần
   cái thùng.
+
+![Hình vẽ Bài 331](/assets/images/108x5-toan-5-6/bai-331.png)
+
 
 **Bài 332.** Một con lăn xoay tròn mà không trượt vào bên trong một đường tròn lớn. Bán kính của
   đường tròn bằng 4 lần bán kính của con lăn. Hỏi con lăn đã quay được bao nhiêu vòng nếu
   tâm con lăn quay về vị trí cũ?
   ·D
+
+![Hình vẽ Bài 332](/assets/images/108x5-toan-5-6/bai-332.png)
+
 
 ### 6.1 Tính diện tích
 
@@ -1641,6 +1750,9 @@ diện tích hình chữ nhật.
   8cm
   D
   F E
+
+![Hình vẽ Bài 333](/assets/images/108x5-toan-5-6/bai-333.png)
+
 
 **Bài 334.** Cho tam giác ABC. M là điểm chính giữa cạnh BC, N là điểm chính giữa cạnh AC. AM
   và AN cắt nhau tại G.
@@ -1671,10 +1783,15 @@ diện tích hình chữ nhật.
   B
   N
 
+![Hình vẽ Bài 338](/assets/images/108x5-toan-5-6/bai-338.png)
+
+
 ### 6.2 Tính góc
 
 6.2
 Tính góc
+
+### 6.2 Tính góc
 
 **Bài 339.** 1) Trong hình dưới có hai đường thẳng m và n và ba điểm chưa đặt tên. Hãy điền các
   chữ A, B, C vào đúng vị trí của nó biết:
@@ -1684,6 +1801,9 @@ Tính góc
   2) Vẽ đường thẳng p và các điểm A, B nằm trên p.
 - a) Nêu cách vẽ điểm C thẳng hàng với hai điểm A, B;
 - b) Nêu cách vẽ điểm D không thẳng hàng với 2 điểm A, B.
+
+![Hình vẽ Bài 339](/assets/images/108x5-toan-5-6/bai-339.png)
+
 
 **Bài 340.** Cho trước một số điểm trong đó không có 3 điểm nào thẳng hàng. Vẽ các đường thẳng
   đi qua các cặp điểm. Biết tổng số đường thẳng vẽ được 28. Hỏi có bao nhiêu điểm cho trước?
@@ -1701,6 +1821,9 @@ Tính góc
 - a) Hình có mấy tia? Có mấy đoạn thẳng?
 - b) Những cặp đoạn thắng nào không cắt nhau?
 - c) Hai đoạn thằng nào cắt nhau tại điểm nằm giữa hai đầu của mỗi đoạn thẳng?
+
+![Hình vẽ Bài 343](/assets/images/108x5-toan-5-6/bai-343.png)
+
 
 ### 6.2 Tính góc
 
@@ -1763,6 +1886,12 @@ Tính góc
   ít nhất là 50 điểm trong số các điểm đã cho hay không?
 
 **Bài 356.** Hai góc xOy và xOz bù nhau nhưng không kễ nhau và xOy < xOz; gọi tia Ot là tia đối
+
+**Bài 357.**
+a) Vẽ $\triangle ABC$ biết $BC = 3{,}5\text{ cm}$; $AB = 2\text{ cm}$; $AC = 3\text{ cm}$.
+b) Vẽ tiếp $\triangle ADE$ biết $D$ thuộc tia đối của tia $AB$ và $AD = 1\text{ cm}$; $E$ thuộc tia đối của tia $AC$ và $AE = 1{,}5\text{ cm}$.
+c) Hai tia $BE$ và $CD$ cắt nhau tại $O$. Dùng compa để kiểm tra xem $E$ và $D$ theo thứ tự có phải là trung điểm của $OB$ và $OC$ không?
+
   của tia Oz. Tia Oz có phải là tia phân giác của góc yOt không?
   357.
 - a) Vẽ ДАВС biết BC = 3, 5cm; AB = 2cm; AC = 3cm.
@@ -1774,10 +1903,16 @@ Tính góc
 **Bài 358.** Cho AABD và AACE cân tại B và C. BFC = 105°. Tính BAC.
   c
 
+![Hình vẽ Bài 358](/assets/images/108x5-toan-5-6/bai-358.png)
+
+
 ### 6.2 Tính góc
 
 **Bài 359.** Dường thăng CD chia đôi góc ACe thành góc 1 và 2. Đường thằng BD chia đôi góc ABe
   thành góc 3 và 4. Biết góc A bằng 76°, tìm D.
+
+![Hình vẽ Bài 359](/assets/images/108x5-toan-5-6/bai-359.png)
+
 
 **Bài 360.** Tam giác ABC, AB = 7, BC = 6 và CA = 7, các đường phần giác trong cắt nhau tại
   điểm I. Qua I kẻ đường thẳng song song với AB và cắt các cạnh bên tại M và N. Tính chu vi
@@ -1800,8 +1935,14 @@ Tính góc
 **Bài 366.** Một hình bình hành được chia thành các tam giác cân như trong hình vẽ. Hỏi các góc
   của hình bình hành này là bao nhiêu.
 
+![Hình vẽ Bài 366](/assets/images/108x5-toan-5-6/bai-366.png)
+
+
 **Bài 367.** Một mảnh giấy hình chữ nhật bị gập lại theo hình dưới đây. Tính góc a.
   IZ5 °
+
+![Hình vẽ Bài 367](/assets/images/108x5-toan-5-6/bai-367.png)
+
 
 ### 6.2 Tính góc
 
@@ -1809,18 +1950,30 @@ ADP.
 
 **Bài 368.** ABCD là một hình vuông. ABPC là một tam giác đều. AB = BP và CD = CP. Tìm góc
 
+![Hình vẽ Bài 368](/assets/images/108x5-toan-5-6/bai-368.png)
+
+
 **Bài 369.** Trong hình vẽ, BE = AC, CAE = 30° và ÃEB = 70°. Tìm góc ẤBC
   B
   E
+
+![Hình vẽ Bài 369](/assets/images/108x5-toan-5-6/bai-369.png)
+
 
 **Bài 370.** Trong biểu đồ dưới đây; AB = AC = AD. Góc ABC = 40° và góc ACD = 80°. Tính góc
   BAD.
   B./ 40°
 
+![Hình vẽ Bài 370](/assets/images/108x5-toan-5-6/bai-370.png)
+
+
 **Bài 371.** ABCD là một hình vuông và tam giác BCE là tam giác đều. Tính góc AED.
   A·
   E
   D
+
+![Hình vẽ Bài 371](/assets/images/108x5-toan-5-6/bai-371.png)
+
 
 ### 6.3 Khối lập phương
 
@@ -1828,6 +1981,9 @@ ADP.
 
 **Bài 373.** Trong tam giác ABC, AB = AC, AD = AE và BAD = 60°. Tính góc CDE.
   B
+
+![Hình vẽ Bài 373](/assets/images/108x5-toan-5-6/bai-373.png)
+
 
 **Bài 374.** Trong tam giác ABC, góc ABC bằng 80°, AD = AE và CD = CF. Tính góc EDF.
   c
@@ -1880,10 +2036,13 @@ ADP.
   phẳng qua các điểm trên các cạnh và cách đỉnh 2cm. Hỏi hình khối nhận được có bao nhiêu
   đỉnh?
 
-## 7 Các phương pháp suy luận
 
 7.1
 Tổ hợp, chỉnh hợp đơn gián
+
+## 7. Các phương pháp suy luận
+
+### 7.1 Tổ hợp, chỉnh hợp đơn giản
 
 **Bài 386.** Có bao nhiêu số có 2 chữ số mà chữ số thứ 2 (hàng đơn vị) là số lẻ?
 
@@ -1926,9 +2085,7 @@ Tổ hợp, chỉnh hợp đơn gián
 **Bài 400.** Có 5 bạn nữ và 3 bạn nam chia thành 2 đội chơi bóng rổ. Hỏi có bao nhiêu cách nếu đội
   nào cũng có ít nhất một bạn nam^2
 
-**Bài 401.** Từ 7 người đàn ông và 4 người đàn bà phải chọn ra một đội 6 người trong đó có ít nhất
-
-## 2 người đàn bà. Hỏi có bao nhiêu cách?
+**Bài 401.** Từ 7 người đàn ông và 4 người đàn bà phải chọn ra một đội 6 người trong đó có ít nhất 2 người đàn bà. Hỏi có bao nhiêu cách?
 
 **Bài 402.** Có bao nhiêu bộ số {a, b, c} sao cho a.b.c = 2310?
 
@@ -2010,6 +2167,8 @@ Tổ hợp, chỉnh hợp đơn gián
   có bao nhiêu hòn bi cùng màu?
   7.3
   Những bài toán logic - đối thoại
+
+### 7.3 Những bài toán logic - đối thoại
 
 **Bài 425.** Trong hộp có 20 hòn bi, có các màu khác nhau. Mỗi màu có ít nhất 2 hòn. Hỏi nhiều
   nhất có bao nhiêu hòn bi khác màu?
@@ -2109,9 +2268,7 @@ Tổ hợp, chỉnh hợp đơn gián
 
 **Bài 442.** Cư dân sinh sống trên một hòn đảo gồm những người luôn nói thật và những người luôn
   nói dối. Một hôm có vị khách du lịch thăm đảo. Vị khách gặp 5 cư dân và hỏi họ: "Trong số
-  các bạn có bao nhiêu người nói thật". Các con số của 3 người đầu tiên đưa ra lần lượt là 0, 1,
-
-**Bài 1.** Hỏi hai người còn lại đưa ra những số nào?
+  các bạn có bao nhiêu người nói thật". Các con số của 3 người đầu tiên đưa ra lần lượt là 0, 1, 1. Hỏi hai người còn lại đưa ra những số nào?
 
 **Bài 443.** Mười người ngồi quanh bàn tròn gồm những người luôn nói thật và những người luôn nói
   dối. Hai người trong số họ nói: "Hai người ngồi bên cạnh tôi đều là người nói dối". Tám người
@@ -2220,11 +2377,8 @@ Tổ hợp, chỉnh hợp đơn gián
 vii. Bao nhiêu học sinh có bằng B về đúng một trong ba ngoại ngữ trên?
 viii. Bao nhiêu học sinh không có bằng B từ một trong ba ngoại ngữ trên?
 Theo lớp trưởng câu hỏi thứ 8 là không cần thiết.
-- a) Hãy xác định các giá trị của các câu hỏi còn lại nêu biết rằng các câu trả lời lần lượt cho
-
-## 6 câu hỏi đầu là: 32, 20, 15, 6, 2, 9.
-
-- b) Kí hiệu câu trả lời thứ y là xị. Hãy biểu diễn x7 và xg theo giá trị của X1, X2, X3, X4, X5, X6-
+- a) Hãy xác định các giá trị của các câu hỏi còn lại nếu biết rằng các câu trả lời lần lượt cho 6 câu hỏi đầu là: 32, 20, 15, 6, 2, 9.
+- b) Kí hiệu câu trả lời thứ $y$ là $x_y$. Hãy biểu diễn $x_7$ và $x_8$ theo giá trị của $x_1, x_2, x_3, x_4, x_5, x_6$.
 
 **Bài 462.** Từ 1 đến 1200 có bao nhiêu số nguyên dương biết rằng các số đó:
 - a) Không chia hết cho 2.
@@ -2262,6 +2416,8 @@ Theo lớp trưởng câu hỏi thứ 8 là không cần thiết.
 7.5
 Nguyên lý Dirichlet
 
+### 7.5 Nguyên lý Dirichlet
+
 **Bài 468.** Có 70 viên bi, trong đó 20 đỏ, 20 xanh, 20 vàng và trong mười viên còn lại có vài viên
   đen, số còn lại là màu trắng. Hỏi phải lấy ra ít nhất bao nhiều viên bi để chắc chắn trong số
   lấy ra có 10 viên bi cùng màu?
@@ -2289,9 +2445,7 @@ Nguyên lý Dirichlet
 **Bài 473.** Một thành phố cần có bao nhiêu dân số để tồn tại hai người có hàm răng giống nhau? (cùng
   vị trí còn hay mất - mỗi người có thể có không quá 36 cái răng).
 
-**Bài 474.** Tổng của 50 số nguyên dương đôi một khác nhau bằng 2496. CMR giữa chúng có ít nhất
-
-## 2 số chẵn?
+**Bài 474.** Tổng của 50 số nguyên dương đôi một khác nhau bằng 2496. Chứng minh rằng giữa chúng có ít nhất 2 số chẵn?
 
 **Bài 475.** CMR giữa 7 số chính phương luôn tồn tại hai số có hiệu chia hết cho 10.
 
@@ -2299,6 +2453,8 @@ Nguyên lý Dirichlet
   số nào trong chúng đều không chia hết cho 7?
   7.6
   Hình học tố hợp
+
+### 7.6 Hình học tổ hợp
 
 **Bài 477.** Trên mặt phắng n điểm có thế xác định nhiều nhất bao nhiêu đường thắng nối các đỉnh
   với nhau? Làm với các trường hợp n = 5,6,10, k.
@@ -2332,6 +2488,9 @@ Nguyên lý Dirichlet
   hình khối đó được xếp từ bao nhiêu hình lập phương con? Hỏi nhiều nhất hình khối đó được
   xếp từ bao nhiêu hình lập phương con?
 
+![Hình vẽ Bài 487](/assets/images/108x5-toan-5-6/bai-487.png)
+
+
 **Bài 488.** Hãy chia các số 1,2,3,..., 16 thành hai nhóm mỗi nhóm 8 số sao cho nếu từ một nhóm
   ta tính tổng của 2 số bất kỳ khác nhau, thì tổng này cũng có thể nhận được bằng cách cộng
   hai số khác nhau thích hợp từ nhóm kia.
@@ -2357,6 +2516,8 @@ Nguyên lý Dirichlet
   sao cho bất kể 3 số đứng cạnh nhau nào đều có tổng không lớn hơn 15 và không nhỏ hơn 12?
   7.7
   Trò chơi - Games
+
+### 7.7 Trò chơi - Games
 
 **Bài 496.** Trên lưới ô vuông m x n có hai người chơi. Mỗi lần mỗi người có thể gạch một ô trống,
   hoặc gạch hai ô cạnh nhau còn trống. Người nào gạch ô cuối cùng người đó thắng. Người nào
@@ -2405,7 +2566,6 @@ Nguyên lý Dirichlet
   được đè lên nhau. Người xếp cuối cùng là người thắng trận. Có nên nhận vai trò bắt đầu không?
   Bạn sẽ chơi thế nào?
 
-## 8 Một số dạng toán khác
 
 **Bài 506.** Trong kho có hai thùng đựng dầu giống hệt nhau một thùng đầy ắp và một thùng còn
   đúng một nửa. Khối lượng của từng thùng là 86 và 53 kg. Hỏi thùng đựng dầu nặng bao nhiêu
@@ -2414,6 +2574,8 @@ Nguyên lý Dirichlet
 
 **Bài 508.** Em gái của Bình 4 tuổi. Số lần tuổi của Bình gấp số tuổi của em Bình bằng chính số tuổi
   mà Bình kém người anh 25 tuổi của mình. Hỏi Bình bao nhiêu tuổi.
+
+## 8. Một số dạng toán khác
 
 **Bài 509.** Một chiếc hộp có chứa những viên bi xanh. Hai chiếc hộp khác lại chỉ chứa bi trắng. Nhãn
   trên hộp A: Bi trắng; nhãn trên hộp B: bi xanh; nhãn trên hộp C: hộp B chứa bi xanh. Hỏi
@@ -2442,9 +2604,7 @@ Nguyên lý Dirichlet
 
 **Bài 515.** BC + C = AB có bao nhiêu lời giải, biết rằng các chữ khác nhau là các chữ số khác nhau?
 
-**Bài 516.** Số bị chia là bao nhiêu nếu biết rằng số chia là một số tự nhiên có một chữ số, số dư là
-
-## 8 và kết quả là 20?
+**Bài 516.** Số bị chia là bao nhiêu nếu biết rằng số chia là một số tự nhiên có một chữ số, số dư là 8 và kết quả là 20?
 
 **Bài 517.** Tổng của 80 số nguyên dương chẵn đầu tiên trừ tổng của 80 số nguyên dương lẻ đầu tiên
   cho kết quả bao nhiêu?
@@ -2530,6 +2690,9 @@ Nguyên lý Dirichlet
 **Bài 537.** Một lưới hình tam giác đều 4 x 4 ( hình vẽ). Có bao nhiêu tam giác đều có thể tạo được
   từ 15 điểm mắt lưới này?
 
+![Hình vẽ Bài 537](/assets/images/108x5-toan-5-6/bai-537.png)
+
+
 **Bài 538.** Một lãnh chúa trong ngày sinh nhật của mình, ông ta muốn phóng thích một số tù nhân.
   Trong nhà tù có 100 ngăn và 100 cai ngục. Cai ngục thứ nhất mở tất cả các cánh cửa các ngăn.
   Cai ngục thứ 2 đếm 1 - 2, 1 - 2, ... cho đến hết (bắt đầu từ người thứ nhất), rồi đóng tất cả
@@ -2540,6 +2703,11 @@ Nguyên lý Dirichlet
   Hỏi cuối cùng những ngăn nào sẽ được mở?
 
 **Bài 539.** Có 52 cây trồng thành một vòng tròn quanh vườn. Có 15 con sóc sống ở những cây đó
+
+**Bài 540.**
+a) Hãy cho 10 số tự nhiên khác nhau sao cho bất kì 6 số đều có tổng không chia hết cho 6.
+b) Hãy chỉ ra rằng từ 11 số nguyên bất kì luôn chọn được 6 số có tổng chia hết cho 6.
+
   và không có con sóc nào sống chung một nhà. Chứng minh rằng có ít nhất một nhóm gồm 7
   cây liên tiếp là nhà của ít nhất 3 con sóc.
   540.

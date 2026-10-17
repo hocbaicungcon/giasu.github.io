@@ -21,82 +21,129 @@ grade: 12
 
 ### 1. Khái niệm vectơ trong không gian; hai vectơ cùng phương, cùng hướng, bằng nhau; vectơ-không.
 
-> **Định nghĩa:** » Vectơ trong không gian là một đoạn thẳng có hướng.» Độ dài của vectơ là khoảng cách giữa điểm đầu và điểm cuối của vectơ. Kí hiệu:$\left | { a } \right.  |$.» Giá của vectơ là đường thẳng đi qua điểm đầu và điểm cuối của vectơ đó.
+> **Định nghĩa:**
+- Vectơ trong không gian là một đoạn thẳng có hướng.
+
+- Độ dài của vectơ là khoảng cách giữa điểm đầu và điểm cuối của vectơ. Kí hiệu:$\left | { a } \right.  |$.
+
+- Giá của vectơ là đường thẳng đi qua điểm đầu và điểm cuối của vectơ đó.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image6.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Hai vectơ cùng phương nếu giá của chúng song song hoặc trùng nhau.
+- Hai vectơ cùng phương nếu giá của chúng song song hoặc trùng nhau.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image7.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Hai vectơ bằng nhau nếu chúng có cùng độ dài và cùng hướng. Nếu hai vectơ $a,\,b$ bằng nhau thì ta viết là $a=\,b$.
+- Hai vectơ bằng nhau nếu chúng có cùng độ dài và cùng hướng. Nếu hai vectơ $a,\,b$ bằng nhau thì ta viết là $a=\,b$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image10.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Hai vectơ đối nhau nếu chúng có cùng độ dài và ngược hướng. Vectơ đối của $a$ được kí hiệu là $-a$.
+- Hai vectơ đối nhau nếu chúng có cùng độ dài và ngược hướng. Vectơ đối của $a$ được kí hiệu là $-a$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image13.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Vectơ - không có điểm đầu và điểm cuối trùng nhau, kí hiệu là $0$. Quy ước vectơ-không có độ dài bằng $0$ và cùng phương, cùng hướng với mọi vectơ.
+- Kí hiệu $\overrightarrow { AB }$ chỉ vectơ có điểm đầu $A$, điểm cuối $B$.
 
-» Vectơ - không có điểm đầu và điểm cuối trùng nhau, kí hiệu là $0$. Quy ước vectơ-không có độ dài bằng $0$ và cùng phương, cùng hướng với mọi vectơ.
-
-» Kí hiệu $\overrightarrow { AB }$ chỉ vectơ có điểm đầu $A$, điểm cuối $B$.» Nếu không cần chỉ rõ điểm đầu và điểm cuối thì vectơ còn được kí hiệu là $u,\,v,\,x,\,y,\,....$ Chú ý
+- Nếu không cần chỉ rõ điểm đầu và điểm cuối thì vectơ còn được kí hiệu là $u,\,v,\,x,\,y,\,....$ Chú ý
 
 ### 2. Tổng và hiệu của hai vectơ
 
-Định nghĩa tổng hai vectơ:Trong không gian, cho hai vectơ $a,\,b$. Lấy một điểm $A$ tùy ý. ▪Vẽ $\left. \overrightarrow { AB }=a,\,\overrightarrow { BC }=\,b \right.$. Vectơ $\overrightarrow { AC }$ là tổng của hai vectơ $a,\,b$.▪Ký hiệu là $a+\,b$.▪Phép lấy tổng của hai vectơ còn được gọi là phép cộng vectơ. Nhận xét: Phép cộng vectơ trong không gian cũng có các tính chất như phép cộng vectơ trong mặt phẳng.» Tính chất giao hoán:$a+\,b=\,b+a$.» Tính chất kết hợp:$\left ( { a+\,b } \right.  )+c=a+\,\left ( { b+c } \right.  )$.» Với mọi vectơ $a$, ta luôn có:$a+0=0+\,a$.
+Định nghĩa tổng hai vectơ:Trong không gian, cho hai vectơ $a,\,b$. Lấy một điểm $A$ tùy ý.
+
+- Vẽ $\left. \overrightarrow { AB }=a,\,\overrightarrow { BC }=\,b \right.$. Vectơ $\overrightarrow { AC }$ là tổng của hai vectơ $a,\,b$.
+
+- Ký hiệu là $a+\,b$.
+
+- Phép lấy tổng của hai vectơ còn được gọi là phép cộng vectơ. Nhận xét: Phép cộng vectơ trong không gian cũng có các tính chất như phép cộng vectơ trong mặt phẳng.
+
+- Tính chất giao hoán:$a+\,b=\,b+a$.
+
+- Tính chất kết hợp:$\left ( { a+\,b } \right.  )+c=a+\,\left ( { b+c } \right.  )$.
+
+- Với mọi vectơ $a$, ta luôn có:$a+0=0+\,a$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image32.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Từ tính chất kết hợp, ta xác định được tổng ba vectơ $a;\,b;c$ là $a+\,b+c=\left ( { a+\,b } \right.  )+c$. Chú ý
 
-» Từ tính chất kết hợp, ta xác định được tổng ba vectơ $a;\,b;c$ là $a+\,b+c=\left ( { a+\,b } \right.  )+c$. Chú ý
+Định nghĩa hiệu hai vectơ:Trong không gian, cho hai vectơ $a,\,b$.
 
-Định nghĩa hiệu hai vectơ:Trong không gian, cho hai vectơ $a,\,b$. ▪Hiệu của hai vectơ $a;b$ là vectơ $a+\left ( { -b } \right.  )$.▪Kí hiệu là $a-b$.▪Phép lấy hiệu của hai vectơ còn được gọi là phép trừ vectơ.
+- Hiệu của hai vectơ $a;b$ là vectơ $a+\left ( { -b } \right.  )$.
+
+- Kí hiệu là $a-b$.
+
+- Phép lấy hiệu của hai vectơ còn được gọi là phép trừ vectơ.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image41.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-Các quy tắc Quy tắc ba điểm và quy tắc hình bình hành:» Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }+\overrightarrow { BC }=\overrightarrow { AC } \right. \right.$ (Quy tắc ba điểm phép cộng).» NếuABCDlà hình bình hành thì $\left. \left. \overrightarrow { AB }+\overrightarrow { AD }=\overrightarrow { AC } \right. \right.$ (Quy tắc hình bình hành).
+Các quy tắc Quy tắc ba điểm và quy tắc hình bình hành:
+
+- Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }+\overrightarrow { BC }=\overrightarrow { AC } \right. \right.$ (Quy tắc ba điểm phép cộng).
+
+- NếuABCDlà hình bình hành thì $\left. \left. \overrightarrow { AB }+\overrightarrow { AD }=\overrightarrow { AC } \right. \right.$ (Quy tắc hình bình hành).
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image47.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
- Quy tắc hình hộp:» NếuABCD.A'B'C'D'là hình hộp thì $\left. \left. \left. \overrightarrow { AB }+\overrightarrow { AD }+\overrightarrow { AA' }=\overrightarrow { AC' } \right. \right. \right.$.
+ Quy tắc hình hộp:
+
+- NếuABCD.A'B'C'D'là hình hộp thì $\left. \left. \left. \overrightarrow { AB }+\overrightarrow { AD }+\overrightarrow { AA' }=\overrightarrow { AC' } \right. \right. \right.$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image50.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
- Quy tắc hiệu:» Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }-\overrightarrow { AC }=\overrightarrow { CB } \right. \right.$.
+ Quy tắc hiệu:
+
+- Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }-\overrightarrow { AC }=\overrightarrow { CB } \right. \right.$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image53.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 ### 3. Tích của một số với một vectơ
 
-> **Định nghĩa:** Trong không gian, cho số $k≠0$ và vectơ $a≠0$.▪Tích của số $k$ với vectơ $a$ là một vectơ.▪Ký hiệu là $ka$.▪Phép lấy tích của một số với một vectơ được gọi là phép nhân một số với một vectơ.» Cùng hướng với $a$ nếu $k>0$, » Ngược hướng với $a$ nếu $k < 0$» Có độ dài bằng $\left | { k } \right.  |.\left | { a } \right.  |$.
+> **Định nghĩa:** Trong không gian, cho số $k≠0$ và vectơ $a≠0$.
+
+- Tích của số $k$ với vectơ $a$ là một vectơ.
+
+- Ký hiệu là $ka$.
+
+- Phép lấy tích của một số với một vectơ được gọi là phép nhân một số với một vectơ.
+
+- Cùng hướng với $a$ nếu $k>0$,
+- Ngược hướng với $a$ nếu $k < 0$
+- Có độ dài bằng $\left | { k } \right.  |.\left | { a } \right.  |$.
 
 ### 4. Tích vô hướng của hai vectơ
 
-Góc giữa hai vectơ trong không gianTrong không gian, cho $u$ và $v$ là hai vectơ khác $0$. ▪Lấy một điểm $A$ bất kì, gọi $B$ và $C$ là hai điểm sao cho $\left. \overrightarrow { AB }=u,\overrightarrow { AC }=v \right.$. Ta gọi $\widehat { BAC }$ là góc giữa hai vectơ $u$ và $v$.▪Kí hiệu là $\left ( { u,v } \right.  )$.
+Góc giữa hai vectơ trong không gianTrong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
 
-Tích vô hướng hai vectơTrong không gian, cho $u$ và $v$ là hai vectơ khác $0$. ▪Tích vô hướng của hai vectơ $u$ và $v$ là một số▪Kí hiệu là $u⋅v$. Được xác định bởi công thức:$u⋅v=\left | { u\left | { ⋅ } \right.  |v } \right.  |⋅{ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )$
+- Lấy một điểm $A$ bất kì, gọi $B$ và $C$ là hai điểm sao cho $\left. \overrightarrow { AB }=u,\overrightarrow { AC }=v \right.$. Ta gọi $\widehat { BAC }$ là góc giữa hai vectơ $u$ và $v$.
 
-» Trong trường hợp $u=0$ hoặc $v=0$, ta quy ước $u⋅v=0$.»$u.u=u ^ { 2 } =\left | { u } \right.  | ^ { 2 } ;u ^ { 2 } ≥0,u ^ { 2 } =0⇔u=0$» Với hai vectơ $u,v$ khác $0$, ta có ${ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )=\frac { u⋅v } { \left | { u\left | { ⋅ } \right.  |v } \right.  | }$.» Với hai vectơ $u,v$ khác $0$, ta có $u⊥v⇔u⋅v=0$. Chú ý
+- Kí hiệu là $\left ( { u,v } \right.  )$.
+
+Tích vô hướng hai vectơTrong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
+
+- Tích vô hướng của hai vectơ $u$ và $v$ là một số
+- Kí hiệu là $u⋅v$. Được xác định bởi công thức:$u⋅v=\left | { u\left | { ⋅ } \right.  |v } \right.  |⋅{ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )$
+- Trong trường hợp $u=0$ hoặc $v=0$, ta quy ước $u⋅v=0$.
+
+- $u.u=u ^ { 2 } =\left | { u } \right.  | ^ { 2 } ;u ^ { 2 } ≥0,u ^ { 2 } =0⇔u=0$
+- Với hai vectơ $u,v$ khác $0$, ta có ${ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )=\frac { u⋅v } { \left | { u\left | { ⋅ } \right.  |v } \right.  | }$.
+
+- Với hai vectơ $u,v$ khác $0$, ta có $u⊥v⇔u⋅v=0$. Chú ý
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Sử dụng các định nghĩa
+- Vectơ trong không gian là một đoạn thẳng có hướng.
 
-» Vectơ trong không gian là một đoạn thẳng có hướng.» Độ dài của vectơ là khoảng cách giữa điểm đầu và điểm cuối của vectơ. Kí hiệu:$\left | { a } \right.  |$.» Giá của vectơ là đường thẳng đi qua điểm đầu và điểm cuối của vectơ đó.
+- Độ dài của vectơ là khoảng cách giữa điểm đầu và điểm cuối của vectơ. Kí hiệu:$\left | { a } \right.  |$.
+
+- Giá của vectơ là đường thẳng đi qua điểm đầu và điểm cuối của vectơ đó.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image6.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Hai vectơ cùng phương nếu giá của chúng song song hoặc trùng nhau.
+- Hai vectơ cùng phương nếu giá của chúng song song hoặc trùng nhau.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image7.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Hai vectơ bằng nhau nếu chúng có cùng độ dài và cùng hướng. Nếu hai vectơ $a,\,b$ bằng nhau thì ta viết là $a=\,b$.
+- Hai vectơ bằng nhau nếu chúng có cùng độ dài và cùng hướng. Nếu hai vectơ $a,\,b$ bằng nhau thì ta viết là $a=\,b$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image10.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Hai vectơ đối nhau nếu chúng có cùng độ dài và ngược hướng. Vectơ đối của $a$ được kí hiệu là $-a$.
+- Hai vectơ đối nhau nếu chúng có cùng độ dài và ngược hướng. Vectơ đối của $a$ được kí hiệu là $-a$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image13.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Vectơ - không có điểm đầu và điểm cuối trùng nhau, kí hiệu là $0$. Quy ước vectơ-không có độ dài bằng $0$ và cùng phương, cùng hướng với mọi vectơ. Phương pháp
+- Vectơ - không có điểm đầu và điểm cuối trùng nhau, kí hiệu là $0$. Quy ước vectơ-không có độ dài bằng $0$ và cùng phương, cùng hướng với mọi vectơ. Phương pháp
 
 **Ví dụ 1.1.** Cho hình hộpABCD.A'B'C'D'. Trong các vectơ khác $\overrightarrow { 0 }$, có điểm đầu và điểm cuối là các đỉnh của hình hộp. Hãy chỉ ra những vectơ:⑴ Cùng phương với vectơ $\overrightarrow { AB }$;⑵ Bằng vectơ $\overrightarrow { AB }$;⑶ Ngược hướng với vectơ $\overrightarrow { AA' }$.
 
@@ -132,15 +179,23 @@ Tính $SA=\sqrt{ OA ^ { 2 } +SO ^ { 2 } }=\sqrt{ \frac { a ^ { 2 } } { 2 }+h ^ {
 
 ### Dạng 2. Tổng và hiệu của hai vectơ
 
-⁂ Các quy tắc: Quy tắc ba điểm và quy tắc hình bình hành:» Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }+\overrightarrow { BC }=\overrightarrow { AC } \right. \right.$ (Quy tắc ba điểm phép cộng).» NếuABCDlà hình bình hành thì $\left. \left. \overrightarrow { AB }+\overrightarrow { AD }=\overrightarrow { AC } \right. \right.$ (Quy tắc hình bình hành).
+⁂ Các quy tắc: Quy tắc ba điểm và quy tắc hình bình hành:
+
+- Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }+\overrightarrow { BC }=\overrightarrow { AC } \right. \right.$ (Quy tắc ba điểm phép cộng).
+
+- NếuABCDlà hình bình hành thì $\left. \left. \overrightarrow { AB }+\overrightarrow { AD }=\overrightarrow { AC } \right. \right.$ (Quy tắc hình bình hành).
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image47.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
- Quy tắc hình hộp:» NếuABCD.A'B'C'D'là hình hộp thì $\left. \left. \left. \overrightarrow { AB }+\overrightarrow { AD }+\overrightarrow { AA' }=\overrightarrow { AC' } \right. \right. \right.$.
+ Quy tắc hình hộp:
+
+- NếuABCD.A'B'C'D'là hình hộp thì $\left. \left. \left. \overrightarrow { AB }+\overrightarrow { AD }+\overrightarrow { AA' }=\overrightarrow { AC' } \right. \right. \right.$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image50.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
- Quy tắc hiệu:» Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }-\overrightarrow { AC }=\overrightarrow { CB } \right. \right.$.
+ Quy tắc hiệu:
+
+- Với ba điểm $A,\,B,\,C$ bất kì, ta có $\left. \left. \overrightarrow { AB }-\overrightarrow { AC }=\overrightarrow { CB } \right. \right.$.
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image53.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -198,7 +253,12 @@ Vậy cường độ tổng hợp lực là $\left. \left | { \overrightarrow { 
 
 ### Dạng 3. Tích của một số với một vectơ
 
-Trong không gian, cho số $k≠0$ và vectơ $a≠0$.▪Tích của số $k$ với vectơ $a$ là một vectơ. Ký hiệu là $ka$. Có độ dài bằng $\left | { k } \right.  |.\left | { a } \right.  |$.» Cùng hướng với $a$ nếu $k>0$, » Ngược hướng với $a$ nếu $k < 0$⁂ Với hai vectơ $a$ và $b$ bất kì, với mọi số $h$ và $k$, ta luôn có⑴$k\left ( { a+b } \right.  )=ka+kb$⑵$\left ( { h+k } \right.  )a=ha+ka$⑶$h\left ( { ka } \right.  )=\left ( { hk } \right.  )a$⑷$1⋅a=a$⑸$\left ( { -1 } \right.  )⋅a=-a$⑹ Hai vectơ $a$ và $b$ $\left ( { b≠0 } \right.  )$ cùng phương khi và chỉ khi có số $k$ sao cho $a=kb$.⑺ Ba điểm phân biệt $A,B,C$ thẳng hàng khi và chỉ khi có số $k≠0$ để $\left. \overrightarrow { AB }=k\overrightarrow { AC } \right.$..⁂ Hệ quả:⑴$I$ là trung điểm của đoạn thẳng $AB$ $\left. \left. ⇔\overrightarrow { IA }+\overrightarrow { IB }=0 \right. \right.$ $\left. \left. \left. ⇔2\overrightarrow { OI }=\overrightarrow { OA }+\overrightarrow { OB } \right. \right. \right.$, với mọi điểm $O$.⑵$G$ là trọng tâmtam giác $ABC$ $\left. \left. \left. ⇔\overrightarrow { GA }+\overrightarrow { GB }+\overrightarrow { GC }=0 \right. \right. \right.$ $\left. \left. \left. \left. ⇔3\overrightarrow { OG }=\overrightarrow { OA }+\overrightarrow { OB }+\overrightarrow { OC } \right. \right. \right. \right.$, với mọi điểm $O$. Phương pháp
+Trong không gian, cho số $k≠0$ và vectơ $a≠0$.
+
+- Tích của số $k$ với vectơ $a$ là một vectơ. Ký hiệu là $ka$. Có độ dài bằng $\left | { k } \right.  |.\left | { a } \right.  |$.
+
+- Cùng hướng với $a$ nếu $k>0$,
+- Ngược hướng với $a$ nếu $k < 0$⁂ Với hai vectơ $a$ và $b$ bất kì, với mọi số $h$ và $k$, ta luôn có⑴$k\left ( { a+b } \right.  )=ka+kb$⑵$\left ( { h+k } \right.  )a=ha+ka$⑶$h\left ( { ka } \right.  )=\left ( { hk } \right.  )a$⑷$1⋅a=a$⑸$\left ( { -1 } \right.  )⋅a=-a$⑹ Hai vectơ $a$ và $b$ $\left ( { b≠0 } \right.  )$ cùng phương khi và chỉ khi có số $k$ sao cho $a=kb$.⑺ Ba điểm phân biệt $A,B,C$ thẳng hàng khi và chỉ khi có số $k≠0$ để $\left. \overrightarrow { AB }=k\overrightarrow { AC } \right.$..⁂ Hệ quả:⑴$I$ là trung điểm của đoạn thẳng $AB$ $\left. \left. ⇔\overrightarrow { IA }+\overrightarrow { IB }=0 \right. \right.$ $\left. \left. \left. ⇔2\overrightarrow { OI }=\overrightarrow { OA }+\overrightarrow { OB } \right. \right. \right.$, với mọi điểm $O$.⑵$G$ là trọng tâmtam giác $ABC$ $\left. \left. \left. ⇔\overrightarrow { GA }+\overrightarrow { GB }+\overrightarrow { GC }=0 \right. \right. \right.$ $\left. \left. \left. \left. ⇔3\overrightarrow { OG }=\overrightarrow { OA }+\overrightarrow { OB }+\overrightarrow { OC } \right. \right. \right. \right.$, với mọi điểm $O$. Phương pháp
 
 **Ví dụ 3.1.** Cho tứ diệnABCD. Gọi $G$ là trọng tâm của tam giác $BCD$ và $O$ là trung điểm đoạn thẳng $AG$. Chứng minh rằng:⑴$\left. \left. \left. \left. 3\overrightarrow { OA }+\overrightarrow { OB }+\overrightarrow { OC }+\overrightarrow { OD }=0 \right. \right. \right. \right.$;⑵$\left. \left. \left. \left. \left. 3\overrightarrow { MA }+\overrightarrow { MB }+\overrightarrow { MC }+\overrightarrow { MD }=6\overrightarrow { MO } \right. \right. \right. \right. \right.$ ($M$ là điểm bất kì trong không gian).
 
@@ -270,7 +330,11 @@ Lúc này $\frac { MN } { BD' }=\left | { k } \right.  |=\frac { 1 } { 3 }$.
 
 ### Dạng 4. Tích vô hướng và góc của hai vectơ
 
-⁂ Góc giữa hai vectơ:Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$. ▪Lấy một điểm $A$ bất kì, Gọi $B$ và $C$ là hai điểm sao cho $\left. \overrightarrow { AB }=u,\overrightarrow { AC }=v \right.$. Ta gọi $\widehat { BAC }$ là góc giữa hai vectơ $u$ và $v$. Kí hiệu là $\left ( { u,v } \right.  )$.⁂ Tích vô hướng hai vectơ:Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$. ▪Tích vô hướng của hai vectơ $u$ và $v$ là một số. Kí hiệu là $u⋅v$. Được xác định bởi công thức:$u⋅v=\left | { u\left | { ⋅ } \right.  |v } \right.  |⋅{ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )$⁂ Chú ý:⑴$0°≤\left ( { u,v } \right.  )≤180°$⑵ Nếu $\left ( { u,v } \right.  )=90°$ thì ta nói $u$ và $v$ vuông góc với nhau, kí hiệu $u⊥v$.⑶ Khi $u$ và $v$ cùng hướng thì $\left ( { u,v } \right.  )=0°$.⑷ Khi $u$ và $v$ ngược hướng thì $\left ( { u,v } \right.  )=180°$.⑸$u.u=u ^ { 2 } =\left | { u } \right.  | ^ { 2 } ;u ^ { 2 } ≥0,u ^ { 2 } =0⇔u=0$ Phương pháp
+⁂ Góc giữa hai vectơ:Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
+
+- Lấy một điểm $A$ bất kì, Gọi $B$ và $C$ là hai điểm sao cho $\left. \overrightarrow { AB }=u,\overrightarrow { AC }=v \right.$. Ta gọi $\widehat { BAC }$ là góc giữa hai vectơ $u$ và $v$. Kí hiệu là $\left ( { u,v } \right.  )$.⁂ Tích vô hướng hai vectơ:Trong không gian, cho $u$ và $v$ là hai vectơ khác $0$.
+
+- Tích vô hướng của hai vectơ $u$ và $v$ là một số. Kí hiệu là $u⋅v$. Được xác định bởi công thức:$u⋅v=\left | { u\left | { ⋅ } \right.  |v } \right.  |⋅{ \rm{ c } }{ \rm{ o } }{ \rm{ s } }\left ( { u,v } \right.  )$⁂ Chú ý:⑴$0°≤\left ( { u,v } \right.  )≤180°$⑵ Nếu $\left ( { u,v } \right.  )=90°$ thì ta nói $u$ và $v$ vuông góc với nhau, kí hiệu $u⊥v$.⑶ Khi $u$ và $v$ cùng hướng thì $\left ( { u,v } \right.  )=0°$.⑷ Khi $u$ và $v$ ngược hướng thì $\left ( { u,v } \right.  )=180°$.⑸$u.u=u ^ { 2 } =\left | { u } \right.  | ^ { 2 } ;u ^ { 2 } ≥0,u ^ { 2 } =0⇔u=0$ Phương pháp
 
 <p align="center"><img src="/assets/images/toan-12/c2_b1_image262.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>Ví dụ 4.1.Cho hình lập phươngABCD.A'B'C'D'. Xác định các góc:⑴$\left. \left. \left ( { \overrightarrow { AB },\overrightarrow { A'D' } } \right.  ) \right. \right.$⑵$\left. \left. \left ( { \overrightarrow { AB },\overrightarrow { A'C' } } \right.  ) \right. \right.$⑶$\left. \left. \left ( { \overrightarrow { AB },\overrightarrow { D'C' } } \right.  ) \right. \right.$⑷$\left. \left. \left ( { \overrightarrow { AD },\overrightarrow { C'B' } } \right.  ) \right. \right.$
 
@@ -418,19 +482,19 @@ Lời giải
 
 Vectơ $\overrightarrow { BA' }$ bằng vectơ $\overrightarrow { CD' }$ vì chúng cùng hướng và cùng độ dài.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\left. \left. \left. \left | { \overrightarrow { BA' } } \right.  |=\left | { \overrightarrow { A'D } } \right.  |=\left | { \overrightarrow { DB } } \right.  | \right. \right. \right.$.
 
 Ta có $\left. \left | { \overrightarrow { BA' } } \right.  |=BA'=\sqrt{ BA ^ { 2 } +{BB'}^{ 2 } }=\sqrt{ 4+16 }=\sqrt{ 20 } \right.$ và $\left. \left | { \overrightarrow { BD } } \right.  |=BD=\sqrt{ BC ^ { 2 } +BA ^ { 2 } }=\sqrt{ 9+4 }=\sqrt{ 13 } \right.$ nên $\left. \left. \left | { \overrightarrow { BA' } } \right.  |≠\left | { \overrightarrow { DB } } \right.  | \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Số các vectơ khác $\overrightarrow { 0 }$ có điểm đầu và điểm cuối là các đỉnh của hình hộp là $A_{ 8 } ^{ 2 }$.
 
 Số các vectơ khác $\overrightarrow { 0 }$ có điểm đầu và điểm cuối là các đỉnh của hình hộp là $A_{ 8 } ^{ 2 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Độ dài của vectơ $\overrightarrow { BD' }$ bằng $3\sqrt{ 3 }$.
 
@@ -438,7 +502,7 @@ Số các vectơ khác $\overrightarrow { 0 }$ có điểm đầu và điểm cu
 
 Ta có $\left. \left | { \overrightarrow { BD' } } \right.  |=\sqrt{ BA ^ { 2 } +BC ^ { 2 } +{BB'}^{ 2 } }=\sqrt{ 4+9+16 }=\sqrt{ 29 } \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -453,25 +517,25 @@ Lời giải
 
 (a) $\left. \left. \left. \overrightarrow { AB }+\overrightarrow { A'D' }+\overrightarrow { B'B }=\overrightarrow { A'C } \right. \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\left. \left. \overrightarrow { AB }+\overrightarrow { AA' }=\overrightarrow { B'A } \right. \right.$.
 
 Ta có:$\left. \left. \overrightarrow { AB }+\overrightarrow { AA' }=\overrightarrow { AB' } \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $\left. \left. \overrightarrow { AB }-\overrightarrow { AD }=\overrightarrow { D'B' } \right. \right.$.
 
 $\left. \left. \left. \overrightarrow { AB }-\overrightarrow { AD }=\overrightarrow { DB }=\overrightarrow { D'B' } \right. \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\left. \left. \left. \overrightarrow { AB }+\overrightarrow { BD }-\overrightarrow { AC }=\overrightarrow { DC } \right. \right. \right.$.
 
 $\left. \left. \left. \left. \left. \overrightarrow { AB }+\overrightarrow { BD }-\overrightarrow { AC }=\overrightarrow { AD }-\overrightarrow { AC }=\overrightarrow { CD } \right. \right. \right. \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -486,25 +550,25 @@ Lời giải
 
 (a) $\left. \overrightarrow { BM }=\frac { 1 } { 2 }\overrightarrow { BB' } \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\left. \left. \overrightarrow { AM }=\overrightarrow { AB }+\frac { 1 } { 2 }\overrightarrow { B'B } \right. \right.$.
 
 $\left. \left. \left. \left. \overrightarrow { AM }=\overrightarrow { AB }+\overrightarrow { BM }=\overrightarrow { AB }+\frac { 1 } { 2 }\overrightarrow { BB' } \right. \right. \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $\left. \left. \overrightarrow { AM }=\frac { 1 } { 2 }\overrightarrow { AB }+\frac { 1 } { 2 }\overrightarrow { AB' } \right. \right.$
 
 $\left. \left. \overrightarrow { AM }=\frac { 1 } { 2 }\overrightarrow { AB }+\frac { 1 } { 2 }\overrightarrow { AB' } \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\left. \left. \left. \overrightarrow { MA }+\overrightarrow { MB }+\overrightarrow { MC }=3\overrightarrow { MG } \right. \right. \right.$.
 
 $\left. \left. \left. \overrightarrow { MA }+\overrightarrow { MB }+\overrightarrow { MC }=3\overrightarrow { MG } \right. \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -523,7 +587,7 @@ Hai vectơ $\overrightarrow { AB }$ và $\overrightarrow { C'D' }$ ngược hư�
 
 $⇒$ $\overrightarrow { AB }$ và $\overrightarrow { C'D' }$ đối nhau.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hai vectơ $\overrightarrow { A'D }$ và $\overrightarrow { CB' }$ đối nhau.
 
@@ -531,19 +595,19 @@ Ta có vectơ $\overrightarrow { A'D }$ và $\overrightarrow { CB' }$ cùng đ�
 
 $⇒$ $\overrightarrow { A'D }$ và $\overrightarrow { CB' }$ đối nhau.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Hai vectơ $\overrightarrow { A'B' }$ và $\overrightarrow { AC }$ cùng phương với nhau.
 
 Ta có $A'B'$ không song song với $AC$ nên hai vectơ $\overrightarrow { A'B' }$ và $\overrightarrow { AC }$ không cùng phương với nhau.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Có 3 vectơ khác vectơ $\overrightarrow { 0 }$ bằng vectơ $\overrightarrow { BC }$.
 
 Ta có các vectơ khác $\overrightarrow { 0 }$ bằng với vectơ $\overrightarrow { BC }$ là $\left. \left. \overrightarrow { AD },\,\,\overrightarrow { A'D' },\,\,\overrightarrow { B'C' } \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -560,13 +624,13 @@ Lời giải
 
 Hai vectơ $\overrightarrow { AD }$ và $\overrightarrow { CB }$ là hai vectơ ngược hướng nên góc giữa chúng bằng $180°$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Góc giữa hai vectơ $\overrightarrow { BD }$ và $\overrightarrow { BO }$ là $180°$.
 
 Hai vectơ $\overrightarrow { BD }$ và $\overrightarrow { BO }$ là hai vectơ cùng hướng nên góc giữa chúng là $0°$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Cosin của góc giữa hai vectơ $\overrightarrow { BA }$ và $\overrightarrow { CS }$ bằng $\frac { 1 } { 4 }.$
 
@@ -576,13 +640,13 @@ $\centerdot$Áp dụng định lý cosin cho tam giác $SCD$ có
 
 $cos \widehat { SCD }=\frac { SC ^ { 2 } +CD ^ { 2 } -SD ^ { 2 } } { 2SC.CD }=\frac { \left ( { 2a } \right.  ) ^ { 2 } +a ^ { 2 } -\left ( { 2a } \right.  ) ^ { 2 } } { 2.2a.a }=\frac { 1 } { 4 }$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Góc giữa hai vectơ $\overrightarrow { AO }$ và $\overrightarrow { SD }$ bằng $60°$.
 
 Ta có $\left. \overrightarrow { AO }.\overrightarrow { SD } \right.$ $\left. \left. \left. \left. \left. \left. \left. =-\overrightarrow { OA }.\left ( { \overrightarrow { OD }-\overrightarrow { OS } } \right.  )=-\overrightarrow { OA }.\overrightarrow { OD }+\overrightarrow { OA }.\overrightarrow { OS }=0 \right. \right. \right. \right. \right. \right. \right.$ nên góc giữa hai vectơ $\overrightarrow { AO }$ và $\overrightarrow { SD }$ bằng $90°$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -601,13 +665,13 @@ Ta có $\left. \overrightarrow { SA }.\overrightarrow { SB }=SA.SB.cos \widehat 
 
 Tương tự,$\left. \left. \left. \overrightarrow { SB }.\overrightarrow { SC }=\frac { a ^ { 2 } } { 2 };\overrightarrow { SA }.\overrightarrow { SC }=\frac { a ^ { 2 } } { 2 } \right. \right. \right.$ nên $\left. \left. \left. \left. \left. \overrightarrow { SA }.\overrightarrow { SB }=\overrightarrow { SB }.\overrightarrow { SC }=\overrightarrow { SA }.\overrightarrow { SC } \right. \right. \right. \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\left. \left. \left. \overrightarrow { AM }=-\overrightarrow { SA }+\frac { 1 } { 2 }\overrightarrow { SB }+\frac { 1 } { 2 }\overrightarrow { SC } \right. \right. \right.$.
 
 Ta có:$\left. \left. \left. \left. \left. \overrightarrow { AM }=\overrightarrow { SM }-\overrightarrow { SA }=-\overrightarrow { SA }+\frac { 1 } { 2 }\overrightarrow { SB }+\frac { 1 } { 2 }\overrightarrow { SC } \right. \right. \right. \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Góc giữa $\overrightarrow { SA }$ và $\overrightarrow { BC }$ bằng $90°$.
 
@@ -617,7 +681,7 @@ Ta có $\left. \left. \left. \overrightarrow { SC }.\overrightarrow { SA }=\over
 
 Suy ra $\left. \left. \left. \left. \left. \left. \left. \left. \overrightarrow { BC }.\overrightarrow { SA }=\left ( { \overrightarrow { SC }-\overrightarrow { SB } } \right.  ).\overrightarrow { SA }=\overrightarrow { SC }.\overrightarrow { SA }-\overrightarrow { SB }.\overrightarrow { SA }=0 \right. \right. \right. \right. \right. \right. \right. \right.$ nên góc giữa $\overrightarrow { SA }$ và $\overrightarrow { BC }$ bằng $90°$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\left. \overrightarrow { AM }.\overrightarrow { SC }=0 \right.$.
 
@@ -625,7 +689,7 @@ Ta có $\left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \l
 
 $=-\frac { a ^ { 2 } } { 2 }+\frac { 1 } { 2 }.\frac { a ^ { 2 } } { 2 }+\frac { 1 } { 2 }a ^ { 2 } =\frac { a ^ { 2 } } { 4 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -646,19 +710,19 @@ Ta có $AC{ \rm{ / } }{ \rm{ / } }C'A'⇒\left ( { AC,C'A' } \right.  )=0°$.
 
 $\left. \overrightarrow { AC },\overrightarrow { C'A' } \right.$ là hai vectơ ngược hướng nên $\left. \left. ⇒\left ( { \overrightarrow { AC },\overrightarrow { C'A' } } \right.  )=180° \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Gọi $\left. \left. u=\overrightarrow { AB }+\overrightarrow { AD } \right. \right.$,$\left. v=\overrightarrow { B'C' } \right.$. Ta có $\left ( { u;v } \right.  )=60°$.
 
 Ta có $\left. \left. \left. u=\overrightarrow { AB }+\overrightarrow { AD }=\overrightarrow { AC } \right. \right. \right.$,$\left. v=\overrightarrow { B'C' } \right.$ $\left. \left. \left. \left. ⇒\left ( { u;v } \right.  )=\left ( { \overrightarrow { AC },\overrightarrow { B'C' } } \right.  )=\left ( { \overrightarrow { AC },\overrightarrow { AD } } \right.  )= \widehat { CAD }=45° \right. \right. \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Gọi $\left. \left. x=\overrightarrow { BA }+\overrightarrow { BC } \right. \right.$,$\left. y=\overrightarrow { A'C' } \right.$. Ta có $\left ( { x;y } \right.  )=90°$.
 
 Ta có $\left. \left. \left. x=\overrightarrow { BA }+\overrightarrow { BC }=\overrightarrow { BD } \right. \right. \right.$,$\left. \left. y=\overrightarrow { A'C' }=\overrightarrow { AC } \right. \right.$ suy ra $\left. \left. \left ( { x;y } \right.  )=\left ( { \overrightarrow { AC },\overrightarrow { BD } } \right.  )=90° \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\left. \left. \left ( { \overrightarrow { OA' },\overrightarrow { OC' } } \right.  )=90° \right. \right.$.
 
@@ -668,7 +732,7 @@ Ta có $\left ( { OA' } \right.  ) ^ { 2 } =\left ( { OC' } \right.  ) ^ { 2 } =
 
 Suy ra tam giác $OA'C'$ không thể vuông tại $O$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -685,7 +749,7 @@ Lời giải
 
 Ta có $\left. \left. \left. \left. \left. \left. \left. \overrightarrow { AB }.\overrightarrow { DC' }=\overrightarrow { AB }.\overrightarrow { AB' }=\left | { \overrightarrow { AB } } \right.  |.\left | { \overrightarrow { AB' } } \right.  |cos\left ( { \overrightarrow { AB },\overrightarrow { AB' } } \right.  )=a.a\sqrt{ 2 }.cos45°=a ^ { 2 } \right. \right. \right. \right. \right. \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $\left. \overrightarrow { AB' }.\overrightarrow { B'D' }=-\frac { a ^ { 2 } } { 2 } \right.$.
 
@@ -693,7 +757,7 @@ Ta có $\left. \left. \left ( { \overrightarrow { AB' },\overrightarrow { B'D' }
 
 $\left. \left. \left. \overrightarrow { AB' }.\overrightarrow { B'D' }=\left | { \overrightarrow { AB' } } \right.  |.\left | { \overrightarrow { B'D' } } \right.  |cos120°=\left ( { a\sqrt{ 2 } } \right.  ).\left ( { a\sqrt{ 2 } } \right.  ).\left ( { -\frac { 1 } { 2 } } \right.  )=-a ^ { 2 } \right. \right. \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $\left. \left. \left. \left | { \overrightarrow { D'A' }+\overrightarrow { C'C }+\overrightarrow { AB } } \right.  |=a\sqrt{ 3 } \right. \right. \right.$
 
@@ -701,7 +765,7 @@ Ta có $\left. \left. \left. \left. \left. \left. \overrightarrow { D'A' }+\over
 
 Suy ra $\left. \left. \left. \left. \left | { \overrightarrow { D'A' }+\overrightarrow { C'C }+\overrightarrow { AB } } \right.  |=\left | { \overrightarrow { D'B } } \right.  |=BD'=a\sqrt{ 3 } \right. \right. \right. \right.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\left. \left. \left. \left. \left | { \overrightarrow { OA' }+\overrightarrow { OB' }+\overrightarrow { OC' }+\overrightarrow { OD' } } \right.  |=4a \right. \right. \right. \right.$.
 
@@ -711,7 +775,7 @@ Ta có $\left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \o
 
 Suy ra $\left. \left. \left. \left. \left. \left | { \overrightarrow { OA' }+\overrightarrow { OB' }+\overrightarrow { OC' }+\overrightarrow { OD' } } \right.  |=4\left | { \overrightarrow { OO' } } \right.  |=4a \right. \right. \right. \right. \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -840,14 +904,14 @@ Do $y;z$ không cùng phương, để các vectơ $x;y;z$ đồng phẳng $⇔$ 
 
 </details>
 
-**Câu 12:** Một chiếc ô tô được đặt trên mặt đáy dưới của một khung sắt có dạng hình hộp chữ nhật với đáy trên là hình chữ nhậtABCD, mặt phẳng $\left ( { ABCD } \right.  )$ song song với mặt phẳng nằm ngang. Khung sắt đó được buộc vào móc $E$ của chiếc cần cẩu sao cho các đoạn dây cáp $EA,EB,EC,ED$ có độ dài bằng nhau và cùng tạo với mặt phẳng $\left ( { ABCD } \right.  )$ một góc bằng $60°$. Chiếc cần cẩu kéo khung sắt lên theo phương thẳng đứng.
+**Câu 12:** Một chiếc ô tô được đặt trên mặt đáy dưới của một khung sắt có dạng hình hộp chữ nhật với đáy trên là hình chữ nhật $ABCD$, mặt phẳng $(ABCD)$ song song với mặt phẳng nằm ngang. Khung sắt đó được buộc vào móc $E$ của chiếc cần cẩu sao cho các đoạn dây cáp $EA, EB, EC, ED$ có độ dài bằng nhau và cùng tạo với mặt phẳng $(ABCD)$ một góc bằng $60^\circ$. Chiếc cần cẩu kéo khung sắt lên theo phương thẳng đứng. Tính trọng lượng của chiếc xe ô tô (làm tròn đến hàng đơn vị), biết rằng các lực căng $\vec{F_1}, \vec{F_2}, \vec{F_3}, \vec{F_4}$ đều có cường độ là $4700\text{ N}$ và trọng lượng của khung sắt là $3000\text{ N}$.
 
 <details>
 <summary><b>Xem đáp số & lời giải chi tiết: 13281</b></summary>
 
 > **Đáp số:** `13281`
 
-<p align="center"><img src="/assets/images/toan-12/c2_b1_image922.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Tính trọng lượng của chiếc xe ô tô (làm tròn đến hàng đơn vị), biết rằng các lực căng$\left. \left. \left. \overrightarrow { F_{ 1 } },\,\overrightarrow { F_{ 2 } },\,\overrightarrow { F_{ 3 } },\,\overrightarrow { F_{ 4 } } \right. \right. \right.$đều có cường độ là$4700N$và trọng lượng của khung sắt là$3000N$. <p align="center"><img src="/assets/images/toan-12/c2_b1_image926.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Gọi$A_{ 1 } ,\,B_{ 1 } ,\,C_{ 1 } ,D_{ 1 }$lần lượt là các điểm sao cho$\left. \left. \left. \left. \left. \left. \left. \overrightarrow { EA_{ 1 } }=\overrightarrow { F_{ 1 } },\,\overrightarrow { EB_{ 1 } }=\overrightarrow { F_{ 2 } },\,\overrightarrow { EC_{ 1 } }=\overrightarrow { F_{ 3 } },\,\overrightarrow { ED_{ 1 } }=\overrightarrow { F_{ 4 } } \right. \right. \right. \right. \right. \right. \right.$. Vì$EA,EB,EC,ED$có độ dài bằng nhau và cùng tạo với mặt phẳng$\left ( { ABCD } \right.  )$một góc bằng$60 ^ { o }$nên$EA_{ 1 } ,EB_{ 1 } ,EC_{ 1 } ,ED_{ 1 }$có độ dài bằng nhau và cùng tạo với mặt phẳng$\left ( { A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 } } \right.  )$một góc bằng$60 ^ { o }$. VìABCDlà hình chữ nhật nên$A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 }$cũng là hình chữa nhật. Gọi$O$là tâm của hình chữ nhật$A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 }$. Ta suy ra$EO⊥\left ( { A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 } } \right.  )$. Do đó góc giữa đường thẳng$EA_{ 1 }$và mặt phẳng$\left ( { A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 } } \right.  )$bằng góc$\widehat { EA_{ 1 } O }$suy ra$\widehat { EA_{ 1 } O }=60 ^ { o }$. Ta có$\left. \left. \left. \left. \left | { \overrightarrow { F_{ 1 } } } \right.  |=\left | { \overrightarrow { F_{ 2 } } } \right.  |=\left | { \overrightarrow { F_{ 3 } } } \right.  |=\left | { \overrightarrow { F_{ 4 } } } \right.  |=4700N \right. \right. \right. \right.$nên$EA_{ 1 } =EB_{ 1 } =EC_{ 1 } =ED_{ 1 } =4700N$. Tam giác$EOA_{ 1 }$vuông tại$O$nên$EO=EA_{ 1 } .sin \widehat { EA_{ 1 } O }=4700.sin60°=2350\sqrt{ 3 }$. Ta có:$\left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \overrightarrow { F_{ 1 } }+\,\overrightarrow { F_{ 2 } }+\,\overrightarrow { F_{ 3 } }+\overrightarrow { F_{ 4 } }=\overrightarrow { EA_{ 1 } }+\,\overrightarrow { EB_{ 1 } }+\overrightarrow { EC_{ 1 } }+\overrightarrow { ED_{ 1 } }=4\overrightarrow { EO }+\overrightarrow { OA_{ 1 } }+\overrightarrow { OC_{ 1 } }+\,\overrightarrow { OB_{ 1 } }+\overrightarrow { OD_{ 1 } }=4\overrightarrow { EO } \right. \right. \right. \right. \right. \right. \right. \right. \right. \right. \right. \right. \right.$. Vì chiếc khung sắt chứa xe ô tô ở vị trí cân bằng nên$\left. \left. \left. \left. \overrightarrow { F_{ 1 } }+\,\overrightarrow { F_{ 2 } }+\,\overrightarrow { F_{ 3 } }+\overrightarrow { F_{ 4 } }=\overrightarrow { P } \right. \right. \right. \right.$, với$\overrightarrow { P }$là trọng lực tác dụng lên khung sắt chứa xe ô tô. Suy ra trọng lượng của khung sắt chứa chiếc xe ô tô là:$\left. \left. \left | { \overrightarrow { P } } \right.  |=4\left | { \overrightarrow { EO } } \right.  |=4.2350\sqrt{ 3 }=9400\sqrt{ 3 }N \right. \right.$ Vì trọng lượng của khung sắt là$3000N$nên trọng lượng của chiếc xe ô tô là:$9400\sqrt{ 3 }-3000≈13281N$.
+<p align="center"><img src="/assets/images/toan-12/c2_b1_image926.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Gọi$A_{ 1 } ,\,B_{ 1 } ,\,C_{ 1 } ,D_{ 1 }$lần lượt là các điểm sao cho$\left. \left. \left. \left. \left. \left. \left. \overrightarrow { EA_{ 1 } }=\overrightarrow { F_{ 1 } },\,\overrightarrow { EB_{ 1 } }=\overrightarrow { F_{ 2 } },\,\overrightarrow { EC_{ 1 } }=\overrightarrow { F_{ 3 } },\,\overrightarrow { ED_{ 1 } }=\overrightarrow { F_{ 4 } } \right. \right. \right. \right. \right. \right. \right.$. Vì$EA,EB,EC,ED$có độ dài bằng nhau và cùng tạo với mặt phẳng$\left ( { ABCD } \right.  )$một góc bằng$60 ^ { o }$nên$EA_{ 1 } ,EB_{ 1 } ,EC_{ 1 } ,ED_{ 1 }$có độ dài bằng nhau và cùng tạo với mặt phẳng$\left ( { A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 } } \right.  )$một góc bằng$60 ^ { o }$. VìABCDlà hình chữ nhật nên$A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 }$cũng là hình chữa nhật. Gọi$O$là tâm của hình chữ nhật$A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 }$. Ta suy ra$EO⊥\left ( { A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 } } \right.  )$. Do đó góc giữa đường thẳng$EA_{ 1 }$và mặt phẳng$\left ( { A_{ 1 } B_{ 1 } C_{ 1 } D_{ 1 } } \right.  )$bằng góc$\widehat { EA_{ 1 } O }$suy ra$\widehat { EA_{ 1 } O }=60 ^ { o }$. Ta có$\left. \left. \left. \left. \left | { \overrightarrow { F_{ 1 } } } \right.  |=\left | { \overrightarrow { F_{ 2 } } } \right.  |=\left | { \overrightarrow { F_{ 3 } } } \right.  |=\left | { \overrightarrow { F_{ 4 } } } \right.  |=4700N \right. \right. \right. \right.$nên$EA_{ 1 } =EB_{ 1 } =EC_{ 1 } =ED_{ 1 } =4700N$. Tam giác$EOA_{ 1 }$vuông tại$O$nên$EO=EA_{ 1 } .sin \widehat { EA_{ 1 } O }=4700.sin60°=2350\sqrt{ 3 }$. Ta có:$\left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \left. \overrightarrow { F_{ 1 } }+\,\overrightarrow { F_{ 2 } }+\,\overrightarrow { F_{ 3 } }+\overrightarrow { F_{ 4 } }=\overrightarrow { EA_{ 1 } }+\,\overrightarrow { EB_{ 1 } }+\overrightarrow { EC_{ 1 } }+\overrightarrow { ED_{ 1 } }=4\overrightarrow { EO }+\overrightarrow { OA_{ 1 } }+\overrightarrow { OC_{ 1 } }+\,\overrightarrow { OB_{ 1 } }+\overrightarrow { OD_{ 1 } }=4\overrightarrow { EO } \right. \right. \right. \right. \right. \right. \right. \right. \right. \right. \right. \right. \right.$. Vì chiếc khung sắt chứa xe ô tô ở vị trí cân bằng nên$\left. \left. \left. \left. \overrightarrow { F_{ 1 } }+\,\overrightarrow { F_{ 2 } }+\,\overrightarrow { F_{ 3 } }+\overrightarrow { F_{ 4 } }=\overrightarrow { P } \right. \right. \right. \right.$, với$\overrightarrow { P }$là trọng lực tác dụng lên khung sắt chứa xe ô tô. Suy ra trọng lượng của khung sắt chứa chiếc xe ô tô là:$\left. \left. \left | { \overrightarrow { P } } \right.  |=4\left | { \overrightarrow { EO } } \right.  |=4.2350\sqrt{ 3 }=9400\sqrt{ 3 }N \right. \right.$ Vì trọng lượng của khung sắt là$3000N$nên trọng lượng của chiếc xe ô tô là:$9400\sqrt{ 3 }-3000≈13281N$.
 
 </details>
 

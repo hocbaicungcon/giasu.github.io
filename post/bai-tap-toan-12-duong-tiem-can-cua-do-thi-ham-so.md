@@ -24,7 +24,8 @@ grade: 12
 
 > **Định nghĩa:** Đường thẳng $x=a$ được gọi là một đuờng tiệm cận đứng (hay tiệm cận đúng) của đồ thị hàm số $y=f\left ( { x } \right.  )$ nếu ít nhất một trong các điều kiện sau thoả mãn:$\mathop { lim } \limits_{ x→a ^ { - } } f\left ( { x } \right.  )=+∞$ $\mathop { lim } \limits_{ x→a ^ { - } } f\left ( { x } \right.  )=-∞$ $\mathop { lim } \limits_{ x→a ^ { + } } f\left ( { x } \right.  )=+∞$ $\mathop { lim } \limits_{ x→a ^ { + } } f\left ( { x } \right.  )=-∞$<p align="center"><img src="/assets/images/toan-12/c1_b3_image12.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-» Đồ thị hàm số $y=\frac { x } { x ^ { 2 } -1 }$ cùng với hai tiệm cận đứng $x=1$ và $x=-1$<p align="center"><img src="/assets/images/toan-12/c1_b3_image18.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+
+- **Đồ thị:** hàm số $y=\frac { x } { x ^ { 2 } -1 }$ cùng với hai tiệm cận đứng $x=1$ và $x=-1$<p align="center"><img src="/assets/images/toan-12/c1_b3_image18.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 Chú ý
 
@@ -32,7 +33,8 @@ Chú ý
 
 > **Định nghĩa:** Đường thẳng $y=m$ được gọi là một đường tiệm cận ngang (hay tiệm cận ngang) của đồ thị hàm số $y=f\left ( { x } \right.  )$ nếu $\mathop { lim } \limits_{ x→-∞ } f\left ( { x } \right.  )=m$ hoặc $\mathop { lim } \limits_{ x→+∞ } f\left ( { x } \right.  )=m$<p align="center"><img src="/assets/images/toan-12/c1_b3_image25.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-» Đồ thị của hàm số $y=\frac { x } { x+1 }$ cùng với tiệm cận ngang $y=1$ và tiệm cận đứng $x=-1$<p align="center"><img src="/assets/images/toan-12/c1_b3_image30.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+
+- **Đồ thị:** của hàm số $y=\frac { x } { x+1 }$ cùng với tiệm cận ngang $y=1$ và tiệm cận đứng $x=-1$<p align="center"><img src="/assets/images/toan-12/c1_b3_image30.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 Chú ý
 
@@ -40,14 +42,27 @@ Chú ý
 
 > **Định nghĩa:** Đường thẳng $y=ax+b,a≠0$, được gọi là đuờng tiệm cận xiên (hay tiệm cận xiên) của đồ thị hàm số $y=f\left ( { x } \right.  )$ nếu $\mathop { lim } \limits_{ x→-∞ } \left[ f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) \right]=0$ hoặc $\mathop { lim } \limits_{ x→+∞ } \left[ f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) \right]=0$
 
-» Đồ thị hàm số $f\left ( { x } \right.  )=x-2+\frac { 3 } { 2x+1 }$ cùng tiệm cận đứng $x=-\frac { 1 } { 2 }$ và tiệm cận xiên $y=x-2$<p align="center"><img src="/assets/images/toan-12/c1_b3_image40.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+
+- **Đồ thị:** hàm số $f\left ( { x } \right.  )=x-2+\frac { 3 } { 2x+1 }$ cùng tiệm cận đứng $x=-\frac { 1 } { 2 }$ và tiệm cận xiên $y=x-2$<p align="center"><img src="/assets/images/toan-12/c1_b3_image40.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 Chú ý
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Tìm các đường tiệm cận khi cho bảng biến thiên – đồ thị
 
-» Bước 1: Tìm Tập xác định của hàm số. Giả Sử $D=\left ( { -∞;+∞ } \right.  )\left\{ \begin{array}{l} x_{ 0 } \end{array} \right\}$.» Bước 2: Quan sát Bảng biến thiên hoặc đồ thị, tìm giới hạn »$\left[ \mathop { lim } \limits_{ x→+∞ } y=y_{ 0 } \mathop { lim } \limits_{ x→-∞ } y=y_{ 0 } \right. ⇒y=y_{ 0 }$ là đường tiệm cận ngang của đồ thị hàm số.»$\left[ \mathop { lim } \limits_{ x→x_{ 0 } ^{ - } } y=+∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ - } } y=-∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ + } } y=+∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ + } } y=-∞ \right. ⇒x=x_{ 0 }$ là đường tiệm cận đứng của đồ thị hàm số.»$\left[ \mathop { lim } \limits_{ x→-∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0\mathop { lim } \limits_{ x→+∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0 \right.$ thì $y=ax+b$ là tiệm cận xiên của đồ thị hàm số.⁂ Chú ý: »$\mathop { lim } \limits_{ x→+∞ } y=y_{ 1 } ;\mathop { lim } \limits_{ x→-∞ } y=y_{ 2 } ⇒y=y_{ 1 } ;y=y_{ 2 }$ là hai đường tiệm cận ngang của đồ thị hàm số.» Tập xác định không có chứa $+∞;-∞$ thì đồ thị hàm số không có đường tiện cận ngang.» Hàm số xác định trên $\mathbb{R}$ thì đồ thị hàm số không có đường tiệm cận đứng. Phương pháp
+
+- **Bước 1:** Tìm Tập xác định của hàm số. Giả Sử $D=\left ( { -∞;+∞ } \right.  )\left\{ \begin{array}{l} x_{ 0 } \end{array} \right\}$.
+- **Bước 2:** Quan sát Bảng biến thiên hoặc đồ thị, tìm giới hạn
+- $\left[ \mathop { lim } \limits_{ x→+∞ } y=y_{ 0 } \mathop { lim } \limits_{ x→-∞ } y=y_{ 0 } \right. ⇒y=y_{ 0 }$ là đường tiệm cận ngang của đồ thị hàm số.
+
+- $\left[ \mathop { lim } \limits_{ x→x_{ 0 } ^{ - } } y=+∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ - } } y=-∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ + } } y=+∞\mathop { lim } \limits_{ x→x_{ 0 } ^{ + } } y=-∞ \right. ⇒x=x_{ 0 }$ là đường tiệm cận đứng của đồ thị hàm số.
+
+- $\left[ \mathop { lim } \limits_{ x→-∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0\mathop { lim } \limits_{ x→+∞ } \left[ y-\left ( { ax+b } \right.  ) \right]=0 \right.$ thì $y=ax+b$ là tiệm cận xiên của đồ thị hàm số.⁂ Chú ý:
+
+- $\mathop { lim } \limits_{ x→+∞ } y=y_{ 1 } ;\mathop { lim } \limits_{ x→-∞ } y=y_{ 2 } ⇒y=y_{ 1 } ;y=y_{ 2 }$ là hai đường tiệm cận ngang của đồ thị hàm số.
+- **Tập xác định:** không có chứa $+∞;-∞$ thì đồ thị hàm số không có đường tiện cận ngang.
+
+- Hàm số xác định trên $\mathbb{R}$ thì đồ thị hàm số không có đường tiệm cận đứng. Phương pháp
 
 **Ví dụ 1.1.** Cho hàm số $y=f\left ( { x } \right.  )$ có bảng biến thiên như sau:
 
@@ -72,12 +87,10 @@ Vậy tổng số đường tiệm cận của hàm số bằng $3$.
 *Lời giải:*
 
 Tập xác định:$D=\mathbb{R}\left\{ \begin{array}{l} 1 \end{array} \right\}$.
-
-»$\mathop { lim } \limits_{ x→1 ^ { - } } y=-∞$ hoặc $\mathop { lim } \limits_{ x→1 ^ { + } } y=+∞$ nên đồ thị hàm số có đường tiệm cận đứng $x=1$.
+- $\mathop { lim } \limits_{ x→1 ^ { - } } y=-∞$ hoặc $\mathop { lim } \limits_{ x→1 ^ { + } } y=+∞$ nên đồ thị hàm số có đường tiệm cận đứng $x=1$.
 
 Dựa vào hình vẽ, ta thấy đường thẳng $\left ( { d } \right.  )$ đi qua $O\left ( { 0;0 } \right.  )$ và $A\left ( { 1;1 } \right.  )$ nên suy ra phương trình đường thẳng $\left ( { d } \right.  ):y=x$.
-
-»$\left\{ \begin{array}{l} \mathop { lim } \limits_{ x→-∞ } \left[ f\left ( { x } \right.  )-\left ( { x-y } \right.  ) \right]=0\mathop { lim } \limits_{ x→+∞ } \left[ f\left ( { x } \right.  )-\left ( { x-y } \right.  ) \right]=0 \end{array} \right.⇒$ đồ thị hàm số có đường tiệm cận xiên $y=x$.
+- $\left\{ \begin{array}{l} \mathop { lim } \limits_{ x→-∞ } \left[ f\left ( { x } \right.  )-\left ( { x-y } \right.  ) \right]=0\mathop { lim } \limits_{ x→+∞ } \left[ f\left ( { x } \right.  )-\left ( { x-y } \right.  ) \right]=0 \end{array} \right.⇒$ đồ thị hàm số có đường tiệm cận xiên $y=x$.
 
 **Ví dụ 1.3.** Cho hàm số $y\,=\,f\left ( { x } \right.  )$ liên tục trên $\mathbb{R}\,\\,\left\{ \begin{array}{l} 1 \end{array} \right\}$ và có bảng biến thiên như sau:
 
@@ -101,7 +114,18 @@ Tổng số đường tiệm cận đứng và tiệm cận ngang của đồ th
 
 ### Dạng 2. Tìm các đường tiệm cận khi cho bảng biến thiên – đồ thị
 
-Để tìm tiệm cận ngang, tiệm cận đứng, tiệm cận xiên của đồ thị hàm số $y=f\left ( { x } \right.  )$» Bước 1: Tìm Tập xác định của hàm số.» Bước 2: Tìm tiệm cận ngang của đồ thị hàm số bằng cách tính các giới hạn (nếu có):$\mathop { lim } \limits_{ x→-∞ } f\left ( { x } \right.  )$ và $\mathop { lim } \limits_{ x→+∞ } f\left ( { x } \right.  )$» Bước 3: Tìm tiệm cận đứng của đồ thị hàm số bằng cách tính các giới hạn (nếu có):$\mathop { lim } \limits_{ x→k ^ { + } } f\left ( { x } \right.  )$ và $\mathop { lim } \limits_{ x→k ^ { - } } f\left ( { x } \right.  )$» Bước 4: Tìm tiệm cận xiên (dành cho hàm số có dạng phân thức có bậc tử số lớn hơn bậc mẫu số 1 bậc) bằng một trong hai cách sau:» Cách 1: Nếu biểu diễn $f\left ( { x } \right.  )=ax+b+g\left ( { x } \right.  )$ thì tính $\left\{ \begin{array}{l} \mathop { lim } \limits_{ x→-∞ } \left ( { f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) } \right.  )\mathop { lim } \limits_{ x→+∞ } \left ( { f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) } \right.  ) \end{array} \right.$» Cách 2: Xác định đường tiệm cận xiên $y=ax+b$ bằng cách xác định hệ số $a,b$:$a=\mathop { lim } \limits_{ x→-∞ } \frac { f\left ( { x } \right.  ) } { x }$ hoặc $a=\mathop { lim } \limits_{ x→+∞ } \frac { f\left ( { x } \right.  ) } { x }$ với $a≠0$. Khi đó tương ứng ta có $b=\mathop { lim } \limits_{ x→-∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$ hoặc $b=\mathop { lim } \limits_{ x→+∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$⁂ Chú ý: » Đồ thị hàm số chỉ có thể có một trong hai loại tiệm cận ngang hoặc tiệm cận xiên.» Nếu hàm số xác định trên toàn bộ tập số thực thì không có tiệm cận đứng.» Hàm số hằng $y=b$ có đồ thị nhận $y=b$ là tiệm cận ngang, hàm số bậc nhất $y=ax+b$ có đồ thị nhận chính nó $y=ax+b$ là tiệm cận xiên. Phương pháp
+Để tìm tiệm cận ngang, tiệm cận đứng, tiệm cận xiên của đồ thị hàm số $y=f\left ( { x } \right.  )$
+- **Bước 1:** Tìm Tập xác định của hàm số.
+- **Bước 2:** Tìm tiệm cận ngang của đồ thị hàm số bằng cách tính các giới hạn (nếu có):$\mathop { lim } \limits_{ x→-∞ } f\left ( { x } \right.  )$ và $\mathop { lim } \limits_{ x→+∞ } f\left ( { x } \right.  )$
+- **Bước 3:** Tìm tiệm cận đứng của đồ thị hàm số bằng cách tính các giới hạn (nếu có):$\mathop { lim } \limits_{ x→k ^ { + } } f\left ( { x } \right.  )$ và $\mathop { lim } \limits_{ x→k ^ { - } } f\left ( { x } \right.  )$
+- **Bước 4:** Tìm tiệm cận xiên (dành cho hàm số có dạng phân thức có bậc tử số lớn hơn bậc mẫu số 1 bậc) bằng một trong hai cách sau:
+- **Cách 1:** Nếu biểu diễn $f\left ( { x } \right.  )=ax+b+g\left ( { x } \right.  )$ thì tính $\left\{ \begin{array}{l} \mathop { lim } \limits_{ x→-∞ } \left ( { f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) } \right.  )\mathop { lim } \limits_{ x→+∞ } \left ( { f\left ( { x } \right.  )-\left ( { ax+b } \right.  ) } \right.  ) \end{array} \right.$
+- **Cách 2:** Xác định đường tiệm cận xiên $y=ax+b$ bằng cách xác định hệ số $a,b$:$a=\mathop { lim } \limits_{ x→-∞ } \frac { f\left ( { x } \right.  ) } { x }$ hoặc $a=\mathop { lim } \limits_{ x→+∞ } \frac { f\left ( { x } \right.  ) } { x }$ với $a≠0$. Khi đó tương ứng ta có $b=\mathop { lim } \limits_{ x→-∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$ hoặc $b=\mathop { lim } \limits_{ x→+∞ } \left ( { f\left ( { x } \right.  )-ax } \right.  )$⁂ Chú ý: 
+- **Đồ thị:** hàm số chỉ có thể có một trong hai loại tiệm cận ngang hoặc tiệm cận xiên.
+
+- Nếu hàm số xác định trên toàn bộ tập số thực thì không có tiệm cận đứng.
+
+- Hàm số hằng $y=b$ có đồ thị nhận $y=b$ là tiệm cận ngang, hàm số bậc nhất $y=ax+b$ có đồ thị nhận chính nó $y=ax+b$ là tiệm cận xiên. Phương pháp
 
 **Ví dụ 2.1.** Tìm các đường tiệm cận của đồ thị hàm số $y=\frac { 2x-1 } { x-1 }$.
 
@@ -110,20 +134,16 @@ Tổng số đường tiệm cận đứng và tiệm cận ngang của đồ th
 *Lời giải:*
 
 Tập xác định:$D=\mathbb{R}\left\{ \begin{array}{l} 1 \end{array} \right\}$.
-
-»$\mathop { lim } \limits_{ x→±∞ } y=\mathop { lim } \limits_{ x→±∞ } \frac { 2x-1 } { x-1 }=\mathop { lim } \limits_{ x→±∞ } \frac { 2-\frac { 1 } { x } } { 1-\frac { 1 } { x } }=2$ $→y=2$ là đường tiệm cận ngang của đồ thị hàm số.
-
-»$\mathop { lim } \limits_{ x→1 ^ { - } } y=\mathop { lim } \limits_{ x→1 ^ { - } } \frac { -2x-1 } { x-1 }=+∞$ hoặc $\mathop { lim } \limits_{ x→1 ^ { + } } y=\mathop { lim } \limits_{ x→1 ^ { + } } \frac { -2x-1 } { x-1 }=-∞$ $→x=1$ là đường tiệm cận đứng của đồ thị hàm số.
+- $\mathop { lim } \limits_{ x→±∞ } y=\mathop { lim } \limits_{ x→±∞ } \frac { 2x-1 } { x-1 }=\mathop { lim } \limits_{ x→±∞ } \frac { 2-\frac { 1 } { x } } { 1-\frac { 1 } { x } }=2$ $→y=2$ là đường tiệm cận ngang của đồ thị hàm số.
+- $\mathop { lim } \limits_{ x→1 ^ { - } } y=\mathop { lim } \limits_{ x→1 ^ { - } } \frac { -2x-1 } { x-1 }=+∞$ hoặc $\mathop { lim } \limits_{ x→1 ^ { + } } y=\mathop { lim } \limits_{ x→1 ^ { + } } \frac { -2x-1 } { x-1 }=-∞$ $→x=1$ là đường tiệm cận đứng của đồ thị hàm số.
 
 **Ví dụ 2.2.** Tìm các đường tiệm cận của đồ thị hàm số $y=\frac { x ^ { 2 } +1 } { x }$.
 
 *Lời giải:*
 
 Tập xác định:$D=\mathbb{R}\left\{ \begin{array}{l} 0 \end{array} \right\}$.
-
-»$\mathop { lim } \limits_{ x→0 ^ { - } } y=\mathop { lim } \limits_{ x→0 ^ { - } } \frac { x ^ { 2 } +1 } { x }=-∞$ hoặc $\mathop { lim } \limits_{ x→0 ^ { + } } y=\mathop { lim } \limits_{ x→0 ^ { + } } \frac { x ^ { 2 } +1 } { x }=+∞$ $→x=0$ là đường tiệm cận đứng của đồ thị hàm số.
-
-»$\mathop { lim } \limits_{ x→±∞ } \left ( { y-x } \right.  )=\mathop { lim } \limits_{ x→±∞ } \left ( { \frac { x ^ { 2 } +1 } { x }-x } \right.  )=\mathop { lim } \limits_{ x→±∞ } \left ( { \frac { 1 } { x } } \right.  )=0$ $→y=x$ là đường tiệm cận xiên của đồ thị hàm số.
+- $\mathop { lim } \limits_{ x→0 ^ { - } } y=\mathop { lim } \limits_{ x→0 ^ { - } } \frac { x ^ { 2 } +1 } { x }=-∞$ hoặc $\mathop { lim } \limits_{ x→0 ^ { + } } y=\mathop { lim } \limits_{ x→0 ^ { + } } \frac { x ^ { 2 } +1 } { x }=+∞$ $→x=0$ là đường tiệm cận đứng của đồ thị hàm số.
+- $\mathop { lim } \limits_{ x→±∞ } \left ( { y-x } \right.  )=\mathop { lim } \limits_{ x→±∞ } \left ( { \frac { x ^ { 2 } +1 } { x }-x } \right.  )=\mathop { lim } \limits_{ x→±∞ } \left ( { \frac { 1 } { x } } \right.  )=0$ $→y=x$ là đường tiệm cận xiên của đồ thị hàm số.
 
 **Ví dụ 2.3.** Tìm các đường tiệm cận của đồ thị hàm số $y=\frac { x ^ { 3 } -x ^ { 2 } +1 } { x ^ { 2 } -1 }$.
 
@@ -151,7 +171,9 @@ Vậy $y=x-1$ là tiệm cận xiên của đồ thị hàm số.
 
 ### Dạng 3. Đường tiệm cận liên quan góc – khoảng cách – diện tích
 
-» Bước 1: Xác định các đường tiệm cận của đồ thị hàm số.» Bước 2: Dựa vào các giả thiết: khoảng cách, góc, diện tích,...để tính toán hoặc thiết lập phương trình, hệ phương trình để tìm ẩn cần tìm. Phương pháp
+
+- **Bước 1:** Xác định các đường tiệm cận của đồ thị hàm số.
+- **Bước 2:** Dựa vào các giả thiết: khoảng cách, góc, diện tích,...để tính toán hoặc thiết lập phương trình, hệ phương trình để tìm ẩn cần tìm. Phương pháp
 
 **Ví dụ 3.1.** Tìm các giá trị $m$ để đồ thị hàm số $y=\frac { 4mx+3m } { x-2 }$ có đường tiệm cận đứng và tiệm cận ngang tạo với hai trục tọa độ một hình chữ nhật có diện tích bằng $2024$?
 
@@ -205,7 +227,10 @@ Vậy giá trị nhỏ nhất của tổng các khoảng cách từ một điể
 
 ### Dạng 4. Bài toán thực tế và ý nghĩa của giá trị gần về tiệm cận
 
-» Bước 1: Biểu diễn các đại lượng với nhau thông qua hàm số.» Bước 2: Tìm tiệm của hàm số vừa tìm được.» Bước 3: Nêu ý nghĩa của giá trị gần về tiệm cậnPhương pháp
+
+- **Bước 1:** Biểu diễn các đại lượng với nhau thông qua hàm số.
+- **Bước 2:** Tìm tiệm của hàm số vừa tìm được.
+- **Bước 3:** Nêu ý nghĩa của giá trị gần về tiệm cậnPhương pháp
 
 **Ví dụ 4.1.** Để loại bỏ $x\%$ chất gây ô nhiễm không khí từ khí thải của một nhà máy, người ta ước tính chi phí cần bỏ ra là $C\left ( { x } \right.  )=\frac { 300x } { 100-x }{ \rm{ } }$ (triệu đồng) ${ \rm{ , } }{ \rm{ } }0≤x < 100$. Hãy cho biết:⑴ Chi phí cần bỏ ra sẽ thay đổi như thế nào khi $x$ tăng?⑵ Có thể loại bỏ được $100\%$ chất gây ô nhiễm không khí không? Vì sao?
 
@@ -347,19 +372,19 @@ Lời giải
 
 Ta có $\mathop { limy } \limits_{ x→+∞ } =3$ và $\mathop { limy } \limits_{ x→-∞ } =4$ nên đồ thị hàm số có hai tiệm cận ngang $y=3,y=4$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Tiệm cận đứng của đồ thị hàm số có phương trình:$x=-2$.
 
 Ta có $\left\{ \begin{array}{l} \mathop { limy } \limits_{ x→\left ( { -2 } \right.  ) ^ { + } } =-∞\mathop { limy } \limits_{ x→\left ( { -2 } \right.  ) ^ { - } } =+∞ \end{array} \right.$ nên đồ thị hàm số có tiệm cận đứng $x=-2$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Đồ thị hàm số có hai đường tiệm cận ngang có phương trình:$x=3$ và $x=4$.
 
 Ta có $\mathop { limy } \limits_{ x→+∞ } =3$ và $\mathop { limy } \limits_{ x→-∞ } =4$ nên đồ thị hàm số có hai tiệm cận ngang $y=3,y=4$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Đồ thị hàm số có ba đường tiệm cận.
 
@@ -369,7 +394,7 @@ Mặt khác $\mathop { limy } \limits_{ x→+∞ } =3$ và $\mathop { limy } \li
 
 Vậy đồ thị hàm số có 3 đường tiệm cận.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -384,7 +409,7 @@ Lời giải
 
 Ta có $\mathop { limy } \limits_{ x→+∞ } =\mathop { lim } \limits_{ x→+∞ } \frac { \sqrt{ 4-\frac { 9 } { x ^ { 2 } } } } { 1-\frac { 1 } { x } }=2$ nên đường thẳng $y=2$ là tiệm cận ngang của đồ thị hàm số.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Đồ thị hàm số có tiệm cận đứng là $x=1$
 
@@ -392,13 +417,13 @@ Tập xác định $D=\left ( { -∞;\,-\frac { 3 } { 2 } } \right.  ]∪\left [
 
 Do không tồn tại các giới hạn khi $x→1 ^ { + }$,$x→1 ^ { - }$ nên đồ thị hàm số không có đường tiệm cận đứng.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Đường thẳng $y=-2$ là tiệm cận ngang của đồ thị hàm số
 
 Ta có $\mathop { limy } \limits_{ x→-∞ } =\mathop { lim } \limits_{ x→-∞ } \frac { -\sqrt{ 4-\frac { 9 } { x ^ { 2 } } } } { 1-\frac { 1 } { x } }=-2$ nên đường thẳng $y=-2$ là tiệm cận ngang của đồ thị hàm số.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Đồ thị hàm số có đúng hai đường tiệm cận
 
@@ -408,7 +433,7 @@ Do không tồn tại các giới hạn khi $x→1 ^ { + }$,$x→1 ^ { - }$ nên
 
 Mặt khác,$\mathop { limy } \limits_{ x→+∞ } =\mathop { lim } \limits_{ x→+∞ } \frac { \sqrt{ 4-\frac { 9 } { x ^ { 2 } } } } { 1-\frac { 1 } { x } }=2$ và $\mathop { limy } \limits_{ x→-∞ } =\mathop { lim } \limits_{ x→-∞ } \frac { -\sqrt{ 4-\frac { 9 } { x ^ { 2 } } } } { 1-\frac { 1 } { x } }=-2$ nên đồ thị hàm số có hai tiệm cận ngang $y=2,y=-2$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -425,25 +450,25 @@ Lời giải
 
 Từ bảng biến thiên, suy ra hàm số đã cho có hai điểm cực trị là $x=0$ và $x=1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\mathop { max } \limits_{ \left ( { -∞;2 } \right.  ) } f\left ( { x } \right.  )=5$
 
 Từ bảng biến thiên, suy ra $\mathop { max } \limits_{ \left ( { -∞;2 } \right.  ) } f\left ( { x } \right.  )=5$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Đồ thị hàm số đã cho có duy nhất một đường tiệm cận ngang.
 
 Từ bảng biến thiên, suy ra đồ thị hàm số đã cho có duy nhất một đường tiệm cận ngang là $y=2$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Đường thẳng $x=-2$ là tiệm cận đứng của đồ thị hàm số.
 
 Từ bảng biến thiên, suy ra đồ thị hàm số đã cho có duy nhất một đường tiệm cận đứng là $x=2$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -464,7 +489,7 @@ $=\mathop { lim } \limits_{ x→0 } \frac { 25x ^ { 2 } +9x } { \left ( { x ^ { 
 
 $⇒x=0$ không là đường tiệm cận đứng của đồ thị hàm số.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Đường thẳng $y=0$ là đường tiệm cận ngang của đồ thị hàm số.
 
@@ -472,7 +497,7 @@ Ta có $\mathop { lim } \limits_{ x→+∞ } y$ $=\mathop { lim } \limits_{ x→
 
 $⇒y=0$ là đường tiệm cận ngang của đồ thị hàm số.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Đường thẳng $x=2$ là đường tiệm cận đứng của đồ thị hàm số.
 
@@ -480,7 +505,7 @@ Ta có $\mathop { lim } \limits_{ x→2 ^ { + } } y$ $=\mathop { lim } \limits_{
 
 $⇒x=2$ là đường tiệm cận đứng của đồ thị hàm số.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Đồ thị hàm số có hai đường tiệm cận ngang.
 
@@ -490,7 +515,7 @@ $⇒y=0$ là đường tiệm cận ngang của đồ thị hàm số.
 
 Mặt khác, không tồn tại giới hạn khi $x→-∞$ nên đồ thị hàm số có đúng một tiệm cận ngang.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -507,19 +532,19 @@ Lời giải
 
 Dựa vào đồ thị hàm số, ta thấy hàm số nghịch biến trên các khoảng $\left ( { -∞;1 } \right.  )$ và $\left ( { 1;+∞ } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Đồ thị hàm số có đường tiệm cận đứng là $x=1$.
 
 Dựa vào đồ thị hàm số, ta thấy hàm số có đường tiệm cận đứng là $x=1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Đồ thị hàm số có đường tiệm cận ngang là $y=-1$.
 
 Dựa vào đồ thị hàm số, ta thấy hàm số có đường tiệm cận ngang là $y=-1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Tổng $a+b+c=5$.
 
@@ -533,7 +558,7 @@ Vậy $y=\frac { -x+2 } { x-1 }$
 
 Suy ra $a+b+c=\left ( { -1 } \right.  )+2+1=2$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -548,17 +573,17 @@ Lời giải
 
 Dân số thị trấn đó năm 2000 là $N\left ( { 0 } \right.  )=2$ (nghìn người).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Dân số của thị trấn đó năm 2015 là $19\,200$ người.
 
 Dân số thị trấn đó năm 2015 là $N\left ( { 15 } \right.  )=19,25$ (nghìn người)=19250 người.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Hàm số $N'\left ( { t } \right.  )=\frac { 115 } { \left ( { t+5 } \right.  ) ^ { 2 } }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Dân số của thị trấn đó luôn tăng nhưng không vượt quá $25000$ người.
 
@@ -570,7 +595,7 @@ Bảng biến thiên
 
 Từ bảng biến thiên ta có dân số đã cho luôn tăng nhưng không vượt quá 25000 người.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -589,25 +614,25 @@ $\mathop { lim } \limits_{ t→+∞ } y\left ( { t } \right.  )=\mathop { lim } 
 
 Đồ thị hàm số $y\left ( { t } \right.  )$ có một đường tiệm cận ngang là $y=5$ và không có tiệm cận xiên.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Đồ thị hàm số có đường tiệm cận ngang là $y=5$.
 
 $\mathop { lim } \limits_{ t→+∞ } y\left ( { t } \right.  )=5⇒y=5$ là một đường tiệm cận ngang của đồ thị hàm số.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Đồ thị hàm số có đường tiệm cận đứng là $x=\frac { 1 } { 3 }$.
 
 $\mathop { lim } \limits_{ t→\frac { 1 } { 3 } } y\left ( { t } \right.  )=\mathop { lim } \limits_{ t→\frac { 1 } { 3 } } \frac { 45t ^ { 2 } -15t+5 } { 9t ^ { 2 } +1 }=\frac { 45.\left ( { \frac { 1 } { 3 } } \right.  ) ^ { 2 } -15.\frac { 1 } { 3 }+5 } { 9.\left ( { \frac { 1 } { 3 } } \right.  ) ^ { 2 } +1 }=\frac { 5 } { 2 }⇒x=\frac { 1 } { 3 }$ không phải là đường tiệm cận đứng của đồ thị hàm số.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Sau một thời gian đủ dài, nồng độ oxygen trong hồ sẽ bão hòa và đạt ngưỡng $5\,\,\frac { mg } { l }$.
 
 Ta nhận thấy $\mathop { lim } \limits_{ t→+∞ } y\left ( { t } \right.  )=5$ điều này chứng tỏ rằng khi thời gian đủ dài, nồng độ oxygen trong hồ sẽ bão hòa và đạt ngưỡng $5\,\,\frac { mg } { l }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -626,19 +651,19 @@ $\mathop { lim } \limits_{ x→-2 } y=∞$ nên $x=-2$ là tiệm cận đứng 
 
 $\mathop { lim } \limits_{ x→∞ } \frac { 10 } { x+2 }=0$ nên $y=x-4$ là tiệm cận xiên của đồ thị hàm số.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Giao điểm của hai tiệm cận là $I\left ( { -2;-6 } \right.  )$.
 
 Giao điểm của hai tiệm cận thỏa mãn $\left\{  ⇔  \right.⇒I\left ( { -2;-6 } \right. )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Khoảng cách từ $O$ đến tiệm cận xiên bằng $4\sqrt{ 2 }$.
 
 Khoảng cách từ $O$ đến tiệm cận xiên bằng $\frac { 4 } { \sqrt{ 2 } }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Tiệm cận xiên của hàm số đi qua điểm $M\left ( { 0;-4 } \right.  )$.
 
@@ -646,7 +671,7 @@ Ta có tiệm cận xiên:$\Delta :y=x-4$, thay $M\left ( { 0;-4 } \right.  )$ v
 
 Nên $M$ nằm trên tiệm cận xiên.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -661,25 +686,25 @@ Lời giải
 
 Ta có:$C\left ( { x } \right.  )=\frac { 300x } { -x+100 }$ nên $C'\left ( { x } \right.  )=\frac { 30\,000 } { \left ( { 100-x } \right.  ) ^ { 2 } }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Để loại bỏ được $50\%$ chất gây ô nhiễm cần 300 triệu đồng.
 
 Theo giả thiết $x=50⇒\,C\left ( { 50 } \right.  )=300$ triệu đồng.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Chi phí bỏ ra luôn tăng khi $x$ tăng.
 
 Ta có:$C'\left ( { x } \right.  )=\frac { 30\,000 } { \left ( { 100-x } \right.  ) ^ { 2 } }>0,\,∀x∈\left [ { 0;\,100 } \right.  )$. Từ đó suy ra hàm số $C\left ( { x } \right.  )$ đồng biến trên khoảng $\left ( { 0;\,100 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Không thể loại bỏ $100\%$ chất gây ô nhiễm dù bỏ ra chi phí là bao nhiêu đi chăng nữa.
 
 Ta có:$C\left ( { 100 } \right.  )$ không xác định.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -696,25 +721,25 @@ Ta có:$N'\left ( { t } \right.  )=\frac { 8\,000.C.e ^ { -t } } { \left ( { 5+C
 
 Theo đề bài, ta có:$N\left ( { 0 } \right.  )=4⇒\frac { 8\,000 } { 5+C }=4⇔\,C=1995$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Sau 3 ngày sẽ có khoảng 77 người nhiễm bệnh.
 
 Ta có:$N\left ( { 3 } \right.  )=\frac { 8\,000 } { 5+1995.e ^ { -3 } }≈77$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Kể từ ngày thứ 40 trở đi thì số lượng người nhiễm bệnh sẽ giảm dần.
 
 Ta có:$N'\left ( { t } \right.  )=\frac { 8\,000.C.e ^ { -t } } { \left ( { 5+C.e ^ { -t } } \right.  ) ^ { 2 } }>0,\,∀t≥0$, tức là số lượng người nhiễm bệnh luôn tăng.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Số người nhiễm bệnh luôn tăng nhưng không vượt qua 1600 người.
 
 Ta có:$\mathop { lim } \limits_{ t→+∞ } N\left ( { t } \right.  )=\mathop { lim } \limits_{ t→+∞ } \frac { 8\,000 } { 5+1995.e ^ { -t } }=1600$, tức là số người nhiễm bệnh luôn tăng nhưng không vượt qua 1600 người.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -729,7 +754,7 @@ Lời giải
 
 Khi $v=\frac { \sqrt{ 3 }\,c } { 2 }$ $⇒m\left ( { v } \right.  )=\frac { m_{ 0 } } { \sqrt{ 1-\frac { 3 } { 4 } } }=2m_{ 0 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Một đường tiệm cận đứng của đồ thị hàm số $m\left ( { v } \right.  )$ là $v=c$.
 
@@ -737,19 +762,19 @@ Khi $v=\frac { \sqrt{ 3 }\,c } { 2 }$ $⇒m\left ( { v } \right.  )=\frac { m_{ 
 
 Ta có:$\mathop { lim } \limits_{ v→c ^ { - } } m\left ( { v } \right.  )=+∞⇒$ TCĐ:$v=c$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Đường tiệm cận ngang của đồ thị hàm số $m\left ( { v } \right.  )$ là $m=0$.
 
 Vì $0 < v < c$ nên đồ thị hàm số không có tiệm cận ngang.
 
-» Chọn SAI .
+**Chọn SAI.** .
 
 (d) Khi hạt di chuyển với tốc độ càng gần tốc độ ánh sáng thì khối lượng của hạt gần bằng 0.
 
 Ta có:$\mathop { lim } \limits_{ v→c ^ { - } } m\left ( { v } \right.  )=+∞$ nên khi hạt di chuyển với tốc độ càng gần tốc độ ánh sáng thì khối lượng của hạt vô cùng lớn.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -768,23 +793,23 @@ Do đó, ta có hệ phương trình:$\left\{ \begin{array}{l} \frac { a } { b+1
 
 (a) $a=25$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $b=\frac { 1 } { 2 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Số lượng quần thể nấm men luôn tăng.
 
 Khi đó $a>0,\,b>0$ nên $P'\left ( { t } \right.  )=\frac { 0,75ae ^ { -0,75t } } { \left ( { b+e ^ { -0,75t } } \right.  ) ^ { 2 } }>0,\,∀t≥0$, tức là quần thể nấm men luôn tăng.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Số lượng quần thể nấm men luôn tăng nhưng không vượt quá 50 tế bào.
 
 Ta có:$\mathop { lim } \limits_{ t→+∞ } P\left ( { t } \right.  )=\mathop { lim } \limits_{ t→+∞ } \frac { 25 } { \frac { 1 } { 4 }+e ^ { -0,75t } }=100$ nên số lượng quần thể nấm men luôn tăng nhưng không vượt quá 100 tế bào. Vậy có thể vượt qua 50 tế bào.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -803,13 +828,13 @@ Khi đó phương trình của $d:y=mx+3.$
 
 Với $m=2⇒d:y=2x+3.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Khi $m=1$ thì $\left ( { d } \right.  )$ đi qua điểm $A\left ( { 1;4 } \right.  ).$
 
 $A\left ( { 1;4 } \right.  )∈d⇔4=m+3⇔m=1$ (thõa mãn điều kiện m $≠0)$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Có 1 đường thẳng $\left ( { d } \right.  )$ tạo với hai trục tọa độ một tam giác có diện tích bằng 6.
 
@@ -819,13 +844,13 @@ Diện tích tam giác vuông $OMN$:$S=\frac { 1 } { 2 }OM.ON=\frac { 1 } { 2 }3
 
 Theo giả thiết:$S=6⇔\frac { 9 } { 2\left | { m } \right.  | }=9⇔\left | { m } \right.  |=\frac { 1 } { 2 }⇔m=±\frac { 1 } { 2 }$ (thỏa mãn điều kiện m $≠0)$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Khi $m=±\sqrt{ 3 }$ thì khoảng cách từ gốc tọa độ $O$ đến $\left ( { d } \right.  )$ bằng $\sqrt{ 3 }$.
 
 $d\left ( { O;d } \right.  )=\sqrt{ 3 }⇔\frac { 3 } { \sqrt{ m ^ { 2 } +1 } }=\sqrt{ 3 }⇔\sqrt{ m ^ { 2 } +1 }=\sqrt{ 3 }$ $⇔m ^ { 2 } +1=3⇔m=±\sqrt{ 2 }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -848,13 +873,13 @@ Với $m≠0,\left ( { C_{ m } } \right.  )$ có tiệm cận xiên
 
 $y=x+m+1\left ( { \Delta _{ m } } \right.  ){ \rm{ } }{ \rm{ v } }{ \rm{ ì } }{ \rm{ } }\mathop { lim } \limits_{ x→∞ } \left[ y-\left ( { x+m+1 } \right.  ) \right]=\mathop { lim } \limits_{ x→∞ } \frac { m } { x-1 }=0.$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Để tiệm cận xiên của $\left ( { C_{ m } } \right.  )$ đi qua $M\left ( { 2;-5 } \right.  )$ thì $m=-8$
 
 Để $\left ( { \Delta _{ m } } \right.  )$ qua $M\left ( { 2;-5 } \right.  )$ thì $-5=2+m+1⇔m=-8$. (thỏa mãn $m≠0$).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Để tiệm cận xiên của $\left ( { C_{ m } } \right.  )$ tạo với hai trục toạ độ một tam giác có diện tích bằng 8 (đvdt) thì tổng tất cả các giá trị $m$ tìm được bằng $2$
 
@@ -866,7 +891,7 @@ Suy ra $S_{ \Delta OAB } =\frac { 1 } { 2 }OA⋅OB=\frac { 1 } { 2 }\left | { -m
 
 Để $S_{ \Delta OAB } =8⇔\frac { 1 } { 2 }\left ( {  m+1 } \right. ) ^ { 2 } =8⇔$ (thỏa mãn $\left ) { m≠0 } \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Với $m=3$ thì giao điểm của hai đường tiệm cận của $\left ( { C_{ m } } \right.  )$ nằm trên Parapol $y=x ^ { 2 } +3$
 
@@ -876,7 +901,7 @@ Khi đó giao điểm của 2 tiệm cận là $I\left ( { 1;m+2 } \right.  )$.
 
 Để $I$ nằm trên Parabol $y=x ^ { 2 } +3$ thì $m+2=1+3⇔m=2{ \rm{ } }{ \rm{ ( } }{ \rm{ t } }{ \rm{ / } }{ \rm{ m } }\,\,m≠0){ \rm{ . } }{ \rm{ } }$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -979,7 +1004,11 @@ Ta thấy $x-2=0⇔x=2$ và $-2 ^ { 2 } +4.2+3≠0$ nên đồ thị hàm số c
 
 > **Đáp số:** `3`
 
-<p align="center"><img src="/assets/images/toan-12/c1_b3_image960.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Tìm tổng số tiệm cận ngang và tiệm cận đứng của đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$. » Số tiệm cận đứng của đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$đúng bằng số nghiệm thực của phương trình$2f\left ( { x } \right.  )-1=0⇔f\left ( { x } \right.  )=\frac { 1 } { 2 }$. Mà số nghiệm thực của phương trình$f\left ( { x } \right.  )=\frac { 1 } { 2 }$bằng số giao điểm của đồ thị hàm số$y=f\left ( { x } \right.  )$với đường thẳng$y=\frac { 1 } { 2 }$. Dựa vào bảng biến thiên ta thấy đường thẳng$y=\frac { 1 } { 2 }$cắt đồ thị hàm số$y=f(x)$tại 2 điểm phân biệt. Vậy đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$có 2 tiệm cận đứng. » Lại có$\mathop { lim } \limits_{ x→±∞ } \frac { 1 } { 2f\left ( { x } \right.  )-1 }=1⇒$đồ thị hàm số có một tiệm cận ngang là$y=1$. Vậy tổng số tiệm cận ngang và tiệm cận đứng của đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$là$3$.
+<p align="center"><img src="/assets/images/toan-12/c1_b3_image960.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Tìm tổng số tiệm cận ngang và tiệm cận đứng của đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$.
+
+- Số tiệm cận đứng của đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$đúng bằng số nghiệm thực của phương trình$2f\left ( { x } \right.  )-1=0⇔f\left ( { x } \right.  )=\frac { 1 } { 2 }$. Mà số nghiệm thực của phương trình$f\left ( { x } \right.  )=\frac { 1 } { 2 }$bằng số giao điểm của đồ thị hàm số$y=f\left ( { x } \right.  )$với đường thẳng$y=\frac { 1 } { 2 }$. Dựa vào bảng biến thiên ta thấy đường thẳng$y=\frac { 1 } { 2 }$cắt đồ thị hàm số$y=f(x)$tại 2 điểm phân biệt. Vậy đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$có 2 tiệm cận đứng.
+
+- Lại có$\mathop { lim } \limits_{ x→±∞ } \frac { 1 } { 2f\left ( { x } \right.  )-1 }=1⇒$đồ thị hàm số có một tiệm cận ngang là$y=1$. Vậy tổng số tiệm cận ngang và tiệm cận đứng của đồ thị hàm số$y=\frac { 1 } { 2f\left ( { x } \right.  )-1 }$là$3$.
 
 </details>
 

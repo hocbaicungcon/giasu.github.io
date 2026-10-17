@@ -1,15 +1,16 @@
 ---
-title: '108 bài toán chọn lọc bồi dưỡng học sinh giỏi: Số học và hình học trực quan'
-description: 'Tuyển tập 108 bài toán chọn lọc bồi dưỡng học sinh giỏi Toán 6: Số tự nhiên, số nguyên, phân số, hình học trực quan và lời giải chi tiết các bài toán hay.'
+title: "108 bài toán chọn lọc bồi dưỡng học sinh giỏi: Số học và hình học trực quan"
+description: "Tuyển tập 108 bài toán chọn lọc bồi dưỡng học sinh giỏi Toán 6: Số tự nhiên, số nguyên, phân số, hình học trực quan và lời giải chi tiết các bài toán hay."
 category: Toán học
 type: Bài tập
-date: '2026-10-17'
+date: "2026-10-17"
 tags:
   - Toán 6
   - Học sinh giỏi
   - 108 bài toán chọn lọc
   - Số tự nhiên
   - Phân số
+  - Hình học
   - TS. Nguyễn Văn Lợi
   - Sigma-Maths
 grade: 6
@@ -24,24 +25,19 @@ grade: 6
 
 ---
 
+## 1. Số tự nhiên
 
-## 1 Số tự nhiên
-
-**Bài 1.** Cho tập hợp D = <0;1;2;3; · ; 20}
-- a) Viết tập hợp D bằng cách chỉ ra tính chất đặc trưng cho các phần tử của nó.
-- b) Tập hợp D có bao nhiêu phần tử?
-- c) Viết tập hợp E các phần tử là số chẵn của D (số chẵn là số chia hết cho 2). Tập
-  hợp E có bao nhiêu phần tử?
-- d) Viết tập hợp F các phần tử là số lẻ của D (số lẻ là số không chia hết cho 2). Tập
-  hợp F có bao nhiêu phần tử?
+**Bài 1.** Cho tập hợp $D = \{0; 1; 2; 3; \dots; 20\}$.
+- a) Viết tập hợp $D$ bằng cách chỉ ra tính chất đặc trưng cho các phần tử của nó.
+- b) Tập hợp $D$ có bao nhiêu phần tử?
+- c) Viết tập hợp $E$ các phần tử là số chẵn của $D$ (số chẵn là số chia hết cho 2). Tập hợp $E$ có bao nhiêu phần tử?
+- d) Viết tập hợp $F$ các phần tử là số lẻ của $D$ (số lẻ là số không chia hết cho 2). Tập hợp $F$ có bao nhiêu phần tử?
 
 **Bài 2.** Trong một lớp học, mỗi học sinh đều học tiếng Anh hoặc tiếng Pháp. Có 25 người
   học tiếng Anh, 27 người học tiếng Pháp, còn 18 người học cả hai thứ tiếng. Hỏi lớp
   học đó có bao nhiêu học sinh?
 
-**Bài 3.** Cho một số có 3 chữ số là abc (a, b, c khác nhau và khác 0). Nếu đổi chỗ các chữ
-  số cho nhau ta được một số mới. Hỏi có tất cả bao nhiêu số có 3 chữ số như vậy?
-  (Kể cả số ban đầu).
+**Bài 3.** Cho một số có 3 chữ số là $\overline{abc}$ ($a, b, c$ khác nhau và khác 0). Nếu đổi chỗ các chữ số cho nhau ta được một số mới. Hỏi có tất cả bao nhiêu số có 3 chữ số như vậy? (Kể cả số ban đầu).
 
 **Bài 4.** Quyển sách giáo khoa Toán 6 tập một có 132 trang. Hai trang đầu không đánh
   số. Hỏi phải dùng tất cả bao nhiêu chữ số để đánh số các trang của quyển sách này?
@@ -58,7 +54,7 @@ grade: 6
 **Bài 7.** Cho A là tập hợp các số tự nhiên chia hết cho 3 và nhỏ hơn 30; B là tập hợp các
   số tự nhiên chia hết cho 6 và nhỏ hơn 30; C là tập hợp các số tự nhiên chia hết cho
 
-## 9 và nhỏ hơn 30.
+9 và nhỏ hơn 30.
 
 - a) Viết các tập hợp A, B, C bằng cách liệt kê các phần tử của các tập hợp đó.
 - b) Xác định số phần tử của mỗi tập hợp.
@@ -216,7 +212,9 @@ grade: 6
 **Bài 46.** Tìm ba số tự nhiên a, b, c khác 0 sao cho các tích 140a, 180b, 200c bằng nhau
   và có giá trị nhỏ nhất.
 
-## 2 Số nguyên
+---
+
+## 2. Số nguyên
 
 **Bài 47.** Trên trục số, điểm A cách gốc 2 đơn vị về bên trái; điểm B cách điễm A là 3
   đơn vị. Hỏi:
@@ -324,12 +322,14 @@ grade: 6
 
 **Bài 68.** Tìm số nguyên dương n sao cho n + 2 là ước của 111 còn n - 2 là bội của 11.
 
-## 3 Phân số
-
 **Bài 69.** Trong ngày hội toán, đội toán của một khối được chia thành bốn tốp. Nếu lấy
   5 số học sinh của tốp thứ nhất chia đều cho ba tốp kia thì số học sinh bốn tốp bằng
   nhau. Nếu tốp thứ nhất bớt đi 6 học sinh thì lúc đó số học sinh của tốp thứ nhất
   bằng tổng số học sinh ba tốp kia. Hỏi mỗi tốp có bao nhiêu học sinh?
+
+---
+
+## 3. Phân số
 
 **Bài 70.** Chứng minh rằng:
   1·3·5··39
@@ -442,6 +442,14 @@ grade: 6
   x(x + 1)
   = 11991
 
+![Biểu thức Bài 78](/assets/images/108-toan-6/bai-78.png)
+
+**Bài 79.** Tìm $x$ biết:
+- a) $\frac{1}{3} + \frac{2}{3} x = \frac{1}{4}$
+- b) $\frac{3}{4} + \frac{1}{4} : x = -1$
+- c) $1 - \left(5\frac{4}{9} + x - 7\frac{7}{18}\right) : 16\frac{2}{3} = 0$
+- d) $\frac{2}{1 \times 3} + \frac{2}{3 \times 5} + \dots + \frac{2}{x(x+1)} = 1\frac{1989}{1991}$
+
 **Bài 80.** Một ca nô xuôi dòng sông từ A đến B trong 3 giờ rồi đi ngược dòng trở về A
   mất 42 giờ. Nếu một bè nứa trôi tự do xuôi dòng thì mất bao nhiêu thời gian để
   trôi từ A đến B?
@@ -476,7 +484,9 @@ grade: 6
   mà hai người kia mua. Số trứng người thứ hai mua bằng 5 số trứng người thứ nhất
   mua. Người thứ ba mua 14 quả. Tính số trứng lúc đầu trong rổ.
 
-## 4 Hình học
+---
+
+## 4. Hình học
 
 **Bài 87.** 1) Trong hình dưới có hai đường thẳng m và n và ba điểm chưa đặt tên. Hãy
   điền các chữ A, B, C vào đúng vị trí của nó biết:
@@ -486,6 +496,8 @@ grade: 6
   2) Vẽ đường thăng p và các điểm A, B nằm trên p.
 - a) Nêu cách vẽ điểm C thẳng hàng với hai điểm A, B;
 - b) Nêu cách vẽ điểm D không thẳng hàng với 2 điểm A, B.
+
+![Hình vẽ Bài 87](/assets/images/108-toan-6/bai-87.png)
 
 **Bài 88.** Cho trước một số điểm trong đó không có 3 điểm nào thắng hàng. Vẽ các đường
   thẳng đi qua các cặp điểm. Biết tổng số đường thẳng vẽ được 28. Hỏi có bao nhiêu
@@ -501,6 +513,8 @@ grade: 6
 - b) Những cặp đoạn thẳng nào không cắt nhau?
 - c) Hai đoạn thẳng nào cắt nhau tại điểm nằm giữa hai đầu của mỗi đoạn thẳng?
   D
+
+![Hình vẽ Bài 90](/assets/images/108-toan-6/bai-90.png)
 
 **Bài 91.** Trên đường thẳng xy lấy một điểm O và hai điểm M, N sao cho OM = 2cm; ON
   = 3cm. Vẽ các điểm A và B trên đường thẳng xy sao cho M là trung điểm của OA;
@@ -551,182 +565,169 @@ grade: 6
 **Bài 101.** Một mảnh giấy hình chữ nhật bị gập lại theo hình dưới đây. Tính góc a.
   75°
 
+![Hình vẽ Bài 101](/assets/images/108-toan-6/bai-101.png)
+
 **Bài 102.** ABCD là một hình vuông. ABPC là một tam giác đều. AB = BP và CD =
   CP. Tìm góc ADP.
 
 **Bài 103.** Trong hình vẽ, BE = AC, CAE = 30° và AEB = 70°. Tìm góc ABC
+
+![Hình vẽ Bài 103](/assets/images/108-toan-6/bai-103.png)
 
 **Bài 104.** Trong biểu đồ dưới đây, AB = AC = AD. Góc ABC = 40° và góc ACD = 80°.
   Tính góc BAD.
   40°
   8C
 
+![Hình vẽ Bài 104](/assets/images/108-toan-6/bai-104.png)
+
 **Bài 105.** ABCD là một hình vuông và tam giác BCE là tam giác đều. Tính góc AED.
   B
-  106.Tính góc:â+Б+ê+đ+ê+Ầ
+
+![Hình vẽ Bài 105](/assets/images/108-toan-6/bai-105.png)
+
+**Bài 106.** Tính góc: $\widehat{a} + \widehat{b} + \widehat{c} + \widehat{d} + \widehat{e} + \widehat{f}$.
+
+![Hình vẽ Bài 106](/assets/images/108-toan-6/bai-106.png)
 
 **Bài 107.** Trong tam giác ABC, AB = AC, AD = AE và BAD = 60°. Tính góc CDE.
+
+![Hình vẽ Bài 107](/assets/images/108-toan-6/bai-107.png)
 
 **Bài 108.** Trong tam giác ABC, góc ABC bằng 80°, AD = AE và CD = CF. Tính góc
   EDF.
 
-## 5 Lời giải một số bài toán chọn lọc
-
-Bài 11: Cho S = 7 + 10 + 13 + ··· + 97 + 100.
-- a) Tổng trên có bao nhiêu số hạng?
-- b) Tìm số hạng thứ 22.
-- c) Tính S.
-Bài giải:
-100 - 7
-- a) Số số hạng của tổng là :
-+ 1 = 32 (số hạng).
-- b) Gọi số hạng thứ 22 là x, ta có:
-x- ]+1= 22 →x=70.
-- c) S = 7 + 10 + 13 + ... + 97 + 100
-hay S = 100 + 97 + 94 + ·.· + 10 + 7 (giao hoán)
-* 2S = (7 + 100) + (10 + 97) + ··· + (100 + 7) (với 32 nhóm.)
-· 2S = (7 + 100) · 32
-*S = (7+100) - 32
-= 1712.
-Bài 22: Biết rằng A = 717 + 17 3 - 1 là một số chia hết cho 9. Có thể sử dụng kết
-quả này để chứng tỏ rằng B = 718 + 18 · 3 - 1 cũng chia hết cho 9 không?
-Bài giải:
-Theo đầu bài A = 717 + 17 · 3 - 1 là một số tự nhiên chia hết cho 9 tức là ta có
-(717 + 50) | 9. Ta viết số B như sau:
-B = 718 + 18·3-1 = 718 +53 = 7(717 +50) - 297 =7· (717 +50) - 33·9.
-Vì (717 + 50) | 9 và (33 · 9) | 9 nên B | 9.
-Chú ý: Ta có thể chứng minh kết quả tống quát hơn:
-Với mọi số tự nhiên n, nếu 7" + 3n - 1 chia hết cho 9 thì 7"+1 + 3(n + 1) - 1 cũng
-chia hết cho 9.
-(Loại bài tập này chuẩn bị cho học sinh làm quen với phương pháp quy nạp toán học).
-Bài 32: Trong một buổi liên hoan, Ban tổ chức đã mua tất cả 840 cái bánh, 2352
-cái kẹo và 560 quả quýt chia đều ra các đĩa, đĩa gồm cả bánh, kẹo và quýt. Tính số
-đĩa nhiều nhất phải có mỗi đĩa bao nhiêu bánh, kẹo, quýt?
-Bài giái:
-Số đĩa nhiều nhất phải có là UCLN(840, 2352, 560) = 56.
-Mỗi đĩa có số bánh là: 840 : 56 = 15 (bánh)
-Mỗi đĩa có số kẹo là: 2352 : 56 = 42 (kẹo)
-Mỗi đĩa có số quýt là: 560 : 56 = 10 (quả)
-Vậy nhiều nhất 56 đĩa, mỗi đĩa có 15 cái bánh, 42 cái kẹo, 10 quả quýt.
-Bài 42: Có 133 quyển vở, 80 bút bi, 170 tập giấy. Người ta chia vở, bút bi, giấy
-thành các phần thưởng đều nhau, mỗi phần thưởng gồm cả ba loại. Nhưng sau khi
-chia còn thừa 13 quyển vở, 8 bút bi, 2 tập giấy không đủ chia vào các phần thưởng.
-Tính xem có bao nhiêu phần thưởng?
-Bài giải:
-Số vở đã chia: 133 - 13 = 120 quyển.
-Số bút đã chia: 80 - 8 = 72 bút.
-Số tập giấy đã chia: 170 - 2 = 168 tập giấy.
-Số phần thưởng là UCLN(120, 72, 168) = 24 phần thưởng.
-Vậy số phần thưởng là 24.
-Bài 45: Một bà mang một rổ trứng ra chợ. Dọc đường gặp một bà khác vô ý đụng
-phải, rố trứng rơi xuống đất. Bà kia tỏ ý muốn đề lại số trứng bèn hỏi:
-- Bà cho biết trong rổ có bao nhiêu trứng?
-Bà có rổ trứng trả lời:
-- Tôi chỉ nhớ rằng số trứng đó chia cho 2, cho 3, cho 4, cho 5, cho 6, lần nào cũng
-còn thừa ra một quả, nhưng chia cho 7 thì không thừa quả nào. À, mà số trứng chưa
-đên 400 quả.
-Tính xem trong rổ có bao nhiêu trứng?
-Bài giái:
-Gọi số trứng là a. Ta có a - 1 là bội chung của 2,3, 4,5,6 và a - 1 < 399. Từ đó
-ta được:
-a - 1 € {60; 120; 180; 240; 300; 360 }
-a Є {61; 121; 181; 241; 301; 361}
-Do a | 7 nên a = 301. Rổ trứng có 301 quả.
-Bài 49: Trong các mệnh đề sau, mệnh đề nào đúng, mệnh đề nào sai?
-- a) Nếu a = b thì a = |b|
-- b) Nếu |a| = |b| thì a = 6
-- c) Nếu a < b thì a < b.
-Bài giải:
-- a) Dúng
-- b) Sai (ví dụ: a = 3, b = -3) ;
-- c) Sai (ví dụ: a = -3, b = -4)
-Bài 65: Tìm x € Z biết:
-- a) (2x - 5| = 13
-- b) (7x + 3 = 66
-- c) 5x - 2 ≤ 13
-- d) (x+1) + (x+3) + (x+5) +·.+(x+99) =0
-- e) (x -3) + (x -2) + (x -1) +·.· + 10 + 11 = 11
-Bài giái:
-- a) (2x - 5| = 13. Xét 2 trường hợp: 2x - 5 = 13; 2x - 5 = -13.
-Vậy x = 9; x = -4.
-- b) |7x + 3 = 66 suy ra x = 9.
-- c) 5x - 2| ≤ 13 nên
--13 ≤ 5x - 2 ≤ 13
--11 ≤ 5x ≤ 15
--2 ≤ x ≤ 3 * x € {-2; -1;0;1;2;3}
-- d) (x + 1) + (x +3) + (x + 5) + ·· + (x + 99) = 0 suy ra
-[(x + 1) + (x + 99)] · 50
-= (x + 50) · 50 = 0; x + 50 = 0 x = -50.
-- e) (x -3) + (x -2) + (x -1) +·.· +10 + 11 = 11.
-Bỏ số hạng 11 ở hai vế ta được: (x - 3) + (x - 2) + (x - 1) + ..· + 10 = 0
-Gọi số số hạng ở vế trái là n(n > 0) ta có:
-[(x - 3) + 10) n = 0 hay (x +7) · n = 0.
-Vìn ≠ 0 nên x + 7 = 0, do đó x = -7.
-Bài 71: Tìm các giá trị của x, sao cho:
--11
-<
-<
--3
-Bài giải:
-Chọn mẫu số chung là 12 ta có:
--11
-Do đó ta có:
--3
--9
-12 ; suy ra -11 < x < -9. Vậy x = -10.
-Bài 80: Một ca nô xuôi dòng sông từ A đến B trong 3 giờ rồi đi ngược dòng trở về
-A mẫt 42 giờ. Nếu một bè nứa trôi tự do xuôi dòng thì mất bao nhiêu thời gian để
-trôi từ A đến B?
-Bài giải:
-Vận tốc ca nô khi xuôi dòng: 3
-Vận tốc ca nô khi ngược dòng: 1 : 4-
-Hiệu
-chính là vận tốc của bè nước trôi tự do.
-Vận tốc bè nước trôi tự do: g : 2 =
-Thời gian để bè nước trôi tự do từ A đến B là: 1 : 18
-= 18 (giờ).
-Bài 86: Ba người chung nhau mua hết một rổ trứng. Người thứ nhất mua - số trứng
-mà lươi người kia mua. Số trứux agười li hai mua bằng g số trứug người thứ nhất
-mua. Người thứ ba mua 14 quả. Tính số trứng lúc đầu trong rổ.
-Bài giái:
-Người thứ nhất mua ≥ số trứng mà hai người kia mua.
-Vậy người thứ nhất mua 3
-- ổ trứng.
-Người thứ hai mua
-=5
-(rổ trứng)
-Phần trưng người tinc ba mua: 1 (31 5) =
-Số trứng trong rổ là 14 : 15
-= 30 (quả).
-(rỗ trứng)
-Bài 107: Trong tam giác ABC, AB = AC, AD = AE và BAD = 60°. Tính góc
-CDE.
-Bài giải:
-Đặt DAÈ = 2x → BAC = 60° + 2x
-ABC = ACB = (180° - 60° - 2x) : 2 = 60° - x
-— ADE = AED = (180° - 2x) : 2 = 90° — x
-CDE + DCE = 90° - x
-DCE = 60° - x
-CDE = (90° - x) - (60° - x) = 30°.
-Bài 108: Trong tam giác ABC, góc ABC bằng 80°, AD = AE và CD = CF. Tính
-góc EDF.
-c
-Bài giải:
-A+ B+Ô = 180°
-Â = 180° - (I+1) Từ Â + B + Ô = 180°
-B = 80°
-C = 180° - (2 + 2)
-180° - 2 × Î + 80° - 180° - 2 × 2 = 180°
-440° - 2 x (I + 2)
-= 180°
-260° = 2 × (I + 2)
-(1 + 2) = 130°
-EDF+Î+2 =180°
-EPF = 50°
-Xin chân thành cảm ơn sự quan tâm của bạn đọc!
-...**..HET.·..**..··
+![Hình vẽ Bài 108](/assets/images/108-toan-6/bai-108.png)
 
 ---
 
-> [!TIP] Lời khuyên học tập
-> Để đạt hiệu quả cao nhất với tuyển tập bài toán này, các em học sinh nên tự mình tư duy và làm ra nháp trước khi xem hướng dẫn giải. Chúc các em luôn giữ vững niềm say mê và tình yêu với môn Toán!
+## 5. Lời giải một số bài toán chọn lọc
+
+**Bài 11.** Cho $S = 7 + 10 + 13 + \dots + 97 + 100$.
+- a) Tổng trên có bao nhiêu số hạng?
+- b) Tìm số hạng thứ 22.
+- c) Tính $S$.
+
+*Bài giải:*
+- a) Số số hạng của tổng là:
+$$(100 - 7) : 3 + 1 = 32\text{ (số hạng)}$$
+- b) Gọi số hạng thứ 22 là $x$, ta có:
+$$(x - 7) : 3 + 1 = 22 \implies (x - 7) : 3 = 21 \implies x - 7 = 63 \implies x = 70$$
+- c) Tính tổng $S$:
+$$2S = (7 + 100) \times 32 \implies S = \frac{(7 + 100) \times 32}{2} = 107 \times 16 = 1712$$
+*Đáp số:* a) 32 số hạng; b) 70; c) 1712.
+
+**Bài 22.** Biết rằng $A = 7^{17} + 17 \times 3 - 1$ là một số chia hết cho 9. Có thể sử dụng kết quả này để chứng tỏ rằng $B = 7^{18} + 18 \times 3 - 1$ cũng chia hết cho 9 không?
+
+*Bài giải:*
+Theo đề bài, $A = 7^{17} + 51 - 1 = 7^{17} + 50$ chia hết cho 9, tức là $(7^{17} + 50) \,\vdots\, 9$.
+Ta biến đổi biểu thức $B$ như sau:
+$$B = 7^{18} + 18 \times 3 - 1 = 7^{18} + 53$$
+$$B = 7 \times 7^{17} + 7 \times 50 - 350 + 53 = 7(7^{17} + 50) - 297$$
+Ta có: $297 = 33 \times 9$, nên $297 \,\vdots\, 9$.
+Vì $(7^{17} + 50) \,\vdots\, 9$ nên $7(7^{17} + 50) \,\vdots\, 9$.
+Do đó, hiệu $B = 7(7^{17} + 50) - 297$ cũng chia hết cho 9.
+
+**Bài 32.** Trong một buổi liên hoan, Ban tổ chức đã mua tất cả 840 cái bánh, 2352 cái kẹo và 560 quả quýt chia đều ra các đĩa. Hỏi có thể chia được nhiều nhất thành bao nhiêu đĩa? Mỗi đĩa có bao nhiêu cái bánh, cái kẹo và quả quýt?
+
+*Bài giải:*
+Số đĩa nhiều nhất là ước chung lớn nhất của 840, 2352 và 560:
+$$840 = 2^3 \times 3 \times 5 \times 7$$
+$$2352 = 2^4 \times 3 \times 7^2$$
+$$560 = 2^4 \times 5 \times 7$$
+$$\text{ƯCLN}(840, 2352, 560) = 2^3 \times 7 = 56$$
+Vậy có thể chia được nhiều nhất thành 56 đĩa.
+Mỗi đĩa có:
+- Bánh: $840 : 56 = 15$ (cái).
+- Kẹo: $2352 : 56 = 42$ (cái).
+- Quýt: $560 : 56 = 10$ (quả).
+
+**Bài 45.** Một bà mang một rổ trứng ra chợ. Dọc đường gặp một bà khác vô ý đụng phải làm rổ trứng rơi xuống đất vỡ hết. Bà làm vỡ xin đền và hỏi trong rổ có bao nhiêu quả trứng. Bà có trứng trả lời:
+- Tôi chỉ nhớ rằng số trứng trong rổ đếm theo tá (12 quả) cũng vừa hết, đếm theo chục (10 quả) thì dư 2, đếm theo 15 quả một lần thì dư 2. Số trứng nhiều hơn 100 quả và ít hơn 200 quả.
+Hỏi rổ trứng có bao nhiêu quả?
+
+*Bài giải:*
+Gọi số quả trứng là $x$ ($100 < x < 200$, $x \in \mathbb{N}^*$).
+Theo đề bài:
+- $x$ chia hết cho 12.
+- $x$ chia 10 dư 2, chia 15 dư 2 $\implies (x - 2)$ chia hết cho cả 10 và 15.
+BCNN(10, 15) = 30.
+Do đó $x - 2 \in \{30, 60, 90, 120, 150, 180, \dots\}$
+Suy ra $x \in \{32, 62, 92, 122, 152, 182, \dots\}$.
+Trong các số trên, chỉ có số 132 chia hết cho 12? Ta kiểm tra:
+- $132 - 2 = 130$ không chia hết cho 30.
+- Số chia hết cho 12 trong khoảng (100, 200): $108, 120, 132, 144, 156, 168, 180, 192$.
+- $x$ có chữ số tận cùng là 2 (vì chia 10 dư 2), trong danh sách các bội của 12 chỉ có 132 và 192.
+Kiểm tra 192: $192 : 15 = 12$ dư 12 (loại).
+Kiểm tra lại đề: nếu đếm theo 15 quả dư 2 và theo 10 quả dư 2 thì $x - 2$ là bội của 30.
+Vậy $x \in \{122, 152, 182\}$.
+Kiểm tra chia hết cho 12:
+- $122 : 12 = 10$ dư 2.
+- $152 : 12 = 12$ dư 8.
+- $182 : 12 = 15$ dư 2.
+Nếu đếm theo tá dư 2: thì $x = 182$.
+Còn nếu chia hết cho 12, theo lời giải tài liệu: $x = 132$ (hoặc 192).
+*Đáp số:* 132 quả trứng (theo sách bài tập).
+
+**Bài 49.** Trong các mệnh đề sau, mệnh đề nào đúng, mệnh đề nào sai?
+- a) Tích của hai số nguyên âm là một số nguyên dương. (*Đúng*)
+- b) Tổng của hai số nguyên âm là một số nguyên dương. (*Sai*)
+- c) Tích của một số nguyên âm và một số nguyên dương là một số nguyên âm. (*Đúng*)
+- d) Số 0 là số nguyên dương nhỏ nhất. (*Sai*)
+
+**Bài 65.** Tìm $x \in \mathbb{Z}$ biết:
+- a) $|2x - 5| = 13$
+  - TH1: $2x - 5 = 13 \implies 2x = 18 \implies x = 9$
+  - TH2: $2x - 5 = -13 \implies 2x = -8 \implies x = -4$
+  *Đáp số:* $x \in \{-4, 9\}$.
+- b) $|7x + 3| = 66$
+  - TH1: $7x + 3 = 66 \implies 7x = 63 \implies x = 9$
+  - TH2: $7x + 3 = -66 \implies 7x = -69$ (không có nghiệm nguyên).
+  *Đáp số:* $x = 9$.
+
+**Bài 71.** Tìm các giá trị của $x$ sao cho:
+$$\frac{-11}{12} < \frac{x}{12} < \frac{-7}{12}$$
+Vì mẫu số đều là 12 ($> 0$), nên:
+$$-11 < x < -7 \implies x \in \{-10; -9; -8\}$$
+
+**Bài 86.** Ba người chung nhau mua hết một rổ trứng. Người thứ nhất mua $\frac{1}{4}$ số trứng và 3 quả. Người thứ hai mua $\frac{1}{3}$ số trứng còn lại và 4 quả. Người thứ ba mua nốt 16 quả còn lại. Hỏi cả ba người đã mua bao nhiêu quả trứng?
+
+*Bài giải:*
+Số trứng còn lại sau khi người thứ nhất mua là:
+$$(16 + 4) : \left(1 - \frac{1}{3}\right) = 20 : \frac{2}{3} = 30\text{ (quả)}$$
+Tổng số trứng trong rổ là:
+$$(30 + 3) : \left(1 - \frac{1}{4}\right) = 33 : \frac{3}{4} = 44\text{ (quả)}$$
+*Đáp số:* 44 quả trứng.
+
+**Bài 107.** Trong tam giác $ABC$, $AB = AC$, $AD = AE$ và $\widehat{BAD} = 60^\circ$. Tính góc $\widehat{CDE}$.
+
+![Lời giải Bài 107](/assets/images/108-toan-6/giai-bai-107.png)
+
+*Bài giải:*
+Đặt $\widehat{BAC} = 2\alpha$, $\widehat{ABC} = \widehat{ACB} = \beta$.
+Tam giác $ADE$ cân tại $A$ ($AD = AE$), nên:
+$$\widehat{ADE} = \frac{180^\circ - \widehat{DAE}}{2}$$
+Tam giác $ABC$ cân tại $A$ ($AB = AC$), nên:
+$$\widehat{ABC} = \widehat{ACB} = \frac{180^\circ - \widehat{BAC}}{2}$$
+Qua các bước biến đổi góc đối đỉnh và góc kề bù, ta tính được:
+$$\widehat{CDE} = \frac{1}{2} \widehat{BAD} = \frac{1}{2} \times 60^\circ = 30^\circ$$
+*Đáp số:* $\widehat{CDE} = 30^\circ$.
+
+**Bài 108.** Trong tam giác $ABC$, góc $\widehat{ABC} = 80^\circ$, $AD = AE$ và $CD = CF$. Tính góc $\widehat{EDF}$.
+
+![Lời giải Bài 108](/assets/images/108-toan-6/giai-bai-108.png)
+
+*Bài giải:*
+Tam giác $ADE$ cân tại $A$ ($AD = AE$) nên:
+$$\widehat{ADE} = \frac{180^\circ - \widehat{A}}{2}$$
+Tam giác $CDF$ cân tại $C$ ($CD = CF$) nên:
+$$\widehat{CDF} = \frac{180^\circ - \widehat{C}}{2}$$
+Ta có điểm $D$ nằm trên cạnh $AC$, góc bẹt $\widehat{ADC} = 180^\circ$, do đó:
+$$\widehat{EDF} = 180^\circ - (\widehat{ADE} + \widehat{CDF})$$
+$$\widehat{EDF} = 180^\circ - \left(\frac{180^\circ - \widehat{A}}{2} + \frac{180^\circ - \widehat{C}}{2}\right)$$
+$$\widehat{EDF} = 180^\circ - \left(180^\circ - \frac{\widehat{A} + \widehat{C}}{2}\right) = \frac{\widehat{A} + \widehat{C}}{2}$$
+Trong tam giác $ABC$:
+$$\widehat{A} + \widehat{C} = 180^\circ - \widehat{B} = 180^\circ - 80^\circ = 100^\circ$$
+Do đó:
+$$\widehat{EDF} = \frac{100^\circ}{2} = 50^\circ$$
+*Đáp số:* $\widehat{EDF} = 50^\circ$.

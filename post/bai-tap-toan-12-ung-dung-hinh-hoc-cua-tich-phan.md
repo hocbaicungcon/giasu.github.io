@@ -21,7 +21,11 @@ grade: 12
 
 ### 1. Diện tích hình thang cong
 
-Hình phẳng giới hạn bởi đồ thị hàm số, trục hoành, x=a và x=bHàm số $f\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a\,;\,b \right]$.▪Trường hợp $f\left ( { x } \right.  )>0$ trên $\left[ a;b \right]$, Khi đó diện tích hình thang cong giới hạn bởi đồ thị $f\left ( { x } \right.  )$,$Ox$ và hai đường thẳng $x=a$,$x=b$: .▪Trường hợp $f\left ( { x } \right.  )≤0$ trên $\left[ a;b \right]$, ta có $-f\left ( { x } \right.  )≥0$ $S$ hình thang cong $aABb=$ $S$ hình thang cong $aA'B'b$. ($aA'B'b$ là hình đối xứng của hình thang đã cho qua trục hoành). Do đó: 
+Hình phẳng giới hạn bởi đồ thị hàm số, trục hoành, x=a và x=bHàm số $f\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a\,;\,b \right]$.
+
+- Trường hợp $f\left ( { x } \right.  )>0$ trên $\left[ a;b \right]$, Khi đó diện tích hình thang cong giới hạn bởi đồ thị $f\left ( { x } \right.  )$,$Ox$ và hai đường thẳng $x=a$,$x=b$: .
+
+- Trường hợp $f\left ( { x } \right.  )≤0$ trên $\left[ a;b \right]$, ta có $-f\left ( { x } \right.  )≥0$ $S$ hình thang cong $aABb=$ $S$ hình thang cong $aA'B'b$. ($aA'B'b$ là hình đối xứng của hình thang đã cho qua trục hoành). Do đó: 
 
 <p align="center"><img src="/assets/images/toan-12/c4_b3_image20.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -30,10 +34,11 @@ Hình phẳng giới hạn bởi đồ thị hàm số, trục hoành, x=a và x
  Tổng quát:
 
 Diện tích của hình phẳng giới hạn bởi đồ thị hàm số $f\left ( { x } \right.  )$ liên tục,$Ox$ và hai đường thẳng $x=a$,$x=b$ được tính:
+- Giả sử hàm số $y=f\left ( { x } \right.  )$ liên tục trên $\left[ a;b \right]$. Nếu $f\left ( { x } \right.  )$ không đổi dấu trên $\left[ a;b \right]$ thì:Chú ý
 
-» Giả sử hàm số $y=f\left ( { x } \right.  )$ liên tục trên $\left[ a;b \right]$. Nếu $f\left ( { x } \right.  )$ không đổi dấu trên $\left[ a;b \right]$ thì:Chú ý
+Hình phẳng giới hạn bởi đồ thị hàm số, x=a và x=bCho hàm số $y=f\left ( { x } \right.  )$ và $y=g\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a\,;\,b \right]$. Gọi $D$ là hình phẳng giới hạn bởi đồ thị hai hàm số đó và đường thẳng $x=a$,$x=b$.
 
-Hình phẳng giới hạn bởi đồ thị hàm số, x=a và x=bCho hàm số $y=f\left ( { x } \right.  )$ và $y=g\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a\,;\,b \right]$. Gọi $D$ là hình phẳng giới hạn bởi đồ thị hai hàm số đó và đường thẳng $x=a$,$x=b$.▪Xét trường hợp $f\left ( { x } \right.  )≥g\left ( { x } \right.  )\,∀x∈\left[ a;b \right]$ Gọi $S$ là diện tích hình thang cong giới hạn bởi $\left\{ \begin{array}{l} Oxx=ax=b \end{array} \right.$ và $y=f\left ( { x } \right.  )$;$y=g\left ( { x } \right.  )$. Khi đó diện tích: .
+- Xét trường hợp $f\left ( { x } \right.  )≥g\left ( { x } \right.  )\,∀x∈\left[ a;b \right]$ Gọi $S$ là diện tích hình thang cong giới hạn bởi $\left\{ \begin{array}{l} Oxx=ax=b \end{array} \right.$ và $y=f\left ( { x } \right.  )$;$y=g\left ( { x } \right.  )$. Khi đó diện tích: .
 
 <p align="center"><img src="/assets/images/toan-12/c4_b3_image39.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -43,18 +48,27 @@ Diện tích của hình phẳng giới hạn bởi đồ thị hàm số $f\lef
 
 ### 2. Thể tích hình khối:
 
-Định nghĩa▪Gọi $B$ là phần vật thể giới hạn bởi hai mặt phẳng vuông góc với trục $Ox$ tại các điểm $a$ và $b,$ $S\left ( { x } \right.  )$ là diện tích thiết diện của vật thể bị cắt bởi mặt phẳng vuông góc với trục $Ox$ tại điểm $x,$ $\left ( { a≤x≤b } \right.  )$<p align="center"><img src="/assets/images/toan-12/c4_b3_image51.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+Định nghĩa
+- Gọi $B$ là phần vật thể giới hạn bởi hai mặt phẳng vuông góc với trục $Ox$ tại các điểm $a$ và $b,$ $S\left ( { x } \right.  )$ là diện tích thiết diện của vật thể bị cắt bởi mặt phẳng vuông góc với trục $Ox$ tại điểm $x,$ $\left ( { a≤x≤b } \right.  )$<p align="center"><img src="/assets/images/toan-12/c4_b3_image51.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 Giả sử $S\left ( { x } \right.  )$ là hàm số liên tục trên đoạn $\left[ a;b \right]$ Khi đó, thể tích của vật thể $B$ được xác định: .
 
 ### 3. Thể tích khối tròn xoay:
 
-Định nghĩa▪Thể tích khối tròn xoay được sinh ra khi quay hình phẳng giới hạn bởi $y=f\left ( { x } \right.  )$,$Ox$, và hai đường thẳng $x=a,{ \rm{ } }x=b$ quanh trục $Ox:$<p align="center"><img src="/assets/images/toan-12/c4_b3_image60.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+Định nghĩa
+- Thể tích khối tròn xoay được sinh ra khi quay hình phẳng giới hạn bởi $y=f\left ( { x } \right.  )$,$Ox$, và hai đường thẳng $x=a,{ \rm{ } }x=b$ quanh trục $Ox:$<p align="center"><img src="/assets/images/toan-12/c4_b3_image60.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 ## II. Phân dạng bài tập & Phương pháp giải
 
 ### Dạng 1. Xây dựng công thức tính diện tích theo hình vẽ
-
-▪ Xác định công thức diện tích hình phẳng:» Bước 1: Xác định đồ thị của các hàm số được cho trên hình vẽ.» Bước 2: Xác định các vị trí tương giao giữa các đồ thị.» Bước 3: Áp dụng công thức tính diện tích .» Bước 4: Phá trị tuyệt đối: Lấy công thức hàm số của đồ thị nằm trên trừ công thức hàm số của đồ thị nằm dưới▪ Xác định công thức thể tích khối tròn xoay:» Bước 1: Xác định đồ thị của các hàm số được cho trên hình vẽ.» Bước 2: Xác định các vị trí tương giao giữa các đồ thị.» Bước 3: Áp dụng công thức tính diện tích . Phương pháp
+- Xác định công thức diện tích hình phẳng:
+- **Bước 1:** Xác định đồ thị của các hàm số được cho trên hình vẽ.
+- **Bước 2:** Xác định các vị trí tương giao giữa các đồ thị.
+- **Bước 3:** Áp dụng công thức tính diện tích .
+- **Bước 4:** Phá trị tuyệt đối: Lấy công thức hàm số của đồ thị nằm trên trừ công thức hàm số của đồ thị nằm dưới
+- Xác định công thức thể tích khối tròn xoay:
+- **Bước 1:** Xác định đồ thị của các hàm số được cho trên hình vẽ.
+- **Bước 2:** Xác định các vị trí tương giao giữa các đồ thị.
+- **Bước 3:** Áp dụng công thức tính diện tích . Phương pháp
 
 **Ví dụ 1.1.** Gọi S là diện tích miền hình phẳng được tô đậm trong hình vẽ bên. Xây dựng công thức tính S?
 
@@ -100,7 +114,9 @@ Vậy
 
 ### Dạng 2. Diện tích hình phẳng giới hạn bởi y=f(x), Ox và x=a, x=b
 
-Diện tích hình phẳng giới hạn: . Để phá bỏ dấu giá trị tuyệt đối ta thường làm như sau:» Bước 1: Giải $f\left ( { x } \right.  )=0$ tìm nghiệm $x_{ 1 } ,x_{ 2 } ,...,x_{ n } ∈\left ( { a;b } \right.  )$ $\left ( { a < x_{ 1 } < x_{ 2 } < ... < x_{ n } < b } \right.  )$.» Bước 2: Tính Chú ý: Ngoài cách trên, ta có thể dựa vào đồ thị để bỏ dấu giá trị tuyệt đối. Phương pháp
+Diện tích hình phẳng giới hạn: . Để phá bỏ dấu giá trị tuyệt đối ta thường làm như sau:
+- **Bước 1:** Giải $f\left ( { x } \right.  )=0$ tìm nghiệm $x_{ 1 } ,x_{ 2 } ,...,x_{ n } ∈\left ( { a;b } \right.  )$ $\left ( { a < x_{ 1 } < x_{ 2 } < ... < x_{ n } < b } \right.  )$.
+- **Bước 2:** Tính Chú ý: Ngoài cách trên, ta có thể dựa vào đồ thị để bỏ dấu giá trị tuyệt đối. Phương pháp
 
 **Ví dụ 2.1.** Diện tích $S$ của hình phẳng giới hạn bởi đồ thị hàm số $y=x ^ { 2 }$, trục hoành $Ox$, các đường thẳng $x=1$,$x=2$ bằng bao nhiêu?
 
@@ -142,7 +158,9 @@ Thể tích khối tròn xoay giới hạn bởi đồ thị hàm số $y=\sqrt{
 
 ### Dạng 3. Diện tích hình phẳng giới hạn bởi y=f(x), y=g(x) và x=a, x=b
 
-Diện tích hình phẳng giới hạn: . Để phá bỏ dấu giá trị tuyệt đối ta thường làm như sau:» Bước 1: Giải $f\left ( { x } \right.  )=g\left ( { x } \right.  )$ tìm nghiệm $x_{ 1 } ,x_{ 2 } ,...,x_{ n } ∈\left ( { a;b } \right.  )$ $\left ( { a < x_{ 1 } < x_{ 2 } < ... < x_{ n } < b } \right.  )$.» Bước 2: Tính Chú ý: Ngoài cách trên, ta có thể dựa vào đồ thị để bỏ dấu giá trị tuyệt đối. Phương pháp
+Diện tích hình phẳng giới hạn: . Để phá bỏ dấu giá trị tuyệt đối ta thường làm như sau:
+- **Bước 1:** Giải $f\left ( { x } \right.  )=g\left ( { x } \right.  )$ tìm nghiệm $x_{ 1 } ,x_{ 2 } ,...,x_{ n } ∈\left ( { a;b } \right.  )$ $\left ( { a < x_{ 1 } < x_{ 2 } < ... < x_{ n } < b } \right.  )$.
+- **Bước 2:** Tính Chú ý: Ngoài cách trên, ta có thể dựa vào đồ thị để bỏ dấu giá trị tuyệt đối. Phương pháp
 
 **Ví dụ 3.1.** Tính diện tích hình phẳng giới hạn bởi hàm số $y=x ^ { 4 } -4x ^ { 2 } +4,$ $y=x ^ { 2 } ,$ đường thẳng $x=0$,$x=1.$
 
@@ -217,8 +235,7 @@ Diện tích hình phẳng giới hạn bởi các đường $(P):y=\frac { x ^ 
 Do $a>1$ nên $a=2$.
 
 ### Dạng 4. Thể tích vật thể tính theo mặt cắt vuông góc trục hoành
-
-▪Gọi $B$ là phần vật thể giới hạn bởi hai mặt phẳng vuông góc với trục $Ox$ tại các điểm $a$ và $b,$ $S\left ( { x } \right.  )$ là diện tích thiết diện của vật thể bị cắt bởi mặt phẳng vuông góc với trục $Ox$ tại điểm $x,$ $\left ( { a≤x≤b } \right.  )$<p align="center"><img src="/assets/images/toan-12/c4_b3_image51.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+- Gọi $B$ là phần vật thể giới hạn bởi hai mặt phẳng vuông góc với trục $Ox$ tại các điểm $a$ và $b,$ $S\left ( { x } \right.  )$ là diện tích thiết diện của vật thể bị cắt bởi mặt phẳng vuông góc với trục $Ox$ tại điểm $x,$ $\left ( { a≤x≤b } \right.  )$<p align="center"><img src="/assets/images/toan-12/c4_b3_image51.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 Giả sử $S\left ( { x } \right.  )$ là hàm số liên tục trên đoạn $\left[ a;b \right]$ Khi đó, thể tích của vật thể $B$ được xác định: . Phương pháp
 
@@ -266,7 +283,9 @@ Vậy có $18$ giá trị nguyên của m.
 
 ### Dạng 5. Thể tích khối tròn xoay
 
-Xoay miền hình phẳng giới hạn:$\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Ox;x=a;x=b \end{array} \right.$ quanh trục $Ox$.» Bước 1: Giải $f\left ( { x } \right.  )=0⇔x=c\,;\,c∈\left[ a;b \right]$.» Bước 2: Tính Phương pháp
+Xoay miền hình phẳng giới hạn:$\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Ox;x=a;x=b \end{array} \right.$ quanh trục $Ox$.
+- **Bước 1:** Giải $f\left ( { x } \right.  )=0⇔x=c\,;\,c∈\left[ a;b \right]$.
+- **Bước 2:** Tính Phương pháp
 
 **Ví dụ 5.1.** Tính thể tích khối tròn xoay sinh ra khi quay hình phẳng giới hạn bởi các đường sau xung quanh trục $Ox$:$y=2x-x ^ { 2 } ,\,y=0,\,x=0,\,x=2$.
 
@@ -304,15 +323,23 @@ $=π\left ( { Rh ^ { 2 } -\frac { h ^ { 3 } } { 3 } } \right.  )$.
 
 ### Dạng 6. Từ đồ thị tính diện tích hình phẳng
 
-● Trường hợp 1:$\left\{ \begin{array}{l} y=f\left ( { x } \right.  )y=g\left ( { x } \right.  ) \end{array} \right.→$ diện tích hình phẳng cần tìm là .
+
+- **Trường hợp 1:**$\left\{ \begin{array}{l} y=f\left ( { x } \right.  )y=g\left ( { x } \right.  ) \end{array} \right.→$ diện tích hình phẳng cần tìm là .
 
 <p align="center"><img src="/assets/images/toan-12/c4_b3_image328.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-» Bước 1: Quan sát đồ thị thấy $f\left ( { x } \right.  )-g\left ( { x } \right.  )=0⇔x=c\,;\,c∈\left[ a;b \right]$.» Bước 2: Xét hiệu $f\left ( { x } \right.  )-g\left ( { x } \right.  )$ trên các đoạn $\left[ a;c \right];\left[ c;b \right]$. Giả sử trên $\left\{ \begin{array}{l} \left[ a;c \right]:f\left ( { x } \right.  )-g\left ( { x } \right.  )>0\left[ c;b \right]:f\left ( { x } \right.  )-g\left ( { x } \right.  ) < 0 \end{array} \right.$. » Bước 3: Khi đó ● Trường hợp 2:$\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Ox:y=0 \end{array} \right.→$ diện tích hình phẳng cần tìm là .
+
+- **Bước 1:** Quan sát đồ thị thấy $f\left ( { x } \right.  )-g\left ( { x } \right.  )=0⇔x=c\,;\,c∈\left[ a;b \right]$.
+- **Bước 2:** Xét hiệu $f\left ( { x } \right.  )-g\left ( { x } \right.  )$ trên các đoạn $\left[ a;c \right];\left[ c;b \right]$. Giả sử trên $\left\{ \begin{array}{l} \left[ a;c \right]:f\left ( { x } \right.  )-g\left ( { x } \right.  )>0\left[ c;b \right]:f\left ( { x } \right.  )-g\left ( { x } \right.  ) < 0 \end{array} \right.$. 
+- **Bước 3:** Khi đó 
+- **Trường hợp 2:**$\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Ox:y=0 \end{array} \right.→$ diện tích hình phẳng cần tìm là .
 
 <p align="center"><img src="/assets/images/toan-12/c4_b3_image337.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-» Bước 1: Quan sát đồ thị thấy $f\left ( { x } \right.  )-0=0⇔x=c\,;\,c∈\left[ a;b \right]$.» Bước 2: Xét hiệu $f\left ( { x } \right.  )-0$ trên các đoạn $\left[ a;c \right];\left[ c;b \right]$. Giả sử trên $\left\{ \begin{array}{l} \left[ a;c \right]:f\left ( { x } \right.  )-0>0\left[ c;b \right]:f\left ( { x } \right.  )-0 < 0 \end{array} \right.$. » Bước 3: Khi đó . Phương pháp
+
+- **Bước 1:** Quan sát đồ thị thấy $f\left ( { x } \right.  )-0=0⇔x=c\,;\,c∈\left[ a;b \right]$.
+- **Bước 2:** Xét hiệu $f\left ( { x } \right.  )-0$ trên các đoạn $\left[ a;c \right];\left[ c;b \right]$. Giả sử trên $\left\{ \begin{array}{l} \left[ a;c \right]:f\left ( { x } \right.  )-0>0\left[ c;b \right]:f\left ( { x } \right.  )-0 < 0 \end{array} \right.$. 
+- **Bước 3:** Khi đó . Phương pháp
 
 **Ví dụ 6.1.** Gọi $S$ là diện tích hình phẳng $\left ( { H } \right.  )$ giới hạn bởi các đường $y=f\left ( { x } \right.  )$, trục hoành và hai đường thẳng $x=-1$,$x=2$. Đặt ,, Khi đó tính $S$ theo $a;b$.
 
@@ -350,7 +377,10 @@ Ta có $S_{ 1 } =2S_{ 2 } ⇔e ^ { k } -1=2\left ( { 4-e ^ { k } } \right.  )⇔
 
 <p align="center"><img src="/assets/images/toan-12/c4_b3_image382.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
-Bài toán: Cho hàm số $y=f\left ( { x } \right.  )$ liên tục có đồ thị như hình.$F\left ( { x } \right.  )$ là nguyên hàm của $f\left ( { x } \right.  )$ trên $\left[ a;c \right]$ So sánh $F\left ( { a } \right.  );F\left ( { c } \right.  );F\left ( { x_{ i } } \right.  )\,\,x_{ i } ∈\left[ a;c \right]$.» Bước 1: So sánh $F\left ( { a } \right.  );F\left ( { b } \right.  )$. Trên $\left[ a;b \right]:f\left ( { x } \right.  )>0→$ Mà .» Bước 2: Tương tự so sánh $F\left ( { b } \right.  );F\left ( { c } \right.  )$.» Bước 3: Ta thấy diện tích hình phẳng giới hạn bởi $\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Oxx=a;x=b \end{array} \right.$ lớn hơn $\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Oxx=b;x=c \end{array} \right.$.$⇒F\left ( { b } \right.  )-F\left ( { a } \right.  )>-F\left ( { c } \right.  )+F\left ( { b } \right.  )⇔-F\left ( { a } \right.  )>-F\left ( { c } \right.  )→F\left ( { a } \right.  ) < F\left ( { c } \right.  )$. Phương pháp
+Bài toán: Cho hàm số $y=f\left ( { x } \right.  )$ liên tục có đồ thị như hình.$F\left ( { x } \right.  )$ là nguyên hàm của $f\left ( { x } \right.  )$ trên $\left[ a;c \right]$ So sánh $F\left ( { a } \right.  );F\left ( { c } \right.  );F\left ( { x_{ i } } \right.  )\,\,x_{ i } ∈\left[ a;c \right]$.
+- **Bước 1:** So sánh $F\left ( { a } \right.  );F\left ( { b } \right.  )$. Trên $\left[ a;b \right]:f\left ( { x } \right.  )>0→$ Mà .
+- **Bước 2:** Tương tự so sánh $F\left ( { b } \right.  );F\left ( { c } \right.  )$.
+- **Bước 3:** Ta thấy diện tích hình phẳng giới hạn bởi $\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Oxx=a;x=b \end{array} \right.$ lớn hơn $\left\{ \begin{array}{l} y=f\left ( { x } \right.  )Oxx=b;x=c \end{array} \right.$.$⇒F\left ( { b } \right.  )-F\left ( { a } \right.  )>-F\left ( { c } \right.  )+F\left ( { b } \right.  )⇔-F\left ( { a } \right.  )>-F\left ( { c } \right.  )→F\left ( { a } \right.  ) < F\left ( { c } \right.  )$. Phương pháp
 
 **Ví dụ 7.1.** Cho hàm số $y=f\left ( { x } \right.  )$ xác định, liên tục và có một nguyên hàm là $F\left ( { x } \right.  )$ trên $\left[ -2;1 \right]$ đồng thời $f\left ( { x } \right.  )$ có đồ thị như hình vẽ bên. Hỏi các số sau:$F\left ( { 2 } \right.  )-F\left ( { -2 } \right.  )$;$F\left ( { -2 } \right.  )-F\left ( { 1 } \right.  )$;$F\left ( { 2 } \right.  )-F\left ( { 1 } \right.  )$;$F\left ( { 2 } \right.  )-F\left ( { 0 } \right.  )$ có bao nhiêu số dương?
 
@@ -393,74 +423,74 @@ Học sinh làm bài trực tiếp trên hệ thống để được chấm đi�
 
 ```quiz
 type: choice
-question: 'Câu 1: Cho hàm số $f\left ( { x } \right.  )$ liên tục trên $\mathbb{R}.$ Gọi S là diện tích hình phẳng giới hạn bởi các đường $y=f\left ( { x } \right.  ),$ $y=0,\,\,x=-2$ và $\,x=3$ (như hình vẽ). Mệnh đề nào dưới đây đúng? <p align="center"><img src="/assets/images/toan-12/c4_b3_image443.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>'
+question: 'Câu 1: Cho hàm số $f(x)$ liên tục trên $\mathbb{R}.$ Gọi $S$ là diện tích hình phẳng giới hạn bởi các đường $y=f(x),$ $y=0,\; x=-2$ và $x=3$ (như hình vẽ). Mệnh đề nào dưới đây đúng? <p align="center"><img src="/assets/images/toan-12/c4_b3_image443.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>'
 options:
-  - 'A. '
-  - 'B. '
-  - 'C. '
-  - 'D. '
+  - 'A. $S = \int_{-2}^1 f(x)dx + \int_1^3 f(x)dx$'
+  - 'B. $S = \int_{-2}^1 f(x)dx - \int_1^3 f(x)dx$'
+  - 'C. $S = -\int_{-2}^1 f(x)dx + \int_1^3 f(x)dx$'
+  - 'D. $S = -\int_{-2}^1 f(x)dx - \int_1^3 f(x)dx$'
 answer: 2
-explanation: 'Ta có'
+explanation: 'Trên đoạn $[-2; 1]$, đồ thị nằm phía trên trục hoành nên $f(x) \ge 0$. Trên đoạn $[1; 3]$, đồ thị nằm phía dưới trục hoành nên $f(x) \le 0$. Do đó $S = \int_{-2}^1 f(x)dx - \int_1^3 f(x)dx$.'
 ```
 
 ```quiz
 type: choice
-question: 'Câu 2: Cho hàm số $y=f\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a;b \right]$. Gọi $D$ là diện tích hình phẳng giới hạn bởi đồ thị $\left ( { C } \right.  ):y=f\left ( { x } \right.  )$, trục hoành, hai đường thẳng $x=a$,$x=b$ (như hình vẽ dưới đây). <p align="center"><img src="/assets/images/toan-12/c4_b3_image455.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Giả sử $S_{ D }$ là diện tích hình phẳng $D$. Chọn công thức đúng trong các phương án A, B, C, D cho dưới đây?'
+question: 'Câu 2: Cho hàm số $y=f(x)$ liên tục trên đoạn $[a; b]$. Gọi $D$ là diện tích hình phẳng giới hạn bởi đồ thị $(C): y=f(x)$, trục hoành, hai đường thẳng $x=a, x=b$ (như hình vẽ dưới đây). <p align="center"><img src="/assets/images/toan-12/c4_b3_image455.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Giả sử $S_D$ là diện tích hình phẳng $D$. Chọn công thức đúng trong các phương án dưới đây:'
 options:
-  - 'A. '
-  - 'B. '
-  - 'C. '
-  - 'D. '
+  - 'A. $S_D = \int_a^b f(x)dx$'
+  - 'B. $S_D = -\int_a^0 f(x)dx + \int_0^b f(x)dx$'
+  - 'C. $S_D = \int_a^0 f(x)dx - \int_0^b f(x)dx$'
+  - 'D. $S_D = -\int_a^b f(x)dx$'
 answer: 2
-explanation: '+ Nhìn đồ thị ta thấy: Đồ thị $(C)$ cắt trục hoành tại $O\left ( { 0;0 } \right.  )$ Trên đoạn $\left[ a;0 \right]$, đồ thị $(C)$ ở dưới trục hoành nên $\left | { f\left ( { x } \right.  ) } \right.  |=-f\left ( { x } \right.  )$ Trên đoạn $\left[ 0;b \right]$, đồ thị $\left ( { C } \right.  )$ ở trên trục hoành nên $\left | { f\left ( { x } \right.  ) } \right.  |=f\left ( { x } \right.  )$ + Do đó: .'
+explanation: 'Trên đoạn $[a; 0]$, đồ thị nằm phía dưới trục hoành nên $|f(x)| = -f(x)$. Trên đoạn $[0; b]$, đồ thị nằm phía trên trục hoành nên $|f(x)| = f(x)$. Do đó: $S_D = -\int_a^0 f(x)dx + \int_0^b f(x)dx$.'
 ```
 
 ```quiz
 type: choice
-question: 'Câu 3: Diện tích của hình phẳng được giới hạn bởi đồ thị hàm số $y=f\left ( { x } \right.  )$, trục hoành và hai đường thẳng $x=a$,$x=b$ $\left ( { a < b } \right.  )$ tính theo công thức nào dưới đây ? <p align="center"><img src="/assets/images/toan-12/c4_b3_image477.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>'
+question: 'Câu 3: Cho hàm số $y=f(x)$ liên tục trên đoạn $[a; b]$ có đồ thị cắt trục hoành tại điểm $c \in [a; b]$ như hình vẽ: <p align="center"><img src="/assets/images/toan-12/c4_b3_image477.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p> Diện tích $S$ của hình phẳng gạch sọc tính theo công thức nào dưới đây?'
 options:
-  - 'A. '
-  - 'B. '
-  - 'C. '
-  - 'D. '
+  - 'A. $S = -\int_a^c f(x)dx + \int_c^b f(x)dx$'
+  - 'B. $S = \int_a^c f(x)dx + \int_c^b f(x)dx$'
+  - 'C. $S = \int_a^c f(x)dx - \int_c^b f(x)dx$'
+  - 'D. $S = -\int_a^c f(x)dx - \int_c^b f(x)dx$'
 answer: 1
-explanation: 'Diện tích của hình phẳng được giới hạn bởi đồ thị hàm số $y=f\left ( { x } \right.  )$, trục hoành và hai đường thẳng $x=a$,$x=b$ là: .'
+explanation: 'Trên đoạn $[a; c]$, đồ thị nằm dưới trục hoành nên $f(x) \le 0$. Trên đoạn $[c; b]$, đồ thị nằm trên trục hoành nên $f(x) \ge 0$. Do đó $S = -\int_a^c f(x)dx + \int_c^b f(x)dx$.'
 ```
 
 ```quiz
 type: choice
-question: 'Câu 4: Cho hàm số $y=f\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a;\,b \right]$ có đồ thị như hình bên và $c∈\left[ a;\,b \right]$. Gọi $S$ là diện tích của hình phẳng $\left ( { H } \right.  )$ giới hạn bởi đồ thị hàm số $y=f\left ( { x } \right.  )$ và các đường thẳng $y=0$,$x=a$,$x=b$. Mệnh đề nào sau đây sai? <p align="center"><img src="/assets/images/toan-12/c4_b3_image507.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>'
+question: 'Câu 4: Cho hàm số $y=f(x)$ liên tục trên đoạn $[a; b]$ có đồ thị như hình bên và $c \in [a; b]$. Gọi $S$ là diện tích hình phẳng giới hạn bởi đồ thị hàm số $y=f(x)$ và các đường thẳng $y=0, x=a, x=b$. Mệnh đề nào sau đây SAI? <p align="center"><img src="/assets/images/toan-12/c4_b3_image507.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>'
 options:
-  - 'A. '
-  - 'B. '
-  - 'C. '
-  - 'D. '
+  - 'A. $S = \int_a^b f(x)dx$'
+  - 'B. $S = \int_a^c f(x)dx - \int_c^b f(x)dx$'
+  - 'C. $S = \int_a^c |f(x)|dx + \int_c^b |f(x)|dx$'
+  - 'D. $S = \int_a^b |f(x)|dx$'
 answer: 1
-explanation: 'Ta có: .'
+explanation: 'Vì trên đoạn $[a; b]$ hàm số $f(x)$ đổi dấu (dương trên $[a; c]$ và âm trên $[c; b]$) nên $\int_a^b f(x)dx \ne \int_a^b |f(x)|dx = S$. Do đó khẳng định A là sai.'
 ```
 
 ```quiz
 type: choice
-question: 'Câu 5: Cho hình phẳng $D$ giới hạn bởi đường cong $y=x ^ { 2 } +1$, trục hoành và các đường thẳng $x=0,x=3$. Khối tròn xoay tạo thành khi quay $D$ quanh trục hoành có thể tích $V$ bằng'
+question: 'Câu 5: Cho hình phẳng $D$ giới hạn bởi đường cong $y=x^2+1$, trục hoành và các đường thẳng $x=0, x=3$. Khối tròn xoay tạo thành khi quay $D$ quanh trục hoành có thể tích $V$ bằng:'
 options:
-  - 'A. $V=12π$'
-  - 'B. $V=\frac { 348π } { 5 }$'
-  - 'C. $V=32π$'
-  - 'D. $V=9π$'
+  - 'A. $V = 12\pi$'
+  - 'B. $V = \frac{348\pi}{5}$'
+  - 'C. $V = 32\pi$'
+  - 'D. $V = 9\pi$'
 answer: 2
-explanation: '.'
+explanation: 'Thể tích khối tròn xoay là: $V = \pi \int_0^3 (x^2+1)^2 dx = \pi \int_0^3 (x^4 + 2x^2 + 1)dx = \pi \left.\left(\frac{x^5}{5} + \frac{2x^3}{3} + x\right)\right|_0^3 = \frac{348\pi}{5}$.'
 ```
 
 ```quiz
 type: choice
 question: 'Câu 6: Diện tích phần gạch sọc trong hình vẽ bằng: <p align="center"><img src="/assets/images/toan-12/c4_b3_image670.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>'
 options:
-  - 'A. '
-  - 'B. '
-  - 'C. '
-  - 'D. '
-answer: 1
-explanation: 'Đáp án đúng là D.'
+  - 'A. $S = \frac{16}{3}$'
+  - 'B. $S = 8$'
+  - 'C. $S = \frac{28}{3}$'
+  - 'D. $S = \frac{32}{3}$'
+answer: 4
+explanation: 'Phương trình hoành độ giao điểm: $x^2 + x - 2 = -x + 1 \Leftrightarrow x^2 + 2x - 3 = 0 \Leftrightarrow x = 1$ hoặc $x = -3$. Trên đoạn $[-3; 1]$, đường thẳng $y = -x + 1$ nằm phía trên parabol $y = x^2 + x - 2$. Do đó diện tích là: $S = \int_{-3}^1 [(-x+1) - (x^2+x-2)]dx = \int_{-3}^1 (-x^2 - 2x + 3)dx = \left.\left(-\frac{x^3}{3} - x^2 + 3x\right)\right|_{-3}^1 = \frac{32}{3}$.'
 ```
 
 ## IV. Bài tập trắc nghiệm Đúng / Sai (Cấu trúc mới GDPT 2018)
@@ -482,25 +512,25 @@ Lời giải
 
 Dựa vào hình vẽ, ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) .
 
 Dựa vào hình vẽ, ta có: (do $f\left ( { x } \right.  )≤0,\,x∈\left[ b;\,c \right]$).
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) .
 
 Dựa vào hình vẽ, ta có: (do $f\left ( { x } \right.  )≥0,\,x∈\left[ c;\,d \right]$).
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) .
 
 Dựa vào hình vẽ, ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -515,25 +545,25 @@ Lời giải
 
 Ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Diện tích hình phẳng $\left ( { H_{ 2 } } \right.  )$ tạo bởi $f\left ( { x } \right.  ),\,Ox$ và hai đường thẳng $x=-2,\,x=2$ là
 
 Ta có: (do $f\left ( { x } \right.  )≥0,\,x∈\left[ -2;\,2 \right]$)
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Diện tích hình phẳng $\left ( { H_{ 3 } } \right.  )$ tạo bởi $g\left ( { x } \right.  ),\,Ox$ và hai đường thẳng $x=-3,\,x=3$ là .
 
 Ta có: (do $g\left ( { x } \right.  )≤0,\,x∈\left[ -3;1 \right]$ và $g\left ( { x } \right.  )≥0,\,x∈\left[ 1;3 \right]$).
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Diện tích hình phẳng $\left ( { H_{ 4 } } \right.  )$ tạo bởi $g\left ( { x } \right.  ),\,Ox$ và hai đường thẳng $x=-3,\,x=3$ là .
 
 Ta có: (do $g\left ( { x } \right.  )≤0,\,x∈\left[ -3;1 \right]$ và $g\left ( { x } \right.  )≥0,\,x∈\left[ 1;3 \right]$).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -556,25 +586,25 @@ $f\left ( { x } \right.  )=\left\{ \begin{array}{l} +3,\,\,\, x∈\left[ -3;\,-1
 
 Ta có: .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) .
 
 Do $f\left ( { x } \right.  )=-2x+4≤0,\,x∈\left[ 2;3 \right]$ nên .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) .
 
 Dựa vào hình vẽ, ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) .
 
 Ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -595,13 +625,13 @@ Lời giải
 
 Đáy của khối chóp nằm trên mặt phẳng vuông góc với $Ox$ tại $x=h$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Mỗi mặt phẳng vuông góc với trục $Ox$ tại điểm có hoành độ bằng $x\,\,\left ( { 0≤x≤h } \right.  )$, cắt khối chóp theo mặt cắt là hình vuông cạnh $a$.
 
 Mỗi mặt phẳng vuông góc với trục $Ox$ tại điểm có hoành độ bằng $x\,\,\left ( { 0≤x≤h } \right.  )$, cắt khối chóp theo mặt cắt là hình vuông có cạnh là $a$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Diện tích mặt cắt là $S\left ( { x } \right.  )=\frac { L } { h }x ^ { 2 }$.
 
@@ -609,13 +639,13 @@ Theo định lí Tha-les, ta có $\frac { x } { h }=\frac { \frac { a } { 2 } } 
 
 Do đó, diện tích của mặt cắt này là $S\left ( { x } \right.  )=\frac { L ^ { 2 } } { h ^ { 2 } }x ^ { 2 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Thể tích của khối chóp là $V=\frac { 1 } { 3 }L ^ { 2 } h$.
 
 Thể tích của khối chóp này là .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -634,25 +664,25 @@ Lời giải
 
 Hình phẳng đó giới hạn bởi bốn đường $y=e ^ { x }$, trục hoành và hai đường thẳng $x=-1$,$x=1$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Diện tích hình phẳng được tính bởi công thức .
 
 Ta có diện tích hình phẳng .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Diện tích hình phẳng $S=e-\frac { 1 } { e }$.
 
 Ta có diện tích hình phẳng .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Thể tích khối tròn xoay khi quay hình phẳng đó quanh trục $Ox$ là $V=\frac { 1 } { 2 }π\left ( { e ^ { 2 } -\frac { 1 } { e ^ { 2 } } } \right.  )$.
 
 Ta có thể tích khối tròn xoay khi quay hình phẳng đó quanh trục $Ox$ là .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -671,25 +701,25 @@ Lời giải
 
 Diện tích hình phẳng giới hạn bởi đồ thị hàm số $y=x ^ { 2 } -3x+2$ và $y=x-1$ là .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $S_{ 1 } =\frac { 4 } { 3 }$.
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $S_{ 1 } =S_{ 2 }$.
 
 Vậy $S_{ 1 } =S_{ 2 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Diện tích hình phẳng giới hạn bởi đồ thị hàm số $y=x ^ { 2 } -3x+2$;$y=x-1$;$x=0$;$x=3$ là .
 
 Diện tích hình phẳng giới hạn bởi đồ thị hàm số $y=x ^ { 2 } -3x+2$;$y=x-1$;$x=0$;$x=3$ là .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -704,7 +734,7 @@ Lời giải
 
 Nếu $a=π$ thì diện tích của $\left ( { H } \right.  )$ bằng .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Nếu $a=0$ thì diện tích của $\left ( { H } \right.  )$ bằng $π+2$.
 
@@ -712,7 +742,7 @@ b) Đúng.
 
 Nếu $a=0$ thì diện tích của $\left ( { H } \right.  )$ bằng .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Nếu diện tích của hình $\left ( { H } \right.  )$ là $S=π-a+\frac { 3 } { 2 }$ thì $\frac { π } { a }$ là số nguyên chia hết cho 9.
 
@@ -724,7 +754,7 @@ Nên $π+1-a+cosa=π-a+\frac { 3 } { 2 }$ $⇔cosa=\frac { 1 } { 2 }⇔a=\frac {
 
 Do đó,$\frac { π } { a }=\frac { π } { \frac { π } { 3 } }=3$ và không chia hết cho 9.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Nếu diện tích của hình $\left ( { H } \right.  )$ là $S'$ thì .
 
@@ -732,7 +762,7 @@ Diện tích của hình $\left ( { H } \right.  )$ là:
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -749,7 +779,7 @@ Phương trình hoành giao độ giao điểm của hai đồ thị hàm số t
 
 $x+\sqrt{ x }=x+x ^ { 2 }$ $⇔x=x ^ { 4 }$ $⇔\left[ x=0x=1 \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Diện tích hình phẳng giới hạn bởi đồ thị hai hàm số trên và $x=0$,$x=1$ được tính theo công thức .
 
@@ -757,7 +787,7 @@ Diện tích hình phẳng được giới hạn bởi các đường $y=x+\sqrt
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Diện tích hình phẳng giới hạn bởi đồ thị hai hàm số trên và $x=0$,$x=1$ được tính theo công thức .
 
@@ -767,7 +797,7 @@ Diện tích hình phẳng được giới hạn bởi các đường $y=x+\sqrt
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Diện tích hình phẳng giới hạn bởi đồ thị hai hàm số trên và $x=0$,$x=1$ bằng $\frac { 1 } { 3 }$ đvdt.
 
@@ -775,7 +805,7 @@ Diện tích hình phẳng được giới hạn bởi các đường $y=x+\sqrt
 
 $\left | { =\left ( { \frac { 2 } { 3 }x ^ { \frac { 3 } { 2 } } -\frac { x ^ { 3 } } { 3 } } \right.  ) } \right.  ._{ 0 } ^{ 1 }$ $=\frac { 2 } { 3 }-\frac { 1 } { 3 }=\frac { 1 } { 3 }$ đvdt.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -790,19 +820,19 @@ Lời giải
 
 Công thức tính diện tích hình phẳng $\left ( { H } \right.  )$ là: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Diện tích hình phẳng $\left ( { H } \right.  )$ bằng $\frac { 26 } { 3 }$.
 
 Diện tích hình phẳng $\left ( { H } \right.  )$ là .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Công thức tính thể tích khối tròn xoay sinh ra khi quay hình phẳng $\left ( { H } \right.  )$ xung quanh trục $Ox$ là: .
 
 Công thức tính thể tích khối tròn xoay sinh ra khi quay hình phẳng $\left ( { H } \right.  )$ xung quanh trục $Ox$ là: .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Thể tích khối tròn xoay sinh ra khi quay hình phẳng $\left ( { H } \right.  )$ xung quanh trục $Ox$ bằng $\frac { 202 } { 5 }$.
 
@@ -810,7 +840,7 @@ Thể tích khối tròn xoay sinh ra khi quay hình phẳng $\left ( { H } \rig
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -825,19 +855,19 @@ Lời giải
 
 Khoảng cách từ tâm của khối cầu đến khối chỏm cầu bằng $5-1=4$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Thể tích của khối chỏm cầu $V_{ 1 }$ được tính theo công thức .
 
 Thể tích của khối chỏm cầu được tính theo công thức
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Thể tích của khối chỏm cầu $V_{ 1 } =\frac { 14π } { 3 }$.
 
 Ta có thể tích khối chỏm cầu là .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Gọi $V_{ 2 }$ là thể tích của nửa khối cầu có bán kính bằng 5. Tỉ số thể tích $\frac { V_{ 1 } } { V_{ 2 } }=\frac { 7 } { 125 }$.
 
@@ -845,7 +875,7 @@ Gọi $V_{ 2 }$ là thể tích của nửa khối cầu có bán kính bằng 5
 
 Suy ra $\frac { V_{ 1 } } { V_{ 2 } }=\frac { \frac { 14 } { 3 }π } { \frac { 250 } { 3 }π }=\frac { 7 } { 125 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -866,7 +896,7 @@ Do $OB$ đi qua gốc tọa độ và tạo với $Ox$ một góc $\frac { π } 
 
 Khi đó, thể tích của khối $β$ theo (đvtt).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Khi $α=\frac { π } { 6 }$ thì thể tích $V$ của khối $β$ là $\frac { πa ^ { 3 } } { 9 }$ (đvtt).
 
@@ -874,7 +904,7 @@ Do $OB$ đi qua gốc tọa độ và tạo với $Ox$ một góc $\frac { π } 
 
 Khi đó, thể tích của khối $β$ theo (đvtt).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Khi thể tích $V$ của khối $β$ là $\frac { 4πa ^ { 3 } } { 3 }$ thì giá trị $cosα < \frac { 1 } { 2 }$.
 
@@ -886,7 +916,7 @@ Do $V=\frac { 4πa ^ { 3 } } { 3 }⇔\frac { πtan ^ { 2 } α.a ^ { 3 } } { 3 }=
 
 Mặt khác $0 < α < \frac { π } { 2 }$ nên $cosα=\frac { 1 } { \sqrt{ 5 } }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Khi $tanα=cotα$ thì thể tích $V$ của khối $β$ là $\frac { πa ^ { 3 } } { 3 }$.
 
@@ -898,7 +928,7 @@ Do $tanα=cotα⇒tan ^ { 2 } α=cotα.tanα=1⇔tanα=±1$.
 
 Mặt khác $0 < α < \frac { π } { 2 }$ nên $tanα=1$ $⇒V=\frac { πtan ^ { 2 } α.a ^ { 3 } } { 3 }=\frac { π.a ^ { 3 } } { 3 }$ (đvtt).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -919,7 +949,7 @@ Lời giải
 
 Tính theo thứ tự từ các gia đình nghèo nhất đến giàu nhất, tổng thu nhập của $60\%$ các gia đình của đầu tiên chiếm tỷ lệ trong tổng thu nhập là:$f\left ( { 60 } \right.  )=27,321529(\%)$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Nếu sắp xếp các gia đình theo thứ tự từ nghèo nhất đến giàu nhất, rồi chia thành $10$ nhóm bằng nhau từ $1$ đến $10$, tổng thu nhập của các gia đình trong nhóm $3$ chiếm khoảng $8,56\%$ tổng thu nhập của toàn bộ các gia đình.
 
@@ -937,7 +967,7 @@ $⇒$ Tỷ lệ của tổng thu nhập các gia đình nhóm thứ $3$ so với
 
 $f\left ( { 30 } \right.  )-f\left ( { 20 } \right.  )=2,787067(\%)$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Sự bất bình đẳng về thu nhập của Hoa Kì năm $2005$ được xác định bởi công thức: .
 
@@ -963,7 +993,7 @@ Sử dụng máy tính cầm tay ta được: .
 
 Kiểm tra phép tính của đề bài, ta có: .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Sự bất bình đẳng về thu nhập của Hoa Kỳ năm $2005$ đã vượt quá $2000$.
 
@@ -971,7 +1001,7 @@ Sự bất bình đẳng thu nhập của Hoa Kỳ năm $2005$ là:
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 

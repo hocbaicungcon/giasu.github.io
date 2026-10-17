@@ -22,26 +22,24 @@ grade: 12
 ### 1.TỐC ĐỘ THAY ĐỔI CỦA MỘT ĐẠI LƯỢNG.
 
 Một số ứng dụng của đạo hàm đối với vật lý, hóa học, sinh học và kinh tế
-
-▪ Nếu $s=s\left ( { t } \right.  )$ là hàm vị trí của một vật chuyển động trên một đường thẳng thì $v\left ( { t } \right.  )=s'\left ( { t } \right.  )$ biểu thị vận tốc tức thời của vật (tốc độ thay đổi của độ dịch chuyển theo thời gian). Tốc độ thay đổi tức thời của vận tốc theo thời gian là gia tốc tức thời $a\left ( { t } \right.  )$ của vật, như vậy $a\left ( { t } \right.  )=v'\left ( { t } \right.  )=s'$.
-
-▪ Nếu $C=C\left ( { t } \right.  )$ là nồng độ của một chất tham gia phản ứng hóa học tại thời điểm $t$, thì $C'\left ( { t } \right.  )$ là tốc độ phản ứng tức thời (tức là độ thay đổi nồng độ) của chất đó tại thời điểm $t$.
-
-▪ Nếu $P=P\left ( { t } \right.  )$ là số lượng cá thể trong một quần thể động vật hoặc thực vật tại thời điểm $t$, thì $P'\left ( { t } \right.  )$ biểu thị tốc độ tăng trưởng tức thời của quần thể tại thời điểm $t$.
-
-▪ Nếu $C=C\left ( { x } \right.  )$ là hàm chi phí, tức là tổng chi phí khi sản xuất $x$ đơn vị hang hóa, thì tốc độ thay đổi tức thời $C'\left ( { x } \right.  )$ của chi phí đối với số lượng đơn vị hàng được sản xuất được gọi là chi phí biên.
-
-▪ Về ý nghĩa kinh tế, chi phí biên $C'\left ( { x } \right.  )$ xấp xỉ với chi phí để sản xuất thêm một đơn vị hàng hóa tiếp theo, tức là đơn vị hang hóa thứ $x+1$.
+- Nếu $s=s\left ( { t } \right.  )$ là hàm vị trí của một vật chuyển động trên một đường thẳng thì $v\left ( { t } \right.  )=s'\left ( { t } \right.  )$ biểu thị vận tốc tức thời của vật (tốc độ thay đổi của độ dịch chuyển theo thời gian). Tốc độ thay đổi tức thời của vận tốc theo thời gian là gia tốc tức thời $a\left ( { t } \right.  )$ của vật, như vậy $a\left ( { t } \right.  )=v'\left ( { t } \right.  )=s'$.
+- Nếu $C=C\left ( { t } \right.  )$ là nồng độ của một chất tham gia phản ứng hóa học tại thời điểm $t$, thì $C'\left ( { t } \right.  )$ là tốc độ phản ứng tức thời (tức là độ thay đổi nồng độ) của chất đó tại thời điểm $t$.
+- Nếu $P=P\left ( { t } \right.  )$ là số lượng cá thể trong một quần thể động vật hoặc thực vật tại thời điểm $t$, thì $P'\left ( { t } \right.  )$ biểu thị tốc độ tăng trưởng tức thời của quần thể tại thời điểm $t$.
+- Nếu $C=C\left ( { x } \right.  )$ là hàm chi phí, tức là tổng chi phí khi sản xuất $x$ đơn vị hang hóa, thì tốc độ thay đổi tức thời $C'\left ( { x } \right.  )$ của chi phí đối với số lượng đơn vị hàng được sản xuất được gọi là chi phí biên.
+- Về ý nghĩa kinh tế, chi phí biên $C'\left ( { x } \right.  )$ xấp xỉ với chi phí để sản xuất thêm một đơn vị hàng hóa tiếp theo, tức là đơn vị hang hóa thứ $x+1$.
 
 ### 2. MỘT VÀI BÀI TOÁN TỚI ƯU HÓA ĐƠN GIẢN.
 
 Quy trình giải một số bài toán tối ưu hóa:
 
-» Bước 1: Xác định đại lượng $Q$ mà ta cần làm cho giá trị của đại lượng ấy lớn nhất hoặc nhỏ nhất và biểu diễn nó qua đại lượng khác trong bài toán.
 
-» Bước 2: Chọn một đại lượng thích hợp nào đó, kí hiệu là $x$, và biểu diễn của các đại lượng khác ở bước 1 theo $x$, khi đó, đại lượng $Q$ sẽ là hàm số của một biến $x$. Tìm tập xác định của hàm số $Q=Q\left ( { x } \right.  )$.
+- **Bước 1:** Xác định đại lượng $Q$ mà ta cần làm cho giá trị của đại lượng ấy lớn nhất hoặc nhỏ nhất và biểu diễn nó qua đại lượng khác trong bài toán.
 
-» Bước 3: Tìm giá trị lớn nhất, hoặc giá trị nhỏ nhất của hàm số $Q=Q\left ( { x } \right.  )$ bằng các phương pháp đã biết và kết luận.
+
+- **Bước 2:** Chọn một đại lượng thích hợp nào đó, kí hiệu là $x$, và biểu diễn của các đại lượng khác ở bước 1 theo $x$, khi đó, đại lượng $Q$ sẽ là hàm số của một biến $x$. Tìm tập xác định của hàm số $Q=Q\left ( { x } \right.  )$.
+
+
+- **Bước 3:** Tìm giá trị lớn nhất, hoặc giá trị nhỏ nhất của hàm số $Q=Q\left ( { x } \right.  )$ bằng các phương pháp đã biết và kết luận.
 
 BDạng bài tập
 
@@ -51,9 +49,11 @@ BDạng bài tập
 
 I. PHƯƠNG PHÁP
 
-» Bước 1: Xác định mối quan hệ các đại lượng
 
-» Bước 2: Đưa bài toán về mối quan hệ hàm số, lập bảng biến thiên để xét tính tăng giảm $y'$ theo biến $x$, tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số với điều kiện ràng buộc cho trước.
+- **Bước 1:** Xác định mối quan hệ các đại lượng
+
+
+- **Bước 2:** Đưa bài toán về mối quan hệ hàm số, lập bảng biến thiên để xét tính tăng giảm $y'$ theo biến $x$, tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số với điều kiện ràng buộc cho trước.
 
 ❀ Bài toán chuyển động: Tính vận tốc tức thời, tính gia tốc tại thời điểm vận tốc lớn nhất;
 
@@ -127,11 +127,14 @@ Vậy độ cao của con tàu so với bề mặt Mặt Trăng tại thời đi
 
 I. PHƯƠNG PHÁP
 
-» Bước 1: Chuyển bài toán thực tế đại lượng $y$ biến thiên theo đại lượng $x$ hoặc đã cho trong giả thiết bài toán.
 
-» Bước 2: Thực hiện giải bài toán theo yêu cầu tương ứng.
+- **Bước 1:** Chuyển bài toán thực tế đại lượng $y$ biến thiên theo đại lượng $x$ hoặc đã cho trong giả thiết bài toán.
 
-» Bước 3: Kết luận vấn đề đặt ra.
+
+- **Bước 2:** Thực hiện giải bài toán theo yêu cầu tương ứng.
+
+
+- **Bước 3:** Kết luận vấn đề đặt ra.
 
 II. CÁC VÍ DỤ
 
@@ -169,13 +172,17 @@ Vậy tốc độ truyền bệnh lớn nhất sẽ vào ngày thứ 15.
 
 I. PHƯƠNG PHÁP
 
-» Bước 1: Chọn một hoặc 1 số chữ cái $x,a,b$,… gọi là biến để biểu thị những đại lượng chưa biết và viết biểu thức biểu thị đại lượng, kí hiệu $P$, cần tìm giá trị lớn nhất, giá trị nhỏ nhất theo các biến đó.
 
-» Bước 2: Viết lại biểu thức $P$ thành biểu thức chứa một biến, chẳng hạn là $x$, bằng cách biểu thị các biến khác theo biến $x$ nhờ các dữ kiện đề bài đã cho. Từ đó, ta nhận được hàm số xác định bởi công thức $P=f\left ( { x } \right.  )$.
+- **Bước 1:** Chọn một hoặc 1 số chữ cái $x,a,b$,… gọi là biến để biểu thị những đại lượng chưa biết và viết biểu thức biểu thị đại lượng, kí hiệu $P$, cần tìm giá trị lớn nhất, giá trị nhỏ nhất theo các biến đó.
 
-» Bước 3: Xác định tập hợp $D$ gồm các giá trị mà biến $x$ có thể nhận.
 
-» Bước 4: Tìm giá trị lớn nhất , gái trị nhỏ nhất của hàm số $P=f\left ( { x } \right.  )$ trên $D$ và trả lời bài toán.
+- **Bước 2:** Viết lại biểu thức $P$ thành biểu thức chứa một biến, chẳng hạn là $x$, bằng cách biểu thị các biến khác theo biến $x$ nhờ các dữ kiện đề bài đã cho. Từ đó, ta nhận được hàm số xác định bởi công thức $P=f\left ( { x } \right.  )$.
+
+
+- **Bước 3:** Xác định tập hợp $D$ gồm các giá trị mà biến $x$ có thể nhận.
+
+
+- **Bước 4:** Tìm giá trị lớn nhất , gái trị nhỏ nhất của hàm số $P=f\left ( { x } \right.  )$ trên $D$ và trả lời bài toán.
 
 II. CÁC VÍ DỤ
 
@@ -213,11 +220,14 @@ Vậy để doanh thu đạt tối đa, cửa hàng giảm giá 50 nghìn đồn
 
 I. PHƯƠNG PHÁP
 
-» Bước 1: Xác định đại lượng $Q$ mà ta cần làm cho giá trị của đại lượng ấy lớn nhất hoặc nhỏ nhất và biểu diễn nó qua các đại lượng khác trong bài toán.
 
-» Bước 2: Chọn một đại lượng thích hợp nào đó, kí hiệu là $x$ và biểu diễn các đại lượng khác ở Bước 1 theo $x$. Khi đó, đại lượng $Q$ sẽ là hàm số của một biến $x$. Tìm tập xác định của hàm số $Q=Q\left ( { x } \right.  )$
+- **Bước 1:** Xác định đại lượng $Q$ mà ta cần làm cho giá trị của đại lượng ấy lớn nhất hoặc nhỏ nhất và biểu diễn nó qua các đại lượng khác trong bài toán.
 
-» Bước 3: Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của hàm số $Q=Q\left ( { x } \right.  )$ bằng các phương pháp đã biết và kết luận.
+
+- **Bước 2:** Chọn một đại lượng thích hợp nào đó, kí hiệu là $x$ và biểu diễn các đại lượng khác ở Bước 1 theo $x$. Khi đó, đại lượng $Q$ sẽ là hàm số của một biến $x$. Tìm tập xác định của hàm số $Q=Q\left ( { x } \right.  )$
+
+
+- **Bước 3:** Tìm giá trị lớn nhất hoặc giá trị nhỏ nhất của hàm số $Q=Q\left ( { x } \right.  )$ bằng các phương pháp đã biết và kết luận.
 
 II. CÁC VÍ DỤ
 
@@ -275,11 +285,14 @@ $V=40.100\sqrt{ 3 }=4000\sqrt{ 3 }\,cm ^ { 3 }$.
 
 I. PHƯƠNG PHÁP
 
-» Bước 1: Biểu diễn các đại lượng tromg bài toán thông qua hàm số.
 
-» Bước 2: Giải quyết yêu cầu bài toán thông qua hàm số.
+- **Bước 1:** Biểu diễn các đại lượng tromg bài toán thông qua hàm số.
 
-» Bước 3: Từ kết quả tìm được đưa ra kết luận yêu cầu của bài toán.
+
+- **Bước 2:** Giải quyết yêu cầu bài toán thông qua hàm số.
+
+
+- **Bước 3:** Từ kết quả tìm được đưa ra kết luận yêu cầu của bài toán.
 
 II. CÁC VÍ DỤ
 
@@ -311,13 +324,17 @@ $v\left ( { 0 } \right.  )=0;\,\,v\left ( { 15 } \right.  )=75;v\left ( { 10 } \
 
 I. PHƯƠNG PHÁP
 
-» Bước 1: Gọi ẩn và xác định điều kiện cho ẩn.
 
-» Bước 2: Biểu diễn các đại lượng chưa biết theo ẩn số và các đại lượng đã biết.
+- **Bước 1:** Gọi ẩn và xác định điều kiện cho ẩn.
 
-» Bước 3: Xét hàm số biểu thị đại lượng mà đề bài yêu cầu. Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số đó trên điều kiện của ẩn.
 
-» Bước 4: Kết luận.
+- **Bước 2:** Biểu diễn các đại lượng chưa biết theo ẩn số và các đại lượng đã biết.
+
+
+- **Bước 3:** Xét hàm số biểu thị đại lượng mà đề bài yêu cầu. Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số đó trên điều kiện của ẩn.
+
+
+- **Bước 4:** Kết luận.
 
 II. CÁC VÍ DỤ
 
@@ -407,7 +424,7 @@ Vận tốc của hạt chuyển động là:$v\left ( { t } \right.  )=y'\left 
 
 Gia tốc của hạt chuyển động là:$a\left ( { t } \right.  )=6t-12,\,\,t≥0$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Trong khoảng thời gian từ $0$ đến $2s$, hạt chuyển động lên trên.
 
@@ -415,7 +432,7 @@ Hạt chuyển động lên trên khi $v\left ( { t } \right.  )>0⇔3t ^ { 2 } 
 
 Hạt chuyển động xuống dưới khi $v\left ( { t } \right.  ) < 0⇔3t ^ { 2 } -12 < 0⇔0 < t < 2$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Quãng đường hạt đi được trong khoảng thời gian từ $0$ đến $3s$ là $20\,\,\left ( { m } \right.  )$.
 
@@ -425,13 +442,13 @@ Trong khoảng thời gian từ từ $2$ đến $3s$, hạt chuyển động lê
 
 Vậy quãng đường hạt đi được trong khoảng thời gian từ $0$ đến $3s$ là $S=13+7=20\,\,\left ( { m } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Vị trí của hạt tại thời điểm $4s$ là $19\,{ \rm{ m } }$.
 
 Vị trí của hạt tại thời điểm $4s$ là $y\left ( { 4 } \right.  )=19m$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -452,7 +469,7 @@ Gia tốc của vật theo thời gian là:$a\left ( { t } \right.  )=v'\left ( 
 
 Vận tốc ban đầu của vật là:$v\left ( { 0 } \right.  )=13\,\,\left ( { m{ \rm{ / } }s } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Tại thời điểm gia tốc đạt $6\,m{ \rm{ / } }s ^ { 2 }$, vật đã di chuyển được $86$ mét.
 
@@ -466,7 +483,7 @@ Tại thời điểm $t=3$, vị trí của vật là:$s\left ( { 3 } \right.  )
 
 Suy ra vật đã di chuyển được $86-2=84\,\,\left ( { m } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Tại giây thứ $5$, vật đang chuyển động chậm dần đều.
 
@@ -474,7 +491,7 @@ Tại giây thứ $5$, gia tốc của vật là:$a\left ( { 5 } \right.  )=-2.5
 
 Suy ra tại giây thứ $5$, vật đang chuyển động nhanh dần đều.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Trong quá trình chuyển động (tính từ lúc bắt đầu đến khi dừng lại), tại thời điểm vận tốc của vật lớn nhất, gia tốc của vật cũng đạt giá trị lớn nhất.
 
@@ -492,7 +509,7 @@ Mà $t∈\left[ 0;13 \right]⇒a\left ( { t } \right.  )∈\left[ -14\,;12 \righ
 
 Suy ra tại thời điểm vật đạt vận tốc lớn nhất, gia tốc của vật không đạt giá trị lớn nhất.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -509,7 +526,7 @@ Lời giải
 
 Mỗi sản phẩm có giá là $p\left ( { x } \right.  )$ ứng với $x$ sản phẩm được bán ra nên doanh thu của công ty là $f\left ( { x } \right.  )=x⋅p\left ( { x } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số $f\left ( { x } \right.  )=-25x ^ { 2 } +1000x$ có đạo hàm $f'\left ( { x } \right.  )=-50x+1000$.
 
@@ -517,7 +534,7 @@ Ta có:$f\left ( { x } \right.  )=-25x ^ { 2 } +1000x$.
 
 suy ra $f'\left ( { x } \right.  )=-50x+1000$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Nếu $f\left ( { x } \right.  )=x⋅p\left ( { x } \right.  )$ là hàm doanh thu thì phương trình $f'\left ( { x } \right.  )=0$ có nghiệm là $x=2$.
 
@@ -525,7 +542,7 @@ Ta có phương trình $f'\left ( { x } \right.  )=0$ $⇔-50x+1000=0$
 
 $⇔x=20$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Hàm doanh thu đạt giá trị lớn nhất bằng $10000$.
 
@@ -543,7 +560,7 @@ Bảng biến thiên của hàm $f\left ( { x } \right.  )$
 
 Vậy hàm doanh thu đạt giá trị lớn nhất là $10000$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -562,13 +579,13 @@ Gọi $x\,\left ( { { \rm{ m } } } \right.  )$ là chiều dài của hình ch�
 
 Khi đó chiều rộng là:$\frac { 0,096 } { 0,6x }=\frac { 4 } { 25x }.$
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Diện tích các mặt xung quanh của bể cá là:$1,2\left ( { x+\frac { 4 } { 25x } } \right.  )\left ( { { \rm{ m } } ^ { { \rm{ 2 } } } } \right.  )$.
 
 Khi đó diện tích mặt xung quanh là:$1,2\left ( { x+\frac { 4 } { 25x } } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Nếu $x\,=1\left ( { { \rm{ m } } } \right.  )$ thì chi phí làm mặt xung quanh là:$97.440$ đồng.
 
@@ -576,7 +593,7 @@ Chi phí để làm mặt xung quanh là:$70.1,2\left ( { x+\frac { 4 } { 25x } 
 
 Nếu $x\,=1\left ( { { \rm{ m } } } \right.  )$ thì tổng chi phí làm mặt xung quanh là $97.440$ đồng.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Chi phí thấp nhất để làm bể cá là:$83.000$ đồng.
 
@@ -598,7 +615,7 @@ Bảng biến thiên
 
 Khi đó chi phí thấp nhất là:$84.\frac { 4 } { 5 }+16=83.200$ đồng.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -613,7 +630,7 @@ Lời giải
 
 Thể tích của hộp là $V=32⇔x ^ { 2 } .h=32⇔h=\frac { 32 } { x ^ { 2 } }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Diện tích của phần hộp cần mạ vàng là $S(x)=4xh+2x ^ { 2 }$.
 
@@ -621,7 +638,7 @@ Diện tích của phần hộp cần mạ vàng gồm diện tích 4 mặt xung
 
 Do đó $S(x)=4xh+x ^ { 2 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Khối lượng vàng cần dùng tỉ lệ thuận với diện tích của phần hộp cần mạ.
 
@@ -631,7 +648,7 @@ với $P_{ { \rm{ v } }{ \rm{ µ } }{ \rm{ n } }{ \rm{ g } } }$ là khối lư�
 
 Suy ra khối lượng vàng cần dùng tỉ lệ thuận với diện tích của phần hộp cần mạ.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Nếu độ dày $d\left ( { { \rm{ m } }{ \rm{ m } } } \right.  )$ của lớp mạ không thay đổi. Để lượng vàng cần dùng là nhỏ nhất thì $h=2\left ( { { \rm{ c } }{ \rm{ m } } } \right.  )$ và $x=4\left ( { { \rm{ c } }{ \rm{ m } } } \right.  )$.
 
@@ -649,7 +666,7 @@ Bảng biến thiên
 
 Vậy lượng vàng cần dùng là nhỏ nhất khi $x=4\left ( { { \rm{ c } }{ \rm{ m } } } \right.  )$ $⇒h=\frac { 32 } { x ^ { 2 } }=2\left ( { { \rm{ c } }{ \rm{ m } } } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -666,13 +683,13 @@ Ta có:$s'\left ( { t } \right.  )=3t ^ { 2 } -6t+7$ và $s'$.
 
 Vận tốc của vật tại thời điểm $t=2$ là:$v\left ( { 2 } \right.  )=s'\left ( { 2 } \right.  )=3.2 ^ { 2 } -6.2+7=7\,\left ( { { \rm{ m } }{ \rm{ / } }{ \rm{ s } } } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Gia tốc của vật tại thời điểm $t=2$ là $6\,\left ( { { \rm{ m } }{ \rm{ / } }{ \rm{ s } } ^ { 2 } } \right.  )$.
 
 Gia tốc của vật tại thời điểm $t=2$ là:$a\left ( { 2 } \right.  )=v'\left ( { 2 } \right.  )=s'$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Gia tốc của vật tại thời điểm mà vận tốc của chuyển động bằng $16 \,{ \rm{ m } }{ \rm{ / } }{ \rm{ s } } ^ { { \rm{ 2 } } }$ là $10\,\left ( {  { \rm{ m } }{ \rm{ / } }{ \rm{ s } } ^ { { \rm{ 2 } } } } \right.  )$.
 
@@ -682,7 +699,7 @@ $v\left ( { t } \right. )=s'\left ( { t } \right. )=16{ \rm{ } }⇔3t ^ { 2 } -6
 
 Gia tốc của vật tại thời điểm $t=3$ là:$a\left ( { 3 } \right.  )=v\left ( { 3 } \right.  )=s'$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Thời điểm $t=1$ (giây) tại đó vận tốc của chuyển động đạt giá trị nhỏ nhất.
 
@@ -698,7 +715,7 @@ Từ bảng biến thiên suy ra hàm số có giá trị nhỏ nhất bằng 4 
 
 Vậy tại thời điểm $t=1$ thì vận tốc của chuyển động đạt giá trị nhỏ nhất bằng $4\,\left ( { { \rm{ m } }{ \rm{ / } }{ \rm{ s } } } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -715,13 +732,13 @@ Khi bán ra $x$ mét vải lụa:
 
 Số tiền thu được là $B\left ( { x } \right.  )=220x$ (nghìn đồng).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Biểu thức tính $L\left ( { x } \right.  )$ theo $x$ là $L\left ( { x } \right.  )=-x ^ { 3 } +3x ^ { 2 } +220x-500$ (nghìn đồng).
 
 Lợi nhuận thu được là $L\left ( { x } \right.  )=B\left ( { x } \right.  )-C\left ( { x } \right.  )=220x-\left ( { x ^ { 3 } -3x ^ { 2 } -20x+500 } \right.  )=-x ^ { 3 } +3x ^ { 2 } +240x-500$ (nghìn đồng).
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Hộ làm nghề dệt này cần sản xuất và bán ra mỗi ngày 10 mét vải lụa để thu được lợi nhuận tối đa.
 
@@ -733,13 +750,13 @@ Ta có $L'\left ( { x } \right.  )=-3x ^ { 2 } +6x+240$;$L'\left ( { x } \right.
 
 Từ bảng biến thiên ta có lợi nhuận $L\left ( { x } \right.  )$ đạt giá trị lớn nhất khi $x=10$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Lợi nhuận tối đa mỗi ngày của hộ làm nghề dệt vải lụa tơ tằm này là $1\,000\,000$ đồng.
 
 Theo phần (c) lợi nhuận $L\left ( { x } \right.  )$ đạt giá trị lớn nhất là $1200$ nghìn đồng hay $1\,200\,000$ đồng
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -754,13 +771,13 @@ Lời giải
 
 Giá vé $x=40\,000$ đồng thì số khách đến bể bơi là:$y\left ( { 40000 } \right.  )=-\frac { 1 } { 50 }.40000+1300=500$ khách.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm doanh thu là:$R\left ( { x } \right.  )=-\frac { 1 } { 50 }x ^ { 2 } +1300.x+500$.
 
 Hàm doanh thu là:$R\left ( { x } \right.  )=x.y\left ( { x } \right.  )=x.\left[ -\frac { 1 } { 50 }x+1300 \right]=-\frac { 1 } { 50 }x ^ { 2 } +1300.x$ $⇒R\left ( { x } \right.  )=-\frac { 1 } { 50 }x ^ { 2 } +1300x$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Giá vé $35000$ đồng thì doanh thu cao nhất.
 
@@ -776,13 +793,13 @@ Ta có bảng biến thiên
 
 Từ bảng biến thiên ta có $R\left ( { x } \right.  )$ đạt giá trị lớn nhất khi $x=32500$ (đồng).
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Doanh thu cao nhất là:$21125000$
 
 Theo bảng biến thiên ở phần c) ta có doanh thu tối đa bể bơi có thể thu được mỗi ngày là $21\,\,125\,\,000$ (đồng).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 

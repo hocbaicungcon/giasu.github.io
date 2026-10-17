@@ -23,8 +23,9 @@ grade: 12
 ### 1. Định nghĩa
 
 > **Định nghĩa:** Cho hàm số $y=f\left ( { x } \right.  )$ xác định trên D Số M được gọi là giá trị lớn nhất (GTLN) của hàm số $y=f\left ( { x } \right.  )$ trên $D$ nếu $\left\{ \begin{array}{l} f\left ( { x } \right.  )≤M;∀x∈D∃x_{ 0 } ∈D:f\left ( { x_{ 0 } } \right.  )=M \end{array} \right.,$ ta kí hiệu $M=\mathop { max } \limits_{ x∈D } f\left ( { x } \right.  )$ hoặc $M=\mathop { max } \limits_{ D } f\left ( { x } \right.  )$. Số m được gọi là giá trị nhỏ nhất (GTNN) của hàm số $y=f\left ( { x } \right.  )$ trên D nếu $\left\{ \begin{array}{l} f\left ( { x } \right.  )≥M;∀x∈D∃x_{ 0 } ∈D:f\left ( { x_{ 0 } } \right.  )=M \end{array} \right.,$ ta kí hiệu $m=\mathop { min } \limits_{ x∈D } f\left ( { x } \right.  )$ hoặc $m=\mathop { min } \limits_{ D } f\left ( { x } \right.  )$.
+- Quy ước rằng khi nói GTLN và GTNN của hàm số $y=f\left ( { x } \right.  )$ (mà không xét “trên tập $D$”) thì ta hiểu đó là GTLN hay GTNN của $y=f\left ( { x } \right.  )$ trên tập xác định của hàm số.
 
-» Quy ước rằng khi nói GTLN và GTNN của hàm số $y=f\left ( { x } \right.  )$ (mà không xét “trên tập $D$”) thì ta hiểu đó là GTLN hay GTNN của $y=f\left ( { x } \right.  )$ trên tập xác định của hàm số. » Để tìm GTLN hay GTNN của hàm số trên tập $D$, ta thường lập bảng biến thiên của hàm số trên tập $D$ để kết luận. Chú ý
+- Để tìm GTLN hay GTNN của hàm số trên tập $D$, ta thường lập bảng biến thiên của hàm số trên tập $D$ để kết luận. Chú ý
 
 ### 2. Tìm giá trị lớn nhất – nhỏ nhất trên đoạn
 
@@ -33,7 +34,10 @@ Cách tìm giá trị lớn nhất – nhỏ nhất trên đoạn. Tìm giá tr�
 
 ### Dạng 1. Giá trị lớn nhất – nhỏ nhất của hàm số trên đoạn
 
-Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số $f\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a;b \right]$:» Bước 1: Tìm các điểm $x_{ 1 } ;x_{ 2 } ;...;x_{ n }$ thuộc $\left ( { a;b } \right.  )$ sao cho $f'\left ( { x } \right.  )=0$.» Bước 2: Tính $f\left ( { a } \right.  );f\left ( { x_{ 1 } } \right.  );f\left ( { x_{ 2 } } \right.  );...;f\left ( { x_{ n } } \right.  );f\left ( { b } \right.  )$» Bước 3: Gọi $M$ là số lớn nhất và $m$ là số nhỏ nhất trong các giá trị ở Bước 2. Khi đó $M=\mathop { max } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )$ và $m=\mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )$. Phương pháp
+Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số $f\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a;b \right]$:
+- **Bước 1:** Tìm các điểm $x_{ 1 } ;x_{ 2 } ;...;x_{ n }$ thuộc $\left ( { a;b } \right.  )$ sao cho $f'\left ( { x } \right.  )=0$.
+- **Bước 2:** Tính $f\left ( { a } \right.  );f\left ( { x_{ 1 } } \right.  );f\left ( { x_{ 2 } } \right.  );...;f\left ( { x_{ n } } \right.  );f\left ( { b } \right.  )$
+- **Bước 3:** Gọi $M$ là số lớn nhất và $m$ là số nhỏ nhất trong các giá trị ở Bước 2. Khi đó $M=\mathop { max } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )$ và $m=\mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )$. Phương pháp
 
 **Ví dụ 1.1.** Tìm giá trị lớn nhất và nhỏ nhất của hàm số $f\left ( { x } \right.  )=x ^ { 3 } -3x+1$ trên đoạn $\left[ -2;2 \right]$.
 
@@ -59,7 +63,19 @@ Vậy $\mathop { max } \limits_{ \left[ -1;1 \right] } f\left ( { x } \right.  )
 
 ### Dạng 2. Giá trị lớn nhất – nhỏ nhất của hàm số trên khoảng
 
-Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số $f\left ( { x } \right.  )$ trên khoảng $\left ( { a;b } \right.  )$» Bước 1: Tìm điều kiện xác định của hàm số $y=f\left ( { x } \right.  )$.▪$f\left ( { x } \right.  )$ không liên tục trên $\left ( { a;b } \right.  )$ $⇒$ Không có giá trị lớn nhất, giá trị nhỏ nhất.▪$f\left ( { x } \right.  )$ liên tục trên $\left ( { a;b } \right.  )$ $⇒$ Bước tiếp theo» Bước 2: Tính đạo hàm $y'=f'\left ( { x } \right.  )$.» Bước 3: Tìm các điểm $x_{ 1 } ;x_{ 2 } ;...;x_{ n }$ thuộc $\left ( { a;b } \right.  )$ sao cho▪$f'\left ( { x } \right.  )=0$, hoặc▪$f'\left ( { x } \right.  )$ không xác định.» Bước 4: Lập bảng biến thiên của hàm số $y=f\left ( { x } \right.  )$ trên khoảng $\left ( { a;b } \right.  )$ cho trước.» Bước 5: Xác định điểm “cao nhất” và điểm “thấp nhất” của đồ thị hàm số trên $\left ( { a;b } \right.  )$.» Bước 6: Kết luận giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y=f\left ( { x } \right.  )$.⁂ Nhận xét: Nếu đề bài không cho sẵn $\left ( { a;b } \right.  )$ thì thường sẽ lấy luôn tập xác định làm khoảng phải xét. Đây là phương pháp tổng quát, tùy vào bài toán sẽ giản lược bớt 1 vài bước. Phương pháp
+Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số $f\left ( { x } \right.  )$ trên khoảng $\left ( { a;b } \right.  )$
+- **Bước 1:** Tìm điều kiện xác định của hàm số $y=f\left ( { x } \right.  )$.
+
+- $f\left ( { x } \right.  )$ không liên tục trên $\left ( { a;b } \right.  )$ $⇒$ Không có giá trị lớn nhất, giá trị nhỏ nhất.
+
+- $f\left ( { x } \right.  )$ liên tục trên $\left ( { a;b } \right.  )$ $⇒$ Bước tiếp theo
+- **Bước 2:** Tính đạo hàm $y'=f'\left ( { x } \right.  )$.
+- **Bước 3:** Tìm các điểm $x_{ 1 } ;x_{ 2 } ;...;x_{ n }$ thuộc $\left ( { a;b } \right.  )$ sao cho
+- $f'\left ( { x } \right.  )=0$, hoặc
+- $f'\left ( { x } \right.  )$ không xác định.
+- **Bước 4:** Lập bảng biến thiên của hàm số $y=f\left ( { x } \right.  )$ trên khoảng $\left ( { a;b } \right.  )$ cho trước.
+- **Bước 5:** Xác định điểm “cao nhất” và điểm “thấp nhất” của đồ thị hàm số trên $\left ( { a;b } \right.  )$.
+- **Bước 6:** Kết luận giá trị lớn nhất, giá trị nhỏ nhất của hàm số $y=f\left ( { x } \right.  )$.⁂ Nhận xét: Nếu đề bài không cho sẵn $\left ( { a;b } \right.  )$ thì thường sẽ lấy luôn tập xác định làm khoảng phải xét. Đây là phương pháp tổng quát, tùy vào bài toán sẽ giản lược bớt 1 vài bước. Phương pháp
 
 **Ví dụ 2.2.** Tìm giá trị lớn nhất của hàm số $y=-x ^ { 2 } +2x+4$ trên khoảng $\left ( { 0;3 } \right.  )$.
 
@@ -109,7 +125,18 @@ Vậy hàm số không có giá trị lớn nhất và giá trị nhỏ nhất.
 
 ### Dạng 3. Sử dụng cách đánh giá để tìm giá trị lớn nhất – nhỏ nhất
 
-⁂ Sử dụng bất đẳng thức thường gặp:Bất đẳng thức Cô-si:▪ Với hai số thực không âm:$a+b≥2\sqrt{ ab }$. Dấu bằng xảy ra $⇔$ $a=b$.▪ Với ba số thực không âm:$a+b+c≥3\sqrt[3] { abc }$. Dấu bằng xảy ra $⇔$ $a=b=c$.▪ Với $n$ thực không âm:$a_{ 1 } +a_{ 2 } +…+a_{ n } ≥n\sqrt[n] { a_{ 1 } a_{ 2 } …a_{ n } }$. Dấu bằng xảy ra $⇔$ $a_{ 1 } =a_{ 2 } =…=a_{ n }$. Bất đẳng thức Bunhiacopxki ▪ Dạng cơ bản:$\left ( { a ^ { 2 } +b ^ { 2 } } \right.  )\left ( { c ^ { 2 } +d ^ { 2 } } \right.  )≥\left ( { ac+bd } \right.  ) ^ { 2 }$. Dấu “$=$” xảy ra $⇔$ $\frac { a } { c }=\frac { b } { d }$.▪ Dạng tổng quát: Với hai bộ số $\left ( { a_{ 1 } ,a_{ 2 } ,…,a_{ n } } \right.  )$ và $\left ( { b_{ 1 } ,b_{ 2 } ,…,b_{ n } } \right.  )$ ta có:$\left ( { a_{ 1 } ^{ 2 }+a_{ 1 } ^{ 2 }+…+a_{ n } ^{ 2 } } \right.  )\left ( { b_{ 1 } ^{ 2 }+b_{ 2 } ^{ 2 }+…+b_{ n } ^{ 2 } } \right.  )≥\left ( { a_{ 1 } b_{ 1 } +a_{ 2 } b_{ 2 } +…+a_{ n } b_{ n } } \right.  ) ^ { 2 }$ Dấu “$=$” xảy ra $⇔$ $\frac { a_{ 1 } } { b_{ 1 } }=\frac { a_{ 2 } } { b_{ 2 } }=...=\frac { a_{ n } } { b_{ n } }$.⁂ Sử dụng “Tập giá trị” của hàm số lượng giác:▪ Dựa vào tập giá trị của hàm số lượng giác:$⇒$ Phương pháp
+⁂ Sử dụng bất đẳng thức thường gặp:Bất đẳng thức Cô-si:
+
+- Với hai số thực không âm:$a+b≥2\sqrt{ ab }$. Dấu bằng xảy ra $⇔$ $a=b$.
+
+- Với ba số thực không âm:$a+b+c≥3\sqrt[3] { abc }$. Dấu bằng xảy ra $⇔$ $a=b=c$.
+
+- Với $n$ thực không âm:$a_{ 1 } +a_{ 2 } +…+a_{ n } ≥n\sqrt[n] { a_{ 1 } a_{ 2 } …a_{ n } }$. Dấu bằng xảy ra $⇔$ $a_{ 1 } =a_{ 2 } =…=a_{ n }$. Bất đẳng thức Bunhiacopxki
+- Dạng cơ bản:$\left ( { a ^ { 2 } +b ^ { 2 } } \right.  )\left ( { c ^ { 2 } +d ^ { 2 } } \right.  )≥\left ( { ac+bd } \right.  ) ^ { 2 }$. Dấu “$=$” xảy ra $⇔$ $\frac { a } { c }=\frac { b } { d }$.
+
+- Dạng tổng quát: Với hai bộ số $\left ( { a_{ 1 } ,a_{ 2 } ,…,a_{ n } } \right.  )$ và $\left ( { b_{ 1 } ,b_{ 2 } ,…,b_{ n } } \right.  )$ ta có:$\left ( { a_{ 1 } ^{ 2 }+a_{ 1 } ^{ 2 }+…+a_{ n } ^{ 2 } } \right.  )\left ( { b_{ 1 } ^{ 2 }+b_{ 2 } ^{ 2 }+…+b_{ n } ^{ 2 } } \right.  )≥\left ( { a_{ 1 } b_{ 1 } +a_{ 2 } b_{ 2 } +…+a_{ n } b_{ n } } \right.  ) ^ { 2 }$ Dấu “$=$” xảy ra $⇔$ $\frac { a_{ 1 } } { b_{ 1 } }=\frac { a_{ 2 } } { b_{ 2 } }=...=\frac { a_{ n } } { b_{ n } }$.⁂ Sử dụng “Tập giá trị” của hàm số lượng giác:
+
+- Dựa vào tập giá trị của hàm số lượng giác:$⇒$ Phương pháp
 
 **Ví dụ 3.1.** Giả sử $M$ và $m$ lần lượt là GTLN và GTNN của hàm số $y=2+3sinx$. Tính $M+m$.
 
@@ -135,7 +162,14 @@ Dấu $''=''$ xảy ra $⇔x=\frac { 5 } { x }$ $⇔x ^ { 2 } =5$ $⇔x=\sqrt{ 5
 
 ### Dạng 4. Ứng dụng giá trị lớn nhất – nhỏ nhất
 
-Bài toán bất phương trình » Bước 1: Chuyển bất phương trình đã cho về dạng $f\left ( { x } \right.  )-g\left ( { x } \right.  )≥0$ và tìm điều kiện tồn tại của bất phương trình» Bước 2: Đặt hàm số $y=h\left ( { x } \right.  )=f\left ( { x } \right.  )-g\left ( { x } \right.  )$, Xét tính đơn điệu của $y=h\left ( { x } \right.  )$ trên điều kiện xác định. » Bước 3: Từ đó kết luận về giá trị lớn nhất, giá trị nhỏ nhất. Bài toán bất phương trình chứa tham sốTa đưa bất phương trình đề bài cho về một trong các dạng sau »$m≥f\left ( { x } \right.  )$ nghiệm đúng với mọi $x∈D$ thì $m≥\mathop { max } \limits_{ D } f\left ( { x } \right.  )$»$m≤f\left ( { x } \right.  )$ nghiệm đúng với mọi $x∈D$ thì $m≤\mathop { min } \limits_{ D } f\left ( { x } \right.  )$»$m≥f\left ( { x } \right.  )$ có nghiệm $x∈D$ thì $m≥\mathop { min } \limits_{ D } f\left ( { x } \right.  )$»$m≥f\left ( { x } \right.  )$ có nghiệm $x∈D$ thì $m≥\mathop { min } \limits_{ D } f\left ( { x } \right.  )$⁂ Nhận xét: Nếu $y=f\left ( { x } \right.  )$: đồng biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  ) \end{array} \right.$. nghịch biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  ) \end{array} \right.$<p align="center"><img src="/assets/images/toan-12/c1_b2_image153.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+Bài toán bất phương trình 
+- **Bước 1:** Chuyển bất phương trình đã cho về dạng $f\left ( { x } \right.  )-g\left ( { x } \right.  )≥0$ và tìm điều kiện tồn tại của bất phương trình
+- **Bước 2:** Đặt hàm số $y=h\left ( { x } \right.  )=f\left ( { x } \right.  )-g\left ( { x } \right.  )$, Xét tính đơn điệu của $y=h\left ( { x } \right.  )$ trên điều kiện xác định. 
+- **Bước 3:** Từ đó kết luận về giá trị lớn nhất, giá trị nhỏ nhất. Bài toán bất phương trình chứa tham sốTa đưa bất phương trình đề bài cho về một trong các dạng sau
+- $m≥f\left ( { x } \right.  )$ nghiệm đúng với mọi $x∈D$ thì $m≥\mathop { max } \limits_{ D } f\left ( { x } \right.  )$
+- $m≤f\left ( { x } \right.  )$ nghiệm đúng với mọi $x∈D$ thì $m≤\mathop { min } \limits_{ D } f\left ( { x } \right.  )$
+- $m≥f\left ( { x } \right.  )$ có nghiệm $x∈D$ thì $m≥\mathop { min } \limits_{ D } f\left ( { x } \right.  )$
+- $m≥f\left ( { x } \right.  )$ có nghiệm $x∈D$ thì $m≥\mathop { min } \limits_{ D } f\left ( { x } \right.  )$⁂ Nhận xét: Nếu $y=f\left ( { x } \right.  )$: đồng biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  ) \end{array} \right.$. nghịch biến trên $\left[ a;b \right]$ thì $\left\{ \begin{array}{l} \mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { b } \right.  )\mathop { { \rm{ m } }{ \rm{ a } }{ \rm{ x } } } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )=f\left ( { a } \right.  ) \end{array} \right.$<p align="center"><img src="/assets/images/toan-12/c1_b2_image153.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 <p align="center"><img src="/assets/images/toan-12/c1_b2_image154.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
@@ -221,7 +255,11 @@ Suy ra $a=6;b=6$. Nên $a-b=0$.
 
 ### Dạng 5. Bài toán thực tế áp dụng giá trị lớn nhất – nhỏ nhất
 
-» Bước 1: Gọi ẩn và xác định điều kiện cho ẩn.» Bước 2: Biểu diễn các đại lượng chưa biết theo ẩn số và các đại lượng đã biết.» Bước 3: Xét hàm số biểu thị đại lượng mà đề bài yêu cầu. Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số đó trên điều kiện của ẩn.» Bước 4: Kết luận. Phương pháp
+
+- **Bước 1:** Gọi ẩn và xác định điều kiện cho ẩn.
+- **Bước 2:** Biểu diễn các đại lượng chưa biết theo ẩn số và các đại lượng đã biết.
+- **Bước 3:** Xét hàm số biểu thị đại lượng mà đề bài yêu cầu. Tìm giá trị lớn nhất, giá trị nhỏ nhất của hàm số đó trên điều kiện của ẩn.
+- **Bước 4:** Kết luận. Phương pháp
 
 **Ví dụ 5.1.** Tính diện tích lớn nhất $S_{ max }$ của một hình chữ nhật nội tiếp trong nửa đường tròn bán kính $R=6 { \rm{ c } }{ \rm{ m } }$ nếu một cạnh của hình chữ nhật nằm dọc theo đường kính của hình tròn mà hình chữ nhật đó nội tiếp.
 
@@ -229,7 +267,8 @@ Suy ra $a=6;b=6$. Nên $a-b=0$.
 
 *Lời giải:*
 
-» Cách 1.
+
+- **Cách 1:**
 
 Gọi chiều dài $AD=2x\left ( { 0 < x < 6 } \right.  )$ $⇒AB=\sqrt{ 36-x ^ { 2 } }{ \rm{ . } }{ \rm{ } }$
 
@@ -241,7 +280,8 @@ Xét $f\left ( { x } \right.  )=x\sqrt{ 36-x ^ { 2 } }$ trên $\left ( { 0;6 } \
 
 Vây giá tri lớn nhất của diện tích hình chữ nhậtABCDlà $36 { \rm{ c } }{ \rm{ m } } ^ { 2 }$.
 
-» Cách 2.
+
+- **Cách 2:**
 
 Đặt $AB=CD=2x\left ( { 0 < x < 6 } \right.  )$. Khi đó $AD=\sqrt{ DO ^ { 2 } -AO ^ { 2 } }=\sqrt{ 36-x ^ { 2 } }$.
 
@@ -256,10 +296,8 @@ Vây giá tri lớn nhất của diện tích hình chữ nhâtABCDlà $36 { \r
 *Lời giải:*
 
 Theo giả thiết :
-
-▪ Thời gian làm việc của máy $A$ là $x$ ngày.
-
-▪ Thời gian làm việc của máy $B$ là $y$ ngày.
+- Thời gian làm việc của máy $A$ là $x$ ngày.
+- Thời gian làm việc của máy $B$ là $y$ ngày.
 
 Nên ta có $x+y=10⇔y=10-x \left ( { * } \right.  )$.
 
@@ -287,7 +325,8 @@ Từ BBT ta có $x=9$ là giá trị cần tìm.
 
 *Lời giải:*
 
-» Cách 1.
+
+- **Cách 1:**
 
 Do cần thời gian xây là ngắn nhất nên con đường làm trên mỗi miền phải là những đường thẳng.
 
@@ -315,7 +354,8 @@ $⇔\left ( { x-5 } \right.  )\left ( { 4\left ( { 25-x } \right.  ) ^ { 2 } \le
 
 Vậy thời gian ngắn nhất làm được con đường đi từ $A$ đến $C$ là $\frac { 2\sqrt{ 5 } } { 3 }\,\left ( { { \rm{ h } } } \right.  )$.
 
-» Cách 2.
+
+- **Cách 2:**
 
 Xét $t\left ( { x } \right.  )=\frac { \sqrt{ 10 ^ { 2 } +x ^ { 2 } } } { 15 }+\frac { \sqrt{ \left ( { 25-x } \right.  ) ^ { 2 } +10 ^ { 2 } } } { 30 }=\frac { \sqrt{ 20 ^ { 2 } +\left ( { 2x } \right.  ) ^ { 2 } }+\sqrt{ \left ( { 25-x } \right.  ) ^ { 2 } +10 ^ { 2 } } } { 30 }$ (Với $0≤x≤25$).
 
@@ -365,7 +405,7 @@ options:
   - 'C. $\mathop { max } \limits_{ \left [ { -5;7 } \right.  ) } f\left ( { x } \right.  )=9$ và $\mathop { min } \limits_{ \left [ { -5;7 } \right.  ) } f\left ( { x } \right.  )=2$'
   - 'D. $\mathop { max } \limits_{ \left [ { -5;7 } \right.  ) } f\left ( { x } \right.  )=9$ và $\mathop { min } \limits_{ \left [ { -5;7 } \right.  ) } f\left ( { x } \right.  )=6$'
 answer: 1
-explanation: 'Dựa vào bảng biến thiên, ta nhận thấy: ● Hàm số có giá trị nhỏ nhất bằng 2, đạt tại $x=1 \in \left [ { -5;7 } \right.  )$. ● Ta có $f\left ( { x } \right.  ) \le 9, \forall x \in \left [ { -5;7 } \right.  )$ và $\mathop { lim } \limits_{ x→7 ^ { - } } f\left ( { x } \right.  )=9$. Mà $7 \notin \left [ { -5;7 } \right.  )$ nên không tồn tại $x_{ 0 } \in \left [ { -5;7 } \right.  )$ sao cho $f\left ( { x_{ 0 } } \right.  )=9$. Do đó hàm số không đạt GTLN trên $\left [ { -5;7 } \right.  )$. Vậy $\mathop { min } \limits_{ \left [ { -5;7 } \right.  ) } f\left ( { x } \right.  )=2$ và hàm số không đạt giá trị lớn nhất trên $\left [ { -5;7 } \right.  )$.'
+explanation: 'Dựa vào bảng biến thiên, ta nhận thấy: - Hàm số có giá trị nhỏ nhất bằng 2, đạt tại $x=1 \in \left [ { -5;7 } \right.  )$. - Ta có $f\left ( { x } \right.  ) \le 9, \forall x \in \left [ { -5;7 } \right.  )$ và $\mathop { lim } \limits_{ x→7 ^ { - } } f\left ( { x } \right.  )=9$. Mà $7 \notin \left [ { -5;7 } \right.  )$ nên không tồn tại $x_{ 0 } \in \left [ { -5;7 } \right.  )$ sao cho $f\left ( { x_{ 0 } } \right.  )=9$. Do đó hàm số không đạt GTLN trên $\left [ { -5;7 } \right.  )$. Vậy $\mathop { min } \limits_{ \left [ { -5;7 } \right.  ) } f\left ( { x } \right.  )=2$ và hàm số không đạt giá trị lớn nhất trên $\left [ { -5;7 } \right.  )$.'
 ```
 
 ```quiz
@@ -395,25 +435,25 @@ Lời giải
 
 $m$ là giá trị nhỏ nhất của $f\left ( { x } \right.  )$ trên $\left[ a;b \right]$ được ký hiệu là $m=\mathop { min } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $m≤M$.
 
 $m,M$ lần lượt là giá trị nhỏ nhất và giá trị lớn nhất của $f\left ( { x } \right.  )$ trên $\left[ a;b \right]$ thì $m≤M$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Với mọi $x∈\left[ a;b \right]$ ta có $f\left ( { x } \right.  )≥m$.
 
 $m$ là giá trị nhỏ nhất của $f\left ( { x } \right.  )$ trên $\left[ a;b \right]$, ta có $f\left ( { x } \right.  )≥m,∀x∈\left[ a;b \right]$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Với mọi $x∈\left[ a;b \right]$ ta có $f\left ( { x } \right.  ) < M$.
 
 Ta có $M=\mathop { max } \limits_{ \left[ a;b \right] } f\left ( { x } \right.  )⇒∃x_{ 0 } ∈\left[ a;b \right]:f\left ( { x_{ 0 } } \right.  )=M$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -432,25 +472,25 @@ Lời giải
 
 Vì hàm số có giá trị cực tiểu $y=-1$ khi $x=0$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Hàm số có giá trị lớn nhất bằng 0 và giá trị nhỏ nhất bằng $-1$.
 
 Hàm số không có GTLN và GTNN trên $\mathbb{R}$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Hàm số đạt cực đại tại $x=0$ và đạt cực tiểu tại $x=1$.
 
 Hàm số đạt cực đại tại $x=0$ và đạt cực tiểu tại $x=1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hàm số có đúng một cực trị.
 
 Hàm số có $2$ điểm cực trị.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -469,25 +509,25 @@ Lời giải
 
 Dựa vào BBT ta thấy hàm số có điểm cực trị $x=-1;x=2$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Hàm số có giá trị lớn nhất bằng $2$ và giá trị nhỏ nhất bằng $-3$.
 
 Dựa vào BBT ta thấy hàm số không tồn tại GTLN; GTNN.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Hàm số đạt cực đại tại $x=2$
 
 Dựa vào BBT ta thấy hàm số đạt cực đại tại $x=2$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hàm số nghịch biến trên mỗi khoảng $\left ( { -∞;-1 } \right.  ),\,\,\left ( { 2;+∞ } \right.  )$.
 
 Dựa vào BBT ta thấy hàm số nghịch biến trên $\left ( { -∞;-1 } \right.  ),\,\,\left ( { 2;+∞ } \right.  )$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -502,25 +542,25 @@ Lời giải
 
 Với $f\left ( { x } \right.  )=0$ thì $m=\mathop { min } \limits_{ \left ( { 0;1 } \right.  ) } f\left ( { x } \right.  )=0$ và $M=\mathop { max } \limits_{ \left ( { 0;1 } \right.  ) } f\left ( { x } \right.  )=0$ thì $m=M$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) $f\left ( { a } \right.  )=m$.
 
 Giá trị nhỏ nhất của $f\left ( { x } \right.  )$ trên $\left ( { a;b } \right.  )$ không tính đến $f\left ( { a } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Với mọi $x∈\left ( { a;b } \right.  )$ ta có $f\left ( { x } \right.  )>m$.
 
 Ta có $m=\mathop { min } \limits_{ \left ( { a;b } \right.  ) } f\left ( { x } \right.  )⇒∃x_{ 0 } ∈\left ( { a;b } \right.  ):f\left ( { x_{ 0 } } \right.  )=m$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Với mọi $x∈\left ( { a;b } \right.  )$ ta có $m≤f\left ( { x } \right.  ) < M$.
 
 Ta có $\left\{ \begin{array}{l} m=\mathop { min } \limits_{ \left ( { a;b } \right.  ) } f\left ( { x } \right.  )M=\mathop { max } \limits_{ \left ( { a;b } \right.  ) } f\left ( { x } \right.  ) \end{array} \right.⇒∀x∈\left ( { a;b } \right.  ):m≤f\left ( { x } \right.  )≤M$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -535,25 +575,25 @@ Lời giải
 
 Ta có $m=\mathop { min } \limits_{ \mathbb{R} } f\left ( { x } \right.  )⇒∃x_{ 0 } ∈\mathbb{R}:f\left ( { x_{ 0 } } \right.  )=m$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Phương trình $f\left ( { x } \right.  )=C$ vô nghiệm với $m≤C≤M$.
 
 Với $f\left ( { x } \right.  )$ liên tục trên $\mathbb{R}$ và $m≤C≤M$ thì phương trình $f\left ( { x } \right.  )=C$ luôn có nghiệm.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Bất phương trình $f\left ( { x } \right.  )>M$ vô nghiệm.
 
 Ta có $M=\mathop { max } \limits_{ \mathbb{R} } f\left ( { x } \right.  )⇒f\left ( { x } \right.  )≤M,∀x∈\mathbb{R}$. Do đó $f\left ( { x } \right.  )>M$ vô nghiệm.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Bất phương trình $f\left ( { x } \right.  )>m$ có tập nghiệm là $\mathbb{R}$
 
 $m=\mathop { min } \limits_{ \left ( { a;b } \right.  ) } f\left ( { x } \right.  )⇒∃x_{ 0 } ∈\left ( { a;b } \right.  ):f\left ( { x_{ 0 } } \right.  )=m$. Đó đó tập nghiệm của $f\left ( { x } \right.  )>m$ khác $\mathbb{R}$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -570,7 +610,7 @@ Ta có $y'=3x ^ { 2 } -3$;$y'=0⇔x=±1$.
 
 $f\left ( { 0 } \right.  )=2;f\left ( { 1 } \right.  )=0$. Vậy $\mathop { min } \limits_{ \left[ 0\,;\,1 \right] } y=0$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\mathop { min } \limits_{ \left[ 0\,;\,2 \right] } y=y\left ( { 0 } \right.  )$.
 
@@ -578,7 +618,7 @@ Ta có $y'=3x ^ { 2 } -3$;$y'=0⇔x=±1$.
 
 $f\left ( { 0 } \right.  )=2;f\left ( { 1 } \right.  )=0;f\left ( { 2 } \right.  )=4$. Vậy $\mathop { min } \limits_{ \left[ 0\,;\,2 \right] } y=f\left ( { 1 } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $\mathop { min } \limits_{ \left[ -1\,;\,0 \right] } y+\mathop { max } \limits_{ \left[ 0\,;\,1 \right] } y=4$.
 
@@ -586,7 +626,7 @@ Ta có $y'=3x ^ { 2 } -3$;$y'=0⇔x=±1$.
 
 $f\left ( { 0 } \right.  )=2;f\left ( { 1 } \right.  )=0;f\left ( { -1 } \right.  )=4$. Suy ra $\mathop { min } \limits_{ \left[ -1\,;\,0 \right] } y=2;\mathop { max } \limits_{ \left[ 0\,;\,1 \right] } y=2$. Vậy $\mathop { min } \limits_{ \left[ -1\,;\,0 \right] } y+\mathop { max } \limits_{ \left[ 0\,;\,1 \right] } y=4$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\mathop { min } \limits_{ \left[ -\frac { 3 } { 2 };0 \right] } \frac { 1 } { y }=\frac { 8 } { 25 }$.
 
@@ -594,7 +634,7 @@ Ta có $g\left ( { x } \right.  )=\frac { 1 } { y }=\frac { 1 } { x ^ { 3 } -3x+
 
 Và $g\left ( { -1 } \right.  )=\frac { 1 } { 4 }$;$g\left ( { -\frac { 3 } { 2 } } \right.  )=\frac { 8 } { 25 }$;$g\left ( { 0 } \right.  )=\frac { 1 } { 2 }$. Vậy $\mathop { min } \limits_{ \left[ -\frac { 3 } { 2 };0 \right] } \frac { 1 } { y }=\frac { 1 } { 4 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -609,25 +649,25 @@ Lời giải
 
 Ta có $-1≤sinx≤1,\,∀x∈\mathbb{R}$ nên $-3≤2sinx-1≤1,\,\,∀x∈\mathbb{R}$. Do đó $\mathop { max } \limits_{ \mathbb{R} } y=1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $\mathop { min } \limits_{ \mathbb{R} } y=-3$.
 
 Ta có $-1≤sinx≤1,\,∀x∈\mathbb{R}$ nên $-3≤2sinx-1≤1,\,\,∀x∈\mathbb{R}$. Do đó $\mathop { min } \limits_{ \mathbb{R} } y=-3$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $\mathop { max } \limits_{ \left[ 0;π \right] } y=y\left ( { \frac { π } { 2 } } \right.  )=1$.
 
 Ta có $0≤sinx≤1,\,∀x∈\left[ 0;π \right]$ nên $-1≤2sinx-1≤1,\,\,∀x∈\left[ 0;π \right]$. Do đó $\mathop { max } \limits_{ \left[ 0;π \right] } y=y\left ( { \frac { π } { 2 } } \right.  )=1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) $\mathop { min } \limits_{ \left[ 0;π \right] } y=y\left ( { 0 } \right.  )=-1$.
 
 Ta có $0≤sinx≤1,\,∀x∈\left[ 0;π \right]$ nên $-1≤2sinx-1≤1,\,\,∀x∈\left[ 0;π \right]$. Do đó $\mathop { min } \limits_{ \left[ 0;π \right] } y=y\left ( { 0 } \right.  )=-1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -658,25 +698,25 @@ Vậy $(*)⇔\frac { 1 } { 13 }≤m≤9⇒m∈\{1,….,9\}$.
 
 Có $9$ số nguyên $m$ để phương trình $f(x)=m\left ( { x ^ { 4 } -2x ^ { 2 } +2 } \right.  )$ có nghiệm thuộc đoạn $[0;3]$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Giá trị $m$ lớn nhất để phương trình $f\left ( { x } \right.  )=m\left ( { x ^ { 4 } -2x ^ { 2 } +2 } \right.  )$ có nghiệm thuộc đoạn $\left[ 0;3 \right]$ là $7$.
 
 Giá trị $m$ lớn nhất để phương trình $f\left ( { x } \right.  )=m\left ( { x ^ { 4 } -2x ^ { 2 } +2 } \right.  )$ có nghiệm thuộc đoạn $\left[ 0;3 \right]$ là $9$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) Giá trị $m$ nhỏ nhất để phương trình $f\left ( { x } \right.  )=m\left ( { x ^ { 4 } -2x ^ { 2 } +2 } \right.  )$ có nghiệm thuộc đoạn $\left[ 0;3 \right]$ là $3$.
 
 Giá trị $m$ nhỏ nhất để phương trình $f\left ( { x } \right.  )=m\left ( { x ^ { 4 } -2x ^ { 2 } +2 } \right.  )$ có nghiệm thuộc đoạn $[0;3]$ là $1$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Tổng các giá trị của $m$ để phương trình $f\left ( { x } \right.  )=m\left ( { x ^ { 4 } -2x ^ { 2 } +2 } \right.  )$ có nghiệm thuộc đoạn $\left[ 0;3 \right]$ là $45$.
 
 Tổng các giá trị của $m$ để phương trình $f\left ( { x } \right.  )=m\left ( { x ^ { 4 } -2x ^ { 2 } +2 } \right.  )$ có nghiệm thuộc đoạn $\left[ 0;3 \right]$ là $45$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -697,19 +737,19 @@ Vậy $\mathop { min } \limits_{ \left ( { 0;π } \right.  ) } y=1$ và $\mathop
 
 (a) Giá trị nhỏ nhất của hàm số $y=\frac { 1 } { sinx }$ trên khoảng $\left ( { 0;π } \right.  )$ là $1$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Không tồn tại giá trị lớn nhất của hàm số $y=\frac { 1 } { sinx }$ trên $\left ( { 0;π } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Không tồn tại giá trị lớn nhất của hàm số $y=\frac { 1 } { sinx }$ trên $\left ( { 0;\frac { π } { 2 } } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Không tồn tại giá trị nhỏ nhất của hàm số $y=\frac { 1 } { sinx }$ trên $\left ( { \frac { π } { 2 };π } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -738,25 +778,25 @@ Vậy trong khoảng $\left ( { 0;\frac { a } { 2 } } \right.  )$ ta có $\matho
 
 Gọi x là độ dài cạnh của hình vuông bị cắt $\left ( { 0 < x < \frac { a } { 2 } } \right.  ).$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) Thể tích của khối hộp là:$V\left ( { x } \right.  )=x\left ( { a-2x } \right.  ) ^ { 2 }$ $\left ( { 0 < x < \frac { a } { 2 } } \right.  ).$
 
 Thể tích của khối hộp là:$V\left ( { x } \right.  )=x\left ( { a-2x } \right.  ) ^ { 2 }$ $\left ( { 0 < x < \frac { a } { 2 } } \right.  ).$
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Thể tích của khối hộp lớn nhất bằng $\frac { 2a ^ { 3 } } { 9 }$.
 
 Thể tích của khối hộp lớn nhất bằng $\frac { 2a ^ { 3 } } { 27 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Cạnh của hình vuông bị cắt sao cho thể tích của khối hộp là lớn nhất bằng $\frac { a } { 6 }$
 
 Trong khoảng $\left ( { 0;\frac { a } { 2 } } \right.  )$ ta có $\mathop { max } \limits_{ \left ( { 0;\frac { a } { 2 } } \right.  ) } V(x)=V\left ( { \frac { a } { 6 } } \right.  )=\frac { 2a ^ { 3 } } { 27 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 

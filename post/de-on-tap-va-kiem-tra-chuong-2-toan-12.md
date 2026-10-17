@@ -34,7 +34,7 @@ options:
   - 'C. $\overset arrow { AC'' }=\overset arrow { AB'' }+\overset arrow { AC }+\overset arrow { AD'' }$'
   - 'D. $\overset arrow { AC'' }=\overset arrow { AB'' }+\overset arrow { AD'' }+\overset arrow { AA'' }$'
 answer: 2
-explanation: 'Theo quy tắc hình hộp.'
+explanation: 'Theo quy tắc hình hộp, $\vec{AC''} = \vec{AB} + \vec{AD} + \vec{AA''}$. Do đó khẳng định B đúng.'
 ```
 
 ```quiz
@@ -45,7 +45,7 @@ options:
   - 'B. $v=\left ( { 150;100;200 } \right.  )$'
   - 'C. $v=\left ( { -600;-400;-800 } \right.  )$'
   - 'D. $v=\left ( { -150;-100;-200 } \right.  )$'
-answer: 1
+answer: 3
 explanation: 'Tọa độ vectơ vận tốc $v$ của máy bay $B$ là:$v=-2u⇒v=\left ( { -600;-400;-800 } \right.  )$'
 ```
 
@@ -57,7 +57,7 @@ options:
   - 'B. $\overset arrow { AB }+\overset arrow { AD }+\overset arrow { AA'' }=\overset arrow { AC'' }$'
   - 'C. $\overset arrow { AD }+\overset arrow { BB'' }=\overset arrow { AD'' }$'
   - 'D. $\overset arrow { AB }+\overset arrow { CC'' }=\overset arrow { AC'' }$'
-answer: 1
+answer: 4
 explanation: 'Ta có $\overset arrow { AB }+\overset arrow { CC'' }=\overset arrow { AB }+\overset arrow { BB'' }=\overset arrow { AB'' }≠\overset arrow { AC'' }$ nên đáp án D sai.'
 ```
 

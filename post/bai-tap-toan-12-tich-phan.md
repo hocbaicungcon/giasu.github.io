@@ -21,27 +21,42 @@ grade: 12
 
 ### 1. Hình thang cong
 
-> **Định nghĩa:** Cho hàm số $y=f\left ( { x } \right.  )$ liên tục và không âm trên đoạn $\left[ a;\,b \right]$. Hình phẳng giới hạn bởi:» đồ thị hàm số $y=f\left ( { x } \right.  )$, » trục hoành, » hai đường thẳng $x=a,\,x=b$ được gọi là hình thang cong.
+> **Định nghĩa:** Cho hàm số $y=f\left ( { x } \right.  )$ liên tục và không âm trên đoạn $\left[ a;\,b \right]$. Hình phẳng giới hạn bởi:
+
+- đồ thị hàm số $y=f\left ( { x } \right.  )$,
+- trục hoành,
+- hai đường thẳng $x=a,\,x=b$ được gọi là hình thang cong.
 
 <p align="center"><img src="/assets/images/toan-12/c4_b2_image9.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
 
 ### 2. Diện tích hình thang cong
 
-> **Định nghĩa:** Nếu hàm số $y=f\left ( { x } \right.  )$ liên tục và không âm trên đoạn $\left[ a;\,b \right]$ thì diện tích $S$ của hình thang cong giới hạn bởi:» đồ thị hàm số $y=f\left ( { x } \right.  )$, » trục hoành, » hai đường thẳng $x=a,\,x=b$ được tính bởi:$S=F\left ( { b } \right.  )-F\left ( { a } \right.  )$ Trong đó $F\left ( { x } \right.  )$ là một nguyên hàm của $f\left ( { x } \right.  )$.
+> **Định nghĩa:** Nếu hàm số $y=f\left ( { x } \right.  )$ liên tục và không âm trên đoạn $\left[ a;\,b \right]$ thì diện tích $S$ của hình thang cong giới hạn bởi:
+
+- đồ thị hàm số $y=f\left ( { x } \right.  )$,
+- trục hoành,
+- hai đường thẳng $x=a,\,x=b$ được tính bởi:$S=F\left ( { b } \right.  )-F\left ( { a } \right.  )$ Trong đó $F\left ( { x } \right.  )$ là một nguyên hàm của $f\left ( { x } \right.  )$.
 
 ### 3. Định nghĩa tích phân
 
 > **Định nghĩa:** Cho hàm số $f\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a;\,b \right]$. Nếu $F\left ( { x } \right.  )$ là một nguyên hàm của $f\left ( { x } \right.  )$ trên đoạn $\left[ a;\,b \right]$ thì hiệu số $F\left ( { b } \right.  )-F\left ( { a } \right.  )$ gọi là tích phân từ $a$ đến $b$ của hàm số $f\left ( { x } \right.  )$, kí hiệu . Viết Gọi là dấu tích phân;$a$ là cận dưới;$b$ là cận trên,$f\left ( { x } \right.  )\,{ \rm{ d } }x$ là biểu thức dưới dấu tích phân,$f\left ( { x } \right.  )$ là hàm số dưới dấu tích phân
+- Trường hợp $a=b$:
 
-» Trường hợp $a=b$: » Trường hợp $a>b$: » Tích phân không phụ thuộc vào biến số $x$ hay $t$, nghĩa là . Chú ý
+- Trường hợp $a>b$:
+
+- Tích phân không phụ thuộc vào biến số $x$ hay $t$, nghĩa là . Chú ý
 
 ### 4. Ý nghĩa hình học của tích phân
 
-> **Định nghĩa:** Nếu hàm số $y=f\left ( { x } \right.  )$ liên tục và không âm trên đoạn $\left[ a;\,b \right]$ thì diện tích $S$ của hình thang cong giới hạn bởi:» đồ thị hàm số $y=f\left ( { x } \right.  )$, » trục hoành, » hai đường thẳng $x=a,\,x=b$ Vậy .
+> **Định nghĩa:** Nếu hàm số $y=f\left ( { x } \right.  )$ liên tục và không âm trên đoạn $\left[ a;\,b \right]$ thì diện tích $S$ của hình thang cong giới hạn bởi:
+
+- đồ thị hàm số $y=f\left ( { x } \right.  )$,
+- trục hoành,
+- hai đường thẳng $x=a,\,x=b$ Vậy .
 
 <p align="center"><img src="/assets/images/toan-12/c4_b2_image44.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
-
-» Nếu hàm số $f\left ( { x } \right.  )$ có đạo hàm $f'\left ( { x } \right.  )$ và $f'\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a;\,b \right]$ thì » Tốc độ $v\left ( { t } \right.  )≥0$ tại mọi thời điểm $t∈\left[ a;\,b \right]$ thì quãng đường di chuyển trong khoảng thời gian từ $a$ đến $b$ được tính theo công thức: . Chú ý
+- Nếu hàm số $f\left ( { x } \right.  )$ có đạo hàm $f'\left ( { x } \right.  )$ và $f'\left ( { x } \right.  )$ liên tục trên đoạn $\left[ a;\,b \right]$ thì
+- Tốc độ $v\left ( { t } \right.  )≥0$ tại mọi thời điểm $t∈\left[ a;\,b \right]$ thì quãng đường di chuyển trong khoảng thời gian từ $a$ đến $b$ được tính theo công thức: . Chú ý
 
 ### 5. Tính chất tích phân
 
@@ -182,7 +197,11 @@ Do đó: .
 
 Ta có bảng xét dấu để phá trị tuyệt đối:
 
-<p align="center"><img src="/assets/images/toan-12/c4_b2_image175.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+| $x$ | $-\infty$ | | $-2$ | | $2$ | | $+\infty$ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $|x+2|$ | $-x-2$ | | $0$ | $x+2$ | | $x+2$ | |
+| $|x-2|$ | $-x+2$ | | | $-x+2$ | $0$ | $x-2$ | |
+| $|x+2| - |x-2|$ | $-4$ | | | $2x$ | | $4$ | |
 
 Khi đó: .
 
@@ -190,7 +209,11 @@ Khi đó: .
 
 Ta có bảng xét dấu để phá trị tuyệt đối:
 
-<p align="center"><img src="/assets/images/toan-12/c4_b2_image177.png" alt="Hình vẽ minh họa" style="max-width: min(100%, 480px); height: auto; border-radius: 8px;" /></p>
+| $x$ | $-\infty$ | | $-2$ | | $1$ | | $+\infty$ |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $|1-x|$ | $1-x$ | | | $1-x$ | $0$ | $x-1$ | |
+| $|x+2|$ | $-x-2$ | $0$ | $x+2$ | | | $x+2$ | |
+| $x + |1-x| - |x+2|$ | $-x-1$ | | | $-x+3$ | | $x-3$ | |
 
 Khi đó:
 
@@ -261,8 +284,15 @@ Vì hàm số đã cho liên tục trên $[-1; 1]$ nên liên tục tại $x=0$.
 Khi đó $=\left | { \left ( { x ^ { 2 } } \right.  ) } \right.  ._{ -1 } ^{ 0 }+\left | { a\left ( { \frac { x ^ { 2 } } { 2 }-\frac { x ^ { 3 } } { 3 } } \right.  ) } \right.  ._{ 0 } ^{ 1 }=-1+a\left ( { \frac { 1 } { 6 } } \right.  )=\frac { a } { 6 }-1$
 
 ### Dạng 4. Bài toán thực tế
+- Bài toán chuyển động của một vật
+- Một vật chuyển động theo phương trình vận tốc $v\left ( { t } \right.  )$ trong khoảng thời gian $t=a$ đến $t=b\,\,\left ( { a < b } \right.  )$ sẽ di chuyển được quãng đường là: .
 
-▪Bài toán chuyển động của một vật» Một vật chuyển động theo phương trình vận tốc $v\left ( { t } \right.  )$ trong khoảng thời gian $t=a$ đến $t=b\,\,\left ( { a < b } \right.  )$ sẽ di chuyển được quãng đường là: .» Một vật chuyển động có phương trình gia tốc $a\left ( { t } \right.  )$ thì vận tốc của vật đó sau khoảng thời gian $\Delta t=t_{ 2 } -t_{ 1 }$ là: .▪Bài toán ứng dụng tích phân vào tìm các đại lượng vật lý như công, điện lượng,…» Theo định luật Hooke, lực cần dùng để giữ lò xo giãn thêm x mét từ độ dài tự nhiện là $f\left ( { x } \right.  )=kx$, với $k\,\,\left ( { N/m } \right.  )$ là độ cứng của lò xo. Công cần để kéo dãn lò xo từ độ dài $\ell _{ 1 }$ đến độ dài $\ell _{ 2 }$ là: .» Điện lượng chuyển qua tiết diện của dây dẫn của đoạn mạch trong thời gian từ $t_{ 1 }$ đến $t_{ 2 }$ là: . Phương pháp
+- Một vật chuyển động có phương trình gia tốc $a\left ( { t } \right.  )$ thì vận tốc của vật đó sau khoảng thời gian $\Delta t=t_{ 2 } -t_{ 1 }$ là: .
+
+- Bài toán ứng dụng tích phân vào tìm các đại lượng vật lý như công, điện lượng,…
+- Theo định luật Hooke, lực cần dùng để giữ lò xo giãn thêm x mét từ độ dài tự nhiện là $f\left ( { x } \right.  )=kx$, với $k\,\,\left ( { N/m } \right.  )$ là độ cứng của lò xo. Công cần để kéo dãn lò xo từ độ dài $\ell _{ 1 }$ đến độ dài $\ell _{ 2 }$ là: .
+
+- Điện lượng chuyển qua tiết diện của dây dẫn của đoạn mạch trong thời gian từ $t_{ 1 }$ đến $t_{ 2 }$ là: . Phương pháp
 
 **Ví dụ 4.1.** Một vật chuyển động với vận tốc $10\,m/s$ thì tăng tốc với gia tốc $a\left ( { t } \right.  )=3t+t ^ { 2 }$. Tính quãng đường vật đi được trong khoảng thời gian 10 giây kể từ lúc bắt đầu tăng tốc.
 
@@ -444,19 +474,19 @@ Lời giải
 
 Ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) .
 
 Ta có: .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) .
 
 Ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) .
 
@@ -464,7 +494,7 @@ Sai.
 
 Ta có:$=2.\left ( { -4 } \right.  )+3.\left ( { -3 } \right.  )=-17$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -481,25 +511,25 @@ $=\left[ \left ( { π+cos\frac { π } { 3 } } \right.  )-\left ( { 0+cos0 } \rig
 
 Suy ra $\left\{ \begin{array}{l} a=1b=1c=2 \end{array} \right.$. Vậy $a ^ { 3 } +b ^ { 3 } -c=1+1-2=0$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $a ^ { 2 } +b ^ { 2 } >c ^ { 2 }$.
 
 Với $\left\{ \begin{array}{l} a=1b=1c=2 \end{array} \right.$, xét $a ^ { 2 } +b ^ { 2 } >c ^ { 2 }$ ta có $1+1>4$ là mệnh đề sai.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c) $3a=2b+c$.
 
 Với $\left\{ \begin{array}{l} a=1b=1c=2 \end{array} \right.$, xét $3a=2b+c$ ta có $3=2+2$ là mệnh đề sai.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) $c=a+b$.
 
 Với $\left\{ \begin{array}{l} a=1b=1c=2 \end{array} \right.$, xét $c=a+b$ ta có $2=1+1$ là mệnh đề đúng.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -514,13 +544,13 @@ Lời giải
 
 Hiệu số $F\left ( { 3 } \right.  )-F\left ( { 0 } \right.  )$ gọi là tích phân từ $0$ đến $3$ của hàm số $f\left ( { x } \right.  )$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) .
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) .
 
@@ -528,13 +558,13 @@ Ta có . Mà .
 
 Suy ra .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) Hình thang cong giới hạn bởi đồ thị hàm số $y=f\left ( { x } \right.  )$, trục hoành và hai đường thẳng $x=0,x=3$ có diện tích bằng 1.
 
 Ta có hình thang cong giới hạn bởi đồ thị hàm số $y=f\left ( { x } \right.  )$, trục hoành và hai đường thẳng $x=0,x=3$ có diện tích .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -549,7 +579,7 @@ Lời giải
 
 Ta có .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Biết và thì .
 
@@ -557,19 +587,19 @@ Ta có .
 
 Suy ra .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Với $c∈\left[ a;b \right]$, thì .
 
 Với $c∈\left[ a;b \right]$, thì .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (d) .
 
 Ta có.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -584,17 +614,17 @@ Lời giải
 
 Ta có $\left | { x ^ { 2 } -2x } \right.  |=\left\{ \begin{array}{l} -\left ( { x ^ { 2 } -2x } \right.  )\,,\,\,0≤x≤2\,\,\,\,\,\,\,\,\,x ^ { 2 } -2x,\,\,\,2 < x≤3 \end{array} \right.$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) .
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) $I=\left | { \left ( { -\frac { x ^ { 3 } } { 3 }+x ^ { 2 } } \right.  ) } \right.  ._{ 0 } ^{ 2 }+\left | { \left ( { \frac { x ^ { 3 } } { 3 }-x ^ { 2 } } \right.  ) } \right.  ._{ 2 } ^{ 3 }$.
 
@@ -602,7 +632,7 @@ Ta có $\left | { x ^ { 2 } -2x } \right.  |=\left\{ \begin{array}{l} -\left ( {
 
 $⇒I=-\left | { \left ( { \frac { x ^ { 3 } } { 3 }-x ^ { 2 } } \right.  ) } \right.  ._{ 0 } ^{ 2 }+\left | { \left ( { \frac { x ^ { 3 } } { 3 }-x ^ { 2 } } \right.  ) } \right.  ._{ 2 } ^{ 3 }=\left | { \left ( { -\frac { x ^ { 3 } } { 3 }+x ^ { 2 } } \right.  ) } \right.  ._{ 0 } ^{ 2 }+\left | { \left ( { \frac { x ^ { 3 } } { 3 }-x ^ { 2 } } \right.  ) } \right.  ._{ 2 } ^{ 3 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -617,13 +647,13 @@ Lời giải
 
 Ta có: .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Giá trị của tích phân $I=\frac { 45 } { 4 }$.
 
 Ta có: .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Tích phân .
 
@@ -631,7 +661,7 @@ Ta có: .
 
 Mà
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Gọi $S$ là diện tích hình phẳng giới hạn bởi các đồ thị:$y=4x-1;\,y=0;\,x=-2;\,x=1$. Khi đó $S=\left | { I } \right.  |$.
 
@@ -641,7 +671,7 @@ Mà .
 
 Do đó $S=I=\left | { I } \right.  |$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -662,13 +692,13 @@ Gọi $S$ là diện tích hình tròn có bán kính bằng 4, khi đó ta có:
 
 .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b)
 
 Ta có: diện tích hình giới hạn bởi đồ thị hàm số $y=\sqrt{ 16-x ^ { 2 } }$, trục $Ox$ và hai đường thẳng $x=-4,x=0$ bằng với diện tích hình giới hạn bởi đồ thị hàm số $y=\sqrt{ 16-x ^ { 2 } }$, trục $Ox$ và hai đường thẳng $x=0,x=4$. Do đó .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (c)
 
@@ -676,7 +706,7 @@ Ta có: diện tích hình giới hạn bởi đồ thị hàm số $y=\sqrt{ 16
 
 Vậy .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) .
 
@@ -684,7 +714,7 @@ bằng nữa diện tích hình tròn có bán kính $R=4$ giới hạn bởi đ
 
 Vậy .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -703,13 +733,13 @@ $v\left ( { 0 } \right.  )=6⇒C=6$.
 
 Vậy $v\left ( { t } \right.  )=t ^ { 2 } -7t+6$ (m/s).
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Tại thời điểm $t=7$ (s), vận tốc của chất điểm là $6$ (m/s).
 
 $v\left ( { 7 } \right.  )=7 ^ { 2 } -7⋅7+6=6$ (m/s).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Độ dịch chuyển của vật trong khoảng thời gian $1≤t≤7$ là $18$ m.
 
@@ -717,7 +747,7 @@ $v\left ( { 7 } \right.  )=7 ^ { 2 } -7⋅7+6=6$ (m/s).
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Trong $8$ giây đầu tiên, thời điểm chất điểm xa nhất về phía bên phải là $t=7$ (s).
 
@@ -731,7 +761,7 @@ Lại có $x\left ( { 0 } \right.  )=C$,$x\left ( { 1 } \right.  )=\frac { 17 } 
 
 Vậy giá trị lớn nhất của $x\left ( { t } \right.  )$ với $t∈\left[ 0;\,8 \right]$ đạt được khi $t=1$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -746,13 +776,13 @@ Lời giải
 
 Ta có: .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (b) Lợi nhuận khi bán được $50$ sản phẩm đầu tiên là $519$ triệu đồng.
 
 Lợi nhuận khi bán được $50$ sản phẩm đầu tiên là:$P\left ( { 50 } \right.  )=-0,0004.50 ^ { 2 } +10,4.50=519$ (triệu đồng).
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Sự thay đổi của lợi nhuận khi doanh số tăng từ $50$ lên $55$ đơn vị sản phẩm là $49,79$ triệu đồng.
 
@@ -760,7 +790,7 @@ Ta có sự thay đổi của lợi nhuận khi doanh số tăng từ $50$ lên 
 
 $=-\left | { 0,0004x ^ { 2 } } \right.  ._{ 50 } ^{ 55 }+\left | { 10,4x } \right.  ._{ 50 } ^{ 55 }=-0,0004\left ( { 55 ^ { 2 } -50 ^ { 2 } } \right.  )+10,4\left ( { 55-50 } \right.  )=51,79$ (triệu đồng).
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Biết sự thay đổi của lợi nhuận khi doanh số tăng từ $50$ lên $a$ đơn vị sản phẩm lớn hơn $517$ triệu đồng, khi đó giá trị nhỏ nhất của $a$ là $100$.
 
@@ -772,7 +802,7 @@ Theo bài ra ta có:$-0,0004a ^ { 2 } +10,4a-519>517⇔0,0004a ^ { 2 } -10,4a+10
 
 Vậy giá trị nhỏ nhất của $a$ là $101$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -787,7 +817,7 @@ Lời giải
 
 Ta có $f'\left ( { x } \right.  )=\left ( { lny\left ( { x } \right.  ) } \right.  ) ' = \frac { y'\left ( { x } \right.  ) } { y\left ( { x } \right.  ) }=-7.10 ^ { -4 }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $f\left ( { x } \right.  )=-7.10 ^ { -4 } x+ln\left ( { 0,05 } \right.  )$.
 
@@ -797,7 +827,7 @@ Theo giả thiết $y\left ( { 0 } \right.  )=0,05$ nên $f\left ( { 0 } \right.
 
 Vậy $f\left ( { x } \right.  )=-7.10 ^ { -4 } x+ln\left ( { 0,05 } \right.  )$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $y\left ( { 30 } \right.  )-y\left ( { 15 } \right.  )=-6.10 ^ { -4 }$.
 
@@ -805,7 +835,7 @@ Từ $f\left ( { x } \right.  )=lny\left ( { x } \right.  )⇒y\left ( { x } \ri
 
 Do đó $y\left ( { 30 } \right.  )-y\left ( { 15 } \right.  )=\frac { 1 } { 20 }\left ( { e ^ { -7.10 ^ { -4 } .30 } -e ^ { -7.10 ^ { -4 } .15 } } \right.  )≈-5,2.10 ^ { -4 }$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Nồng độ trung bình của chất $A$ từ thời điểm 15 giây đến thời điểm 30 giây gần bằng $0,05$.
 
@@ -813,7 +843,7 @@ Nồng độ trung bình của chất $A$ từ thời điểm 15 giây đến th
 
 $≈0,05$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 
@@ -830,7 +860,7 @@ Ta có $f\left ( { x } \right.  )$ liên tục trên $\mathbb{R}$ nên $f\left (
 
 Do đó $\mathop { lim } \limits_{ x→1 ^ { - } } f\left ( { x } \right.  )=\mathop { lim } \limits_{ x→1 ^ { + } } f\left ( { x } \right.  )=f\left ( { 1 } \right.  )$ $⇔m+5=3⇔m=-2$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (b) $F\left ( { x } \right.  )=\left\{ \begin{array}{l} x ^ { 3 } +x ^ { 2 } -2x+8\,\,\,\,\,{ \rm{ k } }{ \rm{ h } }{ \rm{ i } }\,\,x≥15x-x ^ { 2 } \,\,+4\,\,\,\,\,\,\,\,\,\,\,\,\,\,{ \rm{ k } }{ \rm{ h } }{ \rm{ i } }\,\,x < 1 \end{array} \right.$.
 
@@ -850,13 +880,13 @@ Mà $m=-2$ nên $C_{ 1 } =8$.
 
 Vậy $F\left ( { x } \right.  )=\left\{ \begin{array}{l} x ^ { 3 } +x ^ { 2 } -2x+8\,\,\,\,\,{ \rm{ k } }{ \rm{ h } }{ \rm{ i } }\,\,x≥15x-x ^ { 2 } \,\,+4\,\,\,\,\,\,\,\,\,\,\,\,\,\,{ \rm{ k } }{ \rm{ h } }{ \rm{ i } }\,\,x < 1 \end{array} \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) $F\left ( { 3 } \right.  )=83$.
 
 Ta có $F\left ( { 3 } \right.  )=3 ^ { 3 } +3 ^ { 2 } -2.3+8=38$.
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) .
 
@@ -870,7 +900,7 @@ Do đó
 
 .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 </details>
 
@@ -889,7 +919,7 @@ Ta có phương trình đường thẳng đi qua hai điểm $OA$ là $y=2x$, đ
 
 Do đó ta có công thức hàm vận tốc là:$v\left ( { t } \right.  )=\left\{ \begin{array}{l} 2t\,\,\,\,\,{ \rm{ k } }{ \rm{ h } }{ \rm{ i } }\,\,0≤t≤12\,\,\,\,\,\,\,{ \rm{ k } }{ \rm{ h } }{ \rm{ i } }\,\,t>1 \end{array} \right.$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 Quãng đường vật đi được trong khoảng thời gian từ a giây đến b giây được xác định bởi công thức .
 
@@ -897,13 +927,13 @@ Quãng đường vật đi được trong khoảng thời gian từ a giây đ�
 
 Do đó quãng đường vật đi được trong khoảng thời gian từ 0 giây đến 1 giây được xác định bởi công thức .
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 (c) Quãng đường vật đi được trong khoảng thời gian từ 1 giây đến 2 giây được xác định bởi công thức .
 
 Do đó quãng đường vật đi được trong khoảng thời gian từ 1 giây đến 2 giây được xác định bởi công thức .
 
-» Chọn SAI.
+**Chọn SAI.**
 
 (d) Quãng đường mà vật đi được trong 2 giây đầu tiên là $3\,m$.
 
@@ -911,7 +941,7 @@ Quãng đường mà vật đi được trong 2 giây đầu tiên là:
 
 $=3\,{ \rm{ m } }$.
 
-» Chọn ĐÚNG.
+**Chọn ĐÚNG.**
 
 </details>
 

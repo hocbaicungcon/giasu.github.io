@@ -55,14 +55,14 @@ explanation: 'Tọa độ tâm mặt cầu là trung điểm của $AB$: $I(3; 2
 
 ```quiz
 type: choice
-question: 'Câu 3: Trong không gian với hệ trục tọa độ $Oxyz$, cho hai điểm $I\left ( { 2;1;0 } \right.  )$ và $A\left ( { 1;2;3 } \right.  )$. Mặt cầu $\left ( { S } \right.  )$ tâm $I$ và đi qua điểm $A$ có phương trình là Mặt cầu $\left ( { S } \right.  )$ có tâm $I\left ( { 2;1;0 } \right.  )$ và bán kính $R=IA=\sqrt{ 11 }$ có phương trình là: $\left ( { S } \right.  ): \,\left ( { x-2 } \right.  ) ^ { 2 } +\left ( { y-1 } \right.  ) ^ { 2 } +z ^ { 2 } =11$'
+question: 'Câu 3: Trong không gian với hệ trục tọa độ $Oxyz$, cho hai điểm $I(2; 1; 0)$ và $A(1; 2; 3)$. Mặt cầu $(S)$ tâm $I$ và đi qua điểm $A$ có phương trình là:'
 options:
-  - 'A. $\left ( { S } \right.  ): \,\left ( { x+2 } \right.  ) ^ { 2 } +\left ( { y+1 } \right.  ) ^ { 2 } +z ^ { 2 } =\sqrt{ 11 }$'
-  - 'B. $\left ( { S } \right.  ): \,\left ( { x-2 } \right.  ) ^ { 2 } +\left ( { y-1 } \right.  ) ^ { 2 } +z ^ { 2 } =\sqrt{ 11 }$'
-  - 'C. $\left ( { S } \right.  ): \,\left ( { x-2 } \right.  ) ^ { 2 } +\left ( { y-1 } \right.  ) ^ { 2 } +z ^ { 2 } =11$'
-  - 'D. $\left ( { S } \right.  ): \,\left ( { x+2 } \right.  ) ^ { 2 } +\left ( { y+1 } \right.  ) ^ { 2 } +z ^ { 2 } =11$'
-answer: 1
-explanation: 'Đáp án đúng là .'
+  - 'A. $(S): (x+2)^2 + (y+1)^2 + z^2 = \sqrt{11}$'
+  - 'B. $(S): (x-2)^2 + (y-1)^2 + z^2 = \sqrt{11}$'
+  - 'C. $(S): (x-2)^2 + (y-1)^2 + z^2 = 11$'
+  - 'D. $(S): (x+2)^2 + (y+1)^2 + z^2 = 11$'
+answer: 3
+explanation: 'Mặt cầu $(S)$ có tâm $I(2; 1; 0)$ và bán kính $R = IA = \sqrt{(1-2)^2 + (2-1)^2 + (3-0)^2} = \sqrt{11}$. Phương trình mặt cầu $(S)$ là: $(x-2)^2 + (y-1)^2 + z^2 = 11$.'
 ```
 
 ## IV. Bài tập trắc nghiệm Đúng / Sai (Cấu trúc mới GDPT 2018)
