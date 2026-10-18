@@ -89,10 +89,12 @@ Tính góc giữa hai đường thẳng AB và CD ta tính góc giữa hai vect�
 Ta có $S A B$ và $S A C$ là tam giác đều, $A B C$ và $S B C$ là tam giác vuông cân cạnh huyền $B C.$
 Gọi $M, N, P$ lần lượt là trung điểm của $S A, A B, B C$, ta có $M N / / S B, N P / / A C$ nên $(A C, S B)=(N P, M N).$
 
+$$
 \begin{aligned}
 &M N=\frac{S B}{2}=\frac{a \sqrt{2}}{2}, N P=\frac{A C}{2}=\frac{a \sqrt{2}}{2} . \\
 &A P=S P=\frac{B C}{2}=a, S A=a \sqrt{2}
 \end{aligned}
+$$
 
 **Ví dụ 3.** Cho hình chóp S.ABC có đáy là tam giác đều cạnh a, $SA\bot \left( ABC \right)$ và $SA=a\sqrt{3}.$ Gọi M, N lần lượt là trung điểm của AB và SC. Tính cosin góc giữa hai đường thẳng AN và CM.
 
@@ -124,13 +126,12 @@ Lại có: $AN=\frac{SC}{2}=a;CM=\frac{a\sqrt{3}}{2}\Rightarrow \cos \varphi =\f
 
 ![Góc giữa hai đường thẳng trong không gian 4](assets/images/goc-giua-hai-duong-thang-trong-khong-gian-bai-tap-goc-giua-hai-duong-thang-trong-khong-gian-2.png)
 
-**Cách 1:** Gọi M, N, P lần lượt là trung điểm của SA, SB và AC. Khi đó $\left\{ \begin{align}
+**Cách 1:** Gọi M, N, P lần lượt là trung điểm của SA, SB và AC. Khi đó
 
+$$\left\{ \begin{align}
 & MP//SC \\
-
-& N//AB \\
-
-\end{align} \right.\Rightarrow \left( \widehat{SC;AB} \right)=\left( \widehat{MP;MN} \right).$
+& MN//AB \\
+\end{align} \right.\Rightarrow \left( \widehat{SC;AB} \right)=\left( \widehat{MP;MN} \right).$$
 
 Ta có: $MN=\frac{AB}{2}=\frac{a}{2};MP=\frac{SC}{2}=\frac{a}{2}.$
 

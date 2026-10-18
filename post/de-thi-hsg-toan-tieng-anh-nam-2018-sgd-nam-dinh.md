@@ -373,7 +373,7 @@ Môn: Toán lớp 11
 ## PART II. PROBLEMS SOLVING (3,0 points)
 
 **Question 1. (1,0 point)
-For each $k = 1,\,2,\,3,\,…,\,\,2018$, the equation ${x^2} – 2x – {k^2} – k = 0$ has roots $\left( {{\alpha _1},\,{\beta _1}} \right);\,\,\left( {{\alpha _2},\,\,{\beta _2}} \right);\,\,…;\,$\,\left( {{\alpha _{2018}},\,\,{\beta _{2018}}} \right)$, respectively. Evaluate$T = \frac{1}{{{\alpha _1}}} + \frac{1}{{{\beta _1}}} + \frac{1}{{{\alpha _2}}} + \frac{1}{{{\beta _2}}} + … + \frac{1}{{{\alpha _{2018}}}} + \frac{1}{{{\beta _{2018}}}}.$
+For each $k = 1,\,2,\,3,\,…,\,\,2018$, the equation ${x^2} – 2x – {k^2} – k = 0$ has roots $\left( {{\alpha _1},\,{\beta _1}} \right);\,\,\left( {{\alpha _2},\,\,{\beta _2}} \right);\,\,…;\,\left( {{\alpha _{2018}},\,\,{\beta _{2018}}} \right)$, respectively. Evaluate $T = \frac{1}{{{\alpha _1}}} + \frac{1}{{{\beta _1}}} + \frac{1}{{{\alpha _2}}} + \frac{1}{{{\beta _2}}} + … + \frac{1}{{{\alpha _{2018}}}} + \frac{1}{{{\beta _{2018}}}}.$
 
 **Question 2. (1,0 point)
 How many integers $x$ are there in $\left\{ {0,\,\,1,\,\,2,\,\,…,\,\,2018} \right\}$ such that $C_{2018}^x \geqslant C_{2018}^{999}?$

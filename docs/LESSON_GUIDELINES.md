@@ -56,6 +56,10 @@ Tài liệu bàn giao cho người tiếp tục phát triển giasu.ai.vn. Cập
 - Dữ liệu sinh từ bảng thuật ngữ và bổ sung trong scripts/glossary.mjs. Ghép cụm dài trước, đúng ranh giới từ, tránh highlight từ thông thường như “khoảng” thay cho “khoảng cách”.
 - Không highlight trong công thức, hình, biểu mẫu hay điều khiển. Popup ngắn gọn, đặt gần từ, thao tác đóng thuận tiện. Quy tắc matching có kiểm tra trong glossary-matcher.test.mjs.
 
+## Rà soát và sửa lỗi hàng loạt
+
+Xem [lesson-review-playbook.md](lesson-review-playbook.md): các lỗi im lặng đã gặp (widget hiện thành mã, quiz không chạy, `$` ghép lệch, công thức dài), cách sửa và quy trình kiểm tra bằng trình duyệt.
+
 ## Bàn giao
 
 Nêu rõ bài nào đã có tương tác, bài nào còn hình tĩnh, kiểm tra đã chạy và hạn chế còn lại. Không khẳng định tất cả bài đã tương tác nếu chưa rà từng bài. Giữ tương thích slug, anchor cũ và dữ liệu lưu của người học.

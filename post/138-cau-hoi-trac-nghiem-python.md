@@ -2004,7 +2004,7 @@ L = [1, 23, 'hello', 1]
 
 Câu 1. Đáp án A: Đúng.
 
-Câu 2. Đáp án D: \sqrt{x + \sqrt{x+\sqrt x}}.
+Câu 2. Đáp án D: $\sqrt{x + \sqrt{x+\sqrt x}}$.
 
 Câu 3. Đáp án D: `1 2`.
 

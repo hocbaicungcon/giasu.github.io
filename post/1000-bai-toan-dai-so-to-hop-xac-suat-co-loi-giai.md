@@ -1594,7 +1594,7 @@ $$
 Để con châu chấu đáp xuống các điểm $M\left( {x,y} \right)$ có $x + y < 2$ thì con châu chấu sẽ nhảy trong khu vực hình thang $BEIA.$ Để $M\left( {x,y} \right)$có tọa độ nguyên thì
 $$
 
-\left\{ \begin{array}{l} x \in \left\{ { – 2; – 1;0;1;2} \right\}\\ y \in \left\{ {0;1;2} \right\} \end{array} \right.$
+\left\{ \begin{array}{l} x \in \left\{ { – 2; – 1;0;1;2} \right\}\\ y \in \left\{ {0;1;2} \right\} \end{array} \right.$$
 
 - Nếu $x \in \left\{ { – 2; – 1} \right\}$thì $y \in \left\{ {0;1;2} \right\} \Rightarrow$có $2.3 = 6$ điểm.
 

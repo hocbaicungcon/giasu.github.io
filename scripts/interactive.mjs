@@ -1,4 +1,5 @@
 import {renderExtraGeometry} from './geometry.mjs';
+import {renderMath} from './math.mjs';
 /* credit: giasu.ai.vn */
 import YAML from 'yaml';
 export const escapeHTML = value => String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -18,8 +19,17 @@ export function renderVideo(text){
  const id=youtubeId(data.url);if(typeof data.title!=='string'||!data.title.trim())throw Error('youtube: thiếu title');
  return `<figure class="lesson-video"><iframe src="https://www.youtube-nocookie.com/embed/${id}" title="${escapeHTML(data.title)}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><figcaption>${escapeHTML(data.title)} · <a href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener noreferrer">Xem trên YouTube</a></figcaption></figure>`;
 }
+// A LaTeX command written without $...$ (e.g. `\sqrt{7}`, `\frac{1}{2}`, `\mathbb{Q} \subset \mathbb{R}`) is wrapped as math.
+const bareLatex=String.raw`\\(?:[A-Za-z]+)(?:\[[^\]]*\])?(?:\s*\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\})*(?:\s*[\^_]\s*(?:\{[^{}]*\}|[A-Za-z0-9+\-]))*(?:(?:\s*[=<>+\-*/]\s*|\s+)(?:\\[A-Za-z]+(?:\[[^\]]*\])?(?:\s*\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\})*(?:\s*[\^_]\s*(?:\{[^{}]*\}|[A-Za-z0-9+\-]))*|-?[A-Za-z0-9]+(?:[.,]\d+)?(?:\s*[\^_]\s*(?:\{[^{}]*\}|[A-Za-z0-9]))?)(?=[\s,.;:)?!]|$))*`;
 export function normalizeQuizMath(text){
- return text.replace(/(\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])*\$|`[^`]*`)|(-?\d+(?:[.,]\d+)?\s*\^\s*\\circ)/g,(match,protectedPart,degrees)=>protectedPart||`$${degrees}$`);
+ // A literal backslash-n (not a command such as \neq) is a line break that was escaped twice in the source data.
+ text=text.replace(/\\n(?!(?:eq|e|ot|otin|i|u|abla|mid|parallel|nmid|less|leq|geq|eg|ewline|rightarrow|leftarrow|Rightarrow|Leftarrow|subseteq|supseteq|exists|vdash|vDash)(?![A-Za-z]))/g,'<br>');
+ return text.replace(new RegExp(String.raw`(\$\$[\s\S]*?\$\$|\$(?:\\.|[^$\n])*\$|`+'`[^`]*`'+String.raw`)|(-?\d+(?:[.,]\d+)?\s*\^\s*\\circ)|(`+bareLatex+')','g'),(match,protectedPart,degrees,latex)=>{
+  if(protectedPart)return protectedPart;
+  if(degrees)return `$${degrees}$`;
+  // Only wrap what KaTeX accepts, so one odd fragment never fails the whole lesson.
+  try{renderMath(latex.trim(),{throwOnError:true});return `$${latex.trim()}$`;}catch{return latex;}
+ });
 }
 function renderQuestion(q,inline){
  const format=value=>inline(normalizeQuizMath(value));
@@ -34,6 +44,37 @@ function renderQuestion(q,inline){
  return `<form class="quiz" data-answers="${escapeHTML(JSON.stringify(answers))}"><fieldset><legend>${format(q.question)}</legend>${fields}</fieldset><div class="quiz-actions"><button class="primary" type="submit">Kiểm tra đáp án</button><button class="quiz-reset" type="reset">Làm lại</button><button class="quiz-show-solution" type="button" hidden>Xem lời giải</button></div><p class="quiz-feedback" role="status" aria-live="polite"></p>${q.hint?`<details class="quiz-hint"><summary>Gợi ý</summary><div>${format(q.hint)}</div></details>`:''}<div class="quiz-explanation" hidden><strong>Giải thích</strong><div>${format(q.explanation)}</div></div><noscript>Bật JavaScript để làm bài và kiểm tra đáp án.</noscript></form>`;
 }
 
+
+
+// Older posts wrote quizzes as <div class="quiz-item" data-quiz='{...}'></div>. Runs of them become one quiz set.
+const quizItemRun=/(?:<div class="quiz-item" data-quiz='[\s\S]*?'>\s*<\/div>\s*)+/g;
+function parseQuizItem(json){
+ // JSON would turn `\frac`, `\bar`, `\times`, `\neq` into form feed, backspace, tab and newline: keep them as LaTeX.
+ const latexSafe=json.replace(/\\\\|\\(?=(?:[bfrt][a-z]{2,}|n(?:eq|e|ot|otin|i|u|abla|mid|parallel|less|leq|geq|eg|ewline|rightarrow|leftarrow|subseteq)(?![A-Za-z])))/g,match=>match==='\\\\'?match:'\\\\');
+ let data;
+ try{data=JSON.parse(latexSafe);}catch{try{data=JSON.parse(latexSafe.replace(/\\\\|\\(?![\\"\/bfnrtu])/g,match=>match.length===2?match:'\\\\'));}catch{return null;}}
+ // Some items double the backslash of every command (`\\\\vec`): that is a line break in LaTeX, so collapse it.
+ const collapse=value=>typeof value==='string'?value.replace(/\\\\(?=[A-Za-z])/g,'\\'):value;
+ if(data&&typeof data==='object'){data.question=collapse(data.question);data.explanation=collapse(data.explanation);data.hint=collapse(data.hint);if(Array.isArray(data.options))data.options=data.options.map(collapse);}
+ if(!data||typeof data.question!=='string'||!Array.isArray(data.options)||typeof data.explanation!=='string')return null;
+ const options=data.options.map(String),labelled=options.every(option=>/^[A-D][.)]\s*/.test(option));
+ let answer=Number.isInteger(data.answer)?data.answer:Number.isInteger(data.correct)?data.correct:-1;
+ if(answer<0&&typeof data.answer==='string'){
+  answer=options.findIndex(option=>option.trim()===data.answer.trim());
+  if(answer<0){const letter=data.answer.trim().match(/^([A-D])\b/);if(letter)answer='ABCD'.indexOf(letter[1]);}
+ }
+ if(!(answer>=0&&answer<options.length))return null;
+ const item={question:data.question,options:labelled?options.map(option=>option.replace(/^[A-D][.)]\s*/,'')):options,answer,explanation:data.explanation};
+ if(typeof data.hint==='string'&&data.hint.trim())item.hint=data.hint;
+ return item;
+}
+export function convertQuizItems(markdown){
+ return markdown.replace(quizItemRun,run=>{
+  const items=[...run.matchAll(/data-quiz='([\s\S]*?)'>\s*<\/div>/g)].map(match=>parseQuizItem(match[1]));
+  if(!items.length||items.some(item=>!item))return run;
+  return `\n\n\`\`\`\`quiz\n${JSON.stringify({questions:items})}\n\`\`\`\`\n\n`;
+ });
+}
 
 // Options that point at other options or at "none" must keep their position when shuffled.
 const positionalOption=/^\s*(?:cả|tất cả|không có|không (?:phải|đáp án)|đáp án|các đáp án)\b/i;

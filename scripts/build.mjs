@@ -19,7 +19,7 @@ import {importLatex} from './latex.mjs';
 import {buildExams} from './exam-pages.mjs';
 import {subjectGroups} from '../assets/subject-groups.js';
 import {buildEntertainment,funMenu} from './entertainment.mjs';
-import {renderVideo,renderQuiz,renderGeometry} from './interactive.mjs';
+import {renderVideo,renderQuiz,renderGeometry,convertQuizItems} from './interactive.mjs';
 function normalizeLocalAssetPaths(text){
  return text
   .replace(/(?:\/Users\/[^\/\s]+\/[^)\s"'<>]*\/)assets\/([^)\s"'<>]+)/g, '/assets/$1')
@@ -266,7 +266,7 @@ export function parsePost(source, filename) {
  const slug=path.basename(filename,'.md');
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error(`${filename}: tên file dùng chữ thường không dấu, số và dấu gạch ngang`);
  const body=normalizeLocalAssetPaths(match[2]);
- const formattedBody=normalizeMarkdownFormatting(body);
+ const formattedBody=normalizeMarkdownFormatting(convertQuizItems(body));
  return {...data,slug,minutes:Math.max(2,Math.ceil(body.split(/\s+/).length/200)),html:(()=>{try{const parsed=renderMathInHtml(renderCallouts(renderLessonMarkdown(formattedBody).replace(/<ul>(?=\s*<li>\s*(?:<p>)?\s*(?:<strong>)?(?:\([a-zA-Z0-9]{1,2}\)|[a-zA-Z0-9]{1,2}[.)]|<strong>[a-zA-Z0-9]{1,2}<\/strong>[.)]))/g,'<ul class="answer-options">')));const html=optimizeImages(parsed,data.title);
   // Placeholders are internal: seeing one means a fence or formula was not restored and the lesson is broken.
   const leaked=html.match(/@@(?:PROTECTED_TOKEN|MATH_BLOCK)_\d+@@|GiasuInlineFormula\d+End/);

@@ -25,6 +25,7 @@ Trước $$f(v)=\frac{8}{v}$$ Sau.`;
 });
 import {parsePost,build,normalizeMarkdownFormatting,renderCallouts,renderMathInHtml,searchTitle,searchDescription,lazyImages,renderLessonMarkdown,renderTitleHtml,plainTitle} from './build.mjs';
 import {compareItems} from '../assets/sort.js';
+import {convertQuizItems} from './interactive.mjs';
 const source='---\ntitle: Thử nghiệm\ndescription: Kiểm tra toán\ncategory: Toán học\ngrade: 10\ntype: Bài học\ndate: "2026-09-17"\ntags: [toán 10]\n---\nCông thức $x_1 + x_2$.\n\n$$\n\\frac{a}{b} = x^2\n$$\n\n```js\nconst cost = "$5";\n```';
 test('render inline, display math and preserve code',()=>{const p=parsePost(source,'thu-nghiem.md');assert.match(p.html,/katex-display/);assert.match(p.html,/mathml/);assert.match(p.html,/const cost = &quot;\$5&quot;/);});
 test('reject incorrect metadata and malformed mathematics',()=>{assert.throws(()=>parsePost(source.replace('grade: 10','grade: 13'),'thu.md'),/lớp/);assert.throws(()=>parsePost(source.replace('2026-09-17','2026-02-31'),'thu.md'),/ngày/);assert.throws(()=>parsePost(source.replace('Toán học','Không có'),'thu.md'),/môn học/);assert.throws(()=>parsePost(source.replace('x_1 + x_2','\\invalidcommand'),'thu.md'));});
@@ -375,4 +376,12 @@ test('print stylesheet and @page rules include title header, giasu.ai.vn footer,
 test('local SVG images without a natural size get their viewBox size so they are not stretched to the column',()=>{
  const html=parsePost(source+'\n\n![Hình](assets/images/goc-giua-hai-mat-phang-dinh-nghia.svg)\n','svg-size.md').html;
  assert.match(html,/<img[^>]*src="[^"]*goc-giua-hai-mat-phang-dinh-nghia\.svg"[^>]*width="520" height="420"/);
+});
+
+test('legacy quiz-item blocks become a working quiz set and keep LaTeX commands intact',()=>{
+ const block=(extra)=>`<div class="quiz-item" data-quiz='{"question":"Tính \\frac{1}{2} + \\bar{x}","options":["A. 1","B. 2"],${extra},"explanation":"Vì \\sqrt{4} = 2.\\nXong"}'></div>`;
+ const html=renderLessonMarkdown(convertQuizItems(block('"answer":"B. 2"')+'\n\n'+block('"correct":0')));
+ assert.equal((html.match(/<form class="quiz"/g)||[]).length,2);
+ assert.ok(!/data-quiz=|\\frac|\\sqrt|\\bar/.test(html.replace(/<annotation[^>]*>[^<]*<\/annotation>/g,'')),'no raw LaTeX or JSON leaks');
+ assert.match(html,/Câu 2\/2/);
 });

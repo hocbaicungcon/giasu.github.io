@@ -53,7 +53,7 @@ $V=\frac{1}{3}\pi {{r}^{2}}h=\frac{8\pi }{3}.$
 
 Đặt độ dài cạnh $AB=x\left( x>0 \right)$ và $M$ là trung điểm $AB.$
 
-Vì tam giác ${O}’AB$ đều nên ${O}’A={O}’B=AB=x$$\Rightarrow {O}’M=\frac{x\sqrt{3}}{2}$.
+Vì tam giác ${O}’AB$ đều nên ${O}’A={O}’B=AB=x$ $\Rightarrow {O}’M=\frac{x\sqrt{3}}{2}$.
 
 Vì mặt phẳng $\left( {O}’AB \right)$ tạo với mặt phẳng chứa đường tròn $\left( O;R \right)$ góc $60{}^\circ$ nên $\widehat{{O}’MO}=60{}^\circ.$
 
@@ -127,13 +127,10 @@ D.**$3\pi \sqrt 2$
 Lời giải.  Chọn A
 Gọi I là trung điểm của AB thì $OI \bot AB;SI \bot AB;OI = 2$
 
-Lại có $\left\{ {\begin{array}{l}
-
+Lại có $$\left\{ {\begin{array}{l}
 {AO = SA.\cos SAO = SA.\frac{{\sqrt 3 }}{2}}\\
-
 {AI = SA.\cos SAI = \frac{{SA}}{2}}
-
-\end{array}} \right.$
+\end{array}} \right.$$
 
 Từ đó ta có $\frac{{AI}}{{AO}} = \frac{1}{{\sqrt 3 }}.$ Mặt khác $\frac{{AI}}{{AO}} = \cos IAO \Rightarrow \sin IAO = \frac{{\sqrt 6 }}{3} = \frac{2}{{OA}} \Rightarrow OA = \sqrt 6$
 

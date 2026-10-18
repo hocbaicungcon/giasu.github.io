@@ -128,11 +128,11 @@ $$F(x; y) = ax + by$$
 ## 4. Khảo sát trực quan: Điểm thuộc miền nghiệm & Giá trị hàm mục tiêu
 
 Khảo sát hệ bất phương trình bậc nhất hai ẩn kinh điển:
-85952\left\{\begin{array}{l} x \ge 0, \ y \ge 0 \ x + y \le 6 \ 2x + y \le 8 \end{array}\right.85952
-và hàm mục tiêu lợi nhuận: (x, y) = 3x + 2y$.
+$$\left\{\begin{array}{l} x \ge 0 \\ y \ge 0 \\ x + y \le 6 \\ 2x + y \le 8 \end{array}\right.$$
+và hàm mục tiêu lợi nhuận: $F(x, y) = 3x + 2y.$
 
 Miền nghiệm của hệ là miền tứ giác cố định trên mặt phẳng tọa độ $Oxy$ với các đỉnh:
-85952O(0; 0), \quad A(4; 0), \quad B(2; 4), \quad C(0; 6)85952
+$$O(0; 0), \quad A(4; 0), \quad B(2; 4), \quad C(0; 6)$$
 
 Em hãy kéo rê điểm (x; y)$ bên dưới (hoặc điều chỉnh thanh trượt , y$) để quan sát giá trị hàm mục tiêu (x, y) = 3x + 2y$ thay đổi theo vị trí của điểm $:
 

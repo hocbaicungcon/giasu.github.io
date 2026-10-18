@@ -351,4 +351,4 @@ nhãn/count để giữ biểu tượng căn giữa.
 Khi build, `scripts/styles.mjs` gộp các module thành `dist/assets/style.css`:
 trình duyệt chỉ tải một tệp CSS và phiên bản cache được cập nhật như trước.
 
-Quy định biên soạn bài học, theme, công thức, hình tương tác và bàn giao: [docs/LESSON_GUIDELINES.md](docs/LESSON_GUIDELINES.md).
+Quy định biên soạn bài học, theme, công thức, hình tương tác và bàn giao: [docs/LESSON_GUIDELINES.md](docs/LESSON_GUIDELINES.md). Lỗi thường gặp và cách rà soát: [docs/lesson-review-playbook.md](docs/lesson-review-playbook.md).

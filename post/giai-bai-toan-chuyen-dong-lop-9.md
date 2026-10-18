@@ -45,7 +45,7 @@ Một Ô tô đi từ A đến B cùng một lúc, Ô tô thứ hai đi từ  B
 
 - Ta có vận tốc Ô tô đi từ A đến B là : $\frac{AB}{x}$ (km/h);
 
-- Vận tốc  Ô tô đi từ B về A là: $\frac{2}{3}$\frac{AB}{x}$ (km/h);
+- Vận tốc  Ô tô đi từ B về A là: $\frac{2}{3}\frac{AB}{x}$ (km/h);
 
 - Sau 5 giờ Ô tô đi từ A đến B đi được quãng đường là: $5. \frac{AB}{x}$ (km);
 
