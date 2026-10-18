@@ -15,7 +15,7 @@ function init(app) {
   if (!W || !katex) { sheetEl.textContent = 'Không tải được thư viện tạo bài. Hãy tải lại trang.'; return; }
   const compileUrl = app.dataset.compileUrl || '';
 
-  const buildOpts = (extra = {}) => ({katex, picUrl, alts: LOOSE.has(cfg.subject), ...extra});
+  const buildOpts = (extra = {}) => ({katex, picUrl, alts: LOOSE.has(cfg.subject), sans: true, ...extra});   // công thức không chân, như các bài học
   const matches = (item, expected, given) => item.alts || LOOSE.has(cfg.subject) ? sameLoose(expected, given) : sameAnswer(expected, given);
   const cfg = {subject: 'math', grade: 3, level: 0, size: 'normal', topics: null, seed: 1, mode: 'sheet'};
   const supportCache = new Map();
@@ -108,7 +108,7 @@ function init(app) {
   function itemHtml(item, number) {
     let k = 0;
     let html = item.parts.map(p => p.html != null ? p.html : blankHtml(p.blank, `Câu ${number}, ô ${++k}`)).join('');
-    if (item.extra) html += `<span class="pg-extra"> ${(item.extra.prefix || 'Đáp số:').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')} </span>${blankHtml({kind: 'text'}, `Câu ${number}, đáp số`)}`;
+    if (item.extra) html += `<div class="pg-answerrow"><span class="pg-extra">${(item.extra.prefix || 'Đáp số:').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')}</span>${blankHtml({kind: 'text'}, `Câu ${number}, đáp số`)}</div>`;
     if (item.mode === 'choice') html += `<div class="pg-choices" role="radiogroup">${item.options.map((o, i) => `<label class="pg-ch"><input type="radio" name="ch-${number}-${Math.random().toString(36).slice(2, 6)}" value="${i}"><span><b>${'ABCD'[i]}.</b> ${o}</span></label>`).join('')}</div>`;
     if (item.mode === 'self') html += '<div class="pg-self"><input class="pg-note" type="text" placeholder="Ghi kết quả của em…" autocomplete="off" aria-label="Kết quả của em"> <button type="button" class="pg-reveal">Xem đáp án</button></div>';
     return html;
@@ -225,7 +225,7 @@ function init(app) {
     const usesPictures = result.emoji.length > 0;
     const blocks = exercises.map((ex, i) => `<section class="ps-block"><h2><span class="ps-num">${i + 1}</span> ${ex.instrHtml}</h2><ol class="ps-items ps-cols-${ex.cols}">${ex.items.map(item => {
       let html = item.parts.map(p => p.html != null ? p.html.replace(/ loading="lazy"/g, '') : lineHtml(p.blank)).join('');
-      if (item.extra) html += ` ${item.extra.prefix || 'Đáp số:'} ${lineHtml({kind: 'text'})}`;
+      if (item.extra) html += `<div class="ps-answerrow">${(item.extra.prefix || 'Đáp số:').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')} ${lineHtml({kind: 'text'})}</div>`;
       if (item.mode === 'choice') html += `<div class="ps-choices">${item.options.map((o, i) => `<span><b>${'ABCD'[i]}.</b> ${o}</span>`).join('')}</div>`;
       if (item.mode === 'self') html += '<span class="ps-work"></span>';
       return `<li>${html}</li>`;
@@ -518,7 +518,7 @@ function init(app) {
     const tiles = q.kind === 'tiles';
     if (q.kind === 'match') setupMatch(q);
     else card.innerHTML = q.parts.map(p => p.html != null ? p.html : tiles ? '' : mc ? '<span class="pg-gap">?</span>' : blankHtml(p.blank, `Ô ${++k}`)).join('')
-      + (q.extra ? `<span class="pg-extra"> ${(q.extra.prefix || '').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')} </span>${mc ? '<span class="pg-gap">?</span>' : blankHtml({kind: 'text'}, 'Đáp số')}` : '');
+      + (q.extra ? `<div class="pg-answerrow"><span class="pg-extra">${(q.extra.prefix || '').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')}</span>${mc ? '<span class="pg-gap">?</span>' : blankHtml({kind: 'text'}, 'Đáp số')}</div>` : '');
     card.dataset.state = '';
     if (tiles) card.querySelectorAll('.pg-tile').forEach(t => t.remove());          // thẻ đề bài trùng với thẻ để xếp
     card.hidden = tiles && !card.textContent.trim() && !card.querySelector('img');

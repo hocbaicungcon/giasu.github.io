@@ -33,8 +33,12 @@
 .practice-page select.pg-input.pg-choice { width: 3.8em; height: 1.9em; border: 2px solid #78a267; border-radius: 6px; background: var(--paper, #fffefb); }
 .practice-page .pg-input.pg-note { width: min(100%, 18em); text-align: left; font-size: 15px; }
 .practice-page .pg-input:focus-visible { outline: 2px solid #51854b; outline-offset: 1px; background: #f0f6e9; }
-.pg-extra { color: var(--muted, #707b6b); }
-.pg-extra i { color: var(--ink, #324736); }
+.pg-answerrow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.pg-item .pg-answerrow { justify-content: flex-start; }
+.pg-extra { font-weight: 800; color: var(--ink, #324736); white-space: nowrap; }
+.pg-extra i { font-style: italic; }
+.pg-game-card .pg-answerrow { padding-top: 6px; border-top: 3px dashed #e3d9ff; }
+.pg-game-card .pg-extra { color: #7c4dff; font-size: 1.05em; }
 .pg-pic { vertical-align: -0.3em; margin: 0 1px; }
 .pg-tile { display: inline-block; margin: 0 2px; padding: 0 8px; line-height: 1.7; border: 1.5px solid #db9560; border-radius: 6px; background: #fff7ea; color: #324736; font-weight: 600; }
 .pg-mark { margin-left: 6px; font-size: 14px; font-weight: 700; }

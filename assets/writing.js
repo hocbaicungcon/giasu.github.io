@@ -1,5 +1,5 @@
 /* credit: giasu.ai.vn */
-/* Trang Luyện viết chữ Hán / chữ Nhật: lộ trình từ nét cơ bản đến chữ khó, xem hoạt ảnh nét, tô theo nét, tự viết, phát âm.
+/* Trang Luyện viết chữ Hán / chữ Nhật: lộ trình từ nét cơ bản đến chữ khó, xem hoạt ảnh nét, tô theo nét, tự viết, phát âm bằng giọng đọc của thiết bị, hình minh hoạ Twemoji.
    Dữ liệu trong assets/writing (xem scripts/import-writing-data.mjs); hoạt ảnh và chấm nét do Hanzi Writer (MIT). */
 
 const root = document.querySelector('[data-writing-app]');
@@ -9,6 +9,8 @@ function init(app) {
   const HanziWriter = window.HanziWriter;
   const $ = sel => app.querySelector(sel);
   const BASE = new URL('../assets/writing/', import.meta.url).href;
+  const PIC = cp => new URL(`../assets/worksheet/emoji-svg/${cp}.svg`, import.meta.url).href;
+  const picImg = (cp, cls = 'wr-pic') => cp ? `<img class="${cls}" src="${PIC(cp)}" alt="" width="56" height="56" loading="lazy">` : '';
   const pathEl = $('[data-path]'), levelEl = $('[data-level]'), padEl = $('[data-pad]'), tabs = [...app.querySelectorAll('[data-lang]')];
   if (!HanziWriter) { pathEl.textContent = 'Không tải được thư viện viết chữ. Hãy tải lại trang.'; return; }
 
@@ -32,7 +34,6 @@ function init(app) {
     redo: '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5a7 7 0 1 0 6.7 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M12 1.5l5 3.5-5 3.5z" fill="currentColor"/></svg>',
     star: '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z" fill="currentColor"/></svg>'
   };
-  const audio = new Audio();
   let voices = [];
   const loadVoices = () => { voices = window.speechSynthesis?.getVoices?.() || []; };
   loadVoices();
@@ -49,13 +50,7 @@ function init(app) {
     if (voice) u.voice = voice;
     synth.speak(u);
   }
-  function playAudio(id, fallbackText, lang) {
-    if (id && lang === 'zh') {
-      audio.src = `${BASE}audio/zh/${id}.mp3`;
-      audio.onerror = () => say(fallbackText, lang);
-      audio.play().catch(() => say(fallbackText, lang));
-    } else say(fallbackText, lang);
-  }
+  const playAudio = (_id, text, lang) => say(text, lang);          // phát âm bằng giọng đọc của thiết bị
   let toastTimer = 0;
   function toast(text) {
     const el = $('[data-toast]');
@@ -98,18 +93,123 @@ function init(app) {
   function renderLevel() {
     const lv = state.level, done = doneCount(lv.id);
     levelEl.innerHTML = `<div class="wr-level-head"><button type="button" class="wr-back" data-back>← Lộ trình</button><div><h2>${esc(lv.title)}</h2><p>${esc(lv.desc)}</p></div><span class="wr-count">${done}/${lv.items.length} chữ</span></div>
-      <div class="wr-grid" lang="${lv.lang}">${lv.items.map((it, n) => `<button type="button" class="wr-tile" data-i="${n}" aria-label="Luyện viết chữ ${esc(it.c)}"><span class="wr-char">${esc(it.c)}</span><small>${esc(tileLabel(it))}</small><span class="wr-stars" aria-hidden="true">${[1, 2, 3].map(s => `<i class="${stars(lv.id, it.c) >= s ? 'on' : ''}">${ICON.star}</i>`).join('')}</span></button>`).join('')}</div>`;
+      <div class="wr-grid" lang="${lv.lang}">${lv.items.map((it, n) => `<button type="button" class="wr-tile" data-i="${n}" aria-label="Luyện viết chữ ${esc(it.c)}">${it.e ? picImg(it.e, 'wr-badge') : ''}<span class="wr-char">${esc(it.c)}</span><small>${esc(tileLabel(it))}</small><span class="wr-stars" aria-hidden="true">${[1, 2, 3].map(s => `<i class="${stars(lv.id, it.c) >= s ? 'on' : ''}">${ICON.star}</i>`).join('')}</span></button>`).join('')}</div>`;
     window.scrollTo({top: app.offsetTop - 70, behavior: 'smooth'});
   }
   const tileLabel = it => it.p || it.on?.[0]?.r || it.kun?.[0]?.r || '';
 
+
+  // ---------- nét bút lông ----------
+  /* Hanzi Writer chỉ vẽ nét người viết bằng một đường mảnh đều nhau. Ta ẩn đường đó và vẽ đè một nét bút lông
+     (to, nét đầu mềm, đậm khi đi chậm, thon dần ở cuối) lên canvas; Hanzi Writer vẫn là bên chấm nét đúng/sai. */
+  function attachBrush(board, size) {
+    const svg = board.querySelector('svg');
+    const canvas = document.createElement('canvas');
+    canvas.className = 'wr-brush';
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    canvas.width = canvas.height = Math.round(size * dpr);
+    canvas.style.width = canvas.style.height = size + 'px';
+    board.append(canvas);
+    const ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
+    const base = size * 0.07;                                     // bề ngang tối đa của nét bút
+    const strokes = [];                                           // {pts, ended, endedAt, result, color}
+    let current = null, raf = 0;
+
+    const toLocal = event => { const r = (svg || board).getBoundingClientRect(); return {x: event.clientX - r.left, y: event.clientY - r.top, t: performance.now()}; };
+    function addPoint(stroke, p) {
+      const last = stroke.pts[stroke.pts.length - 1];
+      if (last) {
+        const dx = p.x - last.x, dy = p.y - last.y, dist = Math.hypot(dx, dy);
+        if (dist < 1.2) return;
+        const speed = dist / Math.max(1, p.t - last.t);           // px/ms
+        const target = base * Math.max(0.45, Math.min(1.15, 1.2 - speed * 0.55));
+        p.w = last.w * 0.72 + target * 0.28;                      // mượt dần
+      } else p.w = base * 0.55;
+      stroke.pts.push(p);
+    }
+    function outline(pts, taperEnd) {
+      const n = pts.length;
+      const widths = pts.map((p, i) => {
+        let w = p.w;
+        if (i < 3) w *= [0.55, 0.8, 0.95][i];                      // đầu nét mềm
+        if (taperEnd) { const k = n - 1 - i; if (k < 5) w *= [0.25, 0.4, 0.6, 0.8, 0.92][k]; }   // cuối nét thon
+        return Math.max(1.2, w);
+      });
+      const left = [], right = [];
+      for (let i = 0; i < n; i++) {
+        const a = pts[Math.max(0, i - 1)], b = pts[Math.min(n - 1, i + 1)];
+        let dx = b.x - a.x, dy = b.y - a.y; const len = Math.hypot(dx, dy) || 1;
+        dx /= len; dy /= len;
+        left.push([pts[i].x - dy * widths[i] / 2, pts[i].y + dx * widths[i] / 2]);
+        right.push([pts[i].x + dy * widths[i] / 2, pts[i].y - dx * widths[i] / 2]);
+      }
+      return {left, right, widths};
+    }
+    function paint(stroke, alpha) {
+      const {pts} = stroke;
+      if (!pts.length) return;
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = stroke.color;
+      ctx.shadowColor = stroke.color; ctx.shadowBlur = 1.6;       // mép hơi nhoè như mực
+      if (pts.length < 3) { ctx.beginPath(); ctx.arc(pts[0].x, pts[0].y, base * 0.45, 0, Math.PI * 2); ctx.fill(); ctx.restore(); return; }
+      const {left, right, widths} = outline(pts, stroke.ended);
+      ctx.beginPath();
+      ctx.moveTo(left[0][0], left[0][1]);
+      for (let i = 1; i < left.length; i++) ctx.lineTo(left[i][0], left[i][1]);
+      for (let i = right.length - 1; i >= 0; i--) ctx.lineTo(right[i][0], right[i][1]);
+      ctx.closePath(); ctx.fill();
+      ctx.beginPath(); ctx.arc(pts[0].x, pts[0].y, widths[0] / 2, 0, Math.PI * 2); ctx.fill();               // đầu tròn
+      const e = pts[pts.length - 1]; ctx.beginPath(); ctx.arc(e.x, e.y, widths[widths.length - 1] / 2, 0, Math.PI * 2); ctx.fill();
+      ctx.restore();
+    }
+    function frame() {
+      raf = 0;
+      ctx.clearRect(0, 0, size, size);
+      const now = performance.now();
+      for (let i = strokes.length - 1; i >= 0; i--) {
+        const st = strokes[i];
+        let alpha = 0.94;
+        if (st.ended) {
+          const wait = st.result === null ? 450 : 0, age = now - st.endedAt - wait;   // chưa biết đúng sai thì giữ nét một lúc
+          if (age > 0) alpha = Math.max(0, 0.94 * (1 - age / (st.result === false ? 380 : 220)));
+          if (alpha <= 0) { strokes.splice(i, 1); continue; }
+        }
+        paint(st, alpha);
+      }
+      if (strokes.length) raf = requestAnimationFrame(frame);
+    }
+    const kick = () => { if (!raf) raf = requestAnimationFrame(frame); };
+
+    const down = event => { if (event.button > 0) return; current = {pts: [], ended: false, endedAt: 0, result: null, color: '#1d1a2b'}; strokes.push(current); addPoint(current, toLocal(event)); kick(); };
+    const move = event => { if (!current) return; const list = event.getCoalescedEvents?.(); for (const e of (list && list.length ? list : [event])) addPoint(current, toLocal(e)); kick(); };
+    const up = () => { if (!current) return; current.ended = true; current.endedAt = performance.now(); current = null; kick(); };
+    board.addEventListener('pointerdown', down);
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+    window.addEventListener('pointercancel', up);
+    return {
+      resolve(ok) {                                                // nét vừa xong đúng hay sai
+        const st = [...strokes].reverse().find(x => x.result === null);
+        if (st) { st.result = ok; st.color = ok ? '#1d1a2b' : '#d94e48'; if (!st.ended) st.pending = ok; kick(); }
+      },
+      dispose() {
+        cancelAnimationFrame(raf);
+        window.removeEventListener('pointermove', move); window.removeEventListener('pointerup', up); window.removeEventListener('pointercancel', up);
+        board.removeEventListener('pointerdown', down); canvas.remove();
+      }
+    };
+  }
+
   // ---------- bảng viết ----------
   function stopWriter() {
     state.token++;
+    state.brush?.dispose(); state.brush = null;
     try { state.writer?.cancelQuiz(); state.writer?.pauseAnimation?.(); } catch { /* bỏ qua */ }
     state.writer = null;
   }
-  function boardSize() { return Math.max(220, Math.min(360, ($('[data-board-wrap]').clientWidth || 340) - 4)); }
+  function boardSize() { return Math.max(240, Math.min(420, ($('[data-board-wrap]').clientWidth || 340) - 4)); }
 
   function openChar(i) {
     const lv = state.level;
@@ -138,11 +238,12 @@ function init(app) {
       const group = (name, list) => list?.length ? `<div class="wr-readings"><span>${name}</span>${list.map(r => sayBtn(`${r.k} · ${r.r}`, '', r.k.replace(/[()]/g, ''))).join('')}</div>` : '';
       rows.push(group('Âm On', it.on), group('Âm Kun', it.kun));
     } else if (it.hv) rows.push(`<p class="wr-hv">Âm Hán Việt: <b>${esc(it.hv)}</b></p>`);
-    if (it.m) rows.push(`<p class="wr-mean">${esc(it.m)}</p>`);
+    if (it.e) rows.push(`<div class="wr-meaning">${picImg(it.e)}<div><p class="wr-mean">${esc(it.v || it.m)}</p>${it.v && it.m ? `<p class="wr-en">${esc(it.m)}</p>` : ''}</div></div>`);
+    else if (it.m) rows.push(`<p class="wr-mean">${esc(it.m)}</p>`);
     if (it.tip) rows.push(`<p class="wr-tip">${esc(it.tip)}</p>`);
     const facts = [`${it.n} nét`, it.r && it.r !== it.c ? `bộ ${it.r}` : '', it.j ? `JLPT N${it.j}` : ''].filter(Boolean);
     rows.push(`<p class="wr-facts">${facts.map(f => `<span>${esc(f)}</span>`).join('')}</p>`);
-    if (it.w?.length) rows.push(`<div class="wr-words"><h3>Từ ví dụ</h3>${it.w.map(w => `<div class="wr-word" lang="zh"><span class="wr-word-h">${esc(w.h)}</span><span class="wr-word-p">${esc(w.p)}</span><span class="wr-word-m">${esc(w.m)}</span><button type="button" class="wr-say wr-say-icon" data-say="${esc(w.h)}" data-audio="${esc(w.a || '')}" data-sl="zh" aria-label="Nghe phát âm ${esc(w.h)}">${ICON.sound}</button></div>`).join('')}</div>`);
+    if (it.w?.length) rows.push(`<div class="wr-words"><h3>Từ ví dụ</h3>${it.w.map(w => `<div class="wr-word" lang="zh">${picImg(w.e, 'wr-word-pic')}<span class="wr-word-h">${esc(w.h)}</span><span class="wr-word-p">${esc(w.p)}</span><span class="wr-word-m">${esc(w.v ? w.v + ' · ' + w.m : w.m)}</span><button type="button" class="wr-say wr-say-icon" data-say="${esc(w.h)}" data-audio="${esc(w.a || '')}" data-sl="zh" aria-label="Nghe phát âm ${esc(w.h)}">${ICON.sound}</button></div>`).join('')}</div>`);
     $('[data-info]').innerHTML = rows.join('');
   }
 
@@ -155,7 +256,7 @@ function init(app) {
     const data = state.level.data;
     state.writer = HanziWriter.create(board, it.c, {
       width: size, height: size, padding: 18, showCharacter: true, showOutline: true,
-      strokeColor: '#2b2147', outlineColor: '#d8e4cf', highlightColor: '#ff9800', drawingColor: '#438557', drawingWidth: 7,
+      strokeColor: '#2b2147', outlineColor: '#d8e4cf', highlightColor: '#ff9800', drawingColor: 'rgba(0,0,0,0)', drawingWidth: 2,
       strokeAnimationSpeed: Number($('[data-speed]').value) || 1, delayBetweenStrokes: 280, strokeFadeDuration: 250, showHintAfterMisses: 2, highlightOnComplete: true,
       charDataLoader: (c, onLoad, onError) => { const d = data[c]; if (d) onLoad({strokes: d.s, medians: d.m}); else onError(new Error('no data')); }
     });
@@ -173,13 +274,14 @@ function init(app) {
     if (mode === 'demo') {
       if (animate) writer.animateCharacter();
     } else {
+      state.brush = attachBrush($('[data-board]'), boardSize());
       if (mode === 'free') writer.hideOutline();
       writer.hideCharacter();
       let mistakes = 0;
       writer.quiz({
         leniency: 1.25, showHintAfterMisses: mode === 'free' ? 2 : 1,
-        onMistake: () => { mistakes++; $('[data-strokeinfo]').textContent = `Sai ${mistakes} lần`; },
-        onCorrectStroke: d => { $('[data-strokeinfo]').textContent = `Nét ${d.strokeNum + 1}/${it.n} · sai ${mistakes}`; },
+        onMistake: () => { state.brush?.resolve(false); mistakes++; $('[data-strokeinfo]').textContent = `Sai ${mistakes} lần`; },
+        onCorrectStroke: d => { state.brush?.resolve(true); $('[data-strokeinfo]').textContent = `Nét ${d.strokeNum + 1}/${it.n} · sai ${mistakes}`; },
         onComplete: summary => { if (token === state.token) finish(summary.totalMistakes ?? mistakes); }
       });
     }

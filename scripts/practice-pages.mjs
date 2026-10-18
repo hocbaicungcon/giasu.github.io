@@ -55,7 +55,7 @@ export const practicePages = {
   writing: {
     dir: 'luyen-viet', name: 'Luyện viết chữ Hán, Nhật',
     title: 'Luyện viết chữ Hán và chữ Nhật: nét, bộ thủ, HSK, kanji',
-    description: 'Luyện viết tiếng Trung và tiếng Nhật từ nét cơ bản, bộ thủ, HSK 1–6, hiragana, katakana đến kanji: xem hoạt ảnh thứ tự nét, tô theo nét, nghe phát âm.',
+    description: 'Luyện viết tiếng Trung và tiếng Nhật từ nét cơ bản, bộ thủ, HSK 1–6, kana đến kanji: hoạt ảnh thứ tự nét, tô theo nét, phát âm, hình minh hoạ.',
     h1: 'Luyện viết chữ Hán & chữ Nhật',
     kicker: 'NGOẠI NGỮ · TIẾNG TRUNG & TIẾNG NHẬT',
     lead: 'Đi từ nét cơ bản, bộ thủ đến chữ HSK và kanji theo lớp. Xem hoạt ảnh thứ tự nét, tô theo nét, tự viết và nghe phát âm.',
@@ -64,7 +64,7 @@ export const practicePages = {
       ['Luyện viết chữ Hán bắt đầu từ đâu?', 'Bắt đầu với 16 nét cơ bản và quy tắc thứ tự nét, sau đó học các bộ thủ thông dụng rồi luyện chữ theo cấp HSK 1 đến HSK 6.'],
       ['Tiếng Nhật học theo thứ tự nào?', 'Nên đi từ nét cơ bản, Hiragana, Katakana, âm đục và chữ nhỏ, bộ thủ, rồi kanji theo lớp 1 đến lớp 6 của chương trình Nhật Bản.'],
       ['Ba chế độ luyện viết khác nhau thế nào?', '"Xem mẫu" chạy hoạt ảnh thứ tự nét. "Tô theo nét" cho viết theo nét mờ. "Tự viết" ẩn nét mờ, chỉ gợi ý khi viết sai nhiều lần; viết đúng được tối đa 3 sao.'],
-      ['Có nghe được phát âm không?', 'Có. Tiếng Trung có âm thanh cho chữ và từ HSK 1–3, các cấp khác dùng giọng đọc của thiết bị. Tiếng Nhật dùng giọng đọc tiếng Nhật của thiết bị cho kana và cách đọc kanji.']
+      ['Có nghe được phát âm không?', 'Có. Bấm nút loa để nghe giọng đọc tiếng Trung hoặc tiếng Nhật có sẵn trên thiết bị (điện thoại, máy tính). Nếu máy chưa cài giọng đọc, trang sẽ báo để bạn thêm trong phần cài đặt giọng nói của hệ điều hành.']
     ]
   }
 };

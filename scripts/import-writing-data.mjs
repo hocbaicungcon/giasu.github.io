@@ -2,12 +2,15 @@
 // Dựng dữ liệu cho trang Luyện viết chữ Hán / chữ Nhật (assets/writing) từ kho "Kanji-HSK Database".
 //   node scripts/import-writing-data.mjs "/đường/dẫn/Kanji-HSK Database"
 // Nguồn: AnimCJK (nét chữ + từ điển, Arphic Public License; dẫn xuất từ Make Me a Hanzi), danh sách HSK 2012,
-// kanji-data (cấp lớp, âm on/kun), chinese-vocabulary-audio (âm thanh các chữ/từ HSK 1–3).
+// kanji-data (cấp lớp, âm on/kun) và thư viện hình minh hoạ Twemoji của worksheet-lib (ghép nghĩa tiếng Anh với tên tiếng Việt và hình).
+// Phát âm dùng giọng đọc của thiết bị, không có tệp âm thanh.
 // Kết quả được commit; chỉ chạy lại khi muốn cập nhật dữ liệu.
 import fs from 'node:fs';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 
 const DB = process.argv[2] || '/Users/phuongphan/Documents/Kanji-HSK Database';
+const LIB = process.argv[3] || '/Users/phuongphan/GitHub/latex_bank/worksheet-lib/dist/worksheet.js';
 const OUT = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'assets', 'writing');
 const read = file => fs.readFileSync(path.join(DB, file), 'utf8');
 const lines = file => read(file).split('\n').filter(Boolean).map(line => JSON.parse(line));
@@ -112,17 +115,32 @@ const HIRAGANA_ROWS = ['あいうえお', 'かきくけこ', 'さしすせそ', 
 const HIRAGANA_EXTRA = ['がぎぐげご', 'ざじずぜぞ', 'だぢづでど', 'ばびぶべぼ', 'ぱぴぷぺぽ', 'ぁぃぅぇぉ', 'ゃゅょっゎ'];
 const toKatakana = text => text.replace(/[ぁ-ゖ]/g, c => String.fromCharCode(c.charCodeAt(0) + 0x60));
 
-// ---------- âm thanh tiếng Trung (chữ và từ HSK 1–3) ----------
-const AUDIO_DIR = path.join(DB, 'chinese-vocabulary-audio/audio_data');
-const audioStats = { files: 0, bytes: 0 };
-function copyAudio(text) {
-  const src = path.join(AUDIO_DIR, `cmn-${text}.mp3`);
-  if (!fs.existsSync(src)) return null;
-  const id = hex(text);
-  const dest = path.join(OUT, 'audio', 'zh', id + '.mp3');
-  if (!fs.existsSync(dest)) { fs.mkdirSync(path.dirname(dest), { recursive: true }); fs.copyFileSync(src, dest); audioStats.files++; audioStats.bytes += fs.statSync(dest).size; }
-  return id;
-}
+// ---------- hình minh hoạ (Twemoji) và nghĩa tiếng Việt ----------
+const lib = createRequire(import.meta.url)(LIB).lib;
+const concepts = Array.isArray(lib.items) ? lib.items : Object.values(lib.items);
+const byEn = new Map();
+for (const c of concepts) { if (c.cp) byEn.set(c.en.toLowerCase(), c); }
+const ALIAS = {
+  airplane: 'plane', aeroplane: 'plane', television: 'tv', computer: 'laptop', telephone: 'phone', 'mobile phone': 'phone', 'cell phone': 'phone', tea: 'cup', 'cooked rice': 'rice', 'rice': 'rice',
+  water: 'drop', ox: 'cow', cattle: 'cow', flower: 'blossom', flowers: 'blossom', clock: 'alarm clock', watch: 'alarm clock', 'wristwatch': 'alarm clock', home: 'house', 'wood': 'tree', trees: 'tree',
+  shoes: 'shoe', trousers: 'jeans', pants: 'jeans', hat: 'cap', 'ball game': 'ball', sheep: 'sheep', goat: 'goat', fowl: 'chicken', hen: 'chicken', pork: 'pig', 'small bird': 'bird', moon: 'moon', month: 'moon', sun: 'sun', day: 'sun',
+  mount: 'mountain', hill: 'mountain', 'big dipper': 'star', heaven: 'cloud', sky: 'cloud', school: 'school', 'school building': 'school', teacher: 'school', study: 'books', books: 'books', 'to read': 'book',
+  rainy: 'rain', 'to rain': 'rain', snow: 'snowman', umbrella: 'umbrella', boat: 'ship', 'ship': 'ship', bicycle: 'bicycle', bike: 'bicycle', 'to eat': 'rice', river: 'wave', sea: 'wave', ocean: 'wave', lake: 'wave',
+  'older brother': 'boy', 'younger brother': 'boy', son: 'boy', daughter: 'girl', 'older sister': 'girl', 'younger sister': 'girl', mother: 'woman', mom: 'woman', father: 'man', dad: 'man', 'old man': 'grandpa', grandfather: 'grandpa', grandmother: 'grandma',
+  child: 'baby', children: 'baby', 'ear': 'ear', foot: 'foot', feet: 'foot', leg: 'leg', mouth: 'mouth', eye: 'eye', eyes: 'eye', nose: 'nose', tooth: 'tooth', teeth: 'tooth', tongue: 'tongue', hand: 'hand', hands: 'hand', heart: 'heart',
+  fish: 'fish', bird: 'bird', horse: 'horse', dog: 'dog', cat: 'cat', pig: 'pig', cow: 'cow', rabbit: 'rabbit', tiger: 'tiger', monkey: 'monkey', elephant: 'elephant', snake: 'snake', mouse: 'mouse', 'insect': 'ladybug', worm: 'caterpillar', bug: 'ladybug', 'insects': 'ladybug'
+};
+const conceptByKey = key => { const k = ALIAS[key] || key; return byEn.get(k) || concepts.find(c => c.id === k && c.cp) || null; };
+// Một số chữ đơn nên gắn thẳng với hình (nghĩa tiếng Anh trong từ điển có thể mơ hồ).
+const CHAR_PIC = { 日: 'sun', 月: 'moon', 山: 'mountain', 水: 'drop', 火: 'fire', 木: 'tree', 口: 'mouth', 手: 'hand', 目: 'eye', 耳: 'ear', 足: 'foot', 女: 'woman', 子: 'baby', 犬: 'dog', 魚: 'fish', 鱼: 'fish', 鳥: 'bird', 鸟: 'bird', 馬: 'horse', 马: 'horse', 牛: 'cow', 雨: 'rain', 花: 'blossom', 車: 'car', 车: 'car', 門: 'door', 门: 'door', 本: 'book', 米: 'rice', 星: 'star', 雲: 'cloud', 云: 'cloud', 心: 'heart', 鼻: 'nose', 歯: 'tooth', 舌: 'tongue', 猫: 'cat', 犭: 'dog', 狗: 'dog', 鸡: 'chicken', 猪: 'pig', 书: 'book', 家: 'house', 校: 'school', 学: 'school', 红: 'red', 赤: 'red', 青: 'blue', 蓝: 'blue', 绿: 'green', 黄: 'yellow', 白: 'white', 黑: 'black', 电: 'lightning', 電: 'lightning', 山: 'mountain', 川: 'wave', 空: 'cloud', 林: 'tree', 森: 'pine', 虫: 'ladybug', 田: 'seedling', 草: 'seedling', 衣: 'tshirt', 見: 'eye', 见: 'eye', 食: 'rice', 飞: 'plane', 船: 'ship' };
+const lookupConcept = (text, char) => {
+  const forced = CHAR_PIC[char] && concepts.find(c => c.id === CHAR_PIC[char] && c.cp);
+  if (forced) return forced;
+  const tokens = String(text || '').toLowerCase().replace(/\([^)]*\)/g, '').split(/[;,\/]/).map(t => t.trim().replace(/^(?:to|a|an|the|my|our)\s+/, '')).filter(Boolean).slice(0, 2);
+  for (const token of tokens) { const c = conceptByKey(token) || conceptByKey(token.replace(/s$/, '')); if (c) return c; }
+  return null;
+};
+const picOf = (text, char, target) => { const c = lookupConcept(text, char); if (c) { target.e = c.cp; target.v = c.vi; } return target; };
 
 // ---------- từ ví dụ HSK ----------
 const wordsByLevel = {};
@@ -163,14 +181,13 @@ function writeLevel(level, items, graphics, extraData = {}) {
 writeLevel({ id: 'zh-basic', lang: 'zh', kind: 'strokes', title: 'Nét cơ bản', desc: 'Làm quen các nét ngang, sổ, phẩy, chấm, mác, hất, móc và quy tắc thứ tự nét.' },
   STROKES.map(s => ({ c: s.c, m: s.name, tip: s.tip })), zhGraphics);
 writeLevel({ id: 'zh-radical', lang: 'zh', kind: 'radicals', title: 'Bộ thủ thường gặp', desc: 'Những bộ thủ xuất hiện nhiều nhất, kèm âm Hán Việt, pinyin và ví dụ.' },
-  RADICALS.map(r => ({ c: r.c, hv: r.hv, p: r.py, m: r.vi, tip: r.note, a: copyAudio(r.c) })), zhGraphics);
+  RADICALS.map(r => picOf('', r.c, { c: r.c, hv: r.hv, p: r.py, m: r.vi, tip: r.note })), zhGraphics);
 for (let level = 1; level <= 6; level++) {
   const chars = [...zhDict.values()].filter(d => d.set?.includes('hsk' + level) && !d.set.some(s => /^hsk[1-6]$/.test(s) && s < 'hsk' + level))
     .map(d => ({ d, f: freqOf(d.pinyin?.[0]) })).sort((a, b) => b.f - a.f);
   const items = chars.map(({ d }) => {
     const examples = (wordsWith.get(d.character) || []).filter(w => w.h !== d.character).sort((a, b) => a.lv - b.lv || a.h.length - b.h.length).slice(0, 2);
-    const item = { c: d.character, p: stripFreq(d.pinyin?.[0] || ''), m: short(d.definition), r: d.radical, w: examples.map(w => ({ h: w.h, p: w.p, m: w.m, a: level <= 3 ? copyAudio(w.h) : null })) };
-    if (level <= 3) item.a = copyAudio(d.character);
+    const item = picOf(d.definition, d.character, { c: d.character, p: stripFreq(d.pinyin?.[0] || ''), m: short(d.definition), r: d.radical, w: examples.map(w => picOf(w.m, '', { h: w.h, p: w.p, m: w.m })) });
     return item;
   });
   writeLevel({ id: 'zh-hsk' + level, lang: 'zh', kind: 'hanzi', title: 'HSK ' + level, desc: ['Những chữ đầu tiên và thông dụng nhất.', 'Chữ thường dùng trong giao tiếp hằng ngày.', 'Chữ cho giao tiếp tự tin hơn.', 'Chữ cho bài đọc và hội thoại dài.', 'Chữ cho văn bản phổ thông.', 'Chữ nâng cao, ít gặp hơn.'][level - 1] }, items, zhGraphics);
@@ -187,13 +204,14 @@ writeLevel({ id: 'ja-katakana', lang: 'ja', kind: 'kana', title: 'Katakana (46 c
 writeLevel({ id: 'ja-kana-extra', lang: 'ja', kind: 'kana', title: 'Âm đục, bán đục, chữ nhỏ', desc: 'Hiragana có dấu (が, ぱ), chữ nhỏ (ゃ, っ) và katakana tương ứng.' },
   [...HIRAGANA_EXTRA.flatMap(r => Array.from(r)), ...HIRAGANA_EXTRA.flatMap(r => Array.from(r)).map(toKatakana)].map(c => kanaItem(c, c)), kanaGraphics);
 writeLevel({ id: 'ja-radical', lang: 'ja', kind: 'radicals', title: 'Bộ thủ thường gặp', desc: 'Các bộ thủ giúp đoán nghĩa và nhớ kanji.' },
-  RADICALS.filter(r => jaGraphics.has(r.c)).map(r => ({ c: r.c, hv: r.hv, p: r.py, m: r.vi, tip: r.note })), jaGraphics);
+  RADICALS.filter(r => jaGraphics.has(r.c)).map(r => picOf('', r.c, { c: r.c, hv: r.hv, p: r.py, m: r.vi, tip: r.note })), jaGraphics);
 for (let grade = 1; grade <= 6; grade++) {
   const chars = Object.entries(kyouiku).filter(([, d]) => d.grade === grade).sort((a, b) => (a[1].freq || 9999) - (b[1].freq || 9999));
   const items = chars.map(([c, d]) => {
     const dict = jaDict.get(c);
     const on = readings(d.readings_on), kun = readings(d.readings_kun);
-    return { c, m: short((d.meanings || []).filter(x => !/Radical \(no/.test(x)).slice(0, 2).join('; ') || dict?.definition), on, kun, r: dict?.radical, j: d.jlpt_new || null };
+    const meaning = (d.meanings || []).filter(x => !/Radical \(no/.test(x));
+    return picOf(meaning.join('; '), c, { c, m: short(meaning.slice(0, 2).join('; ') || dict?.definition), on, kun, r: dict?.radical, j: d.jlpt_new || null });
   });
   writeLevel({ id: 'ja-g' + grade, lang: 'ja', kind: 'kanji', title: 'Kanji lớp ' + grade, desc: ['80 kanji đầu tiên: số, thiên nhiên, cơ thể.', '160 kanji thông dụng của học sinh lớp 2.', '200 kanji lớp 3.', '200 kanji lớp 4.', '185 kanji lớp 5.', '181 kanji lớp 6.'][grade - 1] }, items, jaGraphics);
 }
@@ -202,5 +220,5 @@ fs.writeFileSync(path.join(OUT, 'index.json'), JSON.stringify(index));
 const aplDir = path.join(DB, 'animCJK-master/licenses/APL/english');
 fs.copyFileSync(fs.statSync(aplDir).isDirectory() ? path.join(aplDir, fs.readdirSync(aplDir)[0]) : aplDir, path.join(OUT, 'LICENSE-APL.txt'));
 for (const level of [...index.zh, ...index.ja]) console.log(level.id.padEnd(14), String(level.count).padStart(5), (fs.statSync(path.join(OUT, level.id + '.json')).size / 1024).toFixed(0) + ' KB');
-console.log('âm thanh:', audioStats.files, 'tệp', (audioStats.bytes / 1048576).toFixed(1) + ' MB');
+
 if (missing.length) console.log('thiếu nét chữ:', missing.join(' '));
