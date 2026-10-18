@@ -1,0 +1,43 @@
+/* credit: giasu.ai.vn */
+/* Trang chủ: banner game ngay sau hero và hero gọn trên điện thoại */
+
+.game-banner { position: relative; display: flex; align-items: center; flex-wrap: nowrap; gap: clamp(10px, 2.4vw, 22px); min-height: 0; margin: 0 auto; padding: 8px clamp(14px, 3vw, 28px) 14px; overflow: hidden; isolation: isolate; text-decoration: none; color: #2b2147; border-radius: 0; background: linear-gradient(180deg, #8fd8ff 0%, #d4f3ff 100%); box-shadow: none; font-family: "Baloo 2", ui-rounded, "Trebuchet MS", "Source Sans Pro", sans-serif; }
+.game-banner::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; z-index: -1; background: #8fdc7c; }
+.game-banner:hover .gb-go { background: #4fd16f; }
+.game-banner:focus-visible { outline: 4px solid #2b2147; outline-offset: -4px; }
+.gb-sky { position: relative; flex: none; width: 118px; height: 50px; }
+.gb-pet { position: absolute; bottom: -2px; width: 44px; height: auto; animation: pg-float 2.6s ease-in-out infinite; }
+.gb-pet-a { left: 0; } .gb-pet-b { left: 36px; bottom: 4px; animation-delay: -.9s; } .gb-pet-c { left: 72px; animation-delay: -1.7s; }
+.gb-star { position: absolute; height: auto; }
+.gb-star-a { left: 18px; top: -4px; width: 16px; } .gb-star-b { left: 92px; top: -2px; width: 14px; }
+.gb-rocket { display: none; }
+.gb-text { display: flex; flex: 1 1 auto; align-items: baseline; flex-wrap: wrap; gap: 0 12px; min-width: 0; }
+.gb-kicker { font-size: 12px; font-weight: 800; letter-spacing: .12em; color: #7c4dff; }
+.gb-text strong { font-size: clamp(20px, 3.6vw, 26px); line-height: 1.2; font-weight: 800; background: linear-gradient(90deg, #ff5c8a, #ff9800, #7c4dff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.gb-sub { font-size: 15px; font-weight: 600; color: #3d3463; }
+.gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 800; color: #fff; background: #43c463; border-radius: 999px; box-shadow: 0 3px 0 #2a9a47; white-space: nowrap; }
+@keyframes gb-fly { 0%, 100% { transform: translate(0, 0) rotate(0); } 50% { transform: translate(-10px, -8px) rotate(-6deg); } }
+@media (max-width: 900px) { .gb-sub { display: none; } }
+@media (max-width: 520px) {
+  .game-banner { gap: 8px; padding: 6px 12px 12px; }
+  .gb-sky { width: 82px; height: 42px; }
+  .gb-pet { width: 34px; } .gb-pet-b { left: 24px; } .gb-pet-c { left: 48px; }
+  .gb-star { display: none; }
+  .gb-kicker { display: none; }
+  .gb-text strong { font-size: 20px; }
+  .gb-go { padding: 5px 14px; font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) { .gb-pet { animation: none; } }
+@keyframes pg-float { 50% { transform: translateY(-10px); } }
+
+/* hero gọn trên điện thoại: bạn robot thu nhỏ nằm cạnh tiêu đề, bỏ các bong bóng trang trí */
+@media (max-width: 620px) {
+  body .hero.wrap { position: relative; display: block; min-height: 0; padding: 14px 16px 16px; }
+  body .hero h1 { margin: 8px 0 8px; font-size: clamp(30px, 9vw, 38px); line-height: 1.12; }
+  body .hero p { margin: 0 0 12px; font-size: 16px; line-height: 1.45; }
+  body .hero .hero-note { margin-top: 10px; }
+  body .hero .hero-visual { position: absolute; top: 34px; right: 14px; width: 74px; height: 74px; min-height: 0; margin: 0; }
+  body .hero .hero-visual > :not(.mascot) { display: none; }
+  body .hero .hero-visual .mascot { width: 74px; height: 74px; }
+  body .hero .hero-visual .mascot img { width: 100%; height: auto; }
+}
