@@ -55,8 +55,6 @@ Mời thầy cô và các em học sinh tải tại đây [SÁCH HƯỚNG DẪN 
 
 Về những điểm mới, tính năng ưu việt, nổi trội của máy CASIO fx 580VNX, mời thầy cô và các em xem trong video sau:
 
-https://www.youtube.com/watch?v=TYqS8uSQP30
-
 ### 3.2. Sách hướng dẫn sử dụng fx 570 VN Plus
 
 Mời thầy cô và các em học sinh tải tại đây [Hướng dẫn sử dụng máy tính CASIO fx-570VN Plus](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

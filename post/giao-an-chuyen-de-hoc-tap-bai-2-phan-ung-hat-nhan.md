@@ -60,11 +60,6 @@ grade: 10
 1. **Thiết bị:
 **–** Máy tính, máy chiếu, phiếu học tập
 
-**            2. Học liệu:**
-       –  Video về lý thuyết và bài tập phản ứng hạt nhân
-
-https://www.youtube.com/watch?v=p4necUxMJCI
-
 ### Iii. Tiến Trình Dạy Học
 | Tiết | Hoạt động | Phương pháp/Kỹ thuật dạy học | Phương pháp/Công cụ đánh giá |
 | --- | --- | --- | --- |

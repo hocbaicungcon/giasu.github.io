@@ -171,11 +171,3 @@ $$
 **Ví dụ 12.** Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a.$ Mặt bên $SAB$ là tam giác đều còn $SAD$ là tam giác vuông cân đỉnh $S.$ Gọi $I, J$ lần lượt là trung điểm của $AB$ và $CD.$ Tính các cạnh của tam giác $SIJ$ và chứng minh rằng $SI$ vuông góc với $(SCD), SJ$ vuông góc với $(SAB).$ Gọi $H$ là hình chiếu vuông góc của $S$ trên $IJ.$ Chứng minh rằng $SH$ vuông góc $AC.$ Gọi $M$ là một điểm thuộc đường thẳng $CD$ sao cho đường thẳng $BM$ vuông góc với $SA.$ Tính độ dài đoạn $AM$ theo $a.$
 
 **Đáp số.**  $SI=\frac{a}{2},\frac{a\sqrt{3}}{2}$; $\frac{a\sqrt{5}}{2}.$
-
-## 3. Video bài giảng đường thẳng vuông góc với mặt phẳng
-
-https://www.youtube.com/watch?v=aE-Ow2I5b7Q
-
-https://www.youtube.com/watch?v=dKQiFn55Yzs
-
-https://www.youtube.com/watch?v=LEcaaqpsCg4

@@ -31,8 +31,6 @@ Bài viết này, GIA SƯ THÔNG MINH xin giới thiệu cách tìm kiếm và x
 
 - Bạn có thể dùng các ngón tay để xoay, phóng to thu nhỏ các con vật tùy thích, lắng nghe tiếng kêu của các con vật ảo 3D này.
 
-https://www.youtube.com/watch?v=9rW4wZDkd94
-
 ## 2. Danh sách các con vật 3D (3D animals)
 
 Dưới đây là **danh sách các con vật** có thể xem dưới dạng 3D, danh sách các loài động vật này chắc chắn sẽ được Google bổ sung thêm trong thời gian tới.

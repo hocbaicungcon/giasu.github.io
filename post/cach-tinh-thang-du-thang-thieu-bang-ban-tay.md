@@ -27,10 +27,6 @@ Một năm sẽ có 7 tháng có 31 ngày là: Tháng 1, tháng 3, tháng 5, th�
 
 - Riêng tháng 2 tất cả các năm chỉ có 28 hoặc 29 ngày.
 
-Năm nào mà tháng 2 có 29 ngày được gọi là nằm nhuận, cách tính năm nhuận, các em có thể xem trong video sau:
-
-https://www.youtube.com/watch?v=i-8Q3LksZjg
-
 ←[KHÉO TÁN](/bai-viet/kheo-tan.html)
 [15 quy định mới của Luật Cư trú 2020](/bai-viet/15-quy-dinh-moi-cua-luat-cu-tru-2020.html)→
 

@@ -20,8 +20,6 @@ Xem thêm: [Đề thi học kì 1 Toán 10 Xuân Trường B năm 2020](/bai-vi
 
 ## Phương pháp xác định hệ số hàm số bậc 2 bằng máy tính
 
-https://www.youtube.com/watch?v=q_sXAtPfm3M&feature=emb_logo
-
 Phương pháp nhanh lập phương trình parabol đi qua ba điểm bằng máy tính CASIO fx 580 VNX hoặc máy tính VINACAL
 
 - Toán 10 lập phương trình hàm số bậc hai biết parabol đi qua ba điem có tọa độ cho trước. (Tìm phương trình parabol đi qua 3 điểm bằng máy tính cầm tay CASIO, VINACAL)

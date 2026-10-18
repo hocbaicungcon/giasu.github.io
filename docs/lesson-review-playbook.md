@@ -38,6 +38,11 @@ Xem thêm `docs/LESSON_GUIDELINES.md`, mục "Công thức dài". Điểm chính
 4. Với widget: nạp bài, bấm mọi nút, kéo mọi điểm, đặt thanh trượt ở hai đầu; kiểm tra lỗi script, `NaN`, nhãn ra ngoài khung (so `getBoundingClientRect` của chữ với của `<svg>`, không dùng `getBBox` khi chữ nằm trong nhóm `transform`).
 5. Công cụ kiểm tra bằng trình duyệt là tệp tạm trong `dist/_*.js` (bị gitignore); viết lại khi cần, không commit.
 
+## Video YouTube
+- Nhúng bằng khối ```` ```youtube ```` (xem README). Link YouTube dán trơ trong bài chỉ là liên kết, không phải khung nhúng.
+- `npm run check:videos` (cần mạng) hỏi oEmbed của YouTube cho mọi video được nhắc trong `post/`: 404 = đã xóa hoặc riêng tư, 401/403 = cấm nhúng. Oct 2026: 15/21 video đã chết; các mục chỉ chứa video chết (cả tiêu đề mục) được xóa cùng lời dẫn "xem trong video sau", đánh lại số mục khi cần. Video 403 nằm trong liên kết của bảng được giữ.
+- Chạy lại định kỳ vì video có thể bị gỡ bất kỳ lúc nào.
+
 ## Việc còn lại (đã biết)
 - Công thức rộng không ngắt được (xem trên); công thức inline vẫn cuộn trong khung.
 - Màu nhấn do tác giả chọn kém tương phản trên nền sáng ở một số widget (giao diện sáng cũng vậy).

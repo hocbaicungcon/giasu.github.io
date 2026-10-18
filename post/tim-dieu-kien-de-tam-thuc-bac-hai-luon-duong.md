@@ -224,9 +224,3 @@ $$
   $$
 
 **Kết luận:** Vậy các số thực $m\ge 2$ thỏa mãn yêu cầu bài toán.
-
-## 3. Bài giảng về bất phương trình bậc 2
-
-Chi tiết về các dạng toán trên, mời các bạn xem trong video sau:
-
-https://youtu.be/7Kl3U3qa5HY

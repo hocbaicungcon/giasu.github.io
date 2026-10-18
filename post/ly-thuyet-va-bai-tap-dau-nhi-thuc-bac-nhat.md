@@ -222,10 +222,6 @@ Suy ra, tập nghiệm của bất phương trình đã cho là $S=\left(-4;-2\r
 
 - $\frac{30}{x+1}-\frac{24}{x+2}+\frac{3}{x+3}+1 >0$
 
-Sau khi đã học cả dấu tam thức bậc hai, các em có thể tham khảo video sau:
-
-[https://www.youtube.com/watch?v=rKaFF_F1oAc](https://www.youtube.com/watch?v=rKaFF_F1oAc)
-
 ### 3.3. Sử dụng dấu nhị thức bậc nhất giải bất phương trình chứa dấu giá trị tuyệt đối
 
 Về phương trình chứa dấu giá trị tuyệt đối xin mời các bạn xem tại đây [Phương trình chứa trị tuyệt đối](/bai-viet/phuong-trinh-chua-tri-tuyet-doi.html)

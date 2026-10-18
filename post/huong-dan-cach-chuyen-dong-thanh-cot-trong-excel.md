@@ -35,11 +35,7 @@ Xem thêm [Sửa lỗi font tiếng Việt file CSV Google Microsoft Forms](/ba
 
 ![chuyen dong thanh cot trong excel 2003](assets/images/huong-dan-cach-chuyen-dong-thanh-cot-trong-excel-chuyen-dong-thanh-cot-trong-excel-2003.png)
 
-## 2. Hướng dẫn chi tiết cách chuyển dòng thành cột trong Excel
-
-https://youtu.be/6tJkmf27L1o
-
-## 3. Chuyển dòng thành cột bằng hàm TRANSPOSE()
+## 2. Chuyển dòng thành cột bằng hàm TRANSPOSE()
 
 1. Đếm các hàng và cột của bảng (vùng dữ liệu) mà bạn muốn chuyển đổi. Giả sử bảng của chúng ta là **6 cột** và **9 hàng**.
 

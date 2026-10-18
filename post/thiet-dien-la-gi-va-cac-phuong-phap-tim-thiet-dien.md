@@ -33,10 +33,6 @@ Mời các em học sinh lớp 11 xem thêm:
 
 ![thiet dien la gi cách tim thiet dien](assets/images/thiet-dien-la-gi-va-cac-phuong-phap-tim-thiet-dien-thiet-dien-la-gi-cách-tim-thiet-dien.png)
 
-Giải đáp chi tiết cho câu hỏi thế nào là thiết diện, mời các em xem trong video sau:
-
-https://www.youtube.com/watch?v=MNIP5U5AfGs
-
 ## 2. Cách để xác định thiết diện làm như thế nào?
 
 Để xác định thiết diện của một hình chóp khi cắt bởi một mặt phẳng, ta có hai **phương pháp tìm thiết diện** chính là **phương pháp giao tuyến gốc** và **phương pháp phép chiếu xuyên tâm**.
@@ -65,8 +61,6 @@ Chúng ta cùng thực hành bằng một bài toán sau:
 
 **Bài tập 1.** Cho hình chóp S.ABC có M, N lần lượt là trung điểm của SA, SB. P là điểm trên cạnh SC sao cho SP lớn hơn PC (tức là MP không song song với AC). Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng (MNP).
 
-https://www.youtube.com/watch?v=y5ljnpx5gc8
-
 Các bài toán liên quan thiết diện thường là: Tính diện tích thiết diện; tìm vị trí mặt phẳng (P) để thiết diện có diện tích lớn nhất, nhỏ nhất; thiết diện chia khối đa diện thành 2 phần có tỉ số cho trước.(hoặc tìm tỉ số giữa 2 phần).
 
 ## 3. Một số phương pháp tìm thiết diện nhanh nhất
@@ -82,10 +76,6 @@ Mặt phẳng (P) cho dạng tường minh: Ba điểm không thẳng hàng, hai
 - Lặp lại quá trình này với các mặt khác của T cho tới khi tìm được thiết diện.
 
 **Bài tập 2.** Cho hình chóp S.ABCD có đáy là hình vuông (hoặc hình bình hành). Gọi M, N,P lần lượt là trung điểm của BC,CD,SA. Xác định thiết diện của hình chóp khi cắt bởi mặt phẳng (MNP).
-
-https://www.youtube.com/watch?v=Aag4lMyGRqI
-
-### Các ví dụ về phương pháp giao tuyến gốc xin mời xem tại đây
 
 ### Phương pháp phép chiếu xuyên tâm
 
