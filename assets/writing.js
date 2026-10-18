@@ -117,51 +117,69 @@ function init(app) {
     let current = null, raf = 0;
 
     const toLocal = event => { const r = (svg || board).getBoundingClientRect(); return {x: event.clientX - r.left, y: event.clientY - r.top, t: performance.now()}; };
-    function addPoint(stroke, p) {
+    const tmp = document.createElement('canvas');                // mỗi nét vẽ lên canvas phụ rồi mới ghép, để độ trong suốt đều
+    tmp.width = tmp.height = canvas.width;
+    const tctx = tmp.getContext('2d');
+    tctx.scale(dpr, dpr);
+
+    function addPoint(stroke, raw) {
       const last = stroke.pts[stroke.pts.length - 1];
-      if (last) {
-        const dx = p.x - last.x, dy = p.y - last.y, dist = Math.hypot(dx, dy);
-        if (dist < 1.2) return;
-        const speed = dist / Math.max(1, p.t - last.t);           // px/ms
-        const target = base * Math.max(0.45, Math.min(1.15, 1.2 - speed * 0.55));
-        p.w = last.w * 0.72 + target * 0.28;                      // mượt dần
-      } else p.w = base * 0.55;
-      stroke.pts.push(p);
+      if (!last) { stroke.pts.push({x: raw.x, y: raw.y, t: raw.t, w: base * 0.6}); stroke.raw = raw; return; }
+      // làm mượt vị trí (loại bỏ rung tay), bỏ điểm quá gần để đường không bị răng cưa
+      const sx = last.x + (raw.x - last.x) * 0.38, sy = last.y + (raw.y - last.y) * 0.38;
+      const dist = Math.hypot(sx - last.x, sy - last.y);
+      if (dist < 2) return;
+      const speed = Math.hypot(raw.x - stroke.raw.x, raw.y - stroke.raw.y) / Math.max(1, raw.t - stroke.raw.t);   // px/ms
+      stroke.raw = raw;
+      const target = base * Math.max(0.5, Math.min(1.1, 1.15 - speed * 0.5));
+      const step = Math.max(-base * 0.05, Math.min(base * 0.05, target - last.w));                       // bề ngang đổi từ từ
+      stroke.pts.push({x: sx, y: sy, t: raw.t, w: last.w + step});
     }
-    function outline(pts, taperEnd) {
-      const n = pts.length;
-      const widths = pts.map((p, i) => {
-        let w = p.w;
-        if (i < 3) w *= [0.55, 0.8, 0.95][i];                      // đầu nét mềm
-        if (taperEnd) { const k = n - 1 - i; if (k < 5) w *= [0.25, 0.4, 0.6, 0.8, 0.92][k]; }   // cuối nét thon
-        return Math.max(1.2, w);
-      });
-      const left = [], right = [];
-      for (let i = 0; i < n; i++) {
-        const a = pts[Math.max(0, i - 1)], b = pts[Math.min(n - 1, i + 1)];
-        let dx = b.x - a.x, dy = b.y - a.y; const len = Math.hypot(dx, dy) || 1;
-        dx /= len; dy /= len;
-        left.push([pts[i].x - dy * widths[i] / 2, pts[i].y + dx * widths[i] / 2]);
-        right.push([pts[i].x + dy * widths[i] / 2, pts[i].y - dx * widths[i] / 2]);
+    // đường cong Catmull-Rom đi qua các điểm đã làm mượt; mỗi mẫu có bề ngang nội suy
+    function centerline(pts) {
+      if (pts.length < 3) return pts.map(p => ({...p}));
+      const out = [];
+      for (let i = 0; i < pts.length - 1; i++) {
+        const p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
+        for (let k = 0; k < 6; k++) {
+          const t = k / 6, t2 = t * t, t3 = t2 * t;
+          const f = (a, b, c, d) => 0.5 * ((2 * b) + (-a + c) * t + (2 * a - 5 * b + 4 * c - d) * t2 + (-a + 3 * b - 3 * c + d) * t3);
+          out.push({x: f(p0.x, p1.x, p2.x, p3.x), y: f(p0.y, p1.y, p2.y, p3.y), w: p1.w + (p2.w - p1.w) * t});
+        }
       }
-      return {left, right, widths};
+      out.push({...pts[pts.length - 1]});
+      return out;
     }
     function paint(stroke, alpha) {
       const {pts} = stroke;
       if (!pts.length) return;
+      tctx.clearRect(0, 0, size, size);
+      tctx.fillStyle = stroke.color;
+      const line = centerline(pts);
+      if (line.length < 2) { tctx.beginPath(); tctx.arc(line[0].x, line[0].y, base * 0.45, 0, Math.PI * 2); tctx.fill(); }
+      else {
+        const lens = [0];
+        for (let i = 1; i < line.length; i++) lens.push(lens[i - 1] + Math.hypot(line[i].x - line[i - 1].x, line[i].y - line[i - 1].y));
+        const total = lens[lens.length - 1], ramp = Math.min(base * 1.1, total * 0.35), tail = stroke.ended ? Math.min(base * 2.4, total * 0.5) : 0;
+        const radiusAt = (i, s) => {
+          let w = line[i].w;
+          w *= 0.5 + 0.5 * Math.min(1, s / ramp);                                  // đầu nét mềm
+          if (tail) w *= 0.2 + 0.8 * Math.min(1, (total - s) / tail) ** 0.8;       // cuối nét thon dần như nhấc bút
+          return Math.max(0.9, w / 2);
+        };
+        for (let i = 1; i < line.length; i++) {                                    // in dấu mực tròn dọc theo đường, mật độ dày nên mép trơn
+          const a = line[i - 1], b = line[i], len = lens[i] - lens[i - 1];
+          const n = Math.max(1, Math.ceil(len / 0.9));
+          for (let k = 0; k < n; k++) {
+            const t = k / n, x = a.x + (b.x - a.x) * t, y = a.y + (b.y - a.y) * t, s = lens[i - 1] + len * t;
+            tctx.beginPath(); tctx.arc(x, y, radiusAt(i, s), 0, Math.PI * 2); tctx.fill();
+          }
+        }
+        tctx.beginPath(); tctx.arc(line[line.length - 1].x, line[line.length - 1].y, radiusAt(line.length - 1, total), 0, Math.PI * 2); tctx.fill();
+      }
       ctx.save();
       ctx.globalAlpha = alpha;
-      ctx.fillStyle = stroke.color;
-      ctx.shadowColor = stroke.color; ctx.shadowBlur = 1.6;       // mép hơi nhoè như mực
-      if (pts.length < 3) { ctx.beginPath(); ctx.arc(pts[0].x, pts[0].y, base * 0.45, 0, Math.PI * 2); ctx.fill(); ctx.restore(); return; }
-      const {left, right, widths} = outline(pts, stroke.ended);
-      ctx.beginPath();
-      ctx.moveTo(left[0][0], left[0][1]);
-      for (let i = 1; i < left.length; i++) ctx.lineTo(left[i][0], left[i][1]);
-      for (let i = right.length - 1; i >= 0; i--) ctx.lineTo(right[i][0], right[i][1]);
-      ctx.closePath(); ctx.fill();
-      ctx.beginPath(); ctx.arc(pts[0].x, pts[0].y, widths[0] / 2, 0, Math.PI * 2); ctx.fill();               // đầu tròn
-      const e = pts[pts.length - 1]; ctx.beginPath(); ctx.arc(e.x, e.y, widths[widths.length - 1] / 2, 0, Math.PI * 2); ctx.fill();
+      ctx.drawImage(tmp, 0, 0, size, size);
       ctx.restore();
     }
     function frame() {
@@ -182,7 +200,7 @@ function init(app) {
     }
     const kick = () => { if (!raf) raf = requestAnimationFrame(frame); };
 
-    const down = event => { if (event.button > 0) return; current = {pts: [], ended: false, endedAt: 0, result: null, color: '#1d1a2b'}; strokes.push(current); addPoint(current, toLocal(event)); kick(); };
+    const down = event => { if (event.button > 0) return; current = {pts: [], raw: null, ended: false, endedAt: 0, result: null, color: '#1d1a2b'}; strokes.push(current); addPoint(current, toLocal(event)); kick(); };
     const move = event => { if (!current) return; const list = event.getCoalescedEvents?.(); for (const e of (list && list.length ? list : [event])) addPoint(current, toLocal(e)); kick(); };
     const up = () => { if (!current) return; current.ended = true; current.endedAt = performance.now(); current = null; kick(); };
     board.addEventListener('pointerdown', down);
