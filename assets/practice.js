@@ -84,7 +84,7 @@ function init(app) {
     if (p.get('l') === '1') cfg.level = 1;
     if (SIZE_LABEL[p.get('n')]) cfg.size = p.get('n');
     const seed = Number(p.get('seed')); if (Number.isInteger(seed) && seed > 0) cfg.seed = seed;
-    cfg.mode = p.get('m') === 'game' ? 'game' : 'sheet';
+    cfg.mode = p.get('m') === 'game' || p.get('m') === 'sheet' ? p.get('m') : (app.dataset.defaultMode === 'game' ? 'game' : 'sheet');
     if (p.get('t')) cfg.topics = p.get('t').split(',').filter(Boolean);
   };
 
