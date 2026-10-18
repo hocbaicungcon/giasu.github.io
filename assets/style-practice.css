@@ -83,7 +83,7 @@
 .pg-confetti { position: absolute; inset: 0; z-index: 5; overflow: hidden; pointer-events: none; }
 .pg-piece { position: absolute; top: -20px; left: var(--x); width: 10px; height: 16px; border-radius: 3px; animation: pg-fall var(--d) ease-in forwards; }
 img.pg-piece { width: 24px; height: 24px; background: none; }
-.pg-game.pg-overlay { position: fixed; inset: 0; z-index: 100000; display: flex; flex-direction: column; margin: 0; padding: clamp(10px, 3vw, 24px); border-radius: 0; overflow: auto; }
+.pg-game.pg-overlay { position: fixed; top: var(--pg-vvt, 0px); right: 0; bottom: auto; left: 0; height: var(--pg-vvh, 100dvh); z-index: 100000; display: flex; flex-direction: column; margin: 0; padding: clamp(10px, 3vw, 24px); border-radius: 0; overflow: auto; }
 body.pg-game-open { overflow: hidden; }
 body.pg-game-open :is(.go-top, .share-toggle, .site-share) { display: none !important; }
 
@@ -271,7 +271,7 @@ body.pg-game-open :is(.go-top, .share-toggle, .site-share) { display: none !impo
 .hub-card h2 { margin: 0; font-size: 21px; }
 .hub-card p { margin: 0; color: var(--muted, #707b6b); line-height: 1.5; }
 .hub-go { margin-top: 6px; font-weight: 800; color: #438557; }
-.hub-sheet { background: linear-gradient(160deg, #f1f8e8, #fffefb); } .hub-game { background: linear-gradient(160deg, #e3f4ff, #fffefb); }
+.hub-sheet { background: linear-gradient(160deg, #f1f8e8, #fffefb); } .hub-game { background: linear-gradient(160deg, #fff6d6, #fffefb); }
 .hub-writing { background: linear-gradient(160deg, #fff1dc, #fffefb); } .hub-exam { background: linear-gradient(160deg, #f6eee0, #fffefb); }
 
 @keyframes pg-spin { to { transform: rotate(360deg); } }
@@ -368,3 +368,15 @@ body.pg-game-open :is(.go-top, .share-toggle, .site-share) { display: none !impo
   .ps-key p { margin: 0 0 3mm; }
   .ps-foot { margin-top: 8mm; text-align: center; font-size: 9pt; color: #555; }
 }
+
+/* Bàn phím ảo đang mở: bỏ phần trang trí, dồn câu hỏi và nút trả lời lên trên để không bị che */
+.pg-game.pg-kbd { padding-top: 8px; padding-bottom: 8px; }
+.pg-game.pg-kbd .pg-stage { justify-content: flex-start; gap: 8px; padding-top: 6px; }
+.pg-game.pg-kbd .pg-scene, .pg-game.pg-kbd .pg-mascot { display: none; }
+.pg-game.pg-kbd .pg-buddy { min-height: 0; }
+.pg-game.pg-kbd .pg-bubble { max-width: 100%; min-height: 36px; padding: 4px 12px; font-size: 15px; }
+.pg-game.pg-kbd .pg-bubble::after { display: none; }
+.pg-game.pg-kbd .pg-timer { margin: 8px 0 2px; height: 22px; }
+.pg-game.pg-kbd .pg-game-instr { font-size: 15px; padding: 3px 14px; }
+.practice-page .pg-game.pg-kbd .pg-game-card { min-height: 0; padding: 10px 12px; font-size: clamp(22px, 7vw, 32px); line-height: 1.7; border-width: 4px; }
+.pg-game.pg-kbd .pg-big { padding: 8px 26px; font-size: 18px; }

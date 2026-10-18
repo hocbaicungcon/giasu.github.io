@@ -100,15 +100,16 @@ function init(app) {
     renderSheet();
   }
 
-  const blankHtml = (blank, label) => {
+  const NUMERIC = /^-?\d+(?:[.,]\d+)?$/;
+  const blankHtml = (blank, label, expected = '') => {
     if (blank.kind === 'choice') return `<select class="pg-input pg-choice" aria-label="${label}"><option value="">…</option>${blank.options.map(o => `<option>${o}</option>`).join('')}</select>`;
-    return `<input class="pg-input${blank.wide ? ' pg-wide' : ''}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" inputmode="text" aria-label="${label}">`;
+    return `<input class="pg-input${blank.wide ? ' pg-wide' : ''}" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" inputmode="${NUMERIC.test(String(expected).replace(/\s+/g, '')) ? 'decimal' : 'text'}" enterkeyhint="done" aria-label="${label}">`;
   };
 
   function itemHtml(item, number) {
     let k = 0;
-    let html = item.parts.map(p => p.html != null ? p.html : blankHtml(p.blank, `Câu ${number}, ô ${++k}`)).join('');
-    if (item.extra) html += `<div class="pg-answerrow"><span class="pg-extra">${(item.extra.prefix || 'Đáp số:').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')}</span>${blankHtml({kind: 'text'}, `Câu ${number}, đáp số`)}</div>`;
+    let html = item.parts.map(p => p.html != null ? p.html : blankHtml(p.blank, `Câu ${number}, ô ${++k}`, item.expected?.[k - 1])).join('');
+    if (item.extra) html += `<div class="pg-answerrow"><span class="pg-extra">${(item.extra.prefix || 'Đáp số:').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')}</span>${blankHtml({kind: 'text'}, `Câu ${number}, đáp số`, item.expected?.[0])}</div>`;
     if (item.mode === 'choice') html += `<div class="pg-choices" role="radiogroup">${item.options.map((o, i) => `<label class="pg-ch"><input type="radio" name="ch-${number}-${Math.random().toString(36).slice(2, 6)}" value="${i}"><span><b>${'ABCD'[i]}.</b> ${o}</span></label>`).join('')}</div>`;
     if (item.mode === 'self') html += '<div class="pg-self"><input class="pg-note" type="text" placeholder="Ghi kết quả của em…" autocomplete="off" aria-label="Kết quả của em"> <button type="button" class="pg-reveal">Xem đáp án</button></div>';
     return html;
@@ -308,11 +309,23 @@ function init(app) {
   const gameLevel = () => gameEl.querySelector('[name=gamelevel]:checked').value;
   const readBest = () => { try { return Number(localStorage.getItem(bestKey())) || 0; } catch { return 0; } };
   const writeBest = score => { try { localStorage.setItem(bestKey(), String(score)); } catch { /* bỏ qua */ } };
+  // Bàn phím ảo che màn hình: đo vùng nhìn thấy (visualViewport) để lớp phủ game chỉ nằm trong phần chưa bị che, và gọn lại khi bàn phím mở.
+  const vv = window.visualViewport;
+  function fitViewport() {
+    const root = document.documentElement.style;
+    if (!vv || !gameEl.classList.contains('pg-overlay')) { root.removeProperty('--pg-vvh'); root.removeProperty('--pg-vvt'); gameEl.classList.remove('pg-kbd'); return; }
+    root.setProperty('--pg-vvh', vv.height + 'px');
+    root.setProperty('--pg-vvt', vv.offsetTop + 'px');
+    gameEl.classList.toggle('pg-kbd', vv.height < window.innerHeight * 0.78);
+  }
+  vv?.addEventListener('resize', fitViewport);
+  vv?.addEventListener('scroll', fitViewport);
   const showPanel = name => {
     for (const part of ['start', 'play', 'end']) g(`[data-game-${part}]`).hidden = part !== name;
     const overlay = name !== 'start';
     gameEl.classList.toggle('pg-overlay', overlay);
     document.body.classList.toggle('pg-game-open', overlay);
+    fitViewport();
     if (!overlay) clearTimeout(game.advance);
   };
   const shuffle = list => { const a = [...list]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -517,8 +530,8 @@ function init(app) {
     let k = 0;
     const tiles = q.kind === 'tiles';
     if (q.kind === 'match') setupMatch(q);
-    else card.innerHTML = q.parts.map(p => p.html != null ? p.html : tiles ? '' : mc ? '<span class="pg-gap">?</span>' : blankHtml(p.blank, `Ô ${++k}`)).join('')
-      + (q.extra ? `<div class="pg-answerrow"><span class="pg-extra">${(q.extra.prefix || '').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')}</span>${mc ? '<span class="pg-gap">?</span>' : blankHtml({kind: 'text'}, 'Đáp số')}</div>` : '');
+    else card.innerHTML = q.parts.map(p => p.html != null ? p.html : tiles ? '' : mc ? '<span class="pg-gap">?</span>' : blankHtml(p.blank, `Ô ${++k}`, q.expected?.[k - 1])).join('')
+      + (q.extra ? `<div class="pg-answerrow"><span class="pg-extra">${(q.extra.prefix || '').replace(/^([A-Za-z])( =)/, '<i>$1</i>$2')}</span>${mc ? '<span class="pg-gap">?</span>' : blankHtml({kind: 'text'}, 'Đáp số', q.expected?.[0])}</div>` : '');
     card.dataset.state = '';
     if (tiles) card.querySelectorAll('.pg-tile').forEach(t => t.remove());          // thẻ đề bài trùng với thẻ để xếp
     card.hidden = tiles && !card.textContent.trim() && !card.querySelector('img');
