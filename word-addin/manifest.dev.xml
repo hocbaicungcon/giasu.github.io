@@ -198,5 +198,184 @@
         <bt:String id="Desc_calc" DefaultValue="Rút gọn, đạo hàm, tích phân, giới hạn, giải phương trình bằng SymPy; chèn kết quả thành công thức."/>
       </bt:LongStrings>
     </Resources>
+  
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.1">
+        <bt:Set Name="SharedRuntime"/>
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="Document">
+        <Runtimes>
+          <Runtime resid="Url" lifetime="long"/>
+        </Runtimes>
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="Title"/>
+            <Description resid="Desc"/>
+            <LearnMoreUrl resid="Url"/>
+          </GetStarted>
+          <FunctionFile resid="Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="TexCraftGroup">
+                <Label resid="Group"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_eq">
+                  <Label resid="Label_eq"/>
+                  <Supertip>
+                    <Title resid="Label_eq"/>
+                    <Description resid="Desc_eq"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_eq"/>
+                    <bt:Image size="32" resid="Icon32_eq"/>
+                    <bt:Image size="80" resid="Icon80_eq"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_eq</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_editor">
+                  <Label resid="Label_editor"/>
+                  <Supertip>
+                    <Title resid="Label_editor"/>
+                    <Description resid="Desc_editor"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_editor"/>
+                    <bt:Image size="32" resid="Icon32_editor"/>
+                    <bt:Image size="80" resid="Icon80_editor"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_editor</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_exam">
+                  <Label resid="Label_exam"/>
+                  <Supertip>
+                    <Title resid="Label_exam"/>
+                    <Description resid="Desc_exam"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_exam"/>
+                    <bt:Image size="32" resid="Icon32_exam"/>
+                    <bt:Image size="80" resid="Icon80_exam"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_exam</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_about">
+                  <Label resid="Label_about"/>
+                  <Supertip>
+                    <Title resid="Label_about"/>
+                    <Description resid="Desc_about"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_about"/>
+                    <bt:Image size="32" resid="Icon32_about"/>
+                    <bt:Image size="80" resid="Icon80_about"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_about</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_figures">
+                  <Label resid="Label_figures"/>
+                  <Supertip>
+                    <Title resid="Label_figures"/>
+                    <Description resid="Desc_figures"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_figures"/>
+                    <bt:Image size="32" resid="Icon32_figures"/>
+                    <bt:Image size="80" resid="Icon80_figures"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_figures</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_calc">
+                  <Label resid="Label_calc"/>
+                  <Supertip>
+                    <Title resid="Label_calc"/>
+                    <Description resid="Desc_calc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_calc"/>
+                    <bt:Image size="32" resid="Icon32_calc"/>
+                    <bt:Image size="80" resid="Icon80_calc"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_calc</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon16" DefaultValue="https://localhost:3000/taskpane/icon-16.png"/>
+        <bt:Image id="Icon32" DefaultValue="https://localhost:3000/taskpane/icon-32.png"/>
+        <bt:Image id="Icon80" DefaultValue="https://localhost:3000/taskpane/icon-80.png"/>
+        <bt:Image id="Icon16_eq" DefaultValue="https://localhost:3000/taskpane/icon-eq-v2-16.png"/>
+        <bt:Image id="Icon32_eq" DefaultValue="https://localhost:3000/taskpane/icon-eq-v2-32.png"/>
+        <bt:Image id="Icon80_eq" DefaultValue="https://localhost:3000/taskpane/icon-eq-v2-80.png"/>
+        <bt:Image id="Icon16_editor" DefaultValue="https://localhost:3000/taskpane/icon-edit-v2-16.png"/>
+        <bt:Image id="Icon32_editor" DefaultValue="https://localhost:3000/taskpane/icon-edit-v2-32.png"/>
+        <bt:Image id="Icon80_editor" DefaultValue="https://localhost:3000/taskpane/icon-edit-v2-80.png"/>
+        <bt:Image id="Icon16_exam" DefaultValue="https://localhost:3000/taskpane/icon-exam-v2-16.png"/>
+        <bt:Image id="Icon32_exam" DefaultValue="https://localhost:3000/taskpane/icon-exam-v2-32.png"/>
+        <bt:Image id="Icon80_exam" DefaultValue="https://localhost:3000/taskpane/icon-exam-v2-80.png"/>
+        <bt:Image id="Icon16_about" DefaultValue="https://localhost:3000/taskpane/icon-about-v2-16.png"/>
+        <bt:Image id="Icon32_about" DefaultValue="https://localhost:3000/taskpane/icon-about-v2-32.png"/>
+        <bt:Image id="Icon80_about" DefaultValue="https://localhost:3000/taskpane/icon-about-v2-80.png"/>
+        <bt:Image id="Icon16_figures" DefaultValue="https://localhost:3000/taskpane/icon-fig-v2-16.png"/>
+        <bt:Image id="Icon32_figures" DefaultValue="https://localhost:3000/taskpane/icon-fig-v2-32.png"/>
+        <bt:Image id="Icon80_figures" DefaultValue="https://localhost:3000/taskpane/icon-fig-v2-80.png"/>
+        <bt:Image id="Icon16_calc" DefaultValue="https://localhost:3000/taskpane/icon-calc-v2-16.png"/>
+        <bt:Image id="Icon32_calc" DefaultValue="https://localhost:3000/taskpane/icon-calc-v2-32.png"/>
+        <bt:Image id="Icon80_calc" DefaultValue="https://localhost:3000/taskpane/icon-calc-v2-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Url" DefaultValue="https://localhost:3000/taskpane/taskpane.html"/>
+        <bt:Url id="Url_eq" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=eq"/>
+        <bt:Url id="Url_editor" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=editor"/>
+        <bt:Url id="Url_exam" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=exam"/>
+        <bt:Url id="Url_about" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=about"/>
+        <bt:Url id="Url_figures" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=figures"/>
+        <bt:Url id="Url_calc" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=calc"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
+        <bt:String id="Group" DefaultValue="TexCraft"/>
+        <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
+        <bt:String id="Label_eq" DefaultValue="Công thức"/>
+        <bt:String id="Label_editor" DefaultValue="Soạn thảo"/>
+        <bt:String id="Label_exam" DefaultValue="Đề thi"/>
+        <bt:String id="Label_about" DefaultValue="Giới thiệu"/>
+        <bt:String id="Label_figures" DefaultValue="Hình vẽ"/>
+        <bt:String id="Label_calc" DefaultValue="Tính toán"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
+        <bt:String id="Desc_eq" DefaultValue="Quét tài liệu, chuyển đổi công thức giữa MathType, công thức Word và LaTeX."/>
+        <bt:String id="Desc_editor" DefaultValue="Soạn hoặc sửa công thức bằng LaTeX có xem trước, ghi vào Word hoặc MathType."/>
+        <bt:String id="Desc_exam" DefaultValue="Chuẩn hóa câu hỏi, trộn đề, bảng đáp án Excel và bài trình chiếu PPTX."/>
+        <bt:String id="Desc_about" DefaultValue="Thông tin tác giả, website và ủng hộ."/>
+        <bt:String id="Desc_figures" DefaultValue="Vẽ bảng biến thiên, đồ thị hàm số, miền nghiệm và hình học để chèn vào Word (hình sửa được)."/>
+        <bt:String id="Desc_calc" DefaultValue="Rút gọn, đạo hàm, tích phân, giới hạn, giải phương trình bằng SymPy; chèn kết quả thành công thức."/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
   </VersionOverrides>
 </OfficeApp>

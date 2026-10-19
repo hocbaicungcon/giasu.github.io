@@ -38,6 +38,9 @@ function measure(ch, fs, italic) {
   return approxWidth(ch, italic) * fs;
 }
 
+/** Advance width of one character (same measure the layout used), for the EMF picture. */
+export const charAdvance = (ch, fs, italic) => measure(ch, fs, italic);
+
 // A box: {w, a, d, draw(x, y) -> svg string} where y is the baseline.
 const empty = () => ({ w: 0, a: 0, d: 0, draw: () => '' });
 function hbox(parts) {

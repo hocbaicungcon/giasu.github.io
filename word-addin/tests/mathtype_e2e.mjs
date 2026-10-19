@@ -29,7 +29,7 @@ for (const p of paras) {
   doc = doc.slice(0, p.start + delta) + xml + doc.slice(p.end + delta);
   delta += xml.length - p.xml.length;
   for (const [name, part] of splitParts(finalPkg)) {
-    if (/Tc\d+\.(bin|png)$/.test(name)) { const b = /<pkg:binaryData>([\s\S]*?)<\/pkg:binaryData>/.exec(part.body)[1].replace(/\s+/g, ''); extraParts.push({ name: name.replace(/^\//, ''), b64: b }); }
+    if (/Tc\d+\.(bin|png|emf)$/.test(name)) { const b = /<pkg:binaryData>([\s\S]*?)<\/pkg:binaryData>/.exec(part.body)[1].replace(/\s+/g, ''); extraParts.push({ name: name.replace(/^\//, ''), b64: b }); }
   }
   const rels = /<pkg:part pkg:name="\/word\/_rels\/document\.xml\.rels"[^>]*>[\s\S]*?<\/pkg:part>/.exec(finalPkg)[0];
   for (const r of rels.match(/<Relationship\b[^>]*Id="rIdTc[^>]*\/>/g) || []) extraRels.push(r);

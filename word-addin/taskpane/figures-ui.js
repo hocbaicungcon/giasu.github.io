@@ -19,6 +19,7 @@ export function mountFigures(root, io) {
     <div id="fig-size"></div>
     <div id="fig-error" class="bad"></div>
     <div class="fig-preview" id="fig-preview"></div>
+    <label class="field"><span>Kiểu hình sửa được</span><select id="fig-float"><option value="float">Hình nổi (kéo từng nhãn, từng nét dễ hơn)</option><option value="inline">Cùng dòng với chữ</option></select></label>
     <div class="btns two"><button class="primary" id="fig-insert">Chèn vào Word (hình sửa được)</button><button class="secondary" id="fig-png">Chèn dạng ảnh PNG</button></div>
     <div class="btns two"><button class="secondary" id="fig-dl-png">Tải PNG</button><button class="secondary" id="fig-dl-svg">Tải SVG</button></div>
     <div class="hint" id="fig-note">“Hình sửa được” là các đường thẳng, hộp chữ và công thức Word nhóm lại: bấm vào để sửa từng phần trong Word.</div>
@@ -119,7 +120,7 @@ export function mountFigures(root, io) {
 
   const title = () => ({ bbt: 'Bảng biến thiên', plot: 'Đồ thị hàm số', region: 'Miền nghiệm', geo: 'Hình học' }[kind]);
   $('fig-insert').addEventListener('click', async () => {
-    try { await io.replaceSelection(sceneToPackage(current.scene, { name: title(), alt: title() })); $('fig-out').innerHTML = '<span class="ok">Đã chèn vào Word tại con trỏ (hình sửa được).</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
+    try { await io.replaceSelection(sceneToPackage(current.scene, { name: title(), alt: title(), float: $('fig-float').value === 'float' })); $('fig-out').innerHTML = '<span class="ok">Đã chèn vào Word tại con trỏ (hình sửa được).</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
   });
   $('fig-png').addEventListener('click', async () => {
     try { const png = await svgToPngPx(current.svg, current.width, current.height, 3); await io.replaceSelection(makePicturePackage(png, { widthPt: current.width * 0.75, heightPt: current.height * 0.75, alt: title(), name: 'Hinh', center: true })); $('fig-out').innerHTML = '<span class="ok">Đã chèn ảnh PNG vào Word.</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }

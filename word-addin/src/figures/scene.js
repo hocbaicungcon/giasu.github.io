@@ -77,13 +77,20 @@ function itemXml(p) {
   return '';
 }
 
-/** The w:drawing (inline group of shapes) for a scene. Everything stays editable in Word. */
-export function sceneToDrawingXml(scene, { name = 'Hình vẽ', alt = '' } = {}) {
+/**
+ * The w:drawing (group of shapes) for a scene. Everything stays editable in Word.
+ * float: true -> a floating group (wrap top and bottom, centred): its parts can be selected and dragged one by one.
+ * Default is the group "in line with text".
+ */
+export function sceneToDrawingXml(scene, { name = 'Hình vẽ', alt = '', float = false } = {}) {
   shapeId = 10;
   const W = e(scene.width), H = e(scene.height);
   const body = scene.items.map(itemXml).join('');
   const id = Math.floor(Math.random() * 90000) + 1000;
-  return `<w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${W}" cy="${H}"/><wp:effectExtent l="0" t="0" r="0" b="0"/><wp:docPr id="${id}" name="${esc(name)} ${id}" descr="${esc(alt)}"/><wp:cNvGraphicFramePr/><a:graphic><a:graphicData uri="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"><wpg:wgp><wpg:cNvGrpSpPr/><wpg:grpSpPr>${`<a:xfrm><a:off x="0" y="0"/><a:ext cx="${W}" cy="${H}"/><a:chOff x="0" y="0"/><a:chExt cx="${W}" cy="${H}"/></a:xfrm>`}</wpg:grpSpPr>${body}</wpg:wgp></a:graphicData></a:graphic></wp:inline></w:drawing>`;
+  const graphic = `<a:graphic><a:graphicData uri="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup"><wpg:wgp><wpg:cNvGrpSpPr/><wpg:grpSpPr>${`<a:xfrm><a:off x="0" y="0"/><a:ext cx="${W}" cy="${H}"/><a:chOff x="0" y="0"/><a:chExt cx="${W}" cy="${H}"/></a:xfrm>`}</wpg:grpSpPr>${body}</wpg:wgp></a:graphicData></a:graphic>`;
+  const docPr = `<wp:docPr id="${id}" name="${esc(name)} ${id}" descr="${esc(alt)}"/><wp:cNvGraphicFramePr/>`;
+  if (float) return `<w:drawing><wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="251658240" behindDoc="0" locked="0" layoutInCell="1" allowOverlap="1"><wp:simplePos x="0" y="0"/><wp:positionH relativeFrom="column"><wp:align>center</wp:align></wp:positionH><wp:positionV relativeFrom="paragraph"><wp:posOffset>0</wp:posOffset></wp:positionV><wp:extent cx="${W}" cy="${H}"/><wp:effectExtent l="0" t="0" r="0" b="0"/><wp:wrapTopAndBottom/>${docPr}${graphic}</wp:anchor></w:drawing>`;
+  return `<w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${W}" cy="${H}"/><wp:effectExtent l="0" t="0" r="0" b="0"/>${docPr}${graphic}</wp:inline></w:drawing>`;
 }
 
 const NS = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" mc:Ignorable="wp14"';

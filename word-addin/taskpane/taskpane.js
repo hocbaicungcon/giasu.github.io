@@ -388,9 +388,24 @@ function requestStartupLoad() {
   } catch { /* older Word: the add-in has to be inserted again (see README) */ }
 }
 
+// Ribbon buttons run in the same (shared) runtime as this pane: each one shows the pane and switches to its tab,
+// instead of Word opening one extra pane per button.
+function registerRibbonActions() {
+  try {
+    if (!Office.actions?.associate) return;
+    for (const t of ['eq', 'editor', 'exam', 'about', 'figures', 'calc']) {
+      Office.actions.associate('showTab_' + t, async () => {
+        switchTab(t);
+        try { await Office.addin.showAsTaskpane(); } catch { /* already visible */ }
+      });
+    }
+  } catch { /* older Word: the buttons open panes by URL (?tab=) */ }
+}
+
 async function boot() {
   if (typeof Office !== 'undefined' && Office.onReady) {
     try { await Promise.race([Office.onReady(), new Promise((_r, rej) => setTimeout(() => rej(new Error('timeout')), 4000))]); } catch { /* not inside Office */ }
+    registerRibbonActions();
   }
   if (!io.hasWord() || (typeof Office !== 'undefined' && !Office.context?.host)) {
     const note = document.createElement('div');

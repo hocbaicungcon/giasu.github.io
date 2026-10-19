@@ -105,6 +105,22 @@ test('MathType writer: LaTeX -> OLE -> decoder gives the same LaTeX', () => {
     assert.equal(oleToLatex(buildOle(latexToEquationStream(t)))[0].replace(/\s+/g, ''), t.replace(/\s+/g, ''), t);
   }
 });
+test('MathType object: EMF picture when available, PNG otherwise', async () => {
+  const { renderLatex, charAdvance } = await import('../src/mathrender.js');
+  const { svgToEmf } = await import('../src/emf.js');
+  const r = renderLatex(`${B}frac{-b${B}pm${B}sqrt{b^2-4ac}}{2a}`, { fontSize: 12 });
+  const emf = svgToEmf(r.svg, charAdvance);
+  const dv = new DataView(emf.buffer);
+  assert.equal(dv.getUint32(40, true), 0x464d4520);   // ' EMF'
+  assert.equal(dv.getUint32(48, true), emf.length);
+  let off = 0, n = 0; while (off < emf.length) { const size = dv.getUint32(off + 4, true); assert.ok(size >= 8 && size % 4 === 0); off += size; n++; }
+  assert.equal(off, emf.length); assert.equal(n, dv.getUint32(52, true)); assert.equal(dv.getUint32(emf.length - 20, true), 14);   // EOF last
+  const withEmf = await makeMathTypePackage(`${B}frac{a}{b}`, { render: async () => ({ png: null, emf, width: 30, height: 20, baseline: 5 }) });
+  assert.ok(/imageTc\d+\.emf/.test(withEmf) && /image\/x-emf/.test(withEmf));
+  const bad = await makeMathTypePackage(`${B}frac{a}{b}`, { render: renderStub });   // no emf -> PNG
+  assert.ok(/imageTc\d+\.png/.test(bad));
+  assert.throws(() => svgToEmf('<svg viewBox="0 0 10 10"><polygon points="0,0"/></svg>', charAdvance));   // unknown markup -> caller keeps PNG
+});
 test('MathType object package: parts, relationships and namespaces', async () => {
   const pkg = await makeMathTypePackage(`${B}frac{a}{b}`, { render: renderStub });
   assert.ok(/ProgID="Equation.DSMT4"/.test(pkg) && /oleObjectTc\d+\.bin/.test(pkg) && /imageTc\d+\.png/.test(pkg) && /xmlns:v=/.test(pkg) && /xmlns:o=/.test(pkg));
