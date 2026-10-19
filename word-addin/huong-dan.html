@@ -1,23 +1,19 @@
 <!doctype html>
 <html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex"><title>Cài TexCraft Công thức cho Word</title>
-<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:16px 16px 48px;color:#222}code,pre{background:#f2f4f3;padding:2px 6px;border-radius:4px}pre{padding:10px;overflow:auto}h1{font-size:1.6rem}h2{margin-top:1.8em}.note{background:#fff8e1;border-left:4px solid #e0a800;padding:8px 12px}</style></head><body>
-<h1>Cài add-in “TexCraft Công thức” cho Word</h1>
-<p>Add-in giúp quét/chuyển công thức MathType sang công thức Word, tìm–thay LaTeX, chuẩn hóa/trộn đề và xuất đáp án Excel. Tác giả: thầy Phan Văn Phương (THPT Xuân Trường B).</p>
-<div class="note"><b>Lưu ý:</b> add-in còn là bản thử nghiệm. Hãy thử trên <b>một bản sao</b> của tài liệu trước, đừng dùng trực tiếp trên file gốc quan trọng.</div>
-<h2>Bước 1. Tải file manifest</h2>
-<p><a href="manifest.xml" download="manifest.xml">Tải manifest.xml</a> (nếu trình duyệt mở ra thành chữ, nhấn chuột phải → Lưu liên kết thành…). Mọi máy dùng chung một file này.</p>
-<h2>Mac</h2>
-<ol><li>Mở Finder → Go → Go to Folder, dán đường dẫn:<pre>~/Library/Containers/com.microsoft.Word/Data/Documents/wef/</pre>(nếu chưa có thư mục <code>wef</code> thì tạo mới).</li>
-<li>Chép <code>manifest.xml</code> vào đó.</li>
-<li><b>Thoát hẳn Word</b> (Cmd+Q) rồi mở lại.</li>
-<li>Vào <b>Chèn → Add-ins → My Add-ins → Developer Add-ins → TexCraft Công thức</b>.</li></ol>
-<h2>Windows</h2>
-<ol><li>Tạo một thư mục (vd. <code>C:\WordAddins</code>), chép <code>manifest.xml</code> vào, chia sẻ thư mục (chuột phải → Properties → Sharing) để có đường dẫn dạng <code>\\TÊN-MÁY\WordAddins</code>.</li>
-<li>Trong Word: <b>File → Options → Trust Center → Trust Center Settings → Trusted Add-in Catalogs</b>; dán đường dẫn vào ô Catalog URL → <b>Add catalog</b>, tích <b>Show in Menu</b> → OK. Thoát hẳn Word rồi mở lại.</li>
-<li><b>Chèn → Add-ins → My Add-ins → Shared Folder</b> → chọn <b>TexCraft Công thức</b> → Add.</li></ol>
-<h2>Word trên web</h2>
+<style>body{font:17px/1.7 system-ui,sans-serif;max-width:700px;margin:0 auto;padding:16px 16px 48px;color:#222}code{background:#f2f4f3;padding:2px 6px;border-radius:4px;word-break:break-all}h1{font-size:1.5rem}h2{margin-top:1.6em;font-size:1.2rem}.btn{display:inline-block;background:#1f6f54;color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600}.note{background:#fff8e1;border-left:4px solid #e0a800;padding:8px 12px}</style></head><body>
+<h1>Cài “TexCraft Công thức” cho Word</h1>
+<p>Chỉ cần <b>1 file</b> và <b>3 bước</b>. Cài một lần, dùng mãi; add-in tự cập nhật.</p>
+<p><a class="btn" href="manifest.xml" download="manifest.xml">① Tải file manifest.xml</a></p>
+<h2>Máy Mac</h2>
+<ol><li>Mở Finder → menu <b>Đi</b> → <b>Đi tới thư mục…</b> (Cmd+Shift+G), dán: <code>~/Library/Containers/com.microsoft.Word/Data/Documents/wef</code> rồi Enter (chưa có thư mục <code>wef</code> thì tạo mới).</li>
+<li>Kéo <code>manifest.xml</code> vào thư mục đó.</li>
+<li>Thoát hẳn Word (Cmd+Q), mở lại → <b>Chèn → Add-ins → My Add-ins → TexCraft Công thức</b>.</li></ol>
+<h2>Máy Windows</h2>
+<ol><li>Tạo thư mục, ví dụ <code>C:\WordAddins</code>, chép <code>manifest.xml</code> vào, chuột phải thư mục → <b>Give access to → Specific people</b> → Share, để lấy đường dẫn dạng <code>\\TÊN-MÁY\WordAddins</code>.</li>
+<li>Word: <b>File → Options → Trust Center → Trust Center Settings → Trusted Add-in Catalogs</b>, dán đường dẫn vào <b>Catalog URL</b> → <b>Add catalog</b>, tích <b>Show in Menu</b> → OK, rồi thoát hẳn Word.</li>
+<li>Mở Word → <b>Chèn → Add-ins → My Add-ins → Shared Folder → TexCraft Công thức → Add</b>.</li></ol>
+<h2>Word trên web (dễ nhất, không cần chép file)</h2>
 <p>Mở tài liệu trên Word web → <b>Chèn → Add-ins → My Add-ins → Upload My Add-in</b> → chọn <code>manifest.xml</code>.</p>
-<h2>Cập nhật</h2>
-<p>Khi tác giả cập nhật add-in trên website, các máy không phải cài lại. Nếu Word còn nhớ bản cũ: thoát hẳn Word rồi mở lại.</p>
+<div class="note">Add-in còn là bản thử nghiệm: hãy thử trên <b>bản sao</b> của tài liệu trước. Tác giả: thầy Phan Văn Phương, THPT Xuân Trường B.</div>
 </body></html>

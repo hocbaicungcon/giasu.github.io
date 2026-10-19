@@ -3,7 +3,7 @@ import path from 'node:path';
 import assert from 'node:assert/strict';
 const root=path.resolve('dist');
 assert.ok(!fs.existsSync(path.join(root,'cham-thi/data')),'Private student samples must not be published');
-const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html')&&f!=='404.html'&&!f.startsWith('o2edu/'));
+const files=fs.readdirSync(root,{recursive:true}).filter(f=>f.endsWith('.html')&&f!=='404.html'&&!f.startsWith('o2edu/')&&!f.replace(/\\/g,'/').startsWith('word-addin/'));
 const urls=new Set(),titles=new Map();
 for(const file of files){
  const html=fs.readFileSync(path.join(root,file),'utf8');
