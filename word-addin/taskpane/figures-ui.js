@@ -15,23 +15,24 @@ const field = (label, inner) => `<label class="field"><span>${label}</span>${inn
 export function mountFigures(root, io) {
   const kinds = [['bbt', 'Bảng biến thiên'], ['plot', 'Đồ thị'], ['region', 'Miền nghiệm'], ['geo', 'Hình học']];
   root.innerHTML = `
-    <div class="tb-tabs fig-tabs" role="tablist">${kinds.map(([id, l]) => `<button type="button" class="tb-tab" data-k="${id}"><span class="tb-tab-label" style="display:inline">${l}</span></button>`).join('')}</div>
-    <div id="fig-size"></div>
+    <div class="grid2 fig-kind-row"><label class="field fig-kind"><span>Loại hình</span><select id="fig-kind">${kinds.map(([id, l]) => `<option value="${id}">${l}</option>`).join('')}</select></label><div id="fig-sub"></div></div>
+    <div id="fig-form"></div>
     <div id="fig-error" class="bad"></div>
     <div class="fig-preview" id="fig-preview"></div>
-    <label class="field"><span>Kiểu hình sửa được</span><select id="fig-float"><option value="float">Hình nổi (kéo từng nhãn, từng nét dễ hơn)</option><option value="inline">Cùng dòng với chữ</option></select></label>
-    <div class="btns two"><button class="primary" id="fig-insert">Chèn vào Word (hình sửa được)</button><button class="secondary" id="fig-png">Chèn dạng ảnh PNG</button></div>
-    <div class="btns two"><button class="secondary" id="fig-dl-png">Tải PNG</button><button class="secondary" id="fig-dl-svg">Tải SVG</button></div>
-    <div class="hint" id="fig-note">“Hình sửa được” là các đường thẳng, hộp chữ và công thức Word nhóm lại: bấm vào để sửa từng phần trong Word.</div>
-    <div id="fig-out"></div>
-    <div id="fig-form"></div>`;
+    <div class="grid2 fig-opts">
+      <div id="fig-size"></div>
+      <label class="field"><span>Kiểu hình sửa được</span><select id="fig-float"><option value="float">Hình nổi</option><option value="inline">Cùng dòng chữ</option></select></label>
+    </div>
+    <div class="btns fig-actions"><button class="primary" id="fig-insert" title="Các đường thẳng, hộp chữ và công thức Word nhóm lại: bấm vào để sửa từng phần trong Word">Chèn vào Word (hình sửa được)</button></div>
+    <div class="btns three fig-actions"><button class="secondary" id="fig-png">Chèn ảnh PNG</button><button class="secondary" id="fig-dl-png">Tải PNG</button><button class="secondary" id="fig-dl-svg">Tải SVG</button></div>
+    <div id="fig-out"></div>`;
   const $ = (id) => root.querySelector('#' + id);
   mountMtSettings($('fig-size'), { fontRow: false, onChange: () => schedule() });
   let fontPt = 12;
   let kind = 'bbt', current = null, timer = null;
 
   const forms = {
-    bbt: () => `<label class="field"><span>Cách lập bảng</span><select id="b-mode"><option value="auto">Từ hàm số (tự khảo sát)</option><option value="manual">Tự vẽ (nhập từng dòng)</option></select></label>
+    bbt: () => `<label class="field sub-field"><span>Cách lập</span><select id="b-mode"><option value="auto">Từ hàm số (tự khảo sát)</option><option value="manual">Tự vẽ (nhập từng dòng)</option></select></label>
       <div id="b-auto">${field('Hàm số y = f(x)', '<input type="text" id="b-expr" value="x^3-3x+1" spellcheck="false" placeholder="vd. (2x+1)/(x-1), x^3-3x+1, sqrt(x)">')}
       <label class="field"><span>Mẫu có sẵn</span><select id="b-preset"><option value="">— chọn mẫu —</option>${PRESETS.map((p) => `<option value="${esc(p.expr)}">${esc(p.label)}</option>`).join('')}</select></label>
       <div class="grid2">${field('Khảo sát từ x =', '<input type="number" id="b-lo" placeholder="−∞">')}${field('đến x =', '<input type="number" id="b-hi" placeholder="+∞">')}</div>
@@ -56,14 +57,17 @@ export function mountFigures(root, io) {
       <div class="grid2">${field('x nhỏ nhất', '<input type="number" id="r-xmin" placeholder="tự động" step="any">')}${field('x lớn nhất', '<input type="number" id="r-xmax" placeholder="tự động" step="any">')}</div>
       <div class="grid2">${field('y nhỏ nhất', '<input type="number" id="r-ymin" placeholder="tự động" step="any">')}${field('y lớn nhất', '<input type="number" id="r-ymax" placeholder="tự động" step="any">')}</div>
       ${sw('r-grid', 'Hiện lưới', true)}${sw('r-vertices', 'Ghi tên và tọa độ các đỉnh', true)}${sw('r-lines', 'Ghi tên các đường thẳng (d₁), (d₂)…', true)}`,
-    geo: () => `<label class="field"><span>Hình</span><select id="g-kind">${GEOMETRY.map((g) => `<option value="${g.id}">${esc(g.label)}</option>`).join('')}</select></label><div id="g-opts"></div>`,
+    geo: () => `<label class="field sub-field"><span>Hình</span><select id="g-kind">${GEOMETRY.map((g) => `<option value="${g.id}">${esc(g.label)}</option>`).join('')}</select></label><div id="g-opts"></div>`,
   };
 
   function geoOptions() {
     const g = GEOMETRY.find((x) => x.id === $('g-kind').value);
-    $('g-opts').innerHTML = g.options.map(([key, label, choices]) => (choices
-      ? field(label, `<select data-opt="${key}">${choices.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('')}</select>`)
-      : sw('go-' + key, label, /^show/.test(key)))).join('') + (g.names ? field('Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names)}" spellcheck="false" placeholder="${esc(g.names)}">`) + (g.hint ? `<div class="hint">${esc(g.hint)}</div>` : '<div class="hint">Đổi tên tùy ý, ví dụ M,N,P,Q; ô để trống dùng tên mặc định.</div>') : '');
+    const choices = g.options.filter((o) => o[2]), flags = g.options.filter((o) => !o[2]);
+    const hint = g.names ? (g.hint ? `<div class="hint">${esc(g.hint)}</div>` : '') : '';
+    $('g-opts').innerHTML =
+      (choices.length ? `<div class="grid2 g-choices">${choices.map(([key, label, ch]) => field(label, `<select data-opt="${key}">${ch.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('')}</select>`)).join('')}</div>` : '') +
+      (g.names ? field('Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names)}" spellcheck="false" placeholder="${esc(g.names)}">`) + hint : '') +
+      (flags.length ? `<div class="sw-grid">${flags.map(([key, label]) => sw('go-' + key, label, /^show/.test(key))).join('')}</div>` : '');
     $('g-opts').querySelectorAll('input,select').forEach((el) => el.addEventListener('input', schedule));
     // default point names follow the chosen variant; a list the user has edited is kept
     const NAMES = {
@@ -113,8 +117,10 @@ export function mountFigures(root, io) {
   function show(k) {
     kind = k;
     $('fig-size').hidden = k !== 'bbt';
-    root.querySelectorAll('.fig-tabs .tb-tab').forEach((t) => t.classList.toggle('active', t.dataset.k === k));
+    $('fig-kind').value = k;
     $('fig-form').innerHTML = forms[k]();
+    $('fig-sub').innerHTML = '';
+    const sub = $('fig-form').querySelector('.sub-field'); if (sub) $('fig-sub').appendChild(sub);   // the variant select shares a row with the figure type
     $('fig-form').querySelectorAll('input,textarea,select').forEach((el) => el.addEventListener('input', schedule));
     if (k === 'geo') { $('g-kind').addEventListener('change', () => { geoOptions(); render(); }); geoOptions(); }
     if (k === 'bbt') $('b-mode').addEventListener('change', () => { const m = $('b-mode').value === 'manual'; $('b-auto').hidden = m; $('b-manual').hidden = !m; render(); });
@@ -127,7 +133,7 @@ export function mountFigures(root, io) {
     });
     render();
   }
-  root.querySelector('.fig-tabs').addEventListener('click', (ev) => { const t = ev.target.closest('.tb-tab'); if (t) show(t.dataset.k); });
+  $('fig-kind').addEventListener('change', () => show($('fig-kind').value));
 
   const title = () => ({ bbt: 'Bảng biến thiên', plot: 'Đồ thị hàm số', region: 'Miền nghiệm', geo: 'Hình học' }[kind]);
   $('fig-insert').addEventListener('click', async () => {

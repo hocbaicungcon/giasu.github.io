@@ -113,7 +113,8 @@ const writeMode = () => ($('opt-mode').checked ? 'paragraph' : 'content');
 
 mountMtSettings($('mt-settings-convert'));
 mountMtSettings($('mt-settings-editor'), { onChange: () => renderEditorPreview() });
-document.querySelectorAll('input[name=editor-format]').forEach((r) => r.addEventListener('change', () => renderEditorPreview()));
+const syncEditorFormat = () => { const mt = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype'; $('mt-details').hidden = !mt; renderEditorPreview(); };
+document.querySelectorAll('input[name=editor-format]').forEach((r) => r.addEventListener('change', syncEditorFormat));
 
 async function paragraphsToProcess(scope, onProgress, { convertMathType, convertLatex } = {}) {
   if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress) };
@@ -250,7 +251,7 @@ async function loadFormulaFromWord(showNotice = true) {
       if (r.errors && r.errors.length && r.found) throw new Error(`Công thức bị lỗi: ${r.errors[0]}`);
       if (statusEl) statusEl.innerHTML = showNotice
         ? '<span class="warn">Không tìm thấy công thức nào tại con trỏ / vùng chọn (đoạn này không có công thức). Bạn có thể tự soạn bên dưới.</span>'
-        : 'Đặt con trỏ tại công thức trong Word rồi bấm “Lấy công thức”, hoặc soạn mới bên dưới.';
+        : 'Đặt con trỏ trong công thức rồi bấm “Lấy từ Word”, hoặc soạn mới bên dưới.';
       return;
     }
     const target = r.eq;
@@ -312,7 +313,7 @@ $('btn-clear-editor')?.addEventListener('click', () => {
   $('editor-latex').value = '';
   renderEditorPreview();
   if ($('editor-msg')) $('editor-msg').textContent = '';
-  if ($('editor-status')) $('editor-status').textContent = 'Đặt con trỏ tại công thức trong Word rồi bấm “Lấy công thức”, hoặc soạn mới bên dưới.';
+  if ($('editor-status')) $('editor-status').textContent = 'Đặt con trỏ trong công thức rồi bấm “Lấy từ Word”, hoặc soạn mới bên dưới.';
 });
 $('btn-apply-editor')?.addEventListener('click', applyFormulaToWord);
 $('editor-latex')?.addEventListener('keydown', (ev) => {
