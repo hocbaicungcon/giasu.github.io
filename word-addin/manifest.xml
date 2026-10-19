@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>6f1c2d9e-4b7a-4c1e-9a53-7d2f0b8e3a11</Id>
-  <Version>0.1.0.0</Version>
+  <Version>1.1.0.0</Version>
   <ProviderName>TexCraft</ProviderName>
   <DefaultLocale>vi-VN</DefaultLocale>
   <DisplayName DefaultValue="TexCraft Công thức"/>
@@ -149,24 +149,24 @@
         <bt:Image id="Icon16" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-16.png"/>
         <bt:Image id="Icon32" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-32.png"/>
         <bt:Image id="Icon80" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-80.png"/>
-        <bt:Image id="Icon16_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-16.png"/>
-        <bt:Image id="Icon32_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-32.png"/>
-        <bt:Image id="Icon80_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-80.png"/>
-        <bt:Image id="Icon16_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-16.png"/>
-        <bt:Image id="Icon32_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-32.png"/>
-        <bt:Image id="Icon80_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-80.png"/>
-        <bt:Image id="Icon16_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-16.png"/>
-        <bt:Image id="Icon32_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-32.png"/>
-        <bt:Image id="Icon80_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-80.png"/>
-        <bt:Image id="Icon16_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-16.png"/>
-        <bt:Image id="Icon32_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-32.png"/>
-        <bt:Image id="Icon80_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-80.png"/>
-        <bt:Image id="Icon16_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-16.png"/>
-        <bt:Image id="Icon32_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-32.png"/>
-        <bt:Image id="Icon80_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-80.png"/>
-        <bt:Image id="Icon16_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-16.png"/>
-        <bt:Image id="Icon32_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-32.png"/>
-        <bt:Image id="Icon80_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-80.png"/>
+        <bt:Image id="Icon16_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-16.png"/>
+        <bt:Image id="Icon32_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-32.png"/>
+        <bt:Image id="Icon80_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-80.png"/>
+        <bt:Image id="Icon16_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-16.png"/>
+        <bt:Image id="Icon32_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-32.png"/>
+        <bt:Image id="Icon80_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-80.png"/>
+        <bt:Image id="Icon16_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-16.png"/>
+        <bt:Image id="Icon32_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-32.png"/>
+        <bt:Image id="Icon80_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-80.png"/>
+        <bt:Image id="Icon16_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-16.png"/>
+        <bt:Image id="Icon32_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-32.png"/>
+        <bt:Image id="Icon80_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-80.png"/>
+        <bt:Image id="Icon16_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-16.png"/>
+        <bt:Image id="Icon32_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-32.png"/>
+        <bt:Image id="Icon80_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-80.png"/>
+        <bt:Image id="Icon16_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-16.png"/>
+        <bt:Image id="Icon32_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-32.png"/>
+        <bt:Image id="Icon80_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Url" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html"/>

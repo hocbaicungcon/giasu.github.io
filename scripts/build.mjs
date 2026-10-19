@@ -794,7 +794,13 @@ export function build(){
  const sitemapXml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniqueUrls.map(u=>`  <url>\n    <loc>${u.loc}</loc>\n${u.lastmod?`    <lastmod>${u.lastmod}</lastmod>\n`:""}    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>\n`;
  fs.writeFileSync(path.join(out,'sitemap.xml'),sitemapXml);
   // Word add-in is copied verbatim, after all HTML post-processing and sitemap generation (no banners/minify/analytics).
- fs.cpSync(path.join(root,'word-addin'),path.join(out,'word-addin'),{recursive:true});
+ fs.cpSync(path.join(root,'word-addin'),path.join(out,'word-addin'),{
+  recursive: true,
+  filter: (src) => {
+   const rel = path.relative(path.join(root, 'word-addin'), src);
+   return !/^(certs|hosted|node_modules|tests|tools|fixtures)(\/|$)/.test(rel) && !['manifest.dev.xml', 'server.js', 'package.json', '.gitignore', 'sw.template.js', 'taskpane/mock-word.js'].includes(rel) && !rel.endsWith('.DS_Store');
+  }
+ });
  fs.writeFileSync(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nDisallow: /o2edu/\nSitemap: https://giasu.ai.vn/sitemap.xml\n');
  console.log(`Built ${posts.length} posts into dist/`);return posts;
 }

@@ -467,7 +467,7 @@ fieldset { min-width: 0; }
   nav { padding: 0 4px; }
   nav button { padding: 8px 7px; font-size: 12px; }
   .tb-tab { padding: 5px 7px; }
-  .tb-tab:not(.active) .tb-tab-label { display: none; }
+  .editor-toolbar .tb-tab:not(.active) .tb-tab-label { display: none; }
   .tb-grid { grid-template-columns: repeat(auto-fill, minmax(34px, 1fr)); padding: 6px; gap: 3px; }
   .tb-btn { height: 32px; }
   .tb-btn .tb-svg { height: 22px; }
@@ -477,7 +477,7 @@ fieldset { min-width: 0; }
   table { font-size: 11px; }
 }
 @media (max-width: 340px) {
-  .tb-tab .tb-tab-label { display: none !important; }
+  .editor-toolbar .tb-tab .tb-tab-label { display: none !important; }
   .seg-opt span { padding: 5px 7px; }
 }
 
@@ -531,3 +531,16 @@ textarea { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12p
 .calc-result .katex-display { margin: 4px 0; }
 .calc-extra { font-size: 12px; color: var(--muted); border-top: 1px dashed var(--line); padding-top: 4px; overflow-x: auto; }
 .calc-out { margin-top: 4px; font-size: 12px; }
+
+/* Figure-type chooser: wraps onto several rows instead of hiding tabs when the pane is thin */
+.fig-tabs { flex-wrap: wrap; overflow: visible; gap: 4px; padding: 4px; border-radius: 10px; }
+.fig-tabs .tb-tab { flex: 1 1 calc(50% - 4px); justify-content: center; min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; }
+.fig-tabs .tb-tab.active { background: color-mix(in srgb, var(--accent) 12%, transparent); border-color: var(--accent); }
+.fig-tabs .tb-tab-label { display: inline !important; white-space: normal; text-align: center; }
+@media (min-width: 400px) { .fig-tabs .tb-tab { flex: 1 1 auto; } }
+
+/* Very thin pane: the main tabs wrap onto two rows so none of them hides off-screen */
+@media (max-width: 330px) {
+  nav { flex-wrap: wrap; overflow: visible; row-gap: 0; }
+  nav button { flex: 1 1 auto; text-align: center; padding: 7px 6px; }
+}
