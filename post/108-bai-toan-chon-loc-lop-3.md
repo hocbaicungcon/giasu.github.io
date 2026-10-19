@@ -325,9 +325,7 @@ grade: 3
 **Bài 56.** Từ 27 đến 2142 có bao nhiêu số chãn, bao nhiêu số lẻ? Tổng các số chãn và tổng các số lẻ
   trong các số trên hơn kém nhau bao nhiêu đơn vị?
 
-**Bài 57.** Cho 5 chữ số khác nhau và trong đó có một chữ số 0. Hỏi có thể lập được bao nhiêu số có
-
-## 3 chữ số mà mỗi số có 3 chữ số khác nhau?
+**Bài 57.** Cho 5 chữ số khác nhau và trong đó có một chữ số 0. Hỏi có thể lập được bao nhiêu số có 3 chữ số mà mỗi số có 3 chữ số khác nhau?
 
 **Bài 58.** Tìm số có hai chữ số mà tổng hai chữ số bằng 9 và tích của hai chữ số gấp hai lần tổng
   hai chữ số.

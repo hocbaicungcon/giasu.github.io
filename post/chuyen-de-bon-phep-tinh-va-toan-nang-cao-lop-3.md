@@ -24,9 +24,9 @@ grade: 3
 ---
 
 
-## 1. Bốn phép tính
+## Chuyên đề 1: Bốn phép tính
 
-### 1.1. Phép cộng, phép trừ
+### Phép cộng và phép trừ
 
 1.1. Tính tổng. Kết quả thay đổi thế nào? Vì sao?
 - a)
@@ -428,7 +428,7 @@ nhiêu viên bi?
 sợi dây thứ ba 27dm. Hỏi sợi dây thứ nhất dài hơn sợi dây thứ ba bao nhiêu
 dêximet?
 
-### 1.2. Phép nhân
+### Phép nhân
 
 1.79. Giải bài toán bằng cách đơn giản:
 - a) $32 + 32 + 32 + 32 + 32 = 32 \times 5$
@@ -911,9 +911,11 @@ sinh. Hỏi lớp học có bao nhiêu học sinh?
 1.136. Tìm hai số có tích bằng 6 và có hiệu bằng 5.
 1.137. Tìm hai số có tích bằng 0 và tổng bằng 4.
 1.138. Tìm hai số có tích bằng 0 và có tổng cũng bằng 0.
-### 1.3. Phép chia
+
+### Phép chia
+
 1.139. Thực hiện phép tính. Hãy phát biểu những gì bạn quan sát được.
-- a) 45 :9 =
+- a) 45 : 9 =
 450 : 9 =
 4500 : 9 =
 - b) 72:8 =
@@ -1289,9 +1291,10 @@ phép tính đúng.
 1.199. Sau khi thu hoạch bưởi, chị Tâm chia đều 245 quả bưởi vào 7 cái giỏ.
 Hỏi mỗi giỏ được bao nhiêu quả bưởi?
 
-## 2. Các bài toán mở rộng
+## Chuyên đề 2: Các bài toán mở rộng
 
-### 2.1. Toán đố
+### Bài toán có lời văn (Toán đố)
+
 2.1. Em hãy cho biết số bé nhất có ba chữ số là số nào, số lớn nhất có hai
 chữ số là số nào và tổng của hai số đó bằng bao nhiêu?
 2.2. Em hãy viết tất cả các số có ba chữ số mà tổng của ba chữ số bằng 3.
@@ -1428,7 +1431,7 @@ An trả lời câu hỏi của Dũng.
 2.56. Hiện nay bố 32 tuổi gấp bốn lần tuổi con. Hỏi bao nhiêu năm nữa tuổi
 bố chỉ còn gấp 3 lần tuổi con?
 
-### 2.2. Hình học
+### Bài toán hình học mở rộng
 
 2.57. Cho hai điểm A và B
 - a) Hãy nối A và B lại và lấy điểm M là trung điểm của đoạn thắng AB.
@@ -1457,7 +1460,8 @@ Em hãy cho biết Hồng trồng hoa như thế nào?
 2.69. Cho một hình vuông có chu vi bằng 16 cm và một hình chữ nhật có
 chiều dài hơn cạnh hình vuông 2cm, chiều rộng kém cạnh hình vuông 1 cm.
 Hãy tính diện tích hình chữ nhật.
-## 3. Phân số
+
+## Chuyên đề 3: Phân số
 
 3.1. Diền số thích hợp vào hình vuông để được phân số nhỏ hơn 1:
 i)
@@ -2143,7 +2147,7 @@ k) ₫:6-}:6=
 - c) ]+=×8+ =×6=
 d)·-5:5+-2×2=
 
-### 3.1. Đổi đơn vị
+### Đổi đơn vị đo đại lượng
 
 3.62. Dối ra mét.
 - a) [kim =... m;
@@ -2600,7 +2604,7 @@ Tìm hai số khi biết tổng và tỉ số của hai số đó
   3.131. Có tất cả 18 quả táo, cam và xoài. Số quả cam bằng - số quả táo. Số
   quả xoài gấp 3 lần số quả cam. Tính số quả táo.
 
-### 3.4. Tìm hai số khi biết hiệu và tỉ số
+### Tìm hai số khi biết hiệu và tỉ số
 
 3.132. Hiệu của hại sồ là 62. Ti só của hai số đó là Tìm hại số đó.
 3.133. Tú có số nhãn vở bằng - số nhãn vở của Tín. Tính số nhẫn vở của
@@ -2635,8 +2639,9 @@ nam, bao nhiêu học sinh nữ?
 bố 26 kg. Hỏi bố cân nặng bao nhiêu kilogam^2
 3.145. Hiện nay, mẹ hơn con 24 tuổi. Cách đây 3 năm, tuổi con bằng ý tuổi
 mẹ. Tính tuổi của mỗi người hiện nay.
-3.5
-Ti lệ bản đỗ
+
+### Tỉ lệ bản đồ
+
 3.146. Một đoạn đường dài 54 km dược vẽ trên bản đồ với tỉ lệ
 thì
 90 000
@@ -2657,7 +2662,8 @@ A =
 h)
 —
 14 =
-## 5. Số thập phân
+
+## Chuyên đề 5: Số thập phân
 
 5.1. Dọc các số thập phân sau:
 - a) 2, 7; 0,9; 3,24; 0, 72; 5, 112; 0, 571;

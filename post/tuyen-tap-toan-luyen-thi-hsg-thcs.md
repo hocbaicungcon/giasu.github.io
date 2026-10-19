@@ -145,9 +145,7 @@ nhiều m không được tưới?
 Lúc bò lên con sên mất 7 giờ. Sau đó nó nghỉ 1 giờ rồi lại bò xuống thì 8 giờ mới đến mặt đất.
 Tốc độ sên bò không đổi. Hỏi tốc độ cây tre mọc bằng mấy phần tốc độ của sẽn?
 
-### 1.1 Gợi ý giải phần toán đố về chuyển động
-
-### 1.1 Gợi ý giải phần toán đố về chuyển động
+### Gợi ý giải phần toán đố về chuyển động
 
 Bài 1.1.
 - a) 37 phút đi bộ.
@@ -168,9 +166,7 @@ Bài 1.1.
 2.1. Có bao nhiêu số nguyên dương không lớn hơn 1000 và:
 - a) Chỉ chứa đúng một chữ số trong các số 2 và 3
 - b) Chia hết cho đúng một số trong các số 2,3 và 5.
-2.2. Tích của 5 số tự nhiên liên tiếp chia hết cho 8 không? Cho 16 không? Cho 24 không? Cho
-
-## 5 không? Những số nào là số chắc chắn nó chia hết?
+2.2. Tích của 5 số tự nhiên liên tiếp chia hết cho 8 không? Cho 16 không? Cho 24 không? Cho 5 không? Những số nào là số chắc chắn nó chia hết?
 
 2.3. Nếu tích của 5 số nguyên dương tận cùng có hai chữ số 0 thì có thể chọn được 4 số trong
 chúng có tích tận cùng là hai chữ số 0. Điều này có đúng không?
@@ -254,18 +250,26 @@ mỗi đống lấy ra 1 vỏ hến và cất vào hộp. Rồi tiếp tục nh�
 cặp và từ mỗi cặp lại lấy ra một vỏ hến (1, 1) cất vào hộp. Xong việc Ngọc Anh có 6 đống có
 số lượng vỏ hến trong mỗi đống như nhau. Hỏi Ngọc Anh đã nhặt được bao nhiêu vỏ hến và
 chia thành 6 đống như thế nào?
-2.28. Hãy điền vào các ô trong bảng 2 x 3 các chữ số khác 0 sao cho các số được lập thành từ
-các hàng (trái qua phải ) và các cột (trên xuống) là các số chính phương.
+2.28. Hãy điền vào các ô trong bảng $2 \times 3$ các chữ số khác 0 sao cho các số được lập thành từ các hàng (trái qua phải) và các cột (trên xuống) là các số chính phương.
+
+<div style="text-align: center; margin: 15px 0;">
+  <svg width="180" height="120" viewBox="0 0 180 120" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="0" y="0" width="180" height="120" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <line x1="60" y1="0" x2="60" y2="120" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="120" y1="0" x2="120" y2="120" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="0" y1="60" x2="180" y2="60" stroke="#1e293b" stroke-width="1.8"/>
+  </svg>
+</div>
+
 2.29. Giải mã:
 $$\begin{aligned} S + A &= U + D + E \\ S^2 &= A^2 + U^2 + D^2 + E^2 \end{aligned}$$
 Các chữ giống nhau là các chữ số giống nhau, khác nhau thì khác nhau.
-2.30. Tìm tất cả các số có 4 chữ số có tận cùng bằng 9 và chia hết cho tất cả các số là chữ số
-của nó.
-2.31 (Thang làm khó). Hai người chơi thay nhau nói các số nguyên dương. Người bắt đầu nói
-số 1. Người thứ n được chọn nói các số lớn hơn số trực tiếp vừa nói ít nhất 1 và không quá n
-đơn vị. Người nào nói số 100 là người thắng trận.
+
+2.30. Tìm tất cả các số có 4 chữ số có tận cùng bằng 9 và chia hết cho tất cả các số là chữ số của nó.
+
+2.31 (Thang làm khó). Hai người chơi thay nhau nói các số nguyên dương. Người bắt đầu nói số 1. Người thứ n được chọn nói các số lớn hơn số trực tiếp vừa nói ít nhất 1 và không quá n đơn vị. Người nào nói số 100 là người thắng trận.
 Hỏi ai là người có chiến thuật để luôn luôn thắng?
-100!
+
 **2.32.** Sau khi tối giản phân số $\frac{100!}{2^{100}}$, mẫu số của nó là số nào?
 2.33. Vương quốc Ngọc Anh người ta phát hành các loại phiếu mua sách toán trị giá 5 và 7
 NA.
@@ -280,35 +284,20 @@ quà mua sách mới mệnh giá 6 và 15 NA. Hỏi những giá trị nào có 
 dư có thể là bao nhiêu?
 2.36. Số nguyên dương nào mà khi chia 23479 cho n được số dư lớn hơn 50 đơn vị so với số
 dư khi chia 34539 cho n'?
-2.37. Tìm ước số chung lớn nhất của 11111111 và 111... 11?
+2.37. Tìm ước số chung lớn nhất của $\underbrace{11111111}_{8\text{ chữ số }1}$ và $\underbrace{111\dots 11}_{100\text{ chữ số }1}$?
 
-## 8 số 1
+2.38. Tìm tất cả các giá trị của $n$ nguyên dương sao cho phân số $\frac{7n + 6}{5n + 3}$ có thể giản ước tiếp tục?
 
-100 số 1
-7n + 6
-2.38. Tìm tất cả các giá trị của n nguyên dương sao cho phân số
-5n + 3
-có thể giản ước tiếp
-tục?
-2.39. Với giá trị k tự nhiên nào thì số sau là số tự nhiên?
-3k - 1
-22k + 12
-16k + 12
-k + 11
-a)
-b)
-c)
-d)
-k - 9 °
-e)
-k + 17
-k -3
-2.40. Tìm tất cả các giá trị n nguyên để các biểu thức sau nguyên:
-n + 3
-a)
-n - 3'
-nº + 2
-n+1
+2.39. Với giá trị $k$ tự nhiên nào thì các số sau là số tự nhiên?
+- a) $\frac{3k - 1}{5}$
+- b) $\frac{22k + 12}{7}$
+- c) $\frac{16k + 12}{5}$
+- d) $\frac{k + 11}{k - 9}$
+- e) $\frac{k + 17}{k - 3}$
+
+2.40. Tìm tất cả các giá trị $n$ nguyên để các biểu thức sau nhận giá trị nguyên:
+- a) $\frac{n + 3}{n - 3}$
+- b) $\frac{n^2 + 2}{n + 1}$
 2.41. Một hình chữ nhật kích thước 385 x 105. Được chia vừa đủ không thừa thành các hình
 vuông có cạnh dài n. Hỏi trong các số 1,2,..., 11,.... Giá trị nào có thể là n (cạnh của hình
 vuông)?
@@ -317,29 +306,89 @@ có màu giống các điểm (a - b, a) và (a, b - a). Hỏi các điểm sau:
 - a) (19,99) và (199, 3383).
 - b) (234, 1001) và (9611, 7007).
 có cùng màu hay không?
-2.43. Trên bàn cờ m x n một quân tướng trắng xuất phát từ một góc trắng và đi cho đến khi
-chạm vạch ngoài thì quay đầu 90° tiếp tục đi cho đến khi đến một góc nào đó (không thể quay
-đầu) thì dừng lại.
+2.43. Trên bàn cờ $m \times n$ một quân tướng trắng xuất phát từ một góc trắng và đi cho đến khi chạm vạch ngoài thì quay đầu $90^\circ$ tiếp tục đi cho đến khi đến một góc nào đó (không thể quay đầu) thì dừng lại.
+
+<div style="text-align: center; margin: 18px 0;">
+  <svg width="320" height="240" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; font-family: system-ui, sans-serif;">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 1 L 10 5 L 0 9 z" fill="#ef4444"/>
+      </marker>
+    </defs>
+    <!-- Khung nền -->
+    <rect width="320" height="240" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Bàn cờ 8 cột x 6 hàng (kích thước mỗi ô 30x30, vị trí (40, 30)) -->
+    <g transform="translate(40, 30)">
+      <!-- Lưới các ô bàn cờ -->
+      <!-- Hàng 0 (trên cùng): trắng, xám, trắng, xám, trắng, xám, trắng, xám -->
+      <rect x="0" y="0" width="240" height="180" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+      <!-- Các ô xám (xen kẽ) -->
+      <!-- Hàng 0 -->
+      <rect x="30" y="0" width="30" height="30" fill="#cbd5e1"/><rect x="90" y="0" width="30" height="30" fill="#cbd5e1"/><rect x="150" y="0" width="30" height="30" fill="#cbd5e1"/><rect x="210" y="0" width="30" height="30" fill="#cbd5e1"/>
+      <!-- Hàng 1 -->
+      <rect x="0" y="30" width="30" height="30" fill="#cbd5e1"/><rect x="60" y="30" width="30" height="30" fill="#cbd5e1"/><rect x="120" y="30" width="30" height="30" fill="#cbd5e1"/><rect x="180" y="30" width="30" height="30" fill="#cbd5e1"/>
+      <!-- Hàng 2 -->
+      <rect x="30" y="60" width="30" height="30" fill="#cbd5e1"/><rect x="90" y="60" width="30" height="30" fill="#cbd5e1"/><rect x="150" y="60" width="30" height="30" fill="#cbd5e1"/><rect x="210" y="60" width="30" height="30" fill="#cbd5e1"/>
+      <!-- Hàng 3 -->
+      <rect x="0" y="90" width="30" height="30" fill="#cbd5e1"/><rect x="60" y="90" width="30" height="30" fill="#cbd5e1"/><rect x="120" y="90" width="30" height="30" fill="#cbd5e1"/><rect x="180" y="90" width="30" height="30" fill="#cbd5e1"/>
+      <!-- Hàng 4 -->
+      <rect x="30" y="120" width="30" height="30" fill="#cbd5e1"/><rect x="90" y="120" width="30" height="30" fill="#cbd5e1"/><rect x="150" y="120" width="30" height="30" fill="#cbd5e1"/><rect x="210" y="120" width="30" height="30" fill="#cbd5e1"/>
+      <!-- Hàng 5 -->
+      <rect x="0" y="150" width="30" height="30" fill="#cbd5e1"/><rect x="60" y="150" width="30" height="30" fill="#cbd5e1"/><rect x="120" y="150" width="30" height="30" fill="#cbd5e1"/><rect x="180" y="150" width="30" height="30" fill="#cbd5e1"/>
+
+      <!-- Kẻ viền trong của bàn cờ -->
+      <g stroke="#94a3b8" stroke-width="1">
+        <line x1="30" y1="0" x2="30" y2="180"/><line x1="60" y1="0" x2="60" y2="180"/><line x1="90" y1="0" x2="90" y2="180"/>
+        <line x1="120" y1="0" x2="120" y2="180"/><line x1="150" y1="0" x2="150" y2="180"/><line x1="180" y1="0" x2="180" y2="180"/><line x1="210" y1="0" x2="210" y2="180"/>
+        <line x1="0" y1="30" x2="240" y2="30"/><line x1="0" y1="60" x2="240" y2="60"/><line x1="0" y1="90" x2="240" y2="90"/>
+        <line x1="0" y1="120" x2="240" y2="120"/><line x1="0" y1="150" x2="240" y2="150"/>
+      </g>
+
+      <!-- Đường đi phản xạ màu đỏ của quân tướng -->
+      <!-- Tia 1: từ (15, 175) tới (170, 20) -->
+      <line x1="15" y1="175" x2="167" y2="23" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="167" y1="23" x2="170" y2="20" stroke="#ef4444" stroke-width="2"/>
+
+      <!-- Tia 2: từ (170, 20) tới (230, 80) -->
+      <line x1="170" y1="20" x2="227" y2="77" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="227" y1="77" x2="230" y2="80" stroke="#ef4444" stroke-width="2"/>
+
+      <!-- Tia 3: từ (230, 80) tới (130, 180) -->
+      <line x1="230" y1="80" x2="133" y2="177" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="133" y1="177" x2="130" y2="180" stroke="#ef4444" stroke-width="2"/>
+
+      <!-- Tia 4: từ (130, 180) tới (0, 50) -->
+      <line x1="130" y1="180" x2="3" y2="53" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="3" y1="53" x2="0" y2="50" stroke="#ef4444" stroke-width="2"/>
+
+      <!-- Tia 5: từ (0, 50) tới (30, 80) -->
+      <line x1="0" y1="50" x2="27" y2="77" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)"/>
+    </g>
+  </svg>
+</div>
+
 - a) Với những giá trị nào thì quân tướng đi hết các ô trắng của bàn cờ?
-- b) Quân tướng trắng sẽ qua bao nhiêu ô trắng của bàn cờ m x n?
-2.44. Cho n = 135, k = 311. Hai người chơi, họ thay đổi nhau sửa lại các kết quả của n và k.
-Đến lượt ai, người đó chọn số lớn hơn và trừ từ nó một vài lần số bé ít nhất 1 lần) nhưng không
-đọc kết quả thành âm). Sau đó giữ lại số trừ và kết quả sau khi trừ rồi nhường cho người kia.
-Người tiếp theo lại làm như vậy. Ai không thay đổi được các số thì người đó thua. Ai có chiến
-thuật chơi để có thể:
+- b) Quân tướng trắng sẽ qua bao nhiêu ô trắng của bàn cờ $m \times n$?
+
+2.44. Cho $n = 135, k = 311$. Hai người chơi, họ thay đổi nhau sửa lại các kết quả của $n$ và $k$. Đến lượt ai, người đó chọn số lớn hơn và trừ từ nó một vài lần số bé (ít nhất 1 lần nhưng không để kết quả thành âm). Sau đó giữ lại số trừ và kết quả sau khi trừ rồi nhường cho người kia. Người tiếp theo lại làm như vậy. Ai không thay đổi được các số thì người đó thua. Ai có chiến thuật chơi để có thể:
 - a) Luôn thắng.
 - b) Luôn thua.
-2.45 (Một cách tính thời Ai Cập cổ đại.). Xuất phát từ hai số 41 và 37. Chúng ta xem bảng
-sau và thử tìm hiểu thuật toán này dùng làm gì và hoạt động ra sao?
-4 1
-3 7
-8 2
-1 8
-1 6 4
-3 2
-6 5 6
-1 3 1
-1 5 1
+
+2.45 (Một cách tính thời Ai Cập cổ đại). Xuất phát từ hai số 41 và 37. Chúng ta xem bảng sau và thử tìm hiểu thuật toán này dùng làm gì và hoạt động ra sao?
+
+$$\begin{array}{r|r}
+41 & 37 \\
+\hline
+82 & 18 \\
+164 & 9 \\
+\hline
+328 & 4 \\
+656 & 2 \\
+1312 & 1 \\
+\hline
+\mathbf{1517} &
+\end{array}$$
 2.46. Công chúa Kim Cương không thích số 1. Trong lâu đài của mình cô ta chỉ cho sử dụng
 các số 0,2,3,4, 5,6,7,8,9,20, 22,..... Hỏi trong vương quốc Kim Cương người ta dùng số nào
 thay cho số 1998? Hay nói cách khác số thứ 1998 trong dãy số của họ là số nào tương ứng?
@@ -409,57 +458,163 @@ một lại có hai con chim bay truyền sang cây bên cạnh nhưng ngược 
 chiều kim đồng hồ, một con theo chiều ngược lại. CMR nếu làm như vậy, các chú chim sáo
 không bao giờ có thể đứng trên cùng một cây.
 
-## 3 Đại sô
+## 3. Đại số
 
-3.1. Bạn hãy lấy một que diêm sao cho biểu thức tăng giá trị. Bạn lấy que diêm nào? Hãy tìm
-tất cả các lời giải.
-- a) XIX - (XII - VIII)
-XII
-VII
-c)
-XII
-VI
-XXII
-IX
-XVI
-IVI
-b)
-XIX
-VII
-· + IV
-d)
-XXI
-VI
-- VIIL
-3.2. Người ta cắt bánh ga-tô ( hình tròn) thanh các miếng hình dẻ quạt tính từ tâm. Hãy tìm
-cách chia đều bằng số nhát cắt ít nhất:
+3.1. Bạn hãy lấy một que diêm sao cho biểu thức tăng giá trị. Bạn lấy que diêm nào? Hãy tìm tất cả các lời giải.
+- a) $\text{XIX} - (\text{XII} - \text{VIII})$
+- b) $\frac{\text{XXII}}{\text{VII}} + \frac{\text{IX}}{\text{IV}}$
+- c) $\frac{\text{XII}}{\text{XII}} - \frac{\text{VII}}{\text{VI}}$
+- d) $\frac{\text{XVI}}{\text{XXI}} - \left(\frac{\text{VII}}{\text{VI}} - \frac{\text{XIX}}{\text{VIII}}\right)$
+
+3.2. Người ta cắt bánh ga-tô (hình tròn) thành các miếng hình dẻ quạt tính từ tâm. Hãy tìm cách chia đều bằng số nhát cắt ít nhất:
 - a) 5 bánh ga-tô cho 6 người.
 - b) 7 bánh ga-tô cho 12 người.
+
 3.3. Số nào lớn hơn và tại sao:
-và
-33333333331?
-102001 + 1
+$$\frac{2222222221}{2222222223} \quad\text{và}\quad \frac{3333333331}{3333333334}?$$
+
 3.4. Phân số nào lớn hơn:
-và
-102005 + 1?
-102005 + 1
-102006 + 1
-3.5. Anh mua hai quyển sách. Sau đó Anh bán lại hai quyển sách đó với cùng một giá. Một
-quyển lỗ 20%, một quyển lãi 20%, do đó tổng thể Anh lỗ 5000 NVD. Hỏi Anh mua giá bao
-nhiêu và bán giá bao nhiêu?
-3.6. Một viên gạch kích thước là các số nguyên (cm), diện tích bề mặt là 340 cm2. Tỷ lệ các
-cạnh là 4 : 5 : 8. Tính thể tích của viên gạch.
+$$\frac{10^{2004} + 1}{10^{2005} + 1} \quad\text{và}\quad \frac{10^{2005} + 1}{10^{2006} + 1}?$$
+
+3.5. Anh mua hai quyển sách. Sau đó Anh bán lại hai quyển sách đó với cùng một giá. Một quyển lỗ 20%, một quyển lãi 20%, do đó tổng thể Anh lỗ 5000 VNĐ. Hỏi Anh mua giá bao nhiêu và bán giá bao nhiêu?
+
+3.6. Một viên gạch kích thước là các số nguyên (cm), diện tích bề mặt là $340\text{ cm}^2$. Tỷ lệ các cạnh là $4 : 5 : 8$. Tính thể tích của viên gạch.
+
 3.7. Người ta viết vài số đầu tiên của dãy số:
-1 1+3
-1+3+5
-2 2+4' 2+4+6' ''·
-Dãy số được viết theo quy luật: số thứ n có tử số là tổng của n số lẻ dầu tiên, mẫu số là tổng
-của n số chẵn đầu tiên. Hỏi số thứ 100 là bao nhiêu?
-3.8. Có bao nhiều khuyên tròn trong hình thứ 100 (hình vẽ)?
-- a) O
-do
-- b) · 88
-- c) 0 00
+$$\frac{1}{2};\; \frac{1 + 3}{2 + 4};\; \frac{1 + 3 + 5}{2 + 4 + 6};\; \dots$$
+Dãy số được viết theo quy luật: số thứ $n$ có tử số là tổng của $n$ số lẻ đầu tiên, mẫu số là tổng của $n$ số chẵn đầu tiên. Hỏi số thứ 100 là bao nhiêu?
+
+3.8. Có bao nhiêu khuyên tròn trong hình thứ 100 (hình vẽ)?
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="480" height="230" viewBox="0 0 480 230" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; font-family: system-ui, sans-serif;">
+    <rect width="480" height="230" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Hàng a) Tam giác -->
+    <g transform="translate(20, 20)">
+      <text x="0" y="35" font-size="14" font-weight="bold" fill="#1e293b">a)</text>
+      <!-- n=1 -->
+      <circle cx="50" cy="30" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      <!-- n=2 (3 khuyên) -->
+      <g transform="translate(100, 15)">
+        <circle cx="15" cy="8" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+      <!-- n=3 (6 khuyên) -->
+      <g transform="translate(180, 8)">
+        <circle cx="22" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="14" cy="21" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="30" cy="21" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="6" cy="35" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="22" cy="35" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="38" cy="35" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+      <!-- n=4 (10 khuyên) -->
+      <g transform="translate(290, 0)">
+        <circle cx="30" cy="6" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="22" cy="20" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="38" cy="20" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="14" cy="34" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="30" cy="34" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="46" cy="34" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="6" cy="48" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="22" cy="48" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="38" cy="48" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="54" cy="48" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- Hàng b) Hình vuông -->
+    <g transform="translate(20, 85)">
+      <text x="0" y="35" font-size="14" font-weight="bold" fill="#1e293b">b)</text>
+      <!-- n=1 -->
+      <circle cx="50" cy="30" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      <!-- n=2 (4 khuyên 2x2) -->
+      <g transform="translate(100, 15)">
+        <circle cx="7" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+      <!-- n=3 (9 khuyên 3x3) -->
+      <g transform="translate(180, 8)">
+        <circle cx="7" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="39" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="39" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="39" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="39" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="39" cy="39" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+      <!-- n=4 (16 khuyên 4x4) -->
+      <g transform="translate(290, 0)">
+        <circle cx="7" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="39" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="55" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="39" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="55" cy="23" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="39" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="39" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="39" cy="39" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="55" cy="39" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="55" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="23" cy="55" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="39" cy="55" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="55" cy="55" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- Hàng c) Khuyên tròn theo lớp -->
+    <g transform="translate(20, 160)">
+      <text x="0" y="30" font-size="14" font-weight="bold" fill="#1e293b">c)</text>
+      <!-- n=1 -->
+      <circle cx="50" cy="25" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      <!-- n=2 -->
+      <g transform="translate(100, 10)">
+        <circle cx="15" cy="8" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="0" cy="24" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="15" cy="24" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="30" cy="24" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+      <!-- n=3 -->
+      <g transform="translate(180, 2)">
+        <circle cx="22" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="7" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="22" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="37" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="-1" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="14" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="29" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="44" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+      <!-- n=4 -->
+      <g transform="translate(290, -5)">
+        <circle cx="30" cy="7" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="15" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="30" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="45" cy="22" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="0" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="15" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="30" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="45" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="60" cy="37" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="-15" cy="52" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="0" cy="52" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="15" cy="52" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="30" cy="52" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="45" cy="52" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="60" cy="52" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+        <circle cx="75" cy="52" r="7" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>
+      </g>
+    </g>
+  </svg>
+</div>
 3.9. Bạn hãy nghĩ một số, cộng số đó với 3, lầy kết quả nhân với 4, cộng với số bạn nghĩ, trừ
 đi 2, lấy số nhận được chia cho 5, đem thương trừ đi số bạn nghĩ. Kết quả sẽ là 2, có đúng
 không?

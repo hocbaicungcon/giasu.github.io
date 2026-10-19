@@ -45,7 +45,7 @@ Sách gồm 4 phần:
 
 ---
 
-## 1 Làm quen với bất đẳng thức
+## 1. Làm quen với bất đẳng thức
 
 ### 1.1 Bất phương trình
 
@@ -346,7 +346,7 @@ $$p(n) < 2^n$$
 
 ---
 
-## 2 Trầm ngâm trong lâu đài Bất Đẳng Thức
+## 2. Trầm ngâm trong lâu đài Bất Đẳng Thức
 
 > *Muốn thấy Toán hãy nhìn bằng mắt của riêng mình!*
 
@@ -530,7 +530,7 @@ $$P(n) = \dfrac{x_1}{x_1 + x_2 + x_3} + \dfrac{x_2}{x_2 + x_3 + x_4} + \dots + \
 
 ---
 
-## 3 Luyện tập
+## 3. Luyện tập
 
 ### 3.1 Áp dụng các BĐT nổi tiếng
 
@@ -628,12 +628,9 @@ Dấu bằng xảy ra khi và chỉ khi $P$ là trọng tâm của tam giác đ�
 
 ---
 
-## 4 Appendix
+## 4. Phụ lục: So sánh phân số đại số (Appendix)
 
-Khi *"Làm Quen Với Không Cân Bằng"* kết thúc thì vô tình trùng hợp với thời điểm GS.TSKH Nguyễn Văn Mậu giảng một bài *"ngắn nhưng học cả tháng chưa chắc hết"*:
-
-### SO SÁNH PHÂN SỐ ĐẠI SỐ
-*Được bật mí - Bí quyết xào nấu BĐT - chúng tôi biên soạn lại thuyết trình để phục vụ các bạn muốn tìm hiểu kĩ bài giảng của Sư Phụ (tên gọi thầy kính trọng và thân mật giữa các thành viên trẻ trong seminar của Hội Toán học Hà Nội). Tất nhiên quá trình biên soạn lại sẽ thiếu một số các ý tưởng chưa nắm bắt được của thầy nhưng cũng sẽ thừa thêm những "tối kiến" chủ quan không thể tránh - theo cách học của mỗi người mà có.*
+Khi *"Làm Quen Với Không Cân Bằng"* kết thúc thì vô tình trùng hợp với thời điểm GS.TSKH Nguyễn Văn Mậu giảng một bài *"ngắn nhưng học cả tháng chưa chắc hết"*. Được bật mí - Bí quyết xào nấu BĐT - chúng tôi biên soạn lại thuyết trình để phục vụ các bạn muốn tìm hiểu kĩ bài giảng của Sư Phụ (tên gọi thầy kính trọng và thân mật giữa các thành viên trẻ trong seminar của Hội Toán học Hà Nội). Tất nhiên quá trình biên soạn lại sẽ thiếu một số các ý tưởng chưa nắm bắt được của thầy nhưng cũng sẽ thừa thêm những "tối kiến" chủ quan không thể tránh - theo cách học của mỗi người mà có.
 
 ---
 

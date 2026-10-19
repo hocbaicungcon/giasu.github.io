@@ -36,12 +36,137 @@ PROBLEMS
   of times you need to press a button in order to turn
   them all into happy faces?
 
-![Hình vẽ Bài 1](/assets/images/108-toan-chon-loc/bai-1.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="340" height="80" viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <!-- Nút 1: Mặt mếu -->
+    <g transform="translate(40, 40)">
+      <circle cx="0" cy="0" r="28" fill="#fef08a" stroke="#1e293b" stroke-width="2"/>
+      <circle cx="-10" cy="-6" r="3.5" fill="#1e293b"/>
+      <circle cx="10" cy="-6" r="3.5" fill="#1e293b"/>
+      <path d="M -14 14 Q 0 2 14 14" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
 
+    <!-- Nút 2: Mặt cười -->
+    <g transform="translate(120, 40)">
+      <circle cx="0" cy="0" r="28" fill="#fef08a" stroke="#1e293b" stroke-width="2"/>
+      <circle cx="-10" cy="-6" r="3.5" fill="#1e293b"/>
+      <circle cx="10" cy="-6" r="3.5" fill="#1e293b"/>
+      <path d="M -14 6 Q 0 20 14 6" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Nút 3: Mặt mếu -->
+    <g transform="translate(200, 40)">
+      <circle cx="0" cy="0" r="28" fill="#fef08a" stroke="#1e293b" stroke-width="2"/>
+      <circle cx="-10" cy="-6" r="3.5" fill="#1e293b"/>
+      <circle cx="10" cy="-6" r="3.5" fill="#1e293b"/>
+      <path d="M -14 14 Q 0 2 14 14" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Nút 4: Mặt cười -->
+    <g transform="translate(280, 40)">
+      <circle cx="0" cy="0" r="28" fill="#fef08a" stroke="#1e293b" stroke-width="2"/>
+      <circle cx="-10" cy="-6" r="3.5" fill="#1e293b"/>
+      <circle cx="10" cy="-6" r="3.5" fill="#1e293b"/>
+      <path d="M -14 6 Q 0 20 14 6" stroke="#1e293b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    </g>
+  </svg>
+</div>
 
 **Bài 2.** Place the numbers 1 to 9 in the empty white boxes so that the 3 horizontal and 3 vertical equations are true. Each digit can be used exactly once. Calculations are done from left to right and from top to bottom.
 
-![Hình vẽ Bài 2](/assets/images/108-toan-chon-loc/bai-2.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="254" height="254" viewBox="0 0 254 254" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; font-family: system-ui, -apple-system, sans-serif;">
+    <g transform="translate(1, 1)">
+      <!-- Lưới 7 hàng x 7 cột, mỗi ô 36x36 -->
+      <!-- Hàng 0 -->
+      <rect x="0" y="0" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="36" y="0" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="54" y="25" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
+      <rect x="72" y="0" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="108" y="0" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="126" y="25" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">÷</text>
+      <rect x="144" y="0" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="180" y="0" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="198" y="24" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">=</text>
+      <rect x="216" y="0" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="234" y="25" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">9</text>
+
+      <!-- Hàng 1 -->
+      <rect x="0" y="36" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="18" y="61" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
+      <rect x="36" y="36" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="72" y="36" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="90" y="61" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">÷</text>
+      <rect x="108" y="36" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="144" y="36" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="162" y="61" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
+      <rect x="180" y="36" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="216" y="36" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+
+      <!-- Hàng 2 -->
+      <rect x="0" y="72" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="36" y="72" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="54" y="97" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">×</text>
+      <rect x="72" y="72" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="108" y="72" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="126" y="97" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
+      <rect x="144" y="72" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="180" y="72" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="198" y="96" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">=</text>
+      <rect x="216" y="72" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="234" y="97" font-size="17" font-weight="bold" fill="#1e293b" text-anchor="middle">26</text>
+
+      <!-- Hàng 3 -->
+      <rect x="0" y="108" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="18" y="131" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">−</text>
+      <rect x="36" y="108" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="72" y="108" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="90" y="133" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
+      <rect x="108" y="108" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="144" y="108" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="162" y="131" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">−</text>
+      <rect x="180" y="108" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="216" y="108" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+
+      <!-- Hàng 4 -->
+      <rect x="0" y="144" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="36" y="144" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="54" y="169" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
+      <rect x="72" y="144" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="108" y="144" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="126" y="169" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle">+</text>
+      <rect x="144" y="144" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="180" y="144" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="198" y="168" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">=</text>
+      <rect x="216" y="144" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="234" y="169" font-size="17" font-weight="bold" fill="#1e293b" text-anchor="middle">16</text>
+
+      <!-- Hàng 5 -->
+      <rect x="0" y="180" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="18" y="204" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">=</text>
+      <rect x="36" y="180" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="72" y="180" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="90" y="204" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">=</text>
+      <rect x="108" y="180" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="144" y="180" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="162" y="204" font-size="19" font-weight="bold" fill="#1e293b" text-anchor="middle">=</text>
+      <rect x="180" y="180" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="216" y="180" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+
+      <!-- Hàng 6 -->
+      <rect x="0" y="216" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="18" y="241" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">8</text>
+      <rect x="36" y="216" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="72" y="216" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="90" y="241" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">10</text>
+      <rect x="108" y="216" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="144" y="216" width="36" height="36" fill="#ffffff" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="162" y="241" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
+      <rect x="180" y="216" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+      <rect x="216" y="216" width="36" height="36" fill="#94a3b8" stroke="#1e293b" stroke-width="1.5"/>
+    </g>
+  </svg>
+</div>
 
 
 **Bài 3.** $ABCD$ is a quadrilateral $\angle BAD = \angle CED = 90^\circ$, $\angle ABC = 135^\circ$, $AB = 18\text{ cm}$, $CE = 15\text{ cm}$, $DE = 36\text{ cm}$. Find the area of the quadrilateral $ABCD$.
@@ -230,11 +355,7 @@ then find the value of $S - T$.
 ![Hình vẽ Bài 23](/assets/images/108-toan-chon-loc/bai-23.png)
 
 
-**Bài 24.** A staircase has 10 steps. If Peter can climb either
-
-## 1 or 2 steps each time, in how many ways can he
-
-reach the top?
+**Bài 24.** A staircase has 10 steps. If Peter can climb either 1 or 2 steps each time, in how many ways can he reach the top?
 Ground
 
 **Bài 25.** The figure shows five circles A, B, C, D and E. They
@@ -308,22 +429,9 @@ Ground
   (That is, find the sums of money that cannot
   be paid by exact change.)
 
-**Bài 31.** The "4" button on my calculator is defective, so
-  I cannot enter numbers which contain the digit 4.
-  Moreover, my calculator does not display the digit
+**Bài 31.** The "4" button on my calculator is defective, so I cannot enter numbers which contain the digit 4. Moreover, my calculator does not display the digit 4 if it is part of an answer. Thus, I cannot enter the calculation $2 \times 14$ and do not attempt to do so. Also, the result of multiplying 3 by 18 is displayed as 5 instead of 54 and the result of multiplying 2 by 71 is displayed as 12 instead of 142. If I multiply a positive one-digit number by a positive two-digit number on my calculator and it displays 26, list all possible number pairs I could have multiplied?
 
 ![Hình vẽ Bài 31](/assets/images/108-toan-chon-loc/bai-31.png)
-
-
-## 4 if it is part of an answer. Thus, I cannot enter
-
-the calculation 2 × 14 and do not attempt to do so.
-Also, the result of multiplying 3 by 18 is displayed
-as 5 instead of 54 and the result of multiplying 2
-by 71 is displayed as 12 instead of 142. If I multiply
-a positive one-digit number by a positive two-digit
-number on my calculator and it displays 26, list all
-possible number pairs I could have multiplied?
 
 **Bài 32.** Find the 2016th digit of number A which is formed
   by following pattern:
@@ -587,15 +695,9 @@ and $\frac{a}{b}$ is an irreducible fraction. Prove that $a$ is a composite numb
   ber? (The factorial sign n! stands for the product of
   all positive integers less than or equal to n.)
 
-**Bài 56.** Each of the following five six-sided die has 1, 2, 3, 4,
+**Bài 56.** Each of the following five six-sided die has 1, 2, 3, 4, 5 and 6 spots on its faces. Which one has a different arrangement of spots from the other four?
 
 ![Hình vẽ Bài 56](/assets/images/108-toan-chon-loc/bai-56.png)
-
-
-## 5 and 6 spots on its faces. Which one has a different
-
-arrangement of spots from the other four?
-(C)
 
 **Bài 57.** The diagram shows that if a rope is folded once and
   be cut in half, it will separate into 3 pieces; and if it
@@ -783,19 +885,9 @@ arrangement of spots from the other four?
 ![Hình vẽ Bài 79](/assets/images/108-toan-chon-loc/bai-79.png)
 
 
-**Bài 80.** In the diagram below, the numbers 1, 2, 3, 4, 5, 6, 7,
+**Bài 80.** In the diagram below, the numbers 1, 2, 3, 4, 5, 6, 7, 8 and 9 are placed one inside each hexagon, so that the sum of the numbers along each of the three sides of the triangle is 19. If you are allowed to rearrange the numbers but still have to keep the sum along the sides equal (can be different from 19), what is the smallest possible sum and what is the largest possible sum?
 
 ![Hình vẽ Bài 80](/assets/images/108-toan-chon-loc/bai-80.png)
-
-
-## 8 and 9 are placed one inside each hexagon, so that
-
-the sum of the numbers along each of the three sides
-of the triangle is 19. If you are allowed to rearrange
-the numbers but still have to keep the sum along
-the sides equal (can be different from 19), what is
-the smallest possible sum and what is the largest
-possible sum^2
 
 **Bài 81.** Place the digits 1 to 6 in the grid so that no digit
   is repeated in a row, column or diagonal.

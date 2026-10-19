@@ -1,0 +1,15 @@
+# credit: giasu.ai.vn
+title: 'Đề luyện thi Toán quốc tế AMC 8'
+description: 'Tuyển tập các câu hỏi thi Toán quốc tế AMC 8 chọn lọc về số học, hình học, vận tốc và tổ hợp có lời giải chi tiết.'
+category: 'Toán học'
+type: 'Bài tập'
+date: '2026-10-18'
+exam_group: 'quốc tế'
+competition: 'AMC 8'
+level: 'Lớp 6–8'
+year: 2024
+language: 'vi-en'
+tags: ['toán quốc tế', 'amc 8', 'số học', 'hình học', 'tư duy logic', 'đề luyện tập']
+exam:
+  duration: 40
+  mode: 'auto'

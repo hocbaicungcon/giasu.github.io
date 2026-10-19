@@ -44,7 +44,7 @@ Việc đăng tải các tư liệu giảng dạy của mình, chúng tôi chỉ
 
 ---
 
-## 1 Các bài toán chia hết
+## 1. Các bài toán chia hết
 
 **Ví dụ 1.** Chứng minh rằng $72 \mid (10^{20} + 8)$.  
 *Lời giải:* $10^{20} + 8$ có ba chữ số tận cùng là $008$ vậy chia hết cho 8 (quy tắc chia hết cho 8) và tổng các chữ số của nó bằng $1 + 0 + 8 = 9$ chia hết cho 9. Do $\gcd(8, 9) = 1$ nên $72 \mid (10^{20} + 8)$.
@@ -80,7 +80,7 @@ Việc đăng tải các tư liệu giảng dạy của mình, chúng tôi chỉ
 
 ---
 
-## 2 Số ước số của một số
+## 2. Số ước số của một số
 
 **Ví dụ 1.** Liệt kê tất cả các ước số của 72.  
 *Đáp số:* 72 có 12 ước số (chỉ xét các ước số dương).  
@@ -107,7 +107,7 @@ Nếu $N = p_1^{\alpha_1} p_2^{\alpha_2} \dots p_k^{\alpha_k}$ thì số ước 
 
 ---
 
-## 3 Các bài toán về số học
+## 3. Các bài toán về số học
 
 **Ví dụ 1.** Những số nguyên $x$ nào thỏa mãn $\dfrac{x + 3}{x - 5}$ cũng là số nguyên?  
 *Hướng dẫn:* $\dfrac{x + 3}{x - 5} = 1 + \dfrac{8}{x - 5}$.
@@ -134,7 +134,7 @@ Nếu $N = p_1^{\alpha_1} p_2^{\alpha_2} \dots p_k^{\alpha_k}$ thì số ước 
 
 ---
 
-## 4 Tận cùng của các số lũy thừa
+## 4. Tận cùng của các số lũy thừa
 
 **Ví dụ 1.** Hãy chỉ ra rằng tổng của 5 số chính phương liên tiếp thì luôn luôn chia hết cho 5.  
 *Hướng dẫn:* Các số tận cùng của dãy các số chính phương liên tiếp lập thành dãy số tuần hoàn.
@@ -167,7 +167,7 @@ Nếu $N = p_1^{\alpha_1} p_2^{\alpha_2} \dots p_k^{\alpha_k}$ thì số ước 
 
 ---
 
-## 5 Các số nguyên tố I
+## 5. Các số nguyên tố I
 
 **Bài 31.** Tổng của 100 số nguyên tố đầu tiên chẵn hay lẻ?
 
@@ -206,7 +206,7 @@ Hỏi mỗi loại có bao nhiêu viên bi?
 
 ---
 
-## 6 Các số nguyên tố II
+## 6. Các số nguyên tố II
 
 **Ví dụ 1.** Hãy chỉ ra rằng nếu số nguyên tố $p > 3$ thì: $3 \mid (p^2 - 1)$.  
 *Hướng dẫn:* Định lý Fermat nhỏ, hay xét số dư khi chia cho 3.
@@ -230,7 +230,7 @@ Hỏi mỗi loại có bao nhiêu viên bi?
 
 ---
 
-## 7 Tại sao không phải là số chính phương
+## 7. Tại sao không phải là số chính phương
 
 **Ví dụ 1.** Tại sao $10^{10} + 2$ không là số chính phương?  
 *Hướng dẫn:* Xét số tận cùng (tận cùng bằng 2 không thể là số chính phương).
@@ -265,7 +265,7 @@ Hỏi mỗi loại có bao nhiêu viên bi?
 
 ---
 
-## 8 Số chính phương
+## 8. Số chính phương
 
 **Ví dụ 1.** Với số nguyên dương $n$ nào thì số $n^2 + n + 41$ là số chính phương?  
 *Đáp số:* $n = 40$.
@@ -301,7 +301,7 @@ Hỏi mỗi loại có bao nhiêu viên bi?
 
 ---
 
-## 9 Phương trình nghiệm nguyên (DIOPHANT)
+## 9. Phương trình nghiệm nguyên (DIOPHANT)
 
 **Ví dụ 1.** Căn phòng của An là hình chữ nhật có số đo các cạnh là các số nguyên (m) và số đo diện tích ($m^2$) là một số ít hơn 1 đơn vị so với độ lớn của chu vi (m). Hỏi chiều dài và chiều rộng của căn phòng?  
 *Lời giải:* $ab + 1 = 2(a + b) \implies ab - 2(a + b) + 4 = 3 \implies (a - 2)(b - 2) = 3$.
@@ -331,7 +331,7 @@ $$\dfrac{1}{a} + \dfrac{1}{b} = \dfrac{1}{7}$$
 
 ---
 
-## 10 Nguyên lý Dirichlet trong số học
+## 10. Nguyên lý Dirichlet trong số học
 
 *Nguyên lý Dirichlet hay còn gọi là nguyên lý chuồng và thỏ.*
 
@@ -351,7 +351,7 @@ $$\dfrac{1}{a} + \dfrac{1}{b} = \dfrac{1}{7}$$
 
 ---
 
-## 11 Chữ số của một số
+## 11. Chữ số của một số
 
 **Bài 69.** Người ta nhân ba số nguyên dương lẻ liên tiếp với nhau, và nhân kết quả nhận được với 5 thì được số có dạng $\overline{ABABAB}$ trong đó $A$ và $B$ là các chữ số. Hỏi ba số đầu tiên là những số nào?
 
@@ -379,7 +379,7 @@ $$\dfrac{1}{a} + \dfrac{1}{b} = \dfrac{1}{7}$$
 
 ---
 
-## 12 Các hệ đếm có cơ số khác nhau
+## 12. Các hệ đếm có cơ số khác nhau
 
 **Bài 81.** Viết tất cả các số từ 1 đến 20 trong hệ đếm cơ số:
 - a) 2;
@@ -525,7 +525,7 @@ $$2 \cdot (333 + 222) = 3102$$
 
 ---
 
-## 13 Một số định nghĩa và định lý cần thiết
+## 13. Một số định nghĩa và định lý cần thiết
 
 **Định nghĩa 1.** Một số nguyên $a$ được gọi là chia hết cho một số nguyên $b$ (khác không) nếu tồn tại một số nguyên $x$ sao cho $a = bx$. Khi đó ta còn nói $a$ là bội số của $b$, hoặc $b$ là ước số của $a$ và kí hiệu $a \ \vdots \ b$ (hoặc $b \mid a$).
 
@@ -573,7 +573,7 @@ Số nhỏ nhất trong các bội số chung nguyên dương được gọi là
 
 ---
 
-## 14 Thay cho lời kết
+## 14. Thay cho lời kết
 
 > *"Trong những năm gần đây sự phát triển của tin học làm thay đổi nhiều ngành của Lý thuyết số. Nếu như trước thập kỷ 70, số học vẫn được xem là một trong những lý thuyết xa rời thực tiễn nhất, thì ngày nay, nhiều thành tựu mới nhất của số học có ứng dụng trực tiếp vào đời sống, như thông tin, mật mã, kỹ thuật máy tính. Một phương hướng mới của số học ra đời và phát triển mạnh mẽ: Số học thuật toán. Có thể nói đó là chiếc cầu nối giữa số học và tin học. Với việc sử dụng rộng rãi máy tính trong nghiên cứu số học, nhiều người cho rằng số học ngày nay đã và đang trở thành một khoa học thực nghiệm!"*  
 > *(Lược trích lời nói đầu của cuốn sách: Hà Huy Khoái – Phạm Huy Điển, **Số Học Thuật Toán**, NXB Đại học Quốc gia Hà Nội, 2003).*
