@@ -1,6 +1,6 @@
 ---
-title: 10 nguyên tắc thiết kế slide PowerPoint đẹp mắt và chuyên nghiệp
-description: Khám phá 10 nguyên tắc thiết kế slide PowerPoint đẹp mắt, chuẩn sư phạm và chuyên nghiệp - quy tắc tối giản, phối màu tương phản, bố cục 6x6, căn lề và chọn font chữ chuẩn.
+title: '10 nguyên tắc thiết kế slide PowerPoint đẹp mắt và chuyên nghiệp'
+description: 'Khám phá 10 nguyên tắc thiết kế slide PowerPoint đẹp mắt, chuẩn sư phạm và chuyên nghiệp: quy tắc tối giản, phối màu tương phản, bố cục 6x6, căn lề và chọn font chữ chuẩn.'
 category: Tin học
 type: Bài học
 date: '2024-10-02'
