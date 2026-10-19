@@ -1,6 +1,6 @@
 // Service worker: keeps the add-in (pages, scripts, icons, KaTeX, QR libraries) and the big CDN files it needs
 // (Office.js, Pyodide/SymPy) for about 30 days, so it opens without a network. Generated into sw.js by tools/build-sw.mjs.
-const VERSION = '33ded566ad';
+const VERSION = '3f68917554';
 const CACHE = 'texcraft-app-' + VERSION, RUNTIME = 'texcraft-runtime', META = 'texcraft-meta';
 const MAX_AGE = 30 * 24 * 3600 * 1000;
 const FILES = [
@@ -161,6 +161,28 @@ const FILES = [
  "./taskpane/taskpane.html",
  "./taskpane/taskpane.js",
  "./taskpane/vendor/jsQR.js",
+ "./taskpane/vendor/mathlive/LICENSE.txt",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_AMS-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Caligraphic-Bold.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Caligraphic-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Fraktur-Bold.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Fraktur-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Main-Bold.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Main-BoldItalic.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Main-Italic.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Main-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Math-BoldItalic.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Math-Italic.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_SansSerif-Bold.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_SansSerif-Italic.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_SansSerif-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Script-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Size1-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Size2-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Size3-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Size4-Regular.woff2",
+ "./taskpane/vendor/mathlive/fonts/KaTeX_Typewriter-Regular.woff2",
+ "./taskpane/vendor/mathlive/mathlive.min.mjs",
  "./taskpane/vendor/qrcode.js",
  "./taskpane/vendor/twemoji/1f308.svg",
  "./taskpane/vendor/twemoji/1f30a.svg",
@@ -364,6 +386,7 @@ const FILES = [
  "./taskpane/vendor/twemoji/2b50.svg",
  "./taskpane/vendor/twemoji/LICENSE-GRAPHICS.txt",
  "./taskpane/vendor/worksheet.js",
+ "./taskpane/visual-editor.js",
  "./taskpane/worksheet-ui.js"
 ];
 const CDN = [/^https:\/\/appsforoffice\.microsoft\.com\//, /^https:\/\/cdn\.jsdelivr\.net\/pyodide\//];

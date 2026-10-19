@@ -165,6 +165,13 @@ test('KaTeX outlines: TrueType glyphs -> polygons -> well-formed EMF; Cambria Ma
   const st = latexToEquationStream('x', { font: 'cambriamath', size: 12 });
   assert.ok(Buffer.from(st).toString('latin1').includes('Cambria Math'));
 });
+test('visual editor: palette snippets become MathLive inserts and MathLive LaTeX is cleaned', async () => {
+  const { toMathliveInsert, cleanLatex } = await import('../taskpane/visual-editor.js');
+  assert.equal(toMathliveInsert('\\frac{@}{}'), '\\frac{#?}{#?}');
+  assert.equal(toMathliveInsert('\\sqrt{@}', true), '\\sqrt{#@}');
+  assert.equal(toMathliveInsert('\\left( \\begin{array}{cc} @ & \\\\ & \\end{array} \\right)'), '\\left( \\begin{array}{cc} #? & #? \\\\ #? & #? \\end{array} \\right)');
+  assert.equal(cleanLatex('\\frac{\\placeholder{}}{2} + x'), '\\frac{}{2} + x');
+});
 test('Solids: hidden (dashed) edges are exactly the ones behind the front faces', async () => {
   const g = await import('../src/figures/geometry.js');
   const dashed = (r) => r.scene.items.filter((it) => it.t === 'line' && it.dash).length;

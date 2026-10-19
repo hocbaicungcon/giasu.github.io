@@ -592,3 +592,13 @@ details.mt-details > summary { cursor: pointer; font-size: 12px; font-weight: 60
 .tb-btn .tb-math .katex-html { white-space: nowrap; }
 .tb-btn { color: var(--fg); }
 .tb-btn.wide { grid-column: span 2; }
+
+/* Visual equation input */
+.ed-input-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 6px 0 3px; }
+.ed-input-head .field-label { margin: 0 !important; }
+.ed-input-head .seg-opt span { padding: 3px 10px; font-size: 12px; }
+#editor-visual { margin-bottom: 4px; }
+#editor-latex[hidden] { display: none; }
+math-field { display: block; width: 100%; box-sizing: border-box; min-height: 64px; padding: 8px 10px; font-size: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); --caret-color: var(--accent); --selection-background-color: color-mix(in srgb, var(--accent) 30%, transparent); --placeholder-color: var(--muted); --contains-highlight-background-color: color-mix(in srgb, var(--accent) 14%, transparent); }
+math-field:focus-within { border-color: var(--accent); box-shadow: var(--focus-ring); outline: none; }
+math-field::part(virtual-keyboard-toggle), math-field::part(menu-toggle) { display: none; }

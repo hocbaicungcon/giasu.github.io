@@ -2,6 +2,7 @@ import { mountMtSettings, mtOptions, mtConvertOptions, classicLayout } from './m
 import * as io from '../src/word-io.js';
 import { attachLatexAutocomplete } from './latex-autocomplete.js';
 import { mountEditorToolbar } from './editor-toolbar.js';
+import { createVisualEditor } from './visual-editor.js';
 import { pickEquation } from '../src/cursor-eq.js';
 import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
 
@@ -195,7 +196,9 @@ $('btn-restore').addEventListener('click', async () => {
 });
 
 // ---------------------------------------------------------------- formula editor
+let visual = null;
 function renderEditorPreview() {
+  if (visual && visual.active()) visual.pull();
   const tex = $('editor-latex')?.value.trim() || '';
   const previewEl = $('editor-preview');
   if (!previewEl) return;
@@ -420,7 +423,18 @@ async function boot() {
   }
   try { if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $('apply-kbd').textContent = '⌘↩'; } catch { /* ignore */ }
   attachLatexAutocomplete($('editor-latex'), { onChange: () => renderEditorPreview() });
-  mountEditorToolbar($('editor-toolbar'), $('editor-latex'));
+  visual = createVisualEditor({ host: $('editor-visual'), textarea: $('editor-latex'), onChange: () => renderEditorPreview() });
+  mountEditorToolbar($('editor-toolbar'), $('editor-latex'), { visual });
+  const KEY_IN = 'texcraft-editor-input';
+  const setInput = async (mode) => {
+    try { await visual.setActive(mode === 'visual'); } catch (e) { $('editor-msg').innerHTML = `<span class="bad">Không tải được ô nhập trực quan: ${esc(e.message)}</span>`; mode = 'latex'; await visual.setActive(false); }
+    const r = document.querySelector(`input[name=editor-input][value=${mode}]`); if (r) r.checked = true;
+    try { localStorage.setItem(KEY_IN, mode); } catch { /* ignore */ }
+    renderEditorPreview();
+  };
+  document.querySelectorAll('input[name=editor-input]').forEach((r) => r.addEventListener('change', () => setInput(r.value)));
+  let saved = 'latex'; try { saved = localStorage.getItem(KEY_IN) || 'latex'; } catch { /* ignore */ }
+  if (saved === 'visual') setInput('visual');
   installSelectionWatcher();
   requestStartupLoad();
   checkUrlTab();

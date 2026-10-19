@@ -20,6 +20,7 @@ Add-in được xây dựng cho Microsoft Word (chạy trên Word Windows, Word 
 2. **Trình soạn thảo & Sửa công thức trực quan (`tab-editor`)**:
    - Tự động nạp công thức đang chọn trong Word vào ô soạn thảo khi đặt con trỏ.
    - Xem trước công thức thời gian thực bằng KaTeX offline (`taskpane/katex/`).
+   - **Nhập trực quan** (`taskpane/visual-editor.js`): ô công thức kiểu MathType (gõ trực tiếp phân số, căn, ma trận…) dùng thư viện MathLive (MIT, `taskpane/vendor/mathlive/`), đồng bộ hai chiều với ô LaTeX; các nút ký hiệu chèn được vào cả hai kiểu.
    - Gợi ý mã lệnh thông minh (`taskpane/latex-autocomplete.js`): Gõ tắt tiếng Việt (`tichphan`, `vocuc`, `phan`...) hoặc `\fra...`, phím Tab nhảy qua các ô placeholder `{}`, tự đóng ngoặc, xóa cặp ngoặc rỗng.
    - Bảng ký tự Toán học trực quan 8 nhóm (`taskpane/editor-toolbar.js`): Cấu trúc, Giải tích, Hệ & ma trận, Phép toán, Tập hợp & logic, Hình học, Hy Lạp, Khoảng cách. 100% nút bấm được vẽ bằng SVG động (`src/mathrender.js`), co giãn responsive tốt ngay cả trên màn hình hẹp (< 300px).
    - Chèn kết quả vào Word dưới dạng **Công thức Word (OMML)** hoặc **MathType OLE Object**.

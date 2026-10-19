@@ -129,7 +129,7 @@ export function insertSnippet(field, snippet) {
   return caret;
 }
 
-export function mountEditorToolbar(root, field) {
+export function mountEditorToolbar(root, field, { visual = null } = {}) {
   if (!root || !field) return;
   let recent = [];
   try { recent = JSON.parse(localStorage.getItem(KEY_RECENT) || '[]'); } catch { recent = []; }
@@ -169,7 +169,7 @@ export function mountEditorToolbar(root, field) {
     const b = ev.target.closest('.tb-btn');
     if (!b) return;
     const snippet = b.dataset.s;
-    insertSnippet(field, snippet);
+    if (visual && visual.active()) visual.insert(snippet); else insertSnippet(field, snippet);
     recent = [snippet, ...recent.filter((k) => k !== snippet)].slice(0, 12);
     try { localStorage.setItem(KEY_RECENT, JSON.stringify(recent)); } catch { /* ignore */ }
     renderRecent();
