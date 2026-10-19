@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>6f1c2d9e-4b7a-4c1e-9a53-7d2f0b8e3a11</Id>
-  <Version>0.1.0.0</Version>
+  <Version>1.0.0.0</Version>
   <ProviderName>TexCraft</ProviderName>
   <DefaultLocale>vi-VN</DefaultLocale>
   <DisplayName DefaultValue="TexCraft Công thức"/>
@@ -79,7 +79,7 @@
         <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
+        <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType trong Word; chuẩn hóa và trộn đề."/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>

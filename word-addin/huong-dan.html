@@ -6,9 +6,17 @@
 <p>Chỉ cần <b>1 file</b> và <b>3 bước</b>. Cài một lần, dùng mãi; add-in tự cập nhật.</p>
 <p><a class="btn" href="manifest.xml" download="manifest.xml">① Tải file manifest.xml</a></p>
 <h2>Máy Mac</h2>
-<ol><li>Mở Finder → menu <b>Đi</b> → <b>Đi tới thư mục…</b> (Cmd+Shift+G), dán: <code>~/Library/Containers/com.microsoft.Word/Data/Documents/wef</code> rồi Enter (chưa có thư mục <code>wef</code> thì tạo mới).</li>
-<li>Kéo <code>manifest.xml</code> vào thư mục đó.</li>
-<li>Thoát hẳn Word (Cmd+Q), mở lại → <b>Chèn → Add-ins → My Add-ins → TexCraft Công thức</b>.</li></ol>
+<ol><li>Mở Finder → nhấn phím tắt <b>Cmd + Shift + G</b> (Đi tới thư mục…), dán: <code>~/Library/Containers/com.microsoft.Word/Data/Documents/wef</code> rồi bấm Enter.<br>
+<i>(Lưu ý: Nếu Finder báo không tìm thấy, hãy dán <code>~/Library/Containers/com.microsoft.Word/Data/Documents</code> rồi tạo một thư mục mới đặt tên là <code>wef</code>).</i></li>
+<li>Kéo file <code>manifest.xml</code> (vừa tải ở trên) vào thư mục <code>wef</code> đó (chọn <b>Thay thế / Replace</b> nếu đã có file cũ).</li>
+<li>Thoát hẳn Word (<b>Cmd + Q</b>), sau đó mở lại Word và mở một tài liệu mới:
+  <ul>
+    <li>Vào tab <b>Trang đầu (Home)</b> hoặc <b>Chèn (Insert)</b>.</li>
+    <li>Ở góc phải thanh công cụ, bấm vào nút <b>Add-ins</b> (hoặc <b>Tiện ích bổ sung</b>, hoặc mũi tên xổ xuống <code>⌄</code> ngay cạnh nút).</li>
+    <li>Tìm mục <b>Developer Add-ins</b> (hoặc <i>Tiện ích bổ sung cho nhà phát triển</i>).</li>
+    <li>Bấm chọn <b>TexCraft Công thức</b> (hoặc nút <b>Add</b>).</li>
+  </ul>
+  Ngay lập tức bảng TexCraft sẽ mở ra ở cạnh phải màn hình Word và tab <b>Trang đầu (Home)</b> sẽ có thêm nút bấm riêng của TexCraft để dùng thuận tiện.</li></ol>
 <h2>Máy Windows</h2>
 <ol><li>Tạo thư mục, ví dụ <code>C:\WordAddins</code>, chép <code>manifest.xml</code> vào, chuột phải thư mục → <b>Give access to → Specific people</b> → Share, để lấy đường dẫn dạng <code>\\TÊN-MÁY\WordAddins</code>.</li>
 <li>Word: <b>File → Options → Trust Center → Trust Center Settings → Trusted Add-in Catalogs</b>, dán đường dẫn vào <b>Catalog URL</b> → <b>Add catalog</b>, tích <b>Show in Menu</b> → OK, rồi thoát hẳn Word.</li>
