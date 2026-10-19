@@ -2905,7 +2905,7 @@ vốn. Tính tiền vốn của một cái quạt máy.
 cái bát còn lại người đó bán với giá 6000 đồng và được lãi 18% so với số tiền
 mua bát. Hỏi giá tiền mua mỗi tá bát là bao nhiêu đồng?
 
-## 6. Tìm giá trị của $x$
+## Chuyên đề 6: Tìm giá trị của $x$
 
 6.1. Thay vào rồi tìm x biết:
 - a) x +5 = 12;
@@ -3315,7 +3315,7 @@ k) 7x + 11 = 88;
 - c) 3(2 + x) = 2(x - 5) + 1;
 - d) 7(x+1) -3 = 3(x-1) +3;
 
-## 8. Hình học
+## Chuyên đề 8: Hình học nâng cao
 
 8.1. Cho các hình sau:
 
@@ -3609,7 +3609,7 @@ thực giữa trường Tiểu học và Ủy ban phường?
 1000 có hình vẽ khu đất hình bình hành
 với chiều cao 4 m, cạnh đáy 7 cm. Tính diện tích thực tế khu đất hình bình
 hành bằng mấy mét vuông?
-## 9. Hình diện tích
+## Chuyên đề 9: Diện tích hình học
 
 9.1. Điền vào chỗ trống với $a, b$ là chiều dài, chiều rộng của hình chữ nhật, $K$ là chu vi và $T$ là diện tích:
 
