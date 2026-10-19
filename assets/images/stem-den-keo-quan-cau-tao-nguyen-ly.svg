@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 540" width="100%" height="auto" style="max-width:680px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Warm Candle Glow -->
+    <radialGradient id="candleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffedd5" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#fdba74" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#f97316" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Flame Gradient -->
+    <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="25%" stop-color="#f97316"/>
+      <stop offset="70%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+
+    <!-- Hot Air Flow Gradient -->
+    <linearGradient id="hotFlowGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ea580c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Cold Air Flow Gradient -->
+    <linearGradient id="coldFlowGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.85"/>
+    </linearGradient>
+
+    <!-- Markers for Arrows -->
+    <marker id="arrowUp" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,6 L3,0 L6,6 Z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowColdL" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrowColdR" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M6,0 L0,3 L6,6 Z" fill="#0284c7"/>
+    </marker>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Container -->
+  <rect width="680" height="540" rx="14" fill="url(#bgGrad)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="140" y="14" width="400" height="34" rx="17" fill="#0f172a" filter="url(#shadow)"/>
+  <text x="340" y="36" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="0.5">SƠ ĐỒ CẤU TẠO &amp; NGUYÊN LÝ ĐÈN KÉO QUÂN</text>
+
+  <!-- ================= BASE AND STAND ================= -->
+  <!-- Base Table / Ground -->
+  <ellipse cx="340" cy="495" rx="200" ry="24" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+  <!-- Lantern Base Cylinder -->
+  <path d="M220,465 C220,480 460,480 460,465 L460,480 C460,495 220,495 220,480 Z" fill="#b45309" stroke="#78350f" stroke-width="1.5"/>
+  <ellipse cx="340" cy="465" rx="120" ry="16" fill="#d97706" stroke="#78350f" stroke-width="1.5"/>
+
+  <!-- Cold Air Vents (Lỗ lấy gió đáy) -->
+  <rect x="250" y="473" width="22" height="10" rx="4" fill="#1e293b"/>
+  <rect x="300" y="475" width="22" height="10" rx="4" fill="#1e293b"/>
+  <rect x="358" y="475" width="22" height="10" rx="4" fill="#1e293b"/>
+  <rect x="408" y="473" width="22" height="10" rx="4" fill="#1e293b"/>
+
+  <!-- ================= CANDLE & GLOW ================= -->
+  <!-- Warm glow aura -->
+  <ellipse cx="340" cy="415" rx="90" ry="60" fill="url(#candleGlow)"/>
+  <!-- Candle Body -->
+  <rect x="331" y="420" width="18" height="36" rx="2" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <!-- Candle Wick -->
+  <line x1="340" y1="420" x2="340" y2="410" stroke="#713f12" stroke-width="2"/>
+  <!-- Flame -->
+  <path d="M340,396 Q347,406 340,413 Q333,406 340,396 Z" fill="url(#flameGrad)" filter="url(#shadow)"/>
+
+  <!-- ================= OUTER FRAME & PAPER (Lồng ngoài) ================= -->
+  <!-- Back/Left/Right Pillars -->
+  <line x1="220" y1="130" x2="220" y2="465" stroke="#78350f" stroke-width="4"/>
+  <line x1="460" y1="130" x2="460" y2="465" stroke="#78350f" stroke-width="4"/>
+  <!-- Translucent Outer Paper (Giấy can / Giấy nến hứng bóng) -->
+  <rect x="222" y="130" width="236" height="335" fill="#fef3c7" fill-opacity="0.28" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ================= CENTRAL AXIS & INNER ROTOR (Lồng trong) ================= -->
+  <!-- Central Fixed Needle/Spindle (Trục kim nhọn cố định) -->
+  <line x1="340" y1="450" x2="340" y2="120" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Sharp Point at the top -->
+  <polygon points="338,120 342,120 340,113" fill="#0f172a"/>
+
+  <!-- Inner Rotating Cylinder Frame (Khung lồng quay bên trong) -->
+  <rect x="260" y="165" width="160" height="235" rx="4" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-dasharray="5,4"/>
+
+  <!-- Paper Cutout Silhouettes on Inner Drum (Hình nhân kéo quân dán trên lồng trong) -->
+  <!-- Silhouette 1: Soldier with Spear -->
+  <g transform="translate(275, 275) scale(0.75)" fill="#1e293b">
+    <circle cx="15" cy="10" r="5"/>
+    <path d="M12,16 L18,16 L20,38 L10,38 Z"/>
+    <line x1="10" y1="20" x2="2" y2="30" stroke="#1e293b" stroke-width="2.5"/>
+    <line x1="18" y1="20" x2="26" y2="28" stroke="#1e293b" stroke-width="2.5"/>
+    <line x1="28" y1="5" x2="24" y2="45" stroke="#0f172a" stroke-width="2"/>
+    <polygon points="28,2 25,7 31,7"/>
+    <line x1="13" y1="38" x2="10" y2="55" stroke="#1e293b" stroke-width="3"/>
+    <line x1="17" y1="38" x2="22" y2="55" stroke="#1e293b" stroke-width="3"/>
+  </g>
+
+  <!-- Silhouette 2: Running Horse / Gallop -->
+  <g transform="translate(365, 280) scale(0.7)" fill="#1e293b">
+    <ellipse cx="28" cy="22" rx="18" ry="10"/>
+    <path d="M40,18 Q46,12 48,6 Q43,8 38,14 Z"/>
+    <circle cx="48" cy="6" r="4"/>
+    <path d="M10,22 Q2,28 6,38 Q10,32 14,24 Z"/>
+    <line x1="38" y1="28" x2="44" y2="48" stroke="#1e293b" stroke-width="3"/>
+    <line x1="32" y1="28" x2="35" y2="46" stroke="#1e293b" stroke-width="3"/>
+    <line x1="18" y1="28" x2="12" y2="48" stroke="#1e293b" stroke-width="3"/>
+    <line x1="22" y1="28" x2="20" y2="45" stroke="#1e293b" stroke-width="3"/>
+  </g>
+
+  <!-- Projected Shadows on Outer Paper Screen (Bóng chiếu lên vách ngoài) -->
+  <g transform="translate(225, 265) scale(0.85)" fill="#78350f" fill-opacity="0.32">
+    <circle cx="15" cy="10" r="6"/>
+    <path d="M11,16 L19,16 L22,40 L9,40 Z"/>
+    <line x1="30" y1="2" x2="25" y2="48" stroke="#78350f" stroke-opacity="0.35" stroke-width="2.5"/>
+    <polygon points="30,-1 27,4 33,4"/>
+    <line x1="12" y1="40" x2="8" y2="58" stroke="#78350f" stroke-opacity="0.35" stroke-width="3.5"/>
+    <line x1="18" y1="40" x2="24" y2="58" stroke="#78350f" stroke-opacity="0.35" stroke-width="3.5"/>
+  </g>
+  <text x="226" y="342" fill="#92400e" font-size="10" font-weight="600" font-style="italic">Bóng in trên giấy mờ</text>
+
+  <!-- Light Rays (Định luật truyền thẳng ánh sáng) -->
+  <line x1="340" y1="405" x2="238" y2="305" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.85"/>
+  <line x1="340" y1="405" x2="442" y2="305" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.85"/>
+
+  <!-- ================= HOT AIR TURBINE PINWHEEL (Chong chóng) ================= -->
+  <!-- Low-friction pivot cap (Chén tì nhọn ma sát thấp) -->
+  <ellipse cx="340" cy="115" rx="8" ry="4" fill="#475569" stroke="#0f172a" stroke-width="1.5"/>
+  <circle cx="340" cy="113" r="3" fill="#38bdf8"/>
+
+  <!-- Vanes / Fan Blades (Cánh quạt nghiêng góc 30-45 độ) -->
+  <g transform="translate(340, 115)" stroke="#1e293b" stroke-width="1.2">
+    <!-- 8 Angled Blades -->
+    <polygon points="0,0 20,-12 65,-8 48,4" fill="#38bdf8" fill-opacity="0.85"/>
+    <polygon points="0,0 12,20 18,62 2,48" fill="#0284c7" fill-opacity="0.85"/>
+    <polygon points="0,0 -12,20 -18,62 -2,48" fill="#38bdf8" fill-opacity="0.85"/>
+    <polygon points="0,0 -20,-12 -65,-8 -48,4" fill="#0284c7" fill-opacity="0.85"/>
+    <polygon points="0,0 35,-5 68,-30 40,-20" fill="#0284c7" fill-opacity="0.85"/>
+    <polygon points="0,0 -35,-5 -68,-30 -40,-20" fill="#38bdf8" fill-opacity="0.85"/>
+    <polygon points="0,0 35,10 65,35 38,25" fill="#38bdf8" fill-opacity="0.85"/>
+    <polygon points="0,0 -35,10 -65,35 -38,25" fill="#0284c7" fill-opacity="0.85"/>
+  </g>
+
+  <!-- Rotation Direction Arrow around Turbine -->
+  <path d="M370,95 A35,12 0 1,1 310,95" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="3,2"/>
+  <polygon points="310,91 303,96 313,101" fill="#2563eb"/>
+  <text x="340" y="85" text-anchor="middle" fill="#1d4ed8" font-size="11" font-weight="700">Chiều quay của tuabin</text>
+
+  <!-- ================= TOP ROOF / COVER (Mái đèn & cửa thoát khí) ================= -->
+  <!-- Roof Top Ring -->
+  <polygon points="200,130 340,80 480,130" fill="#b45309" stroke="#78350f" stroke-width="2"/>
+  <!-- Exhaust Opening at Top Peak (Cửa thoát khí đối lưu) -->
+  <rect x="320" y="72" width="40" height="12" rx="3" fill="#451a03" stroke="#78350f" stroke-width="1.5"/>
+
+  <!-- ================= CONVECTION CURRENTS (Luồng đối lưu) ================= -->
+  <!-- Hot Updraft Arrows -->
+  <path d="M332,380 Q325,250 330,140" fill="none" stroke="url(#hotFlowGrad)" stroke-width="3" marker-end="url(#arrowUp)"/>
+  <path d="M348,380 Q355,250 350,140" fill="none" stroke="url(#hotFlowGrad)" stroke-width="3" marker-end="url(#arrowUp)"/>
+  <path d="M340,360 L340,150" fill="none" stroke="url(#hotFlowGrad)" stroke-width="3" marker-end="url(#arrowUp)"/>
+
+  <!-- Cold Inflow Arrows (Khí lạnh tràn vào) -->
+  <path d="M165,478 L235,478" fill="none" stroke="#0284c7" stroke-width="2.8" marker-end="url(#arrowColdL)"/>
+  <path d="M515,478 L445,478" fill="none" stroke="#0284c7" stroke-width="2.8" marker-end="url(#arrowColdR)"/>
+
+  <!-- Hot Exhaust Flow Out Top -->
+  <path d="M333,70 L330,52" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowUp)"/>
+  <path d="M347,70 L350,52" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowUp)"/>
+
+  <!-- ================= CALLOUT LABELS & ANNOTATIONS ================= -->
+
+  <!-- Top Left: Chong chóng tuabin -->
+  <line x1="275" y1="115" x2="160" y2="105" stroke="#0284c7" stroke-width="1.5"/>
+  <circle cx="275" cy="115" r="3" fill="#0284c7"/>
+  <rect x="25" y="85" width="145" height="42" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="35" y="102" fill="#0369a1" font-size="12" font-weight="700">1. Chong chóng quạt</text>
+  <text x="35" y="118" fill="#475569" font-size="10">Cánh nghiêng đón gió</text>
+
+  <!-- Top Right: Trục quay & Điểm tì -->
+  <line x1="340" y1="113" x2="520" y2="105" stroke="#0f172a" stroke-width="1.5"/>
+  <circle cx="340" cy="113" r="3" fill="#0f172a"/>
+  <rect x="510" y="85" width="145" height="42" rx="6" fill="#ffffff" stroke="#475569" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="520" y="102" fill="#0f172a" font-size="12" font-weight="700">2. Trục kim nhọn</text>
+  <text x="520" y="118" fill="#475569" font-size="10">Điểm tựa ma sát cực nhỏ</text>
+
+  <!-- Mid Left: Vỏ lồng ngoài -->
+  <line x1="222" y1="210" x2="160" y2="210" stroke="#f59e0b" stroke-width="1.5"/>
+  <circle cx="222" cy="210" r="3" fill="#f59e0b"/>
+  <rect x="25" y="190" width="145" height="42" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="35" y="207" fill="#b45309" font-size="12" font-weight="700">3. Vách giấy mờ (ngoài)</text>
+  <text x="35" y="223" fill="#475569" font-size="10">Màn hứng bóng di chuyển</text>
+
+  <!-- Mid Right: Lồng trong gắn hình nhân -->
+  <line x1="420" y1="230" x2="520" y2="230" stroke="#2563eb" stroke-width="1.5"/>
+  <circle cx="420" cy="230" r="3" fill="#2563eb"/>
+  <rect x="510" y="210" width="145" height="42" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="520" y="227" fill="#1d4ed8" font-size="12" font-weight="700">4. Lồng quay &amp; Hình nhân</text>
+  <text x="520" y="243" fill="#475569" font-size="10">Vật cản quang xoay tròn</text>
+
+  <!-- Bottom Left: Ngọn nến phát nhiệt & sáng -->
+  <line x1="331" y1="435" x2="160" y2="435" stroke="#ea580c" stroke-width="1.5"/>
+  <circle cx="331" cy="435" r="3" fill="#ea580c"/>
+  <rect x="25" y="415" width="145" height="42" rx="6" fill="#ffffff" stroke="#ea580c" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="35" y="432" fill="#c2410c" font-size="12" font-weight="700">5. Nguồn nhiệt &amp; Sáng</text>
+  <text x="35" y="448" fill="#475569" font-size="10">Nến đốt nóng &amp; chiếu sáng</text>
+
+  <!-- Bottom Right: Lỗ lấy khí đối lưu -->
+  <line x1="430" y1="480" x2="520" y2="480" stroke="#0284c7" stroke-width="1.5"/>
+  <circle cx="430" cy="480" r="3" fill="#0284c7"/>
+  <rect x="510" y="460" width="145" height="42" rx="6" fill="#ffffff" stroke="#0284c7" stroke-width="1.2" filter="url(#shadow)"/>
+  <text x="520" y="477" fill="#0369a1" font-size="12" font-weight="700">6. Cửa thông gió đáy</text>
+  <text x="520" y="493" fill="#475569" font-size="10">Cấp khí lạnh và Oxi</text>
+</svg>

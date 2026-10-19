@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" width="100%" height="auto" style="max-width:680px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="bgFan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <radialGradient id="hubGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </radialGradient>
+
+    <!-- Marker Arrow -->
+    <marker id="arrowFan" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+
+    <filter id="shadowFan" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="680" height="460" rx="14" fill="url(#bgFan)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="110" y="14" width="460" height="34" rx="17" fill="#0f172a" filter="url(#shadowFan)"/>
+  <text x="340" y="36" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="0.5">BẢN VẼ KỸ THUẬT: CHẾ TẠO CÁNH QUẠT TUABIN KHÍ NÓNG</text>
+
+  <!-- ================= LEFT: TOP VIEW (Bản vẽ mặt phẳng cắt quạt) ================= -->
+  <g transform="translate(185, 235)">
+    <!-- Outer Circle Reference D = 14-16cm -->
+    <circle cx="0" cy="0" r="130" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- Inner Hub Boundary Circle d = 4cm -->
+    <circle cx="0" cy="0" r="38" fill="url(#hubGrad)" stroke="#334155" stroke-width="2"/>
+    <circle cx="0" cy="0" r="8" fill="#0f172a"/>
+    <circle cx="0" cy="0" r="3" fill="#ffffff"/>
+
+    <!-- 12 Blades: Cutting lines (Solid Blue) and Fold Lines (Dashed Orange) -->
+    <!-- Blade 1: 0 deg -->
+    <line x1="38" y1="0" x2="130" y2="0" stroke="#0284c7" stroke-width="2"/>
+    <line x1="38" y1="0" x2="120" y2="28" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 2: 30 deg -->
+    <line x1="32.9" y1="19" x2="112.6" y2="65" stroke="#0284c7" stroke-width="2"/>
+    <line x1="32.9" y1="19" x2="90" y2="90" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 3: 60 deg -->
+    <line x1="19" y1="32.9" x2="65" y2="112.6" stroke="#0284c7" stroke-width="2"/>
+    <line x1="19" y1="32.9" x2="42" y2="120" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 4: 90 deg -->
+    <line x1="0" y1="38" x2="0" y2="130" stroke="#0284c7" stroke-width="2"/>
+    <line x1="0" y1="38" x2="-28" y2="120" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 5: 120 deg -->
+    <line x1="-19" y1="32.9" x2="-65" y2="112.6" stroke="#0284c7" stroke-width="2"/>
+    <line x1="-19" y1="32.9" x2="-90" y2="90" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 6: 150 deg -->
+    <line x1="-32.9" y1="19" x2="-112.6" y2="65" stroke="#0284c7" stroke-width="2"/>
+    <line x1="-32.9" y1="19" x2="-120" y2="28" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 7: 180 deg -->
+    <line x1="-38" y1="0" x2="-130" y2="0" stroke="#0284c7" stroke-width="2"/>
+    <line x1="-38" y1="0" x2="-120" y2="-28" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 8: 210 deg -->
+    <line x1="-32.9" y1="-19" x2="-112.6" y2="-65" stroke="#0284c7" stroke-width="2"/>
+    <line x1="-32.9" y1="-19" x2="-90" y2="-90" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 9: 240 deg -->
+    <line x1="-19" y1="-32.9" x2="-65" y2="-112.6" stroke="#0284c7" stroke-width="2"/>
+    <line x1="-19" y1="-32.9" x2="-42" y2="-120" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 10: 270 deg -->
+    <line x1="0" y1="-38" x2="0" y2="-130" stroke="#0284c7" stroke-width="2"/>
+    <line x1="0" y1="-38" x2="28" y2="-120" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 11: 300 deg -->
+    <line x1="19" y1="-32.9" x2="65" y2="-112.6" stroke="#0284c7" stroke-width="2"/>
+    <line x1="19" y1="-32.9" x2="90" y2="-90" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Blade 12: 330 deg -->
+    <line x1="32.9" y1="-19" x2="112.6" y2="-65" stroke="#0284c7" stroke-width="2"/>
+    <line x1="32.9" y1="-19" x2="120" y2="-28" stroke="#ea580c" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <!-- Dimension D -->
+    <line x1="-130" y1="145" x2="130" y2="145" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="-130" y1="135" x2="-130" y2="155" stroke="#64748b" stroke-width="1.5"/>
+    <line x1="130" y1="135" x2="130" y2="155" stroke="#64748b" stroke-width="1.5"/>
+    <text x="0" y="162" text-anchor="middle" fill="#334155" font-size="12" font-weight="600">Đường kính ngoài D = 14 – 16 cm</text>
+  </g>
+
+  <!-- Rotation Direction Indicator on Plan -->
+  <path d="M215,80 A145,145 0 0,1 285,130" fill="none" stroke="#2563eb" stroke-width="3" marker-end="url(#arrowFan)"/>
+  <text x="250" y="75" fill="#1d4ed8" font-size="11" font-weight="700">Chiều xoay</text>
+
+  <!-- ================= RIGHT: SIDE CROSS-SECTION & AERODYNAMICS ================= -->
+  <!-- Box Container -->
+  <rect x="370" y="70" width="285" height="235" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadowFan)"/>
+  <rect x="370" y="70" width="285" height="32" rx="10" fill="#1e293b"/>
+  <text x="512" y="91" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">NGUYÊN LÝ ĐỘNG LỰC HỌC CÁNH GẬP</text>
+
+  <!-- Inclined Blade Profile -->
+  <g transform="translate(420, 160)">
+    <!-- Horizontal reference line -->
+    <line x1="0" y1="30" x2="180" y2="30" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+    <!-- Angled Blade (Góc nghiêng alpha = 35 độ) -->
+    <line x1="20" y1="55" x2="150" y2="5" stroke="#0f172a" stroke-width="5" stroke-linecap="round"/>
+    <rect x="18" y="5" width="134" height="52" fill="#38bdf8" fill-opacity="0.12" rx="4"/>
+
+    <!-- Angle Arc alpha -->
+    <path d="M120,30 A40,40 0 0,0 135,11" fill="none" stroke="#ea580c" stroke-width="2"/>
+    <text x="145" y="26" fill="#ea580c" font-size="13" font-weight="800">α ≈ 35°</text>
+
+    <!-- Upward Hot Air Vector (Vận tốc khí nóng v) -->
+    <line x1="75" y1="95" x2="75" y2="40" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+    <text x="45" y="75" fill="#dc2626" font-size="11" font-weight="700">Khí nóng (v)</text>
+
+    <!-- Normal Force Vector Fn -->
+    <line x1="85" y1="30" x2="60" y2="-20" stroke="#7c3aed" stroke-width="2.2" marker-end="url(#arrowFan)"/>
+    <text x="32" y="-12" fill="#7c3aed" font-size="11" font-weight="700">Lực nâng (Fn)</text>
+
+    <!-- Horizontal Tangential Force Vector Ft (Lực đẩy làm quay) -->
+    <line x1="85" y1="30" x2="25" y2="30" stroke="#2563eb" stroke-width="3" marker-end="url(#arrowFan)"/>
+    <text x="30" y="44" fill="#2563eb" font-size="12" font-weight="800">Lực đẩy tiếp tuyến (Ft)</text>
+  </g>
+
+  <!-- Aerodynamic formula explanation -->
+  <rect x="382" y="248" width="260" height="46" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="392" y="266" fill="#0f172a" font-size="11" font-weight="600">Lực tiếp tuyến: <tspan fill="#2563eb" font-weight="700">Ft = Fn · sin(α)</tspan></text>
+  <text x="392" y="284" fill="#475569" font-size="10">Góc α tối ưu từ 30° – 45° giúp sinh lực quay mạnh nhất</text>
+
+  <!-- ================= BOTTOM LEGEND & INSTRUCTIONS ================= -->
+  <rect x="370" y="318" width="285" height="120" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadowFan)"/>
+  <text x="382" y="338" fill="#0f172a" font-size="12" font-weight="700">HƯỚNG DẪN THAO TÁC KỸ THUẬT:</text>
+
+  <!-- Legend Item 1 -->
+  <line x1="385" y1="358" x2="415" y2="358" stroke="#0284c7" stroke-width="3"/>
+  <text x="425" y="362" fill="#334155" font-size="11"><tspan font-weight="700" fill="#0369a1">Nét liền xanh:</tspan> Dùng kéo cắt đứt nan quạt</text>
+
+  <!-- Legend Item 2 -->
+  <line x1="385" y1="384" x2="415" y2="384" stroke="#ea580c" stroke-width="2.5" stroke-dasharray="4,3"/>
+  <text x="425" y="388" fill="#334155" font-size="11"><tspan font-weight="700" fill="#c2410c">Nét đứt cam:</tspan> Gấp nghiêng đều cùng 1 chiều</text>
+
+  <!-- Legend Item 3 -->
+  <circle cx="400" cy="410" r="7" fill="url(#hubGrad)" stroke="#334155"/>
+  <circle cx="400" cy="410" r="2" fill="#ffffff"/>
+  <text x="425" y="414" fill="#334155" font-size="11"><tspan font-weight="700" fill="#0f172a">Tâm quạt:</tspan> Dán chén kim loại tì lên kim nhọn</text>
+</svg>
