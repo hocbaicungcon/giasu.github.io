@@ -3,6 +3,7 @@ import { calc, normalizeInput, CalcError } from '../src/sympy-bridge.js';
 import { latexToOmml } from '../src/latex2omml.js';
 import { makeEquationPackage } from '../src/ooxml.js';
 import { mtOptions } from './mt-settings.js';
+import { pickEquation } from '../src/cursor-eq.js';
 import { makeMathTypePackage, browserRender } from '../src/mathtype-object.js';
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -22,6 +23,7 @@ export function mountCalc(root, io, hooks = {}) {
     <fieldset><legend>Phép tính</legend>
       ${field('Thao tác', `<select id="c-op">${OPS.map(([g, list]) => `<optgroup label="${g}">${list.map(([v, l]) => `<option value="${v}">${l}</option>`).join('')}</optgroup>`).join('')}</select>`)}
       ${field('Biểu thức (gõ thường hoặc LaTeX)', '<textarea id="c-expr" rows="3" spellcheck="false"></textarea>')}
+      <div class="btns two"><button class="secondary" id="c-load">Lấy công thức từ Word</button><label class="switch" style="margin:0"><input type="checkbox" id="c-auto" checked><span class="switch-track"></span><span>Tự lấy theo con trỏ</span></label></div>
       <div id="c-opts"></div>
       <div class="btns"><button class="primary" id="c-run">Tính</button></div>
       <div id="c-status" class="muted"></div>
@@ -66,6 +68,27 @@ export function mountCalc(root, io, hooks = {}) {
     } catch (e) { $('c-status').innerHTML = `<span class="bad">${esc(e.message)}</span>`; } finally { btn.disabled = false; }
   }
   $('c-run').addEventListener('click', run);
+
+  // the formula at the cursor in Word (MathType object, Word equation or $LaTeX$) -> the expression box
+  let lastLatex = '';
+  async function loadFromWord(showNotice) {
+    try {
+      const r = pickEquation(await io.readCursorContext());
+      if (!r.eq) { if (showNotice) $('c-status').innerHTML = '<span class="warn">Không thấy công thức tại con trỏ / vùng chọn.</span>'; return; }
+      if (!showNotice && r.eq.latex === lastLatex) return;
+      lastLatex = r.eq.latex;
+      $('c-expr').value = r.eq.latex.replace(/\s+/g, ' ').trim();
+      $('c-expr').dataset.touched = '1';
+      const kind = r.eq.kind === 'mathtype' ? 'MathType' : r.eq.kind === 'native' ? 'Word Equation' : 'LaTeX';
+      $('c-status').innerHTML = `<span class="ok">Đã lấy công thức (${kind})${r.count > 1 ? ` ${r.index + 1}/${r.count}` : ''}.</span>`;
+    } catch (e) { if (showNotice) $('c-status').innerHTML = `<span class="bad">${esc(e.message)}</span>`; }
+  }
+  $('c-load').addEventListener('click', () => loadFromWord(true));
+  document.addEventListener('texcraft:selection', () => {
+    if (!$('c-auto').checked || !root.closest('section')?.classList.contains('active')) return;
+    if (document.activeElement === $('c-expr')) return;   // typing: do not overwrite
+    loadFromWord(false);
+  });
 
   function tex(latex) { try { if (typeof katex !== 'undefined') return katex.renderToString(latex, { throwOnError: false, displayMode: true }); } catch { /* fall back */ } return `<code>${esc(latex)}</code>`; }
   function render() {

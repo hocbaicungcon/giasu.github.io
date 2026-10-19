@@ -354,10 +354,12 @@ $('copy-acct').addEventListener('click', async () => {
 // ---------------------------------------------------------------- auto-load the equation under the cursor
 let autoTimer = null, lastAutoSig = '', ignoreAutoUntil = 0;
 function onSelectionChanged() {
-  if (!$('editor-auto')?.checked || !$('tab-editor')?.classList.contains('active')) return;
   if (Date.now() < ignoreAutoUntil) return;
   clearTimeout(autoTimer);
   autoTimer = setTimeout(async () => {
+    // other tabs (Tính toán) listen to this event and read the cursor themselves
+    document.dispatchEvent(new CustomEvent('texcraft:selection'));
+    if (!$('editor-auto')?.checked || !$('tab-editor')?.classList.contains('active')) return;
     if (document.activeElement === $('editor-latex')) return;   // the user is typing: do not overwrite
     try {
       const r = pickEquation(await io.readCursorContext());
