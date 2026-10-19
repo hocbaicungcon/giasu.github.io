@@ -48,3 +48,5 @@ export function previewReplace(scanned, opts) {
 }
 
 export { convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml };
+
+export { convertNativeToMathType, makeMathTypePackage, browserRender } from './mathtype-object.js';

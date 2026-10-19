@@ -14,30 +14,33 @@
 <nav role="tablist">
   <button role="tab" aria-selected="true" data-tab="eq">Công thức</button>
   <button role="tab" aria-selected="false" data-tab="editor">Soạn thảo</button>
-  <button role="tab" aria-selected="false" data-tab="replace">Tìm &amp; thay</button>
+  <button role="tab" aria-selected="false" data-tab="figures">Hình vẽ</button>
+  <button role="tab" aria-selected="false" data-tab="calc">Tính toán</button>
   <button role="tab" aria-selected="false" data-tab="exam">Đề thi</button>
   <button role="tab" aria-selected="false" data-tab="about">Giới thiệu</button>
-  <button role="tab" aria-selected="false" data-tab="diag">Chẩn đoán</button>
 </nav>
 
 <section id="tab-eq" class="active">
   <div class="notice">Add-in chỉ ghi vào tài liệu khi bạn bấm nút <b>Chuyển</b>. Hãy làm việc trên <b>bản sao</b>; Word chưa gộp các thay đổi thành một bước Hoàn tác (Ctrl/Cmd+Z nhiều lần, hoặc nút “Khôi phục” bên dưới).</div>
   <fieldset><legend>1. Quét</legend>
-    <div class="row"><button class="primary" id="btn-scan">Quét toàn bộ tài liệu</button><span id="scan-summary" class="muted"></span></div>
-    <label class="inline"><input type="checkbox" id="only-bad"> chỉ hiện công thức không đọc được</label>
+    <div class="btns"><button class="primary" id="btn-scan">Quét toàn bộ tài liệu</button></div>
+    <div id="scan-summary" class="muted scan-summary"></div>
+    <label class="switch"><input type="checkbox" id="only-bad"><span class="switch-track"></span><span>Chỉ hiện công thức không đọc được</span></label>
     <div class="scroll"><table id="eq-table"><thead><tr><th>#</th><th>Đoạn</th><th>LaTeX</th><th></th></tr></thead><tbody></tbody></table></div>
   </fieldset>
-  <fieldset><legend>2. Chuyển sang công thức Word</legend>
-    <div class="row" style="margin-bottom:8px">
-      <label class="inline"><input type="checkbox" id="opt-src-mt" checked> MathType</label>
-      <label class="inline"><input type="checkbox" id="opt-src-latex" checked> LaTeX ($...$, $$...$$, \(...\), \[...\])</label>
-    </div>
-    <label><input type="radio" name="scope" value="selection" checked> Đoạn đang chọn</label>
-    <label><input type="radio" name="scope" value="all"> Toàn bộ tài liệu</label>
+  <fieldset><legend>2. Chuyển công thức</legend>
+    <div class="seg-row"><span class="seg-title">Chuyển thành</span><div class="seg"><label class="seg-opt"><input type="radio" name="target" value="word" checked><span>Công thức Word</span></label><label class="seg-opt"><input type="radio" name="target" value="mathtype"><span>MathType</span></label></div></div>
+    <div class="hint">Nguồn: MathType → Word; hoặc Word / LaTeX → MathType (tạo đối tượng MathType mới, máy không cần cài MathType để xem; sửa bằng MathType khi có).</div>
+    <div class="subhead">Nguồn cần chuyển</div>
+    <label><input type="checkbox" id="opt-src-mt" checked> MathType</label>
+    <label><input type="checkbox" id="opt-src-latex" checked> LaTeX ($…$, $$…$$, \(…\), \[…\])</label>
+    <div class="subhead">Phạm vi</div>
+    <div class="seg-row"><div class="seg"><label class="seg-opt"><input type="radio" name="scope" value="selection" checked><span>Đoạn đang chọn</span></label><label class="seg-opt"><input type="radio" name="scope" value="all"><span>Toàn bộ tài liệu</span></label></div></div>
+    <div class="subhead">Tuỳ chọn</div>
     <label><input type="checkbox" id="opt-display" checked> Đoạn chỉ có một công thức → công thức riêng dòng (căn giữa)</label>
     <label><input type="checkbox" id="opt-mode"> Thay cả đoạn (mặc định: thay phần nội dung, giữ dấu ¶)</label>
     <label><input type="checkbox" id="opt-backup"> Tôi đã lưu một bản sao tài liệu</label>
-    <div class="row"><button class="primary" id="btn-convert" disabled>Chuyển</button><button class="secondary" id="btn-restore" disabled>Khôi phục lần chuyển gần nhất</button></div>
+    <div class="btns two"><button class="primary" id="btn-convert" disabled>Chuyển</button><button class="secondary" id="btn-restore" disabled>Khôi phục</button></div>
     <progress id="progress" value="0" max="1" hidden></progress>
     <div id="convert-summary"></div>
   </fieldset>
@@ -47,9 +50,10 @@
   <fieldset>
     <legend>Soạn &amp; Sửa công thức tại con trỏ Word</legend>
     <div class="row" style="margin-bottom:8px">
-      <button class="secondary" id="btn-load-sel" style="flex:1">⚡ Lấy công thức từ Word</button>
-      <button class="secondary" id="btn-clear-editor">Xóa trắng</button>
+      <button class="secondary tb-action" id="btn-load-sel" title="Nạp công thức đang chọn trong Word vào ô LaTeX" style="flex:1 1 0"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M3 2l9 5-4 1.2L6.8 13z'/></svg><span>Lấy từ Word</span></button>
+      <button class="secondary tb-action" id="btn-clear-editor" title="Xóa trắng ô LaTeX" style="flex:1 1 0"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M9.5 2.5l4 4-6 6H4l-1.5-1.5a1 1 0 010-1.4z'/><path d='M6 6l4 4'/><path d='M7.5 12.5H14'/></svg><span>Xóa trắng</span></button>
     </div>
+    <label class="inline" style="margin-bottom:6px"><input type="checkbox" id="editor-auto" checked> Tự nạp công thức khi bấm vào công thức trong Word</label>
     <div id="editor-status" class="muted" style="margin-bottom:8px;font-size:11.5px">Đặt con trỏ tại công thức trong Word rồi bấm “Lấy công thức”, hoặc soạn mới bên dưới.</div>
 
     <div class="field-label" style="font-weight:600;margin-bottom:4px">Xem trước trực tiếp:</div>
@@ -58,115 +62,29 @@
     <div class="field-label" style="font-weight:600;margin-bottom:4px">Mã LaTeX:</div>
     <textarea id="editor-latex" rows="3" placeholder="Nhập mã LaTeX, ví dụ: \frac{-b \pm \sqrt{\Delta}}{2a} hoặc bấm các nút bên dưới"></textarea>
 
-    <div class="symbol-palette" style="margin-top:8px">
-      <div class="sym-tabs">
-        <button type="button" class="sym-tab-btn active" data-group="basic">Cơ bản</button>
-        <button type="button" class="sym-tab-btn" data-group="algebra">Giải tích</button>
-        <button type="button" class="sym-tab-btn" data-group="geom">Hình / Vector</button>
-        <button type="button" class="sym-tab-btn" data-group="cases">Hệ / Ngoặc</button>
-        <button type="button" class="sym-tab-btn" data-group="greek">Ký hiệu</button>
-      </div>
-      
-      <div class="sym-panel active" id="sym-group-basic">
-        <button type="button" class="sym-btn" data-ins="\frac{a}{b}" title="Phân số">𝑎/𝑏</button>
-        <button type="button" class="sym-btn" data-ins="\sqrt{x}" title="Căn bậc hai">√𝑥</button>
-        <button type="button" class="sym-btn" data-ins="\sqrt[n]{x}" title="Căn bậc n">ⁿ√𝑥</button>
-        <button type="button" class="sym-btn" data-ins="^{2}" title="Số mũ">𝑥²</button>
-        <button type="button" class="sym-btn" data-ins="_{1}" title="Chỉ số dưới">𝑥₁</button>
-        <button type="button" class="sym-btn" data-ins="_{1}^{2}" title="Vừa mũ vừa dưới">𝑥₁²</button>
-        <button type="button" class="sym-btn" data-ins="\pm" title="Cộng trừ">±</button>
-        <button type="button" class="sym-btn" data-ins="\cdot" title="Nhân">·</button>
-        <button type="button" class="sym-btn" data-ins="\div" title="Chia">÷</button>
-        <button type="button" class="sym-btn" data-ins="\ne" title="Khác">≠</button>
-        <button type="button" class="sym-btn" data-ins="\le" title="Nhỏ hơn hoặc bằng">≤</button>
-        <button type="button" class="sym-btn" data-ins="\ge" title="Lớn hơn hoặc bằng">≥</button>
-        <button type="button" class="sym-btn" data-ins="\approx" title="Xấp xỉ">≈</button>
-        <button type="button" class="sym-btn" data-ins="\times" title="Dấu nhân chéo">×</button>
-      </div>
-
-      <div class="sym-panel" id="sym-group-algebra" hidden>
-        <button type="button" class="sym-btn" data-ins="\int_{a}^{b} f(x)\,dx" title="Tích phân xác định">∫ₐᵇ</button>
-        <button type="button" class="sym-btn" data-ins="\int f(x)\,dx" title="Tích phân bất định">∫</button>
-        <button type="button" class="sym-btn" data-ins="\sum_{i=1}^{n}" title="Tổng">∑</button>
-        <button type="button" class="sym-btn" data-ins="\lim_{x \to \infty}" title="Giới hạn">lim</button>
-        <button type="button" class="sym-btn" data-ins="\infty" title="Vô cực">∞</button>
-        <button type="button" class="sym-btn" data-ins="f'(x)" title="Đạo hàm">𝑓′(𝑥)</button>
-        <button type="button" class="sym-btn" data-ins="\log_{a}{b}" title="Logarit">logₐ𝑏</button>
-        <button type="button" class="sym-btn" data-ins="\ln{x}" title="Logarit tự nhiên">ln</button>
-        <button type="button" class="sym-btn" data-ins="\sin{x}" title="Sin">sin</button>
-        <button type="button" class="sym-btn" data-ins="\cos{x}" title="Cos">cos</button>
-        <button type="button" class="sym-btn" data-ins="\tan{x}" title="Tan">tan</button>
-      </div>
-
-      <div class="sym-panel" id="sym-group-geom" hidden>
-        <button type="button" class="sym-btn" data-ins="\vec{a}" title="Vectơ a">a⃗</button>
-        <button type="button" class="sym-btn" data-ins="\vec{AB}" title="Vectơ AB">AB⃗</button>
-        <button type="button" class="sym-btn" data-ins="|\vec{a}|" title="Độ dài vectơ">|a⃗|</button>
-        <button type="button" class="sym-btn" data-ins="\widehat{ABC}" title="Góc ABC">∠ABC</button>
-        <button type="button" class="sym-btn" data-ins="^{\circ}" title="Ký hiệu độ">°</button>
-        <button type="button" class="sym-btn" data-ins="\perp" title="Vuông góc">⊥</button>
-        <button type="button" class="sym-btn" data-ins="\parallel" title="Song song">∥</button>
-        <button type="button" class="sym-btn" data-ins="\triangle ABC" title="Tam giác">△ABC</button>
-        <button type="button" class="sym-btn" data-ins="\sim" title="Đồng dạng">∼</button>
-        <button type="button" class="sym-btn" data-ins="\equiv" title="Trùng / Đồng nhất">≡</button>
-      </div>
-
-      <div class="sym-panel" id="sym-group-cases" hidden>
-        <button type="button" class="sym-btn" data-ins="\begin{cases} x + y = 1 \\ x - y = 0 \end{cases}" title="Hệ phương trình (ngoặc nhọn)">{ Hệ</button>
-        <button type="button" class="sym-btn" data-ins="\left[\begin{matrix} x = 1 \\ x = 2 \end{matrix}\right." title="Dấu ngoặc vuông hoặc">[ Hoặc</button>
-        <button type="button" class="sym-btn" data-ins="\left( x \right)" title="Ngoặc tròn">( x )</button>
-        <button type="button" class="sym-btn" data-ins="\left[ x \right]" title="Ngoặc vuông">[ x ]</button>
-        <button type="button" class="sym-btn" data-ins="\left| x \right|" title="Trị tuyệt đối">| x |</button>
-        <button type="button" class="sym-btn" data-ins="\left\{ x \right\}" title="Ngoặc nhọn">{ x }</button>
-      </div>
-
-      <div class="sym-panel" id="sym-group-greek" hidden>
-        <button type="button" class="sym-btn" data-ins="\alpha">α</button>
-        <button type="button" class="sym-btn" data-ins="\beta">β</button>
-        <button type="button" class="sym-btn" data-ins="\gamma">γ</button>
-        <button type="button" class="sym-btn" data-ins="\Delta">Δ</button>
-        <button type="button" class="sym-btn" data-ins="\pi">π</button>
-        <button type="button" class="sym-btn" data-ins="\theta">θ</button>
-        <button type="button" class="sym-btn" data-ins="\lambda">λ</button>
-        <button type="button" class="sym-btn" data-ins="\omega">ω</button>
-        <button type="button" class="sym-btn" data-ins="\in">∈</button>
-        <button type="button" class="sym-btn" data-ins="\notin">∉</button>
-        <button type="button" class="sym-btn" data-ins="\subset">⊂</button>
-        <button type="button" class="sym-btn" data-ins="\cup">∪</button>
-        <button type="button" class="sym-btn" data-ins="\cap">∩</button>
-        <button type="button" class="sym-btn" data-ins="\emptyset">∅</button>
-        <button type="button" class="sym-btn" data-ins="\Rightarrow">⇒</button>
-        <button type="button" class="sym-btn" data-ins="\Leftrightarrow">⇔</button>
-      </div>
-    </div>
+    <div id="editor-toolbar" class="editor-toolbar"></div>
 
     <div style="margin: 10px 0 6px">
-      <label class="inline"><input type="checkbox" id="editor-display"> Công thức riêng dòng (Display Math / Căn giữa)</label>
+      <label class="switch"><input type="checkbox" id="editor-display"><span class="switch-track"></span><span>Công thức riêng dòng (căn giữa)</span></label>
+      <div class="seg-row"><span class="seg-title">Ghi vào Word dưới dạng</span><div class="seg">
+        <label class="seg-opt"><input type="radio" name="editor-format" value="word" checked><span>Công thức Word</span></label>
+        <label class="seg-opt"><input type="radio" name="editor-format" value="mathtype"><span>MathType</span></label>
+      </div></div>
     </div>
 
     <div class="row">
-      <button class="primary" id="btn-apply-editor" style="flex:1">✦ Cập nhật / Chèn vào Word</button>
+      <button class="primary" id="btn-apply-editor" style="flex:1"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M3 8.5l3.2 3.2L13 5'/></svg> Cập nhật / Chèn vào Word <kbd class="kbd" id="apply-kbd">Ctrl+Enter</kbd></button>
     </div>
     <div id="editor-msg" style="margin-top:6px"></div>
   </fieldset>
 </section>
 
-<section id="tab-replace">
-  <fieldset><legend>Tìm &amp; thay trên LaTeX của mọi công thức</legend>
-    <label>Tìm <input type="text" id="find" placeholder="vd. \dfrac"></label>
-    <label>Thay bằng <input type="text" id="replace" placeholder="vd. \frac"></label>
-    <div class="row">
-      <label class="inline"><input type="checkbox" id="opt-regex"> biểu thức chính quy</label>
-      <label class="inline"><input type="checkbox" id="opt-case" checked> phân biệt hoa/thường (LaTeX phân biệt \Rightarrow và \rightarrow)</label>
-      <label class="inline"><input type="checkbox" id="opt-mt" checked> gồm cả MathType (chuyển sang công thức Word)</label>
-    </div>
-    <div class="row"><button class="secondary" id="btn-preview">Xem trước</button><button class="primary" id="btn-apply" disabled>Áp dụng</button></div>
-    <div id="preview-summary" class="muted"></div>
-    <div class="scroll"><table id="preview-table"><tbody></tbody></table></div>
-    <label><input type="checkbox" id="rep-backup"> Tôi đã lưu một bản sao tài liệu</label>
-    <progress id="progress2" value="0" max="1" hidden></progress>
-    <div id="apply-summary"></div>
-  </fieldset>
+<section id="tab-figures">
+  <div id="figures-root"></div>
+</section>
+
+<section id="tab-calc">
+  <div id="calc-root"></div>
 </section>
 
 <section id="tab-exam">
@@ -185,14 +103,18 @@
     <div class="row"><button class="secondary" id="copy-acct">Sao chép số tài khoản</button><span id="acct-msg" class="muted"></span></div>
     <p class="muted">Xin chân thành cảm ơn!</p>
   </fieldset>
+  <fieldset><legend>Dùng khi mất mạng</legend>
+    <div id="offline-status" class="muted">Đang kiểm tra…</div>
+    <div class="btns"><button class="secondary" id="btn-offline-sympy">Tải sẵn SymPy để tính toán offline</button></div>
+    <div class="hint" id="offline-sympy-status"></div>
+  </fieldset>
+  <details class="tech">
+    <summary>Chẩn đoán kỹ thuật</summary>
+    <div class="btns two"><button class="secondary" id="btn-env">Kiểm tra Office.js</button><button class="secondary" id="btn-dump">Xem OOXML đoạn chọn</button></div>
+    <div class="log" id="diag-log">Chưa chạy.</div>
+  </details>
 </section>
 
-<section id="tab-diag">
-  <fieldset><legend>Kiểm tra môi trường</legend>
-    <div class="row"><button class="secondary" id="btn-env">Kiểm tra Office.js</button><button class="secondary" id="btn-dump">Xem OOXML đoạn đang chọn</button></div>
-    <div class="log" id="diag-log">Chưa chạy.</div>
-  </fieldset>
-</section>
 <script type="module" src="taskpane.js"></script>
 </body>
 </html>

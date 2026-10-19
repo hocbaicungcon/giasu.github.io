@@ -1,5 +1,7 @@
 import * as io from '../src/word-io.js';
-import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml } from '../src/app-core.js';
+import { attachLatexAutocomplete } from './latex-autocomplete.js';
+import { mountEditorToolbar } from './editor-toolbar.js';
+import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -12,6 +14,14 @@ function switchTab(name) {
   if (!b) return;
   document.querySelectorAll('nav button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
   document.querySelectorAll('section').forEach((s) => s.classList.toggle('active', s.id === 'tab-' + name));
+  if (name === 'figures' && !state.figuresLoaded) {
+    state.figuresLoaded = true;
+    import('./figures-ui.js').then((m) => m.mountFigures($('figures-root'), io)).catch((e) => { $('figures-root').textContent = 'Không tải được mô-đun hình vẽ: ' + e.message; });
+  }
+  if (name === 'calc' && !state.calcLoaded) {
+    state.calcLoaded = true;
+    import('./calc-ui.js').then((m) => m.mountCalc($('calc-root'), io, { openEditor: (latex) => { $('editor-latex').value = latex; switchTab('editor'); renderEditorPreview(); } })).catch((e) => { $('calc-root').textContent = 'Không tải được mô-đun tính toán: ' + e.message; });
+  }
   if (name === 'exam' && !state.examLoaded) {
     state.examLoaded = true;
     import('./exam-ui.js').then((m) => m.mountExam($('exam-root'), io)).catch((e) => { $('exam-root').textContent = 'Không tải được mô-đun đề thi: ' + e.message; });
@@ -39,7 +49,6 @@ window.addEventListener('hashchange', checkUrlTab);
 function afterWrite(res, backup) {
   state.scanned = null;
   lastPreview = [];
-  $('btn-apply').disabled = true;
   const same = res.before === res.after;
   state.lastBackup = same ? backup : null;
   $('btn-restore').disabled = !same;
@@ -104,6 +113,7 @@ async function paragraphsToProcess(scope, onProgress, { convertMathType, convert
     const kinds = [];
     if (convertMathType) kinds.push('mathtype');
     if (convertLatex) kinds.push('latex');
+    if (document.querySelector('input[name=target]:checked')?.value === 'mathtype') kinds.push('native');
     const indexes = [...new Set(s.equations.filter((e) => kinds.includes(e.kind) && e.latex !== null).map((e) => e.para))].sort((a, b) => a - b);
     return { scope: { kind: 'all' }, items: await io.readParagraphs({ kind: 'indexes', indexes }, onProgress) };
   }
@@ -126,19 +136,25 @@ async function convert() {
     const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { convertMathType, convertLatex });
     let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
     const reasons = {}, writes = [], backup = [];
-    items.forEach((it) => {
-      const r = convertMathTypeInPackage(it.pkg, {
-        convertMathType,
-        convertLatex,
-        display: $('opt-display').checked
-      });
+    const toMathType = document.querySelector('input[name=target]:checked')?.value === 'mathtype';
+    for (const it of items) {
+      let r;
+      if (toMathType) {
+        // LaTeX text -> Word equation first, then every Word equation -> MathType object
+        const a = convertMathTypeInPackage(it.pkg, { convertMathType: false, convertLatex, display: false });
+        const b = await convertNativeToMathType(a.pkg, { render: browserRender });
+        r = { converted: b.converted, convertedLatex: a.convertedLatex || 0, convertedMathType: 0, kept: [...a.kept, ...b.kept], changed: b.changed, pkg: b.changed ? b.pkg : a.pkg };
+        if (!b.changed && a.changed) r.converted = a.converted;
+      } else {
+        r = convertMathTypeInPackage(it.pkg, { convertMathType, convertLatex, display: $('opt-display').checked });
+      }
       converted += r.converted;
       convertedMathType += (r.convertedMathType || 0);
       convertedLatex += (r.convertedLatex || 0);
       kept += r.kept.length;
       r.kept.forEach((k) => { reasons[k.reason] = (reasons[k.reason] || 0) + 1; });
       if (r.changed) { writes.push({ index: it.index, pkg: r.pkg }); backup.push({ index: it.index, pkg: it.pkg }); }
-    });
+    }
     if (!writes.length) { $('convert-summary').innerHTML = `Không có gì để chuyển.${kept ? ` Giữ nguyên: ${kept}.` : ''}`; return; }
     $('convert-summary').textContent = `Đang ghi ${writes.length} đoạn…`;
     const res = await io.writeParagraphs(scope, writes, writeMode(), (d, t) => progress(bar, t + d, t * 2));
@@ -164,44 +180,6 @@ $('btn-restore').addEventListener('click', async () => {
     $('convert-summary').innerHTML = '<span class="ok">Đã khôi phục các đoạn gốc.</span>';
     $('btn-restore').disabled = true;
   } catch (e) { $('convert-summary').innerHTML = `<span class="bad">Không khôi phục được: ${esc(e.message)}</span>`; }
-});
-
-// ---------------------------------------------------------------- find / replace
-const replaceOpts = () => ({ find: $('find').value, replace: $('replace').value, regex: $('opt-regex').checked, matchCase: $('opt-case').checked, includeMathType: $('opt-mt').checked });
-$('btn-preview').addEventListener('click', async () => {
-  try {
-    $('preview-summary').textContent = 'Đang quét…';
-    await scan();
-    lastPreview = previewReplace(state.scanned, replaceOpts());
-    $('preview-summary').innerHTML = lastPreview.length ? `<b>${lastPreview.length}</b> công thức sẽ đổi (chưa ghi gì vào tài liệu).` : 'Không có công thức nào khớp.';
-    $('preview-table').tBodies[0].innerHTML = lastPreview.slice(0, 300).map((r) => `<tr><td>${r.n + 1}</td><td class="diff"><div><del class="tex">${esc(r.before)}</del></div><div><ins class="tex">${esc(r.after)}</ins></div></td><td><span class="badge ${r.kind === 'mathtype' ? 'ok' : 'native'}">${r.kind === 'mathtype' ? 'MathType→Word' : 'Word'}</span></td></tr>`).join('');
-    $('btn-apply').disabled = !lastPreview.length;
-  } catch (e) { $('preview-summary').innerHTML = `<span class="bad">${esc(e.message)}</span>`; }
-});
-$('btn-apply').addEventListener('click', async () => {
-  if (!$('rep-backup').checked) { $('apply-summary').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
-  const bar = $('progress2');
-  $('btn-apply').disabled = true;
-  try {
-    if (!lastPreview.length || !state.scanned) throw new Error('Hãy bấm “Xem trước” lại (tài liệu đã thay đổi).');
-    const opts = replaceOpts();
-    const transform = makeTransform(opts);
-    const indexes = [...new Set(lastPreview.map((r) => r.para))].sort((a, b) => a - b);
-    if (!state.scanned.mapped) throw new Error('Số đoạn trong OOXML không khớp với tài liệu nên không thể xác định đoạn cần sửa. Hãy dùng chuyển đổi trong phạm vi đoạn đang chọn.');
-    const items = await io.readParagraphs({ kind: 'indexes', indexes }, (d, t) => progress(bar, d, t * 2));
-    const writes = [], backup = [];
-    let changed = 0, failed = 0;
-    items.forEach((it) => {
-      const r = rewriteEquations(it.pkg, transform, { includeMathType: opts.includeMathType, display: $('opt-display').checked });
-      changed += r.changed; failed += r.failed.length;
-      if (r.changed) { writes.push({ index: it.index, pkg: r.pkg }); backup.push({ index: it.index, pkg: it.pkg }); }
-    });
-    const res = await io.writeParagraphs({ kind: 'all' }, writes, writeMode(), (d, t) => progress(bar, t + d, t * 2));
-    afterWrite(res, { scope: { kind: 'all' }, items: backup, mode: writeMode() });
-    $('apply-summary').innerHTML = `<b class="ok">Đã sửa ${changed}</b> công thức${failed ? `, <b class="warn">${failed} không ghi được</b>` : ''}.` +
-      (res.before !== res.after ? ` <span class="warn">Số đoạn ${res.before} → ${res.after}.</span>` : '');
-  } catch (e) { $('apply-summary').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
-  finally { $('btn-apply').disabled = false; }
 });
 
 // ---------------------------------------------------------------- formula editor
@@ -293,10 +271,11 @@ async function applyFormulaToWord() {
   if (msgEl) msgEl.textContent = 'Đang chèn vào Word…';
   try {
     const isDisplay = $('editor-display')?.checked ?? false;
-    const omml = latexToOmml(tex, { display: isDisplay });
-    const pkg = makeEquationPackage(omml);
+    const asMathType = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype';
+    const pkg = asMathType ? await makeMathTypePackage(tex, { render: browserRender, inline: !isDisplay }) : makeEquationPackage(latexToOmml(tex, { display: isDisplay }));
+    ignoreAutoUntil = Date.now() + 1200;
     await io.replaceSelection(pkg);
-    if (msgEl) msgEl.innerHTML = '<span class="ok">✦ Đã cập nhật công thức vào Word thành công (chuẩn Word Equation).</span>';
+    if (msgEl) msgEl.innerHTML = `<span class="ok">Đã cập nhật công thức vào Word thành công (${asMathType ? 'đối tượng MathType' : 'chuẩn Word Equation'}).</span>`;
   } catch (e) {
     if (msgEl) msgEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
   }
@@ -371,6 +350,39 @@ $('copy-acct').addEventListener('click', async () => {
 });
 
 // ---------------------------------------------------------------- boot (real Word, or the browser mock for development)
+// ---------------------------------------------------------------- auto-load the equation under the cursor
+let autoTimer = null, lastAutoSig = '', ignoreAutoUntil = 0;
+function onSelectionChanged() {
+  if (!$('editor-auto')?.checked || !$('tab-editor')?.classList.contains('active')) return;
+  if (Date.now() < ignoreAutoUntil) return;
+  clearTimeout(autoTimer);
+  autoTimer = setTimeout(async () => {
+    if (document.activeElement === $('editor-latex')) return;   // the user is typing: do not overwrite
+    try {
+      const sel = await io.readSelection();
+      const pkg = sel?.pkg || sel;
+      if (!pkg || typeof pkg !== 'string') return;
+      const eqs = scanPackage(pkg).equations.filter((e) => e.latex !== null);
+      if (eqs.length !== 1) return;   // nothing, or several equations selected: leave the editor alone
+      if (eqs[0].latex === lastAutoSig && $('editor-latex').value === eqs[0].latex) return;
+      lastAutoSig = eqs[0].latex;
+      await loadFormulaFromWord(false);
+    } catch { /* selection not readable: ignore */ }
+  }, 350);
+}
+function installSelectionWatcher() {
+  try {
+    Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged);
+  } catch { /* not available (browser mock) */ }
+}
+
+// Ask Word to load the add-in at startup, so the ribbon buttons are there after a restart (needs a Word that supports it).
+function requestStartupLoad() {
+  try {
+    if (Office.addin && Office.addin.setStartupBehavior) Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+  } catch { /* older Word: the add-in has to be inserted again (see README) */ }
+}
+
 async function boot() {
   if (typeof Office !== 'undefined' && Office.onReady) {
     try { await Promise.race([Office.onReady(), new Promise((_r, rej) => setTimeout(() => rej(new Error('timeout')), 4000))]); } catch { /* not inside Office */ }
@@ -387,6 +399,31 @@ async function boot() {
     }
     document.body.prepend(note);
   }
+  try { if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $('apply-kbd').textContent = '⌘↩'; } catch { /* ignore */ }
+  attachLatexAutocomplete($('editor-latex'), { onChange: () => renderEditorPreview() });
+  mountEditorToolbar($('editor-toolbar'), $('editor-latex'));
+  installSelectionWatcher();
+  requestStartupLoad();
   checkUrlTab();
 }
+// Offline use: a service worker keeps the add-in for ~30 days (not on localhost, unless ?sw=1 for testing)
+async function registerOffline() {
+  const note = $('offline-status');
+  try {
+    if (!('serviceWorker' in navigator)) { if (note) note.textContent = 'Bản Word này chưa hỗ trợ lưu để dùng khi mất mạng.'; return; }
+    const dev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && !/[?&]sw=1/.test(location.search);
+    if (dev) { if (note) note.textContent = 'Chế độ phát triển: không lưu bản offline.'; return; }
+    const base = new URL('../sw.js', location.href);
+    await navigator.serviceWorker.register(base.href, { scope: new URL('../', location.href).pathname });
+    const reg = await navigator.serviceWorker.ready;
+    const ask = () => reg.active && reg.active.postMessage('status');
+    navigator.serviceWorker.addEventListener('message', (ev) => { if (ev.data && ev.data.type === 'status' && note) note.innerHTML = `<span class="ok">Đã lưu ${ev.data.files} tệp để dùng khi mất mạng</span> (giữ ${ev.data.maxAgeDays} ngày, tự làm mới khi có mạng; bản ${esc(ev.data.version)}).`; });
+    ask(); setTimeout(ask, 3000);
+  } catch (e) { if (note) note.textContent = 'Không bật được chế độ offline: ' + e.message; }
+}
+$('btn-offline-sympy')?.addEventListener('click', async () => {
+  const st = $('offline-sympy-status');
+  try { const m = await import('../src/sympy-bridge.js'); await m.loadSympy((t) => { st.textContent = t; }); st.innerHTML = '<span class="ok">Đã tải SymPy; lần sau tính toán được khi mất mạng.</span>'; } catch (e) { st.innerHTML = `<span class="bad">${esc(e.message)}</span>`; }
+});
+registerOffline();
 boot();

@@ -692,3 +692,25 @@ export function appendToBody(pkg, bodyXml) {
   model.blocks.push(...splitChildren(bodyXml).map((xml) => (tagName(xml) === 'w:p' ? { kind: 'p', ...parsePara(xml) } : { kind: 'other', xml })));
   return buildBody(model);
 }
+
+/** Questions without a marked answer, each with the index of its paragraph in Word's body.paragraphs (tables count too). */
+export function unansweredQuestions(model, analysis) {
+  const ordinal = [];
+  let n = 0;
+  for (const b of model.blocks) {
+    ordinal.push(n);
+    n += b.kind === 'p' ? 1 : (b.xml.match(/<w:p[ >\/]/g) || []).length;
+  }
+  const rows = answersOf(model, analysis), out = [];
+  let i = 0;
+  for (const part of analysis.parts) {
+    for (const q of part.questions) {
+      const row = rows[i++];
+      if (row && (row.value === null || row.value === undefined)) {
+        const roman = (/^\s*PH[AẦ]N\s+([IVX\d]+)/i.exec(part.title) || [])[1];
+        out.push({ label: `${roman ? 'Phần ' + roman + ' · ' : ''}Câu ${q.number}`, kind: part.kind, number: q.number, block: q.start, paragraph: ordinal[q.start] });
+      }
+    }
+  }
+  return out;
+}

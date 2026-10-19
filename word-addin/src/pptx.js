@@ -213,6 +213,28 @@ function cleanOptionText(content, oleMap = new Map()) {
  *  - Slide 2: Correct answer celebration & next button
  *  - Slide 3: Hidden Incorrect feedback slide with retry button
  */
+// ---------------------------------------------------------------- themes (colours + font)
+// The slides are written with the default (blue) palette; a theme swaps those colours and the font after the fact.
+// Right / wrong colours (green, red) keep their meaning in every theme.
+const BASE = { dark: '0F172A', dark2: '1E293B', text2: '475569', text3: '64748B', text4: '94A3B8', pale: 'E2E8F0', line: 'CBD5E1', paper: 'F8FAFC', primary: '3B82F6', accent: '4F46E5', accent2: '6366F1', sky: '38BDF8' };
+export const PPTX_THEMES = [
+  { id: 'blue', label: 'Xanh dương đêm (mặc định)', font: 'Arial', colors: {} },
+  { id: 'emerald', label: 'Xanh ngọc TexCraft', font: 'Georgia', colors: { dark: '0B2B20', dark2: '14392B', text2: '3F5B4E', text3: '5F7F70', text4: '9DB8AB', pale: 'DDEEE4', line: 'CFE3D8', paper: 'F4FAF7', primary: '1F6F4F', accent: '2F855A', accent2: '38A169', sky: '6EE7B7' } },
+  { id: 'sunset', label: 'Hoàng hôn (cam ấm)', font: 'Verdana', colors: { dark: '2B1608', dark2: '3D2410', text2: '6B4A32', text3: '8A6A52', text4: 'C9A98F', pale: 'F3E2D3', line: 'F3D5BE', paper: 'FFF8F1', primary: 'F97316', accent: 'EA580C', accent2: 'FB923C', sky: 'FDBA74' } },
+  { id: 'violet', label: 'Tím mộng mơ', font: 'Georgia', colors: { dark: '1E1033', dark2: '2E1A4A', text2: '57457A', text3: '7A68A0', text4: 'B8A9D6', pale: 'E9E1F7', line: 'DCCFF2', paper: 'FAF7FF', primary: '7C3AED', accent: '6D28D9', accent2: '8B5CF6', sky: 'C4B5FD' } },
+  { id: 'classic', label: 'Cổ điển (đỏ thẫm, chữ có chân)', font: 'Times New Roman', colors: { dark: '3A0A0A', dark2: '511414', text2: '5E3A3A', text3: '7E5A5A', text4: 'C6A0A0', pale: 'F2DEDE', line: 'E6CACA', paper: 'FFF8F6', primary: 'B91C1C', accent: '991B1B', accent2: 'DC2626', sky: 'FCA5A5' } },
+  { id: 'mono', label: 'Đen trắng (tiết kiệm mực)', font: 'Tahoma', colors: { dark: '111111', dark2: '262626', text2: '404040', text3: '595959', text4: 'A6A6A6', pale: 'E5E5E5', line: 'BFBFBF', paper: 'FAFAFA', primary: '404040', accent: '262626', accent2: '595959', sky: 'D4D4D4' } },
+];
+
+export function applyTheme(xml, themeId) {
+  const theme = PPTX_THEMES.find((t) => t.id === themeId);
+  if (!theme || theme.id === 'blue') return xml;
+  const map = {};
+  for (const [role, hex] of Object.entries(theme.colors)) map[BASE[role]] = hex;
+  const out = xml.replace(/srgbClr val="([0-9A-Fa-f]{6})"/g, (m, hex) => `srgbClr val="${map[hex.toUpperCase()] || hex}"`);
+  return out.replace(/<a:latin typeface="Arial"\/>/g, `<a:latin typeface="${theme.font}"/>`);
+}
+
 export function buildExamPptx(model, analysis, answers, opts = {}) {
   const oleMap = new Map();
   if (opts.scannedEquations) {
@@ -496,6 +518,9 @@ ${contentTypesOverrides}
     files.push({ name: s.fileName, data: s.xml });
     files.push({ name: s.relsFileName, data: s.rels });
   }
+
+  const themeId = opts.theme || 'blue';
+  for (const f of files) if (/^ppt\/(slides|theme|slideMasters|slideLayouts)\/[^/]*\.xml$/.test(f.name) && typeof f.data === 'string') f.data = applyTheme(f.data, themeId);
 
   return zipStore(files);
 }

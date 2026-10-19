@@ -169,7 +169,7 @@ function parseRuler(reader) {
   for (let i = 0; i < n; i++) { reader.byte(); reader.word(); }
 }
 
-class Parser {
+export class Parser {
   constructor(data) { this.r = new Reader(data); this.fonts = new Map(); }
 
   parse() {
@@ -199,6 +199,13 @@ class Parser {
   }
 
   record(top) {
+    const start = this.r.pos;
+    const node = this.recordInner(top);
+    if (Array.isArray(node)) node.span = [start, this.r.pos];   // byte range, for the analysis tools
+    return node;
+  }
+
+  recordInner(top) {
     const r = this.r;
     if (r.pos >= r.data.length) {
       if (top) return 'END';

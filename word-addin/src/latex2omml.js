@@ -418,3 +418,96 @@ export function latexToOmml(latex, { display = false } = {}) {
 }
 
 export const NS = 'xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"';
+
+// ---------------------------------------------------------------- MathML (live preview in the editor)
+const MML = { open: '<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">', close: '</math>' };
+const mrow = (nodes) => `<mrow>${mmlSeq(nodes)}</mrow>`;
+
+function mmlRun(text, sty) {
+  if (sty === 'nor') return `<mtext>${escapeXml(text)}</mtext>`;
+  const variant = sty === 'p' ? ' mathvariant="normal"' : sty === 'b' ? ' mathvariant="bold"' : '';
+  let out = '';
+  for (const m of text.matchAll(/[0-9]+(?:[.,][0-9]+)?|\p{L}|\s|[\s\S]/gu)) {
+    const t = m[0];
+    if (/^[0-9]/.test(t)) out += `<mn>${t}</mn>`;
+    else if (/^\p{L}$/u.test(t)) out += `<mi${variant}>${escapeXml(t)}</mi>`;
+    else if (/^\s$/.test(t)) out += '<mspace width="0.3em"/>';
+    else out += `<mo>${escapeXml(t)}</mo>`;
+  }
+  return out;
+}
+
+function mmlSeq(nodes) {
+  return flatten(resolve(nodes)).map((n) => (n.k === 'run' ? mmlRun(n.text, n.sty) : mmlNode(n))).join('');
+}
+
+function mmlNode(n) {
+  const r = mrow;
+  switch (n.k) {
+    case 'f': return `<mfrac${n.noBar ? ' linethickness="0"' : ''}>${r(n.num)}${r(n.den)}</mfrac>`;
+    case 'rad': return n.deg ? `<mroot>${r(n.e)}${r(n.deg)}</mroot>` : `<msqrt>${r(n.e)}</msqrt>`;
+    case 'd': return `<mrow><mo>${escapeXml(n.beg)}</mo>${n.items.map((it) => r(it)).join(`<mo>${escapeXml(n.sep || '|')}</mo>`)}<mo>${escapeXml(n.end)}</mo></mrow>`;
+    case 'script': {
+      const base = r([n.base]);
+      if (n.sub && n.sup) return `<msubsup>${base}${r(n.sub)}${r(n.sup)}</msubsup>`;
+      return n.sub ? `<msub>${base}${r(n.sub)}</msub>` : `<msup>${base}${r(n.sup)}</msup>`;
+    }
+    case 'sPre': return `<mmultiscripts>${r(n.e)}<mprescripts/>${r(n.sub || [])}${r(n.sup || [])}</mmultiscripts>`;
+    case 'nary': {
+      const op = `<mo>${NARY_OPS[n.op]}</mo>`;
+      const head = SIDE_LIMITS.has(n.op) ? (n.sub || n.sup ? `<msubsup>${op}${r(n.sub || [])}${r(n.sup || [])}</msubsup>` : op)
+        : (n.sub || n.sup ? `<munderover>${op}${r(n.sub || [])}${r(n.sup || [])}</munderover>` : op);
+      return head + r(n.e);
+    }
+    case 'func': {
+      const name = `<mi mathvariant="normal">${n.name}</mi>`;
+      let head = name;
+      if (LIMIT_FUNCS.has(n.name) && n.sub) head = `<munder>${name}${r(n.sub)}</munder>`;
+      else if (n.sub && n.sup) head = `<msubsup>${name}${r(n.sub)}${r(n.sup)}</msubsup>`;
+      else if (n.sub) head = `<msub>${name}${r(n.sub)}</msub>`;
+      else if (n.sup) head = `<msup>${name}${r(n.sup)}</msup>`;
+      return head + '<mo>&#x2061;</mo>' + r(n.e);
+    }
+    case 'lim': return n.upp ? `<mover>${r(n.e)}${r(n.lim)}</mover>` : `<munder>${r(n.e)}${r(n.lim)}</munder>`;
+    case 'acc': return `<mover accent="true">${r(n.e)}<mo>${escapeXml(n.chr)}</mo></mover>`;
+    case 'bar': return n.pos === 'bot' ? `<munder>${r(n.e)}<mo>&#x2015;</mo></munder>` : `<mover>${r(n.e)}<mo>&#x2015;</mo></mover>`;
+    case 'groupChr': return n.pos === 'top' ? `<mover>${r(n.e)}<mo>${escapeXml(n.chr)}</mo></mover>` : `<munder>${r(n.e)}<mo>${escapeXml(n.chr)}</mo></munder>`;
+    case 'box': return `<menclose notation="box">${r(n.e)}</menclose>`;
+    case 'm': return `<mtable>${n.rows.map((row) => `<mtr>${row.map((c) => `<mtd>${r(c)}</mtd>`).join('')}</mtr>`).join('')}</mtable>`;
+    case 'eqArr': return `<mtable columnalign="left">${n.rows.map((row) => `<mtr><mtd>${r(row[0])}</mtd></mtr>`).join('')}</mtable>`;
+    default: throw new LatexError('internal: ' + n.k);
+  }
+}
+
+/** LaTeX -> MathML string (throws LatexError like latexToOmml); used for the preview in the editor. */
+export function latexToMathml(latex) {
+  const p = new Parser(latex.trim());
+  const rows = [];
+  for (;;) {
+    rows.push(p.seq());
+    p.ws();
+    if (p.i >= p.s.length) break;
+    if (p.peekCs() === BS) { p.i += 2; continue; }
+    throw new LatexError('unexpected ' + p.s.slice(p.i, p.i + 8));
+  }
+  const inner = rows.length > 1 ? mmlNode({ k: 'eqArr', rows: rows.map((r) => [r]) }) : mmlSeq(rows[0]);
+  return `${MML.open}${inner}${MML.close}`;
+}
+
+// ---------------------------------------------------------------- shared tree API (MathType writer, renderer)
+export { NARY_OPS, SIDE_LIMITS, LIMIT_FUNCS };
+
+/** LaTeX -> normalised tree: {rows: [nodes]} (several rows for top-level "\\\\"). Nodes are flat lists, groups inlined, operands resolved. */
+export function latexToTree(latex) {
+  const p = new Parser(latex.trim());
+  const rows = [];
+  for (;;) {
+    rows.push(p.seq());
+    p.ws();
+    if (p.i >= p.s.length) break;
+    if (p.peekCs() === BS) { p.i += 2; continue; }
+    throw new LatexError('unexpected ' + p.s.slice(p.i, p.i + 8));
+  }
+  return { rows };
+}
+export const normalizeNodes = (nodes) => flatten(resolve(nodes));

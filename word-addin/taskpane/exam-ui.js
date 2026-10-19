@@ -1,7 +1,9 @@
 import { answerXlsx, answerTsv } from '../src/xlsx.js';
-import { parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody } from '../src/exam.js';
+import { unansweredQuestions, parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody } from '../src/exam.js';
 import { scanPackage } from '../src/ooxml.js';
-import { buildExamPptx } from '../src/pptx.js';
+import { buildExamPptx, PPTX_THEMES } from '../src/pptx.js';
+import { qrPayloads, renderQr } from '../src/answer-qr.js';
+import { makePicturePackage, canvasToPng, downloadBlob } from '../src/picture.js';
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -9,55 +11,51 @@ export function mountExam(root, io) {
   root.innerHTML = `
   <div class="notice">Nhận dạng: <b>PHẦN I/II/III</b>, <b>Câu N.</b>, phương án <b>A. B. C. D.</b>, ý <b>a) b) c) d)</b>. Đáp án đúng được nhận qua nhãn phương án <b>gạch chân / chữ đỏ / tô nổi</b>. Mọi thao tác ghi vào tài liệu chỉ chạy khi bạn bấm nút; hãy làm trên bản sao.</div>
   <fieldset><legend>1. Phân tích đề</legend>
-    <div class="row"><button class="primary" id="ex-analyze">Phân tích tài liệu</button></div>
+    <div class="btns"><button class="primary" id="ex-analyze">Phân tích tài liệu</button></div>
     <div id="ex-summary" class="muted"></div>
   </fieldset>
   <fieldset><legend>2. Chuẩn hóa câu hỏi</legend>
-    <label>Đánh số lại câu
+    <label class="field"><span>Đánh số lại câu</span>
       <select id="ex-renumber"><option value="part">theo từng phần (mỗi phần bắt đầu từ Câu 1)</option><option value="continuous">liên tục toàn đề</option><option value="">không đổi</option></select></label>
-    <label>Căn lề phương án
+    <label class="field"><span>Căn lề phương án</span>
       <select id="ex-layout"><option value="auto">tự động (1 dòng / 2 dòng / 4 dòng theo độ dài)</option><option value="4">luôn 4 cột</option><option value="2">luôn 2 cột</option><option value="1">mỗi phương án một dòng</option><option value="false">giữ nguyên</option></select></label>
     <label><input type="checkbox" id="ex-labels" checked> nhãn A. B. C. D. in đậm, viết hoa, dấu chấm</label>
     <label><input type="checkbox" id="ex-qformat" checked> “Câu N.” cùng định dạng với câu đầu tiên (nhãn “Bài N.” được đổi thành “Câu N.”)</label>
     <label><input type="checkbox" id="ex-keep" checked> giữ câu hỏi và phương án cùng trang (keep with next)</label>
     <label><input type="checkbox" id="ex-backup1"> Tôi đã lưu một bản sao tài liệu</label>
-    <div class="row"><button class="primary" id="ex-normalize">Chuẩn hóa</button></div>
+    <div class="btns"><button class="primary" id="ex-normalize">Chuẩn hóa</button></div>
     <div id="ex-norm-out"></div>
   </fieldset>
   <fieldset><legend>3. Trộn đề &amp; bảng đáp án</legend>
-    <div class="row"><label class="inline">Số mã đề <input type="number" id="ex-n" value="4" min="1" max="12"></label>
-      <label class="inline">Mã đề đầu <input type="number" id="ex-code" value="101"></label>
-      <label class="inline">Hạt giống <input type="number" id="ex-seed" value="2026"></label></div>
+    <div class="grid3"><label class="field"><span>Số mã đề</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>Mã đề đầu</span><input type="number" id="ex-code" value="101"></label><label class="field"><span>Hạt giống</span><input type="number" id="ex-seed" value="2026"></label></div>
     <label><input type="checkbox" id="ex-shq" checked> trộn thứ tự câu trong từng phần</label>
     <label><input type="checkbox" id="ex-sho" checked> trộn thứ tự phương án A–D (giữ nguyên câu có “cả A và B…”, “tất cả các đáp án…”)</label>
     <label><input type="checkbox" id="ex-shs"> trộn cả thứ tự ý a) b) c) d) ở phần đúng sai</label>
     <label><input type="checkbox" id="ex-strip" checked> bỏ dấu đáp án (gạch chân/đỏ) khỏi đề trộn</label>
     <label><input type="checkbox" id="ex-withkey" checked> thêm bảng đáp án của mã đề vào cuối mỗi đề</label>
-    <label>Nơi đặt kết quả
+    <label class="field"><span>Nơi đặt kết quả</span>
       <select id="ex-target"><option value="new">mỗi mã đề một tài liệu mới</option><option value="append">chèn nối tiếp vào cuối tài liệu này</option><option value="none">chỉ lập bảng đáp án (không tạo đề)</option></select></label>
-    <div class="row"><button class="primary" id="ex-shuffle">Tạo đề</button><button class="secondary" id="ex-key">Chèn bảng đáp án đề hiện tại</button><button class="secondary" id="ex-copy" disabled>Sao chép CSV</button></div>
-    <div class="row"><label class="inline">Xuất đáp án Excel
-        <select id="ex-xlsx"><option value="giasu">Mẫu GIASU.AI.VN (hàng = câu, cột = mã đề)</option><option value="texcraft">Mẫu TEXCRAFT (hàng = đề, cột = câu / ý)</option><option value="both">Cả hai mẫu</option></select></label>
-      <label class="inline"><input type="checkbox" id="ex-orig" checked> thêm đề gốc, mã <input type="text" id="ex-origcode" value="000" style="width:50px"></label></div>
-    <div class="row"><button class="secondary" id="ex-export">Tải file Excel</button><button class="secondary" id="ex-tsv">Sao chép bảng (dán vào Excel)</button></div>
+    <div class="btns"><button class="primary" id="ex-shuffle">Tạo đề</button></div>
+    <div class="btns two"><button class="secondary" id="ex-key">Chèn bảng đáp án</button><button class="secondary" id="ex-copy" disabled>Sao chép CSV</button></div>
+    <div class="subhead">Xuất đáp án</div>
+    <label class="field"><span>Mẫu Excel</span><select id="ex-xlsx"><option value="giasu">Mẫu GIASU.AI.VN (hàng = câu, cột = mã đề)</option><option value="texcraft">Mẫu TEXCRAFT (hàng = đề, cột = câu / ý)</option><option value="both">Cả hai mẫu</option></select></label>
+    <div class="orig-row"><label class="switch"><input type="checkbox" id="ex-orig" checked><span class="switch-track"></span><span>Thêm đề gốc, mã</span></label><input type="text" id="ex-origcode" value="0000" maxlength="4" inputmode="numeric"></div>
+    <div class="btns two"><button class="secondary" id="ex-export">Tải file Excel</button><button class="secondary" id="ex-tsv">Sao chép bảng</button></div>
+    <div class="btns"><button class="secondary tb-action" id="ex-qr"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM15 15h3v3h3v3h-6v-3m6-3v-3m-9 0h3"/></svg><span>Tạo mã QR đáp án</span></button></div>
+    <p class="hint">Dùng để nhập đáp án vào <a href="https://giasu.ai.vn/cham-thi/" target="_blank" rel="noopener">giasu.ai.vn/cham-thi</a></p>
+    <div id="ex-qr-panel" hidden class="qr-panel"><canvas id="ex-qr-canvas" style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff"></canvas><div id="ex-qr-status" class="muted" style="margin:6px 0"></div><div class="btns four"><button class="secondary" id="ex-qr-prev">‹ QR trước</button><button class="secondary" id="ex-qr-next">QR tiếp ›</button><button class="secondary" id="ex-qr-save">Tải PNG</button><button class="secondary" id="ex-qr-insert">Chèn vào Word</button></div></div>
     <progress id="ex-progress" value="0" max="1" hidden></progress>
     <div id="ex-shuffle-out"></div>
   </fieldset>
   <fieldset><legend>4. Xuất bài trình chiếu PowerPoint</legend>
-    <div class="row">
-      <label class="inline" style="flex:1">Tiêu đề slide
-        <input type="text" id="ex-pptx-title" value="BÀI TẬP TRẮC NGHIỆM">
-      </label>
-      <label class="inline" id="ex-pptx-source-box" style="flex:1" hidden>Nguồn đề
-        <select id="ex-pptx-source"><option value="current">Tài liệu hiện tại</option></select>
-      </label>
-    </div>
+    <label class="field"><span>Tiêu đề slide</span><input type="text" id="ex-pptx-title" value="BÀI TẬP TRẮC NGHIỆM"></label>
+    <label class="field" id="ex-pptx-source-box" hidden><span>Nguồn đề</span><select id="ex-pptx-source"><option value="current">Tài liệu hiện tại</option></select></label>
+    <label class="field"><span>Giao diện (màu sắc, phông chữ)</span><select id="ex-pptx-theme">${PPTX_THEMES.map((t) => `<option value="${t.id}">${t.label} — ${t.font}</option>`).join('')}</select></label>
+    <div id="ex-pptx-swatch" class="swatch"></div>
     <div class="notice" style="margin: 6px 0;">
       Tạo file trình chiếu PPTX 16:9 tương tác: bấm vào phương án sẽ hiển thị ngay thông báo <b>Đúng</b> (chúc mừng) hoặc <b>Sai</b> (thử lại). Chạy trực tiếp trên PowerPoint, Google Slides, Keynote và CHITUP Slide.
     </div>
-    <div class="row">
-      <button class="primary" id="ex-pptx-btn">Tải file PowerPoint (PPTX)</button>
-    </div>
+    <div class="btns"><button class="primary" id="ex-pptx-btn">Tải file PowerPoint (PPTX)</button></div>
     <div id="ex-pptx-out"></div>
   </fieldset>`;
   const $ = (id) => root.querySelector('#' + id);
@@ -65,6 +63,12 @@ export function mountExam(root, io) {
   let lastVersions = null;   // [{code, answers}] of the latest "Tạo đề"
 
   async function body() { const { pkg } = await io.readBody(); return pkg; }
+  const chips = (list) => (list.length ? `<div class="chips-title">Câu chưa có đáp án — bấm để chuyển tới trong Word (${list.length}):</div><div class="chips">${list.map((q) => `<button type="button" class="chip" data-p="${q.paragraph}" title="Chuyển tới ${esc(q.label)} trong Word">${esc(q.label)}</button>`).join('')}</div>` : '');
+  root.addEventListener('click', async (ev) => {
+    const b = ev.target.closest('.chip');
+    if (!b) return;
+    try { await io.selectParagraph(Number(b.dataset.p)); } catch (e) { /* not inside Word */ }
+  });
   const fail = (el, e) => { el.innerHTML = `<span class="bad">Lỗi: ${esc(e.message || e)}</span>`; };
 
   $('ex-analyze').addEventListener('click', async () => {
@@ -80,7 +84,7 @@ export function mountExam(root, io) {
         return `<li><b>${esc(p.title.slice(0, 70) || '(đầu đề)')}</b> — ${p.kind === 'mc' ? 'nhiều phương án' : p.kind === 'tf' ? 'đúng/sai' : p.kind === 'short' ? 'trả lời ngắn' : 'khác'}: ${p.questions.length} câu` +
           `${p.kind === 'mc' ? `, nhận đáp án ${marked}/${p.questions.length}` : ''}${flagged ? `, <span class="warn">${flagged} câu cần chú ý</span>` : ''}</li>`;
       });
-      $('ex-summary').innerHTML = a.parts.length ? `<ul>${lines.join('')}</ul>` : '<span class="warn">Không thấy “Câu N.” nào.</span>';
+      $('ex-summary').innerHTML = a.parts.length ? `<ul>${lines.join('')}</ul>${chips(unansweredQuestions(model, a))}` : '<span class="warn">Không thấy “Câu N.” nào.</span>';
     } catch (e) { fail($('ex-summary'), e); }
   });
 
@@ -142,7 +146,9 @@ export function mountExam(root, io) {
         ...(v.report.sharedParts.length ? [`Không trộn thứ tự câu ở: ${v.report.sharedParts.join('; ')} (có câu dùng chung dữ kiện)`] : []),
         ...(v.report.pinnedQuestions.length ? [`Giữ nguyên phương án các câu: ${[...new Set(v.report.pinnedQuestions)].join(', ')}`] : []),
         ...v.report.notes]))];
-      out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>` : '') +
+      const origModel = parseBody(pkg);
+      const unansweredChips = chips(unansweredQuestions(origModel, analyze(origModel)));
+      out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>${unansweredChips}` : '') +
         (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : '') +
         `<div class="scroll"><table><tbody>${table.groups.filter((g) => g.kind === 'mc').map((g) => `<tr><td><b>${esc(g.code)}</b></td><td>${g.items.map((i) => `${i.number}${esc(i.value ?? '?')}`).join(' ')}</td></tr>`).join('')}</tbody></table></div>`;
     } catch (e) { fail(out, e); }
@@ -167,7 +173,7 @@ export function mountExam(root, io) {
     const pkg = lastVersions ? lastVersions.pkg : await body();
     const list = lastVersions ? lastVersions.versions.slice() : [];
     if (!list.length) throw new Error('Chưa có mã đề nào: bấm “Tạo đề” trước (hoặc dùng “Chèn bảng đáp án đề hiện tại”).');
-    if ($('ex-orig').checked) { const m = parseBody(pkg); list.unshift({ code: $('ex-origcode').value || '000', answers: answersOf(m, analyze(m)) }); }
+    if ($('ex-orig').checked) { const m = parseBody(pkg); list.unshift({ code: $('ex-origcode').value || '0000', answers: answersOf(m, analyze(m)) }); }
     return list;
   }
   $('ex-export').addEventListener('click', async () => {
@@ -184,6 +190,40 @@ export function mountExam(root, io) {
       out.innerHTML = '<span class="ok">Đã tạo file Excel.</span> <span class="muted">Nếu Word chặn tải xuống, dùng “Sao chép bảng” rồi dán vào Excel.</span>';
     } catch (e) { fail(out, e); }
   });
+  // ---- QR of the answer key (same format as giasu.ai.vn/cham-thi)
+  let qrState = { groups: [], index: 0, token: 0 };
+  async function showQr() {
+    const my = ++qrState.token, st = $('ex-qr-status'), cv = $('ex-qr-canvas');
+    st.classList.remove('bad'); st.textContent = 'Đang tạo QR và kiểm tra đọc lại…';
+    try {
+      const g = qrState.groups[qrState.index];
+      const c = await renderQr(g.text, { vendorBase: 'vendor/', logoUrl: 'icon-80.png' });
+      if (my !== qrState.token) return;
+      cv.width = c.width; cv.height = c.height; cv.getContext('2d').drawImage(c, 0, 0);
+      st.textContent = `QR ${qrState.index + 1}/${qrState.groups.length} · mã đề ${g.codes.join(', ')} · đã kiểm tra đọc lại đúng` + (qrState.warnings.length ? ` · ${qrState.warnings.length} cảnh báo (câu chưa có đáp án ghi X)` : '');
+      $('ex-qr-prev').disabled = qrState.index === 0; $('ex-qr-next').disabled = qrState.index === qrState.groups.length - 1;
+    } catch (e) { if (my === qrState.token) { st.classList.add('bad'); st.textContent = e.message; } }
+  }
+  $('ex-qr').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const list = await exportVersions();
+      const { payloads, warnings } = qrPayloads(list);
+      qrState = { groups: payloads, index: 0, token: qrState.token, warnings };
+      $('ex-qr-panel').hidden = false;
+      await showQr();
+    } catch (e) { fail(out, e); }
+  });
+  $('ex-qr-prev').addEventListener('click', () => { qrState.index = Math.max(0, qrState.index - 1); showQr(); });
+  $('ex-qr-next').addEventListener('click', () => { qrState.index = Math.min(qrState.groups.length - 1, qrState.index + 1); showQr(); });
+  $('ex-qr-save').addEventListener('click', async () => downloadBlob(await canvasToPng($('ex-qr-canvas')), `QR-dap-an-${qrState.index + 1}.png`));
+  $('ex-qr-insert').addEventListener('click', async () => {
+    try {
+      const png = await canvasToPng($('ex-qr-canvas'));
+      await io.replaceSelection(makePicturePackage(png, { widthPt: 170, heightPt: 170, alt: 'QR đáp án chấm thi giasu.ai.vn', name: 'QR' }));
+      $('ex-qr-status').textContent = 'Đã chèn mã QR vào Word tại con trỏ.';
+    } catch (e) { fail($('ex-shuffle-out'), e); }
+  });
   $('ex-tsv').addEventListener('click', async () => {
     const out = $('ex-shuffle-out');
     try {
@@ -196,6 +236,14 @@ export function mountExam(root, io) {
   $('ex-copy').addEventListener('click', async () => {
     try { await navigator.clipboard.writeText(lastCsv); $('ex-copy').textContent = 'Đã sao chép'; } catch { $('ex-shuffle-out').innerHTML = `<textarea rows="6">${esc(lastCsv)}</textarea>`; }
   });
+
+  const swatch = () => {
+    const t = PPTX_THEMES.find((x) => x.id === $('ex-pptx-theme').value);
+    const c = { dark: '0F172A', primary: '3B82F6', accent: '4F46E5', paper: 'F8FAFC', sky: '38BDF8', ...t.colors };
+    $('ex-pptx-swatch').innerHTML = ['dark', 'primary', 'accent', 'sky', 'paper'].map((k) => `<span title="${k}" style="display:inline-block;width:28px;height:18px;border-radius:4px;border:1px solid var(--line);background:#${c[k]}"></span>`).join('') + `<span class="muted" style="font-family:'${t.font}',serif;margin-left:6px">Aa Bb — Câu 1. Đúng</span>`;
+  };
+  $('ex-pptx-theme').addEventListener('change', swatch);
+  swatch();
 
   $('ex-pptx-btn').addEventListener('click', async () => {
     const out = $('ex-pptx-out');
@@ -218,6 +266,7 @@ export function mountExam(root, io) {
 
       const buf = buildExamPptx(model, a, ans, {
         title,
+        theme: $('ex-pptx-theme')?.value || 'blue',
         scannedEquations: scan.equations
       });
 
