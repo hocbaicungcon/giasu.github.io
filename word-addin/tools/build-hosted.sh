@@ -15,7 +15,7 @@ cp src/mtefchars.js src/mathtype-template.js hosted/src/ 2>/dev/null || true
 rm -f hosted/taskpane/mock-word.js   # development stand-in for Word, not needed online
 cp src/*.js hosted/src/
 cp -R src/figures hosted/src/figures
-mkdir -p hosted/taskpane/vendor && cp taskpane/vendor/* hosted/taskpane/vendor/
+mkdir -p hosted/taskpane/vendor && cp -R taskpane/vendor/* hosted/taskpane/vendor/
 SRC_MANIFEST="manifest.dev.xml"
 [ -f "$SRC_MANIFEST" ] || SRC_MANIFEST="manifest.xml"
 sed -e "s#https://localhost:3000#$BASE#g" -e "s#<AppDomain>$BASE</AppDomain>#<AppDomain>$ORIGIN</AppDomain>#" "$SRC_MANIFEST" > hosted/manifest.xml

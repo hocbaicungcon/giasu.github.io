@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>6f1c2d9e-4b7a-4c1e-9a53-7d2f0b8e3a11</Id>
-  <Version>1.3.0.0</Version>
+  <Version>1.4.0.0</Version>
   <ProviderName>TexCraft</ProviderName>
   <DefaultLocale>vi-VN</DefaultLocale>
   <DisplayName DefaultValue="TexCraft Công thức"/>
@@ -35,8 +35,8 @@
           <FunctionFile resid="Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="TexCraftTab">
-              <Group id="TexCraftGroup">
-                <Label resid="Group"/>
+              <Group id="TexCraftGroupMath">
+                <Label resid="GroupMath"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon16"/>
                   <bt:Image size="32" resid="Icon32"/>
@@ -74,54 +74,6 @@
                     <SourceLocation resid="Url_editor"/>
                   </Action>
                 </Control>
-                <Control xsi:type="Button" id="TexCraft_exam">
-                  <Label resid="Label_exam"/>
-                  <Supertip>
-                    <Title resid="Label_exam"/>
-                    <Description resid="Desc_exam"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon16_exam"/>
-                    <bt:Image size="32" resid="Icon32_exam"/>
-                    <bt:Image size="80" resid="Icon80_exam"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>TexCraftPane</TaskpaneId>
-                    <SourceLocation resid="Url_exam"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="TexCraft_about">
-                  <Label resid="Label_about"/>
-                  <Supertip>
-                    <Title resid="Label_about"/>
-                    <Description resid="Desc_about"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon16_about"/>
-                    <bt:Image size="32" resid="Icon32_about"/>
-                    <bt:Image size="80" resid="Icon80_about"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>TexCraftPane</TaskpaneId>
-                    <SourceLocation resid="Url_about"/>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="TexCraft_figures">
-                  <Label resid="Label_figures"/>
-                  <Supertip>
-                    <Title resid="Label_figures"/>
-                    <Description resid="Desc_figures"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon16_figures"/>
-                    <bt:Image size="32" resid="Icon32_figures"/>
-                    <bt:Image size="80" resid="Icon80_figures"/>
-                  </Icon>
-                  <Action xsi:type="ShowTaskpane">
-                    <TaskpaneId>TexCraftPane</TaskpaneId>
-                    <SourceLocation resid="Url_figures"/>
-                  </Action>
-                </Control>
                 <Control xsi:type="Button" id="TexCraft_calc">
                   <Label resid="Label_calc"/>
                   <Supertip>
@@ -138,6 +90,30 @@
                     <SourceLocation resid="Url_calc"/>
                   </Action>
                 </Control>
+              </Group>
+              <Group id="TexCraftGroupFigs">
+                <Label resid="GroupFigs"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_figures">
+                  <Label resid="Label_figures"/>
+                  <Supertip>
+                    <Title resid="Label_figures"/>
+                    <Description resid="Desc_figures"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_figures"/>
+                    <bt:Image size="32" resid="Icon32_figures"/>
+                    <bt:Image size="80" resid="Icon80_figures"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_figures"/>
+                  </Action>
+                </Control>
                 <Control xsi:type="Button" id="TexCraft_worksheet">
                   <Label resid="Label_worksheet"/>
                   <Supertip>
@@ -152,6 +128,46 @@
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>TexCraftPane</TaskpaneId>
                     <SourceLocation resid="Url_worksheet"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_exam">
+                  <Label resid="Label_exam"/>
+                  <Supertip>
+                    <Title resid="Label_exam"/>
+                    <Description resid="Desc_exam"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_exam"/>
+                    <bt:Image size="32" resid="Icon32_exam"/>
+                    <bt:Image size="80" resid="Icon80_exam"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_exam"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroup">
+                <Label resid="Group"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_about">
+                  <Label resid="Label_about"/>
+                  <Supertip>
+                    <Title resid="Label_about"/>
+                    <Description resid="Desc_about"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_about"/>
+                    <bt:Image size="32" resid="Icon32_about"/>
+                    <bt:Image size="80" resid="Icon80_about"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_about"/>
                   </Action>
                 </Control>
               </Group>
@@ -201,7 +217,9 @@
       <bt:ShortStrings>
         <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
         <bt:String id="TabLabel" DefaultValue="TexCraft"/>
-        <bt:String id="Group" DefaultValue="TexCraft"/>
+        <bt:String id="Group" DefaultValue="Giới thiệu"/>
+        <bt:String id="GroupMath" DefaultValue="Công thức"/>
+        <bt:String id="GroupFigs" DefaultValue="Hình, phiếu, đề"/>
         <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
         <bt:String id="Label_eq" DefaultValue="Công thức"/>
         <bt:String id="Label_editor" DefaultValue="Soạn thảo"/>
@@ -243,8 +261,8 @@
           <FunctionFile resid="Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <CustomTab id="TexCraftTab">
-              <Group id="TexCraftGroup">
-                <Label resid="Group"/>
+              <Group id="TexCraftGroupMath">
+                <Label resid="GroupMath"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon16"/>
                   <bt:Image size="32" resid="Icon32"/>
@@ -280,51 +298,6 @@
                     <FunctionName>showTab_editor</FunctionName>
                   </Action>
                 </Control>
-                <Control xsi:type="Button" id="TexCraft_exam">
-                  <Label resid="Label_exam"/>
-                  <Supertip>
-                    <Title resid="Label_exam"/>
-                    <Description resid="Desc_exam"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon16_exam"/>
-                    <bt:Image size="32" resid="Icon32_exam"/>
-                    <bt:Image size="80" resid="Icon80_exam"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>showTab_exam</FunctionName>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="TexCraft_about">
-                  <Label resid="Label_about"/>
-                  <Supertip>
-                    <Title resid="Label_about"/>
-                    <Description resid="Desc_about"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon16_about"/>
-                    <bt:Image size="32" resid="Icon32_about"/>
-                    <bt:Image size="80" resid="Icon80_about"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>showTab_about</FunctionName>
-                  </Action>
-                </Control>
-                <Control xsi:type="Button" id="TexCraft_figures">
-                  <Label resid="Label_figures"/>
-                  <Supertip>
-                    <Title resid="Label_figures"/>
-                    <Description resid="Desc_figures"/>
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon16_figures"/>
-                    <bt:Image size="32" resid="Icon32_figures"/>
-                    <bt:Image size="80" resid="Icon80_figures"/>
-                  </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>showTab_figures</FunctionName>
-                  </Action>
-                </Control>
                 <Control xsi:type="Button" id="TexCraft_calc">
                   <Label resid="Label_calc"/>
                   <Supertip>
@@ -340,6 +313,29 @@
                     <FunctionName>showTab_calc</FunctionName>
                   </Action>
                 </Control>
+              </Group>
+              <Group id="TexCraftGroupFigs">
+                <Label resid="GroupFigs"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_figures">
+                  <Label resid="Label_figures"/>
+                  <Supertip>
+                    <Title resid="Label_figures"/>
+                    <Description resid="Desc_figures"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_figures"/>
+                    <bt:Image size="32" resid="Icon32_figures"/>
+                    <bt:Image size="80" resid="Icon80_figures"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_figures</FunctionName>
+                  </Action>
+                </Control>
                 <Control xsi:type="Button" id="TexCraft_worksheet">
                   <Label resid="Label_worksheet"/>
                   <Supertip>
@@ -353,6 +349,44 @@
                   </Icon>
                   <Action xsi:type="ExecuteFunction">
                     <FunctionName>showTab_worksheet</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_exam">
+                  <Label resid="Label_exam"/>
+                  <Supertip>
+                    <Title resid="Label_exam"/>
+                    <Description resid="Desc_exam"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_exam"/>
+                    <bt:Image size="32" resid="Icon32_exam"/>
+                    <bt:Image size="80" resid="Icon80_exam"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_exam</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroup">
+                <Label resid="Group"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_about">
+                  <Label resid="Label_about"/>
+                  <Supertip>
+                    <Title resid="Label_about"/>
+                    <Description resid="Desc_about"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_about"/>
+                    <bt:Image size="32" resid="Icon32_about"/>
+                    <bt:Image size="80" resid="Icon80_about"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_about</FunctionName>
                   </Action>
                 </Control>
               </Group>
@@ -402,7 +436,9 @@
       <bt:ShortStrings>
         <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
         <bt:String id="TabLabel" DefaultValue="TexCraft"/>
-        <bt:String id="Group" DefaultValue="TexCraft"/>
+        <bt:String id="Group" DefaultValue="Giới thiệu"/>
+        <bt:String id="GroupMath" DefaultValue="Công thức"/>
+        <bt:String id="GroupFigs" DefaultValue="Hình, phiếu, đề"/>
         <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
         <bt:String id="Label_eq" DefaultValue="Công thức"/>
         <bt:String id="Label_editor" DefaultValue="Soạn thảo"/>

@@ -133,7 +133,7 @@ test('Solids: hidden (dashed) edges are exactly the ones behind the front faces'
 test('Worksheet: generated sheets become well-formed Word body with maths, answers and emoji', async () => {
   await import('../taskpane/vendor/worksheet.js');
   const W = globalThis.Worksheet;
-  const { worksheetBody, bodyPackage, printable, texToRuns } = await import('../src/worksheet-docx.js');
+  const { worksheetBody, bodyPackage, texToRuns } = await import('../src/worksheet-docx.js');
   const { parseXml } = await import('../src/xml.js');
   const cps = {}; for (const e of Object.values(W.lib.items)) cps[e.id] = e.cp;
   for (const [subject, grade] of [['math', 2], ['math', 4], ['vi', 1], ['en', 3]]) {
@@ -146,7 +146,11 @@ test('Worksheet: generated sheets become well-formed Word body with maths, answe
   const r = W.generate({ subject: 'math', grade: 2, color: 'bw', seed: 3, size: 'short', topics: ['calc', 'vertical'], answers: false });
   const { body } = worksheetBody(r, { subject: 'math', grade: 2, cps, answers: false });
   assert.ok(/<m:oMath>/.test(body) && /w:bottom w:val="single"/.test(body) && !/ĐÁP ÁN/.test(body));   // equations, vertical-sum rule line
-  assert.equal(printable({ items: [{ q: '\\wsclock{1}{2}' }], instr: '' }), false);
+  // body-only topics (matching, grids, clocks, fraction pictures...) are converted too: tables, TikZ-subset drawings
+  const rb = W.generate({ subject: 'math', grade: 2, color: 'bw', seed: 3, size: 'short', topics: ['matchexpr', 'gridcalc', 'arrowchain', 'time'], answers: true });
+  const wb = worksheetBody(rb, { subject: 'math', grade: 2, cps, answers: true });
+  assert.equal(wb.skipped.length, 0);
+  assert.ok(/<w:tbl>/.test(wb.body) && /wpg:wgp/.test(wb.body));
   assert.ok(/Segoe UI Emoji/.test(texToRuns('\\wspic[1cm]{ws-1f680} \\icOChick', { cps })));
 });
 test('MathType object package: parts, relationships and namespaces', async () => {

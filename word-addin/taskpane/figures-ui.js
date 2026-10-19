@@ -65,9 +65,19 @@ export function mountFigures(root, io) {
       ? field(label, `<select data-opt="${key}">${choices.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('')}</select>`)
       : sw('go-' + key, label, /^show/.test(key)))).join('') + (g.names ? field('Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names)}" spellcheck="false" placeholder="${esc(g.names)}">`) + (g.hint ? `<div class="hint">${esc(g.hint)}</div>` : '<div class="hint">Đổi tên tùy ý, ví dụ M,N,P,Q; ô để trống dùng tên mặc định.</div>') : '');
     $('g-opts').querySelectorAll('input,select').forEach((el) => el.addEventListener('input', schedule));
-    const kindSel = $('g-opts').querySelector('select[data-opt="kind"]');
-    if (g.id === 'prism' && kindSel && $('g-names')) kindSel.addEventListener('change', () => { $('g-names').value = kindSel.value === 'triangle' ? "A,B,C,A',B',C'" : "A,B,C,D,A',B',C',D'"; render(); });
-    if (g.id === 'round' && kindSel && $('g-names')) kindSel.addEventListener('change', () => { $('g-names').value = { cone: 'S,O,A', cylinder: "O,O',A", frustum: "O,O'", sphere: 'O,A' }[kindSel.value]; render(); });
+    // default point names follow the chosen variant; a list the user has edited is kept
+    const NAMES = {
+      pyramid: { opt: 'base', tri: 'S,A,B,C', quad: 'S,A,B,C,D' },
+      prism: { opt: 'kind', triangle: "A,B,C,A',B',C'", box: "A,B,C,D,A',B',C',D'", cube: "A,B,C,D,A',B',C',D'" },
+      round: { opt: 'kind', cone: 'S,O,A', cylinder: "O,O',A", frustum: "O,O'", sphere: 'O,A' },
+    }[g.id];
+    const namesEl = $('g-names');
+    if (NAMES && namesEl) {
+      const sel = $('g-opts').querySelector(`select[data-opt="${NAMES.opt}"]`);
+      let last = NAMES[sel.value] || g.names;
+      namesEl.value = last;
+      sel.addEventListener('change', () => { const next = NAMES[sel.value]; if (next && (namesEl.value.trim() === last || !namesEl.value.trim())) namesEl.value = next; last = next || last; render(); });
+    }
   }
 
   function build() {
