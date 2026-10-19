@@ -30,6 +30,7 @@ export function mountMtSettings(root, { fontRow = true, onChange } = {}) {
   root.innerHTML = (fontRow ? `<label class="field"><span>Kiểu chữ công thức MathType</span><select data-mt="font">${Object.entries(MT_FONTS).map(([k, f]) => `<option value="${k}">${f.label}</option>`).join('')}</select></label>` : '') +
     (fontRow ? `<label class="field"><span>Kiểu hiển thị công thức</span><select data-mt="layout"><option value="classic">Cổ điển (MathType cũ): phân số, ∫, ∑, lim, min, max cỡ lớn như riêng dòng</option><option value="compact">Gọn: thu nhỏ theo dòng chữ (inline)</option></select></label>` : '') +
     (fontRow ? `<label class="field"><span>Ảnh hiển thị công thức</span><select data-mt="picture"><option value="emf">Vector EMF (nét ở mọi cỡ)</option><option value="png">Ảnh PNG (dự phòng)</option></select></label>` : '') +
+    (fontRow ? '<div class="hint">Ảnh công thức luôn vẽ theo bố cục KaTeX; kiểu chữ có tác dụng khi mở lại công thức bằng MathType. Font ghi “cần cài font” phải có trên máy mở tài liệu, nếu không MathType dùng font thay thế.</div>' : '') +
     `<label class="field"><span>Cỡ chữ</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === 'auto' ? 'Theo văn bản xung quanh (tự động)' : s + ' pt'}</option>`).join('')}</select></label>`;
   const sync = () => document.querySelectorAll('.mt-settings select').forEach((el) => { el.value = state[el.dataset.mt]; });
   root.addEventListener('change', (ev) => {

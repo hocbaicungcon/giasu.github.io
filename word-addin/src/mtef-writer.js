@@ -290,9 +290,17 @@ export function latexToRecords(latex) {
 export const MT_FONTS = {
   times: { label: 'Times New Roman (có chân)', base: 'times', name: 'Times New Roman', family: 'times' },
   palatino: { label: 'Palatino Linotype (có chân)', base: 'palatino', name: 'Palatino Linotype', family: 'palatino' },
-  cambriamath: { label: 'Cambria Math (hỗ trợ toán đầy đủ)', base: 'times', name: 'Cambria Math', family: 'cambriamath' },
+  cambriamath: { label: 'Cambria Math (hỗ trợ toán đầy đủ, có sẵn cùng Office)', base: 'times', name: 'Cambria Math', family: 'cambriamath' },
   cambria: { label: 'Cambria (có chân)', base: 'times', name: 'Cambria', family: 'cambria' },
+  stix: { label: 'STIX Two Math (có chân, kiểu Times; cần cài font)', base: 'times', name: 'STIX Two Math', family: 'stix' },
+  lm: { label: 'Latin Modern Math (kiểu LaTeX; cần cài font)', base: 'times', name: 'Latin Modern Math', family: 'lm' },
+  ncm: { label: 'New Computer Modern Math (kiểu LaTeX; cần cài font)', base: 'times', name: 'New Computer Modern Math', family: 'lm' },
+  xits: { label: 'XITS Math (có chân, kiểu Times; cần cài font)', base: 'times', name: 'XITS Math', family: 'stix' },
+  libertinus: { label: 'Libertinus Math (có chân; cần cài font)', base: 'times', name: 'Libertinus Math', family: 'libertinus' },
+  pagella: { label: 'TeX Gyre Pagella Math (kiểu Palatino; cần cài font)', base: 'palatino', name: 'TeX Gyre Pagella Math', family: 'pagella' },
   sans: { label: 'Arial (không chân)', base: 'times', name: 'Arial', family: 'sans' },
+  fira: { label: 'Fira Math (không chân; cần cài font)', base: 'times', name: 'Fira Math', family: 'fira' },
+  noto: { label: 'Noto Sans Math (không chân; cần cài font)', base: 'times', name: 'Noto Sans Math', family: 'noto' },
 };
 
 /** Full size of the equation (points) as the MTEF size table writes it: units nibble 2 (pt), digits, 0xF. */

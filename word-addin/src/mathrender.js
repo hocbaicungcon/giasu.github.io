@@ -9,6 +9,12 @@ export const FAMILIES = {
   palatino: `'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', ${SYMS}, serif`,
   cambriamath: `'Cambria Math', Cambria, 'STIX Two Math', 'Times New Roman', ${SYMS}, serif`,
   cambria: `Cambria, 'Times New Roman', ${SYMS}, serif`,
+  stix: `'STIX Two Math', 'XITS Math', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
+  lm: `'Latin Modern Math', 'New Computer Modern Math', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
+  libertinus: `'Libertinus Math', 'Libertinus Serif', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
+  pagella: `'TeX Gyre Pagella Math', 'Palatino Linotype', 'Book Antiqua', 'Cambria Math', ${SYMS}, serif`,
+  fira: `'Fira Math', 'Fira Sans', Arial, ${SYMS}, sans-serif`,
+  noto: `'Noto Sans Math', 'Noto Sans', Arial, ${SYMS}, sans-serif`,
   sans: `Arial, 'Helvetica Neue', Helvetica, ${SYMS}, sans-serif`,
 };
 let MATHFONT = FAMILIES.times;
