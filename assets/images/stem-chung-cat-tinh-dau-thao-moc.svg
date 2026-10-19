@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" width="100%" height="auto" style="max-width:720px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="bgDistill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Heating Mantle / Burner Glow -->
+    <linearGradient id="heatGlow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+
+    <!-- Cooling Water Gradient -->
+    <linearGradient id="waterCool" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#bae6fd" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Essential Oil Floating Layer -->
+    <linearGradient id="oilGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+
+    <filter id="shadowD" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+
+    <marker id="arrVap" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+    <marker id="arrWat" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0284c7"/>
+    </marker>
+  </defs>
+
+  <!-- Container -->
+  <rect width="720" height="500" rx="14" fill="url(#bgDistill)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="90" y="14" width="540" height="34" rx="17" fill="#0f172a" filter="url(#shadowD)"/>
+  <text x="360" y="36" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="0.5">HỆ THỐNG CHƯNG CẤT LÔI CUỐN HƠI NƯỚC TÁCH TINH DẦU THẢO MỘC</text>
+
+  <!-- ================= 1. HEATING & BOILING FLASK (Bình chưng cất thảo mộc) ================= -->
+  <!-- Tripod & Burner Base -->
+  <g transform="translate(120, 390)">
+    <!-- Tripod Legs -->
+    <line x1="-35" y1="10" x2="-55" y2="70" stroke="#334155" stroke-width="4"/>
+    <line x1="35" y1="10" x2="55" y2="70" stroke="#334155" stroke-width="4"/>
+    <line x1="0" y1="10" x2="0" y2="70" stroke="#334155" stroke-width="3"/>
+    <rect x="-45" y="6" width="90" height="6" rx="2" fill="#475569"/>
+    <!-- Wire Gauze with Ceramic Center -->
+    <rect x="-42" y="2" width="84" height="4" fill="#cbd5e1" stroke="#64748b"/>
+    <circle cx="0" cy="4" r="16" fill="#e2e8f0"/>
+
+    <!-- Alcohol Burner (Đèn cồn) -->
+    <rect x="-22" y="28" width="44" height="38" rx="6" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+    <rect x="-6" y="22" width="12" height="6" fill="#e2e8f0"/>
+    <!-- Wick & Flame -->
+    <path d="M0,8 Q8,18 0,25 Q-8,18 0,8 Z" fill="url(#heatGlow)"/>
+    <circle cx="0" cy="18" r="4" fill="#fef08a"/>
+  </g>
+
+  <!-- Boiling Flask (Bình cầu đáy tròn chứa nước và sả/vỏ bưởi) -->
+  <g transform="translate(120, 310)">
+    <!-- Flask Body -->
+    <circle cx="0" cy="0" r="75" fill="#ffffff" stroke="#475569" stroke-width="2.5"/>
+    <!-- Boiling Water + Chopped Herbs -->
+    <path d="M-68,18 A75,75 0 0,0 68,18 Z" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+    <!-- Chopped Herbs (lá sả / vỏ bưởi) -->
+    <path d="M-40,40 Q-30,35 -20,42" fill="none" stroke="#15803d" stroke-width="3"/>
+    <path d="M-10,50 Q0,45 15,52" fill="none" stroke="#15803d" stroke-width="3"/>
+    <path d="M25,35 Q35,40 45,36" fill="none" stroke="#15803d" stroke-width="3"/>
+    <path d="M-30,55 Q-15,62 0,56" fill="none" stroke="#ca8a04" stroke-width="3"/>
+    <path d="M10,62 Q25,58 35,65" fill="none" stroke="#ca8a04" stroke-width="3"/>
+    <!-- Bubbles -->
+    <circle cx="-20" cy="25" r="4" fill="#ffffff" stroke="#16a34a"/>
+    <circle cx="10" cy="20" r="3" fill="#ffffff" stroke="#16a34a"/>
+    <circle cx="30" cy="30" r="4" fill="#ffffff" stroke="#16a34a"/>
+
+    <!-- Flask Neck -->
+    <rect x="-14" y="-135" width="28" height="70" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+    <!-- Liquid Meniscus -->
+    <ellipse cx="0" cy="18" rx="68" ry="8" fill="#bbf7d0"/>
+
+    <!-- Steam Flow Upwards -->
+    <path d="M-4,-70 Q-10,-95 -2,-115" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3,2"/>
+    <path d="M4,-70 Q10,-95 2,-115" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3,2"/>
+  </g>
+
+  <!-- Connecting Adapter (Ống nối dẫn hơi nghiêng) -->
+  <path d="M120,175 L120,150 Q120,140 130,140 L230,175" fill="none" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+  <path d="M120,175 L120,150 Q120,140 130,140 L230,175" fill="none" stroke="#ffffff" stroke-width="8"/>
+
+  <!-- Thermometer (Nhiệt kế đo hơi ~95 - 99°C) -->
+  <line x1="120" y1="135" x2="120" y2="75" stroke="#ef4444" stroke-width="3"/>
+  <circle cx="120" cy="135" r="4" fill="#ef4444"/>
+  <text x="135" y="90" fill="#dc2626" font-size="11" font-weight="700">T ≈ 98°C</text>
+
+  <!-- ================= 2. LIEBIG CONDENSER (Ống sinh hàn thẳng) ================= -->
+  <g transform="translate(340, 220) rotate(22)">
+    <!-- Outer Water Jacket (Vỏ sinh hàn chứa nước mát) -->
+    <rect x="-110" y="-20" width="220" height="40" rx="8" fill="url(#waterCool)" stroke="#0284c7" stroke-width="2"/>
+
+    <!-- Inner Vapor Tube (Ống ngưng tụ hơi bên trong) -->
+    <rect x="-135" y="-7" width="270" height="14" fill="#ffffff" fill-opacity="0.7" stroke="#475569" stroke-width="2"/>
+
+    <!-- Droplets condensing inside -->
+    <circle cx="-50" cy="0" r="3" fill="#38bdf8"/>
+    <circle cx="0" cy="2" r="3.5" fill="#facc15"/>
+    <circle cx="40" cy="1" r="3" fill="#38bdf8"/>
+    <circle cx="80" cy="3" r="4" fill="#facc15"/>
+
+    <!-- Water Inlet (Nước lạnh vào - đầu dưới) -->
+    <rect x="75" y="18" width="14" height="24" fill="#0284c7" rx="3"/>
+    <line x1="82" y1="52" x2="82" y2="22" stroke="#0284c7" stroke-width="3" marker-end="url(#arrWat)"/>
+
+    <!-- Water Outlet (Nước ấm ra - đầu trên) -->
+    <rect x="-90" y="-38" width="14" height="20" fill="#0284c7" rx="3"/>
+    <line x1="-83" y1="-18" x2="-83" y2="-48" stroke="#0284c7" stroke-width="3" marker-end="url(#arrWat)"/>
+  </g>
+
+  <!-- Cool Water In/Out Text -->
+  <text x="450" y="340" fill="#0284c7" font-size="11" font-weight="700">Nước lạnh VÀO (ở dưới)</text>
+  <text x="210" y="125" fill="#0369a1" font-size="11" font-weight="700">Nước ấm RA (ở trên)</text>
+
+  <!-- ================= 3. RECEIVING SEPARATORY FLASK (Bình hứng & Phễu chiết tách tinh dầu) ================= -->
+  <!-- Receiver Adapter -->
+  <path d="M472,275 L520,320 L520,340" fill="none" stroke="#475569" stroke-width="8"/>
+  <path d="M472,275 L520,320 L520,340" fill="none" stroke="#ffffff" stroke-width="5"/>
+
+  <!-- Separatory Funnel / Receiver -->
+  <g transform="translate(520, 390)">
+    <!-- Funnel Body -->
+    <path d="M-35,-45 L35,-45 L20,35 L6,55 L6,75 L-6,75 L-6,55 L-20,35 Z" fill="#ffffff" stroke="#475569" stroke-width="2.2"/>
+
+    <!-- Water Layer (Nước cất thơm ở dưới) -->
+    <path d="M-28,-10 L28,-10 L20,35 L6,55 L6,73 L-6,73 L-6,55 L-20,35 Z" fill="#bae6fd" stroke="#38bdf8"/>
+    <text x="0" y="25" text-anchor="middle" fill="#0369a1" font-size="11" font-weight="700">NƯỚC THƠM</text>
+    <text x="0" y="38" text-anchor="middle" fill="#475569" font-size="9">(Hydrosol d &gt; doil)</text>
+
+    <!-- Floating Essential Oil Layer (Lớp tinh dầu nổi lên trên) -->
+    <rect x="-33" y="-30" width="66" height="20" fill="url(#oilGrad)" stroke="#eab308" stroke-width="1.2"/>
+    <text x="0" y="-16" text-anchor="middle" fill="#854d0e" font-size="11.5" font-weight="800">TINH DẦU</text>
+    <text x="0" y="-5" text-anchor="middle" fill="#713f12" font-size="9">(Nhẹ hơn nước d ≈ 0.88)</text>
+
+    <!-- Stopcock valve -->
+    <rect x="-12" y="55" width="24" height="6" fill="#ef4444" rx="2"/>
+
+    <!-- Droplet -->
+    <circle cx="0" cy="85" r="3" fill="#38bdf8"/>
+
+    <!-- Beaker under stopcock -->
+    <path d="M-22,90 L-22,120 Q-22,125 -16,125 L16,125 Q22,125 22,120 L22,90" fill="#ffffff" stroke="#64748b" stroke-width="1.8"/>
+  </g>
+
+  <!-- ================= ANNOTATION BOXES ================= -->
+  <!-- Left Box: Nồi chưng cất -->
+  <rect x="25" y="80" width="190" height="65" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.5" filter="url(#shadowD)"/>
+  <text x="35" y="100" fill="#15803d" font-size="12" font-weight="800">1. NỒI CHƯNG CẤT</text>
+  <text x="35" y="118" fill="#334155" font-size="10.5">• Nước + Thảo mộc thái nhỏ</text>
+  <text x="35" y="133" fill="#475569" font-size="10">• Hơi nước lôi cuốn tinh dầu</text>
+
+  <!-- Center Box: Ống sinh hàn -->
+  <rect x="300" y="70" width="200" height="65" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" filter="url(#shadowD)"/>
+  <text x="310" y="90" fill="#0369a1" font-size="12" font-weight="800">2. ỐNG SINH HÀN</text>
+  <text x="310" y="108" fill="#334155" font-size="10.5">• Làm lạnh ngưng tụ hỗn hợp hơi</text>
+  <text x="310" y="123" fill="#475569" font-size="10">• Nước làm mát chảy ngược chiều</text>
+
+  <!-- Right Box: Phễu chiết tách -->
+  <rect x="525" y="170" width="180" height="75" rx="8" fill="#ffffff" stroke="#eab308" stroke-width="1.5" filter="url(#shadowD)"/>
+  <text x="535" y="190" fill="#a16207" font-size="12" font-weight="800">3. BÌNH GẠN / PHỄU CHIẾT</text>
+  <text x="535" y="208" fill="#334155" font-size="10.5">• Tách 2 pha không tan</text>
+  <text x="535" y="223" fill="#854d0e" font-size="10">• Tinh dầu nổi lên trên</text>
+  <text x="535" y="237" fill="#475569" font-size="10">• Mở khóa xả nước bên dưới</text>
+</svg>

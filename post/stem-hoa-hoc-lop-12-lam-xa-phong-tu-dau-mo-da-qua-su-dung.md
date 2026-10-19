@@ -1,6 +1,6 @@
 ---
 title: STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng
-description: STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng
+description: 'Kế hoạch bài dạy STEM Hóa học 12 tái chế dầu mỡ thải thành xà phòng handmade: phản ứng xà phòng hóa chất béo, cơ chế hạt mixen tẩy rửa, quy trình an toàn và phiếu học tập.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'
@@ -10,303 +10,151 @@ tags:
 - STEM
 - Chất béo
 - Xà phòng
+- Tái chế
 grade: 12
 ---
 
-**1**. TÊN CHỦ ĐỀ: LÀM XÀ PHÒNG TỪ DẦU, MỠ ĐÃ QUA SỬ DỤNG
-**(Số tiết: 3 – Hóa học 12)**
+# Kế hoạch bài dạy STEM: Tái chế dầu mỡ đã qua sử dụng thành xà phòng handmade
 
-2. MÔ TẢ CHỦ ĐỀ:**
+* **Đối tượng học sinh:** Lớp 12 (Cấp Trung học phổ thông).
+* **Môn học chủ đạo:** Hóa học 12 (Chương 1: Este – Lipit; Bài: Khái niệm về xà phòng và chất giặt rửa tổng hợp).
+* **Môn học tích hợp:** Sinh học 10 (Lipit và cấu trúc màng sinh chất); Công nghệ 12 (Gia công sản phẩm tiêu dùng); Toán học (Cân đo tỉ lệ khối lượng, tính toán lượng xút theo chỉ số xà phòng hóa SAP).
+* **Thời lượng thực hiện:** 03 tiết (135 phút trên lớp) kết hợp theo dõi quá trình ủ dưỡng bánh xà phòng tại nhà.
 
-Lipit là những hợp chất hữu cơ có trong tế bào sống, không tan trong nước nhưng tan nhiều trong dung môi hữu cơ không phân cực.
+---
 
-Lipit là những hợp chất hữu cơ có trong tế bào sống, không tan trong nước nhưng tan nhiều trong dung môi hữu cơ không phân cực.
+## 1. Mô tả chủ đề STEM
 
-Chất béo: Chất béo là trieste của glixerol với axit béo, gọi chung là triglixerit hay triaxylglixerol. Từ đó chúng ta tìm hiểu chủ đề **LÀM XÀ PHÒNG TỪ DẦU, MỠ ĐÃ QUA SỬ DỤNG.**
+Mỗi ngày, các gia đình và quán ăn thải ra môi trường một lượng rất lớn **dầu ăn đã qua sử dụng**. Dầu mỡ thải nếu đổ trực tiếp xuống bồn rửa hay cống rãnh sẽ đông đặc lại, gây tắc nghẽn hệ thống thoát nước nghiêm trọng, đồng thời tạo ra một màng dầu kị nước trên bề mặt ao hồ, ngăn cản sự hòa tan của oxi và hủy hoại hệ sinh thái thủy sinh.
 
-Bài 2, 3 hóa học 12: “Lipit, Khái niệm xà phòng và chất tẩy rửa” 
+Tuy nhiên, về mặt hóa học, dầu ăn thừa bản chất vẫn là các **trieste của glixerol với axit béo (triglycerit)**. Khi đun nóng với dung dịch kiềm ($\text{NaOH}$), chúng sẽ tham gia phản ứng xà phòng hóa để tạo ra muối natri của axit béo – chính là thành phần cốt lõi của **xà phòng bánh**.
 
-**3. MỤC TIÊU**
+Trong chủ đề STEM này, học sinh sẽ:
+1. Thu gom và xử lý sơ bộ dầu mỡ thừa (lọc cặn, khử mùi thức ăn chiên rán bằng thảo mộc tự nhiên).
+2. Tính toán chính xác lượng kiềm $\text{NaOH}$ và lượng nước cần thiết để phản ứng xà phòng hóa diễn ra hoàn toàn, tránh dư thừa kiềm gây hại cho da.
+3. Thực hành nấu và đổ khuôn những bánh xà phòng rửa tay, cọ rửa gia dụng handmade độc đáo, an toàn và thân thiện với môi trường.
 
-**a. Kiến thức:**
+---
 
-– Học sinh vận dụng được các kiến thức về chất béo để điều chế thành công xà phòng từ các nguyên liệu khác nhau: mỡ động vật, dầu thực vật.**– Biết được vai trò của chất béo với sự sống và trong công nghiệp.
+## 2. Mục tiêu bài học
 
-b. Kĩ năng:**
+### 2.1. Kiến thức
+* Viết được phương trình hóa học tổng quát của phản ứng xà phòng hóa chất béo bằng dung dịch $\text{NaOH}$:
+  $$(\text{RCOO})_3\text{C}_3\text{H}_5 + 3\text{NaOH} \xrightarrow{t^\circ} 3\text{RCOONa} + \text{C}_3\text{H}_5(\text{OH})_3$$
+* Giải thích được cấu trúc lưỡng tính của phân tử xà phòng: gồm một đầu ưa nước mang điện tích âm ($-\text{COO}^-$) và một đuôi dài kị nước/ưa dầu (gốc hiđrocacbon $\text{R}-$).
+* Mô tả được cơ chế tẩy rửa tạo hạt mixen (micelle): các đuôi kị nước cắm sâu vào giọt dầu mỡ, còn các đầu ưa nước chìa ra ngoài môi trường nước, cuốn giọt dầu mỡ phân tán thành nhũ tương bền và bị dòng nước xả trôi.
 
-– Tính toán tỉ lệ đảm bảo các tiêu chí đề ra, rèn luyện các thao tác, kĩ năng thực hành.**– Lập kế hoạch cá nhân/nhóm để chế tạo và thử nghiệm dựa trên quy trình chế tạo sản phẩm.
+### 2.2. Kĩ năng
+* Tính toán lượng xút ($\text{NaOH}$) cần dùng dựa vào khối lượng dầu và chỉ số xà phòng hóa ($\text{SAP value}$).
+* Thao tác an toàn hóa chất khi hòa tan xút: luôn đổ từ từ hạt $\text{NaOH}$ vào nước (tuyệt đối không đổ nước vào xút để tránh sôi bắn gây bỏng kiềm).
+* Nhận biết chính xác thời điểm đạt độ sệt (vết trace) của hỗn hợp xà phòng trước khi đổ khuôn.
+* Đánh giá chất lượng bánh xà phòng sau khi ủ dưỡng (độ cứng, khả năng tạo bọt, kiểm tra độ pH bằng giấy quỳ an toàn $\text{pH} \approx 8 - 9$).
 
-– Trình bày, bảo vệ được quy trình làm sản phẩm của mình, phản biện được các ý kiến thảo luận;
+### 2.3. Phẩm chất
+* Tinh thần trách nhiệm với môi trường sống, chủ động tìm giải pháp tái chế rác thải sinh hoạt.
+* Tính cẩn thận, kỷ luật và tuân thủ nghiêm ngặt quy tắc an toàn bảo hộ lao động.
 
-– Tự nhận xét, đánh giá được quá trình làm việc cá nhân và nhóm.
+### 2.4. Năng lực chú trọng
+* Năng lực vận dụng kiến thức hóa học hữu cơ vào đời sống thực tiễn.
+* Năng lực nghiên cứu, tính toán định lượng và chế tạo kỹ thuật.
+* Năng lực hợp tác nhóm và phân chia công việc.
 
-c. Phẩm chất:**
+---
 
-– Nghiêm túc, chủ động, tích cực tham gia các hoạt động học;**– Yêu thích sự khám phá, tìm tòi và vận dụng các kiến thức học được vào giải quyết nhiệm vụ được giao
+## 3. Kiến thức nền tảng & Cơ sở hóa học
 
-– Có ý thức bảo vệ môi trường.
+### 3.1. Phản ứng xà phòng hóa chất béo
+Dầu thực vật chứa chủ yếu các triglixerit của axit béo chưa no (như axit oleic $\text{C}_{17}\text{H}_{33}\text{COOH}$, axit linoleic $\text{C}_{17}\text{H}_{31}\text{COOH}$) và axit béo no (như axit panmitic $\text{C}_{15}\text{H}_{31}\text{COOH}$, axit stearic $\text{C}_{17}\text{H}_{35}\text{COOH}$).
+Khi phản ứng với dung dịch $\text{NaOH}$ ở nhiệt độ thích hợp ($45^\circ\text{C} - 55^\circ\text{C}$):
+$$(\text{C}_{17}\text{H}_{33}\text{COO})_3\text{C}_3\text{H}_5 + 3\text{NaOH} \to 3\text{C}_{17}\text{H}_{33}\text{COONa} + \text{C}_3\text{H}_5(\text{OH})_3$$
+* $\text{C}_{17}\text{H}_{33}\text{COONa}$ (Natri oleat) là muối xà phòng có tác dụng tẩy rửa và tạo bọt.
+* $\text{C}_3\text{H}_5(\text{OH})_3$ (Glixerol) là chất lỏng sánh không màu, có tính năng giữ ẩm tuyệt vời cho da.
 
-– Có tinh thần trách nhiệm, hòa đồng, giúp đỡ nhau trong nhóm
+### 3.2. Cơ chế làm sạch vết bẩn của hạt Mixen (Micelle)
+Vết bẩn gốc dầu mỡ không thể tan trong nước do nước là dung môi phân cực, còn dầu mỡ là hợp chất không phân cực:
+1. Khi xà phòng tan trong nước, các phân tử $\text{RCOONa}$ phân li thành ion $\text{RCOO}^-$ và $\text{Na}^+$.
+2. Đuôi hiđrocacbon kị nước $\text{R}-$ cắm chặt vào các phân tử chất bẩn dầu mỡ.
+3. Đầu mang điện tích âm $-\text{COO}^-$ hướng ra ngoài, tương tác với các phân tử nước phân cực.
+4. Nhiều phân tử xà phòng cùng hướng vào tạo thành một cụm hình cầu kín bao bọc lấy giọt dầu mỡ gọi là **hạt Mixen**. Các hạt mixen tích điện âm đẩy nhau nên không bị tụ lại, phân tán lơ lửng trong nước và dễ dàng bị nước xả trôi đi.
 
-– Có ý thức tuân thủ các tiêu chuẩn kĩ thuật và giữ gìn vệ sinh chung khi thực nghiệm.
+![Cơ chế tẩy rửa của phân tử xà phòng và quy trình tái chế dầu ăn thải thành xà phòng handmade](assets/images/stem-co-che-xa-phong-mixen.svg)
 
-d. Năng lực:**
+---
 
-– Phát triển năng lực thực hành, sử dụng ngôn ngữ khoa học trong cuộc sống, năng lực làm việc theo nhóm.**– Tìm hiểu ứng dụng của phản ứng xà phòng hóa
+## 4. Thiết bị dạy học và nguyên vật liệu
 
-– Giải quyết được nhiệm vụ và chế tạo xà phòng một cách sáng tạo;
+### 4.1. Hóa chất và dụng cụ cho mỗi nhóm học sinh (4 – 5 HS)
 
-– Hợp tác với các thành viên trong nhóm để thống nhất quy trình và phân công thực hiện;
+| STT | Tên nguyên vật liệu / Hóa chất | Thông số kỹ thuật | Số lượng |
+| :---: | :--- | :--- | :---: |
+| 1 | Dầu ăn đã qua sử dụng (dầu chiên thừa) | Đã lọc sạch vụn thức ăn qua rây vải | 200 gam |
+| 2 | Natri hidroxit ($\text{NaOH}$) tinh khiết | Dạng vảy trắng hoặc hạt rắn (độ tinh khiết $\ge 98\%$) | 30 gam |
+| 3 | Nước cất hoặc nước tinh khiết | Nước sạch không chứa ion kim loại cứng | 70 mL |
+| 4 | Cân điện tử tiểu ly | Độ chính xác $\pm 0{,}1\text{ gam}$ | 1 chiếc |
+| 5 | Bát/Ca trộn inox hoặc thủy tinh chịu nhiệt | Dung tích 500 – 1000 mL, chịu được kiềm nóng | 2 chiếc |
+| 6 | Phới lồng đánh trứng (hoặc máy xay cầm tay) | Thao tác khuấy tạo vết trace | 1 chiếc |
+| 7 | Nhiệt kế rượu hoặc nhiệt kế điện tử | Thang đo $0^\circ\text{C} - 100^\circ\text{C}$ | 1 chiếc |
+| 8 | Khuôn đổ xà phòng | Khuôn silicon mềm hình bánh, hoa sen hoặc chữ nhật | 2 – 3 ô |
+| 9 | Tinh dầu tự nhiên (sả chanh, cam, tràm) | Tạo hương thơm dễ chịu cho xà phòng | 3 – 5 mL |
+| 10 | Đồ bảo hộ an toàn (găng tay cao su, kính bảo hộ) | Bắt buộc sử dụng khi tiếp xúc dung dịch kiềm | 4 bộ |
 
-– Tự nghiên cứu kiến thức, lên kế hoạch thiết kế, chế tạo, thử nghiệm và đánh giá.
+---
 
-4. THIẾT BỊ**
+## 5. Tiến trình dạy học
 
-– SGK Hóa học 12**– Máy tính có kết nối Internet
+### Hoạt động 1: Xác định vấn đề và yêu cầu sản phẩm (Tiết 1 – 15 phút)
 
-– Hóa chất: Mỡ động vật hoặc dầu thực vật, NaOH, cồn 900, nước.
+#### a. Tình huống thực tiễn
+Giáo viên cho xem hình ảnh cống rãnh bị tắc nghẽn do mỡ đóng tảng (fatberg) và ô nhiễm nguồn nước do dầu ăn thải. Giáo viên đặt câu hỏi: *"Làm cách nào chúng ta có thể biến hàng trăm lít dầu ăn thừa bỏ đi mỗi ngày thành một sản phẩm tẩy rửa hữu ích cho trường học và gia đình?"*
 
-– Dụng cụ: Nồi, khuôn, cốc đong, bếp, đũa khuấy.
+#### b. Tiêu chí sản phẩm xà phòng handmade từ dầu mỡ tái chế
 
-5. TIẾN TRÌNH DẠY HỌC**
+| Tiêu chí | Mức độ yêu cầu |
+| :--- | :--- |
+| **1. Tính chất vật lý** | Bánh xà phòng đông kết rắn chắc, bề mặt nhẵn mịn, màu sắc sáng (trắng ngà hoặc vàng nhạt), không chảy nhớt dầu. |
+| **2. Khả năng làm sạch** | Tạo bọt xốp mịn, cọ rửa sạch vết bẩn dầu mỡ trên bát đĩa hoặc giặt sạch khăn lau. |
+| **3. Độ an toàn (pH)** | Sau thời gian ủ dưỡng (3 – 4 tuần), độ pH của xà phòng đạt chuẩn an toàn cho da tay ($\text{pH} \approx 8 - 9$), không còn dư lượng kiềm $\text{NaOH}$ tự do. |
+| **4. Mùi hương & Thẩm mỹ**| Khử hoàn toàn mùi khét của thức ăn chiên rán cũ, có hương thơm sả chanh tự nhiên, tạo hình đẹp mắt. |
 
-**Hoạt động 1. XÁC ĐỊNH YÊU CẦU CHẾ TẠO XÀ PHÒNG**
+---
 
-1. Mục đích của hoạt động
+## 6. Phụ lục: Phiếu học tập & Bảng tiêu chí đánh giá
 
-– HS tìm hiểu về tính tẩy rửa của xà phòng.**– Học sinh vận dụng được các kiến thức về chất béo để điều chế thành công xà phòng từ các nguyên liệu khác nhau: mỡ động vật, dầu dừa, dầu đậu nành.
+### 6.1. Phiếu học tập số 1: Công thức tính toán lượng kiềm (Lye Calculator)
 
-– Biết được vai trò, ứng dụng của chất béo trong việc sản xuất xà phòng.
+**Nhóm:** ………………………………… **Loại dầu ăn sử dụng:** Dầu thực vật hỗn hợp
 
-– HS hiểu rõ phản ứng xà phòng hoá giữa chất béo và dung dịch kiềm
+1. Khối lượng dầu ăn thừa sau khi lọc sạch ($m_{\text{dầu}}$): ……………… gam.
+2. Tra cứu chỉ số xà phòng hóa đối với $\text{NaOH}$ ($\text{SAP value}$ của dầu ăn trung bình $\approx 0{,}136$):
+   * Khối lượng $\text{NaOH}$ lý thuyết cần dùng:
+     $$m_{\text{NaOH}} = m_{\text{dầu}} \times 0{,}136 = \text{……………… gam}$$
+   * Áp dụng tỉ lệ dư thừa dầu an toàn (Superfatting $5\%$ để đảm bảo $100\%$ xút được phản ứng hết, bánh xà phòng dưỡng ẩm dịu nhẹ):
+     $$m_{\text{NaOH thực tế}} = m_{\text{NaOH lý thuyết}} \times 95\% = \text{……………… gam}$$
+3. Lượng nước cất cần dùng để hòa tan $\text{NaOH}$ (tỉ lệ nước : xút thường là $2{,}5 : 1$):
+   $$m_{\text{nước}} = m_{\text{NaOH thực tế}} \times 2{,}5 = \text{……………… gam}$$
 
-1. Nội dung hoạt động
+---
 
-- Tìm hiểu 1 số cách thức sản xuất xà phòng để thấy rõ được kiến thức về chất béo, phản ứng xà phòng hoá và vai trò ứng dụng của nó trong cuộc sống.
+### 6.2. Bảng tiêu chí đánh giá sản phẩm (Rubric)
 
-- Xác định nhiệm vụ chế tạo xà phòng bằng dầu, mỡ đã qua sử dụng với các tiêu chí
+| Tiêu chí | Mức 1: Cần cố gắng (1 – 2đ) | Mức 2: Đạt (3 – 4đ) | Mức 3: Xuất sắc (5đ) | Điểm |
+| :--- | :--- | :--- | :--- | :---: |
+| **1. An toàn thí nghiệm** | Thao tác đổ nước vào xút sai quy tắc; không mang đủ găng tay/kính. | Thao tác đúng quy trình an toàn, hòa tan xút cẩn thận. | Thao tác cực kỳ chuyên nghiệp, kiểm soát nhiệt độ dung dịch chuẩn xác. | ……/5 |
+| **2. Chất lượng bánh xà phòng** | Bánh bị mềm nhão, tách lớp dầu, hoặc có tinh thể xút bám mặt. | Bánh đông đặc tốt, bề mặt tương đối mịn, rửa sạch dầu mỡ. | Bánh cứng cáp, bề mặt bóng đẹp, tạo bọt nhiều, cảm giác mềm mại. | ……/5 |
+| **3. Độ kiềm an toàn (pH)** | pH quá cao (> 10) làm rát da tay do tính toán sai lượng xút. | pH đạt mức 9 – 9,5, dùng tốt cho việc cọ rửa gia dụng. | pH đạt chuẩn lý tưởng 8 – 8,5, dịu nhẹ an toàn cho da tay. | ……/5 |
+| **4. Ý thức môi trường & Trình bày** | Không nêu được ý nghĩa bảo vệ môi trường của việc tái chế dầu. | Trình bày được phản ứng hóa học và lợi ích của việc tái chế. | Báo cáo sinh động, lan tỏa thông điệp sống xanh sâu sắc tới cộng đồng. | ……/5 |
 
-+ Dầu và mỡ khoảng 200g, nước 100g; cồn 90 độ; NaOH 70g, tinh dầu.
+---
 
-+ Tạo ra bánh xà phòng đơn giản từ dầu, mỡ đã qua sử dụng với mục đích bảo vệ môi trường.
+## 7. Tài liệu tham khảo và liên kết tải về
 
-1. Sản phẩm học tập của học sinh
+* Tải bộ giáo án Word và tài liệu STEM Hóa học 12 đầy đủ:
+  - [STEM Hóa 12 – Làm xà phòng từ dầu mỡ đã qua sử dụng](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-- Mô tả và giải thích được một cách định tính về nguyên lí chế tạo xà phòng
-
-- Xác định được các kiến thức cần sử dụng chế tạo xà phòng theo các tiêu chí đã cho.
-
-1. Cách thức tổ chức
-
-- Giáo viên giao cho học sinh tìm hiểu về một miếng xà phòng (mô tả, xem hình ảnh, video…) với yêu cầu: mô tả đặc điểm, hình dạng của miếng xà phòng; giải thích tại sao từ các nguyên liệu trên lại tạo ra được miếng xà phòng.
-
-– Học sinh ghi lời mô tả và giải thích vào vở cá nhân; trao đổi với bạn (nhóm đôi hoặc 4 học sinh); trình bày và thảo luận chung.
-
-– Giáo viên xác nhận kiến thức cần sử dụng là phản ứng xà phòng hoá, tính tẩy rửa của xà phòng và giao nhiệm vụ cho học sinh tìm hiểu trong sách giáo khoa để giải thích bằng phản ứng trong quá trình điều chế với các tiêu chí đã cho.
-
-![STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng 1](file:///C:/Users/Admin/AppData/Local/Temp/lu9252a0hu4d.tmp/lu9252a0hu4q_tmp_b5cf2241c61ce711.jpg)
-
-Hoạt động 2. NGHIÊN CỨU KIẾN THỨC NỀN VÀ ĐỀ XUẤT GIẢI PHÁP**
-
-1. Mục đích của hoạt động
-
-– Phản ứng xà phòng hoá giữa chất béo và dung dịch kiềm**– Tính tẩy rửa của xà phòng.
-
-b. Nội dung hoạt động**
-
-– Học sinh nghiên cứu lí thuyết sách giáo khoa và tài liệu tham khảo,video trên mạng về cách thức sản xuất xà phòng về các kiến thức trọng tâm sau:**+ Lipit (Bài 2 – SGK hoá học lớp 12)
-
-+ Khái niệm về xà phòng và chất tẩy rửa tổng hợp (Bài 3 – SGK hoá học lớp 12)
-
-+ Một số trang web về cách sản xuất xà phòng.
-
-– Học sinh thảo luận về các kiến thức và đưa ra các phương pháp sản xuất xà phòng đơn giản có căn cứ.
-
-Gợi ý:
-
-- Điều kiện nào để xảy ra phản ứng xà phòng hoá?
-
-- Những mẫu bánh xà phòng có mùi và màu đặc trưng.
-
-- Các nguyên liệu, dụng cụ nào cần được sử dụng và sử dụng như thế nào?
-
-– Học sinh xây dựng phương án thiết kế thuyền và chuẩn bị cho buổi trình bày trước lớp (các hình thức: thuyết trình, poster, powerpoint…). Hoàn thành quy trình sản xuất xà phòng đơn giản (phụ lục đính kèm) và nộp cho giáo viên.
-
-– Yêu cầu:
-
-- Quy trình có kèm hình ảnh, video mô tả rõ kích thước, hình dạng của xà phòng và các nguyên vật liệu sử dụng…
-
-- Trình bày, giải thích quy trình sản xuất xà phòng và vai trò ứng dụng của chất béo và xà phòng.
-
-1. Sản phẩm của học sinh
-
-– Học sinh xác định quy trình sản xuất xà phòng dựa vào kiến thức đã nghiên cứu
-
-– Học sinh đề xuất và lựa chọn giải pháp  sử dụng các loại dầu, mỡ đã qua sử dụng trong gia đình để tạo ra bánh xà phòng không độc hại phục vụ cho lợi ích gia đình.
-
-d. Cách thức tổ chức**
-
-– Giáo viên giao nhiệm vụ cho học sinh:
-
-- Nghiên cứu kiến thức trọng tâm: phản ứng xà phòng hoá.
-
-- Xây dựng quy trình sản xuất xà phòng theo yêu cầu;
-
-- Lập kế hoạch trình bày và bảo vệ quy trình sản xuất.
-
-– Học sinh thực hiện nhiệm vụ theo nhóm:
-
-- Tự đọc và nghiên cứu sách giáo khoa, các tài liệu tham khảo, tìm kiếm thông tin trên Internet…
-
-- Đề xuất và thảo luận các ý tưởng ban đầu, thống nhất một phương án sản xuất xà phòng tại nhà tốt nhất;
-
-- Xây dựng và hoàn thiện được cái quá trình sản xuất ra bánh xà phòng an toàn, tiết kiệm, đơn giản;
-
-- Lựa chọn hình thức và chuẩn bị nội dung báo cáo.
-
-– Giáo viên quan sát, hỗ trợ học sinh khi cần thiết.
-
-**Hoạt động 3. LỰA CHỌN GIẢI PHÁP**
-
-1. Mục đích của hoạt động
-
-Học sinh hoàn thiện được quy trình sản xuất xà phòng của nhóm mình.
-
-1. Nội dung hoạt động
-
-**–** Học sinh trình bày, giải thích và bảo vệ quy trình sản xuất xà phòng theo các tiêu chí đề ra. Minh chứng sản phẩm của phản ứng xà phòng hoá tạo ra bánh xà phòng như yêu cầu.**– Thảo luận, đặt câu hỏi và phản biện các ý kiến về quy trình; ghi lại các nhận xét, góp ý; tiếp thu và điều chỉnh bản thiết kế nếu cần.**
-
-– Phân công công việc, lên kế hoạch sản xuất và thử nghiệm sản phẩm.
-
-c. Sản phẩm của học sinh**
-
-Các bánh xà phòng thơm, an toàn.
-
-**d. Cách thức tổ chức**
-
-– Giáo viên đưa ra yêu cầu về:
-
-- Nội dung cần trình bày;
-
-- Thời lượng báo cáo;
-
-- Cách thức trình bày bản thiết kế và thảo luận.
-
-– Học sinh báo cáo, thảo luận.**– Giáo viên điều hành, nhận xét, góp ý và hỗ trợ học sinh.
-
-Hoạt động 4. CHẾ TẠO MẪU THỬ NGHIỆM VÀ ĐÁNH GIÁ**
-
-**a. Mục đích của hoạt động**
-
-– Học sinh dựa vào quy trình đã lựa chọn để chế tạo các bánh  đảm bảo yêu cầu đặt ra.**– Học sinh thử nghiệm, đánh giá sản phẩm và điều chỉnh nếu cần.
-
-b. Nội dung hoạt động**
-
-**–** Học sinh sử dụng các nguyên vật liệu và dụng cụ cho trước (dầu, mỡ qua sử dụng được làm sạch sẽ, tinh dầu tram, dung dịch NaHO, giấy quỳ, nồi Inox, đủa quấy thuỷ tinh, bếp, khuôn) để tiến hành chế tạo bánh xà phòng theo quy trình.**– Trong quá trình chế tạo các nhóm đồng thời thử nghiệm và điều chỉnh bằng việc sử dụng bánh xà phòng để rửa tay.**
-
-c. Sản phẩm của học sinh**
-
-Mỗi nhóm có một sản phầm là một bánh xà phòng đã được hoàn thiện và thử nghiệm.
-
-![STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng 2](file:///C:/Users/Admin/AppData/Local/Temp/lu9252a0hu4d.tmp/lu9252a0hu4q_tmp_c2a87131a2d1b791.jpg)
-
- **d. Cách thức tổ chức**–  Giáo viên giao nhiệm vụ:
-
-- Sử dụng các nguyên vật liệu và dụng cụ cho trước để chế tạo bánh xà phòng đơn giản theo yêu cầu.
-
-- Thử nghiệm, điều chỉnh và hoàn thiện sản phẩm.
-
-– Học sinh tiến hành chế tạo, thử nghiệm và hoàn thiện sản phầm theo nhóm.
-
-– Giáo viên quan sát, hỗ trợ học sinh nếu cần.
-
-Hoạt động 5.  TRÌNH BÀY SẢN PHẨM**
-
-**a. Mục đích của hoạt động**
-
-Các nhóm học sinh giới thiệu các bánh xà phòng theo các mẫu khác nhau, chia sẻ về kết quả thử nghiệm, thảo luận và định hướng cải tiến sản phầm.
-
-**b. Nội dung hoạt động**
-
-– Các nhóm trình diễn sản phẩm trước lớp.**– Đánh giá sản phẩm dựa trên các tiêu chí đã đề ra:
-
-- An toàn: không gây kích ứng da, bảo vệ môi trường
-
-- Tiết kiệm: tận dụng các sản phẩm dầu, mỡ đã qua sử dụng.
-
-- Đơn giản, dễ thực hiện.
-
-- Thơm, sạch, có tính tẩy rửa tốt.
-
-– Chia sẻ, thảo luận để tiếp tục điều chỉnh, hoàn thiện sản phẩm.
-
-- Các nhóm tự đánh giá kết quả nhóm mình và tiếp thu các góp ý, nhận xét từ giáo viên và các nhóm khác;
-
-- Sau khi chia sẻ và thảo luận, đề xuất các phương án điều chỉnh sản phẩm;
-
-- Chia sẻ các khó khăn, các kiến thức và kinh nghiệm rút ra qua quá trình thực hiện nhiệm sản xuất xà phòng.
-
-c. Sản phẩm của học sinh**
-
-Xà phòng đã được hoàn thiện và nội dung trình bày báo cáo của các nhóm.
-
-**d. Cách thức tổ chức**
-
-– Giáo viên giao nhiệm vụ: các nhóm trình diễn sản phầm trước lớp và tiến hành thảo luận, chia sẻ.
-
-– Các nhóm chia sẻ về kết quả, đề xuất các phương án điều chỉnh, các kiến thức và kinh nghiệm rút ra trong quá trình thực hiện nhiệm vụ sản xuất xà phòng.
-
-– Giáo viên đánh giá, kết luận và tổng kết.
-
- 
-
-![STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng 3](file:///C:/Users/Admin/AppData/Local/Temp/lu9252a0hu4d.tmp/lu9252a0hu4q_tmp_5f941186367dc5.jpg)
-
- 
-
-![STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng 4](file:///C:/Users/Admin/AppData/Local/Temp/lu9252a0hu4d.tmp/lu9252a0hu4q_tmp_9e04f6c580e0c2b6.jpg)
-
- 
-
-GIA SƯ THÔNG MINH gửi các thầy cô link download
-
-- [HÓA 12. LÀM XÀ PHÒNG TỪ DẦU, MỠ ĐÃ QUA SỬ DỤNG](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
-
- 
-
-Xem thêm
-
-- [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
-
-- [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
-
-- [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
-
-- [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
-
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
-
-- [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
-
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
-
-- [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
-
-- [Tổng hợp đề thi học kì 2 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-11-mon-hoa-hoc.html)
-
-- [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
-
-- [Tổng hợp các chuyên đề hóa học lớp 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)
-
-- [Tổng hợp các chuyên đề hóa học lớp 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
-
-- [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
-
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
-
-- [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
-
-- [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
-
-←[STEM hóa học lớp 12 xây dựng quy trình làm rượu nếp](/bai-viet/stem-hoa-hoc-lop-12-xay-dung-quy-trinh-lam-ruou-nep.html)
-[STEM hóa học lớp 12 chủ đề bóng cứu hạn](/bai-viet/stem-hoa-hoc-lop-12-chu-de-bong-cuu-han.html)→
+### Xem thêm các chủ đề STEM liên quan:
+* [Tổng hợp giáo án chủ đề STEM trong môn Hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
+* [STEM chế tạo bình điện phân hóa học lớp 10](/bai-viet/stem-che-tao-binh-dien-phan-hoa-hoc-lop-10.html)
+* [STEM hóa học lớp 11 sử dụng bắp cải tím làm chất chỉ thị axit bazơ](/bai-viet/stem-hoa-hoc-lop-11-su-dung-bap-cai-tim-lam-chat-chi-thi-axit-bazo.html)
+* [STEM hóa học lớp 11 tách tinh dầu từ các nguồn thảo mộc tự nhiên](/bai-viet/stem-hoa-hoc-lop-11-tach-tinh-dau-tu-cac-nguon-thao-moc-tu-nhien.html)
+* [STEM hóa học lớp 12 làm cơm rượu nếp truyền thống](/bai-viet/stem-hoa-hoc-lop-12-lam-com-ruou.html)
+* [STEM thiết kế và làm đèn kéo quân](/bai-viet/stem-thiet-ke-va-lam-den-keo-quan.html)

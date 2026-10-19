@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="100%" height="auto" style="max-width:700px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradE" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Electrolyte Solution Gradient (Nước muối pha loãng phớt vàng nhạt của Giaven) -->
+    <linearGradient id="solGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ecfccb" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#bef264" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Graphite Electrode Gradient -->
+    <linearGradient id="graphiteGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Battery Gradient -->
+    <linearGradient id="battGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+
+    <filter id="shadowE" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+
+    <marker id="arrRed" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#ef4444"/>
+    </marker>
+    <marker id="arrBlue" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- Container -->
+  <rect width="700" height="500" rx="14" fill="url(#bgGradE)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="100" y="14" width="500" height="34" rx="17" fill="#0f172a" filter="url(#shadowE)"/>
+  <text x="350" y="36" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="0.5">SƠ ĐỒ THIẾT BỊ ĐIỆN PHÂN DUNG DỊCH NaCl ĐIỀU CHẾ NƯỚC GIAVEN</text>
+
+  <!-- ================= DC POWER SUPPLY (Nguồn điện 1 chiều 9V - 12V) ================= -->
+  <g transform="translate(290, 65)">
+    <!-- Battery Box -->
+    <rect x="0" y="0" width="120" height="50" rx="6" fill="url(#battGrad)" stroke="#0f172a" stroke-width="1.5" filter="url(#shadowE)"/>
+    <!-- Terminal bumps -->
+    <rect x="-6" y="16" width="6" height="18" fill="#ef4444" rx="2"/>
+    <rect x="120" y="16" width="6" height="18" fill="#2563eb" rx="2"/>
+    <text x="60" y="26" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="800">PIN 9V / 12V</text>
+    <text x="60" y="42" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="600">Nguồn 1 chiều (DC)</text>
+    <!-- Signs -->
+    <text x="14" y="24" fill="#ffffff" font-size="16" font-weight="900">+</text>
+    <text x="106" y="24" fill="#ffffff" font-size="18" font-weight="900">−</text>
+  </g>
+
+  <!-- ================= CIRCUIT WIRES ================= -->
+  <!-- Positive Wire (Red): From Battery (+) to Anode -->
+  <path d="M284,90 L210,90 L210,180" fill="none" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <!-- Switch / Key K -->
+  <circle cx="210" cy="130" r="4" fill="#ef4444"/>
+  <circle cx="210" cy="148" r="4" fill="#ef4444"/>
+  <line x1="210" y1="130" x2="222" y2="145" stroke="#ef4444" stroke-width="3"/>
+  <text x="232" y="142" fill="#ef4444" font-size="12" font-weight="700">Khóa K</text>
+
+  <!-- Negative Wire (Blue): From Battery (-) to Cathode -->
+  <path d="M416,90 L490,90 L490,180" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Direction of Electron Flow (Dòng e) -->
+  <line x1="220" y1="90" x2="260" y2="90" stroke="#ef4444" stroke-width="2" marker-end="url(#arrRed)"/>
+  <text x="240" y="82" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="700">Dòng điện</text>
+  <line x1="470" y1="90" x2="430" y2="90" stroke="#2563eb" stroke-width="2" marker-end="url(#arrBlue)"/>
+  <text x="450" y="82" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="700">e⁻ về (+)</text>
+
+  <!-- ================= ELECTROLYTIC CELL (Bình điện phân không màng ngăn) ================= -->
+  <!-- Glass/Plastic Beaker -->
+  <path d="M150,170 L150,440 Q150,455 165,455 L535,455 Q550,455 550,440 L550,170" fill="#ffffff" stroke="#64748b" stroke-width="3"/>
+  <!-- Top Rim of Beaker -->
+  <ellipse cx="350" cy="170" rx="200" ry="14" fill="#f8fafc" stroke="#64748b" stroke-width="2.5"/>
+
+  <!-- Liquid Level (Dung dịch NaCl + Giaven) -->
+  <path d="M152,215 L152,438 Q152,453 167,453 L533,453 Q548,453 548,438 L548,215 Z" fill="url(#solGrad)"/>
+  <ellipse cx="350" cy="215" rx="198" ry="12" fill="#d9f99d" fill-opacity="0.7" stroke="#84cc16" stroke-width="1.5"/>
+
+  <!-- ================= ELECTRODES (2 cực than chì / ruột chì) ================= -->
+  <!-- Anode (+) Left -->
+  <rect x="198" y="170" width="24" height="230" rx="4" fill="url(#graphiteGrad)" stroke="#0f172a" stroke-width="1.5" filter="url(#shadowE)"/>
+  <!-- Cathode (-) Right -->
+  <rect x="478" y="170" width="24" height="230" rx="4" fill="url(#graphiteGrad)" stroke="#0f172a" stroke-width="1.5" filter="url(#shadowE)"/>
+
+  <!-- Anode Connection Clip -->
+  <rect x="194" y="170" width="32" height="12" rx="2" fill="#ef4444"/>
+  <!-- Cathode Connection Clip -->
+  <rect x="474" y="170" width="32" height="12" rx="2" fill="#2563eb"/>
+
+  <!-- ================= GAS BUBBLES & REACTIONS AT ELECTRODES ================= -->
+  <!-- Anode Bubbles: Chlorine (Cl2) -->
+  <g fill="#ca8a04" stroke="#854d0e" stroke-width="0.8">
+    <circle cx="210" cy="380" r="3"/>
+    <circle cx="225" cy="360" r="4"/>
+    <circle cx="192" cy="340" r="3.5"/>
+    <circle cx="224" cy="310" r="4.5"/>
+    <circle cx="205" cy="270" r="5"/>
+    <circle cx="222" cy="240" r="5.5"/>
+    <circle cx="210" cy="205" r="6"/>
+  </g>
+  <!-- Chlorine Gas rising callout -->
+  <text x="210" y="195" text-anchor="middle" fill="#854d0e" font-size="12" font-weight="800">Cl₂ ↑</text>
+
+  <!-- Cathode Bubbles: Hydrogen (H2) -->
+  <g fill="#38bdf8" stroke="#0284c7" stroke-width="0.8">
+    <circle cx="490" cy="380" r="3.5"/>
+    <circle cx="475" cy="355" r="4.5"/>
+    <circle cx="505" cy="335" r="4"/>
+    <circle cx="482" cy="295" r="5"/>
+    <circle cx="500" cy="265" r="5.5"/>
+    <circle cx="484" cy="235" r="6"/>
+    <circle cx="495" cy="205" r="6.5"/>
+  </g>
+  <!-- Hydrogen Gas rising callout -->
+  <text x="490" y="195" text-anchor="middle" fill="#0369a1" font-size="12" font-weight="800">H₂ ↑</text>
+
+  <!-- ================= CHEMICAL REACTION & CONVECTION MIXING IN THE CELL ================= -->
+  <!-- Mixing Arrows showing no diaphragm / khuếch tán tạo Giaven -->
+  <path d="M235,320 C280,310 320,330 350,340 C380,350 420,340 460,320" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="4,3"/>
+  <path d="M460,360 C420,380 380,370 350,360 C320,350 280,370 235,360" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="4,3"/>
+
+  <!-- Reaction in solution callout (Center) -->
+  <rect x="250" y="260" width="200" height="60" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="1.8" filter="url(#shadowE)"/>
+  <text x="350" y="280" text-anchor="middle" fill="#15803d" font-size="11" font-weight="800">PHẢN ỨNG TẠO GIAVEN:</text>
+  <text x="350" y="298" text-anchor="middle" fill="#0f172a" font-size="11" font-weight="700">Cl₂ + 2NaOH → NaCl + NaClO + H₂O</text>
+  <text x="350" y="312" text-anchor="middle" fill="#475569" font-size="9.5">(Không có màng ngăn giữa 2 điện cực)</text>
+
+  <!-- ================= CALLOUT CARDS FOR ELECTRODE PROCESSES ================= -->
+  <!-- Left Box: ANODE (+) -->
+  <rect x="18" y="235" width="165" height="120" rx="8" fill="#ffffff" stroke="#ef4444" stroke-width="1.5" filter="url(#shadowE)"/>
+  <rect x="18" y="235" width="165" height="26" rx="8" fill="#ef4444"/>
+  <text x="100" y="252" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">ANOT (+) - CỰC DƯƠNG</text>
+  <text x="26" y="278" fill="#0f172a" font-size="11" font-weight="700">• Điện cực than chì</text>
+  <text x="26" y="296" fill="#0f172a" font-size="11" font-weight="700">• Quá trình oxi hóa:</text>
+  <text x="28" y="314" fill="#b91c1c" font-size="11.5" font-weight="800">2Cl⁻ → Cl₂ ↑ + 2e</text>
+  <text x="26" y="332" fill="#475569" font-size="10.5">Khí Cl₂ tan 1 phần</text>
+  <text x="26" y="346" fill="#475569" font-size="10.5">khuếch tán sang Catot</text>
+
+  <!-- Right Box: CATHODE (-) -->
+  <rect x="517" y="235" width="165" height="120" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#shadowE)"/>
+  <rect x="517" y="235" width="165" height="26" rx="8" fill="#2563eb"/>
+  <text x="600" y="252" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="800">CATOT (−) - CỰC ÂM</text>
+  <text x="525" y="278" fill="#0f172a" font-size="11" font-weight="700">• Điện cực than chì</text>
+  <text x="525" y="296" fill="#0f172a" font-size="11" font-weight="700">• Quá trình khử:</text>
+  <text x="527" y="314" fill="#1d4ed8" font-size="11.5" font-weight="800">2H₂O + 2e → H₂ ↑ + 2OH⁻</text>
+  <text x="525" y="332" fill="#475569" font-size="10.5">Sinh ra khí H₂ và</text>
+  <text x="525" y="346" fill="#475569" font-size="10.5">môi trường kiềm OH⁻</text>
+
+  <!-- Bottom Solution Legend -->
+  <rect x="180" y="420" width="340" height="28" rx="6" fill="#ffffff" stroke="#64748b" stroke-width="1.2"/>
+  <text x="350" y="438" text-anchor="middle" fill="#0f172a" font-size="11" font-weight="700">Dung dịch điện phân: NaCl 5% – 10% trong nước sạch</text>
+</svg>

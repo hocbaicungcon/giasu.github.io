@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 480" width="100%" height="auto" style="max-width:740px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="bgPaper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Progression headers -->
+    <linearGradient id="stepB1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <linearGradient id="stepB2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="stepB3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="stepB4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+
+    <marker id="arrPaper" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+
+    <filter id="shadowPaper" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="740" height="480" rx="14" fill="url(#bgPaper)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="70" y="14" width="600" height="34" rx="17" fill="#0f172a" filter="url(#shadowPaper)"/>
+  <text x="370" y="36" text-anchor="middle" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.5">QUY TRÌNH SẢN XUẤT TÚI GIẤY CHỐNG THẤM TỪ THÂN CÂY CHUỐI &amp; DẦU ĂN</text>
+
+  <!-- ================= 4 MAIN PRODUCTION STAGES ================= -->
+
+  <!-- STAGE 1: TÁCH SỢI CHUỐI -->
+  <g transform="translate(25, 75)">
+    <rect width="160" height="240" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowPaper)"/>
+    <path d="M0,10 Q0,0 10,0 L150,0 Q160,0 160,10 L160,32 L0,32 Z" fill="url(#stepB1)"/>
+    <circle cx="18" cy="16" r="8" fill="#ffffff"/>
+    <text x="18" y="20" text-anchor="middle" fill="#15803d" font-size="11" font-weight="800">1</text>
+    <text x="32" y="20" fill="#ffffff" font-size="11.5" font-weight="700">TÁCH SỢI CHUỐI</text>
+
+    <!-- Graphic: Banana Trunk & Fibers -->
+    <rect x="12" y="42" width="136" height="85" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <g transform="translate(80, 85)">
+      <!-- Banana Trunk layers -->
+      <path d="M-30,-25 C-30,25 -20,30 0,30 C20,30 30,25 30,-25 Z" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+      <!-- Inner fibers peeling -->
+      <line x1="-15" y1="-20" x2="-22" y2="25" stroke="#15803d" stroke-width="2"/>
+      <line x1="0" y1="-22" x2="0" y2="28" stroke="#15803d" stroke-width="2"/>
+      <line x1="15" y1="-20" x2="22" y2="25" stroke="#15803d" stroke-width="2"/>
+      <!-- Fiber bundle -->
+      <path d="M25,-10 Q35,-5 42,-18" stroke="#ca8a04" stroke-width="2.5" fill="none"/>
+    </g>
+
+    <!-- Details -->
+    <text x="15" y="145" fill="#0f172a" font-size="11" font-weight="700">• Thu gom thân chuối</text>
+    <text x="15" y="162" fill="#475569" font-size="10">Bóc tách các bẹ chuối già,</text>
+    <text x="15" y="176" fill="#475569" font-size="10">loại bỏ phần ruột xốp.</text>
+    <text x="15" y="196" fill="#0f172a" font-size="11" font-weight="700">• Băm khúc 2 – 3 cm</text>
+    <text x="15" y="213" fill="#475569" font-size="10">Cán dập cơ học giải</text>
+    <text x="15" y="227" fill="#475569" font-size="10">phóng bó sợi xenlulozo.</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="190" y1="195" x2="202" y2="195" stroke="#64748b" stroke-width="2" marker-end="url(#arrPaper)"/>
+
+  <!-- STAGE 2: NẤU KIỀM LOẠI LIGNIN -->
+  <g transform="translate(205, 75)">
+    <rect width="160" height="240" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowPaper)"/>
+    <path d="M0,10 Q0,0 10,0 L150,0 Q160,0 160,10 L160,32 L0,32 Z" fill="url(#stepB2)"/>
+    <circle cx="18" cy="16" r="8" fill="#ffffff"/>
+    <text x="18" y="20" text-anchor="middle" fill="#0284c7" font-size="11" font-weight="800">2</text>
+    <text x="32" y="20" fill="#ffffff" font-size="11.5" font-weight="700">NẤU BỘT GIẤY</text>
+
+    <!-- Graphic: Pot boiling with NaOH -->
+    <rect x="12" y="42" width="136" height="85" rx="6" fill="#f0f9ff" stroke="#bae6fd"/>
+    <g transform="translate(80, 85)">
+      <!-- Pot -->
+      <path d="M-28,-15 L28,-15 L24,25 Q0,30 -24,25 Z" fill="#94a3b8" stroke="#475569" stroke-width="1.5"/>
+      <!-- Liquid boiling -->
+      <path d="M-22,0 L22,0 L20,22 Q0,26 -20,22 Z" fill="#38bdf8" fill-opacity="0.8"/>
+      <!-- Bubbles & Steam -->
+      <circle cx="-8" cy="10" r="3" fill="#ffffff"/>
+      <circle cx="10" cy="12" r="3.5" fill="#ffffff"/>
+      <path d="M-10,-18 Q-5,-28 -2,-32" stroke="#64748b" stroke-width="1.5" fill="none"/>
+      <path d="M8,-18 Q12,-28 15,-32" stroke="#64748b" stroke-width="1.5" fill="none"/>
+    </g>
+
+    <text x="15" y="145" fill="#0f172a" font-size="11" font-weight="700">• Nấu với NaOH 5%</text>
+    <text x="15" y="162" fill="#475569" font-size="10">Đun sôi nhẹ 60 phút để</text>
+    <text x="15" y="176" fill="#475569" font-size="10">hòa tan lignin và pectin.</text>
+    <text x="15" y="196" fill="#0f172a" font-size="11" font-weight="700">• Rửa sạch &amp; Xay nhuyễn</text>
+    <text x="15" y="213" fill="#475569" font-size="10">Rửa trôi hết kiềm dư,</text>
+    <text x="15" y="227" fill="#475569" font-size="10">xay nhuyễn thành bột giấy.</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="370" y1="195" x2="382" y2="195" stroke="#64748b" stroke-width="2" marker-end="url(#arrPaper)"/>
+
+  <!-- STAGE 3: SEO GIẤY & ÉP KHÔ -->
+  <g transform="translate(385, 75)">
+    <rect width="160" height="240" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowPaper)"/>
+    <path d="M0,10 Q0,0 10,0 L150,0 Q160,0 160,10 L160,32 L0,32 Z" fill="url(#stepB3)"/>
+    <circle cx="18" cy="16" r="8" fill="#ffffff"/>
+    <text x="18" y="20" text-anchor="middle" fill="#d97706" font-size="11" font-weight="800">3</text>
+    <text x="32" y="20" fill="#ffffff" font-size="11.5" font-weight="700">SEO KHUÔN ÉP KHÔ</text>
+
+    <!-- Graphic: Paper Mesh Screen & Sheet -->
+    <rect x="12" y="42" width="136" height="85" rx="6" fill="#fffbeb" stroke="#fde68a"/>
+    <g transform="translate(80, 85)">
+      <!-- Wooden Deckle / Frame -->
+      <rect x="-35" y="-20" width="70" height="42" fill="#fed7aa" stroke="#78350f" stroke-width="1.5" rx="2"/>
+      <!-- Mesh screen with paper pulp layer -->
+      <rect x="-30" y="-16" width="60" height="34" fill="#fef08a" stroke="#ca8a04" stroke-width="1"/>
+      <line x1="-30" y1="-8" x2="30" y2="-8" stroke="#ca8a04" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <line x1="-30" y1="0" x2="30" y2="0" stroke="#ca8a04" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <line x1="-30" y1="8" x2="30" y2="8" stroke="#ca8a04" stroke-width="0.8" stroke-dasharray="2,2"/>
+    </g>
+
+    <text x="15" y="145" fill="#0f172a" font-size="11" font-weight="700">• Seo trên khuôn lưới</text>
+    <text x="15" y="162" fill="#475569" font-size="10">Hòa bột giấy vào bồn nước,</text>
+    <text x="15" y="176" fill="#475569" font-size="10">lắc đều khuôn lưới vớt sợi.</text>
+    <text x="15" y="196" fill="#0f172a" font-size="11" font-weight="700">• Ép ráo &amp; Phơi sấy</text>
+    <text x="15" y="213" fill="#475569" font-size="10">Ép chặt loại bỏ nước,</text>
+    <text x="15" y="227" fill="#475569" font-size="10">phơi khô thành tờ giấy dai.</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="550" y1="195" x2="562" y2="195" stroke="#64748b" stroke-width="2" marker-end="url(#arrPaper)"/>
+
+  <!-- STAGE 4: CHỐNG THẤM & TẠO TÚI -->
+  <g transform="translate(565, 75)">
+    <rect width="150" height="240" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowPaper)"/>
+    <path d="M0,10 Q0,0 10,0 L140,0 Q150,0 150,10 L150,32 L0,32 Z" fill="url(#stepB4)"/>
+    <circle cx="18" cy="16" r="8" fill="#ffffff"/>
+    <text x="18" y="20" text-anchor="middle" fill="#7c3aed" font-size="11" font-weight="800">4</text>
+    <text x="32" y="20" fill="#ffffff" font-size="11.5" font-weight="700">CHỐNG THẤM TÚI</text>
+
+    <!-- Graphic: Shopping Bag with Water Repellency -->
+    <rect x="10" y="42" width="130" height="85" rx="6" fill="#faf5ff" stroke="#e9d5ff"/>
+    <g transform="translate(75, 85)">
+      <!-- Bag Body -->
+      <polygon points="-22,-10 22,-10 18,28 -18,28" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+      <!-- Handle -->
+      <path d="M-10,-10 C-10,-24 10,-24 10,-10" fill="none" stroke="#78350f" stroke-width="2"/>
+      <!-- Water droplet beading on surface -->
+      <circle cx="4" cy="8" r="4" fill="#38bdf8" stroke="#0284c7" stroke-width="1"/>
+      <circle cx="12" cy="16" r="3" fill="#38bdf8" stroke="#0284c7" stroke-width="1"/>
+    </g>
+
+    <text x="12" y="145" fill="#0f172a" font-size="11" font-weight="700">• Quét màng dầu ăn</text>
+    <text x="12" y="162" fill="#475569" font-size="9.5">Phủ lớp mỏng dầu thừa</text>
+    <text x="12" y="176" fill="#475569" font-size="9.5">pha sáp ong tạo lớp kị nước.</text>
+    <text x="12" y="196" fill="#0f172a" font-size="11" font-weight="700">• Gấp dán túi xách</text>
+    <text x="12" y="213" fill="#475569" font-size="9.5">Gấp thành túi quai xách,</text>
+    <text x="12" y="227" fill="#475569" font-size="9.5">chịu tải tốt từ 2 – 4 kg.</text>
+  </g>
+
+  <!-- ================= BOTTOM: COMPARISON & SCIENTIFIC PRINCIPLE ================= -->
+  <g transform="translate(25, 330)">
+    <rect width="690" height="135" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowPaper)"/>
+    <rect width="690" height="28" rx="10" fill="#0f172a"/>
+    <text x="345" y="19" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">CƠ CHẾ KHOA HỌC: TẠI SAO GIẤY CHUỐI PHỦ DẦU ĂN LẠI BỀN VÀ CHỐNG THẤM?</text>
+
+    <!-- Left Box: Cellulose Strength -->
+    <rect x="15" y="38" width="320" height="85" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <text x="25" y="58" fill="#15803d" font-size="11.5" font-weight="800">1. ĐỘ DAI CỦA SỢI XENLULOZƠ THÂN CHUỐI</text>
+    <text x="25" y="76" fill="#334155" font-size="10">• Sợi chuối dài, có cấu trúc vi sợi đan xen chặt chẽ.</text>
+    <text x="25" y="92" fill="#334155" font-size="10">• Độ bền kéo (Tensile strength) cao gấp 1,5 – 2 lần giấy gỗ.</text>
+    <text x="25" y="108" fill="#475569" font-size="9.5">• Tiết kiệm tài nguyên rừng, phân hủy sinh học 100% sau 30 ngày.</text>
+
+    <!-- Right Box: Hydrophobic Oil Coating -->
+    <rect x="355" y="38" width="320" height="85" rx="6" fill="#fffbeb" stroke="#fde68a"/>
+    <text x="365" y="58" fill="#b45309" font-size="11.5" font-weight="800">2. LỚP MÀNG LIPIT KỊ NƯỚC (HYDROPHOBIC)</text>
+    <text x="365" y="76" fill="#334155" font-size="10">• Dầu ăn chứa triglixerit không phân cực, trơ với nước.</text>
+    <text x="365" y="92" fill="#334155" font-size="10">• Giọt nước đọng dạng hạt cầu (hiệu ứng lá sen), không ngấm.</text>
+    <text x="365" y="108" fill="#475569" font-size="9.5">• Giữ nguyên độ bền của giấy khi chứa đồ ướt hoặc gặp trời mưa.</text>
+  </g>
+</svg>

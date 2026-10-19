@@ -1,6 +1,6 @@
 ---
 title: STEM hóa học lớp 11 Tách tinh dầu từ các nguồn thảo mộc tự nhiên
-description: STEM hóa học lớp 11 Tách tinh dầu từ các nguồn thảo mộc tự nhiên
+description: 'Kế hoạch bài dạy STEM Hóa học 11 tách tinh dầu sả, bưởi, quế bằng phương pháp chưng cất lôi cuốn hơi nước: nguyên lý áp suất hơi riêng phần, sơ đồ hệ thống chưng cất và phiếu học tập.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'
@@ -10,369 +10,200 @@ tags:
 - STEM Hóa học
 - Tách tinh dầu
 - Thảo mộc
+- Chưng cất
 grade: 11
 ---
 
-STEM hóa học lớp 11 Tách tinh dầu từ các nguồn thảo mộc tự nhiên
+# Kế hoạch bài dạy STEM: Tách tinh dầu từ các nguồn thảo mộc tự nhiên
 
-**TÁCH TINH DẦU TỪ CÁC NGUỒN THẢO MỘC TỰ NHIÊN**
-**(Số tiết: 03 tiết – Lớp 11)**
-**1. Mô tả chủ đề:**
-Trong chủ đề này, HS sẽ thực hiện dự án thiết kế và tách được tinh dầu từ các nguồn thảo mộc tự nhiên.
+* **Đối tượng học sinh:** Lớp 11 (Cấp Trung học phổ thông).
+* **Môn học chủ đạo:** Hóa học 11 (Chương 3: Các phương pháp tách biệt và tinh chế hợp chất hữu cơ – Phương pháp chưng cất lôi cuốn hơi nước; Phương pháp chiết).
+* **Môn học tích hợp:** Sinh học 11 (Túi tinh dầu trong mô thực vật, vai trò xua đuổi côn trùng); Vật lí 10 (Sự sôi, áp suất hơi bão hòa, nhiệt hóa hơi); Công nghệ (Chế tạo nồi chưng cất mini từ vật liệu tái chế).
+* **Thời lượng thực hiện:** 03 tiết (135 phút).
 
-Theo đó, HS phải tìm hiểu và chiếm lĩnh các kiến thức mới:
+---
 
-– Phương pháp tách, tinh chế hợp chất hữu cơ, phương pháp chưng cất lôi cuốn hơi nước. Quy trình tách tinh dầu từ nguồn nguyên liệu thảo mộc tự nhiên.
+## 1. Mô tả chủ đề STEM
 
-– Các loại tinh dầu, công dụng của tinh dầu trong thảo mộc tự nhiên.
+Việt Nam là xứ sở nhiệt đới với thảm thực vật vô cùng phong phú, chứa đựng nhiều loại cây dược liệu và gia vị giàu tinh dầu quý giá như sả chanh, vỏ bưởi, vỏ cam, quế, tràm, bạc hà, hương nhu... Tinh dầu thiên nhiên được ứng dụng rộng rãi trong y học, trị liệu, làm đẹp và xua đuổi muỗi, côn trùng.
 
-Đồng thời, HS phải vận dụng các kiến thức cũ của các bài học:
+Trong chủ đề STEM **"Tách tinh dầu từ nguồn thảo mộc tự nhiên"**, học sinh đóng vai trò là những **chuyên viên chiết xuất dược liệu**:
+1. Vận dụng kiến thức về phương pháp chưng cất lôi cuốn hơi nước và tính chất kị nước của tecpenoid.
+2. Tự thiết kế và chế tạo một **hệ thống chưng cất mini** tận dụng từ các vật liệu dễ tìm (nồi áp suất mini, ống đồng xoắn, bình ngưng tụ làm mát).
+3. Thu hồi tinh dầu nguyên chất và sản phẩm phụ nước thơm (hydrosol), tiến hành đóng chai và thử nghiệm ứng dụng xua muỗi, khử mùi phòng học.
 
-– Phương pháp tách, tinh chế hợp chất hữu cơ (Chương 3 – Sách Hóa học 11).
+---
 
-**2. Mục tiêu:**
-Sau khi hoàn thành chủ đề này, học sinh đạt các mục tiêu sau:
+## 2. Mục tiêu bài học
 
-**a. Phát triển năng lực khoa học tự nhiên:**
-– Mô tả được quy trình thực hiện tách, chiết tinh dầu từ nguồn thảo mộc tự nhiên.
+### 2.1. Kiến thức
+* Trình bày được nguyên lý của **phương pháp chưng cất lôi cuốn hơi nước**:
+  * Áp suất hơi của hệ hai chất lỏng không tan vào nhau bằng tổng áp suất hơi riêng phần của từng chất: $P = P_{\text{nước}} + P_{\text{tinh dầu}} = P_{\text{khí quyển}}$.
+  * Hỗn hợp sôi ở nhiệt độ thấp hơn nhiệt độ sôi của nước ($< 100^\circ\text{C}$) và thấp hơn nhiệt độ sôi của tinh dầu tinh khiết ($150^\circ\text{C} - 250^\circ\text{C}$), giúp bảo toàn các hoạt chất nhạy cảm với nhiệt, không bị phân hủy hay biến tính.
+* Nêu được thành phần hóa học chủ yếu của một số loại tinh dầu: Citral trong sả, Limonene trong vỏ cam/bưởi, Cinnamaldehyde trong quế, Cineol trong tràm.
+* Giải thích được cơ chế phân lớp và tách tinh dầu bằng bình gạn / phễu chiết dựa trên sự chênh lệch khối lượng riêng ($\rho_{\text{tinh dầu}} \approx 0{,}85 - 0{,}92\text{ g/cm}^3 < \rho_{\text{nước}}$).
 
-– Vận dụng được các kiến thức trong chủ đề và kiến thức đã biết, thiết kế được quy trình và tách được sản phẩm tinh dầu từ các nguồn thảo mộc tự nhiên.
+### 2.2. Kĩ năng
+* Lập được bản vẽ kỹ thuật và chế tạo hệ thống ngưng tụ chưng cất mini kín, chống thất thoát hơi.
+* Thực hiện đúng các thao tác xử lý nguyên liệu (thái nhỏ, đập dập phá vỡ túi tinh dầu thực vật), vận hành đun cất và điều chỉnh lưu lượng nước làm mát.
+* Tách triệt để lớp tinh dầu nổi trên mặt nước thơm bằng phễu chiết hoặc ống hút pipet chia vạch.
+* Tính toán hiệu suất thu hồi tinh dầu: $H\% = \frac{m_{\text{tinh dầu}}}{m_{\text{nguyên liệu}}} \times 100\%$.
 
-– Tiến hành thí nghiệm nghiên cứu và và tìm ra điều kiện phù hợp để tách chiết tinh dầu hiệu quả, đơn giản nhất.
+### 2.3. Phẩm chất
+* Tỉ mỉ, kiên nhẫn trong quá trình chờ đợi ngưng tụ từng giọt tinh dầu.
+* Nâng cao ý thức tận dụng phế phụ phẩm nông nghiệp (vỏ bưởi, vỏ cam) tạo ra sản phẩm giá trị gia tăng cao.
 
-– Có bản vẽ hoặc bản thiết kế về quy trình tách tinh dầu nhóm đã thực hiện. 
+### 2.4. Năng lực chú trọng
+* Năng lực thiết kế kỹ thuật và giải quyết vấn đề thực tiễn.
+* Năng lực nghiên cứu hóa học thực nghiệm.
+* Năng lực quản lý thời gian và làm việc nhóm.
 
-– Trình bày, bảo vệ được ý kiến của mình và phản biện ý kiến của người khác;
+---
 
-– Hợp tác trong nhóm để cùng thực hiện nhiệm vụ học tập.
+## 3. Kiến thức nền tảng & Cơ chế chưng cất lôi cuốn hơi nước
 
-**b. Phát triển phẩm chất:**
- – Có thái độ tích cực, hợp tác trong làm việc nhóm;
+### 3.1. Nguyên lý nhiệt động học của chưng cất lôi cuốn hơi nước
+Tinh dầu là hỗn hợp các hợp chất hữu cơ bay hơi, có nhiệt độ sôi cao nhưng không tan trong nước:
+* Khi đun sôi hỗn hợp nước và thảo mộc, hơi nước bốc lên mang theo hơi tinh dầu.
+* Theo **Định luật Dalton**, áp suất hơi tổng cộng:
+  $$P_{\text{tổng}} = P_{\text{nước}} + P_{\text{tinh dầu}} = 1\text{ atm}$$
+* Nhờ đó, nhiệt độ sôi của hỗn hợp luôn luôn nhỏ hơn nhiệt độ sôi của nước ($T_{\text{sôi}} \approx 95^\circ\text{C} - 98^\circ\text{C}$). Điều này có ý nghĩa quyết định: **tinh dầu bay hơi ở nhiệt độ dưới $100^\circ\text{C}$ mà không bị cháy hay phân hủy nhiệt**.
 
-– Yêu thích, say mê nghiên cứu khoa học;
+![Sơ đồ hệ thống chưng cất lôi cuốn hơi nước tách tinh dầu thảo mộc](assets/images/stem-chung-cat-tinh-dau-thao-moc.svg)
 
-– Có ý thức bảo vệ môi trường.
+### 3.2. Cơ chế làm lạnh ngưng tụ và phân tách 2 pha
+1. **Giai đoạn ngưng tụ:** Hỗn hợp hơi nước và tinh dầu đi vào ống sinh hàn được làm lạnh cưỡng bức bởi dòng nước mát chạy ngược chiều (nước vào ở đầu thấp, ra ở đầu cao), ngưng tụ thành chất lỏng đục sữa.
+2. **Giai đoạn phân lớp:** Do tinh dầu không tan trong nước và có khối lượng riêng nhỏ hơn nước ($\rho \approx 0{,}88\text{ g/cm}^3$), các giọt tinh dầu li ti sẽ kết tụ lại và nổi lên trên bề mặt tạo thành một lớp váng dầu màu vàng óng ánh.
+3. **Giai đoạn gạn tách:** Dùng phễu chiết mở khóa xả bỏ lớp nước thơm bên dưới, thu lại lớp tinh dầu nguyên chất nổi phía trên.
 
-**c. Phát triển năng lực chung**
-– Năng lực giải quyết vấn đề và sáng tạo khi tiến hành tìm hiểu, lựa chọn và đưa ra được một quy trình tách tinh dầu hợp lí, hiệu quả.
+---
 
-– Năng lực giao tiếp và hợp tác: thống nhất bản thiết kế và phân công thực hiện từng phần nhiệm vụ cụ thể.
+## 4. Thiết bị dạy học và nguyên vật liệu
 
-– Năng lực tự chủ và tự học: học sinh tự nghiên cứu kiến thức nền và vận dụng kiến thức nền để xây dựng quy trình tách, tinh chế tinh dầu từ nguồn thảo mộc tự nhiên đã lựa chọn.
+### 4.1. Hóa chất và dụng cụ cho mỗi nhóm học sinh (4 – 5 HS)
 
-**3. Thiết bị:**
-GV sẽ hướng dẫn HS sử dụng một số thiết bị sau khi học chủ đề:
+| STT | Tên nguyên vật liệu / Dụng cụ | Thông số & Mô tả | Số lượng |
+| :---: | :--- | :--- | :---: |
+| 1 | Thảo mộc tự nhiên (sả tươi hoặc vỏ bưởi) | Sả tươi già hoặc vỏ bưởi tươi bào mỏng cùi xanh | 500 gam |
+| 2 | Bình chưng cất (bình cầu hoặc nồi áp suất mini) | Dung tích 1000 mL, có ống dẫn hơi ở nắp | 1 chiếc |
+| 3 | Ống sinh hàn thẳng hoặc ống đồng xoắn ruột gà | Dài 30 – 40 cm, có 2 đầu dẫn nước làm mát | 1 chiếc |
+| 4 | Nguồn nhiệt (bếp điện mini hoặc đèn cồn) | Điều chỉnh được nhiệt độ sôi êm dịu | 1 chiếc |
+| 5 | Phễu chiết quả lê (hoặc bình hứng chia vạch) | Dung tích 250 mL có khóa teflon | 1 chiếc |
+| 6 | Ống hút nhỏ giọt pipet pasteur | Dùng hút váng tinh dầu | 3 chiếc |
+| 7 | Bơm chìm mini hồ cá (5W) & ống silicon | Dùng tuần hoàn nước đá làm mát ống sinh hàn | 1 bộ |
+| 8 | Lọ thủy tinh màu hổ phách có nắp nhỏ giọt | Thể tích 10 mL, dùng bảo quản tinh dầu thành phẩm | 2 chiếc |
+| 9 | Thớt, dao, máy xay sinh tố mini | Dùng băm nhỏ hoặc xay thô nguyên liệu | 1 bộ |
+| 10 | Muối ăn ($\text{NaCl}$) | Dùng tăng tỷ trọng nước giúp phân tách nhanh hơn | 30 gam |
 
-– Thiết bị chưng cất lôi cuốn hơi nước.
+---
 
-– Dung môi tách tinh dầu.
+## 5. Tiến trình dạy học
 
-– Một số nguyên vật liệu như: sả, chanh, hồi…. để tách tinh dầu.
+### Hoạt động 1: Xác định vấn đề và tiêu chí sản phẩm (Tiết 1 – 15 phút)
 
-**4. Tiến trình dạy học:**
-**Hoạt động 1:**
-**XÁC ĐỊNH YÊU CẦU ĐỐI VỚI BẢN THIẾT KẾ QUY TRÌNH TÁCH TINH DẦU TỪ CÁC NGUỒN THẢO MỘC TỰ NHIÊN**
-**(Tiết 1 – 45 phút)**
-**A. Mục đích:**
-HS trình bày được kiến thức về các phương pháp có thể sử dụng trong quy trình tách tinh dầu (phương pháp chiết, phương pháp chưng cất) từ các nguồn thảo mộc tự nhiên. Tiếp nhận được nhiệm vụ thiết kế quy trình tách, tinh chế tinh dầu từ các hợp nguồn nguyên liệu thảo mộc trong tự nhiên và hiểu rõ các tiêu chí đánh giá sản phẩm.
+#### a. Tình huống thực tiễn
+Giáo viên bẻ một nhánh sả hoặc bóp nhẹ vỏ quả bưởi tươi: mùi thơm mát tỏa ra ngào ngạt khắp lớp học do các túi tinh dầu bị vỡ. Giáo viên đặt câu hỏi: *"Làm thế nào để thu hồi được tinh dầu nguyên chất từ đống lá sả hay vỏ bưởi này mà không làm mất đi hương thơm tự nhiên của nó?"*
 
-**B. Nội dung:**
-– HS trình bày về phạm vi áp dụng, các bước thực hiện, các điểm cần lưu ý khi thực hiện phương pháp chiết, phương pháp chưng cất.
+#### b. Tiêu chí sản phẩm tinh dầu thảo mộc
 
-– GV tổ chức cho HS tìm hiểu về các loại tinh dầu, công thức hóa học của các tinh dầu, công dụng của các tinh dầu có trong một số nguồn thảo mộc trong tự nhiên và có thể lựa chọn để thực hiện tách tinh dầu. 
+| Tiêu chí | Mức độ yêu cầu |
+| :--- | :--- |
+| **1. Độ tinh khiết** | Tinh dầu trong suốt, có màu vàng sáng hoặc vàng nhạt, không lẫn cặn bẩn, không đục nước. |
+| **2. Mùi hương** | Giữ trọn mùi thơm nồng đặc trưng của loại thảo mộc ban đầu, không có mùi khét cháy. |
+| **3. Hiệu suất thu hồi** | Thu được tối thiểu 1 – 2 mL tinh dầu nguyên chất từ 500g sả hoặc vỏ bưởi. |
+| **4. Độ kín của thiết bị** | Hệ thống chưng cất hoàn toàn kín, không bị rò rỉ hơi tinh dầu ra ngoài phòng học. |
 
-– Các ứng dụng của tinh dầu trong đời sống, phạm vi ứng dụng tinh dầu sau khi có sản phẩm là tinh dầu.
+---
 
-– Từ kiến thức đã tìm hiểu, GV giao nhiệm vụ cho HS thực hiện dự án Tách tinh dầu từ các nguồn thảo mộc tự nhiên. Tiến hành lựa chọn nguồn nguyên liệu để tách tinh dầu, phạm vi ứng dụng dự kiến.
+### Hoạt động 2: Nghiên cứu kiến thức nền và thiết kế hệ thống (Tiết 1 – 30 phút)
 
-– GV thống nhất với HS về kế hoạch triển khai dự án và tiêu chí đánh giá sản phẩm của dự án.
+* Học sinh nghiên cứu các yếu tố ảnh hưởng đến quá trình chưng cất:
+  1. *Độ mịn của nguyên liệu:* Thái lát mỏng giúp giải phóng các túi tinh dầu, nhưng không nên xay quá nhuyễn thành bùn gây trào bọt.
+  2. *Tỉ lệ nước và nguyên liệu:* Lượng nước vừa đủ ngập nguyên liệu (tỉ lệ $1:2$ hoặc $1:3$).
+  3. *Tốc độ làm mát:* Nước làm mát trong ống sinh hàn phải đủ lạnh để hơi ngưng tụ $100\%$, không bị thất thoát mùi thơm ra ngoài.
+* Vẽ bản thiết kế chi tiết hệ thống chưng cất mini của nhóm.
 
-**C. Dự kiến sản phẩm hoạt động của học sinh:**
-– Kết thúc hoạt động, HS cần đạt được các sản phẩm sau:
+---
 
-– Nội dung ghi chép kiến thức cần lưu ý khi thực hiện tách, chiết tinh dầu.
+### Hoạt động 3: Báo cáo phương án và bảo vệ bản thiết kế (Tiết 2 – 45 phút)
 
-– Các nguồn tinh dầu có trong các loại củ quả tự nhiên.
+* Các nhóm báo cáo phương án thiết kế và biện pháp an toàn:
+  * Cách chống trào bọt khi sôi mạnh: thả vài viên bi thủy tinh hoặc mẩu sứ xốp vào đáy nồi.
+  * Phương án làm mát liên tục: dùng xô nước đá và máy bơm mini tuần hoàn nước qua ống sinh hàn.
+* Giáo viên góp ý và phê duyệt bản vẽ kỹ thuật.
 
-– Bảng mô tả nhiệm vụ của dự án và nhiệm vụ các thành viên; thời gian thực hiện dự án và các yêu cầu đối với sản phẩm trong dự án.
+---
 
-**D. Cách thức tổ chức thực hiện**
-**Bước 1. Đặt vấn đề, chuyển giao nhiệm vụ**
-Trên cơ sở GV đã giao nhiệm vụ cho HS về nhà tìm hiểu thông tin về kiến thức của phương pháp chiết, chưng cất cần áp dụng trong quá trình tách tinh dầu. GV đặt câu hỏi để HS trả lời:
+### Hoạt động 4: Chế tạo thiết bị và tiến hành chưng cất (Tiết 3 – 50 phút)
 
-– Nêu lưu ý cần thực hiện khi thực hiện phương pháp chiết, phương pháp chưng cất trong quá trình tách tinh dầu?
+```
+Bước 1: Sơ chế nguyên liệu thảo mộc
+  ├── Sả tươi: rửa sạch, bỏ bớt lá già, dùng dao đập dập rồi cắt khúc 2 cm
+  └── Vỏ bưởi: gọt lấy lớp vỏ xanh ngoài cùng (nơi chứa túi tinh dầu), thái sợi nhỏ
 
-– Các nguồn thảo mộc tự nhiên nào có thể sử dụng để tách tinh dầu? Công dụng tương ứng của các loại tinh dầu.
+Bước 2: Lắp ráp hệ thống chưng cất
+  ├── Cho nguyên liệu và 400 mL nước vào bình cầu (chiếm tối đa 2/3 thể tích bình)
+  ├── Lắp ống dẫn hơi nối bình cầu với ống sinh hàn nghiêng 20° – 25°
+  ├── Đấu nối ống nước làm mát: nước đá vào ở đầu thấp, nước ra ở đầu cao
+  └── Bịt kín các mối nối bằng băng keo teflon chống xì hơi
 
-GV tổng kết bổ sung, chỉ ra được: Hiện nay, người tiêu dùng đang có xu hướng sử dụng những hợp chất từ thiên nhiên, đặc biệt là các loại tinh dầu dùng trong hương trị liệu và công nghiệp mĩ phẩm, dẫn đến nhu cầu sử dụng tinh dầu ngày càng tăng cao. Các tinh dầu sử dụng hằng ngày có trong các nguồn thảo mộc tự nhiên nào và có thể dễ dàng tách ra từ các nguyên liệu, thiết bị đơn giản.
+Bước 3: Vận hành chưng cất
+  ├── Bật bếp đun sôi mạnh đến khi thấy hơi bốc lên thì giảm nhiệt độ sôi êm dịu
+  ├── Theo dõi giọt ngưng tụ chảy vào phễu hứng với tốc độ 20 – 30 giọt/phút
+  └── Quá trình chưng cất diễn ra trong khoảng 30 – 40 phút
 
-**Bước 2. HS làm thí nghiệm khám phá kiến thức.**
-GV đặt vấn đề giới thiệu: Có cách nào để có thể tách tinh dầu từ các nguồn thảo mộc trong tự nhiên hay không?
+Bước 4: Gạn tách và thu hồi tinh dầu
+  ├── Để yên dung dịch thu được trong phễu chiết 10 phút cho phân lớp rõ rệt
+  ├── Thêm 2 gam muối ăn NaCl lắc nhẹ để tăng khối lượng riêng của pha nước
+  ├── Mở khóa phễu chiết tháo từ từ nước thơm hydrosol bên dưới
+  └── Thu lấy lớp tinh dầu nổi trên cùng, cho vào lọ thủy tinh tối màu đóng nút kín
+```
 
-– GV chia HS thành các nhóm từ 6–8 học sinh (Dành thời gian cho các nhóm bầu nhóm trưởng, thư kí).
+---
 
-– GV nêu mục đích và hướng dẫn tiến hành tìm kiếm thông tin
+### Hoạt động 5: Đánh giá sản phẩm và ứng dụng (Tiết 3 – 25 phút)
 
-**Mục đích:** Tiến hành tìm kiếm thông tin về các loại tinh dầu, công thức hóa học của các tinh dầu, công dụng của các tinh dầu có trong một số nguồn thảo mộc trong tự nhiên và có thể lựa chọn để thực hiện tách tinh dầu. 
+* Trưng bày các lọ tinh dầu và sản phẩm xịt phòng/xua muỗi pha chế từ nước thơm hydrosol.
+* Học sinh ngửi thử và so sánh mùi hương giữa các nhóm.
+* Đánh giá hiệu suất và chấm điểm theo Rubric.
 
-– Các ứng dụng của tinh dầu trong đời sống, phạm vi ứng dụng tinh dầu sau khi có sản phẩm là tinh dầu.
+---
 
-– Hướng dẫn học sinh lắp đặt thiết bị chưng cất lôi cuốn hơi nước.
+## 6. Phụ lục: Phiếu học tập & Bảng tiêu chí đánh giá
 
-GV phát phiếu học tập, đưa ra các thông tin tham khảo và định hướng HS tìm kiếm các thông tin.
+### 6.1. Phiếu học tập số 1: Nhật ký thực nghiệm chưng cất
 
-Mỗi nhóm HS sẽ nhận được 2 Phiếu học tập có nội dung như sau:
+**Nhóm:** ………………………………… **Loại thảo mộc sử dụng:** …………………………………
 
-**PHIẾU HỌC TẬP 1: 1 số nguyên liệu thực vật có chứa tinh dầu**
-| Nguyên liệu | Quả hồi | Sả | …….. | ……. | ……… |
-| --- | --- | --- | --- | --- | --- |
-| Tinh dầu |  |  | …….. | ……. | ……… |
-| Công dụng | Kích thích hoạt động của hệ tiêu hoá, giảm đau xương khớp, đau bụng, đau đầu, tạo hương vị cho thực phẩm,. | Sát trùng, khử mùi, đuổi côn trùng, kích thích tiêu hoá, trị lạnh bụng, cảm lạnh, đau đầu, đau bụng, tạo hương vị cho thực phẩm,… | …….. | ……. | ……… |
+1. Khối lượng nguyên liệu ban đầu ($m_1$): ……………… gam.
+2. Thể tích nước cho vào bình chưng cất: ……………… mL.
+3. Thời gian từ khi bắt đầu đun đến giọt ngưng tụ đầu tiên: ……………… phút.
+4. Thể tích tinh dầu nguyên chất thu được ($V$): ……………… mL.
+5. Tính hiệu suất thu hồi tinh dầu của nhóm:
+   $$H\% = \frac{V \times 0{,}88}{m_1} \times 100\% = \text{………………}\%$$
 
-**PHIẾU HỌC TẬP 2: Nguyên tắc, cách tiến hành phương pháp tách tinh dầu**
-|   | Phương pháp chưng cất lôi cuốn hơi nước | Phương pháp chiết |
-| --- | --- | --- |
-| Nguyên tắc |   |   |
-| Cách tiến hành |   |   |
+---
 
-– HS làm việc theo nhóm, tìm hiểu thông tin, hoàn thiện nội dung phiếu học tập số 1, 2 theo định hướng của GV.
+### 6.2. Bảng tiêu chí đánh giá sản phẩm (Rubric)
 
-– HS học sinh lắp đặt thiết bị chưng cất lôi cuốn hơi nước.
+| Tiêu chí | Mức 1: Cần cố gắng (1 – 2đ) | Mức 2: Đạt (3 – 4đ) | Mức 3: Xuất sắc (5đ) | Điểm |
+| :--- | :--- | :--- | :--- | :---: |
+| **1. Kỹ thuật lắp ráp** | Hệ thống xì hơi, mối nối lỏng lẻo làm thoát mùi thơm. | Hệ thống kín, ngưng tụ tốt nhưng nước làm mát bị nóng nhanh. | Hệ thống rất kín, làm mát tuần hoàn hoàn hảo, vận hành mượt mà. | ……/5 |
+| **2. Chất lượng tinh dầu** | Tinh dầu lẫn nhiều nước đục, mùi bị khét hoặc biến tính. | Tinh dầu tương đối trong, có mùi thơm đặc trưng của nguyên liệu. | Tinh dầu vàng óng, trong vắt, thơm ngát tinh khiết tự nhiên. | ……/5 |
+| **3. Hiệu suất thu hồi** | Thu được lượng tinh dầu rất ít (< 0,5 mL) hoặc thất thoát. | Thu được lượng tinh dầu đạt yêu cầu (từ 1,0 – 1,5 mL). | Hiệu suất thu hồi rất cao (> 2 mL), tận dụng triệt để nguyên liệu. | ……/5 |
+| **4. Báo cáo & Ứng dụng**| Không giải thích được cơ chế chưng cất lôi cuốn hơi nước. | Giải thích được nguyên lý nhưng chưa liên hệ sâu ứng dụng thực tiễn. | Thuyết minh khoa học xuất sắc, sáng tạo thêm sản phẩm xịt thơm phòng. | ……/5 |
 
-– Đại diện HS các nhóm trình bày nội dung các phiếu học tập.
+---
 
-– GV nhận xét, chốt kiến thức: Trong các nguồn thảo mộc tự nhiên đều chứa hàm lượng lớn các loại tinh dầu, các loại tinh dầu này có nhiều công dụng trong đời sống và sức khỏe, giá thành các nguồn thảo mộc có chứa tinh dầu rẻ, dễ dàng tách và tinh chế các loại tinh dầu nên việc xây dựng được quy trình tách tinh dầu là cần thiết và thiết thực.
+## 7. Tài liệu tham khảo và liên kết tải về
 
-**Bước 3. Giao nhiệm vụ cho HS và xác lập yêu cầu của sản phẩm**
-GV nêu nhiệm vụ: Căn cứ vào kết quả các nội dung vừa tìm hiểu, HS tiến hành xây dựng quy trình tách tinh dầu từ các nguồn thảo mộc tự nhiên. Các nhóm được lựa chọn về nguyên liệu, loại tinh dầu sẽ tiến hành tách.
+* Tải bộ giáo án Word và tài liệu STEM Hóa học 11 đầy đủ:
+  - [STEM Hóa 11 – Tách tinh dầu từ nguồn thảo mộc tự nhiên](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-Sản phẩm tinh dầu thu được cần đặt được các yêu cầu về mùi, giá thành, tính thẩm mĩ….
-
-Các tiêu chí đánh giá cụ thể như sau:
-
-| Tiêu chí |
-| --- |
-| Thu được tinh dầu có mùi thơm |
-| Có quy trình, poster, tranh ảnh…. báo cáo về quá trình thực hiện tách tinh dầu. |
-| Chi phí thực hiện thấp |
-| Hình thức tinh dầu đẹp mắt |
-| Nêu được ứng dụng dự kiến của tinh dầu thu được |
-
-*Bước 4. GV thống nhất kế hoạch triển khai
-| Hoạt động chính | Thời lượng |
-| --- | --- |
-| Hoạt động 1: Giao nhiệm vụ dự án | Tiết 1 |
-| Hoạt động 2: Nghiên cứu kiến thức nền và chuẩn bị bản thiết kế sản phẩm để báo cáo. | 1 tuần (HS tự học ở nhà theo nhóm). |
-| Hoạt động 3: Báo cáo quy trình tách tinh dầu, nguyên liệu sẽ sử dụng. | Tiết 2 |
-| Hoạt động 4: Chế tạo, thử nghiệm sản phẩm | 1 tuần (HS tự làm ở nhà theo nhóm). |
-| Hoạt động 5: Triển lãm, giới thiệu sản phẩm. | Tiết 3 |
-
-Trong đó, GV nêu rõ nhiệm vụ ở nhà của hoạt động 2:
-
-*– Nghiên cứu kiến thức liên quan:
-Phương pháp chưng cất lôi cuốn hơi nước và phương pháp chiết bao gồm các nội dung: Nguyên tắc, các bước tiến hành, lưu ý khi tiến hành.
-
-Quy trình tách tinh dầu: Nguyên liệu sẽ sử dụng, phương pháp sẽ sử dụng, quy trình thực hiện, ….
-
-*– Các bước sẽ thực hiện để tách tinh dầu.
-*– Bản thiết kế (bản vẽ, poster, tranh ảnh, slide ….) về quy trình thực hiện tách tinh dầu để đạt được tiêu chí của sản phẩm.
-*– Các tiêu chí đánh giá bài trình bày, quy trình tách tinh dầu và bản thiết kế quy trình được sử dụng theo Phiếu đánh giá số 2.
-###### Yêu cầu đối với bài báo cáo và bản thiết kế sản phẩm
-
-| Tiêu chí |
-| --- |
-| Quy trình thiết kế đầy đủ các bước, rõ ràng. |
-| Các bước tách tinh dầu được thực hiện đúng, đảm bảo các lưu ý theo phương pháp đã lựa chọn. |
-| Giải thích rõ các bước thực hiện, phù hợp với nguyên tắc của phương pháp đã chọn. |
-| Trình bày rõ ràng, logic, sinh động. |
-
-**Hoạt động 2: NGHIÊN CỨU VỀ PHƯƠNG PHÁP CHƯNG CẤT LÔI CUỐN HƠI NƯỚC, PHƯƠNG PHÁP CHIẾT TINH DẦU VÀ ĐỀ XUẤT QUY TRÌNH TÁCH TINH DẦU TỪ THẢO MỘC TỰ NHIÊN**
-(HS làm việc ở nhà – 1 tuần)
-
-**A. Mục đích:**
-HS nghiên cứu cụ thể về phương pháp chưng cất lôi cuốn hơi nước, phương pháp chiết. Tiến hành lựa chọn phương pháp sẽ sử dụng để tách tinh dầu. Từ phương pháp đã lựa chọn, tìm kiếm thông tin và đề xuất quy trình tách tinh dầu từ một nguyên liệu cụ thể nhóm lựa chọn.
-
-**B. Nội dung:**
-Học sinh tự học và làm việc nhóm thảo luận thống nhất các kiến thức liên quan, tìm hiểu các nội dung về phương pháp chưng cất lôi cuốn hơi nước, phương pháp chiết. Tiến hành lựa chọn phương pháp sẽ sử dụng để tách tinh dầu. Từ phương pháp đã lựa chọn, tìm kiếm thông tin và đề xuất quy trình tách tinh dầu từ một nguyên liệu cụ thể nhóm lựa chọn.
-
-GV đôn đốc, hỗ trợ tài liệu, giải đáp thắc mắc cho các nhóm khi cần thiết.
-
-**C. Dự kiến sản phẩm hoạt động của học sinh:**
-Kết thúc hoạt động, HS cần đạt được các sản phẩm sau:
-
-– Bài ghi của cá nhân về các kiến thức liên quan;
-
-– Bản sơ đồ hóa quy trình sẽ thực hiện để tách tinh dầu (trình bày trên giấy A0 hoặc bài trình chiếu powerpoint);
-
-– Bài thuyết trình về quy trình tách tinh dầu dự kiến của nhóm.
-
-**D. Cách thức tổ chức hoạt động:**
-– Các thành viên trong nhóm đọc bài 4 sách chuyên đề Hóa học 11 về quy trình tách chiết tinh dầu từ các nguồn thảo mộc tự nhiên.
-
-– Tìm kiếm thông tin trên intenet về phương pháp chưng cất lôi cuốn hơi nước, phương pháp chiết  khi thực hiện tách tinh dầu và các lưu ý.
-
-– Lựa chọn loại nguyên liệu sẽ thực hiện tách tinh dầu.
-
-– Tìm hiểu để xây dựng quy trình tách tinh dầu đơn giản, chi phí thấp.
-
-Trong đó cần xác định được các kiến thức trọng tâm như sau
-
-**PHƯƠNG PHÁP CHƯNG CẤT LÔI CUỐN HƠI NƯỚC**
-**1. Nguyên tắc**
-Phương pháp chưng cất lôi cuốn hơi nước thường dùng để tách chất ra khỏi hỗn hợp dựa trên khả năng dễ bay hơi của nó cùng hơi nước và tính không tan trong nước của chất đó.
-
-Khi chưng cất lôi cuốn hơi nước, các chất có trong tinh dầu sẽ được tách ra khỏi nguyên liệu, thường ở nhiệt độ thấp hơn nhiệt độ sôi của nước và bị hơi nước cuốn theo. Ở nhiệt độ đó, ít xảy ra tương tác hoá học (sự oxi hoá, nhiệt phân,…) giữa các chất có trong tinh dầu.
-
-**2. Cách tiến hành**
-Nguyên liệu chứa tinh dầu được cắt nhỏ, cho vào bình chứa. Bình chứa được nối với bình cấp hơi nước và nối với bộ phận ngưng hơi. Trong quá trình chưng cất, hơi nước sục vào bình chứa làm phá vỡ các mô chứa tinh dầu trong nguyên liệu, khuếch tán và lôi cuốn theo các hợp chất hữu cơ trong thành phần tinh dầu. Hỗn hợp hơi nước và tinh dầu sẽ được ngưng tụ và phân tách thành hai lớp (thường lớp tinh dầu ở bên trên và lớp nước ở bên dưới) trong bình ngưng. Sử dụng phễu chiết để tách lấy lớp tinh dầu.
-
-Lưu ý khi sử dụng phương pháp chưng cất lôi cuốn hơi nước:
-
-– Tuỳ vào bản chất của nguyên liệu mà chia nhỏ nguyên liệu cho phù hợp.
-
-– Thời gian chưng cất phụ thuộc bản chất của nguyên liệu và tính chất của tinh dầu.
-
-**PHƯƠNG PHÁP CHIẾT**
-**1. Nguyên tắc**
-Sử dụng dung môi để hoà tan chất cần tách. Chất cần tách thường là tinh dầu. Dung môi thường dùng là: ether dầu hoả, hexane, diethyl ether, chloroform, dichloromethane, ethanol,… Yêu cầu cơ bản là dung môi hoặc hỗn hợp dung môi phải dễ tách khỏi tinh dầu. Khi ngâm chiết, dung môi thấm qua màng tế bào, hoà tan các chất chính có trong tinhdầu. Hiện tượng thẩm thấu xảy ra đến khi đạt cân  bằng. Như vậy, quá trình chiết là quá trình khuếch tán các chất của tinh dầu từ nguyên liệu vào dung môi.
-
-**2. Cách tiến hành**
-Nguyên liệu sau khi nghiền nhỏ được ngâm bằng dung môi thích hợp với tỉ lệ nguyên liệu/dung môi ở nhiệt độ và thời gian phù hợp. Sau khi ngâm chiết, tách lấy dung dịch, cho dung môi bay hơi, thu được tinh dầu.
-
-HS làm việc nhóm:
-
-● Chia sẻ với các thành viên khác trong nhóm về kiến thức đã tìm hiểu được. Ghi tóm tắt lại các kiến thức vào vở cá nhân.
-
-● Tiến hành lựa chọn nguyên liệu thảo mộc sẽ sử dụng, xác định tinh dầu có trong thảo mộc, ứng dung của tinh dầu này trong đời sống từ đó xây dựng quy trình tách tinh dầu.
-
-Bản vẽ hoặc bài thuyết trình về quy trình sẽ thực hiện để tách tinh dầu theo phương pháp chưng cất lôi cuốn hơi nước hoặc phương pháp chiết.
-
-– GV đôn đốc các nhóm thực hiện nhiệm vụ và hỗ trợ nếu cần.
-
-**Hoạt động 3: TRÌNH BÀY VÀ BẢO VỆ PHƯƠNG ÁN TÁCH TINH DẦU TỪ CÁC NGUỒN THẢO MỘC TỰ NHIÊN**
-**(Tiết 2 – 45 phút)**
-**A. Mục đích:**
-Học sinh trình bày được quy trình tách tinh dầu và sử dụng các kiến thức nền để giải thích về quy trình, phương pháp tách đã lựa chọn. Giải thích tại sao lại lựa chọn nguyên liệu và tinh dầu đó?
-
-**B. Nội dung:**
-– GV tổ chức cho HS từng nhóm trình bày quy trình tách tinh dầu theo phương pháp, nguyên liệu đã lựa chọn.
-
-– GV tổ chức hoạt động thảo luận cho từng quy trình: các nhóm khác và GV nêu câu hỏi làm rõ, phản biện và góp ý cho quy trình; nhóm trình bày trả lời câu hỏi, lập luận, bảo vệ quan điểm hoặc ghi nhận ý kiến góp ý phù hợp để hoàn thiện quy trình.
-
-– GV chuẩn hoá các kiến thức liên quan cho HS; yêu cầu HS ghi lại các kiến thức vào vở và chỉnh sửa quy trình tách tinh dầu(nếu có).
-
-**C. Dự kiến sản phẩm hoạt động của học sinh:**
-Kết thúc hoạt động, HS cần đạt được sản phẩm là quy trình tách tinh dầu hoàn chỉnh, hợp lí.
-
-**D. Cách thức tổ chức hoạt động:**
-**Bước 1:** Lần lượt từng nhóm trình bày quy trình tách tinh dầu, lí do lựa chọn nguyên liệu, phương pháp thực hiện trong 5 phút. Các nhóm còn lại chú ý nghe.
-
-**Bước 2:** GV tổ chức cho các nhóm còn lại nêu câu hỏi, nhận xét về quy trình của nhóm bạn; nhóm trình bày trả lời, bảo vệ, thu nhận góp ý, đưa ra sửa chữa phù hợp.
-
-Một số câu hỏi GV có thể hỏi và định hướng HS thảo luận:
-
-**Câu hỏi kiến thức nền**
-KT1. Phương pháp chưng cất lôi cuốn hơi nước/ phương pháp chiết cần lưu ý gì khi thực hiện.
-
-KT2. Cách tiến hành phương pháp chưng cất lôi cuốn hơi nước/ phương pháp chiết.
-
-KT3. Tại sao cần tách tinh dầu từ các nguồn thảo mộc tự nhiên?
-
-KT4. Tai sao một số tinh dầu như tinh dầu sả, chanh khi thu được cần bảo quản trong các lọ tối màu và có nút kín.
-
-KT5. Tại sao khi làm tinh dầu sả chỉ cắt nhỏ cây sả khoảng 1 cm mà không giã nát.
-
-KT6. Khi làm tinh dầu từ vỏ cam cần lưu ý gì? (chỉ lấy phần màu vàng, nghiên nhỏ…)
-
-KT7. Khi tách tinh dầu theo phương pháp chiết, cần lựa chọn dung môi là gì?
-
-**Câu hỏi định hướng thiết kế**
-TK1. Sử dụng nguyên liệu thảo mộc nào để tách tinh dầu?
-
-TK2. Có cách nào để tăng được lượng tinh dầu thu được từ quy trình tách không?
-
-TK3. Các dụng cụ cần sử dụng trong quá trình tách tinh dầu theo phương pháp nào sẽ đơn giản, chi phí thấp và dễ thực hiện hơn?
-
- **Bước 3:** GV nhận xét, tổng kết và chuẩn hoá các kiến thức liên quan, chốt lại các vấn đề cần chú ý, chỉnh sửa của các nhóm.
-
-**Bước 4:** GV giao nhiệm vụ cho các nhóm về nhà triển khai tách tinh dầu theo quy trình đã thiết kế.
-
-**Hoạt động 4: TÁCH TINH DẦU TỪ CÁC NGUỒN THẢO MỘC TỰ NHIÊN**
-**(HS làm việc ở nhà hoặc trên phòng thí nghiệm – 1 tuần )**
-**A. Mục đích:**
-Các nhóm HS thực hành tách tinh dầu từ nguyên liệu đã lựa chọn dựa theo bản quy trình tách đã chỉnh sửa.
-
-**B. Nội dung:**
-Học sinh làm việc theo nhóm trong thời gian 1 tuần để tách tinh dầu từ nguyên liệu tự nhiên, trao đổi với giáo viên khi gặp khó khăn.
-
-**C. Dự kiến sản phẩm hoạt động của học sinh:**
-Kết thúc hoạt động, HS cần đạt được tinh dầu tách thành công, sản phẩm đánh giá theo tiêu chí phiếu số 1.
-
-**D. Cách thức tổ chức hoạt động:**
-Bước 1. HS tìm kiếm, chuẩn bị các vật liệu dự kiến;
-
-Bước 2. HS tách tinh dầu theo quy trình đã chỉnh sửa.
-
-Bước 3. HS thử nghiệm tách tinh dầu để điều chỉnh về độ tinh khiết, hàm lượng tinh dầu thu được, tối ưu quy trình để giảm chi phí thực hiện.
-
-Bước 4. HS hoàn thiện bảng ghi danh mục các nguyên vật liệu và tính giá thành chế tạo sản phẩm;
-
-Bước 5. HS hoàn thiện sản phẩm; chuẩn bị bài giới thiệu sản phẩm. GV đôn đốc, hỗ trợ các nhóm trong quá trình hoàn thiện các sản phẩm.
-
-**Hoạt động 5: TRÌNH BÀY SẢN PHẨM**
-**TÁCH TINH DẦU TỪ CÁC NGUỒN THẢO MỘC TỰ NHIÊN**
-**(Tiết 3 – 45 phút)**
-**A. Mục đích:**
-HS biết giới thiệu về sản phẩm tinh dầu đã thực hiện và đáp ứng được các yêu cầu sản phẩm đã đặt ra; biết thuyết trình, giới thiệu được sản phẩm, đưa ra ý kiến nhận xét, phản biện, giải thích được bằng các kiến thức liên quan; Có ý thức về cải tiến, phát triển sản phẩm.
-
-**B. Nội dung:**
-– Các nhóm trưng bày sản phẩm trước lớp;
-
-– Các nhóm lần lượt báo cáo sản phẩm và trả lời các câu hỏi của GV và các nhóm bạn.
-
-– Đề xuất phương án cải tiến sản phẩm.
-
-**C. Dự kiến sản phẩm hoạt động của học sinh:**
-Kết thúc hoạt động, HS cần có sản phẩm là tinh dầu được tách từ nguồn nguyên liệu tự nhiên, bài thuyết trình giới thiệu sản phẩm về ứng dụng, cải tiến quy trình (nếu có).
-
-**D. Cách thức tổ chức hoạt động:**
-– Tổ chức cho HS chuẩn bị và trưng bày sản phẩm cùng lúc. Các nhóm tiến hành trưng bày sản phẩm đảm bảo tính thẩm mĩ, chi phí thực hiện, bài thuyết trình đầy đủ, sinh động.
-
-– Yêu cầu HS của từng nhóm trình bày, phân tích về tinh dầu, ưu điểm của tinh dầu, quy trình thực hiện.
-
-– GV nhận xét và công bố kết quả chấm sản phẩm theo yêu cầu của Phiếu đánh giá số 1.
-
-    – Khuyến khích các nhóm nêu câu hỏi cho nhóm khác.
-
-– GV tổng kết chung về hoạt động của các nhóm; Hướng dẫn các nhóm cập nhật điểm học tập của nhóm. GV có thể nêu câu hỏi lấy thông tin phản hồi:
-
-+ Các em đã học được những kiến thức và kĩ năng nào trong quá trình triển khai dự án này?
-
-+ Điều gì làm em ấn tượng nhất/nhớ nhất khi triển khai dự án này?
-
-**2. Hồ sơ dự án của học sinh**
-**QUY TRÌNH KHÁM PHÁ KIẾN THỨC:**
-Phiếu học tập:
-
-**PHIẾU HỌC TẬP 1: 1 số nguyên liệu thực vật có chứa tinh dầu**
-| Nguyên liệu | Quả hồi | Sả | …….. | ……. | ……… |
-| --- | --- | --- | --- | --- | --- |
-| Tinh dầu |  |  | …….. | ……. | ……… |
-| Công dụng | Kích thích hoạt động của hệ tiêu hoá, giảm đau xương khớp, đau bụng, đau đầu, tạo hương vị cho thực phẩm,. | Sát trùng, khử mùi, đuổi côn trùng, kích thích tiêu hoá, trị lạnh bụng, cảm lạnh, đau đầu, đau bụng, tạo hương vị cho thực phẩm,… | …….. | ……. | ……… |
-
-**PHIẾU HỌC TẬP 2: Nguyên tắc, cách tiến hành phương pháp tách tinh dầu**
-|   | Phương pháp chưng cất lôi cuốn hơi nước | Phương pháp chiết |
-| --- | --- | --- |
-| Nguyên tắc |   |   |
-| Cách tiến hành |   |   |
-
-GIA SƯ THÔNG MINH gửi các thầy cô link download miễn phí
-
-- [STEM-TACH-TINH-DAU-TU-CAC-NGUON-THAO-MOC-TU-NHIEN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
-
-Mời các thầy cô xem thêm
-
-[Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
-
-←[Đăng ký Perplexity AI nhận 10$ miễn phí!](/bai-viet/dang-ky-perplexity-ai-nhan-10-mien-phi.html)
-[Đề thi HSG lớp 10 môn hoá sở Vĩnh Phúc năm 2022 2023](/bai-viet/de-thi-hsg-lop-10-mon-hoa-so-vinh-phuc-nam-2022-2023.html)→
+### Xem thêm các chủ đề STEM liên quan:
+* [Tổng hợp giáo án chủ đề STEM trong môn Hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
+* [STEM chế tạo bình điện phân hóa học lớp 10](/bai-viet/stem-che-tao-binh-dien-phan-hoa-hoc-lop-10.html)
+* [STEM hóa học lớp 11 sử dụng bắp cải tím làm chất chỉ thị axit bazơ](/bai-viet/stem-hoa-hoc-lop-11-su-dung-bap-cai-tim-lam-chat-chi-thi-axit-bazo.html)
+* [STEM hóa học lớp 12 làm xà phòng từ dầu mỡ đã qua sử dụng](/bai-viet/stem-hoa-hoc-lop-12-lam-xa-phong-tu-dau-mo-da-qua-su-dung.html)
+* [STEM hóa học lớp 12 làm cơm rượu nếp truyền thống](/bai-viet/stem-hoa-hoc-lop-12-lam-com-ruou.html)
+* [STEM thiết kế và làm đèn kéo quân](/bai-viet/stem-thiet-ke-va-lam-den-keo-quan.html)

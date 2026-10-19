@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="100%" height="auto" style="max-width:720px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="bgBern" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Liquid Flow Gradient -->
+    <linearGradient id="fluidFlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <marker id="arrV1" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrV2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/>
+    </marker>
+    <marker id="arrLift" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+      <path d="M0,6 L3,0 L6,6 Z" fill="#16a34a"/>
+    </marker>
+
+    <filter id="shadowBern" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="720" height="480" rx="14" fill="url(#bgBern)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="90" y="14" width="540" height="34" rx="17" fill="#0f172a" filter="url(#shadowBern)"/>
+  <text x="360" y="36" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="0.5">NGUYÊN LÝ BERNOULLI: HIỆU ỨNG VENTURI &amp; LỰC NÂNG KHÍ ĐỘNG HỌC</text>
+
+  <!-- ================= TOP: VENTURI TUBE (ỐNG VENTURI) ================= -->
+  <g transform="translate(35, 68)">
+    <rect width="650" height="185" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowBern)"/>
+    <rect width="650" height="26" rx="10" fill="#1e293b"/>
+    <text x="325" y="18" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">1. HIỆU ỨNG VENTURI TRONG ỐNG DẪN DÒNG CHẤT LƯU</text>
+
+    <!-- Pipe Outer Walls with constriction in middle -->
+    <!-- Top wall -->
+    <path d="M25,48 L170,48 Q230,48 270,75 L380,75 Q420,48 480,48 L625,48" fill="none" stroke="#475569" stroke-width="3"/>
+    <!-- Bottom wall -->
+    <path d="M25,148 L170,148 Q230,148 270,121 L380,121 Q420,148 480,148 L625,148" fill="none" stroke="#475569" stroke-width="3"/>
+
+    <!-- Fluid inside pipe -->
+    <path d="M25,49 L170,49 Q230,49 270,76 L380,76 Q420,49 480,49 L625,49 L625,147 L480,147 Q420,147 380,120 L270,120 Q230,147 170,147 L25,147 Z" fill="url(#fluidFlow)"/>
+
+    <!-- Streamlines -->
+    <path d="M30,80 L170,80 Q235,80 270,90 L380,90 Q415,80 480,80 L620,80" fill="none" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <path d="M30,98 L170,98 L270,98 L380,98 L480,98 L620,98" fill="none" stroke="#0284c7" stroke-width="2"/>
+    <path d="M30,116 L170,116 Q235,116 270,106 L380,106 Q415,116 480,116 L620,116" fill="none" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+    <!-- Vertical Manometer Tubes measuring static pressure -->
+    <!-- Tube 1 (Wide Section - High Pressure h1) -->
+    <rect x="90" y="10" width="22" height="38" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+    <rect x="91" y="18" width="20" height="30" fill="#38bdf8" fill-opacity="0.8"/>
+    <line x1="120" y1="18" x2="145" y2="18" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="101" y="70" text-anchor="middle" fill="#0369a1" font-size="11" font-weight="800">p₁ LỚN</text>
+    <text x="101" y="165" text-anchor="middle" fill="#0369a1" font-size="11" font-weight="700">v₁ CHẬM</text>
+
+    <!-- Velocity vector v1 -->
+    <line x1="80" y1="98" x2="125" y2="98" stroke="#0284c7" stroke-width="3" marker-end="url(#arrV1)"/>
+
+    <!-- Tube 2 (Narrow Section - Low Pressure h2) -->
+    <rect x="315" y="38" width="22" height="38" fill="#ffffff" stroke="#475569" stroke-width="1.8"/>
+    <rect x="316" y="58" width="20" height="18" fill="#38bdf8" fill-opacity="0.8"/>
+    <line x1="345" y1="58" x2="370" y2="58" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <text x="326" y="93" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="900">p₂ NHỎ</text>
+    <text x="326" y="140" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="800">v₂ NHANH</text>
+
+    <!-- Velocity vector v2 (Longer) -->
+    <line x1="295" y1="98" x2="360" y2="98" stroke="#dc2626" stroke-width="3.5" marker-end="url(#arrV2)"/>
+
+    <!-- Pressure difference delta h callout -->
+    <line x1="420" y1="18" x2="420" y2="58" stroke="#e11d48" stroke-width="2"/>
+    <line x1="414" y1="18" x2="426" y2="18" stroke="#e11d48" stroke-width="1.5"/>
+    <line x1="414" y1="58" x2="426" y2="58" stroke="#e11d48" stroke-width="1.5"/>
+    <text x="432" y="42" fill="#be123c" font-size="11" font-weight="800">Δh (Chênh áp)</text>
+
+    <!-- Formula badge -->
+    <rect x="475" y="70" width="165" height="48" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="557" y="89" text-anchor="middle" fill="#0f172a" font-size="11" font-weight="700">p + ½ρv² = hằng số</text>
+    <text x="557" y="105" text-anchor="middle" fill="#dc2626" font-size="10" font-weight="700">Tiết diện hẹp ⇒ v ↑ ⇒ p ↓</text>
+  </g>
+
+  <!-- ================= BOTTOM: AIRFOIL LIFT (LỰC NÂNG CÁNH MÁY BAY) ================= -->
+  <g transform="translate(35, 268)">
+    <rect width="650" height="195" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowBern)"/>
+    <rect width="650" height="26" rx="10" fill="#15803d"/>
+    <text x="325" y="18" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">2. NGUYÊN LÝ TẠO LỰC NÂNG KHÍ ĐỘNG HỌC (CÁNH MÁY BAY - AIRFOIL)</text>
+
+    <!-- Airfoil Cross Section (Mặt cắt cánh máy bay) -->
+    <g transform="translate(240, 110)">
+      <!-- Cambered Airfoil Shape -->
+      <path d="M-130,0 C-110,-35 40,-45 140,-2 C100,5 -30,12 -130,0 Z" fill="#cbd5e1" stroke="#0f172a" stroke-width="2.5"/>
+
+      <!-- Streamlines Above Wing (Curved, Crowded -> Higher Velocity, Lower Pressure) -->
+      <path d="M-170,-25 Q-100,-65 20,-60 Q90,-45 160,-20" fill="none" stroke="#dc2626" stroke-width="2.2" stroke-dasharray="4,3"/>
+      <path d="M-170,-45 Q-100,-85 20,-80 Q100,-65 160,-35" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="4,3"/>
+
+      <!-- Streamlines Below Wing (Flat, Spread -> Lower Velocity, Higher Pressure) -->
+      <path d="M-170,18 Q-50,22 50,18 Q110,12 160,2" fill="none" stroke="#0284c7" stroke-width="2.2" stroke-dasharray="4,3"/>
+      <path d="M-170,38 Q-50,42 50,38 Q110,28 160,18" fill="none" stroke="#0284c7" stroke-width="1.8" stroke-dasharray="4,3"/>
+
+      <!-- Upper Surface Annotations -->
+      <text x="0" y="-45" text-anchor="middle" fill="#dc2626" font-size="11.5" font-weight="800">Dòng khí trên cong, đi nhanh (vtrên &gt; vdưới)</text>
+      <text x="0" y="-32" text-anchor="middle" fill="#b91c1c" font-size="11" font-weight="800">⇒ ÁP SUẤT THẤP (ptren &lt; pduoi)</text>
+
+      <!-- Lower Surface Annotations -->
+      <text x="0" y="30" text-anchor="middle" fill="#0369a1" font-size="11.5" font-weight="800">Dòng khí dưới phẳng, đi chậm (vdưới)</text>
+      <text x="0" y="44" text-anchor="middle" fill="#0284c7" font-size="11" font-weight="800">⇒ ÁP SUẤT CAO (pduoi)</text>
+
+      <!-- Upward Aerodynamic Lift Arrow (Lực nâng L) -->
+      <line x1="0" y1="10" x2="0" y2="-75" stroke="#16a34a" stroke-width="4.5" marker-end="url(#arrLift)"/>
+      <rect x="10" y="-72" width="115" height="26" rx="4" fill="#dcfce7" stroke="#86efac"/>
+      <text x="67" y="-55" text-anchor="middle" fill="#15803d" font-size="12" font-weight="900">LỰC NÂNG (Fʟ)</text>
+    </g>
+
+    <!-- Explanation Card (Right) -->
+    <rect x="470" y="55" width="165" height="120" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="480" y="75" fill="#0f172a" font-size="11.5" font-weight="800">ỨNG DỤNG THỰC TẾ:</text>
+    <text x="480" y="93" fill="#334155" font-size="10">• Cánh máy bay bay lên</text>
+    <text x="480" y="108" fill="#334155" font-size="10">• Cánh đuôi xe đua F1</text>
+    <text x="480" y="123" fill="#334155" font-size="10">• Vòi phun sơn, bình xịt</text>
+    <text x="480" y="138" fill="#334155" font-size="10">• Hút gió giếng trời BedZED</text>
+    <text x="480" y="153" fill="#b91c1c" font-size="10" font-weight="700">• Hút xe máy gần xe tải</text>
+  </g>
+</svg>

@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="100%" height="auto" style="max-width:720px;display:block;margin:1.5rem auto;font-family:system-ui,-apple-system,sans-serif;">
+  <defs>
+    <linearGradient id="bgSoap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+
+    <!-- Grease Drop Radial Gradient -->
+    <radialGradient id="greaseGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </radialGradient>
+
+    <filter id="shadowSoap" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="720" height="480" rx="14" fill="url(#bgSoap)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Title Badge -->
+  <rect x="90" y="14" width="540" height="34" rx="17" fill="#0f172a" filter="url(#shadowSoap)"/>
+  <text x="360" y="36" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700" letter-spacing="0.5">CƠ CHẾ TẨY RỬA CỦA PHÂN TỬ XÀ PHÒNG &amp; HẠT MIXEN (MICELLE)</text>
+
+  <!-- ================= LEFT: SINGLE SOAP MOLECULE STRUCTURE ================= -->
+  <g transform="translate(40, 75)">
+    <rect width="260" height="210" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSoap)"/>
+    <rect width="260" height="28" rx="10" fill="#1e293b"/>
+    <text x="130" y="19" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">CẤU TRÚC PHÂN TỬ XÀ PHÒNG (RCOONa)</text>
+
+    <!-- Hydrophobic Tail (Đuôi kị nước / ưa dầu - gốc hiđrocacbon dài R) -->
+    <path d="M30,100 L50,85 L70,115 L90,85 L110,115 L130,85 L150,115 L170,85 L190,100" fill="none" stroke="#0284c7" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Hydrophilic Head (Đầu ưa nước - nhóm carboxylate mang điện tích âm -COO⁻) -->
+    <circle cx="215" cy="100" r="18" fill="#ef4444" stroke="#991b1b" stroke-width="2"/>
+    <text x="215" y="105" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="900">−COO⁻</text>
+
+    <!-- Sodium ion Na⁺ in solution -->
+    <circle cx="245" cy="75" r="9" fill="#3b82f6"/>
+    <text x="245" y="79" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800">Na⁺</text>
+
+    <!-- Tail Annotation -->
+    <text x="110" y="145" text-anchor="middle" fill="#0369a1" font-size="11.5" font-weight="700">Đuôi Kị Nước (Ưa dầu)</text>
+    <text x="110" y="162" text-anchor="middle" fill="#64748b" font-size="10.5">Gốc hidrocacbon dài R— (không phân cực)</text>
+
+    <!-- Head Annotation -->
+    <text x="215" y="145" text-anchor="middle" fill="#b91c1c" font-size="11.5" font-weight="700">Đầu Ưa Nước</text>
+    <text x="215" y="162" text-anchor="middle" fill="#64748b" font-size="10.5">Nhóm phân cực</text>
+
+    <!-- Rule of Thumb Box -->
+    <rect x="15" y="175" width="230" height="25" rx="4" fill="#f0f9ff" stroke="#bae6fd"/>
+    <text x="130" y="192" text-anchor="middle" fill="#0369a1" font-size="11" font-weight="700">"Ưa dầu cắm vào dầu – Ưa nước chìa ra nước"</text>
+  </g>
+
+  <!-- ================= RIGHT: MICELLE FORMATION & GREASE TRAPPING ================= -->
+  <g transform="translate(325, 75)">
+    <rect width="360" height="210" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSoap)"/>
+    <rect width="360" height="28" rx="10" fill="#1e293b"/>
+    <text x="180" y="19" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">HẠT MIXEN (MICELLE) CUỐN TRÔI DẦU MỠ</text>
+
+    <!-- Center Grease Droplet (Giọt dầu mỡ chất bẩn) -->
+    <circle cx="180" cy="120" r="38" fill="url(#greaseGrad)" stroke="#b45309" stroke-width="2"/>
+    <text x="180" y="124" text-anchor="middle" fill="#78350f" font-size="11.5" font-weight="900">GIỌT DẦU MỠ</text>
+    <text x="180" y="137" text-anchor="middle" fill="#92400e" font-size="9.5">(Chất bẩn kị nước)</text>
+
+    <!-- 12 Radiating Soap Molecules surrounding the grease droplet -->
+    <!-- 0 deg -->
+    <line x1="218" y1="120" x2="242" y2="120" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="248" cy="120" r="7" fill="#ef4444"/>
+    <!-- 30 deg -->
+    <line x1="213" y1="139" x2="234" y2="151" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="239" cy="154" r="7" fill="#ef4444"/>
+    <!-- 60 deg -->
+    <line x1="199" y1="153" x2="211" y2="174" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="214" cy="180" r="7" fill="#ef4444"/>
+    <!-- 90 deg -->
+    <line x1="180" y1="158" x2="180" y2="182" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="180" cy="188" r="7" fill="#ef4444"/>
+    <!-- 120 deg -->
+    <line x1="161" y1="153" x2="149" y2="174" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="146" cy="180" r="7" fill="#ef4444"/>
+    <!-- 150 deg -->
+    <line x1="147" y1="139" x2="126" y2="151" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="121" cy="154" r="7" fill="#ef4444"/>
+    <!-- 180 deg -->
+    <line x1="142" y1="120" x2="118" y2="120" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="112" cy="120" r="7" fill="#ef4444"/>
+    <!-- 210 deg -->
+    <line x1="147" y1="101" x2="126" y2="89" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="121" cy="86" r="7" fill="#ef4444"/>
+    <!-- 240 deg -->
+    <line x1="161" y1="87" x2="149" y2="66" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="146" cy="60" r="7" fill="#ef4444"/>
+    <!-- 270 deg -->
+    <line x1="180" y1="82" x2="180" y2="58" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="180" cy="52" r="7" fill="#ef4444"/>
+    <!-- 300 deg -->
+    <line x1="199" y1="87" x2="211" y2="66" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="214" cy="60" r="7" fill="#ef4444"/>
+    <!-- 330 deg -->
+    <line x1="213" y1="101" x2="234" y2="89" stroke="#0284c7" stroke-width="3"/>
+    <circle cx="239" cy="86" r="7" fill="#ef4444"/>
+
+    <!-- Water phase notation -->
+    <text x="30" y="55" fill="#0284c7" font-size="11" font-weight="700">Môi trường nước (H₂O)</text>
+    <text x="30" y="70" fill="#64748b" font-size="9.5">Bao bọc bên ngoài</text>
+    <text x="30" y="195" fill="#15803d" font-size="10.5" font-weight="700">Hạt mixen tan đều trong nước</text>
+    <text x="250" y="195" fill="#15803d" font-size="10.5" font-weight="700">Dễ dàng bị xả trôi</text>
+  </g>
+
+  <!-- ================= BOTTOM: 4-STEP PROCEDURE FOR RECYCLED SOAP ================= -->
+  <g transform="translate(40, 305)">
+    <rect width="645" height="155" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" filter="url(#shadowSoap)"/>
+    <rect width="645" height="28" rx="10" fill="#15803d"/>
+    <text x="322" y="19" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">QUY TRÌNH 4 BƯỚC TÁI CHẾ DẦU ĂN THẢI THÀNH XÀ PHÒNG HANDMADE</text>
+
+    <!-- Step 1 -->
+    <rect x="12" y="38" width="145" height="105" rx="6" fill="#f0fdf4" stroke="#bbf7d0"/>
+    <circle cx="26" cy="52" r="8" fill="#16a34a"/>
+    <text x="26" y="56" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800">1</text>
+    <text x="40" y="56" fill="#15803d" font-size="11" font-weight="700">Lọc &amp; Khử mùi</text>
+    <text x="18" y="74" fill="#475569" font-size="9.5">• Lọc cặn dầu ăn thừa</text>
+    <text x="18" y="88" fill="#475569" font-size="9.5">• Đun nhẹ với sả/gừng/than</text>
+    <text x="18" y="102" fill="#475569" font-size="9.5">để khử triệt để mùi thức ăn</text>
+    <text x="18" y="116" fill="#475569" font-size="9.5">• Để nguội về 45°C – 50°C</text>
+
+    <!-- Step 2 -->
+    <rect x="169" y="38" width="145" height="105" rx="6" fill="#eff6ff" stroke="#bfdbfe"/>
+    <circle cx="183" cy="52" r="8" fill="#2563eb"/>
+    <text x="183" y="56" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800">2</text>
+    <text x="197" y="56" fill="#1d4ed8" font-size="11" font-weight="700">Pha kiềm NaOH</text>
+    <text x="175" y="74" fill="#475569" font-size="9.5">• Cân NaOH và nước theo tỉ lệ</text>
+    <text x="175" y="88" fill="#dc2626" font-size="9.5" font-weight="700">• Rót từ từ NaOH vào nước</text>
+    <text x="175" y="102" fill="#475569" font-size="9.5">(tuyệt đối không làm ngược lại)</text>
+    <text x="175" y="116" fill="#475569" font-size="9.5">• Chờ dung dịch nguội về 45°C</text>
+
+    <!-- Step 3 -->
+    <rect x="326" y="38" width="145" height="105" rx="6" fill="#fffbeb" stroke="#fde68a"/>
+    <circle cx="340" cy="52" r="8" fill="#d97706"/>
+    <text x="340" y="56" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800">3</text>
+    <text x="354" y="56" fill="#b45309" font-size="11" font-weight="700">Khuấy xà phòng</text>
+    <text x="332" y="74" fill="#475569" font-size="9.5">• Rót từ từ kiềm vào bát dầu</text>
+    <text x="332" y="88" fill="#475569" font-size="9.5">• Dùng phới khuấy liên tục</text>
+    <text x="332" y="102" fill="#475569" font-size="9.5">• Khi hỗn hợp sệt (vết trace),</text>
+    <text x="332" y="116" fill="#475569" font-size="9.5">thêm vài giọt tinh dầu thơm</text>
+
+    <!-- Step 4 -->
+    <rect x="483" y="38" width="150" height="105" rx="6" fill="#fdf4ff" stroke="#f0abfc"/>
+    <circle cx="497" cy="52" r="8" fill="#c026d3"/>
+    <text x="497" y="56" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="800">4</text>
+    <text x="511" y="56" fill="#a21caf" font-size="11" font-weight="700">Đổ khuôn &amp; Ủ bánh</text>
+    <text x="489" y="74" fill="#475569" font-size="9.5">• Rót vào khuôn silicon/gỗ</text>
+    <text x="489" y="88" fill="#475569" font-size="9.5">• Đậy khăn ấm ủ 24 – 48 giờ</text>
+    <text x="489" y="102" fill="#475569" font-size="9.5">• Gỡ khuôn, cắt bánh</text>
+    <text x="489" y="116" fill="#475569" font-size="9.5">• Phơi thoáng 3 – 4 tuần</text>
+  </g>
+</svg>
