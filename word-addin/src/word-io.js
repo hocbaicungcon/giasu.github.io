@@ -36,6 +36,16 @@ export async function readSelection() {
   });
 }
 
+/** Font size (points) at the cursor / of the selection; 0 when it is mixed or unknown. */
+export async function selectionFontSize() {
+  return run(async (context) => {
+    const font = context.document.getSelection().font;
+    font.load('size');
+    await context.sync();
+    return Number(font.size) || 0;
+  });
+}
+
 export async function replaceSelection(pkg) {
   return run(async (context) => {
     const sel = context.document.getSelection();

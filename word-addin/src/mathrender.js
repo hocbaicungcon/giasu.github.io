@@ -3,7 +3,14 @@
 import { latexToTree, normalizeNodes, NARY_OPS, SIDE_LIMITS } from './latex2omml.js';
 
 const FONT = "'Times New Roman', 'STIX Two Text', serif";
-const MATHFONT = "'Cambria Math', 'STIX Two Math', 'Times New Roman', 'Apple Symbols', 'Segoe UI Symbol', serif";
+const SYMS = "'Cambria Math', 'STIX Two Math', 'Apple Symbols', 'Segoe UI Symbol'";
+export const FAMILIES = {
+  times: `'Times New Roman', 'Times', 'STIX Two Text', ${SYMS}, serif`,
+  palatino: `'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', ${SYMS}, serif`,
+  cambria: `Cambria, 'Times New Roman', ${SYMS}, serif`,
+  sans: `Arial, 'Helvetica Neue', Helvetica, ${SYMS}, sans-serif`,
+};
+let MATHFONT = FAMILIES.times;
 const BINARY = new Set([...'=<>+−±∓×⋅÷≤≥≠≈≡∈∉⊂⊃⊆⊇∪∩→←↔⇒⇐⇔⟶∝∥⊥≃≅∼≪≫']);
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -227,7 +234,8 @@ function nodeBox(n, fs, level) {
 }
 
 /** LaTeX -> {svg, width, height, baseline} (points). Throws LatexError for unsupported LaTeX. */
-export function renderLatex(latex, { fontSize = 12, pad = 1.5 } = {}) {
+export function renderLatex(latex, { fontSize = 12, pad = 1.5, family = 'times' } = {}) {
+  MATHFONT = FAMILIES[family] || FAMILIES.times;
   const { rows } = latexToTree(latex);
   const box = rows.length > 1 ? nodeBox({ k: 'eqArr', rows: rows.map((r) => [r]) }, fontSize, 0) : layout(rows[0], fontSize, 0);
   const width = box.w + 2 * pad, height = box.a + box.d + 2 * pad;

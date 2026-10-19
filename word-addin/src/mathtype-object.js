@@ -1,5 +1,5 @@
 // Build MathType (DSMT) objects for a Word package: the w:object XML, the OLE + picture parts and their relationships.
-import { latexToEquationStream } from './mtef-writer.js';
+import { latexToEquationStream, MT_FONTS } from './mtef-writer.js';
 import { buildOle } from './ole-writer.js';
 import { scanPackage, splitParts } from './ooxml.js';
 
@@ -11,10 +11,12 @@ const b64 = (bytes) => { let s = ''; for (let i = 0; i < bytes.length; i += 0x80
 /** One MathType object: {runXml, parts: [{name, type, data}], rels: [{id, type, target}]}. render(latex) -> {png, width, height, baseline} (points). */
 let counter = Math.floor(Date.now() / 1000) % 100000;   // unique names across calls (and across sessions)
 
-export async function mathTypeObject(latex, { render, style = 'times', inline = true }) {
-  const stream = latexToEquationStream(latex, { style, inline });
+export async function mathTypeObject(latex, { render, style = 'times', inline = true, font = null, size = 12 }) {
+  const fontKey = font || style;
+  const pt = Number(size) > 0 ? Number(size) : 12;
+  const stream = latexToEquationStream(latex, { style, inline, font: fontKey, size: pt });
   const ole = buildOle(stream);
-  const pic = await render(latex);
+  const pic = await render(latex, { size: pt, family: (MT_FONTS[fontKey] || MT_FONTS.times).family });
   const n = ++counter;
   const rIdOle = `rIdTcOle${n}`, rIdImg = `rIdTcImg${n}`;
   const w = pic.width, h = pic.height;
@@ -52,11 +54,34 @@ export function attachObjects(pkg, docXml, objects) {
 }
 
 /**
+ * Font size (points) of the text around the equation at doc[span]: the equation's own run size, else the nearest run size in
+ * its paragraph, else the paragraph style / Normal style / document default.
+ */
+export function detectFontPt(doc, span, stylesXml = '', fallback = 12) {
+  const half = (xml) => { const m = [...xml.matchAll(/<w:sz w:val="(\d+)"/g)]; return m.length ? Number(m[m.length - 1][1]) / 2 : null; };
+  const pStart = Math.max(doc.lastIndexOf('<w:p>', span[0]), doc.lastIndexOf('<w:p ', span[0]));
+  const pEndAt = doc.indexOf('</w:p>', span[1]);
+  const para = doc.slice(Math.max(0, pStart), pEndAt < 0 ? doc.length : pEndAt);
+  const rel = span[0] - Math.max(0, pStart);
+  const own = half(doc.slice(span[0], span[1]));
+  if (own) return own;
+  const before = half(para.slice(0, rel).replace(/<w:pPr>[\s\S]*?<\/w:pPr>/, ''));
+  if (before) return before;
+  const after = half(para.slice(rel + (span[1] - span[0])).replace(/<w:pPr>[\s\S]*?<\/w:pPr>/, ''));
+  if (after) return after;
+  const styleSz = (id) => { const m = new RegExp(`<w:style [^>]*w:styleId="${id}"[\\s\\S]*?</w:style>`).exec(stylesXml); return m ? half(m[0]) : null; };
+  const ps = /<w:pStyle w:val="([^"]+)"/.exec(para);
+  const sz = (ps && styleSz(ps[1])) || styleSz('Normal') || half((/<w:docDefaults>[\s\S]*?<\/w:docDefaults>/.exec(stylesXml) || [''])[0]);
+  return sz || fallback;
+}
+
+/**
  * Replace the Word (OMML) equations of a package by MathType objects. render(latex) -> picture description.
  * Returns {pkg, converted, kept: [{reason, latex}], changed}.
  */
-export async function convertNativeToMathType(pkg, { render, style = 'times' } = {}) {
+export async function convertNativeToMathType(pkg, { render, style = 'times', font = null, size = 'auto', defaultSize = 12 } = {}) {
   const scan = scanPackage(pkg);
+  const styles = splitParts(pkg).get('/word/styles.xml')?.body || '';
   let doc = scan.doc;
   const result = { pkg, converted: 0, kept: [], changed: false };
   const edits = [], objects = [];
@@ -64,8 +89,9 @@ export async function convertNativeToMathType(pkg, { render, style = 'times' } =
     if (eq.kind !== 'native') continue;
     if (eq.latex === null) { result.kept.push({ reason: eq.error }); continue; }
     try {
-      const obj = await mathTypeObject(eq.latex, { render, style, });
       let [start, end] = eq.span;
+      const pt = size === 'auto' ? detectFontPt(doc, eq.span, styles, defaultSize) : Number(size);
+      const obj = await mathTypeObject(eq.latex, { render, style, font, size: pt });
       const before = doc.slice(0, start), after = doc.slice(end);
       const para = /<m:oMathPara>\s*$/.exec(before), paraEnd = /^\s*<\/m:oMathPara>/.exec(after);
       if (para && paraEnd) { start -= para[0].length; end += paraEnd[0].length; }   // a display equation becomes an inline object
@@ -83,16 +109,16 @@ export async function convertNativeToMathType(pkg, { render, style = 'times' } =
 }
 
 /** A package holding just one paragraph with one MathType object, for selection.insertOoxml (the equation editor). */
-export async function makeMathTypePackage(latex, { render, style = 'times', inline = true } = {}) {
-  const obj = await mathTypeObject(latex, { render, style, inline });
+export async function makeMathTypePackage(latex, { render, style = 'times', inline = true, font = null, size = 12 } = {}) {
+  const obj = await mathTypeObject(latex, { render, style, inline, font, size });
   const base = `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document xmlns:w="${NS.w}"><w:body><w:p>${obj.runXml}</w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>`;
   const doc = /<w:document[\s\S]*<\/w:document>/.exec(base)[0];
   return attachObjects(base, doc, [obj]);
 }
 
 /** Browser: draw a LaTeX equation as the picture Word shows for a MathType object. */
-export async function browserRender(latex) {
+export async function browserRender(latex, { size = 12, family = 'times' } = {}) {
   const { renderLatex, svgToPng } = await import('./mathrender.js');
-  const r = renderLatex(latex, { fontSize: 12 });
+  const r = renderLatex(latex, { fontSize: size, family });
   return { png: await svgToPng(r.svg, r.width, r.height, 4), width: r.width, height: r.height, baseline: r.baseline };
 }

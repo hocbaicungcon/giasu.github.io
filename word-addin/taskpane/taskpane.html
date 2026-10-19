@@ -29,7 +29,9 @@
     <div class="scroll"><table id="eq-table"><thead><tr><th>#</th><th>Đoạn</th><th>LaTeX</th><th></th></tr></thead><tbody></tbody></table></div>
   </fieldset>
   <fieldset><legend>2. Chuyển công thức</legend>
-    <div class="seg-row"><span class="seg-title">Chuyển thành</span><div class="seg"><label class="seg-opt"><input type="radio" name="target" value="word" checked><span>Công thức Word</span></label><label class="seg-opt"><input type="radio" name="target" value="mathtype"><span>MathType</span></label></div></div>
+    <div class="seg-row"><span class="seg-title">Chuyển thành</span><div class="seg"><label class="seg-opt"><input type="radio" name="target" value="word" checked><span>Công thức Word</span></label><label class="seg-opt"><input type="radio" name="target" value="mathtype"><span>MathType</span></label><label class="seg-opt"><input type="radio" name="target" value="normalize"><span>Chuẩn hóa MathType</span></label></div></div>
+    <div id="mt-settings-convert" class="mt-box"></div>
+    <div class="hint">“Chuẩn hóa MathType” làm lại các công thức MathType (và công thức Word) trong phạm vi đã chọn theo kiểu chữ và cỡ chữ bên trên.</div>
     <div class="hint">Nguồn: MathType → Word; hoặc Word / LaTeX → MathType (tạo đối tượng MathType mới, máy không cần cài MathType để xem; sửa bằng MathType khi có).</div>
     <div class="subhead">Nguồn cần chuyển</div>
     <label><input type="checkbox" id="opt-src-mt" checked> MathType</label>
@@ -70,6 +72,7 @@
         <label class="seg-opt"><input type="radio" name="editor-format" value="word" checked><span>Công thức Word</span></label>
         <label class="seg-opt"><input type="radio" name="editor-format" value="mathtype"><span>MathType</span></label>
       </div></div>
+      <div id="mt-settings-editor" class="mt-box"></div>
     </div>
 
     <div class="row">

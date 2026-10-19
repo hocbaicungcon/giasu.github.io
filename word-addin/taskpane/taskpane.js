@@ -1,3 +1,4 @@
+import { mountMtSettings, mtOptions, mtConvertOptions } from './mt-settings.js';
 import * as io from '../src/word-io.js';
 import { attachLatexAutocomplete } from './latex-autocomplete.js';
 import { mountEditorToolbar } from './editor-toolbar.js';
@@ -105,6 +106,9 @@ $('eq-table').addEventListener('click', (ev) => {
 // ---------------------------------------------------------------- convert
 const writeMode = () => ($('opt-mode').checked ? 'paragraph' : 'content');
 
+mountMtSettings($('mt-settings-convert'));
+mountMtSettings($('mt-settings-editor'));
+
 async function paragraphsToProcess(scope, onProgress, { convertMathType, convertLatex } = {}) {
   if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress) };
   if (!state.scanned) await scan();
@@ -113,7 +117,7 @@ async function paragraphsToProcess(scope, onProgress, { convertMathType, convert
     const kinds = [];
     if (convertMathType) kinds.push('mathtype');
     if (convertLatex) kinds.push('latex');
-    if (document.querySelector('input[name=target]:checked')?.value === 'mathtype') kinds.push('native');
+    if (document.querySelector('input[name=target]:checked')?.value !== 'word') kinds.push('native');
     const indexes = [...new Set(s.equations.filter((e) => kinds.includes(e.kind) && e.latex !== null).map((e) => e.para))].sort((a, b) => a - b);
     return { scope: { kind: 'all' }, items: await io.readParagraphs({ kind: 'indexes', indexes }, onProgress) };
   }
@@ -122,7 +126,8 @@ async function paragraphsToProcess(scope, onProgress, { convertMathType, convert
 
 async function convert() {
   if (!$('opt-backup').checked) { $('convert-summary').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
-  const convertMathType = $('opt-src-mt')?.checked ?? true;
+  const normalize = document.querySelector('input[name=target]:checked')?.value === 'normalize';
+  const convertMathType = normalize || ($('opt-src-mt')?.checked ?? true);
   const convertLatex = $('opt-src-latex')?.checked ?? true;
   if (!convertMathType && !convertLatex) {
     $('convert-summary').innerHTML = '<span class="warn">Hãy chọn ít nhất một loại nguồn cần chuyển (MathType hoặc LaTeX).</span>';
@@ -136,13 +141,13 @@ async function convert() {
     const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { convertMathType, convertLatex });
     let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
     const reasons = {}, writes = [], backup = [];
-    const toMathType = document.querySelector('input[name=target]:checked')?.value === 'mathtype';
+    const toMathType = document.querySelector('input[name=target]:checked')?.value !== 'word';
     for (const it of items) {
       let r;
       if (toMathType) {
         // LaTeX text -> Word equation first, then every Word equation -> MathType object
-        const a = convertMathTypeInPackage(it.pkg, { convertMathType: false, convertLatex, display: false });
-        const b = await convertNativeToMathType(a.pkg, { render: browserRender });
+        const a = convertMathTypeInPackage(it.pkg, { convertMathType: normalize, convertLatex, display: false });
+        const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...mtConvertOptions(), defaultSize: await mtOptions().then((o) => o.size) });
         r = { converted: b.converted, convertedLatex: a.convertedLatex || 0, convertedMathType: 0, kept: [...a.kept, ...b.kept], changed: b.changed, pkg: b.changed ? b.pkg : a.pkg };
         if (!b.changed && a.changed) r.converted = a.converted;
       } else {
@@ -272,7 +277,7 @@ async function applyFormulaToWord() {
   try {
     const isDisplay = $('editor-display')?.checked ?? false;
     const asMathType = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype';
-    const pkg = asMathType ? await makeMathTypePackage(tex, { render: browserRender, inline: !isDisplay }) : makeEquationPackage(latexToOmml(tex, { display: isDisplay }));
+    const pkg = asMathType ? await makeMathTypePackage(tex, { render: browserRender, inline: !isDisplay, ...(await mtOptions()) }) : makeEquationPackage(latexToOmml(tex, { display: isDisplay }));
     ignoreAutoUntil = Date.now() + 1200;
     await io.replaceSelection(pkg);
     if (msgEl) msgEl.innerHTML = `<span class="ok">Đã cập nhật công thức vào Word thành công (${asMathType ? 'đối tượng MathType' : 'chuẩn Word Equation'}).</span>`;

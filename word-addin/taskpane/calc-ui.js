@@ -2,6 +2,7 @@
 import { calc, normalizeInput, CalcError } from '../src/sympy-bridge.js';
 import { latexToOmml } from '../src/latex2omml.js';
 import { makeEquationPackage } from '../src/ooxml.js';
+import { mtOptions } from './mt-settings.js';
 import { makeMathTypePackage, browserRender } from '../src/mathtype-object.js';
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -84,7 +85,7 @@ export function mountCalc(root, io, hooks = {}) {
       if (b.dataset.a === 'copy') { await navigator.clipboard.writeText(latex); out.innerHTML = '<span class="ok">Đã sao chép LaTeX.</span>'; }
       else if (b.dataset.a === 'edit') { if (hooks.openEditor) hooks.openEditor(latex); }
       else if (b.dataset.a === 'word') { await io.replaceSelection(makeEquationPackage(latexToOmml(latex, { display: false }))); out.innerHTML = '<span class="ok">Đã chèn công thức Word.</span>'; }
-      else { await io.replaceSelection(await makeMathTypePackage(latex, { render: browserRender, inline: true })); out.innerHTML = '<span class="ok">Đã chèn đối tượng MathType.</span>'; }
+      else { await io.replaceSelection(await makeMathTypePackage(latex, { render: browserRender, inline: true, ...(await mtOptions()) })); out.innerHTML = '<span class="ok">Đã chèn đối tượng MathType.</span>'; }
     } catch (e) { out.innerHTML = `<span class="bad">${esc(e.message)}</span>`; }
   });
   options();

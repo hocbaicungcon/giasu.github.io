@@ -286,15 +286,53 @@ export function latexToRecords(latex) {
   return w.out;
 }
 
+/** The fonts a MathType equation can use for text and variables: `base` picks the template, `name` the typeface written into it. */
+export const MT_FONTS = {
+  times: { label: 'Times New Roman (có chân)', base: 'times', name: 'Times New Roman', family: 'times' },
+  palatino: { label: 'Palatino Linotype (có chân)', base: 'palatino', name: 'Palatino Linotype', family: 'palatino' },
+  cambria: { label: 'Cambria (có chân)', base: 'times', name: 'Cambria', family: 'cambria' },
+  sans: { label: 'Arial (không chân)', base: 'times', name: 'Arial', family: 'sans' },
+};
+
+/** Full size of the equation (points) as the MTEF size table writes it: units nibble 2 (pt), digits, 0xF. */
+function sizeBytes(pt) {
+  const v = Math.round(Math.min(72, Math.max(6, pt)) * 2) / 2;
+  const [i, f] = String(v).split('.');
+  const nib = [2, ...(i.length < 2 ? '0' + i : i).split('').map(Number), ...(f ? [10, Number(f)] : []), 15];
+  const out = [];
+  for (let k = 0; k < nib.length; k += 2) out.push((nib[k] << 4) | nib[k + 1]);
+  return out;
+}
+
+function patchPrefix(prefix, { fontName, baseName, size }) {
+  let out = Array.from(prefix);
+  if (fontName && fontName !== baseName) {
+    const find = [...baseName].map((c) => c.charCodeAt(0));
+    const at = out.findIndex((_, i) => find.every((b, k) => out[i + k] === b) && out[i + find.length] === 0);
+    if (at >= 0) out.splice(at, find.length, ...[...fontName].map((c) => c.charCodeAt(0)));
+  }
+  if (size) {
+    const at = out.findIndex((b, i) => b === 0x12 && out[i + 1] === 0x00 && out[i + 2] === 0x08);   // EQN_PREFS, 8 sizes; the first is the full size
+    if (at >= 0) {
+      let end = at + 3;
+      while (out[end] !== undefined && (out[end] & 0x0f) !== 0x0f && (out[end] >> 4) !== 0x0f) end++;   // the full size ends at its 0xF nibble
+      out.splice(at + 3, end + 1 - (at + 3), ...sizeBytes(size));
+    }
+  }
+  return Uint8Array.from(out);
+}
+
 /**
  * LaTeX -> bytes of the OLE "Equation Native" stream (28-byte header + MTEF v5).
  * options: style 'times' | 'palatino' (fonts MathType uses when the equation is edited), inline (default true).
  */
-export function latexToEquationStream(latex, { style = 'times', inline = true } = {}) {
+export function latexToEquationStream(latex, { style = 'times', inline = true, font = null, size = 0 } = {}) {
   let records;
   try { records = latexToRecords(latex); } catch (e) { if (e instanceof LatexError) throw new MtefWriteError(e.message); throw e; }
-  const st = STYLES[style] || STYLES.times;
-  const prefix = unb64(st.prefix).slice();
+  const f = MT_FONTS[font] || MT_FONTS[style] || MT_FONTS.times;
+  const st = STYLES[f.base] || STYLES.times;
+  const baseName = f.base === 'palatino' ? 'Palatino Linotype' : 'Times New Roman';
+  const prefix = patchPrefix(unb64(st.prefix), { fontName: f.name, baseName, size });
   prefix[11] = inline ? 1 : 0;   // options byte after the "DSMT7\0" application key
   const mtef = new Uint8Array(prefix.length + records.length + 1);
   mtef.set(prefix, 0);
