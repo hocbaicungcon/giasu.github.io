@@ -121,6 +121,25 @@ test('MathType object: EMF picture when available, PNG otherwise', async () => {
   assert.ok(/imageTc\d+\.png/.test(bad));
   assert.throws(() => svgToEmf('<svg viewBox="0 0 10 10"><polygon points="0,0"/></svg>', charAdvance));   // unknown markup -> caller keeps PNG
 });
+test('Worksheet: generated sheets become well-formed Word body with maths, answers and emoji', async () => {
+  await import('../taskpane/vendor/worksheet.js');
+  const W = globalThis.Worksheet;
+  const { worksheetBody, bodyPackage, printable, texToRuns } = await import('../src/worksheet-docx.js');
+  const { parseXml } = await import('../src/xml.js');
+  const cps = {}; for (const e of Object.values(W.lib.items)) cps[e.id] = e.cp;
+  for (const [subject, grade] of [['math', 2], ['math', 4], ['vi', 1], ['en', 3]]) {
+    const r = W.generate({ subject, grade, color: 'color', seed: 5, size: 'normal', versions: 2, answers: true });
+    const { body, count } = worksheetBody(r, { subject, grade, cps });
+    assert.ok(count > 5, `${subject}${grade} count`);
+    parseXml(bodyPackage(body));
+    assert.ok(/ĐÁP ÁN/.test(body) && /Mã đề B/.test(body));
+  }
+  const r = W.generate({ subject: 'math', grade: 2, color: 'bw', seed: 3, size: 'short', topics: ['calc', 'vertical'], answers: false });
+  const { body } = worksheetBody(r, { subject: 'math', grade: 2, cps, answers: false });
+  assert.ok(/<m:oMath>/.test(body) && /w:bottom w:val="single"/.test(body) && !/ĐÁP ÁN/.test(body));   // equations, vertical-sum rule line
+  assert.equal(printable({ items: [{ q: '\\wsclock{1}{2}' }], instr: '' }), false);
+  assert.ok(/Segoe UI Emoji/.test(texToRuns('\\wspic[1cm]{ws-1f680} \\icOChick', { cps })));
+});
 test('MathType object package: parts, relationships and namespaces', async () => {
   const pkg = await makeMathTypePackage(`${B}frac{a}{b}`, { render: renderStub });
   assert.ok(/ProgID="Equation.DSMT4"/.test(pkg) && /oleObjectTc\d+\.bin/.test(pkg) && /imageTc\d+\.png/.test(pkg) && /xmlns:v=/.test(pkg) && /xmlns:o=/.test(pkg));

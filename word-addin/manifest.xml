@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
            xsi:type="TaskPaneApp">
   <Id>6f1c2d9e-4b7a-4c1e-9a53-7d2f0b8e3a11</Id>
-  <Version>1.2.1.0</Version>
+  <Version>1.3.0.0</Version>
   <ProviderName>TexCraft</ProviderName>
   <DefaultLocale>vi-VN</DefaultLocale>
   <DisplayName DefaultValue="TexCraft Công thức"/>
@@ -138,6 +138,22 @@
                     <SourceLocation resid="Url_calc"/>
                   </Action>
                 </Control>
+                <Control xsi:type="Button" id="TexCraft_worksheet">
+                  <Label resid="Label_worksheet"/>
+                  <Supertip>
+                    <Title resid="Label_worksheet"/>
+                    <Description resid="Desc_worksheet"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_worksheet"/>
+                    <bt:Image size="32" resid="Icon32_worksheet"/>
+                    <bt:Image size="80" resid="Icon80_worksheet"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_worksheet"/>
+                  </Action>
+                </Control>
               </Group>
               <Label resid="TabLabel"/>
             </CustomTab>
@@ -168,6 +184,9 @@
         <bt:Image id="Icon16_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-16.png"/>
         <bt:Image id="Icon32_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-32.png"/>
         <bt:Image id="Icon80_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-80.png"/>
+        <bt:Image id="Icon16_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-16.png"/>
+        <bt:Image id="Icon32_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-32.png"/>
+        <bt:Image id="Icon80_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Url" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html"/>
@@ -177,6 +196,7 @@
         <bt:Url id="Url_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=about"/>
         <bt:Url id="Url_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=figures"/>
         <bt:Url id="Url_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=calc"/>
+        <bt:Url id="Url_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=worksheet"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
@@ -189,6 +209,7 @@
         <bt:String id="Label_about" DefaultValue="Giới thiệu"/>
         <bt:String id="Label_figures" DefaultValue="Hình vẽ"/>
         <bt:String id="Label_calc" DefaultValue="Tính toán"/>
+        <bt:String id="Label_worksheet" DefaultValue="Phiếu bài tập"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
@@ -198,6 +219,7 @@
         <bt:String id="Desc_about" DefaultValue="Thông tin tác giả, website và ủng hộ."/>
         <bt:String id="Desc_figures" DefaultValue="Vẽ bảng biến thiên, đồ thị hàm số, miền nghiệm và hình học để chèn vào Word (hình sửa được)."/>
         <bt:String id="Desc_calc" DefaultValue="Rút gọn, đạo hàm, tích phân, giới hạn, giải phương trình bằng SymPy; chèn kết quả thành công thức."/>
+        <bt:String id="Desc_worksheet" DefaultValue="Tạo phiếu bài tập tiểu học (Toán, Tiếng Việt, Tiếng Anh) có đáp án để chèn vào Word."/>
       </bt:LongStrings>
     </Resources>
   
@@ -318,6 +340,21 @@
                     <FunctionName>showTab_calc</FunctionName>
                   </Action>
                 </Control>
+                <Control xsi:type="Button" id="TexCraft_worksheet">
+                  <Label resid="Label_worksheet"/>
+                  <Supertip>
+                    <Title resid="Label_worksheet"/>
+                    <Description resid="Desc_worksheet"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_worksheet"/>
+                    <bt:Image size="32" resid="Icon32_worksheet"/>
+                    <bt:Image size="80" resid="Icon80_worksheet"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_worksheet</FunctionName>
+                  </Action>
+                </Control>
               </Group>
               <Label resid="TabLabel"/>
             </CustomTab>
@@ -348,6 +385,9 @@
         <bt:Image id="Icon16_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-16.png"/>
         <bt:Image id="Icon32_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-32.png"/>
         <bt:Image id="Icon80_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-80.png"/>
+        <bt:Image id="Icon16_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-16.png"/>
+        <bt:Image id="Icon32_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-32.png"/>
+        <bt:Image id="Icon80_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Url" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html"/>
@@ -357,6 +397,7 @@
         <bt:Url id="Url_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=about"/>
         <bt:Url id="Url_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=figures"/>
         <bt:Url id="Url_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=calc"/>
+        <bt:Url id="Url_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=worksheet"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
@@ -369,6 +410,7 @@
         <bt:String id="Label_about" DefaultValue="Giới thiệu"/>
         <bt:String id="Label_figures" DefaultValue="Hình vẽ"/>
         <bt:String id="Label_calc" DefaultValue="Tính toán"/>
+        <bt:String id="Label_worksheet" DefaultValue="Phiếu bài tập"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
@@ -378,6 +420,7 @@
         <bt:String id="Desc_about" DefaultValue="Thông tin tác giả, website và ủng hộ."/>
         <bt:String id="Desc_figures" DefaultValue="Vẽ bảng biến thiên, đồ thị hàm số, miền nghiệm và hình học để chèn vào Word (hình sửa được)."/>
         <bt:String id="Desc_calc" DefaultValue="Rút gọn, đạo hàm, tích phân, giới hạn, giải phương trình bằng SymPy; chèn kết quả thành công thức."/>
+        <bt:String id="Desc_worksheet" DefaultValue="Tạo phiếu bài tập tiểu học (Toán, Tiếng Việt, Tiếng Anh) có đáp án để chèn vào Word."/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>

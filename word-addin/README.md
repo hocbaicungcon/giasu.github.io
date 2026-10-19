@@ -32,11 +32,16 @@ Add-in được xây dựng cho Microsoft Word (chạy trên Word Windows, Word 
    - **Hình học không gian & hình học phẳng chuẩn GDPT Việt Nam**: Tam giác, đường tròn, tứ giác, hình chóp (S.ABCD, S.ABC, chóp có cạnh vuông góc đáy), lăng trụ, hình hộp, hình lập phương, nón, trụ, cầu, hệ trục tọa độ $Oxyz$.
    - Xuất sang Word dưới dạng **Hình vẽ chỉnh sửa được** (DrawingML nhóm vector kết hợp hộp chữ công thức) hoặc ảnh PNG chất lượng cao.
 
-4. **Tính toán đại số với SymPy (`tab-calc`, `src/sympy-bridge.js`)**:
+4. **Phiếu bài tập tiểu học (`tab-worksheet`, `taskpane/worksheet-ui.js`, `src/worksheet-docx.js`)**:
+   - Dùng thư viện sinh phiếu của latex_bank (`latex_bank/worksheet-lib`, bản chép ở `taskpane/vendor/worksheet.js`; chỉ thêm trường `bodyTex` vào `sheets[].blocks[]`). Muốn cập nhật: chạy `node build.cjs` bên latex_bank, chép `dist/worksheet.js` sang rồi áp lại thay đổi đó.
+   - Môn Toán / Tiếng Việt / Tiếng Anh, lớp 1–5, mức cơ bản/nâng cao, màu hoặc đen trắng, cỡ chữ, nhiều mã đề, trang đáp án. Ghi vào Word dạng nội dung gốc (công thức Word, bảng nhiều cột, hình minh họa là emoji), chèn tại con trỏ hoặc tạo tài liệu mới.
+   - Dạng bài có hình TikZ riêng (đồng hồ, xúc xắc, phân số bằng hình, nối cột...) chưa có trong Word; giao diện liệt kê các dạng bị bỏ qua.
+
+5. **Tính toán đại số với SymPy (`tab-calc`, `src/sympy-bridge.js`)**:
    - Tích hợp SymPy chạy trên nền WebAssembly (Pyodide) trực tiếp trong trình duyệt, có cơ chế lưu cache offline 30 ngày qua Service Worker (`sw.js`).
    - Hỗ trợ rút gọn, khai triển, phân tích nhân tử, đạo hàm, nguyên hàm, tích phân, giới hạn, giải phương trình/hệ phương trình/bất phương trình, ma trận, số nguyên. Kết quả xuất trực tiếp vào Word.
 
-5. **Chuẩn hóa & Trộn đề thi GDPT 2018 (`tab-exam`, `src/exam.js`)**:
+6. **Chuẩn hóa & Trộn đề thi GDPT 2018 (`tab-exam`, `src/exam.js`)**:
    - Nhận diện đầy đủ 3 phần thi theo cấu trúc Bộ GD&ĐT:
      - **Phần I**: Trắc nghiệm nhiều phương án (A, B, C, D).
      - **Phần II**: Trắc nghiệm Đúng/Sai (các ý a, b, c, d).
@@ -47,11 +52,11 @@ Add-in được xây dựng cho Microsoft Word (chạy trên Word Windows, Word 
    - Thuật toán trộn đề giữ nguyên các câu chung ngữ cảnh / dữ kiện và phương án cố định.
    - Lập bảng đáp án đa mã đề, xuất file Excel (`.xlsx`) theo 2 mẫu chuẩn: mẫu `GIASU.AI.VN` và mẫu `TEXCRAFT`.
 
-6. **Xuất bài trình chiếu PowerPoint 16:9 tương tác Đúng/Sai (`src/pptx.js`)**:
+7. **Xuất bài trình chiếu PowerPoint 16:9 tương tác Đúng/Sai (`src/pptx.js`)**:
    - Tạo file `.pptx` 16:9 widescreen thuần OpenXML từ trình duyệt, hoàn toàn offline.
    - Tạo kịch bản tương tác Đúng/Sai với các slide phản hồi và liên kết nội bộ `ppaction://hlinksldjump`.
 
-7. **Tạo mã QR đáp án chấm thi (`src/answer-qr.js`)**:
+8. **Tạo mã QR đáp án chấm thi (`src/answer-qr.js`)**:
    - Định dạng chuẩn tương thích 100% với hệ thống chấm thi [giasu.ai.vn/cham-thi](https://giasu.ai.vn/cham-thi).
 
 ---

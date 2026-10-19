@@ -1,6 +1,6 @@
 // Service worker: keeps the add-in (pages, scripts, icons, KaTeX, QR libraries) and the big CDN files it needs
 // (Office.js, Pyodide/SymPy) for about 30 days, so it opens without a network. Generated into sw.js by tools/build-sw.mjs.
-const VERSION = '079357b188';
+const VERSION = 'e265a2a3ca';
 const CACHE = 'texcraft-app-' + VERSION, RUNTIME = 'texcraft-runtime', META = 'texcraft-meta';
 const MAX_AGE = 30 * 24 * 3600 * 1000;
 const FILES = [
@@ -34,6 +34,7 @@ const FILES = [
  "./src/sympy-bridge.js",
  "./src/tables.js",
  "./src/word-io.js",
+ "./src/worksheet-docx.js",
  "./src/xlsx.js",
  "./src/xml.js",
  "./taskpane/calc-ui.js",
@@ -83,6 +84,9 @@ const FILES = [
  "./taskpane/icon-replace-16.png",
  "./taskpane/icon-replace-32.png",
  "./taskpane/icon-replace-80.png",
+ "./taskpane/icon-ws-v2-16.png",
+ "./taskpane/icon-ws-v2-32.png",
+ "./taskpane/icon-ws-v2-80.png",
  "./taskpane/katex/fonts/KaTeX_AMS-Regular.ttf",
  "./taskpane/katex/fonts/KaTeX_AMS-Regular.woff",
  "./taskpane/katex/fonts/KaTeX_AMS-Regular.woff2",
@@ -152,7 +156,9 @@ const FILES = [
  "./taskpane/taskpane.html",
  "./taskpane/taskpane.js",
  "./taskpane/vendor/jsQR.js",
- "./taskpane/vendor/qrcode.js"
+ "./taskpane/vendor/qrcode.js",
+ "./taskpane/vendor/worksheet.js",
+ "./taskpane/worksheet-ui.js"
 ];
 const CDN = [/^https:\/\/appsforoffice\.microsoft\.com\//, /^https:\/\/cdn\.jsdelivr\.net\/pyodide\//];
 

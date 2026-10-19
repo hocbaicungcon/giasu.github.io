@@ -19,6 +19,10 @@ function switchTab(name) {
     state.figuresLoaded = true;
     import('./figures-ui.js').then((m) => m.mountFigures($('figures-root'), io)).catch((e) => { $('figures-root').textContent = 'Không tải được mô-đun hình vẽ: ' + e.message; });
   }
+  if (name === 'worksheet' && !state.worksheetLoaded) {
+    state.worksheetLoaded = true;
+    import('./worksheet-ui.js').then((m) => m.mountWorksheet($('worksheet-root'), io)).catch((e) => { $('worksheet-root').textContent = 'Không tải được mô-đun phiếu bài tập: ' + e.message; });
+  }
   if (name === 'calc' && !state.calcLoaded) {
     state.calcLoaded = true;
     import('./calc-ui.js').then((m) => m.mountCalc($('calc-root'), io, { openEditor: (latex) => { $('editor-latex').value = latex; switchTab('editor'); renderEditorPreview(); } })).catch((e) => { $('calc-root').textContent = 'Không tải được mô-đun tính toán: ' + e.message; });
@@ -393,7 +397,7 @@ function requestStartupLoad() {
 function registerRibbonActions() {
   try {
     if (!Office.actions?.associate) return;
-    for (const t of ['eq', 'editor', 'exam', 'about', 'figures', 'calc']) {
+    for (const t of ['eq', 'editor', 'exam', 'about', 'figures', 'calc', 'worksheet']) {
       Office.actions.associate('showTab_' + t, async () => {
         switchTab(t);
         try { await Office.addin.showAsTaskpane(); } catch { /* already visible */ }
