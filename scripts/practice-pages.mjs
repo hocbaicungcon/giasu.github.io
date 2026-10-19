@@ -99,3 +99,39 @@ export function pageSchema(key, canonical) {
 
 export const pageCrumbs = key => key === 'hub' ? [] : [['Luyện tập', `${SITE}luyen-tap/`]];
 export const plain = strip;
+
+export function isChinesePost(post) {
+  if (!post) return false;
+  const title = (post.title || '').toLowerCase();
+  const cat = (post.category || '').toLowerCase();
+  const tags = (post.tags || []).map(t => String(t).toLowerCase());
+
+  if (tags.includes('tiếng nhật') && !tags.includes('tiếng trung') && !title.includes('tiếng trung') && !title.includes('hsk')) {
+    return false;
+  }
+
+  if (tags.some(t => t === 'tiếng trung' || t === 'chữ hán' || t.startsWith('hsk') || t === 'bộ thủ' || t === 'pinyin' || t === 'bính âm' || t === 'giao tiếp tiếng trung')) {
+    return true;
+  }
+
+  if (
+    title.includes('tiếng trung') ||
+    title.includes('hsk') ||
+    title.includes('bính âm') ||
+    title.includes('pinyin') ||
+    title.includes('bộ thủ hán ngữ') ||
+    title.includes('214 bộ thủ') ||
+    title.includes('50 bộ thủ') ||
+    (title.includes('bộ thủ') && (cat === 'ngoại ngữ' || title.includes('chữ hán') || title.includes('thường dùng'))) ||
+    (title.includes('chữ hán') && !tags.includes('tiếng nhật') && !title.includes('tiếng nhật'))
+  ) {
+    return true;
+  }
+
+  if (cat === 'tiếng trung') return true;
+  return false;
+}
+
+export function renderWritingBanner(prefix = '../') {
+  return `<aside class="writing-banner" aria-label="Luyện viết chữ Hán và tiếng Trung trực tuyến"><a class="wb-card" href="${prefix}luyen-viet/"><div class="wb-visual" aria-hidden="true"><div class="wb-grid-char"><span class="wb-char">永</span><span class="wb-sub-han">yǒng · vĩnh</span></div></div><div class="wb-content"><span class="wb-kicker">✦ CÔNG CỤ TẬP VIẾT TƯƠNG TÁC</span><strong class="wb-title">Luyện viết chữ Hán &amp; Tiếng Trung trực tuyến</strong><p class="wb-desc">Xem hoạt ảnh thứ tự từng nét, tập tô theo nét mờ, tự viết có chấm điểm và nghe phát âm chuẩn. Đầy đủ nét cơ bản, 214 bộ thủ và từ vựng HSK 1–6.</p><div class="wb-badges"><span>16 nét cơ bản</span><span>214 bộ thủ</span><span>HSK 1–6</span><span>Hoạt ảnh thứ tự nét</span><span>Phát âm chuẩn</span></div></div><div class="wb-cta"><span class="wb-btn">Luyện viết ngay <span class="wb-arrow" aria-hidden="true">▶</span></span><small class="wb-free">Miễn phí 100% · Dùng trên điện thoại &amp; máy tính</small></div></a></aside>`;
+}

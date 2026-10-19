@@ -385,3 +385,17 @@ test('legacy quiz-item blocks become a working quiz set and keep LaTeX commands 
  assert.ok(!/data-quiz=|\\frac|\\sqrt|\\bar/.test(html.replace(/<annotation[^>]*>[^<]*<\/annotation>/g,'')),'no raw LaTeX or JSON leaks');
  assert.match(html,/Câu 2\/2/);
 });
+
+test('các bài viết tiếng Trung có banner luyện viết dẫn đến trang luyen-viet', () => {
+  const read = file => fs.readFileSync(new URL('../dist/' + file, import.meta.url), 'utf8');
+  const chinesePage = read('bai-viet/100-cau-tieng-trung-thong-dung.html');
+  assert.match(chinesePage, /class="writing-banner"/);
+  assert.match(chinesePage, /href="\.\.\/luyen-viet\/"/);
+  assert.match(chinesePage, /Luyện viết chữ Hán &amp; Tiếng Trung trực tuyến/);
+
+  const radicalPage = read('bai-viet/214-bo-thu-han-ngu.html');
+  assert.match(radicalPage, /class="writing-banner"/);
+
+  const mathPage = read('bai-viet/toan-7-bai-13-hai-tam-giac-bang-nhau-truong-hop-canh-canh-canh.html');
+  assert.doesNotMatch(mathPage, /class="writing-banner"/);
+});

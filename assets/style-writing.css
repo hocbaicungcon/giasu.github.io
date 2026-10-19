@@ -108,3 +108,238 @@
 .wr-badge { position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; }
 
 .wr-brush { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 2; }
+
+/* Banner luyện viết chữ Hán trong các bài viết tiếng Trung */
+.writing-banner {
+  margin: 18px 0 28px;
+  clear: both;
+}
+.wb-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 22px;
+  text-decoration: none;
+  color: var(--ink, #242424);
+  background: linear-gradient(135deg, #f4fbf5 0%, #eaf4eb 60%, #fffef8 100%);
+  border: 1.5px solid #bfdcbe;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(45, 95, 60, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.wb-card:hover {
+  transform: translateY(-2px);
+  border-color: #79ba85;
+  box-shadow: 0 8px 24px rgba(45, 95, 60, 0.12);
+}
+.wb-card:focus-visible {
+  outline: 3px solid #438557;
+  outline-offset: 2px;
+}
+.wb-visual {
+  flex: none;
+}
+.wb-grid-char {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  background-color: #fffdf6;
+  border: 2px solid #db9560;
+  border-radius: 10px;
+  background-image:
+    linear-gradient(to right, transparent calc(50% - 1px), #f1d5bd calc(50% - 1px), #f1d5bd calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(to bottom, transparent calc(50% - 1px), #f1d5bd calc(50% - 1px), #f1d5bd calc(50% + 1px), transparent calc(50% + 1px)),
+    linear-gradient(to bottom right, transparent calc(50% - .5px), #fae8d8 calc(50% - .5px), #fae8d8 calc(50% + .5px), transparent calc(50% + .5px)),
+    linear-gradient(to bottom left, transparent calc(50% - .5px), #fae8d8 calc(50% - .5px), #fae8d8 calc(50% + .5px), transparent calc(50% + .5px));
+  box-shadow: 0 2px 8px rgba(219, 149, 96, 0.18);
+}
+.wb-char {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", system-ui, sans-serif;
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 600;
+  color: #b33924;
+}
+.wb-sub-han {
+  position: absolute;
+  bottom: 3px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  color: #8c5b2f;
+  letter-spacing: 0.02em;
+}
+.wb-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.wb-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #3e8751;
+  text-transform: uppercase;
+}
+.wb-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1d3d23;
+}
+.wb-desc {
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #556b59;
+}
+.wb-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+.wb-badges span {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3b7449;
+  background: rgba(67, 133, 87, 0.1);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.wb-cta {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-left: 8px;
+}
+.wb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background: #3e8751;
+  border-radius: 999px;
+  box-shadow: 0 3px 0 #286337;
+  white-space: nowrap;
+  transition: background 0.12s;
+}
+.wb-card:hover .wb-btn {
+  background: #327342;
+}
+.wb-arrow {
+  font-size: 11px;
+  transform: translateX(0);
+  transition: transform 0.15s;
+}
+.wb-card:hover .wb-arrow {
+  transform: translateX(2px);
+}
+.wb-free {
+  font-size: 12px;
+  color: #6d8571;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Giao diện tối */
+html[data-theme="dark"] .wb-card {
+  background: linear-gradient(135deg, #18271e 0%, #152019 100%);
+  border-color: #2b4231;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  color: #e5eee6;
+}
+html[data-theme="dark"] .wb-grid-char {
+  background-color: #23201a;
+  border-color: #8c5d38;
+}
+html[data-theme="dark"] .wb-char {
+  color: #f07660;
+}
+html[data-theme="dark"] .wb-sub-han {
+  color: #d1a57c;
+}
+html[data-theme="dark"] .wb-kicker {
+  color: #79d08e;
+}
+html[data-theme="dark"] .wb-title {
+  color: #f0f7f1;
+}
+html[data-theme="dark"] .wb-desc {
+  color: #a3baa7;
+}
+html[data-theme="dark"] .wb-badges span {
+  color: #a3e8b4;
+  background: rgba(67, 196, 99, 0.16);
+}
+html[data-theme="dark"] .wb-btn {
+  background: #43a35b;
+  box-shadow: 0 3px 0 #266b37;
+}
+html[data-theme="dark"] .wb-free {
+  color: #8fa893;
+}
+
+/* In ấn */
+@media print {
+  .writing-banner {
+    display: none !important;
+  }
+}
+
+/* Responsive trên điện thoại */
+@media (max-width: 680px) {
+  .wb-card {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+  .wb-grid-char {
+    width: 60px;
+    height: 60px;
+  }
+  .wb-char {
+    font-size: 30px;
+  }
+  .wb-sub-han {
+    font-size: 9px;
+  }
+  .wb-title {
+    font-size: 16px;
+  }
+  .wb-desc {
+    font-size: 13.5px !important;
+  }
+  .wb-badges {
+    display: none;
+  }
+  .wb-cta {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 4px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .wb-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .wb-free {
+    display: none;
+  }
+}
