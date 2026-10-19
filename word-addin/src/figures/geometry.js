@@ -35,6 +35,7 @@ class Canvas {
 function frame(c, W, H) { return { scene: { width: W, height: H, items: c.items }, svg: sceneToSvg({ width: W, height: H, items: c.items }), width: W, height: H }; }
 function centre(pts) { return [pts.reduce((s, p) => s + p[0], 0) / pts.length, pts.reduce((s, p) => s + p[1], 0) / pts.length]; }
 function labelAll(c, names, pts, cen, extra = {}) { names.forEach((n, i) => { if (!n) return; c.dot(pts[i]); c.label(n, pts[i], sub(pts[i], cen), extra); }); }
+const pick = (used, ...cands) => cands.find((c) => !used.includes(c)) || cands[0] + "'";   // an auto label that does not clash with the names the user chose
 const nm = (src, fallback) => { const l = String(src || '').split(/[\s,;]+/).filter(Boolean); return fallback.map((f, i) => l[i] ?? f); };
 
 // ---------------------------------------------------------------- plane figures
@@ -49,8 +50,8 @@ export function triangle(o = {}) {
   const cv = new Canvas(), cen = centre([a, b, c]);
   cv.poly([a, b, c]);
   const h = foot(a, b, c);
-  if (o.altitude && k !== 'right') { cv.seg(a, h, { dash: '5 4' }); cv.rightAngle(h, a, c); cv.dot(h); cv.label(o.heightName || 'H', h, [0, 1]); }
-  if (o.median) { const m = mid(b, c); cv.seg(a, m, { dash: '5 4' }); cv.dot(m); cv.label(o.medianName || 'M', m, [0, 1]); cv.tick(b, m); cv.tick(m, c); }
+  if (o.altitude && k !== 'right') { cv.seg(a, h, { dash: '5 4' }); cv.rightAngle(h, a, c); cv.dot(h); cv.label(pick([A, B, C], o.heightName || 'H', 'K'), h, [0, 1]); }
+  if (o.median) { const m = mid(b, c); cv.seg(a, m, { dash: '5 4' }); cv.dot(m); cv.label(pick([A, B, C], o.medianName || 'M', 'N'), m, [0, 1]); cv.tick(b, m); cv.tick(m, c); }
   if (o.bisector) { const bc = len(sub(b, a)), cc = len(sub(c, a)), d = lerp(b, c, bc / (bc + cc)); cv.seg(a, d, { dash: '5 4' }); cv.dot(d); cv.label('D', d, [0, 1]); cv.arcAngle(a, b, d, 22); cv.arcAngle(a, d, c, 26); }
   if (o.centroid) { const g = centre([a, b, c]); cv.seg(a, mid(b, c), { dash: '5 4' }); cv.seg(b, mid(a, c), { dash: '5 4' }); cv.seg(c, mid(a, b), { dash: '5 4' }); cv.dot(g); cv.label('G', g, [0.6, 0.6], { dist: 10 }); }
   if (k === 'right') cv.rightAngle(a, b, c, 12);
@@ -100,24 +101,38 @@ const proj = (x, y, z, s = 1) => [x + 0.5 * z * Math.cos(Math.PI / 4) * s, -y - 
 
 export function pyramid(o = {}) {
   const base = o.base || 'quad', W = 440, H = 340, cv = new Canvas();
+  const perp = o.apex === 'A';   // SA vertical (SA ⟂ base), as in many exam figures
   if (base === 'tri') {
     const [S, A, B, C] = nm(o.names, ['S', 'A', 'B', 'C']);
-    const a = P(70, 280), b = P(310, 280), c = P(220, 220), s = P(180, 40);
+    const a = P(70, 280), b = P(310, 280), c = P(220, 220), s = perp ? P(70, 40) : P(180, 40);
     cv.seg(a, b); cv.seg(b, c); cv.seg(a, c, { hidden: true }); cv.seg(s, a); cv.seg(s, b); cv.seg(s, c);
-    if (o.height) { const h = [s[0], 262]; cv.seg(s, h, { dash: '5 4' }); cv.dot(h); cv.label('H', h, [0, 1]); cv.rightAngle(h, s, [h[0] + 30, h[1]], 8); }
-    const cen = centre([a, b, c, s]);
-    labelAll(cv, [S, A, B, C], [s, a, b, c], cen);
+    if (perp) cv.rightAngle(a, s, b, 10);
+    if (o.height && !perp) { const h = [s[0], 262]; cv.seg(s, h, { dash: '5 4' }); cv.dot(h); cv.label('H', h, [0, 1]); cv.rightAngle(h, s, [h[0] + 30, h[1]], 8); }
+    if (o.midpoints) { const used = [S, A, B, C], mn = pick(used, 'M', 'K', 'E'), nn = pick([...used, mn], 'N', 'I', 'F'); const m = mid(b, c), n = mid(s, a); cv.seg(n, m, { dash: '5 4' }); cv.dot(m); cv.dot(n); cv.label(mn, m, [0.8, 0.6]); cv.label(nn, n, [-1, 0]); }
+    labelAll(cv, [S, A, B, C], [s, a, b, c], centre([a, b, c, s]));
     return frame(cv, W, H);
   }
   const [S, A, B, C, D] = nm(o.names, ['S', 'A', 'B', 'C', 'D']);
-  const a = P(70, 280), b = P(280, 280), d = P(150, 215), c = P(360, 215), s = P(225, 40);
+  const a = P(70, 280), b = P(280, 280), d = P(150, 215), c = P(360, 215), s = perp ? P(70, 40) : P(225, 40);
   cv.seg(a, b); cv.seg(b, c); cv.seg(c, d, { hidden: true }); cv.seg(d, a, { hidden: true });
   cv.seg(s, a); cv.seg(s, b); cv.seg(s, c); cv.seg(s, d, { hidden: true });
   const O = mid(a, c);
-  if (o.height || o.diagonals) { cv.seg(a, c, { hidden: true }); cv.seg(b, d, { hidden: true }); cv.dot(O); cv.label('O', O, [0.3, 1], { dist: 11 }); }
-  if (o.height) cv.seg(s, O, { dash: '5 4' });
-  const cen = centre([a, b, c, d, s]);
-  labelAll(cv, [S, A, B, C, D], [s, a, b, c, d], cen);
+  if (perp) cv.rightAngle(a, s, b, 10);
+  if ((o.height && !perp) || o.diagonals) { cv.seg(a, c, { hidden: true }); cv.seg(b, d, { hidden: true }); cv.dot(O); cv.label(pick([S, A, B, C, D], 'O', 'H'), O, [0.3, 1], { dist: 11 }); }
+  if (o.height && !perp) cv.seg(s, O, { dash: '5 4' });
+  if (o.midpoints) { const used = [S, A, B, C, D], mn = pick(used, 'M', 'K', 'E'), nn = pick([...used, mn], 'N', 'I', 'F'); const m = mid(b, c), n = mid(s, a); cv.seg(n, m, { dash: '5 4' }); cv.dot(m); cv.dot(n); cv.label(mn, m, [0.8, 0.6]); cv.label(nn, n, [-1, 0]); }
+  labelAll(cv, [S, A, B, C, D], [s, a, b, c, d], centre([a, b, c, d, s]));
+  return frame(cv, W, H);
+}
+
+export function tetrahedron(o = {}) {
+  const [A, B, C, D] = nm(o.names, ['A', 'B', 'C', 'D']), W = 440, H = 340, cv = new Canvas();
+  const a = P(70, 280), b = P(310, 280), c = P(225, 215), d = P(185, 40);
+  cv.seg(a, b); cv.seg(b, c); cv.seg(a, c, { hidden: true }); cv.seg(d, a); cv.seg(d, b); cv.seg(d, c);
+  const used = [A, B, C, D], mn = pick(used, 'M', 'K', 'E'), nn = pick([...used, mn], 'N', 'I', 'F');
+  if (o.medians) { const m = mid(b, c); cv.seg(a, m, { dash: '5 4' }); cv.seg(d, m, { dash: '5 4' }); cv.dot(m); cv.label(mn, m, [0.8, 0.6]); }
+  if (o.opposite) { const m = mid(a, d), n = mid(b, c); cv.seg(m, n, { dash: '5 4' }); cv.dot(m); cv.dot(n); cv.label(mn, m, [-1, 0]); cv.label(nn, n, [0.8, 0.6]); }
+  labelAll(cv, [D, A, B, C], [d, a, b, c], centre([a, b, c, d]));
   return frame(cv, W, H);
 }
 
@@ -149,24 +164,39 @@ export function prism(o = {}) {
 export function roundSolid(o = {}) {
   const kind = o.kind || 'cone', W = 360, H = 360, cv = new Canvas();
   const cx = 180, rx = 110, ry = 28;
-  const ellipse = (cyy, hiddenFront) => {
-    cv.items.push({ t: 'ellipse', cx, cy: cyy, rx, ry, sw: 1.5, dash: '' });
-    void hiddenFront;
-  };
-  const arc = (cyy, front) => { const pts = Array.from({ length: 31 }, (_x, i) => { const t = (front ? 0 : Math.PI) + Math.PI * i / 30; return [cx + rx * Math.cos(t), cyy + ry * Math.sin(t)]; }); cv.items.push({ t: 'poly', pts, closed: false, sw: 1.5, dash: front ? '' : '5 4' }); };
+  const arc = (cx0, cyy, rx0, ry0, front) => { const pts = Array.from({ length: 31 }, (_x, i) => { const t = (front ? 0 : Math.PI) + Math.PI * i / 30; return [cx0 + rx0 * Math.cos(t), cyy + ry0 * Math.sin(t)]; }); cv.items.push({ t: 'poly', pts, closed: false, sw: 1.5, dash: front ? '' : '5 4' }); };
   if (kind === 'cone') {
-    const top = P(cx, 40), by = 290;
-    arc(by, true); arc(by, false); cv.seg(top, [cx - rx, by]); cv.seg(top, [cx + rx, by]);
-    const Ocen = P(cx, by); cv.seg(top, Ocen, { dash: '5 4' }); cv.seg(Ocen, [cx + rx, by], { dash: '5 4' });
-    cv.dot(top); cv.dot(Ocen); cv.label('S', top, [0, -1]); cv.label('O', Ocen, [0, 1], { dist: 14 }); cv.label('R', mid(Ocen, [cx + rx, by]), [0, -1], { dist: 10 }); cv.label('h', mid(top, Ocen), [-1, 0], { dist: 12 }); cv.label('l', mid(top, [cx + rx, by]), [1, -0.3], { dist: 14 });
+    const [Sn, On, An] = nm(o.names, ['S', 'O', 'A']);
+    const top = P(cx, 40), by = 290, Oc = P(cx, by), Ap = P(cx + rx, by);
+    arc(cx, by, rx, ry, true); arc(cx, by, rx, ry, false); cv.seg(top, [cx - rx, by]); cv.seg(top, Ap);
+    cv.seg(top, Oc, { dash: '5 4' }); cv.seg(Oc, Ap, { dash: '5 4' });
+    cv.rightAngle(Oc, top, Ap, 9);
+    cv.dot(top); cv.dot(Oc); cv.dot(Ap); cv.label(Sn, top, [0, -1]); cv.label(On, Oc, [-0.7, 0.8], { dist: 13 }); cv.label(An, Ap, [1, 0.5], { dist: 13 });
+    if (o.showR !== false) cv.label('R', mid(Oc, Ap), [0, 1], { dist: 12 });
+    if (o.showH !== false) cv.label('h', mid(top, Oc), [-1, 0], { dist: 12 });
+    if (o.showL !== false) cv.label('l', mid(top, Ap), [1, -0.3], { dist: 14 });
   } else if (kind === 'cylinder') {
-    const t = 70, b = 290;
-    ellipse(t, false); arc(b, true); arc(b, false); cv.seg([cx - rx, t], [cx - rx, b]); cv.seg([cx + rx, t], [cx + rx, b]);
-    const O1 = P(cx, t), O2 = P(cx, b); cv.seg(O1, O2, { dash: '5 4' }); cv.dot(O1); cv.dot(O2); cv.label('O', O2, [0, 1], { dist: 14 }); cv.label("O'", O1, [0, -1], { dist: 14 }); cv.seg(O2, [cx + rx, b], { dash: '5 4' }); cv.label('R', mid(O2, [cx + rx, b]), [0, 1], { dist: 12 }); cv.label('h', mid(O1, O2), [-1, 0], { dist: 12 });
+    const [On, O1n, An] = nm(o.names, ['O', "O'", 'A']);
+    const t = 70, b = 290, O1 = P(cx, t), O2 = P(cx, b), Ap = P(cx + rx, b);
+    cv.items.push({ t: 'ellipse', cx, cy: t, rx, ry, sw: 1.5 }); arc(cx, b, rx, ry, true); arc(cx, b, rx, ry, false); cv.seg([cx - rx, t], [cx - rx, b]); cv.seg([cx + rx, t], [cx + rx, b]);
+    cv.seg(O1, O2, { dash: '5 4' }); cv.seg(O2, Ap, { dash: '5 4' }); cv.rightAngle(O2, O1, Ap, 9);
+    cv.dot(O1); cv.dot(O2); cv.dot(Ap); cv.label(On, O2, [-0.7, 0.8], { dist: 13 }); cv.label(O1n, O1, [0, -1], { dist: 14 }); cv.label(An, Ap, [1, 0.5], { dist: 13 });
+    if (o.showR !== false) cv.label('R', mid(O2, Ap), [0, 1], { dist: 12 });
+    if (o.showH !== false) cv.label('h', mid(O1, O2), [-1, 0], { dist: 12 });
+  } else if (kind === 'frustum') {
+    const [On, O1n] = nm(o.names, ['O', "O'"]);
+    const t = 80, b = 290, r1 = 62, r2 = 120, O1 = P(cx, t), O2 = P(cx, b);
+    cv.items.push({ t: 'ellipse', cx, cy: t, rx: r1, ry: r1 * 0.26, sw: 1.5 }); arc(cx, b, r2, r2 * 0.26, true); arc(cx, b, r2, r2 * 0.26, false);
+    cv.seg([cx - r1, t], [cx - r2, b]); cv.seg([cx + r1, t], [cx + r2, b]); cv.seg(O1, O2, { dash: '5 4' });
+    cv.dot(O1); cv.dot(O2); cv.label(On, O2, [-0.7, 0.8], { dist: 13 }); cv.label(O1n, O1, [0, -1], { dist: 14 });
+    if (o.showR !== false) { cv.seg(O2, [cx + r2, b], { dash: '5 4' }); cv.label('R', mid(O2, [cx + r2, b]), [0, 1], { dist: 12 }); cv.seg(O1, [cx + r1, t], { dash: '5 4' }); cv.label('r', mid(O1, [cx + r1, t]), [0, -1], { dist: 10 }); }
+    if (o.showH !== false) cv.label('h', mid(O1, O2), [-1, 0], { dist: 12 });
   } else {
-    const r = 130, c = P(cx, 180);
+    const [On, An] = nm(o.names, ['O', 'A']);
+    const r = 130, c = P(cx, 180), Ap = [c[0] + r, c[1]];
     cv.circle(c, r); arc2(cv, c, r);
-    cv.dot(c); cv.label('O', c, [0.3, 0.8], { dist: 11 }); cv.seg(c, [c[0] + r, c[1]]); cv.label('R', mid(c, [c[0] + r, c[1]]), [0, -1], { dist: 10 });
+    cv.dot(c); cv.dot(Ap); cv.label(On, c, [-0.5, 0.8], { dist: 11 }); cv.label(An, Ap, [1, 0], { dist: 12 }); cv.seg(c, Ap);
+    if (o.showR !== false) cv.label('R', mid(c, Ap), [0, -1], { dist: 10 });
   }
   return frame(cv, W, H);
 }
@@ -193,8 +223,9 @@ export const GEOMETRY = [
   { id: 'triangle', label: 'Tam giác', make: triangle, options: [['kind', 'Loại', [['scalene', 'Thường'], ['isosceles', 'Cân'], ['right', 'Vuông'], ['equilateral', 'Đều']]], ['altitude', 'Đường cao'], ['median', 'Trung tuyến'], ['bisector', 'Phân giác'], ['centroid', 'Trọng tâm'], ['circum', 'Đường tròn ngoại tiếp'], ['incircle', 'Đường tròn nội tiếp']], names: 'A,B,C' },
   { id: 'circle', label: 'Đường tròn', make: circleFigure, options: [['kind', 'Dạng', [['diameter', 'Đường kính + góc nội tiếp chắn nửa đường tròn'], ['chord', 'Dây cung + đường vuông góc'], ['tangent', 'Tiếp tuyến'], ['inscribed', 'Tam giác nội tiếp']]]], names: 'O,A,B,C' },
   { id: 'quad', label: 'Tứ giác', make: quadrilateral, options: [['kind', 'Loại', [['rectangle', 'Hình chữ nhật'], ['square', 'Hình vuông'], ['parallelogram', 'Hình bình hành'], ['rhombus', 'Hình thoi'], ['trapezoid', 'Hình thang'], ['righttrapezoid', 'Hình thang vuông']]], ['diagonals', 'Hai đường chéo']], names: 'A,B,C,D' },
-  { id: 'pyramid', label: 'Hình chóp', make: pyramid, options: [['base', 'Đáy', [['quad', 'Tứ giác S.ABCD'], ['tri', 'Tam giác S.ABC']]], ['height', 'Đường cao'], ['diagonals', 'Hai đường chéo đáy']], names: 'S,A,B,C,D' },
-  { id: 'prism', label: 'Lăng trụ / hình hộp', make: prism, options: [['kind', 'Loại', [['triangle', 'Lăng trụ tam giác ABC.A\'B\'C\''], ['box', 'Hình hộp chữ nhật'], ['cube', 'Hình lập phương']]], ['diagonals', 'Đường chéo AC\'']], names: "A,B,C,D,A',B',C',D'" },
-  { id: 'round', label: 'Nón / trụ / cầu', make: roundSolid, options: [['kind', 'Hình', [['cone', 'Hình nón'], ['cylinder', 'Hình trụ'], ['sphere', 'Hình cầu']]]], names: '' },
+  { id: 'pyramid', label: 'Hình chóp (đáy tứ giác / tam giác)', make: pyramid, options: [['base', 'Đáy', [['quad', 'Tứ giác  S.ABCD'], ['tri', 'Tam giác  S.ABC']]], ['apex', 'Đỉnh S', [['center', 'Chóp đều (đường cao SO / SH)'], ['A', 'SA vuông góc với đáy']]], ['height', 'Đường cao SO (chóp đều)'], ['diagonals', 'Hai đường chéo đáy'], ['midpoints', 'Trung điểm M của BC, N của SA']], names: 'S,A,B,C,D' },
+  { id: 'tetra', label: 'Tứ diện', make: tetrahedron, options: [['medians', 'Trung tuyến AM, DM (M trung điểm BC)'], ['opposite', 'Đoạn nối trung điểm hai cạnh đối AD, BC']], names: 'A,B,C,D' },
+  { id: 'prism', label: 'Lăng trụ / hình hộp / lập phương', make: prism, options: [['kind', 'Loại', [['triangle', 'Lăng trụ tam giác ABC.A\'B\'C\''], ['box', 'Hình hộp chữ nhật'], ['cube', 'Hình lập phương']]], ['diagonals', 'Đường chéo AC\'']], names: "A,B,C,D,A',B',C',D'" },
+  { id: 'round', label: 'Hình nón / trụ / nón cụt / cầu', make: roundSolid, options: [['kind', 'Hình', [['cone', 'Hình nón'], ['cylinder', 'Hình trụ'], ['frustum', 'Hình nón cụt'], ['sphere', 'Hình cầu']]], ['showR', 'Ghi bán kính R'], ['showH', 'Ghi chiều cao h'], ['showL', 'Ghi đường sinh l (hình nón)']], names: 'S,O,A', hint: 'Hình nón: S,O,A · hình trụ: O,O\',A · nón cụt: O,O\' · hình cầu: O,A' },
   { id: 'axes', label: 'Hệ trục tọa độ', make: axes, options: [['kind', 'Hệ', [['oxy', 'Oxy'], ['oxyz', 'Oxyz']]]], names: '' },
 ];

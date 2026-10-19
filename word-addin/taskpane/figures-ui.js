@@ -49,8 +49,10 @@ export function mountFigures(root, io) {
     const g = GEOMETRY.find((x) => x.id === $('g-kind').value);
     $('g-opts').innerHTML = g.options.map(([key, label, choices]) => (choices
       ? field(label, `<select data-opt="${key}">${choices.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('')}</select>`)
-      : sw('go-' + key, label))).join('') + (g.names ? field('Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names)}" spellcheck="false">`) : '');
+      : sw('go-' + key, label, /^show/.test(key)))).join('') + (g.names ? field('Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names)}" spellcheck="false" placeholder="${esc(g.names)}">`) + (g.hint ? `<div class="hint">${esc(g.hint)}</div>` : '<div class="hint">Đổi tên tùy ý, ví dụ M,N,P,Q; ô để trống dùng tên mặc định.</div>') : '');
     $('g-opts').querySelectorAll('input,select').forEach((el) => el.addEventListener('input', schedule));
+    const kindSel = $('g-opts').querySelector('select[data-opt="kind"]');
+    if (g.id === 'round' && kindSel && $('g-names')) kindSel.addEventListener('change', () => { $('g-names').value = { cone: 'S,O,A', cylinder: "O,O',A", frustum: "O,O'", sphere: 'O,A' }[kindSel.value]; render(); });
   }
 
   function build() {
