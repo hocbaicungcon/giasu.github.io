@@ -290,6 +290,7 @@ export function latexToRecords(latex) {
 export const MT_FONTS = {
   times: { label: 'Times New Roman (có chân)', base: 'times', name: 'Times New Roman', family: 'times' },
   palatino: { label: 'Palatino Linotype (có chân)', base: 'palatino', name: 'Palatino Linotype', family: 'palatino' },
+  cambriamath: { label: 'Cambria Math (hỗ trợ toán đầy đủ)', base: 'times', name: 'Cambria Math', family: 'cambriamath' },
   cambria: { label: 'Cambria (có chân)', base: 'times', name: 'Cambria', family: 'cambria' },
   sans: { label: 'Arial (không chân)', base: 'times', name: 'Arial', family: 'sans' },
 };

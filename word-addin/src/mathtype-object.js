@@ -120,6 +120,14 @@ export async function makeMathTypePackage(latex, { render, style = 'times', inli
 
 /** Browser: draw a LaTeX equation as the picture Word shows for a MathType object. */
 export async function browserRender(latex, { size = 12, family = 'times', vector = true } = {}) {
+  // the same layout as the live preview (KaTeX), as outlines: sharp EMF, or PNG if the vector picture cannot be written
+  try {
+    const { katexOutlines, outlinesToPng } = await import('./katex-render.js');
+    const r = await katexOutlines(latex, size);
+    let emf = null;
+    if (vector) { try { const { polygonsToEmf } = await import('./emf.js'); emf = polygonsToEmf(r.groups, r.width, r.height); } catch { emf = null; } }
+    return { png: emf ? null : outlinesToPng(r, 8), emf, width: r.width, height: r.height, baseline: r.baseline };
+  } catch { /* KaTeX missing or it rejects this LaTeX: the built-in layout below */ }
   const { renderLatex, svgToPng, charAdvance } = await import('./mathrender.js');
   const r = renderLatex(latex, { fontSize: size, family });
   let emf = null;

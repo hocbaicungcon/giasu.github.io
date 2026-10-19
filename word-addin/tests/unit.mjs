@@ -150,6 +150,21 @@ test('editor: equation under a collapsed cursor is found through the paragraph',
   assert.equal(pickEquation({ selPkg: bodyPackage(para('c^2')), paraPkg: p3 }).how, 'selection');
   assert.equal(pickEquation({ selPkg: empty, paraPkg: empty }).eq, null);
 });
+test('KaTeX outlines: TrueType glyphs -> polygons -> well-formed EMF; Cambria Math is a MathType font choice', async () => {
+  const fsm = await import('node:fs');
+  const { parseTtf } = await import('../src/ttf.js');
+  const { polygonsToEmf } = await import('../src/emf.js');
+  const font = parseTtf(new Uint8Array(fsm.readFileSync(new URL('../taskpane/katex/fonts/KaTeX_Main-Regular.ttf', import.meta.url))));
+  const A = font.outline(0x41), o = font.outline(0x6f);
+  assert.ok(A.length >= 2 && o.length === 2 && A.every((c) => c.length >= 3));   // "A" and "o" have holes
+  const emf = polygonsToEmf([A.map((c) => c.map(([x, y]) => [x / 40, 30 - y / 40])), [[[0, 0], [10, 0], [10, 1], [0, 1]]]], 40, 40);
+  const dv = new DataView(emf.buffer);
+  assert.equal(dv.getUint32(40, true), 0x464d4520); assert.equal(dv.getUint32(48, true), emf.length);
+  let off = 0, n = 0; while (off < emf.length) { const size = dv.getUint32(off + 4, true); assert.ok(size >= 8 && size % 4 === 0); off += size; n++; }
+  assert.equal(off, emf.length); assert.equal(n, dv.getUint32(52, true));
+  const st = latexToEquationStream('x', { font: 'cambriamath', size: 12 });
+  assert.ok(Buffer.from(st).toString('latin1').includes('Cambria Math'));
+});
 test('Solids: hidden (dashed) edges are exactly the ones behind the front faces', async () => {
   const g = await import('../src/figures/geometry.js');
   const dashed = (r) => r.scene.items.filter((it) => it.t === 'line' && it.dash).length;

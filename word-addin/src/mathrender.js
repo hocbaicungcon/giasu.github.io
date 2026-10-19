@@ -7,6 +7,7 @@ const SYMS = "'Cambria Math', 'STIX Two Math', 'Apple Symbols', 'Segoe UI Symbol
 export const FAMILIES = {
   times: `'Times New Roman', 'Times', 'STIX Two Text', ${SYMS}, serif`,
   palatino: `'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', ${SYMS}, serif`,
+  cambriamath: `'Cambria Math', Cambria, 'STIX Two Math', 'Times New Roman', ${SYMS}, serif`,
   cambria: `Cambria, 'Times New Roman', ${SYMS}, serif`,
   sans: `Arial, 'Helvetica Neue', Helvetica, ${SYMS}, sans-serif`,
 };

@@ -146,3 +146,44 @@ export function svgToEmf(svg, advance) {
   res.set(hd, 0); res.set(records, 88); res.set(eof, 88 + records.length);
   return res;
 }
+
+/**
+ * Filled polygons (a list of groups; a group = contours drawn together with the winding rule, e.g. one glyph with its holes)
+ * -> EMF bytes. Coordinates in points; 20 EMF units per point (int16 limit: pictures up to ~1600 pt).
+ */
+export function polygonsToEmf(groups, widthPt, heightPt) {
+  const U2 = 20;
+  const W = Math.ceil(widthPt * U2), H = Math.ceil(heightPt * U2);
+  if (W > 32000 || H > 32000) throw new Error('emf: picture too large');
+  const out = new Out();
+  out.rec(18, 1);        // transparent background
+  out.rec(19, 2);        // SETPOLYFILLMODE: winding
+  out.rec(37, 0x80000008);   // NULL_PEN
+  out.rec(37, 0x80000004);   // BLACK_BRUSH
+  const s16 = (v) => { const n = Math.max(-32768, Math.min(32767, Math.round(v * U2))); return [n & 255, (n >> 8) & 255]; };
+  for (const contours of groups) {
+    const cs = contours.filter((c) => c.length >= 3);
+    if (!cs.length) continue;
+    let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    const pts = [];
+    for (const c of cs) for (const [x, y] of c) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); pts.push(...s16(x), ...s16(y)); }
+    const total = cs.reduce((n, c) => n + c.length, 0);
+    const counts = cs.flatMap((c) => [c.length & 255, (c.length >> 8) & 255, 0, 0]);
+    out.rec(91, i32(x0 * U2), i32(y0 * U2), i32(x1 * U2), i32(y1 * U2), cs.length, total, counts, pts);   // POLYPOLYGON16
+  }
+  const eof = [14, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 20, 0, 0, 0];
+  const records = out.parts.flat();
+  const total = 88 + records.length + eof.length;
+  const hd = new Uint8Array(88), dv = new DataView(hd.buffer);
+  dv.setUint32(0, 1, true); dv.setUint32(4, 88, true);
+  dv.setInt32(16, W - 1, true); dv.setInt32(20, H - 1, true);
+  dv.setInt32(32, Math.round(widthPt * 35.2778), true); dv.setInt32(36, Math.round(heightPt * 35.2778), true);
+  dv.setUint32(40, 0x464d4520, true); dv.setUint32(44, 0x10000, true);
+  dv.setUint32(48, total, true); dv.setUint32(52, out.count + 2, true);
+  dv.setUint16(56, 1, true);
+  dv.setInt32(72, 14400, true); dv.setInt32(76, 14400, true);   // device: 1440 dpi over 10 in -> 20 units per point
+  dv.setInt32(80, 254, true); dv.setInt32(84, 254, true);
+  const res = new Uint8Array(total);
+  res.set(hd, 0); res.set(records, 88); res.set(eof, 88 + records.length);
+  return res;
+}
