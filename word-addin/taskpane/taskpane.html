@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TexCraft Công thức</title>
+  <link rel="icon" href="icon-32.png">
+  <link rel="stylesheet" href="taskpane.css">
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+<header><h1>TexCraft — Công thức &amp; đề thi</h1></header>
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-tab="eq">Công thức</button>
+  <button role="tab" aria-selected="false" data-tab="replace">Tìm &amp; thay</button>
+  <button role="tab" aria-selected="false" data-tab="exam">Đề thi</button>
+  <button role="tab" aria-selected="false" data-tab="about">Giới thiệu</button>
+  <button role="tab" aria-selected="false" data-tab="diag">Chẩn đoán</button>
+</nav>
+
+<section id="tab-eq" class="active">
+  <div class="notice">Add-in chỉ ghi vào tài liệu khi bạn bấm nút <b>Chuyển</b>. Hãy làm việc trên <b>bản sao</b>; Word chưa gộp các thay đổi thành một bước Hoàn tác (Ctrl/Cmd+Z nhiều lần, hoặc nút “Khôi phục” bên dưới).</div>
+  <fieldset><legend>1. Quét</legend>
+    <div class="row"><button class="primary" id="btn-scan">Quét toàn bộ tài liệu</button><span id="scan-summary" class="muted"></span></div>
+    <label class="inline"><input type="checkbox" id="only-bad"> chỉ hiện công thức không đọc được</label>
+    <div class="scroll"><table id="eq-table"><thead><tr><th>#</th><th>Đoạn</th><th>LaTeX</th><th></th></tr></thead><tbody></tbody></table></div>
+  </fieldset>
+  <fieldset><legend>2. Chuyển MathType → công thức Word</legend>
+    <label><input type="radio" name="scope" value="selection" checked> Đoạn đang chọn</label>
+    <label><input type="radio" name="scope" value="all"> Toàn bộ tài liệu</label>
+    <label><input type="checkbox" id="opt-display" checked> Đoạn chỉ có một công thức → công thức riêng dòng (căn giữa)</label>
+    <label><input type="checkbox" id="opt-mode"> Thay cả đoạn (mặc định: thay phần nội dung, giữ dấu ¶)</label>
+    <label><input type="checkbox" id="opt-backup"> Tôi đã lưu một bản sao tài liệu</label>
+    <div class="row"><button class="primary" id="btn-convert" disabled>Chuyển</button><button class="secondary" id="btn-restore" disabled>Khôi phục lần chuyển gần nhất</button></div>
+    <progress id="progress" value="0" max="1" hidden></progress>
+    <div id="convert-summary"></div>
+  </fieldset>
+</section>
+
+<section id="tab-replace">
+  <fieldset><legend>Tìm &amp; thay trên LaTeX của mọi công thức</legend>
+    <label>Tìm <input type="text" id="find" placeholder="vd. \dfrac"></label>
+    <label>Thay bằng <input type="text" id="replace" placeholder="vd. \frac"></label>
+    <div class="row">
+      <label class="inline"><input type="checkbox" id="opt-regex"> biểu thức chính quy</label>
+      <label class="inline"><input type="checkbox" id="opt-case" checked> phân biệt hoa/thường (LaTeX phân biệt \Rightarrow và \rightarrow)</label>
+      <label class="inline"><input type="checkbox" id="opt-mt" checked> gồm cả MathType (chuyển sang công thức Word)</label>
+    </div>
+    <div class="row"><button class="secondary" id="btn-preview">Xem trước</button><button class="primary" id="btn-apply" disabled>Áp dụng</button></div>
+    <div id="preview-summary" class="muted"></div>
+    <div class="scroll"><table id="preview-table"><tbody></tbody></table></div>
+    <label><input type="checkbox" id="rep-backup"> Tôi đã lưu một bản sao tài liệu</label>
+    <progress id="progress2" value="0" max="1" hidden></progress>
+    <div id="apply-summary"></div>
+  </fieldset>
+</section>
+
+<section id="tab-exam">
+  <div id="exam-root"></div>
+</section>
+
+<section id="tab-about">
+  <fieldset><legend>Tác giả</legend>
+    <p><b>Phan Văn Phương</b><br>Trường THPT Xuân Trường B, Ninh Bình<br>SĐT: <a href="tel:0375839806">0375839806</a></p>
+    <p>Website: <a href="https://giasu.ai.vn" target="_blank" rel="noopener">giasu.ai.vn</a></p>
+  </fieldset>
+  <fieldset><legend>Ủng hộ, tài trợ</legend>
+    <p>Add-in được xây dựng và chia sẻ miễn phí cho thầy cô. Nếu thấy hữu ích, mời thầy cô ủng hộ hoặc tài trợ để tác giả tiếp tục phát triển:</p>
+    <p>Ngân hàng <b>BIDV</b> — PHAN VAN PHUONG<br>Số tài khoản: <b class="tex" id="acct">4802518888</b></p>
+    <p style="text-align:center"><img src="qr-bidv.jpg" alt="Mã QR chuyển khoản BIDV 4802518888 - PHAN VAN PHUONG" style="max-width:260px;width:100%;border-radius:8px" onerror="this.parentNode.hidden=true"></p>
+    <div class="row"><button class="secondary" id="copy-acct">Sao chép số tài khoản</button><span id="acct-msg" class="muted"></span></div>
+    <p class="muted">Xin chân thành cảm ơn!</p>
+  </fieldset>
+</section>
+
+<section id="tab-diag">
+  <fieldset><legend>Kiểm tra môi trường</legend>
+    <div class="row"><button class="secondary" id="btn-env">Kiểm tra Office.js</button><button class="secondary" id="btn-dump">Xem OOXML đoạn đang chọn</button></div>
+    <div class="log" id="diag-log">Chưa chạy.</div>
+  </fieldset>
+</section>
+<script type="module" src="taskpane.js"></script>
+</body>
+</html>

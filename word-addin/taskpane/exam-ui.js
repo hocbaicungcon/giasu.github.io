@@ -1,0 +1,173 @@
+import { answerXlsx, answerTsv } from '../src/xlsx.js';
+import { parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody } from '../src/exam.js';
+
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+export function mountExam(root, io) {
+  root.innerHTML = `
+  <div class="notice">Nhận dạng: <b>PHẦN I/II/III</b>, <b>Câu N.</b>, phương án <b>A. B. C. D.</b>, ý <b>a) b) c) d)</b>. Đáp án đúng được nhận qua nhãn phương án <b>gạch chân / chữ đỏ / tô nổi</b>. Mọi thao tác ghi vào tài liệu chỉ chạy khi bạn bấm nút; hãy làm trên bản sao.</div>
+  <fieldset><legend>1. Phân tích đề</legend>
+    <div class="row"><button class="primary" id="ex-analyze">Phân tích tài liệu</button></div>
+    <div id="ex-summary" class="muted"></div>
+  </fieldset>
+  <fieldset><legend>2. Chuẩn hóa câu hỏi</legend>
+    <label>Đánh số lại câu
+      <select id="ex-renumber"><option value="part">theo từng phần (mỗi phần bắt đầu từ Câu 1)</option><option value="continuous">liên tục toàn đề</option><option value="">không đổi</option></select></label>
+    <label>Căn lề phương án
+      <select id="ex-layout"><option value="auto">tự động (1 dòng / 2 dòng / 4 dòng theo độ dài)</option><option value="4">luôn 4 cột</option><option value="2">luôn 2 cột</option><option value="1">mỗi phương án một dòng</option><option value="false">giữ nguyên</option></select></label>
+    <label><input type="checkbox" id="ex-labels" checked> nhãn A. B. C. D. in đậm, viết hoa, dấu chấm</label>
+    <label><input type="checkbox" id="ex-qformat" checked> “Câu N.” cùng định dạng với câu đầu tiên (nhãn “Bài N.” được đổi thành “Câu N.”)</label>
+    <label><input type="checkbox" id="ex-keep" checked> giữ câu hỏi và phương án cùng trang (keep with next)</label>
+    <label><input type="checkbox" id="ex-backup1"> Tôi đã lưu một bản sao tài liệu</label>
+    <div class="row"><button class="primary" id="ex-normalize">Chuẩn hóa</button></div>
+    <div id="ex-norm-out"></div>
+  </fieldset>
+  <fieldset><legend>3. Trộn đề &amp; bảng đáp án</legend>
+    <div class="row"><label class="inline">Số mã đề <input type="number" id="ex-n" value="4" min="1" max="12"></label>
+      <label class="inline">Mã đề đầu <input type="number" id="ex-code" value="101"></label>
+      <label class="inline">Hạt giống <input type="number" id="ex-seed" value="2026"></label></div>
+    <label><input type="checkbox" id="ex-shq" checked> trộn thứ tự câu trong từng phần</label>
+    <label><input type="checkbox" id="ex-sho" checked> trộn thứ tự phương án A–D (giữ nguyên câu có “cả A và B…”, “tất cả các đáp án…”)</label>
+    <label><input type="checkbox" id="ex-shs"> trộn cả thứ tự ý a) b) c) d) ở phần đúng sai</label>
+    <label><input type="checkbox" id="ex-strip" checked> bỏ dấu đáp án (gạch chân/đỏ) khỏi đề trộn</label>
+    <label><input type="checkbox" id="ex-withkey" checked> thêm bảng đáp án của mã đề vào cuối mỗi đề</label>
+    <label>Nơi đặt kết quả
+      <select id="ex-target"><option value="new">mỗi mã đề một tài liệu mới</option><option value="append">chèn nối tiếp vào cuối tài liệu này</option><option value="none">chỉ lập bảng đáp án (không tạo đề)</option></select></label>
+    <div class="row"><button class="primary" id="ex-shuffle">Tạo đề</button><button class="secondary" id="ex-key">Chèn bảng đáp án đề hiện tại</button><button class="secondary" id="ex-copy" disabled>Sao chép CSV</button></div>
+    <div class="row"><label class="inline">Xuất đáp án Excel
+        <select id="ex-xlsx"><option value="giasu">Mẫu GIASU.AI.VN (hàng = câu, cột = mã đề)</option><option value="texcraft">Mẫu TEXCRAFT (hàng = đề, cột = câu / ý)</option><option value="both">Cả hai mẫu</option></select></label>
+      <label class="inline"><input type="checkbox" id="ex-orig" checked> thêm đề gốc, mã <input type="text" id="ex-origcode" value="000" style="width:50px"></label></div>
+    <div class="row"><button class="secondary" id="ex-export">Tải file Excel</button><button class="secondary" id="ex-tsv">Sao chép bảng (dán vào Excel)</button></div>
+    <progress id="ex-progress" value="0" max="1" hidden></progress>
+    <div id="ex-shuffle-out"></div>
+  </fieldset>`;
+  const $ = (id) => root.querySelector('#' + id);
+  let lastCsv = '';
+  let lastVersions = null;   // [{code, answers}] of the latest "Tạo đề"
+
+  async function body() { const { pkg } = await io.readBody(); return pkg; }
+  const fail = (el, e) => { el.innerHTML = `<span class="bad">Lỗi: ${esc(e.message || e)}</span>`; };
+
+  $('ex-analyze').addEventListener('click', async () => {
+    try {
+      $('ex-summary').textContent = 'Đang đọc…';
+      const pkg = await body();
+      const model = parseBody(pkg);
+      const a = analyze(model);
+      const ans = answersOf(model, a);
+      const lines = a.parts.map((p) => {
+        const flagged = p.questions.filter((q) => q.flags.length).length;
+        const marked = ans.filter((x) => x.part === p.title && x.value).length;
+        return `<li><b>${esc(p.title.slice(0, 70) || '(đầu đề)')}</b> — ${p.kind === 'mc' ? 'nhiều phương án' : p.kind === 'tf' ? 'đúng/sai' : p.kind === 'short' ? 'trả lời ngắn' : 'khác'}: ${p.questions.length} câu` +
+          `${p.kind === 'mc' ? `, nhận đáp án ${marked}/${p.questions.length}` : ''}${flagged ? `, <span class="warn">${flagged} câu cần chú ý</span>` : ''}</li>`;
+      });
+      $('ex-summary').innerHTML = a.parts.length ? `<ul>${lines.join('')}</ul>` : '<span class="warn">Không thấy “Câu N.” nào.</span>';
+    } catch (e) { fail($('ex-summary'), e); }
+  });
+
+  $('ex-normalize').addEventListener('click', async () => {
+    if (!$('ex-backup1').checked) { $('ex-norm-out').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
+    try {
+      const layout = $('ex-layout').value;
+      const r = normalize(await body(), { renumber: $('ex-renumber').value || false, labels: $('ex-labels').checked, questionFormat: $('ex-qformat').checked,
+        keepNext: $('ex-keep').checked, layout: layout === 'false' ? false : layout });
+      await io.replaceBody(r.pkg);
+      const rep = r.report;
+      $('ex-norm-out').innerHTML = `<span class="ok">Đã chuẩn hóa ${rep.questions} câu</span>: đánh số lại ${rep.renumbered}, căn lại phương án ${rep.relaid}.` +
+        (rep.skipped.length ? `<ul class="warn">${rep.skipped.slice(0, 8).map((s) => `<li>${esc(s)}</li>`).join('')}</ul>` : '') +
+        `<div class="muted">Hoàn tác bằng Ctrl/Cmd+Z (Word coi đây là một thao tác thay thế toàn bộ nội dung).</div>`;
+    } catch (e) { fail($('ex-norm-out'), e); }
+  });
+
+  const options = () => ({ shuffleQuestions: $('ex-shq').checked, shuffleOptions: $('ex-sho').checked, shuffleStatements: $('ex-shs').checked,
+    stripMarks: $('ex-strip').checked, layout: $('ex-layout').value === 'false' ? 'auto' : $('ex-layout').value });
+
+  $('ex-shuffle').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out'), bar = $('ex-progress');
+    try {
+      const pkg = await body();
+      const n = Number($('ex-n').value), first = Number($('ex-code').value), seed = Number($('ex-seed').value);
+      const target = $('ex-target').value;
+      const versions = [];
+      for (let i = 0; i < n; i++) {
+        const code = String(first + i);
+        const r = shuffleVersion(pkg, { ...options(), seed: seed + i * 7919, code });
+        versions.push({ code, ...r });
+        bar.hidden = false; bar.max = n; bar.value = i + 1;
+      }
+      const table = answerTable(versions.map((v) => ({ code: v.code, answers: v.answers })));
+      lastCsv = table.csv;
+      lastVersions = { pkg, versions: versions.map((v) => ({ code: v.code, answers: v.answers })) };
+      $('ex-copy').disabled = false;
+      const unknown = versions[0].answers.filter((a) => a.value === null).length;
+      let note = '';
+      if (target === 'new') {
+        let opened = 0, fellBack = false;
+        for (const v of versions) {
+          const finalPkg = $('ex-withkey').checked ? appendToBody(v.pkg, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`)) : v.pkg;
+          try { await io.openAsNewDocument(finalPkg); opened++; } catch (e) { await io.insertAtEnd(finalPkg); fellBack = true; }
+        }
+        note = fellBack ? `Word này không cho tạo tài liệu mới từ add-in: đã chèn ${versions.length - opened} đề vào cuối tài liệu hiện tại (mở ${opened} tài liệu mới).` : `Đã mở ${versions.length} tài liệu mới.`;
+      } else if (target === 'append') {
+        for (const v of versions) await io.insertAtEnd(v.pkg);
+        note = `Đã chèn ${versions.length} đề vào cuối tài liệu.`;
+      }
+      const warns = [...new Set(versions.flatMap((v) => [
+        ...(v.report.sharedParts.length ? [`Không trộn thứ tự câu ở: ${v.report.sharedParts.join('; ')} (có câu dùng chung dữ kiện)`] : []),
+        ...(v.report.pinnedQuestions.length ? [`Giữ nguyên phương án các câu: ${[...new Set(v.report.pinnedQuestions)].join(', ')}`] : []),
+        ...v.report.notes]))];
+      out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>` : '') +
+        (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : '') +
+        `<div class="scroll"><table><tbody>${table.groups.filter((g) => g.kind === 'mc').map((g) => `<tr><td><b>${esc(g.code)}</b></td><td>${g.items.map((i) => `${i.number}${esc(i.value ?? '?')}`).join(' ')}</td></tr>`).join('')}</tbody></table></div>`;
+    } catch (e) { fail(out, e); }
+  });
+
+  $('ex-key').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const pkg = await body();
+      const model = parseBody(pkg);
+      const answers = answersOf(model, analyze(model));
+      const table = answerTable([{ code: '', answers }]);
+      lastCsv = table.csv; $('ex-copy').disabled = false;
+      await io.insertAtEnd(wrap(answerTableXml(table.groups)));
+      out.innerHTML = '<span class="ok">Đã chèn bảng đáp án vào cuối tài liệu.</span>';
+    } catch (e) { fail(out, e); }
+  });
+  function wrap(bodyXml) {   // minimal package for body.insertOoxml
+    return `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part></pkg:package>`;
+  }
+  async function exportVersions() {
+    const pkg = lastVersions ? lastVersions.pkg : await body();
+    const list = lastVersions ? lastVersions.versions.slice() : [];
+    if (!list.length) throw new Error('Chưa có mã đề nào: bấm “Tạo đề” trước (hoặc dùng “Chèn bảng đáp án đề hiện tại”).');
+    if ($('ex-orig').checked) { const m = parseBody(pkg); list.unshift({ code: $('ex-origcode').value || '000', answers: answersOf(m, analyze(m)) }); }
+    return list;
+  }
+  $('ex-export').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const list = await exportVersions();
+      const which = $('ex-xlsx').value === 'both' ? ['giasu', 'texcraft'] : [$('ex-xlsx').value];
+      for (const t of which) {
+        const blob = new Blob([answerXlsx(t, list)], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob); a.download = `DapAn-${t === 'giasu' ? 'GIASU.AI.VN' : 'TEXCRAFT'}.xlsx`;
+        document.body.appendChild(a); a.click(); a.remove();
+      }
+      out.innerHTML = '<span class="ok">Đã tạo file Excel.</span> <span class="muted">Nếu Word chặn tải xuống, dùng “Sao chép bảng” rồi dán vào Excel.</span>';
+    } catch (e) { fail(out, e); }
+  });
+  $('ex-tsv').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const list = await exportVersions();
+      const t = $('ex-xlsx').value === 'both' ? 'giasu' : $('ex-xlsx').value;
+      const text = answerTsv(t, list);
+      try { await navigator.clipboard.writeText(text); out.innerHTML = '<span class="ok">Đã sao chép; dán vào ô A1 của Excel.</span>'; } catch { out.innerHTML = `<textarea rows="8">${esc(text)}</textarea>`; }
+    } catch (e) { fail(out, e); }
+  });
+  $('ex-copy').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(lastCsv); $('ex-copy').textContent = 'Đã sao chép'; } catch { $('ex-shuffle-out').innerHTML = `<textarea rows="6">${esc(lastCsv)}</textarea>`; }
+  });
+}

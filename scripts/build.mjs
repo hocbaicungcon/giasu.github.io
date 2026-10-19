@@ -793,6 +793,8 @@ export function build(){
   .sort((a,b)=>(Number(b.priority)-Number(a.priority))||a.loc.localeCompare(b.loc));
  const sitemapXml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${uniqueUrls.map(u=>`  <url>\n    <loc>${u.loc}</loc>\n${u.lastmod?`    <lastmod>${u.lastmod}</lastmod>\n`:""}    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`).join('\n')}\n</urlset>\n`;
  fs.writeFileSync(path.join(out,'sitemap.xml'),sitemapXml);
+  // Word add-in is copied verbatim, after all HTML post-processing and sitemap generation (no banners/minify/analytics).
+ fs.cpSync(path.join(root,'word-addin'),path.join(out,'word-addin'),{recursive:true});
  fs.writeFileSync(path.join(out,'robots.txt'),'User-agent: *\nAllow: /\nDisallow: /o2edu/\nSitemap: https://giasu.ai.vn/sitemap.xml\n');
  console.log(`Built ${posts.length} posts into dist/`);return posts;
 }
