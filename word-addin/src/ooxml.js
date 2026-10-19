@@ -4,6 +4,8 @@
 import { oleToLatex, MtefError } from './mtef.js';
 import { ommlToLatex } from './omml.js';
 import { latexToOmml } from './latex2omml.js';
+import { escapeXml, unescapeXml } from './xml.js';
+import { splitChildren } from './exam.js';
 
 const NS_M = 'http://schemas.openxmlformats.org/officeDocument/2006/math';
 const NS_W = 'http://schemas.openxmlformats.org/wordprocessingml/2006/main';
@@ -122,8 +124,167 @@ export function scanPackage(pkg) {
     try { [eq.latex] = ommlToLatex(m[0]); } catch (e) { eq.error = e.message; }
     equations.push(eq);
   }
+
+  // Quét các công thức LaTeX dạng văn bản ($...$, $$...$$, \(...\), \[...\])
+  const pRegex = /<w:p\b[\s\S]*?<\/w:p>/g;
+  let pMatch;
+  while ((pMatch = pRegex.exec(doc))) {
+    const pXml = pMatch[0];
+    const pPos = pMatch.index;
+    const tMatches = pXml.match(/<w:t\b[^>]*>([^<]*)<\/w:t>/g);
+    if (!tMatches) continue;
+    const pText = tMatches.map((t) => unescapeXml(t.replace(/<[^>]+>/g, ''))).join('');
+    let lMatch;
+    LATEX_RE.lastIndex = 0;
+    while ((lMatch = LATEX_RE.exec(pText))) {
+      const rawInner = lMatch[1] || lMatch[2] || lMatch[3] || lMatch[4];
+      if (!isLikelyLatex(rawInner)) continue;
+      const latex = rawInner.trim();
+      const display = Boolean(lMatch[1] || lMatch[2]);
+      let error = null;
+      try {
+        latexToOmml(latex, { display });
+      } catch (e) {
+        error = e.message;
+      }
+      equations.push({
+        kind: 'latex',
+        pos: pPos + lMatch.index,
+        latex,
+        error,
+        display,
+        raw: lMatch[0]
+      });
+    }
+  }
+
   equations.sort((a, b) => a.pos - b.pos);
   return { equations, parts, doc, docPart, rels };
+}
+
+const LATEX_RE = /(?<!\\)\$\$(?!\s)((?:[^\$\\]|\\.)+?)(?<!\\)\$\$|(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]|(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)|(?<![\\\w\$])\$(?!\s)((?:[^\$\\]|\\.)+?)(?<!\\)\$(?!\d)/g;
+
+function isLikelyLatex(rawInner) {
+  const s = rawInner.trim();
+  if (!s) return false;
+  if (s.includes('\\')) return true;
+  if (/^\d+([.,]\d+)?$/.test(s)) return false;
+  if (/[=+\-*/^_<>≤≥≠≈∈∉⊂⊃∪∩∅√∫∑∏~()]/.test(s)) return true;
+  if (/^[a-zA-Z0-9_'^]+$/.test(s)) return true;
+  return false;
+}
+
+function convertLatexInRuns(runs, options = {}) {
+  let fullText = '';
+  const map = [];
+  runs.forEach((r, rIdx) => {
+    for (let i = 0; i < r.text.length; i++) {
+      map.push({ rIdx, offset: i });
+    }
+    fullText += r.text;
+  });
+
+  const matches = [];
+  let m;
+  LATEX_RE.lastIndex = 0;
+  while ((m = LATEX_RE.exec(fullText)) !== null) {
+    const rawInner = m[1] || m[2] || m[3] || m[4];
+    if (!isLikelyLatex(rawInner)) continue;
+    const latex = rawInner.trim();
+    const display = Boolean(m[1] || m[2]);
+    matches.push({ start: m.index, end: LATEX_RE.lastIndex, latex, display, raw: m[0] });
+  }
+
+  if (!matches.length) return null;
+
+  const out = [];
+  let cur = 0;
+  let converted = 0;
+
+  for (const match of matches) {
+    while (cur < match.start) {
+      const { rIdx } = map[cur];
+      let endRun = cur;
+      while (endRun < match.start && map[endRun].rIdx === rIdx) endRun++;
+      const sliceText = fullText.slice(cur, endRun);
+      out.push(`<w:r>${runs[rIdx].rpr}<w:t xml:space="preserve">${escapeXml(sliceText)}</w:t></w:r>`);
+      cur = endRun;
+    }
+
+    try {
+      const omml = latexToOmml(match.latex, { display: match.display });
+      out.push(omml);
+      converted++;
+    } catch (e) {
+      const firstRIdx = map[match.start].rIdx;
+      out.push(`<w:r>${runs[firstRIdx].rpr}<w:t xml:space="preserve">${escapeXml(match.raw)}</w:t></w:r>`);
+    }
+    cur = match.end;
+  }
+
+  while (cur < fullText.length) {
+    const { rIdx } = map[cur];
+    let endRun = cur;
+    while (endRun < fullText.length && map[endRun].rIdx === rIdx) endRun++;
+    const sliceText = fullText.slice(cur, endRun);
+    out.push(`<w:r>${runs[rIdx].rpr}<w:t xml:space="preserve">${escapeXml(sliceText)}</w:t></w:r>`);
+    cur = endRun;
+  }
+
+  return { xml: out.join(''), converted };
+}
+
+export function convertLatexInPara(paraXml, options = {}) {
+  if (/^<w:p\b[^>]*\/>$/.test(paraXml)) return { xml: paraXml, converted: 0 };
+  const open = /^<w:p\b[^>]*>/.exec(paraXml)[0];
+  const inner = paraXml.slice(open.length, paraXml.length - 6);
+  const children = splitChildren(inner);
+  let convertedTotal = 0;
+  const newChildren = [];
+  let curRunGroup = [];
+
+  function flushRunGroup() {
+    if (!curRunGroup.length) return;
+    const res = convertLatexInRuns(curRunGroup, options);
+    if (res) {
+      newChildren.push(res.xml);
+      convertedTotal += res.converted;
+    } else {
+      for (const r of curRunGroup) newChildren.push(r.raw);
+    }
+    curRunGroup = [];
+  }
+
+  for (const child of children) {
+    if (/^<w:r\b/.test(child)) {
+      if (!/<w:(?:object|drawing|pict|fldChar|sym)\b|<m:oMath\b/.test(child)) {
+        const rprM = /^\s*<w:rPr>[\s\S]*?<\/w:rPr>|^\s*<w:rPr\/>/.exec(child.slice(/^<w:r\b[^>]*>/.exec(child)[0].length));
+        const rpr = rprM ? rprM[0].trim() : '';
+        const tMatches = child.match(/<w:t\b[^>]*>([^<]*)<\/w:t>/g);
+        if (tMatches) {
+          const text = tMatches.map((t) => unescapeXml(t.replace(/<[^>]+>/g, ''))).join('');
+          curRunGroup.push({ raw: child, rpr, text });
+          continue;
+        }
+      }
+    }
+    flushRunGroup();
+    newChildren.push(child);
+  }
+  flushRunGroup();
+
+  if (convertedTotal === 0) return { xml: paraXml, converted: 0 };
+  return { xml: `${open}${newChildren.join('')}</w:p>`, converted: convertedTotal };
+}
+
+export function convertLatexInDoc(doc, options = {}) {
+  let converted = 0;
+  const newDoc = doc.replace(/<w:p\b[\s\S]*?<\/w:p>/g, (pXml) => {
+    const res = convertLatexInPara(pXml, options);
+    converted += res.converted;
+    return res.xml;
+  });
+  return { doc: newDoc, converted };
 }
 
 function paragraphIsEquationOnly(doc, objects) {
@@ -142,52 +303,76 @@ function ensureNamespaces(root) {
 }
 
 /**
- * Replace decodable MathType objects with native equations.
+ * Replace decodable MathType objects and/or LaTeX text with native Word equations.
+ * options.convertMathType: boolean (default true)
+ * options.convertLatex: boolean (default true)
  * options.display: a paragraph holding nothing but one equation becomes a display (centered) equation.
  * options.only: optional Set of equation indexes (into scan().equations) to convert.
- * Returns {pkg, converted, kept: [{reason}], changed}.
+ * Returns {pkg, converted, convertedMathType, convertedLatex, kept: [{reason}], changed}.
  */
 export function convertMathTypeInPackage(pkg, options = {}) {
+  const convertMt = options.convertMathType !== false;
+  const convertLt = options.convertLatex !== false;
   const scan = scanPackage(pkg);
   const { equations, parts, docPart } = scan;
   let doc = scan.doc;
-  const result = { pkg, converted: 0, kept: [], changed: false, details: [] };
-  const targets = equations.map((eq, idx) => ({ eq, idx })).filter(({ eq }) => eq.kind === 'mathtype');
-  const mathObjects = targets.length;
-  const removedRel = new Set();
-  const edits = [];
-  for (const { eq, idx } of targets) {
-    if (options.only && !options.only.has(idx)) continue;
-    if (eq.latex === null) { result.kept.push({ reason: eq.error }); continue; }
-    let omml;
-    try {
-      const display = Boolean(options.display) && paragraphIsEquationOnly(doc, mathObjects);
-      omml = latexToOmml(eq.latex, { display });
-    } catch (e) { result.kept.push({ reason: 'LaTeX→OMML: ' + e.message, latex: eq.latex }); continue; }
-    const run = eq.obj.run;
-    let repl = '';
-    const piece = (inner) => (inner.trim() ? `${run.open}${run.rpr}${inner}</w:r>` : '');
-    repl += piece(run.before) + omml + piece(run.after);
-    edits.push({ start: run.start, end: run.end, repl });
-    removedRel.add(eq.obj.oleId); removedRel.add(eq.obj.imageId);
-    result.converted++;
-    result.details.push({ latex: eq.latex });
+  const result = { pkg, converted: 0, convertedMathType: 0, convertedLatex: 0, kept: [], changed: false, details: [] };
+  let relsXmlUpdated = null;
+  const dropPartsFinal = [];
+
+  if (convertMt) {
+    const targets = equations.map((eq, idx) => ({ eq, idx })).filter(({ eq }) => eq.kind === 'mathtype');
+    const mathObjects = targets.length;
+    const removedRel = new Set();
+    const edits = [];
+    for (const { eq, idx } of targets) {
+      if (options.only && !options.only.has(idx)) continue;
+      if (eq.latex === null) { result.kept.push({ reason: eq.error }); continue; }
+      let omml;
+      try {
+        const display = Boolean(options.display) && paragraphIsEquationOnly(doc, mathObjects);
+        omml = latexToOmml(eq.latex, { display });
+      } catch (e) { result.kept.push({ reason: 'LaTeX→OMML: ' + e.message, latex: eq.latex }); continue; }
+      const run = eq.obj.run;
+      let repl = '';
+      const piece = (inner) => (inner.trim() ? `${run.open}${run.rpr}${inner}</w:r>` : '');
+      repl += piece(run.before) + omml + piece(run.after);
+      edits.push({ start: run.start, end: run.end, repl });
+      removedRel.add(eq.obj.oleId); removedRel.add(eq.obj.imageId);
+      result.converted++;
+      result.convertedMathType++;
+      result.details.push({ latex: eq.latex, kind: 'mathtype' });
+    }
+    if (edits.length) {
+      edits.sort((a, b) => b.start - a.start);
+      for (const e of edits) doc = doc.slice(0, e.start) + e.repl + doc.slice(e.end);
+      let relsPart = parts.get('/word/_rels/document.xml.rels');
+      let relsXml = relsPart ? xmlData(relsPart) : '';
+      for (const id of removedRel) {
+        if (!id || new RegExp(`r:(?:id|embed|link|pict)="${id}"`).test(doc)) continue;
+        const tag = new RegExp(`<Relationship\\b[^>]*\\bId="${id}"[^>]*/>`).exec(relsXml);
+        if (!tag) continue;
+        const target = /\bTarget="([^"]+)"/.exec(tag[0]);
+        relsXml = relsXml.replace(tag[0], '');
+        if (target && !new RegExp(`Target="${target[1]}"`).test(relsXml)) dropPartsFinal.push(resolveTarget(target[1]));
+      }
+      if (relsPart) relsXmlUpdated = relsXml;
+      result.changed = true;
+    }
   }
-  if (!edits.length) return result;
-  edits.sort((a, b) => b.start - a.start);
-  for (const e of edits) doc = doc.slice(0, e.start) + e.repl + doc.slice(e.end);
-  // drop relationships (and their parts) nothing refers to any more
-  let relsPart = parts.get('/word/_rels/document.xml.rels');
-  let relsXml = relsPart ? xmlData(relsPart) : '';
-  const dropParts = [];
-  for (const id of removedRel) {
-    if (!id || new RegExp(`r:(?:id|embed|link|pict)="${id}"`).test(doc)) continue;
-    const tag = new RegExp(`<Relationship\\b[^>]*\\bId="${id}"[^>]*/>`).exec(relsXml);
-    if (!tag) continue;
-    const target = /\bTarget="([^"]+)"/.exec(tag[0]);
-    relsXml = relsXml.replace(tag[0], '');
-    if (target && !new RegExp(`Target="${target[1]}"`).test(relsXml)) dropParts.push(resolveTarget(target[1]));
+
+  if (convertLt) {
+    const ltRes = convertLatexInDoc(doc, options);
+    if (ltRes.converted > 0) {
+      doc = ltRes.doc;
+      result.converted += ltRes.converted;
+      result.convertedLatex = ltRes.converted;
+      result.changed = true;
+    }
   }
+
+  if (!result.changed) return result;
+
   // rebuild the package text: replace document.xml and rels bodies, remove dropped parts
   const replaceBody = (text, part, newXml) => {
     const body = part.body.replace(/(<pkg:xmlData>)[\s\S]*(<\/pkg:xmlData>)/, (_m, a, b) => a + newXml + b);
@@ -196,13 +381,13 @@ export function convertMathTypeInPackage(pkg, options = {}) {
   let out = pkg;
   const newDoc = ensureNamespaces(doc.trimStart());
   out = replaceBody(out, docPart, newDoc);
-  if (relsPart) out = replaceBody(out, relsPart, relsXml);
-  for (const name of dropParts) {
+  let relsPart = parts.get('/word/_rels/document.xml.rels');
+  if (relsPart && relsXmlUpdated !== null) out = replaceBody(out, relsPart, relsXmlUpdated);
+  for (const name of dropPartsFinal) {
     const p = splitParts(out).get(name);
     if (p) out = out.slice(0, p.start) + out.slice(p.end);
   }
   result.pkg = out;
-  result.changed = true;
   return result;
 }
 

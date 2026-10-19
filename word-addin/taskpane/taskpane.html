@@ -14,7 +14,7 @@
   <button role="tab" aria-selected="false" data-tab="replace">Tìm &amp; thay</button>
   <button role="tab" aria-selected="false" data-tab="exam">Đề thi</button>
   <button role="tab" aria-selected="false" data-tab="about">Giới thiệu</button>
-  <button role="tab" aria-selected="false" data-tab="diag" hidden>Chẩn đoán</button>
+  <button role="tab" aria-selected="false" data-tab="diag">Chẩn đoán</button>
 </nav>
 
 <section id="tab-eq" class="active">
@@ -24,7 +24,11 @@
     <label class="inline"><input type="checkbox" id="only-bad"> chỉ hiện công thức không đọc được</label>
     <div class="scroll"><table id="eq-table"><thead><tr><th>#</th><th>Đoạn</th><th>LaTeX</th><th></th></tr></thead><tbody></tbody></table></div>
   </fieldset>
-  <fieldset><legend>2. Chuyển MathType → công thức Word</legend>
+  <fieldset><legend>2. Chuyển sang công thức Word</legend>
+    <div class="row" style="margin-bottom:8px">
+      <label class="inline"><input type="checkbox" id="opt-src-mt" checked> MathType</label>
+      <label class="inline"><input type="checkbox" id="opt-src-latex" checked> LaTeX ($...$, $$...$$, \(...\), \[...\])</label>
+    </div>
     <label><input type="radio" name="scope" value="selection" checked> Đoạn đang chọn</label>
     <label><input type="radio" name="scope" value="all"> Toàn bộ tài liệu</label>
     <label><input type="checkbox" id="opt-display" checked> Đoạn chỉ có một công thức → công thức riêng dòng (căn giữa)</label>

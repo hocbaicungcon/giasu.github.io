@@ -7,14 +7,27 @@ const state = { scanned: null, lastBackup: null, examLoaded: false };
 let lastPreview = [];
 
 // ---------------------------------------------------------------- tabs
-document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click', () => {
+function switchTab(name) {
+  const b = document.querySelector(`nav button[data-tab="${name}"]`);
+  if (!b) return;
   document.querySelectorAll('nav button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
-  document.querySelectorAll('section').forEach((s) => s.classList.toggle('active', s.id === 'tab-' + b.dataset.tab));
-  if (b.dataset.tab === 'exam' && !state.examLoaded) {
+  document.querySelectorAll('section').forEach((s) => s.classList.toggle('active', s.id === 'tab-' + name));
+  if (name === 'exam' && !state.examLoaded) {
     state.examLoaded = true;
     import('./exam-ui.js').then((m) => m.mountExam($('exam-root'), io)).catch((e) => { $('exam-root').textContent = 'Không tải được mô-đun đề thi: ' + e.message; });
   }
+}
+
+function checkUrlTab() {
+  const params = new URLSearchParams(window.location.search);
+  const tab = params.get('tab') || window.location.hash.replace(/^#/, '');
+  if (tab) switchTab(tab);
+}
+
+document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click', () => {
+  switchTab(b.dataset.tab);
 }));
+window.addEventListener('hashchange', checkUrlTab);
 
 // After any write: previews are stale, and "restore" is only safe while paragraph numbering is unchanged.
 function afterWrite(res, backup) {
@@ -44,14 +57,25 @@ async function scan() {
 function renderScan() {
   const s = state.scanned;
   const mt = s.equations.filter((e) => e.kind === 'mathtype');
-  const ok = mt.filter((e) => e.latex !== null).length;
+  const okMt = mt.filter((e) => e.latex !== null).length;
+  const badMt = mt.length - okMt;
+  const lx = s.equations.filter((e) => e.kind === 'latex');
   const native = s.equations.filter((e) => e.kind === 'native');
-  $('scan-summary').innerHTML = `${s.equations.length} công thức: MathType đọc được <b class="ok">${ok}</b>, không đọc được <b class="bad">${mt.length - ok}</b>, công thức Word <b>${native.length}</b>` +
+  $('scan-summary').innerHTML = `${s.equations.length} công thức: MathType <b class="ok">${okMt}</b>${badMt ? ` (lỗi <b class="bad">${badMt}</b>)` : ''}, LaTeX <b class="warn">${lx.length}</b>, Word <b>${native.length}</b>` +
     (s.mapped ? '' : ` · <span class="warn">số đoạn không khớp (${s.paragraphTotal} ≠ ${s.paragraphCount}); chế độ chuyển toàn bộ sẽ đọc từng đoạn</span>`);
   const only = $('only-bad').checked;
-  const rows = s.equations.filter((e) => !only || (e.kind === 'mathtype' && e.latex === null) || (e.kind === 'native' && e.latex === null));
+  const rows = s.equations.filter((e) => !only || e.latex === null);
   $('eq-table').tBodies[0].innerHTML = rows.slice(0, 600).map((e) => {
-    const badge = e.latex === null ? `<span class="badge bad" title="${esc(e.error)}">không đọc được</span>` : e.kind === 'mathtype' ? '<span class="badge ok">MathType</span>' : '<span class="badge native">Word</span>';
+    let badge = '';
+    if (e.latex === null) {
+      badge = `<span class="badge bad" title="${esc(e.error)}">không đọc được</span>`;
+    } else if (e.kind === 'mathtype') {
+      badge = '<span class="badge ok">MathType</span>';
+    } else if (e.kind === 'latex') {
+      badge = '<span class="badge warn">LaTeX</span>';
+    } else {
+      badge = '<span class="badge native">Word</span>';
+    }
     return `<tr data-para="${e.para}"><td>${e.n + 1}</td><td class="muted">${esc(e.excerpt)}</td><td>${e.latex === null ? `<span class="muted">${esc(e.error)}</span>` : `<span class="tex">${esc(e.latex)}</span>`}</td><td>${badge}</td></tr>`;
   }).join('') + (rows.length > 600 ? `<tr><td colspan="4" class="muted">… còn ${rows.length - 600} dòng</td></tr>` : '');
   $('btn-convert').disabled = false;
@@ -66,12 +90,15 @@ $('eq-table').addEventListener('click', (ev) => {
 // ---------------------------------------------------------------- convert
 const writeMode = () => ($('opt-mode').checked ? 'paragraph' : 'content');
 
-async function paragraphsToProcess(scope, onProgress) {
+async function paragraphsToProcess(scope, onProgress, { convertMathType, convertLatex } = {}) {
   if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress) };
   if (!state.scanned) await scan();
   const s = state.scanned;
   if (s.mapped) {
-    const indexes = [...new Set(s.equations.filter((e) => e.kind === 'mathtype' && e.latex !== null).map((e) => e.para))].sort((a, b) => a - b);
+    const kinds = [];
+    if (convertMathType) kinds.push('mathtype');
+    if (convertLatex) kinds.push('latex');
+    const indexes = [...new Set(s.equations.filter((e) => kinds.includes(e.kind) && e.latex !== null).map((e) => e.para))].sort((a, b) => a - b);
     return { scope: { kind: 'all' }, items: await io.readParagraphs({ kind: 'indexes', indexes }, onProgress) };
   }
   return { scope: { kind: 'all' }, items: await io.readParagraphs({ kind: 'all' }, onProgress) };
@@ -79,26 +106,43 @@ async function paragraphsToProcess(scope, onProgress) {
 
 async function convert() {
   if (!$('opt-backup').checked) { $('convert-summary').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
+  const convertMathType = $('opt-src-mt')?.checked ?? true;
+  const convertLatex = $('opt-src-latex')?.checked ?? true;
+  if (!convertMathType && !convertLatex) {
+    $('convert-summary').innerHTML = '<span class="warn">Hãy chọn ít nhất một loại nguồn cần chuyển (MathType hoặc LaTeX).</span>';
+    return;
+  }
   $('btn-convert').disabled = true;
   const bar = $('progress');
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
     $('convert-summary').textContent = 'Đang đọc các đoạn…';
-    const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2));
-    let converted = 0, kept = 0;
+    const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { convertMathType, convertLatex });
+    let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
     const reasons = {}, writes = [], backup = [];
     items.forEach((it) => {
-      const r = convertMathTypeInPackage(it.pkg, { display: $('opt-display').checked });
-      converted += r.converted; kept += r.kept.length;
+      const r = convertMathTypeInPackage(it.pkg, {
+        convertMathType,
+        convertLatex,
+        display: $('opt-display').checked
+      });
+      converted += r.converted;
+      convertedMathType += (r.convertedMathType || 0);
+      convertedLatex += (r.convertedLatex || 0);
+      kept += r.kept.length;
       r.kept.forEach((k) => { reasons[k.reason] = (reasons[k.reason] || 0) + 1; });
       if (r.changed) { writes.push({ index: it.index, pkg: r.pkg }); backup.push({ index: it.index, pkg: it.pkg }); }
     });
-    if (!writes.length) { $('convert-summary').innerHTML = `Không có gì để chuyển. Giữ nguyên MathType: ${kept}.`; return; }
+    if (!writes.length) { $('convert-summary').innerHTML = `Không có gì để chuyển.${kept ? ` Giữ nguyên: ${kept}.` : ''}`; return; }
     $('convert-summary').textContent = `Đang ghi ${writes.length} đoạn…`;
     const res = await io.writeParagraphs(scope, writes, writeMode(), (d, t) => progress(bar, t + d, t * 2));
     afterWrite(res, { scope, items: backup, mode: writeMode() });
     const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
-    $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${converted}</b> công thức; <b class="${kept ? 'warn' : ''}">giữ nguyên MathType ${kept}</b>.</p>` +
+    const details = [];
+    if (convertedMathType) details.push(`${convertedMathType} MathType`);
+    if (convertedLatex) details.push(`${convertedLatex} LaTeX`);
+    const detailStr = details.length ? ` (${details.join(', ')})` : '';
+    $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${converted}</b> công thức${detailStr}; <b class="${kept ? 'warn' : ''}">giữ nguyên ${kept}</b>.</p>` +
       (reasonList ? `<ul>${reasonList}</ul>` : '') +
       (res.before !== res.after ? `<p class="warn">Số đoạn thay đổi ${res.before} → ${res.after}: Word có thể đã thêm đoạn trống. Nút “Khôi phục” bị tắt (không an toàn); hãy dùng Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao.</p>` : '');
   } catch (e) {
@@ -111,7 +155,7 @@ $('btn-restore').addEventListener('click', async () => {
   if (!b) return;
   try {
     await io.writeParagraphs(b.scope, b.items, b.mode, (d, t) => progress($('progress'), d, t));
-    $('convert-summary').innerHTML = '<span class="ok">Đã khôi phục các đoạn gốc (MathType).</span>';
+    $('convert-summary').innerHTML = '<span class="ok">Đã khôi phục các đoạn gốc.</span>';
     $('btn-restore').disabled = true;
   } catch (e) { $('convert-summary').innerHTML = `<span class="bad">Không khôi phục được: ${esc(e.message)}</span>`; }
 });
@@ -202,5 +246,6 @@ async function boot() {
     }
     document.body.prepend(note);
   }
+  checkUrlTab();
 }
 boot();

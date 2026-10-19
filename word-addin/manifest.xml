@@ -35,14 +35,14 @@
           <FunctionFile resid="Url"/>
           <ExtensionPoint xsi:type="PrimaryCommandSurface">
             <OfficeTab id="TabHome">
-              <Group id="TexCraftGroup">
-                <Label resid="Group"/>
+              <Group id="TexCraftHomeGroup">
+                <Label resid="TabTexCraft"/>
                 <Icon>
                   <bt:Image size="16" resid="Icon16"/>
                   <bt:Image size="32" resid="Icon32"/>
                   <bt:Image size="80" resid="Icon80"/>
                 </Icon>
-                <Control xsi:type="Button" id="TexCraftOpen">
+                <Control xsi:type="Button" id="TexCraftHomeBtn">
                   <Label resid="Button"/>
                   <Supertip>
                     <Title resid="Button"/>
@@ -60,6 +60,113 @@
                 </Control>
               </Group>
             </OfficeTab>
+            <CustomTab id="TexCraftCustomTab">
+              <Group id="TexCraftGroupEq">
+                <Label resid="GroupEq"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraftBtnEq">
+                  <Label resid="BtnEq"/>
+                  <Supertip>
+                    <Title resid="BtnEq"/>
+                    <Description resid="DescEq"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16"/>
+                    <bt:Image size="32" resid="Icon32"/>
+                    <bt:Image size="80" resid="Icon80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="UrlEq"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraftBtnReplace">
+                  <Label resid="BtnReplace"/>
+                  <Supertip>
+                    <Title resid="BtnReplace"/>
+                    <Description resid="DescReplace"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16"/>
+                    <bt:Image size="32" resid="Icon32"/>
+                    <bt:Image size="80" resid="Icon80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="UrlReplace"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroupExam">
+                <Label resid="GroupExam"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraftBtnExam">
+                  <Label resid="BtnExam"/>
+                  <Supertip>
+                    <Title resid="BtnExam"/>
+                    <Description resid="DescExam"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16"/>
+                    <bt:Image size="32" resid="Icon32"/>
+                    <bt:Image size="80" resid="Icon80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="UrlExam"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroupTools">
+                <Label resid="GroupTools"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraftBtnDiag">
+                  <Label resid="BtnDiag"/>
+                  <Supertip>
+                    <Title resid="BtnDiag"/>
+                    <Description resid="DescDiag"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16"/>
+                    <bt:Image size="32" resid="Icon32"/>
+                    <bt:Image size="80" resid="Icon80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="UrlDiag"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraftBtnAbout">
+                  <Label resid="BtnAbout"/>
+                  <Supertip>
+                    <Title resid="BtnAbout"/>
+                    <Description resid="DescAbout"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16"/>
+                    <bt:Image size="32" resid="Icon32"/>
+                    <bt:Image size="80" resid="Icon80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="UrlAbout"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Label resid="TabTexCraft"/>
+            </CustomTab>
           </ExtensionPoint>
         </DesktopFormFactor>
       </Host>
@@ -72,14 +179,32 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Url" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html"/>
+        <bt:Url id="UrlEq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=eq"/>
+        <bt:Url id="UrlReplace" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=replace"/>
+        <bt:Url id="UrlExam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=exam"/>
+        <bt:Url id="UrlAbout" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=about"/>
+        <bt:Url id="UrlDiag" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=diag"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
-        <bt:String id="Group" DefaultValue="TexCraft"/>
-        <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
+        <bt:String id="Button" DefaultValue="TexCraft"/>
+        <bt:String id="TabTexCraft" DefaultValue="TexCraft"/>
+        <bt:String id="GroupEq" DefaultValue="Công thức"/>
+        <bt:String id="BtnEq" DefaultValue="Quét &amp; Chuyển"/>
+        <bt:String id="BtnReplace" DefaultValue="Tìm &amp; Thay"/>
+        <bt:String id="GroupExam" DefaultValue="Đề thi"/>
+        <bt:String id="BtnExam" DefaultValue="Chuẩn hóa đề"/>
+        <bt:String id="GroupTools" DefaultValue="Công cụ"/>
+        <bt:String id="BtnDiag" DefaultValue="Chẩn đoán"/>
+        <bt:String id="BtnAbout" DefaultValue="Giới thiệu"/>
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType trong Word; chuẩn hóa và trộn đề."/>
+        <bt:String id="DescEq" DefaultValue="Quét và chuyển đổi công thức MathType, LaTeX sang công thức Word."/>
+        <bt:String id="DescReplace" DefaultValue="Tìm và thay thế LaTeX trong toàn bộ công thức."/>
+        <bt:String id="DescExam" DefaultValue="Trộn và chuẩn hóa câu hỏi trắc nghiệm đề thi."/>
+        <bt:String id="DescDiag" DefaultValue="Chẩn đoán môi trường Word và kiểm tra cấu trúc OOXML."/>
+        <bt:String id="DescAbout" DefaultValue="Thông tin về tác giả và phần mềm TexCraft."/>
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
