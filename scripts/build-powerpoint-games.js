@@ -383,6 +383,7 @@ async function postProcess(file, nums) {
   for (const f of names) {
     let x = await zip.file(f).async('string');
     x = x.replace(/<a:hlinkClick(?![^>]*\/>)[^>]*>[\s\S]*?<\/a:hlinkClick>/g, '');
+    x = x.replace(/ u="sng"/g, '');
     const n = Number(f.match(/slide(\d+)\.xml/)[1]);
     if (nums.includes(n)) {
       if (!x.includes('</p:clrMapOvr>')) throw new Error('Không tìm thấy clrMapOvr ở ' + f);
