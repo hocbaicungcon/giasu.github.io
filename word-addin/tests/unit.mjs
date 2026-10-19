@@ -134,6 +134,22 @@ test('exam: question labels "Câu N." / "Bài N." / "bài N:" are recognised and
   renumberQuestionInParagraph(b[0], 1, { word: 'Câu' }); renumberQuestionInParagraph(b[2], 2, { word: 'Bài' });
   assert.ok(/^Câu 1\./.test(paragraphText(b[0])) && /^Bài 2\./.test(paragraphText(b[2])));
 });
+test('editor: equation under a collapsed cursor is found through the paragraph', async () => {
+  const { pickEquation } = await import('../src/cursor-eq.js');
+  const { bodyPackage } = await import('../src/worksheet-docx.js');
+  const { latexToOmml } = await import('../src/latex2omml.js');
+  const para = (...eqs) => `<w:p><w:r><w:t>x </w:t></w:r>${eqs.map((e) => latexToOmml(e)).join('<w:r><w:t> y </w:t></w:r>')}</w:p>`;
+  const empty = bodyPackage('<w:p/>');
+  const p3 = bodyPackage(para('a+b', 'c^2', '\\frac{1}{2}'));
+  // collapsed cursor: nothing selected -> the single equation of the paragraph
+  assert.equal(pickEquation({ selPkg: empty, paraPkg: bodyPackage(para('a+b')) }).eq.latex.replace(/\s/g, ''), 'a+b');
+  // several equations: the one at/just before the cursor (2 equations lie before it)
+  const r = pickEquation({ selPkg: empty, paraPkg: p3, beforePkg: bodyPackage(para('a+b', 'c^2')) });
+  assert.equal(r.how, 'cursor'); assert.equal(r.index, 1); assert.equal(r.eq.latex.replace(/\s/g, ''), 'c^2');
+  // a selection that holds an equation wins
+  assert.equal(pickEquation({ selPkg: bodyPackage(para('c^2')), paraPkg: p3 }).how, 'selection');
+  assert.equal(pickEquation({ selPkg: empty, paraPkg: empty }).eq, null);
+});
 test('Solids: hidden (dashed) edges are exactly the ones behind the front faces', async () => {
   const g = await import('../src/figures/geometry.js');
   const dashed = (r) => r.scene.items.filter((it) => it.t === 'line' && it.dash).length;

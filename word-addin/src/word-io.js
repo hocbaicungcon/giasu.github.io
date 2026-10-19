@@ -36,6 +36,23 @@ export async function readSelection() {
   });
 }
 
+/** OOXML around the cursor: the selection, its first paragraph, and that paragraph's start up to the selection start. */
+export async function readCursorContext() {
+  return run(async (context) => {
+    const sel = context.document.getSelection();
+    const selOx = sel.getOoxml();
+    const paras = sel.paragraphs;
+    paras.load('items');
+    await context.sync();
+    const para = paras.items[0];
+    const paraOx = para ? para.getOoxml() : null;
+    let beforeOx = null;
+    try { if (para) beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml(); } catch { beforeOx = null; }
+    await context.sync();
+    return { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: beforeOx ? beforeOx.value : null };
+  });
+}
+
 /** Font size (points) at the cursor / of the selection; 0 when it is mixed or unknown. */
 export async function selectionFontSize() {
   return run(async (context) => {

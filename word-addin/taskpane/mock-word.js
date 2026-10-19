@@ -24,6 +24,7 @@ export async function install(url) {
     index: i,
     getOoxml() { return { value: packageWith([bodyParts().paras[i]]) }; },
     getRange() { return this; },
+    expandTo() { return this; },
     insertOoxml(newPkg) {
       const parts = bodyParts();
       const nd = /<pkg:part pkg:name="\/word\/document.xml"[\s\S]*?<pkg:xmlData>([\s\S]*)<\/pkg:xmlData>/.exec(newPkg)[1];
@@ -54,6 +55,7 @@ export async function install(url) {
             setDoc(cur.head + (where === 'Replace' ? paras : cur.paras.concat(paras)).join('') + cur.tail);
           } },
         getSelection: () => ({
+          getRange() { return makeParagraph(state.selection[0]); },
           paragraphs: collection(() => state.selection.filter((i) => i < bodyParts().paras.length)),
           getOoxml: () => makeParagraph(state.selection[0]).getOoxml(),
           insertOoxml: (newPkg) => makeParagraph(state.selection[0]).insertOoxml(newPkg),
@@ -63,5 +65,5 @@ export async function install(url) {
       sync: async () => {},
     }),
   };
-  window.__mockDoc = { get pkg() { return pkg; }, paragraphs: () => bodyParts().paras };
+  window.__mockDoc = { select: (i) => { state.selection = [i]; }, get pkg() { return pkg; }, paragraphs: () => bodyParts().paras };
 }

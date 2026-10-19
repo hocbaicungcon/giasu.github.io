@@ -2,6 +2,7 @@ import { mountMtSettings, mtOptions, mtConvertOptions } from './mt-settings.js';
 import * as io from '../src/word-io.js';
 import { attachLatexAutocomplete } from './latex-autocomplete.js';
 import { mountEditorToolbar } from './editor-toolbar.js';
+import { pickEquation } from '../src/cursor-eq.js';
 import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
 
 const $ = (id) => document.getElementById(id);
@@ -233,38 +234,29 @@ async function loadFormulaFromWord(showNotice = true) {
   const statusEl = $('editor-status');
   if (statusEl) statusEl.textContent = 'Đang đọc công thức từ Word…';
   try {
-    let pkg = null;
-    if (io.readSelection) {
-      try {
-        const sel = await io.readSelection();
-        if (sel?.pkg) pkg = sel.pkg;
-      } catch { /* ignore */ }
+    let ctx;
+    try { ctx = await io.readCursorContext(); } catch (e) {
+      // older Word / mock without ranges: selection, then its paragraph
+      ctx = {};
+      try { ctx.selPkg = (await io.readSelection())?.pkg; } catch { /* ignore */ }
+      try { ctx.paraPkg = (await io.readParagraphs({ kind: 'selection' }))[0]?.pkg; } catch { /* ignore */ }
     }
-    if (!pkg) {
-      const items = await io.readParagraphs({ kind: 'selection' });
-      if (items.length > 0) pkg = items[0].pkg;
-    }
-    if (!pkg) throw new Error('Không đọc được vùng chọn từ Word.');
-
-    const scanned = scanPackage(pkg);
-    const valid = scanned.equations.filter((e) => e.latex !== null);
-    if (valid.length === 0) {
-      if (scanned.equations.length > 0 && scanned.equations[0].error) {
-        throw new Error(`Công thức bị lỗi: ${scanned.equations[0].error}`);
-      }
-      if (showNotice) {
-        if (statusEl) statusEl.innerHTML = '<span class="warn">Không tìm thấy công thức nào tại vị trí con trỏ / vùng chọn. Bạn có thể tự soạn bên dưới.</span>';
-      } else {
-        if (statusEl) statusEl.textContent = 'Đặt con trỏ tại công thức trong Word rồi bấm “Lấy công thức”, hoặc soạn mới bên dưới.';
-      }
+    if (!ctx.selPkg && !ctx.paraPkg) throw new Error('Không đọc được vùng chọn từ Word.');
+    const r = pickEquation(ctx);
+    if (!r.eq) {
+      if (r.errors && r.errors.length && r.found) throw new Error(`Công thức bị lỗi: ${r.errors[0]}`);
+      if (statusEl) statusEl.innerHTML = showNotice
+        ? '<span class="warn">Không tìm thấy công thức nào tại con trỏ / vùng chọn (đoạn này không có công thức). Bạn có thể tự soạn bên dưới.</span>'
+        : 'Đặt con trỏ tại công thức trong Word rồi bấm “Lấy công thức”, hoặc soạn mới bên dưới.';
       return;
     }
-    const target = valid[0];
+    const target = r.eq;
     $('editor-latex').value = target.latex;
     if ($('editor-display')) $('editor-display').checked = !target.inline;
     renderEditorPreview();
     const kindLabel = target.kind === 'mathtype' ? 'MathType' : target.kind === 'native' ? 'Word Equation' : 'LaTeX';
-    if (statusEl) statusEl.innerHTML = `<span class="ok">Đã nạp công thức (${kindLabel}):</span> <code style="font-size:11px">${esc(target.latex)}</code>`;
+    const where = r.count > 1 ? ` — công thức ${r.index + 1}/${r.count}${r.how === 'cursor' ? ' (gần con trỏ nhất)' : ''}` : '';
+    if (statusEl) statusEl.innerHTML = `<span class="ok">Đã nạp công thức (${kindLabel})${where}:</span> <code style="font-size:11px">${esc(target.latex)}</code>`;
   } catch (e) {
     if (statusEl) statusEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
   }
@@ -368,13 +360,10 @@ function onSelectionChanged() {
   autoTimer = setTimeout(async () => {
     if (document.activeElement === $('editor-latex')) return;   // the user is typing: do not overwrite
     try {
-      const sel = await io.readSelection();
-      const pkg = sel?.pkg || sel;
-      if (!pkg || typeof pkg !== 'string') return;
-      const eqs = scanPackage(pkg).equations.filter((e) => e.latex !== null);
-      if (eqs.length !== 1) return;   // nothing, or several equations selected: leave the editor alone
-      if (eqs[0].latex === lastAutoSig && $('editor-latex').value === eqs[0].latex) return;
-      lastAutoSig = eqs[0].latex;
+      const r = pickEquation(await io.readCursorContext());
+      if (!r.eq) return;   // no equation here: leave the editor alone
+      if (r.eq.latex === lastAutoSig && $('editor-latex').value === r.eq.latex) return;
+      lastAutoSig = r.eq.latex;
       await loadFormulaFromWord(false);
     } catch { /* selection not readable: ignore */ }
   }, 350);
