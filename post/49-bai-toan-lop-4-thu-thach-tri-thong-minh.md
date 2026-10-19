@@ -13,9 +13,6 @@ tags:
 - Thử thách trí thông minh
 grade: 4
 ---
-
-# 49 BÀI TOÁN LỚP 4
-
 GIA SƯ THÔNG MINH xin giới thiệu 54 bài toán lớp 4, các dạng toán đố, thử thách trí thông minh, toán suy luận dành cho HSG lớp 4. Các bài toán có lời giải được chúng tôi sưu tầm từ nhiều nguồn khác nhau.
 
 **Bài 1 : GIỎI CẢ HAI MÔN**

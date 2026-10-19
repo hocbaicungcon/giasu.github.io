@@ -1,8 +1,6 @@
 ---
-title: Hình chóp, hình lăng trụ, hình hộp là gì?
-description: Hình chóp là gì? Các khái niệm hình tứ diện, hình chóp đều, hình chóp
-  cụt, hình chóp cụt đều, hình lăng trụ là gì? hình lăng trụ đứng, hình lăng trụ đều.
-  Hình hộp là gì? Hình hộp đứng, Hình hộp chữ nhật, Hình lập phương.
+title: 'Hình Chóp, Hình Lăng Trụ, Hình Hộp Là Gì? Tổng Hợp Khái Niệm và Tính Chất'
+description: 'Tổng hợp định nghĩa, tính chất và bảng so sánh các khối đa diện: hình chóp, hình chóp cụt, hình tứ diện, hình lăng trụ, hình hộp và hình lập phương.'
 category: Toán học
 type: Bài học
 date: '2024-10-02'
@@ -10,153 +8,141 @@ tags:
 - Hình học không gian
 - Hình lăng trụ
 - Hình chóp
+- Toán 11
 grade: 11
 ---
 
-Hình chóp, hình lăng trụ, hình hộp là những hình cơ bản trong hình học không gian. Đa số các bài toán ở cấp THPT đều làm việc trên các hình này. Để có thể giải quyết được các bài toán không gian, bước đầu chúng ta ta phải hiểu được thế nào là hình chóp, hình lăng trụ hay hình hộp.
+**Hình chóp, hình lăng trụ, hình hộp** là các khối đa diện cơ bản nhất trong chương trình Hình học không gian môn [Toán lớp 11](/lop-11.html) và [Toán lớp 12](/lop-12.html). Hầu hết các bài toán tính góc, khoảng cách, diện tích xung quanh và thể tích khối đa diện đều xoay quanh các hình khối này. 
 
-Xem thêm [38+ tài liệu hình học không gian 11 hay nhất](/bai-viet/tong-hop-tai-lieu-hinh-hoc-khong-gian-11.html)
+Dưới đây là hệ thống định nghĩa, tính chất và bảng so sánh trực quan toàn diện nhất.
 
-## 1. Hình chóp
+Xem thêm: [Tổng hợp tài liệu hình học không gian 11 ôn thi THPT](/bai-viet/tong-hop-tai-lieu-hinh-hoc-khong-gian-11.html)
 
-### Hình chóp là gì?
+---
 
-Cho đa giác $A_1A_2A_3… A_n$ nằm trong mặt phẳng $(P)$ và một điểm $S$ nằm ngoài mặt phẳng $(P).$ Nối $S$ với các đỉnh của đa giác ta được $n$ miền tam giác $SA_1A_2, SA_2A_3,…, SA_nA_1.$ Hình tạo bởi $n$ tam giác đó và đa giác $A_1A_2A_3… A_n$ gọi là hình chóp và kí hiệu là $S.A_1A_2A_3… A_n.$
+## 1. Bảng so sánh đặc điểm các khối đa diện cơ bản
 
-Trong đó:
+| Loại hình khối | Mặt đáy | Mặt bên | Cạnh bên | Vị trí chân đường cao |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hình chóp tổng quát** | 1 đáy là đa giác $n$ cạnh | $n$ tam giác chung đỉnh $S$ | Đồng quy tại đỉnh $S$ | Kẻ vuông góc từ đỉnh $S$ xuống đáy |
+| **Hình chóp đều** | Đa giác đều | Các tam giác cân bằng nhau | Bằng nhau | Trùng với tâm đường tròn ngoại tiếp đáy |
+| **Hình tứ diện** | 4 mặt đều là tam giác | Bất kì mặt nào cũng là đáy | 6 cạnh | Tùy thuộc dạng tứ diện |
+| **Hình chóp cụt đều** | 2 đáy là đa giác đều song song | Các hình thang cân bằng nhau | Có độ dài bằng nhau | Nối tâm của hai đáy |
+| **Hình lăng trụ** | 2 đáy là đa giác bằng nhau ($P \parallel Q$) | Các hình bình hành | Song song và bằng nhau | Kẻ vuông góc từ một đỉnh thuộc đáy trên xuống đáy dưới |
+| **Hình lăng trụ đứng** | 2 đa giác bằng nhau | Các hình chữ nhật | Vuông góc với hai đáy | Chính là các cạnh bên ($h = l$) |
+| **Hình lăng trụ đều** | 2 đa giác đều bằng nhau | Các hình chữ nhật bằng nhau | Vuông góc với hai đáy | Chính là các cạnh bên |
+| **Hình hộp** | 2 đáy là hình bình hành | 4 hình bình hành | Song song và bằng nhau | Kẻ từ đáy trên xuống đáy dưới |
+| **Hình hộp chữ nhật** | 2 đáy là hình chữ nhật | 4 hình chữ nhật | Vuông góc với hai đáy | Độ dài cạnh bên ($a, b, c$) |
+| **Hình lập phương** | 2 hình vuông bằng nhau | 4 hình vuông bằng nhau | Bằng nhau ($12$ cạnh bằng $a$) | Độ dài cạnh lập phương ($a$) |
 
-- $S$ được goi là đỉnh của hình chóp;
+---
 
-- $A_1A_2A_3… A_n$ là mặt đáy của hình chóp;
+## 2. Hình chóp
 
-- $SA_1, SA_2,…, SA_n$ là các cạnh bên của hình chóp;
+### 2.1. Hình chóp là gì?
+Cho đa giác $A_1A_2A_3\dots A_n$ nằm trong mặt phẳng $(P)$ và một điểm $S$ nằm ngoài $(P)$. Nối $S$ với các đỉnh của đa giác ta được $n$ tam giác $SA_1A_2, SA_2A_3, \dots, SA_nA_1$. Hình tạo bởi $n$ tam giác đó và đa giác đáy gọi là **hình chóp**, kí hiệu là $S.A_1A_2\dots A_n$.
 
-- A1A2, A2A3,…, AnA1 là các cạnh đáy của hình chiếu;
+- **Đỉnh:** Điểm $S$.
+- **Mặt đáy:** Đa giác $A_1A_2\dots A_n$.
+- **Các cạnh bên:** $SA_1, SA_2, \dots, SA_n$.
+- **Các cạnh đáy:** $A_1A_2, A_2A_3, \dots, A_nA_1$.
+- **Các mặt bên:** Các miền tam giác $SA_1A_2, SA_2A_3, \dots, SA_nA_1$.
+- **Đường cao:** Đoạn thẳng kẻ từ đỉnh $S$ vuông góc với mặt phẳng đáy.
 
-- Các miền tam giác $SA_1A_2, SA_2A_3,…, SA_nA_1$ là mặt bên của hình chóp.
+![Hình chóp ngũ giác](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-chop-ngu-giac.png)
 
-Cách gọi tên hình chóp bằng tên của đỉnh và mặt đáy, ví dụ như hình vẽ sau là hình chóp $S.ABCDE$ hoặc cụ thể hơn là hình chóp ngũ giác $S.ABCDE$
+### 2.2. Hình tứ diện
+Cho bốn điểm $A, B, C, D$ không đồng phẳng. Hình gồm bốn miền tam giác $ABC, BCD, CDA, ABD$ gọi là **hình tứ diện**, kí hiệu là $ABCD$.
+- Tứ diện có 4 đỉnh, 4 mặt và 6 cạnh.
+- Hai cạnh không có điểm chung gọi là **hai cạnh đối nhau** (ví dụ $AB$ và $CD$, $AC$ và $BD$, $AD$ và $BC$).
+- Điểm khác biệt lớn nhất: Hình chóp phân biệt rõ mặt đáy và mặt bên; trong khi tứ diện thì bất kì mặt nào cũng có thể coi là mặt đáy.
 
-![Hình chóp, hình lăng trụ, hình hộp là gì? 2](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-chop-ngu-giac.png)
+![Hình tứ diện](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-tu-dien.png)
 
-- Đường cao của hình chóp là đường vuông góc kẻ từ đỉnh của hình chóp đến mặt đáy.
+### 2.3. Hình chóp đều
+- **Định nghĩa:** Hình chóp đều là hình chóp có đáy là đa giác đều và các cạnh bên bằng nhau.
+- **Tính chất trọng tâm:** Trong hình chóp đều, chân đường cao hạ từ đỉnh trùng với **tâm của đường tròn ngoại tiếp đa giác đáy**.
+- Các mặt bên của hình chóp đều là **các tam giác cân bằng nhau**.
+- Góc tạo bởi các cạnh bên với mặt đáy đều bằng nhau; góc tạo bởi các mặt bên với mặt đáy đều bằng nhau.
 
-Xem thêm [Các phương pháp tính thể tích khối chóp](/bai-viet/tinh-the-tich-khoi-chop.html)
+![Hình chóp đều](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-chop-deu.png)
 
-### Hình tứ diện
+---
 
-Cho bốn điểm A, B, C, D không đồng phẳng. Hình gồm bốn tam giác ABC, BCD, CDA, ABD gọi là tứ diện ABCD.
+## 3. Hình chóp cụt
 
-- A, B, C, D là các đỉnh của tứ diện;
+### 3.1. Hình chóp cụt là gì?
+Cho hình chóp $S.A_1A_2\dots A_n$. Một mặt phẳng $(P)$ song song với mặt phẳng đáy cắt tất cả các cạnh bên $SA_1, SA_2, \dots, SA_n$ lần lượt tại $A'_1, A'_2, \dots, A'_n$.
 
-- AB, BC, CD, CA là các cạnh bên của tứ diện;
+Phần hình chóp bị giới hạn giữa mặt đáy và mặt cắt $(P)$ được gọi là **hình chóp cụt**:
+- **Hai đáy:** Đa giác $A_1A_2\dots A_n$ (đáy lớn) và đa giác $A'_1A'_2\dots A'_n$ (đáy nhỏ) là hai đa giác đồng dạng nằm trong hai mặt phẳng song song.
+- **Các mặt bên:** Các tứ giác $A_1A'_1A'_2A_2, \dots$ đều là các hình thang.
 
-- Các tam giác ABC, BCD, CDA, ABD là các mặt bên của tứ diện;
+### 3.2. Hình chóp cụt đều
+Hình chóp cụt cắt ra từ một hình chóp đều bởi một mặt phẳng song song với đáy được gọi là **hình chóp cụt đều**.
 
-- Hai cạnh không đi qua một đỉnh được gọi là hai cạnh đối nhau;
+**Tính chất:**
+- Hai đáy là hai đa giác đều đồng dạng nằm trong hai mặt phẳng song song.
+- Các mặt bên là **các hình thang cân bằng nhau**.
+- Các cạnh bên có độ dài bằng nhau.
+- Đoạn thẳng nối tâm của hai mặt đáy chính là **đường cao** của hình chóp cụt đều.
 
-- Đỉnh không nằm trên một mặt được gọi là đỉnh đối diện với mặt đó.
+---
 
-![Hình chóp, hình lăng trụ, hình hộp là gì? 3](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-tu-dien.png)
+## 4. Hình lăng trụ
 
-Hình chóp và hình tứ diện đều có 4 đỉnh, 4 mặt và 6 cạnh như nhau, nhưng hình chóp có phân biệt mặt bên và mặt đáy, trong khi hình tứ diện thì không quy ước gọi đâu là mặt đáy, đâu là mặt bên.
+### 4.1. Hình lăng trụ là gì?
+Hình lăng trụ gồm hai đáy là hai đa giác bằng nhau nằm trên hai mặt phẳng song song, và các mặt bên là những hình bình hành.
+- **Hai mặt đáy:** Bằng nhau và song song với nhau.
+- **Các mặt bên:** Là các hình bình hành.
+- **Các cạnh bên:** Song song và bằng nhau.
+- Kí hiệu: $A_1A_2\dots A_n.A'_1A'_2\dots A'_n$.
 
-### Hình chóp đều
+![Hình lăng trụ](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-lang-tru.png)
 
-- Định nghĩa: Hình chóp đều là hình chóp có các cạnh bên bằng nhau và mặt đáy là một đa giác đều.
+### 4.2. Hình lăng trụ đứng
+- Là hình lăng trụ có **các cạnh bên vuông góc với các mặt phẳng đáy**.
+- **Tính chất:** Độ dài cạnh bên bằng chính chiều cao của lăng trụ ($h = l$). Các mặt bên đều là **hình chữ nhật** và vuông góc với hai đáy.
 
-- Tính chất: Trong hình chóp đều, chân đường cao của hình chóp trùng với tâm đường tròn ngoại tiếp đa giác đáy.
+![Hình lăng trụ đứng](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-lang-tru-dung.png)
 
-![hình chóp đều](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-chop-deu.png)
+### 4.3. Hình lăng trụ đều
+- Là hình lăng trụ đứng có **đáy là đa giác đều** (tam giác đều, hình vuông, lục giác đều...).
+- **Tính chất:** Vừa có cạnh bên vuông góc với đáy, vừa có các mặt bên là **những hình chữ nhật bằng nhau**.
 
-Hình chóp đều có đáy lần lượt là tam giác đều, hình vuông (tứ giác đều) và lục giác đều
+---
 
-Như vậy, từ định nghĩa suy ra:
+## 5. Hình hộp
 
-- Hình chóp là hình chóp đều khi và chỉ khi đáy của nó là đa giác đều và chân đường cao của nó trùng với tâm của đa giác đáy.
+### 5.1. Hình hộp là gì?
+Hình lăng trụ có đáy là **hình bình hành** được gọi là **hình hộp**.
+- Hình hộp có tất cả 6 mặt, mỗi mặt đều là một hình bình hành.
+- Hai mặt đối diện nhau là hai hình bình hành bằng nhau và nằm trên hai mặt phẳng song song.
 
-- Hình chóp là hình chóp đều khi và chỉ khi đáy của nó là đa giác đều và các cạnh bên tạo với mặt đáy các góc bằng nhau.
+![Hình hộp](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-hop.png)
 
-## 2. Hình chóp cụt
+### 5.2. Hình hộp đứng
+Hình hộp đứng là hình lăng trụ đứng có đáy là hình bình hành. Bốn mặt bên của hình hộp đứng là các hình chữ nhật.
 
-### Hình chóp cụt
+### 5.3. Hình hộp chữ nhật
+Hình hộp chữ nhật là hình hộp đứng có **đáy là hình chữ nhật**.
+- Tất cả 6 mặt của hình hộp chữ nhật đều là hình chữ nhật.
+- Có 3 kích thước: chiều dài $a$, chiều rộng $b$ và chiều cao $c$.
+- Đường chéo hình hộp chữ nhật: $d = \sqrt{a^2 + b^2 + c^2}$.
 
- 
+![Hình hộp chữ nhật](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-hop-chu-nhat.jpeg)
 
-### Hình chóp cụt đều
+### 5.4. Hình lập phương
+Hình lập phương là hình hộp có **tất cả 6 mặt đều là hình vuông bằng nhau**.
+- Tất cả 12 cạnh đều có độ dài bằng nhau ($a$).
+- Đường chéo hình lập phương: $d = a\sqrt{3}$.
+- Thể tích: $V = a^3$; Diện tích toàn phần: $S_{tp} = 6a^2$.
 
-Cho hình chóp cụt đều $S.A_1A_2…A_n.$ Một mặt phẳng $(P)$ song song với mặt đáy cắt các cạnh bên $SA_1, SA_2,…,SA_n$ lần lượt tại $A’_1, A’_2,…, A’_n.$ Phần hình  nằm giữa đáy và mặt phẳng $(P)$ gọi là hình chóp đều.
+![Hình lập phương](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-lap-phuong.png)
 
-- Đa giác $A_1A_2A_3… A_n$ và thiết diện $A’_1A’_2A’_3… A’_n$ gọi là hai mặt đáy;
+---
 
-- Các hình thang cân $A_1A’_1A’_2A_2,…, A_nA’_nA’_1A_1$ là các mặt bên;
-
-- Đoạn thẳng nối hai tâm O và O’ của hai đáy gọi là đường cao của hình chóp cụt đều.
-
-## 3. Hình lăng trụ
-
-### Hình lăng trụ là gì?
-
-Hình hợp bởi các hình bình hành $A_1A’_1A’_2A_2,A_2A_3A’_3A’_2…, A_nA’_nA’_1A_1$ và hai miền đa giác $A_1A_2A_3… A_n; A’_1A’_2A’_3… A’_n$ nằm trong hai mặt phẳng song song đươc goi là hình lăng trụ.
-
-- Các hình bình hành $A_1A’_1A’_2A_2,A_2A_3A’_3A’_2…, A_nA’_nA’_1A_1$ là các mặt bên;
-
-- Hai miền đa giác $A_1A_2A_3… A_n; A’_1A’_2A’_3… A’_n$ là hai mặt đáy (hai hình đa giác này bằng nhau);
-
-- Các đoạn thẳng $A_1A’_1,…, A_nA’_n$ là các cạnh bên;
-
-- Các đoạn thẳng $A_1A_2,A’_1A’_2,…, A_nA_1, A’_nA’_1$ là các cạnh đáy của hình lăng trụ.
-
-Ký hiệu hình lăng trụ: $A_1A_2…A_n.A’_1A’_2…A’_n.$
-
-Gọi tên lăng trụ theo tên các đa giác đáy: Lăng trụ tam giác (có đáy là tam giác), lăng trụ tứ giác (có đáy là tứ giác),…
-
-![Hình chóp, hình lăng trụ, hình hộp là gì? 4](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-lang-tru.png)
-
-### Hình lăng trụ đứng
-
-- Hình lăng trụ đứng là hình lăng trụ có các cạnh bên vuông góc với mặt đáy.
-
-- Nhận xét: Các mặt bên của hình lăng trụ đứng là các hình chữ nhật và vuông góc với mặt đáy.
-
-![Hình chóp, hình lăng trụ, hình hộp là gì? 5](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-lang-tru-dung.png)
-
-### Hình lăng trụ đều
-
-- Hình lăng trụ đều là hình lăng trụ đứng có đáy là đa giác đều.
-
-- Nhận xét: Các mặt bên của hình lăng trụ đều là các hình chữ nhật bằng nhau. Ngoài ra, hình lăng trụ đều có các tính chất của hình lăng trụ đứng.
-
-## 4. Hình hộp
-
-### Hình hộp là gì?
-
-![Hình chóp, hình lăng trụ, hình hộp là gì? 6](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-hop.png)
-
-Hình lăng trụ tứ giác có đáy là hình bình hành được gọi là hình hộp.
-
-Nhận xét:
-
-- Sáu mặt (bốn mặt bên và hai mặt đáy) đều là những hình bình hành.
-
-- Mỗi mặt có một mặt song song với nó, hai mặt như thế gọi là hai mặt đối diện.
-
-### Hình hộp đứng
-
-- Hình hộp đứng là hình lăng trụ đứng có đáy là hình bình hành.
-
-- Nhận xét: Trong hình hộp đứng có bốn mặt bên là hình chữ nhật.
-
-### Hình hộp chữ nhật
-
-Hình hộp chữ nhật là hình hộp đứng có đáy là hình chữ nhật.
-
-![Hình chóp, hình lăng trụ, hình hộp là gì? 7](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-hop-chu-nhat.jpeg)
-
-Nhận xét: Tất cả sáu mặt của hình hộp chữ nhật đều là hình chữ nhật.
-
-### Hình lập phương
-
-Hình lập phương là hình hộp có tất cả sáu mặt là hình vuông. (Các hình vuông này bằng nhau).
-
-![hình lập phương](assets/images/hinh-chop-hinh-lang-tru-hinh-hop-la-gi-hinh-lap-phuong.png)
+## Xem thêm tài liệu liên quan
+- [Phương pháp tính thể tích khối chóp và khối lăng trụ](/bai-viet/tinh-the-tich-khoi-chop.html)
+- [Cách tìm giao tuyến của hai mặt phẳng trong không gian](/bai-viet/cach-tim-giao-tuyen-cua-hai-mat-phang.html)
+- [Góc giữa hai đường thẳng trong không gian lớp 11](/bai-viet/goc-giua-hai-duong-thang-trong-khong-gian.html)

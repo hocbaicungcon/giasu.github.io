@@ -1,6 +1,6 @@
 ---
 title: PPCT hoá 10 KNTT có chuyên đề học tập
-description: PPCT hoá 10 KNTT có chuyên đề học tập
+description: 'Phân phối chương trình môn Hóa học 10 Kết Nối Tri Thức kèm các chuyên đề học tập chuẩn khung thời gian 70 tiết năm học mới.'
 category: Hóa học
 type: Bài học
 date: '2022-08-29'

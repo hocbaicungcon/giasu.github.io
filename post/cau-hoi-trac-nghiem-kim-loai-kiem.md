@@ -1,6 +1,6 @@
 ---
 title: Câu hỏi trắc nghiệm kim loại kiềm và hợp chất
-description: câu hỏi trắc nghiệm kim loại kiềm
+description: 'Trọn bộ câu hỏi trắc nghiệm kim loại kiềm và hợp chất môn Hóa học lớp 12 có đáp án và lời giải chi tiết phục vụ ôn thi tốt nghiệp THPT.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

@@ -1,7 +1,6 @@
 ---
 title: Cách đọc bảng chữ cái tiếng Nga
-description: 'Giới thiệu ngôn ngữ Nga. Tiếng Nga (русский язык, phát âm là /ruskʲə:
-  jɪ''zɨk/). Cách đọc bảng chữ cái tiếng Nga dễ hiểu nhất.'
+description: 'Hướng dẫn cách đọc bảng chữ cái tiếng Nga gồm 33 ký tự Cyrillic chi tiết: phiên âm IPA, tên gọi chữ cái, tương đương âm tiếng Việt và phân loại nguyên âm, phụ âm.'
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -12,67 +11,88 @@ tags:
 - Phát âm tiếng Nga
 ---
 
-Tiếng Nga (русский язык, phát âm là /ruskʲə: jɪ’zɨk/) là một ngôn ngữ phổ biến thứ tư trên thế giới và lớn thứ hai của Internet. Vì vậy, cơ hội có việc làm tốt khi học tiếng Nga là rất cao.
+Tiếng Nga (русский язык, phát âm IPA: `/ˈruskʲɪj jɪˈzɨk/`) là một trong 6 ngôn ngữ chính thức của Liên Hợp Quốc và là ngôn ngữ phổ biến trên toàn cầu cũng như mạng Internet. Nắm vững bảng chữ cái và quy tắc phát âm là bước khởi đầu vững chắc cho bất kỳ ai muốn tự học tiếng Nga.
 
 ![Cách đọc bảng chữ cái tiếng Nga 1](assets/images/cach-doc-bang-chu-cai-tieng-nga-bang-chu-cai-tieng-nga.webp)
 
-## Giới thiệu ngôn ngữ Nga
+## Giới thiệu bảng chữ cái Cyrillic tiếng Nga
 
-Tiếng Nga được coi là một trong những ngôn ngữ tương đối khó trên thế giới. Hiện nay, nó được khoảng hơn 300 triệu người trên thế giới sử dụng làm công cụ giao tiếp và làm việc chính.
+Bảng chữ cái tiếng Nga hiện đại dựa trên hệ thống chữ viết Cyrillic (kí tự Kirin), bao gồm **33 ký tự**:
+- **10 nguyên âm:** А, О, У, Ы, Э (nguyên âm cứng) và Я, Ё, Ю, И, Е (nguyên âm mềm).
+- **21 phụ âm:** Б, В, Г, Д, Ж, З, Й, К, Л, М, Н, П, Р, С, Т, Ф, Х, Ц, Ч, Ш, Щ.
+- **2 dấu chức năng:** Dấu cứng (**Ъ**) và Dấu mềm (**Ь**), không có âm riêng mà dùng để biến đổi cách phát âm của phụ âm đứng trước.
 
-Trong các nhà trường, tiếng Nga được giảng dạy khá phổ biến, song song cùng với rất nhiều các ngôn ngữ khác như Nhật, Hàn, Trung, Anh,… Số lượng người chọn ngành học tiếng Nga tại các trường đại học ngoại ngữ cũng là một con số không nhỏ.
+Xem thêm: [1000 từ tiếng Nga thông dụng nhất](/bai-viet/1000-tu-tieng-nga-thong-dung-nhat.html)
 
-![Cách đọc bảng chữ cái tiếng Nga 2](assets/images/cach-doc-bang-chu-cai-tieng-nga-tieng-Nga.jpg)
+## Bảng chi tiết cách đọc 33 chữ cái tiếng Nga
 
-Cậu bé cầm biểu ngữ “Tôi không muốn chiến tranh” viết bằng tiếng Nga
+Dưới đây là bảng chuẩn hóa 33 ký tự tiếng Nga với đầy đủ phiên âm quốc tế (IPA), cách gọi tên chữ cái và âm thanh tương đương trong tiếng Việt:
 
-Đối với những người có nhu cầu học tiếng  để phục vụ cho công tác du học hoặc làm việc liên quan tới du lịch, dịch thuật, tiếng Nga  là một trong những lựa chọn khá thú vị. Vậy khi bắt tay vào học ngôn ngữ này, chúng ta cần tìm hiểu điều gì đầu tiên. Cũng giống như học ngôn ngữ khác, bảng chữ cái tiếng Nga sẽ là tiền đề cho quá trình tìm hiểu sâu rộng hơn về ngôn ngữ này.
+| STT | Chữ cái (Hoa / Thường) | Tên chữ cái (Nga) | Phiên âm IPA | Âm tương đương tiếng Việt / Ví dụ minh họa |
+| :---: | :---: | :---: | :---: | :--- |
+| 1 | **А а** | а | /a/ | Giống âm **a** trong tiếng Việt (ví dụ: *адрес* - địa chỉ) |
+| 2 | **Б б** | бэ | /b/ | Giống âm **b** trong *bố, bạn* (ví dụ: *брат* - anh em trai) |
+| 3 | **В в** | вэ | /v/ | Giống âm **v** trong *và, vào* (ví dụ: *вода* - nước) |
+| 4 | **Г г** | гэ | /ɡ/ | Giống âm **g** trong *gà, gỗ* (ví dụ: *город* - thành phố) |
+| 5 | **Д д** | дэ | /d/ | Giống âm **đ** trong *đi, đường* (ví dụ: *дом* - ngôi nhà) |
+| 6 | **Е е** | е | /je/, /e/ | Đọc như **ye** hoặc **ê** (ví dụ: *если* - nếu như) |
+| 7 | **Ё ё** | ё | /jo/ | Đọc như **yo** (luôn có trọng âm, ví dụ: *ёлка* - cây thông) |
+| 8 | **Ж ж** | жэ | /ʐ/ | Âm **gi** uốn lưỡi, rung dây thanh (ví dụ: *журнал* - tạp chí) |
+| 9 | **З з** | зэ | /z/ | Giống âm **d/gi** miền Bắc rung nhẹ (ví dụ: *завод* - nhà máy) |
+| 10 | **И и** | и | /i/ | Giống âm **i** trong *im, đi* (ví dụ: *имя* - tên) |
+| 11 | **Й й** | и краткое | /j/ | Bán nguyên âm **i ngắn** (ví dụ: *чай* - trà) |
+| 12 | **К к** | ка | /k/ | Giống âm **c/k** không bật hơi (ví dụ: *книга* - quyển sách) |
+| 13 | **Л л** | эль | /l/, /ɫ/ | Giống âm **l** trong *lúa, làm* (ví dụ: *лампа* - bóng đèn) |
+| 14 | **М м** | эм | /m/ | Giống âm **m** trong *mẹ, mưa* (ví dụ: *мама* - mẹ) |
+| 15 | **Н н** | эн | /n/ | Giống âm **n** trong *nắng, núi* (ví dụ: *нос* - mũi) |
+| 16 | **О о** | о | /o/, /a/ | Khi có trọng âm đọc là **o/ô**, không trọng âm đọc thành **a** |
+| 17 | **П п** | пэ | /p/ | Giống âm **p** mím môi nhẹ (ví dụ: *папа* - bố) |
+| 18 | **Р р** | эр | /r/ | Âm **r** rung đầu lưỡi rõ nét (ví dụ: *рыба* - cá) |
+| 19 | **С с** | эс | /s/ | Giống âm **x** nhẹ trong tiếng Việt (ví dụ: *студент* - sinh viên) |
+| 20 | **Т т** | тэ | /t/ | Giống âm **t** trong *tôi, tốt* (ví dụ: *телефон* - điện thoại) |
+| 21 | **У у** | у | /u/ | Giống âm **u** trong *uống, vui* (ví dụ: *утро* - buổi sáng) |
+| 22 | **Ф ф** | эф | /f/ | Giống âm **ph** trong *phở, phố* (ví dụ: *фильм* - phim) |
+| 23 | **Х х** | ха | /x/ | Giống âm **kh** trong *không, khó* (ví dụ: *хлеб* - bánh mì) |
+| 24 | **Ц ц** | цэ | /ts/ | Tổ hợp âm **ts** bật nhanh đầu lưỡi (ví dụ: *центр* - trung tâm) |
+| 25 | **Ч ч** | че | /tɕ/ | Giống âm **ch** khẽ chu môi (ví dụ: *чай* - trà) |
+| 26 | **Ш ш** | ша | /ʂ/ | Âm **s** uốn lưỡi cứng, môi hơi tròn (ví dụ: *школа* - trường học) |
+| 27 | **Щ щ** | ща | /ɕː/ | Âm **s** mềm kéo dài, mép môi bẹt (ví dụ: *борщ* - súp củ dền) |
+| 28 | **Ъ ъ** | твёрдый знак | — | **Dấu cứng**: tạo khoảng ngắt giữa phụ âm và nguyên âm |
+| 29 | **Ы ы** | ы | /ɨ/ | Đọc như âm giữa **ư** và **i** (ví dụ: *мы* - chúng tôi) |
+| 30 | **Ь ь** | мягкий знак | — | **Dấu mềm**: làm mềm phụ âm đứng liền trước |
+| 31 | **Э э** | э | /ɛ/ | Giống âm **e/ê** mở rộng miệng (ví dụ: *это* - cái này) |
+| 32 | **Ю ю** | ю | /ju/ | Đọc như **yu/iu** (ví dụ: *юг* - phía nam) |
+| 33 | **Я я** | я | /ja/ | Đọc như **ya/ia** (ví dụ: *я* - tôi) |
 
-## Giới thiệu bảng chữ cái tiếng Nga
+## Phân loại hệ thống âm trong tiếng Nga
 
-Bảng chữ cái tiếng Nga có nguồn gốc từ bảng chữ cái Cyrillic, gồm 33 ký tự với 31 chữ cái và 2 dấu. Các ký tự này bắt nguồn từ ngôn ngữ gốc Slav, có một số chữ được vay mượn từ tiếng Hy Lạp và [tiếng Hebrew](/bai-viet/tu-hoc-tieng-do-thai-gioi-thieu-va-bang-chu-cai.html) nên được đánh giá là một trong những ngôn ngữ đặc trưng khá khó học.
+### 1. Bảng 10 nguyên âm đối xứng (Cứng - Mềm)
 
-Do đó, bạn cần luyện tập bằng cách viết đi viết lại bảng chữ cái này đến khi nào thuộc thì thôi. Một mẹo là bạn nên chia nhỏ ra, học khoảng 3 chữ cái tiếng Nga một lần. Khi nào nhớ được 5 chữ cái này rồi thì mới chuyển sang các chữ cái tiếp theo.
+Trong tiếng Nga, các nguyên âm chia thành 5 cặp tương ứng với phát âm nguyên âm cứng và nguyên âm mềm:
 
-![Cách học tiếng Nga cho người mới bắt đầu](assets/images/cach-doc-bang-chu-cai-tieng-nga-ngon-ngu-nga.jpg)
+| Cặp nguyên âm | Nguyên âm cứng (Sau phụ âm cứng) | Nguyên âm mềm (Làm mềm phụ âm trước) |
+| :---: | :---: | :---: |
+| **A / YA** | **А а** (/a/) | **Я я** (/ja/) |
+| **O / YO** | **О о** (/o/) | **Ё ё** (/jo/) |
+| **U / YU** | **У у** (/u/) | **Ю ю** (/ju/) |
+| **E / YE** | **Э э** (/ɛ/) | **Е е** (/je/) |
+| **Y / I** | **Ы ы** (/ɨ/) | **И и** (/i/) |
 
-Xem thêm [1000 từ tiếng Nga thông dụng nhất](/bai-viet/1000-tu-tieng-nga-thong-dung-nhat.html)
+### 2. Cặp phụ âm hữu thanh và vô thanh
 
-| Ký tự tiếng Nga | Âm tiếng Việt tương tự | Tên chữ cái trong tiếng Nga |
-| --- | --- | --- |
-| А а | а | “ah” |
-| Б б | b | “beh” |
-| В в | v | “veh” |
-| Г г | g | “geh” |
-| Д д | d | “deh” |
-| Е е | ie | “yeh” |
-| Ё ё | iô | “yo” |
-| Ж ж | gi | “zheh” |
-| З з | D | “zeh” |
-| И и | y | “ee” |
-| Й й | i | “ee kratkoyeh” |
-| К к | K | “kah” |
-| Л л | L | “ehl” |
-| М м | m | “ehm” |
-| Н н | n | “ehn” |
-| О о | ô | “oh” |
-| П п | p | “peh” |
-| Р р | r | “ehr” |
-| С с | s | “ehs” |
-| Т т | t | “teh” |
-| У у | u | “oo” |
-| Ф ф | ph | “ehf” |
-| Х х | Kh | “khah” |
-| Ц ц | ts | “tseh” |
-| Ч ч | Tr | “cheh” |
-| Ш ш | S (Dấu cứng) | “shah” |
-| Щ щ | S  (dấu mềm) | “schyah” |
-| Ъ ъ | Dấu cứng | “tvyordiy znahk” |
-| Ы ы | Ư | “i” |
-| Ь ь | Dấu mềm | “myagkeey znahk” |
-| Э э | Ê | “eh” |
-| Ю ю | iu | “yoo” |
-| Я я | ia | “yah” |
+Các phụ âm có sự ghép cặp đối xứng theo thanh tính, quyết định hiện tượng biến âm ở cuối từ hoặc trước phụ âm khác:
+
+| Cặp phụ âm | Phụ âm hữu thanh (Có rung thanh quản) | Phụ âm vô thanh (Chỉ có luồng hơi) |
+| :---: | :---: | :---: |
+| **B - P** | **Б** (/b/) | **П** (/p/) |
+| **V - F** | **В** (/v/) | **Ф** (/f/) |
+| **G - K** | **Г** (/g/) | **К** (/k/) |
+| **D - T** | **Д** (/d/) | **Т** (/t/) |
+| **ZH - SH** | **Ж** (/ʐ/) | **Ш** (/ʂ/) |
+| **Z - S** | **З** (/z/) | **С** (/s/) |
+
+> [!NOTE]
+> Khi phụ âm hữu thanh đứng ở cuối từ (ví dụ *хлеб*, *город*), chúng sẽ bị vô thanh hóa và đọc thành phụ âm vô thanh tương ứng (*хлеб* phát âm thành `/xlʲep/`, *город* phát âm thành `/ˈɡorət/`).
 
 ## Cách đọc bảng chữ cái tiếng Nga
 

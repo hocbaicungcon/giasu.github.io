@@ -1,6 +1,6 @@
 ---
 title: Từ vựng tiếng Anh về màu sắc
-description: Xem thêm: Từ vựng tiếng Anh chủ đề Gia đình
+description: 'Trọn bộ từ vựng tiếng Anh về màu sắc từ cơ bản đến nâng cao, các sắc thái màu kèm cụm thành ngữ thú vị và phiên âm chuẩn quốc tế.'
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'

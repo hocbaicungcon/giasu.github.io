@@ -1,6 +1,6 @@
 ---
 title: Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hai Bà Trưng
-description: Đề kiểm tra học kì 2 lớp 11 môn hóa
+description: 'Đề kiểm tra học kì 2 môn Hóa học lớp 11 trường THPT Hai Bà Trưng có đáp án và hướng dẫn giải chi tiết giúp học sinh ôn tập hiệu quả.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

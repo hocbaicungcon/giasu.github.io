@@ -3313,14 +3313,54 @@ k) 7x + 11 = 88;
 
 8.1. Cho các hình sau:
 
-![Các góc không vuông và góc vuông](/assets/images/bon-phep-tinh-lop-3/hinh-8-1.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="460" height="230" viewBox="0 0 460 230" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <path d="M 90,45 L 40,95 L 105,95" fill="none" stroke="#1e293b" stroke-width="2"/>
+    <text x="90" y="38" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="28" y="100" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="115" y="100" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+
+    <path d="M 175,45 L 175,95 L 235,95" fill="none" stroke="#1e293b" stroke-width="2"/>
+    <polyline points="175,85 185,85 185,95" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="175" y="38" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">O</text>
+    <text x="165" y="100" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">M</text>
+    <text x="245" y="100" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">N</text>
+
+    <path d="M 315,100 L 290,45 L 360,95" fill="none" stroke="#1e293b" stroke-width="2"/>
+    <text x="285" y="38" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">E</text>
+    <text x="315" y="115" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="370" y="100" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">F</text>
+
+    <path d="M 40,195 L 90,145 L 140,195" fill="none" stroke="#1e293b" stroke-width="2"/>
+    <polyline points="83,152 90,159 97,152" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="90" y="137" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">E</text>
+    <text x="30" y="202" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">P</text>
+    <text x="145" y="202" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">Q</text>
+
+    <path d="M 165,145 L 215,195 L 280,195" fill="none" stroke="#1e293b" stroke-width="2"/>
+    <text x="160" y="138" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">I</text>
+    <text x="215" y="210" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="290" y="200" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">K</text>
+
+    <path d="M 315,195 L 365,145 L 415,195" fill="none" stroke="#1e293b" stroke-width="2"/>
+    <text x="365" y="137" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="305" y="202" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">G</text>
+    <text x="425" y="202" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">H</text>
+  </svg>
+</div>
 
 - a) Hãy nêu tên đỉnh và cạnh của các góc không vuông.
 - b) Làm sao để kiểm tra góc $PEQ$ có vuông hay không?
 
 8.2. Đúng ghi Đ, sai ghi S vào ô trống. Hình bên có:
 
-![Hình đếm số góc vuông và không vuông](/assets/images/bon-phep-tinh-lop-3/hinh-8-2.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="240" height="180" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="30,25 150,25 220,150 30,150" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="30" y1="150" x2="150" y2="25" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="30" y1="25" x2="90" y2="87.5" stroke="#1e293b" stroke-width="1.8"/>
+  </svg>
+</div>
 
 - a)
   - [ ] 2 góc vuông
@@ -3447,7 +3487,21 @@ Có 5 điểm A, B, C, D, E mà không có 3 điểm nào thẳng hàng. Ta kẻ
 
 Hình bên có:
 
-![Đoạn thẳng và tia trên đường thẳng xy](/assets/images/bon-phep-tinh-lop-3/hinh-8-27.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="400" height="70" viewBox="0 0 400 70" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <line x1="20" y1="45" x2="380" y2="45" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="100" cy="45" r="3.5" fill="#1e293b"/>
+    <circle cx="180" cy="45" r="3.5" fill="#1e293b"/>
+    <circle cx="260" cy="45" r="3.5" fill="#1e293b"/>
+    <circle cx="330" cy="45" r="3.5" fill="#1e293b"/>
+    <text x="25" y="32" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0369a1">x</text>
+    <text x="100" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="180" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="260" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">P</text>
+    <text x="330" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Q</text>
+    <text x="375" y="32" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0369a1">y</text>
+  </svg>
+</div>
 
 - a)
   - [ ] 3 đoạn thẳng
@@ -3465,7 +3519,14 @@ Hình bên có:
 
 8.28. Hình dưới có:
 
-![Hình vuông chia bốn và đường chéo](/assets/images/bon-phep-tinh-lop-3/hinh-8-28.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="20" y="20" width="140" height="140" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="90" y1="20" x2="90" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="20" y1="90" x2="160" y2="90" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="20" y1="20" x2="160" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+  </svg>
+</div>
 
 - a) Bao nhiêu cặp đoạn thẳng song song?
 - b) Bao nhiêu cặp đoạn thẳng vuông góc?
@@ -3556,7 +3617,52 @@ hành bằng mấy mét vuông?
 9.2. Sắp xếp từ bé đến lớn theo độ lớn của chu vi, của diện tích:
 9.3. Sơ đồ một khu vườn như trong hình. Tính diện tích khu vườn, biết tỉ lệ bản đồ là $1 : 400$:
 
-![Sơ đồ khu vườn theo tỉ lệ 1 : 400](/assets/images/bon-phep-tinh-lop-3/hinh-9-3.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="340" height="340" viewBox="0 0 340 340" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="60" y="50" width="120" height="150" fill="#ecfdf5" stroke="#1e293b" stroke-width="1.8"/>
+    <text x="120" y="130" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">Cây ăn quả</text>
+
+    <rect x="60" y="200" width="120" height="100" fill="#f0fdf4" stroke="#1e293b" stroke-width="1.8"/>
+    <text x="120" y="255" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#166534" text-anchor="middle">Vườn rau</text>
+
+    <rect x="195" y="50" width="90" height="125" fill="#fdf2f8" stroke="#1e293b" stroke-width="1.8"/>
+    <text x="240" y="117" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#9d174d" text-anchor="middle">Vườn hoa</text>
+
+    <rect x="195" y="190" width="90" height="110" fill="#f8fafc" stroke="#1e293b" stroke-width="1.8"/>
+    <text x="240" y="250" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#334155" text-anchor="middle">Nhà kho</text>
+
+    <text x="220" y="184" font-family="system-ui, sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Lối đi</text>
+
+    <line x1="60" y1="35" x2="180" y2="35" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="60" y1="28" x2="60" y2="42" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="180" y1="28" x2="180" y2="42" stroke="#64748b" stroke-width="1.2"/>
+    <text x="120" y="27" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">2cm</text>
+
+    <line x1="180" y1="35" x2="195" y2="35" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="195" y1="28" x2="195" y2="42" stroke="#64748b" stroke-width="1.2"/>
+    <text x="187.5" y="18" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">0,25cm</text>
+
+    <line x1="195" y1="35" x2="285" y2="35" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="285" y1="28" x2="285" y2="42" stroke="#64748b" stroke-width="1.2"/>
+    <text x="240" y="27" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">1,5cm</text>
+
+    <line x1="45" y1="50" x2="45" y2="200" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="38" y1="50" x2="52" y2="50" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="38" y1="200" x2="52" y2="200" stroke="#64748b" stroke-width="1.2"/>
+    <text x="35" y="130" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="end">3 cm</text>
+
+    <line x1="45" y1="200" x2="45" y2="300" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="38" y1="300" x2="52" y2="300" stroke="#64748b" stroke-width="1.2"/>
+    <text x="35" y="255" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="end">2cm</text>
+
+    <line x1="300" y1="50" x2="300" y2="175" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="293" y1="50" x2="307" y2="50" stroke="#64748b" stroke-width="1.2"/>
+    <line x1="293" y1="175" x2="307" y2="175" stroke="#64748b" stroke-width="1.2"/>
+    <text x="312" y="117" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="start">2,5cm</text>
+
+    <text x="187.5" y="322" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">Cổng</text>
+  </svg>
+</div>
 
 9.4. Chu vi và diện tích hình vuông thay đổi thế nào nếu cạnh của hình
 vuông:
@@ -3672,7 +3778,18 @@ $500\text{ mm}^2$
 $4{,}8\text{ dm}^2$
 9.16. Điền vào chỗ trống trong bảng sau biết rằng $a, b, c, d$ là độ dài các cạnh, $m$ là độ dài đường cao, $K$ là chu vi, $T$ là diện tích hình thang:
 
-![Hình thang có đáy a, c và chiều cao m](/assets/images/bon-phep-tinh-lop-3/hinh-9-16.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="280" height="170" viewBox="0 0 280 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="95,35 210,35 250,135 30,135" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="95" y1="35" x2="95" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <polyline points="95,125 105,125 105,135" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="152.5" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" font-style="italic" text-anchor="middle">c</text>
+    <text x="140" y="155" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" font-style="italic" text-anchor="middle">a</text>
+    <text x="50" y="85" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" font-style="italic" text-anchor="end">d</text>
+    <text x="238" y="85" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" font-style="italic" text-anchor="start">b</text>
+    <text x="108" y="90" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#0284c7" font-style="italic" text-anchor="start">m</text>
+  </svg>
+</div>
 
 | $a$ | $b$ | $c$ | $d$ | $m$ | $K$ | $T$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|

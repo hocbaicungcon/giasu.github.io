@@ -1,6 +1,6 @@
 ---
 title: Tổng hợp các chuyên đề hóa học lớp 12
-description: các chuyên đề hóa học lớp 12
+description: 'Trọn bộ chuyên đề Hóa học 12 ôn thi tốt nghiệp THPT và ĐGNL: este, cacbohiđrat, amin, kim loại, bài tập dồn chất có đáp án chi tiết.'
 category: Hóa học
 type: Bài học
 date: '2022-07-31'
@@ -264,84 +264,3 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
 ←[Tổng hợp đề thi học kì 2 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-11-mon-hoa-hoc.html)
 [Đề thi học kì 2 lớp 11 môn hóa học THPT ALBERT EINSTEIN](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-albert-einstein.html)→
-
-## Comments
-
-### One response to “Tổng hợp các chuyên đề hóa học lớp 12”
-
-1. ![Phương Avatar](https://secure.gravatar.com/avatar/fc9b99de20330ce9cd711ac9343d44de353e501eae797203cf4b6c3bfaae6af9)
-
-   [31/07/2022](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12/#comment-3670.html)
-   Phương
-
-   Xin vui lòng cho em xin file ạ, em xin chân thành cảm ơn quí thầy cô rất nhiều.
-
-   [Reply](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12/?replytocom=3670#respond.html)
-
-### Leave a Reply Cancel reply
-
-Your email address will not be published. Required fields are marked *
-
-Comment * 
-
-Name * 
-
-Email * 
-
-Website 
-
- Save my name, email, and website in this browser for the next time I comment.
-
- 
-
-	
-
-## More posts
-
-- ### Bút trình chiếu giá rẻ 100k khoảng cách 100m!
-
-  [02/10/2024](/bai-viet/but-trinh-chieu-gia-re-100k-khoang-cach-100m.html)
-
-- ### Loa Trợ Giảng Giá Rẻ OBTpro WA-1921 chỉ 500k!
-
-  [24/08/2024](/bai-viet/loa-tro-giang-gia-re-obtpro-wa-1921-chi-500k.html)
-
-- ### File luyện viết 50 bộ thủ thường dùng Word PDF
-
-  [30/07/2024](/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html)
-
-- ### Tổng hợp Tài liệu Toán 9 chương trình mới (Cánh Diều, KNTT, CTST)
-
-  [26/07/2024](/bai-viet/tong-hop-tai-lieu-toan-9-chuong-trinh-moi-canh-dieu-kntt-ctst.html)
-
-- ### Tổng hợp tài liệu ôn thi tốt nghiệp THPT môn Toán 2025
-
-  [26/07/2024](/bai-viet/tong-hop-tai-lieu-on-thi-tot-nghiep-thpt-mon-toan-2025.html)
-
-- ### Tổng hợp đề thi HSG Toán 12 năm 2024-2025
-
-  [05/07/2024](/bai-viet/tong-hop-de-thi-hsg-toan-12-nam-2024-2025.html)
-
-- ### Tổng hợp toán thực tế ứng dụng đạo hàm
-
-  [03/07/2024](/bai-viet/tong-hop-toan-thuc-te-ung-dung-dao-ham.html)
-
-- ### Tổng hợp tài liệu Xác suất có điều kiện Toán 12
-
-  [01/07/2024](/bai-viet/tong-hop-tai-lieu-xac-suat-co-dieu-kien-toan-12.html)
-
-- ### Công thức tính thể tích chỏm cầu
-
-  [29/06/2025](/bai-viet/cong-thuc-tinh-the-tich-chom-cau.html)
-
-- ### Đề tiếng Anh THPT 2025 file WORD
-
-  [29/06/2025](/bai-viet/de-tieng-anh-thpt-2025-file-word.html)
-
-- ### Tổng hợp Xác suất có điều kiện PDF lớp 12
-
-  [29/06/2025](/bai-viet/tong-hop-xac-suat-co-dieu-kien-pdf-lop-12.html)
-
-- ### Hướng dẫn giải đề Toán THPT 2025
-
-  [29/06/2025](/bai-viet/huong-dan-giai-de-toan-thpt-2025.html)

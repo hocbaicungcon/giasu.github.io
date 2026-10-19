@@ -13,9 +13,6 @@ tags:
 - Năng lượng Gibbs
 grade: 10
 ---
-
-# Bài 4. Entropy và biến thiên năng lượng tự do Gibbs
-
 **TÊN BÀI DẠY:  ENTROPY VÀ BIẾN THIÊN NĂNG LƯỢNG TỰ DO GIBBS**
 **BỘ SÁCH**: **KẾT NỐI TRI THỨC**
 **SỐ TIẾT**: **4**

@@ -13,9 +13,6 @@ tags:
 - Toán 12
 grade: 12
 ---
-
-# Biến ngẫu nhiên và luật phân phối xác suất
-
 Tiếp theo bài [Các sự kiện ngẫu nhiên và phép tính xác suất](/bai-viet/bai-tap-cac-su-kien-ngau-nhien-va-phep-tinh-xac-suat.html), chúng tôi tiếp tục giới thiệu phần bài tập Biến ngẫu nhiên và luật phân phối xác suất trong đề cương của ĐH BKHN.
 
 Xem thêm: [1000 bài toán Tổ hợp Xác Suất có lời giải](/bai-viet/1000-bai-toan-dai-so-to-hop-xac-suat-co-loi-giai.html).
@@ -56,14 +53,16 @@ Xem thêm: [1000 bài toán Tổ hợp Xác Suất có lời giải](/bai-viet/
 
 **Bài tập 2.5.** Mỗi khách uống cà phê tại quán cà phê mỗi ngày đều được phát ngẫu nhiên một vé bốc thăm, xác suất khách hàng trúng thăm là 0,1. Nếu khách hàng trúng thăm liên tục trong 5 ngày (từ thứ hai đến thứ sáu) sẽ nhận được 100₫, nếu không sẽ không được gì. An uống cà phê liên tục tại quán này 4 tuần liên tiếp. Gọi X₫ là số tiền An được thưởng khi bốc thăm trong 4 tuần đó. Xác định kỳ vọng và phương sai của X.
 
-Gọi X là số tiền An nhận được khi bốc thăm trong 4 tuần và Y là số tuần An được thưởng
-thì khi đó
+Gọi $X$ là số tiền An nhận được khi bốc thăm trong 4 tuần và $Y$ là số tuần An được thưởng thì khi đó:
+$$X = 100Y$$
 
-X = 100Y
+Biến ngẫu nhiên $Y$ có phân phối nhị thức $Y \sim B(n, p)$ với $n = 4$ tuần và $p$ là xác suất trúng thăm liên tục trong 5 ngày của một tuần bất kì:
+$$p = (0{,}1)^5 = 10^{-5} = 0{,}00001$$
 
-và Y là biến ngẫu nhiên rời rạc có phân phối nhị thức với n = 4 phép thử độc lập và p là xác
-suất được thưởng trong 1 tuần bất kì. Dễ tính p = 0.15
-Suy ra E[X] = 100 E[Y] = 100 × 4 × 0.15 = 0.004 và V[X] = 104 V[Y]= 0.4
+Suy ra:
+$$E(Y) = n \cdot p = 4 \times 10^{-5} \implies E(X) = 100 \cdot E(Y) = 100 \times 4 \times 10^{-5} = 0{,}004\text{ (đồng)}$$
+$$\text{Var}(Y) = n \cdot p(1 - p) \approx 4 \times 10^{-5} \implies \text{Var}(X) = 100^2 \cdot \text{Var}(Y) = 10^4 \times 4 \times 10^{-5} = 0{,}4$$
+
 
 **Bài tập 2.6.** Tung đồng xu 10 lần. Biến ngẫu nhiên X được định nghĩa như sau: (X = 1) nếu sự kiện đúng 3 lần ra mặt sấp xảy ra và (X = 0) trong trường hợp còn lại. Tính kỳ vọng E(X) và phương sai V(X).
 
@@ -154,38 +153,39 @@ $$
 **Bài tập 2.21.** Biến ngẫu nhiên liên tục X có hàm mật độ xác suất 
 
 $$
-f(x)=\frac{c}{e^x+e^-x}
+f(x)=\frac{c}{e^x+e^{-x}}
 $$
 
-Xác định hằng số c và sau đó tính kỳ vọng của X.
+Xác định hằng số $c$ và sau đó tính kỳ vọng của $X$.
 
-**Bài tập 2.22.** Biến ngẫu nhiên liên tục X có hàm mật độ là $f(x) = ae^{-|x|}$, (−∞ < x < +∞).
+**Bài tập 2.22.** Biến ngẫu nhiên liên tục $X$ có hàm mật độ là $f(x) = ae^{-|x|}$, $(-\infty < x < +\infty)$.
 
-1. Xác định a.
+1. Xác định $a$.
 
-2. Tìm hàm phân phối của biến ngẫu nhiên X; biến ngẫu nhiên Y = X2.
+2. Tìm hàm phân phối của biến ngẫu nhiên $X$; biến ngẫu nhiên $Y = X^2$.
 
-3. Tìm E(X), V(X).
+3. Tìm $E(X), \text{Var}(X)$.
 
-4. Tính xác suất để sau ba lần lặp lại phép thử một cách độc lập có 2 lần X nhận giá trị trong (0; ln 3).
+4. Tính xác suất để sau ba lần lặp lại phép thử một cách độc lập có 2 lần $X$ nhận giá trị trong $(0; \ln 3)$.
 
-**Bài tập 2.23.** Nhu cầu hàng năm về loại hàng A là biến ngẫu nhiên liên tục X có hàm mật độ xác suất như sau (đơn vị: ngàn sản phẩm):
+**Bài tập 2.23.** Nhu cầu hàng năm về loại hàng A là biến ngẫu nhiên liên tục $X$ có hàm mật độ xác suất như sau (đơn vị: ngàn sản phẩm):
 
 $$
 f(x)=\begin{cases} k(30-x),& x\in (0;30)\\ 0, & x\not\in (0;30)\end{cases}
 $$
 
-1. Tìm k.
+1. Tìm $k$.
 
-2. Tìm hàm phân phối F(x).
+2. Tìm hàm phân phối $F(x)$.
 
 3. Tìm nhu cầu trung bình hàng năm về loại hàng đó.
 
-**Bài tập 2.24.** Cho biến ngẫu nhiên liên tục X có hàm phân phối xác suất 
+**Bài tập 2.24.** Cho biến ngẫu nhiên liên tục $X$ có hàm phân phối xác suất 
 
 $$
-f(x)=\begin{cases} 0,& x\leqslant 0\\ 1/2-k\cos x, & 0<x \leqslant \pi \\ 1, & x>\pi\end{cases}
+F(x)=\begin{cases} 0,& x\leqslant 0\\ 1/2-k\cos x, & 0<x \leqslant \pi \\ 1, & x>\pi\end{cases}
 $$
+
 
 1. Tìm k.
 

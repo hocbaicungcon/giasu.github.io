@@ -1,6 +1,6 @@
 ---
 title: STEM chế tạo bình điện phân hóa học lớp 10
-description: Xem thêm
+description: 'Giáo án STEM Hóa học 10 chế tạo bình điện phân: mục tiêu bài học, nguyên vật liệu dễ tìm, quy trình thực hiện và tiêu chí đánh giá sản phẩm.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

@@ -13,9 +13,6 @@ tags:
 - Trắc nghiệm Hóa 11
 grade: 11
 ---
-
-# Hệ thống câu hỏi trắc nghiệm ancol phenol
-
 Mời thầy cô và các em học sinh xem thêm:
 
 - [Phân dạng bài tập ancol phenol](/bai-viet/phan-dang-bai-tap-ancol-phenol.html)

@@ -1,6 +1,6 @@
 ---
 title: Bài thơ đọc ngược đọc xuôi theo 8 cách!
-description: Tuyển tập các bài thơ đọc ngược đọc xuôi (thơ nghịch đảo - Lục chuyển hồi văn) độc đáo trong văn học Việt Nam như Cảnh xuân, Đi thuyền, Cửa sổ đêm khuya...
+description: 'Tuyển tập các bài thơ đọc ngược đọc xuôi (thuận nghịch độc) độc đáo trong văn học Việt Nam như Cảnh xuân, Đi thuyền, Cửa sổ đêm khuya.'
 category: Ngữ văn
 type: Giai thoại
 date: '2024-10-02'

@@ -482,66 +482,155 @@ chéo có giá trị băng nhau.
 giá trị bằng B). Hãy xác định giá trị ở giữa của bảng này.
 **3.15.** Hãy ghi tiếp các số vào ô trống trong các bảng ô vuông thần bí sau:
 
-![Bảng ô vuông thần bí - Bài 3.15](/assets/images/tuyen-tap-hsg/bai-3-15.png)
-b)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="480" height="160" viewBox="0 0 480 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <!-- Bảng a -->
+    <g transform="translate(20, 25)">
+      <text x="60" y="-8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">a)</text>
+      <rect x="0" y="0" width="120" height="120" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+      <line x1="40" y1="0" x2="40" y2="120" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="80" y1="0" x2="80" y2="120" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="0" y1="40" x2="120" y2="40" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="0" y1="80" x2="120" y2="80" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="60" y="26" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">20</text>
+      <text x="100" y="26" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
+      <text x="20" y="66" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
+    </g>
+
+    <!-- Bảng b -->
+    <g transform="translate(180, 25)">
+      <text x="60" y="-8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">b)</text>
+      <rect x="0" y="0" width="120" height="120" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+      <line x1="40" y1="0" x2="40" y2="120" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="80" y1="0" x2="80" y2="120" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="0" y1="40" x2="120" y2="40" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="0" y1="80" x2="120" y2="80" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="20" y="26" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">9</text>
+      <text x="100" y="26" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">11</text>
+      <text x="60" y="66" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">7</text>
+    </g>
+
+    <!-- Bảng c -->
+    <g transform="translate(340, 25)">
+      <text x="60" y="-8" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">c)</text>
+      <rect x="0" y="0" width="120" height="120" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+      <line x1="40" y1="0" x2="40" y2="120" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="80" y1="0" x2="80" y2="120" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="0" y1="40" x2="120" y2="40" stroke="#1e293b" stroke-width="1.5"/>
+      <line x1="0" y1="80" x2="120" y2="80" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="20" y="26" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">1</text>
+      <text x="100" y="26" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">5</text>
+      <text x="60" y="106" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">9</text>
+    </g>
+  </svg>
+</div>
+
 3.16. Có thể xếp 9 số sau vào bảng thần bí được không?
 - a) 1, 3, 6, 11, 17, 42, 57, 58, 70.
 - b) 0, 3, 3, 4, 5, 6, 7, 8, 9.
-3.17. Có thể điền vào ba ô trống nào đó 3 số của bảng 3 x 3 sao cho có thể có nhiều cách để
-tạo nên bảng ô vuỗng thần kì khác nhau?
+
+3.17. Có thể điền vào ba ô trống nào đó 3 số của bảng 3 x 3 sao cho có thể có nhiều cách để tạo nên bảng ô vuông thần kì khác nhau?
+
 **3.18.** Hãy điền các số 1, 2, 3, ..., 8 vào các ô trống trong hình vẽ sao cho tổng các số trên mỗi đường tròn bằng nhau?
 
-![Ba vòng tròn giao nhau - Bài 3.18](/assets/images/tuyen-tap-hsg/bai-3-18.png)
-3.19. Một bảng ô vuông 3 x 3 người ta viết một số nào đó từ các số 7, 8, 9. Có thể tạo dược
-như vậy một bảng số sao cho tổng các số trong mỗi hàng, mỗi cột và các đường chéo có giá trị
-khác nhau?
-3.20. Xếp các số 2, 5; 3,2; 3, 9; 4,6; 5,3 và 6 vào các ô trong hình vẽ sao cho tổng các số trên
-mỗi cạnh của hình vuông có giá trị bằng nhau.
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="260" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <circle cx="95" cy="95" r="45" fill="none" stroke="#0284c7" stroke-width="2"/>
+    <circle cx="165" cy="95" r="45" fill="none" stroke="#0284c7" stroke-width="2"/>
+    <circle cx="95" cy="165" r="45" fill="none" stroke="#0284c7" stroke-width="2"/>
+    <circle cx="165" cy="165" r="45" fill="none" stroke="#0284c7" stroke-width="2"/>
+
+    <circle cx="63" cy="63" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="197" cy="63" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="63" cy="197" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="197" cy="197" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+
+    <circle cx="130" cy="95" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="130" cy="165" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="95" cy="130" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="165" cy="130" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
+
+3.19. Một bảng ô vuông 3 x 3 người ta viết một số nào đó từ các số 7, 8, 9. Có thể tạo được như vậy một bảng số sao cho tổng các số trong mỗi hàng, mỗi cột và các đường chéo có giá trị khác nhau?
+
+3.20. Xếp các số 2,5; 3,2; 3,9; 4,6; 5,3 và 6 vào các ô trong hình vẽ sao cho tổng các số trên mỗi cạnh có giá trị bằng nhau.
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="170" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="110,25 35,135 185,135" fill="none" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="110" cy="25" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="35" cy="135" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="185" cy="135" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="72.5" cy="80" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="147.5" cy="80" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="110" cy="135" r="11" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
+
 **3.21.** Hãy ghi các số nguyên nhỏ hơn 13 vào các ô trống trong hình vẽ sao cho tổng các số trên mỗi cạnh của hình vuông bằng 22.
 
-![Hai hình vuông lồng nhau - Bài 3.21](/assets/images/tuyen-tap-hsg/bai-3-21.png)
-3.22. Hãy ghi các số từ 1, 2, ..., 9 vào các ô trống trong hình sao cho tổng của bốn số trên
-mỗi cạnh có giá trị ...
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="65" y="65" width="110" height="110" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="65" cy="65" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="175" cy="65" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="175" cy="175" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="65" cy="175" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="102" cy="65" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="138" cy="65" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="175" cy="102" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="175" cy="138" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="102" cy="175" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="138" cy="175" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="65" cy="102" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="65" cy="138" r="13" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
+
+3.22. Hãy ghi các số từ 1, 2, ..., 9 vào các ô trống trong hình sao cho tổng của bốn số trên mỗi cạnh có giá trị ...
 - a) bằng 20
 - b) bằng nhau và lớn nhất.
-3.23. Ghi 9 số nguyên dương khác nhau vào các ô của bảng số 3 x 3 sao cho tích các số trong
-mỗi cột hoặc mỗi hàng băng nhau.
-3.24. Trong bảng số 4 x 4 có 16 số. Bảng số dưới đây nhận được từ bảng đầu tiên bằng cách
-mỗi bước đi cùng một lúc người ta thay các số bằng trung bình của 6 số đứng trong cùng hàng
-hay cùng cột của số ban đầu.
+
+3.23. Ghi 9 số nguyên dương khác nhau vào các ô của bảng số 3 x 3 sao cho tích các số trong mỗi cột hoặc mỗi hàng bằng nhau.
+
+3.24. Trong bảng số 4 x 4 có 16 số. Bảng số dưới đây nhận được từ bảng đầu tiên bằng cách mỗi bước đi cùng một lúc người ta thay các số bằng trung bình của 6 số đứng trong cùng hàng hay cùng cột của số ban đầu.
 Hỏi bảng đầu tiên được ghi như thế nào?
-3.25. Trong một bảng bí hiểm 3 x 3, người ta khẳng định: tổng bình phương của các số dòng
-trên cùng luôn bằng tổng bình phương của các số ở dòng cuối cùng. Khẳng định này đúng hay
-sai?
-3.26. Người ta ghi các số vào 16 ô của bảng 4 x 4.Biết rằng tổng các số trong mỗi bảng con
-3 x 3 đều âm. Từ đây có thể suy ra tổng của cả 16 số là sô âm không?
-3.27. Một khối lập phương cạnh 10 cm. Người ta dán lên chính giữa mỗi mặt một khối lập
-phương con cạnh 5 cm, Sau đó sơn tất cả các mặt của hình khối vừa nhận được. Hổi diện tích
-bị sơn là bao nhiêu?
-3.28. Trong một tam giác có một góc bằng ba lần một góc khác. CMR có thể chia tam giác
-đã cho thành hai tam giác cân.
-3.29. Trung bình cộng của 3 số là 22. Trong ba số đó có một số lớn hơn 3 và một số lớn hơn
 
-**Bài 61.** Hỏi số thứ ba có thể là bao nhiêu?
-  3.30. Lập phương của một số nhỏ hơn bình phương của chính nó, mười lần của nó lớn hơn 5.
-  Hỏi số đó có thể là bao nhiêu?
-  3.31. Một nhà thương gia bỏ ra 100 quan tiên mua bò, cừu, và thỏ, tổng cộng 100 con. Giá
-  của một con bò là 10 quan, một con cừu là 3 quan và một con thỏ là 1 quan tiền vàng. Hỏi
-  mỗi loại có bao nhiêu con?
-  **3.32.** Điền các số thích hợp vào chỗ trống để nhận được một phép nhân đúng:
+3.25. Trong một bảng bí hiểm 3 x 3, người ta khẳng định: tổng bình phương của các số dòng trên cùng luôn bằng tổng bình phương của các số ở dòng cuối cùng. Khẳng định này đúng hay sai?
 
-![Phép nhân có chữ số khuyết - Bài 3.32](/assets/images/tuyen-tap-hsg/bai-3-32.png)
-  4 2
-  3.33. Trong phép tính sau các chữ cái giống nhau là các chữ số giống nhau, các chữ cái khác
-  nhau là các chữ số khác nhau. Thay các chữ cái bằng các chữ số để được phép tính đúng.
-  B D, C
-  E
-  + B D,
-  A
-  E
-  A E C,
-  B
-  E
+3.26. Người ta ghi các số vào 16 ô của bảng 4 x 4. Biết rằng tổng các số trong mỗi bảng con 3 x 3 đều âm. Từ đây có thể suy ra tổng của cả 16 số là số âm không?
+
+3.27. Một khối lập phương cạnh 10 cm. Người ta dán lên chính giữa mỗi mặt một khối lập phương con cạnh 5 cm, sau đó sơn tất cả các mặt của hình khối vừa nhận được. Hỏi diện tích bị sơn là bao nhiêu?
+
+3.28. Trong một tam giác có một góc bằng ba lần một góc khác. CMR có thể chia tam giác đã cho thành hai tam giác cân.
+
+3.29. Trung bình cộng của 3 số là 22. Trong ba số đó có một số lớn hơn 3 và một số lớn hơn 61. Hỏi số thứ ba có thể là bao nhiêu?
+
+3.30. Lập phương của một số nhỏ hơn bình phương của chính nó, mười lần của nó lớn hơn 5. Hỏi số đó có thể là bao nhiêu?
+
+3.31. Một nhà thương gia bỏ ra 100 quan tiền mua bò, cừu, và thỏ, tổng cộng 100 con. Giá của một con bò là 10 quan, một con cừu là 3 quan và một con thỏ là 1 quan tiền vàng. Hỏi mỗi loại có bao nhiêu con?
+
+**3.32.** Điền các số thích hợp vào chỗ trống để nhận được một phép nhân đúng:
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="190" viewBox="0 0 260 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <g font-family="Courier, monospace" font-size="20" font-weight="bold" fill="#1e293b">
+      <text x="145" y="30" text-anchor="end">∗  ∗  ∗</text>
+      <text x="155" y="27" text-anchor="middle">×</text>
+      <text x="210" y="30" text-anchor="end">∗  2  ∗</text>
+      <line x1="40" y1="42" x2="220" y2="42" stroke="#1e293b" stroke-width="1.8"/>
+      <text x="180" y="68" text-anchor="end">∗  8  ∗</text>
+      <text x="155" y="94" text-anchor="end">∗  7  ∗</text>
+      <text x="130" y="120" text-anchor="end">∗  ∗  ∗  ∗</text>
+      <line x1="40" y1="132" x2="220" y2="132" stroke="#1e293b" stroke-width="1.8"/>
+      <text x="210" y="160" text-anchor="end">∗  ∗  ∗  4  2  ∗</text>
+    </g>
+  </svg>
+</div>
+
+3.33. Trong phép tính sau các chữ cái giống nhau là các chữ số giống nhau, các chữ cái khác nhau là các chữ số khác nhau. Thay các chữ cái bằng các chữ số để được phép tính đúng:
+$$\begin{array}{rr} & BD{,}CE \\ + & BD{,}AE \\ \hline & AEC{,}BE \end{array}$$
   3.34. Trong một buổi dạ hội có 20 người tham gia khiêu vũ. Bạn nữ A khiêu vũ với 7 bạn
   nam, bạn nữ B khiêu vũ với 8 bạn nam, bạn nữ C khiêu vũ với 9 bạn nam và cứ tiếp tục như
   thế đến bạn nữ cuối cùng. Hỏi có bao nhiêu bạn nam tham gia?

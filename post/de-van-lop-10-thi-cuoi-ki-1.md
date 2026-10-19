@@ -1,6 +1,6 @@
 ---
 title: 'Bến đò ngày mưa: Đề văn lớp 10 thi cuối kì 1'
-description: 'Đọc văn bản sau và thực hiện yêu cầu:'
+description: 'Đề thi cuối học kì 1 môn Ngữ văn lớp 10 bài Bến đò ngày mưa gồm phần đọc hiểu và làm văn kèm hướng dẫn giải chi tiết theo chuẩn mới.'
 category: Ngữ văn
 type: Bài tập
 date: '2024-10-02'

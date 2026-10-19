@@ -1,6 +1,6 @@
 ---
 title: Cách tải và cài đặt Font chữ Việt Nam (VNI, .Vn, TCVN3)
-description: 'Bộ font chữ Việt Nam đầy đủ nhất:'
+description: 'Hướng dẫn tải và cài đặt trọn bộ Font chữ Việt Nam đầy đủ nhất gồm font VNI, .Vn (TCVN3) và Unicode cho máy tính Windows và macOS.'
 category: CNTT
 type: Bài học
 date: '2024-10-02'

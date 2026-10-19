@@ -14,11 +14,6 @@ tags:
 - Este
 grade: 12
 ---
-
-# Khi thuỷ phân a gam một chất béo X thu được 0,92 gam glixerol, 3,02 gam natri linoleat (C17H31COONa) và m gam muối natri oleat (C17H33COONa)
-
- 
-
 Khi thuỷ phân a gam một chất béo X thu được 0,92 gam glixerol, 3,02 gam natri linoleat (C17H31COONa) và m gam muối natri oleat (C17H33COONa). Giá trị của a, m lần lượt là:
 
 **A.** 7,2 và 6,08. **B.** 8,82 và 7,2. **C.** 7,2 và 8,82. **D.** 8,82 và 6,08.

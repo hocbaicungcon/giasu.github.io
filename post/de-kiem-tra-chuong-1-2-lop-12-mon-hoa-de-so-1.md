@@ -1,6 +1,6 @@
 ---
 title: Đề kiểm tra chương 1 2 lớp 12 môn hóa đề số 1
-description: Đề kiểm tra chương 1 2 lớp 12 môn hóa đề số 1
+description: 'Đề kiểm tra chương 1 và chương 2 Hóa học 12 (Este - Lipit - Cacbohiđrat) đề số 1 có ma trận đề thi và đáp án chi tiết.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

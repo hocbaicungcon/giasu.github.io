@@ -1,6 +1,6 @@
 ---
 title: STEM thiết kế và làm đèn kéo quân
-description: STEM thiết kế và làm đèn kéo quân
+description: 'Kế hoạch bài học STEM thiết kế và làm đèn kéo quân: tích hợp Vật lí và Hóa học, hướng dẫn từng bước chế tạo và giải thích nguyên lý hoạt động.'
 category: Hoạt động trải nghiệm
 type: Thí nghiệm vui
 date: '2024-10-02'

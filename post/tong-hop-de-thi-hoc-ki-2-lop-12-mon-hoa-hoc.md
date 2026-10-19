@@ -1,6 +1,6 @@
 ---
 title: Tổng hợp đề thi học kì 2 lớp 12 môn hóa học
-description: Tổng hợp đề thi học kì 2 lớp 12 môn hóa học
+description: 'Tổng hợp tuyển chọn các đề thi học kì 2 môn Hóa học lớp 12 các trường THPT trên toàn quốc có ma trận và đáp án chi tiết.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

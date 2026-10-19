@@ -1,6 +1,6 @@
 ---
 title: Bài tập phản ứng tạo muối amoni
-description: Bài tập phản ứng tạo muối amoni
+description: 'Tuyển chọn các dạng bài tập phản ứng tạo muối amoni trong Hóa học vô cơ và hữu cơ có phương pháp giải và lời giải chi tiết.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

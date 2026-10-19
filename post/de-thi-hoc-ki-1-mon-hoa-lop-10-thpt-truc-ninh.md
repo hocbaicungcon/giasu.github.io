@@ -1,6 +1,6 @@
 ---
 title: Đề thi học kì 1 môn hóa lớp 10 THPT Trực Ninh
-description: Đề thi học kì 1 môn hóa lớp 10 THPT Trực Ninh
+description: 'Đề thi học kì 1 môn Hóa học lớp 10 trường THPT Trực Ninh có đáp án chi tiết bám sát chương trình mới giúp học sinh ôn thi đạt điểm cao.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

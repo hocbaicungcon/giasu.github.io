@@ -15,11 +15,6 @@ tags:
 - Ankan
 grade: 11
 ---
-
-# Đem crackinh một lượng butan thu được một hỗn hợp gồm 5 khí hiđrocacbon. Cho hỗn hợp khí này sục qua dung dịch nước brom dư
-
- 
-
 Đem crackinh một lượng butan thu được một hỗn hợp gồm 5 khí hiđrocacbon. Cho hỗn hợp khí này sục qua dung dịch nước brom dư thì lượng brom tham gia phản ứng là 25,6 gam và sau thí nghiệm khối lượng bình brom tăng thêm 5,32 gam. Hỗn hợp khí còn lại sau khi qua dung dịch nước brom có tỷ khối đối với metan là 1,9625. Hiệu suất của phản ứng crackinh là:
 
 **A.** 20,00%. **B.** 80,00%. **C.** 88,88% **D.** 25,00%.

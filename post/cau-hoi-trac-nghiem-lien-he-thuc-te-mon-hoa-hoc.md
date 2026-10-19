@@ -1,6 +1,6 @@
 ---
 title: Câu hỏi trắc nghiệm liên hệ thực tế môn hóa học
-description: Câu hỏi trắc nghiệm liên hệ thực tế môn hóa học
+description: 'Tổng hợp các câu hỏi trắc nghiệm liên hệ thực tế môn Hóa học lớp 10, 11, 12 bám sát đề thi tốt nghiệp THPT có đáp án và giải thích chi tiết.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

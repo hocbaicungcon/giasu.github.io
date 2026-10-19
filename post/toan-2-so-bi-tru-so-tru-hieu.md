@@ -1,6 +1,6 @@
 ---
 title: 'Số bị trừ - Số trừ - Hiệu: Lý thuyết, các dạng bài và bài tập thực hành'
-description: 'Lý thuyết trọng tâm Toán 2: Tên gọi thành phần phép trừ (số bị trừ, số trừ, hiệu), quy tắc tìm thành phần chưa biết, mô hình tương tác trực quan, các dạng toán thường gặp và 10 câu trắc nghiệm tự chấm có lời giải chi tiết.'
+description: 'Lý thuyết Toán 2: Tên gọi thành phần phép trừ (số bị trừ, số trừ, hiệu), cách tìm thành phần chưa biết kèm các dạng bài tập có lời giải chi tiết.'
 category: Toán học
 type: Bài học
 date: '2026-10-17'
@@ -14,9 +14,6 @@ tags:
   - Kết nối tri thức
 grade: 2
 ---
-
-# Số bị trừ - Số trừ - Hiệu
-
 Trong cuộc sống hằng ngày, các em rất thường gặp những tình huống như: *mẹ có $8$ quả táo, mẹ cho em $3$ quả, mẹ còn lại $5$ quả*; hay *trong đàn có $12$ chú vịt, $4$ chú nhảy xuống ao bơi, còn lại $8$ chú vịt trên bờ*.
 
 Những tình huống lấy bớt đi, cho đi, giảm đi hay tìm phần còn lại đều gắn liền với **phép tính trừ**. Để học tốt môn Toán và giải toán chính xác, các em cần nắm thật vững tên gọi, vị trí và mối quan hệ giữa $3$ thành phần trong phép trừ: **Số bị trừ**, **Số trừ** và **Hiệu**.

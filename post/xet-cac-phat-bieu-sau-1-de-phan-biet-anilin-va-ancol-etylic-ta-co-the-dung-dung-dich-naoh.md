@@ -16,9 +16,6 @@ tags:
 - Lý thuyết Hóa học
 grade: 12
 ---
-
-# Xét các phát biểu sau:
-
 # (1) Để phân biệt anilin và ancol etylic, ta có thể dùng dung dịch NaOH.
 
  

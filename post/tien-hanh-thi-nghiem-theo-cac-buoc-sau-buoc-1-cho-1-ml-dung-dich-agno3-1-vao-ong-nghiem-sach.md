@@ -17,9 +17,6 @@ tags:
 - Glucozơ
 grade: 12
 ---
-
-# Tiến hành thí nghiệm theo các bước sau:
-
 # Bước 1: Cho 1 ml dung dịch AgNO3 1% vào ống nghiệm sạch.
 
 # Bước 2: Thêm từ từ từng giọt dung dịch NH3, lắc đều cho đến khi kết tủa tan hết.

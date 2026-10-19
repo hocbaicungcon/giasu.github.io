@@ -1,7 +1,6 @@
 ---
-title: SỞ HÀ HÁN GIỚI là gì?
-description: Hẳn là nhiều bạn chơi cờ tướng thường hỏi rằng “SỞ HÀ HÁN GIỚI là gì”.
-  Đây là một điển tích trong lịch sử Trung Quốc.
+title: 'Sở Hà Hán Giới Là Gì? Nguồn Gốc và Ý Nghĩa Trong Cờ Tướng'
+description: 'Giải mã ý nghĩa dòng chữ Sở Hà Hán Giới (楚河漢界) trên bàn cờ tướng: nguồn gốc cuộc chiến Hán Sở tranh hùng giữa Lưu Bang - Hạng Vũ và di tích sông Hồng Câu.'
 category: Các môn khác
 type: Khám phá
 date: '2024-10-02'

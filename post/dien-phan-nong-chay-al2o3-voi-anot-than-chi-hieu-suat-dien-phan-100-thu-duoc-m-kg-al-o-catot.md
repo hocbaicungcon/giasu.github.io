@@ -1,10 +1,7 @@
 ---
 title: Điện phân nóng chảy Al2O3 với anot than chì (hiệu suất điện phân 100%) thu
   được m kg Al ở catot
-description: Điện phân nóng chảy Al2O3 với anot than chì (hiệu suất điện phân 100%)
-  thu được m kg Al ở catot và 67,2 m3 (ở đktc) hỗn hợp khí X có tỉ khối so với hiđro
-  bằng 16. Lấy 2,24 lít (ở đktc) hỗn hợp khí X sục vào dung dịch nước vôi trong (dư)
-  thu được 2...
+description: 'Lời giải chi tiết bài toán điện phân nóng chảy Al2O3 với anot than chì thu được m kg Al ở catot và 67,2 m3 khí X: phương pháp bảo toàn e và bảo toàn O.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'
@@ -15,13 +12,125 @@ tags:
 grade: 12
 ---
 
-Điện phân nóng chảy Al2O3 với anot than chì (hiệu suất điện phân 100%) thu được m kg Al ở catot và 67,2 m3 (ở đktc) hỗn hợp khí X có tỉ khối so với hiđro bằng 16. Lấy 2,24 lít (ở đktc) hỗn hợp khí X sục vào dung dịch nước vôi trong (dư) thu được 2 gam kết tủa. Giá trị của m là:
+## Đề bài
 
-**A.** 54,0kg **B.** 75,6kg **C.** 67,5kg **D.** 108,0 kg
+Điện phân nóng chảy $\text{Al}_2\text{O}_3$ với anot than chì (hiệu suất điện phân $100\%$) thu được $m\text{ kg Al}$ ở catot và $67{,}2\text{ m}^3$ (ở đktc) hỗn hợp khí $X$ có tỉ khối so với hiđro bằng $16.$ Lấy $2{,}24\text{ lít}$ (ở đktc) hỗn hợp khí $X$ sục vào dung dịch nước vôi trong (dư) thu được $2\text{ gam}$ kết tủa. Giá trị của $m$ là:
 
-![Điện phân nóng chảy Al2O3 với anot than chì (hiệu suất điện phân 100%) thu được m kg Al ở catot](assets/images/dien-phan-nong-chay-al2o3-voi-anot-than-chi-hieu-suat-dien-phan-100-thu-duoc-m-kg-al-o-catot-vd2.jpg)
+- **A.** $54{,}0\text{ kg}$
+- **B.** $75{,}6\text{ kg}$
+- **C.** $67{,}5\text{ kg}$
+- **D.** $108{,}0\text{ kg}$
 
-Các thầy cô và các em có thể xem lý thuyết và phương pháp giải bài tập điện phân tại
+**Đáp án chính xác: B**
+
+---
+
+## Lời giải chi tiết
+
+![Điện phân nóng chảy Al2O3 với anot than chì thu được m kg Al ở catot](assets/images/dien-phan-nong-chay-al2o3-voi-anot-than-chi-hieu-suat-dien-phan-100-thu-duoc-m-kg-al-o-catot-vd2.jpg)
+
+### 1. Phân tích quá trình điện phân
+
+Khi điện phân nóng chảy $\text{Al}_2\text{O}_3$ với sự có mặt của criolit ($\text{Na}_3\text{AlF}_6$):
+- **Ở Catot (-) (cực âm):** Xảy ra quá trình khử ion $\text{Al}^{3+}$ thành kim loại nhôm:
+  $$
+  \text{Al}^{3+} + 3\text{e} \to \text{Al}
+  $$
+- **Ở Anot (+) (cực dương bằng than chì - cacbon):** Do nhiệt độ cao, oxi sinh ra phản ứng một phần với điện cực than chì tạo thành hỗn hợp khí $X$ gồm $\text{CO}_2, \text{CO}$ và $\text{O}_2$ dư:
+  $$
+  \begin{aligned}
+  \text{C} + 2\text{O}^{2-} &\to \text{CO}_2 + 4\text{e} \\
+  \text{C} + \text{O}^{2-} &\to \text{CO} + 2\text{e} \\
+  2\text{O}^{2-} &\to \text{O}_2 + 4\text{e}
+  \end{aligned}
+  $$
+
+---
+
+### 2. Xác định thành phần hỗn hợp khí $X$
+
+Đổi đơn vị và tính số mol của hỗn hợp khí $X$:
+$$
+V_X = 67{,}2\text{ m}^3 = 67200\text{ lít} \implies n_X = \frac{67200}{22{,}4} = 3000\text{ mol}
+$$
+
+Khối lượng mol trung bình của $X$:
+$$
+\overline{M}_X = 16 \times 2 = 32\text{ g/mol}
+$$
+
+Xét thí nghiệm lấy mẫu $2{,}24\text{ lít khí } X$ ($0{,}1\text{ mol}$):
+- Sục vào $\text{Ca(OH)}_2$ dư thu được $2\text{ g kết tủa CaCO}_3$:
+  $$
+  n_{\text{CaCO}_3} = \frac{2}{100} = 0{,}02\text{ mol} \implies n_{\text{CO}_2\text{ trong mẫu}} = 0{,}02\text{ mol}
+  $$
+- Tỉ lệ phần trăm thể tích của $\text{CO}_2$ trong $X$:
+  $$
+  \%\text{CO}_2 = \frac{0{,}02}{0{,}1} \times 100\% = 20\%
+  $$
+
+Trong toàn bộ $3000\text{ mol}$ khí $X$:
+$$
+n_{\text{CO}_2} = 3000 \times 20\% = 600\text{ mol}
+$$
+
+Gọi $a$ và $b$ lần lượt là số mol của $\text{CO}$ và $\text{O}_2$ trong $3000\text{ mol } X$:
+$$
+\begin{cases}
+n_X = 600 + a + b = 3000 \\
+m_X = 600 \times 44 + 28a + 32b = 3000 \times 32
+\end{cases}
+\iff
+\begin{cases}
+a + b = 2400 \\
+28a + 32b = 69600
+\end{cases}
+$$
+
+Giải hệ phương trình ta được:
+$$
+\begin{cases}
+a = 1800\text{ mol (CO)} \\
+b = 600\text{ mol (O}_2\text{)}
+\end{cases}
+$$
+
+### Bảng tổng hợp thành phần khí ở Anot
+
+| Khí trong $X$ | Khối lượng mol | Số mol ($n$) | Phần trăm thể tích |
+| :---: | :---: | :---: | :---: |
+| **$\text{CO}_2$** | $44\text{ g/mol}$ | $600\text{ mol}$ | $20\%$ |
+| **$\text{CO}$** | $28\text{ g/mol}$ | $1800\text{ mol}$ | $60\%$ |
+| **$\text{O}_2$** | $32\text{ g/mol}$ | $600\text{ mol}$ | $20\%$ |
+| **Tổng cộng** | $\overline{M} = 32\text{ g/mol}$ | $3000\text{ mol}$ | $100\%$ |
+
+---
+
+### 3. Tính khối lượng nhôm $m$ thu được ở Catot
+
+**Cách 1: Áp dụng định luật bảo toàn electron**
+- Quá trình nhường e ở Anot:
+  $$
+  n_{\text{e trao đổi}} = 4n_{\text{CO}_2} + 2n_{\text{CO}} + 4n_{\text{O}_2} = 4(600) + 2(1800) + 4(600) = 8400\text{ mol}
+  $$
+- Quá trình nhận e ở Catot:
+  $$
+  n_{\text{Al}} = \frac{n_{\text{e}}}{3} = \frac{8400}{3} = 2800\text{ mol}
+  $$
+- Khối lượng kim loại $\text{Al}$ thu được:
+  $$
+  m = 2800 \times 27 = 75600\text{ g} = 75{,}6\text{ kg}
+  $$
+
+**Cách 2: Áp dụng bảo toàn nguyên tố Oxi**
+- Toàn bộ oxi trong khí $X$ bắt nguồn từ $\text{Al}_2\text{O}_3$:
+  $$
+  n_{\text{O (trong } X\text{)}} = 2n_{\text{CO}_2} + n_{\text{CO}} + 2n_{\text{O}_2} = 2(600) + 1800 + 2(600) = 4200\text{ mol}
+  $$
+- Theo công thức $\text{Al}_2\text{O}_3,$ tỉ lệ mol $\dfrac{n_{\text{Al}}}{n_{\text{O}}} = \dfrac{2}{3}$:
+  $$
+  n_{\text{Al}} = \frac{2}{3} n_{\text{O}} = \frac{2}{3} \times 4200 = 2800\text{ mol} \implies m = 2800 \times 27 = 75{,}6\text{ kg}
+  $$
 
 [Lý thuyết và bài tập điện phân có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)
 

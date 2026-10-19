@@ -1,6 +1,6 @@
 ---
 title: Toán lớp 4 – Tìm số theo điều kiện cho trước
-description: 'Xem thêm các dạng toán tìm số ở lớp 4:'
+description: 'Phương pháp giải các dạng toán tìm số theo điều kiện cho trước môn Toán lớp 4: cấu tạo số, tìm hai số khi biết tổng và hiệu kèm bài tập mẫu.'
 category: Toán học
 type: Bài tập
 date: '2024-10-02'

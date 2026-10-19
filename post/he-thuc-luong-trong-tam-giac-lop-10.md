@@ -1,6 +1,6 @@
 ---
-title: HỆ THỨC LƯỢNG TRONG TAM GIÁC LỚP 10
-description: 'Tóm tắt kiến thức hệ thức lượng trong tam giác Lớp 10: định lý Cosin, định lý Sin, công thức tính diện tích tam giác và bài tập áp dụng.'
+title: 'Hệ Thức Lượng Trong Tam Giác Lớp 10 Đầy Đủ Công Thức và Các Dạng Bài'
+description: 'Tóm tắt toàn bộ công thức hệ thức lượng trong tam giác lớp 10: định lý Cosin, định lý Sin, độ dài trung tuyến, phân giác, diện tích tam giác và các dạng toán có lời giải.'
 category: Toán học
 type: Bài học
 date: '2024-10-02'
@@ -8,252 +8,186 @@ tags:
 - Hệ thức lượng
 - Tam giác
 - Định lý Cosin
+- Toán 10
 grade: 10
 ---
 
-## I. TÓM TẮT KIẾN THỨC HỆ THỨC LƯỢNG TRONG TAM GIÁC LỚP 10
+**Hệ thức lượng trong tam giác** là một trong những nội dung trọng tâm của chương trình [Toán lớp 10](/lop-10.html). Chuyên đề này liên kết chặt chẽ giữa hình học thuần túy và lượng giác, đóng vai trò nền tảng để giải quyết các bài toán thực tế (đo đạc khoảng cách, chiều cao, định vị) cũng như các câu hỏi phân loại trong đề thi học kì và đề thi tốt nghiệp THPT.
 
-### 1. Các ký hiệu
+Dưới đây là bảng tổng hợp toàn bộ lý thuyết, công thức tính nhanh và phương pháp giải 3 dạng toán điển hình kèm lời giải chi tiết.
 
-Trong một tam giác $ABC$ thì chúng ta thường kí hiệu:
+---
 
-![HỆ THỨC LƯỢNG TRONG TAM GIÁC LỚP 10](assets/images/he-thuc-luong-trong-tam-giac-lop-10-he-thuc-luong-trong-tam-giac-o2.png)
+## 1. Bảng tra cứu nhanh toàn bộ công thức hệ thức lượng
 
-- $A, B, C$: là các góc đỉnh $A, B, C$
+| Tên định lý / Công thức | Hệ thức toán học | Ý nghĩa & Ứng dụng |
+| :--- | :--- | :--- |
+| **Định lý Cosin** | $a^2 = b^2 + c^2 - 2bc\cos A$<br>$b^2 = c^2 + a^2 - 2ca\cos B$<br>$c^2 = a^2 + b^2 - 2ab\cos C$ | Tính một cạnh khi biết 2 cạnh và góc xen giữa; tính góc khi biết 3 cạnh |
+| **Hệ quả định lý Cosin** | $\cos A = \dfrac{b^2 + c^2 - a^2}{2bc}$<br>$\cos B = \dfrac{a^2 + c^2 - b^2}{2ac}$<br>$\cos C = \dfrac{a^2 + b^2 - c^2}{2ab}$ | Tính số đo các góc của tam giác |
+| **Định lý Sin** | $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C} = 2R$ | Tính bán kính đường tròn ngoại tiếp $R$; tính cạnh khi biết 1 cạnh và 2 góc |
+| **Độ dài đường trung tuyến** | $m_a^2 = \dfrac{b^2 + c^2}{2} - \dfrac{a^2}{4}$<br>$m_b^2 = \dfrac{a^2 + c^2}{2} - \dfrac{b^2}{4}$<br>$m_c^2 = \dfrac{a^2 + b^2}{2} - \dfrac{c^2}{4}$ | Tính độ dài trung tuyến kẻ từ đỉnh $A, B, C$ |
+| **Độ dài đường phân giác trong** | $l_a = \dfrac{2bc\cos \frac{A}{2}}{b+c}$<br>$l_b = \dfrac{2ac\cos \frac{B}{2}}{a+c}$<br>$l_c = \dfrac{2ab\cos \frac{C}{2}}{a+b}$ | Tính độ dài các đường phân giác trong |
+| **5 Công thức diện tích tam giác** | 1. $S = \dfrac{1}{2}ah_a = \dfrac{1}{2}bh_b = \dfrac{1}{2}ch_c$<br>2. $S = \dfrac{1}{2}ab\sin C = \dfrac{1}{2}bc\sin A = \dfrac{1}{2}ca\sin B$<br>3. $S = \dfrac{abc}{4R}$<br>4. $S = pr$ (với $p = \dfrac{a+b+c}{2}$)<br>5. $S = \sqrt{p(p-a)(p-b)(p-c)}$ (Công thức Heron) | Tính diện tích tam giác linh hoạt tùy theo các yếu tố đã biết |
 
-- $a, b, c$: là độ dài các cạnh đối diện với các đỉnh $A, B, C$
+---
 
-- $h_a, h_b, h_c$: là độ dài các đường cao hạ từ các đỉnh $A, B, C$
+## 2. Hệ thống lý thuyết trọng tâm
 
-- $m_a, m_b, m_c$: là độ dài các đường trung tuyến kẻ từ $A, B, C$
+### 2.1. Quy ước các kí hiệu trong tam giác $ABC$
 
-- $l_a, l_b, l_c$: là độ dài các đường phân giác trong kẻ từ $A, B, C$
+![Hệ thức lượng trong tam giác lớp 10](assets/images/he-thuc-luong-trong-tam-giac-lop-10-he-thuc-luong-trong-tam-giac-o2.png)
 
-- $R$: là bán kính đường tròn ngoại tiếp tam giác $ABC$
+- $A, B, C$: Số đo các góc tại các đỉnh $A, B, C$.
+- $a, b, c$: Độ dài các cạnh đối diện với các đỉnh $A, B, C$ (tương ứng là $BC, CA, AB$).
+- $h_a, h_b, h_c$: Độ dài các đường cao hạ từ các đỉnh $A, B, C$.
+- $m_a, m_b, m_c$: Độ dài các đường trung tuyến kẻ từ $A, B, C$.
+- $l_a, l_b, l_c$: Độ dài các đường phân giác trong kẻ từ $A, B, C$.
+- $R$: Bán kính đường tròn ngoại tiếp tam giác $ABC$.
+- $r$: Bán kính đường tròn nội tiếp tam giác $ABC$.
+- $p = \dfrac{a+b+c}{2}$: Nửa chu vi tam giác $ABC$.
+- $S$: Diện tích tam giác $ABC$.
 
-- $r$: là bán kính đường tròn nội tiếp tam giác $ABC$
+### 2.2. Các hệ thức lượng trong tam giác vuông (Ôn tập)
 
-- $p=\frac{1}{2}(a+b+c)$ là nửa chu vi tam giác $ABC$
+Cho tam giác $ABC$ vuông tại $A$, đường cao $AH = h$. Gọi $b' = AC'$, $c' = AB'$ là hình chiếu vuông góc của các cạnh góc vuông $b, c$ lên cạnh huyền $a = BC$:
 
-- $S$: là diện tích tam giác $ABC$
+![Hệ thức lượng trong tam giác vuông](assets/images/he-thuc-luong-trong-tam-giac-lop-10-he-thuc-luong-trong-tam-giac-vuong.png)
 
-### 2. Các hệ thức lượng trong tam giác vuông
+1. $b^2 = a \cdot b'$ và $c^2 = a \cdot c'$
+2. $a^2 = b^2 + c^2$ (Định lý Pythagoras)
+3. $h^2 = b' \cdot c'$
+4. $\dfrac{1}{h^2} = \dfrac{1}{b^2} + \dfrac{1}{c^2}$
+5. $a \cdot h = b \cdot c$
+6. $b = a\sin B = a\cos C = c\tan B = c\cot C$
+7. $c = a\sin C = a\cos B = b\tan C = b\cot B$
 
-Trong tam giác vuông $ABC.$ Gọi $b’, c’$ là độ dài các hình chiếu các cạnh góc vuông lên cạnh huyền ta có các hệ thức:
+---
 
-![HỆ THỨC LƯỢNG TRONG TAM GIÁC VUÔNG](assets/images/he-thuc-luong-trong-tam-giac-lop-10-he-thuc-luong-trong-tam-giac-vuong.png)
+## 3. Các dạng toán hệ thức lượng thường gặp và Phương pháp giải
 
-1. ${{b}^{2}}=a.{{b}’}$
+### Dạng 1: Chứng minh đẳng thức lượng giác trong tam giác
 
-2. ${{c}^{2}}=a.{{c}’}$
+**Phương pháp giải:**
+- **Cách 1:** Biến đổi một vế (thường là vế phức tạp) về vế còn lại bằng cách áp dụng các công thức lượng giác cơ bản: công thức biến đổi tổng thành tích, tích thành tổng, nhân đôi, góc bù, góc phụ ($A+B+C = 180^\circ \Rightarrow A+B = 180^\circ - C$).
+- **Cách 2:** Biến đổi đẳng thức cần chứng minh tương đương với một đẳng thức luôn đúng.
 
-3. ${{a}^{2}}={{b}^{2}}+{{c}^{2}}$
+#### Ví dụ minh họa 1
+Cho tam giác $ABC$. Chứng minh rằng:
+$$\sin A + \sin B + \sin C = 4\cos \dfrac{A}{2}\cos \dfrac{B}{2}\cos \dfrac{C}{2}$$
 
-4. ${{h}^{2}}={{b}’}.{{c}’}$
+**Lời giải chi tiết:**
+Áp dụng công thức biến đổi tổng thành tích cho hai số hạng đầu:
+$$\sin A + \sin B = 2\sin \dfrac{A+B}{2}\cos \dfrac{A-B}{2}$$
 
-5. $\frac{1}{{{h}^{2}}}=\frac{1}{{{b}^{2}}}+\frac{1}{{{c}^{2}}}$
+Vì $A+B+C = 180^\circ \Rightarrow \dfrac{A+B}{2} = 90^\circ - \dfrac{C}{2}$, suy ra $\sin \dfrac{A+B}{2} = \cos \dfrac{C}{2}$.
 
-6. $a.h=b.c$
+Mặt khác, khai triển $\sin C = 2\sin \dfrac{C}{2}\cos \dfrac{C}{2}$. Ta có vế trái:
+$$\begin{aligned}
+\text{VT} &= 2\cos \dfrac{C}{2}\cos \dfrac{A-B}{2} + 2\sin \dfrac{C}{2}\cos \dfrac{C}{2} \\
+&= 2\cos \dfrac{C}{2} \left[ \cos \dfrac{A-B}{2} + \sin \dfrac{C}{2} \right]
+\end{aligned}$$
 
-7. $b=a.\sin B=a.\cos C$
+Do $\sin \dfrac{C}{2} = \cos \dfrac{A+B}{2}$, thay vào biểu thức:
+$$\begin{aligned}
+\text{VT} &= 2\cos \dfrac{C}{2} \left[ \cos \dfrac{A-B}{2} + \cos \dfrac{A+B}{2} \right] \\
+&= 2\cos \dfrac{C}{2} \cdot 2\cos \dfrac{A}{2}\cos \dfrac{B}{2} \\
+&= 4\cos \dfrac{A}{2}\cos \dfrac{B}{2}\cos \dfrac{C}{2} = \text{VP} \text{ (đpcm)}.
+\end{aligned}$$
 
-8. $c=a.\sin C=a.\cos B$
+#### Ví dụ minh họa 2
+Cho tam giác $ABC$ không vuông. Chứng minh rằng:
+$$\tan A + \tan B + \tan C = \tan A \cdot \tan B \cdot \tan C$$
 
-9. $b=c.\tan B=c.\cot C$
+**Lời giải chi tiết:**
+Vì $A + B + C = 180^\circ \Rightarrow A + B = 180^\circ - C$, do đó:
+$$\tan(A + B) = \tan(180^\circ - C) = -\tan C$$
 
-10. $c=b.\tan C=b.\cot B$
+Áp dụng công thức cộng cho $\tan(A+B)$:
+$$\dfrac{\tan A + \tan B}{1 - \tan A\tan B} = -\tan C$$
+$$\Leftrightarrow \tan A + \tan B = -\tan C(1 - \tan A\tan B) = -\tan C + \tan A\tan B\tan C$$
+$$\Leftrightarrow \tan A + \tan B + \tan C = \tan A \cdot \tan B \cdot \tan C \text{ (đpcm)}.$$
 
-### 3. Các hệ thức lượng trong tam giác thường
+---
 
-#### Định lý hàm số CÔSIN:
+### Dạng 2: Chứng minh bất đẳng thức lượng giác trong tam giác
 
-Trong tam giác $ABC$ ta luôn có:
-
-1. ${{a}^{2}}={{b}^{2}}+{{c}^{2}}-2bc\cos A$
-
-2. ${{b}^{2}}={{c}^{2}}+{{a}^{2}}-2ca\cos B$
-
-3. ${{c}^{2}}={{a}^{2}}+{{b}^{2}}-2ab\cos C$
-
-**Ghi nhớ:** Trong một tam giác, bình phương mỗi cạnh bằng tổng bình phương hai cạnh kia trừ đi hai lần tích hai cạnh ấy với côsin của góc xen giữa chúng.
-
-**Hệ quả:** Trong tam giác $ABC$ ta luôn có:
-
-1. $\cos A=\frac{{{b}^{2}}+{{c}^{2}}-{{a}^{2}}}{2bc}$,
-
-2. $\cos B=\frac{{{a}^{2}}+{{c}^{2}}-{{b}^{2}}}{2ac}$,
-
-3. $\cos C=\frac{{{a}^{2}}+{{b}^{2}}-{{c}^{2}}}{2ab}.$
-
-#### Định lý hàm số SIN:
-
-Trong tam giác $ABC$ ta có: 
-
-$$
-\frac{a}{\sin A}=\frac{b}{\sin B}=\frac{c}{\sin C}=2R
-$$
-
-**Hệ quả**: Với mọi tam giác $ABC$, ta có: 
-
-$$
-a=2R\sin A;b=2R\sin B;c=2R\sin C
-$$
-
-**Ghi nhớ:** Trong một tam giác, tỷ số giữa một cạnh của tam giác và sin của góc đối diện với cạnh đó bằng đường kính đường tròn ngoại tiếp tam giác.
-
-### Định lý về đường trung tuyến:
-
-Trong tam giác $ABC$ ta có:
-
-$$
-\begin{aligned}
-m_{a}^{2}=\frac{{{b}^{2}}+{{c}^{2}}}{2}-\frac{{{a}^{2}}}{4} \\ m_{b}^{2}=\frac{{{a}^{2}}+{{c}^{2}}}{2}-\frac{{{b}^{2}}}{4} \\ m_{c}^{2}=\frac{{{a}^{2}}+{{b}^{2}}}{2}-\frac{{{c}^{2}}}{4} \\
-\end{aligned}
-$$
-
-### Định lý về diện tích tam giác:
-
-Diện tích tam giác $ABC$ được tính theo các công thức sau:
-
-1. $S=\frac{1}{2}a{{h}_{a}}=\frac{1}{2}b{{h}_{b}}=\frac{1}{2}c{{h}_{c}}$
-
-2. $S=\frac{1}{2}ab\sin A=\frac{1}{2}ac\sin B=\frac{1}{2}bc\sin A$
-
-3. $S=\frac{abc}{4R}$
-
-4. $S=pr$
-
-5. $S=\sqrt{p(p-a)(p-b)(p-c)}$
-
-### Định lý về đường phân giác:
-
-$$
-{{l}_{a}}=\frac{2bc.\cos \frac{A}{2}}{b+c};{{l}_{b}}=\frac{2ac.\cos \frac{B}{2}}{a+c};{{l}_{c}}=\frac{2ab\cos \frac{C}{2}}{a+b}
-$$
-
-## II. CÁC DẠNG TOÁN HỆ THỨC LƯỢNG TRONG TAM GIÁC
-
-### Dạng 1: CHỨNG MINH ĐẲNG THỨC LƯỢNG GIÁC TRONG TAM GIÁC
-
-Để chứng minh đẳng thức lượng giác $A=B$ ta có thể thực hiện theo một trong các phương pháp sau:
-
-- **Phương pháp 1**: Biến đổi vế này thành vế kia.
-
-- **Phương pháp 2**: Xuất phát từ một một hệ thức đúng đã biết để suy ra đẳng thức cần chứng minh.
-
-**VÍ DỤ MINH HỌA**
-
-**Ví dụ 1**: Cho tam giác $ABC.$ Chứng minh các đẳng thức sau:
-
-1. $\sin A+\sin B+\sin C=4.\cos \frac{A}{2}.\cos \frac{B}{2}.\cos \frac{C}{2}$
-
-2. ${{\sin }^{2}}A+{{\sin }^{2}}B+{{\sin }^{2}}C=2+2\cos A.\cos B.\cos C$
-
-**Ví dụ 2**: Cho tam giác $ABC.$ Chứng minh các đẳng thức sau:
-
-1. $\tan A+\tan B+\tan C=\tan A.\tan B.\tan C$ ($\Delta$ABC không vuông)
-
-2. $\tan \frac{A}{2}.\tan \frac{B}{2}+\tan \frac{B}{2}.\tan \frac{C}{2}+\tan \frac{C}{2}.\tan \frac{A}{2}=1$
-
-### Dạng 2: CHỨNG MINH BẤT ĐẲNG THỨC LƯỢNG GIÁC TRONG TAM GIÁC
-
-#### Bất đẳng thức trong tam giác:
-
-Nếu a, b, c là ba cạnh của một tam giác thì:
-
-- $a > 0, b > 0, c > 0$
-
-- $\left| b-c \right|<a<b+c$
-
-- $\left| c-a \right|<b<c+a$
-
-- $\left| a-b \right|<c<a+b$
-
-- $a>b>c\Leftrightarrow A>B>C$
-
-#### Các bất đẳng thức cơ bản: Mời các bạn xem trong bài Các bất đẳng thức thường sử dụng
-
-Để chứng minh đẳng thức lượng giác $A<B$ ta có thể thực hiện theo một trong các phương pháp sau:
-
-- **Phương pháp 1**: Biến đổi bất đẳng thức cần chứng minh đến đến một bất đẳng thức hiển nhiên đúng.
-
-- **Phương pháp 2**: Sử dụng các bất đẳng thức cơ bản đã biết (Cô si, BCS,…) để suy ra bất đẳng thức cần chứng minh.
-
-**VÍ DỤ MINH HỌA:**
-
-**Ví dụ 1:** Cho tam giác $ABC.$ Chứng minh rằng:  
-
-$$
-\sin \frac{A}{2}.\sin \frac{B}{2}.\sin \frac{C}{2}\le \frac{1}{8}
-$$
-
-**Ví dụ 2:** Cho tam giác $ABC.$ Chứng minh rằng:
-
-1. $\cos \frac{A}{2}+\cos \frac{B}{2}+\cos \frac{C}{2}\le \frac{3\sqrt{3}}{2}$
-
-2. $\sin A+\sin B+\sin C\le \frac{3\sqrt{3}}{2}$
-
-3. $\tan \frac{A}{2}+\tan \frac{B}{2}+\tan \frac{C}{2}\ge \sqrt{3}$
-
-**Ví dụ 3:** Cho tam giác $ABC.$ Chứng minh rằng:
-
-1. $\cos \frac{A}{2}.\cos \frac{B}{2}.\cos \frac{C}{2}\le \frac{3\sqrt{3}}{8}$
-
-2. $\tan A+\tan B+\tan C\ge 3\sqrt{3}$
-
-3. $\tan \frac{A}{2}.\tan \frac{B}{2}.\tan \frac{C}{2}\le \frac{1}{3\sqrt{3}}$
-
-### Dạng 3: NHẬN DẠNG TAM GIÁC
-
-**Phương pháp:**
-
-1. Sử dụng các phép biến đổi tương đương hoặc hệ quả để biến đổi các điều kiện của đề bài thành một đẳng thức mà từ đó ta dể dàng kết luận được tính chất của tam giác (vuông, cân, đều…)
-
-2. Chứng minh bất đẳng thức $A\ge B$ hoặc $A\le B$ để tìm điều kiện xảy ra dấu bằng trong các bất đẳng thức đó là tam giác đã cho phải vuông, cân, đều,…
-
-**VÍ DỤ MINH HỌA:**
-
-**Ví dụ 1:** Tam giác ABC có $\frac{\sin A+\cos B}{\sin B+\cos A}=\tan A.$ Chứng minh rằng $\Delta$ABC vuông.
-
-**Ví dụ 2:** Chứng minh rằng nếu $\Delta ABC$ thỏa mãn điều kiện $\cos 2A+\cos 2B+\cos 2C+1=0$ thì tam giác đó là tam giác vuông
-
-**Ví dụ 3:** Chứng minh rằng nếu tam giác $ABC$ thoả mãn một trong các điều kiện sau là tam giác cân:
-
-1. $\tan A+\tan B=2.\cot \frac{C}{2}$
-
-2. $\frac{\sin A+\sin B+\sin C}{\sin A+\sin B-\sin C}=\cot \frac{A}{2}.\cot \frac{C}{2}$
-
-**Ví dụ 4:** Chứng minh rằng nếu tam giác $ABC$ thoả mãn một trong các điều kiện sau là tam giác đều
-
-1. $\cos A.\cos B.\cos C=\frac{1}{8}$
-
-2. $\frac{\cos \frac{A}{2}}{1+\cos A}+\frac{\cos \frac{B}{2}}{1+\cos B}+\frac{\cos \frac{C}{2}}{1+\cos C}=\sqrt{3}$
-
-3. $\cos A+\cos B+\cos C=\sin \frac{A}{2}+\sin \frac{B}{2}+\sin \frac{C}{2}$
-
-4. $\frac{1}{\cos A}+\frac{1}{\cos B}+\frac{1}{\cos C}=\frac{1}{\sin \frac{A}{2}}+\frac{1}{\sin \frac{B}{2}}+\frac{1}{\sin \frac{C}{2}}$
-
-**Ví dụ 5:** Xác định dạng của tam giác $ABC$ biết:
-
-1. $a+b=\tan \frac{C}{2}(a.\tan A+b.\tan B)$
-
-2. $\frac{b}{\cos B}+\frac{c}{\cos C}=\frac{a}{\sin B.\sin C}$
-
-3. $\cos B+\cos C=\frac{b+c}{a}$
-
-4. $\frac{a.\cos A+b.\cos B+c.\cos C}{a+b+c}=\frac{1}{2}$
-
-**Ví dụ 6:** Hãy tính các góc của tam giác $ABC$ nếu trong tam giác đó ta có: 
-
-$$
-{{\sin }^{2}}A+{{\sin }^{2}}B+{{\sin }^{2}}C=\frac{9}{4}+3\cos C+{{\cos }^{2}}C
-$$
-
-**Ví dụ 7:** Tính các góc của tam giác $ABC$ biết rằng: 
-
-$$
-\begin{cases} 4p(p-a)\le bc \\ 
- \sin \frac{A}{2}\sin \frac{B}{2}\sin \frac{C}{2}=\frac{2\sqrt{3}-3}{8} \end{cases}
-$$
-
- trong đó BC = a, AB = c, $p=\frac{a+b+c}{2}.$
+**Phương pháp giải:**
+- Sử dụng các bất đẳng thức đại số kinh điển như BĐT Cauchy (AM-GM), BĐT Bunhiacopxki (Cauchy-Schwarz).
+- Khảo sát hàm số hoặc đưa về tam thức bậc hai theo một biến lượng giác ($\cos \dfrac{A}{2}, \sin \dfrac{A}{2},\dots$) với điều kiện biệt thức $\Delta \le 0$.
+
+#### Ví dụ minh họa
+Cho tam giác $ABC$. Chứng minh rằng:
+$$\sin \dfrac{A}{2}\sin \dfrac{B}{2}\sin \dfrac{C}{2} \le \dfrac{1}{8}$$
+
+**Lời giải chi tiết:**
+Biến đổi tích thành tổng cho hai thừa số đầu:
+$$\begin{aligned}
+P &= \sin \dfrac{A}{2}\sin \dfrac{B}{2}\sin \dfrac{C}{2} = \dfrac{1}{2}\left[\cos \dfrac{A-B}{2} - \cos \dfrac{A+B}{2}\right]\sin \dfrac{C}{2} \\
+&= \dfrac{1}{2}\left[\cos \dfrac{A-B}{2} - \sin \dfrac{C}{2}\right]\sin \dfrac{C}{2} \quad \left(\text{do } \cos \dfrac{A+B}{2} = \sin \dfrac{C}{2}\right) \\
+&= -\dfrac{1}{2}\sin^2 \dfrac{C}{2} + \dfrac{1}{2}\cos \dfrac{A-B}{2}\sin \dfrac{C}{2}
+\end{aligned}$$
+
+Đưa về dạng bình phương hoàn chỉnh:
+$$P = -\dfrac{1}{2}\left( \sin \dfrac{C}{2} - \dfrac{1}{2}\cos \dfrac{A-B}{2} \right)^2 + \dfrac{1}{8}\cos^2 \dfrac{A-B}{2}$$
+
+Vì $\cos^2 \dfrac{A-B}{2} \le 1$ và $-\dfrac{1}{2}\left( \sin \dfrac{C}{2} - \dfrac{1}{2}\cos \dfrac{A-B}{2} \right)^2 \le 0$, ta có:
+$$P \le \dfrac{1}{8}$$
+Dấu đẳng thức xảy ra khi và chỉ khi $\cos \dfrac{A-B}{2} = 1 \Rightarrow A = B$ và $\sin \dfrac{C}{2} = \dfrac{1}{2} \Rightarrow C = 60^\circ \Rightarrow A = B = C = 60^\circ$ (tam giác $ABC$ đều).
+
+---
+
+### Dạng 3: Nhận dạng tam giác (Vuông, Cân, Đều)
+
+**Phương pháp giải:**
+Chuyển đổi giả thiết của bài toán bằng các định lý Sin, Cosin hoặc công thức lượng giác về mối quan hệ giữa các cạnh ($a, b, c$) hoặc các góc ($A, B, C$):
+- Nếu dẫn đến $a = b$ hoặc $A = B$: Tam giác cân tại $C$.
+- Nếu dẫn đến $a^2 + b^2 = c^2$ hoặc $A = 90^\circ$: Tam giác vuông.
+- Nếu dẫn đến $a = b = c$ hoặc $A = B = C = 60^\circ$: Tam giác đều.
+
+#### Ví dụ minh họa 1
+Nhận dạng tam giác $ABC$ biết:
+$$\dfrac{\sin A + \cos B}{\sin B + \cos A} = \tan A$$
+
+**Lời giải chi tiết:**
+Điều kiện xác định: $\cos A \ne 0$ và $\sin B + \cos A \ne 0$.
+Quy đồng và nhân chéo:
+$$\begin{aligned}
+\sin A + \cos B &= \dfrac{\sin A}{\cos A}(\sin B + \cos A) \\
+\Leftrightarrow \cos A(\sin A + \cos B) &= \sin A(\sin B + \cos A) \\
+\Leftrightarrow \sin A\cos A + \cos A\cos B &= \sin A\sin B + \sin A\cos A \\
+\Leftrightarrow \cos A\cos B - \sin A\sin B &= 0 \\
+\Leftrightarrow \cos(A + B) &= 0
+\end{aligned}$$
+
+Vì trong tam giác $ABC$, $0^\circ < A + B < 180^\circ$, do đó:
+$$\cos(A + B) = 0 \Leftrightarrow A + B = 90^\circ \Rightarrow C = 90^\circ$$
+
+Vậy tam giác $ABC$ là **tam giác vuông tại $C$**.
+
+#### Ví dụ minh họa 2
+Chứng minh rằng nếu tam giác $ABC$ thỏa mãn điều kiện sau thì tam giác đó là tam giác cân:
+$$\tan A + \tan B = 2\cot \dfrac{C}{2}$$
+
+**Lời giải chi tiết:**
+Ta có:
+$$\text{VT} = \tan A + \tan B = \dfrac{\sin(A+B)}{\cos A\cos B} = \dfrac{\sin C}{\cos A\cos B}$$
+Mặt khác:
+$$\text{VP} = 2\cot \dfrac{C}{2} = 2\dfrac{\cos \frac{C}{2}}{\sin \frac{C}{2}} = \dfrac{2\cos^2 \frac{C}{2}}{\sin \frac{C}{2}\cos \frac{C}{2}} = \dfrac{1 + \cos C}{\frac{1}{2}\sin C} = \dfrac{2(1 + \cos C)}{\sin C}$$
+
+Đẳng thức tương đương:
+$$\dfrac{\sin C}{\cos A\cos B} = \dfrac{2\cos \frac{C}{2}}{\sin \frac{C}{2}} = \dfrac{2\sin \frac{A+B}{2}}{\cos \frac{A+B}{2}}$$
+
+Biến đổi và thu gọn đưa về:
+$$\cos(A - B) = 1 \Leftrightarrow A = B$$
+Vậy tam giác $ABC$ **cân tại $C$**.
+
+---
+
+## 4. Bài tập tự luyện có hướng dẫn
+
+**Bài 1:** Cho tam giác $ABC$ có $a = 7$, $b = 8$, $c = 5$.
+1. Tính số đo góc $A$ của tam giác. *(Đáp số: $\cos A = \dfrac{8^2 + 5^2 - 7^2}{2 \times 8 \times 5} = \dfrac{40}{80} = \dfrac{1}{2} \Rightarrow A = 60^\circ$)*.
+2. Tính diện tích tam giác $ABC$. *(Đáp số: $S = \dfrac{1}{2}bc\sin A = \dfrac{1}{2} \times 8 \times 5 \times \dfrac{\sqrt{3}}{2} = 10\sqrt{3}$)*.
+3. Tính bán kính đường tròn ngoại tiếp $R$ và nội tiếp $r$. *(Đáp số: $R = \dfrac{a}{2\sin A} = \dfrac{7}{\sqrt{3}} = \dfrac{7\sqrt{3}}{3}$; $p = 10 \Rightarrow r = \dfrac{S}{p} = \sqrt{3}$)*.
+
+**Bài 2:** Cho tam giác $ABC$ thỏa mãn $\sin^2 A = \sin B \cdot \sin C$ và $b + c = 2a$. Chứng minh tam giác $ABC$ là tam giác đều.

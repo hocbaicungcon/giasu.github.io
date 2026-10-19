@@ -1,60 +1,85 @@
 ---
-title: Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu?
-description: Theo tìm hiểu hầu hết mức sử dụng gia đình nằm ở khoảng từ hơn 100 –
-  700 kWh/tháng. Để sử dụng điện tiết kiệm, mỗi người cần biết mức tiêu thụ điện của
-  từng
+title: 'Lượng Điện Tiêu Thụ Trung Bình 1 Gia Đình Là Bao Nhiêu? Cách Tính Chi Tiết'
+description: 'Lượng điện tiêu thụ trung bình của 1 gia đình từ 200 đến 600 kWh/tháng kèm bảng công suất đồ điện gia dụng và biểu giá điện sinh hoạt bậc thang mới nhất.'
 category: Vật lí
 type: Khám phá
 date: '2024-10-02'
 tags:
-- vật lí
-- điện năng
+- Vật lí
+- Điện năng
+- Tiết kiệm điện
 ---
 
-Theo tìm hiểu hầu hết mức sử dụng gia đình nằm ở khoảng từ hơn 100 – 700 kWh/tháng. Để sử dụng điện tiết kiệm, mỗi người cần biết mức tiêu thụ điện của từng thiết bị đồ dùng.
+**Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu?** Theo số liệu thống kê của Tập đoàn Điện lực Việt Nam (EVN), hơn $97{,}8\%$ hộ gia đình tại Việt Nam (tương đương hơn 26 triệu hộ) có mức tiêu thụ điện dao động từ **$150$ đến $650\text{ kWh/tháng}$** (số điện), với mức phổ biến nhất ở hộ gia đình từ 3 – 5 người là khoảng **$250 - 450\text{ kWh/tháng}$**.
 
-## Công suất tiêu thụ của các thiết bị thông dụng
+Hiểu rõ công suất của từng thiết bị trong nhà và công thức tính điện năng tiêu thụ sẽ giúp bạn chủ động quản lý hóa đơn tiền điện và áp dụng các biện pháp tiết kiệm hiệu quả.
 
-Để tính được lượng điện năng tiêu thụ (W/h hoặc KW/h hoặc cách gọi bình dân là [số điện](/bai-viet/so-dien-la-gi-1-so-dien-bang-bao-nhieu-kwh.html), cân điện) mỗi tháng, trước tiên, người dùng cần nắm rõ chỉ số công suất tiêu thụ điện năng của các thiết bị (là thông số các nhà sản xuất ghi rõ trên bao bì thiết bị) và thời gian sử dụng sản phẩm.
+Xem thêm: [Số điện là gì? 1 số điện bằng bao nhiêu kWh?](/bai-viet/so-dien-la-gi-1-so-dien-bang-bao-nhieu-kwh.html)
 
-![Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu?](assets/images/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu-nhan-nang-luong-la-gi.webp)
+---
 
-- **TV màn hình phẳng:** TV có kích cỡ màn hình 32 inh thường có công suất khoảng 40W. Như vậy, nếu bật TV liên tục trong vòng 25 tiếng đồng hồ sẽ tiêu thụ hết 1 KWh (1 số điện). TV 40 inh công suất 65W dùng 15,4 tiếng tiêu thụ khoảng 1 số điện. Nếu sử dụng các dòng TV màn hình lồi (CRT) cũ thì công suất thường lớn hơn rất nhiều.
+## 1. Công thức tính lượng điện năng tiêu thụ
 
-- **Nồi cơm điện:** Có công suất khoảng 500W dùng 2 giờ tiêu thụ 1KW giờ. Công suất 750W dùng 1,3 giờ tiêu thụ 1 KW giờ.
+Lượng điện năng tiêu thụ của bất kì thiết bị điện nào được tính theo công thức Vật lí cơ bản:
 
-- **Tủ lạnh:** Các loại tủ lạnh nhỏ có dung tích 150 lít thường có công suất 100-150W. Như vậy, bình quân mỗi ngày, tủ lạnh dung tích này tiêu thụ 1,5 – 1,7 KWh. Mỗi tháng tiêu thụ hết ít nhất 45 số điện. Tuy nhiên, đây chỉ là cách tính tương đối vì công suất tiêu thụ điện của tủ lạnh phụ thuộc rất nhiều vào nhiệt độ môi trường và cách dùng.
+$$A = P \times t$$
 
-- **Điều hòa nhiệt độ:** Đây có thể xem là thiết bị ngốn nhiều điện năng nhất trong gia đình. Một máy điều hòa nhiệt độ 9000 BTU có công suất dao động từ 800 – 850 W. Các máy 12000 BTU có công suất 1500W. Như vậy, Nếu một chiếc điều hòa nhiệt độ 9000BTU chạy trong vòng một tiếng đồng hồ sẽ tiêu tốn 0,85KWh (gần 1 số điện). Còn một chiếc điều hòa nhiệt độ 12000BTU sẽ tiêu tốn của gia đình bạn 1,5 số điện sau 1 giờ sử dụng.
+Trong đó:
+- **$A$**: Lượng điện năng tiêu thụ, đơn vị là **$\text{kWh}$** ($1\text{ kWh} = 1\text{ số điện}$).
+- **$P$**: Công suất tiêu thụ của thiết bị, đơn vị là **$\text{kW}$** ($1\text{ kW} = 1000\text{ W}$). Thông số này được in trên nhãn mác hoặc nhãn năng lượng của sản phẩm.
+- **$t$**: Thời gian thiết bị hoạt động, đơn vị là **giờ ($\text{h}$)**.
 
-- **Quạt điện:** Nếu bật một chiếc quạt 40W 5 tiếng/ngày với tốc độ cao nhất thì bạn phải trả thêm khoảng 2kWh/tháng so  với việc để quạt chạy ở mức độ thấp nhất.
+![Nhãn năng lượng dán trên thiết bị gia dụng](assets/images/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu-nhan-nang-luong-la-gi.webp)
 
-- **Bàn là:** Bàn là thường có công suất 750W đến trên 1000W. Như vậy, nếu sử dụng thiết bị này khoảng 10 tiếng/tuần, gia đình bạn sẽ tiêu tốn 30 số điện/ tháng.
+---
 
-- **Máy giặt cửa trước:** Công suất 1.240W, máy sẽ tiêu thụ 1,24kw điện trong 1 giờ giặt.
+## 2. Bảng công suất và mức tiêu thụ điện của các thiết bị gia đình
 
-- **Máy hút bụi** thường được giới thiệu có công suất tối đa, tức là khi dùng cách hút lớn nhất khoảng 1.800W; nếu máy hoạt động liên tục trong 30 phút, số điện tiêu thụ gần 1kw.
+Dưới đây là bảng thống kê ước tính cho một hộ gia đình 4 người sinh sống tại đô thị:
 
-- **Bếp từ** thường có công suất 1800W đến trên 2200W, khi sử dụng 2 tiếng trong một ngày, lượng điện tiêu thụ trong 1 ngày khoảng 4,4 kWh (2,20kW x 2h), lượng tiêu thụ trong 30 ngày là 123kW.
+| Thiết bị điện | Công suất trung bình ($P$) | Tần suất sử dụng ước tính | Lượng điện tiêu thụ / tháng | Chi phí tiền điện ước tính |
+| :--- | :---: | :---: | :---: | :---: |
+| **Điều hòa 9.000 BTU (Inverter)** | $800 - 850\text{ W}$ | $8\text{ giờ/ngày}$ | $150 - 180\text{ kWh}$ | $350.000 - 450.000\text{ đ}$ |
+| **Tủ lạnh (180L - 250L)** | $120 - 150\text{ W}$ | Hoạt động $24/24$ (ngắt nghỉ) | $35 - 50\text{ kWh}$ | $80.000 - 120.000\text{ đ}$ |
+| **Bình nóng lạnh (20L - 30L)** | $2.500\text{ W}$ | $1\text{ giờ/ngày}$ | $75\text{ kWh}$ | $175.000\text{ đ}$ |
+| **Bếp từ đôi** | $2.000 - 2.200\text{ W}$ | $1{,}5\text{ giờ/ngày}$ | $90\text{ kWh}$ | $210.000\text{ đ}$ |
+| **Máy giặt cửa trước** | $1.200\text{ W}$ | $1\text{ giờ/ngày}$ | $36\text{ kWh}$ | $85.000\text{ đ}$ |
+| **Nồi cơm điện** | $700\text{ W}$ | $1\text{ giờ/ngày}$ | $21\text{ kWh}$ | $50.000\text{ đ}$ |
+| **Tivi LED 43 - 55 inch** | $80 - 120\text{ W}$ | $5\text{ giờ/ngày}$ | $15\text{ kWh}$ | $35.000\text{ đ}$ |
+| **Quạt điện (2 - 3 chiếc)** | $50\text{ W/chiếc}$ | $10\text{ giờ/ngày}$ | $45\text{ kWh}$ | $105.000\text{ đ}$ |
+| **Hệ thống đèn LED chiếu sáng** | $100\text{ W}$ (cả nhà) | $6\text{ giờ/ngày}$ | $18\text{ kWh}$ | $42.000\text{ đ}$ |
+| **Tổng cộng ước tính** | — | — | **$485 - 530\text{ kWh}$** | **$1.150.000 - 1.300.000\text{ đ}$** |
 
-## Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu?
+---
 
-Theo thống kê, hơn 97,8% số hộ gia đình (hơn 26 triệu hộ gia đình) có mức sử dụng dưới 700 kWh một tháng và 2,2% (khoảng 0,6 triệu hộ) dùng từ 701 kWh trở lên. Hiện, 2,2% số hộ sử dụng hơn 700 kWh một tháng này đang tiêu dùng trên 13% sản lượng điện cả nước.
+## 3. Biểu giá điện sinh hoạt bậc thang áp dụng hiện nay
 
-![cách tính tiền điện sinh hoạt hàng tháng, Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu?](assets/images/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu-cach-tinh-tien-dien.webp)
+Tại Việt Nam, giá bán lẻ điện sinh hoạt cho hộ gia đình được tính theo hình thức **lũy tiến bậc thang 6 bậc** (càng dùng nhiều thì đơn giá càng cao nhằm khuyến khích sử dụng điện tiết kiệm):
 
-Cách tính tiền điện mời bạn tham khảo trong bài [Cách tính tiền điện sinh hoạt hàng tháng như nào?](/bai-viet/cach-tinh-tien-dien-sinh-hoat-hang-thang.html)
+| Bậc thang | Mức sản lượng áp dụng (kWh/tháng) | Đơn giá chưa VAT (đồng/kWh) | Đơn giá có VAT $8\%$ (đồng/kWh) |
+| :---: | :--- | :---: | :---: |
+| **Bậc 1** | Cho kWh từ $0 - 50$ | $1.806$ | $1.950$ |
+| **Bậc 2** | Cho kWh từ $51 - 100$ | $1.866$ | $2.015$ |
+| **Bậc 3** | Cho kWh từ $101 - 200$ | $2.167$ | $2.340$ |
+| **Bậc 4** | Cho kWh từ $201 - 300$ | $2.729$ | $2.947$ |
+| **Bậc 5** | Cho kWh từ $301 - 400$ | $3.050$ | $3.294$ |
+| **Bậc 6** | Cho kWh từ $401$ trở lên | $3.151$ | $3.403$ |
 
-Hiện tại, tiền điện đang tính theo thang 6 bậc, Bộ Công Thương đang lấy ý kiến về sửa biểu giá bán lẻ điện, với giá sinh hoạt dự kiến còn 5 bậc thay vì 6 như hiện hành.
+![Cách tính tiền điện sinh hoạt bậc thang](assets/images/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu-cach-tinh-tien-dien.webp)
 
-Ví dụ một hộ sử dụng 785 kWh điện một tháng, nếu tính theo phương án 5 bậc, số tiền phải trả là hơn 2,3 triệu đồng. Mức này tăng khoảng 35.000 đồng so với biểu giá 6 bậc hiện hành.
+Xem hướng dẫn chi tiết: [Cách tính tiền điện sinh hoạt hàng tháng theo bậc thang](/bai-viet/cach-tinh-tien-dien-sinh-hoat-hang-thang.html)
 
-| Bậc | Biểu giá hiện hành (6 bậc) | Phương án 5 bậc |
-| --- | --- | --- |
-|  | Mức sử dụng | Giá (*) |
-| 1 | 0-50 kWh | 1.728 |
-| 2 | 51-100 kWh | 1.786 |
-| 3 | 101-200 kWh | 2.074 |
-| 4 | 201-300 kWh | 2.612 |
-| 5 | 301-400 kWh | 2.919 |
-| 6 | 401 kWh trở lên | 3.015 |
+---
+
+## 4. Các giải pháp cắt giảm tiền điện hiệu quả cho gia đình
+
+1. **Điều hòa nhiệt độ:** Đặt nhiệt độ ở mức $26 - 28^\circ\text{C}$ kết hợp quạt gió nhẹ. Mỗi khi tăng nhiệt độ thêm $1^\circ\text{C}$, bạn có thể tiết kiệm từ $2 - 3\%$ điện năng của điều hòa.
+2. **Tủ lạnh:** Không để thức ăn còn nóng vào tủ lạnh; kiểm tra gioăng cao su định kì; không mở cửa tủ quá lâu.
+3. **Bình nóng lạnh:** Chỉ bật trước khi tắm $10 - 15\text{ phút}$, không nên cắm bình liên tục 24/24 vừa tốn điện vừa tiềm ẩn nguy cơ mất an toàn.
+4. **Rút phích cắm thiết bị chờ:** Các thiết bị như tivi, máy tính, lò vi sóng ở chế độ Standby vẫn âm thầm tiêu thụ khoảng $5 - 10\text{ W}$, tương đương vài số điện mỗi tháng.
+
+---
+
+## Bài viết liên quan
+- [Cách tính tiền điện sinh hoạt hàng tháng chi tiết](/bai-viet/cach-tinh-tien-dien-sinh-hoat-hang-thang.html)
+- [Vùng 1, vùng 2, vùng 3, vùng 4 là ở đâu và bảng lương tối thiểu](/bai-viet/vung-1-vung-2-vung-3-vung-4-la-o-dau.html)

@@ -1,7 +1,6 @@
 ---
-title: 101 ĐỀ ĐỌC HIỂU CÓ ĐÁP ÁN THI THPT QUỐC GIA
-description: TUYỂN TẬP 101 ĐỀ ĐỌC HIỂU CÓ ĐÁP ÁN CHI TIẾT ÔN THI THPT QUỐC GIA 2021
-  (Đề tham khảo, đề chính thức của BGD và đề thi thử của các trường trên cả nước)
+title: '101 Đề Đọc Hiểu Có Đáp Án Thi THPT Quốc Gia Môn Ngữ Văn'
+description: 'Tuyển tập 101 đề đọc hiểu môn Ngữ văn ôn thi tốt nghiệp THPT có đáp án chi tiết, trích dẫn văn bản thơ và văn xuôi hay kèm thang điểm chuẩn.'
 category: Ngữ văn
 type: Bài tập
 date: '2024-10-02'

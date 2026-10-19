@@ -10,9 +10,6 @@ tags:
 - Chương trình mới
 grade: 10
 ---
-
-# Danh pháp các chất hóa học chương trình giáo dục phổ thông mới 2018PHẦN 1: DANH PHÁP CÁC CHẤT VÔ CƠ
-
 1. **HỆ THỐNG TÊN NGUYÊN TỐ, ĐƠN CHẤT**
 
 Với hệ thống tiếng Anh, cả nguyên tố và đơn chất đều được biểu diễn bằng thuật ngữ “element”. Tên gọi của nguyên tố và đơn chất theo đó giống nhau.

@@ -12,9 +12,6 @@ tags:
 - GSP
 - Phần mềm dạy học
 ---
-
-# Bộ công cụ cho phần mềm hình học Geometer’s Sketchpad (Tool for GSP)
-
 Bộ công cụ cho GSP, Bộ công cụ cho phần mềm hình học Geometer’s Sketchpad (Tool for GSP) là tập hợp các công cụ để giúp Quý thầy cô vẽ hình được dễ dàng, đơn giản.
 
 Thay vì phải tự xây dựng hình vẽ trải qua nhiều bước dựng hình (chẳng hạn vẽ hình bình hành thì thầy cô phải vẽ một đoạn thẳng,  rồi sử dụng các công cụ vẽ đường thẳng song song….) thì giờ đây thầy cô chỉ cần lựa chọn công cụ vẽ hình bình hành và chọn 3 đỉnh là xong.

@@ -1,5 +1,5 @@
 ---
-title: PHÚC BẤT TRÙNG LAI, HỌA VÔ ĐƠN CHÍ LÀ GÌ?
+title: 'Phúc Bất Trùng Lai, Họa Vô Đơn Chí Là Gì? Ý Nghĩa Sâu Sắc'
 description: '"Phúc bất trùng lai" ý chỉ may mắn không đến nhiều lần. May mắn chỉ
   đến một lần, những lần sau sẽ không được như vậy. Thay vì trông chờ may mắn, hãy
   cố gắng'

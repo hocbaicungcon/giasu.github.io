@@ -448,24 +448,235 @@ $$1 \quad 2 \quad 3 \quad 4 \quad 5 \quad 6 \quad 7 \quad 8 \quad 9$$
 
 **Bài 108.1.** Bản đồ dưới đây là thành phố Henry Potter đang sinh sống. Hệ thống đường giao thông là các đường thẳng của lưới ô vuông. Mỗi khối nhà có bề mặt 100m. Các bạn của Potter ở các vị trí A, B, C, D (trên hình vẽ). Hỏi họ tập trung hội họp chỗ nào để tổng chiều dài quãng đường mỗi người phải đi là ít nhất?
 
-![Thành phố Henry Potter](/assets/images/108-to-hop-pp/bai-108-1-henry-potter.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="40" y="40" width="200" height="200" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="80" y1="40" x2="80" y2="240" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="120" y1="40" x2="120" y2="240" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="160" y1="40" x2="160" y2="240" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="200" y1="40" x2="200" y2="240" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="40" y1="80" x2="240" y2="80" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="40" y1="120" x2="240" y2="120" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="40" y1="160" x2="240" y2="160" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="40" y1="200" x2="240" y2="200" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="40" cy="160" r="5" fill="#1e293b"/>
+    <circle cx="160" cy="240" r="5" fill="#1e293b"/>
+    <circle cx="240" cy="80" r="5" fill="#1e293b"/>
+    <circle cx="120" cy="40" r="5" fill="#1e293b"/>
+    <text x="25" y="165" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="end">A</text>
+    <text x="160" y="260" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="255" y="85" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="120" y="28" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+  </svg>
+</div>
 
 **Bài 108.2.** Bản đồ xứ "Không Không Thấy" có 35 thành phố (các dấu tròn trên bản đồ) – các đường giao thông là các đường nối các thành phố. Các thành phố cạnh nhau có khoảng cách là 5km. Nhà Vua có hứa với dân chúng là sẽ chọn một số thành phố và ở đó xây dựng các trạm cứu hỏa sao cho không có thành phố nào cách trạm cứu hỏa gần nhất quá 5km.
 Hỏi cần có ít nhất bao nhiêu trạm cứu hỏa để đáp ứng dự án này?
 
-![Xứ Không Không Thấy](/assets/images/108-to-hop-pp/bai-108-2-khong-khong-thay.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="270" height="270" viewBox="0 0 270 270" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <line x1="35" y1="35" x2="225" y2="35" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="35" y1="73" x2="225" y2="73" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="35" y1="111" x2="225" y2="111" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="35" y1="149" x2="225" y2="149" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="35" y1="187" x2="225" y2="187" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="35" y1="225" x2="187" y2="225" stroke="#1e293b" stroke-width="1.5"/>
+
+    <line x1="35" y1="35" x2="35" y2="225" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="73" y1="35" x2="73" y2="225" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="111" y1="35" x2="111" y2="225" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="149" y1="35" x2="149" y2="225" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="187" y1="35" x2="187" y2="225" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="225" y1="35" x2="225" y2="187" stroke="#1e293b" stroke-width="1.5"/>
+
+    <!-- 35 thành phố -->
+    <circle cx="35" cy="35" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="73" cy="35" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="111" cy="35" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="149" cy="35" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="187" cy="35" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="225" cy="35" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+
+    <circle cx="35" cy="73" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="73" cy="73" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="111" cy="73" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="149" cy="73" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="187" cy="73" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="225" cy="73" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+
+    <circle cx="35" cy="111" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="73" cy="111" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="111" cy="111" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="149" cy="111" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="187" cy="111" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="225" cy="111" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+
+    <circle cx="35" cy="149" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="73" cy="149" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="111" cy="149" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="149" cy="149" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="187" cy="149" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="225" cy="149" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+
+    <circle cx="35" cy="187" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="73" cy="187" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="111" cy="187" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="149" cy="187" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="187" cy="187" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="225" cy="187" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+
+    <circle cx="35" cy="225" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="73" cy="225" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="111" cy="225" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="149" cy="225" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="187" cy="225" r="5" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+  </svg>
+</div>
 
 **Bài 108.3.** Trong hình là bản đồ của hòn đảo Cyberland có 9 thành phố. Khoảng cách các con đường từ thành phố này sang thành phố khác được ghi trên sơ đồ. Trong các cuộc dạo chơi xuất phát từ một địa điểm và tham quan cả 9 thành phố rồi quay lại nơi xuất phát. Hành trình nào có chiều dài nhỏ nhất (tiết kiệm km nhất)?
 
-![Hòn đảo Cyberland](/assets/images/108-to-hop-pp/bai-108-3-cyberland.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="270" height="270" viewBox="0 0 270 270" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <!-- Các cạnh đồ thị -->
+    <line x1="135" y1="35" x2="50" y2="85" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="135" y1="35" x2="220" y2="85" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="135" y1="35" x2="135" y2="85" stroke="#1e293b" stroke-width="1.8"/>
+    
+    <line x1="50" y1="85" x2="135" y2="85" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="135" y1="85" x2="220" y2="85" stroke="#1e293b" stroke-width="1.8"/>
+    
+    <line x1="50" y1="85" x2="50" y2="185" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="220" y1="85" x2="220" y2="185" stroke="#1e293b" stroke-width="1.8"/>
+
+    <line x1="50" y1="85" x2="90" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="220" y1="85" x2="180" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+
+    <line x1="135" y1="85" x2="90" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="135" y1="85" x2="180" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+
+    <line x1="50" y1="185" x2="90" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="220" y1="185" x2="180" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="90" y1="155" x2="180" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+
+    <line x1="50" y1="185" x2="135" y2="235" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="220" y1="185" x2="135" y2="235" stroke="#1e293b" stroke-width="1.8"/>
+
+    <line x1="90" y1="155" x2="135" y2="235" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="180" y1="155" x2="135" y2="235" stroke="#1e293b" stroke-width="1.8"/>
+
+    <!-- Trọng số -->
+    <text x="85" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">13</text>
+    <text x="180" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">13</text>
+    <text x="142" y="62" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">5</text>
+    <text x="92" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="175" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="35" y="140" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">13</text>
+    <text x="228" y="140" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">13</text>
+    <text x="75" y="125" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="195" y="125" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="105" y="125" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="165" y="125" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="65" y="170" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">5</text>
+    <text x="200" y="170" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">5</text>
+    <text x="135" y="150" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1" text-anchor="middle">12</text>
+    <text x="105" y="200" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="165" y="200" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+    <text x="80" y="220" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">13</text>
+    <text x="185" y="220" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">13</text>
+
+    <!-- 9 đỉnh -->
+    <circle cx="135" cy="35" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="50" cy="85" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="220" cy="85" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="135" cy="85" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="90" cy="155" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="180" cy="155" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="50" cy="185" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="220" cy="185" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="135" cy="235" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
 **Bài 108.4.** Từ hòn đảo C = "Cướp Biển" đến đảo K = "Kho báu" có thể đi bằng tàu thủy qua các đảo lân cận. Giá vé mỗi quãng đường được ghi trong sơ đồ. Hỏi cần ít nhất bao nhiêu tiền để có thể đi từ C đến K?
 
-![Cướp Biển đến Kho Báu](/assets/images/108-to-hop-pp/bai-108-4-cuop-bien-kho-bau.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="340" height="180" viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <line x1="50" y1="90" x2="110" y2="45" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="50" y1="90" x2="130" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="110" y1="45" x2="130" y2="155" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="110" y1="45" x2="205" y2="95" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="130" y1="155" x2="205" y2="95" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="130" y1="155" x2="280" y2="145" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="205" y1="95" x2="280" y2="45" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="205" y1="95" x2="280" y2="145" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="280" y1="145" x2="280" y2="45" stroke="#1e293b" stroke-width="1.8"/>
+
+    <!-- Trọng số -->
+    <text x="75" y="60" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">20</text>
+    <text x="80" y="135" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">80</text>
+    <text x="127" y="105" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">60</text>
+    <text x="160" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">10</text>
+    <text x="160" y="135" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">30</text>
+    <text x="205" y="160" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">20</text>
+    <text x="240" y="65" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">70</text>
+    <text x="250" y="115" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">60</text>
+    <text x="288" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">10</text>
+
+    <!-- Các đỉnh -->
+    <circle cx="50" cy="90" r="7" fill="#1e293b"/>
+    <circle cx="110" cy="45" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="130" cy="155" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="205" cy="95" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="280" cy="145" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="280" cy="45" r="7" fill="#1e293b"/>
+
+    <!-- Nhãn đỉnh -->
+    <text x="50" y="72" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Cướp biển</text>
+    <text x="280" y="30" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Kho báu</text>
+  </svg>
+</div>
 
 **Bài 108.5.** Từ làng Hencida đến làng Boncida có thể đi bằng xe Buýt qua các làng lân cận. Giá vé được ghi trên sơ đồ. Hỏi cách đi rẻ nhất để đến được từ H đến B?
 
-![Từ Hencida đến Boncida](/assets/images/108-to-hop-pp/bai-108-5-hencida-boncida.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="340" height="180" viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <!-- Đường đi cong và thẳng -->
+    <path d="M 40,120 Q 80,85 125,65" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 40,120 Q 90,155 145,110" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 125,65 Q 120,90 145,110" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 125,65 Q 200,30 270,55" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 125,65 Q 185,75 240,95" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 145,110 L 240,95" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 240,95 L 270,55" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 240,95 L 305,150" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 145,110 Q 185,160 305,150" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 270,55 Q 320,100 305,150" fill="none" stroke="#1e293b" stroke-width="1.8"/>
+
+    <!-- Trọng số -->
+    <text x="80" y="95" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">14</text>
+    <text x="90" y="145" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">9</text>
+    <text x="135" y="92" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">4</text>
+    <text x="200" y="45" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">9</text>
+    <text x="180" y="78" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">16</text>
+    <text x="190" y="112" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">18</text>
+    <text x="260" y="80" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">4</text>
+    <text x="280" y="115" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">6</text>
+    <text x="220" y="162" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">24</text>
+    <text x="312" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">12</text>
+
+    <!-- Đỉnh -->
+    <circle cx="40" cy="120" r="7" fill="#1e293b"/>
+    <circle cx="125" cy="65" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="145" cy="110" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="240" cy="95" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="270" cy="55" r="7" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="305" cy="150" r="7" fill="#1e293b"/>
+
+    <!-- Nhãn đỉnh -->
+    <text x="40" y="105" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Hencida</text>
+    <text x="305" y="170" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Boncida</text>
+  </svg>
+</div>
 
 ---
 

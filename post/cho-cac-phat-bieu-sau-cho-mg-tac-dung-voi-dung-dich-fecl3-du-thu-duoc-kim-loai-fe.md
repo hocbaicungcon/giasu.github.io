@@ -15,11 +15,6 @@ tags:
 - Kim loại tác dụng với muối
 grade: 12
 ---
-
-# Cho các phát biểu sau: Cho Mg tác dụng với dung dịch FeCl3 dư, thu được kim loại Fe Cho kim loại Ba tác dụng với dung dịch CuSO4 thu được kim loại Cu
-
- 
-
 Cho các phát biểu sau:
 
  (a) Cho Mg tác dụng với dung dịch FeCl3 dư, thu được kim loại Fe

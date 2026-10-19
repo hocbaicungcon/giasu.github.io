@@ -1,6 +1,6 @@
 ---
 title: Tổng hợp đề thi HSG lớp 12 môn hoá học
-description: Tổng hợp đề thi HSG lớp 12 môn hoá học
+description: 'Tổng hợp đề thi học sinh giỏi Hóa học lớp 12 cấp tỉnh và thành phố có lời giải chi tiết giúp học sinh ôn luyện hiệu quả.'
 category: Hóa học
 type: Bài tập
 date: '2021-06-25'

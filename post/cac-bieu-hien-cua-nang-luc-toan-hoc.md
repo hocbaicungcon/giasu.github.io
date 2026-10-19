@@ -1,8 +1,6 @@
 ---
 title: Các biểu hiện của năng lực Toán học
-description: 'Các biểu hiện của năng lực Toán học: Năng lực tư duy và lập luận, năng
-  lực mô hình hóa, năng lực giải quyết vấn đề, năng lực giao tiếp, năng lực sử dụng
-  công cụ...'
+description: '5 biểu hiện của năng lực Toán học theo Chương trình GDPT 2018: tư duy lập luận, mô hình hóa, giải quyết vấn đề, giao tiếp và sử dụng công cụ phương tiện.'
 category: Toán học
 type: Khám phá
 date: '2024-10-02'
@@ -13,17 +11,30 @@ tags:
 
 ## 1. Năng lực là gì?
 
-Theo Chương trình giáo dục phổ thông tổng thể, “năng lực là thuộc tính cá nhân được hình thành, phát triển nhờ tố chất sẵn có và quá trình học tập, rèn luyện, cho phép con người huy động tổng hợp các kiến thức, kĩ năng và các thuộc tính cá nhân khác như hứng thú, niềm tin, ý chí,… thực hiện thành công một loại hoạt động nhất định, đạt kết quả mong muốn trong những điều kiện cụ thể”.
+Theo Chương trình giáo dục phổ thông tổng thể (Chương trình GDPT 2018), **năng lực** là thuộc tính cá nhân được hình thành, phát triển nhờ tố chất sẵn có và quá trình học tập, rèn luyện, cho phép con người huy động tổng hợp các kiến thức, kĩ năng và các thuộc tính cá nhân khác như hứng thú, niềm tin, ý chí,… thực hiện thành công một loại hoạt động nhất định, đạt kết quả mong muốn trong những điều kiện cụ thể.
 
-Thông qua chương trình môn Toán, học sinh cần hình thành và phát triển được năng lực toán học, biểu hiện tập trung nhất của năng lực tính toán. Năng lực toán học bao gồm các thành tố cốt lõi sau: Năng lực tư duy và lập luận toán học; năng lực mô hình hóa toán học; năng lực giải quyết vấn đề toán học; năng lực giao tiếp toán học; năng lực sử dụng công cụ, phương tiện học toán.
+Thông qua chương trình môn Toán, học sinh cần hình thành và phát triển **năng lực toán học** — biểu hiện tập trung nhất của năng lực tính toán. Năng lực toán học bao gồm 5 thành tố cốt lõi:
+1. Năng lực tư duy và lập luận toán học.
+2. Năng lực mô hình hóa toán học.
+3. Năng lực giải quyết vấn đề toán học.
+4. Năng lực giao tiếp toán học.
+5. Năng lực sử dụng công cụ, phương tiện học toán.
 
 ![các biểu hiện của năng lực toán học](assets/images/cac-bieu-hien-cua-nang-luc-toan-hoc-cac-nang-luc-toan-hoc.jpg)
 
-Tùy vào từng đối tượng học sinh, yêu cầu cần đạt của từng khối lớp, năng lực toán học của mỗi học sinh được biểu hiện ở các mức độ khác nhau.
+### Bảng tổng hợp 5 thành tố năng lực Toán học theo CT GDPT 2018
 
-Dạy học theo hướng phát triển năng lực học sinh là chuyển đổi từ việc “học sinh cần phải biết gì” sang việc “phải biết và có thể làm gì” trong các tình huống và bối cảnh khác nhau. Do đó dạy học theo hướng phát triển năng lực học sinh chú trọng lấy học sinh làm trung tâm và giáo viên là người hướng dẫn, giúp các em chủ động trong việc đạt được năng lực theo yêu cầu đặt ra, phù hợp với đặc điểm cá nhân.
+| STT | Thành tố năng lực | Biểu hiện cốt lõi của học sinh | Hoạt động dạy học tương ứng |
+| :---: | :--- | :--- | :--- |
+| **1** | **Tư duy và lập luận toán học** | Thực hiện các thao tác tư duy (so sánh, phân tích, tổng hợp, quy nạp, diễn dịch); đưa ra chứng cứ và lập luận logic trước khi kết luận. | Giải bài toán chứng minh, so sánh, nhận dạng hình, phản biện lời giải sai. |
+| **2** | **Mô hình hóa toán học** | Thiết lập mô hình toán học (công thức, hàm số, phương trình, hệ phương trình, đồ thị) từ tình huống thực tế và giải quyết bài toán trong mô hình đó. | Bài toán thực tế, bài toán tối ưu chi phí, bài toán lãi suất, dự án STEM. |
+| **3** | **Giải quyết vấn đề toán học** | Nhận diện vấn đề, lựa chọn công cụ/thuật toán phù hợp, triển khai giải pháp và đánh giá tính hợp lý của kết quả thu được. | Hoạt động giải bài tập nhóm, khám phá quy luật, xử lý tình huống thực tiễn. |
+| **4** | **Giao tiếp toán học** | Đọc hiểu văn bản toán học; trình bày, diễn đạt ý tưởng rõ ràng bằng ngôn ngữ toán học (kí hiệu, liên kết logic); tương tác phản biện học tập. | Thuyết trình trước lớp, viết lời giải chi tiết, thảo luận và phản biện nhóm. |
+| **5** | **Sử dụng công cụ, phương tiện** | Sử dụng thành thạo máy tính cầm tay, phần mềm hình học (GeoGebra, Cabri, Geometer's Sketchpad), thước kẻ, compa để tìm tòi và kiểm tra kết quả. | Thực hành đo đạc ngoài trời, vẽ đồ thị hàm số, mô phỏng hình học không gian. |
 
-## 2. Các biểu hiện của năng lực Toán học
+---
+
+## 2. Chi tiết các biểu hiện của năng lực Toán học
 
 ### 1. Năng lực tư duy và lập luận toán học
 

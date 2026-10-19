@@ -1,6 +1,6 @@
 ---
 title: Giáo án powerpoint hóa học 11 KNTT cả năm
-description: Giáo án powerpoint hóa học 11 KNTT cả năm
+description: 'Tải trọn bộ giáo án điện tử Powerpoint Hóa học 11 Kết Nối Tri Thức cả năm với hình ảnh trực quan, thí nghiệm sinh động và trò chơi học tập.'
 category: Hóa học
 type: Bài học
 date: '2023-08-28'

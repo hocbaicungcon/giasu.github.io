@@ -1,6 +1,6 @@
 ---
 title: STEM hóa học lớp 12 làm cơm rượu
-description: STEM hóa học lớp 12 làm cơm rượu
+description: 'Kế hoạch bài dạy STEM Hóa học 12 chủ đề làm cơm rượu: ứng dụng phản ứng lên men của cacbohiđrat, quy trình chế tạo và phiếu đánh giá.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

@@ -3,11 +3,14 @@ title: Góc giữa hai đường thẳng trong không gian
 description: Góc giữa hai đường thẳng trong không gian là gì? Cách xác định góc giữa
   hai đường thẳng, cách tính góc giữa hai đường thẳng. Bài tập góc giữa hai đường
   thẳng trong không gian.
-category: Các môn khác
+category: Toán học
 type: Bài học
 date: '2024-10-02'
 tags:
-- Các môn khác
+- Toán học
+- Hình học không gian
+- Toán 11
+grade: 11
 ---
 
 ## 1. Góc giữa hai đường thẳng trong không gian là gì?
@@ -91,10 +94,20 @@ Gọi $M, N, P$ lần lượt là trung điểm của $S A, A B, B C$, ta có $M
 
 $$
 \begin{aligned}
-&M N=\frac{S B}{2}=\frac{a \sqrt{2}}{2}, N P=\frac{A C}{2}=\frac{a \sqrt{2}}{2} . \\
-&A P=S P=\frac{B C}{2}=a, S A=a \sqrt{2}
+&M N=\frac{S B}{2}=\frac{a \sqrt{2}}{2}, \quad N P=\frac{A C}{2}=\frac{a \sqrt{2}}{2}. \\
+&A P=S P=\frac{B C}{2}=a, \quad S A=a \sqrt{2}
 \end{aligned}
 $$
+
+Trong tam giác $S A P$, ta thấy $A P^2 + S P^2 = a^2 + a^2 = 2a^2 = S A^2$, suy ra tam giác $S A P$ vuông tại $P$. Do $M$ là trung điểm của cạnh huyền $S A$, ta có:
+$$M P = \frac{S A}{2} = \frac{a \sqrt{2}}{2}$$
+
+Như vậy tam giác $M N P$ có ba cạnh bằng nhau:
+$$M N = N P = M P = \frac{a \sqrt{2}}{2}$$
+
+Suy ra tam giác $M N P$ là tam giác đều, do đó $\widehat{M N P} = 60^\circ$.
+Vậy góc giữa hai đường thẳng $A C$ và $S B$ bằng $60^\circ$.
+
 
 **Ví dụ 3.** Cho hình chóp S.ABC có đáy là tam giác đều cạnh a, $SA\bot \left( ABC \right)$ và $SA=a\sqrt{3}.$ Gọi M, N lần lượt là trung điểm của AB và SC. Tính cosin góc giữa hai đường thẳng AN và CM.
 
@@ -120,7 +133,7 @@ Khi đó $\overrightarrow{AN}.\overrightarrow{CM}=\frac{1}{2}\left( \overrightar
 
 Lại có: $AN=\frac{SC}{2}=a;CM=\frac{a\sqrt{3}}{2}\Rightarrow \cos \varphi =\frac{\left| \frac{-3{{a}^{2}}}{8} \right|}{a.\frac{a\sqrt{3}}{2}}=\frac{\sqrt{3}}{4}.$
 
-**Bình luận:** Dựa vào hai cách làm trên ta thấy rằng, trong một số trường hợp, việc sử dụng công cụ vectơ để tính góc giữa hai đường thẳng giúp bài toán trở nên dễ ràng hơn rất nhiều!.
+**Bình luận:** Dựa vào hai cách làm trên ta thấy rằng, trong một số trường hợp, việc sử dụng công cụ vectơ để tính góc giữa hai đường thẳng giúp bài toán trở nên dễ dàng hơn rất nhiều!
 
 **Ví dụ 4.** Cho hình chóp S.ABC có $SA=SB=SC=AB=a;AC=a\sqrt{2}$ và $BC=a\sqrt{3}.$ Tính cosin góc giữa hai đường thẳng SC và AB.
 

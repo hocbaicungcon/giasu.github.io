@@ -12,9 +12,6 @@ tags:
 - Công thức lượng giác
 grade: 10
 ---
-
-# 100 bài tập công thức lượng giác lớp 10
-
 ## 1. Kiến thức cần nhớ
 
 - Định nghĩa các giá trị lượng giác $sin x, cos x, tan x, cot x$ của một cung, góc lượng giác

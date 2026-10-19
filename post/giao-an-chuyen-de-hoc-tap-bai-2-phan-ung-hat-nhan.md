@@ -1,6 +1,6 @@
 ---
 title: Giáo án chuyên đề học tập Bài 2 Phản ứng hạt nhân
-description: Giáo án chuyên đề học tập Bài 2 Phản ứng hạt nhân
+description: 'Giáo án chuyên đề học tập Hóa học 10 Bài 2 Phản ứng hạt nhân soạn theo công văn 5512 đầy đủ hoạt động dạy học và phiếu học tập.'
 category: Hóa học
 type: Bài học
 date: '2022-09-04'
@@ -12,9 +12,6 @@ tags:
 - Giáo án
 grade: 10
 ---
-
-# Bài 2. Phản ứng hạt nhân
-
 **PHẢN ỨNG HẠT NHÂN**
 **BỘ SÁCH**: **CÁNH DIỀU**
 **SỐ TIẾT: 4 TIẾT**

@@ -1,8 +1,6 @@
 ---
-title: Font chữ viết tay, font chữ tiểu học
-description: Font chữ tiểu học là font chữ tiểu học có ô ly nằm trong bộ chữ tiếng
-  việt với các chữ viết tiểu học chuẩn của bộ giáo dục và đào tạo, đem lại một Font
-  chữ
+title: 'Font Chữ Viết Tay, Font Chữ Tiểu Học Ô Ly Chuẩn Bộ Giáo Dục'
+description: 'Tải trọn bộ font chữ viết tay, font chữ tiểu học ô ly chuẩn Bộ Giáo dục và Đào tạo (UTM, HP, Tiểu học 4 hàng, 5 hàng) kèm hướng dẫn cài đặt trên máy tính.'
 category: CNTT
 type: Bài học
 date: '2024-10-02'
@@ -13,33 +11,60 @@ tags:
 - Font chữ viết tay
 ---
 
-Font chữ viết tay, font chữ tiểu học là bộ font chữ dạng script, đã được việt hóa chuyên dùng cho các thiết kế đồ họa, thiết kế thiệp mời, thiệp chúc mừng, banner quảng cáo, hình ảnh…
+**Font chữ viết tay và font chữ tiểu học** là bộ phông chữ dạng script và ô ly mô phỏng nét bút tập viết của học sinh, đã được Việt hóa theo chuẩn mã Unicode và TCVN3. Đây là công cụ thiết yếu dành cho giáo viên tiểu học dùng để soạn giáo án tập viết, tạo phiếu bài tập rèn chữ đẹp, cũng như dành cho các nhà thiết kế thiệp mừng, banner đồ họa.
 
-![Font chữ viết tay, font chữ tiểu học 1](assets/images/font-chu-viet-tay-font-chu-tieu-hoc-mau-font-chu-tap-viet-tieu-hoc.jpeg)
+![Mẫu font chữ tập viết tiểu học](assets/images/font-chu-viet-tay-font-chu-tieu-hoc-mau-font-chu-tap-viet-tieu-hoc.jpeg)
 
-## Link tải Font chữ viết tay, font chữ tiểu học
+---
 
-Hiện nay, có rất nhiều bộ font chữ viết tay tiếng Việt. Một số font chữ chúng tôi đã giới thiệu trong bài [Cách tải và cài đặt Font chữ Việt Nam (VNI, .Vn, TCVN3)](/bai-viet/font-chu-viet-nam-vni-vn-tcvn-day-du-nhat.html). Dưới đây là một số bộ phông chữ viết tay tiếng Việt khác.
+## 1. Trọn bộ Font chữ tiểu học ô ly chuẩn Bộ Giáo dục & Đào tạo
 
-Bộ font UTM là font chữ tiếng Việt viết tắt của Unicode Thiên Minh với rất nhiều kiểu chữ độc đáo. Bộ font UTM bao gồm 196 font UTM và 307 font SFU đã được Việt hóa phù hợp với bộ mã Unicode chuẩn thường dùng trên Unikey hay Vietkey trên cả hệ điều hành Windows và Macos nên bạn hoàn toàn có thể yên tâm sử dụng.
+Font chữ tiểu học có ô ly và lưới kẻ nằm trong bộ chữ tiếng Việt chuẩn của Bộ Giáo dục & Đào tạo, hỗ trợ hiển thị đầy đủ các nét thanh, nét đậm, chữ hoa sáng tạo và chữ số:
+- **Font Tiểu học 4 hàng, 5 hàng kẻ:** Mô phỏng chính xác từng ô ly kẻ trong vở tập viết của học sinh lớp 1, lớp 2.
+- **Font HP tiểu học (HP01, HP02):** Bộ font chữ nét thanh nét đậm phổ biến nhất của các thầy cô giáo luyện chữ đẹp.
+- **Font Unicode tiếng Việt chuẩn:** Gõ dễ dàng bằng Unikey, EVKey ở bảng mã Unicode hoặc TCVN3.
 
-![Font chữ viết tay UTM, font chữ tiểu học](assets/images/font-chu-viet-tay-font-chu-tieu-hoc-image-48.jpeg)
+👉 [**Tải trọn bộ Font chữ tiểu học ô ly tại đây (Google Drive)**](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-Tải Bộ font UTM để hỗ trợ gõ tiếng Việt dễ dàng
-- [Link tải font chữ viết tay UTM](#drive-pending-font-utm-giasu.ai.vn.zip)
+---
 
-**Font chữ tiểu học** là font chữ tiểu học có ô ly nằm trong bộ chữ tiếng việt với các chữ viết tiểu học chuẩn của bộ giáo dục và đào tạo, đem lại một Font chữ chuẩn sử dụng cho các chương trình soạn thảo, giáo dục của tiểu học với trọn bộ tất cả các font chữ dành cho học sinh tập viết, đây là công cụ được sử dụng nhiều nhất cho các giáo viên bậc tiểu học dùng để giảng dạy.
+## 2. Trọn bộ Font chữ viết tay UTM Việt hóa
 
-- [Link tải font tiểu học](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+Bộ font UTM (Unicode Thiên Minh) là bộ sưu tập font chữ viết tay nghệ thuật phong phú, bao gồm hơn 196 font UTM và 307 font SFU đã được Việt hóa hoàn chỉnh. Phù hợp cho thiết kế thiệp cưới, poster, slide bài giảng PowerPoint:
 
-Ngoài ra còn có bộ phông chữ viết tay việt hóa đẹp, mời bạn tải tại đây:
+![Font chữ viết tay UTM](assets/images/font-chu-viet-tay-font-chu-tieu-hoc-image-48.jpeg)
 
-- [font-chu-viet-tay-dep](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- **Đặc điểm:** Tương thích hoàn toàn với gõ gõ Unicode chuẩn trên Unikey, EVKey trên cả Windows và macOS.
+- **Tập tin font:** Định dạng `.ttf` và `.otf` chất lượng cao, nét vẽ sắc nét khi in ấn.
 
-## Hướng dẫn cài đặt font chữ viết tay Việt hóa
+👉 [**Tải bộ Font chữ viết tay UTM Việt hóa (Google Drive)**](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-**Bước 1:** Bạn cần giải nén font đã tải ở link trên.
+👉 [**Tải bộ Font chữ viết tay nghệ thuật mở rộng (Google Drive)**](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
-**Bước 2 :** Nhấn tổ hợp **Ctrl + A** để chọn toàn bộ font có trong thư mục → **Click chuột phải** → **Install** và đợi quá trình cài font diễn ra.
+---
 
-![Font chữ viết tay, font chữ tiểu học 2](assets/images/font-chu-viet-tay-font-chu-tieu-hoc-install-font-windows.jpeg)
+## 3. Hướng dẫn cài đặt font chữ trên máy tính chi tiết
+
+### Cách cài đặt trên hệ điều hành Windows (Win 10, Win 11)
+
+![Cách cài đặt font chữ trên Windows](assets/images/font-chu-viet-tay-font-chu-tieu-hoc-install-font-windows.jpeg)
+
+1. **Bước 1:** Tải file zip về máy và giải nén (Click chuột phải $\to$ Chọn **Extract Here** hoặc **Extract to...**).
+2. **Bước 2:** Mở thư mục chứa font vừa giải nén, nhấn tổ hợp phím **Ctrl + A** để chọn toàn bộ các file font (`.ttf` hoặc `.otf`).
+3. **Bước 3:** Click chuột phải vào vùng chọn $\to$ Nhấp chọn **Install for all users** (Cài đặt cho tất cả người dùng) hoặc **Install**. Hệ thống sẽ tự động cài toàn bộ font vào thư mục `C:\Windows\Fonts`.
+4. **Bước 4:** Khởi động lại phần mềm Microsoft Word, PowerPoint hoặc Photoshop để sử dụng.
+
+---
+
+### Cách cài đặt trên hệ điều hành macOS (MacBook, iMac)
+
+1. **Bước 1:** Tải file zip về máy và double click để giải nén.
+2. **Bước 2:** Mở ứng dụng **Font Book** (nhấn `Cmd + Space` gõ "Font Book").
+3. **Bước 3:** Kéo thả toàn bộ các file font đã giải nén vào cửa sổ ứng dụng Font Book (hoặc nhấn nút `+` ở góc trên cùng và chọn thư mục font).
+4. **Bước 4:** Font Book sẽ tự động kiểm tra và kích hoạt font chữ.
+
+---
+
+## Xem thêm tài liệu liên quan
+- [Cách tải và cài đặt Font chữ Việt Nam đầy đủ (VNI, .Vn, TCVN3)](/bai-viet/font-chu-viet-nam-vni-vn-tcvn-day-du-nhat.html)
+- [Trò chơi PowerPoint cho học sinh tiểu học hấp dẫn](/bai-viet/tro-choi-powerpoint-cho-hoc-sinh.html)

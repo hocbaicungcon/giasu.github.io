@@ -92,7 +92,7 @@ Cùng với bộ [Giáo án Toán 10 Kết Nối Tri Thức](/bai-viet/giao-an-t
 - [DS10-BÀI-2-TẬP-HỢP-VÀ-CÁC-PHÉP-TOÁN-TRÊN-TẬP-HỢP](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [GA.-Mệnh-dề](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [HAI-DẠNG-PHƯƠNG-TRÌNH-QUY-VỀ-BẬC-HAI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
-- [HÀM-SỐ-BẬC-HAI-CD](#drive-pending-HÀM-SỐ-BẬC-HAI-CD-giasu.ai.vn.pptx)
+- [HÀM-SỐ-BẬC-HAI-CD](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [KẾ-HOẠCH-BÀI-DẠY-BÀI-3-KHÁI-NIỆM-VÉC-TƠ](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [KHBD-Giá-trị-lượng-giác-của-một-góc-từ-0-dến-180](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [KHBH-ÔN-TẬP-CHƯƠNG-4-TOÁN-10-NỘP](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

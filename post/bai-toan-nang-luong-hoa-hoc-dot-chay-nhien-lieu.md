@@ -1,6 +1,6 @@
 ---
 title: Bài toán năng lượng hóa học đốt cháy nhiên liệu
-description: Bài toán năng lượng hóa học đốt cháy nhiên liệu
+description: 'Phương pháp giải bài toán năng lượng hóa học đốt cháy nhiên liệu, nhiệt lượng tỏa ra và hiệu suất nhiệt kèm các ví dụ có lời giải chi tiết.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

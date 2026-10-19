@@ -11,11 +11,6 @@ tags:
 - Hóa vô cơ
 grade: 11
 ---
-
-# Cho sơ đồ chuyển hóa: NaOH (+X)→ Z(+Y) →  NaOH (+X)→  E (+Y)→  CaCO3
-
- 
-
 Cho sơ đồ chuyển hóa: NaOH (+X)→ Z(+Y) →  NaOH (+X)→  E (+Y)→  CaCO3
 
 **B** iết: X, Y, Z, E là các hợp chất khác nhau và khác CaCO3; mỗi mũi tên ứng với một phương trình hóa

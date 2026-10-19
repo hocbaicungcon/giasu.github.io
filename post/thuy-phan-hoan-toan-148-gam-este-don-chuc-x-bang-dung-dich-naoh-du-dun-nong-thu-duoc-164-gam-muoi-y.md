@@ -1,106 +1,88 @@
 ---
-title: Thủy phân hoàn toàn 14,8 gam este đơn chức X bằng dung dịch NaOH dư, đun nóng,
-  thu được 16,4 gam muối Y
-description: Thủy phân hoàn toàn 14,8 gam este đơn chức X bằng dung dịch NaOH dư,
-  đun nóng, thu được 16,4 gam muối Y và m gam ancol Z. Giá trị của m là
+title: 'Thủy phân hoàn toàn 14,8 gam este đơn chức X: Tính khối lượng ancol Z'
+description: 'Hướng dẫn giải chi tiết bài toán thủy phân 14,8g este đơn chức X thu được 16,4g muối Y theo 2 phương pháp: tăng giảm khối lượng và bảo toàn khối lượng.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'
 tags:
 - Hóa 12
 - Este
+- Bảo toàn khối lượng
+- Tăng giảm khối lượng
 grade: 12
 ---
 
-Thủy phân hoàn toàn 14,8 gam este đơn chức X bằng dung dịch NaOH dư, đun nóng, thu được 16,4 gam muối Y và m gam ancol Z. Giá trị của m là
+**Bài toán:** Thủy phân hoàn toàn $14{,}8\text{ gam}$ este đơn chức X bằng dung dịch $\text{NaOH}$ dư, đun nóng, thu được $16{,}4\text{ gam}$ muối Y và $m\text{ gam}$ ancol Z. Giá trị của $m$ là:
 
- **A.** 6,4.              **B.** 4,6.                                **C.** 3,2.                                **D.** 9,2.
+- **A.** $6{,}4$.
+- **B.** $4{,}6$.
+- **C.** $3{,}2$.
+- **D.** $9{,}2$.
 
-![Thủy phân hoàn toàn 14,8 gam este đơn chức X bằng dung dịch NaOH dư, đun nóng, thu được 16,4 gam muối Y 1](assets/images/thuy-phan-hoan-toan-148-gam-este-don-chuc-x-bang-dung-dich-naoh-du-dun-nong-thu-duoc-164-gam-muoi-y-c70.jpg)
+---
 
-Cách 2
+## Lời giải chi tiết
 
-![Thủy phân hoàn toàn 14,8 gam este đơn chức X bằng dung dịch NaOH dư, đun nóng, thu được 16,4 gam muối Y 2](assets/images/thuy-phan-hoan-toan-148-gam-este-don-chuc-x-bang-dung-dich-naoh-du-dun-nong-thu-duoc-164-gam-muoi-y-c70.jpg)
+![Thủy phân hoàn toàn 14,8 gam este đơn chức X](assets/images/thuy-phan-hoan-toan-148-gam-este-don-chuc-x-bang-dung-dich-naoh-du-dun-nong-thu-duoc-164-gam-muoi-y-c70.jpg)
 
-Đây là một câu trong đề thi minh họa năm 2023 của bộ giáo dục
+### Cách 1: Phương pháp tăng giảm khối lượng (Giải nhanh)
 
-Mời các thầy cô và các em xem đầy đủ cả đề tại đây
+Phương trình phản ứng thủy phân este đơn chức:
+$$\text{RCOOR}' + \text{NaOH} \longrightarrow \text{RCOONa} + \text{R}'\text{OH}$$
 
-[Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-de-minh-hoa-thi-tot-nghiep-thpt-2022-mon-hoa.html)
+Gọi số mol của este X phản ứng là $x\text{ mol}$. Theo phương trình phản ứng:
+$$n_{\text{este}} = n_{\text{NaOH pư}} = n_{\text{muối}} = n_{\text{ancol}} = x\text{ (mol)}$$
 
-Hoặc xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
+Nhận xét:
+$$m_{\text{muối}} = 16{,}4\text{ g} > m_{\text{este}} = 14{,}8\text{ g}$$
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Độ tăng khối lượng từ este sang muối là:
+$$\Delta m = 16{,}4 - 14{,}8 = 1{,}6\text{ (gam)}$$
 
-←[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
-[Cho các phát biểu sau: lsoamyl axetat có mùi thơm của chuối chín.](/bai-viet/cho-cac-phat-bieu-sau-lsoamyl-axetat-co-mui-thom-cua-chuoi-chin.html)→
+Cứ $1\text{ mol } \text{RCOOR}'$ chuyển thành $1\text{ mol } \text{RCOONa}$ thì gốc $\text{R}'$ được thay thế bằng nguyên tử $\text{Na}$ ($M_{\text{Na}} = 23$). Khối lượng tăng lên là:
+$$\Delta M = 23 - M_{\text{R}'} > 0 \implies M_{\text{R}'} < 23$$
 
-## Comments
+Vì Z là ancol nên gốc $\text{R}'$ phải là gốc hiđrocacbon, nghiệm duy nhất thỏa mãn là:
+$$\text{R}' \text{ là } -\text{CH}_3\ (M = 15)$$
 
-### Leave a Reply Cancel reply
+Độ tăng khối lượng trên $1\text{ mol}$:
+$$\Delta M = 23 - 15 = 8\text{ (g/mol)}$$
 
-Your email address will not be published. Required fields are marked *
+Số mol của este X và ancol Z là:
+$$x = \dfrac{\Delta m}{\Delta M} = \dfrac{1{,}6}{8} = 0{,}2\text{ (mol)}$$
 
-Comment * 
+Ancol Z là ancol metylic ($\text{CH}_3\text{OH}$, $M = 32\text{ g/mol}$). Khối lượng ancol Z là:
+$$m = 0{,}2 \times 32 = 6{,}4\text{ (gam)}$$
 
-Name * 
+---
 
-Email * 
+### Cách 2: Phương pháp bảo toàn khối lượng
 
-Website 
+Từ kết quả biện luận ở Cách 1, gốc ancol là $-\text{CH}_3$ và số mol phản ứng là:
+$$n_{\text{este}} = n_{\text{NaOH pư}} = 0{,}2\text{ (mol)}$$
 
- Save my name, email, and website in this browser for the next time I comment.
+Áp dụng định luật bảo toàn khối lượng cho phản ứng xà phòng hóa:
+$$m_{\text{este}} + m_{\text{NaOH}} = m_{\text{muối}} + m_{\text{ancol}}$$
+$$\implies 14{,}8 + 0{,}2 \times 40 = 16{,}4 + m$$
+$$\implies 14{,}8 + 8{,}0 = 16{,}4 + m$$
+$$\implies 22{,}8 = 16{,}4 + m \implies m = 22{,}8 - 16{,}4 = 6{,}4\text{ (gam)}$$
 
- 
+---
 
-	
+### Mở rộng: Xác định công thức cấu tạo của este X
+Khối lượng mol của este X:
+$$M_X = \dfrac{14{,}8}{0{,}2} = 74\text{ (g/mol)}$$
 
-## More posts
+Công thức phân tử của X là $\text{C}_3\text{H}_6\text{O}_2$.
+Vì gốc ancol là $-\text{CH}_3$, công thức cấu tạo của X là **$\text{CH}_3\text{COOCH}_3$** (metyl axetat).
+Muối Y là $\text{CH}_3\text{COONa}$ (natri axetat, $M = 82$, $m = 0{,}2 \times 82 = 16{,}4\text{ g}$, hoàn toàn khớp với đề bài).
 
-- ### Bút trình chiếu giá rẻ 100k khoảng cách 100m!
+### Kết luận
+- Khối lượng ancol Z: $m = 6{,}4\text{ gam}$.
+- **Chọn đáp án A.**
 
-  [02/10/2024](/bai-viet/but-trinh-chieu-gia-re-100k-khoang-cach-100m.html)
+---
 
-- ### Loa Trợ Giảng Giá Rẻ OBTpro WA-1921 chỉ 500k!
-
-  [24/08/2024](/bai-viet/loa-tro-giang-gia-re-obtpro-wa-1921-chi-500k.html)
-
-- ### File luyện viết 50 bộ thủ thường dùng Word PDF
-
-  [30/07/2024](/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html)
-
-- ### Tổng hợp Tài liệu Toán 9 chương trình mới (Cánh Diều, KNTT, CTST)
-
-  [26/07/2024](/bai-viet/tong-hop-tai-lieu-toan-9-chuong-trinh-moi-canh-dieu-kntt-ctst.html)
-
-- ### Tổng hợp tài liệu ôn thi tốt nghiệp THPT môn Toán 2025
-
-  [26/07/2024](/bai-viet/tong-hop-tai-lieu-on-thi-tot-nghiep-thpt-mon-toan-2025.html)
-
-- ### Tổng hợp đề thi HSG Toán 12 năm 2024-2025
-
-  [05/07/2024](/bai-viet/tong-hop-de-thi-hsg-toan-12-nam-2024-2025.html)
-
-- ### Tổng hợp toán thực tế ứng dụng đạo hàm
-
-  [03/07/2024](/bai-viet/tong-hop-toan-thuc-te-ung-dung-dao-ham.html)
-
-- ### Tổng hợp tài liệu Xác suất có điều kiện Toán 12
-
-  [01/07/2024](/bai-viet/tong-hop-tai-lieu-xac-suat-co-dieu-kien-toan-12.html)
-
-- ### Công thức tính thể tích chỏm cầu
-
-  [29/06/2025](/bai-viet/cong-thuc-tinh-the-tich-chom-cau.html)
-
-- ### Đề tiếng Anh THPT 2025 file WORD
-
-  [29/06/2025](/bai-viet/de-tieng-anh-thpt-2025-file-word.html)
-
-- ### Tổng hợp Xác suất có điều kiện PDF lớp 12
-
-  [29/06/2025](/bai-viet/tong-hop-xac-suat-co-dieu-kien-pdf-lop-12.html)
-
-- ### Hướng dẫn giải đề Toán THPT 2025
-
-  [29/06/2025](/bai-viet/huong-dan-giai-de-toan-thpt-2025.html)
+## Tài liệu ôn thi tốt nghiệp THPT môn Hóa học
+- [Giải chi tiết đề minh họa tốt nghiệp THPT môn Hóa học](/bai-viet/giai-chi-tiet-de-minh-hoa-thi-tot-nghiep-thpt-2022-mon-hoa.html)
+- [Tổng hợp đề thi thử tốt nghiệp THPT môn Hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)

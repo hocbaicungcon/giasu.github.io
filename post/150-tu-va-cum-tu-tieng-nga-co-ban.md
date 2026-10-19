@@ -1,7 +1,6 @@
 ---
 title: 150 từ và cụm từ tiếng Nga cơ bản
-description: 150 từ và cụm từ tiếng Nga cơ bản dưới đây chắc chắn sẽ hữu ích cho hầu
-  hết mọi người, nhưng hãy nhớ mục tiêu học tiếng Nga của bạn là gì.
+description: '150 từ và cụm từ tiếng Nga cơ bản thông dụng nhất: mẫu câu chào hỏi, giới thiệu bản thân, giao tiếp du lịch, nghề nghiệp kèm phiên âm và giải nghĩa chi tiết.'
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -11,418 +10,220 @@ tags:
 - Từ vựng tiếng Nga
 ---
 
-150 từ và cụm từ tiếng Nga cơ bản dưới đây chắc chắn sẽ hữu ích cho hầu hết mọi người, nhưng **hãy nhớ mục tiêu học tiếng Nga của bạn là gì.**
+150 từ và cụm từ tiếng Nga cơ bản dưới đây là cẩm nang hữu ích cho người mới bắt đầu học tiếng Nga, từ mục đích du lịch, mua sắm cho tới giao tiếp cơ bản trong công việc.
 
-Nếu học tiếng Nga để đi du lịch, có lẽ bạn chỉ cần hỏi đường , mua vé tàu và biết cách nhận phòng khách sạn.
-
-Tuy nhiên, nếu bạn học tiếng Nga phục vụ cho công việc làm ăn kinh doanh và cần thống nhất về thời gian họp, bạn sẽ cần phải học tiếng Nga một cách nghiêm túc với hàng loạt các vấn đề cần lưu ý.
-
-Bất kể mục đích học tiếng Nga của bạn là gì, **một điều cần ghi nhớ là lựa chọn sử dụng tiếng Nga trang trọng hay thân mật trong từng tình huống.** Tương tự như tiếng Pháp hoặc tiếng Tây Ban Nha, tiếng Nga sử dụng hai phiên bản của từ “bạn”.
+Một nguyên tắc cốt lõi cần ghi nhớ trong tiếng Nga là sự phân biệt giữa cách nói **trang trọng** và **thân mật**:
 
 ![150 từ và cụm từ tiếng Nga cơ bản 2](assets/images/150-tu-va-cum-tu-tieng-nga-co-ban-Вы.jpg)
 
-**Ты** (bạn) được sử dụng trong các tình huống thân mật khi nói chuyện với một cá nhân. **Вы** (bạn) được sử dụng trong hai trường hợp khi nói với hai người trở lên (số nhiều) và khi nói với một cá nhân theo cách trang trọng. Điều này khác với tiếng Anh, bạn sử dụng chung từ **You** cho cả số ít và số nhiều, cả trang trọng và thân mật.
+- **Ты** (*bạn/mày*): Dùng trong ngữ cảnh thân mật khi trò chuyện với bạn bè thân thiết, đồng trang lứa hoặc trẻ em.
+- **Вы** (*ngài/các bạn*): Dùng trong hai trường hợp: số nhiều (từ 2 người trở lên) hoặc số ít nhưng mang tính trang trọng, lịch sự khi giao tiếp với người lớn tuổi, đối tác hoặc người mới quen.
 
-Theo nguyên tắc chung, **ты** thực sự chỉ nên được sử dụng khi xưng hô với trẻ em hoặc bạn thân. Các câu nói trang trọng nên được sử dụng bất cứ khi nào bạn đang nói chuyện với người lạ, người mà bạn không biết rõ, bất kỳ ai lớn tuổi hơn bạn hoặc người nào đó có chức vụ quyền hạn.
+Xem thêm: [1000 từ tiếng Nga thông dụng nhất](/bai-viet/1000-tu-tieng-nga-thong-dung-nhat.html)
 
-Do đó, trừ trường hợp có ngữ cảnh cụ thể, tất cả 150 từ và cụm từ tiếng Nga cơ bản dưới đây đều sử dụng cách nói ở dạng **Вы**.
+---
 
-Bạn có thể tham khảo thêm [1000 từ tiếng Nga thông dụng nhất](/bai-viet/1000-tu-tieng-nga-thong-dung-nhat.html)!
-
-## Chào hỏi bằng tiếng Nga
+## 1. Mẫu câu chào hỏi và tạm biệt tiếng Nga
 
 ![150 từ và cụm từ tiếng Nga cơ bản](assets/images/150-tu-va-cum-tu-tieng-nga-co-ban-hello-in-russian.jpg)
 
-Đương nhiên, một trong những điều đầu tiên mà bất kỳ người học ngôn ngữ nào cũng nên nắm bắt là khả năng chào hỏi những người khác. Cho dù bạn đang gặp giáo viên tiếng Nga mới của mình khi đi du học ở Moscow, mua vé đến Nhà hát Bolshoi hay nhờ một người lạ hỗ trợ, bạn cần có khả năng chào hỏi ai đó và chào tạm biệt một cách thích hợp.
+| Tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Ngữ cảnh sử dụng |
+| :--- | :--- | :--- | :--- |
+| **Привет** | /Pri-vyet/ | Xin chào | Thân mật, dùng cho bạn bè, người quen |
+| **Здравствуйте** | /Zdra-vuy-tye/ | Kính chào / Xin chào | Trang trọng, dùng cho người lạ, đối tác, thầy cô |
+| **Добро пожаловать** | /Da-bro pa-zha-la-vat/ | Chào mừng | Khi đón tiếp khách đến nhà, sự kiện |
+| **Доброе утро** | /Dob-raye ut-ra/ | Chào buổi sáng | Dùng từ sáng sớm đến trước 12h trưa |
+| **Добрый день** | /Dob-riy dyen/ | Chào buổi chiều / Chúc ngày tốt lành | Dùng từ trưa đến khi trời lặn |
+| **Добрый вечер** | /Dob-riy vye-chyer/ | Chào buổi tối | Dùng vào buổi tối |
+| **Пока** | /Pa-ka/ | Tạm biệt | Thân mật (đối ứng với *Привет*) |
+| **До свидания** | /Da svi-da-ni-ya/ | Hẹn gặp lại / Tạm biệt | Phổ biến nhất, vừa lịch sự vừa thông dụng |
+| **До скорого** | /Da sko-ra-va/ | Hẹn sớm gặp lại | Khi chắc chắn sẽ sớm gặp lại đối phương |
+| **Спокойной ночи** | /Spa-koy-nay no-chi/ | Chúc ngủ ngon | Chúc người thân, bạn cùng phòng trước khi ngủ |
 
-**Привет** – Xin chào. Đây là cách thân mật và thường chỉ được sử dụng khi chào hỏi ai đó mà bạn đã biết rõ.
+---
 
-**Здравствуйте** – Xin chào. Здравствуйте là phiên bản chính thức của Привет và là phiên bản bạn nên sử dụng rộng rãi nhất.
-
-![150 từ và cụm từ tiếng Nga cơ bản 3](assets/images/150-tu-va-cum-tu-tieng-nga-co-ban-greetings-in-rus.jpg)
-
-**Добро пожаловать** – Chào mừng. Bạn có thể sẽ nghe thấy điều này khi bước vào nhà của ai đó, lớp học, v.v. Nó có thể được sử dụng chính thức hoặc không chính thức.
-
-**Доброе утро** – Chào buổi sáng (Có thể nói bất cứ lúc nào từ bình minh đến trưa).
-
-**Добрый день** – Chào ngày mới / Chào buổi chiều (Được sử dụng từ sáng muộn cho đến khi mặt trời lặn).
-
-**Добрый вечер** – Chào buổi tối (Được sử dụng vào buổi tối, nhưng không phải sau bữa tối).
-
-**Пока** – Tạm biệt. Пока được sử dụng không chính thức và là từ ngược lại của của Привет.
-
-**До свидания** – Tạm biệt. Mong đợi để nghe điều này ở khắp mọi nơi vì đó là cách nói lời tạm biệt phổ biến nhất.
-
-**До скорого** – Hẹn gặp lại các bạn. Hãy chắc chắn học до скорого vì bạn sẽ sử dụng nó với những người bạn gặp nhiều lần và biết rằng bạn sẽ gặp lại sau vài ngày hoặc vài giờ. Nó truyền đạt một cảm giác thân thuộc.
-
-**Спокойной ночи** – Chúc ngủ ngon. Hãy nhớ rằng đây là cách chúc ai đó ngủ ngon trước khi đi ngủ. Thật tốt khi biết cụm từ này trong trường hợp bạn đang ở trong ký túc xá hoặc với một gia đình bản xứ. Điều này thường không được sử dụng bên ngoài gia đình, vì vậy có thể mất một thời gian trước khi bạn nghe thấy nó, nhưng nó vẫn hữu ích nếu có trong kho vũ khí của bạn.
-
-## Giới thiệu bản thân bằng tiếng Nga
-
-Người Nga thích nói chuyện với người nước ngoài. Họ có thể không bắt chuyện với bạn, nhưng nếu có cơ hội, bạn có thể kết bạn trong một thời gian ngắn. Trong trường hợp đó, bạn hãy chuẩn bị để giới thiệu và hỏi một số thông tin chung về bản thân.
-
-**Как Вас зовут?**– Tên của bạn là gì?
+## 2. Giới thiệu bản thân và làm quen
 
 ![150 từ và cụm từ tiếng Nga cơ bản 4](assets/images/150-tu-va-cum-tu-tieng-nga-co-ban-hoi-ten-trong-tieng-nga.jpg)
 
-Hãy ghi nhớ câu hỏi này vì bạn sẽ được hỏi nó thường xuyên. Cũng nên nhớ rằng đây là một cách chính thức để hỏi điều này vì nó sử dụng phiên bản chính thức của Вы. Nếu bạn hỏi một người bạn cùng trường hoặc một đứa trẻ câu hỏi này, bạn sẽ sử dụng phiên bản thân mật: Как тебя зовут?
+| Câu tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Ghi chú ngữ pháp |
+| :--- | :--- | :--- | :--- |
+| **Как Вас зовут?** | /Kak vas za-vut/ | Tên bạn (ngài) là gì? | Trang trọng (sử dụng *Вас*) |
+| **Как тебя зовут?** | /Kak tye-bya za-vut/ | Bạn tên là gì? | Thân mật (sử dụng *тебя*) |
+| **Меня зовут…** | /Mye-nya za-vut/ | Tên tôi là… | Câu trả lời chuẩn mực |
+| **Я…** | /Ya/ | Tôi là… | Cách nói ngắn gọn tự nhiên |
+| **Очень приятно** | /O-chyen pri-yat-na/ | Rất vui được gặp bạn | Lịch sự trong mọi tình huống |
+| **Приятно с Вами познакомиться** | /Pri-yat-na s va-mi paz-na-ko-mit-sya/ | Rất vinh hạnh được làm quen | Trang trọng, lịch sự cao |
+| **Как дела?** | /Kak dye-la/ | Mọi chuyện thế nào? | Hỏi thăm thân mật bạn bè |
+| **Как ты?** | /Kak ti/ | Bạn có khỏe không? | Thân mật giữa bạn bè |
+| **Вы долго в России?** | /Vy dol-ga v ras-si-i/ | Bạn ở Nga lâu chưa? | Khách du lịch, du học sinh |
+| **Вам нравится Россия?** | /Vam nra-vit-sya ras-si-ya/ | Bạn có thích nước Nga không? | Người bản xứ thường hỏi |
 
-**Меня зовут…** – Tên tôi là… Đây là cách chính thức để trả lời câu hỏi Как Вас зовут?
+---
 
-**Я…** – Tôi là… Đây là một cách thông thường hơn để trả lời “Tên của bạn là gì?”
+## 3. Quê quán, nghề nghiệp và sở thích
 
-**Очень приятно** – Rất vui được gặp bạn (Có thể được sử dụng trong các tình huống trang trọng hoặc thông thường)
+| Tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Phân loại |
+| :--- | :--- | :--- | :--- |
+| **Откуда Вы?** | /At-ku-da vy/ | Bạn đến từ đâu? | Câu hỏi quê quán |
+| **Я из Вьетнама** | /Ya iz vyet-na-ma/ | Tôi đến từ Việt Nam | Trả lời quốc gia |
+| **Какая у Вас профессия?** | /Ka-ka-ya u vas pra-fyes-si-ya/ | Nghề nghiệp của bạn là gì? | Hỏi nghề nghiệp |
+| **Вы кем работаете?** | /Vy kyem ra-bo-ta-ye-tye/ | Bạn làm nghề gì? | Hỏi nghề nghiệp |
+| **Я преподаватель** | /Ya prye-pa-da-va-tyel/ | Tôi là giảng viên/giáo viên | Nghề nghiệp |
+| **врач** | /Vrach/ | Bác sĩ | Nghề nghiệp |
+| **адвокат** | /Ad-va-kat/ | Luật sư | Nghề nghiệp |
+| **студент / студентка** | /Stu-dyent / Stu-dyent-ka/ | Sinh viên (nam / nữ) | Nghề nghiệp |
+| **менеджер** | /Mye-nyed-zher/ | Quản lý | Nghề nghiệp |
+| **Есть ли у Вас хобби?** | /Yest li u vas hob-bi/ | Bạn có sở thích gì không? | Sở thích |
+| **Я люблю путешествовать** | /Ya lyub-lyu pu-tye-shest-va-vat/ | Tôi thích đi du lịch | Sở thích |
+| **Я катаюсь на лыжах** | /Ya ka-ta-yus na ly-zhakh/ | Tôi thích trượt tuyết | Thể thao |
+| **Я играю в футбол** | /Ya ig-ra-yu v fut-bol/ | Tôi chơi bóng đá | Thể thao |
 
-**Приятно с Вами познакомиться** – Rất vui được gặp bạn (Hơi trang trọng hơn Очень приятно.)
+---
 
-**Как дела?**– Mọi chuyện thế nào? Không giống như người Mỹ có xu hướng hỏi bất kỳ người lạ xem họ đang làm gì để chào hỏi ai đó, người Nga thường không làm điều này. Bạn có thể chấp nhận hỏi bạn bè hoặc người quen xem họ như thế nào, nhưng tránh hỏi nhân viên cửa hàng hoặc bất kỳ ai bạn đã gặp một lần và không bao giờ mong đợi tiếp xúc với một lần nữa.
+## 4. Khả năng ngôn ngữ và kiểm tra thông tin
 
-**Как ты?**– Bạn khỏe không? Đây là một sự thay thế thông thường cho Как дела ?, do đó nên sử dụng ты.
+| Tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Ngữ cảnh ứng dụng |
+| :--- | :--- | :--- | :--- |
+| **Вы говорите по-русски?** | /Vy ga-va-ri-tye pa-rus-ski/ | Bạn có nói tiếng Nga không? | Hỏi khả năng ngôn ngữ |
+| **Вы говорите по-английски?** | /Vy ga-va-ri-tye pa-ang-liy-ski/ | Bạn có nói tiếng Anh không? | Tìm sự trợ giúp |
+| **Вы понимаете?** | /Vy pa-ni-ma-ye-tye/ | Bạn có hiểu không? | Xác nhận hiểu ý |
+| **Я không hiểu** | **Я не понимаю** (/Ya nye pa-ni-ma-yu/) | Tôi không hiểu | Bày tỏ không hiểu |
+| **Помедленнее, пожалуйста** | /Pa-myed-lyen-nye-ye, pa-zhal-sta/ | Xin vui lòng nói chậm lại | Khi đối phương nói nhanh |
+| **Повторите, пожалуйста** | /Pav-ta-ri-tye, pa-zhal-sta/ | Xin vui lòng nhắc lại | Khi chưa nghe rõ |
+| **Как сказать… по-русски?** | /Kak ska-zat... pa-rus-ski/ | Từ này tiếng Nga nói sao? | Mở rộng vốn từ vựng |
 
-**Вы долго в России?**– Bạn ở nước Nga lâu chưa? Khi biết bạn đang đến thăm Nga, hãy mong đợi được hỏi bạn đã ở đó lâu chưa. Bạn cũng có thể sẽ được hỏi bạn đang làm gì ở đó và bạn đang tận hưởng kỳ nghỉ của mình như thế nào.
+---
 
-**Вам нравится Россия?**– Bạn có thích nước Nga không? Không cần phải nói, câu trả lời phải luôn luôn rõ ràng là “а!” (Vâng). Bạn có thể sẽ được hỏi câu hỏi này thường xuyên. Mặc dù người Nga có thể chỉ trích đất nước của họ, nhưng tốt nhất là bạn không nên như vậy.
+## 5. Đồng ý, phản đối và câu hỏi thông dụng
 
-## Giới thiệu quê quán, nghề nghiệp và sở thích
+| Tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Ghi chú |
+| :--- | :--- | :--- | :--- |
+| **Да** | /Da/ | Vâng, đúng, có | Tương đương *Yes* trong tiếng Anh |
+| **Нет** | /Nyet/ | Không | Tương đương *No* trong tiếng Anh |
+| **Может быть** | /Mo-zhet byt/ | Có thể / Có lẽ | Thể hiện sự phân vân |
+| **Что это?** | /Shto e-to/ | Đây là cái gì? | Hỏi về đồ vật |
+| **Кто это?** | /Kto e-to/ | Đây là ai? | Hỏi về người |
+| **Я не знаю** | /Ya nye zna-yu/ | Tôi không biết | Câu trả lời thường dùng |
+| **Это…** | /E-to/ | Đây là / Đó là… | Giới thiệu hoặc định nghĩa |
 
-Tiếp tục cuộc trò chuyện từ trên, sẽ rất hữu ích nếu bạn có thể giải thích bạn đến từ đâu và bạn làm gì để kiếm sống vì đây là hai câu hỏi phổ biến nhất của người nước ngoài.
+---
 
-**Откуда Вы?**– Bạn đến từ đâu?
-
-**Я из X** – Tôi đến từ X. Hãy cho bất kỳ ai hỏi bạn đến từ quốc gia nào trước khi đi vào chi tiết cụ thể hơn.
-
-**Я из Америки** – Tôi đến từ Mỹ.
-
-**Я из США –** Tôi đến từ Hoa Kỳ
-
-**Из какого Вы штата?**– Bạn đến từ bang nào? Nhiều người Nga sẽ không thể xác định bạn đến từ quốc gia nói tiếng Anh nào dựa trên tên tiểu bang hoặc thành phố. Những người Nga hay đi du lịch có thể hỏi thêm thông tin, trong trường hợp đó, hãy nhớ học cách trả lời đúng bằng cách điền vào câu với tiểu bang và / hoặc thị trấn quê hương của bạn.
-
-**Я из Техаса** – Tôi đến từ Texas
-
-**Я из Калифорнии.**– Tôi đến từ California
-
-**Я из Нью-Йорка** – Tôi đến từ New York
-
-**Вы студент / студентка?**– Bạn có phải là học sinh [nam] / [nữ] không?
-
-**Вы кем работаете?**– Bạn làm gì cho công việc?
-
-**Какая у Вас профессия?**– Bạn làm nghề gì? (Một sự thay thế cho câu hỏi ở trên.)
-
-**Я…** – Tôi làm… Điều này tương tự như cách bạn có thể trả lời câu hỏi “tên của bạn là gì?” Nhưng thay vì theo sau Я với tên của bạn, hãy nêu nghề nghiệp của bạn.
-
-**Я преподаватель** – Tôi là một giáo viên (Tôi làm giáo viên).
-
-- **врач** – bác sĩ
-
-- **адвокат** – luật sư
-
-- **менеджер гостиницы** – quản lý khách sạn
-
-**Есть ли у Вас хобби?**– Bạn có sở thích nào không? Người Nga thích hỏi câu hỏi này, vì vậy hãy chuẩn bị sẵn sàng.
-
-**Да. Я катаюсь на лыжах** – Có. Tôi trượt tuyết
-
-**Я играю в баскетбол** – Tôi chơi bóng rổ
-
-**Я люблю путешествовать** – Tôi thích đi du lịch
-
-## Hỏi về khả năng ngôn ngữ và kiểm tra lại thông tin
-
-Nhiều khả năng một lúc nào đó bạn sẽ được hỏi liệu bạn có nói được tiếng Nga hay không. Nếu bạn bắt đầu nói một cách nhanh chóng và không do dự, sẽ không ai đặt câu hỏi về khả năng của bạn. Nếu bạn gặp khó khăn, người nói chuyện với bạn sẽ cố gắng đánh giá mức độ thoải mái của bạn và xác định cách hỗ trợ bạn bằng các cụm từ và câu hỏi sau.
-
-- **Вы говорите по-русски?**– Bạn có nói tiếng Nga không?
-
-- **Вы говорите по-английски?**– Bạn có nói tiếng Anh không?
-
-- **Вы понимаете?**– Bạn hiểu không?
-
-- **Я не понимаю** – Tôi không hiểu
-
-- **Вы можете говорить медленнее?**– Bạn có thể nói chậm được không?
-
-- **Помедленнее, пожалуйста** – Vui lòng nói chậm hơn
-
-- **Повторите, пожалуйста** – Vui lòng lặp lại điều đó
-
-- **Как сказать… по-русски?**– Bạn nói… bằng tiếng Nga như thế nào? Đây là một cụm từ rất hữu ích và một trong những người học tiếng Nga nên biết vì nó giúp tăng vốn từ vựng của bạn. Bạn có thể sử dụng một từ tiếng Anh để điền vào chỗ trống hoặc chỉ vào một đồ vật khi hỏi câu hỏi này.
-
-## Đồng ý, phản đối trong tiếng Nga
-
-Những từ và cụm từ này có thể bạn sẽ được nghe nhiều lần trong ngày.
-
-- **Да** – vâng, đúng (bằng với Yes)
-
-- **Нет** – không (bằng với No)
-
-- **Может быть** – có thể
-
-- **Что это?**– Đó là gì?
-
-- **Кто это?**– Đó là ai?
-
-- **Я не знаю** – Tôi không biết
-
-- **Это…** – Đó là…
-
-## Cảm ơn và xin lỗi trong tiếng Nga
+## 6. Mẫu câu cảm ơn và xin lỗi
 
 ![150 từ và cụm từ tiếng Nga cơ bản 5](assets/images/150-tu-va-cum-tu-tieng-nga-co-ban-Russian_thanks.png)
 
-Người Nga thường bị coi là không thân thiện và không lịch sự như điều phổ biến ở một số nền văn hóa. Nhưng cách cư xử tốt sẽ được đánh giá cao, đặc biệt nếu bạn đang nhờ ai đó giúp đỡ.
+| Tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Ngữ cảnh ứng dụng |
+| :--- | :--- | :--- | :--- |
+| **Пожалуйста** | /Pa-zhal-sta/ | Xin vui lòng / Làm ơn | Khi nhờ vả lịch sự |
+| **Спасибо** | /Spa-si-ba/ | Cảm ơn | Lời cảm ơn thông dụng nhất |
+| **Большое спасибо** | /Bal-sho-ye spa-si-ba/ | Cảm ơn rất nhiều | Lời cảm ơn trang trọng, chân thành |
+| **Пожалуйста** | /Pa-zhal-sta/ | Không có chi / Đừng khách sáo | Đáp lại lời cảm ơn |
+| **Извините** | /Iz-vi-ni-tye/ | Xin lỗi (trang trọng) | Khi muốn thu hút sự chú ý hoặc xin thứ lỗi |
+| **Простите** | /Pras-ti-tye/ | Xin hãy tha lỗi | Trang trọng, tương đương *Извините* |
+| **Всё в порядке** | /Vsyo v pa-ryad-kye/ | Mọi thứ đều ổn / Không sao đâu | Đáp lại lời xin lỗi |
+| **Я не могу…** | /Ya nye ma-gu/ | Tôi không thể… | Từ chối lịch sự (ví dụ: *Я не могу есть мясо*) |
 
-- **Пожалуйста** – Vui lòng
+---
 
-- **Спасибо** – Xin cảm ơn
-
-- **Спасибо большое** – Xin chân thành cảm ơn. Đừng cảm thấy cần phải tỏ ra lịch thiệp quá mức như người Nga hiếm khi xảy ra, nhưng việc nhấn mạnh lời cảm ơn của bạn được đánh giá cao khi có hiệu lực.
-
-- **Пожалуйста** – Không có chi. Vâng, Пожалуйста có hai nghĩa. Tuy nhiên, sẽ dễ dàng nhận ra mục đích của nó, và tốt hơn nữa, bạn chỉ cần một từ để bao hàm hai yếu tố cần thiết!
-
-- **Извините** – Tôi xin lỗi. Извините và Простите có thể được sử dụng thay thế cho nhau. Извините được sử dụng rộng rãi, vì vậy ban đầu bạn cứ thoải mái tập trung vào cái đó.
-
-- **Простите** – Xin lỗi
-
-- **Всё в порядке** -Mọi thứ đều ổn. Cụm từ này được dùng để đáp lại Извините và Простите.
-
-- **Н не могу…** – Tôi không thể… Đây là một câu khác mà bạn có thể điền vào tùy theo nhu cầu của bạn. Điều này đặc biệt quan trọng đối với những người có chế độ ăn kiêng hoặc hạn chế. Ví dụ: bạn có thể nói **Я не могу есть мясо** (Tôi không thể ăn thịt) khi là một người ăn chay hoặc **Я не могу пить алкоголь** (Tôi không thể uống rượu), điều này đặc biệt quan trọng cần nêu rõ hơn là muộn hơn so với văn hóa Nga xung quanh việc uống rượu.
-
-## Đồ ăn thức uống trong tiếng Nga
-
-Người Nga yêu thích các món ăn truyền thống của họ. Mặc dù bạn có thể không ăn borscht hoặc smetana thường xuyên, hãy cam kết những điều khoản đó vào bộ nhớ, cũng như các món yêu thích khác của bạn.
-
-Hai câu quen thuộc mà bạn nên thành thạo là:
-
-- **Я хочу есть** – Tôi đói
-
-- **Я хочу пить** – Tôi khát
+## 7. Từ vựng đồ ăn, thức uống và ẩm thực
 
 ![150 từ và cụm từ tiếng Nga cơ bản 6](assets/images/150-tu-va-cum-tu-tieng-nga-co-ban-food-in-russian.jpg)
 
-Một số từ chỉ đồ ăn trong tiếng Nga mà bạn có thể sẽ cần:
+### Mẫu câu giao tiếp gọi món
+- **Я хочу есть** (/Ya ha-chu yest/): *Tôi đói bụng / Tôi muốn ăn.*
+- **Я хочу пить** (/Ya ha-chu pit/): *Tôi khát nước / Tôi muốn uống.*
 
-- **Борщ** – borscht
+### Bảng từ vựng món ăn và đồ uống
 
-- **Сметана** – smetana. Đây là một loại kem chua mà bạn thường thấy trên borscht, Blini và trứng cá muối, cũng như pelmeni.
+| Từ vựng tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Nhóm thực phẩm |
+| :--- | :--- | :--- | :--- |
+| **Борщ** | /Borshch/ | Súp củ dền đỏ Borscht | Món ăn truyền thống |
+| **Сметана** | /Smye-ta-na/ | Kem chua (Smetana) | Món ăn kèm truyền thống |
+| **Блины** | /Bli-ny/ | Bánh kếp Blini | Bánh ngọt truyền thống |
+| **Пельмени** | /Pyel-mye-ni/ | Bánh xếp thịt Pelmeni | Món chính truyền thống |
+| **Икра** | /Ik-ra/ | Trứng cá muối | Đặc sản Nga |
+| **Хлеб** | /Khlyep/ | Bánh mì | Lương thực chính |
+| **Мясо** | /Mya-sa/ | Thịt | Nhóm đạm |
+| **Говядина** | /Ga-vya-di-na/ | Thịt bò | Nhóm đạm |
+| **Курица** | /Ku-ri-tsa/ | Thịt gà | Nhóm đạm |
+| **Рыба** | /Ry-ba/ | Cá | Thủy hải sản |
+| **Колбаса** | /Kal-ba-sa/ | Xúc xích / Giăm bông | Đồ nguội |
+| **Сыр** | /Syr/ | Phô mai | Chế phẩm sữa |
+| **Масло** | /Mas-la/ | Bơ | Gia vị / Chế phẩm sữa |
+| **Яблоко** | /Yab-la-ka/ | Quả táo | Trái cây |
+| **Картофель** | /Kar-to-fyel/ | Khoai tây | Rau củ |
+| **Помидор** | /Pa-mi-dor/ | Cà chua | Rau củ |
+| **Чай** | /Chay/ | Trà | Đồ uống |
+| **Кофе** | /Ko-fye/ | Cà phê | Đồ uống |
+| **Вода** | /Va-da/ | Nước khoáng / Nước lọc | Đồ uống |
+| **Водка** | /Vod-ka/ | Rượu Vodka | Đồ uống có cồn |
 
-- **Блины** – blini
+---
 
-- **Икра** – trứng cá muối
-
-- **Пироги** – pierogi
-
-- **Пельмени** – pelmeni (một loại bánh bao của Nga)
-
-- **Водка** – vodka
-
-- **Фрукт** – trái cây
-
-- **Яблоко** – táo
-
-- **Банан** – chuối
-
-- **Овощи** – rau
-
-- **Лук** – hành tây
-
-- **Морковь** – cà rốt
-
-- **Помидор** – cà chua
-
-- **Картофель** – khoai tây
-
-- **Салат** – salad
-
-- **Мясо** – thịt
-
-- **Колбаса** – xúc xích
-
-- **Рыба** – cá
-
-- **Курица** – gà
-
-- **Говядина** – thịt bò
-
-- **Соль** – muối
-
-- **Чёрный перец** – hạt tiêu
-
-- **Хлеб** – bánh mì
-
-- **Масло** – bơ. Từ này nghe có vẻ giống với Мясо (thịt), vì vậy hãy cẩn thận.
-
-- **Макароны** – mì ống
-
-- **Сыр** – pho mát
-
-- **Чай** – trà
-
-- **Кофе** – cà phê
-
-- **Вода** – nước. Hãy nhớ rằng водка (vodka) và вода trông và nghe rất giống nhau, nhưng chắc chắn chúng là những thứ khác nhau!
-
-- **Сок** – nước trái cây
-
-- **Молоко** – sữa
-
-- **Сахар** – đường
-
-## Gia đình và Bạn bè trong tiếng Nga
+## 8. Gia đình, bạn bè và thú cưng
 
 ![150 từ và cụm từ tiếng Nga cơ bản 7](assets/images/150-tu-va-cum-tu-tieng-nga-co-ban-Russian_family.png)
 
-Bạn có thể sẽ được hỏi về các thành viên trong gia đình , vì vậy hãy sẵn sàng nói về người thân của bạn cũng như bất kỳ vật nuôi nào.
-
-- **Семья** – gia đình. Đừng nhầm lẫn từ này với фамилия là từ chỉ họ.
-
-- **Родители** – cha mẹ
-
-- **Мама / Мать** – mẹ / mẹ
-
-- **Папа / Отец** – bố / bố
-
-- **Брат** – anh trai
-
-- **Сестра** – em gái
-
-- **Сын** – con trai
-
-- **Дочь** – con gái
-
-- **Бабушка** – bà ngoại
-
-- **Дедушка** – ông nội
-
-- **Друзья** – bạn bè
-
-- **Парень** – bạn trai
-
-- **Девушка** – bạn gái
-
-- **домашнее животное** – thú cưng. **У тебя есть домашнее животное?**– Bạn có thú cưng không?
-
-- **Собака** – con chó
-
-- **Кошка** – con mèo
-
-- **Птица** – chim
-
-- **Черепаха** – rùa
-
-- **Кролик** – thỏ
-
-- **Рыба** – cá
-
-## Một số tính từ hay dùng trong tiếng Nga
-
-Dưới đây là một số tính từ phổ biến mà bạn cần biết. Một số được đưa vào tên những địa điểm bạn có thể đến thăm ở Nga, trong khi những địa điểm khác có thể cần thiết nếu bạn cần mô tả điều gì đó hoặc yêu cầu một sự thay thế.
-
-- **Красный** – đỏ.  Ví dụ Красная площадь – Quảng trường Đỏ
-
-- **Белый** – trắng. белые ночи – đêm trắng
-
-- **Чёрный** – đen
-
-- **Синий** – xanh lam
-
-- **Зелёный** – xanh lục
-
-- **Жёлтый** – màu vàng
-
-- **Розовый** – màu hồng
-
-- **Оранжевый** – màu cam
-
-- **Красивый** – đẹp. Hãy nhớ rằng điều này tương tự như cách viết và phát âm của красный (red). Đừng trộn lẫn hai tính từ này như nhiều người học.
-
-- **Симпатичный** – tốt đẹp, liên quan đến tính khí; hoặc dễ thương, liên quan đến ngoại hình. Vì vậy, симпатичная девушка có thể có nghĩa là “cô gái tốt” hoặc “cô gái dễ thương.”
-
-- **Вкусный** – ngon
-
-- **Большой** – lớn. Большой театр (Nhà hát Bolshoi), một nhà hát nổi tiếng và lịch sử ở Mátxcơva, thực sự được dịch trực tiếp thành “Nhà hát lớn”.
-
-- **Маленький** – nhỏ
-
-- **Хороший** – tốt
-
-- **Плохой** – xấu
-
-- **Жаркий** – nóng, liên quan đến khí hậu hoặc thời tiết. Жаркая погода là cụm từ đầy đủ mà bạn sử dụng để chỉ “thời tiết nóng”.
-
-- **Горячий** – nóng, liên quan đến một đối tượng. Ví dụ: bạn có thể nói горячий кофе (cà phê nóng).
-
-- **Холодный** – lạnh. Cái này hoạt động với thời tiết (холодная погода – thời tiết lạnh) hoặc cho các đối tượng (холодный суп – súp lạnh).
-
-- **Старый** – cũ. Старый Арбат (Stary Arbat, hoặc Old Arbat) là một phố đi bộ nổi tiếng ở trung tâm Moscow.
-
-- **Новый** – mới. Bạn sẽ nghe thấy điều này vào ngày 31 tháng 12, khi người Nga nói với nhau с Новым Годом (Chúc mừng năm mới).
-
-## Động từ hay dùng trong tiếng Nga
-
-Có một vài động từ cơ bản mà hầu hết những người học tiếng Nga gần như sử dụng hàng ngày, chúng có cách chia tương đối dễ dàng và có thể truyền đạt những ý tưởng đơn giản. Dưới đây là một số Động từ hay dùng trong tiếng Nga:
-
-- **Думать** – suy nghĩ
-
-- **Знать** – biết
-
-- **Любить** – yêu
-
-- **Жить** – sống
-
-- **Хотеть** – muốn
-
-- **Смотреть** – xem
-
-- **Слушать** – nghe
-
-- **Играть** – chơi
-
-- **Спать** – ngủ
-
-- **Читать** – đọc
-
-- **Писать** – viết
-
-## Một số từ phổ biến trong tiếng Nga
-
-Để làm tròn vốn từ vựng tiếng Nga cơ bản của bạn, có một số từ chúng tôi sử dụng mọi lúc và những từ khác không thường xuyên, nhưng bạn bắt buộc phải biết.
-
-- **Туалет** – nhà vệ sinh. Hãy nhớ rằng người Nga không bao giờ nói đến phòng tắm vì phòng tắm là ở nhà và được sử dụng để tắm. Nhà vệ sinh là nơi bạn giải quyết nỗi buồn. Nếu bạn đang ở rạp chiếu phim hoặc trường học và yêu cầu vào phòng tắm, bạn sẽ nhận được một cái nhìn bối rối. Khi ra ngoài, hãy tìm biển báo Туалет nếu bạn cần nhà vệ sinh.
-
-- **Где туалет?**– WC ở đâu?
-
-- **Открыто** – mở (open). Bạn sẽ thường xuyên tìm thấy các bảng hiệu đóng hoặc mở treo trên cửa của các cửa hàng, nhà hàng và những nơi tương tự.
-
-- **Закрыто** – đã đóng cửa
-
-- **Вход** – lối vào (enter). Bạn sẽ luôn thấy các biển báo vào và ra ở các siêu thị, ga xe lửa và sân bay.
-
-- **Выход** – thoát (exit)
-
-- **Помогите!**– Giúp đỡ! (Help!)
-
-- **Пожар!**– Lửa!
-
-- **Полиция!**– Cảnh sát viên!
-
-- **Стой!**– Ngừng lại! (Stop!)
-
-- **Я болею** – Tôi bị ốm
-
-- **Больница** – bệnh viện
-
-## Một số từ tiếng lóng tiếng Nga cơ bản
-
-Cuối cùng, nếu bạn đang cảm thấy mạo hiểm và muốn gây ấn tượng với một người mới quen bằng tiếng Nga bằng một số cụm từ vui nhộn được những đứa trẻ sành điệu sử dụng trong quán cà phê, đây là một vài câu bạn có thể thử:
-
-- **Мобильник** – điện thoại di động. Không ai nói мобильный телефон nữa, vì vậy hãy gắn bó với мобильник.
-
-- **Бомба** – tuyệt vời. Ví dụ: Учитель бомба. (Giáo viên thật tuyệt vời.)
-
-- **Класс** – tuyệt vời. Điều này thường được sử dụng để thể hiện sự chấp thuận. (“Bạn nghĩ gì về chiếc váy này?” “Класс!”)
-
-- **Круто** – thật tuyệt. Bạn đang đi du lịch đến Nga? Круто!
-
-Danh sách các từ và cụm từ tiếng Nga cơ bản ở trên hiển nhiên là không đầy đủ, nhưng sẽ giúp bạn đi đúng hướng để bắt đầu cảm thấy thoải mái khi nói tiếng Nga ngay từ ngày đầu tiên.
-
-Удачи! (Chúc may mắn!)
+| Tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Phân loại |
+| :--- | :--- | :--- | :--- |
+| **Семья** | /Syem-ya/ | Gia đình | Khái niệm chung |
+| **Родители** | /Ra-di-tye-li/ | Bố mẹ / Phụ huynh | Quan hệ gia đình |
+| **Мама / Отец** | /Ma-ma / A-tyets/ | Mẹ / Bố | Quan hệ gia đình |
+| **Брат / Сестра** | /Brat / Sye-stra/ | Anh em trai / Chị em gái | Quan hệ gia đình |
+| **Сын / Дочь** | /Syn / Doch/ | Con trai / Con gái | Quan hệ gia đình |
+| **Дедушка / Бабушка** | /Dye-dush-ka / Ba-bush-ka/ | Ông nội, ông ngoại / Bà | Quan hệ gia đình |
+| **Друзья** | /Druz-ya/ | Bạn bè | Quan hệ xã hội |
+| **Парень / Девушка** | /Pa-ryen / Dye-vush-ka/ | Bạn trai / Bạn gái | Quan hệ tình cảm |
+| **Собака / Кошка** | /Sa-ba-ka / Kosh-ka/ | Con chó / Con mèo | Thú cưng |
+
+---
+
+## 9. Các tính từ miêu tả thông dụng
+
+| Tính từ tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Ví dụ ứng dụng |
+| :--- | :--- | :--- | :--- |
+| **Красный** | /Kras-niy/ | Màu đỏ | *Красная площадь* (Quảng trường Đỏ) |
+| **Белый** | /Bye-liy/ | Màu trắng | *Белые ночи* (Đêm trắng nước Nga) |
+| **Чёрный / Синий** | /Chyor-niy / Si-niy/ | Đen / Xanh dương | Màu sắc cơ bản |
+| **Зелёный / Жёлтый** | /Zye-lyo-niy / Zhol-tiy/ | Xanh lục / Màu vàng | Màu sắc cơ bản |
+| **Красивый** | /Kra-si-viy/ | Đẹp, xinh đẹp | *Красивый город* (Thành phố đẹp) |
+| **Большой / Маленький** | /Bal-shoy / Ma-lyen-kiy/ | Lớn, to / Nhỏ bé | *Большой театр* (Nhà hát Bolshoi) |
+| **Хороший / Плохой** | /Kha-ro-shiy / Pla-khoy/ | Tốt, hay / Xấu, tồi | Đánh giá chất lượng |
+| **Вкусный** | /Vkus-niy/ | Ngon miệng | Đồ ăn thức uống |
+| **Жаркий / Холодный** | /Zhar-kiy / Kha-lod-niy/ | Nóng bức / Lạnh lẽo | Thời tiết và khí hậu |
+| **Новый / Старый** | /No-viy / Sta-riy/ | Mới / Cũ, cổ kính | *С Новым Годом!* (Chúc mừng năm mới) |
+
+---
+
+## 10. Động từ thường dùng hàng ngày
+
+| Động từ nguyên thể | Phiên âm đọc | Nghĩa tiếng Việt | Ví dụ chia thì hiện tại |
+| :--- | :--- | :--- | :--- |
+| **Знать** | /Znat/ | Biết | *Я знаю* (Tôi biết) |
+| **Думать** | /Du-mat/ | Suy nghĩ | *Я думаю* (Tôi nghĩ rằng) |
+| **Любить** | /Lyu-bit/ | Yêu, thích | *Я люблю тебя* (Tôi yêu bạn) |
+| **Жить** | /Zhit/ | Sinh sống | *Я живу здесь* (Tôi sống ở đây) |
+| **Хотеть** | /Kha-tyet/ | Muốn | *Я хочу спать* (Tôi muốn đi ngủ) |
+| **Смотреть / Слушать**| /Smat-ryet / Slu-shat/| Xem, nhìn / Nghe | *Смотреть фильм* (Xem phim) |
+| **Читать / Писать** | /Chi-tat / Pi-sat/ | Đọc / Viết | *Читать книгу* (Đọc sách) |
+| **Работать / Отдыхать**| /Ra-bo-tat / At-dy-khat/| Làm việc / Nghỉ ngơi | Hoạt động thường nhật |
+
+---
+
+## 11. Biển báo công cộng, an toàn và từ lóng
+
+| Tiếng Nga | Phiên âm đọc | Nghĩa tiếng Việt | Lưu ý & Ứng dụng |
+| :--- | :--- | :--- | :--- |
+| **Туалет** | /Tu-a-lyet/ | Nhà vệ sinh (WC) | Biển chỉ dẫn công cộng (*Где туалет?*) |
+| **Вход / Выход** | /Vkhod / Vy-khod/ | Lối vào / Lối ra, thoát hiểm | Biển báo tại ga tàu, sân bay, trung tâm |
+| **Открыто / Закрыто**| /At-kry-ta / Za-kry-ta/| Mở cửa / Đóng cửa | Biển hiệu tại cửa hàng, nhà hàng |
+| **Помогите!** | /Pa-ma-gi-tye/ | Cứu tôi với! (Help!) | Tình huống khẩn cấp |
+| **Пожар! / Полиция!**| /Pa-zhar / Pa-lit-si-ya/| Cháy! / Cảnh sát! | Tình huống khẩn cấp |
+| **Стой!** | /Stoy/ | Đứng lại! (Stop) | Cảnh báo nguy hiểm |
+| **Круто!** | /Kru-ta/ | Thật ngầu / Tuyệt đỉnh! | Từ lóng giới trẻ hay dùng |
+| **Класс! / Бомба!** | /Klass / Bom-ba/ | Đỉnh cao / Xuất sắc! | Khen ngợi món ăn, trải nghiệm |
+
+Học và ôn tập 150 từ và cụm từ tiếng Nga cơ bản theo từng nhóm chủ đề trên sẽ giúp bạn tự tin xây dựng nền móng giao tiếp hàng ngày một cách tự nhiên và chính xác.
+
+**Удачи!** (*Chúc bạn học tốt và may mắn!*)

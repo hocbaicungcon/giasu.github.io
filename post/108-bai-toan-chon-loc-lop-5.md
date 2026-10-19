@@ -236,109 +236,267 @@ $$2\frac{3}{5},\quad 7\frac{1}{2},\quad 5\frac{1}{4},\quad 1\frac{1}{8}$$
 ## 4. Hình học
 
 **Bài 55.** Cho hình tam giác ABC có điểm N là điểm chính giữa cạnh AC, trên hình
-  đó có hình thang BMNE như hình vẽ. Nối B với N, nối E với M, hai đoạn thắng
-  này gặp nhau ở điểm O.
-- a) So sánh diện tích hai tam giác OBM và OEN.
-- b) So sánh diện tích hình tam giác EMC với diện tích hình AEMB.
+  đó có hình thang BMNE như hình vẽ. Nối B với N, nối E với M, hai đoạn thẳng
+  này gặp nhau ở điểm $O$.
+- a) So sánh diện tích hai tam giác $OBM$ và $OEN$.
+- b) So sánh diện tích hình tam giác $EMC$ với diện tích hình $AEMB$.
 
-![Hình vẽ Bài 55](/assets/images/108-toan-5/bai-55.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="180" viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="90,20 30,160 220,160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="30" y1="160" x2="135" y2="69" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="30" y1="160" x2="155" y2="90" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="74" y1="160" x2="155" y2="90" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="135" y1="69" x2="74" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="90" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="30" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="220" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="135" cy="69" r="3" fill="#1e293b"/>
+    <circle cx="155" cy="90" r="3" fill="#1e293b"/>
+    <circle cx="74" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="106" cy="117" r="3" fill="#1e293b"/>
+    <text x="90" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="145" y="65" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">E</text>
+    <text x="165" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">N</text>
+    <text x="230" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="74" y="176" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="18" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="110" y="110" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">O</text>
+  </svg>
+</div>
 
-**Bài 56.** Cho tam giác ABC. M là điểm chính giữa cạnh BC, N là điểm chính giữa
-  cạnh AC. AM và AN cắt nhau tại G.
-- a) So sánh diện tích tam giác BGM, CGM, AGN, CGN.
-- b) Nối C với G và kéo dài CG cắt cạnh AB tại P. Chứng minh AP = BP.
+**Bài 56.** Cho tam giác $ABC$. $M$ là điểm chính giữa cạnh $BC$, $N$ là điểm chính giữa cạnh $AC$. $AM$ và $BN$ cắt nhau tại $G$.
+- a) So sánh diện tích tam giác $BGM, CGM, AGN, CGN$.
+- b) Nối $C$ với $G$ và kéo dài $CG$ cắt cạnh $AB$ tại $P$. Chứng minh $AP = BP$.
 
-**Bài 57.** Cho tam giác ABC. M là điểm chính giữa cạnh BC, N là diểm chính giữa
-  cạnh AC, P là điếm chính giữa của cạnh AB, ba đoạn thắng AM, BN và CP
-  cắt nhau tại G.
-- a) Chứng minh ba đoạn thắng AM, BN và CP chia tam giác ABC thành 6 tam
-  giác có diện tích bằng nhau.
-- b) Chứng minh: AM - BN - CP - 3
+**Bài 57.** Cho tam giác $ABC$. $M$ là điểm chính giữa cạnh $BC$, $N$ là điểm chính giữa cạnh $AC$, $P$ là điểm chính giữa của cạnh $AB$, ba đoạn thẳng $AM, BN$ và $CP$ cắt nhau tại $G$.
+- a) Chứng minh ba đoạn thẳng $AM, BN$ và $CP$ chia tam giác $ABC$ thành 6 tam giác có diện tích bằng nhau.
+- b) Chứng minh tỉ số diện tích tương ứng của các tam giác.
 
-**Bài 58.** Tính diện tích hình thang ABCD. Biết diện tích các hình tam giác AOD
-  và DOC như hình vẽ.
-  10cm2
-  20cт-
+**Bài 58.** Tính diện tích hình thang $ABCD$. Biết diện tích các hình tam giác $AOD$ và $DOC$ như hình vẽ:
 
-![Hình vẽ Bài 58](/assets/images/108-toan-5/bai-58.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="80,35 180,35 235,135 25,135" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="80" y1="35" x2="235" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="180" y1="35" x2="25" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="80" cy="35" r="3" fill="#1e293b"/>
+    <circle cx="180" cy="35" r="3" fill="#1e293b"/>
+    <circle cx="235" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="25" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="130" cy="77" r="3" fill="#1e293b"/>
+    <text x="80" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="180" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="130" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">O</text>
+    <text x="245" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="15" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="82" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">10cm²</text>
+    <text x="130" y="120" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">20cm²</text>
+  </svg>
+</div>
 
-**Bài 59.** Cho hình thàng vương MNPQ rưỡng góc tại M và Q; /Q EMN. Kéo
-  dài MQ và NP cắt nhau tại A.
-- a) So sánh diện tích hai tam giác MNP và MQN.
-- b) So sánh diện tích hai tam giác AQP và AQN.
-- c) Diện tích hình thang MNPQ bằng 63cm2. Tính diện tích tam giác AQP.
-  N
+**Bài 59.** Cho hình thang vuông $MNPQ$ vuông góc tại $M$ và $Q$, kéo dài $MQ$ và $NP$ cắt nhau tại $A$.
+- a) So sánh diện tích hai tam giác $MNP$ và $MQN$.
+- b) So sánh diện tích hai tam giác $AQP$ và $AQN$.
+- c) Diện tích hình thang $MNPQ$ bằng $63\text{ cm}^2$. Tính diện tích tam giác $AQP$.
 
-**Bài 60.** Cho hình thang ABCD (hai đáy là AB, CD). Trên đường chéo AC lấy diểm
-  M sao cho MA = MC. Từ M kẻ đường thắng song song với đường chéo DB cắt
-  DC tại N (hình vẽ). Chứng minh rằng đoạn thắng BN chia hình thang ABCD
-  thành hai phần có diện tích băng nhau.
+**Bài 60.** Cho hình thang $ABCD$ (hai đáy là $AB, CD$). Trên đường chéo $AC$ lấy điểm $M$ sao cho $MA = MC$. Từ $M$ kẻ đường thẳng song song với đường chéo $DB$ cắt $DC$ tại $N$. Chứng minh rằng đoạn thẳng $BN$ chia hình thang $ABCD$ thành hai phần có diện tích bằng nhau.
 
-**Bài 61.** Cho hình thang ABCD có AB song song với CD và diện tích bằng 40cm2.
-  Kéo dài AB một đoạn BM sao cho AB = BM, kéo dài BC một đoạn CN sao
-  cho BC = CN, kéo dài CD một đoạn DP sao cho CD = DP, kéo dài DA một
-  đoạn AQ sao cho DA = AQ. Nôi M, N, P, Q. Tìm diện tích tứ giác MNPQ.
+**Bài 61.** Cho hình thang $ABCD$ có $AB$ song song với $CD$ và diện tích bằng $40\text{ cm}^2$. Kéo dài $AB$ một đoạn $BM$ sao cho $AB = BM$, kéo dài $BC$ một đoạn $CN$ sao cho $BC = CN$, kéo dài $CD$ một đoạn $DP$ sao cho $CD = DP$, kéo dài $DA$ một đoạn $AQ$ sao cho $DA = AQ$. Nối $M, N, P, Q$. Tìm diện tích tứ giác $MNPQ$.
 
-**Bài 62.** Cho hình chữ nhật ABCD có chu vi là 78cm, chiều dài AB hơn chiều rộng
-  BC là 15cm. Trên BC lấy điểm M, trên CD lấy điểm N sao cho hai đường thẳng
-  AM, AN chia hình chữ nhật thành 3 phần có diện tích bằng nhau. Tính độ dài
-  đoạn CM, CN.
+**Bài 62.** Cho hình chữ nhật $ABCD$ có chu vi là 78 cm, chiều dài $AB$ hơn chiều rộng $BC$ là 15 cm. Trên $BC$ lấy điểm $M$, trên $CD$ lấy điểm $N$ sao cho hai đường thẳng $AM, AN$ chia hình chữ nhật thành 3 phần có diện tích bằng nhau. Tính độ dài đoạn $CM, CN$.
 
-![Hình vẽ Bài 62](/assets/images/108-toan-5/bai-62.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="35" y="25" width="190" height="110" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="35" y1="25" x2="225" y2="98" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="35" y1="25" x2="160" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="35" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="225" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="225" cy="98" r="3" fill="#1e293b"/>
+    <circle cx="225" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="160" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="135" r="3" fill="#1e293b"/>
+    <text x="25" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="235" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="238" y="103" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">M</text>
+    <text x="235" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="160" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="25" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+  </svg>
+</div>
 
-**Bài 63.** Cho hình chữ nhật ABCD. Trên cạnh AB lấy điểm M bất kì. Chứng minh
-  Tang SOLE = 2$ASED
+**Bài 63.** Cho hình chữ nhật $ABCD$. Trên cạnh $AB$ lấy điểm $M$ bất kì. Chứng minh rằng $S_{DMC} = \frac{1}{2} S_{ABCD}$.
 
-**Bài 64.** Cho hình chữ nhật ABCD. I là điểm chính giữa cạnh AB. Nối D với I, đoạn
-  thăng DB cắt đoạn thắng IC tại K (hình vẽ).
-  *) Chứng minh rằng Saik - Speea
-- b) Kẻ IP vuông góc với DB; kẻ CQ vuông góc với DB. Chứng minh rằng
-  SDIC = 35 DIK ·
-- c) Biết SpIk = 8cm^2. Tính diện tích hình chữ nhật ABCD.
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="160" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="35" y="25" width="150" height="110" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="35" y1="135" x2="100" y2="25" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="185" y1="135" x2="100" y2="25" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="35" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="100" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="185" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="185" cy="135" r="3" fill="#1e293b"/>
+    <text x="25" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="100" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="195" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="25" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="195" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
-![Hình vẽ Bài 64](/assets/images/108-toan-5/bai-64.png)
+**Bài 64.** Cho hình chữ nhật $ABCD$. $I$ là điểm chính giữa cạnh $AB$. Nối $D$ với $I$, đoạn thẳng $DB$ cắt đoạn thẳng $IC$ tại $K$.
+- a) Chứng minh rằng $S_{DIK} = \frac{1}{2} S_{DBC}$.
+- b) Kẻ $IP$ vuông góc với $DB$; kẻ $CQ$ vuông góc với $DB$. Chứng minh rằng $S_{DIC} = 3 S_{DIK}$.
+- c) Biết $S_{DIK} = 8\text{ cm}^2$. Tính diện tích hình chữ nhật $ABCD$.
 
-**Bài 65.** Cho hình chữ nhật ABCD và các điểm M, O, I sao cho MI = ID và AO
-  = OI (hình vẽ). Biết diện tích tam giác MOI là 25m2. Hỏi diện tích hình chữ
-  nhật ABCD bằng bao nhiêu héc-ta?
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="170" viewBox="0 0 250 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="35" y="25" width="180" height="115" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="35" y1="140" x2="215" y2="25" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="125" y1="25" x2="35" y2="140" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="125" y1="25" x2="215" y2="140" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="35" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="125" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="215" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="140" r="3" fill="#1e293b"/>
+    <circle cx="215" cy="140" r="3" fill="#1e293b"/>
+    <circle cx="155" cy="63" r="3" fill="#1e293b"/>
+    <text x="25" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="125" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">I</text>
+    <text x="225" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="163" y="60" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">K</text>
+    <text x="25" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="225" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
-![Hình vẽ Bài 65](/assets/images/108-toan-5/bai-65.png)
+**Bài 65.** Cho hình chữ nhật $ABCD$ và các điểm $M, O, I$ sao cho $MI = ID$ và $AO = 2 \times OI$. Biết diện tích tam giác $MOI$ là $25\text{ m}^2$. Hỏi diện tích hình chữ nhật $ABCD$ bằng bao nhiêu héc-ta?
 
-**Bài 66.** Cho hình tròn tâm O tiếp xúc với 4 cạnh của hình vuông ABCD (như hình
-  vẽ). Biết diện tích hình vuông là 400cm^2. Tính:
-- a) Diện tích hình tròn tâm O.
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="170" viewBox="0 0 250 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="35" y="25" width="180" height="115" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="110" y1="25" x2="215" y2="140" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="35" y1="140" x2="162.5" y2="82.5" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="110" y1="25" x2="120" y2="102" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="35" y1="140" x2="110" y2="25" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="35" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="110" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="215" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="140" r="3" fill="#1e293b"/>
+    <circle cx="215" cy="140" r="3" fill="#1e293b"/>
+    <circle cx="162.5" cy="82.5" r="3" fill="#1e293b"/>
+    <circle cx="120" cy="102" r="3" fill="#1e293b"/>
+    <text x="25" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="110" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="225" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="175" y="82" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">I</text>
+    <text x="130" y="112" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">O</text>
+    <text x="25" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="225" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+  </svg>
+</div>
+
+**Bài 66.** Cho hình tròn tâm $O$ tiếp xúc với 4 cạnh của hình vuông $ABCD$. Biết diện tích hình vuông là $400\text{ cm}^2$. Tính:
+- a) Diện tích hình tròn tâm $O$.
 - b) Diện tích phần màu vàng.
 
-![Hình vẽ Bài 66](/assets/images/108-toan-5/bai-66.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="170" viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="35" y="20" width="130" height="130" fill="#fde047" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="100" cy="85" r="65" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="35" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="165" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="165" cy="150" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="150" r="3" fill="#1e293b"/>
+    <circle cx="100" cy="85" r="3" fill="#1e293b"/>
+    <text x="35" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="165" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="175" y="155" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="25" y="155" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="100" y="75" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">O</text>
+  </svg>
+</div>
 
-**Bài 67.** Một phòng học trong lòng dài 7m, rộng 5m, cao 3,5m. Các cửa ra vào và
-  chiếm 16m^2. Tìm phí tốn quét vôi tường phần bên trong căn phòng. Biết rằng
-  quét vôi 1m^2 tốn 5000 đồng.
+**Bài 67.** Một phòng học trong lòng dài 7m, rộng 5m, cao 3,5m. Các cửa ra vào và cửa sổ chiếm $16\text{ m}^2$. Tìm phí tốn quét vôi tường phần bên trong căn phòng. Biết rằng quét vôi $1\text{ m}^2$ tốn 5000 đồng.
 
-**Bài 68.** Dem 9,25m dây gai buộc thành hình chữ nhật trên tất cả các mặt của một
-  cái thùng các tông hình lập phương (xem hình vẽ). Phần các cột nút chiếm
-  2,5dm. Tính diện tích toàn phần cái thùng.
+**Bài 68.** Đem 9,25m dây gai buộc thành hình chữ nhật trên tất cả các mặt của một cái thùng các tông hình lập phương (xem hình vẽ). Phần các mối gút chiếm $2,5\text{ dm}$. Tính diện tích toàn phần cái thùng.
 
-![Hình vẽ Bài 68](/assets/images/108-toan-5/bai-68.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="170" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="35,65 115,65 115,145 35,145" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="35,65 80,25 160,25 115,65" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="115,65 160,25 160,105 115,145" fill="#e2e8f0" stroke="#1e293b" stroke-width="2"/>
+    <line x1="35" y1="105" x2="115" y2="105" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="75" y1="65" x2="75" y2="145" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="57.5" y1="45" x2="137.5" y2="45" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="97.5" y1="65" x2="120" y2="25" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="115" y1="105" x2="160" y2="65" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="137.5" y1="45" x2="137.5" y2="125" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="35" y1="145" x2="80" y2="105" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="80" y1="105" x2="160" y2="105" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+    <line x1="80" y1="25" x2="80" y2="105" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+  </svg>
+</div>
 
-**Bài 69.** Hình vuông ABCD có cạnh dài 5cm và có M, N, P, Q là các trung điểm
-  của bốn cạnh. Tính diện tích phần màu vàng.
+**Bài 69.** Hình vuông $ABCD$ có cạnh dài 5cm và có $M, N, P, Q$ là các trung điểm của bốn cạnh. Tính diện tích phần màu vàng.
 
-![Hình vẽ Bài 69](/assets/images/108-toan-5/bai-69.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="190" viewBox="0 0 220 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="35" y="20" width="150" height="150" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="125,50 160,120 95,140 60,70" fill="#fde047" stroke="#1e293b" stroke-width="2"/>
+    <line x1="110" y1="20" x2="185" y2="170" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="185" y1="95" x2="35" y2="170" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="110" y1="170" x2="35" y2="20" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="35" y1="95" x2="185" y2="20" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="35" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="110" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="185" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="185" cy="95" r="3" fill="#1e293b"/>
+    <circle cx="185" cy="170" r="3" fill="#1e293b"/>
+    <circle cx="110" cy="170" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="170" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="95" r="3" fill="#1e293b"/>
+    <text x="35" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="110" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="185" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="195" y="99" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">N</text>
+    <text x="195" y="175" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="110" y="184" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">P</text>
+    <text x="25" y="175" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="25" y="99" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">Q</text>
+  </svg>
+</div>
 
-**Bài 70.** Biết cạnh của mỗi ô vuông trong hình dưới đều dài 1cm. Tính tổng chu vi
-  và tổng diện tích của tất cả các hình vuông ở trong đó.
+**Bài 70.** Biết cạnh của mỗi ô vuông trong hình dưới đều dài 1cm. Tính tổng chu vi và tổng diện tích của tất cả các hình vuông ở trong đó.
 
-![Hình vẽ Bài 70](/assets/images/108-toan-5/bai-70.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="25" y="25" width="150" height="150" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="62.5" y1="25" x2="62.5" y2="175" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="100" y1="25" x2="100" y2="175" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="137.5" y1="25" x2="137.5" y2="175" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="25" y1="62.5" x2="175" y2="62.5" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="25" y1="100" x2="175" y2="100" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="25" y1="137.5" x2="175" y2="137.5" stroke="#1e293b" stroke-width="1.8"/>
+  </svg>
+</div>
 
-**Bài 71.** Bác Tư có một thửa ruộng hình tam giác vuông có hai cạnh góc vuông dài
-  60m và 30m. Năm nay xã đào một con mương rộng 3m chạy dọc theo cạnh 60m
-  (xem hình vẽ). Em hãy tính diện tích thửa ruộng còn lại.
-  30m
-  1 3m
-  60m
+**Bài 71.** Bác Tư có một thửa ruộng hình tam giác vuông có hai cạnh góc vuông dài 60m và 30m. Năm nay xã đào một con mương rộng 3m chạy dọc theo cạnh 60m (xem hình vẽ). Em hãy tính diện tích thửa ruộng còn lại.
 
-![Hình vẽ Bài 71](/assets/images/108-toan-5/bai-71.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="280" height="160" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="50,20 50,130 250,130" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="50,116 75,116 250,130 50,130" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <line x1="50" y1="116" x2="75" y2="116" stroke="#0284c7" stroke-width="1.5"/>
+    <line x1="38" y1="20" x2="38" y2="130" stroke="#1e293b" stroke-width="2.5"/>
+    <text x="28" y="78" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">30m</text>
+    <line x1="56" y1="116" x2="56" y2="130" stroke="#ef4444" stroke-width="2"/>
+    <text x="80" y="125" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0369a1" text-anchor="start">3m</text>
+    <text x="150" y="148" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">60m</text>
+  </svg>
+</div>
 
 **Bài 72.** Làm xong một mảnh dất hình thang, bạn An ước lượng dáy bé dài 25m,
   bạn Bình ước lượng đáy bé dài 20m, còn bạn Hoa ước lượng đáy lớn dài gấp
@@ -474,8 +632,9 @@ $$6 \odot 3 = 6 + 7 + 8$$
 Tìm giá trị của $n$ trong phép toán $n \odot 8 = 60$.
 
 **Bài 98.** Định nghĩa phép tính mới:
+$$\frac{8}{8} \ominus \frac{3}{4} = \frac{11}{32},\qquad \frac{2}{5} \ominus \frac{6}{7} = \frac{8}{35}\qquad\text{và}\qquad \frac{4}{7} \ominus \frac{5}{8} = \frac{9}{56}$$
 
-![Phép tính mới Bài 98](/assets/images/108-toan-5/bai-98.png)
+Tìm $\frac{13}{15} \ominus \frac{11}{12}$.
 
 **Bài 99.** Một chiếc hộp có chứa những viên bi xanh. Hai chiếc hộp khác lại chỉ chứa
   bi trắng. Nhãn trên hộp A: Bi trắng; nhãn trên hộp B: bi xanh; nhãn trên hộp
@@ -616,7 +775,29 @@ $$24 \times \frac{7}{6} = 28\text{ (ngày)}$$
 - a) So sánh diện tích hai tam giác $OBM$ và $OEN$.
 - b) So sánh diện tích hình tam giác $EMC$ với diện tích hình $AEMB$.
 
-![Hình vẽ lời giải Bài 55](/assets/images/108-toan-5/giai-bai-55.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="180" viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="90,20 30,160 220,160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="30" y1="160" x2="135" y2="69" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="30" y1="160" x2="155" y2="90" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="74" y1="160" x2="155" y2="90" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="135" y1="69" x2="74" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="90" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="30" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="220" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="135" cy="69" r="3" fill="#1e293b"/>
+    <circle cx="155" cy="90" r="3" fill="#1e293b"/>
+    <circle cx="74" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="106" cy="117" r="3" fill="#1e293b"/>
+    <text x="90" y="12" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="145" y="65" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">E</text>
+    <text x="165" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">N</text>
+    <text x="230" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="74" y="176" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="18" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="110" y="110" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">O</text>
+  </svg>
+</div>
 
 *Bài giải:*
 - a) Hai tam giác $MBE$ và $NBE$ có chung đáy $BE$ và chiều cao bằng nhau (vì $BMNE$ là hình thang) nên:
@@ -625,7 +806,7 @@ Vì:
 $$S_{MBE} = S_{OBM} + S_{OBE};\quad S_{NBE} = S_{OEN} + S_{OBE}$$
 Từ (1) suy ra:
 $$S_{OBM} = S_{OEN} \quad (2)$$
-- b) Hai tam giác $NAB$ và $NCB$ có chung chiều cao hạ từ $B$ và đáy $NA = NC$ nên:
+- b) Hai tam giác $NAB$ và $NCB$ có cùng chiều cao hạ từ $B$ và đáy $NA = NC$ nên:
 $$S_{NAB} = S_{NCB} \quad (3)$$
 Ta có:
 $$S_{EMC} = S_{MONC} + S_{OEN} = S_{NCB} - S_{OBM} + S_{OEN}$$
@@ -658,7 +839,25 @@ Hai tam giác $AGP$ và $BGP$ có diện tích bằng nhau và chung chiều cao
 
 **Bài 58.** Tính diện tích hình thang $ABCD$. Biết diện tích các hình tam giác $AOD$ và $DOC$ như hình vẽ:
 
-![Hình vẽ lời giải Bài 58](/assets/images/108-toan-5/giai-bai-58.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="80,35 180,35 235,135 25,135" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="80" y1="35" x2="235" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="180" y1="35" x2="25" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="80" cy="35" r="3" fill="#1e293b"/>
+    <circle cx="180" cy="35" r="3" fill="#1e293b"/>
+    <circle cx="235" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="25" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="130" cy="77" r="3" fill="#1e293b"/>
+    <text x="80" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="180" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="130" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">O</text>
+    <text x="245" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="15" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="82" y="88" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">10cm²</text>
+    <text x="130" y="120" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">20cm²</text>
+  </svg>
+</div>
 
 *Bài giải:*
 Hai tam giác $ADC$ và $BDC$ có chung đáy $DC$ và chiều cao bằng nhau nên:
@@ -676,7 +875,25 @@ $$S_{ABCD} = S_{AOB} + S_{AOD} + S_{DOC} + S_{BOC} = 5 + 10 + 20 + 10 = 45\text{
 
 **Bài 62.** Cho hình chữ nhật $ABCD$ có chu vi là 78 cm, chiều dài $AB$ hơn chiều rộng $BC$ là 15 cm. Trên $BC$ lấy điểm $M$, trên $CD$ lấy điểm $N$ sao cho hai đường thẳng $AM, AN$ chia hình chữ nhật thành 3 phần có diện tích bằng nhau. Tính độ dài đoạn $CM, CN$.
 
-![Hình vẽ lời giải Bài 62](/assets/images/108-toan-5/giai-bai-62.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="35" y="25" width="190" height="110" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="35" y1="25" x2="225" y2="98" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="35" y1="25" x2="160" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="35" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="225" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="225" cy="98" r="3" fill="#1e293b"/>
+    <circle cx="225" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="160" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="135" r="3" fill="#1e293b"/>
+    <text x="25" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="235" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="238" y="103" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">M</text>
+    <text x="235" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="160" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="25" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+  </svg>
+</div>
 
 *Đáp số:* $CM = 4\text{ cm};\quad CN = 9\text{ cm}$.
 
@@ -693,10 +910,20 @@ $$28,8 : 0,9 = 32\text{ (km/giờ)}$$
 *Đáp số:* Anh Bằng: 28 km/giờ; Anh Dũng: 32 km/giờ.
 
 **Bài 98.** Định nghĩa phép tính mới:
+$$\frac{8}{8} \ominus \frac{3}{4} = \frac{11}{32},\quad \frac{2}{5} \ominus \frac{6}{7} = \frac{8}{35}\quad\text{và}\quad \frac{4}{7} \ominus \frac{5}{8} = \frac{9}{56}.$$
+Tìm $\frac{13}{15} \ominus \frac{11}{12}$.
 
-![Lời giải Bài 98](/assets/images/108-toan-5/bai-98.png)
+*Bài giải:*
+Theo các phép tính đã cho:
+- $\frac{8}{8} \ominus \frac{3}{4} = \frac{8 + 3}{8 \times 4} = \frac{11}{32}$
+- $\frac{2}{5} \ominus \frac{6}{7} = \frac{2 + 6}{5 \times 7} = \frac{8}{35}$
+- $\frac{4}{7} \ominus \frac{5}{8} = \frac{4 + 5}{7 \times 8} = \frac{9}{56}$
 
-*Đáp số:* $\frac{180}{24}$ (hoặc phân số tương ứng theo quy luật).
+Quy luật của phép tính là: $\frac{a}{b} \ominus \frac{c}{d} = \frac{a + c}{b \times d}$.
+Áp dụng quy luật đó, ta có:
+$$\frac{13}{15} \ominus \frac{11}{12} = \frac{13 + 11}{15 \times 12} = \frac{24}{180} = \frac{2}{15}$$
+
+*Đáp số:* $\frac{2}{15}$.
 
 **Bài 100.** Bốn hành khách A, B, C, D đặt chỗ ở một khách sạn 18 tầng. Họ đến từ các nước Trung Quốc, Đức, Mexico và Ai Cập...
 *Đáp số:*

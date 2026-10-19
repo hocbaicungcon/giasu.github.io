@@ -37,8 +37,8 @@ Tổng hợp tài liệu Xác suất có điều kiện file PDF trong chương 
 5. Hệ thống bài tập trắc nghiệm trả lời ngắn.
 
 - [chuyen-de-xac-suat-co-dieu-kien-toan-12-chuong-trinh-moi-phan-nhat-linh](https://drive.google.com/file/d/1ian-61VAlcj4cS7vjvB_1IeS3CiDyweI/view?usp=sharing)
-- [chuyen-de-xac-suat-co-dieu-kien-toan-12](#drive-pending-chuyen-de-xac-suat-co-dieu-kien-toan-12.pdf)
-- [chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao](#drive-pending-chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao.pdf)
+- [chuyen-de-xac-suat-co-dieu-kien-toan-12](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
+- [chuyen-de-xac-suat-co-dieu-kien-tu-co-ban-den-nang-cao](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [toan-tap-xac-suat-co-dieu-kien-mon-toan-12-thpt](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [xac suat dieu kien](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 

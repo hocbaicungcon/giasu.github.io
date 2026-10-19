@@ -71,7 +71,7 @@ grade: 10
 
 - Đọc online tại đây:[https://python.swaroopch.com/](https://python.swaroopch.com/)
 
-- Dowload PDF: [byte-of-python](#drive-pending-byte-of-python.pdf)
+- Dowload PDF: [byte-of-python](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## 6. Learn Python The Hard Way
 

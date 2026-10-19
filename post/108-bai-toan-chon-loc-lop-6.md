@@ -410,194 +410,285 @@ grade: 6
   73.76
 
 **Bài 77.** Tính bằng cách hợp lý:
-- a) 17 -31 1 10 1
-  * 125
-  '2 '17 23'
-  » (·÷
-  —5
-  4 11
-  e> (źS
-  —
-  + 29
-  20\
-  31 /
-  + ⅖)
+- a) $\frac{17}{5} \cdot \frac{-31}{125} \cdot \frac{1}{2} \cdot \frac{10}{17} \cdot \frac{1}{2^3}$;
+- b) $\left(\frac{11}{4} \cdot \frac{-5}{9} - \frac{4}{9} \cdot \frac{11}{4}\right) \cdot \frac{8}{33}$;
+- c) $\left(\frac{17}{28} + \frac{18}{29} - \frac{19}{30} - \frac{20}{31}\right) \cdot \left(\frac{-5}{12} + \frac{1}{4} + \frac{1}{6}\right)$.
 
 **Bài 78.** Tính nhanh:
-  24.47 - 23 3 +
-  24 + 47.23*
-  - -
-  +
-  - —
-  + 9
-  79, Timx
-  2) 3
-  3+3*=4
-- b) ¼†¼
-  :x = -1;
-- c) 1 - (58+x-721)
-  ) : 16= = 0;
-  () 2+3+6+12+.
-  ... +
-  x(x + 1)
-  = 11991
+$$\frac{24.47 - 23}{24 + 47.23} \cdot \frac{3 + \frac{3}{7} - \frac{3}{10} + \frac{3}{1001} - \frac{3}{13}}{\frac{9}{1001} - \frac{9}{13} + \frac{9}{7} - \frac{9}{10} + 9}.$$
 
-![Biểu thức Bài 78](/assets/images/108-toan-6/bai-78.png)
+**Bài 79.** Tìm $x$:
+- a) $\frac{1}{3} + \frac{2}{3}x = \frac{1}{4}$;
+- b) $\frac{3}{4} + \frac{1}{4} : x = -1$;
+- c) $1 - \left(5\frac{3}{8} + x - 7\frac{5}{24}\right) : 16\frac{2}{3} = 0$;
+- d) $\frac{2}{2} + \frac{2}{6} + \frac{2}{12} + \dots + \frac{2}{x(x+1)} = 1\frac{1989}{1991}$.
 
-**Bài 79.** Tìm $x$ biết:
-- a) $\frac{1}{3} + \frac{2}{3} x = \frac{1}{4}$
-- b) $\frac{3}{4} + \frac{1}{4} : x = -1$
-- c) $1 - \left(5\frac{4}{9} + x - 7\frac{7}{18}\right) : 16\frac{2}{3} = 0$
-- d) $\frac{2}{1 \times 3} + \frac{2}{3 \times 5} + \dots + \frac{2}{x(x+1)} = 1\frac{1989}{1991}$
+**Bài 80.** Một ca nô xuôi dòng sông từ A đến B trong 3 giờ rồi đi ngược dòng trở về A mất $4\frac{1}{2}$ giờ. Nếu một bè nứa trôi tự do xuôi dòng thì mất bao nhiêu thời gian để trôi từ A đến B?
 
-**Bài 80.** Một ca nô xuôi dòng sông từ A đến B trong 3 giờ rồi đi ngược dòng trở về A
-  mất 42 giờ. Nếu một bè nứa trôi tự do xuôi dòng thì mất bao nhiêu thời gian để
-  trôi từ A đến B?
-
-**Bài 81.** Tìm x trong các hỗn số:
-  a)2¾ - 35;
-- b) 4} =1]
+**Bài 81.** Tìm $x$ trong các hỗn số:
+- a) $2\frac{x}{7} = \frac{75}{35}$;
+- b) $4\frac{3}{x} = \frac{47}{x}$;
+- c) $x\frac{x}{15} = \frac{112}{5}$.
 
 **Bài 82.** Tính:
-  2) (25 + đ) : (10-2- 92) :
-  ) 8 18 (1+1½)
-- c) ·(2 -8,75) : ·+ 0,625 : 13
+- a) $\left(2\frac{5}{6} + \frac{4}{9}\right) : \left(10\frac{1}{12} - 9\frac{1}{2}\right)$;
+- b) $1\frac{5}{18} - \frac{5}{18} \left(\frac{1}{15} + 1\frac{1}{12}\right)$;
+- c) $-\frac{1}{7} \cdot \left(9\frac{1}{2} - 8,75\right) : \frac{2}{7} + 0,625 : 1\frac{2}{3}$.
 
-**Bài 83.** Tìm x biết:
-- a) 7,5x : (9 - 621.
-  1≤225
-- b) (1,16 - x).5,25
-  · = 75%
-  (10ğ
-  - 7-
-  1.2-
+**Bài 83.** Tìm $x$ biết:
+- a) $7,5x : \left(9 - 6\frac{13}{21}\right) = 2\frac{13}{25}$;
+- b) $\frac{(1,16 - x) \cdot 5,25}{\left(10\frac{5}{9} - 7\frac{1}{4}\right) \cdot 2\frac{2}{17}} = 75\%$.
 
-**Bài 84.** Trong khối học sinh lớp 9 của một trường trung học cơ sở có 60% số học sinh
-  thích bóng đá, g số học sinh thích bóng bàn, 40% số học sinh thích bóng truyền và
-  15 số học sinh thích đá cầu. Hãy tìm số học sinh của mỗi nhóm cùng thích một môn
-  thể thao, biết số học sinh của khối 9 là 225.
+**Bài 84.** Trong khối học sinh lớp 9 của một trường trung học cơ sở có 60% số học sinh thích bóng đá, $\frac{2}{3}$ số học sinh thích bóng bàn, 40% số học sinh thích bóng chuyền và $\frac{4}{15}$ số học sinh thích đá cầu. Hãy tìm số học sinh của mỗi nhóm cùng thích một môn thể thao, biết số học sinh của khối 9 là 225.
 
-**Bài 85.** Năm nay con 12 tuổi, bố 42 tuổi. Tính tỉ số giữa tuổi con và tuổi bố ở những
-  thời điểm hiện nay; trước đây 7 năm; sau đây 28 năm.
+**Bài 85.** Năm nay con 12 tuổi, bố 42 tuổi. Tính tỉ số giữa tuổi con và tuổi bố ở những thời điểm hiện nay; trước đây 7 năm; sau đây 28 năm.
 
-**Bài 86.** Ba người chung nhau mua hết một rổ trứng. Người thứ nhất mua - số trứng
-  mà hai người kia mua. Số trứng người thứ hai mua bằng 5 số trứng người thứ nhất
-  mua. Người thứ ba mua 14 quả. Tính số trứng lúc đầu trong rổ.
+**Bài 86.** Ba người chung nhau mua hết một rổ trứng. Người thứ nhất mua $\frac{1}{2}$ số trứng mà hai người kia mua. Số trứng người thứ hai mua bằng $\frac{3}{5}$ số trứng người thứ nhất mua. Người thứ ba mua 14 quả. Tính số trứng lúc đầu trong rổ.
 
 ---
 
 ## 4. Hình học
 
-**Bài 87.** 1) Trong hình dưới có hai đường thẳng m và n và ba điểm chưa đặt tên. Hãy
-  điền các chữ A, B, C vào đúng vị trí của nó biết:
-- a) Điểm A không thuộc đường thăng m và cũng không thuộc đường thăng n;
-- b) Điểm B không thuộc đường thẳng m;
-- c) Điểm C không thuộc đường thẳng n.
-  2) Vẽ đường thăng p và các điểm A, B nằm trên p.
+**Bài 87.** 
+1) Trong hình dưới có hai đường thẳng $m$ và $n$ và ba điểm chưa đặt tên. Hãy điền các chữ A, B, C vào đúng vị trí của nó biết:
+- a) Điểm A không thuộc đường thẳng $m$ và cũng không thuộc đường thẳng $n$;
+- b) Điểm B không thuộc đường thẳng $m$;
+- c) Điểm C không thuộc đường thẳng $n$.
+
+2) Vẽ đường thẳng $p$ và các điểm A, B nằm trên $p$.
 - a) Nêu cách vẽ điểm C thẳng hàng với hai điểm A, B;
 - b) Nêu cách vẽ điểm D không thẳng hàng với 2 điểm A, B.
 
-![Hình vẽ Bài 87](/assets/images/108-toan-6/bai-87.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="150" viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <line x1="40" y1="70" x2="220" y2="20" stroke="#1e293b" stroke-width="2"/>
+    <text x="32" y="70" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" font-style="italic">m</text>
+    <circle cx="180" cy="31" r="3.5" fill="#1e293b"/>
+    <circle cx="140" cy="80" r="3.5" fill="#1e293b"/>
+    <line x1="40" y1="120" x2="220" y2="120" stroke="#1e293b" stroke-width="2"/>
+    <text x="32" y="115" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" font-style="italic">n</text>
+    <circle cx="150" cy="120" r="3.5" fill="#1e293b"/>
+  </svg>
+</div>
 
-**Bài 88.** Cho trước một số điểm trong đó không có 3 điểm nào thắng hàng. Vẽ các đường
-  thẳng đi qua các cặp điểm. Biết tổng số đường thẳng vẽ được 28. Hỏi có bao nhiêu
-  điểm cho trước?
+**Bài 88.** Cho trước một số điểm trong đó không có 3 điểm nào thẳng hàng. Vẽ các đường thẳng đi qua các cặp điểm. Biết tổng số đường thẳng vẽ được là 28. Hỏi có bao nhiêu điểm cho trước?
 
-**Bài 89.** Vẽ điểm D và E sao cho D nằm giữa C và E còn E năm giữa D và F.
-- a) Vì sao có thể khẳng định 4 điểm C, D, E, F thắng hàng
+**Bài 89.** Vẽ điểm D và E sao cho D nằm giữa C và E còn E nằm giữa D và F.
+- a) Vì sao có thể khẳng định 4 điểm C, D, E, F thẳng hàng?
 - b) Kể tên hai tia trùng nhau gốc E.
-- c) Vì sao có thể khẳng định điểm E nằm giữa C và F.
+- c) Vì sao có thể khẳng định điểm E nằm giữa C và F?
 
 **Bài 90.** Vẽ lại hình dưới rồi trả lời các câu hỏi sau:
 - a) Hình có mấy tia? Có mấy đoạn thẳng?
 - b) Những cặp đoạn thẳng nào không cắt nhau?
 - c) Hai đoạn thẳng nào cắt nhau tại điểm nằm giữa hai đầu của mỗi đoạn thẳng?
-  D
 
-![Hình vẽ Bài 90](/assets/images/108-toan-6/bai-90.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="280" height="200" viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="70" y="50" width="140" height="100" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="42" y1="30" x2="238" y2="170" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="42" y1="170" x2="238" y2="30" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="70" cy="50" r="3.5" fill="#1e293b"/>
+    <circle cx="210" cy="50" r="3.5" fill="#1e293b"/>
+    <circle cx="210" cy="150" r="3.5" fill="#1e293b"/>
+    <circle cx="70" cy="150" r="3.5" fill="#1e293b"/>
+    <circle cx="140" cy="100" r="3.5" fill="#1e293b"/>
+    <text x="70" y="40" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="210" y="40" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="220" y="155" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="70" y="168" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="35" y="28" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1">x</text>
+    <text x="245" y="180" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1">y</text>
+    <text x="245" y="28" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1">n</text>
+    <text x="35" y="180" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1">m</text>
+  </svg>
+</div>
 
-**Bài 91.** Trên đường thẳng xy lấy một điểm O và hai điểm M, N sao cho OM = 2cm; ON
-  = 3cm. Vẽ các điểm A và B trên đường thẳng xy sao cho M là trung điểm của OA;
-  N là trung điểm của OB. Tính độ dài AB.
+**Bài 91.** Trên đường thẳng $xy$ lấy một điểm O và hai điểm M, N sao cho $OM = 2\text{ cm}$; $ON = 3\text{ cm}$. Vẽ các điểm A và B trên đường thẳng $xy$ sao cho M là trung điểm của OA; N là trung điểm của OB. Tính độ dài AB.
 
-**Bài 92.** Gọi O là một điểm của đoạn thăng AB = 4cm. Xác định vị trí của điểm O để :
-- a) Tổng AB + BO đạt giá trị nhỏ nhất;
-- b) Tổng AB + BO = 2BO;
-- c) Tổng AB + BO = 3BO.
+**Bài 92.** Gọi O là một điểm của đoạn thẳng $AB = 4\text{ cm}$. Xác định vị trí của điểm O để:
+- a) Tổng $AB + BO$ đạt giá trị nhỏ nhất;
+- b) Tổng $AB + BO = 2BO$;
+- c) Tổng $AB + BO = 3BO$.
 
-**Bài 93.** Cho đường thăng m và năm điễm A,B,C,D,E không thuộc m.
-- a) Chứng tỏ rằng trong hai nửa mắt phẳng đối nhau bở là đường thắng m, có một
-  mặt phẳng chứa ít nhất 3 điểm.
-- b) Cứ qua hai điểm vẽ một đoạn thẳng. Hỏi nhiều nhất có mấy đoạn thẳng cắt m^2
+**Bài 93.** Cho đường thẳng $m$ và năm điểm A, B, C, D, E không thuộc $m$.
+- a) Chứng tỏ rằng trong hai nửa mặt phẳng đối nhau bờ là đường thẳng $m$, có một mặt phẳng chứa ít nhất 3 điểm.
+- b) Cứ qua hai điểm vẽ một đoạn thẳng. Hỏi nhiều nhất có mấy đoạn thẳng cắt $m$?
 
-**Bài 94.** Vẽ góc xOy khác góc bẹt. Lấy A trên tia Ox, lấy B trên tia Oy (A và B khác
-  O). Hãy lấy một điểm C sao cho góc BOC kề bù với góc BOA.
-- a) Trong ba điểm A,O,C điểm nào nằm giữa hai điểm còn lại?
-- b) Vẽ các tia BA,BC hỏi điểm O nằm trong góc nào?
+**Bài 94.** Vẽ góc $\widehat{xOy}$ khác góc bẹt. Lấy A trên tia $Ox$, lấy B trên tia $Oy$ (A và B khác O). Hãy lấy một điểm C sao cho góc $\widehat{BOC}$ kề bù với góc $\widehat{BOA}$.
+- a) Trong ba điểm A, O, C điểm nào nằm giữa hai điểm còn lại?
+- b) Vẽ các tia BA, BC hỏi điểm O nằm trong góc nào?
 - c) Kể tên các cặp góc kề bù đỉnh B.
 
-**Bài 95.** Cho góc bẹt xOy. Vẽ hai tia Om, On trên cùng một nửa mặt phẳng bờ xy sao
-  cho xOm = 120°; xOn = a°. Tìm giá trị của a để tia Om nằm giữa hai tia Oy, On.
+**Bài 95.** Cho góc bẹt $\widehat{xOy}$. Vẽ hai tia $Om, On$ trên cùng một nửa mặt phẳng bờ $xy$ sao cho $\widehat{xOm} = 120^\circ$; $\widehat{xOn} = a^\circ$. Tìm giá trị của $a$ để tia $Om$ nằm giữa hai tia $Oy, On$.
 
-**Bài 96.** Trên mặt phẳng, cho tia Ox. Vẽ hai tia Oy, Ot sao cho xOy = 100°; xOt = 150°.
-  Tính số đo góc yOt.
+**Bài 96.** Trên mặt phẳng, cho tia $Ox$. Vẽ hai tia $Oy, Ot$ sao cho $\widehat{xOy} = 100^\circ$; $\widehat{xOt} = 150^\circ$. Tính số đo góc $\widehat{yOt}$.
 
-**Bài 97.** Trên nửa mặt phẳng bờ chứa tia Ox vẽ ba tia Oy, Oz, Ot sao cho xOy =
-  50°; xOz = 75°; xOt = 100°. Xác định xem tia nào là tia phân giác của một góc.
+**Bài 97.** Trên nửa mặt phẳng bờ chứa tia $Ox$ vẽ ba tia $Oy, Oz, Ot$ sao cho $\widehat{xOy} = 50^\circ$; $\widehat{xOz} = 75^\circ$; $\widehat{xOt} = 100^\circ$. Xác định xem tia nào là tia phân giác của một góc.
 
-**Bài 98.** Cho ba tia OA, OB, OC tạo thành ba góc bằng nhau và không có điểm trong
-  chung DOB; BOC và COA. Vì sao có thể khẳng định tia đối của mỗi tia nói trên
-  là tia phân giác của góc tạo bởi hai tia còn lại?
+**Bài 98.** Cho ba tia OA, OB, OC tạo thành ba góc bằng nhau và không có điểm trong chung $\widehat{AOB}, \widehat{BOC}$ và $\widehat{COA}$. Vì sao có thể khẳng định tia đối của mỗi tia nói trên là tia phân giác của góc tạo bởi hai tia còn lại?
 
-**Bài 99.** Trên đường thẳng xy lấy điểm O. Vẽ đường tròn (O; 3) cắt Ox, Oy thứ tự tại
-  A và B. Vẽ đường tròn (O; 2) cắt tia Ox, Oy thứ tự tại C và D. Vẽ đường trong (D;
-  BD) cắt BO tại M và cắt đường tròn (O; 2) tại N.
+**Bài 99.** Trên đường thẳng $xy$ lấy điểm O. Vẽ đường tròn $(O; 3)$ cắt $Ox, Oy$ thứ tự tại A và B. Vẽ đường tròn $(O; 2)$ cắt tia $Ox, Oy$ thứ tự tại C và D. Vẽ đường tròn $(D; BD)$ cắt BO tại M và cắt đường tròn $(O; 2)$ tại N.
 - a) So sánh AC và BD.
-- b) Chứng tỏ M là trung điểm của OD
-- c) So sánh tổng ON + ND với OB.
+- b) Chứng tỏ M là trung điểm của OD.
+- c) So sánh tổng $ON + ND$ với OB.
 
-**Bài 100.** a) Vẽ AABC biết BC = 3,5cm; AB = 2cm; AC = 3cm.
-- b) Vẽ tiếp AADE biết D thuộc tia đối của tia AB và AD = 1cm; E thuộc tia đối
-  tia AC và AE = 1,5cm.
-- c) Hai tia BE và CD cắt nhau tại O. Dùng compa để kiểm tra xem E và D theo thứ
-  tự có phải là trung điểm của OB và OC không?
+**Bài 100.** 
+- a) Vẽ $\Delta ABC$ biết $BC = 3,5\text{ cm}$; $AB = 2\text{ cm}$; $AC = 3\text{ cm}$.
+- b) Vẽ tiếp $\Delta ADE$ biết D thuộc tia đối của tia AB và $AD = 1\text{ cm}$; E thuộc tia đối của tia AC và $AE = 1,5\text{ cm}$.
+- c) Hai tia BE và CD cắt nhau tại O. Dùng compa để kiểm tra xem E và D theo thứ tự có phải là trung điểm của OB và OC không?
 
-**Bài 101.** Một mảnh giấy hình chữ nhật bị gập lại theo hình dưới đây. Tính góc a.
-  75°
+**Bài 101.** Một mảnh giấy hình chữ nhật bị gập lại theo hình dưới đây. Tính góc $a$.
 
-![Hình vẽ Bài 101](/assets/images/108-toan-6/bai-101.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="40" y="20" width="220" height="110" fill="#f8fafc" stroke="#1e293b" stroke-width="1.8"/>
+    <polygon points="40,100 140,130 50,70" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.8"/>
+    <polyline points="47,77 55,79 58,72" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="44" y="108" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">75°</text>
+    <polygon points="140,130 230,80 220,110" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.8"/>
+    <polyline points="221,102 227,105 225,112" fill="none" stroke="#1e293b" stroke-width="1.2"/>
+    <text x="175" y="132" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">20°</text>
+    <path d="M 125,125 A 20 20 0 0 1 155,122" fill="#fde047" stroke="#eab308" stroke-width="1.5"/>
+    <text x="140" y="120" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#b45309" text-anchor="middle">a</text>
+  </svg>
+</div>
 
-**Bài 102.** ABCD là một hình vuông. ABPC là một tam giác đều. AB = BP và CD =
-  CP. Tìm góc ADP.
+**Bài 102.** ABCD là một hình vuông. $\Delta DPC$ là một tam giác đều. $AB = DP$ và $CD = CP$. Tìm góc $\widehat{ADP}$.
 
-**Bài 103.** Trong hình vẽ, BE = AC, CAE = 30° và AEB = 70°. Tìm góc ABC
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="240" height="200" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="50" y="40" width="140" height="140" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="50,180 190,180 120,59" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.8"/>
+    <line x1="50" y1="40" x2="120" y2="59" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="190" y1="40" x2="120" y2="59" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="50" cy="40" r="3.5" fill="#1e293b"/>
+    <circle cx="190" cy="40" r="3.5" fill="#1e293b"/>
+    <circle cx="190" cy="180" r="3.5" fill="#1e293b"/>
+    <circle cx="50" cy="180" r="3.5" fill="#1e293b"/>
+    <circle cx="120" cy="59" r="3.5" fill="#0284c7"/>
+    <text x="45" y="32" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="195" y="32" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="200" y="185" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="40" y="185" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="120" y="52" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0284c7" text-anchor="middle">P</text>
+  </svg>
+</div>
 
-![Hình vẽ Bài 103](/assets/images/108-toan-6/bai-103.png)
+**Bài 103.** Trong hình vẽ, $BE = AC$, $\widehat{CAE} = 30^\circ$ và $\widehat{AEB} = 70^\circ$. Tìm góc $\widehat{ABC}$.
 
-**Bài 104.** Trong biểu đồ dưới đây, AB = AC = AD. Góc ABC = 40° và góc ACD = 80°.
-  Tính góc BAD.
-  40°
-  8C
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="280" height="170" viewBox="0 0 280 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="160,35 40,140 230,140" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="160" y1="35" x2="180" y2="140" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="160" cy="35" r="3.5" fill="#1e293b"/>
+    <circle cx="40" cy="140" r="3.5" fill="#1e293b"/>
+    <circle cx="230" cy="140" r="3.5" fill="#1e293b"/>
+    <circle cx="180" cy="140" r="3.5" fill="#1e293b"/>
+    <text x="160" y="25" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="30" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="240" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="185" y="155" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">E</text>
+  </svg>
+</div>
 
-![Hình vẽ Bài 104](/assets/images/108-toan-6/bai-104.png)
+**Bài 104.** Trong hình vẽ dưới đây, $AB = AC = AD$, góc $\widehat{ABC} = 40^\circ$ và góc $\widehat{ACD} = 80^\circ$. Tính góc $\widehat{BAD}$.
 
-**Bài 105.** ABCD là một hình vuông và tam giác BCE là tam giác đều. Tính góc AED.
-  B
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="280" height="160" viewBox="0 0 280 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="105,45 35,130 175,130 225,75" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="105" y1="45" x2="175" y2="130" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="105" cy="45" r="3.5" fill="#1e293b"/>
+    <circle cx="35" cy="130" r="3.5" fill="#1e293b"/>
+    <circle cx="175" cy="130" r="3.5" fill="#1e293b"/>
+    <circle cx="225" cy="75" r="3.5" fill="#1e293b"/>
+    <text x="105" y="35" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="25" y="135" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="175" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="235" y="80" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">D</text>
+    <text x="60" y="125" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">40°</text>
+    <text x="160" y="120" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">80°</text>
+  </svg>
+</div>
 
-![Hình vẽ Bài 105](/assets/images/108-toan-6/bai-105.png)
+**Bài 105.** ABCD là một hình vuông và tam giác BCE là tam giác đều. Tính góc $\widehat{AED}$.
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="270" height="170" viewBox="0 0 270 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="40" y="35" width="100" height="100" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="140,35 140,135 227,85" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.8"/>
+    <line x1="40" y1="35" x2="227" y2="85" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="40" y1="135" x2="227" y2="85" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="40" cy="35" r="3.5" fill="#1e293b"/>
+    <circle cx="140" cy="35" r="3.5" fill="#1e293b"/>
+    <circle cx="140" cy="135" r="3.5" fill="#1e293b"/>
+    <circle cx="40" cy="135" r="3.5" fill="#1e293b"/>
+    <circle cx="227" cy="85" r="3.5" fill="#0284c7"/>
+    <text x="32" y="32" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">A</text>
+    <text x="145" y="28" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="145" y="150" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="32" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="237" y="89" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0284c7" text-anchor="start">E</text>
+  </svg>
+</div>
 
 **Bài 106.** Tính góc: $\widehat{a} + \widehat{b} + \widehat{c} + \widehat{d} + \widehat{e} + \widehat{f}$.
 
-![Hình vẽ Bài 106](/assets/images/108-toan-6/bai-106.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="95,25 45,95 130,95" fill="#f8fafc" stroke="#1e293b" stroke-width="1.8"/>
+    <polygon points="165,45 205,95 130,95" fill="#f8fafc" stroke="#1e293b" stroke-width="1.8"/>
+    <polygon points="130,95 80,175 190,160" fill="#f8fafc" stroke="#1e293b" stroke-width="1.8"/>
+    <text x="95" y="42" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">a</text>
+    <text x="60" y="90" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">b</text>
+    <text x="95" y="165" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">c</text>
+    <text x="180" y="152" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">d</text>
+    <text x="195" y="90" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">e</text>
+    <text x="165" y="60" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">f</text>
+  </svg>
+</div>
 
-**Bài 107.** Trong tam giác ABC, AB = AC, AD = AE và BAD = 60°. Tính góc CDE.
+**Bài 107.** Trong tam giác ABC, $AB = AC$, $AD = AE$ và $\widehat{BAD} = 60^\circ$. Tính góc $\widehat{CDE}$.
 
-![Hình vẽ Bài 107](/assets/images/108-toan-6/bai-107.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="130,30 40,160 220,160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="130" y1="30" x2="170" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="170" y1="160" x2="193" y2="121" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="130" cy="30" r="3.5" fill="#1e293b"/>
+    <circle cx="40" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="220" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="170" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="193" cy="121" r="3.5" fill="#1e293b"/>
+    <text x="130" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="30" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="230" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="170" y="178" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="203" y="122" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">E</text>
+  </svg>
+</div>
 
-**Bài 108.** Trong tam giác ABC, góc ABC bằng 80°, AD = AE và CD = CF. Tính góc
-  EDF.
+**Bài 108.** Trong tam giác ABC, góc $\widehat{ABC} = 80^\circ$, $AD = AE$ và $CD = CF$. Tính góc $\widehat{EDF}$.
 
-![Hình vẽ Bài 108](/assets/images/108-toan-6/bai-108.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="270" height="190" viewBox="0 0 270 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="75,30 50,160 230,160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="62" y1="95" x2="137" y2="82" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="137" y1="82" x2="120" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="75" cy="30" r="3.5" fill="#1e293b"/>
+    <circle cx="50" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="230" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="137" cy="82" r="3.5" fill="#1e293b"/>
+    <circle cx="62" cy="95" r="3.5" fill="#1e293b"/>
+    <circle cx="120" cy="160" r="3.5" fill="#1e293b"/>
+    <text x="75" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="40" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="240" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="145" y="78" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">D</text>
+    <text x="50" y="95" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">E</text>
+    <text x="120" y="178" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">F</text>
+  </svg>
+</div>
 
 ---
 
@@ -701,7 +792,23 @@ $$(30 + 3) : \left(1 - \frac{1}{4}\right) = 33 : \frac{3}{4} = 44\text{ (quả)}
 
 **Bài 107.** Trong tam giác $ABC$, $AB = AC$, $AD = AE$ và $\widehat{BAD} = 60^\circ$. Tính góc $\widehat{CDE}$.
 
-![Lời giải Bài 107](/assets/images/108-toan-6/giai-bai-107.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="200" viewBox="0 0 260 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="130,30 40,160 220,160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="130" y1="30" x2="170" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="170" y1="160" x2="193" y2="121" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="130" cy="30" r="3.5" fill="#1e293b"/>
+    <circle cx="40" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="220" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="170" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="193" cy="121" r="3.5" fill="#1e293b"/>
+    <text x="130" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="30" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="230" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="170" y="178" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="203" y="122" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">E</text>
+  </svg>
+</div>
 
 *Bài giải:*
 Đặt $\widehat{BAC} = 2\alpha$, $\widehat{ABC} = \widehat{ACB} = \beta$.
@@ -715,7 +822,25 @@ $$\widehat{CDE} = \frac{1}{2} \widehat{BAD} = \frac{1}{2} \times 60^\circ = 30^\
 
 **Bài 108.** Trong tam giác $ABC$, góc $\widehat{ABC} = 80^\circ$, $AD = AE$ và $CD = CF$. Tính góc $\widehat{EDF}$.
 
-![Lời giải Bài 108](/assets/images/108-toan-6/giai-bai-108.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="270" height="190" viewBox="0 0 270 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="75,30 50,160 230,160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="62" y1="95" x2="137" y2="82" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="137" y1="82" x2="120" y2="160" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="75" cy="30" r="3.5" fill="#1e293b"/>
+    <circle cx="50" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="230" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="137" cy="82" r="3.5" fill="#1e293b"/>
+    <circle cx="62" cy="95" r="3.5" fill="#1e293b"/>
+    <circle cx="120" cy="160" r="3.5" fill="#1e293b"/>
+    <text x="75" y="20" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="40" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">B</text>
+    <text x="240" y="165" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+    <text x="145" y="78" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">D</text>
+    <text x="50" y="95" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">E</text>
+    <text x="120" y="178" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">F</text>
+  </svg>
+</div>
 
 *Bài giải:*
 Tam giác $ADE$ cân tại $A$ ($AD = AE$) nên:

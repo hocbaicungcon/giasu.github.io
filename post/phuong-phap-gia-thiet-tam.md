@@ -13,9 +13,6 @@ tags:
 - Toán tiểu học
 grade: 5
 ---
-
-# Phương pháp giả thiết tạm giải toán 5, toán 4
-
 Phương pháp giả thiết tạm là một trong những phương pháp giải toán quan trọng ở bậc tiểu học, và cả THCS, khi mà các em học sinh chưa được học khái niệm hệ phương trình.
 
 Xem thêm

@@ -1,8 +1,6 @@
 ---
 title: Tên viết tắt của các trường Đại học là gì?
-description: HNUE hnue là gì, UEH là trường gì... là những câu hỏi mà rất nhiều học
-  sinh thắc mắc khi tìm hiểu về các trường đại học, cao đẳng. Dưới đây chúng tôi xin
-  giới
+description: 'Tra cứu tên viết tắt của các trường Đại học tại Việt Nam, tên giao dịch tiếng Anh chuẩn xác (NEU, FTU, HUST, UEH, UMP...) phân theo khu vực Hà Nội và TPHCM.'
 category: Các môn khác
 type: Khám phá
 date: '2024-10-02'
@@ -12,182 +10,96 @@ tags:
 - Viết tắt
 ---
 
-HNUE hnue là gì, UEH là trường gì… là những câu hỏi mà rất nhiều học sinh thắc mắc khi tìm hiểu về các trường đại học, cao đẳng. Dưới đây chúng tôi xin giới thiệu danh sách tên viết tắt của các trường Đại học.
-
-Danh sách này chưa đầy đủ và có một số trường viết tắt trùng nhau nên bạn đọc hãy truy cập website chính thức của trường Đại học mình muốn nộp hồ sơ để có mã trường chính xác nhất.
-
-## Tên các trường Đại học Việt Nam tại Hà Nội bằng tiếng Anh
-
-1. ĐH Quốc gia: Vietnam National University – VNU
-
-2. ĐH Kinh tế quốc dân: National Economics University – NEU
-
-3. ĐH Ngoại thương: Foreign Trade University – FTU
-
-4. ĐH Thương mại: Vietnam University of Commerce – VUC
-
-5. ĐH Khoa học Tự nhiên: University of Science – VNU – US
-
-6. ĐH Khoa học Xã hội & Nhân văn University of Social Science & Humanities -VNU – USSH
-
-7. ĐH Điện lực: Electric Power University – EPU
-
-8. ĐH Sư phạm: Hanoi National University of Education – HNUE
-
-9. ĐH Hà Nội: Hanoi University – HANU
-
-10. ĐH Ngoại ngữ: University of Languages & International Studies – ULIS
-
-11. ĐH Y HN: Medical University – HMU
-
-12. ĐH Y tế Công cộng HN: Hanoi University of Public Health – HUPH
-
-13. ĐH Bách khoa HN: University of Science & Technology – HUST
-
-14. ĐH Xây dựng: National University of Civil Engineering – NUCE
-
-15. ĐH Công nghệ: University of Engineering and Technology – UET
-
-16. ĐH Kiến trúc Hà Nội: Hanoi Architectural University – HAU
-
-17. ĐH Hàng hải: Vietnam Maritime University – VIMARU/VMU
-
-18. ĐH Mở HN: Hanoi Open University – HOU
-
-19. ĐH Mỏ Địa Chất: Hanoi University of Mining & Geology – HUMG
-
-20. HV Âm nhạc Quốc gia VN: Vietnam National Academy of Music – VNAM
-
-21. ĐH Nông Lâm: University of Agriculture & Forestry – UAF
-
-22. HV Nông Nghiệp Việt Nam: Vietnam National University of Agriculture – VNUA
-
-23. ĐH Tài nguyên và Môi trường : University of Natural Resources and Environment – UNRE
-
-24. ĐH Lâm nghiệp: Vietnam National Forestry University – VNUF
-
-25. ĐH Công nghiệp HN: Hanoi University of Industry – HAUI
-
-26. ĐH Luật HN: Hanoi Law University – HLU
-
-27. ĐH Kinh doanh & Công nghệ HN: Hanoi University of Business and Technology – HUBT
-
-28. ĐH Giao thông vận tải HN: Hanoi University of Transport & Communications – UTC
-
-29. HV Bưu Chính Viễn Thông: Posts and Telecommunications Institute of Technology – PTIT
-
-30. ĐH Văn hóa HN: Hanoi University of Culture – HUC
-
-31. ĐH Nội vụ: University of Home Affairs – HUHA
-
-32. ĐH Giáo dục: University of Education – VNU -UED
-
-33. ĐH Việt – Nhật: Vietnam Japan University – VJU
-
-34. HV Báo chí & Tuyên truyền: Academy of Journalism and Communication – AJC
-
-35. HV Ngoại giao: Diplomatic Academy of Vietnam – DAV
-
-36. HV Ngân hàng: Banking Academy – BA
-
-37. HV Tòa Án: Vietnam Court Academy – VCA
-
-38. HV Tài chính: Academy of Finance – AOF
-
-39. ĐH Tài chính – Ngân hàng: Financial & Banking University – FBU
-
-40. ĐH Thăng Long: Thang Long University – TLU
-
-41. ĐH Phương Đông: Phuong Dong University – PDU
-
-42. ĐH FPT: FPT University – FPT
-
-43. ĐH Đại Nam: Dai Nam University – DNU
-
-44. HV Công nghệ Hoàng gia Melbourne: The Royal Melbourne Institute of Technology – RMIT
-
-45. ĐH Xây dựng: National University of Civil Engineering – NUCE
-
-46. ĐH Sân khấu – Điện Ảnh HN: Hanoi Academy of Theatre and Cinema – SKDA
-
-47. ĐH Lao động – Xã hội: University of Laboratory & Social Affairs – ULSA
-
-48. ĐH Công đoàn: Vietnam Trade Union University
-
-49. ĐH Dược HN: Hanoi University of Pharmacy – HUP
-
-50. HV Khoa học quân sự: Military Science Academy – MSA
-
-51. HV Kỹ thuật mật mã: Academy of Cryptography Techniques – ACT
-
-52. HV Thiết kế & Thời trang London: London College of Design & Fashion – LCDF
-
-53. ĐH Mỹ thuật công nghiệp: University of Industrial Fine Art – UIFA
-
-54. ĐH Phòng cháy chữa cháy: University of Fire Fighting and Prevention – UFFP
-
-55. ĐH Kiểm sát: Hanoi Procuratorate University – HPU
-
-56. HV Hậu cần: Military Academy of Logistics – MAL
-
-57. HV An ninh nhân dân: People’s Security Academy – PSA/ T47
-
-58. HV Thanh thiếu niên VN: Vietnam Youth Academy – VYA
-
-## Tên các trường Đại học Việt Nam tại TPHCM bằng tiếng Anh
-
-1. ĐH Kinh tế HCM: HCM University of Economics – UEH
-
-2. ĐH Kinh tế – Tài chính: University of Economics & Finance – UEF
-
-3. ĐH Kinh tế – Luật: University of Economics & Laws – UEL
-
-4. ĐH Y Dược TPHCM: University of Medicine & Pharmacy – UMP
-
-5. ĐH Bách khoa TPHCM: Bach Khoa University – BKU
-
-6. ĐH Công nghiệp TPHCM: Industrial University Of HCMC – IUH
-
-7. ĐH Công nghệ TPHCM: Ho Chi Minh City University of Technology – HUTECH
-
-8. ĐH Công nghệ Thông tin TPHCM: University of Information Technology – UIT
-
-9. ĐH Ngoại ngữ – Tin học TPHCM: HCMC University of Foreign Languages – Information Technology – HUFLIT
-
-10. ĐH Sư Phạm Kỹ Thuật TPHCM : University of Technology and Education HCMC – HCMUTE
-
-11. HV chính trị quốc gia: HCM National Academy of Politics – HCMA
-
-12. ĐH Kiến trúc HCM: University of Architecture – UAH
-
-13. ĐH Hoa Sen: Hoa Sen University – HSU
-
-14. ĐH Văn Lang: Van Lang University – VLU
-
-15. ĐH Tôn Đức Thắng: Ton Duc Thang University – TDTU
-
-16. ĐH Sư phạm Thể dục Thể thao TPHCM: University of Physical Education and Sports – UPES
-
-17. ĐH Kinh tế – Kỹ thuật Công nghiệp: University of Economics – Technology for Industries – UNETI
-
-18. ĐH Thành Đô: Thanh Do University – TDU
-
-19. ĐH Giao thông Vận tải TPHCM: University of Transport – UT
-
-20. Nhạc viện TPHCM: HCMC Conservatory of Music – HCMCONS
-
-21. HV Hàng không: Vietnam Aviation Academy – VAA
-
-22. ĐH Tài nguyên – Môi trường: HCM University of Resources & Environment – NRE
-
-23. ĐH Công nghiệp Thực phẩm: HCM University of Food Industry – HUFI
-
-24. Học viện Hành chính Quốc gia : National Academy of Public Administration – NAPA
-
-## Danh sách tên viết tắt của các trường Đại học
-
+**HNUE là trường gì? UEH viết tắt của trường nào?** Đây là những câu hỏi rất phổ biến đối với các bậc phụ huynh và học sinh khi tìm hiểu về hệ thống tuyển sinh Đại học, Cao đẳng tại Việt Nam.
+
+Dưới đây là bảng tổng hợp chuẩn hóa tên viết tắt, tên tiếng Việt và tên giao dịch quốc tế bằng tiếng Anh của các trường Đại học trọng điểm trên toàn quốc.
+
+> [!NOTE]
+> Một số trường Đại học có tên viết tắt viết bằng tiếng Việt hoặc tiếng Anh tương tự nhau (ví dụ: *TLU* có thể là Đại học Thủy lợi hoặc Đại học Thăng Long; *DNU* có thể là Đại học Đại Nam hoặc Đại học Đồng Nai). Thí sinh cần tra cứu kèm theo mã tuyển sinh chính thức của Bộ GD&ĐT khi làm hồ sơ xét tuyển.
+
+---
+
+## 1. Bảng tên viết tắt các trường Đại học tại Hà Nội
+
+| STT | Mã viết tắt | Tên trường (Tiếng Việt) | Tên giao dịch quốc tế (Tiếng Anh) |
+| :---: | :---: | :--- | :--- |
+| 1 | **VNU** | Đại học Quốc gia Hà Nội | Vietnam National University, Hanoi |
+| 2 | **NEU** | Đại học Kinh tế Quốc dân | National Economics University |
+| 3 | **FTU** | Đại học Ngoại thương | Foreign Trade University |
+| 4 | **TMU (VUC)** | Đại học Thương mại | Thuongmai University |
+| 5 | **HUS** | Trường ĐH Khoa học Tự nhiên – ĐHQGHN | VNU University of Science |
+| 6 | **USSH** | Trường ĐH Khoa học Xã hội & Nhân văn – ĐHQGHN | VNU University of Social Sciences and Humanities |
+| 7 | **UET** | Trường ĐH Công nghệ – ĐHQGHN | VNU University of Engineering and Technology |
+| 8 | **ULIS** | Trường ĐH Ngoại ngữ – ĐHQGHN | VNU University of Languages and International Studies |
+| 9 | **UED** | Trường ĐH Giáo dục – ĐHQGHN | VNU University of Education |
+| 10 | **VJU** | Trường ĐH Việt – Nhật – ĐHQGHN | Vietnam Japan University |
+| 11 | **HUST** | Đại học Bách khoa Hà Nội | Hanoi University of Science and Technology |
+| 12 | **HNUE** | Trường ĐH Sư phạm Hà Nội | Hanoi National University of Education |
+| 13 | **HANU** | Trường ĐH Hà Nội | Hanoi University |
+| 14 | **HMU** | Đại học Y Hà Nội | Hanoi Medical University |
+| 15 | **HUPH** | Trường ĐH Y tế Công cộng | Hanoi University of Public Health |
+| 16 | **HUP** | Trường ĐH Dược Hà Nội | Hanoi University of Pharmacy |
+| 17 | **NUCE (HUCE)** | Trường ĐH Xây dựng Hà Nội | Hanoi University of Civil Engineering |
+| 18 | **HAU** | Trường ĐH Kiến trúc Hà Nội | Hanoi Architectural University |
+| 19 | **EPU** | Trường ĐH Điện lực | Electric Power University |
+| 20 | **HAUI** | Trường ĐH Công nghiệp Hà Nội | Hanoi University of Industry |
+| 21 | **HLU** | Trường ĐH Luật Hà Nội | Hanoi Law University |
+| 22 | **UTC** | Trường ĐH Giao thông Vận tải | University of Transport and Communications |
+| 23 | **PTIT** | Học viện Công nghệ Bưu chính Viễn thông | Posts and Telecommunications Institute of Technology |
+| 24 | **BA** | Học viện Ngân hàng | Banking Academy of Vietnam |
+| 25 | **AOF** | Học viện Tài chính | Academy of Finance |
+| 26 | **DAV** | Học viện Ngoại giao | Diplomatic Academy of Vietnam |
+| 27 | **AJC** | Học viện Báo chí và Tuyên truyền | Academy of Journalism and Communication |
+| 28 | **VNUA** | Học viện Nông nghiệp Việt Nam | Vietnam National University of Agriculture |
+| 29 | **HUMG** | Trường ĐH Mỏ – Địa chất | Hanoi University of Mining and Geology |
+| 30 | **HUNRE** | Trường ĐH Tài nguyên & Môi trường HN | Hanoi University of Natural Resources and Environment |
+| 31 | **VNUF** | Trường ĐH Lâm nghiệp | Vietnam National University of Forestry |
+| 32 | **TLU** | Trường ĐH Thủy lợi / ĐH Thăng Long | Thuyloi University / Thang Long University |
+| 33 | **HOU** | Trường ĐH Mở Hà Nội | Hanoi Open University |
+| 34 | **HUC** | Trường ĐH Văn hóa Hà Nội | Hanoi University of Culture |
+| 35 | **FPT** | Trường ĐH FPT | FPT University |
+| 36 | **RMIT** | Trường ĐH Quốc tế RMIT Việt Nam | RMIT University Vietnam |
+| 37 | **USTH** | Trường ĐH Khoa học & Công nghệ Hà Nội | University of Science and Technology of Hanoi |
+| 38 | **HUBT** | Trường ĐH Kinh doanh & Công nghệ HN | Hanoi University of Business and Technology |
+
+---
+
+## 2. Bảng tên viết tắt các trường Đại học tại TP. Hồ Chí Minh
+
+| STT | Mã viết tắt | Tên trường (Tiếng Việt) | Tên giao dịch quốc tế (Tiếng Anh) |
+| :---: | :---: | :--- | :--- |
+| 1 | **VNUHCM** | Đại học Quốc gia TP. Hồ Chí Minh | Vietnam National University Ho Chi Minh City |
+| 2 | **BKU (HCMUT)** | Trường ĐH Bách khoa – ĐHQG-HCM | Ho Chi Minh City University of Technology |
+| 3 | **HCMUS** | Trường ĐH Khoa học Tự nhiên – ĐHQG-HCM | VNUHCM - University of Science |
+| 4 | **HCMUSSH** | Trường ĐH KHXH & Nhân văn – ĐHQG-HCM | VNUHCM - University of Social Sciences and Humanities |
+| 5 | **UIT** | Trường ĐH Công nghệ Thông tin – ĐHQG-HCM | University of Information Technology |
+| 6 | **UEL** | Trường ĐH Kinh tế – Luật – ĐHQG-HCM | University of Economics and Law |
+| 7 | **HCMIU** | Trường ĐH Quốc tế – ĐHQG-HCM | International University |
+| 8 | **UEH** | Đại học Kinh tế TP. Hồ Chí Minh | University of Economics Ho Chi Minh City |
+| 9 | **UMP** | Đại học Y Dược TP. Hồ Chí Minh | University of Medicine and Pharmacy at HCMC |
+| 10 | **PNTU** | Trường ĐH Y khoa Phạm Ngọc Thạch | Pham Ngoc Thach University of Medicine |
+| 11 | **HCMUTE** | Trường ĐH Sư phạm Kỹ thuật TP.HCM | Ho Chi Minh City University of Technology and Education |
+| 12 | **HCMUE** | Trường ĐH Sư phạm TP. Hồ Chí Minh | Ho Chi Minh City University of Education |
+| 13 | **HCMUL** | Trường ĐH Luật TP. Hồ Chí Minh | Ho Chi Minh City University of Law |
+| 14 | **UAH** | Trường ĐH Kiến trúc TP. Hồ Chí Minh | University of Architecture Ho Chi Minh City |
+| 15 | **IUH** | Trường ĐH Công nghiệp TP. Hồ Chí Minh | Industrial University of Ho Chi Minh City |
+| 16 | **HUTECH** | Trường ĐH Công nghệ TP. Hồ Chí Minh | Ho Chi Minh City University of Technology (HUTECH) |
+| 17 | **HUFLIT** | Trường ĐH Ngoại ngữ – Tin học TP.HCM | HCMC University of Foreign Languages - Information Tech |
+| 18 | **TDTU** | Trường ĐH Tôn Đức Thắng | Ton Duc Thang University |
+| 19 | **UEF** | Trường ĐH Kinh tế – Tài chính TP.HCM | Ho Chi Minh City University of Economics and Finance |
+| 20 | **HSU** | Trường ĐH Hoa Sen | Hoa Sen University |
+| 21 | **VLU** | Trường ĐH Văn Lang | Van Lang University |
+| 22 | **SGU** | Trường ĐH Sài Gòn | Saigon University |
+| 23 | **NLU** | Trường ĐH Nông Lâm TP. Hồ Chí Minh | Nong Lam University |
+| 24 | **VAA** | Học viện Hàng không Việt Nam | Vietnam Aviation Academy |
+| 25 | **UFM** | Trường ĐH Tài chính – Marketing | University of Finance - Marketing |
+| 26 | **HUIT** | Trường ĐH Công Thương TP. Hồ Chí Minh | Ho Chi Minh City University of Industry and Trade |
+
+## 3. Bảng tra cứu tên viết tắt các trường Đại học toàn quốc (A - Z)
+
+| Mã viết tắt | Tên đầy đủ của trường Đại học |
+| :---: | :--- |
 | AGU | Trường Đại học An Giang – ĐHQG HCM |
-| --- | --- |
 | AUAD | Trường Đại học Mỹ thuật Công nghiệp Á Châu |
 | AUV | The American University in Vietnam |
 | BETU | Trường Đại học Kinh tế- Kỹ thuật Bình Dương |

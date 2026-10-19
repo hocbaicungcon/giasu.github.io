@@ -1,6 +1,6 @@
 ---
 title: Đáp án module 5 THPT
-description: Xem thêm Bài tập cuối khóa module 5 THPT
+description: 'Gợi ý đáp án Module 5 cấp THPT đầy đủ các câu hỏi trắc nghiệm và bài tập cuối khóa dành cho giáo viên tham khảo hoàn thành tập huấn.'
 category: Các môn khác
 type: Bài tập
 date: '2024-10-02'

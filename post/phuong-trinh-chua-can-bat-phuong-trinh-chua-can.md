@@ -10,9 +10,6 @@ tags:
 - Chứa căn
 grade: 10
 ---
-
-# Phương trình chứa căn – Bất phương trình chứa căn
-
 Các dạng phương trình chứa căn bậc hai, bất phương trình chứa căn thức bậc hai luôn là một dạng toán xuất hiện nhiều trong các kì thi học kì, thi tuyển sinh vào lớp 10, thi THPTQG.
 
 Để giải được phương trình, bất phương trình chứa căn, các em học sinh cần nắm vững kiến thức sau:

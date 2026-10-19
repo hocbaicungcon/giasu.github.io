@@ -1,35 +1,33 @@
 ---
-title: PHƯƠNG PHÁP LỰA CHỌN TÌNH HUỐNG
-description: Ví dụ và bài tập PHƯƠNG PHÁP LỰA CHỌN TÌNH HUỐNG trong giải toán tiểu
-  học.
-category: Các môn khác
+title: 'Phương Pháp Lựa Chọn Tình Huống Trong Dạy Học Phát Triển Năng Lực'
+description: 'Phương pháp lựa chọn tình huống và giả thiết suy luận logic giải toán tiểu học: lý thuyết, kĩ thuật lập bảng loại trừ và các bài tập có lời giải chi tiết.'
+category: Toán học
 type: Bài học
 date: '2024-10-02'
 tags:
-- Giáo dục
-- Phương pháp dạy học
-- Tình huống sư phạm
+- Toán học
+- Bồi dưỡng học sinh giỏi
+- Toán tiểu học
+- Suy luận logic
+grade: 5
 ---
 
-PHƯƠNG PHÁP LỰA CHỌN TÌNH HUỐNG là một trong những [PHƯƠNG PHÁP BỒI DƯỠNG HỌC SINH GIỎI TOÁN TIỂU HỌC](/bai-viet/cac-phuong-phap-boi-duong-hoc-sinh-gioi-toan-tieu-hoc.html). Để giải các bài toán này, các em học sinh cần lựa chọn một trong các tình huống đề bài đưa ra và giả sử nó đúng, từ đó suy luận, xem xét các tình huống khác có hợp lí hay không.
+**Phương pháp lựa chọn tình huống** (hay phương pháp xét các trường hợp và suy luận logic) là một trong những [phương pháp bồi dưỡng học sinh giỏi toán tiểu học](/bai-viet/cac-phuong-phap-boi-duong-hoc-sinh-gioi-toan-tieu-hoc.html). Để giải các bài toán này, học sinh cần lựa chọn một trong các tình huống đề bài đưa ra và giả sử nó đúng, từ đó suy luận logic và xem xét các tình huống khác có mâu thuẫn hay hợp lí hay không.
 
-Thường đối với các bài toán giải bằng PHƯƠNG PHÁP LỰA CHỌN TÌNH HUỐNG, chúng ta có thể kết hợp với việc lập bảng để dễ nhìn và loại bỏ các phương án không hợp lí.
+Đối với dạng toán này, kĩ thuật kết hợp **lập bảng chân lý / bảng loại trừ** giúp học sinh dễ dàng quan sát, đối chiếu dữ kiện và tìm ra đáp án chính xác một cách khoa học.
 
 ## 1. Ví dụ phương pháp lựa chọn tình huống
 
 **Ví dụ 1.** Trong kì thi học sinh giỏi tỉnh có 4 bạn Phương, Dương, Hiếu, Hằng tham gia. Được hỏi quê mỗi người ở đâu ta nhận được các câu trả lời sau:
 
 - Phương: Dương ở Thăng Long còn tôi ở Quang Trung.
-
-- Dương : Tôi cũng ở Quang Trung còn Hiếu ở Thăng Long.
-
-- Hiếu : Không, tôi ở Phúc Thành còn Hằng ở Hiệp Hoà.
-
-- Hằng : Trong các câu trả lời trên đều có 1 phần đúng 1 phần sai.
+- Dương: Tôi cũng ở Quang Trung còn Hiếu ở Thăng Long.
+- Hiếu: Không, tôi ở Phúc Thành còn Hằng ở Hiệp Hoà.
+- Hằng: Trong các câu trả lời trên đều có 1 phần đúng 1 phần sai.
 
 Em hãy xác định quê của mỗi bạn.
 
-**Hướng dẫn.
+**Hướng dẫn:**
 Vì trong mỗi câu trả lời đều có 1 phần đúng và 1 phần sai nên chúng ta xét câu trả lời của Phương thì có các trường hợp:
 
 **TH1.** Dương ở Thăng Long là đúng thì Phương ở Quang Trung là sai.

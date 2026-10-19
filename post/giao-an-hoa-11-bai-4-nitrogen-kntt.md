@@ -1,6 +1,6 @@
 ---
 title: Giáo án hóa 11 bài 4 nitrogen KNTT
-description: Giáo án hóa 11 bài 4 nitrogen KNTT
+description: 'Giáo án Hóa học 11 Bài 4 Nitrogen bộ sách Kết Nối Tri Thức theo chuẩn công văn 5512 có slide trình chiếu và phiếu học tập đi kèm.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

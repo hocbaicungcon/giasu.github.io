@@ -1,146 +1,115 @@
 ---
 title: Lý thuyết và bài tập dấu tam thức bậc hai
-description: Lý thuyết và ✅bài tập dấu tam thức bậc hai là gì? ứng dụng định lí dấu
-  của tam thức bậc hai để giải phương trình, bất phương trình, tìm điều kiện để tam
-  thức luôn dương, luôn âm.
-category: Các môn khác
+description: 'Toàn bộ lý thuyết và bài tập dấu tam thức bậc hai Toán 10: định lý trong trái ngoài cùng, bảng xét dấu, điều kiện luôn dương luôn âm có ví dụ giải chi tiết.'
+category: Toán học
 type: Bài học
 date: '2024-10-02'
 tags:
-- Các môn khác
+- Toán học
+- Toán 10
+- Tam thức bậc hai
+- Bất phương trình
+grade: 10
 ---
 
-Sử dụng kiến thức về dấu tam thức bậc hai, chúng ta có thể giải quyết được 2 dạng toán quan trọng sau:
-
+Sử dụng kiến thức về **dấu tam thức bậc hai**, chúng ta có thể giải quyết được các dạng toán trọng tâm của Đại số 10:
 - [Tìm điều kiện để tam thức bậc hai luôn dương, luôn âm](/bai-viet/tim-dieu-kien-de-tam-thuc-bac-hai-luon-duong.html)
-
 - [Cách giải phương trình chứa căn, bất phương trình chứa căn](/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html)
 
 ## 1. Tam thức bậc hai là gì?
 
-Tam thức bậc hai đối với biến $x$ là biểu thức có dạng 
-
+Tam thức bậc hai đối với biến $x$ là biểu thức có dạng:
 $$
-f(x) = ax^2+ bx + c,
+f(x) = ax^2 + bx + c, \quad (a \ne 0)
 $$
+trong đó $a, b, c$ là các hệ số thực, $a$ là hệ số của bậc cao nhất.
 
- trong đó $a, b, c$ là những hệ số, $a \ne 0.$
+## 2. Định lý về dấu của tam thức bậc hai
 
-## 2. Định lí về dấu của tam thức bậc hai
+### 2.1. Định lý dấu tam thức bậc hai
 
-### 2.1. Định lí dấu tam thức bậc hai
+Cho tam thức bậc hai $f(x) = ax^2 + bx + c$ với $a \ne 0,$ biệt thức $\Delta = b^2 - 4ac$ (hoặc $\Delta' = b'^2 - ac$). Khi đó:
 
-Cho tam thức bậc hai $f(x)=ax^2+bx+c$ với $a\ne 0$ có $\Delta=b^2-4ac.$ Khi đó, có ba trường hợp xảy ra:
+- **Nếu $\Delta < 0$:** $f(x)$ cùng dấu với hệ số $a$ với mọi $x \in \mathbb{R}$ ($a \cdot f(x) > 0, \forall x$).
+- **Nếu $\Delta = 0$:** $f(x)$ cùng dấu với hệ số $a$ với mọi $x \ne -\dfrac{b}{2a}.$ Tại $x = -\dfrac{b}{2a}$ thì $f(x) = 0.$
+- **Nếu $\Delta > 0$:** $f(x)$ có hai nghiệm phân biệt $x_1 < x_2.$ Dấu của $f(x)$ tuân theo quy tắc vàng: **"Trong trái – Ngoài cùng"** (trong khoảng hai nghiệm trái dấu với $a,$ ngoài khoảng hai nghiệm cùng dấu với $a$).
 
-- $\Delta <0$: $f(x)$ cùng dấu với hệ số $a$ với mọi $x\in \mathbb{R},$
+### Bảng tổng hợp dấu của tam thức bậc hai
 
-- $\Delta =0$: $f(x)$ cùng dấu với hệ số $a$ với mọi $x\ne -\frac{b}{2a},$
-
-- $\Delta >0$: $f(x)$ có hai nghiệm phân biệt $x_1,x_2$ (giả sử $x_1<x_2$), và dấu của $f(x)$ xác định bởi quy tắc **trong trái — ngoài cùng**, nghĩa là ở giữa hai số $0$ thì thì $f(x)$ và hệ số $a$ trái dấu, còn bên ngoài hai số $0$ thì cùng dấu.
+| Biệt thức $\Delta$ | Nghiệm của $f(x) = 0$ | $a > 0$ | $a < 0$ | Quy tắc xét dấu |
+| :---: | :---: | :---: | :---: | :--- |
+| $\Delta < 0$ | Vô nghiệm | $f(x) > 0, \forall x \in \mathbb{R}$ | $f(x) < 0, \forall x \in \mathbb{R}$ | Luôn cùng dấu với hệ số $a$ trên toàn $\mathbb{R}$ |
+| $\Delta = 0$ | Nghiệm kép $x_0 = -\dfrac{b}{2a}$ | $f(x) > 0, \forall x \ne x_0$ | $f(x) < 0, \forall x \ne x_0$ | Cùng dấu với $a$ với mọi $x \ne x_0$ |
+| $\Delta > 0$ | 2 nghiệm $x_1 < x_2$ | $(x_1; x_2): f(x) < 0$<br>$(-\infty; x_1) \cup (x_2; +\infty): f(x) > 0$ | $(x_1; x_2): f(x) > 0$<br>$(-\infty; x_1) \cup (x_2; +\infty): f(x) < 0$ | **Trong trái - Ngoài cùng** so với hệ số $a$ |
 
 ![bảng xét dấu tam thức bậc hai](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bang-xet-dau-tam-thuc-bac-hai.jpg)
 
 ### 2.2. Minh họa hình học của định lý dấu tam thức bậc hai
 
-Định lí về dấu của tam thức bậc hai có minh họa hình học sau
+Định lý về dấu của tam thức bậc hai có minh họa hình học thông qua vị trí tương đối giữa parabol $y = ax^2 + bx + c$ và trục hoành $Ox$:
 
 ![định lí về dấu tam thức bậc hai](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-dinh-ly-dau-tam-thuc-bac-hai.png)
 
-### 2.3. Ứng dụng định lí dấu của tam thức bậc hai
+### 2.3. Ứng dụng: Điều kiện để tam thức không đổi dấu trên $\mathbb{R}$
 
-Nhận xét rằng trong cả hai trường hợp $a>0$ và $a<0$ thì
+- $f(x) > 0, \forall x \in \mathbb{R} \iff \begin{cases} a > 0 \\ \Delta < 0 \end{cases}$
+- $f(x) < 0, \forall x \in \mathbb{R} \iff \begin{cases} a < 0 \\ \Delta < 0 \end{cases}$
+- $f(x) \geqslant 0, \forall x \in \mathbb{R} \iff \begin{cases} a > 0 \\ \Delta \leqslant 0 \end{cases}$
+- $f(x) \leqslant 0, \forall x \in \mathbb{R} \iff \begin{cases} a < 0 \\ \Delta \leqslant 0 \end{cases}$
 
-- $f(x)$ luôn có đủ hai loại dấu cả âm và dương nếu $\Delta >0,$
+Xem chi tiết: [Tìm điều kiện để tam thức bậc hai luôn dương, luôn âm](/bai-viet/tim-dieu-kien-de-tam-thuc-bac-hai-luon-duong.html)
 
-- $f(x)$ chỉ có một loại dấu hoặc âm hoặc dương nếu $\Delta \leqslant 0.$
+### 2.4. Định lý đảo dấu tam thức bậc hai (So sánh nghiệm với số $\alpha$)
 
-Do đó, chúng ta có các bài toán sau đây, với $f(x)=ax^2+bx+c$ trong đó $a\ne 0$:
+Cho tam thức bậc hai $f(x) = ax^2 + bx + c$ ($a \ne 0$) có hai nghiệm phân biệt $x_1 < x_2$ và một số thực $\alpha$:
+- $x_1 < \alpha < x_2 \iff a \cdot f(\alpha) < 0$
+- $\alpha < x_1 < x_2 \iff \begin{cases} \Delta > 0 \\ a \cdot f(\alpha) > 0 \\ \dfrac{S}{2} > \alpha \end{cases}$
+- $x_1 < x_2 < \alpha \iff \begin{cases} \Delta > 0 \\ a \cdot f(\alpha) > 0 \\ \dfrac{S}{2} < \alpha \end{cases}$
 
-- $f(x) >0\, \forall x\in \mathbb{R} \Leftrightarrow \begin{cases} \Delta <0\\ a>0 \end{cases}$
+---
 
-- $f(x) <0\, \forall x\in \mathbb{R} \Leftrightarrow \begin{cases} \Delta <0\\ a<0 \end{cases}$
+## 3. Bài tập về dấu tam thức bậc hai có hướng dẫn giải
 
-- $f(x) \geqslant 0\, \forall x\in \mathbb{R} \Leftrightarrow \begin{cases} \Delta \leqslant 0\\ a>0 \end{cases}$
+**Bài 1.** Xét dấu các tam thức sau:
+1. $f(x) = x^2 - 5x + 6$
+2. $g(x) = -x^2 + 4x + 5$
+3. $h(x) = 6x^2 + x + 4$
 
-- $f(x) \leqslant 0\, \forall x\in \mathbb{R} \Leftrightarrow \begin{cases} \Delta \leqslant 0\\ a<0 \end{cases}$
-
-Chi tiết về vấn đề này, xin mời các em học sinh xem trong bài giảng [Tìm điều kiện để tam thức bậc hai luôn dương, luôn âm](/bai-viet/tim-dieu-kien-de-tam-thuc-bac-hai-luon-duong.html)
-
-### 2.4. Định lí đảo dấu tam thức bậc hai
-
-Cho tam thức bậc hai $f(x)=ax^2+bx+c$, với $a\ne 0$, có hai nghiệm phân biệt $x_1<x_2$ và một số $\epsilon.$ Khi đó, ta có các kết quả sau
-
-- $x_1<\epsilon <x_2 \Leftrightarrow a\cdot f(\epsilon)<0$
-
-- $\epsilon <x_1<x_2 \Leftrightarrow \begin{cases} \Delta >0\\ a\cdot f(\epsilon)>0\\ \epsilon <\frac{S}{2} \end{cases}$
-
-- $x_1<x_2<\epsilon \Leftrightarrow \begin{cases} \Delta >0\\ a\cdot f(\epsilon)>0\\ \frac{S}{2}<\epsilon \end{cases}$
-
-Ứng dụng của định lí đảo là dùng để so sánh một số với hai nghiệm của phương trình bậc hai. Chi tiết vấn đề này, mời các em tham khảo bài [So sánh 1 số với 2 nghiệm của phương trình bậc hai](/bai-viet/so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai.html)
-
-## 3. Bài tập về dấu tam thức bậc hai
-
-**Bài 1.** Xét dấu các tam thức sau
-
-1. $f(x)=x^2-5x+6$
-
-2. $g(x)=-x^2+4x+5$
-
-3. $h(x)=6x^2+x+4$
-
-Hướng dẫn.
-
-1. Tam thức bậc hai $f(x)$ có hệ số $a=6$ và có hai nghiệm $x_1=2,x_2=3$ nên có bảng xét dấu như sau:
+**Hướng dẫn giải.**
+1. Tam thức $f(x) = x^2 - 5x + 6$ có hệ số $a = 1 > 0$ và có hai nghiệm $x_1 = 2, x_2 = 3.$ Áp dụng quy tắc "trong trái ngoài cùng":
+   - $f(x) < 0$ với mọi $x \in (2; 3)$
+   - $f(x) > 0$ với mọi $x \in (-\infty; 2) \cup (3; +\infty)$
+   - $f(x) = 0 \iff x \in \{2; 3\}$
 
    ![bảng xét dấu của tam thức bậc hai f(x)](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bang-xet-dau-fx.jpg)
 
-2. Tam thức bậc hai $g(x)=-x^2+4x+5$ có hệ số $a=-1$ và có hai nghiệm $x_1=-1,x_2=5$ nên có bảng xét dấu như sau:
+2. Tam thức $g(x) = -x^2 + 4x + 5$ có hệ số $a = -1 < 0$ và có hai nghiệm $x_1 = -1, x_2 = 5:$
 
    ![bảng xét dấu của g(x)](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bang-xet-dau-gx.jpg)
 
-3. Tam thức bậc hai $h(x)=6x^2+x+4$ có hệ số $a=6$ và có $\Delta <0$ nên có bảng xét dấu như sau:
+3. Tam thức $h(x) = 6x^2 + x + 4$ có hệ số $a = 6 > 0$ và $\Delta = 1^2 - 4(6)(4) = -95 < 0.$ Do đó $h(x) > 0$ với mọi $x \in \mathbb{R}.$
 
    ![bảng xét dấu của hx](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bang-xet-dau-hx.jpg)
 
-**Bài 2.** Giải các bất phương trình sau
+**Bài 2.** Giải các bất phương trình sau:
+1. $x^2 - 2x + 3 > 0$
+2. $x^2 + 9 > 6x$
+3. $6x^2 - x - 2 \geqslant 0$
+4. $\frac{1}{3}x^2 + 3x + 6 < 0$
+5. $\dfrac{x^2 + 1}{x^2 + 3x - 10} < 0$
+6. $\dfrac{10 - x}{5 + x^2} > \dfrac{1}{2}$
+7. $\dfrac{x + 1}{x - 1} + 2 > \dfrac{x - 1}{x}$
+8. $\dfrac{1}{x + 1} + \dfrac{2}{x + 3} < \dfrac{3}{x + 2}$
 
-1. $x^2-2x+3>0$
+**Hướng dẫn giải.**
 
-2. $x^2+9>6x$
-
-3. $6x^2-x-2 \geqslant 0$
-
-4. $\frac{1}{3}x^2+3x+6<0$
-
-5. $\dfrac{x^2+1}{x^2+3x-10}<0$
-
-6. $\dfrac{10-x}{5+x^2}>\dfrac{1}{2}$
-
-7. $\dfrac{x+1}{x-1}+2>\dfrac{x-1}{x}$
-
-8. $\dfrac{1}{x+1}+\dfrac{2}{x+3}<\dfrac{3}{x+2}$
-
-**Hướng dẫn.** Để giải các bất phương trình hữu tỉ, chúng ta biến đổi (rút gọn, quy đồng giữ lại mẫu) để được một bất phương trình tích, thương các [nhị thức bậc nhất](/bai-viet/ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat.html) và tam thức bậc hai. Sau đó lập bảng xét dấu và căn cứ vào đó để kết luận.
-
-1. $x^2-2x+3>0.$
-
-   Bất phương trình này chỉ gồm một tam thức bậc hai nên chúng ta lập bảng xét dấu luôn, được kết quả như sau:
+1. $x^2 - 2x + 3 > 0:$ Có $\Delta' = 1 - 3 = -2 < 0$ và $a = 1 > 0,$ do đó $x^2 - 2x + 3 > 0$ với mọi $x \in \mathbb{R}.$ Vậy tập nghiệm $S = \mathbb{R}.$
 
    ![bảng xét dấu bất phương trình bậc hai](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-bac-hai.jpg)
 
-   Từ bảng xét dấu, chúng ta có tập nghiệm của bất phương trình là $\mathbb{R}.$
-
-2. $x^2+9>6x.$ Biến đổi bất phương trình đã cho thành
-
-   $$
-   x^2+9-6x>0
-   $$
-
-   Bảng xét dấu của vế trái như sau:
+2. $x^2 + 9 > 6x \iff x^2 - 6x + 9 > 0 \iff (x - 3)^2 > 0 \iff x \ne 3.$ Tập nghiệm $S = \mathbb{R} \setminus \{3\}.$
 
    ![bat phuong trinh bac hai 2](assets/images/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai-bat-phuong-trinh-bac-hai-2.jpg)
-
-   Suy ra, tập nghiệm của bất phương trình đã cho là $\mathbb{R}\setminus \{0\}.$
 
 3. $6x^2-x-2 \geqslant 0.$ Lập bảng xét dấu cho vế trái, ta được:
 

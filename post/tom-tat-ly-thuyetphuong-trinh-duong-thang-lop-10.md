@@ -1,8 +1,6 @@
 ---
 title: Tóm tắt lý thuyết phương trình đường thẳng lớp 10
-description: Lập phương trình đường thẳng là một bài toán quan trọng của chương phương
-  pháp tọa độ trong mặt phẳng thuộc chương trình hình học lớp 10. Có hai bài toán
-  cơ
+description: 'Tóm tắt toàn bộ lý thuyết phương trình đường thẳng Hình học 10: phương trình tham số, tổng quát, chính tắc, góc và khoảng cách kèm ví dụ giải chi tiết.'
 category: Toán học
 type: Bài học
 date: '2022-03-28'
@@ -13,14 +11,22 @@ tags:
 - Phương trình đường thẳng
 grade: 10
 ---
+Lập phương trình đường thẳng là một bài toán trọng tâm của chương [phương pháp tọa độ trong mặt phẳng](/bai-viet/bai-tap-phuong-phap-toa-do-trong-mat-phang.html) thuộc chương trình hình học lớp 10. Có hai dạng bài toán nền tảng cần nắm vững là lập phương trình tham số và lập phương trình tổng quát của đường thẳng.
 
-# Tóm tắt lý thuyết Phương trình đường thẳng lớp 10
+Ngoài ra còn có phương trình chính tắc, phương trình đường thẳng theo hệ số góc, phương trình đoạn chắn và công thức tính góc, khoảng cách.
 
-Lập phương trình đường thẳng là một bài toán quan trọng của chương [phương pháp tọa độ trong mặt phẳng](/bai-viet/bai-tap-phuong-phap-toa-do-trong-mat-phang.html) thuộc chương trình hình học lớp 10. Có hai bài toán cơ bản cần ghi nhớ là lập phương trình tổng quát của đường thẳng, lập phương trình tham số của đường thẳng.
+### Bảng tổng hợp các dạng phương trình đường thẳng
 
-Ngoài ra còn có phương trình chính tắc của đường thẳng, cách lập phương trình đường thẳng đi qua hai điểm, lập phương trình đường thẳng biết hệ số góc…
+| Dạng phương trình | Dữ kiện xác định | Công thức phương trình | Điều kiện / Ghi chú |
+| :--- | :--- | :--- | :--- |
+| **Tham số** | Đi qua $M_0(x_0; y_0)$, VTCP $\vec{u}(a; b)$ | $\begin{cases} x = x_0 + at \\ y = y_0 + bt \end{cases}$ | $t \in \mathbb{R}$, $\vec{u} \ne \vec{0}$ |
+| **Chính tắc** | Đi qua $M_0(x_0; y_0)$, VTCP $\vec{u}(a; b)$ | $\dfrac{x - x_0}{a} = \dfrac{y - y_0}{b}$ | $a \ne 0, b \ne 0$ |
+| **Tổng quát** | Đi qua $M_0(x_0; y_0)$, VTPT $\vec{n}(A; B)$ | $A(x - x_0) + B(y - y_0) = 0 \iff Ax + By + C = 0$ | $A^2 + B^2 \ne 0$, $C = -(Ax_0 + By_0)$ |
+| **Hệ số góc** | Đi qua $M_0(x_0; y_0)$, hệ số góc $k$ | $y - y_0 = k(x - x_0) \iff y = kx + m$ | $k = \tan\alpha = \dfrac{b}{a}$ ($a \ne 0$) |
+| **Đoạn chắn** | Cắt trục tại $A(a; 0)$ và $B(0; b)$ | $\dfrac{x}{a} + \dfrac{y}{b} = 1$ | $a \ne 0, b \ne 0$ (cắt $Ox, Oy$) |
+| **Qua 2 điểm** | Đi qua $A(x_A; y_A)$ và $B(x_B; y_B)$ | $\dfrac{x - x_A}{x_B - x_A} = \dfrac{y - y_A}{y_B - y_A}$ | $x_B \ne x_A, y_B \ne y_A$ |
 
-Xem thêm [100 Bài tập phương pháp tọa độ trong mặt phẳng](/bai-viet/bai-tap-phuong-phap-toa-do-trong-mat-phang.html)
+Xem thêm: [100 Bài tập phương pháp tọa độ trong mặt phẳng](/bai-viet/bai-tap-phuong-phap-toa-do-trong-mat-phang.html)
 
 ## 1. Phương trình tham số của đường thẳng
 
@@ -36,8 +42,7 @@ Một véc-tơ $\overrightarrow{u}\ne \vec{0}$ được gọi là véc-tơ chỉ
 
 **Ví dụ 1.** Lập phương trình tham số của đường thẳng $d$ có véc-tơ chỉ phương là $\vec{u}(3;4)$ và đi qua điểm $M(7;2).$
 
-**Hướng dẫn.
-Phương trình tham số của đường thẳng $d$ có véc-tơ chỉ phương là $\vec{u}(3;4)$ và đi qua điểm $M(7;2)$ là 
+**Hướng dẫn.** Phương trình tham số của đường thẳng $d$ có véc-tơ chỉ phương là $\vec{u}(3;4)$ và đi qua điểm $M(7;2)$ là:
 
 $$
 \begin{cases} 
@@ -46,7 +51,7 @@ y=4t+2
 \end{cases} (t\in \mathbb{R})
 $$
 
-**Nhận xét
+**Nhận xét:**
 - Một đường thẳng có vô số vectơ chỉ phương và tất cả chúng đều cùng phương với nhau.
 
 - Nếu $\overrightarrow{u}$ là một vectơ chỉ phương của đường thẳng $d$ thì $k.\overrightarrow{u}$ cũng là vectơ chỉ phương của $d.$
@@ -99,17 +104,17 @@ $$
 
 **Ví dụ 4.** Lập phương trình đường trung trực của đoạn thẳng $EF$ với $E(1;9)$ và $F(3;-3)$
 
-**Hướng dẫn.
+**Hướng dẫn.**
 - Gọi đường trung trực của $EF$ là $d$ thì đường thẳng $d$ vuông góc với $EF$ và đi qua trung điểm của $EF.$
 
-- Vì $d$ vuông góc với $EF$ nên đường thẳng $d$ có véc-tơ pháp tuyến chính là $\overrightarrow{EF}(2;-12).$
+- Vì $d$ vuông góc với $EF$ nên đường thẳng $d$ có véc-tơ pháp tuyến chính là $\overrightarrow{EF}(2;-12)$ hay véc-tơ cùng phương $\vec{n}(1;-6).$
 
 - Gọi trung điểm của $EF$ là $M$ thì tìm được $M(2;3).$
 
-- Đường thẳng $d$ có véc-tơ pháp tuyến chính là $\overrightarrow{EF}(2;-12)$ và đi qua điểm $M(2;3)$ nên có phương trình tổng quát:
+- Đường thẳng $d$ đi qua điểm $M(2;3)$ và có VTPT $\vec{n}(1;-6)$ nên có phương trình tổng quát:
 
   $$
-  2x-12y+32=0.
+  1(x-2) - 6(y-3) = 0 \iff x-6y+16=0.
   $$
 
 ### 2.3. Mối quan hệ giữa véc-tơ chỉ phương và véc-tơ pháp tuyến của đường thẳng
@@ -128,7 +133,7 @@ Nếu đường thẳng $\Delta$ có phương trình: $ax+by+c=0$ thì đường
 
 **Ví dụ 5.** Lập phương trình tổng quát của đường thẳng $AB$ với $A(1;2)$ và $B(-3;5).$
 
-**Hướng dẫn.
+**Hướng dẫn.**
 - Đường thẳng $AB$ chứa $\overrightarrow{AB}(-4;3)$ nên $\overrightarrow{AB}(-4;3)$ chính là véc-tơ chỉ phương của đường thẳng $AB.$
 
 - Suy ra, đường thẳng $AB$ có véc-tơ pháp tuyến là $\vec{n}(3;4).$
@@ -136,7 +141,7 @@ Nếu đường thẳng $\Delta$ có phương trình: $ax+by+c=0$ thì đường
 - Như vậy, đường thẳng $AB$ có véc-tơ pháp tuyến là $\vec{n}(3;4)$ và đi qua điểm $A(1;2)$ nên có phương trình tổng quát:
 
   $$
-  3x+4y-11=0.
+  3(x-1) + 4(y-2) = 0 \iff 3x+4y-11=0.
   $$
 
 ## 3. Góc và khoảng cách lớp 10
@@ -199,18 +204,18 @@ $$
 
 **Ví dụ 9.** Tính góc giữa hai đường thẳng $\Delta: x-3y+5=0$ và $\Delta’:2x-3y+7=0.$
 
-**Hướng dẫn.
-- Đường thẳng $\Delta$ có véc-tơ pháp tuyến là $\vec{n}(1;-3)$, đường thẳng $\Delta’$ có véc-tơ pháp tuyến là $\vec{n}'(2;-3)$ nên góc giữa hai đường thẳng có
+**Hướng dẫn.**
+- Đường thẳng $\Delta$ có véc-tơ pháp tuyến là $\vec{n}(1;-3)$, đường thẳng $\Delta’$ có véc-tơ pháp tuyến là $\vec{n}'(2;-3)$ nên góc giữa hai đường thẳng có:
 
   $$
   \begin{aligned}
   \cos(\Delta,\Delta’)&=\frac{|\vec{n}\cdot \vec{n}’|}{\big|\vec{n}|\cdot|\vec{n}’\big|}\\ 
   &=\frac{\big|1\cdot 2+(-3)\cdot (-3)\big|}{\sqrt{1^2+(-3)^2}\cdot\sqrt{2^2+(-3)^2}}\\ 
-  &= \frac{11}{\sqrt{130}}.
+  &= \frac{11}{\sqrt{10}\cdot\sqrt{13}} = \frac{11}{\sqrt{130}}.
   \end{aligned}
   $$
 
-- Suy ra, góc giữa hai đường thẳng là $(\Delta,\Delta’)\approx 15.26^\circ.$
+- Suy ra, góc giữa hai đường thẳng là $(\Delta,\Delta’)\approx 15{,}26^\circ.$
 
 ## 4. Các dạng phương trình đường thẳng lớp 10 khác
 
@@ -235,7 +240,7 @@ $$
 - Nếu hai điểm $A(x_A;y_A)$ và $B(x_B;y_B)$ mà có $x_B-x_A\ne 0$ và $y_B-y_A\ne 0$ thì có phương trình
 
   $$
-  \frac{x-x_A}{x_B-x_A}=\frac{y-y_A}{y_B-yA}
+  \frac{x-x_A}{x_B-x_A}=\frac{y-y_A}{y_B-y_A}
   $$
 
 ### 4.4. PT đường thẳng cắt hai trục tọa độ

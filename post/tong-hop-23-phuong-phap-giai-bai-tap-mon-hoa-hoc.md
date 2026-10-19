@@ -1,6 +1,6 @@
 ---
 title: Tổng hợp 23 phương pháp giải bài tập môn hoá học
-description: các phương pháp giải bài tập môn hoá học
+description: 'Tổng hợp 23 phương pháp giải nhanh bài tập Hóa học THPT: bảo toàn e, bảo toàn khối lượng, dồn chất, quy đổi kèm ví dụ minh họa chi tiết.'
 category: Hóa học
 type: Mẹo học tập
 date: '2022-07-31'

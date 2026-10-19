@@ -1,5 +1,5 @@
 ---
-title: 'TOÁN 9: LIÊN HỆ GIỮA CUNG VÀ DÂY CUNG'
+title: 'Toán 9: Liên Hệ Giữa Cung và Dây Cung - Lý Thuyết và Bài Tập'
 description: 'Cung và dây cung có mối liên hệ như thế nào? Đây là một kiến thức quan
   trọng trong chương trình lớp 9. Mời các em cùng tham khảo:'
 category: Toán học

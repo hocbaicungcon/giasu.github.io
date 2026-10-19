@@ -1,6 +1,6 @@
 ---
 title: PPCT hóa 11 KNTT có chuyên đề học tập
-description: PPCT hóa 11 KNTT có chuyên đề học tập
+description: 'Phân phối chương trình Hóa học 11 bộ sách Kết Nối Tri Thức có kèm chuyên đề học tập được phân chia tiết dạy rõ ràng, chi tiết.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

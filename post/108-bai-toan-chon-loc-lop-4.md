@@ -84,11 +84,84 @@ grade: 4
 
 **Bài 15.** Điền các số tự nhiên vào ô trống sao cho tổng các số trong 3 ô liên tiếp bằng 267:
 
-![Sơ đồ Bài 15](/assets/images/108-toan-4/bai-15.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="360" height="60" viewBox="0 0 360 60" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <g stroke="#1e293b" stroke-width="2" fill="#f8fafc">
+      <rect x="10" y="8" width="42" height="42"/>
+      <rect x="52" y="8" width="42" height="42"/>
+      <rect x="94" y="8" width="42" height="42"/>
+      <rect x="136" y="8" width="42" height="42"/>
+      <rect x="178" y="8" width="42" height="42"/>
+      <rect x="220" y="8" width="42" height="42"/>
+      <rect x="262" y="8" width="42" height="42"/>
+      <rect x="304" y="8" width="42" height="42"/>
+    </g>
+    <text x="73" y="34" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#0369a1" text-anchor="middle">98</text>
+    <text x="199" y="34" font-family="system-ui, sans-serif" font-size="16" font-weight="bold" fill="#0369a1" text-anchor="middle">66</text>
+  </svg>
+</div>
 
 **Bài 16.** Điền các số thích hợp vào các ô trống sao cho kết quả đúng khi thực hiện các phép tính:
 
-![Sơ đồ phép tính Bài 16](/assets/images/108-toan-4/bai-16.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="420" height="150" viewBox="0 0 420 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <defs>
+      <marker id="arrow16" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M 0,0 L 6,3 L 0,6 Z" fill="#1e293b"/>
+      </marker>
+    </defs>
+    <!-- Sơ đồ 1 (trái) -->
+    <g stroke="#1e293b" stroke-width="1.8" fill="#f8fafc">
+      <rect x="20" y="20" width="30" height="30"/>
+      <rect x="75" y="20" width="30" height="30"/>
+      <rect x="130" y="20" width="30" height="30"/>
+      <rect x="185" y="20" width="30" height="30"/>
+      <rect x="185" y="85" width="30" height="30"/>
+      <rect x="130" y="85" width="30" height="30"/>
+      <rect x="75" y="85" width="30" height="30"/>
+      <rect x="20" y="85" width="30" height="30"/>
+    </g>
+    <line x1="50" y1="35" x2="73" y2="35" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="62" y="28" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">-3</text>
+    <line x1="105" y1="35" x2="128" y2="35" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="117" y="28" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">:3</text>
+    <line x1="160" y1="35" x2="183" y2="35" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="172" y="28" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">.1</text>
+    
+    <line x1="200" y1="50" x2="200" y2="83" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="212" y="70" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">-2</text>
+
+    <line x1="185" y1="100" x2="162" y2="100" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="173" y="117" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">+4</text>
+    <line x1="130" y1="100" x2="107" y2="100" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="118" y="117" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">.2</text>
+    <line x1="75" y1="100" x2="52" y2="100" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    
+    <line x1="35" y1="85" x2="35" y2="52" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="24" y="70" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">+1</text>
+
+    <!-- Sơ đồ 2 (phải) -->
+    <g stroke="#1e293b" stroke-width="1.8" fill="#f8fafc">
+      <rect x="280" y="25" width="32" height="32"/>
+      <rect x="360" y="25" width="32" height="32"/>
+      <rect x="360" y="85" width="32" height="32"/>
+      <rect x="280" y="85" width="32" height="32"/>
+    </g>
+    <text x="296" y="46" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">5</text>
+    <text x="376" y="46" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">10</text>
+    <text x="376" y="106" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">4</text>
+    <text x="296" y="106" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">2</text>
+
+    <line x1="312" y1="41" x2="358" y2="41" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="335" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">.2</text>
+    <line x1="376" y1="57" x2="376" y2="83" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="388" y="72" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">-6</text>
+    <line x1="360" y1="101" x2="314" y2="101" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="337" y="96" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">:2</text>
+    <line x1="296" y1="85" x2="296" y2="59" stroke="#1e293b" stroke-width="1.5" marker-end="url(#arrow16)"/>
+    <text x="284" y="72" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">+3</text>
+  </svg>
+</div>
 
 **Bài 17.** Điền vào bảng sau:
 
@@ -101,11 +174,100 @@ grade: 4
 
 **Bài 18.** Một con thỏ nặng bao nhiêu kg?
 
-![Cân đĩa thỏ Bài 18](/assets/images/108-toan-4/bai-18.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="420" height="150" viewBox="0 0 420 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="210,105 198,135 222,135" fill="#94a3b8" stroke="#1e293b" stroke-width="2"/>
+    <line x1="60" y1="105" x2="360" y2="105" stroke="#1e293b" stroke-width="4"/>
+    <path d="M 50,105 L 70,118 L 190,118 L 200,105" fill="none" stroke="#64748b" stroke-width="2"/>
+    <line x1="60" y1="105" x2="70" y2="118" stroke="#64748b" stroke-width="2"/>
+    <rect x="70" y="114" width="120" height="4" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <g transform="translate(73, 62)">
+      <g transform="translate(0, 0)">
+        <ellipse cx="10" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="16" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="13" cy="26" r="8" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="13" cy="40" rx="10" ry="12" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(24, 0)">
+        <ellipse cx="10" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="16" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="13" cy="26" r="8" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="13" cy="40" rx="10" ry="12" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(48, 0)">
+        <ellipse cx="10" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="16" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="13" cy="26" r="8" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="13" cy="40" rx="10" ry="12" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(72, 0)">
+        <ellipse cx="10" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="16" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="13" cy="26" r="8" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="13" cy="40" rx="10" ry="12" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(96, 0)">
+        <ellipse cx="10" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="16" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="13" cy="26" r="8" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="13" cy="40" rx="10" ry="12" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+      </g>
+    </g>
+    <rect x="230" y="114" width="120" height="4" fill="#cbd5e1" stroke="#475569" stroke-width="1"/>
+    <g transform="translate(235, 62)">
+      <g transform="translate(0, 0)">
+        <ellipse cx="10" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="16" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="13" cy="26" r="8" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="13" cy="40" rx="10" ry="12" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(24, 0)">
+        <ellipse cx="10" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="16" cy="12" rx="3" ry="10" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <circle cx="13" cy="26" r="8" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+        <ellipse cx="13" cy="40" rx="10" ry="12" fill="#f8fafc" stroke="#1e293b" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(56, 18)">
+        <path d="M 5,6 C 5,2 19,2 19,6 L 22,34 L 2,34 Z" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.5"/>
+        <text x="12" y="26" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">6kg</text>
+      </g>
+      <g transform="translate(84, 14)">
+        <path d="M 5,6 C 5,2 23,2 23,6 L 26,38 L 2,38 Z" fill="#e2e8f0" stroke="#1e293b" stroke-width="1.5"/>
+        <text x="14" y="28" font-family="system-ui, sans-serif" font-size="10" font-weight="bold" fill="#1e293b" text-anchor="middle">9kg</text>
+      </g>
+    </g>
+  </svg>
+</div>
 
 **Bài 19.** Điền các số vào ô trống:
 
-![Sơ đồ điền số Bài 19](/assets/images/108-toan-4/bai-19.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="420" height="70" viewBox="0 0 420 70" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <defs>
+      <marker id="arrow19" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+        <path d="M 0,0 L 6,3 L 0,6 Z" fill="#1e293b"/>
+      </marker>
+    </defs>
+    <circle cx="30" cy="35" r="22" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="53" y1="35" x2="88" y2="35" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arrow19)"/>
+    <text x="70" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1" text-anchor="middle">.3</text>
+
+    <circle cx="115" cy="35" r="22" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="138" y1="35" x2="173" y2="35" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arrow19)"/>
+    <text x="155" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1" text-anchor="middle">+625</text>
+
+    <circle cx="200" cy="35" r="22" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="223" y1="35" x2="258" y2="35" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arrow19)"/>
+    <text x="240" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1" text-anchor="middle">-24</text>
+
+    <circle cx="285" cy="35" r="22" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="308" y1="35" x2="343" y2="35" stroke="#1e293b" stroke-width="1.8" marker-end="url(#arrow19)"/>
+    <text x="325" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1" text-anchor="middle">:7</text>
+
+    <circle cx="370" cy="35" r="22" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <text x="370" y="40" font-family="system-ui, sans-serif" font-size="15" font-weight="bold" fill="#1e293b" text-anchor="middle">100</text>
+  </svg>
+</div>
 
 **Bài 20.** Dưới các ô vuông là các số giống nhau. Hỏi số đó là số nào?
 $$\square + \square + \square + 2 + \square + 2 + \square + 2 + \square = 36$$
@@ -160,8 +322,6 @@ $$\frac{5}{6},\ \frac{8}{7},\ \frac{51}{42},\ \frac{4}{3},\ \frac{15}{14},\ \fra
 
 **Bài 39.** Tính nhanh giá trị của biểu thức:
 $$\frac{1995}{1997} \times \frac{1990}{1993} \times \frac{997}{995} \times \frac{1993}{1995} \times \frac{1997}{1994}$$
-
-![Biểu thức Bài 39](/assets/images/108-toan-4/bai-39.png)
 
 **Bài 40.** Ba bạn An, Bình, Cư chia nhau một số viên bi. An lấy $\frac{1}{8}$ số bi và 12 viên bi, Bình lấy $\frac{1}{9}$ số bi và 18 viên bi, còn lại 25 viên bi thì chia hết cho Cư. Hỏi ba bạn đã chia tổng cộng bao nhiêu viên bi?
 
@@ -246,8 +406,6 @@ $$\frac{1995}{1997} \times \frac{1990}{1993} \times \frac{997}{995} \times \frac
 | **Số bé** | | | | |
 | **Số lớn** | | | | |
 
-![Bảng Bài 70](/assets/images/108-toan-4/bai-70.png)
-
 **Bài 71.** Bác Ba hái chanh và cam, biết số quả cam bằng $\frac{1}{4}$ số quả chanh và số quả chanh nhiều hơn số quả cam 72 quả. Hỏi Bác Ba hái bao nhiêu quả cam? Bao nhiêu quả chanh?
 
 **Bài 72.** Tìm hai số có hiệu bằng 252, biết rằng tổng của hai số đó gấp 4 lần số bé.
@@ -278,41 +436,176 @@ $$\frac{1995}{1997} \times \frac{1990}{1993} \times \frac{997}{995} \times \frac
 
 ## 8. Hình học
 
-**Bài 83.** Có bao nhiêu hình vuông trong hình vẽ sau?
+**Bài 83.** Trong hình dưới có bao nhiêu hình tam giác?
 
-![Hình vẽ Bài 83](/assets/images/108-toan-4/bai-83.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="180" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="50" y="55" width="100" height="100" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="50" y1="55" x2="150" y2="155" stroke="#1e293b" stroke-width="2"/>
+    <line x1="150" y1="55" x2="50" y2="155" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="50,55 150,55 150,15" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
-**Bài 84.** Có bao nhiêu góc nhọn trong hình vẽ sau?
+**Bài 84.** Hãy bổ sung thêm một đường thẳng sao cho trong hình dưới đây có 8 hình tam giác.
 
-![Hình vẽ Bài 84](/assets/images/108-toan-4/bai-84.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="160" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="100,20 40,140 160,140" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="100" y1="20" x2="100" y2="140" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
 **Bài 85.** Có bao nhiêu tam giác trong hình vẽ?
 
-![Hình vẽ Bài 85](/assets/images/108-toan-4/bai-85.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="160" viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="110,20 40,140 180,140" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="110" y1="20" x2="110" y2="140" stroke="#1e293b" stroke-width="2"/>
+    <line x1="110" y1="80" x2="145" y2="80" stroke="#1e293b" stroke-width="2"/>
+    <line x1="145" y1="80" x2="110" y2="140" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
-**Bài 86.** Cho hình bình hành $ABCD$ có chu vi 160 cm, cạnh $AD = 32\text{ cm}$, chiều cao $AH = 24\text{ cm}$. Tính diện tích hình bình hành $ABCD$.
+**Bài 86.** Cho hình bình hành $ABCD$ có chu vi $160\text{ cm}$, cạnh $AD = 32\text{ cm}$, chiều cao $AH = 26\text{ cm}$. Tính diện tích của hình bình hành đó.
 
-![Hình vẽ Bài 86](/assets/images/108-toan-4/bai-86.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="160" viewBox="0 0 250 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="75,30 205,30 175,130 45,130" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="75" y1="30" x2="75" y2="130" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 75,120 L 85,120 L 85,130" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <circle cx="75" cy="30" r="3" fill="#1e293b"/>
+    <circle cx="205" cy="30" r="3" fill="#1e293b"/>
+    <circle cx="175" cy="130" r="3" fill="#1e293b"/>
+    <circle cx="45" cy="130" r="3" fill="#1e293b"/>
+    <circle cx="75" cy="130" r="3" fill="#1e293b"/>
+    <text x="75" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="215" y="25" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="185" y="145" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="35" y="145" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="75" y="145" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">H</text>
+  </svg>
+</div>
 
-**Bài 87.** Cho hình thoi $ABCD$ có đường chéo $AC = 48\text{ cm}$, đường chéo $BD = 36\text{ cm}$. Tính diện tích hình thoi $ABCD$.
+**Bài 87.** Hình bình hành $ABCD$ có cạnh đáy $AB = 6\text{ cm}$, cạnh bên $BC = 4\text{ cm}$ với $M, N, P, Q$ lần lượt là các trung điểm của các cạnh $AB, DC, AD, BC$. Hỏi:
+- a) Hình trên có tất cả bao nhiêu hình bình hành?
+- b) Tổng chu vi của tất cả các hình bình hành trên bằng bao nhiêu?
 
-![Hình vẽ Bài 87](/assets/images/108-toan-4/bai-87.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="170" viewBox="0 0 250 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="65,25 205,25 175,135 35,135" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="135" y1="25" x2="105" y2="135" stroke="#1e293b" stroke-width="1.8"/>
+    <line x1="50" y1="80" x2="190" y2="80" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="65" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="135" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="205" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="50" cy="80" r="3" fill="#1e293b"/>
+    <circle cx="120" cy="80" r="3" fill="#1e293b"/>
+    <circle cx="190" cy="80" r="3" fill="#1e293b"/>
+    <circle cx="35" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="105" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="175" cy="135" r="3" fill="#1e293b"/>
+    <text x="65" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="135" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="215" y="22" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="36" y="84" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">P</text>
+    <text x="120" y="73" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">O</text>
+    <text x="202" y="84" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Q</text>
+    <text x="24" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="105" y="152" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="185" y="145" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
 **Bài 88.** Tìm diện tích của miếng đất $AMBCD$ dưới đây. Biết $ABCD$ là hình chữ nhật có cạnh $AB = 84\text{ m}$, cạnh $BC = 26\text{ m}$, $N$ là trung điểm của $AB$ và $MN = 16\text{ m}$.
 
-![Hình vẽ Bài 88](/assets/images/108-toan-4/bai-88.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="190" viewBox="0 0 220 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="40" y="75" width="140" height="85" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="110,25 40,75 180,75" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="110" y1="25" x2="110" y2="75" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="110" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="40" cy="75" r="3" fill="#1e293b"/>
+    <circle cx="180" cy="75" r="3" fill="#1e293b"/>
+    <circle cx="110" cy="75" r="3" fill="#1e293b"/>
+    <circle cx="40" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="180" cy="160" r="3" fill="#1e293b"/>
+    <text x="110" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="30" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="190" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="120" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="30" y="170" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="190" y="170" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
-**Bài 89.** Cho hình chữ nhật và hình bình hành như sau. Hãy so sánh diện tích của hai hình:
+**Bài 89.** Cho hình chữ nhật và hình bình hành như sau:
+- a) Tính và so sánh chu vi của hình chữ nhật $ABCD$ và hình bình hành $MNPQ$.
+- b) Tính và so sánh diện tích của hình chữ nhật $ABCD$ và hình bình hành $MNPQ$.
 
-![Hình vẽ Bài 89](/assets/images/108-toan-4/bai-89.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="340" height="150" viewBox="0 0 340 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <!-- Hình chữ nhật ABCD -->
+    <rect x="25" y="30" width="110" height="70" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <text x="80" y="22" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0369a1" text-anchor="middle">6cm</text>
+    <text x="15" y="70" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0369a1" text-anchor="middle">3cm</text>
+    <text x="25" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">A</text>
+    <text x="142" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">B</text>
+    <text x="25" y="116" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="142" y="116" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
 
-**Bài 90.** Một mảnh bìa hình chữ nhật có chu vi 96 cm, nếu cắt bỏ ở bốn góc bốn hình vuông có cạnh 4 cm thì diện tích phần còn lại bằng $384\text{ cm}^2$. Tính diện tích mảnh bìa ban đầu.
+    <!-- Hình bình hành MNPQ -->
+    <polygon points="195,30 305,30 280,100 170,100" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="195" y1="30" x2="195" y2="100" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 195,92 L 203,92 L 203,100" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="207" y="68" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0369a1" text-anchor="start">3cm</text>
+    <text x="303" y="72" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#0369a1" text-anchor="start">4cm</text>
+    <text x="195" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="312" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">N</text>
+    <text x="160" y="112" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">Q</text>
+    <text x="195" y="114" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">H</text>
+    <text x="285" y="112" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">P</text>
+  </svg>
+</div>
 
-![Hình vẽ Bài 90](/assets/images/108-toan-4/bai-90.png)
+**Bài 90.** Biết hình chữ nhật $ABCD$ có chu vi $20\text{ cm}$, chiều rộng $AD$ bằng $\frac{2}{3}$ chiều dài $AB$, $MH = 2\text{ cm}$. Tính diện tích của hình bình hành $MNBA$.
 
-**Bài 91.** Tính diện tích phần tô đậm trong hình vẽ sau:
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="180" viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="40" y="70" width="130" height="80" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="65,25 195,25 170,70 40,70" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="65" y1="25" x2="65" y2="70" stroke="#1e293b" stroke-width="1.8"/>
+    <path d="M 65,62 L 73,62 L 73,70" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+    <text x="65" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="202" y="24" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">N</text>
+    <text x="32" y="75" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">A</text>
+    <text x="73" y="83" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">H</text>
+    <text x="178" y="75" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">B</text>
+    <text x="32" y="155" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="end">D</text>
+    <text x="178" y="155" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="start">C</text>
+  </svg>
+</div>
 
-![Hình vẽ Bài 91](/assets/images/108-toan-4/bai-91.png)
+**Bài 91.** Cho hình vuông $ABCD$ có chu vi $252\text{ m}$, hình chữ nhật $BMNC$ có chu vi bé hơn chu vi hình vuông $ABCD$ là $176\text{ m}$. Tìm diện tích của hình chữ nhật $BMNC$.
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="250" height="160" viewBox="0 0 250 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="40" y="25" width="100" height="100" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <rect x="140" y="25" width="55" height="100" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="40" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="140" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="195" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="40" cy="125" r="3" fill="#1e293b"/>
+    <circle cx="140" cy="125" r="3" fill="#1e293b"/>
+    <circle cx="195" cy="125" r="3" fill="#1e293b"/>
+    <text x="40" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="140" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="195" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="40" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="140" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="195" y="142" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+  </svg>
+</div>
 
 ---
 
@@ -490,7 +783,25 @@ $$126 \times 3 = 378$$
 
 **Bài 88.** Tìm diện tích của miếng đất $AMBCD$ dưới đây. Biết $ABCD$ là hình chữ nhật có cạnh $AB = 84\text{ m}$, cạnh $BC = 26\text{ m}$, $N$ là trung điểm của $AB$ và $MN = 16\text{ m}$.
 
-![Hình vẽ Bài 88](/assets/images/108-toan-4/bai-88.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="190" viewBox="0 0 220 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="40" y="75" width="140" height="85" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="110,25 40,75 180,75" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="110" y1="25" x2="110" y2="75" stroke="#1e293b" stroke-width="1.8"/>
+    <circle cx="110" cy="25" r="3" fill="#1e293b"/>
+    <circle cx="40" cy="75" r="3" fill="#1e293b"/>
+    <circle cx="180" cy="75" r="3" fill="#1e293b"/>
+    <circle cx="110" cy="75" r="3" fill="#1e293b"/>
+    <circle cx="40" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="180" cy="160" r="3" fill="#1e293b"/>
+    <text x="110" y="16" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="30" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="190" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="120" y="70" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="30" y="170" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="190" y="170" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
 *Bài giải:*
 Diện tích hình chữ nhật $ABCD$ là:

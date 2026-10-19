@@ -12,9 +12,6 @@ tags:
 - Hai mặt phẳng song song
 grade: 11
 ---
-
-# 3 cách chứng minh hai mặt phẳng song song trong không gian
-
 Để biết **cách chứng minh hai mặt phẳng song song**, chúng ta cần phải xem *thế nào là hai mặt phẳng song song*, và từ đó sẽ có các phương pháp chứng minh 2 mặt phẳng song song trong không gian.
 
 ## 1. Thế nào là hai mặt phẳng song song?

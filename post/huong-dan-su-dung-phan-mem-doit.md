@@ -1,6 +1,6 @@
 ---
 title: Hướng dẫn sử dụng phần mềm DoIT
-description: Hướng dẫn sử dụng phần mềm doit
+description: 'Hướng dẫn cài đặt và sử dụng phần mềm DoIT kiểm tra trùng lặp văn bản, luận văn và tài liệu tiếng Việt nhanh chóng, chính xác.'
 category: CNTT
 type: Bài học
 date: '2024-10-02'

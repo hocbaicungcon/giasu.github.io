@@ -1,6 +1,6 @@
 ---
 title: Phương pháp bảo toàn electron
-description: Phương pháp bảo toàn electron
+description: 'Phương pháp bảo toàn electron trong giải toán Hóa học vô cơ: lý thuyết trọng tâm, các dạng bài thường gặp và bài tập có lời giải chi tiết.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

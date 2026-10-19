@@ -1,8 +1,6 @@
 ---
-title: BÀI TOÁN CÔNG VIỆC CHUNG LỚP 4
-description: BÀI TOÁN CÔNG VIỆC CHUNG LỚP 4, 5 là dạng toán quan trọng. Để giải bài
-  toán công việc chung riêng ta sử dụng tỉ lệ thuận, tỉ lệ nghịch và phương pháp giả
-  thiết tạm
+title: 'Bài Toán Công Việc Chung Lớp 4 và Phương Pháp Giải Chi Tiết'
+description: 'Phương pháp giải bài toán công việc chung lớp 4, lớp 5 bằng quy ước đơn vị và phân số kèm các dạng toán vòi nước, làm chung làm riêng có lời giải chi tiết.'
 category: Toán học
 type: Bài học
 date: '2024-10-02'
@@ -28,13 +26,13 @@ grade: 4
 
 - Bài toán này thường có đại lượng thời gian. Cần phải biết chuyển đổi và sử dụng các đơn vị đo thời gian thích hợp cho việc tính toán.
 
-Xem thêm [CÁC BÀI TOÁN VỀ TRUNG BÌNH CỘNG LỚP 4](/bai-viet/cac-bai-toan-ve-trung-binh-cong-lop-4.html)
+Xem thêm [Các bài toán về trung bình cộng lớp 4](/bai-viet/cac-bai-toan-ve-trung-binh-cong-lop-4.html)
 
 ## 2. Các kiểu bài toán công việc chung lớp 4
 
-### 2.1. Biết thời gia làm riêng một công việc, yêu cầu tìm thời gian làm công việc chung đó.
+### 2.1. Biết thời gian làm riêng một công việc, yêu cầu tìm thời gian làm công việc chung đó
 
-**Phương pháp giải bài toán công việc chung riêng.
+**Phương pháp giải bài toán công việc chung riêng:**
 - Bước 1: Quy ước một đại lượng (như công việc cần hoàn thành, quãng đường cần đi, thể tích của bể nước,…) là đơn vị.
 
 - Bước 2: Tính số phần công việc làm riêng trong một giờ.

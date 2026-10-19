@@ -1,6 +1,6 @@
 ---
 title: Giáo án KHBD Hóa 12 KNTT Word + Powerpoint cả năm
-description: Giáo án KHBD Hóa 12 KNTT Word + Powerpoint cả năm
+description: 'Trọn bộ kế hoạch bài dạy (KHBD) Hóa học 12 Kết Nối Tri Thức cả năm file Word và Powerpoint đồng bộ theo chương trình GDPT mới.'
 category: Hóa học
 type: Bài học
 date: '2024-09-06'

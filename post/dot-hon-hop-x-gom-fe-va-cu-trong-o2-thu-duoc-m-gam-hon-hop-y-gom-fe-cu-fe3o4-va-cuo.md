@@ -16,11 +16,6 @@ tags:
 - Oxi hóa khử
 grade: 12
 ---
-
-# Đốt hỗn hợp X gồm Fe và Cu trong O2, thu được m gam hỗn hợp Y gồm Fe, Cu, Fe3O4 và CuO. Cho Y vào dung dịch chứa
-
- 
-
 Đốt hỗn hợp X gồm Fe và Cu trong O2, thu được m gam hỗn hợp Y gồm Fe, Cu, Fe3O4 và CuO. Cho Y vào dung dịch chứa 0,2 mol HCl, thu được dung dịch Z chỉ chứa muối, 0,05 mol H2 và 9,2 gam chất rắn T. Cho T tác dụng với dung dịch HCl có khí thoát ra. Biết các phản ứng xảy ra hoàn toàn. Giá trị của m là
 
 **A.** 14,8. **B.** 16,4. **C.** 16,0. **D.** 15,6.

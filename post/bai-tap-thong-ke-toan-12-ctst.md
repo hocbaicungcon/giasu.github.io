@@ -22,5 +22,5 @@ CHƯƠNG 3. CÁC SỐ ĐẶC TRƯNG ĐO MỨC ĐỘ PHÂN TÁN CHO MẪU SỐ LI
 
 - **BÀI 2. PHƯƠNG SAI VÀ ĐỘ LỆCH CHUẨN CỦA MẪU SỐ LIỆU GHÉP NHÓM**
 
-- [cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst](#drive-pending-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst.pdf)
+- [cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [bai-giang-cac-so-dac-trung-do-muc-do-phan-tan-cho-mau-so-lieu-ghep-nhom-toan-12-ctst](https://drive.google.com/file/d/1LxGS8hZTG_LtUnfOW-_IgDqPUxHEJkbg/view?usp=sharing)

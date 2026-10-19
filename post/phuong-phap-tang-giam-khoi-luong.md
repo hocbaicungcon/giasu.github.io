@@ -1,6 +1,6 @@
 ---
 title: Phương pháp tăng giảm khối lượng
-description: Phương pháp tăng giảm khối lượng
+description: 'Phương pháp tăng giảm khối lượng giải nhanh bài toán Hóa học: bản chất, công thức tính nhanh và ví dụ minh họa có lời giải chi tiết.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

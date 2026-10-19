@@ -13,9 +13,6 @@ tags:
 - Thiết diện
 grade: 11
 ---
-
-# Phương pháp xác định thiết diện sử dụng quan hệ vuông góc trong không gian
-
 Xem thêm:
 
 - [Thiết diện là gì và các phương pháp tìm thiết diện](/bai-viet/thiet-dien-la-gi-va-cac-phuong-phap-tim-thiet-dien.html)

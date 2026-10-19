@@ -11,18 +11,15 @@ tags:
 - Giao tuyến
 grade: 11
 ---
+**Tìm giao tuyến của hai mặt phẳng** là dạng toán nền tảng đầu tiên và quan trọng nhất khi học sinh bước vào chương trình Hình học không gian lớp 11. Thành thạo kĩ năng tìm giao tuyến là chìa khóa để giải quyết các bài toán tiếp theo như tìm giao điểm của đường thẳng với mặt phẳng, dựng thiết diện và chứng minh quan hệ song song hay vuông góc.
 
-# Hướng dẫn cách tìm giao tuyến của hai mặt phẳng
-
-Xem thêm
-
+Xem thêm các bài học liên quan:
 - [Thiết diện là gì và các phương pháp tìm thiết diện](/bai-viet/thiet-dien-la-gi-va-cac-phuong-phap-tim-thiet-dien.html)
-
 - [Tìm giao điểm của đường thẳng và mặt phẳng](/bai-viet/tim-giao-diem-cua-duong-thang-va-mat-phang.html)
 
-Chúng ta thừa nhận một kết quả sau của hình học không gian:
+### Tiên đề cơ bản về giao tuyến
+Nếu hai mặt phẳng *phân biệt* có một điểm chung thì chúng còn có vô số điểm chung khác nữa. Tập hợp tất cả các điểm chung đó tạo thành một đường thẳng duy nhất, được gọi là **giao tuyến** của hai mặt phẳng.
 
-Nếu hai mặt phẳng *phân biệt* có một điểm chung thì chúng còn có một điểm chung khác nữa. Tập hợp các điểm chung đó của hai mặt phẳng tạo thành một đường thẳng, được gọi là giao tuyến của hai mặt phẳng này.
 
 Do đó, phương pháp chung để tìm giao tuyến của hai mặt phẳng phân biệt là ta chỉ ra hai điểm chung của chúng, và đường thẳng đi qua hai điểm chung đó chính là giao tuyến cần tìm.
 
@@ -180,22 +177,63 @@ Tương tự, trong mặt phẳng $(ABD)$ kéo dài $BN$ cắt $AD$ tại $Q$ th
 
 Tóm lại, giao tuyến của hai mặt phẳng $(BMN)$ và  $(ACD)$ là đường thẳng $PQ.$
 
-**Ví dụ 6.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABD,N$ thuộc miền trong tam giác $ACD.$ Xác định giao tuyến của mặt phẳng $(AMN)$ và mặt phẳng $(BCD)$; mặt phẳng $(DMN)$ và $(ABC).$
+**Ví dụ 6.** Cho tứ diện $ABCD$ có $M$ thuộc miền trong tam giác $ABD$, $N$ thuộc miền trong tam giác $ACD$. Xác định giao tuyến của mặt phẳng $(AMN)$ và mặt phẳng $(BCD)$; mặt phẳng $(DMN)$ và $(ABC)$.
 
 **Hướng dẫn.**
+- **Tìm giao tuyến của $(AMN)$ và $(BCD)$:**
+  Trong mặt phẳng $(ABD)$, đường thẳng $AM$ cắt $BD$ tại điểm $P$.
+  Vì $P \in AM \subset (AMN)$ và $P \in BD \subset (BCD)$ nên $P$ là điểm chung thứ nhất.
+  Trong mặt phẳng $(ACD)$, đường thẳng $AN$ cắt $CD$ tại điểm $Q$.
+  Vì $Q \in AN \subset (AMN)$ và $Q \in CD \subset (BCD)$ nên $Q$ là điểm chung thứ hai.
+  Vậy giao tuyến của $(AMN)$ và $(BCD)$ là đường thẳng $PQ$.
 
-**Ví dụ 7.** Cho tứ diện $ABCD$ có $I,J$ lần lượt là trung điểm của $AC,BC.$ Lấy $K$ thuộc $BD$ sao cho $KD<KB.$ Tìm giao tuyến của hai mặt phẳng $(IJK)$ và $(ACD),(IJK)$ và $(ABD).$
+- **Tìm giao tuyến của $(DMN)$ và $(ABC)$:**
+  Trong mặt phẳng $(ABD)$, kéo dài $DM$ cắt $AB$ tại điểm $E$. Khi đó $E \in DM \subset (DMN)$ và $E \in AB \subset (ABC) \implies E$ là điểm chung thứ nhất.
+  Trong mặt phẳng $(ACD)$, kéo dài $DN$ cắt $AC$ tại điểm $F$. Khi đó $F \in DN \subset (DMN)$ và $F \in AC \subset (ABC) \implies F$ là điểm chung thứ hai.
+  Vậy giao tuyến của $(DMN)$ và $(ABC)$ là đường thẳng $EF$.
+
+**Ví dụ 7.** Cho tứ diện $ABCD$ có $I, J$ lần lượt là trung điểm của $AC, BC$. Lấy $K$ thuộc $BD$ sao cho $KD < KB$. Tìm giao tuyến của hai mặt phẳng $(IJK)$ và $(ACD)$; $(IJK)$ và $(ABD)$.
 
 **Hướng dẫn.**
+- **Giao tuyến của $(IJK)$ và $(ACD)$:**
+  Ta có ngay $I \in AC \subset (ACD)$ và $I \in (IJK)$, nên $I$ là điểm chung thứ nhất.
+  Trong mặt phẳng $(BCD)$, xét hai đường thẳng $JK$ và $CD$. Vì $J$ là trung điểm $BC$ còn $KD < KB$ nên $JK$ không song song với $CD$, gọi $E = JK \cap CD$.
+  Vì $E \in JK \subset (IJK)$ và $E \in CD \subset (ACD)$ nên $E$ là điểm chung thứ hai.
+  Vậy giao tuyến của $(IJK)$ và $(ACD)$ là đường thẳng $IE$.
 
-**Ví dụ 8.** Cho tứ diện $ABCD$ có $I,J$ lần lượt là trung điểm của $AD,BC.$ Tìm giao tuyến của hai mặt phẳng $(IBC)$ và $(JAD).$ Gọi $M,N$ là hai điểm trên cạnh $AB,AC.$ Xác định giao tuyến của $(IBC)$ và $(DMN).$
+- **Giao tuyến của $(IJK)$ và $(ABD)$:**
+  Ta có $K \in BD \subset (ABD)$ và $K \in (IJK)$, nên $K$ là điểm chung thứ nhất.
+  Trong mặt phẳng $(ACD)$, đường thẳng $IE$ cắt cạnh $AD$ tại điểm $F$.
+  Vì $F \in IE \subset (IJK)$ và $F \in AD \subset (ABD)$ nên $F$ là điểm chung thứ hai.
+  Vậy giao tuyến của $(IJK)$ và $(ABD)$ là đường thẳng $KF$.
+
+**Ví dụ 8.** Cho tứ diện $ABCD$ có $I, J$ lần lượt là trung điểm của $AD, BC$. Tìm giao tuyến của hai mặt phẳng $(IBC)$ và $(JAD)$. Gọi $M, N$ là hai điểm lần lượt trên cạnh $AB, AC$. Xác định giao tuyến của $(IBC)$ và $(DMN)$.
 
 **Hướng dẫn.**
+- **Giao tuyến của $(IBC)$ và $(JAD)$:**
+  Trong mặt phẳng $(ABD)$, xét hai đoạn thẳng $AJ$ và $BI$ cắt nhau tại điểm $E$.
+  Vì $E \in AJ \subset (JAD)$ và $E \in BI \subset (IBC)$ nên $E$ là điểm chung thứ nhất.
+  Trong mặt phẳng $(ACD)$, xét hai đoạn thẳng $DJ$ và $CI$ cắt nhau tại điểm $F$.
+  Vì $F \in DJ \subset (JAD)$ và $F \in CI \subset (IBC)$ nên $F$ là điểm chung thứ hai.
+  Vậy giao tuyến của $(IBC)$ và $(JAD)$ là đường thẳng $EF$.
 
-**Ví dụ 9.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành. Gọi $M,N,P$ lần lượt là trung điểm $BC,CD,SC.$ Tìm giao tuyến của mặt phẳng $(MNP)$ với các mặt phẳng $(ABCD),(SAB),(SAD)$ và $(SAC).$
+- **Giao tuyến của $(IBC)$ và $(DMN)$:**
+  Trong mặt phẳng $(ABD)$, đường thẳng $DM$ cắt $BI$ tại điểm $P$.
+  Trong mặt phẳng $(ACD)$, đường thẳng $DN$ cắt $CI$ tại điểm $Q$.
+  Vì $P, Q$ đều là các điểm chung của hai mặt phẳng nên giao tuyến của $(IBC)$ và $(DMN)$ là đường thẳng $PQ$.
+
+**Ví dụ 9.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O$. Gọi $M, N, P$ lần lượt là trung điểm của $BC, CD, SC$. Tìm giao tuyến của mặt phẳng $(MNP)$ với các mặt phẳng $(ABCD), (SAC)$ và $(SAB)$.
 
 **Hướng dẫn.**
+- **Giao tuyến của $(MNP)$ và $(ABCD)$:**
+  Do $M \in BC \subset (ABCD)$ và $N \in CD \subset (ABCD)$, nên giao tuyến cần tìm chính là đường thẳng $MN$.
+- **Giao tuyến của $(MNP)$ và $(SAC)$:**
+  Trong mặt phẳng đáy $(ABCD)$, gọi $I = MN \cap AC$.
+  Điểm $I \in MN \subset (MNP)$ và $I \in AC \subset (SAC)$ nên $I$ là điểm chung.
+  Mặt khác $P$ là trung điểm của $SC \subset (SAC)$ và $P \in (MNP)$.
+  Vậy giao tuyến của $(MNP)$ và $(SAC)$ là đường thẳng $IP$.
+- **Giao tuyến của $(MNP)$ và $(SAB)$:**
+  Trong mặt phẳng $(ABCD)$, kéo dài đường thẳng $MN$ cắt cạnh kéo dài $AB$ tại điểm $E$. Khi đó $E \in (MNP) \cap (SAB)$.
+  Trong mặt phẳng $(SBC)$, đường thẳng $MP$ cắt $SB$ tại điểm $K$. Khi đó $K \in (MNP) \cap (SAB)$.
+  Vậy giao tuyến của $(MNP)$ và $(SAB)$ là đường thẳng $EK$.
 
-**Ví dụ 10.** Cho hình chóp $S.ABCD$ có đáy là hình bình hành tâm $O.$ Gọi $M,N,P$ lần lượt là trung điểm $BC,CD,SO.$ Tìm giao tuyến của mặt phẳng $(MNP)$ với các mặt phẳng $(SAB),(SAD),(SBC)$ và $(SCD).$
-
-**Hướng dẫn.**

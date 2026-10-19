@@ -1,6 +1,6 @@
 ---
 title: 'Bài toán có lời văn: Phương pháp giải và 15 bài tập mẫu có đáp án'
-description: 'Hướng dẫn học sinh lớp 2 phương pháp 4 bước giải toán có lời văn, phân loại 6 dạng toán cơ bản (thêm, bớt, nhiều hơn, ít hơn, nhóm bằng nhau) cùng 15 bài tập mẫu có đáp án chi tiết.'
+description: 'Phương pháp 4 bước giải toán có lời văn lớp 2, phân loại 6 dạng toán cơ bản kèm 15 bài tập mẫu có đáp án chi tiết giúp học sinh tự tin làm bài.'
 category: Toán học
 type: Bài tập
 date: '2026-10-17'
@@ -12,9 +12,6 @@ tags:
   - Bài tập mẫu
 grade: 2
 ---
-
-# Bài toán có lời văn: Phương pháp giải và 15 bài tập mẫu có đáp án
-
 Bài toán có lời văn là một dạng toán vô cùng quan trọng ở bậc Tiểu học, bắt đầu được rèn luyện bài bản từ lớp 2. Khác với các bài toán tính toán đơn thuần, bài toán có lời văn kể một tình huống thực tế bằng ngôn ngữ đời thường. Nhiệm vụ của các em là đọc hiểu câu chuyện, tìm ra các dữ kiện số liệu đã cho, xác định đúng điều câu hỏi yêu cầu, từ đó lựa chọn phép tính phù hợp và trình bày lời giải rõ ràng.
 
 ---

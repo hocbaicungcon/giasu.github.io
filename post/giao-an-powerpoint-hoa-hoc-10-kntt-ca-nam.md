@@ -38,7 +38,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 - [Word: Bai-10-Quy-tac-octet-Hoa10-KNTT](https://drive.google.com/file/d/1bUAvdR_uGnvD8U3nWaLL0vqepT_CO3BU/view?usp=sharing)
 - [Powerpoint: Bai-10-Quy-tac-octet-Hoa10-KNTT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Word: Bai-11-Lienketion-Hoa10-KNTT](https://drive.google.com/file/d/1uvzifFeVnKETyyfBhwCbKP-0AFrppug8/view?usp=sharing)
-- [video-khoi-dong](#drive-pending-video-khoi-dong.mp4)
+- [video-khoi-dong](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Powerpoint: Bai-11-Lienketion-Hoa10-KNTT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Word: BAI-12-LIEN-KET-CONG-HOA-TRI-Hoa10-KNTT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Powerpoint: BAI-12-LIEN-KET-CONG-HOA-TRI-Hoa10-KNTT](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
@@ -88,7 +88,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 [Bài 4: Entropy và biến thiên năng lượng tự do Gibbs](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-4-entropy-va-bien-thien-nang-luong-tu-do-gibbs.html)
 
 - [Word – Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
-- [Powerpoint – Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs](#drive-pending-Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs.pptx)
+- [Powerpoint – Chuyen-de-KNTT-Bai-4-Entropy-va-bien-thien-nang-luong-tu-do-Gibbs](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 **Chuyên đề 2: Hoá học trong việc phòng chống cháy nổ**
 

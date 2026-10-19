@@ -11,9 +11,6 @@ tags:
 - Tập hợp
 grade: 10
 ---
-
-# Tập hợp và các phép toán tập hợp
-
 Bài này giới thiệt Lý thuyết tập hợp (tập hợp là gì, tập hợp con là gì) và các phép toán tập hợp (các phép toán hợp của hai tập hợp, giao của hai tập hợp, hiệu của hai tập hợp. Bài tập các em có thể tham khảo trong bài viết [Bài tập Tập hợp Toán 10](/bai-viet/bai-tap-tap-hop-toan-10.html)
 
 ## 1. Khái niệm tập hợp

@@ -1,6 +1,6 @@
 ---
 title: Giáo án hóa học 11 kết nối tri thức cả năm word + powerpoint
-description: Giáo án hóa học 11 kết nối tri thức cả năm
+description: 'Trọn bộ giáo án Hóa học 11 Kết Nối Tri Thức cả năm file Word và bài giảng điện tử Powerpoint được biên soạn theo chuẩn công văn 5512.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

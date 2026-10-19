@@ -1,6 +1,6 @@
 ---
 title: Tổng hợp SKKN môn Hóa Học cấp THPT
-description: Tổng hợp SKKN môn hóa học cấp THPT
+description: 'Tổng hợp các sáng kiến kinh nghiệm (SKKN) môn Hóa học cấp THPT đạt giải cao về đổi mới phương pháp giảng dạy và ứng dụng công nghệ thông tin.'
 category: Hóa học
 type: Bài học
 date: '2022-08-22'

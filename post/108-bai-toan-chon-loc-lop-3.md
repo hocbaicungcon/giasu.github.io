@@ -438,63 +438,193 @@ grade: 3
 
 ## 2. Hình học
 
-**Bài 83.** Trên mỗi hình sau có bao nhiêu đoạn thẳng? Ghi tên các đoạn thằng đó.
-  CI
-  G
-  B
-  D
-  H
-  N
-  K
-  P
-  R
+**Bài 83.** Trên mỗi hình sau có bao nhiêu đoạn thẳng? Ghi tên các đoạn thẳng đó.
 
-**Bài 84.** Hình sau có bao nhiêu hình tam giác? Bao nhiều hình tứ giác?
-  B
-  D
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="400" height="180" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <!-- Đoạn 1: A - B -->
+    <line x1="50" y1="25" x2="170" y2="25" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="50" cy="25" r="3.5" fill="#1e293b"/>
+    <circle cx="170" cy="25" r="3.5" fill="#1e293b"/>
+    <text x="50" y="16" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="170" y="16" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+
+    <!-- Đoạn 2: C - D - E -->
+    <line x1="50" y1="70" x2="250" y2="70" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="50" cy="70" r="3.5" fill="#1e293b"/>
+    <circle cx="150" cy="70" r="3.5" fill="#1e293b"/>
+    <circle cx="250" cy="70" r="3.5" fill="#1e293b"/>
+    <text x="50" y="61" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+    <text x="150" y="61" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="250" y="61" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">E</text>
+
+    <!-- Đoạn 3: G - H - I - K -->
+    <line x1="50" y1="115" x2="330" y2="115" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="50" cy="115" r="3.5" fill="#1e293b"/>
+    <circle cx="140" cy="115" r="3.5" fill="#1e293b"/>
+    <circle cx="230" cy="115" r="3.5" fill="#1e293b"/>
+    <circle cx="330" cy="115" r="3.5" fill="#1e293b"/>
+    <text x="50" y="106" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">G</text>
+    <text x="140" y="106" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">H</text>
+    <text x="230" y="106" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">I</text>
+    <text x="330" y="106" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">K</text>
+
+    <!-- Đoạn 4: M - N - P - Q - R -->
+    <line x1="50" y1="160" x2="370" y2="160" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="50" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="130" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="210" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="290" cy="160" r="3.5" fill="#1e293b"/>
+    <circle cx="370" cy="160" r="3.5" fill="#1e293b"/>
+    <text x="50" y="151" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="130" y="151" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="210" y="151" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">P</text>
+    <text x="290" y="151" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Q</text>
+    <text x="370" y="151" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">R</text>
+  </svg>
+</div>
+
+**Bài 84.** Hình sau có bao nhiêu hình tam giác? Bao nhiêu hình tứ giác?
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="170" viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="90,30 170,30 210,135 50,135" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="170" y1="30" x2="50" y2="135" stroke="#1e293b" stroke-width="2"/>
+    <line x1="170" y1="30" x2="135" y2="135" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="90" cy="30" r="3" fill="#1e293b"/>
+    <circle cx="170" cy="30" r="3" fill="#1e293b"/>
+    <circle cx="50" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="135" cy="135" r="3" fill="#1e293b"/>
+    <circle cx="210" cy="135" r="3" fill="#1e293b"/>
+    <text x="90" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="175" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="40" y="145" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="135" y="155" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="220" y="145" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
 **Bài 85.** Hình vẽ dưới đây có bao nhiêu hình vuông?
 
-![Đếm hình vuông - Bài 85](/assets/images/108-toan-3/bai-85.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="20" y="20" width="160" height="160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="20" y1="100" x2="180" y2="100" stroke="#1e293b" stroke-width="2"/>
+    <line x1="100" y1="20" x2="100" y2="180" stroke="#1e293b" stroke-width="2"/>
+    <line x1="100" y1="140" x2="180" y2="140" stroke="#1e293b" stroke-width="2"/>
+    <line x1="140" y1="100" x2="140" y2="180" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
-**Bài 86.** Trong hình bên, đoạn thắng AD là cạnh chung của những tam giác nào?
-  BI
-  D
+**Bài 86.** Trong hình bên, đoạn thẳng AD là cạnh chung của những tam giác nào?
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="280" height="190" viewBox="0 0 280 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="100,30 240,30 180,160 40,160" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="100" y1="30" x2="180" y2="160" stroke="#1e293b" stroke-width="2"/>
+    <line x1="240" y1="30" x2="40" y2="160" stroke="#1e293b" stroke-width="2"/>
+    <line x1="40" y1="160" x2="160" y2="30" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="100" cy="30" r="3" fill="#1e293b"/>
+    <circle cx="160" cy="30" r="3" fill="#1e293b"/>
+    <circle cx="240" cy="30" r="3" fill="#1e293b"/>
+    <circle cx="180" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="40" cy="160" r="3" fill="#1e293b"/>
+    <circle cx="124" cy="69" r="3" fill="#1e293b"/>
+    <circle cx="140" cy="95" r="3" fill="#1e293b"/>
+    <text x="95" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="160" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">I</text>
+    <text x="245" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="124" y="60" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">H</text>
+    <text x="153" y="103" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">K</text>
+    <text x="30" y="170" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">D</text>
+    <text x="190" y="170" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
 **Bài 87.** Khoanh tròn chữ cái trước câu trả lời đúng.
-  Hình sau có bao nhiêu hình vuông?
+  Hình sau có bao nhiêu góc vuông?
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="270" height="120" viewBox="0 0 270 120" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="30,20 170,20 240,90 30,90" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="100" y1="20" x2="100" y2="90" stroke="#1e293b" stroke-width="2"/>
+    <line x1="170" y1="20" x2="170" y2="90" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
+
 - a) 6 góc vuông;
-- c) 8 góc vuông;
 - b) 9 góc vuông;
+- c) 8 góc vuông;
 - d) 7 góc vuông.
 
-**Bài 88.** Kẻ trên mỗi hình một đoạn thằng để tạo thành một hình vuông trong hình đó.
+**Bài 88.** Kẻ trên mỗi hình một đoạn thẳng để tạo thành một hình vuông trong hình đó.
 
-**Bài 89.** Cắt hình vuông như hình bên thành 4 hình tam giác như nhau rồi ghép lại thành hai hình
-  vuông như nhau.
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="360" height="120" viewBox="0 0 360 120" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="20" y="30" width="80" height="60" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="130,30 180,30 205,90 130,90" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <polygon points="250,50 280,20 310,50 310,90 250,90" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
-**Bài 90.** Hãy vẽ thêm một đoạn thằng vào hình dưới để có 7 hình tam giác và 3 hình tứ giác.
-  B
-  C
+**Bài 89.** Cắt hình vuông như hình bên thành 4 hình tam giác như nhau rồi ghép lại thành hai hình vuông như nhau.
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <rect x="25" y="25" width="90" height="90" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
+
+**Bài 90.** Hãy vẽ thêm một đoạn thẳng vào hình dưới để có 7 hình tam giác và 3 hình tứ giác.
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="220" height="170" viewBox="0 0 220 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="110,20 45,145 175,145" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <line x1="77" y1="83" x2="143" y2="83" stroke="#1e293b" stroke-width="2"/>
+    <line x1="45" y1="145" x2="143" y2="83" stroke="#1e293b" stroke-width="2"/>
+    <circle cx="110" cy="20" r="3" fill="#1e293b"/>
+    <circle cx="77" cy="83" r="3" fill="#1e293b"/>
+    <circle cx="143" cy="83" r="3" fill="#1e293b"/>
+    <circle cx="45" cy="145" r="3" fill="#1e293b"/>
+    <circle cx="175" cy="145" r="3" fill="#1e293b"/>
+    <text x="110" y="12" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+    <text x="63" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">M</text>
+    <text x="157" y="87" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">N</text>
+    <text x="35" y="153" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+    <text x="185" y="153" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">C</text>
+  </svg>
+</div>
 
 **Bài 91.** Cắt hình dưới đây thành năm mảnh và ghép lại để được một hình vuông.
 
-**Bài 92.** Cắt hình dấu cộng và tam giác lớn dưới đây rồi ghép lại thành một hình tứ giác:
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <path d="M 62,16 L 98,16 L 98,52 L 134,52 L 134,88 L 98,88 L 98,124 L 62,124 L 62,88 L 26,88 L 26,52 L 62,52 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
-![Cắt ghép hình - Bài 92](/assets/images/108-toan-3/bai-92a.png)
+**Bài 92.** Cắt hình tam giác lớn như hình sau rồi ghép lại thành một hình tứ giác:
 
-![Tam giác lớn - Bài 92](/assets/images/108-toan-3/bai-92b.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="200" height="150" viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <polygon points="100,20 40,130 160,130" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+  </svg>
+</div>
 
-**Bài 93.** Hãy dùng 10 que diêm để xếp thành 3 hình vuỗng.
+**Bài 93.** Hãy dùng 10 que diêm để xếp thành 3 hình vuông.
 
 **Bài 94.** Tính chu vi và diện tích hình sau với kích thước như hình vẽ:
 
-![Tính chu vi và diện tích hình bậc thang - Bài 94](/assets/images/108-toan-3/bai-94.png)
-  2cm
-  2cm
-  2cm
-
-## 3 Những bài toán chọn lọc
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="240" height="170" viewBox="0 0 240 170" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <path d="M 40,140 L 40,95 L 85,95 L 85,50 L 155,50 L 155,95 L 200,95 L 200,140 Z" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <text x="25" y="122" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">2cm</text>
+    <text x="62" y="87" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">2cm</text>
+    <text x="120" y="42" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">2cm</text>
+    <text x="175" y="87" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">2cm</text>
+    <text x="215" y="122" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#0369a1" text-anchor="middle">2cm</text>
+  </svg>
+</div>
 
 ## 3. Những bài toán chọn lọc phát triển tư duy
 
@@ -521,9 +651,24 @@ grade: 3
 **Bài 99.** Năm quân tú lơ khơ nằm cạnh nhau trên bàn theo trật tự 5; 1;4;3; 2. Mỗi bước đi có thể
   đổi chỗ 2 quân tú lơ khơ. Hỏi ít nhất cần bao nhiêu bước đổi chỗ để có trật tự 1;2;3;4;5?
 
-**Bài 100.** Ở trên khu vườn hình chữ nhật có 5 luống hoa cùng kích thước (hình vẽ). Hỏi chu vi của
-  một luỗng hoa là bao nhiêu?
-  2cm
+**Bài 100.** Ở trên khu vườn hình chữ nhật có 5 luống hoa cùng kích thước (hình vẽ). Hỏi chu vi của một luống hoa là bao nhiêu?
+
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="260" height="160" viewBox="0 0 260 160" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto;">
+    <!-- Khung chữ nhật bao ngoài 150x110 -->
+    <rect x="30" y="25" width="150" height="110" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+    <!-- Phân cách hàng trên (cao 66) và hàng dưới (cao 44) -->
+    <line x1="30" y1="91" x2="180" y2="91" stroke="#1e293b" stroke-width="2"/>
+    <!-- Hàng trên: 3 luống hoa đứng (mỗi luống rộng 50) -->
+    <line x1="80" y1="25" x2="80" y2="91" stroke="#1e293b" stroke-width="2"/>
+    <line x1="130" y1="25" x2="130" y2="91" stroke="#1e293b" stroke-width="2"/>
+    <!-- Hàng dưới: 2 luống hoa nằm ngang (mỗi luống rộng 75) -->
+    <line x1="105" y1="91" x2="105" y2="135" stroke="#1e293b" stroke-width="2"/>
+    <!-- Vạch chỉ kích thước 2cm ở cạnh dưới bên phải -->
+    <line x1="195" y1="91" x2="195" y2="135" stroke="#0369a1" stroke-width="2.5"/>
+    <text x="205" y="117" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0369a1" text-anchor="start">2cm</text>
+  </svg>
+</div>
 
 **Bài 101.** Hiệu của một số có 3 chữ số và một số có 2 chữ số là 989. Hỏi tổng số của 2 số đó?
 

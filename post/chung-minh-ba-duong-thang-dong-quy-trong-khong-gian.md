@@ -1,7 +1,6 @@
 ---
-title: Chứng minh ba đường thẳng đồng quy trong không gian
-description: Cách chứng minh ba đường thẳng đồng quy trong không gian bằng định lí
-  về giao tuyến của ba mặt phẳng
+title: 'Chứng Minh Ba Đường Thẳng Đồng Quy Trong Không Gian (Toán 11)'
+description: 'Phương pháp chứng minh ba đường thẳng đồng quy trong không gian bằng định lý giao tuyến 3 mặt phẳng và tìm giao điểm kèm các bài toán có lời giải chi tiết.'
 category: Toán học
 type: Bài học
 date: '2024-10-02'
@@ -13,38 +12,102 @@ tags:
 grade: 11
 ---
 
-Nhờ việc sử dụng định lí về giao tuyến của ba mặt phẳng phân biệt trong không gian hoặc đồng quy, hoặc đôi một so sánh nên trong không gian để chứng minh ba đường thẳng a, b, c đồng quy ta có thể làm như sau:
+**Chứng minh ba đường thẳng đồng quy trong không gian** là một dạng toán quan trọng của chương trình Hình học không gian [Toán lớp 11](/lop-11.html). Dạng toán này thường được kết hợp với bài toán chứng minh ba điểm thẳng hàng và tìm thiết diện của hình chóp, tứ diện.
 
-- Tìm giao điểm I của hai trong ba đường thẳng đã cho, chẳng hạn a và b;
+Dưới đây là 2 phương pháp chứng minh chuẩn tắc cùng các ví dụ và bài tập có lời giải chi tiết.
 
-- Giả sử c là giao tuyến của hai mặt phẳng (α) và (β) nào đó lần lượt chứa đường thẳng a và đường thẳng b;
+---
 
-- Chứng minh rằng I là điểm chung của (α) và (β), tức là I phải thuộc vào giao tuyến c;
+## 1. Phương pháp chứng minh ba đường thẳng đồng quy
 
-- Kết luận: a, b, c đồng quy tại O.
+### Cách 1: Sử dụng giao điểm của hai đường thẳng
+Để chứng minh ba đường thẳng $a, b, c$ đồng quy:
+1. **Bước 1:** Tìm giao điểm $I$ của hai đường thẳng $a$ và $b$ ($I = a \cap b$).
+2. **Bước 2:** Chứng minh điểm $I$ thuộc đường thẳng thứ ba $c$.
+   - Thông thường, ta chỉ ra $c$ là giao tuyến của hai mặt phẳng phân biệt $(\alpha)$ và $(\beta)$.
+   - Chứng minh $I \in (\alpha)$ (vì $I \in a \subset (\alpha)$) và $I \in (\beta)$ (vì $I \in b \subset (\beta)$).
+   - Suy ra $I$ là điểm chung của $(\alpha)$ và $(\beta)$, do đó $I \in c$.
+3. **Bước 3:** Kết luận ba đường thẳng $a, b, c$ đồng quy tại điểm $I$.
 
-![chứng minh ba đường thẳng đồng quy trong không gian](assets/images/chung-minh-ba-duong-thang-dong-quy-trong-khong-gian-giao-tuyen-cua-3-mat-phang.png)
+---
 
-Xem thêm [Cách chứng minh thẳng hàng trong hình học không gian](/bai-viet/cach-chung-minh-thang-hang-trong-hinh-hoc-khong-gian.html)
+### Cách 2: Sử dụng định lý về giao tuyến của ba mặt phẳng
+> **Định lý (Về giao tuyến của ba mặt phẳng phân biệt):**
+> Nếu ba mặt phẳng phân biệt đôi một cắt nhau theo ba giao tuyến phân biệt thì ba giao tuyến đó **hoặc đồng quy, hoặc đôi một song song**.
+>
+> $$\begin{cases} (\alpha) \cap (\beta) = a \\ (\beta) \cap (\gamma) = b \\ (\gamma) \cap (\alpha) = c \end{cases} \implies a, b, c \text{ đồng quy hoặc } a \parallel b \parallel c$$
 
-**Ví dụ.** Cho tứ diện ABCD. Gọi M; N lần lượt là trung điểm của AB và CD. Mặt phẳng (P) qua MN và cắt AD; BC lần lượt tại P và Q. Biết MP cắt NQ tại I. Chứng minh rằng MP, NQ và BD đồng quy tại I.
+Nếu ta đã chỉ ra hai trong ba đường thẳng cắt nhau tại điểm $I$ ($a \cap b = I$), thì khả năng đôi một song song bị loại trừ. Khi đó, đường thẳng thứ ba $c$ bắt buộc phải đi qua điểm $I$, tức là **ba giao tuyến đồng quy tại $I$**.
 
-**Lời giải**
+![Định lý giao tuyến của 3 mặt phẳng](assets/images/chung-minh-ba-duong-thang-dong-quy-trong-khong-gian-giao-tuyen-cua-3-mat-phang.png)
 
-![Chứng minh ba đường thẳng đồng quy trong không gian 1](assets/images/chung-minh-ba-duong-thang-dong-quy-trong-khong-gian-cach-chung-minh-3-diem-thang-hang-3-duong-thang-dong-quy.png)
+Xem thêm: [Cách chứng minh ba điểm thẳng hàng trong không gian](/bai-viet/cach-chung-minh-thang-hang-trong-hinh-hoc-khong-gian.html)
 
-Ta có: (ABD) ∩ (BCD) = BD
+---
 
-Lại có I ∈ MP ⊂ (ABD) và I ∈ NQ ⊂ (BCD)  nên I là điểm chung của hai mặt phẳng (ABD) và (BCD). Nói cách khác, I thuộc vào giao tuyến của hai mặt phẳng (ABD) và (BCD).
+## 2. Các ví dụ minh họa có lời giải chi tiết
 
-Do đó, I ∈ BD hay ba đường thẳng MP, NQ và BD đồng quy tại I.
+### Ví dụ 1
+Cho tứ diện $ABCD$. Gọi $M, N$ lần lượt là trung điểm của $AB$ và $CD$. Mặt phẳng $(P)$ đi qua $MN$ cắt các cạnh $AD, BC$ lần lượt tại $P$ và $Q$. Giả sử $MP$ cắt $NQ$ tại $I$. Chứng minh rằng ba đường thẳng $MP, NQ$ và $BD$ đồng quy tại điểm $I$.
 
-**Bài 1****.** Cho tứ diện ABCD mặt phẳng(P) không chứa AB và CD cắt các cạnh AC, BC, AD lần lượt tại M, N, R, S.
+![Chứng minh ba đường thẳng đồng quy](assets/images/chung-minh-ba-duong-thang-dong-quy-trong-khong-gian-cach-chung-minh-3-diem-thang-hang-3-duong-thang-dong-quy.png)
 
-1. Chứng minh 3 đường thẳng AB, MN, RS đồng qui.
+**Lời giải chi tiết:**
+Xét hai mặt phẳng $(ABD)$ và $(BCD)$:
+- Ta có giao tuyến của hai mặt phẳng là: $(ABD) \cap (BCD) = BD$.
+- Vì $M \in AB \subset (ABD)$ và $P \in AD \subset (ABD)$ nên đường thẳng $MP \subset (ABD)$.
+  Do $I \in MP \implies I \in (ABD)$.
+- Vì $N \in CD \subset (BCD)$ và $Q \in BC \subset (BCD)$ nên đường thẳng $NQ \subset (BCD)$.
+  Do $I \in NQ \implies I \in (BCD)$.
 
-2. Chứng minh 3 đường thẳng CD, MS, NR đồng qui
+Từ đó suy ra $I$ là điểm chung của hai mặt phẳng phân biệt $(ABD)$ và $(BCD)$.
+Do vậy, điểm $I$ phải thuộc giao tuyến của hai mặt phẳng đó, tức là $I \in BD$.
 
-**Bài 2****.** Cho tứ diện ABCD. M, N lần lượt là trung điểm BC, BD. Các điểm P và S lần lượt thuộc AD, AC sao cho AR= AD:3 ; AS= AC:3. CMR ba đường thẳng AB, MS, NR đồng qui.
+Vậy ba đường thẳng $MP, NQ$ và $BD$ cùng đi qua điểm $I$, tức là chúng đồng quy tại $I$ (đpcm).
 
-**Bài 3****.** Cho hình thang ABCD (AB// CD) điểm S nằm ngoài mặt phẳng chứa ABCD. Gọi M, N lần lượt là trung điểm của SC, SD. Gọi I là giao điểm của AD và BC, J là giao điểm của AN và BM. Gọi O là giao điểm của AC và BD. CMR : SO, AM, BN đồng qui.
+---
+
+### Ví dụ 2
+Cho tứ diện $ABCD$. Mặt phẳng $(P)$ không song song với $AB$ và $CD$, cắt các cạnh $AC, BC, BD, AD$ lần lượt tại bốn điểm $M, N, R, S$.
+1. Chứng minh ba đường thẳng $AB, MN, RS$ đồng quy.
+2. Chứng minh ba đường thẳng $CD, MS, NR$ đồng quy.
+
+**Lời giải chi tiết:**
+1. **Chứng minh $AB, MN, RS$ đồng quy:**
+   - Trong mặt phẳng $(ABC)$, gọi $I = AB \cap MN$ (do $MN$ không song song với $AB$).
+   - Xét ba mặt phẳng: $(ABC), (ABD)$ và mặt phẳng $(P) \equiv (MNRS)$:
+     - $(ABC) \cap (ABD) = AB$
+     - $(ABC) \cap (P) = MN$
+     - $(ABD) \cap (P) = RS$
+   - Ba mặt phẳng phân biệt cắt nhau theo ba giao tuyến $AB, MN, RS$.
+   - Mà $AB$ và $MN$ đã cắt nhau tại $I$, nên theo định lý giao tuyến của ba mặt phẳng, giao tuyến thứ ba $RS$ bắt buộc phải đi qua $I$.
+   - Vậy $AB, MN, RS$ đồng quy tại $I$.
+
+2. **Chứng minh $CD, MS, NR$ đồng quy:**
+   - Hoàn toàn tương tự, xét ba mặt phẳng: $(ACD), (BCD)$ và mặt phẳng $(P)$:
+     - $(ACD) \cap (BCD) = CD$
+     - $(ACD) \cap (P) = MS$
+     - $(BCD) \cap (P) = NR$
+   - Ba giao tuyến này cắt nhau từng đôi một, do đó chúng đồng quy tại một điểm $J = CD \cap MS \cap NR$ (đpcm).
+
+---
+
+### Ví dụ 3
+Cho hình thang $ABCD$ ($AB \parallel CD$, $AB < CD$). Điểm $S$ nằm ngoài mặt phẳng chứa $ABCD$. Gọi $O = AC \cap BD$ là giao điểm hai đường chéo của đáy. Trên các cạnh $SC, SD$ lấy lần lượt các trung điểm $M, N$. Gọi $K = AM \cap BN$. Chứng minh rằng ba đường thẳng $SO, AM, BN$ đồng quy tại $K$.
+
+**Lời giải chi tiết:**
+Xét ba mặt phẳng phân biệt: $(SAC), (SBD)$ và $(ABMN)$:
+1. Giao tuyến của $(SAC)$ và $(SBD)$ là đường thẳng $SO$ (vì $S$ là điểm chung và $O = AC \cap BD$ là điểm chung thứ hai).
+2. Giao tuyến của $(SAC)$ và $(ABMN)$ là đường thẳng $AM$ (vì $A \in (SAC) \cap (ABMN)$ và $M \in SC \subset (SAC), M \in (ABMN)$).
+3. Giao tuyến của $(SBD)$ và $(ABMN)$ là đường thẳng $BN$ (vì $B \in (SBD) \cap (ABMN)$ và $N \in SD \subset (SBD), N \in (ABMN)$).
+
+Theo giả thiết, trong mặt phẳng $(ABMN)$, hai đường thẳng $AM$ và $BN$ cắt nhau tại điểm $K$.
+Theo định lý về giao tuyến của ba mặt phẳng, ba giao tuyến $SO, AM, BN$ phải đồng quy tại điểm $K$.
+Vậy $SO, AM, BN$ đồng quy tại $K$ (đpcm).
+
+---
+
+## Bài viết liên quan
+- [Thiết diện là gì và các phương pháp tìm thiết diện](/bai-viet/thiet-dien-la-gi-va-cac-phuong-phap-tim-thiet-dien.html)
+- [Cách tìm giao tuyến của hai mặt phẳng trong không gian](/bai-viet/cach-tim-giao-tuyen-cua-hai-mat-phang.html)
+- [Góc giữa hai đường thẳng trong không gian lớp 11](/bai-viet/goc-giua-hai-duong-thang-trong-khong-gian.html)

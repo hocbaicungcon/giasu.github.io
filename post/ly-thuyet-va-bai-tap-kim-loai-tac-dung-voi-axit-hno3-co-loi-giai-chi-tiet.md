@@ -1,8 +1,6 @@
 ---
 title: Lý thuyết và bài tập kim loại tác dụng với axit HNO3 có lời giải chi tiết
-description: '(Lời giải) Ví dụ 1: Hỗn hợp X chứa 0,03 mol Cu; 0,03 mol Zn; 0,03 mol
-  Mg và 0,02 mol Al. Cho toàn bộ lượng X trên tác dụng hết với dung dịch HNO3 (đặc,
-  nóng)'
+description: 'Tổng hợp lý thuyết kim loại tác dụng HNO3, công thức tính nhanh số mol HNO3, khối lượng muối nitrat, xác định NH4NO3 kèm ví dụ và bài tập có lời giải.'
 category: Hóa học
 type: Bài học
 date: '2022-05-29'
@@ -14,19 +12,56 @@ tags:
 grade: 12
 ---
 
-## A. Lý thuyết
+Phản ứng của **kim loại tác dụng với axit nitric ($\text{HNO}_3$)** là một trong những chuyên đề trọng tâm của Hóa học vô cơ lớp 11 và 12 ôn thi Tốt nghiệp THPT Quốc gia. Để giải nhanh và chính xác dạng bài này, học sinh cần nắm vững phương pháp bảo toàn electron, bảo toàn nguyên tố và hệ thống công thức giải nhanh.
+
+## A. Lý thuyết trọng tâm và công thức tính nhanh
+
+### 1. Bản chất hóa học và các bán phản ứng oxi hóa - khử
+
+Kim loại thể hiện tính khử, nhường electron lên trạng thái oxi hóa cao nhất:
+$$
+\text{M} \to \text{M}^{n+} + n\text{e}
+$$
+
+Axit $\text{HNO}_3$ thể hiện tính oxi hóa mạnh do $\text{N}^{+5}$, nhận electron tạo ra các sản phẩm khử tùy theo nồng độ axit và độ mạnh của kim loại:
+
+| Sản phẩm khử | Trạng thái / Dấu hiệu | Bán phản ứng khử | $n_{\text{e nhận}}$ | $n_{\text{HNO}_3\text{ pư}}$ | $n_{\text{NO}_3^-\text{ (muối KL)}}$ |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| **$\text{NO}_2$** | Khí màu nâu đỏ, độc | $\text{NO}_3^- + 2\text{H}^+ + 1\text{e} \to \text{NO}_2\uparrow + \text{H}_2\text{O}$ | $1$ | $2n_{\text{NO}_2}$ | $1n_{\text{NO}_2}$ |
+| **$\text{NO}$** | Khí không màu, hóa nâu trong KK | $\text{NO}_3^- + 4\text{H}^+ + 3\text{e} \to \text{NO}\uparrow + 2\text{H}_2\text{O}$ | $3$ | $4n_{\text{NO}}$ | $3n_{\text{NO}}$ |
+| **$\text{N}_2\text{O}$** | Khí không màu, mùi thơm (khí cười) | $2\text{NO}_3^- + 10\text{H}^+ + 8\text{e} \to \text{N}_2\text{O}\uparrow + 5\text{H}_2\text{O}$ | $8$ | $10n_{\text{N}_2\text{O}}$ | $8n_{\text{N}_2\text{O}}$ |
+| **$\text{N}_2$** | Khí không màu, nhẹ hơn không khí | $2\text{NO}_3^- + 12\text{H}^+ + 10\text{e} \to \text{N}_2\uparrow + 6\text{H}_2\text{O}$ | $10$ | $12n_{\text{N}_2}$ | $10n_{\text{N}_2}$ |
+| **$\text{NH}_4\text{NO}_3$** | Muối tan trong dung dịch | $\text{NO}_3^- + 10\text{H}^+ + 8\text{e} \to \text{NH}_4^+ + 3\text{H}_2\text{O}$ | $8$ | $10n_{\text{NH}_4\text{NO}_3}$ | $8n_{\text{NH}_4\text{NO}_3}$ |
+
+### 2. Hệ thống công thức tính nhanh cốt lõi
+
+**Công thức 1: Tính số mol $\text{HNO}_3$ tham gia phản ứng**
+$$
+n_{\text{HNO}_3\text{ pư}} = 2n_{\text{NO}_2} + 4n_{\text{NO}} + 10n_{\text{N}_2\text{O}} + 12n_{\text{N}_2} + 10n_{\text{NH}_4\text{NO}_3}
+$$
+
+**Công thức 2: Tính số mol $\text{NO}_3^-$ tạo muối kim loại**
+$$
+n_{\text{NO}_3^-\text{ (muối KL)}} = n_{\text{e trao đổi}} = n_{\text{NO}_2} + 3n_{\text{NO}} + 8n_{\text{N}_2\text{O}} + 10n_{\text{N}_2} + 8n_{\text{NH}_4\text{NO}_3}
+$$
+
+**Công thức 3: Khối lượng muối khan thu được khi cô cạn**
+$$
+m_{\text{muối}} = m_{\text{KL}} + 62\cdot n_{\text{NO}_3^-\text{ (muối KL)}} + 80\cdot n_{\text{NH}_4\text{NO}_3}
+$$
+
+> [!TIP]
+> **Dấu hiệu nhận biết có muối $\text{NH}_4\text{NO}_3$:**
+> 1. Khi tác dụng với các kim loại có tính khử mạnh: $\text{Mg, Al, Zn}$.
+> 2. Đề bài không nói khí là "sản phẩm khử duy nhất".
+> 3. Kiểm tra bảo toàn electron: $n_{\text{e nhường}} > n_{\text{e nhận (khí)}} \implies n_{\text{NH}_4\text{NO}_3} = \dfrac{n_{\text{e nhường}} - n_{\text{e nhận (khí)}}}{8}$.
+> 4. Cho dung dịch kiềm ($\text{NaOH, KOH}$) vào dung dịch sau phản ứng có khí mùi khai ($\text{NH}_3$) thoát ra.
 
 ![Lý thuyết và bài tập kim loại tác dụng với axit HNO3 có lời giải chi tiết 1](assets/images/ly-thuyet-va-bai-tap-kim-loai-tac-dung-voi-axit-hno3-co-loi-giai-chi-tiet-LT1.jpg)
-
- 
-
 ![Lý thuyết và bài tập kim loại tác dụng với axit HNO3 có lời giải chi tiết 2](assets/images/ly-thuyet-va-bai-tap-kim-loai-tac-dung-voi-axit-hno3-co-loi-giai-chi-tiet-LT2.jpg)
-
- 
-
 ![Lý thuyết và bài tập kim loại tác dụng với axit HNO3 có lời giải chi tiết 3](assets/images/ly-thuyet-va-bai-tap-kim-loai-tac-dung-voi-axit-hno3-co-loi-giai-chi-tiet-LT3.jpg)
 
-## B. Ví dụ minh họa
+## B. Ví dụ minh họa có lời giải chi tiết
 
 **([Lời giải](/bai-viet/hon-hop-x-chua-003-mol-cu-003-mol-zn-003-mol-mg-va-002-mol-al.html)) Ví dụ 1:** Hỗn hợp X chứa 0,03 mol Cu; 0,03 mol Zn; 0,03 mol Mg và 0,02 mol Al. Cho toàn bộ lượng X trên tác dụng hết với dung dịch HNO3 (đặc, nóng) thu được sản phẩm khử duy nhất là khí NO2 và dung dịch sau phản ứng chứa m gam muối. Giá trị của m là:
 

@@ -11,9 +11,6 @@ tags:
 - Khoảng cách hai đường chéo nhau
 grade: 11
 ---
-
-# Cách tính Khoảng cách giữa hai đường thẳng chéo nhau trong không gian
-
 Muốn tính được khoảng cách giữa hai đường thẳng chéo nhau thì các em học sinh cần nắm vững cách tính khoảng cách từ điểm tới một mặt phẳng và cách dựng hình chiếu vuông góc của một điểm lên mặt phẳng. Chi tiết về vấn đề này, mời các em xem trong bài viết [Cách tính khoảng cách từ một điểm đến một mặt phẳng](/bai-viet/cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang.html).
 
 ## 1. Các phương pháp tính khoảng cách giữa hai đường thẳng chéo nhau

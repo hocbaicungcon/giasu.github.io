@@ -1,6 +1,6 @@
 ---
 title: Phương pháp đường chéo
-description: Phương pháp đường chéo
+description: 'Phương pháp đường chéo giải nhanh bài tập Hóa học: quy tắc áp dụng cho hỗn hợp khí, dung dịch và các dạng bài tập tự luyện có đáp án.'
 category: Hóa học
 type: Bài học
 date: '2024-10-02'

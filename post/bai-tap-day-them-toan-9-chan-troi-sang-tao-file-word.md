@@ -20,7 +20,7 @@ grade: 9
 - [Chương 1-Bài 3-ĐỀ BÀI 2](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Chương 2 Bài 1-Bất đẳng thức-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Chương 2-Bài 2-Bất phương trình-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
-- [Chương 3-Bài 1-Căn bậc hai-ĐỀ BÀI](#drive-pending-Chuong-3-Bai-1-Can-bac-hai-DE-BAI-giasu.ai.vn.doc)
+- [Chương 3-Bài 1-Căn bậc hai-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Chương 3-Bài 2-Căn bậc ba-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Chương 3-Bài 3-Tính chất -ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Chương 3-Bài 4-Phép biến đổi-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
@@ -44,7 +44,7 @@ grade: 9
 - [Chương 9-Bài 3-Đa giác-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Chương 10-Bài 1-Hình trụ-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Chương 10-Bài 2-Hình nón-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
-- [Chương 10-Bài 3-Hình cầu-ĐỀ BÀI](#drive-pending-Chuong-10-Bai-3-Hinh-cau-DE-BAI-giasu.ai.vn.doc)
+- [Chương 10-Bài 3-Hình cầu-ĐỀ BÀI](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ## Đáp án Bài tập dạy thêm Toán 9 CTST file Word
 

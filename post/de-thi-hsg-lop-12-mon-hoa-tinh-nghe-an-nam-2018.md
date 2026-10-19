@@ -1,6 +1,6 @@
 ---
 title: Đề thi hsg lớp 12 môn hóa tỉnh Nghệ An năm 2018
-description: Đề thi hsg lớp 12 môn hóa tỉnh Nghệ An năm 2018
+description: 'Đề thi học sinh giỏi lớp 12 môn Hóa học tỉnh Nghệ An năm 2018 có đáp án chi tiết và thang điểm chuẩn cho học sinh đội tuyển ôn luyện.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

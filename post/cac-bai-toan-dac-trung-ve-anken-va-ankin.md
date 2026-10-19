@@ -1,6 +1,6 @@
 ---
 title: Các bài toán đặc trưng về anken và ankin
-description: Các bài toán đặc trưng về anken và ankin
+description: 'Tổng hợp các bài toán đặc trưng về anken và ankin: phản ứng cộng brom, hiđro hóa, hidrat hóa kèm phương pháp giải và bài tập tự luyện.'
 category: Hóa học
 type: Bài tập
 date: '2024-10-02'

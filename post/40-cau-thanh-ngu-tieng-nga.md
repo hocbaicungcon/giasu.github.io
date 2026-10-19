@@ -1,6 +1,6 @@
 ---
 title: 40 câu thành ngữ tiếng Nga
-description: 1. Cha nào con nấy.Каков отец, таков и сын.
+description: 'Tổng hợp 40 câu thành ngữ tiếng Nga thông dụng nhất có dịch nghĩa tiếng Việt chi tiết, ví dụ thực tế và giải thích ngữ cảnh sử dụng.'
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'

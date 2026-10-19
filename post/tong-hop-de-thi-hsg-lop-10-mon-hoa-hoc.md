@@ -1,6 +1,6 @@
 ---
 title: Tổng hợp đề thi HSG lớp 10 môn hóa học
-description: Tổng hợp đề thi HSG lớp 10 môn hóa học
+description: 'Tổng hợp bộ đề thi học sinh giỏi môn Hóa học lớp 10 cấp trường và cấp tỉnh chọn lọc qua các năm có đáp án chi tiết.'
 category: Hóa học
 type: Bài tập
 date: '2023-03-13'
