@@ -1,6 +1,6 @@
 ---
-title: 35 trò chơi PowerPoint học tập cho học sinh hấp dẫn nhất
-description: 'Tổng hợp 35 trò chơi PowerPoint học tập thú vị dành cho học sinh: Vòng quay may mắn, Lật mảnh ghép, Đào vàng... kèm link tải file PPTX miễn phí cho thầy cô.'
+title: 33 trò chơi PowerPoint học tập cho học sinh hấp dẫn nhất
+description: 'Tải miễn phí 33 trò chơi PowerPoint học tập cho học sinh: Vòng quay may mắn, Lật mảnh ghép, Đào vàng, Ai là triệu phú... có sẵn câu hỏi mẫu, dễ chỉnh sửa cho thầy cô.'
 category: Các môn khác
 type: Bài học
 date: '2022-01-25'
@@ -13,7 +13,7 @@ tags:
 
 Ứng dụng **trò chơi PowerPoint trong lớp học** là một trong những phương pháp giảng dạy tích cực hiệu quả nhất hiện nay. Các trò chơi tương tác không chỉ giúp giờ học trở nên sôi nổi, giải tỏa áp lực học tập mà còn kích thích tư duy nhanh nhạy, khuyến khích tinh thần thi đua giữa các nhóm học sinh.
 
-Dưới đây là bộ sưu tập **35 trò chơi PowerPoint học tập** được biên soạn và tổng hợp công phu từ các tác giả uy tín (Thư viện STEM, Trợ Giảng, Võ Văn Xin Em...), hoàn toàn miễn phí và dễ dàng tùy biến nội dung theo từng môn học từ mầm non, tiểu học đến THCS.
+Dưới đây là bộ sưu tập **33 trò chơi PowerPoint học tập** do giasu.ai.vn thiết kế, hoàn toàn miễn phí và dễ dàng tùy biến nội dung theo từng môn học từ mầm non, tiểu học đến THCS.
 
 > **Tài liệu hữu ích cho giáo viên:**
 > - [10 nguyên tắc thiết kế slide PowerPoint đẹp mắt](/bai-viet/10-nguyen-tac-thiet-ke-slide-powerpoint.html)
@@ -23,138 +23,65 @@ Dưới đây là bộ sưu tập **35 trò chơi PowerPoint học tập** đư�
 
 ---
 
-## 1. Thư viện 36 game PowerPoint tương tác STEM
+## 1. Tải 33 trò chơi PowerPoint giasu.ai.vn
 
-Thư viện tổng hợp 36 trò chơi PowerPoint tương tác được thiết kế sẵn hiệu ứng âm thanh, chuyển động sinh động, phù hợp cho các hoạt động khởi động bài học (Warm-up) hoặc củng cố kiến thức cuối giờ.
+Bộ 33 trò chơi dưới đây do giasu.ai.vn thiết kế lại theo danh sách các trò chơi phổ biến trong lớp học. Mỗi trò chơi là một file PPTX riêng, có sẵn câu hỏi mẫu cho học sinh tiểu học. Thầy cô mở file ở chế độ **Trình chiếu (F5)**, bấm các nút trên màn hình để chơi và sửa lại câu hỏi theo bài học của mình. Bấm vào hình hoặc nút **Tải PPTX** để tải từng trò chơi.
+
+| STT | Hình | Trò chơi và cách chơi | Phù hợp | Tải về |
+| :---: | :---: | :--- | :--- | :---: |
+| 1 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-lat-manh-ghep.webp" alt="Trò chơi PowerPoint Lật mảnh ghép giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/lat-manh-ghep-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Lật mảnh ghép**<br>Chọn một mảnh ghép và trả lời câu hỏi. Đúng thì mảnh ghép mở ra. Đoán được bức tranh sớm nhất sẽ thắng.</span> | <span style="display:block;max-width:170px">Khởi động bài học, kiểm tra bài cũ</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/lat-manh-ghep-giasu.ai.vn.pptx) |
+| 2 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-o-cua-bi-mat.webp" alt="Trò chơi PowerPoint Ô cửa bí mật giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/o-cua-bi-mat-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Ô cửa bí mật**<br>Chọn một cánh cửa, trả lời đúng để mở cánh cửa nhận điểm thưởng.</span> | <span style="display:block;max-width:170px">Ôn tập trắc nghiệm, sinh hoạt lớp</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/o-cua-bi-mat-giasu.ai.vn.pptx) |
+| 3 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-vong-quay-may-man.webp" alt="Trò chơi PowerPoint Vòng quay may mắn giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/vong-quay-may-man-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Vòng quay may mắn**<br>Bấm vào một ô trên vòng quay (nhắm mắt chọn hoặc dừng vòng quay), trả lời đúng để nhận điểm của ô đó.</span> | <span style="display:block;max-width:170px">Ôn tập nhanh, tạo không khí hào hứng</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/vong-quay-may-man-giasu.ai.vn.pptx) |
+| 4 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-nhanh-nhu-chop.webp" alt="Trò chơi PowerPoint Nhanh như chớp giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/nhanh-nhu-chop-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Nhanh như chớp**<br>Trả lời đúng liên tiếp để leo lên bậc cao nhất. Sai một câu là dừng cuộc chơi.</span> | <span style="display:block;max-width:170px">Thi đấu đối kháng 1-1 hoặc 2 đội</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/nhanh-nhu-chop-giasu.ai.vn.pptx) |
+| 5 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-bat-buom.webp" alt="Trò chơi PowerPoint Bắt bướm giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/bat-buom-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Bắt bướm**<br>Chọn chú bướm muốn bắt, trả lời đúng để đưa bướm về vợt của mình.</span> | <span style="display:block;max-width:170px">Mầm non, Tiểu học (lớp 1 - 3)</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/bat-buom-giasu.ai.vn.pptx) |
+| 6 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-ai-len-cao-hon.webp" alt="Trò chơi PowerPoint Ai lên cao hơn giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/ai-len-cao-hon-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Ai lên cao hơn**<br>Mỗi câu đúng đưa đội tiến thêm một nấc lên đỉnh núi. Sai thì thử lại.</span> | <span style="display:block;max-width:170px">Làm việc nhóm, thi đua giữa các đội</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/ai-len-cao-hon-giasu.ai.vn.pptx) |
+| 7 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-dao-vang.webp" alt="Trò chơi PowerPoint Đào vàng giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/dao-vang-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Đào vàng**<br>Chọn cục vàng để đào, trả lời đúng để kéo vàng về nhận điểm.</span> | <span style="display:block;max-width:170px">Củng cố bài, Toán và Khoa học tự nhiên</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/dao-vang-giasu.ai.vn.pptx) |
+| 8 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-cau-ca.webp" alt="Trò chơi PowerPoint Câu cá giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/cau-ca-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Câu cá**<br>Chọn chú cá muốn câu, trả lời đúng để bắt được cá.</span> | <span style="display:block;max-width:170px">Tiểu học, tiếng Anh, Tiếng Việt</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/cau-ca-giasu.ai.vn.pptx) |
+| 9 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-co-ca-ngua.webp" alt="Trò chơi PowerPoint Cờ cá ngựa giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/co-ca-ngua-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Cờ cá ngựa**<br>Trả lời đúng để tiến thêm một ô cờ về chuồng. Sai thì giữ nguyên chỗ và thử lại.</span> | <span style="display:block;max-width:170px">Tiểu học, THCS</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/co-ca-ngua-giasu.ai.vn.pptx) |
+| 10 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-con-bo-tim-thuc-an.webp" alt="Trò chơi PowerPoint Con bọ tìm thức ăn giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/con-bo-tim-thuc-an-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Con bọ tìm thức ăn**<br>Chọn chiếc lá, trả lời đúng để con bọ tìm được thức ăn.</span> | <span style="display:block;max-width:170px">Mầm non, Lớp 1 - 2</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/con-bo-tim-thuc-an-giasu.ai.vn.pptx) |
+| 11 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-doan-bong-con-vat.webp" alt="Trò chơi PowerPoint Đoán bóng con vật giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/doan-bong-con-vat-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Đoán bóng con vật**<br>Chọn một ô bí ẩn, trả lời đúng để biết con vật đang ẩn mình.</span> | <span style="display:block;max-width:170px">Mầm non, Lớp 1</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/doan-bong-con-vat-giasu.ai.vn.pptx) |
+| 12 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-dong-ho-bao-thuc.webp" alt="Trò chơi PowerPoint Đồng hồ báo thức giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/dong-ho-bao-thuc-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Đồng hồ báo thức**<br>Đọc câu hỏi rồi bấm đếm giờ. Hết 10 giây, đồng hồ báo thức reo và hiện đáp án.</span> | <span style="display:block;max-width:170px">Mọi cấp học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/dong-ho-bao-thuc-giasu.ai.vn.pptx) |
+| 13 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-dong-ho-cat.webp" alt="Trò chơi PowerPoint Đồng hồ cát giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/dong-ho-cat-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Đồng hồ cát**<br>Đọc câu hỏi rồi bấm đếm giờ. Cát chảy hết (15 giây) là hết thời gian trả lời.</span> | <span style="display:block;max-width:170px">Mọi cấp học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/dong-ho-cat-giasu.ai.vn.pptx) |
+| 14 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-du-lich-cung-doraemon.webp" alt="Trò chơi PowerPoint Du lịch cùng chú mèo máy giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/du-lich-cung-doraemon-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Du lịch cùng chú mèo máy**<br>Trả lời đúng để chú mèo máy bay đến điểm đến tiếp theo trên hành trình khám phá thế giới.</span> | <span style="display:block;max-width:170px">Tiểu học, THCS</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/du-lich-cung-doraemon-giasu.ai.vn.pptx) |
+| 15 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-giai-cuu-dai-duong.webp" alt="Trò chơi PowerPoint Giải cứu đại dương giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/giai-cuu-dai-duong-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Giải cứu đại dương**<br>Mỗi sinh vật biển đang gặp nguy. Trả lời đúng để giải cứu chúng.</span> | <span style="display:block;max-width:170px">Lớp 3 - 6</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/giai-cuu-dai-duong-giasu.ai.vn.pptx) |
+| 16 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-giup-qua-uong-nuoc.webp" alt="Trò chơi PowerPoint Giúp quạ uống nước giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/giup-qua-uong-nuoc-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Giúp quạ uống nước**<br>Mỗi câu đúng quạ thả thêm một viên sỏi, nước dâng lên. Đủ cao thì quạ uống được nước.</span> | <span style="display:block;max-width:170px">Mầm non, Tiểu học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/giup-qua-uong-nuoc-giasu.ai.vn.pptx) |
+| 17 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-hai-dua-hai-tao.webp" alt="Trò chơi PowerPoint Hái dừa – Hái táo giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/hai-dua-hai-tao-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Hái dừa – Hái táo**<br>Chọn một trái trên cây, trả lời đúng để hái trái về giỏ.</span> | <span style="display:block;max-width:170px">Tiểu học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/hai-dua-hai-tao-giasu.ai.vn.pptx) |
+| 18 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-hai-loc-dau-xuan.webp" alt="Trò chơi PowerPoint Hái lộc đầu xuân giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/hai-loc-dau-xuan-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Hái lộc đầu xuân**<br>Chọn bao lì xì trên cành đào, trả lời đúng để nhận lộc đầu xuân.</span> | <span style="display:block;max-width:170px">Mọi cấp học (chủ đề Tết)</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/hai-loc-dau-xuan-giasu.ai.vn.pptx) |
+| 19 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-hop-qua-bi-mat.webp" alt="Trò chơi PowerPoint Hộp quà bí mật giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/hop-qua-bi-mat-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Hộp quà bí mật**<br>Chọn hộp quà, trả lời đúng để mở quà bất ngờ bên trong.</span> | <span style="display:block;max-width:170px">Mọi cấp học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/hop-qua-bi-mat-giasu.ai.vn.pptx) |
+| 20 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-hugo-giai-cuu-ban.webp" alt="Trò chơi PowerPoint Hugo giải cứu bạn giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/hugo-giai-cuu-ban-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Hugo giải cứu bạn**<br>Trả lời đúng để vượt qua từng chặng. Sai thì bị tụt lại chặng trước.</span> | <span style="display:block;max-width:170px">Tiểu học, THCS</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/hugo-giai-cuu-ban-giasu.ai.vn.pptx) |
+| 21 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-ngo-khong-that-gia.webp" alt="Trò chơi PowerPoint Ngộ Không thật giả giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/ngo-khong-that-gia-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Ngộ Không thật giả**<br>Chọn một chú khỉ, trả lời đúng để nhận ra Ngộ Không thật.</span> | <span style="display:block;max-width:170px">Tiểu học, THCS</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/ngo-khong-that-gia-giasu.ai.vn.pptx) |
+| 22 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-ngoi-sao-may-man.webp" alt="Trò chơi PowerPoint Ngôi sao may mắn giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/ngoi-sao-may-man-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Ngôi sao may mắn**<br>Chọn một ngôi sao, trả lời đúng để nhận điểm thưởng ẩn trong sao.</span> | <span style="display:block;max-width:170px">Mọi cấp học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/ngoi-sao-may-man-giasu.ai.vn.pptx) |
+| 23 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-nho-cu-cai-nho-ca-rot.webp" alt="Trò chơi PowerPoint Nhổ củ cải – Nhổ cà rốt giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/nho-cu-cai-nho-ca-rot-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Nhổ củ cải – Nhổ cà rốt**<br>Chọn một củ cà rốt, trả lời đúng để nhổ củ lên khỏi mặt đất.</span> | <span style="display:block;max-width:170px">Mầm non, Tiểu học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/nho-cu-cai-nho-ca-rot-giasu.ai.vn.pptx) |
+| 24 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-ong-non-hoc-viec.webp" alt="Trò chơi PowerPoint Ong non học việc giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/ong-non-hoc-viec-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Ong non học việc**<br>Mỗi câu đúng ong non thu thêm mật hoa về tổ. Đủ mười câu là ong thợ giỏi.</span> | <span style="display:block;max-width:170px">Mầm non, Lớp 1 - 3</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/ong-non-hoc-viec-giasu.ai.vn.pptx) |
+| 25 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-pacman-an-diem.webp" alt="Trò chơi PowerPoint Pacman ăn điểm giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/pacman-an-diem-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Pacman ăn điểm**<br>Trả lời đúng để Pacman ăn thêm điểm trên đường đi.</span> | <span style="display:block;max-width:170px">Tiểu học, THCS</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/pacman-an-diem-giasu.ai.vn.pptx) |
+| 26 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-qua-tao-doc-cua-phu-thuy.webp" alt="Trò chơi PowerPoint Quả táo độc của phù thủy giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/qua-tao-doc-cua-phu-thuy-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Quả táo độc của phù thủy**<br>Chọn một quả táo, trả lời đúng để tránh quả táo độc của phù thủy.</span> | <span style="display:block;max-width:170px">Mầm non, Tiểu học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/qua-tao-doc-cua-phu-thuy-giasu.ai.vn.pptx) |
+| 27 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-tang-bang-troi.webp" alt="Trò chơi PowerPoint Tảng băng trôi giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/tang-bang-troi-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Tảng băng trôi**<br>Nhảy qua từng tảng băng bằng câu trả lời đúng. Sai thì tụt về tảng băng trước.</span> | <span style="display:block;max-width:170px">Tiểu học, THCS</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/tang-bang-troi-giasu.ai.vn.pptx) |
+| 28 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-thu-tai-hieu-biet.webp" alt="Trò chơi PowerPoint Thử tài hiểu biết giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/thu-tai-hieu-biet-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Thử tài hiểu biết**<br>Trả lời liên tiếp 10 câu đố kiến thức tổng hợp. Sai là dừng cuộc chơi.</span> | <span style="display:block;max-width:170px">Lớp 4 - 9</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/thu-tai-hieu-biet-giasu.ai.vn.pptx) |
+| 29 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-truy-tim-mat-ma.webp" alt="Trò chơi PowerPoint Truy tìm mật mã giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/truy-tim-mat-ma-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Truy tìm mật mã**<br>Giải từng gợi ý để tìm ra các từ khóa của mật mã. Bấm số để xem gợi ý.</span> | <span style="display:block;max-width:170px">THCS, THPT</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/truy-tim-mat-ma-giasu.ai.vn.pptx) |
+| 30 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-ai-la-trieu-phu.webp" alt="Trò chơi PowerPoint Ai là triệu phú giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/ai-la-trieu-phu-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Ai là triệu phú**<br>Trả lời đúng 15 câu hỏi liên tiếp để trở thành triệu phú.</span> | <span style="display:block;max-width:170px">Lớp 4 - 12</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/ai-la-trieu-phu-giasu.ai.vn.pptx) |
+| 31 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-trick-or-treat.webp" alt="Trò chơi PowerPoint Trick or Treat giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/trick-or-treat-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Trick or Treat**<br>Chọn quả bí ngô: trả lời đúng thì được kẹo (Treat), sai thì bị trêu (Trick).</span> | <span style="display:block;max-width:170px">Mọi cấp học (chủ đề Halloween)</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/trick-or-treat-giasu.ai.vn.pptx) |
+| 32 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-tro-choi-o-chu.webp" alt="Trò chơi PowerPoint Trò chơi ô chữ giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/tro-choi-o-chu-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Trò chơi ô chữ**<br>Bấm vào số của hàng ngang để xem gợi ý, đoán từ rồi bấm xem đáp án.</span> | <span style="display:block;max-width:170px">Tiểu học, THCS, THPT</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/tro-choi-o-chu-giasu.ai.vn.pptx) |
+| 33 | [<img src="/assets/images/tro-choi-powerpoint-giasu-ai-vn-vuot-chuong-ngai-vat.webp" alt="Trò chơi PowerPoint Vượt chướng ngại vật giasu.ai.vn" width="160" height="90" loading="lazy">](/assets/docs/tro-choi-powerpoint/vuot-chuong-ngai-vat-giasu.ai.vn.pptx) | <span style="display:block;max-width:340px">**Vượt chướng ngại vật**<br>Vượt qua từng chướng ngại vật bằng câu trả lời đúng. Sai thì lùi lại một chướng ngại.</span> | <span style="display:block;max-width:170px">Mọi cấp học</span> | [Tải PPTX](/assets/docs/tro-choi-powerpoint/vuot-chuong-ngai-vat-giasu.ai.vn.pptx) |
+
+---
+
+## 2. Thư viện 36 game PowerPoint tương tác STEM (bản gốc)
+
+Nếu cần thêm mẫu có hiệu ứng âm thanh và chuyển động phong phú, thầy cô có thể tham khảo thư viện 36 game PowerPoint STEM được chia sẻ trên Google Drive.
 
 [![Thư viện 36 game PowerPoint tương tác STEM cho học sinh](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-game-powerpoint.webp)](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
 
 - [Tải trọn bộ 36 game PowerPoint STEM (Google Drive)](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-## 2. Các trò chơi PowerPoint tương tác nổi bật nhất
-
-### 2.1. Trò chơi PowerPoint Lật mảnh ghép
-
-![Trò chơi PowerPoint Lật mảnh ghép cho học sinh](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-tro-choi-powerpoint-lat-manh-ghep.jpg)
-
-- **Cách chơi:** Hình ảnh chủ đề bị che khuất bởi các ô số. Mỗi đội hoặc học sinh lần lượt chọn một ô số và trả lời câu hỏi tương ứng. Nếu trả lời đúng, mảnh ghép sẽ biến mất và mở ra một góc hình ảnh bí mật. Đội nào đoán đúng bức tranh chủ đề đầu tiên sẽ giành chiến thắng.
-- **Phù hợp:** Hoạt động khởi động bài học, kiểm tra bài cũ hoặc khám phá chủ đề mới.
-- [Tải trò chơi Lật mảnh ghép PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-### 2.2. Trò chơi PowerPoint Ô Cửa Bí Mật
-
-![Trò chơi PowerPoint Ô cửa bí mật cho lớp học](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-o-cua-bi-mat.jpg)
-
-- **Cách chơi:** Giáo viên thiết kế các cánh cửa chứa đựng điểm thưởng, phần quà hoặc thử thách bất ngờ. Học sinh chọn cánh cửa mình thích và vượt qua câu hỏi để nhận phần thưởng bên trong.
-- **Phù hợp:** Luyện tập trắc nghiệm, ôn tập định kỳ, sinh hoạt lớp.
-- [Tải trò chơi Ô cửa bí mật PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-### 2.3. Trò chơi PowerPoint Vòng Quay May Mắn
-
-![Trò chơi Vòng quay may mắn PowerPoint cho học sinh](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-vong-quay-may-man.jpg)
-
-- **Cách chơi:** Vòng quay được chia thành nhiều ô điểm số (10đ, 20đ, mất lượt, nhân đôi điểm...). Học sinh bấm quay số ngẫu nhiên, sau đó trả lời câu hỏi 4 lựa chọn (A, B, C, D) để rinh về số điểm tương ứng.
-- **Phù hợp:** Ôn tập câu hỏi trắc nghiệm nhanh, tạo không khí hào hứng và hồi hộp.
-- [Tải trò chơi Vòng quay may mắn PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-### 2.4. Trò chơi PowerPoint Nhanh Như Chớp
-
-![Trò chơi PowerPoint Nhanh Như Chớp](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-tro-choi-powerpoint-nhanh-nhu-chop.jpg)
-
-- **Cách chơi:** Mô phỏng gameshow truyền hình ăn khách với hiệu ứng bậc thang di chuyển lên cao khi trả lời đúng liên tiếp và tuột dốc khi trả lời sai.
-- **Phù hợp:** Thi đấu đối kháng 1-1 hoặc giữa 2 đội đại diện lớp.
-- [Tải trò chơi Nhanh như chớp PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-### 2.5. Trò chơi PowerPoint Bắt bướm
-
-![Trò chơi bắt bướm tương tác PowerPoint](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-tro-choi-powerpoint-bat-buom.jpg)
-
-- **Cách chơi:** Trên màn hình là vườn hoa với những chú bướm rực rỡ bay lượn. Học sinh chọn chú bướm muốn bắt, trả lời câu hỏi để đưa chú bướm về vợt bắt của mình.
-- **Phù hợp:** Học sinh mầm non và tiểu học (lớp 1, 2, 3).
-- [Tải trò chơi Bắt bướm PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-### 2.6. Trò chơi PowerPoint Ai Lên Cao Hơn
-
-![Trò chơi Ai lên cao hơn PowerPoint](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-tro-choi-ai-len-cao-hon.jpg)
-
-- **Cách chơi:** Trò chơi thi đua leo núi hoặc leo thang theo từng câu hỏi. Mỗi câu trả lời đúng đưa nhân vật của đội tiến thêm một nấc thang. Đội nào lên đỉnh núi trước sẽ là nhà vô địch.
-- **Phù hợp:** Làm việc nhóm, tăng tính đồng đội và gắn kết.
-- [Tải trò chơi Ai lên cao hơn PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-### 2.7. Trò chơi PowerPoint Đào vàng
-
-![Trò chơi Đào vàng PowerPoint](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-dao-vang-powerpoint.jpg)
-
-- **Cách chơi:** Mô phỏng tựa game đào vàng cổ điển quen thuộc. Các cục vàng lớn nhỏ tương ứng với độ khó và điểm số khác nhau. Học sinh ngắm gắp vàng và trả lời câu hỏi để kéo vàng về đích.
-- **Phù hợp:** Củng cố bài học, các tiết toán học và khoa học tự nhiên.
-- [Tải trò chơi Đào vàng PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-### 2.8. Trò chơi PowerPoint Câu cá
-
-![Trò chơi Câu cá PowerPoint tương tác](/assets/images/tro-choi-powerpoint-cho-hoc-sinh-cau-ca.jpg)
-
-- **Cách chơi:** Đại dương có nhiều loài cá đầy màu sắc. Học sinh buông cần câu để câu chú cá mình yêu thích, sau đó trả lời thử thách kiến thức để bắt được cá.
-- **Phù hợp:** Học sinh tiểu học, tiết học tiếng Anh hoặc Tiếng Việt.
-- [Tải trò chơi Câu cá PPTX](https://drive.google.com/drive/folders/1Qb6zbzI1KbP50aTSOB4K26ykWEHINMuE)
-
----
-
-## 3. Danh sách tổng hợp các trò chơi PowerPoint học tập khác
-
-Ngoài 8 trò chơi tiêu biểu trên, kho dữ liệu còn có hơn 25 mẫu trò chơi PowerPoint đa dạng chủ đề được liệt kê trong bảng dưới đây:
-
-| STT | Tên trò chơi PowerPoint | Thể loại / Mô phỏng | Độ tuổi / Cấp học phù hợp |
-| :---: | :--- | :--- | :--- |
-| 1 | Cờ cá ngựa | Đua lượt, gieo xúc xắc | Tiểu học, THCS |
-| 2 | Con bọ tìm thức ăn | Trắc nghiệm phản xạ nhanh | Mầm non, Lớp 1 - 2 |
-| 3 | Đoán bóng con vật | Trực quan, nhận biết con vật | Mầm non, Lớp 1 |
-| 4 | Đồng hồ báo thức | Trả lời nhanh theo thời gian | Mọi cấp học |
-| 5 | Đồng hồ cát | Đếm ngược thử thách | Mọi cấp học |
-| 6 | Du lịch cùng Doraemon | Khám phá thế giới, địa lí | Tiểu học, THCS |
-| 7 | Giải cứu đại dương | Bảo vệ môi trường, sinh học | Lớp 3 - 6 |
-| 8 | Giúp quạ uống nước | Câu chuyện ngụ ngôn tương tác | Mầm non, Tiểu học |
-| 9 | Hái dừa / Hái táo | Thu thập trái cây trả lời câu hỏi | Tiểu học |
-| 10 | Hái lộc đầu xuân | Chủ đề Tết cổ truyền, vui tươi | Mọi cấp học |
-| 11 | Hộp quà bí mật | Chọn quà may mắn, bất ngờ | Mọi cấp học |
-| 12 | Hugo giải cứu bạn | Game phiêu lưu nhập vai cổ điển | Tiểu học, THCS |
-| 13 | Ngộ Không thật giả | Thử tài quan sát, phân tích | Tiểu học, THCS |
-| 14 | Ngôi sao may mắn | Chọn ngôi sao điểm thưởng | Mọi cấp học |
-| 15 | Nhổ củ cải / Nhổ cà rốt | Hoạt hình dễ thương, tương tác | Mầm non, Tiểu học |
-| 16 | Ong non học việc | Tích lũy mật hoa, giải toán | Mầm non, Lớp 1 - 3 |
-| 17 | Pacman ăn điểm | Vượt chướng ngại vật | Tiểu học, THCS |
-| 18 | Quả táo độc của phù thủy | Truyện cổ tích, giải đố | Mầm non, Tiểu học |
-| 19 | Tảng băng trôi | Sinh tồn Bắc Cực, giải đố | Tiểu học, THCS |
-| 20 | Thử tài hiểu biết | Đố vui kiến thức tổng hợp | Lớp 4 - 9 |
-| 21 | Truy tìm mật mã | Giải mật thư, logic | THCS, THPT |
-| 22 | Ai là triệu phú | Gameshow trắc nghiệm 15 câu | Lớp 4 - 12 |
-| 23 | Trick or Treat | Chủ đề Halloween kỳ thú | Mọi cấp học |
-| 24 | Trò chơi ô chữ | Đoán từ khóa hàng ngang, hàng dọc | Tiểu học, THCS, THPT |
-| 25 | Vượt chướng ngại vật | Chinh phục đích đến | Mọi cấp học |
-
 - [Tải trọn bộ 35+ trò chơi PowerPoint nén (.ZIP) trên Google Drive](https://drive.google.com/file/d/1iyLnS2U-CtPnYvLYx9L_2KTi-mU2WL95/view?usp=sharing)
 
 ---
 
-## 4. Hướng dẫn cách chỉnh sửa câu hỏi trong trò chơi PowerPoint
+## 3. Hướng dẫn chỉnh sửa câu hỏi trong trò chơi PowerPoint
 
-Để sử dụng các file trò chơi này cho tiết dạy của mình, thầy cô chỉ cần thực hiện 3 bước đơn giản:
+Để dùng các file trò chơi giasu.ai.vn cho tiết dạy của mình, thầy cô chỉ cần thực hiện 3 bước:
 
-1. **Mở file PPTX trên máy tính:** Tải tệp về máy tính và mở bằng phần mềm Microsoft PowerPoint (khuyến nghị phiên bản 2016, 2019, 2021 hoặc Microsoft 365 để hiệu ứng chuyển động và âm thanh mượt mà nhất).
-2. **Nhập nội dung câu hỏi:** Nhấp đúp chuột vào các khung văn bản (Text Box) chứa câu hỏi và các đáp án A, B, C, D có sẵn để gõ lại nội dung câu hỏi bài học của mình.
-3. **Kiểm tra liên kết Trigger:** Nếu cần thay đổi vị trí đáp án đúng, thầy cô vào thẻ **Animations** $\rightarrow$ mở **Animation Pane** để kiểm tra và điều chỉnh các Trigger tương ứng với hiệu ứng đúng/sai.
+1. **Mở file PPTX:** Tải tệp về máy và mở bằng Microsoft PowerPoint (khuyến nghị bản 2016 trở lên hoặc Microsoft 365).
+2. **Nhập nội dung câu hỏi:** Ở **Chế độ thường**, bấm vào từng slide câu hỏi rồi gõ lại nội dung câu hỏi và 4 đáp án A, B, C, D vào các nút có sẵn.
+3. **Chọn đáp án đúng:** Mỗi nút đáp án nhảy tới một slide kết quả (đúng hoặc sai). Nếu đổi đáp án đúng, thầy cô chọn nút đáp án rồi vào **Chèn** → **Liên kết** → **Đặt trong tài liệu này** để trỏ nút đó tới slide "Chính xác!" và các nút còn lại tới slide "Chưa đúng rồi!".
+
+Khi trình chiếu, nhấn **F5**. Các trò chơi đếm giờ (Đồng hồ báo thức, Đồng hồ cát) tự chuyển slide mỗi giây.
