@@ -213,11 +213,31 @@
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #edf7f6;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.exam-groups button:hover {
+  border-color: var(--brand, #1e7b6d);
 }
 
 .exam-groups button.active {
   background: var(--ink);
   color: white;
+  border-color: var(--ink);
+}
+
+.reset-filter-btn {
+  background: none;
+  border: none;
+  color: var(--brand, #1e7b6d);
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  padding: 0 4px;
 }
 
 .exam-filters {

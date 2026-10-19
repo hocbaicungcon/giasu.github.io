@@ -399,3 +399,23 @@ test('các bài viết tiếng Trung có banner luyện viết dẫn đến tran
   const mathPage = read('bai-viet/toan-7-bai-13-hai-tam-giac-bang-nhau-truong-hop-canh-canh-canh.html');
   assert.doesNotMatch(mathPage, /class="writing-banner"/);
 });
+
+test('menu Đề thi Việt Nam và Đề thi quốc tế có liên kết riêng và trang de-kiem-tra có bộ chọn nhóm', () => {
+  const read = file => fs.readFileSync(new URL('../dist/' + file, import.meta.url), 'utf8');
+  const home = read('index.html');
+  assert.match(home, /href="\.\/de-kiem-tra\/\?group=viet-nam">Đề thi Việt Nam<\/a>/);
+  assert.match(home, /href="\.\/de-kiem-tra\/\?group=quoc-te">Đề thi quốc tế<\/a>/);
+
+  const catalog = read('de-kiem-tra/index.html');
+  assert.match(catalog, /class="exam-groups"/);
+  assert.match(catalog, /data-group=""[^>]*>Tất cả<\/button>/);
+  assert.match(catalog, /data-group="việt nam"[^>]*>Đề thi Việt Nam<\/button>/);
+  assert.match(catalog, /data-group="quốc tế"[^>]*>Đề thi quốc tế<\/button>/);
+
+  const dataMatch = catalog.match(/<script id="exam-catalog-data" type="application\/json">(.*?)<\/script>/);
+  assert.ok(dataMatch, 'exam-catalog-data exists');
+  const exams = JSON.parse(dataMatch[1]);
+  assert.ok(exams.some(e => e.exam_group === 'việt nam'), 'has viet nam exams');
+  assert.ok(exams.some(e => e.exam_group === 'quốc tế'), 'has quoc te exams');
+});
+
