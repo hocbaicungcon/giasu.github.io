@@ -104,10 +104,11 @@ export function pyramid(o = {}) {
   const perp = o.apex === 'A';   // SA vertical (SA ⟂ base), as in many exam figures
   if (base === 'tri') {
     const [S, A, B, C] = nm(o.names, ['S', 'A', 'B', 'C']);
-    const a = P(70, 280), b = P(310, 280), c = P(220, 220), s = perp ? P(70, 40) : P(180, 40);
+    // the back vertex C lies outside triangle S-A-B on screen, so exactly one edge (AC) is hidden
+    const a = P(70, 280), b = P(290, 280), c = P(370, 215), g = centre([a, b, c]), s = perp ? P(70, 40) : P(g[0], 40);
     cv.seg(a, b); cv.seg(b, c); cv.seg(a, c, { hidden: true }); cv.seg(s, a); cv.seg(s, b); cv.seg(s, c);
     if (perp) cv.rightAngle(a, s, b, 10);
-    if (o.height && !perp) { const h = [s[0], 262]; cv.seg(s, h, { dash: '5 4' }); cv.dot(h); cv.label('H', h, [0, 1]); cv.rightAngle(h, s, [h[0] + 30, h[1]], 8); }
+    if (o.height && !perp) { const h = [s[0], g[1]]; cv.seg(s, h, { dash: '5 4' }); cv.dot(h); cv.label('H', h, [0, 1]); cv.rightAngle(h, s, [h[0] + 30, h[1]], 8); }
     if (o.midpoints) { const used = [S, A, B, C], mn = pick(used, 'M', 'K', 'E'), nn = pick([...used, mn], 'N', 'I', 'F'); const m = mid(b, c), n = mid(s, a); cv.seg(n, m, { dash: '5 4' }); cv.dot(m); cv.dot(n); cv.label(mn, m, [0.8, 0.6]); cv.label(nn, n, [-1, 0]); }
     labelAll(cv, [S, A, B, C], [s, a, b, c], centre([a, b, c, s]));
     return frame(cv, W, H);
@@ -127,11 +128,11 @@ export function pyramid(o = {}) {
 
 export function tetrahedron(o = {}) {
   const [A, B, C, D] = nm(o.names, ['A', 'B', 'C', 'D']), W = 440, H = 340, cv = new Canvas();
-  const a = P(70, 280), b = P(310, 280), c = P(225, 215), d = P(185, 40);
+  const a = P(70, 280), b = P(290, 280), c = P(370, 215), d = P(200, 40);   // C outside triangle D-A-B on screen: only AC is hidden
   cv.seg(a, b); cv.seg(b, c); cv.seg(a, c, { hidden: true }); cv.seg(d, a); cv.seg(d, b); cv.seg(d, c);
   const used = [A, B, C, D], mn = pick(used, 'M', 'K', 'E'), nn = pick([...used, mn], 'N', 'I', 'F');
   if (o.medians) { const m = mid(b, c); cv.seg(a, m, { dash: '5 4' }); cv.seg(d, m, { dash: '5 4' }); cv.dot(m); cv.label(mn, m, [0.8, 0.6]); }
-  if (o.opposite) { const m = mid(a, d), n = mid(b, c); cv.seg(m, n, { dash: '5 4' }); cv.dot(m); cv.dot(n); cv.label(mn, m, [-1, 0]); cv.label(nn, n, [0.8, 0.6]); }
+  if (o.opposite) { const m = mid(a, d), n = mid(b, c); cv.seg(m, n, { dash: '5 4' }); cv.dot(m); cv.dot(n); cv.label(nn, m, [-1, 0]); if (!o.medians) cv.label(mn, n, [0.8, 0.6]); }   // M: midpoint of BC, N: midpoint of AD (with both options BC keeps one label)
   labelAll(cv, [D, A, B, C], [d, a, b, c], centre([a, b, c, d]));
   return frame(cv, W, H);
 }
@@ -141,9 +142,11 @@ export function prism(o = {}) {
   const ox = 70, oy = 300;
   const q = (x, y, z) => { const p = proj(x, y, z); return [ox + p[0], oy + p[1]]; };
   if (kind === 'triangle') {
-    const [A, B, C, A1, B1, C1] = nm(o.names, ['A', 'B', 'C', "A'", "B'", "C'"]);
+    const given = String(o.names || '').split(/[\s,;]+/).filter(Boolean);
+    // a list written for the box (8 names A,B,C,D,A',B',C',D') still labels the triangular prism correctly
+    const [A, B, C, A1, B1, C1] = nm(given.length > 6 ? [0, 1, 2, 4, 5, 6].map((i) => given[i]).join(',') : o.names, ['A', 'B', 'C', "A'", "B'", "C'"]);
     const a = q(0, 0, 0), b = q(220, 0, 0), c = q(0, 0, 160), a1 = q(0, 190, 0), b1 = q(220, 190, 0), c1 = q(0, 190, 160);
-    cv.seg(a, b); cv.seg(b, c); cv.seg(a, c, { hidden: true }); cv.seg(a1, b1); cv.seg(b1, c1); cv.seg(a1, c1); cv.seg(a, a1); cv.seg(b, b1); cv.seg(c, c1, { hidden: true });
+    cv.seg(a, b); cv.seg(b, c, { hidden: true }); cv.seg(a, c, { hidden: true }); cv.seg(a1, b1); cv.seg(b1, c1); cv.seg(a1, c1); cv.seg(a, a1); cv.seg(b, b1); cv.seg(c, c1, { hidden: true });   // C is behind the front face: CA, CB, CC' are all hidden
     labelAll(cv, [A, B, C, A1, B1, C1], [a, b, c, a1, b1, c1], centre([a, b, c, a1, b1, c1]));
     return frame(cv, W, H);
   }
@@ -225,7 +228,7 @@ export const GEOMETRY = [
   { id: 'quad', label: 'Tứ giác', make: quadrilateral, options: [['kind', 'Loại', [['rectangle', 'Hình chữ nhật'], ['square', 'Hình vuông'], ['parallelogram', 'Hình bình hành'], ['rhombus', 'Hình thoi'], ['trapezoid', 'Hình thang'], ['righttrapezoid', 'Hình thang vuông']]], ['diagonals', 'Hai đường chéo']], names: 'A,B,C,D' },
   { id: 'pyramid', label: 'Hình chóp (đáy tứ giác / tam giác)', make: pyramid, options: [['base', 'Đáy', [['quad', 'Tứ giác  S.ABCD'], ['tri', 'Tam giác  S.ABC']]], ['apex', 'Đỉnh S', [['center', 'Chóp đều (đường cao SO / SH)'], ['A', 'SA vuông góc với đáy']]], ['height', 'Đường cao SO (chóp đều)'], ['diagonals', 'Hai đường chéo đáy'], ['midpoints', 'Trung điểm M của BC, N của SA']], names: 'S,A,B,C,D' },
   { id: 'tetra', label: 'Tứ diện', make: tetrahedron, options: [['medians', 'Trung tuyến AM, DM (M trung điểm BC)'], ['opposite', 'Đoạn nối trung điểm hai cạnh đối AD, BC']], names: 'A,B,C,D' },
-  { id: 'prism', label: 'Lăng trụ / hình hộp / lập phương', make: prism, options: [['kind', 'Loại', [['triangle', 'Lăng trụ tam giác ABC.A\'B\'C\''], ['box', 'Hình hộp chữ nhật'], ['cube', 'Hình lập phương']]], ['diagonals', 'Đường chéo AC\'']], names: "A,B,C,D,A',B',C',D'" },
+  { id: 'prism', label: 'Lăng trụ / hình hộp / lập phương', make: prism, options: [['kind', 'Loại', [['triangle', 'Lăng trụ tam giác ABC.A\'B\'C\''], ['box', 'Hình hộp chữ nhật'], ['cube', 'Hình lập phương']]], ['diagonals', 'Đường chéo AC\'']], names: "A,B,C,A',B',C'" },
   { id: 'round', label: 'Hình nón / trụ / nón cụt / cầu', make: roundSolid, options: [['kind', 'Hình', [['cone', 'Hình nón'], ['cylinder', 'Hình trụ'], ['frustum', 'Hình nón cụt'], ['sphere', 'Hình cầu']]], ['showR', 'Ghi bán kính R'], ['showH', 'Ghi chiều cao h'], ['showL', 'Ghi đường sinh l (hình nón)']], names: 'S,O,A', hint: 'Hình nón: S,O,A · hình trụ: O,O\',A · nón cụt: O,O\' · hình cầu: O,A' },
   { id: 'axes', label: 'Hệ trục tọa độ', make: axes, options: [['kind', 'Hệ', [['oxy', 'Oxy'], ['oxyz', 'Oxyz']]]], names: '' },
 ];

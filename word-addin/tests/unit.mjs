@@ -121,6 +121,15 @@ test('MathType object: EMF picture when available, PNG otherwise', async () => {
   assert.ok(/imageTc\d+\.png/.test(bad));
   assert.throws(() => svgToEmf('<svg viewBox="0 0 10 10"><polygon points="0,0"/></svg>', charAdvance));   // unknown markup -> caller keeps PNG
 });
+test('Solids: hidden (dashed) edges are exactly the ones behind the front faces', async () => {
+  const g = await import('../src/figures/geometry.js');
+  const dashed = (r) => r.scene.items.filter((it) => it.t === 'line' && it.dash).length;
+  assert.equal(dashed(g.tetrahedron({})), 1);                              // only AC
+  assert.equal(dashed(g.pyramid({ base: 'tri', apex: 'center' })), 1);
+  assert.equal(dashed(g.pyramid({ base: 'tri', apex: 'A' })), 1);
+  assert.equal(dashed(g.prism({ kind: 'triangle' })), 3);                  // CA, CB, CC'
+  assert.equal(dashed(g.pyramid({ base: 'quad', apex: 'center' })), 3);    // DA, DC, SD
+});
 test('Worksheet: generated sheets become well-formed Word body with maths, answers and emoji', async () => {
   await import('../taskpane/vendor/worksheet.js');
   const W = globalThis.Worksheet;

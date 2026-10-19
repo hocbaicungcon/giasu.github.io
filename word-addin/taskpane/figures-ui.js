@@ -66,6 +66,7 @@ export function mountFigures(root, io) {
       : sw('go-' + key, label, /^show/.test(key)))).join('') + (g.names ? field('Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names)}" spellcheck="false" placeholder="${esc(g.names)}">`) + (g.hint ? `<div class="hint">${esc(g.hint)}</div>` : '<div class="hint">Đổi tên tùy ý, ví dụ M,N,P,Q; ô để trống dùng tên mặc định.</div>') : '');
     $('g-opts').querySelectorAll('input,select').forEach((el) => el.addEventListener('input', schedule));
     const kindSel = $('g-opts').querySelector('select[data-opt="kind"]');
+    if (g.id === 'prism' && kindSel && $('g-names')) kindSel.addEventListener('change', () => { $('g-names').value = kindSel.value === 'triangle' ? "A,B,C,A',B',C'" : "A,B,C,D,A',B',C',D'"; render(); });
     if (g.id === 'round' && kindSel && $('g-names')) kindSel.addEventListener('change', () => { $('g-names').value = { cone: 'S,O,A', cylinder: "O,O',A", frustum: "O,O'", sphere: 'O,A' }[kindSel.value]; render(); });
   }
 
