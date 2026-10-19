@@ -6,7 +6,7 @@ import { renderLatex } from '../src/mathrender.js';
 // [face (LaTeX drawn on the button), snippet ("@" = caret / selected text), title, extra search words]
 const G = (id, label, icon, items) => ({ id, label, icon, items });
 const GROUPS = [
-  G('struct', 'Cấu trúc', '\\sqrt{x}', [
+  G('struct', 'Đại số', '\\sqrt{x}', [
     ['\\tfrac{a}{b}', '\\frac{@}{}', 'Phân số', 'phan so frac'],
     ['\\sqrt{x}', '\\sqrt{@}', 'Căn bậc hai', 'can sqrt'],
     ['\\sqrt[n]{x}', '\\sqrt[@]{}', 'Căn bậc n (ô đầu: chỉ số n)', 'can bac n'],
@@ -23,10 +23,6 @@ const GROUPS = [
     ['\\binom{n}{k}', '\\binom{@}{}', 'Tổ hợp', 'to hop binom'],
     ['\\overbrace{x}^{n}', '\\overbrace{@}^{}', 'Ngoặc nhọn trên', ''],
     ['\\underbrace{x}_{n}', '\\underbrace{@}_{}', 'Ngoặc nhọn dưới', ''],
-    ['\\text{ab}', '\\text{@}', 'Chữ thường (văn bản)', 'van ban text'],
-    ['\\mathrm{d}', '\\mathrm{@}', 'Chữ đứng', 'chu dung'],
-    ['\\mathbf{v}', '\\mathbf{@}', 'Chữ đậm', 'chu dam'],
-    ['\\mathbb{R}', '\\mathbb{@}', 'Tập số (R, N, Z, Q, C)', 'tap so'],
   ]),
   G('calc', 'Giải tích', '\\int', [
     ['\\int', '\\int @ \\,\\mathrm{d}x', 'Tích phân bất định', 'tich phan'],
@@ -35,10 +31,10 @@ const GROUPS = [
     ['\\prod', '\\prod_{i=@}^{n}', 'Tích', 'tich pi'],
     ['\\lim_{x\\to a}', '\\lim_{x \\to @}', 'Giới hạn', 'gioi han'],
     ['\\lim_{x\\to\\infty}', '\\lim_{x \\to +\\infty} @', 'Giới hạn tại +∞', 'gioi han vo cuc'],
-    ["f'(x)", "f'(@)", 'Đạo hàm', 'dao ham'],
+    ["f'", "f'(@)", 'Đạo hàm', 'dao ham'],
     ['\\tfrac{d}{dx}', '\\frac{\\mathrm{d}}{\\mathrm{d}x} @', 'd/dx', 'dao ham'],
     ['\\left.f\\right|_a^b', '\\left. @ \\right|_{}^{}', 'Thế cận (F(x)|ₐᵇ)', 'the can'],
-    ['\\log_a b', '\\log_{@}', 'Logarit cơ số a', 'logarit'],
+    ['\\log_a', '\\log_{@}', 'Logarit cơ số a', 'logarit'],
     ['\\ln', '\\ln @', 'Logarit tự nhiên', 'ln'],
     ['\\lg', '\\lg @', 'Logarit thập phân', 'lg'],
     ['\\sin', '\\sin @', 'sin', ''], ['\\cos', '\\cos @', 'cos', ''], ['\\tan', '\\tan @', 'tan', ''], ['\\cot', '\\cot @', 'cot', ''],
@@ -47,17 +43,17 @@ const GROUPS = [
     ['\\to', '\\to ', 'Tiến tới', 'tien toi'],
     ['\\xrightarrow{n}', '\\xrightarrow{@}', 'Mũi tên có chữ', ''],
   ]),
-  G('system', 'Hệ & ma trận', '\\left\\{\\begin{array}{l}x\\\\y\\end{array}\\right.', [
-    ['\\begin{cases}a\\\\b\\end{cases}', '\\left\\{ \\begin{array}{l} @ \\\\ \\end{array} \\right.', 'Hệ phương trình (2 dòng)', 'he phuong trinh cases'],
-    ['\\left[\\begin{matrix}a\\\\b\\end{matrix}\\right.', '\\left[ \\begin{array}{l} @ \\\\ \\end{array} \\right.', 'Hoặc (ngoặc vuông, 2 dòng)', 'hoac'],
-    ['\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}', '\\left( \\begin{array}{cc} @ & \\\\ & \\end{array} \\right)', 'Ma trận 2×2', 'ma tran'],
-    ['\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}', '\\left[ \\begin{array}{cc} @ & \\\\ & \\end{array} \\right]', 'Ma trận vuông 2×2', ''],
-    ['\\begin{vmatrix}a&b\\\\c&d\\end{vmatrix}', '\\left| \\begin{array}{cc} @ & \\\\ & \\end{array} \\right|', 'Định thức 2×2', 'dinh thuc'],
-    ['\\begin{pmatrix}a&b&c\\\\d&e&f\\\\g&h&i\\end{pmatrix}', '\\left( \\begin{array}{ccc} @ & & \\\\ & & \\\\ & & \\end{array} \\right)', 'Ma trận 3×3', ''],
+  G('system', 'Hệ & ma trận', '\\{\\begin{smallmatrix}x\\\\y\\end{smallmatrix}', [
+    ['\\scriptstyle\\begin{cases}a\\\\b\\end{cases}', '\\left\\{ \\begin{array}{l} @ \\\\ \\end{array} \\right.', 'Hệ phương trình (2 dòng)', 'he phuong trinh cases'],
+    ['\\scriptstyle\\left[\\begin{matrix}a\\\\b\\end{matrix}\\right.', '\\left[ \\begin{array}{l} @ \\\\ \\end{array} \\right.', 'Hoặc (ngoặc vuông, 2 dòng)', 'hoac'],
+    ['\\scriptstyle\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}', '\\left( \\begin{array}{cc} @ & \\\\ & \\end{array} \\right)', 'Ma trận 2×2', 'ma tran'],
+    ['\\scriptstyle\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}', '\\left[ \\begin{array}{cc} @ & \\\\ & \\end{array} \\right]', 'Ma trận vuông 2×2', ''],
+    ['\\scriptstyle\\begin{vmatrix}a&b\\\\c&d\\end{vmatrix}', '\\left| \\begin{array}{cc} @ & \\\\ & \\end{array} \\right|', 'Định thức 2×2', 'dinh thuc'],
+    ['\\scriptscriptstyle\\begin{pmatrix}a&b&c\\\\d&e&f\\\\g&h&i\\end{pmatrix}', '\\left( \\begin{array}{ccc} @ & & \\\\ & & \\\\ & & \\end{array} \\right)', 'Ma trận 3×3', ''],
     ['a \\\\ b', ' \\\\ ', 'Xuống dòng (trong hệ)', 'xuong dong'],
     ['a & b', ' & ', 'Sang cột (trong ma trận)', ''],
   ]),
-  G('ops', 'Phép toán', '\\pm', [
+  G('ops', 'Phép toán & quan hệ', '\\pm', [
     ['\\pm', '\\pm ', 'Cộng trừ', 'cong tru'], ['\\mp', '\\mp ', 'Trừ cộng', ''], ['\\times', '\\times ', 'Nhân', 'nhan'], ['\\div', '\\div ', 'Chia', ''], ['\\cdot', '\\cdot ', 'Chấm nhân', ''], ['\\circ', '\\circ ', 'Hợp (∘)', ''],
     ['=', '=', 'Bằng', ''], ['\\neq', '\\neq ', 'Khác', 'khac'], ['\\approx', '\\approx ', 'Xấp xỉ', 'xap xi'], ['\\equiv', '\\equiv ', 'Đồng nhất / đồng dư', ''], ['\\sim', '\\sim ', 'Đồng dạng', 'dong dang'], ['\\cong', '\\cong ', 'Bằng nhau (≅)', ''],
     ['<', '<', 'Nhỏ hơn', ''], ['>', '>', 'Lớn hơn', ''], ['\\leq', '\\leq ', 'Nhỏ hơn hoặc bằng', ''], ['\\geq', '\\geq ', 'Lớn hơn hoặc bằng', ''], ['\\ll', '\\ll ', 'Rất nhỏ hơn', ''], ['\\gg', '\\gg ', 'Rất lớn hơn', ''],
@@ -72,17 +68,23 @@ const GROUPS = [
     ['\\therefore', '\\therefore ', 'Vậy', ''], ['\\because', '\\because ', 'Vì', ''],
   ]),
   G('geo', 'Hình học', '\\angle', [
-    ['\\vec{u}', '\\vec{@}', 'Vectơ (1 chữ)', 'vecto'], ['\\overrightarrow{AB}', '\\overrightarrow{@}', 'Vectơ AB', 'vecto'], ['\\left|\\overrightarrow{AB}\\right|', '\\left| \\overrightarrow{@} \\right|', 'Độ dài vectơ', ''],
-    ['\\overrightarrow{a}\\cdot\\overrightarrow{b}', '\\overrightarrow{@} \\cdot \\overrightarrow{}', 'Tích vô hướng', ''],
-    ['\\widehat{ABC}', '\\widehat{@}', 'Góc (dấu mũ)', 'goc'], ['\\angle', '\\angle ', 'Ký hiệu góc ∠', ''], ['{}^{\\circ}', '^{\\circ}', 'Độ (°)', 'do'],
+    ['\\vec{u}', '\\vec{@}', 'Vectơ (1 chữ)', 'vecto'], ['\\overrightarrow{AB}', '\\overrightarrow{@}', 'Vectơ AB', 'vecto'], ['|\\vec{AB}|', '\\left| \\overrightarrow{@} \\right|', 'Độ dài vectơ', ''],
+    ['\\vec{a}\\cdot\\vec{b}', '\\overrightarrow{@} \\cdot \\overrightarrow{}', 'Tích vô hướng', ''],
+    ['\\widehat{AB}', '\\widehat{@}', 'Góc (dấu mũ)', 'goc'], ['\\angle', '\\angle ', 'Ký hiệu góc ∠', ''], ['{}^{\\circ}', '^{\\circ}', 'Độ (°)', 'do'],
     ['\\overset{\\frown}{AB}', '\\overset{\\frown}{@}', 'Cung AB', 'cung'], ['\\triangle', '\\triangle ', 'Tam giác', 'tam giac'], ['\\square', '\\square ', 'Hình vuông', ''],
     ['\\perp', '\\perp ', 'Vuông góc', 'vuong goc'], ['\\parallel', '\\parallel ', 'Song song', 'song song'], ['\\nparallel', '\\nparallel ', 'Không song song', ''], ['\\sim', '\\sim ', 'Đồng dạng', ''], ['\\cong', '\\cong ', 'Bằng nhau (≅)', ''],
   ]),
   G('greek', 'Hy Lạp', '\\alpha', [...'alpha beta gamma delta epsilon varepsilon zeta eta theta iota kappa lambda mu nu xi pi rho sigma tau upsilon phi varphi chi psi omega'.split(' ').map((n) => [`\\${n}`, `\\${n} `, n, 'hy lap greek']),
     ...'Gamma Delta Theta Lambda Xi Pi Sigma Phi Psi Omega'.split(' ').map((n) => [`\\${n}`, `\\${n} `, n, 'hy lap greek hoa'])]),
-  G('space', 'Khoảng cách', '\\,', [
-    ['\\,', '\\,', 'Cách mỏng', 'cach'], ['\;', '\;', 'Cách vừa', ''], ['\\quad', '\\quad ', 'Cách rộng', ''], ['\\text{ }', '\\text{ }', 'Dấu cách (văn bản)', ''],
-    ['{,}', '{,}', 'Dấu phẩy thập phân (1{,}5)', 'thap phan'], [';', '; ', 'Chấm phẩy', ''],
+  G('space', 'Chữ & khoảng cách', '\\mathbf{A}', [
+    ['\\text{ab}', '\\text{@}', 'Chữ thường (văn bản)', 'van ban text'],
+    ['\\mathrm{d}', '\\mathrm{@}', 'Chữ đứng', 'chu dung'],
+    ['\\mathbf{v}', '\\mathbf{@}', 'Chữ đậm', 'chu dam'],
+    ['\\mathbb{R}', '\\mathbb{@}', 'Tập số (R, N, Z, Q, C)', 'tap so'],
+    ['\\mathcal{L}', '\\mathcal{@}', 'Chữ thư pháp', 'thu phap'],
+    ['\\mathsf{A}', '\\mathsf{@}', 'Chữ không chân', 'khong chan'],
+    ['a\\,b', '\\,', 'Cách mỏng', 'cach'], ['a\\;b', '\\;', 'Cách vừa', ''], ['a\\quad b', '\\quad ', 'Cách rộng', ''], ['a\\text{ }b', '\\text{ }', 'Dấu cách (văn bản)', ''],
+    ['1{,}5', '{,}', 'Dấu phẩy thập phân (1{,}5)', 'thap phan'], [';', '; ', 'Chấm phẩy', ''],
   ]),
 ];
 
@@ -91,15 +93,20 @@ const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const strip = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').toLowerCase();
 
 const faceCache = new Map();
-/** The picture on a button: our own math layout drawn as inline SVG (follows the text colour, no font tricks). */
+/** The picture on a button: the symbol drawn by KaTeX, exactly as in the live preview (our own layout only as a fallback). */
 export function face(latex) {
   if (faceCache.has(latex)) return faceCache.get(latex);
   let out;
   try {
-    const r = renderLatex(latex, { fontSize: 15, pad: 1 });
-    out = r.svg.replace(/ width="[^"]*pt" height="[^"]*pt"/, ` fill="currentColor" class="tb-svg" style="aspect-ratio:${(r.width / r.height).toFixed(3)}"`).replace(/#000/g, 'currentColor');
-  } catch { out = `<span class="tb-text">${esc(latex)}</span>`; }
-  faceCache.set(latex, out);
+    if (typeof katex === 'undefined') throw new Error('no katex');
+    out = `<span class="tb-math">${katex.renderToString(`\\displaystyle ${latex}`, { throwOnError: true, output: 'html', strict: 'ignore' })}</span>`;
+  } catch {
+    try {
+      const r = renderLatex(latex, { fontSize: 15, pad: 1 });
+      out = r.svg.replace(/ width="[^"]*pt" height="[^"]*pt"/, ` fill="currentColor" class="tb-svg" style="aspect-ratio:${(r.width / r.height).toFixed(3)}"`).replace(/#000/g, 'currentColor');
+    } catch { out = `<span class="tb-text">${esc(latex)}</span>`; }
+  }
+  if (typeof katex !== 'undefined') faceCache.set(latex, out);
   return out;
 }
 
@@ -138,7 +145,7 @@ export function mountEditorToolbar(root, field) {
     <div class="tb-tip">Bôi đen chữ trong ô LaTeX rồi bấm nút để bao chữ đó vào (ví dụ bôi <code>x+1</code> rồi bấm √). Tab nhảy giữa các ô trống.</div>`;
 
   const grid = root.querySelector('#tb-grid');
-  const btn = (it) => `<button type="button" class="tb-btn" data-s="${esc(it[1])}" title="${esc(it[2])}  —  ${esc(it[1].replace('@', ''))}">${face(it[0])}</button>`;
+  const btn = (it) => `<button type="button" class="tb-btn${/begin\{[pbv]?matrix\}/.test(it[0]) ? ' wide' : ''}" data-s="${esc(it[1])}" title="${esc(it[2])}  —  ${esc(it[1].replace('@', ''))}">${face(it[0])}</button>`;
   const renderGrid = (items) => { grid.innerHTML = items.length ? items.map(btn).join('') : '<div class="tb-empty">Không có ký hiệu phù hợp.</div>'; };
   const renderRecent = () => {
     const items = recent.map((k) => byKey.get(k)).filter(Boolean).slice(0, 10);

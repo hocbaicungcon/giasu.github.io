@@ -579,3 +579,16 @@ details.mt-details > summary { cursor: pointer; font-size: 12px; font-weight: 60
 .fig-kind-row:has(#fig-sub:empty) { grid-template-columns: 1fr; }
 .fig-kind-row select { text-overflow: ellipsis; }
 .fig-opts .mt-settings { display: block; }
+
+/* Symbol palette: group names always visible (wrapped chips), buttons drawn by KaTeX */
+.editor-toolbar .tb-tabs { flex-wrap: wrap; overflow: visible; gap: 4px; padding: 6px; border-bottom: 1px solid var(--line); }
+.editor-toolbar .tb-tab { border: 1px solid var(--line); border-radius: 14px; padding: 3px 9px; font-size: 12px; background: var(--bg); }
+.editor-toolbar .tb-tab.active { background: color-mix(in srgb, var(--accent) 14%, transparent); border-color: var(--accent); }
+.editor-toolbar .tb-tab .tb-tab-label { display: inline !important; }
+.editor-toolbar .tb-tab-icon { height: auto; }
+.editor-toolbar .tb-tab-icon .tb-math .katex { font-size: 0.95em; }
+.tb-math { display: inline-flex; align-items: center; line-height: 1; max-width: 100%; overflow: visible; }
+.tb-btn .tb-math .katex { font-size: 1.02em; }
+.tb-btn .tb-math .katex-html { white-space: nowrap; }
+.tb-btn { color: var(--fg); }
+.tb-btn.wide { grid-column: span 2; }
