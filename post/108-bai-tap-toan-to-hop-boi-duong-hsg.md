@@ -53,7 +53,7 @@ grade: 9
 - **Định lý:** Ký hiệu số các tổ hợp lặp bậc $k$ của $n$ phần tử là $D_n^k$, khi đó:
   $$D_n^k = \frac{(n + k - 1)!}{k!(n - 1)!} = C_{n + k - 1}^k$$
 
-### Các nguyên lý cơ bản
+### 7. Các nguyên lý cơ bản
 Cho $X$ là một tập hữu hạn. $A, B$ là các tập con của $X$.
 - **Nguyên lý bù trừ:** $|X \setminus A| = |X| - |A|$
 - **Nguyên lý cộng:** Nếu $A$ và $B$ là hai tập không giao nhau ($A \cap B = \emptyset$) thì:
@@ -106,11 +106,150 @@ $$\dots < \dots < \dots < \dots > \dots > \dots > \dots \ ?$$
 
 **Bài 17.** Có bao nhiêu cách đi từ $A$ đến $B$ trong các hình sau, biết rằng chỉ có thể đi từ trái sang phải và đi lên:
 
-![Lưới đường đi từ A đến B](/assets/images/108-to-hop/bai-17-luoi-duong-di.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="680" height="240" viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; font-family: system-ui, -apple-system, sans-serif;">
+    <rect width="680" height="240" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Hình a -->
+    <g transform="translate(35, 25)">
+      <rect x="0" y="96" width="32" height="64" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+      <line x1="0" y1="128" x2="32" y2="128" stroke="#1e293b" stroke-width="1.8"/>
+      
+      <rect x="32" y="32" width="32" height="128" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+      <line x1="32" y1="64" x2="64" y2="64" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="32" y1="96" x2="64" y2="96" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="32" y1="128" x2="64" y2="128" stroke="#1e293b" stroke-width="1.8"/>
+      
+      <rect x="64" y="0" width="32" height="128" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+      <line x1="64" y1="32" x2="96" y2="32" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="64" y1="64" x2="96" y2="64" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="64" y1="96" x2="96" y2="96" stroke="#1e293b" stroke-width="1.8"/>
+      
+      <rect x="96" y="0" width="32" height="96" fill="#ffffff" stroke="#1e293b" stroke-width="2"/>
+      <line x1="96" y1="32" x2="128" y2="32" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="96" y1="64" x2="128" y2="64" stroke="#1e293b" stroke-width="1.8"/>
+
+      <circle cx="0" cy="160" r="4.5" fill="#ef4444"/>
+      <text x="0" y="178" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+      
+      <circle cx="128" cy="0" r="4.5" fill="#ef4444"/>
+      <text x="128" y="-8" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+
+      <text x="64" y="195" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Hình a</text>
+    </g>
+
+    <!-- Hình b -->
+    <g transform="translate(245, 25)">
+      <line x1="0" y1="160" x2="150" y2="160" stroke="#1e293b" stroke-width="2"/>
+      
+      <rect x="30" y="130" width="30" height="30" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+      
+      <rect x="60" y="100" width="30" height="60" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="60" y1="130" x2="90" y2="130" stroke="#1e293b" stroke-width="1.8"/>
+      
+      <rect x="90" y="70" width="30" height="90" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="90" y1="100" x2="120" y2="100" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="90" y1="130" x2="120" y2="130" stroke="#1e293b" stroke-width="1.8"/>
+      
+      <rect x="120" y="40" width="30" height="120" fill="#ffffff" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="120" y1="70" x2="150" y2="70" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="120" y1="100" x2="150" y2="100" stroke="#1e293b" stroke-width="1.8"/>
+      <line x1="120" y1="130" x2="150" y2="130" stroke="#1e293b" stroke-width="1.8"/>
+
+      <line x1="150" y1="40" x2="150" y2="10" stroke="#1e293b" stroke-width="2"/>
+
+      <circle cx="0" cy="160" r="4.5" fill="#ef4444"/>
+      <text x="0" y="178" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+      
+      <circle cx="150" cy="10" r="4.5" fill="#ef4444"/>
+      <text x="150" y="-1" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+
+      <text x="75" y="195" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Hình b</text>
+    </g>
+
+    <!-- Hình c -->
+    <g transform="translate(485, 33)">
+      <g stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3">
+        <line x1="0" y1="0" x2="144" y2="0"/>
+        <line x1="0" y1="36" x2="144" y2="36"/>
+        <line x1="0" y1="72" x2="144" y2="72"/>
+        <line x1="0" y1="108" x2="144" y2="108"/>
+        <line x1="0" y1="144" x2="144" y2="144"/>
+        <line x1="0" y1="0" x2="0" y2="144"/>
+        <line x1="36" y1="0" x2="36" y2="144"/>
+        <line x1="72" y1="0" x2="72" y2="144"/>
+        <line x1="108" y1="0" x2="108" y2="144"/>
+        <line x1="144" y1="0" x2="144" y2="144"/>
+      </g>
+      
+      <g stroke="#1e293b" stroke-width="2.5" stroke-linecap="round">
+        <line x1="0" y1="0" x2="0" y2="144"/>
+        <line x1="36" y1="0" x2="36" y2="72"/>
+        <line x1="72" y1="0" x2="72" y2="144"/>
+        <line x1="108" y1="72" x2="108" y2="144"/>
+        <line x1="144" y1="0" x2="144" y2="144"/>
+
+        <line x1="0" y1="0" x2="144" y2="0"/>
+        <line x1="72" y1="36" x2="144" y2="36"/>
+        <line x1="0" y1="72" x2="144" y2="72"/>
+        <line x1="0" y1="108" x2="72" y2="108"/>
+        <line x1="0" y1="144" x2="144" y2="144"/>
+      </g>
+
+      <circle cx="0" cy="144" r="4.5" fill="#ef4444"/>
+      <text x="0" y="162" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">A</text>
+      
+      <circle cx="144" cy="0" r="4.5" fill="#ef4444"/>
+      <text x="144" y="-8" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">B</text>
+
+      <text x="72" y="187" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Hình c</text>
+    </g>
+  </svg>
+</div>
 
 **Bài 18.** Có bao nhiêu vị trí tương đối có thể của 5 bong bóng xà phòng, biết rằng một bong bóng có thể chứa toàn phần 1 hay nhiều bong bóng khác. Các bong bóng không thể phân biệt nhau, kích thước co dãn thay đổi tùy thích, chỉ chứa hay không chứa nhau, không cắt nhau (một ví dụ cho trường hợp 3 bong bóng thì có 4 trường hợp):
 
-![Các vị trí tương đối của bong bóng xà phòng](/assets/images/108-to-hop/bai-18-bong-bong.png)
+<div style="text-align: center; margin: 20px 0;">
+  <svg width="680" height="190" viewBox="0 0 680 190" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; font-family: system-ui, -apple-system, sans-serif;">
+    <rect width="680" height="190" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    
+    <!-- Trường hợp 1: 3 bóng rời nhau -->
+    <g transform="translate(20, 15)">
+      <rect width="140" height="140" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <ellipse cx="45" cy="45" rx="18" ry="26" fill="rgba(56, 189, 248, 0.2)" stroke="#0284c7" stroke-width="1.8"/>
+      <ellipse cx="48" cy="105" rx="24" ry="16" fill="rgba(56, 189, 248, 0.2)" stroke="#0284c7" stroke-width="1.8"/>
+      <circle cx="102" cy="72" r="24" fill="rgba(56, 189, 248, 0.2)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="70" y="152" font-size="11.5" font-weight="600" fill="#64748b" text-anchor="middle">3 bóng rời nhau</text>
+    </g>
+
+    <!-- Trường hợp 2: 1 chứa 1, 1 bóng rời -->
+    <g transform="translate(180, 15)">
+      <rect width="140" height="140" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <ellipse cx="50" cy="65" rx="36" ry="44" fill="rgba(56, 189, 248, 0.15)" stroke="#0284c7" stroke-width="1.8"/>
+      <ellipse cx="52" cy="72" rx="18" ry="22" fill="rgba(56, 189, 248, 0.25)" stroke="#0284c7" stroke-width="1.8"/>
+      <circle cx="108" cy="100" r="22" fill="rgba(56, 189, 248, 0.2)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="70" y="152" font-size="11.5" font-weight="600" fill="#64748b" text-anchor="middle">1 chứa 1, 1 bóng rời</text>
+    </g>
+
+    <!-- Trường hợp 3: 1 bóng chứa 2 bóng -->
+    <g transform="translate(340, 15)">
+      <rect width="140" height="140" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <ellipse cx="70" cy="70" rx="55" ry="50" fill="rgba(56, 189, 248, 0.12)" stroke="#0284c7" stroke-width="1.8"/>
+      <circle cx="86" cy="52" r="18" fill="rgba(56, 189, 248, 0.25)" stroke="#0284c7" stroke-width="1.8"/>
+      <ellipse cx="50" cy="90" rx="22" ry="16" fill="rgba(56, 189, 248, 0.25)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="70" y="152" font-size="11.5" font-weight="600" fill="#64748b" text-anchor="middle">1 bóng chứa 2 bóng</text>
+    </g>
+
+    <!-- Trường hợp 4: 3 bóng lồng nhau -->
+    <g transform="translate(500, 15)">
+      <rect width="140" height="140" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+      <ellipse cx="70" cy="70" rx="56" ry="50" fill="rgba(56, 189, 248, 0.1)" stroke="#0284c7" stroke-width="1.8"/>
+      <ellipse cx="72" cy="73" rx="38" ry="32" fill="rgba(56, 189, 248, 0.2)" stroke="#0284c7" stroke-width="1.8"/>
+      <circle cx="76" cy="75" r="18" fill="rgba(56, 189, 248, 0.3)" stroke="#0284c7" stroke-width="1.8"/>
+      <text x="70" y="152" font-size="11.5" font-weight="600" fill="#64748b" text-anchor="middle">3 bóng lồng nhau</text>
+    </g>
+  </svg>
+</div>
 
 **Bài 19.** Ta xuất phát từ điểm $(1, 4)$ trên mặt phẳng tọa độ. Mỗi bước phải tăng một số nào đó thêm ít nhất 1 đơn vị. Sau một số bước thì ta đến điểm $(5, 6)$. Có bao nhiêu cách có thể?
 
@@ -374,7 +513,147 @@ Hãy giải bài toán trong các trường hợp:
 **Bài 108.** Cánh Cam làm toán mãi, nên muốn đi dạo quanh biệt thự thủy tinh của mình. Lối đi đều là các đoạn thẳng nối các chốt. Trước khi đi cánh cam muốn vẽ một sơ đồ đi dạo sao cho mỗi chốt chỉ phải đi qua một lần.
 - Liệu cánh cam có làm được không? Hãy giúp cánh cam!
 
-![Biệt thự thủy tinh của cánh cam](/assets/images/108-to-hop/bai-108-biet-thu-thuy-tinh.png)
+<div style="text-align: center; margin: 24px 0;">
+  <svg width="450" height="350" viewBox="0 0 450 350" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; font-family: system-ui, -apple-system, sans-serif;">
+    <defs>
+      <!-- Gradient bóng bẩy cho chốt -->
+      <radialGradient id="nodeGlow" cx="35%" cy="35%" r="65%">
+        <stop offset="0%" stop-color="#38bdf8"/>
+        <stop offset="100%" stop-color="#0284c7"/>
+      </radialGradient>
+      <radialGradient id="bugGlow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <rect width="450" height="350" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+
+    <!-- CÁC CẠNH KHỐI LẬP PHƯƠNG (3 LỚP Z = 2, 1, 0) -->
+
+    <!-- 1. Các cạnh lớp sau z = 2 và đường nối z=1->2 -->
+    <!-- Đường xiên (trục Z) từ z=1 sang z=2 -->
+    <g stroke="#93c5fd" stroke-width="1.8" stroke-dasharray="4,3">
+      <!-- (x, y) = (0,0), (1,0), (2,0) -->
+      <line x1="135" y1="245" x2="190" y2="180"/>
+      <line x1="225" y1="245" x2="280" y2="180"/>
+      <line x1="315" y1="245" x2="370" y2="180"/>
+      <!-- (x, y) = (0,1), (1,1), (2,1) -->
+      <line x1="135" y1="155" x2="190" y2="90"/>
+      <line x1="225" y1="155" x2="280" y2="90"/>
+      <line x1="315" y1="155" x2="370" y2="90"/>
+      <!-- (x, y) = (0,2), (1,2), (2,2) -->
+      <line x1="135" y1="65" x2="190" y2="0"/>
+      <line x1="225" y1="65" x2="280" y2="0"/>
+      <line x1="315" y1="65" x2="370" y2="0"/>
+    </g>
+
+    <!-- Khung mặt sau (z=2) -->
+    <g stroke="#0284c7" stroke-width="1.8" opacity="0.85">
+      <!-- Ngang -->
+      <line x1="190" y1="180" x2="370" y2="180"/>
+      <line x1="190" y1="90" x2="370" y2="90"/>
+      <line x1="190" y1="0" x2="370" y2="0"/>
+      <!-- Dọc -->
+      <line x1="190" y1="180" x2="190" y2="0"/>
+      <line x1="280" y1="180" x2="280" y2="0"/>
+      <line x1="370" y1="180" x2="370" y2="0"/>
+    </g>
+
+    <!-- 2. Lớp giữa (z=1) và các đường nối z=0->1 -->
+    <g stroke="#f59e0b" stroke-width="1.8" opacity="0.75">
+      <!-- Đường xiên từ z=0 sang z=1 -->
+      <line x1="80" y1="310" x2="135" y2="245"/>
+      <line x1="170" y1="310" x2="225" y2="245"/>
+      <line x1="260" y1="310" x2="315" y2="245"/>
+
+      <line x1="80" y1="220" x2="135" y2="155"/>
+      <line x1="170" y1="220" x2="225" y2="155" stroke="#ef4444" stroke-width="2.2"/>
+      <line x1="260" y1="220" x2="315" y2="155"/>
+
+      <line x1="80" y1="130" x2="135" y2="65"/>
+      <line x1="170" y1="130" x2="225" y2="65"/>
+      <line x1="260" y1="130" x2="315" y2="65"/>
+
+      <!-- Khung lớp giữa z=1 -->
+      <line x1="135" y1="245" x2="315" y2="245" stroke="#a855f7" stroke-width="1.8"/>
+      <line x1="135" y1="155" x2="315" y2="155" stroke="#ef4444" stroke-width="2.2"/>
+      <line x1="135" y1="65" x2="315" y2="65" stroke="#a855f7" stroke-width="1.8"/>
+
+      <line x1="135" y1="245" x2="135" y2="65" stroke="#a855f7" stroke-width="1.8"/>
+      <line x1="225" y1="245" x2="225" y2="65" stroke="#ef4444" stroke-width="2.2"/>
+      <line x1="315" y1="245" x2="315" y2="65" stroke="#a855f7" stroke-width="1.8"/>
+    </g>
+
+    <!-- 3. Khung mặt trước (z=0) -->
+    <g stroke="#10b981" stroke-width="2.2">
+      <!-- Ngang -->
+      <line x1="80" y1="310" x2="260" y2="310"/>
+      <line x1="80" y1="220" x2="260" y2="220"/>
+      <line x1="80" y1="130" x2="260" y2="130"/>
+      <!-- Dọc -->
+      <line x1="80" y1="310" x2="80" y2="130"/>
+      <line x1="170" y1="310" x2="170" y2="130"/>
+      <line x1="260" y1="310" x2="260" y2="130"/>
+    </g>
+
+    <!-- CÁC CHỐT (NODES) -->
+    <!-- Vẽ các đỉnh không phải tâm trước -->
+    <!-- z = 2 (9 chốt) -->
+    <g fill="url(#nodeGlow)" stroke="#0f172a" stroke-width="1">
+      <circle cx="190" cy="180" r="3.5"/><circle cx="280" cy="180" r="3.5"/><circle cx="370" cy="180" r="3.5"/>
+      <circle cx="190" cy="90" r="3.5"/><circle cx="280" cy="90" r="3.5"/><circle cx="370" cy="90" r="3.5"/>
+      <circle cx="190" cy="0" r="3.5"/><circle cx="280" cy="0" r="3.5"/><circle cx="370" cy="0" r="3.5"/>
+    </g>
+
+    <!-- z = 1 (8 chốt xung quanh tâm) -->
+    <g fill="#a855f7" stroke="#0f172a" stroke-width="1.2">
+      <circle cx="135" cy="245" r="4"/><circle cx="225" cy="245" r="4"/><circle cx="315" cy="245" r="4"/>
+      <circle cx="135" cy="155" r="4"/><circle cx="315" cy="155" r="4"/>
+      <circle cx="135" cy="65" r="4"/><circle cx="225" cy="65" r="4"/><circle cx="315" cy="65" r="4"/>
+    </g>
+
+    <!-- z = 0 (9 chốt mặt trước) -->
+    <g fill="#10b981" stroke="#0f172a" stroke-width="1.5">
+      <circle cx="80" cy="310" r="4.5"/><circle cx="170" cy="310" r="4.5"/><circle cx="260" cy="310" r="4.5"/>
+      <circle cx="80" cy="220" r="4.5"/><circle cx="170" cy="220" r="4.5"/><circle cx="260" cy="220" r="4.5"/>
+      <circle cx="80" cy="130" r="4.5"/><circle cx="170" cy="130" r="4.5"/><circle cx="260" cy="130" r="4.5"/>
+    </g>
+
+    <!-- TÂM BIỆT THỰ: CHÚ BỌ CÁNH CAM TẠI (225, 155) -->
+    <circle cx="225" cy="155" r="28" fill="url(#bugGlow)"/>
+    
+    <g transform="translate(225, 155)">
+      <!-- Chân cánh cam (6 chân) -->
+      <path d="M-8,-6 Q-18,-12 -16,-2 M-10,0 Q-20,2 -18,10 M-8,6 Q-18,14 -14,20" stroke="#0f172a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M8,-6 Q18,-12 16,-2 M10,0 Q20,2 18,10 M8,6 Q18,14 14,20" stroke="#0f172a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+      <!-- Đầu và râu -->
+      <ellipse cx="0" cy="-14" rx="7" ry="5.5" fill="#0f172a"/>
+      <!-- Mắt trắng -->
+      <circle cx="-3" cy="-15" r="1.2" fill="#ffffff"/>
+      <circle cx="3" cy="-15" r="1.2" fill="#ffffff"/>
+      <!-- Râu -->
+      <path d="M-3,-18 Q-7,-26 -12,-24" stroke="#0f172a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M3,-18 Q7,-26 12,-24" stroke="#0f172a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+      <!-- Thân bọ (cánh đỏ) -->
+      <ellipse cx="0" cy="2" rx="13" ry="15" fill="#ef4444" stroke="#0f172a" stroke-width="1.8"/>
+      <!-- Đường khe cánh -->
+      <line x1="0" y1="-10" x2="0" y2="17" stroke="#0f172a" stroke-width="1.5"/>
+
+      <!-- Các chấm đen trên cánh -->
+      <circle cx="-5" cy="-3" r="2.2" fill="#0f172a"/>
+      <circle cx="5" cy="-3" r="2.2" fill="#0f172a"/>
+      <circle cx="-7" cy="4" r="2.2" fill="#0f172a"/>
+      <circle cx="7" cy="4" r="2.2" fill="#0f172a"/>
+      <circle cx="-4" cy="11" r="1.8" fill="#0f172a"/>
+      <circle cx="4" cy="11" r="1.8" fill="#0f172a"/>
+    </g>
+
+    <text x="225" y="338" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">Biệt thự thủy tinh 3×3×3 (27 chốt) — Cánh Cam ở chốt trung tâm</text>
+  </svg>
+</div>
 
 ---
 
