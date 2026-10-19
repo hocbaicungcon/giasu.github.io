@@ -1,4 +1,4 @@
-import { mountMtSettings, mtOptions, mtConvertOptions } from './mt-settings.js';
+import { mountMtSettings, mtOptions, mtConvertOptions, classicLayout } from './mt-settings.js';
 import * as io from '../src/word-io.js';
 import { attachLatexAutocomplete } from './latex-autocomplete.js';
 import { mountEditorToolbar } from './editor-toolbar.js';
@@ -112,7 +112,8 @@ $('eq-table').addEventListener('click', (ev) => {
 const writeMode = () => ($('opt-mode').checked ? 'paragraph' : 'content');
 
 mountMtSettings($('mt-settings-convert'));
-mountMtSettings($('mt-settings-editor'));
+mountMtSettings($('mt-settings-editor'), { onChange: () => renderEditorPreview() });
+document.querySelectorAll('input[name=editor-format]').forEach((r) => r.addEventListener('change', () => renderEditorPreview()));
 
 async function paragraphsToProcess(scope, onProgress, { convertMathType, convertLatex } = {}) {
   if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress) };
@@ -203,7 +204,9 @@ function renderEditorPreview() {
   }
   if (typeof katex !== 'undefined' && katex.render) {
     try {
-      katex.render(tex, previewEl, {
+      const asMt = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype';
+      const classic = asMt && classicLayout() && !($('editor-display')?.checked);   // the picture of a MathType object follows the chosen layout
+      katex.render(classic && !/^\s*\\displaystyle/.test(tex) ? `\\displaystyle ${tex}` : tex, previewEl, {
         displayMode: $('editor-display')?.checked ?? false,
         throwOnError: false,
         output: 'htmlAndMathml'

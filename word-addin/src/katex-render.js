@@ -74,14 +74,14 @@ function clipRect(poly, r) {   // Sutherland-Hodgman against the axis-aligned re
 }
 
 /** KaTeX layout -> {groups, width, height, baseline}. `size`: the font size in points. Throws when KaTeX is missing or rejects the LaTeX. */
-export async function katexOutlines(latex, size = 12) {
+export async function katexOutlines(latex, size = 12, { display = false } = {}) {
   const katex = globalThis.katex;
   if (!katex || typeof document === 'undefined') throw new Error('KaTeX is not available');
   const host = document.createElement('div');
   host.style.cssText = `position:absolute;left:-20000px;top:0;font-size:${size}px;line-height:normal;white-space:nowrap;`;
   document.body.appendChild(host);
   try {
-    katex.render(latex, host, { displayMode: false, throwOnError: true, output: 'html', strict: 'ignore' });
+    katex.render(display && !/^\s*\\displaystyle/.test(latex) ? `\\displaystyle ${latex}` : latex, host, { displayMode: false, throwOnError: true, output: 'html', strict: 'ignore' });
     const root = host.querySelector('.katex');
     root.style.fontSize = '1em';
     host.getBoundingClientRect();

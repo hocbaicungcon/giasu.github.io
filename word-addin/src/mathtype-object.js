@@ -11,12 +11,12 @@ const b64 = (bytes) => { let s = ''; for (let i = 0; i < bytes.length; i += 0x80
 /** One MathType object: {runXml, parts: [{name, type, data}], rels: [{id, type, target}]}. render(latex) -> {png, width, height, baseline} (points). */
 let counter = Math.floor(Date.now() / 1000) % 100000;   // unique names across calls (and across sessions)
 
-export async function mathTypeObject(latex, { render, style = 'times', inline = true, font = null, size = 12, vector = true }) {
+export async function mathTypeObject(latex, { render, style = 'times', inline = true, font = null, size = 12, vector = true, display = false }) {
   const fontKey = font || style;
   const pt = Number(size) > 0 ? Number(size) : 12;
   const stream = latexToEquationStream(latex, { style, inline, font: fontKey, size: pt });
   const ole = buildOle(stream);
-  const pic = await render(latex, { size: pt, family: (MT_FONTS[fontKey] || MT_FONTS.times).family, vector });
+  const pic = await render(latex, { size: pt, family: (MT_FONTS[fontKey] || MT_FONTS.times).family, vector, display });
   const useEmf = vector && pic.emf instanceof Uint8Array && pic.emf.length > 100;   // vector picture when it could be written, else the PNG
   const img = useEmf ? { ext: 'emf', type: 'image/x-emf', data: pic.emf } : { ext: 'png', type: 'image/png', data: pic.png };
   const n = ++counter;
@@ -81,7 +81,7 @@ export function detectFontPt(doc, span, stylesXml = '', fallback = 12) {
  * Replace the Word (OMML) equations of a package by MathType objects. render(latex) -> picture description.
  * Returns {pkg, converted, kept: [{reason, latex}], changed}.
  */
-export async function convertNativeToMathType(pkg, { render, style = 'times', font = null, size = 'auto', defaultSize = 12, vector = true } = {}) {
+export async function convertNativeToMathType(pkg, { render, style = 'times', font = null, size = 'auto', defaultSize = 12, vector = true, display = false } = {}) {
   const scan = scanPackage(pkg);
   const styles = splitParts(pkg).get('/word/styles.xml')?.body || '';
   let doc = scan.doc;
@@ -93,7 +93,7 @@ export async function convertNativeToMathType(pkg, { render, style = 'times', fo
     try {
       let [start, end] = eq.span;
       const pt = size === 'auto' ? detectFontPt(doc, eq.span, styles, defaultSize) : Number(size);
-      const obj = await mathTypeObject(eq.latex, { render, style, font, size: pt, vector });
+      const obj = await mathTypeObject(eq.latex, { render, style, font, size: pt, vector, display });
       const before = doc.slice(0, start), after = doc.slice(end);
       const para = /<m:oMathPara>\s*$/.exec(before), paraEnd = /^\s*<\/m:oMathPara>/.exec(after);
       if (para && paraEnd) { start -= para[0].length; end += paraEnd[0].length; }   // a display equation becomes an inline object
@@ -111,19 +111,19 @@ export async function convertNativeToMathType(pkg, { render, style = 'times', fo
 }
 
 /** A package holding just one paragraph with one MathType object, for selection.insertOoxml (the equation editor). */
-export async function makeMathTypePackage(latex, { render, style = 'times', inline = true, font = null, size = 12, vector = true } = {}) {
-  const obj = await mathTypeObject(latex, { render, style, inline, font, size, vector });
+export async function makeMathTypePackage(latex, { render, style = 'times', inline = true, font = null, size = 12, vector = true, display = false } = {}) {
+  const obj = await mathTypeObject(latex, { render, style, inline, font, size, vector, display });
   const base = `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document xmlns:w="${NS.w}"><w:body><w:p>${obj.runXml}</w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>`;
   const doc = /<w:document[\s\S]*<\/w:document>/.exec(base)[0];
   return attachObjects(base, doc, [obj]);
 }
 
 /** Browser: draw a LaTeX equation as the picture Word shows for a MathType object. */
-export async function browserRender(latex, { size = 12, family = 'times', vector = true } = {}) {
+export async function browserRender(latex, { size = 12, family = 'times', vector = true, display = false } = {}) {
   // the same layout as the live preview (KaTeX), as outlines: sharp EMF, or PNG if the vector picture cannot be written
   try {
     const { katexOutlines, outlinesToPng } = await import('./katex-render.js');
-    const r = await katexOutlines(latex, size);
+    const r = await katexOutlines(latex, size, { display });
     let emf = null;
     if (vector) { try { const { polygonsToEmf } = await import('./emf.js'); emf = polygonsToEmf(r.groups, r.width, r.height); } catch { emf = null; } }
     return { png: emf ? null : outlinesToPng(r, 8), emf, width: r.width, height: r.height, baseline: r.baseline };
