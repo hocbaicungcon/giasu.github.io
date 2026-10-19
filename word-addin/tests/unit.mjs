@@ -121,6 +121,19 @@ test('MathType object: EMF picture when available, PNG otherwise', async () => {
   assert.ok(/imageTc\d+\.png/.test(bad));
   assert.throws(() => svgToEmf('<svg viewBox="0 0 10 10"><polygon points="0,0"/></svg>', charAdvance));   // unknown markup -> caller keeps PNG
 });
+test('exam: question labels "Câu N." / "Bài N." / "bài N:" are recognised and the word is kept or forced', async () => {
+  const { parseBody, renumberQuestionInParagraph, paragraphText, analyze } = await import('../src/exam.js');
+  const { bodyPackage } = await import('../src/worksheet-docx.js');
+  const p = (t) => `<w:p><w:r><w:t xml:space="preserve">${t}</w:t></w:r></w:p>`;
+  const opts = ['A. 1', 'B. 2', 'C. 3', 'D. 4'].map(p).join('');
+  const model = parseBody(bodyPackage(p('Bài 1. Tính 1+1') + opts + p('bài 2: Tính 2+2') + opts + p('Câu 3. Tính 3+3') + opts));
+  assert.equal(analyze(model).parts.flatMap((x) => x.questions).length, 3);
+  const b = model.blocks.filter((x) => /Tính/.test(paragraphText(x)));
+  renumberQuestionInParagraph(b[0], 9); renumberQuestionInParagraph(b[1], 8); renumberQuestionInParagraph(b[2], 7);
+  assert.deepEqual(b.map(paragraphText).map((t) => t.slice(0, 7)), ['Bài 9. ', 'bài 8: ', 'Câu 7. ']);
+  renumberQuestionInParagraph(b[0], 1, { word: 'Câu' }); renumberQuestionInParagraph(b[2], 2, { word: 'Bài' });
+  assert.ok(/^Câu 1\./.test(paragraphText(b[0])) && /^Bài 2\./.test(paragraphText(b[2])));
+});
 test('Solids: hidden (dashed) edges are exactly the ones behind the front faces', async () => {
   const g = await import('../src/figures/geometry.js');
   const dashed = (r) => r.scene.items.filter((it) => it.t === 'line' && it.dash).length;

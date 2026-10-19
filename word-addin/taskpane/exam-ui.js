@@ -19,8 +19,10 @@ export function mountExam(root, io) {
       <select id="ex-renumber"><option value="part">theo từng phần (mỗi phần bắt đầu từ Câu 1)</option><option value="continuous">liên tục toàn đề</option><option value="">không đổi</option></select></label>
     <label class="field"><span>Căn lề phương án</span>
       <select id="ex-layout"><option value="auto">tự động (1 dòng / 2 dòng / 4 dòng theo độ dài)</option><option value="4">luôn 4 cột</option><option value="2">luôn 2 cột</option><option value="1">mỗi phương án một dòng</option><option value="false">giữ nguyên</option></select></label>
+    <label class="field"><span>Từ trong nhãn câu</span>
+      <select id="ex-word"><option value="keep">giữ nguyên như tài liệu (Câu 1. / Bài 1. / bài 1:)</option><option value="Câu">đổi tất cả thành “Câu N.”</option><option value="Bài">đổi tất cả thành “Bài N.”</option></select></label>
     <label><input type="checkbox" id="ex-labels" checked> nhãn A. B. C. D. in đậm, viết hoa, dấu chấm</label>
-    <label><input type="checkbox" id="ex-qformat" checked> “Câu N.” cùng định dạng với câu đầu tiên (nhãn “Bài N.” được đổi thành “Câu N.”)</label>
+    <label><input type="checkbox" id="ex-qformat" checked> nhãn “Câu N.” / “Bài N.” cùng định dạng với câu đầu tiên</label>
     <label><input type="checkbox" id="ex-keep" checked> giữ câu hỏi và phương án cùng trang (keep with next)</label>
     <label><input type="checkbox" id="ex-backup1"> Tôi đã lưu một bản sao tài liệu</label>
     <div class="btns"><button class="primary" id="ex-normalize">Chuẩn hóa</button></div>
@@ -92,7 +94,7 @@ export function mountExam(root, io) {
     if (!$('ex-backup1').checked) { $('ex-norm-out').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
     try {
       const layout = $('ex-layout').value;
-      const r = normalize(await body(), { renumber: $('ex-renumber').value || false, labels: $('ex-labels').checked, questionFormat: $('ex-qformat').checked,
+      const r = normalize(await body(), { renumber: $('ex-renumber').value || false, labelWord: $('ex-word').value, labels: $('ex-labels').checked, questionFormat: $('ex-qformat').checked,
         keepNext: $('ex-keep').checked, layout: layout === 'false' ? false : layout });
       await io.replaceBody(r.pkg);
       const rep = r.report;
@@ -103,7 +105,7 @@ export function mountExam(root, io) {
   });
 
   const options = () => ({ shuffleQuestions: $('ex-shq').checked, shuffleOptions: $('ex-sho').checked, shuffleStatements: $('ex-shs').checked,
-    stripMarks: $('ex-strip').checked, renumber: $('ex-renumber').value || 'part', layout: $('ex-layout').value === 'false' ? 'auto' : $('ex-layout').value });
+    stripMarks: $('ex-strip').checked, labelWord: $('ex-word').value, renumber: $('ex-renumber').value || 'part', layout: $('ex-layout').value === 'false' ? 'auto' : $('ex-layout').value });
 
   $('ex-shuffle').addEventListener('click', async () => {
     const out = $('ex-shuffle-out'), bar = $('ex-progress');

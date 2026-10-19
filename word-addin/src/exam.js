@@ -344,7 +344,7 @@ export function layoutOptions(model, options, templatePara, layout = 'auto') {
  * Renumbers the question label ("Câu N." / "Bài N.") in paragraph p, supporting single or multi-run labels.
  * formatTemplate: optional run whose rPr formatting should be applied to the label run.
  */
-export function renumberQuestionInParagraph(p, newNumber, { formatTemplate } = {}) {
+export function renumberQuestionInParagraph(p, newNumber, { formatTemplate, word = 'keep' } = {}) {
   if (!p || !p.children) return false;
   const fullText = paragraphText(p);
   const m = RE_QUESTION.exec(fullText);
@@ -368,7 +368,8 @@ export function renumberQuestionInParagraph(p, newNumber, { formatTemplate } = {
   const matchStart = m.index;
   const matchEnd = m.index + m[0].length;
   const delim = (m[3] && /[.:)]/.test(m[3])) ? m[3] : '.';
-  const replacementLabel = `Câu ${newNumber}${delim}`;
+  const label = word === 'Câu' || word === 'Bài' ? word : m[1];   // 'keep': the word the document already uses (Câu / Bài / bài ...)
+  const replacementLabel = `${label} ${newNumber}${delim}`;
 
   const affected = runMap.filter((r) => r.start < matchEnd && r.end > matchStart);
   if (!affected.length) return false;
@@ -442,7 +443,7 @@ export function renumberQuestionInParagraph(p, newNumber, { formatTemplate } = {
 }
 
 /**
- * opts: renumber ('part'|'continuous'|false), labels (bool), questionFormat (bool: copy first "Câu" label format),
+ * opts: renumber ('part'|'continuous'|false), labelWord ('keep'|'Câu'|'Bài': the word of the "Câu N." / "Bài N." label), labels (bool), questionFormat (bool: copy first "Câu" label format),
  * layout ('auto'|4|2|1|false), keepNext (bool). Returns {pkg, report}.
  */
 export function normalize(pkg, opts = {}) {
@@ -463,11 +464,11 @@ export function normalize(pkg, opts = {}) {
       }
       const fmt = opts.questionFormat ? firstLabel : null;
       if (opts.renumber && (opts.renumber === 'continuous' || q.number !== newNumber)) {
-        const ok = renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt });
+        const ok = renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt, word: opts.labelWord });
         if (ok) report.renumbered++;
-        else report.skipped.push(`Câu ${q.number}: không tìm thấy nhãn “Câu”`);
+        else report.skipped.push(`Câu ${q.number}: không tìm thấy nhãn “Câu” / “Bài”`);
       } else if (opts.renumber || opts.questionFormat) {
-        renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt });
+        renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt, word: opts.labelWord });
       }
       if (opts.keepNext) {
         for (let i = q.start; i < q.stemEnd; i++) if (model.blocks[i].kind === 'p' && i + 1 <= q.stemEnd && (q.options || q.statements.length)) model.blocks[i].ppr = setPprChild(model.blocks[i].ppr, 'keepNext', '<w:keepNext/>');
@@ -597,7 +598,7 @@ export function shuffleVersion(pkg, opts = {}) {
       counter++;
       q.number = counter;   // the key must use the new numbers
       const b = stage.blocks[q.start];
-      const ok = renumberQuestionInParagraph(b, counter);
+      const ok = renumberQuestionInParagraph(b, counter, { word: opts.labelWord });
       if (!ok) report.notes.push(`Câu ${counter}: không đổi được số thứ tự`);
     }
   }
