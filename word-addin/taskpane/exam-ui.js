@@ -1,5 +1,7 @@
 import { answerXlsx, answerTsv } from '../src/xlsx.js';
 import { parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody } from '../src/exam.js';
+import { scanPackage } from '../src/ooxml.js';
+import { buildExamPptx } from '../src/pptx.js';
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -40,6 +42,23 @@ export function mountExam(root, io) {
     <div class="row"><button class="secondary" id="ex-export">Tải file Excel</button><button class="secondary" id="ex-tsv">Sao chép bảng (dán vào Excel)</button></div>
     <progress id="ex-progress" value="0" max="1" hidden></progress>
     <div id="ex-shuffle-out"></div>
+  </fieldset>
+  <fieldset><legend>4. Xuất bài trình chiếu PowerPoint</legend>
+    <div class="row">
+      <label class="inline" style="flex:1">Tiêu đề slide
+        <input type="text" id="ex-pptx-title" value="BÀI TẬP TRẮC NGHIỆM">
+      </label>
+      <label class="inline" id="ex-pptx-source-box" style="flex:1" hidden>Nguồn đề
+        <select id="ex-pptx-source"><option value="current">Tài liệu hiện tại</option></select>
+      </label>
+    </div>
+    <div class="notice" style="margin: 6px 0;">
+      Tạo file trình chiếu PPTX 16:9 tương tác: bấm vào phương án sẽ hiển thị ngay thông báo <b>Đúng</b> (chúc mừng) hoặc <b>Sai</b> (thử lại). Chạy trực tiếp trên PowerPoint, Google Slides, Keynote và CHITUP Slide.
+    </div>
+    <div class="row">
+      <button class="primary" id="ex-pptx-btn">Tải file PowerPoint (PPTX)</button>
+    </div>
+    <div id="ex-pptx-out"></div>
   </fieldset>`;
   const $ = (id) => root.querySelector('#' + id);
   let lastCsv = '';
@@ -97,7 +116,14 @@ export function mountExam(root, io) {
       }
       const table = answerTable(versions.map((v) => ({ code: v.code, answers: v.answers })));
       lastCsv = table.csv;
-      lastVersions = { pkg, versions: versions.map((v) => ({ code: v.code, answers: v.answers })) };
+      lastVersions = { pkg, versions: versions.map((v) => ({ code: v.code, answers: v.answers, pkg: v.pkg })) };
+      const sourceSelect = $('ex-pptx-source');
+      if (sourceSelect) {
+        sourceSelect.innerHTML = '<option value="current">Tài liệu hiện tại (đề gốc)</option>' +
+          versions.map((v) => `<option value="${esc(v.code)}">Mã đề ${esc(v.code)}</option>`).join('');
+        const sourceBox = $('ex-pptx-source-box');
+        if (sourceBox) sourceBox.hidden = false;
+      }
       $('ex-copy').disabled = false;
       const unknown = versions[0].answers.filter((a) => a.value === null).length;
       let note = '';
@@ -169,5 +195,44 @@ export function mountExam(root, io) {
   });
   $('ex-copy').addEventListener('click', async () => {
     try { await navigator.clipboard.writeText(lastCsv); $('ex-copy').textContent = 'Đã sao chép'; } catch { $('ex-shuffle-out').innerHTML = `<textarea rows="6">${esc(lastCsv)}</textarea>`; }
+  });
+
+  $('ex-pptx-btn').addEventListener('click', async () => {
+    const out = $('ex-pptx-out');
+    try {
+      out.innerHTML = '<span class="muted">Đang đọc tài liệu và tạo file PowerPoint…</span>';
+      let pkg;
+      const srcCode = $('ex-pptx-source')?.value;
+      if (srcCode && srcCode !== 'current' && lastVersions) {
+        const found = lastVersions.versions.find((v) => v.code === srcCode);
+        pkg = found ? found.pkg : await body();
+      } else {
+        pkg = await body();
+      }
+
+      const model = parseBody(pkg);
+      const a = analyze(model);
+      const ans = answersOf(model, a);
+      const scan = scanPackage(pkg);
+      const title = $('ex-pptx-title').value.trim() || 'BÀI TẬP TRẮC NGHIỆM';
+
+      const buf = buildExamPptx(model, a, ans, {
+        title,
+        scannedEquations: scan.equations
+      });
+
+      const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
+      const dl = document.createElement('a');
+      dl.href = URL.createObjectURL(blob);
+      const fileName = `${title.replace(/[\/\\?%*:|"<>]/g, '_') || 'DeThi'}${srcCode && srcCode !== 'current' ? `-${srcCode}` : ''}.pptx`;
+      dl.download = fileName;
+      document.body.appendChild(dl);
+      dl.click();
+      dl.remove();
+
+      out.innerHTML = `<span class="ok">Đã tạo bài trình chiếu <b>${esc(fileName)}</b> thành công!</span> <div class="muted">Bấm vào phương án A/B/C/D để hiện thông báo Đúng/Sai trực tiếp.</div>`;
+    } catch (e) {
+      fail(out, e);
+    }
   });
 }
