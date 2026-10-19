@@ -312,3 +312,91 @@ code, .tex {
 }
 .diff del { color: var(--bad); text-decoration: none; }
 .diff ins { color: var(--ok); text-decoration: none; }
+
+/* --- Formula Editor --- */
+.formula-preview {
+  min-height: 52px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  font-size: 1.15em;
+  margin-bottom: 8px;
+}
+.formula-preview:empty::before {
+  content: "Xem trước công thức sẽ hiển thị tại đây";
+  color: var(--muted);
+  font-size: 11.5px;
+  font-style: italic;
+}
+
+#editor-latex {
+  width: 100%;
+  min-height: 65px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--fg);
+  resize: vertical;
+}
+
+.sym-tabs {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 6px;
+  overflow-x: auto;
+}
+.sym-tab-btn {
+  border: 1px solid var(--line);
+  background: var(--card-bg);
+  color: var(--muted);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.sym-tab-btn.active {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.sym-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 6px;
+  background: var(--card-bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  max-height: 120px;
+  overflow-y: auto;
+}
+.sym-btn {
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--fg);
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 1.2;
+  min-width: 28px;
+  text-align: center;
+  transition: all 0.1s;
+  user-select: none;
+}
+.sym-btn:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent);
+}

@@ -118,11 +118,11 @@ function pageTextWidthTwips(model) {
 
 // ---------------------------------------------------------------- analysis
 const RE_PART = /^\s*PH[AẦ]N\s+(I{1,3}V?|IV|V|[1-4])\b\s*[.:)]?/i;
-const RE_QUESTION = /^\s*(C[âa]u|B[àa]i)\s*(\d+)\s*([.:)])/i;
+const RE_QUESTION = /^\s*(C[âa]u|B[àa]i)\s*(\d+)\s*([.:)\-–—]|\s+(?=[A-Z\p{L}(]))/iu;
 const RE_OPT = /^\s*([A-D])\s*([.)])/;
 const RE_STMT = /^\s*([a-d])\s*\)/;
 const RE_END = /^[\s\-–—_*.]*(h[ếe]t\b|(bảng\s*)?đáp\s*án[^:：]{0,40}$|hướng\s*dẫn\s*chấm|cán\s*bộ\s*coi\s*thi)/i;
-const RE_ANSWER_LINE = /^\s*(đáp\s*án|đáp\s*số|đs|kết\s*quả)\s*[:：]/i;
+const RE_ANSWER_LINE = /^\s*(đáp\s*án|đáp\s*số|đs|kết\s*quả|trả\s*lời)\s*[:：]/i;
 const RE_SHARED = /(sử\s*dụng|dựa\s*vào|dùng)\s+(chung\s+)?(thông\s*tin|dữ\s*kiện|đoạn|hình|bảng)[^.]{0,80}câu\s*\d+|(trả\s*lời|cho)\s+(các\s+)?câu\s*(hỏi\s*)?\d+\s*(,|và|đến|-|–)\s*\d+/i;
 const RE_PINNED_OPTION = /^\s*(tất\s*cả|cả\s+(ba|bốn|hai|\w+)\s+(đáp\s*án|ý|phương\s*án|câu)|không\s*có\s*(đáp\s*án|phương\s*án)|các\s*(đáp\s*án|phương\s*án|ý)\s*(trên|còn\s*lại))/i;
 const RE_OPTION_REF = /\b(A|B|C|D)\s*(,|và|&)\s*(A|B|C|D)\b.*(đúng|sai)|cả\s+[A-D]\s*(,|và)\s*[A-D]|(đáp\s*án|ý|phương\s*án)\s*[A-D]\b/i;
@@ -341,6 +341,107 @@ export function layoutOptions(model, options, templatePara, layout = 'auto') {
 
 // ---------------------------------------------------------------- normalise
 /**
+ * Renumbers the question label ("Câu N." / "Bài N.") in paragraph p, supporting single or multi-run labels.
+ * formatTemplate: optional run whose rPr formatting should be applied to the label run.
+ */
+export function renumberQuestionInParagraph(p, newNumber, { formatTemplate } = {}) {
+  if (!p || !p.children) return false;
+  const fullText = paragraphText(p);
+  const m = RE_QUESTION.exec(fullText);
+  if (!m) return false;
+
+  let charPos = 0;
+  const runMap = [];
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i];
+    if (isRun(c) && !hasObject(c)) {
+      const t = runText(c);
+      if (t.length > 0) {
+        runMap.push({ i, start: charPos, end: charPos + t.length, text: t, runXml: c });
+        charPos += t.length;
+        continue;
+      }
+    }
+    charPos += childText(c).length;
+  }
+
+  const matchStart = m.index;
+  const matchEnd = m.index + m[0].length;
+  const delim = (m[3] && /[.:)]/.test(m[3])) ? m[3] : '.';
+  const replacementLabel = `Câu ${newNumber}${delim}`;
+
+  const affected = runMap.filter((r) => r.start < matchEnd && r.end > matchStart);
+  if (!affected.length) return false;
+
+  const applyFormat = (runXml) => {
+    if (!formatTemplate) return runXml;
+    const rprMatch = /<w:rPr>[\s\S]*?<\/w:rPr>/.exec(formatTemplate);
+    if (!rprMatch) return runXml;
+    const rHead = /^(<w:r\b[^>]*>)(?:\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(runXml);
+    if (!rHead) return runXml;
+    return `${rHead[1]}${rprMatch[0]}${runXml.slice(rHead[0].length)}`;
+  };
+
+  if (affected.length === 1) {
+    const r = affected[0];
+    const localStart = matchStart - r.start;
+    const localEnd = matchEnd - r.start;
+
+    let hasTrailingSpace = r.text.slice(localEnd).startsWith(' ') || r.text.slice(localEnd).startsWith('\t');
+    if (!hasTrailingSpace && localEnd >= r.text.length) {
+      for (let j = r.i + 1; j < p.children.length; j++) {
+        const nextRun = p.children[j];
+        const nt = childText(nextRun);
+        if (nt.length > 0) {
+          if (nt.startsWith(' ') || nt.startsWith('\t')) hasTrailingSpace = true;
+          break;
+        }
+      }
+    }
+    const needSpace = !hasTrailingSpace;
+
+    const before = r.text.slice(0, localStart);
+    const after = r.text.slice(localEnd);
+    const combined = before + replacementLabel + (needSpace ? ' ' : '') + after;
+    let newRun = r.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, `<w:t xml:space="preserve">${escapeXml(combined)}</w:t>`);
+    if (formatTemplate) newRun = applyFormat(newRun);
+    p.children[r.i] = newRun;
+    return true;
+  }
+
+  // Multi-run case:
+  const first = affected[0];
+  const last = affected[affected.length - 1];
+  const firstPrefix = first.text.slice(0, matchStart - first.start);
+  const lastSuffix = last.text.slice(matchEnd - last.start);
+
+  let hasTrailingSpace = lastSuffix.startsWith(' ') || lastSuffix.startsWith('\t');
+  if (!hasTrailingSpace && lastSuffix.length === 0) {
+    for (let j = last.i + 1; j < p.children.length; j++) {
+      const nextRun = p.children[j];
+      const nt = childText(nextRun);
+      if (nt.length > 0) {
+        if (nt.startsWith(' ') || nt.startsWith('\t')) hasTrailingSpace = true;
+        break;
+      }
+    }
+  }
+  const needSpace = !hasTrailingSpace;
+
+  const firstCombined = firstPrefix + replacementLabel + (needSpace ? ' ' : '');
+  let newFirstRun = first.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, `<w:t xml:space="preserve">${escapeXml(firstCombined)}</w:t>`);
+  if (formatTemplate) newFirstRun = applyFormat(newFirstRun);
+  p.children[first.i] = newFirstRun;
+
+  for (let k = 1; k < affected.length - 1; k++) {
+    p.children[affected[k].i] = affected[k].runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, '');
+  }
+
+  p.children[last.i] = last.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, lastSuffix ? `<w:t xml:space="preserve">${escapeXml(lastSuffix)}</w:t>` : '');
+  return true;
+}
+
+/**
  * opts: renumber ('part'|'continuous'|false), labels (bool), questionFormat (bool: copy first "Câu" label format),
  * layout ('auto'|4|2|1|false), keepNext (bool). Returns {pkg, report}.
  */
@@ -355,26 +456,19 @@ export function normalize(pkg, opts = {}) {
     for (const q of part.questions) {
       report.questions++;
       const b = model.blocks[q.start];
-      const label = b.children.findIndex((c) => isRun(c) && RE_QUESTION.test(runText(c)) );
       const newNumber = ++counter;
-      if (label >= 0) {
-        if (!firstLabel) firstLabel = b.children[label];
-        const run = b.children[label];
-        if (opts.renumber && q.number !== newNumber) {
-          const m = RE_QUESTION.exec(runText(run));
-          const split = splitRun(run, m[0].length);
-          if (split) { b.children[label] = split[0].replace(/<w:t\b[^>]*>[^<]*<\/w:t>/, `<w:t>Câu ${newNumber}${m[3]}</w:t>`); if (split[1]) b.children.splice(label + 1, 0, split[1]); report.renumbered++; }
-          else report.skipped.push(`Câu ${q.number}: nhãn “Câu” nằm lẫn trong run phức tạp`);
-        } else if (opts.renumber) {
-          const m = RE_QUESTION.exec(runText(run));
-          if (m[2] !== String(newNumber) || m[3] !== '.') { /* handled above when numbers differ */ }
-        }
-        if (opts.questionFormat && firstLabel && b.children[label] !== firstLabel) {
-          const m = /^(<w:r\b[^>]*>)(?:\s*<w:rPr>[\s\S]*?<\/w:rPr>)?([\s\S]*)$/.exec(b.children[label]);
-          const rpr = /<w:rPr>[\s\S]*?<\/w:rPr>/.exec(firstLabel);
-          if (m && rpr) b.children[label] = `${m[1]}${rpr[0]}${m[2]}`;
-        }
-      } else report.skipped.push(`Câu ${q.number}: không tìm thấy nhãn “Câu”`);
+      if (!firstLabel) {
+        const foundRun = b.children.find((c) => isRun(c) && RE_QUESTION.test(runText(c)));
+        if (foundRun) firstLabel = foundRun;
+      }
+      const fmt = opts.questionFormat ? firstLabel : null;
+      if (opts.renumber && (opts.renumber === 'continuous' || q.number !== newNumber)) {
+        const ok = renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt });
+        if (ok) report.renumbered++;
+        else report.skipped.push(`Câu ${q.number}: không tìm thấy nhãn “Câu”`);
+      } else if (opts.renumber || opts.questionFormat) {
+        renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt });
+      }
       if (opts.keepNext) {
         for (let i = q.start; i < q.stemEnd; i++) if (model.blocks[i].kind === 'p' && i + 1 <= q.stemEnd && (q.options || q.statements.length)) model.blocks[i].ppr = setPprChild(model.blocks[i].ppr, 'keepNext', '<w:keepNext/>');
       }
@@ -503,13 +597,8 @@ export function shuffleVersion(pkg, opts = {}) {
       counter++;
       q.number = counter;   // the key must use the new numbers
       const b = stage.blocks[q.start];
-      const li = b.children.findIndex((c) => isRun(c) && RE_QUESTION.test(runText(c)));
-      if (li >= 0) {
-        const m = RE_QUESTION.exec(runText(b.children[li]));
-        const sp = splitRun(b.children[li], m[0].length);
-        if (sp) { b.children[li] = sp[0].replace(/<w:t\b[^>]*>[^<]*<\/w:t>/, `<w:t>Câu ${counter}${m[3]}</w:t>`); if (sp[1]) b.children.splice(li + 1, 0, sp[1]); }
-        else report.notes.push(`Câu ${counter}: không đổi được số thứ tự (nhãn nằm trong run phức tạp)`);
-      }
+      const ok = renumberQuestionInParagraph(b, counter);
+      if (!ok) report.notes.push(`Câu ${counter}: không đổi được số thứ tự`);
     }
   }
   const answers = answersOf(stage, st);

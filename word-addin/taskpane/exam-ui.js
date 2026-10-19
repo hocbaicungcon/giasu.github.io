@@ -80,7 +80,7 @@ export function mountExam(root, io) {
   });
 
   const options = () => ({ shuffleQuestions: $('ex-shq').checked, shuffleOptions: $('ex-sho').checked, shuffleStatements: $('ex-shs').checked,
-    stripMarks: $('ex-strip').checked, layout: $('ex-layout').value === 'false' ? 'auto' : $('ex-layout').value });
+    stripMarks: $('ex-strip').checked, renumber: $('ex-renumber').value || 'part', layout: $('ex-layout').value === 'false' ? 'auto' : $('ex-layout').value });
 
   $('ex-shuffle').addEventListener('click', async () => {
     const out = $('ex-shuffle-out'), bar = $('ex-progress');

@@ -1,5 +1,5 @@
 import * as io from '../src/word-io.js';
-import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, rewriteEquations, scanPackage } from '../src/app-core.js';
+import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml } from '../src/app-core.js';
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -15,6 +15,12 @@ function switchTab(name) {
   if (name === 'exam' && !state.examLoaded) {
     state.examLoaded = true;
     import('./exam-ui.js').then((m) => m.mountExam($('exam-root'), io)).catch((e) => { $('exam-root').textContent = 'Không tải được mô-đun đề thi: ' + e.message; });
+  }
+  if (name === 'editor') {
+    renderEditorPreview();
+    if ($('editor-latex') && !$('editor-latex').value.trim()) {
+      loadFormulaFromWord(false).catch(() => {});
+    }
   }
 }
 
@@ -196,6 +202,141 @@ $('btn-apply').addEventListener('click', async () => {
       (res.before !== res.after ? ` <span class="warn">Số đoạn ${res.before} → ${res.after}.</span>` : '');
   } catch (e) { $('apply-summary').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
   finally { $('btn-apply').disabled = false; }
+});
+
+// ---------------------------------------------------------------- formula editor
+function renderEditorPreview() {
+  const tex = $('editor-latex')?.value.trim() || '';
+  const previewEl = $('editor-preview');
+  if (!previewEl) return;
+  if (!tex) {
+    previewEl.innerHTML = '<span class="muted" style="font-size:12px;font-style:italic">(Chưa có nội dung công thức)</span>';
+    return;
+  }
+  if (typeof katex !== 'undefined' && katex.render) {
+    try {
+      katex.render(tex, previewEl, {
+        displayMode: $('editor-display')?.checked ?? false,
+        throwOnError: false,
+        output: 'htmlAndMathml'
+      });
+    } catch (e) {
+      previewEl.innerHTML = `<span class="bad">Lỗi cú pháp: ${esc(e.message)}</span>`;
+    }
+  } else {
+    previewEl.textContent = tex;
+  }
+}
+
+function insertSymbolAtCursor(text) {
+  const el = $('editor-latex');
+  if (!el) return;
+  const start = el.selectionStart ?? el.value.length;
+  const end = el.selectionEnd ?? el.value.length;
+  const before = el.value.slice(0, start);
+  const after = el.value.slice(end);
+  el.value = before + text + after;
+  const newPos = start + text.length;
+  el.setSelectionRange(newPos, newPos);
+  el.focus();
+  renderEditorPreview();
+}
+
+async function loadFormulaFromWord(showNotice = true) {
+  const statusEl = $('editor-status');
+  if (statusEl) statusEl.textContent = 'Đang đọc công thức từ Word…';
+  try {
+    let pkg = null;
+    if (io.readSelection) {
+      try {
+        const sel = await io.readSelection();
+        if (sel?.pkg) pkg = sel.pkg;
+      } catch { /* ignore */ }
+    }
+    if (!pkg) {
+      const items = await io.readParagraphs({ kind: 'selection' });
+      if (items.length > 0) pkg = items[0].pkg;
+    }
+    if (!pkg) throw new Error('Không đọc được vùng chọn từ Word.');
+
+    const scanned = scanPackage(pkg);
+    const valid = scanned.equations.filter((e) => e.latex !== null);
+    if (valid.length === 0) {
+      if (scanned.equations.length > 0 && scanned.equations[0].error) {
+        throw new Error(`Công thức bị lỗi: ${scanned.equations[0].error}`);
+      }
+      if (showNotice) {
+        if (statusEl) statusEl.innerHTML = '<span class="warn">Không tìm thấy công thức nào tại vị trí con trỏ / vùng chọn. Bạn có thể tự soạn bên dưới.</span>';
+      } else {
+        if (statusEl) statusEl.textContent = 'Đặt con trỏ tại công thức trong Word rồi bấm “Lấy công thức”, hoặc soạn mới bên dưới.';
+      }
+      return;
+    }
+    const target = valid[0];
+    $('editor-latex').value = target.latex;
+    if ($('editor-display')) $('editor-display').checked = !target.inline;
+    renderEditorPreview();
+    const kindLabel = target.kind === 'mathtype' ? 'MathType' : target.kind === 'native' ? 'Word Equation' : 'LaTeX';
+    if (statusEl) statusEl.innerHTML = `<span class="ok">Đã nạp công thức (${kindLabel}):</span> <code style="font-size:11px">${esc(target.latex)}</code>`;
+  } catch (e) {
+    if (statusEl) statusEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
+  }
+}
+
+async function applyFormulaToWord() {
+  const tex = $('editor-latex')?.value.trim();
+  const msgEl = $('editor-msg');
+  if (!tex) {
+    if (msgEl) msgEl.innerHTML = '<span class="bad">Vui lòng nhập mã LaTeX trước khi cập nhật.</span>';
+    return;
+  }
+  if (msgEl) msgEl.textContent = 'Đang chèn vào Word…';
+  try {
+    const isDisplay = $('editor-display')?.checked ?? false;
+    const omml = latexToOmml(tex, { display: isDisplay });
+    const pkg = makeEquationPackage(omml);
+    await io.replaceSelection(pkg);
+    if (msgEl) msgEl.innerHTML = '<span class="ok">✦ Đã cập nhật công thức vào Word thành công (chuẩn Word Equation).</span>';
+  } catch (e) {
+    if (msgEl) msgEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
+  }
+}
+
+// Palette tabs switching
+document.querySelectorAll('.sym-tab-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.sym-tab-btn').forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('.sym-panel').forEach((p) => { p.classList.remove('active'); p.hidden = true; });
+    btn.classList.add('active');
+    const panel = $('sym-group-' + btn.dataset.group);
+    if (panel) { panel.classList.add('active'); panel.hidden = false; }
+  });
+});
+
+// Palette buttons
+document.querySelectorAll('.sym-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const ins = btn.dataset.ins;
+    if (ins) insertSymbolAtCursor(ins);
+  });
+});
+
+// Editor events
+$('editor-latex')?.addEventListener('input', renderEditorPreview);
+$('editor-display')?.addEventListener('change', renderEditorPreview);
+$('btn-load-sel')?.addEventListener('click', () => loadFormulaFromWord(true));
+$('btn-clear-editor')?.addEventListener('click', () => {
+  $('editor-latex').value = '';
+  renderEditorPreview();
+  if ($('editor-msg')) $('editor-msg').textContent = '';
+  if ($('editor-status')) $('editor-status').textContent = 'Đặt con trỏ tại công thức trong Word rồi bấm “Lấy công thức”, hoặc soạn mới bên dưới.';
+});
+$('btn-apply-editor')?.addEventListener('click', applyFormulaToWord);
+$('editor-latex')?.addEventListener('keydown', (ev) => {
+  if ((ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') {
+    ev.preventDefault();
+    applyFormulaToWord();
+  }
 });
 
 // ---------------------------------------------------------------- diagnostics

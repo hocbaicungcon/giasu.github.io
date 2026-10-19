@@ -25,6 +25,25 @@ export async function selectionParagraphCount() {
   });
 }
 
+export async function readSelection() {
+  return run(async (context) => {
+    const sel = context.document.getSelection();
+    const ox = sel.getOoxml();
+    const paras = sel.paragraphs;
+    paras.load('items');
+    await context.sync();
+    return { pkg: ox.value, paragraphCount: paras.items.length };
+  });
+}
+
+export async function replaceSelection(pkg) {
+  return run(async (context) => {
+    const sel = context.document.getSelection();
+    sel.insertOoxml(pkg, 'Replace');
+    await context.sync();
+  });
+}
+
 /** Read OOXML of paragraphs. scope: {kind:'selection'} | {kind:'indexes', indexes:[...]} | {kind:'all'}. onProgress(done,total). */
 export async function readParagraphs(scope, onProgress = () => {}) {
   return run(async (context) => {
