@@ -1,5 +1,6 @@
 import { answerXlsx, answerTsv } from '../src/xlsx.js';
-import { unansweredQuestions, parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody } from '../src/exam.js';
+import { unansweredQuestions, parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody, prependToBody } from '../src/exam.js';
+import { DEFAULT_FORM, examHeaderXml, examEndXml, examFooterXml, simplePackage } from '../src/exam-header.js';
 import { scanPackage } from '../src/ooxml.js';
 import { buildExamPptx, PPTX_THEMES } from '../src/pptx.js';
 import { qrPayloads, renderQr } from '../src/answer-qr.js';
@@ -35,6 +36,22 @@ export function mountExam(root, io) {
     <label><input type="checkbox" id="ex-shs"> trộn cả thứ tự ý a) b) c) d) ở phần đúng sai</label>
     <label><input type="checkbox" id="ex-strip" checked> bỏ dấu đáp án (gạch chân/đỏ) khỏi đề trộn</label>
     <label><input type="checkbox" id="ex-withkey" checked> thêm bảng đáp án của mã đề vào cuối mỗi đề</label>
+    <details class="mt-details" id="ex-form-box"><summary>Tiêu đề, chân trang, dòng HẾT (theo mẫu đề kiểm tra)</summary>
+      <label><input type="checkbox" id="ex-h-title" checked> thêm khối tiêu đề (Sở, Trường, Kỳ thi, Họ tên, Mã đề) đầu mỗi đề</label>
+      <label><input type="checkbox" id="ex-h-end" checked> thêm dòng ----HẾT---- cuối đề</label>
+      <label><input type="checkbox" id="ex-h-footer" checked> thêm chân trang “Trang X/Y-Mã đề” (khi mở tài liệu mới)</label>
+      <div class="grid2">
+        <label class="field"><span>Sở GD&amp;ĐT</span><input type="text" id="ex-f-soGd"></label>
+        <label class="field"><span>Trường</span><input type="text" id="ex-f-truong"></label>
+        <label class="field"><span>Dòng thứ 3 (bên trái)</span><input type="text" id="ex-f-chinhThuc"></label>
+        <label class="field"><span>Kỳ kiểm tra</span><input type="text" id="ex-f-kyThi"></label>
+        <label class="field"><span>Năm học</span><input type="text" id="ex-f-namHoc"></label>
+        <label class="field"><span>Môn</span><input type="text" id="ex-f-mon" placeholder="vd. Toán"></label>
+        <label class="field"><span>Lớp</span><input type="text" id="ex-f-lop" placeholder="vd. 12"></label>
+        <label class="field"><span>Thời gian (phút)</span><input type="text" id="ex-f-thoiGian" placeholder="vd. 90"></label>
+      </div>
+      <div class="btns two"><button class="secondary" id="ex-f-reset">Khôi phục mặc định</button><button class="secondary" id="ex-f-insert" title="Chèn khối tiêu đề tại con trỏ, mã đề lấy từ ô “Mã đề đầu tiên”">Chèn tiêu đề tại con trỏ</button></div>
+    </details>
     <label class="field"><span>Nơi đặt kết quả</span>
       <select id="ex-target"><option value="new">mỗi mã đề một tài liệu mới</option><option value="append">chèn nối tiếp vào cuối tài liệu này</option><option value="none">chỉ lập bảng đáp án (không tạo đề)</option></select></label>
     <div class="btns"><button class="primary" id="ex-shuffle">Tạo đề</button></div>
@@ -107,6 +124,27 @@ export function mountExam(root, io) {
   const options = () => ({ shuffleQuestions: $('ex-shq').checked, shuffleOptions: $('ex-sho').checked, shuffleStatements: $('ex-shs').checked,
     stripMarks: $('ex-strip').checked, labelWord: $('ex-word').value, renumber: $('ex-renumber').value || 'part', layout: $('ex-layout').value === 'false' ? 'auto' : $('ex-layout').value });
 
+  // ---- title block / footer of the paper (school's template); values are kept between sessions
+  const FORM_KEYS = Object.keys(DEFAULT_FORM), KEY_FORM = 'texcraft-exam-form';
+  const loadForm = () => { let saved = {}; try { saved = JSON.parse(localStorage.getItem(KEY_FORM) || '{}'); } catch { saved = {}; } return { ...DEFAULT_FORM, ...saved, ...Object.fromEntries(['mon', 'lop', 'thoiGian'].filter((k) => saved[k] === undefined).map((k) => [k, ''])) }; };
+  const readForm = () => Object.fromEntries(FORM_KEYS.map((k) => [k, $('ex-f-' + k).value]));
+  const fillForm = (f) => FORM_KEYS.forEach((k) => { $('ex-f-' + k).value = f[k] ?? ''; });
+  const saveForm = () => { try { localStorage.setItem(KEY_FORM, JSON.stringify(readForm())); } catch { /* ignore */ } };
+  fillForm(loadForm());
+  FORM_KEYS.forEach((k) => $('ex-f-' + k).addEventListener('input', saveForm));
+  $('ex-f-reset').addEventListener('click', () => { fillForm({ ...DEFAULT_FORM, mon: '', lop: '', thoiGian: '' }); saveForm(); });
+  $('ex-f-insert').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try { await io.replaceSelection(simplePackage(examHeaderXml(readForm(), $('ex-code').value.trim()))); out.innerHTML = '<span class="ok">Đã chèn khối tiêu đề tại con trỏ.</span>'; } catch (e) { fail(out, e); }
+  });
+  /** The paper of one version with the chosen title block and closing line. */
+  const decorate = (pkg, code) => {
+    let out = pkg;
+    if ($('ex-h-title').checked) out = prependToBody(out, examHeaderXml(readForm(), code));
+    if ($('ex-h-end').checked) out = appendToBody(out, examEndXml());
+    return out;
+  };
+
   $('ex-shuffle').addEventListener('click', async () => {
     const out = $('ex-shuffle-out'), bar = $('ex-progress');
     try {
@@ -136,12 +174,13 @@ export function mountExam(root, io) {
       if (target === 'new') {
         let opened = 0, fellBack = false;
         for (const v of versions) {
-          const finalPkg = $('ex-withkey').checked ? appendToBody(v.pkg, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`)) : v.pkg;
-          try { await io.openAsNewDocument(finalPkg); opened++; } catch (e) { await io.insertAtEnd(finalPkg); fellBack = true; }
+          const paper = decorate(v.pkg, v.code);
+          const finalPkg = $('ex-withkey').checked ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`)) : paper;
+          try { await io.openAsNewDocument(finalPkg, { footerPkg: $('ex-h-footer').checked ? simplePackage(examFooterXml(v.code)) : null }); opened++; } catch (e) { await io.insertAtEnd(finalPkg); fellBack = true; }
         }
         note = fellBack ? `Word này không cho tạo tài liệu mới từ add-in: đã chèn ${versions.length - opened} đề vào cuối tài liệu hiện tại (mở ${opened} tài liệu mới).` : `Đã mở ${versions.length} tài liệu mới.`;
       } else if (target === 'append') {
-        for (const v of versions) await io.insertAtEnd(v.pkg);
+        for (const v of versions) await io.insertAtEnd(decorate(v.pkg, v.code));
         note = `Đã chèn ${versions.length} đề vào cuối tài liệu.`;
       }
       const warns = [...new Set(versions.flatMap((v) => [

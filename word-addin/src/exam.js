@@ -694,6 +694,13 @@ export function appendToBody(pkg, bodyXml) {
   return buildBody(model);
 }
 
+/** Insert raw body XML (paragraphs/tables) at the start of a package's body. */
+export function prependToBody(pkg, bodyXml) {
+  const model = parseBody(pkg);
+  model.blocks.unshift(...splitChildren(bodyXml).map((xml) => (tagName(xml) === 'w:p' ? { kind: 'p', ...parsePara(xml) } : { kind: 'other', xml })));
+  return buildBody(model);
+}
+
 /** Questions without a marked answer, each with the index of its paragraph in Word's body.paragraphs (tables count too). */
 export function unansweredQuestions(model, analysis) {
   const ordinal = [];

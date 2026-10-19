@@ -172,6 +172,19 @@ test('visual editor: palette snippets become MathLive inserts and MathLive LaTeX
   assert.equal(toMathliveInsert('\\left( \\begin{array}{cc} @ & \\\\ & \\end{array} \\right)'), '\\left( \\begin{array}{cc} #? & #? \\\\ #? & #? \\end{array} \\right)');
   assert.equal(cleanLatex('\\frac{\\placeholder{}}{2} + x'), '\\frac{}{2} + x');
 });
+test('exam header/footer template: well-formed, placed before the questions, code and fields filled', async () => {
+  const { DEFAULT_FORM, examHeaderXml, examEndXml, examFooterXml, simplePackage } = await import('../src/exam-header.js');
+  const { prependToBody, appendToBody } = await import('../src/exam.js');
+  const { parseXml } = await import('../src/xml.js');
+  const head = examHeaderXml({ ...DEFAULT_FORM, mon: 'Toán', lop: '12', thoiGian: '90' }, '2701');
+  parseXml(`<r xmlns:w="w">${head}${examEndXml()}</r>`);
+  parseXml(simplePackage(examFooterXml('2701')));
+  for (const t of ['SỞ GDĐT TỈNH NINH BÌNH', 'TRƯỜNG THPT XUÂN TRƯỜNG B', 'Môn Toán', 'Lớp: 12', 'Thời gian làm bài: 90 phút', 'Mã đề: ', '2701', 'NUMPAGES']) assert.ok(head.includes(t), t);
+  assert.ok(examFooterXml('2701').includes('PAGE') && examFooterXml('2701').includes('Mã đề: 2701'));
+  const base = simplePackage('<w:p><w:r><w:t>Câu 1. x</w:t></w:r></w:p>');
+  const out = appendToBody(prependToBody(base, head), examEndXml());
+  assert.ok(out.indexOf('Mã đề: ') < out.indexOf('Câu 1.') && out.indexOf('Câu 1.') < out.indexOf('HẾT'));
+});
 test('Solids: hidden (dashed) edges are exactly the ones behind the front faces', async () => {
   const g = await import('../src/figures/geometry.js');
   const dashed = (r) => r.scene.items.filter((it) => it.t === 'line' && it.dash).length;

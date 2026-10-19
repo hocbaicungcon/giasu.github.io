@@ -144,11 +144,14 @@ export async function replaceBody(pkg) {
 }
 
 /** New document with the given body package (opens a window). Throws when the host cannot do it; the caller falls back. */
-export async function openAsNewDocument(pkg) {
+export async function openAsNewDocument(pkg, { footerPkg = null } = {}) {
   return run(async (context) => {
     const doc = context.application.createDocument();
     doc.body.insertOoxml(pkg, 'Replace');
     await context.sync();
+    if (footerPkg) {   // footer of the first section; a failure here must not lose the exam itself
+      try { doc.sections.getFirst().getFooter('Primary').insertOoxml(footerPkg, 'Replace'); await context.sync(); } catch { /* footer not supported by this Word */ }
+    }
     doc.open();
     await context.sync();
   });
