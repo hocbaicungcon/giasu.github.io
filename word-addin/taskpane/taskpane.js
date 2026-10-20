@@ -4,7 +4,7 @@ import { attachLatexAutocomplete } from './latex-autocomplete.js';
 import { mountEditorToolbar } from './editor-toolbar.js';
 import { createVisualEditor } from './visual-editor.js';
 import { pickEquation } from '../src/cursor-eq.js';
-import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
+import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -117,15 +117,34 @@ mountMtSettings($('mt-settings-editor'), { onChange: () => renderEditorPreview()
 const syncEditorFormat = () => { const mt = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype'; $('mt-details').hidden = !mt; renderEditorPreview(); };
 document.querySelectorAll('input[name=editor-format]').forEach((r) => r.addEventListener('change', syncEditorFormat));
 
-async function paragraphsToProcess(scope, onProgress, { convertMathType, convertLatex } = {}) {
+const convSrc = () => $('conv-src')?.value || 'mathtype';
+const convDst = () => $('conv-dst')?.value || 'word';
+const SRC_KIND = { mathtype: 'mathtype', latex: 'latex', word: 'native' };
+const CONV_HINTS = {
+  'same:mathtype': 'MathType → MathType: làm lại các công thức MathType (và công thức Word) trong phạm vi đã chọn theo kiểu chữ và cỡ chữ ở trên.',
+  'same:latex': 'Nguồn và đích đều là LaTeX: không có gì để chuyển.',
+  'same:word': 'Nguồn và đích đều là công thức Word: không có gì để chuyển.',
+  'mathtype:latex': 'Công thức MathType được thay bằng mã LaTeX dạng $…$.',
+  'word:latex': 'Công thức Word được thay bằng mã LaTeX dạng $…$ ($$…$$ nếu riêng dòng).',
+  'latex:mathtype': 'Mã LaTeX ($…$, $$…$$, \\(…\\), \\[…\\]) được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem). Các công thức Word có sẵn trong phạm vi cũng bị đổi sang MathType.',
+  'word:mathtype': 'Công thức Word được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem; sửa bằng MathType khi có).',
+};
+function syncConvertUi() {
+  const s = convSrc(), d = convDst();
+  $('conv-hint').textContent = CONV_HINTS[s === d ? `same:${s}` : `${s}:${d}`] || '';
+  $('mt-settings-convert').hidden = d !== 'mathtype';
+  $('opt-display').closest('label').hidden = d !== 'word';
+}
+$('conv-src').addEventListener('change', syncConvertUi);
+$('conv-dst').addEventListener('change', syncConvertUi);
+syncConvertUi();
+
+async function paragraphsToProcess(scope, onProgress, { kinds: wanted } = {}) {
   if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress) };
   if (!state.scanned) await scan();
   const s = state.scanned;
   if (s.mapped) {
-    const kinds = [];
-    if (convertMathType) kinds.push('mathtype');
-    if (convertLatex) kinds.push('latex');
-    if (document.querySelector('input[name=target]:checked')?.value !== 'word') kinds.push('native');
+    const kinds = [...wanted];
     const indexes = [...new Set(s.equations.filter((e) => kinds.includes(e.kind) && e.latex !== null).map((e) => e.para))].sort((a, b) => a - b);
     return { scope: { kind: 'all' }, items: await io.readParagraphs({ kind: 'indexes', indexes }, onProgress) };
   }
@@ -134,32 +153,32 @@ async function paragraphsToProcess(scope, onProgress, { convertMathType, convert
 
 async function convert() {
   if (!$('opt-backup').checked) { $('convert-summary').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
-  const normalize = document.querySelector('input[name=target]:checked')?.value === 'normalize';
-  const convertMathType = normalize || ($('opt-src-mt')?.checked ?? true);
-  const convertLatex = $('opt-src-latex')?.checked ?? true;
-  if (!convertMathType && !convertLatex) {
-    $('convert-summary').innerHTML = '<span class="warn">Hãy chọn ít nhất một loại nguồn cần chuyển (MathType hoặc LaTeX).</span>';
-    return;
-  }
+  const src = convSrc(), dst = convDst();
+  if (src === dst && src !== 'mathtype') { $('convert-summary').innerHTML = '<span class="warn">Nguồn và đích giống nhau: không có gì để chuyển.</span>'; return; }
+  const normalize = src === 'mathtype' && dst === 'mathtype';
+  // kinds of equations that take part (MathType→MathType also redoes Word equations; ->MathType goes through Word equations)
+  const kinds = new Set([SRC_KIND[src]]);
+  if (dst === 'mathtype') kinds.add('native');
   $('btn-convert').disabled = true;
   const bar = $('progress');
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
     $('convert-summary').textContent = 'Đang đọc các đoạn…';
-    const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { convertMathType, convertLatex });
+    const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
     let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
     const reasons = {}, writes = [], backup = [];
-    const toMathType = document.querySelector('input[name=target]:checked')?.value !== 'word';
     for (const it of items) {
       let r;
-      if (toMathType) {
+      if (dst === 'mathtype') {
         // LaTeX text -> Word equation first, then every Word equation -> MathType object
-        const a = convertMathTypeInPackage(it.pkg, { convertMathType: normalize, convertLatex, display: false });
+        const a = convertMathTypeInPackage(it.pkg, { convertMathType: normalize, convertLatex: src === 'latex', display: false });
         const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...mtConvertOptions(), defaultSize: await mtOptions().then((o) => o.size) });
         r = { converted: b.converted, convertedLatex: a.convertedLatex || 0, convertedMathType: 0, kept: [...a.kept, ...b.kept], changed: b.changed, pkg: b.changed ? b.pkg : a.pkg };
         if (!b.changed && a.changed) r.converted = a.converted;
+      } else if (dst === 'latex') {
+        r = convertEquationsToLatexText(it.pkg, { fromMathType: src === 'mathtype', fromNative: src === 'word' });
       } else {
-        r = convertMathTypeInPackage(it.pkg, { convertMathType, convertLatex, display: $('opt-display').checked });
+        r = convertMathTypeInPackage(it.pkg, { convertMathType: src === 'mathtype', convertLatex: src === 'latex', display: $('opt-display').checked });
       }
       converted += r.converted;
       convertedMathType += (r.convertedMathType || 0);

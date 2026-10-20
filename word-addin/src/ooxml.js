@@ -454,6 +454,66 @@ export function rewriteEquations(pkg, transform, options = {}) {
   return out;
 }
 
+/**
+ * Replace equations by LaTeX text ($…$, or $$…$$ for display equations).
+ * options.fromMathType / options.fromNative: which kinds to convert (default both).
+ * Returns {pkg, converted, convertedMathType, convertedNative, kept: [{reason}], changed}.
+ */
+export function convertEquationsToLatexText(pkg, options = {}) {
+  const fromMt = options.fromMathType !== false;
+  const fromNative = options.fromNative !== false;
+  const scan = scanPackage(pkg);
+  const { equations, parts, docPart } = scan;
+  let doc = scan.doc;
+  const result = { pkg, converted: 0, convertedMathType: 0, convertedNative: 0, kept: [], changed: false };
+  const edits = [];
+  const removedRel = new Set();
+  const textRun = (rpr, tex, delim) => `<w:r>${rpr}<w:t xml:space="preserve">${escapeXml(delim + tex + delim)}</w:t></w:r>`;
+  for (const eq of equations) {
+    if (eq.kind === 'mathtype' ? !fromMt : eq.kind !== 'native' || !fromNative) continue;
+    if (eq.latex === null) { result.kept.push({ reason: eq.error }); continue; }
+    if (eq.kind === 'native') {
+      let [start, end] = eq.span;
+      const para = /<m:oMathPara>\s*$/.exec(doc.slice(0, start)), paraEnd = /^\s*<\/m:oMathPara>/.exec(doc.slice(end));
+      const display = Boolean(para && paraEnd);
+      if (display) { start -= para[0].length; end += paraEnd[0].length; }
+      edits.push({ start, end, repl: textRun('', eq.latex, display ? '$$' : '$') });
+      result.convertedNative++;
+    } else {
+      const run = eq.obj.run;
+      const piece = (inner) => (inner.trim() ? `${run.open}${run.rpr}${inner}</w:r>` : '');
+      edits.push({ start: run.start, end: run.end, repl: piece(run.before) + textRun(run.rpr, eq.latex, '$') + piece(run.after) });
+      removedRel.add(eq.obj.oleId); removedRel.add(eq.obj.imageId);
+      result.convertedMathType++;
+    }
+    result.converted++;
+  }
+  if (!edits.length) return result;
+  edits.sort((a, b) => b.start - a.start);
+  for (const e of edits) doc = doc.slice(0, e.start) + e.repl + doc.slice(e.end);
+  const relsPart = parts.get('/word/_rels/document.xml.rels');
+  let relsXml = relsPart ? xmlData(relsPart) : '';
+  const dropParts = [];
+  for (const id of removedRel) {
+    if (!id || new RegExp(`r:(?:id|embed|link|pict)="${id}"`).test(doc)) continue;
+    const tag = new RegExp(`<Relationship\\b[^>]*\\bId="${id}"[^>]*/>`).exec(relsXml);
+    if (!tag) continue;
+    const target = /\bTarget="([^"]+)"/.exec(tag[0]);
+    relsXml = relsXml.replace(tag[0], '');
+    if (target && !new RegExp(`Target="${target[1]}"`).test(relsXml)) dropParts.push(resolveTarget(target[1]));
+  }
+  const replaceBody = (text, part, newXml) => text.replace(part.body, () => part.body.replace(/(<pkg:xmlData>)[\s\S]*(<\/pkg:xmlData>)/, (_m, a, b) => a + newXml + b));
+  let text = replaceBody(pkg, docPart, ensureNamespaces(doc.trimStart()));
+  if (relsPart) text = replaceBody(text, relsPart, relsXml);
+  for (const name of dropParts) {
+    const p = splitParts(text).get(name);
+    if (p) text = text.slice(0, p.start) + text.slice(p.end);
+  }
+  result.pkg = text;
+  result.changed = true;
+  return result;
+}
+
 export function makeEquationPackage(omml) {
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?mso-application progid="Word.Document"?>

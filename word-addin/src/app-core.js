@@ -1,6 +1,6 @@
 // Document-level logic shared by the task pane and the node tests: scan a body package into a flat equation list with
 // paragraph ordinals, build find/replace previews, and rewrite one paragraph package at a time.
-import { scanPackage, convertMathTypeInPackage, rewriteEquations, makeEquationPackage, latexToOmml } from './ooxml.js';
+import { scanPackage, convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, makeEquationPackage, latexToOmml } from './ooxml.js';
 
 export function paragraphOrdinals(doc) {
   const starts = [];
@@ -47,6 +47,6 @@ export function previewReplace(scanned, opts) {
   return rows;
 }
 
-export { convertMathTypeInPackage, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml };
+export { convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml };
 
 export { convertNativeToMathType, makeMathTypePackage, browserRender } from './mathtype-object.js';

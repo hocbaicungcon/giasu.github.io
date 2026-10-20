@@ -5,7 +5,7 @@ import { tidy, join, mtefToLatex, MtefError, oleToLatex } from '../src/mtef.js';
 import { latexToOmml, latexToMathml, LatexError } from '../src/latex2omml.js';
 import { ommlToLatex } from '../src/omml.js';
 import { parseXml } from '../src/xml.js';
-import { scanBody, previewReplace, convertMathTypeInPackage, rewriteEquations } from '../src/app-core.js';
+import { scanBody, previewReplace, convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations } from '../src/app-core.js';
 import { mathTypeObject, convertNativeToMathType, makeMathTypePackage } from '../src/mathtype-object.js';
 import { latexToEquationStream } from '../src/mtef-writer.js';
 import { buildOle } from '../src/ole-writer.js';
@@ -70,6 +70,18 @@ test('fixture scan finds real MathType equations', () => {
   assert.ok(s.equations.length > 100);
   assert.ok(s.equations.every((e) => e.kind === 'mathtype' && e.latex !== null));
   assert.ok(s.equations.some((e) => e.latex.includes(`${B}frac`)));
+});
+test('equations -> LaTeX text: MathType, then Word equations', () => {
+  const mt = convertEquationsToLatexText(fixture, {});
+  assert.ok(mt.changed && mt.convertedMathType > 100 && mt.kept.length === 0);
+  assert.ok(!/<w:object\b/.test(mt.pkg));
+  assert.ok(/<w:t[^>]*>\$[^<]+\$<\/w:t>/.test(mt.pkg));
+  const doc = /<pkg:part pkg:name="\/word\/document\.xml"[^>]*>\s*<pkg:xmlData>([\s\S]*?)<\/pkg:xmlData>/.exec(mt.pkg)[1];
+  parseXml(doc);
+  const word = convertMathTypeInPackage(fixture, { display: true });
+  const lt = convertEquationsToLatexText(word.pkg, { fromMathType: false });
+  assert.ok(lt.convertedNative > 100 && !/<m:oMath\b/.test(lt.pkg));
+  assert.equal(convertEquationsToLatexText(fixture, { fromMathType: false, fromNative: false }).changed, false);
 });
 test('fixture convert: no MathType object left, OMML well formed', () => {
   const r = convertMathTypeInPackage(fixture, { display: true });
