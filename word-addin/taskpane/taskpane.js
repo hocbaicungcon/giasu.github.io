@@ -13,9 +13,9 @@ const state = { scanned: null, lastBackup: null, examLoaded: false };
 let lastPreview = [];
 
 // ---------------------------------------------------------------- tabs
-// Public edition: only Công thức, Đề thi, Giới thiệu (light and quick on old Word). The full edition is opened with ?edition=full (see manifest-full.xml).
+// Public edition: only Công thức, Đề thi, Hình vẽ, Giới thiệu (light and quick on old Word). The full edition is opened with ?edition=full (see manifest-full.xml).
 const FULL = /[?&]edition=full\b/.test(location.search);
-const LITE_TABS = ['eq', 'exam', 'about'];
+const LITE_TABS = ['eq', 'exam', 'figures', 'about'];
 if (!FULL) document.querySelectorAll('nav button').forEach((b) => { if (!LITE_TABS.includes(b.dataset.tab)) b.remove(); });
 function switchTab(name) {
   if (!FULL && !LITE_TABS.includes(name)) name = 'eq';
