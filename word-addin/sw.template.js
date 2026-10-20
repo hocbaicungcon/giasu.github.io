@@ -23,7 +23,8 @@ async function age(url) {
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
-    await Promise.all(FILES.map(async (f) => { try { await cache.add(new Request(f, { cache: 'reload' })); await stamp(new URL(f, self.location).href); } catch (e) { /* one missing file must not block the install */ } }));
+    const one = async (f) => { try { await cache.add(new Request(f, { cache: 'reload' })); await stamp(new URL(f, self.location).href); } catch (e) { /* one missing file must not block the install */ } };
+    for (let i = 0; i < FILES.length; i += 6) await Promise.all(FILES.slice(i, i + 6).map(one));   // 6 at a time: gentle on weak machines
     self.skipWaiting();
   })());
 });

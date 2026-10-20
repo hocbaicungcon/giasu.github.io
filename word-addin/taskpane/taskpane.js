@@ -7,6 +7,12 @@ import { createVisualEditor } from './visual-editor.js';
 import { pickEquation } from '../src/cursor-eq.js';
 import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
 
+// Weak machine (few cores / little RAM / reduced-motion / ?lite): drop animations and shadows via the .lite class.
+try {
+  const nav = navigator;
+  if (/[?&]lite\b/.test(location.search) || (nav.hardwareConcurrency && nav.hardwareConcurrency <= 4) || (nav.deviceMemory && nav.deviceMemory <= 4) || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) document.documentElement.classList.add('lite');
+} catch { /* old web view */ }
+
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const state = { scanned: null, lastBackup: null, examLoaded: false };
@@ -230,7 +236,12 @@ $('btn-restore').addEventListener('click', async () => {
 
 // ---------------------------------------------------------------- formula editor
 let visual = null;
-function renderEditorPreview() {
+let previewTimer = 0;
+function renderEditorPreview() {   // coalesce keystrokes: one KaTeX render per pause (longer on weak machines)
+  clearTimeout(previewTimer);
+  previewTimer = setTimeout(renderEditorPreviewNow, document.documentElement.classList.contains('lite') ? 220 : 60);
+}
+function renderEditorPreviewNow() {
   if (visual && visual.active()) visual.pull();
   const tex = $('editor-latex')?.value.trim() || '';
   const previewEl = $('editor-preview');

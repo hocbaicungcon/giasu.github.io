@@ -615,3 +615,8 @@ body #mathlive-suggestion-popover .ML__popover__keybinding { font-size: 10px; }
 .sec-list { list-style: none; margin: 6px 0; padding: 0; display: grid; gap: 4px; }
 .sec-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .sec-list select { max-width: 55%; }
+
+/* Weak machines: no animation, no blur/shadow repaint cost */
+.lite *, .lite *::before, .lite *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+.lite .ac-popup, .lite body #mathlive-suggestion-popover, .lite .switch-track::after, .lite button { box-shadow: none !important; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

@@ -9328,7 +9328,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         flush();
         const tex = s.slice(i + 1, j);
         try {
-          out += ctx.math ? ctx.math(tex, fmt) : latexToOmml(tex);
+          const parts = tex.split(BLANK_RE);
+          parts.forEach((part, k) => {
+            if (k) out += blankRun(ctx);
+            if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
+          });
         } catch (e3) {
           out += run4(tex.replace(/\\[a-zA-Z]+/g, "").replace(/[{}]/g, ""));
         }
@@ -9565,7 +9569,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const acc = color === "bw" ? "222222" : accent.replace("#", "");
     const sz = Math.round(fontPt2 * 2);
     const half = sz;
-    const ctx = { cps, pics, fs: fontPt2 / 0.75, baseSz: sz, math: (tex) => bigBlanks(latexToOmml(tex.replace(/\\boxed\{\\phantom\{[^}]*\}\}/g, "\\square")), half).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
+    const ctx = { cps, pics, fs: fontPt2 / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
     const f = { sz, emoji: Math.round(sz * 1.5) };
     const skipped = [];
     let body = "", count = 0;
@@ -9645,7 +9649,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const media = images.map((im) => `<pkg:part pkg:name="/word/media/${im.rid}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b643(im.png)}</pkg:binaryData></pkg:part>`).join("");
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?mso-application progid="Word.Document"?><pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${NS3}><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part>${images.length ? `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${rels}</Relationships></pkg:xmlData></pkg:part>` : ""}${media}</pkg:package>`;
   }
-  var esc6, EMOJI_FONT, SHAPES, emojiOf, bigBlanks, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
+  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, blankRun, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
   var init_worksheet_docx = __esm({
     "src/worksheet-docx.js"() {
       init_latex2omml();
@@ -9656,10 +9660,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       EMOJI_FONT = '<w:rFonts w:ascii="Segoe UI Emoji" w:hAnsi="Segoe UI Emoji" w:eastAsia="Segoe UI Emoji"/>';
       SHAPES = { shapecircle: "\u26AA", shaperectangle: "\u25AD", shapesquare: "\u2B1C", shapetriangle: "\u25B3" };
       emojiOf = (id, cps) => cps[id] ? String.fromCodePoint(...String(cps[id]).split("-").map((h) => parseInt(h, 16))) : SHAPES[id] || "\u25CF";
-      bigBlanks = (xml, half) => {
-        const big = Math.round(half * 1.8), font = '<w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>';
-        const run4 = (rp, t) => `<m:r>${rp}<m:t xml:space="preserve">${t}</m:t></m:r>`;
-        return xml.replace(/<m:r>(<w:rPr>.*?<\/w:rPr>)<m:t xml:space="preserve">([^<]*□[^<]*)<\/m:t><\/m:r>/g, (_, rp, t) => t.split("\u25A1").map((part, i, arr) => (part ? run4(rp, part) : "") + (i < arr.length - 1 ? run4(`<w:rPr>${font}<w:sz w:val="${big}"/><w:szCs w:val="${big}"/></w:rPr>`, "\u2002\u25A1\u2002") : "")).join(""));
+      BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
+      blankRun = (ctx) => {
+        const k = Math.max(0.6, (ctx.fs || 16) / 16);
+        return sceneRun(tikzToScene(`\\draw[line width=1pt] (0,0) rectangle (${(1.1 * k).toFixed(2)},${(0.85 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, "\xD4 tr\u1ED1ng");
       };
       para = (inner, o = {}) => {
         var _a8, _b;
@@ -13240,6 +13244,11 @@ ${contentTypesOverrides}
   }
 
   // taskpane/taskpane.js
+  try {
+    const nav = navigator;
+    if (/[?&]lite\b/.test(location.search) || nav.hardwareConcurrency && nav.hardwareConcurrency <= 4 || nav.deviceMemory && nav.deviceMemory <= 4 || window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("lite");
+  } catch (e3) {
+  }
   var $ = (id) => document.getElementById(id);
   var esc13 = (s) => String(s != null ? s : "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   var state2 = { scanned: null, lastBackup: null, examLoaded: false };
@@ -13499,7 +13508,12 @@ ${contentTypesOverrides}
     }
   });
   var visual = null;
+  var previewTimer = 0;
   function renderEditorPreview() {
+    clearTimeout(previewTimer);
+    previewTimer = setTimeout(renderEditorPreviewNow, document.documentElement.classList.contains("lite") ? 220 : 60);
+  }
+  function renderEditorPreviewNow() {
     var _a8, _b, _c, _d, _e;
     if (visual && visual.active()) visual.pull();
     const tex = ((_a8 = $("editor-latex")) == null ? void 0 : _a8.value.trim()) || "";
