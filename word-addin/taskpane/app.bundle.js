@@ -896,24 +896,24 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         item() {
           this.ws();
           let atom = this.atom();
-          let sub3 = null, sup = null;
+          let sub4 = null, sup2 = null;
           for (; ; ) {
             this.ws();
             const c = this.s[this.i];
-            if (c === "^" && !sup) {
+            if (c === "^" && !sup2) {
               this.i++;
-              sup = this.arg(true);
-            } else if (c === "_" && !sub3) {
+              sup2 = this.arg(true);
+            } else if (c === "_" && !sub4) {
               this.i++;
-              sub3 = this.arg(true);
+              sub4 = this.arg(true);
             } else break;
           }
           if (atom.k === "pendNary" || atom.k === "pendFunc") {
-            atom.sub = sub3;
-            atom.sup = sup;
+            atom.sub = sub4;
+            atom.sup = sup2;
             return atom;
           }
-          if (sub3 || sup) return { k: "script", base: atom, sub: sub3, sup };
+          if (sub4 || sup2) return { k: "script", base: atom, sub: sub4, sup: sup2 };
           return atom;
         }
         arg(inScript = false) {
@@ -1299,14 +1299,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         return fail("unsupported " + n.k);
     }
   }
-  function script(w, sub3, sup) {
-    const sel = sub3 && sup ? 29 : sub3 ? 27 : 28;
+  function script(w, sub4, sup2) {
+    const sel = sub4 && sup2 ? 29 : sub4 ? 27 : 28;
     w.template(sel, 0, () => {
       w.sizeRecord(w.nested());
       w.within(w.size, () => {
-        if (sub3) slotLine(w, sub3);
+        if (sub4) slotLine(w, sub4);
         else w.nullLine();
-        if (sup) slotLine(w, sup);
+        if (sup2) slotLine(w, sup2);
         else if (sel === 27) w.nullLine();
       });
     });
@@ -1937,10 +1937,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       case "script": {
         const base = nodeBox(n.base, fs, level);
         const sfs = scriptFs(fs);
-        const sup = n.sup ? layout(n.sup, sfs, level + 1) : null, sub3 = n.sub ? layout(n.sub, sfs, level + 1) : null;
-        const supUp = Math.max(base.a * 0.62, fs * 0.38) + (sup ? sup.d * 0.2 : 0), subDown = Math.max(base.d, 0) + fs * 0.18 + (sub3 ? 0 : 0);
-        const w = base.w + Math.max(sup ? sup.w : 0, sub3 ? sub3.w : 0) + fs * 0.04;
-        return { w, a: Math.max(base.a, sup ? supUp + sup.a : 0), d: Math.max(base.d, sub3 ? subDown + sub3.d - fs * 0.1 : 0), draw: (x, y) => base.draw(x, y) + (sup ? sup.draw(x + base.w + fs * 0.03, y - supUp) : "") + (sub3 ? sub3.draw(x + base.w + fs * 0.03, y + subDown - fs * 0.12) : "") };
+        const sup2 = n.sup ? layout(n.sup, sfs, level + 1) : null, sub4 = n.sub ? layout(n.sub, sfs, level + 1) : null;
+        const supUp = Math.max(base.a * 0.62, fs * 0.38) + (sup2 ? sup2.d * 0.2 : 0), subDown = Math.max(base.d, 0) + fs * 0.18 + (sub4 ? 0 : 0);
+        const w = base.w + Math.max(sup2 ? sup2.w : 0, sub4 ? sub4.w : 0) + fs * 0.04;
+        return { w, a: Math.max(base.a, sup2 ? supUp + sup2.a : 0), d: Math.max(base.d, sub4 ? subDown + sub4.d - fs * 0.1 : 0), draw: (x, y) => base.draw(x, y) + (sup2 ? sup2.draw(x + base.w + fs * 0.03, y - supUp) : "") + (sub4 ? sub4.draw(x + base.w + fs * 0.03, y + subDown - fs * 0.12) : "") };
       }
       case "d": {
         const items = n.items.map((it) => layout(it, fs, level));
@@ -2027,9 +2027,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         } };
       }
       case "sPre": {
-        const sfs = scriptFs(fs), sub3 = layout(n.sub || [], sfs, level + 1), sup = layout(n.sup || [], sfs, level + 1), body = layout(n.e, fs, level);
-        const w = Math.max(sub3.w, sup.w);
-        return hbox([{ w, a: fs * 0.6, d: fs * 0.3, draw: (x, y) => sup.draw(x, y - fs * 0.4) + sub3.draw(x, y + fs * 0.2) }, body]);
+        const sfs = scriptFs(fs), sub4 = layout(n.sub || [], sfs, level + 1), sup2 = layout(n.sup || [], sfs, level + 1), body = layout(n.e, fs, level);
+        const w = Math.max(sub4.w, sup2.w);
+        return hbox([{ w, a: fs * 0.6, d: fs * 0.3, draw: (x, y) => sup2.draw(x, y - fs * 0.4) + sub4.draw(x, y + fs * 0.2) }, body]);
       }
       default:
         return empty();
@@ -2448,19 +2448,19 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     if (selector === 27 || selector === 28 || selector === 29) {
       const nonempty = text.filter((v) => v);
-      let sub3, sup;
-      if (selector === 29) [sub3, sup] = [...text, "", ""].slice(0, 2);
+      let sub4, sup2;
+      if (selector === 29) [sub4, sup2] = [...text, "", ""].slice(0, 2);
       else if (selector === 27) {
-        sub3 = nonempty.length ? nonempty[0] : "";
-        sup = "";
+        sub4 = nonempty.length ? nonempty[0] : "";
+        sup2 = "";
       } else {
-        sub3 = "";
-        sup = nonempty.length ? nonempty[nonempty.length - 1] : "";
+        sub4 = "";
+        sup2 = nonempty.length ? nonempty[nonempty.length - 1] : "";
       }
       if (!parts.length) parts.push("{}");
       let previous = parts[parts.length - 1];
-      if (sup && SCRIPT_RE_SUP.test(previous) || sub3 && SCRIPT_RE_SUB.test(previous)) previous = "{" + previous + "}";
-      const suffix = (sub3 ? `_{${sub3}}` : "") + (sup ? `^{${sup}}` : "");
+      if (sup2 && SCRIPT_RE_SUP.test(previous) || sub4 && SCRIPT_RE_SUB.test(previous)) previous = "{" + previous + "}";
+      const suffix = (sub4 ? `_{${sub4}}` : "") + (sup2 ? `^{${sup2}}` : "");
       parts[parts.length - 1] = previous.trimEnd() + suffix;
       return;
     }
@@ -2899,14 +2899,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     if (["sSup", "sSub", "sSubSup", "sPre"].includes(tag)) {
       let base = subOf(el, "e");
-      const sub3 = subOf(el, "sub");
-      let sup = subOf(el, "sup");
-      if (tag === "sPre") return [`{}_{${sub3}}^{${sup}}${base}`];
+      const sub4 = subOf(el, "sub");
+      let sup2 = subOf(el, "sup");
+      if (tag === "sPre") return [`{}_{${sub4}}^{${sup2}}${base}`];
       const fn = /^\\mathrm\{([A-Za-z]+)\}$/.exec(base);
       if (fn && FUNCTIONS.has(fn[1])) base = BS3 + fn[1];
-      if (sup === `^{${BS3}circ}`) sup = `${BS3}circ`;
-      if (/[\^_]\S*$/.test(base) && (tag !== "sSub" && sup || tag !== "sSup" && sub3)) base = `{${base}}`;
-      return [base + (sub3 && tag !== "sSup" ? `_{${sub3}}` : "") + (sup && tag !== "sSub" ? `^{${sup}}` : "")];
+      if (sup2 === `^{${BS3}circ}`) sup2 = `${BS3}circ`;
+      if (/[\^_]\S*$/.test(base) && (tag !== "sSub" && sup2 || tag !== "sSup" && sub4)) base = `{${base}}`;
+      return [base + (sub4 && tag !== "sSup" ? `_{${sub4}}` : "") + (sup2 && tag !== "sSub" ? `^{${sup2}}` : "")];
     }
     if (tag === "rad") {
       const body = subOf(el, "e"), deg = subOf(el, "deg");
@@ -2917,8 +2917,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const chr = prop(el, "chr", "\u222B");
       const op = tables_default.NARY[chr];
       if (op === void 0) throw new OmmlError("operator " + chr);
-      const sub3 = subOf(el, "sub"), sup = subOf(el, "sup"), body = subOf(el, "e");
-      return [op + (sub3 ? `_{${sub3}}` : "") + (sup ? `^{${sup}}` : "") + (body ? " " + body : "")];
+      const sub4 = subOf(el, "sub"), sup2 = subOf(el, "sup"), body = subOf(el, "e");
+      return [op + (sub4 ? `_{${sub4}}` : "") + (sup2 ? `^{${sup2}}` : "") + (body ? " " + body : "")];
     }
     if (tag === "d") {
       const beg = prop(el, "begChr", "("), end = prop(el, "endChr", ")"), sep = prop(el, "sepChr", "|");
@@ -8173,8 +8173,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function flow(o = {}) {
     const preset = FLOW[o.kind] || FLOW.foodchain, items = list2(o.items, preset.items), arrows = list2(o.arrows, preset.arrows);
-    const sub3 = o.kind === "custom" || !o.levels ? [] : preset.sub, vertical = o.dir === "v", cv = new Canvas2();
-    const bw = items.map((t, i) => Math.max(textW(t, 16) + 30, 84, sub3[i] ? textW(sub3[i], 12) + 8 : 0)), bh = 40, gap = vertical ? 54 : 70 + (arrows.length ? Math.max(0, Math.max(...arrows.map((a) => textW(a, 13))) - 50) : 0);
+    const sub4 = o.kind === "custom" || !o.levels ? [] : preset.sub, vertical = o.dir === "v", cv = new Canvas2();
+    const bw = items.map((t, i) => Math.max(textW(t, 16) + 30, 84, sub4[i] ? textW(sub4[i], 12) + 8 : 0)), bh = 40, gap = vertical ? 54 : 70 + (arrows.length ? Math.max(0, Math.max(...arrows.map((a) => textW(a, 13))) - 50) : 0);
     if (vertical) {
       const wmax = Math.max(...bw), W2 = wmax + 60 + (arrows.length ? Math.max(...arrows.map((a) => textW(a, 13))) + 20 : 0), H2 = items.length * bh + (items.length - 1) * gap + 40;
       items.forEach((t, i) => {
@@ -8188,13 +8188,13 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       });
       return frame2(cv, W2, H2);
     }
-    const W = bw.reduce((a, b) => a + b, 0) + gap * (items.length - 1) + 40, H = 110 + (sub3.length ? 26 : 0);
+    const W = bw.reduce((a, b) => a + b, 0) + gap * (items.length - 1) + 40, H = 110 + (sub4.length ? 26 : 0);
     let x = 20;
     items.forEach((t, i) => {
       const y = 36;
       cv.rect(x, y, bw[i], bh, { fill: PALETTE[i % PALETTE.length], w: 1.8 });
       cv.text(t, [x + bw[i] / 2, y + bh / 2], { size: 16 });
-      if (sub3[i]) cv.text(sub3[i], [x + bw[i] / 2, y + bh + 20], { size: 12 });
+      if (sub4[i]) cv.text(sub4[i], [x + bw[i] / 2, y + bh + 20], { size: 12 });
       if (i < items.length - 1) {
         cv.arrow([x + bw[i] + 5, y + bh / 2], [x + bw[i] + gap - 5, y + bh / 2], { w: 2 });
         if (arrows[i]) cv.text(arrows[i], [x + bw[i] + gap / 2, y + bh / 2 - 16], { size: 13 });
@@ -8492,8 +8492,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       $2("fig-kind").value = k;
       $2("fig-form").innerHTML = forms[k]();
       $2("fig-sub").innerHTML = "";
-      const sub3 = $2("fig-form").querySelector(".sub-field");
-      if (sub3) $2("fig-sub").appendChild(sub3);
+      const sub4 = $2("fig-form").querySelector(".sub-field");
+      if (sub4) $2("fig-sub").appendChild(sub4);
       $2("fig-form").querySelectorAll("input,textarea,select").forEach((el) => el.addEventListener("input", schedule));
       if (CATALOGS[k]) {
         $2("g-kind").addEventListener("change", () => {
@@ -8996,9 +8996,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       } else if (c === "*") {
         const [n, e3] = group3(s, i + 1);
         const [inner, e22] = group3(s, e3);
-        const sub3 = parseSpec(inner);
-        for (let k = 0; k < parseInt(n, 10); k++) cols.push(...sub3.cols);
-        vlines = vlines || sub3.vlines;
+        const sub4 = parseSpec(inner);
+        for (let k = 0; k < parseInt(n, 10); k++) cols.push(...sub4.cols);
+        vlines = vlines || sub4.vlines;
         i = e22;
       } else if (c === ">" || c === "@" || c === "!" || c === "<") {
         const [, e3] = group3(s, i + 1);
@@ -10196,7 +10196,7 @@ def run(raw):
     }
     const rpr2 = ((_a8 = /<w:rPr>([\s\S]*?)<\/w:rPr>/.exec(run4)) == null ? void 0 : _a8[1]) || "";
     const on = (tag) => new RegExp(`<w:${tag}\\b(?![^>]*w:val="(?:0|false|none)")`).test(rpr2);
-    const sup = /<w:vertAlign w:val="superscript"/.test(rpr2), sub3 = /<w:vertAlign w:val="subscript"/.test(rpr2);
+    const sup2 = /<w:vertAlign w:val="superscript"/.test(rpr2), sub4 = /<w:vertAlign w:val="subscript"/.test(rpr2);
     let out = "";
     for (const m of run4.matchAll(/<w:t\b[^>]*>([^<]*)<\/w:t>|<w:tab\/>|<w:br\b[^>]*\/>/g)) {
       if (m[0].startsWith("<w:tab")) {
@@ -10219,8 +10219,8 @@ def run(raw):
     if (on("b")) out = `<b>${out}</b>`;
     if (on("i")) out = `<i>${out}</i>`;
     if (on("u")) out = `<u>${out}</u>`;
-    if (sup) out = `<sup>${out}</sup>`;
-    if (sub3) out = `<sub>${out}</sub>`;
+    if (sup2) out = `<sup>${out}</sup>`;
+    if (sub4) out = `<sub>${out}</sub>`;
     return out;
   }
   function childrenHtml(children2, images, skip = { n: 0 }) {
@@ -10761,7 +10761,11 @@ renderStart();
     valign = "ctr",
     linkTarget = null,
     linkTooltip = "",
-    runs: runs2 = null
+    runs: runs2 = null,
+    inset = 14e4,
+    rightInset = null,
+    fit: fit2 = true,
+    fontScale = 0
   }) {
     const geom = round ? `<a:prstGeom prst="roundRect"><a:avLst><a:gd name="adj" fmla="val ${roundAdj}"/></a:avLst></a:prstGeom>` : '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom>';
     const fillXml = fill ? `<a:solidFill><a:srgbClr val="${fill}"/></a:solidFill>` : "<a:noFill/>";
@@ -10810,11 +10814,20 @@ renderStart();
         ${lineXml}
       </p:spPr>
       <p:txBody>
-        <a:bodyPr wrap="square" lIns="140000" tIns="140000" rIns="140000" bIns="140000" rtlCol="0" ${vAnchor}/>
+        <a:bodyPr wrap="square" lIns="${inset}" tIns="${inset}" rIns="${rightInset != null ? rightInset : inset}" bIns="${inset}" rtlCol="0" ${vAnchor}>${fit2 ? fontScale ? `<a:normAutofit fontScale="${fontScale}" lnSpcReduction="10000"/>` : "<a:normAutofit/>" : ""}</a:bodyPr>
         <a:lstStyle/>
         ${bodyContent}
       </p:txBody>
     </p:sp>`;
+  }
+  function makePic({ id, rId, x, y, cx, cy, name = "H\xECnh", linkTarget = null, linkTooltip = "" }) {
+    const linkXml = linkTarget ? `<a:hlinkClick r:id="${linkTarget}" tooltip="${escapeXml(linkTooltip)}" action="ppaction://hlinksldjump"/>` : "";
+    return `
+    <p:pic>
+      <p:nvPicPr><p:cNvPr id="${id}" name="${escapeXml(name)}" descr="${escapeXml(name)}">${linkXml}</p:cNvPr><p:cNvPicPr><a:picLocks noChangeAspect="1"/></p:cNvPicPr><p:nvPr/></p:nvPicPr>
+      <p:blipFill><a:blip r:embed="${rId}"/><a:stretch><a:fillRect/></a:stretch></p:blipFill>
+      <p:spPr><a:xfrm><a:off x="${x}" y="${y}"/><a:ext cx="${cx}" cy="${cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></p:spPr>
+    </p:pic>`;
   }
   function makeSlideXml(bgHex, shapesXml, show = true) {
     const showAttr = show ? "" : ' show="0"';
@@ -10835,50 +10848,358 @@ renderStart();
       '<Relationship Id="rIdLayout" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout" Target="../slideLayouts/slideLayout1.xml"/>'
     ];
     for (const lnk of links) {
-      rels.push(`<Relationship Id="${lnk.id}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide" Target="${lnk.target}"/>`);
+      rels.push(`<Relationship Id="${lnk.id}" Type="${lnk.image ? REL_IMAGE : "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide"}" Target="${lnk.target}"/>`);
     }
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
   ${rels.join("\n  ")}
 </Relationships>`;
   }
-  function extractTextWithMath(blocks, oleMap = /* @__PURE__ */ new Map()) {
-    let full = "";
-    for (const b of blocks) {
-      if (b.kind !== "p") continue;
-      let pText = "";
-      for (const c of b.children) {
-        if (typeof c !== "string") continue;
-        const objM = /<o:OLEObject\b[^>]*\br:id="([^"]+)"/.exec(c);
-        if (objM && oleMap.has(objM[1])) {
-          pText += " " + oleMap.get(objM[1]) + " ";
+  function texToPlain(tex) {
+    let s = ` ${tex} `;
+    s = s.replace(/\\(?:left|right)\s*\./g, "").replace(/\\(?:left|right|bigl|bigr|Bigl|Bigr|big|Big|displaystyle|textstyle)(?![A-Za-z])\s*/g, "");
+    s = s.replace(/\\[,;:!> ]|\\q?quad(?![A-Za-z])/g, " ").replace(/\\(?:dfrac|tfrac|cfrac)(?![A-Za-z])/g, "\\frac");
+    s = s.replace(/\\mathbb\s*\{([A-Z])\}/g, (m, x) => BB2[x] || x);
+    s = s.replace(/\\(?:text|textbf|mathrm|mathbf|mathit|mathsf|mathcal|operatorname|boldsymbol)\s*\{([^{}]*)\}/g, "$1");
+    s = s.replace(/\^\s*\{?\s*\\circ\s*\}?/g, "\xB0");
+    s = s.replace(/\\begin\{(cases|array|aligned|matrix|pmatrix|bmatrix|vmatrix)\}(\{[^{}]*\})?([\s\S]*?)\\end\{\1\}/g, (m, env, spec, body) => {
+      const rows = body.split(/\\\\/).map((r) => r.trim().replace(/&/g, "  ")).filter(Boolean);
+      if (env === "cases") return `{ ${rows.join("; ")} `;
+      return (env === "vmatrix" ? "|" : "(") + rows.join("; ") + (env === "vmatrix" ? "|" : ")");
+    });
+    for (let i = 0; i < 14; i++) {
+      const before = s;
+      s = s.replace(/\\sqrt\s*\[([^\]]*)\]\s*\{([^{}]*)\}/g, (m, n, x) => `${sup(n)}\u221A${paren(x)}`);
+      s = s.replace(/\\sqrt\s*\{([^{}]*)\}/g, (m, x) => `\u221A${paren(x)}`);
+      s = s.replace(/\\frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, (m, a, b) => `${paren(a)}/${paren(b)}`);
+      s = s.replace(/\\binom\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, (m, a, b) => `C(${a.trim()}; ${b.trim()})`);
+      s = s.replace(/\\(?:overrightarrow|vec)\s*\{([^{}]*)\}/g, "$1\u20D7");
+      s = s.replace(/\\(?:overline|bar)\s*\{([^{}]*)\}/g, "$1\u0305");
+      s = s.replace(/\\widehat\s*\{([^{}]*)\}/g, "\u2220$1").replace(/\\hat\s*\{([^{}]*)\}/g, "$1\u0302");
+      s = s.replace(/\^\s*\{([^{}]*)\}/g, (m, x) => sup(x));
+      s = s.replace(/_\s*\{([^{}]*)\}/g, (m, x) => sub3(x));
+      if (s === before) break;
+    }
+    s = s.replace(/\^\s*([0-9A-Za-z+\-−])/g, (m, x) => sup(x)).replace(/_\s*([0-9A-Za-z+\-−])/g, (m, x) => sub3(x));
+    s = s.replace(/\\([A-Za-z]+)/g, (m, name) => SYM2[name] !== void 0 ? SYM2[name] : name);
+    s = s.replace(/\\\\/g, "; ").replace(/\\\|/g, "\u2016").replace(/\\([^A-Za-z])/g, "$1");
+    s = s.replace(/[{}]/g, "").replace(/&/g, " ").replace(/\s+/g, " ").trim();
+    return s;
+  }
+  function imageParts(pkg) {
+    const parts = splitParts(pkg), map = /* @__PURE__ */ new Map();
+    const rels = parts.get("/word/_rels/document.xml.rels");
+    if (!rels) return map;
+    for (const tag of rels.body.match(/<Relationship\b[^>]*>/g) || []) {
+      const id = /\bId="([^"]+)"/.exec(tag), target = /\bTarget="([^"]+)"/.exec(tag);
+      if (!id || !target || /TargetMode="External"/.test(tag)) continue;
+      const part = parts.get(target[1].startsWith("/") ? target[1] : "/word/" + target[1].replace(/^\.\//, ""));
+      if (!part) continue;
+      const type = /pkg:contentType="([^"]+)"/.exec(part.attrs), bin = /<pkg:binaryData>([\s\S]*?)<\/pkg:binaryData>/.exec(part.body);
+      const ext = type && IMG_EXT[type[1].toLowerCase()];
+      if (ext && bin) map.set(id[1], { ext, b64: bin[1] });
+    }
+    return map;
+  }
+  function pngSize(b) {
+    return b.length > 24 && b[0] === 137 && b[1] === 80 ? { cx: (b[16] << 24 | b[17] << 16 | b[18] << 8 | b[19]) * 9525, cy: (b[20] << 24 | b[21] << 16 | b[22] << 8 | b[23]) * 9525 } : null;
+  }
+  function makeContext(pkg) {
+    return { parts: pkg ? imageParts(pkg) : /* @__PURE__ */ new Map(), media: /* @__PURE__ */ new Map(), missing: 0 };
+  }
+  function runPicture(run4, ctx) {
+    if (!/<w:object\b|<w:pict\b|<mc:AlternateContent|<w:drawing/.test(run4)) return null;
+    const blip = /<a:blip\b[^>]*r:embed="([^"]+)"/.exec(run4) || /<v:imagedata\b[^>]*r:id="([^"]+)"/.exec(run4);
+    const part = blip && ctx.parts.get(blip[1]);
+    if (!part) {
+      ctx.missing++;
+      return null;
+    }
+    let media = ctx.media.get(blip[1]);
+    if (!media) {
+      media = { name: `image${ctx.media.size + 1}.${part.ext}`, ext: part.ext, bytes: base64ToBytes(part.b64) };
+      ctx.media.set(blip[1], media);
+    }
+    let cx = 0, cy = 0;
+    const e3 = /<wp:extent cx="(\d+)" cy="(\d+)"/.exec(run4);
+    if (e3) {
+      cx = Number(e3[1]);
+      cy = Number(e3[2]);
+    } else {
+      const st = /style="[^"]*?width:([\d.]+)pt;[^"]*?height:([\d.]+)pt/.exec(run4);
+      if (st) {
+        cx = Math.round(Number(st[1]) * 12700);
+        cy = Math.round(Number(st[2]) * 12700);
+      }
+    }
+    if (!(cx > 0 && cy > 0)) {
+      const n = pngSize(media.bytes);
+      cx = n ? n.cx : 3e6;
+      cy = n ? n.cy : 2e6;
+    }
+    return { media, cx, cy };
+  }
+  function collect(kids, ctx, st, out) {
+    var _a8;
+    for (const c of kids) {
+      if (typeof c !== "string") continue;
+      if (/^<m:oMath(Para)?[\s>]/.test(c)) {
+        if (st.skip) {
+          st.skip--;
           continue;
         }
-        const wt = c.match(/<w:t\b[^>]*>([^<]*)<\/w:t>/g);
-        if (wt) pText += wt.map((t) => t.replace(/<[^>]+>/g, "")).join("");
-        const mt = c.match(/<m:t\b[^>]*>([^<]*)<\/m:t>/g);
-        if (mt) pText += mt.map((t) => t.replace(/<[^>]+>/g, "")).join("");
+        try {
+          out.text += ` ${texToPlain(ommlToLatex(c)[0])} `;
+        } catch (e3) {
+          out.text += " [c\xF4ng th\u1EE9c] ";
+        }
+      } else if (/^<w:r[\s>]/.test(c)) {
+        const pic = runPicture(c, ctx);
+        if (pic) out.imgs.push(pic);
+        const rpr2 = ((_a8 = /<w:rPr>([\s\S]*?)<\/w:rPr>/.exec(c)) == null ? void 0 : _a8[1]) || "";
+        const script3 = /<w:vertAlign w:val="superscript"/.test(rpr2) ? sup : /<w:vertAlign w:val="subscript"/.test(rpr2) ? sub3 : null;
+        let t = "";
+        for (const m of c.matchAll(/<w:t\b[^>]*>([^<]*)<\/w:t>|<w:tab\/>|<w:br\b[^>]*\/>|<w:noBreakHyphen\/>/g)) {
+          if (m[0].startsWith("<w:tab")) {
+            t += " ";
+            continue;
+          }
+          if (m[0].startsWith("<w:br")) {
+            t += "\n";
+            continue;
+          }
+          if (m[0].startsWith("<w:noBreak")) {
+            t += "-";
+            continue;
+          }
+          let x = unescapeXml(m[1]);
+          if (st.skip) {
+            const cut = Math.min(st.skip, x.length);
+            x = x.slice(cut);
+            st.skip -= cut;
+          }
+          t += x;
+        }
+        out.text += script3 && t.trim() ? script3(t) : t;
+      } else if (/^<w:hyperlink[\s>]/.test(c)) {
+        collect(c.replace(/^<w:hyperlink\b[^>]*>/, "").replace(/<\/w:hyperlink>$/, "").match(/<w:r[\s>][\s\S]*?<\/w:r>/g) || [], ctx, st, out);
       }
-      const clean = pText.replace(/\s+/g, " ").trim();
-      if (clean) full += (full ? "\n" : "") + clean;
     }
-    return full;
   }
-  function cleanOptionText(content2, oleMap = /* @__PURE__ */ new Map()) {
-    let s = "";
-    for (const c of content2) {
-      if (typeof c !== "string") continue;
-      const objM = /<o:OLEObject\b[^>]*\br:id="([^"]+)"/.exec(c);
-      if (objM && oleMap.has(objM[1])) {
-        s += " " + oleMap.get(objM[1]) + " ";
-        continue;
-      }
-      const wt = c.match(/<w:t\b[^>]*>([^<]*)<\/w:t>/g);
-      if (wt) s += wt.map((t) => t.replace(/<[^>]+>/g, "")).join("");
-      const mt = c.match(/<m:t\b[^>]*>([^<]*)<\/m:t>/g);
-      if (mt) s += mt.map((t) => t.replace(/<[^>]+>/g, "")).join("");
+  function blockContent(b, ctx, skipLen = 0) {
+    if (b.kind === "p") {
+      const out = { text: "", imgs: [] };
+      collect(b.children, ctx, { skip: skipLen }, out);
+      return { lines: toLines(out.text), imgs: out.imgs };
     }
-    return s.replace(/\s+/g, " ").trim().replace(/^[A-Za-z]\s*[.:)]\s*/i, "");
+    const lines = [], imgs = [];
+    for (const row of b.xml.split("</w:tr>")) {
+      const cells = [];
+      for (const cell4 of row.split("</w:tc>")) {
+        const out = { text: "", imgs: [] };
+        for (const para2 of cell4.match(/<w:p\b[\s\S]*?<\/w:p>/g) || []) {
+          collect(para2.match(/<m:oMathPara>[\s\S]*?<\/m:oMathPara>|<m:oMath>[\s\S]*?<\/m:oMath>|<w:r[\s>][\s\S]*?<\/w:r>/g) || [], ctx, { skip: 0 }, out);
+          out.text += "\n";
+        }
+        imgs.push(...out.imgs);
+        const t = toLines(out.text).join(" ");
+        if (t) cells.push(t);
+      }
+      if (cells.length) lines.push(cells.join(" | "));
+    }
+    return { lines, imgs };
+  }
+  function collectItems(model, analysis, answers, ctx) {
+    const items = [];
+    for (const part of analysis.parts) {
+      for (const q of part.questions) {
+        const qAns = answers.find((x) => x.part === part.title && x.number === q.number);
+        let lines = [], imgs = [];
+        for (let i = q.start; i < q.stemEnd; i++) {
+          const b = model.blocks[i];
+          if (!b) continue;
+          const skip = i === q.start && b.kind === "p" ? (RE_LABEL2.exec(paragraphText(b)) || [""])[0].length : 0;
+          const c = blockContent(b, ctx, skip);
+          lines.push(...c.lines);
+          imgs.push(...c.imgs);
+        }
+        const optionBlocks = /* @__PURE__ */ new Set([...q.optionParas || [], ...(q.statements || []).map((st) => st.block)]);
+        for (let i = Math.max(q.stemEnd, q.start + 1); i < q.end; i++) {
+          if (optionBlocks.has(i) || !model.blocks[i]) continue;
+          const c = blockContent(model.blocks[i], ctx);
+          if (c.lines.length) break;
+          imgs.push(...c.imgs);
+        }
+        if (part.kind === "tf" && q.statements && q.statements.length) {
+          for (const st of q.statements) {
+            const c = blockContent(model.blocks[st.block], ctx);
+            lines.push(...c.lines);
+            imgs.push(...c.imgs);
+          }
+        }
+        const options = (q.options || []).map((o) => {
+          const out = { text: "", imgs: [] };
+          collect(o.content, ctx, { skip: 0 }, out);
+          return { letter: o.letter, text: toLines(out.text).join(" ").replace(/^[A-Za-z]\s*[.:)]\s*/, ""), imgs: out.imgs };
+        });
+        items.push({
+          number: q.number,
+          partTitle: part.title,
+          kind: part.kind,
+          stemLines: lines,
+          stemImgs: imgs,
+          options,
+          correct: (qAns == null ? void 0 : qAns.value) || null,
+          tf: (qAns == null ? void 0 : qAns.tf) || null,
+          tfLetters: (q.statements || []).map((s) => s.letter)
+        });
+      }
+    }
+    return items;
+  }
+  function preparePptxSource(pkg0) {
+    let pkg = pkg0;
+    for (const convertLatex of [true, false]) {
+      try {
+        const conv = convertMathTypeInPackage(pkg0, { convertMathType: true, convertLatex, display: false });
+        if (conv.changed) pkg = conv.pkg;
+        break;
+      } catch (e3) {
+      }
+    }
+    const model = parseBody(pkg), analysis = analyze(model);
+    return { pkg, model, analysis, answers: answersOf(model, analysis) };
+  }
+  function textHeight(lines, size, width, inset, bold) {
+    const pt = size / 100;
+    const cpl = Math.max(3, Math.floor((width - 2 * inset) / (pt * PTE * (bold ? 0.6 : 0.55)) * 0.93));
+    let n = 0;
+    for (const l of lines) n += Math.max(1, Math.ceil(l.length / cpl));
+    return n * pt * PTE * 1.22 + 2 * inset;
+  }
+  function fitSize(lines, w, h, sizes, inset, bold) {
+    for (const s of sizes) if (textHeight(lines, s, w, inset, bold) <= h) return { size: s, fits: true };
+    return { size: sizes[sizes.length - 1], fits: false };
+  }
+  function scaleInto(img, w, h, cap = 1.8) {
+    const s = Math.max(0.01, Math.min(w / img.cx, h / img.cy, cap));
+    return { cx: Math.round(img.cx * s), cy: Math.round(img.cy * s) };
+  }
+  function gridFit(area, imgs, gap = 1e5) {
+    let best = null;
+    for (let cols = 1; cols <= imgs.length; cols++) {
+      const rows = Math.ceil(imgs.length / cols), cw = (area.w - gap * (cols - 1)) / cols, ch = (area.h - gap * (rows - 1)) / rows;
+      const boxes = imgs.map((img, i) => {
+        const sz = scaleInto(img, cw, ch), c = i % cols, r = Math.floor(i / cols);
+        return { img, x: Math.round(area.x + c * (cw + gap) + (cw - sz.cx) / 2), y: Math.round(area.y + r * (ch + gap) + (ch - sz.cy) / 2), cx: sz.cx, cy: sz.cy };
+      });
+      const score = boxes.reduce((t, b) => t + b.cx * b.cy, 0);
+      if (!best || score > best.score) best = { boxes, score };
+    }
+    return best;
+  }
+  function stemLayout(r, lines, imgs) {
+    const inset = 14e4, bold = lines.join("").length < 140;
+    const base = { region: r, bold };
+    if (!imgs.length) {
+      const f = fitSize(lines, r.w, r.h, STEM_SIZES, inset, bold);
+      return __spreadProps(__spreadValues({}, base), { text: r, size: f.size, fits: f.fits, pics: [] });
+    }
+    const pad = 12e4, inner = { x: r.x + pad, y: r.y + pad, w: r.w - 2 * pad, h: r.h - 2 * pad };
+    if (!lines.length) return __spreadProps(__spreadValues({}, base), { text: null, size: 0, fits: true, pics: gridFit(inner, imgs).boxes });
+    const cands = [];
+    for (const ratio of [0.5, 0.62, 0.4]) {
+      const tw = Math.round(inner.w * ratio - GAP / 2);
+      const text = { x: inner.x - pad, y: r.y, w: tw + pad, h: r.h };
+      const area2 = { x: inner.x + tw + GAP, y: inner.y, w: inner.w - tw - GAP, h: inner.h };
+      const f = fitSize(lines, text.w, text.h, STEM_SIZES, inset, bold), g = gridFit(area2, imgs);
+      cands.push(__spreadProps(__spreadValues({}, base), { text, size: f.size, fits: f.fits, pics: g.boxes, frac: g.score / (area2.w * area2.h) }));
+    }
+    let sz = STEM_SIZES[STEM_SIZES.length - 1];
+    for (const s of STEM_SIZES) if (textHeight(lines, s, r.w, inset, bold) <= r.h * 0.5) {
+      sz = s;
+      break;
+    }
+    const th = Math.round(Math.min(r.h * 0.6, Math.max(textHeight(lines, sz, r.w, inset, bold), 6e5)));
+    const area = { x: inner.x, y: r.y + th + 4e4, w: inner.w, h: r.h - th - 4e4 - pad };
+    if (area.h > 4e5) {
+      const g = gridFit(area, imgs);
+      cands.push(__spreadProps(__spreadValues({}, base), { text: { x: r.x, y: r.y, w: r.w, h: th }, size: sz, fits: textHeight(lines, sz, r.w, inset, bold) <= th, pics: g.boxes, frac: g.score / (area.w * area.h) }));
+    }
+    const score = (c) => (c.fits ? 1e6 : 0) + c.size * 10 + c.frac * 3e3;
+    return cands.reduce((a, b) => score(b) > score(a) ? b : a);
+  }
+  function evalOptions(options, layout2, size) {
+    const anyImg = options.some((o) => o.imgs.length);
+    const cellW = layout2 === "grid2" ? 525e4 : CW;
+    const share = anyImg ? 0.4 : 0;
+    const textW2 = Math.round(cellW * (1 - share));
+    const imgMaxW = Math.round(cellW * share) - 12e4, imgMaxH = layout2 === "grid2" ? 13e5 : 1e6;
+    const specs = options.map((o) => {
+      let h = Math.max(textHeight([`${o.letter}. ${o.text}`], size, textW2, 1e5, false), 62e4), imgBox = null;
+      if (o.imgs.length) {
+        const sz = scaleInto(o.imgs[0], imgMaxW, imgMaxH, 1.5);
+        imgBox = { cx: sz.cx, cy: sz.cy, pad: 9e4 };
+        h = Math.max(h, sz.cy + 18e4);
+      }
+      return { h, imgBox, textW: textW2, w: cellW };
+    });
+    const perRow = layout2 === "grid2" ? 2 : 1;
+    const rowsH = [];
+    specs.forEach((s, i) => {
+      const r = Math.floor(i / perRow);
+      rowsH[r] = Math.max(rowsH[r] || 0, s.h);
+    });
+    return { layout: layout2, size, specs, perRow, rowsH, cap: layout2 === "grid2" ? 14e5 : 95e4 };
+  }
+  function placeOptions(op, rowsH) {
+    const ys = [];
+    let y = 0;
+    rowsH.forEach((h, r) => {
+      ys[r] = y;
+      y += h + OPT_GAP;
+    });
+    const cells = op.specs.map((s, i) => {
+      const r = Math.floor(i / op.perRow), c = i % op.perRow;
+      return { x: op.layout === "grid2" ? c ? 6242e3 : MX : MX, y: ys[r], w: s.w, h: rowsH[r], textW: s.textW, imgBox: s.imgBox };
+    });
+    return __spreadProps(__spreadValues({}, op), { rowsH, cells, total: y - OPT_GAP });
+  }
+  function planOptions(options, budget) {
+    const order = [["grid2", 1800], ["grid2", 1600], ["list", 1800], ["list", 1600], ["list", 1400], ["list", 1200], ["list", 1100]];
+    let last;
+    for (const [layout2, size] of order) {
+      const ev = evalOptions(options, layout2, size);
+      last = placeOptions(ev, ev.rowsH);
+      if (last.total <= budget) return __spreadProps(__spreadValues({}, last), { fits: true });
+    }
+    return __spreadProps(__spreadValues({}, last), { fits: false });
+  }
+  function growOptions(op, spare) {
+    const add3 = Math.max(0, spare) / op.rowsH.length;
+    return placeOptions(op, op.rowsH.map((h) => Math.max(h, Math.min(op.cap, h + add3))));
+  }
+  function planItem(item) {
+    const AREA = BOTTOM - TOP, inset = 14e4;
+    const lines = item.stemLines, imgs = item.stemImgs;
+    const bold = lines.join("").length < 140;
+    if (!item.options.length) return { mode: "single", stem: stemLayout({ x: MX, y: TOP, w: CW, h: STEM_ONLY_H }, lines, imgs) };
+    const need = imgs.length ? 24e5 : Math.min(AREA * 0.55, Math.max(1e6, textHeight(lines, 1800, CW, inset, bold)));
+    const op = planOptions(item.options, AREA - need - GAP);
+    if (op.fits) {
+      const maxStem = AREA - GAP - op.total;
+      const desired = imgs.length ? maxStem : Math.max(13e5, textHeight(lines, 2e3, CW, inset, bold) + 1e5);
+      const stemH0 = Math.min(maxStem, desired);
+      const grown = growOptions(op, maxStem - stemH0);
+      const stemH = AREA - GAP - grown.total;
+      const stem = stemLayout({ x: MX, y: TOP, w: CW, h: stemH }, lines, imgs);
+      if (stem.fits) return { mode: "single", stem, opts: grown, optsTop: TOP + stemH + GAP };
+    }
+    const joined = lines.join(" ");
+    const tail = joined ? joined.length > 230 ? "\u2026 " + joined.slice(-230).replace(/^\S*\s/, "") : joined : "";
+    const remH = tail ? 11e5 : 0, optBudget = AREA - (remH ? remH + GAP : 0);
+    const full = growOptions(planOptions(item.options, optBudget), optBudget);
+    return { mode: "split", stem: stemLayout({ x: MX, y: TOP, w: CW, h: STEM_ONLY_H }, lines, imgs), opts: full, optsTop: TOP + (remH ? remH + GAP : 0), reminder: remH ? { text: tail, h: remH } : null };
   }
   function applyTheme(xml, themeId) {
     const theme = PPTX_THEMES.find((t) => t.id === themeId);
@@ -10889,48 +11210,12 @@ renderStart();
     return out.replace(/<a:latin typeface="Arial"\/>/g, `<a:latin typeface="${theme.font}"/>`);
   }
   function buildExamPptx(model, analysis, answers, opts = {}) {
-    var _a8;
-    const oleMap = /* @__PURE__ */ new Map();
-    if (opts.scannedEquations) {
-      for (const eq of opts.scannedEquations) {
-        const id = eq.oleId || ((_a8 = eq.obj) == null ? void 0 : _a8.oleId);
-        if (id && eq.latex) oleMap.set(id, eq.latex);
-      }
-    }
-    const items = [];
-    for (const part of analysis.parts) {
-      for (const q of part.questions) {
-        const qAns = answers.find((x) => x.part === part.title && x.number === q.number);
-        const stemBlocks = model.blocks.slice(q.start, q.stemEnd);
-        let stemText = extractTextWithMath(stemBlocks, oleMap);
-        stemText = stemText.replace(/^\s*(?:Câu|Bài)\s*\d+\s*[:.]\s*/i, "");
-        if (part.kind === "tf" && q.statements && q.statements.length) {
-          const stmtTexts = q.statements.map((st) => {
-            const raw = extractTextWithMath([model.blocks[st.block]], oleMap);
-            return raw;
-          }).filter(Boolean);
-          if (stmtTexts.length) {
-            stemText += "\n" + stmtTexts.join("\n");
-          }
-        }
-        let options = [];
-        if (q.options && q.options.length) {
-          options = q.options.map((o) => ({
-            letter: o.letter,
-            text: cleanOptionText(o.content, oleMap)
-          }));
-        }
-        items.push({
-          number: q.number,
-          partTitle: part.title,
-          kind: part.kind,
-          stem: stemText,
-          options,
-          correct: (qAns == null ? void 0 : qAns.value) || null
-        });
-      }
-    }
+    const ctx = makeContext(opts.pkg);
+    const items = collectItems(model, analysis, answers, ctx);
     if (!items.length) throw new Error("Kh\xF4ng t\xECm th\u1EA5y c\xE2u h\u1ECFi n\xE0o trong t\xE0i li\u1EC7u.");
+    items.forEach((it) => {
+      it.plan = planItem(it);
+    });
     const slides = [];
     const presentationRels = [
       '<Relationship Id="rIdMaster" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster" Target="slideMasters/slideMaster1.xml"/>',
@@ -10941,153 +11226,187 @@ renderStart();
     const registerSlide = (xml, links = [], show = true) => {
       const sId = slideIndex++;
       const sName = `slide${sId}.xml`;
-      const relsName = `slide${sId}.xml.rels`;
-      slides.push({
-        fileName: `ppt/slides/${sName}`,
-        relsFileName: `ppt/slides/_rels/${relsName}`,
-        xml,
-        rels: makeSlideRels(links),
-        sId
-      });
+      slides.push({ fileName: `ppt/slides/${sName}`, relsFileName: `ppt/slides/_rels/${sName}.rels`, xml, rels: makeSlideRels(links), sId });
       presentationRels.push(`<Relationship Id="rIdSld${sId}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide" Target="slides/${sName}"/>`);
       sldIdList.push(`<p:sldId id="${255 + sId}" r:id="rIdSld${sId}"/>`);
       return sId;
     };
+    let cursor = 2;
+    for (const it of items) {
+      it.qSlide = cursor;
+      it.optSlide = it.plan.mode === "split" ? cursor + 1 : cursor;
+      it.rightSlide = it.optSlide + 1;
+      it.wrongSlide = it.optSlide + 2;
+      cursor = it.wrongSlide + 1;
+    }
+    const finalSlideId = cursor;
+    const slidePics = () => {
+      const links = [];
+      let n = 0;
+      return {
+        links,
+        add(img, box, link) {
+          n++;
+          const rId = `rIdImg${n}`;
+          links.push({ id: rId, target: `../media/${img.media.name}`, image: true });
+          return makePic({ id: 70 + n, rId, x: box.x, y: box.y, cx: box.cx, cy: box.cy, name: `H\xECnh ${n}`, linkTarget: link, linkTooltip: link ? "Ch\u1ECDn" : "" });
+        }
+      };
+    };
+    const stemShapes = (it, st, pics) => {
+      const out2 = [];
+      out2.push(makeShape({ id: 12, name: "StemCard", x: st.region.x, y: st.region.y, cx: st.region.w, cy: st.region.h, fill: "FFFFFF", line: "CBD5E1", lineWidth: 19050, roundAdj: 6e3, text: "", fit: false }));
+      if (st.text) {
+        const tall = textHeight(it.stemLines, st.size, st.text.w, 14e4, st.bold) > st.text.h * 0.6;
+        const lines = it.stemLines.length ? it.stemLines : it.stemImgs.length ? [] : ["(N\u1ED9i dung c\xE2u h\u1ECFi n\u1EB1m trong t\xE0i li\u1EC7u g\u1ED1c)"];
+        const need = textHeight(lines, st.size, st.text.w, 14e4, st.bold);
+        const fontScale = st.fits ? 0 : Math.floor(Math.max(0.4, st.text.h / need) * 100) * 1e3;
+        if (lines.length) out2.push(makeShape({ id: 13, name: "Stem", x: st.text.x, y: st.text.y, cx: st.text.w, cy: st.text.h, fill: null, round: false, text: lines.join("\n"), textSize: st.size, textColor: "0F172A", bold: st.bold, align: "l", valign: tall || it.stemImgs.length || !st.fits ? "t" : "ctr", fontScale }));
+      }
+      for (const b of st.pics) out2.push(pics.add(b.img, b));
+      return out2;
+    };
+    const optionShapes = (it, op, top, pics, baseId) => {
+      const out2 = [];
+      op.cells.forEach((cell4, k) => {
+        const opt = it.options[k];
+        const isRight = it.correct ? opt.letter.toUpperCase() === it.correct.toUpperCase() : true;
+        const target = isRight ? "rIdRight" : "rIdWrong";
+        const y = top + cell4.y;
+        out2.push(makeShape({
+          id: baseId + k,
+          name: `Opt${opt.letter}`,
+          x: cell4.x,
+          y,
+          cx: cell4.w,
+          cy: cell4.h,
+          fill: "FFFFFF",
+          line: "CBD5E1",
+          lineWidth: 19050,
+          roundAdj: 12e3,
+          text: `${opt.letter}. ${opt.text}`,
+          textSize: op.size,
+          textColor: "1E293B",
+          bold: false,
+          align: "l",
+          linkTarget: target,
+          linkTooltip: `Ch\u1ECDn ${opt.letter}`,
+          inset: 1e5,
+          rightInset: cell4.imgBox ? Math.round(cell4.w - cell4.textW + 6e4) : 1e5
+        }));
+        if (cell4.imgBox) {
+          const im = cell4.imgBox;
+          out2.push(pics.add(opt.imgs[0], { x: cell4.x + cell4.w - im.pad - im.cx, y: y + Math.round((cell4.h - im.cy) / 2), cx: im.cx, cy: im.cy }, target));
+        }
+      });
+      return out2;
+    };
     const titleText = opts.title || "B\xC0I T\u1EACP TR\u1EAEC NGHI\u1EC6M";
     const subtitleText = `\u0110\u1EC1 thi g\u1ED3m ${items.length} c\xE2u h\u1ECFi \u2022 T\u01B0\u01A1ng t\xE1c \u0110\xFAng/Sai tr\u1EF1c ti\u1EBFp`;
     const titleShapes = `
-    ${makeShape({ id: 2, name: "Title", x: 12e5, y: 16e5, cx: 9792e3, cy: 16e5, fill: null, text: titleText, textSize: 3600, textColor: "FFFFFF", bold: true, align: "ctr" })}
+    ${makeShape({ id: 2, name: "Title", x: 12e5, y: 16e5, cx: 9792e3, cy: 16e5, fill: null, text: titleText, textSize: titleText.length > 50 ? 2800 : 3600, textColor: "FFFFFF", bold: true, align: "ctr" })}
     ${makeShape({ id: 3, name: "Sub", x: 12e5, y: 31e5, cx: 9792e3, cy: 8e5, fill: null, text: subtitleText, textSize: 2e3, textColor: "94A3B8", bold: false, align: "ctr" })}
     ${makeShape({ id: 4, name: "StartBtn", x: 4396e3, y: 43e5, cx: 34e5, cy: 9e5, fill: "3B82F6", roundAdj: 25e3, text: "B\u1EAET \u0110\u1EA6U  \u27A1", textSize: 2200, textColor: "FFFFFF", bold: true, align: "ctr", linkTarget: "rIdNext", linkTooltip: "B\u1EAFt \u0111\u1EA7u" })}
   `;
     registerSlide(makeSlideXml("0F172A", titleShapes, true), [{ id: "rIdNext", target: "slide2.xml" }]);
-    const totalQuestions = items.length;
-    const finalSlideId = 2 + 3 * totalQuestions;
+    const header = (it, suffix = "") => [
+      makeShape({ id: 10, name: "Badge", x: 7e5, y: 35e4, cx: 16e5, cy: 45e4, fill: "4F46E5", roundAdj: 1e4, text: `C\xC2U ${it.number}`, textSize: 1600, textColor: "FFFFFF", bold: true, align: "ctr" }),
+      makeShape({ id: 11, name: "Part", x: 245e4, y: 35e4, cx: 85e5, cy: 45e4, fill: null, text: (it.partTitle || "TR\u1EAEC NGHI\u1EC6M") + suffix, textSize: it.partTitle && it.partTitle.length > 70 ? 1100 : 1400, textColor: "64748B", bold: true, align: "l" })
+    ];
+    const showAnswerLink = () => makeShape({ id: 35, name: "ShowAnswerSmall", x: 92e5, y: 635e4, cx: 2292e3, cy: 4e5, fill: null, text: "Xem \u0111\xE1p \xE1n \u{1F4A1}", textSize: 1300, textColor: "6366F1", bold: true, align: "r", linkTarget: "rIdRight", linkTooltip: "Xem \u0111\xE1p \xE1n" });
     items.forEach((item, qIdx) => {
-      var _a9;
-      const qSlideId = 2 + 3 * qIdx;
-      const rightSlideId = qSlideId + 1;
-      const wrongSlideId = qSlideId + 2;
-      const nextQSlideId = qIdx === totalQuestions - 1 ? finalSlideId : qSlideId + 3;
-      const qShapes = [];
-      qShapes.push(makeShape({ id: 10, name: "Badge", x: 7e5, y: 35e4, cx: 16e5, cy: 45e4, fill: "4F46E5", roundAdj: 1e4, text: `C\xC2U ${item.number}`, textSize: 1600, textColor: "FFFFFF", bold: true, align: "ctr" }));
-      qShapes.push(makeShape({ id: 11, name: "Part", x: 245e4, y: 35e4, cx: 85e5, cy: 45e4, fill: null, text: item.partTitle || "TR\u1EAEC NGHI\u1EC6M", textSize: 1400, textColor: "64748B", bold: true, align: "l" }));
-      const hasOptions = item.options && item.options.length > 0;
-      const stemHeight = hasOptions ? 22e5 : 37e5;
-      qShapes.push(makeShape({ id: 12, name: "Stem", x: 7e5, y: 95e4, cx: 10792e3, cy: stemHeight, fill: "FFFFFF", line: "CBD5E1", lineWidth: 19050, roundAdj: 1e4, text: item.stem, textSize: 2e3, textColor: "0F172A", bold: true, align: "l", valign: "t" }));
-      const qLinks = [
-        { id: "rIdRight", target: `slide${rightSlideId}.xml` },
-        { id: "rIdWrong", target: `slide${wrongSlideId}.xml` }
-      ];
-      if (hasOptions) {
-        const positions = [
-          { x: 7e5, y: 335e4, cx: 525e4, cy: 135e4 },
-          { x: 6242e3, y: 335e4, cx: 525e4, cy: 135e4 },
-          { x: 7e5, y: 49e5, cx: 525e4, cy: 135e4 },
-          { x: 6242e3, y: 49e5, cx: 525e4, cy: 135e4 }
-        ];
-        item.options.forEach((opt, optIdx) => {
-          const pos = positions[optIdx] || { x: 7e5, y: 335e4 + optIdx * 8e5, cx: 10792e3, cy: 75e4 };
-          const isRight = item.correct ? opt.letter.toUpperCase() === item.correct.toUpperCase() : optIdx === 0;
-          const targetId = isRight ? "rIdRight" : "rIdWrong";
-          const optCardText = `${opt.letter}. ${opt.text}`;
-          qShapes.push(makeShape({
-            id: 20 + optIdx,
-            name: `Opt${opt.letter}`,
-            x: pos.x,
-            y: pos.y,
-            cx: pos.cx,
-            cy: pos.cy,
-            fill: "FFFFFF",
-            line: "CBD5E1",
-            lineWidth: 19050,
-            roundAdj: 12e3,
-            text: optCardText,
-            textSize: 1800,
-            textColor: "1E293B",
-            bold: false,
-            align: "l",
-            linkTarget: targetId,
-            linkTooltip: `Ch\u1ECDn ${opt.letter}`
-          }));
-        });
-        qShapes.push(makeShape({
-          id: 35,
-          name: "ShowAnswerSmall",
-          x: 92e5,
-          y: 635e4,
-          cx: 2292e3,
-          cy: 4e5,
-          fill: null,
-          text: "Xem \u0111\xE1p \xE1n \u{1F4A1}",
-          textSize: 1300,
-          textColor: "6366F1",
-          bold: true,
-          align: "r",
-          linkTarget: "rIdRight",
-          linkTooltip: "Xem \u0111\xE1p \xE1n"
-        }));
+      const nextQSlideId = qIdx === items.length - 1 ? finalSlideId : items[qIdx + 1].qSlide;
+      const plan = item.plan;
+      const hasOptions = item.options.length > 0;
+      const pics = slidePics();
+      const qShapes = header(item);
+      const qLinks = [{ id: "rIdRight", target: `slide${item.rightSlide}.xml` }, { id: "rIdWrong", target: `slide${item.wrongSlide}.xml` }];
+      qShapes.push(...stemShapes(item, plan.stem, pics));
+      if (plan.mode === "single" && hasOptions) {
+        qShapes.push(...optionShapes(item, plan.opts, plan.optsTop, pics, 20));
+        qShapes.push(showAnswerLink());
+      } else if (plan.mode === "split") {
+        qLinks.push({ id: "rIdOpts", target: `slide${item.optSlide}.xml` });
+        qShapes.push(makeShape({ id: 20, name: "ToOptions", x: 3896e3, y: 56e5, cx: 44e5, cy: 65e4, fill: "3B82F6", roundAdj: 25e3, text: "XEM C\xC1C PH\u01AF\u01A0NG \xC1N  \u27A1", textSize: 1800, textColor: "FFFFFF", bold: true, align: "ctr", linkTarget: "rIdOpts", linkTooltip: "Xem c\xE1c ph\u01B0\u01A1ng \xE1n" }));
+        qShapes.push(showAnswerLink());
       } else {
-        qShapes.push(makeShape({
-          id: 20,
-          name: "ShowAnswerBtn",
-          x: 3896e3,
-          y: 495e4,
-          cx: 44e5,
-          cy: 9e5,
-          fill: "3B82F6",
-          roundAdj: 2e4,
-          text: "XEM \u0110\xC1P \xC1N & L\u1EDCI GI\u1EA2I \u{1F4A1}",
-          textSize: 1800,
-          textColor: "FFFFFF",
-          bold: true,
-          align: "ctr",
-          linkTarget: "rIdRight",
-          linkTooltip: "Xem \u0111\xE1p \xE1n"
-        }));
+        qShapes.push(makeShape({ id: 20, name: "ShowAnswerBtn", x: 3896e3, y: 56e5, cx: 44e5, cy: 65e4, fill: "3B82F6", roundAdj: 2e4, text: "XEM \u0110\xC1P \xC1N & L\u1EDCI GI\u1EA2I \u{1F4A1}", textSize: 1800, textColor: "FFFFFF", bold: true, align: "ctr", linkTarget: "rIdRight", linkTooltip: "Xem \u0111\xE1p \xE1n" }));
       }
+      qLinks.push(...pics.links);
       registerSlide(makeSlideXml("F8FAFC", qShapes.join("\n"), true), qLinks);
-      const correctLetter = item.correct || item.options && ((_a9 = item.options[0]) == null ? void 0 : _a9.letter) || "";
-      const correctOpt = item.options ? item.options.find((o) => o.letter.toUpperCase() === correctLetter.toUpperCase()) : null;
-      const correctDetail = correctOpt ? `Ph\u01B0\u01A1ng \xE1n \u0111\xFAng l\xE0 ${correctOpt.letter}: ${correctOpt.text}` : item.correct ? `\u0110\xE1p \xE1n \u0111\xFAng: ${item.correct}` : "\u0110\xE3 ghi nh\u1EADn c\xE2u tr\u1EA3 l\u1EDDi!";
-      const isLastQ = qIdx === totalQuestions - 1;
+      if (plan.mode === "split") {
+        const pics2 = slidePics();
+        const oShapes = header(item, "  \xB7  Ch\u1ECDn \u0111\xE1p \xE1n");
+        if (plan.reminder) {
+          const rf = fitSize([plan.reminder.text], CW, plan.reminder.h, [1600, 1400, 1200], 14e4, false);
+          oShapes.push(makeShape({ id: 14, name: "StemReminder", x: MX, y: TOP, cx: CW, cy: plan.reminder.h, fill: "E2E8F0", roundAdj: 8e3, text: plan.reminder.text, textSize: rf.size, textColor: "475569", bold: false, align: "l" }));
+        }
+        oShapes.push(...optionShapes(item, plan.opts, plan.optsTop, pics2, 20));
+        oShapes.push(makeShape({ id: 36, name: "BackToStem", x: 7e5, y: 635e4, cx: 36e5, cy: 4e5, fill: null, text: "\u21A9  Xem l\u1EA1i \u0111\u1EC1 b\xE0i", textSize: 1300, textColor: "64748B", bold: false, align: "l", linkTarget: "rIdStem", linkTooltip: "Xem l\u1EA1i \u0111\u1EC1 b\xE0i" }));
+        oShapes.push(showAnswerLink());
+        registerSlide(makeSlideXml("F8FAFC", oShapes.join("\n"), true), [
+          { id: "rIdRight", target: `slide${item.rightSlide}.xml` },
+          { id: "rIdWrong", target: `slide${item.wrongSlide}.xml` },
+          { id: "rIdStem", target: `slide${item.qSlide}.xml` },
+          ...pics2.links
+        ]);
+      }
+      const correctLetter = item.correct || "";
+      const correctOpt = hasOptions && correctLetter ? item.options.find((o) => o.letter.toUpperCase() === correctLetter.toUpperCase()) : null;
+      let detailLines;
+      if (correctOpt) detailLines = [`Ph\u01B0\u01A1ng \xE1n \u0111\xFAng l\xE0 ${correctOpt.letter}: ${correctOpt.text}`.trim()];
+      else if (item.tf) detailLines = item.tf.map((v, i) => `${item.tfLetters[i] || "abcd"[i]}) ${v === "\u0110" ? "\u0110\xFAng" : "Sai"}`);
+      else if (item.correct) detailLines = [`\u0110\xE1p \xE1n \u0111\xFAng: ${item.correct}`];
+      else detailLines = ["\u0110\u1EC1 ch\u01B0a \u0111\xE1nh d\u1EA5u \u0111\xE1p \xE1n cho c\xE2u n\xE0y."];
+      const isKnown = Boolean(item.correct);
+      const isLastQ = qIdx === items.length - 1;
       const nextBtnText = isLastQ ? "HO\xC0N TH\xC0NH B\xC0I THI \u{1F3C6}" : "C\xC2U TI\u1EBEP THEO \u27A1";
-      const rightShapes = `
-      ${makeShape({ id: 40, name: "Card", x: 18e5, y: 1e6, cx: 8592e3, cy: 48e5, fill: "FFFFFF", line: "10B981", lineWidth: 28e3, roundAdj: 15e3, text: "" })}
-      ${makeShape({ id: 41, name: "Title", x: 22e5, y: 14e5, cx: 7792e3, cy: 8e5, fill: null, text: "\u{1F389}  CH\xCDNH X\xC1C!", textSize: 3200, textColor: "059669", bold: true, align: "ctr" })}
-      ${makeShape({ id: 42, name: "Sub", x: 22e5, y: 22e5, cx: 7792e3, cy: 5e5, fill: null, text: `Ch\xFAc m\u1EEBng b\u1EA1n \u0111\xE3 tr\u1EA3 l\u1EDDi \u0111\xFAng c\xE2u h\u1ECFi s\u1ED1 ${item.number}!`, textSize: 1800, textColor: "475569", bold: false, align: "ctr" })}
-      ${makeShape({ id: 43, name: "DetailBox", x: 24e5, y: 28e5, cx: 7392e3, cy: 13e5, fill: "F0FDF4", line: "86EFAC", lineWidth: 15e3, roundAdj: 1e4, text: correctDetail, textSize: 1700, textColor: "065F46", bold: true, align: "ctr" })}
-      ${makeShape({ id: 44, name: "NextBtn", x: 3896e3, y: 43e5, cx: 44e5, cy: 85e4, fill: "10B981", roundAdj: 25e3, text: nextBtnText, textSize: 2e3, textColor: "FFFFFF", bold: true, align: "ctr", linkTarget: "rIdNext", linkTooltip: nextBtnText })}
-      ${makeShape({ id: 45, name: "BackBtn", x: 4596e3, y: 525e4, cx: 3e6, cy: 4e5, fill: null, text: "\u21A9  Xem l\u1EA1i c\xE2u h\u1ECFi", textSize: 1300, textColor: "64748B", bold: false, align: "ctr", linkTarget: "rIdQ", linkTooltip: "Xem l\u1EA1i c\xE2u h\u1ECFi" })}
-    `;
-      registerSlide(makeSlideXml("F0FDF4", rightShapes, true), [
+      const rightTitle = !isKnown ? "\u{1F4CC}  GHI NH\u1EACN" : hasOptions ? "\u{1F389}  CH\xCDNH X\xC1C!" : "\u{1F4A1}  \u0110\xC1P \xC1N";
+      const rightSub = !isKnown ? `C\xE2u ${item.number}` : hasOptions ? `Ch\xFAc m\u1EEBng b\u1EA1n \u0111\xE3 tr\u1EA3 l\u1EDDi \u0111\xFAng c\xE2u h\u1ECFi s\u1ED1 ${item.number}!` : `\u0110\xE1p \xE1n c\xE2u ${item.number}`;
+      const detailBox = { x: 24e5, y: 28e5, w: 7392e3, h: 14e5 };
+      const dFit = fitSize(detailLines, detailBox.w, detailBox.h, [1700, 1500, 1300, 1100], 14e4, true);
+      const rpics = slidePics();
+      const optPic = correctOpt && correctOpt.imgs[0] ? correctOpt.imgs[0] : null;
+      const rightShapes = [
+        makeShape({ id: 40, name: "Card", x: 18e5, y: 1e6, cx: 8592e3, cy: 48e5, fill: "FFFFFF", line: "10B981", lineWidth: 28e3, roundAdj: 15e3, text: "", fit: false }),
+        makeShape({ id: 41, name: "Title", x: 22e5, y: 14e5, cx: 7792e3, cy: 8e5, fill: null, text: rightTitle, textSize: 3200, textColor: "059669", bold: true, align: "ctr" }),
+        makeShape({ id: 42, name: "Sub", x: 22e5, y: 22e5, cx: 7792e3, cy: 5e5, fill: null, text: rightSub, textSize: 1800, textColor: "475569", bold: false, align: "ctr" }),
+        makeShape({ id: 43, name: "DetailBox", x: detailBox.x, y: detailBox.y, cx: optPic ? Math.round(detailBox.w * 0.62) : detailBox.w, cy: detailBox.h, fill: "F0FDF4", line: "86EFAC", lineWidth: 15e3, roundAdj: 1e4, text: detailLines.join("\n"), textSize: dFit.size, textColor: "065F46", bold: true, align: "ctr" }),
+        makeShape({ id: 44, name: "NextBtn", x: 3896e3, y: 44e5, cx: 44e5, cy: 85e4, fill: "10B981", roundAdj: 25e3, text: nextBtnText, textSize: 2e3, textColor: "FFFFFF", bold: true, align: "ctr", linkTarget: "rIdNext", linkTooltip: nextBtnText }),
+        makeShape({ id: 45, name: "BackBtn", x: 4596e3, y: 53e5, cx: 3e6, cy: 4e5, fill: null, text: "\u21A9  Xem l\u1EA1i c\xE2u h\u1ECFi", textSize: 1300, textColor: "64748B", bold: false, align: "ctr", linkTarget: "rIdQ", linkTooltip: "Xem l\u1EA1i c\xE2u h\u1ECFi" })
+      ];
+      if (optPic) {
+        const sz = scaleInto(optPic, Math.round(detailBox.w * 0.34), detailBox.h - 1e5);
+        rightShapes.push(rpics.add(optPic, { x: detailBox.x + detailBox.w - sz.cx, y: detailBox.y + Math.round((detailBox.h - sz.cy) / 2), cx: sz.cx, cy: sz.cy }));
+      }
+      registerSlide(makeSlideXml("F0FDF4", rightShapes.join("\n"), true), [
         { id: "rIdNext", target: `slide${nextQSlideId}.xml` },
-        { id: "rIdQ", target: `slide${qSlideId}.xml` }
+        { id: "rIdQ", target: `slide${item.qSlide}.xml` },
+        ...rpics.links
       ]);
       const wrongShapes = `
-      ${makeShape({ id: 50, name: "Card", x: 18e5, y: 12e5, cx: 8592e3, cy: 44e5, fill: "FFFFFF", line: "EF4444", lineWidth: 28e3, roundAdj: 15e3, text: "" })}
+      ${makeShape({ id: 50, name: "Card", x: 18e5, y: 12e5, cx: 8592e3, cy: 44e5, fill: "FFFFFF", line: "EF4444", lineWidth: 28e3, roundAdj: 15e3, text: "", fit: false })}
       ${makeShape({ id: 51, name: "Title", x: 22e5, y: 17e5, cx: 7792e3, cy: 8e5, fill: null, text: "\u274C  CH\u01AFA CH\xCDNH X\xC1C!", textSize: 3200, textColor: "DC2626", bold: true, align: "ctr" })}
       ${makeShape({ id: 52, name: "Sub", x: 22e5, y: 26e5, cx: 7792e3, cy: 8e5, fill: null, text: "R\u1EA5t ti\u1EBFc! Ph\u01B0\u01A1ng \xE1n b\u1EA1n v\u1EEBa ch\u1ECDn ch\u01B0a \u0111\xFAng.\n\u0110\u1EEBng n\u1EA3n l\xF2ng, h\xE3y \u0111\u1ECDc k\u1EF9 l\u1EA1i \u0111\u1EC1 b\xE0i v\xE0 th\u1EED l\u1EA1i nh\xE9!", textSize: 1800, textColor: "475569", bold: false, align: "ctr" })}
       ${makeShape({ id: 53, name: "RetryBtn", x: 3896e3, y: 39e5, cx: 44e5, cy: 9e5, fill: "EF4444", roundAdj: 25e3, text: "\u{1F504}  QUAY L\u1EA0I TH\u1EEC L\u1EA0I", textSize: 2e3, textColor: "FFFFFF", bold: true, align: "ctr", linkTarget: "rIdQ", linkTooltip: "Th\u1EED l\u1EA1i" })}
     `;
-      registerSlide(makeSlideXml("FEF2F2", wrongShapes, false), [
-        { id: "rIdQ", target: `slide${qSlideId}.xml` }
-      ]);
+      registerSlide(makeSlideXml("FEF2F2", wrongShapes, false), [{ id: "rIdQ", target: `slide${item.optSlide}.xml` }]);
     });
     const finalShapes = `
-    ${makeShape({ id: 60, name: "Card", x: 18e5, y: 12e5, cx: 8592e3, cy: 44e5, fill: "1E293B", line: "38BDF8", lineWidth: 25e3, roundAdj: 15e3, text: "" })}
+    ${makeShape({ id: 60, name: "Card", x: 18e5, y: 12e5, cx: 8592e3, cy: 44e5, fill: "1E293B", line: "38BDF8", lineWidth: 25e3, roundAdj: 15e3, text: "", fit: false })}
     ${makeShape({ id: 61, name: "Title", x: 22e5, y: 18e5, cx: 7792e3, cy: 9e5, fill: null, text: "\u{1F3C6}  HO\xC0N TH\xC0NH B\xC0I THI!", textSize: 3400, textColor: "38BDF8", bold: true, align: "ctr" })}
     ${makeShape({ id: 62, name: "Sub", x: 22e5, y: 28e5, cx: 7792e3, cy: 7e5, fill: null, text: `Ch\xFAc m\u1EEBng b\u1EA1n \u0111\xE3 ho\xE0n th\xE0nh xu\u1EA5t s\u1EAFc to\xE0n b\u1ED9 ${items.length} c\xE2u h\u1ECFi!`, textSize: 2e3, textColor: "E2E8F0", bold: false, align: "ctr" })}
     ${makeShape({ id: 63, name: "RestartBtn", x: 4196e3, y: 41e5, cx: 38e5, cy: 85e4, fill: "3B82F6", roundAdj: 25e3, text: "\u21BA  L\xC0M L\u1EA0I T\u1EEA \u0110\u1EA6U", textSize: 2e3, textColor: "FFFFFF", bold: true, align: "ctr", linkTarget: "rIdFirst", linkTooltip: "L\xE0m l\u1EA1i" })}
   `;
-    registerSlide(makeSlideXml("0F172A", finalShapes, true), [
-      { id: "rIdFirst", target: "slide1.xml" }
-    ]);
+    registerSlide(makeSlideXml("0F172A", finalShapes, true), [{ id: "rIdFirst", target: "slide1.xml" }]);
+    const mediaExts = [...new Set([...ctx.media.values()].map((m) => m.ext))];
+    const mimeOf = { png: "image/png", jpeg: "image/jpeg", gif: "image/gif", emf: "image/x-emf", wmf: "image/x-wmf" };
     const contentTypesOverrides = slides.map((s) => `  <Override PartName="/${s.fileName}" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slide+xml"/>`).join("\n");
     const contentTypesXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
   <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
   <Default Extension="xml" ContentType="application/xml"/>
+${mediaExts.map((e3) => `  <Default Extension="${e3}" ContentType="${mimeOf[e3]}"/>`).join("\n")}
   <Override PartName="/ppt/presentation.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"/>
   <Override PartName="/ppt/slideLayouts/slideLayout1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slideLayout+xml"/>
   <Override PartName="/ppt/slideMasters/slideMaster1.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.slideMaster+xml"/>
@@ -11132,15 +11451,23 @@ ${contentTypesOverrides}
       files.push({ name: s.fileName, data: s.xml });
       files.push({ name: s.relsFileName, data: s.rels });
     }
+    for (const m of ctx.media.values()) files.push({ name: `ppt/media/${m.name}`, data: m.bytes });
     const themeId = opts.theme || "blue";
     for (const f of files) if (/^ppt\/(slides|theme|slideMasters|slideLayouts)\/[^/]*\.xml$/.test(f.name) && typeof f.data === "string") f.data = applyTheme(f.data, themeId);
-    return zipStore(files);
+    const out = zipStore(files);
+    out.missingPictures = ctx.missing;
+    out.questionCount = items.length;
+    out.splitCount = items.filter((i) => i.plan.mode === "split").length;
+    return out;
   }
-  var SLIDE_W, SLIDE_H, THEME_XML, SLIDE_MASTER_XML, SLIDE_LAYOUT_XML, BASE, PPTX_THEMES;
+  var SLIDE_W, SLIDE_H, THEME_XML, SLIDE_MASTER_XML, SLIDE_LAYOUT_XML, REL_IMAGE, SUP, SUB3, toScript, sup, sub3, SYM2, BB2, paren, IMG_EXT, RE_LABEL2, toLines, MX, CW, TOP, BOTTOM, GAP, STEM_ONLY_H, PTE, STEM_SIZES, OPT_GAP, BASE, PPTX_THEMES;
   var init_pptx = __esm({
     "src/pptx.js"() {
       init_xlsx();
       init_xml();
+      init_ooxml();
+      init_omml();
+      init_exam();
       SLIDE_W = 12192e3;
       SLIDE_H = 6858e3;
       THEME_XML = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -11193,6 +11520,142 @@ ${contentTypesOverrides}
   </p:cSld>
   <p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr>
 </p:sldLayout>`;
+      REL_IMAGE = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image";
+      SUP = { 0: "\u2070", 1: "\xB9", 2: "\xB2", 3: "\xB3", 4: "\u2074", 5: "\u2075", 6: "\u2076", 7: "\u2077", 8: "\u2078", 9: "\u2079", "+": "\u207A", "-": "\u207B", "\u2212": "\u207B", "=": "\u207C", "(": "\u207D", ")": "\u207E", n: "\u207F", i: "\u2071" };
+      SUB3 = { 0: "\u2080", 1: "\u2081", 2: "\u2082", 3: "\u2083", 4: "\u2084", 5: "\u2085", 6: "\u2086", 7: "\u2087", 8: "\u2088", 9: "\u2089", "+": "\u208A", "-": "\u208B", "\u2212": "\u208B", "=": "\u208C", "(": "\u208D", ")": "\u208E", a: "\u2090", e: "\u2091", o: "\u2092", x: "\u2093", n: "\u2099", i: "\u1D62", j: "\u2C7C", k: "\u2096", m: "\u2098", p: "\u209A", s: "\u209B", t: "\u209C", h: "\u2095", l: "\u2097" };
+      toScript = (map, mark, x) => {
+        x = String(x).trim();
+        if (!x) return "";
+        if ([...x].every((ch) => map[ch])) return [...x].map((ch) => map[ch]).join("");
+        return mark + (/^[A-Za-z0-9]$/.test(x) ? x : `(${x})`);
+      };
+      sup = (x) => toScript(SUP, "^", x);
+      sub3 = (x) => toScript(SUB3, "_", x);
+      SYM2 = {
+        le: "\u2264",
+        leq: "\u2264",
+        leqslant: "\u2264",
+        ge: "\u2265",
+        geq: "\u2265",
+        geqslant: "\u2265",
+        neq: "\u2260",
+        ne: "\u2260",
+        approx: "\u2248",
+        equiv: "\u2261",
+        sim: "\u223C",
+        cong: "\u2245",
+        propto: "\u221D",
+        times: "\xD7",
+        cdot: "\xB7",
+        div: "\xF7",
+        pm: "\xB1",
+        mp: "\u2213",
+        ast: "\u2217",
+        circ: "\xB0",
+        degree: "\xB0",
+        bullet: "\u2022",
+        star: "\u2605",
+        infty: "\u221E",
+        partial: "\u2202",
+        nabla: "\u2207",
+        prime: "\u2032",
+        ldots: "\u2026",
+        dots: "\u2026",
+        cdots: "\u22EF",
+        vdots: "\u22EE",
+        ddots: "\u22F1",
+        to: "\u2192",
+        rightarrow: "\u2192",
+        leftarrow: "\u2190",
+        Rightarrow: "\u21D2",
+        Leftarrow: "\u21D0",
+        Leftrightarrow: "\u21D4",
+        leftrightarrow: "\u2194",
+        mapsto: "\u21A6",
+        implies: "\u21D2",
+        iff: "\u21D4",
+        in: "\u2208",
+        notin: "\u2209",
+        ni: "\u220B",
+        subset: "\u2282",
+        supset: "\u2283",
+        subseteq: "\u2286",
+        supseteq: "\u2287",
+        cap: "\u2229",
+        cup: "\u222A",
+        setminus: "\u2216",
+        emptyset: "\u2205",
+        varnothing: "\u2205",
+        forall: "\u2200",
+        exists: "\u2203",
+        nexists: "\u2204",
+        neg: "\xAC",
+        land: "\u2227",
+        lor: "\u2228",
+        perp: "\u22A5",
+        parallel: "\u2225",
+        angle: "\u2220",
+        triangle: "\u25B3",
+        sum: "\u2211",
+        prod: "\u220F",
+        int: "\u222B",
+        iint: "\u222C",
+        iiint: "\u222D",
+        oint: "\u222E",
+        alpha: "\u03B1",
+        beta: "\u03B2",
+        gamma: "\u03B3",
+        delta: "\u03B4",
+        epsilon: "\u03B5",
+        varepsilon: "\u03B5",
+        zeta: "\u03B6",
+        eta: "\u03B7",
+        theta: "\u03B8",
+        vartheta: "\u03D1",
+        iota: "\u03B9",
+        kappa: "\u03BA",
+        lambda: "\u03BB",
+        mu: "\u03BC",
+        nu: "\u03BD",
+        xi: "\u03BE",
+        pi: "\u03C0",
+        rho: "\u03C1",
+        sigma: "\u03C3",
+        tau: "\u03C4",
+        upsilon: "\u03C5",
+        phi: "\u03C6",
+        varphi: "\u03C6",
+        chi: "\u03C7",
+        psi: "\u03C8",
+        omega: "\u03C9",
+        Gamma: "\u0393",
+        Delta: "\u0394",
+        Theta: "\u0398",
+        Lambda: "\u039B",
+        Xi: "\u039E",
+        Pi: "\u03A0",
+        Sigma: "\u03A3",
+        Phi: "\u03A6",
+        Psi: "\u03A8",
+        Omega: "\u03A9"
+      };
+      BB2 = { R: "\u211D", N: "\u2115", Z: "\u2124", Q: "\u211A", C: "\u2102" };
+      paren = (x) => {
+        x = x.trim();
+        return /^[A-Za-z0-9À-ɏ.,°′'π∞]+$/.test(x) ? x : `(${x})`;
+      };
+      IMG_EXT = { "image/png": "png", "image/jpeg": "jpeg", "image/jpg": "jpeg", "image/gif": "gif", "image/x-emf": "emf", "image/emf": "emf", "image/x-wmf": "wmf", "image/wmf": "wmf" };
+      RE_LABEL2 = /^\s*(?:C[âa]u|B[àa]i)\s*\d+\s*(?:[.:)\-–—]|\s)?\s*/iu;
+      toLines = (text) => text.replace(/[ \t ]+/g, " ").split("\n").map((l) => l.trim()).filter(Boolean);
+      MX = 7e5;
+      CW = 10792e3;
+      TOP = 95e4;
+      BOTTOM = 625e4;
+      GAP = 15e4;
+      STEM_ONLY_H = 45e5;
+      PTE = 12700;
+      STEM_SIZES = [2400, 2200, 2e3, 1800, 1600, 1400, 1200, 1100];
+      OPT_GAP = 15e4;
       BASE = { dark: "0F172A", dark2: "1E293B", text2: "475569", text3: "64748B", text4: "94A3B8", pale: "E2E8F0", line: "CBD5E1", paper: "F8FAFC", primary: "3B82F6", accent: "4F46E5", accent2: "6366F1", sky: "38BDF8" };
       PPTX_THEMES = [
         { id: "blue", label: "Xanh d\u01B0\u01A1ng \u0111\xEAm (m\u1EB7c \u0111\u1ECBnh)", font: "Arial", colors: {} },
@@ -11730,15 +12193,12 @@ ${contentTypesOverrides}
         } else {
           pkg = (await preparedBody()).pkg;
         }
-        const model = parseBody(pkg);
-        const a = analyze(model);
-        const ans = answersOf(model, a);
-        const scan2 = scanPackage(pkg);
+        const src = preparePptxSource(pkg);
         const title = $2("ex-pptx-title").value.trim() || "B\xC0I T\u1EACP TR\u1EAEC NGHI\u1EC6M";
-        const buf = buildExamPptx(model, a, ans, {
+        const buf = buildExamPptx(src.model, src.analysis, src.answers, {
           title,
           theme: ((_b = $2("ex-pptx-theme")) == null ? void 0 : _b.value) || "blue",
-          scannedEquations: scan2.equations
+          pkg: src.pkg
         });
         const blob2 = new Blob([buf], { type: "application/vnd.openxmlformats-officedocument.presentationml.presentation" });
         const dl = document.createElement("a");
@@ -11748,7 +12208,7 @@ ${contentTypesOverrides}
         document.body.appendChild(dl);
         dl.click();
         dl.remove();
-        out.innerHTML = `<span class="ok">\u0110\xE3 t\u1EA1o b\xE0i tr\xECnh chi\u1EBFu <b>${esc12(fileName)}</b> th\xE0nh c\xF4ng!</span> <div class="muted">B\u1EA5m v\xE0o ph\u01B0\u01A1ng \xE1n A/B/C/D \u0111\u1EC3 hi\u1EC7n th\xF4ng b\xE1o \u0110\xFAng/Sai tr\u1EF1c ti\u1EBFp.</div>`;
+        out.innerHTML = `<span class="ok">\u0110\xE3 t\u1EA1o b\xE0i tr\xECnh chi\u1EBFu <b>${esc12(fileName)}</b> th\xE0nh c\xF4ng!</span> <div class="muted">B\u1EA5m v\xE0o ph\u01B0\u01A1ng \xE1n A/B/C/D \u0111\u1EC3 hi\u1EC7n th\xF4ng b\xE1o \u0110\xFAng/Sai tr\u1EF1c ti\u1EBFp.</div>${buf.splitCount ? `<div class="muted">${buf.splitCount} c\xE2u c\xF3 \u0111\u1EC1 qu\xE1 d\xE0i n\xEAn \u0111\u01B0\u1EE3c t\xE1ch th\xE0nh 2 trang (\u0111\u1EC1 b\xE0i r\u1ED3i \u0111\u1EBFn c\xE1c ph\u01B0\u01A1ng \xE1n).</div>` : ""}${buf.missingPictures ? `<div class="warn">${buf.missingPictures} h\xECnh/\u0111\u1ED1i t\u01B0\u1EE3ng kh\xF4ng chuy\u1EC3n \u0111\u01B0\u1EE3c (\u0111\u1ECBnh d\u1EA1ng PowerPoint kh\xF4ng h\u1ED7 tr\u1EE3) \u2014 h\xE3y xem l\u1EA1i \u0111\u1EC1 g\u1ED1c.</div>` : ""}`;
       } catch (e3) {
         fail3(out, e3);
       }

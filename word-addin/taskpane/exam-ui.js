@@ -2,7 +2,7 @@ import { answerXlsx, answerTsv } from '../src/xlsx.js';
 import { prepareEnglish, unansweredQuestions, parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody, prependToBody } from '../src/exam.js';
 import { DEFAULT_FORM, examHeaderXml, examEndXml, examFooterXml, simplePackage } from '../src/exam-header.js';
 import { scanPackage } from '../src/ooxml.js';
-import { buildExamPptx, PPTX_THEMES } from '../src/pptx.js';
+import { buildExamPptx, preparePptxSource, PPTX_THEMES } from '../src/pptx.js';
 import { qrPayloads, renderQr } from '../src/answer-qr.js';
 import { makePicturePackage, canvasToPng, downloadBlob } from '../src/picture.js';
 
@@ -322,16 +322,13 @@ export function mountExam(root, io) {
         pkg = (await preparedBody()).pkg;
       }
 
-      const model = parseBody(pkg);
-      const a = analyze(model);
-      const ans = answersOf(model, a);
-      const scan = scanPackage(pkg);
+      const src = preparePptxSource(pkg);
       const title = $('ex-pptx-title').value.trim() || 'BÀI TẬP TRẮC NGHIỆM';
 
-      const buf = buildExamPptx(model, a, ans, {
+      const buf = buildExamPptx(src.model, src.analysis, src.answers, {
         title,
         theme: $('ex-pptx-theme')?.value || 'blue',
-        scannedEquations: scan.equations
+        pkg: src.pkg
       });
 
       const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
@@ -343,7 +340,7 @@ export function mountExam(root, io) {
       dl.click();
       dl.remove();
 
-      out.innerHTML = `<span class="ok">Đã tạo bài trình chiếu <b>${esc(fileName)}</b> thành công!</span> <div class="muted">Bấm vào phương án A/B/C/D để hiện thông báo Đúng/Sai trực tiếp.</div>`;
+      out.innerHTML = `<span class="ok">Đã tạo bài trình chiếu <b>${esc(fileName)}</b> thành công!</span> <div class="muted">Bấm vào phương án A/B/C/D để hiện thông báo Đúng/Sai trực tiếp.</div>${buf.splitCount ? `<div class="muted">${buf.splitCount} câu có đề quá dài nên được tách thành 2 trang (đề bài rồi đến các phương án).</div>` : ''}${buf.missingPictures ? `<div class="warn">${buf.missingPictures} hình/đối tượng không chuyển được (định dạng PowerPoint không hỗ trợ) — hãy xem lại đề gốc.</div>` : ''}`;
     } catch (e) {
       fail(out, e);
     }
