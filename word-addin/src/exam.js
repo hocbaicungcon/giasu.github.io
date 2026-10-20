@@ -118,7 +118,7 @@ function pageTextWidthTwips(model) {
 
 // ---------------------------------------------------------------- analysis
 const RE_PART = /^\s*PH[AẦ]N\s+(I{1,3}V?|IV|V|[1-4])\b\s*[.:)]?/i;
-const RE_QUESTION = /^\s*(C[âa]u|B[àa]i|Question)\s*(\d+)\s*([.:)\-–—]|\s+(?=[A-Z\p{L}(]))/iu;
+const RE_QUESTION = /^\s*(C[âa]u|B[àa]i|Question)\s*(\d+)\s*([.:)\-–—]|\s+(?=[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ(]))/iu;
 const RE_OPT = /^\s*([A-D])\s*([.)])/;
 const RE_STMT = /^\s*([a-d])\s*\)/;
 const RE_END = /^[\s\-–—_*.]*(h[ếe]t\b|the\s+end[\s\-–—_*.]*$|(bảng\s*)?đáp\s*án[^:：]{0,40}$|hướng\s*dẫn\s*chấm|cán\s*bộ\s*coi\s*thi)/i;

@@ -50,7 +50,7 @@ class Parser {
   peekCs() {   // control sequence name at i, without consuming
     this.ws();
     if (this.s[this.i] !== BS) return null;
-    const m = /^\\([A-Za-z]+|.)/s.exec(this.s.slice(this.i));
+    const m = /^\\([A-Za-z]+|[\s\S])/.exec(this.s.slice(this.i));
     return m ? m[1] : null;
   }
   atStop() {
@@ -136,7 +136,7 @@ class Parser {
       if ((ch === ',' || ch === ';') && /\s/.test(this.s[this.i] || '')) return this.run(ch + ' ');   // "1, 2": the space after a comma is typed, keep it
       return this.run(ch === '-' ? '\u2212' : ch);   // typeset minus, as Word does
     }
-    const m = /^\\([A-Za-z]+|.)/s.exec(this.s.slice(this.i));
+    const m = /^\\([A-Za-z]+|[\s\S])/.exec(this.s.slice(this.i));
     const name = m[1];
     this.i += m[0].length;
     return this.command(name);
@@ -260,7 +260,7 @@ function styled(nodes, sty, blackboard) {
 
 // ---------------------------------------------------------------- resolve n-ary operands and function arguments
 const opChar = (n) => (n && n.k === 'run' && !n.sty && [...n.text].length === 1 ? n.text : null);
-const isLetterRun = (n) => n && ((n.k === 'run' && /^\p{L}$/u.test(n.text)) || (n.k === 'script' && n.base.k === 'run' && /^\p{L}$/u.test(n.base.text)));
+const isLetterRun = (n) => n && ((n.k === 'run' && /^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]$/u.test(n.text)) || (n.k === 'script' && n.base.k === 'run' && /^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]$/u.test(n.base.text)));
 
 function bodyEnd(nodes, start, pending) {
   const isInt = pending.k === 'pendNary' && SIDE_LIMITS.has(pending.op);
@@ -427,10 +427,10 @@ function mmlRun(text, sty) {
   if (sty === 'nor') return `<mtext>${escapeXml(text)}</mtext>`;
   const variant = sty === 'p' ? ' mathvariant="normal"' : sty === 'b' ? ' mathvariant="bold"' : '';
   let out = '';
-  for (const m of text.matchAll(/[0-9]+(?:[.,][0-9]+)?|\p{L}|\s|[\s\S]/gu)) {
+  for (const m of text.matchAll(/[0-9]+(?:[.,][0-9]+)?|[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]|\s|[\s\S]/gu)) {
     const t = m[0];
     if (/^[0-9]/.test(t)) out += `<mn>${t}</mn>`;
-    else if (/^\p{L}$/u.test(t)) out += `<mi${variant}>${escapeXml(t)}</mi>`;
+    else if (/^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]$/u.test(t)) out += `<mi${variant}>${escapeXml(t)}</mi>`;
     else if (/^\s$/.test(t)) out += '<mspace width="0.3em"/>';
     else out += `<mo>${escapeXml(t)}</mo>`;
   }

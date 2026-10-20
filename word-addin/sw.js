@@ -1,6 +1,6 @@
 // Service worker: keeps the add-in (pages, scripts, icons, KaTeX, QR libraries) and the big CDN files it needs
 // (Office.js, Pyodide/SymPy) for about 30 days, so it opens without a network. Generated into sw.js by tools/build-sw.mjs.
-const VERSION = '80feee9d48';
+const VERSION = '793cf10e9d';
 const CACHE = 'texcraft-app-' + VERSION, RUNTIME = 'texcraft-runtime', META = 'texcraft-meta';
 const MAX_AGE = 30 * 24 * 3600 * 1000;
 const FILES = [
@@ -48,6 +48,7 @@ const FILES = [
  "./src/worksheet-tex.js",
  "./src/xlsx.js",
  "./src/xml.js",
+ "./taskpane/app.bundle.js",
  "./taskpane/calc-ui.js",
  "./taskpane/editor-toolbar.js",
  "./taskpane/exam-ui.js",
@@ -163,6 +164,7 @@ const FILES = [
  "./taskpane/latex-autocomplete.js",
  "./taskpane/lms-ui.js",
  "./taskpane/mt-settings.js",
+ "./taskpane/polyfills.js",
  "./taskpane/qr-bidv.jpg",
  "./taskpane/taskpane.css",
  "./taskpane/taskpane.html",

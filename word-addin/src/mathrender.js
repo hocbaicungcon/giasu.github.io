@@ -69,7 +69,7 @@ function runBox(text, sty, fs, noSpaceFirst) {
   const parts = [];
   const chars = [...text];
   chars.forEach((ch, i) => {
-    const letter = /\p{L}/u.test(ch);
+    const letter = /[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]/u.test(ch);
     const italic = letter && sty !== 'p' && sty !== 'nor' && !/[Ͱ-Ͽ]/.test(ch) ? true : (letter && /[α-ω]/.test(ch) && sty !== 'p');
     const bold = sty === 'b';
     const binary = BINARY.has(ch) && sty !== 'nor' && !(noSpaceFirst && i === 0);

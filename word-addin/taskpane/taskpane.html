@@ -139,11 +139,19 @@
   }
   window.addEventListener('error', function (e) { show((e.message || 'lỗi') + (e.filename ? ' @ ' + e.filename.split('/').slice(-2).join('/') + ':' + e.lineno : '')); });
   window.addEventListener('unhandledrejection', function (e) { show('Promise: ' + (e.reason && e.reason.message || e.reason)); });
-  var m = document.createElement('script');
-  if (!('noModule' in m)) show('Web view của Word quá cũ, không hỗ trợ module JavaScript. Cần Word có WebView2 (Microsoft Edge).');
   setTimeout(function () { if (!loaded) show('Script chính không chạy sau 6 giây (có thể file bị thiếu/cache cũ).'); }, 6000);
 })();
 </script>
-<script type="module" src="taskpane.js"></script>
+<script>
+// Pick the build by what this web view can parse: new Word (WebView2 / Chrome / Safari) runs the modern modules,
+// old Word (Edge 18) gets app.bundle.js, the same code lowered to ES2017 in one classic script.
+(function () {
+  var modern = false;
+  try { new Function('try{}catch{};var a={};a?.b;a??1;(async()=>{await import("data:text/javascript,")});new RegExp("(?<!a)b");'); modern = 'noModule' in document.createElement('script') && !/[?&]legacy\b/.test(location.search); } catch (e) {}
+  var s = document.createElement('script');
+  if (modern) { s.type = 'module'; s.src = 'taskpane.js'; } else s.src = 'app.bundle.js';
+  document.body.appendChild(s);
+})();
+</script>
 </body>
 </html>

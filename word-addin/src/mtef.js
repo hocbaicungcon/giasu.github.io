@@ -6,7 +6,7 @@ export class MtefError extends Error {}
 
 const has = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key);
 const BS = '\\';
-const isAlpha = (s) => s.length > 0 && /^\p{L}+$/u.test(s);
+const isAlpha = (s) => s.length > 0 && /^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]+$/u.test(s);
 const isDigit = (s) => /^[0-9]$/.test(s);
 const at = (arr, i) => {   // Python's list[i] raises IndexError; undefined would silently become the text "undefined"
   if (i < 0 || i >= arr.length) throw new MtefError('missing slot');
@@ -406,7 +406,7 @@ function separator(previous, token, built) {
         before.endsWith(`${BS}left(`) || before.endsWith(`${BS}left[`) || before.endsWith(`${BS}left${BS}{`) || before.endsWith(`${BS}left|`)) return '';
     return ' ';
   }
-  if (/\\[A-Za-z]+$/.test(previous) && /^\p{L}/u.test(token.slice(0, 1))) return ' ';
+  if (/\\[A-Za-z]+$/.test(previous) && /^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]/u.test(token.slice(0, 1))) return ' ';
   return '';
 }
 

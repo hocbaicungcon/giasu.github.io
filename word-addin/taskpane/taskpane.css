@@ -455,9 +455,8 @@ button.primary svg { vertical-align: -2px; }
 
 /* ---------- Narrow task pane (the pane can be as thin as ~300 px) ---------- */
 html, body { max-width: 100%; overflow-x: hidden; }
-nav { overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; flex-wrap: nowrap; }
-nav::-webkit-scrollbar { display: block; height: 6px; }
-nav::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+nav { overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -ms-overflow-style: none; flex-wrap: nowrap; }
+nav::-webkit-scrollbar { display: none; width: 0; height: 0; }
 nav button { flex: 0 0 auto; padding: 8px 9px; white-space: nowrap; }
 img, svg, textarea, input, select, .scroll, table { max-width: 100%; }
 fieldset { min-width: 0; }

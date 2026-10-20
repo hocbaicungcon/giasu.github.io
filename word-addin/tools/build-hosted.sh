@@ -8,6 +8,7 @@ BASE="${BASE%/}"
 ORIGIN=$(echo "$BASE" | sed -E 's#^(https://[^/]+).*#\1#')
 rm -rf hosted
 mkdir -p hosted/taskpane hosted/src
+sh tools/bundle.sh
 cp taskpane/*.html taskpane/*.css taskpane/*.js taskpane/*.png hosted/taskpane/
 cp -R taskpane/katex hosted/taskpane/ 2>/dev/null || true
 cp src/mtefchars.js src/mathtype-template.js hosted/src/ 2>/dev/null || true

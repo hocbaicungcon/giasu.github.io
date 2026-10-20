@@ -4,7 +4,7 @@
 
 let libPromise = null;
 function loadMathlive() {
-  libPromise = libPromise || import('./vendor/mathlive/mathlive.min.mjs').then((m) => {
+  libPromise = libPromise || new Function('u', 'return import(u)')(new URL('./vendor/mathlive/mathlive.min.mjs', import.meta.url).href).then((m) => {
     const MF = m.MathfieldElement;
     MF.fontsDirectory = new URL('./vendor/mathlive/fonts', import.meta.url).href;
     MF.soundsDirectory = null;

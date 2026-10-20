@@ -7,7 +7,7 @@ import { parseXml, local, elements, textOf, descendants } from './xml.js';
 export class OmmlError extends Error {}
 const BS = '\\';
 const has = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
-const isAlpha = (s) => /^\p{L}$/u.test(s);
+const isAlpha = (s) => /^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]$/u.test(s);
 
 function prop(element, name, dflt) {
   for (const holder of elements(element)) {

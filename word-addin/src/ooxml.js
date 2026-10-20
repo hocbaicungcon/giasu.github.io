@@ -162,7 +162,23 @@ export function scanPackage(pkg) {
   return { equations, parts, doc, docPart, rels };
 }
 
-const LATEX_RE = /(?<!\\)\$\$(?!\s)((?:[^\$\\]|\\.)+?)(?<!\\)\$\$|(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]|(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)|(?<![\\\w\$])\$(?!\s)((?:[^\$\\]|\\.)+?)(?<!\\)\$(?!\d)/g;
+// Lookbehind (?<!..) is a syntax error in old Word web views (Edge 18), so the native regex is built at run time and a prefix-capturing equivalent stands in.
+const LATEX_NATIVE = (() => { try { return new RegExp(String.raw`(?<!\\)\$\$(?!\s)((?:[^\$\\]|\\.)+?)(?<!\\)\$\$|(?<!\\)\\\[([\s\S]+?)(?<!\\)\\\]|(?<!\\)\\\(([\s\S]+?)(?<!\\)\\\)|(?<![\\\w\$])\$(?!\s)((?:[^\$\\]|\\.)+?)(?<!\\)\$(?!\d)`, 'g'); } catch { return null; } })();
+const LATEX_FALLBACK = /(?:(^|[^\\])(?:\$\$(?!\s)((?:[^\$\\]|\\.)+?)\$\$|\\\[([\s\S]+?)\\\]|\\\(([\s\S]+?)\\\))|(^|[^\\\w\$])\$(?!\s)((?:[^\$\\]|\\.)+?)\$(?!\d))/g;
+const LATEX_RE = {
+  lastIndex: 0,
+  exec(str) {
+    if (LATEX_NATIVE) { LATEX_NATIVE.lastIndex = this.lastIndex; const r = LATEX_NATIVE.exec(str); this.lastIndex = LATEX_NATIVE.lastIndex; return r; }
+    LATEX_FALLBACK.lastIndex = Math.max(0, this.lastIndex - 1);
+    const m = LATEX_FALLBACK.exec(str);
+    if (!m) { this.lastIndex = 0; return null; }
+    const pre = (m[1] ?? m[5] ?? '').length;
+    const r = [m[0].slice(pre), m[2], m[3], m[4], m[6]];
+    r.index = m.index + pre;
+    this.lastIndex = LATEX_FALLBACK.lastIndex;
+    return r;
+  },
+};
 
 function isLikelyLatex(rawInner) {
   const s = rawInner.trim();

@@ -1,3 +1,4 @@
+import './polyfills.js';
 import { mountMtSettings, mtOptions, mtConvertOptions, classicLayout } from './mt-settings.js';
 import * as io from '../src/word-io.js';
 import { attachLatexAutocomplete } from './latex-autocomplete.js';
