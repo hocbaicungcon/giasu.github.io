@@ -17,8 +17,7 @@ rm -f hosted/taskpane/mock-word.js   # development stand-in for Word, not needed
 cp src/*.js hosted/src/
 cp -R src/figures hosted/src/figures
 mkdir -p hosted/taskpane/vendor && cp -R taskpane/vendor/* hosted/taskpane/vendor/
-SRC_MANIFEST="manifest.dev.xml"
-[ -f "$SRC_MANIFEST" ] || SRC_MANIFEST="manifest.xml"
-sed -e "s#https://localhost:3000#$BASE#g" -e "s#<AppDomain>$BASE</AppDomain>#<AppDomain>$ORIGIN</AppDomain>#" "$SRC_MANIFEST" > hosted/manifest.xml
+# public manifests are written for https://giasu.ai.vn/word-addin; point them at BASE (lite = manifest.xml, full = manifest-full.xml)
+for M in manifest manifest-full; do sed -e "s#https://giasu.ai.vn/word-addin#$BASE#g" -e "s#<AppDomain>https://giasu.ai.vn</AppDomain>#<AppDomain>$ORIGIN</AppDomain>#" $M.xml > hosted/$M.xml; done
 node tools/build-sw.mjs hosted
 echo "Built hosted/ for $BASE"

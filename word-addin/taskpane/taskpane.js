@@ -13,7 +13,12 @@ const state = { scanned: null, lastBackup: null, examLoaded: false };
 let lastPreview = [];
 
 // ---------------------------------------------------------------- tabs
+// Public edition: only Công thức, Đề thi, Giới thiệu (light and quick on old Word). The full edition is opened with ?edition=full (see manifest-full.xml).
+const FULL = /[?&]edition=full\b/.test(location.search);
+const LITE_TABS = ['eq', 'exam', 'about'];
+if (!FULL) document.querySelectorAll('nav button').forEach((b) => { if (!LITE_TABS.includes(b.dataset.tab)) b.remove(); });
 function switchTab(name) {
+  if (!FULL && !LITE_TABS.includes(name)) name = 'eq';
   const b = document.querySelector(`nav button[data-tab="${name}"]`);
   if (!b) return;
   document.querySelectorAll('nav button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
@@ -406,6 +411,7 @@ function onSelectionChanged() {
   }, 350);
 }
 function installSelectionWatcher() {
+  if (!FULL) return;   // the lite edition has no tab that follows the cursor
   try {
     Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged);
   } catch { /* not available (browser mock) */ }
@@ -450,6 +456,12 @@ async function boot() {
     document.body.prepend(note);
   }
   try { if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $('apply-kbd').textContent = '⌘↩'; } catch { /* ignore */ }
+  if (FULL) initEditor();
+  installSelectionWatcher();
+  requestStartupLoad();
+  checkUrlTab();
+}
+function initEditor() {
   attachLatexAutocomplete($('editor-latex'), { onChange: () => renderEditorPreview() });
   visual = createVisualEditor({ host: $('editor-visual'), textarea: $('editor-latex'), onChange: () => renderEditorPreview() });
   mountEditorToolbar($('editor-toolbar'), $('editor-latex'), { visual });
@@ -463,9 +475,6 @@ async function boot() {
   document.querySelectorAll('input[name=editor-input]').forEach((r) => r.addEventListener('change', () => setInput(r.value)));
   let saved = 'latex'; try { saved = localStorage.getItem(KEY_IN) || 'latex'; } catch { /* ignore */ }
   if (saved === 'visual') setInput('visual');
-  installSelectionWatcher();
-  requestStartupLoad();
-  checkUrlTab();
 }
 // Offline use: a service worker keeps the add-in for ~30 days (not on localhost, unless ?sw=1 for testing)
 async function registerOffline() {

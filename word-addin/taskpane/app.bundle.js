@@ -12702,7 +12702,13 @@ ${contentTypesOverrides}
   var esc13 = (s) => String(s != null ? s : "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
   var state2 = { scanned: null, lastBackup: null, examLoaded: false };
   var lastPreview = [];
+  var FULL2 = /[?&]edition=full\b/.test(location.search);
+  var LITE_TABS = ["eq", "exam", "about"];
+  if (!FULL2) document.querySelectorAll("nav button").forEach((b) => {
+    if (!LITE_TABS.includes(b.dataset.tab)) b.remove();
+  });
   function switchTab(name) {
+    if (!FULL2 && !LITE_TABS.includes(name)) name = "eq";
     const b = document.querySelector(`nav button[data-tab="${name}"]`);
     if (!b) return;
     document.querySelectorAll("nav button").forEach((x) => x.setAttribute("aria-selected", String(x === b)));
@@ -13155,6 +13161,7 @@ ${contentTypesOverrides}
     }, 350);
   }
   function installSelectionWatcher() {
+    if (!FULL2) return;
     try {
       Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged);
     } catch (e3) {
@@ -13207,6 +13214,12 @@ ${contentTypesOverrides}
       if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $("apply-kbd").textContent = "\u2318\u21A9";
     } catch (e3) {
     }
+    if (FULL2) initEditor();
+    installSelectionWatcher();
+    requestStartupLoad();
+    checkUrlTab();
+  }
+  function initEditor() {
     attachLatexAutocomplete($("editor-latex"), { onChange: () => renderEditorPreview() });
     visual = createVisualEditor({ host: $("editor-visual"), textarea: $("editor-latex"), onChange: () => renderEditorPreview() });
     mountEditorToolbar($("editor-toolbar"), $("editor-latex"), { visual });
@@ -13234,9 +13247,6 @@ ${contentTypesOverrides}
     } catch (e3) {
     }
     if (saved === "visual") setInput("visual");
-    installSelectionWatcher();
-    requestStartupLoad();
-    checkUrlTab();
   }
   async function registerOffline() {
     const note = $("offline-status");

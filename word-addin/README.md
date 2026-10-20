@@ -279,3 +279,10 @@ Khi phát triển ứng dụng Desktop hoặc các module mở rộng, người 
 | [`src/xlsx.js`](./src/xlsx.js) | Bộ tạo file bảng tính Excel `.xlsx` thuần JS |
 | [`src/figures/`](./src/figures/) | Toàn bộ engine sinh hình vẽ bảng biến thiên, hàm số, hình không gian và phẳng |
 | [`src/sympy-bridge.js`](./src/sympy-bridge.js) | Bộ điều khiển tính toán đại số bằng SymPy/Pyodide |
+
+## Hai bản: công khai (rút gọn) và đầy đủ
+
+- `manifest.xml` — bản công khai: chỉ 3 tab **Công thức, Đề thi, Giới thiệu** (nhẹ, chạy nhanh trên Word cũ).
+- `manifest-full.xml` — bản đầy đủ cho riêng tác giả (Id khác nên cài song song được): mở `taskpane.html?edition=full`, có đủ tab Soạn thảo, LMS, Hình vẽ, Tính toán, Phiếu bài tập.
+- `manifest.dev.xml` — chạy thử ở localhost, bật bản đầy đủ.
+- Sau khi sửa script trong `taskpane/` hoặc `src/`, chạy `sh tools/build-hosted.sh` (tự đóng gói lại `app.bundle.js` cho Word cũ và cập nhật `sw.js`).

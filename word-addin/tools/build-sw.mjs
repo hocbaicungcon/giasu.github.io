@@ -6,7 +6,7 @@ const root = process.argv[2] || 'hosted';
 const files = [];
 const walk = (d) => { for (const n of readdirSync(d)) { const p = join(d, n); if (statSync(p).isDirectory()) walk(p); else files.push(relative(root, p).replace(/\\/g, '/')); } };
 walk(root);
-const list = files.filter((f) => !/^(sw\.js|manifest\.xml)$/.test(f) && !/\.(LICENSE|map)$/.test(f) && !/\.DS_Store$/.test(f)).sort();
+const list = files.filter((f) => !/^(sw\.js|manifest(-full)?\.xml)$/.test(f) && !/\.(LICENSE|map)$/.test(f) && !/\.DS_Store$/.test(f)).sort();
 const hash = createHash('sha1');
 for (const f of list) hash.update(f).update(readFileSync(join(root, f)));
 const version = hash.digest('hex').slice(0, 10);

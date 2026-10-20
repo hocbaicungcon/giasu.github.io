@@ -20,7 +20,7 @@
     <Host Name="Document"/>
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://localhost:3000/taskpane/taskpane.html"/>
+    <SourceLocation DefaultValue="https://localhost:3000/taskpane/taskpane.html?edition=full"/>
   </DefaultSettings>
   <Permissions>ReadWriteDocument</Permissions>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -205,14 +205,14 @@
         <bt:Image id="Icon80_worksheet" DefaultValue="https://localhost:3000/taskpane/icon-ws-v2-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Url" DefaultValue="https://localhost:3000/taskpane/taskpane.html"/>
-        <bt:Url id="Url_eq" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=eq"/>
-        <bt:Url id="Url_editor" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=editor"/>
-        <bt:Url id="Url_exam" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=exam"/>
-        <bt:Url id="Url_about" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=about"/>
-        <bt:Url id="Url_figures" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=figures"/>
-        <bt:Url id="Url_calc" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=calc"/>
-        <bt:Url id="Url_worksheet" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=worksheet"/>
+        <bt:Url id="Url" DefaultValue="https://localhost:3000/taskpane/taskpane.html?edition=full"/>
+        <bt:Url id="Url_eq" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=eq&amp;edition=full"/>
+        <bt:Url id="Url_editor" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=editor&amp;edition=full"/>
+        <bt:Url id="Url_exam" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=exam&amp;edition=full"/>
+        <bt:Url id="Url_about" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=about&amp;edition=full"/>
+        <bt:Url id="Url_figures" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=figures&amp;edition=full"/>
+        <bt:Url id="Url_calc" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=calc&amp;edition=full"/>
+        <bt:Url id="Url_worksheet" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=worksheet&amp;edition=full"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
@@ -424,14 +424,14 @@
         <bt:Image id="Icon80_worksheet" DefaultValue="https://localhost:3000/taskpane/icon-ws-v2-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Url" DefaultValue="https://localhost:3000/taskpane/taskpane.html"/>
-        <bt:Url id="Url_eq" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=eq"/>
-        <bt:Url id="Url_editor" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=editor"/>
-        <bt:Url id="Url_exam" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=exam"/>
-        <bt:Url id="Url_about" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=about"/>
-        <bt:Url id="Url_figures" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=figures"/>
-        <bt:Url id="Url_calc" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=calc"/>
-        <bt:Url id="Url_worksheet" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=worksheet"/>
+        <bt:Url id="Url" DefaultValue="https://localhost:3000/taskpane/taskpane.html?edition=full"/>
+        <bt:Url id="Url_eq" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=eq&amp;edition=full"/>
+        <bt:Url id="Url_editor" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=editor&amp;edition=full"/>
+        <bt:Url id="Url_exam" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=exam&amp;edition=full"/>
+        <bt:Url id="Url_about" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=about&amp;edition=full"/>
+        <bt:Url id="Url_figures" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=figures&amp;edition=full"/>
+        <bt:Url id="Url_calc" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=calc&amp;edition=full"/>
+        <bt:Url id="Url_worksheet" DefaultValue="https://localhost:3000/taskpane/taskpane.html?tab=worksheet&amp;edition=full"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="Title" DefaultValue="TexCraft Công thức"/>

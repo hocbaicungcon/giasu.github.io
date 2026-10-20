@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+           xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+           xsi:type="TaskPaneApp">
+  <Id>b7e3a4c2-91d5-4f68-8a0e-3c52d1f9a6b4</Id>
+  <Version>1.4.0.0</Version>
+  <ProviderName>TexCraft</ProviderName>
+  <DefaultLocale>vi-VN</DefaultLocale>
+  <DisplayName DefaultValue="TexCraft Công thức (đầy đủ)"/>
+  <Description DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType trong Word; chuẩn hóa và trộn đề trắc nghiệm."/>
+  <IconUrl DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-64.png"/>
+  <SupportUrl DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html"/>
+  <AppDomains>
+    <AppDomain>https://giasu.ai.vn</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?edition=full"/>
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Document">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="Title"/>
+            <Description resid="Desc"/>
+            <LearnMoreUrl resid="Url"/>
+          </GetStarted>
+          <FunctionFile resid="Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="TexCraftTab">
+              <Group id="TexCraftGroupMath">
+                <Label resid="GroupMath"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_eq">
+                  <Label resid="Label_eq"/>
+                  <Supertip>
+                    <Title resid="Label_eq"/>
+                    <Description resid="Desc_eq"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_eq"/>
+                    <bt:Image size="32" resid="Icon32_eq"/>
+                    <bt:Image size="80" resid="Icon80_eq"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_eq"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_editor">
+                  <Label resid="Label_editor"/>
+                  <Supertip>
+                    <Title resid="Label_editor"/>
+                    <Description resid="Desc_editor"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_editor"/>
+                    <bt:Image size="32" resid="Icon32_editor"/>
+                    <bt:Image size="80" resid="Icon80_editor"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_editor"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_calc">
+                  <Label resid="Label_calc"/>
+                  <Supertip>
+                    <Title resid="Label_calc"/>
+                    <Description resid="Desc_calc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_calc"/>
+                    <bt:Image size="32" resid="Icon32_calc"/>
+                    <bt:Image size="80" resid="Icon80_calc"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_calc"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroupFigs">
+                <Label resid="GroupFigs"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_figures">
+                  <Label resid="Label_figures"/>
+                  <Supertip>
+                    <Title resid="Label_figures"/>
+                    <Description resid="Desc_figures"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_figures"/>
+                    <bt:Image size="32" resid="Icon32_figures"/>
+                    <bt:Image size="80" resid="Icon80_figures"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_figures"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_worksheet">
+                  <Label resid="Label_worksheet"/>
+                  <Supertip>
+                    <Title resid="Label_worksheet"/>
+                    <Description resid="Desc_worksheet"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_worksheet"/>
+                    <bt:Image size="32" resid="Icon32_worksheet"/>
+                    <bt:Image size="80" resid="Icon80_worksheet"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_worksheet"/>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_exam">
+                  <Label resid="Label_exam"/>
+                  <Supertip>
+                    <Title resid="Label_exam"/>
+                    <Description resid="Desc_exam"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_exam"/>
+                    <bt:Image size="32" resid="Icon32_exam"/>
+                    <bt:Image size="80" resid="Icon80_exam"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_exam"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroup">
+                <Label resid="Group"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_about">
+                  <Label resid="Label_about"/>
+                  <Supertip>
+                    <Title resid="Label_about"/>
+                    <Description resid="Desc_about"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_about"/>
+                    <bt:Image size="32" resid="Icon32_about"/>
+                    <bt:Image size="80" resid="Icon80_about"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>TexCraftPane</TaskpaneId>
+                    <SourceLocation resid="Url_about"/>
+                  </Action>
+                </Control>
+              </Group>
+              <Label resid="TabLabel"/>
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon16" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-16.png"/>
+        <bt:Image id="Icon32" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-32.png"/>
+        <bt:Image id="Icon80" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-80.png"/>
+        <bt:Image id="Icon16_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-16.png"/>
+        <bt:Image id="Icon32_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-32.png"/>
+        <bt:Image id="Icon80_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-80.png"/>
+        <bt:Image id="Icon16_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-16.png"/>
+        <bt:Image id="Icon32_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-32.png"/>
+        <bt:Image id="Icon80_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-80.png"/>
+        <bt:Image id="Icon16_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-16.png"/>
+        <bt:Image id="Icon32_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-32.png"/>
+        <bt:Image id="Icon80_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-80.png"/>
+        <bt:Image id="Icon16_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-16.png"/>
+        <bt:Image id="Icon32_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-32.png"/>
+        <bt:Image id="Icon80_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-80.png"/>
+        <bt:Image id="Icon16_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-16.png"/>
+        <bt:Image id="Icon32_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-32.png"/>
+        <bt:Image id="Icon80_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-80.png"/>
+        <bt:Image id="Icon16_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-16.png"/>
+        <bt:Image id="Icon32_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-32.png"/>
+        <bt:Image id="Icon80_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-80.png"/>
+        <bt:Image id="Icon16_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-16.png"/>
+        <bt:Image id="Icon32_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-32.png"/>
+        <bt:Image id="Icon80_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Url" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?edition=full"/>
+        <bt:Url id="Url_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=eq&amp;edition=full"/>
+        <bt:Url id="Url_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=editor&amp;edition=full"/>
+        <bt:Url id="Url_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=exam&amp;edition=full"/>
+        <bt:Url id="Url_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=about&amp;edition=full"/>
+        <bt:Url id="Url_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=figures&amp;edition=full"/>
+        <bt:Url id="Url_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=calc&amp;edition=full"/>
+        <bt:Url id="Url_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=worksheet&amp;edition=full"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
+        <bt:String id="TabLabel" DefaultValue="TexCraft Pro"/>
+        <bt:String id="Group" DefaultValue="Giới thiệu"/>
+        <bt:String id="GroupMath" DefaultValue="Công thức"/>
+        <bt:String id="GroupFigs" DefaultValue="Hình, phiếu, đề"/>
+        <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
+        <bt:String id="Label_eq" DefaultValue="Công thức"/>
+        <bt:String id="Label_editor" DefaultValue="Soạn thảo"/>
+        <bt:String id="Label_exam" DefaultValue="Đề thi"/>
+        <bt:String id="Label_about" DefaultValue="Giới thiệu"/>
+        <bt:String id="Label_figures" DefaultValue="Hình vẽ"/>
+        <bt:String id="Label_calc" DefaultValue="Tính toán"/>
+        <bt:String id="Label_worksheet" DefaultValue="Phiếu bài tập"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
+        <bt:String id="Desc_eq" DefaultValue="Quét tài liệu, chuyển đổi công thức giữa MathType, công thức Word và LaTeX."/>
+        <bt:String id="Desc_editor" DefaultValue="Soạn hoặc sửa công thức bằng LaTeX có xem trước, ghi vào Word hoặc MathType."/>
+        <bt:String id="Desc_exam" DefaultValue="Chuẩn hóa câu hỏi, trộn đề, bảng đáp án Excel và bài trình chiếu PPTX."/>
+        <bt:String id="Desc_about" DefaultValue="Thông tin tác giả, website và ủng hộ."/>
+        <bt:String id="Desc_figures" DefaultValue="Vẽ bảng biến thiên, đồ thị hàm số, miền nghiệm và hình học để chèn vào Word (hình sửa được)."/>
+        <bt:String id="Desc_calc" DefaultValue="Rút gọn, đạo hàm, tích phân, giới hạn, giải phương trình bằng SymPy; chèn kết quả thành công thức."/>
+        <bt:String id="Desc_worksheet" DefaultValue="Tạo phiếu bài tập tiểu học (Toán, Tiếng Việt, Tiếng Anh) có đáp án để chèn vào Word."/>
+      </bt:LongStrings>
+    </Resources>
+  
+    <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.1">
+        <bt:Set Name="SharedRuntime"/>
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="Document">
+        <Runtimes>
+          <Runtime resid="Url" lifetime="long"/>
+        </Runtimes>
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="Title"/>
+            <Description resid="Desc"/>
+            <LearnMoreUrl resid="Url"/>
+          </GetStarted>
+          <FunctionFile resid="Url"/>
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="TexCraftTab">
+              <Group id="TexCraftGroupMath">
+                <Label resid="GroupMath"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_eq">
+                  <Label resid="Label_eq"/>
+                  <Supertip>
+                    <Title resid="Label_eq"/>
+                    <Description resid="Desc_eq"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_eq"/>
+                    <bt:Image size="32" resid="Icon32_eq"/>
+                    <bt:Image size="80" resid="Icon80_eq"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_eq</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_editor">
+                  <Label resid="Label_editor"/>
+                  <Supertip>
+                    <Title resid="Label_editor"/>
+                    <Description resid="Desc_editor"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_editor"/>
+                    <bt:Image size="32" resid="Icon32_editor"/>
+                    <bt:Image size="80" resid="Icon80_editor"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_editor</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_calc">
+                  <Label resid="Label_calc"/>
+                  <Supertip>
+                    <Title resid="Label_calc"/>
+                    <Description resid="Desc_calc"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_calc"/>
+                    <bt:Image size="32" resid="Icon32_calc"/>
+                    <bt:Image size="80" resid="Icon80_calc"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_calc</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroupFigs">
+                <Label resid="GroupFigs"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_figures">
+                  <Label resid="Label_figures"/>
+                  <Supertip>
+                    <Title resid="Label_figures"/>
+                    <Description resid="Desc_figures"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_figures"/>
+                    <bt:Image size="32" resid="Icon32_figures"/>
+                    <bt:Image size="80" resid="Icon80_figures"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_figures</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_worksheet">
+                  <Label resid="Label_worksheet"/>
+                  <Supertip>
+                    <Title resid="Label_worksheet"/>
+                    <Description resid="Desc_worksheet"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_worksheet"/>
+                    <bt:Image size="32" resid="Icon32_worksheet"/>
+                    <bt:Image size="80" resid="Icon80_worksheet"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_worksheet</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="TexCraft_exam">
+                  <Label resid="Label_exam"/>
+                  <Supertip>
+                    <Title resid="Label_exam"/>
+                    <Description resid="Desc_exam"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_exam"/>
+                    <bt:Image size="32" resid="Icon32_exam"/>
+                    <bt:Image size="80" resid="Icon80_exam"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_exam</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+              <Group id="TexCraftGroup">
+                <Label resid="Group"/>
+                <Icon>
+                  <bt:Image size="16" resid="Icon16"/>
+                  <bt:Image size="32" resid="Icon32"/>
+                  <bt:Image size="80" resid="Icon80"/>
+                </Icon>
+                <Control xsi:type="Button" id="TexCraft_about">
+                  <Label resid="Label_about"/>
+                  <Supertip>
+                    <Title resid="Label_about"/>
+                    <Description resid="Desc_about"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16_about"/>
+                    <bt:Image size="32" resid="Icon32_about"/>
+                    <bt:Image size="80" resid="Icon80_about"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTab_about</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+              <Label resid="TabLabel"/>
+            </CustomTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon16" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-16.png"/>
+        <bt:Image id="Icon32" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-32.png"/>
+        <bt:Image id="Icon80" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-80.png"/>
+        <bt:Image id="Icon16_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-16.png"/>
+        <bt:Image id="Icon32_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-32.png"/>
+        <bt:Image id="Icon80_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-eq-v2-80.png"/>
+        <bt:Image id="Icon16_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-16.png"/>
+        <bt:Image id="Icon32_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-32.png"/>
+        <bt:Image id="Icon80_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-edit-v2-80.png"/>
+        <bt:Image id="Icon16_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-16.png"/>
+        <bt:Image id="Icon32_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-32.png"/>
+        <bt:Image id="Icon80_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-exam-v2-80.png"/>
+        <bt:Image id="Icon16_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-16.png"/>
+        <bt:Image id="Icon32_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-32.png"/>
+        <bt:Image id="Icon80_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-about-v2-80.png"/>
+        <bt:Image id="Icon16_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-16.png"/>
+        <bt:Image id="Icon32_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-32.png"/>
+        <bt:Image id="Icon80_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-fig-v2-80.png"/>
+        <bt:Image id="Icon16_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-16.png"/>
+        <bt:Image id="Icon32_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-32.png"/>
+        <bt:Image id="Icon80_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-calc-v2-80.png"/>
+        <bt:Image id="Icon16_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-16.png"/>
+        <bt:Image id="Icon32_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-32.png"/>
+        <bt:Image id="Icon80_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/icon-ws-v2-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Url" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?edition=full"/>
+        <bt:Url id="Url_eq" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=eq&amp;edition=full"/>
+        <bt:Url id="Url_editor" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=editor&amp;edition=full"/>
+        <bt:Url id="Url_exam" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=exam&amp;edition=full"/>
+        <bt:Url id="Url_about" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=about&amp;edition=full"/>
+        <bt:Url id="Url_figures" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=figures&amp;edition=full"/>
+        <bt:Url id="Url_calc" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=calc&amp;edition=full"/>
+        <bt:Url id="Url_worksheet" DefaultValue="https://giasu.ai.vn/word-addin/taskpane/taskpane.html?tab=worksheet&amp;edition=full"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="Title" DefaultValue="TexCraft Công thức"/>
+        <bt:String id="TabLabel" DefaultValue="TexCraft Pro"/>
+        <bt:String id="Group" DefaultValue="Giới thiệu"/>
+        <bt:String id="GroupMath" DefaultValue="Công thức"/>
+        <bt:String id="GroupFigs" DefaultValue="Hình, phiếu, đề"/>
+        <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
+        <bt:String id="Label_eq" DefaultValue="Công thức"/>
+        <bt:String id="Label_editor" DefaultValue="Soạn thảo"/>
+        <bt:String id="Label_exam" DefaultValue="Đề thi"/>
+        <bt:String id="Label_about" DefaultValue="Giới thiệu"/>
+        <bt:String id="Label_figures" DefaultValue="Hình vẽ"/>
+        <bt:String id="Label_calc" DefaultValue="Tính toán"/>
+        <bt:String id="Label_worksheet" DefaultValue="Phiếu bài tập"/>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
+        <bt:String id="Desc_eq" DefaultValue="Quét tài liệu, chuyển đổi công thức giữa MathType, công thức Word và LaTeX."/>
+        <bt:String id="Desc_editor" DefaultValue="Soạn hoặc sửa công thức bằng LaTeX có xem trước, ghi vào Word hoặc MathType."/>
+        <bt:String id="Desc_exam" DefaultValue="Chuẩn hóa câu hỏi, trộn đề, bảng đáp án Excel và bài trình chiếu PPTX."/>
+        <bt:String id="Desc_about" DefaultValue="Thông tin tác giả, website và ủng hộ."/>
+        <bt:String id="Desc_figures" DefaultValue="Vẽ bảng biến thiên, đồ thị hàm số, miền nghiệm và hình học để chèn vào Word (hình sửa được)."/>
+        <bt:String id="Desc_calc" DefaultValue="Rút gọn, đạo hàm, tích phân, giới hạn, giải phương trình bằng SymPy; chèn kết quả thành công thức."/>
+        <bt:String id="Desc_worksheet" DefaultValue="Tạo phiếu bài tập tiểu học (Toán, Tiếng Việt, Tiếng Anh) có đáp án để chèn vào Word."/>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+  </VersionOverrides>
+</OfficeApp>
