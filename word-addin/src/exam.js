@@ -347,7 +347,7 @@ export function answersOf(model, analysis) {
 const labelRunFor = (letter, template) => {
   const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(template);
   let rpr = m && m[2] ? m[2] : '';
-  if (rpr && !/<w:b\b/.test(rpr)) rpr = rpr.replace('<w:rPr>', '<w:rPr><w:b/>');
+  if (rpr && !/<w:b\b/.test(rpr)) rpr = withRprChildren(rpr, { b: '<w:b/>' });
   if (!rpr) rpr = '<w:rPr><w:b/></w:rPr>';
   return `${m ? m[1] : '<w:r>'}${rpr}<w:t>${letter}.</w:t></w:r>`;
 };
@@ -491,15 +491,89 @@ export function renumberQuestionInParagraph(p, newNumber, { formatTemplate, word
   return true;
 }
 
+
+// ---------------------------------------------------------------- typography (font, text size, equation size)
+const RPR_ORDER = ['rStyle', 'rFonts', 'b', 'bCs', 'i', 'iCs', 'caps', 'smallCaps', 'strike', 'dstrike', 'outline', 'shadow', 'emboss', 'imprint', 'noProof', 'snapToGrid', 'vanish', 'webHidden', 'color', 'spacing', 'w', 'kern', 'position', 'sz', 'szCs', 'highlight', 'u', 'effect', 'bdr', 'shd', 'fitText', 'vertAlign', 'rtl', 'cs', 'em', 'lang', 'eastAsianLayout', 'specVanish', 'oMath'];
+/** rPr with the given children replaced (xml: {tag: element xml}); children keep the order the schema wants. */
+function withRprChildren(rpr, set) {
+  const inner = rpr && rpr !== '<w:rPr/>' ? rpr.replace(/^\s*<w:rPr>/, '').replace(/<\/w:rPr>\s*$/, '') : '';
+  const kids = splitChildren(inner).filter((k) => !(tagName(k).replace(/^w:/, '') in set));
+  const rank = (t) => { const r = RPR_ORDER.indexOf(t.replace(/^w:/, '')); return r < 0 ? 999 : r; };
+  for (const [tag, xml] of Object.entries(set)) {
+    const at = kids.findIndex((k) => rank(tagName(k)) > rank(tag));
+    if (at < 0) kids.push(xml); else kids.splice(at, 0, xml);
+  }
+  return `<w:rPr>${kids.join('')}</w:rPr>`;
+}
+const fontXml = (f) => `<w:rFonts w:ascii="${escapeXml(f)}" w:hAnsi="${escapeXml(f)}" w:eastAsia="${escapeXml(f)}" w:cs="${escapeXml(f)}"/>`;
+const sizeXml = (pt) => ({ sz: `<w:sz w:val="${Math.round(pt * 2)}"/>`, szCs: `<w:szCs w:val="${Math.round(pt * 2)}"/>` });
+
+/** An ordinary text run -> the run with the font / size set. Runs holding pictures, objects or symbols are left alone. */
+function typeRun(run, font, size) {
+  if (hasObject(run) || /<w:sym\b/.test(run)) return run;
+  const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?([\s\S]*)$/.exec(run);
+  if (!m) return run;
+  const set = {};
+  if (font) set.rFonts = fontXml(font);
+  if (size) Object.assign(set, sizeXml(size));
+  return m[1] + withRprChildren(m[2] || '', set) + m[3];
+}
+
+/** An equation (m:oMath / m:oMathPara) -> the same with the size of every math run (and bracket / fraction control) set. */
+function typeMath(xml, size) {
+  const set = sizeXml(size);
+  let out = xml.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g, (r) => withRprChildren(r, set));
+  out = out.replace(/<m:r>((?:\s*<m:rPr>[\s\S]*?<\/m:rPr>|\s*<m:rPr\/>)?)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?/g, (m0, mr, wr) => `<m:r>${mr}${withRprChildren(wr || '', set)}`);
+  return out;
+}
+
+/**
+ * Paragraph children with the typography applied. opts: font (name | ''), fontSize (pt | 0), mathSize (pt | 0 | 'text').
+ * Returns {children, math: number of MathType-style objects whose size cannot be set here}.
+ */
+function typeChildren(children, opts) {
+  const mathSize = opts.mathSize === 'text' ? opts.fontSize : opts.mathSize;
+  let objects = 0;
+  const out = children.map((c) => {
+    if (isRun(c)) { if (/<w:object\b/.test(c)) objects++; return typeRun(c, opts.font, opts.fontSize); }
+    if (isMath(c)) return mathSize ? typeMath(c, mathSize) : c;
+    if (/^<w:hyperlink[\s>]/.test(c)) {
+      const open = /^<w:hyperlink\b[^>]*>/.exec(c)[0];
+      const inner = splitChildren(c.slice(open.length, c.length - '</w:hyperlink>'.length));
+      const r = typeChildren(inner, opts);
+      objects += r.objects;
+      return open + r.children.join('') + '</w:hyperlink>';
+    }
+    return c;
+  });
+  return { children: out, objects };
+}
+
 /**
  * opts: renumber ('part'|'continuous'|false), labelWord ('keep'|'Câu'|'Bài': the word of the "Câu N." / "Bài N." label), labels (bool), questionFormat (bool: copy first "Câu" label format),
- * layout ('auto'|4|2|1|false), keepNext (bool). Returns {pkg, report}.
+ * layout ('auto'|4|2|1|false), keepNext (bool), font (name | ''), fontSize (pt | 0), mathSize (pt | 0 | 'text': same as fontSize). Returns {pkg, report}.
  */
 export function normalize(pkg, opts = {}) {
   pkg = prepareEnglish(pkg).pkg;
+  const report = { questions: 0, renumbered: 0, relaid: 0, retyped: 0, objects: 0, skipped: [], notes: [] };
+  if (opts.font || opts.fontSize || opts.mathSize) {   // first, so the option layout below measures the final text size
+    const m0 = parseBody(pkg), a0 = analyze(m0);
+    for (const part of a0.parts) {
+      for (const q of part.questions) {
+        for (let i = q.start; i < q.end; i++) {
+          const b = m0.blocks[i];
+          if (b.kind !== 'p') continue;
+          const r = typeChildren(b.children, opts);
+          b.children = r.children;
+          report.objects += r.objects;
+          report.retyped++;
+        }
+      }
+    }
+    pkg = buildBody(m0);
+  }
   const model = parseBody(pkg);
   const analysis = analyze(model);
-  const report = { questions: 0, renumbered: 0, relaid: 0, skipped: [], notes: [] };
   const replacements = new Map();   // block index -> array of paragraphs (replace block)
   let counter = 0, firstLabel = null;
   for (const part of analysis.parts) {

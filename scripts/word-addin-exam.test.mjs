@@ -38,3 +38,16 @@ test('Part III short answer exam renumbers correctly across single and multi-run
   assert.doesNotMatch(shuf.pkg, /Câu 17\./);
   assert.doesNotMatch(shuf.pkg, /Câu 18\./);
 });
+
+test('normalize sets font, text size and equation size on question paragraphs', () => {
+  const body = `<w:p><w:r><w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial"/><w:b/><w:sz w:val="20"/></w:rPr><w:t>Câu 1. Tính </w:t></w:r><m:oMath><m:r><m:rPr><m:sty m:val="p"/></m:rPr><w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/></w:rPr><m:t>x</m:t></m:r><m:f><m:num><m:r><m:t>1</m:t></m:r></m:num><m:den><m:r><m:t>2</m:t></m:r></m:den></m:f></m:oMath></w:p><w:p><w:r><w:t>A. 1</w:t></w:r><w:r><w:tab/><w:t>B. 2</w:t></w:r><w:r><w:tab/><w:t>C. 3</w:t></w:r><w:r><w:tab/><w:t>D. 4</w:t></w:r></w:p>`;
+  const pkg = `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/word/document.xml" pkg:contentType="x"><pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"><w:body>${body}</w:body></w:document></pkg:xmlData></pkg:part></pkg:package>`;
+  const r = normalize(pkg, { renumber: false, font: 'Times New Roman', fontSize: 13, mathSize: 14 });
+  assert.equal(r.report.retyped, 2);
+  assert.ok(!/Arial/.test(r.pkg));
+  assert.ok(/<w:sz w:val="26"\/>/.test(r.pkg));                       // text 13 pt
+  assert.equal((r.pkg.match(/<w:sz w:val="28"\/>/g) || []).length, 3);   // x, 1, 2 at 14 pt
+  assert.ok(/<w:rFonts[^>]*Cambria Math/.test(r.pkg));                 // the math font itself is kept
+  const same = normalize(pkg, { renumber: false, font: '', fontSize: 0, mathSize: 0 });
+  assert.ok(/Arial/.test(same.pkg) && same.report.retyped === 0);
+});

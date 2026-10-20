@@ -22,6 +22,12 @@ export function mountExam(root, io) {
       <select id="ex-layout"><option value="auto">tự động (1 dòng / 2 dòng / 4 dòng theo độ dài)</option><option value="4">luôn 4 cột</option><option value="2">luôn 2 cột</option><option value="1">mỗi phương án một dòng</option><option value="false">giữ nguyên</option></select></label>
     <label class="field"><span>Từ trong nhãn câu</span>
       <select id="ex-word"><option value="keep">giữ nguyên như tài liệu (Câu 1. / Bài 1. / bài 1:)</option><option value="Câu">đổi tất cả thành “Câu N.”</option><option value="Bài">đổi tất cả thành “Bài N.”</option></select></label>
+    <label class="field"><span>Phông chữ</span>
+      <select id="ex-font"><option value="Times New Roman">Times New Roman</option><option value="Cambria">Cambria</option><option value="Arial">Arial</option><option value="Calibri">Calibri</option><option value="Tahoma">Tahoma</option><option value="">giữ nguyên</option></select></label>
+    <label class="field"><span>Cỡ chữ</span>
+      <select id="ex-fsize"><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="11">11 pt</option><option value="0">giữ nguyên</option></select></label>
+    <label class="field"><span>Cỡ công thức</span>
+      <select id="ex-msize"><option value="text">bằng cỡ chữ</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="0">giữ nguyên</option></select></label>
     <label><input type="checkbox" id="ex-labels" checked> nhãn A. B. C. D. in đậm, viết hoa, dấu chấm</label>
     <label><input type="checkbox" id="ex-qformat" checked> nhãn “Câu N.” / “Bài N.” cùng định dạng với câu đầu tiên</label>
     <label><input type="checkbox" id="ex-keep" checked> giữ câu hỏi và phương án cùng trang (keep with next)</label>
@@ -133,10 +139,12 @@ export function mountExam(root, io) {
     try {
       const layout = $('ex-layout').value;
       const r = normalize(await body(), { renumber: $('ex-renumber').value || false, labelWord: $('ex-word').value, labels: $('ex-labels').checked, questionFormat: $('ex-qformat').checked,
-        keepNext: $('ex-keep').checked, layout: layout === 'false' ? false : layout });
+        keepNext: $('ex-keep').checked, layout: layout === 'false' ? false : layout,
+        font: $('ex-font').value, fontSize: Number($('ex-fsize').value), mathSize: $('ex-msize').value === 'text' ? 'text' : Number($('ex-msize').value) });
       await io.replaceBody(r.pkg);
       const rep = r.report;
-      $('ex-norm-out').innerHTML = `<span class="ok">Đã chuẩn hóa ${rep.questions} câu</span>: đánh số lại ${rep.renumbered}, căn lại phương án ${rep.relaid}.` +
+      $('ex-norm-out').innerHTML = `<span class="ok">Đã chuẩn hóa ${rep.questions} câu</span>: đánh số lại ${rep.renumbered}, căn lại phương án ${rep.relaid}, đồng bộ phông/cỡ chữ ${rep.retyped} đoạn.` +
+        (rep.objects ? `<div class="warn">${rep.objects} công thức MathType dạng đối tượng chưa đổi được cỡ — hãy chuyển sang công thức Word (tab Công thức) rồi chuẩn hóa lại.</div>` : '') +
         (rep.skipped.length ? `<ul class="warn">${rep.skipped.slice(0, 8).map((s) => `<li>${esc(s)}</li>`).join('')}</ul>` : '') +
         `<div class="muted">Hoàn tác bằng Ctrl/Cmd+Z (Word coi đây là một thao tác thay thế toàn bộ nội dung).</div>`;
     } catch (e) { fail($('ex-norm-out'), e); }

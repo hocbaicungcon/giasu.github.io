@@ -3440,11 +3440,76 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     p2.children[last.i] = last.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, lastSuffix ? `<w:t xml:space="preserve">${escapeXml(lastSuffix)}</w:t>` : "");
     return true;
   }
+  function withRprChildren(rpr2, set) {
+    const inner = rpr2 && rpr2 !== "<w:rPr/>" ? rpr2.replace(/^\s*<w:rPr>/, "").replace(/<\/w:rPr>\s*$/, "") : "";
+    const kids = splitChildren(inner).filter((k) => !(tagName(k).replace(/^w:/, "") in set));
+    const rank = (t) => {
+      const r = RPR_ORDER.indexOf(t.replace(/^w:/, ""));
+      return r < 0 ? 999 : r;
+    };
+    for (const [tag, xml] of Object.entries(set)) {
+      const at2 = kids.findIndex((k) => rank(tagName(k)) > rank(tag));
+      if (at2 < 0) kids.push(xml);
+      else kids.splice(at2, 0, xml);
+    }
+    return `<w:rPr>${kids.join("")}</w:rPr>`;
+  }
+  function typeRun(run4, font, size) {
+    if (hasObject(run4) || /<w:sym\b/.test(run4)) return run4;
+    const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?([\s\S]*)$/.exec(run4);
+    if (!m) return run4;
+    const set = {};
+    if (font) set.rFonts = fontXml(font);
+    if (size) Object.assign(set, sizeXml(size));
+    return m[1] + withRprChildren(m[2] || "", set) + m[3];
+  }
+  function typeMath(xml, size) {
+    const set = sizeXml(size);
+    let out = xml.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g, (r) => withRprChildren(r, set));
+    out = out.replace(/<m:r>((?:\s*<m:rPr>[\s\S]*?<\/m:rPr>|\s*<m:rPr\/>)?)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?/g, (m0, mr, wr) => `<m:r>${mr}${withRprChildren(wr || "", set)}`);
+    return out;
+  }
+  function typeChildren(children2, opts) {
+    const mathSize = opts.mathSize === "text" ? opts.fontSize : opts.mathSize;
+    let objects = 0;
+    const out = children2.map((c) => {
+      if (isRun(c)) {
+        if (/<w:object\b/.test(c)) objects++;
+        return typeRun(c, opts.font, opts.fontSize);
+      }
+      if (isMath(c)) return mathSize ? typeMath(c, mathSize) : c;
+      if (/^<w:hyperlink[\s>]/.test(c)) {
+        const open = /^<w:hyperlink\b[^>]*>/.exec(c)[0];
+        const inner = splitChildren(c.slice(open.length, c.length - "</w:hyperlink>".length));
+        const r = typeChildren(inner, opts);
+        objects += r.objects;
+        return open + r.children.join("") + "</w:hyperlink>";
+      }
+      return c;
+    });
+    return { children: out, objects };
+  }
   function normalize(pkg, opts = {}) {
     pkg = prepareEnglish(pkg).pkg;
+    const report = { questions: 0, renumbered: 0, relaid: 0, retyped: 0, objects: 0, skipped: [], notes: [] };
+    if (opts.font || opts.fontSize || opts.mathSize) {
+      const m0 = parseBody(pkg), a0 = analyze(m0);
+      for (const part of a0.parts) {
+        for (const q of part.questions) {
+          for (let i = q.start; i < q.end; i++) {
+            const b = m0.blocks[i];
+            if (b.kind !== "p") continue;
+            const r = typeChildren(b.children, opts);
+            b.children = r.children;
+            report.objects += r.objects;
+            report.retyped++;
+          }
+        }
+      }
+      pkg = buildBody(m0);
+    }
     const model = parseBody(pkg);
     const analysis = analyze(model);
-    const report = { questions: 0, renumbered: 0, relaid: 0, skipped: [], notes: [] };
     const replacements = /* @__PURE__ */ new Map();
     let counter3 = 0, firstLabel = null;
     for (const part of analysis.parts) {
@@ -3895,7 +3960,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return out;
   }
-  var PPR_ORDER, tagName, buildPara, runText, unesc, isRun, isMath, hasObject, paragraphText, RE_PART, RE_QUESTION, RE_OPT, RE_STMT, RE_END, RE_ANSWER_LINE, RE_SHARED, RE_PINNED_OPTION, RE_EN_ORDER, RE_EN_PASSAGE, RE_OPTION_REF, partKind, stripMarks, labelRunFor, SPACE_RUN, TAB_RUN, xmlText, QWORD, RE_QN_GLOBAL, RE_QLEAD, RE_ROW_ABCD, cell;
+  var PPR_ORDER, tagName, buildPara, runText, unesc, isRun, isMath, hasObject, paragraphText, RE_PART, RE_QUESTION, RE_OPT, RE_STMT, RE_END, RE_ANSWER_LINE, RE_SHARED, RE_PINNED_OPTION, RE_EN_ORDER, RE_EN_PASSAGE, RE_OPTION_REF, partKind, stripMarks, labelRunFor, SPACE_RUN, TAB_RUN, RPR_ORDER, fontXml, sizeXml, xmlText, QWORD, RE_QN_GLOBAL, RE_QLEAD, RE_ROW_ABCD, cell;
   var init_exam = __esm({
     "src/exam.js"() {
       init_xml();
@@ -3965,12 +4030,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       labelRunFor = (letter, template3) => {
         const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(template3);
         let rpr2 = m && m[2] ? m[2] : "";
-        if (rpr2 && !/<w:b\b/.test(rpr2)) rpr2 = rpr2.replace("<w:rPr>", "<w:rPr><w:b/>");
+        if (rpr2 && !/<w:b\b/.test(rpr2)) rpr2 = withRprChildren(rpr2, { b: "<w:b/>" });
         if (!rpr2) rpr2 = "<w:rPr><w:b/></w:rPr>";
         return `${m ? m[1] : "<w:r>"}${rpr2}<w:t>${letter}.</w:t></w:r>`;
       };
       SPACE_RUN = '<w:r><w:t xml:space="preserve"> </w:t></w:r>';
       TAB_RUN = "<w:r><w:tab/></w:r>";
+      RPR_ORDER = ["rStyle", "rFonts", "b", "bCs", "i", "iCs", "caps", "smallCaps", "strike", "dstrike", "outline", "shadow", "emboss", "imprint", "noProof", "snapToGrid", "vanish", "webHidden", "color", "spacing", "w", "kern", "position", "sz", "szCs", "highlight", "u", "effect", "bdr", "shd", "fitText", "vertAlign", "rtl", "cs", "em", "lang", "eastAsianLayout", "specVanish", "oMath"];
+      fontXml = (f) => `<w:rFonts w:ascii="${escapeXml(f)}" w:hAnsi="${escapeXml(f)}" w:eastAsia="${escapeXml(f)}" w:cs="${escapeXml(f)}"/>`;
+      sizeXml = (pt) => ({ sz: `<w:sz w:val="${Math.round(pt * 2)}"/>`, szCs: `<w:szCs w:val="${Math.round(pt * 2)}"/>` });
       xmlText = (x) => (x.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g) || []).map((s) => unesc(s.replace(/<[^>]+>/g, ""))).join(" ");
       QWORD = "(?:Question|QUESTION|C[\xE2a]u|C\xC2U|B[\xE0a]i|B\xC0I)";
       RE_QN_GLOBAL = /(?:Question|QUESTION|C[âa]u|CÂU)\s*\d+\s*[.:)]/g;
@@ -11800,6 +11868,12 @@ ${contentTypesOverrides}
       <select id="ex-layout"><option value="auto">t\u1EF1 \u0111\u1ED9ng (1 d\xF2ng / 2 d\xF2ng / 4 d\xF2ng theo \u0111\u1ED9 d\xE0i)</option><option value="4">lu\xF4n 4 c\u1ED9t</option><option value="2">lu\xF4n 2 c\u1ED9t</option><option value="1">m\u1ED7i ph\u01B0\u01A1ng \xE1n m\u1ED9t d\xF2ng</option><option value="false">gi\u1EEF nguy\xEAn</option></select></label>
     <label class="field"><span>T\u1EEB trong nh\xE3n c\xE2u</span>
       <select id="ex-word"><option value="keep">gi\u1EEF nguy\xEAn nh\u01B0 t\xE0i li\u1EC7u (C\xE2u 1. / B\xE0i 1. / b\xE0i 1:)</option><option value="C\xE2u">\u0111\u1ED5i t\u1EA5t c\u1EA3 th\xE0nh \u201CC\xE2u N.\u201D</option><option value="B\xE0i">\u0111\u1ED5i t\u1EA5t c\u1EA3 th\xE0nh \u201CB\xE0i N.\u201D</option></select></label>
+    <label class="field"><span>Ph\xF4ng ch\u1EEF</span>
+      <select id="ex-font"><option value="Times New Roman">Times New Roman</option><option value="Cambria">Cambria</option><option value="Arial">Arial</option><option value="Calibri">Calibri</option><option value="Tahoma">Tahoma</option><option value="">gi\u1EEF nguy\xEAn</option></select></label>
+    <label class="field"><span>C\u1EE1 ch\u1EEF</span>
+      <select id="ex-fsize"><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="11">11 pt</option><option value="0">gi\u1EEF nguy\xEAn</option></select></label>
+    <label class="field"><span>C\u1EE1 c\xF4ng th\u1EE9c</span>
+      <select id="ex-msize"><option value="text">b\u1EB1ng c\u1EE1 ch\u1EEF</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="0">gi\u1EEF nguy\xEAn</option></select></label>
     <label><input type="checkbox" id="ex-labels" checked> nh\xE3n A. B. C. D. in \u0111\u1EADm, vi\u1EBFt hoa, d\u1EA5u ch\u1EA5m</label>
     <label><input type="checkbox" id="ex-qformat" checked> nh\xE3n \u201CC\xE2u N.\u201D / \u201CB\xE0i N.\u201D c\xF9ng \u0111\u1ECBnh d\u1EA1ng v\u1EDBi c\xE2u \u0111\u1EA7u ti\xEAn</label>
     <label><input type="checkbox" id="ex-keep" checked> gi\u1EEF c\xE2u h\u1ECFi v\xE0 ph\u01B0\u01A1ng \xE1n c\xF9ng trang (keep with next)</label>
@@ -11928,11 +12002,14 @@ ${contentTypesOverrides}
           labels: $2("ex-labels").checked,
           questionFormat: $2("ex-qformat").checked,
           keepNext: $2("ex-keep").checked,
-          layout: layout2 === "false" ? false : layout2
+          layout: layout2 === "false" ? false : layout2,
+          font: $2("ex-font").value,
+          fontSize: Number($2("ex-fsize").value),
+          mathSize: $2("ex-msize").value === "text" ? "text" : Number($2("ex-msize").value)
         });
         await io.replaceBody(r.pkg);
         const rep = r.report;
-        $2("ex-norm-out").innerHTML = `<span class="ok">\u0110\xE3 chu\u1EA9n h\xF3a ${rep.questions} c\xE2u</span>: \u0111\xE1nh s\u1ED1 l\u1EA1i ${rep.renumbered}, c\u0103n l\u1EA1i ph\u01B0\u01A1ng \xE1n ${rep.relaid}.` + (rep.skipped.length ? `<ul class="warn">${rep.skipped.slice(0, 8).map((s) => `<li>${esc12(s)}</li>`).join("")}</ul>` : "") + `<div class="muted">Ho\xE0n t\xE1c b\u1EB1ng Ctrl/Cmd+Z (Word coi \u0111\xE2y l\xE0 m\u1ED9t thao t\xE1c thay th\u1EBF to\xE0n b\u1ED9 n\u1ED9i dung).</div>`;
+        $2("ex-norm-out").innerHTML = `<span class="ok">\u0110\xE3 chu\u1EA9n h\xF3a ${rep.questions} c\xE2u</span>: \u0111\xE1nh s\u1ED1 l\u1EA1i ${rep.renumbered}, c\u0103n l\u1EA1i ph\u01B0\u01A1ng \xE1n ${rep.relaid}, \u0111\u1ED3ng b\u1ED9 ph\xF4ng/c\u1EE1 ch\u1EEF ${rep.retyped} \u0111o\u1EA1n.` + (rep.objects ? `<div class="warn">${rep.objects} c\xF4ng th\u1EE9c MathType d\u1EA1ng \u0111\u1ED1i t\u01B0\u1EE3ng ch\u01B0a \u0111\u1ED5i \u0111\u01B0\u1EE3c c\u1EE1 \u2014 h\xE3y chuy\u1EC3n sang c\xF4ng th\u1EE9c Word (tab C\xF4ng th\u1EE9c) r\u1ED3i chu\u1EA9n h\xF3a l\u1EA1i.</div>` : "") + (rep.skipped.length ? `<ul class="warn">${rep.skipped.slice(0, 8).map((s) => `<li>${esc12(s)}</li>`).join("")}</ul>` : "") + `<div class="muted">Ho\xE0n t\xE1c b\u1EB1ng Ctrl/Cmd+Z (Word coi \u0111\xE2y l\xE0 m\u1ED9t thao t\xE1c thay th\u1EBF to\xE0n b\u1ED9 n\u1ED9i dung).</div>`;
       } catch (e3) {
         fail3($2("ex-norm-out"), e3);
       }
