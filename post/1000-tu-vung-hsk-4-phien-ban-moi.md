@@ -1,7 +1,6 @@
 ---
 title: 1000 từ vựng HSK 4 phiên bản mới
-description: Từ khi HSK chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng
-  từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo 1000 từ vựng HSK 4 phiên
+description: Danh sách đầy đủ 1000 từ vựng HSK 4 phiên bản mới (HSK 3.0) có chữ phồn thể, giản thể, phiên âm pinyin và giải nghĩa tiếng Anh chuẩn xác.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -30,6 +29,8 @@ Mời bạn tham khảo thêm:
 
 ## Từ vựng HSK 4 phiên bản mới
 
+| Chữ phồn thể | Chữ giản thể | Pinyin | Nghĩa tiếng Anh |
+| --- | --- | --- | --- |
 | 阿姨 | 阿姨 | āyí | aunt, child’s address to woman of similar age as parents, girl, babysitter, aunty, elderly unattached woman, cr#4 eche attendant, maiden aunt, family nurse, nursery/cr#4eche attendant, nurse, mother’s sister, auntie, nursery eche attendant, child’s address to woman of similar age, one’s mother’s sister |
 | --- | --- | --- | --- |
 | 啊 | 啊 | a | particle: used in direct address and exclamation; indicating obviousness/impatience/suggestion; used for confirmation |
@@ -1025,3 +1026,12 @@ Mời bạn tham khảo thêm:
 | 作為 | 作为 | zuòwéi | regard as, look on as, take for |
 | 最初 | 最初 | zuìchū | first, primary, initial, original, at first, initially, originally |
 | 做夢 | 做梦 | zuò mèng | to dream, to have a dream, fig. illusion, fantasy, pipe dream |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [1000+ từ vựng HSK 5 phiên bản mới!](/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html)
+- [900+ từ vựng HSK 3 phiên bản mới](/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html)
+- [700+ từ vựng HSK 2 phiên bản mới](/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

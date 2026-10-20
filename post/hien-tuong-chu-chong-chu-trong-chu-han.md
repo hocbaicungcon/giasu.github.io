@@ -74,5 +74,7 @@ Một người khen ngon có thể do tình cờ, hai người khen có thể do
 ---
 
 ## Xem thêm tài liệu tiếng Trung & Chữ Hán
+- [214 bộ thủ Hán ngữ: Bảng tra cứu, phiên âm và ý nghĩa đầy đủ](/bai-viet/214-bo-thu-han-ngu.html)
 - [50 Bộ thủ thường dùng trong chữ Hán kèm file PDF luyện viết](/bai-viet/50-bo-thu-thuong-dung-pdf.html)
-- [Cách nhớ chữ Hán qua phương pháp chiết tự và lục thư](/bai-viet/phuong-phap-hoc-chu-han-hieu-qua.html)
+- [Cách nhớ các bộ thủ trong tiếng Trung qua chiết tự](/bai-viet/cach-nho-cac-bo-thu-trong-tieng-trung.html)
+- [Luyện viết chữ Hán và tiếng Trung trực tuyến](/luyen-viet/)

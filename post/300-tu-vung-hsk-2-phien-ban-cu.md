@@ -1,7 +1,6 @@
 ---
 title: 300 Từ vựng HSK 2 phiên bản cũ
-description: Mời bạn tham khảo 150 từ vựng HSK 1 phiên bản cũ hoặc Danh sách 300 từ
-  vựng HSK 1 phiên bản mới
+description: Tổng hợp trọn bộ 300 từ vựng HSK 2 phiên bản cũ có phiên âm pinyin, từ loại, nghĩa tiếng Việt, tiếng Anh và câu ví dụ minh họa chi tiết, dễ hiểu.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -16,8 +15,9 @@ Mời bạn tham khảo [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-t
 
 ## Từ vựng HSK 2 bản cũ bằng tiếng Anh
 
-| 吧 | ba5 | ba | particle indicating polite suggestion; | onomatopoeia | bar (serving drinks, providing internet access, etc.) |
+| Chữ Hán | Pinyin số | Pinyin chuẩn | Nghĩa tiếng Anh |
 | --- | --- | --- | --- |
+| 吧 | ba5 | ba | particle indicating polite suggestion; onomatopoeia; bar |
 | 白 | bai2 | bái | white; snowy; pure; bright; empty (Kangxi radical 106) |
 | 百 | bai3 | bǎi | hundred |
 | 帮助 | bang1zhu4 | bāngzhù | help; assist; aid |
@@ -160,7 +160,7 @@ Mời bạn tham khảo [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-t
 | 早上 | zao3shang5 | zǎoshang | (early) morning |
 | 丈夫 | zhang4fu5 | zhàngfu | husband; man |
 | 找 | zhao3 | zhǎo | try to find; look for; seek; to give change |
-| 着 | zhe5 | zhe | #NAME? |
+| 着 | zhe5 | zhe | aspect particle indicating action in progress or continuous state |
 | 真 | zhen1 | zhēn | real; true; genuine |
 | 正在 | zheng4zai4 | zhèngzài | in the process of (doing something); currently |
 | 知道 | zhi1dao5 | zhīdao | know; be aware of |
@@ -323,3 +323,12 @@ Mời bạn tham khảo [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-t
 | 走 | zǒu | Động từ | Đi | 一起走吧! | Yìqǐ zǒu ba! | Đi cùng nhau thôi. |
 | 最 | zuì | Phó từ chỉ mức độ | Nhất | 你最最最重要。 | Nǐ zuì zuì zuì zhòngyào. | Bạn cực kì cực kì cực kì quan trọng với tôi. |
 | 左边 | zuǒbiān | Danh từ | Bên trái | 老王坐在我左边。 | Lǎo Wáng zuò zài wǒ zuǒbian. | Lão Vương ngồi bên trái tôi. |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [700 từ vựng HSK 2 phiên bản mới](/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html)
+- [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html)
+- [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

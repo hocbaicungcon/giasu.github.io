@@ -1,8 +1,6 @@
 ---
-title: Cách nhớ 50 bộ thủ thường dùng
-description: Khi mới bắt đầu học tiếng Trung cơ bản, để giúp nhớ mặt chữ thường sẽ
-  có mẹo học bộ thủ. Chữ Hán là ghép các bộ thủ vào với nhau. Khi nhớ được bộ thủ
-  và phân
+title: Cách nhớ 50 bộ thủ thường dùng trong tiếng Trung
+description: 'Mẹo nhớ 50 bộ thủ tiếng Trung thường dùng nhất theo thống kê Đại học Yale: ý nghĩa, phiên âm Pinyin, tên Hán Việt và chữ Hán ví dụ chi tiết cho người mới học.'
 category: Ngoại ngữ
 type: Mẹo học tập
 date: '2024-10-02'
@@ -96,11 +94,11 @@ Theo thống kê của Đại học Yale (trong Dictionary of Spoken Chinese, 19
 | 15 | 手 (扌) | shǒu | Thủ | 指 | Chỉ |
 | 16 | 木 | mù | Mộc | 杯 | Cốc, ly |
 | 17 | 水 (氵) | shǔi | Thủy (chấm thủy) | 海 | Biển |
-| 18 | 火(灬) | huǒ | Hòa | 然 | Cháy |
-| 19 | 牛( 牜) | níu | Ngưu | 牛 | Trâu |
+| 18 | 火(灬) | huǒ | Hỏa | 然 | Cháy |
+| 19 | 牛(牜) | niú | Ngưu | 牛 | Trâu |
 | 20 | 冫 | bīng | Băng | 冰 | Băng |
 | 21 | 勹 | bāo | Bao | 包 | Ôm |
-| 22 | 犬 (犭) | quản | Khuyển | 狗 | Chó |
+| 22 | 犬(犭) | quǎn | Khuyển | 狗 | Chó |
 | 23 | 玉 | yù | Ngọc | 玺 | Ngọc tỉ |
 | 24 | 田 | tián | Điền | 男 | Nam |
 | 25 | 又 | yòu | Hựu | 又 | Lại (lần nữa) |
@@ -118,14 +116,24 @@ Theo thống kê của Đại học Yale (trong Dictionary of Spoken Chinese, 19
 | 37 | 贝 | bèi | Bối | 宝贝 | Bảo bối |
 | 38 | 足 | zú | Túc | 足球 | Bóng đá |
 | 39 | 车 | chē | Xa | 汽车 | Xe hơi |
-| 40 | 立 | lì | Lập | 位 | Vị (ngài) |
-| 41 | 入 | rù |   | 进入 | Đi vào |
-| 42 | 金（钅） | jīn | Kim | 钱 | Tiền |
-| 43 | 门 | mén | Môn | 们 | Chúng (chỉ người) |
-| 44 | 几 | jī | Kỉ | 机会 | Cơ hội |
+| 40 | 立 | lì | Lập | 站 | Đứng |
+| 41 | 入 | rù | Nhập | 进入 | Đi vào |
+| 42 | 金(钅) | jīn | Kim | 钱 | Tiền |
+| 43 | 门 | mén | Môn | 问 | Hỏi |
+| 44 | 几 | jī | Kỷ | 机会 | Cơ hội |
 | 45 | 雨 | yǔ | Vũ | 雪 | Tuyết |
-| 46 | 小 | xiǎo | Tiểu | 秒 | Giây |
-| 47 | 文 | wén | Văn | 纹 | (hoa) văn |
-| 48 |  马 | mǎ | Mã | 斑马 | Ngựa vằn |
-| 49 | 鱼 | yú | Ngư | 海鲜 | Hải sản |
-| 50 | 鸟 | niǎo | Điểu | 鸡 | Gà  |
+| 46 | 小 | xiǎo | Tiểu | 少 | Ít |
+| 47 | 文 | wén | Văn | 纹 | Hoa văn |
+| 48 | 马 | mǎ | Mã | 斑马 | Ngựa vằn |
+| 49 | 鱼 | yú | Ngư | 鲜 | Tươi ngon |
+| 50 | 鸟 | niǎo | Điểu | 鸡 | Gà |
+
+---
+
+## Bài viết và tài liệu liên quan
+
+- [214 bộ thủ Hán ngữ đầy đủ: Bảng tra cứu, phiên âm và ý nghĩa](/bai-viet/214-bo-thu-han-ngu.html)
+- [Luyện viết chữ Hán và tiếng Trung trực tuyến](/luyen-viet/)
+- [Cách viết 50 bộ thủ thường dùng có ảnh động nét](/bai-viet/cach-viet-50-bo-thu-thuong-dung.html)
+- [Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu](/bai-viet/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau.html)
+- [Tải file PDF luyện viết 50 bộ thủ thường dùng](/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html)

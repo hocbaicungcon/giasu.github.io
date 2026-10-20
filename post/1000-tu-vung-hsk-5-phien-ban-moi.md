@@ -1,7 +1,6 @@
 ---
 title: 1000+ từ vựng HSK 5 phiên bản mới!
-description: Từ khi HSK chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng
-  từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo 1000+ từ
+description: Tổng hợp danh sách hơn 1000 từ vựng HSK 5 phiên bản mới (HSK 3.0) có chữ phồn thể, giản thể, pinyin và giải nghĩa tiếng Anh chuẩn xác.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -30,8 +29,9 @@ Mời bạn tham khảo thêm:
 
 ## 1000+ từ vựng HSK 5 phiên bản mới!
 
-| 安慰 | 安慰 | ānwèi | comfort, console |
+| Chữ phồn thể | Chữ giản thể | Pinyin | Nghĩa tiếng Anh |
 | --- | --- | --- | --- |
+| 安慰 | 安慰 | ānwèi | comfort, console |
 | 岸 | 岸 | àn | bank, shore, beach, coast, CL:個|个[ge4] |
 | 岸上 | 岸上 | ànshàng | ashore, on the riverbank |
 | 拔 | 拔 | bá | bare, tear, pluck, choose, take out, stand out among, displume, uproot, pull up, tweak, draw, pull off, deplumate, deplume, pull, surpass, get out, raise, suck out, select, seize, seizure, cool in water, lift, pull_out, pick, capture, yank, pull out, pick off |
@@ -1098,3 +1098,12 @@ Mời bạn tham khảo thêm:
 | 尊敬 | 尊敬 | zūnjìng | respect, honor, esteem |
 | 尊重 | 尊重 | zūnzhòng | respect, value, esteem |
 | 遵守 | 遵守 | zūnshǒu | honour, comply with, obey, keep, hold back, abide, keep back, comply, observe, abide_by, observance, abide by, respect, restrain, honor |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [1100+ từ vựng HSK 6 phiên bản mới!](/bai-viet/1100-tu-vung-hsk-6-phien-ban-moi.html)
+- [1000 từ vựng HSK 4 phiên bản mới](/bai-viet/1000-tu-vung-hsk-4-phien-ban-moi.html)
+- [900+ từ vựng HSK 3 phiên bản mới](/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

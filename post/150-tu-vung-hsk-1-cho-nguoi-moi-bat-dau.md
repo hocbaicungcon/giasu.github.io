@@ -1,8 +1,6 @@
 ---
 title: 150 từ vựng HSK 1 phiên bản cũ!
-description: Nắm vững 150 từ vựng Hán ngữ 1 đầu tiên sẽ là nền tảng vững chắc giúp
-  bạn tiếp tục chinh phục lên các cấp độ cao hơn. Với bộ từ vựng HSK 1 theo chủ đề
-  này bạn
+description: Tổng hợp trọn bộ 150 từ vựng HSK 1 phiên bản cũ có phiên âm Pinyin, nghĩa tiếng Việt và tiếng Anh chuẩn, giúp người mới bắt đầu học tiếng Trung hiệu quả.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -19,8 +17,9 @@ Nếu bạn quan tâm HSK 9 cấp độ thì mời tham khảo thêm [Danh sách
 
 ## 150 từ vựng HSK 1 phiên bản cũ bằng tiếng Anh
 
-| 爱 | ai4 | ài | love |
+| Chữ Hán | Pinyin số | Pinyin chuẩn | Nghĩa tiếng Anh |
 | --- | --- | --- | --- |
+| 爱 | ai4 | ài | love |
 | 八 | ba1 | bā | eight |
 | 爸爸 | ba4ba5 | bàba | Dad |
 | 杯子 | bei1zi5 | bēizi | cup; glass |
@@ -171,12 +170,13 @@ Nếu bạn quan tâm HSK 9 cấp độ thì mời tham khảo thêm [Danh sách
 | 做 | zuo4 | zuò | do; make |
 | 坐 | zuo4 | zuò | sit |
 
-## Từ vựng HSK 1 phiên bản cũ bằng tiếng Việt
+## Từ vựng HSK 1 phiên bản cũ bằng tiếng Việt
 
-Nhóm từ vựng này được tổng hợp từ cuốn giáo trình Hán ngữ 1 ở trình độ sơ cấp. Bạn có thể tham khảo thêm từ vựng HSK 1 bản tiếng Anh → [HSK 1 Vocabulary](/bai-viet/hsk-1-vocabulary.html)
+Nhóm từ vựng này được tổng hợp từ cuốn giáo trình Hán ngữ 1 ở trình độ sơ cấp. Bạn có thể kết hợp luyện viết các chữ Hán này tại [Luyện viết chữ Hán trực tuyến](/luyen-viet/) hoặc chuyển sang học theo khung mới tại [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html).
 
-| 爱 | ài | Yêu, thích(v) |
+| Chữ Hán | Pinyin | Nghĩa tiếng Việt |
 | --- | --- | --- |
+| 爱 | ài | Yêu, thích (v) |
 | 八 | bā | 8 |
 | 爸爸 | bàba | Bố(n) |
 | 吧 | ba | Nhé, nhỉ, đi, thôi,…(trợ từ) |
@@ -244,7 +244,7 @@ Nhóm từ vựng này được tổng hợp từ cuốn giáo trình Hán ngữ
 | 老师 | lǎoshī | Thầy/cô giáo |
 | 了 | le | Trợ từ |
 | 冷 | lěng | Lạnh |
-| 里 lǐ | trong | Bên trong(n) |
+| 里 | lǐ | Bên trong (n) |
 | 六 | liù | 6 |
 | 妈妈 | māma | Mẹ |
 | 吗 | ma | Không( trợ từ ngữ khí, đứng cuối câu nghi vấn) |
@@ -326,11 +326,8 @@ Nhóm từ vựng này được tổng hợp từ cuốn giáo trình Hán ngữ
 | 有 | yǒu | Có (v) |
 | 月 | yuè | Tháng |
 | 再见 | zàijiàn | Tạm biệt |
-| 怎么 | zěnme | Thế nào, như thế nào. (Đại từ nghi vấn, dùng để hỏi về phương thức diễn ra hành động)怎么样 zěnmeyàng: 怎么样 (zěn me yàng): thế nào, như thế nào. (Đại từ nghi vấn, dùng để đánh giá về con người, sự vật, sự việc, luôn đứng ở cuối câu hỏi.) |
-| 一点儿 | yìdiǎnr | Một chút, một ít |
-| 有 | yǒu | Có (v) |
-| 月 | yuè | Tháng |
-| 再见 | zàijiàn | Tạm biệt |
+| 怎么 | zěnme | Thế nào, làm sao (hỏi phương thức) |
+| 怎么样 | zěnmeyàng | Thế nào, ra sao (hỏi tính chất, tình trạng) |
 | 这 | zhè | Này, đây |
 | 中午 | zhōngwǔ | Buổi trưa |
 | 住 | zhù | Ở |
@@ -340,4 +337,10 @@ Nhóm từ vựng này được tổng hợp từ cuốn giáo trình Hán ngữ
 | 坐 | zuò | Ngồi |
 | 做 | zuò | Làm, nấu |
 
-Chúc các bạn học tốt!
+---
+
+### Bài viết liên quan nên học tiếp:
+- [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html)
+- [Bảng 214 bộ thủ chữ Hán đầy đủ và chi tiết](/bai-viet/214-bo-thu-han-ngu.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

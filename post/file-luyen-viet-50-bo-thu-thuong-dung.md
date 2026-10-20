@@ -1,7 +1,6 @@
 ---
 title: File luyện viết 50 bộ thủ thường dùng Word PDF
-description: Tiếp sau bài Cách nhớ 50 bộ thủ thường dùng và Cách viết 50 bộ thủ thường
-  dùng, chúng tôi xin giới thiệu file luyện viết 50 bộ thủ thường dùng, file luyện
+description: Tải trọn bộ file luyện viết 50 bộ thủ và 200 bộ thủ tiếng Trung định dạng Word, PDF chuẩn ô mễ để in ra tập viết hàng ngày kèm hướng dẫn thứ tự nét chi tiết.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -11,9 +10,11 @@ tags:
 - Luyện viết
 ---
 
-Tiếp sau bài [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html) và [Cách viết 50 bộ thủ thường dùng](/bai-viet/cach-viet-50-bo-thu-thuong-dung.html), chúng tôi xin giới thiệu file luyện viết 50 bộ thủ thường dùng, file luyện viết 200 bộ thủ thường dùng để bạn đọc in ra và luyện tập.
+Tiếp sau các bài viết [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html), [Cách viết 50 bộ thủ thường dùng](/bai-viet/cach-viet-50-bo-thu-thuong-dung.html) và [214 bộ thủ Hán ngữ đầy đủ](/bai-viet/214-bo-thu-han-ngu.html), chúng tôi xin giới thiệu trọn bộ file luyện viết 50 bộ thủ và hơn 200 bộ thủ tiếng Trung định dạng Word và PDF chuẩn ô vuông mễ tự để bạn đọc in ra luyện tập hàng ngày.
 
-## Tải file luyện viết 50 bộ thủ thường dùng word PDF
+Bạn cũng có thể kết hợp luyện tập trực tuyến miễn phí trên trình duyệt có chấm điểm tại [Luyện viết chữ Hán và tiếng Trung trực tuyến](/luyen-viet/).
+
+## Tải file luyện viết bộ thủ tiếng Trung (Word, PDF)
 
 - [Bộ thủ 1–20: File luyện viết 200 bộ thủ tiếng Trung](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Bộ thủ 21–40: File luyện viết 200 bộ thủ tiếng Trung](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)

@@ -1,8 +1,6 @@
 ---
 title: 5615 từ vựng HSK 7, từ vựng HSK 8, từ vựng HSK 9 mới nhất
-description: Từ khi HSK chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng
-  từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo 1000+ từ vựng HSK 7,
-  từ
+description: Tổng hợp danh sách từ vựng HSK 7, HSK 8, HSK 9 mới nhất (HSK 3.0 cao cấp) có chữ phồn thể, giản thể, pinyin và giải nghĩa tiếng Anh chuẩn xác.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -31,8 +29,9 @@ Mời bạn tham khảo thêm:
 
 ## Từ vựng HSK 7, từ vựng HSK 8, từ vựng HSK 9 mới nhất
 
-| 阿拉伯語 | 阿拉伯语 | Ālābóyǔ | Arabic (language) |
+| Chữ phồn thể | Chữ giản thể | Pinyin | Nghĩa tiếng Anh |
 | --- | --- | --- | --- |
+| 阿拉伯語 | 阿拉伯语 | Ālābóyǔ | Arabic (language) |
 | 哎 | 哎 | āi | dissatisfaction, of surprise, swounds, warning |
 | 哀求 | 哀求 | āiqiú | to entreat, to implore, to plead |
 | 哎呀 | 哎呀 | āiyā | jeez, of wonder, alas, wirra, swounds, lummy, shock, admiration |
@@ -1293,4 +1292,11 @@ Mời bạn tham khảo thêm:
 | 感嘆 | 感叹 | gǎntàn | to sigh (with feeling), to lament |
 | 感性 | 感性 | gǎnxìng | sensitive |
 
-Còn tiếp, bản đầy đủ xin mời liên hệ email [admin@](mailto:lienhe@giasu.ai.vn)
+---
+
+### Bài viết liên quan nên học tiếp:
+- [1100+ từ vựng HSK 6 phiên bản mới!](/bai-viet/1100-tu-vung-hsk-6-phien-ban-moi.html)
+- [1000+ từ vựng HSK 5 phiên bản mới!](/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Bảng 214 bộ thủ chữ Hán đầy đủ và chi tiết](/bai-viet/214-bo-thu-han-ngu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

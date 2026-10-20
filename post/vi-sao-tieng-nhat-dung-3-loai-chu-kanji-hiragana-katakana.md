@@ -1,8 +1,6 @@
 ---
 title: Vì sao tiếng Nhật dùng 3 loại chữ Kanji, Hiragana, Katakana?
-description: Vì sao tiếng Nhật dùng 3 loại chữ Kanji, Hiragana, Katakana? Tiếng Nhật
-  hiện nay sử dụng ba loại chữ là Kanji (chữ Hán), Hiragana (chữ mềm) và Katakana
-  (chữ cứng).
+description: 'Giải mã lý do tiếng Nhật sử dụng kết hợp ba hệ chữ Kanji, Hiragana và Katakana: nguồn gốc lịch sử, vai trò ngữ pháp, phân biệt từ đồng âm và mẹo học hiệu quả.'
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -26,14 +24,15 @@ Tiếng Việt là ngoại lệ vì phát âm tiếng Việt phong phú hơn nê
 
 ### Chữ Kanji và Hiragana trong tiếng Nhật
 
-Quay trở lại với tiếng Nhật: Tiếng Nhật ban đầu dùng chữ kanji để viết nhưng chữ kanji bộc lộ một số hạn chế, đó là trong khi tiếng Hán là tiếng đơn âm thì tiếng Nhật là ngôn ngữ chắp vá phải ghép vài âm tiết mới thành một từ, và từ này khi chia quá khứ, hiện tại, tương lai thì lại khác nhau. Do đó họ phải thêm vào chữ Hiragana để tiện việc chia như vậy. Tiếng Nhật sử dụng kết hợp chữ kanji để ghi ý nghĩa và chữ Hiragana để thực hiện chức năng ngữ pháp, ví dụ với từ “ăn” sẽ có các từ sau:
+Quay trở lại với tiếng Nhật: Tiếng Nhật ban đầu dùng chữ kanji để viết nhưng chữ kanji bộc lộ một số hạn chế, đó là trong khi tiếng Hán là tiếng đơn âm thì tiếng Nhật là ngôn ngữ chắp vá phải ghép vài âm tiết mới thành một từ, và từ này khi chia quá khứ, hiện tại, tương lai thì lại khác nhau. Do đó họ phải thêm vào chữ Hiragana để tiện việc chia như vậy. Tiếng Nhật sử dụng kết hợp chữ Kanji để ghi ý nghĩa thực từ và chữ Hiragana để biểu thị yếu tố ngữ pháp (chia thì, trợ từ). Ví dụ với động từ "ăn" (gốc chữ Hán là **食**):
 
-食べる：Ăn**食べた：Đã ăn
-食べて：Hãy ăn (sai khiến)/
-食べている：Đang ăn
-食べられる：Bị ăn
-食べさせる：Bắt ăn / Cho ăn
-食べさせられる：Bị bắt ăn
+- **食べる** (*taberu*): Ăn (thể từ điển, hiện tại / tương lai)
+- **食べた** (*tabeta*): Đã ăn (thể quá khứ)
+- **食べて** (*tabete*): Hãy ăn / Ăn đi (thể Te nối tiếp, sai khiến nhẹ)
+- **食べている** (*tabete iru*): Đang ăn (thể tiếp diễn)
+- **食べられる** (*taberareru*): Có thể ăn / Bị ăn (thể khả năng hoặc bị động)
+- **食べさせる** (*tabesaseru*): Cho ăn / Bắt ăn (thể sai khiến)
+- **食べさせられる** (*tabesaserareru*): Bị bắt phải ăn (thể bị động sai khiến)
 
 Bằng cách sử dụng chữ Kanji và Hiragana như trên hệ thống chữ viết tiếng Nhật vừa đơn giản, vừa dễ hiểu mà vẫn thực hiện đầy đủ chức năng ngôn ngữ của nó.
 
@@ -82,9 +81,10 @@ Việc phân biệt từ nào với từ nào cũng đã là việc khá khó kh
 高河原は中河原駅で散歩していた。
 
 Nhưng trong ngôn ngữ nói có dùng chữ kanji đâu mà vẫn hiểu nhau?
-Bởi vì ngôn ngữ nói có nhịp điệu và có sự ngắt âm phù hợp giúp người nghe có thể phân biệt rõ ràng các từ với nhau. Ví dụ câu trên có thể ngắt như sau:
+Bởi vì ngôn ngữ nói có nhịp điệu và có sự ngắt âm tự nhiên giúp người nghe phân biệt rõ ràng ranh giới giữa các từ:
 
-Haha wa, hana wo, katta.**Takagahara wa, Nakagawara eki de, sanpo shite ita.
+- *Haha wa, hana o katta.* (Mẹ đã mua hoa.)
+- *Takagahara wa, Nakagawara eki de, sanpo shite ita.* (Takagahara đang đi dạo ở ga Nakagawara.)
 
 Ngoài ra nhịp điệu trong ngôn ngữ nói là thứ quan trọng giúp truyền đạt điều muốn nói.
 
@@ -96,73 +96,36 @@ Chữ Katakana (片仮名, kata (“phiến”, một phần) + tên tạm) là 
 
 ### Chữ Katakana trong tiếng Nhật dùng để làm gì?
 
-- Chữ Katakana dùng để phiên âm tiếng nước ngoài** (những chữ không có chữ kanji tương ứng) để khi đọc sẽ dễ hiểu hơn. Ví dụ:
+- **Phiên âm từ mượn tiếng nước ngoài:** Những từ không có chữ Kanji tương ứng sẽ được viết bằng Katakana để người đọc nhận biết ngay đó là từ gốc ngoại lai:
+  - **ベトナム** (*Betonamu*): Việt Nam
+  - **オーストラリア** (*Ōsutoraria*): Australia (Úc)
+  - **コミュニケーション** (*Komyunikēshon*): Giao tiếp (Communication)
+  - **インターネット** (*Intānetto*): Mạng Internet
+  - **チョコレート** (*Chokorēto*): Sô cô la (Chocolate)
 
-  ベトナム：Việt Nam
+Nếu viết những từ này bằng Hiragana (ví dụ: *おおすとらりあ*, *こみゅにけえしょん*, *いんたあなしょなる*), người đọc sẽ rất dễ nhầm lẫn và cố dịch nghĩa sang từ vựng thuần Nhật.
 
-  オーストラリア：Australia
+- **Dùng để nhấn mạnh:** Tương tự như in hoa hoặc bôi đậm trong tiếng Việt:
+  - Anh ta là KẺ LỪA ĐẢO: 彼は**サギシ**です。（viết thay cho 彼は詐欺師です。）
 
-  コミュニケーション：Communication
+- **Viết tên động vật trong văn bản khoa học, đời sống:** Nhiều tên loài vật có chữ Kanji rất hiếm hoặc phức tạp nên người Nhật thường quy ước viết bằng Katakana:
+  - Con người: **ヒト** (人)
+  - Con khỉ: **サル** (猿)
+  - Con vịt: **カモ** (鴨)
+  - Con vẹt: **オウム** (鸚鵡 - anh vũ)
 
-  インターネット：Internet
-
-  チョコレート：Chocolate (sô cô la)
-
-  Chữ Katakana dùng phiên âm tên riêng (tên địa danh, tên người) hay dùng phiên âm các thuật ngữ tiếng nước ngoài. Nếu viết bằng Hiragana thì sẽ rất khó hiểu vì người đọc sẽ tưởng đó là tiếng Nhật và cố suy diễn ra tiếng Nhật. Ví dụ nếu viết là:
-
-  おおすとらりあ、こみゅにけえしょん、いんたあなしょなる
-
-  thì sẽ khó đọc hơn rất nhiều nếu biết trước đó là từ mượn từ tiếng nước ngoài:
-
-  オーストラリア、コミュニケーション、インターナショナル
-
-  
-
-- **Chữ Katakana còn dùng để…
-**(1) Nhấn mạnh:
-  Chữ Katakana cũng như chữ viết hoa trong tiếng Việt, dùng để nhấn mạnh. Ví dụ:
-
-  Anh ta là KẺ LỪA ĐẢO.
-
-  彼はサギシです。（彼は詐欺師です。）
-
-  
-
-- **(2) Viết tên động vật:
-  Con người: ヒト（人）
-
-  Khỉ: サル（猿）
-
-  Vịt: カモ（鴨）
-
-  Vẹt: オウム（鸚鵡, anh vũ)
-
-  Nhiều tên động vật không thể dùng chữ hán tự (kanji) hay phải dùng chữ kanji quá phức tạp nên tiếng Nhật thường dùng chữ Katakana khi viết tên động vật.
-
-  
-
-- **(3) Viết tên thực vật:
-  Sắn: キャッサバ (cassava)
-
-  Điều: カシューナッツ (cashew nuts)
-
-  Mía: サトウキビ (砂糖黍）
-
-  Cao su: ゴムの木
-
-  Oải hương: ラベンダー
-
-  Bồ công anh: タンポポ（蒲公英, bồ công anh)
-
-  Bách hợp: ユリ（百合, bách hợp)
-
-  Cà chua: トマト
-
-  Khoai tây: ポテト
-
-  Sen: ハス（蓮）
-
-  Cà tím: ナス（茄子）
+- **Viết tên thực vật, nông sản:**
+  - Sắn: **キャッサバ** (*cassava*)
+  - Hạt điều: **カシューナッツ** (*cashew nuts*)
+  - Cây mía: **サトウキビ** (砂糖黍)
+  - Cây cao su: **ゴムの木**
+  - Hoa oải hương: **ラベンダー** (*lavender*)
+  - Hoa bồ công anh: **タンポポ** (蒲公英)
+  - Hoa bách hợp: **ユリ** (百合)
+  - Cà chua: **トマト** (*tomato*)
+  - Khoai tây: **ポテト** (*potato*)
+  - Hoa sen: **ハス** (蓮)
+  - Cà tím: **ナス** (茄子)
 
 ## Hệ thống chữ viết tiếng Nhật
 
@@ -199,5 +162,11 @@ Theo cách viết này thì, ví dụ, 2 loại nguyên âm (u và ʔu) của ti
 
 Mặt chữ của cách viết Hán tự có những chữ riêng biệt chỉ tồn tại ở một số địa phương. Ví dụ, chữ 「杁」 trong một địa danh của thành phố Nagoya*Irinaka* 「杁中」, đó là “văn tự khu vực” của địa phương chỉ có ở Nagoya. Ngoài ra, 「垰」 được đọc với chữ kana là *tao* hay *tawa*, cũng là một chữ khác chỉ có ở vùng Chūgoku.
 
-←[Thủy phân hoàn toàn a mol triglixerit X trong dung dịch NaOH vừa đủ, thu được glixerol và m gam hỗn hợp muối](/bai-viet/thuy-phan-hoan-toan-a-mol-triglixerit-x-trong-dung-dich-naoh-vua-du-thu-duoc-glixerol-va-m-gam-hon-hop-muoi-2.html)
-[Hỗn hợp X gồm este Y (CnH2nO2), và este Z (CmH2m-2O2) đều mạch hở. Đốt cháy hoàn toàn 0,24 mol X cần dùng](/bai-viet/hon-hop-x-gom-este-y-cnh2no2-va-este-z-cmh2m-2o2-deu-mach-ho-dot-chay-hoan-toan-024-mol-x-can-dung.html)→
+---
+
+## Bài viết và công cụ học tiếng Nhật liên quan
+
+- [Luyện viết chữ Nhật Hiragana, Katakana và Kanji trực tuyến](/luyen-viet/): Công cụ tập viết tương tác có hoạt ảnh từng nét, tô nét và chấm điểm.
+- [2000 chữ Kanji thông dụng nhất](/bai-viet/2000-chu-kanji-thong-dung-nhat.html): Bảng tra cứu chữ Hán Jōyō Kanji theo cấp độ từ N5 đến N1.
+- [Từ vựng tiếng Nhật cho BrSE](/bai-viet/tu-vung-tieng-nhat-cho-brse.html): Cẩm nang thuật ngữ chuyên ngành IT và kỹ sư cầu nối tiếng Nhật.
+- [214 bộ thủ Hán ngữ đầy đủ](/bai-viet/214-bo-thu-han-ngu.html): Nền tảng cốt lõi để ghi nhớ cấu tạo chữ Kanji dễ dàng.

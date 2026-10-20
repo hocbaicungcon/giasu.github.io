@@ -1,7 +1,6 @@
 ---
-title: Cách viết 50 bộ thủ thường dùng
-description: Chữ Hán có tất cả 214 bộ thủ từ bộ thủ ít nét nhất là 1 nét (一), nhiều
-  nét nhất là 17 nét (龠). Chúng tôi đã giới thiệu một số cách học 214 bộ thủ
+title: Cách viết 50 bộ thủ thường dùng trong chữ Hán
+description: Hướng dẫn cách viết 50 bộ thủ thường dùng trong chữ Hán kèm hoạt ảnh thứ tự từng nét, phiên âm Pinyin, âm Hán Việt, ý nghĩa và chữ Hán ví dụ chi tiết.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -87,9 +86,9 @@ Tuy nhiên, vì mới bắt đầu học nên bạn không cần nhớ hết 214
 | 7 | 大 – bộ 37/dà: Đại | to lớn | ![Cách viết 50 bộ thủ thường dùng 7](assets/images/cach-viet-50-bo-thu-thuong-dung-7_-大-bo-37.gif) | 太/tài/: Thái夬/guài/: Quái |
 | 8 | 女 – bộ 38/nǚ: Nữ | nữ giới | ![Cách viết 50 bộ thủ thường dùng 8](assets/images/cach-viet-50-bo-thu-thuong-dung-8_-女-bo-38.gif) | 妈/māma/: Mẹ姐姐/jiějie/: chị gái妹妹/mèimei/: em gái |
 | 9 | 宀 – bộ 40/mián: Miên | mái che, mái hiên | ![Cách viết 50 bộ thủ thường dùng 9](assets/images/cach-viet-50-bo-thu-thuong-dung-9_-宀-bo-40.gif) | 家/jiā/: Nhà按 /àn/: an toàn |
-| 10 | 山 – bộ 46/shān: Sơn | núi non | ![Cách viết 50 bộ thủ thường dùng 10](assets/images/cach-viet-50-bo-thu-thuong-dung-10_-山-bo-46.gif) | 山/sān/: Núi官/guān/: quan 家 /jiā/: nhà 寄 /jì/ : gửi |
-| 11 | 巾 – bộ 50/jīn: Cân | Quảng  | ![Cách viết 50 bộ thủ thường dùng 11](assets/images/cach-viet-50-bo-thu-thuong-dung-11_-巾-bo-50.gif) | 帅 /shuài/: soái, đẹp trai师 /shī/: thầy币 /bì/: tiền tệ |
-| 12 | 广 – bộ 53/yǎn/ guǎng: Nghiễm/ quảng | mái nhà lớn | ![Cách viết 50 bộ thủ thường dùng 12](assets/images/cach-viet-50-bo-thu-thuong-dung-12_-广-bo-53.gif) | 库 /kù/: kho庙/miào/: đền, miếu 店 /diàn/: cửa hàng, cửa tiệm |
+| 10 | 山 – bộ 46/shān: Sơn | núi non | ![Cách viết 50 bộ thủ thường dùng 10](assets/images/cach-viet-50-bo-thu-thuong-dung-10_-山-bo-46.gif) | 山 /shān/: núi, 岁 /suì/: tuổi, 岛 /dǎo/: đảo |
+| 11 | 巾 – bộ 50/jīn: Cân | cái khăn | ![Cách viết 50 bộ thủ thường dùng 11](assets/images/cach-viet-50-bo-thu-thuong-dung-11_-巾-bo-50.gif) | 帅 /shuài/: soái, đẹp trai, 师 /shī/: thầy, 币 /bì/: tiền tệ |
+| 12 | 广 – bộ 53/yǎn/guǎng: Nghiễm/quảng | mái nhà lớn | ![Cách viết 50 bộ thủ thường dùng 12](assets/images/cach-viet-50-bo-thu-thuong-dung-12_-广-bo-53.gif) | 库 /kù/: kho, 庙 /miào/: đền miếu, 店 /diàn/: cửa hàng |
 | 13 | 彳 – bộ 60/chì: Xích | bước chân trái | ![Cách viết 50 bộ thủ thường dùng 13](assets/images/cach-viet-50-bo-thu-thuong-dung-13_-彳-bo-60.gif) | 行/xíng/: Thực hiện, làm, hành động |
 | 14 | 心 (忄) – bộ 61/xīn: Tâm (tâm đứng) | tim, tâm trí, tấm lòng | ![Cách viết 50 bộ thủ thường dùng 14](assets/images/cach-viet-50-bo-thu-thuong-dung-14_-心-忄-bo-61.gif) | 忘/wàng/: quên愁/chóu/: sầu lo想/xiǎng/: nghĩ, nhớ |
 | 15 | 手 (扌) – bộ 64/shǒu: Thủ (tài gảy) | tay | ![Cách viết 50 bộ thủ thường dùng 15](assets/images/cach-viet-50-bo-thu-thuong-dung-15_-手-扌-bo-64.gif) | 指/zhǐ/: Chỉ |
@@ -98,8 +97,8 @@ Tuy nhiên, vì mới bắt đầu học nên bạn không cần nhớ hết 214
 | 18 | 木 – bộ 75/mù: Mộc | gỗ, cây cối | ![Cách viết 50 bộ thủ thường dùng 18](assets/images/cach-viet-50-bo-thu-thuong-dung-18_-木-bo-75.gif) | 本 /běn/: bổn, bản, lượng từ của sách树 /shù/: cây机 /jī/: cơ, máy móc 杀 /shā/: giết  |
 | 19 | 水 (氵) – bộ 85/shuǐ: Thủy (ba chấm thuỷ) | nước | ![Cách viết 50 bộ thủ thường dùng 19](assets/images/cach-viet-50-bo-thu-thuong-dung-19_-水-氵-bo-85.gif) | 冰 /bīng/:  băng 海 /hǎi/:  biển湖 /hú/:  hồ |
 | 20 | 火 (灬) – bộ 86/huǒ: Hỏa (bốn chấm hoả) | lửa | ![Cách viết 50 bộ thủ thường dùng 20](assets/images/cach-viet-50-bo-thu-thuong-dung-20_-火-灬-bo-86.gif) | 炒 /chǎo/:  xào 灯 /dēng/:  đèn烫 /tàng/:  nóng, bỏng灾 /zāi/: tai nạn, tai ương |
-| 21 | 牛 (牜) – bộ 93/níu: Ngưu | trâu | ![Cách viết 50 bộ thủ thường dùng 21](assets/images/cach-viet-50-bo-thu-thuong-dung-21_-牛-牜-bo-93.gif) | 牧/mù/: Mục牲/shēng/: Sinh牴/dǐ/: Để |
-| 22 | 犬 (犭) – bộ 94/quản: Khuyển | con chó | ![Cách viết 50 bộ thủ thường dùng 22](assets/images/cach-viet-50-bo-thu-thuong-dung-22_-犬-犭-bo-94.gif) | 狗/gǒu/: Cẩu狐/hú/: Hồ哭/kū/: khóc |
+| 21 | 牛 (牜) – bộ 93/niú: Ngưu | trâu, bò | ![Cách viết 50 bộ thủ thường dùng 21](assets/images/cach-viet-50-bo-thu-thuong-dung-21_-牛-牜-bo-93.gif) | 牧 /mù/: chăn nuôi, 特 /tè/: đặc biệt, 物 /wù/: sự vật |
+| 22 | 犬 (犭) – bộ 94/quǎn: Khuyển | con chó | ![Cách viết 50 bộ thủ thường dùng 22](assets/images/cach-viet-50-bo-thu-thuong-dung-22_-犬-犭-bo-94.gif) | 狗 /gǒu/: chó, 狐 /hú/: cáo, 猫 /māo/: mèo |
 | 23 | 玉 – bộ 96/yù: Ngọc | đá quý, ngọc | ![Cách viết 50 bộ thủ thường dùng 23](assets/images/cach-viet-50-bo-thu-thuong-dung-23_-玉-bo-96.gif) | 国/ guó/: Đất nước宝石/bǎoshí/: Đá quý |
 | 24 | 田 – bộ 102/tián: Điền | ruộng | ![Cách viết 50 bộ thủ thường dùng 24](assets/images/cach-viet-50-bo-thu-thuong-dung-24_-田-bo-102.gif) | 电 /diàn/： điện男 /nán/: nam画 /huà/: vẽ  |
 | 25 | 疒 – bộ 104/nǐ: Nạch | bệnh tật | ![Cách viết 50 bộ thủ thường dùng 25](assets/images/cach-viet-50-bo-thu-thuong-dung-25_-疒-bo-104.gif) | 病/bìng/: bệnh tật痰/tán/: đàm, đờm  |
@@ -118,8 +117,8 @@ Tuy nhiên, vì mới bắt đầu học nên bạn không cần nhớ hết 214
 | 38 | 足 – bộ 157/zú: Túc | chân, đầy đủ | ![Cách viết 50 bộ thủ thường dùng 38](assets/images/cach-viet-50-bo-thu-thuong-dung-38_-足-bo-157.gif) | 踢 /tī/: đá 跑 /pǎo/: chạy 跟 /gēn/: cùng, với  跪 /guì/: quỳ |
 | 39 | 車 (车) – bộ 159/chē: Xa | chiếc xe | ![Cách viết 50 bộ thủ thường dùng 39](assets/images/cach-viet-50-bo-thu-thuong-dung-39_-車-车-bo-159.gif) | 自行车 /zìxíngchē/: xe đạp电动车 /diàndòng chē/: xe đạp điện |
 | 40 | 辵 (辶) – bộ 162/chuò: Quai xước | chợt đi chợt dừng | ![Cách viết 50 bộ thủ thường dùng 40](assets/images/cach-viet-50-bo-thu-thuong-dung-40_-辵-辶-bo-162.gif) | 边 /biān/： bên过 /guò/ : qua这 /zhè/: đây达 /dá/: đạt  |
-| 41 | 邑 (阝) – bộ 163/yì: Âp | vùng đất | ![Cách viết 50 bộ thủ thường dùng 41](assets/images/cach-viet-50-bo-thu-thuong-dung-41_-邑-阝-bo-163.gif) | 扈 /hù/: tuỳ tùng; hộ tống; đi theo sau邕 /yōng/: Ung Giang |
-| 42 | 金 (钅) – bộ 167/jīn: Kiim | kim loại; vàng | ![Cách viết 50 bộ thủ thường dùng 42](assets/images/cach-viet-50-bo-thu-thuong-dung-42_-金-钅-bo-167.gif) | 铜 /tóng/: đồng 钱 /qián/ : tiền铅 /qiān/: chì 锁 /suǒ/: khóa  |
+| 41 | 邑 (阝) – bộ 163/yì: Ấp | vùng đất, làng thôn | ![Cách viết 50 bộ thủ thường dùng 41](assets/images/cach-viet-50-bo-thu-thuong-dung-41_-邑-阝-bo-163.gif) | 都 /dū/: đô thị, 邻 /lín/: láng giềng, 郊 /jiāo/: ngoại ô |
+| 42 | 金 (钅) – bộ 167/jīn: Kim | kim loại; vàng | ![Cách viết 50 bộ thủ thường dùng 42](assets/images/cach-viet-50-bo-thu-thuong-dung-42_-金-钅-bo-167.gif) | 铜 /tóng/: đồng 钱 /qián/ : tiền铅 /qiān/: chì 锁 /suǒ/: khóa  |
 | 43 | 門 (门) – bộ 169/mén: Môn | cửa hai cánh | ![Cách viết 50 bộ thủ thường dùng 43](assets/images/cach-viet-50-bo-thu-thuong-dung-43_-門-门-bo-169.gif) | 问 /wèn/： hỏi 闭 /bì/: đóng, nhắm 闲 /xián/: nhàn hạ, rảnh rỗi  |
 | 44 | 阜 (阝) – bộ 170/fù: Phụ | đống đất, gò đất | ![Cách viết 50 bộ thủ thường dùng 44](assets/images/cach-viet-50-bo-thu-thuong-dung-44_-阜-阝-bo-170.gif) | 陧/ niè/: bấp bênh险/xiǎn/: nguy hiểm院/yuàn/：viện隔/gé/：cách  |
 | 45 | 雨 – bộ 173/yǔ: Vũ | mưa | ![Cách viết 50 bộ thủ thường dùng 45](assets/images/cach-viet-50-bo-thu-thuong-dung-45_-雨-bo-173.gif) | 雪 /xuě/: tuyết雷 /léi/:  lôi, sét零 /líng/: số không 雾 /wù/: sương mù |
@@ -128,3 +127,13 @@ Tuy nhiên, vì mới bắt đầu học nên bạn không cần nhớ hết 214
 | 48 | 馬 (马) – bộ 187/mǎ: Mã | con ngựa | ![Cách viết 50 bộ thủ thường dùng 48](assets/images/cach-viet-50-bo-thu-thuong-dung-48_-馬-马-bo-187.gif) | 妈 /mā/: mẹ 骂 /mà/: mắng, chửi 骑 /qí/: đi, cưỡi |
 | 49 | 魚 (鱼) – bộ 195/yú: Ngư | con cá | ![Cách viết 50 bộ thủ thường dùng 49](assets/images/cach-viet-50-bo-thu-thuong-dung-49_-魚-鱼-bo-195.gif) | 鲁/lǔ/: đần độn, chậm chạp魸/piàn/: cá mèo |
 | 50 | 鳥 (鸟) – bộ 196/niǎo: Điểu | con chim | ![Cách viết 50 bộ thủ thường dùng 50](assets/images/cach-viet-50-bo-thu-thuong-dung-50_-鳥-鸟-bo-196.gif) | 鳦/yǐ/: chim én |
+
+---
+
+## Bài viết và tài liệu liên quan
+
+- [214 bộ thủ Hán ngữ đầy đủ: Phiên âm, ý nghĩa và chữ ví dụ](/bai-viet/214-bo-thu-han-ngu.html)
+- [Luyện viết chữ Hán và tiếng Trung trực tuyến](/luyen-viet/)
+- [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html)
+- [Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu](/bai-viet/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau.html)
+- [Tải file PDF luyện viết 50 bộ thủ thường dùng](/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html)

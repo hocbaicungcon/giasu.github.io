@@ -1,7 +1,6 @@
 ---
 title: 100+ câu tiếng Trung thông dụng
-description: Để có thể giao tiếp thông thường trong cuộc sống thường ngày, khi đi
-  du lịch Trung Quốc... bạn không cần phải biết quá nhiều từ vựng. Chỉ cần biết khoảng
+description: Tổng hợp hơn 100 câu tiếng Trung giao tiếp thông dụng hàng ngày (khẩu ngữ cơ bản) có chữ Hán, phiên âm pinyin và dịch nghĩa tiếng Việt dễ nhớ.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -11,11 +10,11 @@ tags:
 - Giao tiếp tiếng Trung
 ---
 
-Để có thể giao tiếp thông thường trong cuộc sống thường ngày, khi đi du lịch Trung Quốc… bạn không cần phải biết quá nhiều từ vựng. Chỉ cần biết khoảng 500-800 từ vựng là đủ, bạn có thể tham khảo trong bài [Cần học bao nhiêu từ vựng tiếng Trung?](/bai-viet/can-hoc-bao-nhieu-tu-vung-tieng-trung.html) Nhưng, bạn nhất định phải biết 1**00+ câu tiếng Trung thông dụng** (còn gọi là khẩu ngữ) sau đây!
+Để có thể giao tiếp thông thường trong cuộc sống thường ngày, khi đi du lịch Trung Quốc… bạn không cần phải biết quá nhiều từ vựng. Chỉ cần biết khoảng 500-800 từ vựng là đủ, bạn có thể tham khảo trong bài [Cần học bao nhiêu từ vựng tiếng Trung?](/bai-viet/can-hoc-bao-nhieu-tu-vung-tieng-trung.html). Nhưng, bạn nhất định phải biết **100+ câu tiếng Trung thông dụng** (còn gọi là khẩu ngữ) sau đây!
 
 ![100+ câu tiếng Trung thông dụng](assets/images/100-cau-tieng-trung-thong-dung-tieng-trung-giao-tiep-co-ban.webp)
 
-Mời bạn tham khảo thêm [500 chữ Hán cơ bản!](/bai-viet/500-chu-han-co-ban.html)
+Mời bạn tham khảo thêm [Tổng hợp 1500 chữ Hán phổ biến nhất trong tiếng Trung](/bai-viet/tong-hop-1500-chu-han-pho-bien-nhat-trong-tieng-trung.html) và [Bảng 214 bộ thủ chữ Hán](/bai-viet/214-bo-thu-han-ngu.html).
 
 ## 100+ câu tiếng Trung thông dụng
 
@@ -86,13 +85,13 @@ Mời bạn tham khảo thêm [500 chữ Hán cơ bản!](/bai-viet/500-chu-han
 | 63 | 你明白了吗？ | Nǐ míngbái le ma? | Bạn có hiểu không? |
 | 64 | 你能肯定吗？ | Nǐ néng kěndìng ma? | Bạn chắc chắn chứ? |
 | 65 | 你去哪里? | Nǐ qù nǎ lǐ? | Bạn đi đâu đấy? |
-| 66 | 你是狗。 | Nǐ shì gǒu.  | Nǐ shì gǒu.  |
-| 67 | 你是猪吗? | Nǐ shì zhū ma? | Bạn là lợn à? |
+| 66 | 你是哪国人？ | Nǐ shì nǎ guó rén? | Bạn là người nước nào? |
+| 67 | 你住哪里？ | Nǐ zhù nǎlǐ? | Bạn sống ở đâu? |
 | 68 | 你说什么？ | Nǐ shuō shénme? | Bạn nói cái gì? |
 | 69 | 你喜欢吗? | Nǐ xǐhuān ma? | Bạn có thích không? |
 | 70 | 你要吗？ | Nǐ yào ma? | Bạn có muốn không? |
 | 71 | 你走吧! | Nǐ zǒu ba! | Bạn đi đi! |
-| 72 | 在这里。 | Ở đây. | Zài zhèlǐ. |
+| 72 | 在这里。 | Zài zhèlǐ. | Ở đây. |
 | 73 | 生日快乐。 | Shēngrì kuàilè. | Sinh nhật vui vẻ. |
 | 74 | 什么意思? | Shénme yìsi? | Ý bạn là gì? |
 | 75 | 是不是? | Shì bùshì? | Có phải không? |
@@ -111,7 +110,7 @@ Mời bạn tham khảo thêm [500 chữ Hán cơ bản!](/bai-viet/500-chu-han
 | 88 | 我不太明白。 | Wǒ bú tài míng bai. | Tôi không hiểu. |
 | 89 | 我不喜欢。 | Wǒ bù xǐhuan. | Tôi không thích. |
 | 90 | 我不知道。 | Wǒ bù zhīdào. | Tôi không biết. |
-| 91 | 我打死你！ | Wǒ dǎ sǐ nǐ! | Tôi đánh chết bạn! |
+| 91 | 我爱你。 | Wǒ ài nǐ. | Tôi yêu bạn. |
 | 92 | 我饿了。 | Wǒ èle. | Tôi đói. |
 | 93 | 我告诉你。 | Wǒ gàosù nǐ. | Tôi nói cho bạn biết. |
 | 94 | 我很高兴. | Wǒ hěn gāoxìng. | Tôi rất vui. |
@@ -138,3 +137,12 @@ Mời bạn tham khảo thêm [500 chữ Hán cơ bản!](/bai-viet/500-chu-han
 | 115 | 怎么啦？ | Zěnme la? | Chuyện gì vậy? |
 | 116 | 这是什么? | Zhè shì shénme? | Cái này là cái gì? |
 | 117 | 准备好了吗? | Zhǔnbèi hǎole ma? | Đã chuẩn bị xong chưa? |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [400 câu tiếng Trung thông dụng Việt - Anh](/bai-viet/400-cau-tieng-trung-thong-dung-viet-anh.html)
+- [Những câu giao tiếp tiếng Trung thông dụng hàng ngày](/bai-viet/nhung-cau-giao-tiep-tieng-trung-thong-dung-hang-ngay.html)
+- [Cần học bao nhiêu từ vựng tiếng Trung?](/bai-viet/can-hoc-bao-nhieu-tu-vung-tieng-trung.html)
+- [Tổng hợp 1500 chữ Hán phổ biến nhất trong tiếng Trung](/bai-viet/tong-hop-1500-chu-han-pho-bien-nhat-trong-tieng-trung.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

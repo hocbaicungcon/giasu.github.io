@@ -1,7 +1,6 @@
 ---
-title: HSK là gì? Những điều cần biết về kỳ thi năng lực tiếng Trung!
-description: Kỳ thi năng lực Hán Ngữ, viết tắt là HSK, là một bài thi tiêu chuẩn duy
-  nhất đánh giá trình độ tiếng Trung Quốc dành cho người nước ngoài mà không sử dụng
+title: HSK là gì? Những điều cần biết về kỳ thi năng lực tiếng Trung
+description: 'HSK là gì? Tổng quan chi tiết về kỳ thi năng lực Hán ngữ: cấu trúc đề thi từ cấp 1 đến cấp 6, lộ trình chuẩn mới HSK 3.0 (9 cấp độ), lệ phí thi và chứng chỉ.'
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -68,7 +67,7 @@ Tổng điểm đạt: >=120
 | Viết (书写) | Không có |   |   |
 | Tổng cộng | 40 câu | 22 phút | 200 |
 
-Tham khảo [HSK 1 Vocabulary](/bai-viet/hsk-1-vocabulary.html)
+Tham khảo từ vựng: [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html) và [150 từ vựng HSK 1](/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html)
 
 ### HSK cấp 2
 
@@ -81,7 +80,7 @@ Tổng điểm đạt: >=120
 | Viết (书写) | Không có |   |   |
 | Tổng cộng | 60 câu | 47 phút | 200 |
 
-Tham khảo [HSK 2 Vocabulary](/bai-viet/hsk-2-vocabulary.html)
+Tham khảo từ vựng: [700+ từ vựng HSK 2 phiên bản mới](/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html) và [300 từ vựng HSK 2 cũ](/bai-viet/300-tu-vung-hsk-2-phien-ban-cu.html)
 
 ### HSK cấp 3
 
@@ -94,7 +93,7 @@ Tổng điểm đạt: >= 180, không yêu cầu mỗi kỹ năng phải 60 đi�
 | Viết (书写) | 10 câu, 2 phần | 15 phút | 100 |
 | Tổng cộng | 80 câu | 85 phút | 300 |
 
-Tham khảo [HSK 3 Vocabulary](/bai-viet/hsk-3-vocabulary.html)
+Tham khảo từ vựng: [900+ từ vựng HSK 3 phiên bản mới](/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html)
 
 ### HSK cấp 4
 
@@ -138,3 +137,17 @@ Tổng điểm đạt: >= 180, không yêu cầu mỗi kỹ năng phải 60 đi�
 - HSK 5: 840.000 VND
 
 - HSK 6: 960.000 VND
+
+---
+
+## Trọn bộ tài liệu ôn thi HSK từ cấp 1 đến cấp 9
+
+- [So sánh từ vựng HSK mới (3.0) và cũ (2.0)](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html)
+- [700+ từ vựng HSK 2 phiên bản mới](/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html)
+- [900+ từ vựng HSK 3 phiên bản mới](/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html)
+- [1000 từ vựng HSK 4 phiên bản mới](/bai-viet/1000-tu-vung-hsk-4-phien-ban-moi.html)
+- [1000+ từ vựng HSK 5 phiên bản mới](/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html)
+- [1100+ từ vựng HSK 6 phiên bản mới](/bai-viet/1100-tu-vung-hsk-6-phien-ban-moi.html)
+- [5615 từ vựng HSK 7-8-9 mới nhất](/bai-viet/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat.html)
+- [Luyện viết chữ Hán và từ vựng HSK 1–6 trực tuyến](/luyen-viet/)

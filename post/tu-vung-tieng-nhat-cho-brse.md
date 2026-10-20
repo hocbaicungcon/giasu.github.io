@@ -1,7 +1,6 @@
 ---
-title: Từ vựng tiếng Nhật cho BrSE
-description: Bài tổng hợp một số cách dùng từ và từ vựng tiếng Nhật cho BrSE (kĩ sư
-  cầu nối) của bạn 太阳 trong nhóm Tiếng Nhật cho BrSE.
+title: Từ vựng tiếng Nhật cho BrSE (Kỹ sư cầu nối IT)
+description: Tổng hợp hơn 500 từ vựng tiếng Nhật chuyên ngành CNTT dành cho BrSE gồm Hán tự, cách đọc Katakana/Hiragana, âm Hán Việt, giải nghĩa và ví dụ thực tế.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -17,7 +16,7 @@ Bài tổng hợp một số cách dùng từ và từ vựng tiếng Nhật cho
 
 BrSE (Kỹ sư cầu nối – Bridge Software Engineer) là chức danh chỉ xuất hiện trong các công ty IT, thường là công ty outsourcing hoặc offshoring. Họ sẽ đóng vai trò trung gian thuê nhân lực từ nước khác để làm ra sản phẩm cho công ty khách hàng.
 
-Mời bạn xem thêm [214 BỘ THỦ KANJI DÀNH CHO CÁC BẠN HỌC TIẾNG NHẬT](/bai-viet/214-bo-thu-kanji-danh-cho-cac-ban-hoc-tieng-nhat.html)
+Mời bạn xem thêm [214 bộ thủ Hán ngữ đầy đủ](/bai-viet/214-bo-thu-han-ngu.html) và công cụ [Luyện viết chữ Hán và tiếng Nhật trực tuyến](/luyen-viet/).
 
 | Hán tự/Katakana | Cách đọc | Âm hán | Nghĩa | Ví dụ |
 | --- | --- | --- | --- | --- |
@@ -1171,5 +1170,11 @@ Mời bạn xem thêm [214 BỘ THỦ KANJI DÀNH CHO CÁC BẠN HỌC TIẾNG N
 | ポータル |   |   | Portal, cổng thông tin |   |
 | スクラッチ |   |   | Scratch (dự án tên Scratch) |   |
 
-←[KPI là gì?](/bai-viet/kpi-la-gi.html)
-[500 Từ Vựng Tiếng Nhật chuyên ngành IT](/bai-viet/500-tu-vung-tieng-nhat-chuyen-nganh-it.html)→
+---
+
+## Bài viết và tài liệu học tiếng Nhật liên quan
+
+- [Luyện viết chữ Hán, Kanji và tiếng Nhật trực tuyến](/luyen-viet/): Công cụ tập viết tương tác có hoạt ảnh nét, hướng dẫn thứ tự nét và chấm điểm.
+- [Vì sao tiếng Nhật dùng 3 loại chữ Kanji, Hiragana, Katakana?](/bai-viet/vi-sao-tieng-nhat-dung-3-loai-chu-kanji-hiragana-katakana.html)
+- [2000 chữ Kanji thông dụng nhất](/bai-viet/2000-chu-kanji-thong-dung-nhat.html)
+- [214 bộ thủ Hán ngữ](/bai-viet/214-bo-thu-han-ngu.html)

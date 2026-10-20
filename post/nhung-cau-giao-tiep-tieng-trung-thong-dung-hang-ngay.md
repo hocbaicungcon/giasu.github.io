@@ -1,7 +1,6 @@
 ---
 title: Những câu giao tiếp tiếng Trung thông dụng hàng ngày!
-description: Ngoài 100+ câu tiếng Trung thông dụng, bạn cần biết thêm một số câu giao
-  tiếp tiếng Trung thông dụng sau đây.
+description: 'Tổng hợp những mẫu câu giao tiếp tiếng Trung hàng ngày theo chủ đề: chào hỏi, tạm biệt, hỏi tên tuổi, mua sắm và sinh hoạt kèm pinyin chi tiết.'
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -66,38 +65,37 @@ Trong những cuộc nói chuyện, phần mở đầu rất được chú trọ
 | 你 好 不 好？ | Nǐ hǎobù hǎo?  | Bạn khỏe không? |
 | 你 忙 不 忙？ | Nǐ máng bù máng? | Bạn bận không? |
 | 我 能 帮 你 什 么 吗？ | Wǒ néng bāng nǐ shénme ma? | Tôi có thể giúp gì cho bạn |
-| 谢 谢 | Xiè xiè | Tạm biệt |
-| 别 客 气 | Bié kèqì | Đừng khách khí |
-| 打 扰 你 了 | Dǎrǎo nǐle | Làm phiền bạn |
+| 谢 谢 | Xièxie | Cảm ơn |
+| 别 客 气 | Bié kèqi | Đừng khách khí |
+| 打 扰 你 了 | Dǎrǎo nǐ le | Làm phiền bạn |
 
-## Những câu giao tiếp tiếng Trung thông dụng cơ bản khi tạm biệt
+## Những câu giao tiếp tiếng Trung thông dụng cơ bản khi tạm biệt
 
-Bên cạnh phần mở đầu việc giao tiếp, phần kết thúc cuộc trò chuyện và tạm biệt cũng đặc biệt quan trọng. Các bạn cùng tham khảo
+Bên cạnh phần mở đầu, phần kết thúc cuộc trò chuyện và chào tạm biệt cũng đặc biệt quan trọng:
 
 | Tiếng Trung | Phiên âm | Tiếng Việt |
 | --- | --- | --- |
-| 再 见   | zài jiàn | Tạm biệt |
-| 告 辞 | Gàocí | Cáo từ |
-| 保重 | Bǎozhòng | Bảo trọng |
-| 永別  | Yǒngbié | Vĩnh biệt |
-| 后会有期  | Hòu huì yǒu qī | Gặp lại sau |
-| 晚 安   | wǎn ān | Chúc ngủ ngon |
-| 回 头 见 | huí tóu jiàn | Hẹn gặp lại |
-| 祝 您 有 个 美 好 的一天 | zhù nín yǒu gè měi hǎo de yī tiān | Chúc cậu một ngày tốt lành |
-| 周 末 愉 快 | zhōu mò yú kuài | Cuối tuần vui vẻ |
-| 保 持 联 系 | bǎo chí lián xì | Giữ liên lạc nhé |
-| 一 路 顺 风  | yí lù shùn fēng | Thuận buồm xuôi gió |
-| 慢 走 | màn zǒu | Nhớ đi cẩn thận |
-| 一会儿见 | Yí hùi èr jiàn | Chút nữa gặp lại |
-| 明天见 | Míng tiān jiàn | Ngày mai gặp |
-| 我走了 | Wǒ zǒu le | Tôi đi đây |
-| 慢走 | Màn zǒu | Đi cẩn thận |
-| 天不早了 | Tiān bù zǎole | Trời không còn sớm nữa |
-| 挂了 | Guà le | Cúp máy đây |
+| 再 见 | zàijiàn | Tạm biệt |
+| 告 辞 | gàocí | Cáo từ |
+| 保 重 | bǎozhòng | Bảo trọng |
+| 下次见 | xiàcì jiàn | Hẹn lần sau gặp |
+| 后会有期 | hòuhuì yǒuqī | Hẹn ngày tái ngộ |
+| 晚 安 | wǎn'ān | Chúc ngủ ngon |
+| 回 头 见 | huítóu jiàn | Hẹn gặp lại |
+| 祝 您 有 个 美 好 的一天 | zhù nín yǒu gè měihǎo de yītiān | Chúc bạn một ngày tốt lành |
+| 周 末 愉 快 | zhōumò yúkuài | Cuối tuần vui vẻ |
+| 保 持 联 系 | bǎochí liánxì | Giữ liên lạc nhé |
+| 一 路 顺 风 | yílù shùnfēng | Thuận buồm xuôi gió / Thượng lộ bình an |
+| 慢 走 | màn zǒu | Đi cẩn thận nhé |
+| 一会儿见 | yíhuìr jiàn | Chút nữa gặp lại |
+| 明天见 | míngtiān jiàn | Ngày mai gặp |
+| 我走了 | wǒ zǒu le | Tôi đi đây |
+| 天不早了 | tiān bù zǎo le | Trời không còn sớm nữa |
+| 挂了 | guà le | Cúp máy đây |
 
 ## Mẫu câu giao tiếp tiếng Trung thông dụng khi hỏi tên tuổi
 
-Trong các mối quan hệ, việc hỏi thăm tên tuổi rất hửu ích cho việc giao tiếp hàng ngày. Vậy hãy làm quen với các mấu câu hỏi và trả lời tên tuổi trong tiếng Trung dưới đây
+Trong giao tiếp, việc hỏi thăm tên tuổi rất hữu ích để làm quen và xưng hô đúng mực:
 
 | Tiếng Trung | Phiên âm | Tiếng Việt |
 | --- | --- | --- |
@@ -140,3 +138,12 @@ Trong các mối quan hệ, việc hỏi thăm tên tuổi rất hửu ích cho 
 | 一 瓶 啤 酒 | yī píng pí jiǔ | Một chai bia |
 | 一 杯 咖 啡 | yī bēi kā fēi | Một cốc cà phê |
 | 一 瓶 水 | yī píng shuǐ | Một chai nước |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [100+ câu tiếng Trung thông dụng](/bai-viet/100-cau-tieng-trung-thong-dung.html)
+- [400 câu tiếng Trung thông dụng Việt - Anh](/bai-viet/400-cau-tieng-trung-thong-dung-viet-anh.html)
+- [Cần học bao nhiêu từ vựng tiếng Trung?](/bai-viet/can-hoc-bao-nhieu-tu-vung-tieng-trung.html)
+- [Bảng 214 bộ thủ chữ Hán đầy đủ và chi tiết](/bai-viet/214-bo-thu-han-ngu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

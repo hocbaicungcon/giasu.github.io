@@ -1,8 +1,6 @@
 ---
 title: 500 Từ Ghép Tiếng Trung Bồi
-description: Để có thể giao tiếp thành thạo tiếng Trung ta cần phải có 1 lượng từ
-  vựng đủ lớn. Dưới đây chúng tôi giới thiệu cho bạn 500 từ ghép tiếng Trung Bồi được
-  sử dụng nhiều nhất.
+description: Tổng hợp 500 từ ghép tiếng Trung bồi thông dụng nhất kèm chữ Hán, phiên âm bồi tiếng Việt và giải nghĩa chi tiết, giúp người mới học giao tiếp nhanh chóng.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -14,7 +12,7 @@ tags:
 
 Để có thể giao tiếp thành thạo tiếng Trung ta cần phải có 1 lượng từ vựng đủ lớn. Dưới đây chúng tôi giới thiệu cho bạn 500 từ ghép **tiếng Trung Bồi** được sử dụng nhiều nhất.
 
-Bạn có thể tham khảo thêm: [500 từ vựng tiếng Trung thông dụng](/bai-viet/500-tu-vung-tieng-trung-thong-dung.html)
+Bạn có thể tham khảo thêm: [Tổng hợp 1500 chữ Hán phổ biến nhất trong tiếng Trung](/bai-viet/tong-hop-1500-chu-han-pho-bien-nhat-trong-tieng-trung.html) và [Cần học bao nhiêu từ vựng tiếng Trung?](/bai-viet/can-hoc-bao-nhieu-tu-vung-tieng-trung.html)
 
 500 từ tiếng Hoa này dành cho các bạn đi Đài Loan hoặc muốn học tiếng Trung nhanh chóng. Có 3 cột là: số thứ tự, cách viết và phiên âm + nghĩa. Trong phiên âm có hướng dẫn phát âm tiếng Trung bồi.
 
@@ -520,3 +518,12 @@ Bạn có thể tham khảo thêm: [500 từ vựng tiếng Trung thông dụng
 | 498 | 組織 | zǔzhī (chủ trư): tổ chức. |
 | 499 | 想想 | xiǎng xiǎng (xéng xẻng): nghĩ . |
 | 500 | 繼續 | jìxù (chi xuy): tiếp tục |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [100+ câu tiếng Trung thông dụng](/bai-viet/100-cau-tieng-trung-thong-dung.html)
+- [Cần học bao nhiêu từ vựng tiếng Trung?](/bai-viet/can-hoc-bao-nhieu-tu-vung-tieng-trung.html)
+- [Tổng hợp 1500 chữ Hán phổ biến nhất trong tiếng Trung](/bai-viet/tong-hop-1500-chu-han-pho-bien-nhat-trong-tieng-trung.html)
+- [Bảng 214 bộ thủ chữ Hán đầy đủ và chi tiết](/bai-viet/214-bo-thu-han-ngu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

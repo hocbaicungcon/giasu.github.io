@@ -1,8 +1,6 @@
 ---
 title: Cách nhớ các bộ thủ trong tiếng Trung
-description: Bắt đầu học tiếng Trung hoặc Nhật, Hàn thì việc học các bộ thủ chữ Hán
-  (Kanji) là các mà rất nhiều bạn đã và đang thực hiện. Vậy 214 bộ thủ trong tiếng
-  trung
+description: Tổng hợp các mẹo nhớ bộ thủ tiếng Trung thông minh qua thơ ca, chiết tự, hình tượng và câu đố chữ dân gian, giúp người học nhớ mặt chữ Hán nhanh và lâu bền.
 category: Ngoại ngữ
 type: Mẹo học tập
 date: '2024-10-02'
@@ -10,15 +8,16 @@ tags:
 - Bộ thủ
 - Mẹo học
 - Tiếng Trung
+- Chữ Hán
 ---
 
 ## 214 bộ thủ tiếng Trung
 
-Bắt đầu học tiếng Trung hoặc Nhật, Hàn thì việc học các bộ thủ chữ Hán (Kanji) là các mà rất nhiều bạn đã và đang thực hiện. Vậy 214 bộ thủ trong tiếng trung là gì, ý nghĩa và cách nhớ các bộ thủ trong tiếng Trung như thế nào?
+Khi bắt đầu học tiếng Trung hoặc tiếng Nhật, việc học và ghi nhớ các bộ thủ chữ Hán (Kanji) là bước đi cốt lõi mà người học nào cũng cần trải qua. Vậy 214 bộ thủ trong tiếng Trung là gì, ý nghĩa ra sao và cách nhớ các bộ thủ như thế nào cho hiệu quả?
 
-## Bộ thủ là gì ?
+## Bộ thủ là gì?
 
-Bộ thủ (首都) là một yếu tố quan trọng của Hán tự, giúp việc tra cứu Hán tự tương đối dễ dàng vì nhiều chữ được gom thành nhóm có chung một bộ thủ. Từ đời Hán, Hứa Thận 許慎 phân loại chữ Hán thành 540 nhóm hay còn gọi là 540 bộ.
+**Bộ thủ** (tiếng Trung: 部首, bính âm: *bùshǒu*) là một yếu tố quan trọng của Hán tự, giúp việc tra cứu Hán tự tương đối dễ dàng vì nhiều chữ được gom thành nhóm có chung một bộ thủ. Từ đời Đông Hán, Hứa Thận (許慎) phân loại chữ Hán thành 540 nhóm hay còn gọi là 540 bộ thủ.
 
 Thí dụ, những chữ 論 , 謂 , 語 đều liên quan tới ngôn ngữ, lời nói, đàm luận v.v… nên được xếp chung vào một bộ, lấy bộ phận 言 (ngôn) làm bộ thủ (cũng gọi là «thiên bàng» 偏旁).
 
@@ -761,3 +760,13 @@ Chữ 蠱 – Giản thể: 蛊 (Gǔ)
 Bên trên là bộ TRÙNG – 虫 (chóng) chỉ sâu bọ, bên dưới là bộ MÃNH – 皿 (mǐn) chỉ bát đũa
 
 Tương truyền ngày xưa có một loại côn trùng độc do con người nuôi dưỡng, có thể cho vào thức ăn và đồ uống để đầu độc người khác, khiến cho thần trí hoảng loạn, không thể làm chủ bản thân, nặng có thể dẫn đến liệt tứ thân, phá hủy nội tạng và tử vong. Chữ CỔ trong Giáp Cốt Văn giống hình trong đĩa có con sâu. Nghĩa gốc của chữ CỔ chỉ loài sâu độc do con người nuôi dưỡng. Nghĩa rộng dùng để chỉ ký sinh trùng trong bụng người. Nghĩa rộng nữa là cám dỗ, mê hoặc.
+
+---
+
+## Bài viết và tài liệu liên quan
+
+- [214 bộ thủ Hán ngữ đầy đủ: Phiên âm, ý nghĩa và chữ ví dụ](/bai-viet/214-bo-thu-han-ngu.html)
+- [Luyện viết chữ Hán và tiếng Trung trực tuyến](/luyen-viet/)
+- [Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu](/bai-viet/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau.html)
+- [Cách viết 50 bộ thủ thường dùng](/bai-viet/cach-viet-50-bo-thu-thuong-dung.html)
+- [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html)

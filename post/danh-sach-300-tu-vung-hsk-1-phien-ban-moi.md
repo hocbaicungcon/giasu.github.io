@@ -1,8 +1,6 @@
 ---
 title: Danh sách 300 từ vựng HSK 1 phiên bản mới
-description: HSK đang có sự dịch chuyển từ HSK 6 cấp lên HSK 9 cấp. Với trình độ HSK
-  1, theo tiêu chuẩn mới, bạn sẽ cần nắm vững 500 từ vựng so với 150 từ vựng HSK 1
-  phiên
+description: Danh sách trọn bộ 300 từ vựng HSK 1 phiên bản mới (HSK 3.0) có phiên âm pinyin, từ loại, nghĩa tiếng Việt và tiếng Anh kèm file PDF chi tiết.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -13,14 +11,15 @@ tags:
 - Từ vựng
 ---
 
-HSK đang có sự dịch chuyển từ [HSK](/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html) 6 cấp lên HSK 9 cấp. Với trình độ HSK 1, theo tiêu chuẩn mới, bạn sẽ cần nắm vững 500 từ vựng so với [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html).
+HSK đang có sự dịch chuyển từ [HSK](/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html) 6 cấp lên HSK 9 cấp (tiêu chuẩn HSK 3.0). Với trình độ HSK 1 theo tiêu chuẩn mới, bạn cần nắm vững 300 từ vựng so với [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html).
 
 Tải 300 từ vựng NEW HSK 1 PDF tại đây [https://drive.google.com/file/d/16xzdTfw1cDjDWu3KxeSuyeFH-wZN7wrP/view?usp=sharing](https://drive.google.com/file/d/16xzdTfw1cDjDWu3KxeSuyeFH-wZN7wrP/view?usp=sharing)
 
 ## Từ vựng HSK 1 bản mới bằng tiếng Anh
 
-| 愛 | 爱 | ài | love, like, be fond of, be keen on, cherish, be apt to |
+| Chữ phồn thể | Chữ giản thể | Pinyin | Nghĩa tiếng Anh |
 | --- | --- | --- | --- |
+| 愛 | 爱 | ài | love, like, be fond of, be keen on, cherish, be apt to |
 | 愛好 | 爱好 | àihào | love, like, be fond of, be keen on |
 | 爸爸 | 爸爸 | bàba | old man, father, papa, pappa, daddy, pa, begetter, pop, dada, dad, male parent, pater, pappy, pops, poppa |
 | 白 | 白 | bái | white, clear, pure, plain, wrongly written/mispronounced, |
@@ -822,3 +821,12 @@ Tải 300 từ vựng NEW HSK 1 PDF tại đây [https://drive.google.com/file/d
 | 298 | 重要 | zhòngyào | 形容词 | quan trọng |
 | 299 | 坐 | zuò | 动词 | ngồi |
 | 300 | 做 | zuò | 动词 | làm, nấu |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [700 từ vựng HSK 2 phiên bản mới](/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html)
+- [150 từ vựng HSK 1 phiên bản cũ](/bai-viet/150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Bảng 214 bộ thủ chữ Hán đầy đủ và chi tiết](/bai-viet/214-bo-thu-han-ngu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

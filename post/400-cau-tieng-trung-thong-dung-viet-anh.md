@@ -1,6 +1,6 @@
 ---
 title: 400 câu tiếng Trung thông dụng Việt Anh
-description: 1. Tôi hiểu rồi – I see． 我明白了。(Wǒ míngbáile.)
+description: Tổng hợp 400 câu tiếng Trung thông dụng kèm bản dịch tiếng Việt, tiếng Anh và phiên âm Pinyin chuẩn xác, giúp bạn nâng cao phản xạ giao tiếp song ngữ.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -9,6 +9,8 @@ tags:
 - Tiếng Trung
 - Song ngữ Trung Anh
 ---
+
+Tổng hợp **400 câu tiếng Trung thông dụng** song ngữ Việt – Anh kèm phiên âm Pinyin chuẩn, giúp người học dễ dàng đối chiếu ngữ cảnh giao tiếp thực tế và rèn luyện phản xạ ngoại ngữ mỗi ngày.
 
 1. Tôi hiểu rồi – I see． 我明白了。(Wǒ míngbáile.)
 
@@ -809,3 +811,12 @@ tags:
 399. Công việc của anh ta lạc hậu rồi – He fell behind with his work． 他工作落后了。(Tā gōngzuò luòhòule.)
 
 400. Anh ta là người hạnh phúc nhất trên thế giới – He is the happiest man alive. 他是世界上最快乐的人 (Tā shì shìjiè shàng zuì kuàilè de rén)
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [100+ câu tiếng Trung thông dụng](/bai-viet/100-cau-tieng-trung-thong-dung.html)
+- [Những câu giao tiếp tiếng Trung thông dụng hàng ngày](/bai-viet/nhung-cau-giao-tiep-tieng-trung-thong-dung-hang-ngay.html)
+- [Cần học bao nhiêu từ vựng tiếng Trung?](/bai-viet/can-hoc-bao-nhieu-tu-vung-tieng-trung.html)
+- [Tổng hợp 1500 chữ Hán phổ biến nhất trong tiếng Trung](/bai-viet/tong-hop-1500-chu-han-pho-bien-nhat-trong-tieng-trung.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

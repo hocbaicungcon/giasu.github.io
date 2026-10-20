@@ -1,7 +1,6 @@
 ---
 title: 700+ từ vựng HSK 2 phiên bản mới
-description: Trong HSK 6 cấp độ cũ, từ vựng Từ vựng HSK 2 phiên bản cũ chỉ có khoảng
-  300 từ thì từ vựng HSK 2 phiên bản mới đã tăng lên trên 700 từ!
+description: Tổng hợp hơn 700 từ vựng HSK 2 phiên bản mới (HSK 3.0) có chữ phồn thể, giản thể, pinyin và giải nghĩa tiếng Anh chuẩn xác, kèm link tải PDF chi tiết.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -32,8 +31,9 @@ Mời bạn tham khảo thêm:
 
 ## Từ vựng HSK 2 phiên bản mới
 
-| 啊 | 啊 | a | particle: used in direct address and exclamation; indicating obviousness/impatience/suggestion; used for confirmation |
+| Chữ phồn thể | Chữ giản thể | Pinyin | Nghĩa tiếng Anh |
 | --- | --- | --- | --- |
+| 啊 | 啊 | a | particle: used in direct address and exclamation; indicating obviousness/impatience/suggestion; used for confirmation |
 | 愛情 | 爱情 | àiqíng | god, warmheartedness, affection, love_affair, heart, kindness, tenderness, bosom, love, fondness, romantic love, affectionateness |
 | 安靜 | 安静 | ānjìng | lull, quieten, quiesce, dummy, quiet down, quiet, hush, pipe down, peaceful |
 | 安全 | 安全 | ānquán | safe, secure |
@@ -796,3 +796,12 @@ Mời bạn tham khảo thêm:
 | 做法 | 做法 | zuòfa | way of doing sth., modus_operandi, practice, manner, method, making sth., way of making sth., shtick, way, way of doing, way of doing/making sth., personal manner |
 | 作業 | 作业 | zuòyè | school assignment, work, task, operation, production |
 | 做飯 | 做饭 | zuò fàn | do the cooking, prepare a meal, prepare meal |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [900+ từ vựng HSK 3 phiên bản mới](/bai-viet/900-tu-vung-hsk-3-phien-ban-moi.html)
+- [300 từ vựng HSK 2 phiên bản cũ](/bai-viet/300-tu-vung-hsk-2-phien-ban-cu.html)
+- [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

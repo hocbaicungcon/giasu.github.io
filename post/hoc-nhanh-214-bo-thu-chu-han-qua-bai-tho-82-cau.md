@@ -1,8 +1,6 @@
 ---
 title: Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu
-description: Đối với các bạn TTS, du học sinh Nhật Bản thì việc thành thạo 214 BỘ
-  THỦ KANJI DÀNH CHO CÁC BẠN HỌC TIẾNG NHẬT gần như là điều bắt buộc. Tuy nhiên việc
-  học
+description: Học nhanh 214 bộ thủ chữ Hán và Kanji qua bài thơ lục bát 82 câu vần điệu, dễ thuộc dễ nhớ. Phương pháp nhớ nhanh bộ thủ cho người học tiếng Trung và tiếng Nhật.
 category: Ngoại ngữ
 type: Mẹo học tập
 date: '2024-10-02'
@@ -10,11 +8,13 @@ tags:
 - Bộ thủ
 - Chữ Hán
 - Thơ
+- Tiếng Trung
+- Tiếng Nhật
 ---
 
-Đối với các bạn TTS, du học sinh Nhật Bản thì việc thành thạo [214 BỘ THỦ KANJI DÀNH CHO CÁC BẠN HỌC TIẾNG NHẬT](/bai-viet/214-bo-thu-kanji-danh-cho-cac-ban-hoc-tieng-nhat.html) gần như là điều bắt buộc. Tuy nhiên việc học chúng khá vất vả nên bạn có thể thử cách Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu sau đây.
+Đối với các bạn học tiếng Trung, du học sinh và thực tập sinh Nhật Bản thì việc thành thạo [214 bộ thủ Hán ngữ](/bai-viet/214-bo-thu-han-ngu.html) gần như là điều bắt buộc. Tuy nhiên việc học thuộc lòng từng bộ thủ khá vất vả, vì vậy phương pháp học nhanh 214 bộ thủ chữ Hán qua bài thơ lục bát 82 câu dưới đây sẽ giúp bạn ghi nhớ rất nhanh và tự nhiên.
 
-Nếu bạn mới học chữ Kanji, chúng tôi khuyên bạn thành thạo [50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html) trước tiên. Sau đó mới học các bộ thủ còn lại.
+Nếu bạn mới bắt đầu học, bạn nên thành thạo [50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html) trước tiên, kết hợp luyện tập cùng công cụ [Luyện viết chữ Hán và tiếng Nhật trực tuyến](/luyen-viet/). Sau đó mới mở rộng sang các bộ thủ còn lại.
 
 ![214 BỘ THỦ HÁN NGỮ, Học nhanh 214 bộ thủ chữ Hán qua bài thơ 82 câu](assets/images/hoc-nhanh-214-bo-thu-chu-han-qua-bai-tho-82-cau-214-bo-thu-chu-han-632x365.png)
 
@@ -68,7 +68,7 @@ Nếu bạn mới học chữ Kanji, chúng tôi khuyên bạn thành thạo [50
 
 25. VIẾT (曰) rằng, LẬP (立) đứng, lời NGÔN (言) 
 
-26. LONG (龍) rồng, NGƯ (魚) cá, QUY (龜) con rùa rua` 
+26. LONG (龍) rồng, NGƯ (魚) cá, QUY (龜) con rùa 
 
 27. LỖI (耒) cày ruộng, TRỈ (黹) thêu thùa 
 
@@ -178,6 +178,16 @@ Nếu bạn mới học chữ Kanji, chúng tôi khuyên bạn thành thạo [50
 
 80. HỄ (匸) PHƯƠNG (匚) BĂNG (冫) TIẾT (卩), thì dồn nét đôi.
 
-81. VÔ (无) là không, NHẤT (一) mộ thôi
+81. VÔ (无) là không, NHẤT (一) một thôi
 
 82. Diễn ca bộ thủ muôn đời không quên.
+
+---
+
+## Bài viết và tài liệu liên quan
+
+- [214 bộ thủ Hán ngữ đầy đủ: Phiên âm, ý nghĩa và chữ ví dụ](/bai-viet/214-bo-thu-han-ngu.html)
+- [Luyện viết chữ Hán và tiếng Nhật trực tuyến](/luyen-viet/)
+- [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html)
+- [Cách viết 50 bộ thủ thường dùng](/bai-viet/cach-viet-50-bo-thu-thuong-dung.html)
+- [File luyện viết 50 bộ thủ thường dùng PDF](/bai-viet/file-luyen-viet-50-bo-thu-thuong-dung.html)

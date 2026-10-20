@@ -1,7 +1,6 @@
 ---
 title: 1100+ từ vựng HSK 6 phiên bản mới!
-description: Từ khi HSK chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng
-  từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo 1000+ từ
+description: Tổng hợp danh sách hơn 1100 từ vựng HSK 6 phiên bản mới (HSK 3.0) có chữ phồn thể, giản thể, pinyin và giải nghĩa tiếng Anh chuẩn xác.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -12,9 +11,11 @@ tags:
 - Từ vựng
 ---
 
-Từ khi [HSK](/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html) chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo **1000+ từ vựng HSK 5 phiên bản mới**.
+Từ khi [HSK](/bai-viet/hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung.html) chuyển sang 9 cấp độ thay vì 6 cấp độ như trước thì số lượng từ vựng tăng lên rất nhiều. Hãy cùng GIA SƯ THÔNG MINH tham khảo **1100+ từ vựng HSK 6 phiên bản mới**.
 
 Mời bạn tham khảo thêm:
+
+- [5615 từ vựng HSK 7, từ vựng HSK 8, từ vựng HSK 9 mới nhất](/bai-viet/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat.html)
 
 - [1000+ từ vựng HSK 5 phiên bản mới!](/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html)
 
@@ -28,6 +29,8 @@ Mời bạn tham khảo thêm:
 
 ## Từ vựng HSK 6 phiên bản mới
 
+| Chữ phồn thể | Chữ giản thể | Pinyin | Nghĩa tiếng Anh |
+| --- | --- | --- | --- |
 | 挨著 | 挨着 | āizhe | near |
 | --- | --- | --- | --- |
 | 挨 | 挨 | āi | in order, in sequence, close to, adjacent to, to suffer, to endure, to pull through (hard times), to delay, to stall, to play for time, to dawdle |
@@ -1163,3 +1166,11 @@ Mời bạn tham khảo thêm:
 | 作廢 | 作废 | zuòfèi | to become invalid, to cancel, to delete, to nullify |
 | 座談會 | 座谈会 | zuòtánhuì | colloquium, symposiac, panel_discussion, an informal discussion meeting, symposium, teach-in, forum, symposia, conversazione, panel discussion |
 | 作戰 | 作战 | zuò zhàn | do battle, war, fight, battle, conduct operations |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [5615 từ vựng HSK 7, từ vựng HSK 8, từ vựng HSK 9 mới nhất](/bai-viet/5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat.html)
+- [1000+ từ vựng HSK 5 phiên bản mới!](/bai-viet/1000-tu-vung-hsk-5-phien-ban-moi.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)

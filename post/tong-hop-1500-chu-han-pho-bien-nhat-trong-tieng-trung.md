@@ -1,8 +1,6 @@
 ---
 title: Tổng hợp 1500 chữ Hán phổ biến nhất trong tiếng Trung
-description: Nếu bạn đã thành thạo 50 bộ thủ thường dùng, thậm chí là 214 bộ thủ thì
-  có thể tự học 1500 chữ Hán phổ biến và thông dụng nhất trong tiếng Trung, bao gồm
-  ý
+description: Tổng hợp 1500 chữ Hán phổ biến và thông dụng nhất trong tiếng Trung kèm chữ giản thể, phồn thể, phiên âm Pinyin, âm Hán Việt và giải nghĩa chi tiết.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -1518,3 +1516,13 @@ Nếu bạn đã thành thạo [50 bộ thủ thường dùng](/bai-viet/cach-vi
 | 1498 | 党 黨 | dǎng | đảng | Đảng (Quốc Dân Đảng, Đảng Cộng sản, chính đảng, đa đảng, Đảng bộ, đảng phái, kết Đảng, Đảng viên); (cũ) tổ chức hành chính địa phương, 500 nhà = 01 đảng; băng, nhóm, bè, lũ, đoàn thể (bằng đảng); hùa theo, a dua; che chở, bênh vực; họ hàng, bà con thân thuộc; (họ) Đảng; bạn bè, thân hữu; ngay thẳng |
 | 1499 | 售 | shòu | thụ | bán đi, bán ra (tiêu thụ); mua; báo đáp; thực hiện, thực hành; được lấy chồng; thi đỗ (khoa cử) |
 | 1500 | 涂 塗 | tú | đồ | bôi, tô, quét; xóa, bôi bỏ; bùn; (họ) Đồ; bùn; đường đi; xoa, đắp, rịt; ngăn trở, làm nghẽn, che lấp; làm bẩn, làm dơ; tan, rã (giá lạnh); hồ đồ |
+
+---
+
+## Bài viết và tài liệu liên quan
+
+- [214 bộ thủ Hán ngữ đầy đủ: Bảng tra cứu, phiên âm và ý nghĩa](/bai-viet/214-bo-thu-han-ngu.html)
+- [Luyện viết chữ Hán và tiếng Trung trực tuyến](/luyen-viet/)
+- [100+ câu tiếng Trung thông dụng](/bai-viet/100-cau-tieng-trung-thong-dung.html)
+- [Cách nhớ 50 bộ thủ thường dùng](/bai-viet/cach-nho-50-bo-thu-thuong-dung.html)
+- [Cách viết 50 bộ thủ thường dùng](/bai-viet/cach-viet-50-bo-thu-thuong-dung.html)

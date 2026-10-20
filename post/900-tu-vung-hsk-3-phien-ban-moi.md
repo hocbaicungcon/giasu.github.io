@@ -1,6 +1,6 @@
 ---
 title: 900+ từ vựng HSK 3 phiên bản mới
-description: Mời các bạn tải Từ vựng NEW HSK 3 PDF tại đây https://drive.google.com/file/d/1gSQ4MRmNQALodFCIVyFNfFucNNx1_mNU/view?usp=sharing
+description: Danh sách hơn 900 từ vựng HSK 3 phiên bản mới (HSK 3.0) có chữ phồn thể, giản thể, pinyin và giải nghĩa tiếng Anh chuẩn xác, kèm link tải PDF chi tiết.
 category: Ngoại ngữ
 type: Bài học
 date: '2024-10-02'
@@ -29,8 +29,9 @@ Mời bạn tham khảo thêm:
 
 ## Từ vựng HSK 3 phiên bản mới
 
-| 愛心 | 爱心 | àixīn | liking, pity, love, benevolence, mercy, fondness, commitment |
+| Chữ phồn thể | Chữ giản thể | Pinyin | Nghĩa tiếng Anh |
 | --- | --- | --- | --- |
+| 愛心 | 爱心 | àixīn | liking, pity, love, benevolence, mercy, fondness, commitment |
 | 安排 | 安排 | ānpái | arrange, plan, fix up, provide (meals/etc.) |
 | 安裝 | 安装 | ānzhuāng | install, erect, fix, mount |
 | 按照 | 按照 | ànzhào | according to, in the light of, on the basis of |
@@ -996,3 +997,12 @@ Mời bạn tham khảo thêm:
 | 總結 | 总结 | zǒngjié | to sum up, to conclude, summary, résumé, CL:個|个[ge4] |
 | 做客 | 做客 | zuò kè | to be a guest or visitor |
 | 作者 | 作者 | zuòzhě | composer, author, writer, wright, paragrapher, auteur, paternity |
+
+---
+
+### Bài viết liên quan nên học tiếp:
+- [1000 từ vựng HSK 4 phiên bản mới](/bai-viet/1000-tu-vung-hsk-4-phien-ban-moi.html)
+- [700+ từ vựng HSK 2 phiên bản mới](/bai-viet/700-tu-vung-hsk-2-phien-ban-moi.html)
+- [Danh sách 300 từ vựng HSK 1 phiên bản mới](/bai-viet/danh-sach-300-tu-vung-hsk-1-phien-ban-moi.html)
+- [So sánh từ vựng HSK mới 3.0 và HSK cũ 2.0](/bai-viet/so-sanh-tu-vung-hsk-moi-va-cu.html)
+- [Ứng dụng luyện viết chữ Hán và bộ thủ tương tác](/luyen-viet/)
