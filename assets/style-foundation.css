@@ -372,3 +372,8 @@ html[data-theme="dark"] a:hover {
 html[data-theme="dark"] :is(.hero p,.card p,.about p,.aside-note p,.exam-policy,.back,.eyebrow,.overline:not(.mord),.exam-nav-group strong,.lesson-video figcaption,footer p) {
   color:var(--dark-ink, #e5eee6);
 }
+
+/* Máy cấu hình yếu: preferences.js đặt data-lite → tắt hoạt ảnh/hiệu ứng nặng */
+:root[data-lite] *,:root[data-lite] *::before,:root[data-lite] *::after{animation:none!important;transition:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;scroll-behavior:auto!important}
+:root[data-lite] .gb-pet,:root[data-lite] .pg-cloud,:root[data-lite] .pg-rays{display:none}
+@media(prefers-reduced-motion:reduce){:root *,:root *::before,:root *::after{animation-duration:.01ms!important;animation-iteration-count:1!important}}

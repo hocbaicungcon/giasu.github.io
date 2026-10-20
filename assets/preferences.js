@@ -1,6 +1,7 @@
 /* credit: giasu.ai.vn */
 (()=>{
  const root=document.documentElement,key='giasu-display';
+ try{const n=navigator,c=n.connection;if((n.deviceMemory&&n.deviceMemory<=4)||(n.hardwareConcurrency&&n.hardwareConcurrency<=4)||(c&&(c.saveData||/2g/.test(c.effectiveType||''))))root.dataset.lite='';}catch{}
  let prefs={size:100,theme:'light',font:'sans'};
  try{const saved=JSON.parse(localStorage.getItem(key));if(saved){prefs.size=[80,90,100,110,120,130].includes(saved.size)?saved.size:100;prefs.theme=['light','dark'].includes(saved.theme)?saved.theme:'light';prefs.font=['sans','cmu','stix'].includes(saved.font)?saved.font:(saved.font==='serif'?'cmu':'sans');}}catch{}
 
@@ -20,3 +21,5 @@
   panel.addEventListener('click',event=>{const action=event.target.closest('[data-action]')?.dataset.action;if(!action)return;if(action==='less')prefs.size=Math.max(80,prefs.size-10);if(action==='more')prefs.size=Math.min(130,prefs.size+10);if(action==='font')prefs.font={sans:'cmu',cmu:'stix',stix:'sans'}[prefs.font];if(action==='theme')prefs.theme=root.dataset.theme==='dark'?'light':'dark';save();});
  });
 })();
+/* Ảnh lazy-load phải tải hết trước khi in */
+typeof window!=='undefined'&&window.addEventListener('beforeprint',()=>document.querySelectorAll('img[loading=lazy]').forEach(i=>{i.loading='eager';}));
