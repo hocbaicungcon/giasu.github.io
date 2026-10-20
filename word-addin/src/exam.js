@@ -118,14 +118,17 @@ function pageTextWidthTwips(model) {
 
 // ---------------------------------------------------------------- analysis
 const RE_PART = /^\s*PH[AẦ]N\s+(I{1,3}V?|IV|V|[1-4])\b\s*[.:)]?/i;
-const RE_QUESTION = /^\s*(C[âa]u|B[àa]i)\s*(\d+)\s*([.:)\-–—]|\s+(?=[A-Z\p{L}(]))/iu;
+const RE_QUESTION = /^\s*(C[âa]u|B[àa]i|Question)\s*(\d+)\s*([.:)\-–—]|\s+(?=[A-Z\p{L}(]))/iu;
 const RE_OPT = /^\s*([A-D])\s*([.)])/;
 const RE_STMT = /^\s*([a-d])\s*\)/;
-const RE_END = /^[\s\-–—_*.]*(h[ếe]t\b|(bảng\s*)?đáp\s*án[^:：]{0,40}$|hướng\s*dẫn\s*chấm|cán\s*bộ\s*coi\s*thi)/i;
+const RE_END = /^[\s\-–—_*.]*(h[ếe]t\b|the\s+end[\s\-–—_*.]*$|(bảng\s*)?đáp\s*án[^:：]{0,40}$|hướng\s*dẫn\s*chấm|cán\s*bộ\s*coi\s*thi)/i;
 const RE_ANSWER_LINE = /^\s*(đáp\s*án|đáp\s*số|đs|kết\s*quả|trả\s*lời)\s*[:：]/i;
 const RE_SHARED = /(sử\s*dụng|dựa\s*vào|dùng)\s+(chung\s+)?(thông\s*tin|dữ\s*kiện|đoạn|hình|bảng)[^.]{0,80}câu\s*\d+|(trả\s*lời|cho)\s+(các\s+)?câu\s*(hỏi\s*)?\d+\s*(,|và|đến|-|–)\s*\d+/i;
-const RE_PINNED_OPTION = /^\s*(tất\s*cả|cả\s+(ba|bốn|hai|\w+)\s+(đáp\s*án|ý|phương\s*án|câu)|không\s*có\s*(đáp\s*án|phương\s*án)|các\s*(đáp\s*án|phương\s*án|ý)\s*(trên|còn\s*lại))/i;
-const RE_OPTION_REF = /\b(A|B|C|D)\s*(,|và|&)\s*(A|B|C|D)\b.*(đúng|sai)|cả\s+[A-D]\s*(,|và)\s*[A-D]|(đáp\s*án|ý|phương\s*án)\s*[A-D]\b/i;
+const RE_PINNED_OPTION = /^\s*(tất\s*cả|cả\s+(ba|bốn|hai|\w+)\s+(đáp\s*án|ý|phương\s*án|câu)|không\s*có\s*(đáp\s*án|phương\s*án)|các\s*(đáp\s*án|phương\s*án|ý)\s*(trên|còn\s*lại)|all\s+of\s+(the\s+)?(above|these)|none\s+of\s+(the\s+)?(above|these)|neither\s+of\s+(the\s+)?(above|these))/i;
+// English exams: instruction lines that mark how a group of questions behaves
+const RE_EN_ORDER = /arrang|meaningful\s+(paragraph|letter|conversation|text|exchange)|sentences?\s+(to|in)\s+(make|form)/i;
+const RE_EN_PASSAGE = /read\s+(the|a|an)\s+(following\s+)?(\w+\s+)?(passage|text|advertisement|notice|leaflet|announcement|e-?mail|letter|message|poster|flyer|brochure|article|extract|story|conversation|dialogue)|numbered\s+blank|\(\s*\d{1,2}\s*\)/i;
+const RE_OPTION_REF = /\b(both|either)\s+[A-D]\s+(and|or|&)\s+[A-D]\b|\b(A|B|C|D)\s*(,|và|&)\s*(A|B|C|D)\b.*(đúng|sai)|cả\s+[A-D]\s*(,|và)\s*[A-D]|(đáp\s*án|ý|phương\s*án)\s*[A-D]\b/i;
 
 const partKind = (text) => (/đúng\s*sai|đúng\s*hoặc\s*sai/i.test(text) ? 'tf' : /trả\s*lời\s*ngắn|ngắn/i.test(text) ? 'short' : /nhiều\s*(phương\s*án|lựa\s*chọn)|trắc\s*nghiệm/i.test(text) ? 'mc' : 'other');
 
@@ -158,13 +161,14 @@ function findOptionsInParagraph(para, wanted = RE_OPT, upper = true) {
     const text = childText(c);
     if (isRun(c) && !hasObject(c)) {
       const m = wanted.exec(text);
-      if (m && (lastWasGap || !seenContent)) {
+      const expected = found.length ? String.fromCharCode(found[0].letter.charCodeAt(0) + found.length) : null;
+      if (m && (!expected || m[1] === expected) && (lastWasGap || !seenContent || (/^[\s\u00A0]/.test(text) && text.length > m[0].length))) {
         const labelEnd = m[0].length;
         const lead = text.length - text.trimStart().length;
         if (lead === 0 || !text.slice(0, lead).trim()) {
           const labelText = text.slice(0, labelEnd);
           if (labelEnd < text.length || /[A-Za-z]/.test(labelText)) {
-            const parts = text.length > labelEnd ? splitRun(c, labelEnd) : [c, ''];
+            const parts = text.length > labelEnd ? splitRunAt(c, labelEnd) : [c, ''];
             if (!parts) return { options: [], ok: false };
             const label = parts[0];
             found.push({ at: i, letter: m[1], labelRun: label, rest: parts[1] });
@@ -175,7 +179,7 @@ function findOptionsInParagraph(para, wanted = RE_OPT, upper = true) {
       }
     }
     const gap = !text.replace(/[\s\t\u00A0]/g, '');
-    if (!gap) { lastWasGap = false; if (!found.length) return { options: [], ok: found.length > 0 }; } else if (/\t|\s{2,}/.test(text) || text === '') lastWasGap = true;
+    if (!gap) { lastWasGap = /\s$/.test(text); if (!found.length) return { options: [], ok: found.length > 0 }; } else if (/\t|\s{2,}/.test(text) || text === '') lastWasGap = true;
     if (isRun(c) && /<w:tab\/>/.test(c)) lastWasGap = true;
   }
   if (!found.length) return { options: [], ok: false };
@@ -219,6 +223,8 @@ export function analyze(model) {
     else if (b.kind === 'p' && RE_QUESTION.test(t)) starts.push({ i, type: 'q', t, number: Number(RE_QUESTION.exec(t)[2]) });
   });
   const mark = (i) => starts.findIndex((s) => s.i === i);
+  const qStarts = starts.filter((s) => s.type === 'q');
+  const english = qStarts.length > 0 && qStarts.filter((s) => /^\s*question/i.test(s.t)).length * 2 > qStarts.length;
   starts.forEach((s, k) => {
     const next = k + 1 < starts.length ? starts[k + 1].i : limit;
     if (s.type === 'part') {
@@ -255,6 +261,8 @@ export function analyze(model) {
       if (!optionsStarted && i > s.i) stemText.push(t);
     }
     q.stemEnd = q.optionParas.length ? q.optionParas[0] : (q.statements.length ? q.statements[0].block : next);
+    // English: what follows the last option (instruction line, passage) belongs to the next group, so it must not travel with this question
+    q.ownEnd = english && q.optionParas.length ? q.optionParas[q.optionParas.length - 1] + 1 : next;
     if (RE_SHARED.test(text(model.blocks[s.i]))) q.flags.push('shared');
     if (q.options) {
       const letters = q.options.map((o) => o.letter).join('');
@@ -264,7 +272,47 @@ export function analyze(model) {
     part.questions.push(q);
   });
   void mark;
-  return { parts: parts.filter((p) => p.questions.length || p.blockIndex >= 0) };
+  const sections = english ? buildSections(model, parts.flatMap((p) => p.questions)) : undefined;
+  // English: how many "Question N" the text really contains (tables, glued onto other paragraphs...) versus how many were recognised
+  let expected = 0;
+  if (english) {
+    for (const b of model.blocks.slice(0, limit)) {
+      const x = b.kind === 'p' ? paragraphText(b) : (b.xml.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g) || []).map((s) => s.replace(/<[^>]+>/g, '')).join(' ');
+      expected += (x.match(/\bQuestion\s*\d+/gi) || []).length;
+    }
+  }
+  return { parts: parts.filter((p) => p.questions.length || p.blockIndex >= 0), english, sections, expected, detected: parts.reduce((n, p) => n + p.questions.length, 0) };
+}
+
+/**
+ * English exam: consecutive questions under one instruction line / passage form a section. A section starts when text, a
+ * picture or a table sits between two questions. kind: 'independent' (shuffle the questions), 'passage' or 'order'
+ * (cloze, reading, sentence ordering: keep the order, only the options move). mode is the default for the kind.
+ */
+function buildSections(model, qs) {
+  const nonBlank = (b) => b.kind !== 'p' || Boolean(paragraphText(b).trim());
+  const secs = [];
+  qs.forEach((q, k) => {
+    const from = k ? qs[k - 1].ownEnd : 0, to = q.start;
+    if (k === 0 || model.blocks.slice(from, to).some(nonBlank)) secs.push({ index: secs.length, lead: { from, to }, questions: [], first: k === 0 });
+    secs[secs.length - 1].questions.push(q);
+  });
+  for (const s of secs) {
+    const lead = model.blocks.slice(s.lead.from, s.lead.to);
+    const paras = lead.filter((b) => b.kind === 'p').map(paragraphText).filter((t) => t.trim());
+    const text = paras.join('\n');
+    const words = text.split(/\s+/).filter(Boolean).length;
+    const rich = lead.some((b) => b.kind !== 'p' || b.children.some(hasObject));
+    let kind = 'independent';
+    if (RE_EN_ORDER.test(text)) kind = 'order';
+    else if (RE_EN_PASSAGE.test(text) || (!s.first && (words > 70 || paras.length >= 3 || rich))) kind = 'passage';
+    s.kind = kind;
+    s.mode = kind === 'independent' ? 'shuffle' : 'keep';
+    s.firstNumber = s.questions[0].number;
+    s.lastNumber = s.questions[s.questions.length - 1].number;
+    s.title = (paras[paras.length > 1 && s.first ? paras.length - 1 : 0] || '').trim().slice(0, 90);
+  }
+  return secs;
 }
 
 // ---------------------------------------------------------------- answers
@@ -277,6 +325,7 @@ export function answersOf(model, analysis) {
         const marked = (q.options || []).filter((o) => labelMark(o.labelRun)).map((o) => o.letter);
         row.value = marked.length === 1 ? marked[0] : marked.length ? marked.join('') : null;
         row.multiple = marked.length > 1;
+        if (marked.length > 1 && marked.length === (q.options || []).length) { row.value = null; row.multiple = false; }   // every option "marked": underlined words (pronunciation), not an answer key
       } else if (part.kind === 'tf') {
         const marks = q.statements.map((s) => {
           const b = model.blocks[s.block];
@@ -447,6 +496,7 @@ export function renumberQuestionInParagraph(p, newNumber, { formatTemplate, word
  * layout ('auto'|4|2|1|false), keepNext (bool). Returns {pkg, report}.
  */
 export function normalize(pkg, opts = {}) {
+  pkg = prepareEnglish(pkg).pkg;
   const model = parseBody(pkg);
   const analysis = analyze(model);
   const report = { questions: 0, renumbered: 0, relaid: 0, skipped: [], notes: [] };
@@ -494,6 +544,177 @@ export function normalize(pkg, opts = {}) {
   return { pkg: buildBody(model, blocks), report };
 }
 
+// ---------------------------------------------------------------- English layout preparation
+// English papers pasted from PDF keep questions in tables, glue "Question N." onto the previous paragraph and letter options with
+// automatic numbering. prepareEnglish rewrites them into the plain layout analyze() understands (the document itself is not touched).
+const xmlText = (x) => (x.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g) || []).map((s) => unesc(s.replace(/<[^>]+>/g, ''))).join(' ');
+
+/** Paragraphs of a table (or sdt), in reading order. */
+function collectParas(xml) {
+  const out = [];
+  const walk = (frag) => {
+    for (const c of splitChildren(frag)) {
+      const t = tagName(c);
+      if (t === 'w:p') out.push(c);
+      else if (/^w:(tbl|tr|tc|sdt|sdtContent)$/.test(t)) walk(c.replace(/^<[^>]+>/, '').replace(/<\/[\w:]+>$/, ''));
+    }
+  };
+  walk(xml);
+  return out;
+}
+
+/** Split a run (rPr + w:t / tab / br children) at a character offset. Returns [left, right] or null. */
+function splitRunAt(run, at) {
+  run = run.replace(/<w:lastRenderedPageBreak\/>/g, '');
+  const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?([\s\S]*)<\/w:r>$/.exec(run);
+  if (!m) return null;
+  const kids = splitChildren(m[3]);
+  const mk = (list) => (list.length ? `${m[1]}${m[2] || ''}${list.join('')}</w:r>` : '');
+  let pos = 0;
+  for (let k = 0; k < kids.length; k++) {
+    const e = kids[k], tn = tagName(e);
+    if (at === pos) return [mk(kids.slice(0, k)), mk(kids.slice(k))];
+    let len = 0;
+    if (tn === 'w:t') {
+      const tm = /^<w:t\b[^>]*?(?:\/>|>([^<]*)<\/w:t>)$/.exec(e);
+      if (!tm) return null;
+      const text = unesc(tm[1] || '');
+      len = text.length;
+      if (at < pos + len) {
+        const t = (s) => `<w:t xml:space="preserve">${escapeXml(s)}</w:t>`;
+        return [mk([...kids.slice(0, k), t(text.slice(0, at - pos))]), mk([t(text.slice(at - pos)), ...kids.slice(k + 1)])];
+      }
+    } else if (tn === 'w:tab' || tn === 'w:br' || tn === 'w:noBreakHyphen') len = 1;
+    pos += len;
+  }
+  return at === pos ? [mk(kids), ''] : null;
+}
+
+/** Split a paragraph at an offset of its paragraphText. Returns [first, second] or null (offset inside a picture, field, hyperlink...). */
+function splitParaAt(p, offset) {
+  const fresh = (open) => open.replace(/\s+w14:paraId="[^"]*"|\s+w14:textId="[^"]*"/g, '');
+  const done = (a, b) => [{ ...p, children: a }, { kind: 'p', open: fresh(p.open), ppr: setPprChild(setPprChild(p.ppr, 'numPr', null), 'ind', null), children: b }];
+  let pos = 0;
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i], len = childText(c).length;
+    if (offset === pos) return done(p.children.slice(0, i), p.children.slice(i));
+    if (offset < pos + len) {
+      if (!isRun(c) || hasObject(c)) return null;
+      const parts = splitRunAt(c, offset - pos);
+      if (!parts) return null;
+      return done([...p.children.slice(0, i), parts[0]].filter(Boolean), [parts[1], ...p.children.slice(i + 1)].filter(Boolean));
+    }
+    pos += len;
+  }
+  return offset === pos ? done(p.children, []) : null;
+}
+
+// Question labels as printed ("Question 5." / "Câu 5." / "Bài 5."), capitalised: a lower-case "câu 5." inside a sentence is only a reference
+const QWORD = '(?:Question|QUESTION|C[âa]u|CÂU|B[àa]i|BÀI)';
+const RE_QN_GLOBAL = /(?:Question|QUESTION|C[âa]u|CÂU)\s*\d+\s*[.:)]/g;   // "Bài N." is too common inside lesson text to split on
+const RE_QLEAD = new RegExp(`^\\s*${QWORD}\\s*\\d+\\s*[.:)]`);
+const RE_ROW_ABCD = /(?:^|[\s\u00A0])A\.(?=\s)[\s\S]*?\sB\.(?=\s)(?:[\s\S]*?\sC\.(?=\s))?/;   // at least A and B; C-D may continue in the next paragraph
+/** Split off a "Question N." glued onto earlier text, and the first option label glued onto the stem. */
+function splitGlued(p, nextIsList = false, depth = 0) {
+  if (depth > 12) return [p];
+  const t = paragraphText(p);
+  for (const m of t.matchAll(RE_QN_GLOBAL)) {
+    if (m.index > 0 && /\s/.test(t[m.index - 1]) && t.slice(0, m.index).trim()) {
+      const parts = splitParaAt(p, m.index);
+      if (parts) return [...splitGlued(parts[0], false, depth + 1), ...splitGlued(parts[1], nextIsList, depth + 1)];
+    }
+  }
+  const q = RE_QLEAD.exec(t);
+  const rest = q ? t.slice(q[0].length) : t;
+  // an option row "A. ... B. ..." glued after the stem / last sentence; or just "A." when B-D follow as an automatic list
+  let om = RE_ROW_ABCD.exec(rest);
+  if (!om && q && nextIsList && !/(?:^|\s)B\./.test(rest)) om = /(?:^|[\s\u00A0])A\.(?=\s|$)/.exec(rest);
+  if (om && (q || (om.index > 0 && rest.slice(0, om.index).trim()))) {
+    const parts = splitParaAt(p, (q ? q[0].length : 0) + om.index + (/^[\s\u00A0]/.test(om[0]) ? 1 : 0));
+    if (parts && paragraphText(parts[1]).trim()) return [parts[0], parts[1]];
+  }
+  return [p];
+}
+
+/** A label whose dot sits in the next run ("C" + ". text") becomes one run "C." so the option can be recognised. */
+function joinSplitLabels(p) {
+  let n = 0;
+  for (let i = 0; i + 1 < p.children.length; i++) {
+    const c = p.children[i], d = p.children[i + 1];
+    if (!isRun(c) || !isRun(d) || hasObject(c) || hasObject(d) || !/^\s*[A-D]$/.test(runText(c)) || !/^[.)]/.test(runText(d))) continue;
+    const parts = splitRunAt(d, 1);
+    if (!parts || !/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?\s*<w:t\b[^>]*>[^<]*<\/w:t>\s*<\/w:r>$/.test(c)) continue;
+    p.children[i] = c.replace(/(<w:t\b[^>]*>)([^<]*)(<\/w:t>)/, (_m, o, t, e) => `<w:t xml:space="preserve">${t}${runText(parts[0])}${e}`);
+    p.children[i + 1] = parts[1];
+    if (!parts[1]) p.children.splice(i + 1, 1);
+    n++;
+  }
+  return n;
+}
+
+/** Predicate (numId, ilvl) -> is it an A, B, C... list; from /word/numbering.xml of the package, null when absent. */
+function upperLetterLists(pkg) {
+  const m = /<pkg:part pkg:name="\/word\/numbering\.xml"[^>]*>\s*<pkg:xmlData>([\s\S]*?)<\/pkg:xmlData>/.exec(pkg);
+  if (!m) return null;
+  const abs = {}, num = {};
+  for (const a of m[1].matchAll(/<w:abstractNum\b[^>]*w:abstractNumId="(\d+)"[\s\S]*?<\/w:abstractNum>/g)) {
+    for (const l of a[0].matchAll(/<w:lvl\b[^>]*w:ilvl="(\d+)"[\s\S]*?<\/w:lvl>/g)) {
+      const f = /<w:numFmt\b[^>]*w:val="(\w+)"/.exec(l[0]);
+      (abs[a[1]] = abs[a[1]] || {})[l[1]] = f ? f[1] : '';
+    }
+  }
+  for (const n of m[1].matchAll(/<w:num\b[^>]*w:numId="(\d+)"[^>]*>\s*<w:abstractNumId\b[^>]*w:val="(\d+)"/g)) num[n[1]] = n[2];
+  return (numId, ilvl) => ((abs[num[numId]] || {})[ilvl || '0']) === 'upperLetter';
+}
+
+/** Make the automatic A. B. C. D. of option paragraphs literal text; the label takes the paragraph mark's formatting (so an underline / red mark still shows). */
+function materializeLetters(blocks, isUpper) {
+  let next = 0, made = 0;
+  const scan = (text) => { for (const m of text.matchAll(/(?:^|[\s ])([A-D])\.(?=\s|$)/g)) if (m[1] === 'ABCD'[next]) next++; };
+  for (const b of blocks) {
+    if (b.kind !== 'p') continue;
+    const t = paragraphText(b), q = RE_QLEAD.exec(t);
+    if (q) { next = 0; scan(t.slice(q[0].length)); continue; }
+    const np = /<w:numPr>[\s\S]*?<\/w:numPr>/.exec(b.ppr || '');
+    if (np && isUpper && next < 4 && isUpper((/<w:numId\b[^>]*w:val="(\d+)"/.exec(np[0]) || [])[1], (/<w:ilvl\b[^>]*w:val="(\d+)"/.exec(np[0]) || [])[1])) {
+      const mark = pprChildren(b.ppr).find((k) => tagName(k) === 'w:rPr') || '';
+      b.children = [labelRunFor('ABCD'[next], `<w:r>${mark}</w:r>`), SPACE_RUN, ...b.children];
+      b.ppr = setPprChild(setPprChild(b.ppr, 'numPr', null), 'ind', null);
+      next++; made++;
+    }
+    scan(t);
+  }
+  return made;
+}
+
+/** {pkg, changed, stats}: the package of an English paper in the plain layout, or the input unchanged for other papers. */
+export function prepareEnglish(pkg) {
+  const stats = { tables: 0, split: 0, labels: 0 };
+  let model;
+  try { model = parseBody(pkg); } catch (e) { return { pkg, changed: false, stats }; }
+  const textOf = (b) => (b.kind === 'p' ? paragraphText(b) : xmlText(b.xml));
+  const all = model.blocks.map(textOf).join('\n');
+  if ((all.match(RE_QN_GLOBAL) || []).length < 3) return { pkg, changed: false, stats };
+  let blocks = [];
+  for (const b of model.blocks) {
+    if (b.kind === 'other' && tagName(b.xml) === 'w:tbl' && xmlText(b.xml).search(RE_QN_GLOBAL) >= 0 && /(?:^|\s)A\s?[.)]/.test(xmlText(b.xml))) {
+      for (const x of collectParas(b.xml)) blocks.push({ kind: 'p', ...parsePara(x) });
+      stats.tables++;
+    } else blocks.push(b);
+  }
+  blocks = blocks.flatMap((b, i) => {
+    if (b.kind !== 'p') return [b];
+    stats.split += joinSplitLabels(b);
+    const nx = blocks[i + 1];
+    const parts = splitGlued(b, Boolean(nx && nx.kind === 'p' && /<w:numPr>/.test(nx.ppr || '')));
+    stats.split += parts.length - 1;
+    return parts;
+  });
+  stats.labels = materializeLetters(blocks, upperLetterLists(pkg));
+  const changed = stats.tables + stats.split + stats.labels > 0;
+  return { pkg: changed ? buildBody(model, blocks) : pkg, changed, stats };
+}
+
 // ---------------------------------------------------------------- shuffle
 export function rng(seed) {
   let a = seed >>> 0;
@@ -509,10 +730,11 @@ function shuffleInPlace(arr, rand) {
  * stripMarks, renumber, layout. Returns {pkg, report, answers}.
  */
 export function shuffleVersion(pkg, opts = {}) {
+  pkg = prepareEnglish(pkg).pkg;
   const model = parseBody(pkg);
   const analysis = analyze(model);
   const rand = rng(opts.seed || 1);
-  const report = { pinnedQuestions: [], pinnedOptions: [], sharedParts: [], questions: 0, notes: [] };
+  const report = { pinnedQuestions: [], pinnedOptions: [], sharedParts: [], keptSections: [], questions: 0, notes: [] };
   const newBlocks = model.blocks.slice();
   const outBlocks = [];
   const consumed = new Set();
@@ -553,14 +775,28 @@ export function shuffleVersion(pkg, opts = {}) {
   }
   // 2. question order inside each part
   const questionOrder = new Map();   // start block -> replaced content
-  for (const part of analysis.parts) {
-    const qs = part.questions;
-    if (opts.shuffleQuestions === false || qs.length < 2) continue;
-    if (qs.some((q) => q.flags.includes('shared'))) { report.sharedParts.push(part.title || '(không tiêu đề)'); continue; }
+  const groups = [];   // lists of questions that may swap places
+  if (opts.shuffleQuestions !== false) {
+    if (analysis.english) {
+      // per section: independent questions are shuffled, passage / ordering sections keep their order (blank numbers, a-e sentences)
+      for (const sec of analysis.sections) {
+        const mode = (opts.sectionModes && opts.sectionModes[sec.index]) || sec.mode;
+        if (mode === 'shuffle') groups.push(sec.questions);
+        else if (sec.questions.length > 1) report.keptSections.push(`Question ${sec.firstNumber}–${sec.lastNumber}`);
+      }
+    } else {
+      for (const part of analysis.parts) {
+        if (part.questions.length < 2) continue;
+        if (part.questions.some((q) => q.flags.includes('shared'))) { report.sharedParts.push(part.title || '(không tiêu đề)'); continue; }
+        groups.push(part.questions);
+      }
+    }
+  }
+  for (const qs of groups) {
+    if (qs.length < 2) continue;
     const order = shuffleInPlace(qs.map((_q, i) => i), rand);
-    const segments = qs.map((q) => ({ start: q.start, end: q.end }));
-    const slots = qs.map((q) => ({ start: q.start, end: q.end }));
-    order.forEach((src, k) => questionOrder.set(slots[k].start, segments[src]));
+    const segments = qs.map((q) => ({ start: q.start, end: q.ownEnd }));   // the trailing instruction / passage stays where it is
+    order.forEach((src, k) => questionOrder.set(qs[k].start, segments[src]));
   }
   const emitRange = (start, end) => {
     for (let i = start; i < end; i++) {
@@ -569,23 +805,18 @@ export function shuffleVersion(pkg, opts = {}) {
       else outBlocks.push(newBlocks[i]);
     }
   };
-  const handled = new Set();
-  const firstQ = Math.min(...analysis.parts.flatMap((p) => p.questions.map((q) => q.start)), model.blocks.length);
+  const byStart = new Map(analysis.parts.flatMap((p) => p.questions).map((q) => [q.start, q]));
+  const firstQ = Math.min(...byStart.keys(), model.blocks.length);
   emitRange(0, firstQ);
   let i = firstQ;
   while (i < model.blocks.length) {
-    if (questionOrder.has(i)) {
+    const q = byStart.get(i);
+    if (q && questionOrder.has(i)) {
       const seg = questionOrder.get(i);
-      const slotEnd = analysis.parts.flatMap((p) => p.questions).find((q) => q.start === i).end;
       emitRange(seg.start, seg.end);
-      handled.add(i);
-      i = slotEnd;
-    } else {
-      const q = analysis.parts.flatMap((p) => p.questions).find((x) => x.start === i);
-      const end = q ? q.end : i + 1;
-      emitRange(i, end);
-      i = end;
-    }
+      emitRange(q.ownEnd, q.end);   // this slot's own tail (blank lines, next group's heading) does not move
+    } else emitRange(i, q ? q.end : i + 1);
+    i = q ? q.end : i + 1;
   }
   // 3. renumber, code, marks
   let result = buildBody(model, outBlocks);
@@ -665,7 +896,7 @@ export function answerTable(rowsByVersion) {
 const cell = (text, w, bold) => `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/></w:tcPr><w:p><w:pPr><w:spacing w:before="20" w:after="20"/><w:jc w:val="center"/></w:pPr><w:r>${bold ? '<w:rPr><w:b/></w:rPr>' : ''}<w:t xml:space="preserve">${escapeXml(String(text))}</w:t></w:r></w:p></w:tc>`;
 
 /** WordprocessingML for the answer tables: a heading and, per group, rows of at most 10 questions. */
-export function answerTableXml(groups, title = 'BẢNG ĐÁP ÁN') {
+export function answerTableXml(groups, title = 'BẢNG ĐÁP ÁN', word = 'Câu') {
   const borders = '<w:tblBorders>' + ['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map((s) => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="808080"/>`).join('') + '</w:tblBorders>';
   let xml = `<w:p><w:pPr><w:pageBreakBefore/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>${escapeXml(title)}</w:t></w:r></w:p>`;
   const byCode = new Map();
@@ -678,7 +909,7 @@ export function answerTableXml(groups, title = 'BẢNG ĐÁP ÁN') {
       for (let i = 0; i < g.items.length; i += per) {
         const chunk = g.items.slice(i, i + per);
         const w = Math.floor(9000 / (g.kind === 'tf' ? chunk.length : per + 1));
-        const top = `<w:tr>${cell('Câu', w, true)}${chunk.map((c) => cell(c.number, w, true)).join('')}</w:tr>`;
+        const top = `<w:tr>${cell(word, w, true)}${chunk.map((c) => cell(c.number, w, true)).join('')}</w:tr>`;
         const bot = `<w:tr>${cell('Đáp án', w, true)}${chunk.map((c) => cell(c.value ?? '?', w, false)).join('')}</w:tr>`;
         xml += `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${borders}</w:tblPr><w:tblGrid>${Array.from({ length: chunk.length + 1 }, () => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>${top}${bot}</w:tbl><w:p/>`;
       }

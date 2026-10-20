@@ -455,8 +455,9 @@ button.primary svg { vertical-align: -2px; }
 
 /* ---------- Narrow task pane (the pane can be as thin as ~300 px) ---------- */
 html, body { max-width: 100%; overflow-x: hidden; }
-nav { overflow-x: auto; scrollbar-width: none; flex-wrap: nowrap; }
-nav::-webkit-scrollbar { display: none; }
+nav { overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; flex-wrap: nowrap; }
+nav::-webkit-scrollbar { display: block; height: 6px; }
+nav::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
 nav button { flex: 0 0 auto; padding: 8px 9px; white-space: nowrap; }
 img, svg, textarea, input, select, .scroll, table { max-width: 100%; }
 fieldset { min-width: 0; }
@@ -540,8 +541,8 @@ textarea { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12p
 
 /* Very thin pane: the main tabs wrap onto two rows so none of them hides off-screen */
 @media (max-width: 330px) {
-  nav { flex-wrap: wrap; overflow: visible; row-gap: 0; }
-  nav button { flex: 1 1 auto; text-align: center; padding: 7px 6px; }
+  nav { flex-wrap: nowrap; overflow-x: auto; }
+  nav button { flex: 0 0 auto; padding: 7px 6px; }
 }
 
 /* Links follow the accent colour of the current light/dark theme instead of the browser's default blue */
@@ -611,3 +612,7 @@ body #mathlive-suggestion-popover li { margin: 2px 3px; padding: 2px 6px; width:
 body #mathlive-suggestion-popover .ML__popover__command { font-size: 1.05rem; }
 body #mathlive-suggestion-popover .ML__popover__latex { font-size: 11px; }
 body #mathlive-suggestion-popover .ML__popover__keybinding { font-size: 10px; }
+
+.sec-list { list-style: none; margin: 6px 0; padding: 0; display: grid; gap: 4px; }
+.sec-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sec-list select { max-width: 55%; }

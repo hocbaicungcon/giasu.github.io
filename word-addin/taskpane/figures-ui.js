@@ -37,8 +37,8 @@ export function mountFigures(root, io) {
   let kind = 'bbt', current = null, timer = null;
 
   const forms = {
-    bbt: () => `<label class="field sub-field"><span>Cách lập</span><select id="b-mode"><option value="auto">Từ hàm số (tự khảo sát)</option><option value="manual">Tự vẽ (nhập từng dòng)</option></select></label>
-      <div id="b-auto">${field('Hàm số y = f(x)', '<input type="text" id="b-expr" value="x^3-3x+1" spellcheck="false" placeholder="vd. (2x+1)/(x-1), x^3-3x+1, sqrt(x)">')}
+    bbt: () => `<label class="field sub-field"><span>Cách lập</span><select id="b-mode"><option value="auto">Tự động vẽ</option><option value="manual">Tự nhập</option></select></label>
+      <div id="b-auto">${field('Hàm số y = f(x) (gõ thường hoặc LaTeX)', '<input type="text" id="b-expr" value="x^3-3x+1" spellcheck="false" placeholder="vd. (2x+1)/(x-1), \\frac{2x+1}{x-1}, x^3-3x+1, \\sqrt{x}">')}
       <label class="field"><span>Mẫu có sẵn</span><select id="b-preset"><option value="">— chọn mẫu —</option>${PRESETS.map((p) => `<option value="${esc(p.expr)}">${esc(p.label)}</option>`).join('')}</select></label>
       <div class="grid2">${field('Khảo sát từ x =', '<input type="number" id="b-lo" placeholder="−∞">')}${field('đến x =', '<input type="number" id="b-hi" placeholder="+∞">')}</div>
       ${field('Ghi chú tập xác định (tùy chọn)', '<input type="text" id="b-domain" placeholder="vd. TXĐ: D = ℝ \\ {1}">')}</div>
@@ -50,7 +50,7 @@ export function mountFigures(root, io) {
         ${field('Ghi chú (tùy chọn)', '<input type="text" id="m-domain" placeholder="vd. TXĐ: D = ℝ \\ {1}">')}
         <div class="hint">Viết <b>-inf</b>, <b>+inf</b> cho ∞. Dòng y' có thể chỉ gồm các dấu (+ - +), hoặc xen kẽ dấu với <b>0</b> (cực trị) / <b>||</b> (không xác định), vd. <code>+ 0 - || -</code>. Ở dòng y, cột gián đoạn viết <b>trái|phải</b>, vd. <code>-inf|+inf</code>. Có thể dùng LaTeX như <code>\\frac{1}{2}</code>. Khoảng hàm không xác định ghi <b>//</b> ở dòng y' (được gạch chéo), vd. x: <code>-inf -2 2 +inf</code>, y': <code>- // +</code>, y: <code>0 +inf| |-inf 0</code> (bỏ trống phía không có giá trị). Mũi tên lên/xuống theo dấu của y'.</div>
       </div>`,
-    plot: () => `${field('Hàm số (mỗi dòng một hàm)', '<textarea id="p-expr" rows="2" spellcheck="false">x^3-3x+1</textarea>')}
+    plot: () => `${field('Hàm số (mỗi dòng một hàm; gõ thường hoặc LaTeX, vd. \\frac{x+1}{x-1})', '<textarea id="p-expr" rows="2" spellcheck="false">x^3-3x+1</textarea>')}
       <label class="field"><span>Mẫu có sẵn</span><select id="p-preset"><option value="">— chọn mẫu —</option>${PRESETS.map((p) => `<option value="${p.id}">${esc(p.label)}</option>`).join('')}</select></label>
       <div class="subhead">Khoảng giá trị trên các trục</div>
       <div class="grid2">${field('x nhỏ nhất', '<input type="number" id="p-xmin" value="-3" step="any">')}${field('x lớn nhất', '<input type="number" id="p-xmax" value="3" step="any">')}</div>

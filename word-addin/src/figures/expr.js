@@ -8,8 +8,48 @@ const FUNCS = {
 };
 const CONST = { pi: Math.PI, e: Math.E };
 
+/** Read a {...} group (or a single token) starting at i; returns [content, nextIndex]. */
+function group(t, i) {
+  while (t[i] === ' ') i++;
+  if (t[i] !== '{') { const m = /^(\\[a-zA-Z]+|[a-zA-Z0-9.])/.exec(t.slice(i)); return m ? [m[0], i + m[0].length] : ['', i]; }
+  let d = 0, j = i;
+  for (; j < t.length; j++) { if (t[j] === '{') d++; else if (t[j] === '}' && --d === 0) break; }
+  return [t.slice(i + 1, j), j + 1];
+}
+
+/** Turn LaTeX such as "\\frac{x^2-1}{x+1}" or "\\sqrt[3]{x}" into the plain syntax the parser reads. Plain input passes through unchanged. */
+export function latexToPlain(src) {
+  let t = String(src).trim();
+  if (!/[\\{}]/.test(t)) return t;
+  t = t.replace(/^\s*\$+|\$+\s*$/g, '').replace(/\\(?:left|right|big|Big|bigg|Bigg|displaystyle|,|;|!|quad|qquad)/g, '').replace(/\\[lr]vert/g, '|').replace(/^\s*(?:y|f\s*\(\s*x\s*\)|g\s*\(\s*x\s*\))\s*=/, '');
+  t = t.replace(/\\(?:mathrm|operatorname|text|mathit)\s*\{([^}]*)\}/g, '$1').replace(/\\cdot|\\times/g, '*').replace(/\\div/g, '/').replace(/\\pi\b/g, 'pi').replace(/\\(arcsin|arccos|arctan|sinh|cosh|tanh|sin|cos|tan|cot|sec|csc|ln|lg|exp)\b/g, '$1');
+  let guard = 0;
+  for (let m; guard++ < 200 && (m = /\\(?:d|t)?frac|\\sqrt|\\log|\\dfrac/.exec(t));) {
+    const i = m.index, name = m[0].replace(/^\\(d|t)/, '\\');
+    let k = i + m[0].length;
+    if (name === '\\frac' || name === 'frac') { const [a, j] = group(t, k); const [b, e] = group(t, j); t = t.slice(0, i) + `((${a})/(${b}))` + t.slice(e); }
+    else if (name === '\\sqrt') {
+      let n = null;
+      if (t[k] === '[') { const c = t.indexOf(']', k); n = t.slice(k + 1, c); k = c + 1; }
+      const [a, e] = group(t, k);
+      t = t.slice(0, i) + (n ? `((${a})^(1/(${n})))` : `sqrt(${a})`) + t.slice(e);
+    } else {   // \log, \log_{b} x, \log_b(x)
+      let b = null;
+      if (t[k] === '_') { [b, k] = group(t, k + 1); }
+      if (b === null) { t = t.slice(0, i) + 'lg' + t.slice(k); }
+      else {
+        let a, e;
+        if (t[k] === '(') { let d = 0, j = k; for (; j < t.length; j++) { if (t[j] === '(') d++; else if (t[j] === ')' && --d === 0) break; } a = t.slice(k + 1, j); e = j + 1; } else [a, e] = group(t, k);
+        t = t.slice(0, i) + `(ln(${a})/ln(${b}))` + t.slice(e);
+      }
+    }
+  }
+  t = t.replace(/\^\{([^{}]*)\}/g, '^($1)').replace(/_\{[^{}]*\}|_[a-zA-Z0-9]/g, '').replace(/[{}]/g, (c) => (c === '{' ? '(' : ')')).replace(/\\/g, '');
+  return t;
+}
+
 function tokenize(src) {
-  const s = src.replace(/\s+/g, '').replace(/[−–]/g, '-').replace(/×|·/g, '*').replace(/÷/g, '/').replace(/²/g, '^2').replace(/³/g, '^3').replace(/π/g, 'pi').replace(/√/g, 'sqrt');
+  const s = latexToPlain(src).replace(/\s+/g, '').replace(/[−–]/g, '-').replace(/×|·/g, '*').replace(/÷/g, '/').replace(/²/g, '^2').replace(/³/g, '^3').replace(/π/g, 'pi').replace(/√/g, 'sqrt');
   const out = [];
   for (let i = 0; i < s.length;) {
     const c = s[i];

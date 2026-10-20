@@ -125,11 +125,11 @@ export function layoutVariation(model, { width = 560, label = 'y', domain = '', 
       out[i] = { in: spanOf(i, tIn, -1), out: spanOf(i, tIn, 1) };
     }
   });
-  const gapX = 8 * k, gapY = 0.5 * bh3 + 7 * k;
+  const gapX = 7 * k;   // arrows start/end level with the middle of each value, just beside it
   segs.forEach((sg, i) => {
     if (!pos[i] || !out[i]?.out || !out[i + 1]?.in) return;
     const x1 = out[i].out[1] + gapX, x2 = out[i + 1].in[0] - gapX;
-    const y1 = pos[i][0] + (pos[i][0] === yTop ? gapY : -gapY), y2 = pos[i][1] + (pos[i][1] === yTop ? gapY : -gapY);
+    const y1 = pos[i][0], y2 = pos[i][1];
     if (x2 - x1 > 10) items.push({ t: 'line', x1, y1, x2, y2, w: 1.1, arrow: true });
   });
   if (domain) items.push({ t: 'text', s: domain, x: W / 2, y: H + 14, size: fs * 0.85, anchor: 'c' });

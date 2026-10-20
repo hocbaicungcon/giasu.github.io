@@ -57,7 +57,7 @@ export function plotFunctions(exprs, opts = {}) {
       px0 = x; py0 = y;
     }
     flush();
-    if (opts.legend && fs.length > 1) items.push({ t: 'label', latex: `y=${src}`, x: padL + 8, y: padT + 10 + k * 18, size: 12, anchor: 'l' });
+    if (opts.legend && fs.length > 1) items.push({ t: 'label', latex: `y=${String(src).replace(/^\s*(?:y|f\s*\(\s*x\s*\))\s*=/, '')}`, x: padL + 8, y: padT + 10 + k * 18, size: 12, anchor: 'l' });
   });
   // asymptotes and special points of the first function
   const { f } = fs[0];

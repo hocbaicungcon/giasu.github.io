@@ -2,22 +2,22 @@
 import { loadDocx, bodyPackage, documentXmlOf } from './fixture.js';
 import { corpusFiles } from './corpus.js';
 import { parseXml } from '../src/xml.js';
-import { childText, parseBody, analyze, normalize, shuffleVersion, paragraphText } from '../src/exam.js';
+import { childText, parseBody, analyze, normalize, shuffleVersion, paragraphText, prepareEnglish } from '../src/exam.js';
 
 const stats = { files: 0, checked: 0, problems: 0, skippedLarge: 0 };
 const problems = [];
 const objCount = (pkg) => (documentXmlOf(pkg).match(/<w:object\b|<m:oMath>|<w:drawing\b|<w:pict\b/g) || []).length;
-const textOf = (m) => m.blocks.map((b) => (b.kind === 'p' ? paragraphText(b) : '')).join('\n').replace(/[\s ]+/g, '').replace(/[A-D][.)]|[a-d]\)|(C[âa]u|B[àa]i)\d+[.:)]/gi, '').replace(/\d/g, '').split('').sort().join('');
+const textOf = (m) => m.blocks.map((b) => (b.kind === 'p' ? paragraphText(b) : '')).join('\n').replace(/[\s ]+/g, '').replace(/[A-D][.)]|[a-d]\)|(C[âa]u|B[àa]i|Question)\d+[.:)]/gi, '').replace(/\d/g, '').split('').sort().join('');
 const qkeys = (pkg) => {
   const m = parseBody(pkg), a = analyze(m);
-  return a.parts.flatMap((p) => p.questions.map((q) => (m.blocks.slice(q.start, q.end).map((b) => (b.kind === 'p' ? b.children.join('') : b.xml)).join('').match(/w14:anchorId="\w+"/g) || []).length + '|' + paragraphText(m.blocks[q.start]).replace(/^\s*(C[âa]u|B[àa]i)\s*\d+\s*[.:)]/i, '').trim() + '|' + (q.options || []).map((o) => o.content.map(childText).join('').replace(/\s/g, '')).sort().join('/'))).sort();
+  return a.parts.flatMap((p) => p.questions.map((q) => (m.blocks.slice(q.start, q.end).map((b) => (b.kind === 'p' ? b.children.join('') : b.xml)).join('').match(/w14:anchorId="\w+"/g) || []).length + '|' + paragraphText(m.blocks[q.start]).replace(/^\s*(C[âa]u|B[àa]i|Question)\s*\d+\s*[.:)]/i, '').trim() + '|' + (q.options || []).map((o) => o.content.map(childText).join('').replace(/\s/g, '')).sort().join('/'))).sort();
 };
 for (const f of corpusFiles()) {
   let docx; try { docx = loadDocx(f); } catch { continue; }
   stats.files++;
   if (docx.doc.length > 20e6) { stats.skippedLarge++; continue; }
   let pkg, a, m;
-  try { pkg = bodyPackage(docx); m = parseBody(pkg); a = analyze(m); } catch (e) { problems.push(`${f.split('/').pop()}: parse ${e.message}`); continue; }
+  try { pkg = prepareEnglish(bodyPackage(docx)).pkg; m = parseBody(pkg); a = analyze(m); } catch (e) { problems.push(`${f.split('/').pop()}: parse ${e.message}`); continue; }
   const ok = a.parts.flatMap((p) => (p.kind === 'mc' ? p.questions : [])).filter((q) => q.options && q.options.length === 4 && !q.flags.length);
   if (ok.length < 3) continue;
   stats.checked++;

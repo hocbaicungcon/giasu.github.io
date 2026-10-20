@@ -1,5 +1,5 @@
 import { answerXlsx, answerTsv } from '../src/xlsx.js';
-import { unansweredQuestions, parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody, prependToBody } from '../src/exam.js';
+import { prepareEnglish, unansweredQuestions, parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody, prependToBody } from '../src/exam.js';
 import { DEFAULT_FORM, examHeaderXml, examEndXml, examFooterXml, simplePackage } from '../src/exam-header.js';
 import { scanPackage } from '../src/ooxml.js';
 import { buildExamPptx, PPTX_THEMES } from '../src/pptx.js';
@@ -10,7 +10,7 @@ const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<
 
 export function mountExam(root, io) {
   root.innerHTML = `
-  <div class="notice">Nhận dạng: <b>PHẦN I/II/III</b>, <b>Câu N.</b>, phương án <b>A. B. C. D.</b>, ý <b>a) b) c) d)</b>. Đáp án đúng được nhận qua nhãn phương án <b>gạch chân / chữ đỏ / tô nổi</b>. Mọi thao tác ghi vào tài liệu chỉ chạy khi bạn bấm nút; hãy làm trên bản sao.</div>
+  <div class="notice">Nhận dạng: <b>PHẦN I/II/III</b>, <b>Câu N.</b> hoặc <b>Question N.</b> (đề tiếng Anh, tự nhận),phương án <b>A. B. C. D.</b>, ý <b>a) b) c) d)</b>. Đáp án đúng được nhận qua nhãn phương án <b>gạch chân / chữ đỏ / tô nổi</b>. Mọi thao tác ghi vào tài liệu chỉ chạy khi bạn bấm nút; hãy làm trên bản sao.</div>
   <fieldset><legend>1. Phân tích đề</legend>
     <div class="btns"><button class="primary" id="ex-analyze">Phân tích tài liệu</button></div>
     <div id="ex-summary" class="muted"></div>
@@ -34,6 +34,7 @@ export function mountExam(root, io) {
     <label><input type="checkbox" id="ex-shq" checked> trộn thứ tự câu trong từng phần</label>
     <label><input type="checkbox" id="ex-sho" checked> trộn thứ tự phương án A–D (giữ nguyên câu có “cả A và B…”, “tất cả các đáp án…”)</label>
     <label><input type="checkbox" id="ex-shs"> trộn cả thứ tự ý a) b) c) d) ở phần đúng sai</label>
+    <div id="ex-sections"></div>
     <label><input type="checkbox" id="ex-strip" checked> bỏ dấu đáp án (gạch chân/đỏ) khỏi đề trộn</label>
     <label><input type="checkbox" id="ex-withkey" checked> thêm bảng đáp án của mã đề vào cuối mỗi đề</label>
     <details class="mt-details" id="ex-form-box"><summary>Tiêu đề, chân trang, dòng HẾT (theo mẫu đề kiểm tra)</summary>
@@ -82,19 +83,38 @@ export function mountExam(root, io) {
   let lastVersions = null;   // [{code, answers}] of the latest "Tạo đề"
 
   async function body() { const { pkg } = await io.readBody(); return pkg; }
+  /** English papers pasted from PDF (tables, glued "Question N.", auto-lettered options) are read in a cleaned layout; the document itself is untouched. */
+  async function preparedBody() { const prep = prepareEnglish(await body()); return prep; }
+  const prepNote = (prep) => (prep.changed ? `<div class="muted">Đã tự chuẩn hóa bố cục trong bộ nhớ (${prep.stats.tables} bảng, ${prep.stats.split} chỗ tách, ${prep.stats.labels} nhãn A–D tự đánh số); tài liệu gốc không bị sửa. Bấm “Chuẩn hóa” nếu muốn ghi bố cục này vào tài liệu.</div>` : '');
   const chips = (list) => (list.length ? `<div class="chips-title">Câu chưa có đáp án — bấm để chuyển tới trong Word (${list.length}):</div><div class="chips">${list.map((q) => `<button type="button" class="chip" data-p="${q.paragraph}" title="Chuyển tới ${esc(q.label)} trong Word">${esc(q.label)}</button>`).join('')}</div>` : '');
   root.addEventListener('click', async (ev) => {
     const b = ev.target.closest('.chip');
     if (!b) return;
     try { await io.selectParagraph(Number(b.dataset.p)); } catch (e) { /* not inside Word */ }
   });
+  // ---- English exams ("Question N"): questions are grouped by instruction line / passage; each group can be shuffled or kept
+  const SEC_KIND = { independent: 'câu độc lập', passage: 'có đoạn văn', order: 'sắp xếp câu' };
+  let secState = { sig: '', modes: {} };
+  /** Shows the detected sections (English exams only) and returns the chosen mode per section index. */
+  function sectionsUi(a) {
+    const box = $('ex-sections');
+    if (!a.english) { box.innerHTML = ''; return undefined; }
+    const sig = a.sections.map((s) => `${s.firstNumber}-${s.lastNumber}:${s.kind}`).join('|');
+    if (sig !== secState.sig) secState = { sig, modes: Object.fromEntries(a.sections.map((s) => [s.index, s.mode])) };
+    const lost = a.expected > a.detected ? `<p class="bad">Chỉ nhận được ${a.detected}/${a.expected} câu “Question N” (các câu nằm trong bảng, dính liền đoạn khác hoặc có phương án đánh số tự động chưa đọc được). Không nên trộn đề này khi chưa sửa bố cục.</p>` : '';
+    box.innerHTML = `${lost}<div class="subhead">Đề tiếng Anh — ${a.sections.length} nhóm câu</div><div class="muted">Nhóm có đoạn văn / sắp xếp câu giữ thứ tự câu (số chỗ trống, câu a–e không lệch); phương án A–D vẫn được trộn.</div><ul class="sec-list">` +
+      a.sections.map((s) => `<li><span title="${esc(s.title)}">Question ${s.firstNumber}${s.lastNumber !== s.firstNumber ? '–' + s.lastNumber : ''} · ${SEC_KIND[s.kind]}</span>` +
+        `<select data-sec="${s.index}"><option value="shuffle"${secState.modes[s.index] === 'shuffle' ? ' selected' : ''}>trộn câu</option><option value="keep"${secState.modes[s.index] === 'keep' ? ' selected' : ''}>giữ thứ tự câu</option></select></li>`).join('') + '</ul>';
+    box.querySelectorAll('select[data-sec]').forEach((sel) => sel.addEventListener('change', () => { secState.modes[sel.dataset.sec] = sel.value; }));
+    return secState.modes;
+  }
   const fail = (el, e) => { el.innerHTML = `<span class="bad">Lỗi: ${esc(e.message || e)}</span>`; };
 
   $('ex-analyze').addEventListener('click', async () => {
     try {
       $('ex-summary').textContent = 'Đang đọc…';
-      const pkg = await body();
-      const model = parseBody(pkg);
+      const prep = await preparedBody();
+      const model = parseBody(prep.pkg);
       const a = analyze(model);
       const ans = answersOf(model, a);
       const lines = a.parts.map((p) => {
@@ -103,7 +123,8 @@ export function mountExam(root, io) {
         return `<li><b>${esc(p.title.slice(0, 70) || '(đầu đề)')}</b> — ${p.kind === 'mc' ? 'nhiều phương án' : p.kind === 'tf' ? 'đúng/sai' : p.kind === 'short' ? 'trả lời ngắn' : 'khác'}: ${p.questions.length} câu` +
           `${p.kind === 'mc' ? `, nhận đáp án ${marked}/${p.questions.length}` : ''}${flagged ? `, <span class="warn">${flagged} câu cần chú ý</span>` : ''}</li>`;
       });
-      $('ex-summary').innerHTML = a.parts.length ? `<ul>${lines.join('')}</ul>${chips(unansweredQuestions(model, a))}` : '<span class="warn">Không thấy “Câu N.” nào.</span>';
+      sectionsUi(a);
+      $('ex-summary').innerHTML = a.parts.length ? `${a.english ? '<div class="ok">Nhận ra đề tiếng Anh (Question N) — xem các nhóm câu ở mục 3.</div>' : ''}${prepNote(prep)}<ul>${lines.join('')}</ul>${prep.changed ? '' : chips(unansweredQuestions(model, a))}` : '<span class="warn">Không thấy “Câu N.” / “Question N.” nào.</span>';
     } catch (e) { fail($('ex-summary'), e); }
   });
 
@@ -148,13 +169,15 @@ export function mountExam(root, io) {
   $('ex-shuffle').addEventListener('click', async () => {
     const out = $('ex-shuffle-out'), bar = $('ex-progress');
     try {
-      const pkg = await body();
+      const prep = await preparedBody(), pkg = prep.pkg;
       const n = Number($('ex-n').value), first = Number($('ex-code').value), seed = Number($('ex-seed').value);
       const target = $('ex-target').value;
+      const origA = analyze(parseBody(pkg));
+      const sectionModes = sectionsUi(origA), qWord = origA.english ? 'Question' : 'Câu';
       const versions = [];
       for (let i = 0; i < n; i++) {
         const code = String(first + i);
-        const r = shuffleVersion(pkg, { ...options(), seed: seed + i * 7919, code });
+        const r = shuffleVersion(pkg, { ...options(), seed: seed + i * 7919, code, sectionModes });
         versions.push({ code, ...r });
         bar.hidden = false; bar.max = n; bar.value = i + 1;
       }
@@ -175,7 +198,7 @@ export function mountExam(root, io) {
         let opened = 0, fellBack = false;
         for (const v of versions) {
           const paper = decorate(v.pkg, v.code);
-          const finalPkg = $('ex-withkey').checked ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`)) : paper;
+          const finalPkg = $('ex-withkey').checked ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`, qWord)) : paper;
           try { await io.openAsNewDocument(finalPkg, { footerPkg: $('ex-h-footer').checked ? simplePackage(examFooterXml(v.code)) : null }); opened++; } catch (e) { await io.insertAtEnd(finalPkg); fellBack = true; }
         }
         note = fellBack ? `Word này không cho tạo tài liệu mới từ add-in: đã chèn ${versions.length - opened} đề vào cuối tài liệu hiện tại (mở ${opened} tài liệu mới).` : `Đã mở ${versions.length} tài liệu mới.`;
@@ -185,11 +208,12 @@ export function mountExam(root, io) {
       }
       const warns = [...new Set(versions.flatMap((v) => [
         ...(v.report.sharedParts.length ? [`Không trộn thứ tự câu ở: ${v.report.sharedParts.join('; ')} (có câu dùng chung dữ kiện)`] : []),
+        ...(v.report.keptSections.length ? [`Giữ nguyên thứ tự câu ở: ${v.report.keptSections.join(', ')}`] : []),
         ...(v.report.pinnedQuestions.length ? [`Giữ nguyên phương án các câu: ${[...new Set(v.report.pinnedQuestions)].join(', ')}`] : []),
         ...v.report.notes]))];
       const origModel = parseBody(pkg);
-      const unansweredChips = chips(unansweredQuestions(origModel, analyze(origModel)));
-      out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>${unansweredChips}` : '') +
+      const unansweredChips = chips(unansweredQuestions(origModel, origA));
+      out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + prepNote(prep) + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>${prep.changed ? '' : unansweredChips}` : '') +
         (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : '') +
         `<div class="scroll"><table><tbody>${table.groups.filter((g) => g.kind === 'mc').map((g) => `<tr><td><b>${esc(g.code)}</b></td><td>${g.items.map((i) => `${i.number}${esc(i.value ?? '?')}`).join(' ')}</td></tr>`).join('')}</tbody></table></div>`;
     } catch (e) { fail(out, e); }
@@ -198,12 +222,11 @@ export function mountExam(root, io) {
   $('ex-key').addEventListener('click', async () => {
     const out = $('ex-shuffle-out');
     try {
-      const pkg = await body();
-      const model = parseBody(pkg);
+      const model = parseBody((await preparedBody()).pkg);
       const answers = answersOf(model, analyze(model));
       const table = answerTable([{ code: '', answers }]);
       lastCsv = table.csv; $('ex-copy').disabled = false;
-      await io.insertAtEnd(wrap(answerTableXml(table.groups)));
+      await io.insertAtEnd(wrap(answerTableXml(table.groups, 'BẢNG ĐÁP ÁN', analyze(model).english ? 'Question' : 'Câu')));
       out.innerHTML = '<span class="ok">Đã chèn bảng đáp án vào cuối tài liệu.</span>';
     } catch (e) { fail(out, e); }
   });
@@ -294,9 +317,9 @@ export function mountExam(root, io) {
       const srcCode = $('ex-pptx-source')?.value;
       if (srcCode && srcCode !== 'current' && lastVersions) {
         const found = lastVersions.versions.find((v) => v.code === srcCode);
-        pkg = found ? found.pkg : await body();
+        pkg = found ? found.pkg : (await preparedBody()).pkg;
       } else {
-        pkg = await body();
+        pkg = (await preparedBody()).pkg;
       }
 
       const model = parseBody(pkg);

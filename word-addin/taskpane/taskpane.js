@@ -17,6 +17,7 @@ function switchTab(name) {
   if (!b) return;
   document.querySelectorAll('nav button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
   document.querySelectorAll('section').forEach((s) => s.classList.toggle('active', s.id === 'tab-' + name));
+  try { b.scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch { /* old web view */ }
   if (name === 'figures' && !state.figuresLoaded) {
     state.figuresLoaded = true;
     import('./figures-ui.js').then((m) => m.mountFigures($('figures-root'), io)).catch((e) => { $('figures-root').textContent = 'Không tải được mô-đun hình vẽ: ' + e.message; });
@@ -55,6 +56,9 @@ document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click
   switchTab(b.dataset.tab);
 }));
 window.addEventListener('hashchange', checkUrlTab);
+// Mouse wheel scrolls the tab strip sideways (Windows has no horizontal wheel).
+document.querySelector('nav').addEventListener('wheel', (e) => { if (e.deltaY) { e.currentTarget.scrollLeft += e.deltaY; e.preventDefault(); } }, { passive: false });
+if (window.__texcraftLoaded) window.__texcraftLoaded();
 
 // After any write: previews are stale, and "restore" is only safe while paragraph numbering is unchanged.
 function afterWrite(res, backup) {
