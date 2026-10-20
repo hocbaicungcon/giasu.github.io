@@ -477,7 +477,6 @@ fieldset { min-width: 0; }
   table { font-size: 11px; }
 }
 @media (max-width: 340px) {
-  .editor-toolbar .tb-tab .tb-tab-label { display: none !important; }
   .seg-opt span { padding: 5px 7px; }
 }
 
@@ -580,11 +579,10 @@ details.mt-details > summary { cursor: pointer; font-size: 12px; font-weight: 60
 .fig-kind-row select { text-overflow: ellipsis; }
 .fig-opts .mt-settings { display: block; }
 
-/* Symbol palette: group names always visible (wrapped chips), buttons drawn by KaTeX */
-.editor-toolbar .tb-tabs { flex-wrap: wrap; overflow: visible; gap: 4px; padding: 6px; border-bottom: 1px solid var(--line); }
-.editor-toolbar .tb-tab { border: 1px solid var(--line); border-radius: 14px; padding: 3px 9px; font-size: 12px; background: var(--bg); }
-.editor-toolbar .tb-tab.active { background: color-mix(in srgb, var(--accent) 14%, transparent); border-color: var(--accent); }
-.editor-toolbar .tb-tab .tb-tab-label { display: inline !important; }
+/* Symbol palette: tabs - only the active group shows its name, the others shrink to their icon (the name is in the tooltip) */
+.editor-toolbar .tb-tabs { flex-wrap: nowrap; overflow-x: auto; gap: 2px; padding: 4px 4px 0; }
+.editor-toolbar .tb-tab { padding: 5px 8px; }
+.editor-toolbar .tb-tab:not(.active) .tb-tab-label { display: none; }
 .editor-toolbar .tb-tab-icon { height: auto; }
 .editor-toolbar .tb-tab-icon .tb-math .katex { font-size: 0.95em; }
 .tb-math { display: inline-flex; align-items: center; line-height: 1; max-width: 100%; overflow: visible; }
@@ -602,3 +600,14 @@ details.mt-details > summary { cursor: pointer; font-size: 12px; font-weight: 60
 math-field { display: block; width: 100%; box-sizing: border-box; min-height: 64px; padding: 8px 10px; font-size: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); --caret-color: var(--accent); --selection-background-color: color-mix(in srgb, var(--accent) 30%, transparent); --placeholder-color: var(--muted); --contains-highlight-background-color: color-mix(in srgb, var(--accent) 14%, transparent); }
 math-field:focus-within { border-color: var(--accent); box-shadow: var(--focus-ring); outline: none; }
 math-field::part(virtual-keyboard-toggle), math-field::part(menu-toggle) { display: none; }
+
+/* MathLive command suggestions (popup while typing \command in the visual editor): compact */
+body #mathlive-suggestion-popover { max-width: min(260px, 94vw); border-radius: 6px; font-size: 12px; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+body #mathlive-suggestion-popover.top-tip::after, body #mathlive-suggestion-popover.bottom-tip::after { border-left-width: 7px; border-right-width: 7px; left: calc(50% - 7px); }
+body #mathlive-suggestion-popover.top-tip::after { top: -7px; border-bottom-width: 7px; }
+body #mathlive-suggestion-popover.bottom-tip::after { bottom: -7px; border-top-width: 7px; }
+body #mathlive-suggestion-popover ul { max-height: 170px; }
+body #mathlive-suggestion-popover li { margin: 2px 3px; padding: 2px 6px; width: calc(100% - 6px); column-gap: .6em; border-radius: 4px; align-items: center; }
+body #mathlive-suggestion-popover .ML__popover__command { font-size: 1.05rem; }
+body #mathlive-suggestion-popover .ML__popover__latex { font-size: 11px; }
+body #mathlive-suggestion-popover .ML__popover__keybinding { font-size: 10px; }

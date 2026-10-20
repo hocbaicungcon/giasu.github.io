@@ -29,6 +29,10 @@ function switchTab(name) {
     state.calcLoaded = true;
     import('./calc-ui.js').then((m) => m.mountCalc($('calc-root'), io, { openEditor: (latex) => { $('editor-latex').value = latex; switchTab('editor'); renderEditorPreview(); } })).catch((e) => { $('calc-root').textContent = 'Không tải được mô-đun tính toán: ' + e.message; });
   }
+  if (name === 'lms' && !state.lmsLoaded) {
+    state.lmsLoaded = true;
+    import('./lms-ui.js').then((m) => m.mountLms($('lms-root'), io)).catch((e) => { $('lms-root').textContent = 'Không tải được mô-đun LMS: ' + e.message; });
+  }
   if (name === 'exam' && !state.examLoaded) {
     state.examLoaded = true;
     import('./exam-ui.js').then((m) => m.mountExam($('exam-root'), io)).catch((e) => { $('exam-root').textContent = 'Không tải được mô-đun đề thi: ' + e.message; });

@@ -31,6 +31,9 @@ Add-in được xây dựng cho Microsoft Word (chạy trên Word Windows, Word 
    - **Đồ thị hàm số**: Đặt khoảng trục, ẩn/hiện lưới tọa độ, tiệm cận, điểm cực trị.
    - **Miền nghiệm hệ bất phương trình**: Gạch sọc hoặc tô màu miền nghiệm, nhãn đỉnh tự động tránh đè nhau.
    - **Hình học không gian & hình học phẳng chuẩn GDPT Việt Nam**: Tam giác, đường tròn, tứ giác, hình chóp (S.ABCD, S.ABC, chóp có cạnh vuông góc đáy), lăng trụ, hình hộp, hình lập phương, nón, trụ, cầu, hệ trục tọa độ $Oxyz$.
+   - **Hình vẽ môn Hóa học** (`src/figures/chem.js`): dụng cụ thí nghiệm (ống nghiệm, cốc, bình tam giác, bình cầu, ống đong, phễu, đèn cồn), bộ dụng cụ (điều chế khí thu bằng đẩy nước / đẩy không khí, lọc, chưng cất), sơ đồ phân tử (công thức cấu tạo hoặc mô hình quả cầu – que: H₂O, CO₂, NH₃, CH₄, C₂H₄, C₂H₂, C₆H₆, C₂H₅OH…), mô hình nguyên tử Bo (Z = 1–20).
+   - **Hình vẽ môn Vật lí** (`src/figures/physics.js`): con lắc đơn, con lắc lò xo, mặt phẳng nghiêng và vectơ lực (P, N, F, Fms, phân tích lực), quả cân, xe mô hình, ròng rọc, đòn bẩy, mạch điện (nối tiếp/song song, ampe kế, vôn kế), thấu kính hội tụ/phân kì với ba tia đặc biệt và nhận xét ảnh.
+   - **Hình vẽ môn Sinh học** (`src/figures/bio.js`): mô hình ADN (xoắn kép, dạng thang với mạch bổ sung), tế bào động vật / thực vật / vi khuẩn, nhiễm sắc thể, sơ đồ mũi tên (chuỗi thức ăn, ADN → ARN → Prôtêin), tháp sinh thái, bảng Punnett (tự tính kiểu gen, kiểu hình).
    - Xuất sang Word dưới dạng **Hình vẽ chỉnh sửa được** (DrawingML nhóm vector kết hợp hộp chữ công thức) hoặc ảnh PNG chất lượng cao.
 
 4. **Phiếu bài tập tiểu học (`tab-worksheet`, `taskpane/worksheet-ui.js`, `src/worksheet-docx.js`)**:
@@ -92,7 +95,7 @@ word-addin/
 │   ├── xlsx.js            # Bộ tạo bảng tính Excel .xlsx thuần JS
 │   ├── answer-qr.js       # Sinh mã QR đáp án cho hệ thống chấm thi
 │   ├── word-io.js         # Lớp trừu tượng tương tác với Office.js API
-│   └── figures/           # Bộ sinh hình vẽ toán học (BBT, hàm số, hình học, miền nghiệm)
+│   └── figures/           # Bộ sinh hình vẽ (BBT, hàm số, hình học, miền nghiệm, Hóa – Lý – Sinh)
 ├── taskpane/              # Giao diện người dùng Add-in (HTML, CSS, JS, Assets)
 │   ├── taskpane.html      # Trang giao diện chính
 │   ├── taskpane.css       # Style giao diện (hỗ trợ responsive pane hẹp)

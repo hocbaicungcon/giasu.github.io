@@ -1,6 +1,6 @@
 // Service worker: keeps the add-in (pages, scripts, icons, KaTeX, QR libraries) and the big CDN files it needs
 // (Office.js, Pyodide/SymPy) for about 30 days, so it opens without a network. Generated into sw.js by tools/build-sw.mjs.
-const VERSION = '8a04ae55b9';
+const VERSION = '9f339f19f1';
 const CACHE = 'texcraft-app-' + VERSION, RUNTIME = 'texcraft-runtime', META = 'texcraft-meta';
 const MAX_AGE = 30 * 24 * 3600 * 1000;
 const FILES = [
@@ -13,16 +13,21 @@ const FILES = [
  "./src/exam.js",
  "./src/figures/analysis.js",
  "./src/figures/bbt.js",
+ "./src/figures/bio.js",
+ "./src/figures/chem.js",
  "./src/figures/expr.js",
  "./src/figures/geometry.js",
+ "./src/figures/physics.js",
  "./src/figures/plot.js",
  "./src/figures/region.js",
  "./src/figures/scene.js",
+ "./src/figures/sci-kit.js",
  "./src/figures/svgkit.js",
  "./src/katex-render.js",
  "./src/latex-dict.js",
  "./src/latex-suggest.js",
  "./src/latex2omml.js",
+ "./src/lms.js",
  "./src/mathrender.js",
  "./src/mathtype-object.js",
  "./src/mathtype-template.js",
@@ -156,6 +161,7 @@ const FILES = [
  "./taskpane/katex/katex.min.css",
  "./taskpane/katex/katex.min.js",
  "./taskpane/latex-autocomplete.js",
+ "./taskpane/lms-ui.js",
  "./taskpane/mt-settings.js",
  "./taskpane/qr-bidv.jpg",
  "./taskpane/taskpane.css",

@@ -206,6 +206,72 @@ test('Solids: hidden (dashed) edges are exactly the ones behind the front faces'
   assert.equal(dashed(g.prism({ kind: 'triangle' })), 3);                  // CA, CB, CC'
   assert.equal(dashed(g.pyramid({ base: 'quad', apex: 'center' })), 3);    // DA, DC, SD
 });
+test('Science figures: every figure and variant builds a valid scene, SVG and Word shapes', async () => {
+  const { CHEMISTRY } = await import('../src/figures/chem.js');
+  const { PHYSICS } = await import('../src/figures/physics.js');
+  const { BIOLOGY } = await import('../src/figures/bio.js');
+  const { sceneToPackage } = await import('../src/figures/scene.js');
+  const { parseXml } = await import('../src/xml.js');
+  let n = 0;
+  for (const g of [...CHEMISTRY, ...PHYSICS, ...BIOLOGY]) {
+    const selects = g.options.filter((o) => Array.isArray(o[2])), flags = g.options.filter((o) => !o[2]);
+    const variants = [{}];
+    for (const [key, , choices] of selects) for (const [v] of choices) variants.push({ [key]: v });
+    for (const base of variants) for (const on of [true, false]) {
+      const o = { ...base }; flags.forEach(([k]) => { o[k] = on; });
+      const r = g.make(o);
+      assert.ok(r.width > 50 && r.height > 50 && r.scene.items.length > 1, `${g.id} ${JSON.stringify(o)}`);
+      assert.ok(!/NaN|Infinity|undefined/.test(r.svg), `${g.id} ${JSON.stringify(o)} has bad numbers`);
+      parseXml(r.svg);
+      if (n++ % 7 === 0) parseXml(sceneToPackage(r.scene, { name: g.id, alt: g.id }));
+    }
+  }
+  assert.ok(n > 100);
+});
+test('Science figures: thin lens, Punnett square, DNA, atom shells', async () => {
+  const { lens, imageDistance } = await import('../src/figures/physics.js');
+  const { punnettTable, complement, offspring } = await import('../src/figures/bio.js');
+  const { shells } = await import('../src/figures/chem.js');
+  assert.equal(imageDistance(30, 10), 15);
+  const real = lens({ kind: 'converging', d: 30, f: 10 }).image;
+  assert.ok(!real.virtual && real.inverted && Math.abs(real.magnification + 0.5) < 1e-9);
+  const virt = lens({ kind: 'converging', d: 5, f: 10 }).image;
+  assert.ok(virt.virtual && !virt.inverted && virt.magnification > 1);
+  const div = lens({ kind: 'diverging', d: 20, f: 10 }).image;
+  assert.ok(div.virtual && !div.inverted && Math.abs(div.magnification) < 1);
+  assert.throws(() => lens({ kind: 'converging', d: 10, f: 10 }), /tiêu điểm/);
+  const t = punnettTable('A,a', 'A,a');
+  assert.deepEqual(t.genotypes, [['AA', 1], ['Aa', 2], ['aa', 1]]);
+  assert.deepEqual(t.phenotypes, [['A-', 3], ['aa', 1]]);
+  assert.equal(offspring('AB', 'ab'), 'AaBb');
+  assert.equal(punnettTable('AB,Ab,aB,ab', 'AB,Ab,aB,ab').grid.flat().length, 16);
+  assert.deepEqual(punnettTable('AB,Ab,aB,ab', 'AB,Ab,aB,ab').phenotypes.map((x) => x[1]), [9, 3, 3, 1]);
+  assert.equal(complement('ATGXC'), 'TAXGG');
+  assert.deepEqual(shells(11), [2, 8, 1]);
+  assert.deepEqual(shells(20), [2, 8, 8, 2]);
+});
+test('LMS export: questions with LaTeX maths, answers from marks, self-contained interactive page', async () => {
+  const { extractQuiz, buildQuizHtml } = await import('../src/lms.js');
+  const q = extractQuiz(fixture);
+  assert.ok(q.questions.length >= 10);
+  const first = q.questions[0];
+  assert.equal(first.kind, 'mc');
+  assert.equal(first.options.length, 4);
+  assert.ok(/\\\(.+\\\)/.test(first.stem) && !/Câu\s*1\b/.test(first.stem), 'maths as \\( \\) and the label is stripped');
+  assert.ok(first.options.every((o, i) => o.letter === 'ABCD'[i] && o.html && !/^\s*[A-D]\s*[.)]/.test(o.html)));
+  const html = buildQuizHtml({ questions: [{ ...first, answer: 'B' }] }, { title: 'Thử <b>', mode: 'test', minutes: 5 });
+  const data = JSON.parse(/<script type="application\/json" id="quiz-data">([\s\S]*?)<\/script>/.exec(html)[1]);
+  assert.equal(data.questions[0].answer, 'B');
+  assert.equal(data.minutes, 5);
+  assert.ok(!html.includes('Thử <b>') && html.includes('Thử &lt;b&gt;'));
+  new Function(/<script>([\s\S]*?)<\/script>\s*<\/body>/.exec(html)[1]);   // the page script parses
+});
+test('Exam header: narrow code box, school name fits its column', async () => {
+  const { examHeaderXml } = await import('../src/exam-header.js');
+  const x = examHeaderXml({}, '2701');
+  assert.ok(x.includes('w:w="2350"') && x.includes('w:w="2650"'), 'left/right columns 47/53');
+  assert.ok(x.includes('w:w="1000"'), 'code box column is 20 %');
+});
 test('Worksheet: generated sheets become well-formed Word body with maths, answers and emoji', async () => {
   await import('../taskpane/vendor/worksheet.js');
   const W = globalThis.Worksheet;

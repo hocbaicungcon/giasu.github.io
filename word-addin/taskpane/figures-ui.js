@@ -3,6 +3,9 @@ import { variationTable, manualVariationTable } from '../src/figures/bbt.js';
 import { plotFunctions, PRESETS } from '../src/figures/plot.js';
 import { regionFigure } from '../src/figures/region.js';
 import { GEOMETRY } from '../src/figures/geometry.js';
+import { CHEMISTRY } from '../src/figures/chem.js';
+import { PHYSICS } from '../src/figures/physics.js';
+import { BIOLOGY } from '../src/figures/bio.js';
 import { sceneToPackage } from '../src/figures/scene.js';
 import { mountMtSettings, figurePt } from './mt-settings.js';
 import { makePicturePackage, svgToPngPx, downloadBlob } from '../src/picture.js';
@@ -13,12 +16,14 @@ const sw = (id, label, checked = false) => `<label class="switch"><input type="c
 const field = (label, inner) => `<label class="field"><span>${label}</span>${inner}</label>`;
 
 export function mountFigures(root, io) {
-  const kinds = [['bbt', 'Bảng biến thiên'], ['plot', 'Đồ thị'], ['region', 'Miền nghiệm'], ['geo', 'Hình học']];
+  const kinds = [['bbt', 'Bảng biến thiên'], ['plot', 'Đồ thị'], ['region', 'Miền nghiệm'], ['geo', 'Hình học'], ['chem', 'Hóa học'], ['phys', 'Vật lí'], ['bio', 'Sinh học']];
+  const CATALOGS = { geo: GEOMETRY, chem: CHEMISTRY, phys: PHYSICS, bio: BIOLOGY };
   root.innerHTML = `
     <div class="grid2 fig-kind-row"><label class="field fig-kind"><span>Loại hình</span><select id="fig-kind">${kinds.map(([id, l]) => `<option value="${id}">${l}</option>`).join('')}</select></label><div id="fig-sub"></div></div>
     <div id="fig-form"></div>
     <div id="fig-error" class="bad"></div>
     <div class="fig-preview" id="fig-preview"></div>
+    <div class="hint" id="fig-note"></div>
     <div class="grid2 fig-opts">
       <div id="fig-size"></div>
       <label class="field"><span>Kiểu hình sửa được</span><select id="fig-float"><option value="float">Hình nổi</option><option value="inline">Cùng dòng chữ</option></select></label>
@@ -57,20 +62,28 @@ export function mountFigures(root, io) {
       <div class="grid2">${field('x nhỏ nhất', '<input type="number" id="r-xmin" placeholder="tự động" step="any">')}${field('x lớn nhất', '<input type="number" id="r-xmax" placeholder="tự động" step="any">')}</div>
       <div class="grid2">${field('y nhỏ nhất', '<input type="number" id="r-ymin" placeholder="tự động" step="any">')}${field('y lớn nhất', '<input type="number" id="r-ymax" placeholder="tự động" step="any">')}</div>
       ${sw('r-grid', 'Hiện lưới', true)}${sw('r-vertices', 'Ghi tên và tọa độ các đỉnh', true)}${sw('r-lines', 'Ghi tên các đường thẳng (d₁), (d₂)…', true)}`,
-    geo: () => `<label class="field sub-field"><span>Hình</span><select id="g-kind">${GEOMETRY.map((g) => `<option value="${g.id}">${esc(g.label)}</option>`).join('')}</select></label><div id="g-opts"></div>`,
   };
+  for (const [k, cat] of Object.entries(CATALOGS)) forms[k] = () => `<label class="field sub-field"><span>Hình</span><select id="g-kind">${cat.map((g) => `<option value="${g.id}">${esc(g.label)}</option>`).join('')}</select></label><div id="g-opts"></div>`;
 
+  // One option of a catalogue figure: [key, label, choices?, default?]. choices: array -> list, {num:[min,max,def,step]} -> number, {text:def} -> text; none -> switch.
+  function optionHtml([key, label, ch, def]) {
+    if (Array.isArray(ch)) return field(label, `<select data-opt="${key}">${ch.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('')}</select>`);
+    if (ch && ch.num) { const [min, max, val, step] = ch.num; return field(label, `<input type="number" data-opt="${key}" min="${min}" max="${max}" step="${step || 1}" value="${val}">`); }
+    if (ch && 'text' in ch) return field(label, `<input type="text" data-opt="${key}" value="${esc(ch.text)}" spellcheck="false">`);
+    return sw('go-' + key, label, def ?? (kind === 'geo' ? /^show/.test(key) : true));
+  }
   function geoOptions() {
-    const g = GEOMETRY.find((x) => x.id === $('g-kind').value);
-    const choices = g.options.filter((o) => o[2]), flags = g.options.filter((o) => !o[2]);
+    const g = CATALOGS[kind].find((x) => x.id === $('g-kind').value);
+    const selects = g.options.filter((o) => Array.isArray(o[2])), others = g.options.filter((o) => o[2] && !Array.isArray(o[2])), flags = g.options.filter((o) => !o[2]);
     const hint = g.names ? (g.hint ? `<div class="hint">${esc(g.hint)}</div>` : '') : '';
     $('g-opts').innerHTML =
-      (choices.length ? `<div class="grid2 g-choices">${choices.map(([key, label, ch]) => field(label, `<select data-opt="${key}">${ch.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('')}</select>`)).join('')}</div>` : '') +
-      (g.names ? field('Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names)}" spellcheck="false" placeholder="${esc(g.names)}">`) + hint : '') +
-      (flags.length ? `<div class="sw-grid">${flags.map(([key, label]) => sw('go-' + key, label, /^show/.test(key))).join('')}</div>` : '');
+      (selects.length ? `<div class="grid2 g-choices">${selects.map(optionHtml).join('')}</div>` : '') +
+      (others.length ? `<div class="${others.length > 1 ? 'grid2' : ''}">${others.map(optionHtml).join('')}</div>` : '') +
+      (g.names || g.namesLabel ? field(g.namesLabel || 'Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names || '')}" spellcheck="false" placeholder="${esc(g.names || '')}">`) + hint : '') +
+      (flags.length ? `<div class="sw-grid">${flags.map(optionHtml).join('')}</div>` : '');
     $('g-opts').querySelectorAll('input,select').forEach((el) => el.addEventListener('input', schedule));
     // default point names follow the chosen variant; a list the user has edited is kept
-    const NAMES = {
+    const NAMES = kind !== 'geo' ? null : {
       pyramid: { opt: 'base', tri: 'S,A,B,C', quad: 'S,A,B,C,D' },
       prism: { opt: 'kind', triangle: "A,B,C,A',B',C'", box: "A,B,C,D,A',B',C',D'", cube: "A,B,C,D,A',B',C',D'" },
       round: { opt: 'kind', cone: 'S,O,A', cylinder: "O,O',A", frustum: "O,O'", sphere: 'O,A' },
@@ -100,16 +113,16 @@ export function mountFigures(root, io) {
       if (r.empty) throw new Error('Hệ bất phương trình vô nghiệm (miền nghiệm rỗng) trong khung nhìn này.');
       return r;
     }
-    const g = GEOMETRY.find((x) => x.id === $('g-kind').value);
+    const g = CATALOGS[kind].find((x) => x.id === $('g-kind').value);
     const o = { names: $('g-names') ? $('g-names').value : '' };
-    $('g-opts').querySelectorAll('select[data-opt]').forEach((s) => { o[s.dataset.opt] = s.value; });
+    $('g-opts').querySelectorAll('[data-opt]').forEach((s) => { o[s.dataset.opt] = s.value; });
     $('g-opts').querySelectorAll('input[id^="go-"]').forEach((c) => { o[c.id.slice(3)] = c.checked; });
     return g.make(o);
   }
   async function render() {
     $('fig-error').textContent = '';
     if (kind === 'bbt') fontPt = await figurePt();
-    try { current = build(); $('fig-preview').innerHTML = current.svg; } catch (e) { current = null; $('fig-error').textContent = e.message; }
+    try { current = build(); $('fig-preview').innerHTML = current.svg; $('fig-note').textContent = current.note || ''; } catch (e) { current = null; $('fig-note').textContent = ''; $('fig-error').textContent = e.message; }
     ['fig-insert', 'fig-png', 'fig-dl-png', 'fig-dl-svg'].forEach((id) => { $(id).disabled = !current; });
   }
   function schedule() { clearTimeout(timer); timer = setTimeout(render, 250); }
@@ -122,7 +135,7 @@ export function mountFigures(root, io) {
     $('fig-sub').innerHTML = '';
     const sub = $('fig-form').querySelector('.sub-field'); if (sub) $('fig-sub').appendChild(sub);   // the variant select shares a row with the figure type
     $('fig-form').querySelectorAll('input,textarea,select').forEach((el) => el.addEventListener('input', schedule));
-    if (k === 'geo') { $('g-kind').addEventListener('change', () => { geoOptions(); render(); }); geoOptions(); }
+    if (CATALOGS[k]) { $('g-kind').addEventListener('change', () => { geoOptions(); render(); }); geoOptions(); }
     if (k === 'bbt') $('b-mode').addEventListener('change', () => { const m = $('b-mode').value === 'manual'; $('b-auto').hidden = m; $('b-manual').hidden = !m; render(); });
     if (k === 'bbt') $('b-preset').addEventListener('change', () => { if ($('b-preset').value) { $('b-expr').value = $('b-preset').value; render(); } });
     if (k === 'plot') $('p-preset').addEventListener('change', () => {
@@ -135,7 +148,7 @@ export function mountFigures(root, io) {
   }
   $('fig-kind').addEventListener('change', () => show($('fig-kind').value));
 
-  const title = () => ({ bbt: 'Bảng biến thiên', plot: 'Đồ thị hàm số', region: 'Miền nghiệm', geo: 'Hình học' }[kind]);
+  const title = () => (CATALOGS[kind] ? (CATALOGS[kind].find((x) => x.id === $('g-kind').value)?.label || 'Hình vẽ') : { bbt: 'Bảng biến thiên', plot: 'Đồ thị hàm số', region: 'Miền nghiệm' }[kind]);
   $('fig-insert').addEventListener('click', async () => {
     try { await io.replaceSelection(sceneToPackage(current.scene, { name: title(), alt: title(), float: $('fig-float').value === 'float' })); $('fig-out').innerHTML = '<span class="ok">Đã chèn vào Word tại con trỏ (hình sửa được).</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
   });

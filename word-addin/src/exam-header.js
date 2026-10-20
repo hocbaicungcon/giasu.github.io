@@ -33,7 +33,7 @@ export function examHeaderXml(form = {}, code = '') {
   const f = { ...DEFAULT_FORM, ...form };
   const left = [
     p(run(f.soGd), { jc: 'center' }),
-    p(run(f.truong, { b: true }), { jc: 'center' }),
+    p(run(f.truong, { b: true, sz: 24 }), { jc: 'center' }),
     p(run(f.chinhThuc), { jc: 'center', ind: 700, border: bdr('top') }),
     p(run('(Đề kiểm tra có ', { i: true }) + field('NUMPAGES', '1', { i: true }) + run(' trang)', { i: true }), { jc: 'center' }),
   ].join('');
@@ -43,13 +43,13 @@ export function examHeaderXml(form = {}, code = '') {
     p(run('Môn ' + dots(f.mon, '……..'), { b: true }) + run('; Lớp: ' + dots(f.lop, '.....'), { b: true, color: 'FF0000' }), { jc: 'center' }),
     p(run('Thời gian làm bài: ' + dots(f.thoiGian, '…..') + ' phút', { i: true }), { jc: 'center', ind: 500, border: bdr('bottom') }),
   ].join('');
-  const top = table([cell(42, left), cell(58, right)], [42, 58]);
+  const top = table([cell(47, left), cell(53, right)], [47, 53]);
   const lines = [
     p(run('Họ, tên học sinh:', { b: true }) + run('…………………………………….'), { before: 120 }),
     p(run('Số báo danh:', { b: true }) + run('…………………………………………')),
   ].join('');
-  const box = p(run('Mã đề: ', { b: true }) + run(String(code || '……'), { b: true, color: 'FF0000' }), { jc: 'center', before: 40, after: 40 });
-  const second = table([cell(72, lines), cell(28, box, { box: true, valign: 'center' })], [72, 28]);
+  const box = p(run('Mã đề: ', { b: true, sz: 24 }) + run(String(code || '……'), { b: true, sz: 24, color: 'FF0000' }), { jc: 'center' });
+  const second = table([cell(80, lines), cell(20, box, { box: true, valign: 'center' })], [80, 20]);
   return top + second + p('', { after: 120 });
 }
 
