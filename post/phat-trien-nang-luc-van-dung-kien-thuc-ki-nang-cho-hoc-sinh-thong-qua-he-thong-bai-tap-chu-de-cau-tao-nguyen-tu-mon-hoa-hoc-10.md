@@ -401,9 +401,9 @@ Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [
 
 Hoặc xem nhiều SKKN hơn tại: 
 
-[Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH
 
 [Tổng hợp SKKN môn hóa học cấp THPT](/bai-viet/tong-hop-skkn-mon-hoa-hoc-cap-thpt.html)
 
-←[Xây dựng một số dạng câu hỏi môn Hoá học theo hướng phát triển năng lực cho học sinh khối 12](/bai-viet/xay-dung-mot-so-dang-cau-hoi-mon-hoa-hoc-theo-huong-phat-trien-nang-luc-cho-hoc-sinh-khoi-12.html)
-[Đổi mới phương pháp dạy học gắn với STEM- Phần Axit Cacboxylic- Hóa học 11](/bai-viet/doi-moi-phuong-phap-day-hoc-gan-voi-stem-phan-axit-cacboxylic-hoa-hoc-11.html)→
+←Xây dựng một số dạng câu hỏi môn Hoá học theo hướng phát triển năng lực cho học sinh khối 12
+Đổi mới phương pháp dạy học gắn với STEM- Phần Axit Cacboxylic- Hóa học 11→

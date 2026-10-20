@@ -19,7 +19,7 @@ Thiết diện là gì là một câu hỏi thường xuyên xuất hiện trong
 
 Mời các em học sinh lớp 11 xem thêm:
 
-- [Tìm giao điểm của đường thẳng và mặt phẳng](/bai-viet/tim-giao-diem-cua-duong-thang-va-mat-phang.html)
+- Tìm giao điểm của đường thẳng và mặt phẳng
 
 - [Phương pháp chứng minh đường thẳng song song với mặt phẳng](/bai-viet/chung-minh-duong-thang-song-song-voi-mat-phang.html)
 

@@ -184,4 +184,4 @@ Mời thầy cô và các em học sinh tải các tài liệu về bài toán k
 
 - [Bài tập chương quan hệ vuông góc trong không gian – Hình học không gian lớp 11 PDF](#drive-pending-pdf)
 
-Tổng hợp tài liệu HHKG lớp 11 và ôn thi ĐH, THPT QG đầy đủ nhất, mời thầy cô và các em xem trong bài viết [38+ tài liệu hình học không gian 11 hay nhất](/bai-viet/tong-hop-tai-lieu-hinh-hoc-khong-gian-11.html)
+Tổng hợp tài liệu HHKG lớp 11 và ôn thi ĐH, THPT QG đầy đủ nhất, mời thầy cô và các em xem trong bài viết 38+ tài liệu hình học không gian 11 hay nhất

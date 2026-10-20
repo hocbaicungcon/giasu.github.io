@@ -30,11 +30,11 @@ C2
 
 Mời các thầy cô và các em xem đầy đủ cả đề tại đây
 
-[Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-de-minh-hoa-thi-tot-nghiep-thpt-2022-mon-hoa.html)
+Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa
 
 Hoặc xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
-←[Thực hiện các thí nghiệm sau: Cho kim loại Na vào dung dịch CuSO4.](/bai-viet/thuc-hien-cac-thi-nghiem-sau-cho-kim-loai-na-vao-dung-dich-cuso4.html)
+←Thực hiện các thí nghiệm sau: Cho kim loại Na vào dung dịch CuSO4.
 [Chất béo X gồm các triglixerit. Phần trăm khối lượng của cacbon và hiđro trong X lần lượt là 77,25% và 11,75%](/bai-viet/chat-beo-x-gom-cac-triglixerit-phan-tram-khoi-luong-cua-cacbon-va-hidro-trong-x-lan-luot-la-7725-va-1175.html)→

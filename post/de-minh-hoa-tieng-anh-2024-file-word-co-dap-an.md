@@ -12,7 +12,7 @@ tags:
 grade: 12
 ---
 
-BGD đã công bố [15 đề thi tham khảo Kỳ thi tốt nghiệp 2024](/bai-viet/15-de-thi-tham-khao-ky-thi-tot-nghiep-2024.html). Mời các bạn tham khảo đề minh họa Tiếng Anh 2024 file word kèm đáp án.
+BGD đã công bố 15 đề thi tham khảo Kỳ thi tốt nghiệp 2024. Mời các bạn tham khảo đề minh họa Tiếng Anh 2024 file word kèm đáp án.
 
 ## Đáp án đề thi minh họa Tiếng Anh 2024
 
@@ -317,5 +317,5 @@ D. Tony said that his sister just finished her English course.
 
 ———- HẾT ———-
 
-←[15 đề thi tham khảo Kỳ thi tốt nghiệp 2024](/bai-viet/15-de-thi-tham-khao-ky-thi-tot-nghiep-2024.html)
+←15 đề thi tham khảo Kỳ thi tốt nghiệp 2024
 [Đề thi hsg môn hóa lớp 11 cụm trường Chương Mỹ Thanh Oai năm 2023 2024](/bai-viet/de-thi-hsg-mon-hoa-lop-11-cum-truong-chuong-my-thanh-oai-nam-2023-2024.html)→

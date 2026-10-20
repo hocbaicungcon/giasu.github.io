@@ -14,7 +14,7 @@ tags:
 grade: 12
 ---
 
-Chúng tôi đang biên soạn Giáo trình tự học Flutter/Dart (bài viết, video, ebook) theo cấu trúc sau, hi vọng có thể giúp ích được cho các bạn. Bạn có thể bấm vào từng đường link để đến bài viết cụ thể. Nếu cần luyện tập ngôn ngữ Dart, bạn có thể tham khảo [50 bài tập lập trình Dart cơ bản](/bai-viet/bai-tap-lap-trinh-dart.html)
+Chúng tôi đang biên soạn Giáo trình tự học Flutter/Dart (bài viết, video, ebook) theo cấu trúc sau, hi vọng có thể giúp ích được cho các bạn. Bạn có thể bấm vào từng đường link để đến bài viết cụ thể. Nếu cần luyện tập ngôn ngữ Dart, bạn có thể tham khảo 50 bài tập lập trình Dart cơ bản
 
 https://flutter.dev/docs là nơi tốt nhất để tự học Flutter, đây là nơi cung cấp tài liệu chính thức về Flutter của Google.
 
@@ -26,31 +26,31 @@ Dưới đây là danh sách các video chúng tôi đang thực hiện, các vi
 
 2. Giới thiệu ngôn ngữ Dart
 
-3. [Dart Cheat Sheet and Quick Reference](/bai-viet/dart-cheat-sheet-and-quick-reference.html)
+3. Dart Cheat Sheet and Quick Reference
 
-4. [Viết app “Hello World” bằng Flutter](/bai-viet/viet-app-hello-world-bang-flutter.html)
+4. Viết app “Hello World” bằng Flutter
 
-5. [Cấu trúc một chương trình Flutter/Dart](/bai-viet/cau-truc-mot-chuong-trinh-flutter-dart.html)
+5. Cấu trúc một chương trình Flutter/Dart
 
-6. [Biến và các kiểu dữ liệu trong Dart](/bai-viet/bien-va-cac-kieu-du-lieu-trong-dart.html)
+6. Biến và các kiểu dữ liệu trong Dart
 
-   - [Kiểu `null` trong Dart](/bai-viet/kieu-null-trong-dart.html)
+   - Kiểu `null` trong Dart
 
-   - [Kiểu số nguyên `int` và kiểu số thực `double`](/bai-viet/kieu-so-trong-dart-flutter.html)
+   - Kiểu số nguyên `int` và kiểu số thực `double`
 
-   - [Kiểu logic `bool` trong Dart](/bai-viet/kieu-logic-bool-trong-dart.html)
+   - Kiểu logic `bool` trong Dart
 
-   - [Kiểu xâu `String` trong Dart / Flutter](/bai-viet/kieu-xau-string-trong-dart-flutter.html)
+   - Kiểu xâu `String` trong Dart / Flutter
 
-   - [Kiểu danh sách `List` trong Dart/Flutter](/bai-viet/kieu-danh-sach-list-trong-dart.html)
+   - Kiểu danh sách `List` trong Dart/Flutter
 
    - Kiểu ánh xạ `Map` trong Dart/Flutter
 
    - Kiểu dữ liệu tập hợp `Set`
 
-   - [Kiểu liệt kê thứ tự`enum`](/bai-viet/kieu-enum-trong-dart-la-gi.html)
+   - Kiểu liệt kê thứ tự`enum`
 
-   - [`Iterator` trong Dart là gì?](/bai-viet/iterator-trong-dart-la-gi.html)
+   - `Iterator` trong Dart là gì?
 
 7. [Các phép toán trong Dart (Toán tử trong Dart / Flutter)](/bai-viet/cac-phep-toan-trong-dart-toan-tu-dart-flutter.html)
 
@@ -70,9 +70,9 @@ Dưới đây là danh sách các video chúng tôi đang thực hiện, các vi
 
    - Hàm nặc danh `anonymous`
 
-   - [Truyền tham số cho hàm](/bai-viet/named-and-positional-parameters-in-dart.html)
+   - Truyền tham số cho hàm
 
-10. [Class trong Dart/Flutter](/bai-viet/class-in-dart-flutter.html)
+10. Class trong Dart/Flutter
 
 11. Hướng đối tượng (OOP) trong Dart
 
@@ -92,7 +92,7 @@ Bạn có thể theo dõi seri **Widget of the Week** để biết cách sử d�
 
 1. So sánh StatelessWidget và StatefulWidget
 
-2. [Flutter Widget: Container](/bai-viet/flutter-widget-container.html)
+2. Flutter Widget: Container
 
 3. Flutter Widget: Column
 

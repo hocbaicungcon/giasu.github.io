@@ -171,7 +171,7 @@ Fe2(SO4)3 + CuSO4 + NO + H2O
 | b) 6FeS2 + 3Cu2S + 40HNO3 ¾¾® 6CuSO4 + 3Fe2(SO4)3 + 40NO + 20H2O 3x     (2FeS2 +Cu2S ® 40e + 2Fe+3 + 2Cu+2 +5S+6 ) 40x  (N+5 + 3e ® N+2) | 0,5 |  |
 | 3 (1đ) | Dùng thuốc thử là dung dịch NH3 Trích các mẫu thử làm thí nghiệm, và cho dung dịch NH3 vào Ống nghiệm có kết tủa nâu đỏ là dd FeCl3 FeCl3 + 3NH3 + 3H2O → Fe(OH)3 + 3NH4Cl | 0,25 |
 | Ống nghiệm có kết tủa xanh là dd CuCl2 CuCl2 + 2NH3 + 2H2O → Cu(OH)2 + 2NH4Cl | 0,25 |  |
-| 2 ống nghiệm kết tủa trắng là dd AlCl3 và dd ZnCl2 AlCl3 + 3NH3 + 3H2O → Al(OH)3 + 3NH4Cl ZnCl2 + 2NH3 + 2H2O → Zn(OH)2 + 2NH4Cl Cho tiếp dd NH3 vào kết tủa tan là dd ZnCl2, còn lại là dd AlCl3 Zn(OH)2 + 4NH3 → [Zn(NH3)4](OH)2. | 0,25 |  |
+| 2 ống nghiệm kết tủa trắng là dd AlCl3 và dd ZnCl2 AlCl3 + 3NH3 + 3H2O → Al(OH)3 + 3NH4Cl ZnCl2 + 2NH3 + 2H2O → Zn(OH)2 + 2NH4Cl Cho tiếp dd NH3 vào kết tủa tan là dd ZnCl2, còn lại là dd AlCl3 Zn(OH)2 + 4NH3 → $[Zn(NH_3)_4](OH)_2$. | 0,25 |  |
 | dd không có hiện tượng gì là dd KCl. | 0,25 |  |
 
 # Câu 2 (4,0 điểm)

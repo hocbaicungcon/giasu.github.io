@@ -303,7 +303,7 @@ Các chất **R**, **Q** thỏa mãn sơ đồ trên lần lượt là
 
 **Câu 34:** Cho các hình vẽ sau mô tả phương pháp thu khí trong phòng thí nghiệm:
 
-![Đề thi hsg lớp 12 môn hóa tỉnh Ninh Bình năm 2021 1](file:///C:/Users/Admin/AppData/Local/Temp/lu66405nbf7d.tmp/lu66405nbf96_tmp_fe5a27d26c3759cf.png)
+
 
 Phát biểu nào sau đây đúng?
 
@@ -405,7 +405,7 @@ Giá trị của m là
 
 **Câu 52:** Hòa tan hoàn toàn a gam Al trong dung dịch Ba(OH)2, thu được dung dịch **X**. Nhỏ từ từ dung dịch H2SO4 0,5M vào dung dịch **X** và lắc nhẹ để các phản ứng xảy ra hoàn toàn. Đồ thị biểu diễn sự phụ thuộc tổng khối lượng kết tủa (m gam) theo thể tích dung dịch H2SO4 (V ml) như sau:
 
-![Đề thi hsg lớp 12 môn hóa tỉnh Ninh Bình năm 2021 2](file:///C:/Users/Admin/AppData/Local/Temp/lu66405nbf7d.tmp/lu66405nbf96_tmp_5318562027485456.png)
+
 
 Giá trị của a là
 
@@ -494,9 +494,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Biện luận công thức muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -510,9 +510,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Điện phân dung dịch hỗn hợp NaCl và 0,05 mol CuSO4 bằng dòng điện một chiều có cường độ 2A](/bai-viet/dien-phan-dung-dich-hon-hop-nacl-va-005-mol-cuso4-bang-dong-dien-mot-chieu-co-cuong-do-2a.html)
+←Điện phân dung dịch hỗn hợp NaCl và 0,05 mol CuSO4 bằng dòng điện một chiều có cường độ 2A
 [Đề thi HSG môn hóa tỉnh Thái Bình năm 2022](/bai-viet/de-thi-hsg-mon-hoa-tinh-thai-binh-nam-2022.html)→

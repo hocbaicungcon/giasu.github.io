@@ -14,7 +14,7 @@ Từ [định lí về dấu tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-ta
 
 Để hiểu về các dạng toán tìm điều kiện để phương trình luôn đúng, vô nghiệm… chúng ta cần thành thạo các dạng bài [Lý thuyết và bài tập dấu tam thức bậc hai](/bai-viet/ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai.html).
 
-**✅Xem thêm [ĐỀ CƯƠNG HỌC KÌ 2 TOÁN 10](/bai-viet/de-cuong-hoc-ki-2-toan-10.html)** 
+**✅Xem thêm ĐỀ CƯƠNG HỌC KÌ 2 TOÁN 10** 
 
 ## 1. Tìm điều kiện để tam thức bậc hai luôn dương, luôn âm
 

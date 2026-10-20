@@ -384,4 +384,4 @@ Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các
 [Tổng hợp giáo án và các chuyên đề học tập hoá học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 
 ←[Giáo án hoá 10 Bài 22 Hydrogen halide Muối halide](/bai-viet/giao-an-hoa-10-bai-22-hydrogen-halide-muoi-halide.html)
-[Giáo án hoá 10 Bài 6 Cấu tạo bảng tuần hoàn các nguyên tố hoá học](/bai-viet/giao-an-hoa-10-bai-6-cau-tao-bang-tuan-hoan-cac-nguyen-to-hoa-hoc.html)→
+Giáo án hoá 10 Bài 6 Cấu tạo bảng tuần hoàn các nguyên tố hoá học→

@@ -25,7 +25,7 @@ Khối lập phương Rubik (hay đơn giản là Rubik) là một món đồ ch
 
 ![Cách giải rubik 3x3 đơn giản nhất 2](assets/images/cach-giai-rubik-3x3-don-gian-nhat-bo-suu-tap-cac-loai-rubik.jpg)
 
-Mời bạn tham khảo [14 loại biến thể của Rubik lập phương](/bai-viet/14-loai-bien-the-cua-rubik-lap-phuong.html) và [Các loại Rubik biến thể khó nhất thế giới](/bai-viet/cac-loai-rubik-bien-the-kho-nhat-the-gioi.html).
+Mời bạn tham khảo 14 loại biến thể của Rubik lập phương và [Các loại Rubik biến thể khó nhất thế giới](/bai-viet/cac-loai-rubik-bien-the-kho-nhat-the-gioi.html).
 
 Khối Rubik 3×3 bao gồm 6 mặt như chúng ta đã biết, mỗi mặt có 9 ô vuông và được ghép lại từ 27 khối lập phương nhỏ hơn. Thông thường, Rubik được sơn phủ 6 loại màu cơ bản, đó là: trắng, vàng, đỏ, cam, xanh lá và xanh dương. Trò chơi được bắt đầu bằng việc xáo trộn (scramble) tất cả vị trí ở mỗi mặt, tức là các màu sẽ sen kẽ nhau. Bạn chỉ hoàn thành nó khi mà mỗi mặt đều là một màu đồng nhất.
 

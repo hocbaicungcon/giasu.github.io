@@ -11,13 +11,13 @@ tags:
 grade: 10
 ---
 
-Trong Python, có một số từ khóa `keyword` được sử dụng để định nghĩa các cấu trúc cú pháp và các tính năng lập trình khác. Đây là một trong những [phần tử cơ bản của Python](/bai-viet/cac-phan-tu-co-ban-cua-python.html).
+Trong Python, có một số từ khóa `keyword` được sử dụng để định nghĩa các cấu trúc cú pháp và các tính năng lập trình khác. Đây là một trong những phần tử cơ bản của Python.
 
 ## Các từ khóa trong Python
 
 Các từ khóa trong Python chính bao gồm:
 
-1. `and`: dùng để thực hiện phép và giữa hai biểu thức [`bool`](/bai-viet/kieu-logic-boolean-trong-python.html).
+1. `and`: dùng để thực hiện phép và giữa hai biểu thức `bool`.
 
 2. `as`: dùng để định nghĩa một tên khác cho một module hoặc lớp đã được nhập.
 
@@ -85,5 +85,5 @@ Các từ khóa trong Python chính bao gồm:
 
 34. `yield`: dùng trong một hàm generator để trả về một giá trị và dừng lại cho đến lần gọi tiếp theo.
 
-←[Flirt là gì?](/bai-viet/flirt-la-gi.html)
+←Flirt là gì?
 [Từ khóa and trong Python để làm gì?](/bai-viet/tu-khoa-and-trong-python-de-lam-gi.html)→

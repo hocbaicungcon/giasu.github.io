@@ -230,7 +230,7 @@ Các thầy cô có thể tham khảo thêm nhiều đề thi hơn tại
 
 [50+ đề thi thử tốt nghiệp THPT 2022 môn hóa có lời giải](/bai-viet/50-de-thi-thu-tot-nghiep-thpt-2022-mon-hoa-co-loi-giai.html)
 
-[Tổng hợp đề thi TN THPT 2021 môn hóa file word có lời giải](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi TN THPT 2021 môn hóa file word có lời giải
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -242,5 +242,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-←[Đề thi thử tốt nghiệp THPT 2022 môn hóa THPT Gang Thép Thái Nguyên lần 4 có đáp án](/bai-viet/de-thi-thu-tot-nghiep-thpt-2022-mon-hoa-thpt-gang-thep-thai-nguyen-lan-4-co-dap-an.html)
-[Đề thi thử tốt nghiệp THPT 2022 môn hóa liên trường Ninh Bình có đáp án](/bai-viet/de-thi-thu-tot-nghiep-thpt-2022-mon-hoa-lien-truong-ninh-binh-co-dap-an.html)→
+←Đề thi thử tốt nghiệp THPT 2022 môn hóa THPT Gang Thép Thái Nguyên lần 4 có đáp án
+Đề thi thử tốt nghiệp THPT 2022 môn hóa liên trường Ninh Bình có đáp án→

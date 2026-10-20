@@ -36,7 +36,7 @@ Xem thêm
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -44,5 +44,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đốt cháy 34,32 gam chất béo X bằng lượng oxi vừa đủ, thu được 96,8 gam CO2 và 36,72 gam nước](/bai-viet/dot-chay-3432-gam-chat-beo-x-bang-luong-oxi-vua-du-thu-duoc-968-gam-co2-va-3672-gam-nuoc.html)
-[Cho 0,15 mol tristearin ((C17H35COO)3C3H5) tác dụng hoàn toàn với dung dịch NaOH dư](/bai-viet/cho-015-mol-tristearin-c17h35coo3c3h5-tac-dung-hoan-toan-voi-dung-dich-naoh-du.html)→
+←Đốt cháy 34,32 gam chất béo X bằng lượng oxi vừa đủ, thu được 96,8 gam CO2 và 36,72 gam nước
+Cho 0,15 mol tristearin ((C17H35COO)3C3H5) tác dụng hoàn toàn với dung dịch NaOH dư→

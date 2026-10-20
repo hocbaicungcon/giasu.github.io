@@ -340,5 +340,5 @@ Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các
 
 [Tổng hợp giáo án và các chuyên đề học tập hoá học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 
-←[Giáo án hoá 10 Bài 9 Ôn tập chương 2](/bai-viet/giao-an-hoa-10-bai-9-on-tap-chuong-2.html)
+←Giáo án hoá 10 Bài 9 Ôn tập chương 2
 [Giáo án chuyên đề hoá 10 Bài 8 Phòng chống cháy nổ](/bai-viet/giao-an-chuyen-de-hoa-10-bai-8-phong-chong-chay-no.html)→

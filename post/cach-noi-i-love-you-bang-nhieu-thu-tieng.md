@@ -13,7 +13,7 @@ tags:
 - Ngôn ngữ thế giới
 ---
 
-Ngoài cách nói I LOVE YOU hoặc những cách nói tương tự trong tiếng Anh như *I’m in love with you*… thì giới trẻ còn thích tỏ tình bằng những thứ tiếng khác nhau, chẳng hạn như [Ti Amo](/bai-viet/tiamo-la-gi.html).
+Ngoài cách nói I LOVE YOU hoặc những cách nói tương tự trong tiếng Anh như *I’m in love with you*… thì giới trẻ còn thích tỏ tình bằng những thứ tiếng khác nhau, chẳng hạn như Ti Amo.
 
 ## Những Cách Nói “I Love You” Trong Tiếng Anh
 
@@ -57,6 +57,6 @@ Seamless pattern of red speech bubbles. Love you in different languages. Vector 
 
 **Tiếng Việt** – Anh yêu em/Em yêu anh
 
-**Tiếng Ý**– [Ti Amo](/bai-viet/tiamo-la-gi.html)
+**Tiếng Ý**– Ti Amo
 
 ![ti amo là gì, tiamo là gì](assets/images/cach-noi-i-love-you-bang-nhieu-thu-tieng-tiamo-la-gi.jpeg)

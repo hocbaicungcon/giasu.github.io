@@ -129,4 +129,4 @@ Mời các thầy cô và các em xem thêm
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
 ←[Giáo án powerpoint hóa 11 bài 24 carboxylic acid KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-24-carboxylic-acid-kntt.html)
-[PPCT hóa 11 KNTT không có chuyên đề](/bai-viet/ppct-hoa-11-kntt-khong-co-chuyen-de.html)→
+PPCT hóa 11 KNTT không có chuyên đề→

@@ -27,13 +27,13 @@ Muối X có công thức phân tử C3H10O3N2. Lấy 19,52 gam X cho tác dụn
 
 Xem thêm
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -41,5 +41,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Muối A có công thức là C3H10O3N2, lấy 7,32 gam A phản ứng hết với 150 ml dung dịch KOH](/bai-viet/muoi-a-co-cong-thuc-la-c3h10o3n2-lay-732-gam-a-phan-ung-het-voi-150-ml-dung-dich-koh.html)
-[Cho 12,4 gam chất A có công thức phân tử là C3H12N2O3 đun nóng với 2 lít dung dịch NaOH](/bai-viet/cho-124-gam-chat-a-co-cong-thuc-phan-tu-la-c3h12n2o3-dun-nong-voi-2-lit-dung-dich-naoh.html)→
+←Muối A có công thức là C3H10O3N2, lấy 7,32 gam A phản ứng hết với 150 ml dung dịch KOH
+Cho 12,4 gam chất A có công thức phân tử là C3H12N2O3 đun nóng với 2 lít dung dịch NaOH→

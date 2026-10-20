@@ -402,7 +402,7 @@ $$P = \frac{1}{2}\rho C_d A \cdot v^3 \implies v = \sqrt[3]{\frac{2P}{\rho C_d A
       "explanation": "Định lý: Mọi số thực $a$ (dương, âm, bằng 0) đều có duy nhất một căn bậc ba."
     },
     {
-      "question": "Tính giá trị của biểu thức P = căn[3](64) - căn[3](-27):",
+      "question": "Tính giá trị của biểu thức P = căn3(64) - căn3(-27):",
       "options": [
         "7",
         "1",
@@ -414,23 +414,23 @@ $$P = \frac{1}{2}\rho C_d A \cdot v^3 \implies v = \sqrt[3]{\frac{2P}{\rho C_d A
       "explanation": "$P = 4 - (-3) = 4 + 3 = 7$."
     },
     {
-      "question": "Tính kết quả của phép tính căn[3](3) * căn[3](9):",
+      "question": "Tính kết quả của phép tính căn3(3) * căn3(9):",
       "options": [
         "3",
         "9",
         "27",
-        "căn[3](12)"
+        "căn3(12)"
       ],
       "answer": 0,
       "hint": "sqrt[3]{3 * 9} = sqrt[3]{27} = 3.",
       "explanation": "Áp dụng quy tắc nhân căn bậc ba: $\\sqrt[3]{3} \\cdot \\sqrt[3]{9} = \\sqrt[3]{3 \\cdot 9} = \\sqrt[3]{27} = 3$."
     },
     {
-      "question": "So sánh 4 và căn[3](63):",
+      "question": "So sánh 4 và căn3(63):",
       "options": [
-        "4 > căn[3](63)",
-        "4 < căn[3](63)",
-        "4 = căn[3](63)",
+        "4 > căn3(63)",
+        "4 < căn3(63)",
+        "4 = căn3(63)",
         "Không thể so sánh"
       ],
       "answer": 0,
@@ -438,7 +438,7 @@ $$P = \frac{1}{2}\rho C_d A \cdot v^3 \implies v = \sqrt[3]{\frac{2P}{\rho C_d A
       "explanation": "Vì $4 = \\sqrt[3]{64}$ và $64 > 63 \\implies \\sqrt[3]{64} > \\sqrt[3]{63} \\implies 4 > \\sqrt[3]{63}$."
     },
     {
-      "question": "Biểu thức căn[3](x - 2) xác định khi nào?",
+      "question": "Biểu thức căn3(x - 2) xác định khi nào?",
       "options": [
         "Với mọi x thuộc R",
         "x >= 2",
@@ -450,7 +450,7 @@ $$P = \frac{1}{2}\rho C_d A \cdot v^3 \implies v = \sqrt[3]{\frac{2P}{\rho C_d A
       "explanation": "Khác với căn bậc hai, căn thức bậc ba $\\sqrt[3]{A}$ luôn xác định với mọi giá trị của biểu thức $A$ trên $\\mathbb{R}$."
     },
     {
-      "question": "Rút gọn biểu thức căn[3]((-8)*x^3) ta được:",
+      "question": "Rút gọn biểu thức căn3((-8)*x^3) ta được:",
       "options": [
         "-2x",
         "2x",
@@ -462,7 +462,7 @@ $$P = \frac{1}{2}\rho C_d A \cdot v^3 \implies v = \sqrt[3]{\frac{2P}{\rho C_d A
       "explanation": "Ta có $(-8)x^3 = (-2x)^3$. Áp dụng hằng đẳng thức căn bậc ba: $\\sqrt[3]{(-2x)^3} = -2x$."
     },
     {
-      "question": "Nghiệm của phương trình căn[3](3x - 2) = -2 là:",
+      "question": "Nghiệm của phương trình căn3(3x - 2) = -2 là:",
       "options": [
         "x = -2",
         "x = 2",
@@ -474,12 +474,12 @@ $$P = \frac{1}{2}\rho C_d A \cdot v^3 \implies v = \sqrt[3]{\frac{2P}{\rho C_d A
       "explanation": "Lập phương hai vế: $3x - 2 = (-2)^3 \\iff 3x - 2 = -8 \\iff 3x = -6 \\implies x = -2$."
     },
     {
-      "question": "Tính giá trị của thương căn[3](250) / căn[3](2):",
+      "question": "Tính giá trị của thương căn3(250) / căn3(2):",
       "options": [
         "5",
         "25",
         "125",
-        "5*căn[3](2)"
+        "5*căn3(2)"
       ],
       "answer": 0,
       "hint": "sqrt[3]{250 / 2} = sqrt[3]{125} = 5.",

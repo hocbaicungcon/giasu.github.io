@@ -90,7 +90,7 @@ Ngoài ra, từ năm 2017 còn có một số tổ hợp liên quan đến khố
 
 - Khối D1 có thể thi ngành Luật, Kế toán, Tài chính- ngân hàng, Quản trị kinh doanh, Sư phạm tiếng Anh, Tiếng anh, Việt Nam học, Công tác xã hội, Công nghệ thông tin, Quản trị văn phòng, Quản trị dịch vụ du lịch và lữ hành, Thư ký văn phòng, Quản trị khách sạn, Quản lý đất đai, Điều tra trinh sát, Thống kê, Ngôn ngữ anh, Tâm lý học,… và nhiều ngành khác nữa. Đây thực sự là một ngành chủ yếu và chiếm phần lớn thí sinh thi vào của khối D.
 
-  Xem thêm [Ngành Công nghệ thông tin là gì? CNTT học những gì?](/bai-viet/nganh-cong-nghe-thong-tin-la-gi-hoc-nhung-gi.html)
+  Xem thêm Ngành Công nghệ thông tin là gì? CNTT học những gì?
 
 - Đối với khối D2 gồm các ngành chính sau: Ngôn ngữ Nga, Kinh tế, Sư phạm song ngữ Nga – Anh…
 

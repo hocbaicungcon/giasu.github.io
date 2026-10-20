@@ -286,7 +286,7 @@ Có 5 ngôi nhà, mỗi nhà có một màu khác nhau. Trong mỗi nhà ở m�
 
 - Người hút thuốc hiệu Blends có người hàng xóm thích uống nước khoáng.
 
-**Hướng dẫn.** Mời các em xem lời giải tại đây [Ai là người nuôi cá? Câu đố của Einstein 98% dân số thế giới không giải được!](/bai-viet/ai-la-nguoi-nuoi-ca-cau-do-cua-einstein.html)
+**Hướng dẫn.** Mời các em xem lời giải tại đây Ai là người nuôi cá? Câu đố của Einstein 98% dân số thế giới không giải được!
 
 **Bài 6.** [SASMO 2015] Albert, Bernard vừa kết bạn với Cheryl và họ muốn biết ngày sinh nhật của cô. Cheryl đã đưa cho họ một danh sách với 10 ngày là: 15/5, 16/5, 19/5, 17/6, 18/6, 14/7,16/7, 14/8, 15/8 và 17/8.
 
@@ -302,7 +302,7 @@ Albert: Bài Bây giờ tôi cũng biết sinh nhật Cheryl là ngày nào.
 
 Vậy, Cheryl sinh nhật vào ngày nào?
 
-**Hướng dẫn.** Mời bạn xem lời giải tại đây [Bài toán ngày sinh nhật SASMO 2015](/bai-viet/bai-toan-ngay-sinh-nhat-cua-cheryl.html)
+**Hướng dẫn.** Mời bạn xem lời giải tại đây Bài toán ngày sinh nhật SASMO 2015
 
 **Bài 7.** Một người nông dân phải đưa một con sói, một con dê và một bắp cải qua sông bằng một chiếc thuyền. Tuy nhiên thuyền của anh ta quá nhỏ, do đó, mỗi lần qua sông anh chỉ mang được mỗi một trong ba đồ vật trên đi cùng với anh ta. Hỏi làm thế nào anh nông dân có thể mang tất cả ba đồ vật trên qua sông, biết rằng con sói không thể để lại ở một mình với con dê, còn con dê thì không thể để ở lại một mình với bắp cải.
 
@@ -330,4 +330,4 @@ Việc chia 16 lít xăng thành 2 phần bằng nhau được diễn tả qua c
 
 (9,1,6) ➡️(9,7,0) ➡️(3,7,6)➡️(3,11,2) ➡️(14,0,2) ➡️(14,2,0)➡️(8,2,6)➡️(8,8,0).
 
-**Bài 12.** Mời các em xem trong bài [Đề thi tốt nghiệp Tiểu học Singapore 2021](/bai-viet/de-thi-tot-nghiep-tieu-hoc-singapore-2021.html)
+**Bài 12.** Mời các em xem trong bài Đề thi tốt nghiệp Tiểu học Singapore 2021

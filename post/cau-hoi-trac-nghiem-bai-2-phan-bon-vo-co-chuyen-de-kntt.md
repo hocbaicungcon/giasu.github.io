@@ -266,4 +266,4 @@ Mời các thầy cô và các em xem thêm
 [Câu hỏi trắc nghiệm và phân dạng bài tập theo từng bài hóa 11 cả năm](/bai-viet/cau-hoi-trac-nghiem-va-phan-dang-bai-tap-theo-tung-bai-hoa-11-ca-nam.html)
 
 ←[Câu hỏi trắc nghiệm bài 1 giới thiệu chung về phân bón chuyên đề KNTT](/bai-viet/cau-hoi-trac-nghiem-bai-1-gioi-thieu-chung-ve-phan-bon-chuyen-de-kntt.html)
-[Câu hỏi trắc nghiệm bài 1 mở đầu về cân bằng hóa học cánh diều](/bai-viet/cau-hoi-trac-nghiem-bai-1-mo-dau-ve-can-bang-hoa-hoc-canh-dieu.html)→
+Câu hỏi trắc nghiệm bài 1 mở đầu về cân bằng hóa học cánh diều→

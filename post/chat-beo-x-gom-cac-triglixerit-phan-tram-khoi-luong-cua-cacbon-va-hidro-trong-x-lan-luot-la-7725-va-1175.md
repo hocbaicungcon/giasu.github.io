@@ -29,11 +29,11 @@ C2
 
 Mời các thầy cô và các em xem đầy đủ cả đề tại đây
 
-[Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-de-minh-hoa-thi-tot-nghiep-thpt-2022-mon-hoa.html)
+Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa
 
 Hoặc xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 ←[Một loại phân NPK có độ dinh dưỡng được ghi trên bao bì như ở hình bên. Để cung cấp 17,2 kg nitơ](/bai-viet/mot-loai-phan-npk-co-do-dinh-duong-duoc-ghi-tren-bao-bi-nhu-o-hinh-ben.html)
 [Bình ga loại 12 cân sử dụng trong hộ gia đình Y có chứa 12 kg khí hóa lỏng (LPG) gồm propan và butan với tỉ lệ mol tương ứng là 2 : 3](/bai-viet/binh-ga-loai-12-can-su-dung-trong-ho-gia-dinh-y-co-chua-12-kg-khi-hoa-long-lpg-gom-propan-va-butan-voi-ti-le-mol-tuong-ung-la-2-3.html)→

@@ -16,7 +16,7 @@ grade: 11
 
 Dưới đây là hệ thống định nghĩa, tính chất và bảng so sánh trực quan toàn diện nhất.
 
-Xem thêm: [Tổng hợp tài liệu hình học không gian 11 ôn thi THPT](/bai-viet/tong-hop-tai-lieu-hinh-hoc-khong-gian-11.html)
+Xem thêm: Tổng hợp tài liệu hình học không gian 11 ôn thi THPT
 
 ---
 
@@ -143,6 +143,6 @@ Hình lập phương là hình hộp có **tất cả 6 mặt đều là hình v
 ---
 
 ## Xem thêm tài liệu liên quan
-- [Phương pháp tính thể tích khối chóp và khối lăng trụ](/bai-viet/tinh-the-tich-khoi-chop.html)
+- Phương pháp tính thể tích khối chóp và khối lăng trụ
 - [Cách tìm giao tuyến của hai mặt phẳng trong không gian](/bai-viet/cach-tim-giao-tuyen-cua-hai-mat-phang.html)
 - [Góc giữa hai đường thẳng trong không gian lớp 11](/bai-viet/goc-giua-hai-duong-thang-trong-khong-gian.html)

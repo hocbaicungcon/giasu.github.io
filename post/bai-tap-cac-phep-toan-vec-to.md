@@ -14,13 +14,13 @@ tags:
 grade: 10
 ---
 
-Bài tập Các phép toán véc-tơ (phép toán tổng của hai vecto, hiệu của hai vecto, nhân vecto với một số, các quy tắc ba điểm, quy tắc hình bình hành) và ứng dụng để chứng minh đẳng thức véc-tơ, xác định điểm thỏa mãn đẳng thức véc-tơ, [chứng minh thẳng hàng](/bai-viet/toan-lop-10-chung-minh-thang-hang-bang-vecto.html), song song, tìm tập hợp điểm…
+Bài tập Các phép toán véc-tơ (phép toán tổng của hai vecto, hiệu của hai vecto, nhân vecto với một số, các quy tắc ba điểm, quy tắc hình bình hành) và ứng dụng để chứng minh đẳng thức véc-tơ, xác định điểm thỏa mãn đẳng thức véc-tơ, chứng minh thẳng hàng, song song, tìm tập hợp điểm…
 
 Xem thêm:
 
-- [Véc-tơ là gì? Khái niệm Vecto](/bai-viet/vec-to-la-gi-khai-niem-vecto.html)
+- Véc-tơ là gì? Khái niệm Vecto
 
-- [Bài tập vecto lớp 10 (Khái niệm vector, hai véc-tơ bằng nhau)](/bai-viet/bai-tap-vecto-lop-10.html)
+- Bài tập vecto lớp 10 (Khái niệm vector, hai véc-tơ bằng nhau)
 
 ## Bài tập Các phép toán véc-tơ
 

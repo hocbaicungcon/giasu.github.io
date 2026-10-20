@@ -43,11 +43,11 @@ Etan, etilen, propin, cacbonic.
 **Câu 8.(1,0 điểm)** Cho 2,4 gam ankan X tác dụng vừa đủ với 3,36 lít khí Cl2 ( đktc) trong điều kiện chiếu sáng thu được 1 monoclorua. Tìm công thức phân tử của X.
 
 **Câu 9:** .(1,0 điểm*)
-| Quan sát hình vẽ thí nghiệm, em hãy cho biết thí nghiệm ở hình bên điều chế hydrocacbon nào? Viết phương trình phản ứng xảy ra. | ![Đề thi học kì 2 môn hóa lớp 11 THPT Hoa Sen 1](file:///C:/Users/Admin/AppData/Local/Temp/lu11112wafywg.tmp/lu11112wafz48_tmp_ee93950ea2610f3e.png)
+| Quan sát hình vẽ thí nghiệm, em hãy cho biết thí nghiệm ở hình bên điều chế hydrocacbon nào? Viết phương trình phản ứng xảy ra. | 
 
  
 
-![Đề thi học kì 2 môn hóa lớp 11 THPT Hoa Sen 2](file:///C:/Users/Admin/AppData/Local/Temp/lu11112wafywg.tmp/lu11112wafz48_tmp_8ac401ac6b539336.png) |
+ |
 | --- | --- |
 
 **Câu 10.(1,0 điểm)** Dẫn 11,2 lít (đktc) hỗn hợp A gồm metan, etilen, axetilen qua dung dịch Br2 thấy có 3,36 lít khí thoát ra. Cũng cho toàn bộ hỗn hợp A trên tác dụng vừa đủ với dung dịch AgNO3 / NH3 thấy xuất hiện 48 gam kết tủa vàng. Tính % khối lượng từng khí trong hỗn hợp A.
@@ -82,13 +82,13 @@ Xem thêm
 
 [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi học kì 2 môn hóa lớp 11 THPT Hoa Lư](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-hoa-lu.html)
-[Đề thi học kì 2 môn hóa lớp 11 THPT Hưng Đạo](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-hung-dao.html)→
+←Đề thi học kì 2 môn hóa lớp 11 THPT Hoa Lư
+Đề thi học kì 2 môn hóa lớp 11 THPT Hưng Đạo→

@@ -41,5 +41,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Butane là chất lỏng có thể nhìn thấy bên trong một chiếc bật lửa trong suốt, có nhiệt độ sôi thấp hơn một ít so với nhiệt độ của nước đóng băng](/bai-viet/butane-la-chat-long-co-the-nhin-thay-ben-trong-mot-chiec-bat-lua-trong-suot-co-nhiet-do-soi-thap-hon-mot-it-so-voi-nhiet-do-cua-nuoc-dong-bang.html)
-[Khí gas đun nấu (có thành phần chính là propane và butane) có thể gây ngạt. Khí gas nặng hơn không khí](/bai-viet/khi-gas-dun-nau-co-thanh-phan-chinh-la-propane-va-butane-co-the-gay-ngat-khi-gas-nang-hon-khong-khi.html)→
+←Butane là chất lỏng có thể nhìn thấy bên trong một chiếc bật lửa trong suốt, có nhiệt độ sôi thấp hơn một ít so với nhiệt độ của nước đóng băng
+Khí gas đun nấu (có thành phần chính là propane và butane) có thể gây ngạt. Khí gas nặng hơn không khí→

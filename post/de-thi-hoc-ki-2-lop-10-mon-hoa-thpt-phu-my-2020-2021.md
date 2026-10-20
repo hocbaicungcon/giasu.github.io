@@ -107,9 +107,9 @@ C. Tốc độ phản ứng thuận và nghịch bằng nhau D. Nồng độ ch�
 
 **Câu 18:** Hòa tan 12,8 gam hh Fe, FeO bằng dd HCl 1M vừa đủ, thu được 2,24 lít khí (đktc). Thể tích dung dịch HCl đã dùng là: A. 0,2 lít. B. 0,4 lít. C. 4 lít. D. 2,0 lít.**Câu 19:** Trong các phản ứng sau, phản ứng nào thể hiện tính oxi hóa của lưu huỳnh đơn chất?
 
-A. S + O2  [![Đề thi học kì 2 lớp 10 môn hóa THPT Phù Mỹ 2020 2021 1](file:///C:/Users/Admin/AppData/Local/Temp/lu1257287q9ld.tmp/lu1257287q9mf_tmp_5f103bd1341505e9.png)](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) SO2 B. S + Na2SO3  [![Đề thi học kì 2 lớp 10 môn hóa THPT Phù Mỹ 2020 2021 2](file:///C:/Users/Admin/AppData/Local/Temp/lu1257287q9ld.tmp/lu1257287q9mf_tmp_5f103bd1341505e9.png)](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) Na2S2O3
+A. S + O2  [](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) SO2 B. S + Na2SO3  [](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) Na2S2O3
 
-C. S + HNO3  [![Đề thi học kì 2 lớp 10 môn hóa THPT Phù Mỹ 2020 2021 3](file:///C:/Users/Admin/AppData/Local/Temp/lu1257287q9ld.tmp/lu1257287q9mf_tmp_5f103bd1341505e9.png)](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) SO2 + NO2 + H2O D. S + Zn  [![Đề thi học kì 2 lớp 10 môn hóa THPT Phù Mỹ 2020 2021 4](file:///C:/Users/Admin/AppData/Local/Temp/lu1257287q9ld.tmp/lu1257287q9mf_tmp_5f103bd1341505e9.png)](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) ZnS
+C. S + HNO3  [](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) SO2 + NO2 + H2O D. S + Zn  [](http://hocmai.vn/filter/tex/displaytex.php?+%5Cto+) ZnS
 
 **Câu 20:** Khí H2S không tác dụng với chất nào sau đây?
 
@@ -206,7 +206,7 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Xem thêm
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
@@ -224,9 +224,9 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
@@ -234,5 +234,5 @@ Xem thêm
 
  
 
-←[Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm số 13](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-so-13.html)
-[Đề thi học kì 2 lớp 10 môn hóa tỉnh Quảng Nam 2020 2021](/bai-viet/de-thi-hoc-ki-2-lop-10-mon-hoa-tinh-quang-nam-2020-2021.html)→
+←Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm số 13
+Đề thi học kì 2 lớp 10 môn hóa tỉnh Quảng Nam 2020 2021→

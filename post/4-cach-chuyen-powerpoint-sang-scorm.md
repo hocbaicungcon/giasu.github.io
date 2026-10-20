@@ -26,7 +26,7 @@ SCORM cũng chỉ là một định dạng tệp giống như tệp PDF, jPEG ho
 
 Các công cụ hoặc phần mềm sử dụng các thông số kỹ thuật của SCORM được gọi là “tuân thủ SCORM”.
 
-Bạn có thể xem thêm các đặc điểm và lợi ích của SCORM trong bài [SCORM là gì?](/bai-viet/scorm-la-gi.html)
+Bạn có thể xem thêm các đặc điểm và lợi ích của SCORM trong bài SCORM là gì?
 
 ## Tại sao cần chuyển PowerPoint sang SCORM?
 

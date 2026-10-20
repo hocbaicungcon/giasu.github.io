@@ -52,13 +52,13 @@ Xem thêm
 
 - [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -66,5 +66,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Cho sơ đồ phản ứng theo đúng tỉ lệ mol   (a) X + 2NaOH → X1 + X2 + X3 (c) X2 + HCl → X5 + NaCl](/bai-viet/cho-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-%e2%86%92-x1-x2-x3-c-x2-hcl-%e2%86%92-x5-nacl.html)
-[Hợp chất hữu cơ X (chứa C, H, O) trong đó oxi chiếm 50% về khối lượng. Từ chất X thực hiện chuyển hoá sau: X (+CO, xt, t0)](/bai-viet/hop-chat-huu-co-x-chua-c-h-o-trong-do-oxi-chiem-50-ve-khoi-luong-tu-chat-x-thuc-hien-chuyen-hoa-sau-x-co-xt-t0.html)→
+←[Cho sơ đồ phản ứng theo đúng tỉ lệ mol   (a) X + 2NaOH → X1 + X2 + X3 (c) X2 + HCl → X5 + NaCl](/bai-viet/cho-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-x1-x2-x3-c-x2-hcl-x5-nacl.html)
+Hợp chất hữu cơ X (chứa C, H, O) trong đó oxi chiếm 50% về khối lượng. Từ chất X thực hiện chuyển hoá sau: X (+CO, xt, t0)→

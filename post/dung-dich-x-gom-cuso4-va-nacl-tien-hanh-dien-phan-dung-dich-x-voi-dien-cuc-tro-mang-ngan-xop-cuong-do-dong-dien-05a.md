@@ -34,11 +34,11 @@ Số mol NaCl trong X là
 
 Mời các thầy cô và các em xem đầy đủ cả đề tại đây
 
-[Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-de-minh-hoa-thi-tot-nghiep-thpt-2023-mon-hoa.html)
+Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa
 
 Hoặc xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 ←[Hỗn hợp E gồm axit cacboxylic đơn chức X, ancol no đa chức Y và chất Z là sản phẩm của phản ứng este hóa giữa X với Y](/bai-viet/hon-hop-e-gom-axit-cacboxylic-don-chuc-x-ancol-no-da-chuc-y-va-chat-z-la-san-pham-cua-phan-ung-este-hoa-giua-x-voi-y.html)
-[Cho sơ đồ các phản ứng sau: NaAlO2 + CO2 + H2O ⟶ X + NaHCO3](/bai-viet/cho-so-do-cac-phan-ung-sau-naalo2-co2-h2o-%e2%9f%b6-x-nahco3.html)→
+Cho sơ đồ các phản ứng sau: NaAlO2 + CO2 + H2O ⟶ X + NaHCO3→

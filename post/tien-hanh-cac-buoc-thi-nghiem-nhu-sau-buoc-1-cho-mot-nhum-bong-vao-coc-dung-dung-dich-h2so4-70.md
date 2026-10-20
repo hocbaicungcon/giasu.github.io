@@ -54,7 +54,7 @@ Số phát biểu đúng là
 
 Mời các thầy cô và các em xem toàn bộ đề thi tại
 
-[Đề thi thử tốt nghiệp thpt 2022 môn hoá Sở GD Nam Định lần 2 và lời giải chi tiết](/bai-viet/de-thi-thu-tot-nghiep-thpt-2022-mon-hoa-so-gd-nam-dinh-lan-2-va-loi-giai-chi-tiet.html)
+Đề thi thử tốt nghiệp thpt 2022 môn hoá Sở GD Nam Định lần 2 và lời giải chi tiết
 
 Hoặc xem thêm các đề thi thử khác tại
 
@@ -68,5 +68,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-←[Đốt cháy kim loại M (có duy nhất 1 hóa trị) trong oxi thu hợp chất X có chứa 41,026% khối lượng oxi](/bai-viet/dot-chay-kim-loai-m-co-duy-nhat-1-hoa-tri-trong-oxi-thu-hop-chat-x-co-chua-41026-khoi-luong-oxi.html)
-[Âm câm là gì và 17 quy tắc cần nhớ](/bai-viet/am-cam-la-gi-va-17-quy-tac-can-nho.html)→
+←Đốt cháy kim loại M (có duy nhất 1 hóa trị) trong oxi thu hợp chất X có chứa 41,026% khối lượng oxi
+Âm câm là gì và 17 quy tắc cần nhớ→

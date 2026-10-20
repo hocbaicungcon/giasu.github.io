@@ -43,4 +43,4 @@ Tổng hợp tài liệu Xác suất có điều kiện file PDF trong chương 
 - [xac suat dieu kien](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
 ←[Hướng dẫn giải đề Toán THPT 2025](/bai-viet/huong-dan-giai-de-toan-thpt-2025.html)
-[Đề tiếng Anh THPT 2025 file WORD](/bai-viet/de-tieng-anh-thpt-2025-file-word.html)→
+Đề tiếng Anh THPT 2025 file WORD→

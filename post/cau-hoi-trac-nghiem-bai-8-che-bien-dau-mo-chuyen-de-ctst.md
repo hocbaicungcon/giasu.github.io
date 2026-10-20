@@ -352,5 +352,5 @@ Mời các thầy cô và các em xem thêm
 
 [Câu hỏi trắc nghiệm và phân dạng bài tập theo từng bài hóa 11 cả năm](/bai-viet/cau-hoi-trac-nghiem-va-phan-dang-bai-tap-theo-tung-bai-hoa-11-ca-nam.html)
 
-←[Câu hỏi trắc nghiệm bài 7 nguồn gốc dầu mỏ thành phần và phân loại dầu mỏ chuyên đề CTST](/bai-viet/cau-hoi-trac-nghiem-bai-7-nguon-goc-dau-mo-thanh-phan-va-phan-loai-dau-mo-chuyen-de-ctst.html)
+←Câu hỏi trắc nghiệm bài 7 nguồn gốc dầu mỏ thành phần và phân loại dầu mỏ chuyên đề CTST
 [Câu hỏi trắc nghiệm bài 9 ngành sản suất dầu mỏ vấn đề môi trường nguồn nhiên liệu thay thế dầu mỏ chuyên đề CTST](/bai-viet/cau-hoi-trac-nghiem-bai-9-nganh-san-suat-dau-mo-van-de-moi-truong-nguon-nhien-lieu-thay-the-dau-mo-chuyen-de-ctst.html)→

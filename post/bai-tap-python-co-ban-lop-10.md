@@ -13,7 +13,7 @@ tags:
 grade: 10
 ---
 
-Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình, cách sử dụng các hàm số học chuẩn, [câu lệnh điều kiện if](/bai-viet/cau-lenh-dieu-kien-if-trong-python.html), câu lệnh [vòng lặp for](/bai-viet/cau-lenh-vong-lap-for-trong-python.html),…
+Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình, cách sử dụng các hàm số học chuẩn, câu lệnh điều kiện if, câu lệnh vòng lặp for,…
 
 Mời bạn tham khảo thêm [100+ Bài tập Python cơ bản có lời giải](/bai-viet/bai-tap-python-co-ban-co-loi-giai.html).
 

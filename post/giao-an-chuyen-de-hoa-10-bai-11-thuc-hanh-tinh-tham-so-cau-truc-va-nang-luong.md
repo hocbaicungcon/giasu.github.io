@@ -429,4 +429,4 @@ Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các
 [Tổng hợp giáo án và các chuyên đề học tập hoá học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 
 ←[Giáo án chuyên đề hoá 10 Bài 10 Thực hành thí nghiệm hoá học ảo](/bai-viet/giao-an-chuyen-de-hoa-10-bai-10-thuc-hanh-thi-nghiem-hoa-hoc-ao.html)
-[PPCT trải nghiệm hướng nghiệp 10 Chân trời sáng tạo](/bai-viet/ppct-trai-nghiem-huong-nghiep-10-chan-troi-sang-tao.html)→
+PPCT trải nghiệm hướng nghiệp 10 Chân trời sáng tạo→

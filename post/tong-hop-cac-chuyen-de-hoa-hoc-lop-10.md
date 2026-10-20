@@ -24,7 +24,7 @@ Mời các thầy cô truy cập vào link sau để xem và download tài liệ
 
 [PPCT hoá 10 KNTT có chuyên đề học tập](/bai-viet/ppct-hoa-10-kntt-co-chuyen-de-hoc-tap.html)
 
-[Phân phối chương trình Hóa học 10 chân trời sáng tạo](/bai-viet/phan-phoi-chuong-trinh-hoa-hoc-10-chan-troi-sang-tao.html)
+Phân phối chương trình Hóa học 10 chân trời sáng tạo
 
 ## 2. Các chuyên đề dạy học
 
@@ -42,19 +42,19 @@ Phân dạng bài tập liên kết hóa học
 
 [40 câu hỏi trắc nghiệm phản ứng oxi hóa khử](/bai-viet/40-cau-hoi-trac-nghiem-phan-ung-oxi-hoa-khu.html)
 
-[Phân dạng bài tập phản ứng oxi hóa khử](/bai-viet/phan-dang-bai-tap-phan-ung-oxi-hoa-khu-2.html)
+Phân dạng bài tập phản ứng oxi hóa khử
 
 [30 câu hỏi trắc nghiệm năng lượng hóa học](/bai-viet/30-cau-hoi-trac-nghiem-lien-ket-hoa-hoc.html)
 
-[Phân dạng bài tập năng lượng hóa học](/bai-viet/phan-dang-bai-tap-nang-luong-hoa-hoc.html)
+Phân dạng bài tập năng lượng hóa học
 
-[Phân dạng bài tập tính biến thiên enthalpy trong các phản ứng hóa học](/bai-viet/phan-dang-bai-tap-tinh-bien-thien-enthalpy-trong-cac-phan-ung-hoa-hoc.html)
+Phân dạng bài tập tính biến thiên enthalpy trong các phản ứng hóa học
 
-[Câu hỏi trắc nghiệm biến thiên enthalpy trong các phản ứng hóa học](/bai-viet/cau-hoi-trac-nghiem-bien-thien-enthalpy-trong-cac-phan-ung-hoa-hoc.html)
+Câu hỏi trắc nghiệm biến thiên enthalpy trong các phản ứng hóa học
 
 [50 câu hỏi trắc nghiệm tốc độ phản ứng hóa học](/bai-viet/50-cau-hoi-trac-nghiem-toc-do-phan-ung-hoa-hoc.html)
 
-[Phân dạng bài tập tốc độ phản ứng](/bai-viet/phan-dang-bai-tap-toc-do-phan-ung.html)
+Phân dạng bài tập tốc độ phản ứng
 
 Câu hỏi trắc nghiệm nguyên tố nhóm halogen
 
@@ -62,73 +62,73 @@ Phân dạng bài tập nguyên tố nhóm halogen
 
 ## 3. Đề thi – kiểm tra
 
-[Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-[Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
 ## Chương trình THPT 2006 (cũ)
 
-- [Hóa học lớp 10 – Đầu năm thì ôn gì?](/bai-viet/hoa-hoc-lop-10-dau-nam-thi-on-gi.html)
+- Hóa học lớp 10 – Đầu năm thì ôn gì?
 
-- [Câu hỏi trắc nghiệm nguyên tử](/bai-viet/cau-hoi-trac-nghiem-nguyen-tu.html)
+- Câu hỏi trắc nghiệm nguyên tử
 
-- [Phân dạng bài tập nguyên tử](/bai-viet/phan-dang-bai-tap-nguyen-tu.html)
+- Phân dạng bài tập nguyên tử
 
-- [Câu hỏi trắc nghiệm bảng tuần hoàn](/bai-viet/phan-dang-bai-tap-bang-tuan-hoan.html)
+- Câu hỏi trắc nghiệm bảng tuần hoàn
 
-- [Phân dạng bài tập bảng tuần hoàn](/bai-viet/phan-dang-bai-tap-bang-tuan-hoan.html)
+- Phân dạng bài tập bảng tuần hoàn
 
-- [Câu hỏi trắc nghiệm liên kết hóa học](/bai-viet/cau-hoi-trac-nghiem-lien-ket-hoa-hoc.html)
+- Câu hỏi trắc nghiệm liên kết hóa học
 
-- [Phân dạng bài tập liên kết hóa học](/bai-viet/phan-dang-bai-tap-lien-ket-hoa-hoc.html)
+- Phân dạng bài tập liên kết hóa học
 
-- [Câu hỏi trắc nghiệm phản ứng oxi hóa khử](/bai-viet/cau-hoi-trac-nghiem-phan-ung-oxi-hoa-khu.html)
+- Câu hỏi trắc nghiệm phản ứng oxi hóa khử
 
-- [Phân dạng bài tập phản ứng oxi hóa khử](/bai-viet/phan-dang-bai-tap-phan-ung-oxi-hoa-khu.html)
+- Phân dạng bài tập phản ứng oxi hóa khử
 
-- [Câu hỏi trắc nghiệm halogen](/bai-viet/cau-hoi-trac-nghiem-halogen.html)
+- Câu hỏi trắc nghiệm halogen
 
-- [Phân dạng bài tập halogen](/bai-viet/phan-dang-bai-tap-halogen-2.html)
+- Phân dạng bài tập halogen
 
-- [Câu hỏi trắc nghiệm oxi lưu huỳnh](/bai-viet/cau-hoi-trac-nghiem-oxi-luu-huynh-2.html)
+- Câu hỏi trắc nghiệm oxi lưu huỳnh
 
-- [Hệ thống câu hỏi trắc nghiệm oxi lưu huỳnh](/bai-viet/cau-hoi-trac-nghiem-oxi-luu-huynh.html)
+- Hệ thống câu hỏi trắc nghiệm oxi lưu huỳnh
 
-- [Phân dạng bài tập oxi lưu huỳnh](/bai-viet/phan-dang-bai-tap-oxi-luu-huynh.html)
+- Phân dạng bài tập oxi lưu huỳnh
 
-- [Phân dạng bài tập axit sunfuric](/bai-viet/phan-dang-bai-tap-axit-sunfuric.html)
+- Phân dạng bài tập axit sunfuric
 
-- [Bài toán SO2 tác dụng với dung dịch kiềm](/bai-viet/bai-toan-so2-tac-dung-voi-dung-dich-kiem.html)
+- Bài toán SO2 tác dụng với dung dịch kiềm
 
-- [Tóm tắt kiến thức môn hóa học THPT lớp 10 11 12](/bai-viet/tom-tat-kien-thuc-mon-hoa-hoc-thpt-lop-10-11-12.html)
+- Tóm tắt kiến thức môn hóa học THPT lớp 10 11 12
 
 Đề thi – kiểm tra
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Đề cương ôn tập học kì 2 lớp 10 môn hóa](/bai-viet/de-cuong-on-tap-hoc-ki-2-lop-10-mon-hoa.html)
+- Đề cương ôn tập học kì 2 lớp 10 môn hóa
 
-- [Đề cương ôn tập học kì 2 môn hóa lớp 10](/bai-viet/de-cuong-on-tap-hoc-ki-2-mon-hoa-lop-10.html)
+- Đề cương ôn tập học kì 2 môn hóa lớp 10
 
-- [Đề kiểm tra 1 tiết chương 5 halogen (có đáp án)](/bai-viet/de-kiem-tra-1-tiet-chuong-5-halogen.html)
+- Đề kiểm tra 1 tiết chương 5 halogen (có đáp án)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
 Quý thầy cô cũng có thể tải giáo án hóa 10 tại đây:
 
-- [Giáo án hoá học lớp 10 học kì 1](/bai-viet/giao-an-hoa-hoc-lop-10-hoc-ki-1.html)
+- Giáo án hoá học lớp 10 học kì 1
 
-- [Giáo án hoá học lớp 10 học kì 2](/bai-viet/giao-an-hoa-hoc-lop-10-hoc-ki-2.html)
+- Giáo án hoá học lớp 10 học kì 2
 
-- [Giáo án dạy thêm hóa học lớp 10 cả năm chi tiết theo từng tuần](/bai-viet/giao-an-day-them-hoa-hoc-lop-10-ca-nam-chi-tiet-theo-tung-tuan.html)
+- Giáo án dạy thêm hóa học lớp 10 cả năm chi tiết theo từng tuần
 
 Quý thầy cô có thể xem một số phương pháp giải bài tập cho học sinh lớp 10
 
@@ -148,7 +148,7 @@ Xem thêm các tài liệu khác
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 

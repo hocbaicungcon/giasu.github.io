@@ -17,7 +17,7 @@ SKKN Một số biện pháp giúp trẻ nhà trẻ 18-24 tháng tuổi ham thí
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
 Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH
 
 ĐIỀU KIỆN, HOÀN CẢNH TẠO RA SÁNG KIẾN.
 Hiện nay giáo dục mầm non là một bậc học nằm trong hệ thống giáo dục
@@ -278,5 +278,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-←[SKKN Một số biện pháp duy trì trường xanh, sạch, đẹp, an toàn](/bai-viet/skkn-mot-so-bien-phap-duy-tri-truong-xanh-sach-dep-an-toan.html)
-[SKKN Nâng cao hiệu quả hoạt động vận dụng trong dạy học đọc hiểu văn bản Ngữ văn 10](/bai-viet/skkn-nang-cao-hieu-qua-hoat-dong-van-dung-trong-day-hoc-doc-hieu-van-ban-ngu-van-10.html)→
+←SKKN Một số biện pháp duy trì trường xanh, sạch, đẹp, an toàn
+SKKN Nâng cao hiệu quả hoạt động vận dụng trong dạy học đọc hiểu văn bản Ngữ văn 10→

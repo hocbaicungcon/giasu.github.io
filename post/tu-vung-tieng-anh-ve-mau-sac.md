@@ -11,7 +11,7 @@ tags:
 - Màu sắc
 ---
 
-Xem thêm: [Từ vựng tiếng Anh chủ đề Gia đình](/bai-viet/tu-vung-tieng-anh-chu-de-gia-dinh.html)
+Xem thêm: Từ vựng tiếng Anh chủ đề Gia đình
 
 ## 1. Từ vựng tiếng Anh về các màu cơ bản
 

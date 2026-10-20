@@ -26,7 +26,7 @@ Họ và tên học sinh:………………………………………
 
 Số báo danh:………….……………………..……………
 
-([Đáp án](/bai-viet/dap-an-trac-nghiem-de-thi-hoc-ki-2-lop-10-mon-hoa-tinh-nam-dinh-nam-2021.html)) **Phần I: Trắc nghiệm(4 điểm). Hãy chọn phương án trả lời đúng và viết chữ cái đứng trước 
+(Đáp án) **Phần I: Trắc nghiệm(4 điểm). Hãy chọn phương án trả lời đúng và viết chữ cái đứng trước 
 phương án đó vào bài làm. 
 
 Câu 1: **Nhúng quỳ tím vào dung dịch nào sau đây thấy quỳ tím chuyển sang màu đỏ?
@@ -101,11 +101,11 @@ A. MgO + 2HCl → MgCl2 + H2O.                       B. Mg(OH)2 + 2H
 
 C. Ca + 2HCl → CaCl2 + H2.                                 D. AgNO3 + HCl → AgCl + HNO3.
 
-Các em học sinh có thể xem đáp án phần trắc nghiệm [tại đây](/bai-viet/dap-an-trac-nghiem-de-thi-hoc-ki-2-lop-10-mon-hoa-tinh-nam-dinh-nam-2021.html)
+Các em học sinh có thể xem đáp án phần trắc nghiệm tại đây
 
  
 
-**([ĐÁP ÁN](/bai-viet/dap-an-tu-luan-de-thi-hoc-ki-2-lop-10-mon-hoa-tinh-nam-dinh-nam-2021.html)) Phần II:Tự luận (6,0 điểm) 
+**(ĐÁP ÁN) Phần II:Tự luận (6,0 điểm) 
 
 Câu 1 (2,0 điểm): 
 Viết các phương trình hóa học của các phản ứng xảy ra khi: 
@@ -151,7 +151,7 @@ b) Tính thành phần % theo khối lượng của mỗi kim loại trong hỗn
 
 Cho biết nguyên tử khối của các nguyên tố: Fe = 56, Cu = 64.
 
-Các em học sinh có thể xem đáp án phần tự luận [tại đây](/bai-viet/dap-an-tu-luan-de-thi-hoc-ki-2-lop-10-mon-hoa-tinh-nam-dinh-nam-2021.html)
+Các em học sinh có thể xem đáp án phần tự luận tại đây
 
 ———-HẾT———
 
@@ -181,13 +181,13 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 12](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-trac-nghiem-de-so-12.html)
+←Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 12
 [TOÁN 2: SỐ BỊ TRỪ SỐ TRỪ HIỆU](/bai-viet/toan-2-so-bi-tru-so-tru-hieu.html)→

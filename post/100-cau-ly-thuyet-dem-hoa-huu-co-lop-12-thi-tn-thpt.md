@@ -19,7 +19,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
 - [200 câu lý thuyết đếm hóa học lớp 12 có đáp án ôn thi TN THPT](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html)
 
-- [Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án](/bai-viet/cau-hoi-tim-chat-vo-co-van-dung-cao.html)
+- Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án
 
 **Câu 1:** Cho các phát biểu sau:
 
@@ -489,7 +489,7 @@ Các thầy cô và các em có thể xem bài tương tự
 
 - [200 câu lý thuyết đếm hóa học lớp 12 có đáp án ôn thi TN THPT](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html)
 
-- [Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án](/bai-viet/cau-hoi-tim-chat-vo-co-van-dung-cao.html)
+- Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án
 
  
 
@@ -503,7 +503,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [200 câu lý thuyết đếm hóa học lớp 12 có đáp án ôn thi TN THPT](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html)
 
-- [Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án](/bai-viet/cau-hoi-tim-chat-vo-co-van-dung-cao.html)
+- Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án
 
 - [Tổng hợp kĩ thuật phương pháp giải bài tập peptit đầy đủ chi tiết](/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html)
 
@@ -515,7 +515,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -523,19 +523,19 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -551,23 +551,23 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 23 phương pháp giải bài tập môn hóa học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-- [Tư duy NAP về tính bất biến của kim loại](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-kim-loai.html)
+- Tư duy NAP về tính bất biến của kim loại
 
-- [Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-hon-hop-chua-hop-chat.html)
+- Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất
 
-- [Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn](/bai-viet/tu-duy-nap-di-tat-don-dau-ket-hop-voi-cac-dinh-luat-bao-toan.html)
+- Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn
 
-- [Tư duy NAP phân chia nhiệm vụ H+](/bai-viet/tu-duy-nap-phan-chia-nhiem-vu-h.html)
+- Tư duy NAP phân chia nhiệm vụ H+
 
-- [Vận dụng linh hoạt và liên hoàn các định luật bảo toàn](/bai-viet/van-dung-linh-hoat-va-lien-hoan-cac-dinh-luat-bao-toan.html)
+- Vận dụng linh hoạt và liên hoàn các định luật bảo toàn
 
-- [Bài toán vận dụng tư duy điền số điện tích có lời giải chi tiết](/bai-viet/bai-toan-van-dung-tu-duy-dien-so-dien-tich.html)
+- Bài toán vận dụng tư duy điền số điện tích có lời giải chi tiết
 
-- [Bài toán khử oxit kim loại bằng H2 CO hoặc C có lời giải chi tiết](/bai-viet/bai-toan-khu-oxit-kim-loai-bang-h2-co-hoac-c-co-loi-giai-chi-tiet.html)
+- Bài toán khử oxit kim loại bằng H2 CO hoặc C có lời giải chi tiết
 
-- [Bài toán kim loại tác dụng với dung dịch muối có lời giải chi tiết](/bai-viet/bai-toan-kim-loai-tac-dung-voi-dung-dich-muoi-co-loi-giai-chi-tiet.html)
+- Bài toán kim loại tác dụng với dung dịch muối có lời giải chi tiết
 
-- [Bài toán kim loại tác dụng với axit HCl H2SO4 có lời giải chi tiết](/bai-viet/bai-toan-kim-loai-tac-dung-voi-axit-hcl-h2so4-co-loi-giai-chi-tiet.html)
+- Bài toán kim loại tác dụng với axit HCl H2SO4 có lời giải chi tiết
 
 - [Lý thuyết và bài tập kim loại tác dụng với axit HNO3 có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-kim-loai-tac-dung-voi-axit-hno3-co-loi-giai-chi-tiet.html)
 
@@ -583,15 +583,15 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [30+ bài toán nhiệt nhôm có lời giải chi tiết](/bai-viet/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet.html)
 
-- [Bài toán hỗn hợp Na K Ca Ba và oxit tác dụng với nước có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-na-k-ca-ba-va-oxit-tac-dung-voi-nuoc-co-loi-giai-chi-tiet.html)
+- Bài toán hỗn hợp Na K Ca Ba và oxit tác dụng với nước có lời giải chi tiết
 
-- [Bài toán hỗn hợp Al Na K Ca Ba tác dụng với nước có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-al-na-k-ca-ba-tac-dung-voi-nuoc-co-loi-giai-chi-tiet.html)
+- Bài toán hỗn hợp Al Na K Ca Ba tác dụng với nước có lời giải chi tiết
 
-- [Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-ket-tua-cua-baco3-va-aloh3.html)
+- Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết
 
-- [Các dạng toán nâng cao về sắt và các hợp chất của sắt có lời giải chi tiết](/bai-viet/cac-dang-toan-nang-cao-ve-sat-va-cac-hop-chat-cua-sat.html)
+- Các dạng toán nâng cao về sắt và các hợp chất của sắt có lời giải chi tiết
 
-- [Bài toán liên quan tới phản ứng Fe2+ tác dụng với Ag+ có lời giải chi tiết](/bai-viet/bai-toan-lien-quan-toi-phan-ung-fe2-tac-dung-voi-ag-co-loi-giai-chi-tiet.html)
+- Bài toán liên quan tới phản ứng Fe2+ tác dụng với Ag+ có lời giải chi tiết
 
 - [Bài tập tổng hợp hóa học vô cơ 12 có lời giải chi tiết](/bai-viet/bai-tap-tong-hop-hoa-hoc-vo-co-12-co-loi-giai-chi-tiet.html)
 
@@ -599,15 +599,15 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Các bài toán đặc trưng về anken và ankin](/bai-viet/cac-bai-toan-dac-trung-ve-anken-va-ankin.html)
 
-- [Bài toán cộng H2 Br2 vào hiđrocacbon không no mạch hở](/bai-viet/bai-toan-cong-h2-br2-vao-hidrocacbon-khong-no-mach-ho.html)
+- Bài toán cộng H2 Br2 vào hiđrocacbon không no mạch hở
 
-- [Vận dụng tinh tế công thức đốt cháy vào bài toán đốt cháy hỗn hợp hiđrocacbon](/bai-viet/van-dung-tinh-te-cong-thuc-dot-chay-vao-bai-toan-dot-chay-hon-hop-hidrocacbon.html)
+- Vận dụng tinh tế công thức đốt cháy vào bài toán đốt cháy hỗn hợp hiđrocacbon
 
-- [Vận dụng tư duy dồn chất giải toán hiđrocacbon](/bai-viet/van-dung-tu-duy-don-chat-giai-toan-hidrocacbon.html)
+- Vận dụng tư duy dồn chất giải toán hiđrocacbon
 
-- [Tư duy xếp hình cho cacbon trong bài toán hiđrocacbon](/bai-viet/tu-duy-xep-hinh-cho-cacbon-trong-bai-toan-hidrocacbon.html)
+- Tư duy xếp hình cho cacbon trong bài toán hiđrocacbon
 
 - [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 
-←[Xu Hướng Tìm Kiếm Năm 2021](/bai-viet/xu-huong-tim-kiem-nam-2021.html)
-[Đề tham khảo Đánh giá năng lực học sinh THPT ĐH Quốc Gia Hà Nội](/bai-viet/de-tham-khao-danh-gia-nang-luc-hoc-sinh-thpt.html)→
+←Xu Hướng Tìm Kiếm Năm 2021
+Đề tham khảo Đánh giá năng lực học sinh THPT ĐH Quốc Gia Hà Nội→

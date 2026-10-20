@@ -167,6 +167,6 @@ tags:
 
 ## Từ vựng tiếng Anh theo chủ đề khác
 
-- [Từ vựng tiếng Anh chủ đề Gia đình](/bai-viet/tu-vung-tieng-anh-chu-de-gia-dinh.html)
+- Từ vựng tiếng Anh chủ đề Gia đình
 
 - [Từ vựng tiếng Anh về màu sắc](/bai-viet/tu-vung-tieng-anh-ve-mau-sac.html)

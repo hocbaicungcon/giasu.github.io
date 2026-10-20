@@ -301,5 +301,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án powerpoint hóa 11 bài 4 nitrogen KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-4-nitrogen-kntt.html)
-[Giáo án powerpoint hóa 11 bài 6 một số hợp chất của nitrogen với oxygen KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-6-mot-so-hop-chat-cua-nitrogen-voi-oxygen-kntt.html)→
+←[Giáo án powerpoint hóa 11 bài 4 nitrogen KNTT](/bai-viet/giao-an-hoa-11-bai-4-nitrogen-kntt.html)
+Giáo án powerpoint hóa 11 bài 6 một số hợp chất của nitrogen với oxygen KNTT→

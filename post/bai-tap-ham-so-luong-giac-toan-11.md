@@ -12,7 +12,7 @@ tags:
 grade: 11
 ---
 
-Để làm được các Bài tập hàm số lượng giác Toán 11 dưới đây, các em cần nắm vững phần lý thuyết về [Hàm số lượng giác](/bai-viet/toan-11-ham-so-luong-giac.html) và thành thạo các [Công thức lượng giác, Giá trị lượng giác của góc ở Lớp 10](/bai-viet/cong-thuc-luong-giac-gia-tri-luong-giac-lop-10.html)
+Để làm được các Bài tập hàm số lượng giác Toán 11 dưới đây, các em cần nắm vững phần lý thuyết về [Hàm số lượng giác](/bai-viet/toan-11-bai-3-ham-so-luong-giac.html) và thành thạo các Công thức lượng giác, Giá trị lượng giác của góc ở Lớp 10
 
 ## 1. Tìm giá trị lớn nhất, nhỏ nhất của hàm số lượng giác
 
@@ -80,7 +80,7 @@ Như vậy, để xét tính chẵn lẻ của hàm số lượng giác, chúng 
 
 - Tìm tập xác định của hàm số và kiểm tra điều kiện $\forall x\in \mathbb{D}$ thì $-x\in \mathcal{D}.$
 
-- Sử dụng các tính chất về [cung có liên quan đặc biệt](/bai-viet/cong-thuc-luong-giac-gia-tri-luong-giac-lop-10.html) (cos đối, sin bù, phụ chéo, khác pi tang) để so sánh $f(-x)$ và $f(x).$
+- Sử dụng các tính chất về cung có liên quan đặc biệt (cos đối, sin bù, phụ chéo, khác pi tang) để so sánh $f(-x)$ và $f(x).$
 
 ## 4. Tìm khoảng đồng biến nghịch biến của hàm số lượng giác
 

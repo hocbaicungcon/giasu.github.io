@@ -43,13 +43,13 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Thủy phân triglixerit X trong NaOH, thu được hỗn hợp 3 muối natri oleat; natri sterat và natri linoleat](/bai-viet/thuy-phan-triglixerit-x-trong-naoh-thu-duoc-hon-hop-3-muoi-natri-oleat-natri-sterat-va-natri-linoleat.html)
-[Đốt cháy hoàn toàn m gam chất béo X (chứa triglixerit của axit stearic, axit panmitic và các axit béo tự do đó). Sau phản ứng thu được 20,16 lít CO2](/bai-viet/dot-chay-hoan-toan-m-gam-chat-beo-x-chua-triglixerit-cua-axit-stearic-axit-panmitic-va-cac-axit-beo-tu-do-do.html)→
+←Thủy phân triglixerit X trong NaOH, thu được hỗn hợp 3 muối natri oleat; natri sterat và natri linoleat
+Đốt cháy hoàn toàn m gam chất béo X (chứa triglixerit của axit stearic, axit panmitic và các axit béo tự do đó). Sau phản ứng thu được 20,16 lít CO2→

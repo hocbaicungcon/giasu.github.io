@@ -78,7 +78,7 @@ Như vậy, theo quy tắc nhân có $k!C^k_n$ cách, nghĩa là $A^k_n=k!C^k_n$
 
 ### 2.1. Bài toán đếm
 
-Để giải quyết các bài toán đếm, ta có hai cách làm: *đếm trực triếp* (hỏi gì đếm nấy) và *đếm gián tiếp*(đây chính là sử dụng nguyên lý bù trừ đã nói ở bài [3 quy tắc đếm cơ bản và bài tập vận dụng](/bai-viet/3-quy-tac-dem-co-ban-nguyen-ly-bu-tru.html), tức là đếm phần dễ đếm để suy ra phần cần đếm). Chúng ta sẽ lần lượt xét hai cách đó qua các ví dụ sau. Đầu tiên là *phương pháp đếm trực tiếp*:
+Để giải quyết các bài toán đếm, ta có hai cách làm: *đếm trực triếp* (hỏi gì đếm nấy) và *đếm gián tiếp*(đây chính là sử dụng nguyên lý bù trừ đã nói ở bài 3 quy tắc đếm cơ bản và bài tập vận dụng, tức là đếm phần dễ đếm để suy ra phần cần đếm). Chúng ta sẽ lần lượt xét hai cách đó qua các ví dụ sau. Đầu tiên là *phương pháp đếm trực tiếp*:
 
 **Ví dụ 1.** Từ 5 chữ số $1, 2, 3, 4, 5$ có thể lập được bao nhiêu số tự nhiên gồm 5 chữ số khác nhau?
 

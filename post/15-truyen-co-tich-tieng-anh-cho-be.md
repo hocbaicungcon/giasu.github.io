@@ -15,7 +15,7 @@ tags:
 
 Những câu chuyện cổ tích trẻ con rất thích. Các con đặc biệt thích nghe một câu chuyện từ mẹ hoặc cha mình, ngay trước khi đi ngủ. Đọc những câu chuyện trước khi đi ngủ cho trẻ là một cách tuyệt vời để gắn kết tình cảm gia đình và khuyến khích niềm yêu thích đọc sách. Đọc sách cho trẻ nghe khiến trẻ yêu sách và trở thành độc giả của chính mình. Nó cũng giúp cải thiện trí nhớ, cải thiện ngôn ngữ và củng cố tư duy sáng tạo của trẻ. Dưới đây là 15 câu chuyện hay nhất trước khi đi ngủ dành cho trẻ em.
 
-Mời các mẹ xem thêm [25 truyện tiếng Anh cho bé song ngữ Anh Việt](/bai-viet/25-truyen-tieng-anh-cho-be.html).
+Mời các mẹ xem thêm 25 truyện tiếng Anh cho bé song ngữ Anh Việt.
 
 Tình yêu dành cho việc đọc sách bắt đầu từ gia đình. Đây là cách bạn có thể làm cho thời gian kể chuyện được mong đợi nhất trong ngày của con bạn:
 

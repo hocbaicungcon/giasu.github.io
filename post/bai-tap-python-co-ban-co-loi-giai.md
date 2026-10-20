@@ -58,7 +58,7 @@ def fact(n):
 print(fact(n))
 ```
 
-Nếu chỉ sử dụng vòng lặp, không sử dụng hàm và lời gọi [đệ quy](/bai-viet/de-quy-la-gi.html), ta có thể làm như sau:
+Nếu chỉ sử dụng vòng lặp, không sử dụng hàm và lời gọi đệ quy, ta có thể làm như sau:
 
 ```python
 n = int(input('Enter a number '))

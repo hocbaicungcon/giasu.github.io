@@ -12,7 +12,7 @@ tags:
 grade: 10
 ---
 
-Hàm ẩn danh trong [Python](/bai-viet/d/lap-trinh/python.html) là gì? Cách khai báo hàm lambda trong Python. Ví dụ về hàm lambda trong Python sử dụng với hàm filter và hàm map() trong Python.
+Hàm ẩn danh trong Python là gì? Cách khai báo hàm lambda trong Python. Ví dụ về hàm lambda trong Python sử dụng với hàm filter và hàm map() trong Python.
 
 ## Hàm ẩn danh trong Python là gì?
 

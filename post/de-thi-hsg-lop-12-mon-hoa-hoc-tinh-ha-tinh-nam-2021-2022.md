@@ -122,7 +122,7 @@ Họ và tên thí sinh:……………………………………..Số báo da
 | 1 (1,5đ) | a. Ban đầu có kết tủa màu xanh sau đó kết tủa tan tạo dung dịch màu xanh lam CuSO4 + 2NaOH  Cu(OH)2 + Na2SO4 2C12H22O11 + Cu(OH)2  (C12H21O11)2Cu + 2H2O b. Mẩu phenol tan hết, sau đó dung dịch từ trong suốt chuyển sang vẫn đục C6H5OH + NaOH  C6H5ONa (tan trong nước) C6H5ONa + HCl  C6H5OH + NaCl c. Trên thành ống nghiệm xuất hiện lớp bạc sáng C5H11O5CHO + 2AgNO3 + 3NH3 + H2O  C5H11O5COONH4+ 2NH4NO3 + 2Ag d. Tạo thành lớp este mỏng có mùi chuối chín nổi lên trên CH3COOH + (CH3)2CH-CH2CH2-OH  CH3COO CH2CH2 CH-(CH3)2 + H2O | 0,5     0,5   0,25 0,25 |
 | 2 (1,0đ) | 2. Phản úng xẩy ra theo thứ tự:  Mg + 2Fe3+→Mg2+ + 2Fe2+  (1)  Mg + Fe2+ → Mg2+ + Fe  (2) => khối lượng dung dịch tăng dần, đến cực đại khi (1) vừa đủ sau đó giảm dần đến khi (2) vừa đủ. +) Nếu Mg hết Fe3+  dư, chỉ xẩy ra  (1) ⇒∆m↑ =  m = 2,4 gam +) Nếu Mg còn , Fe3+  hết, xẩy ra tiếp pư (2) (1) ⇒ nMg = 0,25 mol, nFe2+ = 0,5; gọi nMg ở (2) bằng x mol – Nếu ∆m↑ = 24(x + 0,25) – 56x = 2,4  => x = 0,1125 mol ⇒ m =  (0,25 + 0,1125).24 = 8,7 g – Nếu ∆m↓ =  -24(x + 0,25 ) +56x = 2,4 ⇒ x = 0,2625 mol ⇒  m = (0,25 + 0,2625).24 = 12,3 g |       0,5 0,25 0,25 |
 | Câu 3 (2.5 điểm) |  | Điểm |
-| 1 (1đ) | (C6H10O5)n → nC6H12O6  → 2nC2H5OH +2nCO2 ( %H = 75%)   ![Đề thi HSG lớp 12 môn hóa học tỉnh Hà Tĩnh năm 2021 2022 1](file:///C:/Users/Admin/AppData/Local/Temp/lu7776181z13.tmp/lu7776181zat_tmp_e0ec7eb141ebee46.png)   Vì lượng NaOH cần dùng ít nhất để thu được kết tủa lớn nhất => phản ứng xảy ra theo tỉ lệ mol NaOH : Ba(HCO3)2 = 1 : 1 Ba(HCO3)2 + NaOH → BaCO3↓ + NaHCO­3 + H2O 0,006 (mol)←0,006 (mol) BTNT Ba => nBaCO3 (1) = nBa(OH)2 – nBa(HCO3)2 = 0,03 – 0,006=0,024 BTNT C => nCO2 = nBaCO3(1) + 2nBa(HCO3)2 = 0,024 + 2.0,006 = 0,036 Từ sơ đồ => ntb = ½ nCO2 = 0,018 (mol) => m = 3,888(g) | 0,25 0,25 0,25 0,25 |
+| 1 (1đ) | (C6H10O5)n → nC6H12O6  → 2nC2H5OH +2nCO2 ( %H = 75%)      Vì lượng NaOH cần dùng ít nhất để thu được kết tủa lớn nhất => phản ứng xảy ra theo tỉ lệ mol NaOH : Ba(HCO3)2 = 1 : 1 Ba(HCO3)2 + NaOH → BaCO3↓ + NaHCO­3 + H2O 0,006 (mol)←0,006 (mol) BTNT Ba => nBaCO3 (1) = nBa(OH)2 – nBa(HCO3)2 = 0,03 – 0,006=0,024 BTNT C => nCO2 = nBaCO3(1) + 2nBa(HCO3)2 = 0,024 + 2.0,006 = 0,036 Từ sơ đồ => ntb = ½ nCO2 = 0,018 (mol) => m = 3,888(g) | 0,25 0,25 0,25 0,25 |
 | 2 (1.5đ) | a. Trong dung dịch X có các ion: H+, Na+, Cu2+, Cl–, OH– – Khi chưa điện phân thì HCl phân li ra H+ => pH = -lg(0,02) = 2. – Thứ tự điện phân trong dung dịch: Ban đầu CuCl2 Cu + Cl2 (1) Sau (1): 2HCl H2 + Cl2 (2) Sau (2): 2NaCl + 2 H2O H2 + Cl2 + 2NaOH (3) Sau (3) môi trường bazơ: H2O H2 + 1/2O2 (4)   - – Ban đầu xảy ra (1) nên pH không đổi (pH =2) cho đến khi CuCl2 vừa hết.  - – Tiếp đến xảy ra (2) làm giảm H+ nên pH tăng dần đến khi HCl vừa hết, dung dịch trung tính pH =7.  - – Sau đó xảy ra (3) sinh ra OH– làm pH tăng dần đến khi NaCl vừa hết thì pH=13   – Sau khi NaCl hết thì H2O tiếp tục bị điện phân làm giảm thể tích dung dịch nên nồng độ OH– tăng nên pH tiếp tục tăng b. Ta có: 2HCl H2  + Cl2 (2) 0,01 0,005 mol. 2NaCl + 2 H2OH2 + Cl2 + 2NaOH (3) (0,01-0,005) 0,01 mol => pH = 14+lg(0,01) = 12 | 0,25 0,25 0,25 0,25       0,5   |
 | Câu 4 (2.0 điểm) |  | Điểm |
 |  | A gồm  và  nE = u + v = 0,4 nO2 = u(1,5n-0,25) + v(1,5m-1) = 1,16 nH2O = u(n+1,5) + v(m+2) = 1,68 => u = 0,16; v= 0,24; nu + mv = 0,96 Do  và  nên  và  là nghiệm duy nhất. Sản phẩm chỉ có 1 khí duy nhất nên: Y là C2H5COONH4 (0,16); X là (COONH4)2 (0,24) Muối gồm C2H5COONa (0,16) và (COONa)2 (0,24) m muối = 47,52 gam | 0,25 0,25 0,25 0,25 0,25 0,25 0,25 0,25 |
@@ -178,9 +178,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Biện luận công thức muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -194,9 +194,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Bệnh Hanahaki là gì?](/bai-viet/benh-hanahaki-la-gi.html)
-[Chia hỗn hợp X gồm Fe, Fe3O4, Fe(OH)3 và FeCO3 thành 2 phần bằng nhau. Hòa tan hết phần 1](/bai-viet/chia-hon-hop-x-gom-fe-fe3o4-feoh3-va-feco3-thanh-2-phan-bang-nhau-hoa-tan-het-phan-1.html)→
+←Bệnh Hanahaki là gì?
+Chia hỗn hợp X gồm Fe, Fe3O4, Fe(OH)3 và FeCO3 thành 2 phần bằng nhau. Hòa tan hết phần 1→

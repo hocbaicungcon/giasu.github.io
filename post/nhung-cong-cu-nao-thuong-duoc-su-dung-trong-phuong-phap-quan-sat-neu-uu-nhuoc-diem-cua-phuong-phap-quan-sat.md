@@ -30,4 +30,4 @@ Mời các thầy cô xem thêm
 [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 
 ←[Thế nào là kiểm tra viết? Những công cụ nào thường được sử dụng trong phương pháp kiểm tra viết?](/bai-viet/the-nao-la-kiem-tra-viet-nhung-cong-cu-nao-thuong-duoc-su-dung-trong-phuong-phap-kiem-tra-viet.html)
-[Những công cụ nào thường được sử dụng trong phương pháp hỏi – đáp? Nêu những lưu ý khi sử dụng phương pháp hỏi – đáp](/bai-viet/nhung-cong-cu-nao-thuong-duoc-su-dung-trong-phuong-phap-hoi-dap-neu-nhung-luu-y-khi-su-dung-phuong-phap-hoi-dap.html)→
+Những công cụ nào thường được sử dụng trong phương pháp hỏi – đáp? Nêu những lưu ý khi sử dụng phương pháp hỏi – đáp→

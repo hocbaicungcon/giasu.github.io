@@ -101,5 +101,5 @@ Theo Nghị định của Chính phủ quy định mức lương tối thiểu �
 ---
 
 ## Xem thêm tài liệu liên quan
-- [Tăng lương tối thiểu vùng và những điều người lao động cần biết](/bai-viet/tang-luong-toi-thieu-vung-2022.html)
+- Tăng lương tối thiểu vùng và những điều người lao động cần biết
 - [Lượng điện tiêu thụ trung bình 1 gia đình là bao nhiêu và cách tính tiền điện](/bai-viet/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu.html)

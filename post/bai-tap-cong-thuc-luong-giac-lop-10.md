@@ -20,7 +20,7 @@ grade: 10
 
 - Giá trị lượng giác của các cung có liên quan đặc biệt (cung liên kết): cung đối nhau, cung bù nhau, cung phụ nhau…
 
-- [Các công thức lượng giác](/bai-viet/cong-thuc-luong-giac-gia-tri-luong-giac-lop-10.html): công thức cộng, công thức nhân đôi, công thức hạ bậc, công thức biến đổi tổng thành tích, công thức biến đổi tích thành tổng
+- Các công thức lượng giác: công thức cộng, công thức nhân đôi, công thức hạ bậc, công thức biến đổi tổng thành tích, công thức biến đổi tích thành tổng
 
 ## 2. Bài tập công thức lượng giác lớp 10
 

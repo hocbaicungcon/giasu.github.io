@@ -49,7 +49,7 @@ Viết phương trình hóa học các phản ứng xảy ra.
 
 **2.** Tiến hành thí nghiệm xác định cácbon hidro trong Glucozơ như hình vẽ:
 
-![Đề thi hsg lớp 12 môn hóa tỉnh Tuyên Quang năm 2020 1](file:///C:/Users/Admin/AppData/Local/Temp/lu110362qx5mr.tmp/lu110362qx6ci_tmp_9e4633a40c8acab7.jpg)
+
 
 a) Cho biết hiện tượng xảy ra và viết phương trình hóa học (nếu có).
 
@@ -155,9 +155,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Biện luận công thức muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -171,9 +171,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đề thi HSG lớp 12 môn hóa tỉnh Tuyên Quang năm 2017](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-tuyen-quang-nam-2017.html)
-[Đề thi hsg lớp 12 môn hóa tỉnh Tuyên Quang năm 2019](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-tuyen-quang-nam-2019.html)→
+←Đề thi HSG lớp 12 môn hóa tỉnh Tuyên Quang năm 2017
+Đề thi hsg lớp 12 môn hóa tỉnh Tuyên Quang năm 2019→

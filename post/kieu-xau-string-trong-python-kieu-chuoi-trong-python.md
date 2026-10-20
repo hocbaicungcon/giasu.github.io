@@ -22,9 +22,9 @@ Xem thêm:
 
 - [Kiểu dữ liệu list danh sách trong Python](/bai-viet/kieu-du-lieu-list-danh-sach-trong-python.html)
 
-- [Kiểu dữ liệu tập hợp set trong Python](/bai-viet/kieu-du-lieu-tap-hop-set-trong-python.html)
+- Kiểu dữ liệu tập hợp set trong Python
 
-- [Kiểu logic Boolean trong Python](/bai-viet/kieu-logic-boolean-trong-python.html)
+- Kiểu logic Boolean trong Python
 
 ## 1. Giới thiệu về string – chuỗi trong Python
 
@@ -292,7 +292,7 @@ True
 False
 ```
 
-- Hàm `<string>.alpha()` dùng để kiểm tra xem `<string>` có phải chỉ chứa các kí tự thuộc bảng chữ cái `a-Z` hay không, kết quả trả về là [kiểu Boolean](/bai-viet/kieu-logic-boolean-trong-python.html). Ở ví dụ sau nếu xâu có chứa dấu cách thì kết quả trả về là `False.`
+- Hàm `<string>.alpha()` dùng để kiểm tra xem `<string>` có phải chỉ chứa các kí tự thuộc bảng chữ cái `a-Z` hay không, kết quả trả về là kiểu Boolean. Ở ví dụ sau nếu xâu có chứa dấu cách thì kết quả trả về là `False.`
 
 ```python
 >>> s="Alphabet"

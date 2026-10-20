@@ -117,7 +117,7 @@ grade: 12
 
 **C.** CH5N và C2H7N. D.** C2H7N và C3H9N.**
 
-1. ![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 1](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_77e04c6dec7ff13d.jpg)
+1. 
 
    Trong phòng thí nghiệm, khí X được điều chế và thu vào bình tam giác theo hình vẽ bên. Khí X được tạo ra từ phản ứng hóa học nào sau đây?
 
@@ -219,7 +219,7 @@ Các chất X2, X5, X6 lần lượt là
 
 1. H
 
-   ![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 2](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_14f4b691caebfd62.jpg)
+   
 
    òa tan hoàn toàn hỗn hợp Al và Al2O3 trong 200 ml dung dịch HCl nồng độ **a mol/l**, thu được dung dịch X. Cho từ từ dung dịch NaOH 1M vào X, lượng kết tủa Al(OH)3 (m gam) phụ thuộc vào thể tích dung dịch NaOH (V ml) được biểu diễn bằng đồ thị bên. Giá trị của **a** là
 
@@ -338,7 +338,7 @@ Số phát biểu đúng là
 
 1. T
 
-   ![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 3](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_572f8b9a58e3f8ec.png)
+   
 
    rong phòng thí nghiệm, khí X được điều chế và thu vào bình tam giác theo hình vẽ bên. Khí X được tạo ra từ phản ứng hóa học nào sau đây?
 
@@ -458,7 +458,7 @@ Số phát biểu đúng là
 
 1. H
 
-   ![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 4](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_f1d86db374127699.png)
+   
 
    òa tan hoàn toàn a gam hỗn hợp X gồm Al2O3 và Na2O vào nước, thu được dung dịch Y. Cho từ từ dung dịch HCl 1M vào Y, lượng kết tủa Al(OH)3 (m gam) phụ thuộc vào thể tích dung dịch HCl (V ml) được biểu diễn bằng đồ thị bên.
 
@@ -633,7 +633,7 @@ Số phát biểu đúng là
 
 **A.** 0,12. B.** 0,15. **C.** 0,30. D.** 0,20.
 
-1. ![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 5](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_39c5de4837ef9d57.png)
+1. 
 
    Trong phòng thí nghiệm, khí X được điều chế và thu vào bình tam giác bằng cách đẩy nước theo hình vẽ bên. Phản ứng nào sau đây **không** áp dụng được cách thu khí này?
 
@@ -672,7 +672,7 @@ Số phát biểu đúng là
 
 **A.** 4. B.** 2. **C.** 1. D.** 3.
 
-1. ![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 6](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_d5eae203d56cce73.png)
+1. 
 
    Hoàn tan hoàn toàn a gam hỗn hợp Al và Al2O3 vào dung dịch H2SO4 loãng, thu được dung dịch X và 10,08 lít H2 (đktc). Cho từ từ dung dịch NaOH 1M vào X, số mol kết tủa Al(OH)3 (n mol) phụ thuộc vào thể tích dung dịch NaOH (V lít) được biểu diễn bằng đồ thị bên. Giá trị của a là
 
@@ -841,7 +841,7 @@ Các dung dịch X, Y, Z, T lần lượt là:
 
 **C.** có bọt khí thoát ra. D.** xuất hiện màu xanh.**
 
-1. ![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 7](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_39c5de4837ef9d57.png)
+1. 
 
    Tong phòng thí nghiệm, khí X được điều chế và thu vào bình tam giác bằng cách đẩy nước như hình vẽ bên. Khí X được tạo ra từ phản ứng hoá học nào sau đây?
 
@@ -1016,7 +1016,7 @@ Số phát biểu đúng là
 
 Số thí nghiệm tạo thành kim loại là
 
-![4 mã đề thi THPT QG môn hóa năm 2017 của bộ giáo dục 8](file:///C:/Users/Admin/AppData/Local/Temp/lu64722ak0hs.tmp/lu64722ak0kp_tmp_6688f89e8a74aaef.png)
+
 
  **A.** 5. B.** 3. **C.** 2. D.** 4.
 
@@ -1060,23 +1060,23 @@ Tổng hợp đề thi của bộ Giáo Dục và giải chi tiết tất cả c
 
 Đề chính thức đợt 1 năm 2021
 
-- [Giải chi tiết mã 201 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-201-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 201 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [Giải chi tiết mã 202 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-202-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 202 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [Giải chi tiết mã 205 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-205-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 205 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [Giải chi tiết mã 206 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-206-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 206 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [4 mã đề gôc thi TN THPT 2021 môn hóa đợt 1 file word](/bai-viet/4-ma-de-thi-tn-thpt-2021-mon-hoa-dot-1-file-word.html)
+- 4 mã đề gôc thi TN THPT 2021 môn hóa đợt 1 file word
 
 - [Ảnh 24 mã đề thi TN THPT môn hóa năm 2021 của bộ giáo dục](/bai-viet/24-ma-de-thi-tn-thpt-mon-hoa-nam-2021-cua-bo-giao-duc.html)
 
-- Đề minh họa: [Giải chi tiết đề minh họa TN THPT 2021 môn hóa học](/bai-viet/giai-chi-tiet-de-minh-hoa-tn-thpt-2021-mon-hoa-hoc.html)
+- Đề minh họa: Giải chi tiết đề minh họa TN THPT 2021 môn hóa học
 
 Đề chính thức đợt 2 năm 2021
 
-- [Đề thi TN TNPT 2021 môn hóa đợt 2 file word và giải chi tiết](/bai-viet/de-thi-tn-tnpt-2021-mon-hoa-dot-2-file-word.html)
+- Đề thi TN TNPT 2021 môn hóa đợt 2 file word và giải chi tiết
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -1102,7 +1102,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -1110,19 +1110,19 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -1136,25 +1136,25 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tư duy NAP về tính bất biến của kim loại](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-kim-loai.html)
+- Tư duy NAP về tính bất biến của kim loại
 
-- [Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-hon-hop-chua-hop-chat.html)
+- Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất
 
-- [Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn](/bai-viet/tu-duy-nap-di-tat-don-dau-ket-hop-voi-cac-dinh-luat-bao-toan.html)
+- Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn
 
-- [Tư duy NAP phân chia nhiệm vụ H+](/bai-viet/tu-duy-nap-phan-chia-nhiem-vu-h.html)
+- Tư duy NAP phân chia nhiệm vụ H+
 
-- [Vận dụng linh hoạt và liên hoàn các định luật bảo toàn](/bai-viet/van-dung-linh-hoat-va-lien-hoan-cac-dinh-luat-bao-toan.html)
+- Vận dụng linh hoạt và liên hoàn các định luật bảo toàn
 
 - [30+ bài toán nhiệt nhôm có lời giải chi tiết](/bai-viet/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet.html)
 
-- [Các dạng toán nâng cao về sắt và các hợp chất của sắt](/bai-viet/cac-dang-toan-nang-cao-ve-sat-va-cac-hop-chat-cua-sat.html)
+- Các dạng toán nâng cao về sắt và các hợp chất của sắt
 
-- [Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-ket-tua-cua-baco3-va-aloh3.html)
+- Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết
 
 - [Bài toán đồ thị nâng cao có lời giải chi tiết](/bai-viet/bai-toan-do-thi-nang-cao.html)
 
 - [Bài toán nhỏ từ từ H+ vào dung dịch HCO3- và CO32- có lời giải chi tiết](/bai-viet/bai-toan-nho-tu-tu-h-vao-dung-dich-hco3-va-co32-co-loi-giai-chi-tiet.html)
 
-←[Đề minh họa THPT QG môn hóa năm 2018 của bộ giáo dục](/bai-viet/de-minh-hoa-thpt-qg-mon-hoa-nam-2018-cua-bo-giao-duc.html)
-[Đề minh họa THPT QG môn hóa năm 2017 lần 1 của bộ giáo dục](/bai-viet/de-minh-hoa-thpt-qg-mon-hoa-nam-2017-lan-1-cua-bo-giao-duc.html)→
+←Đề minh họa THPT QG môn hóa năm 2018 của bộ giáo dục
+Đề minh họa THPT QG môn hóa năm 2017 lần 1 của bộ giáo dục→

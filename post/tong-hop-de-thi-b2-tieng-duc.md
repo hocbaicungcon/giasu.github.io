@@ -14,7 +14,7 @@ tags:
 
 Chúng tôi xin giới thiệu [bài viết](https://www.facebook.com/groups/1683121622424024/permalink/1751373938932125/) của bạn Hà Thị Thủy Tổng hợp đề thi B2 tiếng Đức hiện nay.
 
-Mời bạn tham khảo thêm [Học tiếng Đức dễ hay khó?](/bai-viet/hoc-tieng-duc-de-hay-kho.html)
+Mời bạn tham khảo thêm Học tiếng Đức dễ hay khó?
 
 Hiện tại có 7 bộ đề, tổng cộng hơn 40 đề, độ quan trọng giảm dần theo thứ tự sau:
 

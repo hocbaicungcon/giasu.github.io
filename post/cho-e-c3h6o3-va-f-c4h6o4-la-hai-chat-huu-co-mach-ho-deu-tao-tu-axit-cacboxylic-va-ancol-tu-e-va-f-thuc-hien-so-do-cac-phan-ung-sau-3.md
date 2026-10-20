@@ -63,11 +63,11 @@ Bao gồm: (a), (b), (c), (d), (e).
 
 Mời các thầy cô xem thêm các câu khác của mã đề tại
 
-[Giải chi tiết mã 203 đề thi tốt nghiệp THPT 2022 môn hóa](/bai-viet/giai-chi-tiet-ma-203-de-thi-tot-nghiep-thpt-2022-mon-hoa.html)
+Giải chi tiết mã 203 đề thi tốt nghiệp THPT 2022 môn hóa
 
 Hoặc xem thêm các đề thi khác tại
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Marketing là gì?](/bai-viet/marketing-la-gi.html)
-[Điện phân dung dịch chứa a mol CuSO4, y mol H2SO4 và z mol NaCl (với điện cực trơ, có màng ngăn xốp, hiệu suất điện phân là 100%)](/bai-viet/dien-phan-dung-dich-chua-a-mol-cuso4-y-mol-h2so4-va-z-mol-nacl-voi-dien-cuc-tro-co-mang-ngan-xop-hieu-suat-dien-phan-la-100.html)→
+←Marketing là gì?
+Điện phân dung dịch chứa a mol CuSO4, y mol H2SO4 và z mol NaCl (với điện cực trơ, có màng ngăn xốp, hiệu suất điện phân là 100%)→

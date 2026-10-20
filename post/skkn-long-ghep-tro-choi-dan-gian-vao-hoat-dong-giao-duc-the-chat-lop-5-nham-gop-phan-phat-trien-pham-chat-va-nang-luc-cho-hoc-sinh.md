@@ -19,7 +19,7 @@ SKKN Lồng ghép trò chơi dân gian vào hoạt động giáo dục thể ch�
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
 Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH
 
 ĐẶT VẤN ĐỀ
 Như chúng ta đã biết, năm học 2020 – 2021 là năm học đầu tiên triển khai
@@ -515,7 +515,7 @@ trò chơi dân gian. Từ các trò chơi dân gian được tổ chứ
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
 Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH
 
-←[SKKN Một số biện pháp nâng cao chất lượng Tiết đọc thư viện, góp phần xây dựng văn hóa đọc trong trường Tiểu học](/bai-viet/skkn-mot-so-bien-phap-nang-cao-chat-luong-tiet-doc-thu-vien-gop-phan-xay-dung-van-hoa-doc-trong-truong-tieu-hoc.html)
-[SKKN Nâng cao hiệu quả phần Khởi động trong môn Thể dục cho học sinh tiểu học](/bai-viet/skkn-nang-cao-hieu-qua-phan-khoi-dong-trong-mon-the-duc-cho-hoc-sinh-tieu-hoc.html)→
+←SKKN Một số biện pháp nâng cao chất lượng Tiết đọc thư viện, góp phần xây dựng văn hóa đọc trong trường Tiểu học
+SKKN Nâng cao hiệu quả phần Khởi động trong môn Thể dục cho học sinh tiểu học→

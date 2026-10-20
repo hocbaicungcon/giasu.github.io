@@ -200,4 +200,4 @@ $$
 \sqrt{{{x}^{2}}+\frac{1}{{{x}^{2}}}}+\sqrt{{{y}^{2}}+\frac{1}{{{y}^{2}}}}+\sqrt{{{z}^{2}}+\frac{1}{{{z}^{2}}}}\ge 3\sqrt[6]{729+\frac{1}{729}+3(9+\frac{1}{9})}\ge \sqrt{82}
 $$
 
-Đối với các bài toán khó hơn, mời các bạn tham khảo [SỬ DỤNG AM-GM ĐỂ CHỨNG MINH BẤT ĐẲNG THỨC DẤU BẰNG KHÔNG TẠI TÂM](/bai-viet/su-dung-am-gm-dau-bang-khong-tai-tam.html).
+Đối với các bài toán khó hơn, mời các bạn tham khảo SỬ DỤNG AM-GM ĐỂ CHỨNG MINH BẤT ĐẲNG THỨC DẤU BẰNG KHÔNG TẠI TÂM.

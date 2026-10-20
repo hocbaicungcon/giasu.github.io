@@ -38,17 +38,17 @@ Xem thêm
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Hỗn hợp X gồm 3 este đơn chức, tạo thành từ cùng một ancol Y với 3 axit cacboxylic (phân tử chỉ có nhóm –COOH)](/bai-viet/hon-hop-x-gom-3-este-don-chuc-tao-thanh-tu-cung-mot-ancol-y-voi-3-axit-cacboxylic-phan-tu-chi-co-nhom-cooh.html)
+←Hỗn hợp X gồm 3 este đơn chức, tạo thành từ cùng một ancol Y với 3 axit cacboxylic (phân tử chỉ có nhóm –COOH)
 [Cho X, Y là hai đơn chất thuộc dãy đồng đẳng của axit acrylic và MX →

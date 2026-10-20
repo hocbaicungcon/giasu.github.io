@@ -21,7 +21,7 @@ GIA SƯ THÔNG MINH xin gửi tới Quý thầy cô và các em học sinh tham 
 
 Một số tài liệu môn Văn hữu ích khác:
 
-- [9️⃣ đề minh họa môn Văn 2021 có đáp án](/bai-viet/9%ef%b8%8f-de-minh-hoa-mon-van-2021-co-dap-an.html)
+- 9️⃣ đề minh họa môn Văn 2021 có đáp án
 
 - [Bộ đề thi thử Văn tác phẩm Vợ Nhặt](/bai-viet/bo-de-thi-thu-van-tac-pham-vo-nhat.html)
 

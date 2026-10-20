@@ -18,13 +18,13 @@ Chúng tôi xin giới thiệu Các dạng câu hỏi về tác phẩm Vợ Nh�
 
 Thầy cô và các em học sinh có thể tham khảo thêm
 
-- [Bộ đề thi thử Văn tác phẩm TUYÊN NGÔN ĐỘC LẬP](/bai-viet/bo-de-thi-thu-van-tac-pham-tuyen-ngon-doc-lap.html)
+- Bộ đề thi thử Văn tác phẩm TUYÊN NGÔN ĐỘC LẬP
 
 - [65 đề thi thử Tốt nghiệp THPT môn Văn 2021 có đáp án](/bai-viet/65-de-thi-thu-tot-nghiep-thpt-mon-van-2021-co-dap-an.html)
 
 - [101 ĐỀ ĐỌC HIỂU CÓ ĐÁP ÁN THI THPT QUỐC GIA](/bai-viet/101-de-doc-hieu-co-dap-an-thi-thptqg.html)
 
-- [9️⃣ đề minh họa môn Văn 2021 có đáp án](/bai-viet/9%ef%b8%8f-de-minh-hoa-mon-van-2021-co-dap-an.html)
+- 9️⃣ đề minh họa môn Văn 2021 có đáp án
 
 ## 1. Các dạng câu hỏi về tác phẩm Vợ Nhặt
 

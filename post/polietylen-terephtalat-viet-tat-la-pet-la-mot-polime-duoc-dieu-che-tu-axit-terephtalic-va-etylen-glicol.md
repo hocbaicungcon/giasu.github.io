@@ -64,11 +64,11 @@ Tổng kết: Có **4 phát biểu đúng** gồm **(a), (b), (c), (đ)** $\impl
 
 Đây là một câu trong đề thi tốt nghiệp THPT 2023. Mời các thầy cô xem đầy đủ cả đề tại
 
-[Giải chi tiết mã 201 đề thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-ma-201-de-thi-tot-nghiep-thpt-2023-mon-hoa.html)
+Giải chi tiết mã 201 đề thi tốt nghiệp THPT 2023 môn hóa
 
 Hoặc xem thêm các đề thi khác của bộ giáo dục từ năm 2007 đến nay
 
 [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Giải chi tiết mã 201 đề thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-ma-201-de-thi-tot-nghiep-thpt-2023-mon-hoa.html)
-[Cho m gam hỗn hợp X (gồm Na, Na2O, Ba và BaO) vào H2O dư, thu được dung dịch Y và 0,06 mol H2. Sục từ từ đến hết 0,12 mol CO2](/bai-viet/cho-m-gam-hon-hop-x-gom-na-na2o-ba-va-bao-vao-h2o-du-thu-duoc-dung-dich-y-va-006-mol-h2-suc-tu-tu-den-het-012-mol-co2.html)→
+←Giải chi tiết mã 201 đề thi tốt nghiệp THPT 2023 môn hóa
+Cho m gam hỗn hợp X (gồm Na, Na2O, Ba và BaO) vào H2O dư, thu được dung dịch Y và 0,06 mol H2. Sục từ từ đến hết 0,12 mol CO2→

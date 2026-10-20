@@ -220,5 +220,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án hóa 11 bài 3 ôn tập chương 1 KNTT](/bai-viet/giao-an-hoa-11-bai-3-on-tap-chuong-1-kntt.html)
-[Giáo án hóa 11 bài 5 ammonia muối ammonium KNTT](/bai-viet/giao-an-hoa-11-bai-5-ammonia-muoi-ammonium-kntt.html)→
+←Giáo án hóa 11 bài 3 ôn tập chương 1 KNTT
+[Giáo án hóa 11 bài 5 ammonia muối ammonium KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-5-ammonia-muoi-ammonium-kntt.html)→

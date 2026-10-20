@@ -16,7 +16,7 @@ grade: 6
 
 **Lập trình Scratch** hiện đã được đưa vào dạy trong một số trường tiểu học và THCS trên cả nước.
 
-Xem thêm [HƯỚNG DẪN LẬP TRÌNH KODU GAME LAB](/bai-viet/lap-trinh-kodu-game-lab.html)
+Xem thêm HƯỚNG DẪN LẬP TRÌNH KODU GAME LAB
 
 ## Lập trình Scratch là gì?
 

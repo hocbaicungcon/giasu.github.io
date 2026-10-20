@@ -331,5 +331,5 @@ Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các
 
 [Tổng hợp giáo án và các chuyên đề học tập hoá học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 
-←[Giáo án hoá 10 Bài 15 Phương trình tốc độ phản ứng và hằng số tốc độ phản ứng](/bai-viet/giao-an-hoa-10-bai-15-phuong-trinh-toc-do-phan-ung-va-hang-so-toc-do-phan-ung.html)
-[Giáo án hoá 10 Bài 17 Tính chất vật lí và hoá học các đơn chất nhóm VIIA](/bai-viet/giao-an-hoa-10-bai-17-tinh-chat-vat-li-va-hoa-hoc-cac-don-chat-nhom-viia.html)→
+←Giáo án hoá 10 Bài 15 Phương trình tốc độ phản ứng và hằng số tốc độ phản ứng
+Giáo án hoá 10 Bài 17 Tính chất vật lí và hoá học các đơn chất nhóm VIIA→

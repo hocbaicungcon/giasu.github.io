@@ -16,7 +16,7 @@ grade: 9
 
 Cung và dây cung có mối liên hệ như thế nào? Đây là một kiến thức quan trọng trong chương trình lớp 9. Mời các em cùng tham khảo:
 
-- [Góc ở tâm, số đo cung trong đường tròn](/bai-viet/goc-o-tam-so-do-cung.html)
+- Góc ở tâm, số đo cung trong đường tròn
 
 - [Giải bài toán bằng cách lập hệ phương trình](/bai-viet/toan-9-giai-bai-toan-bang-cach-lap-he-phuong-trinh.html)
 

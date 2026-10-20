@@ -50,13 +50,13 @@ Xem thêm
 
 - [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -64,5 +64,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức Y](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-mot-muoi-natri-cua-axit-cacboxylic-hai-chuc-y.html)
+←Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức Y
 [Chất X có công thức phân tử C6H8O4. Cho 1 mol X phản ứng hết với dung dịch NaOH, thu được chất Y và 2 mol chất Z](/bai-viet/chat-x-co-cong-thuc-phan-tu-c6h8o4-cho-1-mol-x-phan-ung-het-voi-dung-dich-naoh-thu-duoc-chat-y-va-2-mol-chat-z.html)→

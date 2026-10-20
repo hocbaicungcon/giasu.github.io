@@ -28,11 +28,11 @@ cách 2
 
 Đây là một câu trong đề thi tốt nghiệp THPT 2023. Mời các thầy cô xem đầy đủ cả đề tại
 
-[Giải chi tiết mã 201 đề thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-ma-201-de-thi-tot-nghiep-thpt-2023-mon-hoa.html)
+Giải chi tiết mã 201 đề thi tốt nghiệp THPT 2023 môn hóa
 
 Hoặc xem thêm các đề thi khác của bộ giáo dục từ năm 2007 đến nay
 
 [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Phân tích nguyên tố hợp chất hữu cơ mạch hở E cho kết quả phần trăm khối lượng cacbon, hiđro, oxi lần lượng là 40,68%; 5,08%; 54,24%](/bai-viet/phan-tich-nguyen-to-hop-chat-huu-co-mach-ho-e-cho-ket-qua-phan-tram-khoi-luong-cacbon-hidro-oxi-lan-luong-la-4068-508-5424.html)
-[Cho hơi nước đi qua than nung đỏ, thu được 0,735 mol hỗn hợp khí X (gồm CO, CO2 và H2). Cho toàn bộ X tác dụng hết với](/bai-viet/cho-hoi-nuoc-di-qua-than-nung-do-thu-duoc-0735-mol-hon-hop-khi-x-gom-co-co2-va-h2-cho-toan-bo-x-tac-dung-het-voi.html)→
+←Phân tích nguyên tố hợp chất hữu cơ mạch hở E cho kết quả phần trăm khối lượng cacbon, hiđro, oxi lần lượng là 40,68%; 5,08%; 54,24%
+Cho hơi nước đi qua than nung đỏ, thu được 0,735 mol hỗn hợp khí X (gồm CO, CO2 và H2). Cho toàn bộ X tác dụng hết với→

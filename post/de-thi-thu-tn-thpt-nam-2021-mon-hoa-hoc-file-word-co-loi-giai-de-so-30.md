@@ -89,7 +89,7 @@ Cho biết nguyên tử khối của các nguyên tố: H=1; O=16; S=32; F=19; C
 
 **Câu 18:** Cho hình vẽ mô tả thí nghiệm điều chế khí X trong phòng thí nghiệm :
 
-![Đề thi thử TN THPT năm 2021 môn hóa học file word có lời giải đề số 30 1](file:///C:/Users/Admin/AppData/Local/Temp/lu5256y2f0t0.tmp/lu5256y2f1iz_tmp_903c5673c5ab89b5.png)
+
 
  
 
@@ -201,7 +201,7 @@ Số phát biểu đúng là
 
 **Câu 31:** Cho từ từ x mol khí CO2 vào 500 gam dung dịch hỗn hợp KOH và Ba(OH)2. Kết quả thí nghiệm được biểu diễn trên đồ thị sau:
 
-![Đề thi thử TN THPT năm 2021 môn hóa học file word có lời giải đề số 30 2](file:///C:/Users/Admin/AppData/Local/Temp/lu5256y2f0t0.tmp/lu5256y2f1iz_tmp_b79735c69010b4b2.png)
+
 
 Tổng nồng độ phần trăm khối lượng của các chất tan trong dung dịch sau phản ứng là
 
@@ -290,9 +290,9 @@ GIA SƯ THÔNG MINH gửi các thầy cô và các em link download đề thi
 
 Xem thêm
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
@@ -310,11 +310,11 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi thử TN THPT năm 2021 môn hóa học file word có lời giải đề số 29](/bai-viet/de-thi-thu-tn-thpt-nam-2021-mon-hoa-hoc-file-word-co-loi-giai-de-so-29.html)
-[Đề thi thử TN THPT môn hóa năm 2021 file word có lời giải đề số 2](/bai-viet/de-thi-thu-tn-thpt-mon-hoa-nam-2021-file-word-co-loi-giai-de-so-2.html)→
+←Đề thi thử TN THPT năm 2021 môn hóa học file word có lời giải đề số 29
+Đề thi thử TN THPT môn hóa năm 2021 file word có lời giải đề số 2→

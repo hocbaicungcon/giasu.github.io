@@ -12,7 +12,7 @@ tags:
 grade: 12
 ---
 
-| ![Đề thi học kì 2 môn hóa lớp 12 THPT Nguyễn Hiền 1](file:///C:/Users/Admin/AppData/Local/Temp/lu8805dlzoi.tmp/lu8805dlzu1_tmp_1cd084f26cc41e71.png) | KIỂM TRA HỌC KỲ II NĂM HỌC 2017-2018
+|  | KIỂM TRA HỌC KỲ II NĂM HỌC 2017-2018
 MÔN: HÓA KHỐI 12
 Phần A: TRẮC NGHIỆM KHÁCH QUAN
 Thời gian làm bài: 30 phút
@@ -152,13 +152,13 @@ Xem thêm
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi học kì 2 môn hóa lớp 12 THPT Nguyễn Du](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-12-thpt-nguyen-du.html)
-[Đề thi học kì 2 môn hóa lớp 12 THPT Nguyễn Huệ](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-12-thpt-nguyen-hue.html)→
+←Đề thi học kì 2 môn hóa lớp 12 THPT Nguyễn Du
+Đề thi học kì 2 môn hóa lớp 12 THPT Nguyễn Huệ→

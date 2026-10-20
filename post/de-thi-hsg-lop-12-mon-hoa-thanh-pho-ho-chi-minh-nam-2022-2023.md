@@ -30,5 +30,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Đề thi hsg lớp 12 môn hóa tỉnh Bắc Giang năm 2022 2023](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-bac-giang-nam-2022-2023.html)
-[Đề thi hsg lớp 10 môn hóa tỉnh Hà Tĩnh năm 2022 2023](/bai-viet/de-thi-hsg-lop-10-mon-hoa-tinh-ha-tinh-nam-2022-2023.html)→
+←Đề thi hsg lớp 12 môn hóa tỉnh Bắc Giang năm 2022 2023
+Đề thi hsg lớp 10 môn hóa tỉnh Hà Tĩnh năm 2022 2023→

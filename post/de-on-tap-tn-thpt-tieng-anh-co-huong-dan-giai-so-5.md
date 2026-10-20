@@ -13,13 +13,13 @@ grade: 12
 
 Quý thầy cô và các em học sinh tham khảo thêm
 
-- [Đề ôn tập thi TN THPT môn Tiếng Anh có đáp án chi tiết số 1](/bai-viet/de-on-tap-thi-tn-thpt-mon-tieng-anh-co-dap-an-chi-tiet.html)
+- Đề ôn tập thi TN THPT môn Tiếng Anh có đáp án chi tiết số 1
 
 - [ĐỀ ÔN TẬP THI TN THPT MÔN TIẾNG ANH CÓ ĐÁP ÁN CHI TIẾT SỐ 2](/bai-viet/de-on-tap-thi-tn-thpt-mon-tieng-anh-co-dap-an-chi-tiet-so-2-2.html)
 
-- [ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN CHI TIẾT SỐ 3](/bai-viet/de-on-tap-tn-thpt-tieng-anh-co-dap-an-chi-tiet-so-3.html)
+- ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN CHI TIẾT SỐ 3
 
-- [ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN SỐ 4](/bai-viet/de-on-tap-tn-thpt-tieng-anh-co-dap-an-so-4.html)
+- ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN SỐ 4
 
 **Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the other three in pronunciation in each of the following questions.**
 **Question 1**. **A**. visited **B**. played **C**. hated **D**. needed

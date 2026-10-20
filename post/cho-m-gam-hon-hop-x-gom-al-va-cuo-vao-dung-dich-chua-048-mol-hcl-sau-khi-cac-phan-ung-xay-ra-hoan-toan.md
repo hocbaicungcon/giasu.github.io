@@ -51,7 +51,7 @@ Hoặc xem thêm các tài liệu khác của  môn hóa học
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -59,19 +59,19 @@ Hoặc xem thêm các tài liệu khác của  môn hóa học
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -85,5 +85,5 @@ Hoặc xem thêm các tài liệu khác của  môn hóa học
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-←[Hỗn hợp T gồm ba este much hở X (đơn chức), Y (hai chức), Z (ba chức) đều được tạo thành từ axit cacboxylic có mạch cacbon không phân nhánh và ancol](/bai-viet/hon-hop-t-gom-ba-este-much-ho-x-don-chuc-y-hai-chuc-z-ba-chuc-deu-duoc-tao-thanh-tu-axit-cacboxylic-co-mach-cacbon-khong-phan-nhanh-va-ancol.html)
-[Cho các phát biểu sau: Khi trộn khí NH3 với khí HCl thì xuất hiện khói trắng](/bai-viet/cho-cac-phat-bieu-sau-khi-tron-khi-nh3-voi-khi-hcl-thi-xuat-hien-khoi-trang.html)→
+←Hỗn hợp T gồm ba este much hở X (đơn chức), Y (hai chức), Z (ba chức) đều được tạo thành từ axit cacboxylic có mạch cacbon không phân nhánh và ancol
+Cho các phát biểu sau: Khi trộn khí NH3 với khí HCl thì xuất hiện khói trắng→

@@ -30,9 +30,9 @@ grade: 11
 
 Mời các thầy cô xem đầy đủ đề tại
 
-[Đề thi thử tốt nghiệp THPT 2023 môn hóa sở GD Nam Định lần 2 và lời giải chi tiết](/bai-viet/de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-so-gd-nam-dinh-lan-2-va-loi-giai-chi-tiet.html)
+Đề thi thử tốt nghiệp THPT 2023 môn hóa sở GD Nam Định lần 2 và lời giải chi tiết
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
-←[Dung dịch X chứa 0,4 mol Cu(NO3)2 và a mol NaCl. Tiến hành điện phân dung dịch X (với điện cực trơ, màng ngăn) bằng dòng điện một chiều](/bai-viet/dung-dich-x-chua-04-mol-cuno32-va-a-mol-nacl-tien-hanh-dien-phan-dung-dich-x-voi-dien-cuc-tro-mang-ngan-bang-dong-dien-mot-chieu.html)
-[Cho các nhận xét sau: Phân tử amin no, đơn chức, mạch hở có số lẻ nguyên tử hiđro](/bai-viet/cho-cac-nhan-xet-sau-phan-tu-amin-no-don-chuc-mach-ho-co-so-le-nguyen-tu-hidro.html)→
+←Dung dịch X chứa 0,4 mol Cu(NO3)2 và a mol NaCl. Tiến hành điện phân dung dịch X (với điện cực trơ, màng ngăn) bằng dòng điện một chiều
+Cho các nhận xét sau: Phân tử amin no, đơn chức, mạch hở có số lẻ nguyên tử hiđro→

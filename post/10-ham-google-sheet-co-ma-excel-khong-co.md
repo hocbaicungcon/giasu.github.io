@@ -12,11 +12,11 @@ tags:
 - Google Sheets
 ---
 
-**[Microsoft Excel](/bai-viet/excel-la-phan-mem-gi.html) là ứng dụng bảng tính được sử dụng phổ biến nhất nhưng có những hàm mà chỉ Google Sheets mới có. Dưới đây là 10 hàm Google Sheet có mà Excel không có**!
+**Microsoft Excel là ứng dụng bảng tính được sử dụng phổ biến nhất nhưng có những hàm mà chỉ Google Sheets mới có. Dưới đây là 10 hàm Google Sheet có mà Excel không có**!
 
 Mời bạn tham khảo cách sử dụng hai phần mềm bảng tính nói trên:
 
-- [Hướng dẫn Google Sheets nhanh (Google Sheets cheat sheet)](/bai-viet/huong-dan-google-sheets-google-sheets-cheat-sheet.html)
+- Hướng dẫn Google Sheets nhanh (Google Sheets cheat sheet)
 
 - [10 HÀM EXCEL THÔNG DỤNG NHẤT](/bai-viet/10-ham-excel-thong-dung-nhat.html)
 

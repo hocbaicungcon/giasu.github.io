@@ -16,255 +16,255 @@ Mời các thầy cô truy cập vào link sau để xem và download các đề
 
 6 đề thi học kì 2 lớp 11 môn hóa – Cậu Vàng
 
-- [Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 1](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-sieu-pham-co-dap-an-de-so-1.html)
+- Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 1
 
-- [Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 2](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-sieu-pham-co-dap-an-de-so-2.html)
+- Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 2
 
-- [Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 3](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-sieu-pham-co-dap-an-de-so-3.html)
+- Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 3
 
-- [Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 4](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-sieu-pham-co-dap-an-de-so-4.html)
+- Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 4
 
-- [Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 5](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-sieu-pham-co-dap-an-de-so-5.html)
+- Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 5
 
-- [Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 6](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-sieu-pham-co-dap-an-de-so-6.html)
+- Đề thi học kì 2 môn hóa lớp 11 siêu phẩm có đáp án đề số 6
 
 Các đề khác
 
-1. [Đề thi học kì 2 lớp 11 môn hóa THPT Bùi Thị Xuân 2020 2021](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-thpt-bui-thi-xuan-2020-2021.html)
+1. Đề thi học kì 2 lớp 11 môn hóa THPT Bùi Thị Xuân 2020 2021
 
-2. [Đề thi học kì 2 lớp 11 môn hóa học THPT ALBERT EINSTEIN](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-albert-einstein.html)
+2. Đề thi học kì 2 lớp 11 môn hóa học THPT ALBERT EINSTEIN
 
-3. [Đề thi học kì 2 lớp 11 môn hóa học THPT An Nghĩa](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-an-nghia.html)
+3. Đề thi học kì 2 lớp 11 môn hóa học THPT An Nghĩa
 
 4. [Đề thi học kì 2 lớp 11 môn hóa học THPT Nguyễn Du](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-du.html)
 
-5. [Đề thi học kì 2 lớp 11 môn hóa học THPT Dương Văn Dương](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-duong-van-duong.html)
+5. Đề thi học kì 2 lớp 11 môn hóa học THPT Dương Văn Dương
 
-6. [Đề thi học kì 2 lớp 11 môn hóa học THPT Đông Đô](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-dong-do.html)
+6. Đề thi học kì 2 lớp 11 môn hóa học THPT Đông Đô
 
-7. [Đề thi học kì 2 lớp 11 môn hóa học THPT An Dương Vương](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-an-duong-vuong.html)
+7. Đề thi học kì 2 lớp 11 môn hóa học THPT An Dương Vương
 
-8. [Đề thi học kì 2 lớp 11 môn hóa học THPT Giồng Ông Tố](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-giong-ong-to.html)
+8. Đề thi học kì 2 lớp 11 môn hóa học THPT Giồng Ông Tố
 
-9. [Đề thi học kì 2 lớp 11 môn hóa học THPT Hiệp Bình](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-hiep-binh.html)
+9. Đề thi học kì 2 lớp 11 môn hóa học THPT Hiệp Bình
 
-10. [Đề thi học kì 2 lớp 11 môn hóa học THPT Lương Văn Cần](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-luong-van-can.html)
+10. Đề thi học kì 2 lớp 11 môn hóa học THPT Lương Văn Cần
 
-11. [Đề thi học kì 2 lớp 11 môn hóa học THPT Marie Curie](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-marie-curie.html)
+11. Đề thi học kì 2 lớp 11 môn hóa học THPT Marie Curie
 
-12. [Đề thi học kì 2 lớp 11 môn hóa học THPT An Lạc](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-an-lac.html)
+12. Đề thi học kì 2 lớp 11 môn hóa học THPT An Lạc
 
-13. [Đề thi học kì 2 lớp 11 môn hóa học THPT An Nhơn Tây](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-an-nhon-tay.html)
+13. Đề thi học kì 2 lớp 11 môn hóa học THPT An Nhơn Tây
 
-14. [Đề thi học kì 2 lớp 11 môn hóa học THPT Bà Điểm](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-ba-diem.html)
+14. Đề thi học kì 2 lớp 11 môn hóa học THPT Bà Điểm
 
-15. [Đề thi học kì 2 lớp 11 môn hóa học THPT Bách Việt](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-bach-viet.html)
+15. Đề thi học kì 2 lớp 11 môn hóa học THPT Bách Việt
 
-16. [Đề thi học kì 2 lớp 11 môn hóa học THPT Bình Chánh](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-binh-chanh.html)
+16. Đề thi học kì 2 lớp 11 môn hóa học THPT Bình Chánh
 
-17. [Đề thi học kì 2 lớp 11 môn hóa học THPT Bình Khánh](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-binh-khanh.html)
+17. Đề thi học kì 2 lớp 11 môn hóa học THPT Bình Khánh
 
-18. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bình Phú](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-binh-phu.html)
+18. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bình Phú
 
-19. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bình Tân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-binh-tan.html)
+19. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bình Tân
 
-20. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-bui-thi-xuan.html)
+20. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-bui-thi-xuan-2.html)
 
-21. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Chu Văn An](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-chu-van-an.html)
+21. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Chu Văn An
 
-22. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bắc Sơn](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-bac-son.html)
+22. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bắc Sơn
 
-23. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Đăng Khoa](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-dang-khoa.html)
+23. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Đăng Khoa
 
-24. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Gia Định](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-gia-dinh.html)
+24. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Gia Định
 
 25. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hai Bà Trưng](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-hai-ba-trung.html)
 
-26. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Gò Vấp](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-go-vap.html)
+26. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Gò Vấp
 
-27. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Duy Tân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-duy-tan.html)
+27. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Duy Tân
 
-28. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Diên Hồng](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-dien-hong.html)
+28. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Diên Hồng
 
-29. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hermann Gmeiner](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-hermann-gmeiner.html)
+29. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hermann Gmeiner
 
-30. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Hồng Phong](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-le-hong-phong.html)
+30. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Hồng Phong
 
-31. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hồng Hà](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-hong-ha.html)
+31. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hồng Hà
 
-32. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hồng Đức](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-hong-duc.html)
+32. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hồng Đức
 
-33. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Minh Xuân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-le-minh-xuan.html)
+33. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Minh Xuân
 
-34. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Quý Đôn](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-le-quy-don.html)
+34. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Quý Đôn
 
-35. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Thánh Tôn](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-le-thanh-ton.html)
+35. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lê Thánh Tôn
 
-36. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Minh Đức](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-minh-duc.html)
+36. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Minh Đức
 
-37. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lương Thế Vinh](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-luong-the-vinh.html)
+37. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lương Thế Vinh
 
-38. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Mùa Xuân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-mua-xuan.html)
+38. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Mùa Xuân
 
-39. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Ngô Gia Tự](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-ngo-gia-tu.html)
+39. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Ngô Gia Tự
 
-40. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Ngôi Sao](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-ngoi-sao.html)
+40. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Ngôi Sao
 
-41. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn An Ninh](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-an-ninh.html)
+41. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn An Ninh
 
-42. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Bỉnh Khiêm](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-binh-khiem.html)
+42. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Bỉnh Khiêm
 
-43. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Huệ](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-hue.html)
+43. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Huệ
 
-44. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Hữu Thọ](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-huu-tho.html)
+44. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Hữu Thọ
 
-45. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Hữu Tiến](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-huu-tien.html)
+45. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Hữu Tiến
 
-46. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Khuyến](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-khuyen.html)
+46. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Khuyến
 
-47. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Văn Cừ](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-van-cu.html)
+47. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Văn Cừ
 
-48. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phạm Ngũ Lão](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-pham-ngu-lao.html)
+48. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phạm Ngũ Lão
 
-49. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nhân Việt](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nhan-viet.html)
+49. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nhân Việt
 
-50. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Năng Khiếu TDTT](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nang-khieu-tdtt.html)
+50. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Năng Khiếu TDTT
 
-51. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phan Bội Châu](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-phan-boi-chau.html)
+51. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phan Bội Châu
 
-52. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phan Đăng Lưu](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-phan-dang-luu.html)
+52. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phan Đăng Lưu
 
-53. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phú Hòa](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-phu-hoa.html)
+53. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phú Hòa
 
-54. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phú Lâm](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-phu-lam.html)
+54. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phú Lâm
 
-55. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phú Nhuận](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-phu-nhuan.html)
+55. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phú Nhuận
 
-56. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phước Kiến](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-phuoc-kien.html)
+56. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Phước Kiến
 
-57. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Quốc Tế](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-quoc-te.html)
+57. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Quốc Tế
 
-58. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nhân Văn](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nhan-van.html)
+58. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nhân Văn
 
-59. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lạc Hồng](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-lac-hong.html)
+59. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lạc Hồng
 
 60. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-bui-thi-xuan-2.html)
 
-61. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Củ Chi](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-cu-chi.html)
+61. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Củ Chi
 
-62. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hoàng Hoa Thám](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-hoang-hoa-tham.html)
+62. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Hoàng Hoa Thám
 
-63. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Long Trường](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-long-truong.html)
+63. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Long Trường
 
 64. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Mạc Đĩnh Chi](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-mac-dinh-chi.html)
 
-65. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nam Việt](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nam-viet.html)
+65. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nam Việt
 
-66. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Ngô Thời Nhiệm](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-ngo-thoi-nhiem.html)
+66. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Ngô Thời Nhiệm
 
-67. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Công Trứ](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-cong-tru.html)
+67. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Công Trứ
 
 68. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Nguyễn Thượng Hiền](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-nguyen-thuong-hien.html)
 
-69. [Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lý Thường Kiệt](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-ly-thuong-kiet.html)
+69. Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lý Thường Kiệt
 
-70. [Đề thi học kì 2 môn hóa lớp 11 THPT Đinh Tiên Hoàng](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-dinh-tien-hoang.html)
+70. Đề thi học kì 2 môn hóa lớp 11 THPT Đinh Tiên Hoàng
 
-71. [Đề thi học kì 2 môn hóa lớp 11 THPT An Đông](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-an-dong.html)
+71. Đề thi học kì 2 môn hóa lớp 11 THPT An Đông
 
-72. [Đề thi học kì 2 môn hóa lớp 11 THPT Đào Duy Từ](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-dao-duy-tu.html)
+72. Đề thi học kì 2 môn hóa lớp 11 THPT Đào Duy Từ
 
-73. [Đề thi học kì 2 môn hóa lớp 11 THPT Đào Duy Anh](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-dao-duy-anh.html)
+73. Đề thi học kì 2 môn hóa lớp 11 THPT Đào Duy Anh
 
-74. [Đề thi học kì 2 môn hóa lớp 11 THPT Đinh Thiện Lý](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-dinh-thien-ly.html)
+74. Đề thi học kì 2 môn hóa lớp 11 THPT Đinh Thiện Lý
 
-75. [Đề thi học kì 2 môn hóa lớp 11 THPT Hoa Lư](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-hoa-lu.html)
+75. Đề thi học kì 2 môn hóa lớp 11 THPT Hoa Lư
 
 76. [Đề thi học kì 2 môn hóa lớp 11 THPT Hoa Sen](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-hoa-sen.html)
 
-77. [Đề thi học kì 2 môn hóa lớp 11 THPT Hưng Đạo](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-hung-dao.html)
+77. Đề thi học kì 2 môn hóa lớp 11 THPT Hưng Đạo
 
-78. [Đề thi học kì 2 môn hóa lớp 11 THPT Hùng Vương](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-hung-vuong.html)
+78. Đề thi học kì 2 môn hóa lớp 11 THPT Hùng Vương
 
-79. [Đề thi học kì 2 môn hóa lớp 11 THPT Mỹ Việt](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-my-viet.html)
+79. Đề thi học kì 2 môn hóa lớp 11 THPT Mỹ Việt
 
 80. [Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Hiền](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-hien.html)
 
-81. [Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Tất Thành](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-tat-thanh.html)
+81. Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Tất Thành
 
-82. [Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Thị Định](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-thi-dinh.html)
+82. Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Thị Định
 
-83. [Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Văn Linh](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-van-linh.html)
+83. Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Văn Linh
 
 84. [Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Thị Minh Khai](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-thi-minh-khai.html)
 
-85. [Đề thi học kì 2 môn hóa lớp 11 THPT Phan Châu Trinh](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-phan-chau-trinh.html)
+85. Đề thi học kì 2 môn hóa lớp 11 THPT Phan Châu Trinh
 
-86. [Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Trung Trực](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-trung-truc.html)
+86. Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Trung Trực
 
-87. [Đề thi học kì 2 môn hóa lớp 11 THPT Bình Hưng Hòa](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-binh-hung-hoa.html)
+87. Đề thi học kì 2 môn hóa lớp 11 THPT Bình Hưng Hòa
 
-88. [Đề thi học kì 2 môn hóa lớp 11 THPT Đức Trí](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-duc-tri.html)
+88. Đề thi học kì 2 môn hóa lớp 11 THPT Đức Trí
 
-89. [Đề thi học kì 2 môn hóa lớp 11 THPT Khai Minh](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-khai-minh.html)
+89. Đề thi học kì 2 môn hóa lớp 11 THPT Khai Minh
 
-90. [Đề thi học kì 2 môn hóa lớp 11 THPT Long Thới](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-long-thoi.html)
+90. Đề thi học kì 2 môn hóa lớp 11 THPT Long Thới
 
-91. [Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Thái Bình](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-thai-binh.html)
+91. Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Thái Bình
 
-92. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nam Sài Gòn](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-nam-sai-gon.html)
+92. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nam Sài Gòn
 
-93. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Hòa Bình](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-hoa-binh.html)
+93. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Hòa Bình
 
-94. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Trãi](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-trai.html)
+94. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Trãi
 
-95. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Đông Dương](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-dong-duong.html)
+95. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Đông Dương
 
-96. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Cần Thạnh](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-can-thanh.html)
+96. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Cần Thạnh
 
-97. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Bắc Mỹ](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-bac-my.html)
+97. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Bắc Mỹ
 
-98. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nam Kỳ Khởi Nghĩa](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-nam-ky-khoi-nghia.html)
+98. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nam Kỳ Khởi Nghĩa
 
-99. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Hữu Huân](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-huu-huan.html)
+99. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Hữu Huân
 
-100. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Chí Thanh](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-chi-thanh.html)
+100. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Chí Thanh
 
-101. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Hữu Cảnh](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-huu-canh.html)
+101. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Nguyễn Hữu Cảnh
 
-102. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Phạm Văn Sáng](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-pham-van-sang.html)
+102. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Phạm Văn Sáng
 
-103. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT năng khiếu OLYMPIC](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-nang-khieu-olympic.html)
+103. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT năng khiếu OLYMPIC
 
-104. [Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Quang Trung Nguyễn Huệ](/bai-viet/de-kiem-tra-hoc-ki-2-mon-hoa-lop-11-thpt-quang-trung-nguyen-hue.html)
+104. Đề kiểm tra học kì 2 môn hóa lớp 11 THPT Quang Trung Nguyễn Huệ
 
-105. [Đề thi học kì 2 môn hóa lớp 11 THPT Như Xuân trắc nghiệm](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nhu-xuan-trac-nghiem.html)
+105. Đề thi học kì 2 môn hóa lớp 11 THPT Như Xuân trắc nghiệm
 
-106. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 1](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-1.html)
+106. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 1
 
-107. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 2](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-2.html)
+107. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 2
 
-108. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 3](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-3.html)
+108. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 3
 
-109. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 4](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-4.html)
+109. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 4
 
-110. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 5](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-5.html)
+110. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 5
 
-111. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 6](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-6.html)
+111. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 6
 
-112. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 7](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-7.html)
+112. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 7
 
-113. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 8](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-trac-nghiem-de-so-8.html)
+113. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 8
 
-114. [Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 9](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-trac-nghiem-de-so-9.html)
+114. Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 9
 
-115. [Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 10](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-trac-nghiem-de-so-10.html)
+115. Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 10
 
-116. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 11](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-de-so-11.html)
+116. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm đề số 11
 
-117. [Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 12](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-trac-nghiem-de-so-12.html)
+117. Đề thi học kì 2 lớp 11 môn hóa trắc nghiệm đề số 12
 
-118. [Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm số 13](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-trac-nghiem-so-13.html)
+118. Đề thi học kì 2 môn hóa lớp 11 trắc nghiệm số 13
 
  
 
@@ -272,11 +272,11 @@ Các đề khác
 
 Mời các thầy cô và các em xem thêm
 
-- [Đề cương ôn tập học kì 2 môn hóa lớp 11](/bai-viet/de-cuong-on-tap-hoc-ki-2-mon-hoa-lop-11.html)
+- Đề cương ôn tập học kì 2 môn hóa lớp 11
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
  
 
@@ -290,7 +290,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [200 câu lý thuyết đếm hóa học lớp 12 có đáp án ôn thi TN THPT](/bai-viet/200-cau-ly-thuyet-dem-hoa-hoc-lop-12-co-dap-an.html)
 
-- [Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án](/bai-viet/cau-hoi-tim-chat-vo-co-van-dung-cao.html)
+- Tổng hợp câu hỏi tìm chất vô cơ vận dụng cao có đáp án
 
 - [Tổng hợp kĩ thuật phương pháp giải bài tập peptit đầy đủ chi tiết](/bai-viet/tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet.html)
 
@@ -302,7 +302,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -310,19 +310,19 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -338,23 +338,23 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 23 phương pháp giải bài tập môn hóa học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-- [Tư duy NAP về tính bất biến của kim loại](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-kim-loai.html)
+- Tư duy NAP về tính bất biến của kim loại
 
-- [Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-hon-hop-chua-hop-chat.html)
+- Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất
 
-- [Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn](/bai-viet/tu-duy-nap-di-tat-don-dau-ket-hop-voi-cac-dinh-luat-bao-toan.html)
+- Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn
 
-- [Tư duy NAP phân chia nhiệm vụ H+](/bai-viet/tu-duy-nap-phan-chia-nhiem-vu-h.html)
+- Tư duy NAP phân chia nhiệm vụ H+
 
-- [Vận dụng linh hoạt và liên hoàn các định luật bảo toàn](/bai-viet/van-dung-linh-hoat-va-lien-hoan-cac-dinh-luat-bao-toan.html)
+- Vận dụng linh hoạt và liên hoàn các định luật bảo toàn
 
-- [Bài toán vận dụng tư duy điền số điện tích có lời giải chi tiết](/bai-viet/bai-toan-van-dung-tu-duy-dien-so-dien-tich.html)
+- Bài toán vận dụng tư duy điền số điện tích có lời giải chi tiết
 
-- [Bài toán khử oxit kim loại bằng H2 CO hoặc C có lời giải chi tiết](/bai-viet/bai-toan-khu-oxit-kim-loai-bang-h2-co-hoac-c-co-loi-giai-chi-tiet.html)
+- Bài toán khử oxit kim loại bằng H2 CO hoặc C có lời giải chi tiết
 
-- [Bài toán kim loại tác dụng với dung dịch muối có lời giải chi tiết](/bai-viet/bai-toan-kim-loai-tac-dung-voi-dung-dich-muoi-co-loi-giai-chi-tiet.html)
+- Bài toán kim loại tác dụng với dung dịch muối có lời giải chi tiết
 
-- [Bài toán kim loại tác dụng với axit HCl H2SO4 có lời giải chi tiết](/bai-viet/bai-toan-kim-loai-tac-dung-voi-axit-hcl-h2so4-co-loi-giai-chi-tiet.html)
+- Bài toán kim loại tác dụng với axit HCl H2SO4 có lời giải chi tiết
 
 - [Lý thuyết và bài tập kim loại tác dụng với axit HNO3 có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-kim-loai-tac-dung-voi-axit-hno3-co-loi-giai-chi-tiet.html)
 
@@ -370,15 +370,15 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [30+ bài toán nhiệt nhôm có lời giải chi tiết](/bai-viet/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet.html)
 
-- [Bài toán hỗn hợp Na K Ca Ba và oxit tác dụng với nước có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-na-k-ca-ba-va-oxit-tac-dung-voi-nuoc-co-loi-giai-chi-tiet.html)
+- Bài toán hỗn hợp Na K Ca Ba và oxit tác dụng với nước có lời giải chi tiết
 
-- [Bài toán hỗn hợp Al Na K Ca Ba tác dụng với nước có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-al-na-k-ca-ba-tac-dung-voi-nuoc-co-loi-giai-chi-tiet.html)
+- Bài toán hỗn hợp Al Na K Ca Ba tác dụng với nước có lời giải chi tiết
 
-- [Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-ket-tua-cua-baco3-va-aloh3.html)
+- Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết
 
-- [Các dạng toán nâng cao về sắt và các hợp chất của sắt có lời giải chi tiết](/bai-viet/cac-dang-toan-nang-cao-ve-sat-va-cac-hop-chat-cua-sat.html)
+- Các dạng toán nâng cao về sắt và các hợp chất của sắt có lời giải chi tiết
 
-- [Bài toán liên quan tới phản ứng Fe2+ tác dụng với Ag+ có lời giải chi tiết](/bai-viet/bai-toan-lien-quan-toi-phan-ung-fe2-tac-dung-voi-ag-co-loi-giai-chi-tiet.html)
+- Bài toán liên quan tới phản ứng Fe2+ tác dụng với Ag+ có lời giải chi tiết
 
 - [Bài tập tổng hợp hóa học vô cơ 12 có lời giải chi tiết](/bai-viet/bai-tap-tong-hop-hoa-hoc-vo-co-12-co-loi-giai-chi-tiet.html)
 
@@ -386,13 +386,13 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Các bài toán đặc trưng về anken và ankin](/bai-viet/cac-bai-toan-dac-trung-ve-anken-va-ankin.html)
 
-- [Bài toán cộng H2 Br2 vào hiđrocacbon không no mạch hở](/bai-viet/bai-toan-cong-h2-br2-vao-hidrocacbon-khong-no-mach-ho.html)
+- Bài toán cộng H2 Br2 vào hiđrocacbon không no mạch hở
 
-- [Vận dụng tinh tế công thức đốt cháy vào bài toán đốt cháy hỗn hợp hiđrocacbon](/bai-viet/van-dung-tinh-te-cong-thuc-dot-chay-vao-bai-toan-dot-chay-hon-hop-hidrocacbon.html)
+- Vận dụng tinh tế công thức đốt cháy vào bài toán đốt cháy hỗn hợp hiđrocacbon
 
-- [Vận dụng tư duy dồn chất giải toán hiđrocacbon](/bai-viet/van-dung-tu-duy-don-chat-giai-toan-hidrocacbon.html)
+- Vận dụng tư duy dồn chất giải toán hiđrocacbon
 
-- [Tư duy xếp hình cho cacbon trong bài toán hiđrocacbon](/bai-viet/tu-duy-xep-hinh-cho-cacbon-trong-bai-toan-hidrocacbon.html)
+- Tư duy xếp hình cho cacbon trong bài toán hiđrocacbon
 
 - [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 

@@ -12,7 +12,7 @@ tags:
 grade: 11
 ---
 
-![Đề thi học kì 2 lớp 11 môn hóa học THPT Nguyễn Du 1](file:///C:/Users/Admin/AppData/Local/Temp/lu121606vt6v8.tmp/lu121606vt74s_tmp_932e4b64222d5273.jpg)
+
 
 **ĐỀ THI HỌC KÌ II – MÔN HÓA
 **Lớp 11 –NĂM HỌC 2017-2018
@@ -92,13 +92,13 @@ Xem thêm
 
 [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi học kì 2 lớp 11 môn hóa học THPT An Nghĩa](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-an-nghia.html)
-[Đề thi học kì 2 lớp 11 môn hóa học THPT Dương Văn Dương](/bai-viet/de-thi-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-duong-van-duong.html)→
+←Đề thi học kì 2 lớp 11 môn hóa học THPT An Nghĩa
+Đề thi học kì 2 lớp 11 môn hóa học THPT Dương Văn Dương→

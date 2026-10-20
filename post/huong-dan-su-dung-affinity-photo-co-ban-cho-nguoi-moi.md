@@ -13,7 +13,7 @@ tags:
 - Chỉnh sửa ảnh
 ---
 
-Hướng dẫn sử dụng Affinity Photo cơ bản cho người mới, so sánh Affinity Photo với [Photoshop](/bai-viet/cac-phan-mem-cua-adobe-va-cong-dung-de-lam-gi.html). Affinity Photo là chương trình chỉnh sửa ảnh dành cho người dùng mới rất dễ học, dễ sử dụng.
+Hướng dẫn sử dụng Affinity Photo cơ bản cho người mới, so sánh Affinity Photo với Photoshop. Affinity Photo là chương trình chỉnh sửa ảnh dành cho người dùng mới rất dễ học, dễ sử dụng.
 
 ## Affinity Photo là gì?
 

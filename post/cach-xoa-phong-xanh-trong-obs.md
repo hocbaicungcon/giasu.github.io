@@ -14,7 +14,7 @@ tags:
 grade: 10
 ---
 
-Nếu bạn đã setup phòng thu của mình đúng chuẩn với phông nền màu xanh lá cây và ánh sáng, thì việc xóa phông xanh trong OBS, [Capcut](/bai-viet/cach-xoa-phong-nen-video-tren-capcut.html) hoặc [Final Cut Pro](/bai-viet/cach-xoa-phong-xanh-trong-final-cut-pro.html) hoặc Adobe After Effects sẽ trở nên vô cùng dễ dàng.
+Nếu bạn đã setup phòng thu của mình đúng chuẩn với phông nền màu xanh lá cây và ánh sáng, thì việc xóa phông xanh trong OBS, Capcut hoặc Final Cut Pro hoặc Adobe After Effects sẽ trở nên vô cùng dễ dàng.
 
 - **Bước 1.** Mở chương trình OBS và thêm nguồn video của bạn (có thể là webcam, màn hình, cửa sổ ứng dụng, tệp video…)
 
@@ -22,7 +22,7 @@ Nếu bạn đã setup phòng thu của mình đúng chuẩn với phông nền 
 
 ![Cách xóa phông xanh trong OBS](assets/images/cach-xoa-phong-xanh-trong-obs-obs-green-screen.jpg)
 
-- **Bước 3.** Nhấp vào biểu tượng ‘+’ trong phần **Effect Filters** (Bộ lọc Hiệu ứng), sau đó chọn ‘[Chroma Key](/bai-viet/chroma-key-la-gi.html)‘.
+- **Bước 3.** Nhấp vào biểu tượng ‘+’ trong phần **Effect Filters** (Bộ lọc Hiệu ứng), sau đó chọn ‘Chroma Key‘.
 
 ![Cách xóa phông xanh trong OBS bằng thêm hiệu ứng Chroma Key](assets/images/cach-xoa-phong-xanh-trong-obs-obs-chroma-key.jpg)
 

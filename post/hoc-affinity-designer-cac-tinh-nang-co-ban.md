@@ -21,7 +21,7 @@ Bộ ba phần mềm Photo, Designer và Publisher của Affinity
 
 Affinity Designer không chỉ cho phép bạn làm việc với ảnh vector mà còn cả ảnh raster (pixel). Affinity Designer có thể mở và làm việc với cả file PSD của Photoshop và file ESP của Illustrator nên rất tiện lợi.
 
-Không thể so sánh Affinity Designer với những phần mềm thiết kế online như [Canva](/bai-viet/huong-dan-su-dung-canva.html), Crello, DesignBold… Vì những phần mềm thiết kế online dành cho những bạn không biết sử dụng phần mềm thiết kế chuyên nghiệp hoặc đang cần tạo thiết kế nhanh bằng những mẫu template sẵn có trong vài phút
+Không thể so sánh Affinity Designer với những phần mềm thiết kế online như Canva, Crello, DesignBold… Vì những phần mềm thiết kế online dành cho những bạn không biết sử dụng phần mềm thiết kế chuyên nghiệp hoặc đang cần tạo thiết kế nhanh bằng những mẫu template sẵn có trong vài phút
 
 ## Học Affinity Designer qua các khái niệm cơ bản
 

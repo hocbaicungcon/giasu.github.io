@@ -70,4 +70,4 @@ Mời các thầy cô và các em xem thêm
 [Tổng hợp các chuyên đề hóa học lớp 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)
 
 ←[Giáo án KHBD Hóa 12 CTST Word + Powerpoint cả năm](/bai-viet/giao-an-khbd-hoa-12-ctst-word-powerpoint-ca-nam.html)
-[Hướng Dẫn Sử Dụng Pages Soạn Thảo Văn Bản Trên MacBook](/bai-viet/huong-dan-su-dung-pages-soan-thao-van-ban-tren-macbook.html)→
+Hướng Dẫn Sử Dụng Pages Soạn Thảo Văn Bản Trên MacBook→

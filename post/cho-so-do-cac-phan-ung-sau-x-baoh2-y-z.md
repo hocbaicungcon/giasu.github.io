@@ -36,11 +36,11 @@ Dựa vào phản ứng (3) và các phương án ⇒ T là BaCl2 ⇒ chọn B
 
 Mời các thầy cô xem thêm các câu khác của mã đề tại
 
-[Giải chi tiết mã 202 đề thi tốt nghiệp THPT 2022 môn hóa](/bai-viet/giai-chi-tiet-ma-202-de-thi-tot-nghiep-thpt-2022-mon-hoa.html)
+Giải chi tiết mã 202 đề thi tốt nghiệp THPT 2022 môn hóa
 
 Hoặc xem thêm các đề thi khác tại
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Cho các phát biểu sau: Cho đá vôi vào dung dịch axit axetic sẽ có khí bay ra.](/bai-viet/cho-cac-phat-bieu-sau-cho-da-voi-vao-dung-dich-axit-axetic-se-co-khi-bay-ra.html)
-[Học ngành Marketing ra trường làm gì?](/bai-viet/hoc-nganh-marketing-ra-truong-lam-gi.html)→
+←Cho các phát biểu sau: Cho đá vôi vào dung dịch axit axetic sẽ có khí bay ra.
+Học ngành Marketing ra trường làm gì?→

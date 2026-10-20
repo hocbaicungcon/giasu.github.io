@@ -12,7 +12,7 @@ tags:
 - Sudoku
 ---
 
-Trong bài này chúng ta sẽ sử dụng **thuật toán quay lui** để giải quyết bài toán giải Sudoku. Để hiểu thuật toán quay lui là gì mời bạn xem bài [Thuật toán quay lui và minh họa](/bai-viet/thuat-toan-quay-lui-va-minh-hoa.html).
+Trong bài này chúng ta sẽ sử dụng **thuật toán quay lui** để giải quyết bài toán giải Sudoku. Để hiểu thuật toán quay lui là gì mời bạn xem bài Thuật toán quay lui và minh họa.
 
 Xem thêm: [Python: Bài toán xếp hậu sử dụng đệ quy](/bai-viet/python-bai-toan-xep-hau-su-dung-de-quy.html)
 

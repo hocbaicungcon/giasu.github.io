@@ -93,7 +93,7 @@ Trên các máy tính dùng Windows, Python thường được cài đặt vào 
 
 Gõ một ký tự kết thúc tập tin (end-of-file character) (Control-D trên Unix, Control-Z trên Windows) tại dấu nhắc của bộ thông dịch sẽ thoát khỏi bộ thông dịch và trả về trạng thái kết thúc chương trình là `0` (không) cho hệ điều hành, bạn cũng có thể thoát khỏi bộ thông dịch bằng các lệnh sau: “`import sys; sys.exit()`“.
 
-Tính năng soạn thảo theo dòng của bộ thông dịch thường không phức tạp lắm. Trên Unix, bất cứ ai đã cài đặt bộ thông dịch đều có thể bật chế độ hỗ trợ cho thư viện GNU readline, điều này sẽ bổ sung tính năng soạn thảo tương tác tốt hơn cũng như các tính năng lịch sử lệnh. Có thể kiểm tra việc hỗ trợ tính năng soạn thảo dòng bằng cách nhấn Control-P tại dấu nhắc đầu tiên của Python. Nếu có tiếng bíp, bộ thông dịch của bạn có hỗ trợ soạn thảo dòng; xem phụ lục [A](../../../../My%20Web%20Sites/http___www.vithon.org_tutorial_2.5_tut.html/www.vithon.org/tutorial/2.5/node15.html#interacting) để biết về các phím. Nếu không có gì xảy ra, hoặc kí tự *P* hiện lên, thì tính năng soạn thảo dòng không được hỗ trợ; bạn chỉ việc dùng phím lùi (backspace) để xóa kí tự hiện ra.
+Tính năng soạn thảo theo dòng của bộ thông dịch thường không phức tạp lắm. Trên Unix, bất cứ ai đã cài đặt bộ thông dịch đều có thể bật chế độ hỗ trợ cho thư viện GNU readline, điều này sẽ bổ sung tính năng soạn thảo tương tác tốt hơn cũng như các tính năng lịch sử lệnh. Có thể kiểm tra việc hỗ trợ tính năng soạn thảo dòng bằng cách nhấn Control-P tại dấu nhắc đầu tiên của Python. Nếu có tiếng bíp, bộ thông dịch của bạn có hỗ trợ soạn thảo dòng; xem phụ lục A để biết về các phím. Nếu không có gì xảy ra, hoặc kí tự *P* hiện lên, thì tính năng soạn thảo dòng không được hỗ trợ; bạn chỉ việc dùng phím lùi (backspace) để xóa kí tự hiện ra.
 
 Bộ thông dịch Python hoạt động khá giống với vỏ Unix: khi được gọi với một đầu nhập chuẩn đã kết nối với một thiết bị đầu cuối (tty device), nó đọc và thực hiện các lệnh một cách tương tác; khi được gọi với tham số là một tên tập tin hoặc với đầu vào chuẩn là một tập tin, nó đọc và thực hiện *kịch bản* chứa trong tập đó.
 
@@ -2384,7 +2384,7 @@ self.message = message
 
 Đa số biệt lệ được định nghĩa với tên tận cùng bằng “`Error`”, tương tự như cách đặt tên của các biệt lệ chuẩn.
 
-Nhiều mô-đun chuẩn định nghĩa biệt lệ riêng cho chúng để thông báo những lỗi mà có thể xảy ra trong các hàm chúng định nghĩa. Thông tin thêm về các lớp được trình bày trong chương [9](../../../../My%20Web%20Sites/http___www.vithon.org_tutorial_2.5_tut.html/www.vithon.org/tutorial/2.5/node11.html#classes), “Lớp”.
+Nhiều mô-đun chuẩn định nghĩa biệt lệ riêng cho chúng để thông báo những lỗi mà có thể xảy ra trong các hàm chúng định nghĩa. Thông tin thêm về các lớp được trình bày trong chương 9, “Lớp”.
 
 ### 8.6 Định nghĩa cách xử lý
 
@@ -3456,7 +3456,7 @@ Các tài nguyên Python khác:
 
 - [http://aspn.activestate.com/ASPN/Python/Cookbook/](http://aspn.activestate.com/ASPN/Python/Cookbook/): Sách dạy nấu ăn Python (Python Cookbook) là một tập hợp lớn các mã mẫu, các mô-đun lớn hơn, và các kịch bản hữu dụng. Các đóng góp quan trọng được thu thập vào một quyển sách tên là *Python Cookbook* (O’Reilly & Associates, ISBN 0-596-00797-3.)
 
-Để hỏi các câu hỏi liên quan tới Python và thông báo lỗi, bạn có thể gửi với nhóm tin [comp.lang.python](news:comp.lang.python), hoặc gửi chúng tới danh sách thư tín python-list@python.org. Nhóm tin và danh sách thư tín được nối chung với nhau, nên các tin gửi ở nơi này sẽ tự động có mặt ở nơi kia. Có khoảng 120 bài gửi một ngày (cao nhất là vài trăm), hỏi (và trả lời) câu hỏi, đề xuất các tính năng mới, và thông báo các mô-đun mới. Trước khi gửi, hãy nhớ xem qua danh sách [Các câu hỏi thường hỏi (Frequently Asked Question)](http://www.python.org/doc/faq/) (còn được gọi là FAQ), hoặc xem qua thư mục Misc/ của bản phân phối nguồn Python. Kho lưu trữ nhóm tin có ở [http://mail.python.org/pipermail/](http://mail.python.org/pipermail/). FAQ trả lời nhiều câu hỏi hay gặp thường xuyên, và có thể câu hỏi của bạn cũng có ở trong này.
+Để hỏi các câu hỏi liên quan tới Python và thông báo lỗi, bạn có thể gửi với nhóm tin comp.lang.python, hoặc gửi chúng tới danh sách thư tín python-list@python.org. Nhóm tin và danh sách thư tín được nối chung với nhau, nên các tin gửi ở nơi này sẽ tự động có mặt ở nơi kia. Có khoảng 120 bài gửi một ngày (cao nhất là vài trăm), hỏi (và trả lời) câu hỏi, đề xuất các tính năng mới, và thông báo các mô-đun mới. Trước khi gửi, hãy nhớ xem qua danh sách [Các câu hỏi thường hỏi (Frequently Asked Question)](http://www.python.org/doc/faq/) (còn được gọi là FAQ), hoặc xem qua thư mục Misc/ của bản phân phối nguồn Python. Kho lưu trữ nhóm tin có ở [http://mail.python.org/pipermail/](http://mail.python.org/pipermail/). FAQ trả lời nhiều câu hỏi hay gặp thường xuyên, và có thể câu hỏi của bạn cũng có ở trong này.
 
 ## Glossary
 
@@ -3625,4 +3625,4 @@ Các tài nguyên Python khác:
 [[5]](#_ftnref5)Trừ một chuyện. Các đối tượng mô-đun có một thuộc tính chỉ đọc gọi là `__dict__` trả về một từ điển dùng để cài đặt vùng tên của mô-đun; tên `__dict__` là một thuộc tính nhưng không phải là một tên toàn cục. Rõ ràng, sử dụng nó vi phạm tính trừu tượng của cài đặt vùng tên, và nên được giới hạn vào những chuyện như gỡ rối.
 
 ←[Bài 7. Câu lệnh vòng lặp while trong Python](/bai-viet/cau-lenh-vong-lap-while-trong-python.html)
-[Kiểu logic Boolean trong Python](/bai-viet/kieu-logic-boolean-trong-python.html)→
+Kiểu logic Boolean trong Python→

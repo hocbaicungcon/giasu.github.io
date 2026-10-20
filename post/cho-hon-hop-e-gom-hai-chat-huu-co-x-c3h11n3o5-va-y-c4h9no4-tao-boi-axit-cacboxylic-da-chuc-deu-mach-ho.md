@@ -29,13 +29,13 @@ A. 58,68. B. 69,48. C. 61,56. D. 64,44.
 
 Xem thêm
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -43,5 +43,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m+4O2N2) là muối amoni](/bai-viet/chat-x-cnh2n4o4n2-la-muoi-amoni-cua-axit-cacboxylic-da-chuc-chat-y-cmh2m4o2n2-la-muoi-amoni.html)
-[Cho 0,2 mol hỗn hợp E gồm chất X (CnH2n+4O4N2) và chất Y (CmH2m+3O2N) đều mạch hở tác dụng vừa đủ với](/bai-viet/cho-02-mol-hon-hop-e-gom-chat-x-cnh2n4o4n2-va-chat-y-cmh2m3o2n-deu-mach-ho-tac-dung-vua-du-voi.html)→
+←Chất X (CnH2n+4O4N2) là muối amoni của axit cacboxylic đa chức, chất Y (CmH2m+4O2N2) là muối amoni
+Cho 0,2 mol hỗn hợp E gồm chất X (CnH2n+4O4N2) và chất Y (CmH2m+3O2N) đều mạch hở tác dụng vừa đủ với→

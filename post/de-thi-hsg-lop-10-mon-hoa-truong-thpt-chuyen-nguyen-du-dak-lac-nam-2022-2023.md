@@ -164,7 +164,7 @@ Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khá
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
-- [Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+- Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 - [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
@@ -172,5 +172,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Đề thi HSG lớp 10 môn hóa trường THPT Đông Du Đắk Lắc Năm 2022 2023](/bai-viet/de-thi-hsg-lop-10-mon-hoa-truong-thpt-dong-du-dak-lac-nam-2022-2023.html)
-[Đề thi HSG lớp 10 môn hóa trường THPT Lê Quý Đôn Đắk Lắc Năm 2022 2023](/bai-viet/de-thi-hsg-lop-10-mon-hoa-truong-thpt-le-quy-don-dak-lac-nam-2022-2023.html)→
+←Đề thi HSG lớp 10 môn hóa trường THPT Đông Du Đắk Lắc Năm 2022 2023
+Đề thi HSG lớp 10 môn hóa trường THPT Lê Quý Đôn Đắk Lắc Năm 2022 2023→

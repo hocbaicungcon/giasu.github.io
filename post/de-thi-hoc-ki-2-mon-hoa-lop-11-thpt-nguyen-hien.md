@@ -12,7 +12,7 @@ tags:
 grade: 11
 ---
 
-| ![Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Hiền 1](file:///C:/Users/Admin/AppData/Local/Temp/lu11112wafywg.tmp/lu11112wafzle_tmp_225b348b749c6249.png) | KIỂM TRA HỌC KỲ II NĂM HỌC 2017-2018
+|  | KIỂM TRA HỌC KỲ II NĂM HỌC 2017-2018
 MÔN: HÓA KHỐI: 11
 Thời gian làm bài: 45 PHÚT
 Đề thi gồm 01 trang 8 câu. |
@@ -181,13 +181,13 @@ Xem thêm
 
 [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi học kì 2 môn hóa lớp 11 THPT Mỹ Việt](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-my-viet.html)
-[Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Tất Thành](/bai-viet/de-thi-hoc-ki-2-mon-hoa-lop-11-thpt-nguyen-tat-thanh.html)→
+←Đề thi học kì 2 môn hóa lớp 11 THPT Mỹ Việt
+Đề thi học kì 2 môn hóa lớp 11 THPT Nguyễn Tất Thành→

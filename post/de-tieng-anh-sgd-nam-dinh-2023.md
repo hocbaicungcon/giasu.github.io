@@ -15,7 +15,7 @@ grade: 12
 
 GIA SƯ THÔNG MINH xin gửi thầy cô Đề Tiếng Anh SGD Nam Định 2023 lớp 12 và đáp án. Mời Thầy Cô và các em tham khảo thêm:
 
-- [Đề tiếng Anh SGD Nam Định 2022](/bai-viet/de-tieng-anh-sgd-nam-dinh-2022.html)
+- Đề tiếng Anh SGD Nam Định 2022
 
 - [Đề và đáp án tiếng Anh 12 SGD Hà Nội 2023](/bai-viet/de-va-dap-an-tieng-anh-12-sgd-ha-noi-2023.html)
 

@@ -15,7 +15,7 @@ tags:
 grade: 10
 ---
 
-Xem thêm [Toán 10 – Biện luận hệ phương trình, hệ bất phương trình bằng đồ thị](/bai-viet/bien-luan-he-phuong-trinh-bang-do-thi.html)
+Xem thêm Toán 10 – Biện luận hệ phương trình, hệ bất phương trình bằng đồ thị
 
 ## 1. Hệ trục tọa độ trong mặt phẳng
 

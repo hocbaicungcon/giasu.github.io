@@ -143,4 +143,4 @@ Mời các thầy cô và các em xem thêm
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
 ←[Giáo án chuyên đề học tập Bài 6 Điểm chớp cháy Nhiệt độ ngọn lửa Nhiệt độ tự bốc cháy](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-6-diem-chop-chay-nhiet-do-ngon-lua-nhiet-do-tu-boc-chay.html)
-[Chú đại bi bản chuẩn nhất dễ học thuộc](/bai-viet/chu-dai-bi-ban-chuan-nhat-de-hoc-thuoc.html)→
+Chú đại bi bản chuẩn nhất dễ học thuộc→

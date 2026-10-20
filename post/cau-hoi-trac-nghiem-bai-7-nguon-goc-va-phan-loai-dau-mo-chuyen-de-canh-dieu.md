@@ -329,4 +329,4 @@ Mời các thầy cô và các em xem thêm
 [Câu hỏi trắc nghiệm và phân dạng bài tập theo từng bài hóa 11 cả năm](/bai-viet/cau-hoi-trac-nghiem-va-phan-dang-bai-tap-theo-tung-bai-hoa-11-ca-nam.html)
 
 ←[Câu hỏi trắc nghiệm bài 6 điều chế glucosamine hydrochloride từ vỏ tôm chuyên đề cánh diều](/bai-viet/cau-hoi-trac-nghiem-bai-6-dieu-che-glucosamine-hydrochloride-tu-vo-tom-chuyen-de-canh-dieu.html)
-[Câu hỏi trắc nghiệm bài 8 chế biến dầu mỏ chuyên đề cánh diều](/bai-viet/cau-hoi-trac-nghiem-bai-8-che-bien-dau-mo-chuyen-de-canh-dieu.html)→
+Câu hỏi trắc nghiệm bài 8 chế biến dầu mỏ chuyên đề cánh diều→

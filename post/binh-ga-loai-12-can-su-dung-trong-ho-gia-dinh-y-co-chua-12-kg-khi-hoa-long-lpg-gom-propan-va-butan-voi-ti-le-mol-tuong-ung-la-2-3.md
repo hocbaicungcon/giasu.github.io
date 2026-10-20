@@ -29,11 +29,11 @@ C2
 
 Mời các thầy cô và các em xem đầy đủ cả đề tại đây
 
-[Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa](/bai-viet/giai-chi-tiet-de-minh-hoa-thi-tot-nghiep-thpt-2022-mon-hoa.html)
+Giải chi tiết đề minh họa thi tốt nghiệp THPT 2023 môn hóa
 
 Hoặc xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 ←[Chất béo X gồm các triglixerit. Phần trăm khối lượng của cacbon và hiđro trong X lần lượt là 77,25% và 11,75%](/bai-viet/chat-beo-x-gom-cac-triglixerit-phan-tram-khoi-luong-cua-cacbon-va-hidro-trong-x-lan-luot-la-7725-va-1175.html)
-[Hỗn hợp E gồm Fe, Fe3O4, Fe2O3 và FeCO3. Nung 42,8 gam E trong bình kín chứa 0,05 mol khí O2 thu được chất rắn X](/bai-viet/hon-hop-e-gom-fe-fe3o4-fe2o3-va-feco3-nung-428-gam-e-trong-binh-kin-chua-005-mol-khi-o2-thu-duoc-chat-ran-x.html)→
+Hỗn hợp E gồm Fe, Fe3O4, Fe2O3 và FeCO3. Nung 42,8 gam E trong bình kín chứa 0,05 mol khí O2 thu được chất rắn X→

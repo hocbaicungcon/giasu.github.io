@@ -17,7 +17,7 @@ tags:
 
 ![Cách chia tính từ trong tiếng Đức](assets/images/cach-chia-tinh-tu-trong-tieng-duc-cach-chia-tinh-tu-tieng-duc.webp)
 
-Mời bạn tham khảo [Cách nhận biết giống của danh từ trong tiếng Đức](/bai-viet/cach-nhan-biet-giong-cua-danh-tu-trong-tieng-duc.html)!
+Mời bạn tham khảo Cách nhận biết giống của danh từ trong tiếng Đức!
 
 ## Khi nào ta cần chia đuôi tính từ?
 

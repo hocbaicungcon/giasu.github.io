@@ -55,23 +55,23 @@ Họ, tên thí sinh:…………………………………………………�
 
 **Câu 2:** Oxi có 3 đồng vị 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 1](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_b285aa56ade90d25.png)
+
 
  ,
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 2](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_973d65e2fac6e8db.png)
+
 
  ,
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 3](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_15a88836c8f85562.png)
+
 
  và cacbon có 2 đồng vị 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 4](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_897a145429bebd8a.png)
+
 
  , 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 5](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_9c895fcfbed8985c.png)
+
 
  . Có thể tạo ra số phân tử cacbonmonooxit (CO) là
 
@@ -97,23 +97,23 @@ Họ, tên thí sinh:…………………………………………………�
 
 **Câu 7:** Trong 5 nguyên tử: 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 6](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_84eb7066eff718f2.png)
+
 
  , 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 7](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_b0dedb8538d04946.png)
+
 
  , 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 8](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_793cc1e779a36f86.png)
+
 
  , 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 9](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_770d77ac6d89ef71.png)
+
 
  , 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 10](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_742fd7f78ae3f657.png)
+
 
  cặp nguyên tử nào là đồng vị?
 
@@ -153,17 +153,17 @@ Nguyên tố hóa học là tập hợp các nguyên tử:
 
 2. Triti và proti (có kí hiệu nguyên tử lần lượt là 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 11](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_d16c93e41c94b9b4.png)
+
 
  và 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 12](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_1a4f2bd2d956fe25.png)
+
 
  ) thuộc cùng một nguyên tố hóa học.
 
 3. Hạt nhân nguyên tử Clo có 17 hạt proton và 18 hạt nơtron , kí hiệu nguyên tử của Clo trên là 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 13](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_faea50132d2ccf23.png)
+
 
  .
 
@@ -218,23 +218,23 @@ Viết cấu hình electron nguyên tử và xác định vị trí của ba ngu
 
 **Bài 2:** Nguyên tử khối trung bình của đồng bằng 63,546. Đồng tồn tại trong tự nhiên dưới hai dạng đồng vị 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 14](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)
+
 
  và 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 15](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_5eecf25f8bd06920.png)
+
 
  .
 
 a. Tính phần trăm số nguyên tử đồng vị 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 16](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)
+
 
  tồn tại trong tự nhiên.
 
 b. Tính phần trăm khối lượng đồng vị 
 
-![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 17](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)
+
 
  trong Cu2O.
 
@@ -286,7 +286,7 @@ HƯỚNG DẪN CHẤM MÔN: HÓA HỌC LỚP: 10
 | ĐỀ BÀI | ĐÁP ÁN | ĐIỂM |
 | --- | --- | --- |
 | Bài 1 (1,5 điểm) Cho ba nguyên tố với số hiệu nguyên tử : X (Z = 8); Y (Z = 12) ; T (Z = 17). Viết cấu hình electron nguyên tử và xác định vị trí của ba nguyên tố trong bảng tuần hoàn (có giải thích: ô, chu kì, nhóm). | – Cấu hình e: 3*0,25 = 0,75 điểm – Vị trí: 3* 0,25 = 0,75 điểm | 0,75 0,75 |
-| Bài 2 (1 điểm) Nguyên tử khối trung bình của đồng bằng 63,546. Đồng tồn tại trong tự nhiên dưới hai dạng đồng vị   ![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 18](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)   và   ![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 19](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_5eecf25f8bd06920.png)   . a. Tính phần trăm số nguyên tử đồng vị   ![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 20](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)   tồn tại trong tự nhiên. b. Tính phần trăm khối lượng đồng vị   ![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 21](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)   trong Cu2O. | a. 63,546 = [63x + 65(100 – x)] : 100 Phần trăm nguyên tử   ![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 22](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)   = 72,7% Phần trăm nguyên tử   ![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 23](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_5eecf25f8bd06920.png)   . = 27,3% b. Phần trăm khối lượng   ![Đề thi giữa học kì 1 lớp 10 môn hóa THPT Trần Hưng Đạo 24](file:///C:/Users/Admin/AppData/Local/Temp/lu81283nb2xi.tmp/lu81283nb3if_tmp_72adb3f237a03ab8.png)   63*2* 72,7% : (63,546*2 + 16) = 64,02% | 0,25 0,25 0,5 |
+| Bài 2 (1 điểm) Nguyên tử khối trung bình của đồng bằng 63,546. Đồng tồn tại trong tự nhiên dưới hai dạng đồng vị      và      . a. Tính phần trăm số nguyên tử đồng vị      tồn tại trong tự nhiên. b. Tính phần trăm khối lượng đồng vị      trong Cu2O. | a. 63,546 = [63x + 65(100 – x)] : 100 Phần trăm nguyên tử      = 72,7% Phần trăm nguyên tử      . = 27,3% b. Phần trăm khối lượng      63*2* 72,7% : (63,546*2 + 16) = 64,02% | 0,25 0,25 0,5 |
 | Bài 3 (1,5 điểm) M là kim loại nhóm IIA. Cho 3,6 gam kim loại M tác dụng vừa đủ với V(ml) dung dịch HCl 2M thu được 3,36 lít H2 (đktc). a. Xác định kim loại M. b. Tính V. | M + 2HCl → MCl2 + H2 nM = nH2 = 0,15 mol MM = 3,6 : 0,15 = 24 (g/mol) M là Mg nHCl = 0,3 mol Vdd = 150 ml | 0,25 0,25 0,25 0,25 0,25 0,25 |
 | Bài 4 (1điểm) Viết cấu hình electron nguyên tử biết nguyên tử có lớp ngoài cùng là lớp N và có 1 electron ở phân lớp ngoài cùng. | [Ar]4s1 [Ar]3d54s1 [Ar]3d104s1 [Ar]3d104s14p1 | 4*0,25 = 1 điểm |
 
@@ -298,13 +298,13 @@ GIA SƯ THÔNG MINH gửi thầy cô link download đề thi
 
 Xem thêm
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
 - [Tổng hợp các chuyên đề hóa học lớp 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)
 
@@ -316,7 +316,7 @@ Xem thêm
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -326,7 +326,7 @@ Xem thêm
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -334,5 +334,5 @@ Xem thêm
 
 - [Tổng hợp thí nghiệm este chất béo hay và khó có đáp án chi tiết](/bai-viet/tong-hop-thi-nghiem-este-chat-beo-hay-va-kho-co-dap-an-chi-tiet.html)
 
-←[Đề thi giữa học kì 1 lớp 10 môn hóa THPT Đại An](/bai-viet/de-thi-giua-hoc-ki-1-lop-10-mon-hoa-thpt-dai-an.html)
-[Đề thi giữa học kì 1 môn hóa lớp 10 THPT Nguyễn Đức Thuận](/bai-viet/de-thi-giua-hoc-ki-1-mon-hoa-lop-10-thpt-nguyen-duc-thuan.html)→
+←Đề thi giữa học kì 1 lớp 10 môn hóa THPT Đại An
+Đề thi giữa học kì 1 môn hóa lớp 10 THPT Nguyễn Đức Thuận→

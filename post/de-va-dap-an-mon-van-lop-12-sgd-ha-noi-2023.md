@@ -14,7 +14,7 @@ grade: 12
 
 Chúng tôi xin gửi tới bạn đọc đề và đáp án môn Văn Đáp án đề Văn lớp 12 SGD Hà Nội 2023.
 
-Mời các em tham khảo thêm [Đề và đáp án môn Sử lớp 12 SGD Hà Nội 2023](/bai-viet/de-va-dap-an-mon-su-lop-12-sgd-ha-noi-2023.html)
+Mời các em tham khảo thêm Đề và đáp án môn Sử lớp 12 SGD Hà Nội 2023
 
 ## Đề môn Văn lớp 12 SGD Hà Nội 2023
 

@@ -262,5 +262,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)
 
-←[Phân dạng bài tập tốc độ phản ứng](/bai-viet/phan-dang-bai-tap-toc-do-phan-ung.html)
-[Phân dạng bài tập phản ứng oxi hóa khử](/bai-viet/phan-dang-bai-tap-phan-ung-oxi-hoa-khu-2.html)→
+←Phân dạng bài tập tốc độ phản ứng
+Phân dạng bài tập phản ứng oxi hóa khử→

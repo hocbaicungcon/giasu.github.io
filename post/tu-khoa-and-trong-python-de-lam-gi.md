@@ -37,4 +37,4 @@ print("Hello" == "Hello" and "World" == "world")
 Chú ý rằng các biểu thức sau `and` sẽ không được thực hiện nếu biểu thức trước `and` đã sai. Điều này có thể được sử dụng để kiểm tra điều kiện trước khi thực hiện một khối câu lệnh.
 
 ←[Các từ khóa trong Python](/bai-viet/cac-tu-khoa-trong-python.html)
-[Áo số 10 trong bóng đá dành cho ai?](/bai-viet/ao-so-10-trong-bong-da-danh-cho-ai.html)→
+Áo số 10 trong bóng đá dành cho ai?→

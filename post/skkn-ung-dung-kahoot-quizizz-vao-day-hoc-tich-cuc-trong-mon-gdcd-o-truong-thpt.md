@@ -19,7 +19,7 @@ SKKN Ứng dụng Kahoot, Quizizz vào dạy học tích cực trong môn GDCD �
 
 Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH
 
 ĐIỀU KIỆN HOÀN CẢNH TẠO RA SÁNG KIẾN
 1. Xuất phát từ yêu cầu đổi mới giáo dục
@@ -343,9 +343,9 @@ Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [
 
 Hoặc xem nhiều SKKN hơn tại: 
 
-[Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH
 
 [Tổng hợp SKKN môn hóa học cấp THPT](/bai-viet/tong-hop-skkn-mon-hoa-hoc-cap-thpt.html)
 
-←[Tạo hứng thú học tập cho học sinh qua việc sử dụng video clip để giảng dạy chương trình Giáo dục công dân lớp 10 và 12](/bai-viet/tao-hung-thu-hoc-tap-cho-hoc-sinh-qua-viec-su-dung-video-clip-de-giang-day-chuong-trinh-giao-duc-cong-dan-lop-10-va-12.html)
-[SKKN Sử dụng sáng tạo, có hiệu quả ôn tập và kiểm tra nhằm nâng cao kết quả thi tốt nghiệp thpt môn GDCD](/bai-viet/skkn-su-dung-sang-tao-co-hieu-qua-on-tap-va-kiem-tra-nham-nang-cao-ket-qua-thi-tot-nghiep-thpt-mon-gdcd.html)→
+←Tạo hứng thú học tập cho học sinh qua việc sử dụng video clip để giảng dạy chương trình Giáo dục công dân lớp 10 và 12
+SKKN Sử dụng sáng tạo, có hiệu quả ôn tập và kiểm tra nhằm nâng cao kết quả thi tốt nghiệp thpt môn GDCD→

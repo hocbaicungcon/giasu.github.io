@@ -353,5 +353,5 @@ Mời các thầy cô và các em xem thêm
 
 [Câu hỏi trắc nghiệm và phân dạng bài tập theo từng bài hóa 11 cả năm](/bai-viet/cau-hoi-trac-nghiem-va-phan-dang-bai-tap-theo-tung-bai-hoa-11-ca-nam.html)
 
-←[Câu hỏi trắc nghiệm bài 7 nguồn gốc dầu mở thành phần và phân loại dầu mỏ chuyên đề KNTT](/bai-viet/cau-hoi-trac-nghiem-bai-7-nguon-goc-dau-mo-thanh-phan-va-phan-loai-dau-mo-chuyen-de-kntt.html)
-[Câu hỏi trắc nghiệm bài 9 ngành sản suất dầu mỏ trên thế giới và ở Việt Nam chuyên đề KNTT](/bai-viet/cau-hoi-trac-nghiem-bai-9-nganh-san-suat-dau-mo-tren-the-gioi-va-o-viet-nam-chuyen-de-kntt.html)→
+←Câu hỏi trắc nghiệm bài 7 nguồn gốc dầu mở thành phần và phân loại dầu mỏ chuyên đề KNTT
+Câu hỏi trắc nghiệm bài 9 ngành sản suất dầu mỏ trên thế giới và ở Việt Nam chuyên đề KNTT→

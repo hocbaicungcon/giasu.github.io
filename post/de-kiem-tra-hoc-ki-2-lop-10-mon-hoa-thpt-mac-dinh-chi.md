@@ -48,7 +48,7 @@ Câu 5: (0,75 điểm) Cho cân bằng sau:
 
 2CO (k) + O2 (k)  
 
-![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Mạc Đĩnh Chi 1](file:///C:/Users/Admin/AppData/Local/Temp/lu76802h6r9k.tmp/lu76802h6rgc_tmp_b188adc3ed4ab2f3.gif)
+
 
   2CO2 (k) H < 0
 
@@ -76,7 +76,7 @@ Cho phản ứng:
 
 CO (k) + H2O (k)  
 
-![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Mạc Đĩnh Chi 2](file:///C:/Users/Admin/AppData/Local/Temp/lu76802h6r9k.tmp/lu76802h6rgc_tmp_b188adc3ed4ab2f3.gif)
+
 
   CO2 (k) + H2(k) hằng số cân bằng Kc= 1,873. (ở 7000C). 
 
@@ -105,13 +105,13 @@ Xem thêm
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Hưng Đạo](/bai-viet/de-kiem-tra-hoc-ki-2-lop-10-mon-hoa-thpt-hung-dao.html)
-[Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Mỹ Việt](/bai-viet/de-kiem-tra-hoc-ki-2-lop-10-mon-hoa-thpt-my-viet.html)→
+←Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Hưng Đạo
+Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Mỹ Việt→

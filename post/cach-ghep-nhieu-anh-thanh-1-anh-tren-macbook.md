@@ -17,7 +17,7 @@ Làm thế nào để ghép 5 ảnh vào 1 khung, ghép 9 ảnh thành 1, làm t
 
 ## Cách ghép nhiều ảnh thành 1 ảnh trên Macbook
 
-Trên máy tính có rất nhiều ứng dụng cho phép bạn ghép ảnh (collage image) từ những phần mềm không chuyên như Word, PowerPoint, Keynote cho tới những phần mềm chỉnh sửa ảnh chuyên nghiệp như Photoshop, Affinity Photo… Tuy nhiên nếu sử dụng Macbook, bạn có thể ghép ảnh dễ dàng nhờ phần mềm Preview có sẵn của [hệ điều hành Mac OS](/bai-viet/he-dieu-hanh-macos-la-gi-may-nao-chay-macos.html).
+Trên máy tính có rất nhiều ứng dụng cho phép bạn ghép ảnh (collage image) từ những phần mềm không chuyên như Word, PowerPoint, Keynote cho tới những phần mềm chỉnh sửa ảnh chuyên nghiệp như Photoshop, Affinity Photo… Tuy nhiên nếu sử dụng Macbook, bạn có thể ghép ảnh dễ dàng nhờ phần mềm Preview có sẵn của hệ điều hành Mac OS.
 
 ![Cách ghép nhiều ảnh thành 1 ảnh trên Macbook](assets/images/cach-ghep-nhieu-anh-thanh-1-anh-tren-macbook-Preview-app-icon-in-macOS-2.jpg)
 

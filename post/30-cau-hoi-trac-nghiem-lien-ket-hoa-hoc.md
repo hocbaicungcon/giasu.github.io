@@ -373,5 +373,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Phân dạng bài tập phản ứng oxi hóa khử](/bai-viet/phan-dang-bai-tap-phan-ung-oxi-hoa-khu-2.html)
-[Phân dạng bài tập năng lượng hóa học](/bai-viet/phan-dang-bai-tap-nang-luong-hoa-hoc.html)→
+←Phân dạng bài tập phản ứng oxi hóa khử
+Phân dạng bài tập năng lượng hóa học→

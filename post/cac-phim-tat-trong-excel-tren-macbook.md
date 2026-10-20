@@ -15,7 +15,7 @@ tags:
 Khi làm việc với phần mềm Excel trên Macbook rất nhiều bạn không quen, không nhớ được các phím tắt nên thao tác rất chậm. Hãy cùng tham khảo danh sách Các phím tắt trong Excel trên Macbook dưới đây để tăng năng suất làm việc nhé!
 
 *Có một mẹo là phím Command trên Macbook có tác dụng tương tự như Control trên Windows!
-Tham khảo thêm [3 ứng dụng thay thế Excel trên Macbook miễn phí](/bai-viet/3-ung-dung-thay-the-excel-tren-macbook-mien-phi.html)!
+Tham khảo thêm 3 ứng dụng thay thế Excel trên Macbook miễn phí!
 
 ## Các phím tắt trong Excel trên Macbook cơ bản nhất
 

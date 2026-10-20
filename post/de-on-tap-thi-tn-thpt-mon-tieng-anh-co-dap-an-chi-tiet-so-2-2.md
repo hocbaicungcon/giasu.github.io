@@ -15,17 +15,17 @@ grade: 12
 
 Đáp án chi tiết và hướng dẫn giải ở phần cuối của bài viết. Quý thầy cô tham khảo thêm.
 
-- [Đề minh họa 2022 môn Tiếng Anh file Word](/bai-viet/de-minh-hoa-2022-mon-tieng-anh-file-word.html)
+- Đề minh họa 2022 môn Tiếng Anh file Word
 
-- [Đề ôn tập thi TN THPT môn Tiếng Anh có đáp án chi tiết số 1](/bai-viet/de-on-tap-thi-tn-thpt-mon-tieng-anh-co-dap-an-chi-tiet.html)
+- Đề ôn tập thi TN THPT môn Tiếng Anh có đáp án chi tiết số 1
 
-- [ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN CHI TIẾT SỐ 3](/bai-viet/de-on-tap-tn-thpt-tieng-anh-co-dap-an-chi-tiet-so-3.html)
+- ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN CHI TIẾT SỐ 3
 
-- [ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN SỐ 4](/bai-viet/de-on-tap-tn-thpt-tieng-anh-co-dap-an-so-4.html)
+- ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ ĐÁP ÁN SỐ 4
 
 - [ĐỀ ÔN TẬP TN THPT TIẾNG ANH CÓ HƯỚNG DẪN GIẢI SỐ 5](/bai-viet/de-on-tap-tn-thpt-tieng-anh-co-huong-dan-giai-so-5.html)
 
-- [ĐỀ CƯƠNG ÔN TẬP THI TỐT NGHIỆP MÔN TIẾNG ANH](/bai-viet/de-cuong-on-tap-thi-tot-nghiep-mon-tieng-anh.html)
+- ĐỀ CƯƠNG ÔN TẬP THI TỐT NGHIỆP MÔN TIẾNG ANH
 
 ## 1. ĐỀ ÔN TẬP THI TN THPT MÔN TIẾNG ANH CÓ ĐÁP ÁN CHI TIẾT
 

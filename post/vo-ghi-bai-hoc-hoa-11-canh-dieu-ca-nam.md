@@ -78,4 +78,4 @@ Mời các thầy cô và các em xem thêm
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
 ←[Vở ghi bài học hóa 11 KNTT cả năm](/bai-viet/vo-ghi-bai-hoc-hoa-11-kntt-ca-nam.html)
-[Vở ghi bài học hóa 11 CTST cả năm](/bai-viet/vo-ghi-bai-hoc-hoa-11-ctst-ca-nam.html)→
+Vở ghi bài học hóa 11 CTST cả năm→

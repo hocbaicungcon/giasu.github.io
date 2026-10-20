@@ -74,13 +74,13 @@ Xem thêm
 
 - [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -88,5 +88,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Cho sơ đồ phản ứng E + NaOH → X + Y F + NaOH → X + Z](/bai-viet/cho-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z.html)
-[Cho các chuyển hoá sau: X + H2O → Y  Y + H2 → Sobitol](/bai-viet/cho-cac-chuyen-hoa-sau-x-h2o-%e2%86%92-y-y-h2-%e2%86%92-sobitol.html)→
+←[Cho sơ đồ phản ứng E + NaOH → X + Y F + NaOH → X + Z](/bai-viet/cho-so-do-phan-ung-e-naoh-x-y-f-naoh-x-z-2.html)
+Cho các chuyển hoá sau: X + H2O → Y  Y + H2 → Sobitol→

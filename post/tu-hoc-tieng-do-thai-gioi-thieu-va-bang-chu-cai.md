@@ -16,9 +16,9 @@ Do Thái là một trong những dân tộc thành công nhất thế giới. M�
 
 Xem thêm:
 
-- [500 từ vựng tiếng Do Thái cơ bản – 500 Hebrew Words](/bai-viet/500-tu-vung-tieng-do-thai-co-ban-500-hebrew-words.html)
+- 500 từ vựng tiếng Do Thái cơ bản – 500 Hebrew Words
 
-- [Phụ âm và nguyên âm tiếng Do Thái](/bai-viet/phu-am-va-nguyen-am-tieng-do-thai.html)
+- Phụ âm và nguyên âm tiếng Do Thái
 
 ## 1. Giới thiệu chung về tiếng Do Thái
 

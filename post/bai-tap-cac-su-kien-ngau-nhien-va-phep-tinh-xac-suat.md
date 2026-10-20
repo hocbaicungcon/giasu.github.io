@@ -383,7 +383,7 @@ Tính $P(ABC), P(\overline{B}C), P(C), P(A|\overline{B}C).$
 
 ## 3. Công thức xác suất đầy đủ, công thức Bayes
 
-Bạn đọc tham khảo các ví dụ trong bài [Xác suất có điều kiện – Công thức Bayes](/bai-viet/xac-suat-co-dieu-kien-cong-thuc-bayes.html)
+Bạn đọc tham khảo các ví dụ trong bài Xác suất có điều kiện – Công thức Bayes
 
 **Bài tập 1.47.** Một phân xưởng có 3 máy tự động: máy I sản xuất 25%, máy II sản xuất 30%, máy III sản xuất 45% số sản phẩm. Tỷ lệ phế phẩm tương ứng của các máy lần lượt là 0,1%, 0,2% và 0,3%. Chọn ngẫu nhiên ra một sản phẩm của phân xưởng.
 

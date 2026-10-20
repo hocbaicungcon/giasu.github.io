@@ -33,7 +33,7 @@ Các phép toán trong Dart gồm có các loại sau:
 
 ## Toán tử số học trong Dart
 
-Toán tử số học có tác dụng đối với kiểu dữ liệu [số nguyên `int`, số thực `double`](/bai-viet/kieu-so-trong-dart-flutter.html) và kiểu số `num` nói chung.
+Toán tử số học có tác dụng đối với kiểu dữ liệu số nguyên `int`, số thực `double` và kiểu số `num` nói chung.
 
 - `+` Phép cộng. Ví dụ `3 + 1` kết quả `4`
 
@@ -91,7 +91,7 @@ Phép gán là `=`, để thực hiện gán giá trị biểu thức bên ph�
 
 `biến = biểu_thức;`
 
-Mời các bạn xem chi tiết về phép gán trong bài [Bài 2. Biến và các kiểu dữ liệu trong Dart](/bai-viet/bien-va-cac-kieu-du-lieu-trong-dart.html)
+Mời các bạn xem chi tiết về phép gán trong bài Bài 2. Biến và các kiểu dữ liệu trong Dart
 
 ## Phép gán tăng, giảm giá trị
 
@@ -132,7 +132,7 @@ Các toán tử này thực hiện trên biểu thức logic, kết quả là `
 
 - `!(biểu_thức)`Phép phủ định (toán tử `not` trong Toán học) `!a` nếu `a` là `true` thì kết quả phép toán là `false`
 
-Chi tiết về các toán tử logic, bạn có thể xem ở bài [Kiểu logic `bool` trong Dart/Flutter](/bai-viet/kieu-logic-bool-trong-dart.html). Dưới đây là bảng giá trị chân lý của các phép toán `and`, `or` và `not` trong Toán học.
+Chi tiết về các toán tử logic, bạn có thể xem ở bài Kiểu logic `bool` trong Dart/Flutter. Dưới đây là bảng giá trị chân lý của các phép toán `and`, `or` và `not` trong Toán học.
 
 ![toan tu bool trong Python Toán tử Boolean trong Python](assets/images/cac-phep-toan-trong-dart-toan-tu-dart-flutter-toan-tu-bool-trong-Python.png)
 

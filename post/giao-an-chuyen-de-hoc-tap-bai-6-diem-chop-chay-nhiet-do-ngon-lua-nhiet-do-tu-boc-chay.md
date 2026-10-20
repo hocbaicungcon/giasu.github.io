@@ -789,5 +789,5 @@ Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các
 
 ﻿
 
-←[Giáo án chuyên đề học tập Bài 5 Sơ lược về phản ứng cháy nổ](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-5-so-luoc-ve-phan-ung-chay-no.html)
+←Giáo án chuyên đề học tập Bài 5 Sơ lược về phản ứng cháy nổ
 [PPCT hoá 10 KNTT có chuyên đề học tập](/bai-viet/ppct-hoa-10-kntt-co-chuyen-de-hoc-tap.html)→

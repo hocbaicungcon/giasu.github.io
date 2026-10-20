@@ -29,13 +29,13 @@ grade: 12
 
 Xem thêm
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -43,5 +43,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Hỗn hợp X gồm các chất có công thức phân tử là C2H7O3N và C2H10O3N2. Khi cho các chất trong X tác dụng](/bai-viet/hon-hop-x-gom-cac-chat-co-cong-thuc-phan-tu-la-c2h7o3n-va-c2h10o3n2-khi-cho-cac-chat-trong-x-tac-dung.html)
-[Hợp chất A có công thức phân tử C3H9NO2. Cho 8,19 gam A tác dụng với 100 ml dung dịch KOH 1M](/bai-viet/hop-chat-a-co-cong-thuc-phan-tu-c3h9no2-cho-819-gam-a-tac-dung-voi-100-ml-dung-dich-koh-1m.html)→
+←Hỗn hợp X gồm các chất có công thức phân tử là C2H7O3N và C2H10O3N2. Khi cho các chất trong X tác dụng
+Hợp chất A có công thức phân tử C3H9NO2. Cho 8,19 gam A tác dụng với 100 ml dung dịch KOH 1M→

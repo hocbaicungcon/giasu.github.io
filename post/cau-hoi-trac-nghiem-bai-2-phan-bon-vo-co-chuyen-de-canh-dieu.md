@@ -390,5 +390,5 @@ Mời các thầy cô và các em xem thêm
 
 [Câu hỏi trắc nghiệm và phân dạng bài tập theo từng bài hóa 11 cả năm](/bai-viet/cau-hoi-trac-nghiem-va-phan-dang-bai-tap-theo-tung-bai-hoa-11-ca-nam.html)
 
-←[Câu hỏi trắc nghiệm bài 1 giới thiệu chung về phân bón chuyên đề cánh diều](/bai-viet/cau-hoi-trac-nghiem-bai-1-gioi-thieu-chung-ve-phan-bon-chuyen-de-canh-dieu.html)
-[Câu hỏi trắc nghiệm bài 3 phân bón hữu cơ chuyên đề cánh diều](/bai-viet/cau-hoi-trac-nghiem-bai-3-phan-bon-huu-co-chuyen-de-canh-dieu.html)→
+←Câu hỏi trắc nghiệm bài 1 giới thiệu chung về phân bón chuyên đề cánh diều
+Câu hỏi trắc nghiệm bài 3 phân bón hữu cơ chuyên đề cánh diều→

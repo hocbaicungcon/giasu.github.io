@@ -14,7 +14,7 @@ tags:
 grade: 12
 ---
 
-Xem chi tiết các dạng toán về tính đơn điệu của hàm số [Sự đồng biến nghịch biến của hàm số](/bai-viet/su-dong-bien-nghich-bien-cua-ham-so.html)
+Xem chi tiết các dạng toán về tính đơn điệu của hàm số Sự đồng biến nghịch biến của hàm số
 
 **Bài toán.** Tìm tất cả các giá trị thực của tham số $m$ để hàm số 
 

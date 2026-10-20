@@ -149,5 +149,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-←[Phân dạng bài tập năng lượng hóa học](/bai-viet/phan-dang-bai-tap-nang-luong-hoa-hoc.html)
-[Đề kiểm thi giữa học kì 1 lớp 11 môn hóa có ma trận năm 2023 2024](/bai-viet/de-kiem-thi-giua-hoc-ki-1-lop-11-mon-hoa-co-ma-tran-nam-2023-2024.html)→
+←Phân dạng bài tập năng lượng hóa học
+Đề kiểm thi giữa học kì 1 lớp 11 môn hóa có ma trận năm 2023 2024→

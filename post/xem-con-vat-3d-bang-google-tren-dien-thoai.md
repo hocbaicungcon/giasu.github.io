@@ -15,7 +15,7 @@ tags:
 
 Cuối năm 2019, **Google** đã bổ sung một tính năng **xem các đối tượng thực tế tăng cường (AR) vào Google Search**, với hàng loạt các loài động vật khác nhau (xem [danh sách con vật 3d](/bai-viet/xem-con-vat-3d-bang-google-tren-dien-thoai.html) ở phần sau bài viết), để bạn có thể xem ngay trên điện thoại của mình. Với tính năng này, bạn có thể cùng trẻ nhỏ xem các con hổ (tiger) 3d, con sư tử hiển thị 3d ngay trong phòng khách nhà mình và chụp ảnh lưu lại để chia sẻ lên facebook.
 
-👉 Xem thêm: [Facebook phát hành Messenger cho máy tính](/bai-viet/messenger-cho-may-tinh.html)
+👉 Xem thêm: Facebook phát hành Messenger cho máy tính
 
 Tùy chọn xem con vật dưới dạng 3D hiển thị ngay trong kết quả tìm kiếm để người dùng nhấn chọn. Khi đó con vật được trình chiếu dưới dạng 3D, và bạn hoàn toàn có thể đưa nó tới khắp không gian ở mọi nơi mình muốn.
 

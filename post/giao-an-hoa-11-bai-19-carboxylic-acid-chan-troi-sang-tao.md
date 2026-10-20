@@ -432,5 +432,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án hóa 11 bài 18 hợp chất carbonyl chân trời sáng tạo](/bai-viet/giao-an-hoa-11-bai-18-hop-chat-carbonyl-chan-troi-sang-tao.html)
+←Giáo án hóa 11 bài 18 hợp chất carbonyl chân trời sáng tạo
 [50 câu hỏi trắc nghiệm tốc độ phản ứng hóa học](/bai-viet/50-cau-hoi-trac-nghiem-toc-do-phan-ung-hoa-hoc.html)→

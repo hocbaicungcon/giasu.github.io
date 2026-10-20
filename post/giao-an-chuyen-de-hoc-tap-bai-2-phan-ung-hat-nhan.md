@@ -801,5 +801,5 @@ Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các
 
 [Tổng hợp giáo án và các chuyên đề học tập hoá học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 
-←[Giáo án chuyên đề học tập Bài 1 Liên kết hoá học](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-1-lien-ket-hoa-hoc.html)
+←Giáo án chuyên đề học tập Bài 1 Liên kết hoá học
 [Giáo án chuyên đề học tập Bài 3 Năng lượng hoạt hoá của phản ứng hoá học](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-3-nang-luong-hoat-hoa-cua-phan-ung-hoa-hoc.html)→

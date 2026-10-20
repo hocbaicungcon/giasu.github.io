@@ -152,5 +152,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Đề thi hsg lớp 12 môn hoá tỉnh Quảng Ninh năm 2021 2022](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-quang-ninh-nam-2021-2022.html)
-[Đề thi hsg lớp 12 môn hoá tỉnh Vĩnh Phúc năm 2021 2022](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-vinh-phuc-nam-2021-2022.html)→
+←Đề thi hsg lớp 12 môn hoá tỉnh Quảng Ninh năm 2021 2022
+Đề thi hsg lớp 12 môn hoá tỉnh Vĩnh Phúc năm 2021 2022→

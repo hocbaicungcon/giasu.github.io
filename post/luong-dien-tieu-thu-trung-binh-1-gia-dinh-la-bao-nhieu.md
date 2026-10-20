@@ -14,7 +14,7 @@ tags:
 
 Hiểu rõ công suất của từng thiết bị trong nhà và công thức tính điện năng tiêu thụ sẽ giúp bạn chủ động quản lý hóa đơn tiền điện và áp dụng các biện pháp tiết kiệm hiệu quả.
 
-Xem thêm: [Số điện là gì? 1 số điện bằng bao nhiêu kWh?](/bai-viet/so-dien-la-gi-1-so-dien-bang-bao-nhieu-kwh.html)
+Xem thêm: Số điện là gì? 1 số điện bằng bao nhiêu kWh?
 
 ---
 
@@ -67,7 +67,7 @@ Tại Việt Nam, giá bán lẻ điện sinh hoạt cho hộ gia đình đượ
 
 ![Cách tính tiền điện sinh hoạt bậc thang](assets/images/luong-dien-tieu-thu-trung-binh-1-gia-dinh-la-bao-nhieu-cach-tinh-tien-dien.webp)
 
-Xem hướng dẫn chi tiết: [Cách tính tiền điện sinh hoạt hàng tháng theo bậc thang](/bai-viet/cach-tinh-tien-dien-sinh-hoat-hang-thang.html)
+Xem hướng dẫn chi tiết: Cách tính tiền điện sinh hoạt hàng tháng theo bậc thang
 
 ---
 
@@ -81,5 +81,5 @@ Xem hướng dẫn chi tiết: [Cách tính tiền điện sinh hoạt hàng th�
 ---
 
 ## Bài viết liên quan
-- [Cách tính tiền điện sinh hoạt hàng tháng chi tiết](/bai-viet/cach-tinh-tien-dien-sinh-hoat-hang-thang.html)
+- Cách tính tiền điện sinh hoạt hàng tháng chi tiết
 - [Vùng 1, vùng 2, vùng 3, vùng 4 là ở đâu và bảng lương tối thiểu](/bai-viet/vung-1-vung-2-vung-3-vung-4-la-o-dau.html)

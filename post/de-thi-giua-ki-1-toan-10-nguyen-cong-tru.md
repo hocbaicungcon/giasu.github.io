@@ -16,7 +16,7 @@ grade: 10
 
 GIA SƯ THÔNG MINH xin giới thiệu các đề thi giữa kì 1 Toán 10 để Quý thầy cô và các em học sinh tham khảo.
 
-- [Đề thi giữa học kỳ I Toán 10 Xuân Trường B năm 2017](/bai-viet/de-thi-giua-hoc-ky-i-toan-10-xuan-truong-b-nam-2017.html)
+- Đề thi giữa học kỳ I Toán 10 Xuân Trường B năm 2017
 
 **Câu 1.** (2,0 điểm)
 

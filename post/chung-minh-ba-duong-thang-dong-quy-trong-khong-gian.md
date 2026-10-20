@@ -41,7 +41,7 @@ Nếu ta đã chỉ ra hai trong ba đường thẳng cắt nhau tại điểm $
 
 ![Định lý giao tuyến của 3 mặt phẳng](assets/images/chung-minh-ba-duong-thang-dong-quy-trong-khong-gian-giao-tuyen-cua-3-mat-phang.png)
 
-Xem thêm: [Cách chứng minh ba điểm thẳng hàng trong không gian](/bai-viet/cach-chung-minh-thang-hang-trong-hinh-hoc-khong-gian.html)
+Xem thêm: Cách chứng minh ba điểm thẳng hàng trong không gian
 
 ---
 

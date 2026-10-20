@@ -174,5 +174,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[PPCT hóa 11 cánh diều không có chuyên đề](/bai-viet/ppct-hoa-11-canh-dieu-khong-co-chuyen-de.html)
+←PPCT hóa 11 cánh diều không có chuyên đề
 [Giáo án chuyên đề hóa 11 KNTT cả năm Word + Powerpoint](/bai-viet/giao-an-chuyen-de-hoa-11-kntt-ca-nam-word-powerpoint.html)→

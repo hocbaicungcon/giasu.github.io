@@ -15,7 +15,7 @@ grade: 10
 
 # Câu lệnh vòng lặp while trong Python
 
-Trong bài trước, chúng ta đã tìm hiểu về [vòng lặp for](/bai-viet/cau-lenh-vong-lap-for-trong-python.html) trong Python, bài này chúng ta tìm hiểu về vòng lặp while ([while loops](https://www.w3schools.com/python/python_while_loops.asp)) – vòng lặp với số lần lặp không biết trước.
+Trong bài trước, chúng ta đã tìm hiểu về vòng lặp for trong Python, bài này chúng ta tìm hiểu về vòng lặp while ([while loops](https://www.w3schools.com/python/python_while_loops.asp)) – vòng lặp với số lần lặp không biết trước.
 
 ## 1. Vòng lặp while trong Python
 
@@ -79,7 +79,7 @@ while i < 1000:
 
 ## Kết hợp while với else
 
-Giống như [vòng lặp for](/bai-viet/cau-lenh-vong-lap-for-trong-python.html), bạn cũng có thể kết hợp `else` với `while`. Trong trường hợp này, `<khối lệnh 2>` của `else` sẽ được thực hiện khi điều kiện của `while` là `False`.
+Giống như vòng lặp for, bạn cũng có thể kết hợp `else` với `while`. Trong trường hợp này, `<khối lệnh 2>` của `else` sẽ được thực hiện khi điều kiện của `while` là `False`.
 
 ```python
 while <điều kiện> :

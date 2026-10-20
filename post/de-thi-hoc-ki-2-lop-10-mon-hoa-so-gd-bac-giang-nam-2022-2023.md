@@ -179,5 +179,5 @@ Mời các thầy cô xem thêm
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
-←[Đề thi học kì 2 lớp 10 môn hoá THPT Trí Đức Hà Nội năm 2022 2023 đề số 2](/bai-viet/de-thi-hoc-ki-2-lop-10-mon-hoa-thpt-tri-duc-ha-noi-nam-2022-2023-de-so-2.html)
-[Đề thi học kì 2 lớp 10 môn hoá THPT Nguyễn Văn Cừ Hà Nội năm 2022 2023](/bai-viet/de-thi-hoc-ki-2-lop-10-mon-hoa-thpt-nguyen-van-cu-ha-noi-nam-2022-2023.html)→
+←Đề thi học kì 2 lớp 10 môn hoá THPT Trí Đức Hà Nội năm 2022 2023 đề số 2
+Đề thi học kì 2 lớp 10 môn hoá THPT Nguyễn Văn Cừ Hà Nội năm 2022 2023→

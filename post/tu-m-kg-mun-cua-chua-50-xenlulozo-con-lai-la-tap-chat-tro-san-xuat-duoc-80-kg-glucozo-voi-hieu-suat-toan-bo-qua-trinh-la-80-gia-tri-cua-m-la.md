@@ -60,5 +60,5 @@ $$m = \dfrac{m_{\text{glucozơ}} \times 162}{180 \times H \times \%_{\text{xenlu
 ---
 
 ## Xem thêm tài liệu ôn thi môn Hóa học
-- [Giải chi tiết mã đề 201 đề thi tốt nghiệp THPT 2023 môn Hóa học](/bai-viet/giai-chi-tiet-ma-201-de-thi-tot-nghiep-thpt-2023-mon-hoa.html)
+- Giải chi tiết mã đề 201 đề thi tốt nghiệp THPT 2023 môn Hóa học
 - [Tổng hợp các chuyên đề Hóa học lớp 12 trọng tâm](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)

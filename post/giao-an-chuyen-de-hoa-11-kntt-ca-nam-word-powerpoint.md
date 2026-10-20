@@ -24,4 +24,4 @@ Mời các thầy cô và các em xem thêm
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
 ←[Giáo án powerpoint hóa 11 bài 1 khái niệm về cân bằng hóa học KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-1-khai-niem-ve-can-bang-hoa-hoc-kntt.html)
-[TOP thương hiệu loa âm trần tốt nhất!](/bai-viet/top-thuong-hieu-loa-am-tran-tot-nhat.html)→
+TOP thương hiệu loa âm trần tốt nhất!→

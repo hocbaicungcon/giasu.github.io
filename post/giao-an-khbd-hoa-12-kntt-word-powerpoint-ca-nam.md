@@ -84,5 +84,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp các chuyên đề hóa học lớp 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)
 
-←[Vận dụng linh hoạt các phương pháp, kĩ thuật dạy học tích cực trong chuyên đề liên kết hóa học chương trình GDPT 2018](/bai-viet/van-dung-linh-hoat-cac-phuong-phap-ki-thuat-day-hoc-tich-cuc-trong-chuyen-de-lien-ket-hoa-hoc-chuong-trinh-gdpt-2018.html)
+←Vận dụng linh hoạt các phương pháp, kĩ thuật dạy học tích cực trong chuyên đề liên kết hóa học chương trình GDPT 2018
 [Giáo án KHBD Hóa 12 CTST Word + Powerpoint cả năm](/bai-viet/giao-an-khbd-hoa-12-ctst-word-powerpoint-ca-nam.html)→

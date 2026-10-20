@@ -15,7 +15,7 @@ grade: 11
 
 Xem thêm các bài học liên quan:
 - [Thiết diện là gì và các phương pháp tìm thiết diện](/bai-viet/thiet-dien-la-gi-va-cac-phuong-phap-tim-thiet-dien.html)
-- [Tìm giao điểm của đường thẳng và mặt phẳng](/bai-viet/tim-giao-diem-cua-duong-thang-va-mat-phang.html)
+- Tìm giao điểm của đường thẳng và mặt phẳng
 
 ### Tiên đề cơ bản về giao tuyến
 Nếu hai mặt phẳng *phân biệt* có một điểm chung thì chúng còn có vô số điểm chung khác nữa. Tập hợp tất cả các điểm chung đó tạo thành một đường thẳng duy nhất, được gọi là **giao tuyến** của hai mặt phẳng.

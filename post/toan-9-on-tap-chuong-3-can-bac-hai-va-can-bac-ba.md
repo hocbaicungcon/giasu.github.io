@@ -385,7 +385,7 @@ Phép trục căn thức ở mẫu là công cụ toán học sống còn giúp 
       "explanation": "Nhân cả tử và mẫu với $\\sqrt{7} + 1$: $\\frac{6(\\sqrt{7} + 1)}{(\\sqrt{7} - 1)(\\sqrt{7} + 1)} = \\frac{6(\\sqrt{7} + 1)}{7 - 1} = \\sqrt{7} + 1$."
     },
     {
-      "question": "Giá trị của biểu thức căn[3](-216) + căn[3](125) bằng:",
+      "question": "Giá trị của biểu thức căn3(-216) + căn3(125) bằng:",
       "options": [
         "-1",
         "1",
@@ -421,7 +421,7 @@ Phép trục căn thức ở mẫu là công cụ toán học sống còn giúp 
       "explanation": "Vì $\\sqrt{2x - 3} \\ge 0$ với mọi $x \\ge 3/2$, mà vế phải $-3 < 0$, nên phương trình vô nghiệm."
     },
     {
-      "question": "Nghiệm của phương trình căn[3](x + 2) = 3 là:",
+      "question": "Nghiệm của phương trình căn3(x + 2) = 3 là:",
       "options": [
         "x = 25",
         "x = 7",

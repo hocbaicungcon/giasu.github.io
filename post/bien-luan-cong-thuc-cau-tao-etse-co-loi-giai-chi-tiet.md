@@ -125,7 +125,7 @@ grade: 12
 
 **D.** CH3CH2CH2COOH, CH3COOCH2CH3, CH3COOCH2CH3.
 
-**([Lời giải](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-mot-muoi-natri-cua-axit-cacboxylic-hai-chuc-y.html)) Câu 21:** Cho este hai chức, mạch hở **X**(C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức **Y** và hai chất hữu cơ **Z** và **T** có cùng số nguyên tử cacbon (MZ < MT). Phát biểu nào sau đây **sai?**
+**(Lời giải) Câu 21:** Cho este hai chức, mạch hở **X**(C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức **Y** và hai chất hữu cơ **Z** và **T** có cùng số nguyên tử cacbon (MZ < MT). Phát biểu nào sau đây **sai?**
 
 1. 
 
@@ -209,7 +209,7 @@ Số phát biểu đúng là
 
 **Dạng 2: Cho dữ kiện dạng** **sơ đồ phản ứng của các chất**
 
-**([Lời giải](/bai-viet/cho-so-do-chuyen-hoa-sau-c3h4o2-naoh-x-y.html)) Câu**30:** Cho sơ đồ chuyển hoá sau : **
+**(Lời giải) Câu**30:** Cho sơ đồ chuyển hoá sau : **
 
 C3H4O2 + NaOH  X + Y 
 
@@ -219,7 +219,7 @@ Biết Y và Z đều có phản ứng tráng gương. Hai chất Y, Z tương �
 
 **A.** HCHO, HCOOH. B.** HCHO, CH3CHO. **C.** HCOONa, CH3CHO. D.** CH3CHO, HCOOH.
 
-**([Lời giải](/bai-viet/hop-chat-huu-co-mach-ho-x-co-cong-thuc-phan-tu-c5h10o-chat-x-khong-phan-ung-voi-na.html)) Câu**31:** Hợp chất hữu cơ mạch hở X có công thức phân tử C­5­H­10­O. Chất X không phản ứng với Na, thỏa mãn sơ đồ chuyển hóa sau:**
+**(Lời giải) Câu**31:** Hợp chất hữu cơ mạch hở X có công thức phân tử C­5­H­10­O. Chất X không phản ứng với Na, thỏa mãn sơ đồ chuyển hóa sau:**
 
 X (+H2, Ni, t0) → Y (+CH3COOH, H2SO4 đặc) → Este có mùi chuối chín
 
@@ -229,7 +229,7 @@ Tên của X là
 
 **C.** 2 – metylbutanal. D.** 2,2 – đimetylpropanal.**
 
-**([Lời giải](/bai-viet/cho-so-do-cac-phan-ung-x-naoh-dung-dich-%e2%86%92-y-z.html)) Câu**32:** Cho sơ đồ các phản ứng:**
+**(Lời giải) Câu**32:** Cho sơ đồ các phản ứng:**
 
 X + NaOH (dung dịch) → Y + Z (t0) (1)
 
@@ -245,7 +245,7 @@ Trong sơ đồ trên, X và Z lần lượt là
 
 **C.** CH3COOCH=CH2 và HCHO. D.** CH3COOCH=CH2 và CH3CHO.**
 
-**([Lời giải](/bai-viet/cho-so-do-chuyen-hoa-sau-a-c3h4o2-naoh-x-y.html)) Câu**33:** Cho sơ đồ chuyển hóa sau:**
+**(Lời giải) Câu**33:** Cho sơ đồ chuyển hóa sau:**
 
 (a) C3H4O2 + NaOH   X + Y
 
@@ -261,7 +261,7 @@ Chất E và chất F theo thứ tự là
 
  **C.** HCOONH­4 và CH3COONH4. D.** HCOONH4 và CH3CHO.**
 
-**([Lời giải](/bai-viet/khi-cho-chat-huu-co-a-co-cong-thuc-phan-tu-c6h10o5-va-khong-co-nhom-ch2-tac-dung-voi-nahco3-hoac-voi-na-thi-so-mol-khi-sinh-ra-luon-bang-so-mol-a-phan-ung.html)) Câu 34**(** *MH2015-1):**Khi cho chất hữu cơ**A (có công thức phân tử** *C6H10O5**và không có nhóm CH2) tác dụng với** *NaHCO3 hoặc với Na thì số mol khí sinh ra luôn bằng số mol A phản ứng. A và các sản phẩm B, D tham gia phản ứng theo phương trình hóa học sau:
+**(Lời giải) Câu 34**(** *MH2015-1):**Khi cho chất hữu cơ**A (có công thức phân tử** *C6H10O5**và không có nhóm CH2) tác dụng với** *NaHCO3 hoặc với Na thì số mol khí sinh ra luôn bằng số mol A phản ứng. A và các sản phẩm B, D tham gia phản ứng theo phương trình hóa học sau:
 
 A ↔ B + H2O 
 
@@ -277,11 +277,11 @@ Tên gọi của E là
 
 **C.** axit 3-hiđroxi propanoic. D.** axit propionic.**
 
-**([Lời giải](/bai-viet/ancol-x-mx-76-tac-dung-voi-axit-cacboxylic-y-thu-duoc-hop-chat-z-mach-ho-x-va-y-deu-chi-co-mot-loai-nhom-chuc.html)) Câu 35**(** *MH2015-2):**Ancol X (MX**= 76) tác dụng với axit cacboxylic Y thu** *được hợp chất Z mạch hở**(X và Y đều chỉ có một loại nhóm chức). Đốt cháy hoàn toàn 17,2 gam Z cần vừa đủ 14,56 lít khí O2 (đktc), thu được CO2 và H2O theo tỉ lệ số mol tương ứng là 7 : 4. Mặt khác, 17,2 gam Z lại phản ứng vừa đủ với 8 gam NaOH trong dung dịch. Biết Z có công thức phân tử trùng với công thức đơn giản nhất. Số công thức cấu tạo của Z thỏa mãn là**
+**(Lời giải) Câu 35**(** *MH2015-2):**Ancol X (MX**= 76) tác dụng với axit cacboxylic Y thu** *được hợp chất Z mạch hở**(X và Y đều chỉ có một loại nhóm chức). Đốt cháy hoàn toàn 17,2 gam Z cần vừa đủ 14,56 lít khí O2 (đktc), thu được CO2 và H2O theo tỉ lệ số mol tương ứng là 7 : 4. Mặt khác, 17,2 gam Z lại phản ứng vừa đủ với 8 gam NaOH trong dung dịch. Biết Z có công thức phân tử trùng với công thức đơn giản nhất. Số công thức cấu tạo của Z thỏa mãn là**
 
  **A.** 1. B.** 3. **C.** 2. D.** 4.
 
-**([Lời giải](/bai-viet/cho-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-%e2%86%92-x1-x2-x3-c-x2-hcl-%e2%86%92-x5-nacl.html)) Câu**36 (** *QG 2019-2)**Cho sơ đồ phản ứng theo đúng tỉ lệ mol
+**([Lời giải](/bai-viet/cho-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-x1-x2-x3-c-x2-hcl-x5-nacl.html)) Câu**36 (** *QG 2019-2)**Cho sơ đồ phản ứng theo đúng tỉ lệ mol
 
  (a) X + 2NaOH → X1 + X2 + X3 (c) X2 + HCl → X5 + NaCl 
 
@@ -293,7 +293,7 @@ Biết X có công thức phân tử C6H10O4 và chứa hai chức este; X1, X2 
 
 **C.** X6 là anđehit axetic.**D.** Phân tử X2 có hai nguyên tử oxi.
 
-**([Lời giải](/bai-viet/cho-so-do-cac-phan-ung-theo-dung-ti-le-mol-a-x-4agno3-6nh3-2h2o-%e2%86%92-x1-4ag-4nh4no3.html)) Câu**37(** *QG 2019-3)**:** Cho sơ đồ các phản ứng theo đúng tỉ lệ mol:**
+**([Lời giải](/bai-viet/cho-so-do-cac-phan-ung-theo-dung-ti-le-mol-a-x-4agno3-6nh3-2h2o-x1-4ag-4nh4no3.html)) Câu**37(** *QG 2019-3)**:** Cho sơ đồ các phản ứng theo đúng tỉ lệ mol:**
 
  (a) X + 4AgNO3 + 6NH3 + 2H2O → X1 + 4Ag + 4NH4NO3 (t0)
 
@@ -305,7 +305,7 @@ Biết X có công thức phân tử C6H10O4 và chứa hai chức este; X1, X2 
 
 Biết X là hợp chất hữu cơ no, mạch hở, chỉ chứa một loại nhóm chức. Khi đốt cháy hoàn toàn X2, sản phẩm thu được chỉ gồm CO2 và Na2CO3. Phân tử khối của X4 là **A.** 118. B.** 90. **C.** 138. D.** 146.
 
-**([Lời giải](/bai-viet/hop-chat-huu-co-x-chua-c-h-o-trong-do-oxi-chiem-50-ve-khoi-luong-tu-chat-x-thuc-hien-chuyen-hoa-sau-x-co-xt-t0.html)) Câu 38:** Hợp chất hữu cơ X (chứa C, H, O) trong đó oxi chiếm 50% về khối lượng. 
+**(Lời giải) Câu 38:** Hợp chất hữu cơ X (chứa C, H, O) trong đó oxi chiếm 50% về khối lượng. 
 
 Từ chất X thực hiện chuyển hoá sau:
 
@@ -321,7 +321,7 @@ Phát biểu nào sau đây là **không** đúng?
 
 **D.** Chất T tác dụng với NaOH (dư) trong dung dịch theo tỉ lệ mol 1 : 2.
 
-**([Lời giải](/bai-viet/cho-so-do-phan-ung-1-x-o2-%e2%86%92-axit-cacboxylic-y1-t0-xt.html)) Câu 39:** Cho sơ đồ phản ứng:
+**(Lời giải) Câu 39:** Cho sơ đồ phản ứng:
 
 (1) X + O2 → axit cacboxylic Y1 (t0, xt)
 
@@ -333,7 +333,7 @@ Biết Y3 có công thức phân tử C6H10O2. Tên gọi của X là :
 
 **A.** Anđehit metacrylic. B.** Anđehit acrylic. **C.** Anđehit axetic. D.** Anđehit propionic.
 
-**([Lời giải](/bai-viet/cho-cac-phan-ung-xay-ra-theo-so-do-sau-x-naoh-%e2%86%92-y-z-yran-naohran-%e2%86%92-ch4-na2co3.html)) Câu 40:** Cho các phản ứng xảy ra theo sơ đồ sau :
+**(Lời giải) Câu 40:** Cho các phản ứng xảy ra theo sơ đồ sau :
 
 X + NaOH → Y + Z (t0) (1)
 
@@ -345,7 +345,7 @@ Chất X là
 
 **A.** etyl fomat. B.** metyl acrylat. **C.** vinyl axetat. D.** etyl axetat.
 
- **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z.html)) Câu 41 (**TN 2021-201):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:**
+ **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-y-2z.html)) Câu 41 (**TN 2021-201):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:**
 
 E + 2NaOH → Y + 2Z
 
@@ -367,7 +367,7 @@ Biết E, F đều là các hợp chất hữu cơ no, mạch hở, có công th
 
 **A.** 5. B**.** 3. **C.** 4. D.** 2.**
 
- **([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z-f-2naoh-%e2%86%92-z-t-h2o.html)) Câu 42 (**TN 2021-202):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:**
+ **(Lời giải) Câu 42 (**TN 2021-202):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:**
 
 E + 2NaOH → Y + 2Z
 
@@ -388,7 +388,7 @@ Số phát biểu đúng là
 | A. 4. | B. 5. | C. 2. | D. 3 |
 | --- | --- | --- | --- |
 
-([Lời giải](/bai-viet/cho-so-do-phan-ung-xay-ra-theo-dung-ti-le-mol-e-2naoh-%e2%86%92-y-2z-f-2naoh-%e2%86%92-y-t-h2o.html)) Câu 42 (**TN 2021-205):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
+(Lời giải) Câu 42 (**TN 2021-205):** Cho các sơ đồ phản ứng xảy ra theo đúng tỉ lệ mol:
 
  E + 2NaOH → Y + 2Z
 
@@ -433,7 +433,7 @@ Số phát biểu đúng là
 
 A.**2.** B.**4.** C.**5.** D.**3.
 
-**([Lời giải](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-1-e-naoh-%e2%86%92-x-y-z.html)) Câu 44 (**TN 2021-đợt 2):** Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:**
+**(Lời giải) Câu 44 (**TN 2021-đợt 2):** Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:**
 
  (1) E + NaOH → X + Y + Z 
 
@@ -459,7 +459,7 @@ Số phát biểu đúng là
 
 **A.** 1. B.** 2. **C.** 4. D.** 3.
 
-**([Lời giải](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-e-naoh-%e2%86%92-x-y-z-2-x-hcl-%e2%86%92-f-nacl.html)) Câu 45 (**TN 2021-đợt 2):** Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:**
+**([Lời giải](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-e-naoh-x-y-z-2-x-hcl-f-nacl.html)) Câu 45 (**TN 2021-đợt 2):** Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:**
 
  (1) E + NaOH → X + Y + Z (2) X + HCl → F + NaCl
 
@@ -483,7 +483,7 @@ Số phát biểu đúng là
 
 **A.** 1. B.** 2. **C.** 4. D.** 3.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z.html)) Câu 46 (**TN 2020-1):** Cho các sơ đồ phản ứng:**
+**(Lời giải) Câu 46 (**TN 2020-1):** Cho các sơ đồ phản ứng:**
 
 (1) E + NaOH → X + Y
 
@@ -509,7 +509,7 @@ Số phát biểu đúng là
 
  **A.** 2. B.** 4. **C.** 3. D.** 1.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z-2.html)) Câu 47 (**TN 2020-2):** Cho các sơ đồ phản ứng:**
+**(Lời giải) Câu 47 (**TN 2020-2):** Cho các sơ đồ phản ứng:**
 
 (1) E + NaOH → X + Y
 
@@ -535,7 +535,7 @@ Số phát biểu đúng là
 
  **A.** 2. B.** 4. **C.** 3. D.** 5.
 
-**([Lời giải](/bai-viet/cho-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z.html)) Câu 48 (**TN 2020-3):** Cho sơ đồ phản ứng**
+**([Lời giải](/bai-viet/cho-so-do-phan-ung-e-naoh-x-y-f-naoh-x-z-2.html)) Câu 48 (**TN 2020-3):** Cho sơ đồ phản ứng**
 
 (1) E + NaOH → X + Y
 
@@ -559,7 +559,7 @@ Số phát biểu đúng là
 
  **A.** 3. B.** 2. **C.** 5. D.** 4.
 
-**([Lời giải](/bai-viet/cho-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z-2.html)) Câu 49 (**TN 2020-4):** Cho sơ đồ phản ứng:**
+**([Lời giải](/bai-viet/cho-so-do-phan-ung-e-naoh-x-y-f-naoh-x-z-2.html)) Câu 49 (**TN 2020-4):** Cho sơ đồ phản ứng:**
 
 (1) E + NaOH → X + Y
 
@@ -585,7 +585,7 @@ Số phát biểu đúng là
 
 **Liên quan đến các hợp chất khác**
 
-**([Lời giải](/bai-viet/cho-cac-chuyen-hoa-sau-x-h2o-%e2%86%92-y-y-h2-%e2%86%92-sobitol.html)) Câu 50:** Cho các chuyển hoá sau : 
+**(Lời giải) Câu 50:** Cho các chuyển hoá sau : 
 
 (1) X + H2O → Y (t0, xt) 
 
@@ -603,7 +603,7 @@ X, Y và Z lần lượt là :
 
 **C.** tinh bột, glucozơ và khí cacbonic. D.** xenlulozơ, glucozơ và khí cacbon oxit.**
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-%e2%86%92-x1-x2-h2o-t0c-b-x1-h2so4-%e2%86%92-x3-na2so4.html)) Câu 51 (**QG 2018-1):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
+**(Lời giải) Câu 51 (**QG 2018-1):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
 
 (a) X + 2NaOH → X1 + X2 + H2O (t0C) (b) X1 + H2SO4 → X3 + Na2SO4
 
@@ -613,7 +613,7 @@ Cho biết: X là hợp chất hữu cơ có công thức phân tử C10H10O4; X
 
 **A.** 118. B.** 194. **C.** 222. D.** 202.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-theo-dung-ti-le-mol-x-2naoh-%e2%86%92-x1-x2-h2o-x1-h2so4-%e2%86%92-x3-na2so4.html)) Câu 52 (**QG 2018-2):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
+**(Lời giải) Câu 52 (**QG 2018-2):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
 
 (a) X + 2NaOH → X1 + X2 + H2O (t0C) (b) X1 + H2SO4 → X3 + Na2SO4
 
@@ -623,7 +623,7 @@ Cho biết: X là hợp chất hữu cơ có công thức phân tử C9H8O4; X1,
 
 **A.** 194. B.** 222. **C.** 118. D.** 90.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-%e2%86%92-x1-2x2-t0c-b-x1-h2so4-%e2%86%92-x3-na2so4.html)) Câu 53 (**QG 2018-3):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
+**(Lời giải) Câu 53 (**QG 2018-3):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
 
 (a) X + 2NaOH → X1 + 2X2 (t0C) (b) X1 + H2SO4 → X3 + Na2SO4
 
@@ -635,7 +635,7 @@ Cho biết: X là este có công thức phân tử C12H14O4; X1, X2, X3, X4, X5,
 
 **A.** 146.  B.** 104. **C.** 148. D.** 132.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-theo-dung-ti-le-mol-x-2naoh-%e2%86%92-x1-2x2-x1-h2so4-%e2%86%92-x3-na2so4.html)) Câu 54 (**QG 2018-4):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
+**(Lời giải) Câu 54 (**QG 2018-4):** Cho các sơ đồ phản ứng theo đúng tỉ lệ mol:**
 
 (a) X + 2NaOH → X1 + 2X2 (t0C) (b) X1 + H2SO4 → X3 + Na2SO4
 
@@ -647,7 +647,7 @@ Cho biết: X là este có công thức phân tử C10H10O4; X1, X2, X3, X4, X5,
 
 **A.** 118. B.** 132. **C.** 104. D.** 146.
 
-**([Lời giải](/bai-viet/cho-cac-so-do-phan-ung-sau-c8h14o4-naoh-%e2%86%92-x1-x2-h2o-x1-h2so4-%e2%86%92-x3-na2so4.html)) Câu 55 (**QG 2017-1):** Cho các sơ đồ phản ứng sau:**
+**(Lời giải) Câu 55 (**QG 2017-1):** Cho các sơ đồ phản ứng sau:**
 
 C8H14O4 + NaOH → X1 + X2 + H2O
 
@@ -665,7 +665,7 @@ Phát biểu nào sau đây đúng?
 
 **D.** Nhiệt độ nóng chảy của X3 cao hơn X1.
 
-**([Lời giải](/bai-viet/hop-chat-x-co-cong-thuc-c8h14o4-tu-x-thuc-hien-cac-phan-ung-theo-dung-ti-le-mol.html))**Câu 56:** Hợp chất X có công thức C8H14O4. Từ X thực hiện các phản ứng (theo đúng tỉ lệ mol):**
+**(Lời giải)**Câu 56:** Hợp chất X có công thức C8H14O4. Từ X thực hiện các phản ứng (theo đúng tỉ lệ mol):**
 
 (a) X + 2NaOH  X1 + X2 + H2O (b) X1 + H2SO4  X3 + Na2SO4
 
@@ -1506,9 +1506,9 @@ Xem thêm
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
@@ -1528,9 +1528,9 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đề thi hsg lớp 12 môn hóa thành phố Hà Nội năm 2021](/bai-viet/de-thi-hsg-lop-12-mon-hoa-thanh-pho-ha-noi-nam-2021.html)
-[Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức Y](/bai-viet/cho-este-hai-chuc-mach-ho-x-c7h10o4-tac-dung-voi-luong-du-dung-dich-naoh-dun-nong-thu-duoc-mot-muoi-natri-cua-axit-cacboxylic-hai-chuc-y.html)→
+←Đề thi hsg lớp 12 môn hóa thành phố Hà Nội năm 2021
+Cho este hai chức, mạch hở X (C7H10O4) tác dụng với lượng dư dung dịch NaOH, đun nóng, thu được một muối natri của axit cacboxylic hai chức Y→

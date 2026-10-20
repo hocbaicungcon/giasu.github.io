@@ -81,9 +81,9 @@ Mời các thầy cô truy cập vào các link sau để xem chi tiết và dow
 
 1. [Đề thi HSG môn hoá lớp 10 11 sở Cà Mau năm 2022 2023](/bai-viet/de-thi-hsg-mon-hoa-lop-10-11-so-ca-mau-nam-2022-2023.html)
 
-2. [Đề thi HSG môn hoá lớp 10 11 sở Vĩnh Long năm 2022 2023](/bai-viet/de-thi-hsg-mon-hoa-lop-10-11-so-vinh-long-nam-2022-2023.html)
+2. Đề thi HSG môn hoá lớp 10 11 sở Vĩnh Long năm 2022 2023
 
-3. [Đề thi HSG môn hoá lớp 10 11 sở Vĩnh Phúc năm 2022 2023](/bai-viet/de-thi-hsg-mon-hoa-lop-10-11-so-vinh-phuc-nam-2022-2023.html)
+3. Đề thi HSG môn hoá lớp 10 11 sở Vĩnh Phúc năm 2022 2023
 
 4. Đề thi HSG môn hóa lớp 11 trường THPT Phan Đăng Lưu Đắk Lắc Năm 2022 2023
 
@@ -163,33 +163,33 @@ Mời các thầy cô truy cập vào các link sau để xem chi tiết và dow
 
 ## 1. Tỉnh Vĩnh Phúc
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2010](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2010.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2010
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2011](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2011.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2011
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2012](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2012.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2012
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2013](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2013.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2013
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2014](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2014.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2014
 
 - [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2015](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2015.html)
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2016](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2016.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2016
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2017](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2017.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2017
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2018](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2018.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2018
 
-- [Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2019](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-vinh-phuc-nam-2019.html)
+- Đề thi HSG môn hoá lớp 11 tỉnh Vĩnh Phúc năm 2019
 
 ## 2. Tỉnh Hà Tĩnh
 
-[Đề thi hsg môn hóa lớp 11 tỉnh Hà Tĩnh năm 2020 2021](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-ha-tinh-nam-2020-2021.html)
+Đề thi hsg môn hóa lớp 11 tỉnh Hà Tĩnh năm 2020 2021
 
-[Đề thi hsg môn hóa lớp 11 tỉnh Hà Tĩnh năm 2017 2018](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-ha-tinh-nam-2017-2018.html)
+Đề thi hsg môn hóa lớp 11 tỉnh Hà Tĩnh năm 2017 2018
 
-[Đề thi HSG lớp 11 môn hóa tỉnh Thanh Hóa năm 2018 2019](/bai-viet/de-thi-hsg-lop-11-mon-hoa-tinh-thanh-hoa-nam-2018-2019.html)
+Đề thi HSG lớp 11 môn hóa tỉnh Thanh Hóa năm 2018 2019
 
 [Đang update]
 
@@ -217,7 +217,7 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -225,19 +225,19 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -251,31 +251,31 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tư duy NAP về tính bất biến của kim loại](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-kim-loai.html)
+- Tư duy NAP về tính bất biến của kim loại
 
-- [Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-hon-hop-chua-hop-chat.html)
+- Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất
 
-- [Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn](/bai-viet/tu-duy-nap-di-tat-don-dau-ket-hop-voi-cac-dinh-luat-bao-toan.html)
+- Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn
 
-- [Tư duy NAP phân chia nhiệm vụ H+](/bai-viet/tu-duy-nap-phan-chia-nhiem-vu-h.html)
+- Tư duy NAP phân chia nhiệm vụ H+
 
-- [Vận dụng linh hoạt và liên hoàn các định luật bảo toàn](/bai-viet/van-dung-linh-hoat-va-lien-hoan-cac-dinh-luat-bao-toan.html)
+- Vận dụng linh hoạt và liên hoàn các định luật bảo toàn
 
 - [30+ bài toán nhiệt nhôm có lời giải chi tiết](/bai-viet/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet.html)
 
-- [Các dạng toán nâng cao về sắt và các hợp chất của sắt](/bai-viet/cac-dang-toan-nang-cao-ve-sat-va-cac-hop-chat-cua-sat.html)
+- Các dạng toán nâng cao về sắt và các hợp chất của sắt
 
-- [Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-ket-tua-cua-baco3-va-aloh3.html)
+- Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết
 
 - [Bài toán đồ thị nâng cao có lời giải chi tiết](/bai-viet/bai-toan-do-thi-nang-cao.html)
 
 - [Bài toán nhỏ từ từ H+ vào dung dịch HCO3- và CO32- có lời giải chi tiết](/bai-viet/bai-toan-nho-tu-tu-h-vao-dung-dich-hco3-va-co32-co-loi-giai-chi-tiet.html)
 
-- [Bài toán vận dụng tư duy điền số điện tích có lời giải chi tiết](/bai-viet/bai-toan-van-dung-tu-duy-dien-so-dien-tich.html)
+- Bài toán vận dụng tư duy điền số điện tích có lời giải chi tiết
 
-- [Bài toán khử oxit kim loại bằng H2 CO hoặc C có lời giải chi tiết](/bai-viet/bai-toan-khu-oxit-kim-loai-bang-h2-co-hoac-c-co-loi-giai-chi-tiet.html)
+- Bài toán khử oxit kim loại bằng H2 CO hoặc C có lời giải chi tiết
 
-- [Bài toán kim loại tác dụng với dung dịch muối có lời giải chi tiết](/bai-viet/bai-toan-kim-loai-tac-dung-voi-dung-dich-muoi-co-loi-giai-chi-tiet.html)
+- Bài toán kim loại tác dụng với dung dịch muối có lời giải chi tiết
 
-←[Mở tiệm rửa xe ô tô chỉ với 90 triệu!](/bai-viet/mo-tiem-rua-xe-o-to-chi-voi-90-trieu.html)
-[Đề thi hsg môn hóa lớp 11 tỉnh Hà Tĩnh năm 2020 2021](/bai-viet/de-thi-hsg-mon-hoa-lop-11-tinh-ha-tinh-nam-2020-2021.html)→
+←Mở tiệm rửa xe ô tô chỉ với 90 triệu!
+Đề thi hsg môn hóa lớp 11 tỉnh Hà Tĩnh năm 2020 2021→

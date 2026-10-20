@@ -126,7 +126,7 @@ Các phản ứng đều tạo khí N2 là
 
 **Câu 19:** Để điều chế etyl axetat trong phòng thí nghiệm, người ta lắp dụng cụ như hình vẽ sau:
 
-![Đề thi hsg lớp 12 môn hóa cụm Hiệp Hòa Bắc Giang 1](file:///C:/Users/Admin/AppData/Local/Temp/lu6464twzyep.tmp/lu6464twzyfd_tmp_a42f631c82457cf2.png)
+
 
 Hóa chất được cho vào bình 1 trong thí nghiệm trên là
 
@@ -160,7 +160,7 @@ Hóa chất được cho vào bình 1 trong thí nghiệm trên là
 
 **Câu 26:** Cho từ từ dung dịch HCl vào dung dịch có chứa a mol Na2CO3 và b mol NaHCO3. Số mol khí CO2 thu được phụ thuộc vào số mol HCl được biểu diễn trên đồ thị sau (coi khí CO2 không tan trong nước):
 
-![Đề thi hsg lớp 12 môn hóa cụm Hiệp Hòa Bắc Giang 2](file:///C:/Users/Admin/AppData/Local/Temp/lu6464twzyep.tmp/lu6464twzyfd_tmp_c06aaef70a3c53bc.png)
+
 
 Giá trị của x là
 
@@ -264,7 +264,7 @@ Biết Y và Z đều có phản ứng tráng gương. Hai chất Y, Z tương �
 
 **B.** Trong phân tử X có 3 liên kết pi (
 
-![Đề thi hsg lớp 12 môn hóa cụm Hiệp Hòa Bắc Giang 3](file:///C:/Users/Admin/AppData/Local/Temp/lu6464twzyep.tmp/lu6464twzyfd_tmp_310a8b77ad68c34d.gif)
+
 
  ).
 
@@ -320,7 +320,7 @@ Xem thêm
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
@@ -338,11 +338,11 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đề thi hsg lớp 12 môn hóa THPT Hiệp Hòa Bắc Giang](/bai-viet/de-thi-hsg-lop-12-mon-hoa-thpt-hiep-hoa-bac-giang.html)
-[Đề thi hsg lớp 11 môn hóa cụm Hiệp Hòa Bắc Giang](/bai-viet/de-thi-hsg-lop-11-mon-hoa-cum-hiep-hoa-bac-giang.html)→
+←Đề thi hsg lớp 12 môn hóa THPT Hiệp Hòa Bắc Giang
+Đề thi hsg lớp 11 môn hóa cụm Hiệp Hòa Bắc Giang→

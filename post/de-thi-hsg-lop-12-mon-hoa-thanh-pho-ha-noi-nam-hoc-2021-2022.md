@@ -44,7 +44,7 @@ c) Tại sao không được đun sôi hỗn hợp trong ống nghiệm?
 
 **2.** Xác định các chất hữu cơ X, Y, Z, T, M, N, K (có hai chất là hiđrocacbon) và viết phương trình hóa học thực hiện dãy chuyển hóa sau (ghi rõ điều kiện nếu có):
 
-![Đề thi hsg lớp 12 môn hóa thành phố Hà Nội năm học 2021 - 2022 1](file:///C:/Users/Admin/AppData/Local/Temp/lu39042xn9ow.tmp/lu39042xna04_tmp_7a7d96a4ca5195c5.png)
+
 
 **3.** Cho các hóa chất và dụng cụ sau: bơm chứa khí CO2, dung dịch NaOH loãng, hai cốc thủy tinh giống nhau có chia vạch thể tích, đũa thủy tinh. Trình bày cách điều chế dung dịch Na2CO3 tinh khiết.
 
@@ -148,9 +148,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Biện luận công thức muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -164,11 +164,11 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
  
 
-←[Kiểu từ điển dictionary trong python](/bai-viet/kieu-tu-dien-dictionary-trong-python.html)
-[Đề thi học kì 1 môn hóa lớp 12 Sở GD Nam Định năm 2021-2022 đợt 2](/bai-viet/de-thi-hoc-ki-1-mon-hoa-lop-12-so-gd-nam-dinh-nam-2021-2022-dot-2.html)→
+←Kiểu từ điển dictionary trong python
+Đề thi học kì 1 môn hóa lớp 12 Sở GD Nam Định năm 2021-2022 đợt 2→

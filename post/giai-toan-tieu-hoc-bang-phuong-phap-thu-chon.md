@@ -19,7 +19,7 @@ grade: 4
 
 Phương pháp thử chọn chính là thử và chọn. Có những bài toán chúng ta không thể tìm ra được một phương án duy nhất, mà từ một giả thiết nào đó ta chỉ suy luận ra được nhiều khả năng có thể đúng. Lúc đó chúng ta sẽ lần lượt thay các phương án này vào những giả thiết còn lại để kiểm tra và chọn ra đáp án phù hợp.
 
-Phương pháp thử chọn có thể dùng để giải các bài toán về [cấu tạo số tự nhiên](/bai-viet/toan-lop-4-lap-so-tu-nhien-va-quy-tac-dem.html), cấu tạo số thập phân, cấu tạo phân số và cả các bài toán có văn về hình học, toán về chuyển động đều, [toán tính tuổi](/bai-viet/cac-bai-toan-tinh-tuoi-o-cap-tieu-hoc.html)…
+Phương pháp thử chọn có thể dùng để giải các bài toán về [cấu tạo số tự nhiên](/bai-viet/toan-lop-4-lap-so-tu-nhien-va-quy-tac-dem.html), cấu tạo số thập phân, cấu tạo phân số và cả các bài toán có văn về hình học, toán về chuyển động đều, toán tính tuổi…
 
 **Ví dụ 1.** Biết rằng hiệu giữa chữ số hàng chục và hàng đơn vị của một số lẻ có hai chữ số bằng 3. Nếu thêm vào số đó 3 đơn vị ta được số có hai chữ số giống nhau. Tìm số đó.
 

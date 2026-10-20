@@ -15,7 +15,7 @@ tags:
 grade: 12
 ---
 
-Để tính thể tích của một khối đa diện, nếu đó là các khối cơ bản như khối chóp, khối lăng trụ thì chúng ta có thể tính trực tiếp (xem trong bài [Tính thể tích khối chóp](/bai-viet/tinh-the-tich-khoi-chop.html)) hoặc so sánh thể tích của chúng với các khối dễ tính thể tích hơn.
+Để tính thể tích của một khối đa diện, nếu đó là các khối cơ bản như khối chóp, khối lăng trụ thì chúng ta có thể tính trực tiếp (xem trong bài Tính thể tích khối chóp) hoặc so sánh thể tích của chúng với các khối dễ tính thể tích hơn.
 
 Tuy nhiên, đối với các khối đa diện phức tạp, hoặc việc tính thể tích của chúng một cách trực tiếp gặp khó khăn, chúng ta có thể nghĩ tới việc phân chia khối đa diện thành các khối đơn giản, dễ tính thể tích hơn.
 

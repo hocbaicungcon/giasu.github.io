@@ -29,11 +29,11 @@ Mời bạn đọc xem chi tiết trong bài [Phương pháp dùng sơ đồ đo
 
 Trong một bài toán đơn giản về đại lượng tỉ lệ (thuận hay nghịch) người ta thường cho biết hai giá trị của đại lượng thứ nhất và một giá trị của đại lượng thứ hai. Bài toán đó đòi hỏi phải tìm một giá trị chưa biết của đại lượng thứ hai.
 
-Mời các em xem chi tiết trong bài [Phương pháp rút về đơn vị – Phương pháp tỉ số](/bai-viet/phuong-phap-rut-ve-don-vi-phuong-phap-ti-so.html)
+Mời các em xem chi tiết trong bài Phương pháp rút về đơn vị – Phương pháp tỉ số
 
 ## 3. Phương pháp chia tỉ lệ
 
-Người ta thường sử dụng phương pháp chia tỉ lệ khi gặp các bài toán [tìm hai số khi biết tổng và tỉ số của hai số](/bai-viet/tim-hai-so-khi-biet-tong-va-ti-so-cua-hai-so.html) hoặc [tìm hai số khi biết hiệu và tỉ số của hai số](/bai-viet/tim-hai-so-khi-biet-hieu-va-ti-so-cua-hai-so.html). Nhiều bài toán về đại lượng tỷ lệ thuận, về đại lượng tỉ lệ nghịch có thể giải được bằng phương pháp này.
+Người ta thường sử dụng phương pháp chia tỉ lệ khi gặp các bài toán tìm hai số khi biết tổng và tỉ số của hai số hoặc tìm hai số khi biết hiệu và tỉ số của hai số. Nhiều bài toán về đại lượng tỷ lệ thuận, về đại lượng tỉ lệ nghịch có thể giải được bằng phương pháp này.
 
 ## 4. Phương pháp thử chọn
 
@@ -43,7 +43,7 @@ Phương pháp thử chọn sử dụng để loại bớt các phương án nh�
 
 Trong một bài toán thường có nhiều số cho trước (số đã biết). Bài toán có thể đòi hỏi phải tính giá trị của một đơn vị nào đó. Bởi vậy ta có thể biến đổi hai số cho trước của một đại lượng này sao cho chúng bằng nhau rồi nhờ cách so sánh hai số khác nhau của một đại lượng khác mà tính được giá trị một đơn vị cần tìm.
 
-Mời bạn đọc xem chi tiết tại đây [Giải toán bằng phương pháp khử](/bai-viet/giai-toan-bang-phuong-phap-khu.html)
+Mời bạn đọc xem chi tiết tại đây Giải toán bằng phương pháp khử
 
 ## 6. Phương pháp giả thiết tạm
 
@@ -87,7 +87,7 @@ Trong hình vẽ mỗi đối tượng được biểu diễn bởi một điể
 
 Ở một số bài toán, mà khi giải bài toán đó ta có thể dùng các chữ cái a,b,c,… x,y,z hoặc A,B,C,M,N,…  để biểu diễn số có một hoặc nhiều chữ số. Để giải quyết các dạng toán này, chúng ta sử dụng cấu tạo thập phân của một số, hoặc sử dụng tính chẵn lẻ, tính chất chữ số tận cùng của số tự nhiên, tính chia hết…
 
-Mời các bạn xem chi tiết trong bài [Phương pháp dùng chữ thay số ở tiểu học](/bai-viet/phuong-phap-dung-chu-thay-so.html)
+Mời các bạn xem chi tiết trong bài Phương pháp dùng chữ thay số ở tiểu học
 
 ## 13. Phương pháp lập bảng
 

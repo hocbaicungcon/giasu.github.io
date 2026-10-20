@@ -45,11 +45,11 @@ Số phát biểu **đúng** là
 
 Mời các thầy cô và các em xem toàn bộ đề thi tại
 
-[Đề thi thử tốt nghiệp THPT 2022 môn hóa sở GD Nam Định lần 1 và lời giải chi tiết](/bai-viet/de-thi-thu-tot-nghiep-thpt-2022-mon-hoa-so-gd-nam-dinh-lan-1-va-loi-giai-chi-tiet.html)
+Đề thi thử tốt nghiệp THPT 2022 môn hóa sở GD Nam Định lần 1 và lời giải chi tiết
 
 Hoặc xem thêm các đề thi thử khác tại
 
-[Tổng hợp đề thi thử TN THPT 2022 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tn-thpt-2022-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử TN THPT 2022 môn hóa có đáp án
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -59,5 +59,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-←[Nung hỗn hợp X gồm Al và Fe3O4 ở nhiệt độ cao trong môi trường trơ (giả sử chỉ xảy ra phản ứng khử oxit thành kim loại)](/bai-viet/nung-hon-hop-x-gom-al-va-fe3o4-o-nhiet-do-cao-trong-moi-truong-tro-gia-su-chi-xay-ra-phan-ung-khu-oxit-thanh-kim-loai.html)
-[Butan là một trong hai thành phần chính của khí đốt hóa lỏng (Liquified Petroleum Gas-viết tắt là LPG)](/bai-viet/butan-la-mot-trong-hai-thanh-phan-chinh-cua-khi-dot-hoa-long-liquified-petroleum-gas-viet-tat-la-lpg.html)→
+←Nung hỗn hợp X gồm Al và Fe3O4 ở nhiệt độ cao trong môi trường trơ (giả sử chỉ xảy ra phản ứng khử oxit thành kim loại)
+Butan là một trong hai thành phần chính của khí đốt hóa lỏng (Liquified Petroleum Gas-viết tắt là LPG)→

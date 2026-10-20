@@ -266,5 +266,5 @@ Mời các thầy cô xem thêm
 
 [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 
-←[Tiến hành crăkinh 17,4 (g) C4H10 một thời gian trong bình kín với xúc tác thích hợp thu được hỗn hợp khí A](/bai-viet/tien-hanh-crakinh-174-g-c4h10-mot-thoi-gian-trong-binh-kin-voi-xuc-tac-thich-hop-thu-duoc-hon-hop-khi-a.html)
+←Tiến hành crăkinh 17,4 (g) C4H10 một thời gian trong bình kín với xúc tác thích hợp thu được hỗn hợp khí A
 [Đáp án 20 câu trắc nghiệm Module 1 môn hóa THPT](/bai-viet/dap-an-20-cau-trac-nghiem-module-1-mon-hoa-thpt.html)→

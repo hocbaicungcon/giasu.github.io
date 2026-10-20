@@ -28,13 +28,13 @@ Cho hai hợp chất hữu cơ X, Y có công thức phân tử là C3H9NO2. Cho
 
 Xem thêm
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -42,5 +42,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[X là một dẫn xuất của benzen, có công thức phân tử là C7H9NO2. Cho 13,9 gam X tác dụng vừa đủ với](/bai-viet/x-la-mot-dan-xuat-cua-benzen-co-cong-thuc-phan-tu-la-c7h9no2-cho-139-gam-x-tac-dung-vua-du-voi.html)
-[Chất hữu cơ X có công thức phân tử C2H8N2O3. Cho 3,24 gam X tác dụng với 500 ml dung dịch KOH](/bai-viet/chat-huu-co-x-co-cong-thuc-phan-tu-c2h8n2o3-cho-324-gam-x-tac-dung-voi-500-ml-dung-dich-koh.html)→
+←X là một dẫn xuất của benzen, có công thức phân tử là C7H9NO2. Cho 13,9 gam X tác dụng vừa đủ với
+Chất hữu cơ X có công thức phân tử C2H8N2O3. Cho 3,24 gam X tác dụng với 500 ml dung dịch KOH→

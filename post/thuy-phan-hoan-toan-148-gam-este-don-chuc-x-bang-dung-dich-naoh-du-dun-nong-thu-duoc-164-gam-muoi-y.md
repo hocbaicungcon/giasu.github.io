@@ -84,5 +84,5 @@ Muối Y là $\text{CH}_3\text{COONa}$ (natri axetat, $M = 82$, $m = 0{,}2 \time
 ---
 
 ## Tài liệu ôn thi tốt nghiệp THPT môn Hóa học
-- [Giải chi tiết đề minh họa tốt nghiệp THPT môn Hóa học](/bai-viet/giai-chi-tiet-de-minh-hoa-thi-tot-nghiep-thpt-2022-mon-hoa.html)
-- [Tổng hợp đề thi thử tốt nghiệp THPT môn Hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+- Giải chi tiết đề minh họa tốt nghiệp THPT môn Hóa học
+- Tổng hợp đề thi thử tốt nghiệp THPT môn Hóa có đáp án

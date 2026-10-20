@@ -26,19 +26,19 @@ Cho biết nguyên tử khối (theo u) của các nguyên tố:
 
 KMnO4  
 
-![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Quý Đôn 1](file:///C:/Users/Admin/AppData/Local/Temp/lu3580oahkb.tmp/lu3580oahue_tmp_9c934494be02950c.gif)
+
 
  O2  
 
-![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Quý Đôn 2](file:///C:/Users/Admin/AppData/Local/Temp/lu3580oahkb.tmp/lu3580oahue_tmp_627482b6edca072b.gif)
+
 
  SO2  
 
-![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Quý Đôn 3](file:///C:/Users/Admin/AppData/Local/Temp/lu3580oahkb.tmp/lu3580oahue_tmp_722aa695feb05991.gif)
+
 
   SO3
 
-![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Quý Đôn 4](file:///C:/Users/Admin/AppData/Local/Temp/lu3580oahkb.tmp/lu3580oahue_tmp_a97240292e3c5187.gif)
+
 
   H2SO4
 
@@ -136,13 +136,13 @@ Xem thêm
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Minh Xuân](/bai-viet/de-kiem-tra-hoc-ki-2-lop-10-mon-hoa-thpt-le-minh-xuan.html)
-[Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Thánh Tôn](/bai-viet/de-kiem-tra-hoc-ki-2-lop-10-mon-hoa-thpt-le-thanh-ton.html)→
+←Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Minh Xuân
+Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Lê Thánh Tôn→

@@ -32,11 +32,11 @@ Do đó lượng CO2 thoát ra do cả CO32- và HCO3– sinh ra theo đúng t�
 
 ## II. Ví dụ minh họa
 
-**([Lời giải](/bai-viet/nho-tu-tu-dung-dich-chua-015-mol-hcl-vao-dung-dich-chua-na2co3-003-mol-nahco3-004-mol-va-k2co3-006-mol.html)) Ví dụ 1:** Nhỏ từ từ dung dịch chứa 0,15 mol HCl vào dung dịch chứa Na2CO3 0,03 mol, NaHCO3 0,04 mol và K2CO3 0,06 mol thu được V lít khí CO2 (đktc). Giá trị của V là:
+**(Lời giải) Ví dụ 1:** Nhỏ từ từ dung dịch chứa 0,15 mol HCl vào dung dịch chứa Na2CO3 0,03 mol, NaHCO3 0,04 mol và K2CO3 0,06 mol thu được V lít khí CO2 (đktc). Giá trị của V là:
 
 **A.** 1,344 **B.** 2,24 **C.** 1,792 **D.** 2,688
 
-**([Lời giải](/bai-viet/nho-rat-tu-tu-dung-dich-chua-003-mol-k2co3-va-006-mol-khco3-vao-dung-dich-chua-008-mol-hcl.html)) Ví dụ 2:** Nhỏ rất từ từ dung dịch chứa 0,03 mol K2CO3 và 0,06 mol KHCO3 vào dung dịch chứa 0,08 mol HCl. Sau khi các phản ứng hoàn toàn thấy thoát ra x mol khí CO2. Giá trị của x là:
+**(Lời giải) Ví dụ 2:** Nhỏ rất từ từ dung dịch chứa 0,03 mol K2CO3 và 0,06 mol KHCO3 vào dung dịch chứa 0,08 mol HCl. Sau khi các phản ứng hoàn toàn thấy thoát ra x mol khí CO2. Giá trị của x là:
 
 **A.** 0,05 **B.** 0,04 **C.** 0,06 **D.** 0,035
 
@@ -44,37 +44,37 @@ Do đó lượng CO2 thoát ra do cả CO32- và HCO3– sinh ra theo đúng t�
 
 **A.** b = a **B.** b = 0,75a **C.** b = 1,5a **D.** b = 2a
 
-**([Lời giải](/bai-viet/x-la-dung-dich-hcl-nong-do-x-mol-l-y-la-dung-dich-na2co3-nong-do-y-mol-l-nho-tu-tu-100ml-x-vao-100ml-y.html)) Ví dụ 4:** X là dung dịch HCl nồng độ X mol/l. Y là dung dịch Na2CO3 nồng độ y mol/l. Nhỏ từ từ 100ml X vào 100ml Y, sau các phản ứng thu được V1 lít CO2 (đktc). Nhỏ từ từ 100ml Y vào 100ml X, sau phản ứng thu được V2 lít CO2 (đktc). Biết tỉ lệ V1:V2 = 4:7. Tỉ lệ x:y bằng
+**(Lời giải) Ví dụ 4:** X là dung dịch HCl nồng độ X mol/l. Y là dung dịch Na2CO3 nồng độ y mol/l. Nhỏ từ từ 100ml X vào 100ml Y, sau các phản ứng thu được V1 lít CO2 (đktc). Nhỏ từ từ 100ml Y vào 100ml X, sau phản ứng thu được V2 lít CO2 (đktc). Biết tỉ lệ V1:V2 = 4:7. Tỉ lệ x:y bằng
 
 **A.** 11:4 **B.** 11:7 **C.** 7:5 **D.** 7:3
 
-**([Lời giải](/bai-viet/dung-dich-a-chua-200ml-dung-dich-hcl-xm-dung-dich-b-chua-500-ml-na2co3-04m-va-nahco3-02m.html)) Ví dụ 5:** Dung dịch A chứa 200ml dung dịch HCl xM, dung dịch B chứa 500 ml Na2CO3 0,4M và NaHCO3 0,2M. Đổ rất từ từ A vào B thu đuợc V lít khí CO2 (đktc). Mặt khác, đổ rất từ từ B vào A thu được (V+0,896) lít khí CO2 (đktc). Giá trị của x là:
+**(Lời giải) Ví dụ 5:** Dung dịch A chứa 200ml dung dịch HCl xM, dung dịch B chứa 500 ml Na2CO3 0,4M và NaHCO3 0,2M. Đổ rất từ từ A vào B thu đuợc V lít khí CO2 (đktc). Mặt khác, đổ rất từ từ B vào A thu được (V+0,896) lít khí CO2 (đktc). Giá trị của x là:
 
 **A.** 1,0 **B.** 1,5 **C.** 1,8 **D.** 2,0
 
-**([Lời giải](/bai-viet/hap-thu-het-448-lit-dktc-co2-vao-dung-dich-chua-x-mol-koh-va-y-mol-k2co3-thu-duoc-200ml-dung-dich-x.html)) Ví dụ 6:** Hấp thụ hết 4,48 lít (đktc) CO2 vào dung dịch chứa x mol KOH và y mol K2CO3 thu được 200ml dung dịch X. Lấy 100ml dung dịch X cho từ từ vào 300ml dung dịch HCl 0,5M thu được 2,688 lít khí (đktc). Mặt khác, 100ml dung dịch X tác dụng với dung dịch Ba(OH)2 dư thu được 39,4 gam kết tủa. Giá trị của y là:
+**(Lời giải) Ví dụ 6:** Hấp thụ hết 4,48 lít (đktc) CO2 vào dung dịch chứa x mol KOH và y mol K2CO3 thu được 200ml dung dịch X. Lấy 100ml dung dịch X cho từ từ vào 300ml dung dịch HCl 0,5M thu được 2,688 lít khí (đktc). Mặt khác, 100ml dung dịch X tác dụng với dung dịch Ba(OH)2 dư thu được 39,4 gam kết tủa. Giá trị của y là:
 
 **A.** 0,15. **B.** 0,05. **C.** 0,1. **D.** 0,2.
 
 ## III. Bài tập vận dụng
 
-**([Lời giải](/bai-viet/dung-dich-x-chua-hon-hop-gom-na2co3-15m-va-khco3-1m-nho-tu-tu-tung-giot-cho-den-het-200-ml-dung-dich-hcl-1m.html)) Câu 1:** Dung dịch X chứa hỗn hợp gồm Na2CO3 1,5M và KHCO3 1M. Nhỏ từ từ từng giọt cho đến hết 200 ml dung dịch HCl 1M vào 100ml dung dịch X, sinh ra V lít khí CO2 (đktc). Giá trị của V là:
+**(Lời giải) Câu 1:** Dung dịch X chứa hỗn hợp gồm Na2CO3 1,5M và KHCO3 1M. Nhỏ từ từ từng giọt cho đến hết 200 ml dung dịch HCl 1M vào 100ml dung dịch X, sinh ra V lít khí CO2 (đktc). Giá trị của V là:
 
 **A.** 2,24 **B.** 4,48 **C.** 3,36 **D.** 1,12
 
-**([Lời giải](/bai-viet/nho-tu-tu-300-ml-dung-dich-a-chua-na2co3-05m-va-nahco3-4-3m-vao.html)) Câu 2:** Nhỏ từ từ 300 ml dung dịch A chứa Na2CO3 0,5M và NaHCO3 4/3M vào 420 ml dung dịch HCl 1M thấy V lít khí CO2 (đktc) thoát ra. Giá trị của V là:
+**(Lời giải) Câu 2:** Nhỏ từ từ 300 ml dung dịch A chứa Na2CO3 0,5M và NaHCO3 4/3M vào 420 ml dung dịch HCl 1M thấy V lít khí CO2 (đktc) thoát ra. Giá trị của V là:
 
 **A.** 6,048 **B.** 6,72 **C.** 7,392 **D.** Đáp án khác
 
-**([Lời giải](/bai-viet/nho-rat-tu-tu-dung-dich-chua-003-mol-k2co3-va-006-mol-khco3-vao-dung-dich-chua-008-mol-hcl-2.html)) Câu 3:** Nhỏ rất từ từ dung dịch chứa 0,03 mol K2CO3 và 0,06 mol KHCO3 vào dung dịch chứa 0,08 mol HCl. Sau khi các phản ứng hoàn toàn thấy thoát ra x mol khí CO2. Giá trị của x là:
+**(Lời giải) Câu 3:** Nhỏ rất từ từ dung dịch chứa 0,03 mol K2CO3 và 0,06 mol KHCO3 vào dung dịch chứa 0,08 mol HCl. Sau khi các phản ứng hoàn toàn thấy thoát ra x mol khí CO2. Giá trị của x là:
 
 **A.** 0,05 **B.** 0,04 **C.** 0,06 **D.** 0,035
 
-**([Lời giải](/bai-viet/nho-tu-tu-300-ml-dung-dich-a-chua-na2co3-05m-va-nahco3-4-3m-vao-420-ml-dung-dich-hcl-1m.html)) Câu 4:** Nhỏ từ từ 300 ml dung dịch A chứa Na2CO3 0,5M và NaHCO3 4/3M vào 420 ml dung dịch HCl 1M thấy V lít khí CO2 (đktc) thoát ra. Giá trị của V là:
+**(Lời giải) Câu 4:** Nhỏ từ từ 300 ml dung dịch A chứa Na2CO3 0,5M và NaHCO3 4/3M vào 420 ml dung dịch HCl 1M thấy V lít khí CO2 (đktc) thoát ra. Giá trị của V là:
 
 **A.** 6,048 **B.** 6,72 **C.** 7,392 **D.** Đáp án khác
 
-**([Lời giải](/bai-viet/dung-dich-x-chua-x-mol-na2co3-va-y-mol-nahco3-voi-x-y-1-2-dung-dich-y-chua-z-mol-hcl.html)) Câu 5:** Dung dịch X chứa x mol Na2CO3 và y mol NaHCO3 với x : y = 1: 2. Dung dịch Y chứa z mol HCl. Thực hiện 2 thí nghiệm sau:
+**(Lời giải) Câu 5:** Dung dịch X chứa x mol Na2CO3 và y mol NaHCO3 với x : y = 1: 2. Dung dịch Y chứa z mol HCl. Thực hiện 2 thí nghiệm sau:
 
 -Cho từ từ đến hết dd X vào dd Y thấy thoát ra 16,8 lít khí CO2 (đktc)
 
@@ -194,7 +194,7 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -202,19 +202,19 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -228,23 +228,23 @@ Các thầy cô và các em có thể xem thêm các tài liệu khác của mô
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tư duy NAP về tính bất biến của kim loại](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-kim-loai.html)
+- Tư duy NAP về tính bất biến của kim loại
 
-- [Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-hon-hop-chua-hop-chat.html)
+- Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất
 
-- [Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn](/bai-viet/tu-duy-nap-di-tat-don-dau-ket-hop-voi-cac-dinh-luat-bao-toan.html)
+- Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn
 
-- [Tư duy NAP phân chia nhiệm vụ H+](/bai-viet/tu-duy-nap-phan-chia-nhiem-vu-h.html)
+- Tư duy NAP phân chia nhiệm vụ H+
 
-- [Vận dụng linh hoạt và liên hoàn các định luật bảo toàn](/bai-viet/van-dung-linh-hoat-va-lien-hoan-cac-dinh-luat-bao-toan.html)
+- Vận dụng linh hoạt và liên hoàn các định luật bảo toàn
 
 - [30+ bài toán nhiệt nhôm có lời giải chi tiết](/bai-viet/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet.html)
 
-- [Các dạng toán nâng cao về sắt và các hợp chất của sắt](/bai-viet/cac-dang-toan-nang-cao-ve-sat-va-cac-hop-chat-cua-sat.html)
+- Các dạng toán nâng cao về sắt và các hợp chất của sắt
 
-- [Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-ket-tua-cua-baco3-va-aloh3.html)
+- Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết
 
 - [Bài toán đồ thị nâng cao có lời giải chi tiết](/bai-viet/bai-toan-do-thi-nang-cao.html)
 
-←[Cho từ từ đến dư dung dịch Ba(OH)2 vào dung dịch chứa m gam hỗn hợp Al2(SO4)3 và Al(NO3)3](/bai-viet/cho-tu-tu-den-du-dung-dich-baoh2-vao-dung-dich-chua-m-gam-hon-hop-al2so43-va-alno33-2.html)
-[Nhỏ từ từ dung dịch chứa 0,15 mol HCl vào dung dịch chứa Na2CO3 0,03 mol, NaHCO3 0,04 mol và K2CO3 0,06 mol](/bai-viet/nho-tu-tu-dung-dich-chua-015-mol-hcl-vao-dung-dich-chua-na2co3-003-mol-nahco3-004-mol-va-k2co3-006-mol.html)→
+←Cho từ từ đến dư dung dịch Ba(OH)2 vào dung dịch chứa m gam hỗn hợp Al2(SO4)3 và Al(NO3)3
+Nhỏ từ từ dung dịch chứa 0,15 mol HCl vào dung dịch chứa Na2CO3 0,03 mol, NaHCO3 0,04 mol và K2CO3 0,06 mol→

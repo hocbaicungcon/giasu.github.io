@@ -15,11 +15,11 @@ grade: 11
 ---
 Mời thầy cô và các em học sinh xem thêm:
 
-- [Phân dạng bài tập ancol phenol](/bai-viet/phan-dang-bai-tap-ancol-phenol.html)
+- Phân dạng bài tập ancol phenol
 
-- [Hệ thống câu hỏi trắc nghiệm lý thuyết anđehit axit cacboxylic](/bai-viet/he-thong-cau-hoi-trac-nghiem-andehit-axit-cacboxylic.html)
+- Hệ thống câu hỏi trắc nghiệm lý thuyết anđehit axit cacboxylic
 
-- [Phân dạng bài tập anđehit axit cacboxylic](/bai-viet/phan-dang-bai-tap-andehit-axit-cacboxylic.html)
+- Phân dạng bài tập anđehit axit cacboxylic
 
 ## 1. CÂU HỎI TRẮC NGHIỆM ANCOL PHENOL MỨC ĐỘ NHẬN BIẾT
 
@@ -301,9 +301,9 @@ Xem thêm
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
@@ -321,7 +321,7 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 

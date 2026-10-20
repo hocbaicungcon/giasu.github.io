@@ -18,7 +18,7 @@ GIA SƯ THÔNG MINH xin giới thiệu Bộ đề thi thử Văn tác phẩm TÂ
 
 Mời Thầy Cô và các em tham khảo thêm:
 
-- [Bộ đề thi thử Văn tác phẩm TUYÊN NGÔN ĐỘC LẬP](/bai-viet/bo-de-thi-thu-van-tac-pham-tuyen-ngon-doc-lap.html)
+- Bộ đề thi thử Văn tác phẩm TUYÊN NGÔN ĐỘC LẬP
 
 - [Bộ đề thi thử Văn tác phẩm VỢ NHẶT](/bai-viet/bo-de-thi-thu-van-tac-pham-vo-nhat.html)
 

@@ -61,4 +61,4 @@ Dưới đây là bảng phân loại và liên kết tải toàn bộ các bài
 ## Tài liệu tham khảo thêm
 - [Tổng hợp giáo án và các chuyên đề dạy học Hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 - [Vở ghi bài học Hóa học 11 Cánh Diều cả năm](/bai-viet/vo-ghi-bai-hoc-hoa-11-canh-dieu-ca-nam.html)
-- [Đề thi giữa học kì 1 lớp 11 môn Hóa học có ma trận](/bai-viet/de-kiem-thi-giua-hoc-ki-1-lop-11-mon-hoa-co-ma-tran-nam-2023-2024.html)
+- Đề thi giữa học kì 1 lớp 11 môn Hóa học có ma trận

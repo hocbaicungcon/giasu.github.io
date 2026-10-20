@@ -59,7 +59,7 @@ trang 1
 **4.3.** Este X và chất hữu cơ Y(không chứa chức axit) đều mạch hở và phản ứng với dung dịch NaOH. Đun nóng m gam hỗn hợp E gồm X và Y cần dùng 150 ml dung dịch NaOH 2M, chưng cất dung dịch sau phản ứng thu được 22,2 gam một muối duy nhất của axit cacboxylic có mạch không phân nhánh và hỗn hợp hơi Z gồm 2 chất hữu cơ có cùng số cacbon. Tỉ khối hơi của Z so với H2 bằng 15,85. Tính % theo khối lượng của X, Y trong E.
 
 **HẾT
-![Đề thi hsg lớp 12 môn hóa thành phố Hồ Chí Minh năm 2020 1](file:///C:/Users/Admin/AppData/Local/Temp/lu258081lwou.tmp/lu258081lx8g_tmp_51eefbc4a4d3d878.png)
+
 
 Cho khối lượng nguyên tử của các nguyên tố: H = 1; C = 12; N = 14; O =16; Mg=24; Al = 27; S=32; Fe= 56; Cu = 64; Zn =65 ; Ag = 108;
 
@@ -130,9 +130,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Biện luận công thức muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -146,9 +146,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đề thi hsg lớp 12 môn hóa tỉnh Ninh Bình năm 2011](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-ninh-binh-nam-2011.html)
-[Đề thi hsg lớp 12 môn hóa thành phố Hồ Chí Minh năm 2019](/bai-viet/de-thi-hsg-lop-12-mon-hoa-thanh-pho-ho-chi-minh-nam-2019.html)→
+←Đề thi hsg lớp 12 môn hóa tỉnh Ninh Bình năm 2011
+Đề thi hsg lớp 12 môn hóa thành phố Hồ Chí Minh năm 2019→

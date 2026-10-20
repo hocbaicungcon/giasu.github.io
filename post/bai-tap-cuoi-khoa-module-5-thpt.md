@@ -191,4 +191,4 @@ Có suy nghĩ tích cực hơn trong cuộc sống, chăm chỉ học tập và 
 **—HẾT—**
 
 ←[Đáp án module 5 THPT](/bai-viet/dap-an-module-5-thpt.html)
-[PHỐT là gì? Bóc phốt trên Facebook là gì?](/bai-viet/phot-la-gi-boc-phot-tren-facebook-la-gi.html)→
+PHỐT là gì? Bóc phốt trên Facebook là gì?→

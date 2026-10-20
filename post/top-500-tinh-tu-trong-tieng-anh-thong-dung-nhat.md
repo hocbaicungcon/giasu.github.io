@@ -14,7 +14,7 @@ tags:
 
 ![TOP 500 tính từ trong tiếng Anh thông dụng nhất](assets/images/top-500-tinh-tu-trong-tieng-anh-thong-dung-nhat-tinh-tu-chi-cam-xuc-trong-tieng-anh.jpg)
 
-Xem thêm [Cách sử dụng giới từ trong tiếng Anh](/bai-viet/cach-su-dung-gioi-tu-trong-tieng-anh.html)
+Xem thêm Cách sử dụng giới từ trong tiếng Anh
 
 ## 1. Danh sách 500 tính từ trong tiếng Anh thông dụng nhất
 

@@ -304,5 +304,5 @@ Mời các thầy cô và các em xem thêm
 
 [Câu hỏi trắc nghiệm và phân dạng bài tập theo từng bài hóa 11 cả năm](/bai-viet/cau-hoi-trac-nghiem-va-phan-dang-bai-tap-theo-tung-bai-hoa-11-ca-nam.html)
 
-←[Câu hỏi trắc nghiệm bài 3 phân bón hữu cơ chuyên đề CTST](/bai-viet/cau-hoi-trac-nghiem-bai-3-phan-bon-huu-co-chuyen-de-ctst.html)
-[Câu hỏi trắc nghiệm bài 5 chuyển hóa chất béo thành xà phòng chuyên đề CTST](/bai-viet/cau-hoi-trac-nghiem-bai-5-chuyen-hoa-chat-beo-thanh-xa-phong-chuyen-de-ctst.html)→
+←Câu hỏi trắc nghiệm bài 3 phân bón hữu cơ chuyên đề CTST
+Câu hỏi trắc nghiệm bài 5 chuyển hóa chất béo thành xà phòng chuyên đề CTST→

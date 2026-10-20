@@ -15,7 +15,7 @@ grade: 11
 | SỞ GD & ĐT TP. HỒ CHÍ MINH 
 T
 
-![Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân 1](file:///C:/Users/Admin/AppData/Local/Temp/lu10860csip29.tmp/lu10860csiqv6_tmp_424e14579bcca6de.jpg)
+
 
  RƯỜNG THPT BÙI THỊ XUÂN | ĐÁP ÁN ĐỀ THI HỌC KÌ II – NH 2017-2018
 MÔN: HÓA HỌC 11- CƠ BẢN 
@@ -64,7 +64,7 @@ CH2=CH-CH2-OH + Br2  CH2Br – CHBr – CH2-OH
 **Câu 6.**
 **D**
 
-![Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân 2](file:///C:/Users/Admin/AppData/Local/Temp/lu10860csip29.tmp/lu10860csiqv6_tmp_77696d159ae97cef.png)
+
 
  ầu chuối là một este của axit axetic và ancol isoamylic, loại dầu này có mùi thơm đặc trưng, kích thích vị giác, nên người ta thường cho nhiều vào các món ăn. Tuy nhiên, các chuyên gia khuyến cáo, nếu ăn nhiều dầu chuối, gan sẽ tích trữ lại chất độc, có thể dẫn tới ung thư. Để điều chế dầu chuối người ta có thể sử dụng sơ đồ như hình vẽ bên:
 **a) Nêu tên dụng cụ số (1) và (2).**
@@ -141,7 +141,7 @@ nAg = 0,06. 2 = 0,12 mol  mAg = 0,12 . 108 = **12,96 gam
 | SỞ GD & ĐT TP. HỒ CHÍ MINH 
 T
 
-![Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân 3](file:///C:/Users/Admin/AppData/Local/Temp/lu10860csip29.tmp/lu10860csiqv6_tmp_b9376cfc6a778c13.jpg)
+
 
  RƯỜNG THPT BÙI THỊ XUÂN | ĐÁP ÁN ĐỀ THI HỌC KÌ II – NH 2017-2018
 MÔN: HÓA HỌC 11- NÂNG CAO 
@@ -190,7 +190,7 @@ CH2=CH-CH2-OH + Br2  CH2Br – CHBr – CH2-OH
 **Câu 6.**
 **D**
 
-![Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Bùi Thị Xuân 4](file:///C:/Users/Admin/AppData/Local/Temp/lu10860csip29.tmp/lu10860csiqv6_tmp_77696d159ae97cef.png)
+
 
  ầu chuối là một este của axit axetic và ancol isoamylic, loại dầu này có mùi thơm đặc trưng, kích thích vị giác, nên người ta thường cho nhiều vào các món ăn. Tuy nhiên, các chuyên gia khuyến cáo, nếu ăn nhiều dầu chuối, gan sẽ tích trữ lại chất độc, có thể dẫn tới ung thư. Để điều chế dầu chuối người ta có thể sử dụng sơ đồ như hình vẽ bên:
 **a) Nêu tên dụng cụ số (1) và (2).**
@@ -287,13 +287,13 @@ Xem thêm
 
 [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lạc Hồng](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-lac-hong.html)
-[Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Củ Chi](/bai-viet/de-kiem-tra-hoc-ki-2-lop-11-mon-hoa-hoc-thpt-cu-chi.html)→
+←Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Lạc Hồng
+Đề kiểm tra học kì 2 lớp 11 môn hóa học THPT Củ Chi→

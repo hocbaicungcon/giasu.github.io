@@ -99,7 +99,7 @@ A.**4.** B.**2.** C.**3.** D.**5.
 
 **Câu 71:** Dẫn 0,55 mol hỗn hợp X (gồm hơi nước và khí CO2) qua cacbon nung đỏ thu được 0,95 mol hỗn hợp Y gồm CO, H2 và CO2. Cho Y hấp thụ vào dung dịch chứa 0,1 mol Ba(OH)2 sau khi phản ứng xảy ra hoàn toàn, thu được m gam kết tủa. Giá trị của m là **A.** 29,55. B.** 19,7. **C.** 15,76. D.** 9,85.**Câu 72:** Đốt cháy hoàn toàn m gam triglixerit X cần vừa đủ 3,08 mol O2, thu được CO2 và 2 mol H2O. Cho m gam X tác dụng với dung dịch NaOH vừa đủ, thu được glixerol và 35,36 gam muối. Mặt khác, m gam X tác dụng tối đa với a mol Br2 trong dung dịch. Giá trị của a là **A.** 0,2. B.** 0,24. **C.** 0,12. D.** 0,16.
 
-| Câu 73: Hòa tan hoàn toàn m gam hỗn hợp CuSO4 và NaCl vào nước, thu được dung dịch X. Tiến hành điện phân X với các điện cực trơ, màng ngăn xốp, dòng điện có cường độ không đổi. Tổng số mol khí thu được ở cả hai điện cực (n) phụ thuộc vào thời gian điện phân (t) được mô tả như đồ thị bên (gấp khúc tại điểm M, N). Giả sử hiệu xuất điện phân là 100%, bỏ qua sự bay hơi của nước. Giá trị của m là | ![4 Mã đề thi THPT QG năm 2019 môn hóa file word 1](file:///C:/Users/Admin/AppData/Local/Temp/lu174365vsb73.tmp/lu174365vsb9a_tmp_6658c89578a3c45b.png) |
+| Câu 73: Hòa tan hoàn toàn m gam hỗn hợp CuSO4 và NaCl vào nước, thu được dung dịch X. Tiến hành điện phân X với các điện cực trơ, màng ngăn xốp, dòng điện có cường độ không đổi. Tổng số mol khí thu được ở cả hai điện cực (n) phụ thuộc vào thời gian điện phân (t) được mô tả như đồ thị bên (gấp khúc tại điểm M, N). Giả sử hiệu xuất điện phân là 100%, bỏ qua sự bay hơi của nước. Giá trị của m là |  |
 | --- | --- |
 
 **A.** 17,48. B.** 15,76. **C.** 13,42. D.** 11,08.
@@ -278,7 +278,7 @@ Giá trị của m là
 
 | Câu 74. Hòa tan hoàn toàn m gam hỗn hợp CuSO4 và NaCl vào nước, thu được dung dịch X. Tiến hành
 điện phân X với các điện cực trơ, màng ngăn xốp, dòng điện có cường độ không đổi. Tổng số mol khí
-thu được trên cả 2 điện cực (n) phụ thuộc vào thời gian điện phân (t) được mô tả như đồ thị bên (đồ thị gấp khúc tại các điểm M, N). Giả sử hiệu suất điện phân là 100%, bỏ qua sự bay hơi của H2O. Giá trị của m là | ![4 Mã đề thi THPT QG năm 2019 môn hóa file word 2](file:///C:/Users/Admin/AppData/Local/Temp/lu174365vsb73.tmp/lu174365vsb9a_tmp_e637e411a129ca8e.png) |
+thu được trên cả 2 điện cực (n) phụ thuộc vào thời gian điện phân (t) được mô tả như đồ thị bên (đồ thị gấp khúc tại các điểm M, N). Giả sử hiệu suất điện phân là 100%, bỏ qua sự bay hơi của H2O. Giá trị của m là |  |
 | --- | --- |
 
 **A.** 23,64. B.** 16,62. **C.** 20,13. D.** 26,22.
@@ -357,23 +357,23 @@ Tổng hợp đề thi của bộ Giáo Dục và giải chi tiết tất cả c
 
 Đề chính thức đợt 1 năm 2021
 
-- [Giải chi tiết mã 201 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-201-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 201 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [Giải chi tiết mã 202 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-202-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 202 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [Giải chi tiết mã 205 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-205-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 205 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [Giải chi tiết mã 206 đề thi TN THPT 2021 môn hóa đợt 1](/bai-viet/giai-chi-tiet-ma-206-de-thi-tn-thpt-2021-mon-hoa-dot-1.html)
+- Giải chi tiết mã 206 đề thi TN THPT 2021 môn hóa đợt 1
 
-- [4 mã đề gôc thi TN THPT 2021 môn hóa đợt 1 file word](/bai-viet/4-ma-de-thi-tn-thpt-2021-mon-hoa-dot-1-file-word.html)
+- 4 mã đề gôc thi TN THPT 2021 môn hóa đợt 1 file word
 
 - [Ảnh 24 mã đề thi TN THPT môn hóa năm 2021 của bộ giáo dục](/bai-viet/24-ma-de-thi-tn-thpt-mon-hoa-nam-2021-cua-bo-giao-duc.html)
 
-- Đề minh họa: [Giải chi tiết đề minh họa TN THPT 2021 môn hóa học](/bai-viet/giai-chi-tiet-de-minh-hoa-tn-thpt-2021-mon-hoa-hoc.html)
+- Đề minh họa: Giải chi tiết đề minh họa TN THPT 2021 môn hóa học
 
 Đề chính thức đợt 2 năm 2021
 
-- [Đề thi TN TNPT 2021 môn hóa đợt 2 file word và giải chi tiết](/bai-viet/de-thi-tn-tnpt-2021-mon-hoa-dot-2-file-word.html)
+- Đề thi TN TNPT 2021 môn hóa đợt 2 file word và giải chi tiết
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -399,7 +399,7 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -407,19 +407,19 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -433,25 +433,25 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tư duy NAP về tính bất biến của kim loại](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-kim-loai.html)
+- Tư duy NAP về tính bất biến của kim loại
 
-- [Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất](/bai-viet/tu-duy-nap-ve-tinh-bat-bien-cua-hon-hop-chua-hop-chat.html)
+- Tư duy NAP về tính bất biến của hỗn hợp chứa hợp chất
 
-- [Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn](/bai-viet/tu-duy-nap-di-tat-don-dau-ket-hop-voi-cac-dinh-luat-bao-toan.html)
+- Tư duy NAP đi tắt đón đầu kết hợp với các định luật bảo toàn
 
-- [Tư duy NAP phân chia nhiệm vụ H+](/bai-viet/tu-duy-nap-phan-chia-nhiem-vu-h.html)
+- Tư duy NAP phân chia nhiệm vụ H+
 
-- [Vận dụng linh hoạt và liên hoàn các định luật bảo toàn](/bai-viet/van-dung-linh-hoat-va-lien-hoan-cac-dinh-luat-bao-toan.html)
+- Vận dụng linh hoạt và liên hoàn các định luật bảo toàn
 
 - [30+ bài toán nhiệt nhôm có lời giải chi tiết](/bai-viet/bai-toan-nhiet-nhom-co-loi-giai-chi-tiet.html)
 
-- [Các dạng toán nâng cao về sắt và các hợp chất của sắt](/bai-viet/cac-dang-toan-nang-cao-ve-sat-va-cac-hop-chat-cua-sat.html)
+- Các dạng toán nâng cao về sắt và các hợp chất của sắt
 
-- [Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết](/bai-viet/bai-toan-hon-hop-ket-tua-cua-baco3-va-aloh3.html)
+- Bài toán hỗn hợp kết tủa của BaCO3 và Al(OH)3 có lời giải chi tiết
 
 - [Bài toán đồ thị nâng cao có lời giải chi tiết](/bai-viet/bai-toan-do-thi-nang-cao.html)
 
 - [Bài toán nhỏ từ từ H+ vào dung dịch HCO3- và CO32- có lời giải chi tiết](/bai-viet/bai-toan-nho-tu-tu-h-vao-dung-dich-hco3-va-co32-co-loi-giai-chi-tiet.html)
 
-←[Hỗn hợp E gồm X (C12H27O6N3, là muối của axit glutamic), Y (C4H9O4N) và Z (C4H9O2N) đều mạch hở](/bai-viet/hon-hop-e-gom-x-c12h27o6n3-la-muoi-cua-axit-glutamic-y-c4h9o4n-va-z-c4h9o2n-deu-mach-ho.html)
-[Các loại backlink hỗ trợ SEO](/bai-viet/cac-loai-backlink-ho-tro-seo.html)→
+←Hỗn hợp E gồm X (C12H27O6N3, là muối của axit glutamic), Y (C4H9O4N) và Z (C4H9O2N) đều mạch hở
+Các loại backlink hỗ trợ SEO→

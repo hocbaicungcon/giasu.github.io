@@ -26,5 +26,5 @@ Mời các thầy cô xem thêm
 
 [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 
-←[Thế nào là đánh giá định kì? Nội dung của đánh giá định kì khác gì so với nội dung của đánh giá thường xuyên?](/bai-viet/the-nao-la-danh-gia-dinh-ki-noi-dung-cua-danh-gia-dinh-ki-khac-gi-so-voi-noi-dung-cua-danh-gia-thuong-xuyen.html)
+←Thế nào là đánh giá định kì? Nội dung của đánh giá định kì khác gì so với nội dung của đánh giá thường xuyên?
 [Những công cụ nào thường được sử dụng trong phương pháp quan sát? Nêu ưu, nhược điểm của phương pháp quan sát.](/bai-viet/nhung-cong-cu-nao-thuong-duoc-su-dung-trong-phuong-phap-quan-sat-neu-uu-nhuoc-diem-cua-phuong-phap-quan-sat.html)→

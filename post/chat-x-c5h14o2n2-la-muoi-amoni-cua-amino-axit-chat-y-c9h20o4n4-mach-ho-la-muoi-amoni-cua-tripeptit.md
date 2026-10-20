@@ -30,13 +30,13 @@ Chất X (C5H14O2N2) là muối amoni của amino axit, chất Y (C9H20O4N4, m�
 
 Xem thêm
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -44,5 +44,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Hỗn hợp E gồm hai chất hữu cơ mạch hở X (C4H11NO2) và Y (C6H16N2O4). Đun nóng 46,5 gam E](/bai-viet/hon-hop-e-gom-hai-chat-huu-co-mach-ho-x-c4h11no2-va-y-c6h16n2o4-dun-nong-465-gam-e.html)
-[Hỗn hợp E gồm chất X (C3H10N2O4) và chất Y (C7H13N3O4), trong đó X là muối của axit cacboxylic đa chức](/bai-viet/hon-hop-e-gom-chat-x-c3h10n2o4-va-chat-y-c7h13n3o4-trong-do-x-la-muoi-cua-axit-cacboxylic-da-chuc.html)→
+←Hỗn hợp E gồm hai chất hữu cơ mạch hở X (C4H11NO2) và Y (C6H16N2O4). Đun nóng 46,5 gam E
+Hỗn hợp E gồm chất X (C3H10N2O4) và chất Y (C7H13N3O4), trong đó X là muối của axit cacboxylic đa chức→

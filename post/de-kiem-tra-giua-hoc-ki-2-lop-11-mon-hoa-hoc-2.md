@@ -174,4 +174,4 @@ Câu 2: . Một bình gas (khí hóa lỏng) có chứa 12 kg hỗn hợp propan
 
 *—— HẾT ——
 ←[Đề ôn tập giữa học kì 2 lớp 12 môn hoá học](/bai-viet/de-on-tap-giua-hoc-ki-2-lop-12-mon-hoa-hoc.html)
-[Khó ngủ nên làm gì? 5 cách ngủ nhanh mà tôi đã áp dụng!](/bai-viet/kho-ngu-nen-lam-gi-5-cach-ngu-nhanh-ma-toi-da-ap-dung.html)→
+Khó ngủ nên làm gì? 5 cách ngủ nhanh mà tôi đã áp dụng!→

@@ -30,7 +30,7 @@ c- Fe + S  d- O3 + KI + H2O 
 **Câu II: (2,5 điểm)**
 1. **(0,75đ)** Trong phòng thí nghiệm, có thể dùng mô hình thí nghiệm nào (hình 1, 2, 3) để thu khí O2 (*xác định hình nào, không cần giải thích, không cần viết phương trình hóa học*).
 
-![Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Nguyễn Khuyến 1](file:///C:/Users/Admin/AppData/Local/Temp/lu3580oahkb.tmp/lu3580oaib8_tmp_d17dcc74aeaffe3e.png)
+
 
 1. **(1đ)** Cho các chất sau: Mg, Cu, FeS, Na2SO3, Na2CO3, CuS, CaF2. Chất nào tác dụng với dung dịch H2SO4 (loãng) để sinh ra: (*xác định chất, không cần viết phương trình hóa học*).
 
@@ -140,13 +140,13 @@ Xem thêm
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Nguyễn Hữu Tiến](/bai-viet/de-kiem-tra-hoc-ki-2-lop-10-mon-hoa-thpt-nguyen-huu-tien.html)
+←Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Nguyễn Hữu Tiến
 [Đề kiểm tra học kì 2 lớp 10 môn hoá THPT Nguyễn Tất Thành](/bai-viet/de-kiem-tra-hoc-ki-2-lop-10-mon-hoa-thpt-nguyen-tat-thanh.html)→

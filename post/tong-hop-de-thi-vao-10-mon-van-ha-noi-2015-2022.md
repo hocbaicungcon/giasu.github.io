@@ -14,7 +14,7 @@ grade: 9
 
 TUYỂN TẬP ĐỀ THI VÀO 10 HÀ NỘI & ĐÁP ÁN MÔN NGỮ VĂN TỪ NĂM 2015-2022
 
-Xem thêm [Đề thi vào 10 môn Toán Hà Nội 2021](/bai-viet/de-thi-vao-10-mon-toan-ha-noi-2021.html)
+Xem thêm Đề thi vào 10 môn Toán Hà Nội 2021
 
 ## ĐỀ THI VÀO LỚP 10 MÔN VĂN HÀ NỘI 2015
 

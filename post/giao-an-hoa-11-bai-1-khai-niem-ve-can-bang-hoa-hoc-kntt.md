@@ -237,5 +237,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án hóa học 11 cánh diều cả năm](/bai-viet/giao-an-hoa-hoc-11-canh-dieu-ca-nam.html)
+←Giáo án hóa học 11 cánh diều cả năm
 [Giáo án hóa 11 bài 2 cân bằng trong dung dịch nước KNTT](/bai-viet/giao-an-hoa-11-bai-2-can-bang-trong-dung-dich-nuoc-kntt.html)→

@@ -700,5 +700,5 @@ Gia Sư AI gửi các thầy cô và các em học sinh file Word tài liệu đ
 Xem thêm các bài viết liên quan:
 - [Tổng hợp giáo án và các chuyên đề dạy học hóa học 10](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-10.html)
 - [Giáo án hóa 11 bài 19 carboxylic acid chân trời sáng tạo](/bai-viet/giao-an-hoa-11-bai-19-carboxylic-acid-chan-troi-sang-tao.html)
-- [Phân dạng bài tập tốc độ phản ứng](/bai-viet/phan-dang-bai-tap-toc-do-phan-ung.html)
+- Phân dạng bài tập tốc độ phản ứng
 

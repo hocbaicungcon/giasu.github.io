@@ -12,7 +12,7 @@ tags:
 - Tài nguyên
 ---
 
-Ngoài các [kho nhạc không bản quyền MIỄN PHÍ](/bai-viet/top-15-kho-nhac-khong-ban-quyen.html), bạn đang tìm các nguồn video không bản quyền làm Youtube? Hãy cùng tham khảo cách tải video miễn phí không bản quyền dưới đây.
+Ngoài các kho nhạc không bản quyền MIỄN PHÍ, bạn đang tìm các nguồn video không bản quyền làm Youtube? Hãy cùng tham khảo cách tải video miễn phí không bản quyền dưới đây.
 
 ## Tải Video miễn phí không bản quyền trên Pixabay
 
@@ -26,7 +26,7 @@ Sau đó, bạn hãy đăng nhập với tài khoản vừa tạo. Nhập từ k
 
 Tiếp theo, chúng ta nhấn vào “Tải về miễn phí” rồi chọn độ phân giải. Cuối cùng nhấn tải về máy tính. Bạn sẽ thấy độ phân giải thay đổi từ HD, Full HD, 4K. Độ phân giải phụ thuộc vào người đăng tải Video lên Pixabay.
 
-Tham khảo thêm [5 kho nhạc bản quyền để làm video youtube/facebook](/bai-viet/5-kho-nhac-ban-quyen-de-lam-video-youtube-facebook.html)!
+Tham khảo thêm 5 kho nhạc bản quyền để làm video youtube/facebook!
 
 ## Tải video miễn phí trên Youtube và Vimeo
 

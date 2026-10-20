@@ -18,7 +18,7 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi và đáp án
 
 Các thầy cô có thể xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -44,7 +44,7 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi và đáp án
 
 Các thầy cô có thể xem thêm nhiều đề thi thử tốt nghiệp THPT năm 2023 tại
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -64,5 +64,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 23 phương pháp giải bài tập môn hóa học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đề thi thử tốt nghiệp THPT môn hóa THPT Nguyễn Viết Xuân Vĩnh Phúc lần 3](/bai-viet/de-thi-thu-tot-nghiep-thpt-mon-hoa-thpt-nguyen-viet-xuan-vinh-phuc-lan-3.html)
-[Đề thi thử tốt nghiệp THPT môn hóa Sở GD Tuyên Quang lần 1](/bai-viet/de-thi-thu-tot-nghiep-thpt-mon-hoa-so-gd-tuyen-quang-lan-1.html)→
+←Đề thi thử tốt nghiệp THPT môn hóa THPT Nguyễn Viết Xuân Vĩnh Phúc lần 3
+Đề thi thử tốt nghiệp THPT môn hóa Sở GD Tuyên Quang lần 1→

@@ -90,5 +90,5 @@ Mời các thầy cô xem thêm
 
 [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 
-←[Vi nhựa là gì? Tác hại của vi nhựa](/bai-viet/vi-nhua-la-gi-tac-hai-cua-vi-nhua.html)
-[#### trong Excel là lỗi gì?](/bai-viet/trong-excel-la-loi-gi.html)→
+←Vi nhựa là gì? Tác hại của vi nhựa
+#### trong Excel là lỗi gì?→

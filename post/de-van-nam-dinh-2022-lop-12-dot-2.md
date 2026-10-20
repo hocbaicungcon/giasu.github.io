@@ -48,7 +48,7 @@ Từ nội dung đoạn trích ở phần Đọc hiểu, hãy viết một đo�
 
 **Câu 2** (5,0 điểm)
 
-Mời bạn tham khảo thêm [Bộ đề thi tác phẩm CHIẾC THUYỀN NGOÀI XA](/bai-viet/bo-de-thi-tac-pham-chiec-thuyen-ngoai-xa.html)
+Mời bạn tham khảo thêm Bộ đề thi tác phẩm CHIẾC THUYỀN NGOÀI XA
 
 Trong phút chốc, ngồi trước mặt chúng tôi lại vẫn là một người đàn bà lúng túng, đầy sợ sệt, nhưng có vẻ thông cảm với chúng tôi hơn. Mụ bắt đầu kể:
 
@@ -80,15 +80,15 @@ Cảm nhận của anh/chị về nhân vật người đàn bà hàng chài tro
 
 Mời các em học sinh tham khảo thêm:
 
-- [Bộ đề thi tác phẩm CHIẾC THUYỀN NGOÀI XA](/bai-viet/bo-de-thi-tac-pham-chiec-thuyen-ngoai-xa.html)
+- Bộ đề thi tác phẩm CHIẾC THUYỀN NGOÀI XA
 
-- [Bộ đề thi NGƯỜI LÁI ĐÒ SÔNG ĐÀ](/bai-viet/bo-de-thi-nguoi-lai-do-song-da.html)
+- Bộ đề thi NGƯỜI LÁI ĐÒ SÔNG ĐÀ
 
 - [Bộ đề thi thử Văn tác phẩm VỢ NHẶT](/bai-viet/bo-de-thi-thu-van-tac-pham-vo-nhat.html)
 
 - [Bộ đề thi thử Văn tác phẩm TÂY TIẾN](/bai-viet/bo-de-thi-thu-van-tac-pham-tay-tien.html)
 
-- [Bộ đề thi thử Văn tác phẩm TUYÊN NGÔN ĐỘC LẬP](/bai-viet/bo-de-thi-thu-van-tac-pham-tuyen-ngon-doc-lap.html)
+- Bộ đề thi thử Văn tác phẩm TUYÊN NGÔN ĐỘC LẬP
 
 ## Đáp án đề KSCL lớp 12 môn Văn Nam Định 2022 lần 2
 

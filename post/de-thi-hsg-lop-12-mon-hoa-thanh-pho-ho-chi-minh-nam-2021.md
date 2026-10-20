@@ -90,7 +90,7 @@ Các thầy cô có thể xem thêm đề các năm khác của tp Hồ Chí Min
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-Đề đánh giá năng lực của ĐHQG tp Hồ Chí Minh: [Tổng hợp đề thi đánh giá năng lực ĐHQG TP Hồ Chí Minh](/bai-viet/tong-hop-de-thi-danh-gia-nang-luc-dhqg-tp-ho-chi-minh.html)
+Đề đánh giá năng lực của ĐHQG tp Hồ Chí Minh: Tổng hợp đề thi đánh giá năng lực ĐHQG TP Hồ Chí Minh
 
  
 
@@ -120,9 +120,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Biện luận công thức muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -136,9 +136,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đề thi hsg lớp 12 môn hóa thành phố Hồ Chí Minh năm 2019](/bai-viet/de-thi-hsg-lop-12-mon-hoa-thanh-pho-ho-chi-minh-nam-2019.html)
+←Đề thi hsg lớp 12 môn hóa thành phố Hồ Chí Minh năm 2019
 [Lý thuyết và bài tập điện phân có lời giải chi tiết](/bai-viet/ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet.html)→

@@ -116,5 +116,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Đề thi hsg lớp 12 môn hóa tỉnh Thái Bình năm 2022 2023](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-thai-binh-nam-2022-2023.html)
-[Đề thi hsg lớp 12 môn hóa tỉnh Hải Dương năm 2022 2023](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-hai-duong-nam-2022-2023.html)→
+←Đề thi hsg lớp 12 môn hóa tỉnh Thái Bình năm 2022 2023
+Đề thi hsg lớp 12 môn hóa tỉnh Hải Dương năm 2022 2023→

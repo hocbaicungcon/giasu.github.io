@@ -117,11 +117,11 @@ Số thí nghiệm thu được đơn chất là:
 
 **Câu 9:** Hình vẽ sau mô tả quá trình điều chế khí metan trong phòng thí nghiệm.
 
-![Đề thi HSG môn hóa tỉnh Thái Bình năm 2022 1](file:///C:/Users/Admin/AppData/Local/Temp/lu110366pco8l.tmp/lu110366pco8u_tmp_31d4baa4877058e8.png)
+
 
  
 
-![Đề thi HSG môn hóa tỉnh Thái Bình năm 2022 2](file:///C:/Users/Admin/AppData/Local/Temp/lu110366pco8l.tmp/lu110366pco8u_tmp_403b87750889687d.gif)
+
 
 Nhận xét nào sau đây là không đúng?
 
@@ -503,9 +503,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Biện luận công thức muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -519,9 +519,9 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 ←[Đề thi hsg lớp 12 môn hóa tỉnh Ninh Bình năm 2021](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-ninh-binh-nam-2021.html)
-[GMO LÀ GÌ? THỰC PHẨM BIẾN ĐỔI GENE TỐT HAY XẤU?](/bai-viet/gmo-la-gi-thuc-pham-bien-doi-gene-tot-hay-xau.html)→
+GMO LÀ GÌ? THỰC PHẨM BIẾN ĐỔI GENE TỐT HAY XẤU?→

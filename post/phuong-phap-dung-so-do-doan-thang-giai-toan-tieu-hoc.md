@@ -27,11 +27,11 @@ Phương pháp dùng sơ đồ đoạn thẳng được dùng để dạy các b
 
 - [Tìm số trung bình cộng](/bai-viet/cac-bai-toan-ve-trung-binh-cong-lop-4.html)
 
-- [Tìm hai số khi biết tổng và tỉ số của hai số đó](/bai-viet/tim-hai-so-khi-biet-tong-va-ti-so-cua-hai-so.html)
+- Tìm hai số khi biết tổng và tỉ số của hai số đó
 
-- [Tìm hai số khi biết hiệu và tỉ số của hai số đó](/bai-viet/tim-hai-so-khi-biet-hieu-va-ti-so-cua-hai-so.html)
+- Tìm hai số khi biết hiệu và tỉ số của hai số đó
 
-- [Tìm hai số khi biết tổng và hiệu của hai số đó](/bai-viet/tim-hai-so-khi-biet-tong-va-hieu-cua-hai-so-do-toan-4.html)
+- Tìm hai số khi biết tổng và hiệu của hai số đó
 
 Bài viết này sẽ đi vào một số ví dụ cụ thể để giúp các em biết cách giải toán bằng sơ đồ đoạn thẳng.
 
@@ -222,7 +222,7 @@ Dựa vào đoạn thẳng hướng dẫn học sinh lập kế hoặch giải t
 
 - Số lớn = Số bé + Hiệu
 
-Chi tiết dạng toán này, mời thầy cô và các em xem tại bài [Tìm hai số khi biết tổng và hiệu của hai số đó lớp 4](/bai-viet/tim-hai-so-khi-biet-tong-va-hieu-cua-hai-so-do-toan-4.html)
+Chi tiết dạng toán này, mời thầy cô và các em xem tại bài Tìm hai số khi biết tổng và hiệu của hai số đó lớp 4
 
 ### 3.3. Dạng tìm hai số khi biết tổng và tỉ số
 
@@ -261,7 +261,7 @@ $35 – 20 = 15$ (học sinh)
 
 Sai lầm học sinh có thể mắc phải: Không biểu diễn được sơ đồ đoạn thẳng, không tìm được tổng số phần bằng nhau, khi tìm số lớn và số bé không nhân với số phần.
 
-Cách khắc phục: Yêu cầu học sinh đọc kỹ đề bài, tóm tắt bài toán bằng sơ đồ đoạn thẳng, dựa vào sơ đồ đoạn thẳng để phân tích bài toán, từ đó rút ra các bước khi giải bài toán “[Tìm hai số khi biết tổng và tỉ số](/bai-viet/tim-hai-so-khi-biet-tong-va-ti-so-cua-hai-so.html)”:
+Cách khắc phục: Yêu cầu học sinh đọc kỹ đề bài, tóm tắt bài toán bằng sơ đồ đoạn thẳng, dựa vào sơ đồ đoạn thẳng để phân tích bài toán, từ đó rút ra các bước khi giải bài toán “Tìm hai số khi biết tổng và tỉ số”:
 
 - Đọc đề và tóm tắt bằng sơ đồ đoạn thẳng.
 
@@ -306,7 +306,7 @@ $28 + 7 = 35$ (tuổi)
 
 Sai lầm học sinh có thể mắc phải: Không biểu thị được bài toán bằng sơ đồ đoạn thẳng dẫn đến không tìm được hiệu số phần bằng nhau tương ứng với bao nhiêu, lời giải còn lủng củng, hay nhầm lẫn giữa tổng số phần và hiệu số phần.
 
-Cách khắc phục: Hướng dẫn học sinh đọc đề và phân tích để xác định được dữ kiện và điều kiện bài toán, phân biệt hai dạng toán “[Tìm hai số khi biết tổng và tỉ số](/bai-viet/tim-hai-so-khi-biet-tong-va-ti-so-cua-hai-so.html)” và “[Tìm hai số khi biết hiệu và tỉ số](/bai-viet/tim-hai-so-khi-biet-hieu-va-ti-so-cua-hai-so.html)”, rút ra các bước khi giải dạng toán “Tìm hai số khi biết hiệu và tỷ số của hai số đó:
+Cách khắc phục: Hướng dẫn học sinh đọc đề và phân tích để xác định được dữ kiện và điều kiện bài toán, phân biệt hai dạng toán “Tìm hai số khi biết tổng và tỉ số” và “Tìm hai số khi biết hiệu và tỉ số”, rút ra các bước khi giải dạng toán “Tìm hai số khi biết hiệu và tỷ số của hai số đó:
 
 - Tóm tắt bài toán bằng sơ đồ đoạn thẳng.
 

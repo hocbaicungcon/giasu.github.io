@@ -38,6 +38,6 @@ Hướng dẫn chi tiết cách sửa lỗi font file csv, cách chỉnh lỗi f
 
 Xem thêm:
 
-- [Hướng dẫn sử dụng Microsoft Forms tạo khảo sát, bài kiểm tra](/bai-viet/huong-dan-su-dung-microsoft-forms-tao-bai-khao-sat.html)
+- Hướng dẫn sử dụng Microsoft Forms tạo khảo sát, bài kiểm tra
 
-- [Tạo bài kiểm tra tự chấm điểm sử dụng Google Form](/bai-viet/tao-bai-kiem-tra-tu-cham-diem-su-dung-google-form.html)
+- Tạo bài kiểm tra tự chấm điểm sử dụng Google Form

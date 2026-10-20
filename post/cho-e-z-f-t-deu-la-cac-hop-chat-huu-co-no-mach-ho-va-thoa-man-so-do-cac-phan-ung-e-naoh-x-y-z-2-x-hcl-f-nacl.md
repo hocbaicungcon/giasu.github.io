@@ -68,13 +68,13 @@ Xem thêm
 
 - [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -82,5 +82,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:  (1) E + NaOH → X + Y + Z](/bai-viet/cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-1-e-naoh-%e2%86%92-x-y-z.html)
-[Cho các sơ đồ phản ứng: E + NaOH → X + Y  F + NaOH → X + Z](/bai-viet/cho-cac-so-do-phan-ung-e-naoh-%e2%86%92-x-y-f-naoh-%e2%86%92-x-z.html)→
+←Cho E, Z, F, T đều là các hợp chất hữu cơ no, mạch hở và thỏa mãn sơ đồ các phản ứng:  (1) E + NaOH → X + Y + Z
+Cho các sơ đồ phản ứng: E + NaOH → X + Y  F + NaOH → X + Z→

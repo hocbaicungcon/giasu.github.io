@@ -41,9 +41,9 @@ Xem thêm:
 
 - [Cách giải phương trình chứa căn, bất phương trình chứa căn](/bai-viet/phuong-trinh-chua-can-bat-phuong-trinh-chua-can.html)
 
-- [Phương pháp biến đổi tương đương giải phương trình, bất phương trình chứa căn](/bai-viet/phuong-phap-bien-doi-tuong-duong-giai-phuong-trinh-chua-can.html)
+- Phương pháp biến đổi tương đương giải phương trình, bất phương trình chứa căn
 
-- [Giải phương trình chứa căn bằng cách phân tích thành tích](/bai-viet/phuong-trinh-chua-can-phan-tich-thanh-tich.html)
+- Giải phương trình chứa căn bằng cách phân tích thành tích
 
 ## 2. Ví dụ giải phương trình nhân liên hợp
 

@@ -52,5 +52,5 @@ Mời các thầy cô xem thêm
 
 [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 
-←[Đáp án 11 câu hỏi tự luận module 1 môn hóa THPT](/bai-viet/dap-an-11-cau-hoi-tu-luan-module-1-mon-hoa-thpt.html)
+←Đáp án 11 câu hỏi tự luận module 1 môn hóa THPT
 [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)→

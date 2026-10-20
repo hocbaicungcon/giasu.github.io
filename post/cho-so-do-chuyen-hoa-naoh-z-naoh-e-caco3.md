@@ -21,5 +21,5 @@ Cho sơ đồ chuyển hóa: NaOH (+X)→ Z(+Y) →  NaOH (+X)→  E (+Y)→ 
 
 ![Cho sơ đồ chuyển hóa:  NaOH → Z →  NaOH →  E →  CaCO3](assets/images/cho-so-do-chuyen-hoa-naoh-z-naoh-e-caco3-Cau-70-201.jpg)
 
-←[Cho hỗn hợp X gồm a mol Fe và 0,25 mol Mg vào dung dịch Y chứa Cu(NO3)2 và AgNO3 (tỉ lệ mol tương ứng 1: 2)](/bai-viet/cho-hon-hop-x-gom-a-mol-fe-va-025-mol-mg-vao-dung-dich-y-chua-cuno32-va-agno3-ti-le-mol-tuong-ung-1-2.html)
+←Cho hỗn hợp X gồm a mol Fe và 0,25 mol Mg vào dung dịch Y chứa Cu(NO3)2 và AgNO3 (tỉ lệ mol tương ứng 1: 2)
 [Cho sơ đồ chuyển hóa: NaOH (+X)→ Z(+Y) →  NaOH (+X)→  E (+Y)→  BaCO3](/bai-viet/cho-so-do-chuyen-hoa-naoh-z-naoh-e-baco3.html)→

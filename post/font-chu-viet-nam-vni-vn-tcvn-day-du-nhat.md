@@ -56,4 +56,4 @@ Cách lựa chọn, bạn bấm chuột phải vào biểu tượng phần mềm
 
 ![Cách tải và cài đặt Font chữ Việt Nam (VNI, .Vn, TCVN3) 1](assets/images/font-chu-viet-nam-vni-vn-tcvn-day-du-nhat-bo-font-chu-tcvn3-day-du-2.jpg)
 
-Xem thêm [Bảng mã font là gì?](/bai-viet/bang-ma-font-la-gi.html)
+Xem thêm Bảng mã font là gì?

@@ -17,7 +17,7 @@ Phần mềm Resize ảnh hàng loạt miễn phí **FastStone Photo Resizer** k
 
 Phần mềm miễn phí resize ảnh hàng loạt FastStone Photo Resizer cho phép người dùng chuyển đổi, đổi tên, thay đổi kích thước, cắt, xoay, thay đổi độ sâu màu, thêm watermark dạng văn bản hoặc hình mờ vào hình ảnh ở chế độ hàng loạt nhanh chóng và dễ dàng. Thao tác kéo và thả chuột được hỗ trợ tốt.
 
-Xem thêm: [Cách chuyển PDF sang ảnh miễn phí](/bai-viet/cach-chuyen-pdf-sang-anh.html)
+Xem thêm: Cách chuyển PDF sang ảnh miễn phí
 
 ## 1. Chức năng chính của Phần mềm Resize ảnh hàng loạt FastStone Photo Resizer
 

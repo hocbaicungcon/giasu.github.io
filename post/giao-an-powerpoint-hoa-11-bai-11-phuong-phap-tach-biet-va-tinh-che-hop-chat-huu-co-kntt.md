@@ -28,5 +28,5 @@ Mời các thầy cô và các em xem thêm
 
 (Đang update)
 
-←[Giáo án powerpoint hóa 11 bài 10 hóa học hữu cơ và hợp chất hữu cơ KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-10-hoa-hoc-huu-co-va-hop-chat-huu-co-kntt.html)
+←Giáo án powerpoint hóa 11 bài 10 hóa học hữu cơ và hợp chất hữu cơ KNTT
 [Giáo án powerpoint hóa 11 bài 12 công thức phân tử hợp chất hữu cơ KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-12-cong-thuc-phan-tu-hop-chat-huu-co-kntt.html)→

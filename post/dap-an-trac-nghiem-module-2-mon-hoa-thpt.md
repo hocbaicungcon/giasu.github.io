@@ -785,4 +785,4 @@ Mời các thầy cô xem thêm
 [Tổng hợp đáp án tất cả các module môn hóa học THPT](/bai-viet/tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt.html)
 
 ←[Chia sẻ kinh nghiệm sử dụng của các PP, KTDH vừa tìm hiểu ở trên trong thực tiễn nhà trường của Thầy/Cô.](/bai-viet/chia-se-kinh-nghiem-su-dung-cua-cac-pp-ktdh-vua-tim-hieu-o-tren-trong-thuc-tien-nha-truong-cua-thay-co.html)
-[Trong dạy học hóa học các công cụ bảng hỏi, bảng KWL, kĩ thuật công não thường được sử dụng để đánh giá HS trong những trường hợp nào?](/bai-viet/trong-day-hoc-hoa-hoc-cac-cong-cu-bang-hoi-bang-kwl-ki-thuat-cong-nao-thuong-duoc-su-dung-de-danh-gia-hs-trong-nhung-truong-hop-nao.html)→
+Trong dạy học hóa học các công cụ bảng hỏi, bảng KWL, kĩ thuật công não thường được sử dụng để đánh giá HS trong những trường hợp nào?→

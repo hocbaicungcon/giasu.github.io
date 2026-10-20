@@ -13,7 +13,7 @@ tags:
 - Thủ thuật
 ---
 
-Capcut là một ứng dụng được rất nhiều TikToker sử dụng trong việc chỉnh sửa video vì đây là một ứng dụng miễn phí chứa nhiều công cụ chỉnh sửa và hiệu ứng đa dạng. Dưới đây chúng tôi hướng dẫn cách lưu video Capcut không logo bằng app trên điện thoại, nếu có máy tính bạn có thể xem [xách tải Capcut PC tiếng Việt](/bai-viet/cach-tai-capcut-pc-tieng-viet.html) để tận dụng được bàn phím và chuột khi chỉnh sửa video được thuận tiện hơn.
+Capcut là một ứng dụng được rất nhiều TikToker sử dụng trong việc chỉnh sửa video vì đây là một ứng dụng miễn phí chứa nhiều công cụ chỉnh sửa và hiệu ứng đa dạng. Dưới đây chúng tôi hướng dẫn cách lưu video Capcut không logo bằng app trên điện thoại, nếu có máy tính bạn có thể xem xách tải Capcut PC tiếng Việt để tận dụng được bàn phím và chuột khi chỉnh sửa video được thuận tiện hơn.
 
 ## Cách lưu video Capcut không logo
 
@@ -29,7 +29,7 @@ Trong quá trình chỉnh sửa video có thể bạn sẽ quên đi mất xóa 
 
 Chỉ cần cài đặt với những bước đơn giản như trên bạn sẽ không còn lo về việc lưu video đã chỉnh sửa trên Capcut xuất hiện logo nữa.
 
-Mời bạn tham khảo thêm [Cách xóa phông nền video trên Capcut](/bai-viet/cach-xoa-phong-nen-video-tren-capcut.html).
+Mời bạn tham khảo thêm Cách xóa phông nền video trên Capcut.
 
 ## Xóa logo Capcut ở cuối video
 

@@ -55,17 +55,17 @@ Muốn tìm **trung bình cộng** của hai hay nhiều số, ta **tính tổng
 
 Mời Quý Thầy Cô và các em học sinh xem thêm các dạng toán quan trọng và BD HSG của chương trình Toán lớp 4 và chương trình tiếng Anh lớp 4:
 
-- [Tìm hai số khi biết tổng và hiệu của hai số đó lớp 4](/bai-viet/tim-hai-so-khi-biet-tong-va-hieu-cua-hai-so-do-toan-4.html)
+- Tìm hai số khi biết tổng và hiệu của hai số đó lớp 4
 
 - [BÀI TOÁN CÔNG VIỆC CHUNG LỚP 4](/bai-viet/bai-toan-cong-viec-chung-lop-4.html)
 
-- [Chuyên đề các dạng toán về dãy số toán lớp 4](/bai-viet/cac-dang-toan-ve-day-so-toan-lop-4.html)
+- Chuyên đề các dạng toán về dãy số toán lớp 4
 
 - [Toán lớp 4 – Lập số tự nhiên và quy tắc đếm](/bai-viet/toan-lop-4-lap-so-tu-nhien-va-quy-tac-dem.html)
 
 - [Toán lớp 4 – Tìm số theo điều kiện cho trước](/bai-viet/toan-lop-4-tim-so-theo-dieu-kien-cho-truoc.html)
 
-- [TỔNG HỢP KIẾN THỨC VÀ BÀI TẬP TIẾNG ANH LỚP 4- 5](/bai-viet/tong-hop-kien-thuc-va-bai-tap-tieng-anh-lop-4-5.html)
+- TỔNG HỢP KIẾN THỨC VÀ BÀI TẬP TIẾNG ANH LỚP 4- 5
 
 **Ví dụ 4.** Tổng các số bằng $240$ và trung bình cộng của các số là $60.$ Tìm số lượng các số?
 
@@ -97,7 +97,7 @@ Mời Quý Thầy Cô và các em học sinh xem thêm các dạng toán quan tr
 
 ### c. Tìm trung bình cộng của các số cách đều
 
-Để làm được các bài tập dạng này, các em học sinh cần xem thêm về dãy số cách đều trong bài [Chuyên đề các dạng toán về dãy số toán lớp 4](/bai-viet/cac-dang-toan-ve-day-so-toan-lop-4.html)
+Để làm được các bài tập dạng này, các em học sinh cần xem thêm về dãy số cách đều trong bài Chuyên đề các dạng toán về dãy số toán lớp 4
 
 **Ví dụ.** Tính trung bình cộng của các số trong dãy số: $3,6,9,…, 105.$
 

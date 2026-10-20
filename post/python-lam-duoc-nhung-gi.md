@@ -16,7 +16,7 @@ grade: 10
 
 ## Python là gì?
 
-[Python](/bai-viet/d/lap-trinh/python.html) là một ngôn ngữ lập trình cực kỳ phổ biến với các lập trình viên. Viết phần mềm tự động bằng Python cực kỳ đơn giản và thú vị.
+Python là một ngôn ngữ lập trình cực kỳ phổ biến với các lập trình viên. Viết phần mềm tự động bằng Python cực kỳ đơn giản và thú vị.
 
 Xem thêm: [15 Cuốn sách học Python miễn phí](/bai-viet/15-cuon-sach-hoc-python-mien-phi.html)
 

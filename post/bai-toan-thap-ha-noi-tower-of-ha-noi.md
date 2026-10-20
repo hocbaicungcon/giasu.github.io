@@ -11,7 +11,7 @@ tags:
 - Trò chơi
 ---
 
-[Bài toán Tháp Hà Nội](https://vi.wikipedia.org/wiki/Th%C3%A1p_H%C3%A0_N%E1%BB%99i) là một bài toán rất nổi tiếng và kinh điển, rất thích hợp để minh họa cho [thuật toán đệ quy](/bai-viet/de-quy-la-gi.html).
+[Bài toán Tháp Hà Nội](https://vi.wikipedia.org/wiki/Th%C3%A1p_H%C3%A0_N%E1%BB%99i) là một bài toán rất nổi tiếng và kinh điển, rất thích hợp để minh họa cho thuật toán đệ quy.
 
 ## Bài toán Tháp Hà Nội là gì?
 

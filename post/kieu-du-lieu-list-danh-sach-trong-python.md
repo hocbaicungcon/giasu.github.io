@@ -57,7 +57,7 @@ Cũng giống như kiểu xâu `str`, kiểu danh sách `list` cũng có các ph
 
 ### 2.1. Toán tử `in`
 
-Toán tử `in` dùng để kiểm tra xem một phần tử có nằm trong danh sách hay không, kết quả trả về của toán tử này là [kiểu `boolean`](/bai-viet/kieu-logic-boolean-trong-python.html) đúng `True` hoặc sai `False`.
+Toán tử `in` dùng để kiểm tra xem một phần tử có nằm trong danh sách hay không, kết quả trả về của toán tử này là kiểu `boolean` đúng `True` hoặc sai `False`.
 
 ```python
 >>> mon_an = ['canh cua', 'ca phao', 'ca kho', 'thit ran']
@@ -67,7 +67,7 @@ True
 False
 ```
 
-Bạn cũng có thể sử dụng toán tử `in` để duyệt danh sách trong [vòng lặp](/bai-viet/cau-lenh-vong-lap-for-trong-python.html)`for` như sau.
+Bạn cũng có thể sử dụng toán tử `in` để duyệt danh sách trong vòng lặp`for` như sau.
 
 ```python
 >>> for i in mon_an:

@@ -16,7 +16,7 @@ grade: 10
 
 GIA SƯ THÔNG MINH xin giới thiệu tới Quý thầy cô và các em học sinh **Bộ đề thi học kì 1 toán 10 trường phổ thông năng khiếu TP HCM.** Bộ đề thi HK1 Toán 10 gồm các đề từ năm 2008  đến năm 2013, thời gian làm bài mỗi đề là 90 phút.
 
-Xem thêm [Đề thi giữa học kỳ I Toán 10 Xuân Trường B năm 2017](/bai-viet/de-thi-giua-hoc-ky-i-toan-10-xuan-truong-b-nam-2017.html)
+Xem thêm Đề thi giữa học kỳ I Toán 10 Xuân Trường B năm 2017
 
 ## Đề thi học kì 1 Toán 10 PTNK năm 2008 – 2009
 

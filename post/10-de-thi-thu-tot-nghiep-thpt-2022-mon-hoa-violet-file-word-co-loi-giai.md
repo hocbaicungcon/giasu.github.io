@@ -265,9 +265,9 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download đề thi
 
 Các thầy cô có thể tham khảo thêm nhiều đề thi hơn tại
 
-[Tổng hợp đề thi thử TN THPT môn hóa năm 2022 có đáp án](/bai-viet/tong-hop-de-thi-thu-tn-thpt-mon-hoa-nam-2022-co-dap-an.html)
+Tổng hợp đề thi thử TN THPT môn hóa năm 2022 có đáp án
 
-[Tổng hợp đề thi TN THPT 2021 môn hóa file word có lời giải](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi TN THPT 2021 môn hóa file word có lời giải
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -279,5 +279,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-←[Thực hiện phản ứng tách hidro 4,48 lít hỗn hợp gồm C2H6 và C3H8, sau một thời gian thu được hỗn hợp có chứa H2 và hỗn hợp hiđrocacbon](/bai-viet/thuc-hien-phan-ung-tach-hidro-448-lit-hon-hop-gom-c2h6-va-c3h8-sau-mot-thoi-gian-thu-duoc-hon-hop-co-chua-h2-va-hon-hop-hidrocacbon.html)
-[Đề thi thử tốt nghiệp THPT 2022 môn hóa THPT Cầm Bá Thước Thanh Hóa lần 1 có đáp án](/bai-viet/de-thi-thu-tot-nghiep-thpt-2022-mon-hoa-thpt-cam-ba-thuoc-thanh-hoa-lan-1-co-dap-an.html)→
+←Thực hiện phản ứng tách hidro 4,48 lít hỗn hợp gồm C2H6 và C3H8, sau một thời gian thu được hỗn hợp có chứa H2 và hỗn hợp hiđrocacbon
+Đề thi thử tốt nghiệp THPT 2022 môn hóa THPT Cầm Bá Thước Thanh Hóa lần 1 có đáp án→

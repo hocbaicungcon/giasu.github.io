@@ -13,11 +13,11 @@ grade: 4
 
 Xem thêm các dạng toán tìm số ở lớp 4:
 
-- [Tìm hai số khi biết tổng và hiệu của hai số đó lớp 4](/bai-viet/tim-hai-so-khi-biet-tong-va-hieu-cua-hai-so-do-toan-4.html)
+- Tìm hai số khi biết tổng và hiệu của hai số đó lớp 4
 
-- [Tìm hai số khi biết tổng và tỉ số của hai số](/bai-viet/tim-hai-so-khi-biet-tong-va-ti-so-cua-hai-so.html)
+- Tìm hai số khi biết tổng và tỉ số của hai số
 
-- [Tìm hai số khi biết hiệu và tỉ số của hai số](/bai-viet/tim-hai-so-khi-biet-hieu-va-ti-so-cua-hai-so.html)
+- Tìm hai số khi biết hiệu và tỉ số của hai số
 
 ## 1. Các dạng toán tìm số tự nhiên theo các điều kiện cho trước về chữ số
 

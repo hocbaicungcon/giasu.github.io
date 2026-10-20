@@ -197,7 +197,6 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download giáo án
 
 - [KNTT-BAI-24-CARBOXYLIC-ACID-KIM-THUY-TRAN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [PHT-tro-choi-manh-ghep](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
-[PHT-tro-choi-manh-ghep](https://giasu.ai.vn/wp-content/uploads/2023/08/PHT-tro-choi-manh-ghep.png)
 - [TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID-DAP-AN](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [TRO-CHOI-O-CHU-BAI_24_CARBOXYLIC_ACID](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
@@ -205,5 +204,5 @@ Mời các thầy cô và các em xem thêm
 
 [Tổng hợp giáo án và các chuyên đề dạy học hóa học 11](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-11.html)
 
-←[Giáo án hóa 11 bài 23 hợp chất carbonyl KNTT](/bai-viet/giao-an-hoa-11-bai-23-hop-chat-carbonyl-kntt.html)
-[Giáo án hóa 11 bài 25 ôn tập chương 6 KNTT](/bai-viet/giao-an-hoa-11-bai-25-on-tap-chuong-6-kntt.html)→
+←Giáo án hóa 11 bài 23 hợp chất carbonyl KNTT
+[Giáo án hóa 11 bài 25 ôn tập chương 6 KNTT](/bai-viet/giao-an-powerpoint-hoa-11-bai-25-on-tap-chuong-6-kntt.html)→

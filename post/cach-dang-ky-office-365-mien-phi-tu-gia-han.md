@@ -13,11 +13,11 @@ tags:
 grade: 10
 ---
 
-Microsoft có cung cấp đăng ký Office 365 miễn phí cho các lập trình viên. Gói Office 365 cho developer này có đầy đủ các ứng dụng như Word, PowerPoint, Excel, [MS Teams](/bai-viet/huong-dan-cai-dat-va-su-dung-microsoft-teams.html) và 5TB dung lượng OneDrive để giúp các lập trình viên test thử sản phẩm (add-in) cho bộ Office.
+Microsoft có cung cấp đăng ký Office 365 miễn phí cho các lập trình viên. Gói Office 365 cho developer này có đầy đủ các ứng dụng như Word, PowerPoint, Excel, MS Teams và 5TB dung lượng OneDrive để giúp các lập trình viên test thử sản phẩm (add-in) cho bộ Office.
 
 ## Office 365 cho developer là gì?
 
-Office 365 cho lập trình viên hay **Office 365 E5** là gói Office dành riêng cho các nhà phát triển phần mềm trên nền tảng Office của Microsoft. Bộ sản phẩm bao gồm các ứng dụng Word, Excel, PowerPoint, Outlook, OneNote, SharePoint, OneDrive, Microsoft Teams, Microsoft Stream, Power BI Pro,… Bạn có thể xem chi tiết trong bài [Các ứng dụng có trong Office 365 E5](/bai-viet/cac-ung-dung-co-trong-office-365-e5.html)
+Office 365 cho lập trình viên hay **Office 365 E5** là gói Office dành riêng cho các nhà phát triển phần mềm trên nền tảng Office của Microsoft. Bộ sản phẩm bao gồm các ứng dụng Word, Excel, PowerPoint, Outlook, OneNote, SharePoint, OneDrive, Microsoft Teams, Microsoft Stream, Power BI Pro,… Bạn có thể xem chi tiết trong bài Các ứng dụng có trong Office 365 E5
 
 ![Cách đăng ký Office 365 miễn phí tự gia hạn](assets/images/cach-dang-ky-office-365-mien-phi-tu-gia-han-image-128.png)
 

@@ -514,15 +514,15 @@ Xem thêm
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-[Phương pháp bảo toàn khối lượng đầy đủ](/bai-viet/phuong-phap-tang-giam-khoi-luong-2.html)
+[Phương pháp bảo toàn khối lượng đầy đủ](/bai-viet/phuong-phap-tang-giam-khoi-luong.html)
 
 [Phương pháp bảo toàn nguyên tố](/bai-viet/phuong-phap-bao-toan-nguyen-to.html)
 
@@ -530,6 +530,6 @@ Xem thêm
 
 [Phương pháp quy đổi este](/bai-viet/quy-doi-este.html)
 
-[Phương pháp giải bài tập điện phân](/bai-viet/bai-tap-dien-phan.html)
+Phương pháp giải bài tập điện phân
 
 [Phương pháp đồng đẳng hoá](/bai-viet/dong-dang-hoa.html)

@@ -18,7 +18,7 @@ SKKN Một số biện pháp xây dựng góc thư viện thân thiện góp ph�
 Xem bản đầy đủ trên google drive: **TẠI ĐÂY
 Các thầy cô cần file liên hệ với chúng tôi tại fanpage facebook [GIA SƯ THÔNG MINH](https://www.facebook.com/o2eduvn)
 
-Hoặc xem nhiều SKKN hơn tại:  [Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH](/bai-viet/tong-hop-skkn-luan-van-luan-an-o2-education.html)
+Hoặc xem nhiều SKKN hơn tại:  Tổng hợp SKKN luận văn luận án GIA SƯ THÔNG MINH
 
 ĐIỀU KIỆN HOÀN CẢNH TẠO RA SÁNG KIẾN:
 Đã từ lâu, rất nhiều nhà khoa học và các nghiên cứu đã chỉ ra rằng “Đọc
@@ -360,5 +360,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-←[SKKN Một số biện pháp hướng dẫn trẻ làm đồ dùng, đồ chơi nhằm phát huy tính tích cực, sáng tạo cho trẻ 4 – 5 tuổi](/bai-viet/skkn-mot-so-bien-phap-huong-dan-tre-lam-do-dung-do-choi-nham-phat-huy-tinh-tich-cuc-sang-tao-cho-tre-4-5-tuoi.html)
-[SKKN Một số giải pháp ứng dụng phương pháp Montessori trong hoạt động làm quen với chữ cái cho trẻ 5-6 tuổi](/bai-viet/skkn-mot-so-giai-phap-ung-dung-phuong-phap-montessori-trong-hoat-dong-lam-quen-voi-chu-cai-cho-tre-5-6-tuoi.html)→
+←SKKN Một số biện pháp hướng dẫn trẻ làm đồ dùng, đồ chơi nhằm phát huy tính tích cực, sáng tạo cho trẻ 4 – 5 tuổi
+SKKN Một số giải pháp ứng dụng phương pháp Montessori trong hoạt động làm quen với chữ cái cho trẻ 5-6 tuổi→

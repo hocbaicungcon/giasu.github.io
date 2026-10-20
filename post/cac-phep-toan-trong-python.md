@@ -120,7 +120,7 @@ Python cung cấp các phép toán số học sau:
 'PhuOng'
 ```
 
-- **Phép trừ `-`** Phép trừ có tác dụng như phép trừ trong toán học, áp dụng cho kiểu số. Nếu áp dụng phép trừ cho các toán hạng [kiểu tập hợp](/bai-viet/kieu-du-lieu-tap-hop-set-trong-python.html) `set` thì ta có phép lấy hiệu hai tập hợp.
+- **Phép trừ `-`** Phép trừ có tác dụng như phép trừ trong toán học, áp dụng cho kiểu số. Nếu áp dụng phép trừ cho các toán hạng kiểu tập hợp `set` thì ta có phép lấy hiệu hai tập hợp.
 
 ```python
 >>> 3 - 6
@@ -192,7 +192,7 @@ Sử dụng trình thông dịch Python và các phép toán số học để ki
 
 ## 3. Phép toán logic
 
-Phép toán logic làm việc trên các toán tử logic, tức là các biến, biểu thức chỉ có hai khả năng đúng `True` hoặc sai `False`. Xin xem [kiểu dữ liệu logic](/bai-viet/kieu-logic-boolean-trong-python.html) `bool` để hiểu rõ. Python cung cấp các phép toán logic `and or not`.
+Phép toán logic làm việc trên các toán tử logic, tức là các biến, biểu thức chỉ có hai khả năng đúng `True` hoặc sai `False`. Xin xem kiểu dữ liệu logic `bool` để hiểu rõ. Python cung cấp các phép toán logic `and or not`.
 
 - Phép toán `and` sẽ trả về kết quả `True` nếu cả hai toán hạng đều là `True`. Bảng giá trị chân lý của phép toán and như sau:
 
@@ -232,7 +232,7 @@ True
 
 ## 4. Phép toán so sánh trong Python
 
-Kết quả trả về của một phép toán so sánh là `True` (đúng) hoặc `False` (sai), hai giá trị này thuộc [kiểu dữ liệu logic](/bai-viet/kieu-logic-boolean-trong-python.html) `bool`. Python cung cấp các phép toán so sánh sau đây:
+Kết quả trả về của một phép toán so sánh là `True` (đúng) hoặc `False` (sai), hai giá trị này thuộc kiểu dữ liệu logic `bool`. Python cung cấp các phép toán so sánh sau đây:
 
 - **So sánh đồng nhất (giống nhau, bằng nhau) `==`**Cần chú ý rằng phép so sánh đồng nhất khác với phép toán `is`
 
@@ -349,9 +349,9 @@ True
 False
 ```
 
-Phép toán kiểm tra `in` còn được sử dụng trong vòng lặp `for`. Xin mời xem chi tiết tại [Bài 6. Câu lệnh vòng lặp for trong Python](/bai-viet/cau-lenh-vong-lap-for-trong-python.html)
+Phép toán kiểm tra `in` còn được sử dụng trong vòng lặp `for`. Xin mời xem chi tiết tại Bài 6. Câu lệnh vòng lặp for trong Python
 
-Ngoài ra, còn có các phép toán trên tập hợp, xin mời các bạn xem thêm trong bài [Kiểu dữ liệu tập hợp `set` trong Python](/bai-viet/kieu-du-lieu-tap-hop-set-trong-python.html).
+Ngoài ra, còn có các phép toán trên tập hợp, xin mời các bạn xem thêm trong bài Kiểu dữ liệu tập hợp `set` trong Python.
 
 ## 7. Thứ tự ưu tiên các phép toán
 

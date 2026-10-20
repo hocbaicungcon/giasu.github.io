@@ -94,7 +94,7 @@ GIA SƯ THÔNG MINH gửi các thầy cô link download file mẫu
 
 Các thầy cô có thể xem thêm giáo án thi GVG đã đạt giải cấp tỉnh năm học 2020-2021
 
-[Giáo án bài 16 luyện tập liên kết hoá học thi GVG](/bai-viet/giao-an-bai-16-luyen-tap-lien-ket-hoa-hoc-thi-gvg.html)
+Giáo án bài 16 luyện tập liên kết hoá học thi GVG
 
  
 
@@ -116,7 +116,7 @@ Hoặc có thể xem thêm các tài liệu khác của website
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
@@ -124,19 +124,19 @@ Hoặc có thể xem thêm các tài liệu khác của website
 
 - [Tổng hợp giáo án chủ đề STEM trong môn hóa học](/bai-viet/tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-- [Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-1-mon-hoa-ca-3-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 1 môn hóa cả 3 khối 10 11 12
 
-- [Tổng hợp đề thi học kì 1 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-12-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 12 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 11 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-11-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 11 môn hóa học
 
-- [Tổng hợp đề thi học kì 1 lớp 10 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-1-lop-10-mon-hoa-hoc.html)
+- Tổng hợp đề thi học kì 1 lớp 10 môn hóa học
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp đề thi học kì 2 lớp 12 môn hóa học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-12-mon-hoa-hoc.html)
 
@@ -150,5 +150,5 @@ Hoặc có thể xem thêm các tài liệu khác của website
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-←[Hỗn hợp X gồm 3 axit đơn chức mạch hở trong đó có hai axit no là đồng đẳng kế tiếp và một axit không no có một liên kết đôi](/bai-viet/hon-hop-x-gom-3-axit-don-chuc-mach-ho-trong-do-co-hai-axit-no-la-dong-dang-ke-tiep-va-mot-axit-khong-no-co-mot-lien-ket-doi.html)
-[HƯỚNG DẪN SỬ DỤNG PHẦN MỀM AVINA](/bai-viet/huong-dan-su-dung-phan-mem-avina.html)→
+←Hỗn hợp X gồm 3 axit đơn chức mạch hở trong đó có hai axit no là đồng đẳng kế tiếp và một axit không no có một liên kết đôi
+HƯỚNG DẪN SỬ DỤNG PHẦN MỀM AVINA→

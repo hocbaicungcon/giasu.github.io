@@ -89,7 +89,7 @@ Cho biết nguyên tử khối của các nguyên tố: H=1; O=16; S=32; F=19; C
 
 **Câu 18:** Cho thí nghiệm như hình vẽ:
 
-![Đề thi thử tốt nghiệp THPT 2021 môn hóa file word có lời giải số 5 1](file:///C:/Users/Admin/AppData/Local/Temp/lu5256y2f0t0.tmp/lu5256y2f0ww_tmp_429ac0516444e39b.png)
+
 
 Đây là thí nghiệm chứng minh
 
@@ -183,7 +183,7 @@ Số phát biểu đúng là
 
 **Câu 31:** Dẫn từ từ đến dư khí CO2 vào dung dịch Ba(OH)2. Sự phụ thuộc của khối lượng kết tủa (y gam) vào thể tích khí CO2 tham gia phản ứng (x lít, ở điều kiện tiêu chuẩn) được biểu diễn bằng đồ thị bên. Giá trị của m là
 
-![Đề thi thử tốt nghiệp THPT 2021 môn hóa file word có lời giải số 5 2](file:///C:/Users/Admin/AppData/Local/Temp/lu5256y2f0t0.tmp/lu5256y2f0ww_tmp_bf3e4a5c7ad50005.png)
+
 
 **A.** 19,70. **B.** 39,40. **C.** 9,85. **D.** 29,55.
 
@@ -270,9 +270,9 @@ GIA SƯ THÔNG MINH gửi các thầy cô và các em link download đề thi
 
 Xem thêm
 
-- [Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+- Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
@@ -290,11 +290,11 @@ Xem thêm
 
 - [Tổng hợp các chuyên đề hóa học lớp 12](/bai-viet/tong-hop-cac-chuyen-de-hoa-hoc-lop-12.html)
 
-- [Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+- Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 - [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi thử tốt nghiệp THPT 2021 môn hóa file word có lời giải số 4](/bai-viet/de-thi-thu-tot-nghiep-thpt-2021-mon-hoa-file-word-co-loi-giai-so-4.html)
-[Đề thi thử TN THPT năm 2021 môn hóa có lời giải file word số 6](/bai-viet/de-thi-thu-tn-thpt-nam-2021-mon-hoa-co-loi-giai-file-word-so-6.html)→
+←Đề thi thử tốt nghiệp THPT 2021 môn hóa file word có lời giải số 4
+Đề thi thử TN THPT năm 2021 môn hóa có lời giải file word số 6→

@@ -41,5 +41,5 @@ tags:
 
  
 
-←[Phân tích ưu điểm và hạn chế của việc lựa chọn và sử dụng PP, KTDH trong hoạt động dạy học GV thực hiện trong video minh hoạ.](/bai-viet/phan-tich-uu-die%cc%89m-va-han-che-cu%cc%89a-vie%cc%a3c-lu%cc%a3a-cho%cc%a3n-va-su%cc%89-du%cc%a3ng-pp-ktdh-trong-hoa%cc%a3t-do%cc%a3ng-da%cc%a3y-ho%cc%a3c-gv-thu%cc%a3c-hie%cc%a3n-trong-video.html)
+←[Phân tích ưu điểm và hạn chế của việc lựa chọn và sử dụng PP, KTDH trong hoạt động dạy học GV thực hiện trong video minh hoạ.](/bai-viet/phan-tich-uu-diem-va-han-che-cua-viec-lua-chon-va-su-dung-pp-ktdh-trong-hoat-dong-day-hoc-gv-thuc-hien-trong-video.html)
 [Chia sẻ kinh nghiệm sử dụng của các PP, KTDH vừa tìm hiểu ở trên trong thực tiễn nhà trường của Thầy/Cô.](/bai-viet/chia-se-kinh-nghiem-su-dung-cua-cac-pp-ktdh-vua-tim-hieu-o-tren-trong-thuc-tien-nha-truong-cua-thay-co.html)→

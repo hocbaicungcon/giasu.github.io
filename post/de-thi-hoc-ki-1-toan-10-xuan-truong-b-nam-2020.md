@@ -10,7 +10,7 @@ tags:
 grade: 10
 ---
 
-Xem thêm: [Đề thi Hóa học 12 HK1 2020 SGD Nam Định](/bai-viet/de-thi-hoa-hoc-12-hk1-2020-sgd-nam-dinh.html)
+Xem thêm: Đề thi Hóa học 12 HK1 2020 SGD Nam Định
 
 ## 1. Đề thi học kì 1 Toán 10 trắc nghiệm
 

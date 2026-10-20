@@ -27,13 +27,13 @@ Cho 18,5 gam chất hữu cơ A (có công thức phân tử C3H11N3O6) tác d�
 
 Xem thêm
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -41,5 +41,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Hỗn hợp X gồm 2 chất có công thức phân tử là C3H12N2O3 và C2H8N2O3. Cho 3,40 gam X phản ứng vừa đủ với](/bai-viet/hon-hop-x-gom-2-chat-co-cong-thuc-phan-tu-la-c3h12n2o3-va-c2h8n2o3-cho-340-gam-x-phan-ung-vua-du-voi.html)
-[Hỗn hợp X gồm các chất có công thức phân tử là C2H7O3N và C2H10O3N2. Khi cho các chất trong X tác dụng](/bai-viet/hon-hop-x-gom-cac-chat-co-cong-thuc-phan-tu-la-c2h7o3n-va-c2h10o3n2-khi-cho-cac-chat-trong-x-tac-dung.html)→
+←Hỗn hợp X gồm 2 chất có công thức phân tử là C3H12N2O3 và C2H8N2O3. Cho 3,40 gam X phản ứng vừa đủ với
+Hỗn hợp X gồm các chất có công thức phân tử là C2H7O3N và C2H10O3N2. Khi cho các chất trong X tác dụng→

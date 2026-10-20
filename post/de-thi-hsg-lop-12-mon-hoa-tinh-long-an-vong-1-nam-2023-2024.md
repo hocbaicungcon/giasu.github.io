@@ -150,7 +150,7 @@ Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khá
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
-- [Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+- Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 - [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
@@ -158,5 +158,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp đề thi môn hóa của bộ giáo dục từ năm 2007 đến nay](/bai-viet/tong-hop-de-thi-mon-hoa-cua-bo-giao-duc-tu-nam-2007-den-nay.html)
 
-←[Đề thi hsg lớp 12 môn hóa tỉnh Hòa Bình bảng B năm 2023 2024](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-hoa-binh-bang-b-nam-2023-2024.html)
-[Đề thi hsg lớp 12 môn hóa tỉnh Nghệ An bảng A năm 2023 2024](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-nghe-an-bang-a-nam-2023-2024.html)→
+←Đề thi hsg lớp 12 môn hóa tỉnh Hòa Bình bảng B năm 2023 2024
+Đề thi hsg lớp 12 môn hóa tỉnh Nghệ An bảng A năm 2023 2024→

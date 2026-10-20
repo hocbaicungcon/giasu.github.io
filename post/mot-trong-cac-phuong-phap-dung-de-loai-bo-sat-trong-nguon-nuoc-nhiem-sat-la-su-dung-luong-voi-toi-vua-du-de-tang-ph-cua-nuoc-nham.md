@@ -29,9 +29,9 @@ Một mẫu nước có hàm lượng sắt cao gấp 42 lần so với ngưỡn
 
 Các thầy cô và các em có thể xem đầy đủ cả đề tại
 
-[Đề thi thử tốt nghiệp THPT 2023 môn hóa sở GD Nam Định lần 1 và lời giải](/bai-viet/de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-so-gd-nam-dinh-lan-1-va-loi-giai.html)
+Đề thi thử tốt nghiệp THPT 2023 môn hóa sở GD Nam Định lần 1 và lời giải
 
-[Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án](/bai-viet/tong-hop-de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-co-dap-an.html)
+Tổng hợp đề thi thử tốt nghiệp THPT 2023 môn hóa có đáp án
 
 Hoặc xem thêm các tài liệu khác của môn hóa
 
@@ -51,5 +51,5 @@ Hoặc xem thêm các tài liệu khác của môn hóa
 
 - [Tổng hợp 23 phương pháp giải bài tập môn hóa học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Đề thi thử tốt nghiệp THPT 2023 môn hóa sở GD Nam Định lần 1 và lời giải](/bai-viet/de-thi-thu-tot-nghiep-thpt-2023-mon-hoa-so-gd-nam-dinh-lan-1-va-loi-giai.html)
-[Chia hỗn hợp gồm axit oleic, axit stearic và triglixerit X thành ba phần bằng nhau. Đun nóng phần một với dung dịch NaOH dư](/bai-viet/chia-hon-hop-gom-axit-oleic-axit-stearic-va-triglixerit-x-thanh-ba-phan-bang-nhau-dun-nong-phan-mot-voi-dung-dich-naoh-du.html)→
+←Đề thi thử tốt nghiệp THPT 2023 môn hóa sở GD Nam Định lần 1 và lời giải
+Chia hỗn hợp gồm axit oleic, axit stearic và triglixerit X thành ba phần bằng nhau. Đun nóng phần một với dung dịch NaOH dư→

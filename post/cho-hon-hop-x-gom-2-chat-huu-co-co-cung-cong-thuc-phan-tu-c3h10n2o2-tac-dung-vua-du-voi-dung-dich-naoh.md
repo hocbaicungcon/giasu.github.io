@@ -27,13 +27,13 @@ Cho hỗn hợp X gồm 2 chất hữu cơ có cùng công thức phân tử C3H
 
 Xem thêm
 
-- [Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết](/bai-viet/bien-luan-cong-thuc-phan-tu-muoi-amoni-huu-co-day-du-chi-tiet.html)
+- Biện luận công thức phân tử muối amoni hữu cơ đầy đủ chi tiết
 
 - [Giải bài tập chất béo theo phương pháp dồn chất](/bai-viet/giai-bai-tap-chat-beo-theo-phuong-phap-don-chat.html)
 
 - [Tổng hợp 50+ bài tập chất béo có lời giải chi tiết](/bai-viet/tong-hop-50-bai-tap-chat-beo-co-loi-giai-chi-tiet.html)
 
-- [Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-vo-co-hay-va-kho-co-co-loi-giai-chi-tiet.html)
+- Tổng hợp bài tập vô cơ hay và khó có lời giải chi tiết
 
 - [Tổng hợp bài tập hữu cơ hay và khó có lời giải chi tiết](/bai-viet/tong-hop-bai-tap-huu-co-hay-va-kho.html)
 
@@ -41,5 +41,5 @@ Xem thêm
 
 - [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
-←[Cho 16,5 gam chất A có công thức phân tử là C2H10O3N2 vào 200 gam dung dịch NaOH 8%](/bai-viet/cho-165-gam-chat-a-co-cong-thuc-phan-tu-la-c2h10o3n2-vao-200-gam-dung-dich-naoh-8.html)
-[Hỗn hợp X gồm chất Y (C2H10O3N2) và chất Z (C2H7O2N). Cho 14,85 gam X phản ứng vừa đủ với dung dịch NaOH](/bai-viet/hon-hop-x-gom-chat-y-c2h10o3n2-va-chat-z-c2h7o2n-cho-1485-gam-x-phan-ung-vua-du-voi-dung-dich-naoh.html)→
+←Cho 16,5 gam chất A có công thức phân tử là C2H10O3N2 vào 200 gam dung dịch NaOH 8%
+Hỗn hợp X gồm chất Y (C2H10O3N2) và chất Z (C2H7O2N). Cho 14,85 gam X phản ứng vừa đủ với dung dịch NaOH→

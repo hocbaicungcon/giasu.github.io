@@ -300,8 +300,8 @@ Xem thêm
 
 [Câu hỏi trắc nghiệm kim loại kiềm và hợp chất](/bai-viet/cau-hoi-trac-nghiem-kim-loai-kiem.html)
 
-[Câu hỏi trắc nghiệm kim loại kiềm thổ và hợp chất](/bai-viet/cau-hoi-trac-nghiem-kim-loai-kiem-tho.html)
+Câu hỏi trắc nghiệm kim loại kiềm thổ và hợp chất
 
-[Câu hỏi trắc nghiệm nhôm và hợp chất](/bai-viet/cau-hoi-trac-nghiem-nhom-va-hop-chat-2.html)
+Câu hỏi trắc nghiệm nhôm và hợp chất
 
-[Câu hỏi trắc nghiệm tổng hợp kim loại kiềm kiềm thổ nhôm](/bai-viet/cau-hoi-trac-nghiem-tong-hop-kim-loai-kiem-kiem-tho-nhom.html)
+Câu hỏi trắc nghiệm tổng hợp kim loại kiềm kiềm thổ nhôm

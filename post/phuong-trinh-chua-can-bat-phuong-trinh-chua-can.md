@@ -353,4 +353,4 @@ $$
 
 Kết hợp với điều kiện ta có tập nghiệm của bất phương trình là $S=\left[ 4;\,\frac{9}{2} \right].$
 
-Xem các ví dụ khác nữa tại đây: [Phương pháp biến đổi tương đương giải phương trình chứa căn](/bai-viet/phuong-phap-bien-doi-tuong-duong-giai-phuong-trinh-chua-can.html)
+Xem các ví dụ khác nữa tại đây: Phương pháp biến đổi tương đương giải phương trình chứa căn

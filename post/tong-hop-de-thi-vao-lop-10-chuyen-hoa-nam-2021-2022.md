@@ -78,5 +78,5 @@ Xem thêm
 
 [Phương pháp tư duy dồn chất xếp hình giải bài tập hóa học hữu cơ](/bai-viet/phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co.html)
 
-←[Đề thi thử tốt nghiệp năm 2023 môn hoá học file word có lời giải chi tiết đề số 24](/bai-viet/de-thi-thu-tot-nghiep-nam-2023-mon-hoa-hoc-file-word-co-loi-giai-chi-tiet-de-so-24.html)
-[Hỗn hợp E gồm axit panmitic, axit oleic, axit stearic và triglixerit X. Hidro hóa hoàn toàn m gam E, thu được (m + 0,08) gam](/bai-viet/hon-hop-e-gom-axit-panmitic-axit-oleic-axit-stearic-va-triglixerit-x-hidro-hoa-hoan-toan-m-gam-e-thu-duoc-m-008-gam.html)→
+←Đề thi thử tốt nghiệp năm 2023 môn hoá học file word có lời giải chi tiết đề số 24
+Hỗn hợp E gồm axit panmitic, axit oleic, axit stearic và triglixerit X. Hidro hóa hoàn toàn m gam E, thu được (m + 0,08) gam→

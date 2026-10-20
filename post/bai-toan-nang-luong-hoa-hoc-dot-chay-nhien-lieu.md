@@ -213,5 +213,5 @@ Cho các phản ứng:
 
 ![Bài toán năng lượng hóa học đốt cháy nhiên liệu 22](assets/images/bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu-image-31.png)
 
-←[ĐỀ ÔN TẬP GIỮA HỌC KÌ 2 LỚP 11 Số 1](/bai-viet/de-on-tap-giua-hoc-ki-2-lop-11-so-1.html)
+←ĐỀ ÔN TẬP GIỮA HỌC KÌ 2 LỚP 11 Số 1
 [Đề ôn tập giữa học kì 2 lớp 10 môn hóa học](/bai-viet/de-on-tap-giua-hoc-ki-2-lop-10-mon-hoa-hoc.html)→

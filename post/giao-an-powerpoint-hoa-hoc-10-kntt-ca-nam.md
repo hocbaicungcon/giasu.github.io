@@ -70,7 +70,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 
 **Chuyên đề 1: Cơ sở hoá học**
 
-[Bài 1: Liên kết hoá học](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-1-lien-ket-hoa-hoc.html)
+Bài 1: Liên kết hoá học
 
 - [Word – CHUYEN-DE-01-KNTT-CO-SO-HOA-HOC-PHAM-THI-THOM](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 - [Powerpoint – CHUYEN-DE-01-KNTT-CO-SO-HOA-HOC-PHAM-THI-THOM](https://drive.google.com/file/d/1dD8FH-8J9VrQQg1F_S--sgbxbYjgoMf0/view?usp=sharing)
@@ -92,7 +92,7 @@ Các thầy cô click vào link sau để download về máy tính (file trướ
 
 **Chuyên đề 2: Hoá học trong việc phòng chống cháy nổ**
 
-[Bài 5: Sơ lược về phản ứng cháy nổ](/bai-viet/giao-an-chuyen-de-hoc-tap-bai-5-so-luoc-ve-phan-ung-chay-no.html)
+Bài 5: Sơ lược về phản ứng cháy nổ
 
 - [Word – H10CD-KNTT-BAI-5-SO-LUOC-VE-PHAN-UNG-CHAY-NO](https://drive.google.com/drive/folders/1CUSidvRcsZ_2zvLvy58mraxQNEXarAVD?usp=sharing)
 
@@ -146,5 +146,5 @@ Mời các thầy cô xem thêm giáo án và các tài liệu dạy học hóa 
 
 [Tổng hợp giáo án và chuyên đề học tập hóa học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 
-←[Cách kết nối Macbook với Tivi qua cổng HDMI bằng hub Type C](/bai-viet/cach-ke%cc%82t-no%cc%82i-macbook-vo%cc%9bi-tivi-qua-co%cc%82%cc%89ng-hdmi-bang-hub-type-c.html)
-[Prompt là gì? Prompt AI art vẽ tranh bằng AI là gì?](/bai-viet/prompt-la-gi-prompt-ai-art-ve-tranh-bang-ai-la-gi.html)→
+←Cách kết nối Macbook với Tivi qua cổng HDMI bằng hub Type C
+Prompt là gì? Prompt AI art vẽ tranh bằng AI là gì?→

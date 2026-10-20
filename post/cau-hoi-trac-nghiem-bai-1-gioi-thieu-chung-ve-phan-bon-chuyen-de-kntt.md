@@ -279,5 +279,5 @@ Mời các thầy cô và các em xem thêm
 
 [Câu hỏi trắc nghiệm và phân dạng bài tập theo từng bài hóa 11 cả năm](/bai-viet/cau-hoi-trac-nghiem-va-phan-dang-bai-tap-theo-tung-bai-hoa-11-ca-nam.html)
 
-←[Câu hỏi trắc nghiệm bài 25 ôn tập chương 6 KNTT](/bai-viet/cau-hoi-trac-nghiem-bai-25-on-tap-chuong-6-kntt.html)
+←Câu hỏi trắc nghiệm bài 25 ôn tập chương 6 KNTT
 [Câu hỏi trắc nghiệm bài 2 phân bón vô cơ chuyên đề KNTT](/bai-viet/cau-hoi-trac-nghiem-bai-2-phan-bon-vo-co-chuyen-de-kntt.html)→

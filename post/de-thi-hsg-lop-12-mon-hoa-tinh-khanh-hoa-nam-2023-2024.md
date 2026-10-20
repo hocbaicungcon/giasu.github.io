@@ -148,4 +148,4 @@ Các thầy cô có thể xem thêm nhiều đề thi hsg của các tỉnh khá
 Hoặc xem thêm các tài liệu khác của môn hóa
 
 ←[Đề thi hsg lớp 12 môn hóa tỉnh Gia Lai năm 2023 2024](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-gia-lai-nam-2023-2024.html)
-[Đề thi hsg lớp 12 môn hóa tỉnh Quảng Bình năm 2023 2024](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-quang-binh-nam-2023-2024-2.html)→
+[Đề thi hsg lớp 12 môn hóa tỉnh Quảng Bình năm 2023 2024](/bai-viet/de-thi-hsg-lop-12-mon-hoa-tinh-quang-binh-nam-2023-2024.html)→

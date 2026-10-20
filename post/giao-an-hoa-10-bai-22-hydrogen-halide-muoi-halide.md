@@ -188,5 +188,5 @@ Hoặc xem thêm giáo án hoá 10 cả năm, chuyên đề học tập và các
 
 [Tổng hợp giáo án và các chuyên đề học tập hoá học 10](/bai-viet/tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10.html)
 
-←[Giáo án hoá 10 Bài 21 Nhóm halogen](/bai-viet/giao-an-hoa-10-bai-21-nhom-halogen.html)
+←Giáo án hoá 10 Bài 21 Nhóm halogen
 [Giáo án hoá 10 Bài 23 Ôn tập chương 7](/bai-viet/giao-an-hoa-10-bai-23-on-tap-chuong-7.html)→

@@ -21,27 +21,27 @@ grade: 10
 
 H2S  
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 1](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgf9h_tmp_263441183a90aaf7.gif)
+
 
  S
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 2](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgf9h_tmp_c4b911189121bde4.gif)
+
 
  FeS
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 3](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgf9h_tmp_fad413f94c87b646.gif)
+
 
  H2S
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 4](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgf9h_tmp_e7a1c205474886a8.gif)
+
 
  SO2
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 5](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgf9h_tmp_b81a1967691ea7a0.gif)
+
 
  H2SO4
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 6](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgf9h_tmp_60d0824dd301dc5e.gif)
+
 
   BaSO4
 
@@ -55,7 +55,7 @@ Na2SO3, KNO3, K2S, NaCl, H2SO4.
 
 2SO2 (k) + O2 (k)  
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 7](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgf9h_tmp_18268db2e53fe77b.gif)
+
 
   2SO3 (k) H < O
 
@@ -127,7 +127,7 @@ Câu 4
 
 2SO2 (k) + O2 (k)  
 
-![Đề thi học kì 2 lớp 10 môn hoá THPT Chu Văn An 8](file:///C:/Users/Admin/AppData/Local/Temp/lu10752vcgf4y.tmp/lu10752vcgfat_tmp_18268db2e53fe77b.gif)
+
 
  2SO3 (k) H < O
 
@@ -228,13 +228,13 @@ Xem thêm
 
 [Tổng hợp đề thi học kì 2 lớp 10 môn hoá học](/bai-viet/tong-hop-de-thi-hoc-ki-2-lop-10-mon-hoa-hoc.html)
 
-[Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12](/bai-viet/tong-hop-de-thi-giua-hoc-ki-2-ca-ba-khoi-10-11-12.html)
+Tổng hợp đề thi giữa học kì 2 cả ba khối 10 11 12
 
-[Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết](/bai-viet/tong-hop-de-thi-thpt-2021-file-word-co-loi-giai.html)
+Tổng hợp đề thi THPT QG 2021 file word có lời giải chi tiết
 
 [Tổng hợp các phương pháp giải bài tập môn hoá học](/bai-viet/tong-hop-23-phuong-phap-giai-bai-tap-mon-hoa-hoc.html)
 
 [Tổng hợp đề thi HSG lớp 12 môn hoá học](/bai-viet/tong-hop-de-thi-hsg-lop-12-mon-hoa-hoc.html)
 
-←[Đề thi học kì 2 lớp 10 môn hoá THPT Bùi Thị Xuân](/bai-viet/de-thi-hoc-ki-2-lop-10-mon-hoa-thpt-bui-thi-xuan.html)
-[Đề thi học kì 2 lớp 10 môn hoá THPT Bắc Sơn](/bai-viet/de-thi-hoc-ki-2-lop-10-mon-hoa-thpt-bac-son.html)→
+←Đề thi học kì 2 lớp 10 môn hoá THPT Bùi Thị Xuân
+Đề thi học kì 2 lớp 10 môn hoá THPT Bắc Sơn→

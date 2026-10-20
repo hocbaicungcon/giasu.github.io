@@ -15,7 +15,7 @@ tags:
 grade: 11
 ---
 
-**Bài toán xếp hậu** là một bài toán kinh điển thường được giới thiệu trong các cuốn sách về thuật toán. Ở đây, chúng ta sẽ giải quyết bài toán bằng các sử dụng [giải thuật đệ quy](/bai-viet/de-quy-la-gi.html) và [thuật toán quay lui](/bai-viet/thuat-toan-quay-lui-va-minh-hoa.html) (vét cạn).
+**Bài toán xếp hậu** là một bài toán kinh điển thường được giới thiệu trong các cuốn sách về thuật toán. Ở đây, chúng ta sẽ giải quyết bài toán bằng các sử dụng giải thuật đệ quy và thuật toán quay lui (vét cạn).
 
 Xem thêm: [Thuật toán giải sudoku bằng quay lui backtracking](/bai-viet/thuat-toan-giai-sudoku-bang-quay-lui-backtracking.html)
 

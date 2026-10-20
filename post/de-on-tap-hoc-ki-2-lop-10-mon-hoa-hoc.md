@@ -198,5 +198,5 @@ Cl2 + NaBr
 **Câu 2:** Trong y học, dược phẩm Nabica (NaHCO3) thường được chỉ định cho người đau dạ dày nhằm mục đích giảm bớt lượng hydrochloric acid dư thừa trong dạ dày. Tính thể tích dung dịch hydrochloric acid 0,035 M (nồng độ acid trong dạ dày) được trung hòa và thể tích khí CO2 (ở đkc) sinh ra khi uống 0,336 gam NaHCO3.
 
 **———————–  Hết  ———————–
-←[4 thông điệp của Đức Giáo Hoàng Francis](/bai-viet/4-thong-diep-cua-duc-giao-hoang-francis.html)
+←4 thông điệp của Đức Giáo Hoàng Francis
 [Hướng dẫn giải đề Toán THPT 2025](/bai-viet/huong-dan-giai-de-toan-thpt-2025.html)→

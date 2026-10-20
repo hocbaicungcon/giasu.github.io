@@ -11,7 +11,7 @@ tags:
 grade: 12
 ---
 
-Mời các em tham khảo thêm [Đề minh họa tiếng Anh 2023 file Word PDF](/bai-viet/de-minh-hoa-tieng-anh-2023-file-word.html)
+Mời các em tham khảo thêm Đề minh họa tiếng Anh 2023 file Word PDF
 
 ## Đề thi thử tiếng Anh có đáp án số 1
 
@@ -310,5 +310,5 @@ Key: B: *done a great job: làm rất tốt =>  khen: compliment
 
 => Key: Apron strings: Being influenced or controlled by someone : bị ai kiểm soát hoặc bị ai làm ảnh hưởng => *“**Cutting the Apron Strings**”: Cắt bỏ việc bị kiểm soát =*standing on your own feet: tự đứng trên đôi chân của mình
 
-←[Đề thi giữa học kì 2 môn hóa lớp 10 THPT Võ Trường Toản TP Hồ Chí Minh](/bai-viet/de-thi-giua-hoc-ki-2-mon-hoa-lop-10-thpt-vo-truong-toan-tp-ho-chi-minh.html)
+←Đề thi giữa học kì 2 môn hóa lớp 10 THPT Võ Trường Toản TP Hồ Chí Minh
 [Các bước để giải một bài toán như thế nào?](/bai-viet/cac-buoc-de-giai-mot-bai-toan-nhu-the-nao.html)→
