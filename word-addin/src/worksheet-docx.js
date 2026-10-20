@@ -11,12 +11,6 @@ export const SHAPES = { shapecircle: '⚪', shaperectangle: '▭', shapesquare: 
 
 /** Emoji for a TikZ icon name (\icOChick -> chick); `cps` maps id -> code point (hex), from the generator's picture library. */
 const emojiOf = (id, cps) => (cps[id] ? String.fromCodePoint(...String(cps[id]).split('-').map((h) => parseInt(h, 16))) : SHAPES[id] || '●');
-// blank boxes (□) in worksheet maths: own run at ~1.8x size with an en space either side, so there is room to write in them
-const bigBlanks = (xml, half) => {
-  const big = Math.round(half * 1.8), font = '<w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>';
-  const run = (rp, t) => `<m:r>${rp}<m:t xml:space="preserve">${t}</m:t></m:r>`;
-  return xml.replace(/<m:r>(<w:rPr>.*?<\/w:rPr>)<m:t xml:space="preserve">([^<]*□[^<]*)<\/m:t><\/m:r>/g, (_, rp, t) => t.split('□').map((part, i, arr) => (part ? run(rp, part) : '') + (i < arr.length - 1 ? run(`<w:rPr>${font}<w:sz w:val="${big}"/><w:szCs w:val="${big}"/></w:rPr>`, '\u2002□\u2002') : '')).join(''));
-};
 
 function group(s, i) {   // text of the {...} group starting at s[i] (s[i] === '{'), and the index after it
   let depth = 0, j = i;
@@ -60,6 +54,12 @@ export function tikzRun(code, optStr, ctx) {
   }
 }
 
+// blank to fill in (\boxed{\phantom{..}}): an inline rectangle drawing, about 1.5 digits wide and 2 digits tall
+const BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
+const blankRun = (ctx) => {
+  const k = Math.max(0.6, (ctx.fs || 16) / 16);
+  return sceneRun(tikzToScene(`\\draw[line width=1pt] (0,0) rectangle (${(1.1 * k).toFixed(2)},${(0.85 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, 'Ô trống');
+};
 let picId = 5000;
 /** A Twemoji picture (PNG prepared by the caller: ctx.pics.get(cp) = {rid, pt}) inline in the text, else the emoji character. */
 function pictureRun(cp, ctx, fmt, shapeId = '') {
@@ -101,7 +101,14 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
       if (j < 0) { buf += s.slice(i + 1); break; }
       flush();
       const tex = s.slice(i + 1, j);
-      try { out += ctx.math ? ctx.math(tex, fmt) : latexToOmml(tex); } catch { out += run(tex.replace(/\\[a-zA-Z]+/g, '').replace(/[{}]/g, '')); }
+      try {
+        // blank boxes are drawn as a picture (a rectangle), big enough to write in; the maths around them stays equations
+        const parts = tex.split(BLANK_RE);
+        parts.forEach((part, k) => {
+          if (k) out += blankRun(ctx);
+          if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
+        });
+      } catch { out += run(tex.replace(/\\[a-zA-Z]+/g, '').replace(/[{}]/g, '')); }
       i = j + 1; continue;
     }
     if (c === '\\') {
@@ -221,7 +228,7 @@ export function worksheetBody(result, options = {}) {
   const acc = color === 'bw' ? '222222' : accent.replace('#', '');
   const sz = Math.round(fontPt * 2);
   const half = sz;
-  const ctx = { cps, pics, fs: fontPt / 0.75, baseSz: sz, math: (tex) => bigBlanks(latexToOmml(tex.replace(/\\boxed\{\\phantom\{[^}]*\}\}/g, '\\square')), half).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
+  const ctx = { cps, pics, fs: fontPt / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
   const f = { sz, emoji: Math.round(sz * 1.5) };
   const skipped = [];
   let body = '', count = 0;
