@@ -11,6 +11,12 @@ export const SHAPES = { shapecircle: '⚪', shaperectangle: '▭', shapesquare: 
 
 /** Emoji for a TikZ icon name (\icOChick -> chick); `cps` maps id -> code point (hex), from the generator's picture library. */
 const emojiOf = (id, cps) => (cps[id] ? String.fromCodePoint(...String(cps[id]).split('-').map((h) => parseInt(h, 16))) : SHAPES[id] || '●');
+// blank boxes (□) in worksheet maths: own run at ~1.8x size with an en space either side, so there is room to write in them
+const bigBlanks = (xml, half) => {
+  const big = Math.round(half * 1.8), font = '<w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/>';
+  const run = (rp, t) => `<m:r>${rp}<m:t xml:space="preserve">${t}</m:t></m:r>`;
+  return xml.replace(/<m:r>(<w:rPr>.*?<\/w:rPr>)<m:t xml:space="preserve">([^<]*□[^<]*)<\/m:t><\/m:r>/g, (_, rp, t) => t.split('□').map((part, i, arr) => (part ? run(rp, part) : '') + (i < arr.length - 1 ? run(`<w:rPr>${font}<w:sz w:val="${big}"/><w:szCs w:val="${big}"/></w:rPr>`, '\u2002□\u2002') : '')).join(''));
+};
 
 function group(s, i) {   // text of the {...} group starting at s[i] (s[i] === '{'), and the index after it
   let depth = 0, j = i;
@@ -215,7 +221,7 @@ export function worksheetBody(result, options = {}) {
   const acc = color === 'bw' ? '222222' : accent.replace('#', '');
   const sz = Math.round(fontPt * 2);
   const half = sz;
-  const ctx = { cps, pics, fs: fontPt / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex.replace(/\\boxed\{\\phantom\{[^}]*\}\}/g, '\\square')).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
+  const ctx = { cps, pics, fs: fontPt / 0.75, baseSz: sz, math: (tex) => bigBlanks(latexToOmml(tex.replace(/\\boxed\{\\phantom\{[^}]*\}\}/g, '\\square')), half).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
   const f = { sz, emoji: Math.round(sz * 1.5) };
   const skipped = [];
   let body = '', count = 0;
