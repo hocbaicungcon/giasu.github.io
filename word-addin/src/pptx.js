@@ -62,6 +62,54 @@ const SLIDE_LAYOUT_XML = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?
   <p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr>
 </p:sldLayout>`;
 
+
+// ---------------------------------------------------------------- native equations (PowerPoint has the same maths engine as Word)
+// While the text is collected every equation is parked in MATHS and the text keeps one private-use character for it (MATH0 + index).
+// makeShape turns that character into a real PowerPoint equation (a14:m) with the plain-text version as fallback for apps without one.
+const MATH0 = 0xE200;
+let MATHS = [];
+let NATIVE_MATH = true;
+const NS_M = 'http://schemas.openxmlformats.org/officeDocument/2006/math';
+const mathChar = (omml, plain) => {
+  const parts = omml.match(/<m:oMath\b[\s\S]*?<\/m:oMath>/g) || [];
+  if (!NATIVE_MATH || !parts.length) return ` ${plain} `;
+  MATHS.push({ parts, plain });
+  return String.fromCharCode(MATH0 + MATHS.length - 1);
+};
+const isMathChar = (ch) => { const k = ch.charCodeAt(0) - MATH0; return k >= 0 && k < MATHS.length; };
+/** Length of a line as it will look on the slide (an equation counts as its plain-text form). */
+const visLen = (l) => { let n = 0; for (const ch of l) n += isMathChar(ch) ? MATHS[ch.charCodeAt(0) - MATH0].plain.length + 1 : 1; return n; };
+const mathToDml = (part, sz, color) => {
+  const rpr = (italic) => `<a:rPr lang="en-US" sz="${sz}"${italic ? ' i="1"' : ''}><a:solidFill><a:srgbClr val="${color}"/></a:solidFill><a:latin typeface="Cambria Math" panose="02040503050406030204" pitchFamily="18" charset="0"/><a:ea typeface="Cambria Math" panose="02040503050406030204" pitchFamily="18" charset="0"/></a:rPr>`;
+  let x = part.replace(/<m:r>([\s\S]*?)<\/m:r>/g, (all, inner) => {
+    const upright = /<m:sty m:val="p"\s*\/>/.test(inner);
+    inner = inner.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g, '');
+    const m = /^\s*<m:rPr>[\s\S]*?<\/m:rPr>/.exec(inner);
+    return `<m:r>${m ? m[0] : ''}${rpr(!upright)}${m ? inner.slice(m[0].length) : inner}</m:r>`;
+  });
+  x = x.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g, rpr(true));
+  if (!/^<m:oMath\b[^>]*xmlns:m=/.test(x)) x = x.replace(/^<m:oMath\b/, `<m:oMath xmlns:m="${NS_M}"`);
+  return x;
+};
+/** <a:r> / <a14:m> children for one line of text. */
+function lineRuns(line, { size, bold, color, display = false }) {
+  const tr = (t) => `<a:r><a:rPr lang="vi-VN" sz="${size}" b="${bold ? '1' : '0'}"><a:solidFill><a:srgbClr val="${color}"/></a:solidFill><a:latin typeface="Arial"/></a:rPr><a:t>${escapeXml(t)}</a:t></a:r>`;
+  let out = '', buf = '';
+  const flush = () => { if (buf) { out += tr(buf); buf = ''; } };
+  const chars = [...line];
+  const onlyMath = chars.filter((c) => !isMathChar(c) && c.trim()).length === 0;
+  for (const ch of chars) {
+    if (!isMathChar(ch)) { buf += ch; continue; }
+    flush();
+    const mm = MATHS[ch.charCodeAt(0) - MATH0];
+    const body = mm.parts.map((x) => mathToDml(x, size, color)).join('');
+    const inner = onlyMath || display ? `<m:oMathPara xmlns:m="${NS_M}"><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr>${body}</m:oMathPara>` : body;
+    out += `<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"><mc:Choice xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" Requires="a14"><a14:m>${inner}</a14:m></mc:Choice><mc:Fallback>${tr(mm.plain)}</mc:Fallback></mc:AlternateContent>`;
+  }
+  flush();
+  return out || tr('');
+}
+
 export function makeShape({
   id,
   name = '',
@@ -95,33 +143,13 @@ export function makeShape({
   const alignXml = align === 'ctr' ? 'algn="ctr"' : align === 'r' ? 'algn="r"' : 'algn="l"';
   const vAnchor = valign === 't' ? 'anchor="t"' : valign === 'b' ? 'anchor="b"' : 'anchor="ctr"';
 
-  let bodyContent = '';
-  if (runs && runs.length) {
-    bodyContent = runs.map((r) => `
+  const para = (l, o) => `
       <a:p>
-        <a:pPr ${alignXml} indent="0" marL="0"><a:buNone/></a:pPr>
-        <a:r>
-          <a:rPr lang="vi-VN" sz="${r.size || textSize}" b="${r.bold ? '1' : '0'}">
-            <a:solidFill><a:srgbClr val="${r.color || textColor}"/></a:solidFill>
-            <a:latin typeface="Arial"/>
-          </a:rPr>
-          <a:t>${escapeXml(r.text)}</a:t>
-        </a:r>
-      </a:p>`).join('');
-  } else {
-    const lines = String(text ?? '').split('\n');
-    bodyContent = lines.map((l) => `
-      <a:p>
-        <a:pPr ${alignXml} indent="0" marL="0"><a:buNone/></a:pPr>
-        <a:r>
-          <a:rPr lang="vi-VN" sz="${textSize}" b="${bold ? '1' : '0'}">
-            <a:solidFill><a:srgbClr val="${textColor}"/></a:solidFill>
-            <a:latin typeface="Arial"/>
-          </a:rPr>
-          <a:t>${escapeXml(l)}</a:t>
-        </a:r>
-      </a:p>`).join('');
-  }
+        <a:pPr ${alignXml} indent="0" marL="0"><a:buNone/></a:pPr>${lineRuns(l, o)}
+      </a:p>`;
+  const bodyContent = runs && runs.length
+    ? runs.map((r) => para(r.text, { size: r.size || textSize, bold: r.bold, color: r.color || textColor })).join('')
+    : String(text ?? '').split('\n').map((l) => para(l, { size: textSize, bold, color: textColor })).join('');
 
   return `
     <p:sp>
@@ -191,7 +219,8 @@ const SUB = { 0: '₀', 1: '₁', 2: '₂', 3: '₃', 4: '₄', 5: '₅', 6: '�
 const toScript = (map, mark, x) => {
   x = String(x).trim();
   if (!x) return '';
-  if ([...x].every((ch) => map[ch])) return [...x].map((ch) => map[ch]).join('');
+  const packed = x.replace(/\s+/g, '');
+  if ([...packed].every((ch) => map[ch])) return [...packed].map((ch) => map[ch]).join('');
   return mark + (/^[A-Za-z0-9]$/.test(x) ? x : `(${x})`);
 };
 const sup = (x) => toScript(SUP, '^', x);
@@ -208,19 +237,27 @@ const SYM = {
   Gamma: 'Γ', Delta: 'Δ', Theta: 'Θ', Lambda: 'Λ', Xi: 'Ξ', Pi: 'Π', Sigma: 'Σ', Phi: 'Φ', Psi: 'Ψ', Omega: 'Ω'
 };
 const BB = { R: 'ℝ', N: 'ℕ', Z: 'ℤ', Q: 'ℚ', C: 'ℂ' };
-const paren = (x) => { x = x.trim(); return /^[A-Za-z0-9À-ɏ.,°′'π∞]+$/.test(x) ? x : `(${x})`; };
+const paren = (x) => { x = x.trim(); return /^[A-Za-z0-9À-ɏ.,°′'π∞α-ωΑ-Ω]+$/.test(x) || /^[√³⁴]?[A-Za-z]*\([^()]*\)$/.test(x) || /^√[A-Za-z0-9]+$/.test(x) ? x : `(${x})`; };
+const FUNCS = 'arcsin|arccos|arctan|arccot|sinh|cosh|tanh|sin|cos|tan|cot|sec|csc|log|ln|lg|exp|max|min|det|gcd|lim|sup|inf';
 
 /** LaTeX -> readable one-line Unicode text (PowerPoint has no maths engine, so formulas are written as plain text). */
 export function texToPlain(tex) {
-  let s = ` ${tex} `;
+  let s = ` ${tex} `.replace(/\\\\/g, '\uE002');   // row breaks first: a `\\` followed by a space must not be read as `\ `
   s = s.replace(/\\(?:left|right)\s*\./g, '').replace(/\\(?:left|right|bigl|bigr|Bigl|Bigr|big|Big|displaystyle|textstyle)(?![A-Za-z])\s*/g, '');
   s = s.replace(/\\[,;:!> ]|\\q?quad(?![A-Za-z])/g, ' ').replace(/\\(?:dfrac|tfrac|cfrac)(?![A-Za-z])/g, '\\frac');
   s = s.replace(/\\mathbb\s*\{([A-Z])\}/g, (m, x) => BB[x] || x);
+  s = s.replace(/\^\s*\{?\s*\\circ\s*\}?/g, '°');
+  s = s.replace(/\\([{}])/g, (m, b) => (b === '{' ? '\uE000' : '\uE001'));   // literal braces survive the clean-up below
+  s = s.replace(/\\(?:overset|stackrel)\s*\{\s*\\(?:frown|smile)\s*\}\s*\{([^{}]*)\}/g, '⌒$1').replace(/\\(?:overparen|wideparen)\s*\{([^{}]*)\}/g, '⌒$1').replace(/\\(?:overset|stackrel|underset)\s*\{[^{}]*\}\s*\{([^{}]*)\}/g, '$1');
+  s = s.replace(/\\lim\s*_\s*\{([^{}]*)\}/g, (m, x) => `lim(${x.trim()}) `);
+  s = s.replace(/\\([A-Za-z]+)/g, (m, name) => (SYM[name] !== undefined ? SYM[name] : m));   // symbols first: a command glued to the next word ("\cdot\vec{u}") must not swallow it
+  s = s.replace(new RegExp(`\\\\(${FUNCS})(?![A-Za-z])`, 'g'), '$1 ');
   s = s.replace(/\\(?:text|textbf|mathrm|mathbf|mathit|mathsf|mathcal|operatorname|boldsymbol)\s*\{([^{}]*)\}/g, '$1');
   s = s.replace(/\^\s*\{?\s*\\circ\s*\}?/g, '°');
   s = s.replace(/\\begin\{(cases|array|aligned|matrix|pmatrix|bmatrix|vmatrix)\}(\{[^{}]*\})?([\s\S]*?)\\end\{\1\}/g, (m, env, spec, body) => {
-    const rows = body.split(/\\\\/).map((r) => r.trim().replace(/&/g, '  ')).filter(Boolean);
+    const rows = body.split('\uE002').map((r) => r.trim().replace(/&/g, '  ')).filter(Boolean);
     if (env === 'cases') return `{ ${rows.join('; ')} `;
+    if (env === 'array' || env === 'aligned') return rows.join('; ');
     return (env === 'vmatrix' ? '|' : '(') + rows.join('; ') + (env === 'vmatrix' ? '|' : ')');
   });
   for (let i = 0; i < 14; i++) {
@@ -238,9 +275,10 @@ export function texToPlain(tex) {
   }
   s = s.replace(/\^\s*([0-9A-Za-z+\-−])/g, (m, x) => sup(x)).replace(/_\s*([0-9A-Za-z+\-−])/g, (m, x) => sub(x));
   s = s.replace(/\\([A-Za-z]+)/g, (m, name) => (SYM[name] !== undefined ? SYM[name] : name));
-  s = s.replace(/\\\\/g, '; ').replace(/\\\|/g, '‖').replace(/\\([^A-Za-z])/g, '$1');
-  s = s.replace(/[{}]/g, '').replace(/&/g, ' ').replace(/\s+/g, ' ').trim();
-  return s;
+  s = s.replace(/\uE002/g, '; ').replace(/\\\|/g, '‖').replace(/\\([^A-Za-z])/g, '$1');
+  s = s.replace(/[{}]/g, '').replace(/&/g, ' ').replace(/\s+/g, ' ');
+  s = s.replace(new RegExp(`\\b(${FUNCS}) (?=[⁰-⁹¹²³ⁿ₀-₉(^_])`, 'g'), '$1').replace(/\s*([→⇒⇔↔])\s*/g, '$1').replace(/\uE000/g, '{').replace(/\uE001/g, '}');
+  return s.trim();
 }
 
 const IMG_EXT = { 'image/png': 'png', 'image/jpeg': 'jpeg', 'image/jpg': 'jpeg', 'image/gif': 'gif', 'image/x-emf': 'emf', 'image/emf': 'emf', 'image/x-wmf': 'wmf', 'image/wmf': 'wmf' };
@@ -299,7 +337,9 @@ function collect(kids, ctx, st, out) {
     if (typeof c !== 'string') continue;
     if (/^<m:oMath(Para)?[\s>]/.test(c)) {
       if (st.skip) { st.skip--; continue; }
-      try { out.text += ` ${texToPlain(ommlToLatex(c)[0])} `; } catch { out.text += ' [công thức] '; }
+      let plain = '[công thức]';
+      try { plain = texToPlain(ommlToLatex(c)[0]); } catch { /* keep the placeholder */ }
+      out.text += mathChar(c, plain);
     } else if (/^<w:r[\s>]/.test(c)) {
       const pic = runPicture(c, ctx);
       if (pic) out.imgs.push(pic);
@@ -424,7 +464,7 @@ function textHeight(lines, size, width, inset, bold) {
   const pt = size / 100;
   const cpl = Math.max(3, Math.floor(((width - 2 * inset) / (pt * PTE * (bold ? 0.6 : 0.55))) * 0.93));
   let n = 0;
-  for (const l of lines) n += Math.max(1, Math.ceil(l.length / cpl));
+  for (const l of lines) n += Math.max(1, Math.ceil(visLen(l) / cpl));
   return n * pt * PTE * 1.22 + 2 * inset;
 }
 
@@ -583,6 +623,8 @@ export function applyTheme(xml, themeId) {
 }
 
 export function buildExamPptx(model, analysis, answers, opts = {}) {
+  NATIVE_MATH = opts.nativeMath !== false;
+  MATHS = [];
   const ctx = makeContext(opts.pkg);
   const items = collectItems(model, analysis, answers, ctx);
   if (!items.length) throw new Error('Không tìm thấy câu hỏi nào trong tài liệu.');

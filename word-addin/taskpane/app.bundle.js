@@ -11139,6 +11139,31 @@ renderStart();
   });
 
   // src/pptx.js
+  function lineRuns(line3, { size, bold, color, display = false }) {
+    const tr = (t) => `<a:r><a:rPr lang="vi-VN" sz="${size}" b="${bold ? "1" : "0"}"><a:solidFill><a:srgbClr val="${color}"/></a:solidFill><a:latin typeface="Arial"/></a:rPr><a:t>${escapeXml(t)}</a:t></a:r>`;
+    let out = "", buf = "";
+    const flush = () => {
+      if (buf) {
+        out += tr(buf);
+        buf = "";
+      }
+    };
+    const chars = [...line3];
+    const onlyMath = chars.filter((c) => !isMathChar(c) && c.trim()).length === 0;
+    for (const ch of chars) {
+      if (!isMathChar(ch)) {
+        buf += ch;
+        continue;
+      }
+      flush();
+      const mm = MATHS[ch.charCodeAt(0) - MATH0];
+      const body = mm.parts.map((x) => mathToDml(x, size, color)).join("");
+      const inner = onlyMath || display ? `<m:oMathPara xmlns:m="${NS_M2}"><m:oMathParaPr><m:jc m:val="left"/></m:oMathParaPr>${body}</m:oMathPara>` : body;
+      out += `<mc:AlternateContent xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"><mc:Choice xmlns:a14="http://schemas.microsoft.com/office/drawing/2010/main" Requires="a14"><a14:m>${inner}</a14:m></mc:Choice><mc:Fallback>${tr(mm.plain)}</mc:Fallback></mc:AlternateContent>`;
+    }
+    flush();
+    return out || tr("");
+  }
   function makeShape({
     id,
     name = "",
@@ -11171,33 +11196,11 @@ renderStart();
     const linkXml = linkTarget ? `<a:hlinkClick r:id="${linkTarget}" tooltip="${escapeXml(linkTooltip)}" action="ppaction://hlinksldjump"/>` : "";
     const alignXml = align === "ctr" ? 'algn="ctr"' : align === "r" ? 'algn="r"' : 'algn="l"';
     const vAnchor = valign === "t" ? 'anchor="t"' : valign === "b" ? 'anchor="b"' : 'anchor="ctr"';
-    let bodyContent = "";
-    if (runs2 && runs2.length) {
-      bodyContent = runs2.map((r) => `
+    const para2 = (l, o) => `
       <a:p>
-        <a:pPr ${alignXml} indent="0" marL="0"><a:buNone/></a:pPr>
-        <a:r>
-          <a:rPr lang="vi-VN" sz="${r.size || textSize}" b="${r.bold ? "1" : "0"}">
-            <a:solidFill><a:srgbClr val="${r.color || textColor}"/></a:solidFill>
-            <a:latin typeface="Arial"/>
-          </a:rPr>
-          <a:t>${escapeXml(r.text)}</a:t>
-        </a:r>
-      </a:p>`).join("");
-    } else {
-      const lines = String(text != null ? text : "").split("\n");
-      bodyContent = lines.map((l) => `
-      <a:p>
-        <a:pPr ${alignXml} indent="0" marL="0"><a:buNone/></a:pPr>
-        <a:r>
-          <a:rPr lang="vi-VN" sz="${textSize}" b="${bold ? "1" : "0"}">
-            <a:solidFill><a:srgbClr val="${textColor}"/></a:solidFill>
-            <a:latin typeface="Arial"/>
-          </a:rPr>
-          <a:t>${escapeXml(l)}</a:t>
-        </a:r>
-      </a:p>`).join("");
-    }
+        <a:pPr ${alignXml} indent="0" marL="0"><a:buNone/></a:pPr>${lineRuns(l, o)}
+      </a:p>`;
+    const bodyContent = runs2 && runs2.length ? runs2.map((r) => para2(r.text, { size: r.size || textSize, bold: r.bold, color: r.color || textColor })).join("") : String(text != null ? text : "").split("\n").map((l) => para2(l, { size: textSize, bold, color: textColor })).join("");
     return `
     <p:sp>
       <p:nvSpPr>
@@ -11254,15 +11257,22 @@ renderStart();
 </Relationships>`;
   }
   function texToPlain(tex) {
-    let s = ` ${tex} `;
+    let s = ` ${tex} `.replace(/\\\\/g, "\uE002");
     s = s.replace(/\\(?:left|right)\s*\./g, "").replace(/\\(?:left|right|bigl|bigr|Bigl|Bigr|big|Big|displaystyle|textstyle)(?![A-Za-z])\s*/g, "");
     s = s.replace(/\\[,;:!> ]|\\q?quad(?![A-Za-z])/g, " ").replace(/\\(?:dfrac|tfrac|cfrac)(?![A-Za-z])/g, "\\frac");
     s = s.replace(/\\mathbb\s*\{([A-Z])\}/g, (m, x) => BB2[x] || x);
+    s = s.replace(/\^\s*\{?\s*\\circ\s*\}?/g, "\xB0");
+    s = s.replace(/\\([{}])/g, (m, b) => b === "{" ? "\uE000" : "\uE001");
+    s = s.replace(/\\(?:overset|stackrel)\s*\{\s*\\(?:frown|smile)\s*\}\s*\{([^{}]*)\}/g, "\u2312$1").replace(/\\(?:overparen|wideparen)\s*\{([^{}]*)\}/g, "\u2312$1").replace(/\\(?:overset|stackrel|underset)\s*\{[^{}]*\}\s*\{([^{}]*)\}/g, "$1");
+    s = s.replace(/\\lim\s*_\s*\{([^{}]*)\}/g, (m, x) => `lim(${x.trim()}) `);
+    s = s.replace(/\\([A-Za-z]+)/g, (m, name) => SYM2[name] !== void 0 ? SYM2[name] : m);
+    s = s.replace(new RegExp(`\\\\(${FUNCS3})(?![A-Za-z])`, "g"), "$1 ");
     s = s.replace(/\\(?:text|textbf|mathrm|mathbf|mathit|mathsf|mathcal|operatorname|boldsymbol)\s*\{([^{}]*)\}/g, "$1");
     s = s.replace(/\^\s*\{?\s*\\circ\s*\}?/g, "\xB0");
     s = s.replace(/\\begin\{(cases|array|aligned|matrix|pmatrix|bmatrix|vmatrix)\}(\{[^{}]*\})?([\s\S]*?)\\end\{\1\}/g, (m, env, spec, body) => {
-      const rows = body.split(/\\\\/).map((r) => r.trim().replace(/&/g, "  ")).filter(Boolean);
+      const rows = body.split("\uE002").map((r) => r.trim().replace(/&/g, "  ")).filter(Boolean);
       if (env === "cases") return `{ ${rows.join("; ")} `;
+      if (env === "array" || env === "aligned") return rows.join("; ");
       return (env === "vmatrix" ? "|" : "(") + rows.join("; ") + (env === "vmatrix" ? "|" : ")");
     });
     for (let i = 0; i < 14; i++) {
@@ -11280,9 +11290,10 @@ renderStart();
     }
     s = s.replace(/\^\s*([0-9A-Za-z+\-−])/g, (m, x) => sup(x)).replace(/_\s*([0-9A-Za-z+\-−])/g, (m, x) => sub3(x));
     s = s.replace(/\\([A-Za-z]+)/g, (m, name) => SYM2[name] !== void 0 ? SYM2[name] : name);
-    s = s.replace(/\\\\/g, "; ").replace(/\\\|/g, "\u2016").replace(/\\([^A-Za-z])/g, "$1");
-    s = s.replace(/[{}]/g, "").replace(/&/g, " ").replace(/\s+/g, " ").trim();
-    return s;
+    s = s.replace(/\uE002/g, "; ").replace(/\\\|/g, "\u2016").replace(/\\([^A-Za-z])/g, "$1");
+    s = s.replace(/[{}]/g, "").replace(/&/g, " ").replace(/\s+/g, " ");
+    s = s.replace(new RegExp(`\\b(${FUNCS3}) (?=[\u2070-\u2079\xB9\xB2\xB3\u207F\u2080-\u2089(^_])`, "g"), "$1").replace(/\s*([→⇒⇔↔])\s*/g, "$1").replace(/\uE000/g, "{").replace(/\uE001/g, "}");
+    return s.trim();
   }
   function imageParts(pkg) {
     const parts = splitParts(pkg), map = /* @__PURE__ */ new Map();
@@ -11346,11 +11357,12 @@ renderStart();
           st.skip--;
           continue;
         }
+        let plain2 = "[c\xF4ng th\u1EE9c]";
         try {
-          out.text += ` ${texToPlain(ommlToLatex(c)[0])} `;
+          plain2 = texToPlain(ommlToLatex(c)[0]);
         } catch (e3) {
-          out.text += " [c\xF4ng th\u1EE9c] ";
         }
+        out.text += mathChar(c, plain2);
       } else if (/^<w:r[\s>]/.test(c)) {
         const pic = runPicture(c, ctx);
         if (pic) out.imgs.push(pic);
@@ -11472,7 +11484,7 @@ renderStart();
     const pt = size / 100;
     const cpl = Math.max(3, Math.floor((width - 2 * inset) / (pt * PTE * (bold ? 0.6 : 0.55)) * 0.93));
     let n = 0;
-    for (const l of lines) n += Math.max(1, Math.ceil(l.length / cpl));
+    for (const l of lines) n += Math.max(1, Math.ceil(visLen(l) / cpl));
     return n * pt * PTE * 1.22 + 2 * inset;
   }
   function fitSize(lines, w, h, sizes, inset, bold) {
@@ -11608,6 +11620,8 @@ renderStart();
     return out.replace(/<a:latin typeface="Arial"\/>/g, `<a:latin typeface="${theme.font}"/>`);
   }
   function buildExamPptx(model, analysis, answers, opts = {}) {
+    NATIVE_MATH = opts.nativeMath !== false;
+    MATHS = [];
     const ctx = makeContext(opts.pkg);
     const items = collectItems(model, analysis, answers, ctx);
     if (!items.length) throw new Error("Kh\xF4ng t\xECm th\u1EA5y c\xE2u h\u1ECFi n\xE0o trong t\xE0i li\u1EC7u.");
@@ -11858,7 +11872,7 @@ ${contentTypesOverrides}
     out.splitCount = items.filter((i) => i.plan.mode === "split").length;
     return out;
   }
-  var SLIDE_W, SLIDE_H, THEME_XML, SLIDE_MASTER_XML, SLIDE_LAYOUT_XML, REL_IMAGE, SUP, SUB3, toScript, sup, sub3, SYM2, BB2, paren, IMG_EXT, RE_LABEL2, toLines, MX, CW, TOP, BOTTOM, GAP, STEM_ONLY_H, PTE, STEM_SIZES, OPT_GAP, BASE, PPTX_THEMES;
+  var SLIDE_W, SLIDE_H, THEME_XML, SLIDE_MASTER_XML, SLIDE_LAYOUT_XML, MATH0, MATHS, NATIVE_MATH, NS_M2, mathChar, isMathChar, visLen, mathToDml, REL_IMAGE, SUP, SUB3, toScript, sup, sub3, SYM2, BB2, paren, FUNCS3, IMG_EXT, RE_LABEL2, toLines, MX, CW, TOP, BOTTOM, GAP, STEM_ONLY_H, PTE, STEM_SIZES, OPT_GAP, BASE, PPTX_THEMES;
   var init_pptx = __esm({
     "src/pptx.js"() {
       init_xlsx();
@@ -11918,13 +11932,45 @@ ${contentTypesOverrides}
   </p:cSld>
   <p:clrMapOvr><a:masterClrMapping/></p:clrMapOvr>
 </p:sldLayout>`;
+      MATH0 = 57856;
+      MATHS = [];
+      NATIVE_MATH = true;
+      NS_M2 = "http://schemas.openxmlformats.org/officeDocument/2006/math";
+      mathChar = (omml, plain2) => {
+        const parts = omml.match(/<m:oMath\b[\s\S]*?<\/m:oMath>/g) || [];
+        if (!NATIVE_MATH || !parts.length) return ` ${plain2} `;
+        MATHS.push({ parts, plain: plain2 });
+        return String.fromCharCode(MATH0 + MATHS.length - 1);
+      };
+      isMathChar = (ch) => {
+        const k = ch.charCodeAt(0) - MATH0;
+        return k >= 0 && k < MATHS.length;
+      };
+      visLen = (l) => {
+        let n = 0;
+        for (const ch of l) n += isMathChar(ch) ? MATHS[ch.charCodeAt(0) - MATH0].plain.length + 1 : 1;
+        return n;
+      };
+      mathToDml = (part, sz, color) => {
+        const rpr2 = (italic) => `<a:rPr lang="en-US" sz="${sz}"${italic ? ' i="1"' : ""}><a:solidFill><a:srgbClr val="${color}"/></a:solidFill><a:latin typeface="Cambria Math" panose="02040503050406030204" pitchFamily="18" charset="0"/><a:ea typeface="Cambria Math" panose="02040503050406030204" pitchFamily="18" charset="0"/></a:rPr>`;
+        let x = part.replace(/<m:r>([\s\S]*?)<\/m:r>/g, (all, inner) => {
+          const upright = /<m:sty m:val="p"\s*\/>/.test(inner);
+          inner = inner.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g, "");
+          const m = /^\s*<m:rPr>[\s\S]*?<\/m:rPr>/.exec(inner);
+          return `<m:r>${m ? m[0] : ""}${rpr2(!upright)}${m ? inner.slice(m[0].length) : inner}</m:r>`;
+        });
+        x = x.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g, rpr2(true));
+        if (!/^<m:oMath\b[^>]*xmlns:m=/.test(x)) x = x.replace(/^<m:oMath\b/, `<m:oMath xmlns:m="${NS_M2}"`);
+        return x;
+      };
       REL_IMAGE = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image";
       SUP = { 0: "\u2070", 1: "\xB9", 2: "\xB2", 3: "\xB3", 4: "\u2074", 5: "\u2075", 6: "\u2076", 7: "\u2077", 8: "\u2078", 9: "\u2079", "+": "\u207A", "-": "\u207B", "\u2212": "\u207B", "=": "\u207C", "(": "\u207D", ")": "\u207E", n: "\u207F", i: "\u2071" };
       SUB3 = { 0: "\u2080", 1: "\u2081", 2: "\u2082", 3: "\u2083", 4: "\u2084", 5: "\u2085", 6: "\u2086", 7: "\u2087", 8: "\u2088", 9: "\u2089", "+": "\u208A", "-": "\u208B", "\u2212": "\u208B", "=": "\u208C", "(": "\u208D", ")": "\u208E", a: "\u2090", e: "\u2091", o: "\u2092", x: "\u2093", n: "\u2099", i: "\u1D62", j: "\u2C7C", k: "\u2096", m: "\u2098", p: "\u209A", s: "\u209B", t: "\u209C", h: "\u2095", l: "\u2097" };
       toScript = (map, mark, x) => {
         x = String(x).trim();
         if (!x) return "";
-        if ([...x].every((ch) => map[ch])) return [...x].map((ch) => map[ch]).join("");
+        const packed = x.replace(/\s+/g, "");
+        if ([...packed].every((ch) => map[ch])) return [...packed].map((ch) => map[ch]).join("");
         return mark + (/^[A-Za-z0-9]$/.test(x) ? x : `(${x})`);
       };
       sup = (x) => toScript(SUP, "^", x);
@@ -12040,8 +12086,9 @@ ${contentTypesOverrides}
       BB2 = { R: "\u211D", N: "\u2115", Z: "\u2124", Q: "\u211A", C: "\u2102" };
       paren = (x) => {
         x = x.trim();
-        return /^[A-Za-z0-9À-ɏ.,°′'π∞]+$/.test(x) ? x : `(${x})`;
+        return /^[A-Za-z0-9À-ɏ.,°′'π∞α-ωΑ-Ω]+$/.test(x) || /^[√³⁴]?[A-Za-z]*\([^()]*\)$/.test(x) || /^√[A-Za-z0-9]+$/.test(x) ? x : `(${x})`;
       };
+      FUNCS3 = "arcsin|arccos|arctan|arccot|sinh|cosh|tanh|sin|cos|tan|cot|sec|csc|log|ln|lg|exp|max|min|det|gcd|lim|sup|inf";
       IMG_EXT = { "image/png": "png", "image/jpeg": "jpeg", "image/jpg": "jpeg", "image/gif": "gif", "image/x-emf": "emf", "image/emf": "emf", "image/x-wmf": "wmf", "image/wmf": "wmf" };
       RE_LABEL2 = /^\s*(?:C[âa]u|B[àa]i)\s*\d+\s*(?:[.:)\-–—]|\s)?\s*/iu;
       toLines = (text) => text.replace(/[ \t ]+/g, " ").split("\n").map((l) => l.trim()).filter(Boolean);
@@ -12217,7 +12264,8 @@ ${contentTypesOverrides}
     <div id="ex-norm-out"></div>
   </fieldset>
   <fieldset><legend>3. Tr\u1ED9n \u0111\u1EC1 &amp; b\u1EA3ng \u0111\xE1p \xE1n</legend>
-    <div class="grid3"><label class="field"><span>S\u1ED1 m\xE3 \u0111\u1EC1</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>M\xE3 \u0111\u1EC1 (c\xE1ch nhau d\u1EA5u ph\u1EA9y)</span><input type="text" id="ex-code" value="1001" placeholder="1001 ho\u1EB7c 1001, 1002, A1\u2026" spellcheck="false" title="M\u1ED9t s\u1ED1: m\xE3 \u0111\u1EC1 \u0111\u1EA7u, c\xE1c m\xE3 sau t\u0103ng d\u1EA7n (4 ch\u1EEF s\u1ED1). Nhi\u1EC1u m\xE3 c\xE1ch nhau d\u1EA5u ph\u1EA9y: d\xF9ng \u0111\xFAng c\xE1c m\xE3 \u0111\xF3, kh\xF4ng c\u1EA7n \u2018S\u1ED1 m\xE3 \u0111\u1EC1\u2019."></label><label class="field"><span>H\u1EA1t gi\u1ED1ng</span><input type="number" id="ex-seed" value="2026"></label></div>
+    <div class="grid2"><label class="field"><span>S\u1ED1 m\xE3 \u0111\u1EC1</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>H\u1EA1t gi\u1ED1ng</span><input type="number" id="ex-seed" value="2026"></label></div>
+    <label class="field"><span>M\xE3 \u0111\u1EC1 (c\xE1ch nhau d\u1EA5u ph\u1EA9y)</span><input type="text" id="ex-code" value="1001" placeholder="1001 ho\u1EB7c 1001, 1002, A1\u2026" spellcheck="false" title="M\u1ED9t s\u1ED1: m\xE3 \u0111\u1EC1 \u0111\u1EA7u, c\xE1c m\xE3 sau t\u0103ng d\u1EA7n (4 ch\u1EEF s\u1ED1). Nhi\u1EC1u m\xE3 c\xE1ch nhau d\u1EA5u ph\u1EA9y: d\xF9ng \u0111\xFAng c\xE1c m\xE3 \u0111\xF3, kh\xF4ng c\u1EA7n \u2018S\u1ED1 m\xE3 \u0111\u1EC1\u2019."></label>
     <label><input type="checkbox" id="ex-shq" checked> tr\u1ED9n th\u1EE9 t\u1EF1 c\xE2u trong t\u1EEBng ph\u1EA7n</label>
     <label><input type="checkbox" id="ex-sho" checked> tr\u1ED9n th\u1EE9 t\u1EF1 ph\u01B0\u01A1ng \xE1n A\u2013D (gi\u1EEF nguy\xEAn c\xE2u c\xF3 \u201Cc\u1EA3 A v\xE0 B\u2026\u201D, \u201Ct\u1EA5t c\u1EA3 c\xE1c \u0111\xE1p \xE1n\u2026\u201D)</label>
     <label><input type="checkbox" id="ex-shs"> tr\u1ED9n c\u1EA3 th\u1EE9 t\u1EF1 \xFD a) b) c) d) \u1EDF ph\u1EA7n \u0111\xFAng sai</label>
@@ -12262,6 +12310,7 @@ ${contentTypesOverrides}
     <div class="notice" style="margin: 6px 0;">
       T\u1EA1o file tr\xECnh chi\u1EBFu PPTX 16:9 t\u01B0\u01A1ng t\xE1c: b\u1EA5m v\xE0o ph\u01B0\u01A1ng \xE1n s\u1EBD hi\u1EC3n th\u1ECB ngay th\xF4ng b\xE1o <b>\u0110\xFAng</b> (ch\xFAc m\u1EEBng) ho\u1EB7c <b>Sai</b> (th\u1EED l\u1EA1i). Ch\u1EA1y tr\u1EF1c ti\u1EBFp tr\xEAn PowerPoint, Google Slides, Keynote v\xE0 CHITUP Slide.
     </div>
+    <label><input type="checkbox" id="ex-pptx-math" checked> c\xF4ng th\u1EE9c l\xE0 c\xF4ng th\u1EE9c th\u1EADt c\u1EE7a PowerPoint (s\u1EEDa \u0111\u01B0\u1EE3c; app kh\xF4ng h\u1ED7 tr\u1EE3 nh\u01B0 Keynote, Google Slides s\u1EBD hi\u1EC7n d\u1EA1ng ch\u1EEF)</label>
     <div class="btns"><button class="primary" id="ex-pptx-btn">T\u1EA3i file PowerPoint (PPTX)</button></div>
     <div id="ex-pptx-out"></div>
   </fieldset>`;
@@ -12619,7 +12668,7 @@ ${contentTypesOverrides}
     $2("ex-pptx-theme").addEventListener("change", swatch);
     swatch();
     $2("ex-pptx-btn").addEventListener("click", async () => {
-      var _a8, _b;
+      var _a8, _b, _c;
       const out = $2("ex-pptx-out");
       try {
         out.innerHTML = '<span class="muted">\u0110ang \u0111\u1ECDc t\xE0i li\u1EC7u v\xE0 t\u1EA1o file PowerPoint\u2026</span>';
@@ -12636,7 +12685,8 @@ ${contentTypesOverrides}
         const buf = buildExamPptx(src.model, src.analysis, src.answers, {
           title,
           theme: ((_b = $2("ex-pptx-theme")) == null ? void 0 : _b.value) || "blue",
-          pkg: src.pkg
+          pkg: src.pkg,
+          nativeMath: ((_c = $2("ex-pptx-math")) == null ? void 0 : _c.checked) !== false
         });
         const blob2 = new Blob([buf], { type: "application/vnd.openxmlformats-officedocument.presentationml.presentation" });
         const dl = document.createElement("a");

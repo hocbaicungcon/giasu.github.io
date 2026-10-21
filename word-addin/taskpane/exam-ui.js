@@ -41,7 +41,8 @@ export function mountExam(root, io) {
     <div id="ex-norm-out"></div>
   </fieldset>
   <fieldset><legend>3. Trộn đề &amp; bảng đáp án</legend>
-    <div class="grid3"><label class="field"><span>Số mã đề</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>Mã đề (cách nhau dấu phẩy)</span><input type="text" id="ex-code" value="1001" placeholder="1001 hoặc 1001, 1002, A1…" spellcheck="false" title="Một số: mã đề đầu, các mã sau tăng dần (4 chữ số). Nhiều mã cách nhau dấu phẩy: dùng đúng các mã đó, không cần ‘Số mã đề’."></label><label class="field"><span>Hạt giống</span><input type="number" id="ex-seed" value="2026"></label></div>
+    <div class="grid2"><label class="field"><span>Số mã đề</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>Hạt giống</span><input type="number" id="ex-seed" value="2026"></label></div>
+    <label class="field"><span>Mã đề (cách nhau dấu phẩy)</span><input type="text" id="ex-code" value="1001" placeholder="1001 hoặc 1001, 1002, A1…" spellcheck="false" title="Một số: mã đề đầu, các mã sau tăng dần (4 chữ số). Nhiều mã cách nhau dấu phẩy: dùng đúng các mã đó, không cần ‘Số mã đề’."></label>
     <label><input type="checkbox" id="ex-shq" checked> trộn thứ tự câu trong từng phần</label>
     <label><input type="checkbox" id="ex-sho" checked> trộn thứ tự phương án A–D (giữ nguyên câu có “cả A và B…”, “tất cả các đáp án…”)</label>
     <label><input type="checkbox" id="ex-shs"> trộn cả thứ tự ý a) b) c) d) ở phần đúng sai</label>
@@ -86,6 +87,7 @@ export function mountExam(root, io) {
     <div class="notice" style="margin: 6px 0;">
       Tạo file trình chiếu PPTX 16:9 tương tác: bấm vào phương án sẽ hiển thị ngay thông báo <b>Đúng</b> (chúc mừng) hoặc <b>Sai</b> (thử lại). Chạy trực tiếp trên PowerPoint, Google Slides, Keynote và CHITUP Slide.
     </div>
+    <label><input type="checkbox" id="ex-pptx-math" checked> công thức là công thức thật của PowerPoint (sửa được; app không hỗ trợ như Keynote, Google Slides sẽ hiện dạng chữ)</label>
     <div class="btns"><button class="primary" id="ex-pptx-btn">Tải file PowerPoint (PPTX)</button></div>
     <div id="ex-pptx-out"></div>
   </fieldset>`;
@@ -368,7 +370,8 @@ export function mountExam(root, io) {
       const buf = buildExamPptx(src.model, src.analysis, src.answers, {
         title,
         theme: $('ex-pptx-theme')?.value || 'blue',
-        pkg: src.pkg
+        pkg: src.pkg,
+        nativeMath: $('ex-pptx-math')?.checked !== false
       });
 
       const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
