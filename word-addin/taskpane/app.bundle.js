@@ -10184,7 +10184,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             const lines = /^\$\\begin\{array\}/.test(q.trim()) ? arrayLines(q.trim().replace(/^\$|\$$/g, "")) : null;
             const num4 = `<w:r><w:rPr><w:b/><w:color w:val="${acc}"/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">${k + 1}. </w:t></w:r>`;
             if (lines) {
-              const cw = Math.floor(W / cols) - 120, tab = Math.min(1500, cw - 200), pp = (rule) => `<w:p><w:pPr>${rule ? '<w:pBdr><w:bottom w:val="single" w:sz="8" w:space="1" w:color="222222"/></w:pBdr>' : ""}<w:tabs><w:tab w:val="right" w:pos="${tab}"/></w:tabs><w:spacing w:before="0" w:after="0"/><w:ind w:left="300" w:right="${Math.max(0, cw - tab)}"/></w:pPr>`;
+              const cw = Math.floor(W / cols) - 120, wide = Math.max(...lines.map((l) => l.text.replace(/[^0-9.,]/g, "").length), 2), tab = Math.min(cw - 200, 560 + wide * 200), pp = (rule) => `<w:p><w:pPr>${rule ? '<w:pBdr><w:bottom w:val="single" w:sz="8" w:space="1" w:color="222222"/></w:pBdr>' : ""}<w:tabs><w:tab w:val="right" w:pos="${tab}"/></w:tabs><w:spacing w:before="0" w:after="0"/><w:ind w:left="300" w:right="${Math.max(0, cw - tab)}"/></w:pPr>`;
               return para(num4, { after: 0 }) + lines.map((l) => {
                 const m = /^(\\times|\\div|[+\-−×:÷])\s*(.*)$/.exec(l.text.trim());
                 return `${pp(l.rule)}${m ? texToRuns(`$${m[1]}$`, ctx, f) : ""}<w:r><w:tab/></w:r>${texToRuns(m ? m[2] : l.text, ctx, f)}</w:p>`;
