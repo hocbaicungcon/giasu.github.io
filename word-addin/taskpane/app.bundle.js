@@ -3332,6 +3332,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function answersOf(model, analysis) {
     const rows = [];
+    const tfMarks = (q) => q.statements.map((s) => {
+      const b = model.blocks[s.block];
+      const label = b.children.find((c) => isRun(c) && /[a-d]\s*\)/.test(runText(c)));
+      return label ? Boolean(labelMark(label)) : false;
+    });
+    const paperMarksTf = analysis.parts.some((pt) => pt.kind === "tf" && pt.questions.some((q) => tfMarks(q).some(Boolean)));
     for (const part of analysis.parts) {
       for (const q of part.questions) {
         const row = { part: part.title, kind: part.kind, number: q.number };
@@ -3344,13 +3350,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             row.multiple = false;
           }
         } else if (part.kind === "tf") {
-          const marks = q.statements.map((s) => {
-            const b = model.blocks[s.block];
-            const label = b.children.find((c) => isRun(c) && /[a-d]\s*\)/.test(runText(c)));
-            return label ? Boolean(labelMark(label)) : false;
-          });
-          row.value = marks.some(Boolean) ? q.statements.map((s, i) => `${s.letter}${marks[i] ? "\u0110" : "S"}`).join(" ") : null;
-          row.tf = marks.some(Boolean) ? marks.map((m) => m ? "\u0110" : "S") : null;
+          const marks = tfMarks(q);
+          const none = !marks.some(Boolean) && paperMarksTf;
+          row.value = marks.some(Boolean) || none ? q.statements.map((s, i) => `${s.letter}${marks[i] ? "\u0110" : "S"}`).join(" ") : null;
+          row.tf = marks.some(Boolean) || none ? marks.map((m) => m ? "\u0110" : "S") : null;
         } else if (part.kind === "short") {
           row.value = q.answer ? q.answer.text : null;
         }

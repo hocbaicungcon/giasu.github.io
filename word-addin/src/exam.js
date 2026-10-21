@@ -328,6 +328,12 @@ function buildSections(model, qs) {
 // ---------------------------------------------------------------- answers
 export function answersOf(model, analysis) {
   const rows = [];
+  const tfMarks = (q) => q.statements.map((s) => {
+    const b = model.blocks[s.block];
+    const label = b.children.find((c) => isRun(c) && /[a-d]\s*\)/.test(runText(c)));
+    return label ? Boolean(labelMark(label)) : false;
+  });
+  const paperMarksTf = analysis.parts.some((pt) => pt.kind === 'tf' && pt.questions.some((q) => tfMarks(q).some(Boolean)));
   for (const part of analysis.parts) {
     for (const q of part.questions) {
       const row = { part: part.title, kind: part.kind, number: q.number };
@@ -337,13 +343,11 @@ export function answersOf(model, analysis) {
         row.multiple = marked.length > 1;
         if (marked.length > 1 && marked.length === (q.options || []).length) { row.value = null; row.multiple = false; }   // every option "marked": underlined words (pronunciation), not an answer key
       } else if (part.kind === 'tf') {
-        const marks = q.statements.map((s) => {
-          const b = model.blocks[s.block];
-          const label = b.children.find((c) => isRun(c) && /[a-d]\s*\)/.test(runText(c)));
-          return label ? Boolean(labelMark(label)) : false;
-        });
-        row.value = marks.some(Boolean) ? q.statements.map((s, i) => `${s.letter}${marks[i] ? 'Đ' : 'S'}`).join(' ') : null;
-        row.tf = marks.some(Boolean) ? marks.map((m) => (m ? 'Đ' : 'S')) : null;   // per statement a..d
+        const marks = tfMarks(q);
+        // all four marked = ĐĐĐĐ; none marked = SSSS, but only once some other statement set in the paper is marked (else the paper simply has no key)
+        const none = !marks.some(Boolean) && paperMarksTf;
+        row.value = marks.some(Boolean) || none ? q.statements.map((s, i) => `${s.letter}${marks[i] ? 'Đ' : 'S'}`).join(' ') : null;
+        row.tf = marks.some(Boolean) || none ? marks.map((m) => (m ? 'Đ' : 'S')) : null;   // per statement a..d
       } else if (part.kind === 'short') {
         row.value = q.answer ? q.answer.text : null;
       }
