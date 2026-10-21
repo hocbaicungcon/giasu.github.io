@@ -137,6 +137,7 @@ class Parser {
       return this.run(ch === '-' ? '\u2212' : ch);   // typeset minus, as Word does
     }
     const m = /^\\([A-Za-z]+|[\s\S])/.exec(this.s.slice(this.i));
+    if (!m) { this.i++; return { k: 'group', nodes: [] }; }   // a lone trailing backslash
     const name = m[1];
     this.i += m[0].length;
     return this.command(name);

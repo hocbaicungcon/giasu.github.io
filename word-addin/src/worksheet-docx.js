@@ -58,8 +58,21 @@ export function tikzRun(code, optStr, ctx) {
 const BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
 const BLANK_SPLIT = /(\\boxed\{\\phantom\{[^}]*\}\})/;
 const blankRun = (ctx, chars = 2) => {
-  const k = Math.max(0.6, (ctx.fs || 16) / 16), wide = chars > 1 ? 1 : 0.78;
-  return sceneRun(tikzToScene(`\\draw[line width=0.8pt] (0,0) rectangle (${(0.72 * wide * k).toFixed(2)},${(0.62 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, 'Ô trống');
+  const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.05, wPt = hPt * (chars > 1 ? 1.7 : 1), cm = (v) => (v / 28.35).toFixed(3);
+  const sc = tikzToScene(`\\draw[line width=0.6pt] (0,0) rectangle (${cm(wPt)},${cm(hPt)});`, { scale: 1, fs: ctx.fs || 16 });
+  const down = -Math.round(2 * (hPt / 2 - 0.2 * pt));   // half-points: lower the box so its middle is at the middle of the digits
+  return sceneRun(sc, ctx, 'Ô trống').replace('<w:rPr><w:noProof/></w:rPr>', `<w:rPr><w:noProof/><w:position w:val="${down}"/></w:rPr>`).replace('distL="0" distR="0"', 'distL="36000" distR="36000"');
+};
+// primary-school arithmetic (digits, + - × ÷ = < >, brackets) is plain text, not an equation: easier to edit and lines up with the box
+const PLAIN_MATH = /^(?:[0-9+\-=<>().,:;?\s]|\\(?:times|div|cdot|ldots|dots|leq?|geq?|neq|ne|quad|qquad|[ ,;:])|[{}])*$/;
+const PLAIN_SYM = { times: '×', div: ':', cdot: '·', ldots: '…', dots: '…', le: '≤', leq: '≤', ge: '≥', geq: '≥', ne: '≠', neq: '≠' };
+const plainMath = (tex) => tex.replace(/\\([a-z]+)/g, (_, n) => (n === 'quad' || n === 'qquad' ? '  ' : PLAIN_SYM[n] || '')).replace(/\\[ ,;:]/g, ' ').replace(/[{}]/g, '').replace(/-/g, '\u2212');
+// the generator's shapes (\icShapecircle ...) as Word drawings, so "khoanh vào các hình ..." has something to circle
+const SHAPE_TIKZ = {
+  shapecircle: (f) => `\\filldraw[fill=${f || 'blue!60'},line width=0.8pt] (0,0) circle (0.34);`,
+  shapesquare: (f) => `\\filldraw[fill=${f || 'red!65'},line width=0.8pt] (-0.3,-0.3) rectangle (0.3,0.3);`,
+  shapetriangle: (f) => `\\filldraw[fill=${f || 'green!60'},line width=0.8pt] (0,0.38) -- (-0.42,-0.3) -- (0.42,-0.3) -- cycle;`,
+  shaperectangle: (f) => `\\filldraw[fill=${f || 'yellow!85'},line width=0.8pt] (-0.44,-0.24) rectangle (0.44,0.24);`,
 };
 let picId = 5000;
 /** A Twemoji picture (PNG prepared by the caller: ctx.pics.get(cp) = {rid, pt}) inline in the text, else the emoji character. */
@@ -107,7 +120,7 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
         tex.split(BLANK_SPLIT).forEach((part) => {
           const b = BLANK_RE.test(part) && /^\\boxed\{\\phantom\{([^}]*)\}\}$/.exec(part);
           if (b) out += blankRun(ctx, b[1].length);
-          else if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
+          else if (PLAIN_MATH.test(part)) { flush(); out += run(plainMath(part)); } else if (part.replace(/\\[ ,;:]/g, '').trim()) out += ctx.math ? ctx.math(part.replace(/^(\\[ ,;:])+|(\\[ ,;:])+$/g, ''), fmt) : latexToOmml(part.replace(/^(\\[ ,;:])+|(\\[ ,;:])+$/g, ''));
         });
       } catch { out += run(tex.replace(/\\[a-zA-Z]+/g, '').replace(/[{}]/g, '')); }
       i = j + 1; continue;
@@ -130,6 +143,9 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
         const id = arg(); flush();
         const cp = /^ws-([0-9a-f-]+)$/i.exec(id);
         if (cp) out += run(String.fromCodePoint(...cp[1].split('-').map((h) => parseInt(h, 16))), { ...fmt, sz: fmt.emoji || 36 }, EMOJI_FONT);
+      } else if (/^icO?Shape/.test(name)) {
+        const id = name.replace(/^icO?/, '').toLowerCase(); flush();
+        out += SHAPE_TIKZ[id] ? tikzRun(SHAPE_TIKZ[id](/^icO/.test(name) ? 'white' : ''), `scale=${parseFloat(opt) || 1}`, ctx) : '';
       } else if (/^icO/.test(name)) { flush(); out += run(emojiOf(name.slice(3).toLowerCase(), cps), { ...fmt, sz: fmt.emoji || 36 }, EMOJI_FONT); } else if (name === 'ldots' || name === 'dots' || name === 'cdots') buf += '…';
       else if (name === 'begin' && /^\{tikzpicture\}/.test(s.slice(i))) {
         flush();
@@ -208,7 +224,7 @@ function exHeading(style, n, instrRuns, acc, sz) {
   if (style === 'bar') return para(label(`Bài ${n}.`, acc) + gap + instrRuns, { ...base, shade: tint(acc, 0.92), pbdr: sbdr('left', 36, acc, 6) });
   if (style === 'line') return para(label(`Bài ${n}.`, acc) + gap + instrRuns, { ...base, pbdr: sbdr('bottom', 8, acc, 2) });
   if (style === 'plain') return para(label(`Bài ${n}.`, acc) + gap + instrRuns, base);
-  return para(`<w:r><w:rPr><w:rFonts w:ascii="Segoe UI Symbol" w:hAnsi="Segoe UI Symbol"/><w:color w:val="${acc}"/><w:sz w:val="${sz + 8}"/></w:rPr><w:t xml:space="preserve">${n <= 10 ? CIRCLED[n - 1] : `${n}.`}</w:t></w:r>${gap}${instrRuns}`, base);
+  return para(`<w:r><w:rPr><w:rFonts w:ascii="Segoe UI Symbol" w:hAnsi="Segoe UI Symbol"/><w:color w:val="${acc}"/><w:sz w:val="${sz + 8}"/></w:rPr><w:t xml:space="preserve">${n <= 10 ? CIRCLED[n - 1] : [...String(n)].map((d) => (d === '0' ? '⓿' : CIRCLED[d - 1])).join('')}</w:t></w:r>${gap}${instrRuns}`, base);
 }
 
 function titleBlock(style, heading, grade, acc, sz) {

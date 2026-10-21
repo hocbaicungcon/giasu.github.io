@@ -287,7 +287,7 @@ test('Worksheet: generated sheets become well-formed Word body with maths, answe
   }
   const r = W.generate({ subject: 'math', grade: 2, color: 'bw', seed: 3, size: 'short', topics: ['calc', 'vertical'], answers: false });
   const { body } = worksheetBody(r, { subject: 'math', grade: 2, cps, answers: false });
-  assert.ok(/<m:oMath>/.test(body) && /w:bottom w:val="single"/.test(body) && !/ĐÁP ÁN/.test(body));   // equations, vertical-sum rule line
+  assert.ok(/<w:t[^>]*>[^<]*[=×]/.test(body) && /w:bottom w:val="single"/.test(body) && !/ĐÁP ÁN/.test(body));   // equations, vertical-sum rule line
   // body-only topics (matching, grids, clocks, fraction pictures...) are converted too: tables, TikZ-subset drawings
   const rb = W.generate({ subject: 'math', grade: 2, color: 'bw', seed: 3, size: 'short', topics: ['matchexpr', 'gridcalc', 'arrowchain', 'time'], answers: true });
   const wb = worksheetBody(rb, { subject: 'math', grade: 2, cps, answers: true });

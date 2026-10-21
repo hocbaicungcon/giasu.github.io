@@ -1005,6 +1005,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             return this.run(ch === "-" ? "\u2212" : ch);
           }
           const m = /^\\([A-Za-z]+|[\s\S])/.exec(this.s.slice(this.i));
+          if (!m) {
+            this.i++;
+            return { k: "group", nodes: [] };
+          }
           const name = m[1];
           this.i += m[0].length;
           return this.command(name);
@@ -9651,7 +9655,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           tex.split(BLANK_SPLIT).forEach((part) => {
             const b = BLANK_RE.test(part) && /^\\boxed\{\\phantom\{([^}]*)\}\}$/.exec(part);
             if (b) out += blankRun(ctx, b[1].length);
-            else if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
+            else if (PLAIN_MATH.test(part)) {
+              flush();
+              out += run4(plainMath(part));
+            } else if (part.replace(/\\[ ,;:]/g, "").trim()) out += ctx.math ? ctx.math(part.replace(/^(\\[ ,;:])+|(\\[ ,;:])+$/g, ""), fmt) : latexToOmml(part.replace(/^(\\[ ,;:])+|(\\[ ,;:])+$/g, ""));
           });
         } catch (e3) {
           out += run4(tex.replace(/\\[a-zA-Z]+/g, "").replace(/[{}]/g, ""));
@@ -9735,6 +9742,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           flush();
           const cp2 = /^ws-([0-9a-f-]+)$/i.exec(id);
           if (cp2) out += run4(String.fromCodePoint(...cp2[1].split("-").map((h) => parseInt(h, 16))), __spreadProps(__spreadValues({}, fmt), { sz: fmt.emoji || 36 }), EMOJI_FONT);
+        } else if (/^icO?Shape/.test(name)) {
+          const id = name.replace(/^icO?/, "").toLowerCase();
+          flush();
+          out += SHAPE_TIKZ[id] ? tikzRun(SHAPE_TIKZ[id](/^icO/.test(name) ? "white" : ""), `scale=${parseFloat(opt) || 1}`, ctx) : "";
         } else if (/^icO/.test(name)) {
           flush();
           out += run4(emojiOf(name.slice(3).toLowerCase(), cps), __spreadProps(__spreadValues({}, fmt), { sz: fmt.emoji || 36 }), EMOJI_FONT);
@@ -9874,7 +9885,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (style === "bar") return para(label(`B\xE0i ${n}.`, acc) + gap + instrRuns, __spreadProps(__spreadValues({}, base), { shade: tint(acc, 0.92), pbdr: sbdr("left", 36, acc, 6) }));
     if (style === "line") return para(label(`B\xE0i ${n}.`, acc) + gap + instrRuns, __spreadProps(__spreadValues({}, base), { pbdr: sbdr("bottom", 8, acc, 2) }));
     if (style === "plain") return para(label(`B\xE0i ${n}.`, acc) + gap + instrRuns, base);
-    return para(`<w:r><w:rPr><w:rFonts w:ascii="Segoe UI Symbol" w:hAnsi="Segoe UI Symbol"/><w:color w:val="${acc}"/><w:sz w:val="${sz + 8}"/></w:rPr><w:t xml:space="preserve">${n <= 10 ? CIRCLED[n - 1] : `${n}.`}</w:t></w:r>${gap}${instrRuns}`, base);
+    return para(`<w:r><w:rPr><w:rFonts w:ascii="Segoe UI Symbol" w:hAnsi="Segoe UI Symbol"/><w:color w:val="${acc}"/><w:sz w:val="${sz + 8}"/></w:rPr><w:t xml:space="preserve">${n <= 10 ? CIRCLED[n - 1] : [...String(n)].map((d) => d === "0" ? "\u24FF" : CIRCLED[d - 1]).join("")}</w:t></w:r>${gap}${instrRuns}`, base);
   }
   function titleBlock(style, heading, grade, acc, sz) {
     const run4 = (color, size) => `<w:r><w:rPr><w:b/><w:color w:val="${color}"/><w:sz w:val="${size}"/></w:rPr><w:t>${esc6(heading)}</w:t></w:r>`;
@@ -9969,7 +9980,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const media = images.map((im) => `<pkg:part pkg:name="/word/media/${im.rid}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b643(im.png)}</pkg:binaryData></pkg:part>`).join("");
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?mso-application progid="Word.Document"?><pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${NS3}><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part>${images.length ? `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${rels}</Relationships></pkg:xmlData></pkg:part>` : ""}${media}</pkg:package>`;
   }
-  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
+  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, PLAIN_MATH, PLAIN_SYM, plainMath, SHAPE_TIKZ, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
   var init_worksheet_docx = __esm({
     "src/worksheet-docx.js"() {
       init_latex2omml();
@@ -9983,8 +9994,19 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
       BLANK_SPLIT = /(\\boxed\{\\phantom\{[^}]*\}\})/;
       blankRun = (ctx, chars = 2) => {
-        const k = Math.max(0.6, (ctx.fs || 16) / 16), wide = chars > 1 ? 1 : 0.78;
-        return sceneRun(tikzToScene(`\\draw[line width=0.8pt] (0,0) rectangle (${(0.72 * wide * k).toFixed(2)},${(0.62 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, "\xD4 tr\u1ED1ng");
+        const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.05, wPt = hPt * (chars > 1 ? 1.7 : 1), cm = (v) => (v / 28.35).toFixed(3);
+        const sc = tikzToScene(`\\draw[line width=0.6pt] (0,0) rectangle (${cm(wPt)},${cm(hPt)});`, { scale: 1, fs: ctx.fs || 16 });
+        const down = -Math.round(2 * (hPt / 2 - 0.2 * pt));
+        return sceneRun(sc, ctx, "\xD4 tr\u1ED1ng").replace("<w:rPr><w:noProof/></w:rPr>", `<w:rPr><w:noProof/><w:position w:val="${down}"/></w:rPr>`).replace('distL="0" distR="0"', 'distL="36000" distR="36000"');
+      };
+      PLAIN_MATH = /^(?:[0-9+\-=<>().,:;?\s]|\\(?:times|div|cdot|ldots|dots|leq?|geq?|neq|ne|quad|qquad|[ ,;:])|[{}])*$/;
+      PLAIN_SYM = { times: "\xD7", div: ":", cdot: "\xB7", ldots: "\u2026", dots: "\u2026", le: "\u2264", leq: "\u2264", ge: "\u2265", geq: "\u2265", ne: "\u2260", neq: "\u2260" };
+      plainMath = (tex) => tex.replace(/\\([a-z]+)/g, (_, n) => n === "quad" || n === "qquad" ? "  " : PLAIN_SYM[n] || "").replace(/\\[ ,;:]/g, " ").replace(/[{}]/g, "").replace(/-/g, "\u2212");
+      SHAPE_TIKZ = {
+        shapecircle: (f) => `\\filldraw[fill=${f || "blue!60"},line width=0.8pt] (0,0) circle (0.34);`,
+        shapesquare: (f) => `\\filldraw[fill=${f || "red!65"},line width=0.8pt] (-0.3,-0.3) rectangle (0.3,0.3);`,
+        shapetriangle: (f) => `\\filldraw[fill=${f || "green!60"},line width=0.8pt] (0,0.38) -- (-0.42,-0.3) -- (0.42,-0.3) -- cycle;`,
+        shaperectangle: (f) => `\\filldraw[fill=${f || "yellow!85"},line width=0.8pt] (-0.44,-0.24) rectangle (0.44,0.24);`
       };
       para = (inner, o = {}) => {
         var _a8, _b;
