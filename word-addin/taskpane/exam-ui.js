@@ -187,29 +187,33 @@ export function mountExam(root, io) {
     const out = $('ex-shuffle-out');
     try { await io.replaceSelection(simplePackage(examHeaderXml(readForm(), codeList(1)[0]))); out.innerHTML = '<span class="ok">Đã chèn khối tiêu đề tại con trỏ.</span>'; } catch (e) { fail(out, e); }
   });
-  /** The paper of one version with the chosen title block and closing line. */
-  const decorate = (pkg, code) => {
-    let out = pkg;
-    if ($('ex-h-title').checked) out = prependToBody(out, examHeaderXml(readForm(), code));
-    if ($('ex-h-end').checked) out = appendToBody(out, examEndXml());
-    return out;
-  };
-
   $('ex-shuffle').addEventListener('click', async () => {
     const out = $('ex-shuffle-out'), bar = $('ex-progress');
+    const btn = $('ex-shuffle');
+    if (btn.disabled) return;
+    btn.disabled = true;
     try {
       const prep = await preparedBody(), pkg = prep.pkg;
       const codes = codeList(Number($('ex-n').value)), n = codes.length, seed = Number($('ex-seed').value);
       if (new Set(codes).size !== n) throw new Error('Các mã đề bị trùng nhau: hãy nhập mỗi mã một lần.');
       const target = $('ex-target').value;
+      // Keep every version in this batch consistent while the pane yields to UI edits.
+      const shuffleOptions = options(), form = readForm();
+      const title = $('ex-h-title').checked, end = $('ex-h-end').checked;
+      const footer = $('ex-h-footer').checked, withKey = $('ex-withkey').checked;
+      const decorate = (pkg, code) => {
+        let paper = title ? prependToBody(pkg, examHeaderXml(form, code)) : pkg;
+        return end ? appendToBody(paper, examEndXml()) : paper;
+      };
       const origA = analyze(parseBody(pkg));
       const sectionModes = sectionsUi(origA), qWord = origA.english ? 'Question' : 'Câu';
       const versions = [];
       for (let i = 0; i < n; i++) {
         const code = codes[i];
-        const r = shuffleVersion(pkg, { ...options(), seed: seed + i * 7919, code, sectionModes });
+        const r = shuffleVersion(pkg, { ...shuffleOptions, seed: seed + i * 7919, code, sectionModes });
         versions.push({ code, ...r });
         bar.hidden = false; bar.max = n; bar.value = i + 1;
+        await new Promise((resolve) => setTimeout(resolve, 0)); // let Word's pane paint progress between versions
       }
       const table = answerTable(versions.map((v) => ({ code: v.code, answers: v.answers })));
       lastCsv = table.csv;
@@ -228,15 +232,15 @@ export function mountExam(root, io) {
         let opened = 0, fellBack = false;
         for (const v of versions) {
           const paper = decorate(v.pkg, v.code);
-          const finalPkg = $('ex-withkey').checked ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`, qWord)) : paper;
-          try { await io.openAsNewDocument(finalPkg, { footerPkg: $('ex-h-footer').checked ? simplePackage(examFooterXml(v.code)) : null }); opened++; } catch (e) { await io.insertAtEnd(finalPkg); fellBack = true; }
+          const finalPkg = withKey ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`, qWord)) : paper;
+          try { await io.openAsNewDocument(finalPkg, { footerPkg: footer ? simplePackage(examFooterXml(v.code)) : null }); opened++; } catch (e) { await io.insertAtEnd(finalPkg); fellBack = true; }
         }
         note = fellBack ? `Word này không cho tạo tài liệu mới từ add-in: đã chèn ${versions.length - opened} đề vào cuối tài liệu hiện tại (mở ${opened} tài liệu mới).` : `Đã mở ${versions.length} tài liệu mới.`;
       } else if (target === 'append') {
         for (const v of versions) await io.insertAtEnd(decorate(v.pkg, v.code));
         note = `Đã chèn ${versions.length} đề vào cuối tài liệu.`;
       }
-      if (target !== 'new' && ($('ex-withkey').checked || target === 'none')) {   // one table for every code: first column = question, one column per code
+      if (target !== 'new' && (withKey || target === 'none')) {   // one table for every code: first column = question, one column per code
         await io.insertAtEnd(wrap(answerTableXml(table.groups, 'BẢNG ĐÁP ÁN CÁC MÃ ĐỀ', qWord)));
         note += ' Đã chèn bảng đáp án chung (mỗi mã đề một cột).';
       }
@@ -250,7 +254,7 @@ export function mountExam(root, io) {
       out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + prepNote(prep) + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>${prep.changed ? '' : unansweredChips}` : '') +
         (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : '') +
         answerPreview(table.groups, qWord);
-    } catch (e) { fail(out, e); }
+    } catch (e) { fail(out, e); } finally { btn.disabled = false; }
   });
 
   /** Preview of the combined key: rows = questions, columns = codes (multiple-choice part only). */

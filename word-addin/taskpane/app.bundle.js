@@ -2260,7 +2260,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (has3(tables_default.SYMBOLS, String(value))) return tables_default.SYMBOLS[String(value)];
     if (has3(tables_default.ASCII_ESCAPES, char)) return tables_default.ASCII_ESCAPES[char];
     if (value < 128) return char;
-    if (value > 127 && isAlpha(char)) return `${BS2}text{${char}}`;
+    if (value > 127 && (isAlpha(char) || char === "\u2111")) return `${BS2}text{${char}}`;
     return fail2(`unknown character U+${hex4(value)}`);
   }
   function classify(node3) {
@@ -5084,7 +5084,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (!fontCache.has(name)) fontCache.set(name, fetch(FONT_URL(name)).then((r) => {
       if (!r.ok) throw new Error("font " + name);
       return r.arrayBuffer();
-    }).then((b) => parseTtf(new Uint8Array(b))));
+    }).then((b) => parseTtf(new Uint8Array(b))).catch((e3) => {
+      fontCache.delete(name);
+      throw e3;
+    }));
     return fontCache.get(name);
   }
   function fontName(cs) {
@@ -10616,15 +10619,23 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   async function loadSympy(onStatus = () => {
   }) {
     if (engine) return engine;
-    onStatus("\u0110ang t\u1EA3i Python (Pyodide)\u2026 l\u1EA7n \u0111\u1EA7u c\xF3 th\u1EC3 m\u1EA5t 1\u20132 ph\xFAt");
-    if (typeof loadPyodide === "undefined") await script2(PYODIDE + "pyodide.js");
-    const py = await loadPyodide({ indexURL: PYODIDE });
-    onStatus("\u0110ang t\u1EA3i SymPy (kho\u1EA3ng 20 MB, ch\u1EC9 l\u1EA7n \u0111\u1EA7u)\u2026");
-    await py.loadPackage(["sympy"]);
-    onStatus("\u0110ang kh\u1EDFi t\u1EA1o\u2026");
-    py.runPython(PY_SOURCE);
-    engine = py;
-    return py;
+    if (enginePromise) return enginePromise;
+    enginePromise = (async () => {
+      onStatus("\u0110ang t\u1EA3i Python (Pyodide)\u2026 l\u1EA7n \u0111\u1EA7u c\xF3 th\u1EC3 m\u1EA5t 1\u20132 ph\xFAt");
+      if (typeof loadPyodide === "undefined") await script2(PYODIDE + "pyodide.js");
+      const py = await loadPyodide({ indexURL: PYODIDE });
+      onStatus("\u0110ang t\u1EA3i SymPy (kho\u1EA3ng 20 MB, ch\u1EC9 l\u1EA7n \u0111\u1EA7u)\u2026");
+      await py.loadPackage(["sympy"]);
+      onStatus("\u0110ang kh\u1EDFi t\u1EA1o\u2026");
+      py.runPython(PY_SOURCE);
+      engine = py;
+      return py;
+    })();
+    try {
+      return await enginePromise;
+    } finally {
+      enginePromise = null;
+    }
   }
   async function calc(op, args, onStatus) {
     const py = await loadSympy(onStatus);
@@ -10632,7 +10643,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const out = py.runPython("run(_args)");
     return JSON.parse(out);
   }
-  var CalcError, GREEK2, FUNC, CHARS2, wrap, PYODIDE, engine, script2, PY_SOURCE;
+  var CalcError, GREEK2, FUNC, CHARS2, wrap, PYODIDE, engine, enginePromise, script2, PY_SOURCE;
   var init_sympy_bridge = __esm({
     "src/sympy-bridge.js"() {
       init_latex2omml();
@@ -10644,11 +10655,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       wrap = (s) => /^[A-Za-z0-9_.]+$/.test(s) ? s : `(${s})`;
       PYODIDE = "https://cdn.jsdelivr.net/pyodide/v0.26.4/full/";
       engine = null;
+      enginePromise = null;
       script2 = (src) => new Promise((res, rej) => {
         const s = document.createElement("script");
         s.src = src;
         s.onload = res;
-        s.onerror = () => rej(new Error("Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c " + src));
+        s.onerror = () => {
+          s.remove();
+          rej(new Error("Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c " + src));
+        };
         document.head.appendChild(s);
       });
       PY_SOURCE = `
@@ -10810,6 +10825,7 @@ def run(raw):
     const val2 = (id) => (root.querySelector("#" + id) || {}).value;
     async function run4() {
       const op = $2("c-op").value, btn = $2("c-run");
+      if (btn.disabled) return;
       btn.disabled = true;
       try {
         const lines = $2("c-expr").value.split("\n").map((l) => normalizeInput(l)).join("\n");
@@ -10821,6 +10837,7 @@ def run(raw):
         $2("c-status").textContent = "";
         if (r.error) throw new CalcError(r.error);
         results.unshift({ op, input: $2("c-expr").value.trim(), r });
+        results.length = Math.min(results.length, 8);
         render();
       } catch (e3) {
         $2("c-status").innerHTML = `<span class="bad">${esc8(e3.message)}</span>`;
@@ -12808,29 +12825,34 @@ ${contentTypesOverrides}
         fail3(out, e3);
       }
     });
-    const decorate = (pkg, code) => {
-      let out = pkg;
-      if ($2("ex-h-title").checked) out = prependToBody(out, examHeaderXml(readForm(), code));
-      if ($2("ex-h-end").checked) out = appendToBody(out, examEndXml());
-      return out;
-    };
     $2("ex-shuffle").addEventListener("click", async () => {
       const out = $2("ex-shuffle-out"), bar = $2("ex-progress");
+      const btn = $2("ex-shuffle");
+      if (btn.disabled) return;
+      btn.disabled = true;
       try {
         const prep = await preparedBody(), pkg = prep.pkg;
         const codes = codeList(Number($2("ex-n").value)), n = codes.length, seed = Number($2("ex-seed").value);
         if (new Set(codes).size !== n) throw new Error("C\xE1c m\xE3 \u0111\u1EC1 b\u1ECB tr\xF9ng nhau: h\xE3y nh\u1EADp m\u1ED7i m\xE3 m\u1ED9t l\u1EA7n.");
         const target = $2("ex-target").value;
+        const shuffleOptions = options(), form = readForm();
+        const title = $2("ex-h-title").checked, end = $2("ex-h-end").checked;
+        const footer = $2("ex-h-footer").checked, withKey = $2("ex-withkey").checked;
+        const decorate = (pkg2, code) => {
+          let paper = title ? prependToBody(pkg2, examHeaderXml(form, code)) : pkg2;
+          return end ? appendToBody(paper, examEndXml()) : paper;
+        };
         const origA = analyze(parseBody(pkg));
         const sectionModes = sectionsUi(origA), qWord = origA.english ? "Question" : "C\xE2u";
         const versions = [];
         for (let i = 0; i < n; i++) {
           const code = codes[i];
-          const r = shuffleVersion(pkg, __spreadProps(__spreadValues({}, options()), { seed: seed + i * 7919, code, sectionModes }));
+          const r = shuffleVersion(pkg, __spreadProps(__spreadValues({}, shuffleOptions), { seed: seed + i * 7919, code, sectionModes }));
           versions.push(__spreadValues({ code }, r));
           bar.hidden = false;
           bar.max = n;
           bar.value = i + 1;
+          await new Promise((resolve2) => setTimeout(resolve2, 0));
         }
         const table3 = answerTable(versions.map((v) => ({ code: v.code, answers: v.answers })));
         lastCsv = table3.csv;
@@ -12848,9 +12870,9 @@ ${contentTypesOverrides}
           let opened = 0, fellBack = false;
           for (const v of versions) {
             const paper = decorate(v.pkg, v.code);
-            const finalPkg = $2("ex-withkey").checked ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `\u0110\xC1P \xC1N \u2014 M\xC3 \u0110\u1EC0 ${v.code}`, qWord)) : paper;
+            const finalPkg = withKey ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `\u0110\xC1P \xC1N \u2014 M\xC3 \u0110\u1EC0 ${v.code}`, qWord)) : paper;
             try {
-              await io.openAsNewDocument(finalPkg, { footerPkg: $2("ex-h-footer").checked ? simplePackage(examFooterXml(v.code)) : null });
+              await io.openAsNewDocument(finalPkg, { footerPkg: footer ? simplePackage(examFooterXml(v.code)) : null });
               opened++;
             } catch (e3) {
               await io.insertAtEnd(finalPkg);
@@ -12862,7 +12884,7 @@ ${contentTypesOverrides}
           for (const v of versions) await io.insertAtEnd(decorate(v.pkg, v.code));
           note = `\u0110\xE3 ch\xE8n ${versions.length} \u0111\u1EC1 v\xE0o cu\u1ED1i t\xE0i li\u1EC7u.`;
         }
-        if (target !== "new" && ($2("ex-withkey").checked || target === "none")) {
+        if (target !== "new" && (withKey || target === "none")) {
           await io.insertAtEnd(wrap2(answerTableXml(table3.groups, "B\u1EA2NG \u0110\xC1P \xC1N C\xC1C M\xC3 \u0110\u1EC0", qWord)));
           note += " \u0110\xE3 ch\xE8n b\u1EA3ng \u0111\xE1p \xE1n chung (m\u1ED7i m\xE3 \u0111\u1EC1 m\u1ED9t c\u1ED9t).";
         }
@@ -12877,6 +12899,8 @@ ${contentTypesOverrides}
         out.innerHTML = `<p class="ok"><b>${versions.length} m\xE3 \u0111\u1EC1</b> \u0111\xE3 t\u1EA1o. ${esc12(note)}</p>` + prepNote(prep) + (unknown ? `<p class="warn">${unknown} c\xE2u ch\u01B0a nh\u1EADn \u0111\u01B0\u1EE3c \u0111\xE1p \xE1n (nh\xE3n \u0111\xFAng ch\u01B0a \u0111\u01B0\u1EE3c g\u1EA1ch ch\xE2n / t\xF4 \u0111\u1ECF): b\u1EA3ng \u0111\xE1p \xE1n ghi \u201C?\u201D.</p>${prep.changed ? "" : unansweredChips}` : "") + (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc12(w)}</li>`).join("")}</ul>` : "") + answerPreview(table3.groups, qWord);
       } catch (e3) {
         fail3(out, e3);
+      } finally {
+        btn.disabled = false;
       }
     });
     function answerPreview(groups, word2) {
@@ -13903,6 +13927,9 @@ ${contentTypesOverrides}
       MF.plonkSound = null;
       MF.keypressSound = null;
       return MF;
+    }).catch((e3) => {
+      libPromise = null;
+      throw e3;
     });
     return libPromise;
   }
@@ -13919,6 +13946,7 @@ ${contentTypesOverrides}
     async function ensure() {
       if (mf) return mf;
       const MF = await loadMathlive();
+      if (mf) return mf;
       mf = new MF();
       mf.setAttribute("math-virtual-keyboard-policy", "manual");
       mf.setAttribute("aria-label", "Nh\u1EADp c\xF4ng th\u1EE9c tr\u1EF1c quan");
@@ -13945,6 +13973,7 @@ ${contentTypesOverrides}
         textarea.hidden = v;
         if (v) {
           await ensure();
+          if (!on) return;
           mf.setValue(textarea.value, { silenceNotifications: true });
           mf.focus();
         }
@@ -13980,6 +14009,7 @@ ${contentTypesOverrides}
       const e3 = scan2.doc.indexOf("</w:p>", s);
       return e3 < 0 ? scan2.doc.length : e3 + 6;
     });
+    const excerpts = /* @__PURE__ */ new Map();
     const list3 = scan2.equations.map((eq, n) => {
       let lo = 0, hi = starts.length - 1, para2 = -1;
       while (lo <= hi) {
@@ -13989,7 +14019,8 @@ ${contentTypesOverrides}
           lo = mid3 + 1;
         } else hi = mid3 - 1;
       }
-      const excerpt = para2 >= 0 ? paraText(scan2.doc.slice(starts[para2], ends[para2])).slice(0, 80) : "";
+      if (para2 >= 0 && !excerpts.has(para2)) excerpts.set(para2, paraText(scan2.doc.slice(starts[para2], ends[para2])).slice(0, 80));
+      const excerpt = excerpts.get(para2) || "";
       return { n, kind: eq.kind, latex: eq.latex, error: eq.error, progId: eq.progId, para: para2, excerpt };
     });
     return { equations: list3, paragraphTotal: starts.length };
@@ -14211,11 +14242,17 @@ ${contentTypesOverrides}
       const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
       let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
       const reasons = {}, writes = [], backup = [];
+      const mathTypeOptions = dst === "mathtype" ? __spreadProps(__spreadValues({}, mtConvertOptions()), { defaultSize: (await mtOptions()).size }) : null;
+      let lastYield = Date.now();
       for (const it of items) {
+        if (Date.now() - lastYield >= 16) {
+          await new Promise((resolve2) => setTimeout(resolve2, 0));
+          lastYield = Date.now();
+        }
         let r;
         if (dst === "mathtype") {
           const a = convertMathTypeInPackage(it.pkg, { convertMathType: normalize2, convertLatex: src === "latex", display: false });
-          const b = await convertNativeToMathType(a.pkg, __spreadProps(__spreadValues({ render: browserRender }, mtConvertOptions()), { defaultSize: await mtOptions().then((o) => o.size) }));
+          const b = await convertNativeToMathType(a.pkg, __spreadValues({ render: browserRender }, mathTypeOptions));
           r = { converted: b.converted, convertedLatex: a.convertedLatex || 0, convertedMathType: 0, kept: [...a.kept, ...b.kept], changed: b.changed, pkg: b.changed ? b.pkg : a.pkg };
           if (!b.changed && a.changed) r.converted = a.converted;
         } else if (dst === "latex") {
@@ -14312,27 +14349,31 @@ ${contentTypesOverrides}
     el.focus();
     renderEditorPreview();
   }
-  async function loadFormulaFromWord(showNotice = true) {
+  async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent = () => true) {
     var _a8, _b;
     const statusEl = $("editor-status");
     if (statusEl) statusEl.textContent = "\u0110ang \u0111\u1ECDc c\xF4ng th\u1EE9c t\u1EEB Word\u2026";
     try {
       let ctx;
-      try {
-        ctx = await readCursorContext();
-      } catch (e3) {
-        ctx = {};
+      if (!picked) {
         try {
-          ctx.selPkg = (_a8 = await readSelection()) == null ? void 0 : _a8.pkg;
-        } catch (e4) {
+          ctx = await readCursorContext();
+        } catch (e3) {
+          ctx = {};
+          try {
+            ctx.selPkg = (_a8 = await readSelection()) == null ? void 0 : _a8.pkg;
+          } catch (e4) {
+          }
+          try {
+            ctx.paraPkg = (_b = (await readParagraphs({ kind: "selection" }))[0]) == null ? void 0 : _b.pkg;
+          } catch (e4) {
+          }
         }
-        try {
-          ctx.paraPkg = (_b = (await readParagraphs({ kind: "selection" }))[0]) == null ? void 0 : _b.pkg;
-        } catch (e4) {
-        }
+        if (!ctx.selPkg && !ctx.paraPkg) throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c v\xF9ng ch\u1ECDn t\u1EEB Word.");
+        picked = pickEquation(ctx);
       }
-      if (!ctx.selPkg && !ctx.paraPkg) throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c v\xF9ng ch\u1ECDn t\u1EEB Word.");
-      const r = pickEquation(ctx);
+      if (!isCurrent()) return;
+      const r = picked;
       if (!r.eq) {
         if (r.errors && r.errors.length && r.found) throw new Error(`C\xF4ng th\u1EE9c b\u1ECB l\u1ED7i: ${r.errors[0]}`);
         if (statusEl) statusEl.innerHTML = showNotice ? '<span class="warn">Kh\xF4ng t\xECm th\u1EA5y c\xF4ng th\u1EE9c n\xE0o t\u1EA1i con tr\u1ECF / v\xF9ng ch\u1ECDn (\u0111o\u1EA1n n\xE0y kh\xF4ng c\xF3 c\xF4ng th\u1EE9c). B\u1EA1n c\xF3 th\u1EC3 t\u1EF1 so\u1EA1n b\xEAn d\u01B0\u1EDBi.</span>' : "\u0110\u1EB7t con tr\u1ECF trong c\xF4ng th\u1EE9c r\u1ED3i b\u1EA5m \u201CL\u1EA5y t\u1EEB Word\u201D, ho\u1EB7c so\u1EA1n m\u1EDBi b\xEAn d\u01B0\u1EDBi.";
@@ -14465,20 +14506,24 @@ ${contentTypesOverrides}
   var autoTimer = null;
   var lastAutoSig = "";
   var ignoreAutoUntil = 0;
+  var selectionVersion = 0;
   function onSelectionChanged() {
-    if (Date.now() < ignoreAutoUntil) return;
+    const version = ++selectionVersion;
     clearTimeout(autoTimer);
+    if (Date.now() < ignoreAutoUntil) return;
     autoTimer = setTimeout(async () => {
-      var _a8, _b;
+      var _a8, _b, _c;
       document.dispatchEvent(new CustomEvent("texcraft:selection"));
       if (!((_a8 = $("editor-auto")) == null ? void 0 : _a8.checked) || !((_b = $("tab-editor")) == null ? void 0 : _b.classList.contains("active"))) return;
       if (document.hasFocus() && document.activeElement === $("editor-latex")) return;
       try {
         const r = pickEquation(await readCursorContext());
+        if (version !== selectionVersion || !((_c = $("tab-editor")) == null ? void 0 : _c.classList.contains("active"))) return;
+        if (document.hasFocus() && (document.activeElement === $("editor-latex") || (visual == null ? void 0 : visual.active()))) return;
         if (!r.eq) return;
         if (r.eq.latex === lastAutoSig && $("editor-latex").value === r.eq.latex) return;
         lastAutoSig = r.eq.latex;
-        await loadFormulaFromWord(false);
+        await loadFormulaFromWord(false, r, () => version === selectionVersion);
       } catch (e3) {
       }
     }, 350);

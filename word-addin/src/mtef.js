@@ -323,7 +323,7 @@ function glyph(char, value) {
   if (has(T.SYMBOLS, String(value))) return T.SYMBOLS[String(value)];
   if (has(T.ASCII_ESCAPES, char)) return T.ASCII_ESCAPES[char];
   if (value < 128) return char;
-  if (value > 127 && isAlpha(char)) return `${BS}text{${char}}`;
+  if (value > 127 && (isAlpha(char) || char === 'ℑ')) return `${BS}text{${char}}`;
   return fail(`unknown character U+${hex4(value)}`);
 }
 

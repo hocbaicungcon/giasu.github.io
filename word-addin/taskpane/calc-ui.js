@@ -55,6 +55,7 @@ export function mountCalc(root, io, hooks = {}) {
   const val = (id) => (root.querySelector('#' + id) || {}).value;
   async function run() {
     const op = $('c-op').value, btn = $('c-run');
+    if (btn.disabled) return;
     btn.disabled = true;
     try {
       const lines = $('c-expr').value.split('\n').map((l) => normalizeInput(l)).join('\n');
@@ -64,6 +65,7 @@ export function mountCalc(root, io, hooks = {}) {
       $('c-status').textContent = '';
       if (r.error) throw new CalcError(r.error);
       results.unshift({ op, input: $('c-expr').value.trim(), r });
+      results.length = Math.min(results.length, 8);
       render();
     } catch (e) { $('c-status').innerHTML = `<span class="bad">${esc(e.message)}</span>`; } finally { btn.disabled = false; }
   }

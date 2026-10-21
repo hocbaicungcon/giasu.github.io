@@ -8,16 +8,12 @@ const CDN = [/^https:\/\/appsforoffice\.microsoft\.com\//, /^https:\/\/cdn\.jsde
 
 async function stamp(url) {
   const meta = await caches.open(META);
-  const res = await meta.match('times');
-  const times = res ? await res.json() : {};
-  times[url] = Date.now();
-  await meta.put('times', new Response(JSON.stringify(times)));
+  await meta.put(url, new Response(String(Date.now())));
 }
 async function age(url) {
   const meta = await caches.open(META);
-  const res = await meta.match('times');
-  const times = res ? await res.json() : {};
-  return times[url] ? Date.now() - times[url] : Infinity;
+  const res = await meta.match(url);
+  return res ? Date.now() - Number(await res.text()) : Infinity;
 }
 
 self.addEventListener('install', (event) => {
@@ -36,14 +32,30 @@ self.addEventListener('activate', (event) => {
   })());
 });
 
+// Coalesce simultaneous requests (e.g. two panels starting Python).
+const pending = new Map();
 async function handle(request) {
-  const url = request.url;
-  const cache = await caches.open(CDN.some((r) => r.test(url)) ? RUNTIME : CACHE);
-  const hit = await cache.match(request, { ignoreSearch: true });
+  const cdn = CDN.some((r) => r.test(request.url));
+  const key = new URL(request.url);
+  // Local queries choose a tab/edition in the same HTML. CDN queries may select different resources.
+  if (!cdn) key.search = '';
+  const url = key.href;
+  const cache = await caches.open(cdn ? RUNTIME : CACHE);
+  const hit = await cache.match(url);
   const fresh = hit ? (await age(url)) < MAX_AGE : false;
-  const network = () => fetch(request).then(async (res) => { if (res && (res.ok || res.type === 'opaque')) { try { await cache.put(request, res.clone()); await stamp(url); } catch (e) { /* quota */ } } return res; });
-  if (hit && fresh) { network().catch(() => {}); return hit; }   // serve the saved copy now, refresh quietly for next time
-  try { return await network(); } catch (e) { if (hit) return hit; throw e; }
+  // Versioned app files are replaced on the next worker install. Runtime files have versioned CDN URLs.
+  // Re-fetching a fresh WASM/wheel file on every hit wastes tens of MB and stalls weak machines.
+  if (hit && fresh) return hit;
+  if (!pending.has(url)) {
+    const work = fetch(request).then(async (res) => {
+      if (res && (res.ok || res.type === 'opaque')) {
+        try { await cache.put(url, res.clone()); await stamp(url); } catch (e) { /* quota */ }
+      }
+      return res;
+    }).finally(() => pending.delete(url));
+    pending.set(url, work);
+  }
+  try { return (await pending.get(url)).clone(); } catch (e) { if (hit) return hit; throw e; }
 }
 
 self.addEventListener('fetch', (event) => {
@@ -56,10 +68,12 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(handle(r));
 });
 
-self.addEventListener('message', async (event) => {
+self.addEventListener('message', (event) => {
   if (event.data === 'status') {
+    event.waitUntil((async () => {
     const keys = await (await caches.open(CACHE)).keys();
     const runtime = await (await caches.open(RUNTIME)).keys();
     event.source.postMessage({ type: 'status', version: VERSION, files: keys.length, runtime: runtime.length, maxAgeDays: 30 });
+    })());
   }
 });

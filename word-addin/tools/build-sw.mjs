@@ -11,8 +11,9 @@ const list = files.filter((f) => !/^(sw\.js|manifest(-full)?\.xml)$/.test(f) && 
 const LAZY = /^(taskpane\/vendor\/|src\/figures\/|taskpane\/(worksheet|lms|calc)-ui\.js$)/;
 const core = list.filter((f) => !LAZY.test(f));
 const hash = createHash('sha1');
+const tpl = readFileSync(new URL('../sw.template.js', import.meta.url), 'utf8');
+hash.update(tpl); // changing the cache policy must also invalidate the previous app cache
 for (const f of list) hash.update(f).update(readFileSync(join(root, f)));
 const version = hash.digest('hex').slice(0, 10);
-const tpl = readFileSync(new URL('../sw.template.js', import.meta.url), 'utf8');
 writeFileSync(join(root, 'sw.js'), tpl.replace('__VERSION__', version).replace('__FILES__', JSON.stringify(['./', ...core.map((f) => './' + f)], null, 1)));
 console.log(`sw.js: ${core.length}/${list.length} files precached, version ${version}`);

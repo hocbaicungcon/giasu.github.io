@@ -10,7 +10,7 @@ function loadMathlive() {
     MF.soundsDirectory = null;
     MF.plonkSound = null; MF.keypressSound = null;
     return MF;
-  });
+  }).catch((e) => { libPromise = null; throw e; });
   return libPromise;
 }
 
@@ -32,6 +32,7 @@ export function createVisualEditor({ host, textarea, onChange }) {
   async function ensure() {
     if (mf) return mf;
     const MF = await loadMathlive();
+    if (mf) return mf; // another activation may have finished while the module loaded
     mf = new MF();
     mf.setAttribute('math-virtual-keyboard-policy', 'manual');
     mf.setAttribute('aria-label', 'Nhập công thức trực quan');
@@ -54,7 +55,7 @@ export function createVisualEditor({ host, textarea, onChange }) {
     pull,
     async setActive(v) {
       on = v; host.hidden = !v; textarea.hidden = v;
-      if (v) { await ensure(); mf.setValue(textarea.value, { silenceNotifications: true }); mf.focus(); }
+      if (v) { await ensure(); if (!on) return; mf.setValue(textarea.value, { silenceNotifications: true }); mf.focus(); }
     },
     async insert(snippet) {
       await ensure();

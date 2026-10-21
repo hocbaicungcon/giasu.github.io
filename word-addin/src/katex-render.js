@@ -8,7 +8,7 @@ const FONT_URL = (name) => new URL(`../taskpane/katex/fonts/KaTeX_${name}.ttf`, 
 const AVAILABLE = new Set(['AMS-Regular', 'Caligraphic-Bold', 'Caligraphic-Regular', 'Fraktur-Bold', 'Fraktur-Regular', 'Main-Bold', 'Main-BoldItalic', 'Main-Italic', 'Main-Regular', 'Math-BoldItalic', 'Math-Italic', 'SansSerif-Bold', 'SansSerif-Italic', 'SansSerif-Regular', 'Script-Regular', 'Size1-Regular', 'Size2-Regular', 'Size3-Regular', 'Size4-Regular', 'Typewriter-Regular']);
 const fontCache = new Map();
 function loadFont(name) {
-  if (!fontCache.has(name)) fontCache.set(name, fetch(FONT_URL(name)).then((r) => { if (!r.ok) throw new Error('font ' + name); return r.arrayBuffer(); }).then((b) => parseTtf(new Uint8Array(b))));
+  if (!fontCache.has(name)) fontCache.set(name, fetch(FONT_URL(name)).then((r) => { if (!r.ok) throw new Error('font ' + name); return r.arrayBuffer(); }).then((b) => parseTtf(new Uint8Array(b))).catch((e) => { fontCache.delete(name); throw e; }));
   return fontCache.get(name);
 }
 

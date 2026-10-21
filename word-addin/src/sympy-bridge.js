@@ -73,10 +73,13 @@ export function normalizeInput(text) {
 // ---------------------------------------------------------------- Pyodide + SymPy
 const PYODIDE = 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/';
 let engine = null;
-const script = (src) => new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = () => rej(new Error('Không tải được ' + src)); document.head.appendChild(s); });
+let enginePromise = null;
+const script = (src) => new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = () => { s.remove(); rej(new Error('Không tải được ' + src)); }; document.head.appendChild(s); });
 
 export async function loadSympy(onStatus = () => {}) {
   if (engine) return engine;
+  if (enginePromise) return enginePromise;
+  enginePromise = (async () => {
   onStatus('Đang tải Python (Pyodide)… lần đầu có thể mất 1–2 phút');
   if (typeof loadPyodide === 'undefined') await script(PYODIDE + 'pyodide.js');
   const py = await loadPyodide({ indexURL: PYODIDE });
@@ -86,6 +89,8 @@ export async function loadSympy(onStatus = () => {}) {
   py.runPython(PY_SOURCE);
   engine = py;
   return py;
+  })();
+  try { return await enginePromise; } finally { enginePromise = null; }
 }
 
 /** op: simplify | expand | factor | apart | together | diff | integrate | defint | limit | solve | system | inequality | eval | series | matrix | number. */

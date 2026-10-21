@@ -17,10 +17,12 @@ export function scanBody(pkg) {
   const scan = scanPackage(pkg);
   const starts = paragraphOrdinals(scan.doc || '');
   const ends = starts.map((s) => { const e = scan.doc.indexOf('</w:p>', s); return e < 0 ? scan.doc.length : e + 6; });
+  const excerpts = new Map();
   const list = scan.equations.map((eq, n) => {
     let lo = 0, hi = starts.length - 1, para = -1;
     while (lo <= hi) { const mid = (lo + hi) >> 1; if (starts[mid] <= eq.pos) { para = mid; lo = mid + 1; } else hi = mid - 1; }
-    const excerpt = para >= 0 ? paraText(scan.doc.slice(starts[para], ends[para])).slice(0, 80) : '';
+    if (para >= 0 && !excerpts.has(para)) excerpts.set(para, paraText(scan.doc.slice(starts[para], ends[para])).slice(0, 80));
+    const excerpt = excerpts.get(para) || '';
     return { n, kind: eq.kind, latex: eq.latex, error: eq.error, progId: eq.progId, para, excerpt };
   });
   return { equations: list, paragraphTotal: starts.length };

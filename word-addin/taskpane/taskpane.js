@@ -193,12 +193,19 @@ async function convert() {
     const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
     let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
     const reasons = {}, writes = [], backup = [];
+    // Resolve the cursor font once, rather than one Office round trip per paragraph.
+    const mathTypeOptions = dst === 'mathtype' ? { ...mtConvertOptions(), defaultSize: (await mtOptions()).size } : null;
+    let lastYield = Date.now();
     for (const it of items) {
+      if (Date.now() - lastYield >= 16) {
+        await new Promise((resolve) => setTimeout(resolve, 0));
+        lastYield = Date.now();
+      }
       let r;
       if (dst === 'mathtype') {
         // LaTeX text -> Word equation first, then every Word equation -> MathType object
         const a = convertMathTypeInPackage(it.pkg, { convertMathType: normalize, convertLatex: src === 'latex', display: false });
-        const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...mtConvertOptions(), defaultSize: await mtOptions().then((o) => o.size) });
+        const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...mathTypeOptions });
         r = { converted: b.converted, convertedLatex: a.convertedLatex || 0, convertedMathType: 0, kept: [...a.kept, ...b.kept], changed: b.changed, pkg: b.changed ? b.pkg : a.pkg };
         if (!b.changed && a.changed) r.converted = a.converted;
       } else if (dst === 'latex') {
@@ -287,19 +294,23 @@ function insertSymbolAtCursor(text) {
   renderEditorPreview();
 }
 
-async function loadFormulaFromWord(showNotice = true) {
+async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent = () => true) {
   const statusEl = $('editor-status');
   if (statusEl) statusEl.textContent = 'Đang đọc công thức từ Word…';
   try {
     let ctx;
-    try { ctx = await io.readCursorContext(); } catch (e) {
-      // older Word / mock without ranges: selection, then its paragraph
-      ctx = {};
-      try { ctx.selPkg = (await io.readSelection())?.pkg; } catch { /* ignore */ }
-      try { ctx.paraPkg = (await io.readParagraphs({ kind: 'selection' }))[0]?.pkg; } catch { /* ignore */ }
+    if (!picked) {
+      try { ctx = await io.readCursorContext(); } catch (e) {
+        // older Word / mock without ranges: selection, then its paragraph
+        ctx = {};
+        try { ctx.selPkg = (await io.readSelection())?.pkg; } catch { /* ignore */ }
+        try { ctx.paraPkg = (await io.readParagraphs({ kind: 'selection' }))[0]?.pkg; } catch { /* ignore */ }
+      }
+      if (!ctx.selPkg && !ctx.paraPkg) throw new Error('Không đọc được vùng chọn từ Word.');
+      picked = pickEquation(ctx);
     }
-    if (!ctx.selPkg && !ctx.paraPkg) throw new Error('Không đọc được vùng chọn từ Word.');
-    const r = pickEquation(ctx);
+    if (!isCurrent()) return;
+    const r = picked;
     if (!r.eq) {
       if (r.errors && r.errors.length && r.found) throw new Error(`Công thức bị lỗi: ${r.errors[0]}`);
       if (statusEl) statusEl.innerHTML = showNotice
@@ -410,10 +421,11 @@ $('copy-acct').addEventListener('click', async () => {
 
 // ---------------------------------------------------------------- boot (real Word, or the browser mock for development)
 // ---------------------------------------------------------------- auto-load the equation under the cursor
-let autoTimer = null, lastAutoSig = '', ignoreAutoUntil = 0;
+let autoTimer = null, lastAutoSig = '', ignoreAutoUntil = 0, selectionVersion = 0;
 function onSelectionChanged() {
-  if (Date.now() < ignoreAutoUntil) return;
+  const version = ++selectionVersion;
   clearTimeout(autoTimer);
+  if (Date.now() < ignoreAutoUntil) return;
   autoTimer = setTimeout(async () => {
     // other tabs (Tính toán) listen to this event and read the cursor themselves
     document.dispatchEvent(new CustomEvent('texcraft:selection'));
@@ -421,10 +433,12 @@ function onSelectionChanged() {
     if (document.hasFocus() && document.activeElement === $('editor-latex')) return;   // typing in the pane: do not overwrite (after a click into Word the pane loses focus, though activeElement stays)
     try {
       const r = pickEquation(await io.readCursorContext());
+      if (version !== selectionVersion || !$('tab-editor')?.classList.contains('active')) return;
+      if (document.hasFocus() && (document.activeElement === $('editor-latex') || visual?.active())) return;
       if (!r.eq) return;   // no equation here: leave the editor alone
       if (r.eq.latex === lastAutoSig && $('editor-latex').value === r.eq.latex) return;
       lastAutoSig = r.eq.latex;
-      await loadFormulaFromWord(false);
+      await loadFormulaFromWord(false, r, () => version === selectionVersion);
     } catch { /* selection not readable: ignore */ }
   }, 350);
 }
