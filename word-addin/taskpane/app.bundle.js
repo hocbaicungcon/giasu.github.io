@@ -9602,6 +9602,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     return lines;
   }
   function sceneRun(scene, ctx, name = "H\xECnh") {
+    if (ctx && ctx.previewSvg) return `<w:r><w:rPr><w:noProof/></w:rPr><w:drawing><pv>${esc6(ctx.previewSvg(scene))}</pv></w:drawing></w:r>`;
     return `<w:r><w:rPr><w:noProof/></w:rPr>${sceneToDrawingXml(scene, { name, alt: name })}</w:r>`;
   }
   function tikzRun(code, optStr, ctx) {
@@ -9900,7 +9901,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const acc = color === "bw" ? "222222" : accent.replace("#", "");
     const sz = Math.round(fontPt2 * 2);
     const half = sz;
-    const ctx = { cps, pics, fs: fontPt2 / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
+    const ctx = { cps, pics, previewSvg: options.previewSvg, fs: fontPt2 / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
     const f = { sz, emoji: Math.round(sz * 1.5) };
     const skipped = [];
     let body = "", count = 0;
@@ -9917,7 +9918,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             const lines = /^\$\\begin\{array\}/.test(q.trim()) ? arrayLines(q.trim().replace(/^\$|\$$/g, "")) : null;
             const num3 = `<w:r><w:rPr><w:b/><w:color w:val="${acc}"/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">${k + 1}. </w:t></w:r>`;
             if (lines) {
-              return para(num3, { after: 0 }) + lines.map((l) => `<w:p><w:pPr><w:spacing w:before="0" w:after="0"/><w:ind w:left="500"/>${l.rule ? '<w:pBdr><w:bottom w:val="single" w:sz="8" w:space="1" w:color="222222"/></w:pBdr>' : ""}<w:jc w:val="left"/></w:pPr>${texToRuns(l.text.replace(/^([+\-−×:])\s*/, "$1  "), ctx, f)}</w:p>`).join("") + para(texToRuns("\xA0", ctx, f), { after: 120 });
+              const cw = Math.floor(W / cols) - 120, tab = Math.min(1500, cw - 200), pp = (rule) => `<w:p><w:pPr>${rule ? '<w:pBdr><w:bottom w:val="single" w:sz="8" w:space="1" w:color="222222"/></w:pBdr>' : ""}<w:tabs><w:tab w:val="right" w:pos="${tab}"/></w:tabs><w:spacing w:before="0" w:after="0"/><w:ind w:left="300" w:right="${Math.max(0, cw - tab)}"/></w:pPr>`;
+              return para(num3, { after: 0 }) + lines.map((l) => {
+                const m = /^(\\times|\\div|[+\-−×:÷])\s*(.*)$/.exec(l.text.trim());
+                return `${pp(l.rule)}${m ? texToRuns(`$${m[1]}$`, ctx, f) : ""}<w:r><w:tab/></w:r>${texToRuns(m ? m[2] : l.text, ctx, f)}</w:p>`;
+              }).join("") + `${pp(false)}<w:r><w:rPr><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve"> </w:t></w:r></w:p>` + para("", { after: 140 });
             }
             return para(num3 + texToRuns(q, ctx, f), { after: 100, line: 340 });
           };
