@@ -317,7 +317,7 @@ Các trang trong `giai-tri/` được tạo tự động khi build từ `assets/
 - CSV câu đố không có dòng tiêu đề, gồm 2 cột: câu hỏi, đáp án. Ô chứa dấu phẩy hoặc xuống dòng phải đặt trong dấu ngoặc kép theo chuẩn CSV.
 - Danh ngôn lọc đồng thời theo tác giả và danh mục; mẹo học tập theo danh mục; truyện cười theo trường `cat`.
 - Nút tiếp theo chọn ngẫu nhiên, tránh lặp ngay nội dung vừa xem. Đáp án đố vui so khớp chữ sau khi bỏ dấu câu, khoảng trắng và khác biệt chữ hoa; không chấm theo ngữ nghĩa.
-- Cuối mỗi bài viết (`.article-end`) hiển thị một mẹo từ `study_tips.json`, tránh lặp mẹo vừa xem trong cùng phiên. Footer giữ câu “✦ Mỗi bài học, một bước tiến!”.
+- Cuối mỗi bài viết (`.article-end`) hiển thị một mẹo từ `study_tips.json`, tránh lặp mẹo vừa xem trong cùng phiên.
 - Build chia dữ liệu thành nhóm 50 mục, trình duyệt chỉ tải nhóm cần hiển thị. Nội dung tiếng Anh giữ nguyên từ nguồn; nên rà soát nội dung trước khi xuất bản cho học sinh.
 - Bài Markdown có category `Giải trí`, type `Câu đố` vào mục Câu đố IQ; type `Giai thoại` vào mục Giai thoại. Các loại bài khác vẫn xuất hiện trên trang Giải trí tổng hợp.
 - Games tại `giai-tri/games.html` gồm 2048, Sói–Dê–Bắp cải (20 màn), Đong nước (50 màn, từ 2 đến 4 can) và đoán từ 5 chữ trong 6 lượt. Bộ từ cơ bản chỉnh trong `assets/game-rules.js`; đây là trò chơi độc lập, không dùng dữ liệu của NYTimes.

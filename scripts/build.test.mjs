@@ -67,7 +67,7 @@ test('all published posts build with menu controls, compact metadata and games',
  assert.match(library,/<nav class="pagination" id="pagination"/);
  assert.match(library,/<button[^>]*id="load-more"/);
  const articleFile=fs.readdirSync(new URL('../dist/bai-viet/',import.meta.url)).find(f=>f.endsWith('.html'));
- const article=read('bai-viet/'+articleFile);assert.match(article,/class="article-meta"><time/);assert.match(article,/data-study-tip/);assert.doesNotMatch(article,/data-footer-quote|phút đọc/);assert.match(article,/✦ Mỗi bài học, một bước tiến!/);
+ const article=read('bai-viet/'+articleFile);assert.match(article,/class="article-meta"><time/);assert.match(article,/data-study-tip/);assert.doesNotMatch(article,/data-footer-quote|phút đọc/);assert.doesNotMatch(article,/Mỗi bài học, một bước tiến/);
  const poemArticle=read('bai-viet/bai-tho-doc-nguoc-doc-xuoi.html');
  assert.match(poemArticle,/<strong>Bài thơ gốc:<\/strong>/);
  assert.match(poemArticle,/<strong>Đọc ngược:<\/strong>/);
