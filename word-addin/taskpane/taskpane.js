@@ -149,7 +149,13 @@ const CONV_HINTS = {
   'latex:mathtype': 'Mã LaTeX ($…$, $$…$$, \\(…\\), \\[…\\]) được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem). Các công thức Word có sẵn trong phạm vi cũng bị đổi sang MathType.',
   'word:mathtype': 'Công thức Word được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem; sửa bằng MathType khi có).',
 };
+// valid targets for each source: LaTeX -> Word/MathType, Word -> LaTeX/MathType, MathType -> anything
+const DST_FOR = { latex: ['mathtype', 'word'], word: ['mathtype', 'latex'], mathtype: ['mathtype', 'latex', 'word'] };
 function syncConvertUi() {
+  const ok = DST_FOR[convSrc()] || [];
+  const dstEl = $('conv-dst');
+  [...dstEl.options].forEach((o) => { o.hidden = o.disabled = !ok.includes(o.value); });
+  if (!ok.includes(dstEl.value)) dstEl.value = ok.includes('word') ? 'word' : ok[0];
   const s = convSrc(), d = convDst();
   $('conv-hint').textContent = CONV_HINTS[s === d ? `same:${s}` : `${s}:${d}`] || '';
   $('mt-settings-convert').hidden = d !== 'mathtype';
@@ -397,6 +403,7 @@ $('btn-dump').addEventListener('click', async () => {
   } catch (e) { $('diag-log').textContent = 'Lỗi: ' + e.message; }
 });
 
+$('btn-guide').addEventListener('click', () => { const url = 'https://giasu.ai.vn/word-addin/su-dung.html'; try { window.open(url, '_blank', 'noopener'); } catch { location.href = url; } });
 $('copy-acct').addEventListener('click', async () => {
   try { await navigator.clipboard.writeText('4802518888'); $('acct-msg').textContent = 'Đã sao chép'; } catch { $('acct-msg').textContent = 'Hãy chọn và sao chép thủ công'; }
 });
@@ -411,7 +418,7 @@ function onSelectionChanged() {
     // other tabs (Tính toán) listen to this event and read the cursor themselves
     document.dispatchEvent(new CustomEvent('texcraft:selection'));
     if (!$('editor-auto')?.checked || !$('tab-editor')?.classList.contains('active')) return;
-    if (document.activeElement === $('editor-latex')) return;   // the user is typing: do not overwrite
+    if (document.hasFocus() && document.activeElement === $('editor-latex')) return;   // typing in the pane: do not overwrite (after a click into Word the pane loses focus, though activeElement stays)
     try {
       const r = pickEquation(await io.readCursorContext());
       if (!r.eq) return;   // no equation here: leave the editor alone

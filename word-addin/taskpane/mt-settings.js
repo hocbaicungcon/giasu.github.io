@@ -30,12 +30,35 @@ export function mountMtSettings(root, { fontRow = true, onChange } = {}) {
   root.innerHTML = (fontRow ? `<label class="field"><span>Kiểu chữ</span><select data-mt="font">${Object.entries(MT_FONTS).map(([k, f]) => `<option value="${k}">${f.label}</option>`).join('')}</select></label>` : '') +
     (fontRow ? `<label class="field"><span>Kiểu hiển thị</span><select data-mt="layout"><option value="classic">Cổ điển: cỡ lớn như riêng dòng</option><option value="compact">Gọn: nhỏ theo dòng chữ</option></select></label>` : '') +
     (fontRow ? `<label class="field"><span>Ảnh</span><select data-mt="picture"><option value="emf">Vector EMF (nét)</option><option value="png">Ảnh PNG</option></select></label>` : '') +
-    `<label class="field"><span>Cỡ chữ</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === 'auto' ? 'Theo văn bản (tự động)' : s + ' pt'}</option>`).join('')}</select></label>` +
+    `<label class="field"><span>Cỡ chữ</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === 'auto' ? 'Theo văn bản (tự động)' : s + ' pt'}</option>`).join('')}<option value="custom">Số khác…</option></select><input type="number" data-mt-custom min="4" max="200" step="0.5" placeholder="pt" style="width:70px;margin-left:6px" hidden></label>` +
     (fontRow ? '<div class="hint">Kiểu chữ có tác dụng khi mở lại bằng MathType; font ghi “cần cài font” phải có trên máy mở tài liệu.</div>' : '');
-  const sync = () => document.querySelectorAll('.mt-settings select').forEach((el) => { el.value = state[el.dataset.mt]; });
+  const sync = () => document.querySelectorAll('.mt-settings select').forEach((el) => {
+    const v = String(state[el.dataset.mt]);
+    if (el.dataset.mt !== 'size') { el.value = v; return; }
+    const custom = !SIZES.includes(v) || customOpen;
+    el.value = custom ? 'custom' : v;
+    const num = el.parentNode.querySelector('[data-mt-custom]');
+    if (num) { num.hidden = !custom; if (custom && document.activeElement !== num) num.value = SIZES.includes(v) ? '' : v; }
+  });
+  let customOpen = false;
+  root.addEventListener('input', (ev) => {
+    const num = ev.target.closest('[data-mt-custom]');
+    if (!num) return;
+    const n = parseFloat(String(num.value).replace(',', '.'));
+    if (!(n >= 4 && n <= 200)) return;
+    state.size = String(n); save();
+    document.querySelectorAll('.mt-settings [data-mt-custom]').forEach((o) => { if (o !== num) o.value = num.value; });
+    if (onChange) onChange();
+  });
   root.addEventListener('change', (ev) => {
     const el = ev.target.closest('select[data-mt]');
     if (!el) return;
+    if (el.dataset.mt === 'size' && el.value === 'custom') {
+      customOpen = true; sync();
+      const num = el.parentNode.querySelector('[data-mt-custom]'); if (num) num.focus();
+      return;
+    }
+    customOpen = false;
     state[el.dataset.mt] = el.value; save(); sync();
     if (onChange) onChange();
   });

@@ -1745,13 +1745,45 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function mountMtSettings(root, { fontRow = true, onChange } = {}) {
     root.classList.add("mt-settings");
-    root.innerHTML = (fontRow ? `<label class="field"><span>Ki\u1EC3u ch\u1EEF</span><select data-mt="font">${Object.entries(MT_FONTS).map(([k, f]) => `<option value="${k}">${f.label}</option>`).join("")}</select></label>` : "") + (fontRow ? `<label class="field"><span>Ki\u1EC3u hi\u1EC3n th\u1ECB</span><select data-mt="layout"><option value="classic">C\u1ED5 \u0111i\u1EC3n: c\u1EE1 l\u1EDBn nh\u01B0 ri\xEAng d\xF2ng</option><option value="compact">G\u1ECDn: nh\u1ECF theo d\xF2ng ch\u1EEF</option></select></label>` : "") + (fontRow ? `<label class="field"><span>\u1EA2nh</span><select data-mt="picture"><option value="emf">Vector EMF (n\xE9t)</option><option value="png">\u1EA2nh PNG</option></select></label>` : "") + `<label class="field"><span>C\u1EE1 ch\u1EEF</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === "auto" ? "Theo v\u0103n b\u1EA3n (t\u1EF1 \u0111\u1ED9ng)" : s + " pt"}</option>`).join("")}</select></label>` + (fontRow ? '<div class="hint">Ki\u1EC3u ch\u1EEF c\xF3 t\xE1c d\u1EE5ng khi m\u1EDF l\u1EA1i b\u1EB1ng MathType; font ghi \u201Cc\u1EA7n c\xE0i font\u201D ph\u1EA3i c\xF3 tr\xEAn m\xE1y m\u1EDF t\xE0i li\u1EC7u.</div>' : "");
+    root.innerHTML = (fontRow ? `<label class="field"><span>Ki\u1EC3u ch\u1EEF</span><select data-mt="font">${Object.entries(MT_FONTS).map(([k, f]) => `<option value="${k}">${f.label}</option>`).join("")}</select></label>` : "") + (fontRow ? `<label class="field"><span>Ki\u1EC3u hi\u1EC3n th\u1ECB</span><select data-mt="layout"><option value="classic">C\u1ED5 \u0111i\u1EC3n: c\u1EE1 l\u1EDBn nh\u01B0 ri\xEAng d\xF2ng</option><option value="compact">G\u1ECDn: nh\u1ECF theo d\xF2ng ch\u1EEF</option></select></label>` : "") + (fontRow ? `<label class="field"><span>\u1EA2nh</span><select data-mt="picture"><option value="emf">Vector EMF (n\xE9t)</option><option value="png">\u1EA2nh PNG</option></select></label>` : "") + `<label class="field"><span>C\u1EE1 ch\u1EEF</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === "auto" ? "Theo v\u0103n b\u1EA3n (t\u1EF1 \u0111\u1ED9ng)" : s + " pt"}</option>`).join("")}<option value="custom">S\u1ED1 kh\xE1c\u2026</option></select><input type="number" data-mt-custom min="4" max="200" step="0.5" placeholder="pt" style="width:70px;margin-left:6px" hidden></label>` + (fontRow ? '<div class="hint">Ki\u1EC3u ch\u1EEF c\xF3 t\xE1c d\u1EE5ng khi m\u1EDF l\u1EA1i b\u1EB1ng MathType; font ghi \u201Cc\u1EA7n c\xE0i font\u201D ph\u1EA3i c\xF3 tr\xEAn m\xE1y m\u1EDF t\xE0i li\u1EC7u.</div>' : "");
     const sync = () => document.querySelectorAll(".mt-settings select").forEach((el) => {
-      el.value = state[el.dataset.mt];
+      const v = String(state[el.dataset.mt]);
+      if (el.dataset.mt !== "size") {
+        el.value = v;
+        return;
+      }
+      const custom = !SIZES.includes(v) || customOpen;
+      el.value = custom ? "custom" : v;
+      const num3 = el.parentNode.querySelector("[data-mt-custom]");
+      if (num3) {
+        num3.hidden = !custom;
+        if (custom && document.activeElement !== num3) num3.value = SIZES.includes(v) ? "" : v;
+      }
+    });
+    let customOpen = false;
+    root.addEventListener("input", (ev) => {
+      const num3 = ev.target.closest("[data-mt-custom]");
+      if (!num3) return;
+      const n = parseFloat(String(num3.value).replace(",", "."));
+      if (!(n >= 4 && n <= 200)) return;
+      state.size = String(n);
+      save();
+      document.querySelectorAll(".mt-settings [data-mt-custom]").forEach((o) => {
+        if (o !== num3) o.value = num3.value;
+      });
+      if (onChange) onChange();
     });
     root.addEventListener("change", (ev) => {
       const el = ev.target.closest("select[data-mt]");
       if (!el) return;
+      if (el.dataset.mt === "size" && el.value === "custom") {
+        customOpen = true;
+        sync();
+        const num3 = el.parentNode.querySelector("[data-mt-custom]");
+        if (num3) num3.focus();
+        return;
+      }
+      customOpen = false;
       state[el.dataset.mt] = el.value;
       save();
       sync();
@@ -3124,7 +3156,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function labelMark(run4) {
     if (/<w:u\b(?![^>]*w:val="none")/.test(run4)) return "underline";
-    if (/<w:color\b[^>]*w:val="(FF0000|C00000|E00000|FF0000|ff0000|c00000)"/.test(run4)) return "red";
+    if (hasRedColor(run4)) return "red";
     if (/<w:highlight\b(?![^>]*w:val="none")/.test(run4)) return "highlight";
     return null;
   }
@@ -3267,7 +3299,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         expected += (x.match(/\bQuestion\s*\d+/gi) || []).length;
       }
     }
-    return { parts: parts.filter((p2) => p2.questions.length || p2.blockIndex >= 0), english, sections, expected, detected: parts.reduce((n, p2) => n + p2.questions.length, 0) };
+    return { parts: parts.filter((p2) => p2.questions.length || p2.blockIndex >= 0), english, sections, expected, limit, detected: parts.reduce((n, p2) => n + p2.questions.length, 0) };
   }
   function buildSections(model, qs) {
     const nonBlank = (b) => b.kind !== "p" || Boolean(paragraphText(b).trim());
@@ -3322,6 +3354,113 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
     }
     return rows;
+  }
+  function keyTableRows(xml) {
+    return (xml.match(/<w:tr\b[\s\S]*?<\/w:tr>/g) || []).map((r) => (r.match(/<w:tc\b[\s\S]*?<\/w:tc>/g) || []).map((c) => xmlText(c).replace(/\s+/g, " ").trim()));
+  }
+  function parseAnswerKey(blocks) {
+    const key = { mc: /* @__PURE__ */ new Map(), tf: /* @__PURE__ */ new Map(), short: /* @__PURE__ */ new Map() };
+    const put = (num3, v) => {
+      if (v && !key[v.kind].has(num3)) key[v.kind].set(num3, v.value);
+    };
+    let text = "";
+    for (const b of blocks) {
+      if (b.kind === "p") {
+        text += paragraphText(b) + "\n";
+        continue;
+      }
+      if (tagName(b.xml) !== "w:tbl") continue;
+      const rows = keyTableRows(b.xml).filter((r) => r.some(Boolean));
+      for (let i = 0; i < rows.length; i++) {
+        const r = rows[i], nums = r.slice(1).map((c) => KEY_NUM.exec(c));
+        if (r.length >= 3 && nums.every(Boolean) && rows[i + 1]) {
+          const vals = rows[i + 1];
+          nums.forEach((m, k) => {
+            var _a8;
+            return put(Number(m[1]), keyKind((_a8 = vals[k + 1]) != null ? _a8 : ""));
+          });
+          i++;
+          continue;
+        }
+        for (let k = 0; k + 1 < r.length; k += 2) {
+          const m = KEY_NUM.exec(r[k]);
+          if (m) put(Number(m[1]), keyKind(r[k + 1]));
+          else break;
+        }
+      }
+    }
+    const take = (re, fn) => {
+      text = text.replace(re, (all, ...g) => {
+        fn(g);
+        return " ".repeat(all.length);
+      });
+    };
+    take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]\s*((?:[a-d]\s*[).:\-–]\s*[ĐSđs](?![\p{L}\d])[\s,;]*){4}|[ĐSđs](?:[\s,;\-–]*[ĐSđs]){3}(?![\p{L}\d]))/giu, (g) => put(Number(g[0]), keyKind(g[1])));
+    take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]?\s*([A-D])(?![\p{L}\d])/gu, (g) => put(Number(g[0]), { kind: "mc", value: g[1] }));
+    take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–=]\s*(-?\d[\d.,/]*)(?![\p{L}\d])/giu, (g) => put(Number(g[0]), { kind: "short", value: g[1] }));
+    return key;
+  }
+  function markLabel(p2, re, letter) {
+    for (let i = 0; i < p2.children.length; i++) {
+      const c = p2.children[i];
+      if (!isRun(c) || hasObject(c)) continue;
+      const t = runText(c), m = re.exec(t);
+      if (!m || m[1] !== letter) continue;
+      const parts = t.length > m[0].length ? splitRunAt(c, m[0].length) : [c, ""];
+      if (!parts) return false;
+      p2.children.splice(i, 1, underlineRun(parts[0]), ...parts[1] ? [parts[1]] : []);
+      return true;
+    }
+    return false;
+  }
+  function applyAnswerKey(pkg) {
+    let model;
+    try {
+      model = parseBody(pkg);
+    } catch (e3) {
+      return { pkg, changed: false, count: 0 };
+    }
+    const analysis = analyze(model);
+    let from = analysis.limit;
+    if (from >= model.blocks.length) {
+      const last = model.blocks.map((b, i) => [b, i]).filter(([b]) => b.kind === "other" && tagName(b.xml) === "w:tbl").pop();
+      from = last && last[1] > (analysis.parts.flatMap((x) => x.questions).pop() || { start: 0 }).start ? last[1] : from;
+    }
+    if (from >= model.blocks.length) return { pkg, changed: false, count: 0 };
+    const key = parseAnswerKey(model.blocks.slice(from));
+    if (!key.mc.size && !key.tf.size && !key.short.size) return { pkg, changed: false, count: 0 };
+    const rows = answersOf(model, analysis), inserts = [];
+    let count = 0, ri = 0;
+    for (const part of analysis.parts) {
+      for (const q of part.questions) {
+        const row = rows[ri++];
+        if (!row || row.value !== null && row.value !== void 0) continue;
+        if (part.kind === "mc" || part.kind === "other") {
+          const v = key.mc.get(q.number);
+          if (v && q.options && q.optionParas.some((pi) => markLabel(model.blocks[pi], /^\s*([A-D])\s*[.)]/, v))) count++;
+        } else if (part.kind === "tf") {
+          const v = key.tf.get(q.number);
+          if (!v || v.length !== q.statements.length) continue;
+          let any = false;
+          q.statements.forEach((st, i) => {
+            if (v[i] === "\u0110" && markLabel(model.blocks[st.block], /^\s*([a-d])\s*\)/, st.letter)) any = true;
+          });
+          if (any || v.every((x) => x === "S")) count++;
+        } else if (part.kind === "short") {
+          const v = key.short.get(q.number);
+          if (v) {
+            inserts.push([q.start, v]);
+            count++;
+          }
+        }
+      }
+    }
+    if (!count) return { pkg, changed: false, count: 0 };
+    const blocks = model.blocks.slice();
+    for (const [at2, v] of inserts.sort((a, b) => b[0] - a[0])) {
+      blocks.splice(at2 + 1, 0, { kind: "p", open: "<w:p>", ppr: "<w:pPr><w:rPr><w:vanish/></w:rPr></w:pPr>", children: [`<w:r><w:rPr><w:vanish/></w:rPr><w:t xml:space="preserve">\u0110\xE1p \xE1n: ${escapeXml(v)}</w:t></w:r>`] });
+    }
+    return { pkg: buildBody(model, blocks), changed: true, count };
   }
   function fontPt(content2, para2) {
     for (const c of content2) {
@@ -3440,6 +3579,52 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     p2.children[last.i] = last.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, lastSuffix ? `<w:t xml:space="preserve">${escapeXml(lastSuffix)}</w:t>` : "");
     return true;
   }
+  function styleQuestionLabel(p2, { bold = false, color = "", brk = false } = {}) {
+    if (!p2 || !p2.children || !(bold || color || brk)) return false;
+    const m = RE_QUESTION.exec(paragraphText(p2));
+    if (!m) return false;
+    let from = m.index + (m[0].length - m[0].trimStart().length), to = m.index + m[0].length;
+    while (to > from && /\s/.test(paragraphText(p2)[to - 1])) to--;
+    const splitAt = (offset) => {
+      let pos2 = 0;
+      for (let i = 0; i < p2.children.length; i++) {
+        const c = p2.children[i], len3 = childText(c).length;
+        if (offset === pos2) return true;
+        if (offset < pos2 + len3) {
+          if (!isRun(c) || hasObject(c)) return false;
+          const parts = splitRunAt(c, offset - pos2);
+          if (!parts || !parts[0] || !parts[1]) return false;
+          p2.children.splice(i, 1, parts[0], parts[1]);
+          return true;
+        }
+        pos2 += len3;
+      }
+      return offset === pos2;
+    };
+    if (!splitAt(to) || !splitAt(from)) return false;
+    const set = {};
+    if (bold) set.b = "<w:b/>";
+    if (color) set.color = `<w:color w:val="${color}"/>`;
+    let pos = 0, lastIdx = -1;
+    for (let i = 0; i < p2.children.length; i++) {
+      const c = p2.children[i], len3 = childText(c).length;
+      if (pos >= from && pos + len3 <= to && len3 > 0 && isRun(c) && !hasObject(c) && Object.keys(set).length) {
+        const h = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(c);
+        if (h) p2.children[i] = `${h[1]}${withRprChildren(h[2] ? h[2].trim() : "", set)}${c.slice(h[0].length)}`;
+      }
+      if (pos < to && pos + len3 >= to) lastIdx = i;
+      pos += len3;
+    }
+    if (brk && lastIdx >= 0 && lastIdx + 1 < p2.children.length) {
+      const rest = p2.children.slice(lastIdx + 1);
+      if (rest.some((c) => childText(c).trim() || hasObject(c) || isMath(c))) {
+        const nxt = p2.children[lastIdx + 1];
+        if (isRun(nxt) && !hasObject(nxt)) p2.children[lastIdx + 1] = nxt.replace(/(<w:t\b[^>]*>)[ \u00a0\t]+/, "$1");
+        p2.children.splice(lastIdx + 1, 0, "<w:r><w:br/></w:r>");
+      }
+    }
+    return true;
+  }
   function withRprChildren(rpr2, set) {
     const inner = rpr2 && rpr2 !== "<w:rPr/>" ? rpr2.replace(/^\s*<w:rPr>/, "").replace(/<\/w:rPr>\s*$/, "") : "";
     const kids = splitChildren(inner).filter((k) => !(tagName(k).replace(/^w:/, "") in set));
@@ -3530,6 +3715,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         } else if (opts.renumber || opts.questionFormat) {
           renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt, word: opts.labelWord });
         }
+        if (opts.qBold || opts.qColor || opts.qBreak) styleQuestionLabel(b, { bold: opts.qBold, color: opts.qColor, brk: opts.qBreak });
         if (opts.keepNext) {
           for (let i = q.start; i < q.stemEnd; i++) if (model.blocks[i].kind === "p" && i + 1 <= q.stemEnd && (q.options || q.statements.length)) model.blocks[i].ppr = setPprChild(model.blocks[i].ppr, "keepNext", "<w:keepNext/>");
         }
@@ -3906,27 +4092,25 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   function answerTableXml(groups, title = "B\u1EA2NG \u0110\xC1P \xC1N", word2 = "C\xE2u") {
     const borders = "<w:tblBorders>" + ["top", "left", "bottom", "right", "insideH", "insideV"].map((s) => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="808080"/>`).join("") + "</w:tblBorders>";
     let xml = `<w:p><w:pPr><w:pageBreakBefore/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>${escapeXml(title)}</w:t></w:r></w:p>`;
-    const byCode = /* @__PURE__ */ new Map();
+    const codes = [...new Set(groups.map((g) => String(g.code)))];
+    const sections = /* @__PURE__ */ new Map();
     for (const g of groups) {
-      if (!byCode.has(g.code)) byCode.set(g.code, []);
-      byCode.get(g.code).push(g);
+      const key = `${g.kind}|${g.title || ""}`;
+      if (!sections.has(key)) sections.set(key, { title: g.title || "", kind: g.kind, byCode: /* @__PURE__ */ new Map() });
+      const sec = sections.get(key), c = String(g.code);
+      if (!sec.byCode.has(c)) sec.byCode.set(c, /* @__PURE__ */ new Map());
+      for (const it of g.items) sec.byCode.get(c).set(it.number, it.value);
     }
-    for (const [code, gs] of byCode) {
-      xml += `<w:p><w:pPr><w:keepNext/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>M\xE3 \u0111\u1EC1 ${escapeXml(String(code))}</w:t></w:r></w:p>`;
-      for (const g of gs) {
-        const per = g.kind === "mc" ? 10 : g.kind === "tf" ? 4 : 6;
-        xml += `<w:p><w:pPr><w:keepNext/></w:pPr><w:r><w:t xml:space="preserve">${escapeXml(g.title || "")}</w:t></w:r></w:p>`;
-        for (let i = 0; i < g.items.length; i += per) {
-          const chunk = g.items.slice(i, i + per);
-          const w = Math.floor(9e3 / (g.kind === "tf" ? chunk.length : per + 1));
-          const top = `<w:tr>${cell(word2, w, true)}${chunk.map((c) => cell(c.number, w, true)).join("")}</w:tr>`;
-          const bot = `<w:tr>${cell("\u0110\xE1p \xE1n", w, true)}${chunk.map((c) => {
-            var _a8;
-            return cell((_a8 = c.value) != null ? _a8 : "?", w, false);
-          }).join("")}</w:tr>`;
-          xml += `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${borders}</w:tblPr><w:tblGrid>${Array.from({ length: chunk.length + 1 }, () => `<w:gridCol w:w="${w}"/>`).join("")}</w:tblGrid>${top}${bot}</w:tbl><w:p/>`;
-        }
-      }
+    for (const sec of sections.values()) {
+      const numbers = [...new Set([...sec.byCode.values()].flatMap((m) => [...m.keys()]))].sort((x, y) => parseFloat(x) - parseFloat(y) || String(x).localeCompare(String(y)));
+      const cols = codes.filter((c) => sec.byCode.has(c)), first = 1300, w = Math.min(1800, Math.floor((9e3 - first) / Math.max(1, cols.length)));
+      const head = `<w:tr><w:trPr><w:cantSplit/><w:tblHeader/></w:trPr>${cell(word2, first, true)}${cols.map((c) => cell(c ? `M\xE3 ${c}` : "\u0110\xE1p \xE1n", w, true)).join("")}</w:tr>`;
+      const rows = numbers.map((n) => `<w:tr><w:trPr><w:cantSplit/></w:trPr>${cell(n, first, true)}${cols.map((c) => {
+        var _a8;
+        return cell((_a8 = sec.byCode.get(c).get(n)) != null ? _a8 : "?", w, false);
+      }).join("")}</w:tr>`).join("");
+      if (sec.title) xml += `<w:p><w:pPr><w:keepNext/><w:spacing w:before="120"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t xml:space="preserve">${escapeXml(sec.title)}</w:t></w:r></w:p>`;
+      xml += `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${borders}</w:tblPr><w:tblGrid><w:gridCol w:w="${first}"/>${cols.map(() => `<w:gridCol w:w="${w}"/>`).join("")}</w:tblGrid>${head}${rows}</w:tbl><w:p/>`;
     }
     return xml;
   }
@@ -3960,7 +4144,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return out;
   }
-  var PPR_ORDER, tagName, buildPara, runText, unesc, isRun, isMath, hasObject, paragraphText, RE_PART, RE_QUESTION, RE_OPT, RE_STMT, RE_END, RE_ANSWER_LINE, RE_SHARED, RE_PINNED_OPTION, RE_EN_ORDER, RE_EN_PASSAGE, RE_OPTION_REF, partKind, stripMarks, labelRunFor, SPACE_RUN, TAB_RUN, RPR_ORDER, fontXml, sizeXml, xmlText, QWORD, RE_QN_GLOBAL, RE_QLEAD, RE_ROW_ABCD, cell;
+  var PPR_ORDER, tagName, buildPara, runText, unesc, isRun, isMath, hasObject, paragraphText, RE_PART, RE_QUESTION, RE_OPT, RE_STMT, RE_END, RE_ANSWER_LINE, RE_SHARED, RE_PINNED_OPTION, RE_EN_ORDER, RE_EN_PASSAGE, RE_OPTION_REF, partKind, isRedHex, RED_COLOR_TAG, hasRedColor, stripMarks, KEY_NUM, keyKind, underlineRun, labelRunFor, SPACE_RUN, TAB_RUN, RPR_ORDER, fontXml, sizeXml, xmlText, QWORD, RE_QN_GLOBAL, RE_QLEAD, RE_ROW_ABCD, cell;
   var init_exam = __esm({
     "src/exam.js"() {
       init_xml();
@@ -4026,7 +4210,31 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       RE_EN_PASSAGE = /read\s+(the|a|an)\s+(following\s+)?(\w+\s+)?(passage|text|advertisement|notice|leaflet|announcement|e-?mail|letter|message|poster|flyer|brochure|article|extract|story|conversation|dialogue)|numbered\s+blank|\(\s*\d{1,2}\s*\)/i;
       RE_OPTION_REF = /\b(both|either)\s+[A-D]\s+(and|or|&)\s+[A-D]\b|\b(A|B|C|D)\s*(,|và|&)\s*(A|B|C|D)\b.*(đúng|sai)|cả\s+[A-D]\s*(,|và)\s*[A-D]|(đáp\s*án|ý|phương\s*án)\s*[A-D]\b/i;
       partKind = (text) => /đúng\s*sai|đúng\s*hoặc\s*sai/i.test(text) ? "tf" : /trả\s*lời\s*ngắn|ngắn/i.test(text) ? "short" : /nhiều\s*(phương\s*án|lựa\s*chọn)|trắc\s*nghiệm/i.test(text) ? "mc" : "other";
-      stripMarks = (run4) => run4.replace(/<w:u\b[^>]*\/>/g, "").replace(/<w:highlight\b[^>]*\/>/g, "").replace(/<w:color\b[^>]*w:val="(?:FF0000|C00000|E00000|ff0000|c00000)"[^>]*\/>/g, "");
+      isRedHex = (hex3) => {
+        const m = /^([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex3 || "");
+        if (!m) return false;
+        const [r, g, b] = [m[1], m[2], m[3]].map((x) => parseInt(x, 16));
+        return r >= 160 && g <= 85 && b <= 85 && r - Math.max(g, b) >= 96;
+      };
+      RED_COLOR_TAG = /<w:color\b[^>]*\bw:val="([0-9a-fA-F]{6})"[^>]*\/>/g;
+      hasRedColor = (run4) => {
+        for (const m of run4.matchAll(RED_COLOR_TAG)) if (isRedHex(m[1])) return true;
+        return false;
+      };
+      stripMarks = (run4) => run4.replace(/<w:u\b[^>]*\/>/g, "").replace(/<w:highlight\b[^>]*\/>/g, "").replace(RED_COLOR_TAG, (tag, hex3) => isRedHex(hex3) ? "" : tag);
+      KEY_NUM = /^(?:C[âa]u|Question)?\s*(\d{1,3})\s*[.:)]?$/i;
+      keyKind = (v) => {
+        const t = String(v).replace(/ /g, " ").trim();
+        if (/^[A-D]$/.test(t)) return { kind: "mc", value: t };
+        const tf = t.replace(/\b[a-d]\s*[).:\-–]/gi, "").replace(/[\s,;\-–]/g, "");
+        if (/^[ĐSđs]{4}$/.test(tf)) return { kind: "tf", value: [...tf].map((c) => /[Đđ]/.test(c) ? "\u0110" : "S") };
+        if (/^-?\d[\d.,/]*$/.test(t)) return { kind: "short", value: t };
+        return null;
+      };
+      underlineRun = (run4) => {
+        const h = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(run4);
+        return h ? `${h[1]}${withRprChildren(h[2] ? h[2].trim() : "", { u: '<w:u w:val="single"/>' })}${run4.slice(h[0].length)}` : run4;
+      };
       labelRunFor = (letter, template3) => {
         const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(template3);
         let rpr2 = m && m[2] ? m[2] : "";
@@ -7479,6 +7687,84 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (o.showName !== false) cv.label(chemTex(m.f), [W / 2, H - 16], { size: 20 });
     return frame2(cv, W, H);
   }
+  function aromatic(o = {}) {
+    const m = AROMATICS[o.kind] || AROMATICS.benzene, cv = new Canvas2(), R = 34, circle = o.style === "circle", LW = 1.8;
+    const atoms = [], bonds = [], ringList = [];
+    const ringAtoms = (c, a0) => Array.from({ length: 6 }, (_x, i) => atoms.push([c[0] + R * Math.cos(rad(a0 + 60 * i)), c[1] + R * Math.sin(rad(a0 + 60 * i))]) - 1);
+    if (m.fused) {
+      const d = Math.sqrt(3) * R, cL = [-d / 2, 0], cR = [d / 2, 0];
+      const L = ringAtoms(cL, -90), Rr = ringAtoms(cR, -90);
+      Rr[5] = L[1];
+      Rr[4] = L[2];
+      atoms.length = Rr[3] + 1;
+      const edges = [
+        [L[0], L[1], cL],
+        [L[1], L[2], cL],
+        [L[2], L[3], cL],
+        [L[3], L[4], cL],
+        [L[4], L[5], cL],
+        [L[5], L[0], cL],
+        [Rr[0], Rr[1], cR],
+        [Rr[1], Rr[2], cR],
+        [Rr[2], Rr[3], cR],
+        [Rr[3], Rr[4], cR],
+        [Rr[5], Rr[0], cR]
+      ];
+      const dbls = new Set([[L[0], L[5]], [L[3], L[4]], [L[1], L[2]], [Rr[0], Rr[1]], [Rr[2], Rr[3]]].map(([i, j]) => `${Math.min(i, j)}-${Math.max(i, j)}`));
+      for (const [i, j, c] of edges) bonds.push([i, j, !circle && dbls.has(`${Math.min(i, j)}-${Math.max(i, j)}`) ? 2 : 1, c]);
+      ringList.push(cL, cR);
+    } else {
+      m.rings.forEach((r, ri) => {
+        const idx = ringAtoms([r.c[0] * R, r.c[1] * R], r.a0);
+        for (let i = 0; i < 6; i++) bonds.push([idx[i], idx[(i + 1) % 6], !circle && i % 2 === 0 ? 2 : 1, [r.c[0] * R, r.c[1] * R]]);
+        ringList.push([r.c[0] * R, r.c[1] * R]);
+        r.idx = idx;
+      });
+      if (m.link) bonds.push([m.rings[0].idx[m.link[0][1]], m.rings[1].idx[m.link[1][1]], 1, null]);
+    }
+    const labels = [];
+    const ring0 = m.fused ? null : m.rings[0];
+    for (const [k, sub0] of Object.entries(m.subs || {})) {
+      const i = ring0.idx[Number(k)], p2 = atoms[i], ang = -90 + 60 * Number(k);
+      if (typeof sub0 === "string") {
+        const dir = [Math.cos(rad(ang)), Math.sin(rad(ang))], end = add2(p2, mul2(dir, R));
+        const left = Math.cos(rad(ang)) < -0.1, right = Math.cos(rad(ang)) > 0.1, text = left ? MIRROR[sub0] || sub0 : sub0;
+        bonds.push([i, atoms.push(end) - 1, 1, null, true]);
+        labels.push([chemTex(text), left ? [end[0] - 4, end[1]] : right ? [end[0] + 4, end[1]] : add2(end, mul2(dir, 13)), left ? "r" : right ? "l" : "c"]);
+      } else {
+        let cur = i, a = p2;
+        for (const [da, order] of sub0.chain) {
+          const e3 = add2(a, [R * Math.cos(rad(da)), R * Math.sin(rad(da))]);
+          const j = atoms.push(e3) - 1;
+          bonds.push([cur, j, order, null]);
+          cur = j;
+          a = e3;
+        }
+      }
+    }
+    const pad = 30, xsAll = atoms.map((a) => a[0]), ysAll = atoms.map((a) => a[1]);
+    const lab = labels.map(([, p2, an]) => [p2[0] - (an === "r" ? 40 : 0), p2[0] + (an === "l" ? 40 : an === "c" ? 14 : 0)]).flat();
+    const minx = Math.min(...xsAll, ...lab) - pad, maxx = Math.max(...xsAll, ...lab) + pad, miny = Math.min(...ysAll) - pad, maxy = Math.max(...ysAll) + pad;
+    const nameH = o.showName !== false ? 40 : 0, W = Math.max(210, maxx - minx, o.showName !== false ? (m.name.length + m.f.replace(/[_{}]/g, "").length) * 9 + 50 : 0), H = maxy - miny + nameH;
+    const ox = W / 2 - (minx + maxx) / 2, oy = -miny;
+    const T = (p2) => [p2[0] + ox, p2[1] + oy];
+    for (const [i, j, order, c, labelled] of bonds) {
+      let A = atoms[i], B = atoms[j];
+      cv.line(T(A), T(B), { w: LW, color: "#000" });
+      if (order === 2 && c) {
+        const d = unit2(sub2(B, A)), n = [-d[1], d[0]], ctr = sub2(c, mul2(add2(A, B), 0.5)), sgn2 = n[0] * ctr[0] + n[1] * ctr[1] >= 0 ? 1 : -1, L = len2(sub2(B, A));
+        const a2 = add2(add2(A, mul2(d, L * 0.14)), mul2(n, 5.5 * sgn2)), b2 = add2(sub2(B, mul2(d, L * 0.14)), mul2(n, 5.5 * sgn2));
+        cv.line(T(a2), T(b2), { w: LW, color: "#000" });
+      } else if (order === 2) {
+        const d = unit2(sub2(B, A)), n = [-d[1], d[0]];
+        cv.line(T(add2(A, mul2(n, 4))), T(add2(B, mul2(n, 4))), { w: LW, color: "#000" });
+      }
+    }
+    if (circle) ringList.forEach((c) => cv.circle(T(c), R * 0.62, { w: 1.6, color: "#000" }));
+    labels.forEach(([tex, p2, an]) => cv.label(tex, T(p2), { size: 18, anchor: an }));
+    if (o.showName !== false) cv.label(`\\text{${m.name}}\\ (${chemTex(m.f)})`, [W / 2, H - 18], { size: 17 });
+    return frame2(cv, W, H);
+  }
   function atomModel(o = {}) {
     const z = Math.max(1, Math.min(20, Number(o.z) || 11)), sh = shells(z), cv = new Canvas2();
     const R = 30 + 26 * sh.length, W = 2 * R + 60, H = 2 * R + 60 + (o.showName !== false ? 34 : 0), c = [W / 2, R + 30];
@@ -7495,7 +7781,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (o.showName !== false) cv.label(`\\text{${ELEMENTS[z - 1]}}:\\ ${sh.join(",")}`, [W / 2, H - 14], { size: 17 });
     return frame2(cv, W, H);
   }
-  var liqColor, LIQ, fillPoly, tubeLocal, place, erlenHalf, WARE, EL, hex, MOLECULES, chemTex, MOLECULE_CHOICES, ELEMENTS, VN, ELEMENT_CHOICES, shells, CHEMISTRY;
+  var liqColor, LIQ, fillPoly, tubeLocal, place, erlenHalf, WARE, EL, hex, MOLECULES, chemTex, MOLECULE_CHOICES, MIRROR, ringOf, AROMATICS, AROMATIC_CHOICES, ELEMENTS, VN, ELEMENT_CHOICES, shells, CHEMISTRY;
   var init_chem = __esm({
     "src/figures/chem.js"() {
       init_sci_kit();
@@ -7579,6 +7865,33 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       };
       chemTex = (f) => f.replace(/([A-Za-z]+)|_(\d+)/g, (_m, el, n) => el ? `\\text{${el}}` : `_{${n}}`);
       MOLECULE_CHOICES = Object.entries(MOLECULES).map(([k, m]) => [k, m.name]);
+      MIRROR = { CH_3: "H_3C", OH: "HO", NH_2: "H_2N", NO_2: "O_2N", COOH: "HOOC", CHO: "OHC" };
+      ringOf = (subs, extra = {}) => __spreadValues({ rings: [{ c: [0, 0], a0: -90 }], subs }, extra);
+      AROMATICS = {
+        benzene: __spreadValues({ name: "Benzen", f: "C_6H_6" }, ringOf({})),
+        toluene: __spreadValues({ name: "Toluen", f: "C_6H_5CH_3" }, ringOf({ 0: "CH_3" })),
+        ethylbenzene: __spreadValues({ name: "Etylbenzen", f: "C_6H_5C_2H_5" }, ringOf({ 0: { chain: [[-90, 1], [-30, 1]] } })),
+        styrene: __spreadValues({ name: "Stiren", f: "C_6H_5CH=CH_2" }, ringOf({ 0: { chain: [[-90, 1], [-30, 2]] } })),
+        phenol: __spreadValues({ name: "Phenol", f: "C_6H_5OH" }, ringOf({ 0: "OH" })),
+        aniline: __spreadValues({ name: "Anilin", f: "C_6H_5NH_2" }, ringOf({ 0: "NH_2" })),
+        chlorobenzene: __spreadValues({ name: "Clobenzen", f: "C_6H_5Cl" }, ringOf({ 0: "Cl" })),
+        bromobenzene: __spreadValues({ name: "Brombenzen", f: "C_6H_5Br" }, ringOf({ 0: "Br" })),
+        nitrobenzene: __spreadValues({ name: "Nitrobenzen", f: "C_6H_5NO_2" }, ringOf({ 0: "NO_2" })),
+        benzaldehyde: __spreadValues({ name: "Benzan\u0111ehit", f: "C_6H_5CHO" }, ringOf({ 0: "CHO" })),
+        benzoic: __spreadValues({ name: "Axit benzoic", f: "C_6H_5COOH" }, ringOf({ 0: "COOH" })),
+        o_xylene: __spreadValues({ name: "o-Xilen", f: "C_6H_4(CH_3)_2" }, ringOf({ 0: "CH_3", 1: "CH_3" })),
+        m_xylene: __spreadValues({ name: "m-Xilen", f: "C_6H_4(CH_3)_2" }, ringOf({ 0: "CH_3", 2: "CH_3" })),
+        p_xylene: __spreadValues({ name: "p-Xilen", f: "C_6H_4(CH_3)_2" }, ringOf({ 0: "CH_3", 3: "CH_3" })),
+        o_cresol: __spreadValues({ name: "o-Crezol", f: "CH_3C_6H_4OH" }, ringOf({ 0: "OH", 1: "CH_3" })),
+        m_cresol: __spreadValues({ name: "m-Crezol", f: "CH_3C_6H_4OH" }, ringOf({ 0: "OH", 2: "CH_3" })),
+        p_cresol: __spreadValues({ name: "p-Crezol", f: "CH_3C_6H_4OH" }, ringOf({ 0: "OH", 3: "CH_3" })),
+        tnt: __spreadValues({ name: "2,4,6-Trinitrotoluen (TNT)", f: "C_6H_2(NO_2)_3CH_3" }, ringOf({ 0: "CH_3", 1: "NO_2", 3: "NO_2", 5: "NO_2" })),
+        picric: __spreadValues({ name: "Axit picric (2,4,6-trinitrophenol)", f: "C_6H_2(NO_2)_3OH" }, ringOf({ 0: "OH", 1: "NO_2", 3: "NO_2", 5: "NO_2" })),
+        tribromophenol: __spreadValues({ name: "2,4,6-Tribromphenol", f: "C_6H_2Br_3OH" }, ringOf({ 0: "OH", 1: "Br", 3: "Br", 5: "Br" })),
+        biphenyl: { name: "Biphenyl", f: "C_6H_5-C_6H_5", rings: [{ c: [-1.5, 0], a0: 0 }, { c: [1.5, 0], a0: 0 }], subs: {}, link: [[0, 0], [1, 3]] },
+        naphthalene: { name: "Naphtalen", f: "C_{10}H_8", fused: true, subs: {} }
+      };
+      AROMATIC_CHOICES = Object.entries(AROMATICS).map(([k, m]) => [k, m.name]);
       ELEMENTS = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al", "Si", "P", "S", "Cl", "Ar", "K", "Ca"];
       VN = ["Hi\u0111ro", "Heli", "Liti", "Beri", "Bo", "Cacbon", "Nit\u01A1", "Oxi", "Flo", "Neon", "Natri", "Magie", "Nh\xF4m", "Silic", "Photpho", "L\u01B0u hu\u1EF3nh", "Clo", "Agon", "Kali", "Canxi"];
       ELEMENT_CHOICES = ELEMENTS.map((s, i) => [String(i + 1), `${i + 1} \u2013 ${VN[i]} (${s})`]);
@@ -7614,6 +7927,13 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           make: molecule,
           names: "",
           options: [["kind", "Ph\xE2n t\u1EED", MOLECULE_CHOICES], ["style", "Ki\u1EC3u", [["structural", "C\xF4ng th\u1EE9c c\u1EA5u t\u1EA1o"], ["ball", "M\xF4 h\xECnh qu\u1EA3 c\u1EA7u \u2013 que"]]], ["showName", "Ghi c\xF4ng th\u1EE9c"]]
+        },
+        {
+          id: "aromatic",
+          label: "H\u1EE3p ch\u1EA5t th\u01A1m (v\xF2ng benzen)",
+          make: aromatic,
+          names: "",
+          options: [["kind", "Ch\u1EA5t", AROMATIC_CHOICES], ["style", "Ki\u1EC3u v\xF2ng", [["kekule", "Kekul\xE9 (3 li\xEAn k\u1EBFt \u0111\xF4i)"], ["circle", "V\xF2ng tr\xF2n (h\u1EC7 th\u01A1m)"]]], ["showName", "Ghi t\xEAn v\xE0 c\xF4ng th\u1EE9c"]]
         },
         {
           id: "atom",
@@ -9328,10 +9648,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         flush();
         const tex = s.slice(i + 1, j);
         try {
-          const parts = tex.split(BLANK_RE);
-          parts.forEach((part, k) => {
-            if (k) out += blankRun(ctx);
-            if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
+          tex.split(BLANK_SPLIT).forEach((part) => {
+            const b = BLANK_RE.test(part) && /^\\boxed\{\\phantom\{([^}]*)\}\}$/.exec(part);
+            if (b) out += blankRun(ctx, b[1].length);
+            else if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
           });
         } catch (e3) {
           out += run4(tex.replace(/\\[a-zA-Z]+/g, "").replace(/[{}]/g, ""));
@@ -9649,7 +9969,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const media = images.map((im) => `<pkg:part pkg:name="/word/media/${im.rid}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b643(im.png)}</pkg:binaryData></pkg:part>`).join("");
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?mso-application progid="Word.Document"?><pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${NS3}><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part>${images.length ? `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${rels}</Relationships></pkg:xmlData></pkg:part>` : ""}${media}</pkg:package>`;
   }
-  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, blankRun, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
+  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
   var init_worksheet_docx = __esm({
     "src/worksheet-docx.js"() {
       init_latex2omml();
@@ -9661,9 +9981,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       SHAPES = { shapecircle: "\u26AA", shaperectangle: "\u25AD", shapesquare: "\u2B1C", shapetriangle: "\u25B3" };
       emojiOf = (id, cps) => cps[id] ? String.fromCodePoint(...String(cps[id]).split("-").map((h) => parseInt(h, 16))) : SHAPES[id] || "\u25CF";
       BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
-      blankRun = (ctx) => {
-        const k = Math.max(0.6, (ctx.fs || 16) / 16);
-        return sceneRun(tikzToScene(`\\draw[line width=1pt] (0,0) rectangle (${(1.1 * k).toFixed(2)},${(0.85 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, "\xD4 tr\u1ED1ng");
+      BLANK_SPLIT = /(\\boxed\{\\phantom\{[^}]*\}\})/;
+      blankRun = (ctx, chars = 2) => {
+        const k = Math.max(0.6, (ctx.fs || 16) / 16), wide = chars > 1 ? 1 : 0.78;
+        return sceneRun(tikzToScene(`\\draw[line width=0.8pt] (0,0) rectangle (${(0.72 * wide * k).toFixed(2)},${(0.62 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, "\xD4 tr\u1ED1ng");
       };
       para = (inner, o = {}) => {
         var _a8, _b;
@@ -11885,13 +12206,18 @@ ${contentTypesOverrides}
       <select id="ex-msize"><option value="text">b\u1EB1ng c\u1EE1 ch\u1EEF</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="0">gi\u1EEF nguy\xEAn</option></select></label>
     <label><input type="checkbox" id="ex-labels" checked> nh\xE3n A. B. C. D. in \u0111\u1EADm, vi\u1EBFt hoa, d\u1EA5u ch\u1EA5m</label>
     <label><input type="checkbox" id="ex-qformat" checked> nh\xE3n \u201CC\xE2u N.\u201D / \u201CB\xE0i N.\u201D c\xF9ng \u0111\u1ECBnh d\u1EA1ng v\u1EDBi c\xE2u \u0111\u1EA7u ti\xEAn</label>
+    <div class="subhead">Nh\xE3n \u201CC\xE2u N.\u201D</div>
+    <label><input type="checkbox" id="ex-qbold" checked> in \u0111\u1EADm nh\xE3n c\xE2u</label>
+    <label class="field"><span>M\xE0u nh\xE3n c\xE2u</span>
+      <select id="ex-qcolor"><option value="">gi\u1EEF nguy\xEAn (t\u1EF1 \u0111\u1ED9ng)</option><option value="000000">\u0111en</option><option value="C00000">\u0111\u1ECF \u0111\u1EADm</option><option value="0000FF">xanh d\u01B0\u01A1ng</option><option value="1F4E79">xanh navy</option><option value="006100">xanh l\u1EE5c</option><option value="7030A0">t\xEDm</option><option value="ED7D31">cam</option><option value="custom">m\xE0u kh\xE1c\u2026</option></select><input type="color" id="ex-qcolor-custom" value="#c00000" hidden style="margin-left:6px"></label>
+    <label><input type="checkbox" id="ex-qbreak"> xu\u1ED1ng d\xF2ng sau nh\xE3n (n\u1ED9i dung c\xE2u h\u1ECFi b\u1EAFt \u0111\u1EA7u \u1EDF d\xF2ng m\u1EDBi)</label>
     <label><input type="checkbox" id="ex-keep" checked> gi\u1EEF c\xE2u h\u1ECFi v\xE0 ph\u01B0\u01A1ng \xE1n c\xF9ng trang (keep with next)</label>
     <label><input type="checkbox" id="ex-backup1"> T\xF4i \u0111\xE3 l\u01B0u m\u1ED9t b\u1EA3n sao t\xE0i li\u1EC7u</label>
     <div class="btns"><button class="primary" id="ex-normalize">Chu\u1EA9n h\xF3a</button></div>
     <div id="ex-norm-out"></div>
   </fieldset>
   <fieldset><legend>3. Tr\u1ED9n \u0111\u1EC1 &amp; b\u1EA3ng \u0111\xE1p \xE1n</legend>
-    <div class="grid3"><label class="field"><span>S\u1ED1 m\xE3 \u0111\u1EC1</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>M\xE3 \u0111\u1EC1 \u0111\u1EA7u</span><input type="number" id="ex-code" value="101"></label><label class="field"><span>H\u1EA1t gi\u1ED1ng</span><input type="number" id="ex-seed" value="2026"></label></div>
+    <div class="grid3"><label class="field"><span>S\u1ED1 m\xE3 \u0111\u1EC1</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>M\xE3 \u0111\u1EC1 (c\xE1ch nhau d\u1EA5u ph\u1EA9y)</span><input type="text" id="ex-code" value="1001" placeholder="1001 ho\u1EB7c 1001, 1002, A1\u2026" spellcheck="false" title="M\u1ED9t s\u1ED1: m\xE3 \u0111\u1EC1 \u0111\u1EA7u, c\xE1c m\xE3 sau t\u0103ng d\u1EA7n (4 ch\u1EEF s\u1ED1). Nhi\u1EC1u m\xE3 c\xE1ch nhau d\u1EA5u ph\u1EA9y: d\xF9ng \u0111\xFAng c\xE1c m\xE3 \u0111\xF3, kh\xF4ng c\u1EA7n \u2018S\u1ED1 m\xE3 \u0111\u1EC1\u2019."></label><label class="field"><span>H\u1EA1t gi\u1ED1ng</span><input type="number" id="ex-seed" value="2026"></label></div>
     <label><input type="checkbox" id="ex-shq" checked> tr\u1ED9n th\u1EE9 t\u1EF1 c\xE2u trong t\u1EEBng ph\u1EA7n</label>
     <label><input type="checkbox" id="ex-sho" checked> tr\u1ED9n th\u1EE9 t\u1EF1 ph\u01B0\u01A1ng \xE1n A\u2013D (gi\u1EEF nguy\xEAn c\xE2u c\xF3 \u201Cc\u1EA3 A v\xE0 B\u2026\u201D, \u201Ct\u1EA5t c\u1EA3 c\xE1c \u0111\xE1p \xE1n\u2026\u201D)</label>
     <label><input type="checkbox" id="ex-shs"> tr\u1ED9n c\u1EA3 th\u1EE9 t\u1EF1 \xFD a) b) c) d) \u1EDF ph\u1EA7n \u0111\xFAng sai</label>
@@ -11912,7 +12238,7 @@ ${contentTypesOverrides}
         <label class="field"><span>L\u1EDBp</span><input type="text" id="ex-f-lop" placeholder="vd. 12"></label>
         <label class="field"><span>Th\u1EDDi gian (ph\xFAt)</span><input type="text" id="ex-f-thoiGian" placeholder="vd. 90"></label>
       </div>
-      <div class="btns two"><button class="secondary" id="ex-f-reset">Kh\xF4i ph\u1EE5c m\u1EB7c \u0111\u1ECBnh</button><button class="secondary" id="ex-f-insert" title="Ch\xE8n kh\u1ED1i ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF, m\xE3 \u0111\u1EC1 l\u1EA5y t\u1EEB \xF4 \u201CM\xE3 \u0111\u1EC1 \u0111\u1EA7u ti\xEAn\u201D">Ch\xE8n ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF</button></div>
+      <div class="btns two"><button class="secondary" id="ex-f-reset">Kh\xF4i ph\u1EE5c m\u1EB7c \u0111\u1ECBnh</button><button class="secondary" id="ex-f-insert" title="Ch\xE8n kh\u1ED1i ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF, m\xE3 \u0111\u1EC1 l\u1EA5y t\u1EEB \xF4 \u201CM\xE3 \u0111\u1EC1\u201D (m\xE3 \u0111\u1EA7u ti\xEAn)">Ch\xE8n ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF</button></div>
     </details>
     <label class="field"><span>N\u01A1i \u0111\u1EB7t k\u1EBFt qu\u1EA3</span>
       <select id="ex-target"><option value="new">m\u1ED7i m\xE3 \u0111\u1EC1 m\u1ED9t t\xE0i li\u1EC7u m\u1EDBi</option><option value="append">ch\xE8n n\u1ED1i ti\u1EBFp v\xE0o cu\u1ED1i t\xE0i li\u1EC7u n\xE0y</option><option value="none">ch\u1EC9 l\u1EADp b\u1EA3ng \u0111\xE1p \xE1n (kh\xF4ng t\u1EA1o \u0111\u1EC1)</option></select></label>
@@ -11941,16 +12267,24 @@ ${contentTypesOverrides}
   </fieldset>`;
     const $2 = (id) => root.querySelector("#" + id);
     let lastCsv = "";
+    function codeList(n) {
+      const raw = $2("ex-code").value.split(/[,;\s]+/).map((x) => x.trim()).filter(Boolean);
+      if (raw.length > 1) return raw;
+      const first = /^\d+$/.test(raw[0] || "") ? Number(raw[0]) : 1001;
+      const w = Math.max(4, String(raw[0] || "").length);
+      if (raw[0] && !/^\d+$/.test(raw[0])) return [raw[0]];
+      return Array.from({ length: Math.max(1, n) }, (_x, i) => String(first + i).padStart(w, "0"));
+    }
     let lastVersions = null;
     async function body() {
       const { pkg } = await io.readBody();
       return pkg;
     }
     async function preparedBody() {
-      const prep = prepareEnglish(await body());
-      return prep;
+      const prep = prepareEnglish(await body()), key = applyAnswerKey(prep.pkg);
+      return __spreadProps(__spreadValues({}, prep), { pkg: key.pkg, changed: prep.changed || key.changed, stats: __spreadProps(__spreadValues({}, prep.stats), { keyed: key.count }) });
     }
-    const prepNote = (prep) => prep.changed ? `<div class="muted">\u0110\xE3 t\u1EF1 chu\u1EA9n h\xF3a b\u1ED1 c\u1EE5c trong b\u1ED9 nh\u1EDB (${prep.stats.tables} b\u1EA3ng, ${prep.stats.split} ch\u1ED7 t\xE1ch, ${prep.stats.labels} nh\xE3n A\u2013D t\u1EF1 \u0111\xE1nh s\u1ED1); t\xE0i li\u1EC7u g\u1ED1c kh\xF4ng b\u1ECB s\u1EEDa. B\u1EA5m \u201CChu\u1EA9n h\xF3a\u201D n\u1EBFu mu\u1ED1n ghi b\u1ED1 c\u1EE5c n\xE0y v\xE0o t\xE0i li\u1EC7u.</div>` : "";
+    const prepNote = (prep) => prep.changed ? `<div class="muted">\u0110\xE3 t\u1EF1 chu\u1EA9n h\xF3a b\u1ED1 c\u1EE5c trong b\u1ED9 nh\u1EDB (${prep.stats.tables} b\u1EA3ng, ${prep.stats.split} ch\u1ED7 t\xE1ch, ${prep.stats.labels} nh\xE3n A\u2013D t\u1EF1 \u0111\xE1nh s\u1ED1${prep.stats.keyed ? `, ${prep.stats.keyed} \u0111\xE1p \xE1n \u0111\u1ECDc t\u1EEB b\u1EA3ng \u0111\xE1p \xE1n cu\u1ED1i \u0111\u1EC1` : ""}); t\xE0i li\u1EC7u g\u1ED1c kh\xF4ng b\u1ECB s\u1EEDa. B\u1EA5m \u201CChu\u1EA9n h\xF3a\u201D n\u1EBFu mu\u1ED1n ghi b\u1ED1 c\u1EE5c n\xE0y v\xE0o t\xE0i li\u1EC7u.</div>` : "";
     const chips = (list3) => list3.length ? `<div class="chips-title">C\xE2u ch\u01B0a c\xF3 \u0111\xE1p \xE1n \u2014 b\u1EA5m \u0111\u1EC3 chuy\u1EC3n t\u1EDBi trong Word (${list3.length}):</div><div class="chips">${list3.map((q) => `<button type="button" class="chip" data-p="${q.paragraph}" title="Chuy\u1EC3n t\u1EDBi ${esc12(q.label)} trong Word">${esc12(q.label)}</button>`).join("")}</div>` : "";
     root.addEventListener("click", async (ev) => {
       const b = ev.target.closest(".chip");
@@ -11998,6 +12332,10 @@ ${contentTypesOverrides}
         fail3($2("ex-summary"), e3);
       }
     });
+    const qColor = () => $2("ex-qcolor").value === "custom" ? $2("ex-qcolor-custom").value.replace("#", "").toUpperCase() : $2("ex-qcolor").value;
+    $2("ex-qcolor").addEventListener("change", () => {
+      $2("ex-qcolor-custom").hidden = $2("ex-qcolor").value !== "custom";
+    });
     $2("ex-normalize").addEventListener("click", async () => {
       if (!$2("ex-backup1").checked) {
         $2("ex-norm-out").innerHTML = '<span class="warn">H\xE3y l\u01B0u m\u1ED9t b\u1EA3n sao t\xE0i li\u1EC7u r\u1ED3i tick \xF4 x\xE1c nh\u1EADn.</span>';
@@ -12010,6 +12348,9 @@ ${contentTypesOverrides}
           labelWord: $2("ex-word").value,
           labels: $2("ex-labels").checked,
           questionFormat: $2("ex-qformat").checked,
+          qBold: $2("ex-qbold").checked,
+          qColor: qColor(),
+          qBreak: $2("ex-qbreak").checked,
           keepNext: $2("ex-keep").checked,
           layout: layout2 === "false" ? false : layout2,
           font: $2("ex-font").value,
@@ -12062,7 +12403,7 @@ ${contentTypesOverrides}
     $2("ex-f-insert").addEventListener("click", async () => {
       const out = $2("ex-shuffle-out");
       try {
-        await io.replaceSelection(simplePackage(examHeaderXml(readForm(), $2("ex-code").value.trim())));
+        await io.replaceSelection(simplePackage(examHeaderXml(readForm(), codeList(1)[0])));
         out.innerHTML = '<span class="ok">\u0110\xE3 ch\xE8n kh\u1ED1i ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF.</span>';
       } catch (e3) {
         fail3(out, e3);
@@ -12078,13 +12419,14 @@ ${contentTypesOverrides}
       const out = $2("ex-shuffle-out"), bar = $2("ex-progress");
       try {
         const prep = await preparedBody(), pkg = prep.pkg;
-        const n = Number($2("ex-n").value), first = Number($2("ex-code").value), seed = Number($2("ex-seed").value);
+        const codes = codeList(Number($2("ex-n").value)), n = codes.length, seed = Number($2("ex-seed").value);
+        if (new Set(codes).size !== n) throw new Error("C\xE1c m\xE3 \u0111\u1EC1 b\u1ECB tr\xF9ng nhau: h\xE3y nh\u1EADp m\u1ED7i m\xE3 m\u1ED9t l\u1EA7n.");
         const target = $2("ex-target").value;
         const origA = analyze(parseBody(pkg));
         const sectionModes = sectionsUi(origA), qWord = origA.english ? "Question" : "C\xE2u";
         const versions = [];
         for (let i = 0; i < n; i++) {
-          const code = String(first + i);
+          const code = codes[i];
           const r = shuffleVersion(pkg, __spreadProps(__spreadValues({}, options()), { seed: seed + i * 7919, code, sectionModes }));
           versions.push(__spreadValues({ code }, r));
           bar.hidden = false;
@@ -12121,6 +12463,10 @@ ${contentTypesOverrides}
           for (const v of versions) await io.insertAtEnd(decorate(v.pkg, v.code));
           note = `\u0110\xE3 ch\xE8n ${versions.length} \u0111\u1EC1 v\xE0o cu\u1ED1i t\xE0i li\u1EC7u.`;
         }
+        if (target !== "new" && ($2("ex-withkey").checked || target === "none")) {
+          await io.insertAtEnd(wrap2(answerTableXml(table3.groups, "B\u1EA2NG \u0110\xC1P \xC1N C\xC1C M\xC3 \u0110\u1EC0", qWord)));
+          note += " \u0110\xE3 ch\xE8n b\u1EA3ng \u0111\xE1p \xE1n chung (m\u1ED7i m\xE3 \u0111\u1EC1 m\u1ED9t c\u1ED9t).";
+        }
         const warns = [...new Set(versions.flatMap((v) => [
           ...v.report.sharedParts.length ? [`Kh\xF4ng tr\u1ED9n th\u1EE9 t\u1EF1 c\xE2u \u1EDF: ${v.report.sharedParts.join("; ")} (c\xF3 c\xE2u d\xF9ng chung d\u1EEF ki\u1EC7n)`] : [],
           ...v.report.keptSections.length ? [`Gi\u1EEF nguy\xEAn th\u1EE9 t\u1EF1 c\xE2u \u1EDF: ${v.report.keptSections.join(", ")}`] : [],
@@ -12129,14 +12475,20 @@ ${contentTypesOverrides}
         ]))];
         const origModel = parseBody(pkg);
         const unansweredChips = chips(unansweredQuestions(origModel, origA));
-        out.innerHTML = `<p class="ok"><b>${versions.length} m\xE3 \u0111\u1EC1</b> \u0111\xE3 t\u1EA1o. ${esc12(note)}</p>` + prepNote(prep) + (unknown ? `<p class="warn">${unknown} c\xE2u ch\u01B0a nh\u1EADn \u0111\u01B0\u1EE3c \u0111\xE1p \xE1n (nh\xE3n \u0111\xFAng ch\u01B0a \u0111\u01B0\u1EE3c g\u1EA1ch ch\xE2n / t\xF4 \u0111\u1ECF): b\u1EA3ng \u0111\xE1p \xE1n ghi \u201C?\u201D.</p>${prep.changed ? "" : unansweredChips}` : "") + (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc12(w)}</li>`).join("")}</ul>` : "") + `<div class="scroll"><table><tbody>${table3.groups.filter((g) => g.kind === "mc").map((g) => `<tr><td><b>${esc12(g.code)}</b></td><td>${g.items.map((i) => {
-          var _a8;
-          return `${i.number}${esc12((_a8 = i.value) != null ? _a8 : "?")}`;
-        }).join(" ")}</td></tr>`).join("")}</tbody></table></div>`;
+        out.innerHTML = `<p class="ok"><b>${versions.length} m\xE3 \u0111\u1EC1</b> \u0111\xE3 t\u1EA1o. ${esc12(note)}</p>` + prepNote(prep) + (unknown ? `<p class="warn">${unknown} c\xE2u ch\u01B0a nh\u1EADn \u0111\u01B0\u1EE3c \u0111\xE1p \xE1n (nh\xE3n \u0111\xFAng ch\u01B0a \u0111\u01B0\u1EE3c g\u1EA1ch ch\xE2n / t\xF4 \u0111\u1ECF): b\u1EA3ng \u0111\xE1p \xE1n ghi \u201C?\u201D.</p>${prep.changed ? "" : unansweredChips}` : "") + (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc12(w)}</li>`).join("")}</ul>` : "") + answerPreview(table3.groups, qWord);
       } catch (e3) {
         fail3(out, e3);
       }
     });
+    function answerPreview(groups, word2) {
+      const mc = groups.filter((g) => g.kind === "mc"), codes = [...new Set(mc.map((g) => String(g.code)))];
+      const at2 = new Map(mc.map((g) => [String(g.code), new Map(g.items.map((i) => [i.number, i.value]))]));
+      const nums = [...new Set(mc.flatMap((g) => g.items.map((i) => i.number)))].sort((a, b) => a - b);
+      return `<div class="scroll"><table><thead><tr><th>${esc12(word2)}</th>${codes.map((c) => `<th>${esc12(c)}</th>`).join("")}</tr></thead><tbody>${nums.map((n) => `<tr><td><b>${n}</b></td>${codes.map((c) => {
+        var _a8;
+        return `<td>${esc12((_a8 = at2.get(c).get(n)) != null ? _a8 : "?")}</td>`;
+      }).join("")}</tr>`).join("")}</tbody></table></div>`;
+    }
     $2("ex-key").addEventListener("click", async () => {
       const out = $2("ex-shuffle-out");
       try {
@@ -12155,7 +12507,7 @@ ${contentTypesOverrides}
       return `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part></pkg:package>`;
     }
     async function exportVersions() {
-      const pkg = lastVersions ? lastVersions.pkg : await body();
+      const pkg = lastVersions ? lastVersions.pkg : (await preparedBody()).pkg;
       const list3 = lastVersions ? lastVersions.versions.slice() : [];
       if (!list3.length) throw new Error("Ch\u01B0a c\xF3 m\xE3 \u0111\u1EC1 n\xE0o: b\u1EA5m \u201CT\u1EA1o \u0111\u1EC1\u201D tr\u01B0\u1EDBc (ho\u1EB7c d\xF9ng \u201CCh\xE8n b\u1EA3ng \u0111\xE1p \xE1n \u0111\u1EC1 hi\u1EC7n t\u1EA1i\u201D).");
       if ($2("ex-orig").checked) {
@@ -13411,7 +13763,14 @@ ${contentTypesOverrides}
     "latex:mathtype": "M\xE3 LaTeX ($\u2026$, $$\u2026$$, \\(\u2026\\), \\[\u2026\\]) \u0111\u01B0\u1EE3c chuy\u1EC3n th\xE0nh \u0111\u1ED1i t\u01B0\u1EE3ng MathType m\u1EDBi (m\xE1y kh\xF4ng c\u1EA7n c\xE0i MathType \u0111\u1EC3 xem). C\xE1c c\xF4ng th\u1EE9c Word c\xF3 s\u1EB5n trong ph\u1EA1m vi c\u0169ng b\u1ECB \u0111\u1ED5i sang MathType.",
     "word:mathtype": "C\xF4ng th\u1EE9c Word \u0111\u01B0\u1EE3c chuy\u1EC3n th\xE0nh \u0111\u1ED1i t\u01B0\u1EE3ng MathType m\u1EDBi (m\xE1y kh\xF4ng c\u1EA7n c\xE0i MathType \u0111\u1EC3 xem; s\u1EEDa b\u1EB1ng MathType khi c\xF3)."
   };
+  var DST_FOR = { latex: ["mathtype", "word"], word: ["mathtype", "latex"], mathtype: ["mathtype", "latex", "word"] };
   function syncConvertUi() {
+    const ok = DST_FOR[convSrc()] || [];
+    const dstEl = $("conv-dst");
+    [...dstEl.options].forEach((o) => {
+      o.hidden = o.disabled = !ok.includes(o.value);
+    });
+    if (!ok.includes(dstEl.value)) dstEl.value = ok.includes("word") ? "word" : ok[0];
     const s = convSrc(), d = convDst();
     $("conv-hint").textContent = CONV_HINTS[s === d ? `same:${s}` : `${s}:${d}`] || "";
     $("mt-settings-convert").hidden = d !== "mathtype";
@@ -13687,6 +14046,14 @@ ${contentTypesOverrides}
       $("diag-log").textContent = "L\u1ED7i: " + e3.message;
     }
   });
+  $("btn-guide").addEventListener("click", () => {
+    const url = "https://giasu.ai.vn/word-addin/su-dung.html";
+    try {
+      window.open(url, "_blank", "noopener");
+    } catch (e3) {
+      location.href = url;
+    }
+  });
   $("copy-acct").addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText("4802518888");
@@ -13705,7 +14072,7 @@ ${contentTypesOverrides}
       var _a8, _b;
       document.dispatchEvent(new CustomEvent("texcraft:selection"));
       if (!((_a8 = $("editor-auto")) == null ? void 0 : _a8.checked) || !((_b = $("tab-editor")) == null ? void 0 : _b.classList.contains("active"))) return;
-      if (document.activeElement === $("editor-latex")) return;
+      if (document.hasFocus() && document.activeElement === $("editor-latex")) return;
       try {
         const r = pickEquation(await readCursorContext());
         if (!r.eq) return;

@@ -1,5 +1,5 @@
 import { answerXlsx, answerTsv } from '../src/xlsx.js';
-import { prepareEnglish, unansweredQuestions, parseBody, analyze, answersOf, normalize, shuffleVersion, answerTable, answerTableXml, appendToBody, prependToBody } from '../src/exam.js';
+import { prepareEnglish, unansweredQuestions, parseBody, analyze, answersOf, normalize, applyAnswerKey, shuffleVersion, answerTable, answerTableXml, appendToBody, prependToBody } from '../src/exam.js';
 import { DEFAULT_FORM, examHeaderXml, examEndXml, examFooterXml, simplePackage } from '../src/exam-header.js';
 import { scanPackage } from '../src/ooxml.js';
 import { buildExamPptx, preparePptxSource, PPTX_THEMES } from '../src/pptx.js';
@@ -30,13 +30,18 @@ export function mountExam(root, io) {
       <select id="ex-msize"><option value="text">bằng cỡ chữ</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="0">giữ nguyên</option></select></label>
     <label><input type="checkbox" id="ex-labels" checked> nhãn A. B. C. D. in đậm, viết hoa, dấu chấm</label>
     <label><input type="checkbox" id="ex-qformat" checked> nhãn “Câu N.” / “Bài N.” cùng định dạng với câu đầu tiên</label>
+    <div class="subhead">Nhãn “Câu N.”</div>
+    <label><input type="checkbox" id="ex-qbold" checked> in đậm nhãn câu</label>
+    <label class="field"><span>Màu nhãn câu</span>
+      <select id="ex-qcolor"><option value="">giữ nguyên (tự động)</option><option value="000000">đen</option><option value="C00000">đỏ đậm</option><option value="0000FF">xanh dương</option><option value="1F4E79">xanh navy</option><option value="006100">xanh lục</option><option value="7030A0">tím</option><option value="ED7D31">cam</option><option value="custom">màu khác…</option></select><input type="color" id="ex-qcolor-custom" value="#c00000" hidden style="margin-left:6px"></label>
+    <label><input type="checkbox" id="ex-qbreak"> xuống dòng sau nhãn (nội dung câu hỏi bắt đầu ở dòng mới)</label>
     <label><input type="checkbox" id="ex-keep" checked> giữ câu hỏi và phương án cùng trang (keep with next)</label>
     <label><input type="checkbox" id="ex-backup1"> Tôi đã lưu một bản sao tài liệu</label>
     <div class="btns"><button class="primary" id="ex-normalize">Chuẩn hóa</button></div>
     <div id="ex-norm-out"></div>
   </fieldset>
   <fieldset><legend>3. Trộn đề &amp; bảng đáp án</legend>
-    <div class="grid3"><label class="field"><span>Số mã đề</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>Mã đề đầu</span><input type="number" id="ex-code" value="101"></label><label class="field"><span>Hạt giống</span><input type="number" id="ex-seed" value="2026"></label></div>
+    <div class="grid3"><label class="field"><span>Số mã đề</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>Mã đề (cách nhau dấu phẩy)</span><input type="text" id="ex-code" value="1001" placeholder="1001 hoặc 1001, 1002, A1…" spellcheck="false" title="Một số: mã đề đầu, các mã sau tăng dần (4 chữ số). Nhiều mã cách nhau dấu phẩy: dùng đúng các mã đó, không cần ‘Số mã đề’."></label><label class="field"><span>Hạt giống</span><input type="number" id="ex-seed" value="2026"></label></div>
     <label><input type="checkbox" id="ex-shq" checked> trộn thứ tự câu trong từng phần</label>
     <label><input type="checkbox" id="ex-sho" checked> trộn thứ tự phương án A–D (giữ nguyên câu có “cả A và B…”, “tất cả các đáp án…”)</label>
     <label><input type="checkbox" id="ex-shs"> trộn cả thứ tự ý a) b) c) d) ở phần đúng sai</label>
@@ -57,7 +62,7 @@ export function mountExam(root, io) {
         <label class="field"><span>Lớp</span><input type="text" id="ex-f-lop" placeholder="vd. 12"></label>
         <label class="field"><span>Thời gian (phút)</span><input type="text" id="ex-f-thoiGian" placeholder="vd. 90"></label>
       </div>
-      <div class="btns two"><button class="secondary" id="ex-f-reset">Khôi phục mặc định</button><button class="secondary" id="ex-f-insert" title="Chèn khối tiêu đề tại con trỏ, mã đề lấy từ ô “Mã đề đầu tiên”">Chèn tiêu đề tại con trỏ</button></div>
+      <div class="btns two"><button class="secondary" id="ex-f-reset">Khôi phục mặc định</button><button class="secondary" id="ex-f-insert" title="Chèn khối tiêu đề tại con trỏ, mã đề lấy từ ô “Mã đề” (mã đầu tiên)">Chèn tiêu đề tại con trỏ</button></div>
     </details>
     <label class="field"><span>Nơi đặt kết quả</span>
       <select id="ex-target"><option value="new">mỗi mã đề một tài liệu mới</option><option value="append">chèn nối tiếp vào cuối tài liệu này</option><option value="none">chỉ lập bảng đáp án (không tạo đề)</option></select></label>
@@ -86,12 +91,24 @@ export function mountExam(root, io) {
   </fieldset>`;
   const $ = (id) => root.querySelector('#' + id);
   let lastCsv = '';
+  /** Exam codes from the box: several names separated by commas are used as typed; one number is the first code (4 digits), followed by n-1 consecutive ones. */
+  function codeList(n) {
+    const raw = $('ex-code').value.split(/[,;\s]+/).map((x) => x.trim()).filter(Boolean);
+    if (raw.length > 1) return raw;
+    const first = /^\d+$/.test(raw[0] || '') ? Number(raw[0]) : 1001;
+    const w = Math.max(4, String(raw[0] || '').length);
+    if (raw[0] && !/^\d+$/.test(raw[0])) return [raw[0]];
+    return Array.from({ length: Math.max(1, n) }, (_x, i) => String(first + i).padStart(w, '0'));
+  }
   let lastVersions = null;   // [{code, answers}] of the latest "Tạo đề"
 
   async function body() { const { pkg } = await io.readBody(); return pkg; }
   /** English papers pasted from PDF (tables, glued "Question N.", auto-lettered options) are read in a cleaned layout; the document itself is untouched. */
-  async function preparedBody() { const prep = prepareEnglish(await body()); return prep; }
-  const prepNote = (prep) => (prep.changed ? `<div class="muted">Đã tự chuẩn hóa bố cục trong bộ nhớ (${prep.stats.tables} bảng, ${prep.stats.split} chỗ tách, ${prep.stats.labels} nhãn A–D tự đánh số); tài liệu gốc không bị sửa. Bấm “Chuẩn hóa” nếu muốn ghi bố cục này vào tài liệu.</div>` : '');
+  async function preparedBody() {   // in-memory copy: English layout fixed, and the key at the end of the paper turned into marks
+    const prep = prepareEnglish(await body()), key = applyAnswerKey(prep.pkg);
+    return { ...prep, pkg: key.pkg, changed: prep.changed || key.changed, stats: { ...prep.stats, keyed: key.count } };
+  }
+  const prepNote = (prep) => (prep.changed ? `<div class="muted">Đã tự chuẩn hóa bố cục trong bộ nhớ (${prep.stats.tables} bảng, ${prep.stats.split} chỗ tách, ${prep.stats.labels} nhãn A–D tự đánh số${prep.stats.keyed ? `, ${prep.stats.keyed} đáp án đọc từ bảng đáp án cuối đề` : ''}); tài liệu gốc không bị sửa. Bấm “Chuẩn hóa” nếu muốn ghi bố cục này vào tài liệu.</div>` : '');
   const chips = (list) => (list.length ? `<div class="chips-title">Câu chưa có đáp án — bấm để chuyển tới trong Word (${list.length}):</div><div class="chips">${list.map((q) => `<button type="button" class="chip" data-p="${q.paragraph}" title="Chuyển tới ${esc(q.label)} trong Word">${esc(q.label)}</button>`).join('')}</div>` : '');
   root.addEventListener('click', async (ev) => {
     const b = ev.target.closest('.chip');
@@ -134,12 +151,14 @@ export function mountExam(root, io) {
     } catch (e) { fail($('ex-summary'), e); }
   });
 
+  const qColor = () => ($('ex-qcolor').value === 'custom' ? $('ex-qcolor-custom').value.replace('#', '').toUpperCase() : $('ex-qcolor').value);
+  $('ex-qcolor').addEventListener('change', () => { $('ex-qcolor-custom').hidden = $('ex-qcolor').value !== 'custom'; });
   $('ex-normalize').addEventListener('click', async () => {
     if (!$('ex-backup1').checked) { $('ex-norm-out').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
     try {
       const layout = $('ex-layout').value;
       const r = normalize(await body(), { renumber: $('ex-renumber').value || false, labelWord: $('ex-word').value, labels: $('ex-labels').checked, questionFormat: $('ex-qformat').checked,
-        keepNext: $('ex-keep').checked, layout: layout === 'false' ? false : layout,
+        qBold: $('ex-qbold').checked, qColor: qColor(), qBreak: $('ex-qbreak').checked, keepNext: $('ex-keep').checked, layout: layout === 'false' ? false : layout,
         font: $('ex-font').value, fontSize: Number($('ex-fsize').value), mathSize: $('ex-msize').value === 'text' ? 'text' : Number($('ex-msize').value) });
       await io.replaceBody(r.pkg);
       const rep = r.report;
@@ -164,7 +183,7 @@ export function mountExam(root, io) {
   $('ex-f-reset').addEventListener('click', () => { fillForm({ ...DEFAULT_FORM, mon: '', lop: '', thoiGian: '' }); saveForm(); });
   $('ex-f-insert').addEventListener('click', async () => {
     const out = $('ex-shuffle-out');
-    try { await io.replaceSelection(simplePackage(examHeaderXml(readForm(), $('ex-code').value.trim()))); out.innerHTML = '<span class="ok">Đã chèn khối tiêu đề tại con trỏ.</span>'; } catch (e) { fail(out, e); }
+    try { await io.replaceSelection(simplePackage(examHeaderXml(readForm(), codeList(1)[0]))); out.innerHTML = '<span class="ok">Đã chèn khối tiêu đề tại con trỏ.</span>'; } catch (e) { fail(out, e); }
   });
   /** The paper of one version with the chosen title block and closing line. */
   const decorate = (pkg, code) => {
@@ -178,13 +197,14 @@ export function mountExam(root, io) {
     const out = $('ex-shuffle-out'), bar = $('ex-progress');
     try {
       const prep = await preparedBody(), pkg = prep.pkg;
-      const n = Number($('ex-n').value), first = Number($('ex-code').value), seed = Number($('ex-seed').value);
+      const codes = codeList(Number($('ex-n').value)), n = codes.length, seed = Number($('ex-seed').value);
+      if (new Set(codes).size !== n) throw new Error('Các mã đề bị trùng nhau: hãy nhập mỗi mã một lần.');
       const target = $('ex-target').value;
       const origA = analyze(parseBody(pkg));
       const sectionModes = sectionsUi(origA), qWord = origA.english ? 'Question' : 'Câu';
       const versions = [];
       for (let i = 0; i < n; i++) {
-        const code = String(first + i);
+        const code = codes[i];
         const r = shuffleVersion(pkg, { ...options(), seed: seed + i * 7919, code, sectionModes });
         versions.push({ code, ...r });
         bar.hidden = false; bar.max = n; bar.value = i + 1;
@@ -214,6 +234,10 @@ export function mountExam(root, io) {
         for (const v of versions) await io.insertAtEnd(decorate(v.pkg, v.code));
         note = `Đã chèn ${versions.length} đề vào cuối tài liệu.`;
       }
+      if (target !== 'new' && ($('ex-withkey').checked || target === 'none')) {   // one table for every code: first column = question, one column per code
+        await io.insertAtEnd(wrap(answerTableXml(table.groups, 'BẢNG ĐÁP ÁN CÁC MÃ ĐỀ', qWord)));
+        note += ' Đã chèn bảng đáp án chung (mỗi mã đề một cột).';
+      }
       const warns = [...new Set(versions.flatMap((v) => [
         ...(v.report.sharedParts.length ? [`Không trộn thứ tự câu ở: ${v.report.sharedParts.join('; ')} (có câu dùng chung dữ kiện)`] : []),
         ...(v.report.keptSections.length ? [`Giữ nguyên thứ tự câu ở: ${v.report.keptSections.join(', ')}`] : []),
@@ -223,9 +247,17 @@ export function mountExam(root, io) {
       const unansweredChips = chips(unansweredQuestions(origModel, origA));
       out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + prepNote(prep) + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>${prep.changed ? '' : unansweredChips}` : '') +
         (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : '') +
-        `<div class="scroll"><table><tbody>${table.groups.filter((g) => g.kind === 'mc').map((g) => `<tr><td><b>${esc(g.code)}</b></td><td>${g.items.map((i) => `${i.number}${esc(i.value ?? '?')}`).join(' ')}</td></tr>`).join('')}</tbody></table></div>`;
+        answerPreview(table.groups, qWord);
     } catch (e) { fail(out, e); }
   });
+
+  /** Preview of the combined key: rows = questions, columns = codes (multiple-choice part only). */
+  function answerPreview(groups, word) {
+    const mc = groups.filter((g) => g.kind === 'mc'), codes = [...new Set(mc.map((g) => String(g.code)))];
+    const at = new Map(mc.map((g) => [String(g.code), new Map(g.items.map((i) => [i.number, i.value]))]));
+    const nums = [...new Set(mc.flatMap((g) => g.items.map((i) => i.number)))].sort((a, b) => a - b);
+    return `<div class="scroll"><table><thead><tr><th>${esc(word)}</th>${codes.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${nums.map((n) => `<tr><td><b>${n}</b></td>${codes.map((c) => `<td>${esc(at.get(c).get(n) ?? '?')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  }
 
   $('ex-key').addEventListener('click', async () => {
     const out = $('ex-shuffle-out');
@@ -242,7 +274,7 @@ export function mountExam(root, io) {
     return `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part></pkg:package>`;
   }
   async function exportVersions() {
-    const pkg = lastVersions ? lastVersions.pkg : await body();
+    const pkg = lastVersions ? lastVersions.pkg : (await preparedBody()).pkg;
     const list = lastVersions ? lastVersions.versions.slice() : [];
     if (!list.length) throw new Error('Chưa có mã đề nào: bấm “Tạo đề” trước (hoặc dùng “Chèn bảng đáp án đề hiện tại”).');
     if ($('ex-orig').checked) { const m = parseBody(pkg); list.unshift({ code: $('ex-origcode').value || '0000', answers: answersOf(m, analyze(m)) }); }

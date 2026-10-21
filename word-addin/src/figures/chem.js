@@ -247,6 +247,100 @@ export function molecule(o = {}) {
   return frame(cv, W, H);
 }
 
+
+// ---------------------------------------------------------------- aromatic compounds (benzene ring family), skeletal formulae
+const MIRROR = { CH_3: 'H_3C', OH: 'HO', NH_2: 'H_2N', NO_2: 'O_2N', COOH: 'HOOC', CHO: 'OHC' };
+/** Single ring, vertex 0 at the top, then clockwise; `subs` maps ring vertex -> label or chain of [dx-angle, order] bonds. */
+const ringOf = (subs, extra = {}) => ({ rings: [{ c: [0, 0], a0: -90 }], subs, ...extra });
+const AROMATICS = {
+  benzene: { name: 'Benzen', f: 'C_6H_6', ...ringOf({}) },
+  toluene: { name: 'Toluen', f: 'C_6H_5CH_3', ...ringOf({ 0: 'CH_3' }) },
+  ethylbenzene: { name: 'Etylbenzen', f: 'C_6H_5C_2H_5', ...ringOf({ 0: { chain: [[-90, 1], [-30, 1]] } }) },
+  styrene: { name: 'Stiren', f: 'C_6H_5CH=CH_2', ...ringOf({ 0: { chain: [[-90, 1], [-30, 2]] } }) },
+  phenol: { name: 'Phenol', f: 'C_6H_5OH', ...ringOf({ 0: 'OH' }) },
+  aniline: { name: 'Anilin', f: 'C_6H_5NH_2', ...ringOf({ 0: 'NH_2' }) },
+  chlorobenzene: { name: 'Clobenzen', f: 'C_6H_5Cl', ...ringOf({ 0: 'Cl' }) },
+  bromobenzene: { name: 'Brombenzen', f: 'C_6H_5Br', ...ringOf({ 0: 'Br' }) },
+  nitrobenzene: { name: 'Nitrobenzen', f: 'C_6H_5NO_2', ...ringOf({ 0: 'NO_2' }) },
+  benzaldehyde: { name: 'Benzanđehit', f: 'C_6H_5CHO', ...ringOf({ 0: 'CHO' }) },
+  benzoic: { name: 'Axit benzoic', f: 'C_6H_5COOH', ...ringOf({ 0: 'COOH' }) },
+  o_xylene: { name: 'o-Xilen', f: 'C_6H_4(CH_3)_2', ...ringOf({ 0: 'CH_3', 1: 'CH_3' }) },
+  m_xylene: { name: 'm-Xilen', f: 'C_6H_4(CH_3)_2', ...ringOf({ 0: 'CH_3', 2: 'CH_3' }) },
+  p_xylene: { name: 'p-Xilen', f: 'C_6H_4(CH_3)_2', ...ringOf({ 0: 'CH_3', 3: 'CH_3' }) },
+  o_cresol: { name: 'o-Crezol', f: 'CH_3C_6H_4OH', ...ringOf({ 0: 'OH', 1: 'CH_3' }) },
+  m_cresol: { name: 'm-Crezol', f: 'CH_3C_6H_4OH', ...ringOf({ 0: 'OH', 2: 'CH_3' }) },
+  p_cresol: { name: 'p-Crezol', f: 'CH_3C_6H_4OH', ...ringOf({ 0: 'OH', 3: 'CH_3' }) },
+  tnt: { name: '2,4,6-Trinitrotoluen (TNT)', f: 'C_6H_2(NO_2)_3CH_3', ...ringOf({ 0: 'CH_3', 1: 'NO_2', 3: 'NO_2', 5: 'NO_2' }) },
+  picric: { name: 'Axit picric (2,4,6-trinitrophenol)', f: 'C_6H_2(NO_2)_3OH', ...ringOf({ 0: 'OH', 1: 'NO_2', 3: 'NO_2', 5: 'NO_2' }) },
+  tribromophenol: { name: '2,4,6-Tribromphenol', f: 'C_6H_2Br_3OH', ...ringOf({ 0: 'OH', 1: 'Br', 3: 'Br', 5: 'Br' }) },
+  biphenyl: { name: 'Biphenyl', f: 'C_6H_5-C_6H_5', rings: [{ c: [-1.5, 0], a0: 0 }, { c: [1.5, 0], a0: 0 }], subs: {}, link: [[0, 0], [1, 3]] },
+  naphthalene: { name: 'Naphtalen', f: 'C_{10}H_8', fused: true, subs: {} },
+};
+export const AROMATIC_CHOICES = Object.entries(AROMATICS).map(([k, m]) => [k, m.name]);
+
+export function aromatic(o = {}) {
+  const m = AROMATICS[o.kind] || AROMATICS.benzene, cv = new Canvas(), R = 34, circle = o.style === 'circle', LW = 1.8;
+  const atoms = [], bonds = [], ringList = [];        // atoms: [x,y]; bonds: [i,j,order,centre]
+  const ringAtoms = (c, a0) => Array.from({ length: 6 }, (_x, i) => atoms.push([c[0] + R * Math.cos(rad(a0 + 60 * i)), c[1] + R * Math.sin(rad(a0 + 60 * i))]) - 1);
+  if (m.fused) {                                       // naphthalene: pointy-top rings sharing a vertical edge
+    const d = Math.sqrt(3) * R, cL = [-d / 2, 0], cR = [d / 2, 0];
+    // left ring atoms L0..L5, right ring R0..R5; the shared edge is L1-L2 (= R5-R4), so R4 and R5 reuse the left atoms
+    const L = ringAtoms(cL, -90), Rr = ringAtoms(cR, -90);
+    Rr[5] = L[1]; Rr[4] = L[2]; atoms.length = Rr[3] + 1;
+    const edges = [[L[0], L[1], cL], [L[1], L[2], cL], [L[2], L[3], cL], [L[3], L[4], cL], [L[4], L[5], cL], [L[5], L[0], cL],
+      [Rr[0], Rr[1], cR], [Rr[1], Rr[2], cR], [Rr[2], Rr[3], cR], [Rr[3], Rr[4], cR], [Rr[5], Rr[0], cR]];
+    // Kekulé: L0=L5, L3=L4, L1=L2 (shared), R0=R1, R2=R3
+    const dbls = new Set([[L[0], L[5]], [L[3], L[4]], [L[1], L[2]], [Rr[0], Rr[1]], [Rr[2], Rr[3]]].map(([i, j]) => `${Math.min(i, j)}-${Math.max(i, j)}`));
+    for (const [i, j, c] of edges) bonds.push([i, j, !circle && dbls.has(`${Math.min(i, j)}-${Math.max(i, j)}`) ? 2 : 1, c]);
+    ringList.push(cL, cR);
+  } else {
+    m.rings.forEach((r, ri) => {
+      const idx = ringAtoms([r.c[0] * R, r.c[1] * R], r.a0);
+      for (let i = 0; i < 6; i++) bonds.push([idx[i], idx[(i + 1) % 6], !circle && i % 2 === 0 ? 2 : 1, [r.c[0] * R, r.c[1] * R]]);
+      ringList.push([r.c[0] * R, r.c[1] * R]); r.idx = idx; void ri;
+    });
+    if (m.link) bonds.push([m.rings[0].idx[m.link[0][1]], m.rings[1].idx[m.link[1][1]], 1, null]);
+  }
+  // substituents on the first ring (vertex k at -90 + 60k degrees, clockwise)
+  const labels = [];
+  const ring0 = m.fused ? null : m.rings[0];
+  for (const [k, sub0] of Object.entries(m.subs || {})) {
+    const i = ring0.idx[Number(k)], p = atoms[i], ang = -90 + 60 * Number(k);
+    if (typeof sub0 === 'string') {
+      const dir = [Math.cos(rad(ang)), Math.sin(rad(ang))], end = add(p, mul(dir, R));
+      const left = Math.cos(rad(ang)) < -0.1, right = Math.cos(rad(ang)) > 0.1, text = left ? (MIRROR[sub0] || sub0) : sub0;
+      bonds.push([i, atoms.push(end) - 1, 1, null, true]);
+      labels.push([chemTex(text), left ? [end[0] - 4, end[1]] : right ? [end[0] + 4, end[1]] : add(end, mul(dir, 13)), left ? 'r' : right ? 'l' : 'c']);
+    } else {
+      let cur = i, a = p;
+      for (const [da, order] of sub0.chain) { const e = add(a, [R * Math.cos(rad(da)), R * Math.sin(rad(da))]); const j = atoms.push(e) - 1; bonds.push([cur, j, order, null]); cur = j; a = e; }
+    }
+  }
+  const pad = 30, xsAll = atoms.map((a) => a[0]), ysAll = atoms.map((a) => a[1]);
+  const lab = labels.map(([, p, an]) => [p[0] - (an === 'r' ? 40 : 0), p[0] + (an === 'l' ? 40 : an === 'c' ? 14 : 0)]).flat();
+  const minx = Math.min(...xsAll, ...lab) - pad, maxx = Math.max(...xsAll, ...lab) + pad, miny = Math.min(...ysAll) - pad, maxy = Math.max(...ysAll) + pad;
+  const nameH = o.showName !== false ? 40 : 0, W = Math.max(210, maxx - minx, o.showName !== false ? (m.name.length + m.f.replace(/[_{}]/g, '').length) * 9 + 50 : 0), H = maxy - miny + nameH;
+  const ox = W / 2 - (minx + maxx) / 2, oy = -miny;
+  const T = (p) => [p[0] + ox, p[1] + oy];
+  for (const [i, j, order, c, labelled] of bonds) {
+    let A = atoms[i], B = atoms[j];
+    void labelled;
+    cv.line(T(A), T(B), { w: LW, color: '#000' });
+    if (order === 2 && c) {
+      const d = unit(sub(B, A)), n = [-d[1], d[0]], ctr = sub(c, mul(add(A, B), 0.5)), sgn = (n[0] * ctr[0] + n[1] * ctr[1]) >= 0 ? 1 : -1, L = len(sub(B, A));
+      const a2 = add(add(A, mul(d, L * 0.14)), mul(n, 5.5 * sgn)), b2 = add(sub(B, mul(d, L * 0.14)), mul(n, 5.5 * sgn));
+      cv.line(T(a2), T(b2), { w: LW, color: '#000' });
+    } else if (order === 2) {                           // exocyclic C=C (styrene): second line to the left of travel
+      const d = unit(sub(B, A)), n = [-d[1], d[0]];
+      cv.line(T(add(A, mul(n, 4))), T(add(B, mul(n, 4))), { w: LW, color: '#000' });
+    }
+  }
+  if (circle) ringList.forEach((c) => cv.circle(T(c), R * 0.62, { w: 1.6, color: '#000' }));
+  labels.forEach(([tex, p, an]) => cv.label(tex, T(p), { size: 18, anchor: an }));
+  if (o.showName !== false) cv.label(`\\text{${m.name}}\\ (${chemTex(m.f)})`, [W / 2, H - 18], { size: 17 });
+  return frame(cv, W, H);
+}
+
 // ---------------------------------------------------------------- Bohr atom model
 const ELEMENTS = ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca'];
 const VN = ['Hiđro', 'Heli', 'Liti', 'Beri', 'Bo', 'Cacbon', 'Nitơ', 'Oxi', 'Flo', 'Neon', 'Natri', 'Magie', 'Nhôm', 'Silic', 'Photpho', 'Lưu huỳnh', 'Clo', 'Agon', 'Kali', 'Canxi'];
@@ -273,6 +367,8 @@ export const CHEMISTRY = [
     options: [['kind', 'Thí nghiệm', [['gaswater', 'Điều chế khí, thu bằng đẩy nước'], ['gasair', 'Điều chế khí, thu bằng đẩy không khí'], ['filter', 'Lọc'], ['distill', 'Chưng cất']]], ['collect', 'Thu khí (đẩy không khí)', [['up', 'Ngửa bình (khí nặng hơn không khí)'], ['down', 'Úp bình (khí nhẹ hơn không khí)']]], ['showName', 'Ghi tên các dụng cụ']] },
   { id: 'molecule', label: 'Sơ đồ phân tử', make: molecule, names: '',
     options: [['kind', 'Phân tử', MOLECULE_CHOICES], ['style', 'Kiểu', [['structural', 'Công thức cấu tạo'], ['ball', 'Mô hình quả cầu – que']]], ['showName', 'Ghi công thức']] },
+  { id: 'aromatic', label: 'Hợp chất thơm (vòng benzen)', make: aromatic, names: '',
+    options: [['kind', 'Chất', AROMATIC_CHOICES], ['style', 'Kiểu vòng', [['kekule', 'Kekulé (3 liên kết đôi)'], ['circle', 'Vòng tròn (hệ thơm)']]], ['showName', 'Ghi tên và công thức']] },
   { id: 'atom', label: 'Mô hình nguyên tử (Bo)', make: atomModel, names: '',
     options: [['z', 'Nguyên tố (Z = 1–20)', ELEMENT_CHOICES], ['showName', 'Ghi kí hiệu và số electron mỗi lớp']] },
 ];

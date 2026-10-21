@@ -132,14 +132,24 @@ const RE_OPTION_REF = /\b(both|either)\s+[A-D]\s+(and|or|&)\s+[A-D]\b|\b(A|B|C|D
 
 const partKind = (text) => (/đúng\s*sai|đúng\s*hoặc\s*sai/i.test(text) ? 'tf' : /trả\s*lời\s*ngắn|ngắn/i.test(text) ? 'short' : /nhiều\s*(phương\s*án|lựa\s*chọn)|trắc\s*nghiệm/i.test(text) ? 'mc' : 'other');
 
+/** Is a w:color hex value "red" (any reddish shade: FF0000, C00000, ED1C24, FF3300, CC0000...)? */
+const isRedHex = (hex) => {
+  const m = /^([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex || '');
+  if (!m) return false;
+  const [r, g, b] = [m[1], m[2], m[3]].map((x) => parseInt(x, 16));
+  return r >= 0xa0 && g <= 0x55 && b <= 0x55 && r - Math.max(g, b) >= 0x60;
+};
+const RED_COLOR_TAG = /<w:color\b[^>]*\bw:val="([0-9a-fA-F]{6})"[^>]*\/>/g;
+const hasRedColor = (run) => { for (const m of run.matchAll(RED_COLOR_TAG)) if (isRedHex(m[1])) return true; return false; };
+
 /** Is the run a "marked as correct" label? underline, red text or highlight. */
 export function labelMark(run) {
   if (/<w:u\b(?![^>]*w:val="none")/.test(run)) return 'underline';
-  if (/<w:color\b[^>]*w:val="(FF0000|C00000|E00000|FF0000|ff0000|c00000)"/.test(run)) return 'red';
+  if (hasRedColor(run)) return 'red';
   if (/<w:highlight\b(?![^>]*w:val="none")/.test(run)) return 'highlight';
   return null;
 }
-const stripMarks = (run) => run.replace(/<w:u\b[^>]*\/>/g, '').replace(/<w:highlight\b[^>]*\/>/g, '').replace(/<w:color\b[^>]*w:val="(?:FF0000|C00000|E00000|ff0000|c00000)"[^>]*\/>/g, '');
+const stripMarks = (run) => run.replace(/<w:u\b[^>]*\/>/g, '').replace(/<w:highlight\b[^>]*\/>/g, '').replace(RED_COLOR_TAG, (tag, hex) => (isRedHex(hex) ? '' : tag));
 
 /** Split a simple run (rPr + one w:t) at a character offset of its text. Returns [left, right] or null. */
 function splitRun(run, at) {
@@ -281,7 +291,7 @@ export function analyze(model) {
       expected += (x.match(/\bQuestion\s*\d+/gi) || []).length;
     }
   }
-  return { parts: parts.filter((p) => p.questions.length || p.blockIndex >= 0), english, sections, expected, detected: parts.reduce((n, p) => n + p.questions.length, 0) };
+  return { parts: parts.filter((p) => p.questions.length || p.blockIndex >= 0), english, sections, expected, limit, detected: parts.reduce((n, p) => n + p.questions.length, 0) };
 }
 
 /**
@@ -341,6 +351,110 @@ export function answersOf(model, analysis) {
     }
   }
   return rows;
+}
+
+// ---------------------------------------------------------------- answer key at the end of the paper
+// Papers often carry no marks on the options, only a key after the last question: a table ("Câu | 1 2 3 ... / Đáp án | A B C ..."),
+// a column table, or lines like "1.A 2.B 3.C" / "Câu 1: a) Đ b) S ..." / "Câu 1: 2,5". applyAnswerKey turns it into the marks the rest of
+// the code already understands (underlined option label, underlined true statement, hidden "Đáp án:" line) in the in-memory copy only.
+const KEY_NUM = /^(?:C[âa]u|Question)?\s*(\d{1,3})\s*[.:)]?$/i;
+const keyKind = (v) => {
+  const t = String(v).replace(/ /g, ' ').trim();
+  if (/^[A-D]$/.test(t)) return { kind: 'mc', value: t };
+  const tf = t.replace(/\b[a-d]\s*[).:\-–]/gi, '').replace(/[\s,;\-–]/g, '');
+  if (/^[ĐSđs]{4}$/.test(tf)) return { kind: 'tf', value: [...tf].map((c) => (/[Đđ]/.test(c) ? 'Đ' : 'S')) };
+  if (/^-?\d[\d.,/]*$/.test(t)) return { kind: 'short', value: t };
+  return null;
+};
+function keyTableRows(xml) {
+  return (xml.match(/<w:tr\b[\s\S]*?<\/w:tr>/g) || []).map((r) => (r.match(/<w:tc\b[\s\S]*?<\/w:tc>/g) || []).map((c) => xmlText(c).replace(/\s+/g, ' ').trim()));
+}
+/** {mc, tf, short}: Maps from question number to the answer written in the key; first occurrence wins. */
+export function parseAnswerKey(blocks) {
+  const key = { mc: new Map(), tf: new Map(), short: new Map() };
+  const put = (num, v) => { if (v && !key[v.kind].has(num)) key[v.kind].set(num, v.value); };
+  let text = '';
+  for (const b of blocks) {
+    if (b.kind === 'p') { text += paragraphText(b) + '\n'; continue; }
+    if (tagName(b.xml) !== 'w:tbl') continue;
+    const rows = keyTableRows(b.xml).filter((r) => r.some(Boolean));
+    for (let i = 0; i < rows.length; i++) {
+      const r = rows[i], nums = r.slice(1).map((c) => KEY_NUM.exec(c));
+      if (r.length >= 3 && nums.every(Boolean) && rows[i + 1]) {   // horizontal: numbers row, then answers row
+        const vals = rows[i + 1];
+        nums.forEach((m, k) => put(Number(m[1]), keyKind(vals[k + 1] ?? '')));
+        i++;
+        continue;
+      }
+      for (let k = 0; k + 1 < r.length; k += 2) { const m = KEY_NUM.exec(r[k]); if (m) put(Number(m[1]), keyKind(r[k + 1])); else break; }   // vertical: number | answer (| number | answer)
+    }
+  }
+  const take = (re, fn) => { text = text.replace(re, (all, ...g) => { fn(g); return ' '.repeat(all.length); }); };
+  take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]\s*((?:[a-d]\s*[).:\-–]\s*[ĐSđs](?![\p{L}\d])[\s,;]*){4}|[ĐSđs](?:[\s,;\-–]*[ĐSđs]){3}(?![\p{L}\d]))/giu, (g) => put(Number(g[0]), keyKind(g[1])));
+  take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]?\s*([A-D])(?![\p{L}\d])/gu, (g) => put(Number(g[0]), { kind: 'mc', value: g[1] }));
+  take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–=]\s*(-?\d[\d.,/]*)(?![\p{L}\d])/giu, (g) => put(Number(g[0]), { kind: 'short', value: g[1] }));
+  return key;
+}
+
+const underlineRun = (run) => {
+  const h = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(run);
+  return h ? `${h[1]}${withRprChildren(h[2] ? h[2].trim() : '', { u: '<w:u w:val="single"/>' })}${run.slice(h[0].length)}` : run;
+};
+/** Underline the label run matching `re` (letter captured in group 1 must equal `letter`) inside paragraph p. */
+function markLabel(p, re, letter) {
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i];
+    if (!isRun(c) || hasObject(c)) continue;
+    const t = runText(c), m = re.exec(t);
+    if (!m || m[1] !== letter) continue;
+    const parts = t.length > m[0].length ? splitRunAt(c, m[0].length) : [c, ''];
+    if (!parts) return false;
+    p.children.splice(i, 1, underlineRun(parts[0]), ...(parts[1] ? [parts[1]] : []));
+    return true;
+  }
+  return false;
+}
+
+/** Mark answers from the key at the end of the paper on questions that carry no mark yet. Returns {pkg, changed, count}. */
+export function applyAnswerKey(pkg) {
+  let model;
+  try { model = parseBody(pkg); } catch { return { pkg, changed: false, count: 0 }; }
+  const analysis = analyze(model);
+  let from = analysis.limit;
+  if (from >= model.blocks.length) {   // no closing line: a table right after the last question may still be the key
+    const last = model.blocks.map((b, i) => [b, i]).filter(([b]) => b.kind === 'other' && tagName(b.xml) === 'w:tbl').pop();
+    from = last && last[1] > (analysis.parts.flatMap((x) => x.questions).pop() || { start: 0 }).start ? last[1] : from;
+  }
+  if (from >= model.blocks.length) return { pkg, changed: false, count: 0 };
+  const key = parseAnswerKey(model.blocks.slice(from));
+  if (!key.mc.size && !key.tf.size && !key.short.size) return { pkg, changed: false, count: 0 };
+  const rows = answersOf(model, analysis), inserts = [];
+  let count = 0, ri = 0;
+  for (const part of analysis.parts) {
+    for (const q of part.questions) {
+      const row = rows[ri++];
+      if (!row || (row.value !== null && row.value !== undefined)) continue;
+      if (part.kind === 'mc' || part.kind === 'other') {
+        const v = key.mc.get(q.number);
+        if (v && q.options && q.optionParas.some((pi) => markLabel(model.blocks[pi], /^\s*([A-D])\s*[.)]/, v))) count++;
+      } else if (part.kind === 'tf') {
+        const v = key.tf.get(q.number);
+        if (!v || v.length !== q.statements.length) continue;
+        let any = false;
+        q.statements.forEach((st, i) => { if (v[i] === 'Đ' && markLabel(model.blocks[st.block], /^\s*([a-d])\s*\)/, st.letter)) any = true; });
+        if (any || v.every((x) => x === 'S')) count++;
+      } else if (part.kind === 'short') {
+        const v = key.short.get(q.number);
+        if (v) { inserts.push([q.start, v]); count++; }
+      }
+    }
+  }
+  if (!count) return { pkg, changed: false, count: 0 };
+  const blocks = model.blocks.slice();
+  for (const [at, v] of inserts.sort((a, b) => b[0] - a[0])) {   // hidden "Đáp án: x" line, so it never prints on the paper
+    blocks.splice(at + 1, 0, { kind: 'p', open: '<w:p>', ppr: '<w:pPr><w:rPr><w:vanish/></w:rPr></w:pPr>', children: [`<w:r><w:rPr><w:vanish/></w:rPr><w:t xml:space="preserve">Đáp án: ${escapeXml(v)}</w:t></w:r>`] });
+  }
+  return { pkg: buildBody(model, blocks), changed: true, count };
 }
 
 // ---------------------------------------------------------------- option layout
@@ -492,6 +606,55 @@ export function renumberQuestionInParagraph(p, newNumber, { formatTemplate, word
 }
 
 
+/** Format the printed "Câu N." label of a question paragraph: bold, colour (hex without #), and/or a line break after it. Returns true if the label was found. */
+export function styleQuestionLabel(p, { bold = false, color = '', brk = false } = {}) {
+  if (!p || !p.children || !(bold || color || brk)) return false;
+  const m = RE_QUESTION.exec(paragraphText(p));
+  if (!m) return false;
+  let from = m.index + (m[0].length - m[0].trimStart().length), to = m.index + m[0].length;
+  // the delimiter group may be a lookahead-matched space: keep only the visible "Câu 3." part
+  while (to > from && /\s/.test(paragraphText(p)[to - 1])) to--;
+  const splitAt = (offset) => {   // make `offset` a boundary between two children
+    let pos = 0;
+    for (let i = 0; i < p.children.length; i++) {
+      const c = p.children[i], len = childText(c).length;
+      if (offset === pos) return true;
+      if (offset < pos + len) {
+        if (!isRun(c) || hasObject(c)) return false;
+        const parts = splitRunAt(c, offset - pos);
+        if (!parts || !parts[0] || !parts[1]) return false;
+        p.children.splice(i, 1, parts[0], parts[1]);
+        return true;
+      }
+      pos += len;
+    }
+    return offset === pos;
+  };
+  if (!splitAt(to) || !splitAt(from)) return false;
+  const set = {};
+  if (bold) set.b = '<w:b/>';
+  if (color) set.color = `<w:color w:val="${color}"/>`;
+  let pos = 0, lastIdx = -1;
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i], len = childText(c).length;
+    if (pos >= from && pos + len <= to && len > 0 && isRun(c) && !hasObject(c) && Object.keys(set).length) {
+      const h = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(c);
+      if (h) p.children[i] = `${h[1]}${withRprChildren(h[2] ? h[2].trim() : '', set)}${c.slice(h[0].length)}`;
+    }
+    if (pos < to && pos + len >= to) lastIdx = i;
+    pos += len;
+  }
+  if (brk && lastIdx >= 0 && lastIdx + 1 < p.children.length) {
+    const rest = p.children.slice(lastIdx + 1);
+    if (rest.some((c) => childText(c).trim() || hasObject(c) || isMath(c))) {
+      const nxt = p.children[lastIdx + 1];
+      if (isRun(nxt) && !hasObject(nxt)) p.children[lastIdx + 1] = nxt.replace(/(<w:t\b[^>]*>)[ \u00a0\t]+/, '$1');
+      p.children.splice(lastIdx + 1, 0, '<w:r><w:br/></w:r>');
+    }
+  }
+  return true;
+}
+
 // ---------------------------------------------------------------- typography (font, text size, equation size)
 const RPR_ORDER = ['rStyle', 'rFonts', 'b', 'bCs', 'i', 'iCs', 'caps', 'smallCaps', 'strike', 'dstrike', 'outline', 'shadow', 'emboss', 'imprint', 'noProof', 'snapToGrid', 'vanish', 'webHidden', 'color', 'spacing', 'w', 'kern', 'position', 'sz', 'szCs', 'highlight', 'u', 'effect', 'bdr', 'shd', 'fitText', 'vertAlign', 'rtl', 'cs', 'em', 'lang', 'eastAsianLayout', 'specVanish', 'oMath'];
 /** rPr with the given children replaced (xml: {tag: element xml}); children keep the order the schema wants. */
@@ -594,6 +757,7 @@ export function normalize(pkg, opts = {}) {
       } else if (opts.renumber || opts.questionFormat) {
         renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt, word: opts.labelWord });
       }
+      if (opts.qBold || opts.qColor || opts.qBreak) styleQuestionLabel(b, { bold: opts.qBold, color: opts.qColor, brk: opts.qBreak });
       if (opts.keepNext) {
         for (let i = q.start; i < q.stemEnd; i++) if (model.blocks[i].kind === 'p' && i + 1 <= q.stemEnd && (q.options || q.statements.length)) model.blocks[i].ppr = setPprChild(model.blocks[i].ppr, 'keepNext', '<w:keepNext/>');
       }
@@ -969,25 +1133,26 @@ export function answerTable(rowsByVersion) {
 
 const cell = (text, w, bold) => `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/></w:tcPr><w:p><w:pPr><w:spacing w:before="20" w:after="20"/><w:jc w:val="center"/></w:pPr><w:r>${bold ? '<w:rPr><w:b/></w:rPr>' : ''}<w:t xml:space="preserve">${escapeXml(String(text))}</w:t></w:r></w:p></w:tc>`;
 
-/** WordprocessingML for the answer tables: a heading and, per group, rows of at most 10 questions. */
+/** WordprocessingML for the answer table(s): one table per part, first column = question, then one column per exam code. */
 export function answerTableXml(groups, title = 'BẢNG ĐÁP ÁN', word = 'Câu') {
   const borders = '<w:tblBorders>' + ['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map((s) => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="808080"/>`).join('') + '</w:tblBorders>';
   let xml = `<w:p><w:pPr><w:pageBreakBefore/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>${escapeXml(title)}</w:t></w:r></w:p>`;
-  const byCode = new Map();
-  for (const g of groups) { if (!byCode.has(g.code)) byCode.set(g.code, []); byCode.get(g.code).push(g); }
-  for (const [code, gs] of byCode) {
-    xml += `<w:p><w:pPr><w:keepNext/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>Mã đề ${escapeXml(String(code))}</w:t></w:r></w:p>`;
-    for (const g of gs) {
-      const per = g.kind === 'mc' ? 10 : g.kind === 'tf' ? 4 : 6;
-      xml += `<w:p><w:pPr><w:keepNext/></w:pPr><w:r><w:t xml:space="preserve">${escapeXml(g.title || '')}</w:t></w:r></w:p>`;
-      for (let i = 0; i < g.items.length; i += per) {
-        const chunk = g.items.slice(i, i + per);
-        const w = Math.floor(9000 / (g.kind === 'tf' ? chunk.length : per + 1));
-        const top = `<w:tr>${cell(word, w, true)}${chunk.map((c) => cell(c.number, w, true)).join('')}</w:tr>`;
-        const bot = `<w:tr>${cell('Đáp án', w, true)}${chunk.map((c) => cell(c.value ?? '?', w, false)).join('')}</w:tr>`;
-        xml += `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${borders}</w:tblPr><w:tblGrid>${Array.from({ length: chunk.length + 1 }, () => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>${top}${bot}</w:tbl><w:p/>`;
-      }
-    }
+  const codes = [...new Set(groups.map((g) => String(g.code)))];
+  const sections = new Map();   // kind + title -> {title, kind, byCode: Map(code -> Map(number -> value))}
+  for (const g of groups) {
+    const key = `${g.kind}|${g.title || ''}`;
+    if (!sections.has(key)) sections.set(key, { title: g.title || '', kind: g.kind, byCode: new Map() });
+    const sec = sections.get(key), c = String(g.code);
+    if (!sec.byCode.has(c)) sec.byCode.set(c, new Map());
+    for (const it of g.items) sec.byCode.get(c).set(it.number, it.value);
+  }
+  for (const sec of sections.values()) {
+    const numbers = [...new Set([...sec.byCode.values()].flatMap((m) => [...m.keys()]))].sort((x, y) => parseFloat(x) - parseFloat(y) || String(x).localeCompare(String(y)));
+    const cols = codes.filter((c) => sec.byCode.has(c)), first = 1300, w = Math.min(1800, Math.floor((9000 - first) / Math.max(1, cols.length)));
+    const head = `<w:tr><w:trPr><w:cantSplit/><w:tblHeader/></w:trPr>${cell(word, first, true)}${cols.map((c) => cell(c ? `Mã ${c}` : 'Đáp án', w, true)).join('')}</w:tr>`;
+    const rows = numbers.map((n) => `<w:tr><w:trPr><w:cantSplit/></w:trPr>${cell(n, first, true)}${cols.map((c) => cell(sec.byCode.get(c).get(n) ?? '?', w, false)).join('')}</w:tr>`).join('');
+    if (sec.title) xml += `<w:p><w:pPr><w:keepNext/><w:spacing w:before="120"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t xml:space="preserve">${escapeXml(sec.title)}</w:t></w:r></w:p>`;
+    xml += `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${borders}</w:tblPr><w:tblGrid><w:gridCol w:w="${first}"/>${cols.map(() => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>${head}${rows}</w:tbl><w:p/>`;
   }
   return xml;
 }

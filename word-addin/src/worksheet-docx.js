@@ -54,11 +54,12 @@ export function tikzRun(code, optStr, ctx) {
   }
 }
 
-// blank to fill in (\boxed{\phantom{..}}): an inline rectangle drawing, about 1.5 digits wide and 2 digits tall
+// blank to fill in (\boxed{\phantom{..}}): an inline rectangle drawing, about one digit wide and a little taller than the text
 const BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
-const blankRun = (ctx) => {
-  const k = Math.max(0.6, (ctx.fs || 16) / 16);
-  return sceneRun(tikzToScene(`\\draw[line width=1pt] (0,0) rectangle (${(1.1 * k).toFixed(2)},${(0.85 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, 'Ô trống');
+const BLANK_SPLIT = /(\\boxed\{\\phantom\{[^}]*\}\})/;
+const blankRun = (ctx, chars = 2) => {
+  const k = Math.max(0.6, (ctx.fs || 16) / 16), wide = chars > 1 ? 1 : 0.78;
+  return sceneRun(tikzToScene(`\\draw[line width=0.8pt] (0,0) rectangle (${(0.72 * wide * k).toFixed(2)},${(0.62 * k).toFixed(2)});`, { scale: 1, fs: ctx.fs || 16 }), ctx, 'Ô trống');
 };
 let picId = 5000;
 /** A Twemoji picture (PNG prepared by the caller: ctx.pics.get(cp) = {rid, pt}) inline in the text, else the emoji character. */
@@ -103,10 +104,10 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
       const tex = s.slice(i + 1, j);
       try {
         // blank boxes are drawn as a picture (a rectangle), big enough to write in; the maths around them stays equations
-        const parts = tex.split(BLANK_RE);
-        parts.forEach((part, k) => {
-          if (k) out += blankRun(ctx);
-          if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
+        tex.split(BLANK_SPLIT).forEach((part) => {
+          const b = BLANK_RE.test(part) && /^\\boxed\{\\phantom\{([^}]*)\}\}$/.exec(part);
+          if (b) out += blankRun(ctx, b[1].length);
+          else if (part.trim()) out += ctx.math ? ctx.math(part, fmt) : latexToOmml(part);
         });
       } catch { out += run(tex.replace(/\\[a-zA-Z]+/g, '').replace(/[{}]/g, '')); }
       i = j + 1; continue;

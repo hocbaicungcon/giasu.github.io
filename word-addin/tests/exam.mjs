@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import assert from 'node:assert/strict';
 import { loadDocx, bodyPackage, documentXmlOf } from './fixture.js';
 import { parseXml } from '../src/xml.js';
-import { childText, parseBody, analyze, answersOf, normalize, shuffleVersion, paragraphText, answerTable, answerTableXml, appendToBody } from '../src/exam.js';
+import { childText, parseBody, analyze, answersOf, normalize, shuffleVersion, paragraphText, answerTable, answerTableXml, appendToBody, labelMark } from '../src/exam.js';
 
 const [input, outDir = '.'] = process.argv.slice(2);
 const optKey = (o) => o.content.map(childText).join('').replace(/\s/g, '') + '|' + (o.content.join('').match(/w14:anchorId="[^"]+"/g) || []).join(',');
@@ -91,6 +91,11 @@ assert.notEqual(versions[0].answers.map((a) => a.value).join(), versions[1].answ
 // stripped marks
 const clean = shuffleVersion(markedPkg, { seed: 3, code: '999' });
 assert.ok(answersOf(parseBody(clean.pkg), analyze(parseBody(clean.pkg))).every((a) => a.value === null), 'marks were not stripped');
+// red label marks: any reddish shade counts, orange / other colours do not
+const redRun = (c) => `<w:r><w:rPr><w:color w:val="${c}"/></w:rPr><w:t>A.</w:t></w:r>`;
+for (const c of ['FF0000', 'C00000', 'EE0000', 'ED1C24', 'FF3300', 'CC0000', 'ff0000']) assert.equal(labelMark(redRun(c)), 'red', 'red not detected: ' + c);
+for (const c of ['000000', '0070C0', '00B050', 'FF6600', 'FFC000', '7030A0']) assert.equal(labelMark(redRun(c)), null, 'not red: ' + c);
+
 // answer key tables
 const table = answerTable(versions.map((v) => ({ code: v.code, answers: v.answers })));
 console.log(table.csv.split('\n').slice(0, 3).join('\n'));
