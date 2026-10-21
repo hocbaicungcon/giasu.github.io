@@ -298,17 +298,7 @@ async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent =
   const statusEl = $('editor-status');
   if (statusEl) statusEl.textContent = 'Đang đọc công thức từ Word…';
   try {
-    let ctx;
-    if (!picked) {
-      try { ctx = await io.readCursorContext(); } catch (e) {
-        // older Word / mock without ranges: selection, then its paragraph
-        ctx = {};
-        try { ctx.selPkg = (await io.readSelection())?.pkg; } catch { /* ignore */ }
-        try { ctx.paraPkg = (await io.readParagraphs({ kind: 'selection' }))[0]?.pkg; } catch { /* ignore */ }
-      }
-      if (!ctx.selPkg && !ctx.paraPkg) throw new Error('Không đọc được vùng chọn từ Word.');
-      picked = pickEquation(ctx);
-    }
+    if (!picked) picked = pickEquation(await io.readCursorContext());
     if (!isCurrent()) return;
     const r = picked;
     if (!r.eq) {
@@ -433,8 +423,8 @@ function onSelectionChanged() {
     if (document.hasFocus() && document.activeElement === $('editor-latex')) return;   // typing in the pane: do not overwrite (after a click into Word the pane loses focus, though activeElement stays)
     try {
       const r = pickEquation(await io.readCursorContext());
-      if (version !== selectionVersion || !$('tab-editor')?.classList.contains('active')) return;
-      if (document.hasFocus() && (document.activeElement === $('editor-latex') || visual?.active())) return;
+      if (version !== selectionVersion || !$('editor-auto')?.checked || !$('tab-editor')?.classList.contains('active')) return;
+      if (document.hasFocus() && (document.activeElement === $('editor-latex') || visual?.focused())) return;
       if (!r.eq) return;   // no equation here: leave the editor alone
       if (r.eq.latex === lastAutoSig && $('editor-latex').value === r.eq.latex) return;
       lastAutoSig = r.eq.latex;
@@ -445,7 +435,9 @@ function onSelectionChanged() {
 function installSelectionWatcher() {
   if (!FULL) return;   // the lite edition has no tab that follows the cursor
   try {
-    Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged);
+    Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged, (result) => {
+      if (result.status === Office.AsyncResultStatus.Failed) console.warn('Không đăng ký được tự nạp công thức:', result.error);
+    });
   } catch { /* not available (browser mock) */ }
 }
 

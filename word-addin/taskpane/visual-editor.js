@@ -52,6 +52,7 @@ export function createVisualEditor({ host, textarea, onChange }) {
   };
   return {
     active: () => on,
+    focused: () => !!mf && (document.activeElement === mf || mf.contains(document.activeElement)),
     pull,
     async setActive(v) {
       on = v; host.hidden = !v; textarea.hidden = v;

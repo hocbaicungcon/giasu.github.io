@@ -38,6 +38,17 @@ export async function readSelection() {
 
 /** OOXML around the cursor: the selection, its first paragraph, and that paragraph's start up to the selection start. */
 export async function readCursorContext() {
+  try { return await readCursorContextRanges(); } catch {
+    // Older hosts may not support ranges; automatic and manual loading share this fallback.
+    const ctx = {};
+    try { ctx.selPkg = (await readSelection()).pkg; } catch { /* try paragraph */ }
+    try { ctx.paraPkg = (await readParagraphs({ kind: 'selection' }))[0]?.pkg; } catch { /* selection may suffice */ }
+    if (!ctx.selPkg && !ctx.paraPkg) throw new Error('Không đọc được vùng chọn từ Word.');
+    return ctx;
+  }
+}
+
+async function readCursorContextRanges() {
   return run(async (context) => {
     const sel = context.document.getSelection();
     const selOx = sel.getOoxml();
@@ -46,10 +57,17 @@ export async function readCursorContext() {
     await context.sync();
     const para = paras.items[0];
     const paraOx = para ? para.getOoxml() : null;
-    let beforeOx = null;
-    try { if (para) beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml(); } catch { beforeOx = null; }
+    // Resolve the useful data before the optional range operation can fail at sync().
     await context.sync();
-    return { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: beforeOx ? beforeOx.value : null };
+    const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null };
+    try {
+      if (para) {
+        const beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml();
+        await context.sync();
+        result.beforePkg = beforeOx.value;
+      }
+    } catch { /* cursor range unavailable: keep the selection and paragraph */ }
+    return result;
   });
 }
 

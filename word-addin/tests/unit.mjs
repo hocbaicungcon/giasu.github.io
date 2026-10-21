@@ -19,6 +19,64 @@ const queue = [];
 const test = (name, fn) => { queue.push([name, fn]); };
 const B = '\\';
 
+test('cursor reader preserves equation data when optional range sync fails', async () => {
+  const { readCursorContext } = await import('../src/word-io.js');
+  const previous = globalThis.Word;
+  for (const failBefore of [false, true]) {
+    let syncs = 0;
+    const para = { getOoxml: () => ({ value: 'paragraph' }), getRange: () => ({ expandTo: () => ({ getOoxml: () => ({ value: 'before' }) }) }) };
+    globalThis.Word = { run: (fn) => fn({
+      document: { getSelection: () => ({ getOoxml: () => ({ value: 'selection' }), paragraphs: { load() {}, items: [para] }, getRange() {} }) },
+      sync: async () => { if (++syncs === 3 && failBefore) throw new Error('ItemNotFound'); },
+    }) };
+    try {
+      assert.deepEqual(await readCursorContext(), { selPkg: 'selection', paraPkg: 'paragraph', beforePkg: failBefore ? null : 'before' });
+    } finally { globalThis.Word = previous; }
+  }
+});
+test('cursor reader falls back to selection and paragraph on older hosts', async () => {
+  const { readCursorContext } = await import('../src/word-io.js');
+  const previous = globalThis.Word;
+  const para = { getOoxml: () => ({ value: 'paragraph' }) };
+  const paras = { load() {}, items: [para] };
+  let runs = 0;
+  globalThis.Word = { run: async (fn) => {
+    if (++runs === 1) throw new Error('Unsupported range');
+    return fn({ document: { getSelection: () => ({ getOoxml: () => ({ value: 'selection' }), paragraphs: paras }) }, sync: async () => {} });
+  } };
+  try { assert.deepEqual(await readCursorContext(), { selPkg: 'selection', paraPkg: 'paragraph' }); }
+  finally { globalThis.Word = previous; }
+});
+
+test('automatic loading follows Word focus and discards stale selections', async () => {
+  const { runInNewContext } = await import('node:vm');
+  const source = readFileSync(new URL('../taskpane/taskpane.js', import.meta.url), 'utf8');
+  const watcher = source.slice(source.indexOf('let autoTimer = null'), source.indexOf('function installSelectionWatcher'));
+  const elements = { 'editor-auto': { checked: true }, 'tab-editor': { classList: { contains: () => true } }, 'editor-latex': { value: '' } };
+  let paneFocus = true, visualFocus = false, timer, pending = [], loaded = [];
+  const document = { hasFocus: () => paneFocus, activeElement: {}, dispatchEvent() {} };
+  const env = { $: (id) => elements[id], document, visual: { active: () => true, focused: () => visualFocus },
+    setTimeout: (fn) => { timer = fn; }, clearTimeout() {}, CustomEvent: class {},
+    io: { readCursorContext: () => new Promise((resolve) => pending.push(resolve)) }, pickEquation: (r) => r,
+    loadFormulaFromWord: async (_notice, r, current) => { if (current()) loaded.push(r.eq.latex); },
+  };
+  runInNewContext(watcher + '\nthis.changed = onSelectionChanged;', env);
+  env.changed(); const first = timer();
+  pending.shift()({ eq: { latex: 'a' } }); await first;
+  assert.deepEqual(loaded, ['a'], 'visual mode enabled without focus must load');
+  visualFocus = true; env.changed(); const typing = timer();
+  pending.shift()({ eq: { latex: 'b' } }); await typing;
+  assert.deepEqual(loaded, ['a'], 'focused visual input must not be overwritten');
+  visualFocus = false; paneFocus = false;
+  env.changed(); const old = timer(); const resolveOld = pending.shift();
+  env.changed(); const next = timer(); pending.shift()({ eq: { latex: 'c' } }); await next;
+  resolveOld({ eq: { latex: 'b' } }); await old;
+  assert.deepEqual(loaded, ['a', 'c']);
+  env.changed(); const disabled = timer(); elements['editor-auto'].checked = false;
+  pending.shift()({ eq: { latex: 'd' } }); await disabled;
+  assert.deepEqual(loaded, ['a', 'c']);
+});
+
 test('tidy', () => {
   assert.equal(tidy('x^{2} + y_{1}'), 'x^2 + y_1');
   assert.equal(tidy('{{x}}'), '{x}');
