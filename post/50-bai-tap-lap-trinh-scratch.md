@@ -1,8 +1,6 @@
 ---
 title: 50 bài tập lập trình Scratch
-description: Với dạng bài tập lập trình Scratch Tiểu học này thì bạn hãy tìm cách
-  để xe chạy trông thật tự nhiên thì càng tốt. Nếu như bạn không thích hình ảnh xe
-  ô tô thì
+description: Tổng hợp 50 bài tập lập trình Scratch có lời giải dành cho học sinh Tiểu học và THCS, từ cơ bản đến nâng cao, bao gồm bài tập vẽ hình, tạo hoạt ảnh, xử lý số và lập trình trò chơi tương tác.
 category: CNTT
 type: Bài tập
 date: '2024-05-08'
@@ -14,133 +12,149 @@ tags:
 grade: 6
 ---
 
-**Lập trình Scratch** hiện đã được đưa vào dạy trong một số trường tiểu học và THCS trên cả nước.
+**Lập trình Scratch** hiện đã được đưa vào giảng dạy trong nhiều trường Tiểu học và THCS trên cả nước. Đây là nền tảng lập trình trực quan, giúp học sinh làm quen với tư duy lập trình một cách sinh động và hiệu quả.
 
 Xem thêm HƯỚNG DẪN LẬP TRÌNH KODU GAME LAB
 
 ## Lập trình Scratch là gì?
 
-Scratch là ngôn từ lập trình rất trực giác, dễ sử dụng, được Viện Công nghệ Massachusets (MIT) phong cách thiết kế, để dạy cho trẻ nhỏ làm quen với lập trình máy tính từ nhỏ .
+Scratch là ngôn ngữ lập trình rất trực quan, dễ sử dụng, được Viện Công nghệ Massachusetts (MIT) thiết kế nhằm giúp trẻ em làm quen với lập trình máy tính từ sớm.
 
 ![bài tập lập trình Scratch](assets/images/50-bai-tap-lap-trinh-scratch-bai-tap-lap-trinh-scratch-co-ban.webp)
 
-## Bài tập lập trình scratch có lời giải
+## Bài tập lập trình Scratch có lời giải
 
-Theo suy nghĩ của tôi thì phương pháp học môn **lập trình kéo thả Scratch** này hiệu quả nhất là học thông qua các chương trình cụ thể, vấp đến đâu tìm hiểu đến đó vì vậy hãy cùng bắt đầu từ những bài tập đơn giản trước:
+Theo kinh nghiệm của tôi, phương pháp học **lập trình kéo thả Scratch** hiệu quả nhất là học thông qua các chương trình cụ thể — gặp vấn đề đến đâu tìm hiểu đến đó. Vì vậy, hãy cùng bắt đầu từ những bài tập đơn giản rồi dần nâng cao độ khó.
 
-### Viết chương trình Scratch vẽ đa giác đều và đường tròn
+50 bài tập dưới đây được chia thành ba nhóm:
 
-**Yêu cầu chương trình vẽ đa giác**: người dùng nhập vào tọa độ tâm, bán kính đường tròn ngoại tiếp và số cạnh đa giác
+- **Nhóm 1 – Cơ bản (Bài 1–20)**: Dành cho học sinh Tiểu học, tập trung vào vẽ hình, hoạt ảnh và trò chơi đơn giản.
+- **Nhóm 2 – Trung cấp (Bài 21–35)**: Dành cho học sinh THCS, kết hợp biến, vòng lặp và tương tác người dùng.
+- **Nhóm 3 – Nâng cao (Bài 36–50)**: Bài tập xử lý số, thuật toán và trò chơi phức tạp, phù hợp ôn thi Tin học trẻ.
 
-Yêu cầu chương trình vẽ đường tròn : Dữ liệu vào, tọa độ tâm, nửa đường kính
+---
 
-### Bài tập Scratch mô tả xe mô tô (tàu lửa, xe ô tô,…) chạy
+## Nhóm 1 – Bài tập Scratch cơ bản (Bài 1–20)
 
-Bài tập Scratch Tiểu học viết chương trình mô tả hình ảnh chiếc xe ô tô đang chạy trên màn hình hiển thị theo chiều từ trái qua phải. Khi gặp cạnh phải thì cho Open lại từ hướng bên trái rồi chạy liên tục.
+### Bài 1. Vẽ đa giác đều và đường tròn
+
+**Yêu cầu chương trình vẽ đa giác đều**: Người dùng nhập vào tọa độ tâm, bán kính đường tròn ngoại tiếp và số cạnh của đa giác. Chương trình tự động vẽ đa giác tương ứng.
+
+**Yêu cầu chương trình vẽ đường tròn**: Dữ liệu vào gồm tọa độ tâm và bán kính đường tròn.
+
+### Bài 2. Mô phỏng xe ô tô (xe máy, tàu lửa, máy bay,…) chạy
+
+Viết chương trình mô phỏng hình ảnh chiếc xe ô tô đang chạy trên màn hình theo chiều từ trái sang phải. Khi gặp cạnh phải thì xe xuất hiện lại từ phía bên trái và tiếp tục chạy liên tục.
 
 ![50 bài tập lập trình Scratch 1](assets/images/50-bai-tap-lap-trinh-scratch-xe-o-to-chay.png)
 
-Đây là bài tập Scratch đơn giản nhưng cũng có thể phát triển lên thành bài toán cho các 3 đối tượng tiểu học, Trung học cơ sở và Trung học phổ thông theo các level khác nhau.
+Bài tập này có thể phát triển thành ba mức độ khác nhau:
 
-- Level 1: Yêu cầu chiếc xe ô tô di chuyển không yêu cầu lăn bánh.
-- Level 2: Yêu cầu  xe ô tô di chuyển có lăn bánh nhưng không yêu cầu thân xe chuyển động (tức là đứng yên).
-- Level 3: Khi di chuyển trên đường gồ ghề thì phần bánh và thân xe có xóc.
+- **Mức 1**: Xe di chuyển, không yêu cầu bánh xe lăn.
+- **Mức 2**: Xe di chuyển có bánh xe lăn nhưng thân xe đứng yên.
+- **Mức 3**: Khi di chuyển trên đường gồ ghề, cả bánh xe lẫn thân xe đều có độ rung xóc.
 
-Với dạng bài tập lập trình Scratch Tiểu học này thì bạn hãy tìm cách để xe chạy trông thật tự nhiên thì càng tốt. Nếu như bạn không thích hình ảnh xe ô tô thì có thể thay thế bằng xe máy, máy bay, thuyền,…tuỳ thuộc vào khả năng sáng tạo linh hoạt của bạn.
+Bạn hãy tìm cách làm cho xe chạy trông thật tự nhiên. Nếu không thích xe ô tô, có thể thay bằng xe máy, máy bay, thuyền,… tùy theo sở thích và khả năng sáng tạo của bạn.
 
-### Bài tập Scratch vẽ lưới ô vuông
+### Bài 3. Vẽ lưới ô vuông
 
-Bài tập vẽ hình Scratch Tiểu học vẽ lưới ô vuông yêu cầu bé viết chương trình Scratch để có thể tạo hình ảnh lưới ô vuông ngay trên màn hình. Lưu ý là khi vẽ thì số lượng cột, độ dài của cạnh hình vuông cần được nhập vào khi chạy chương trình.
+Viết chương trình Scratch tạo hình ảnh lưới ô vuông trên màn hình. Khi chạy chương trình, người dùng nhập vào số lượng cột và độ dài cạnh của mỗi ô vuông.
 
 ![50 bài tập lập trình Scratch 2](assets/images/50-bai-tap-lap-trinh-scratch-luoi-o-vuong.png)
 
-### Bài tập Scratch: Trò chơi đoán số
+### Bài 4. Trò chơi đoán số
 
-Một dạng bài tập Scratch tiểu học có lời giải khá phổ biến đó là trò chơi đoán số. Với dạng bài này, nhiệm vụ của các bé là **lập trình Scratch** để mô phỏng lại tro chơi đoán số theo các yếu tố sau:
+Một trong những dạng bài Scratch phổ biến và thú vị cho học sinh Tiểu học. Nhiệm vụ của học sinh là lập trình mô phỏng trò chơi đoán số theo các quy tắc sau:
 
-Cô giáo là nhân vật chính và sẽ nghĩ ra một số và yêu cầu các em phải đoán được số đó bằng thao tác nhập các số từ bàn phím cho đến khi đoán ra được thì thôi.
+Cô giáo là nhân vật chính — cô sẽ nghĩ ra một số bí mật và yêu cầu người chơi đoán bằng cách nhập số từ bàn phím cho đến khi đoán đúng.
 
-- Lúc bắt đầu trò chơi thì cô giáo sẽ giới thiệu giống như hình bên trên và các bé sẽ bắt đầu dự đoán con số.
-- Khi bé đoán trùng với các con số đã đoán trước đó thì cô giáo sẽ thông báo: “Con số này em đã đoán rồi, vậy nên hãy đoán số khác”.
-- Khi bé dự đoán sai thì cô giáo sẽ thông báo: “Em đoán sai rồi. Số em đoán lớn hơn/nhỏ hơn số của cô nên em đoán lại đi nhé!”.
-- Khi bé đoán đúng thì cô giáo sẽ thông báo số của cô cũng như số lần mà bé đã dự đoán. Chẳng hạn như: “Đúng rồi 30. Em đã đoán đúng số của cô sau 4 lần dự kiến”.
+- Khi bắt đầu trò chơi, cô giáo tự giới thiệu và người chơi bắt đầu đoán.
+- Nếu người chơi đoán một số đã từng đoán trước đó, cô giáo thông báo: *"Con số này em đã đoán rồi, hãy thử số khác nhé!"*
+- Nếu đoán sai, cô giáo thông báo: *"Em đoán sai rồi. Số em đoán lớn hơn / nhỏ hơn số của cô, hãy đoán lại nhé!"*
+- Nếu đoán đúng, cô giáo thông báo số đúng và tổng số lần đã đoán. Ví dụ: *"Chính xác! Em đã đoán đúng số 30 sau 4 lần thử."*
 
-### Bài tập Scratch viết trò chơi chọn màu đúng
+### Bài 5. Trò chơi chọn màu đúng
 
-Viết trò chơi chọn màu đúng cũng là một trong những dạng bài Scratch cho học sinh Tiểu học hay mà phụ huynh có thể tham khảo và lựa chọn cho bé luyện tập. Đề bài yêu cầu viết chương trình trên Scratch để mô phỏng trò chơi chọn màu đúng với các dữ liệu.
-
-Chương trình sẽ cho 2 nhân vật chính là Cô Kiều và hình tròn. Hình tròn là nhân vật do bé tự thiết kế với tối thiểu 10 trang phục có màu sắc không giống nhau. Chẳng hạn như các màu: đỏ, xanh lá cây, vàng, cam, tím, nâu, xanh da trời, hồng, đen, trắng.
+Viết chương trình trên Scratch mô phỏng trò chơi chọn màu đúng với hai nhân vật chính: Cô Kiều và hình tròn. Hình tròn do học sinh tự thiết kế với tối thiểu 10 trang phục có màu sắc khác nhau (đỏ, xanh lá, vàng, cam, tím, nâu, xanh da trời, hồng, đen, trắng).
 
 ![50 bài tập lập trình Scratch 3](assets/images/50-bai-tap-lap-trinh-scratch-chon-mau.webp)
 
-Trong lúc chơi, cô Kiểu sẽ đặt các câu hỏi như: “Em hãy nháy lên hình tròn màu hồng và bên dưới lần lượt hiển thị 3 hình tròn với các màu khác nhau. Các câu hỏi cũng sẽ được tạo ra với các đáp án ngẫu nhiên.
+Trong lúc chơi, cô Kiều đặt câu hỏi như: *"Em hãy nhấp vào hình tròn màu hồng."* Phía dưới sẽ lần lượt hiển thị 3 hình tròn với màu sắc khác nhau. Câu hỏi và đáp án được tạo ngẫu nhiên mỗi lượt chơi.
 
-Lúc này, các bé cần nháy chuột lên hình tròn có màu tương ứng. Nếu bé làm đúng thì cô giáo sẽ lập tức thông báo “em đã chọn đúng”. Nếu bé làm sai thì cô thông báo “em chọn sai rồi”. Giữa các câu hỏi thì chương trình sẽ cho thời gian nghỉ là 2 giây.
+Người chơi nhấp chuột vào hình tròn có màu đúng. Nếu đúng, cô giáo thông báo *"Em đã chọn đúng!"*; nếu sai thì thông báo *"Em chọn sai rồi!"*. Giữa các câu hỏi có khoảng nghỉ 2 giây.
 
-### Bài tập Scratch mô phỏng Bi-a
+### Bài 6. Mô phỏng trò chơi Bi-a
 
-Viết chương trình Scratch miêu tả đánh bóng kiểu game show Bi-a như sau:
+Viết chương trình Scratch mô phỏng trò chơi bi-a như sau:
 
-Màn hình bắt đầu của chương trình như hình bên. Nhân vật chính của chương trình là quả bóng. Trên màn hình hiển thị biểu lộ 1 hình chữ nhật màu đỏ. Khi nháy chuột quả bóng khởi đầu hoạt động với tốc độ trung bình. Khi gặp cạnh hình chữ nhật bóng sẽ bật lại theo đúng nguyên tắc của game show bi-a. Bất cứ khi nào em nháy chuột sẽ làm đổi hướng bóng: bóng sẽ hoạt động về hướng con trỏ chuột. Khi gặp cạnh sẽ có 1 tiếng kêu nhỏ phát ra.
+Nhân vật chính là quả bóng. Trên màn hình hiển thị một hình chữ nhật màu đỏ làm khung sân. Khi người dùng nhấp chuột, quả bóng bắt đầu chuyển động với tốc độ trung bình. Khi gặp cạnh hình chữ nhật, bóng bật lại theo đúng nguyên tắc phản xạ của bi-a. Bất cứ lúc nào người dùng nhấp chuột, hướng di chuyển của bóng sẽ thay đổi về phía con trỏ chuột. Mỗi lần bóng chạm cạnh sẽ phát ra một tiếng kêu nhỏ.
 
-Em hãy viết chương trình diễn đạt nhu yếu trên. Chú ý: Khung hình chữ nhật đỏ hoàn toàn có thể là hình ảnh nền sân khấu, hoàn toàn có thể là 1 nhân vật Scratch, hoàn toàn có thể là hình vẽ do chính quả bóng vẽ ra khi chạy chương trình.
+*Chú ý*: Khung hình chữ nhật đỏ có thể là hình ảnh nền sân khấu, một nhân vật Scratch riêng, hoặc được vẽ bởi chính quả bóng khi chương trình chạy.
 
-### Vẽ cây hoa tròn bằng Scratch
+### Bài 7. Vẽ cây hoa tròn
 
-Em hãy viết 1 thủ tục trong chương trình Scratch để có thể vẽ được các hình cây với hoa tròn như sau:
+Viết một thủ tục trong Scratch để vẽ hình cây với các bông hoa tròn như minh họa:
 
 ![50 bài tập lập trình Scratch 4](assets/images/50-bai-tap-lap-trinh-scratch-cay-hoa.webp)
 
-Thủ tục cần có tên **Vẽ cây hoa tròn** và có ít nhất 1 tham số để có thể vẽ được các hình trên và dễ dàng mở rộng.
+Thủ tục cần đặt tên là **Vẽ cây hoa tròn** và có ít nhất một tham số để dễ dàng vẽ nhiều kích thước cây khác nhau và mở rộng thêm sau này.
 
-### Bài tập Scratch trò chơi chim bay có ngày gặp ma
+### Bài 8. Trò chơi Chim bay tránh ma
 
-Trò chơi **Chim bay** có các màn hình ban đầu và trong thời gian chơi như 2 hình sau:
+Trò chơi **Chim bay** gồm các quy tắc sau:
 
-- Chương trình có 3 nhân vật chính: chim, trái cây và ma trắng. Bấm  phím cách để bắt đầu chơi. Ban đầu người chơi được ngay 10 điểm.
-- Chim sẽ luôn vỗ cánh và bay. Em điều khiển chim bay bằng các phím lên, phải, trái. Khi bấm phím phải, trái, chim sẽ quay về hướng phải, trái và bay 1 đoạn ngắn. Khi bấm phím lên, chim sẽ cố gắng bay lên. Tuy nhiên do cánh chim quá nặng nên chim sẽ luôn bị hút rơi xuống. Nếu rơi xuống mặt đất, điểm số sẽ luôn bị trừ đi 1 điểm trong suốt thời gian ở mặt đất. Do vậy người chơi cần điều khiển nhanh để chim bay lên.
-- Trên màn hình sẽ xuất hiện ngẫu nhiên các trái cây và ma trắng, chuyển động từ trái sang phải hoặc từ phải sang trái màn hình. Trái cây xuất hiện nhiều hơn và chuyển động nhanh hơn, ma trắng xuất hiện ít hơn và chuyển động chậm hơn.
-- Nếu gặp ngôi sao, người chơi được thưởng 50 điểm.
-- Nếu gặp ma trắng, lập tức điểm số bị đặt bằng 0, chim rơi xuống đất và trò chơi kết thúc.
-- Có 1 biến nhớ thời gian luôn hiện trên màn hình và sẽ chạy khi bắt đầu chơi. Sau đúng 1 phút (60 giây), trò chơi kết thúc.
+- Chương trình có 3 nhân vật chính: chim, trái cây và ma trắng. Nhấn phím **Cách** để bắt đầu chơi. Điểm ban đầu là 10.
+- Chim luôn vỗ cánh và bay. Người chơi điều khiển chim bằng các phím mũi tên trái, phải, lên. Khi nhấn phím trái hoặc phải, chim quay về hướng tương ứng và bay một đoạn ngắn. Khi nhấn phím lên, chim cố bay lên nhưng do trọng lực, chim luôn có xu hướng rơi xuống. Nếu chim chạm đất, điểm bị trừ liên tục 1 điểm mỗi giây cho đến khi bay lên.
+- Trái cây và ma trắng xuất hiện ngẫu nhiên, chuyển động ngang qua màn hình. Trái cây xuất hiện nhiều hơn và di chuyển nhanh hơn; ma trắng xuất hiện ít hơn và di chuyển chậm hơn.
+- Nếu chim ăn được trái cây, người chơi được thưởng 50 điểm.
+- Nếu chim va vào ma trắng, điểm bị đặt về 0, chim rơi xuống đất và trò chơi kết thúc.
+- Một biến thời gian đếm ngược hiển thị trên màn hình. Sau đúng 60 giây, trò chơi kết thúc.
 
-Để chơi game show này, người chơi cần khôn khéo tinh chỉnh và điều khiển con chim sao cho đạt nhiều điểm nhất khi kết thúc chương trình, tránh va chạm với con ma trắng .Em hãy viết chương trình Scratch diễn đạt chương trình, game show trên.
+Để đạt điểm cao, người chơi cần khéo léo điều khiển chim thu thập trái cây và tránh va chạm với ma trắng.
 
-### Lập trình Scratch tính n! (n giai thừa) bằng cách dùng đệ quy
+### Bài 9. Lập trình tính n! (giai thừa) bằng đệ quy
 
 Cho n là số tự nhiên, quy ước 0! = 1.
 
-**Yêu cầu**: Khi chạy xuất hiện 1 bạn hỏi “Bạn muốn tính mấy giai thừa?” người dùng nhập vào và chương trình thông báo kết quả.
+**Yêu cầu**: Khi chạy chương trình, một nhân vật hỏi: *"Bạn muốn tính giai thừa của số mấy?"* Người dùng nhập vào số n và chương trình thông báo kết quả n!.
 
-### Lập trình trò chơi phù thủy cưỡi chổi bay bằng Scratch
+### Bài 10. Trò chơi phù thủy cưỡi chổi bay
 
-**Yêu cầu**: Nhân vật chính là bà phù thủy cưỡi chổi bay trên bầu trời, người dùng dùng hai phím mũi tên lên và xuống để điều khiển chổi bay lên xuống giúp bà phù thủy né được những con rồng lửa và thu gom những hộp quà.
+**Yêu cầu**: Nhân vật chính là bà phù thủy cưỡi chổi bay trên bầu trời. Người chơi dùng hai phím mũi tên lên và xuống để điều khiển chổi, giúp bà phù thủy né tránh những con rồng lửa và thu thập các hộp quà.
 
-Trò chơi diễn ra trong 60 giây, có một biến thời hạn để quản trị thời hạn chơi, Một biến điểm lưu lại số hộp quà mà bà phù thủy nhận được, (mặc định lúc đầu có 10 điểm), nếu nhận được hộp quà thì tăng lên 1 điểm, nếu gặp rồng lửa rồng sẽ cướp đi của bà 2 điểm .Khung cảnh khu rừng đổi khác liên tục khi chổi bay, người dùng bấm phím khoảng cách để khởi đầu chơi .
+Trò chơi kéo dài 60 giây. Chương trình có:
+- Một biến **Thời gian** đếm ngược để quản lý thời gian chơi.
+- Một biến **Điểm** lưu số hộp quà thu thập được (mặc định ban đầu là 10 điểm). Nhận được hộp quà thì tăng 1 điểm; va chạm với rồng lửa thì mất 2 điểm.
 
-### Trò chơi em qua đường an toàn
+Khung cảnh khu rừng thay đổi liên tục khi chổi bay. Người chơi nhấn phím **Cách** để bắt đầu chơi.
 
-Trò chơi miêu tả 1 đường phố nơi có đường ngang dành cho người đi bộ qua đường. Tại vị trí đường ngang có 1 đèn xanh đỏ. Trên đường có 2 làn xe theo 2 chiều và nhiều xe hơi chạy tiếp tục.
+### Bài 11. Trò chơi em qua đường an toàn
 
-Khi gặp đèn đỏ những xe hơi sẽ dừng lại trước vạch đỏ cho người đi bộ qua đường. Thời gian đèn đỏ là 5 giây, đèn xanh 7 giây. Khi chuyển đèn xanh xe hơi sẽ liên tục chạy.
+Mô phỏng một đoạn đường phố có vạch sang đường dành cho người đi bộ. Tại vị trí vạch sang đường có đèn tín hiệu giao thông. Trên đường có 2 làn xe chạy theo 2 chiều ngược nhau.
 
-Người chơi cần điều khiển và tinh chỉnh bạn nhỏ đi qua đường (bằng chuột hoặc phím) nhanh gọn qua đường khi đèn xanh. Nếu em qua đường khi đèn đó mà gặp xe hơi thì tai nạn đáng tiếc xảy ra và chương trình kết thúc .
+- Khi đèn đỏ bật: các xe dừng lại trước vạch, cho phép người đi bộ sang đường. Thời gian đèn đỏ là 5 giây.
+- Khi đèn xanh bật: các xe tiếp tục chạy. Thời gian đèn xanh là 7 giây.
 
-### Bài tập Scratch Đố em con gì đây?
+Người chơi điều khiển nhân vật bạn nhỏ (bằng chuột hoặc phím) sang đường trong thời gian đèn đỏ. Nếu sang đường khi đèn xanh mà gặp xe, tai nạn xảy ra và trò chơi kết thúc.
 
-Trò chơi như sau: Khi chương trình chạy Open ngẫu nhiên 1 con vật trên màn hình hiển thị và giáo viên hỏi: Đố bạn biết con này là con gì?
+### Bài 12. Đố em — Con gì đây?
 
-Người chơi nhập vào tên của con vật. Chương trình sẽ kiểm tra và thông tin hiệu quả đúng / sai. Khi người chơi nháy chuột lên con vật thì sẽ phát ra âm thanh tên con vật đó.
+Khi chương trình chạy, một con vật ngẫu nhiên xuất hiện trên màn hình và giáo viên hỏi: *"Đố bạn biết con này là con gì?"*
 
-### Viết chương trình luyện gõ phím tiếng việt bằng Scratch
+Người chơi nhập tên con vật vào ô trả lời. Chương trình kiểm tra và thông báo kết quả đúng hoặc sai. Khi người chơi nhấp chuột lên con vật, chương trình phát ra âm thanh tên của con vật đó.
 
-**Trò chơi như sau**: Các con vật mang theo từ ngẫu nhiên sẽ xuất hiện ngẫu nhiên trên màn hình từ bên trái, chuyển động về phía bên phải với vận tốc khác nhau, nếu gặp biên phải thì lại xuất hiện từ biên trái vẫn với từ đó
+### Bài 13. Luyện gõ phím tiếng Việt
 
-Nếu người dùng nhập đúng 1 từ thì con vật có từ tương ứng sẽ kêu 1 tiếng rồi lao xuống đất và biến mất, sau vài giây sẽ hiển thị lại bên trái màn hình hiển thị với từ mới .Có một biến để lưu điểm : Nếu nhập đúng 1 từ cộng 1 điểm, Nếu đi đến bên phải mà chưa bị rơi xuống thì bị trừ 1 điểm
+**Luật chơi**: Các con vật mang theo một từ tiếng Việt ngẫu nhiên xuất hiện từ bên trái màn hình, di chuyển về phía bên phải với tốc độ khác nhau. Nếu đến biên phải mà chưa bị "bắn hạ", con vật lại xuất hiện từ bên trái với từ mới.
 
-### Sắp xếp danh sách trong Scratch
+- Nếu người chơi gõ đúng từ của một con vật, con vật đó phát ra tiếng kêu rồi lao xuống đất và biến mất. Sau vài giây, nó xuất hiện lại bên trái với từ mới.
+- Biến **Điểm**: gõ đúng một từ thì cộng 1 điểm; con vật thoát ra phía phải mà chưa bị bắt thì trừ 1 điểm.
 
-Mở đầu chương trình, giáo viên nhu yếu người dùng nhập từ bàn phím 1 list học viên lớp. Cần nhập họ tên hoàn hảo. Muốn kết thúc nhập nhấn Enter ngay khi Open dòng nhập liệu .Giả sử nhập list lớp như sau :
+### Bài 14. Sắp xếp danh sách học sinh
+
+Khi bắt đầu chương trình, giáo viên yêu cầu người dùng nhập từ bàn phím danh sách học sinh của lớp (nhập đầy đủ họ tên). Nhấn **Enter** khi dòng nhập liệu trống để kết thúc nhập.
+
+Ví dụ danh sách nhập vào:
 
 - Nguyễn Xuân Anh
 - Bùi Kim Xuân
@@ -149,79 +163,294 @@ Mở đầu chương trình, giáo viên nhu yếu người dùng nhập từ b�
 - Vương Hồng Nhật
 - Trần Thị Vân
 
-Khi nhập xong giáo viên sẽ thông báo danh sách lớp và yêu cầu Mèo sắp xếp lại danh sách lớp theo thứ tự ABC, tính theo tên trước, họ đệm sau.
-
-Mèo sẽ sắp xếp lại và thông tin list lớp sau khi đã sắp xếp đúng. Với ví dụ trên, list sắp xếp lại phải như sau :
+Sau khi nhập xong, giáo viên thông báo danh sách lớp và yêu cầu nhân vật Mèo sắp xếp lại theo thứ tự ABC (tính theo tên trước, họ đệm sau). Kết quả sau khi sắp xếp:
 
 - Nguyễn Thúy Anh
 - Nguyễn Xuân Anh
 - Võ Thu Hà
 - Vương Hồng Nhật
 - Trần Thị Vân
-- Bùi Kim Xuân.
+- Bùi Kim Xuân
 
-### Một số bài tập Scratch xử lý số
+Mèo thông báo danh sách sau khi đã sắp xếp đúng thứ tự.
 
-Gửi đến các bạn 1 số bài tập đơn giản có thể dùng để luyện cho các cháu lập trình Scratch, chuẩn bị cho kỳ thi Tin học trẻ toàn quốc.
+### Bài 15. Nhân vật di chuyển theo bàn phím
 
-1. Nhập số n từ bàn phím và tính tổng S = 1/1 + 1/2 + … + 1/n.
+Viết chương trình Scratch điều khiển một nhân vật di chuyển trên màn hình bằng 4 phím mũi tên (lên, xuống, trái, phải). Yêu cầu:
+
+- Nhân vật quay mặt theo hướng di chuyển.
+- Khi chạm vào biên màn hình thì dừng lại, không đi ra ngoài.
+- Khi nhân vật đứng yên, hiển thị hoạt ảnh đứng; khi di chuyển, hiển thị hoạt ảnh bước đi.
+
+### Bài 16. Vẽ tam giác đều
+
+Viết chương trình Scratch vẽ một tam giác đều. Người dùng nhập vào độ dài cạnh và tọa độ đỉnh đầu tiên. Chương trình tự động vẽ tam giác với màu sắc tùy chọn.
+
+**Mở rộng**: Vẽ nhiều tam giác đều lồng nhau tạo thành hoa văn.
+
+### Bài 17. Vẽ ngôi sao 5 cánh
+
+Viết chương trình Scratch vẽ ngôi sao 5 cánh. Người dùng nhập vào kích thước và màu sắc. Chương trình vẽ ngôi sao bằng cách sử dụng khối **Di chuyển** và **Quay** phù hợp.
+
+**Mở rộng**: Vẽ nhiều ngôi sao với kích thước và màu sắc khác nhau rải đều trên màn hình.
+
+### Bài 18. Tạo hoạt ảnh nhân vật nhảy múa
+
+Thiết kế một nhân vật có ít nhất 4 trang phục (costume) thể hiện các tư thế nhảy múa khác nhau. Viết chương trình để nhân vật tự động chuyển đổi các trang phục tạo hiệu ứng nhảy múa liên tục, kết hợp với âm nhạc nền phù hợp.
+
+**Yêu cầu**: Người dùng có thể nhấn phím để thay đổi tốc độ hoạt ảnh (nhanh / chậm / dừng).
+
+### Bài 19. Tạo truyện tranh tương tác
+
+Viết chương trình Scratch kể một câu chuyện ngắn có tối thiểu 3 nhân vật và 3 cảnh (scene) khác nhau. Yêu cầu:
+
+- Mỗi cảnh có nền (backdrop) riêng.
+- Nhân vật có hội thoại (dùng khối **Nói** và **Nghĩ**).
+- Người xem nhấn phím **Cách** hoặc nhấp chuột để chuyển sang cảnh tiếp theo.
+- Có âm thanh nền phù hợp với từng cảnh.
+
+### Bài 20. Đàn piano mini
+
+Viết chương trình Scratch mô phỏng đàn piano với 8 phím đàn (tương ứng các nốt nhạc Đồ, Rê, Mi, Fa, Sol, La, Si, Đố). Mỗi phím được gán một phím bàn phím (ví dụ: A, S, D, F, G, H, J, K). Khi người dùng nhấn phím tương ứng, nhân vật Mèo gõ vào phím đàn và phát ra âm thanh đúng nốt nhạc.
+
+**Mở rộng**: Hiển thị tên nốt nhạc khi phím được nhấn.
+
+---
+
+## Nhóm 2 – Bài tập Scratch trung cấp (Bài 21–35)
+
+### Bài 21. Trò chơi bắt bóng
+
+Viết chương trình trò chơi bắt bóng đơn giản:
+
+- Một quả bóng rơi ngẫu nhiên từ trên xuống với tốc độ ngày càng nhanh dần.
+- Người chơi điều khiển một cái rổ (hoặc nhân vật) bằng phím trái/phải để hứng bóng.
+- Nếu hứng được bóng thì cộng 1 điểm; nếu bóng rơi xuống đất thì trừ 1 mạng.
+- Chương trình kết thúc khi hết 3 mạng. Hiển thị điểm cao nhất đã đạt được.
+
+### Bài 22. Trò chơi mê cung
+
+Thiết kế một mê cung đơn giản làm nền sân khấu. Người chơi điều khiển nhân vật đi qua mê cung bằng phím mũi tên. Yêu cầu:
+
+- Nhân vật không thể đi xuyên qua tường (dùng cảm biến màu sắc).
+- Có điểm đích rõ ràng; khi đến đích thì thông báo thắng và hiển thị thời gian hoàn thành.
+- Có tính năng đếm thời gian từ khi bắt đầu đến khi về đích.
+
+### Bài 23. Mô phỏng thời tiết
+
+Viết chương trình mô phỏng các hiện tượng thời tiết theo lựa chọn của người dùng:
+
+- **Mưa**: Các giọt mưa rơi ngẫu nhiên từ trên xuống.
+- **Tuyết rơi**: Các bông tuyết lơ lửng rồi rơi xuống chậm rãi.
+- **Nắng**: Mặt trời tỏa sáng với hiệu ứng tia sáng xoay tròn.
+- **Sấm chớp**: Tia sét xuất hiện ngẫu nhiên kèm âm thanh sấm.
+
+Người dùng chọn loại thời tiết bằng cách nhấp vào các nút tương ứng.
+
+### Bài 24. Máy tính bốn phép tính cơ bản
+
+Viết chương trình Scratch mô phỏng máy tính bỏ túi với 4 phép tính: cộng, trừ, nhân, chia. Yêu cầu:
+
+- Người dùng nhập số thứ nhất, chọn phép tính, nhập số thứ hai.
+- Chương trình hiển thị kết quả và thông báo bằng lời.
+- Kiểm tra trường hợp chia cho 0 và thông báo lỗi phù hợp.
+- Có nút **Xóa** để nhập lại phép tính mới.
+
+### Bài 25. Trò chơi đố vui toán học
+
+Viết chương trình tạo các câu đố toán học ngẫu nhiên (phép cộng, trừ, nhân chia) phù hợp với cấp độ người chơi:
+
+- **Cấp 1**: Phép cộng và trừ trong phạm vi 20.
+- **Cấp 2**: Phép nhân và chia trong bảng cửu chương.
+- **Cấp 3**: Phép tính hỗn hợp với số lớn hơn.
+
+Mỗi màn chơi có 10 câu hỏi. Tính điểm và thưởng thêm điểm nếu trả lời nhanh.
+
+### Bài 26. Vẽ hoa văn đối xứng
+
+Viết chương trình Scratch vẽ hoa văn đối xứng đẹp bằng cách kết hợp vòng lặp và xoay góc. Người dùng nhập số cánh hoa (từ 3 đến 12) và chương trình tự động vẽ hoa văn tương ứng với màu sắc ngẫu nhiên.
+
+**Mở rộng**: Vẽ liên tiếp nhiều hoa văn tạo thành bức tranh trang trí.
+
+### Bài 27. Mô phỏng đồng hồ kim
+
+Viết chương trình Scratch vẽ một mặt đồng hồ tròn với 3 kim (giờ, phút, giây). Các kim quay đúng theo thời gian thực. Hiển thị giờ số bên cạnh mặt đồng hồ kim.
+
+**Gợi ý**: Dùng khối **Thời gian** (Timer) hoặc lấy giờ hiện tại từ Scratch.
+
+### Bài 28. Trò chơi nhớ màu sắc
+
+Chương trình hiển thị một dãy màu sắc (ví dụ: đỏ, xanh, vàng, tím) trong vài giây rồi ẩn đi. Người chơi phải nhớ và nhập lại đúng thứ tự màu sắc đó. Mỗi vòng, dãy màu dài thêm một màu. Trò chơi kết thúc khi người chơi nhớ sai.
+
+### Bài 29. Mô phỏng hệ Mặt Trời
+
+Viết chương trình mô phỏng đơn giản hệ Mặt Trời với ít nhất 3 hành tinh (Trái Đất, Sao Hỏa, Sao Mộc) quay quanh Mặt Trời. Yêu cầu:
+
+- Mỗi hành tinh có tốc độ quay khác nhau (phù hợp với thực tế).
+- Trái Đất có Mặt Trăng quay xung quanh.
+- Khi nhấp vào một hành tinh, hiển thị thông tin ngắn về hành tinh đó.
+
+### Bài 30. Trò chơi Flappy Bird đơn giản
+
+Mô phỏng trò chơi Flappy Bird:
+
+- Nhân vật (chim hoặc bất kỳ sprite nào) tự động rơi xuống do trọng lực.
+- Người chơi nhấn phím **Cách** để chim bay lên.
+- Các cột chướng ngại vật xuất hiện từ phía phải màn hình với khoảng trống ngẫu nhiên.
+- Tránh va chạm với cột để ghi điểm. Va chạm thì kết thúc trò chơi.
+- Khi điểm tăng, tốc độ cột tăng dần.
+
+### Bài 31. Chương trình học bảng cửu chương
+
+Viết chương trình Scratch giúp học sinh học bảng cửu chương:
+
+- Hiển thị toàn bộ bảng nhân của một số (từ 1 đến 10) theo lựa chọn của người dùng.
+- Chế độ **Kiểm tra**: chương trình đặt câu hỏi ngẫu nhiên về bảng cửu chương, người dùng nhập đáp án và chương trình chấm điểm.
+- Có âm thanh khích lệ khi trả lời đúng.
+
+### Bài 32. Trò chơi câu cá
+
+Viết chương trình trò chơi câu cá:
+
+- Nhiều con cá bơi qua lại trên màn hình với tốc độ khác nhau.
+- Người chơi di chuyển cần câu lên xuống bằng phím mũi tên để câu cá.
+- Mỗi loại cá có điểm khác nhau (cá lớn ít xuất hiện hơn nhưng điểm cao hơn).
+- Có thời gian giới hạn 60 giây. Kết thúc thì hiển thị tổng điểm.
+
+### Bài 33. Vẽ fractal Cây (Cây đệ quy)
+
+Viết chương trình Scratch vẽ hình cây sử dụng kỹ thuật đệ quy (dùng khối **My Blocks**):
+
+- Từ một thân cây, chia thành hai nhánh nhỏ hơn, mỗi nhánh lại chia thành hai nhánh nhỏ hơn nữa.
+- Người dùng nhập số cấp độ đệ quy (từ 1 đến 8).
+- Màu sắc thay đổi theo chiều sâu đệ quy (thân nâu, cành xanh, đầu cành xanh nhạt).
+
+### Bài 34. Chương trình quiz kiến thức tổng hợp
+
+Viết chương trình Scratch dạng quiz với 20 câu hỏi trắc nghiệm về các chủ đề khác nhau (toán, khoa học, địa lý, lịch sử). Mỗi câu có 4 đáp án. Yêu cầu:
+
+- Câu hỏi xuất hiện ngẫu nhiên, không lặp lại.
+- Có giới hạn thời gian 15 giây cho mỗi câu.
+- Tính điểm và xếp loại (Xuất sắc / Giỏi / Khá / Trung bình) khi kết thúc.
+
+### Bài 35. Mô phỏng thí nghiệm vật lý — Vật rơi tự do
+
+Viết chương trình mô phỏng vật rơi tự do:
+
+- Một quả bóng rơi từ độ cao do người dùng nhập vào.
+- Hiển thị vận tốc và thời gian theo từng giây.
+- Khi chạm đất, bóng nảy lên với chiều cao bằng 70% chiều cao trước đó.
+- Dừng lại khi chiều cao nảy nhỏ hơn 5 đơn vị.
+
+---
+
+## Nhóm 3 – Bài tập Scratch nâng cao & xử lý số (Bài 36–50)
+
+Dưới đây là một số bài tập xử lý số phù hợp để luyện tập lập trình Scratch, chuẩn bị cho kỳ thi Tin học trẻ toàn quốc.
+
+### Bài 36. Tính tổng dãy phân số
+
+Nhập số n từ bàn phím và tính tổng S = 1/1 + 1/2 + … + 1/n.
 
 ![50 bài tập lập trình Scratch 5](assets/images/50-bai-tap-lap-trinh-scratch-1.png)
 
-2. Nhập số n từ bàn phím và tính tổng S = 1/(1.2) + 1/(2.3) + … + 1/(n.(n+1)).
+### Bài 37. Tính tổng tích phân số liên tiếp
+
+Nhập số n từ bàn phím và tính tổng S = 1/(1×2) + 1/(2×3) + … + 1/(n×(n+1)).
 
 ![50 bài tập lập trình Scratch 6](assets/images/50-bai-tap-lap-trinh-scratch-2.png)
 
-3. Tính tổng các số của dãy sau: 1 + 5 + 9 + 13 + ….. + 205.
+### Bài 38. Tính tổng dãy cấp số cộng
+
+Tính tổng các số của dãy: 1 + 5 + 9 + 13 + … + 205.
 
 ![50 bài tập lập trình Scratch 7](assets/images/50-bai-tap-lap-trinh-scratch-3.png)
 
-4. Nhập số n từ bàn phím, in ra các số nguyên tố < n.
+### Bài 39. Liệt kê số nguyên tố
+
+Nhập số n từ bàn phím, in ra tất cả các số nguyên tố nhỏ hơn n.
 
 ![50 bài tập lập trình Scratch 8](assets/images/50-bai-tap-lap-trinh-scratch-4.png)
 
-5. Nhập số n từ bàn phím, in ra khai triển của số n thành tích các thừa số nguyên tố. Ví dụ 20 = 2.2.5.
+### Bài 40. Phân tích thừa số nguyên tố
+
+Nhập số n từ bàn phím, in ra khai triển của n thành tích các thừa số nguyên tố. Ví dụ: 20 = 2 × 2 × 5.
 
 ![50 bài tập lập trình Scratch 9](assets/images/50-bai-tap-lap-trinh-scratch-5.png)
 
-6. Nhập số n, in ra n số hạng đầu tiên của dãy số Fibonaci.
+### Bài 41. Dãy số Fibonacci
+
+Nhập số n, in ra n số hạng đầu tiên của dãy số Fibonacci.
 
 ![50 bài tập lập trình Scratch 10](assets/images/50-bai-tap-lap-trinh-scratch-6.jpeg)
 
-7. Nhập 2 số tự nhiên n, m, tính ước số chung lớn nhất của n, m.
+### Bài 42. Ước số chung lớn nhất (ƯSCLN)
 
-8. Nhập 3 số tự nhiên n, m, p tính ước số chung lớn nhất của n, m, p.
+- **Phần a**: Nhập 2 số tự nhiên n, m — tính ước số chung lớn nhất của n và m.
+- **Phần b**: Nhập 3 số tự nhiên n, m, p — tính ước số chung lớn nhất của cả ba số.
 
-9. Nhập 2 số tự nhiên n, m, tính bội số chung nhỏ nhất của n, m.
+### Bài 43. Bội số chung nhỏ nhất (BSCNN)
 
-10. Nhập 3 số tự nhiên n, m, p tính bội số chung nhỏ nhất của n, m, p.
+- **Phần a**: Nhập 2 số tự nhiên n, m — tính bội số chung nhỏ nhất của n và m.
+- **Phần b**: Nhập 3 số tự nhiên n, m, p — tính bội số chung nhỏ nhất của cả ba số.
 
-11. Nhập số n và dãy số a1, a2, …., an từ bàn phím. Tính:
-a) Tổng các số của dãy trên.
-b) Tìm phần tử (chỉ số) tương ứng với số lớn nhất và nhỏ nhất của dãy trên.
+### Bài 44. Thống kê dãy số
+
+Nhập số n và dãy số a₁, a₂, …, aₙ từ bàn phím. Thực hiện:
+
+a) Tính tổng các phần tử trong dãy.
+
+b) Tìm chỉ số và giá trị của phần tử lớn nhất và nhỏ nhất trong dãy.
 
 ![50 bài tập lập trình Scratch 11](assets/images/50-bai-tap-lap-trinh-scratch-11.jpeg)
 
-12. Nhập số n và dãy số a1, a2, …., an từ bàn phím. Tìm một dãy con liên tục cực đại đơn điệu tăng của dãy số trên.
+### Bài 45. Dãy con đơn điệu tăng dài nhất
+
+Nhập số n và dãy số a₁, a₂, …, aₙ từ bàn phím. Tìm dãy con liên tục có độ dài lớn nhất mà các phần tử đơn điệu tăng.
 
 ![50 bài tập lập trình Scratch 12](assets/images/50-bai-tap-lap-trinh-scratch-12.jpeg)
 
-13. Tương tự bài 12. Tìm một dãy con liên tục cực đại các số > 0 của dãy trên.
+### Bài 46. Dãy con dương dài nhất
+
+Tương tự bài 45. Tìm dãy con liên tục có độ dài lớn nhất mà tất cả các phần tử đều dương (> 0).
 
 ![50 bài tập lập trình Scratch 13](assets/images/50-bai-tap-lap-trinh-scratch-13.jpeg)
 
-14. Nhập số n từ bàn phím, tìm và in ra tất cả các ước số nguyên tố của số n.
+### Bài 47. Ước số nguyên tố của một số
 
-15. Nhập 3 số m, n, p từ bàn phím. tìm và in ra tất cả các ước số chung của 3 số trên.
+Nhập số n từ bàn phím, tìm và in ra tất cả các ước số nguyên tố của n.
 
-16. Số hoàn hảo là số = tổng các ước số thực sự của số đó. Tìm tất cả các số hoàn hảo < 1000000000.
+### Bài 48. Ước số chung của ba số
 
-17. Nhập số n từ bàn phím, tìm:
-a) số nguyên tố nhỏ nhất > n.
-b) số nguyên tố lớn nhất < n.
+Nhập 3 số m, n, p từ bàn phím. Tìm và in ra tất cả các ước số chung của ba số đó.
 
-18. Nhập từ bàn phím số n, hãy viết n trong hệ nhị phân.
+### Bài 49. Số nguyên tố kề cận
 
-19. Nhập từ bàn phím số n, hãy viết n trong hệ hex (hệ đếm 16).
+Nhập số n từ bàn phím, tìm:
 
-20. Nhập số n và dãy số a1, a2, …., an từ bàn phím. Tìm ra các phần tử cực trị địa phương của dãy này (phần tử cực trị địa phương nếu nó cùng lớn hơn hoặc nhỏ hơn 2 số bên cạnh).
+a) Số nguyên tố nhỏ nhất lớn hơn n.
+
+b) Số nguyên tố lớn nhất nhỏ hơn n.
+
+### Bài 50. Các bài tập nâng cao khác
+
+**a) Số hoàn hảo**: Số hoàn hảo là số bằng tổng tất cả các ước số thực sự của nó. Tìm tất cả các số hoàn hảo nhỏ hơn 1.000.000.000.
+
+**b) Chuyển đổi hệ nhị phân**: Nhập số n từ bàn phím, biểu diễn n trong hệ nhị phân (cơ số 2).
+
+**c) Chuyển đổi hệ thập lục phân**: Nhập số n từ bàn phím, biểu diễn n trong hệ thập lục phân (cơ số 16, hệ hex).
+
+**d) Phần tử cực trị địa phương**: Nhập số n và dãy số a₁, a₂, …, aₙ. Tìm tất cả các phần tử cực trị địa phương (phần tử đồng thời lớn hơn hoặc nhỏ hơn cả hai phần tử liền kề).
+
+---
+
+## Kết luận
+
+Bộ 50 bài tập lập trình Scratch trên đây được thiết kế bám sát chương trình Tin học Tiểu học và THCS, giúp học sinh:
+
+- **Rèn tư duy lập trình** từ những bài toán thực tế gần gũi.
+- **Làm quen với các cấu trúc lập trình** cơ bản: vòng lặp, điều kiện, biến, thủ tục.
+- **Phát huy sáng tạo** thông qua thiết kế nhân vật, hoạt ảnh và trò chơi tương tác.
+- **Chuẩn bị tốt** cho các kỳ thi Tin học trẻ cấp trường, cấp huyện và toàn quốc.
+
+Hãy bắt đầu từ những bài cơ bản, dần dần nâng cao độ khó theo từng nhóm. Chúc các em học tốt và sáng tạo thật nhiều với Scratch!
