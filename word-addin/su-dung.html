@@ -1,0 +1,206 @@
+<!doctype html>
+<!-- credit: giasu.ai.vn -->
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hướng dẫn sử dụng TexCraft Công thức &amp; Đề thi cho Word | Gia Sư Thông Minh</title>
+  <meta name="description" content="Hướng dẫn sử dụng chi tiết add-in TexCraft cho Microsoft Word: chuyển công thức MathType, LaTeX, Word; chuẩn hóa, trộn đề và lập bảng đáp án; vẽ hình Toán, Lý, Hóa, Sinh. Có hình minh họa.">
+  <meta name="theme-color" content="#23332e">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="../favicon.svg">
+  <link rel="apple-touch-icon" href="../assets/og-cover.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"></noscript>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .guide-container { max-width: 820px; margin: 0 auto; padding: 24px 16px 56px; }
+    .btn-download { display: inline-flex; align-items: center; gap: 8px; background: #1f6f54; color: #fff !important; padding: 12px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: all 0.15s; margin: 8px 0 16px; }
+    .btn-download:hover { background: #185a44; transform: translateY(-1px); }
+    .note-box { background: #fff8e1; border-left: 4px solid #e0a800; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 20px 0; font-size: 14.5px; line-height: 1.6; }
+    html[data-theme="dark"] .note-box { background: #2b2518; border-color: #d99a00; color: #f0e6d2; }
+    code { background: #eef2ef; padding: 2px 6px; border-radius: 4px; word-break: break-all; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13.5px; }
+    html[data-theme="dark"] code { background: #26332a; color: #a4e5be; }
+    .guide-step { margin-bottom: 24px; }
+    .guide-step h2 { margin-top: 1.8em; margin-bottom: 0.6em; font-size: 1.35rem; color: var(--accent-deep, #144a37); }
+    html[data-theme="dark"] .guide-step h2 { color: #5ec498; }
+    ol { padding-left: 22px; line-height: 1.75; }
+    li { margin: 8px 0; }
+      .guide-container img.shot { display:block; max-width: 100%; height:auto; margin: 14px auto; border: 1px solid #d5ddd8; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+    .guide-container img.shot.narrow { max-width: 360px; }
+    .guide-container figure { margin: 0; } .guide-container figcaption { text-align:center; font-size: 13.5px; color: #5b6a63; margin-top: -6px; }
+    html[data-theme="dark"] .guide-container figcaption { color: #a9b8b0; }
+    .toc { background:#f3f7f4; border-radius:10px; padding:12px 18px; margin: 18px 0; line-height:1.9; }
+    html[data-theme="dark"] .toc { background:#1f2a24; }
+    .guide-step h3 { margin: 1.4em 0 .4em; font-size: 1.1rem; }
+    table.opts { border-collapse: collapse; width:100%; margin: 12px 0; font-size: 14.5px; }
+    table.opts th, table.opts td { border:1px solid #c9d3cd; padding: 6px 10px; text-align:left; vertical-align: top; }
+    table.opts th { background:#eaf1ec; } html[data-theme="dark"] table.opts th { background:#26332a; }
+  </style>
+  <script defer src="../assets/preferences.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Đến nội dung</a>
+<header>
+  <div class="nav wrap">
+    <a class="brand" href="../">
+      <img src="../hocbaicungcon_round.svg" alt="Gia Sư Thông Minh" width="46" height="46">
+      <span><strong class="brand-name">gia sư</strong> <b>thông minh<span class="dot">.</span></b></span>
+    </a>
+    <a class="grading-link" href="../cham-thi/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12l3 3 7-7"/></svg>
+      <span class="grading-label"><span>Chấm thi</span><span>trắc nghiệm</span></span>
+      <span class="grading-free">Free</span>
+    </a>
+    <nav id="site-menu" aria-label="Điều hướng chính">
+      <a class="nav-pill" href="../thu-vien.html">Thư viện bài học</a>
+      <a class="nav-pill" href="../phieu-bai-tap/">Phiếu bài tập</a>
+      <a class="nav-pill" href="../de-kiem-tra/?group=viet-nam">Đề thi</a>
+      <a class="nav-pill" href="../gioi-thieu.html">Giới thiệu ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="article-wrap wrap">
+  <div class="guide-container">
+    <nav class="eyebrow breadcrumb" aria-label="Đường dẫn bài viết">
+      <a href="../">Trang chủ</a><span aria-hidden="true">/</span><a href="https://giasu.ai.vn/word-addin/">Cài đặt TexCraft</a><span aria-hidden="true">/</span><span>Hướng dẫn sử dụng</span>
+    </nav>
+    <div class="article-heading">
+      <h1>Hướng dẫn sử dụng “TexCraft Công thức &amp; Đề thi” trong Word</h1>
+      <p>Từng chức năng, từng bước, có hình minh họa. Chưa cài add-in? Xem <a href="https://giasu.ai.vn/word-addin/">hướng dẫn cài đặt</a> trước.</p>
+    </div>
+
+    <div class="guide-step">
+      <div class="toc"><b>Nội dung</b><br>
+        <a href="#bat-dau">0. Bắt đầu nhanh</a> · <a href="#cong-thuc">1. Tab Công thức</a> · <a href="#de-thi">2. Tab Đề thi</a> · <a href="#hinh-ve">3. Tab Hình vẽ</a> · <a href="#gioi-thieu">4. Tab Giới thiệu</a> · <a href="#meo">5. Mẹo &amp; câu hỏi thường gặp</a></div>
+
+      <h2 id="bat-dau">0. Bắt đầu nhanh</h2>
+      <ol>
+        <li>Mở tài liệu trong Word, vào tab <b>TexCraft</b> trên Ribbon (hoặc <b>Trang đầu → Add-ins</b>) rồi bấm biểu tượng TexCraft để mở bảng điều khiển bên phải.</li>
+        <li>Bảng điều khiển có 4 tab: <b>Công thức</b>, <b>Đề thi</b>, <b>Hình vẽ</b>, <b>Giới thiệu</b>.</li>
+        <li><b>Luôn làm việc trên bản sao.</b> Add-in chỉ ghi vào tài liệu khi bạn bấm các nút như <b>Chuyển</b>, <b>Chuẩn hóa</b>, <b>Chèn vào Word</b>. Mọi thay đổi có thể hoàn tác bằng Ctrl/Cmd + Z, hoặc nút <b>Khôi phục</b> trong tab Công thức.</li>
+      </ol>
+
+      <h2 id="cong-thuc">1. Tab Công thức: quét và chuyển công thức</h2>
+      <p>Dùng khi tài liệu có công thức MathType (đối tượng nhúng), công thức Word hoặc mã LaTeX gõ dạng văn bản (<code>$x^2$</code>) và bạn muốn đổi sang một dạng khác cho đồng nhất.</p>
+      <h3>1.1 Quét tài liệu</h3>
+      <p>Bấm <b>Quét toàn bộ tài liệu</b>: add-in đếm số công thức theo từng loại và liệt kê từng công thức kèm mã LaTeX đọc được. Bấm vào một dòng để Word nhảy tới đoạn chứa công thức đó. Bật <b>Chỉ hiện công thức không đọc được</b> để tìm các công thức cần xử lý thủ công.</p>
+      <figure><img class="shot narrow" src="guide/eq-quet.png" alt="Mục 1. Quét trong tab Công thức" loading="lazy"><figcaption>Quét toàn bộ tài liệu</figcaption></figure>
+      <h3>1.2 Chuyển công thức</h3>
+      <ol>
+        <li>Chọn <b>Chuyển từ</b> (nguồn) và <b>Chuyển sang</b> (đích). Ô đích chỉ hiện các lựa chọn hợp lệ với nguồn đã chọn:
+          <table class="opts"><thead><tr><th>Nguồn</th><th>Đích có thể chọn</th></tr></thead><tbody>
+            <tr><td>MathType</td><td>Công thức Word, LaTeX, hoặc MathType (làm lại theo kiểu chữ/cỡ chữ mới)</td></tr>
+            <tr><td>LaTeX</td><td>Công thức Word hoặc MathType</td></tr>
+            <tr><td>Công thức Word</td><td>LaTeX hoặc MathType</td></tr></tbody></table></li>
+        <li>Chọn phạm vi: <b>Đoạn đang chọn</b> hoặc <b>Toàn bộ tài liệu</b>.</li>
+        <li>Tick <b>Tôi đã lưu một bản sao tài liệu</b> rồi bấm <b>Chuyển</b>. Kết quả báo số công thức đã chuyển và số công thức giữ nguyên (kèm lý do).</li>
+        <li>Chưa ưng ý: bấm <b>Khôi phục</b> (hoặc Ctrl/Cmd + Z).</li>
+      </ol>
+      <h3>1.3 Tùy chọn khi chuyển sang MathType</h3>
+      <p>Khi đích là MathType, hiện thêm các tùy chọn:</p>
+      <ul>
+        <li><b>Kiểu chữ</b>: Times New Roman, Cambria… (có chân) hoặc Arial (không chân).</li>
+        <li><b>Kiểu hiển thị</b>: <i>Cổ điển</i> (phân số, tổng, tích phân cỡ lớn như công thức riêng dòng) hoặc <i>Gọn</i> (nhỏ theo dòng chữ).</li>
+        <li><b>Ảnh</b>: vector EMF (nét, khuyên dùng) hoặc ảnh PNG.</li>
+        <li><b>Cỡ chữ</b>: <i>Theo văn bản (tự động)</i>, các cỡ có sẵn 10–14 pt, hoặc <b>Số khác…</b> để tự nhập cỡ tùy ý từ 4 đến 200 pt (cho phép số lẻ như 11.5).</li>
+      </ul>
+      <figure><img class="shot narrow" src="guide/eq-chuyen.png" alt="Chuyển LaTeX sang MathType, nhập cỡ chữ tùy ý 11.5" loading="lazy"><figcaption>Chuyển LaTeX → MathType với cỡ chữ 11,5 pt nhập tay</figcaption></figure>
+
+      <h2 id="de-thi">2. Tab Đề thi</h2>
+      <p>Tab gồm 4 mục: phân tích đề, chuẩn hóa câu hỏi, trộn đề và bảng đáp án, xuất bài trình chiếu. Add-in hiểu đề thi theo cấu trúc GDPT 2018: <b>Phần I</b> trắc nghiệm nhiều phương án (A–D), <b>Phần II</b> đúng/sai (ý a, b, c, d), <b>Phần III</b> trả lời ngắn; cũng đọc được đề tiếng Anh dạng “Question N.”.</p>
+
+      <h3>2.1 Phân tích đề và nhận đáp án</h3>
+      <p>Bấm <b>Phân tích</b> để xem add-in nhận được bao nhiêu câu mỗi phần. Đáp án đúng được nhận theo một trong các cách sau:</p>
+      <ul>
+        <li><b>Định dạng nhãn đáp án đúng</b>: nhãn <b>A.</b>/<b>B.</b>… (hoặc ý <b>a)</b> đúng) được gạch chân, tô chữ đỏ hoặc highlight.</li>
+        <li><b>Bảng đáp án ở cuối đề</b> (mới): nếu đề không đánh dấu đáp án nhưng có bảng đáp án sau dòng “HẾT” / “BẢNG ĐÁP ÁN”, add-in tự đọc và gán đáp án cho từng câu. Chấp nhận:
+          <ul>
+            <li>Bảng ngang: hàng trên là số câu, hàng dưới là đáp án (<code>Câu | 1 | 2 | 3</code> / <code>Đáp án | A | B | C</code>);</li>
+            <li>Bảng dọc: mỗi hàng một câu (<code>1 | A</code>), hoặc nhiều cặp trên một hàng;</li>
+            <li>Dòng chữ: <code>1.A 2.B 3.C</code>, <code>Câu 1: B</code>;</li>
+            <li>Đúng/sai: <code>Câu 1: a) Đ b) S c) S d) Đ</code> hoặc <code>ĐSSĐ</code>;</li>
+            <li>Trả lời ngắn: <code>Câu 1: 42</code>.</li>
+          </ul>
+          Đáp án đọc từ bảng chỉ áp dụng trong bộ nhớ khi phân tích/trộn đề; tài liệu gốc không bị sửa. Câu nào đã có đánh dấu trực tiếp thì ưu tiên đánh dấu đó.</li>
+      </ul>
+      <p>Câu nào chưa có đáp án được liệt kê thành các nút; bấm vào để Word nhảy tới câu đó.</p>
+      <figure><img class="shot narrow" src="guide/exam-phantich.png" alt="Kết quả phân tích đề" loading="lazy"><figcaption>Phân tích đề: số câu từng phần và số đáp án nhận được</figcaption></figure>
+
+      <h3>2.2 Chuẩn hóa câu hỏi</h3>
+      <p>Đưa đề về một định dạng thống nhất. Các tùy chọn:</p>
+      <table class="opts"><thead><tr><th>Tùy chọn</th><th>Tác dụng</th></tr></thead><tbody>
+        <tr><td>Đánh số lại câu</td><td>Theo từng phần (mỗi phần bắt đầu từ Câu 1), liên tục toàn đề, hoặc không đổi</td></tr>
+        <tr><td>Căn lề phương án</td><td>Tự động (1/2/4 cột theo độ dài), luôn 4 cột, 2 cột, mỗi phương án một dòng, hoặc giữ nguyên</td></tr>
+        <tr><td>Từ trong nhãn câu</td><td>Giữ nguyên, đổi tất cả thành “Câu N.” hoặc “Bài N.”</td></tr>
+        <tr><td>Phông chữ, cỡ chữ, cỡ công thức</td><td>Đồng bộ toàn bộ nội dung câu hỏi</td></tr>
+        <tr><td>Nhãn A. B. C. D.</td><td>In đậm, viết hoa, có dấu chấm</td></tr>
+        <tr><td><b>Nhãn “Câu N.”</b> (mới)</td><td><b>In đậm</b> nhãn câu; <b>chọn màu</b> nhãn (đen, đỏ đậm, xanh dương, xanh navy, xanh lục, tím, cam hoặc màu tùy ý); <b>xuống dòng sau nhãn</b> để nội dung câu bắt đầu ở dòng mới</td></tr>
+        <tr><td>Giữ câu hỏi và phương án cùng trang</td><td>Tránh câu hỏi bị cắt đôi giữa hai trang</td></tr></tbody></table>
+      <p>Tick <b>Tôi đã lưu một bản sao tài liệu</b> rồi bấm <b>Chuẩn hóa</b>.</p>
+      <figure><img class="shot narrow" src="guide/exam-chuanhoa.png" alt="Mục chuẩn hóa câu hỏi với tùy chọn nhãn Câu" loading="lazy"><figcaption>Chuẩn hóa câu hỏi, gồm tùy chọn nhãn “Câu N.”</figcaption></figure>
+
+      <h3>2.3 Trộn đề và bảng đáp án</h3>
+      <ol>
+        <li><b>Số mã đề</b> và <b>Mã đề</b>: mặc định mã đề gồm 4 chữ số (1001, 1002, 1003…). Nhập <b>một số</b> để làm mã đầu (các mã sau tăng dần), hoặc nhập <b>nhiều mã cách nhau bằng dấu phẩy</b> (ví dụ <code>1001, 1002, A1</code>); khi đó add-in tạo đúng các mã đó. Các mã không được trùng nhau.</li>
+        <li><b>Hạt giống</b>: cùng hạt giống cho cùng kết quả trộn, đổi số để có cách trộn khác.</li>
+        <li>Chọn kiểu trộn: thứ tự câu, thứ tự phương án A–D, thứ tự ý a) b) c) d) (phần đúng/sai); bỏ dấu đáp án khỏi đề trộn; thêm bảng đáp án vào cuối mỗi đề. Các câu dùng chung dữ kiện và phương án như “cả A và B…” được giữ nguyên vị trí.</li>
+        <li>Mở mục <b>Tiêu đề, chân trang, dòng HẾT</b> để chèn khối tiêu đề (Sở, Trường, Kỳ thi, Họ tên, Mã đề) và chân trang “Trang X/Y – Mã đề”.</li>
+        <li><b>Nơi đặt kết quả</b>: mỗi mã đề một tài liệu mới; chèn nối tiếp vào cuối tài liệu này; hoặc chỉ lập bảng đáp án.</li>
+        <li>Bấm <b>Tạo đề</b>.</li>
+      </ol>
+      <p><b>Bảng đáp án chung:</b> các mã đề được gộp vào <b>một bảng</b>, chia theo cột: cột đầu là số câu, mỗi mã đề một cột (chia riêng từng phần: nhiều phương án, đúng/sai, trả lời ngắn). Khi chọn “chèn nối tiếp” hoặc “chỉ lập bảng đáp án”, bảng này được chèn vào cuối tài liệu hiện tại. Khi mỗi mã đề một tài liệu mới, mỗi đề chỉ kèm đáp án của chính nó để học sinh không thấy đáp án mã khác.</p>
+      <figure><img class="shot narrow" src="guide/exam-tron.png" alt="Trộn đề 3 mã và bảng đáp án chung" loading="lazy"><figcaption>Trộn 3 mã đề (1001, 1002, 1003); bảng đáp án chung mỗi mã một cột</figcaption></figure>
+      <p><b>Xuất đáp án:</b> tải file Excel (mẫu GIASU.AI.VN: hàng là câu, cột là mã đề; hoặc mẫu TEXCRAFT), sao chép bảng/CSV, hoặc tạo <b>mã QR đáp án</b> để nhập nhanh vào <a href="../cham-thi/">giasu.ai.vn/cham-thi</a> chấm thi trắc nghiệm. Có thể thêm “đề gốc” với mã riêng (mặc định 0000).</p>
+
+      <h3>2.4 Xuất bài trình chiếu PowerPoint</h3>
+      <p>Tạo file .pptx 16:9 từ đề hiện tại (hoặc từ một mã đề vừa trộn), có tương tác chọn đáp án đúng/sai, chạy hoàn toàn trên máy bạn. Chọn giao diện và bấm tạo.</p>
+      <figure><img class="shot narrow" src="guide/exam-pptx.png" alt="Xuất PowerPoint" loading="lazy"><figcaption>Xuất bài trình chiếu PowerPoint</figcaption></figure>
+
+      <h2 id="hinh-ve">3. Tab Hình vẽ</h2>
+      <p>Vẽ hình minh họa cho đề thi và bài giảng, chèn vào Word dưới dạng <b>hình sửa được</b> (nhóm hình vector, hộp chữ công thức) hoặc ảnh PNG; cũng có thể tải PNG/SVG.</p>
+      <ol>
+        <li>Chọn <b>Loại hình</b>: Bảng biến thiên, Đồ thị, Miền nghiệm, Hình học, Hóa học, Vật lí, Sinh học.</li>
+        <li>Chọn <b>Hình</b> cụ thể, điền thông số (hàm số, tên điểm, cỡ…); hình xem trước cập nhật ngay.</li>
+        <li>Bấm <b>Chèn vào Word (hình sửa được)</b>, <b>Chèn ảnh PNG</b>, <b>Tải PNG</b> hoặc <b>Tải SVG</b>.</li>
+      </ol>
+      <figure><img class="shot narrow" src="guide/hinh-ve-tong-quan.png" alt="Tab Hình vẽ" loading="lazy"><figcaption>Tab Hình vẽ</figcaption></figure>
+      <h3>Hình vẽ môn Hóa học, hợp chất thơm (vòng benzen)</h3>
+      <p>Trong <b>Hóa học</b> chọn <b>Hợp chất thơm (vòng benzen)</b>, sau đó chọn chất và kiểu vòng:</p>
+      <ul>
+        <li><b>Chất</b>: benzen, toluen, etylbenzen, stiren, phenol, anilin, clobenzen, brombenzen, nitrobenzen, benzanđehit, axit benzoic, o/m/p-xilen, o/m/p-crezol, TNT (2,4,6-trinitrotoluen), axit picric, 2,4,6-tribromphenol, biphenyl, naphtalen.</li>
+        <li><b>Kiểu vòng</b>: Kekulé (3 liên kết đôi) hoặc vòng tròn (hệ thơm).</li>
+        <li>Bật/tắt <b>Ghi tên và công thức</b> dưới hình.</li>
+      </ul>
+      <figure><img class="shot narrow" src="guide/hinh-ve-benzen.png" alt="Sơ đồ phân tử benzen" loading="lazy"><figcaption>Sơ đồ benzen kiểu Kekulé</figcaption></figure>
+      <p>Các sơ đồ phân tử đơn giản khác (H₂O, CO₂, NH₃, CH₄, etan, etilen, axetilen, etanol…), dụng cụ thí nghiệm, mô hình nguyên tử Bo nằm trong cùng nhóm Hóa học.</p>
+
+      <h2 id="gioi-thieu">4. Tab Giới thiệu</h2>
+      <p>Thông tin tác giả, cách ủng hộ phát triển và nút <b>Mở hướng dẫn sử dụng</b> đưa bạn tới chính bài viết này.</p>
+      <figure><img class="shot narrow" src="guide/gioi-thieu.png" alt="Tab Giới thiệu" loading="lazy"><figcaption>Tab Giới thiệu với nút Mở hướng dẫn sử dụng</figcaption></figure>
+
+      <h2 id="meo">5. Mẹo và câu hỏi thường gặp</h2>
+      <ul>
+        <li><b>Máy cấu hình yếu / Word cũ chạy chậm?</b> Add-in tự chuyển sang chế độ nhẹ (tắt hoạt ảnh, đổ bóng). Có thể ép bằng cách thêm <code>?lite</code> vào địa chỉ.</li>
+        <li><b>Công thức MathType dạng đối tượng không đổi được cỡ chữ khi chuẩn hóa:</b> chuyển sang công thức Word ở tab Công thức rồi chuẩn hóa lại.</li>
+        <li><b>Bảng đáp án ghi “?”:</b> câu đó chưa có đáp án. Kiểm tra nhãn đáp án đúng đã được gạch chân/tô đỏ, hoặc bổ sung bảng đáp án ở cuối đề rồi phân tích lại.</li>
+        <li><b>Mất mạng:</b> add-in lưu sẵn phần lõi; phần tính toán cần tải trước trong tab Giới thiệu (bản đầy đủ).</li>
+        <li><b>Cần hỗ trợ?</b> Liên hệ tác giả (thầy Phan Văn Phương) theo thông tin ở tab Giới thiệu.</li>
+      </ul>
+      <div class="note-box"><b>Khuyến nghị:</b> trước khi chuyển công thức hoặc trộn đề số lượng lớn, hãy lưu một <b>bản sao</b> tài liệu.</div>
+    </div>
+  </div>
+</main>
+
+<footer class="wrap">
+  <a class="brand small" href="../">
+    <span class="footer-brand-first">gia sư</span><span class="footer-brand-second">thông minh</span><span class="dot">.</span>
+  </a>
+  
+  <a class="footer-link" href="../luyen-tap/">Luyện tập</a>
+  <a class="footer-link" href="../gioi-thieu.html">Giới thiệu &amp; Miễn trừ trách nhiệm</a>
+</footer>
+</body>
+</html>
