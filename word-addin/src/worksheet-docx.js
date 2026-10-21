@@ -61,10 +61,10 @@ export function tikzRun(code, optStr, ctx, center = false, extra = {}) {
 const BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
 const BLANK_SPLIT = /(\\boxed\{\\phantom\{[^}]*\}\})/;
 const blankRun = (ctx, chars = 2) => {
-  const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.3, wPt = hPt * (chars > 1 ? 1.6 : 1.05),   // a box clearly bigger than the digits it holds
+  const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.4, wPt = hPt,   // a square clearly bigger than the digits it holds (two digits fit)
     cm = (v) => (v / 28.35).toFixed(3);
   const sc = tikzToScene(`\\draw[line width=0.6pt] (0,0) rectangle (${cm(wPt)},${cm(hPt)});`, { scale: 1, fs: ctx.fs || 16 });
-  const down = -Math.round(2 * (hPt / 2 - 0.2 * pt));   // half-points: lower the box so its middle is at the middle of the digits
+  const down = -Math.round(2 * (hPt / 2 - 0.28 * pt));   // half-points: lower the box so its middle is at the middle of the digits
   return sceneRun(sc, ctx, 'Ô trống').replace('<w:rPr><w:noProof/></w:rPr>', `<w:rPr><w:noProof/><w:position w:val="${down}"/></w:rPr>`).replace('distL="0" distR="0"', 'distL="36000" distR="36000"');
 };
 // primary-school arithmetic (digits, + - × ÷ = < >, brackets) is plain text, not an equation: easier to edit and lines up with the box

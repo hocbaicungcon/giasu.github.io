@@ -41,7 +41,10 @@ export function mountWorksheet(root, io) {
       </div>
       ${field('Tiêu đề (để trống = tự đặt)', '<input type="text" id="w-title" placeholder="vd. PHIẾU BÀI TẬP CUỐI TUẦN 5">')}
       ${field('Trường (tùy chọn)', '<input type="text" id="w-school" placeholder="vd. Trường Tiểu học ...">')}
-      ${field('Màu chủ đạo (theme)', '<select id="w-theme">' + WORKSHEET_THEMES.map(([v, l, c]) => `<option value="${v}">${esc(l)}${c ? ' ●' : ''}</option>`).join('') + '</select>')}
+      <div class="field"><span>Màu chủ đạo (theme): <b id="w-theme-name">${esc(WORKSHEET_THEMES[0][1])}</b></span>
+        <input type="hidden" id="w-theme" value="auto">
+        <div class="theme-grid" id="w-theme-grid" role="radiogroup" aria-label="Màu chủ đạo">${WORKSHEET_THEMES.map(([v, l, c], k) => `<button type="button" class="theme-dot${k ? '' : ' on'}" data-v="${v}" data-n="${esc(l)}" role="radio" aria-checked="${k ? 'false' : 'true'}" title="${esc(l)}" style="--c:${c ? '#' + c : 'transparent'}"></button>`).join('')}</div>
+      </div>
       ${field('Phong cách trình bày', '<select id="w-style">' + WORKSHEET_STYLES.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('') + '</select>')}
       ${sw('w-answers', 'Thêm trang đáp án', true)}
     </fieldset>
@@ -132,6 +135,12 @@ export function mountWorksheet(root, io) {
   $('w-default').addEventListener('click', () => root.querySelectorAll('#w-topics input[data-t]').forEach((c) => { c.checked = available.find((t) => t.id === c.dataset.t)?.def; }));
   $('w-all').addEventListener('click', () => root.querySelectorAll('#w-topics input[data-t]').forEach((c) => { c.checked = true; }));
   for (const id of ['w-subject', 'w-grade', 'w-level', 'w-color', 'w-theme']) $(id).addEventListener('change', () => { if (id === 'w-subject') syncSubject(); if (W) refreshTopics(); });
+  $('w-theme-grid').addEventListener('click', (ev) => {
+    const b = ev.target.closest('.theme-dot'); if (!b) return;
+    for (const d of root.querySelectorAll('.theme-dot')) { d.classList.toggle('on', d === b); d.setAttribute('aria-checked', d === b ? 'true' : 'false'); }
+    $('w-theme').value = b.dataset.v; $('w-theme-name').textContent = b.dataset.n;
+    $('w-theme').dispatchEvent(new Event('change'));
+  });
   newSeed();
   loadLib().then((lib) => { W = lib; return refreshTopics(); }).catch((e) => { $('w-topics').innerHTML = `<span class="bad">${esc(e.message)}</span>`; });
 }

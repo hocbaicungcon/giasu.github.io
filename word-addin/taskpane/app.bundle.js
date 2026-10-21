@@ -10265,9 +10265,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
       BLANK_SPLIT = /(\\boxed\{\\phantom\{[^}]*\}\})/;
       blankRun = (ctx, chars = 2) => {
-        const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.3, wPt = hPt * (chars > 1 ? 1.6 : 1.05), cm = (v) => (v / 28.35).toFixed(3);
+        const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.4, wPt = hPt, cm = (v) => (v / 28.35).toFixed(3);
         const sc = tikzToScene(`\\draw[line width=0.6pt] (0,0) rectangle (${cm(wPt)},${cm(hPt)});`, { scale: 1, fs: ctx.fs || 16 });
-        const down = -Math.round(2 * (hPt / 2 - 0.2 * pt));
+        const down = -Math.round(2 * (hPt / 2 - 0.28 * pt));
         return sceneRun(sc, ctx, "\xD4 tr\u1ED1ng").replace("<w:rPr><w:noProof/></w:rPr>", `<w:rPr><w:noProof/><w:position w:val="${down}"/></w:rPr>`).replace('distL="0" distR="0"', 'distL="36000" distR="36000"');
       };
       PLAIN_MATH = /^(?:[0-9+\-=<>().,:;?\s]|\\(?:times|div|cdot|ldots|dots|leq?|geq?|neq|ne|quad|qquad|[ ,;:])|[{}])*$/;
@@ -10371,7 +10371,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       </div>
       ${field2("Ti\xEAu \u0111\u1EC1 (\u0111\u1EC3 tr\u1ED1ng = t\u1EF1 \u0111\u1EB7t)", '<input type="text" id="w-title" placeholder="vd. PHI\u1EBEU B\xC0I T\u1EACP CU\u1ED0I TU\u1EA6N 5">')}
       ${field2("Tr\u01B0\u1EDDng (t\xF9y ch\u1ECDn)", '<input type="text" id="w-school" placeholder="vd. Tr\u01B0\u1EDDng Ti\u1EC3u h\u1ECDc ...">')}
-      ${field2("M\xE0u ch\u1EE7 \u0111\u1EA1o (theme)", '<select id="w-theme">' + WORKSHEET_THEMES.map(([v, l, c]) => `<option value="${v}">${esc7(l)}${c ? " \u25CF" : ""}</option>`).join("") + "</select>")}
+      <div class="field"><span>M\xE0u ch\u1EE7 \u0111\u1EA1o (theme): <b id="w-theme-name">${esc7(WORKSHEET_THEMES[0][1])}</b></span>
+        <input type="hidden" id="w-theme" value="auto">
+        <div class="theme-grid" id="w-theme-grid" role="radiogroup" aria-label="M\xE0u ch\u1EE7 \u0111\u1EA1o">${WORKSHEET_THEMES.map(([v, l, c], k) => `<button type="button" class="theme-dot${k ? "" : " on"}" data-v="${v}" data-n="${esc7(l)}" role="radio" aria-checked="${k ? "false" : "true"}" title="${esc7(l)}" style="--c:${c ? "#" + c : "transparent"}"></button>`).join("")}</div>
+      </div>
       ${field2("Phong c\xE1ch tr\xECnh b\xE0y", '<select id="w-style">' + WORKSHEET_STYLES.map(([v, l]) => `<option value="${v}">${esc7(l)}</option>`).join("") + "</select>")}
       ${sw2("w-answers", "Th\xEAm trang \u0111\xE1p \xE1n", true)}
     </fieldset>
@@ -10498,6 +10501,17 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     for (const id of ["w-subject", "w-grade", "w-level", "w-color", "w-theme"]) $2(id).addEventListener("change", () => {
       if (id === "w-subject") syncSubject();
       if (W) refreshTopics();
+    });
+    $2("w-theme-grid").addEventListener("click", (ev) => {
+      const b = ev.target.closest(".theme-dot");
+      if (!b) return;
+      for (const d of root.querySelectorAll(".theme-dot")) {
+        d.classList.toggle("on", d === b);
+        d.setAttribute("aria-checked", d === b ? "true" : "false");
+      }
+      $2("w-theme").value = b.dataset.v;
+      $2("w-theme-name").textContent = b.dataset.n;
+      $2("w-theme").dispatchEvent(new Event("change"));
     });
     newSeed();
     loadLib().then((lib) => {

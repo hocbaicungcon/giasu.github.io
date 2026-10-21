@@ -633,3 +633,10 @@ section { max-width: 780px; margin-left: auto; margin-right: auto; }
 .row > button { flex: 1 1 124px; }
 .orig-row input[type=text] { flex: 0 0 72px; }
 @media (max-width: 340px) { .grid3 { grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); } .btns.two { grid-template-columns: repeat(auto-fit, minmax(124px, 1fr)); } }
+
+/* worksheet colour themes: round swatches */
+.theme-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 4px; }
+.theme-dot { width: 26px; height: 26px; min-height: 0; padding: 0; border-radius: 50%; border: 2px solid #fff; background: var(--c); box-shadow: 0 0 0 1px var(--line, #cfd4da); cursor: pointer; }
+.theme-dot:first-child { background: conic-gradient(#1D6FB8 0 25%, #2E8B57 0 50%, #E67E22 0 75%, #7D3CB5 0); }
+.theme-dot[data-v="bw"] { background: linear-gradient(90deg, #222 0 50%, #fff 0); }
+.theme-dot.on { box-shadow: 0 0 0 2px var(--accent, #2b6cb0); }
