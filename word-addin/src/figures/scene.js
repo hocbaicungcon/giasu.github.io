@@ -24,9 +24,9 @@ export function sceneToSvg(scene, { bg = '#fff' } = {}) {
     if (p.t === 'line') {
       body += `<line x1="${n2(p.x1)}" y1="${n2(p.y1)}" x2="${n2(p.x2)}" y2="${n2(p.y2)}" stroke="${p.color || '#000'}" stroke-width="${sw}" stroke-linecap="round"${dash}/>`;
       if (p.arrow) { const a = Math.atan2(p.y2 - p.y1, p.x2 - p.x1), s = 8; body += `<path d="M${n2(p.x2)} ${n2(p.y2)} L${n2(p.x2 - s * Math.cos(a - 0.4))} ${n2(p.y2 - s * Math.sin(a - 0.4))} L${n2(p.x2 - s * Math.cos(a + 0.4))} ${n2(p.y2 - s * Math.sin(a + 0.4))}Z" fill="${p.color || '#000'}"/>`; }
-    } else if (p.t === 'rect') body += `<rect x="${n2(p.x)}" y="${n2(p.y)}" width="${n2(p.w)}" height="${n2(p.h)}" fill="${p.fill || 'none'}" stroke="${p.color || '#000'}" stroke-width="${sw}"/>`;
+    } else if (p.t === 'rect') body += `<rect x="${n2(p.x)}" y="${n2(p.y)}" width="${n2(p.w)}" height="${n2(p.h)}" fill="${p.fill || 'none'}" stroke="${p.color || '#000'}" stroke-width="${sw}" stroke-linecap="round"${dash}/>`;
     else if (p.t === 'poly') body += `<path d="M${p.pts.map((q) => `${n2(q[0])} ${n2(q[1])}`).join('L')}${p.closed ? 'Z' : ''}" fill="${p.fill || 'none'}" stroke="${p.color || '#000'}" stroke-width="${sw}" stroke-linejoin="round" stroke-linecap="round"${dash}${p.opacity ? ` fill-opacity="${p.opacity}"` : ''}/>`;
-    else if (p.t === 'ellipse') body += `<ellipse cx="${n2(p.cx)}" cy="${n2(p.cy)}" rx="${n2(p.rx)}" ry="${n2(p.ry)}" fill="${p.fill || 'none'}" stroke="${p.color || '#000'}" stroke-width="${sw}"${dash}/>`;
+    else if (p.t === 'ellipse') body += `<ellipse cx="${n2(p.cx)}" cy="${n2(p.cy)}" rx="${n2(p.rx)}" ry="${n2(p.ry)}" fill="${p.fill || 'none'}" stroke="${p.color || '#000'}" stroke-width="${sw}" stroke-linecap="round"${dash}/>`;
     else if (p.t === 'dot') body += `<circle cx="${n2(p.x)}" cy="${n2(p.y)}" r="${p.r || 2.6}" fill="${p.color || '#000'}"/>`;
     else if (p.t === 'label') body += labelSvg(p);
     else if (p.t === 'ptext') body += `<text x="${n2(p.x)}" y="${n2(p.y)}" font-size="${n2(p.size || 16)}" text-anchor="middle" dominant-baseline="central" font-family="${p.font || FONT}"${p.bold ? ' font-weight="700"' : ''} fill="${p.color || '#000'}">${esc(p.s)}</text>`;

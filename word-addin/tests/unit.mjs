@@ -272,6 +272,24 @@ test('Exam header: narrow code box, school name fits its column', async () => {
   assert.ok(x.includes('w:w="2350"') && x.includes('w:w="2650"'), 'left/right columns 47/53');
   assert.ok(x.includes('w:w="1000"'), 'code box column is 20 %');
 });
+test('Worksheet: preschool topics and colour themes convert to well-formed Word (no skipped topic, no raw LaTeX)', async () => {
+  await import('../taskpane/vendor/worksheet.js');
+  const W = globalThis.Worksheet;
+  const { worksheetBody, bodyPackage, WORKSHEET_THEMES } = await import('../src/worksheet-docx.js');
+  const { parseXml } = await import('../src/xml.js');
+  const cps = {}; for (const e of Object.values(W.lib.items)) cps[e.id] = e.cp;
+  const iconCode = (id, outline) => { const m = /\\begin\{tikzpicture\}\[[^\n]*\]\n([\s\S]*?)\n\\end\{tikzpicture\}/.exec(W.art.definition(id, outline)); return m ? m[1] : null; };
+  assert.ok(WORKSHEET_THEMES.some((t) => t[0] === 'bw') && WORKSHEET_THEMES.length >= 6);
+  for (const level of [0, 1]) {
+    const ids = W.topicsFor('pre', 0, 'color').map((t) => t.id);
+    const r = W.generate({ subject: 'pre', grade: 0, level, color: 'color', seed: 4, size: 'normal', topics: ids, answers: true });
+    const { body, skipped } = worksheetBody(r, { subject: 'pre', grade: 0, gradeLabel: 'Bé 4 – 5 tuổi', cps, iconCode, accent: '#7D3CB5', answers: true });
+    assert.equal(skipped.length, 0, skipped.join());
+    parseXml(bodyPackage(body));
+    assert.ok(!/\\(wspic|fcolorbox|fontsize|wsdash|icO)/.test(body.replace(/<[^>]+>/g, '')), 'no raw LaTeX in the text');
+    assert.ok(/7D3CB5/i.test(body), 'theme colour is used');
+  }
+});
 test('Worksheet: generated sheets become well-formed Word body with maths, answers and emoji', async () => {
   await import('../taskpane/vendor/worksheet.js');
   const W = globalThis.Worksheet;

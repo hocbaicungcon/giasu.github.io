@@ -1758,22 +1758,22 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
       const custom = !SIZES.includes(v) || customOpen;
       el.value = custom ? "custom" : v;
-      const num3 = el.parentNode.querySelector("[data-mt-custom]");
-      if (num3) {
-        num3.hidden = !custom;
-        if (custom && document.activeElement !== num3) num3.value = SIZES.includes(v) ? "" : v;
+      const num4 = el.parentNode.querySelector("[data-mt-custom]");
+      if (num4) {
+        num4.hidden = !custom;
+        if (custom && document.activeElement !== num4) num4.value = SIZES.includes(v) ? "" : v;
       }
     });
     let customOpen = false;
     root.addEventListener("input", (ev) => {
-      const num3 = ev.target.closest("[data-mt-custom]");
-      if (!num3) return;
-      const n = parseFloat(String(num3.value).replace(",", "."));
+      const num4 = ev.target.closest("[data-mt-custom]");
+      if (!num4) return;
+      const n = parseFloat(String(num4.value).replace(",", "."));
       if (!(n >= 4 && n <= 200)) return;
       state.size = String(n);
       save();
       document.querySelectorAll(".mt-settings [data-mt-custom]").forEach((o) => {
-        if (o !== num3) o.value = num3.value;
+        if (o !== num4) o.value = num4.value;
       });
       if (onChange) onChange();
     });
@@ -1783,8 +1783,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (el.dataset.mt === "size" && el.value === "custom") {
         customOpen = true;
         sync();
-        const num3 = el.parentNode.querySelector("[data-mt-custom]");
-        if (num3) num3.focus();
+        const num4 = el.parentNode.querySelector("[data-mt-custom]");
+        if (num4) num4.focus();
         return;
       }
       customOpen = false;
@@ -2927,11 +2927,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (tag === "r") return run2(el);
     if (["oMath", "e", "num", "den", "sub", "sup", "deg", "lim", "fName"].includes(tag)) return renderSeq(children(el));
     if (tag === "f") {
-      const num3 = subOf(el, "num"), den = subOf(el, "den");
+      const num4 = subOf(el, "num"), den = subOf(el, "den");
       const kind = prop(el, "type", "bar");
-      if (kind === "noBar") return [`${BS3}binom{${num3}}{${den}}`];
-      if (kind === "skw" || kind === "lin") return [`{${num3}}/{${den}}`];
-      return [`${BS3}frac{${num3}}{${den}}`];
+      if (kind === "noBar") return [`${BS3}binom{${num4}}{${den}}`];
+      if (kind === "skw" || kind === "lin") return [`{${num4}}/{${den}}`];
+      return [`${BS3}frac{${num4}}{${den}}`];
     }
     if (["sSup", "sSub", "sSubSup", "sPre"].includes(tag)) {
       let base = subOf(el, "e");
@@ -3367,8 +3367,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function parseAnswerKey(blocks) {
     const key = { mc: /* @__PURE__ */ new Map(), tf: /* @__PURE__ */ new Map(), short: /* @__PURE__ */ new Map() };
-    const put = (num3, v) => {
-      if (v && !key[v.kind].has(num3)) key[v.kind].set(num3, v.value);
+    const put = (num4, v) => {
+      if (v && !key[v.kind].has(num4)) key[v.kind].set(num4, v.value);
     };
     let text = "";
     for (const b of blocks) {
@@ -3839,15 +3839,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   function upperLetterLists(pkg) {
     const m = /<pkg:part pkg:name="\/word\/numbering\.xml"[^>]*>\s*<pkg:xmlData>([\s\S]*?)<\/pkg:xmlData>/.exec(pkg);
     if (!m) return null;
-    const abs = {}, num3 = {};
+    const abs = {}, num4 = {};
     for (const a of m[1].matchAll(/<w:abstractNum\b[^>]*w:abstractNumId="(\d+)"[\s\S]*?<\/w:abstractNum>/g)) {
       for (const l of a[0].matchAll(/<w:lvl\b[^>]*w:ilvl="(\d+)"[\s\S]*?<\/w:lvl>/g)) {
         const f = /<w:numFmt\b[^>]*w:val="(\w+)"/.exec(l[0]);
         (abs[a[1]] = abs[a[1]] || {})[l[1]] = f ? f[1] : "";
       }
     }
-    for (const n of m[1].matchAll(/<w:num\b[^>]*w:numId="(\d+)"[^>]*>\s*<w:abstractNumId\b[^>]*w:val="(\d+)"/g)) num3[n[1]] = n[2];
-    return (numId, ilvl) => (abs[num3[numId]] || {})[ilvl || "0"] === "upperLetter";
+    for (const n of m[1].matchAll(/<w:num\b[^>]*w:numId="(\d+)"[^>]*>\s*<w:abstractNumId\b[^>]*w:val="(\d+)"/g)) num4[n[1]] = n[2];
+    return (numId, ilvl) => (abs[num4[numId]] || {})[ilvl || "0"] === "upperLetter";
   }
   function materializeLetters(blocks, isUpper) {
     let next = 0, made = 0;
@@ -5101,7 +5101,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const toks = d.match(/[MmLlHhVvCcSsQqTtZzAa]|-?(?:\d+\.?\d*|\.\d+)(?:e-?\d+)?/g) || [];
     const polys = [];
     let cur = [], x = 0, y = 0, sx = 0, sy = 0, cmd = "", k = 0, lastC = null, lastQ = null;
-    const num3 = () => parseFloat(toks[k++]);
+    const num4 = () => parseFloat(toks[k++]);
     const flushPoly = () => {
       if (cur.length > 2) polys.push(cur);
       cur = [];
@@ -5118,7 +5118,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
       if (C === "M") {
         flushPoly();
-        const a = num3(), b = num3();
+        const a = num4(), b = num4();
         x = rel ? x + a : a;
         y = rel ? y + b : b;
         sx = x;
@@ -5129,7 +5129,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         continue;
       }
       if (C === "L") {
-        const a = num3(), b = num3();
+        const a = num4(), b = num4();
         x = rel ? x + a : a;
         y = rel ? y + b : b;
         cur.push([x, y]);
@@ -5137,14 +5137,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         continue;
       }
       if (C === "H") {
-        const a = num3();
+        const a = num4();
         x = rel ? x + a : a;
         cur.push([x, y]);
         lastC = lastQ = null;
         continue;
       }
       if (C === "V") {
-        const b = num3();
+        const b = num4();
         y = rel ? y + b : b;
         cur.push([x, y]);
         lastC = lastQ = null;
@@ -5153,8 +5153,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (C === "C" || C === "S") {
         let x1, y1;
         if (C === "C") {
-          x1 = num3();
-          y1 = num3();
+          x1 = num4();
+          y1 = num4();
           if (rel) {
             x1 += x;
             y1 += y;
@@ -5166,7 +5166,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           x1 = x;
           y1 = y;
         }
-        let x2 = num3(), y2 = num3(), ex = num3(), ey = num3();
+        let x2 = num4(), y2 = num4(), ex = num4(), ey = num4();
         if (rel) {
           x2 += x;
           y2 += y;
@@ -5186,8 +5186,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (C === "Q" || C === "T") {
         let x1, y1;
         if (C === "Q") {
-          x1 = num3();
-          y1 = num3();
+          x1 = num4();
+          y1 = num4();
           if (rel) {
             x1 += x;
             y1 += y;
@@ -5199,7 +5199,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           x1 = x;
           y1 = y;
         }
-        let ex = num3(), ey = num3();
+        let ex = num4(), ey = num4();
         if (rel) {
           ex += x;
           ey += y;
@@ -6263,18 +6263,19 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   function sceneToSvg(scene, { bg = "#fff" } = {}) {
     let body = "";
     for (const p2 of scene.items) {
-      const sw4 = (p2.t === "line" ? p2.w : p2.sw) || 1.4, dash = p2.dash ? ` stroke-dasharray="${p2.dash}"` : "";
+      const sw4 = (p2.t === "line" ? p2.w : p2.sw) || 1.4, dash = p2.dash ? ` stroke-dasharray="${p2.dash === "dot" ? `0.1 ${n2(sw4 * 2.4)}` : p2.dash}"` : "";
       if (p2.t === "line") {
         body += `<line x1="${n2(p2.x1)}" y1="${n2(p2.y1)}" x2="${n2(p2.x2)}" y2="${n2(p2.y2)}" stroke="${p2.color || "#000"}" stroke-width="${sw4}" stroke-linecap="round"${dash}/>`;
         if (p2.arrow) {
           const a = Math.atan2(p2.y2 - p2.y1, p2.x2 - p2.x1), s = 8;
           body += `<path d="M${n2(p2.x2)} ${n2(p2.y2)} L${n2(p2.x2 - s * Math.cos(a - 0.4))} ${n2(p2.y2 - s * Math.sin(a - 0.4))} L${n2(p2.x2 - s * Math.cos(a + 0.4))} ${n2(p2.y2 - s * Math.sin(a + 0.4))}Z" fill="${p2.color || "#000"}"/>`;
         }
-      } else if (p2.t === "rect") body += `<rect x="${n2(p2.x)}" y="${n2(p2.y)}" width="${n2(p2.w)}" height="${n2(p2.h)}" fill="${p2.fill || "none"}" stroke="${p2.color || "#000"}" stroke-width="${sw4}"/>`;
+      } else if (p2.t === "rect") body += `<rect x="${n2(p2.x)}" y="${n2(p2.y)}" width="${n2(p2.w)}" height="${n2(p2.h)}" fill="${p2.fill || "none"}" stroke="${p2.color || "#000"}" stroke-width="${sw4}" stroke-linecap="round"${dash}/>`;
       else if (p2.t === "poly") body += `<path d="M${p2.pts.map((q) => `${n2(q[0])} ${n2(q[1])}`).join("L")}${p2.closed ? "Z" : ""}" fill="${p2.fill || "none"}" stroke="${p2.color || "#000"}" stroke-width="${sw4}" stroke-linejoin="round" stroke-linecap="round"${dash}${p2.opacity ? ` fill-opacity="${p2.opacity}"` : ""}/>`;
-      else if (p2.t === "ellipse") body += `<ellipse cx="${n2(p2.cx)}" cy="${n2(p2.cy)}" rx="${n2(p2.rx)}" ry="${n2(p2.ry)}" fill="${p2.fill || "none"}" stroke="${p2.color || "#000"}" stroke-width="${sw4}"${dash}/>`;
+      else if (p2.t === "ellipse") body += `<ellipse cx="${n2(p2.cx)}" cy="${n2(p2.cy)}" rx="${n2(p2.rx)}" ry="${n2(p2.ry)}" fill="${p2.fill || "none"}" stroke="${p2.color || "#000"}" stroke-width="${sw4}" stroke-linecap="round"${dash}/>`;
       else if (p2.t === "dot") body += `<circle cx="${n2(p2.x)}" cy="${n2(p2.y)}" r="${p2.r || 2.6}" fill="${p2.color || "#000"}"/>`;
       else if (p2.t === "label") body += labelSvg(p2);
+      else if (p2.t === "ptext") body += `<text x="${n2(p2.x)}" y="${n2(p2.y)}" font-size="${n2(p2.size || 16)}" text-anchor="middle" dominant-baseline="central" font-family="${p2.font || FONT2}"${p2.bold ? ' font-weight="700"' : ""} fill="${p2.color || "#000"}">${esc4(p2.s)}</text>`;
       else if (p2.t === "text") body += `<text x="${n2(p2.x)}" y="${n2(p2.y)}" font-size="${p2.size || 15}" text-anchor="${p2.anchor === "l" ? "start" : p2.anchor === "r" ? "end" : "middle"}" font-family="${FONT2}"${p2.italic ? ' font-style="italic"' : ""}>${esc4(p2.s)}</text>`;
     }
     return `<svg xmlns="http://www.w3.org/2000/svg" width="${n2(scene.width)}" height="${n2(scene.height)}" viewBox="0 0 ${n2(scene.width)} ${n2(scene.height)}"><rect width="100%" height="100%" fill="${bg}"/>${body}</svg>`;
@@ -6301,6 +6302,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const pt = (q) => `<a:pt x="${e2(q[0] - x0)}" y="${e2(q[1] - y0)}"/>`;
       const geom = `<a:custGeom><a:avLst/><a:gdLst/><a:ahLst/><a:cxnLst/><a:rect l="0" t="0" r="r" b="b"/><a:pathLst><a:path w="${Math.max(1, e2(w))}" h="${Math.max(1, e2(h))}"${p2.closed ? "" : ' fill="none"'}><a:moveTo>${pt(p2.pts[0])}</a:moveTo>${p2.pts.slice(1).map((q) => `<a:lnTo>${pt(q)}</a:lnTo>`).join("")}${p2.closed ? "<a:close/>" : ""}</a:path></a:pathLst></a:custGeom>`;
       return shape(p2.closed ? "\u0110a gi\xE1c" : "\u0110\u01B0\u1EDDng cong", `${xfrm(x0, y0, w, h)}${geom}${p2.fill ? `<a:solidFill><a:srgbClr val="${clr(p2.fill)}"/></a:solidFill>` : "<a:noFill/>"}${ln(p2.sw, color, p2.dash)}`);
+    }
+    if (p2.t === "ptext") {
+      const size = p2.size || 16, half = Math.round(size * 0.75 * 2), chars = [...p2.s].length, w = size * 1.35 * chars + 8, h = size * 1.5;
+      const rpr2 = `<w:rPr>${p2.font ? `<w:rFonts w:ascii="${esc4(p2.font)}" w:hAnsi="${esc4(p2.font)}" w:eastAsia="${esc4(p2.font)}"/>` : ""}${p2.bold ? "<w:b/>" : ""}${p2.color ? `<w:color w:val="${clr(p2.color)}"/>` : ""}<w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`;
+      return `<wps:wsp><wps:cNvPr id="${++shapeId}" name="Ch\u1EEF"/><wps:cNvSpPr txBox="1"/><wps:spPr>${xfrm(p2.x - w / 2, p2.y - h / 2, w, h)}<a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></wps:spPr><wps:txbx><w:txbxContent><w:p><w:pPr><w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/><w:jc w:val="center"/></w:pPr><w:r>${rpr2}<w:t xml:space="preserve">${esc4(p2.s)}</w:t></w:r></w:p></w:txbxContent></wps:txbx><wps:bodyPr lIns="0" tIns="0" rIns="0" bIns="0" rtlCol="0" anchor="ctr"><a:noAutofit/></wps:bodyPr></wps:wsp>`;
     }
     if (p2.t === "label" || p2.t === "text") {
       const size = p2.size || 16, latex = p2.t === "label" ? p2.latex : p2.italic ? p2.s : `\\text{${p2.s}}`;
@@ -6342,7 +6348,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       EMU = 9525;
       e2 = (v) => Math.round(v * EMU);
       clr = (c) => (c || "#000000").replace("#", "").padEnd(6, "0").toUpperCase().slice(0, 6);
-      ln = (w, color, dash, arrow) => `<a:ln w="${Math.round((w || 1.4) * EMU)}" cap="rnd"><a:solidFill><a:srgbClr val="${clr(color)}"/></a:solidFill>${dash ? '<a:prstDash val="dash"/>' : ""}<a:round/>${arrow ? '<a:tailEnd type="triangle" w="med" len="med"/>' : ""}</a:ln>`;
+      ln = (w, color, dash, arrow) => `<a:ln w="${Math.round((w || 1.4) * EMU)}" cap="rnd"><a:solidFill><a:srgbClr val="${clr(color)}"/></a:solidFill>${dash ? `<a:prstDash val="${dash === "dot" ? "sysDot" : "dash"}"/>` : ""}<a:round/>${arrow ? '<a:tailEnd type="triangle" w="med" len="med"/>' : ""}</a:ln>`;
       shapeId = 1;
       shape = (name, spPr, extra = "") => `<wps:wsp><wps:cNvPr id="${++shapeId}" name="${esc4(name)}"/><wps:cNvSpPr/><wps:spPr>${spPr}</wps:spPr><wps:bodyPr/>${extra}</wps:wsp>`;
       NS2 = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" mc:Ignorable="wp14"';
@@ -6492,7 +6498,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const tok = (s) => String(s).trim().split(/\s+/).filter(Boolean);
     const xs = tok(x), ds = tok(dy), ys = tok(y), n = xs.length;
     if (n < 2) throw new Error("D\xF2ng x c\u1EA7n \xEDt nh\u1EA5t 2 gi\xE1 tr\u1ECB (vd. -inf 1 +inf).");
-    const num3 = (t) => {
+    const num4 = (t) => {
       const m = INF.exec(t);
       return m ? `${m[1] === "-" || m[1] === "\u2212" ? "-" : "+"}\\infty` : t.replace(/^\+(?=\d)/, "");
     };
@@ -6508,14 +6514,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (ys.length !== n) throw new Error(`D\xF2ng y c\u1EA7n \u0111\xFAng ${n} gi\xE1 tr\u1ECB, \u1EE9ng v\u1EDBi t\u1EEBng c\u1ED9t x (\u0111ang c\xF3 ${ys.length}). \u0110i\u1EC3m gi\xE1n \u0111o\u1EA1n vi\u1EBFt d\u1EA1ng tr\xE1i|ph\u1EA3i, vd. -inf|+inf.`);
     const pts = xs.map((t, i) => {
       const isInf = INF.test(t), pole = marks[i] === "||" || ys[i].includes("|");
-      return { xl: num3(t), kind: isInf ? "inf" : pole ? "pole" : "crit", undef: marks[i] === "||" && !ys[i].includes("|") };
+      return { xl: num4(t), kind: isInf ? "inf" : pole ? "pole" : "crit", undef: marks[i] === "||" && !ys[i].includes("|") };
     });
     const vals = ys.map((t, i) => {
       if (t.includes("|")) {
         const [l, r] = t.split("|");
-        return { l: l ? num3(l) : "", r: r ? num3(r) : "" };
+        return { l: l ? num4(l) : "", r: r ? num4(r) : "" };
       }
-      return pts[i].kind === "pole" ? { l: num3(t), r: num3(t) } : { v: num3(t) };
+      return pts[i].kind === "pole" ? { l: num4(t), r: num4(t) } : { v: num4(t) };
     });
     pts.forEach((p2, i) => {
       if (marks[i] === "0" && p2.kind !== "pole" && p2.kind !== "inf") p2.kind = "crit";
@@ -6863,12 +6869,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     for (let i = 0; i < poly.length; i++) {
       const a = poly[i], b = poly[(i + 1) % poly.length];
       const nx = -(b[1] - a[1]) * orient, ny = (b[0] - a[0]) * orient;
-      const num3 = nx * (seg[0][0] - a[0]) + ny * (seg[0][1] - a[1]), den = nx * d[0] + ny * d[1];
+      const num4 = nx * (seg[0][0] - a[0]) + ny * (seg[0][1] - a[1]), den = nx * d[0] + ny * d[1];
       if (Math.abs(den) < 1e-12) {
-        if (num3 < 0) return null;
+        if (num4 < 0) return null;
         continue;
       }
-      const t = -num3 / den;
+      const t = -num4 / den;
       if (den > 0) t0 = Math.max(t0, t);
       else t1 = Math.min(t1, t);
       if (t0 > t1) return null;
@@ -9024,17 +9030,69 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     return null;
   }
   function nodeLatex(text) {
-    let t = text.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|bfseries|itshape|sffamily|normalsize)\b\s*/g, "").trim();
+    let t = text.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|Huge|bfseries|itshape|sffamily|normalsize)\b\s*/g, "").trim();
     if (!t) return "";
     if (/^\$[\s\S]*\$$/.test(t) && t.indexOf("$", 1) === t.length - 1) return t.slice(1, -1);
     if (t.includes("$")) return t.replace(/\$([^$]*)\$/g, "$1");
     return /^[\d\s+\-−×:=.,]*$/.test(t) ? t : `\\text{${t}}`;
   }
-  function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
+  function listValues(list3) {
+    const items = splitTop(list3, ",").map((x) => x.trim()).filter(Boolean), dots3 = items.indexOf("...");
+    if (dots3 < 0) return items;
+    const head = items.slice(0, dots3).map(parseFloat), end = parseFloat(items[dots3 + 1]);
+    const step = head.length > 1 ? head[1] - head[0] : end >= head[0] ? 1 : -1, out = [];
+    if (!step) throw new TikzError("foreach list");
+    for (let v = head[0], k = 0; (step > 0 ? v <= end + 1e-9 : v >= end - 1e-9) && k < 400; v += step, k++) out.push(fmtNum2(v));
+    return out;
+  }
+  function expandForeach(src) {
+    for (let guard = 0; guard < 60; guard++) {
+      const m = /\\foreach\s+((?:\\[A-Za-z]+\/?)+)\s+in\s*\{/.exec(src);
+      if (!m) return src;
+      const names = m[1].split("/").filter(Boolean).map((v) => v.slice(1));
+      const [list3, afterList] = braceGroup(src, m.index + m[0].length - 1);
+      let k = afterList;
+      while (/\s/.test(src[k])) k++;
+      let body, end;
+      if (src[k] === "{") [body, end] = braceGroup(src, k);
+      else {
+        const e3 = src.indexOf(";", k);
+        body = src.slice(k, e3 + 1);
+        end = e3 + 1;
+      }
+      const out = listValues(list3).map((v) => {
+        const parts = names.length > 1 ? v.split("/") : [v];
+        return names.reduce((b, n, idx) => b.replace(new RegExp("\\\\" + n + "(?![A-Za-z])", "g"), () => parts[idx]), body);
+      }).join("\n");
+      src = src.slice(0, m.index) + out + src.slice(end);
+    }
+    throw new TikzError("foreach");
+  }
+  function expandScopes(src) {
+    for (let guard = 0; guard < 60; guard++) {
+      const m = /\\begin\{scope\}\s*(\[[^\n]*?\])?/.exec(src);
+      if (!m) return src;
+      const end = src.indexOf("\\end{scope}", m.index);
+      if (end < 0) throw new TikzError("scope");
+      const o = parseOpts((m[1] || "").slice(1, -1));
+      if (Object.keys(o).some((k) => k !== "shift")) throw new TikzError("scope " + Object.keys(o).join());
+      let dx = 0, dy = 0;
+      if (o.shift) {
+        const sm = /\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)/.exec(o.shift);
+        if (!sm) throw new TikzError("shift");
+        dx = parseFloat(sm[1]);
+        dy = parseFloat(sm[2]);
+      }
+      const body = src.slice(m.index + m[0].length, end).replace(/\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)/g, (_, a, b) => `(${fmtNum2(parseFloat(a) + dx)},${fmtNum2(parseFloat(b) + dy)})`);
+      src = src.slice(0, m.index) + body + src.slice(end + "\\end{scope}".length);
+    }
+    throw new TikzError("scope");
+  }
+  function tikzToScene(code, { scale = 1, fs = 16, lw = 1.2, ink, icon } = {}) {
     const S = CM * scale;
     const items = [], nodes = /* @__PURE__ */ new Map();
     const pt = (x, y) => [x * S, -y * S];
-    let src = code.replace(/%[^\n]*/g, "");
+    let src = expandScopes(expandForeach(code.replace(/%[^\n]*/g, "")));
     const coord = (tok, cur) => {
       const m = /^\s*\(([^)]*)\)\s*$/.exec(tok);
       if (!m) throw new TikzError("coordinate " + tok);
@@ -9044,13 +9102,13 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         if (!n) throw new TikzError("node " + inner);
         return { p: n.c, node: n };
       }
-      const polar = /^(-?[\d.]+)\s*:\s*(-?[\d.]+)$/.exec(inner);
-      if (polar) {
-        const a = parseFloat(polar[1]) * Math.PI / 180, r = parseFloat(polar[2]);
+      if (inner.includes(":") && !inner.includes(",")) {
+        const [aa, rr] = inner.split(":");
+        const a = num3(aa) * Math.PI / 180, r = num3(rr);
         return { p: pt(r * Math.cos(a), r * Math.sin(a)) };
       }
-      const xy = /^\{?\s*(-?[\d.]+)\s*(cm)?\s*\}?\s*,\s*\{?\s*(-?[\d.]+)\s*(cm)?\s*\}?$/.exec(inner);
-      if (xy) return { p: pt(parseFloat(xy[1]), parseFloat(xy[3])) };
+      const xy = splitTop(inner.replace(/[{}]/g, ""), ",");
+      if (xy.length === 2) return { p: pt(num3(xy[0]), num3(xy[1])) };
       throw new TikzError("coordinate " + inner);
     };
     const clip2 = (from, to, node3) => {
@@ -9062,23 +9120,42 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       return [to[0] + u[0] * t, to[1] + u[1] * t];
     };
     const addNode = (opts, name, c, text) => {
-      const tex = nodeLatex(text);
+      const im = /^\s*\\ic(O?)([A-Z][A-Za-z]*)(?:\[([\d.]+)\])?\s*$/.exec(text);
+      if (im && icon) {
+        const code2 = icon(im[2].toLowerCase(), Boolean(im[1]));
+        if (code2) {
+          const sc = im[3] ? parseFloat(im[3]) : 1, sub4 = tikzToScene(code2, { scale: sc * scale, fs, lw: (0.6 + 0.55 * sc) * 1.33, ink: "#4a4a4a", icon });
+          const dx = c[0] - sub4.width / 2, dy = c[1] - sub4.height / 2;
+          for (const it of sub4.items) items.push(shiftItem(it, dx, dy));
+          if (name) nodes.set(name, { c, shape: "rect", r: 0, hw: sub4.width / 2, hh: sub4.height / 2 });
+          return;
+        }
+      }
+      if (/above|below|left|right/.test(Object.keys(opts).join(" "))) {
+        const k = Object.keys(opts).join(" "), tex0 = nodeLatex(text), b0 = tex0 ? labelBox(tex0, fs) : { w: 0, h: 0 };
+        c = [c[0] + (/right/.test(k) ? 1 : /left/.test(k) ? -1 : 0) * (b0.w / 2 + 4), c[1] + (/below/.test(k) ? 1 : /above/.test(k) ? -1 : 0) * (b0.h / 2 + 4)];
+      }
+      const pm = /\\wspic(?:\[([\d.]+)cm\])?\{ws-([0-9a-f-]+)\}/i.exec(text), pic = pm ? (pm[1] ? parseFloat(pm[1]) : 1) * CM : 0;
       const size = opts["minimum size"] ? dim(opts["minimum size"]) * scale : 0;
       const w0 = opts["minimum width"] ? dim(opts["minimum width"]) * scale : size, h0 = opts["minimum height"] ? dim(opts["minimum height"]) * scale : size;
       const inner = opts["inner sep"] ? dim(opts["inner sep"]) : 5;
-      const box = tex ? labelBox(tex, fs) : { w: 0, h: 0 };
+      const tex = pm ? "" : nodeLatex(text);
+      const plain2 = !pm && tex && /^\\text\{[^$\\]*\}$/.test(tex) && /[^\x00-\x7f]|[A-Za-z]{2}/.test(tex);
+      const box = tex && !plain2 ? labelBox(tex, fs * (/Large/.test(text) ? 1.3 : 1)) : plain2 ? { w: tex.length * fs * 0.5, h: fs * 1.3 } : { w: 0, h: 0 };
       const shape2 = opts.circle ? "circle" : "rect";
       const draw = Boolean(opts.draw);
-      const hw = Math.max(w0, box.w + 2 * inner) / 2 * (draw || size ? 1 : 0) || box.w / 2, hh = Math.max(h0, box.h + 2 * inner) / 2 * (draw || size ? 1 : 0) || box.h / 2;
+      const hw = Math.max(w0, box.w + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.w / 2, hh = Math.max(h0, box.h + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.h / 2;
       const r = Math.max(w0, h0, shape2 === "circle" ? Math.max(box.w, box.h) + 2 * inner : 0) / 2;
       if (draw) {
-        const sw4 = opts["line width"] ? dim(opts["line width"]) : 1.2;
+        const sw4 = opts["line width"] ? dim(opts["line width"]) : lw;
         const fill = opts.fill ? "#" + colour(opts.fill) : void 0;
         if (shape2 === "circle") items.push({ t: "ellipse", cx: c[0], cy: c[1], rx: r, ry: r, sw: sw4, fill });
         else items.push({ t: "rect", x: c[0] - hw, y: c[1] - hh, w: 2 * hw, h: 2 * hh, sw: sw4, fill });
       }
-      if (tex) items.push({ t: "label", latex: tex, x: c[0], y: c[1], size: fs, anchor: "c" });
-      if (name) nodes.set(name, { c, shape: shape2, r: shape2 === "circle" ? r : 0, hw, hh });
+      if (tex && plain2) items.push({ t: "ptext", s: tex.slice(6, -1), x: c[0], y: c[1], size: fs * (/Large/.test(text) ? 1.3 : 1), color: "#222222" });
+      else if (tex) items.push({ t: "label", latex: tex, x: c[0], y: c[1], size: fs * (/Large|huge/.test(opts.font || "") ? 1.35 : 1), anchor: "c" });
+      if (pm) items.push({ t: "ptext", s: String.fromCodePoint(...pm[2].split("-").map((h) => parseInt(h, 16))), x: c[0], y: c[1], size: pic * 0.8, font: "Segoe UI Emoji" });
+      if (name) nodes.set(name, { c, shape: shape2, r: shape2 === "circle" ? r : 0, hw: hw || pic / 2, hh: hh || pic / 2 });
     };
     const place2 = (pos, base, w, h) => {
       const dx = /right/.test(pos) ? 1 : /left/.test(pos) ? -1 : 0, dy = /above/.test(pos) ? -1 : /below/.test(pos) ? 1 : 0;
@@ -9098,7 +9175,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (!st) continue;
       const head = /^\\(draw|fill|filldraw|node|path)\b\s*(\[[^\]]*\])?\s*([\s\S]*)$/.exec(st);
       if (!head) throw new TikzError("statement " + st.slice(0, 30));
-      const cmd = head[1], opts = parseOpts((head[2] || "").slice(1, -1)), rest = head[3].trim();
+      const cmd = head[1], opts = parseOpts((head[2] || "").slice(1, -1)), rest = head[3].trim().replace(/\.\.\s*controls\s*(\([^)]*\))\s*(?:and\s*(\([^)]*\))\s*)?\.\.\s*(\([^)]*\))/g, (_, a, b, c) => ` ~BEZ${a}${b || a}${c} `);
+      const firstItem = items.length;
+      if (opts.wsdashline) {
+        opts.draw = "black!40";
+        opts["line width"] = "2.4pt";
+      }
       if (cmd === "node") {
         const m = /^(?:\(([^)]*)\)\s*)?at\s*(\([^)]*\))\s*\{([\s\S]*)\}$/.exec(rest);
         if (!m) throw new TikzError("node " + rest.slice(0, 30));
@@ -9108,11 +9190,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const doDraw = cmd === "draw" || cmd === "filldraw" || opts.draw, doFill = cmd === "fill" || cmd === "filldraw" || opts.fill;
       const bare = colourOpt(opts);
       const fill = doFill ? "#" + (opts.fill ? colour(opts.fill) : cmd === "fill" && bare ? bare : "000000") : void 0;
-      const sw4 = opts["line width"] ? dim(opts["line width"]) : 1.2;
+      const sw4 = opts["line width"] ? dim(opts["line width"]) : lw;
       const arrow = Boolean(opts["->"] || opts["-stealth"]);
-      const stroke = doDraw ? opts.draw && opts.draw !== true ? "#" + colour(opts.draw) : cmd !== "fill" && bare ? "#" + bare : void 0 : void 0;
-      const toks = rest.match(/\(\s*[^()]*\)|--|\bcycle\b|\brectangle\b|\bcircle\b|\bgrid\b|\barc\b|\bnode\b\s*(?:\[[^\]]*\])?\s*(?:\([^)]*\))?\s*\{(?:[^{}]|\{[^{}]*\})*\}|\bto\b/g) || [];
-      let cur = null, curNode = null, i = 0, pending = null, pathPts = [];
+      const stroke = doDraw ? opts.draw && opts.draw !== true ? "#" + colour(opts.draw) : cmd !== "fill" && bare ? "#" + bare : ink : void 0;
+      const toks = rest.match(/~BEZ\([^)]*\)\([^)]*\)\([^)]*\)|\(\s*[^()]*\)|--|\bcycle\b|\brectangle\b|\bcircle\b|\bellipse\b|\bgrid\b|\barc\b|\bnode\b\s*(?:\[[^\]]*\])?\s*(?:\([^)]*\))?\s*\{(?:[^{}]|\{[^{}]*\})*\}|\bto\b|\bsin\b|\bcos\b/g) || [];
+      let cur = null, curNode = null, i = 0, pending = null, pathPts = [], joined = false, wave = "";
       const flush = () => {
         if (pathPts.length > 1 && (doDraw || doFill)) items.push({ t: "poly", pts: pathPts, closed: false, sw: sw4, fill, color: stroke, noStroke: !doDraw });
         pathPts = [];
@@ -9120,6 +9202,25 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       while (i < toks.length) {
         const t = toks[i];
         if (t === "--" || t === "to") {
+          joined = true;
+          i++;
+          continue;
+        }
+        if (t === "sin" || t === "cos") {
+          joined = true;
+          wave = t;
+          i++;
+          continue;
+        }
+        if (t.startsWith("~BEZ")) {
+          if (!cur) throw new TikzError("curve start");
+          const [c1, c2, c3] = t.slice(4).match(/\([^)]*\)/g).map((q) => coord(q).p);
+          if (!pathPts.length) pathPts = [cur];
+          for (let k = 1; k <= 14; k++) {
+            const u = k / 14, m = 1 - u;
+            pathPts.push([m * m * m * cur[0] + 3 * m * m * u * c1[0] + 3 * m * u * u * c2[0] + u * u * u * c3[0], m * m * m * cur[1] + 3 * m * m * u * c1[1] + 3 * m * u * u * c2[1] + u * u * u * c3[1]]);
+          }
+          cur = c3;
           i++;
           continue;
         }
@@ -9144,6 +9245,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           const m = /\(\s*([\d.]+)\s*(cm)?\s*\)/.exec(toks[++i]);
           const r = parseFloat(m[1]) * S;
           items.push({ t: "ellipse", cx: cur[0], cy: cur[1], rx: r, ry: r, sw: sw4, fill, color: stroke, noStroke: !doDraw });
+          pathPts = [];
+          i++;
+          continue;
+        }
+        if (t === "ellipse") {
+          const m = /\(\s*([\d.]+)\s*(?:cm)?\s+and\s+([\d.]+)\s*(?:cm)?\s*\)/.exec(toks[++i]);
+          if (!m) throw new TikzError("ellipse");
+          items.push({ t: "ellipse", cx: cur[0], cy: cur[1], rx: parseFloat(m[1]) * S, ry: parseFloat(m[2]) * S, sw: sw4, fill, color: stroke, noStroke: !doDraw });
           pathPts = [];
           i++;
           continue;
@@ -9177,6 +9286,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           continue;
         }
         const c = coord(t);
+        if (cur !== null && !joined) {
+          flush();
+          cur = null;
+        }
+        joined = false;
         if (cur === null) {
           cur = c.p;
           curNode = c.node;
@@ -9186,6 +9300,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           if (curNode || c.node) {
             flush();
             pathPts = [from, to];
+          } else if (wave) {
+            for (let k = 1; k <= 10; k++) {
+              const u = k / 10, y = wave === "sin" ? Math.sin(u * Math.PI / 2) : 1 - Math.cos(u * Math.PI / 2);
+              pathPts.push([cur[0] + (c.p[0] - cur[0]) * u, cur[1] + (c.p[1] - cur[1]) * y]);
+            }
+            to = c.p;
+            from = cur;
+            wave = "";
           } else {
             pathPts.push(c.p);
             to = c.p;
@@ -9216,8 +9338,31 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         pathPts = pathPts.slice(0, -1).length > 1 ? pathPts.slice(0, -1) : [];
       }
       flush();
+      if (opts.wsdashline) {
+        for (let k = firstItem; k < items.length; k++) if (items[k].t !== "label") items[k].dash = "dot";
+      }
     }
     return fit(items);
+  }
+  function shiftItem(it, dx, dy) {
+    const o = __spreadValues({}, it);
+    if (o.t === "line") {
+      o.x1 += dx;
+      o.x2 += dx;
+      o.y1 += dy;
+      o.y2 += dy;
+    } else if (o.t === "poly") o.pts = o.pts.map((q) => [q[0] + dx, q[1] + dy]);
+    else if (o.t === "rect") {
+      o.x += dx;
+      o.y += dy;
+    } else if (o.t === "ellipse") {
+      o.cx += dx;
+      o.cy += dy;
+    } else if (o.t === "dot" || o.t === "label" || o.t === "ptext") {
+      o.x += dx;
+      o.y += dy;
+    }
+    return o;
   }
   function fit(items, pad = 3) {
     let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
@@ -9239,7 +9384,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         grow(it.cx - it.rx, it.cy - it.ry);
         grow(it.cx + it.rx, it.cy + it.ry);
       } else if (it.t === "dot") grow(it.x, it.y);
-      else if (it.t === "label") {
+      else if (it.t === "ptext") {
+        const hs = (it.size || 16) * 0.75;
+        grow(it.x - hs, it.y - hs);
+        grow(it.x + hs, it.y + hs);
+      } else if (it.t === "label") {
         const b = labelBox(it.latex, it.size || 16);
         grow(it.x - b.w / 2, it.y - b.h / 2);
         grow(it.x + b.w / 2, it.y + b.h / 2);
@@ -9261,7 +9410,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       } else if (o.t === "ellipse") {
         o.cx += dx;
         o.cy += dy;
-      } else if (o.t === "dot" || o.t === "label") {
+      } else if (o.t === "dot" || o.t === "label" || o.t === "ptext") {
         o.x += dx;
         o.y += dy;
       }
@@ -9288,7 +9437,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     items.push({ t: "line", x1: 0, y1: 0, x2: h[0], y2: h[1], w: 2.4, arrow: true, color: "#b30000" }, { t: "line", x1: 0, y1: 0, x2: m[0], y2: m[1], w: 1.6, arrow: true, color: "#1f3f9f" }, { t: "dot", x: 0, y: 0, r: 2.2 });
     return fit(items);
   }
-  var TikzError, CM, COLORS3, hex2, dim, FLAGS;
+  var TikzError, CM, COLORS3, hex2, dim, FLAGS, braceGroup, fmtNum2, num3;
   var init_tikz = __esm({
     "src/tikz.js"() {
       init_scene();
@@ -9303,6 +9452,20 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         return parseFloat(m[1]) * { cm: CM, mm: CM / 10, pt: CM / 28.45, em: 10, ex: 5 }[m[2] || "cm"];
       };
       FLAGS = /* @__PURE__ */ new Set(["draw", "fill", "circle", "rectangle", "rounded corners", "thick", "thin", "dashed", "dotted"]);
+      braceGroup = (s, i) => {
+        let d = 0, j = i;
+        for (; j < s.length; j++) {
+          if (s[j] === "{") d++;
+          else if (s[j] === "}" && --d === 0) break;
+        }
+        return [s.slice(i + 1, j), j + 1];
+      };
+      fmtNum2 = (x) => String(+x.toFixed(6));
+      num3 = (t) => {
+        const x = String(t).replace(/cm/g, "").trim();
+        if (!/^[-+*/().\d\s]+$/.test(x)) throw new TikzError("number " + t);
+        return Function(`return (${x})`)();
+      };
     }
   });
 
@@ -9458,9 +9621,30 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       w2.splice(k + 1, 0, cols[k].gap);
       rows.forEach((r) => r.splice(k + 1, 0, { xml: cellPara("") }));
     }
-    return tbl({ rows, widths: w2, borders: vlines ? { top: 1, left: 1, bottom: 1, right: 1, insideH: 1, insideV: 1 } : hlines ? { top: 1, bottom: 1, insideH: 1 } : null, jc: centered ? "center" : null, heights }) + para("", { after: 60 });
+    return tbl({ rows, widths: w2, borders: vlines ? { top: 1, left: 1, bottom: 1, right: 1, insideH: 1, insideV: 1 } : hlines ? { top: 1, bottom: 1, insideH: 1 } : null, jc: centered ? "center" : null, heights, line: ctx.line }) + para("", { after: 60 });
+  }
+  function dropNestedVspace(s) {
+    let depth = 0, out = "";
+    for (let i = 0; i < s.length; i++) {
+      const c = s[i];
+      if (c === "\\") {
+        const m = /^\\vspace\*?\{[^}]*\}/.exec(s.slice(i));
+        if (m && depth > 0) {
+          i += m[0].length - 1;
+          continue;
+        }
+        out += c + (s[i + 1] || "");
+        i++;
+        continue;
+      }
+      if (c === "{") depth++;
+      else if (c === "}") depth--;
+      out += c;
+    }
+    return out;
   }
   function paragraphs(text, ctx, f, centered) {
+    text = dropNestedVspace(text);
     let out = "";
     const parts = text.split(/(\\par\b|\n\s*\n|\\medskip|\\bigskip|\\smallskip|\\vspace\*?\{[^}]*\})/);
     let before = 0;
@@ -9483,7 +9667,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         out += tbl({ rows: [chunks.map((c, k) => {
           const u = unbox(c);
           return { xml: cellPara(texToRuns(u.text, ctx, f), { jc: "center" }), box: u.box };
-        })], widths: chunks.map(() => w), heights: [0.9 * CM_DXA] }) + para("", { after: Math.max(60, before) });
+        })], widths: chunks.map(() => w), heights: [0.9 * CM_DXA], line: ctx.line }) + para("", { after: Math.max(60, before) });
         before = 0;
       } else {
         out += para(texToRuns(chunks.join(" "), ctx, f), { jc: centered ? "center" : void 0, before: Math.round(before), after: 80, line: 340 });
@@ -9553,7 +9737,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           if (!m) break;
           at2 = nn + m[0].length - "\\begin{minipage}".length;
         }
-        out += tbl({ rows: [cells.map((c) => ({ xml: c.xml.replace(/<\/w:tbl>$/, "</w:tbl><w:p/>") }))], widths: cells.map((c) => c.w) }) + para("", { after: 60 });
+        out += tbl({ rows: [cells.map((c) => ({ xml: c.xml.replace(/<\/w:tbl>$/, "</w:tbl><w:p/>") }))], widths: cells.map((c) => c.w), line: ctx.line }) + para("", { after: 60 });
         i = nx;
         continue;
       } else if (name === "enumerate" || name === "itemize") {
@@ -9581,9 +9765,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         return m ? parseFloat(m[1]) * ({ mm: 0.1, pt: 0.0352, em: 0.4, ex: 0.2 }[m[2]] || 1) : 0;
       };
       NOB = '<w:tblBorders><w:top w:val="nil"/><w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:insideH w:val="nil"/><w:insideV w:val="nil"/></w:tblBorders>';
-      LINES = (b) => `<w:tblBorders>${["top", "left", "bottom", "right", "insideH", "insideV"].map((k) => `<w:${k} w:val="${b[k] ? "single" : "nil"}" w:sz="6" w:space="0" w:color="222222"/>`).join("")}</w:tblBorders>`;
+      LINES = (b, line3 = "222222") => `<w:tblBorders>${["top", "left", "bottom", "right", "insideH", "insideV"].map((k) => `<w:${k} w:val="${b[k] ? "single" : "nil"}" w:sz="8" w:space="0" w:color="${line3}"/>`).join("")}</w:tblBorders>`;
       cellPara = (inner, o = {}) => para(inner, __spreadValues({ after: 0 }, o));
-      tbl = ({ rows, widths, borders, jc, heights = [] }) => `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${jc ? `<w:jc w:val="${jc}"/>` : ""}${borders ? LINES(borders) : NOB}<w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="60" w:type="dxa"/><w:right w:w="60" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map((w) => `<w:gridCol w:w="${w}"/>`).join("")}</w:tblGrid>${rows.map((r, ri) => `<w:tr><w:trPr><w:cantSplit/>${heights[ri] ? `<w:trHeight w:val="${Math.round(heights[ri])}" w:hRule="atLeast"/>` : ""}</w:trPr>${r.map((c, k) => `<w:tc><w:tcPr><w:tcW w:w="${widths[k]}" w:type="dxa"/>${c.fill ? `<w:shd w:val="clear" w:color="auto" w:fill="${c.fill}"/>` : ""}${c.box ? "<w:tcBorders>" + ["top", "left", "bottom", "right"].map((k2) => `<w:${k2} w:val="single" w:sz="8" w:space="0" w:color="222222"/>`).join("") + "</w:tcBorders>" : ""}<w:vAlign w:val="center"/></w:tcPr>${c.xml}</w:tc>`).join("")}</w:tr>`).join("")}</w:tbl>`;
+      tbl = ({ rows, widths, borders, jc, heights = [], line: line3 }) => `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${jc ? `<w:jc w:val="${jc}"/>` : ""}${borders ? LINES(borders, line3) : NOB}<w:tblLayout w:type="fixed"/><w:tblCellMar>${borders ? '<w:top w:w="30" w:type="dxa"/>' : ""}<w:left w:w="${borders ? 100 : 60}" w:type="dxa"/>${borders ? '<w:bottom w:w="30" w:type="dxa"/>' : ""}<w:right w:w="${borders ? 100 : 60}" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map((w) => `<w:gridCol w:w="${w}"/>`).join("")}</w:tblGrid>${rows.map((r, ri) => `<w:tr><w:trPr><w:cantSplit/>${heights[ri] ? `<w:trHeight w:val="${Math.round(heights[ri])}" w:hRule="atLeast"/>` : ""}</w:trPr>${r.map((c, k) => `<w:tc><w:tcPr><w:tcW w:w="${widths[k]}" w:type="dxa"/>${c.fill ? `<w:shd w:val="clear" w:color="auto" w:fill="${c.fill}"/>` : ""}${c.box ? "<w:tcBorders>" + ["top", "left", "bottom", "right"].map((k2) => `<w:${k2} w:val="single" w:sz="8" w:space="0" w:color="${line3 || "222222"}"/>`).join("") + "</w:tcBorders>" : ""}<w:vAlign w:val="center"/></w:tcPr>${c.xml}</w:tc>`).join("")}</w:tr>`).join("")}</w:tbl>`;
       safeColour = (c) => {
         try {
           return colour(c).toUpperCase();
@@ -9631,15 +9815,39 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (ctx && ctx.previewSvg) return `<w:r>${rpr2}<w:drawing><pv>${esc6(ctx.previewSvg(scene))}</pv></w:drawing></w:r>`;
     return `<w:r>${rpr2}${sceneToDrawingXml(scene, { name, alt: name })}</w:r>`;
   }
-  function tikzRun(code, optStr, ctx, center = false) {
+  function tikzRun(code, optStr, ctx, center = false, extra = {}) {
     try {
       const sc = /scale\s*=\s*([\d.]+)/.exec(optStr || "");
-      return sceneRun(tikzToScene(code, { scale: sc ? parseFloat(sc[1]) : 1, fs: ctx.fs || 16 }), ctx, "H\xECnh", center);
+      return sceneRun(tikzToScene(code, __spreadValues({ scale: sc ? parseFloat(sc[1]) : 1, fs: ctx.fs || 16, icon: ctx.iconCode }, extra)), ctx, "H\xECnh", center);
     } catch (e3) {
       if (!(e3 instanceof TikzError)) throw e3;
       ctx.unsupported = (ctx.unsupported || []).concat(e3.message);
       return "<w:r><w:t>[h\xECnh]</w:t></w:r>";
     }
+  }
+  function boxRun(ctx, wCm, hCm, border, text = "", bold = true, font = "") {
+    const w = wCm * 37.795, h = hCm * 37.795, items = [{ t: "rect", x: 0, y: 0, w, h, sw: 1.6, color: "#" + border, fill: "#ffffff" }];
+    if (text) items.push({ t: "ptext", s: text, x: w / 2, y: h / 2, size: h * (font ? 0.7 : 0.62), bold, color: "#222222", font });
+    return sceneRun(fit(items, 2), ctx, "\xD4", hCm * 28.35 < 2.2 * (ctx.fs || 16) * 0.75);
+  }
+  function boxSpec(content2) {
+    const wp = /\\wspic(?:\[([\d.]+)cm\])?\{ws-([0-9a-f-]+)\}/i.exec(content2), rh = /\\rule\{0pt\}\{([\d.]+\s*[a-z]+)\}/.exec(content2);
+    if (wp && rh && !/\\parbox/.test(content2)) {
+      const h = cmNum(rh[1]), p2 = wp[1] ? parseFloat(wp[1]) : 1;
+      return [Math.max(h, p2 + 0.3), h, String.fromCodePoint(...wp[2].split("-").map((x) => parseInt(x, 16))), false, "Segoe UI Emoji"];
+    }
+    const pb = /\\parbox(?:\[[a-z]\])?\[([\d.]+\s*[a-z]+)\](?:\[[a-z]\])?\{([\d.]+\s*[a-z]+)\}\{([\s\S]*)\}/.exec(content2);
+    if (pb) return [cmNum(pb[2]), cmNum(pb[1]), pb[3].replace(/\\[a-zA-Z]+\*?/g, "").replace(/[{}\s]/g, ""), /bfseries/.test(pb[3])];
+    const rules = [...content2.matchAll(/\\rule\{([^}]*)\}\{([^}]*)\}/g)];
+    if (rules.length && !/[A-Za-z0-9]/.test(content2.replace(/\\[a-zA-Z]+|\{[^}]*\}/g, ""))) {
+      let w = 0, h = 0;
+      for (const [, a, b] of rules) {
+        if (cmNum(a) === 0) h = Math.max(h, cmNum(b));
+        else if (cmNum(b) === 0) w = Math.max(w, cmNum(a));
+      }
+      if (w && h) return [w, h, "", false];
+    }
+    return null;
   }
   function usedPictures(result, cps = {}) {
     const text = JSON.stringify(result.sheets).replace(/\\\\/g, "\\");
@@ -9654,12 +9862,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   function texToRuns(s, ctx = {}, fmt = {}) {
     const cps = ctx.cps || {};
     const rpr2 = (f, extra = "") => {
-      const x = `${extra}${f.b ? "<w:b/>" : ""}${f.i ? "<w:i/>" : ""}${f.u ? '<w:u w:val="single"/>' : ""}${f.box ? '<w:bdr w:val="single" w:sz="6" w:space="1" w:color="444444"/>' : ""}${f.color ? `<w:color w:val="${f.color}"/>` : ""}${f.sz ? `<w:sz w:val="${f.sz}"/><w:szCs w:val="${f.sz}"/>` : ""}`;
+      const x = `${extra}${f.b ? "<w:b/>" : ""}${f.i ? "<w:i/>" : ""}${f.u ? '<w:u w:val="single"/>' : ""}${f.box ? '<w:bdr w:val="single" w:sz="6" w:space="1" w:color="444444"/>' : ""}${f.color ? `<w:color w:val="${f.color}"/>` : ""}${f.sz ? `<w:sz w:val="${f.sz}"/><w:szCs w:val="${f.sz}"/>` : ""}${f.dash ? '<w14:textOutline w14:w="12700" w14:cap="rnd"><w14:solidFill><w14:srgbClr w14:val="9A9A9A"/></w14:solidFill><w14:prstDash w14:val="sysDot"/><w14:round/></w14:textOutline><w14:textFill><w14:noFill/></w14:textFill>' : ""}`;
       return x ? `<w:rPr>${x}</w:rPr>` : "";
     };
     const run4 = (t, f = fmt, extra = "") => t ? `<w:r>${rpr2(f, extra)}<w:t xml:space="preserve">${esc6(t)}</w:t></w:r>` : "";
     let out = "", buf = "", i = 0;
-    let around;
+    let around, bigPt = 0;
     const inline = () => around != null ? around : around = s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g, "").replace(/\\[a-zA-Z]+\*?/g, "").replace(/[\s{}$\\~]/g, "").length > 0;
     const flush = () => {
       out += run4(buf);
@@ -9749,11 +9957,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         } else if (name === "wsbox" || name === "fbox") {
           const a = arg();
           flush();
-          out += name === "fbox" && FBOX_BLANK.test(a) ? blankRun(ctx, 1) : texToRuns(a, ctx, __spreadProps(__spreadValues({}, fmt), { box: true }));
+          const bs = name === "fbox" && boxSpec(a);
+          out += bs ? boxRun(ctx, bs[0], bs[1], "444444", bs[2], bs[3], bs[4] || "") : name === "fbox" && FBOX_BLANK.test(a) ? blankRun(ctx, 1) : texToRuns(a, ctx, __spreadProps(__spreadValues({}, fmt), { box: true }));
         } else if (name === "textcolor") {
-          arg();
+          const col = arg();
           flush();
-          out += texToRuns(arg(), ctx, fmt);
+          out += texToRuns(arg(), ctx, __spreadProps(__spreadValues({}, fmt), { color: texColour(col, ctx) }));
         } else if (name === "makebox") {
           const body = arg();
           flush();
@@ -9764,7 +9973,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         } else if (name === "hspace") {
           const w = cm(arg());
           buf += "\xA0".repeat(Math.max(1, Math.round(w * 3)));
-        } else if (name === "phantom" || name === "vspace" || name === "rule" || name === "color") {
+        } else if (name === "color") {
+          const col = arg();
+          flush();
+          fmt = __spreadProps(__spreadValues({}, fmt), { color: texColour(col, ctx) });
+        } else if (name === "phantom" || name === "vspace" || name === "rule") {
           arg();
           if (name === "rule") arg();
         } else if (name === "wspic" || name === "wshz") {
@@ -9776,7 +9989,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           const id = name.replace(/^icO?/, "").toLowerCase();
           flush();
           out += SHAPE_TIKZ[id] ? tikzRun(SHAPE_TIKZ[id](/^icO/.test(name) ? "white" : ""), `scale=${parseFloat(opt) || 1}`, ctx) : "";
-        } else if (/^icO/.test(name)) {
+        } else if (/^icO/.test(name) && !(ctx.iconCode && ctx.iconCode(name.replace(/^icO?/, "").toLowerCase(), true))) {
           flush();
           out += run4(emojiOf(name.slice(3).toLowerCase(), cps), __spreadProps(__spreadValues({}, fmt), { sz: fmt.emoji || 36 }), EMOJI_FONT);
         } else if (name === "ldots" || name === "dots" || name === "cdots") buf += "\u2026";
@@ -9794,9 +10007,23 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           i = e3 + "\\end{tikzpicture}".length;
         } else if (name === "end") {
           arg();
-        } else if (name === "large" || name === "Large" || name === "LARGE" || name === "huge" || name === "small" || name === "footnotesize" || name === "tiny" || name === "normalsize") {
+        } else if (name === "fontsize") {
+          const a = parseFloat(arg());
+          arg();
           flush();
-          const k = { large: 1.15, Large: 1.3, LARGE: 1.5, huge: 1.7, small: 0.9, footnotesize: 0.8, tiny: 0.65, normalsize: 1 }[name];
+          if (a) fmt = __spreadProps(__spreadValues({}, fmt), { sz: Math.round(a * 2) });
+        } else if (name === "wsdash") {
+          const a = parseFloat(opt) || 58, t = arg();
+          flush();
+          bigPt = Math.max(bigPt, a);
+          out += texToRuns(t, ctx, __spreadProps(__spreadValues({}, fmt), { b: true, dash: true, sz: Math.round(a * 2) }));
+        } else if (/^ic(O?)[A-Z]/.test(name) && !/^icO?Shape/.test(name) && ctx.iconCode && ctx.iconCode(name.replace(/^icO?/, "").toLowerCase(), /^icO/.test(name))) {
+          flush();
+          const sc = parseFloat(opt) || 1;
+          out += tikzRun(ctx.iconCode(name.replace(/^icO?/, "").toLowerCase(), /^icO/.test(name)), `scale=${sc}`, ctx, inline(), { lw: (0.6 + 0.55 * sc) * 1.33, ink: "#4a4a4a" });
+        } else if (name === "large" || name === "Large" || name === "LARGE" || name === "huge" || name === "Huge" || name === "small" || name === "footnotesize" || name === "tiny" || name === "normalsize") {
+          flush();
+          const k = { large: 1.15, Large: 1.3, LARGE: 1.5, huge: 1.7, Huge: 2, small: 0.9, footnotesize: 0.8, tiny: 0.65, normalsize: 1 }[name];
           fmt = __spreadProps(__spreadValues({}, fmt), { sz: Math.round((ctx.baseSz || fmt.sz || 26) * k) });
         } else if (name === "bfseries") {
           flush();
@@ -9852,7 +10079,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           arg();
           flush();
           out += texToRuns(arg(), ctx, fmt);
-        } else if (name === "quad" || name === "qquad") buf += "\u2003";
+        } else if (name === "fcolorbox") {
+          const bc = arg();
+          arg();
+          const a = arg();
+          flush();
+          const bs = boxSpec(a);
+          out += bs ? boxRun(ctx, Math.max(bs[0], bigPt ? bigPt * 0.9 / 28.35 : 0), Math.max(bs[1], bigPt ? bigPt * 0.9 / 28.35 : 0), texColour(bc, ctx), bs[2], bs[3], bs[4] || "") : texToRuns(a, ctx, __spreadProps(__spreadValues({}, fmt), { box: true }));
+        } else if (name === "cellcolor") arg();
+        else if (name === "quad" || name === "qquad") buf += "\u2003";
         else if (name === "checkmark") buf += "\u2713";
         else if (name === "rightarrow" || name === "to") buf += "\u2192";
         else if (name === "times") buf += "\xD7";
@@ -9865,7 +10100,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         }
         continue;
       }
-      if (c === "{" || c === "}") {
+      if (c === "{") {
+        const [g, e3] = group4(s, i);
+        flush();
+        out += texToRuns(g, ctx, fmt);
+        i = e3;
+        continue;
+      }
+      if (c === "}") {
         i++;
         continue;
       }
@@ -9912,9 +10154,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (style === "plain") return para(label(`B\xE0i ${n}.`, acc) + gap + instrRuns, base);
     return para(`<w:r><w:rPr><w:rFonts w:ascii="Segoe UI Symbol" w:hAnsi="Segoe UI Symbol"/><w:color w:val="${acc}"/><w:sz w:val="${sz + 8}"/></w:rPr><w:t xml:space="preserve">${n <= 10 ? CIRCLED[n - 1] : [...String(n)].map((d) => d === "0" ? "\u24FF" : CIRCLED[d - 1]).join("")}</w:t></w:r>${gap}${instrRuns}`, base);
   }
-  function titleBlock(style, heading, grade, acc, sz) {
+  function titleBlock(style, heading, grade, acc, sz, gradeLabel) {
     const run4 = (color, size) => `<w:r><w:rPr><w:b/><w:color w:val="${color}"/><w:sz w:val="${size}"/></w:rPr><w:t>${esc6(heading)}</w:t></w:r>`;
-    const lop = (color) => `<w:r><w:rPr><w:b/>${color ? `<w:color w:val="${color}"/>` : ""}<w:sz w:val="${sz + 2}"/></w:rPr><w:t>L\u1EDBp ${grade}</w:t></w:r>`;
+    const lop = (color) => `<w:r><w:rPr><w:b/>${color ? `<w:color w:val="${color}"/>` : ""}<w:sz w:val="${sz + 2}"/></w:rPr><w:t>${esc6(gradeLabel || `L\u1EDBp ${grade}`)}</w:t></w:r>`;
     if (style === "band") return para(run4("FFFFFF", sz + 12), { jc: "center", shade: acc, before: 0, after: 40, line: 400 }) + para(lop(acc), { jc: "center", after: 120 });
     if (style === "box") return para(run4(acc, sz + 12), { jc: "center", after: 40, shade: tint(acc, 0.9), pbdr: sbdr("top", 12, acc, 4) + sbdr("left", 12, acc, 6) + sbdr("bottom", 12, acc, 4) + sbdr("right", 12, acc, 6) }) + para(lop(acc), { jc: "center", after: 120 });
     if (style === "line") return para(run4(acc, sz + 12), { jc: "center", after: 40, pbdr: sbdr("bottom", 12, acc, 3) }) + para(lop(), { jc: "center", after: 120 });
@@ -9925,7 +10167,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const acc = color === "bw" ? "222222" : accent.replace("#", "");
     const sz = Math.round(fontPt2 * 2);
     const half = sz;
-    const ctx = { cps, pics, previewSvg: options.previewSvg, fs: fontPt2 / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
+    const ctx = { iconCode: options.iconCode, accent: acc, line: tint(acc, 0.35), cps, pics, previewSvg: options.previewSvg, fs: fontPt2 / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
     const f = { sz, emoji: Math.round(sz * 1.5) };
     const skipped = [];
     let body = "", count = 0;
@@ -9940,15 +10182,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           const cell4 = (it, k) => {
             const q = it.q;
             const lines = /^\$\\begin\{array\}/.test(q.trim()) ? arrayLines(q.trim().replace(/^\$|\$$/g, "")) : null;
-            const num3 = `<w:r><w:rPr><w:b/><w:color w:val="${acc}"/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">${k + 1}. </w:t></w:r>`;
+            const num4 = `<w:r><w:rPr><w:b/><w:color w:val="${acc}"/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">${k + 1}. </w:t></w:r>`;
             if (lines) {
               const cw = Math.floor(W / cols) - 120, tab = Math.min(1500, cw - 200), pp = (rule) => `<w:p><w:pPr>${rule ? '<w:pBdr><w:bottom w:val="single" w:sz="8" w:space="1" w:color="222222"/></w:pBdr>' : ""}<w:tabs><w:tab w:val="right" w:pos="${tab}"/></w:tabs><w:spacing w:before="0" w:after="0"/><w:ind w:left="300" w:right="${Math.max(0, cw - tab)}"/></w:pPr>`;
-              return para(num3, { after: 0 }) + lines.map((l) => {
+              return para(num4, { after: 0 }) + lines.map((l) => {
                 const m = /^(\\times|\\div|[+\-−×:÷])\s*(.*)$/.exec(l.text.trim());
                 return `${pp(l.rule)}${m ? texToRuns(`$${m[1]}$`, ctx, f) : ""}<w:r><w:tab/></w:r>${texToRuns(m ? m[2] : l.text, ctx, f)}</w:p>`;
               }).join("") + `${pp(false)}<w:r><w:rPr><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve"> </w:t></w:r></w:p>` + para("", { after: 140 });
             }
-            return para(num3 + texToRuns(q, ctx, f), { after: 100, line: 340 });
+            return para(num4 + texToRuns(q, ctx, f), { after: 100, line: 340 });
           };
           if (cols === 1) xml = b.items.map((it, k) => cell4(it, k)).join("");
           else {
@@ -9968,10 +10210,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (options.school) body += para(`<w:r><w:rPr><w:b/><w:sz w:val="${sz}"/></w:rPr><w:t>${esc6(options.school)}</w:t></w:r>`, { after: 40 });
       const heading = (options.title || `PHI\u1EBEU B\xC0I T\u1EACP ${SUBJECT_TITLE[subject] || ""}`.trim()) + code;
       {
-        const t = titleBlock(style, heading, grade, acc, sz);
+        const t = titleBlock(style, heading, grade, acc, sz, options.gradeLabel);
         body += v > 0 ? t.replace("<w:pPr>", "<w:pPr><w:pageBreakBefore/>") : t;
       }
-      body += para(`<w:r><w:rPr><w:b/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">H\u1ECD v\xE0 t\xEAn: ${".".repeat(34)}   L\u1EDBp: ${".".repeat(10)}   Ng\xE0y: ${".".repeat(12)}</w:t></w:r>`, { border: true, shade: color === "bw" ? "F3F3F3" : "EAF2FB", after: 160, line: 360 });
+      body += para(`<w:r><w:rPr><w:b/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">H\u1ECD v\xE0 t\xEAn: ${".".repeat(34)}   L\u1EDBp: ${".".repeat(10)}   Ng\xE0y: ${".".repeat(12)}</w:t></w:r>`, { border: true, shade: color === "bw" ? "F3F3F3" : tint(acc, 0.9), after: 160, line: 360 });
       let n = 0;
       const rendered = sheet.blocks.map((b) => renderBlock(b));
       for (const r of rendered) {
@@ -10009,7 +10251,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const media = images.map((im) => `<pkg:part pkg:name="/word/media/${im.rid}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b643(im.png)}</pkg:binaryData></pkg:part>`).join("");
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?mso-application progid="Word.Document"?><pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${NS3}><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part>${images.length ? `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${rels}</Relationships></pkg:xmlData></pkg:part>` : ""}${media}</pkg:package>`;
   }
-  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, PLAIN_MATH, PLAIN_SYM, plainMath, SHAPE_TIKZ, FBOX_BLANK, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
+  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, PLAIN_MATH, PLAIN_SYM, plainMath, texColour, cmNum, SHAPE_TIKZ, FBOX_BLANK, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, WORKSHEET_THEMES, tint, CIRCLED, sbdr, NS3;
   var init_worksheet_docx = __esm({
     "src/worksheet-docx.js"() {
       init_latex2omml();
@@ -10023,7 +10265,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       BLANK_RE = /\\boxed\{\\phantom\{[^}]*\}\}/;
       BLANK_SPLIT = /(\\boxed\{\\phantom\{[^}]*\}\})/;
       blankRun = (ctx, chars = 2) => {
-        const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.05, wPt = hPt * (chars > 1 ? 1.7 : 1), cm = (v) => (v / 28.35).toFixed(3);
+        const pt = (ctx.fs || 16) * 0.75, hPt = pt * 1.3, wPt = hPt * (chars > 1 ? 1.6 : 1.05), cm = (v) => (v / 28.35).toFixed(3);
         const sc = tikzToScene(`\\draw[line width=0.6pt] (0,0) rectangle (${cm(wPt)},${cm(hPt)});`, { scale: 1, fs: ctx.fs || 16 });
         const down = -Math.round(2 * (hPt / 2 - 0.2 * pt));
         return sceneRun(sc, ctx, "\xD4 tr\u1ED1ng").replace("<w:rPr><w:noProof/></w:rPr>", `<w:rPr><w:noProof/><w:position w:val="${down}"/></w:rPr>`).replace('distL="0" distR="0"', 'distL="36000" distR="36000"');
@@ -10031,6 +10273,18 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       PLAIN_MATH = /^(?:[0-9+\-=<>().,:;?\s]|\\(?:times|div|cdot|ldots|dots|leq?|geq?|neq|ne|quad|qquad|[ ,;:])|[{}])*$/;
       PLAIN_SYM = { times: "\xD7", div: ":", cdot: "\xB7", ldots: "\u2026", dots: "\u2026", le: "\u2264", leq: "\u2264", ge: "\u2265", geq: "\u2265", ne: "\u2260", neq: "\u2260" };
       plainMath = (tex) => tex.replace(/\\([a-z]+)/g, (_, n) => n === "quad" || n === "qquad" ? "  " : PLAIN_SYM[n] || "").replace(/\\[ ,;:]/g, " ").replace(/[{}]/g, "").replace(/-/g, "\u2212");
+      texColour = (name, ctx) => {
+        if (/^ws(Accent|Main)$/.test(name)) return ctx.accent || "444444";
+        try {
+          return colour(name).toUpperCase();
+        } catch (e3) {
+          return "444444";
+        }
+      };
+      cmNum = (t) => {
+        var _a8;
+        return parseFloat(t) * ({ cm: 1, mm: 0.1, pt: 0.0352, em: 0.4 }[(_a8 = /[a-z]+$/.exec(t)) == null ? void 0 : _a8[0]] || 1);
+      };
       SHAPE_TIKZ = {
         shapecircle: (f) => `\\filldraw[fill=${f || "blue!60"},line width=0.8pt] (0,0) circle (0.34);`,
         shapesquare: (f) => `\\filldraw[fill=${f || "red!65"},line width=0.8pt] (-0.3,-0.3) rectangle (0.3,0.3);`,
@@ -10044,7 +10298,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       };
       NOB2 = '<w:tblBorders><w:top w:val="nil"/><w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:insideH w:val="nil"/><w:insideV w:val="nil"/></w:tblBorders>';
       table = (rows, cols, widths) => `<w:tbl><w:tblPr><w:tblW w:w="5000" w:type="pct"/>${NOB2}<w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="60" w:type="dxa"/><w:right w:w="60" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map((w) => `<w:gridCol w:w="${w}"/>`).join("")}</w:tblGrid>${rows.map((r) => `<w:tr><w:trPr><w:cantSplit/></w:trPr>${r.map((cell4, k) => `<w:tc><w:tcPr><w:tcW w:w="${widths[k]}" w:type="dxa"/></w:tcPr>${cell4}</w:tc>`).join("")}</w:tr>`).join("")}</w:tbl>`;
-      SUBJECT_TITLE = { math: "TO\xC1N", vi: "TI\u1EBENG VI\u1EC6T", en: "TI\u1EBENG ANH" };
+      SUBJECT_TITLE = { math: "TO\xC1N", vi: "TI\u1EBENG VI\u1EC6T", en: "TI\u1EBENG ANH", pre: "M\u1EA6M NON", zh: "TI\u1EBENG TRUNG", ja: "TI\u1EBENG NH\u1EACT" };
       WORKSHEET_STYLES = [
         ["round", "S\u1ED1 trong v\xF2ng tr\xF2n (\u2776 \u2777 \u2778)"],
         ["band", "D\u1EA3i m\xE0u \u0111\u1EADm"],
@@ -10053,6 +10307,18 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         ["line", "G\u1EA1ch ch\xE2n"],
         ["plain", "\u0110\u01A1n gi\u1EA3n"]
       ];
+      WORKSHEET_THEMES = [
+        ["auto", "Theo m\xF4n h\u1ECDc", ""],
+        ["bw", "\u0110en tr\u1EAFng (ti\u1EBFt ki\u1EC7m m\u1EF1c)", "222222"],
+        ["blue", "Xanh d\u01B0\u01A1ng", "1D6FB8"],
+        ["teal", "Xanh ng\u1ECDc", "14877B"],
+        ["green", "Xanh l\xE1", "2E8B57"],
+        ["orange", "Cam", "E67E22"],
+        ["red", "\u0110\u1ECF san h\xF4", "D9534F"],
+        ["pink", "H\u1ED3ng", "D6336C"],
+        ["purple", "T\xEDm", "7D3CB5"],
+        ["navy", "Xanh than", "2C3E50"]
+      ];
       tint = (hex3, k) => {
         const n = parseInt(hex3, 16);
         const m = (c) => Math.round(c + (255 - c) * k);
@@ -10060,7 +10326,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       };
       CIRCLED = "\u2776\u2777\u2778\u2779\u277A\u277B\u277C\u277D\u277E\u277F";
       sbdr = (side, sz, color, space = 4) => `<w:${side} w:val="single" w:sz="${sz}" w:space="${space}" w:color="${color}"/>`;
-      NS3 = 'xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"';
+      NS3 = 'xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" mc:Ignorable="w14" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"';
     }
   });
 
@@ -10085,10 +10351,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function mountWorksheet(root, io) {
     root.innerHTML = `
-    <div class="notice">T\u1EA1o phi\u1EBFu b\xE0i t\u1EADp ti\u1EC3u h\u1ECDc c\xF3 \u0111\xE1p \xE1n (To\xE1n, Ti\u1EBFng Vi\u1EC7t, Ti\u1EBFng Anh, l\u1EDBp 1\u20135). S\u1ED1 li\u1EC7u v\xE0 \u0111\xE1p \xE1n t\u1EF1 t\xEDnh; c\xF9ng \u201Cm\xE3 \u0111\u1EC1\u201D th\xEC ra c\xF9ng m\u1ED9t phi\u1EBFu. C\xF4ng th\u1EE9c l\xE0 c\xF4ng th\u1EE9c Word, s\u1EEDa \u0111\u01B0\u1EE3c.</div>
+    <div class="notice">T\u1EA1o phi\u1EBFu b\xE0i t\u1EADp c\xF3 \u0111\xE1p \xE1n: To\xE1n, Ti\u1EBFng Vi\u1EC7t, Ti\u1EBFng Anh l\u1EDBp 1\u20135 v\xE0 phi\u1EBFu cho b\xE9 m\u1EA7m non (t\u1EADp t\xF4, \u0111\u1EBFm, n\u1ED1i, t\xF4 m\xE0u). S\u1ED1 li\u1EC7u v\xE0 \u0111\xE1p \xE1n t\u1EF1 t\xEDnh; c\xF9ng \u201Cm\xE3 \u0111\u1EC1\u201D th\xEC ra c\xF9ng m\u1ED9t phi\u1EBFu. C\xF4ng th\u1EE9c l\xE0 c\xF4ng th\u1EE9c Word, s\u1EEDa \u0111\u01B0\u1EE3c.</div>
     <fieldset><legend>Phi\u1EBFu</legend>
       <div class="grid2">
-        ${field2("M\xF4n", '<select id="w-subject"><option value="math">To\xE1n</option><option value="vi">Ti\u1EBFng Vi\u1EC7t</option><option value="en">Ti\u1EBFng Anh</option></select>')}
+        ${field2("M\xF4n", '<select id="w-subject"><option value="math">To\xE1n</option><option value="vi">Ti\u1EBFng Vi\u1EC7t</option><option value="en">Ti\u1EBFng Anh</option><option value="pre">M\u1EA7m non (b\xE9 4\u20136 tu\u1ED5i)</option></select>')}
         ${field2("L\u1EDBp", '<select id="w-grade">' + [1, 2, 3, 4, 5].map((g) => `<option value="${g}">L\u1EDBp ${g}</option>`).join("") + "</select>")}
       </div>
       <div class="grid2">
@@ -10105,6 +10371,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       </div>
       ${field2("Ti\xEAu \u0111\u1EC1 (\u0111\u1EC3 tr\u1ED1ng = t\u1EF1 \u0111\u1EB7t)", '<input type="text" id="w-title" placeholder="vd. PHI\u1EBEU B\xC0I T\u1EACP CU\u1ED0I TU\u1EA6N 5">')}
       ${field2("Tr\u01B0\u1EDDng (t\xF9y ch\u1ECDn)", '<input type="text" id="w-school" placeholder="vd. Tr\u01B0\u1EDDng Ti\u1EC3u h\u1ECDc ...">')}
+      ${field2("M\xE0u ch\u1EE7 \u0111\u1EA1o (theme)", '<select id="w-theme">' + WORKSHEET_THEMES.map(([v, l, c]) => `<option value="${v}">${esc7(l)}${c ? " \u25CF" : ""}</option>`).join("") + "</select>")}
       ${field2("Phong c\xE1ch tr\xECnh b\xE0y", '<select id="w-style">' + WORKSHEET_STYLES.map(([v, l]) => `<option value="${v}">${esc7(l)}</option>`).join("") + "</select>")}
       ${sw2("w-answers", "Th\xEAm trang \u0111\xE1p \xE1n", true)}
     </fieldset>
@@ -10122,7 +10389,16 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       for (const e3 of Object.values(W.lib.items)) m[e3.id] = e3.cp;
       return m;
     };
-    const mode = () => $2("w-color").value;
+    const mode = () => $2("w-theme") && $2("w-theme").value === "bw" ? "bw" : $2("w-color").value;
+    const levelLabel = () => $2("w-level").selectedOptions[0].textContent;
+    function syncSubject() {
+      const pre = $2("w-subject").value === "pre", g = $2("w-grade"), l = $2("w-level"), wasPre = g.dataset.pre === "1";
+      if (pre === wasPre) return;
+      g.dataset.pre = pre ? "1" : "";
+      g.innerHTML = pre ? '<option value="0">M\u1EA7m non</option>' : [1, 2, 3, 4, 5].map((n) => `<option value="${n}">L\u1EDBp ${n}</option>`).join("");
+      l.innerHTML = pre ? '<option value="0">B\xE9 4 \u2013 5 tu\u1ED5i</option><option value="1">B\xE9 5 \u2013 6 tu\u1ED5i</option>' : '<option value="0">C\u01A1 b\u1EA3n</option><option value="1">N\xE2ng cao</option>';
+      $2("w-font").value = pre ? "16" : "14";
+    }
     async function refreshTopics() {
       const subject = $2("w-subject").value, grade = Number($2("w-grade").value), level = Number($2("w-level").value);
       const all = W.topicsFor(subject, grade, mode());
@@ -10171,7 +10447,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (!topics.length) throw new Error("Ch\u1ECDn \xEDt nh\u1EA5t m\u1ED9t d\u1EA1ng b\xE0i.");
       const versions = Number($2("w-versions").value);
       const r = W.generate({ subject, grade, level: Number($2("w-level").value), color: mode(), seed: Number($2("w-seed").value) || 1, size: $2("w-size").value, topics, versions, answers: true });
-      const accent = (W.SUBJECTS[subject].palette || {}).main || "#1D6FB8";
+      const theme = WORKSHEET_THEMES.find((t) => t[0] === $2("w-theme").value), accent = theme && theme[2] ? "#" + theme[2] : (W.SUBJECTS[subject].palette || {}).main || "#1D6FB8";
       const fontPt2 = Number($2("w-font").value), map = cps();
       const pics = /* @__PURE__ */ new Map(), images = [];
       for (const cp2 of usedPictures(r, map)) {
@@ -10183,7 +10459,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         } catch (e3) {
         }
       }
-      const res = worksheetBody(r, { subject, grade, color: mode(), fontPt: fontPt2, answers: $2("w-answers").checked, cps: map, accent, style: $2("w-style").value, pics, title: $2("w-title").value.trim(), school: $2("w-school").value.trim() });
+      const iconCode = (id, outline) => {
+        try {
+          const m = /\\begin\{tikzpicture\}\[[^\n]*\]\n([\s\S]*?)\n\\end\{tikzpicture\}/.exec(W.art.definition(id, outline));
+          return m ? m[1] : null;
+        } catch (e3) {
+          return null;
+        }
+      };
+      const res = worksheetBody(r, { subject, grade, iconCode, gradeLabel: subject === "pre" ? levelLabel() : "", color: mode(), fontPt: fontPt2, answers: $2("w-answers").checked, cps: map, accent, style: $2("w-style").value, pics, title: $2("w-title").value.trim(), school: $2("w-school").value.trim() });
       return __spreadProps(__spreadValues({}, res), { images });
     }
     async function write(newDoc) {
@@ -10211,7 +10495,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     $2("w-all").addEventListener("click", () => root.querySelectorAll("#w-topics input[data-t]").forEach((c) => {
       c.checked = true;
     }));
-    for (const id of ["w-subject", "w-grade", "w-level", "w-color"]) $2(id).addEventListener("change", () => {
+    for (const id of ["w-subject", "w-grade", "w-level", "w-color", "w-theme"]) $2(id).addEventListener("change", () => {
+      if (id === "w-subject") syncSubject();
       if (W) refreshTopics();
     });
     newSeed();

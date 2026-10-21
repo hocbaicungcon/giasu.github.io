@@ -110,7 +110,19 @@ const safeColour = (c) => { try { return colour(c).toUpperCase(); } catch { retu
 const SKIP = { medskip: 120, bigskip: 240, smallskip: 60 };
 
 /** Paragraph-level text: \par / blank lines split paragraphs, \hfill splits a line into columns, \vspace adds space. */
+/** \vspace{..} inside a {group} (e.g. a \parbox) is dropped: it must not split the paragraph there. */
+function dropNestedVspace(s) {
+  let depth = 0, out = '';
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (c === '\\') { const m = /^\\vspace\*?\{[^}]*\}/.exec(s.slice(i)); if (m && depth > 0) { i += m[0].length - 1; continue; } out += c + (s[i + 1] || ''); i++; continue; }
+    if (c === '{') depth++; else if (c === '}') depth--;
+    out += c;
+  }
+  return out;
+}
 function paragraphs(text, ctx, f, centered) {
+  text = dropNestedVspace(text);
   let out = '';
   const parts = text.split(/(\\par\b|\n\s*\n|\\medskip|\\bigskip|\\smallskip|\\vspace\*?\{[^}]*\})/);
   let before = 0;

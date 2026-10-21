@@ -56,7 +56,7 @@ export function mountWorksheet(root, io) {
   let W = null, available = [];   // available: topics that can be written to Word
 
   const cps = () => { const m = {}; for (const e of Object.values(W.lib.items)) m[e.id] = e.cp; return m; };
-  const mode = () => $('w-color').value;
+  const mode = () => ($('w-theme') && $('w-theme').value === 'bw' ? 'bw' : $('w-color').value);   // theme "Đen trắng" = black and white print
   const levelLabel = () => $('w-level').selectedOptions[0].textContent;
   function syncSubject() {   // preschool has no grades: one "grade" and two age levels
     const pre = $('w-subject').value === 'pre', g = $('w-grade'), l = $('w-level'), wasPre = g.dataset.pre === '1';
@@ -112,7 +112,8 @@ export function mountWorksheet(root, io) {
     for (const cp of usedPictures(r, map)) {   // Twemoji pictures used by this sheet
       try { const png = await twemojiPng(cp); const rid = `rIdTw${images.length + 1}`; images.push({ rid, png }); pics.set(cp, { rid, pt: fontPt * 2.1 }); } catch { /* falls back to the emoji character */ }
     }
-    const res = worksheetBody(r, { subject, grade, gradeLabel: subject === 'pre' ? levelLabel() : '', color: mode(), fontPt, answers: $('w-answers').checked, cps: map, accent, style: $('w-style').value, pics, title: $('w-title').value.trim(), school: $('w-school').value.trim() });
+    const iconCode = (id, outline) => { try { const m = /\\begin\{tikzpicture\}\[[^\n]*\]\n([\s\S]*?)\n\\end\{tikzpicture\}/.exec(W.art.definition(id, outline)); return m ? m[1] : null; } catch { return null; } };   // the generator's TikZ line drawings
+    const res = worksheetBody(r, { subject, grade, iconCode, gradeLabel: subject === 'pre' ? levelLabel() : '', color: mode(), fontPt, answers: $('w-answers').checked, cps: map, accent, style: $('w-style').value, pics, title: $('w-title').value.trim(), school: $('w-school').value.trim() });
     return { ...res, images };
   }
   async function write(newDoc) {
@@ -130,7 +131,7 @@ export function mountWorksheet(root, io) {
   $('w-reroll').addEventListener('click', () => { newSeed(); $('w-out').innerHTML = '<span class="ok">Đã đổi mã đề; bấm Chèn để tạo phiếu mới.</span>'; });
   $('w-default').addEventListener('click', () => root.querySelectorAll('#w-topics input[data-t]').forEach((c) => { c.checked = available.find((t) => t.id === c.dataset.t)?.def; }));
   $('w-all').addEventListener('click', () => root.querySelectorAll('#w-topics input[data-t]').forEach((c) => { c.checked = true; }));
-  for (const id of ['w-subject', 'w-grade', 'w-level', 'w-color']) $(id).addEventListener('change', () => { if (id === 'w-subject') syncSubject(); if (W) refreshTopics(); });
+  for (const id of ['w-subject', 'w-grade', 'w-level', 'w-color', 'w-theme']) $(id).addEventListener('change', () => { if (id === 'w-subject') syncSubject(); if (W) refreshTopics(); });
   newSeed();
   loadLib().then((lib) => { W = lib; return refreshTopics(); }).catch((e) => { $('w-topics').innerHTML = `<span class="bad">${esc(e.message)}</span>`; });
 }
