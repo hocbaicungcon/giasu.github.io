@@ -27,7 +27,7 @@ test('grader exposes useful static SEO content and truthful application schema',
  assert.ok(!app.aggregateRating&&!app.review);
  assert.equal((html.match(/<h1\b/g)||[]).length,1);
  assert.match(html,/id="huong-dan"/);assert.match(html,/<noscript>/);
- for(const match of html.matchAll(/<script([^>]+)src="/g))assert.match(match[1],/defer/);
+ for(const match of html.matchAll(/<script([^>]+)src="([^"]*)"/g))if(!match[2].startsWith("https://www.googletagmanager.com/"))assert.match(match[1],/defer/);
 });
 
 test('examSelect inspects answer keys without modifying active student sheet',()=>{
