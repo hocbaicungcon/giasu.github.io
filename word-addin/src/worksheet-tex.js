@@ -43,7 +43,7 @@ function group(s, i) {
 }
 
 const NOB = '<w:tblBorders><w:top w:val="nil"/><w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:insideH w:val="nil"/><w:insideV w:val="nil"/></w:tblBorders>';
-const LINES = (b) => `<w:tblBorders>${['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map((k) => `<w:${k} w:val="${b[k] ? 'single' : 'nil'}" w:sz="6" w:space="0" w:color="222222"/>`).join('')}</w:tblBorders>`;
+const LINES = (b, line = '222222') => `<w:tblBorders>${['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map((k) => `<w:${k} w:val="${b[k] ? 'single' : 'nil'}" w:sz="8" w:space="0" w:color="${line}"/>`).join('')}</w:tblBorders>`;   // light accent lines: modern, still clear to write in
 /** \fbox{...} that makes up a whole cell -> the cell gets the border instead. */
 function unbox(text) {
   const t = text.trim();
@@ -58,7 +58,7 @@ function unbox(text) {
   return end >= t.length ? { text: inner.replace(/\\rule\{[^}]*\}\{[^}]*\}/g, '').replace(/^\\ |\\ $/g, '').trim(), box: true } : { text, box: false };
 }
 const cellPara = (inner, o = {}) => para(inner, { after: 0, ...o });
-const tbl = ({ rows, widths, borders, jc, heights = [] }) => `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${jc ? `<w:jc w:val="${jc}"/>` : ''}${borders ? LINES(borders) : NOB}<w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="60" w:type="dxa"/><w:right w:w="60" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map((w) => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>${rows.map((r, ri) => `<w:tr><w:trPr><w:cantSplit/>${heights[ri] ? `<w:trHeight w:val="${Math.round(heights[ri])}" w:hRule="atLeast"/>` : ''}</w:trPr>${r.map((c, k) => `<w:tc><w:tcPr><w:tcW w:w="${widths[k]}" w:type="dxa"/>${c.fill ? `<w:shd w:val="clear" w:color="auto" w:fill="${c.fill}"/>` : ''}${c.box ? '<w:tcBorders>' + ['top', 'left', 'bottom', 'right'].map((k) => `<w:${k} w:val="single" w:sz="8" w:space="0" w:color="222222"/>`).join('') + '</w:tcBorders>' : ''}<w:vAlign w:val="center"/></w:tcPr>${c.xml}</w:tc>`).join('')}</w:tr>`).join('')}</w:tbl>`;
+const tbl = ({ rows, widths, borders, jc, heights = [], line }) => `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${jc ? `<w:jc w:val="${jc}"/>` : ''}${borders ? LINES(borders, line) : NOB}<w:tblLayout w:type="fixed"/><w:tblCellMar>${borders ? '<w:top w:w="30" w:type="dxa"/>' : ''}<w:left w:w="${borders ? 100 : 60}" w:type="dxa"/>${borders ? '<w:bottom w:w="30" w:type="dxa"/>' : ''}<w:right w:w="${borders ? 100 : 60}" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map((w) => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>${rows.map((r, ri) => `<w:tr><w:trPr><w:cantSplit/>${heights[ri] ? `<w:trHeight w:val="${Math.round(heights[ri])}" w:hRule="atLeast"/>` : ''}</w:trPr>${r.map((c, k) => `<w:tc><w:tcPr><w:tcW w:w="${widths[k]}" w:type="dxa"/>${c.fill ? `<w:shd w:val="clear" w:color="auto" w:fill="${c.fill}"/>` : ''}${c.box ? '<w:tcBorders>' + ['top', 'left', 'bottom', 'right'].map((k) => `<w:${k} w:val="single" w:sz="8" w:space="0" w:color="${line || '222222'}"/>`).join('') + '</w:tcBorders>' : ''}<w:vAlign w:val="center"/></w:tcPr>${c.xml}</w:tc>`).join('')}</w:tr>`).join('')}</w:tbl>`;
 
 /** column spec of a tabular: [{align, width|null}], and whether it has vertical rules. */
 function parseSpec(spec) {
@@ -66,7 +66,7 @@ function parseSpec(spec) {
   const s = spec.replace(/\s+/g, '');
   while (i < s.length) {
     const c = s[i];
-    if (c === '|') { vlines = true; i++; } else if (c === '*') { const [n, e] = group(s, i + 1); const [inner, e2] = group(s, e); const sub = parseSpec(inner); for (let k = 0; k < parseInt(n, 10); k++) cols.push(...sub.cols); vlines = vlines || sub.vlines; i = e2; } else if (c === '>' || c === '@' || c === '!' || c === '<') { const [, e] = group(s, i + 1); i = e; } else if (c === 'p' || c === 'm' || c === 'b') { const [w, e] = group(s, i + 1); cols.push({ align: 'left', width: Math.round(cmOf(w) * CM_DXA) }); i = e; } else if ('clr'.includes(c)) { cols.push({ align: { c: 'center', l: 'left', r: 'right' }[c], width: null }); i++; } else i++;
+    if (c === '|') { vlines = true; i++; } else if (c === '*') { const [n, e] = group(s, i + 1); const [inner, e2] = group(s, e); const sub = parseSpec(inner); for (let k = 0; k < parseInt(n, 10); k++) cols.push(...sub.cols); vlines = vlines || sub.vlines; i = e2; } else if (c === '@' && cols.length) { const [g, e] = group(s, i + 1), h = /\\hspace\*?\{([^}]*)\}/.exec(g); if (h) cols[cols.length - 1].gap = Math.round(cmOf(h[1]) * CM_DXA); i = e; } else if (c === '>' || c === '@' || c === '!' || c === '<') { const [, e] = group(s, i + 1); i = e; } else if (c === 'p' || c === 'm' || c === 'b') { const [w, e] = group(s, i + 1); cols.push({ align: 'left', width: Math.round(cmOf(w) * CM_DXA) }); i = e; } else if ('clr'.includes(c)) { cols.push({ align: { c: 'center', l: 'left', r: 'right' }[c], width: null }); i++; } else i++;
   }
   return { cols, vlines };
 }
@@ -75,7 +75,7 @@ function tabular(inner, spec, ctx, f, centered) {
   const { cols, vlines } = parseSpec(spec);
   const rowsSrc = splitTop(inner, /^\\\\(\[[^\]]*\])?/);
   let hlines = false;
-  const rows = [], heights = [];
+  const rows = [], heights = [], boxW = [];
   for (const r0 of rowsSrc) {
     let r = r0;
     const gapM = /^\s*$/.test(r) ? null : null; void gapM;
@@ -84,22 +84,26 @@ function tabular(inner, spec, ctx, f, centered) {
     if (!r.trim()) continue;
     const cells = splitTop(r, /^&/);
     const rule = /\\rule\{[^}]*\}\{([^}]*)\}/.exec(r);
-    heights.push(((rule ? cmOf(rule[1]) : 0.75) + 0.1) * CM_DXA);
+    const pbh = /\\parbox(?:\[[^\]]*\])?\[([^\]]*)\]/.exec(r);
+    heights.push(((rule ? cmOf(rule[1]) : pbh ? cmOf(pbh[1]) : 0.75) + 0.1) * CM_DXA);
     rows.push(cells.map((c, k) => {
       const fill = /\\cellcolor\{([^}]*)\}/.exec(c);
       const col = cols[k] || { align: 'center' };
       const text = c.replace(/\\cellcolor\{[^}]*\}/g, '').replace(/\\rule\{[^}]*\}\{[^}]*\}/g, '');
-      const u = unbox(text);
+      const u = unbox(text), pw = /\\parbox(?:\[[^\]]*\])*\{([\d.]+)(cm|mm)\}/.exec(u.text);
+      if (pw) boxW[k] = Math.max(boxW[k] || 0, Math.round(cmOf(pw[1] + pw[2]) * CM_DXA) + 140);
       return { xml: cellPara(texToRuns(u.text.trim(), ctx, f), { jc: col.align }), fill: fill ? safeColour(fill[1]) : null, box: u.box };
     }));
   }
   const n = Math.max(...rows.map((r) => r.length), cols.length);
-  const widths = Array.from({ length: n }, (_, k) => (cols[k] && cols[k].width) || 0);
+  const widths = Array.from({ length: n }, (_, k) => (cols[k] && cols[k].width) || boxW[k] || 0);
   const known = widths.reduce((a, b) => a + b, 0), unknown = widths.filter((w) => !w).length;
-  const share = unknown ? Math.max(1100, Math.min(2600, Math.floor((W_DXA - known) / unknown))) : 0;
+  const avail = ctx.availW || W_DXA, share = unknown ? Math.max(450, Math.min(unknown > 1 ? 2600 : 5200, Math.floor((avail - known) / unknown))) : 0;   // never wider than the room (a cell, the page)
   const w2 = widths.map((w) => w || share);
   rows.forEach((r) => { while (r.length < n) r.push({ xml: cellPara('') }); });
-  return tbl({ rows, widths: w2, borders: vlines ? { top: 1, left: 1, bottom: 1, right: 1, insideH: 1, insideV: 1 } : hlines ? { top: 1, bottom: 1, insideH: 1 } : null, jc: centered ? 'center' : null, heights }) + para('', { after: 60 });
+  // @{\hspace{..}} between columns: an empty column, so boxed cells stand apart (the lines of a matching exercise go there)
+  for (let k = n - 2; k >= 0; k--) if (cols[k] && cols[k].gap) { w2.splice(k + 1, 0, cols[k].gap); rows.forEach((r) => r.splice(k + 1, 0, { xml: cellPara('') })); }
+  return tbl({ rows, widths: w2, borders: vlines ? { top: 1, left: 1, bottom: 1, right: 1, insideH: 1, insideV: 1 } : hlines ? { top: 1, bottom: 1, insideH: 1 } : null, jc: centered ? 'center' : null, heights, line: ctx.line }) + para('', { after: 60 });
 }
 const safeColour = (c) => { try { return colour(c).toUpperCase(); } catch { return null; } };
 
@@ -120,7 +124,7 @@ function paragraphs(text, ctx, f, centered) {
     const chunks = splitTop(t, /^\\hfill\b/).map((c) => c.trim()).filter(Boolean);
     if (chunks.length >= 2 && chunks.length <= 6) {
       const w = Math.floor(W_DXA / chunks.length);
-      out += tbl({ rows: [chunks.map((c, k) => { const u = unbox(c); return { xml: cellPara(texToRuns(u.text, ctx, f), { jc: 'center' }), box: u.box }; })], widths: chunks.map(() => w), heights: [0.9 * CM_DXA] }) + para('', { after: Math.max(60, before) });
+      out += tbl({ rows: [chunks.map((c, k) => { const u = unbox(c); return { xml: cellPara(texToRuns(u.text, ctx, f), { jc: 'center' }), box: u.box }; })], widths: chunks.map(() => w), heights: [0.9 * CM_DXA], line: ctx.line }) + para('', { after: Math.max(60, before) });
       before = 0;
     } else {
       out += para(texToRuns(chunks.join(' '), ctx, f), { jc: centered ? 'center' : undefined, before: Math.round(before), after: 80, line: 340 });
@@ -166,13 +170,16 @@ export function texBlocks(src, ctx, f, centered = false) {
         let wm = /^\s*(?:\[[^\]]*\])?\s*\{([^}]*)\}/.exec(body);
         const frac = wm ? parseFloat(wm[1]) || 0.47 : 0.47;
         body = wm ? body.slice(wm[0].length) : body;
-        cells.push({ xml: texBlocks(body, ctx, f, false) || cellPara(''), w: Math.round(frac * W_DXA) });
+        const cw = Math.round(frac * W_DXA), keep = ctx.availW;
+        ctx.availW = cw - 140;
+        cells.push({ xml: texBlocks(body, ctx, f, false) || cellPara(''), w: cw });
+        ctx.availW = keep;
         nx = nn; void nm;
         const m = /^\s*(?:\\hfill|\\quad|\\qquad)?\s*\\begin\{minipage\}/.exec(s.slice(nn));
         if (!m) break;
         at = nn + m[0].length - '\\begin{minipage}'.length;
       }
-      out += tbl({ rows: [cells.map((c) => ({ xml: c.xml.replace(/<\/w:tbl>$/, '</w:tbl>' + '<w:p/>') }))], widths: cells.map((c) => c.w) }) + para('', { after: 60 });
+      out += tbl({ rows: [cells.map((c) => ({ xml: c.xml.replace(/<\/w:tbl>$/, '</w:tbl>' + '<w:p/>') }))], widths: cells.map((c) => c.w), line: ctx.line }) + para('', { after: 60 });
       i = nx; continue;
     } else if (name === 'enumerate' || name === 'itemize') {
       const items = inner.split(/\\item\b/).slice(1);

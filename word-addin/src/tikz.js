@@ -54,28 +54,58 @@ function colourOpt(opts) {
 }
 
 function nodeLatex(text) {
-  let t = text.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|bfseries|itshape|sffamily|normalsize)\b\s*/g, '').trim();
+  let t = text.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|Huge|bfseries|itshape|sffamily|normalsize)\b\s*/g, '').trim();
   if (!t) return '';
   if (/^\$[\s\S]*\$$/.test(t) && t.indexOf('$', 1) === t.length - 1) return t.slice(1, -1);
   if (t.includes('$')) return t.replace(/\$([^$]*)\$/g, '$1');
   return /^[\d\s+\-−×:=.,]*$/.test(t) ? t : `\\text{${t}}`;
 }
 
-export function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
+const braceGroup = (s, i) => { let d = 0, j = i; for (; j < s.length; j++) { if (s[j] === '{') d++; else if (s[j] === '}' && --d === 0) break; } return [s.slice(i + 1, j), j + 1]; };
+const fmtNum = (x) => String(+x.toFixed(6));
+function listValues(list) {   // {a,b,c}  {0,45,...,315}  {1,...,5}
+  const items = splitTop(list, ',').map((x) => x.trim()).filter(Boolean), dots = items.indexOf('...');
+  if (dots < 0) return items;
+  const head = items.slice(0, dots).map(parseFloat), end = parseFloat(items[dots + 1]);
+  const step = head.length > 1 ? head[1] - head[0] : (end >= head[0] ? 1 : -1), out = [];
+  if (!step) throw new TikzError('foreach list');
+  for (let v = head[0], k = 0; (step > 0 ? v <= end + 1e-9 : v >= end - 1e-9) && k < 400; v += step, k++) out.push(fmtNum(v));
+  return out;
+}
+/** \foreach \a/\b in {..}{body} (or a single statement) written out for every value. */
+function expandForeach(src) {
+  for (let guard = 0; guard < 60; guard++) {
+    const m = /\\foreach\s+((?:\\[A-Za-z]+\/?)+)\s+in\s*\{/.exec(src);
+    if (!m) return src;
+    const names = m[1].split('/').filter(Boolean).map((v) => v.slice(1));
+    const [list, afterList] = braceGroup(src, m.index + m[0].length - 1);
+    let k = afterList; while (/\s/.test(src[k])) k++;
+    let body, end;
+    if (src[k] === '{') [body, end] = braceGroup(src, k); else { const e = src.indexOf(';', k); body = src.slice(k, e + 1); end = e + 1; }
+    const out = listValues(list).map((v) => {
+      const parts = names.length > 1 ? v.split('/') : [v];
+      return names.reduce((b, n, idx) => b.replace(new RegExp('\\\\' + n + '(?![A-Za-z])', 'g'), () => parts[idx]), body);
+    }).join('\n');
+    src = src.slice(0, m.index) + out + src.slice(end);
+  }
+  throw new TikzError('foreach');
+}
+const num = (t) => { const x = String(t).replace(/cm/g, '').trim(); if (!/^[-+*/().\d\s]+$/.test(x)) throw new TikzError('number ' + t); return Function(`return (${x})`)(); };   // 0.5*2, -0.2+0.1
+
+export function tikzToScene(code, { scale = 1, fs = 16, lw = 1.2, ink } = {}) {
   const S = CM * scale;
   const items = [], nodes = new Map();
   const pt = (x, y) => [x * S, -y * S];
-  let src = code.replace(/%[^\n]*/g, '');
+  let src = expandForeach(code.replace(/%[^\n]*/g, ''));
 
   const coord = (tok, cur) => {
     const m = /^\s*\(([^)]*)\)\s*$/.exec(tok);
     if (!m) throw new TikzError('coordinate ' + tok);
     const inner = m[1].trim();
     if (/^[A-Za-z][\w.]*$/.test(inner)) { const n = nodes.get(inner); if (!n) throw new TikzError('node ' + inner); return { p: n.c, node: n }; }
-    const polar = /^(-?[\d.]+)\s*:\s*(-?[\d.]+)$/.exec(inner);
-    if (polar) { const a = parseFloat(polar[1]) * Math.PI / 180, r = parseFloat(polar[2]); return { p: pt(r * Math.cos(a), r * Math.sin(a)) }; }
-    const xy = /^\{?\s*(-?[\d.]+)\s*(cm)?\s*\}?\s*,\s*\{?\s*(-?[\d.]+)\s*(cm)?\s*\}?$/.exec(inner);
-    if (xy) return { p: pt(parseFloat(xy[1]), parseFloat(xy[3])) };
+    if (inner.includes(':') && !inner.includes(',')) { const [aa, rr] = inner.split(':'); const a = num(aa) * Math.PI / 180, r = num(rr); return { p: pt(r * Math.cos(a), r * Math.sin(a)) }; }
+    const xy = splitTop(inner.replace(/[{}]/g, ''), ',');
+    if (xy.length === 2) return { p: pt(num(xy[0]), num(xy[1])) };
     throw new TikzError('coordinate ' + inner);
   };
 
@@ -89,23 +119,25 @@ export function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
   };
 
   const addNode = (opts, name, c, text) => {
-    const tex = nodeLatex(text);
-    const size = opts['minimum size'] ? dim(opts['minimum size']) : 0;
-    const w0 = opts['minimum width'] ? dim(opts['minimum width']) : size, h0 = opts['minimum height'] ? dim(opts['minimum height']) : size;
+    const pm = /\\wspic(?:\[([\d.]+)cm\])?\{ws-([0-9a-f-]+)\}/i.exec(text), pic = pm ? (pm[1] ? parseFloat(pm[1]) : 1) * CM : 0;   // an emoji picture in a node
+    const size = opts['minimum size'] ? dim(opts['minimum size']) * scale : 0;   // nodes follow the picture's scale, so boxes laid out on a scaled grid keep their gaps
+    const w0 = opts['minimum width'] ? dim(opts['minimum width']) * scale : size, h0 = opts['minimum height'] ? dim(opts['minimum height']) * scale : size;
     const inner = opts['inner sep'] ? dim(opts['inner sep']) : 5;
+    const tex = pm ? '' : nodeLatex(text);
     const box = tex ? labelBox(tex, fs) : { w: 0, h: 0 };
     const shape = opts.circle ? 'circle' : 'rect';
     const draw = Boolean(opts.draw);
-    const hw = Math.max(w0, box.w + 2 * inner) / 2 * (draw || size ? 1 : 0) || box.w / 2, hh = Math.max(h0, box.h + 2 * inner) / 2 * (draw || size ? 1 : 0) || box.h / 2;
+    const hw = Math.max(w0, box.w + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.w / 2, hh = Math.max(h0, box.h + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.h / 2;
     const r = Math.max(w0, h0, shape === 'circle' ? Math.max(box.w, box.h) + 2 * inner : 0) / 2;
     if (draw) {
-      const sw = opts['line width'] ? dim(opts['line width']) : 1.2;
+      const sw = opts['line width'] ? dim(opts['line width']) : lw;
       const fill = opts.fill ? '#' + colour(opts.fill) : undefined;
       if (shape === 'circle') items.push({ t: 'ellipse', cx: c[0], cy: c[1], rx: r, ry: r, sw, fill });
       else items.push({ t: 'rect', x: c[0] - hw, y: c[1] - hh, w: 2 * hw, h: 2 * hh, sw, fill });
     }
     if (tex) items.push({ t: 'label', latex: tex, x: c[0], y: c[1], size: fs, anchor: 'c' });
-    if (name) nodes.set(name, { c, shape, r: shape === 'circle' ? r : 0, hw, hh });
+    if (pm) items.push({ t: 'ptext', s: String.fromCodePoint(...pm[2].split('-').map((h) => parseInt(h, 16))), x: c[0], y: c[1], size: pic * 0.8, font: 'Segoe UI Emoji' });
+    if (name) nodes.set(name, { c, shape, r: shape === 'circle' ? r : 0, hw: hw || pic / 2, hh: hh || pic / 2 });
   };
 
   const place = (pos, base, w, h) => {   // for node[above] {..} on a segment: shift the label away from the point
@@ -113,12 +145,24 @@ export function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
     return [base[0] + dx * (w / 2 + 3), base[1] + dy * (h / 2 + 3)];
   };
 
+  const placeBeside = (pos, mid, d, w, h) => {   // a label beside the middle of a segment, clear of the line (not on it)
+    const L = Math.hypot(d[0], d[1]) || 1;
+    let n = [-d[1] / L, d[0] / L];
+    const want = /above/.test(pos) ? (n[1] > 0 ? -1 : 1) : /below/.test(pos) ? (n[1] < 0 ? -1 : 1) : /right/.test(pos) ? (n[0] < 0 ? -1 : 1) : /left/.test(pos) ? (n[0] > 0 ? -1 : 1) : 0;
+    if (!want) return mid;
+    n = [n[0] * want, n[1] * want];
+    const off = Math.abs(n[0]) * w / 2 + Math.abs(n[1]) * h / 2 + 4;
+    return [mid[0] + n[0] * off, mid[1] + n[1] * off];
+  };
+
   for (const raw of splitTop(src, ';')) {
     const st = raw.trim();
     if (!st) continue;
     const head = /^\\(draw|fill|filldraw|node|path)\b\s*(\[[^\]]*\])?\s*([\s\S]*)$/.exec(st);
     if (!head) throw new TikzError('statement ' + st.slice(0, 30));
-    const cmd = head[1], opts = parseOpts((head[2] || '').slice(1, -1)), rest = head[3].trim();
+    const cmd = head[1], opts = parseOpts((head[2] || '').slice(1, -1)), rest = head[3].trim().replace(/\.\.\s*controls\s*(\([^)]*\))\s*(?:and\s*(\([^)]*\))\s*)?\.\.\s*(\([^)]*\))/g, (_, a, b, c) => ` ~BEZ${a}${b || a}${c} `);
+    const firstItem = items.length;
+    if (opts.wsdashline) { opts.draw = 'black!40'; opts['line width'] = '2.4pt'; }   // dotted path to trace
     if (cmd === 'node') {
       const m = /^(?:\(([^)]*)\)\s*)?at\s*(\([^)]*\))\s*\{([\s\S]*)\}$/.exec(rest);
       if (!m) throw new TikzError('node ' + rest.slice(0, 30));
@@ -128,11 +172,11 @@ export function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
     const doDraw = cmd === 'draw' || cmd === 'filldraw' || opts.draw, doFill = cmd === 'fill' || cmd === 'filldraw' || opts.fill;
     const bare = colourOpt(opts);
     const fill = doFill ? '#' + (opts.fill ? colour(opts.fill) : cmd === 'fill' && bare ? bare : '000000') : undefined;
-    const sw = opts['line width'] ? dim(opts['line width']) : 1.2;
+    const sw = opts['line width'] ? dim(opts['line width']) : lw;
     const arrow = Boolean(opts['->'] || opts['-stealth']);
-    const stroke = doDraw ? (opts.draw && opts.draw !== true ? '#' + colour(opts.draw) : cmd !== 'fill' && bare ? '#' + bare : undefined) : undefined;
+    const stroke = doDraw ? (opts.draw && opts.draw !== true ? '#' + colour(opts.draw) : cmd !== 'fill' && bare ? '#' + bare : ink) : undefined;
     // tokenise the path
-    const toks = rest.match(/\(\s*[^()]*\)|--|\bcycle\b|\brectangle\b|\bcircle\b|\bgrid\b|\barc\b|\bnode\b\s*(?:\[[^\]]*\])?\s*(?:\([^)]*\))?\s*\{(?:[^{}]|\{[^{}]*\})*\}|\bto\b/g) || [];
+    const toks = rest.match(/~BEZ\([^)]*\)\([^)]*\)\([^)]*\)|\(\s*[^()]*\)|--|\bcycle\b|\brectangle\b|\bcircle\b|\bellipse\b|\bgrid\b|\barc\b|\bnode\b\s*(?:\[[^\]]*\])?\s*(?:\([^)]*\))?\s*\{(?:[^{}]|\{[^{}]*\})*\}|\bto\b/g) || [];
     let cur = null, curNode = null, i = 0, pending = null, pathPts = [];
     const flush = () => {
       if (pathPts.length > 1 && (doDraw || doFill)) items.push({ t: 'poly', pts: pathPts, closed: false, sw, fill, color: stroke, noStroke: !doDraw });
@@ -141,9 +185,17 @@ export function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
     while (i < toks.length) {
       const t = toks[i];
       if (t === '--' || t === 'to') { i++; continue; }
+      if (t.startsWith('~BEZ')) {   // .. controls p1 and p2 .. p3 : a cubic curve
+        if (!cur) throw new TikzError('curve start');
+        const [c1, c2, c3] = t.slice(4).match(/\([^)]*\)/g).map((q) => coord(q).p);
+        if (!pathPts.length) pathPts = [cur];
+        for (let k = 1; k <= 14; k++) { const u = k / 14, m = 1 - u; pathPts.push([m * m * m * cur[0] + 3 * m * m * u * c1[0] + 3 * m * u * u * c2[0] + u * u * u * c3[0], m * m * m * cur[1] + 3 * m * m * u * c1[1] + 3 * m * u * u * c2[1] + u * u * u * c3[1]]); }
+        cur = c3; i++; continue;
+      }
       if (t === 'cycle') { if (pathPts.length) { items.push({ t: 'poly', pts: pathPts, closed: true, sw, fill, color: stroke }); pathPts = []; } i++; continue; }
       if (t === 'rectangle') { const q = coord(toks[++i]).p; const x = Math.min(cur[0], q[0]), y = Math.min(cur[1], q[1]); items.push({ t: 'rect', x, y, w: Math.abs(q[0] - cur[0]), h: Math.abs(q[1] - cur[1]), sw, fill, color: stroke, noStroke: !doDraw }); cur = q; pathPts = []; i++; continue; }
       if (t === 'circle') { const m = /\(\s*([\d.]+)\s*(cm)?\s*\)/.exec(toks[++i]); const r = parseFloat(m[1]) * S; items.push({ t: 'ellipse', cx: cur[0], cy: cur[1], rx: r, ry: r, sw, fill, color: stroke, noStroke: !doDraw }); pathPts = []; i++; continue; }
+      if (t === 'ellipse') { const m = /\(\s*([\d.]+)\s*(?:cm)?\s+and\s+([\d.]+)\s*(?:cm)?\s*\)/.exec(toks[++i]); if (!m) throw new TikzError('ellipse'); items.push({ t: 'ellipse', cx: cur[0], cy: cur[1], rx: parseFloat(m[1]) * S, ry: parseFloat(m[2]) * S, sw, fill, color: stroke, noStroke: !doDraw }); pathPts = []; i++; continue; }
       if (t === 'grid') { const q = coord(toks[++i]).p; for (let x = Math.min(cur[0], q[0]); x <= Math.max(cur[0], q[0]) + 0.5; x += S) items.push({ t: 'line', x1: x, y1: cur[1], x2: x, y2: q[1], w: sw }); for (let y = Math.min(cur[1], q[1]); y <= Math.max(cur[1], q[1]) + 0.5; y += S) items.push({ t: 'line', x1: cur[0], y1: y, x2: q[0], y2: y, w: sw }); i++; continue; }
       if (t === 'arc') { const m = /\(\s*(-?[\d.]+)\s*:\s*(-?[\d.]+)\s*:\s*([\d.]+)\s*\)/.exec(toks[++i]); const a1 = parseFloat(m[1]), a2 = parseFloat(m[2]), r = parseFloat(m[3]) * S; const c0 = [cur[0] - r * Math.cos(a1 * Math.PI / 180), cur[1] + r * Math.sin(a1 * Math.PI / 180)]; for (let k = 1; k <= 12; k++) { const a = (a1 + (a2 - a1) * k / 12) * Math.PI / 180; pathPts.push([c0[0] + r * Math.cos(a), c0[1] - r * Math.sin(a)]); } cur = pathPts[pathPts.length - 1]; i++; continue; }
       if (/^node/.test(t)) {
@@ -161,7 +213,7 @@ export function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
         if (pending) {
           const mid = [(from[0] + to[0]) / 2, (from[1] + to[1]) / 2], tex = nodeLatex(pending.text), b = tex ? labelBox(tex, fs) : { w: 0, h: 0 };
           const pos = Object.keys(pending.o).filter((k) => /above|below|left|right/.test(k)).join(' ');
-          const p2 = place(pos, mid, b.w, b.h);
+          const p2 = placeBeside(pos, mid, [to[0] - from[0], to[1] - from[1]], b.w, b.h);
           if (tex) items.push({ t: 'label', latex: tex, x: p2[0], y: p2[1], size: fs, anchor: 'c' });
           pending = null;
         }
@@ -172,6 +224,7 @@ export function tikzToScene(code, { scale = 1, fs = 16 } = {}) {
     }
     if (arrow && pathPts.length > 1) { const a = pathPts[pathPts.length - 2], b = pathPts[pathPts.length - 1]; items.push({ t: 'line', x1: a[0], y1: a[1], x2: b[0], y2: b[1], w: sw, arrow: true }); pathPts = pathPts.slice(0, -1).length > 1 ? pathPts.slice(0, -1) : []; }
     flush();
+    if (opts.wsdashline) for (let k = firstItem; k < items.length; k++) if (items[k].t !== 'label') items[k].dash = 'dot';
   }
   return fit(items);
 }
@@ -183,6 +236,7 @@ export function fit(items, pad = 3) {
   for (const it of items) {
     if (it.t === 'line') { grow(it.x1, it.y1); grow(it.x2, it.y2); } else if (it.t === 'poly') it.pts.forEach((q) => grow(q[0], q[1]));
     else if (it.t === 'rect') { grow(it.x, it.y); grow(it.x + it.w, it.y + it.h); } else if (it.t === 'ellipse') { grow(it.cx - it.rx, it.cy - it.ry); grow(it.cx + it.rx, it.cy + it.ry); } else if (it.t === 'dot') grow(it.x, it.y);
+    else if (it.t === 'ptext') { const hs = (it.size || 16) * 0.75; grow(it.x - hs, it.y - hs); grow(it.x + hs, it.y + hs); }
     else if (it.t === 'label') { const b = labelBox(it.latex, it.size || 16); grow(it.x - b.w / 2, it.y - b.h / 2); grow(it.x + b.w / 2, it.y + b.h / 2); }
   }
   if (!Number.isFinite(x0)) throw new TikzError('empty picture');
@@ -190,7 +244,7 @@ export function fit(items, pad = 3) {
   const mv = (it) => {
     const o = { ...it };
     if (o.t === 'line') { o.x1 += dx; o.x2 += dx; o.y1 += dy; o.y2 += dy; } else if (o.t === 'poly') o.pts = o.pts.map((q) => [q[0] + dx, q[1] + dy]);
-    else if (o.t === 'rect') { o.x += dx; o.y += dy; } else if (o.t === 'ellipse') { o.cx += dx; o.cy += dy; } else if (o.t === 'dot' || o.t === 'label') { o.x += dx; o.y += dy; }
+    else if (o.t === 'rect') { o.x += dx; o.y += dy; } else if (o.t === 'ellipse') { o.cx += dx; o.cy += dy; } else if (o.t === 'dot' || o.t === 'label' || o.t === 'ptext') { o.x += dx; o.y += dy; }
     return o;
   };
   return { width: x1 - x0 + 2 * pad, height: y1 - y0 + 2 * pad, items: items.map(mv) };

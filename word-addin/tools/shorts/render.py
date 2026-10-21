@@ -5,7 +5,11 @@ d=f"/private/tmp/claude-501/-Users-phuongphan-GitHub-giasu-github-io/2781774f-9c
 shutil.rmtree(d,ignore_errors=True);os.makedirs(d)
 here=os.path.dirname(os.path.abspath(html));n=int(dur*fps)
 def f(i):
-    subprocess.run([CH,"--headless","--disable-gpu","--hide-scrollbars","--window-size=1080,1920",f"--screenshot={d}/f{i:04d}.png",f"file://{os.path.abspath(html)}?t={i/fps:.4f}"],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+  for _ in range(4):
+    try:
+      subprocess.run([CH,"--headless","--disable-gpu","--hide-scrollbars","--window-size=1080,1920",f"--screenshot={d}/f{i:04d}.png",f"file://{os.path.abspath(html)}?t={i/fps:.4f}"],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL,timeout=60)
+      if os.path.exists(f"{d}/f{i:04d}.png"): return
+    except subprocess.TimeoutExpired: pass
 with cf.ThreadPoolExecutor(10) as ex: list(ex.map(f,range(n)))
 subprocess.run(["ffmpeg","-y","-loglevel","error","-framerate",str(fps),"-i",f"{d}/f%04d.png","-c:v","libx264","-pix_fmt","yuv420p","-crf","18","-movflags","+faststart",out],check=True)
 print(out,n)

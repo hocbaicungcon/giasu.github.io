@@ -9063,8 +9063,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     };
     const addNode = (opts, name, c, text) => {
       const tex = nodeLatex(text);
-      const size = opts["minimum size"] ? dim(opts["minimum size"]) : 0;
-      const w0 = opts["minimum width"] ? dim(opts["minimum width"]) : size, h0 = opts["minimum height"] ? dim(opts["minimum height"]) : size;
+      const size = opts["minimum size"] ? dim(opts["minimum size"]) * scale : 0;
+      const w0 = opts["minimum width"] ? dim(opts["minimum width"]) * scale : size, h0 = opts["minimum height"] ? dim(opts["minimum height"]) * scale : size;
       const inner = opts["inner sep"] ? dim(opts["inner sep"]) : 5;
       const box = tex ? labelBox(tex, fs) : { w: 0, h: 0 };
       const shape2 = opts.circle ? "circle" : "rect";
@@ -9083,6 +9083,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const place2 = (pos, base, w, h) => {
       const dx = /right/.test(pos) ? 1 : /left/.test(pos) ? -1 : 0, dy = /above/.test(pos) ? -1 : /below/.test(pos) ? 1 : 0;
       return [base[0] + dx * (w / 2 + 3), base[1] + dy * (h / 2 + 3)];
+    };
+    const placeBeside = (pos, mid3, d, w, h) => {
+      const L = Math.hypot(d[0], d[1]) || 1;
+      let n = [-d[1] / L, d[0] / L];
+      const want = /above/.test(pos) ? n[1] > 0 ? -1 : 1 : /below/.test(pos) ? n[1] < 0 ? -1 : 1 : /right/.test(pos) ? n[0] < 0 ? -1 : 1 : /left/.test(pos) ? n[0] > 0 ? -1 : 1 : 0;
+      if (!want) return mid3;
+      n = [n[0] * want, n[1] * want];
+      const off = Math.abs(n[0]) * w / 2 + Math.abs(n[1]) * h / 2 + 4;
+      return [mid3[0] + n[0] * off, mid3[1] + n[1] * off];
     };
     for (const raw of splitTop(src, ";")) {
       const st = raw.trim();
@@ -9185,7 +9194,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           if (pending) {
             const mid3 = [(from[0] + to[0]) / 2, (from[1] + to[1]) / 2], tex = nodeLatex(pending.text), b = tex ? labelBox(tex, fs) : { w: 0, h: 0 };
             const pos = Object.keys(pending.o).filter((k) => /above|below|left|right/.test(k)).join(" ");
-            const p2 = place2(pos, mid3, b.w, b.h);
+            const p2 = placeBeside(pos, mid3, [to[0] - from[0], to[1] - from[1]], b.w, b.h);
             if (tex) items.push({ t: "label", latex: tex, x: p2[0], y: p2[1], size: fs, anchor: "c" });
             pending = null;
           }
@@ -9395,6 +9404,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         for (let k = 0; k < parseInt(n, 10); k++) cols.push(...sub4.cols);
         vlines = vlines || sub4.vlines;
         i = e22;
+      } else if (c === "@" && cols.length) {
+        const [g, e3] = group3(s, i + 1), h = /\\hspace\*?\{([^}]*)\}/.exec(g);
+        if (h) cols[cols.length - 1].gap = Math.round(cmOf(h[1]) * CM_DXA);
+        i = e3;
       } else if (c === ">" || c === "@" || c === "!" || c === "<") {
         const [, e3] = group3(s, i + 1);
         i = e3;
@@ -9413,7 +9426,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const { cols, vlines } = parseSpec(spec);
     const rowsSrc = splitTop2(inner, /^\\\\(\[[^\]]*\])?/);
     let hlines = false;
-    const rows = [], heights = [];
+    const rows = [], heights = [], boxW = [];
     for (const r0 of rowsSrc) {
       let r = r0;
       const gapM = /^\s*$/.test(r) ? null : null;
@@ -9422,23 +9435,29 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (!r.trim()) continue;
       const cells = splitTop2(r, /^&/);
       const rule = /\\rule\{[^}]*\}\{([^}]*)\}/.exec(r);
-      heights.push(((rule ? cmOf(rule[1]) : 0.75) + 0.1) * CM_DXA);
+      const pbh = /\\parbox(?:\[[^\]]*\])?\[([^\]]*)\]/.exec(r);
+      heights.push(((rule ? cmOf(rule[1]) : pbh ? cmOf(pbh[1]) : 0.75) + 0.1) * CM_DXA);
       rows.push(cells.map((c, k) => {
         const fill = /\\cellcolor\{([^}]*)\}/.exec(c);
         const col = cols[k] || { align: "center" };
         const text = c.replace(/\\cellcolor\{[^}]*\}/g, "").replace(/\\rule\{[^}]*\}\{[^}]*\}/g, "");
-        const u = unbox(text);
+        const u = unbox(text), pw = /\\parbox(?:\[[^\]]*\])*\{([\d.]+)(cm|mm)\}/.exec(u.text);
+        if (pw) boxW[k] = Math.max(boxW[k] || 0, Math.round(cmOf(pw[1] + pw[2]) * CM_DXA) + 140);
         return { xml: cellPara(texToRuns(u.text.trim(), ctx, f), { jc: col.align }), fill: fill ? safeColour(fill[1]) : null, box: u.box };
       }));
     }
     const n = Math.max(...rows.map((r) => r.length), cols.length);
-    const widths = Array.from({ length: n }, (_, k) => cols[k] && cols[k].width || 0);
+    const widths = Array.from({ length: n }, (_, k) => cols[k] && cols[k].width || boxW[k] || 0);
     const known = widths.reduce((a, b) => a + b, 0), unknown = widths.filter((w) => !w).length;
-    const share = unknown ? Math.max(1100, Math.min(2600, Math.floor((W_DXA - known) / unknown))) : 0;
+    const avail = ctx.availW || W_DXA, share = unknown ? Math.max(450, Math.min(unknown > 1 ? 2600 : 5200, Math.floor((avail - known) / unknown))) : 0;
     const w2 = widths.map((w) => w || share);
     rows.forEach((r) => {
       while (r.length < n) r.push({ xml: cellPara("") });
     });
+    for (let k = n - 2; k >= 0; k--) if (cols[k] && cols[k].gap) {
+      w2.splice(k + 1, 0, cols[k].gap);
+      rows.forEach((r) => r.splice(k + 1, 0, { xml: cellPara("") }));
+    }
     return tbl({ rows, widths: w2, borders: vlines ? { top: 1, left: 1, bottom: 1, right: 1, insideH: 1, insideV: 1 } : hlines ? { top: 1, bottom: 1, insideH: 1 } : null, jc: centered ? "center" : null, heights }) + para("", { after: 60 });
   }
   function paragraphs(text, ctx, f, centered) {
@@ -9525,7 +9544,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           let wm = /^\s*(?:\[[^\]]*\])?\s*\{([^}]*)\}/.exec(body);
           const frac = wm ? parseFloat(wm[1]) || 0.47 : 0.47;
           body = wm ? body.slice(wm[0].length) : body;
-          cells.push({ xml: texBlocks(body, ctx, f, false) || cellPara(""), w: Math.round(frac * W_DXA) });
+          const cw = Math.round(frac * W_DXA), keep = ctx.availW;
+          ctx.availW = cw - 140;
+          cells.push({ xml: texBlocks(body, ctx, f, false) || cellPara(""), w: cw });
+          ctx.availW = keep;
           nx = nn;
           const m = /^\s*(?:\\hfill|\\quad|\\qquad)?\s*\\begin\{minipage\}/.exec(s.slice(nn));
           if (!m) break;
@@ -9604,14 +9626,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return lines;
   }
-  function sceneRun(scene, ctx, name = "H\xECnh") {
-    if (ctx && ctx.previewSvg) return `<w:r><w:rPr><w:noProof/></w:rPr><w:drawing><pv>${esc6(ctx.previewSvg(scene))}</pv></w:drawing></w:r>`;
-    return `<w:r><w:rPr><w:noProof/></w:rPr>${sceneToDrawingXml(scene, { name, alt: name })}</w:r>`;
+  function sceneRun(scene, ctx, name = "H\xECnh", center = false) {
+    const down = center ? Math.round(2 * (scene.height * 0.75 / 2 - 0.34 * (ctx.fs || 16) * 0.75)) : 0, rpr2 = `<w:rPr><w:noProof/>${down > 0 ? `<w:position w:val="${-down}"/>` : ""}</w:rPr>`;
+    if (ctx && ctx.previewSvg) return `<w:r>${rpr2}<w:drawing><pv>${esc6(ctx.previewSvg(scene))}</pv></w:drawing></w:r>`;
+    return `<w:r>${rpr2}${sceneToDrawingXml(scene, { name, alt: name })}</w:r>`;
   }
-  function tikzRun(code, optStr, ctx) {
+  function tikzRun(code, optStr, ctx, center = false) {
     try {
       const sc = /scale\s*=\s*([\d.]+)/.exec(optStr || "");
-      return sceneRun(tikzToScene(code, { scale: sc ? parseFloat(sc[1]) : 1, fs: ctx.fs || 16 }), ctx, "H\xECnh");
+      return sceneRun(tikzToScene(code, { scale: sc ? parseFloat(sc[1]) : 1, fs: ctx.fs || 16 }), ctx, "H\xECnh", center);
     } catch (e3) {
       if (!(e3 instanceof TikzError)) throw e3;
       ctx.unsupported = (ctx.unsupported || []).concat(e3.message);
@@ -9636,6 +9659,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     };
     const run4 = (t, f = fmt, extra = "") => t ? `<w:r>${rpr2(f, extra)}<w:t xml:space="preserve">${esc6(t)}</w:t></w:r>` : "";
     let out = "", buf = "", i = 0;
+    let around;
+    const inline = () => around != null ? around : around = s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g, "").replace(/\\[a-zA-Z]+\*?/g, "").replace(/[\s{}$\\~]/g, "").length > 0;
     const flush = () => {
       out += run4(buf);
       buf = "";
@@ -9722,8 +9747,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           flush();
           out += texToRuns(arg(), ctx, fmt);
         } else if (name === "wsbox" || name === "fbox") {
+          const a = arg();
           flush();
-          out += texToRuns(arg(), ctx, __spreadProps(__spreadValues({}, fmt), { box: true }));
+          out += name === "fbox" && FBOX_BLANK.test(a) ? blankRun(ctx, 1) : texToRuns(a, ctx, __spreadProps(__spreadValues({}, fmt), { box: true }));
         } else if (name === "textcolor") {
           arg();
           flush();
@@ -9764,7 +9790,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             o = t.slice(1, k);
             code = t.slice(k + 1);
           }
-          out += tikzRun(code, o, ctx);
+          out += tikzRun(code, o, ctx, inline());
           i = e3 + "\\end{tikzpicture}".length;
         } else if (name === "end") {
           arg();
@@ -9822,16 +9848,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           flush();
           out += texToRuns(arg(), ctx, fmt);
         } else if (name === "parbox") {
+          while (s[i] === "[") i = s.indexOf("]", i) + 1;
           arg();
           flush();
           out += texToRuns(arg(), ctx, fmt);
-        } else if (name === "fcolorbox") {
-          arg();
-          arg();
-          flush();
-          out += texToRuns(arg(), ctx, __spreadProps(__spreadValues({}, fmt), { box: true }));
-        } else if (name === "cellcolor") arg();
-        else if (name === "quad" || name === "qquad") buf += "\u2003";
+        } else if (name === "quad" || name === "qquad") buf += "\u2003";
         else if (name === "checkmark") buf += "\u2713";
         else if (name === "rightarrow" || name === "to") buf += "\u2192";
         else if (name === "times") buf += "\xD7";
@@ -9988,7 +10009,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const media = images.map((im) => `<pkg:part pkg:name="/word/media/${im.rid}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b643(im.png)}</pkg:binaryData></pkg:part>`).join("");
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?mso-application progid="Word.Document"?><pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${NS3}><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part>${images.length ? `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${rels}</Relationships></pkg:xmlData></pkg:part>` : ""}${media}</pkg:package>`;
   }
-  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, PLAIN_MATH, PLAIN_SYM, plainMath, SHAPE_TIKZ, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
+  var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, PLAIN_MATH, PLAIN_SYM, plainMath, SHAPE_TIKZ, FBOX_BLANK, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, tint, CIRCLED, sbdr, NS3;
   var init_worksheet_docx = __esm({
     "src/worksheet-docx.js"() {
       init_latex2omml();
@@ -10016,6 +10037,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         shapetriangle: (f) => `\\filldraw[fill=${f || "green!60"},line width=0.8pt] (0,0.38) -- (-0.42,-0.3) -- (0.42,-0.3) -- cycle;`,
         shaperectangle: (f) => `\\filldraw[fill=${f || "yellow!85"},line width=0.8pt] (-0.44,-0.24) rectangle (0.44,0.24);`
       };
+      FBOX_BLANK = /^(?:\s|\\ |\\quad|\\rule\{[^}]*\}\{[^}]*\}|\\hspace\*?\{[^}]*\}|\\phantom\{[^}]*\})*$/;
       para = (inner, o = {}) => {
         var _a8, _b;
         return `<w:p><w:pPr>${o.keepNext ? "<w:keepNext/>" : ""}${o.pageBreakBefore ? "<w:pageBreakBefore/>" : ""}${o.shade ? `<w:shd w:val="clear" w:color="auto" w:fill="${o.shade}"/>` : ""}${o.pbdr ? `<w:pBdr>${o.pbdr}</w:pBdr>` : ""}${o.border ? '<w:pBdr><w:top w:val="single" w:sz="8" w:space="2" w:color="444444"/><w:left w:val="single" w:sz="8" w:space="4" w:color="444444"/><w:bottom w:val="single" w:sz="8" w:space="2" w:color="444444"/><w:right w:val="single" w:sz="8" w:space="4" w:color="444444"/></w:pBdr>' : ""}<w:spacing w:before="${(_a8 = o.before) != null ? _a8 : 0}" w:after="${(_b = o.after) != null ? _b : 60}"${o.line ? ` w:line="${o.line}" w:lineRule="auto"` : ""}/>${o.ind ? `<w:ind w:left="${o.ind}"/>` : ""}${o.jc ? `<w:jc w:val="${o.jc}"/>` : ""}</w:pPr>${inner}</w:p>`;
@@ -10091,8 +10113,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       <div id="w-topics" class="muted">\u0110ang t\u1EA3i\u2026</div>
       <div class="hint" id="w-skipped"></div>
     </fieldset>
-    <div class="btns two"><button class="primary" id="w-insert">Ch\xE8n v\xE0o Word</button><button class="secondary" id="w-new">T\u1EA1o t\xE0i li\u1EC7u m\u1EDBi</button></div>
-    <div class="btns"><button class="secondary" id="w-reroll">\u0110\u1ED5i \u0111\u1EC1 (m\xE3 \u0111\u1EC1 kh\xE1c)</button></div>
+    <div class="btns two"><button class="primary" id="w-insert">Ch\xE8n v\xE0o Word</button><button class="secondary" id="w-new">T\u1EA1o t\xE0i li\u1EC7u m\u1EDBi</button><button class="secondary" id="w-reroll">\u0110\u1ED5i \u0111\u1EC1 (m\xE3 \u0111\u1EC1 kh\xE1c)</button></div>
     <div id="w-out"></div>`;
     const $2 = (id) => root.querySelector("#" + id);
     let W = null, available = [];

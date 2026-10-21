@@ -39,15 +39,17 @@ function arrayLines(tex) {
 }
 
 /** A figure (scene) as an inline drawing run (editable shapes). */
-export function sceneRun(scene, ctx, name = 'Hình') {
-  if (ctx && ctx.previewSvg) return `<w:r><w:rPr><w:noProof/></w:rPr><w:drawing><pv>${esc(ctx.previewSvg(scene))}</pv></w:drawing></w:r>`;   // HTML preview (tools), not Word
-  return `<w:r><w:rPr><w:noProof/></w:rPr>${sceneToDrawingXml(scene, { name, alt: name })}</w:r>`;
+export function sceneRun(scene, ctx, name = 'Hình', center = false) {
+  // center: a small picture inside a line of text sits with its middle at the middle of the digits, not on the baseline
+  const down = center ? Math.round(2 * (scene.height * 0.75 / 2 - 0.34 * (ctx.fs || 16) * 0.75)) : 0, rpr = `<w:rPr><w:noProof/>${down > 0 ? `<w:position w:val="${-down}"/>` : ''}</w:rPr>`;
+  if (ctx && ctx.previewSvg) return `<w:r>${rpr}<w:drawing><pv>${esc(ctx.previewSvg(scene))}</pv></w:drawing></w:r>`;   // HTML preview (tools), not Word
+  return `<w:r>${rpr}${sceneToDrawingXml(scene, { name, alt: name })}</w:r>`;
 }
 /** \tikz / tikzpicture code -> drawing run; anything the TikZ subset cannot do is flagged (ctx.unsupported) and shown as a note. */
-export function tikzRun(code, optStr, ctx) {
+export function tikzRun(code, optStr, ctx, center = false) {
   try {
     const sc = /scale\s*=\s*([\d.]+)/.exec(optStr || '');
-    return sceneRun(tikzToScene(code, { scale: sc ? parseFloat(sc[1]) : 1, fs: ctx.fs || 16 }), ctx, 'Hình');
+    return sceneRun(tikzToScene(code, { scale: sc ? parseFloat(sc[1]) : 1, fs: ctx.fs || 16 }), ctx, 'Hình', center);
   } catch (e) {
     if (!(e instanceof TikzError)) throw e;
     ctx.unsupported = (ctx.unsupported || []).concat(e.message);
@@ -75,6 +77,7 @@ const SHAPE_TIKZ = {
   shapetriangle: (f) => `\\filldraw[fill=${f || 'green!60'},line width=0.8pt] (0,0.38) -- (-0.42,-0.3) -- (0.42,-0.3) -- cycle;`,
   shaperectangle: (f) => `\\filldraw[fill=${f || 'yellow!85'},line width=0.8pt] (-0.44,-0.24) rectangle (0.44,0.24);`,
 };
+const FBOX_BLANK = /^(?:\s|\\ |\\quad|\\rule\{[^}]*\}\{[^}]*\}|\\hspace\*?\{[^}]*\}|\\phantom\{[^}]*\})*$/;   // \fbox{\rule..\hspace..}: an empty box to write in
 let picId = 5000;
 /** A Twemoji picture (PNG prepared by the caller: ctx.pics.get(cp) = {rid, pt}) inline in the text, else the emoji character. */
 function pictureRun(cp, ctx, fmt, shapeId = '') {
@@ -106,6 +109,8 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
   };
   const run = (t, f = fmt, extra = '') => (t ? `<w:r>${rpr(f, extra)}<w:t xml:space="preserve">${esc(t)}</w:t></w:r>` : '');
   let out = '', buf = '', i = 0;
+  let around;   // does the text around the pictures have words / signs? then pictures are centred on the line
+  const inline = () => (around ??= s.replace(/\\begin\{tikzpicture\}[\s\S]*?\\end\{tikzpicture\}/g, '').replace(/\\[a-zA-Z]+\*?/g, '').replace(/[\s{}$\\~]/g, '').length > 0);
   const flush = () => { out += run(buf); buf = ''; };
   const dots = (n) => '.'.repeat(Math.max(4, Math.round(n)));
   const cm = (t) => { const m = /([\d.]+)\s*(cm|mm|pt|em|ex)?/.exec(t || ''); return m ? parseFloat(m[1]) * ({ mm: 0.1, pt: 0.035, em: 0.4, ex: 0.2 }[m[2]] || 1) : 1; };
@@ -137,7 +142,7 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
       let opt = '';
       if (s[i] === '[') { const e = s.indexOf(']', i); opt = s.slice(i + 1, e); i = e + 1; }
       const arg = () => { while (s[i] === ' ') i++; if (s[i] !== '{') return ''; const [g, e] = group(s, i); i = e; return g; };
-      if (name === 'textit' || name === 'emph') { flush(); out += texToRuns(arg(), ctx, { ...fmt, i: true }); } else if (name === 'textbf') { flush(); out += texToRuns(arg(), ctx, { ...fmt, b: true }); } else if (name === 'underline') { flush(); out += texToRuns(arg(), ctx, { ...fmt, u: true }); } else if (name === 'text' || name === 'textrm' || name === 'textsf' || name === 'mbox') { flush(); out += texToRuns(arg(), ctx, fmt); } else if (name === 'wsbox' || name === 'fbox') { flush(); out += texToRuns(arg(), ctx, { ...fmt, box: true }); } else if (name === 'textcolor') { arg(); flush(); out += texToRuns(arg(), ctx, fmt); } else if (name === 'makebox') {
+      if (name === 'textit' || name === 'emph') { flush(); out += texToRuns(arg(), ctx, { ...fmt, i: true }); } else if (name === 'textbf') { flush(); out += texToRuns(arg(), ctx, { ...fmt, b: true }); } else if (name === 'underline') { flush(); out += texToRuns(arg(), ctx, { ...fmt, u: true }); } else if (name === 'text' || name === 'textrm' || name === 'textsf' || name === 'mbox') { flush(); out += texToRuns(arg(), ctx, fmt); } else if (name === 'wsbox' || name === 'fbox') { const a = arg(); flush(); out += name === 'fbox' && FBOX_BLANK.test(a) ? blankRun(ctx, 1) : texToRuns(a, ctx, { ...fmt, box: true }); } else if (name === 'textcolor') { arg(); flush(); out += texToRuns(arg(), ctx, fmt); } else if (name === 'makebox') {
         const body = arg(); flush();
         out += /dotfill|hrulefill/.test(body) ? run(dots(cm(opt) * 4.5)) : texToRuns(body, ctx, fmt);
       } else if (name === 'dotfill' || name === 'hrulefill') { flush(); out += run(dots(18)); } else if (name === 'hspace') { const w = cm(arg()); buf += ' '.repeat(Math.max(1, Math.round(w * 3))); } else if (name === 'phantom' || name === 'vspace' || name === 'rule' || name === 'color') { arg(); if (name === 'rule') arg(); } else if (name === 'wspic' || name === 'wshz') {
@@ -154,7 +159,7 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
         let code = s.slice(i + '{tikzpicture}'.length, e), o = opt;
         const t = code.trimStart();
         if (!o && t[0] === '[') { const k = t.indexOf(']'); o = t.slice(1, k); code = t.slice(k + 1); }
-        out += tikzRun(code, o, ctx);
+        out += tikzRun(code, o, ctx, inline());
         i = e + '\\end{tikzpicture}'.length;
       } else if (name === 'end') { arg(); }
       else if (name === 'large' || name === 'Large' || name === 'LARGE' || name === 'huge' || name === 'small' || name === 'footnotesize' || name === 'tiny' || name === 'normalsize') { flush(); const k = { large: 1.15, Large: 1.3, LARGE: 1.5, huge: 1.7, small: 0.9, footnotesize: 0.8, tiny: 0.65, normalsize: 1 }[name]; fmt = { ...fmt, sz: Math.round((ctx.baseSz || fmt.sz || 26) * k) }; } else if (name === 'bfseries') { flush(); fmt = { ...fmt, b: true }; } else if (name === 'itshape') { flush(); fmt = { ...fmt, i: true }; } else if (name === 'tikz') {
@@ -170,7 +175,7 @@ export function texToRuns(s, ctx = {}, fmt = {}) {
         out += run(['→', '↗', '↑', '↖', '←', '↙', '↓', '↘'][((Math.round(ang / 45) % 8) + 8) % 8], { ...fmt, b: true });
       } else if (name === 'wstrace') { const t = arg(); flush(); out += texToRuns(t, ctx, { ...fmt, color: 'B3B3B3', sz: Math.round((fmt.sz || 26) * 1.3) }); } else if (name === 'wsblank') {
         const w = cm(arg()); flush(); out += run('\u00a0'.repeat(Math.max(3, Math.round(w * 4.2))), { ...fmt, u: true });
-      } else if (name === 'raisebox') { arg(); while (s[i] === '[') i = s.indexOf(']', i) + 1; flush(); out += texToRuns(arg(), ctx, fmt); } else if (name === 'parbox') { arg(); flush(); out += texToRuns(arg(), ctx, fmt); } else if (name === 'fcolorbox') { arg(); arg(); flush(); out += texToRuns(arg(), ctx, { ...fmt, box: true }); } else if (name === 'cellcolor') arg();
+      } else if (name === 'raisebox') { arg(); while (s[i] === '[') i = s.indexOf(']', i) + 1; flush(); out += texToRuns(arg(), ctx, fmt); } else if (name === 'parbox') { while (s[i] === '[') i = s.indexOf(']', i) + 1; arg(); flush(); out += texToRuns(arg(), ctx, fmt); }   // \parbox[c][0.8cm][c]{5.6cm}{text} else if (name === 'fcolorbox') { arg(); arg(); flush(); out += texToRuns(arg(), ctx, { ...fmt, box: true }); } else if (name === 'cellcolor') arg();
       else if (name === 'quad' || name === 'qquad') buf += ' ';
       else if (name === 'checkmark') buf += '✓';
       else if (name === 'rightarrow' || name === 'to') buf += '→';
@@ -200,7 +205,7 @@ const table = (rows, cols, widths) => `<w:tbl><w:tblPr><w:tblW w:w="5000" w:type
 const UNSUPPORTED = /\\(wsclock|tikz|draw|fill|filldraw|wstrace|wsblank|begin\{tikzpicture\})/;
 /** True when a generated block can be written to Word (it has items and no TikZ-only pictures). */
 export const printable = (b) => b.items.length > 0 || Boolean(b.bodyTex);
-const SUBJECT_TITLE = { math: 'TOÁN', vi: 'TIẾNG VIỆT', en: 'TIẾNG ANH' };
+const SUBJECT_TITLE = { math: 'TOÁN', vi: 'TIẾNG VIỆT', en: 'TIẾNG ANH', pre: 'MẦM NON', zh: 'TIẾNG TRUNG', ja: 'TIẾNG NHẬT' };
 
 /** Layout styles for the exercise headings (Bài 1, Bài 2 ...) and the title. */
 export const WORKSHEET_STYLES = [
@@ -210,6 +215,18 @@ export const WORKSHEET_STYLES = [
   ['bar', 'Thanh màu bên trái'],
   ['line', 'Gạch chân'],
   ['plain', 'Đơn giản'],
+];
+/** Colour themes of the worksheet (accent colour of titles, numbers, tables). 'auto' = the subject's own colour. */
+export const WORKSHEET_THEMES = [
+  ['auto', 'Theo môn học', ''],
+  ['blue', 'Xanh dương', '1D6FB8'],
+  ['teal', 'Xanh ngọc', '14877B'],
+  ['green', 'Xanh lá', '2E8B57'],
+  ['orange', 'Cam', 'E67E22'],
+  ['red', 'Đỏ san hô', 'D9534F'],
+  ['pink', 'Hồng', 'D6336C'],
+  ['purple', 'Tím', '7D3CB5'],
+  ['navy', 'Xanh than', '2C3E50'],
 ];
 const tint = (hex, k) => { const n = parseInt(hex, 16); const m = (c) => Math.round(c + (255 - c) * k); return [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((c) => m(c).toString(16).padStart(2, '0')).join('').toUpperCase(); };
 const CIRCLED = '❶❷❸❹❺❻❼❽❾❿';
@@ -228,9 +245,9 @@ function exHeading(style, n, instrRuns, acc, sz) {
   return para(`<w:r><w:rPr><w:rFonts w:ascii="Segoe UI Symbol" w:hAnsi="Segoe UI Symbol"/><w:color w:val="${acc}"/><w:sz w:val="${sz + 8}"/></w:rPr><w:t xml:space="preserve">${n <= 10 ? CIRCLED[n - 1] : [...String(n)].map((d) => (d === '0' ? '⓿' : CIRCLED[d - 1])).join('')}</w:t></w:r>${gap}${instrRuns}`, base);
 }
 
-function titleBlock(style, heading, grade, acc, sz) {
+function titleBlock(style, heading, grade, acc, sz, gradeLabel) {
   const run = (color, size) => `<w:r><w:rPr><w:b/><w:color w:val="${color}"/><w:sz w:val="${size}"/></w:rPr><w:t>${esc(heading)}</w:t></w:r>`;
-  const lop = (color) => `<w:r><w:rPr><w:b/>${color ? `<w:color w:val="${color}"/>` : ''}<w:sz w:val="${sz + 2}"/></w:rPr><w:t>Lớp ${grade}</w:t></w:r>`;
+  const lop = (color) => `<w:r><w:rPr><w:b/>${color ? `<w:color w:val="${color}"/>` : ''}<w:sz w:val="${sz + 2}"/></w:rPr><w:t>${esc(gradeLabel || `Lớp ${grade}`)}</w:t></w:r>`;
   if (style === 'band') return para(run('FFFFFF', sz + 12), { jc: 'center', shade: acc, before: 0, after: 40, line: 400 }) + para(lop(acc), { jc: 'center', after: 120 });
   if (style === 'box') return para(run(acc, sz + 12), { jc: 'center', after: 40, shade: tint(acc, 0.9), pbdr: sbdr('top', 12, acc, 4) + sbdr('left', 12, acc, 6) + sbdr('bottom', 12, acc, 4) + sbdr('right', 12, acc, 6) }) + para(lop(acc), { jc: 'center', after: 120 });
   if (style === 'line') return para(run(acc, sz + 12), { jc: 'center', after: 40, pbdr: sbdr('bottom', 12, acc, 3) }) + para(lop(), { jc: 'center', after: 120 });
@@ -246,7 +263,7 @@ export function worksheetBody(result, options = {}) {
   const acc = color === 'bw' ? '222222' : accent.replace('#', '');
   const sz = Math.round(fontPt * 2);
   const half = sz;
-  const ctx = { cps, pics, previewSvg: options.previewSvg, fs: fontPt / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
+  const ctx = { accent: acc, line: tint(acc, 0.35), cps, pics, previewSvg: options.previewSvg, fs: fontPt / 0.75, baseSz: sz, math: (tex) => latexToOmml(tex).replace(/<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"\/><\/w:rPr>/g, `<w:rPr><w:rFonts w:ascii="Cambria Math" w:hAnsi="Cambria Math"/><w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`) };
   const f = { sz, emoji: Math.round(sz * 1.5) };
   const skipped = [];
   let body = '', count = 0;
@@ -287,8 +304,8 @@ export function worksheetBody(result, options = {}) {
     const code = result.sheets.length > 1 ? ` — Mã đề ${String.fromCharCode(65 + v)}` : '';
     if (options.school) body += para(`<w:r><w:rPr><w:b/><w:sz w:val="${sz}"/></w:rPr><w:t>${esc(options.school)}</w:t></w:r>`, { after: 40 });
     const heading = (options.title || `PHIẾU BÀI TẬP ${SUBJECT_TITLE[subject] || ''}`.trim()) + code;
-    { const t = titleBlock(style, heading, grade, acc, sz); body += v > 0 ? t.replace('<w:pPr>', '<w:pPr><w:pageBreakBefore/>') : t; }
-    body += para(`<w:r><w:rPr><w:b/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">Họ và tên: ${'.'.repeat(34)}   Lớp: ${'.'.repeat(10)}   Ngày: ${'.'.repeat(12)}</w:t></w:r>`, { border: true, shade: color === 'bw' ? 'F3F3F3' : 'EAF2FB', after: 160, line: 360 });
+    { const t = titleBlock(style, heading, grade, acc, sz, options.gradeLabel); body += v > 0 ? t.replace('<w:pPr>', '<w:pPr><w:pageBreakBefore/>') : t; }
+    body += para(`<w:r><w:rPr><w:b/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve">Họ và tên: ${'.'.repeat(34)}   Lớp: ${'.'.repeat(10)}   Ngày: ${'.'.repeat(12)}</w:t></w:r>`, { border: true, shade: color === 'bw' ? 'F3F3F3' : tint(acc, 0.9), after: 160, line: 360 });
     let n = 0;
     const rendered = sheet.blocks.map((b) => renderBlock(b));
     for (const r of rendered) { if (!r.ok && !skipped.includes(r.b.name)) skipped.push(r.b.name); }
@@ -315,7 +332,7 @@ export function worksheetBody(result, options = {}) {
   return { body, skipped, count };
 }
 
-const NS = 'xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"';
+const NS = 'xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" mc:Ignorable="w14" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"';
 /** Flat-OPC package whose body is the given XML (for selection.insertOoxml / a new document). */
 export function bodyPackage(bodyXml, images = []) {
   const b64 = (bytes) => { let t = ''; for (let i = 0; i < bytes.length; i += 0x8000) t += String.fromCharCode(...bytes.subarray(i, i + 0x8000)); return btoa(t).replace(/(.{76})/g, '$1\n'); };

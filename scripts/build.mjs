@@ -11,6 +11,7 @@ import fs from 'node:fs';
 import {normalizeCategory} from '../assets/subject-groups.js';
 import {createHash} from 'node:crypto';
 import path from 'node:path';
+import {execFileSync} from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { marked } from 'marked';
 import {renderMath} from './math.mjs';
@@ -331,6 +332,36 @@ export function lazyImages(html){
   return seen++?`<img loading="lazy" decoding="async"${attrs}>`:tag;
  });
 }
+// Ảnh PNG/JPG lớn → WebP (cwebp). Bản gốc giữ nguyên trong nguồn; trang HTML trỏ sang bản WebP nhỏ hơn.
+const webpImages=new Set();
+function buildWebp(root,out){
+ const dir=path.join(out,'assets/images'),cache=path.join(root,'.cache/webp');
+ if(!fs.existsSync(dir))return;
+ try{execFileSync('cwebp',['-version'],{stdio:'ignore'});}catch{return;}
+ fs.mkdirSync(cache,{recursive:true});
+ for(const f of fs.readdirSync(dir)){
+  const src=path.join(dir,f);
+  if(!/\.(?:png|jpe?g)$/i.test(f)||fs.statSync(src).size<120*1024)continue;
+  const key=createHash('sha1').update(fs.readFileSync(src)).digest('hex').slice(0,16)+'.webp',hit=path.join(cache,key);
+  if(!fs.existsSync(hit)){
+   try{execFileSync('cwebp',['-quiet','-q','82','-alpha_q','90','-m','4','-resize','1600','0',src,'-o',hit],{stdio:'ignore'});}catch{continue;}
+   // -resize chỉ thu nhỏ khi cần: cwebp phóng to nếu ảnh nhỏ hơn 1600, nên chạy lại không resize
+   const dim=execFileSync('sips',['-g','pixelWidth',src]).toString().match(/pixelWidth: (\d+)/);
+   if(!dim||+dim[1]<=1600)try{execFileSync('cwebp',['-quiet','-q','82','-alpha_q','90','-m','4',src,'-o',hit],{stdio:'ignore'});}catch{continue;}
+  }
+  if(fs.statSync(hit).size<fs.statSync(src).size*0.8){
+   const name=f.replace(/\.[^.]+$/,'.webp');
+   if(fs.existsSync(path.join(dir,name)))continue;
+   fs.copyFileSync(hit,path.join(dir,name));webpImages.add(f);
+  }
+ }
+}
+function useWebp(html){
+ return html.replace(/(<img\b[^>]*?\bsrc=")([^"]*\/assets\/images\/)([^"/]+)(")/g,(m,a,b,f,c)=>{
+  let name;try{name=decodeURIComponent(f);}catch{return m;}
+  return webpImages.has(name)?a+b+f.replace(/\.[^.]+$/,'.webp')+c:m;
+ });
+}
 function decodeHtmlEntities(s) {
  return String(s)
   .replace(/&#(\d+);/g, (_, dec) => String.fromCharCode(Number(dec)))
@@ -525,6 +556,7 @@ export function build(){
   fs.rmSync(path.join(out,'assets/docs'),{recursive:true,force:true});
  }
  fs.cpSync(path.join(root,'assets'),path.join(out,'assets'),{recursive:true});
+ buildWebp(root,out);
  buildGlossary(root,out);
  if(!fs.existsSync(path.join(out,'assets/katex'))){
   fs.cpSync(path.join(root,'node_modules/katex/dist'),path.join(out,'assets/katex'),{recursive:true});
@@ -616,7 +648,8 @@ export function build(){
   const seoDescription=esc(searchDescription(decodeHtmlEntities(html.match(/<meta name="description" content="([^"]*)">/)?.[1]||''),cleanTitle,post));
   html=html.replace(/<title>[^<]*<\/title>/,`<title>${seoTitle}</title>`).replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${seoDescription}">`);
   html=lazyImages(html);
-  const imgMatch=html.match(/<article[\s\S]*?<img[^>]+src="([^">]+)"/);
+  const htmlOrig=html;html=useWebp(html);
+  const imgMatch=htmlOrig.match(/<article[\s\S]*?<img[^>]+src="([^">]+)"/);
   let ogImage='https://giasu.ai.vn/assets/og-cover.png';
   if(imgMatch){
    try {

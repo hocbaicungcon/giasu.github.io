@@ -1,6 +1,6 @@
 // A figure as a list of primitives, drawn two ways: SVG (preview / PNG) and DrawingML shapes (editable in Word).
 // Primitives (px): {t:'line', x1,y1,x2,y2, w, arrow, dash} {t:'rect', x,y,w,h, sw, fill} {t:'poly', pts:[[x,y]..], closed, sw, fill, dash}
-// {t:'ellipse', cx,cy,rx,ry, sw, fill, dash} {t:'label', latex, x,y, anchor:'c'|'l'|'r', size} {t:'text', s, x,y, anchor, size, italic}
+// {t:'ellipse', cx,cy,rx,ry, sw, fill, dash} {t:'label', latex, x,y, anchor:'c'|'l'|'r', size} {t:'text', s, x,y, anchor, size, italic} {t:'ptext', s, x,y, size, bold, color, font} (plain text, centred on x,y: digits, emoji)
 import { renderLatex } from '../mathrender.js';
 import { latexToOmml } from '../latex2omml.js';
 import { n2, FONT, esc } from './svgkit.js';
@@ -20,7 +20,7 @@ function labelSvg(p) {
 export function sceneToSvg(scene, { bg = '#fff' } = {}) {
   let body = '';
   for (const p of scene.items) {
-    const sw = (p.t === 'line' ? p.w : p.sw) || 1.4, dash = p.dash ? ` stroke-dasharray="${p.dash}"` : '';
+    const sw = (p.t === 'line' ? p.w : p.sw) || 1.4, dash = p.dash ? ` stroke-dasharray="${p.dash === 'dot' ? `0.1 ${n2(sw * 2.4)}` : p.dash}"` : '';
     if (p.t === 'line') {
       body += `<line x1="${n2(p.x1)}" y1="${n2(p.y1)}" x2="${n2(p.x2)}" y2="${n2(p.y2)}" stroke="${p.color || '#000'}" stroke-width="${sw}" stroke-linecap="round"${dash}/>`;
       if (p.arrow) { const a = Math.atan2(p.y2 - p.y1, p.x2 - p.x1), s = 8; body += `<path d="M${n2(p.x2)} ${n2(p.y2)} L${n2(p.x2 - s * Math.cos(a - 0.4))} ${n2(p.y2 - s * Math.sin(a - 0.4))} L${n2(p.x2 - s * Math.cos(a + 0.4))} ${n2(p.y2 - s * Math.sin(a + 0.4))}Z" fill="${p.color || '#000'}"/>`; }
@@ -29,6 +29,7 @@ export function sceneToSvg(scene, { bg = '#fff' } = {}) {
     else if (p.t === 'ellipse') body += `<ellipse cx="${n2(p.cx)}" cy="${n2(p.cy)}" rx="${n2(p.rx)}" ry="${n2(p.ry)}" fill="${p.fill || 'none'}" stroke="${p.color || '#000'}" stroke-width="${sw}"${dash}/>`;
     else if (p.t === 'dot') body += `<circle cx="${n2(p.x)}" cy="${n2(p.y)}" r="${p.r || 2.6}" fill="${p.color || '#000'}"/>`;
     else if (p.t === 'label') body += labelSvg(p);
+    else if (p.t === 'ptext') body += `<text x="${n2(p.x)}" y="${n2(p.y)}" font-size="${n2(p.size || 16)}" text-anchor="middle" dominant-baseline="central" font-family="${p.font || FONT}"${p.bold ? ' font-weight="700"' : ''} fill="${p.color || '#000'}">${esc(p.s)}</text>`;
     else if (p.t === 'text') body += `<text x="${n2(p.x)}" y="${n2(p.y)}" font-size="${p.size || 15}" text-anchor="${p.anchor === 'l' ? 'start' : p.anchor === 'r' ? 'end' : 'middle'}" font-family="${FONT}"${p.italic ? ' font-style="italic"' : ''}>${esc(p.s)}</text>`;
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${n2(scene.width)}" height="${n2(scene.height)}" viewBox="0 0 ${n2(scene.width)} ${n2(scene.height)}"><rect width="100%" height="100%" fill="${bg}"/>${body}</svg>`;
@@ -38,7 +39,7 @@ export function sceneToSvg(scene, { bg = '#fff' } = {}) {
 const EMU = 9525;   // per px
 const e = (v) => Math.round(v * EMU);
 const clr = (c) => (c || '#000000').replace('#', '').padEnd(6, '0').toUpperCase().slice(0, 6);
-const ln = (w, color, dash, arrow) => `<a:ln w="${Math.round((w || 1.4) * EMU)}" cap="rnd"><a:solidFill><a:srgbClr val="${clr(color)}"/></a:solidFill>${dash ? '<a:prstDash val="dash"/>' : ''}<a:round/>${arrow ? '<a:tailEnd type="triangle" w="med" len="med"/>' : ''}</a:ln>`;
+const ln = (w, color, dash, arrow) => `<a:ln w="${Math.round((w || 1.4) * EMU)}" cap="rnd"><a:solidFill><a:srgbClr val="${clr(color)}"/></a:solidFill>${dash ? `<a:prstDash val="${dash === 'dot' ? 'sysDot' : 'dash'}"/>` : ''}<a:round/>${arrow ? '<a:tailEnd type="triangle" w="med" len="med"/>' : ''}</a:ln>`;
 let shapeId = 1;
 
 function xfrm(x, y, w, h, extra = '') { return `<a:xfrm${extra}><a:off x="${e(x)}" y="${e(y)}"/><a:ext cx="${Math.max(0, e(w))}" cy="${Math.max(0, e(h))}"/></a:xfrm>`; }
@@ -62,6 +63,11 @@ function itemXml(p) {
     const pt = (q) => `<a:pt x="${e(q[0] - x0)}" y="${e(q[1] - y0)}"/>`;
     const geom = `<a:custGeom><a:avLst/><a:gdLst/><a:ahLst/><a:cxnLst/><a:rect l="0" t="0" r="r" b="b"/><a:pathLst><a:path w="${Math.max(1, e(w))}" h="${Math.max(1, e(h))}"${p.closed ? '' : ' fill="none"'}><a:moveTo>${pt(p.pts[0])}</a:moveTo>${p.pts.slice(1).map((q) => `<a:lnTo>${pt(q)}</a:lnTo>`).join('')}${p.closed ? '<a:close/>' : ''}</a:path></a:pathLst></a:custGeom>`;
     return shape(p.closed ? 'Đa giác' : 'Đường cong', `${xfrm(x0, y0, w, h)}${geom}${p.fill ? `<a:solidFill><a:srgbClr val="${clr(p.fill)}"/></a:solidFill>` : '<a:noFill/>'}${ln(p.sw, color, p.dash)}`);
+  }
+  if (p.t === 'ptext') {
+    const size = p.size || 16, half = Math.round(size * 0.75 * 2), chars = [...p.s].length, w = size * 1.35 * chars + 8, h = size * 1.5;
+    const rpr = `<w:rPr>${p.font ? `<w:rFonts w:ascii="${esc(p.font)}" w:hAnsi="${esc(p.font)}" w:eastAsia="${esc(p.font)}"/>` : ''}${p.bold ? '<w:b/>' : ''}${p.color ? `<w:color w:val="${clr(p.color)}"/>` : ''}<w:sz w:val="${half}"/><w:szCs w:val="${half}"/></w:rPr>`;
+    return `<wps:wsp><wps:cNvPr id="${++shapeId}" name="Chữ"/><wps:cNvSpPr txBox="1"/><wps:spPr>${xfrm(p.x - w / 2, p.y - h / 2, w, h)}<a:prstGeom prst="rect"><a:avLst/></a:prstGeom><a:noFill/><a:ln><a:noFill/></a:ln></wps:spPr><wps:txbx><w:txbxContent><w:p><w:pPr><w:spacing w:before="0" w:after="0" w:line="240" w:lineRule="auto"/><w:jc w:val="center"/></w:pPr><w:r>${rpr}<w:t xml:space="preserve">${esc(p.s)}</w:t></w:r></w:p></w:txbxContent></wps:txbx><wps:bodyPr lIns="0" tIns="0" rIns="0" bIns="0" rtlCol="0" anchor="ctr"><a:noAutofit/></wps:bodyPr></wps:wsp>`;
   }
   if (p.t === 'label' || p.t === 'text') {
     const size = p.size || 16, latex = p.t === 'label' ? p.latex : (p.italic ? p.s : `\\text{${p.s}}`);

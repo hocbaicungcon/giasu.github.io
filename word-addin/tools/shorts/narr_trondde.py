@@ -6,5 +6,5 @@ CLIPS=[
 ("n5","Tiếp theo là mã một một không hai."),
 ("n6","Và mã một một không ba."),
 ("n7","Bảng đáp án của từng mã đề được lập sẵn, xuất ra Excel chỉ với một cú bấm."),
-("n8","TexCraft, add-in Word miễn phí cho giáo viên, dùng được trên cả Windows và MacBook. Tải tại giasu chấm ai chấm vn."),
+("n8","TexCraft, add-in Word miễn phí cho giáo viên, dùng được trên cả Windows và MacBook. Tải tại gia sư chấm a i chấm vê nờ."),
 ]

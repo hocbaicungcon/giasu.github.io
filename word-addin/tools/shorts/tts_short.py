@@ -7,10 +7,14 @@ out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)
 V="phuong";CV=Path("/Users/phuongphan/GitHub/gen_video/tools/custom_voices")
 tts=Vieneu();tts.add_voice(V,CV/f"{V}.wav",denoise=False)
 sr=tts.sample_rate;r=2**(1/12);durs={}
+only=set(sys.argv[3:])
 for k,t in m.CLIPS:
+    if only and k not in only: continue
     raw=out/f"{k}_raw.wav";tts.save(tts.infer(t,voice=V,temperature=0.8),str(raw))
     f=f"asetrate={sr*r},aresample=44100,atempo={1/r},atempo=1.15"
     subprocess.run(["ffmpeg","-v","error","-y","-i",str(raw),"-filter:a",f,"-ar","44100","-ac","2",str(out/f"{k}.wav")],check=True);raw.unlink()
     d=subprocess.run(["ffprobe","-v","error","-show_entries","format=duration","-of","csv=p=0",str(out/f"{k}.wav")],capture_output=True,text=True).stdout
     durs[k]=round(float(d),2)
-json.dump(durs,open(out/"durations.json","w"),indent=1);print(durs)
+dj=out/"durations.json";old=json.load(open(dj)) if dj.exists() else {}
+old.update(durs);durs={k:old[k] for k,_ in m.CLIPS if k in old}
+json.dump(durs,open(dj,"w"),indent=1);print(durs)
