@@ -24,3 +24,7 @@ cham-thi/data/
 # Local teaching resources
 GDDP-TNHN/
 
+
+# Công cụ làm video/ảnh bìa (không thuộc add-in, giữ cục bộ)
+word-addin/tools/shorts/
+word-addin/tools/thumb/
