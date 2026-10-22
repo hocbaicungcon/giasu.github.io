@@ -1,7 +1,7 @@
 /* credit: giasu.ai.vn */
-/* Đồng bộ tông màu tương tác: hover, focus, trạng thái chọn dùng họ xanh lá của thương hiệu.
-   Các quy tắc xanh dương/xanh ngọc từ giao diện cũ nằm rải rác trong những tệp style-* khác được ghi đè tại đây (tệp nạp sau cùng). */
-:root { --tone-green: #438557; --tone-green-dark: #316a42; --tone-green-soft: #dceacc; --tone-green-line: #9cc78c; --tone-focus: #51854b; }
+/* Đồng bộ tông màu tương tác: hover, focus, trạng thái chọn dùng họ cyan của logo.
+   Các quy tắc màu từ giao diện cũ nằm rải rác trong những tệp style-* khác được ghi đè tại đây (tệp nạp sau cùng). */
+:root { --tone-green: #087d98; --tone-green-dark: #075c73; --tone-green-soft: #b8e7f5; --tone-green-line: #68bfd7; --tone-focus: #087d98; }
 
 body :is(button, a, input, select, summary, .fun-player *):focus-visible,
 body .geometry-lab :is(button, input):focus-visible,
@@ -15,21 +15,21 @@ body :is(.primary, .go-top, .share-toggle):hover,
 body .share-toggle[aria-expanded="true"],
 body .exam-toolbar .primary:hover,
 body .riddles .primary:hover { background: var(--tone-green-dark) !important; color: #fff !important; }
-body .exam-toolbar #submit-exam:hover { background: #2a5a39 !important; color: #fff !important; }
+body .exam-toolbar #submit-exam:hover { background: #075c73 !important; color: #fff !important; }
 
-body header .nav-pill:hover { background: var(--tone-green-soft) !important; color: #31543a !important; }
-body header .display-controls button:hover { background: rgba(67, 133, 87, .12) !important; }
+body header .nav-pill:hover { background: var(--tone-green-soft) !important; color: #10536e !important; }
+body header .display-controls button:hover { background: rgba(8, 125, 152, .12) !important; }
 body header #site-menu > a:not(.nav-pill):hover,
 body header .nav-exams > summary:hover,
 body header .nav-exams[open] > summary,
-body header .nav-submenu a:hover, body header .nav-submenu a:focus-visible,
-body header .grading-link:hover { color: var(--tone-green-dark) !important; }
+body header .grading-link:hover { color: #69d7f2 !important; }
+body header .nav-submenu a:hover, body header .nav-submenu a:focus-visible { color: var(--teal) !important; }
 body header .grading-link:hover { border-color: var(--tone-green-line) !important; }
 
 body .grade-nav-item:hover { background: var(--tone-green) !important; border-color: var(--tone-green) !important; color: #fff !important; }
 body .sort-controls button[aria-pressed="true"] { color: var(--tone-green-dark) !important; border-color: var(--tone-green-line) !important; }
-body :is(.quiz-option:has(input:checked), form.quiz .quiz-option:has(input:checked)) { border-color: #78a267 !important; }
-body .toc-nav a:hover { background: rgba(67, 133, 87, .08) !important; }
+body :is(.quiz-option:has(input:checked), form.quiz .quiz-option:has(input:checked)) { border-color: #1688a5 !important; }
+body .toc-nav a:hover { background: rgba(8, 125, 152, .12) !important; }
 
 body :is(.geometry-actions, .geometry-lab .geometry-actions) button[aria-pressed="true"] { background: var(--tone-green) !important; border-color: var(--tone-green) !important; color: #fff !important; }
 body .geometry-lab .geometry-actions button:hover { border-color: var(--tone-green-line) !important; }
@@ -39,11 +39,11 @@ body .lesson-exploration button:hover, body .lesson-exploration button[aria-pres
 body .prose button.glossary-term:hover, body :is(.share-actions a, .share-actions button):hover { color: var(--tone-green-dark) !important; }
 body :is(.fun-tile:hover, .fun-tile[href$="do-vui-tieng-anh.html"]:hover) { background: var(--tone-green-soft) !important; }
 
-html[data-theme="dark"] body :is(button, a):hover { color: #b8dca6; }
-html[data-theme="dark"] body .prose button.glossary-term:hover { color: #b8dca6 !important; }
-html[data-theme="dark"] body :is(.share-actions a, .share-actions button):hover { background: rgba(120, 162, 103, .22) !important; color: #b8dca6 !important; }
-html[data-theme="dark"] body .exam-toolbar #submit-exam:hover { background: #4f7a58 !important; }
-html[data-theme="dark"] body :is(.primary, .go-top, .share-toggle):hover { background: #0b916b !important; }
+html[data-theme="dark"] body :is(button, a):hover { color: #69d7f2; }
+html[data-theme="dark"] body .prose button.glossary-term:hover { color: #69d7f2 !important; }
+html[data-theme="dark"] body :is(.share-actions a, .share-actions button):hover { background: rgba(66, 202, 234, .22) !important; color: #69d7f2 !important; }
+html[data-theme="dark"] body .exam-toolbar #submit-exam:hover { background: #075c73 !important; }
+html[data-theme="dark"] body :is(.primary, .go-top, .share-toggle):hover { background: #086b84 !important; }
 
 /* Quy tắc chung "button:hover, a:hover" đổi màu chữ khi rê chuột; các thành phần có nền màu riêng giữ nguyên màu chữ của chúng. */
 :is(.practice-page, .writing-page, .pg-game) :is([aria-pressed="true"], [aria-selected="true"]):hover,
@@ -51,6 +51,6 @@ html[data-theme="dark"] body :is(.primary, .go-top, .share-toggle):hover { backg
 .practice-page :is(.pg-controls, .pg-topic-tools, .pg-actions) :is(button, button.primary):hover,
 .wr-tools button:hover { color: #fff; }
 :is(.pg-tilebtn, .pg-m, .game-banner, .pg-level):hover { color: #2b2147; }
-:is(.hub-card, .wr-tile, .wr-level):hover { color: var(--ink, #324736); }
+:is(.hub-card, .wr-tile, .wr-level):hover { color: var(--ink, #173449); }
 .wr-modes button:not([aria-pressed="true"]):hover, .wr-tabs button:not([aria-selected="true"]):hover, .pg-modes button:not([aria-selected="true"]):hover { color: var(--tone-green-dark); }
 .pg-icon:hover { color: #2b2147; }

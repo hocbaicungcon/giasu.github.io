@@ -1,4 +1,4 @@
-/* Open lesson layout inspired by Mathigon, with the site's coral/emerald palette. */
+/* Open lesson layout inspired by Mathigon, with the site's cyan/coral palette. */
 body .wrap{max-width:none;width:100%;padding-inline:clamp(16px,3vw,48px)}
 body .hero.wrap{border-radius:0;margin-inline:0}
 body main.lesson-course.article-wrap.wrap{padding-inline:clamp(20px,4vw,64px)}
@@ -16,45 +16,45 @@ body .card-art,body .related-card-art{border-radius:6px}
 body .home-learning,body .home-learning .subject-section{border:0;box-shadow:none;background:transparent}
 body.grading-page main{max-width:none;padding-inline:clamp(16px,3vw,48px)}
 body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important){border:0;box-shadow:none;border-radius:0;background:transparent}
-html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] body main.lesson-course.article-wrap.wrap{background:#101713;color:#e5eee6}
-html[data-theme="dark"] body .lesson-course .prose :is(blockquote.callout,.quiz,.geometry-lab,.practice-card,.lesson-exploration,.quiz-explanation,.lesson-progress){background:transparent;border:0;color:#e5eee6}
-html[data-theme="dark"] body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important){background:transparent;border:0;color:#e5eee6}
+html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] body main.lesson-course.article-wrap.wrap{background:#0d1b29;color:#e6f3fa}
+html[data-theme="dark"] body .lesson-course .prose :is(blockquote.callout,.quiz,.geometry-lab,.practice-card,.lesson-exploration,.quiz-explanation,.lesson-progress){background:transparent;border:0;color:#e6f3fa}
+html[data-theme="dark"] body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important){background:transparent;border:0;color:#e6f3fa}
 html[data-theme="dark"] body :is(.card,.related-card,.home-learning){background:transparent}
 .probability-sort{margin-block:28px 44px}
 .sort-scale{display:flex;justify-content:space-between;gap:16px;font-size:.875rem;color:var(--muted);margin:14px 0 10px}
 body .sort-events{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-width:100%}
-body .sort-events .sort-event{display:flex;align-items:center;gap:10px;min-height:58px;margin:0;padding:8px 12px 8px 6px;border:0;border-radius:6px;background:#edf6ef;color:#263531;font-size:1rem;line-height:1.45;transition:background .15s}
-body .sort-event.is-dragging{background:#d4eadc;outline:2px solid #087858;z-index:1;cursor:grabbing}
+body .sort-events .sort-event{display:flex;align-items:center;gap:10px;min-height:58px;margin:0;padding:8px 12px 8px 6px;border:0;border-radius:6px;background:#daf2fa;color:#173449;font-size:1rem;line-height:1.45;transition:background .15s}
+body .sort-event.is-dragging{background:#b8e7f5;outline:2px solid #087d98;z-index:1;cursor:grabbing}
 .sort-event-text{flex:1;min-width:0}
 .sort-event svg{width:20px;height:20px;display:block;flex:none}
-.sort-event-icon{color:#d94e48;flex:none}
+.sort-event-icon{color:#c33f4c;flex:none}
 .sort-position{color:var(--muted);font-size:.875rem;width:16px;text-align:center;flex:none}
-body .sort-event :is(.sort-handle,.sort-moves button){display:flex;align-items:center;justify-content:center;width:32px;min-height:32px;padding:4px;border:0;background:transparent;color:#087858;border-radius:0;flex:none}
+body .sort-event :is(.sort-handle,.sort-moves button){display:flex;align-items:center;justify-content:center;width:32px;min-height:32px;padding:4px;border:0;background:transparent;color:#087d98;border-radius:0;flex:none}
 body .sort-event .sort-handle{touch-action:none;cursor:grab}
 body .sort-event .sort-handle svg{stroke-width:4}
 .sort-moves{display:flex;gap:2px}
 body .sort-event .sort-moves button:disabled{opacity:.3;cursor:default;background:transparent}
 .sort-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .sort-feedback{min-height:1.5em;font-size:.9375rem;color:var(--muted)}
-.probability-sort.is-correct .sort-feedback{color:#087858}
+.probability-sort.is-correct .sort-feedback{color:#087d98}
 .sort-explanation{padding:8px 0;font-size:1rem}
-html[data-theme="dark"] body .sort-events .sort-event{background:#203329;color:#e5eee6}
-html[data-theme="dark"] body .sort-event.is-dragging{background:#2c4936;outline-color:#83e0ba}
-html[data-theme="dark"] body .sort-event :is(.sort-handle,.sort-moves button){color:#83e0ba;background:transparent}
-html[data-theme="dark"] body .sort-event-icon{color:#ff9a8d}
-html[data-theme="dark"] body .probability-sort.is-correct .sort-feedback{color:#83e0ba}
+html[data-theme="dark"] body .sort-events .sort-event{background:#1b3d51;color:#e6f3fa}
+html[data-theme="dark"] body .sort-event.is-dragging{background:#24546b;outline-color:#69d7f2}
+html[data-theme="dark"] body .sort-event :is(.sort-handle,.sort-moves button){color:#69d7f2;background:transparent}
+html[data-theme="dark"] body .sort-event-icon{color:#fd827b}
+html[data-theme="dark"] body .probability-sort.is-correct .sort-feedback{color:#69d7f2}
 @media(max-width:620px){body .sort-events .sort-event{gap:6px;padding:8px 6px;font-size:.9375rem;min-height:64px}.sort-moves{flex-direction:column;gap:0}body .sort-event .sort-moves button{min-height:28px;height:28px;width:28px}.sort-position{display:none}}
-body .probability-sort .sort-actions button{background:#087858;color:#fff;border:0;padding:8px 14px}
-body .probability-sort .sort-actions button:hover{background:#056047;color:#fff}
-body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#087858}
-html[data-theme="dark"] body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#83e0ba}
-html[data-theme="dark"] body .number-line-figure svg{color:#83e0ba}
+body .probability-sort .sort-actions button{background:#087d98;color:#fff;border:0;padding:8px 14px}
+body .probability-sort .sort-actions button:hover{background:#075c73;color:#fff}
+body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#087d98}
+html[data-theme="dark"] body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#69d7f2}
+html[data-theme="dark"] body .number-line-figure svg{color:#69d7f2}
 body:has(.lesson-course) footer.wrap{width:auto}
 /* Matching class and subject links: a soft colour surface without an outline. */
-body .home-learning .grade-nav-list .grade-nav-item,body .home-learning .subject-picks .subject-pick{border:0;box-shadow:none;background:#edf6ef;color:#14583f;border-radius:6px;min-height:42px;padding:8px 6px;font-weight:600}
-body .home-learning .grade-nav-list .grade-nav-item:hover,body .home-learning .grade-nav-list .grade-nav-item.active,body .home-learning .subject-picks .subject-pick:hover{background:#d4eadc;color:#104b3c;border:0}
-html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:#203329;color:#d8efdd;border:0}
-html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item:hover,html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item.active,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:#2c4936;color:#ffe5b5;border:0}
+body .home-learning .grade-nav-list .grade-nav-item,body .home-learning .subject-picks .subject-pick{border:0;box-shadow:none;background:#daf2fa;color:#10536e;border-radius:6px;min-height:42px;padding:8px 6px;font-weight:600}
+body .home-learning .grade-nav-list .grade-nav-item:hover,body .home-learning .grade-nav-list .grade-nav-item.active,body .home-learning .subject-picks .subject-pick:hover{background:#b8e7f5;color:#0a3e55;border:0}
+html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:#1b3d51;color:#d9f3fc;border:0}
+html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item:hover,html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item.active,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:#24546b;color:#69d7f2;border:0}
 /* Quieter course typography; colour marks the ideas, spacing separates sections. */
 body .lesson-course .article-heading h1{font-weight:600;letter-spacing:-.02em;line-height:1.2;margin-block:12px 18px}
 body .lesson-course .prose :is(h2,h3){font-weight:600;letter-spacing:0}
@@ -79,14 +79,14 @@ body header .grading-link svg{width:16px;height:16px}
 body header .display-toggle{width:32px;height:32px}
 body.grading-page header{height:var(--site-header-height)}
 body .lesson-course .article-toc{top:var(--site-header-height)}
-html[data-theme="dark"] body header nav#site-menu{background:transparent;color:#edf4e9}
-html[data-theme="dark"] body header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button){background:transparent;color:#edf4e9;border:0;-webkit-text-fill-color:currentColor}
-html[data-theme="dark"] body header nav#site-menu .nav-exams[open]>summary,html[data-theme="dark"] body header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button):hover{background:transparent;color:#ffe5b5;border:0;text-decoration:none}
-html[data-theme="dark"] body header nav#site-menu .nav-submenu{background:#17251c;color:#edf4e9;border:0}
-html[data-theme="dark"] body header nav#site-menu .nav-submenu a{background:transparent;color:#edf4e9;border:0;-webkit-text-fill-color:currentColor;text-decoration:none}
-html[data-theme="dark"] body header nav#site-menu .nav-submenu a:hover,html[data-theme="dark"] body header nav#site-menu .nav-submenu a:focus-visible{background:transparent;color:#ffe5b5;border:0;text-decoration:none}
-html[data-theme="dark"] body header .display-settings .display-controls{background:#17251c;color:#edf4e9}
-@media(max-width:950px){body.menu-open header nav#site-menu{top:var(--site-header-height);max-height:calc(100dvh - var(--site-header-height))}html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#0c120f}html[data-theme="dark"] body.menu-open header nav#site-menu .display-settings .display-controls{background:transparent}}
+html[data-theme="dark"] body header nav#site-menu{background:transparent;color:#edf7fc}
+html[data-theme="dark"] body header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button){background:transparent;color:#edf7fc;border:0;-webkit-text-fill-color:currentColor}
+html[data-theme="dark"] body header nav#site-menu .nav-exams[open]>summary,html[data-theme="dark"] body header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button):hover{background:transparent;color:#69d7f2;border:0;text-decoration:none}
+html[data-theme="dark"] body header nav#site-menu .nav-submenu{background:#132f42;color:#edf7fc;border:0}
+html[data-theme="dark"] body header nav#site-menu .nav-submenu a{background:transparent;color:#edf7fc;border:0;-webkit-text-fill-color:currentColor;text-decoration:none}
+html[data-theme="dark"] body header nav#site-menu .nav-submenu a:hover,html[data-theme="dark"] body header nav#site-menu .nav-submenu a:focus-visible{background:transparent;color:#69d7f2;border:0;text-decoration:none}
+html[data-theme="dark"] body header .display-settings .display-controls{background:#132f42;color:#edf7fc}
+@media(max-width:950px){body.menu-open header nav#site-menu{top:var(--site-header-height);max-height:calc(100dvh - var(--site-header-height))}html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#091824}html[data-theme="dark"] body.menu-open header nav#site-menu .display-settings .display-controls{background:transparent}}
 @media(max-width:620px){body header .nav.wrap,body:has(.lesson-course) header .nav.wrap{gap:8px}body header .brand,body:has(.lesson-course) header .brand{font-size:.875rem}body header .menu-toggle{min-height:40px}}
 
 /* Light-theme lesson lists have a visible individual card boundary. */

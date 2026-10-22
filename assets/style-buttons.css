@@ -1,19 +1,19 @@
 /* Shared compact controls, with explicit action and disabled states. */
 .ui-icon{display:inline-block;width:1.1em;height:1.1em;vertical-align:-.16em;flex:none}
 .callout-icon{display:inline-flex;align-items:center}
-body :is(button.primary,a.primary,.button.primary){background:var(--button-primary,#087858);color:#fff;padding:8px 15px;border-radius:9px}
-body :is(button.primary,a.primary,.button.primary):hover{background:var(--button-primary-hover,#056047);color:#fff}
+body :is(button.primary,a.primary,.button.primary){background:var(--button-primary,#087d98);color:#fff;padding:8px 15px;border-radius:9px}
+body :is(button.primary,a.primary,.button.primary):hover{background:var(--button-primary-hover,#075c73);color:#fff}
 body :is(.quiz-reset,.lesson-practice button,.geometry-controls button){padding:7px 12px;border-radius:9px}
-body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button){background:var(--button-secondary,#edf6ef);color:var(--button-secondary-ink,#14583f);border-color:#cad8c1;padding:7px 12px;border-radius:8px}
-body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button):hover{background:var(--button-secondary-hover,#d6eddf);color:#2d5533}
-body.grading-page :is(.primary,#scanCameraButton){background:var(--button-primary,#087858);color:#fff;padding:8px 15px;border-radius:9px}
-body.grading-page :is(.primary,#scanCameraButton):hover{background:var(--button-primary-hover,#056047);color:#fff}
-body.grading-page .key-choices button[aria-pressed="true"]{background:var(--button-primary,#087858);border-color:var(--button-primary,#087858);color:#fff}
-body.grading-page .mobile-nav button[aria-current="page"]{background:var(--button-secondary-hover,#d6eddf);color:#2d5533;border-radius:8px}
+body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button){background:var(--button-secondary,#daf2fa);color:var(--button-secondary-ink,#10536e);border-color:#cad8c1;padding:7px 12px;border-radius:8px}
+body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button):hover{background:var(--button-secondary-hover,#b8e7f5);color:#2d5533}
+body.grading-page :is(.primary,#scanCameraButton){background:var(--button-primary,#087d98);color:#fff;padding:8px 15px;border-radius:9px}
+body.grading-page :is(.primary,#scanCameraButton):hover{background:var(--button-primary-hover,#075c73);color:#fff}
+body.grading-page .key-choices button[aria-pressed="true"]{background:var(--button-primary,#087d98);border-color:var(--button-primary,#087d98);color:#fff}
+body.grading-page .mobile-nav button[aria-current="page"]{background:var(--button-secondary-hover,#b8e7f5);color:#2d5533;border-radius:8px}
 body.grading-page :is(.small.danger,#deleteExamKey,#deleteAllKeys){background:#fff5f2;color:#9b463d;border-color:#e7c7c0;border-radius:8px}
 body.grading-page :is(.small.danger,#deleteExamKey,#deleteAllKeys):hover{background:#f8e4de;color:#85352d}
 body.grading-page :is(.button,.small,.manual-key-form button,.key-choices button,#scanCameraButton,#deleteExamKey,#deleteAllKeys):disabled{background:#edf0e8;color:#737c6d;border-color:#dde3d5;opacity:1;cursor:not-allowed;box-shadow:none}
-body :is(button,a.primary,.button):focus-visible{outline:2px solid var(--button-primary,#087858);outline-offset:3px}
+body :is(button,a.primary,.button):focus-visible{outline:2px solid var(--button-primary,#087d98);outline-offset:3px}
 @media(max-width:600px){body :is(button.primary,a.primary,.button.primary,.quiz-reset){min-height:40px}body.grading-page :is(.small,.button){min-height:40px}}
 /* Compact text fields; choice controls and file inputs retain their geometry. */
 body :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]),textarea,select){padding:7px 10px;border-radius:9px}
@@ -29,7 +29,7 @@ body.grading-page #answers .grid-answers{grid-template-columns:repeat(10,minmax(
 body.grading-page #answers .part2grid{grid-template-columns:repeat(8,minmax(0,1fr))}
 body.grading-page #answers .part3grid{grid-template-columns:repeat(6,minmax(0,1fr))}
 body.grading-page #answers .answer-item{display:flex;align-items:center;min-width:0;min-height:0;gap:3px;padding:2px 4px;border-radius:5px;font-size:14px;line-height:1.2}
-body.grading-page #answers .answer-item>span{position:static;flex:0 0 auto;min-width:0;padding:0;border:0;background:transparent;color:#087858;font-size:11px;line-height:1.2;font-weight:700;white-space:nowrap}
+body.grading-page #answers .answer-item>span{position:static;flex:0 0 auto;min-width:0;padding:0;border:0;background:transparent;color:#087d98;font-size:11px;line-height:1.2;font-weight:700;white-space:nowrap}
 body.grading-page #answers .answer-item select,
 body.grading-page #answers .answer-item input{box-sizing:border-box;flex:1 1 0;width:0;min-width:0;max-width:100%;height:26px;min-height:26px;margin:0;padding:0 1px;border-radius:3px;font-size:14px;line-height:1.2;text-align:center}
 body.grading-page #answers .answer-item select{text-align-last:center}
@@ -56,8 +56,8 @@ body.grading-page #results .scorebar>div:first-child strong{font-size:36px;line-
 
 /* Fill the gap directly in the sentence using a keyboard-accessible list. */
 body .practice-cloze{display:block;margin:16px 0}
-body .practice-cloze .practice-gap-select{display:inline-block;max-width:100%;width:auto;min-height:32px;padding:2px 20px 2px 6px;border:0;border-bottom:2px dotted #78a267;background:#f0f6e9;color:var(--button-primary-hover,#056047);font:600 1em/1.4 "Source Sans Pro",sans-serif;vertical-align:baseline;cursor:pointer;border-radius:6px}
-body .practice-cloze .practice-gap-select:focus-visible{outline:2px solid var(--button-primary,#087858);outline-offset:2px}
+body .practice-cloze .practice-gap-select{display:inline-block;max-width:100%;width:auto;min-height:32px;padding:2px 20px 2px 6px;border:0;border-bottom:2px dotted #1688a5;background:#f0f6e9;color:var(--button-primary-hover,#075c73);font:600 1em/1.4 "Source Sans Pro",sans-serif;vertical-align:baseline;cursor:pointer;border-radius:6px}
+body .practice-cloze .practice-gap-select:focus-visible{outline:2px solid var(--button-primary,#087d98);outline-offset:2px}
 
 /* Mobile form fields keep their readable size when focused (including landscape). */
 @media(max-width:1000px),(hover:none) and (pointer:coarse){

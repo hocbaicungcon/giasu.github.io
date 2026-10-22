@@ -5,7 +5,7 @@ html{scroll-padding-top:72px}
 body{font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;font-size:18px;background:var(--paper);color:var(--ink)}
 html:not([data-font="cmu"]):not([data-font="stix"]):not([data-font="serif"]) :is(h1,h2,h3,h4,.prose,.hero h1,.section-heading h2,.related-header h2,.related-card-body h3){font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;letter-spacing:0}
 body :is(.hero,.subject-section,.library-page-header){background:transparent;box-shadow:none!important;border-radius:16px}
-body .hero h1{font-weight:700;line-height:1.15;color:#112216}
+body .hero h1{font-weight:700;line-height:1.15;color:var(--ink)}
 body :is(.article-wrap,.fun-page,.exam-page){border:0;border-radius:16px;box-shadow:none!important;background:transparent}
 body :is(.card,.related-card){border:1.5px solid var(--line);border-radius:14px;background:var(--card-bg,#fff);box-shadow:none!important;overflow:hidden;transition:border-color .15s ease,background-color .15s ease}
 body :is(.card,.related-card):hover{border-color:var(--teal,#1a6237);background:#f7fbf5;box-shadow:none!important;transform:none}
@@ -22,7 +22,7 @@ body .prose .geometry-lab{border:1.5px solid var(--line);border-radius:16px;padd
 body .quiz{padding:22px;margin-block:28px;border:1.5px solid var(--line);border-radius:16px;background:var(--card-bg,#fff);box-shadow:none!important}
 body .quiz-option{border:1.5px solid var(--line);border-radius:10px;padding:11px 15px;background:#f6f9f4;margin-block:6px;transition:all .15s ease;box-shadow:none!important}
 body .quiz-option:hover{background:#edf5e8;border-color:var(--teal,#1a6237)}
-body .quiz-option:has(input:checked){background:#dfefe0;border-color:var(--teal,#1a6237);border-width:2px;color:#112216;font-weight:600;box-shadow:none!important}
+body .quiz-option:has(input:checked){background:#dfefe0;border-color:var(--teal,#1a6237);border-width:2px;color:var(--ink);font-weight:600;box-shadow:none!important}
 body .quiz-explanation{padding:14px 18px;border:1.5px solid #bdd2b5;border-left:4px solid var(--teal,#1a6237);border-radius:10px;background:#eef6eb;margin-top:12px;box-shadow:none!important}
 body .practice-card{padding:18px 20px;border:1.5px solid var(--line);border-radius:14px;margin-block:16px;background:var(--card-bg,#fff);box-shadow:none!important}
 body .practice-answer{border-radius:10px;background:#eef6eb;padding:16px;border:1.5px solid #bdd2b5;border-left:4px solid var(--teal,#1a6237);margin-top:10px;box-shadow:none!important}
@@ -45,7 +45,7 @@ html[data-theme="dark"]{--paper:#172218;--ink:#e3ede1;--muted:#9db398;--line:#2c
 html[data-theme="dark"] body,html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] main.lesson-course.article-wrap{background:#172218;color:#dce7da}
 html[data-theme="dark"] :is(.lesson-course .article-heading h1,.lesson-course .article-heading>p,.lesson-course .prose h2,.lesson-course .prose h3,.lesson-course .prose h4){color:inherit}
 html[data-theme="dark"] body :is(.card,.related-card,.hero,.article-end,.practice-card,.glossary-toolbar){color:inherit}
-html[data-theme="dark"] body :is(.card,.related-card,.quiz,.practice-card,.prose details,.prose .geometry-lab){background:#1e2d1f;border-color:#2c402e}
+html[data-theme="dark"] body :is(.card,.related-card,.quiz,.practice-card,.prose details,.prose .geometry-lab){background:var(--card-bg);border-color:var(--line)}
 html[data-theme="dark"] body .quiz-option{background:#1a271c;border-color:#2c402e}
 html[data-theme="dark"] body .quiz-option:hover{background:#233526;border-color:var(--dark-line, #304237)}
 html[data-theme="dark"] body .quiz-option:has(input:checked){background:#25422d;border-color:var(--dark-line, #304237);color:#f0fdf4}

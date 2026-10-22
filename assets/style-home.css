@@ -1,9 +1,9 @@
 /* credit: giasu.ai.vn */
 /* Trang chủ: banner game ngay sau hero và hero gọn trên điện thoại */
 
-.game-banner { position: relative; display: flex; align-items: center; flex-wrap: nowrap; gap: clamp(10px, 2.4vw, 22px); min-height: 0; margin: 0 auto; padding: 8px clamp(14px, 3vw, 28px) 14px; overflow: hidden; isolation: isolate; text-decoration: none; color: #2b2147; border-radius: 0; background: linear-gradient(180deg, #8fd8ff 0%, #d4f3ff 100%); box-shadow: none; font-family: "Baloo 2", ui-rounded, "Trebuchet MS", "Source Sans Pro", sans-serif; }
-.game-banner::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; z-index: -1; background: #8fdc7c; }
-.game-banner:hover .gb-go { background: #4fd16f; }
+.game-banner { position: relative; display: flex; align-items: center; flex-wrap: nowrap; gap: clamp(10px, 2.4vw, 22px); min-height: 0; margin: 0 auto; padding: 8px clamp(14px, 3vw, 28px) 14px; overflow: hidden; isolation: isolate; text-decoration: none; color: #2b2147; border-radius: 0; background: linear-gradient(180deg, #42caea 0%, #c4edf8 100%); box-shadow: none; font-family: "Baloo 2", ui-rounded, "Trebuchet MS", "Source Sans Pro", sans-serif; }
+.game-banner::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; z-index: -1; background: #fd827b; }
+.game-banner:hover .gb-go { background: #075c73; }
 .game-banner:focus-visible { outline: 4px solid #2b2147; outline-offset: -4px; }
 .gb-sky { position: relative; flex: none; width: 118px; height: 50px; }
 .gb-pet { position: absolute; bottom: -2px; width: 44px; height: auto; animation: pg-float 2.6s ease-in-out infinite; }
@@ -15,7 +15,7 @@
 .gb-kicker { font-size: 12px; font-weight: 800; letter-spacing: .12em; color: #7c4dff; }
 .gb-text strong { font-size: clamp(20px, 3.6vw, 26px); line-height: 1.2; font-weight: 800; background: linear-gradient(90deg, #ff5c8a, #ff9800, #7c4dff); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .gb-sub { font-size: 15px; font-weight: 600; color: #3d3463; }
-.gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 800; color: #fff; background: #43c463; border-radius: 999px; box-shadow: 0 3px 0 #2a9a47; white-space: nowrap; }
+.gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 800; color: #fff; background: #087d98; border-radius: 999px; box-shadow: 0 3px 0 #075c73; white-space: nowrap; }
 @keyframes gb-fly { 0%, 100% { transform: translate(0, 0) rotate(0); } 50% { transform: translate(-10px, -8px) rotate(-6deg); } }
 @media (max-width: 900px) { .gb-sub { display: none; } }
 @media (max-width: 520px) {
