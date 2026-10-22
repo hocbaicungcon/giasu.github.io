@@ -36,7 +36,7 @@ Mời thầy cô và các em học sinh tham khảo 50 đề Toán 12 học kì 
 - [CK2.Toan12.THPT Lê Minh Xuân.86](https://drive.google.com/file/d/1W4mnusSL_z3ApIhu3m-89yK3syxnnErw/view?usp=sharing)
 - [CK2.Toan12.THPT Long Thới.146](https://drive.google.com/file/d/1D-dOtx26ss5-KuR7-hXZCST9eoFOqHn6/view?usp=sharing)
 - [CK2.Toan12.THPT Long Trường.194](https://drive.google.com/file/d/17VddjW4i4UTuPKZgTN2QE4KSPxKUpczi/view?usp=sharing)
-- [CK2.Toan12.THPT Mạc Đĩnh Chi.32](#drive-pending-CK2.Toan12.THPT-Mac-Dinh-Chi.32.docx)
+- [CK2.Toan12.THPT Mạc Đĩnh Chi.32](https://drive.google.com/file/d/1NbOeCwmRYmOUBsmtY3mEpHhd4EcmxCgO/view?usp=sharing)
 - [CK2.Toan12.THPT Marie Curie.14](https://drive.google.com/file/d/1Ge9m0_65Ts1SMDQa9rFxQ8GgnRE79AeX/view?usp=sharing)
 - [CK2.Toan12.THPT Nam Kỳ Khởi Nghĩa.65](https://drive.google.com/file/d/1eYY-dD71SGh7umR1C9DpCG_1Y4bqHzUc/view?usp=sharing)
 - [CK2.Toan12.THPT Nguyễn Khuyến.56](https://drive.google.com/file/d/1JO876pH3NEiEiahR4zxVTE10Nu_ONe02/view?usp=sharing)
