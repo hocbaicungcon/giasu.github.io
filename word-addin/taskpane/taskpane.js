@@ -179,7 +179,7 @@ $('conv-dst').addEventListener('change', syncConvertUi);
 syncConvertUi();
 
 async function paragraphsToProcess(scope, onProgress, { kinds: wanted, signal } = {}) {
-  if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress, { signal }) };
+  if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readConversionParagraphs(wanted, onProgress, { signal, scope: { kind: 'selection' } }) };
   // Always use a fresh snapshot: a previous scan's indexes can be stale after editing in Word.
   return { scope: { kind: 'all' }, items: await io.readConversionParagraphs(wanted, onProgress, { signal }) };
 }
@@ -223,15 +223,35 @@ async function convert() {
   let phase = 'đọc tài liệu';
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
-    if (scopeName === 'all' && src === 'mathtype' && dst === 'word' && !$('opt-display').checked) {
+    if (scopeName === 'all' && (dst !== 'word' || !$('opt-display').checked)) {
+      const readStart = Date.now();
       const original = await io.readBody();
+      const readMs = Date.now() - readStart;
       await checkpoint();
+      const convertStart = Date.now();
       phase = 'giải mã và chuyển công thức';
       $('convert-summary').textContent = 'Đang chuyển công thức…';
       progress(bar, 1, 3);
       await new Promise(resolve => setTimeout(resolve, 0));
-      const result = convertMathTypeInPackage(original.pkg, { convertLatex: false });
+      let result;
+      if (dst === 'mathtype') {
+        const options = { ...mtConvertOptions(), defaultSize: (await mtOptions()).size };
+        await checkpoint();
+        const a = convertMathTypeInPackage(original.pkg, { convertMathType: normalize, convertLatex: src === 'latex', display: false });
+        const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...options, signal,
+          onProgress: (done, total) => {
+            progress(bar, done, total);
+            $('convert-summary').textContent = `Đang chuyển công thức ${done}/${total}…`;
+          } });
+        result = { ...b, pkg: b.changed ? b.pkg : a.pkg, changed: a.changed || b.changed,
+          converted: b.changed ? b.converted : a.converted, kept: [...a.kept, ...b.kept] };
+      } else if (dst === 'latex') {
+        result = convertEquationsToLatexText(original.pkg, { fromMathType: src === 'mathtype', fromNative: src === 'word' });
+      } else {
+        result = convertMathTypeInPackage(original.pkg, { convertMathType: src === 'mathtype', convertLatex: src === 'latex' });
+      }
       const reasons = {};
+      const convertMs = Date.now() - convertStart;
       result.kept.forEach(k => { reasons[k.reason] = (reasons[k.reason] || 0) + 1; });
       const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
       if (!result.changed) {
@@ -242,10 +262,13 @@ async function convert() {
       phase = 'ghi công thức vào Word';
       $('convert-summary').textContent = `Đang ghi ${result.converted} công thức vào Word…`;
       progress(bar, 2, 3);
+      const writeStart = Date.now();
       const res = await io.writeBodySnapshot(result.pkg, original.paragraphCount);
+      const writeMs = Date.now() - writeStart;
       afterWrite(res, { scope: { kind: 'body' }, pkg: original.pkg, paragraphCount: original.paragraphCount });
       progress(bar, 3, 3);
       $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${result.converted}</b> công thức; giữ nguyên ${result.kept.length}.</p>` +
+        `<p>Đọc ${(readMs / 1000).toFixed(1)} giây · chuyển ${(convertMs / 1000).toFixed(1)} giây · ghi ${(writeMs / 1000).toFixed(1)} giây.</p>` +
         (reasonList ? `<ul>${reasonList}</ul>` : '') +
         (res.before !== res.after ? '<p class="warn">Số đoạn đã thay đổi. Hãy kiểm tra bố cục; dùng Hoàn tác hoặc mở lại bản sao nếu cần.</p>' : '');
       return;

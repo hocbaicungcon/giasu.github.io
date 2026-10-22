@@ -50,7 +50,12 @@ export function attachObjects(pkg, docXml, objects) {
   out = out.replace(docPart.body, () => docPart.body.replace(/(<pkg:xmlData>)[\s\S]*(<\/pkg:xmlData>)/, (_m, a, c) => a + ensureNs(docXml.trimStart()) + c));
   const relsPart = splitParts(out).get('/word/_rels/document.xml.rels');
   const relXml = objects.flatMap((o) => o.rels).map((r) => `<Relationship Id="${r.id}" Type="${r.type}" Target="${r.target}"/>`).join('');
-  out = out.replace(relsPart.body, () => relsPart.body.replace('</Relationships>', relXml + '</Relationships>'));
+  if (relsPart) {
+    out = out.replace(relsPart.body, () => relsPart.body.replace(/<Relationships\b([^>]*?)\s*\/>/, '<Relationships$1></Relationships>').replace('</Relationships>', relXml + '</Relationships>'));
+  } else {
+    const rels = `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${relXml}</Relationships></pkg:xmlData></pkg:part>`;
+    out = out.replace('</pkg:package>', rels + '</pkg:package>');
+  }
   const partXml = objects.flatMap((o) => o.parts).map((p) => `<pkg:part pkg:name="${p.name}" pkg:contentType="${p.type}" pkg:compression="store"><pkg:binaryData>${b64(p.data)}</pkg:binaryData></pkg:part>`).join('');
   return out.replace('</pkg:package>', partXml + '</pkg:package>');
 }
@@ -81,15 +86,27 @@ export function detectFontPt(doc, span, stylesXml = '', fallback = 12) {
  * Replace the Word (OMML) equations of a package by MathType objects. render(latex) -> picture description.
  * Returns {pkg, converted, kept: [{reason, latex}], changed}.
  */
-export async function convertNativeToMathType(pkg, { render, style = 'times', font = null, size = 'auto', defaultSize = 12, vector = true, display = false } = {}) {
+export async function convertNativeToMathType(pkg, { render, style = 'times', font = null, size = 'auto', defaultSize = 12, vector = true, display = false, signal, onProgress = () => {} } = {}) {
   const scan = scanPackage(pkg);
   const styles = splitParts(pkg).get('/word/styles.xml')?.body || '';
   let doc = scan.doc;
   const result = { pkg, converted: 0, kept: [], changed: false };
   const edits = [], objects = [];
-  for (const eq of scan.equations) {
+  const native = scan.equations.filter(eq => eq.kind === 'native');
+  let completed = 0;
+  const checkpoint = () => {
+    if (signal?.aborted) {
+      const error = new Error('Đã hủy chuyển đổi.');
+      error.name = 'AbortError';
+      throw error;
+    }
+  };
+  for (const eq of native) {
+    checkpoint();
+    // Let the cancel button and progress paint even when rendering resolves immediately.
+    if (completed % 8 === 0) { await new Promise(resolve => setTimeout(resolve, 0)); checkpoint(); }
     if (eq.kind !== 'native') continue;
-    if (eq.latex === null) { result.kept.push({ reason: eq.error }); continue; }
+    if (eq.latex === null) { result.kept.push({ reason: eq.error }); onProgress(++completed, native.length); continue; }
     try {
       let [start, end] = eq.span;
       const pt = size === 'auto' ? detectFontPt(doc, eq.span, styles, defaultSize) : Number(size);
@@ -100,7 +117,9 @@ export async function convertNativeToMathType(pkg, { render, style = 'times', fo
       edits.push({ start, end, repl: obj.runXml });
       objects.push(obj);
     } catch (e) { result.kept.push({ reason: e.message, latex: eq.latex }); }
+    onProgress(++completed, native.length);
   }
+  checkpoint();
   if (!edits.length) return result;
   edits.sort((a, b) => b.start - a.start);
   for (const e of edits) doc = doc.slice(0, e.start) + e.repl + doc.slice(e.end);

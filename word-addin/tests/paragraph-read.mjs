@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
-import { readParagraphs } from '../src/word-io.js';
+import { readParagraphs, readConversionParagraphs } from '../src/word-io.js';
+import { makeEquationPackage } from '../src/ooxml.js';
 
 const previousWord = globalThis.Word, previousOffice = globalThis.Office;
 function host({ platform = 'Mac', failBatch = false, badIndex = -1 } = {}) {
@@ -8,7 +9,7 @@ function host({ platform = 'Mac', failBatch = false, badIndex = -1 } = {}) {
   globalThis.Word = { run: fn => {
     contexts++;
     let queued = [];
-    const coll = { load() {}, items: Array.from({ length: 3 }, (_, index) => ({
+    const coll = { load(properties) { assert.equal(properties, 'items/$none', 'do not fetch unused paragraph properties'); }, items: Array.from({ length: 3 }, (_, index) => ({
       getOoxml() {
         paragraphCalls++;
         if (platform === 'Mac') throw new Error('Paragraph.getOoxml unsupported');
@@ -45,6 +46,20 @@ try {
   const cancelled = host();
   await assert.rejects(readParagraphs({ kind: 'all' }, undefined, { signal: { aborted: true } }), { name: 'AbortError' });
   assert.equal(cancelled.contexts, 0);
+  let syncs = 0;
+  const pkg = makeEquationPackage('').replace('<w:p></w:p>', '<w:p><w:r><w:t>$1$</w:t></w:r></w:p><w:p><w:r><w:t>$2$</w:t></w:r></w:p>');
+  const wholeRange = { expandTo(other) { assert.equal(other, wholeRange); return this; }, getOoxml: () => ({ value: pkg }) };
+  const paragraph = { getRange(mode) { assert.equal(mode, 'Whole'); return wholeRange; } };
+  globalThis.Word = { run: fn => fn({
+    document: { getSelection: () => ({
+      getOoxml() { assert.fail('partial selection must not replace text outside the selection'); },
+      paragraphs: { load(properties) { assert.equal(properties, 'items/$none'); }, items: [{}, {}], getFirst: () => paragraph, getLast: () => paragraph },
+    }) },
+    async sync() { syncs++; },
+  }) };
+  const selected = await readConversionParagraphs(new Set(['latex']), undefined, { scope: { kind: 'selection' } });
+  assert.deepEqual(selected.map(it => it.index), [0, 1]);
+  assert.equal(syncs, 1, 'a simple selection needs one Word round trip');
 } finally {
   globalThis.Word = previousWord; globalThis.Office = previousOffice;
 }

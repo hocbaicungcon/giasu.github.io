@@ -38,12 +38,11 @@ async function run(fn) { return Word.run(fn); }
 export async function readBody({ scanOnly = false } = {}) {
   if (typeof Office !== 'undefined' && Office.context?.document?.getFileAsync && canReadCompressed()) {
     try {
-      const pkg = await readCompressedPackage({ scanOnly });
-      const paragraphCount = await run(async context => {
+      const [pkg, paragraphCount] = await Promise.all([readCompressedPackage({ scanOnly }), run(async context => {
         const paragraphs = context.document.body.paragraphs;
-        paragraphs.load('items'); await context.sync();
+        paragraphs.load('items/$none'); await context.sync();
         return paragraphs.items.length;
-      });
+      })]);
       lastReadRoute = 'DOCX (getFileAsync)';
       return { pkg, paragraphCount };
     } catch (error) { lastReadRoute = 'OOXML dự phòng: ' + error.message; }
@@ -53,7 +52,7 @@ export async function readBody({ scanOnly = false } = {}) {
   return run(async (context) => {
     const ox = context.document.body.getOoxml();
     const paras = context.document.body.paragraphs;
-    paras.load('items');
+    paras.load('items/$none');
     await context.sync();
     return { pkg: ox.value, paragraphCount: paras.items.length };
   });
@@ -62,29 +61,33 @@ export async function readBody({ scanOnly = false } = {}) {
 export async function selectionParagraphCount() {
   return run(async (context) => {
     const paras = context.document.getSelection().paragraphs;
-    paras.load('items');
+    paras.load('items/$none');
     await context.sync();
     return paras.items.length;
   });
 }
 
-export async function readSelection() {
+export async function readSelection({ wholeParagraphs = false } = {}) {
   return run(async (context) => {
     const sel = context.document.getSelection();
-    const ox = sel.getOoxml();
     const paras = sel.paragraphs;
-    paras.load('items');
+    // Conversion replaces entire paragraphs, including text outside a partial selection.
+    const range = wholeParagraphs
+      ? paras.getFirst().getRange('Whole').expandTo(paras.getLast().getRange('Whole'))
+      : sel;
+    const ox = range.getOoxml();
+    paras.load('items/$none');
     await context.sync();
     return { pkg: ox.value, paragraphCount: paras.items.length };
   });
 }
 
 /** One body snapshot for flat documents; preserve host paragraph semantics for complex layouts. */
-export async function readConversionParagraphs(kinds, onProgress = () => {}, { signal } = {}) {
+export async function readConversionParagraphs(kinds, onProgress = () => {}, { signal, scope = { kind: 'all' } } = {}) {
   checkCancelled(signal);
   let items;
   try {
-    const { pkg, paragraphCount } = await readBody();
+    const { pkg, paragraphCount } = await (scope.kind === 'selection' ? readSelection({ wholeParagraphs: true }) : readBody());
     checkCancelled(signal);
     items = paragraphPackages(pkg, paragraphCount, kinds);
   } catch (error) {
@@ -92,7 +95,7 @@ export async function readConversionParagraphs(kinds, onProgress = () => {}, { s
     /* A host may export individual paragraphs even when body export fails. */
   }
   if (items != null) { onProgress(items.length, items.length); return items; }
-  return readParagraphs({ kind: 'all' }, onProgress, { signal });
+  return readParagraphs(scope, onProgress, { signal });
 }
 
 /** OOXML around the cursor: the selection, its first paragraph, and that paragraph's start up to the selection start. */
@@ -113,24 +116,27 @@ async function readCursorContextRanges() {
     return await run(async (context) => {
       const sel = context.document.getSelection();
       const para = sel.paragraphs.getFirst();
+      if (sel.load) sel.load('isEmpty');
       const selOx = sel.getOoxml();
-      const paraOx = para.getOoxml();
+      const paraOx = para.getRange('Whole').getOoxml();
       const beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml();
+      const afterOx = sel.getRange('Start').expandTo(para.getRange('End')).getOoxml();
       await context.sync();
-      return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value };
+      return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value, afterPkg: afterOx.value, selectionEmpty: sel.isEmpty };
     });
   } catch { /* fall back to the step-by-step read below */ }
   return run(async (context) => {
     const sel = context.document.getSelection();
+    if (sel.load) sel.load('isEmpty');
     const selOx = sel.getOoxml();
     const paras = sel.paragraphs;
-    paras.load('items');
+    paras.load('items/$none');
     await context.sync();
     const para = paras.items[0];
-    const paraOx = para ? para.getOoxml() : null;
+    const paraOx = para ? para.getRange('Whole').getOoxml() : null;
     // Resolve the useful data before the optional range operation can fail at sync().
     await context.sync();
-    const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null };
+    const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null, afterPkg: null, selectionEmpty: sel.isEmpty };
     try {
       if (para) {
         const beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml();
@@ -138,6 +144,13 @@ async function readCursorContextRanges() {
         result.beforePkg = beforeOx.value;
       }
     } catch { /* cursor range unavailable: keep the selection and paragraph */ }
+    try {
+      if (para) {
+        const afterOx = sel.getRange('Start').expandTo(para.getRange('End')).getOoxml();
+        await context.sync();
+        result.afterPkg = afterOx.value;
+      }
+    } catch { /* prefix alone may still locate the equation */ }
     return result;
   });
 }
@@ -165,7 +178,7 @@ export async function readParagraphs(scope, onProgress = () => {}, { signal } = 
   checkCancelled(signal);
   return run(async (context) => {
     const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
-    coll.load('items');
+    coll.load('items/$none');
     await context.sync();
     const idx = scope.kind === 'indexes' ? scope.indexes : coll.items.map((_p, i) => i);
     const out = [];
@@ -188,7 +201,7 @@ export async function readParagraphs(scope, onProgress = () => {}, { signal } = 
           try {
             const pkg = await run(async retry => {
               const paragraphs = scope.kind === 'selection' ? retry.document.getSelection().paragraphs : retry.document.body.paragraphs;
-              paragraphs.load('items');
+              paragraphs.load('items/$none');
               await retry.sync();
               const p = paragraphs.items[k];
               if (!p) throw new Error('Vị trí đoạn đã thay đổi. Hãy đọc lại tài liệu.');
@@ -220,9 +233,9 @@ export async function writeParagraphs(scope, items, mode, onProgress = () => {},
   checkCancelled(signal);
   return run(async (context) => {
     const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
-    coll.load('items');
+    coll.load('items/$none');
     const all = context.document.body.paragraphs;
-    all.load('items');
+    all.load('items/$none');
     await context.sync();
     const before = all.items.length;
     const ordered = [...items].sort((a, b) => b.index - a.index);
@@ -261,7 +274,7 @@ export async function writeParagraphs(scope, items, mode, onProgress = () => {},
       if (signal && i < ordered.length) await new Promise(resolve => setTimeout(resolve, 0));
     }
     const again = context.document.body.paragraphs;
-    again.load('items');
+    again.load('items/$none');
     await context.sync();
     return { before, after: again.items.length };
   });
@@ -270,7 +283,7 @@ export async function writeParagraphs(scope, items, mode, onProgress = () => {},
 export async function selectParagraph(index) {
   return run(async (context) => {
     const paras = context.document.body.paragraphs;
-    paras.load('items');
+    paras.load('items/$none');
     await context.sync();
     if (paras.items[index]) paras.items[index].select();
     await context.sync();
@@ -298,7 +311,7 @@ export async function writeBodySnapshot(pkg, before) {
     body.insertOoxml(pkg, 'Replace');
     // Load the post-write count in the same sync, after the insertion command.
     const paragraphs = body.paragraphs;
-    paragraphs.load('items');
+    paragraphs.load('items/$none');
     await context.sync();
     return { before, after: paragraphs.items.length };
   });

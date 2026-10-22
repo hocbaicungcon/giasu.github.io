@@ -251,7 +251,7 @@ function isLikelyLatex(rawInner) {
   const s = rawInner.trim();
   if (!s) return false;
   if (s.includes('\\')) return true;
-  if (/^\d+([.,]\d+)?$/.test(s)) return false;
+  if (/^\d+([.,]\d+)?$/.test(s)) return true;
   if (/[=+\-*/^_<>≤≥≠≈∈∉⊂⊃∪∩∅√∫∑∏~()]/.test(s)) return true;
   if (/^[a-zA-Z0-9_'^]+$/.test(s)) return true;
   return false;

@@ -55,6 +55,7 @@ try {
   let closes = 0, exports = 0, fallbacks = 0, inserts = 0, syncs = 0, failSlice = false;
   globalThis.Office = { context: { diagnostics: { platform: 'Mac' }, document: {
     getFileAsync(type, _opts, cb) {
+      assert.equal(_opts.sliceSize, 4 * 1024 * 1024, 'desktop exports use fewer file slices');
       assert.equal(type, 'compressed'); exports++;
       cb({ status: 'succeeded', value: {
         size: compressed.length, sliceCount: 2,

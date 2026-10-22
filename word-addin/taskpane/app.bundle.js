@@ -757,7 +757,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return { rows };
   }
-  var LatexError, BS, has, cp, CMD, GREEK, SPACE_CMD, NARY_OPS, SIDE_LIMITS, LIMIT_FUNCS, FUNCS, ACCENT, LONG_ARROW, BB, FENCE_NAMES, REL, ADD, SEP, MUL, Parser, opChar, isLetterRun, FONT, val, e, normalizeNodes;
+  var LatexError, BS, has, cp, CMD, GREEK, SPACE_CMD, NARY_OPS, SIDE_LIMITS, LIMIT_FUNCS, FUNCS, ACCENT, LONG_ARROW, BB, FENCE_NAMES, REL, ADD, SEP, MUL, UNIT, Parser, opChar, isLetterRun, FONT, val, e, normalizeNodes;
   var init_latex2omml = __esm({
     "src/latex2omml.js"() {
       init_tables();
@@ -863,6 +863,44 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       ADD = /* @__PURE__ */ new Set([..."+-\u2212\xB1\u2213"]);
       SEP = /* @__PURE__ */ new Set([",", ";"]);
       MUL = /* @__PURE__ */ new Set([..."\xD7\u22C5\xB7\xF7\u2217"]);
+      UNIT = {
+        second: "s",
+        meter: "m",
+        metre: "m",
+        gram: "g",
+        kilogram: "kg",
+        ampere: "A",
+        kelvin: "K",
+        mole: "mol",
+        candela: "cd",
+        hertz: "Hz",
+        newton: "N",
+        pascal: "Pa",
+        joule: "J",
+        watt: "W",
+        coulomb: "C",
+        volt: "V",
+        ohm: "\u03A9",
+        liter: "L",
+        litre: "L",
+        minute: "min",
+        hour: "h",
+        radian: "rad",
+        degree: "\xB0",
+        celsius: "\xB0C",
+        degreeCelsius: "\xB0C",
+        percent: "%",
+        kilo: "k",
+        mega: "M",
+        giga: "G",
+        milli: "m",
+        centi: "c",
+        micro: "\u03BC",
+        nano: "n",
+        per: "/",
+        squared: "^{2}",
+        cubed: "^{3}"
+      };
       Parser = class _Parser {
         constructor(src) {
           this.s = src;
@@ -1014,6 +1052,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           return this.command(name);
         }
         command(name) {
+          if (name === "qty" || name === "SI" || name === "si" || name === "unit") {
+            const value = name === "qty" || name === "SI" ? this.arg() : null;
+            const source = this.raw().replace(/\\([A-Za-z]+)/g, (raw, command) => has(UNIT, command) ? UNIT[command] : raw);
+            const parser = new _Parser(source);
+            const units = parser.seq();
+            if (!parser.eof()) throw new LatexError("invalid unit argument");
+            return { k: "group", nodes: [...value ? [...value, this.run("\u2009")] : [], ...styled(units, "p")] };
+          }
           if (name === "frac" || name === "dfrac" || name === "tfrac") return { k: "f", num: this.arg(), den: this.arg() };
           if (name === "binom" || name === "dbinom") return { k: "d", beg: "(", end: ")", items: [[{ k: "f", num: this.arg(), den: this.arg(), noBar: true }]] };
           if (name === "sqrt") {
@@ -3906,7 +3952,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const s = rawInner.trim();
     if (!s) return false;
     if (s.includes("\\")) return true;
-    if (/^\d+([.,]\d+)?$/.test(s)) return false;
+    if (/^\d+([.,]\d+)?$/.test(s)) return true;
     if (/[=+\-*/^_<>≤≥≠≈∈∉⊂⊃∪∩∅√∫∑∏~()]/.test(s)) return true;
     if (/^[a-zA-Z0-9_'^]+$/.test(s)) return true;
     return false;
@@ -4320,7 +4366,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const office = Office.context;
     const platform = ((_a9 = office.diagnostics) == null ? void 0 : _a9.platform) || office.platform || "";
     const file = await call(office.document, "getFileAsync", ((_b = Office.FileType) == null ? void 0 : _b.Compressed) || "compressed", {
-      sliceSize: /iPad|iOS/i.test(platform) ? 65536 : 1024 * 1024
+      sliceSize: /iPad|iOS/i.test(platform) ? 65536 : 4 * 1024 * 1024
     });
     try {
       if (!file.size || file.size > 128 * 1024 * 1024) throw new Error("DOCX qu\xE1 l\u1EDBn");
@@ -4411,13 +4457,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     var _a9, _b;
     if (typeof Office !== "undefined" && ((_b = (_a9 = Office.context) == null ? void 0 : _a9.document) == null ? void 0 : _b.getFileAsync) && canReadCompressed()) {
       try {
-        const pkg = await readCompressedPackage({ scanOnly });
-        const paragraphCount = await run2(async (context) => {
+        const [pkg, paragraphCount] = await Promise.all([readCompressedPackage({ scanOnly }), run2(async (context) => {
           const paragraphs2 = context.document.body.paragraphs;
-          paragraphs2.load("items");
+          paragraphs2.load("items/$none");
           await context.sync();
           return paragraphs2.items.length;
-        });
+        })]);
         lastReadRoute = "DOCX (getFileAsync)";
         return { pkg, paragraphCount };
       } catch (error) {
@@ -4429,7 +4474,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     return run2(async (context) => {
       const ox = context.document.body.getOoxml();
       const paras = context.document.body.paragraphs;
-      paras.load("items");
+      paras.load("items/$none");
       await context.sync();
       return { pkg: ox.value, paragraphCount: paras.items.length };
     });
@@ -4437,27 +4482,28 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   async function selectionParagraphCount() {
     return run2(async (context) => {
       const paras = context.document.getSelection().paragraphs;
-      paras.load("items");
+      paras.load("items/$none");
       await context.sync();
       return paras.items.length;
     });
   }
-  async function readSelection() {
+  async function readSelection({ wholeParagraphs = false } = {}) {
     return run2(async (context) => {
       const sel = context.document.getSelection();
-      const ox = sel.getOoxml();
       const paras = sel.paragraphs;
-      paras.load("items");
+      const range = wholeParagraphs ? paras.getFirst().getRange("Whole").expandTo(paras.getLast().getRange("Whole")) : sel;
+      const ox = range.getOoxml();
+      paras.load("items/$none");
       await context.sync();
       return { pkg: ox.value, paragraphCount: paras.items.length };
     });
   }
   async function readConversionParagraphs(kinds, onProgress = () => {
-  }, { signal } = {}) {
+  }, { signal, scope = { kind: "all" } } = {}) {
     checkCancelled(signal);
     let items;
     try {
-      const { pkg, paragraphCount } = await readBody();
+      const { pkg, paragraphCount } = await (scope.kind === "selection" ? readSelection({ wholeParagraphs: true }) : readBody());
       checkCancelled(signal);
       items = paragraphPackages(pkg, paragraphCount, kinds);
     } catch (error) {
@@ -4467,7 +4513,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       onProgress(items.length, items.length);
       return items;
     }
-    return readParagraphs({ kind: "all" }, onProgress, { signal });
+    return readParagraphs(scope, onProgress, { signal });
   }
   async function readCursorContext() {
     var _a9;
@@ -4492,29 +4538,40 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       return await run2(async (context) => {
         const sel = context.document.getSelection();
         const para2 = sel.paragraphs.getFirst();
+        if (sel.load) sel.load("isEmpty");
         const selOx = sel.getOoxml();
-        const paraOx = para2.getOoxml();
+        const paraOx = para2.getRange("Whole").getOoxml();
         const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
+        const afterOx = sel.getRange("Start").expandTo(para2.getRange("End")).getOoxml();
         await context.sync();
-        return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value };
+        return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value, afterPkg: afterOx.value, selectionEmpty: sel.isEmpty };
       });
     } catch (e3) {
     }
     return run2(async (context) => {
       const sel = context.document.getSelection();
+      if (sel.load) sel.load("isEmpty");
       const selOx = sel.getOoxml();
       const paras = sel.paragraphs;
-      paras.load("items");
+      paras.load("items/$none");
       await context.sync();
       const para2 = paras.items[0];
-      const paraOx = para2 ? para2.getOoxml() : null;
+      const paraOx = para2 ? para2.getRange("Whole").getOoxml() : null;
       await context.sync();
-      const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null };
+      const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null, afterPkg: null, selectionEmpty: sel.isEmpty };
       try {
         if (para2) {
           const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
           await context.sync();
           result.beforePkg = beforeOx.value;
+        }
+      } catch (e3) {
+      }
+      try {
+        if (para2) {
+          const afterOx = sel.getRange("Start").expandTo(para2.getRange("End")).getOoxml();
+          await context.sync();
+          result.afterPkg = afterOx.value;
         }
       } catch (e3) {
       }
@@ -4541,7 +4598,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     checkCancelled(signal);
     return run2(async (context) => {
       const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
-      coll.load("items");
+      coll.load("items/$none");
       await context.sync();
       const idx = scope.kind === "indexes" ? scope.indexes : coll.items.map((_p, i) => i);
       const out = [];
@@ -4561,7 +4618,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             try {
               const pkg = await run2(async (retry) => {
                 const paragraphs2 = scope.kind === "selection" ? retry.document.getSelection().paragraphs : retry.document.body.paragraphs;
-                paragraphs2.load("items");
+                paragraphs2.load("items/$none");
                 await retry.sync();
                 const p2 = paragraphs2.items[k];
                 if (!p2) throw new Error("V\u1ECB tr\xED \u0111o\u1EA1n \u0111\xE3 thay \u0111\u1ED5i. H\xE3y \u0111\u1ECDc l\u1EA1i t\xE0i li\u1EC7u.");
@@ -4588,9 +4645,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     checkCancelled(signal);
     return run2(async (context) => {
       const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
-      coll.load("items");
+      coll.load("items/$none");
       const all = context.document.body.paragraphs;
-      all.load("items");
+      all.load("items/$none");
       await context.sync();
       const before = all.items.length;
       const ordered2 = [...items].sort((a, b) => b.index - a.index);
@@ -4628,7 +4685,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         if (signal && i < ordered2.length) await new Promise((resolve2) => setTimeout(resolve2, 0));
       }
       const again = context.document.body.paragraphs;
-      again.load("items");
+      again.load("items/$none");
       await context.sync();
       return { before, after: again.items.length };
     });
@@ -4636,7 +4693,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   async function selectParagraph(index) {
     return run2(async (context) => {
       const paras = context.document.body.paragraphs;
-      paras.load("items");
+      paras.load("items/$none");
       await context.sync();
       if (paras.items[index]) paras.items[index].select();
       await context.sync();
@@ -4659,7 +4716,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const body = context.document.body;
       body.insertOoxml(pkg, "Replace");
       const paragraphs2 = body.paragraphs;
-      paragraphs2.load("items");
+      paragraphs2.load("items/$none");
       await context.sync();
       return { before, after: paragraphs2.items.length };
     });
@@ -5087,16 +5144,24 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   });
 
   // src/cursor-eq.js
-  function pickEquation({ selPkg, paraPkg, beforePkg } = {}) {
+  function pickEquation({ selPkg, paraPkg, beforePkg, afterPkg, selectionEmpty } = {}) {
     const sel = list(selPkg), selOk = sel.filter((e3) => e3.latex !== null);
-    if (selOk.length) return { eq: selOk[0], how: "selection", count: selOk.length, index: 0 };
+    if (selOk.length && (selectionEmpty === false || selectionEmpty !== true && selOk.length === 1)) return { eq: selOk[0], how: "selection", count: selOk.length, index: 0 };
     const para2 = list(paraPkg);
     const errors = [...sel, ...para2].filter((e3) => e3.error).map((e3) => e3.error);
     if (!para2.length) return { eq: null, how: "none", found: 0, errors };
     let index = 0, how = "paragraph";
     if (para2.length > 1) {
+      if (!beforePkg && !afterPkg) return {
+        eq: null,
+        how: "none",
+        found: para2.length,
+        errors: ["Word ch\u01B0a cung c\u1EA5p v\u1ECB tr\xED con tr\u1ECF. H\xE3y b\xF4i \u0111en c\xF4ng th\u1EE9c c\u1EA7n l\u1EA5y.", ...errors]
+      };
       const before = list(beforePkg).length;
-      index = Math.min(Math.max(before - 1, 0), para2.length - 1);
+      const after = afterPkg ? list(afterPkg).length : null;
+      const position = !beforePkg && after !== null ? para2.length - after : before - (after === null || before + after > para2.length ? 1 : 0);
+      index = Math.min(Math.max(position, 0), para2.length - 1);
       how = "cursor";
     }
     const eq = para2[index];
@@ -6087,7 +6152,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     out = out.replace(docPart.body, () => docPart.body.replace(/(<pkg:xmlData>)[\s\S]*(<\/pkg:xmlData>)/, (_m, a, c) => a + ensureNs(docXml.trimStart()) + c));
     const relsPart = splitParts(out).get("/word/_rels/document.xml.rels");
     const relXml = objects.flatMap((o) => o.rels).map((r) => `<Relationship Id="${r.id}" Type="${r.type}" Target="${r.target}"/>`).join("");
-    out = out.replace(relsPart.body, () => relsPart.body.replace("</Relationships>", relXml + "</Relationships>"));
+    if (relsPart) {
+      out = out.replace(relsPart.body, () => relsPart.body.replace(/<Relationships\b([^>]*?)\s*\/>/, "<Relationships$1></Relationships>").replace("</Relationships>", relXml + "</Relationships>"));
+    } else {
+      const rels = `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${relXml}</Relationships></pkg:xmlData></pkg:part>`;
+      out = out.replace("</pkg:package>", rels + "</pkg:package>");
+    }
     const partXml = objects.flatMap((o) => o.parts).map((p2) => `<pkg:part pkg:name="${p2.name}" pkg:contentType="${p2.type}" pkg:compression="store"><pkg:binaryData>${b642(p2.data)}</pkg:binaryData></pkg:part>`).join("");
     return out.replace("</pkg:package>", partXml + "</pkg:package>");
   }
@@ -6114,17 +6184,33 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const sz = ps && styleSz(ps[1]) || styleSz("Normal") || half((/<w:docDefaults>[\s\S]*?<\/w:docDefaults>/.exec(stylesXml) || [""])[0]);
     return sz || fallback;
   }
-  async function convertNativeToMathType(pkg, { render, style = "times", font = null, size = "auto", defaultSize = 12, vector = true, display = false } = {}) {
+  async function convertNativeToMathType(pkg, { render, style = "times", font = null, size = "auto", defaultSize = 12, vector = true, display = false, signal, onProgress = () => {
+  } } = {}) {
     var _a9;
     const scan2 = scanPackage(pkg);
     const styles = ((_a9 = splitParts(pkg).get("/word/styles.xml")) == null ? void 0 : _a9.body) || "";
     let doc = scan2.doc;
     const result = { pkg, converted: 0, kept: [], changed: false };
     const edits = [], objects = [];
-    for (const eq of scan2.equations) {
+    const native = scan2.equations.filter((eq) => eq.kind === "native");
+    let completed = 0;
+    const checkpoint = () => {
+      if (signal == null ? void 0 : signal.aborted) {
+        const error = new Error("\u0110\xE3 h\u1EE7y chuy\u1EC3n \u0111\u1ED5i.");
+        error.name = "AbortError";
+        throw error;
+      }
+    };
+    for (const eq of native) {
+      checkpoint();
+      if (completed % 8 === 0) {
+        await new Promise((resolve2) => setTimeout(resolve2, 0));
+        checkpoint();
+      }
       if (eq.kind !== "native") continue;
       if (eq.latex === null) {
         result.kept.push({ reason: eq.error });
+        onProgress(++completed, native.length);
         continue;
       }
       try {
@@ -6142,7 +6228,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       } catch (e3) {
         result.kept.push({ reason: e3.message, latex: eq.latex });
       }
+      onProgress(++completed, native.length);
     }
+    checkpoint();
     if (!edits.length) return result;
     edits.sort((a, b) => b.start - a.start);
     for (const e3 of edits) doc = doc.slice(0, e3.start) + e3.repl + doc.slice(e3.end);
@@ -14568,7 +14656,7 @@ ${contentTypesOverrides}
   $("conv-dst").addEventListener("change", syncConvertUi);
   syncConvertUi();
   async function paragraphsToProcess(scope, onProgress, { kinds: wanted, signal } = {}) {
-    if (scope === "selection") return { scope: { kind: "selection" }, items: await readParagraphs({ kind: "selection" }, onProgress, { signal }) };
+    if (scope === "selection") return { scope: { kind: "selection" }, items: await readConversionParagraphs(wanted, onProgress, { signal, scope: { kind: "selection" } }) };
     return { scope: { kind: "all" }, items: await readConversionParagraphs(wanted, onProgress, { signal }) };
   }
   var conversionJob = null;
@@ -14616,15 +14704,43 @@ ${contentTypesOverrides}
     let phase = "\u0111\u1ECDc t\xE0i li\u1EC7u";
     try {
       const scopeName = document.querySelector("input[name=scope]:checked").value;
-      if (scopeName === "all" && src === "mathtype" && dst === "word" && !$("opt-display").checked) {
+      if (scopeName === "all" && (dst !== "word" || !$("opt-display").checked)) {
+        const readStart = Date.now();
         const original = await readBody();
+        const readMs = Date.now() - readStart;
         await checkpoint();
+        const convertStart = Date.now();
         phase = "gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c";
         $("convert-summary").textContent = "\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c\u2026";
         progress(bar, 1, 3);
         await new Promise((resolve2) => setTimeout(resolve2, 0));
-        const result = convertMathTypeInPackage(original.pkg, { convertLatex: false });
+        let result;
+        if (dst === "mathtype") {
+          const options = __spreadProps(__spreadValues({}, mtConvertOptions()), { defaultSize: (await mtOptions()).size });
+          await checkpoint();
+          const a = convertMathTypeInPackage(original.pkg, { convertMathType: normalize2, convertLatex: src === "latex", display: false });
+          const b = await convertNativeToMathType(a.pkg, __spreadProps(__spreadValues({
+            render: browserRender
+          }, options), {
+            signal,
+            onProgress: (done, total) => {
+              progress(bar, done, total);
+              $("convert-summary").textContent = `\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c ${done}/${total}\u2026`;
+            }
+          }));
+          result = __spreadProps(__spreadValues({}, b), {
+            pkg: b.changed ? b.pkg : a.pkg,
+            changed: a.changed || b.changed,
+            converted: b.changed ? b.converted : a.converted,
+            kept: [...a.kept, ...b.kept]
+          });
+        } else if (dst === "latex") {
+          result = convertEquationsToLatexText(original.pkg, { fromMathType: src === "mathtype", fromNative: src === "word" });
+        } else {
+          result = convertMathTypeInPackage(original.pkg, { convertMathType: src === "mathtype", convertLatex: src === "latex" });
+        }
         const reasons2 = {};
+        const convertMs = Date.now() - convertStart;
         result.kept.forEach((k) => {
           reasons2[k.reason] = (reasons2[k.reason] || 0) + 1;
         });
@@ -14637,10 +14753,12 @@ ${contentTypesOverrides}
         phase = "ghi c\xF4ng th\u1EE9c v\xE0o Word";
         $("convert-summary").textContent = `\u0110ang ghi ${result.converted} c\xF4ng th\u1EE9c v\xE0o Word\u2026`;
         progress(bar, 2, 3);
+        const writeStart = Date.now();
         const res2 = await writeBodySnapshot(result.pkg, original.paragraphCount);
+        const writeMs = Date.now() - writeStart;
         afterWrite(res2, { scope: { kind: "body" }, pkg: original.pkg, paragraphCount: original.paragraphCount });
         progress(bar, 3, 3);
-        $("convert-summary").innerHTML = `<p><b class="ok">\u0110\xE3 chuy\u1EC3n ${result.converted}</b> c\xF4ng th\u1EE9c; gi\u1EEF nguy\xEAn ${result.kept.length}.</p>` + (reasonList2 ? `<ul>${reasonList2}</ul>` : "") + (res2.before !== res2.after ? '<p class="warn">S\u1ED1 \u0111o\u1EA1n \u0111\xE3 thay \u0111\u1ED5i. H\xE3y ki\u1EC3m tra b\u1ED1 c\u1EE5c; d\xF9ng Ho\xE0n t\xE1c ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao n\u1EBFu c\u1EA7n.</p>' : "");
+        $("convert-summary").innerHTML = `<p><b class="ok">\u0110\xE3 chuy\u1EC3n ${result.converted}</b> c\xF4ng th\u1EE9c; gi\u1EEF nguy\xEAn ${result.kept.length}.</p><p>\u0110\u1ECDc ${(readMs / 1e3).toFixed(1)} gi\xE2y \xB7 chuy\u1EC3n ${(convertMs / 1e3).toFixed(1)} gi\xE2y \xB7 ghi ${(writeMs / 1e3).toFixed(1)} gi\xE2y.</p>` + (reasonList2 ? `<ul>${reasonList2}</ul>` : "") + (res2.before !== res2.after ? '<p class="warn">S\u1ED1 \u0111o\u1EA1n \u0111\xE3 thay \u0111\u1ED5i. H\xE3y ki\u1EC3m tra b\u1ED1 c\u1EE5c; d\xF9ng Ho\xE0n t\xE1c ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao n\u1EBFu c\u1EA7n.</p>' : "");
         return;
       }
       $("convert-summary").textContent = "\u0110ang \u0111\u1ECDc c\xE1c \u0111o\u1EA1n\u2026";

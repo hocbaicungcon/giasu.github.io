@@ -82,7 +82,7 @@ export async function readCompressedPackage(options) {
   const office = Office.context;
   const platform = office.diagnostics?.platform || office.platform || '';
   const file = await call(office.document, 'getFileAsync', Office.FileType?.Compressed || 'compressed', {
-    sliceSize: /iPad|iOS/i.test(platform) ? 65536 : 1024 * 1024,
+    sliceSize: /iPad|iOS/i.test(platform) ? 65536 : 4 * 1024 * 1024,
   });
   try {
     if (!file.size || file.size > 128 * 1024 * 1024) throw new Error('DOCX quá lớn');

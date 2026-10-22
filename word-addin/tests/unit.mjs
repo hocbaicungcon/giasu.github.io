@@ -9,6 +9,7 @@ import { scanBody, previewReplace, convertMathTypeInPackage, convertEquationsToL
 import { mathTypeObject, convertNativeToMathType, makeMathTypePackage } from '../src/mathtype-object.js';
 import { latexToEquationStream } from '../src/mtef-writer.js';
 import { buildOle } from '../src/ole-writer.js';
+import { makeEquationPackage, scanPackage } from '../src/ooxml.js';
 import { renderLatex } from '../src/mathrender.js';
 import { suggest, expandSnippet, tokenAt, nextStop } from '../src/latex-suggest.js';
 import { latexToSympy, normalizeInput } from '../src/sympy-bridge.js';
@@ -19,25 +20,60 @@ const queue = [];
 const test = (name, fn) => { queue.push([name, fn]); };
 const B = '\\';
 
+test('delimited numbers and siunitx quantities convert to Word and MathType', async () => {
+  const text = String.raw`$1$, $2$, $1,5$, $t = \qty{3}{\second}$`;
+  const pkg = makeEquationPackage('').replace('<w:p></w:p>', `<w:p><w:r><w:t>${text}</w:t></w:r></w:p>`);
+  const equations = scanPackage(pkg).equations;
+  assert.equal(equations.length, 4);
+  assert.ok(equations.every(e => !e.error));
+  const word = convertMathTypeInPackage(pkg, { convertMathType: false, convertLatex: true });
+  assert.equal(word.convertedLatex, 4);
+  assert.equal(scanPackage(word.pkg).equations.filter(e => e.kind === 'native').length, 4);
+  assert.match(word.pkg, /<m:sty m:val="p"\/>/);
+  const mt = await convertNativeToMathType(word.pkg, {
+    render: async () => ({ png: new Uint8Array([137, 80, 78, 71]), width: 20, height: 12, baseline: 2 }),
+  });
+  assert.equal(mt.converted, 4);
+  assert.equal(scanPackage(mt.pkg).equations.filter(e => e.kind === 'mathtype').length, 4);
+  assert.doesNotThrow(() => latexToEquationStream(String.raw`v = \qty{3}{\kilo\metre\per\second\squared}`));
+  assert.throws(() => latexToOmml(String.raw`\qty{3}{\unknownunit}`), /unsupported command/);
+  const money = makeEquationPackage('').replace('<w:p></w:p>', '<w:p><w:r><w:t>Giá $100 và $200.</w:t></w:r></w:p>');
+  assert.equal(scanPackage(money).equations.length, 0);
+});
+
 test('cursor reader preserves equation data when optional range sync fails', async () => {
   const { readCursorContext } = await import('../src/word-io.js');
   const previous = globalThis.Word;
   for (const failBefore of [false, true]) {
     let syncs = 0;
-    const para = { getOoxml: () => ({ value: 'paragraph' }), getRange: () => ({ expandTo: () => ({ getOoxml: () => ({ value: 'before' }) }) }) };
+    const para = { getOoxml() { assert.fail('Mac paragraph export must use a range'); }, getRange: mode => mode === 'Whole' ? { getOoxml: () => ({ value: 'paragraph' }) } : { expandTo: () => ({ getOoxml: () => ({ value: 'before' }) }) } };
     globalThis.Word = { run: (fn) => fn({
       document: { getSelection: () => ({ getOoxml: () => ({ value: 'selection' }), paragraphs: { load() {}, items: [para] }, getRange() {} }) },
       sync: async () => { if (++syncs === 3 && failBefore) throw new Error('ItemNotFound'); },
     }) };
     try {
-      assert.deepEqual(await readCursorContext(), { selPkg: 'selection', paraPkg: 'paragraph', beforePkg: failBefore ? null : 'before' });
+      assert.deepEqual(await readCursorContext(), { selPkg: 'selection', paraPkg: 'paragraph', beforePkg: failBefore ? null : 'before', afterPkg: null, selectionEmpty: undefined });
     } finally { globalThis.Word = previous; }
   }
+});
+test('cursor reader fetches both sides and collapsed state in one sync', async () => {
+  const { readCursorContext } = await import('../src/word-io.js');
+  const previous = globalThis.Word;
+  let syncs = 0;
+  const range = value => ({ getOoxml: () => ({ value }), expandTo(other) { return range(value === 'start' ? 'prefix' : 'suffix'); } });
+  const para = { getRange: mode => range(mode === 'Whole' ? 'paragraph' : mode.toLowerCase()) };
+  const sel = { isEmpty: true, load(property) { assert.equal(property, 'isEmpty'); },
+    paragraphs: { getFirst: () => para }, getOoxml: () => ({ value: 'selection' }), getRange: () => range('cursor') };
+  globalThis.Word = { run: fn => fn({ document: { getSelection: () => sel }, async sync() { syncs++; } }) };
+  try {
+    assert.deepEqual(await readCursorContext(), { selPkg: 'selection', paraPkg: 'paragraph', beforePkg: 'prefix', afterPkg: 'suffix', selectionEmpty: true });
+    assert.equal(syncs, 1);
+  } finally { globalThis.Word = previous; }
 });
 test('cursor reader falls back to selection and paragraph on older hosts', async () => {
   const { readCursorContext } = await import('../src/word-io.js');
   const previous = globalThis.Word;
-  const para = { getOoxml: () => ({ value: 'paragraph' }) };
+  const para = { getRange: () => ({ getOoxml: () => ({ value: 'paragraph' }) }) };
   const paras = { load() {}, items: [para] };
   let runs = 0;
   globalThis.Word = { run: async (fn) => {
@@ -223,6 +259,45 @@ test('editor: equation under a collapsed cursor is found through the paragraph',
   // a selection that holds an equation wins
   assert.equal(pickEquation({ selPkg: bodyPackage(para('c^2')), paraPkg: p3 }).how, 'selection');
   assert.equal(pickEquation({ selPkg: empty, paraPkg: empty }).eq, null);
+});
+test('editor: locate the second and third formulas from both sides of a collapsed cursor', async () => {
+  const { pickEquation } = await import('../src/cursor-eq.js');
+  const { bodyPackage } = await import('../src/worksheet-docx.js');
+  const pack = content => bodyPackage(`<w:p>${content}</w:p>`);
+  const text = value => `<w:r><w:t>${value}</w:t></w:r>`;
+  const formulas = ['a+b', 'c^2', 'x+3'];
+  const paraPkg = pack(text(formulas.map(f => `$${f}$`).join(' và ')));
+  for (const index of [1, 2]) {
+    // Neither side contains a complete $...$ at the cursor.
+    const beforePkg = pack(text(formulas.slice(0, index).map(f => `$${f}$`).join(' và ') + ' và $' + formulas[index][0]));
+    const afterPkg = pack(text(formulas[index].slice(1) + '$ và ' + formulas.slice(index + 1).map(f => `$${f}$`).join(' và ')));
+    const result = pickEquation({ selPkg: paraPkg, selectionEmpty: true, paraPkg, beforePkg, afterPkg });
+    assert.equal(result.index, index);
+    assert.equal(result.eq.latex, formulas[index]);
+  }
+  const native = formulas.map(f => latexToOmml(f));
+  for (const index of [1, 2]) {
+    const result = pickEquation({ selectionEmpty: true, selPkg: pack(native.join('')), paraPkg: pack(native.join('')),
+      beforePkg: pack(native.slice(0, index + 1).join('')), afterPkg: pack(native.slice(index).join('')) });
+    assert.equal(result.index, index, 'native equation exported on both sides is counted once');
+  }
+  const { attachObjects } = await import('../src/mathtype-object.js');
+  const objects = await Promise.all(formulas.map(f => mathTypeObject(f, {
+    render: async () => ({ png: new Uint8Array([137, 80, 78, 71]), width: 20, height: 12, baseline: 2 }),
+  })));
+  const mtPack = subset => {
+    const base = pack(subset.map(o => o.runXml).join(''));
+    return attachObjects(base, scanPackage(base).doc, subset);
+  };
+  const mt = mtPack(objects);
+  for (const index of [1, 2]) {
+    const result = pickEquation({ selectionEmpty: true, selPkg: mt, paraPkg: mt,
+      beforePkg: mtPack(objects.slice(0, index)), afterPkg: mtPack(objects.slice(index)) });
+    assert.equal(result.index, index, 'MathType object excluded from prefix is located using suffix');
+    assert.equal(result.eq.kind, 'mathtype');
+  }
+  assert.equal(pickEquation({ selPkg: mtPack([objects[2]]), selectionEmpty: false, paraPkg: mt }).eq.latex.replace(/\s/g, ''), 'x+3');
+  assert.equal(pickEquation({ selectionEmpty: true, paraPkg: mt }).eq, null, 'missing cursor data must not silently pick the first formula');
 });
 test('KaTeX outlines: TrueType glyphs -> polygons -> well-formed EMF; Cambria Math is a MathType font choice', async () => {
   const fsm = await import('node:fs');

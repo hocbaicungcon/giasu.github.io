@@ -43,6 +43,15 @@ const SEP = new Set([',', ';']);
 const MUL = new Set([...'\u00d7\u22c5\u00b7\u00f7\u2217']);
 
 // ---------------------------------------------------------------- parser -> small tree
+// siunitx vocabulary is scoped to unit arguments; unknown macros still fail safely.
+const UNIT = { second: 's', meter: 'm', metre: 'm', gram: 'g', kilogram: 'kg',
+  ampere: 'A', kelvin: 'K', mole: 'mol', candela: 'cd', hertz: 'Hz', newton: 'N',
+  pascal: 'Pa', joule: 'J', watt: 'W', coulomb: 'C', volt: 'V', ohm: 'Ω',
+  liter: 'L', litre: 'L', minute: 'min', hour: 'h', radian: 'rad', degree: '°',
+  celsius: '°C', degreeCelsius: '°C', percent: '%',
+  kilo: 'k', mega: 'M', giga: 'G', milli: 'm', centi: 'c', micro: 'μ', nano: 'n',
+  per: '/', squared: '^{2}', cubed: '^{3}' };
+
 class Parser {
   constructor(src) { this.s = src; this.i = 0; }
   ws() { while (this.i < this.s.length && /\s/.test(this.s[this.i])) this.i++; }
@@ -143,6 +152,14 @@ class Parser {
     return this.command(name);
   }
   command(name) {
+    if (name === 'qty' || name === 'SI' || name === 'si' || name === 'unit') {
+      const value = name === 'qty' || name === 'SI' ? this.arg() : null;
+      const source = this.raw().replace(/\\([A-Za-z]+)/g, (raw, command) => has(UNIT, command) ? UNIT[command] : raw);
+      const parser = new Parser(source);
+      const units = parser.seq();
+      if (!parser.eof()) throw new LatexError('invalid unit argument');
+      return { k: 'group', nodes: [...(value ? [...value, this.run('\u2009')] : []), ...styled(units, 'p')] };
+    }
     if (name === 'frac' || name === 'dfrac' || name === 'tfrac') return { k: 'f', num: this.arg(), den: this.arg() };
     if (name === 'binom' || name === 'dbinom') return { k: 'd', beg: '(', end: ')', items: [[{ k: 'f', num: this.arg(), den: this.arg(), noBar: true }]] };
     if (name === 'sqrt') {
