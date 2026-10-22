@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /o2edu/
+Sitemap: https://giasu.ai.vn/sitemap.xml

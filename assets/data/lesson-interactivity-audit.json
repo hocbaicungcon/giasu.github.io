@@ -1,0 +1,6186 @@
+{
+  "totalLessons": 618,
+  "covered": 618,
+  "lessons": [
+    {
+      "slug": "chuan-hoa-cong-thuc-mathtype-macbook",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "go-mathtype-tren-macbook",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phan-mem-cham-trac-nghiem-mien-phi",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "soan-cong-thuc-toan-macbook",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tron-de-tren-macbook",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-2-so-bi-tru-so-tru-hieu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-28-bien-co-hop-giao-doc-lap",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-29-cong-thuc-cong-xac-suat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-30-cong-thuc-nhan-xac-suat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-31-dinh-nghia-va-y-nghia-cua-dao-ham",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-32-cac-quy-tac-tinh-dao-ham",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-33-dao-ham-cap-hai",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-8-cac-quy-tac-tinh-xac-suat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-9-dao-ham",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-1-tinh-don-dieu-va-cuc-tri-cua-ham-so",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-10-phuong-sai-va-do-lech-chuan-cua-mau-so-lieu-ghep-nhom",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-11-nguyen-ham",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-12-tich-phan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-13-ung-dung-hinh-hoc-cua-tich-phan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-14-phuong-trinh-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-15-phuong-trinh-duong-thang-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": "linear-function",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-16-cong-thuc-tinh-goc-va-khoang-cach-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-17-xac-suat-co-dieu-kien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-18-cong-thuc-xac-suat-toan-phan-va-cong-thuc-bayes",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-2-gia-tri-lon-nhat-va-gia-tri-nho-nhat-cua-ham-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-3-duong-tiem-can-cua-do-thi-ham-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-4-khao-sat-su-bien-thien-va-ve-do-thi-cua-ham-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-5-ung-dung-dao-ham-de-giai-quyet-mot-so-van-de-thuc-tien",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-6-vecto-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-7-he-truc-toa-do-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-8-bieu-thuc-toa-do-cua-cac-phep-toan-vecto",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-9-khoang-bien-thien-va-khoang-tu-phan-vi-cua-mau-so-lieu-ghep-nhom",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-tap-cuoi-chuong-1-ung-dung-dao-ham-khao-sat-do-thi-ham-so",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-16-tam-giac-can-duong-trung-truc-cua-doan-thang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 2
+    },
+    {
+      "slug": "toan-7-bai-17-thu-thap-va-phan-loai-du-lieu",
+      "category": "Toán học",
+      "exploration": "data-classification",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-18-bieu-do-hinh-quat-tron",
+      "category": "Toán học",
+      "exploration": "pie-chart",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-19-bieu-do-doan-thang",
+      "category": "Toán học",
+      "exploration": "line-chart",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-20-ti-le-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-21-tinh-chat-cua-day-ti-so-bang-nhau",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-22-dai-luong-ti-le-thuan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-23-dai-luong-ti-le-nghich",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-24-bieu-thuc-dai-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-25-da-thuc-mot-bien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-26-phep-cong-va-phep-tru-da-thuc-mot-bien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-27-phep-nhan-da-thuc-mot-bien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-28-phep-chia-da-thuc-mot-bien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-1-da-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-1-phuong-trinh-va-he-hai-phuong-trinh-bac-nhat-hai-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-10-mot-so-hinh-khoi-trong-thuc-tien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-10-mot-so-hinh-khoi-trong-thuc-tien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-2-phuong-trinh-va-bat-phuong-trinh-bac-nhat-mot-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-3-can-bac-hai-va-can-bac-ba",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-4-he-thuc-luong-trong-tam-giac-vuong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-4-tam-giac-bang-nhau",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 5
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-5-duong-tron",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-5-thu-thap-va-bieu-dien-du-lieu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-6-ham-so-y-ax2-phuong-trinh-bac-hai-mot-an",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-6-ti-le-thuc-va-dai-luong-ti-le",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-7-bieu-thuc-dai-so-va-da-thuc-mot-bien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-7-tan-so-va-tan-so-tuong-doi",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-8-lam-quen-voi-bien-co-va-xac-suat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-8-xac-suat-cua-bien-co-trong-mot-so-mo-hinh-xac-suat-don-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-on-tap-chuong-9-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-9-quan-he-giua-cac-yeu-to-trong-mot-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-1-menh-de",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-10-vecto-trong-mat-phang-toa-do",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-11-tich-vo-huong-cua-hai-vecto",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-12-so-gan-dung-va-sai-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-13-cac-so-dac-trung-do-xu-the-trung-tam",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-14-cac-so-dac-trung-do-do-phan-tan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-15-ham-so-va-do-thi",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-16-ham-so-bac-hai",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-17-dau-cua-tam-thuc-bac-hai",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-18-phuong-trinh-quy-ve-phuong-trinh-bac-hai",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-19-phuong-trinh-duong-thang",
+      "category": "Toán học",
+      "exploration": "linear-function",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-2-tap-hop-va-cac-phep-toan-tren-tap-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-20-vi-tri-tuong-doi-giua-hai-duong-thang-goc-va-khoang-cach",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-21-duong-tron-trong-mat-phang-toa-do",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-22-ba-duong-conic-trong-mat-phang-toa-do",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-23-quy-tac-dem",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-24-hoan-vi-chinh-hop-va-to-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-25-nhi-thuc-newton",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-26-bien-co-va-dinh-nghia-co-dien-cua-xac-suat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-27-thuc-hanh-tinh-xac-suat-trong-mot-so-bai-toan-don-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-3-bat-phuong-trinh-bac-nhat-hai-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-4-he-bat-phuong-trinh-bac-nhat-hai-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-5-gia-tri-luong-giac-cua-mot-goc-tu-0-den-180",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-6-he-thuc-luong-trong-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-7-cac-khai-niem-mo-dau-ve-vecto",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-8-tong-va-hieu-cua-hai-vecto",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-bai-9-tich-cua-mot-vecto-voi-mot-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-1-menh-de-va-tap-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-2-bat-phuong-trinh-va-he-bat-phuong-trinh-bac-nhat-hai-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 13,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-3-he-thuc-luong-trong-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-4-vecto",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-5-cac-so-dac-trung-cua-mau-so-lieu-khong-ghep-nhom",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-6-ham-so-do-thi-va-ung-dung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-7-phuong-phap-toa-do-trong-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-8-dai-so-to-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-chuong-9-tinh-xac-suat-theo-dinh-nghia-co-dien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-10-on-tap-cuoi-nam",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-1-gia-tri-luong-giac-cua-goc-luong-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-10-duong-thang-va-mat-phang-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-11-hai-duong-thang-song-song",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-12-duong-thang-va-mat-phang-song-song",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-13-hai-mat-phang-song-song",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-14-phep-chieu-song-song",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-15-gioi-han-cua-day-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-16-gioi-han-cua-ham-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-17-ham-so-lien-tuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-18-luy-thua-voi-so-mu-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-19-logarit",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-2-cong-thuc-luong-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-20-ham-so-mu-va-ham-so-logarit",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-21-phuong-trinh-bat-phuong-trinh-mu-va-logarit",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-22-hai-duong-thang-vuong-goc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-23-duong-thang-vuong-goc-voi-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-24-phep-chieu-vuong-goc-goc-giua-duong-thang-va-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-25-hai-mat-phang-vuong-goc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-26-khoang-cach-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-27-the-tich",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-3-ham-so-luong-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-4-phuong-trinh-luong-giac-co-ban",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-5-day-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-6-cap-so-cong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-7-cap-so-nhan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-8-mau-so-lieu-ghep-nhom",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-9-cac-so-dac-trung-do-xu-the-trung-tam",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-7-quan-he-vuong-goc-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-1-ham-so-luong-giac-va-phuong-trinh-luong-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-2-day-so-cap-so-cong-va-cap-so-nhan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-3-cac-so-dac-trung-do-xu-the-trung-tam",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-4-quan-he-song-song-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-5-gioi-han-ham-so-lien-tuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-11-bai-tap-cuoi-chuong-6-ham-so-mu-va-ham-so-logarit",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-29-lam-quen-voi-bien-co",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-30-xac-suat-cua-bien-co-ngau-nhien-trong-mot-so-tro-choi-don-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-31-quan-he-giua-goc-va-canh-doi-dien-trong-mot-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-32-quan-he-giua-duong-vuong-goc-va-duong-xien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-33-quan-he-giua-ba-canh-cua-mot-tam-giac-bat-dang-thuc-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-34-su-dong-quy-cua-ba-duong-trung-tuyen-ba-duong-phan-giac-trong-mot-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-35-su-dong-quy-cua-ba-duong-trung-truc-ba-duong-cao-trong-mot-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-36-hinh-hop-chu-nhat-va-hinh-lap-phuong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-37-hinh-lang-tru-dung-tam-giac-va-hinh-lang-tru-dung-tu-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-1-don-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-10-tu-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-11-hinh-thang-can",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-12-hinh-binh-hanh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-13-hinh-chu-nhat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-14-hinh-thoi-va-hinh-vuong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-15-dinh-li-thales-trong-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-16-duong-trung-binh-cua-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-17-tinh-chat-duong-phan-giac-cua-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-18-thu-thap-va-phan-loai-du-lieu",
+      "category": "Toán học",
+      "exploration": "data-classification",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-19-bieu-dien-du-lieu-bang-bang-bieu-do",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-2-da-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-20-phan-tich-so-lieu-thong-ke-dua-vao-bieu-do",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-21-phan-thuc-dai-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-22-tinh-chat-co-ban-cua-phan-thuc-dai-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-23-phep-cong-va-phep-tru-phan-thuc-dai-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-24-phep-nhan-va-phep-chia-phan-thuc-dai-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-25-phuong-trinh-bac-nhat-mot-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-26-giai-bai-toan-bang-cach-lap-phuong-trinh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-27-khai-niem-ham-so-va-do-thi-cua-ham-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-28-ham-so-bac-nhat-va-do-thi-cua-ham-so-bac-nhat",
+      "category": "Toán học",
+      "exploration": "linear-function",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-29-he-so-goc-cua-duong-thang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-3-phep-cong-va-phep-tru-da-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-30-ket-qua-co-the-va-ket-qua-thuan-loi",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-31-cach-tinh-xac-suat-cua-bien-co-bang-ti-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-32-moi-lien-he-giua-xac-suat-thuc-nghiem-voi-xac-suat-ly-thuyet",
+      "category": "Toán học",
+      "exploration": "probability",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-33-hai-tam-giac-dong-dang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-34-ba-truong-hop-dong-dang-cua-hai-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-35-dinh-li-pythagore-va-ung-dung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-36-cac-truong-hop-dong-dang-cua-hai-tam-giac-vuong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-37-hinh-dong-dang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-38-hinh-chop-tam-giac-deu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-39-hinh-chop-tu-giac-deu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-4-phep-nhan-da-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-5-phep-chia-da-thuc-cho-don-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-6-hieu-hai-binh-phuong-binh-phuong-cua-mot-tong-hay-mot-hieu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-7-lap-phuong-cua-mot-tong-lap-phuong-cua-mot-hieu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-8-tong-va-hieu-hai-lap-phuong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-bai-9-phan-tich-da-thuc-thanh-nhan-tu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-10-mot-so-hinh-khoi-trong-thuc-tien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-2-hang-dang-thuc-dang-nho-va-ung-dung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-3-tu-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-4-dinh-li-thales",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-5-du-lieu-va-bieu-do",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-6-phan-thuc-dai-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-7-phuong-trinh-bac-nhat-va-ham-so-bac-nhat",
+      "category": "Toán học",
+      "exploration": "linear-function",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-8-xac-suat-cua-bien-co",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-8-on-tap-chuong-9-tam-giac-dong-dang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-1-khai-niem-phuong-trinh-va-he-hai-phuong-trinh-bac-nhat-hai-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-10-can-bac-ba-va-can-thuc-bac-ba",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-11-ti-so-luong-giac-cua-goc-nhon",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-12-mot-so-he-thuc-giua-canh-va-goc-trong-tam-giac-vuong-va-ung-dung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-13-mo-dau-ve-duong-tron",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-14-cung-va-day-cua-mot-duong-tron",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-15-do-dai-cua-cung-tron-dien-tich-hinh-quat-tron-va-hinh-vanh-khuyen",
+      "category": "Toán học",
+      "exploration": "pie-chart",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-16-vi-tri-tuong-doi-cua-duong-thang-va-duong-tron",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-17-vi-tri-tuong-doi-cua-hai-duong-tron",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-18-ham-so-y-ax2",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-19-phuong-trinh-bac-hai-mot-an",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-2-giai-he-hai-phuong-trinh-bac-nhat-hai-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-20-dinh-ly-viete-va-ung-dung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-21-giai-bai-toan-bang-cach-lap-phuong-trinh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-22-bang-tan-so-va-bieu-do-tan-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-23-bang-tan-so-tuong-doi-va-bieu-do-tan-so-tuong-doi",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-24-bang-tan-so-tan-so-tuong-doi-ghep-nhom-va-bieu-do-ghep-nhom",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-25-phep-thu-ngau-nhien-va-khong-gian-mau",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-26-xac-suat-cua-bien-co-lien-quan-toi-phep-thu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-27-goc-noi-tiep",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-28-duong-tron-ngoai-tiep-va-duong-tron-noi-tiep-cua-mot-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-29-tu-giac-noi-tiep",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-3-giai-bai-toan-bang-cach-lap-he-phuong-trinh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-30-da-giac-deu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-31-hinh-tru",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-32-hinh-non",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-33-hinh-cau",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-4-phuong-trinh-quy-ve-phuong-trinh-bac-nhat-mot-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-5-bat-dang-thuc-va-tinh-chat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-6-bat-phuong-trinh-bac-nhat-mot-an",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-7-can-bac-hai-va-can-thuc-bac-hai",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-8-khai-can-bac-hai-voi-phep-nhan-va-phep-chia",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-bai-9-bien-doi-don-gian-va-rut-gon-bieu-thuc-chua-can-thuc-bac-hai",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-15-cac-truong-hop-bang-nhau-cua-tam-giac-vuong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 1
+    },
+    {
+      "slug": "toan-7-bai-12-tong-cac-goc-trong-mot-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 1
+    },
+    {
+      "slug": "toan-7-bai-13-hai-tam-giac-bang-nhau-truong-hop-canh-canh-canh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 1
+    },
+    {
+      "slug": "toan-7-bai-14-truong-hop-bang-nhau-thu-hai-va-thu-ba-cua-tam-giac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 2
+    },
+    {
+      "slug": "toan-7-bai-1-tap-hop-cac-so-huu-ti",
+      "category": "Toán học",
+      "exploration": "rational-numberline",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-10-tien-de-euclid-tinh-chat-cua-hai-duong-thang-song-song",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 1
+    },
+    {
+      "slug": "toan-7-bai-11-dinh-li-va-chung-minh-dinh-li",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-11-uoc-chung-uoc-chung-lon-nhat",
+      "category": "Toán học",
+      "exploration": "gcd",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 8,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-12-boi-chung-boi-chung-nho-nhat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 8,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-13-tap-hop-cac-so-nguyen",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-14-phep-cong-va-phep-tru-so-nguyen",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-15-quy-tac-dau-ngoac",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-16-phep-nhan-so-nguyen",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-17-phep-chia-het-uoc-va-boi-cua-mot-so-nguyen",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-18-tam-giac-deu-hinh-vuong-luc-giac-deu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-19-hinh-chu-nhat-hinh-thoi-hinh-binh-hanh-hinh-thang-can",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-2-cong-tru-nhan-chia-so-huu-ti",
+      "category": "Toán học",
+      "exploration": "rational-numberline",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-20-chu-vi-va-dien-tich-cua-mot-so-tu-giac-da-hoc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-21-hinh-co-truc-doi-xung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-22-hinh-co-tam-doi-xung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-23-mo-rong-khai-niem-phan-so-phan-so-bang-nhau",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-24-so-sanh-phan-so-hon-so-duong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-25-phep-cong-va-phep-tru-phan-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-26-phep-nhan-va-phep-chia-phan-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-27-hai-bai-toan-ve-phan-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-28-so-thap-phan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-29-tinh-toan-voi-so-thap-phan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-3-luy-thua-cua-mot-so-huu-ti",
+      "category": "Toán học",
+      "exploration": "rational-numberline",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-30-lam-tron-va-uoc-luong-chu-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-31-mot-so-bai-toan-ve-ti-so-va-ti-so-phan-tram",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-32-diem-va-duong-thang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-33-diem-nam-giua-hai-diem-tia",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-34-doan-thang-do-dai-doan-thang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-35-trung-diem-cua-doan-thang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-36-goc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-37-so-do-goc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-38-du-lieu-va-thu-thap-du-lieu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-39-bang-thong-ke-va-bieu-do-tranh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-4-quy-tac-dau-ngoac-va-quy-tac-chuyen-ve",
+      "category": "Toán học",
+      "exploration": "equation-balance",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-40-bieu-do-cot",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-41-bieu-do-cot-kep",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-42-ket-qua-co-the-va-su-kien-trong-tro-choi-thi-nghiem",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-43-xac-suat-thuc-nghiem",
+      "category": "Toán học",
+      "exploration": "probability",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-5-so-thap-phan-vo-han-tuan-hoan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-6-so-vo-ti-can-bac-hai-so-hoc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-7-tap-hop-cac-so-thuc",
+      "category": "Toán học",
+      "exploration": "rational-numberline",
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-bai-8-goc-o-vi-tri-dac-biet-tia-phan-giac-cua-mot-goc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 2
+    },
+    {
+      "slug": "toan-7-bai-9-hai-duong-thang-song-song-va-dau-hieu-nhan-biet",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 1
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-1-so-huu-ti",
+      "category": "Toán học",
+      "exploration": "rational-numberline",
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-2-tinh-chia-het-trong-tap-hop-cac-so-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 36,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-2-so-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-3-so-nguyen",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 36,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-7-on-tap-chuong-3-goc-va-hai-duong-thang-song-song",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-4-mot-so-hinh-phang-trong-thuc-tien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 36,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-5-tinh-doi-xung-cua-hinh-phang-trong-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 36,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-6-phan-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 36,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-7-so-thap-phan",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 12,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-8-nhung-hinh-hinh-hoc-co-ban",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-9-du-lieu-va-xac-suat-thuc-nghiem",
+      "category": "Toán học",
+      "exploration": "probability",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-1-tap-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 8,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-10-so-nguyen-to-hop-so",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 8,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-2-cach-ghi-so-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-3-thu-tu-trong-tap-hop-cac-so-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 7,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-4-phep-cong-va-phep-tru-so-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 6,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-5-phep-nhan-va-phep-chia-so-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 8,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-6-luy-thua-voi-so-mu-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 10,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-7-thu-tu-thuc-hien-cac-phep-tinh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 9,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-8-quan-he-chia-het-va-tinh-chat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 8,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-bai-9-dau-hieu-chia-het",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 8,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-6-on-tap-chuong-1-tap-hop-cac-so-tu-nhien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 36,
+      "diagrams": 0
+    },
+    {
+      "slug": "bo-go-tieng-viet-cho-mac",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ham-so-bac-hai",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 2,
+      "diagrams": 0
+    },
+    {
+      "slug": "viet-doan-van-cam-nhan",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "present-simple",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toc-do-chuyen-dong",
+      "category": "Khoa học tự nhiên",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-trinh-tu-hoc-flutter-dart",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "10-ham-excel-thong-dung-nhat",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "10-ham-google-sheet-co-ma-excel-khong-co",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "10-nguyen-tac-thiet-ke-slide-powerpoint",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "10-tinh-nang-cua-affinity-photo-vo-cung-ba-dao",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cau-tieng-nga-thong-dung",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "100-cau-tieng-trung-thong-dung",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "1000-tu-tieng-nga-thong-dung-nhat",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "1000-tu-vung-hsk-4-phien-ban-moi",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "1000-tu-vung-hsk-5-phien-ban-moi",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "1100-tu-vung-hsk-6-phien-ban-moi",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "15-truyen-co-tich-tieng-anh-cho-be",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "150-tu-va-cum-tu-tieng-nga-co-ban",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "150-tu-vung-hsk-1-cho-nguoi-moi-bat-dau",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "150-mau-powerpoint-dep-mien-phi",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "2-bo-giao-an-toan-12-canh-dieu-file-word",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "2-mau-don-xin-nghi-coi-thi-tot-nghiep-vao-10",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "2000-chu-kanji-thong-dung-nhat",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "214-bo-thu-han-ngu",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-chung-minh-hai-mat-phang-song-song",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "300-tu-vung-hsk-2-phien-ban-cu",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "4-cach-chuyen-powerpoint-sang-scorm",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "40-cau-thanh-ngu-tieng-nga",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "400-cau-tieng-trung-thong-dung-viet-anh",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "5-mau-powerpoint-cho-giao-vien-mien-phi",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "50-bo-thu-thuong-dung-pdf",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "500-tu-ghep-tieng-trung-boi",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "5615-tu-vung-hsk-7-tu-vung-hsk-8-tu-vung-hsk-9-moi-nhat",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "700-tu-vung-hsk-2-phien-ban-moi",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "900-tu-vung-hsk-3-phien-ban-moi",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "gioi-thieu-cai-dat-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-phep-toan-trong-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cau-lenh-vong-lap-while-trong-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-giang-ung-dung-dao-ham-de-khao-sat-ham-so-ctst",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-giang-ung-dung-dao-ham-de-khao-sat-va-ve-do-thi-ham-so-kntt",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-bai-giang-vecto-va-he-truc-toa-do-trong-khong-gian-kntt",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-tap-bien-ngau-nhien-va-luat-phan-phoi-xac-suat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-tap-day-them-toan-9-canh-dieu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-tap-day-them-toan-9-chan-troi-sang-tao-file-word",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-tho-tinh-dien-tich-cac-hinh-de-thuoc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-toan-cong-viec-chung-lop-4",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-toan-nang-luong-hoa-hoc-dot-chay-nhien-lieu",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-toan-ve-nang-suat",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bang-ky-tu-dac-biet-thuong-dung",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bao-cao-day-toan-bang-tieng-anh-cap-so-cong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bat-dang-thuc-cosi-va-ung-dung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "binh-am-la-gi-cach-doc-pinyin-tieng-trung",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bo-de-thi-van-tac-pham-dat-nuoc",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-bai-tho-van-trong-sgk-tieu-hoc-cu",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-bang-don-vi-do-lop-5",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-bat-dang-thuc-thuong-su-dung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-buoc-de-giai-mot-bai-toan-nhu-the-nao",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-dang-toan-to-hop-xac-suat-nhi-thuc-newton",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-phep-toan-trong-dart-toan-tu-dart-flutter",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-phim-tat-trong-excel-tren-macbook",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-phim-tat-trong-final-cut-pro-x",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-phuong-phap-boi-duong-hoc-sinh-gioi-toan-tieu-hoc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-quy-tac-bieu-dien-hinh-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-tu-khoa-trong-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-chia-tinh-tu-trong-tieng-duc",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "chung-minh-duong-thang-song-song-voi-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-chung-minh-duong-thang-vuong-goc-voi-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-dang-ky-office-365-mien-phi-tu-gia-han",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-doc-bang-chu-cai-tieng-nga",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-ghep-nhieu-anh-thanh-1-anh-tren-macbook",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-lam-bai-doc-hieu-ngu-van-12",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-lam-bai-nghi-luan-ve-mot-su-viec-hien-tuong-doi-song",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-lam-bai-nghi-luan-ve-mot-van-de-tu-tuong-dao-li",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-mo-bai-tay-tien",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-noi-i-love-you-bang-nhieu-thu-tieng",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-su-dung-cong-cu-pen-tool-trong-affinity-designer",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "font-chu-viet-nam-vni-vn-tcvn-day-du-nhat",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-tim-giao-tuyen-cua-hai-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-tinh-goc-giua-duong-thang-va-mat-phang-lop-11",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-tinh-khoang-cach-tu-mot-diem-den-mot-mat-phang",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-viet-50-bo-thu-thuong-dung",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-viet-cong-thuc-toan-tren-canva",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-viet-ket-bai-trong-van-nghi-luan",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-viet-mo-bai-nghi-luan-xa-hoi",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-viet-than-bai-nghi-luan",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-xoa-phong-xanh-trong-obs",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cau-hoi-trac-nghiem-bai-8-che-bien-dau-mo-chuyen-de-kntt",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "chia-se-kinh-nghiem-su-dung-cua-cac-pp-ktdh-vua-tim-hieu-o-tren-trong-thuc-tien-nha-truong-cua-thay-co",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-01-mol-este-tao-boi-axit-2-lan-axit-hai-chuc-va-ancol-mot-ancol-don-chuc-tac-dung-hoan-toan-voi-dung-dich-naoh-thu-duoc-64-gam-ancol",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-081-gam-al-vao-100-ml-dung-dich-chua-feno33-01m-cuno32-04m-va-agno3-02m",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-163-gam-hon-hop-fe-al-mg-tac-dung-vua-du-voi-dung-dich-chua-hcl-va-h2so4",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-28-gam-hon-hop-x-gom-cu-va-ag-phan-ung-hoan-toan-voi-dung-dich-hno3-du",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-273-gam-hon-hop-x-gom-hai-este-no-don-chuc-tac-dung-vua-du-voi-dung-dich-koh-thu-duoc-308-gam-hon-hop",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-308-gam-hon-hop-x-gom-fe-feo-feco3-mg-mgo-va-mgco3-tac-dung-vua-du-voi-dung-dich-h2so4-loang-thu-duoc-784-lit-dktc-hon-hop-khi",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-axit-cacboxylic-x-phan-ung-voi-chat-y-thu-duoc-mot-muoi-co-cong-thuc-phan-tu-c3h9o2n",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-e-z-f-t-deu-la-cac-hop-chat-huu-co-no-mach-ho-va-thoa-man-so-do-cac-phan-ung-e-naoh-x-y-z-2-x-hcl-f-nacl",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-hon-hop-e-gom-hai-chat-huu-co-x-c3h11n3o5-va-y-c4h9no4-tao-boi-axit-cacboxylic-da-chuc-deu-mach-ho",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-m-gam-hon-hop-x-gom-axit-glutamic-va-glyxin-tac-dung-vua-du-voi-dung-dich-hcl-thu-duoc-dung-dich-chua-m-219-gam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-so-do-cac-phan-ung-sau-x-baoh2-y-z",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-so-do-cac-phan-ung-theo-dung-ti-le-mol-a-x-4agno3-6nh3-2h2o-x1-4ag-4nh4no3",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-so-do-chuyen-hoa-z-f-x-e-baoh2-ey-f-z",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-so-do-phan-ung-sau-x1-h2o-x2-x3-h2",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-so-do-phan-ung-theo-dung-ti-le-mol-a-x-2naoh-x1-x2-x3-c-x2-hcl-x5-nacl",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-so-do-phan-ung-theo-dung-ti-le-mol-x-2naoh-y-z-h2o-t0",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-so-do-phan-ung-e-naoh-x-y-f-naoh-x-z-2",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-tu-tu-den-het-tung-giot-dung-dich-chua-a-mol-hcl-vao-dung-dich-chua-b-mol-na2co3-thu-duoc-v-lit-khi",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "chon-diem-roi-trong-bat-dang-thuc-cosi",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "kieu-xau-string-trong-python-kieu-chuoi-trong-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "chuyen-de-thiet-dien-trong-hinh-hoc-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-12-chuyen-de-ung-dung-dao-ham-de-khao-sat-ham-so-canh-dieu-kntt-ctst",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "chung-minh-ba-duong-thang-dong-quy-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "chuong-trinh-giao-duc-pho-thong-moi-2018-mon-hoa-hoc",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cong-cu-corner-tool-cua-affinity-designer",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "crackinh-propan-thu-duoc-hon-hop-khi-x-gom-3-hidrocacbon-dan-toan-bo-x-qua-binh-dung-dung-dich-br2",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "danh-sach-300-tu-vung-hsk-1-phien-ban-moi",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "dien-phan-200-ml-dung-dich-cuso4-voi-dien-cuc-tro-bang-dong-dien-mot-chieu",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "dien-phan-200-ml-dung-dich-feno32-voi-dong-dien-mot-chieu-cuong-do-dong-dien-1a",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "dien-phan-dung-dich-x-gom-x-mol-kcl-va-y-mol-cuno32-dien-cuc-tro-mang-ngan-xop",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "dot-chay-hoan-toan-132-gam-este-x-thu-duoc-06-mol-co2-va-06-mol-h2o-cong-thuc-phan-tu-cua-x-la",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "dot-hon-hop-x-gom-fe-va-cu-trong-o2-thu-duoc-m-gam-hon-hop-y-gom-fe-cu-fe3o4-va-cuo",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "file-luyen-viet-50-bo-thu-thuong-dung",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "font-chu-viet-tay-font-chu-tieu-hoc",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "gia-tri-luong-giac-cua-goc-tu-0-den-180",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giai-bai-toan-chuyen-dong-lop-9",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giai-phuong-trinh-bang-phuong-phap-nhan-lien-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giai-toan-tieu-hoc-bang-phuong-phap-thu-chon",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoa-10-bai-6-hoa-hoc-ve-phan-ung-chay-va-no",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoa-11-kntt-ca-nam-word-powerpoint",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoc-tap-bai-6-diem-chop-chay-nhiet-do-ngon-lua-nhiet-do-tu-boc-chay",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-toan-12-canh-dieu",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-10-bai-16-cac-yeu-to-anh-huong-den-toc-do-phan-ung-hoa-hoc",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-10-bai-22-hydrogen-halide-muoi-halide",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-10-bai-23-on-tap-chuong-7",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-11-bai-1-khai-niem-ve-can-bang-hoa-hoc-kntt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-11-bai-19-carboxylic-acid-chan-troi-sang-tao",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-11-bai-2-can-bang-trong-dung-dich-nuoc-kntt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-11-bai-24-carboxylic-acid-kntt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-11-bai-4-nitrogen-kntt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-hoa-hoc-11-ket-noi-tri-thuc-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-khbd-hoa-12-cd-word-powerpoint-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-khbd-hoa-12-ctst-word-powerpoint-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-1-khai-niem-ve-can-bang-hoa-hoc-kntt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-12-cong-thuc-phan-tu-hop-chat-huu-co-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-14-on-tap-chuong-3-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-15-alkane-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-17-arene-hydrocarbon-thom-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-18-on-tap-chuong-4-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-19-dan-xuat-halogen-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-20-alcohol-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-22-on-tap-chuong-5-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-24-carboxylic-acid-kntt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-25-on-tap-chuong-6-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-5-ammonia-muoi-ammonium-kntt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-toan-10-ket-noi-tri-thuc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-toan-12-kntt-file-word",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-trinh-powerpoint-2016-pdf",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "goc-giua-hai-duong-thang-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "gv-su-dung-pp-ktdh-trong-video-minh-hoa-co-phu-hop-khong-vi-sao",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hai-chat-ran-x-y-co-so-mol-bang-nhau-tien-hanh-cac-thi-nghiem-sau-thi-nghiem-1-hoa-tan-x",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ham-an-danh-trong-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ham-so-bac-nhat-he-phuong-trinh-bac-nhat",
+      "category": "Toán học",
+      "exploration": "linear-function",
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hap-thu-448-lit-khi-co2-dktc-vao-200-ml-dung-dich-x-chua-na2co3-10m-va-koh-15m",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "he-thuc-luong-trong-tam-giac-lop-10",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hien-tuong-chu-chong-chu-trong-chu-han",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hinh-chop-hinh-lang-tru-hinh-hop-la-gi",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hoa-tan-het-126-gam-hon-hop-al-va-mg-co-ty-le-mol-tuong-ung-la-2-3-trong-dung-dich-x-chua",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hoa-tan-hoan-toan-2652-gam-al2o3-bang-mot-luong-vua-du-dung-dich-hno3-thu-duoc-247-gam-dung-dich-x",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hoc-affinity-designer-cac-tinh-nang-co-ban",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hon-hop-e-gom-bon-este-deu-co-cong-thuc-c8h8o2-va-co-vong-benzen-cho-1632-gam-e-tac-dung-toi-da",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hon-hop-e-gom-hai-hidrocacbon-mach-ho-x-y-voi-mx-my-80-cho-01-mol-e-co-khoi-luong-47-gam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hon-hop-x-gom-na-ba-na2o-va-bao-hoa-tan-hoan-toan-219-gam-x-vao-nuoc-thu-duoc-112-lit-khi-h2",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hsk-la-gi-nhung-dieu-can-biet-ve-ky-thi-nang-luc-tieng-trung",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-cach-them-lut-mau-vao-final-cut-pro-x",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-cach-chuyen-dong-thanh-cot-trong-excel",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-cong-cu-node-tool-trong-affinity-designer",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-giai-de-toan-thpt-2025",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-lap-trinh-python-python-guilde",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-su-dung-affinity-photo-co-ban-cho-nguoi-moi",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-su-dung-may-tinh-casio-giai-toan-trac-nghiem",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-su-dung-phan-mem-doit",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-su-dung-phan-mem-geogebra",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-su-dung-phan-mem-lumi",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "khoang-cach-giua-hai-duong-thang-cheo-nhau",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ki-nang-lam-bai-doc-hieu-ngu-van",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "kieu-du-lieu-list-danh-sach-trong-python",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "link-tai-giao-an-powerpoint-ngu-van-12-ca-3-bo-sach",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ly-thuyet-va-bai-tap-dau-nhi-thuc-bac-nhat",
+      "category": "Toán học",
+      "exploration": "linear-function",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ly-thuyet-va-bai-tap-dau-tam-thuc-bac-hai",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "mau-bao-cao-bien-phap-nang-cao-chat-luong-giang-day-thi-giao-vien-gioi",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "mau-thu-gioi-thieu-hoc-sinh-cua-giao-vien-cho-cac-truong-dai-hoc",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "nguyen-ly-bernoulli-trong-cuoc-song",
+      "category": "Vật lí",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "nho-rat-tu-tu-400ml-dung-dich-hcl-05m-vao-100ml-dung-dich-hon-hop-chua-nahco3-05m-va-na2co3-1m",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "nhung-cau-giao-tiep-tieng-trung-thong-dung-hang-ngay",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "nhung-cong-cu-nao-thuong-duoc-su-dung-trong-phuong-phap-quan-sat-neu-uu-nhuoc-diem-cua-phuong-phap-quan-sat",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "nung-nong-a-mol-hon-hop-x-gom-propen-axetilen-va-hidro-voi-xuc-tac-ni-trong-binh-kin-chi-xay-ra-phan-ung-cong-h2",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "nuoc-dong-bang-la-qua-trinh-toa-nhiet-hay-thu-nhiet",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "on-thi-vao-lop-10-mon-ngu-van-phan-tieng-viet",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "pdf-sach-tu-hoc-tieng-phan",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phat-trien-nang-luc-van-dung-kien-thuc-ki-nang-cho-hoc-sinh-thong-qua-he-thong-bai-tap-chu-de-cau-tao-nguyen-tu-mon-hoa-hoc-10",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phan-mem-resize-anh-hang-loat-mien-phi",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phan-mem-ve-hinh-tikz-cho-latex",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phan-tich-uu-diem-va-han-che-cua-viec-lua-chon-va-su-dung-pp-ktdh-trong-hoat-dong-day-hoc-gv-thuc-hien-trong-video",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phan-tich-va-lay-vi-du-minh-hoa-cu-the-viec-thuc-hien-yeu-cau-dam-bao-khai-thac-hieu-qua-phu-hop-co-so-vat-chat",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-bao-toan-dien-tich",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-bao-toan-electron",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-bao-toan-khoi-luong",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-bao-toan-nguyen-to",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-duong-cheo",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-khai-thac-do-bat-bao-hoa",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-lua-chon-tinh-huong",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-phan-chia-khoi-da-dien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-suy-luan-don-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-tang-giam-khoi-luong",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tim-thiet-dien-bang-phep-chieu-xuyen-tam",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-trung-binh",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-trinh-chua-tri-tuyet-doi",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ppct-hoa-11-kntt-co-chuyen-de-hoc-tap",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ppct-mon-ngu-van-10",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ppct-mon-ngu-van-11",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ppct-mon-ngu-van-12",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "python-lam-duoc-nhung-gi",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "python-bai-toan-xep-hau-su-dung-de-quy",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "quy-doi-este",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "quy-doi-peptit",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "quy-trinh-lua-chon-va-su-dung-pp-ktdh-cho-mot-chu-de-bai-hoc-trong-mon-hoa-hoc-o-thpt",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tien-hanh-san-xuat-ruou-vang-bang-phuong-phap-len-men-ruou-voi-nguyen-lieu-la-168-kg-qua-nho-tuoi-chua-15-glucozo-ve-khoi-luong",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "skkn-long-ghep-tro-choi-dan-gian-vao-hoat-dong-giao-duc-the-chat-lop-5-nham-gop-phan-phat-trien-pham-chat-va-nang-luc-cho-hoc-sinh",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "skkn-mot-so-bien-phap-giup-tre-nha-tre-18-24-thang-tuoi-ham-thich-den-lop",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "skkn-mot-so-bien-phap-xay-dung-goc-thu-vien-than-thien-gop-phan-hinh-thanh-thoi-quen-doc-sach-cho-tre-ngay-tu-nho",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "skkn-ung-dung-kahoot-quizizz-vao-day-hoc-tich-cuc-trong-mon-gdcd-o-truong-thpt",
+      "category": "Giáo dục KTPL",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "so-sanh-1-so-voi-2-nghiem-cua-phuong-trinh-bac-hai",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "so-sanh-chuong-trinh-toan-2006-va-chuong-trinh-toan-2018-lop-12",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "so-sanh-tu-vung-hsk-moi-va-cu",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "stem-che-tao-binh-dien-phan-hoa-hoc-lop-10",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "stem-hoa-hoc-lop-11-tach-tinh-dau-tu-cac-nguon-thao-moc-tu-nhien",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "stem-hoa-hoc-lop-12-lam-com-ruou",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "stem-hoa-hoc-lop-12-lam-xa-phong-tu-dau-mo-da-qua-su-dung",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "stem-san-xuat-tui-giay-tu-than-cay-chuoi-va-dau-an",
+      "category": "Khoa học tự nhiên",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "su-khac-biet-nhat-giua-danh-gia-kien-thuc-ki-nang-va-danh-gia-nang-luc-la-gi",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "sua-loi-font-tieng-viet-file-csv-google-microsoft-forms",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tai-lieu-lap-trinh-python-excel",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tai-lieu-on-tap-dau-nam-mon-hoa-hoc-lop-12",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tap-hop-va-cac-phep-toan-tap-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "thay-co-dua-vao-nhung-tieu-chi-danh-gia-nao-de-lua-chon-su-dung-pp-ktdh-cua-mot-chu-de-trong-mon-hoa-hoc",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "the-8-basic-sentence-patterns-in-english",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "the-nao-la-kiem-tra-viet-nhung-cong-cu-nao-thuong-duoc-su-dung-trong-phuong-phap-kiem-tra-viet",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "thiet-dien-la-gi-va-cac-phuong-phap-tim-thiet-dien",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "thuat-toan-giai-sudoku-bang-quay-lui-backtracking",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "thuat-toan-sinh-cac-day-nhi-phan-co-do-dai-n",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "thuy-phan-hoan-toan-148-gam-este-don-chuc-x-bang-dung-dich-naoh-du-dun-nong-thu-duoc-164-gam-muoi-y",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tien-trinh-day-hoc-cua-mot-bai-day-theo-huong-phat-trien-pham-chat-nang-luc-hoc-sinh-thuong-gom-cac-hoat-dong-nao",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tim-dieu-kien-de-tam-thuc-bac-hai-luon-duong",
+      "category": "Toán học",
+      "exploration": "quadratic",
+      "cards": 3,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tim-m-de-ham-so-dong-bien",
+      "category": "Toán học",
+      "exploration": "derivative-tangent",
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "lien-he-giua-cung-va-day-cung",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-lop-4-lap-so-tu-nhien-va-quy-tac-dem",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tom-tat-kien-thuc-dia-li-thi-tot-nghiep-thpt",
+      "category": "Địa lí",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-idioms-thong-dung-trong-tieng-anh",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "top-500-tinh-tu-trong-tieng-anh-thong-dung-nhat",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-1500-chu-han-pho-bien-nhat-trong-tieng-trung",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-dap-an-tat-ca-cac-module-mon-hoa-hoc-thpt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-tai-lieu-on-thi-tot-nghiep-thpt-mon-toan-2025",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-tai-lieu-xac-suat-co-dieu-kien-toan-12",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-xac-suat-co-dieu-kien-pdf-lop-12",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "trong-binh-kin-dung-tich-khong-doi-chua-hon-hop-khi-x-gom-h2-va-n2-chat-xuc-tac-thich-hop",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-khoa-and-trong-python-de-lam-gi",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-m-kg-mun-cua-chua-50-xenlulozo-con-lai-la-tap-chat-tro-san-xuat-duoc-80-kg-glucozo-voi-hieu-suat-toan-bo-qua-trinh-la-80-gia-tri-cua-m-la",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-vung-tieng-anh-ve-cac-loai-cay",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-vung-tieng-anh-ve-cac-loai-hoa",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-vung-tieng-anh-ve-cac-loai-thuoc",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-vung-tieng-anh-ve-mau-sac",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-vung-tieng-nhat-cho-brse",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-vung-toan-tieng-anh-lop-1",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ung-voi-cong-thuc-phan-tu-c2h7o2n-x-co-bao-nhieu-chat-vua-phan-ung-duoc-voi-dung-dich-naoh-vua-phan-ung",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "van-nghi-luan-la-gi",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "vecto-va-he-toa-do-trong-khong-gian-toan-12-ctst",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "vi-sao-tieng-nhat-dung-3-loai-chu-kanji-hiragana-katakana",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "vo-ghi-bai-hoc-hoa-11-kntt-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "xac-dinh-he-so-ham-so-bac-2-bang-may-tinh-casio",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "xac-dinh-thiet-dien-bang-phuong-phap-giao-tuyen-goc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-khbd-hoa-12-kntt-word-powerpoint-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "vo-ghi-bai-hoc-hoa-11-canh-dieu-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-11-bai-11-phuong-phap-tach-biet-va-tinh-che-hop-chat-huu-co-kntt",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-hoc-11-kntt-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-powerpoint-hoa-hoc-10-kntt-ca-nam",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoa-10-bai-8-phong-chong-chay-no",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tu-hoc-tieng-do-thai-gioi-thieu-va-bang-chu-cai",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoc-tap-bai-4-entropy-va-bien-thien-nang-luong-tu-do-gibbs",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoa-10-bai-9-thuc-hanh-ve-cau-truc-phan-tu",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-toan-10-canh-dieu-file-word",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "resource",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoa-10-bai-10-thuc-hanh-thi-nghiem-hoa-hoc-ao",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoa-10-bai-11-thuc-hanh-tinh-tham-so-cau-truc-va-nang-luong",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoc-tap-bai-2-phan-ung-hat-nhan",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-an-chuyen-de-hoc-tap-bai-3-nang-luong-hoat-hoa-cua-phan-ung-hoa-hoc",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ppct-hoa-10-kntt-co-chuyen-de-hoc-tap",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-giao-an-va-cac-chuyen-de-hoc-tap-hoa-hoc-10",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "stem-hoa-hoc-lop-11-su-dung-bap-cai-tim-lam-chat-chi-thi-axit-bazo",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-skkn-mon-hoa-hoc-cap-thpt",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-cac-chuyen-de-hoa-hoc-lop-10",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-cac-chuyen-de-hoa-hoc-lop-12",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "dong-dang-hoa",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "xac-dinh-thiet-dien-su-dung-quan-he-vuong-goc",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-toan-co2-so2-tac-dung-voi-dung-dich-kiem-co-loi-giai-chi-tiet",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ly-thuyet-va-bai-tap-kim-loai-tac-dung-voi-axit-hno3-co-loi-giai-chi-tiet",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "ly-thuyet-va-bai-tap-dien-phan-co-loi-giai-chi-tiet",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-hoc-tieng-nga-cho-nguoi-moi-bat-dau",
+      "category": "Ngoại ngữ",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tom-tat-ly-thuyetphuong-trinh-duong-thang-lop-10",
+      "category": "Toán học",
+      "exploration": "linear-function",
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-9-giai-bai-toan-bang-cach-lap-he-phuong-trinh",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bo-cong-cu-cho-gsp-geometers-sketchpad-tool-for-gsp",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tro-choi-powerpoint-cho-hoc-sinh",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-bai-tap-phuong-phap-don-chat-xep-hinh",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bien-luan-cong-thuc-muoi-amoni-huu-co-day-du-chi-tiet",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-ki-thuat-phuong-phap-giai-bai-tap-peptit-day-du-chi-tiet",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-cac-chuyen-de-hoa-hoc-lop-11",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "danh-phap-cac-chat-hoa-hoc-chuong-trinh-giao-duc-pho-thong-moi-2018",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-tai-lieu-thu-vien-stem-steam",
+      "category": "Các môn khác",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-tu-duy-don-chat-xep-hinh-giai-bai-tap-hoa-hoc-huu-co",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 2,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "giai-bai-tap-chat-beo-theo-phuong-phap-don-chat",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 1,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-trinh-chua-can-bat-phuong-trinh-chua-can",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "hoan-vi-to-hop-chinh-hop",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-giao-an-chu-de-stem-trong-mon-hoa-hoc",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phuong-phap-quy-doi",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cach-tinh-goc-giua-hai-mat-phang-trong-khong-gian",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 2,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    }
+  ]
+}

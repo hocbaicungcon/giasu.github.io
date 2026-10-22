@@ -1,0 +1,61 @@
+name: Validate and deploy built website
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Validate built Word add-in
+        run: |
+          node --input-type=module <<'JS'
+          import assert from 'node:assert/strict';
+          import { readdirSync, statSync } from 'node:fs';
+          import { spawnSync } from 'node:child_process';
+          import { join } from 'node:path';
+          import { scanPackage, makeEquationPackage, convertMathTypeInPackage } from './word-addin/src/ooxml.js';
+          import { convertNativeToMathType } from './word-addin/src/mathtype-object.js';
+          function check(dir) {
+            for (const name of readdirSync(dir)) {
+              const path = join(dir, name);
+              if (statSync(path).isDirectory()) {
+                if (!['vendor', 'katex', 'guide'].includes(name)) check(path);
+              } else if (name.endsWith('.js')) {
+                const result = spawnSync(process.execPath, ['--check', path], { encoding: 'utf8' });
+                assert.equal(result.status, 0, result.stderr);
+              } else assert.ok(!name.endsWith('.map'), 'No source maps: ' + path);
+            }
+          }
+          check('word-addin');
+          const pkg = makeEquationPackage('').replace('<w:p></w:p>', '<w:p><w:r><w:t>$1$ và $t = \\qty{3}{\\second}$</w:t></w:r></w:p>');
+          assert.equal(scanPackage(pkg).equations.length, 2);
+          const word = convertMathTypeInPackage(pkg, { convertMathType: false });
+          assert.equal(word.converted, 2);
+          const mt = await convertNativeToMathType(word.pkg, {
+            render: async () => ({ png: new Uint8Array([137, 80, 78, 71]), width: 20, height: 12, baseline: 2 }),
+          });
+          assert.equal(mt.converted, 2);
+          console.log('Built JavaScript and LaTeX → Word → MathType checks passed.');
+          JS
+      - uses: actions/configure-pages@v6.0.0
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: .
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5

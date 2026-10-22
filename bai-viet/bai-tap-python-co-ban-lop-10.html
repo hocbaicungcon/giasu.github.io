@@ -1,0 +1,780 @@
+<!doctype html><!-- credit: giasu.ai.vn --><html lang="vi"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-XW4JWJM2DH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XW4JWJM2DH");</script><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bài tập Python cơ bản lớp 10 · gia sư thông minh</title><meta name="description" content="Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình,"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://drive.google.com"><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"></noscript><meta name="theme-color" content="#23332e"><link rel="icon" type="image/svg+xml" sizes="any" href="../favicon.svg"><link rel="apple-touch-icon" href="../assets/og-cover.png"><link rel="stylesheet" href="../assets/style.css?v=ae37b7d5d47b"><style>@page{size:A4;margin:18mm 14mm 18mm 14mm;@top-left{content:"Bài tập Python cơ bản lớp 10";font-size:8.5pt;font-weight:600;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#475569;border-bottom:.5pt solid #cbd5e1;padding-bottom:2mm}@top-right{content:"giasu.ai.vn";font-size:8.5pt;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#64748b;border-bottom:.5pt solid #cbd5e1;padding-bottom:2mm}@bottom-left{content:"Truy cập https://giasu.ai.vn để tải thêm nhiều bài giảng, đề thi.";font-size:8pt;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#475569;border-top:.5pt solid #cbd5e1;padding-top:2mm}@bottom-right{content:"Trang " counter(page) " / " counter(pages);font-size:8pt;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#475569;border-top:.5pt solid #cbd5e1;padding-top:2mm}}</style><script src="../assets/preferences.js?v=ae37b7d5d47b"></script><link rel="canonical" href="https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta property="og:locale" content="vi_VN"><meta property="og:type" content="article"><meta property="og:title" content="Bài tập Python cơ bản lớp 10"><meta property="og:description" content="Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình,"><meta property="og:url" content="https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="https://giasu.ai.vn/assets/og-cover.png"><meta property="og:image:alt" content="Bài tập Python cơ bản lớp 10"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Bài tập Python cơ bản lớp 10"><meta name="twitter:description" content="Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình,"><meta name="twitter:image" content="https://giasu.ai.vn/assets/og-cover.png"><meta name="twitter:image:alt" content="Bài tập Python cơ bản lớp 10"><meta property="article:published_time" content="2024-10-02T00:00:00+07:00"><meta property="article:section" content="CNTT"><meta property="article:tag" content="Python"><meta property="article:tag" content="Bài tập Tin 10"><meta property="article:tag" content="CNTT"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html#article","isPartOf":{"@id":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html"},"headline":"Bài tập Python cơ bản lớp 10","description":"Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình,","url":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html","datePublished":"2024-10-02T00:00:00+07:00","dateModified":"2024-10-02T00:00:00+07:00","inLanguage":"vi","image":"https://giasu.ai.vn/assets/og-cover.png","publisher":{"@type":"Organization","@id":"https://giasu.ai.vn/#organization","name":"gia sư thông minh","url":"https://giasu.ai.vn/","logo":{"@type":"ImageObject","url":"https://giasu.ai.vn/hocbaicungcon_round.svg"}},"author":{"@type":"Organization","name":"gia sư thông minh","url":"https://giasu.ai.vn/"},"articleSection":"CNTT","keywords":"Python, Bài tập Tin 10, CNTT"},{"@type":"BreadcrumbList","@id":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://giasu.ai.vn/"},{"@type":"ListItem","position":2,"name":"CNTT","item":"https://giasu.ai.vn/thu-vien.html?category=CNTT"},{"@type":"ListItem","position":3,"name":"Bài tập Python cơ bản lớp 10","item":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html"}]}]}</script></head><body><a class="skip" href="#main">Đến nội dung</a><header><div class="nav wrap"><a class="brand" href="../"><img src="../hocbaicungcon_round.svg" alt="Gia Sư Thông Minh" width="46" height="46"><span><strong class="brand-name">gia sư</strong> <b>thông minh<span class="dot">.</span></b></span></a><a class="grading-link" href="../cham-thi/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12l3 3 7-7"/></svg><span class="grading-label"><span>Chấm thi</span><span>trắc nghiệm</span></span><span class="grading-free">Free</span></a><nav id="site-menu" aria-label="Điều hướng chính"><details class="nav-exams nav-library"><summary>Môn</summary><div class="nav-submenu"><a href="../thu-vien.html">Tất cả bài học</a><a href="../thu-vien.html?category=To%C3%A1n">Toán học</a><a href="../thu-vien.html?category=V%C4%83n">Ngữ văn</a><a href="../thu-vien.html?category=Anh">Ngoại ngữ</a><a href="../thu-vien.html?category=L%C3%AD">Vật lí</a><a href="../thu-vien.html?category=Ho%C3%A1">Hóa học</a><a href="../thu-vien.html?category=Sinh">Sinh học</a><a href="../thu-vien.html?category=Tin">CNTT</a><a href="../thu-vien.html?category=S%E1%BB%AD">Lịch sử</a><a href="../thu-vien.html?category=%C4%90%E1%BB%8Ba">Địa lí</a><a href="../thu-vien.html?category=C%C3%A1c%20m%C3%B4n%20kh%C3%A1c">Các môn khác</a></div></details><details class="nav-exams"><summary>Lớp</summary><div class="nav-submenu nav-grid-grades"><a href="../lop-1.html">Lớp 1</a><a href="../lop-2.html">Lớp 2</a><a href="../lop-3.html">Lớp 3</a><a href="../lop-4.html">Lớp 4</a><a href="../lop-5.html">Lớp 5</a><a href="../lop-6.html">Lớp 6</a><a href="../lop-7.html">Lớp 7</a><a href="../lop-8.html">Lớp 8</a><a href="../lop-9.html">Lớp 9</a><a href="../lop-10.html">Lớp 10</a><a href="../lop-11.html">Lớp 11</a><a href="../lop-12.html">Lớp 12</a></div></details><details class="nav-exams"><summary>Luyện tập</summary><div class="nav-submenu"><a href="../phieu-bai-tap/">Phiếu bài tập</a><a href="../de-kiem-tra/?group=viet-nam">Đề thi Việt Nam</a><a href="../de-kiem-tra/?group=quoc-te">Đề thi quốc tế</a><a href="../game-luyen-tap/">Luyện tập tương tác</a><a href="../luyen-viet/">Luyện viết chữ Hán, Nhật</a></div></details><details class="nav-exams"><summary>Giải trí</summary><div class="nav-submenu"><a href="../giai-tri/">Tất cả nội dung</a><a href="../giai-tri/cau-do-iq.html">Câu đố IQ</a><a href="../giai-tri/do-vui-tieng-anh.html">English Riddles</a><a href="../giai-tri/chuyen-vui.html">Giai thoại</a><a href="../giai-tri/danh-ngon.html">Danh ngôn</a><a href="../giai-tri/meo-hoc-tap.html">Study tips</a><a href="../giai-tri/truyen-cuoi-tieng-anh.html">English Jokes</a><a href="http://logicholic.com/" target="_blank" rel="noopener noreferrer">Games</a></div></details><a class="nav-pill" href="../gioi-thieu.html">Giới thiệu <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></a><div class="display-settings"><button class="display-toggle" type="button" aria-label="Tùy chỉnh hiển thị" aria-expanded="false" aria-controls="display-options"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="currentColor"/><circle cx="15" cy="17" r="3" fill="currentColor"/></svg></button><div id="display-options" class="display-controls" role="group" aria-label="Tùy chỉnh hiển thị"><button type="button" data-action="less" aria-label="Giảm cỡ chữ" title="Giảm cỡ chữ">A−</button><button type="button" data-action="more" aria-label="Tăng cỡ chữ" title="Tăng cỡ chữ">A+</button><button type="button" data-action="font" aria-label="Chuyển font chữ" title="Chuyển font chữ" aria-pressed="false">𝑨</button><button type="button" data-action="theme" aria-label="Đổi giao diện" title="Đổi giao diện" aria-pressed="false"><span class="ui-symbol ui-symbol-moon" aria-hidden="true"></span></button></div></div></nav><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><b class="sr-only">Mở menu</b></button></div></header><main id="main" class="article-wrap wrap has-toc lesson-course"><a class="back" href="../thu-vien.html">← Trở về thư viện</a><div class="article-heading"><nav class="eyebrow breadcrumb" aria-label="Đường dẫn bài viết"><a href="../thu-vien.html?category=CNTT">CNTT</a><span aria-hidden="true">/</span><a href="../lop-10.html">Lớp 10</a><span aria-hidden="true">/</span><a href="../thu-vien.html?type=B%C3%A0i%20t%E1%BA%ADp">Bài tập</a></nav><h1>Bài tập Python cơ bản lớp 10</h1><p>Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình,</p><div class="article-meta"><time datetime="2024-10-02">2/10/2024</time><div class="tags"><a class="tag" href="../thu-vien.html?tag=Python">#Python</a><a class="tag" href="../thu-vien.html?tag=B%C3%A0i%20t%E1%BA%ADp%20Tin%2010">#Bài tập Tin 10</a><a class="tag" href="../thu-vien.html?tag=CNTT">#CNTT</a></div></div></div><section class="site-share" data-share-url="https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-lop-10.html" data-share-title="Bài tập Python cơ bản lớp 10"  aria-label="Chia sẻ trang"><button class="share-toggle" type="button" data-share-toggle aria-expanded="false" aria-controls="site-share-panel" aria-label="Chia sẻ trang" title="Chia sẻ"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg></button><div class="share-panel" id="site-share-panel" hidden><div class="share-actions"><a class="share-icon share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgiasu.ai.vn%2Fbai-viet%2Fbai-tap-python-co-ban-lop-10.html" target="_blank" rel="noopener noreferrer" aria-label="Chia sẻ lên Facebook" title="Chia sẻ lên Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.3 22v-8.7h2.9l.4-3.4h-3.3V7.7c0-1 .3-1.7 1.7-1.7h1.8V3a24 24 0 0 0-2.6-.1c-2.5 0-4.3 1.5-4.3 4.4v2.6H7v3.4h2.9V22z"/></svg></a><button class="share-icon share-zalo" type="button" data-share-zalo aria-label="Chia sẻ qua Zalo" title="Chia sẻ qua Zalo"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0068ff"/><path d="M5 7h22v13c0 3-3 5-7 5h-6l-6 3 1-5c-3-1-4-3-4-6z" fill="#fff"/><text x="16" y="18.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="700" fill="#0068ff">Zalo</text></svg></button><a class="share-icon share-x" href="https://x.com/intent/tweet?url=https%3A%2F%2Fgiasu.ai.vn%2Fbai-viet%2Fbai-tap-python-co-ban-lop-10.html&amp;text=B%C3%A0i%20t%E1%BA%ADp%20Python%20c%C6%A1%20b%E1%BA%A3n%20l%E1%BB%9Bp%2010" target="_blank" rel="noopener noreferrer" aria-label="Chia sẻ lên X" title="Chia sẻ lên X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l8.2-9.4L2.8 2h6.5l4.5 6.7L18.9 2zm-1.1 18h1.7L8.3 4H6.5L17.8 20z"/></svg></a><a class="share-icon share-telegram" href="https://t.me/share/url?url=https%3A%2F%2Fgiasu.ai.vn%2Fbai-viet%2Fbai-tap-python-co-ban-lop-10.html&amp;text=B%C3%A0i%20t%E1%BA%ADp%20Python%20c%C6%A1%20b%E1%BA%A3n%20l%E1%BB%9Bp%2010" target="_blank" rel="noopener noreferrer" aria-label="Chia sẻ qua Telegram" title="Chia sẻ qua Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m21.5 3.4-3.1 16c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.8L18 6.6c.4-.4-.1-.6-.6-.3L6.4 13.2l-4.7-1.5c-1-.3-1.1-1 .2-1.5L20.3 3c.9-.3 1.6.2 1.2.4z"/></svg></a><button class="share-icon" type="button" data-share-native aria-label="Chia sẻ qua ứng dụng khác" title="Chia sẻ qua ứng dụng khác" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3m-4 4 4-4 4 4M5 13v7h14v-7"/></svg></button><button class="share-icon" type="button" data-share-copy aria-label="Sao chép liên kết" title="Sao chép liên kết"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H4v13h4"/></svg></button></div></div><p data-share-status role="status" aria-live="polite"></p></section><div class="article-layout"><div class="article-main"><details class="toc-box"><summary><span class="toc-box-title"><span class="toc-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h1m-1 6h1m-1 6h1"/></svg></span> Mục lục bài viết</span><span class="toc-count">10 mục</span></summary><nav class="toc-nav" aria-label="Mục lục bài viết"><ol class="toc-list"><li class="toc-item toc-level-2"><a href="#1-nhap-xuat-co-ban">1. Nhập xuất cơ bản</a></li><li class="toc-item toc-level-2"><a href="#2-cau-truc-re-nhanh">2. Cấu trúc rẽ nhánh</a></li><li class="toc-item toc-level-2"><a href="#3-cau-truc-lap">3. Cấu trúc lặp</a></li><li class="toc-item toc-level-2"><a href="#4-chuong-trinh-con">4. Chương trình con</a></li><li class="toc-item toc-level-2"><a href="#5-kieu-du-lieu-xau">5. Kiểu dữ liệu xâu</a></li><li class="toc-item toc-level-2"><a href="#6-kieu-du-lieu-tep">6. Kiểu dữ liệu tệp</a></li><li class="toc-item toc-level-2"><a href="#7-kieu-du-lieu-mang">7. Kiểu dữ liệu mảng</a></li><li class="toc-item toc-level-2"><a href="#8-kieu-du-lieu-tu-dien">8. Kiểu dữ liệu từ điển</a></li><li class="toc-item toc-level-2"><a href="#9-kieu-du-lieu-xau">9. Kiểu dữ liệu xâu</a></li><li class="toc-item toc-level-2"><a href="#10-huong-doi-tuong">10. Hướng đối tượng</a></li></ol></nav></details><article class="prose"><p>Bài viết này cung cấp một số bài tập Python cơ bản giúp các bạn bước đầu làm quen với ngôn ngữ lập trình Python về cách nhập dữ liệu, in kết quả ra màn hình, cách sử dụng các hàm số học chuẩn, câu lệnh điều kiện if, câu lệnh vòng lặp for,…</p>
+<p>Mời bạn tham khảo thêm <a href="/bai-viet/bai-tap-python-co-ban-co-loi-giai.html">100+ Bài tập Python cơ bản có lời giải</a>.</p>
+<h2 id="1-nhap-xuat-co-ban">1. Nhập xuất cơ bản</h2>
+<p><strong>Bài 1.</strong> Viết chương trình xuất ra màn hình nhiệt độ (oK) tương ứng khi nhập vào nhiệt độ (oC)?</p>
+<pre><code class="language-python"># Nhập nhiệt độ Celsius từ người dùng
+celsius = float(input(&quot;Nhập nhiệt độ Celsius: &quot;))
+
+# Chuyển đổi nhiệt độ từ Celsius sang Kelvin
+kelvin = celsius + 273.15
+
+# Xuất ra màn hình nhiệt độ Kelvin tương ứng
+print(&quot;Nhiệt độ tương ứng là:&quot;, kelvin, &quot;K&quot;)
+</code></pre>
+<p><strong>Bài 2.</strong> Viết chương nhập vào 2 số nguyên dương m và n (m&gt;n), hãy in ra màn hình phần nguyên và phần dư của m chia cho n?</p>
+<pre><code class="language-python"># Nhập vào 2 số nguyên dương m và n
+m = int(input(&quot;Nhập số nguyên dương m: &quot;))
+n = int(input(&quot;Nhập số nguyên dương n (n &lt; m): &quot;))
+
+# Tính phần nguyên và phần dư của m chia n
+div = m // n
+mod = m % n
+
+# In kết quả ra màn hình
+print(&quot;Kết quả phép chia m/n là:&quot;, div, &quot;với phần dư là:&quot;, mod)
+</code></pre>
+<p><strong>Bài 3.</strong> Viết chương trình Python nhập vào độ dài 2 cạnh của hình chữ nhật, tính chu vi và diện tích hình chữ nhật đó.</p>
+<pre><code class="language-python">#chu vi, dien tich hcn
+a = float(input(&#39;Nhập độ dài cạnh thứ nhất: &#39;))
+b = float(input(&#39;Nhập độ dài cạnh thứ hai: &#39;))
+cv = (a+b)*2
+dt = a*b
+print(&#39;Chu vi = {0}&#39;.format(cv))
+print(&#39;Dien tich = {0}&#39;.format(dt))
+</code></pre>
+<p><strong>Bài 4.</strong> Viết chương trình Python nhập vào bán kính của hình tròn, tính chu vi và diện tích hình tròn đó.</p>
+<pre><code class="language-python"># chu vi, dien tich hinh tron
+r = float(input(&#39;Nhập bán kính hình tròn: &#39;))
+cv = 2*r* 3.14
+dt = r*r* 3.14
+print(&#39;Chu vi = {0}&#39;.format(cv))
+print(&#39;Dien tich = {0}&#39;.format(dt))
+</code></pre>
+<p><strong>Bài 5.</strong> Viết chương trình Python nhập vào ba số a,b,c bất kì. Kiểm tra xem 3 số đó có thể  là độ dài ba cạnh tam giác hay không, nếu  không  thì in  ra màn  hình  ‘ Không tạo thành tam giác’. Ngược lại, tính chu vi và diện tích tam giác đó.</p>
+<pre><code class="language-python">#kiểm tra tam giac, chu vi, diện tích tam giác
+import math
+a = float(input(&#39;Nhập độ dài cạnh thứ nhất: &#39;))
+b = float(input(&#39;Nhập độ dài cạnh thứ hai: &#39;))
+c = float(input(&#39;Nhập độ dài cạnh thứ ba: &#39;))
+if a+b&gt;c and a+c&gt;b and b+c&gt;a:
+   cv = a+b+c
+   p = (a+b+c)/2
+   dt = math.sqrt(p*(p-a)*(p-b)*(p-c))
+   print(&#39;Chu vi = {0}&#39;.format(cv))
+   print(&#39;Dien tich = {0}&#39;.format(dt))
+else: print(&#39;Không tạo thành tam giác&#39;)
+</code></pre>
+<p><strong>Bài 6.</strong> Viết chương trình nhập ba số nguyên dương a, b, h từ bàn phím lần lượt là độ dài đáy lớn, đáy bé và chiều cao của một hình thang. Tính diện tích hình thang và in kết quả ra màn hình.</p>
+<pre><code class="language-python"># Nhập ba số nguyên dương a, b, h từ bàn phím
+a = int(input(&quot;Nhập độ dài đáy lớn a: &quot;))
+b = int(input(&quot;Nhập độ dài đáy bé b: &quot;))
+h = int(input(&quot;Nhập chiều cao h: &quot;))
+
+# Tính diện tích hình thang
+area = (a + b) * h / 2
+
+# In kết quả ra màn hình
+print(&quot;Diện tích hình thang là:&quot;, area)
+</code></pre>
+<h2 id="2-cau-truc-re-nhanh">2. Cấu trúc rẽ nhánh</h2>
+<p><strong>Bài 1:</strong> Viết chương trình nhập vào số nguyên dương n, kiểm tra và xuất ra màn hình n là số chẵn hay số lẻ?</p>
+<pre><code class="language-python">n = int(input(&quot;Nhap vao mot so nguyen duong: &quot;))
+
+if n % 2 == 0:
+    print(n, &quot;la so chan&quot;)
+else:
+    print(n, &quot;la so le&quot;)
+</code></pre>
+<p>Trong đoạn code trên, hàm <code>input()</code> được sử dụng để nhập vào một chuỗi từ bàn phím và sau đó hàm <code>int()</code> được sử dụng để chuyển chuỗi đó thành một số nguyên. Lệnh điều kiện if-else được sử dụng để kiểm tra xem n có chia hết cho 2 hay không, nếu có thì n là số chẵn, ngược lại thì n là số lẻ. Sau đó, kết quả được in ra trên màn hình bằng cách sử dụng hàm <code>print()</code>.</p>
+<p>Ví dụ:</p>
+<pre><code class="language-python">Nhap vao mot so nguyen duong: 5
+5 la so le
+
+Nhap vao mot so nguyen duong: 6
+6 la so chan
+</code></pre>
+<p><strong>Bài 2:</strong> Cho biểu thức f(x,y)=3<em>sin(x)+4</em> cos(x). Viết chương trình tính giá trị của biểu thức f(x,y) tại x, y nhập vào từ bàn phím.</p>
+<p>Để tính giá trị của biểu thức <code>f(x, y) = 3*sin(x) + 4* cos(x)</code> tại x, y nhập vào từ bàn phím trong Python, ta có thể sử dụng thư viện <code>math</code> để tính toán các hàm sin và cos. Cụ thể, ta có thể viết mã nguồn như sau:</p>
+<pre><code class="language-python">import math
+
+x = float(input(&quot;Nhập giá trị x: &quot;))
+y = float(input(&quot;Nhập giá trị y: &quot;))
+
+result = 3  *math.sin(x) + 4*  math.cos(y)
+
+print(&quot;Giá trị của biểu thức f(x, y) là:&quot;, result)
+</code></pre>
+<p><strong>Bài 3:</strong> Viết chương trình nhập vào năm bất kỳ (ví dụ 2023), hãy cho biết năm đó có phải năm nhuận hay không?</p>
+<pre><code class="language-python">year = int(input(&quot;Nhập vào một năm: &quot;))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, &quot;là năm nhuận&quot;)
+else:
+    print(year, &quot;không phải là năm nhuận&quot;)
+</code></pre>
+<p><strong>Bài 4:</strong> Em hãy viết đoạn chương trình để xuất ra màn hình xếp loại học lực của học sinh theo giá trị điểm của học sinh?</p>
+<p>Để xếp loại học lực của học sinh dựa trên giá trị điểm của học sinh, ta có thể sử dụng các quy tắc sau:</p>
+<ul>
+<li><p>Nếu điểm trung bình của học sinh &gt;= 9.0, xếp loại học sinh là “Xuất sắc”.</p>
+</li>
+<li><p>Nếu điểm trung bình của học sinh &gt;= 8.0 và &lt; 9.0, xếp loại học sinh là “Giỏi”.</p>
+</li>
+<li><p>Nếu điểm trung bình của học sinh &gt;= 7.0 và &lt; 8.0, xếp loại học sinh là “Khá”.</p>
+</li>
+<li><p>Nếu điểm trung bình của học sinh &gt;= 5.0 và &lt; 7.0, xếp loại học sinh là “Trung bình”.</p>
+</li>
+<li><p>Nếu điểm trung bình của học sinh &lt; 5.0, xếp loại học sinh là “Yếu”.</p>
+</li>
+</ul>
+<p>Ví dụ: Giả sử ta có điểm trung bình của học sinh là 8.5. Kết quả xếp loại học lực của học sinh đó là “Giỏi”.</p>
+<p>Dưới đây là mã nguồn Python để xác định xếp loại học lực của học sinh dựa trên giá trị điểm của học sinh:</p>
+<pre><code class="language-python">diem_trung_binh = float(input(&quot;Nhập vào điểm trung bình của học sinh: &quot;))
+
+if diem_trung_binh &gt;= 9.0:
+    print(&quot;Xuất sắc&quot;)
+elif diem_trung_binh &gt;= 8.0:
+    print(&quot;Giỏi&quot;)
+elif diem_trung_binh &gt;= 7.0:
+    print(&quot;Khá&quot;)
+elif diem_trung_binh &gt;= 5.0:
+    print(&quot;Trung bình&quot;)
+else:
+    print(&quot;Yếu&quot;)
+</code></pre>
+<p>Ở đoạn mã trên, ta sử dụng hàm <code>input()</code> để nhập vào giá trị điểm trung bình của học sinh. Sau đó, ta sử dụng lệnh if-elif để kiểm tra giá trị điểm và xác định xếp loại học lực tương ứng. Kết quả sẽ được in ra trên màn hình bằng cách sử dụng hàm <code>print()</code>.</p>
+<p>Ví dụ:</p>
+<pre><code class="language-python">Nhập vào điểm trung bình của học sinh: 8.5
+Giỏi
+</code></pre>
+<p><strong>Bài 5:</strong> Viết chương trình giải phương trình bậc nhất một ẩn ax + b = 0, với hệ số a, b nhập vào từ bàn phím.</p>
+<pre><code class="language-python"># Giải phương trình bậc nhất ax+b=0
+a, b= map(float, input(&#39;Nhập a, b: &#39;).split())
+if a==0 and b!=0: print(&#39;Phương trình vô nghiệm&#39;)
+else:
+    if a==0 and b==0: print(&#39;Phương trình vô số nghiệm&#39;)
+    else: print(&#39;x= {0}&#39;.format(-b/a))
+</code></pre>
+<p><strong>Bài 6:</strong> Viết chương trình giải phương trình bậc hai ax2 + bx + c = 0 (a≠0), với hệ số a, b, c nhập vào từ bàn phím.</p>
+<pre><code class="language-python">import math
+a, b, c = map(int, input(&#39;Nhập a, b, c: &#39;).split())
+d=b**2-4*a* c
+if d&lt;0: print(&#39;Phương trình vô nghiệm&#39;)
+else:
+    if d==0: print(&#39;phuong trinh co nghiem kep&#39;)
+    else:
+        x1=(-b-math.sqrt(d))/(2*a)
+        x2=(-b+math.sqrt(d))/(2*a)
+        print(&#39;x1={0}, x2={1}&#39;.format(x1,x2))
+</code></pre>
+<p><strong>Bài 7:</strong> Viết chương trình kiểm tra xem điểm M(x,y) có nằm trong hình tròn tâm I(a,b) và bán kính R bằng cách xuất ra giá trị True nếu điểm M nằm trong hoặc trên hình tròn và False nếu nằm ngoài hình tròn, với x, y, a, b, R nhập vào từ bàn phím?</p>
+<p>Để kiểm tra xem điểm M(x,y) có nằm trong hình tròn tâm I(a,b) và bán kính R hay không, ta cần tính khoảng cách giữa điểm M và tâm I, sau đó so sánh khoảng cách đó với bán kính R của hình tròn. Nếu khoảng cách nhỏ hơn hoặc bằng bán kính R, thì điểm M nằm trong hoặc trên hình tròn, ngược lại, điểm M nằm ngoài hình tròn.</p>
+<p>Dưới đây là mã nguồn Python để thực hiện việc kiểm tra:</p>
+<pre><code class="language-python">import math
+
+# Nhập giá trị x, y, a, b, R từ bàn phím
+x = float(input(&quot;Nhập giá trị x của điểm M: &quot;))
+y = float(input(&quot;Nhập giá trị y của điểm M: &quot;))
+a = float(input(&quot;Nhập giá trị a của tâm I: &quot;))
+b = float(input(&quot;Nhập giá trị b của tâm I: &quot;))
+R = float(input(&quot;Nhập giá trị bán kính R của hình tròn: &quot;))
+
+# Tính khoảng cách giữa điểm M và tâm I
+distance = math.sqrt((x - a)**2 + (y - b)** 2)
+
+# So sánh khoảng cách với bán kính R của hình tròn
+if distance &lt;= R:
+    print(True)
+else:
+    print(False)
+</code></pre>
+<p><strong>Bài 8:</strong> Viết chương trình nhập vào các số a, b, c, sau đó kiểm tra bộ ba số a, b, c vừa nhập vào là bộ ba cạnh của tam giác thường, tam giác vuông, tam giác cân, tam giác vuông cân, tam giác đều hay không phải là bộ ba cạnh của tam giác.</p>
+<p>Để kiểm tra xem bộ ba số a, b, c có phải là bộ ba cạnh của một loại tam giác nào đó hay không, ta cần kiểm tra các điều kiện sau:</p>
+<ul>
+<li><p>Tổng hai cạnh bất kỳ phải lớn hơn cạnh thứ ba.</p>
+</li>
+<li><p>Điều kiện của từng loại tam giác cụ thể, ví dụ:</p>
+</li>
+</ul>
+<p>Tam giác thường: Không có đặc điểm gì đặc biệt, tức là không phải tam giác vuông, cân, vuông cân hoặc đều.</p>
+<ul>
+<li><p>Tam giác vuông: Có một góc vuông.</p>
+</li>
+<li><p>Tam giác cân: Hai cạnh bằng nhau.</p>
+</li>
+<li><p>Tam giác vuông cân: Vừa có một góc vuông và hai cạnh bằng nhau.</p>
+</li>
+<li><p>Tam giác đều: Có ba cạnh bằng nhau.</p>
+</li>
+</ul>
+<p>Dưới đây là mã nguồn Python để thực hiện việc kiểm tra:</p>
+<pre><code class="language-python"># Nhập giá trị a, b, c từ bàn phím
+a = float(input(&quot;Nhập giá trị cạnh a: &quot;))
+b = float(input(&quot;Nhập giá trị cạnh b: &quot;))
+c = float(input(&quot;Nhập giá trị cạnh c: &quot;))
+
+# Kiểm tra xem bộ ba số a, b, c có phải là bộ ba cạnh của tam giác hay không
+if (a + b &gt; c) and (a + c &gt; b) and (b + c &gt; a):
+    if a == b == c:
+        print(&quot;Đây là bộ ba cạnh của tam giác đều.&quot;)
+    elif a == b or a == c or b == c:
+        if (a**2 == b** 2 + c**2) or (b** 2 == a**2 + c** 2) or (c**2 == a** 2 + b**2):
+            print(&quot;Đây là bộ ba cạnh của tam giác vuông cân.&quot;)
+        else:
+            print(&quot;Đây là bộ ba cạnh của tam giác cân.&quot;)
+    elif (a**2 == b** 2 + c**2) or (b** 2 == a**2 + c** 2) or (c**2 == a** 2 + b**2):
+        print(&quot;Đây là bộ ba cạnh của tam giác vuông.&quot;)
+    else:
+        print(&quot;Đây là bộ ba cạnh của tam giác thường.&quot;)
+else:
+    print(&quot;Đây không phải là bộ ba cạnh của tam giác.&quot;)
+</code></pre>
+<p><strong>Bài 9.</strong> Viết chương trình tìm số lớn nhất trong ba số nhập vào từ bàn phím.</p>
+<pre><code class="language-python"># Tìm giá trị lớn nhất trong 3 số
+a,b,c=map(float,input(&#39;Nhập a, b, c: &#39;).split())
+max=a
+if b&gt;max: max=b
+if c&gt;max: max=c
+print(&#39;So lon nhat= {0}&#39;.format(max))
+</code></pre>
+<p><strong>Bài 10.</strong> Viết chương trình tìm số nhỏ nhất trong bốn số nhập vào từ bàn phím.</p>
+<pre><code class="language-python"># Tìm giá trị nhỏ nhất trong 4 số
+a,b,c,d=map(float,input(&#39;Nhập a, b, c, d: &#39;).split())
+min=a
+if b&lt;min: min=b
+if c&lt;min: min=c
+if d&lt;min: min=d
+print(&#39;Số nhỏ nhất= {0}&#39;.format(min))
+</code></pre>
+<p><strong>Bài 11.</strong> Viết chương trình in ra bảng cửu chương.</p>
+<pre><code class="language-python"># In bảng cửu chương
+for n in range(2,10):
+     for i in range(1,11): print(&#39;%1d x %1d = %2d&#39; %(n,i,n*i))
+     print()
+</code></pre>
+<h2 id="3-cau-truc-lap">3. Cấu trúc lặp</h2>
+<p><strong>Bài 1:</strong> Viết chương trình tính tổng các số từ 1 đến n, với n là số nguyên dương nhập vào từ bàn phím.</p>
+<p>Để tính tổng các số từ 1 đến n, chúng ta có thể sử dụng vòng lặp for để lặp từ 1 đến n, sau đó cộng dồn các số lại.</p>
+<pre><code class="language-python">n = int(input(&quot;Nhập n: &quot;))
+
+tong = 0
+for i in range(1, n+1):
+    tong += i
+
+print(&quot;Tổng các số từ 1 đến&quot;, n, &quot;là:&quot;, tong)
+</code></pre>
+<p><strong>Bài 2:</strong> Viết chương trình tính tổng của bình phương các số lẻ từ 1 đến n, với n là số nguyên dương nhập vào từ bàn phím.</p>
+<p>Để tính tổng của bình phương các số lẻ từ 1 đến n, chúng ta có thể sử dụng vòng lặp for để lặp từ 1 đến n và kiểm tra từng số có phải là số lẻ hay không. Nếu là số lẻ thì ta tính bình phương của nó và cộng vào tổng.</p>
+<pre><code class="language-python">n = int(input(&quot;Nhập n: &quot;))
+
+tong = 0
+for i in range(1, n+1):
+    if i % 2 == 1:
+        tong += i**2
+
+print(&quot;Tổng bình phương các số lẻ từ 1 đến&quot;, n, &quot;là:&quot;, tong)
+</code></pre>
+<p><strong>Bài 3:</strong> Viết chương trình nhập vào hai số nguyên dương m và n (m&gt;n), xuất ra màn hình ước chung lớn nhất và bội chung nhỏ nhất của 2 số đó.</p>
+<p>Để tìm ước chung lớn nhất của 2 số m và n, ta sử dụng thuật toán Euclid như sau:</p>
+<ul>
+<li><p>Đặt a = m, b = n.</p>
+</li>
+<li><p>Thực hiện phép chia lấy dư a % b và gán a = b, b = phép dư được lấy.</p>
+</li>
+<li><p>Lặp lại bước 2 cho đến khi b = 0.</p>
+</li>
+<li><p>Kết quả là giá trị a cuối cùng.</p>
+</li>
+</ul>
+<p>Để tính bội chung nhỏ nhất của 2 số m và n, ta sử dụng công thức:</p>
+<p>lcm(m,n) = (m * n) / gcd(m,n)</p>
+<p>Trong đó gcd(m,n) là ước chung lớn nhất của m và n.</p>
+<pre><code class="language-python">m = int(input(&quot;Nhập số nguyên dương m: &quot;))
+n = int(input(&quot;Nhập số nguyên dương n: &quot;))
+
+# Tìm ước chung lớn nhất
+a = m
+b = n
+while b != 0:
+    r = a % b
+    a = b
+    b = r
+gcd = a
+print(&quot;Ước chung lớn nhất của&quot;, m, &quot;và&quot;, n, &quot;là:&quot;, gcd)
+
+# Tìm bội chung nhỏ nhất
+lcm = (m * n) // gcd
+print(&quot;Bội chung nhỏ nhất của&quot;, m, &quot;và&quot;, n, &quot;là:&quot;, lcm)
+</code></pre>
+<p><strong>Bài 4:</strong> Viết chương trình kiểm tra số nguyên dương n nhập vào từ bàn phím có phải là <a href="https://vi.wikipedia.org/wiki/S%E1%BB%91_ho%C3%A0n_thi%E1%BB%87n">số hoàn hảo</a> hay không.</p>
+<p>Một số nguyên dương n được gọi là số hoàn hảo (số hoàn thiện) nếu tổng các ước của n (không tính chính nó) bằng n. Ví dụ: số 6 là số hoàn hảo vì 6 = 1 + 2 + 3.</p>
+<p>Để kiểm tra xem một số nguyên dương n có phải là số hoàn hảo hay không, ta có thể sử dụng thuật toán sau:</p>
+<ol>
+<li><p>Khởi tạo biến sum = 0.</p>
+</li>
+<li><p>Duyệt từ i = 1 đến n//2 (lấy phần nguyên của n chia 2).</p>
+</li>
+<li><p>Nếu n chia hết cho i, cộng i vào sum.</p>
+</li>
+<li><p>Kiểm tra nếu sum = n, thì n là số hoàn hảo. Ngược lại, n không là số hoàn hảo.</p>
+</li>
+</ol>
+<pre><code class="language-python">n = int(input(&quot;Nhập vào số nguyên dương n: &quot;))
+
+sum = 0
+for i in range(1, n//2 + 1):
+    if n % i == 0:
+        sum += i
+
+if sum == n:
+    print(n, &quot;là số hoàn hảo.&quot;)
+else:
+    print(n, &quot;không là số hoàn hảo.&quot;)
+</code></pre>
+<p><strong>Bài 5:</strong> Viết chương trình đếm các số nguyên tố nhỏ hơn n, với n là số nguyên dương nhập vào từ bàn phím.</p>
+<p>Để đếm số lượng các số nguyên tố nhỏ hơn n, chúng ta cần viết một hàm kiểm tra số nguyên tố và sử dụng vòng lặp để duyệt qua tất cả các số từ 2 đến n-1. Nếu số đó là số nguyên tố, chúng ta sẽ tăng biến đếm lên 1.</p>
+<ul>
+<li><p>Hàm <code>is_prime(number)</code> được sử dụng để kiểm tra xem một số nguyên dương có phải là số nguyên tố hay không. Trong hàm này, chúng ta sử dụng vòng lặp để duyệt qua tất cả các số từ 2 đến căn bậc hai của <code>number</code> để kiểm tra xem có số nào chia hết cho <code>number</code> hay không. Nếu có, <code>number</code> không phải là số nguyên tố và hàm sẽ trả về False. Nếu không, <code>number</code> là số nguyên tố và hàm sẽ trả về True.</p>
+</li>
+<li><p>Trong chương trình chính, chúng ta nhập vào số nguyên dương <code>n</code>, sau đó khởi tạo biến <code>count</code> bằng 0 để đếm số lượng các số nguyên tố. Chúng ta sử dụng vòng lặp để duyệt qua tất cả các số từ 2 đến n-1. Nếu số đó là số nguyên tố, chúng ta tăng biến <code>count</code> lên 1. Cuối cùng, chúng ta xuất ra màn hình số lượng các số nguyên tố nhỏ hơn <code>n</code>.</p>
+</li>
+</ul>
+<pre><code class="language-python">def is_prime(number):
+    &quot;&quot;&quot;
+    Kiểm tra số nguyên dương number có phải là số nguyên tố hay không.
+    Trả về True nếu là số nguyên tố, False nếu không phải.
+    &quot;&quot;&quot;
+    if number &lt; 2:
+        return False
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
+
+n = int(input(&quot;Nhập số nguyên dương n: &quot;))
+
+count = 0
+for i in range(2, n):
+    if is_prime(i):
+        count += 1
+
+print(f&quot;Số lượng các số nguyên tố nhỏ hơn {n} là: {count}&quot;)
+</code></pre>
+<p><strong>Bài 6:</strong> Viết chương trình tính tổng:</p>
+<p>S=1/a + 1/(a+1) + 1/(a+2) +…+ 1/(a+n)+…</p>
+<p>Cho đến khi 1/(a+n)&lt;0,0001. Với a là số thực bất kỳ nhập vào từ bàn phím</p>
+<p><strong>Bài 7</strong>. In ra các số chia hết cho 3 từ 1 đến 100.</p>
+<pre><code class="language-python"># Duyệt từ 1 đến 100 và in ra các số chia hết cho 3
+for i in range(1, 101):
+  if i % 3 == 0:
+    print(i)
+</code></pre>
+<p><strong>Bài 8:</strong> Nhập vào một số nguyên dương, hãy phân tích số nguyên dương đó thành tích các thừa số nguyên tố.</p>
+<ol>
+<li><p>Khởi tạo một biến result để lưu trữ các thừa số nguyên tố của n.</p>
+</li>
+<li><p>Khởi tạo biến i bằng 2.</p>
+</li>
+<li><p>Sử dụng vòng lặp while để lặp lại cho đến khi n bằng 1: a. Kiểm tra n có chia hết cho i không, nếu có thì: i. Thêm i vào biến result. ii. Chia n cho i. b. Nếu n không chia hết cho i, tăng giá trị i lên 1.</p>
+</li>
+<li><p>Trả về giá trị của biến result.</p>
+</li>
+</ol>
+<pre><code class="language-python">n = int(input(&quot;Nhập số nguyên dương n: &quot;))
+
+result = []
+i = 2
+
+while n != 1:
+    if n % i == 0:
+        result.append(i)
+        n = n // i
+    else:
+        i += 1
+
+print(&quot;Các thừa số nguyên tố của&quot;, n, &quot;là:&quot;, result)
+</code></pre>
+<p>Nếu sử dụng hàm, ta có thể sử dụng thuật toán sau:</p>
+<ol>
+<li><p>Khởi tạo một biến i bằng 2 và một danh sách factors rỗng.</p>
+</li>
+<li><p>Lặp cho đến khi số đầu vào n là 1: a. Nếu n chia hết cho i, thêm i vào danh sách factors và lấy n chia i. b. Nếu n không chia hết cho i, tăng giá trị của i lên 1.</p>
+</li>
+<li><p>Trả về danh sách factors.</p>
+</li>
+</ol>
+<pre><code class="language-python">def prime_factors(n):
+    i = 2
+    factors = []
+    while n &gt; 1:
+        if n % i == 0:
+            factors.append(i)
+            n //= i
+        else:
+            i += 1
+    return factors
+
+# Sử dụng hàm prime_factors để phân tích số nguyên dương nhập từ bàn phím
+n = int(input(&quot;Nhập một số nguyên dương: &quot;))
+print(&quot;Phân tích thành tích các thừa số nguyên tố của&quot;, n, &quot;là:&quot;, prime_factors(n))
+</code></pre>
+<p><strong>Bài 9.</strong> Tính tổng các số từ 1 đến 100.</p>
+<pre><code class="language-python">Tính tổng các số từ 1 đến 100:
+
+# Gán biến sum bằng 0
+sum = 0
+
+# Duyệt từ 1 đến 100 và cộng từng số vào sum
+for i in range(1, 101):
+  sum += i
+
+# In kết quả
+print(&quot;Tổng các số từ 1 đến 100 là:&quot;, sum)
+</code></pre>
+<p><strong>Bài 10.</strong> In ra các số chẵn từ 2 đến 100.</p>
+<pre><code class="language-python"># Duyệt từ 2 đến 100 và in ra các số chẵn
+for i in range(2, 101, 2):
+  print(i)
+</code></pre>
+<p><strong>Bài 11.</strong> In ra một <a href="https://vi.wikipedia.org/wiki/Tam_gi%C3%A1c_Pascal">tam giác Pascal</a>.</p>
+<p><img src="/assets/images/bai-tap-python-co-ban-lop-10-tam-giac-pascal.gif" alt="Bài tập Python cơ bản lớp 10 1" decoding="async" fetchpriority="high"></p>
+<pre><code class="language-python"># Khởi tạo một danh sách 2 chiều chứa các số 0
+triangle = [[0 for j in range(i+1)] for i in range(10)]
+
+# Gán giá trị cho các phần tử đầu tiên của mỗi hàng bằng 1
+for i in range(10):
+  triangle[i][0] = 1
+
+# Tính toán các giá trị còn lại trong tam giác
+for i in range(1, 10):
+  for j in range(1, i+1):
+    triangle[i][j] = triangle[i-1][j-1] + triangle[i-1][j]
+
+# In ra tam giác
+for row in triangle:
+  print(&quot; &quot;.join(str(x) for x in row))
+</code></pre>
+<p><strong>Bài 12.</strong> Tìm số nguyên tố trong một khoảng từ 2 đến 100.</p>
+<pre><code class="language-python"># Duyệt từ 2 đến 100 và kiểm tra xem số đó có phải là số nguyên tố hay không
+for i in range(2, 101):
+  is_prime = True
+  for j in range(2, i):
+    if i % j == 0:
+      is_prime = False
+      break
+  if is_prime:
+    print(i)
+</code></pre>
+<h2 id="4-chuong-trinh-con">4. Chương trình con</h2>
+<p><strong>Bài 1:</strong> Viết chương trình có sử dụng hàm lambda để trả về số giây tương ứng với các tham số giờ, phút, giây tương ứng nhập vào từ bàn phím.
+<strong>Câu 2:</strong> Viết chương trình tính tổng sau: S = 1/1! + 1/2! + … + 1/n!, với n là số nguyên dương nhập vào từ bàn phím.</p>
+<pre><code class="language-python"># Tính S=1 + 1/2! + 1/3! + ... + 1/n!
+n=int(input(&#39;Nhập n: &#39;))
+gt=1
+s=0
+for i in range(1,n+1):
+    gt=gt*i
+    s+=1/gt
+print(&#39;s={0}&#39;.format(s))
+</code></pre>
+<p><strong>Bài 3:</strong> Viết chương trình để in ra màn hình các số nguyên tố từ 1 đến n, với n là số nguyên dương nhập vào từ bàn phím.
+<strong>Bài 4:</strong> Viết chương trình giải bài toán Tháp Hà Nội. Bài toán Tháp Hà Nội (Tower of Hanoi) là một trò chơi toán học bao gồm 3 cột và với số đĩa nhiều hơn 1. Các đĩa có kích cỡ khác nhau và xếp theo tự tự tăng dần về kích cỡ từ trên xuống: đĩa nhỏ hơn ở trên đĩa lớn hơn. Nhiệm vụ của trò chơi là di chuyển các đĩa có kích cỡ khác nhau sang cột khác sao cho vẫn đảm bảo thứ tự ban đầu của các đĩa: đĩa nhỏ nằm trên đĩa lớn.</p>
+<h2 id="5-kieu-du-lieu-xau">5. Kiểu dữ liệu xâu</h2>
+<p><strong>Bài 1:</strong> Viết chương trình “chuẩn hóa” họ và tên khi người dùng nhập vào họ tên bất kỳ từ bàn phím?
+<strong>Bài 2:</strong> Viết chương trình nhập vào một xâu bất kỳ, xuất ra màn hình xâu đó sau khi đã xóa đi các ký tự số?
+<strong>Bài 3:</strong> Viết chương trình nhập vào một xâu bất kỳ, xuất ra màn hình xâu sau khi đã xóa các ký tự giống nhau liền kề.</p>
+<p><strong>Bài 4.</strong> Đếm số lần xuất hiện của mỗi từ trong một đoạn văn.</p>
+<pre><code class="language-python"># Khởi tạo một đoạn văn
+text = &quot;This is a sample text. It has some words in it. We want to count the number of times each word appears in the text.&quot;
+
+# Tách các từ trong văn bản thành một danh sách
+words = text.split()
+
+# Tạo một từ điển để lưu số lần xuất hiện của từng từ
+word_count = {}
+
+# Duyệt qua các từ trong danh sách và tăng số lần xuất hiện của từng từ lên 1
+for word in words:
+  if word in word_count:
+    word_count[word] += 1
+  else:
+    word_count[word] = 1
+
+# In kết quả
+print(&quot;Số lần xuất hiện của từng từ trong văn bản:&quot;)
+for word, count in word_count.items():
+  print(f&quot;{word}: {count}&quot;)
+</code></pre>
+<h2 id="6-kieu-du-lieu-tep">6. Kiểu dữ liệu tệp</h2>
+<p><strong>Bài 1:</strong> Viết chương trình tính tổng các số lẻ trong tệp DATA.INP gồm 1 dòng duy nhất chứa dãy các số nguyên dương cách nhau bởi dấu cách. Xuất kết quả ra tệp DATA.OUT
+<strong>Bài 2:</strong> Viết chương trình lọc các số ở văn bản gồm có nhiều dòng trong tệp DATA.INP và xuất ra tệp DATA.OUT gồm dãy các số của từng dòng tương ứng ở trong tệp DATA.INP</p>
+<h2 id="7-kieu-du-lieu-mang">7. Kiểu dữ liệu mảng</h2>
+<p><strong>Bài 1:</strong> Viết chương trình nhập vào mảng gồm n số nguyên dương, hãy xuất ra màn hình tổng của các số lẻ trong mảng đó, với n&gt;2
+<strong>Bài 2:</strong> Viết chương trình nhập vào số nguyên dương n, xuất ra màn hình các số nguyên tố nhỏ hơn n, với n&gt;2
+<strong>Bài 3:</strong> Viết chương trình nhập vào dãy các số bất kỳ, tìm số lớn nhất trong dãy số đó và xuất ra màn hình?
+<strong>Bài 4:</strong> Viết chương trình dung phương pháp list comprehension để tạo các list sau:
+a) Dãy các số là bội của 3 và nhỏ hơn 100
+b) Dãy 10 số chính phương đầu tiên
+<strong>Bài 5:</strong> Viết chương trình nhập vào dãy các số nguyên bất kỳ, kiểm tra và xuất ra màn hình xem dãy số đó có tạo thành cấp số cộng hay không?</p>
+<p><strong>Bài 6:</strong> Viết chương trình nhập vào dãy gồm n số nguyên cách nhau bởi dấu cách. Sau đó đếm và xuất ra màn hình xem trong dãy vừa nhập có bao nhiêu số nguyên tố.
+<strong>Bài 7:</strong> Viết chương trình nhập vào bàn phím số nguyên dương n, xuất ra màn hình dãy số Fibonaxi. Biết rằng dãy Fibonaxi có dạng như sau: F0 = 1, F1 = 1, Fn = Fn-1 + Fn-2 với n&gt;1
+<strong>Bài 8:</strong> Viết chương trình nhập vào 2 ma trận số nguyên kích thước mxn, sau đó xuất ra màn hình tổng của 2 ma trận đó?
+<strong>Bài 9:</strong> Viết chương trình nhập vào danh sách gồm n người, mỗi người sẽ có các thông tin như: họ và tên, tuổi, giới tính và quê quán. Sau đó xuất ra màn hình thông tin của từng người đã nhập.</p>
+<p><strong>Bài 10.</strong> Tìm số lớn nhất trong một danh sách số.</p>
+<pre><code class="language-python"># Khởi tạo danh sách số
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Gán biến max bằng số đầu tiên trong danh sách
+max = numbers[0]
+
+# Duyệt qua các số trong danh sách và cập nhật max nếu có số lớn hơn
+for number in numbers:
+  if number &gt; max:
+    max = number
+
+# In kết quả
+print(&quot;Số lớn nhất trong danh sách là:&quot;, max)
+</code></pre>
+<p><strong>Bài 11.</strong> Sắp xếp các số trong một danh sách theo thứ tự tăng dần.</p>
+<p><strong>Hướng dẫn.</strong> Để sắp xếp các số trong một danh sách theo thứ tự tăng dần, bạn có thể sử dụng một thuật toán sắp xếp như “sắp xếp chọn” (selection sort), “sắp xếp nổi bọt” (bubble sort), “sắp xếp chèn” (insertion sort) hoặc “sắp xếp nhanh” (quick sort).</p>
+<p>Dưới đây là một ví dụ về cách sử dụng Python để sắp xếp một danh sách các số theo thứ tự tăng dần bằng thuật toán sắp xếp nhanh:</p>
+<pre><code class="language-python">def quick_sort(arr):
+    if len(arr) &lt;= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less = [x for x in arr[1:] if x &lt;= pivot]
+        greater = [x for x in arr[1:] if x &gt; pivot]
+        return quick_sort(less) + [pivot] + quick_sort(greater)
+
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+sorted_list = quick_sort(my_list)
+print(sorted_list)
+</code></pre>
+<p><strong>Bài 12.</strong> Tìm số lẻ lớn nhất trong một danh sách số.</p>
+<pre><code class="language-python"># Khởi tạo danh sách số
+numbers = [5, 3, 1, 8, 4, 9, 2, 7, 6]
+
+# Gán biến max bằng số đầu tiên trong danh sách
+max = numbers[0]
+
+# Duyệt qua các số trong danh sách và cập nhật max nếu có số lớn hơn và lẻ
+for number in numbers:
+  if number &gt; max and number % 2 == 1:
+    max = number
+
+# In kết quả
+print(&quot;Số lớn nhất trong danh sách là:&quot;, max)
+</code></pre>
+<h2 id="8-kieu-du-lieu-tu-dien">8. Kiểu dữ liệu từ điển</h2>
+<p><strong>Bài 1.</strong> Viết chương trình nhập vào một xâu bất kỳ, xuất ra màn hình số lần lặp của các từ đơn trong xâu vừa nhập.</p>
+<p><strong>Bài 2.</strong> Tính tổng các phần tử trong một dictionary.</p>
+<pre><code class="language-python"># Khởi tạo dictionary
+my_dict = {&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3}
+
+# Tính tổng các giá trị trong dictionary
+total = 0
+for value in my_dict.values():
+  total += value
+
+# In kết quả
+print(&quot;Tổng các giá trị trong dictionary là:&quot;, total)
+</code></pre>
+<p><strong>Bài 3.</strong> Tìm phần tử lớn nhất trong một dictionary.</p>
+<pre><code class="language-python"># Khởi tạo dictionary
+my_dict = {&#39;a&#39;: 5, &#39;b&#39;: 2, &#39;c&#39;: 7, &#39;d&#39;: 3}
+
+# Tìm phần tử lớn nhất trong dictionary
+max_key = max(my_dict, key=my_dict.get)
+
+# In kết quả
+print(&quot;Phần tử lớn nhất trong dictionary là:&quot;, max_key)
+</code></pre>
+<h2 id="9-kieu-du-lieu-xau">9. Kiểu dữ liệu xâu</h2>
+<p><strong>Bài 1:</strong> Viết chương trình “chuẩn hóa” họ và tên khi người dùng nhập vào họ tên bất kỳ từ bàn phím?</p>
+<p><strong>Bài 2:</strong> Viết chương trình nhập vào một xâu bất kỳ, xuất ra màn hình xâu đó sau khi đã xóa đi các ký tự số?</p>
+<p><strong>Bài 3:</strong> Viết chương trình nhập vào một xâu bất kỳ, xuất ra màn hình xâu sau khi đã xóa các ký tự giống nhau liền kề.</p>
+<p><strong>Bài 4.</strong> Cho hai xâu s1, s2. Viết đoạn chương trình chèn xâu s1 vào giữa s2, tại vị trí len(s2)//2. In kết quả ra màn hình.</p>
+<p><strong>Bài 5.</strong> Viết chương trình nhập số học sinh và họ tên học sinh. Sau đó đếm xem trong danh sách có bao nhiêu bạn tên là “Hương”.</p>
+<p><strong>Bài 6.</strong> Viết chương trình nhập họ tên đầy đủ của người dùng, sau đó in thông báo tên và họ đệm của người đó.</p>
+<p><strong>Bài 7.</strong> Viết chương trình nhập số tự nhiên n rồi nhập n họ tên học sinh. Sau đó yêu cầu nhập một tên và thông báo số bạn có cùng tên trong lớp.</p>
+<p><strong>Bài 8.</strong> Đếm số lần xuất hiện của từng ký tự trong một chuỗi.</p>
+<p><strong>Hướng dẫn.</strong> Để đếm số lần xuất hiện của từng ký tự trong một chuỗi trong Python, bạn có thể sử dụng một từ điển để lưu trữ số lần xuất hiện của từng ký tự. Sau đó, bạn có thể duyệt qua các ký tự trong chuỗi và tăng số lần xuất hiện của từng ký tự lên 1.</p>
+<pre><code class="language-python"># Khởi tạo chuỗi
+my_string = &quot;This is a sample string. It has some characters in it.&quot;
+
+# Tạo một từ điển để lưu số lần xuất hiện của từng ký tự
+char_count = {}
+
+# Duyệt qua các ký tự trong chuỗi và tăng số lần xuất hiện của từng ký tự lên 1
+for char in my_string:
+  if char in char_count:
+    char_count[char] += 1
+  else:
+    char_count[char] = 1
+
+# In ra màn hình số lần xuất hiện của từng ký tự
+print(&quot;Số lần xuất hiện của từng ký tự trong chuỗi:&quot;)
+for char, count in char_count.items():
+  print(char, &quot;xuất hiện&quot;, count, &quot;lần&quot;)
+</code></pre>
+<h2 id="10-huong-doi-tuong">10. Hướng đối tượng</h2>
+<p><strong>Bài 1.</strong> Tạo một lớp Hình chữ nhật (Rectangle) có các thuộc tính chiều dài (length) và chiều rộng (width) và các phương thức tính diện tích (area) và chu vi (perimeter) của hình chữ nhật đó.</p>
+<pre><code class="language-python">class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+</code></pre>
+<p><strong>Bài 2.</strong> Tạo một lớp Hình tròn (Circle) có thuộc tính bán kính (radius) và phương thức tính diện tích (area) và chu vi (circumference) của hình tròn đó.</p>
+<pre><code class="language-python">class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * self.radius**2
+
+    def circumference(self):
+        return 2  *math.pi*  self.radius
+</code></pre>
+<p><strong>Bài 3.</strong> Tạo một lớp Điểm (Point) có các thuộc tính x và y và phương thức tính khoảng cách đến điểm khác.</p>
+<pre><code class="language-python">import math
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def distance(self, other_point):
+        dx = self.x - other_point.x
+        dy = self.y - other_point.y
+        return math.sqrt(dx**2 + dy** 2)
+</code></pre>
+<p><strong>Bài 4.</strong> Tạo một lớp Người (Person) có các thuộc tính tên (name), tuổi (age) và địa chỉ (address) và phương thức in ra thông tin của người đó.</p>
+<pre><code class="language-python">class Person:
+    def __init__(self, name, age, address):
+        self.name = name
+        self.age = age
+        self.address = address
+
+    def print_info(self):
+        print(f&quot;Name: {self.name}&quot;)
+        print(f&quot;Age: {self.age}&quot;)
+        print(f&quot;Address: {self.address}&quot;)
+</code></pre>
+<p><strong>Bài 5.</strong> Tạo một lớp Điện thoại di động (MobilePhone) có các thuộc tính tên (name), giá (price) và nhà sản xuất (manufacturer) và phương thức in ra thông tin của điện thoại đó.</p>
+<pre><code class="language-python">class MobilePhone:
+    def __init__(self, name, price, manufacturer):
+        self.name = name
+        self.price = price
+        self.manufacturer = manufacturer
+
+    def print_info(self):
+        print(f&quot;Name: {self.name}&quot;)
+        print(f&quot;Price: {self.price}&quot;)
+        print(f&quot;Manufacturer: {self.manufacturer}&quot;)
+</code></pre>
+<p><strong>Bài 6.</strong> Tạo một lớp Phân số (Fraction) có hai thuộc tính là tử số (numerator) và mẫu số (denominator) và các phương thức tính toán phép cộng, phép trừ, phép nhân và phép chia giữa các phân số.</p>
+<pre><code class="language-python">class Fraction:
+    def __init__(self, numerator, denominator):
+        self.numerator = numerator
+        self.denominator = denominator
+
+    def __add__(self, other_fraction):
+        new_numerator = self.numerator  *other_fraction.denominator + other_fraction.numerator*  self.denominator
+        new_denominator = self.denominator * other_fraction.denominator
+        return Fraction(new_numerator, new_denominator)
+
+    def __sub__(self, other_fraction):
+        new_numerator = self.numerator  *other_fraction.denominator - other_fraction.numerator*  self.denominator
+        new_denominator = self.denominator * other_fraction.denominator
+        return Fraction(new_numerator, new_denominator)
+
+    def __mul__(self, other_fraction):
+        new_numerator = self.numerator * other_fraction.numerator
+        new_denominator = self.denominator * other_fraction.denominator
+        return Fraction(new_numerator, new_denominator)
+
+    def __truediv__(self, other_fraction):
+        new_numerator = self.numerator * other_fraction.denominator
+        new_denominator = self.denominator * other_fraction.numerator
+        return Fraction(new_numerator, new_denominator)
+
+    def simplify(self):
+        gcd = math.gcd(self.numerator, self.denominator)
+        return Fraction(self.numerator // gcd, self.denominator // gcd)
+
+    def __str__(self):
+        return f&quot;{self.numerator}/{self.denominator}&quot;
+</code></pre>
+<p><strong>Bài 7.</strong> Tạo một lớp Mảng (Array) có các thuộc tính là độ dài (length) và các phần tử (elements) và phương thức thêm phần tử (append), lấy phần tử tại vị trí (get) và tính tổng các phần tử (sum).</p>
+<pre><code class="language-python">class Array:
+    def __init__(self):
+        self.length = 0
+        self.elements = []
+
+    def append(self, element):
+        self.elements.append(element)
+        self.length += 1
+
+    def get(self, index):
+        if index &lt; 0 or index &gt;= self.length:
+            raise IndexError(&quot;Index out of range&quot;)
+        return self.elements[index]
+
+    def sum(self):
+        return sum(self.elements)
+</code></pre>
+<p><strong>Bài 8.</strong> Tạo một lớp Động vật (Animal) có các thuộc tính tên (name), tuổi (age) và màu lông (fur_color) và phương thức in ra thông tin của động vật đó.</p>
+<pre><code class="language-python">class Animal:
+    def __init__(self, name, age, fur_color):
+        self.name = name
+        self.age = age
+        self.fur_color = fur_color
+
+    def print_info(self):
+        print(f&quot;Name: {self.name}&quot;)
+        print(f&quot;Age: {self.age}&quot;)
+        print(f&quot;Fur color: {self.fur_color}&quot;)
+</code></pre>
+<p><strong>Bài 9.</strong> Tạo một lớp Học sinh (Student) có các thuộc tính tên (name), tuổi (age), lớp (class_name) và phương thức in ra thông tin của học sinh đó.</p>
+<pre><code class="language-python">class Student:
+    def __init__(self, name, age, class_name):
+        self.name = name
+        self.age = age
+        self.class_name = class_name
+
+    def display_info(self):
+        print(&quot;Name:&quot;, self.name)
+        print(&quot;Age:&quot;, self.age)
+        print(&quot;Class:&quot;, self.class_name)
+</code></pre>
+<p>Ở đây, lớp Student có ba thuộc tính là name, age và class_name. Phương thức khởi tạo <code>__init__()</code> được sử dụng để khởi tạo các thuộc tính này khi đối tượng được tạo ra. Phương thức display_info() được sử dụng để in ra thông tin của học sinh, bao gồm tên, tuổi và lớp.</p>
+<p>Cách sử dụng lớp Student như sau:</p>
+<pre><code class="language-python">student1 = Student(&quot;John&quot;, 18, &quot;12A&quot;)
+student2 = Student(&quot;Mary&quot;, 17, &quot;11B&quot;)
+
+student1.display_info()  # Output: Name: John, Age: 18, Class: 12A
+student2.display_info()  # Output: Name: Mary, Age: 17, Class: 11B
+</code></pre>
+<p>Trong ví dụ này, chúng ta tạo hai đối tượng học sinh student1 và student2 với các thuộc tính khác nhau. Sau đó, chúng ta gọi phương thức display_info() của từng đối tượng để in ra thông tin của học sinh đó.</p>
+<p><strong>Bài 10.</strong> Xây dựng lớp tam giác kế thừa từ lớp đa giác.</p>
+<p>Để xây dựng lớp tam giác (Triangle) kế thừa từ lớp đa giác (Polygon), ta có thể định nghĩa lớp Triangle như sau:</p>
+<pre><code class="language-python">class Polygon:
+    def __init__(self, sides):
+        self.sides = sides
+
+    def perimeter(self):
+        return sum(self.sides)
+
+class Triangle(Polygon):
+    def __init__(self, sides):
+        super().__init__(sides)
+
+    def area(self):
+        a, b, c = self.sides
+        s = (a + b + c) / 2
+        return (s  *(s - a)*  (s - b) * (s - c)) ** 0.5
+</code></pre>
+<p>Ở đây, lớp Triangle kế thừa từ lớp Polygon bằng cách sử dụng từ khóa <code>super()</code>. Lớp Triangle có thêm phương thức area() để tính diện tích của tam giác, dựa trên công thức Heron.</p>
+<p>Cách sử dụng lớp Triangle như sau:</p>
+<pre><code class="language-python">triangle = Triangle([3, 4, 5])
+print(triangle.perimeter())  # Output: 12
+print(triangle.area())  # Output: 6.0
+</code></pre>
+<p>Trong ví dụ này, chúng ta khởi tạo một đối tượng tam giác với độ dài các cạnh lần lượt là 3, 4 và 5. Sau đó, chúng ta gọi hai phương thức perimeter() và area() của lớp Triangle để tính chu vi và diện tích của tam giác.</p>
+<nav class="post-reading-links" aria-label="Đọc tiếp cùng chủ đề"><h2>Đọc tiếp cùng chủ đề</h2><ul><li><a href="./bai-tap-python-co-ban-co-loi-giai.html">100+ Bài tập Python cơ bản có lời giải</a></li><li><a href="./15-cuon-sach-hoc-python-mien-phi.html">15 Cuốn sách học Python miễn phí</a></li><li><a href="./cac-phep-toan-trong-python.html">Bài 3. Các phép toán trong Python</a></li></ul></nav></article></div><aside class="article-toc" aria-label="Mục lục bài viết"><div class="course-sidebar-heading"><span>CNTT · Lớp 10</span><strong>Bài tập Python cơ bản lớp 10</strong></div><div class="toc-sticky"><div class="toc-title"><span class="toc-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h1m-1 6h1m-1 6h1"/></svg></span> Mục lục bài viết</div><nav class="toc-nav" aria-label="Mục lục bài viết"><ol class="toc-list"><li class="toc-item toc-level-2"><a href="#1-nhap-xuat-co-ban">1. Nhập xuất cơ bản</a></li><li class="toc-item toc-level-2"><a href="#2-cau-truc-re-nhanh">2. Cấu trúc rẽ nhánh</a></li><li class="toc-item toc-level-2"><a href="#3-cau-truc-lap">3. Cấu trúc lặp</a></li><li class="toc-item toc-level-2"><a href="#4-chuong-trinh-con">4. Chương trình con</a></li><li class="toc-item toc-level-2"><a href="#5-kieu-du-lieu-xau">5. Kiểu dữ liệu xâu</a></li><li class="toc-item toc-level-2"><a href="#6-kieu-du-lieu-tep">6. Kiểu dữ liệu tệp</a></li><li class="toc-item toc-level-2"><a href="#7-kieu-du-lieu-mang">7. Kiểu dữ liệu mảng</a></li><li class="toc-item toc-level-2"><a href="#8-kieu-du-lieu-tu-dien">8. Kiểu dữ liệu từ điển</a></li><li class="toc-item toc-level-2"><a href="#9-kieu-du-lieu-xau">9. Kiểu dữ liệu xâu</a></li><li class="toc-item toc-level-2"><a href="#10-huong-doi-tuong">10. Hướng đối tượng</a></li></ol></nav><button type="button" class="toc-top-btn" aria-label="Cuộn lên đầu trang">↑ Đầu trang</button></div></aside></div><div class="article-end"><a href="../giai-tri/meo-hoc-tap.html">✦ Mẹo học tập</a><p data-study-tip>Học từng chút một, nghỉ ngơi đều đặn.</p></div><script type="module" src="../assets/article-tip.js?v=ae37b7d5d47b"></script><section class="related related-posts" aria-label="Bài viết cùng chủ đề"><div class="related-header"><span class="overline">✦ KIẾN THỨC CÙNG CHUYÊN MỤC</span><h2>Bài viết cùng chủ đề</h2><p>Khám phá thêm các bài học và bài tập liên quan để ôn luyện vững vàng hơn.</p></div><div class="related-grid"><article class="related-card tone-0"><a class="related-card-link" href="./cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Bài 4. Các thủ tục vào ra dữ liệu cơ bản trong Python</h3><p class="related-desc">Hàm print trong Python để xuất nội dung xâu string ra màn hình, hàm input để nhập một xâu từ bàn phím.</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-1"><a class="related-card-link" href="./cac-tu-khoa-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Các từ khóa trong Python</h3><p class="related-desc">Các từ khóa trong Python chính bao gồm:</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-2"><a class="related-card-link" href="./cau-lenh-vong-lap-while-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Bài 7. Câu lệnh vòng lặp while trong Python</h3><p class="related-desc">Trong bài trước, chúng ta đã tìm hiểu về vòng lặp for trong Python, bài này chúng ta tìm hiểu về vòng lặp while (while loops) - vòng lặp với số lần lặp không</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-3"><a class="related-card-link" href="./gioi-thieu-cai-dat-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Bài 1. Giới thiệu và cài đặt Python</h3><p class="related-desc">Giới thiệu và hướng dẫn cài đặt Python - một ngôn ngữ lập trình đa năng, được tạo ra bởi Guido van Rossum từ năm cuối những năm 1980.</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-0"><a class="related-card-link" href="./ham-an-danh-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Hàm ẩn danh trong Python</h3><p class="related-desc">Hàm ẩn danh trong Python là gì? Cách khai báo hàm lambda trong Python. Ví dụ về hàm lambda trong Python sử dụng với hàm filter và hàm map() trong Python</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-1"><a class="related-card-link" href="./huong-dan-lap-trinh-python-python-guilde.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Hướng dẫn lập trình Python – Python Guide</h3><p class="related-desc">Sách Hướng dẫn lập trình Python bản dịch tiếng Việt, bản quyền thuộc về Python Software Foundation, BeOpen.com, Corporation for National Research Initiatives và Stichting Mathematisch Centrum</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article></div></section></main><div class="print-footer" aria-hidden="true"><p>Truy cập <strong>https://giasu.ai.vn</strong> để tải thêm nhiều bài giảng, đề thi.</p></div><script src="../assets/lesson.js?v=ae37b7d5d47b" defer></script><script src="../assets/lesson-practice.js?v=ae37b7d5d47b" defer></script><script type="module" src="../assets/geometry.js?v=ae37b7d5d47b"></script><script src="../assets/glossary.js?v=ae37b7d5d47b" defer></script><script src="../assets/share.js?v=ae37b7d5d47b" defer></script><footer class="wrap"><a class="brand small" href="../"><span class="footer-brand-first">gia sư</span><span class="footer-brand-second">thông minh</span><span class="dot">.</span></a><a class="footer-link" href="https://giasu.ai.vn/word-addin/huong-dan.html">Tiện ích Word</a><a class="footer-link" href="../gioi-thieu.html">Giới thiệu &amp; Miễn trừ trách nhiệm</a><a class="footer-link" href="https://amthanhnhapkhau.com.vn/danh-muc/phong-hop/thiet-bi-may-tro-giang/">loa - micro trợ giảng</a></footer><button class="go-top" type="button" aria-label="Lên đầu trang" title="Lên đầu trang">↑</button><script src="../assets/menu.js?v=ae37b7d5d47b" defer></script><script src="../assets/top.js?v=ae37b7d5d47b" defer></script></body></html>

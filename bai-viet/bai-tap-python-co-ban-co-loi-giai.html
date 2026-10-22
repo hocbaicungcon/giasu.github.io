@@ -1,0 +1,469 @@
+<!doctype html><!-- credit: giasu.ai.vn --><html lang="vi"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-XW4JWJM2DH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-XW4JWJM2DH");</script><meta name="viewport" content="width=device-width,initial-scale=1"><title>100+ Bài tập Python cơ bản có lời giải · gia sư thông minh</title><meta name="description" content="20 bài tập Python cơ bản có lời giải gồm những bài như tìm số lớn nhất trong ba số, giải phương trình bậc hai, tính giai thừa, tìm số Fibonacci..."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="dns-prefetch" href="https://drive.google.com"><link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;family=STIX+Two+Text:wght@400;500;600;700&amp;display=swap"></noscript><meta name="theme-color" content="#23332e"><link rel="icon" type="image/svg+xml" sizes="any" href="../favicon.svg"><link rel="apple-touch-icon" href="../assets/og-cover.png"><link rel="stylesheet" href="../assets/style.css?v=ae37b7d5d47b"><link rel="stylesheet" href="../assets/katex/katex.min.css?v=ae37b7d5d47b"><style>@page{size:A4;margin:18mm 14mm 18mm 14mm;@top-left{content:"100+ Bài tập Python cơ bản có lời giải";font-size:8.5pt;font-weight:600;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#475569;border-bottom:.5pt solid #cbd5e1;padding-bottom:2mm}@top-right{content:"giasu.ai.vn";font-size:8.5pt;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#64748b;border-bottom:.5pt solid #cbd5e1;padding-bottom:2mm}@bottom-left{content:"Truy cập https://giasu.ai.vn để tải thêm nhiều bài giảng, đề thi.";font-size:8pt;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#475569;border-top:.5pt solid #cbd5e1;padding-top:2mm}@bottom-right{content:"Trang " counter(page) " / " counter(pages);font-size:8pt;font-family:'Source Sans Pro',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#475569;border-top:.5pt solid #cbd5e1;padding-top:2mm}}</style><script src="../assets/preferences.js?v=ae37b7d5d47b"></script><link rel="canonical" href="https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html"><meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta property="og:locale" content="vi_VN"><meta property="og:type" content="article"><meta property="og:title" content="100+ Bài tập Python cơ bản có lời giải"><meta property="og:description" content="20 bài tập Python cơ bản có lời giải gồm những bài như tìm số lớn nhất trong ba số, giải phương trình bậc hai, tính giai thừa, tìm số Fibonacci..."><meta property="og:url" content="https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html"><meta property="og:site_name" content="gia sư thông minh"><meta property="og:image" content="https://giasu.ai.vn/assets/og-cover.png"><meta property="og:image:alt" content="100+ Bài tập Python cơ bản có lời giải"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="100+ Bài tập Python cơ bản có lời giải"><meta name="twitter:description" content="20 bài tập Python cơ bản có lời giải gồm những bài như tìm số lớn nhất trong ba số, giải phương trình bậc hai, tính giai thừa, tìm số Fibonacci..."><meta name="twitter:image" content="https://giasu.ai.vn/assets/og-cover.png"><meta name="twitter:image:alt" content="100+ Bài tập Python cơ bản có lời giải"><meta property="article:published_time" content="2022-07-01T00:00:00+07:00"><meta property="article:section" content="CNTT"><meta property="article:tag" content="Python"><meta property="article:tag" content="Bài tập Python"><meta property="article:tag" content="CNTT"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html#article","isPartOf":{"@id":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html"},"headline":"100+ Bài tập Python cơ bản có lời giải","description":"20 bài tập Python cơ bản có lời giải gồm những bài như tìm số lớn nhất trong ba số, giải phương trình bậc hai, tính giai thừa, tìm số Fibonacci...","url":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html","datePublished":"2022-07-01T00:00:00+07:00","dateModified":"2022-07-01T00:00:00+07:00","inLanguage":"vi","image":"https://giasu.ai.vn/assets/og-cover.png","publisher":{"@type":"Organization","@id":"https://giasu.ai.vn/#organization","name":"gia sư thông minh","url":"https://giasu.ai.vn/","logo":{"@type":"ImageObject","url":"https://giasu.ai.vn/hocbaicungcon_round.svg"}},"author":{"@type":"Organization","name":"gia sư thông minh","url":"https://giasu.ai.vn/"},"articleSection":"CNTT","keywords":"Python, Bài tập Python, CNTT"},{"@type":"BreadcrumbList","@id":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://giasu.ai.vn/"},{"@type":"ListItem","position":2,"name":"CNTT","item":"https://giasu.ai.vn/thu-vien.html?category=CNTT"},{"@type":"ListItem","position":3,"name":"100+ Bài tập Python cơ bản có lời giải","item":"https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html"}]}]}</script></head><body><a class="skip" href="#main">Đến nội dung</a><header><div class="nav wrap"><a class="brand" href="../"><img src="../hocbaicungcon_round.svg" alt="Gia Sư Thông Minh" width="46" height="46"><span><strong class="brand-name">gia sư</strong> <b>thông minh<span class="dot">.</span></b></span></a><a class="grading-link" href="../cham-thi/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M7 12l3 3 7-7"/></svg><span class="grading-label"><span>Chấm thi</span><span>trắc nghiệm</span></span><span class="grading-free">Free</span></a><nav id="site-menu" aria-label="Điều hướng chính"><details class="nav-exams nav-library"><summary>Môn</summary><div class="nav-submenu"><a href="../thu-vien.html">Tất cả bài học</a><a href="../thu-vien.html?category=To%C3%A1n">Toán học</a><a href="../thu-vien.html?category=V%C4%83n">Ngữ văn</a><a href="../thu-vien.html?category=Anh">Ngoại ngữ</a><a href="../thu-vien.html?category=L%C3%AD">Vật lí</a><a href="../thu-vien.html?category=Ho%C3%A1">Hóa học</a><a href="../thu-vien.html?category=Sinh">Sinh học</a><a href="../thu-vien.html?category=Tin">CNTT</a><a href="../thu-vien.html?category=S%E1%BB%AD">Lịch sử</a><a href="../thu-vien.html?category=%C4%90%E1%BB%8Ba">Địa lí</a><a href="../thu-vien.html?category=C%C3%A1c%20m%C3%B4n%20kh%C3%A1c">Các môn khác</a></div></details><details class="nav-exams"><summary>Lớp</summary><div class="nav-submenu nav-grid-grades"><a href="../lop-1.html">Lớp 1</a><a href="../lop-2.html">Lớp 2</a><a href="../lop-3.html">Lớp 3</a><a href="../lop-4.html">Lớp 4</a><a href="../lop-5.html">Lớp 5</a><a href="../lop-6.html">Lớp 6</a><a href="../lop-7.html">Lớp 7</a><a href="../lop-8.html">Lớp 8</a><a href="../lop-9.html">Lớp 9</a><a href="../lop-10.html">Lớp 10</a><a href="../lop-11.html">Lớp 11</a><a href="../lop-12.html">Lớp 12</a></div></details><details class="nav-exams"><summary>Luyện tập</summary><div class="nav-submenu"><a href="../phieu-bai-tap/">Phiếu bài tập</a><a href="../de-kiem-tra/?group=viet-nam">Đề thi Việt Nam</a><a href="../de-kiem-tra/?group=quoc-te">Đề thi quốc tế</a><a href="../game-luyen-tap/">Luyện tập tương tác</a><a href="../luyen-viet/">Luyện viết chữ Hán, Nhật</a></div></details><details class="nav-exams"><summary>Giải trí</summary><div class="nav-submenu"><a href="../giai-tri/">Tất cả nội dung</a><a href="../giai-tri/cau-do-iq.html">Câu đố IQ</a><a href="../giai-tri/do-vui-tieng-anh.html">English Riddles</a><a href="../giai-tri/chuyen-vui.html">Giai thoại</a><a href="../giai-tri/danh-ngon.html">Danh ngôn</a><a href="../giai-tri/meo-hoc-tap.html">Study tips</a><a href="../giai-tri/truyen-cuoi-tieng-anh.html">English Jokes</a><a href="http://logicholic.com/" target="_blank" rel="noopener noreferrer">Games</a></div></details><a class="nav-pill" href="../gioi-thieu.html">Giới thiệu <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></a><div class="display-settings"><button class="display-toggle" type="button" aria-label="Tùy chỉnh hiển thị" aria-expanded="false" aria-controls="display-options"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3" fill="currentColor"/><circle cx="15" cy="17" r="3" fill="currentColor"/></svg></button><div id="display-options" class="display-controls" role="group" aria-label="Tùy chỉnh hiển thị"><button type="button" data-action="less" aria-label="Giảm cỡ chữ" title="Giảm cỡ chữ">A−</button><button type="button" data-action="more" aria-label="Tăng cỡ chữ" title="Tăng cỡ chữ">A+</button><button type="button" data-action="font" aria-label="Chuyển font chữ" title="Chuyển font chữ" aria-pressed="false">𝑨</button><button type="button" data-action="theme" aria-label="Đổi giao diện" title="Đổi giao diện" aria-pressed="false"><span class="ui-symbol ui-symbol-moon" aria-hidden="true"></span></button></div></div></nav><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span></span><span></span><span></span><b class="sr-only">Mở menu</b></button></div></header><main id="main" class="article-wrap wrap has-toc lesson-course"><a class="back" href="../thu-vien.html">← Trở về thư viện</a><div class="article-heading"><nav class="eyebrow breadcrumb" aria-label="Đường dẫn bài viết"><a href="../thu-vien.html?category=CNTT">CNTT</a><span aria-hidden="true">/</span><a href="../lop-10.html">Lớp 10</a><span aria-hidden="true">/</span><a href="../thu-vien.html?type=B%C3%A0i%20t%E1%BA%ADp">Bài tập</a></nav><h1>100+ Bài tập Python cơ bản có lời giải</h1><p>20 bài tập Python cơ bản có lời giải gồm những bài như tìm số lớn nhất trong ba số, giải phương trình bậc hai, tính giai thừa, tìm số Fibonacci...</p><div class="article-meta"><time datetime="2022-07-01">1/7/2022</time><div class="tags"><a class="tag" href="../thu-vien.html?tag=Python">#Python</a><a class="tag" href="../thu-vien.html?tag=B%C3%A0i%20t%E1%BA%ADp%20Python">#Bài tập Python</a><a class="tag" href="../thu-vien.html?tag=CNTT">#CNTT</a></div></div></div><section class="site-share" data-share-url="https://giasu.ai.vn/bai-viet/bai-tap-python-co-ban-co-loi-giai.html" data-share-title="100+ Bài tập Python cơ bản có lời giải"  aria-label="Chia sẻ trang"><button class="share-toggle" type="button" data-share-toggle aria-expanded="false" aria-controls="site-share-panel" aria-label="Chia sẻ trang" title="Chia sẻ"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-4M8.6 13.5l6.8 4"/></svg></button><div class="share-panel" id="site-share-panel" hidden><div class="share-actions"><a class="share-icon share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgiasu.ai.vn%2Fbai-viet%2Fbai-tap-python-co-ban-co-loi-giai.html" target="_blank" rel="noopener noreferrer" aria-label="Chia sẻ lên Facebook" title="Chia sẻ lên Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.3 22v-8.7h2.9l.4-3.4h-3.3V7.7c0-1 .3-1.7 1.7-1.7h1.8V3a24 24 0 0 0-2.6-.1c-2.5 0-4.3 1.5-4.3 4.4v2.6H7v3.4h2.9V22z"/></svg></a><button class="share-icon share-zalo" type="button" data-share-zalo aria-label="Chia sẻ qua Zalo" title="Chia sẻ qua Zalo"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0068ff"/><path d="M5 7h22v13c0 3-3 5-7 5h-6l-6 3 1-5c-3-1-4-3-4-6z" fill="#fff"/><text x="16" y="18.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" font-weight="700" fill="#0068ff">Zalo</text></svg></button><a class="share-icon share-x" href="https://x.com/intent/tweet?url=https%3A%2F%2Fgiasu.ai.vn%2Fbai-viet%2Fbai-tap-python-co-ban-co-loi-giai.html&amp;text=100%2B%20B%C3%A0i%20t%E1%BA%ADp%20Python%20c%C6%A1%20b%E1%BA%A3n%20c%C3%B3%20l%E1%BB%9Di%20gi%E1%BA%A3i" target="_blank" rel="noopener noreferrer" aria-label="Chia sẻ lên X" title="Chia sẻ lên X"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l8.2-9.4L2.8 2h6.5l4.5 6.7L18.9 2zm-1.1 18h1.7L8.3 4H6.5L17.8 20z"/></svg></a><a class="share-icon share-telegram" href="https://t.me/share/url?url=https%3A%2F%2Fgiasu.ai.vn%2Fbai-viet%2Fbai-tap-python-co-ban-co-loi-giai.html&amp;text=100%2B%20B%C3%A0i%20t%E1%BA%ADp%20Python%20c%C6%A1%20b%E1%BA%A3n%20c%C3%B3%20l%E1%BB%9Di%20gi%E1%BA%A3i" target="_blank" rel="noopener noreferrer" aria-label="Chia sẻ qua Telegram" title="Chia sẻ qua Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m21.5 3.4-3.1 16c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.8L18 6.6c.4-.4-.1-.6-.6-.3L6.4 13.2l-4.7-1.5c-1-.3-1.1-1 .2-1.5L20.3 3c.9-.3 1.6.2 1.2.4z"/></svg></a><button class="share-icon" type="button" data-share-native aria-label="Chia sẻ qua ứng dụng khác" title="Chia sẻ qua ứng dụng khác" hidden><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3m-4 4 4-4 4 4M5 13v7h14v-7"/></svg></button><button class="share-icon" type="button" data-share-copy aria-label="Sao chép liên kết" title="Sao chép liên kết"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H4v13h4"/></svg></button></div></div><p data-share-status role="status" aria-live="polite"></p></section><div class="article-layout"><div class="article-main"><details class="toc-box"><summary><span class="toc-box-title"><span class="toc-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h1m-1 6h1m-1 6h1"/></svg></span> Mục lục bài viết</span><span class="toc-count">1 mục</span></summary><nav class="toc-nav" aria-label="Mục lục bài viết"><ol class="toc-list"><li class="toc-item toc-level-2"><a href="#bai-tap-python-co-ban">Bài tập Python cơ bản</a></li></ol></nav></details><article class="prose"><p>Mời bạn xem phiên bản đầy đủ tại đây <a href="https://divin.dev/python/2022/03/14/20-bai-tap-python.html">https://divin.dev/python/2022/03/14/20-bai-tap-python.html</a></p>
+<p>Mời bạn xem thêm <a href="/bai-viet/bai-tap-python-co-ban-lop-10.html">Bài tập Python cơ bản lớp 10</a> được chia theo từng chủ đề.</p>
+<h2 id="bai-tap-python-co-ban">Bài tập Python cơ bản</h2>
+<p><strong>Bài 1.</strong> In toàn bộ các số chẵn từ 1000 đến 2000.</p>
+<pre><code class="language-python">even_numbers=[]
+
+for i in range(1000, 2001):
+    if (i%2=0):
+        even_numbers.append(str(i))
+print (&#39;,&#39;.join(even_numbers))
+</code></pre>
+<p><strong>Bài 2.</strong> Viết chương trình tìm tất cả các số chia hết cho <code>7</code> nhưng không phải bội số của <code>5</code>, nằm trong đoạn <code>2000</code> và <code>3200</code> (tính cả <code>2000</code> và <code>3200</code>). Các số thu được sẽ được in thành chuỗi trên một dòng, cách nhau bằng dấu phẩy.</p>
+<pre><code class="language-python">j=[] for i in range(2000, 3201):
+  if (i%7==0) and (i%5!=0):
+    j.append(str(i))
+print (&#39;,&#39;.join(j))
+</code></pre>
+<p>Nếu chỉ cần in ra màn hình kết quả, chúng ta có thể không cần sử dụng <code>List</code>.</p>
+<pre><code class="language-python">for i in range(2000, 3201):
+    if (i % 7 == 0) and (i % 5 != 0):
+        print(i, end=&#39; &#39;)
+</code></pre>
+<p><strong>Bài 3.</strong> Viết một chương trình có thể tính giai thừa của một số cho trước. Kết quả được in thành <a href="/bai-viet/kieu-xau-string-trong-python-kieu-chuoi-trong-python.html">chuỗi</a> trên một dòng, phân tách bởi dấu phẩy. Ví dụ, số cho trước là <code>8</code> thì kết quả đầu ra phải là <code>40320</code>.</p>
+<pre><code class="language-python">n = int(input(&quot;Nhập số cần tính giai thừa:&quot;)) 
+def fact(n):
+    if n==0:
+        return 1
+    else:
+        return n*fact(n-1)
+print(fact(n))
+</code></pre>
+<p>Nếu chỉ sử dụng vòng lặp, không sử dụng hàm và lời gọi đệ quy, ta có thể làm như sau:</p>
+<pre><code class="language-python">n = int(input(&#39;Enter a number &#39;))
+factorial = 1
+for i in range(1,n+1):
+    factorial *= i
+print(factorial)
+</code></pre>
+<p><strong>Bài 4.</strong> Với số nguyên <code>n</code> nhất định, hãy viết chương trình để tạo ra một dictionary chứa <code>(i, i*i)</code> như là số nguyên từ <code>1</code> đến <code>n</code> (bao gồm cả <code>1</code> và <code>n</code>) sau đó in ra dictionary này. Ví dụ: Giả sử số <code>n</code> là <code>8</code> thì đầu ra sẽ là: <code>{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}</code>.</p>
+<pre><code class="language-python">n = int(input(&#39;Enter a number &#39;))
+d = dict()
+for i in range(1, n+1):
+    d[i] = i*i
+print(d)
+</code></pre>
+<p><strong>Bài 5.</strong> Viết chương trình chấp nhận một chuỗi số, phân tách bằng dấu phẩy từ giao diện điều khiển, tạo ra một <code>List</code>  và một <code>tuple</code> chứa mọi số.</p>
+<p>Ví dụ: Đầu vào được cung cấp là <code>34,67,55,33,12,98</code> thì đầu ra là:</p>
+<p><code>[&#39;34&#39;, &#39;67&#39;, &#39;55&#39;, &#39;33&#39;, &#39;12&#39;, &#39;98&#39;]</code>
+<code>(&#39;34&#39;, &#39;67&#39;, &#39;55&#39;, &#39;33&#39;, &#39;12&#39;, &#39;98&#39;)</code></p>
+<p>Chương trình này chỉ đơn giản là sử dụng hàm <code>split()</code> và chuyển một <code>List</code> sang một <code>tuple</code>.</p>
+<pre><code class="language-python">values=input(&quot;Nhập vào các giá trị:&quot;) 
+l=values.split(&quot;,&quot;) 
+t=tuple(l) 
+print (l) 
+print (t)
+</code></pre>
+<p><strong>Bài 6.</strong> Viết một hàm tính giá trị bình phương của một số.</p>
+<pre><code class="language-python"># square of a number
+x = int(input(&quot;Enter a number: &quot;))
+def square(x):
+    return x * x
+</code></pre>
+<p><strong>Bài 7.</strong> Viết chương trình tính số Fibonacci thứ <code>n</code>, với <code>n</code> nhập vào từ bàn phím.</p>
+<pre><code class="language-python"># find fibonacci number
+n = int(input(&quot;Enter a number: &quot;))
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+</code></pre>
+<p><strong>Bài 8.</strong> Viết một chương trình nhập vào một danh sách các số và tạo một danh sách mới chỉ gồm phần tử đầu tiên và cuối cùng của danh sách đó. Viết chương trình sử dụng hàm.</p>
+<p>Ví dụ, nhập vào danh sách <code>[5, 10, 15, 20, 25]</code> thì kết quả trả về là danh sách <code>[5, 25]</code></p>
+<pre><code class="language-python">def list_ends(a_list):
+    return [a_list[0], a_list[len(a_list)-1]]
+</code></pre>
+<p><strong>Bài 9.</strong> Viết một hàm nhận vào ba số thực và trả về số lớn nhất trong ba số. Lưu ý, không sử dụng hàm <code>max()</code> của Python.</p>
+<pre><code class="language-python"># max of three numbers
+def max_of_three(a, b, c):
+    if a &gt; b:
+        if a &gt; c:
+            return a
+        else:
+            return c
+    else:
+        if b &gt; c:
+            return b
+        else:
+            return c
+</code></pre>
+<p><strong>Bài 10.</strong> Viết chương trình yêu cầu người dùng nhập vào một chuỗi và in ra màn hình thông báo chuỗi đó có phải là chuỗi <strong>palindrome</strong> hay không. (Chuỗi <strong>Palindrome</strong> là một chuỗi mà đọc xuôi và ngược đều như nhau, ví dụ <code>ABCDCBA</code>.)</p>
+<p>Cách giải thứ nhất, sử dụng cách đảo ngược xâu:</p>
+<pre><code class="language-python">wrd=input(&quot;Please enter a word&quot;)
+wrd=str(wrd)
+rvs=wrd[::-1]
+print(rvs)
+if wrd == rvs:
+    print(&quot;This word is a palindrome&quot;)
+else:
+    print(&quot;This word is not a palindrome&quot;)
+</code></pre>
+<p>Cách thứ hai, sử dụng vòng lặp <code>for</code></p>
+<pre><code class="language-python">def reverse(word):
+   x = &#39;&#39;
+   for i in range(len(word)):
+      x += word[len(word)-1-i]
+   return x
+
+word = input(&#39;give me a word:\n&#39;)
+x = reverse(word)
+if x == word:
+   print(&#39;This is a Palindrome&#39;)
+else:
+   print(&#39;This is NOT a Palindrome&#39;)
+</code></pre>
+<p><strong>Bài 11.</strong> Viết chương trình hỏi người dùng một số tự nhiên <code>n</code> và in ra tất cả ước số của con số đó.</p>
+<pre><code class="language-python">n = int(input(&quot;Enter a number: &quot;))
+for i in range(1, n + 1):
+    if n % i == 0:
+        print(i)
+</code></pre>
+<p><strong>Bài 12.</strong> Viết một chương trình (sử dụng các hàm) yêu cầu người dùng nhập một chuỗi dài gồm nhiều từ. In lại cho người dùng một chuỗi mới với thứ tự từ ngữ được đảo ngược lại với thứ tự ban đầu. Ví dụ, khi người dùng nhập chuỗi: <code>Toi la Phuong</code> thì in ra màn hình <code>Phuong la Toi</code></p>
+<pre><code class="language-python">sentense = input(&quot;Enter a sentence: &quot;)
+words = sentence.split()
+words.reverse()
+sentence = &quot; &quot;.join(words)
+print(sentence)
+</code></pre>
+<p><strong>Bài 13.</strong> Viết chương trình kiểm tra xem số <code>n</code> có là số nguyên tố hay không.</p>
+<pre><code class="language-python"># check prime number
+n = int(input(&quot;Enter a number: &quot;))
+for i in range(2, n):
+    if n % i == 0:
+        print(&quot;Not a prime number&quot;)
+        break
+else:
+    print(&quot;Prime number&quot;)
+</code></pre>
+<p><strong>Bài 14.</strong> Viết một chương trình nhập vào hai số tự nhiên <code>m</code>, <code>n</code>. In ra màn hình mảng hai chiều mà phần tử trong hàng thứ <code>i</code> và cột thứ <code>j</code> của mảng là <code>i*j</code>.</p>
+<p>Ví dụ: Giá trị <code>m</code>, <code>n</code> nhập vào là <code>3</code> và <code>5</code> thì đầu ra là: <code>[[0, 0, 0, 0, 0], [0, 1, 2, 3, 4], [0, 2, 4, 6, 8]]</code></p>
+<pre><code class="language-python">m, n = map(int, input(&#39;Enter two numbers: &#39;).split())
+array2 = [[0 for i in range(n)] for j in range(m)]
+for row in range(m):
+    for col in range(n):
+        array2[row][col] = row * col
+print(array2)
+</code></pre>
+<p><strong>Bài 15.</strong> Viết một chương trình nhận chuỗi từ do người dùng nhập vào, phân tách nhau bởi dấu phẩy và in những từ đó thành chuỗi theo thứ tự bảng chữ cái, phân tách nhau bằng dấu phẩy.</p>
+<p>Giả sử đầu vào được nhập là: <code>without,hello,bag,world</code> thì đầu ra sẽ là <code>bag,hello,without,world</code>.</p>
+<pre><code class="language-python">items=[x for x in input(&quot;Nhập một chuỗi: &quot;).split(&#39;,&#39;)]
+items.sort()
+print (&#39;,&#39;.join(items))
+</code></pre>
+<p><strong>Bài 16.</strong> Viết chương trình giải phương trình bậc hai <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">a</mi><msup><mi mathvariant="sans-serif">x</mi><mn mathvariant="sans-serif">2</mn></msup><mo>+</mo><mi mathvariant="sans-serif">b</mi><mi mathvariant="sans-serif">x</mi><mo>+</mo><mi mathvariant="sans-serif">c</mi><mo>=</mo><mn mathvariant="sans-serif">0</mn></mrow><annotation encoding="application/x-tex">ax^2+bx+c=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9052em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathsf">a</span><span class="mord"><span class="mord mathsf">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8219em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathsf mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathsf">bx</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathsf">c</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord mathsf">0</span></span></span></span></span> với <code>a</code>, <code>b</code>, <code>c</code> là số nguyên và được nhập vào từ bàn phím.</p>
+<pre><code class="language-python">a, b, c = map(int, input(&#39;Nhập a, b, c cách nhau bằng dấu cách: &#39;).split())
+if a == 0:
+    if b == 0:
+        if c == 0:
+            print(&quot;Phương trình có vô số nghiệm&quot;)
+        else:
+            print(&quot;Phương trình vô nghiệm&quot;)
+    else:
+        print(&quot;Phương trình có một nghiệm x =&quot;, -c/b)
+else:
+    delta = b**2 - 4*a* c
+    if delta &lt; 0:
+        print(&quot;Phương trình vô nghiệm&quot;)
+    elif delta == 0:
+        print(&quot;Phương trình có nghiệm kép x1 = x2 =&quot;, -b/(2*a))
+    else:
+        print(&quot;Phương trình có 2 nghiệm phân biệt x1 =&quot;, (-b + delta**0.5)/(2*a), &quot;và x2 =&quot;, (-b - delta**0.5)/(2*a))
+</code></pre>
+<p><strong>Bài 17.</strong> Viết chương trình tính tổng của các chữ số của môt số nguyên dương <code>n</code> trong Python. Số nguyên dương <code>n</code> được nhập từ bàn phím.</p>
+<pre><code class="language-python">def totalDigitsOfNumber(n):
+    total = 0;
+    while (n &gt; 0):
+        total = total + n % 10;
+        n = int(n / 10);
+    return total;
+
+n = int(input(&quot;Nhập số nguyên dương n = &quot;));
+print(&quot;Tổng các chữ số của&quot;, n , &quot;là&quot;, totalDigitsOfNumber(n));
+</code></pre>
+<p><strong>Bài 18.</strong> Viết chương trình sinh các xâu nhị phân có độ dài <code>n</code>.</p>
+<p>Xem lời giải tại đây <a href="/bai-viet/thuat-toan-sinh-cac-day-nhi-phan-co-do-dai-n.html">Thuật toán sinh các dãy nhị phân có độ dài n</a></p>
+<p><strong>Bài 19.</strong> Viết chương trình giải bài toán <a href="/bai-viet/bai-toan-thap-ha-noi-tower-of-ha-noi.html">Bài toán Tháp Hà Nội (Tower of Hanoi)</a></p>
+<p><strong>Bài 20.</strong> Viết chương trình phân tích số nguyên dương <code>n</code> thành thừa số nguyên tố.</p>
+<pre><code class="language-python">def phanTichSoNguyen(n):
+    i = 2;
+    listNumbers = [];
+    # phân tích
+    while (n &gt; 1):
+        if (n % i == 0):
+            n = int(n / i);
+            listNumbers.append(i);
+        else:
+            i = i + 1;
+    # nếu listNumbers trống thì add n vào listNumbers
+    if (len(listNumbers) == 0):
+        listNumbers.append(n);
+    return listNumbers;
+
+n = int(input(&quot;Nhập số nguyên dương n = &quot;));
+
+listNumbers = phanTichSoNguyen(n);
+size = len(listNumbers);
+sb = &quot;&quot;;
+for i in range(0, size - 1):
+    sb = sb + str(listNumbers[i]) + &quot; x &quot;;
+sb = sb + str(listNumbers[size-1]);
+# in kết quả ra màn hình
+print(&quot;Kết quả:&quot;, n, &quot;=&quot;, sb);
+</code></pre>
+<p><strong>Bài 21.</strong> Định nghĩa một <code>class</code> có ít nhất 2 method:</p>
+<ul>
+<li><p><code>getString</code>: để nhận một chuỗi do người dùng nhập vào từ giao diện điều khiển.</p>
+</li>
+<li><p><code>printString</code>: in chuỗi vừa nhập sang chữ hoa.</p>
+</li>
+</ul>
+<p>Thêm vào các hàm hiểm tra đơn giản để kiểm tra method của class.</p>
+<p>Ví dụ: Chuỗi nhập vào là giasu.ai.vn thì đầu ra phải là GIASU.AI.VN</p>
+<pre><code class="language-python">class InputOutString(object):
+   def __init__(self):
+       self.s = &quot;&quot;
+
+   def getString(self):
+       self.s = input(&quot;Nhập chuỗi:&quot;)
+   def printString(self):
+       print (self.s.upper())
+
+strObj = InputOutString()
+strObj.getString()
+strObj.printString()
+</code></pre>
+<p><strong>Bài 22.</strong> Viết chương trình Python tính tổng các phần tử của một danh sách.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+for i in range(0,n): print(a[i],&#39; &#39;,end=&#39;&#39;)
+print()
+
+tong=0
+for i in range(0,n):
+    tong+=a[i]
+print(&#39;Tổng =&#39;,tong)
+</code></pre>
+<p><strong>Bài 23.</strong> Viết chương trình Python đếm số lượng các số hạng dương và tổng của các số hạng dương.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+dem=0
+tongd=0
+for i in range(0,n):
+    if a[i]&gt;0:
+       dem+=1
+       tongd+=a[i]
+print(&#39;Số hạng dương:&#39;,dem)
+print(&#39;Tổng số dương:&#39;,tongd)
+</code></pre>
+<p>Hoặc có thể sử dụng hàm:</p>
+<pre><code class="language-python">def count_positive_numbers_and_sum(numbers):
+    count = 0
+    sum = 0
+    for number in numbers:
+        if number &gt; 0:
+            count += 1
+            sum += number
+    return count, sum
+
+# Sử dụng hàm trên với một danh sách các số nguyên bất kỳ
+numbers = [1, 2, 3, -4, -5, 6, 7, -8, 9]
+count, sum = count_positive_numbers_and_sum(numbers)
+
+print(&quot;Số lượng các số hạng dương là:&quot;, count)
+print(&quot;Tổng các số hạng dương là:&quot;, sum)
+</code></pre>
+<p><strong>Bài 24.</strong> Viết chương trình Python tính trung bình cộng của cả danh sách, trung bình cộng các phần tử dương trong danh sách.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+for i in range(0,n):tong+=a[i]
+print(&#39;Trung bình cộng của danh sách:&#39;,tong)
+dem=0
+tongd=0
+for i in range(0,n):
+    if a[i]&gt;0:
+       dem+=1
+       tongd+=a[i]
+print(&#39;Trung bình cộng các số dương:&#39;,tongd/dem)
+</code></pre>
+<p><strong>Bài 25.</strong> Viết chương trình Python tìm vị trí của phần tử âm đầu tiên trong danh sách.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+i=0
+while a[i]&gt;=0:
+    i+=1
+    if i==n:
+       break
+if i==n:
+    print(&#39;Không có phần tử âm&#39;)
+else:
+    print(&#39;Vị trí phần tử âm đầu tiên:&#39;,i+1)
+</code></pre>
+<p><strong>Bài 26.</strong> Viết chương trình Python tìm vị trí của phần tử dương cuối cùng trong danh sách.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+i=n-1
+while a[i]&lt;=0:
+   i-=1
+   if i==-1:
+      break
+if i==-1:
+    print(&#39;Không có phần tử dương&#39;)
+else:
+    print(&#39;Vị trí phần tử dương cuối cùng:&#39;,i+1)
+</code></pre>
+<p><strong>Bài 27.</strong> Viết chương trình Python tìm phần tử lớn nhất của danh sách và vị trí phần tử lớn nhất cuối cùng.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+max=a[0]
+vt=0
+for i in range(1,n-1):
+    if a[i]&gt;max:
+        max=a[i]
+        vt=i
+print(&#39;Số lớn nhất là&#39;,max,&#39;tại vị trí&#39;,vt+1)
+</code></pre>
+<p><strong>Bài 28.</strong> Viết chương trình Python tìm phần tử lớn thứ nhì của danh sách và các vị trí của các phần tử đạt giá trị lớn nhì.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+B=a.copy()
+m=max(B)
+i=0
+while i&lt;len(B):
+    if B[i]==m:
+        B.remove(B[i])
+        i-=1
+    i+=1
+if len(B)==0:
+    print(&quot;Khong co so lon nhi&quot;)
+else:
+    m=max(B)
+    print(&quot;So lon nhi la&quot;,m,&quot;tai vi tri&quot;,end=&quot; &quot;)
+    for i in range(len(a)):
+        if a[i]==m:
+            print(i+1,end=&quot;, &quot;)
+</code></pre>
+<p><strong>Bài 29.</strong> Viết chương trình Python tính số lượng các số dương liên tiếp nhiều nhất.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+d=len(a)
+i=0
+maxd=0
+while i&lt;d:
+    while a[i]&lt;=0:
+        i+=1
+        if i==d:break
+    if i&lt;d:
+        max1=0
+        j=i
+        while a[j]&gt;0:
+            max1+=1
+            j+=1
+            if j==d: break
+        if max1&gt;maxd: 
+            maxd=max1
+        i=j
+    i+=1
+print(&#39;So duong lien tiep dai nhat =&#39;,maxd)
+</code></pre>
+<p><strong>Bài 30.</strong> Viết chương trình Python tính số lượng các số dương liên tiếp có tổng lớn nhất.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+d=len(a)
+i=0
+sumd=0
+while i&lt;d:
+    while a[i]&lt;=0:
+        i+=1
+        if i==d:break
+    if i&lt;d:
+        sum1=0
+        j=i
+        while a[j]&gt;0:
+            sum1+=a[j]
+            j+=1
+            if j==d: break
+        if sum1&gt;sumd: 
+            sumd=sum1
+        i=j
+    i+=1
+print(&#39;Tong so duong lien tiep dai nhat =&#39;,sumd)
+</code></pre>
+<p><strong>Bài 31.</strong> Viết chương trình Python tính số lượng các phần tử liên tiếp đan dấu nhiều nhất (dãy phần tử liên tiếp được gọi là đan dấu nếu tích hai phần tử liên tiếp âm).</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+d=len(a)
+i=0
+maxdd=0
+for i in range(d-1):
+    max1=0
+    while a[i]*a[i+1]&lt;0:
+        max1+=1
+        i+=1
+        if i==d-1:break
+    if max1&gt;maxdd: maxdd=max1
+if maxdd&gt;0: maxdd+=1
+print(&#39;Day so dan dau dai nhat =&#39;,maxdd)
+</code></pre>
+<p><strong>Bài 32.</strong> Viết chương trình Python tính số lượng các phần tử không tăng nhiều nhất.</p>
+<p><strong>Bài 33.</strong> Viết chương trình Python tìm vị trí bắt đầu đoạn con dương liên tiếp có nhiều phần tử nhất.</p>
+<p><strong>Bài 34.</strong> Viết chương trình Python tìm đoạn con có các số hạng dương liên tiếp có tổng lớn nhất. (Nếu có nhiều đoạn con thoả mãn thì đưa ra màn hình: Số đoạn con thoả mãn và các đoạn con đó).</p>
+<p><strong>Bài 35.</strong> Viết chương trình Python đếm số lượng các phần tử bằng giá trị <code>x</code> nhập từ bàn phím.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+x=float(input(&#39;Nhập 1 số từ bàn phím: &#39;))
+dem=0
+for i in range(0,n):
+    if a[i]==x:
+        dem=dem+1
+print(&#39;Số lượng phần tử bằng&#39;,x,&#39;:&#39;,dem)
+</code></pre>
+<p><strong>Bài 36.</strong> Viết chương trình Python chuyển các phần tử dương của danh sách lên đầu danh sách và in danh sách ra màn hình.</p>
+<p><strong>Bài 37.</strong> Viết chương trình Python tìm số phần tử là dương và là số nguyên tố của danh sách và vị trí của nó trong danh sách.</p>
+<p><strong>Bài 38.</strong> Viết chương trình Python chèn một số m (m nhập vào từ bàn phím ) vào đầu danh sách, cuối danh sách và vị trí thứ 5 của danh sách.</p>
+<p><strong>Bài 39.</strong> Viết chương trình Python chèn danh sách [1,2,3] vào vị trí đầu, cuối và thứ 5 của danh sách.</p>
+<p><strong>Bài 40.</strong> Viết chương trình Python xóa phần tử thứ k (k nhập từ bàn phím) trong danh sách.</p>
+<p><strong>Bài 41.</strong> Viết chương trình Python sắp xếp danh sách theo thứ tự tăng dần, giảm dần.</p>
+<pre><code class="language-python">n=10
+a=[2, -4, 1, 9, -3, 6, 3, -2, 6, 8]
+
+x=float(input(&#39;Nhập 1 số từ bàn phím: &#39;))
+dem=0
+for i in range(0,n):
+    if a[i]==x:
+        dem=dem+1
+print(&#39;Số lượng phần tử bằng&#39;,x,&#39;:&#39;,dem)
+#--------------------------------------------------------
+# Bài 41. Sắp xếp danh sách tăng dần, giảm dần
+#Sắp xếp danh sách tăng
+for i in range(0,n-1):
+   for j in range(i+1,n):
+      if a[i]&gt;a[j]:
+         t=a[i]
+         a[i]=a[j]
+         a[j]=t
+print(&#39;Danh sách đã sắp xếp tăng:&#39;)
+print(a)
+#Sắp xếp danh sách giảm
+for i in range(0,n-1):
+   for j in range(i+1,n):
+      if a[i]&lt;a[j]:
+         t=a[i]
+         a[i]=a[j]
+         a[j]=t
+print(&#39;Danh sách đã sắp xếp giảm:&#39;)
+print(a)
+</code></pre>
+<p>(Còn tiếp)</p>
+<nav class="post-reading-links" aria-label="Đọc tiếp cùng chủ đề"><h2>Đọc tiếp cùng chủ đề</h2><ul><li><a href="./bai-tap-python-co-ban-lop-10.html">Bài tập Python cơ bản lớp 10</a></li><li><a href="./15-cuon-sach-hoc-python-mien-phi.html">15 Cuốn sách học Python miễn phí</a></li><li><a href="./cac-phep-toan-trong-python.html">Bài 3. Các phép toán trong Python</a></li></ul></nav></article></div><aside class="article-toc" aria-label="Mục lục bài viết"><div class="course-sidebar-heading"><span>CNTT · Lớp 10</span><strong>100+ Bài tập Python cơ bản có lời giải</strong></div><div class="toc-sticky"><div class="toc-title"><span class="toc-icon" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 6h13M8 12h13M8 18h13M3 6h1m-1 6h1m-1 6h1"/></svg></span> Mục lục bài viết</div><nav class="toc-nav" aria-label="Mục lục bài viết"><ol class="toc-list"><li class="toc-item toc-level-2"><a href="#bai-tap-python-co-ban">Bài tập Python cơ bản</a></li></ol></nav><button type="button" class="toc-top-btn" aria-label="Cuộn lên đầu trang">↑ Đầu trang</button></div></aside></div><div class="article-end"><a href="../giai-tri/meo-hoc-tap.html">✦ Mẹo học tập</a><p data-study-tip>Học từng chút một, nghỉ ngơi đều đặn.</p></div><script type="module" src="../assets/article-tip.js?v=ae37b7d5d47b"></script><section class="related related-posts" aria-label="Bài viết cùng chủ đề"><div class="related-header"><span class="overline">✦ KIẾN THỨC CÙNG CHUYÊN MỤC</span><h2>Bài viết cùng chủ đề</h2><p>Khám phá thêm các bài học và bài tập liên quan để ôn luyện vững vàng hơn.</p></div><div class="related-grid"><article class="related-card tone-0"><a class="related-card-link" href="./cac-thu-tuc-vao-ra-du-lieu-co-ban-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Bài 4. Các thủ tục vào ra dữ liệu cơ bản trong Python</h3><p class="related-desc">Hàm print trong Python để xuất nội dung xâu string ra màn hình, hàm input để nhập một xâu từ bàn phím.</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-1"><a class="related-card-link" href="./cac-tu-khoa-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Các từ khóa trong Python</h3><p class="related-desc">Các từ khóa trong Python chính bao gồm:</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-2"><a class="related-card-link" href="./cau-lenh-vong-lap-while-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Bài 7. Câu lệnh vòng lặp while trong Python</h3><p class="related-desc">Trong bài trước, chúng ta đã tìm hiểu về vòng lặp for trong Python, bài này chúng ta tìm hiểu về vòng lặp while (while loops) - vòng lặp với số lần lặp không</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-3"><a class="related-card-link" href="./gioi-thieu-cai-dat-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Bài 1. Giới thiệu và cài đặt Python</h3><p class="related-desc">Giới thiệu và hướng dẫn cài đặt Python - một ngôn ngữ lập trình đa năng, được tạo ra bởi Guido van Rossum từ năm cuối những năm 1980.</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-0"><a class="related-card-link" href="./ham-an-danh-trong-python.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Hàm ẩn danh trong Python</h3><p class="related-desc">Hàm ẩn danh trong Python là gì? Cách khai báo hàm lambda trong Python. Ví dụ về hàm lambda trong Python sử dụng với hàm filter và hàm map() trong Python</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article><article class="related-card tone-1"><a class="related-card-link" href="./huong-dan-lap-trinh-python-python-guilde.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol"><svg class="ui-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="13"/><path d="M8 21h8m-4-4v4"/></svg></span><span class="related-grade-pill">Lớp 10</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">CNTT</span><span class="related-type">Bài học</span></div><h3 class="related-title">Hướng dẫn lập trình Python – Python Guide</h3><p class="related-desc">Sách Hướng dẫn lập trình Python bản dịch tiếng Việt, bản quyền thuộc về Python Software Foundation, BeOpen.com, Corporation for National Research Initiatives và Stichting Mathematisch Centrum</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article></div></section></main><div class="print-footer" aria-hidden="true"><p>Truy cập <strong>https://giasu.ai.vn</strong> để tải thêm nhiều bài giảng, đề thi.</p></div><script src="../assets/lesson.js?v=ae37b7d5d47b" defer></script><script src="../assets/lesson-practice.js?v=ae37b7d5d47b" defer></script><script type="module" src="../assets/geometry.js?v=ae37b7d5d47b"></script><script src="../assets/glossary.js?v=ae37b7d5d47b" defer></script><script src="../assets/share.js?v=ae37b7d5d47b" defer></script><footer class="wrap"><a class="brand small" href="../"><span class="footer-brand-first">gia sư</span><span class="footer-brand-second">thông minh</span><span class="dot">.</span></a><a class="footer-link" href="https://giasu.ai.vn/word-addin/huong-dan.html">Tiện ích Word</a><a class="footer-link" href="../gioi-thieu.html">Giới thiệu &amp; Miễn trừ trách nhiệm</a><a class="footer-link" href="https://amthanhnhapkhau.com.vn/danh-muc/phong-hop/thiet-bi-may-tro-giang/">loa - micro trợ giảng</a></footer><button class="go-top" type="button" aria-label="Lên đầu trang" title="Lên đầu trang">↑</button><script src="../assets/menu.js?v=ae37b7d5d47b" defer></script><script src="../assets/top.js?v=ae37b7d5d47b" defer></script></body></html>
