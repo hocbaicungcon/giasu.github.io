@@ -1,6 +1,6 @@
 // Service worker: keeps the add-in (pages, scripts, icons, KaTeX, QR libraries) and the big CDN files it needs
 // (Office.js, Pyodide/SymPy) for about 30 days, so it opens without a network. Generated into sw.js by tools/build-sw.mjs.
-const VERSION = '085c398048';
+const VERSION = 'a19485e96b';
 const CACHE = 'texcraft-app-' + VERSION, RUNTIME = 'texcraft-runtime', META = 'texcraft-meta';
 const MAX_AGE = 30 * 24 * 3600 * 1000;
 const FILES = [
@@ -8,6 +8,7 @@ const FILES = [
  "./src/answer-qr.js",
  "./src/app-core.js",
  "./src/cursor-eq.js",
+ "./src/docx-package.js",
  "./src/emf.js",
  "./src/exam-header.js",
  "./src/exam.js",

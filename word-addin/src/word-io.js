@@ -1,9 +1,12 @@
 // The only file that talks to Word (Office.js). Everything else works on flat-OPC strings, so it can be tested in node
 // and against taskpane/mock-word.js in a browser.
 import { paragraphPackages } from './ooxml.js';
+import { canReadCompressed, readCompressedPackage } from './docx-package.js';
 
 const BATCH = 25;
 const WRITE_BYTES = 512 * 1024;
+let lastReadRoute = 'chưa đọc';
+export const bodyReadRoute = () => lastReadRoute;
 
 function writeBatchSize() {
   // Keep the Mac path equivalent to a successful single-paragraph conversion.
@@ -24,7 +27,21 @@ export const hasWord = () => typeof Word !== 'undefined' && typeof Office !== 'u
 
 async function run(fn) { return Word.run(fn); }
 
-export async function readBody() {
+export async function readBody({ scanOnly = false } = {}) {
+  if (typeof Office !== 'undefined' && Office.context?.document?.getFileAsync && canReadCompressed()) {
+    try {
+      const pkg = await readCompressedPackage({ scanOnly });
+      const paragraphCount = await run(async context => {
+        const paragraphs = context.document.body.paragraphs;
+        paragraphs.load('items'); await context.sync();
+        return paragraphs.items.length;
+      });
+      lastReadRoute = 'DOCX (getFileAsync)';
+      return { pkg, paragraphCount };
+    } catch (error) { lastReadRoute = 'OOXML dự phòng: ' + error.message; }
+  } else {
+    lastReadRoute = 'OOXML (host chưa hỗ trợ đọc DOCX trực tiếp)';
+  }
   return run(async (context) => {
     const ox = context.document.body.getOoxml();
     const paras = context.document.body.paragraphs;
@@ -223,6 +240,19 @@ export async function replaceBody(pkg) {
   return run(async (context) => {
     context.document.body.insertOoxml(pkg, 'Replace');
     await context.sync();
+  });
+}
+
+/** Replace a snapshot in one OOXML insertion, preserving the package's tables and section properties. */
+export async function writeBodySnapshot(pkg, before) {
+  return run(async (context) => {
+    const body = context.document.body;
+    body.insertOoxml(pkg, 'Replace');
+    // Load the post-write count in the same sync, after the insertion command.
+    const paragraphs = body.paragraphs;
+    paragraphs.load('items');
+    await context.sync();
+    return { before, after: paragraphs.items.length };
   });
 }
 

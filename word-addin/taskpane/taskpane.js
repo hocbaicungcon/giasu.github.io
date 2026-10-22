@@ -88,15 +88,23 @@ function progress(el, done, total) { el.hidden = false; el.max = total || 1; el.
 
 // ---------------------------------------------------------------- scan
 async function scan() {
+  $('btn-scan').disabled = true;
   $('scan-summary').textContent = 'Đang đọc tài liệu…';
   try {
-    const { pkg, paragraphCount } = await io.readBody();
+    const readStart = Date.now();
+    const { pkg, paragraphCount } = await io.readBody({ scanOnly: true });
+    const readMs = Date.now() - readStart;
+    $('scan-summary').textContent = 'Đang phân tích công thức…';
+    await new Promise(resolve => setTimeout(resolve, 0));
+    const parseStart = Date.now();
     const scanned = scanBody(pkg);
+    scanned.timing = { readMs, parseMs: Date.now() - parseStart };
     scanned.mapped = scanned.paragraphTotal === paragraphCount;
     scanned.paragraphCount = paragraphCount;
     state.scanned = scanned;
     renderScan();
-  } catch (e) { $('scan-summary').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
+  } catch (e) { $('scan-summary').innerHTML = `<span class="bad">Lỗi khi đọc tài liệu: ${esc(e.message)}</span>`; }
+  finally { $('btn-scan').disabled = false; }
 }
 
 function renderScan() {
@@ -107,7 +115,8 @@ function renderScan() {
   const lx = s.equations.filter((e) => e.kind === 'latex');
   const native = s.equations.filter((e) => e.kind === 'native');
   $('scan-summary').innerHTML = `${s.equations.length} công thức: MathType <b class="ok">${okMt}</b>${badMt ? ` (lỗi <b class="bad">${badMt}</b>)` : ''}, LaTeX <b class="warn">${lx.length}</b>, Word <b>${native.length}</b>` +
-    (s.mapped ? '' : ` · <span class="warn">số đoạn không khớp (${s.paragraphTotal} ≠ ${s.paragraphCount}); chế độ chuyển toàn bộ sẽ đọc từng đoạn</span>`);
+    (s.mapped ? '' : ` · <span class="warn">số đoạn không khớp (${s.paragraphTotal} ≠ ${s.paragraphCount}); không định vị từng đoạn từ kết quả quét</span>`) +
+    (s.timing ? ` · đọc ${(s.timing.readMs / 1000).toFixed(1)} giây, phân tích ${(s.timing.parseMs / 1000).toFixed(1)} giây` : '');
   const only = $('only-bad').checked;
   const rows = s.equations.filter((e) => !only || e.latex === null);
   $('eq-table').tBodies[0].innerHTML = rows.slice(0, 600).map((e) => {
@@ -187,6 +196,31 @@ async function convert() {
   let phase = 'đọc tài liệu';
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
+    if (scopeName === 'all' && src === 'mathtype' && dst === 'word' && !$('opt-display').checked) {
+      const original = await io.readBody();
+      phase = 'giải mã và chuyển công thức';
+      $('convert-summary').textContent = 'Đang chuyển công thức…';
+      progress(bar, 1, 3);
+      await new Promise(resolve => setTimeout(resolve, 0));
+      const result = convertMathTypeInPackage(original.pkg, { convertLatex: false });
+      const reasons = {};
+      result.kept.forEach(k => { reasons[k.reason] = (reasons[k.reason] || 0) + 1; });
+      const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
+      if (!result.changed) {
+        $('convert-summary').innerHTML = `Không có gì để chuyển. Giữ nguyên ${result.kept.length} công thức.` + (reasonList ? `<ul>${reasonList}</ul>` : '');
+        return;
+      }
+      phase = 'ghi công thức vào Word';
+      $('convert-summary').textContent = `Đang ghi ${result.converted} công thức vào Word…`;
+      progress(bar, 2, 3);
+      const res = await io.writeBodySnapshot(result.pkg, original.paragraphCount);
+      afterWrite(res, { scope: { kind: 'body' }, pkg: original.pkg, paragraphCount: original.paragraphCount });
+      progress(bar, 3, 3);
+      $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${result.converted}</b> công thức; giữ nguyên ${result.kept.length}.</p>` +
+        (reasonList ? `<ul>${reasonList}</ul>` : '') +
+        (res.before !== res.after ? '<p class="warn">Số đoạn đã thay đổi. Hãy kiểm tra bố cục; dùng Hoàn tác hoặc mở lại bản sao nếu cần.</p>' : '');
+      return;
+    }
     $('convert-summary').textContent = 'Đang đọc các đoạn…';
     const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
     phase = 'giải mã và chuyển công thức';
@@ -250,7 +284,8 @@ $('btn-restore').addEventListener('click', async () => {
   const b = state.lastBackup;
   if (!b) return;
   try {
-    await io.writeParagraphs(b.scope, b.items, b.mode, (d, t) => progress($('progress'), d, t));
+    if (b.scope.kind === 'body') await io.writeBodySnapshot(b.pkg, b.paragraphCount);
+    else await io.writeParagraphs(b.scope, b.items, b.mode, (d, t) => progress($('progress'), d, t));
     $('convert-summary').innerHTML = '<span class="ok">Đã khôi phục các đoạn gốc.</span>';
     $('btn-restore').disabled = true;
   } catch (e) { $('convert-summary').innerHTML = `<span class="bad">Không khôi phục được: ${esc(e.message)}</span>`; }
@@ -402,6 +437,7 @@ $('editor-latex')?.addEventListener('keydown', (ev) => {
 $('btn-env').addEventListener('click', () => {
   const lines = [];
   lines.push('Office có: ' + (typeof Office !== 'undefined') + ', Word có: ' + (typeof Word !== 'undefined'));
+  lines.push('Cách đọc tài liệu: ' + io.bodyReadRoute());
   try {
     const c = Office.context;
     lines.push('host=' + c.diagnostics?.host + ' platform=' + c.diagnostics?.platform + ' version=' + c.diagnostics?.version);

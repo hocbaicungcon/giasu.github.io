@@ -62,6 +62,7 @@ const headerRels = part('/word/_rels/header1.xml.rels', 'application/vnd.openxml
   `<pkg:xmlData><Relationships xmlns="${relNs}"><Relationship Id="headerPic" Type="${objects[1].rels[1].type}" Target="${objects[1].rels[1].target}"/></Relationships></pkg:xmlData>`);
 const sharedPkg = pkg.replace('</pkg:package>', headerRels + '</pkg:package>');
 assert.ok(splitParts(paragraphPackages(sharedPkg, 480, new Set(['mathtype']))[0].pkg).has(sharedName));
+assert.ok(splitParts(convertMathTypeInPackage(sharedPkg, { convertLatex: false }).pkg).has(sharedName), 'whole-body conversion preserves header pictures');
 
 // Bulk conversion must remove every converted binary and picture, leaving valid OMML.
 const whole = convertMathTypeInPackage(pkg, { convertLatex: false });

@@ -618,8 +618,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return out;
   }
-  function runXml(text, sty) {
-    if (!text) return "";
+  function runXml(text2, sty) {
+    if (!text2) return "";
     let pr = "";
     if (sty === "p") pr = val("sty", "p");
     else if (sty === "b") pr = val("sty", "b");
@@ -628,7 +628,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     else if (sty === "dbl") pr = val("scr", "double-struck");
     else if (sty === "scr") pr = val("scr", "script");
     else if (sty === "fra") pr = val("scr", "fraktur");
-    return `<m:r>${pr ? `<m:rPr>${pr}</m:rPr>` : ""}${FONT}<m:t xml:space="preserve">${escapeXml(text)}</m:t></m:r>`;
+    return `<m:r>${pr ? `<m:rPr>${pr}</m:rPr>` : ""}${FONT}<m:t xml:space="preserve">${escapeXml(text2)}</m:t></m:r>`;
   }
   function flatten(nodes, out = []) {
     for (const n of nodes) {
@@ -639,18 +639,18 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function seqXml(nodes) {
     const list3 = flatten(resolve(nodes));
-    let xml = "", text = "", style = null;
+    let xml = "", text2 = "", style = null;
     const flush = () => {
-      if (text) xml += runXml(text, style);
-      text = "";
+      if (text2) xml += runXml(text2, style);
+      text2 = "";
       style = null;
     };
     for (const n of list3) {
       if (n.k === "run") {
         const blank = !n.text.trim();
-        if (style !== null && (style !== n.sty || blank || !text.trim())) flush();
+        if (style !== null && (style !== n.sty || blank || !text2.trim())) flush();
         style = n.sty;
-        text += n.text;
+        text2 += n.text;
         if (blank) flush();
       } else {
         flush();
@@ -949,15 +949,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             }
             if (c === "{") depth++;
             else if (c === "}" && --depth === 0) {
-              const text = this.s.slice(start, this.i);
+              const text2 = this.s.slice(start, this.i);
               this.i++;
-              return text;
+              return text2;
             }
           }
           throw new LatexError("unbalanced braces");
         }
-        run(text, sty = "") {
-          return { k: "run", text, sty };
+        run(text2, sty = "") {
+          return { k: "run", text: text2, sty };
         }
         delim() {
           this.ws();
@@ -1085,9 +1085,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           }
           if (name === "not") {
             const next = this.atom();
-            const text = next.k === "run" ? next.text : "";
-            if (!text) throw new LatexError("\\not");
-            return this.run(text + "\u0338");
+            const text2 = next.k === "run" ? next.text : "";
+            if (!text2) throw new LatexError("\\not");
+            return this.run(text2 + "\u0338");
           }
           if (name === "displaystyle" || name === "textstyle" || name === "scriptstyle" || name === "limits" || name === "nolimits" || name === "bigl" || name === "bigr" || name === "Big" || name === "big" || name === "Bigl" || name === "Bigr") return { k: "group", nodes: [] };
           if (name === "hspace" || name === "vspace" || name === "phantom") {
@@ -1194,9 +1194,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return stack[0].items;
   }
-  function runs(w, text, sty) {
+  function runs(w, text2, sty) {
     let first = true;
-    const chars = [...text];
+    const chars = [...text2];
     for (let i = 0; i < chars.length; i++) {
       const ch = chars[i], cp2 = ch.codePointAt(0);
       if (ch === " " && (chars[i - 1] === "," || chars[i - 1] === ";")) continue;
@@ -1841,39 +1841,39 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function template(node3, parts) {
     const [, selector, variation, children2] = node3;
-    const text = slots(children2).map(slot);
+    const text2 = slots(children2).map(slot);
     if (has3(tables_default.FENCES, String(selector))) {
-      if (!text.length) fail2("empty fence");
+      if (!text2.length) fail2("empty fence");
       let [left, right] = tables_default.FENCES[String(selector)];
       const hasLeft = Boolean(variation & 1), hasRight = Boolean(variation & 2);
       if (selector === 8) [left, right] = ["[", "]"];
-      parts.push(`${BS2}left${hasLeft ? left : "."} ${text[0]} ${BS2}right${hasRight ? right : "."}`);
+      parts.push(`${BS2}left${hasLeft ? left : "."} ${text2[0]} ${BS2}right${hasRight ? right : "."}`);
       return;
     }
     if (selector === 10) {
-      if (variation === 0) parts.push(`${BS2}sqrt{${at(text, 0)}}`);
-      else if (text.length >= 2) parts.push(`${BS2}sqrt[${text[1]}]{${text[0]}}`);
+      if (variation === 0) parts.push(`${BS2}sqrt{${at(text2, 0)}}`);
+      else if (text2.length >= 2) parts.push(`${BS2}sqrt[${text2[1]}]{${text2[0]}}`);
       else fail2("root");
       return;
     }
     if (selector === 11) {
-      if (text.length < 2) fail2("fraction");
-      parts.push(!(variation & 2) ? `${BS2}frac{${text[0]}}{${text[1]}}` : `{${text[0]}}/{${text[1]}}`);
+      if (text2.length < 2) fail2("fraction");
+      parts.push(!(variation & 2) ? `${BS2}frac{${text2[0]}}{${text2[1]}}` : `{${text2[0]}}/{${text2[1]}}`);
       return;
     }
     if (selector === 12) {
-      parts.push(`${BS2}underline{${at(text, 0)}}`);
+      parts.push(`${BS2}underline{${at(text2, 0)}}`);
       return;
     }
     if (selector === 13) {
-      parts.push(`${BS2}overline{${at(text, 0)}}`);
+      parts.push(`${BS2}overline{${at(text2, 0)}}`);
       return;
     }
     if (has3(tables_default.BIG_OPS, String(selector))) {
-      if (text.length < 1) fail2("big operator");
-      const main = text[0];
-      const lower = text.length > 1 ? text[1] : "";
-      const upper = text.length > 2 ? text[2] : "";
+      if (text2.length < 1) fail2("big operator");
+      const main = text2[0];
+      const lower = text2.length > 1 ? text2[1] : "";
+      const upper = text2.length > 2 ? text2[2] : "";
       let op = tables_default.BIG_OPS[String(selector)];
       if (selector === 15) {
         const count = variation & 3;
@@ -1888,15 +1888,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const marks = children2.filter((c) => c[0] === "char" && c[2]).map((c) => String.fromCharCode(c[2]));
       if (selector === 9) {
         const pairs = { "(": "(", ")": ")", "[": "[", "]": "]", "{": `${BS2}{`, "}": `${BS2}}`, "\u27E8": `${BS2}langle`, "\u27E9": `${BS2}rangle`, "|": "|" };
-        if (marks.length < 2 || !has3(pairs, marks[0]) || !has3(pairs, marks[1]) || !text.length) fail2("interval");
-        parts.push(`${BS2}left${pairs[marks[0]]} ${text[0]} ${BS2}right${pairs[marks[1]]}`);
+        if (marks.length < 2 || !has3(pairs, marks[0]) || !has3(pairs, marks[1]) || !text2.length) fail2("interval");
+        parts.push(`${BS2}left${pairs[marks[0]]} ${text2[0]} ${BS2}right${pairs[marks[1]]}`);
         return;
       }
       if (!marks.length) fail2("arrow");
       const last = marks[marks.length - 1];
       const g = marks[0] === "\u21C0" && marks[1] === "\u21BD" ? `${BS2}rightleftharpoons` : glyph(last, last.charCodeAt(0));
-      const top = text.length ? text[0] : "";
-      const bottom = text.length > 1 ? text[1] : "";
+      const top = text2.length ? text2[0] : "";
+      const bottom = text2.length > 1 ? text2[1] : "";
       if (!top && !bottom) parts.push(g);
       else if (g === `${BS2}rightarrow` || g === `${BS2}leftarrow`) {
         parts.push((g === `${BS2}rightarrow` ? `${BS2}xrightarrow` : `${BS2}xleftarrow`) + (bottom ? `[${bottom}]` : "") + `{${top}}`);
@@ -1906,9 +1906,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       return;
     }
     if (selector === 23) {
-      const main = text.length ? text[0] : "";
-      const lower = text.length > 1 ? text[1] : "";
-      const upper = text.length > 2 ? text[2] : "";
+      const main = text2.length ? text2[0] : "";
+      const lower = text2.length > 1 ? text2[1] : "";
+      const upper = text2.length > 2 ? text2[2] : "";
       const body = main.trim();
       if ([`${BS2}lim`, `${BS2}max`, `${BS2}min`, `${BS2}sup`, `${BS2}inf`].includes(body)) {
         parts.push(body + (lower ? `_{${lower}}` : "") + (upper ? `^{${upper}}` : ""));
@@ -1917,14 +1917,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     if (selector === 25) fail2("unverified template 25");
     if (selector === 24) {
-      if (text.length < 2) fail2("brace");
-      parts.push(variation & 1 ? `${BS2}overbrace{${text[0]}}^{${text[1]}}` : `${BS2}underbrace{${text[0]}}_{${text[1]}}`);
+      if (text2.length < 2) fail2("brace");
+      parts.push(variation & 1 ? `${BS2}overbrace{${text2[0]}}^{${text2[1]}}` : `${BS2}underbrace{${text2[0]}}_{${text2[1]}}`);
       return;
     }
     if (selector === 27 || selector === 28 || selector === 29) {
-      const nonempty = text.filter((v) => v);
+      const nonempty = text2.filter((v) => v);
       let sub4, sup2;
-      if (selector === 29) [sub4, sup2] = [...text, "", ""].slice(0, 2);
+      if (selector === 29) [sub4, sup2] = [...text2, "", ""].slice(0, 2);
       else if (selector === 27) {
         sub4 = nonempty.length ? nonempty[0] : "";
         sup2 = "";
@@ -1940,36 +1940,36 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       return;
     }
     if (selector === 31) {
-      if (!text.length) fail2("vector");
-      const body = text[0];
+      if (!text2.length) fail2("vector");
+      const body = text2[0];
       if (variation !== 2) fail2("vector variant");
       parts.push(body.length > 1 ? `${BS2}overrightarrow{${body}}` : `${BS2}vec{${body}}`);
       return;
     }
     if (selector === 32) {
-      parts.push(`${BS2}widehat{${at(text, 0)}}`);
+      parts.push(`${BS2}widehat{${at(text2, 0)}}`);
       return;
     }
     if (selector === 33) {
-      parts.push(`${BS2}overset{${BS2}frown}{${at(text, 0)}}`);
+      parts.push(`${BS2}overset{${BS2}frown}{${at(text2, 0)}}`);
       return;
     }
     if (selector === 34) {
-      parts.push(`${BS2}widetilde{${at(text, 0)}}`);
+      parts.push(`${BS2}widetilde{${at(text2, 0)}}`);
       return;
     }
     if (selector === 37) {
-      parts.push(`${BS2}boxed{${at(text, 0)}}`);
+      parts.push(`${BS2}boxed{${at(text2, 0)}}`);
       return;
     }
     fail2(`template ${selector}/${variation}`);
   }
-  function groupEnd(text, start) {
+  function groupEnd(text2, start) {
     let depth = 0;
-    for (let index = start; index < text.length; index++) {
-      const char = text[index];
+    for (let index = start; index < text2.length; index++) {
+      const char = text2[index];
       if (char === BS2) continue;
-      if (text.slice(index - 1, index) === BS2) continue;
+      if (text2.slice(index - 1, index) === BS2) continue;
       if (char === "{") depth++;
       else if (char === "}") {
         depth--;
@@ -1978,47 +1978,47 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return -1;
   }
-  function unwrapDoubleBraces(text) {
+  function unwrapDoubleBraces(text2) {
     let changed = true;
     while (changed) {
       changed = false;
       let from = 0;
       for (; ; ) {
-        const found = text.indexOf("{{", from);
+        const found = text2.indexOf("{{", from);
         if (found < 0) break;
-        if (found > 0 && text[found - 1] === BS2) {
+        if (found > 0 && text2[found - 1] === BS2) {
           from = found + 1;
           continue;
         }
         const outer = found, inner = found + 1;
-        const outerEnd = groupEnd(text, outer), innerEnd = groupEnd(text, inner);
-        if (outerEnd > 0 && innerEnd === outerEnd - 1 && text.slice(outer - 1, outer) !== BS2) {
-          text = text.slice(0, outer + 1) + text.slice(inner + 1, innerEnd) + text.slice(outerEnd);
+        const outerEnd = groupEnd(text2, outer), innerEnd = groupEnd(text2, inner);
+        if (outerEnd > 0 && innerEnd === outerEnd - 1 && text2.slice(outer - 1, outer) !== BS2) {
+          text2 = text2.slice(0, outer + 1) + text2.slice(inner + 1, innerEnd) + text2.slice(outerEnd);
           changed = true;
           break;
         }
         from = found + 2;
       }
     }
-    return text;
+    return text2;
   }
-  function simplifyFences(text) {
+  function simplifyFences(text2) {
     for (; ; ) {
-      const simpler = simplifyFencesOnce(text);
-      if (simpler === text) return text;
-      text = simpler;
+      const simpler = simplifyFencesOnce(text2);
+      if (simpler === text2) return text2;
+      text2 = simpler;
     }
   }
-  function simplifyFencesOnce(text) {
+  function simplifyFencesOnce(text2) {
     const pattern = /\\left(\\\{|\(|\[|\||\\\|)/g;
     let position = 0;
     for (; ; ) {
       pattern.lastIndex = position;
-      const match = pattern.exec(text);
-      if (!match) return text;
+      const match = pattern.exec(text2);
+      if (!match) return text2;
       let depth = 1, index = match.index + match[0].length, end = -1;
-      while (index < text.length) {
-        const opener = text.indexOf(`${BS2}left`, index), closer = text.indexOf(`${BS2}right`, index);
+      while (index < text2.length) {
+        const opener = text2.indexOf(`${BS2}left`, index), closer = text2.indexOf(`${BS2}right`, index);
         if (closer < 0) break;
         if (opener >= 0 && opener < closer) {
           depth++;
@@ -2037,37 +2037,37 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         position = matchEnd;
         continue;
       }
-      const close = /^\\right(\\\{|\\\}|\)|\]|\||\\\||\.)/.exec(text.slice(end));
-      const inner = text.slice(matchEnd, end);
+      const close = /^\\right(\\\{|\\\}|\)|\]|\||\\\||\.)/.exec(text2.slice(end));
+      const inner = text2.slice(matchEnd, end);
       if (!close || close[1] === "." || tables_default.TALL.some((w) => inner.includes(w)) || /\^\{[^{}]{6,}\}|_\{[^{}]{6,}\}/.test(inner)) {
         position = matchEnd;
         continue;
       }
-      text = text.slice(0, match.index) + match[1] + inner.trim() + close[1] + text.slice(end + close[0].length);
+      text2 = text2.slice(0, match.index) + match[1] + inner.trim() + close[1] + text2.slice(end + close[0].length);
       position = match.index + 1;
     }
   }
   function tidy(latex, keepSpaces = false) {
     const held = [];
     const S1 = String.fromCharCode(1), S2 = String.fromCharCode(2);
-    let text = latex.replace(/\\(?:text|mathrm)\{[^{}]*\}/g, (m) => {
+    let text2 = latex.replace(/\\(?:text|mathrm)\{[^{}]*\}/g, (m) => {
       held.push(m);
       return `${S1}${held.length - 1}${S2}`;
     });
-    text = text.replace(/\^\{([A-Za-z0-9])\}/g, "^$1");
-    text = text.replace(/_\{([A-Za-z0-9])\}/g, "_$1");
-    text = unwrapDoubleBraces(text);
-    text = simplifyFences(text);
+    text2 = text2.replace(/\^\{([A-Za-z0-9])\}/g, "^$1");
+    text2 = text2.replace(/_\{([A-Za-z0-9])\}/g, "_$1");
+    text2 = unwrapDoubleBraces(text2);
+    text2 = simplifyFences(text2);
     if (!keepSpaces) {
-      text = text.replace(/\s*\\,\s*(?=[+\-=<>}\)\]]|$)/g, "");
-      text = text.replace(/([({\[+\-=<>])\s*\\,\s*/g, "$1");
-      text = text.replace(/^(?:\s*\\[ ,;:]|\s*\\quad)+\s*/, "");
-      text = text.replace(/(?:\\[ ,;:]|\\quad)\s*$/, "");
+      text2 = text2.replace(/\s*\\,\s*(?=[+\-=<>}\)\]]|$)/g, "");
+      text2 = text2.replace(/([({\[+\-=<>])\s*\\,\s*/g, "$1");
+      text2 = text2.replace(/^(?:\s*\\[ ,;:]|\s*\\quad)+\s*/, "");
+      text2 = text2.replace(/(?:\\[ ,;:]|\\quad)\s*$/, "");
     }
-    text = text.replace(/\{\s+/g, "{");
-    text = text.replace(/\s+\}/g, "}");
-    text = text.replace(/\s+/g, " ").trim();
-    return text.replace(new RegExp(`${S1}(\\d+)${S2}`, "g"), (_m, i) => held[Number(i)]);
+    text2 = text2.replace(/\{\s+/g, "{");
+    text2 = text2.replace(/\s+\}/g, "}");
+    text2 = text2.replace(/\s+/g, " ").trim();
+    return text2.replace(new RegExp(`${S1}(\\d+)${S2}`, "g"), (_m, i) => held[Number(i)]);
   }
   function mtefToLatex(data) {
     try {
@@ -2331,9 +2331,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     throw new OmmlError("unknown character U+" + cp2.toString(16).toUpperCase().padStart(4, "0"));
   }
   function run(element) {
-    let text = "";
-    for (const t of descendants(element)) if (local(t) === "t") text += textOf(t);
-    if (!text) text = element.children.filter((c) => typeof c === "string").join("");
+    let text2 = "";
+    for (const t of descendants(element)) if (local(t) === "t") text2 += textOf(t);
+    if (!text2) text2 = element.children.filter((c) => typeof c === "string").join("");
     let plain2 = false, nor = false;
     for (const holder of elements(element)) {
       if (local(holder) === "rPr") {
@@ -2346,10 +2346,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         }
       }
     }
-    if (!text.trim() && text) return [...text].map((c) => has4(tables_default.SPACES, String(c.codePointAt(0))) ? tables_default.SPACES[String(c.codePointAt(0))] : `${BS3} `);
-    if (nor && text) return [`${BS3}text{${[...text].map((c) => has4(tables_default.TEXT_ESCAPES, c) ? tables_default.TEXT_ESCAPES[c] : c).join("")}}`];
-    if (plain2 && text && /^[A-Za-z0-9 ]+$/.test(text)) return [!text.includes(" ") ? `${BS3}mathrm{${text}}` : `${BS3}text{${text}}`];
-    const chars = [...text].filter((c) => !"\u200B\u2061\u2062".includes(c));
+    if (!text2.trim() && text2) return [...text2].map((c) => has4(tables_default.SPACES, String(c.codePointAt(0))) ? tables_default.SPACES[String(c.codePointAt(0))] : `${BS3} `);
+    if (nor && text2) return [`${BS3}text{${[...text2].map((c) => has4(tables_default.TEXT_ESCAPES, c) ? tables_default.TEXT_ESCAPES[c] : c).join("")}}`];
+    if (plain2 && text2 && /^[A-Za-z0-9 ]+$/.test(text2)) return [!text2.includes(" ") ? `${BS3}mathrm{${text2}}` : `${BS3}text{${text2}}`];
+    const chars = [...text2].filter((c) => !"\u200B\u2061\u2062".includes(c));
     return chars.filter((c, i) => !(c === " " && (chars[i - 1] === "," || chars[i - 1] === ";"))).map((c) => /\s/.test(c) ? has4(tables_default.SPACES, String(c.codePointAt(0))) ? tables_default.SPACES[String(c.codePointAt(0))] : `${BS3} ` : charToken(c));
   }
   function renderSeq(els) {
@@ -2607,9 +2607,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     run4 = run4.replace(/<w:lastRenderedPageBreak\/>/g, "");
     const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?\s*<w:t\b[^>]*>([^<]*)<\/w:t>\s*<\/w:r>$/.exec(run4);
     if (!m) return null;
-    const text = unesc(m[3]);
+    const text2 = unesc(m[3]);
     const mk = (t) => t ? `${m[1]}${m[2] || ""}<w:t xml:space="preserve">${escapeXml(t)}</w:t></w:r>` : "";
-    return [mk(text.slice(0, at2)), mk(text.slice(at2))];
+    return [mk(text2.slice(0, at2)), mk(text2.slice(at2))];
   }
   function findOptionsInParagraph(para2, wanted = RE_OPT, upper = true) {
     const kids = para2.children.slice();
@@ -2617,17 +2617,17 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     let seenContent = false, lastWasGap = true;
     for (let i = 0; i < kids.length; i++) {
       const c = kids[i];
-      const text = childText(c);
+      const text2 = childText(c);
       if (isRun(c) && !hasObject(c)) {
-        const m = wanted.exec(text);
+        const m = wanted.exec(text2);
         const expected = found.length ? String.fromCharCode(found[0].letter.charCodeAt(0) + found.length) : null;
-        if (m && (!expected || m[1] === expected) && (lastWasGap || !seenContent || /^[\s\u00A0]/.test(text) && text.length > m[0].length)) {
+        if (m && (!expected || m[1] === expected) && (lastWasGap || !seenContent || /^[\s\u00A0]/.test(text2) && text2.length > m[0].length)) {
           const labelEnd = m[0].length;
-          const lead = text.length - text.trimStart().length;
-          if (lead === 0 || !text.slice(0, lead).trim()) {
-            const labelText = text.slice(0, labelEnd);
-            if (labelEnd < text.length || /[A-Za-z]/.test(labelText)) {
-              const parts = text.length > labelEnd ? splitRunAt(c, labelEnd) : [c, ""];
+          const lead = text2.length - text2.trimStart().length;
+          if (lead === 0 || !text2.slice(0, lead).trim()) {
+            const labelText = text2.slice(0, labelEnd);
+            if (labelEnd < text2.length || /[A-Za-z]/.test(labelText)) {
+              const parts = text2.length > labelEnd ? splitRunAt(c, labelEnd) : [c, ""];
               if (!parts) return { options: [], ok: false };
               const label = parts[0];
               found.push({ at: i, letter: m[1], labelRun: label, rest: parts[1] });
@@ -2638,11 +2638,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           }
         }
       }
-      const gap = !text.replace(/[\s\t\u00A0]/g, "");
+      const gap = !text2.replace(/[\s\t\u00A0]/g, "");
       if (!gap) {
-        lastWasGap = /\s$/.test(text);
+        lastWasGap = /\s$/.test(text2);
         if (!found.length) return { options: [], ok: found.length > 0 };
-      } else if (/\t|\s{2,}/.test(text) || text === "") lastWasGap = true;
+      } else if (/\t|\s{2,}/.test(text2) || text2 === "") lastWasGap = true;
       if (isRun(c) && /<w:tab\/>/.test(c)) lastWasGap = true;
     }
     if (!found.length) return { options: [], ok: false };
@@ -2663,18 +2663,18 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   function analyze(model) {
     const parts = [];
     let part = { title: "", kind: "mc", start: 0, questions: [], blockIndex: -1 };
-    const text = (b) => b.kind === "p" ? paragraphText(b) : "";
+    const text2 = (b) => b.kind === "p" ? paragraphText(b) : "";
     const starts = [];
     let limit = model.blocks.length, sawQuestion = false;
     const enders = [];
     for (let i = 0; i < model.blocks.length; i++) {
-      const t = text(model.blocks[i]);
+      const t = text2(model.blocks[i]);
       if (RE_QUESTION.test(t)) sawQuestion = true;
       else if (sawQuestion && model.blocks[i].kind === "p" && RE_END.test(t)) enders.push(i);
     }
     if (enders.length && enders.length <= 2) limit = enders[0];
     model.blocks.slice(0, limit).forEach((b, i) => {
-      const t = text(b);
+      const t = text2(b);
       if (b.kind === "p" && RE_PART.test(t)) starts.push({ i, type: "part", t });
       else if (b.kind === "p" && RE_QUESTION.test(t)) starts.push({ i, type: "q", t, number: Number(RE_QUESTION.exec(t)[2]) });
     });
@@ -2726,7 +2726,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
       q.stemEnd = q.optionParas.length ? q.optionParas[0] : q.statements.length ? q.statements[0].block : next;
       q.ownEnd = english && q.optionParas.length ? q.optionParas[q.optionParas.length - 1] + 1 : next;
-      if (RE_SHARED.test(text(model.blocks[s.i]))) q.flags.push("shared");
+      if (RE_SHARED.test(text2(model.blocks[s.i]))) q.flags.push("shared");
       if (q.options) {
         const letters = q.options.map((o) => o.letter).join("");
         if (letters !== "ABCD".slice(0, q.options.length) || q.options.length !== 4) q.flags.push("optionCount:" + letters);
@@ -2755,12 +2755,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     for (const s of secs) {
       const lead = model.blocks.slice(s.lead.from, s.lead.to);
       const paras = lead.filter((b) => b.kind === "p").map(paragraphText).filter((t) => t.trim());
-      const text = paras.join("\n");
-      const words = text.split(/\s+/).filter(Boolean).length;
+      const text2 = paras.join("\n");
+      const words = text2.split(/\s+/).filter(Boolean).length;
       const rich = lead.some((b) => b.kind !== "p" || b.children.some(hasObject));
       let kind = "independent";
-      if (RE_EN_ORDER.test(text)) kind = "order";
-      else if (RE_EN_PASSAGE.test(text) || !s.first && (words > 70 || paras.length >= 3 || rich)) kind = "passage";
+      if (RE_EN_ORDER.test(text2)) kind = "order";
+      else if (RE_EN_PASSAGE.test(text2) || !s.first && (words > 70 || paras.length >= 3 || rich)) kind = "passage";
       s.kind = kind;
       s.mode = kind === "independent" ? "shuffle" : "keep";
       s.firstNumber = s.questions[0].number;
@@ -2809,10 +2809,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const put = (num4, v) => {
       if (v && !key[v.kind].has(num4)) key[v.kind].set(num4, v.value);
     };
-    let text = "";
+    let text2 = "";
     for (const b of blocks) {
       if (b.kind === "p") {
-        text += paragraphText(b) + "\n";
+        text2 += paragraphText(b) + "\n";
         continue;
       }
       if (tagName(b.xml) !== "w:tbl") continue;
@@ -2836,7 +2836,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
     }
     const take = (re, fn) => {
-      text = text.replace(re, (all, ...g) => {
+      text2 = text2.replace(re, (all, ...g) => {
         fn(g);
         return " ".repeat(all.length);
       });
@@ -3214,11 +3214,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (tn === "w:t") {
         const tm = /^<w:t\b[^>]*?(?:\/>|>([^<]*)<\/w:t>)$/.exec(e3);
         if (!tm) return null;
-        const text = unesc(tm[1] || "");
-        len3 = text.length;
+        const text2 = unesc(tm[1] || "");
+        len3 = text2.length;
         if (at2 < pos + len3) {
           const t = (s) => `<w:t xml:space="preserve">${escapeXml(s)}</w:t>`;
-          return [mk([...kids.slice(0, k), t(text.slice(0, at2 - pos))]), mk([t(text.slice(at2 - pos)), ...kids.slice(k + 1)])];
+          return [mk([...kids.slice(0, k), t(text2.slice(0, at2 - pos))]), mk([t(text2.slice(at2 - pos)), ...kids.slice(k + 1)])];
         }
       } else if (tn === "w:tab" || tn === "w:br" || tn === "w:noBreakHyphen") len3 = 1;
       pos += len3;
@@ -3290,8 +3290,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function materializeLetters(blocks, isUpper) {
     let next = 0, made = 0;
-    const scan2 = (text) => {
-      for (const m of text.matchAll(/(?:^|[\s ])([A-D])\.(?=\s|$)/g)) if (m[1] === "ABCD"[next]) next++;
+    const scan2 = (text2) => {
+      for (const m of text2.matchAll(/(?:^|[\s ])([A-D])\.(?=\s|$)/g)) if (m[1] === "ABCD"[next]) next++;
     };
     for (const b of blocks) {
       if (b.kind !== "p") continue;
@@ -3481,8 +3481,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           if (!/Mã\s*đề/i.test(t) && !/^\s*\d{2,4}\s*$/.test(t)) return c;
           return c;
         });
-        const text = paragraphText(b);
-        if (/Mã\s*đề\s*(thi)?\s*[:：]?\s*\d+/i.test(text)) {
+        const text2 = paragraphText(b);
+        if (/Mã\s*đề\s*(thi)?\s*[:：]?\s*\d+/i.test(text2)) {
           let seen = false;
           b.children = b.children.map((c) => {
             if (!isRun(c)) return c;
@@ -3655,7 +3655,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       RE_EN_ORDER = /arrang|meaningful\s+(paragraph|letter|conversation|text|exchange)|sentences?\s+(to|in)\s+(make|form)/i;
       RE_EN_PASSAGE = /read\s+(the|a|an)\s+(following\s+)?(\w+\s+)?(passage|text|advertisement|notice|leaflet|announcement|e-?mail|letter|message|poster|flyer|brochure|article|extract|story|conversation|dialogue)|numbered\s+blank|\(\s*\d{1,2}\s*\)/i;
       RE_OPTION_REF = /\b(both|either)\s+[A-D]\s+(and|or|&)\s+[A-D]\b|\b(A|B|C|D)\s*(,|và|&)\s*(A|B|C|D)\b.*(đúng|sai)|cả\s+[A-D]\s*(,|và)\s*[A-D]|(đáp\s*án|ý|phương\s*án)\s*[A-D]\b/i;
-      partKind = (text) => /đúng\s*sai|đúng\s*hoặc\s*sai/i.test(text) ? "tf" : /trả\s*lời\s*ngắn|ngắn/i.test(text) ? "short" : /nhiều\s*(phương\s*án|lựa\s*chọn)|trắc\s*nghiệm/i.test(text) ? "mc" : "other";
+      partKind = (text2) => /đúng\s*sai|đúng\s*hoặc\s*sai/i.test(text2) ? "tf" : /trả\s*lời\s*ngắn|ngắn/i.test(text2) ? "short" : /nhiều\s*(phương\s*án|lựa\s*chọn)|trắc\s*nghiệm/i.test(text2) ? "mc" : "other";
       isRedHex = (hex3) => {
         const m = /^([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex3 || "");
         if (!m) return false;
@@ -3698,13 +3698,13 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       RE_QN_GLOBAL = /(?:Question|QUESTION|C[âa]u|CÂU)\s*\d+\s*[.:)]/g;
       RE_QLEAD = new RegExp(`^\\s*${QWORD}\\s*\\d+\\s*[.:)]`);
       RE_ROW_ABCD = /(?:^|[\s\u00A0])A\.(?=\s)[\s\S]*?\sB\.(?=\s)(?:[\s\S]*?\sC\.(?=\s))?/;
-      cell = (text, w, bold) => `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/></w:tcPr><w:p><w:pPr><w:spacing w:before="20" w:after="20"/><w:jc w:val="center"/></w:pPr><w:r>${bold ? "<w:rPr><w:b/></w:rPr>" : ""}<w:t xml:space="preserve">${escapeXml(String(text))}</w:t></w:r></w:p></w:tc>`;
+      cell = (text2, w, bold) => `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/></w:tcPr><w:p><w:pPr><w:spacing w:before="20" w:after="20"/><w:jc w:val="center"/></w:pPr><w:r>${bold ? "<w:rPr><w:b/></w:rPr>" : ""}<w:t xml:space="preserve">${escapeXml(String(text2))}</w:t></w:r></w:p></w:tc>`;
     }
   });
 
   // src/ooxml.js
-  function base64ToBytes(b643) {
-    const bin = atob(b643.replace(/\s+/g, ""));
+  function base64ToBytes(b644) {
+    const bin = atob(b644.replace(/\s+/g, ""));
     const out = new Uint8Array(bin.length);
     for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
     return out;
@@ -3732,21 +3732,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const rels = relsPart ? xmlData(relsPart) : "";
     const tags = rels.match(/<Relationship\b[^>]*\/>/g) || [];
     const binaryRels = tags.filter((t) => /\bType="[^"]*\/(?:image|oleObject)"/.test(t));
-    const protectedTargets = /* @__PURE__ */ new Set();
-    for (const [name, part] of parts) {
-      if (!name.endsWith(".rels") || part === relsPart) continue;
-      const base = name.replace(/\/[_]rels\/[^/]+$/, "/");
-      for (const tag of xmlData(part).match(/<Relationship\b[^>]*>/g) || []) {
-        const target = (/\bTarget="([^"]+)"/.exec(tag) || [])[1];
-        if (!target || /TargetMode="External"/.test(tag)) continue;
-        const segments = [];
-        for (const seg of (target.startsWith("/") ? target : base + target).split("/")) {
-          if (seg === "..") segments.pop();
-          else if (seg && seg !== ".") segments.push(seg);
-        }
-        protectedTargets.add("/" + segments.join("/"));
-      }
-    }
+    const protectedTargets = otherPartTargets(parts, relsPart);
     const outer = pkg.slice(0, pkg.indexOf("<pkg:part"));
     const items = [];
     paras.forEach((p2, index) => {
@@ -3774,6 +3760,24 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       items.push({ index, pkg: outer + chunks.join("") + "</pkg:package>" });
     });
     return items;
+  }
+  function otherPartTargets(parts, ignoredPart) {
+    const protectedTargets = /* @__PURE__ */ new Set();
+    for (const [name, part] of parts) {
+      if (!name.endsWith(".rels") || part === ignoredPart) continue;
+      const base = name.replace(/\/[_]rels\/[^/]+$/, "/");
+      for (const tag of xmlData(part).match(/<Relationship\b[^>]*>/g) || []) {
+        const target = (/\bTarget="([^"]+)"/.exec(tag) || [])[1];
+        if (!target || /TargetMode="External"/.test(tag)) continue;
+        const segments = [];
+        for (const seg of (target.startsWith("/") ? target : base + target).split("/")) {
+          if (seg === "..") segments.pop();
+          else if (seg && seg !== ".") segments.push(seg);
+        }
+        protectedTargets.add("/" + segments.join("/"));
+      }
+    }
+    return protectedTargets;
   }
   function readRels(parts, relsName) {
     const part = parts.get(relsName);
@@ -3985,8 +3989,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           const rpr2 = rprM ? rprM[0].trim() : "";
           const tMatches = child.match(/<w:t\b[^>]*>([^<]*)<\/w:t>/g);
           if (tMatches) {
-            const text = tMatches.map((t) => unescapeXml(t.replace(/<[^>]+>/g, ""))).join("");
-            curRunGroup.push({ raw: child, rpr: rpr2, text });
+            const text2 = tMatches.map((t) => unescapeXml(t.replace(/<[^>]+>/g, ""))).join("");
+            curRunGroup.push({ raw: child, rpr: rpr2, text: text2 });
             continue;
           }
         }
@@ -4088,9 +4092,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
     }
     if (!result.changed) return result;
-    const replaceBody2 = (text, part, newXml) => {
+    const replaceBody2 = (text2, part, newXml) => {
       const body = part.body.replace(/(<pkg:xmlData>)[\s\S]*(<\/pkg:xmlData>)/, (_m, a, b) => a + newXml + b);
-      return text.replace(part.body, () => body);
+      return text2.replace(part.body, () => body);
     };
     let out = pkg;
     const newDoc = ensureNamespaces(doc.trimStart());
@@ -4098,6 +4102,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     let relsPart = parts.get("/word/_rels/document.xml.rels");
     if (relsPart && relsXmlUpdated !== null) out = replaceBody2(out, relsPart, relsXmlUpdated);
     const dropped = new Set(dropPartsFinal);
+    for (const name of otherPartTargets(parts, relsPart)) dropped.delete(name);
     const chunks = [];
     let offset = 0;
     for (const [name, p2] of splitParts(out)) {
@@ -4160,14 +4165,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       relsXml = relsXml.replace(tag[0], "");
       if (target && !new RegExp(`Target="${target[1]}"`).test(relsXml)) dropParts.push(resolveTarget(target[1]));
     }
-    const replaceBody2 = (text2, part, newXml) => text2.replace(part.body, () => part.body.replace(/(<pkg:xmlData>)[\s\S]*(<\/pkg:xmlData>)/, (_m, a, b) => a + newXml + b));
-    let text = replaceBody2(pkg, docPart, ensureNamespaces(doc.trimStart()));
-    if (relsPart) text = replaceBody2(text, relsPart, relsXml);
+    const replaceBody2 = (text3, part, newXml) => text3.replace(part.body, () => part.body.replace(/(<pkg:xmlData>)[\s\S]*(<\/pkg:xmlData>)/, (_m, a, b) => a + newXml + b));
+    let text2 = replaceBody2(pkg, docPart, ensureNamespaces(doc.trimStart()));
+    if (relsPart) text2 = replaceBody2(text2, relsPart, relsXml);
     for (const name of dropParts) {
-      const p2 = splitParts(text).get(name);
-      if (p2) text = text.slice(0, p2.start) + text.slice(p2.end);
+      const p2 = splitParts(text2).get(name);
+      if (p2) text2 = text2.slice(0, p2.start) + text2.slice(p2.end);
     }
-    result.pkg = text;
+    result.pkg = text2;
     result.changed = true;
     return result;
   }
@@ -4244,9 +4249,125 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
   });
 
+  // src/docx-package.js
+  function canReadCompressed() {
+    try {
+      return typeof Blob !== "undefined" && typeof Response !== "undefined" && !!new DecompressionStream("deflate-raw");
+    } catch (e3) {
+      return false;
+    }
+  }
+  async function docxToPackage(bytes, { scanOnly = false } = {}) {
+    const view = new DataView(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+    let end = -1;
+    for (let i = bytes.length - 22; i >= Math.max(0, bytes.length - 65557); i--) {
+      if (view.getUint32(i, true) === 101010256 && i + 22 + view.getUint16(i + 20, true) === bytes.length) {
+        end = i;
+        break;
+      }
+    }
+    if (end < 0) throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c c\u1EA5u tr\xFAc DOCX");
+    const count = view.getUint16(end + 10, true);
+    let pos = view.getUint32(end + 16, true), totalSize = 0;
+    const entries = /* @__PURE__ */ new Map();
+    for (let i = 0; i < count; i++) {
+      if (pos + 46 > end || view.getUint32(pos, true) !== 33639248) throw new Error("Danh m\u1EE5c DOCX kh\xF4ng h\u1EE3p l\u1EC7");
+      const flags = view.getUint16(pos + 8, true), method = view.getUint16(pos + 10, true);
+      const size = view.getUint32(pos + 24, true), packed = view.getUint32(pos + 20, true);
+      const length = view.getUint16(pos + 28, true), extra = view.getUint16(pos + 30, true), comment = view.getUint16(pos + 32, true);
+      const local2 = view.getUint32(pos + 42, true);
+      const name = text(bytes.subarray(pos + 46, pos + 46 + length));
+      totalSize += size;
+      if (flags & 1 || totalSize > 256 * 1024 * 1024 || local2 + 30 > bytes.length || view.getUint32(local2, true) !== 67324752) throw new Error("DOCX qu\xE1 l\u1EDBn ho\u1EB7c kh\xF4ng \u0111\u01B0\u1EE3c h\u1ED7 tr\u1EE3");
+      const start = local2 + 30 + view.getUint16(local2 + 26, true) + view.getUint16(local2 + 28, true);
+      if (start + packed > bytes.length) throw new Error("D\u1EEF li\u1EC7u DOCX b\u1ECB c\u1EAFt");
+      entries.set(name, { method, size, data: bytes.subarray(start, start + packed) });
+      pos += 46 + length + extra + comment;
+    }
+    async function read(name) {
+      const entry = entries.get(name);
+      if (!entry) throw new Error("DOCX thi\u1EBFu " + name);
+      let output;
+      if (entry.method === 0) output = entry.data;
+      else if (entry.method === 8) {
+        output = new Uint8Array(await new Response(new Blob([entry.data]).stream().pipeThrough(new DecompressionStream("deflate-raw"))).arrayBuffer());
+      } else throw new Error("Ki\u1EC3u n\xE9n DOCX ch\u01B0a h\u1ED7 tr\u1EE3");
+      if (output.length !== entry.size) throw new Error("K\xEDch th\u01B0\u1EDBc ph\u1EA7n DOCX kh\xF4ng kh\u1EDBp");
+      return output;
+    }
+    const types = text(await read("[Content_Types].xml")), defaults = /* @__PURE__ */ new Map(), overrides = /* @__PURE__ */ new Map();
+    for (const tag of types.match(/<(?:\w+:)?(?:Default|Override)\b[^>]*\/>/g) || []) {
+      const type = attr(tag, "ContentType"), name = attr(tag, "PartName");
+      if (name) overrides.set(name.slice(1), type);
+      else defaults.set(attr(tag, "Extension"), type);
+    }
+    const names = [...entries.keys()].filter((name) => !name.endsWith("/") && name !== "[Content_Types].xml" && (!scanOnly || name === "word/document.xml" || name === "word/_rels/document.xml.rels" || name.startsWith("word/embeddings/")));
+    const parts = [];
+    for (let i = 0; i < names.length; i += 8) {
+      parts.push(...await Promise.all(names.slice(i, i + 8).map(async (name) => {
+        const type = overrides.get(name) || defaults.get(name.split(".").pop());
+        if (!type) throw new Error("DOCX thi\u1EBFu ki\u1EC3u n\u1ED9i dung: " + name);
+        const data = await read(name), xml = /(?:\+xml|\/xml)$/.test(type);
+        const body = xml ? `<pkg:xmlData>${text(data).replace(/^\uFEFF/, "").replace(/^\s*<\?xml[^?]*\?>\s*/, "")}</pkg:xmlData>` : `<pkg:binaryData>${b64(data)}</pkg:binaryData>`;
+        return `<pkg:part pkg:name="/${escapeXml(name)}" pkg:contentType="${escapeXml(type)}">${body}</pkg:part>`;
+      })));
+    }
+    if (!entries.has("word/document.xml")) throw new Error("DOCX thi\u1EBFu n\u1ED9i dung Word");
+    return `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage">${parts.join("")}</pkg:package>`;
+  }
+  async function readCompressedPackage(options) {
+    var _a9, _b;
+    const office = Office.context;
+    const platform = ((_a9 = office.diagnostics) == null ? void 0 : _a9.platform) || office.platform || "";
+    const file = await call(office.document, "getFileAsync", ((_b = Office.FileType) == null ? void 0 : _b.Compressed) || "compressed", {
+      sliceSize: /iPad|iOS/i.test(platform) ? 65536 : 1024 * 1024
+    });
+    try {
+      if (!file.size || file.size > 128 * 1024 * 1024) throw new Error("DOCX qu\xE1 l\u1EDBn");
+      const bytes = new Uint8Array(file.size);
+      let offset = 0;
+      for (let i = 0; i < file.sliceCount; i++) {
+        const slice = await call(file, "getSliceAsync", i);
+        bytes.set(slice.data, offset);
+        offset += slice.data.length;
+      }
+      if (offset !== bytes.length) throw new Error("Ch\u01B0a \u0111\u1ECDc \u0111\u1EE7 DOCX");
+      return await docxToPackage(bytes, options);
+    } finally {
+      try {
+        await call(file, "closeAsync");
+      } catch (e3) {
+      }
+    }
+  }
+  var text, b64, attr, call;
+  var init_docx_package = __esm({
+    "src/docx-package.js"() {
+      init_xml();
+      text = (bytes) => new TextDecoder().decode(bytes);
+      b64 = (bytes) => {
+        let value = "";
+        for (let i = 0; i < bytes.length; i += 32768) value += String.fromCharCode(...bytes.subarray(i, i + 32768));
+        return btoa(value);
+      };
+      attr = (tag, name) => {
+        var _a9;
+        return (_a9 = new RegExp(`\\b${name}=["']([^"']+)["']`).exec(tag)) == null ? void 0 : _a9[1];
+      };
+      call = (target, method, ...args) => new Promise((resolve2, reject) => {
+        target[method](...args, (result) => {
+          var _a9;
+          if (result.status === "succeeded") resolve2(result.value);
+          else reject(new Error(((_a9 = result.error) == null ? void 0 : _a9.message) || `${method} th\u1EA5t b\u1EA1i`));
+        });
+      });
+    }
+  });
+
   // src/word-io.js
   var word_io_exports = {};
   __export(word_io_exports, {
+    bodyReadRoute: () => bodyReadRoute,
     hasWord: () => hasWord,
     insertAtEnd: () => insertAtEnd,
     openAsNewDocument: () => openAsNewDocument,
@@ -4260,6 +4381,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     selectParagraph: () => selectParagraph,
     selectionFontSize: () => selectionFontSize,
     selectionParagraphCount: () => selectionParagraphCount,
+    writeBodySnapshot: () => writeBodySnapshot,
     writeParagraphs: () => writeParagraphs
   });
   function writeBatchSize() {
@@ -4278,7 +4400,25 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   async function run2(fn) {
     return Word.run(fn);
   }
-  async function readBody() {
+  async function readBody({ scanOnly = false } = {}) {
+    var _a9, _b;
+    if (typeof Office !== "undefined" && ((_b = (_a9 = Office.context) == null ? void 0 : _a9.document) == null ? void 0 : _b.getFileAsync) && canReadCompressed()) {
+      try {
+        const pkg = await readCompressedPackage({ scanOnly });
+        const paragraphCount = await run2(async (context) => {
+          const paragraphs2 = context.document.body.paragraphs;
+          paragraphs2.load("items");
+          await context.sync();
+          return paragraphs2.items.length;
+        });
+        lastReadRoute = "DOCX (getFileAsync)";
+        return { pkg, paragraphCount };
+      } catch (error) {
+        lastReadRoute = "OOXML d\u1EF1 ph\xF2ng: " + error.message;
+      }
+    } else {
+      lastReadRoute = "OOXML (host ch\u01B0a h\u1ED7 tr\u1EE3 \u0111\u1ECDc DOCX tr\u1EF1c ti\u1EBFp)";
+    }
     return run2(async (context) => {
       const ox = context.document.body.getOoxml();
       const paras = context.document.body.paragraphs;
@@ -4472,6 +4612,16 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       await context.sync();
     });
   }
+  async function writeBodySnapshot(pkg, before) {
+    return run2(async (context) => {
+      const body = context.document.body;
+      body.insertOoxml(pkg, "Replace");
+      const paragraphs2 = body.paragraphs;
+      paragraphs2.load("items");
+      await context.sync();
+      return { before, after: paragraphs2.items.length };
+    });
+  }
   async function openAsNewDocument(pkg, { footerPkg = null } = {}) {
     return run2(async (context) => {
       const doc = context.application.createDocument();
@@ -4488,12 +4638,15 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       await context.sync();
     });
   }
-  var BATCH, WRITE_BYTES, hasWord;
+  var BATCH, WRITE_BYTES, lastReadRoute, bodyReadRoute, hasWord;
   var init_word_io = __esm({
     "src/word-io.js"() {
       init_ooxml();
+      init_docx_package();
       BATCH = 25;
       WRITE_BYTES = 512 * 1024;
+      lastReadRoute = "ch\u01B0a \u0111\u1ECDc";
+      bodyReadRoute = () => lastReadRoute;
       hasWord = () => typeof Word !== "undefined" && typeof Office !== "undefined";
     }
   });
@@ -4628,18 +4781,18 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }).join("");
     } };
   }
-  function glyph2(text, fs, { italic = false, bold = false } = {}) {
-    const w = [...text].reduce((s, c) => s + measure(c, fs, italic), 0);
+  function glyph2(text2, fs, { italic = false, bold = false } = {}) {
+    const w = [...text2].reduce((s, c) => s + measure(c, fs, italic), 0);
     return {
       w,
       a: fs * 0.72,
       d: fs * 0.22,
-      draw: (x, y) => `<text x="${x.toFixed(2)}" y="${y.toFixed(2)}" font-size="${fs}" font-family="${MATHFONT}"${italic ? ' font-style="italic"' : ""}${bold ? ' font-weight="bold"' : ""}>${esc2(text)}</text>`
+      draw: (x, y) => `<text x="${x.toFixed(2)}" y="${y.toFixed(2)}" font-size="${fs}" font-family="${MATHFONT}"${italic ? ' font-style="italic"' : ""}${bold ? ' font-weight="bold"' : ""}>${esc2(text2)}</text>`
     };
   }
-  function runBox(text, sty, fs, noSpaceFirst) {
+  function runBox(text2, sty, fs, noSpaceFirst) {
     const parts = [];
-    const chars = [...text];
+    const chars = [...text2];
     chars.forEach((ch, i) => {
       const letter = /[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]/u.test(ch);
       const italic = letter && sty !== "p" && sty !== "nor" && !/[Ͱ-Ͽ]/.test(ch) ? true : letter && /[α-ω]/.test(ch) && sty !== "p";
@@ -4856,8 +5009,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     canvas.height = Math.ceil(height * scale * (96 / 72));
     const ctx = canvas.getContext("2d");
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-    const b643 = canvas.toDataURL("image/png").split(",")[1];
-    const bin = atob(b643);
+    const b644 = canvas.toDataURL("image/png").split(",")[1];
+    const bin = atob(b644);
     const out = new Uint8Array(bin.length);
     for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
     return out;
@@ -5443,8 +5596,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const nodes = [];
       for (let n = walker.nextNode(); n; n = walker.nextNode()) nodes.push(n);
       for (const node3 of nodes) {
-        const text = node3.nodeValue, parent = node3.parentElement;
-        if (!parent || !text.trim() || parent.closest(".katex-mathml")) continue;
+        const text2 = node3.nodeValue, parent = node3.parentElement;
+        if (!parent || !text2.trim() || parent.closest(".katex-mathml")) continue;
         const cs = getComputedStyle(parent), fs = parseFloat(cs.fontSize), name = fontName(cs);
         const m = mk();
         parent.insertBefore(m, node3);
@@ -5452,7 +5605,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         m.remove();
         const rg = document.createRange();
         let i = 0;
-        for (const ch of text) {
+        for (const ch of text2) {
           const len3 = ch.length;
           if (ch.trim()) {
             rg.setStart(node3, i);
@@ -5646,11 +5799,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const [, kind, a, inner] = m;
       any++;
       if (kind === "text") {
-        const text = unesc2(inner || "");
-        const x = num(attr(a, "x")), y = num(attr(a, "y")), fs = num(attr(a, "font-size"));
+        const text2 = unesc2(inner || "");
+        const x = num(attr2(a, "x")), y = num(attr2(a, "y")), fs = num(attr2(a, "font-size"));
         const italic = /font-style="italic"/.test(a), bold = /font-weight="bold"/.test(a);
-        const family = (attr(a, "font-family") || "").replace(/&quot;/g, '"').split(",")[0].replace(/['"]/g, "").trim() || "Times New Roman";
-        const chars = [...text];
+        const family = (attr2(a, "font-family") || "").replace(/&quot;/g, '"').split(",")[0].replace(/['"]/g, "").trim() || "Times New Roman";
+        const chars = [...text2];
         let cx = x, i = 0;
         while (i < chars.length) {
           const math = needsMathFont(chars[i].codePointAt(0));
@@ -5678,12 +5831,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           i = j;
         }
       } else if (kind === "line") {
-        select(pen(num(attr(a, "stroke-width") || 1)));
-        moveTo(num(attr(a, "x1")), num(attr(a, "y1")));
-        lineTo(num(attr(a, "x2")), num(attr(a, "y2")));
+        select(pen(num(attr2(a, "stroke-width") || 1)));
+        moveTo(num(attr2(a, "x1")), num(attr2(a, "y1")));
+        lineTo(num(attr2(a, "x2")), num(attr2(a, "y2")));
       } else if (kind === "rect") {
-        select(pen(num(attr(a, "stroke-width") || 1)));
-        const x = num(attr(a, "x")), y = num(attr(a, "y")), w = num(attr(a, "width")), h = num(attr(a, "height"));
+        select(pen(num(attr2(a, "stroke-width") || 1)));
+        const x = num(attr2(a, "x")), y = num(attr2(a, "y")), w = num(attr2(a, "width")), h = num(attr2(a, "height"));
         moveTo(x, y);
         lineTo(x + w, y);
         lineTo(x + w, y + h);
@@ -5691,8 +5844,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         lineTo(x, y);
       } else {
         if (!/fill="none"/.test(a)) throw new Error("emf: filled path");
-        select(pen(num(attr(a, "stroke-width") || 1)));
-        const toks = (attr(a, "d") || "").match(/[MLHVQ]|-?[\d.]+(?:e-?\d+)?/g) || [];
+        select(pen(num(attr2(a, "stroke-width") || 1)));
+        const toks = (attr2(a, "d") || "").match(/[MLHVQ]|-?[\d.]+(?:e-?\d+)?/g) || [];
         let k = 0, cx = 0, cy = 0, cmd = "";
         const n = () => num(toks[k++]);
         while (k < toks.length) {
@@ -5813,13 +5966,13 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     res.set(eof, 88 + records.length);
     return res;
   }
-  var U, MM100_PER_PT, unesc2, attr, num, BASE_SYMBOLS, needsMathFont, Out, i32, u16;
+  var U, MM100_PER_PT, unesc2, attr2, num, BASE_SYMBOLS, needsMathFont, Out, i32, u16;
   var init_emf = __esm({
     "src/emf.js"() {
       U = 100;
       MM100_PER_PT = 35.2778;
       unesc2 = (s) => s.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
-      attr = (tag, name) => {
+      attr2 = (tag, name) => {
         const m = new RegExp(`\\s${name}="([^"]*)"`).exec(tag);
         return m ? m[1] : null;
       };
@@ -5893,7 +6046,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const relsPart = splitParts(out).get("/word/_rels/document.xml.rels");
     const relXml = objects.flatMap((o) => o.rels).map((r) => `<Relationship Id="${r.id}" Type="${r.type}" Target="${r.target}"/>`).join("");
     out = out.replace(relsPart.body, () => relsPart.body.replace("</Relationships>", relXml + "</Relationships>"));
-    const partXml = objects.flatMap((o) => o.parts).map((p2) => `<pkg:part pkg:name="${p2.name}" pkg:contentType="${p2.type}" pkg:compression="store"><pkg:binaryData>${b64(p2.data)}</pkg:binaryData></pkg:part>`).join("");
+    const partXml = objects.flatMap((o) => o.parts).map((p2) => `<pkg:part pkg:name="${p2.name}" pkg:contentType="${p2.type}" pkg:compression="store"><pkg:binaryData>${b642(p2.data)}</pkg:binaryData></pkg:part>`).join("");
     return out.replace("</pkg:package>", partXml + "</pkg:package>");
   }
   function detectFontPt(doc, span, stylesXml = "", fallback = 12) {
@@ -5991,7 +6144,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return { png: emf ? null : await svgToPng2(r.svg, r.width, r.height, 4), emf, width: r.width, height: r.height, baseline: r.baseline };
   }
-  var SHAPETYPE, NS, REL2, b64, counter;
+  var SHAPETYPE, NS, REL2, b642, counter;
   var init_mathtype_object = __esm({
     "src/mathtype-object.js"() {
       init_mtef_writer();
@@ -6000,7 +6153,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       SHAPETYPE = `<v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"/><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"/><v:f eqn="sum @0 1 0"/><v:f eqn="sum 0 0 @1"/><v:f eqn="prod @2 1 2"/><v:f eqn="prod @3 21600 pixelWidth"/><v:f eqn="prod @3 21600 pixelHeight"/><v:f eqn="sum @0 0 1"/><v:f eqn="prod @6 1 2"/><v:f eqn="prod @7 21600 pixelWidth"/><v:f eqn="sum @8 21600 0"/><v:f eqn="prod @7 21600 pixelHeight"/><v:f eqn="sum @10 21600 0"/></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/><o:lock v:ext="edit" aspectratio="t"/></v:shapetype>`;
       NS = { v: "urn:schemas-microsoft-com:vml", o: "urn:schemas-microsoft-com:office:office", r: "http://schemas.openxmlformats.org/officeDocument/2006/relationships", w: "http://schemas.openxmlformats.org/wordprocessingml/2006/main", m: "http://schemas.openxmlformats.org/officeDocument/2006/math" };
       REL2 = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/";
-      b64 = (bytes) => {
+      b642 = (bytes) => {
         let s = "";
         for (let i = 0; i < bytes.length; i += 32768) s += String.fromCharCode(...bytes.subarray(i, i + 32768));
         return btoa(s).replace(/(.{76})/g, "$1\n");
@@ -6580,8 +6733,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const bh3 = labelBox("0", fs).h;
     const yTop = by + rowH[0] + rowH[1] + 0.34 * rowH[2] * 0.7 + bh3 / 2 - 4, yBot = by + H - top - (yTop - (by + rowH[0] + rowH[1]));
     const rowY2 = by + rowH[0] + rowH[1];
-    const spanOf = (i, text, side) => {
-      const w = labelBox(text, fs).w, x = colX(i), p2 = uniq[i];
+    const spanOf = (i, text2, side) => {
+      const w = labelBox(text2, fs).w, x = colX(i), p2 = uniq[i];
       if (p2.kind === "pole") return side < 0 ? [x - 9 - w, x - 9] : [x + 9, x + 9 + w];
       if (i === 0) return [x - 10, x - 10 + w];
       if (i === n - 1) return [x + 10 - w, x + 10];
@@ -6955,9 +7108,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         verts.push(q);
       }
       for (const q of verts) {
-        const name = names[k++ % names.length], text = `${name}(${numLatex(snap(q[0]))};${numLatex(snap(q[1]))})`, size = 12;
+        const name = names[k++ % names.length], text2 = `${name}(${numLatex(snap(q[0]))};${numLatex(snap(q[1]))})`, size = 12;
         items.push({ t: "dot", x: px(q[0]), y: py(q[1]), r: 3 });
-        const bx = labelBox(text, size);
+        const bx = labelBox(text2, size);
         const away = [px(q[0]) - px(cx), py(q[1]) - py(cy)];
         const base = Math.atan2(away[1], away[0]);
         let best = null;
@@ -6980,7 +7133,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           best = { box: [cxp, cyp, cxp + bx.w, cyp + bx.h], x: cxp, y: cyp, anchor: Math.cos(ang) > 0 ? "l" : "r" };
         }
         boxes.push(best.box);
-        items.push({ t: "label", latex: text, x: best.x, y: best.y, size, anchor: best.anchor, halo: true });
+        items.push({ t: "label", latex: text2, x: best.x, y: best.y, size, anchor: best.anchor, halo: true });
       }
     }
     const scene = { width: W, height: H, items };
@@ -7891,9 +8044,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const i = ring0.idx[Number(k)], p2 = atoms[i], ang = -90 + 60 * Number(k);
       if (typeof sub0 === "string") {
         const dir = [Math.cos(rad(ang)), Math.sin(rad(ang))], end = add2(p2, mul2(dir, R));
-        const left = Math.cos(rad(ang)) < -0.1, right = Math.cos(rad(ang)) > 0.1, text = left ? MIRROR[sub0] || sub0 : sub0;
+        const left = Math.cos(rad(ang)) < -0.1, right = Math.cos(rad(ang)) > 0.1, text2 = left ? MIRROR[sub0] || sub0 : sub0;
         bonds.push([i, atoms.push(end) - 1, 1, null, true]);
-        labels.push([chemTex(text), left ? [end[0] - 4, end[1]] : right ? [end[0] + 4, end[1]] : add2(end, mul2(dir, 13)), left ? "r" : right ? "l" : "c"]);
+        labels.push([chemTex(text2), left ? [end[0] - 4, end[1]] : right ? [end[0] + 4, end[1]] : add2(end, mul2(dir, 13)), left ? "r" : right ? "l" : "c"]);
       } else {
         let cur = i, a = p2;
         for (const [da, order] of sub0.chain) {
@@ -8239,19 +8392,19 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (o.friction !== false) vec(cv, [bx, floor - 14], [bx - 70, floor - 14], "\\vec{F}_{ms}", { color: "#6a1b9a" });
     return frame2(cv, W, H);
   }
-  function weightKnob(cv, cx, y, k, text) {
+  function weightKnob(cv, cx, y, k, text2) {
     const X = (dx) => cx + dx * k, Y = (dy) => y + dy * k;
     cv.poly([[X(-36), Y(70)], [X(36), Y(70)], [X(28), Y(0)], [X(-28), Y(0)]], { fill: COLORS2.metal, w: 1.7 });
     cv.rect(X(-11), Y(-18), 22 * k, 18 * k, { fill: COLORS2.metal, w: 1.7 });
     cv.ellipse(cx, Y(-19), 11 * k, 4 * k, { fill: "#b9c2cc", w: 1.4 });
-    cv.text(text, [cx, Y(38)], { size: 14 });
+    cv.text(text2, [cx, Y(38)], { size: 14 });
   }
-  function weightHooked(cv, cx, y, text) {
+  function weightHooked(cv, cx, y, text2) {
     cv.rect(cx - 32, y, 64, 74, { fill: COLORS2.metal, w: 1.7 });
     cv.line([cx - 32, y + 14], [cx + 32, y + 14], { w: 1.2 });
     cv.line([cx, y], [cx, y - 18], { w: 2 });
     cv.circle([cx, y - 28], 10, { w: 2 });
-    cv.text(text, [cx, y + 44], { size: 14 });
+    cv.text(text2, [cx, y + 44], { size: 14 });
   }
   function weights(o = {}) {
     const cv = new Canvas2();
@@ -8857,9 +9010,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   // src/picture.js
   function makePicturePackage(png, { widthPt, heightPt, alt = "", name = "Hinh", center = false } = {}) {
     const n = ++counter2, rid = `rIdPic${n}`, cx = Math.round(widthPt * EMU2), cy = Math.round(heightPt * EMU2);
-    const drawing = `<w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${cx}" cy="${cy}"/><wp:docPr id="${n}" name="${attr2(name)} ${n}" descr="${attr2(alt)}"/><wp:cNvGraphicFramePr><a:graphicFrameLocks noChangeAspect="1"/></wp:cNvGraphicFramePr><a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic><pic:nvPicPr><pic:cNvPr id="0" name="${attr2(name)}${n}.png"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="${rid}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${cx}" cy="${cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing>`;
+    const drawing = `<w:drawing><wp:inline distT="0" distB="0" distL="0" distR="0"><wp:extent cx="${cx}" cy="${cy}"/><wp:docPr id="${n}" name="${attr3(name)} ${n}" descr="${attr3(alt)}"/><wp:cNvGraphicFramePr><a:graphicFrameLocks noChangeAspect="1"/></wp:cNvGraphicFramePr><a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic><pic:nvPicPr><pic:cNvPr id="0" name="${attr3(name)}${n}.png"/><pic:cNvPicPr/></pic:nvPicPr><pic:blipFill><a:blip r:embed="${rid}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill><pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${cx}" cy="${cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr></pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing>`;
     const ns = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"';
-    return `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="${rid}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/${name}${n}.png"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${ns}><w:body><w:p>${center ? '<w:pPr><w:jc w:val="center"/></w:pPr>' : ""}<w:r>${drawing}</w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/media/${name}${n}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b642(png)}</pkg:binaryData></pkg:part></pkg:package>`;
+    return `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="${rid}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/${name}${n}.png"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${ns}><w:body><w:p>${center ? '<w:pPr><w:jc w:val="center"/></w:pPr>' : ""}<w:r>${drawing}</w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/media/${name}${n}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b643(png)}</pkg:binaryData></pkg:part></pkg:package>`;
   }
   async function canvasToPng(canvas) {
     const url = canvas.toDataURL("image/png").split(",")[1];
@@ -8891,16 +9044,16 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     return canvasToPng(canvas);
   }
-  var EMU2, b642, attr2, counter2;
+  var EMU2, b643, attr3, counter2;
   var init_picture = __esm({
     "src/picture.js"() {
       EMU2 = 12700;
-      b642 = (bytes) => {
+      b643 = (bytes) => {
         let s = "";
         for (let i = 0; i < bytes.length; i += 32768) s += String.fromCharCode(...bytes.subarray(i, i + 32768));
         return btoa(s).replace(/(.{76})/g, "$1\n");
       };
-      attr2 = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
+      attr3 = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
       counter2 = Math.floor(Date.now() / 1e3) % 1e5;
     }
   });
@@ -9179,8 +9332,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return null;
   }
-  function nodeLatex(text) {
-    let t = text.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|Huge|bfseries|itshape|sffamily|normalsize)\b\s*/g, "").trim();
+  function nodeLatex(text2) {
+    let t = text2.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|Huge|bfseries|itshape|sffamily|normalsize)\b\s*/g, "").trim();
     if (!t) return "";
     if (/^\$[\s\S]*\$$/.test(t) && t.indexOf("$", 1) === t.length - 1) return t.slice(1, -1);
     if (t.includes("$")) return t.replace(/\$([^$]*)\$/g, "$1");
@@ -9269,8 +9422,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const t = Math.min(Math.abs(u[0]) > 1e-6 ? node3.hw / Math.abs(u[0]) : 1e9, Math.abs(u[1]) > 1e-6 ? node3.hh / Math.abs(u[1]) : 1e9);
       return [to[0] + u[0] * t, to[1] + u[1] * t];
     };
-    const addNode = (opts, name, c, text) => {
-      const im = /^\s*\\ic(O?)([A-Z][A-Za-z]*)(?:\[([\d.]+)\])?\s*$/.exec(text);
+    const addNode = (opts, name, c, text2) => {
+      const im = /^\s*\\ic(O?)([A-Z][A-Za-z]*)(?:\[([\d.]+)\])?\s*$/.exec(text2);
       if (im && icon) {
         const code2 = icon(im[2].toLowerCase(), Boolean(im[1]));
         if (code2) {
@@ -9282,16 +9435,16 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         }
       }
       if (/above|below|left|right/.test(Object.keys(opts).join(" "))) {
-        const k = Object.keys(opts).join(" "), tex0 = nodeLatex(text), b0 = tex0 ? labelBox(tex0, fs) : { w: 0, h: 0 };
+        const k = Object.keys(opts).join(" "), tex0 = nodeLatex(text2), b0 = tex0 ? labelBox(tex0, fs) : { w: 0, h: 0 };
         c = [c[0] + (/right/.test(k) ? 1 : /left/.test(k) ? -1 : 0) * (b0.w / 2 + 4), c[1] + (/below/.test(k) ? 1 : /above/.test(k) ? -1 : 0) * (b0.h / 2 + 4)];
       }
-      const pm = /\\wspic(?:\[([\d.]+)cm\])?\{ws-([0-9a-f-]+)\}/i.exec(text), pic = pm ? (pm[1] ? parseFloat(pm[1]) : 1) * CM : 0;
+      const pm = /\\wspic(?:\[([\d.]+)cm\])?\{ws-([0-9a-f-]+)\}/i.exec(text2), pic = pm ? (pm[1] ? parseFloat(pm[1]) : 1) * CM : 0;
       const size = opts["minimum size"] ? dim(opts["minimum size"]) * scale : 0;
       const w0 = opts["minimum width"] ? dim(opts["minimum width"]) * scale : size, h0 = opts["minimum height"] ? dim(opts["minimum height"]) * scale : size;
       const inner = opts["inner sep"] ? dim(opts["inner sep"]) : 5;
-      const tex = pm ? "" : nodeLatex(text);
+      const tex = pm ? "" : nodeLatex(text2);
       const plain2 = !pm && tex && /^\\text\{[^$\\]*\}$/.test(tex) && /[^\x00-\x7f]|[A-Za-z]{2}/.test(tex);
-      const box = tex && !plain2 ? labelBox(tex, fs * (/Large/.test(text) ? 1.3 : 1)) : plain2 ? { w: tex.length * fs * 0.5, h: fs * 1.3 } : { w: 0, h: 0 };
+      const box = tex && !plain2 ? labelBox(tex, fs * (/Large/.test(text2) ? 1.3 : 1)) : plain2 ? { w: tex.length * fs * 0.5, h: fs * 1.3 } : { w: 0, h: 0 };
       const shape2 = opts.circle ? "circle" : "rect";
       const draw = Boolean(opts.draw);
       const hw = Math.max(w0, box.w + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.w / 2, hh = Math.max(h0, box.h + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.h / 2;
@@ -9302,7 +9455,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         if (shape2 === "circle") items.push({ t: "ellipse", cx: c[0], cy: c[1], rx: r, ry: r, sw: sw4, fill });
         else items.push({ t: "rect", x: c[0] - hw, y: c[1] - hh, w: 2 * hw, h: 2 * hh, sw: sw4, fill });
       }
-      if (tex && plain2) items.push({ t: "ptext", s: tex.slice(6, -1), x: c[0], y: c[1], size: fs * (/Large/.test(text) ? 1.3 : 1), color: "#222222" });
+      if (tex && plain2) items.push({ t: "ptext", s: tex.slice(6, -1), x: c[0], y: c[1], size: fs * (/Large/.test(text2) ? 1.3 : 1), color: "#222222" });
       else if (tex) items.push({ t: "label", latex: tex, x: c[0], y: c[1], size: fs * (/Large|huge/.test(opts.font || "") ? 1.35 : 1), anchor: "c" });
       if (pm) items.push({ t: "ptext", s: String.fromCodePoint(...pm[2].split("-").map((h) => parseInt(h, 16))), x: c[0], y: c[1], size: pic * 0.8, font: "Segoe UI Emoji" });
       if (name) nodes.set(name, { c, shape: shape2, r: shape2 === "circle" ? r : 0, hw: hw || pic / 2, hh: hh || pic / 2 });
@@ -9686,10 +9839,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return [s.slice(i + 1, j), j + 1];
   }
-  function unbox(text) {
-    const t = text.trim();
+  function unbox(text2) {
+    const t = text2.trim();
     const m = /^\\(fbox|fcolorbox)\b/.exec(t);
-    if (!m) return { text, box: false };
+    if (!m) return { text: text2, box: false };
     let i = m[0].length;
     const skip = m[1] === "fcolorbox" ? 2 : 0;
     for (let k = 0; k < skip; k++) {
@@ -9697,9 +9850,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       i = group3(t, i)[1];
     }
     while (t[i] === " ") i++;
-    if (t[i] !== "{") return { text, box: false };
+    if (t[i] !== "{") return { text: text2, box: false };
     const [inner, end] = group3(t, i);
-    return end >= t.length ? { text: inner.replace(/\\rule\{[^}]*\}\{[^}]*\}/g, "").replace(/^\\ |\\ $/g, "").trim(), box: true } : { text, box: false };
+    return end >= t.length ? { text: inner.replace(/\\rule\{[^}]*\}\{[^}]*\}/g, "").replace(/^\\ |\\ $/g, "").trim(), box: true } : { text: text2, box: false };
   }
   function parseSpec(spec) {
     const cols = [];
@@ -9753,8 +9906,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       rows.push(cells.map((c, k) => {
         const fill = /\\cellcolor\{([^}]*)\}/.exec(c);
         const col = cols[k] || { align: "center" };
-        const text = c.replace(/\\cellcolor\{[^}]*\}/g, "").replace(/\\rule\{[^}]*\}\{[^}]*\}/g, "");
-        const u = unbox(text), pw = /\\parbox(?:\[[^\]]*\])*\{([\d.]+)(cm|mm)\}/.exec(u.text);
+        const text2 = c.replace(/\\cellcolor\{[^}]*\}/g, "").replace(/\\rule\{[^}]*\}\{[^}]*\}/g, "");
+        const u = unbox(text2), pw = /\\parbox(?:\[[^\]]*\])*\{([\d.]+)(cm|mm)\}/.exec(u.text);
         if (pw) boxW[k] = Math.max(boxW[k] || 0, Math.round(cmOf(pw[1] + pw[2]) * CM_DXA) + 140);
         return { xml: cellPara(texToRuns(u.text.trim(), ctx, f), { jc: col.align }), fill: fill ? safeColour(fill[1]) : null, box: u.box };
       }));
@@ -9793,10 +9946,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return out;
   }
-  function paragraphs(text, ctx, f, centered) {
-    text = dropNestedVspace(text);
+  function paragraphs(text2, ctx, f, centered) {
+    text2 = dropNestedVspace(text2);
     let out = "";
-    const parts = text.split(/(\\par\b|\n\s*\n|\\medskip|\\bigskip|\\smallskip|\\vspace\*?\{[^}]*\})/);
+    const parts = text2.split(/(\\par\b|\n\s*\n|\\medskip|\\bigskip|\\smallskip|\\vspace\*?\{[^}]*\})/);
     let before = 0;
     for (const part of parts) {
       const sp = /^\\(medskip|bigskip|smallskip)$/.exec(part), vs = /^\\vspace\*?\{([^}]*)\}$/.exec(part);
@@ -9954,8 +10107,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     for (const r of rows) {
       const hl = /\\hline/.test(r);
       const cells = r.replace(/\\hline/g, "").split("&").map((c) => c.replace(/\\phantom\{[^}]*\}/g, "").replace(/\\,/g, "").trim());
-      const text = cells.filter(Boolean).join(" ");
-      if (text) lines.push({ text, rule: false });
+      const text2 = cells.filter(Boolean).join(" ");
+      if (text2) lines.push({ text: text2, rule: false });
       if (hl && lines.length) lines[lines.length - 1].rule = true;
     }
     return lines;
@@ -9975,9 +10128,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       return "<w:r><w:t>[h\xECnh]</w:t></w:r>";
     }
   }
-  function boxRun(ctx, wCm, hCm, border, text = "", bold = true, font = "") {
+  function boxRun(ctx, wCm, hCm, border, text2 = "", bold = true, font = "") {
     const w = wCm * 37.795, h = hCm * 37.795, items = [{ t: "rect", x: 0, y: 0, w, h, sw: 1.6, color: "#" + border, fill: "#ffffff" }];
-    if (text) items.push({ t: "ptext", s: text, x: w / 2, y: h / 2, size: h * (font ? 0.7 : 0.62), bold, color: "#222222", font });
+    if (text2) items.push({ t: "ptext", s: text2, x: w / 2, y: h / 2, size: h * (font ? 0.7 : 0.62), bold, color: "#222222", font });
     return sceneRun(fit(items, 2), ctx, "\xD4", hCm * 28.35 < 2.2 * (ctx.fs || 16) * 0.75);
   }
   function boxSpec(content2) {
@@ -10000,10 +10153,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     return null;
   }
   function usedPictures(result, cps = {}) {
-    const text = JSON.stringify(result.sheets).replace(/\\\\/g, "\\");
+    const text2 = JSON.stringify(result.sheets).replace(/\\\\/g, "\\");
     const set = /* @__PURE__ */ new Set();
-    for (const m of text.matchAll(/\\(?:wspic|wshz)(?:\[[^\]]*\])?\{ws-([0-9a-f-]+)\}/gi)) set.add(m[1].toLowerCase());
-    for (const m of text.matchAll(/\\icO([A-Za-z]+)/g)) {
+    for (const m of text2.matchAll(/\\(?:wspic|wshz)(?:\[[^\]]*\])?\{ws-([0-9a-f-]+)\}/gi)) set.add(m[1].toLowerCase());
+    for (const m of text2.matchAll(/\\icO([A-Za-z]+)/g)) {
       const cp2 = cps[m[1].toLowerCase()];
       if (cp2) set.add(String(cp2));
     }
@@ -10294,7 +10447,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function exHeading(style, n, instrRuns, acc, sz) {
     const bold = `<w:rPr><w:b/><w:sz w:val="${sz}"/></w:rPr>`;
-    const label = (text, color, size = sz) => `<w:r><w:rPr><w:b/><w:color w:val="${color}"/><w:sz w:val="${size}"/></w:rPr><w:t xml:space="preserve">${esc6(text)}</w:t></w:r>`;
+    const label = (text2, color, size = sz) => `<w:r><w:rPr><w:b/><w:color w:val="${color}"/><w:sz w:val="${size}"/></w:rPr><w:t xml:space="preserve">${esc6(text2)}</w:t></w:r>`;
     const gap = `<w:r>${bold}<w:t xml:space="preserve">  </w:t></w:r>`;
     const base = { before: 200, after: 100, keepNext: true };
     if (style === "band") return para(label(` B\xC0I ${n} `, "FFFFFF") + `<w:r><w:rPr><w:b/><w:color w:val="FFFFFF"/><w:sz w:val="${sz}"/></w:rPr><w:t xml:space="preserve"> </w:t></w:r>` + instrRuns.replace(/<w:rPr>/g, '<w:rPr><w:color w:val="FFFFFF"/>'), __spreadProps(__spreadValues({}, base), { shade: acc, ind: 0 }));
@@ -10392,13 +10545,13 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     return { body, skipped, count };
   }
   function bodyPackage(bodyXml, images = []) {
-    const b643 = (bytes) => {
+    const b644 = (bytes) => {
       let t = "";
       for (let i = 0; i < bytes.length; i += 32768) t += String.fromCharCode(...bytes.subarray(i, i + 32768));
       return btoa(t).replace(/(.{76})/g, "$1\n");
     };
     const rels = images.map((im) => `<Relationship Id="${im.rid}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/${im.rid}.png"/>`).join("");
-    const media = images.map((im) => `<pkg:part pkg:name="/word/media/${im.rid}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b643(im.png)}</pkg:binaryData></pkg:part>`).join("");
+    const media = images.map((im) => `<pkg:part pkg:name="/word/media/${im.rid}.png" pkg:contentType="image/png" pkg:compression="store"><pkg:binaryData>${b644(im.png)}</pkg:binaryData></pkg:part>`).join("");
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><?mso-application progid="Word.Document"?><pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document ${NS3}><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part>${images.length ? `<pkg:part pkg:name="/word/_rels/document.xml.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${rels}</Relationships></pkg:xmlData></pkg:part>` : ""}${media}</pkg:package>`;
   }
   var esc6, EMOJI_FONT, SHAPES, emojiOf, BLANK_RE, BLANK_SPLIT, blankRun, PLAIN_MATH, PLAIN_SYM, plainMath, texColour, cmNum, SHAPE_TIKZ, FBOX_BLANK, para, NOB2, table, SUBJECT_TITLE, WORKSHEET_STYLES, WORKSHEET_THEMES, tint, CIRCLED, sbdr, NS3;
@@ -10757,8 +10910,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         throw new CalcError("Ch\u01B0a h\u1ED7 tr\u1EE3 c\u1EA5u tr\xFAc \u201C" + n.k + "\u201D trong bi\u1EC3u th\u1EE9c t\xEDnh to\xE1n");
     }
   }
-  function normalizeInput(text) {
-    const t = String(text).trim();
+  function normalizeInput(text2) {
+    const t = String(text2).trim();
     if (!t) throw new CalcError("Ch\u01B0a nh\u1EADp bi\u1EC3u th\u1EE9c");
     const plain2 = /[\\{}]/.test(t) ? latexToSympy(t) : t.replace(/[\u2212]/g, "-").replace(/[\u00d7\u00b7]/g, "*").replace(/\u00f7/g, "/").replace(/\u03c0/g, "pi").replace(/\u221e/g, "oo").replace(/\u00b2/g, "**2").replace(/\u00b3/g, "**3");
     return /[\[\]()]/.test(plain2) || /,\s/.test(plain2) ? plain2 : plain2.replace(/(\d),(\d)/g, "$1.$2");
@@ -11690,7 +11843,7 @@ renderStart();
     lineWidth = 19050,
     round = true,
     roundAdj = 12e3,
-    text = "",
+    text: text2 = "",
     textSize = 1800,
     textColor = "0F172A",
     bold = false,
@@ -11714,7 +11867,7 @@ renderStart();
       <a:p>
         <a:pPr ${alignXml} indent="0" marL="0"><a:buNone/></a:pPr>${lineRuns(l, o)}
       </a:p>`;
-    const bodyContent = runs2 && runs2.length ? runs2.map((r) => para2(r.text, { size: r.size || textSize, bold: r.bold, color: r.color || textColor })).join("") : String(text != null ? text : "").split("\n").map((l) => para2(l, { size: textSize, bold, color: textColor })).join("");
+    const bodyContent = runs2 && runs2.length ? runs2.map((r) => para2(r.text, { size: r.size || textSize, bold: r.bold, color: r.color || textColor })).join("") : String(text2 != null ? text2 : "").split("\n").map((l) => para2(l, { size: textSize, bold, color: textColor })).join("");
     return `
     <p:sp>
       <p:nvSpPr>
@@ -12034,10 +12187,10 @@ renderStart();
     const cands = [];
     for (const ratio of [0.5, 0.62, 0.4]) {
       const tw = Math.round(inner.w * ratio - GAP / 2);
-      const text = { x: inner.x - pad, y: r.y, w: tw + pad, h: r.h };
+      const text2 = { x: inner.x - pad, y: r.y, w: tw + pad, h: r.h };
       const area2 = { x: inner.x + tw + GAP, y: inner.y, w: inner.w - tw - GAP, h: inner.h };
-      const f = fitSize(lines, text.w, text.h, STEM_SIZES, inset, bold), g = gridFit(area2, imgs);
-      cands.push(__spreadProps(__spreadValues({}, base), { text, size: f.size, fits: f.fits, pics: g.boxes, frac: g.score / (area2.w * area2.h) }));
+      const f = fitSize(lines, text2.w, text2.h, STEM_SIZES, inset, bold), g = gridFit(area2, imgs);
+      cands.push(__spreadProps(__spreadValues({}, base), { text: text2, size: f.size, fits: f.fits, pics: g.boxes, frac: g.score / (area2.w * area2.h) }));
     }
     let sz = STEM_SIZES[STEM_SIZES.length - 1];
     for (const s of STEM_SIZES) if (textHeight(lines, s, r.w, inset, bold) <= r.h * 0.5) {
@@ -12605,7 +12758,7 @@ ${contentTypesOverrides}
       FUNCS3 = "arcsin|arccos|arctan|arccot|sinh|cosh|tanh|sin|cos|tan|cot|sec|csc|log|ln|lg|exp|max|min|det|gcd|lim|sup|inf";
       IMG_EXT = { "image/png": "png", "image/jpeg": "jpeg", "image/jpg": "jpeg", "image/gif": "gif", "image/x-emf": "emf", "image/emf": "emf", "image/x-wmf": "wmf", "image/wmf": "wmf" };
       RE_LABEL2 = /^\s*(?:C[âa]u|B[àa]i)\s*\d+\s*(?:[.:)\-–—]|\s)?\s*/iu;
-      toLines = (text) => text.replace(/[ \t ]+/g, " ").split("\n").map((l) => l.trim()).filter(Boolean);
+      toLines = (text2) => text2.replace(/[ \t ]+/g, " ").split("\n").map((l) => l.trim()).filter(Boolean);
       MX = 7e5;
       CW = 10792e3;
       TOP = 95e4;
@@ -12687,10 +12840,10 @@ ${contentTypesOverrides}
       img.src = url;
     });
   }
-  async function renderQr(text, { vendorBase = "vendor/", logoUrl = "icon-80.png" } = {}) {
+  async function renderQr(text2, { vendorBase = "vendor/", logoUrl = "icon-80.png" } = {}) {
     await libs(vendorBase);
     const qr = qrcode(0, "H");
-    qr.addData(text, "Byte");
+    qr.addData(text2, "Byte");
     try {
       qr.make();
     } catch (e3) {
@@ -12709,7 +12862,7 @@ ${contentTypesOverrides}
     const read = () => {
       const p2 = ctx.getImageData(0, 0, canvas.width, canvas.height);
       const d = jsQR(p2.data, p2.width, p2.height, { inversionAttempts: "dontInvert" });
-      return d && d.data === text;
+      return d && d.data === text2;
     };
     if (!logo) {
       if (read()) return canvas;
@@ -13162,12 +13315,12 @@ ${contentTypesOverrides}
       try {
         const list3 = await exportVersions();
         const t = $2("ex-xlsx").value === "both" ? "giasu" : $2("ex-xlsx").value;
-        const text = answerTsv(t, list3);
+        const text2 = answerTsv(t, list3);
         try {
-          await navigator.clipboard.writeText(text);
+          await navigator.clipboard.writeText(text2);
           out.innerHTML = '<span class="ok">\u0110\xE3 sao ch\xE9p; d\xE1n v\xE0o \xF4 A1 c\u1EE7a Excel.</span>';
         } catch (e3) {
-          out.innerHTML = `<textarea rows="8">${esc12(text)}</textarea>`;
+          out.innerHTML = `<textarea rows="8">${esc12(text2)}</textarea>`;
         }
       } catch (e3) {
         fail3(out, e3);
@@ -13243,8 +13396,8 @@ ${contentTypesOverrides}
     install: () => install
   });
   async function install(url) {
-    const text = await (await fetch(url)).text();
-    let pkg = text;
+    const text2 = await (await fetch(url)).text();
+    let pkg = text2;
     const docPart = () => splitParts(pkg).get("/word/document.xml");
     const getDoc = () => /<pkg:xmlData>([\s\S]*)<\/pkg:xmlData>/.exec(docPart().body)[1];
     const setDoc = (xml) => {
@@ -13485,25 +13638,25 @@ ${contentTypesOverrides}
   }
   function expandSnippet(snippet) {
     const bar = snippet.indexOf("|");
-    const text = snippet.replace("|", "");
-    const caret = bar < 0 ? text.length : bar;
-    return { text, caret };
+    const text2 = snippet.replace("|", "");
+    const caret = bar < 0 ? text2.length : bar;
+    return { text: text2, caret };
   }
-  function tokenAt(text, caret) {
-    const before = text.slice(0, caret);
+  function tokenAt(text2, caret) {
+    const before = text2.slice(0, caret);
     let m = /\\(?:begin\{[A-Za-z*]*|[A-Za-z]*)$/.exec(before);
     if (m) return { start: m.index, token: m[0], bare: false };
     m = /(?:^|[^A-Za-z\\])([A-Za-z]{3,})$/.exec(before);
     if (m) return { start: before.length - m[1].length, token: m[1], bare: true };
     return null;
   }
-  function nextStop(text, caret, backward = false) {
+  function nextStop(text2, caret, backward = false) {
     if (backward) {
-      for (let i = caret - 2; i >= 0; i--) if (text[i] === "{" && text[i + 1] === "}" || text[i] === "[" && text[i + 1] === "]") return i + 1;
+      for (let i = caret - 2; i >= 0; i--) if (text2[i] === "{" && text2[i + 1] === "}" || text2[i] === "[" && text2[i + 1] === "]") return i + 1;
       return -1;
     }
-    for (let i = caret; i < text.length - 1; i++) {
-      if (text[i] === "{" && text[i + 1] === "}" || text[i] === "[" && text[i + 1] === "]") {
+    for (let i = caret; i < text2.length - 1; i++) {
+      if (text2[i] === "{" && text2[i + 1] === "}" || text2[i] === "[" && text2[i + 1] === "]") {
         if (i + 1 === caret) continue;
         return i + 1;
       }
@@ -13700,10 +13853,10 @@ ${contentTypesOverrides}
     const accept = (i = index) => {
       const entry = items[i];
       if (!entry || !token) return false;
-      const { text, caret } = expandSnippet(entry[1]);
+      const { text: text2, caret } = expandSnippet(entry[1]);
       const v = field5.value, end = field5.selectionStart;
       const before = v.slice(0, token.start), after = v.slice(end);
-      field5.value = before + text + after;
+      field5.value = before + text2 + after;
       const pos = before.length + caret;
       field5.setSelectionRange(pos, pos);
       usage[entry[0]] = (usage[entry[0]] || 0) + 1;
@@ -13978,16 +14131,16 @@ ${contentTypesOverrides}
     var _a9, _b;
     const v = field5.value, s = (_a9 = field5.selectionStart) != null ? _a9 : v.length, e3 = (_b = field5.selectionEnd) != null ? _b : s;
     const selected = v.slice(s, e3);
-    let text = snippet, caret;
-    const at2 = text.indexOf("@");
+    let text2 = snippet, caret;
+    const at2 = text2.indexOf("@");
     if (at2 >= 0) {
-      text = text.replace("@", selected);
-      caret = selected ? s + text.length : s + at2;
-    } else caret = s + text.length;
-    let out = v.slice(0, s) + text + v.slice(e3);
-    const next = out[s + text.length] || "";
-    if (/\\[A-Za-z]+$/.test(text) && /[A-Za-z]/.test(next)) {
-      out = out.slice(0, s + text.length) + " " + out.slice(s + text.length);
+      text2 = text2.replace("@", selected);
+      caret = selected ? s + text2.length : s + at2;
+    } else caret = s + text2.length;
+    let out = v.slice(0, s) + text2 + v.slice(e3);
+    const next = out[s + text2.length] || "";
+    if (/\\[A-Za-z]+$/.test(text2) && /[A-Za-z]/.test(next)) {
+      out = out.slice(0, s + text2.length) + " " + out.slice(s + text2.length);
       if (!selected && at2 < 0) caret += 1;
     }
     field5.value = out;
@@ -14274,16 +14427,25 @@ ${contentTypesOverrides}
     el.value = done;
   }
   async function scan() {
+    $("btn-scan").disabled = true;
     $("scan-summary").textContent = "\u0110ang \u0111\u1ECDc t\xE0i li\u1EC7u\u2026";
     try {
-      const { pkg, paragraphCount } = await readBody();
+      const readStart = Date.now();
+      const { pkg, paragraphCount } = await readBody({ scanOnly: true });
+      const readMs = Date.now() - readStart;
+      $("scan-summary").textContent = "\u0110ang ph\xE2n t\xEDch c\xF4ng th\u1EE9c\u2026";
+      await new Promise((resolve2) => setTimeout(resolve2, 0));
+      const parseStart = Date.now();
       const scanned = scanBody(pkg);
+      scanned.timing = { readMs, parseMs: Date.now() - parseStart };
       scanned.mapped = scanned.paragraphTotal === paragraphCount;
       scanned.paragraphCount = paragraphCount;
       state2.scanned = scanned;
       renderScan();
     } catch (e3) {
-      $("scan-summary").innerHTML = `<span class="bad">L\u1ED7i: ${esc13(e3.message)}</span>`;
+      $("scan-summary").innerHTML = `<span class="bad">L\u1ED7i khi \u0111\u1ECDc t\xE0i li\u1EC7u: ${esc13(e3.message)}</span>`;
+    } finally {
+      $("btn-scan").disabled = false;
     }
   }
   function renderScan() {
@@ -14293,7 +14455,7 @@ ${contentTypesOverrides}
     const badMt = mt.length - okMt;
     const lx = s.equations.filter((e3) => e3.kind === "latex");
     const native = s.equations.filter((e3) => e3.kind === "native");
-    $("scan-summary").innerHTML = `${s.equations.length} c\xF4ng th\u1EE9c: MathType <b class="ok">${okMt}</b>${badMt ? ` (l\u1ED7i <b class="bad">${badMt}</b>)` : ""}, LaTeX <b class="warn">${lx.length}</b>, Word <b>${native.length}</b>` + (s.mapped ? "" : ` \xB7 <span class="warn">s\u1ED1 \u0111o\u1EA1n kh\xF4ng kh\u1EDBp (${s.paragraphTotal} \u2260 ${s.paragraphCount}); ch\u1EBF \u0111\u1ED9 chuy\u1EC3n to\xE0n b\u1ED9 s\u1EBD \u0111\u1ECDc t\u1EEBng \u0111o\u1EA1n</span>`);
+    $("scan-summary").innerHTML = `${s.equations.length} c\xF4ng th\u1EE9c: MathType <b class="ok">${okMt}</b>${badMt ? ` (l\u1ED7i <b class="bad">${badMt}</b>)` : ""}, LaTeX <b class="warn">${lx.length}</b>, Word <b>${native.length}</b>` + (s.mapped ? "" : ` \xB7 <span class="warn">s\u1ED1 \u0111o\u1EA1n kh\xF4ng kh\u1EDBp (${s.paragraphTotal} \u2260 ${s.paragraphCount}); kh\xF4ng \u0111\u1ECBnh v\u1ECB t\u1EEBng \u0111o\u1EA1n t\u1EEB k\u1EBFt qu\u1EA3 qu\xE9t</span>`) + (s.timing ? ` \xB7 \u0111\u1ECDc ${(s.timing.readMs / 1e3).toFixed(1)} gi\xE2y, ph\xE2n t\xEDch ${(s.timing.parseMs / 1e3).toFixed(1)} gi\xE2y` : "");
     const only = $("only-bad").checked;
     const rows = s.equations.filter((e3) => !only || e3.latex === null);
     $("eq-table").tBodies[0].innerHTML = rows.slice(0, 600).map((e3) => {
@@ -14385,6 +14547,31 @@ ${contentTypesOverrides}
     let phase = "\u0111\u1ECDc t\xE0i li\u1EC7u";
     try {
       const scopeName = document.querySelector("input[name=scope]:checked").value;
+      if (scopeName === "all" && src === "mathtype" && dst === "word" && !$("opt-display").checked) {
+        const original = await readBody();
+        phase = "gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c";
+        $("convert-summary").textContent = "\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c\u2026";
+        progress(bar, 1, 3);
+        await new Promise((resolve2) => setTimeout(resolve2, 0));
+        const result = convertMathTypeInPackage(original.pkg, { convertLatex: false });
+        const reasons2 = {};
+        result.kept.forEach((k) => {
+          reasons2[k.reason] = (reasons2[k.reason] || 0) + 1;
+        });
+        const reasonList2 = Object.entries(reasons2).map(([k, v]) => `<li>${esc13(k)}: ${v}</li>`).join("");
+        if (!result.changed) {
+          $("convert-summary").innerHTML = `Kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n. Gi\u1EEF nguy\xEAn ${result.kept.length} c\xF4ng th\u1EE9c.` + (reasonList2 ? `<ul>${reasonList2}</ul>` : "");
+          return;
+        }
+        phase = "ghi c\xF4ng th\u1EE9c v\xE0o Word";
+        $("convert-summary").textContent = `\u0110ang ghi ${result.converted} c\xF4ng th\u1EE9c v\xE0o Word\u2026`;
+        progress(bar, 2, 3);
+        const res2 = await writeBodySnapshot(result.pkg, original.paragraphCount);
+        afterWrite(res2, { scope: { kind: "body" }, pkg: original.pkg, paragraphCount: original.paragraphCount });
+        progress(bar, 3, 3);
+        $("convert-summary").innerHTML = `<p><b class="ok">\u0110\xE3 chuy\u1EC3n ${result.converted}</b> c\xF4ng th\u1EE9c; gi\u1EEF nguy\xEAn ${result.kept.length}.</p>` + (reasonList2 ? `<ul>${reasonList2}</ul>` : "") + (res2.before !== res2.after ? '<p class="warn">S\u1ED1 \u0111o\u1EA1n \u0111\xE3 thay \u0111\u1ED5i. H\xE3y ki\u1EC3m tra b\u1ED1 c\u1EE5c; d\xF9ng Ho\xE0n t\xE1c ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao n\u1EBFu c\u1EA7n.</p>' : "");
+        return;
+      }
       $("convert-summary").textContent = "\u0110ang \u0111\u1ECDc c\xE1c \u0111o\u1EA1n\u2026";
       const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
       phase = "gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c";
@@ -14453,7 +14640,8 @@ ${contentTypesOverrides}
     const b = state2.lastBackup;
     if (!b) return;
     try {
-      await writeParagraphs(b.scope, b.items, b.mode, (d, t) => progress($("progress"), d, t));
+      if (b.scope.kind === "body") await writeBodySnapshot(b.pkg, b.paragraphCount);
+      else await writeParagraphs(b.scope, b.items, b.mode, (d, t) => progress($("progress"), d, t));
       $("convert-summary").innerHTML = '<span class="ok">\u0110\xE3 kh\xF4i ph\u1EE5c c\xE1c \u0111o\u1EA1n g\u1ED1c.</span>';
       $("btn-restore").disabled = true;
     } catch (e3) {
@@ -14492,7 +14680,7 @@ ${contentTypesOverrides}
       previewEl.textContent = tex;
     }
   }
-  function insertSymbolAtCursor(text) {
+  function insertSymbolAtCursor(text2) {
     var _a9, _b;
     const el = $("editor-latex");
     if (!el) return;
@@ -14500,8 +14688,8 @@ ${contentTypesOverrides}
     const end = (_b = el.selectionEnd) != null ? _b : el.value.length;
     const before = el.value.slice(0, start);
     const after = el.value.slice(end);
-    el.value = before + text + after;
-    const newPos = start + text.length;
+    el.value = before + text2 + after;
+    const newPos = start + text2.length;
     el.setSelectionRange(newPos, newPos);
     el.focus();
     renderEditorPreview();
@@ -14609,6 +14797,7 @@ ${contentTypesOverrides}
     var _a9, _b, _c;
     const lines = [];
     lines.push("Office c\xF3: " + (typeof Office !== "undefined") + ", Word c\xF3: " + (typeof Word !== "undefined"));
+    lines.push("C\xE1ch \u0111\u1ECDc t\xE0i li\u1EC7u: " + bodyReadRoute());
     try {
       const c = Office.context;
       lines.push("host=" + ((_a9 = c.diagnostics) == null ? void 0 : _a9.host) + " platform=" + ((_b = c.diagnostics) == null ? void 0 : _b.platform) + " version=" + ((_c = c.diagnostics) == null ? void 0 : _c.version));

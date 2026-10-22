@@ -45,20 +45,7 @@ export function paragraphPackages(pkg, paragraphCount, kinds) {
   const rels = relsPart ? xmlData(relsPart) : '';
   const tags = rels.match(/<Relationship\b[^>]*\/>/g) || [];
   const binaryRels = tags.filter(t => /\bType="[^"]*\/(?:image|oleObject)"/.test(t));
-  const protectedTargets = new Set();
-  for (const [name, part] of parts) {
-    if (!name.endsWith('.rels') || part === relsPart) continue;
-    const base = name.replace(/\/[_]rels\/[^/]+$/, '/');
-    for (const tag of xmlData(part).match(/<Relationship\b[^>]*>/g) || []) {
-      const target = (/\bTarget="([^"]+)"/.exec(tag) || [])[1];
-      if (!target || /TargetMode="External"/.test(tag)) continue;
-      const segments = [];
-      for (const seg of (target.startsWith('/') ? target : base + target).split('/')) {
-        if (seg === '..') segments.pop(); else if (seg && seg !== '.') segments.push(seg);
-      }
-      protectedTargets.add('/' + segments.join('/'));
-    }
-  }
+  const protectedTargets = otherPartTargets(parts, relsPart);
   const outer = pkg.slice(0, pkg.indexOf('<pkg:part'));
   const items = [];
   paras.forEach((p, index) => {
@@ -89,6 +76,25 @@ export function paragraphPackages(pkg, paragraphCount, kinds) {
     items.push({ index, pkg: outer + chunks.join('') + '</pkg:package>' });
   });
   return items;
+}
+
+// Parts such as headers can share a picture with document.xml.
+function otherPartTargets(parts, ignoredPart) {
+  const protectedTargets = new Set();
+  for (const [name, part] of parts) {
+    if (!name.endsWith('.rels') || part === ignoredPart) continue;
+    const base = name.replace(/\/[_]rels\/[^/]+$/, '/');
+    for (const tag of xmlData(part).match(/<Relationship\b[^>]*>/g) || []) {
+      const target = (/\bTarget="([^"]+)"/.exec(tag) || [])[1];
+      if (!target || /TargetMode="External"/.test(tag)) continue;
+      const segments = [];
+      for (const seg of (target.startsWith('/') ? target : base + target).split('/')) {
+        if (seg === '..') segments.pop(); else if (seg && seg !== '.') segments.push(seg);
+      }
+      protectedTargets.add('/' + segments.join('/'));
+    }
+  }
+  return protectedTargets;
 }
 
 const xmlData = (part) => {
@@ -462,6 +468,7 @@ export function convertMathTypeInPackage(pkg, options = {}) {
   if (relsPart && relsXmlUpdated !== null) out = replaceBody(out, relsPart, relsXmlUpdated);
   // Parse and rebuild once: hundreds of objects used to reparse the entire package each time.
   const dropped = new Set(dropPartsFinal);
+  for (const name of otherPartTargets(parts, relsPart)) dropped.delete(name);
   const chunks = [];
   let offset = 0;
   for (const [name, p] of splitParts(out)) {
