@@ -41,7 +41,7 @@ test('cursor reader falls back to selection and paragraph on older hosts', async
   const paras = { load() {}, items: [para] };
   let runs = 0;
   globalThis.Word = { run: async (fn) => {
-    if (++runs === 1) throw new Error('Unsupported range');
+    if (++runs <= 2) throw new Error('Unsupported range');
     return fn({ document: { getSelection: () => ({ getOoxml: () => ({ value: 'selection' }), paragraphs: paras }) }, sync: async () => {} });
   } };
   try { assert.deepEqual(await readCursorContext(), { selPkg: 'selection', paraPkg: 'paragraph' }); }

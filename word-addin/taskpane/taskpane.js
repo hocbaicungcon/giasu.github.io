@@ -427,7 +427,7 @@ $('copy-acct').addEventListener('click', async () => {
 // ---------------------------------------------------------------- boot (real Word, or the browser mock for development)
 // ---------------------------------------------------------------- auto-load the equation under the cursor
 let autoTimer = null, lastAutoSig = '', selectionVersion = 0, applying = false;
-let autoReading = false, autoPending = false;
+let autoReading = false, autoPending = false, lastReadAt = 0;
 const canAutoLoad = () => !applying && $('editor-auto')?.checked && $('tab-editor')?.classList.contains('active') &&
   !(document.hasFocus() && (document.activeElement === $('editor-latex') || visual?.focused()));
 async function refreshAutoSelection(version) {
@@ -435,6 +435,7 @@ async function refreshAutoSelection(version) {
   if (autoReading) { autoPending = true; return; }
   autoPending = false;
   autoReading = true;
+  lastReadAt = Date.now();
   try {
     const ctx = await io.readCursorContext();
     if (version !== selectionVersion || !canAutoLoad()) return;
@@ -463,7 +464,7 @@ function onSelectionChanged() {
     // other tabs (Tính toán) listen to this event and read the cursor themselves
     document.dispatchEvent(new CustomEvent('texcraft:selection'));
     return refreshAutoSelection(version);
-  }, 80);
+  }, 30);
 }
 let selectionWatcherInstalled = false, selectionWatcherPending = false, selectionWatcherRetries = 0;
 function installSelectionWatcher() {
@@ -484,7 +485,7 @@ function installSelectionWatcher() {
   } catch { retry(); }
 }
 // Returning to Word can precede its selection event; refresh after the click settles.
-window.addEventListener('blur', onSelectionChanged);
+window.addEventListener('blur', () => { if (Date.now() - lastReadAt > 600) onSelectionChanged(); });   // no extra read when the click just triggered one
 $('editor-auto')?.addEventListener('change', onSelectionChanged);
 
 // Ask Word to load the add-in at startup, so the ribbon buttons are there after a restart (needs a Word that supports it).

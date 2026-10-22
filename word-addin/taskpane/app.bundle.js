@@ -1632,6 +1632,18 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
   }
   async function readCursorContextRanges() {
+    try {
+      return await run(async (context) => {
+        const sel = context.document.getSelection();
+        const para2 = sel.paragraphs.getFirst();
+        const selOx = sel.getOoxml();
+        const paraOx = para2.getOoxml();
+        const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
+        await context.sync();
+        return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value };
+      });
+    } catch (e3) {
+    }
     return run(async (context) => {
       const sel = context.document.getSelection();
       const selOx = sel.getOoxml();
@@ -13989,7 +14001,7 @@ ${contentTypesOverrides}
       active: () => on,
       focused: () => !!mf && (document.activeElement === mf || mf.contains(document.activeElement)),
       pull,
-      async setActive(v) {
+      async setActive(v, { focus = true } = {}) {
         var _a9;
         on = v;
         host.hidden = !v;
@@ -13998,7 +14010,7 @@ ${contentTypesOverrides}
           await ensure();
           if (!on) return;
           mf.setValue(textarea.value, { silenceNotifications: true });
-          if ((_a9 = host.closest("section")) == null ? void 0 : _a9.classList.contains("active")) mf.focus();
+          if (focus && document.hasFocus() && ((_a9 = host.closest("section")) == null ? void 0 : _a9.classList.contains("active"))) mf.focus();
         }
       },
       async insert(snippet) {
@@ -14069,6 +14081,10 @@ ${contentTypesOverrides}
     if (!FULL2 && !LITE_TABS.includes(name)) name = "eq";
     const b = document.querySelector(`nav button[data-tab="${name}"]`);
     if (!b) return;
+    ++selectionVersion;
+    clearTimeout(autoTimer);
+    autoTimer = null;
+    autoPending = false;
     document.querySelectorAll("nav button").forEach((x) => x.setAttribute("aria-selected", String(x === b)));
     document.querySelectorAll("section").forEach((s) => s.classList.toggle("active", s.id === "tab-" + name));
     try {
@@ -14372,10 +14388,17 @@ ${contentTypesOverrides}
     renderEditorPreview();
   }
   async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent = () => true) {
+    var _a9;
     const statusEl = $("editor-status");
     if (statusEl) statusEl.textContent = "\u0110ang \u0111\u1ECDc c\xF4ng th\u1EE9c t\u1EEB Word\u2026";
     try {
-      if (!picked) picked = pickEquation(await readCursorContext());
+      if (!picked) {
+        const version = ++selectionVersion;
+        const draft = $("editor-latex").value;
+        const ctx = await readCursorContext();
+        if (version !== selectionVersion || applying || !((_a9 = $("tab-editor")) == null ? void 0 : _a9.classList.contains("active")) || $("editor-latex").value !== draft) return;
+        picked = pickEquation(ctx);
+      }
       if (!isCurrent()) return;
       const r = picked;
       if (!r.eq) {
@@ -14397,6 +14420,7 @@ ${contentTypesOverrides}
   }
   async function applyFormulaToWord() {
     var _a9, _b, _c, _d;
+    if (applying) return;
     const tex = (_a9 = $("editor-latex")) == null ? void 0 : _a9.value.trim();
     const msgEl = $("editor-msg");
     if (!tex) {
@@ -14404,17 +14428,18 @@ ${contentTypesOverrides}
       return;
     }
     if (msgEl) msgEl.textContent = "\u0110ang ch\xE8n v\xE0o Word\u2026";
+    applying = true;
+    ++selectionVersion;
     try {
       const isDisplay = (_c = (_b = $("editor-display")) == null ? void 0 : _b.checked) != null ? _c : false;
       const asMathType = ((_d = document.querySelector("input[name=editor-format]:checked")) == null ? void 0 : _d.value) === "mathtype";
       const pkg = asMathType ? await makeMathTypePackage(tex, __spreadValues({ render: browserRender, inline: !isDisplay }, await mtOptions())) : makeEquationPackage(latexToOmml(tex, { display: isDisplay }));
-      ignoreAutoUntil = Date.now() + 1200;
       await replaceSelection(pkg);
       if (msgEl) msgEl.innerHTML = `<span class="ok">\u0110\xE3 c\u1EADp nh\u1EADt c\xF4ng th\u1EE9c v\xE0o Word th\xE0nh c\xF4ng (${asMathType ? "\u0111\u1ED1i t\u01B0\u1EE3ng MathType" : "chu\u1EA9n Word Equation"}).</span>`;
     } catch (e3) {
       if (msgEl) msgEl.innerHTML = `<span class="bad">L\u1ED7i: ${esc13(e3.message)}</span>`;
     } finally {
-      ignoreAutoUntil = 0;
+      applying = false;
       onSelectionChanged();
     }
   }
@@ -14513,29 +14538,33 @@ ${contentTypesOverrides}
   });
   var autoTimer = null;
   var lastAutoSig = "";
-  var ignoreAutoUntil = 0;
   var selectionVersion = 0;
+  var applying = false;
   var autoReading = false;
   var autoPending = false;
+  var lastReadAt = 0;
   var canAutoLoad = () => {
     var _a9, _b;
-    return ((_a9 = $("editor-auto")) == null ? void 0 : _a9.checked) && ((_b = $("tab-editor")) == null ? void 0 : _b.classList.contains("active")) && !(document.hasFocus() && (document.activeElement === $("editor-latex") || (visual == null ? void 0 : visual.focused())));
+    return !applying && ((_a9 = $("editor-auto")) == null ? void 0 : _a9.checked) && ((_b = $("tab-editor")) == null ? void 0 : _b.classList.contains("active")) && !(document.hasFocus() && (document.activeElement === $("editor-latex") || (visual == null ? void 0 : visual.focused())));
   };
   async function refreshAutoSelection(version) {
-    if (!canAutoLoad() || Date.now() < ignoreAutoUntil) return;
+    var _a9;
+    if (!canAutoLoad()) return;
     if (autoReading) {
       autoPending = true;
       return;
     }
     autoPending = false;
     autoReading = true;
+    lastReadAt = Date.now();
     try {
       const ctx = await readCursorContext();
-      if (version !== selectionVersion || !canAutoLoad() || Date.now() < ignoreAutoUntil) return;
+      if (version !== selectionVersion || !canAutoLoad()) return;
       const r = pickEquation(ctx);
       if (!r.eq) return;
-      if (r.eq.latex === lastAutoSig && $("editor-latex").value === r.eq.latex) return;
-      lastAutoSig = r.eq.latex;
+      const signature = JSON.stringify([r.eq.latex, r.eq.inline]);
+      if (signature === lastAutoSig && $("editor-latex").value === r.eq.latex && ((_a9 = $("editor-display")) == null ? void 0 : _a9.checked) === !r.eq.inline) return;
+      lastAutoSig = signature;
       await loadFormulaFromWord(false, r, () => version === selectionVersion && canAutoLoad());
     } catch (e3) {
     } finally {
@@ -14550,12 +14579,12 @@ ${contentTypesOverrides}
     const version = ++selectionVersion;
     clearTimeout(autoTimer);
     autoTimer = null;
-    if (Date.now() < ignoreAutoUntil) return;
+    if (applying) return;
     autoTimer = setTimeout(() => {
       autoTimer = null;
       document.dispatchEvent(new CustomEvent("texcraft:selection"));
       return refreshAutoSelection(version);
-    }, 80);
+    }, 30);
   }
   var selectionWatcherInstalled = false;
   var selectionWatcherPending = false;
@@ -14586,7 +14615,9 @@ ${contentTypesOverrides}
       retry();
     }
   }
-  window.addEventListener("blur", onSelectionChanged);
+  window.addEventListener("blur", () => {
+    if (Date.now() - lastReadAt > 600) onSelectionChanged();
+  });
   var _a7;
   (_a7 = $("editor-auto")) == null ? void 0 : _a7.addEventListener("change", onSelectionChanged);
   function requestStartupLoad() {
@@ -14628,6 +14659,7 @@ ${contentTypesOverrides}
       const note = document.createElement("div");
       note.className = "notice";
       try {
+        if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname) && new URLSearchParams(location.search).get("mock") !== "1") throw new Error("Real Office APIs must not be replaced by the mock.");
         const mock = await Promise.resolve().then(() => (init_mock_word(), mock_word_exports));
         await mock.install(new URLSearchParams(location.search).get("doc") || "/fixtures/sample-body.xml");
         note.textContent = "Ch\u1EBF \u0111\u1ED9 th\u1EED (kh\xF4ng c\xF3 Word): d\xF9ng t\xE0i li\u1EC7u gi\u1EA3 l\u1EADp \u0111\u1ECDc t\u1EEB /fixtures. M\u1ECDi thay \u0111\u1ED5i ch\u1EC9 n\u1EB1m trong b\u1ED9 nh\u1EDB tr\xECnh duy\u1EC7t.";
@@ -14652,9 +14684,9 @@ ${contentTypesOverrides}
     visual = createVisualEditor({ host: $("editor-visual"), textarea: $("editor-latex"), onChange: () => renderEditorPreview() });
     mountEditorToolbar($("editor-toolbar"), $("editor-latex"), { visual });
     const KEY_IN = "texcraft-editor-input";
-    const setInput = async (mode) => {
+    const setInput = async (mode, focus = true) => {
       try {
-        await visual.setActive(mode === "visual");
+        await visual.setActive(mode === "visual", { focus });
       } catch (e3) {
         $("editor-msg").innerHTML = `<span class="bad">Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c \xF4 nh\u1EADp tr\u1EF1c quan: ${esc13(e3.message)}</span>`;
         mode = "latex";
@@ -14674,7 +14706,7 @@ ${contentTypesOverrides}
       saved = localStorage.getItem(KEY_IN) || "latex";
     } catch (e3) {
     }
-    if (saved === "visual") setInput("visual");
+    if (saved === "visual") setInput("visual", false);
   }
   async function registerOffline() {
     const note = $("offline-status");

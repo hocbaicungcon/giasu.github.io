@@ -26,7 +26,7 @@ vm.runInContext(source.slice(source.indexOf('let autoTimer ='), source.indexOf('
 const event = () => vm.runInContext('onSelectionChanged()', context);
 const flush = async () => { const fn = timer; timer = null; fn?.(); await settle(); };
 const settle = async () => { for (let i = 0; i < 8; i++) await Promise.resolve(); };
-event(); assert.equal(delay, 80, 'selection recognition waits only for a short click debounce'); await flush();
+event(); assert.equal(delay, 30, 'selection recognition waits only for a very short debounce'); await flush();
 assert.equal(reads, 1);
 for (let i = 0; i < 10; i++) { event(); await flush(); }
 assert.equal(reads, 1, 'events cannot overlap Word reads');

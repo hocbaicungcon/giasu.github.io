@@ -49,6 +49,18 @@ export async function readCursorContext() {
 }
 
 async function readCursorContextRanges() {
+  // Fast path: one round trip for selection, paragraph and text before the cursor.
+  try {
+    return await run(async (context) => {
+      const sel = context.document.getSelection();
+      const para = sel.paragraphs.getFirst();
+      const selOx = sel.getOoxml();
+      const paraOx = para.getOoxml();
+      const beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml();
+      await context.sync();
+      return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value };
+    });
+  } catch { /* fall back to the step-by-step read below */ }
   return run(async (context) => {
     const sel = context.document.getSelection();
     const selOx = sel.getOoxml();
