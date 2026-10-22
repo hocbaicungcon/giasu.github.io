@@ -419,7 +419,14 @@ $('btn-dump').addEventListener('click', async () => {
   } catch (e) { $('diag-log').textContent = 'Lỗi: ' + e.message; }
 });
 
-$('btn-guide').addEventListener('click', () => { const url = 'https://giasu.ai.vn/word-addin/su-dung.html'; try { window.open(url, '_blank', 'noopener'); } catch { location.href = url; } });
+// Word's task pane web view often ignores window.open; Office opens the system browser itself.
+function openExternal(url) {
+  try { if (Office.context?.ui?.openBrowserWindow) { Office.context.ui.openBrowserWindow(url); return; } } catch { /* fall through */ }
+  let w = null;
+  try { w = window.open(url, '_blank'); } catch { /* blocked */ }
+  if (!w) location.href = url;
+}
+$('btn-guide').addEventListener('click', () => openExternal('https://giasu.ai.vn/word-addin/su-dung.html'));
 $('copy-acct').addEventListener('click', async () => {
   try { await navigator.clipboard.writeText('4802518888'); $('acct-msg').textContent = 'Đã sao chép'; } catch { $('acct-msg').textContent = 'Hãy chọn và sao chép thủ công'; }
 });

@@ -14520,14 +14520,23 @@ ${contentTypesOverrides}
       $("diag-log").textContent = "L\u1ED7i: " + e3.message;
     }
   });
-  $("btn-guide").addEventListener("click", () => {
-    const url = "https://giasu.ai.vn/word-addin/su-dung.html";
+  function openExternal(url) {
+    var _a9, _b;
     try {
-      window.open(url, "_blank", "noopener");
+      if ((_b = (_a9 = Office.context) == null ? void 0 : _a9.ui) == null ? void 0 : _b.openBrowserWindow) {
+        Office.context.ui.openBrowserWindow(url);
+        return;
+      }
     } catch (e3) {
-      location.href = url;
     }
-  });
+    let w = null;
+    try {
+      w = window.open(url, "_blank");
+    } catch (e3) {
+    }
+    if (!w) location.href = url;
+  }
+  $("btn-guide").addEventListener("click", () => openExternal("https://giasu.ai.vn/word-addin/su-dung.html"));
   $("copy-acct").addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText("4802518888");
