@@ -29,6 +29,68 @@ export function splitParts(pkg) {
   return parts;
 }
 
+/** Split a flat body snapshot locally, avoiding one getOoxml call per paragraph.
+ * Complex bodies (tables, content controls, text boxes) deliberately use the host's paragraph API instead.
+ */
+export function paragraphPackages(pkg, paragraphCount, kinds) {
+  const parts = splitParts(pkg), docPart = parts.get('/word/document.xml');
+  if (!docPart) return null;
+  const doc = xmlData(docPart), body = /<w:body\b[^>]*>([\s\S]*)<\/w:body>/.exec(doc);
+  if (!body || /<w:(?:tbl|sdt|txbxContent|customXml|altChunk)\b/.test(body[1])) return null;
+  const children = splitChildren(body[1]);
+  if (children.some(c => c.trim() && !/^<w:(?:p|sectPr)\b/.test(c.trim()))) return null;
+  const paras = children.filter(c => /^<w:p\b/.test(c.trim()));
+  if (paras.length !== paragraphCount) return null;
+  const relsPart = parts.get('/word/_rels/document.xml.rels');
+  const rels = relsPart ? xmlData(relsPart) : '';
+  const tags = rels.match(/<Relationship\b[^>]*\/>/g) || [];
+  const binaryRels = tags.filter(t => /\bType="[^"]*\/(?:image|oleObject)"/.test(t));
+  const protectedTargets = new Set();
+  for (const [name, part] of parts) {
+    if (!name.endsWith('.rels') || part === relsPart) continue;
+    const base = name.replace(/\/[_]rels\/[^/]+$/, '/');
+    for (const tag of xmlData(part).match(/<Relationship\b[^>]*>/g) || []) {
+      const target = (/\bTarget="([^"]+)"/.exec(tag) || [])[1];
+      if (!target || /TargetMode="External"/.test(tag)) continue;
+      const segments = [];
+      for (const seg of (target.startsWith('/') ? target : base + target).split('/')) {
+        if (seg === '..') segments.pop(); else if (seg && seg !== '.') segments.push(seg);
+      }
+      protectedTargets.add('/' + segments.join('/'));
+    }
+  }
+  const outer = pkg.slice(0, pkg.indexOf('<pkg:part'));
+  const items = [];
+  paras.forEach((p, index) => {
+    if (kinds && !((kinds.has('mathtype') && /<w:object\b/.test(p)) ||
+      (kinds.has('native') && /<m:oMath\b/.test(p)) || kinds.has('latex'))) return;
+    const used = new Set(Array.from(p.matchAll(/\br:(?:id|embed|link|pict)="([^"]+)"/g), m => m[1]));
+    const removed = binaryRels.filter(t => !used.has(/\bId="([^"]+)"/.exec(t)[1]));
+    const removedTags = new Set(removed);
+    const keepRels = tags.filter(t => !removedTags.has(t));
+    // Shared pictures/OLE targets must survive if another relationship still refers to them.
+    const keptTargets = new Set(keepRels.map(t => (/\bTarget="([^"]+)"/.exec(t) || [])[1]));
+    const drop = new Set(removed.map(t => /\bTarget="([^"]+)"/.exec(t)[1])
+      .filter(t => !keptTargets.has(t)).map(resolveTarget));
+    const chunks = [];
+    for (const [name, part] of parts) {
+      if (drop.has(name) && !protectedTargets.has(name)) continue;
+      let raw = pkg.slice(part.start, part.end);
+      if (name === '/word/document.xml') {
+        const bodyOpen = body[0].slice(0, body[0].indexOf('>') + 1);
+        const inner = doc.slice(0, body.index) + bodyOpen + p + '</w:body>' + doc.slice(body.index + body[0].length);
+        raw = raw.replace(part.body, () => '<pkg:xmlData>' + inner + '</pkg:xmlData>');
+      } else if (part === relsPart) {
+        const local = rels.replace(/<Relationship\b[^>]*\/>/g, tag => removedTags.has(tag) ? '' : tag);
+        raw = raw.replace(part.body, () => '<pkg:xmlData>' + local + '</pkg:xmlData>');
+      }
+      chunks.push(raw);
+    }
+    items.push({ index, pkg: outer + chunks.join('') + '</pkg:package>' });
+  });
+  return items;
+}
+
 const xmlData = (part) => {
   const m = /<pkg:xmlData>([\s\S]*)<\/pkg:xmlData>/.exec(part.body);
   return m ? m[1] : '';
@@ -106,7 +168,6 @@ export function scanPackage(pkg) {
     if (!obj.run) eq.error = 'phương trình nằm trong khối phức tạp (giữ nguyên)';
     else if (hasFields) eq.error = 'phương trình bọc trong field EMBED (giữ nguyên)';
     else if (!part) eq.error = 'không tìm thấy phần oleObject trong gói OOXML';
-    else if (obj.progId === 'Equation.3') eq.error = 'MathType 3 (MTEF v3) chưa hỗ trợ';
     else {
       const bin = /<pkg:binaryData>([\s\S]*?)<\/pkg:binaryData>/.exec(part.body);
       if (!bin) eq.error = 'oleObject không có dữ liệu nhị phân';
@@ -399,10 +460,17 @@ export function convertMathTypeInPackage(pkg, options = {}) {
   out = replaceBody(out, docPart, newDoc);
   let relsPart = parts.get('/word/_rels/document.xml.rels');
   if (relsPart && relsXmlUpdated !== null) out = replaceBody(out, relsPart, relsXmlUpdated);
-  for (const name of dropPartsFinal) {
-    const p = splitParts(out).get(name);
-    if (p) out = out.slice(0, p.start) + out.slice(p.end);
+  // Parse and rebuild once: hundreds of objects used to reparse the entire package each time.
+  const dropped = new Set(dropPartsFinal);
+  const chunks = [];
+  let offset = 0;
+  for (const [name, p] of splitParts(out)) {
+    if (!dropped.has(name)) continue;
+    chunks.push(out.slice(offset, p.start));
+    offset = p.end;
   }
+  chunks.push(out.slice(offset));
+  out = chunks.join('');
   result.pkg = out;
   return result;
 }

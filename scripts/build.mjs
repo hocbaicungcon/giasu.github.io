@@ -1,3 +1,4 @@
+import {createPostLinker} from './post-links.mjs';
 import {renderLessonFigures} from './lesson-figures.mjs';
 import {renderKnowledgeNotes} from './knowledge-notes.mjs';
 import {renderExploration,explorationKind} from './explorations.mjs';
@@ -411,25 +412,6 @@ function processArticleHeadings(html) {
  return { html: processedHtml, headings };
 }
 
-function getRelatedPosts(p, allPosts, limit = 4) {
- const pTags = new Set((p.tags || []).map(t => t.toLowerCase()));
- return allPosts
-  .filter(q => q.slug !== p.slug)
-  .map(q => {
-   let score = 0;
-   if (q.category === p.category) score += 6;
-   if (p.grade !== undefined && q.grade === p.grade) score += 4;
-   if (q.type === p.type) score += 2;
-   for (const t of (q.tags || [])) {
-    if (pTags.has(t.toLowerCase())) score += 5;
-   }
-   return { post: q, score };
-  })
-  .filter(item => item.score > 0)
-  .sort((a, b) => b.score - a.score || b.post.date.localeCompare(a.post.date) || a.post.title.localeCompare(b.post.title, 'vi'))
-  .slice(0, limit)
-  .map(item => item.post);
-}
 function renderPracticeHub() {
  const page=practicePages.hub;
  const cards=[
@@ -594,8 +576,10 @@ export function build(){
   fs.writeFileSync(path.join(out,'gioi-thieu.html'),shell('Giới thiệu & Miễn trừ trách nhiệm','Giới thiệu về Gia Sư Thông Minh (giasu.ai.vn) – Nền tảng học tập trực tuyến, kho bài học, bài tập giáo dục miễn phí từ lớp 1 đến lớp 12 và tuyên bố miễn trừ trách nhiệm.',aboutBody));
   fs.writeFileSync(path.join(out,'assets/posts.json'),JSON.stringify(posts.map(({html,...p})=>p)));
   const lessonAudit=[];
+  const postLinks=createPostLinker(posts);
   for(const p of posts){
-   const related=getRelatedPosts(p,posts,4);
+   const {reading,related}=postLinks(p);
+   const readingLinks=reading.length?`<nav class="post-reading-links" aria-label="Đọc tiếp cùng chủ đề"><h2>Đọc tiếp cùng chủ đề</h2><ul>${reading.map(q=>`<li><a href="./${q.slug}.html">${renderTitleHtml(q.title)}</a></li>`).join('')}</ul></nav>`:'';
    const solvedHtml = withLessonSolutions(p.html,imported.find(item=>item.exam.slug===p.slug)?.exam);
    const {html: processedHtml, headings} = processArticleHeadings(renderLessonFigures(renderKnowledgeNotes(solvedHtml)));
    const isLesson=p.type==='Bài học';
@@ -612,7 +596,7 @@ export function build(){
    const glossaryAttribute = p.category === 'Toán học' ? ' data-math-glossary' : '';
    const courseFallback=!hasToc?`<aside class="article-toc" aria-label="Điều hướng bài học"><div class="course-sidebar-heading"><span>${esc(p.category)} · ${gradeLabel(p)}</span><strong>${renderTitleHtml(p.title)}</strong></div><nav class="toc-nav"><a href="#main">Nội dung bài học</a>${isLesson&&cards.length?'<a href="#lesson-practice">Tự kiểm tra kiến thức</a>':''}</nav></aside>`:'';
    const writingBanner = isChinesePost(p) ? renderWritingBanner('../') : '';
-   const articleBodyContent = hasToc ? `<div class="article-layout"><div class="article-main">${mobileToc}${writingBanner}<article class="prose"${glossaryAttribute}>${processedHtml}${exploration}${practice}</article></div>${desktopToc}</div>` : `<div class="article-layout"><div class="article-main">${writingBanner}<article class="prose"${glossaryAttribute}>${processedHtml}${exploration}${practice}</article></div>${courseFallback}</div>`;
+   const articleBodyContent = hasToc ? `<div class="article-layout"><div class="article-main">${mobileToc}${writingBanner}<article class="prose"${glossaryAttribute}>${processedHtml}${readingLinks}${exploration}${practice}</article></div>${desktopToc}</div>` : `<div class="article-layout"><div class="article-main">${writingBanner}<article class="prose"${glossaryAttribute}>${processedHtml}${readingLinks}${exploration}${practice}</article></div>${courseFallback}</div>`;
    const gradeHref = p.grade === undefined ? '../thu-vien.html' : `../lop-${p.grade}.html`;
    const content=`<main id="main" class="article-wrap wrap${hasToc?' has-toc':''} lesson-course"><a class="back" href="../thu-vien.html">← Trở về thư viện</a><div class="article-heading"><nav class="eyebrow breadcrumb" aria-label="Đường dẫn bài viết"><a href="../thu-vien.html?category=${encodeURIComponent(p.category)}">${esc(p.category)}</a><span aria-hidden="true">/</span><a href="${gradeHref}">${gradeLabel(p)}</a><span aria-hidden="true">/</span><a href="../thu-vien.html?type=${encodeURIComponent(p.type)}">${esc(p.type)}</a></nav><h1>${renderTitleHtml(p.title)}</h1><p>${renderTitleHtml(p.description)}</p><div class="article-meta"><time datetime="${p.date}">${date(p.date)}</time><div class="tags">${p.tags.map(t=>`<a class="tag" href="../thu-vien.html?tag=${encodeURIComponent(t)}">#${esc(t)}</a>`).join('')}</div></div></div>${imported.some(item=>item.exam.slug===p.slug&&item.exam.questions.length)?`<p class="online-exam-cta"><a class="primary" href="../de-kiem-tra/${p.slug}.html">Làm đề trực tuyến →</a></p>`:''}${renderShare(`https://giasu.ai.vn/bai-viet/${p.slug}.html`,plainTitle(p.title))}${articleBodyContent}<div class="article-end"><a href="../giai-tri/meo-hoc-tap.html">✦ Mẹo học tập</a><p data-study-tip>Học từng chút một, nghỉ ngơi đều đặn.</p></div><script type="module" src="../assets/article-tip.js"></script>${related.length?`<section class="related related-posts" aria-label="Bài viết cùng chủ đề"><div class="related-header"><span class="overline">✦ KIẾN THỨC CÙNG CHUYÊN MỤC</span><h2>Bài viết cùng chủ đề</h2><p>Khám phá thêm các bài học và bài tập liên quan để ôn luyện vững vàng hơn.</p></div><div class="related-grid">${related.map((q,idx)=>`<article class="related-card tone-${idx%4}"><a class="related-card-link" href="./${q.slug}.html"><div class="related-card-art" aria-hidden="true"><span class="related-symbol">${uiIcon(q.category==='Toán học'?'math':q.category==='CNTT'?'computer':q.category==='Ngoại ngữ'?'globe':q.category==='Hóa học'?'flask':'book')}</span><span class="related-grade-pill">${gradeLabel(q)}</span></div><div class="related-card-body"><div class="related-card-eyebrow"><span class="related-category">${esc(q.category)}</span><span class="related-type">${esc(q.type)}</span></div><h3 class="related-title">${renderTitleHtml(q.title)}</h3><p class="related-desc">${renderTitleHtml(q.description)}</p><div class="related-card-footer"><span class="related-action">Đọc bài học <span class="ui-symbol ui-symbol-arrow" aria-hidden="true"></span></span></div></div></a></article>`).join('')}</div></section>`:''}</main>`;
    fs.writeFileSync(path.join(out,'bai-viet',p.slug+'.html'),shell(p.title,p.description,content,'../'));

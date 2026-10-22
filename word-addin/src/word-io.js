@@ -1,5 +1,7 @@
 // The only file that talks to Word (Office.js). Everything else works on flat-OPC strings, so it can be tested in node
 // and against taskpane/mock-word.js in a browser.
+import { paragraphPackages } from './ooxml.js';
+
 const BATCH = 25;
 
 export const hasWord = () => typeof Word !== 'undefined' && typeof Office !== 'undefined';
@@ -34,6 +36,17 @@ export async function readSelection() {
     await context.sync();
     return { pkg: ox.value, paragraphCount: paras.items.length };
   });
+}
+
+/** One body snapshot for flat documents; preserve host paragraph semantics for complex layouts. */
+export async function readConversionParagraphs(kinds, onProgress = () => {}) {
+  let items;
+  try {
+    const { pkg, paragraphCount } = await readBody();
+    items = paragraphPackages(pkg, paragraphCount, kinds);
+  } catch { /* A host may export individual paragraphs even when body export fails. */ }
+  if (items != null) { onProgress(items.length, items.length); return items; }
+  return readParagraphs({ kind: 'all' }, onProgress);
 }
 
 /** OOXML around the cursor: the selection, its first paragraph, and that paragraph's start up to the selection start. */

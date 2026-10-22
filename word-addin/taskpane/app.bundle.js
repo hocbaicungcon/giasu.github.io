@@ -1566,600 +1566,6 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
   });
 
-  // src/word-io.js
-  var word_io_exports = {};
-  __export(word_io_exports, {
-    hasWord: () => hasWord,
-    insertAtEnd: () => insertAtEnd,
-    openAsNewDocument: () => openAsNewDocument,
-    readBody: () => readBody,
-    readCursorContext: () => readCursorContext,
-    readParagraphs: () => readParagraphs,
-    readSelection: () => readSelection,
-    replaceBody: () => replaceBody,
-    replaceSelection: () => replaceSelection,
-    selectParagraph: () => selectParagraph,
-    selectionFontSize: () => selectionFontSize,
-    selectionParagraphCount: () => selectionParagraphCount,
-    writeParagraphs: () => writeParagraphs
-  });
-  async function run(fn) {
-    return Word.run(fn);
-  }
-  async function readBody() {
-    return run(async (context) => {
-      const ox = context.document.body.getOoxml();
-      const paras = context.document.body.paragraphs;
-      paras.load("items");
-      await context.sync();
-      return { pkg: ox.value, paragraphCount: paras.items.length };
-    });
-  }
-  async function selectionParagraphCount() {
-    return run(async (context) => {
-      const paras = context.document.getSelection().paragraphs;
-      paras.load("items");
-      await context.sync();
-      return paras.items.length;
-    });
-  }
-  async function readSelection() {
-    return run(async (context) => {
-      const sel = context.document.getSelection();
-      const ox = sel.getOoxml();
-      const paras = sel.paragraphs;
-      paras.load("items");
-      await context.sync();
-      return { pkg: ox.value, paragraphCount: paras.items.length };
-    });
-  }
-  async function readCursorContext() {
-    var _a9;
-    try {
-      return await readCursorContextRanges();
-    } catch (e3) {
-      const ctx = {};
-      try {
-        ctx.selPkg = (await readSelection()).pkg;
-      } catch (e4) {
-      }
-      try {
-        ctx.paraPkg = (_a9 = (await readParagraphs({ kind: "selection" }))[0]) == null ? void 0 : _a9.pkg;
-      } catch (e4) {
-      }
-      if (!ctx.selPkg && !ctx.paraPkg) throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c v\xF9ng ch\u1ECDn t\u1EEB Word.");
-      return ctx;
-    }
-  }
-  async function readCursorContextRanges() {
-    try {
-      return await run(async (context) => {
-        const sel = context.document.getSelection();
-        const para2 = sel.paragraphs.getFirst();
-        const selOx = sel.getOoxml();
-        const paraOx = para2.getOoxml();
-        const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
-        await context.sync();
-        return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value };
-      });
-    } catch (e3) {
-    }
-    return run(async (context) => {
-      const sel = context.document.getSelection();
-      const selOx = sel.getOoxml();
-      const paras = sel.paragraphs;
-      paras.load("items");
-      await context.sync();
-      const para2 = paras.items[0];
-      const paraOx = para2 ? para2.getOoxml() : null;
-      await context.sync();
-      const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null };
-      try {
-        if (para2) {
-          const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
-          await context.sync();
-          result.beforePkg = beforeOx.value;
-        }
-      } catch (e3) {
-      }
-      return result;
-    });
-  }
-  async function selectionFontSize() {
-    return run(async (context) => {
-      const font = context.document.getSelection().font;
-      font.load("size");
-      await context.sync();
-      return Number(font.size) || 0;
-    });
-  }
-  async function replaceSelection(pkg) {
-    return run(async (context) => {
-      const sel = context.document.getSelection();
-      sel.insertOoxml(pkg, "Replace");
-      await context.sync();
-    });
-  }
-  async function readParagraphs(scope, onProgress = () => {
-  }) {
-    return run(async (context) => {
-      const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
-      coll.load("items");
-      await context.sync();
-      const idx = scope.kind === "indexes" ? scope.indexes : coll.items.map((_p, i) => i);
-      const out = [];
-      for (let i = 0; i < idx.length; i += BATCH) {
-        const slice = idx.slice(i, i + BATCH);
-        const calls = slice.map((k) => coll.items[k].getOoxml());
-        await context.sync();
-        slice.forEach((k, j) => out.push({ index: k, pkg: calls[j].value }));
-        onProgress(Math.min(i + BATCH, idx.length), idx.length);
-      }
-      return out;
-    });
-  }
-  async function writeParagraphs(scope, items, mode, onProgress = () => {
-  }) {
-    return run(async (context) => {
-      const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
-      coll.load("items");
-      const all = context.document.body.paragraphs;
-      all.load("items");
-      await context.sync();
-      const before = all.items.length;
-      for (let i = 0; i < items.length; i += BATCH) {
-        for (const it of items.slice(i, i + BATCH)) {
-          const p2 = coll.items[it.index];
-          const target = mode === "paragraph" ? p2 : p2.getRange("Content");
-          target.insertOoxml(it.pkg, "Replace");
-        }
-        await context.sync();
-        onProgress(Math.min(i + BATCH, items.length), items.length);
-      }
-      const again = context.document.body.paragraphs;
-      again.load("items");
-      await context.sync();
-      return { before, after: again.items.length };
-    });
-  }
-  async function selectParagraph(index) {
-    return run(async (context) => {
-      const paras = context.document.body.paragraphs;
-      paras.load("items");
-      await context.sync();
-      if (paras.items[index]) paras.items[index].select();
-      await context.sync();
-    });
-  }
-  async function insertAtEnd(pkg) {
-    return run(async (context) => {
-      context.document.body.insertOoxml(pkg, "End");
-      await context.sync();
-    });
-  }
-  async function replaceBody(pkg) {
-    return run(async (context) => {
-      context.document.body.insertOoxml(pkg, "Replace");
-      await context.sync();
-    });
-  }
-  async function openAsNewDocument(pkg, { footerPkg = null } = {}) {
-    return run(async (context) => {
-      const doc = context.application.createDocument();
-      doc.body.insertOoxml(pkg, "Replace");
-      await context.sync();
-      if (footerPkg) {
-        try {
-          doc.sections.getFirst().getFooter("Primary").insertOoxml(footerPkg, "Replace");
-          await context.sync();
-        } catch (e3) {
-        }
-      }
-      doc.open();
-      await context.sync();
-    });
-  }
-  var BATCH, hasWord;
-  var init_word_io = __esm({
-    "src/word-io.js"() {
-      BATCH = 25;
-      hasWord = () => typeof Word !== "undefined" && typeof Office !== "undefined";
-    }
-  });
-
-  // taskpane/mt-settings.js
-  async function surroundingPt(fallback = 12) {
-    try {
-      const v = await selectionFontSize();
-      return v > 0 ? v : fallback;
-    } catch (e3) {
-      return fallback;
-    }
-  }
-  async function mtOptions({ withFont = true } = {}) {
-    const size = state.size === "auto" ? await surroundingPt() : Number(state.size);
-    return { font: withFont ? state.font : null, size, vector: state.picture !== "png", display: state.layout === "classic" };
-  }
-  function mountMtSettings(root, { fontRow = true, onChange } = {}) {
-    root.classList.add("mt-settings");
-    root.innerHTML = (fontRow ? `<label class="field"><span>Ki\u1EC3u ch\u1EEF</span><select data-mt="font">${Object.entries(MT_FONTS).map(([k, f]) => `<option value="${k}">${f.label}</option>`).join("")}</select></label>` : "") + (fontRow ? `<label class="field"><span>Ki\u1EC3u hi\u1EC3n th\u1ECB</span><select data-mt="layout"><option value="classic">C\u1ED5 \u0111i\u1EC3n: c\u1EE1 l\u1EDBn nh\u01B0 ri\xEAng d\xF2ng</option><option value="compact">G\u1ECDn: nh\u1ECF theo d\xF2ng ch\u1EEF</option></select></label>` : "") + (fontRow ? `<label class="field"><span>\u1EA2nh</span><select data-mt="picture"><option value="emf">Vector EMF (n\xE9t)</option><option value="png">\u1EA2nh PNG</option></select></label>` : "") + `<label class="field"><span>C\u1EE1 ch\u1EEF</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === "auto" ? "Theo v\u0103n b\u1EA3n (t\u1EF1 \u0111\u1ED9ng)" : s + " pt"}</option>`).join("")}<option value="custom">S\u1ED1 kh\xE1c\u2026</option></select><input type="number" data-mt-custom min="4" max="200" step="0.5" placeholder="pt" style="width:70px;margin-left:6px" hidden></label>` + (fontRow ? '<div class="hint">Ki\u1EC3u ch\u1EEF c\xF3 t\xE1c d\u1EE5ng khi m\u1EDF l\u1EA1i b\u1EB1ng MathType; font ghi \u201Cc\u1EA7n c\xE0i font\u201D ph\u1EA3i c\xF3 tr\xEAn m\xE1y m\u1EDF t\xE0i li\u1EC7u.</div>' : "");
-    const sync = () => document.querySelectorAll(".mt-settings select").forEach((el) => {
-      const v = String(state[el.dataset.mt]);
-      if (el.dataset.mt !== "size") {
-        el.value = v;
-        return;
-      }
-      const custom = !SIZES.includes(v) || customOpen;
-      el.value = custom ? "custom" : v;
-      const num4 = el.parentNode.querySelector("[data-mt-custom]");
-      if (num4) {
-        num4.hidden = !custom;
-        if (custom && document.activeElement !== num4) num4.value = SIZES.includes(v) ? "" : v;
-      }
-    });
-    let customOpen = false;
-    root.addEventListener("input", (ev) => {
-      const num4 = ev.target.closest("[data-mt-custom]");
-      if (!num4) return;
-      const n = parseFloat(String(num4.value).replace(",", "."));
-      if (!(n >= 4 && n <= 200)) return;
-      state.size = String(n);
-      save();
-      document.querySelectorAll(".mt-settings [data-mt-custom]").forEach((o) => {
-        if (o !== num4) o.value = num4.value;
-      });
-      if (onChange) onChange();
-    });
-    root.addEventListener("change", (ev) => {
-      const el = ev.target.closest("select[data-mt]");
-      if (!el) return;
-      if (el.dataset.mt === "size" && el.value === "custom") {
-        customOpen = true;
-        sync();
-        const num4 = el.parentNode.querySelector("[data-mt-custom]");
-        if (num4) num4.focus();
-        return;
-      }
-      customOpen = false;
-      state[el.dataset.mt] = el.value;
-      save();
-      sync();
-      if (onChange) onChange();
-    });
-    sync();
-  }
-  var KEY, SIZES, state, save, classicLayout, mtConvertOptions, figurePt;
-  var init_mt_settings = __esm({
-    "taskpane/mt-settings.js"() {
-      init_mtef_writer();
-      init_word_io();
-      KEY = "texcraft.mt";
-      SIZES = ["auto", "10", "10.5", "11", "12", "13", "14"];
-      state = { font: "times", size: "auto", picture: "emf", layout: "classic" };
-      try {
-        Object.assign(state, JSON.parse(localStorage.getItem(KEY) || "{}"));
-      } catch (e3) {
-      }
-      save = () => {
-        try {
-          localStorage.setItem(KEY, JSON.stringify(state));
-        } catch (e3) {
-        }
-      };
-      classicLayout = () => state.layout === "classic";
-      mtConvertOptions = () => ({ font: state.font, size: state.size === "auto" ? "auto" : Number(state.size), vector: state.picture !== "png", display: state.layout === "classic" });
-      figurePt = () => state.size === "auto" ? surroundingPt() : Promise.resolve(Number(state.size));
-    }
-  });
-
-  // src/mathrender.js
-  var mathrender_exports = {};
-  __export(mathrender_exports, {
-    FAMILIES: () => FAMILIES,
-    charAdvance: () => charAdvance,
-    renderLatex: () => renderLatex,
-    svgToPng: () => svgToPng
-  });
-  function approxWidth(ch, italic) {
-    if (/\s/.test(ch)) return 0.25;
-    if (/[0-9]/.test(ch)) return 0.5;
-    if (/[ilj.,;:'!|()[\]]/.test(ch)) return 0.3;
-    if (/[mwMW]/.test(ch)) return 0.8;
-    if (/[A-Z]/.test(ch)) return italic ? 0.62 : 0.68;
-    if (/[a-z]/.test(ch)) return 0.48;
-    if (BINARY.has(ch)) return 0.78;
-    return 0.65;
-  }
-  function measure(ch, fs, italic) {
-    try {
-      if (typeof document !== "undefined") {
-        canvasCtx = canvasCtx || document.createElement("canvas").getContext("2d");
-        canvasCtx.font = `${italic ? "italic " : ""}${fs}px ${MATHFONT}`;
-        return canvasCtx.measureText(ch).width;
-      }
-    } catch (e3) {
-    }
-    return approxWidth(ch, italic) * fs;
-  }
-  function hbox(parts) {
-    let w = 0, a = 0, d = 0;
-    for (const p2 of parts) {
-      w += p2.w;
-      a = Math.max(a, p2.a);
-      d = Math.max(d, p2.d);
-    }
-    return { w, a, d, draw: (x, y) => {
-      let cx = x;
-      return parts.map((p2) => {
-        const s = p2.draw(cx, y);
-        cx += p2.w;
-        return s;
-      }).join("");
-    } };
-  }
-  function glyph(text, fs, { italic = false, bold = false } = {}) {
-    const w = [...text].reduce((s, c) => s + measure(c, fs, italic), 0);
-    return {
-      w,
-      a: fs * 0.72,
-      d: fs * 0.22,
-      draw: (x, y) => `<text x="${x.toFixed(2)}" y="${y.toFixed(2)}" font-size="${fs}" font-family="${MATHFONT}"${italic ? ' font-style="italic"' : ""}${bold ? ' font-weight="bold"' : ""}>${esc2(text)}</text>`
-    };
-  }
-  function runBox(text, sty, fs, noSpaceFirst) {
-    const parts = [];
-    const chars = [...text];
-    chars.forEach((ch, i) => {
-      const letter = /[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]/u.test(ch);
-      const italic = letter && sty !== "p" && sty !== "nor" && !/[Ͱ-Ͽ]/.test(ch) ? true : letter && /[α-ω]/.test(ch) && sty !== "p";
-      const bold = sty === "b";
-      const binary = BINARY.has(ch) && sty !== "nor" && !(noSpaceFirst && i === 0);
-      if (binary) parts.push(kern(fs * 0.22));
-      parts.push(glyph(ch, fs, { italic, bold }));
-      if (binary) parts.push(kern(fs * 0.22));
-      if ((ch === "," || ch === ";") && chars[i + 1] !== " ") parts.push(kern(fs * 0.17));
-    });
-    return hbox(parts);
-  }
-  function line(x1, y1, x2, y2, sw4) {
-    return `<line x1="${x1.toFixed(2)}" y1="${y1.toFixed(2)}" x2="${x2.toFixed(2)}" y2="${y2.toFixed(2)}" stroke="#000" stroke-width="${sw4}"/>`;
-  }
-  function stretchy(kind, h, d, fs) {
-    const w = Math.max(fs * 0.34, h * 0.14);
-    const total = h + d;
-    return {
-      w,
-      a: h,
-      d,
-      draw: (x, y) => {
-        const top = y - h, bot = y + d, mid3 = (top + bot) / 2, sw4 = Math.max(0.6, fs * 0.06);
-        const L = x + w * 0.2, R = x + w * 0.85;
-        let p2 = "";
-        switch (kind) {
-          case "(":
-            p2 = `<path d="M${R} ${top} Q${L - 1} ${mid3} ${R} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          case ")":
-            p2 = `<path d="M${L} ${top} Q${R + 1} ${mid3} ${L} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          case "[":
-            p2 = `<path d="M${R} ${top} H${L} V${bot} H${R}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          case "]":
-            p2 = `<path d="M${L} ${top} H${R} V${bot} H${L}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          case "{":
-            p2 = `<path d="M${R} ${top} Q${x + w * 0.5} ${top} ${x + w * 0.5} ${top + total * 0.2} V${mid3 - total * 0.06} Q${x + w * 0.5} ${mid3} ${L} ${mid3} Q${x + w * 0.5} ${mid3} ${x + w * 0.5} ${mid3 + total * 0.06} V${bot - total * 0.2} Q${x + w * 0.5} ${bot} ${R} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          case "}":
-            p2 = `<path d="M${L} ${top} Q${x + w * 0.5} ${top} ${x + w * 0.5} ${top + total * 0.2} V${mid3 - total * 0.06} Q${x + w * 0.5} ${mid3} ${R} ${mid3} Q${x + w * 0.5} ${mid3} ${x + w * 0.5} ${mid3 + total * 0.06} V${bot - total * 0.2} Q${x + w * 0.5} ${bot} ${L} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          case "|":
-            p2 = line(x + w / 2, top, x + w / 2, bot, sw4);
-            break;
-          case "\u2016":
-            p2 = line(x + w * 0.35, top, x + w * 0.35, bot, sw4) + line(x + w * 0.7, top, x + w * 0.7, bot, sw4);
-            break;
-          case "\u27E8":
-            p2 = `<path d="M${R} ${top} L${L} ${mid3} L${R} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          case "\u27E9":
-            p2 = `<path d="M${L} ${top} L${R} ${mid3} L${L} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-            break;
-          default:
-            p2 = "";
-        }
-        return p2;
-      }
-    };
-  }
-  function layout(nodes, fs, level = 0) {
-    const parts = [];
-    let prev = null;
-    for (const n of normalizeNodes(nodes)) {
-      const unary = n.k === "run" && /^[+\u2212\u00b1\u2213]/.test(n.text) && (prev === null || prev.k === "run" && (BINARY.has(prev.text.slice(-1)) || /[(\[{,;]$/.test(prev.text)));
-      parts.push(unary ? __spreadValues({}, nodeBox(__spreadProps(__spreadValues({}, n), { text: n.text.slice(0, 1) }), fs, level, true)) && hbox([runBox(n.text.slice(0, 1), n.sty, fs, true), n.text.length > 1 ? runBox(n.text.slice(1), n.sty, fs) : empty()]) : nodeBox(n, fs, level));
-      prev = n;
-    }
-    return parts.length ? hbox(parts) : empty();
-  }
-  function nodeBox(n, fs, level) {
-    switch (n.k) {
-      case "run":
-        return runBox(n.text, n.sty, fs);
-      case "f": {
-        const cfs = level === 0 ? fs : fs;
-        const nu = layout(n.num, cfs * 0.95, level + 1), de = layout(n.den, cfs * 0.95, level + 1);
-        const w = Math.max(nu.w, de.w) + fs * 0.3, axis = fs * 0.28, gap = fs * 0.12;
-        const a = axis + gap + nu.d + nu.a, d = de.a + de.d + gap - axis;
-        return { w, a, d: Math.max(d, 0), draw: (x, y) => nu.draw(x + (w - nu.w) / 2, y - axis - gap - nu.d) + (n.noBar ? "" : line(x + fs * 0.05, y - axis, x + w - fs * 0.05, y - axis, Math.max(0.5, fs * 0.05))) + de.draw(x + (w - de.w) / 2, y - axis + gap + de.a) };
-      }
-      case "rad": {
-        const body = layout(n.e, fs, level), deg = n.deg ? layout(n.deg, scriptFs(fs), level + 1) : null;
-        const rw = fs * 0.6, pad = fs * 0.1, top = body.a + fs * 0.15;
-        const w = rw + body.w + pad + (deg ? Math.max(deg.w - rw * 0.4, 0) : 0), off = deg ? Math.max(deg.w - rw * 0.4, 0) : 0;
-        return { w, a: top + fs * 0.08, d: body.d + fs * 0.05, draw: (x, y) => {
-          const x0 = x + off, sw4 = Math.max(0.5, fs * 0.05), bot = y + body.d + fs * 0.03;
-          return (deg ? deg.draw(x, y - top * 0.55) : "") + `<path d="M${x0} ${y - fs * 0.12} L${x0 + rw * 0.25} ${y - fs * 0.2} L${x0 + rw * 0.5} ${bot} L${x0 + rw} ${y - top}" fill="none" stroke="#000" stroke-width="${sw4}"/>` + line(x0 + rw, y - top, x0 + w - off - pad / 2, y - top, sw4) + body.draw(x0 + rw, y);
-        } };
-      }
-      case "script": {
-        const base = nodeBox(n.base, fs, level);
-        const sfs = scriptFs(fs);
-        const sup2 = n.sup ? layout(n.sup, sfs, level + 1) : null, sub4 = n.sub ? layout(n.sub, sfs, level + 1) : null;
-        const supUp = Math.max(base.a * 0.62, fs * 0.38) + (sup2 ? sup2.d * 0.2 : 0), subDown = Math.max(base.d, 0) + fs * 0.18 + (sub4 ? 0 : 0);
-        const w = base.w + Math.max(sup2 ? sup2.w : 0, sub4 ? sub4.w : 0) + fs * 0.04;
-        return { w, a: Math.max(base.a, sup2 ? supUp + sup2.a : 0), d: Math.max(base.d, sub4 ? subDown + sub4.d - fs * 0.1 : 0), draw: (x, y) => base.draw(x, y) + (sup2 ? sup2.draw(x + base.w + fs * 0.03, y - supUp) : "") + (sub4 ? sub4.draw(x + base.w + fs * 0.03, y + subDown - fs * 0.12) : "") };
-      }
-      case "d": {
-        const items = n.items.map((it) => layout(it, fs, level));
-        const inner = hbox(items.flatMap((b, i) => i ? [kern(fs * 0.3), b] : [b]));
-        const a = Math.max(inner.a, fs * 0.72) + fs * 0.05, d = Math.max(inner.d, fs * 0.22) + fs * 0.05;
-        const l = n.beg ? stretchy(n.beg, a, d, fs) : empty(), r = n.end ? stretchy(n.end, a, d, fs) : empty();
-        return hbox([l, kern(fs * 0.05), inner, kern(fs * 0.05), r]);
-      }
-      case "nary": {
-        const big = fs * (SIDE_LIMITS.has(n.op) ? 1.5 : 1.3);
-        const sym = glyph(NARY_OPS[n.op], big);
-        const sfs = scriptFs(fs);
-        const lo = n.sub ? layout(n.sub, sfs, level + 1) : null, up = n.sup ? layout(n.sup, sfs, level + 1) : null;
-        const side = SIDE_LIMITS.has(n.op);
-        const w = side ? sym.w + Math.max(lo ? lo.w : 0, up ? up.w : 0) * 0.9 : Math.max(sym.w, lo ? lo.w : 0, up ? up.w : 0);
-        const a = side ? Math.max(sym.a * 0.9, up ? fs * 0.7 + up.a : 0) : sym.a * 0.9 + (up ? up.a + up.d + fs * 0.1 : 0);
-        const d = side ? Math.max(sym.d, lo ? fs * 0.85 + lo.d : 0) : sym.d + (lo ? lo.a + lo.d + fs * 0.1 : 0);
-        const head = { w, a, d, draw: (x, y) => {
-          const sy = y + fs * 0.08;
-          if (side) return sym.draw(x, sy) + (up ? up.draw(x + sym.w * 0.9, y - fs * 0.7) : "") + (lo ? lo.draw(x + sym.w * 0.45, y + fs * 0.85) : "");
-          return sym.draw(x + (w - sym.w) / 2, sy) + (up ? up.draw(x + (w - up.w) / 2, y - sym.a - up.d - fs * 0.05) : "") + (lo ? lo.draw(x + (w - lo.w) / 2, y + sym.d + lo.a + fs * 0.1) : "");
-        } };
-        return hbox([head, kern(fs * 0.1), layout(n.e, fs, level)]);
-      }
-      case "func": {
-        const name = glyph(n.name, fs);
-        let head = name;
-        const sfs = scriptFs(fs);
-        if (["lim", "max", "min", "sup", "inf"].includes(n.name) && n.sub) {
-          const lo = layout(n.sub, sfs, level + 1);
-          const w = Math.max(name.w, lo.w);
-          head = { w, a: name.a, d: name.d + lo.a + lo.d + fs * 0.08, draw: (x, y) => name.draw(x + (w - name.w) / 2, y) + lo.draw(x + (w - lo.w) / 2, y + name.d + lo.a + fs * 0.08) };
-        } else if (n.sub || n.sup) head = nodeBox({ k: "script", base: { k: "run", text: n.name, sty: "p" }, sub: n.sub, sup: n.sup }, fs, level);
-        return hbox([head, kern(fs * 0.17), layout(n.e, fs, level)]);
-      }
-      case "lim": {
-        const base = layout(n.e, fs, level), t = layout(n.lim, scriptFs(fs), level + 1);
-        const w = Math.max(base.w, t.w);
-        return { w, a: base.a + (n.upp ? t.a + t.d + fs * 0.1 : 0), d: base.d + (n.upp ? 0 : t.a + t.d + fs * 0.1), draw: (x, y) => base.draw(x + (w - base.w) / 2, y) + (n.upp ? t.draw(x + (w - t.w) / 2, y - base.a - t.d - fs * 0.08) : t.draw(x + (w - t.w) / 2, y + base.d + t.a + fs * 0.08)) };
-      }
-      case "acc":
-      case "bar":
-      case "groupChr": {
-        const body = layout(n.e, fs, level);
-        const bottom = n.pos === "bot", sw4 = Math.max(0.5, fs * 0.05);
-        const arrow = n.chr === "\u20D7" || n.chr === "\u2192";
-        const hat = n.chr === "\u0302";
-        return { w: body.w, a: body.a + (bottom ? 0 : fs * 0.22), d: body.d + (bottom ? fs * 0.18 : 0), draw: (x, y) => {
-          let s = body.draw(x, y);
-          const yy = bottom ? y + body.d + fs * 0.1 : y - body.a - fs * 0.1;
-          if (arrow) s += line(x, yy, x + body.w, yy, sw4) + `<path d="M${x + body.w - fs * 0.18} ${yy - fs * 0.1} L${x + body.w} ${yy} L${x + body.w - fs * 0.18} ${yy + fs * 0.1}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-          else if (hat) s += `<path d="M${x + body.w / 2 - fs * 0.2} ${yy + fs * 0.08} L${x + body.w / 2} ${yy - fs * 0.08} L${x + body.w / 2 + fs * 0.2} ${yy + fs * 0.08}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
-          else s += line(x, yy, x + body.w, yy, sw4);
-          return s;
-        } };
-      }
-      case "box": {
-        const body = layout(n.e, fs, level), p2 = fs * 0.12;
-        return { w: body.w + 2 * p2, a: body.a + p2, d: body.d + p2, draw: (x, y) => `<rect x="${x.toFixed(2)}" y="${(y - body.a - p2).toFixed(2)}" width="${(body.w + 2 * p2).toFixed(2)}" height="${(body.a + body.d + 2 * p2).toFixed(2)}" fill="none" stroke="#000" stroke-width="${Math.max(0.5, fs * 0.05)}"/>` + body.draw(x + p2, y) };
-      }
-      case "m":
-      case "eqArr": {
-        const rows = n.k === "eqArr" ? n.rows.map((r) => [r[0]]) : n.rows;
-        const cols = Math.max(...rows.map((r) => r.length));
-        const cells = rows.map((r) => Array.from({ length: cols }, (_x, c) => layout(r[c] || [], fs, level)));
-        const colW = Array.from({ length: cols }, (_x, c) => Math.max(...cells.map((r) => r[c].w)));
-        const gap = fs * 0.8, rowGap = fs * 0.25;
-        const w = colW.reduce((s, v) => s + v, 0) + gap * (cols - 1);
-        const heights = cells.map((r) => ({ a: Math.max(...r.map((b) => b.a), fs * 0.7), d: Math.max(...r.map((b) => b.d), fs * 0.22) }));
-        const total = heights.reduce((s, h) => s + h.a + h.d, 0) + rowGap * (rows.length - 1);
-        const axis = fs * 0.28;
-        return { w, a: total / 2 + axis, d: total / 2 - axis, draw: (x, y) => {
-          let cy = y - axis - total / 2, out = "";
-          cells.forEach((r, i) => {
-            cy += heights[i].a;
-            let cx = x;
-            r.forEach((b, c) => {
-              out += b.draw(n.k === "eqArr" ? cx : cx + (colW[c] - b.w) / 2, cy);
-              cx += colW[c] + gap;
-            });
-            cy += heights[i].d + rowGap;
-          });
-          return out;
-        } };
-      }
-      case "sPre": {
-        const sfs = scriptFs(fs), sub4 = layout(n.sub || [], sfs, level + 1), sup2 = layout(n.sup || [], sfs, level + 1), body = layout(n.e, fs, level);
-        const w = Math.max(sub4.w, sup2.w);
-        return hbox([{ w, a: fs * 0.6, d: fs * 0.3, draw: (x, y) => sup2.draw(x, y - fs * 0.4) + sub4.draw(x, y + fs * 0.2) }, body]);
-      }
-      default:
-        return empty();
-    }
-  }
-  function renderLatex(latex, { fontSize = 12, pad = 1.5, family = "times" } = {}) {
-    MATHFONT = FAMILIES[family] || FAMILIES.times;
-    const { rows } = latexToTree(latex);
-    const box = rows.length > 1 ? nodeBox({ k: "eqArr", rows: rows.map((r) => [r]) }, fontSize, 0) : layout(rows[0], fontSize, 0);
-    const width = box.w + 2 * pad, height = box.a + box.d + 2 * pad;
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width.toFixed(2)}pt" height="${height.toFixed(2)}pt" viewBox="0 0 ${width.toFixed(2)} ${height.toFixed(2)}">${box.draw(pad, pad + box.a)}</svg>`;
-    return { svg, width, height, baseline: box.d + pad };
-  }
-  async function svgToPng(svg, width, height, scale = 4) {
-    const img = new Image();
-    const url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
-    await new Promise((res, rej) => {
-      img.onload = res;
-      img.onerror = () => rej(new Error("kh\xF4ng v\u1EBD \u0111\u01B0\u1EE3c \u1EA3nh c\xF4ng th\u1EE9c"));
-      img.src = url;
-    });
-    const canvas = document.createElement("canvas");
-    canvas.width = Math.ceil(width * scale * (96 / 72));
-    canvas.height = Math.ceil(height * scale * (96 / 72));
-    const ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-    const b643 = canvas.toDataURL("image/png").split(",")[1];
-    const bin = atob(b643);
-    const out = new Uint8Array(bin.length);
-    for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
-    return out;
-  }
-  var SYMS, FAMILIES, MATHFONT, BINARY, esc2, canvasCtx, charAdvance, empty, kern, scriptFs;
-  var init_mathrender = __esm({
-    "src/mathrender.js"() {
-      init_latex2omml();
-      SYMS = "'Cambria Math', 'STIX Two Math', 'Apple Symbols', 'Segoe UI Symbol'";
-      FAMILIES = {
-        times: `'Times New Roman', 'Times', 'STIX Two Text', ${SYMS}, serif`,
-        palatino: `'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', ${SYMS}, serif`,
-        cambriamath: `'Cambria Math', Cambria, 'STIX Two Math', 'Times New Roman', ${SYMS}, serif`,
-        cambria: `Cambria, 'Times New Roman', ${SYMS}, serif`,
-        stix: `'STIX Two Math', 'XITS Math', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
-        lm: `'Latin Modern Math', 'New Computer Modern Math', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
-        libertinus: `'Libertinus Math', 'Libertinus Serif', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
-        pagella: `'TeX Gyre Pagella Math', 'Palatino Linotype', 'Book Antiqua', 'Cambria Math', ${SYMS}, serif`,
-        fira: `'Fira Math', 'Fira Sans', Arial, ${SYMS}, sans-serif`,
-        noto: `'Noto Sans Math', 'Noto Sans', Arial, ${SYMS}, sans-serif`,
-        sans: `Arial, 'Helvetica Neue', Helvetica, ${SYMS}, sans-serif`
-      };
-      MATHFONT = FAMILIES.times;
-      BINARY = /* @__PURE__ */ new Set([..."=<>+\u2212\xB1\u2213\xD7\u22C5\xF7\u2264\u2265\u2260\u2248\u2261\u2208\u2209\u2282\u2283\u2286\u2287\u222A\u2229\u2192\u2190\u2194\u21D2\u21D0\u21D4\u27F6\u221D\u2225\u22A5\u2243\u2245\u223C\u226A\u226B"]);
-      esc2 = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-      canvasCtx = null;
-      charAdvance = (ch, fs, italic) => measure(ch, fs, italic);
-      empty = () => ({ w: 0, a: 0, d: 0, draw: () => "" });
-      kern = (w) => ({ w, a: 0, d: 0, draw: () => "" });
-      scriptFs = (fs) => Math.max(fs * 0.7, 5);
-    }
-  });
-
   // src/mtef.js
   function concat(chunks) {
     let total = 0;
@@ -2287,7 +1693,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   function isPlain(font) {
     return !/symbol|extra|mt|wingding/i.test(font);
   }
-  function glyph2(char, value) {
+  function glyph(char, value) {
     if (has3(tables_default.GREEK_LOWER, char)) return tables_default.GREEK_LOWER[char];
     if (has3(tables_default.GREEK_UPPER, char)) return tables_default.GREEK_UPPER[char];
     if (has3(tables_default.SYMBOLS, String(value))) return tables_default.SYMBOLS[String(value)];
@@ -2312,11 +1718,11 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     if (face2 === 2 && isAlpha(char)) return ["func", char];
     if (face2 === 1 || face2 < 0 && font && isPlain(font)) {
-      if (has3(tables_default.SYMBOLS, String(value)) || has3(tables_default.GREEK_LOWER, char) || has3(tables_default.GREEK_UPPER, char)) return ["math", glyph2(char, value)];
+      if (has3(tables_default.SYMBOLS, String(value)) || has3(tables_default.GREEK_LOWER, char) || has3(tables_default.GREEK_UPPER, char)) return ["math", glyph(char, value)];
       return ["text", char];
     }
-    if (face2 === 7) return ["math", `${BS2}mathbf{${glyph2(char, value)}}`];
-    return ["math", glyph2(char, value)];
+    if (face2 === 7) return ["math", `${BS2}mathbf{${glyph(char, value)}}`];
+    return ["math", glyph(char, value)];
   }
   function embellish(body, embells) {
     for (const kind of embells) {
@@ -2360,25 +1766,25 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (token === "," || token === ";" || token === "{,}" || previous === "{,}") return "";
     if (previous === "," || previous === ";") return " ";
     if (token === ")" || token === "]" || token === "|" || ["(", "[", "|", `${BS2}{`].includes(previous) || previous.endsWith(`${BS2}left(`) || previous.endsWith(`${BS2}left[`)) return "";
-    if (["+", "-", "=", "<", ">"].includes(token) || BINARY2.has(token)) return " ";
-    if (["=", "<", ">"].includes(previous) || BINARY2.has(previous)) return " ";
+    if (["+", "-", "=", "<", ">"].includes(token) || BINARY.has(token)) return " ";
+    if (["=", "<", ">"].includes(previous) || BINARY.has(previous)) return " ";
     if (previous === "+" || previous === "-") {
       const before = built.slice(0, built.length - previous.length).trimEnd();
       const last = before.slice(-1);
-      if (!before || "([;=<>+-|{".includes(last) && last !== "" || last === "," && !before.endsWith(`${BS2},`) || [...BINARY2].some((item) => before.endsWith(item)) || before.endsWith(`${BS2}left(`) || before.endsWith(`${BS2}left[`) || before.endsWith(`${BS2}left${BS2}{`) || before.endsWith(`${BS2}left|`)) return "";
+      if (!before || "([;=<>+-|{".includes(last) && last !== "" || last === "," && !before.endsWith(`${BS2},`) || [...BINARY].some((item) => before.endsWith(item)) || before.endsWith(`${BS2}left(`) || before.endsWith(`${BS2}left[`) || before.endsWith(`${BS2}left${BS2}{`) || before.endsWith(`${BS2}left|`)) return "";
       return " ";
     }
     if (/\\[A-Za-z]+$/.test(previous) && /^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]/u.test(token.slice(0, 1))) return " ";
     return "";
   }
   function slot(node3) {
-    if (node3[0] === "line") return line2(node3[1]);
+    if (node3[0] === "line") return line(node3[1]);
     if (node3[0] === "pile") return block(node3);
-    if (node3[0] === "char") return line2([node3]);
+    if (node3[0] === "char") return line([node3]);
     return fail2("bad slot");
   }
   function block(node3) {
-    if (node3[0] === "line") return line2(node3[1]);
+    if (node3[0] === "line") return line(node3[1]);
     if (node3[0] === "pile") {
       const align = { 1: "l", 2: "c", 3: "r", 4: "l", 5: "c" }[node3[1]] || "c";
       const rows = node3[2].filter((c) => c[0] === "line" || c[0] === "pile").map((c) => protect(slot(c)));
@@ -2395,7 +1801,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return fail2("bad block");
   }
-  function line2(nodes) {
+  function line(nodes) {
     const parts = [];
     let index = 0;
     while (index < nodes.length) {
@@ -2488,7 +1894,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
       if (!marks.length) fail2("arrow");
       const last = marks[marks.length - 1];
-      const g = marks[0] === "\u21C0" && marks[1] === "\u21BD" ? `${BS2}rightleftharpoons` : glyph2(last, last.charCodeAt(0));
+      const g = marks[0] === "\u21C0" && marks[1] === "\u21BD" ? `${BS2}rightleftharpoons` : glyph(last, last.charCodeAt(0));
       const top = text.length ? text[0] : "";
       const bottom = text.length > 1 ? text[1] : "";
       if (!top && !bottom) parts.push(g);
@@ -2676,7 +2082,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   function oleToLatex(data) {
     return mtefToLatex(mtefFromOle(data));
   }
-  var MtefError, has3, BS2, isAlpha, isDigit, at, SPACE_TOKENS, BINARY2, OPERATORS, FUNCTIONS, Reader, END, LINE, CHAR, TMPL, PILE, MATRIX, EMBELL, RULER, FONT_STYLE_DEF, SIZE, COLOR, COLOR_DEF, FONT_DEF, EQN_PREFS, ENCODING_DEF, Parser2, fail2, hex4, TEXT_ESC, protect, slots, SCRIPT_RE_SUP, SCRIPT_RE_SUB;
+  var MtefError, has3, BS2, isAlpha, isDigit, at, SPACE_TOKENS, BINARY, OPERATORS, FUNCTIONS, Reader, END, LINE, CHAR, TMPL, PILE, MATRIX, EMBELL, RULER, FONT_STYLE_DEF, SIZE, COLOR, COLOR_DEF, FONT_DEF, EQN_PREFS, ENCODING_DEF, Parser2, fail2, hex4, TEXT_ESC, protect, slots, SCRIPT_RE_SUP, SCRIPT_RE_SUB;
   var init_mtef = __esm({
     "src/mtef.js"() {
       init_tables();
@@ -2691,7 +2097,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         return arr[i];
       };
       SPACE_TOKENS = new Set(tables_default.SPACE_TOKENS);
-      BINARY2 = new Set(tables_default.BINARY);
+      BINARY = new Set(tables_default.BINARY);
       OPERATORS = /* @__PURE__ */ new Set([...tables_default.BINARY, "+", "-", "=", "<", ">"]);
       FUNCTIONS = new Set(tables_default.FUNCTIONS);
       Reader = class {
@@ -2924,7 +2330,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     if (isAlpha2(char)) return `${BS3}text{${char}}`;
     throw new OmmlError("unknown character U+" + cp2.toString(16).toUpperCase().padStart(4, "0"));
   }
-  function run2(element) {
+  function run(element) {
     let text = "";
     for (const t of descendants(element)) if (local(t) === "t") text += textOf(t);
     if (!text) text = element.children.filter((c) => typeof c === "string").join("");
@@ -2957,7 +2363,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
   }
   function node2(el) {
     const tag = local(el);
-    if (tag === "r") return run2(el);
+    if (tag === "r") return run(el);
     if (["oMath", "e", "num", "den", "sub", "sup", "deg", "lim", "fName"].includes(tag)) return renderSeq(children(el));
     if (tag === "f") {
       const num4 = subOf(el, "num"), den = subOf(el, "den");
@@ -4313,6 +3719,62 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     return parts;
   }
+  function paragraphPackages(pkg, paragraphCount, kinds) {
+    const parts = splitParts(pkg), docPart = parts.get("/word/document.xml");
+    if (!docPart) return null;
+    const doc = xmlData(docPart), body = /<w:body\b[^>]*>([\s\S]*)<\/w:body>/.exec(doc);
+    if (!body || /<w:(?:tbl|sdt|txbxContent|customXml|altChunk)\b/.test(body[1])) return null;
+    const children2 = splitChildren(body[1]);
+    if (children2.some((c) => c.trim() && !/^<w:(?:p|sectPr)\b/.test(c.trim()))) return null;
+    const paras = children2.filter((c) => /^<w:p\b/.test(c.trim()));
+    if (paras.length !== paragraphCount) return null;
+    const relsPart = parts.get("/word/_rels/document.xml.rels");
+    const rels = relsPart ? xmlData(relsPart) : "";
+    const tags = rels.match(/<Relationship\b[^>]*\/>/g) || [];
+    const binaryRels = tags.filter((t) => /\bType="[^"]*\/(?:image|oleObject)"/.test(t));
+    const protectedTargets = /* @__PURE__ */ new Set();
+    for (const [name, part] of parts) {
+      if (!name.endsWith(".rels") || part === relsPart) continue;
+      const base = name.replace(/\/[_]rels\/[^/]+$/, "/");
+      for (const tag of xmlData(part).match(/<Relationship\b[^>]*>/g) || []) {
+        const target = (/\bTarget="([^"]+)"/.exec(tag) || [])[1];
+        if (!target || /TargetMode="External"/.test(tag)) continue;
+        const segments = [];
+        for (const seg of (target.startsWith("/") ? target : base + target).split("/")) {
+          if (seg === "..") segments.pop();
+          else if (seg && seg !== ".") segments.push(seg);
+        }
+        protectedTargets.add("/" + segments.join("/"));
+      }
+    }
+    const outer = pkg.slice(0, pkg.indexOf("<pkg:part"));
+    const items = [];
+    paras.forEach((p2, index) => {
+      if (kinds && !(kinds.has("mathtype") && /<w:object\b/.test(p2) || kinds.has("native") && /<m:oMath\b/.test(p2) || kinds.has("latex"))) return;
+      const used = new Set(Array.from(p2.matchAll(/\br:(?:id|embed|link|pict)="([^"]+)"/g), (m) => m[1]));
+      const removed = binaryRels.filter((t) => !used.has(/\bId="([^"]+)"/.exec(t)[1]));
+      const removedTags = new Set(removed);
+      const keepRels = tags.filter((t) => !removedTags.has(t));
+      const keptTargets = new Set(keepRels.map((t) => (/\bTarget="([^"]+)"/.exec(t) || [])[1]));
+      const drop = new Set(removed.map((t) => /\bTarget="([^"]+)"/.exec(t)[1]).filter((t) => !keptTargets.has(t)).map(resolveTarget));
+      const chunks = [];
+      for (const [name, part] of parts) {
+        if (drop.has(name) && !protectedTargets.has(name)) continue;
+        let raw = pkg.slice(part.start, part.end);
+        if (name === "/word/document.xml") {
+          const bodyOpen = body[0].slice(0, body[0].indexOf(">") + 1);
+          const inner = doc.slice(0, body.index) + bodyOpen + p2 + "</w:body>" + doc.slice(body.index + body[0].length);
+          raw = raw.replace(part.body, () => "<pkg:xmlData>" + inner + "</pkg:xmlData>");
+        } else if (part === relsPart) {
+          const local2 = rels.replace(/<Relationship\b[^>]*\/>/g, (tag) => removedTags.has(tag) ? "" : tag);
+          raw = raw.replace(part.body, () => "<pkg:xmlData>" + local2 + "</pkg:xmlData>");
+        }
+        chunks.push(raw);
+      }
+      items.push({ index, pkg: outer + chunks.join("") + "</pkg:package>" });
+    });
+    return items;
+  }
   function readRels(parts, relsName) {
     const part = parts.get(relsName);
     const map = /* @__PURE__ */ new Map();
@@ -4377,7 +3839,6 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (!obj.run) eq.error = "ph\u01B0\u01A1ng tr\xECnh n\u1EB1m trong kh\u1ED1i ph\u1EE9c t\u1EA1p (gi\u1EEF nguy\xEAn)";
       else if (hasFields) eq.error = "ph\u01B0\u01A1ng tr\xECnh b\u1ECDc trong field EMBED (gi\u1EEF nguy\xEAn)";
       else if (!part) eq.error = "kh\xF4ng t\xECm th\u1EA5y ph\u1EA7n oleObject trong g\xF3i OOXML";
-      else if (obj.progId === "Equation.3") eq.error = "MathType 3 (MTEF v3) ch\u01B0a h\u1ED7 tr\u1EE3";
       else {
         const bin = /<pkg:binaryData>([\s\S]*?)<\/pkg:binaryData>/.exec(part.body);
         if (!bin) eq.error = "oleObject kh\xF4ng c\xF3 d\u1EEF li\u1EC7u nh\u1ECB ph\xE2n";
@@ -4636,10 +4097,16 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     out = replaceBody2(out, docPart, newDoc);
     let relsPart = parts.get("/word/_rels/document.xml.rels");
     if (relsPart && relsXmlUpdated !== null) out = replaceBody2(out, relsPart, relsXmlUpdated);
-    for (const name of dropPartsFinal) {
-      const p2 = splitParts(out).get(name);
-      if (p2) out = out.slice(0, p2.start) + out.slice(p2.end);
+    const dropped = new Set(dropPartsFinal);
+    const chunks = [];
+    let offset = 0;
+    for (const [name, p2] of splitParts(out)) {
+      if (!dropped.has(name)) continue;
+      chunks.push(out.slice(offset, p2.start));
+      offset = p2.end;
     }
+    chunks.push(out.slice(offset));
+    out = chunks.join("");
     result.pkg = out;
     return result;
   }
@@ -4774,6 +4241,616 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           return r;
         }
       };
+    }
+  });
+
+  // src/word-io.js
+  var word_io_exports = {};
+  __export(word_io_exports, {
+    hasWord: () => hasWord,
+    insertAtEnd: () => insertAtEnd,
+    openAsNewDocument: () => openAsNewDocument,
+    readBody: () => readBody,
+    readConversionParagraphs: () => readConversionParagraphs,
+    readCursorContext: () => readCursorContext,
+    readParagraphs: () => readParagraphs,
+    readSelection: () => readSelection,
+    replaceBody: () => replaceBody,
+    replaceSelection: () => replaceSelection,
+    selectParagraph: () => selectParagraph,
+    selectionFontSize: () => selectionFontSize,
+    selectionParagraphCount: () => selectionParagraphCount,
+    writeParagraphs: () => writeParagraphs
+  });
+  async function run2(fn) {
+    return Word.run(fn);
+  }
+  async function readBody() {
+    return run2(async (context) => {
+      const ox = context.document.body.getOoxml();
+      const paras = context.document.body.paragraphs;
+      paras.load("items");
+      await context.sync();
+      return { pkg: ox.value, paragraphCount: paras.items.length };
+    });
+  }
+  async function selectionParagraphCount() {
+    return run2(async (context) => {
+      const paras = context.document.getSelection().paragraphs;
+      paras.load("items");
+      await context.sync();
+      return paras.items.length;
+    });
+  }
+  async function readSelection() {
+    return run2(async (context) => {
+      const sel = context.document.getSelection();
+      const ox = sel.getOoxml();
+      const paras = sel.paragraphs;
+      paras.load("items");
+      await context.sync();
+      return { pkg: ox.value, paragraphCount: paras.items.length };
+    });
+  }
+  async function readConversionParagraphs(kinds, onProgress = () => {
+  }) {
+    let items;
+    try {
+      const { pkg, paragraphCount } = await readBody();
+      items = paragraphPackages(pkg, paragraphCount, kinds);
+    } catch (e3) {
+    }
+    if (items != null) {
+      onProgress(items.length, items.length);
+      return items;
+    }
+    return readParagraphs({ kind: "all" }, onProgress);
+  }
+  async function readCursorContext() {
+    var _a9;
+    try {
+      return await readCursorContextRanges();
+    } catch (e3) {
+      const ctx = {};
+      try {
+        ctx.selPkg = (await readSelection()).pkg;
+      } catch (e4) {
+      }
+      try {
+        ctx.paraPkg = (_a9 = (await readParagraphs({ kind: "selection" }))[0]) == null ? void 0 : _a9.pkg;
+      } catch (e4) {
+      }
+      if (!ctx.selPkg && !ctx.paraPkg) throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c v\xF9ng ch\u1ECDn t\u1EEB Word.");
+      return ctx;
+    }
+  }
+  async function readCursorContextRanges() {
+    try {
+      return await run2(async (context) => {
+        const sel = context.document.getSelection();
+        const para2 = sel.paragraphs.getFirst();
+        const selOx = sel.getOoxml();
+        const paraOx = para2.getOoxml();
+        const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
+        await context.sync();
+        return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value };
+      });
+    } catch (e3) {
+    }
+    return run2(async (context) => {
+      const sel = context.document.getSelection();
+      const selOx = sel.getOoxml();
+      const paras = sel.paragraphs;
+      paras.load("items");
+      await context.sync();
+      const para2 = paras.items[0];
+      const paraOx = para2 ? para2.getOoxml() : null;
+      await context.sync();
+      const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null };
+      try {
+        if (para2) {
+          const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
+          await context.sync();
+          result.beforePkg = beforeOx.value;
+        }
+      } catch (e3) {
+      }
+      return result;
+    });
+  }
+  async function selectionFontSize() {
+    return run2(async (context) => {
+      const font = context.document.getSelection().font;
+      font.load("size");
+      await context.sync();
+      return Number(font.size) || 0;
+    });
+  }
+  async function replaceSelection(pkg) {
+    return run2(async (context) => {
+      const sel = context.document.getSelection();
+      sel.insertOoxml(pkg, "Replace");
+      await context.sync();
+    });
+  }
+  async function readParagraphs(scope, onProgress = () => {
+  }) {
+    return run2(async (context) => {
+      const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
+      coll.load("items");
+      await context.sync();
+      const idx = scope.kind === "indexes" ? scope.indexes : coll.items.map((_p, i) => i);
+      const out = [];
+      for (let i = 0; i < idx.length; i += BATCH) {
+        const slice = idx.slice(i, i + BATCH);
+        const calls = slice.map((k) => coll.items[k].getOoxml());
+        await context.sync();
+        slice.forEach((k, j) => out.push({ index: k, pkg: calls[j].value }));
+        onProgress(Math.min(i + BATCH, idx.length), idx.length);
+      }
+      return out;
+    });
+  }
+  async function writeParagraphs(scope, items, mode, onProgress = () => {
+  }) {
+    return run2(async (context) => {
+      const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
+      coll.load("items");
+      const all = context.document.body.paragraphs;
+      all.load("items");
+      await context.sync();
+      const before = all.items.length;
+      for (let i = 0; i < items.length; i += BATCH) {
+        for (const it of items.slice(i, i + BATCH)) {
+          const p2 = coll.items[it.index];
+          const target = mode === "paragraph" ? p2 : p2.getRange("Content");
+          target.insertOoxml(it.pkg, "Replace");
+        }
+        await context.sync();
+        onProgress(Math.min(i + BATCH, items.length), items.length);
+      }
+      const again = context.document.body.paragraphs;
+      again.load("items");
+      await context.sync();
+      return { before, after: again.items.length };
+    });
+  }
+  async function selectParagraph(index) {
+    return run2(async (context) => {
+      const paras = context.document.body.paragraphs;
+      paras.load("items");
+      await context.sync();
+      if (paras.items[index]) paras.items[index].select();
+      await context.sync();
+    });
+  }
+  async function insertAtEnd(pkg) {
+    return run2(async (context) => {
+      context.document.body.insertOoxml(pkg, "End");
+      await context.sync();
+    });
+  }
+  async function replaceBody(pkg) {
+    return run2(async (context) => {
+      context.document.body.insertOoxml(pkg, "Replace");
+      await context.sync();
+    });
+  }
+  async function openAsNewDocument(pkg, { footerPkg = null } = {}) {
+    return run2(async (context) => {
+      const doc = context.application.createDocument();
+      doc.body.insertOoxml(pkg, "Replace");
+      await context.sync();
+      if (footerPkg) {
+        try {
+          doc.sections.getFirst().getFooter("Primary").insertOoxml(footerPkg, "Replace");
+          await context.sync();
+        } catch (e3) {
+        }
+      }
+      doc.open();
+      await context.sync();
+    });
+  }
+  var BATCH, hasWord;
+  var init_word_io = __esm({
+    "src/word-io.js"() {
+      init_ooxml();
+      BATCH = 25;
+      hasWord = () => typeof Word !== "undefined" && typeof Office !== "undefined";
+    }
+  });
+
+  // taskpane/mt-settings.js
+  async function surroundingPt(fallback = 12) {
+    try {
+      const v = await selectionFontSize();
+      return v > 0 ? v : fallback;
+    } catch (e3) {
+      return fallback;
+    }
+  }
+  async function mtOptions({ withFont = true } = {}) {
+    const size = state.size === "auto" ? await surroundingPt() : Number(state.size);
+    return { font: withFont ? state.font : null, size, vector: state.picture !== "png", display: state.layout === "classic" };
+  }
+  function mountMtSettings(root, { fontRow = true, onChange } = {}) {
+    root.classList.add("mt-settings");
+    root.innerHTML = (fontRow ? `<label class="field"><span>Ki\u1EC3u ch\u1EEF</span><select data-mt="font">${Object.entries(MT_FONTS).map(([k, f]) => `<option value="${k}">${f.label}</option>`).join("")}</select></label>` : "") + (fontRow ? `<label class="field"><span>Ki\u1EC3u hi\u1EC3n th\u1ECB</span><select data-mt="layout"><option value="classic">C\u1ED5 \u0111i\u1EC3n: c\u1EE1 l\u1EDBn nh\u01B0 ri\xEAng d\xF2ng</option><option value="compact">G\u1ECDn: nh\u1ECF theo d\xF2ng ch\u1EEF</option></select></label>` : "") + (fontRow ? `<label class="field"><span>\u1EA2nh</span><select data-mt="picture"><option value="emf">Vector EMF (n\xE9t)</option><option value="png">\u1EA2nh PNG</option></select></label>` : "") + `<label class="field"><span>C\u1EE1 ch\u1EEF</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === "auto" ? "Theo v\u0103n b\u1EA3n (t\u1EF1 \u0111\u1ED9ng)" : s + " pt"}</option>`).join("")}<option value="custom">S\u1ED1 kh\xE1c\u2026</option></select><input type="number" data-mt-custom min="4" max="200" step="0.5" placeholder="pt" style="width:70px;margin-left:6px" hidden></label>` + (fontRow ? '<div class="hint">Ki\u1EC3u ch\u1EEF c\xF3 t\xE1c d\u1EE5ng khi m\u1EDF l\u1EA1i b\u1EB1ng MathType; font ghi \u201Cc\u1EA7n c\xE0i font\u201D ph\u1EA3i c\xF3 tr\xEAn m\xE1y m\u1EDF t\xE0i li\u1EC7u.</div>' : "");
+    const sync = () => document.querySelectorAll(".mt-settings select").forEach((el) => {
+      const v = String(state[el.dataset.mt]);
+      if (el.dataset.mt !== "size") {
+        el.value = v;
+        return;
+      }
+      const custom = !SIZES.includes(v) || customOpen;
+      el.value = custom ? "custom" : v;
+      const num4 = el.parentNode.querySelector("[data-mt-custom]");
+      if (num4) {
+        num4.hidden = !custom;
+        if (custom && document.activeElement !== num4) num4.value = SIZES.includes(v) ? "" : v;
+      }
+    });
+    let customOpen = false;
+    root.addEventListener("input", (ev) => {
+      const num4 = ev.target.closest("[data-mt-custom]");
+      if (!num4) return;
+      const n = parseFloat(String(num4.value).replace(",", "."));
+      if (!(n >= 4 && n <= 200)) return;
+      state.size = String(n);
+      save();
+      document.querySelectorAll(".mt-settings [data-mt-custom]").forEach((o) => {
+        if (o !== num4) o.value = num4.value;
+      });
+      if (onChange) onChange();
+    });
+    root.addEventListener("change", (ev) => {
+      const el = ev.target.closest("select[data-mt]");
+      if (!el) return;
+      if (el.dataset.mt === "size" && el.value === "custom") {
+        customOpen = true;
+        sync();
+        const num4 = el.parentNode.querySelector("[data-mt-custom]");
+        if (num4) num4.focus();
+        return;
+      }
+      customOpen = false;
+      state[el.dataset.mt] = el.value;
+      save();
+      sync();
+      if (onChange) onChange();
+    });
+    sync();
+  }
+  var KEY, SIZES, state, save, classicLayout, mtConvertOptions, figurePt;
+  var init_mt_settings = __esm({
+    "taskpane/mt-settings.js"() {
+      init_mtef_writer();
+      init_word_io();
+      KEY = "texcraft.mt";
+      SIZES = ["auto", "10", "10.5", "11", "12", "13", "14"];
+      state = { font: "times", size: "auto", picture: "emf", layout: "classic" };
+      try {
+        Object.assign(state, JSON.parse(localStorage.getItem(KEY) || "{}"));
+      } catch (e3) {
+      }
+      save = () => {
+        try {
+          localStorage.setItem(KEY, JSON.stringify(state));
+        } catch (e3) {
+        }
+      };
+      classicLayout = () => state.layout === "classic";
+      mtConvertOptions = () => ({ font: state.font, size: state.size === "auto" ? "auto" : Number(state.size), vector: state.picture !== "png", display: state.layout === "classic" });
+      figurePt = () => state.size === "auto" ? surroundingPt() : Promise.resolve(Number(state.size));
+    }
+  });
+
+  // src/mathrender.js
+  var mathrender_exports = {};
+  __export(mathrender_exports, {
+    FAMILIES: () => FAMILIES,
+    charAdvance: () => charAdvance,
+    renderLatex: () => renderLatex,
+    svgToPng: () => svgToPng
+  });
+  function approxWidth(ch, italic) {
+    if (/\s/.test(ch)) return 0.25;
+    if (/[0-9]/.test(ch)) return 0.5;
+    if (/[ilj.,;:'!|()[\]]/.test(ch)) return 0.3;
+    if (/[mwMW]/.test(ch)) return 0.8;
+    if (/[A-Z]/.test(ch)) return italic ? 0.62 : 0.68;
+    if (/[a-z]/.test(ch)) return 0.48;
+    if (BINARY2.has(ch)) return 0.78;
+    return 0.65;
+  }
+  function measure(ch, fs, italic) {
+    try {
+      if (typeof document !== "undefined") {
+        canvasCtx = canvasCtx || document.createElement("canvas").getContext("2d");
+        canvasCtx.font = `${italic ? "italic " : ""}${fs}px ${MATHFONT}`;
+        return canvasCtx.measureText(ch).width;
+      }
+    } catch (e3) {
+    }
+    return approxWidth(ch, italic) * fs;
+  }
+  function hbox(parts) {
+    let w = 0, a = 0, d = 0;
+    for (const p2 of parts) {
+      w += p2.w;
+      a = Math.max(a, p2.a);
+      d = Math.max(d, p2.d);
+    }
+    return { w, a, d, draw: (x, y) => {
+      let cx = x;
+      return parts.map((p2) => {
+        const s = p2.draw(cx, y);
+        cx += p2.w;
+        return s;
+      }).join("");
+    } };
+  }
+  function glyph2(text, fs, { italic = false, bold = false } = {}) {
+    const w = [...text].reduce((s, c) => s + measure(c, fs, italic), 0);
+    return {
+      w,
+      a: fs * 0.72,
+      d: fs * 0.22,
+      draw: (x, y) => `<text x="${x.toFixed(2)}" y="${y.toFixed(2)}" font-size="${fs}" font-family="${MATHFONT}"${italic ? ' font-style="italic"' : ""}${bold ? ' font-weight="bold"' : ""}>${esc2(text)}</text>`
+    };
+  }
+  function runBox(text, sty, fs, noSpaceFirst) {
+    const parts = [];
+    const chars = [...text];
+    chars.forEach((ch, i) => {
+      const letter = /[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]/u.test(ch);
+      const italic = letter && sty !== "p" && sty !== "nor" && !/[Ͱ-Ͽ]/.test(ch) ? true : letter && /[α-ω]/.test(ch) && sty !== "p";
+      const bold = sty === "b";
+      const binary = BINARY2.has(ch) && sty !== "nor" && !(noSpaceFirst && i === 0);
+      if (binary) parts.push(kern(fs * 0.22));
+      parts.push(glyph2(ch, fs, { italic, bold }));
+      if (binary) parts.push(kern(fs * 0.22));
+      if ((ch === "," || ch === ";") && chars[i + 1] !== " ") parts.push(kern(fs * 0.17));
+    });
+    return hbox(parts);
+  }
+  function line2(x1, y1, x2, y2, sw4) {
+    return `<line x1="${x1.toFixed(2)}" y1="${y1.toFixed(2)}" x2="${x2.toFixed(2)}" y2="${y2.toFixed(2)}" stroke="#000" stroke-width="${sw4}"/>`;
+  }
+  function stretchy(kind, h, d, fs) {
+    const w = Math.max(fs * 0.34, h * 0.14);
+    const total = h + d;
+    return {
+      w,
+      a: h,
+      d,
+      draw: (x, y) => {
+        const top = y - h, bot = y + d, mid3 = (top + bot) / 2, sw4 = Math.max(0.6, fs * 0.06);
+        const L = x + w * 0.2, R = x + w * 0.85;
+        let p2 = "";
+        switch (kind) {
+          case "(":
+            p2 = `<path d="M${R} ${top} Q${L - 1} ${mid3} ${R} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          case ")":
+            p2 = `<path d="M${L} ${top} Q${R + 1} ${mid3} ${L} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          case "[":
+            p2 = `<path d="M${R} ${top} H${L} V${bot} H${R}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          case "]":
+            p2 = `<path d="M${L} ${top} H${R} V${bot} H${L}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          case "{":
+            p2 = `<path d="M${R} ${top} Q${x + w * 0.5} ${top} ${x + w * 0.5} ${top + total * 0.2} V${mid3 - total * 0.06} Q${x + w * 0.5} ${mid3} ${L} ${mid3} Q${x + w * 0.5} ${mid3} ${x + w * 0.5} ${mid3 + total * 0.06} V${bot - total * 0.2} Q${x + w * 0.5} ${bot} ${R} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          case "}":
+            p2 = `<path d="M${L} ${top} Q${x + w * 0.5} ${top} ${x + w * 0.5} ${top + total * 0.2} V${mid3 - total * 0.06} Q${x + w * 0.5} ${mid3} ${R} ${mid3} Q${x + w * 0.5} ${mid3} ${x + w * 0.5} ${mid3 + total * 0.06} V${bot - total * 0.2} Q${x + w * 0.5} ${bot} ${L} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          case "|":
+            p2 = line2(x + w / 2, top, x + w / 2, bot, sw4);
+            break;
+          case "\u2016":
+            p2 = line2(x + w * 0.35, top, x + w * 0.35, bot, sw4) + line2(x + w * 0.7, top, x + w * 0.7, bot, sw4);
+            break;
+          case "\u27E8":
+            p2 = `<path d="M${R} ${top} L${L} ${mid3} L${R} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          case "\u27E9":
+            p2 = `<path d="M${L} ${top} L${R} ${mid3} L${L} ${bot}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+            break;
+          default:
+            p2 = "";
+        }
+        return p2;
+      }
+    };
+  }
+  function layout(nodes, fs, level = 0) {
+    const parts = [];
+    let prev = null;
+    for (const n of normalizeNodes(nodes)) {
+      const unary = n.k === "run" && /^[+\u2212\u00b1\u2213]/.test(n.text) && (prev === null || prev.k === "run" && (BINARY2.has(prev.text.slice(-1)) || /[(\[{,;]$/.test(prev.text)));
+      parts.push(unary ? __spreadValues({}, nodeBox(__spreadProps(__spreadValues({}, n), { text: n.text.slice(0, 1) }), fs, level, true)) && hbox([runBox(n.text.slice(0, 1), n.sty, fs, true), n.text.length > 1 ? runBox(n.text.slice(1), n.sty, fs) : empty()]) : nodeBox(n, fs, level));
+      prev = n;
+    }
+    return parts.length ? hbox(parts) : empty();
+  }
+  function nodeBox(n, fs, level) {
+    switch (n.k) {
+      case "run":
+        return runBox(n.text, n.sty, fs);
+      case "f": {
+        const cfs = level === 0 ? fs : fs;
+        const nu = layout(n.num, cfs * 0.95, level + 1), de = layout(n.den, cfs * 0.95, level + 1);
+        const w = Math.max(nu.w, de.w) + fs * 0.3, axis = fs * 0.28, gap = fs * 0.12;
+        const a = axis + gap + nu.d + nu.a, d = de.a + de.d + gap - axis;
+        return { w, a, d: Math.max(d, 0), draw: (x, y) => nu.draw(x + (w - nu.w) / 2, y - axis - gap - nu.d) + (n.noBar ? "" : line2(x + fs * 0.05, y - axis, x + w - fs * 0.05, y - axis, Math.max(0.5, fs * 0.05))) + de.draw(x + (w - de.w) / 2, y - axis + gap + de.a) };
+      }
+      case "rad": {
+        const body = layout(n.e, fs, level), deg = n.deg ? layout(n.deg, scriptFs(fs), level + 1) : null;
+        const rw = fs * 0.6, pad = fs * 0.1, top = body.a + fs * 0.15;
+        const w = rw + body.w + pad + (deg ? Math.max(deg.w - rw * 0.4, 0) : 0), off = deg ? Math.max(deg.w - rw * 0.4, 0) : 0;
+        return { w, a: top + fs * 0.08, d: body.d + fs * 0.05, draw: (x, y) => {
+          const x0 = x + off, sw4 = Math.max(0.5, fs * 0.05), bot = y + body.d + fs * 0.03;
+          return (deg ? deg.draw(x, y - top * 0.55) : "") + `<path d="M${x0} ${y - fs * 0.12} L${x0 + rw * 0.25} ${y - fs * 0.2} L${x0 + rw * 0.5} ${bot} L${x0 + rw} ${y - top}" fill="none" stroke="#000" stroke-width="${sw4}"/>` + line2(x0 + rw, y - top, x0 + w - off - pad / 2, y - top, sw4) + body.draw(x0 + rw, y);
+        } };
+      }
+      case "script": {
+        const base = nodeBox(n.base, fs, level);
+        const sfs = scriptFs(fs);
+        const sup2 = n.sup ? layout(n.sup, sfs, level + 1) : null, sub4 = n.sub ? layout(n.sub, sfs, level + 1) : null;
+        const supUp = Math.max(base.a * 0.62, fs * 0.38) + (sup2 ? sup2.d * 0.2 : 0), subDown = Math.max(base.d, 0) + fs * 0.18 + (sub4 ? 0 : 0);
+        const w = base.w + Math.max(sup2 ? sup2.w : 0, sub4 ? sub4.w : 0) + fs * 0.04;
+        return { w, a: Math.max(base.a, sup2 ? supUp + sup2.a : 0), d: Math.max(base.d, sub4 ? subDown + sub4.d - fs * 0.1 : 0), draw: (x, y) => base.draw(x, y) + (sup2 ? sup2.draw(x + base.w + fs * 0.03, y - supUp) : "") + (sub4 ? sub4.draw(x + base.w + fs * 0.03, y + subDown - fs * 0.12) : "") };
+      }
+      case "d": {
+        const items = n.items.map((it) => layout(it, fs, level));
+        const inner = hbox(items.flatMap((b, i) => i ? [kern(fs * 0.3), b] : [b]));
+        const a = Math.max(inner.a, fs * 0.72) + fs * 0.05, d = Math.max(inner.d, fs * 0.22) + fs * 0.05;
+        const l = n.beg ? stretchy(n.beg, a, d, fs) : empty(), r = n.end ? stretchy(n.end, a, d, fs) : empty();
+        return hbox([l, kern(fs * 0.05), inner, kern(fs * 0.05), r]);
+      }
+      case "nary": {
+        const big = fs * (SIDE_LIMITS.has(n.op) ? 1.5 : 1.3);
+        const sym = glyph2(NARY_OPS[n.op], big);
+        const sfs = scriptFs(fs);
+        const lo = n.sub ? layout(n.sub, sfs, level + 1) : null, up = n.sup ? layout(n.sup, sfs, level + 1) : null;
+        const side = SIDE_LIMITS.has(n.op);
+        const w = side ? sym.w + Math.max(lo ? lo.w : 0, up ? up.w : 0) * 0.9 : Math.max(sym.w, lo ? lo.w : 0, up ? up.w : 0);
+        const a = side ? Math.max(sym.a * 0.9, up ? fs * 0.7 + up.a : 0) : sym.a * 0.9 + (up ? up.a + up.d + fs * 0.1 : 0);
+        const d = side ? Math.max(sym.d, lo ? fs * 0.85 + lo.d : 0) : sym.d + (lo ? lo.a + lo.d + fs * 0.1 : 0);
+        const head = { w, a, d, draw: (x, y) => {
+          const sy = y + fs * 0.08;
+          if (side) return sym.draw(x, sy) + (up ? up.draw(x + sym.w * 0.9, y - fs * 0.7) : "") + (lo ? lo.draw(x + sym.w * 0.45, y + fs * 0.85) : "");
+          return sym.draw(x + (w - sym.w) / 2, sy) + (up ? up.draw(x + (w - up.w) / 2, y - sym.a - up.d - fs * 0.05) : "") + (lo ? lo.draw(x + (w - lo.w) / 2, y + sym.d + lo.a + fs * 0.1) : "");
+        } };
+        return hbox([head, kern(fs * 0.1), layout(n.e, fs, level)]);
+      }
+      case "func": {
+        const name = glyph2(n.name, fs);
+        let head = name;
+        const sfs = scriptFs(fs);
+        if (["lim", "max", "min", "sup", "inf"].includes(n.name) && n.sub) {
+          const lo = layout(n.sub, sfs, level + 1);
+          const w = Math.max(name.w, lo.w);
+          head = { w, a: name.a, d: name.d + lo.a + lo.d + fs * 0.08, draw: (x, y) => name.draw(x + (w - name.w) / 2, y) + lo.draw(x + (w - lo.w) / 2, y + name.d + lo.a + fs * 0.08) };
+        } else if (n.sub || n.sup) head = nodeBox({ k: "script", base: { k: "run", text: n.name, sty: "p" }, sub: n.sub, sup: n.sup }, fs, level);
+        return hbox([head, kern(fs * 0.17), layout(n.e, fs, level)]);
+      }
+      case "lim": {
+        const base = layout(n.e, fs, level), t = layout(n.lim, scriptFs(fs), level + 1);
+        const w = Math.max(base.w, t.w);
+        return { w, a: base.a + (n.upp ? t.a + t.d + fs * 0.1 : 0), d: base.d + (n.upp ? 0 : t.a + t.d + fs * 0.1), draw: (x, y) => base.draw(x + (w - base.w) / 2, y) + (n.upp ? t.draw(x + (w - t.w) / 2, y - base.a - t.d - fs * 0.08) : t.draw(x + (w - t.w) / 2, y + base.d + t.a + fs * 0.08)) };
+      }
+      case "acc":
+      case "bar":
+      case "groupChr": {
+        const body = layout(n.e, fs, level);
+        const bottom = n.pos === "bot", sw4 = Math.max(0.5, fs * 0.05);
+        const arrow = n.chr === "\u20D7" || n.chr === "\u2192";
+        const hat = n.chr === "\u0302";
+        return { w: body.w, a: body.a + (bottom ? 0 : fs * 0.22), d: body.d + (bottom ? fs * 0.18 : 0), draw: (x, y) => {
+          let s = body.draw(x, y);
+          const yy = bottom ? y + body.d + fs * 0.1 : y - body.a - fs * 0.1;
+          if (arrow) s += line2(x, yy, x + body.w, yy, sw4) + `<path d="M${x + body.w - fs * 0.18} ${yy - fs * 0.1} L${x + body.w} ${yy} L${x + body.w - fs * 0.18} ${yy + fs * 0.1}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+          else if (hat) s += `<path d="M${x + body.w / 2 - fs * 0.2} ${yy + fs * 0.08} L${x + body.w / 2} ${yy - fs * 0.08} L${x + body.w / 2 + fs * 0.2} ${yy + fs * 0.08}" fill="none" stroke="#000" stroke-width="${sw4}"/>`;
+          else s += line2(x, yy, x + body.w, yy, sw4);
+          return s;
+        } };
+      }
+      case "box": {
+        const body = layout(n.e, fs, level), p2 = fs * 0.12;
+        return { w: body.w + 2 * p2, a: body.a + p2, d: body.d + p2, draw: (x, y) => `<rect x="${x.toFixed(2)}" y="${(y - body.a - p2).toFixed(2)}" width="${(body.w + 2 * p2).toFixed(2)}" height="${(body.a + body.d + 2 * p2).toFixed(2)}" fill="none" stroke="#000" stroke-width="${Math.max(0.5, fs * 0.05)}"/>` + body.draw(x + p2, y) };
+      }
+      case "m":
+      case "eqArr": {
+        const rows = n.k === "eqArr" ? n.rows.map((r) => [r[0]]) : n.rows;
+        const cols = Math.max(...rows.map((r) => r.length));
+        const cells = rows.map((r) => Array.from({ length: cols }, (_x, c) => layout(r[c] || [], fs, level)));
+        const colW = Array.from({ length: cols }, (_x, c) => Math.max(...cells.map((r) => r[c].w)));
+        const gap = fs * 0.8, rowGap = fs * 0.25;
+        const w = colW.reduce((s, v) => s + v, 0) + gap * (cols - 1);
+        const heights = cells.map((r) => ({ a: Math.max(...r.map((b) => b.a), fs * 0.7), d: Math.max(...r.map((b) => b.d), fs * 0.22) }));
+        const total = heights.reduce((s, h) => s + h.a + h.d, 0) + rowGap * (rows.length - 1);
+        const axis = fs * 0.28;
+        return { w, a: total / 2 + axis, d: total / 2 - axis, draw: (x, y) => {
+          let cy = y - axis - total / 2, out = "";
+          cells.forEach((r, i) => {
+            cy += heights[i].a;
+            let cx = x;
+            r.forEach((b, c) => {
+              out += b.draw(n.k === "eqArr" ? cx : cx + (colW[c] - b.w) / 2, cy);
+              cx += colW[c] + gap;
+            });
+            cy += heights[i].d + rowGap;
+          });
+          return out;
+        } };
+      }
+      case "sPre": {
+        const sfs = scriptFs(fs), sub4 = layout(n.sub || [], sfs, level + 1), sup2 = layout(n.sup || [], sfs, level + 1), body = layout(n.e, fs, level);
+        const w = Math.max(sub4.w, sup2.w);
+        return hbox([{ w, a: fs * 0.6, d: fs * 0.3, draw: (x, y) => sup2.draw(x, y - fs * 0.4) + sub4.draw(x, y + fs * 0.2) }, body]);
+      }
+      default:
+        return empty();
+    }
+  }
+  function renderLatex(latex, { fontSize = 12, pad = 1.5, family = "times" } = {}) {
+    MATHFONT = FAMILIES[family] || FAMILIES.times;
+    const { rows } = latexToTree(latex);
+    const box = rows.length > 1 ? nodeBox({ k: "eqArr", rows: rows.map((r) => [r]) }, fontSize, 0) : layout(rows[0], fontSize, 0);
+    const width = box.w + 2 * pad, height = box.a + box.d + 2 * pad;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width.toFixed(2)}pt" height="${height.toFixed(2)}pt" viewBox="0 0 ${width.toFixed(2)} ${height.toFixed(2)}">${box.draw(pad, pad + box.a)}</svg>`;
+    return { svg, width, height, baseline: box.d + pad };
+  }
+  async function svgToPng(svg, width, height, scale = 4) {
+    const img = new Image();
+    const url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+    await new Promise((res, rej) => {
+      img.onload = res;
+      img.onerror = () => rej(new Error("kh\xF4ng v\u1EBD \u0111\u01B0\u1EE3c \u1EA3nh c\xF4ng th\u1EE9c"));
+      img.src = url;
+    });
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(width * scale * (96 / 72));
+    canvas.height = Math.ceil(height * scale * (96 / 72));
+    const ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    const b643 = canvas.toDataURL("image/png").split(",")[1];
+    const bin = atob(b643);
+    const out = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+  var SYMS, FAMILIES, MATHFONT, BINARY2, esc2, canvasCtx, charAdvance, empty, kern, scriptFs;
+  var init_mathrender = __esm({
+    "src/mathrender.js"() {
+      init_latex2omml();
+      SYMS = "'Cambria Math', 'STIX Two Math', 'Apple Symbols', 'Segoe UI Symbol'";
+      FAMILIES = {
+        times: `'Times New Roman', 'Times', 'STIX Two Text', ${SYMS}, serif`,
+        palatino: `'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', ${SYMS}, serif`,
+        cambriamath: `'Cambria Math', Cambria, 'STIX Two Math', 'Times New Roman', ${SYMS}, serif`,
+        cambria: `Cambria, 'Times New Roman', ${SYMS}, serif`,
+        stix: `'STIX Two Math', 'XITS Math', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
+        lm: `'Latin Modern Math', 'New Computer Modern Math', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
+        libertinus: `'Libertinus Math', 'Libertinus Serif', 'Cambria Math', 'Times New Roman', ${SYMS}, serif`,
+        pagella: `'TeX Gyre Pagella Math', 'Palatino Linotype', 'Book Antiqua', 'Cambria Math', ${SYMS}, serif`,
+        fira: `'Fira Math', 'Fira Sans', Arial, ${SYMS}, sans-serif`,
+        noto: `'Noto Sans Math', 'Noto Sans', Arial, ${SYMS}, sans-serif`,
+        sans: `Arial, 'Helvetica Neue', Helvetica, ${SYMS}, sans-serif`
+      };
+      MATHFONT = FAMILIES.times;
+      BINARY2 = /* @__PURE__ */ new Set([..."=<>+\u2212\xB1\u2213\xD7\u22C5\xF7\u2264\u2265\u2260\u2248\u2261\u2208\u2209\u2282\u2283\u2286\u2287\u222A\u2229\u2192\u2190\u2194\u21D2\u21D0\u21D4\u27F6\u221D\u2225\u22A5\u2243\u2245\u223C\u226A\u226B"]);
+      esc2 = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      canvasCtx = null;
+      charAdvance = (ch, fs, italic) => measure(ch, fs, italic);
+      empty = () => ({ w: 0, a: 0, d: 0, draw: () => "" });
+      kern = (w) => ({ w, a: 0, d: 0, draw: () => "" });
+      scriptFs = (fs) => Math.max(fs * 0.7, 5);
     }
   });
 
@@ -14250,16 +14327,10 @@ ${contentTypesOverrides}
   syncConvertUi();
   async function paragraphsToProcess(scope, onProgress, { kinds: wanted } = {}) {
     if (scope === "selection") return { scope: { kind: "selection" }, items: await readParagraphs({ kind: "selection" }, onProgress) };
-    if (!state2.scanned) await scan();
-    const s = state2.scanned;
-    if (s.mapped) {
-      const kinds = [...wanted];
-      const indexes = [...new Set(s.equations.filter((e3) => kinds.includes(e3.kind) && e3.latex !== null).map((e3) => e3.para))].sort((a, b) => a - b);
-      return { scope: { kind: "all" }, items: await readParagraphs({ kind: "indexes", indexes }, onProgress) };
-    }
-    return { scope: { kind: "all" }, items: await readParagraphs({ kind: "all" }, onProgress) };
+    return { scope: { kind: "all" }, items: await readConversionParagraphs(wanted, onProgress) };
   }
   async function convert() {
+    var _a9, _b;
     if (!$("opt-backup").checked) {
       $("convert-summary").innerHTML = '<span class="warn">H\xE3y l\u01B0u m\u1ED9t b\u1EA3n sao t\xE0i li\u1EC7u r\u1ED3i tick \xF4 x\xE1c nh\u1EADn.</span>';
       return;
@@ -14274,10 +14345,13 @@ ${contentTypesOverrides}
     if (dst === "mathtype") kinds.add("native");
     $("btn-convert").disabled = true;
     const bar = $("progress");
+    let phase = "\u0111\u1ECDc t\xE0i li\u1EC7u";
     try {
       const scopeName = document.querySelector("input[name=scope]:checked").value;
       $("convert-summary").textContent = "\u0110ang \u0111\u1ECDc c\xE1c \u0111o\u1EA1n\u2026";
       const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
+      phase = "gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c";
+      $("convert-summary").textContent = "\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c\u2026";
       let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
       const reasons = {}, writes = [], backup = [];
       const mathTypeOptions = dst === "mathtype" ? __spreadProps(__spreadValues({}, mtConvertOptions()), { defaultSize: (await mtOptions()).size }) : null;
@@ -14310,21 +14384,29 @@ ${contentTypesOverrides}
           backup.push({ index: it.index, pkg: it.pkg });
         }
       }
+      const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc13(k)}: ${v}</li>`).join("");
       if (!writes.length) {
-        $("convert-summary").innerHTML = `Kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n.${kept ? ` Gi\u1EEF nguy\xEAn: ${kept}.` : ""}`;
+        $("convert-summary").innerHTML = `Kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n.${kept ? ` Gi\u1EEF nguy\xEAn: ${kept}.` : ""}` + (reasonList ? `<ul>${reasonList}</ul>` : "");
         return;
       }
       $("convert-summary").textContent = `\u0110ang ghi ${writes.length} \u0111o\u1EA1n\u2026`;
+      phase = "ghi c\xF4ng th\u1EE9c v\xE0o Word";
       const res = await writeParagraphs(scope, writes, writeMode(), (d, t) => progress(bar, t + d, t * 2));
       afterWrite(res, { scope, items: backup, mode: writeMode() });
-      const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc13(k)}: ${v}</li>`).join("");
       const details = [];
       if (convertedMathType) details.push(`${convertedMathType} MathType`);
       if (convertedLatex) details.push(`${convertedLatex} LaTeX`);
       const detailStr = details.length ? ` (${details.join(", ")})` : "";
       $("convert-summary").innerHTML = `<p><b class="ok">\u0110\xE3 chuy\u1EC3n ${converted}</b> c\xF4ng th\u1EE9c${detailStr}; <b class="${kept ? "warn" : ""}">gi\u1EEF nguy\xEAn ${kept}</b>.</p>` + (reasonList ? `<ul>${reasonList}</ul>` : "") + (res.before !== res.after ? `<p class="warn">S\u1ED1 \u0111o\u1EA1n thay \u0111\u1ED5i ${res.before} \u2192 ${res.after}: Word c\xF3 th\u1EC3 \u0111\xE3 th\xEAm \u0111o\u1EA1n tr\u1ED1ng. N\xFAt \u201CKh\xF4i ph\u1EE5c\u201D b\u1ECB t\u1EAFt (kh\xF4ng an to\xE0n); h\xE3y d\xF9ng Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao.</p>` : "");
     } catch (e3) {
-      $("convert-summary").innerHTML = `<span class="bad">L\u1ED7i: ${esc13(e3.message)}</span>`;
+      if (phase === "ghi c\xF4ng th\u1EE9c v\xE0o Word") {
+        state2.scanned = state2.lastBackup = null;
+        lastPreview = [];
+        $("btn-restore").disabled = true;
+      }
+      const host = typeof Office !== "undefined" ? (_a9 = Office.context) == null ? void 0 : _a9.diagnostics : null;
+      const info = [e3.code, (_b = e3.debugInfo) == null ? void 0 : _b.errorLocation, host == null ? void 0 : host.platform, host == null ? void 0 : host.version].filter(Boolean).join(" \xB7 ");
+      $("convert-summary").innerHTML = `<span class="bad">L\u1ED7i khi ${esc13(phase)}: ${esc13(e3.message)}${info ? ` (${esc13(info)})` : ""}</span>` + (phase === "ghi c\xF4ng th\u1EE9c v\xE0o Word" ? '<p class="warn">M\u1ED9t s\u1ED1 \u0111o\u1EA1n c\xF3 th\u1EC3 \u0111\xE3 \u0111\u01B0\u1EE3c ghi. H\xE3y Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao tr\u01B0\u1EDBc khi th\u1EED l\u1EA1i.</p>' : "");
     } finally {
       $("btn-convert").disabled = false;
     }

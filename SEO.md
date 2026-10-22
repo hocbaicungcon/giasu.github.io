@@ -1,6 +1,8 @@
 # SEO của giasu.ai.vn
 
 ## Đã triển khai
+- Liên kết giữa các bài được dựng sẵn trong HTML: tối đa 3 bài “Đọc tiếp cùng chủ đề” trong phần đọc và 6 bài liên quan cuối trang, không trùng nhau. Ưu tiên thẻ chủ đề cụ thể, đối chiếu tiêu đề, cùng môn/lớp và kết nối bài học với bài tập; không ghép bài khác môn chỉ vì cùng lớp hoặc loại bài. Khi không tìm được chủ đề chung, chỉ gợi ý bài cùng môn/lớp (hoặc cùng loại với bài không phân lớp). Không cố điền đủ số liên kết khi thiếu bài phù hợp.
+- Audit kiểm tra đích liên kết gợi ý tồn tại, cùng môn, không tự liên kết hoặc lặp giữa hai khối và thống kê độ phủ trên kho bài. Chọn liên kết từ metadata đã được build nạp, không đọc lại toàn bộ nội dung Markdown.
 - Mỗi trang HTML công khai có title, description, canonical HTTPS và schema phù hợp. Ảnh chia sẻ lấy đường dẫn tuyệt đối hợp lệ, dùng ảnh mặc định khi ảnh bài viết không phù hợp.
 - Trang `/cham-thi/` có H1 và nội dung tĩnh bằng tiếng Việt, hướng dẫn, câu hỏi thường gặp, liên kết phiếu/Excel mẫu và các trang liên quan. Nội dung có sẵn trong HTML, không chờ JavaScript nhận dạng. Các script chấm thi dùng defer và giữ nguyên thứ tự phụ thuộc.
 - Schema WebApplication, WebPage, BreadcrumbList, Organization, WebSite mô tả đúng chức năng miễn phí. Không khai báo đánh giá hoặc số sao khi chưa có dữ liệu thật. WebApplication hiện giúp mô tả thực thể; không cam kết được rich result ứng dụng vì Google còn yêu cầu đánh giá thật.

@@ -170,14 +170,8 @@ syncConvertUi();
 
 async function paragraphsToProcess(scope, onProgress, { kinds: wanted } = {}) {
   if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress) };
-  if (!state.scanned) await scan();
-  const s = state.scanned;
-  if (s.mapped) {
-    const kinds = [...wanted];
-    const indexes = [...new Set(s.equations.filter((e) => kinds.includes(e.kind) && e.latex !== null).map((e) => e.para))].sort((a, b) => a - b);
-    return { scope: { kind: 'all' }, items: await io.readParagraphs({ kind: 'indexes', indexes }, onProgress) };
-  }
-  return { scope: { kind: 'all' }, items: await io.readParagraphs({ kind: 'all' }, onProgress) };
+  // Always use a fresh snapshot: a previous scan's indexes can be stale after editing in Word.
+  return { scope: { kind: 'all' }, items: await io.readConversionParagraphs(wanted, onProgress) };
 }
 
 async function convert() {
@@ -190,10 +184,13 @@ async function convert() {
   if (dst === 'mathtype') kinds.add('native');
   $('btn-convert').disabled = true;
   const bar = $('progress');
+  let phase = 'đọc tài liệu';
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
     $('convert-summary').textContent = 'Đang đọc các đoạn…';
     const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
+    phase = 'giải mã và chuyển công thức';
+    $('convert-summary').textContent = 'Đang chuyển công thức…';
     let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
     const reasons = {}, writes = [], backup = [];
     // Resolve the cursor font once, rather than one Office round trip per paragraph.
@@ -223,11 +220,12 @@ async function convert() {
       r.kept.forEach((k) => { reasons[k.reason] = (reasons[k.reason] || 0) + 1; });
       if (r.changed) { writes.push({ index: it.index, pkg: r.pkg }); backup.push({ index: it.index, pkg: it.pkg }); }
     }
-    if (!writes.length) { $('convert-summary').innerHTML = `Không có gì để chuyển.${kept ? ` Giữ nguyên: ${kept}.` : ''}`; return; }
+    const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
+    if (!writes.length) { $('convert-summary').innerHTML = `Không có gì để chuyển.${kept ? ` Giữ nguyên: ${kept}.` : ''}` + (reasonList ? `<ul>${reasonList}</ul>` : ''); return; }
     $('convert-summary').textContent = `Đang ghi ${writes.length} đoạn…`;
+    phase = 'ghi công thức vào Word';
     const res = await io.writeParagraphs(scope, writes, writeMode(), (d, t) => progress(bar, t + d, t * 2));
     afterWrite(res, { scope, items: backup, mode: writeMode() });
-    const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
     const details = [];
     if (convertedMathType) details.push(`${convertedMathType} MathType`);
     if (convertedLatex) details.push(`${convertedLatex} LaTeX`);
@@ -236,7 +234,15 @@ async function convert() {
       (reasonList ? `<ul>${reasonList}</ul>` : '') +
       (res.before !== res.after ? `<p class="warn">Số đoạn thay đổi ${res.before} → ${res.after}: Word có thể đã thêm đoạn trống. Nút “Khôi phục” bị tắt (không an toàn); hãy dùng Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao.</p>` : '');
   } catch (e) {
-    $('convert-summary').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
+    if (phase === 'ghi công thức vào Word') {
+      state.scanned = state.lastBackup = null;
+      lastPreview = [];
+      $('btn-restore').disabled = true;
+    }
+    const host = typeof Office !== 'undefined' ? Office.context?.diagnostics : null;
+    const info = [e.code, e.debugInfo?.errorLocation, host?.platform, host?.version].filter(Boolean).join(' · ');
+    $('convert-summary').innerHTML = `<span class="bad">Lỗi khi ${esc(phase)}: ${esc(e.message)}${info ? ` (${esc(info)})` : ''}</span>` +
+      (phase === 'ghi công thức vào Word' ? '<p class="warn">Một số đoạn có thể đã được ghi. Hãy Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao trước khi thử lại.</p>' : '');
   } finally { $('btn-convert').disabled = false; }
 }
 $('btn-convert').addEventListener('click', convert);
