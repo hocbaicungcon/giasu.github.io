@@ -71,6 +71,18 @@ try {
   const large = host({ platform: 'PC' });
   await writeParagraphs({ kind: 'all' }, writes.map(it => ({ ...it, pkg: 'x'.repeat(140000) })), 'content');
   assert.equal(large.batches.length, 3, 'large packages are sent separately even on Windows');
+
+  const cancelled = host({ platform: 'Mac' });
+  const signal = { aborted: false };
+  await assert.rejects(writeParagraphs({ kind: 'all' }, writes, 'content', () => {
+    signal.aborted = true;
+  }, { signal }), { name: 'AbortError' });
+  assert.deepEqual(cancelled.values, ['old-0', 'old-1', 'new-2'], 'cancellation stops before the next write batch');
+  assert.deepEqual(cancelled.attempts, [2]);
+
+  const beforeStart = host({ platform: 'Mac' });
+  await assert.rejects(writeParagraphs({ kind: 'all' }, writes, 'content', undefined, { signal }), { name: 'AbortError' });
+  assert.deepEqual(beforeStart.attempts, [], 'a cancelled job never writes');
 } finally {
   globalThis.Word = prevWord; globalThis.Office = prevOffice;
 }

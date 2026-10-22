@@ -137,6 +137,7 @@ function renderScan() {
 $('btn-scan').addEventListener('click', scan);
 $('only-bad').addEventListener('change', () => state.scanned && renderScan());
 $('eq-table').addEventListener('click', (ev) => {
+  if (conversionJob) return;
   const tr = ev.target.closest('tr[data-para]');
   if (tr && state.scanned && state.scanned.mapped && io.hasWord()) io.selectParagraph(Number(tr.dataset.para)).catch(() => {});
 });
@@ -177,13 +178,22 @@ $('conv-src').addEventListener('change', syncConvertUi);
 $('conv-dst').addEventListener('change', syncConvertUi);
 syncConvertUi();
 
-async function paragraphsToProcess(scope, onProgress, { kinds: wanted } = {}) {
-  if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress) };
+async function paragraphsToProcess(scope, onProgress, { kinds: wanted, signal } = {}) {
+  if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readParagraphs({ kind: 'selection' }, onProgress, { signal }) };
   // Always use a fresh snapshot: a previous scan's indexes can be stale after editing in Word.
-  return { scope: { kind: 'all' }, items: await io.readConversionParagraphs(wanted, onProgress) };
+  return { scope: { kind: 'all' }, items: await io.readConversionParagraphs(wanted, onProgress, { signal }) };
 }
 
+let conversionJob = null;
+$('btn-cancel-convert').addEventListener('click', () => {
+  if (!conversionJob) return;
+  conversionJob.aborted = true;
+  $('btn-cancel-convert').disabled = true;
+  $('convert-summary').textContent = 'Đang hủy… chờ thao tác hiện tại của Word hoàn tất.';
+});
+
 async function convert() {
+  if (conversionJob) return;
   if (!$('opt-backup').checked) { $('convert-summary').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
   const src = convSrc(), dst = convDst();
   if (src === dst && src !== 'mathtype') { $('convert-summary').innerHTML = '<span class="warn">Nguồn và đích giống nhau: không có gì để chuyển.</span>'; return; }
@@ -191,13 +201,31 @@ async function convert() {
   // kinds of equations that take part (MathType→MathType also redoes Word equations; ->MathType goes through Word equations)
   const kinds = new Set([SRC_KIND[src]]);
   if (dst === 'mathtype') kinds.add('native');
-  $('btn-convert').disabled = true;
+  const signal = conversionJob = { aborted: false };
+  const controls = [...document.querySelectorAll('#tab-eq button, #tab-eq input, #tab-eq select')]
+    .filter(el => el.id !== 'btn-cancel-convert').map(el => [el, el.disabled]);
+  controls.forEach(([el]) => { el.disabled = true; });
+  $('btn-convert').hidden = true;
+  $('btn-cancel-convert').hidden = false;
+  $('btn-cancel-convert').disabled = false;
+  let written = 0;
+  const checkpoint = async () => {
+    await new Promise(resolve => setTimeout(resolve, 0));
+    if (signal.aborted) {
+      const error = new Error('Đã hủy chuyển đổi.');
+      error.name = 'AbortError';
+      throw error;
+    }
+  };
   const bar = $('progress');
+  progress(bar, 0, 1);
+  $('convert-summary').textContent = 'Đang đọc tài liệu…';
   let phase = 'đọc tài liệu';
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
     if (scopeName === 'all' && src === 'mathtype' && dst === 'word' && !$('opt-display').checked) {
       const original = await io.readBody();
+      await checkpoint();
       phase = 'giải mã và chuyển công thức';
       $('convert-summary').textContent = 'Đang chuyển công thức…';
       progress(bar, 1, 3);
@@ -210,6 +238,7 @@ async function convert() {
         $('convert-summary').innerHTML = `Không có gì để chuyển. Giữ nguyên ${result.kept.length} công thức.` + (reasonList ? `<ul>${reasonList}</ul>` : '');
         return;
       }
+      await checkpoint();
       phase = 'ghi công thức vào Word';
       $('convert-summary').textContent = `Đang ghi ${result.converted} công thức vào Word…`;
       progress(bar, 2, 3);
@@ -222,7 +251,8 @@ async function convert() {
       return;
     }
     $('convert-summary').textContent = 'Đang đọc các đoạn…';
-    const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
+    const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds, signal });
+    await checkpoint();
     phase = 'giải mã và chuyển công thức';
     $('convert-summary').textContent = 'Đang chuyển công thức…';
     let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
@@ -231,9 +261,11 @@ async function convert() {
     const mathTypeOptions = dst === 'mathtype' ? { ...mtConvertOptions(), defaultSize: (await mtOptions()).size } : null;
     let lastYield = Date.now();
     for (const it of items) {
+      if (signal.aborted) await checkpoint();
       if (Date.now() - lastYield >= 16) {
         await new Promise((resolve) => setTimeout(resolve, 0));
         lastYield = Date.now();
+        if (signal.aborted) await checkpoint();
       }
       let r;
       if (dst === 'mathtype') {
@@ -255,10 +287,14 @@ async function convert() {
       if (r.changed) { writes.push({ index: it.index, pkg: r.pkg }); backup.push({ index: it.index, pkg: it.pkg }); }
     }
     const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
+    await checkpoint();
     if (!writes.length) { $('convert-summary').innerHTML = `Không có gì để chuyển.${kept ? ` Giữ nguyên: ${kept}.` : ''}` + (reasonList ? `<ul>${reasonList}</ul>` : ''); return; }
     $('convert-summary').textContent = `Đang ghi ${writes.length} đoạn…`;
     phase = 'ghi công thức vào Word';
-    const res = await io.writeParagraphs(scope, writes, writeMode(), (d, t) => progress(bar, t + d, t * 2));
+    const res = await io.writeParagraphs(scope, writes, writeMode(), (d, t) => {
+      written = d;
+      progress(bar, t + d, t * 2);
+    }, { signal });
     afterWrite(res, { scope, items: backup, mode: writeMode() });
     const details = [];
     if (convertedMathType) details.push(`${convertedMathType} MathType`);
@@ -268,6 +304,16 @@ async function convert() {
       (reasonList ? `<ul>${reasonList}</ul>` : '') +
       (res.before !== res.after ? `<p class="warn">Số đoạn thay đổi ${res.before} → ${res.after}: Word có thể đã thêm đoạn trống. Nút “Khôi phục” bị tắt (không an toàn); hãy dùng Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao.</p>` : '');
   } catch (e) {
+    if (e.name === 'AbortError') {
+      if (written) {
+        state.scanned = state.lastBackup = null;
+        lastPreview = [];
+      }
+      $('convert-summary').textContent = written
+        ? `Đã hủy. Đã ghi ${written} đoạn vào Word; dùng Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao nếu muốn bỏ các thay đổi.`
+        : 'Đã hủy chuyển đổi. Chưa ghi thay đổi vào tài liệu.';
+      return;
+    }
     if (phase === 'ghi công thức vào Word') {
       state.scanned = state.lastBackup = null;
       lastPreview = [];
@@ -277,7 +323,14 @@ async function convert() {
     const info = [e.code, e.debugInfo?.errorLocation, host?.platform, host?.version].filter(Boolean).join(' · ');
     $('convert-summary').innerHTML = `<span class="bad">Lỗi khi ${esc(phase)}: ${esc(e.message)}${info ? ` (${esc(info)})` : ''}</span>` +
       (phase === 'ghi công thức vào Word' ? '<p class="warn">Một số đoạn có thể đã được ghi. Hãy Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao trước khi thử lại.</p>' : '');
-  } finally { $('btn-convert').disabled = false; }
+  } finally {
+    conversionJob = null;
+    controls.forEach(([el, disabled]) => { el.disabled = disabled; });
+    $('btn-convert').hidden = false;
+    $('btn-cancel-convert').hidden = true;
+    $('btn-restore').disabled = !state.lastBackup;
+    bar.hidden = true;
+  }
 }
 $('btn-convert').addEventListener('click', convert);
 $('btn-restore').addEventListener('click', async () => {

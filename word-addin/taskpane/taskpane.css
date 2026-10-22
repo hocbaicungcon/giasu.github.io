@@ -630,6 +630,13 @@ section { max-width: 780px; margin-left: auto; margin-right: auto; }
 .btns, .btns.two, .btns.four { grid-template-columns: repeat(auto-fit, minmax(124px, 1fr)); }
 .btns > button, .row > button { display: inline-flex; align-items: center; justify-content: center; text-align: center; white-space: normal; line-height: 1.25; padding-top: 6px; padding-bottom: 6px; }
 .btns > .primary, .btns > button.wide { grid-column: 1 / -1; }
+
+/* Keep the equation actions balanced, including in a narrow Word task pane. */
+#tab-eq .conversion-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+#tab-eq .conversion-actions > button { grid-column: auto; min-height: 36px; }
+#tab-eq #btn-scan { min-height: 36px; }
+#btn-cancel-convert { color: var(--bad); border-color: var(--bad); }
+#btn-cancel-convert:hover:not(:disabled) { color: var(--bad); border-color: var(--bad); background: var(--code); }
 .row > button { flex: 1 1 124px; }
 .orig-row input[type=text] { flex: 0 0 72px; }
 @media (max-width: 340px) { .grid3 { grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); } .btns.two { grid-template-columns: repeat(auto-fit, minmax(124px, 1fr)); } }

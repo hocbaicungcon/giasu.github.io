@@ -8,6 +8,14 @@ const WRITE_BYTES = 512 * 1024;
 let lastReadRoute = 'chưa đọc';
 export const bodyReadRoute = () => lastReadRoute;
 
+function checkCancelled(signal) {
+  if (signal?.aborted) {
+    const error = new Error('Đã hủy chuyển đổi.');
+    error.name = 'AbortError';
+    throw error;
+  }
+}
+
 function writeBatchSize() {
   // Keep the Mac path equivalent to a successful single-paragraph conversion.
   const platform = typeof Office !== 'undefined' ? (Office.context?.diagnostics?.platform || Office.context?.platform) : '';
@@ -72,14 +80,19 @@ export async function readSelection() {
 }
 
 /** One body snapshot for flat documents; preserve host paragraph semantics for complex layouts. */
-export async function readConversionParagraphs(kinds, onProgress = () => {}) {
+export async function readConversionParagraphs(kinds, onProgress = () => {}, { signal } = {}) {
+  checkCancelled(signal);
   let items;
   try {
     const { pkg, paragraphCount } = await readBody();
+    checkCancelled(signal);
     items = paragraphPackages(pkg, paragraphCount, kinds);
-  } catch { /* A host may export individual paragraphs even when body export fails. */ }
+  } catch (error) {
+    if (error.name === 'AbortError') throw error;
+    /* A host may export individual paragraphs even when body export fails. */
+  }
   if (items != null) { onProgress(items.length, items.length); return items; }
-  return readParagraphs({ kind: 'all' }, onProgress);
+  return readParagraphs({ kind: 'all' }, onProgress, { signal });
 }
 
 /** OOXML around the cursor: the selection, its first paragraph, and that paragraph's start up to the selection start. */
@@ -148,7 +161,8 @@ export async function replaceSelection(pkg) {
 }
 
 /** Read OOXML of paragraphs. scope: {kind:'selection'} | {kind:'indexes', indexes:[...]} | {kind:'all'}. onProgress(done,total). */
-export async function readParagraphs(scope, onProgress = () => {}) {
+export async function readParagraphs(scope, onProgress = () => {}, { signal } = {}) {
+  checkCancelled(signal);
   return run(async (context) => {
     const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
     coll.load('items');
@@ -156,10 +170,41 @@ export async function readParagraphs(scope, onProgress = () => {}) {
     const idx = scope.kind === 'indexes' ? scope.indexes : coll.items.map((_p, i) => i);
     const out = [];
     for (let i = 0; i < idx.length; i += BATCH) {
+      checkCancelled(signal);
       const slice = idx.slice(i, i + BATCH);
-      const calls = slice.map((k) => coll.items[k].getOoxml());
-      await context.sync();
-      slice.forEach((k, j) => out.push({ index: k, pkg: calls[j].value }));
+      try {
+        // Word Mac can reject Paragraph.getOoxml for embedded MathType objects.
+        // Export the paragraph's full range instead, retaining its paragraph mark.
+        const calls = slice.map((k) => {
+          const p = coll.items[k];
+          return writeBatchSize() === 1 ? p.getRange('Whole').getOoxml() : p.getOoxml();
+        });
+        await context.sync();
+        slice.forEach((k, j) => out.push({ index: k, pkg: calls[j].value }));
+      } catch (batchError) {
+        // Read-only retries use fresh contexts: a rejected sync may poison the old one.
+        for (const k of slice) {
+          checkCancelled(signal);
+          try {
+            const pkg = await run(async retry => {
+              const paragraphs = scope.kind === 'selection' ? retry.document.getSelection().paragraphs : retry.document.body.paragraphs;
+              paragraphs.load('items');
+              await retry.sync();
+              const p = paragraphs.items[k];
+              if (!p) throw new Error('Vị trí đoạn đã thay đổi. Hãy đọc lại tài liệu.');
+              const ox = p.getRange('Whole').getOoxml();
+              await retry.sync();
+              return ox.value;
+            });
+            out.push({ index: k, pkg });
+          } catch (error) {
+            const detail = new Error(`Không đọc được đoạn ${k + 1}${scope.kind === 'selection' ? ' trong vùng chọn' : ''}: ${error.message || error}`);
+            detail.code = error.code || batchError.code;
+            detail.debugInfo = error.debugInfo || batchError.debugInfo;
+            throw detail;
+          }
+        }
+      }
       onProgress(Math.min(i + BATCH, idx.length), idx.length);
     }
     return out;
@@ -171,7 +216,8 @@ export async function readParagraphs(scope, onProgress = () => {}) {
  * Write backwards so paragraph insertion cannot shift an earlier target. mode: 'content' | 'paragraph'.
  * Returns {before, after} paragraph counts so callers can spot stray paragraphs.
  */
-export async function writeParagraphs(scope, items, mode, onProgress = () => {}) {
+export async function writeParagraphs(scope, items, mode, onProgress = () => {}, { signal } = {}) {
+  checkCancelled(signal);
   return run(async (context) => {
     const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
     coll.load('items');
@@ -189,6 +235,7 @@ export async function writeParagraphs(scope, items, mode, onProgress = () => {})
     }
     const limit = writeBatchSize();
     for (let i = 0; i < ordered.length;) {
+      checkCancelled(signal);
       const batch = [];
       let bytes = 0;
       while (i + batch.length < ordered.length && batch.length < limit) {
@@ -211,6 +258,7 @@ export async function writeParagraphs(scope, items, mode, onProgress = () => {})
       }
       i += batch.length;
       onProgress(i, ordered.length);
+      if (signal && i < ordered.length) await new Promise(resolve => setTimeout(resolve, 0));
     }
     const again = context.document.body.paragraphs;
     again.load('items');

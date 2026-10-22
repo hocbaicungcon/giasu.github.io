@@ -4384,6 +4384,13 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     writeBodySnapshot: () => writeBodySnapshot,
     writeParagraphs: () => writeParagraphs
   });
+  function checkCancelled(signal) {
+    if (signal == null ? void 0 : signal.aborted) {
+      const error = new Error("\u0110\xE3 h\u1EE7y chuy\u1EC3n \u0111\u1ED5i.");
+      error.name = "AbortError";
+      throw error;
+    }
+  }
   function writeBatchSize() {
     var _a9, _b, _c;
     const platform = typeof Office !== "undefined" ? ((_b = (_a9 = Office.context) == null ? void 0 : _a9.diagnostics) == null ? void 0 : _b.platform) || ((_c = Office.context) == null ? void 0 : _c.platform) : "";
@@ -4446,18 +4453,21 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     });
   }
   async function readConversionParagraphs(kinds, onProgress = () => {
-  }) {
+  }, { signal } = {}) {
+    checkCancelled(signal);
     let items;
     try {
       const { pkg, paragraphCount } = await readBody();
+      checkCancelled(signal);
       items = paragraphPackages(pkg, paragraphCount, kinds);
-    } catch (e3) {
+    } catch (error) {
+      if (error.name === "AbortError") throw error;
     }
     if (items != null) {
       onProgress(items.length, items.length);
       return items;
     }
-    return readParagraphs({ kind: "all" }, onProgress);
+    return readParagraphs({ kind: "all" }, onProgress, { signal });
   }
   async function readCursorContext() {
     var _a9;
@@ -4527,7 +4537,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     });
   }
   async function readParagraphs(scope, onProgress = () => {
-  }) {
+  }, { signal } = {}) {
+    checkCancelled(signal);
     return run2(async (context) => {
       const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
       coll.load("items");
@@ -4535,17 +4546,46 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const idx = scope.kind === "indexes" ? scope.indexes : coll.items.map((_p, i) => i);
       const out = [];
       for (let i = 0; i < idx.length; i += BATCH) {
+        checkCancelled(signal);
         const slice = idx.slice(i, i + BATCH);
-        const calls = slice.map((k) => coll.items[k].getOoxml());
-        await context.sync();
-        slice.forEach((k, j) => out.push({ index: k, pkg: calls[j].value }));
+        try {
+          const calls = slice.map((k) => {
+            const p2 = coll.items[k];
+            return writeBatchSize() === 1 ? p2.getRange("Whole").getOoxml() : p2.getOoxml();
+          });
+          await context.sync();
+          slice.forEach((k, j) => out.push({ index: k, pkg: calls[j].value }));
+        } catch (batchError) {
+          for (const k of slice) {
+            checkCancelled(signal);
+            try {
+              const pkg = await run2(async (retry) => {
+                const paragraphs2 = scope.kind === "selection" ? retry.document.getSelection().paragraphs : retry.document.body.paragraphs;
+                paragraphs2.load("items");
+                await retry.sync();
+                const p2 = paragraphs2.items[k];
+                if (!p2) throw new Error("V\u1ECB tr\xED \u0111o\u1EA1n \u0111\xE3 thay \u0111\u1ED5i. H\xE3y \u0111\u1ECDc l\u1EA1i t\xE0i li\u1EC7u.");
+                const ox = p2.getRange("Whole").getOoxml();
+                await retry.sync();
+                return ox.value;
+              });
+              out.push({ index: k, pkg });
+            } catch (error) {
+              const detail = new Error(`Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c \u0111o\u1EA1n ${k + 1}${scope.kind === "selection" ? " trong v\xF9ng ch\u1ECDn" : ""}: ${error.message || error}`);
+              detail.code = error.code || batchError.code;
+              detail.debugInfo = error.debugInfo || batchError.debugInfo;
+              throw detail;
+            }
+          }
+        }
         onProgress(Math.min(i + BATCH, idx.length), idx.length);
       }
       return out;
     });
   }
   async function writeParagraphs(scope, items, mode, onProgress = () => {
-  }) {
+  }, { signal } = {}) {
+    checkCancelled(signal);
     return run2(async (context) => {
       const coll = scope.kind === "selection" ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
       coll.load("items");
@@ -4563,6 +4603,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
       const limit = writeBatchSize();
       for (let i = 0; i < ordered2.length; ) {
+        checkCancelled(signal);
         const batch = [];
         let bytes = 0;
         while (i + batch.length < ordered2.length && batch.length < limit) {
@@ -4584,6 +4625,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         }
         i += batch.length;
         onProgress(i, ordered2.length);
+        if (signal && i < ordered2.length) await new Promise((resolve2) => setTimeout(resolve2, 0));
       }
       const again = context.document.body.paragraphs;
       again.load("items");
@@ -14476,6 +14518,7 @@ ${contentTypesOverrides}
   $("btn-scan").addEventListener("click", scan);
   $("only-bad").addEventListener("change", () => state2.scanned && renderScan());
   $("eq-table").addEventListener("click", (ev) => {
+    if (conversionJob) return;
     const tr = ev.target.closest("tr[data-para]");
     if (tr && state2.scanned && state2.scanned.mapped && hasWord()) selectParagraph(Number(tr.dataset.para)).catch(() => {
     });
@@ -14524,12 +14567,20 @@ ${contentTypesOverrides}
   $("conv-src").addEventListener("change", syncConvertUi);
   $("conv-dst").addEventListener("change", syncConvertUi);
   syncConvertUi();
-  async function paragraphsToProcess(scope, onProgress, { kinds: wanted } = {}) {
-    if (scope === "selection") return { scope: { kind: "selection" }, items: await readParagraphs({ kind: "selection" }, onProgress) };
-    return { scope: { kind: "all" }, items: await readConversionParagraphs(wanted, onProgress) };
+  async function paragraphsToProcess(scope, onProgress, { kinds: wanted, signal } = {}) {
+    if (scope === "selection") return { scope: { kind: "selection" }, items: await readParagraphs({ kind: "selection" }, onProgress, { signal }) };
+    return { scope: { kind: "all" }, items: await readConversionParagraphs(wanted, onProgress, { signal }) };
   }
+  var conversionJob = null;
+  $("btn-cancel-convert").addEventListener("click", () => {
+    if (!conversionJob) return;
+    conversionJob.aborted = true;
+    $("btn-cancel-convert").disabled = true;
+    $("convert-summary").textContent = "\u0110ang h\u1EE7y\u2026 ch\u1EDD thao t\xE1c hi\u1EC7n t\u1EA1i c\u1EE7a Word ho\xE0n t\u1EA5t.";
+  });
   async function convert() {
     var _a9, _b;
+    if (conversionJob) return;
     if (!$("opt-backup").checked) {
       $("convert-summary").innerHTML = '<span class="warn">H\xE3y l\u01B0u m\u1ED9t b\u1EA3n sao t\xE0i li\u1EC7u r\u1ED3i tick \xF4 x\xE1c nh\u1EADn.</span>';
       return;
@@ -14542,13 +14593,32 @@ ${contentTypesOverrides}
     const normalize2 = src === "mathtype" && dst === "mathtype";
     const kinds = /* @__PURE__ */ new Set([SRC_KIND[src]]);
     if (dst === "mathtype") kinds.add("native");
-    $("btn-convert").disabled = true;
+    const signal = conversionJob = { aborted: false };
+    const controls = [...document.querySelectorAll("#tab-eq button, #tab-eq input, #tab-eq select")].filter((el) => el.id !== "btn-cancel-convert").map((el) => [el, el.disabled]);
+    controls.forEach(([el]) => {
+      el.disabled = true;
+    });
+    $("btn-convert").hidden = true;
+    $("btn-cancel-convert").hidden = false;
+    $("btn-cancel-convert").disabled = false;
+    let written = 0;
+    const checkpoint = async () => {
+      await new Promise((resolve2) => setTimeout(resolve2, 0));
+      if (signal.aborted) {
+        const error = new Error("\u0110\xE3 h\u1EE7y chuy\u1EC3n \u0111\u1ED5i.");
+        error.name = "AbortError";
+        throw error;
+      }
+    };
     const bar = $("progress");
+    progress(bar, 0, 1);
+    $("convert-summary").textContent = "\u0110ang \u0111\u1ECDc t\xE0i li\u1EC7u\u2026";
     let phase = "\u0111\u1ECDc t\xE0i li\u1EC7u";
     try {
       const scopeName = document.querySelector("input[name=scope]:checked").value;
       if (scopeName === "all" && src === "mathtype" && dst === "word" && !$("opt-display").checked) {
         const original = await readBody();
+        await checkpoint();
         phase = "gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c";
         $("convert-summary").textContent = "\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c\u2026";
         progress(bar, 1, 3);
@@ -14563,6 +14633,7 @@ ${contentTypesOverrides}
           $("convert-summary").innerHTML = `Kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n. Gi\u1EEF nguy\xEAn ${result.kept.length} c\xF4ng th\u1EE9c.` + (reasonList2 ? `<ul>${reasonList2}</ul>` : "");
           return;
         }
+        await checkpoint();
         phase = "ghi c\xF4ng th\u1EE9c v\xE0o Word";
         $("convert-summary").textContent = `\u0110ang ghi ${result.converted} c\xF4ng th\u1EE9c v\xE0o Word\u2026`;
         progress(bar, 2, 3);
@@ -14573,7 +14644,8 @@ ${contentTypesOverrides}
         return;
       }
       $("convert-summary").textContent = "\u0110ang \u0111\u1ECDc c\xE1c \u0111o\u1EA1n\u2026";
-      const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds });
+      const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds, signal });
+      await checkpoint();
       phase = "gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c";
       $("convert-summary").textContent = "\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c\u2026";
       let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
@@ -14581,9 +14653,11 @@ ${contentTypesOverrides}
       const mathTypeOptions = dst === "mathtype" ? __spreadProps(__spreadValues({}, mtConvertOptions()), { defaultSize: (await mtOptions()).size }) : null;
       let lastYield = Date.now();
       for (const it of items) {
+        if (signal.aborted) await checkpoint();
         if (Date.now() - lastYield >= 16) {
           await new Promise((resolve2) => setTimeout(resolve2, 0));
           lastYield = Date.now();
+          if (signal.aborted) await checkpoint();
         }
         let r;
         if (dst === "mathtype") {
@@ -14609,13 +14683,17 @@ ${contentTypesOverrides}
         }
       }
       const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc13(k)}: ${v}</li>`).join("");
+      await checkpoint();
       if (!writes.length) {
         $("convert-summary").innerHTML = `Kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n.${kept ? ` Gi\u1EEF nguy\xEAn: ${kept}.` : ""}` + (reasonList ? `<ul>${reasonList}</ul>` : "");
         return;
       }
       $("convert-summary").textContent = `\u0110ang ghi ${writes.length} \u0111o\u1EA1n\u2026`;
       phase = "ghi c\xF4ng th\u1EE9c v\xE0o Word";
-      const res = await writeParagraphs(scope, writes, writeMode(), (d, t) => progress(bar, t + d, t * 2));
+      const res = await writeParagraphs(scope, writes, writeMode(), (d, t) => {
+        written = d;
+        progress(bar, t + d, t * 2);
+      }, { signal });
       afterWrite(res, { scope, items: backup, mode: writeMode() });
       const details = [];
       if (convertedMathType) details.push(`${convertedMathType} MathType`);
@@ -14623,6 +14701,14 @@ ${contentTypesOverrides}
       const detailStr = details.length ? ` (${details.join(", ")})` : "";
       $("convert-summary").innerHTML = `<p><b class="ok">\u0110\xE3 chuy\u1EC3n ${converted}</b> c\xF4ng th\u1EE9c${detailStr}; <b class="${kept ? "warn" : ""}">gi\u1EEF nguy\xEAn ${kept}</b>.</p>` + (reasonList ? `<ul>${reasonList}</ul>` : "") + (res.before !== res.after ? `<p class="warn">S\u1ED1 \u0111o\u1EA1n thay \u0111\u1ED5i ${res.before} \u2192 ${res.after}: Word c\xF3 th\u1EC3 \u0111\xE3 th\xEAm \u0111o\u1EA1n tr\u1ED1ng. N\xFAt \u201CKh\xF4i ph\u1EE5c\u201D b\u1ECB t\u1EAFt (kh\xF4ng an to\xE0n); h\xE3y d\xF9ng Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao.</p>` : "");
     } catch (e3) {
+      if (e3.name === "AbortError") {
+        if (written) {
+          state2.scanned = state2.lastBackup = null;
+          lastPreview = [];
+        }
+        $("convert-summary").textContent = written ? `\u0110\xE3 h\u1EE7y. \u0110\xE3 ghi ${written} \u0111o\u1EA1n v\xE0o Word; d\xF9ng Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao n\u1EBFu mu\u1ED1n b\u1ECF c\xE1c thay \u0111\u1ED5i.` : "\u0110\xE3 h\u1EE7y chuy\u1EC3n \u0111\u1ED5i. Ch\u01B0a ghi thay \u0111\u1ED5i v\xE0o t\xE0i li\u1EC7u.";
+        return;
+      }
       if (phase === "ghi c\xF4ng th\u1EE9c v\xE0o Word") {
         state2.scanned = state2.lastBackup = null;
         lastPreview = [];
@@ -14632,7 +14718,14 @@ ${contentTypesOverrides}
       const info = [e3.code, (_b = e3.debugInfo) == null ? void 0 : _b.errorLocation, host == null ? void 0 : host.platform, host == null ? void 0 : host.version].filter(Boolean).join(" \xB7 ");
       $("convert-summary").innerHTML = `<span class="bad">L\u1ED7i khi ${esc13(phase)}: ${esc13(e3.message)}${info ? ` (${esc13(info)})` : ""}</span>` + (phase === "ghi c\xF4ng th\u1EE9c v\xE0o Word" ? '<p class="warn">M\u1ED9t s\u1ED1 \u0111o\u1EA1n c\xF3 th\u1EC3 \u0111\xE3 \u0111\u01B0\u1EE3c ghi. H\xE3y Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao tr\u01B0\u1EDBc khi th\u1EED l\u1EA1i.</p>' : "");
     } finally {
-      $("btn-convert").disabled = false;
+      conversionJob = null;
+      controls.forEach(([el, disabled]) => {
+        el.disabled = disabled;
+      });
+      $("btn-convert").hidden = false;
+      $("btn-cancel-convert").hidden = true;
+      $("btn-restore").disabled = !state2.lastBackup;
+      bar.hidden = true;
     }
   }
   $("btn-convert").addEventListener("click", convert);

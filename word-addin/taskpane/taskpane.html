@@ -41,9 +41,9 @@
     <label><input type="checkbox" id="opt-display" checked> Đoạn chỉ có một công thức → công thức riêng dòng (căn giữa)</label>
     <label><input type="checkbox" id="opt-mode"> Thay cả đoạn (mặc định: thay phần nội dung, giữ dấu ¶)</label>
     <label><input type="checkbox" id="opt-backup"> Tôi đã lưu một bản sao tài liệu</label>
-    <div class="btns two"><button class="primary" id="btn-convert" disabled>Chuyển</button><button class="secondary" id="btn-restore" disabled>Khôi phục</button></div>
+    <div class="btns two conversion-actions"><button class="primary" id="btn-convert" disabled>Chuyển</button><button class="secondary" id="btn-cancel-convert" hidden>Hủy bỏ</button><button class="secondary" id="btn-restore" disabled>Khôi phục</button></div>
     <progress id="progress" value="0" max="1" hidden></progress>
-    <div id="convert-summary"></div>
+    <div id="convert-summary" role="status" aria-live="polite"></div>
   </fieldset>
 </section>
 
