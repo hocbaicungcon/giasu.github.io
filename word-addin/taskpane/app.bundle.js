@@ -540,7 +540,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         continue;
       }
       const attrs = {};
-      m[4].replace(/([^\s=]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g, (_a8, k, v1, v2) => {
+      m[4].replace(/([^\s=]+)\s*=\s*(?:"([^"]*)"|'([^']*)')/g, (_a9, k, v1, v2) => {
         attrs[k] = unescapeXml(v1 !== void 0 ? v1 : v2);
         return "";
       });
@@ -1614,6 +1614,24 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     });
   }
   async function readCursorContext() {
+    var _a9;
+    try {
+      return await readCursorContextRanges();
+    } catch (e3) {
+      const ctx = {};
+      try {
+        ctx.selPkg = (await readSelection()).pkg;
+      } catch (e4) {
+      }
+      try {
+        ctx.paraPkg = (_a9 = (await readParagraphs({ kind: "selection" }))[0]) == null ? void 0 : _a9.pkg;
+      } catch (e4) {
+      }
+      if (!ctx.selPkg && !ctx.paraPkg) throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c v\xF9ng ch\u1ECDn t\u1EEB Word.");
+      return ctx;
+    }
+  }
+  async function readCursorContextRanges() {
     return run(async (context) => {
       const sel = context.document.getSelection();
       const selOx = sel.getOoxml();
@@ -1622,14 +1640,17 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       await context.sync();
       const para2 = paras.items[0];
       const paraOx = para2 ? para2.getOoxml() : null;
-      let beforeOx = null;
-      try {
-        if (para2) beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
-      } catch (e3) {
-        beforeOx = null;
-      }
       await context.sync();
-      return { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: beforeOx ? beforeOx.value : null };
+      const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null };
+      try {
+        if (para2) {
+          const beforeOx = para2.getRange("Start").expandTo(sel.getRange("Start")).getOoxml();
+          await context.sync();
+          result.beforePkg = beforeOx.value;
+        }
+      } catch (e3) {
+      }
+      return result;
     });
   }
   async function selectionFontSize() {
@@ -3383,8 +3404,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         if (r.length >= 3 && nums.every(Boolean) && rows[i + 1]) {
           const vals = rows[i + 1];
           nums.forEach((m, k) => {
-            var _a8;
-            return put(Number(m[1]), keyKind((_a8 = vals[k + 1]) != null ? _a8 : ""));
+            var _a9;
+            return put(Number(m[1]), keyKind((_a9 = vals[k + 1]) != null ? _a9 : ""));
           });
           i++;
           continue;
@@ -4091,8 +4112,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       }
     }
     const csv = out.map((g) => [g.code, g.title || g.kind, ...g.items.map((i) => {
-      var _a8;
-      return `${i.number}:${(_a8 = i.value) != null ? _a8 : "?"}`;
+      var _a9;
+      return `${i.number}:${(_a9 = i.value) != null ? _a9 : "?"}`;
     })].join(",")).join("\n");
     return { groups: out, csv };
   }
@@ -4113,8 +4134,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       const cols = codes.filter((c) => sec.byCode.has(c)), first = 1300, w = Math.min(1800, Math.floor((9e3 - first) / Math.max(1, cols.length)));
       const head = `<w:tr><w:trPr><w:cantSplit/><w:tblHeader/></w:trPr>${cell(word2, first, true)}${cols.map((c) => cell(c ? `M\xE3 ${c}` : "\u0110\xE1p \xE1n", w, true)).join("")}</w:tr>`;
       const rows = numbers.map((n) => `<w:tr><w:trPr><w:cantSplit/></w:trPr>${cell(n, first, true)}${cols.map((c) => {
-        var _a8;
-        return cell((_a8 = sec.byCode.get(c).get(n)) != null ? _a8 : "?", w, false);
+        var _a9;
+        return cell((_a9 = sec.byCode.get(c).get(n)) != null ? _a9 : "?", w, false);
       }).join("")}</w:tr>`).join("");
       if (sec.title) xml += `<w:p><w:pPr><w:keepNext/><w:spacing w:before="120"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t xml:space="preserve">${escapeXml(sec.title)}</w:t></w:r></w:p>`;
       xml += `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${borders}</w:tblPr><w:tblGrid><w:gridCol w:w="${first}"/>${cols.map(() => `<w:gridCol w:w="${w}"/>`).join("")}</w:tblGrid>${head}${rows}</w:tbl><w:p/>`;
@@ -4721,7 +4742,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       LATEX_RE = {
         lastIndex: 0,
         exec(str) {
-          var _a8, _b;
+          var _a9, _b;
           if (LATEX_NATIVE) {
             LATEX_NATIVE.lastIndex = this.lastIndex;
             const r2 = LATEX_NATIVE.exec(str);
@@ -4734,7 +4755,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
             this.lastIndex = 0;
             return null;
           }
-          const pre = ((_b = (_a8 = m[1]) != null ? _a8 : m[5]) != null ? _b : "").length;
+          const pre = ((_b = (_a9 = m[1]) != null ? _a9 : m[5]) != null ? _b : "").length;
           const r = [m[0].slice(pre), m[2], m[3], m[4], m[6]];
           r.index = m.index + pre;
           this.lastIndex = LATEX_FALLBACK.lastIndex;
@@ -5773,9 +5794,9 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     return sz || fallback;
   }
   async function convertNativeToMathType(pkg, { render, style = "times", font = null, size = "auto", defaultSize = 12, vector = true, display = false } = {}) {
-    var _a8;
+    var _a9;
     const scan2 = scanPackage(pkg);
-    const styles = ((_a8 = splitParts(pkg).get("/word/styles.xml")) == null ? void 0 : _a8.body) || "";
+    const styles = ((_a9 = splitParts(pkg).get("/word/styles.xml")) == null ? void 0 : _a9.body) || "";
     let doc = scan2.doc;
     const result = { pkg, converted: 0, kept: [], changed: false };
     const edits = [], objects = [];
@@ -6360,14 +6381,14 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
 
   // src/figures/bbt.js
   function variationTable(src, { lo, hi, width = 560, label = "y", domain = "", fontPt: fontPt2 = 12 } = {}) {
-    var _a8, _b;
+    var _a9, _b;
     const f = compile(src);
     const info = analyse(f, { lo: lo != null ? lo : -60, hi: hi != null ? hi : 60 });
     const pts = [];
     const leftEdge = info.edges.find((e3) => e3.side === "left-start" && e3.x <= (lo != null ? lo : -60) + 1e-6 + 0);
     const firstFinite = info.xs.findIndex((x, i) => Number.isFinite(info.ys[i]));
     const startsFinite = Number.isFinite(info.ys[0]), endsFinite = Number.isFinite(info.ys[info.ys.length - 1]);
-    const first = startsFinite ? { x: -Infinity, kind: "inf" } : { x: (_b = (_a8 = info.edges.find((e3) => e3.side === "left-start")) == null ? void 0 : _a8.x) != null ? _b : info.xs[firstFinite], kind: "edge" };
+    const first = startsFinite ? { x: -Infinity, kind: "inf" } : { x: (_b = (_a9 = info.edges.find((e3) => e3.side === "left-start")) == null ? void 0 : _a9.x) != null ? _b : info.xs[firstFinite], kind: "edge" };
     const lastEdge = [...info.edges].reverse().find((e3) => e3.side === "right-end");
     const last = endsFinite ? { x: Infinity, kind: "inf" } : { x: lastEdge ? lastEdge.x : info.xs[info.xs.length - 1], kind: "edge" };
     pts.push(first);
@@ -6465,10 +6486,10 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     const lab = (i) => model.vals[i];
     const out = [];
     uniq.forEach((p2, i) => {
-      var _a8, _b, _c, _d;
+      var _a9, _b, _c, _d;
       const x = colX(i), v = lab(i);
       const inY = i > 0 && pos[i - 1] ? pos[i - 1][1] : null, outY = i < segs.length && pos[i] ? pos[i][0] : null;
-      const tIn = (_b = (_a8 = v.v) != null ? _a8 : v.l) != null ? _b : v.r, tOut = (_d = (_c = v.v) != null ? _c : v.r) != null ? _d : v.l;
+      const tIn = (_b = (_a9 = v.v) != null ? _a9 : v.l) != null ? _b : v.r, tOut = (_d = (_c = v.v) != null ? _c : v.r) != null ? _d : v.l;
       if (p2.kind === "pole") {
         if (inY !== null && v.l) {
           items.push(L(v.l, x - 9, inY, "r"));
@@ -6487,8 +6508,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     });
     const gapX = 7 * k;
     segs.forEach((sg, i) => {
-      var _a8, _b;
-      if (!pos[i] || !((_a8 = out[i]) == null ? void 0 : _a8.out) || !((_b = out[i + 1]) == null ? void 0 : _b.in)) return;
+      var _a9, _b;
+      if (!pos[i] || !((_a9 = out[i]) == null ? void 0 : _a9.out) || !((_b = out[i + 1]) == null ? void 0 : _b.in)) return;
       const x1 = out[i].out[1] + gapX, x2 = out[i + 1].in[0] - gapX;
       const y1 = pos[i][0], y2 = pos[i][1];
       if (x2 - x1 > 10) items.push({ t: "line", x1, y1, x2, y2, w: 1.1, arrow: true });
@@ -6699,7 +6720,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     return out;
   }
   function regionFigure(lines, opts = {}) {
-    var _a8, _b, _c, _d;
+    var _a9, _b, _c, _d;
     const hs = lines.filter((s) => s.trim()).map(parseInequality);
     if (!hs.length) throw new Error("Nh\u1EADp \xEDt nh\u1EA5t m\u1ED9t b\u1EA5t ph\u01B0\u01A1ng tr\xECnh");
     const pts = [[0, 0]];
@@ -6713,7 +6734,7 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       if (Math.abs(h.b) > 1e-12) pts.push([0, -h.c / h.b]);
     }
     const xs = pts.map((p2) => p2[0]), ys = pts.map((p2) => p2[1]);
-    let xmin = (_a8 = opts.xmin) != null ? _a8 : Math.min(...xs), xmax = (_b = opts.xmax) != null ? _b : Math.max(...xs), ymin = (_c = opts.ymin) != null ? _c : Math.min(...ys), ymax = (_d = opts.ymax) != null ? _d : Math.max(...ys);
+    let xmin = (_a9 = opts.xmin) != null ? _a9 : Math.min(...xs), xmax = (_b = opts.xmax) != null ? _b : Math.max(...xs), ymin = (_c = opts.ymin) != null ? _c : Math.min(...ys), ymax = (_d = opts.ymax) != null ? _d : Math.max(...ys);
     if (opts.xmin === void 0) {
       const pad = Math.max(1, (xmax - xmin) * 0.25);
       xmin -= pad;
@@ -7390,8 +7411,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
           this.items.push({ t: "poly", pts, closed: true, sw: o.w || 1.5, fill: o.fill, color: o.color, dash: o.hidden ? "5 4" : "" });
         }
         circle(c, r, o = {}) {
-          var _a8;
-          this.items.push({ t: "ellipse", cx: c[0], cy: c[1], rx: r, ry: (_a8 = o.ry) != null ? _a8 : r, sw: o.w || 1.5, dash: o.hidden ? "5 4" : "", fill: o.fill, color: o.color });
+          var _a9;
+          this.items.push({ t: "ellipse", cx: c[0], cy: c[1], rx: r, ry: (_a9 = o.ry) != null ? _a9 : r, sw: o.w || 1.5, dash: o.hidden ? "5 4" : "", fill: o.fill, color: o.color });
         }
         dot(p2) {
           this.items.push({ t: "dot", x: p2[0], y: p2[1], r: 2.4 });
@@ -7425,8 +7446,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       nm = (src, fallback) => {
         const l = String(src || "").split(/[\s,;]+/).filter(Boolean);
         return fallback.map((f, i) => {
-          var _a8;
-          return (_a8 = l[i]) != null ? _a8 : f;
+          var _a9;
+          return (_a9 = l[i]) != null ? _a9 : f;
         });
       };
       proj = (x, y, z, s = 1) => [x + 0.5 * z * Math.cos(Math.PI / 4) * s, -y - 0.5 * z * Math.sin(Math.PI / 4) * s];
@@ -8932,8 +8953,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     }
     $2("fig-kind").addEventListener("change", () => show($2("fig-kind").value));
     const title = () => {
-      var _a8;
-      return CATALOGS[kind] ? ((_a8 = CATALOGS[kind].find((x) => x.id === $2("g-kind").value)) == null ? void 0 : _a8.label) || "H\xECnh v\u1EBD" : { bbt: "B\u1EA3ng bi\u1EBFn thi\xEAn", plot: "\u0110\u1ED3 th\u1ECB h\xE0m s\u1ED1", region: "Mi\u1EC1n nghi\u1EC7m" }[kind];
+      var _a9;
+      return CATALOGS[kind] ? ((_a9 = CATALOGS[kind].find((x) => x.id === $2("g-kind").value)) == null ? void 0 : _a9.label) || "H\xECnh v\u1EBD" : { bbt: "B\u1EA3ng bi\u1EBFn thi\xEAn", plot: "\u0110\u1ED3 th\u1ECB h\xE0m s\u1ED1", region: "Mi\u1EC1n nghi\u1EC7m" }[kind];
     };
     $2("fig-insert").addEventListener("click", async () => {
       try {
@@ -10285,8 +10306,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
         }
       };
       cmNum = (t) => {
-        var _a8;
-        return parseFloat(t) * ({ cm: 1, mm: 0.1, pt: 0.0352, em: 0.4 }[(_a8 = /[a-z]+$/.exec(t)) == null ? void 0 : _a8[0]] || 1);
+        var _a9;
+        return parseFloat(t) * ({ cm: 1, mm: 0.1, pt: 0.0352, em: 0.4 }[(_a9 = /[a-z]+$/.exec(t)) == null ? void 0 : _a9[0]] || 1);
       };
       SHAPE_TIKZ = {
         shapecircle: (f) => `\\filldraw[fill=${f || "blue!60"},line width=0.8pt] (0,0) circle (0.34);`,
@@ -10296,8 +10317,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       };
       FBOX_BLANK = /^(?:\s|\\ |\\quad|\\rule\{[^}]*\}\{[^}]*\}|\\hspace\*?\{[^}]*\}|\\phantom\{[^}]*\})*$/;
       para = (inner, o = {}) => {
-        var _a8, _b;
-        return `<w:p><w:pPr>${o.keepNext ? "<w:keepNext/>" : ""}${o.pageBreakBefore ? "<w:pageBreakBefore/>" : ""}${o.shade ? `<w:shd w:val="clear" w:color="auto" w:fill="${o.shade}"/>` : ""}${o.pbdr ? `<w:pBdr>${o.pbdr}</w:pBdr>` : ""}${o.border ? '<w:pBdr><w:top w:val="single" w:sz="8" w:space="2" w:color="444444"/><w:left w:val="single" w:sz="8" w:space="4" w:color="444444"/><w:bottom w:val="single" w:sz="8" w:space="2" w:color="444444"/><w:right w:val="single" w:sz="8" w:space="4" w:color="444444"/></w:pBdr>' : ""}<w:spacing w:before="${(_a8 = o.before) != null ? _a8 : 0}" w:after="${(_b = o.after) != null ? _b : 60}"${o.line ? ` w:line="${o.line}" w:lineRule="auto"` : ""}/>${o.ind ? `<w:ind w:left="${o.ind}"/>` : ""}${o.jc ? `<w:jc w:val="${o.jc}"/>` : ""}</w:pPr>${inner}</w:p>`;
+        var _a9, _b;
+        return `<w:p><w:pPr>${o.keepNext ? "<w:keepNext/>" : ""}${o.pageBreakBefore ? "<w:pageBreakBefore/>" : ""}${o.shade ? `<w:shd w:val="clear" w:color="auto" w:fill="${o.shade}"/>` : ""}${o.pbdr ? `<w:pBdr>${o.pbdr}</w:pBdr>` : ""}${o.border ? '<w:pBdr><w:top w:val="single" w:sz="8" w:space="2" w:color="444444"/><w:left w:val="single" w:sz="8" w:space="4" w:color="444444"/><w:bottom w:val="single" w:sz="8" w:space="2" w:color="444444"/><w:right w:val="single" w:sz="8" w:space="4" w:color="444444"/></w:pBdr>' : ""}<w:spacing w:before="${(_a9 = o.before) != null ? _a9 : 0}" w:after="${(_b = o.after) != null ? _b : 60}"${o.line ? ` w:line="${o.line}" w:lineRule="auto"` : ""}/>${o.ind ? `<w:ind w:left="${o.ind}"/>` : ""}${o.jc ? `<w:jc w:val="${o.jc}"/>` : ""}</w:pPr>${inner}</w:p>`;
       };
       NOB2 = '<w:tblBorders><w:top w:val="nil"/><w:left w:val="nil"/><w:bottom w:val="nil"/><w:right w:val="nil"/><w:insideH w:val="nil"/><w:insideV w:val="nil"/></w:tblBorders>';
       table = (rows, cols, widths) => `<w:tbl><w:tblPr><w:tblW w:w="5000" w:type="pct"/>${NOB2}<w:tblLayout w:type="fixed"/><w:tblCellMar><w:left w:w="60" w:type="dxa"/><w:right w:w="60" w:type="dxa"/></w:tblCellMar></w:tblPr><w:tblGrid>${widths.map((w) => `<w:gridCol w:w="${w}"/>`).join("")}</w:tblGrid>${rows.map((r) => `<w:tr><w:trPr><w:cantSplit/></w:trPr>${r.map((cell4, k) => `<w:tc><w:tcPr><w:tcW w:w="${widths[k]}" w:type="dxa"/></w:tcPr>${cell4}</w:tc>`).join("")}</w:tr>`).join("")}</w:tbl>`;
@@ -10495,8 +10516,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       $2("w-out").innerHTML = '<span class="ok">\u0110\xE3 \u0111\u1ED5i m\xE3 \u0111\u1EC1; b\u1EA5m Ch\xE8n \u0111\u1EC3 t\u1EA1o phi\u1EBFu m\u1EDBi.</span>';
     });
     $2("w-default").addEventListener("click", () => root.querySelectorAll("#w-topics input[data-t]").forEach((c) => {
-      var _a8;
-      c.checked = (_a8 = available.find((t) => t.id === c.dataset.t)) == null ? void 0 : _a8.def;
+      var _a9;
+      c.checked = (_a9 = available.find((t) => t.id === c.dataset.t)) == null ? void 0 : _a9.def;
     }));
     $2("w-all").addEventListener("click", () => root.querySelectorAll("#w-topics input[data-t]").forEach((c) => {
       c.checked = true;
@@ -10565,8 +10586,8 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     switch (n.k) {
       case "run":
         return [...n.text].map((c) => {
-          var _a8;
-          return c === " " || c === "\xA0" ? " " : (_a8 = CHARS2[c]) != null ? _a8 : GREEK2[c] || c;
+          var _a9;
+          return c === " " || c === "\xA0" ? " " : (_a9 = CHARS2[c]) != null ? _a9 : GREEK2[c] || c;
         }).join("").replace(/\{,\}/g, ".");
       case "f":
         return `((${plain(n.num)})/(${plain(n.den)}))`;
@@ -10866,8 +10887,8 @@ def run(raw):
     }
     $2("c-load").addEventListener("click", () => loadFromWord(true));
     document.addEventListener("texcraft:selection", () => {
-      var _a8;
-      if (!$2("c-auto").checked || !((_a8 = root.closest("section")) == null ? void 0 : _a8.classList.contains("active"))) return;
+      var _a9;
+      if (!$2("c-auto").checked || !((_a9 = root.closest("section")) == null ? void 0 : _a9.classList.contains("active"))) return;
       if (document.activeElement === $2("c-expr")) return;
       loadFromWord(false);
     });
@@ -10947,7 +10968,7 @@ def run(raw):
     return map;
   }
   function runHtml(run4, images, skip) {
-    var _a8;
+    var _a9;
     if (/<w:object\b|<w:pict\b|<mc:AlternateContent|<w:drawing/.test(run4)) {
       if (skip.n) return "";
       const blip = /<a:blip\b[^>]*r:embed="([^"]+)"/.exec(run4) || /<v:imagedata\b[^>]*r:id="([^"]+)"/.exec(run4);
@@ -10959,7 +10980,7 @@ def run(raw):
       }
       return '<span class="miss">[h\xECnh]</span>';
     }
-    const rpr2 = ((_a8 = /<w:rPr>([\s\S]*?)<\/w:rPr>/.exec(run4)) == null ? void 0 : _a8[1]) || "";
+    const rpr2 = ((_a9 = /<w:rPr>([\s\S]*?)<\/w:rPr>/.exec(run4)) == null ? void 0 : _a9[1]) || "";
     const on = (tag) => new RegExp(`<w:${tag}\\b(?![^>]*w:val="(?:0|false|none)")`).test(rpr2);
     const sup2 = /<w:vertAlign w:val="superscript"/.test(rpr2), sub4 = /<w:vertAlign w:val="subscript"/.test(rpr2);
     let out = "";
@@ -11369,14 +11390,14 @@ renderStart();
   function answerRows(template3, versions) {
     const BS4 = "\\";
     const cell4 = (a, ascii) => {
-      var _a8;
+      var _a9;
       if (a.kind === "tf") return a.tf ? a.tf.map((x) => x === "\u0110" && ascii ? "D" : x).join(ascii ? "," : "") : "";
-      return (_a8 = a.value) != null ? _a8 : "";
+      return (_a9 = a.value) != null ? _a9 : "";
     };
     const layout2 = versions[0].answers;
     if (template3 === "giasu") {
       const header2 = [`C\xE2u${BS4}M\xE3 \u0111\u1EC1`, ...versions.map((v) => v.code)];
-      return [header2, ...layout2.map((_a8, i) => [String(i + 1), ...versions.map((v) => v.answers[i] ? cell4(v.answers[i], false) : "")])];
+      return [header2, ...layout2.map((_a9, i) => [String(i + 1), ...versions.map((v) => v.answers[i] ? cell4(v.answers[i], false) : "")])];
     }
     const header = [`\u0110\u1EC1${BS4}c\xE2u`], perVersion = versions.map(() => []);
     const mc = layout2.map((a, i) => ({ a, i })).filter((x) => x.a.kind === "mc" || x.a.kind === "other");
@@ -11385,16 +11406,16 @@ renderStart();
     for (const { a, i } of mc) {
       header.push(String(a.number));
       versions.forEach((v, k) => {
-        var _a8, _b;
-        return perVersion[k].push((_b = (_a8 = v.answers[i]) == null ? void 0 : _a8.value) != null ? _b : "");
+        var _a9, _b;
+        return perVersion[k].push((_b = (_a9 = v.answers[i]) == null ? void 0 : _a9.value) != null ? _b : "");
       });
     }
     for (const { a, i } of tf) {
       "abcd".split("").forEach((l, j) => {
         header.push(`${a.number}${l}`);
         versions.forEach((v, k) => {
-          var _a8;
-          const t = (_a8 = v.answers[i]) == null ? void 0 : _a8.tf;
+          var _a9;
+          const t = (_a9 = v.answers[i]) == null ? void 0 : _a9.tf;
           perVersion[k].push(t ? t[j] === "\u0110" ? "D" : t[j] || "" : "");
         });
       });
@@ -11402,8 +11423,8 @@ renderStart();
     for (const { a, i } of short) {
       header.push(String(a.number));
       versions.forEach((v, k) => {
-        var _a8, _b;
-        return perVersion[k].push((_b = (_a8 = v.answers[i]) == null ? void 0 : _a8.value) != null ? _b : "");
+        var _a9, _b;
+        return perVersion[k].push((_b = (_a9 = v.answers[i]) == null ? void 0 : _a9.value) != null ? _b : "");
       });
     }
     return [header, ...versions.map((v, k) => [v.code, ...perVersion[k]])];
@@ -11716,7 +11737,7 @@ renderStart();
     return { media, cx, cy };
   }
   function collect(kids, ctx, st, out) {
-    var _a8;
+    var _a9;
     for (const c of kids) {
       if (typeof c !== "string") continue;
       if (/^<m:oMath(Para)?[\s>]/.test(c)) {
@@ -11733,7 +11754,7 @@ renderStart();
       } else if (/^<w:r[\s>]/.test(c)) {
         const pic = runPicture(c, ctx);
         if (pic) out.imgs.push(pic);
-        const rpr2 = ((_a8 = /<w:rPr>([\s\S]*?)<\/w:rPr>/.exec(c)) == null ? void 0 : _a8[1]) || "";
+        const rpr2 = ((_a9 = /<w:rPr>([\s\S]*?)<\/w:rPr>/.exec(c)) == null ? void 0 : _a9[1]) || "";
         const script3 = /<w:vertAlign w:val="superscript"/.test(rpr2) ? sup : /<w:vertAlign w:val="subscript"/.test(rpr2) ? sub3 : null;
         let t = "";
         for (const m of c.matchAll(/<w:t\b[^>]*>([^<]*)<\/w:t>|<w:tab\/>|<w:br\b[^>]*\/>|<w:noBreakHyphen\/>/g)) {
@@ -12482,7 +12503,7 @@ ${contentTypesOverrides}
 
   // src/answer-qr.js
   function examKeys(version, warnings = []) {
-    var _a8;
+    var _a9;
     const p1 = [], p2 = [], p3 = [];
     for (const a of version.answers) {
       if (a.kind === "mc" || a.kind === "other") {
@@ -12498,7 +12519,7 @@ ${contentTypesOverrides}
           warnings.push(`M\xE3 \u0111\u1EC1 ${version.code}: c\xE2u ${a.number} (ph\u1EA7n II) ch\u01B0a c\xF3 \u0111\xE1p \xE1n \u2014 ghi XXXX.`);
         }
       } else if (a.kind === "short") {
-        const v = String((_a8 = a.value) != null ? _a8 : "").trim().replace(/\s+/g, "");
+        const v = String((_a9 = a.value) != null ? _a9 : "").trim().replace(/\s+/g, "");
         if (/^-?(?:\d+(?:[.,]\d+)?|[.,]\d+)$/.test(v)) p3.push(v);
         else {
           p3.push("X");
@@ -12801,8 +12822,8 @@ ${contentTypesOverrides}
     };
     const readForm = () => Object.fromEntries(FORM_KEYS.map((k) => [k, $2("ex-f-" + k).value]));
     const fillForm = (f) => FORM_KEYS.forEach((k) => {
-      var _a8;
-      $2("ex-f-" + k).value = (_a8 = f[k]) != null ? _a8 : "";
+      var _a9;
+      $2("ex-f-" + k).value = (_a9 = f[k]) != null ? _a9 : "";
     });
     const saveForm = () => {
       try {
@@ -12908,8 +12929,8 @@ ${contentTypesOverrides}
       const at2 = new Map(mc.map((g) => [String(g.code), new Map(g.items.map((i) => [i.number, i.value]))]));
       const nums = [...new Set(mc.flatMap((g) => g.items.map((i) => i.number)))].sort((a, b) => a - b);
       return `<div class="scroll"><table><thead><tr><th>${esc12(word2)}</th>${codes.map((c) => `<th>${esc12(c)}</th>`).join("")}</tr></thead><tbody>${nums.map((n) => `<tr><td><b>${n}</b></td>${codes.map((c) => {
-        var _a8;
-        return `<td>${esc12((_a8 = at2.get(c).get(n)) != null ? _a8 : "?")}</td>`;
+        var _a9;
+        return `<td>${esc12((_a9 = at2.get(c).get(n)) != null ? _a9 : "?")}</td>`;
       }).join("")}</tr>`).join("")}</tbody></table></div>`;
     }
     $2("ex-key").addEventListener("click", async () => {
@@ -13042,12 +13063,12 @@ ${contentTypesOverrides}
     $2("ex-pptx-theme").addEventListener("change", swatch);
     swatch();
     $2("ex-pptx-btn").addEventListener("click", async () => {
-      var _a8, _b, _c;
+      var _a9, _b, _c;
       const out = $2("ex-pptx-out");
       try {
         out.innerHTML = '<span class="muted">\u0110ang \u0111\u1ECDc t\xE0i li\u1EC7u v\xE0 t\u1EA1o file PowerPoint\u2026</span>';
         let pkg;
-        const srcCode = (_a8 = $2("ex-pptx-source")) == null ? void 0 : _a8.value;
+        const srcCode = (_a9 = $2("ex-pptx-source")) == null ? void 0 : _a9.value;
         if (srcCode && srcCode !== "current" && lastVersions) {
           const found = lastVersions.versions.find((v) => v.code === srcCode);
           pkg = found ? found.pkg : (await preparedBody()).pkg;
@@ -13828,8 +13849,8 @@ ${contentTypesOverrides}
     return out;
   }
   function insertSnippet(field5, snippet) {
-    var _a8, _b;
-    const v = field5.value, s = (_a8 = field5.selectionStart) != null ? _a8 : v.length, e3 = (_b = field5.selectionEnd) != null ? _b : s;
+    var _a9, _b;
+    const v = field5.value, s = (_a9 = field5.selectionStart) != null ? _a9 : v.length, e3 = (_b = field5.selectionEnd) != null ? _b : s;
     const selected = v.slice(s, e3);
     let text = snippet, caret;
     const at2 = text.indexOf("@");
@@ -13966,8 +13987,10 @@ ${contentTypesOverrides}
     };
     return {
       active: () => on,
+      focused: () => !!mf && (document.activeElement === mf || mf.contains(document.activeElement)),
       pull,
       async setActive(v) {
+        var _a9;
         on = v;
         host.hidden = !v;
         textarea.hidden = v;
@@ -13975,13 +13998,13 @@ ${contentTypesOverrides}
           await ensure();
           if (!on) return;
           mf.setValue(textarea.value, { silenceNotifications: true });
-          mf.focus();
+          if ((_a9 = host.closest("section")) == null ? void 0 : _a9.classList.contains("active")) mf.focus();
         }
       },
       async insert(snippet) {
-        var _a8;
+        var _a9;
         await ensure();
-        const hasSel = (((_a8 = mf.selection) == null ? void 0 : _a8.ranges) || []).some(([a, b]) => a !== b);
+        const hasSel = (((_a9 = mf.selection) == null ? void 0 : _a9.ranges) || []).some(([a, b]) => a !== b);
         mf.insert(toMathliveInsert(snippet, hasSel), { format: "latex", selectionMode: "placeholder", focus: true });
       },
       focus: () => mf && mf.focus()
@@ -14037,11 +14060,12 @@ ${contentTypesOverrides}
   var state2 = { scanned: null, lastBackup: null, examLoaded: false };
   var lastPreview = [];
   var FULL2 = /[?&]edition=full\b/.test(location.search);
-  var LITE_TABS = ["eq", "exam", "figures", "about"];
+  var LITE_TABS = ["eq", "editor", "exam", "figures", "about"];
   if (!FULL2) document.querySelectorAll("nav button").forEach((b) => {
     if (!LITE_TABS.includes(b.dataset.tab)) b.remove();
   });
-  function switchTab(name) {
+  function switchTab(name, followSelection = true) {
+    var _a9;
     if (!FULL2 && !LITE_TABS.includes(name)) name = "eq";
     const b = document.querySelector(`nav button[data-tab="${name}"]`);
     if (!b) return;
@@ -14067,7 +14091,7 @@ ${contentTypesOverrides}
       state2.calcLoaded = true;
       Promise.resolve().then(() => (init_calc_ui(), calc_ui_exports)).then((m) => m.mountCalc($("calc-root"), word_io_exports, { openEditor: (latex) => {
         $("editor-latex").value = latex;
-        switchTab("editor");
+        switchTab("editor", false);
         renderEditorPreview();
       } })).catch((e3) => {
         $("calc-root").textContent = "Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c m\xF4-\u0111un t\xEDnh to\xE1n: " + e3.message;
@@ -14086,11 +14110,9 @@ ${contentTypesOverrides}
       });
     }
     if (name === "editor") {
+      initEditor();
       renderEditorPreview();
-      if ($("editor-latex") && !$("editor-latex").value.trim()) {
-        loadFormulaFromWord(false).catch(() => {
-        });
-      }
+      if (followSelection && ((_a9 = $("editor-auto")) == null ? void 0 : _a9.checked)) onSelectionChanged();
     }
   }
   function checkUrlTab() {
@@ -14170,19 +14192,19 @@ ${contentTypesOverrides}
   mountMtSettings($("mt-settings-convert"));
   mountMtSettings($("mt-settings-editor"), { onChange: () => renderEditorPreview() });
   var syncEditorFormat = () => {
-    var _a8;
-    const mt = ((_a8 = document.querySelector("input[name=editor-format]:checked")) == null ? void 0 : _a8.value) === "mathtype";
+    var _a9;
+    const mt = ((_a9 = document.querySelector("input[name=editor-format]:checked")) == null ? void 0 : _a9.value) === "mathtype";
     $("mt-details").hidden = !mt;
     renderEditorPreview();
   };
   document.querySelectorAll("input[name=editor-format]").forEach((r) => r.addEventListener("change", syncEditorFormat));
   var convSrc = () => {
-    var _a8;
-    return ((_a8 = $("conv-src")) == null ? void 0 : _a8.value) || "mathtype";
+    var _a9;
+    return ((_a9 = $("conv-src")) == null ? void 0 : _a9.value) || "mathtype";
   };
   var convDst = () => {
-    var _a8;
-    return ((_a8 = $("conv-dst")) == null ? void 0 : _a8.value) || "word";
+    var _a9;
+    return ((_a9 = $("conv-dst")) == null ? void 0 : _a9.value) || "word";
   };
   var SRC_KIND = { mathtype: "mathtype", latex: "latex", word: "native" };
   var CONV_HINTS = {
@@ -14310,9 +14332,9 @@ ${contentTypesOverrides}
     previewTimer = setTimeout(renderEditorPreviewNow, document.documentElement.classList.contains("lite") ? 220 : 60);
   }
   function renderEditorPreviewNow() {
-    var _a8, _b, _c, _d, _e;
+    var _a9, _b, _c, _d, _e;
     if (visual && visual.active()) visual.pull();
-    const tex = ((_a8 = $("editor-latex")) == null ? void 0 : _a8.value.trim()) || "";
+    const tex = ((_a9 = $("editor-latex")) == null ? void 0 : _a9.value.trim()) || "";
     const previewEl = $("editor-preview");
     if (!previewEl) return;
     if (!tex) {
@@ -14336,10 +14358,10 @@ ${contentTypesOverrides}
     }
   }
   function insertSymbolAtCursor(text) {
-    var _a8, _b;
+    var _a9, _b;
     const el = $("editor-latex");
     if (!el) return;
-    const start = (_a8 = el.selectionStart) != null ? _a8 : el.value.length;
+    const start = (_a9 = el.selectionStart) != null ? _a9 : el.value.length;
     const end = (_b = el.selectionEnd) != null ? _b : el.value.length;
     const before = el.value.slice(0, start);
     const after = el.value.slice(end);
@@ -14350,28 +14372,10 @@ ${contentTypesOverrides}
     renderEditorPreview();
   }
   async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent = () => true) {
-    var _a8, _b;
     const statusEl = $("editor-status");
     if (statusEl) statusEl.textContent = "\u0110ang \u0111\u1ECDc c\xF4ng th\u1EE9c t\u1EEB Word\u2026";
     try {
-      let ctx;
-      if (!picked) {
-        try {
-          ctx = await readCursorContext();
-        } catch (e3) {
-          ctx = {};
-          try {
-            ctx.selPkg = (_a8 = await readSelection()) == null ? void 0 : _a8.pkg;
-          } catch (e4) {
-          }
-          try {
-            ctx.paraPkg = (_b = (await readParagraphs({ kind: "selection" }))[0]) == null ? void 0 : _b.pkg;
-          } catch (e4) {
-          }
-        }
-        if (!ctx.selPkg && !ctx.paraPkg) throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c v\xF9ng ch\u1ECDn t\u1EEB Word.");
-        picked = pickEquation(ctx);
-      }
+      if (!picked) picked = pickEquation(await readCursorContext());
       if (!isCurrent()) return;
       const r = picked;
       if (!r.eq) {
@@ -14382,7 +14386,8 @@ ${contentTypesOverrides}
       const target = r.eq;
       $("editor-latex").value = target.latex;
       if ($("editor-display")) $("editor-display").checked = !target.inline;
-      renderEditorPreview();
+      clearTimeout(previewTimer);
+      renderEditorPreviewNow();
       const kindLabel = target.kind === "mathtype" ? "MathType" : target.kind === "native" ? "Word Equation" : "LaTeX";
       const where = r.count > 1 ? ` \u2014 c\xF4ng th\u1EE9c ${r.index + 1}/${r.count}${r.how === "cursor" ? " (g\u1EA7n con tr\u1ECF nh\u1EA5t)" : ""}` : "";
       if (statusEl) statusEl.innerHTML = `<span class="ok">\u0110\xE3 n\u1EA1p c\xF4ng th\u1EE9c (${kindLabel})${where}:</span> <code style="font-size:11px">${esc13(target.latex)}</code>`;
@@ -14391,8 +14396,8 @@ ${contentTypesOverrides}
     }
   }
   async function applyFormulaToWord() {
-    var _a8, _b, _c, _d;
-    const tex = (_a8 = $("editor-latex")) == null ? void 0 : _a8.value.trim();
+    var _a9, _b, _c, _d;
+    const tex = (_a9 = $("editor-latex")) == null ? void 0 : _a9.value.trim();
     const msgEl = $("editor-msg");
     if (!tex) {
       if (msgEl) msgEl.innerHTML = '<span class="bad">Vui l\xF2ng nh\u1EADp m\xE3 LaTeX tr\u01B0\u1EDBc khi c\u1EADp nh\u1EADt.</span>';
@@ -14408,6 +14413,9 @@ ${contentTypesOverrides}
       if (msgEl) msgEl.innerHTML = `<span class="ok">\u0110\xE3 c\u1EADp nh\u1EADt c\xF4ng th\u1EE9c v\xE0o Word th\xE0nh c\xF4ng (${asMathType ? "\u0111\u1ED1i t\u01B0\u1EE3ng MathType" : "chu\u1EA9n Word Equation"}).</span>`;
     } catch (e3) {
       if (msgEl) msgEl.innerHTML = `<span class="bad">L\u1ED7i: ${esc13(e3.message)}</span>`;
+    } finally {
+      ignoreAutoUntil = 0;
+      onSelectionChanged();
     }
   }
   document.querySelectorAll(".sym-tab-btn").forEach((btn) => {
@@ -14454,12 +14462,12 @@ ${contentTypesOverrides}
     }
   });
   $("btn-env").addEventListener("click", () => {
-    var _a8, _b, _c;
+    var _a9, _b, _c;
     const lines = [];
     lines.push("Office c\xF3: " + (typeof Office !== "undefined") + ", Word c\xF3: " + (typeof Word !== "undefined"));
     try {
       const c = Office.context;
-      lines.push("host=" + ((_a8 = c.diagnostics) == null ? void 0 : _a8.host) + " platform=" + ((_b = c.diagnostics) == null ? void 0 : _b.platform) + " version=" + ((_c = c.diagnostics) == null ? void 0 : _c.version));
+      lines.push("host=" + ((_a9 = c.diagnostics) == null ? void 0 : _a9.host) + " platform=" + ((_b = c.diagnostics) == null ? void 0 : _b.platform) + " version=" + ((_c = c.diagnostics) == null ? void 0 : _c.version));
       for (const v of ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6"]) lines.push(`WordApi ${v}: ${c.requirements.isSetSupported("WordApi", v)}`);
     } catch (e3) {
       lines.push("l\u1ED7i: " + e3.message);
@@ -14476,8 +14484,8 @@ ${contentTypesOverrides}
         out.push(`\u2014 \u0111o\u1EA1n ${it.index}: g\xF3i ${it.pkg.length} k\xFD t\u1EF1, ${names.length} ph\u1EA7n:
   ${names.join("\n  ")}`);
         out.push(`  c\xF4ng th\u1EE9c nh\u1EADn ra: ${s.equations.map((e3) => {
-          var _a8;
-          return `${e3.kind}:${(_a8 = e3.latex) != null ? _a8 : "\u2717 " + e3.error}`;
+          var _a9;
+          return `${e3.kind}:${(_a9 = e3.latex) != null ? _a9 : "\u2717 " + e3.error}`;
         }).join(" | ") || "kh\xF4ng c\xF3"}`);
         const body = /<w:body>([\s\S]*?)<\/w:body>/.exec(it.pkg);
         out.push("  w:body (400 k\xFD t\u1EF1 \u0111\u1EA7u): " + (body ? body[1].slice(0, 400) : "?"));
@@ -14507,34 +14515,80 @@ ${contentTypesOverrides}
   var lastAutoSig = "";
   var ignoreAutoUntil = 0;
   var selectionVersion = 0;
+  var autoReading = false;
+  var autoPending = false;
+  var canAutoLoad = () => {
+    var _a9, _b;
+    return ((_a9 = $("editor-auto")) == null ? void 0 : _a9.checked) && ((_b = $("tab-editor")) == null ? void 0 : _b.classList.contains("active")) && !(document.hasFocus() && (document.activeElement === $("editor-latex") || (visual == null ? void 0 : visual.focused())));
+  };
+  async function refreshAutoSelection(version) {
+    if (!canAutoLoad() || Date.now() < ignoreAutoUntil) return;
+    if (autoReading) {
+      autoPending = true;
+      return;
+    }
+    autoPending = false;
+    autoReading = true;
+    try {
+      const ctx = await readCursorContext();
+      if (version !== selectionVersion || !canAutoLoad() || Date.now() < ignoreAutoUntil) return;
+      const r = pickEquation(ctx);
+      if (!r.eq) return;
+      if (r.eq.latex === lastAutoSig && $("editor-latex").value === r.eq.latex) return;
+      lastAutoSig = r.eq.latex;
+      await loadFormulaFromWord(false, r, () => version === selectionVersion && canAutoLoad());
+    } catch (e3) {
+    } finally {
+      autoReading = false;
+      if (autoPending) {
+        autoPending = false;
+        if (autoTimer === null) refreshAutoSelection(selectionVersion);
+      }
+    }
+  }
   function onSelectionChanged() {
     const version = ++selectionVersion;
     clearTimeout(autoTimer);
+    autoTimer = null;
     if (Date.now() < ignoreAutoUntil) return;
-    autoTimer = setTimeout(async () => {
-      var _a8, _b, _c;
+    autoTimer = setTimeout(() => {
+      autoTimer = null;
       document.dispatchEvent(new CustomEvent("texcraft:selection"));
-      if (!((_a8 = $("editor-auto")) == null ? void 0 : _a8.checked) || !((_b = $("tab-editor")) == null ? void 0 : _b.classList.contains("active"))) return;
-      if (document.hasFocus() && document.activeElement === $("editor-latex")) return;
-      try {
-        const r = pickEquation(await readCursorContext());
-        if (version !== selectionVersion || !((_c = $("tab-editor")) == null ? void 0 : _c.classList.contains("active"))) return;
-        if (document.hasFocus() && (document.activeElement === $("editor-latex") || (visual == null ? void 0 : visual.active()))) return;
-        if (!r.eq) return;
-        if (r.eq.latex === lastAutoSig && $("editor-latex").value === r.eq.latex) return;
-        lastAutoSig = r.eq.latex;
-        await loadFormulaFromWord(false, r, () => version === selectionVersion);
-      } catch (e3) {
-      }
-    }, 350);
+      return refreshAutoSelection(version);
+    }, 80);
   }
+  var selectionWatcherInstalled = false;
+  var selectionWatcherPending = false;
+  var selectionWatcherRetries = 0;
   function installSelectionWatcher() {
-    if (!FULL2) return;
+    var _a9, _b;
+    if (selectionWatcherInstalled || selectionWatcherPending) return;
+    const retry = () => {
+      selectionWatcherPending = false;
+      if (++selectionWatcherRetries <= 3) setTimeout(installSelectionWatcher, 1e3);
+    };
     try {
-      Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged);
+      if (typeof Office === "undefined" || !((_b = (_a9 = Office.context) == null ? void 0 : _a9.document) == null ? void 0 : _b.addHandlerAsync)) {
+        retry();
+        return;
+      }
+      selectionWatcherPending = true;
+      Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged, (result) => {
+        selectionWatcherPending = false;
+        if (result.status === Office.AsyncResultStatus.Failed) {
+          retry();
+          return;
+        }
+        selectionWatcherInstalled = true;
+        onSelectionChanged();
+      });
     } catch (e3) {
+      retry();
     }
   }
+  window.addEventListener("blur", onSelectionChanged);
+  var _a7;
+  (_a7 = $("editor-auto")) == null ? void 0 : _a7.addEventListener("change", onSelectionChanged);
   function requestStartupLoad() {
     try {
       if (Office.addin && Office.addin.setStartupBehavior) Office.addin.setStartupBehavior(Office.StartupBehavior.load);
@@ -14542,9 +14596,9 @@ ${contentTypesOverrides}
     }
   }
   function registerRibbonActions() {
-    var _a8;
+    var _a9;
     try {
-      if (!((_a8 = Office.actions) == null ? void 0 : _a8.associate)) return;
+      if (!((_a9 = Office.actions) == null ? void 0 : _a9.associate)) return;
       for (const t of ["eq", "editor", "exam", "about", "figures", "calc", "worksheet"]) {
         Office.actions.associate("showTab_" + t, async () => {
           switchTab(t);
@@ -14558,15 +14612,19 @@ ${contentTypesOverrides}
     }
   }
   async function boot() {
-    var _a8;
+    var _a9;
     if (typeof Office !== "undefined" && Office.onReady) {
       try {
-        await Promise.race([Office.onReady(), new Promise((_r, rej) => setTimeout(() => rej(new Error("timeout")), 4e3))]);
+        const ready2 = Office.onReady().then(() => {
+          installSelectionWatcher();
+          registerRibbonActions();
+        });
+        await Promise.race([ready2, new Promise((_r, rej) => setTimeout(() => rej(new Error("timeout")), 4e3))]);
       } catch (e3) {
       }
       registerRibbonActions();
     }
-    if (!hasWord() || typeof Office !== "undefined" && !((_a8 = Office.context) == null ? void 0 : _a8.host)) {
+    if (!hasWord() || typeof Office !== "undefined" && !((_a9 = Office.context) == null ? void 0 : _a9.host)) {
       const note = document.createElement("div");
       note.className = "notice";
       try {
@@ -14582,12 +14640,14 @@ ${contentTypesOverrides}
       if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $("apply-kbd").textContent = "\u2318\u21A9";
     } catch (e3) {
     }
-    if (FULL2) initEditor();
     installSelectionWatcher();
     requestStartupLoad();
     checkUrlTab();
   }
+  var editorInitialized = false;
   function initEditor() {
+    if (editorInitialized) return;
+    editorInitialized = true;
     attachLatexAutocomplete($("editor-latex"), { onChange: () => renderEditorPreview() });
     visual = createVisualEditor({ host: $("editor-visual"), textarea: $("editor-latex"), onChange: () => renderEditorPreview() });
     mountEditorToolbar($("editor-toolbar"), $("editor-latex"), { visual });
@@ -14641,8 +14701,8 @@ ${contentTypesOverrides}
       if (note) note.textContent = "Kh\xF4ng b\u1EADt \u0111\u01B0\u1EE3c ch\u1EBF \u0111\u1ED9 offline: " + e3.message;
     }
   }
-  var _a7;
-  (_a7 = $("btn-offline-sympy")) == null ? void 0 : _a7.addEventListener("click", async () => {
+  var _a8;
+  (_a8 = $("btn-offline-sympy")) == null ? void 0 : _a8.addEventListener("click", async () => {
     const st = $("offline-sympy-status");
     try {
       const m = await Promise.resolve().then(() => (init_sympy_bridge(), sympy_bridge_exports));

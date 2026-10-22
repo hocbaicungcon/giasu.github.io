@@ -19,14 +19,18 @@ const state = { scanned: null, lastBackup: null, examLoaded: false };
 let lastPreview = [];
 
 // ---------------------------------------------------------------- tabs
-// Public edition: only Công thức, Đề thi, Hình vẽ, Giới thiệu (light and quick on old Word). The full edition is opened with ?edition=full (see manifest-full.xml).
+// Public edition includes Soạn thảo for every teacher. Extra tools remain in ?edition=full (see manifest-full.xml).
 const FULL = /[?&]edition=full\b/.test(location.search);
-const LITE_TABS = ['eq', 'exam', 'figures', 'about'];
+const LITE_TABS = ['eq', 'editor', 'exam', 'figures', 'about'];
 if (!FULL) document.querySelectorAll('nav button').forEach((b) => { if (!LITE_TABS.includes(b.dataset.tab)) b.remove(); });
-function switchTab(name) {
+function switchTab(name, followSelection = true) {
   if (!FULL && !LITE_TABS.includes(name)) name = 'eq';
   const b = document.querySelector(`nav button[data-tab="${name}"]`);
   if (!b) return;
+  ++selectionVersion;
+  clearTimeout(autoTimer);
+  autoTimer = null;
+  autoPending = false;
   document.querySelectorAll('nav button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
   document.querySelectorAll('section').forEach((s) => s.classList.toggle('active', s.id === 'tab-' + name));
   try { b.scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch { /* old web view */ }
@@ -40,7 +44,7 @@ function switchTab(name) {
   }
   if (name === 'calc' && !state.calcLoaded) {
     state.calcLoaded = true;
-    import('./calc-ui.js').then((m) => m.mountCalc($('calc-root'), io, { openEditor: (latex) => { $('editor-latex').value = latex; switchTab('editor'); renderEditorPreview(); } })).catch((e) => { $('calc-root').textContent = 'Không tải được mô-đun tính toán: ' + e.message; });
+    import('./calc-ui.js').then((m) => m.mountCalc($('calc-root'), io, { openEditor: (latex) => { $('editor-latex').value = latex; switchTab('editor', false); renderEditorPreview(); } })).catch((e) => { $('calc-root').textContent = 'Không tải được mô-đun tính toán: ' + e.message; });
   }
   if (name === 'lms' && !state.lmsLoaded) {
     state.lmsLoaded = true;
@@ -51,10 +55,9 @@ function switchTab(name) {
     import('./exam-ui.js').then((m) => m.mountExam($('exam-root'), io)).catch((e) => { $('exam-root').textContent = 'Không tải được mô-đun đề thi: ' + e.message; });
   }
   if (name === 'editor') {
+    initEditor();
     renderEditorPreview();
-    if ($('editor-latex') && !$('editor-latex').value.trim()) {
-      loadFormulaFromWord(false).catch(() => {});
-    }
+    if (followSelection && $('editor-auto')?.checked) onSelectionChanged();
   }
 }
 
@@ -298,7 +301,13 @@ async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent =
   const statusEl = $('editor-status');
   if (statusEl) statusEl.textContent = 'Đang đọc công thức từ Word…';
   try {
-    if (!picked) picked = pickEquation(await io.readCursorContext());
+    if (!picked) {
+      const version = ++selectionVersion;
+      const draft = $('editor-latex').value;
+      const ctx = await io.readCursorContext();
+      if (version !== selectionVersion || applying || !$('tab-editor')?.classList.contains('active') || $('editor-latex').value !== draft) return;
+      picked = pickEquation(ctx);
+    }
     if (!isCurrent()) return;
     const r = picked;
     if (!r.eq) {
@@ -311,7 +320,8 @@ async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent =
     const target = r.eq;
     $('editor-latex').value = target.latex;
     if ($('editor-display')) $('editor-display').checked = !target.inline;
-    renderEditorPreview();
+    clearTimeout(previewTimer);
+    renderEditorPreviewNow();
     const kindLabel = target.kind === 'mathtype' ? 'MathType' : target.kind === 'native' ? 'Word Equation' : 'LaTeX';
     const where = r.count > 1 ? ` — công thức ${r.index + 1}/${r.count}${r.how === 'cursor' ? ' (gần con trỏ nhất)' : ''}` : '';
     if (statusEl) statusEl.innerHTML = `<span class="ok">Đã nạp công thức (${kindLabel})${where}:</span> <code style="font-size:11px">${esc(target.latex)}</code>`;
@@ -321,6 +331,7 @@ async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent =
 }
 
 async function applyFormulaToWord() {
+  if (applying) return;
   const tex = $('editor-latex')?.value.trim();
   const msgEl = $('editor-msg');
   if (!tex) {
@@ -328,15 +339,19 @@ async function applyFormulaToWord() {
     return;
   }
   if (msgEl) msgEl.textContent = 'Đang chèn vào Word…';
+  applying = true;
+  ++selectionVersion;
   try {
     const isDisplay = $('editor-display')?.checked ?? false;
     const asMathType = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype';
     const pkg = asMathType ? await makeMathTypePackage(tex, { render: browserRender, inline: !isDisplay, ...(await mtOptions()) }) : makeEquationPackage(latexToOmml(tex, { display: isDisplay }));
-    ignoreAutoUntil = Date.now() + 1200;
     await io.replaceSelection(pkg);
     if (msgEl) msgEl.innerHTML = `<span class="ok">Đã cập nhật công thức vào Word thành công (${asMathType ? 'đối tượng MathType' : 'chuẩn Word Equation'}).</span>`;
   } catch (e) {
     if (msgEl) msgEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
+  } finally {
+    applying = false;
+    onSelectionChanged();
   }
 }
 
@@ -411,35 +426,66 @@ $('copy-acct').addEventListener('click', async () => {
 
 // ---------------------------------------------------------------- boot (real Word, or the browser mock for development)
 // ---------------------------------------------------------------- auto-load the equation under the cursor
-let autoTimer = null, lastAutoSig = '', ignoreAutoUntil = 0, selectionVersion = 0;
+let autoTimer = null, lastAutoSig = '', selectionVersion = 0, applying = false;
+let autoReading = false, autoPending = false;
+const canAutoLoad = () => !applying && $('editor-auto')?.checked && $('tab-editor')?.classList.contains('active') &&
+  !(document.hasFocus() && (document.activeElement === $('editor-latex') || visual?.focused()));
+async function refreshAutoSelection(version) {
+  if (!canAutoLoad()) return;
+  if (autoReading) { autoPending = true; return; }
+  autoPending = false;
+  autoReading = true;
+  try {
+    const ctx = await io.readCursorContext();
+    if (version !== selectionVersion || !canAutoLoad()) return;
+    const r = pickEquation(ctx);
+    if (!r.eq) return;
+    const signature = JSON.stringify([r.eq.latex, r.eq.inline]);
+    if (signature === lastAutoSig && $('editor-latex').value === r.eq.latex && $('editor-display')?.checked === !r.eq.inline) return;
+    lastAutoSig = signature;
+    await loadFormulaFromWord(false, r, () => version === selectionVersion && canAutoLoad());
+  } catch { /* selection not readable: ignore */ }
+  finally {
+    autoReading = false;
+    if (autoPending) {
+      autoPending = false;
+      if (autoTimer === null) refreshAutoSelection(selectionVersion);
+    }
+  }
+}
 function onSelectionChanged() {
   const version = ++selectionVersion;
   clearTimeout(autoTimer);
-  if (Date.now() < ignoreAutoUntil) return;
-  autoTimer = setTimeout(async () => {
+  autoTimer = null;
+  if (applying) return;
+  autoTimer = setTimeout(() => {
+    autoTimer = null;
     // other tabs (Tính toán) listen to this event and read the cursor themselves
     document.dispatchEvent(new CustomEvent('texcraft:selection'));
-    if (!$('editor-auto')?.checked || !$('tab-editor')?.classList.contains('active')) return;
-    if (document.hasFocus() && document.activeElement === $('editor-latex')) return;   // typing in the pane: do not overwrite (after a click into Word the pane loses focus, though activeElement stays)
-    try {
-      const r = pickEquation(await io.readCursorContext());
-      if (version !== selectionVersion || !$('editor-auto')?.checked || !$('tab-editor')?.classList.contains('active')) return;
-      if (document.hasFocus() && (document.activeElement === $('editor-latex') || visual?.focused())) return;
-      if (!r.eq) return;   // no equation here: leave the editor alone
-      if (r.eq.latex === lastAutoSig && $('editor-latex').value === r.eq.latex) return;
-      lastAutoSig = r.eq.latex;
-      await loadFormulaFromWord(false, r, () => version === selectionVersion);
-    } catch { /* selection not readable: ignore */ }
-  }, 350);
+    return refreshAutoSelection(version);
+  }, 80);
 }
+let selectionWatcherInstalled = false, selectionWatcherPending = false, selectionWatcherRetries = 0;
 function installSelectionWatcher() {
-  if (!FULL) return;   // the lite edition has no tab that follows the cursor
+  if (selectionWatcherInstalled || selectionWatcherPending) return;
+  const retry = () => {
+    selectionWatcherPending = false;
+    if (++selectionWatcherRetries <= 3) setTimeout(installSelectionWatcher, 1000);
+  };
   try {
+    if (typeof Office === 'undefined' || !Office.context?.document?.addHandlerAsync) { retry(); return; }
+    selectionWatcherPending = true;
     Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged, (result) => {
-      if (result.status === Office.AsyncResultStatus.Failed) console.warn('Không đăng ký được tự nạp công thức:', result.error);
+      selectionWatcherPending = false;
+      if (result.status === Office.AsyncResultStatus.Failed) { retry(); return; }
+      selectionWatcherInstalled = true;
+      onSelectionChanged();
     });
-  } catch { /* not available (browser mock) */ }
+  } catch { retry(); }
 }
+// Returning to Word can precede its selection event; refresh after the click settles.
+window.addEventListener('blur', onSelectionChanged);
+$('editor-auto')?.addEventListener('change', onSelectionChanged);
 
 // Ask Word to load the add-in at startup, so the ribbon buttons are there after a restart (needs a Word that supports it).
 function requestStartupLoad() {
@@ -464,13 +510,17 @@ function registerRibbonActions() {
 
 async function boot() {
   if (typeof Office !== 'undefined' && Office.onReady) {
-    try { await Promise.race([Office.onReady(), new Promise((_r, rej) => setTimeout(() => rej(new Error('timeout')), 4000))]); } catch { /* not inside Office */ }
+    try {
+      const ready = Office.onReady().then(() => { installSelectionWatcher(); registerRibbonActions(); });
+      await Promise.race([ready, new Promise((_r, rej) => setTimeout(() => rej(new Error('timeout')), 4000))]);
+    } catch { /* not inside Office */ }
     registerRibbonActions();
   }
   if (!io.hasWord() || (typeof Office !== 'undefined' && !Office.context?.host)) {
     const note = document.createElement('div');
     note.className = 'notice';
     try {
+      if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname) && new URLSearchParams(location.search).get('mock') !== '1') throw new Error('Real Office APIs must not be replaced by the mock.');
       const mock = await import('./mock-word.js');
       await mock.install(new URLSearchParams(location.search).get('doc') || '/fixtures/sample-body.xml');
       note.textContent = 'Chế độ thử (không có Word): dùng tài liệu giả lập đọc từ /fixtures. Mọi thay đổi chỉ nằm trong bộ nhớ trình duyệt.';
@@ -480,25 +530,27 @@ async function boot() {
     document.body.prepend(note);
   }
   try { if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $('apply-kbd').textContent = '⌘↩'; } catch { /* ignore */ }
-  if (FULL) initEditor();
   installSelectionWatcher();
   requestStartupLoad();
   checkUrlTab();
 }
+let editorInitialized = false;
 function initEditor() {
+  if (editorInitialized) return;
+  editorInitialized = true;
   attachLatexAutocomplete($('editor-latex'), { onChange: () => renderEditorPreview() });
   visual = createVisualEditor({ host: $('editor-visual'), textarea: $('editor-latex'), onChange: () => renderEditorPreview() });
   mountEditorToolbar($('editor-toolbar'), $('editor-latex'), { visual });
   const KEY_IN = 'texcraft-editor-input';
-  const setInput = async (mode) => {
-    try { await visual.setActive(mode === 'visual'); } catch (e) { $('editor-msg').innerHTML = `<span class="bad">Không tải được ô nhập trực quan: ${esc(e.message)}</span>`; mode = 'latex'; await visual.setActive(false); }
+  const setInput = async (mode, focus = true) => {
+    try { await visual.setActive(mode === 'visual', { focus }); } catch (e) { $('editor-msg').innerHTML = `<span class="bad">Không tải được ô nhập trực quan: ${esc(e.message)}</span>`; mode = 'latex'; await visual.setActive(false); }
     const r = document.querySelector(`input[name=editor-input][value=${mode}]`); if (r) r.checked = true;
     try { localStorage.setItem(KEY_IN, mode); } catch { /* ignore */ }
     renderEditorPreview();
   };
   document.querySelectorAll('input[name=editor-input]').forEach((r) => r.addEventListener('change', () => setInput(r.value)));
   let saved = 'latex'; try { saved = localStorage.getItem(KEY_IN) || 'latex'; } catch { /* ignore */ }
-  if (saved === 'visual') setInput('visual');
+  if (saved === 'visual') setInput('visual', false);
 }
 // Offline use: a service worker keeps the add-in for ~30 days (not on localhost, unless ?sw=1 for testing)
 async function registerOffline() {

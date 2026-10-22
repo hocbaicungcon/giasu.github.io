@@ -54,9 +54,9 @@ export function createVisualEditor({ host, textarea, onChange }) {
     active: () => on,
     focused: () => !!mf && (document.activeElement === mf || mf.contains(document.activeElement)),
     pull,
-    async setActive(v) {
+    async setActive(v, { focus = true } = {}) {
       on = v; host.hidden = !v; textarea.hidden = v;
-      if (v) { await ensure(); if (!on) return; mf.setValue(textarea.value, { silenceNotifications: true }); mf.focus(); }
+      if (v) { await ensure(); if (!on) return; mf.setValue(textarea.value, { silenceNotifications: true }); if (focus && document.hasFocus() && host.closest('section')?.classList.contains('active')) mf.focus(); }
     },
     async insert(snippet) {
       await ensure();

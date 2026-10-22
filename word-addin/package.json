@@ -7,6 +7,6 @@
     "start": "node server.js",
     "cert": "sh tools/make-cert.sh",
     "tables": "python3 -I tools/gen_tables.py",
-    "test": "node tests/unit.mjs && node tests/performance.mjs && node tests/parity.mjs && node tests/roundtrip.mjs && node tests/pandoc_check.mjs 3000 && node tests/exam_all.mjs && node tests/xlsx.mjs /tmp/texcraft-xlsx"
+    "test": "node tests/unit.mjs && node tests/editor-performance.mjs && node tests/performance.mjs && node tests/parity.mjs && node tests/roundtrip.mjs && node tests/pandoc_check.mjs 3000 && node tests/exam_all.mjs && node tests/xlsx.mjs /tmp/texcraft-xlsx"
   }
 }

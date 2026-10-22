@@ -65,12 +65,16 @@ test('automatic loading follows Word focus and discards stale selections', async
   pending.shift()({ eq: { latex: 'a' } }); await first;
   assert.deepEqual(loaded, ['a'], 'visual mode enabled without focus must load');
   visualFocus = true; env.changed(); const typing = timer();
-  pending.shift()({ eq: { latex: 'b' } }); await typing;
+  await typing;
+  assert.equal(pending.length, 0, 'focused visual input must not trigger a Word read');
   assert.deepEqual(loaded, ['a'], 'focused visual input must not be overwritten');
   visualFocus = false; paneFocus = false;
   env.changed(); const old = timer(); const resolveOld = pending.shift();
-  env.changed(); const next = timer(); pending.shift()({ eq: { latex: 'c' } }); await next;
+  env.changed(); await timer();
+  assert.equal(pending.length, 0, 'a second Word read must wait for the first');
   resolveOld({ eq: { latex: 'b' } }); await old;
+  pending.shift()({ eq: { latex: 'c' } });
+  for (let i = 0; i < 8; i++) await Promise.resolve();
   assert.deepEqual(loaded, ['a', 'c']);
   env.changed(); const disabled = timer(); elements['editor-auto'].checked = false;
   pending.shift()({ eq: { latex: 'd' } }); await disabled;
