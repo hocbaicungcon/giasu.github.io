@@ -4262,6 +4262,19 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
     selectionParagraphCount: () => selectionParagraphCount,
     writeParagraphs: () => writeParagraphs
   });
+  function writeBatchSize() {
+    var _a9, _b, _c;
+    const platform = typeof Office !== "undefined" ? ((_b = (_a9 = Office.context) == null ? void 0 : _a9.diagnostics) == null ? void 0 : _b.platform) || ((_c = Office.context) == null ? void 0 : _c.platform) : "";
+    return /^mac/i.test(String(platform || "")) ? 1 : BATCH;
+  }
+  function paragraphWriteError(error, batch, completed, total) {
+    const indexes = batch.map((it) => it.index + 1).sort((a, b) => a - b);
+    const location2 = indexes.length === 1 ? String(indexes[0]) : `${indexes[0]}\u2013${indexes[indexes.length - 1]}`;
+    const out = new Error(`Kh\xF4ng ghi \u0111\u01B0\u1EE3c \u0111o\u1EA1n ${location2} (\u0111\xE3 ghi ${completed}/${total} \u0111o\u1EA1n): ${error.message || error}`);
+    out.code = error.code;
+    out.debugInfo = error.debugInfo;
+    return out;
+  }
   async function run2(fn) {
     return Word.run(fn);
   }
@@ -4400,14 +4413,37 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       all.load("items");
       await context.sync();
       const before = all.items.length;
-      for (let i = 0; i < items.length; i += BATCH) {
-        for (const it of items.slice(i, i + BATCH)) {
-          const p2 = coll.items[it.index];
-          const target = mode === "paragraph" ? p2 : p2.getRange("Content");
-          target.insertOoxml(it.pkg, "Replace");
+      const ordered2 = [...items].sort((a, b) => b.index - a.index);
+      const seen = /* @__PURE__ */ new Set();
+      for (const it of ordered2) {
+        if (!Number.isInteger(it.index) || !coll.items[it.index] || seen.has(it.index)) {
+          throw new Error(`V\u1ECB tr\xED \u0111o\u1EA1n kh\xF4ng h\u1EE3p l\u1EC7 ho\u1EB7c tr\xF9ng l\u1EB7p: ${it.index + 1}. H\xE3y \u0111\u1ECDc l\u1EA1i t\xE0i li\u1EC7u.`);
         }
-        await context.sync();
-        onProgress(Math.min(i + BATCH, items.length), items.length);
+        seen.add(it.index);
+      }
+      const limit = writeBatchSize();
+      for (let i = 0; i < ordered2.length; ) {
+        const batch = [];
+        let bytes = 0;
+        while (i + batch.length < ordered2.length && batch.length < limit) {
+          const it = ordered2[i + batch.length];
+          const size = it.pkg.length * 2;
+          if (batch.length && bytes + size > WRITE_BYTES) break;
+          batch.push(it);
+          bytes += size;
+        }
+        try {
+          for (const it of batch) {
+            const p2 = coll.items[it.index];
+            const target = mode === "paragraph" ? p2 : p2.getRange("Content");
+            target.insertOoxml(it.pkg, "Replace");
+          }
+          await context.sync();
+        } catch (error) {
+          throw paragraphWriteError(error, batch, i, ordered2.length);
+        }
+        i += batch.length;
+        onProgress(i, ordered2.length);
       }
       const again = context.document.body.paragraphs;
       again.load("items");
@@ -4452,11 +4488,12 @@ var __BUNDLE_URL__=(document.currentScript&&document.currentScript.src)||locatio
       await context.sync();
     });
   }
-  var BATCH, hasWord;
+  var BATCH, WRITE_BYTES, hasWord;
   var init_word_io = __esm({
     "src/word-io.js"() {
       init_ooxml();
       BATCH = 25;
+      WRITE_BYTES = 512 * 1024;
       hasWord = () => typeof Word !== "undefined" && typeof Office !== "undefined";
     }
   });
@@ -14812,7 +14849,9 @@ ${contentTypesOverrides}
         return;
       }
       const base = new URL("../sw.js", location.href);
-      await navigator.serviceWorker.register(base.href, { scope: new URL("../", location.href).pathname });
+      const registration = await navigator.serviceWorker.register(base.href, { scope: new URL("../", location.href).pathname, updateViaCache: "none" });
+      registration.update().catch(() => {
+      });
       const reg = await navigator.serviceWorker.ready;
       const ask = () => reg.active && reg.active.postMessage("status");
       navigator.serviceWorker.addEventListener("message", (ev) => {

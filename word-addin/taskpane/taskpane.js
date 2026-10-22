@@ -574,7 +574,9 @@ async function registerOffline() {
     const dev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && !/[?&]sw=1/.test(location.search);
     if (dev) { if (note) note.textContent = 'Chế độ phát triển: không lưu bản offline.'; return; }
     const base = new URL('../sw.js', location.href);
-    await navigator.serviceWorker.register(base.href, { scope: new URL('../', location.href).pathname });
+    const registration = await navigator.serviceWorker.register(base.href, { scope: new URL('../', location.href).pathname, updateViaCache: 'none' });
+    // Ask for the latest worker even when this panel itself was served from the offline cache.
+    registration.update().catch(() => {});
     const reg = await navigator.serviceWorker.ready;
     const ask = () => reg.active && reg.active.postMessage('status');
     navigator.serviceWorker.addEventListener('message', (ev) => { if (ev.data && ev.data.type === 'status' && note) note.innerHTML = `<span class="ok">Đã lưu ${ev.data.files} tệp để dùng khi mất mạng</span> (giữ ${ev.data.maxAgeDays} ngày, tự làm mới khi có mạng; bản ${esc(ev.data.version)}).`; });

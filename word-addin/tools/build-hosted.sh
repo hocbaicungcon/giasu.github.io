@@ -20,4 +20,6 @@ mkdir -p hosted/taskpane/vendor && cp -R taskpane/vendor/* hosted/taskpane/vendo
 # public manifests are written for https://giasu.ai.vn/word-addin; point them at BASE (lite = manifest.xml, full = manifest-full.xml)
 for M in manifest manifest-full; do sed -e "s#https://giasu.ai.vn/word-addin#$BASE#g" -e "s#<AppDomain>https://giasu.ai.vn</AppDomain>#<AppDomain>$ORIGIN</AppDomain>#" $M.xml > hosted/$M.xml; done
 node tools/build-sw.mjs hosted
+# GitHub Pages copies the source folder directly, so it needs the same cache revision as hosted/.
+cp hosted/sw.js sw.js
 echo "Built hosted/ for $BASE"
