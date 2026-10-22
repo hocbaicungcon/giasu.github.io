@@ -16,7 +16,7 @@
 .site-share [data-share-status]:empty,.share-panel[hidden]~[data-share-status]{display:none}
 .share-copy-input{width:100%;padding:8px;margin-top:8px;border:1px solid #cbd5e1;border-radius:6px;font:inherit}
 .share-panel:has(.share-copy-input){width:min(280px,calc(100vw - 48px));border-radius:16px}
-html[data-theme="dark"] .share-toggle{background:var(--dark-surface, #17211b);color:var(--dark-ink, #e5eee6);border-color:var(--dark-line, #304237)}
+html[data-theme="dark"] .share-toggle{background:var(--dark-surface, #171f21);color:var(--dark-ink, #e5ecee);border-color:var(--dark-line, #303e42)}
 html[data-theme="dark"] .share-panel,html[data-theme="dark"] .site-share [data-share-status]{background:#18212f;color:#e2e8f0}
 html[data-theme="dark"] .share-actions .share-x{color:#f1f5f9}
 html[data-theme="dark"] .share-actions a:hover,html[data-theme="dark"] .share-actions button:hover{background:#203d46}

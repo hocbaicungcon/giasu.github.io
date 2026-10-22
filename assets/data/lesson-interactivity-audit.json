@@ -157,7 +157,7 @@
       "category": "Toán học",
       "exploration": null,
       "cards": 4,
-      "cloze": 3,
+      "cloze": 4,
       "source": "article",
       "quiz": 10,
       "diagrams": 0
@@ -3167,7 +3167,7 @@
       "category": "Các môn khác",
       "exploration": null,
       "cards": 4,
-      "cloze": 1,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -3417,7 +3417,7 @@
       "category": "Toán học",
       "exploration": null,
       "cards": 4,
-      "cloze": 1,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -3707,7 +3707,7 @@
       "category": "Ngoại ngữ",
       "exploration": null,
       "cards": 3,
-      "cloze": 1,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4387,7 +4387,7 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 1,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4397,7 +4397,7 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 1,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4407,7 +4407,7 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 4,
-      "cloze": 2,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4417,7 +4417,7 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 4,
-      "cloze": 3,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4427,7 +4427,7 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 1,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4457,7 +4457,7 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 1,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4467,7 +4467,7 @@
       "category": "Hóa học",
       "exploration": null,
       "cards": 4,
-      "cloze": 3,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4477,7 +4477,7 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 1,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -5067,7 +5067,7 @@
       "category": "Toán học",
       "exploration": null,
       "cards": 3,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -5087,7 +5087,7 @@
       "category": "Hóa học",
       "exploration": null,
       "cards": 4,
-      "cloze": 3,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -5097,7 +5097,7 @@
       "category": "Toán học",
       "exploration": null,
       "cards": 3,
-      "cloze": 1,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -5517,7 +5517,7 @@
       "category": "Địa lí",
       "exploration": null,
       "cards": 4,
-      "cloze": 0,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -5997,7 +5997,7 @@
       "category": "Hóa học",
       "exploration": null,
       "cards": 4,
-      "cloze": 3,
+      "cloze": 2,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -6067,7 +6067,7 @@
       "category": "Hóa học",
       "exploration": null,
       "cards": 2,
-      "cloze": 2,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -6167,7 +6167,7 @@
       "category": "Hóa học",
       "exploration": null,
       "cards": 4,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0

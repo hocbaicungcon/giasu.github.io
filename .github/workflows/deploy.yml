@@ -21,6 +21,8 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: '22'
+      - name: Validate rendered Markdown
+        run: node .github/scripts/audit-markdown.mjs bai-viet
       - name: Validate built Word add-in
         run: |
           node --input-type=module <<'JS'

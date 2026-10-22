@@ -15,7 +15,7 @@ body :is(.primary, .go-top, .share-toggle):hover,
 body .share-toggle[aria-expanded="true"],
 body .exam-toolbar .primary:hover,
 body .riddles .primary:hover { background: var(--tone-green-dark) !important; color: #fff !important; }
-body .exam-toolbar #submit-exam:hover { background: #075c73 !important; color: #fff !important; }
+body .exam-toolbar #submit-exam:hover { background: #ffa49e !important; color: #173449 !important; }
 
 body header .nav-pill:hover { background: var(--tone-green-soft) !important; color: #10536e !important; }
 body header .display-controls button:hover { background: rgba(8, 125, 152, .12) !important; }
@@ -42,7 +42,7 @@ body :is(.fun-tile:hover, .fun-tile[href$="do-vui-tieng-anh.html"]:hover) { back
 html[data-theme="dark"] body :is(button, a):hover { color: #69d7f2; }
 html[data-theme="dark"] body .prose button.glossary-term:hover { color: #69d7f2 !important; }
 html[data-theme="dark"] body :is(.share-actions a, .share-actions button):hover { background: rgba(66, 202, 234, .22) !important; color: #69d7f2 !important; }
-html[data-theme="dark"] body .exam-toolbar #submit-exam:hover { background: #075c73 !important; }
+html[data-theme="dark"] body .exam-toolbar #submit-exam:hover { background: #ffa49e !important; }
 html[data-theme="dark"] body :is(.primary, .go-top, .share-toggle):hover { background: #086b84 !important; }
 
 /* Quy tắc chung "button:hover, a:hover" đổi màu chữ khi rê chuột; các thành phần có nền màu riêng giữ nguyên màu chữ của chúng. */

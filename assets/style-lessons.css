@@ -428,7 +428,7 @@ html[data-theme="dark"] .prose table::-webkit-scrollbar-thumb {
 
 .table-container table {
   display: table !important;
-  width: max-content !important;
+  width: 100% !important;
   min-width: 100% !important;
   max-width: none !important;
   border-collapse: collapse;
@@ -450,19 +450,26 @@ html[data-theme="dark"] .prose table::-webkit-scrollbar-thumb {
 
 .prose td,
 .prose th {
-  border: 1px solid var(--line);
-  padding: 8px 14px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 10px 14px;
   text-align: left;
+  vertical-align: top;
   overflow-wrap: normal;
   word-break: normal;
 }
 
 .prose th {
-  background: rgba(0, 0, 0, 0.03);
-  font-weight: 600;
+  background: var(--button-secondary);
+  color: var(--button-secondary-ink);
+  font-weight: 700;
 }
+.prose :is(th,td):last-child { border-right: 0; }
+.prose tbody:last-child tr:last-child td { border-bottom: 0; }
 html[data-theme="dark"] .prose th {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--button-secondary);
+  color: var(--button-secondary-ink);
 }
 
 .prose tbody tr:nth-child(even) {
@@ -486,7 +493,7 @@ html[data-theme="dark"] .prose tbody tr:nth-child(even) {
     background-attachment: local, local, scroll, scroll;
   }
   .prose th {
-    white-space: nowrap;
+    white-space: normal;
     padding: 8px 12px;
     font-size: 0.9em;
   }

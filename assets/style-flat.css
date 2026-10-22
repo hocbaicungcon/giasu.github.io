@@ -1,5 +1,5 @@
 /* Flat modern surfaces: clean borders, harmonious rounded corners, zero blurry shadows. */
-:root{--paper:#f9fbf8;--line:#c4d6be;--ink:#14261a;--muted:#495e4d;--card-bg:#ffffff;--bg-secondary:#edf5ea;--teal:#1a6237}
+:root{--paper:#f9fbf8;--line:#bed0d6;--ink:#142226;--muted:#49595e;--card-bg:#ffffff;--bg-secondary:#eaf2f5;--teal:#1a5162}
 *,*::before,*::after{box-shadow:none!important}
 html{scroll-padding-top:72px}
 body{font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;font-size:18px;background:var(--paper);color:var(--ink)}
@@ -8,12 +8,12 @@ body :is(.hero,.subject-section,.library-page-header){background:transparent;box
 body .hero h1{font-weight:700;line-height:1.15;color:var(--ink)}
 body :is(.article-wrap,.fun-page,.exam-page){border:0;border-radius:16px;box-shadow:none!important;background:transparent}
 body :is(.card,.related-card){border:1.5px solid var(--line);border-radius:14px;background:var(--card-bg,#fff);box-shadow:none!important;overflow:hidden;transition:border-color .15s ease,background-color .15s ease}
-body :is(.card,.related-card):hover{border-color:var(--teal,#1a6237);background:#f7fbf5;box-shadow:none!important;transform:none}
+body :is(.card,.related-card):hover{border-color:var(--teal,#1a5162);background:#f5fafb;box-shadow:none!important;transform:none}
 body :is(.card img,.card-art,.related-card-art){border-radius:12px;box-shadow:none!important}
 body :is(.card-body,.related-card-body){padding:16px}
 body .prose blockquote.callout,body .lesson-course .prose blockquote.callout{
-  border:1.5px solid #bdd2b5;border-left:5px solid var(--teal,#1a6237);border-radius:12px;
-  padding:14px 18px 14px 20px;background:#eef6eb;box-shadow:none!important;margin-block:28px;
+  border:1.5px solid #b5cbd2;border-left:5px solid var(--teal,#1a5162);border-radius:12px;
+  padding:14px 18px 14px 20px;background:#ebf3f6;box-shadow:none!important;margin-block:28px;
 }
 body .prose blockquote.callout :is(.callout-title,.callout-body){background:transparent}
 body .prose blockquote:not(.callout){border-radius:10px;padding:12px 18px;border-left:4px solid var(--line)}
@@ -21,35 +21,35 @@ body :is(.quiz,.quiz-explanation,.geometry-lab,.practice-card,.lesson-progress,.
 body .prose .geometry-lab{border:1.5px solid var(--line);border-radius:16px;padding:24px;margin-block:36px;background:var(--card-bg,#fff);box-shadow:none!important}
 body .quiz{padding:22px;margin-block:28px;border:1.5px solid var(--line);border-radius:16px;background:var(--card-bg,#fff);box-shadow:none!important}
 body .quiz-option{border:1.5px solid var(--line);border-radius:10px;padding:11px 15px;background:#f6f9f4;margin-block:6px;transition:all .15s ease;box-shadow:none!important}
-body .quiz-option:hover{background:#edf5e8;border-color:var(--teal,#1a6237)}
-body .quiz-option:has(input:checked){background:#dfefe0;border-color:var(--teal,#1a6237);border-width:2px;color:var(--ink);font-weight:600;box-shadow:none!important}
-body .quiz-explanation{padding:14px 18px;border:1.5px solid #bdd2b5;border-left:4px solid var(--teal,#1a6237);border-radius:10px;background:#eef6eb;margin-top:12px;box-shadow:none!important}
+body .quiz-option:hover{background:#e8f2f5;border-color:var(--teal,#1a5162)}
+body .quiz-option:has(input:checked){background:#dfebef;border-color:var(--teal,#1a5162);border-width:2px;color:var(--ink);font-weight:600;box-shadow:none!important}
+body .quiz-explanation{padding:14px 18px;border:1.5px solid #b5cbd2;border-left:4px solid var(--teal,#1a5162);border-radius:10px;background:#ebf3f6;margin-top:12px;box-shadow:none!important}
 body .practice-card{padding:18px 20px;border:1.5px solid var(--line);border-radius:14px;margin-block:16px;background:var(--card-bg,#fff);box-shadow:none!important}
-body .practice-answer{border-radius:10px;background:#eef6eb;padding:16px;border:1.5px solid #bdd2b5;border-left:4px solid var(--teal,#1a6237);margin-top:10px;box-shadow:none!important}
-body .glossary-toolbar{padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;font-family:inherit;background:var(--bg-secondary,#edf5ea);box-shadow:none!important}
+body .practice-answer{border-radius:10px;background:#ebf3f6;padding:16px;border:1.5px solid #b5cbd2;border-left:4px solid var(--teal,#1a5162);margin-top:10px;box-shadow:none!important}
+body .glossary-toolbar{padding:10px 14px;border:1.5px solid var(--line);border-radius:12px;font-family:inherit;background:var(--bg-secondary,#eaf2f5);box-shadow:none!important}
 body .glossary-dialog{border-radius:16px;box-shadow:none!important;border:2px solid var(--line)}
-body .lesson-progress{padding:12px 16px;border-radius:12px;background:var(--bg-secondary,#edf5ea);border:1px solid var(--line)}
+body .lesson-progress{padding:12px 16px;border-radius:12px;background:var(--bg-secondary,#eaf2f5);border:1px solid var(--line)}
 body .article-end{background:transparent;border-radius:0;box-shadow:none!important;border-top:1.5px solid var(--line);padding-inline:0}
 body :is(.primary,.see-more-btn,.quiz-reset,.lesson-practice button,.geometry-controls button,.geometry-actions button,.geometry-proof button,.glossary-toolbar button,.glossary-back){border-radius:10px;box-shadow:none!important}
 body :is(.nav-submenu,.library-controls,.library-toolbar,.filter-bar){border-radius:14px;box-shadow:none!important}
-body .primary{background:var(--teal,#1a6237);color:#fff}
-body .primary:hover{background:#134d2a}
-body .nav-submenu{box-shadow:none!important;border:1.5px solid #235835;border-radius:14px;background:#fff}
+body .primary{background:var(--teal,#1a5162);color:#fff}
+body .primary:hover{background:#133f4d}
+body .nav-submenu{box-shadow:none!important;border:1.5px solid #234c58;border-radius:14px;background:#fff}
 body .related{border:0;background:transparent;box-shadow:none!important}
-body .tag{border-radius:8px;box-shadow:none!important;padding:4px 10px;background:#e2efdb;border:1px solid #b3cca9;color:#164926;font-weight:600}
+body .tag{border-radius:8px;box-shadow:none!important;padding:4px 10px;background:#dbeaef;border:1px solid #a9c4cc;color:#163d49;font-weight:600}
 body .prose details{border:1.5px solid var(--line);border-radius:12px;padding:12px 18px;margin-block:20px;background:var(--card-bg,#fff);box-shadow:none!important}
 body .prose details summary{border-radius:8px}
 body .prose pre{border-radius:12px;box-shadow:none!important;border:1px solid var(--line)}
 body .prose table{border-radius:10px;overflow-x:auto;overflow-y:hidden;border-collapse:separate;border-spacing:0;border:1.5px solid var(--line);box-shadow:none!important}
-html[data-theme="dark"]{--paper:#172218;--ink:#e3ede1;--muted:#9db398;--line:#2c402e;--card-bg:#1e2d1f;--bg-secondary:#263828;--teal:#4ade80}
-html[data-theme="dark"] body,html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] main.lesson-course.article-wrap{background:#172218;color:#dce7da}
+html[data-theme="dark"]{--paper:#171f22;--ink:#e1eaed;--muted:#98adb3;--line:#2c3b40;--card-bg:#1e2a2d;--bg-secondary:#263438;--teal:#4abbde}
+html[data-theme="dark"] body,html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] main.lesson-course.article-wrap{background:#171f22;color:#dae4e7}
 html[data-theme="dark"] :is(.lesson-course .article-heading h1,.lesson-course .article-heading>p,.lesson-course .prose h2,.lesson-course .prose h3,.lesson-course .prose h4){color:inherit}
 html[data-theme="dark"] body :is(.card,.related-card,.hero,.article-end,.practice-card,.glossary-toolbar){color:inherit}
 html[data-theme="dark"] body :is(.card,.related-card,.quiz,.practice-card,.prose details,.prose .geometry-lab){background:var(--card-bg);border-color:var(--line)}
-html[data-theme="dark"] body .quiz-option{background:#1a271c;border-color:#2c402e}
-html[data-theme="dark"] body .quiz-option:hover{background:#233526;border-color:var(--dark-line, #304237)}
-html[data-theme="dark"] body .quiz-option:has(input:checked){background:#25422d;border-color:var(--dark-line, #304237);color:#f0fdf4}
-html[data-theme="dark"] body :is(.quiz-explanation,.practice-answer){background:#223624;border-color:var(--dark-line, #304237)}
-html[data-theme="dark"] body .prose blockquote.callout,html[data-theme="dark"] body .lesson-course .prose blockquote.callout{background:#223624;border-color:var(--dark-line, #304237)}
-html[data-theme="dark"] body header nav#site-menu .nav-exams>summary,html[data-theme="dark"] body header nav#site-menu .display-controls button{color:#e3eadb}
+html[data-theme="dark"] body .quiz-option{background:#1a2427;border-color:#2c3b40}
+html[data-theme="dark"] body .quiz-option:hover{background:#233135;border-color:var(--dark-line, #303e42)}
+html[data-theme="dark"] body .quiz-option:has(input:checked){background:#253b42;border-color:var(--dark-line, #303e42);color:#f0fafd}
+html[data-theme="dark"] body :is(.quiz-explanation,.practice-answer){background:#223136;border-color:var(--dark-line, #303e42)}
+html[data-theme="dark"] body .prose blockquote.callout,html[data-theme="dark"] body .lesson-course .prose blockquote.callout{background:#223136;border-color:var(--dark-line, #303e42)}
+html[data-theme="dark"] body header nav#site-menu .nav-exams>summary,html[data-theme="dark"] body header nav#site-menu .display-controls button{color:#dbe6ea}
 @media(max-width:620px){body .hero h1{font-size:2.3rem}.course-toc-toggle{left:16px;bottom:20px}}

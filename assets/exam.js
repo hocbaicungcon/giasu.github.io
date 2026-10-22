@@ -1,5 +1,5 @@
 /* credit: giasu.ai.vn */
-import {gradeExam} from './exam-core.js?v=ae37b7d5d47b';
+import {gradeExam} from './exam-core.js?v=850bdab1108d';
 const exam=JSON.parse(document.getElementById('exam-data').textContent);
 const $=id=>document.getElementById(id), key=`giasu-exam:${exam.slug}:${exam.version}`;
 let state=null,clock;

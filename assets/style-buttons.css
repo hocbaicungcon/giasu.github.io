@@ -4,15 +4,15 @@
 body :is(button.primary,a.primary,.button.primary){background:var(--button-primary,#087d98);color:#fff;padding:8px 15px;border-radius:9px}
 body :is(button.primary,a.primary,.button.primary):hover{background:var(--button-primary-hover,#075c73);color:#fff}
 body :is(.quiz-reset,.lesson-practice button,.geometry-controls button){padding:7px 12px;border-radius:9px}
-body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button){background:var(--button-secondary,#daf2fa);color:var(--button-secondary-ink,#10536e);border-color:#cad8c1;padding:7px 12px;border-radius:8px}
-body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button):hover{background:var(--button-secondary-hover,#b8e7f5);color:#2d5533}
+body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button){background:var(--button-secondary,#daf2fa);color:var(--button-secondary-ink,#10536e);border-color:#c1d3d8;padding:7px 12px;border-radius:8px}
+body.grading-page :is(.small,.button.ghost,.button.camera-button,.manual-key-form button,.key-choices button):hover{background:var(--button-secondary-hover,#b8e7f5);color:#2d4c55}
 body.grading-page :is(.primary,#scanCameraButton){background:var(--button-primary,#087d98);color:#fff;padding:8px 15px;border-radius:9px}
 body.grading-page :is(.primary,#scanCameraButton):hover{background:var(--button-primary-hover,#075c73);color:#fff}
 body.grading-page .key-choices button[aria-pressed="true"]{background:var(--button-primary,#087d98);border-color:var(--button-primary,#087d98);color:#fff}
-body.grading-page .mobile-nav button[aria-current="page"]{background:var(--button-secondary-hover,#b8e7f5);color:#2d5533;border-radius:8px}
+body.grading-page .mobile-nav button[aria-current="page"]{background:var(--button-secondary-hover,#b8e7f5);color:#2d4c55;border-radius:8px}
 body.grading-page :is(.small.danger,#deleteExamKey,#deleteAllKeys){background:#fff5f2;color:#9b463d;border-color:#e7c7c0;border-radius:8px}
 body.grading-page :is(.small.danger,#deleteExamKey,#deleteAllKeys):hover{background:#f8e4de;color:#85352d}
-body.grading-page :is(.button,.small,.manual-key-form button,.key-choices button,#scanCameraButton,#deleteExamKey,#deleteAllKeys):disabled{background:#edf0e8;color:#737c6d;border-color:#dde3d5;opacity:1;cursor:not-allowed;box-shadow:none}
+body.grading-page :is(.button,.small,.manual-key-form button,.key-choices button,#scanCameraButton,#deleteExamKey,#deleteAllKeys):disabled{background:#e8eef0;color:#6d787c;border-color:#d5e0e3;opacity:1;cursor:not-allowed;box-shadow:none}
 body :is(button,a.primary,.button):focus-visible{outline:2px solid var(--button-primary,#087d98);outline-offset:3px}
 @media(max-width:600px){body :is(button.primary,a.primary,.button.primary,.quiz-reset){min-height:40px}body.grading-page :is(.small,.button){min-height:40px}}
 /* Compact text fields; choice controls and file inputs retain their geometry. */
@@ -56,7 +56,7 @@ body.grading-page #results .scorebar>div:first-child strong{font-size:36px;line-
 
 /* Fill the gap directly in the sentence using a keyboard-accessible list. */
 body .practice-cloze{display:block;margin:16px 0}
-body .practice-cloze .practice-gap-select{display:inline-block;max-width:100%;width:auto;min-height:32px;padding:2px 20px 2px 6px;border:0;border-bottom:2px dotted #1688a5;background:#f0f6e9;color:var(--button-primary-hover,#075c73);font:600 1em/1.4 "Source Sans Pro",sans-serif;vertical-align:baseline;cursor:pointer;border-radius:6px}
+body .practice-cloze .practice-gap-select{display:inline-block;max-width:100%;width:auto;min-height:32px;padding:2px 20px 2px 6px;border:0;border-bottom:2px dotted #1688a5;background:#e9f3f6;color:var(--button-primary-hover,#075c73);font:600 1em/1.4 "Source Sans Pro",sans-serif;vertical-align:baseline;cursor:pointer;border-radius:6px}
 body .practice-cloze .practice-gap-select:focus-visible{outline:2px solid var(--button-primary,#087d98);outline-offset:2px}
 
 /* Mobile form fields keep their readable size when focused (including landscape). */
