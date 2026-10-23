@@ -1,9 +1,9 @@
-/* Logo cyan/coral with quiet, warm neutrals, inspired by Pantone's Cloud Dancer / Powdered Pastels
-   palette (https://www.pantone.com/na/en-us/color-of-the-year/2026). Digital shades are derived from our logo, not Pantone equivalents.
-   Reserve saturated colour for actions and small accents; keep reading surfaces calm. */
-:root{--brand-cyan:#42caea;--brand-coral:#fd827b;--brand-deep:#203c46;--brand-soft:#edf7fa;--brand-soft-hover:#dceff5;--brand-warm:#fff0eb;--ink:#243b45;--muted:#607078;--teal:#146b80;--cyan:var(--brand-cyan);--coral:#a74640;--peach:#f9e8de;--paper:#fafaf7;--line:#dbe5e5;--card-bg:#ffffff;--bg-secondary:#f0f6f5;--button-primary:#146b80;--button-primary-hover:#10576a;--button-secondary:#edf5f5;--button-secondary-hover:#dceef0;--button-secondary-ink:#285e6b}
-body,body:has(.lesson-course),body main.lesson-course.article-wrap.wrap{background:var(--paper);color:#344b55}
-body header,body:has(.lesson-course) header,body.menu-open header,body.menu-open:has(.lesson-course) header,body.grading-page header{background:#203c46;color:#fff;border-bottom:0}
+/* Logo-led palette: cyan for the hero, deep blue for structure, white for reading.
+   Coral is reserved for small accents. Pantone references informed the balance;
+   these digital colours are derived from the logo, not Pantone equivalents. */
+:root{--brand-cyan:#42caea;--brand-coral:#fd827b;--brand-deep:#102f40;--brand-soft:#e1f5fa;--brand-soft-hover:#c2eaf4;--brand-warm:#fff0eb;--ink:#102f40;--muted:#526672;--teal:#006b85;--cyan:var(--brand-cyan);--coral:#a74640;--peach:var(--brand-warm);--paper:#ffffff;--line:#cedce2;--card-bg:#ffffff;--bg-secondary:#f1f6f8;--button-primary:#006b85;--button-primary-hover:#00546a;--button-secondary:#e1f5fa;--button-secondary-hover:#c2eaf4;--button-secondary-ink:#102f40}
+body,body:has(.lesson-course),body main.lesson-course.article-wrap.wrap{background:var(--paper);color:#243e4b}
+body header,body:has(.lesson-course) header,body.menu-open header,body.menu-open:has(.lesson-course) header,body.grading-page header{background:var(--brand-deep);color:#fff;border-bottom:0}
 body header .nav,body:has(.lesson-course) header .nav{height:56px;min-height:56px;gap:18px;padding-block:6px;flex-wrap:nowrap}
 body header .brand,body:has(.lesson-course) header .brand{font:600 1rem/1.05 "Source Sans Pro",sans-serif;color:#fff;flex:0 0 auto;gap:8px}
 body header .brand-name{color:var(--brand-cyan)}
@@ -22,14 +22,20 @@ body :is(.share-toggle,.go-top,.course-toc-toggle,.glossary-popup){background:#1
 body :is(.share-toggle,.go-top,.course-toc-toggle):hover{background:#10576a;color:#fff}
 body .prose :is(a,button.glossary-term:hover),body main a:not(.primary),body :is(.practice-kicker,.practice-feedback,.practice-progress,.practice-source,.related-action){color:var(--teal)}
 body .prose button.glossary-term{text-decoration-color:#1688a5}
-body .hero h1 .hero-accent{color:#146b80}
-body .hero h1 .hero-highlight,body .hero h1 .hero-highlight>span{color:#a74640}
-body .hero .mascot{background:#dceff5}
-body .hero.wrap{background:linear-gradient(110deg,var(--paper) 15%,var(--brand-soft) 100%)}
-body .float-note{color:var(--ink);background:var(--brand-warm)}
+body .hero h1 .hero-accent{color:var(--brand-deep)}
+body .hero h1 .hero-highlight,body .hero h1 .hero-highlight>span{color:var(--brand-deep)}
+body .hero h1 .hero-highlight svg{stroke:var(--brand-coral);z-index:0;bottom:-7px;stroke-width:5}
+body .hero :is(h1,p,.kicker,.hero-note){color:var(--brand-deep)}
+body .hero .kicker>span{background:var(--brand-deep)}
+body .hero .hero-note :is(span,i),body .hero .spark{color:var(--brand-deep)}
+body .hero a.primary{background:var(--brand-deep);color:#fff}
+body .hero a.primary:hover{background:#1e465b;color:#fff}
+body .hero .mascot{background:#ffffff;box-shadow:0 16px 40px #102f4014}
+body .hero.wrap{background:var(--brand-cyan)}
+body .float-note{color:var(--brand-deep);background:#ffffff}
 body .hero :is(.float-math,.float-book){background:var(--card-bg);color:var(--teal)}
 body .hero .float-book small{color:var(--muted)}
-body .hero .orbit{border-color:#c3e2eb}
+body .hero .orbit{border-color:#102f4040}
 body .lesson-course .article-toc,body .course-toc-dialog{background:var(--bg-secondary);color:var(--ink)}
 body .course-sidebar-heading,body .course-toc-dialog .course-sidebar-heading{background:#e6eeee;color:var(--ink)}
 body .course-sidebar-heading>span{color:var(--muted)}
@@ -53,10 +59,10 @@ body .related-card-art{display:grid;grid-template-columns:minmax(0,1fr) auto;ali
 body .related-symbol{display:flex;align-items:center;justify-content:flex-start;line-height:1;font-size:2.25rem;min-width:0;opacity:1}
 body .related-symbol .ui-icon{width:42px;height:42px;vertical-align:initial}
 body .related-grade-pill{align-self:center;justify-self:end;margin:0;white-space:nowrap;font-size:.75rem;line-height:1.3;padding:4px 8px;background:#ffffffd9;letter-spacing:0}
-body .tone-0 .related-card-art,body .card-art.tone-0{background:#e4f2f4;color:#146b80}
-body .tone-1 .related-card-art,body .card-art.tone-1{background:#f8e7e1;color:#a74640}
-body .tone-2 .related-card-art,body .card-art.tone-2{background:#edf7fa;color:#285e6b}
-body .tone-3 .related-card-art,body .card-art.tone-3{background:#f1f4f5;color:#465e6a}
+body .tone-0 .related-card-art,body .card-art.tone-0{background:var(--brand-soft);color:var(--button-secondary-ink)}
+body .tone-1 .related-card-art,body .card-art.tone-1{background:var(--brand-soft);color:var(--button-secondary-ink)}
+body .tone-2 .related-card-art,body .card-art.tone-2{background:var(--brand-soft);color:var(--button-secondary-ink)}
+body .tone-3 .related-card-art,body .card-art.tone-3{background:var(--brand-soft);color:var(--button-secondary-ink)}
 body .home-learning{padding:26px 0;margin-block:16px 36px;border-top:2px solid #146b80;border-bottom:1px solid var(--line)}
 body .home-learning-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px}
 body .home-learning-heading h2{font-size:1.5rem;line-height:1.3;margin:0;font-weight:600;color:var(--ink)}
@@ -121,7 +127,7 @@ body :is(.grade-nav-list,.subject-picks){gap:6px;border:0;background:transparent
 body .grade-nav-list .grade-nav-item,body .subject-picks .subject-pick,body .home-learning .grade-nav-item,body .home-learning .subject-pick{box-sizing:border-box;min-height:42px;border:1px solid #ccdedf;border-radius:8px;background:#edf5f5;color:#285e6b;line-height:1.25;font-weight:600;padding:8px 5px}
 body .home-learning :is(.grade-nav-list,.subject-picks){gap:6px}
 body .grade-nav-list .grade-nav-item:hover,body .grade-nav-list .grade-nav-item.active,body .subject-picks .subject-pick:hover,body .home-learning .grade-nav-item:hover,body .home-learning .subject-pick:hover{background:#dceef0;border-color:#8ab9c2;color:#204d59}
-body .home-learning .subject-pick>span{color:#a74640}
+body .home-learning .subject-pick>span{color:var(--teal)}
 @media(max-width:620px){body .grade-nav-list .grade-nav-item{padding:8px 2px}body .subject-picks .subject-pick{font-size:.8125rem;padding:8px 4px}}
 
 /* Header interaction states are independent of lesson-link colors. */
@@ -186,9 +192,9 @@ html[data-theme="dark"] body header .nav-submenu{background:#21333c;border-color
 html[data-theme="dark"] body header .nav-submenu a{color:#e6f3fa}
 html[data-theme="dark"] body header .nav-submenu a:hover{background:transparent;color:#8bd9e9;text-decoration:none}
 html[data-theme="dark"] body:has(.lesson-course) header,html[data-theme="dark"] body.grading-page header,html[data-theme="dark"] body.menu-open:has(.lesson-course) header{background:#101b21}
-html[data-theme="dark"] body .hero.wrap{background:linear-gradient(120deg,#102b40,#153c53 55%,#302534);color:#edf7fc}
-html[data-theme="dark"] body .hero .mascot{background:#553745}
-html[data-theme="dark"] body .hero.wrap .float-note{background:#51313b;color:#f9e8de}
+html[data-theme="dark"] body .hero.wrap{background:#12394c;color:#edf7fc}
+html[data-theme="dark"] body .hero .mascot{background:#e1f5fa}
+html[data-theme="dark"] body .hero.wrap .float-note{background:#263e48;color:#e0f1fa}
 html[data-theme="dark"] body .home-learning :is(.grade-nav-list a,.subject-pick){background:#263e48;color:#d9f3fc;border-color:#384b54}
 html[data-theme="dark"] body .home-learning :is(.grade-nav-list a,.subject-pick):hover{background:#31545e;color:#8bd9e9}
 html[data-theme="dark"] body :is(.quiz-option,.lesson-practice-card,.exploration-stage,.glossary-popup){background:#21333c;color:#e6f3fa;border-color:#384b54}
@@ -197,7 +203,7 @@ html[data-theme="dark"] body .lesson-course .article-toc{background:#1c2c34;colo
 html[data-theme="dark"] body .hero h1{color:#edf7fc}
 html[data-theme="dark"] body .hero.wrap p{color:#abc5d6}
 html[data-theme="dark"] body .hero.wrap h1 :is(span,.hero-accent){color:#8bd9e9}
-html[data-theme="dark"] body .hero.wrap h1 .hero-highlight,html[data-theme="dark"] body .hero.wrap h1 .hero-highlight>span{color:#fd827b}
+html[data-theme="dark"] body .hero.wrap h1 .hero-highlight,html[data-theme="dark"] body .hero.wrap h1 .hero-highlight>span{color:#8bd9e9}
 html[data-theme="dark"] body.menu-open header{background:#101b21;color:#edf7fc}
 html[data-theme="dark"] body header nav#site-menu .nav-submenu{background:#21333c;color:#e6f3fa}
 @media(max-width:950px){
@@ -217,10 +223,10 @@ html[data-theme="dark"] body header .grading-link:hover .grading-label span{colo
 html[data-theme="dark"] body .home-learning .subject-section,
 html[data-theme="dark"] body .home-learning .subject-row,
 html[data-theme="dark"] body .home-learning .subject-picks{background:transparent;color:#e0f1fa;border-color:#384b54}
-html[data-theme="dark"] body .home-learning .subject-picks .subject-pick>span{background:transparent;color:#fd827b;border:0;box-shadow:none}
+html[data-theme="dark"] body .home-learning .subject-picks .subject-pick>span{background:transparent;color:#8bd9e9;border:0;box-shadow:none}
 html[data-theme="dark"] body .hero.wrap :is(.kicker,.hero-note){color:#b4cedf}
 html[data-theme="dark"] body .hero.wrap .float{background:#263e48;color:#e0f1fa;border-color:#3d647b;box-shadow:none}
-html[data-theme="dark"] body .hero.wrap .float-note{background:#51313b;color:#f9e8de}
+html[data-theme="dark"] body .hero.wrap .float-note{background:#263e48;color:#e0f1fa}
 html[data-theme="dark"] body .hero.wrap .float small{color:#b4cedf}
 html[data-theme="dark"] body .hero.wrap .orbit{border-color:#3d647b}
 html[data-theme="dark"] body .hero.wrap .hero-highlight svg{stroke:#fd827b}

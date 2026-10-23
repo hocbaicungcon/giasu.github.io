@@ -1,7 +1,7 @@
 /* credit: giasu.ai.vn */
 /* Đồng bộ tông màu tương tác: hover, focus, trạng thái chọn dùng họ cyan của logo.
    Các quy tắc màu từ giao diện cũ nằm rải rác trong những tệp style-* khác được ghi đè tại đây (tệp nạp sau cùng). */
-:root { --tone-green: #146b80; --tone-green-dark: #10576a; --tone-green-soft: #dceef0; --tone-green-line: #8ab9c2; --tone-focus: #146b80; }
+:root { --tone-green: #006b85; --tone-green-dark: #00546a; --tone-green-soft: #e1f5fa; --tone-green-line: #67bed3; --tone-focus: #006b85; }
 
 body :is(button, a, input, select, summary, .fun-player *):focus-visible,
 body .geometry-lab :is(button, input):focus-visible,
@@ -29,7 +29,7 @@ body header .grading-link:hover { color: #8bd9e9 !important; }
 body header .nav-submenu a:hover, body header .nav-submenu a:focus-visible { color: var(--teal) !important; }
 body header .grading-link:hover { border-color: var(--tone-green-line) !important; }
 
-body .grade-nav-item:hover { background: var(--tone-green) !important; border-color: var(--tone-green) !important; color: #fff !important; }
+body .grade-nav-item:hover { background: var(--brand-cyan) !important; border-color: var(--brand-cyan) !important; color: var(--brand-deep) !important; }
 body .sort-controls button[aria-pressed="true"] { color: var(--tone-green-dark) !important; border-color: var(--tone-green-line) !important; }
 body :is(.quiz-option:has(input:checked), form.quiz .quiz-option:has(input:checked)) { border-color: #1688a5 !important; }
 body .toc-nav a:hover { background: rgba(8, 125, 152, .12) !important; }

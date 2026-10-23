@@ -1,10 +1,12 @@
 /* Shared dark surfaces and contrast, after all component styles. */
 html[data-theme="dark"]{color-scheme:dark;--dark-surface:#1c2c34;--dark-line:#384b54;--dark-ink:#e6f3fa;--paper:#141f25;--card-bg:#1c2c34;--bg-secondary:#21333c;--ink:#e6f3fa;--muted:#b4cedf;--line:#384b54;--teal:#8bd9e9}
 /* Hero surfaces and ink change together so logo accents remain readable. */
-html[data-theme="dark"] body .hero.wrap{background:linear-gradient(110deg,var(--paper),var(--dark-surface));color:var(--ink)}
-html[data-theme="dark"] body .hero h1{color:var(--ink)}
+html[data-theme="dark"] body .hero.wrap{background:#12394c;color:var(--ink)}
+html[data-theme="dark"] body .hero :is(h1,p,.kicker,.hero-note){color:var(--ink)}
+html[data-theme="dark"] body .hero .kicker>span{background:var(--brand-cyan)}
+html[data-theme="dark"] body .hero .hero-note :is(span,i),html[data-theme="dark"] body .hero .spark{color:var(--brand-cyan)}
 html[data-theme="dark"] body .hero h1 .hero-accent{color:#8bd9e9}
-html[data-theme="dark"] body .hero h1 .hero-highlight,html[data-theme="dark"] body .hero h1 .hero-highlight>span{color:#fd827b}
+html[data-theme="dark"] body .hero h1 .hero-highlight,html[data-theme="dark"] body .hero h1 .hero-highlight>span{color:#8bd9e9}
 html[data-theme="dark"] body .hero :is(.mascot,.float-math,.float-book,.float-note){background:var(--dark-surface);color:var(--ink)}
 html[data-theme="dark"] body .hero .float-book small{color:var(--muted)}
 html[data-theme="dark"] body .hero .orbit{border-color:var(--dark-line)}

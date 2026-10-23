@@ -50,9 +50,9 @@ body .probability-sort .sort-actions [data-sort-reset]{background:transparent;co
 html[data-theme="dark"] body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#8bd9e9}
 html[data-theme="dark"] body .number-line-figure svg{color:#8bd9e9}
 body:has(.lesson-course) footer.wrap{width:auto}
-/* Matching class and subject links: a soft colour surface without an outline. */
-body .home-learning .grade-nav-list .grade-nav-item,body .home-learning .subject-picks .subject-pick{border:0;box-shadow:none;background:#edf5f5;color:#285e6b;border-radius:6px;min-height:42px;padding:8px 6px;font-weight:600}
-body .home-learning .grade-nav-list .grade-nav-item:hover,body .home-learning .grade-nav-list .grade-nav-item.active,body .home-learning .subject-picks .subject-pick:hover{background:#dceef0;color:#204d59;border:0}
+/* Neutral choices with a defined boundary; cyan marks interaction. */
+body .home-learning .grade-nav-list .grade-nav-item,body .home-learning .subject-picks .subject-pick{border:1px solid var(--line);box-shadow:none;background:var(--card-bg);color:var(--ink);border-radius:6px;min-height:42px;padding:8px 6px;font-weight:600}
+body .home-learning .grade-nav-list .grade-nav-item:hover,body .home-learning .grade-nav-list .grade-nav-item.active,body .home-learning .subject-picks .subject-pick:hover{background:var(--brand-cyan);color:var(--brand-deep);border:1px solid var(--brand-cyan)}
 html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:#263e48;color:#d9f3fc;border:0}
 html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item:hover,html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item.active,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:#31545e;color:#8bd9e9;border:0}
 /* Quieter course typography; colour marks the ideas, spacing separates sections. */
