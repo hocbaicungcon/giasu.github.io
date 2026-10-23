@@ -1,10 +1,10 @@
 /* credit: giasu.ai.vn */
 /* Trang chủ: banner game ngay sau hero và hero gọn trên điện thoại */
 
-.game-banner { position: relative; display: flex; align-items: center; flex-wrap: nowrap; gap: clamp(10px, 2.4vw, 22px); min-height: 0; margin: 0 auto; padding: 8px clamp(14px, 3vw, 28px) 14px; overflow: hidden; isolation: isolate; text-decoration: none; color: #2b2147; border-radius: 0; background: linear-gradient(180deg, #42caea 0%, #c4edf8 100%); box-shadow: none; font-family: "Baloo 2", ui-rounded, "Trebuchet MS", "Source Sans Pro", sans-serif; }
-.game-banner::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; z-index: -1; background: #fd827b; }
-.game-banner:hover .gb-go { background: #075c73; }
-.game-banner:focus-visible { outline: 4px solid #2b2147; outline-offset: -4px; }
+.game-banner { position: relative; display: flex; align-items: center; flex-wrap: nowrap; gap: clamp(10px, 2.4vw, 22px); min-height: 0; margin: 0 auto; padding: 8px clamp(14px, 3vw, 28px) 14px; overflow: hidden; isolation: isolate; text-decoration: none; color: var(--ink); border-radius: 0; background: var(--brand-soft); box-shadow: none; font-family: "Baloo 2", ui-rounded, "Trebuchet MS", "Source Sans Pro", sans-serif; }
+.game-banner::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; z-index: -1; background: var(--brand-coral); }
+.game-banner:hover .gb-go { background: #10576a; }
+.game-banner:focus-visible { outline: 3px solid var(--teal); outline-offset: -4px; }
 .gb-sky { position: relative; flex: none; width: 118px; height: 50px; }
 .gb-pet { position: absolute; bottom: -2px; width: 44px; height: auto; animation: pg-float 2.6s ease-in-out infinite; }
 .gb-pet-a { left: 0; } .gb-pet-b { left: 36px; bottom: 4px; animation-delay: -.9s; } .gb-pet-c { left: 72px; animation-delay: -1.7s; }
@@ -12,10 +12,12 @@
 .gb-star-a { left: 18px; top: -4px; width: 16px; } .gb-star-b { left: 92px; top: -2px; width: 14px; }
 .gb-rocket { display: none; }
 .gb-text { display: flex; flex: 1 1 auto; align-items: baseline; flex-wrap: wrap; gap: 0 12px; min-width: 0; }
-.gb-kicker { font-size: 12px; font-weight: 800; letter-spacing: .12em; color: #7c4dff; }
-.gb-text strong { font-size: clamp(20px, 3.6vw, 26px); line-height: 1.2; font-weight: 800; background: linear-gradient(90deg, #ff5c8a, #ff9800, #7c4dff); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.gb-sub { font-size: 15px; font-weight: 600; color: #3d3463; }
-.gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 800; color: #fff; background: #087d98; border-radius: 999px; box-shadow: 0 3px 0 #075c73; white-space: nowrap; }
+.gb-kicker { font-size: 12px; font-weight: 800; letter-spacing: .12em; color: var(--teal); }
+.gb-text strong { font-size: clamp(20px, 3.6vw, 26px); line-height: 1.2; font-weight: 800; color: var(--ink); }
+.gb-sub { font-size: 15px; font-weight: 600; color: var(--muted); }
+.gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 800; color: #fff; background: #146b80; border-radius: 999px; box-shadow: none; white-space: nowrap; }
+html[data-theme="dark"] body .game-banner { background: var(--dark-surface); color: var(--ink); }
+
 @keyframes gb-fly { 0%, 100% { transform: translate(0, 0) rotate(0); } 50% { transform: translate(-10px, -8px) rotate(-6deg); } }
 @media (max-width: 900px) { .gb-sub { display: none; } }
 @media (max-width: 520px) {

@@ -1,43 +1,51 @@
 /* Shared dark surfaces and contrast, after all component styles. */
-html[data-theme="dark"]{color-scheme:dark;--dark-surface:#152b3c;--dark-line:#315064;--dark-ink:#e6f3fa;--paper:#0d1b29;--card-bg:#152b3c;--bg-secondary:#132f42;--ink:#e6f3fa;--muted:#b4cedf;--line:#315064;--teal:#69d7f2}
+html[data-theme="dark"]{color-scheme:dark;--dark-surface:#1c2c34;--dark-line:#384b54;--dark-ink:#e6f3fa;--paper:#141f25;--card-bg:#1c2c34;--bg-secondary:#21333c;--ink:#e6f3fa;--muted:#b4cedf;--line:#384b54;--teal:#8bd9e9}
+/* Hero surfaces and ink change together so logo accents remain readable. */
+html[data-theme="dark"] body .hero.wrap{background:linear-gradient(110deg,var(--paper),var(--dark-surface));color:var(--ink)}
+html[data-theme="dark"] body .hero h1{color:var(--ink)}
+html[data-theme="dark"] body .hero h1 .hero-accent{color:#8bd9e9}
+html[data-theme="dark"] body .hero h1 .hero-highlight,html[data-theme="dark"] body .hero h1 .hero-highlight>span{color:#fd827b}
+html[data-theme="dark"] body .hero :is(.mascot,.float-math,.float-book,.float-note){background:var(--dark-surface);color:var(--ink)}
+html[data-theme="dark"] body .hero .float-book small{color:var(--muted)}
+html[data-theme="dark"] body .hero .orbit{border-color:var(--dark-line)}
 /* Subject choices are simple icon-and-text links, in both themes. */
 body .home-learning .subject-picks .subject-pick{background:transparent;border:0;box-shadow:none}
-body .home-learning .subject-picks .subject-pick:hover{background:transparent;border:0;color:#087d98}
+body .home-learning .subject-picks .subject-pick:hover{background:transparent;border:0;color:#146b80}
 html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:transparent;border:0;color:#d9f3fc;box-shadow:none}
-html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:transparent;color:#69d7f2}
+html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:transparent;color:#8bd9e9}
 html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
 html[data-theme="dark"] body :is(.library-page-header,.article-heading,.exam-wrap,.article-wrap,.library-home,.about,.article-end,.aside-note){background:var(--paper);color:var(--ink)}
 html[data-theme="dark"] body :is(.prose blockquote,.prose details,.prose pre,.quiz-explanation,.lesson-solution,.exam-review,.practice-card,.geometry-lab,.lesson-exploration,.fun-content){background:var(--dark-surface);color:var(--ink);border-color:var(--line)}
 html[data-theme="dark"] body :is(.prose,.exam-wrap) :is(h1,h2,h3,h4,legend,summary,p,li,td,th){color:inherit}
 html[data-theme="dark"] body :is(.card,.related-card,.about,.aside-note,.article-heading) p{color:var(--muted)}
-html[data-theme="dark"] body :is(.tag,.category,.practice-gap-select,.practice-cloze .practice-gap-select){background:#1b3d51;color:#d9f3fc;border-color:var(--line)}
-html[data-theme="dark"] body .quiz-option:has(input:checked){background:#244936;color:#e6f3fa;border-color:#69d7f2}
-html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle,.library-sections a.active){background:#087d98;color:#fff;border-color:#087d98}
-html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{background:#086b84;color:#fff}
-html[data-theme="dark"] body .prose a{color:#69d7f2}
-html[data-theme="dark"] body :is(.glossary-term,.practice-kicker,.related-action){color:#69d7f2}
-html[data-theme="dark"] body .glossary-popup{background:#132f42;color:var(--ink);border-color:#3d647b}
-html[data-theme="dark"] body :is(input,select,textarea){background:#0d1b29;color:var(--ink);border-color:#3d647b}
-html[data-theme="dark"] body :is(table th,table td){border-color:#315064}
-html[data-theme="dark"] body :is(.fun-player,.fun-tile,.game-panel){background:#152b3c;color:var(--ink);border-color:#315064}
-html[data-theme="dark"] body header :is(.nav-exams>summary,.nav-pill,.display-controls button):hover{background:transparent;color:#69d7f2;text-decoration:none}
+html[data-theme="dark"] body :is(.tag,.category,.practice-gap-select,.practice-cloze .practice-gap-select){background:#263e48;color:#d9f3fc;border-color:var(--line)}
+html[data-theme="dark"] body .quiz-option:has(input:checked){background:#31545e;color:#e6f3fa;border-color:#8bd9e9}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle,.library-sections a.active){background:#146b80;color:#fff;border-color:#146b80}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{background:#10576a;color:#fff}
+html[data-theme="dark"] body .prose a{color:#8bd9e9}
+html[data-theme="dark"] body :is(.glossary-term,.practice-kicker,.related-action){color:#8bd9e9}
+html[data-theme="dark"] body .glossary-popup{background:#21333c;color:var(--ink);border-color:#3d647b}
+html[data-theme="dark"] body :is(input,select,textarea){background:#141f25;color:var(--ink);border-color:#3d647b}
+html[data-theme="dark"] body :is(table th,table td){border-color:#384b54}
+html[data-theme="dark"] body :is(.fun-player,.fun-tile,.game-panel){background:#1c2c34;color:var(--ink);border-color:#384b54}
+html[data-theme="dark"] body header :is(.nav-exams>summary,.nav-pill,.display-controls button):hover{background:transparent;color:#8bd9e9;text-decoration:none}
 /* The grading app uses the same saved preference and dark palette. */
-html[data-theme="dark"] body.grading-page{background:#0d1b29;color:var(--ink)}
-html[data-theme="dark"] body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important,.key,.config-summary,.config-row,.upload-zone,.upload-area,.guide-links,.mobile-nav,.manual-key-form,.batch-feedback){background:#152b3c;color:var(--ink);border-color:#315064}
+html[data-theme="dark"] body.grading-page{background:#141f25;color:var(--ink)}
+html[data-theme="dark"] body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important,.key,.config-summary,.config-row,.upload-zone,.upload-area,.guide-links,.mobile-nav,.manual-key-form,.batch-feedback){background:#1c2c34;color:var(--ink);border-color:#384b54}
 html[data-theme="dark"] body.grading-page :is(h1,h2,h3,h4,label,strong,.hint,.meta,.small,.step,.eyebrow,.hero-card span){color:#d9f3fc}
 html[data-theme="dark"] body.grading-page .hero p:not(.eyebrow){color:#b4cedf}
 html[data-theme="dark"] body.grading-page .hero h1 em{color:#fd827b}
-html[data-theme="dark"] body.grading-page :is(.button.ghost,.small,.manual-key-form button){background:#1b3d51;color:#d9f3fc;border-color:#3d647b}
-html[data-theme="dark"] body.grading-page :is(.button.ghost,.small,.manual-key-form button):hover{background:#24546b;color:#fff}
+html[data-theme="dark"] body.grading-page :is(.button.ghost,.small,.manual-key-form button){background:#263e48;color:#d9f3fc;border-color:#3d647b}
+html[data-theme="dark"] body.grading-page :is(.button.ghost,.small,.manual-key-form button):hover{background:#31545e;color:#fff}
 html[data-theme="dark"] body.grading-page :is(.small.danger,#deleteExamKey,#deleteAllKeys){background:#382322;color:#ffada1;border-color:#71473f}
-html[data-theme="dark"] body.grading-page :is(.button,.small,.manual-key-form button,.key-choices button,#scanCameraButton,#deleteExamKey,#deleteAllKeys):disabled{background:var(--bg-secondary);color:var(--muted);border-color:#315064}
-html[data-theme="dark"] body.grading-page .mobile-nav button[aria-current="page"]{background:#244936;color:#d9f3fc}
-html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton){background:#087d98;color:#fff}
-html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton):hover{background:#086b84;color:#fff}
+html[data-theme="dark"] body.grading-page :is(.button,.small,.manual-key-form button,.key-choices button,#scanCameraButton,#deleteExamKey,#deleteAllKeys):disabled{background:var(--bg-secondary);color:var(--muted);border-color:#384b54}
+html[data-theme="dark"] body.grading-page .mobile-nav button[aria-current="page"]{background:#31545e;color:#d9f3fc}
+html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton){background:#146b80;color:#fff}
+html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton):hover{background:#10576a;color:#fff}
 body .home-learning .subject-section,body .home-learning .subject-row,body .home-learning .subject-picks{border:0;box-shadow:none}
 html[data-theme="dark"] body .home-learning .grade-nav-title{color:#b4cedf}
-html[data-theme="dark"] body .library .card .card-art,html[data-theme="dark"] body .related-card .related-card-art{background:#1b3d51;color:#e6f3fa;border-color:#315064}
-html[data-theme="dark"] body .related-grade-pill{background:#24546b;color:#d9f3fc}
+html[data-theme="dark"] body .library .card .card-art,html[data-theme="dark"] body .related-card .related-card-art{background:#263e48;color:#e6f3fa;border-color:#384b54}
+html[data-theme="dark"] body .related-grade-pill{background:#31545e;color:#d9f3fc}
 
 /* Hand-written widgets use fixed light-theme colours, so in the dark theme they stay a light island
    with the light variables restored; text without its own colour inherits dark ink from the island. */

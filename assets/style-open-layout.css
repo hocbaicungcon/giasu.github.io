@@ -16,45 +16,45 @@ body .card-art,body .related-card-art{border-radius:6px}
 body .home-learning,body .home-learning .subject-section{border:0;box-shadow:none;background:transparent}
 body.grading-page main{max-width:none;padding-inline:clamp(16px,3vw,48px)}
 body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important){border:0;box-shadow:none;border-radius:0;background:transparent}
-html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] body main.lesson-course.article-wrap.wrap{background:#0d1b29;color:#e6f3fa}
+html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] body main.lesson-course.article-wrap.wrap{background:#141f25;color:#e6f3fa}
 html[data-theme="dark"] body .lesson-course .prose :is(blockquote.callout,.quiz,.geometry-lab,.practice-card,.lesson-exploration,.quiz-explanation,.lesson-progress){background:transparent;border:0;color:#e6f3fa}
 html[data-theme="dark"] body.grading-page :is(.hero,.hero-card,.panel,.results,.guide-important){background:transparent;border:0;color:#e6f3fa}
 html[data-theme="dark"] body :is(.card,.related-card,.home-learning){background:transparent}
 .probability-sort{margin-block:28px 44px}
 .sort-scale{display:flex;justify-content:space-between;gap:16px;font-size:.875rem;color:var(--muted);margin:14px 0 10px}
 body .sort-events{list-style:none;margin:0;padding:0;display:grid;gap:8px;max-width:100%}
-body .sort-events .sort-event{display:flex;align-items:center;gap:10px;min-height:58px;margin:0;padding:8px 12px 8px 6px;border:0;border-radius:6px;background:#daf2fa;color:#173449;font-size:1rem;line-height:1.45;transition:background .15s}
-body .sort-event.is-dragging{background:#b8e7f5;outline:2px solid #087d98;z-index:1;cursor:grabbing}
+body .sort-events .sort-event{display:flex;align-items:center;gap:10px;min-height:58px;margin:0;padding:8px 12px 8px 6px;border:0;border-radius:6px;background:#edf5f5;color:#243b45;font-size:1rem;line-height:1.45;transition:background .15s}
+body .sort-event.is-dragging{background:#dceef0;outline:2px solid #146b80;z-index:1;cursor:grabbing}
 .sort-event-text{flex:1;min-width:0}
 .sort-event svg{width:20px;height:20px;display:block;flex:none}
-.sort-event-icon{color:#c33f4c;flex:none}
+.sort-event-icon{color:#a74640;flex:none}
 .sort-position{color:var(--muted);font-size:.875rem;width:16px;text-align:center;flex:none}
-body .sort-event :is(.sort-handle,.sort-moves button){display:flex;align-items:center;justify-content:center;width:32px;min-height:32px;padding:4px;border:0;background:transparent;color:#087d98;border-radius:0;flex:none}
+body .sort-event :is(.sort-handle,.sort-moves button){display:flex;align-items:center;justify-content:center;width:32px;min-height:32px;padding:4px;border:0;background:transparent;color:#146b80;border-radius:0;flex:none}
 body .sort-event .sort-handle{touch-action:none;cursor:grab}
 body .sort-event .sort-handle svg{stroke-width:4}
 .sort-moves{display:flex;gap:2px}
 body .sort-event .sort-moves button:disabled{opacity:.3;cursor:default;background:transparent}
 .sort-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .sort-feedback{min-height:1.5em;font-size:.9375rem;color:var(--muted)}
-.probability-sort.is-correct .sort-feedback{color:#087d98}
+.probability-sort.is-correct .sort-feedback{color:#146b80}
 .sort-explanation{padding:8px 0;font-size:1rem}
-html[data-theme="dark"] body .sort-events .sort-event{background:#1b3d51;color:#e6f3fa}
-html[data-theme="dark"] body .sort-event.is-dragging{background:#24546b;outline-color:#69d7f2}
-html[data-theme="dark"] body .sort-event :is(.sort-handle,.sort-moves button){color:#69d7f2;background:transparent}
+html[data-theme="dark"] body .sort-events .sort-event{background:#263e48;color:#e6f3fa}
+html[data-theme="dark"] body .sort-event.is-dragging{background:#31545e;outline-color:#8bd9e9}
+html[data-theme="dark"] body .sort-event :is(.sort-handle,.sort-moves button){color:#8bd9e9;background:transparent}
 html[data-theme="dark"] body .sort-event-icon{color:#fd827b}
-html[data-theme="dark"] body .probability-sort.is-correct .sort-feedback{color:#69d7f2}
+html[data-theme="dark"] body .probability-sort.is-correct .sort-feedback{color:#8bd9e9}
 @media(max-width:620px){body .sort-events .sort-event{gap:6px;padding:8px 6px;font-size:.9375rem;min-height:64px}.sort-moves{flex-direction:column;gap:0}body .sort-event .sort-moves button{min-height:28px;height:28px;width:28px}.sort-position{display:none}}
-body .probability-sort .sort-actions button{background:#087d98;color:#fff;border:0;padding:8px 14px}
-body .probability-sort .sort-actions button:hover{background:#075c73;color:#fff}
-body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#087d98}
-html[data-theme="dark"] body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#69d7f2}
-html[data-theme="dark"] body .number-line-figure svg{color:#69d7f2}
+body .probability-sort .sort-actions button{background:#146b80;color:#fff;border:0;padding:8px 14px}
+body .probability-sort .sort-actions button:hover{background:#10576a;color:#fff}
+body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#146b80}
+html[data-theme="dark"] body .probability-sort .sort-actions [data-sort-reset]{background:transparent;color:#8bd9e9}
+html[data-theme="dark"] body .number-line-figure svg{color:#8bd9e9}
 body:has(.lesson-course) footer.wrap{width:auto}
 /* Matching class and subject links: a soft colour surface without an outline. */
-body .home-learning .grade-nav-list .grade-nav-item,body .home-learning .subject-picks .subject-pick{border:0;box-shadow:none;background:#daf2fa;color:#10536e;border-radius:6px;min-height:42px;padding:8px 6px;font-weight:600}
-body .home-learning .grade-nav-list .grade-nav-item:hover,body .home-learning .grade-nav-list .grade-nav-item.active,body .home-learning .subject-picks .subject-pick:hover{background:#b8e7f5;color:#0a3e55;border:0}
-html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:#1b3d51;color:#d9f3fc;border:0}
-html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item:hover,html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item.active,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:#24546b;color:#69d7f2;border:0}
+body .home-learning .grade-nav-list .grade-nav-item,body .home-learning .subject-picks .subject-pick{border:0;box-shadow:none;background:#edf5f5;color:#285e6b;border-radius:6px;min-height:42px;padding:8px 6px;font-weight:600}
+body .home-learning .grade-nav-list .grade-nav-item:hover,body .home-learning .grade-nav-list .grade-nav-item.active,body .home-learning .subject-picks .subject-pick:hover{background:#dceef0;color:#204d59;border:0}
+html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:#263e48;color:#d9f3fc;border:0}
+html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item:hover,html[data-theme="dark"] body .home-learning .grade-nav-list .grade-nav-item.active,html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:#31545e;color:#8bd9e9;border:0}
 /* Quieter course typography; colour marks the ideas, spacing separates sections. */
 body .lesson-course .article-heading h1{font-weight:600;letter-spacing:-.02em;line-height:1.2;margin-block:12px 18px}
 body .lesson-course .prose :is(h2,h3){font-weight:600;letter-spacing:0}
@@ -81,29 +81,29 @@ body.grading-page header{height:var(--site-header-height)}
 body .lesson-course .article-toc{top:var(--site-header-height)}
 html[data-theme="dark"] body header nav#site-menu{background:transparent;color:#edf7fc}
 html[data-theme="dark"] body header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button){background:transparent;color:#edf7fc;border:0;-webkit-text-fill-color:currentColor}
-html[data-theme="dark"] body header nav#site-menu .nav-exams[open]>summary,html[data-theme="dark"] body header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button):hover{background:transparent;color:#69d7f2;border:0;text-decoration:none}
-html[data-theme="dark"] body header nav#site-menu .nav-submenu{background:#132f42;color:#edf7fc;border:0}
+html[data-theme="dark"] body header nav#site-menu .nav-exams[open]>summary,html[data-theme="dark"] body header nav#site-menu :is(.nav-exams>summary,.nav-pill,.display-controls button):hover{background:transparent;color:#8bd9e9;border:0;text-decoration:none}
+html[data-theme="dark"] body header nav#site-menu .nav-submenu{background:#21333c;color:#edf7fc;border:0}
 html[data-theme="dark"] body header nav#site-menu .nav-submenu a{background:transparent;color:#edf7fc;border:0;-webkit-text-fill-color:currentColor;text-decoration:none}
-html[data-theme="dark"] body header nav#site-menu .nav-submenu a:hover,html[data-theme="dark"] body header nav#site-menu .nav-submenu a:focus-visible{background:transparent;color:#69d7f2;border:0;text-decoration:none}
-html[data-theme="dark"] body header .display-settings .display-controls{background:#132f42;color:#edf7fc}
-@media(max-width:950px){body.menu-open header nav#site-menu{top:var(--site-header-height);max-height:calc(100dvh - var(--site-header-height))}html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#091824}html[data-theme="dark"] body.menu-open header nav#site-menu .display-settings .display-controls{background:transparent}}
+html[data-theme="dark"] body header nav#site-menu .nav-submenu a:hover,html[data-theme="dark"] body header nav#site-menu .nav-submenu a:focus-visible{background:transparent;color:#8bd9e9;border:0;text-decoration:none}
+html[data-theme="dark"] body header .display-settings .display-controls{background:#21333c;color:#edf7fc}
+@media(max-width:950px){body.menu-open header nav#site-menu{top:var(--site-header-height);max-height:calc(100dvh - var(--site-header-height))}html[data-theme="dark"] body.menu-open header nav#site-menu .nav-submenu{background:#101b21}html[data-theme="dark"] body.menu-open header nav#site-menu .display-settings .display-controls{background:transparent}}
 @media(max-width:620px){body header .nav.wrap,body:has(.lesson-course) header .nav.wrap{gap:8px}body header .brand,body:has(.lesson-course) header .brand{font-size:.875rem}body header .menu-toggle{min-height:40px}}
 
 /* Light-theme lesson lists have a visible individual card boundary. */
 html:not([data-theme="dark"]) body :is(.card,.related-card){border:1px solid var(--line);background:var(--card-bg)}
 
 /* Exam session bar sits below the shared header in both themes. */
-body .exam-toolbar{top:var(--site-header-height,52px);z-index:20;background:#124c65;border:0;border-radius:0 0 12px 12px;color:#fff;padding:10px 16px;box-shadow:0 3px 10px #112e4126}
+body .exam-toolbar{top:var(--site-header-height,52px);z-index:20;background:#203c46;border:0;border-radius:0 0 12px 12px;color:#fff;padding:10px 16px;box-shadow:0 3px 10px #112e4126}
 body .exam-toolbar :is(#exam-timer,#exam-progress){color:#fff}
 body .exam-toolbar #exam-timer{font-variant-numeric:tabular-nums;font-weight:700}
 body .exam-toolbar #exam-timer::before{color:#42caea}
-body .exam-toolbar #submit-exam{background:#fd827b;color:#173449;border:0}
-body .exam-toolbar #submit-exam:hover{background:#ffa49e;color:#173449}
-html[data-theme="dark"] body .exam-wrap .exam-toolbar{background:#132f42;border:0;color:#fff}
+body .exam-toolbar #submit-exam{background:#fd827b;color:#243b45;border:0}
+body .exam-toolbar #submit-exam:hover{background:#ffa49e;color:#243b45}
+html[data-theme="dark"] body .exam-wrap .exam-toolbar{background:#21333c;border:0;color:#fff}
 html[data-theme="dark"] body .exam-toolbar :is(#exam-timer,#exam-progress){color:#fff}
 html[data-theme="dark"] body .exam-toolbar #exam-timer::before{color:#42caea}
-html[data-theme="dark"] body .exam-toolbar #submit-exam{background:#fd827b;color:#173449;border:0}
-html[data-theme="dark"] body .exam-toolbar #submit-exam:hover{background:#ffa49e;color:#173449}
+html[data-theme="dark"] body .exam-toolbar #submit-exam{background:#fd827b;color:#243b45;border:0}
+html[data-theme="dark"] body .exam-toolbar #submit-exam:hover{background:#ffa49e;color:#243b45}
 body .exam-question{scroll-margin-top:calc(var(--site-header-height,52px) + 100px)}
 body .exam-question .quiz-option{width:100%;box-sizing:border-box;min-height:44px;align-items:center;font-size:1rem;line-height:1.6;border-width:1px}
 body .exam-question .quiz-option>span{min-width:0;flex:1}
