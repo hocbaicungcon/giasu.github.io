@@ -1,1 +1,395 @@
-import{answerXlsx as fe,answerTsv as ke}from"../src/xlsx.js";import{prepareEnglish as ye,unansweredQuestions as ne,parseBody as w,analyze as $,answersOf as j,normalize as we,applyAnswerKey as $e,shuffleVersion as Te,answerTable as R,answerTableXml as D,appendToBody as ae,prependToBody as Ce}from"../src/exam.js";import{DEFAULT_FORM as F,examHeaderXml as ie,examEndXml as Me,examFooterXml as qe,simplePackage as oe}from"../src/exam-header.js";import"../src/ooxml.js";import{buildExamPptx as Ee,preparePptxSource as Ne,PPTX_THEMES as se}from"../src/pptx.js";import{qrPayloads as Pe,renderQr as Le}from"../src/answer-qr.js";import{makePicturePackage as Se,canvasToPng as ce,downloadBlob as Ae}from"../src/picture.js";const d=y=>String(y??"").replace(/[&<>"]/g,u=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[u]);function Ge(y,u){y.innerHTML='\n  <div class="notice">Nh\u1EADn d\u1EA1ng: <b>PH\u1EA6N I/II/III</b>, <b>C\xE2u N.</b> ho\u1EB7c <b>Question N.</b> (\u0111\u1EC1 ti\u1EBFng Anh, t\u1EF1 nh\u1EADn),ph\u01B0\u01A1ng \xE1n <b>A. B. C. D.</b>, \xFD <b>a) b) c) d)</b>. \u0110\xE1p \xE1n \u0111\xFAng \u0111\u01B0\u1EE3c nh\u1EADn qua nh\xE3n ph\u01B0\u01A1ng \xE1n <b>g\u1EA1ch ch\xE2n / ch\u1EEF \u0111\u1ECF / t\xF4 n\u1ED5i</b>. M\u1ECDi thao t\xE1c ghi v\xE0o t\xE0i li\u1EC7u ch\u1EC9 ch\u1EA1y khi b\u1EA1n b\u1EA5m n\xFAt; h\xE3y l\xE0m tr\xEAn b\u1EA3n sao.</div>\n  <fieldset><legend>1. Ph\xE2n t\xEDch \u0111\u1EC1</legend>\n    <div class="btns"><button class="primary" id="ex-analyze">Ph\xE2n t\xEDch t\xE0i li\u1EC7u</button></div>\n    <div id="ex-summary" class="muted"></div>\n  </fieldset>\n  <fieldset><legend>2. Chu\u1EA9n h\xF3a c\xE2u h\u1ECFi</legend>\n    <label class="field"><span>\u0110\xE1nh s\u1ED1 l\u1EA1i c\xE2u</span>\n      <select id="ex-renumber"><option value="part">theo t\u1EEBng ph\u1EA7n (m\u1ED7i ph\u1EA7n b\u1EAFt \u0111\u1EA7u t\u1EEB C\xE2u 1)</option><option value="continuous">li\xEAn t\u1EE5c to\xE0n \u0111\u1EC1</option><option value="">kh\xF4ng \u0111\u1ED5i</option></select></label>\n    <label class="field"><span>C\u0103n l\u1EC1 ph\u01B0\u01A1ng \xE1n</span>\n      <select id="ex-layout"><option value="auto">t\u1EF1 \u0111\u1ED9ng (1 d\xF2ng / 2 d\xF2ng / 4 d\xF2ng theo \u0111\u1ED9 d\xE0i)</option><option value="4">lu\xF4n 4 c\u1ED9t</option><option value="2">lu\xF4n 2 c\u1ED9t</option><option value="1">m\u1ED7i ph\u01B0\u01A1ng \xE1n m\u1ED9t d\xF2ng</option><option value="false">gi\u1EEF nguy\xEAn</option></select></label>\n    <label class="field"><span>T\u1EEB trong nh\xE3n c\xE2u</span>\n      <select id="ex-word"><option value="keep">gi\u1EEF nguy\xEAn nh\u01B0 t\xE0i li\u1EC7u (C\xE2u 1. / B\xE0i 1. / b\xE0i 1:)</option><option value="C\xE2u">\u0111\u1ED5i t\u1EA5t c\u1EA3 th\xE0nh \u201CC\xE2u N.\u201D</option><option value="B\xE0i">\u0111\u1ED5i t\u1EA5t c\u1EA3 th\xE0nh \u201CB\xE0i N.\u201D</option></select></label>\n    <label class="field"><span>Ph\xF4ng ch\u1EEF</span>\n      <select id="ex-font"><option value="Times New Roman">Times New Roman</option><option value="Cambria">Cambria</option><option value="Arial">Arial</option><option value="Calibri">Calibri</option><option value="Tahoma">Tahoma</option><option value="">gi\u1EEF nguy\xEAn</option></select></label>\n    <label class="field"><span>C\u1EE1 ch\u1EEF</span>\n      <select id="ex-fsize"><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="11">11 pt</option><option value="0">gi\u1EEF nguy\xEAn</option></select></label>\n    <label class="field"><span>C\u1EE1 c\xF4ng th\u1EE9c</span>\n      <select id="ex-msize"><option value="text">b\u1EB1ng c\u1EE1 ch\u1EEF</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="0">gi\u1EEF nguy\xEAn</option></select></label>\n    <label><input type="checkbox" id="ex-labels" checked> nh\xE3n A. B. C. D. in \u0111\u1EADm, vi\u1EBFt hoa, d\u1EA5u ch\u1EA5m</label>\n    <label><input type="checkbox" id="ex-qformat" checked> nh\xE3n \u201CC\xE2u N.\u201D / \u201CB\xE0i N.\u201D c\xF9ng \u0111\u1ECBnh d\u1EA1ng v\u1EDBi c\xE2u \u0111\u1EA7u ti\xEAn</label>\n    <div class="subhead">Nh\xE3n \u201CC\xE2u N.\u201D</div>\n    <label><input type="checkbox" id="ex-qbold" checked> in \u0111\u1EADm nh\xE3n c\xE2u</label>\n    <label class="field"><span>M\xE0u nh\xE3n c\xE2u</span>\n      <select id="ex-qcolor"><option value="">gi\u1EEF nguy\xEAn (t\u1EF1 \u0111\u1ED9ng)</option><option value="000000">\u0111en</option><option value="C00000">\u0111\u1ECF \u0111\u1EADm</option><option value="0000FF">xanh d\u01B0\u01A1ng</option><option value="1F4E79">xanh navy</option><option value="006100">xanh l\u1EE5c</option><option value="7030A0">t\xEDm</option><option value="ED7D31">cam</option><option value="custom">m\xE0u kh\xE1c\u2026</option></select><input type="color" id="ex-qcolor-custom" value="#c00000" hidden style="margin-left:6px"></label>\n    <label><input type="checkbox" id="ex-qbreak"> xu\u1ED1ng d\xF2ng sau nh\xE3n (n\u1ED9i dung c\xE2u h\u1ECFi b\u1EAFt \u0111\u1EA7u \u1EDF d\xF2ng m\u1EDBi)</label>\n    <label><input type="checkbox" id="ex-keep" checked> gi\u1EEF c\xE2u h\u1ECFi v\xE0 ph\u01B0\u01A1ng \xE1n c\xF9ng trang (keep with next)</label>\n    <label><input type="checkbox" id="ex-backup1"> T\xF4i \u0111\xE3 l\u01B0u m\u1ED9t b\u1EA3n sao t\xE0i li\u1EC7u</label>\n    <div class="btns"><button class="primary" id="ex-normalize">Chu\u1EA9n h\xF3a</button></div>\n    <div id="ex-norm-out"></div>\n  </fieldset>\n  <fieldset><legend>3. Tr\u1ED9n \u0111\u1EC1 &amp; b\u1EA3ng \u0111\xE1p \xE1n</legend>\n    <div class="grid2"><label class="field"><span>S\u1ED1 m\xE3 \u0111\u1EC1</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>H\u1EA1t gi\u1ED1ng</span><input type="number" id="ex-seed" value="2026"></label></div>\n    <label class="field"><span>M\xE3 \u0111\u1EC1 (c\xE1ch nhau d\u1EA5u ph\u1EA9y)</span><input type="text" id="ex-code" value="1001" placeholder="1001 ho\u1EB7c 1001, 1002, A1\u2026" spellcheck="false" title="M\u1ED9t s\u1ED1: m\xE3 \u0111\u1EC1 \u0111\u1EA7u, c\xE1c m\xE3 sau t\u0103ng d\u1EA7n (4 ch\u1EEF s\u1ED1). Nhi\u1EC1u m\xE3 c\xE1ch nhau d\u1EA5u ph\u1EA9y: d\xF9ng \u0111\xFAng c\xE1c m\xE3 \u0111\xF3, kh\xF4ng c\u1EA7n \u2018S\u1ED1 m\xE3 \u0111\u1EC1\u2019."></label>\n    <label><input type="checkbox" id="ex-shq" checked> tr\u1ED9n th\u1EE9 t\u1EF1 c\xE2u trong t\u1EEBng ph\u1EA7n</label>\n    <label><input type="checkbox" id="ex-sho" checked> tr\u1ED9n th\u1EE9 t\u1EF1 ph\u01B0\u01A1ng \xE1n A\u2013D (gi\u1EEF nguy\xEAn c\xE2u c\xF3 \u201Cc\u1EA3 A v\xE0 B\u2026\u201D, \u201Ct\u1EA5t c\u1EA3 c\xE1c \u0111\xE1p \xE1n\u2026\u201D)</label>\n    <label><input type="checkbox" id="ex-shs"> tr\u1ED9n c\u1EA3 th\u1EE9 t\u1EF1 \xFD a) b) c) d) \u1EDF ph\u1EA7n \u0111\xFAng sai</label>\n    <div id="ex-sections"></div>\n    <label><input type="checkbox" id="ex-strip" checked> b\u1ECF d\u1EA5u \u0111\xE1p \xE1n (g\u1EA1ch ch\xE2n/\u0111\u1ECF) kh\u1ECFi \u0111\u1EC1 tr\u1ED9n</label>\n    <label><input type="checkbox" id="ex-withkey" checked> th\xEAm b\u1EA3ng \u0111\xE1p \xE1n c\u1EE7a m\xE3 \u0111\u1EC1 v\xE0o cu\u1ED1i m\u1ED7i \u0111\u1EC1</label>\n    <details class="mt-details" id="ex-form-box"><summary>Ti\xEAu \u0111\u1EC1, ch\xE2n trang, d\xF2ng H\u1EBET (theo m\u1EABu \u0111\u1EC1 ki\u1EC3m tra)</summary>\n      <label><input type="checkbox" id="ex-h-title" checked> th\xEAm kh\u1ED1i ti\xEAu \u0111\u1EC1 (S\u1EDF, Tr\u01B0\u1EDDng, K\u1EF3 thi, H\u1ECD t\xEAn, M\xE3 \u0111\u1EC1) \u0111\u1EA7u m\u1ED7i \u0111\u1EC1</label>\n      <label><input type="checkbox" id="ex-h-end" checked> th\xEAm d\xF2ng ----H\u1EBET---- cu\u1ED1i \u0111\u1EC1</label>\n      <label><input type="checkbox" id="ex-h-footer" checked> th\xEAm ch\xE2n trang \u201CTrang X/Y-M\xE3 \u0111\u1EC1\u201D (khi m\u1EDF t\xE0i li\u1EC7u m\u1EDBi)</label>\n      <div class="grid2">\n        <label class="field"><span>S\u1EDF GD&amp;\u0110T</span><input type="text" id="ex-f-soGd"></label>\n        <label class="field"><span>Tr\u01B0\u1EDDng</span><input type="text" id="ex-f-truong"></label>\n        <label class="field"><span>D\xF2ng th\u1EE9 3 (b\xEAn tr\xE1i)</span><input type="text" id="ex-f-chinhThuc"></label>\n        <label class="field"><span>K\u1EF3 ki\u1EC3m tra</span><input type="text" id="ex-f-kyThi"></label>\n        <label class="field"><span>N\u0103m h\u1ECDc</span><input type="text" id="ex-f-namHoc"></label>\n        <label class="field"><span>M\xF4n</span><input type="text" id="ex-f-mon" placeholder="vd. To\xE1n"></label>\n        <label class="field"><span>L\u1EDBp</span><input type="text" id="ex-f-lop" placeholder="vd. 12"></label>\n        <label class="field"><span>Th\u1EDDi gian (ph\xFAt)</span><input type="text" id="ex-f-thoiGian" placeholder="vd. 90"></label>\n      </div>\n      <div class="btns two"><button class="secondary" id="ex-f-reset">Kh\xF4i ph\u1EE5c m\u1EB7c \u0111\u1ECBnh</button><button class="secondary" id="ex-f-insert" title="Ch\xE8n kh\u1ED1i ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF, m\xE3 \u0111\u1EC1 l\u1EA5y t\u1EEB \xF4 \u201CM\xE3 \u0111\u1EC1\u201D (m\xE3 \u0111\u1EA7u ti\xEAn)">Ch\xE8n ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF</button></div>\n    </details>\n    <label class="field"><span>N\u01A1i \u0111\u1EB7t k\u1EBFt qu\u1EA3</span>\n      <select id="ex-target"><option value="new">m\u1ED7i m\xE3 \u0111\u1EC1 m\u1ED9t t\xE0i li\u1EC7u m\u1EDBi</option><option value="append">ch\xE8n n\u1ED1i ti\u1EBFp v\xE0o cu\u1ED1i t\xE0i li\u1EC7u n\xE0y</option><option value="none">ch\u1EC9 l\u1EADp b\u1EA3ng \u0111\xE1p \xE1n (kh\xF4ng t\u1EA1o \u0111\u1EC1)</option></select></label>\n    <div class="btns"><button class="primary" id="ex-shuffle">T\u1EA1o \u0111\u1EC1</button></div>\n    <div class="btns two"><button class="secondary" id="ex-key">Ch\xE8n b\u1EA3ng \u0111\xE1p \xE1n</button><button class="secondary" id="ex-copy" disabled>Sao ch\xE9p CSV</button></div>\n    <div class="subhead">Xu\u1EA5t \u0111\xE1p \xE1n</div>\n    <label class="field"><span>M\u1EABu Excel</span><select id="ex-xlsx"><option value="giasu">M\u1EABu GIASU.AI.VN (h\xE0ng = c\xE2u, c\u1ED9t = m\xE3 \u0111\u1EC1)</option><option value="texcraft">M\u1EABu TEXCRAFT (h\xE0ng = \u0111\u1EC1, c\u1ED9t = c\xE2u / \xFD)</option><option value="both">C\u1EA3 hai m\u1EABu</option></select></label>\n    <div class="orig-row"><label class="switch"><input type="checkbox" id="ex-orig" checked><span class="switch-track"></span><span>Th\xEAm \u0111\u1EC1 g\u1ED1c, m\xE3</span></label><input type="text" id="ex-origcode" value="0000" maxlength="4" inputmode="numeric"></div>\n    <div class="btns two"><button class="secondary" id="ex-export">T\u1EA3i file Excel</button><button class="secondary" id="ex-tsv">Sao ch\xE9p b\u1EA3ng</button></div>\n    <div class="btns"><button class="secondary tb-action" id="ex-qr"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM15 15h3v3h3v3h-6v-3m6-3v-3m-9 0h3"/></svg><span>T\u1EA1o m\xE3 QR \u0111\xE1p \xE1n</span></button></div>\n    <p class="hint">D\xF9ng \u0111\u1EC3 nh\u1EADp \u0111\xE1p \xE1n v\xE0o <a href="https://giasu.ai.vn/cham-thi/" target="_blank" rel="noopener">giasu.ai.vn/cham-thi</a></p>\n    <div id="ex-qr-panel" hidden class="qr-panel"><canvas id="ex-qr-canvas" style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff"></canvas><div id="ex-qr-status" class="muted" style="margin:6px 0"></div><div class="btns four"><button class="secondary" id="ex-qr-prev">\u2039 QR tr\u01B0\u1EDBc</button><button class="secondary" id="ex-qr-next">QR ti\u1EBFp \u203A</button><button class="secondary" id="ex-qr-save">T\u1EA3i PNG</button><button class="secondary" id="ex-qr-insert">Ch\xE8n v\xE0o Word</button></div></div>\n    <progress id="ex-progress" value="0" max="1" hidden></progress>\n    <div id="ex-shuffle-out"></div>\n  </fieldset>\n  <fieldset><legend>4. Xu\u1EA5t b\xE0i tr\xECnh chi\u1EBFu PowerPoint</legend>\n    <label class="field"><span>Ti\xEAu \u0111\u1EC1 slide</span><input type="text" id="ex-pptx-title" value="B\xC0I T\u1EACP TR\u1EAEC NGHI\u1EC6M"></label>\n    <label class="field" id="ex-pptx-source-box" hidden><span>Ngu\u1ED3n \u0111\u1EC1</span><select id="ex-pptx-source"><option value="current">T\xE0i li\u1EC7u hi\u1EC7n t\u1EA1i</option></select></label>\n    <label class="field"><span>Giao di\u1EC7n (m\xE0u s\u1EAFc, ph\xF4ng ch\u1EEF)</span><select id="ex-pptx-theme">'.concat(se.map(e=>'<option value="'.concat(e.id,'">').concat(e.label," \u2014 ").concat(e.font,"</option>")).join(""),'</select></label>\n    <div id="ex-pptx-swatch" class="swatch"></div>\n    <div class="notice" style="margin: 6px 0;">\n      T\u1EA1o file tr\xECnh chi\u1EBFu PPTX 16:9 t\u01B0\u01A1ng t\xE1c: b\u1EA5m v\xE0o ph\u01B0\u01A1ng \xE1n s\u1EBD hi\u1EC3n th\u1ECB ngay th\xF4ng b\xE1o <b>\u0110\xFAng</b> (ch\xFAc m\u1EEBng) ho\u1EB7c <b>Sai</b> (th\u1EED l\u1EA1i). Ch\u1EA1y tr\u1EF1c ti\u1EBFp tr\xEAn PowerPoint, Google Slides, Keynote v\xE0 CHITUP Slide.\n    </div>\n    <label><input type="checkbox" id="ex-pptx-math" checked> c\xF4ng th\u1EE9c l\xE0 c\xF4ng th\u1EE9c th\u1EADt c\u1EE7a PowerPoint (s\u1EEDa \u0111\u01B0\u1EE3c; app kh\xF4ng h\u1ED7 tr\u1EE3 nh\u01B0 Keynote, Google Slides s\u1EBD hi\u1EC7n d\u1EA1ng ch\u1EEF)</label>\n    <div class="btns"><button class="primary" id="ex-pptx-btn">T\u1EA3i file PowerPoint (PPTX)</button></div>\n    <div id="ex-pptx-out"></div>\n  </fieldset>');const t=e=>y.querySelector("#"+e);let T="";function Q(e){const n=t("ex-code").value.split(/[,;\s]+/).map(i=>i.trim()).filter(Boolean);if(n.length>1)return n;const a=/^\d+$/.test(n[0]||"")?Number(n[0]):1001,o=Math.max(4,String(n[0]||"").length);return n[0]&&!/^\d+$/.test(n[0])?[n[0]]:Array.from({length:Math.max(1,e)},(i,c)=>String(a+c).padStart(o,"0"))}let v=null;async function I(){const{pkg:e}=await u.readBody();return e}async function f(){const e=ye(await I()),n=$e(e.pkg);return{...e,pkg:n.pkg,changed:e.changed||n.changed,stats:{...e.stats,keyed:n.count}}}const z=e=>e.changed?'<div class="muted">\u0110\xE3 t\u1EF1 chu\u1EA9n h\xF3a b\u1ED1 c\u1EE5c trong b\u1ED9 nh\u1EDB ('.concat(e.stats.tables," b\u1EA3ng, ").concat(e.stats.split," ch\u1ED7 t\xE1ch, ").concat(e.stats.labels," nh\xE3n A\u2013D t\u1EF1 \u0111\xE1nh s\u1ED1").concat(e.stats.keyed?", ".concat(e.stats.keyed," \u0111\xE1p \xE1n \u0111\u1ECDc t\u1EEB b\u1EA3ng \u0111\xE1p \xE1n cu\u1ED1i \u0111\u1EC1"):"","); t\xE0i li\u1EC7u g\u1ED1c kh\xF4ng b\u1ECB s\u1EEDa. B\u1EA5m \u201CChu\u1EA9n h\xF3a\u201D n\u1EBFu mu\u1ED1n ghi b\u1ED1 c\u1EE5c n\xE0y v\xE0o t\xE0i li\u1EC7u.</div>"):"",G=e=>e.length?'<div class="chips-title">C\xE2u ch\u01B0a c\xF3 \u0111\xE1p \xE1n \u2014 b\u1EA5m \u0111\u1EC3 chuy\u1EC3n t\u1EDBi trong Word ('.concat(e.length,'):</div><div class="chips">').concat(e.map(n=>'<button type="button" class="chip" data-p="'.concat(n.paragraph,'" title="Chuy\u1EC3n t\u1EDBi ').concat(d(n.label),' trong Word">').concat(d(n.label),"</button>")).join(""),"</div>"):"";y.addEventListener("click",async e=>{const n=e.target.closest(".chip");if(n)try{await u.selectParagraph(Number(n.dataset.p))}catch{}});const le={independent:"c\xE2u \u0111\u1ED9c l\u1EADp",passage:"c\xF3 \u0111o\u1EA1n v\u0103n",order:"s\u1EAFp x\u1EBFp c\xE2u"};let k={sig:"",modes:{}};function O(e){const n=t("ex-sections");if(!e.english){n.innerHTML="";return}const a=e.sections.map(i=>"".concat(i.firstNumber,"-").concat(i.lastNumber,":").concat(i.kind)).join("|");a!==k.sig&&(k={sig:a,modes:Object.fromEntries(e.sections.map(i=>[i.index,i.mode]))});const o=e.expected>e.detected?'<p class="bad">Ch\u1EC9 nh\u1EADn \u0111\u01B0\u1EE3c '.concat(e.detected,"/").concat(e.expected," c\xE2u \u201CQuestion N\u201D (c\xE1c c\xE2u n\u1EB1m trong b\u1EA3ng, d\xEDnh li\u1EC1n \u0111o\u1EA1n kh\xE1c ho\u1EB7c c\xF3 ph\u01B0\u01A1ng \xE1n \u0111\xE1nh s\u1ED1 t\u1EF1 \u0111\u1ED9ng ch\u01B0a \u0111\u1ECDc \u0111\u01B0\u1EE3c). Kh\xF4ng n\xEAn tr\u1ED9n \u0111\u1EC1 n\xE0y khi ch\u01B0a s\u1EEDa b\u1ED1 c\u1EE5c.</p>"):"";return n.innerHTML="".concat(o,'<div class="subhead">\u0110\u1EC1 ti\u1EBFng Anh \u2014 ').concat(e.sections.length,' nh\xF3m c\xE2u</div><div class="muted">Nh\xF3m c\xF3 \u0111o\u1EA1n v\u0103n / s\u1EAFp x\u1EBFp c\xE2u gi\u1EEF th\u1EE9 t\u1EF1 c\xE2u (s\u1ED1 ch\u1ED7 tr\u1ED1ng, c\xE2u a\u2013e kh\xF4ng l\u1EC7ch); ph\u01B0\u01A1ng \xE1n A\u2013D v\u1EABn \u0111\u01B0\u1EE3c tr\u1ED9n.</div><ul class="sec-list">')+e.sections.map(i=>'<li><span title="'.concat(d(i.title),'">Question ').concat(i.firstNumber).concat(i.lastNumber!==i.firstNumber?"\u2013"+i.lastNumber:""," \xB7 ").concat(le[i.kind],"</span>")+'<select data-sec="'.concat(i.index,'"><option value="shuffle"').concat(k.modes[i.index]==="shuffle"?" selected":"",'>tr\u1ED9n c\xE2u</option><option value="keep"').concat(k.modes[i.index]==="keep"?" selected":"",">gi\u1EEF th\u1EE9 t\u1EF1 c\xE2u</option></select></li>")).join("")+"</ul>",n.querySelectorAll("select[data-sec]").forEach(i=>i.addEventListener("change",()=>{k.modes[i.dataset.sec]=i.value})),k.modes}const x=(e,n)=>{e.innerHTML='<span class="bad">L\u1ED7i: '.concat(d(n.message||n),"</span>")};t("ex-analyze").addEventListener("click",async()=>{try{t("ex-summary").textContent="\u0110ang \u0111\u1ECDc\u2026";const e=await f(),n=w(e.pkg),a=$(n),o=j(n,a),i=a.parts.map(c=>{const l=c.questions.filter(h=>h.flags.length).length,r=o.filter(h=>h.part===c.title&&h.value).length;return"<li><b>".concat(d(c.title.slice(0,70)||"(\u0111\u1EA7u \u0111\u1EC1)"),"</b> \u2014 ").concat(c.kind==="mc"?"nhi\u1EC1u ph\u01B0\u01A1ng \xE1n":c.kind==="tf"?"\u0111\xFAng/sai":c.kind==="short"?"tr\u1EA3 l\u1EDDi ng\u1EAFn":"kh\xE1c",": ").concat(c.questions.length," c\xE2u")+"".concat(c.kind==="mc"?", nh\u1EADn \u0111\xE1p \xE1n ".concat(r,"/").concat(c.questions.length):"").concat(l?', <span class="warn">'.concat(l," c\xE2u c\u1EA7n ch\xFA \xFD</span>"):"","</li>")});O(a),t("ex-summary").innerHTML=a.parts.length?"".concat(a.english?'<div class="ok">Nh\u1EADn ra \u0111\u1EC1 ti\u1EBFng Anh (Question N) \u2014 xem c\xE1c nh\xF3m c\xE2u \u1EDF m\u1EE5c 3.</div>':"").concat(z(e),"<ul>").concat(i.join(""),"</ul>").concat(e.changed?"":G(ne(n,a))):'<span class="warn">Kh\xF4ng th\u1EA5y \u201CC\xE2u N.\u201D / \u201CQuestion N.\u201D n\xE0o.</span>'}catch(e){x(t("ex-summary"),e)}});const pe=()=>t("ex-qcolor").value==="custom"?t("ex-qcolor-custom").value.replace("#","").toUpperCase():t("ex-qcolor").value;t("ex-qcolor").addEventListener("change",()=>{t("ex-qcolor-custom").hidden=t("ex-qcolor").value!=="custom"}),t("ex-normalize").addEventListener("click",async()=>{if(!t("ex-backup1").checked){t("ex-norm-out").innerHTML='<span class="warn">H\xE3y l\u01B0u m\u1ED9t b\u1EA3n sao t\xE0i li\u1EC7u r\u1ED3i tick \xF4 x\xE1c nh\u1EADn.</span>';return}try{const e=t("ex-layout").value,n=we(await I(),{renumber:t("ex-renumber").value||!1,labelWord:t("ex-word").value,labels:t("ex-labels").checked,questionFormat:t("ex-qformat").checked,qBold:t("ex-qbold").checked,qColor:pe(),qBreak:t("ex-qbreak").checked,keepNext:t("ex-keep").checked,layout:e==="false"?!1:e,font:t("ex-font").value,fontSize:Number(t("ex-fsize").value),mathSize:t("ex-msize").value==="text"?"text":Number(t("ex-msize").value)});await u.replaceBody(n.pkg);const a=n.report;t("ex-norm-out").innerHTML='<span class="ok">\u0110\xE3 chu\u1EA9n h\xF3a '.concat(a.questions," c\xE2u</span>: \u0111\xE1nh s\u1ED1 l\u1EA1i ").concat(a.renumbered,", c\u0103n l\u1EA1i ph\u01B0\u01A1ng \xE1n ").concat(a.relaid,", \u0111\u1ED3ng b\u1ED9 ph\xF4ng/c\u1EE1 ch\u1EEF ").concat(a.retyped," \u0111o\u1EA1n.")+(a.objects?'<div class="warn">'.concat(a.objects," c\xF4ng th\u1EE9c MathType d\u1EA1ng \u0111\u1ED1i t\u01B0\u1EE3ng ch\u01B0a \u0111\u1ED5i \u0111\u01B0\u1EE3c c\u1EE1 \u2014 h\xE3y chuy\u1EC3n sang c\xF4ng th\u1EE9c Word (tab C\xF4ng th\u1EE9c) r\u1ED3i chu\u1EA9n h\xF3a l\u1EA1i.</div>"):"")+(a.skipped.length?'<ul class="warn">'.concat(a.skipped.slice(0,8).map(o=>"<li>".concat(d(o),"</li>")).join(""),"</ul>"):"")+'<div class="muted">Ho\xE0n t\xE1c b\u1EB1ng Ctrl/Cmd+Z (Word coi \u0111\xE2y l\xE0 m\u1ED9t thao t\xE1c thay th\u1EBF to\xE0n b\u1ED9 n\u1ED9i dung).</div>'}catch(e){x(t("ex-norm-out"),e)}});const re=()=>({shuffleQuestions:t("ex-shq").checked,shuffleOptions:t("ex-sho").checked,shuffleStatements:t("ex-shs").checked,stripMarks:t("ex-strip").checked,labelWord:t("ex-word").value,renumber:t("ex-renumber").value||"part",layout:t("ex-layout").value==="false"?"auto":t("ex-layout").value}),E=Object.keys(F),X="texcraft-exam-form",de=()=>{let e={};try{e=JSON.parse(localStorage.getItem(X)||"{}")}catch{e={}}return{...F,...e,...Object.fromEntries(["mon","lop","thoiGian"].filter(n=>e[n]===void 0).map(n=>[n,""]))}},N=()=>Object.fromEntries(E.map(e=>[e,t("ex-f-"+e).value])),K=e=>E.forEach(n=>{t("ex-f-"+n).value=e[n]??""}),U=()=>{try{localStorage.setItem(X,JSON.stringify(N()))}catch{}};K(de()),E.forEach(e=>t("ex-f-"+e).addEventListener("input",U)),t("ex-f-reset").addEventListener("click",()=>{K({...F,mon:"",lop:"",thoiGian:""}),U()}),t("ex-f-insert").addEventListener("click",async()=>{const e=t("ex-shuffle-out");try{await u.replaceSelection(oe(ie(N(),Q(1)[0]))),e.innerHTML='<span class="ok">\u0110\xE3 ch\xE8n kh\u1ED1i ti\xEAu \u0111\u1EC1 t\u1EA1i con tr\u1ECF.</span>'}catch(n){x(e,n)}}),t("ex-shuffle").addEventListener("click",async()=>{const e=t("ex-shuffle-out"),n=t("ex-progress"),a=t("ex-shuffle");if(!a.disabled){a.disabled=!0;try{const o=await f(),i=o.pkg,c=Q(Number(t("ex-n").value)),l=c.length,r=Number(t("ex-seed").value);if(new Set(c).size!==l)throw new Error("C\xE1c m\xE3 \u0111\u1EC1 b\u1ECB tr\xF9ng nhau: h\xE3y nh\u1EADp m\u1ED7i m\xE3 m\u1ED9t l\u1EA7n.");const h=t("ex-target").value,C=re(),S=N(),he=t("ex-h-title").checked,ge=t("ex-h-end").checked,me=t("ex-h-footer").checked,V=t("ex-withkey").checked,Y=(s,b)=>{let m=he?Ce(s,ie(S,b)):s;return ge?ae(m,Me()):m},A=$(w(i)),xe=O(A),B=A.english?"Question":"C\xE2u",g=[];for(let s=0;s<l;s++){const b=c[s],m=Te(i,{...C,seed:r+s*7919,code:b,sectionModes:xe});g.push({code:b,...m}),n.hidden=!1,n.max=l,n.value=s+1,await new Promise(q=>setTimeout(q,0))}const H=R(g.map(s=>({code:s.code,answers:s.answers})));T=H.csv,v={pkg:i,versions:g.map(s=>({code:s.code,answers:s.answers,pkg:s.pkg}))};const J=t("ex-pptx-source");if(J){J.innerHTML='<option value="current">T\xE0i li\u1EC7u hi\u1EC7n t\u1EA1i (\u0111\u1EC1 g\u1ED1c)</option>'+g.map(b=>'<option value="'.concat(d(b.code),'">M\xE3 \u0111\u1EC1 ').concat(d(b.code),"</option>")).join("");const s=t("ex-pptx-source-box");s&&(s.hidden=!1)}t("ex-copy").disabled=!1;const Z=g[0].answers.filter(s=>s.value===null).length;let M="";if(h==="new"){let s=0,b=!1;for(const m of g){const q=Y(m.pkg,m.code),te=V?ae(q,D(R([{code:m.code,answers:m.answers}]).groups,"\u0110\xC1P \xC1N \u2014 M\xC3 \u0110\u1EC0 ".concat(m.code),B)):q;try{await u.openAsNewDocument(te,{footerPkg:me?oe(qe(m.code)):null}),s++}catch{await u.insertAtEnd(te),b=!0}}M=b?"Word n\xE0y kh\xF4ng cho t\u1EA1o t\xE0i li\u1EC7u m\u1EDBi t\u1EEB add-in: \u0111\xE3 ch\xE8n ".concat(g.length-s," \u0111\u1EC1 v\xE0o cu\u1ED1i t\xE0i li\u1EC7u hi\u1EC7n t\u1EA1i (m\u1EDF ").concat(s," t\xE0i li\u1EC7u m\u1EDBi)."):"\u0110\xE3 m\u1EDF ".concat(g.length," t\xE0i li\u1EC7u m\u1EDBi.")}else if(h==="append"){for(const s of g)await u.insertAtEnd(Y(s.pkg,s.code));M="\u0110\xE3 ch\xE8n ".concat(g.length," \u0111\u1EC1 v\xE0o cu\u1ED1i t\xE0i li\u1EC7u.")}h!=="new"&&(V||h==="none")&&(await u.insertAtEnd(W(D(H.groups,"B\u1EA2NG \u0110\xC1P \xC1N C\xC1C M\xC3 \u0110\u1EC0",B))),M+=" \u0110\xE3 ch\xE8n b\u1EA3ng \u0111\xE1p \xE1n chung (m\u1ED7i m\xE3 \u0111\u1EC1 m\u1ED9t c\u1ED9t).");const ee=[...new Set(g.flatMap(s=>[...s.report.sharedParts.length?["Kh\xF4ng tr\u1ED9n th\u1EE9 t\u1EF1 c\xE2u \u1EDF: ".concat(s.report.sharedParts.join("; ")," (c\xF3 c\xE2u d\xF9ng chung d\u1EEF ki\u1EC7n)")]:[],...s.report.keptSections.length?["Gi\u1EEF nguy\xEAn th\u1EE9 t\u1EF1 c\xE2u \u1EDF: ".concat(s.report.keptSections.join(", "))]:[],...s.report.pinnedQuestions.length?["Gi\u1EEF nguy\xEAn ph\u01B0\u01A1ng \xE1n c\xE1c c\xE2u: ".concat([...new Set(s.report.pinnedQuestions)].join(", "))]:[],...s.report.notes]))],be=w(i),ve=G(ne(be,A));e.innerHTML='<p class="ok"><b>'.concat(g.length," m\xE3 \u0111\u1EC1</b> \u0111\xE3 t\u1EA1o. ").concat(d(M),"</p>")+z(o)+(Z?'<p class="warn">'.concat(Z," c\xE2u ch\u01B0a nh\u1EADn \u0111\u01B0\u1EE3c \u0111\xE1p \xE1n (nh\xE3n \u0111\xFAng ch\u01B0a \u0111\u01B0\u1EE3c g\u1EA1ch ch\xE2n / t\xF4 \u0111\u1ECF): b\u1EA3ng \u0111\xE1p \xE1n ghi \u201C?\u201D.</p>").concat(o.changed?"":ve):"")+(ee.length?'<ul class="warn">'.concat(ee.map(s=>"<li>".concat(d(s),"</li>")).join(""),"</ul>"):"")+ue(H.groups,B)}catch(o){x(e,o)}finally{a.disabled=!1}}});function ue(e,n){const a=e.filter(l=>l.kind==="mc"),o=[...new Set(a.map(l=>String(l.code)))],i=new Map(a.map(l=>[String(l.code),new Map(l.items.map(r=>[r.number,r.value]))])),c=[...new Set(a.flatMap(l=>l.items.map(r=>r.number)))].sort((l,r)=>l-r);return'<div class="scroll"><table><thead><tr><th>'.concat(d(n),"</th>").concat(o.map(l=>"<th>".concat(d(l),"</th>")).join(""),"</tr></thead><tbody>").concat(c.map(l=>"<tr><td><b>".concat(l,"</b></td>").concat(o.map(r=>"<td>".concat(d(i.get(r).get(l)??"?"),"</td>")).join(""),"</tr>")).join(""),"</tbody></table></div>")}t("ex-key").addEventListener("click",async()=>{const e=t("ex-shuffle-out");try{const n=w((await f()).pkg),a=j(n,$(n)),o=R([{code:"",answers:a}]);T=o.csv,t("ex-copy").disabled=!1,await u.insertAtEnd(W(D(o.groups,"B\u1EA2NG \u0110\xC1P \xC1N",$(n).english?"Question":"C\xE2u"))),e.innerHTML='<span class="ok">\u0110\xE3 ch\xE8n b\u1EA3ng \u0111\xE1p \xE1n v\xE0o cu\u1ED1i t\xE0i li\u1EC7u.</span>'}catch(n){x(e,n)}});function W(e){return'<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>'.concat(e,"</w:body></w:document></pkg:xmlData></pkg:part></pkg:package>")}async function P(){const e=v?v.pkg:(await f()).pkg,n=v?v.versions.slice():[];if(!n.length)throw new Error("Ch\u01B0a c\xF3 m\xE3 \u0111\u1EC1 n\xE0o: b\u1EA5m \u201CT\u1EA1o \u0111\u1EC1\u201D tr\u01B0\u1EDBc (ho\u1EB7c d\xF9ng \u201CCh\xE8n b\u1EA3ng \u0111\xE1p \xE1n \u0111\u1EC1 hi\u1EC7n t\u1EA1i\u201D).");if(t("ex-orig").checked){const a=w(e);n.unshift({code:t("ex-origcode").value||"0000",answers:j(a,$(a))})}return n}t("ex-export").addEventListener("click",async()=>{const e=t("ex-shuffle-out");try{const n=await P(),a=t("ex-xlsx").value==="both"?["giasu","texcraft"]:[t("ex-xlsx").value];for(const o of a){const i=new Blob([fe(o,n)],{type:"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}),c=document.createElement("a");c.href=URL.createObjectURL(i),c.download="DapAn-".concat(o==="giasu"?"GIASU.AI.VN":"TEXCRAFT",".xlsx"),document.body.appendChild(c),c.click(),c.remove()}e.innerHTML='<span class="ok">\u0110\xE3 t\u1EA1o file Excel.</span> <span class="muted">N\u1EBFu Word ch\u1EB7n t\u1EA3i xu\u1ED1ng, d\xF9ng \u201CSao ch\xE9p b\u1EA3ng\u201D r\u1ED3i d\xE1n v\xE0o Excel.</span>'}catch(n){x(e,n)}});let p={groups:[],index:0,token:0};async function L(){const e=++p.token,n=t("ex-qr-status"),a=t("ex-qr-canvas");n.classList.remove("bad"),n.textContent="\u0110ang t\u1EA1o QR v\xE0 ki\u1EC3m tra \u0111\u1ECDc l\u1EA1i\u2026";try{const o=p.groups[p.index],i=await Le(o.text,{vendorBase:"vendor/",logoUrl:"icon-80.png"});if(e!==p.token)return;a.width=i.width,a.height=i.height,a.getContext("2d").drawImage(i,0,0),n.textContent="QR ".concat(p.index+1,"/").concat(p.groups.length," \xB7 m\xE3 \u0111\u1EC1 ").concat(o.codes.join(", ")," \xB7 \u0111\xE3 ki\u1EC3m tra \u0111\u1ECDc l\u1EA1i \u0111\xFAng")+(p.warnings.length?" \xB7 ".concat(p.warnings.length," c\u1EA3nh b\xE1o (c\xE2u ch\u01B0a c\xF3 \u0111\xE1p \xE1n ghi X)"):""),t("ex-qr-prev").disabled=p.index===0,t("ex-qr-next").disabled=p.index===p.groups.length-1}catch(o){e===p.token&&(n.classList.add("bad"),n.textContent=o.message)}}t("ex-qr").addEventListener("click",async()=>{const e=t("ex-shuffle-out");try{const n=await P(),{payloads:a,warnings:o}=Pe(n);p={groups:a,index:0,token:p.token,warnings:o},t("ex-qr-panel").hidden=!1,await L()}catch(n){x(e,n)}}),t("ex-qr-prev").addEventListener("click",()=>{p.index=Math.max(0,p.index-1),L()}),t("ex-qr-next").addEventListener("click",()=>{p.index=Math.min(p.groups.length-1,p.index+1),L()}),t("ex-qr-save").addEventListener("click",async()=>Ae(await ce(t("ex-qr-canvas")),"QR-dap-an-".concat(p.index+1,".png"))),t("ex-qr-insert").addEventListener("click",async()=>{try{const e=await ce(t("ex-qr-canvas"));await u.replaceSelection(Se(e,{widthPt:170,heightPt:170,alt:"QR \u0111\xE1p \xE1n ch\u1EA5m thi giasu.ai.vn",name:"QR"})),t("ex-qr-status").textContent="\u0110\xE3 ch\xE8n m\xE3 QR v\xE0o Word t\u1EA1i con tr\u1ECF."}catch(e){x(t("ex-shuffle-out"),e)}}),t("ex-tsv").addEventListener("click",async()=>{const e=t("ex-shuffle-out");try{const n=await P(),a=t("ex-xlsx").value==="both"?"giasu":t("ex-xlsx").value,o=ke(a,n);try{await navigator.clipboard.writeText(o),e.innerHTML='<span class="ok">\u0110\xE3 sao ch\xE9p; d\xE1n v\xE0o \xF4 A1 c\u1EE7a Excel.</span>'}catch{e.innerHTML='<textarea rows="8">'.concat(d(o),"</textarea>")}}catch(n){x(e,n)}}),t("ex-copy").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(T),t("ex-copy").textContent="\u0110\xE3 sao ch\xE9p"}catch{t("ex-shuffle-out").innerHTML='<textarea rows="6">'.concat(d(T),"</textarea>")}});const _=()=>{const e=se.find(a=>a.id===t("ex-pptx-theme").value),n={dark:"0F172A",primary:"3B82F6",accent:"4F46E5",paper:"F8FAFC",sky:"38BDF8",...e.colors};t("ex-pptx-swatch").innerHTML=["dark","primary","accent","sky","paper"].map(a=>'<span title="'.concat(a,'" style="display:inline-block;width:28px;height:18px;border-radius:4px;border:1px solid var(--line);background:#').concat(n[a],'"></span>')).join("")+'<span class="muted" style="font-family:\''.concat(e.font,"',serif;margin-left:6px\">Aa Bb \u2014 C\xE2u 1. \u0110\xFAng</span>")};t("ex-pptx-theme").addEventListener("change",_),_(),t("ex-pptx-btn").addEventListener("click",async()=>{const e=t("ex-pptx-out");try{e.innerHTML='<span class="muted">\u0110ang \u0111\u1ECDc t\xE0i li\u1EC7u v\xE0 t\u1EA1o file PowerPoint\u2026</span>';let n;const a=t("ex-pptx-source")?.value;if(a&&a!=="current"&&v){const C=v.versions.find(S=>S.code===a);n=C?C.pkg:(await f()).pkg}else n=(await f()).pkg;const o=Ne(n),i=t("ex-pptx-title").value.trim()||"B\xC0I T\u1EACP TR\u1EAEC NGHI\u1EC6M",c=Ee(o.model,o.analysis,o.answers,{title:i,theme:t("ex-pptx-theme")?.value||"blue",pkg:o.pkg,nativeMath:t("ex-pptx-math")?.checked!==!1}),l=new Blob([c],{type:"application/vnd.openxmlformats-officedocument.presentationml.presentation"}),r=document.createElement("a");r.href=URL.createObjectURL(l);const h="".concat(i.replace(/[\/\\?%*:|"<>]/g,"_")||"DeThi").concat(a&&a!=="current"?"-".concat(a):"",".pptx");r.download=h,document.body.appendChild(r),r.click(),r.remove(),e.innerHTML='<span class="ok">\u0110\xE3 t\u1EA1o b\xE0i tr\xECnh chi\u1EBFu <b>'.concat(d(h),'</b> th\xE0nh c\xF4ng!</span> <div class="muted">B\u1EA5m v\xE0o ph\u01B0\u01A1ng \xE1n A/B/C/D \u0111\u1EC3 hi\u1EC7n th\xF4ng b\xE1o \u0110\xFAng/Sai tr\u1EF1c ti\u1EBFp.</div>').concat(c.splitCount?'<div class="muted">'.concat(c.splitCount," c\xE2u c\xF3 \u0111\u1EC1 qu\xE1 d\xE0i n\xEAn \u0111\u01B0\u1EE3c t\xE1ch th\xE0nh 2 trang (\u0111\u1EC1 b\xE0i r\u1ED3i \u0111\u1EBFn c\xE1c ph\u01B0\u01A1ng \xE1n).</div>"):"").concat(c.missingPictures?'<div class="warn">'.concat(c.missingPictures," h\xECnh/\u0111\u1ED1i t\u01B0\u1EE3ng kh\xF4ng chuy\u1EC3n \u0111\u01B0\u1EE3c (\u0111\u1ECBnh d\u1EA1ng PowerPoint kh\xF4ng h\u1ED7 tr\u1EE3) \u2014 h\xE3y xem l\u1EA1i \u0111\u1EC1 g\u1ED1c.</div>"):"")}catch(n){x(e,n)}})}export{Ge as mountExam};
+import { answerXlsx, answerTsv } from '../src/xlsx.js';
+import { prepareEnglish, unansweredQuestions, parseBody, analyze, answersOf, normalize, applyAnswerKey, shuffleVersion, answerTable, answerTableXml, appendToBody, prependToBody } from '../src/exam.js';
+import { DEFAULT_FORM, examHeaderXml, examEndXml, examFooterXml, simplePackage } from '../src/exam-header.js';
+import { scanPackage } from '../src/ooxml.js';
+import { buildExamPptx, preparePptxSource, PPTX_THEMES } from '../src/pptx.js';
+import { qrPayloads, renderQr } from '../src/answer-qr.js';
+import { makePicturePackage, canvasToPng, downloadBlob } from '../src/picture.js';
+
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+export function mountExam(root, io) {
+  root.innerHTML = `
+  <div class="notice">Nhận dạng: <b>PHẦN I/II/III</b>, <b>Câu N.</b> hoặc <b>Question N.</b> (đề tiếng Anh, tự nhận),phương án <b>A. B. C. D.</b>, ý <b>a) b) c) d)</b>. Đáp án đúng được nhận qua nhãn phương án <b>gạch chân / chữ đỏ / tô nổi</b>. Mọi thao tác ghi vào tài liệu chỉ chạy khi bạn bấm nút; hãy làm trên bản sao.</div>
+  <fieldset><legend>1. Phân tích đề</legend>
+    <div class="btns"><button class="primary" id="ex-analyze">Phân tích tài liệu</button></div>
+    <div id="ex-summary" class="muted"></div>
+  </fieldset>
+  <fieldset><legend>2. Chuẩn hóa câu hỏi</legend>
+    <label class="field"><span>Đánh số lại câu</span>
+      <select id="ex-renumber"><option value="part">theo từng phần (mỗi phần bắt đầu từ Câu 1)</option><option value="continuous">liên tục toàn đề</option><option value="">không đổi</option></select></label>
+    <label class="field"><span>Căn lề phương án</span>
+      <select id="ex-layout"><option value="auto">tự động (1 dòng / 2 dòng / 4 dòng theo độ dài)</option><option value="4">luôn 4 cột</option><option value="2">luôn 2 cột</option><option value="1">mỗi phương án một dòng</option><option value="false">giữ nguyên</option></select></label>
+    <label class="field"><span>Từ trong nhãn câu</span>
+      <select id="ex-word"><option value="keep">giữ nguyên như tài liệu (Câu 1. / Bài 1. / bài 1:)</option><option value="Câu">đổi tất cả thành “Câu N.”</option><option value="Bài">đổi tất cả thành “Bài N.”</option></select></label>
+    <label class="field"><span>Phông chữ</span>
+      <select id="ex-font"><option value="Times New Roman">Times New Roman</option><option value="Cambria">Cambria</option><option value="Arial">Arial</option><option value="Calibri">Calibri</option><option value="Tahoma">Tahoma</option><option value="">giữ nguyên</option></select></label>
+    <label class="field"><span>Cỡ chữ</span>
+      <select id="ex-fsize"><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="11">11 pt</option><option value="0">giữ nguyên</option></select></label>
+    <label class="field"><span>Cỡ công thức</span>
+      <select id="ex-msize"><option value="text">bằng cỡ chữ</option><option value="11">11 pt</option><option value="12">12 pt</option><option value="13">13 pt</option><option value="14">14 pt</option><option value="0">giữ nguyên</option></select></label>
+    <label><input type="checkbox" id="ex-labels" checked> nhãn A. B. C. D. in đậm, viết hoa, dấu chấm</label>
+    <label><input type="checkbox" id="ex-qformat" checked> nhãn “Câu N.” / “Bài N.” cùng định dạng với câu đầu tiên</label>
+    <div class="subhead">Nhãn “Câu N.”</div>
+    <label><input type="checkbox" id="ex-qbold" checked> in đậm nhãn câu</label>
+    <label class="field"><span>Màu nhãn câu</span>
+      <select id="ex-qcolor"><option value="">giữ nguyên (tự động)</option><option value="000000">đen</option><option value="C00000">đỏ đậm</option><option value="0000FF">xanh dương</option><option value="1F4E79">xanh navy</option><option value="006100">xanh lục</option><option value="7030A0">tím</option><option value="ED7D31">cam</option><option value="custom">màu khác…</option></select><input type="color" id="ex-qcolor-custom" value="#c00000" hidden style="margin-left:6px"></label>
+    <label><input type="checkbox" id="ex-qbreak"> xuống dòng sau nhãn (nội dung câu hỏi bắt đầu ở dòng mới)</label>
+    <label><input type="checkbox" id="ex-keep" checked> giữ câu hỏi và phương án cùng trang (keep with next)</label>
+    <label><input type="checkbox" id="ex-backup1"> Tôi đã lưu một bản sao tài liệu</label>
+    <div class="btns"><button class="primary" id="ex-normalize">Chuẩn hóa</button></div>
+    <div id="ex-norm-out"></div>
+  </fieldset>
+  <fieldset><legend>3. Trộn đề &amp; bảng đáp án</legend>
+    <div class="grid2"><label class="field"><span>Số mã đề</span><input type="number" id="ex-n" value="4" min="1" max="12"></label><label class="field"><span>Hạt giống</span><input type="number" id="ex-seed" value="2026"></label></div>
+    <label class="field"><span>Mã đề (cách nhau dấu phẩy)</span><input type="text" id="ex-code" value="1001" placeholder="1001 hoặc 1001, 1002, A1…" spellcheck="false" title="Một số: mã đề đầu, các mã sau tăng dần (4 chữ số). Nhiều mã cách nhau dấu phẩy: dùng đúng các mã đó, không cần ‘Số mã đề’."></label>
+    <label><input type="checkbox" id="ex-shq" checked> trộn thứ tự câu trong từng phần</label>
+    <label><input type="checkbox" id="ex-sho" checked> trộn thứ tự phương án A–D (giữ nguyên câu có “cả A và B…”, “tất cả các đáp án…”)</label>
+    <label><input type="checkbox" id="ex-shs"> trộn cả thứ tự ý a) b) c) d) ở phần đúng sai</label>
+    <div id="ex-sections"></div>
+    <label><input type="checkbox" id="ex-strip" checked> bỏ dấu đáp án (gạch chân/đỏ) khỏi đề trộn</label>
+    <label><input type="checkbox" id="ex-withkey" checked> thêm bảng đáp án của mã đề vào cuối mỗi đề</label>
+    <details class="mt-details" id="ex-form-box"><summary>Tiêu đề, chân trang, dòng HẾT (theo mẫu đề kiểm tra)</summary>
+      <label><input type="checkbox" id="ex-h-title" checked> thêm khối tiêu đề (Sở, Trường, Kỳ thi, Họ tên, Mã đề) đầu mỗi đề</label>
+      <label><input type="checkbox" id="ex-h-end" checked> thêm dòng ----HẾT---- cuối đề</label>
+      <label><input type="checkbox" id="ex-h-footer" checked> thêm chân trang “Trang X/Y-Mã đề” (khi mở tài liệu mới)</label>
+      <div class="grid2">
+        <label class="field"><span>Sở GD&amp;ĐT</span><input type="text" id="ex-f-soGd"></label>
+        <label class="field"><span>Trường</span><input type="text" id="ex-f-truong"></label>
+        <label class="field"><span>Dòng thứ 3 (bên trái)</span><input type="text" id="ex-f-chinhThuc"></label>
+        <label class="field"><span>Kỳ kiểm tra</span><input type="text" id="ex-f-kyThi"></label>
+        <label class="field"><span>Năm học</span><input type="text" id="ex-f-namHoc"></label>
+        <label class="field"><span>Môn</span><input type="text" id="ex-f-mon" placeholder="vd. Toán"></label>
+        <label class="field"><span>Lớp</span><input type="text" id="ex-f-lop" placeholder="vd. 12"></label>
+        <label class="field"><span>Thời gian (phút)</span><input type="text" id="ex-f-thoiGian" placeholder="vd. 90"></label>
+      </div>
+      <div class="btns two"><button class="secondary" id="ex-f-reset">Khôi phục mặc định</button><button class="secondary" id="ex-f-insert" title="Chèn khối tiêu đề tại con trỏ, mã đề lấy từ ô “Mã đề” (mã đầu tiên)">Chèn tiêu đề tại con trỏ</button></div>
+    </details>
+    <label class="field"><span>Nơi đặt kết quả</span>
+      <select id="ex-target"><option value="new">mỗi mã đề một tài liệu mới</option><option value="append">chèn nối tiếp vào cuối tài liệu này</option><option value="none">chỉ lập bảng đáp án (không tạo đề)</option></select></label>
+    <div class="btns"><button class="primary" id="ex-shuffle">Tạo đề</button></div>
+    <div class="btns two"><button class="secondary" id="ex-key">Chèn bảng đáp án</button><button class="secondary" id="ex-copy" disabled>Sao chép CSV</button></div>
+    <div class="subhead">Xuất đáp án</div>
+    <label class="field"><span>Mẫu Excel</span><select id="ex-xlsx"><option value="giasu">Mẫu GIASU.AI.VN (hàng = câu, cột = mã đề)</option><option value="texcraft">Mẫu TEXCRAFT (hàng = đề, cột = câu / ý)</option><option value="both">Cả hai mẫu</option></select></label>
+    <div class="orig-row"><label class="switch"><input type="checkbox" id="ex-orig" checked><span class="switch-track"></span><span>Thêm đề gốc, mã</span></label><input type="text" id="ex-origcode" value="0000" maxlength="4" inputmode="numeric"></div>
+    <div class="btns two"><button class="secondary" id="ex-export">Tải file Excel</button><button class="secondary" id="ex-tsv">Sao chép bảng</button></div>
+    <div class="btns"><button class="secondary tb-action" id="ex-qr"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM15 15h3v3h3v3h-6v-3m6-3v-3m-9 0h3"/></svg><span>Tạo mã QR đáp án</span></button></div>
+    <p class="hint">Dùng để nhập đáp án vào <a href="https://giasu.ai.vn/cham-thi/" target="_blank" rel="noopener">giasu.ai.vn/cham-thi</a></p>
+    <div id="ex-qr-panel" hidden class="qr-panel"><canvas id="ex-qr-canvas" style="max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff"></canvas><div id="ex-qr-status" class="muted" style="margin:6px 0"></div><div class="btns four"><button class="secondary" id="ex-qr-prev">‹ QR trước</button><button class="secondary" id="ex-qr-next">QR tiếp ›</button><button class="secondary" id="ex-qr-save">Tải PNG</button><button class="secondary" id="ex-qr-insert">Chèn vào Word</button></div></div>
+    <progress id="ex-progress" value="0" max="1" hidden></progress>
+    <div id="ex-shuffle-out"></div>
+  </fieldset>
+  <fieldset><legend>4. Xuất bài trình chiếu PowerPoint</legend>
+    <label class="field"><span>Tiêu đề slide</span><input type="text" id="ex-pptx-title" value="BÀI TẬP TRẮC NGHIỆM"></label>
+    <label class="field" id="ex-pptx-source-box" hidden><span>Nguồn đề</span><select id="ex-pptx-source"><option value="current">Tài liệu hiện tại</option></select></label>
+    <label class="field"><span>Giao diện (màu sắc, phông chữ)</span><select id="ex-pptx-theme">${PPTX_THEMES.map((t) => `<option value="${t.id}">${t.label} — ${t.font}</option>`).join('')}</select></label>
+    <div id="ex-pptx-swatch" class="swatch"></div>
+    <div class="notice" style="margin: 6px 0;">
+      Tạo file trình chiếu PPTX 16:9 tương tác: bấm vào phương án sẽ hiển thị ngay thông báo <b>Đúng</b> (chúc mừng) hoặc <b>Sai</b> (thử lại). Chạy trực tiếp trên PowerPoint, Google Slides, Keynote và CHITUP Slide.
+    </div>
+    <label><input type="checkbox" id="ex-pptx-math" checked> công thức là công thức thật của PowerPoint (sửa được; app không hỗ trợ như Keynote, Google Slides sẽ hiện dạng chữ)</label>
+    <div class="btns"><button class="primary" id="ex-pptx-btn">Tải file PowerPoint (PPTX)</button></div>
+    <div id="ex-pptx-out"></div>
+  </fieldset>`;
+  const $ = (id) => root.querySelector('#' + id);
+  let lastCsv = '';
+  /** Exam codes from the box: several names separated by commas are used as typed; one number is the first code (4 digits), followed by n-1 consecutive ones. */
+  function codeList(n) {
+    const raw = $('ex-code').value.split(/[,;\s]+/).map((x) => x.trim()).filter(Boolean);
+    if (raw.length > 1) return raw;
+    const first = /^\d+$/.test(raw[0] || '') ? Number(raw[0]) : 1001;
+    const w = Math.max(4, String(raw[0] || '').length);
+    if (raw[0] && !/^\d+$/.test(raw[0])) return [raw[0]];
+    return Array.from({ length: Math.max(1, n) }, (_x, i) => String(first + i).padStart(w, '0'));
+  }
+  let lastVersions = null;   // [{code, answers}] of the latest "Tạo đề"
+
+  async function body() { const { pkg } = await io.readBody(); return pkg; }
+  /** English papers pasted from PDF (tables, glued "Question N.", auto-lettered options) are read in a cleaned layout; the document itself is untouched. */
+  async function preparedBody() {   // in-memory copy: English layout fixed, and the key at the end of the paper turned into marks
+    const prep = prepareEnglish(await body()), key = applyAnswerKey(prep.pkg);
+    return { ...prep, pkg: key.pkg, changed: prep.changed || key.changed, stats: { ...prep.stats, keyed: key.count } };
+  }
+  const prepNote = (prep) => (prep.changed ? `<div class="muted">Đã tự chuẩn hóa bố cục trong bộ nhớ (${prep.stats.tables} bảng, ${prep.stats.split} chỗ tách, ${prep.stats.labels} nhãn A–D tự đánh số${prep.stats.keyed ? `, ${prep.stats.keyed} đáp án đọc từ bảng đáp án cuối đề` : ''}); tài liệu gốc không bị sửa. Bấm “Chuẩn hóa” nếu muốn ghi bố cục này vào tài liệu.</div>` : '');
+  const chips = (list) => (list.length ? `<div class="chips-title">Câu chưa có đáp án — bấm để chuyển tới trong Word (${list.length}):</div><div class="chips">${list.map((q) => `<button type="button" class="chip" data-p="${q.paragraph}" title="Chuyển tới ${esc(q.label)} trong Word">${esc(q.label)}</button>`).join('')}</div>` : '');
+  root.addEventListener('click', async (ev) => {
+    const b = ev.target.closest('.chip');
+    if (!b) return;
+    try { await io.selectParagraph(Number(b.dataset.p)); } catch (e) { /* not inside Word */ }
+  });
+  // ---- English exams ("Question N"): questions are grouped by instruction line / passage; each group can be shuffled or kept
+  const SEC_KIND = { independent: 'câu độc lập', passage: 'có đoạn văn', order: 'sắp xếp câu' };
+  let secState = { sig: '', modes: {} };
+  /** Shows the detected sections (English exams only) and returns the chosen mode per section index. */
+  function sectionsUi(a) {
+    const box = $('ex-sections');
+    if (!a.english) { box.innerHTML = ''; return undefined; }
+    const sig = a.sections.map((s) => `${s.firstNumber}-${s.lastNumber}:${s.kind}`).join('|');
+    if (sig !== secState.sig) secState = { sig, modes: Object.fromEntries(a.sections.map((s) => [s.index, s.mode])) };
+    const lost = a.expected > a.detected ? `<p class="bad">Chỉ nhận được ${a.detected}/${a.expected} câu “Question N” (các câu nằm trong bảng, dính liền đoạn khác hoặc có phương án đánh số tự động chưa đọc được). Không nên trộn đề này khi chưa sửa bố cục.</p>` : '';
+    box.innerHTML = `${lost}<div class="subhead">Đề tiếng Anh — ${a.sections.length} nhóm câu</div><div class="muted">Nhóm có đoạn văn / sắp xếp câu giữ thứ tự câu (số chỗ trống, câu a–e không lệch); phương án A–D vẫn được trộn.</div><ul class="sec-list">` +
+      a.sections.map((s) => `<li><span title="${esc(s.title)}">Question ${s.firstNumber}${s.lastNumber !== s.firstNumber ? '–' + s.lastNumber : ''} · ${SEC_KIND[s.kind]}</span>` +
+        `<select data-sec="${s.index}"><option value="shuffle"${secState.modes[s.index] === 'shuffle' ? ' selected' : ''}>trộn câu</option><option value="keep"${secState.modes[s.index] === 'keep' ? ' selected' : ''}>giữ thứ tự câu</option></select></li>`).join('') + '</ul>';
+    box.querySelectorAll('select[data-sec]').forEach((sel) => sel.addEventListener('change', () => { secState.modes[sel.dataset.sec] = sel.value; }));
+    return secState.modes;
+  }
+  const fail = (el, e) => { el.innerHTML = `<span class="bad">Lỗi: ${esc(e.message || e)}</span>`; };
+
+  $('ex-analyze').addEventListener('click', async () => {
+    try {
+      $('ex-summary').textContent = 'Đang đọc…';
+      const prep = await preparedBody();
+      const model = parseBody(prep.pkg);
+      const a = analyze(model);
+      const ans = answersOf(model, a);
+      const lines = a.parts.map((p) => {
+        const flagged = p.questions.filter((q) => q.flags.length).length;
+        const marked = ans.filter((x) => x.part === p.title && x.value).length;
+        return `<li><b>${esc(p.title.slice(0, 70) || '(đầu đề)')}</b> — ${p.kind === 'mc' ? 'nhiều phương án' : p.kind === 'tf' ? 'đúng/sai' : p.kind === 'short' ? 'trả lời ngắn' : 'khác'}: ${p.questions.length} câu` +
+          `${p.kind === 'mc' ? `, nhận đáp án ${marked}/${p.questions.length}` : ''}${flagged ? `, <span class="warn">${flagged} câu cần chú ý</span>` : ''}</li>`;
+      });
+      sectionsUi(a);
+      $('ex-summary').innerHTML = a.parts.length ? `${a.english ? '<div class="ok">Nhận ra đề tiếng Anh (Question N) — xem các nhóm câu ở mục 3.</div>' : ''}${prepNote(prep)}<ul>${lines.join('')}</ul>${prep.changed ? '' : chips(unansweredQuestions(model, a))}` : '<span class="warn">Không thấy “Câu N.” / “Question N.” nào.</span>';
+    } catch (e) { fail($('ex-summary'), e); }
+  });
+
+  const qColor = () => ($('ex-qcolor').value === 'custom' ? $('ex-qcolor-custom').value.replace('#', '').toUpperCase() : $('ex-qcolor').value);
+  $('ex-qcolor').addEventListener('change', () => { $('ex-qcolor-custom').hidden = $('ex-qcolor').value !== 'custom'; });
+  $('ex-normalize').addEventListener('click', async () => {
+    if (!$('ex-backup1').checked) { $('ex-norm-out').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
+    try {
+      const layout = $('ex-layout').value;
+      const r = normalize(await body(), { renumber: $('ex-renumber').value || false, labelWord: $('ex-word').value, labels: $('ex-labels').checked, questionFormat: $('ex-qformat').checked,
+        qBold: $('ex-qbold').checked, qColor: qColor(), qBreak: $('ex-qbreak').checked, keepNext: $('ex-keep').checked, layout: layout === 'false' ? false : layout,
+        font: $('ex-font').value, fontSize: Number($('ex-fsize').value), mathSize: $('ex-msize').value === 'text' ? 'text' : Number($('ex-msize').value) });
+      await io.replaceBody(r.pkg);
+      const rep = r.report;
+      $('ex-norm-out').innerHTML = `<span class="ok">Đã chuẩn hóa ${rep.questions} câu</span>: đánh số lại ${rep.renumbered}, căn lại phương án ${rep.relaid}, đồng bộ phông/cỡ chữ ${rep.retyped} đoạn.` +
+        (rep.objects ? `<div class="warn">${rep.objects} công thức MathType dạng đối tượng chưa đổi được cỡ — hãy chuyển sang công thức Word (tab Công thức) rồi chuẩn hóa lại.</div>` : '') +
+        (rep.skipped.length ? `<ul class="warn">${rep.skipped.slice(0, 8).map((s) => `<li>${esc(s)}</li>`).join('')}</ul>` : '') +
+        `<div class="muted">Hoàn tác bằng Ctrl/Cmd+Z (Word coi đây là một thao tác thay thế toàn bộ nội dung).</div>`;
+    } catch (e) { fail($('ex-norm-out'), e); }
+  });
+
+  const options = () => ({ shuffleQuestions: $('ex-shq').checked, shuffleOptions: $('ex-sho').checked, shuffleStatements: $('ex-shs').checked,
+    stripMarks: $('ex-strip').checked, labelWord: $('ex-word').value, renumber: $('ex-renumber').value || 'part', layout: $('ex-layout').value === 'false' ? 'auto' : $('ex-layout').value });
+
+  // ---- title block / footer of the paper (school's template); values are kept between sessions
+  const FORM_KEYS = Object.keys(DEFAULT_FORM), KEY_FORM = 'texcraft-exam-form';
+  const loadForm = () => { let saved = {}; try { saved = JSON.parse(localStorage.getItem(KEY_FORM) || '{}'); } catch { saved = {}; } return { ...DEFAULT_FORM, ...saved, ...Object.fromEntries(['mon', 'lop', 'thoiGian'].filter((k) => saved[k] === undefined).map((k) => [k, ''])) }; };
+  const readForm = () => Object.fromEntries(FORM_KEYS.map((k) => [k, $('ex-f-' + k).value]));
+  const fillForm = (f) => FORM_KEYS.forEach((k) => { $('ex-f-' + k).value = f[k] ?? ''; });
+  const saveForm = () => { try { localStorage.setItem(KEY_FORM, JSON.stringify(readForm())); } catch { /* ignore */ } };
+  fillForm(loadForm());
+  FORM_KEYS.forEach((k) => $('ex-f-' + k).addEventListener('input', saveForm));
+  $('ex-f-reset').addEventListener('click', () => { fillForm({ ...DEFAULT_FORM, mon: '', lop: '', thoiGian: '' }); saveForm(); });
+  $('ex-f-insert').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try { await io.replaceSelection(simplePackage(examHeaderXml(readForm(), codeList(1)[0]))); out.innerHTML = '<span class="ok">Đã chèn khối tiêu đề tại con trỏ.</span>'; } catch (e) { fail(out, e); }
+  });
+  $('ex-shuffle').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out'), bar = $('ex-progress');
+    const btn = $('ex-shuffle');
+    if (btn.disabled) return;
+    btn.disabled = true;
+    try {
+      const prep = await preparedBody(), pkg = prep.pkg;
+      const codes = codeList(Number($('ex-n').value)), n = codes.length, seed = Number($('ex-seed').value);
+      if (new Set(codes).size !== n) throw new Error('Các mã đề bị trùng nhau: hãy nhập mỗi mã một lần.');
+      const target = $('ex-target').value;
+      // Keep every version in this batch consistent while the pane yields to UI edits.
+      const shuffleOptions = options(), form = readForm();
+      const title = $('ex-h-title').checked, end = $('ex-h-end').checked;
+      const footer = $('ex-h-footer').checked, withKey = $('ex-withkey').checked;
+      const decorate = (pkg, code) => {
+        let paper = title ? prependToBody(pkg, examHeaderXml(form, code)) : pkg;
+        return end ? appendToBody(paper, examEndXml()) : paper;
+      };
+      const origA = analyze(parseBody(pkg));
+      const sectionModes = sectionsUi(origA), qWord = origA.english ? 'Question' : 'Câu';
+      const versions = [];
+      for (let i = 0; i < n; i++) {
+        const code = codes[i];
+        const r = shuffleVersion(pkg, { ...shuffleOptions, seed: seed + i * 7919, code, sectionModes });
+        versions.push({ code, ...r });
+        bar.hidden = false; bar.max = n; bar.value = i + 1;
+        await new Promise((resolve) => setTimeout(resolve, 0)); // let Word's pane paint progress between versions
+      }
+      const table = answerTable(versions.map((v) => ({ code: v.code, answers: v.answers })));
+      lastCsv = table.csv;
+      lastVersions = { pkg, versions: versions.map((v) => ({ code: v.code, answers: v.answers, pkg: v.pkg })) };
+      const sourceSelect = $('ex-pptx-source');
+      if (sourceSelect) {
+        sourceSelect.innerHTML = '<option value="current">Tài liệu hiện tại (đề gốc)</option>' +
+          versions.map((v) => `<option value="${esc(v.code)}">Mã đề ${esc(v.code)}</option>`).join('');
+        const sourceBox = $('ex-pptx-source-box');
+        if (sourceBox) sourceBox.hidden = false;
+      }
+      $('ex-copy').disabled = false;
+      const unknown = versions[0].answers.filter((a) => a.value === null).length;
+      let note = '';
+      if (target === 'new') {
+        let opened = 0, fellBack = false;
+        for (const v of versions) {
+          const paper = decorate(v.pkg, v.code);
+          const finalPkg = withKey ? appendToBody(paper, answerTableXml(answerTable([{ code: v.code, answers: v.answers }]).groups, `ĐÁP ÁN — MÃ ĐỀ ${v.code}`, qWord)) : paper;
+          try { await io.openAsNewDocument(finalPkg, { footerPkg: footer ? simplePackage(examFooterXml(v.code)) : null }); opened++; } catch (e) { await io.insertAtEnd(finalPkg); fellBack = true; }
+        }
+        note = fellBack ? `Word này không cho tạo tài liệu mới từ add-in: đã chèn ${versions.length - opened} đề vào cuối tài liệu hiện tại (mở ${opened} tài liệu mới).` : `Đã mở ${versions.length} tài liệu mới.`;
+      } else if (target === 'append') {
+        for (const v of versions) await io.insertAtEnd(decorate(v.pkg, v.code));
+        note = `Đã chèn ${versions.length} đề vào cuối tài liệu.`;
+      }
+      if (target !== 'new' && (withKey || target === 'none')) {   // one table for every code: first column = question, one column per code
+        await io.insertAtEnd(wrap(answerTableXml(table.groups, 'BẢNG ĐÁP ÁN CÁC MÃ ĐỀ', qWord)));
+        note += ' Đã chèn bảng đáp án chung (mỗi mã đề một cột).';
+      }
+      const warns = [...new Set(versions.flatMap((v) => [
+        ...(v.report.sharedParts.length ? [`Không trộn thứ tự câu ở: ${v.report.sharedParts.join('; ')} (có câu dùng chung dữ kiện)`] : []),
+        ...(v.report.keptSections.length ? [`Giữ nguyên thứ tự câu ở: ${v.report.keptSections.join(', ')}`] : []),
+        ...(v.report.pinnedQuestions.length ? [`Giữ nguyên phương án các câu: ${[...new Set(v.report.pinnedQuestions)].join(', ')}`] : []),
+        ...v.report.notes]))];
+      const origModel = parseBody(pkg);
+      const unansweredChips = chips(unansweredQuestions(origModel, origA));
+      out.innerHTML = `<p class="ok"><b>${versions.length} mã đề</b> đã tạo. ${esc(note)}</p>` + prepNote(prep) + (unknown ? `<p class="warn">${unknown} câu chưa nhận được đáp án (nhãn đúng chưa được gạch chân / tô đỏ): bảng đáp án ghi “?”.</p>${prep.changed ? '' : unansweredChips}` : '') +
+        (warns.length ? `<ul class="warn">${warns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : '') +
+        answerPreview(table.groups, qWord);
+    } catch (e) { fail(out, e); } finally { btn.disabled = false; }
+  });
+
+  /** Preview of the combined key: rows = questions, columns = codes (multiple-choice part only). */
+  function answerPreview(groups, word) {
+    const mc = groups.filter((g) => g.kind === 'mc'), codes = [...new Set(mc.map((g) => String(g.code)))];
+    const at = new Map(mc.map((g) => [String(g.code), new Map(g.items.map((i) => [i.number, i.value]))]));
+    const nums = [...new Set(mc.flatMap((g) => g.items.map((i) => i.number)))].sort((a, b) => a - b);
+    return `<div class="scroll"><table><thead><tr><th>${esc(word)}</th>${codes.map((c) => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${nums.map((n) => `<tr><td><b>${n}</b></td>${codes.map((c) => `<td>${esc(at.get(c).get(n) ?? '?')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  }
+
+  $('ex-key').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const model = parseBody((await preparedBody()).pkg);
+      const answers = answersOf(model, analyze(model));
+      const table = answerTable([{ code: '', answers }]);
+      lastCsv = table.csv; $('ex-copy').disabled = false;
+      await io.insertAtEnd(wrap(answerTableXml(table.groups, 'BẢNG ĐÁP ÁN', analyze(model).english ? 'Question' : 'Câu')));
+      out.innerHTML = '<span class="ok">Đã chèn bảng đáp án vào cuối tài liệu.</span>';
+    } catch (e) { fail(out, e); }
+  });
+  function wrap(bodyXml) {   // minimal package for body.insertOoxml
+    return `<pkg:package xmlns:pkg="http://schemas.microsoft.com/office/2006/xmlPackage"><pkg:part pkg:name="/_rels/.rels" pkg:contentType="application/vnd.openxmlformats-package.relationships+xml"><pkg:xmlData><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name="/word/document.xml" pkg:contentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"><pkg:xmlData><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${bodyXml}</w:body></w:document></pkg:xmlData></pkg:part></pkg:package>`;
+  }
+  async function exportVersions() {
+    const pkg = lastVersions ? lastVersions.pkg : (await preparedBody()).pkg;
+    const list = lastVersions ? lastVersions.versions.slice() : [];
+    if (!list.length) throw new Error('Chưa có mã đề nào: bấm “Tạo đề” trước (hoặc dùng “Chèn bảng đáp án đề hiện tại”).');
+    if ($('ex-orig').checked) { const m = parseBody(pkg); list.unshift({ code: $('ex-origcode').value || '0000', answers: answersOf(m, analyze(m)) }); }
+    return list;
+  }
+  $('ex-export').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const list = await exportVersions();
+      const which = $('ex-xlsx').value === 'both' ? ['giasu', 'texcraft'] : [$('ex-xlsx').value];
+      for (const t of which) {
+        const blob = new Blob([answerXlsx(t, list)], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob); a.download = `DapAn-${t === 'giasu' ? 'GIASU.AI.VN' : 'TEXCRAFT'}.xlsx`;
+        document.body.appendChild(a); a.click(); a.remove();
+      }
+      out.innerHTML = '<span class="ok">Đã tạo file Excel.</span> <span class="muted">Nếu Word chặn tải xuống, dùng “Sao chép bảng” rồi dán vào Excel.</span>';
+    } catch (e) { fail(out, e); }
+  });
+  // ---- QR of the answer key (same format as giasu.ai.vn/cham-thi)
+  let qrState = { groups: [], index: 0, token: 0 };
+  async function showQr() {
+    const my = ++qrState.token, st = $('ex-qr-status'), cv = $('ex-qr-canvas');
+    st.classList.remove('bad'); st.textContent = 'Đang tạo QR và kiểm tra đọc lại…';
+    try {
+      const g = qrState.groups[qrState.index];
+      const c = await renderQr(g.text, { vendorBase: 'vendor/', logoUrl: 'icon-80.png' });
+      if (my !== qrState.token) return;
+      cv.width = c.width; cv.height = c.height; cv.getContext('2d').drawImage(c, 0, 0);
+      st.textContent = `QR ${qrState.index + 1}/${qrState.groups.length} · mã đề ${g.codes.join(', ')} · đã kiểm tra đọc lại đúng` + (qrState.warnings.length ? ` · ${qrState.warnings.length} cảnh báo (câu chưa có đáp án ghi X)` : '');
+      $('ex-qr-prev').disabled = qrState.index === 0; $('ex-qr-next').disabled = qrState.index === qrState.groups.length - 1;
+    } catch (e) { if (my === qrState.token) { st.classList.add('bad'); st.textContent = e.message; } }
+  }
+  $('ex-qr').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const list = await exportVersions();
+      const { payloads, warnings } = qrPayloads(list);
+      qrState = { groups: payloads, index: 0, token: qrState.token, warnings };
+      $('ex-qr-panel').hidden = false;
+      await showQr();
+    } catch (e) { fail(out, e); }
+  });
+  $('ex-qr-prev').addEventListener('click', () => { qrState.index = Math.max(0, qrState.index - 1); showQr(); });
+  $('ex-qr-next').addEventListener('click', () => { qrState.index = Math.min(qrState.groups.length - 1, qrState.index + 1); showQr(); });
+  $('ex-qr-save').addEventListener('click', async () => downloadBlob(await canvasToPng($('ex-qr-canvas')), `QR-dap-an-${qrState.index + 1}.png`));
+  $('ex-qr-insert').addEventListener('click', async () => {
+    try {
+      const png = await canvasToPng($('ex-qr-canvas'));
+      await io.replaceSelection(makePicturePackage(png, { widthPt: 170, heightPt: 170, alt: 'QR đáp án chấm thi giasu.ai.vn', name: 'QR' }));
+      $('ex-qr-status').textContent = 'Đã chèn mã QR vào Word tại con trỏ.';
+    } catch (e) { fail($('ex-shuffle-out'), e); }
+  });
+  $('ex-tsv').addEventListener('click', async () => {
+    const out = $('ex-shuffle-out');
+    try {
+      const list = await exportVersions();
+      const t = $('ex-xlsx').value === 'both' ? 'giasu' : $('ex-xlsx').value;
+      const text = answerTsv(t, list);
+      try { await navigator.clipboard.writeText(text); out.innerHTML = '<span class="ok">Đã sao chép; dán vào ô A1 của Excel.</span>'; } catch { out.innerHTML = `<textarea rows="8">${esc(text)}</textarea>`; }
+    } catch (e) { fail(out, e); }
+  });
+  $('ex-copy').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(lastCsv); $('ex-copy').textContent = 'Đã sao chép'; } catch { $('ex-shuffle-out').innerHTML = `<textarea rows="6">${esc(lastCsv)}</textarea>`; }
+  });
+
+  const swatch = () => {
+    const t = PPTX_THEMES.find((x) => x.id === $('ex-pptx-theme').value);
+    const c = { dark: '0F172A', primary: '3B82F6', accent: '4F46E5', paper: 'F8FAFC', sky: '38BDF8', ...t.colors };
+    $('ex-pptx-swatch').innerHTML = ['dark', 'primary', 'accent', 'sky', 'paper'].map((k) => `<span title="${k}" style="display:inline-block;width:28px;height:18px;border-radius:4px;border:1px solid var(--line);background:#${c[k]}"></span>`).join('') + `<span class="muted" style="font-family:'${t.font}',serif;margin-left:6px">Aa Bb — Câu 1. Đúng</span>`;
+  };
+  $('ex-pptx-theme').addEventListener('change', swatch);
+  swatch();
+
+  $('ex-pptx-btn').addEventListener('click', async () => {
+    const out = $('ex-pptx-out');
+    try {
+      out.innerHTML = '<span class="muted">Đang đọc tài liệu và tạo file PowerPoint…</span>';
+      let pkg;
+      const srcCode = $('ex-pptx-source')?.value;
+      if (srcCode && srcCode !== 'current' && lastVersions) {
+        const found = lastVersions.versions.find((v) => v.code === srcCode);
+        pkg = found ? found.pkg : (await preparedBody()).pkg;
+      } else {
+        pkg = (await preparedBody()).pkg;
+      }
+
+      const src = preparePptxSource(pkg);
+      const title = $('ex-pptx-title').value.trim() || 'BÀI TẬP TRẮC NGHIỆM';
+
+      const buf = buildExamPptx(src.model, src.analysis, src.answers, {
+        title,
+        theme: $('ex-pptx-theme')?.value || 'blue',
+        pkg: src.pkg,
+        nativeMath: $('ex-pptx-math')?.checked !== false
+      });
+
+      const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.presentationml.presentation' });
+      const dl = document.createElement('a');
+      dl.href = URL.createObjectURL(blob);
+      const fileName = `${title.replace(/[\/\\?%*:|"<>]/g, '_') || 'DeThi'}${srcCode && srcCode !== 'current' ? `-${srcCode}` : ''}.pptx`;
+      dl.download = fileName;
+      document.body.appendChild(dl);
+      dl.click();
+      dl.remove();
+
+      out.innerHTML = `<span class="ok">Đã tạo bài trình chiếu <b>${esc(fileName)}</b> thành công!</span> <div class="muted">Bấm vào phương án A/B/C/D để hiện thông báo Đúng/Sai trực tiếp.</div>${buf.splitCount ? `<div class="muted">${buf.splitCount} câu có đề quá dài nên được tách thành 2 trang (đề bài rồi đến các phương án).</div>` : ''}${buf.missingPictures ? `<div class="warn">${buf.missingPictures} hình/đối tượng không chuyển được (định dạng PowerPoint không hỗ trợ) — hãy xem lại đề gốc.</div>` : ''}`;
+    } catch (e) {
+      fail(out, e);
+    }
+  });
+}

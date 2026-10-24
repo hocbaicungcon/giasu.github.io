@@ -1,1 +1,308 @@
-import{labelBox as J}from"./figures/scene.js";class L extends Error{}const T=37.795,Y={black:[0,0,0],white:[255,255,255],red:[255,0,0],blue:[0,0,255],green:[0,255,0],yellow:[255,255,0],orange:[255,128,0],pink:[255,191,191],gray:[128,128,128],brown:[191,128,64],purple:[191,0,191],cyan:[0,255,255],magenta:[255,0,255]},it=s=>s.map(t=>Math.round(Math.max(0,Math.min(255,t))).toString(16).padStart(2,"0")).join("");function K(s){const t=String(s).trim().split("!"),i=Y[t[0]];if(!i)throw new L("colour "+s);if(t.length===1)return it(i);const e=parseFloat(t[1])/100,p=t[2]?Y[t[2]]:Y.white;if(!p)throw new L("colour "+s);return it(i.map((g,r)=>g*e+p[r]*(1-e)))}const H=s=>{const t=/^\s*(-?[\d.]+)\s*(cm|mm|pt|em|ex)?\s*$/.exec(s||"");if(!t)throw new L("dimension "+s);return parseFloat(t[1])*{cm:T,mm:T/10,pt:T/28.45,em:10,ex:5}[t[2]||"cm"]};function Q(s,t){const i=[];let e=0,p="";for(let g=0;g<s.length;g++){const r=s[g];if(r==="\\"){p+=r+(s[++g]||"");continue}"{[(".includes(r)?e++:"}])".includes(r)&&e--,r===t&&e===0?(i.push(p),p=""):p+=r}return i.push(p),i}function tt(s){const t={};for(const i of Q(s||"",",")){const e=i.trim();if(!e)continue;const p=e.indexOf("=");p<0?t[e]=!0:t[e.slice(0,p).trim()]=e.slice(p+1).trim()}return t}const at=new Set(["draw","fill","circle","rectangle","rounded corners","thick","thin","dashed","dotted"]);function ht(s){for(const t of Object.keys(s))if(!(at.has(t)||s[t]!==!0))try{return K(t)}catch{}return null}function et(s){let t=s.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|Huge|bfseries|itshape|sffamily|normalsize)\b\s*/g,"").trim();return t?/^\$[\s\S]*\$$/.test(t)&&t.indexOf("$",1)===t.length-1?t.slice(1,-1):t.includes("$")?t.replace(/\$([^$]*)\$/g,"$1"):/^[\d\s+\-−×:=.,]*$/.test(t)?t:"\\text{".concat(t,"}"):""}const ot=(s,t)=>{let i=0,e=t;for(;e<s.length;e++)if(s[e]==="{")i++;else if(s[e]==="}"&&--i===0)break;return[s.slice(t+1,e),e+1]},nt=s=>String(+s.toFixed(6));function ft(s){const t=Q(s,",").map(c=>c.trim()).filter(Boolean),i=t.indexOf("...");if(i<0)return t;const e=t.slice(0,i).map(parseFloat),p=parseFloat(t[i+1]),g=e.length>1?e[1]-e[0]:p>=e[0]?1:-1,r=[];if(!g)throw new L("foreach list");for(let c=e[0],w=0;(g>0?c<=p+1e-9:c>=p-1e-9)&&w<400;c+=g,w++)r.push(nt(c));return r}function ut(s){for(let t=0;t<60;t++){const i=/\\foreach\s+((?:\\[A-Za-z]+\/?)+)\s+in\s*\{/.exec(s);if(!i)return s;const e=i[1].split("/").filter(Boolean).map(n=>n.slice(1)),[p,g]=ot(s,i.index+i[0].length-1);let r=g;for(;/\s/.test(s[r]);)r++;let c,w;if(s[r]==="{")[c,w]=ot(s,r);else{const n=s.indexOf(";",r);c=s.slice(r,n+1),w=n+1}const B=ft(p).map(n=>{const a=e.length>1?n.split("/"):[n];return e.reduce((_,U,st)=>_.replace(new RegExp("\\\\"+U+"(?![A-Za-z])","g"),()=>a[st]),c)}).join("\n");s=s.slice(0,i.index)+B+s.slice(w)}throw new L("foreach")}function pt(s){for(let t=0;t<60;t++){const i=/\\begin\{scope\}\s*(\[[^\n]*?\])?/.exec(s);if(!i)return s;const e=s.indexOf("\\end{scope}",i.index);if(e<0)throw new L("scope");const p=tt((i[1]||"").slice(1,-1));if(Object.keys(p).some(w=>w!=="shift"))throw new L("scope "+Object.keys(p).join());let g=0,r=0;if(p.shift){const w=/\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)/.exec(p.shift);if(!w)throw new L("shift");g=parseFloat(w[1]),r=parseFloat(w[2])}const c=s.slice(i.index+i[0].length,e).replace(/\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)/g,(w,B,n)=>"(".concat(nt(parseFloat(B)+g),",").concat(nt(parseFloat(n)+r),")"));s=s.slice(0,i.index)+c+s.slice(e+11)}throw new L("scope")}const X=s=>{const t=String(s).replace(/cm/g,"").trim();if(!/^[-+*/().\d\s]+$/.test(t))throw new L("number "+s);return Function("return (".concat(t,")"))()};function dt(s,{scale:t=1,fs:i=16,lw:e=1.2,ink:p,icon:g}={}){const r=T*t,c=[],w=new Map,B=(d,M)=>[d*r,-M*r];let n=pt(ut(s.replace(/%[^\n]*/g,"")));const a=(d,M)=>{const u=/^\s*\(([^)]*)\)\s*$/.exec(d);if(!u)throw new L("coordinate "+d);const m=u[1].trim();if(/^[A-Za-z][\w.]*$/.test(m)){const b=w.get(m);if(!b)throw new L("node "+m);return{p:b.c,node:b}}if(m.includes(":")&&!m.includes(",")){const[b,k]=m.split(":"),j=X(b)*Math.PI/180,C=X(k);return{p:B(C*Math.cos(j),C*Math.sin(j))}}const x=Q(m.replace(/[{}]/g,""),",");if(x.length===2)return{p:B(X(x[0]),X(x[1]))};throw new L("coordinate "+m)},_=(d,M,u)=>{if(!u)return M;const m=[d[0]-M[0],d[1]-M[1]],x=Math.hypot(m[0],m[1])||1,b=[m[0]/x,m[1]/x];if(u.shape==="circle")return[M[0]+b[0]*u.r,M[1]+b[1]*u.r];const k=Math.min(Math.abs(b[0])>1e-6?u.hw/Math.abs(b[0]):1e9,Math.abs(b[1])>1e-6?u.hh/Math.abs(b[1]):1e9);return[M[0]+b[0]*k,M[1]+b[1]*k]},U=(d,M,u,m)=>{const x=/^\s*\\ic(O?)([A-Z][A-Za-z]*)(?:\[([\d.]+)\])?\s*$/.exec(m);if(x&&g){const h=g(x[2].toLowerCase(),!!x[1]);if(h){const P=x[3]?parseFloat(x[3]):1,Z=dt(h,{scale:P*t,fs:i,lw:(.6+.55*P)*1.33,ink:"#4a4a4a",icon:g}),V=u[0]-Z.width/2,y=u[1]-Z.height/2;for(const S of Z.items)c.push(wt(S,V,y));M&&w.set(M,{c:u,shape:"rect",r:0,hw:Z.width/2,hh:Z.height/2});return}}if(/above|below|left|right/.test(Object.keys(d).join(" "))){const h=Object.keys(d).join(" "),P=et(m),Z=P?J(P,i):{w:0,h:0};u=[u[0]+(/right/.test(h)?1:/left/.test(h)?-1:0)*(Z.w/2+4),u[1]+(/below/.test(h)?1:/above/.test(h)?-1:0)*(Z.h/2+4)]}const b=/\\wspic(?:\[([\d.]+)cm\])?\{ws-([0-9a-f-]+)\}/i.exec(m),k=b?(b[1]?parseFloat(b[1]):1)*T:0,j=d["minimum size"]?H(d["minimum size"])*t:0,C=d["minimum width"]?H(d["minimum width"])*t:j,q=d["minimum height"]?H(d["minimum height"])*t:j,N=d["inner sep"]?H(d["inner sep"]):5,F=b?"":et(m),D=!b&&F&&/^\\text\{[^$\\]*\}$/.test(F)&&/[^\x00-\x7f]|[A-Za-z]{2}/.test(F),A=F&&!D?J(F,i*(/Large/.test(m)?1.3:1)):D?{w:F.length*i*.5,h:i*1.3}:{w:0,h:0},E=d.circle?"circle":"rect",o=!!d.draw,R=Math.max(C,A.w+2*N,o&&k?k+2*N:0)/2*(o||j?1:0)||A.w/2,$=Math.max(q,A.h+2*N,o&&k?k+2*N:0)/2*(o||j?1:0)||A.h/2,G=Math.max(C,q,E==="circle"?Math.max(A.w,A.h)+2*N:0)/2;if(o){const h=d["line width"]?H(d["line width"]):e,P=d.fill?"#"+K(d.fill):void 0;E==="circle"?c.push({t:"ellipse",cx:u[0],cy:u[1],rx:G,ry:G,sw:h,fill:P}):c.push({t:"rect",x:u[0]-R,y:u[1]-$,w:2*R,h:2*$,sw:h,fill:P})}F&&D?c.push({t:"ptext",s:F.slice(6,-1),x:u[0],y:u[1],size:i*(/Large/.test(m)?1.3:1),color:"#222222"}):F&&c.push({t:"label",latex:F,x:u[0],y:u[1],size:i*(/Large|huge/.test(d.font||"")?1.35:1),anchor:"c"}),b&&c.push({t:"ptext",s:String.fromCodePoint(...b[2].split("-").map(h=>parseInt(h,16))),x:u[0],y:u[1],size:k*.8,font:"Segoe UI Emoji"}),M&&w.set(M,{c:u,shape:E,r:E==="circle"?G:0,hw:R||k/2,hh:$||k/2})},st=(d,M,u,m)=>{const x=/right/.test(d)?1:/left/.test(d)?-1:0,b=/above/.test(d)?-1:/below/.test(d)?1:0;return[M[0]+x*(u/2+3),M[1]+b*(m/2+3)]},rt=(d,M,u,m,x)=>{const b=Math.hypot(u[0],u[1])||1;let k=[-u[1]/b,u[0]/b];const j=/above/.test(d)?k[1]>0?-1:1:/below/.test(d)?k[1]<0?-1:1:/right/.test(d)?k[0]<0?-1:1:/left/.test(d)?k[0]>0?-1:1:0;if(!j)return M;k=[k[0]*j,k[1]*j];const C=Math.abs(k[0])*m/2+Math.abs(k[1])*x/2+4;return[M[0]+k[0]*C,M[1]+k[1]*C]};for(const d of Q(n,";")){const M=d.trim();if(!M)continue;const u=/^\\(draw|fill|filldraw|node|path)\b\s*(\[[^\]]*\])?\s*([\s\S]*)$/.exec(M);if(!u)throw new L("statement "+M.slice(0,30));const m=u[1],x=tt((u[2]||"").slice(1,-1)),b=u[3].trim().replace(/\.\.\s*controls\s*(\([^)]*\))\s*(?:and\s*(\([^)]*\))\s*)?\.\.\s*(\([^)]*\))/g,(y,S,l,f)=>" ~BEZ".concat(S).concat(l||S).concat(f," ")),k=c.length;if(x.wsdashline&&(x.draw="black!40",x["line width"]="2.4pt"),m==="node"){const y=/^(?:\(([^)]*)\)\s*)?at\s*(\([^)]*\))\s*\{([\s\S]*)\}$/.exec(b);if(!y)throw new L("node "+b.slice(0,30));U(x,y[1],a(y[2]).p,y[3]);continue}const j=m==="draw"||m==="filldraw"||x.draw,C=m==="fill"||m==="filldraw"||x.fill,q=ht(x),N=C?"#"+(x.fill?K(x.fill):m==="fill"&&q?q:"000000"):void 0,F=x["line width"]?H(x["line width"]):e,D=!!(x["->"]||x["-stealth"]),A=j?x.draw&&x.draw!==!0?"#"+K(x.draw):m!=="fill"&&q?"#"+q:p:void 0,E=b.match(/~BEZ\([^)]*\)\([^)]*\)\([^)]*\)|\(\s*[^()]*\)|--|\bcycle\b|\brectangle\b|\bcircle\b|\bellipse\b|\bgrid\b|\barc\b|\bnode\b\s*(?:\[[^\]]*\])?\s*(?:\([^)]*\))?\s*\{(?:[^{}]|\{[^{}]*\})*\}|\bto\b|\bsin\b|\bcos\b/g)||[];let o=null,R=null,$=0,G=null,h=[],P=!1,Z="";const V=()=>{h.length>1&&(j||C)&&c.push({t:"poly",pts:h,closed:!1,sw:F,fill:N,color:A,noStroke:!j}),h=[]};for(;$<E.length;){const y=E[$];if(y==="--"||y==="to"){P=!0,$++;continue}if(y==="sin"||y==="cos"){P=!0,Z=y,$++;continue}if(y.startsWith("~BEZ")){if(!o)throw new L("curve start");const[l,f,v]=y.slice(4).match(/\([^)]*\)/g).map(O=>a(O).p);h.length||(h=[o]);for(let O=1;O<=14;O++){const z=O/14,I=1-z;h.push([I*I*I*o[0]+3*I*I*z*l[0]+3*I*z*z*f[0]+z*z*z*v[0],I*I*I*o[1]+3*I*I*z*l[1]+3*I*z*z*f[1]+z*z*z*v[1]])}o=v,$++;continue}if(y==="cycle"){h.length&&(c.push({t:"poly",pts:h,closed:!0,sw:F,fill:N,color:A}),h=[]),$++;continue}if(y==="rectangle"){const l=a(E[++$]).p,f=Math.min(o[0],l[0]),v=Math.min(o[1],l[1]);c.push({t:"rect",x:f,y:v,w:Math.abs(l[0]-o[0]),h:Math.abs(l[1]-o[1]),sw:F,fill:N,color:A,noStroke:!j}),o=l,h=[],$++;continue}if(y==="circle"){const l=/\(\s*([\d.]+)\s*(cm)?\s*\)/.exec(E[++$]),f=parseFloat(l[1])*r;c.push({t:"ellipse",cx:o[0],cy:o[1],rx:f,ry:f,sw:F,fill:N,color:A,noStroke:!j}),h=[],$++;continue}if(y==="ellipse"){const l=/\(\s*([\d.]+)\s*(?:cm)?\s+and\s+([\d.]+)\s*(?:cm)?\s*\)/.exec(E[++$]);if(!l)throw new L("ellipse");c.push({t:"ellipse",cx:o[0],cy:o[1],rx:parseFloat(l[1])*r,ry:parseFloat(l[2])*r,sw:F,fill:N,color:A,noStroke:!j}),h=[],$++;continue}if(y==="grid"){const l=a(E[++$]).p;for(let f=Math.min(o[0],l[0]);f<=Math.max(o[0],l[0])+.5;f+=r)c.push({t:"line",x1:f,y1:o[1],x2:f,y2:l[1],w:F});for(let f=Math.min(o[1],l[1]);f<=Math.max(o[1],l[1])+.5;f+=r)c.push({t:"line",x1:o[0],y1:f,x2:l[0],y2:f,w:F});$++;continue}if(y==="arc"){const l=/\(\s*(-?[\d.]+)\s*:\s*(-?[\d.]+)\s*:\s*([\d.]+)\s*\)/.exec(E[++$]),f=parseFloat(l[1]),v=parseFloat(l[2]),O=parseFloat(l[3])*r,z=[o[0]-O*Math.cos(f*Math.PI/180),o[1]+O*Math.sin(f*Math.PI/180)];for(let I=1;I<=12;I++){const W=(f+(v-f)*I/12)*Math.PI/180;h.push([z[0]+O*Math.cos(W),z[1]-O*Math.sin(W)])}o=h[h.length-1],$++;continue}if(/^node/.test(y)){const l=/^node\s*(\[[^\]]*\])?\s*(?:\(([^)]*)\)\s*)?\{([\s\S]*)\}$/.exec(y),f=tt((l[1]||"").slice(1,-1));o&&E[$+1]===void 0?U(f,l[2],o,l[3]):o?G={o:f,name:l[2],text:l[3]}:U(f,l[2],o,l[3]),$++;continue}const S=a(y);if(o!==null&&!P&&(V(),o=null),P=!1,o===null)o=S.p,R=S.node,h=[o];else{let l=_(S.p,o,R),f=_(o,S.p,S.node);if(R||S.node)V(),h=[l,f];else if(Z){for(let v=1;v<=10;v++){const O=v/10,z=Z==="sin"?Math.sin(O*Math.PI/2):1-Math.cos(O*Math.PI/2);h.push([o[0]+(S.p[0]-o[0])*O,o[1]+(S.p[1]-o[1])*z])}f=S.p,l=o,Z=""}else h.push(S.p),f=S.p,l=o;if(G){const v=[(l[0]+f[0])/2,(l[1]+f[1])/2],O=et(G.text),z=O?J(O,i):{w:0,h:0},I=Object.keys(G.o).filter(ct=>/above|below|left|right/.test(ct)).join(" "),W=rt(I,v,[f[0]-l[0],f[1]-l[1]],z.w,z.h);O&&c.push({t:"label",latex:O,x:W[0],y:W[1],size:i,anchor:"c"}),G=null}D&&(R||S.node)?(c.push({t:"line",x1:l[0],y1:l[1],x2:f[0],y2:f[1],w:F,arrow:!0}),h=[]):(R||S.node)&&(c.push({t:"line",x1:l[0],y1:l[1],x2:f[0],y2:f[1],w:F}),h=[]),o=S.p,R=S.node}$++}if(D&&h.length>1){const y=h[h.length-2],S=h[h.length-1];c.push({t:"line",x1:y[0],y1:y[1],x2:S[0],y2:S[1],w:F,arrow:!0}),h=h.slice(0,-1).length>1?h.slice(0,-1):[]}if(V(),x.wsdashline)for(let y=k;y<c.length;y++)c[y].t!=="label"&&(c[y].dash="dot")}return lt(c)}function wt(s,t,i){const e={...s};return e.t==="line"?(e.x1+=t,e.x2+=t,e.y1+=i,e.y2+=i):e.t==="poly"?e.pts=e.pts.map(p=>[p[0]+t,p[1]+i]):e.t==="rect"?(e.x+=t,e.y+=i):e.t==="ellipse"?(e.cx+=t,e.cy+=i):(e.t==="dot"||e.t==="label"||e.t==="ptext")&&(e.x+=t,e.y+=i),e}function lt(s,t=3){let i=1/0,e=1/0,p=-1/0,g=-1/0;const r=(n,a)=>{i=Math.min(i,n),p=Math.max(p,n),e=Math.min(e,a),g=Math.max(g,a)};for(const n of s)if(n.t==="line")r(n.x1,n.y1),r(n.x2,n.y2);else if(n.t==="poly")n.pts.forEach(a=>r(a[0],a[1]));else if(n.t==="rect")r(n.x,n.y),r(n.x+n.w,n.y+n.h);else if(n.t==="ellipse")r(n.cx-n.rx,n.cy-n.ry),r(n.cx+n.rx,n.cy+n.ry);else if(n.t==="dot")r(n.x,n.y);else if(n.t==="ptext"){const a=(n.size||16)*.75;r(n.x-a,n.y-a),r(n.x+a,n.y+a)}else if(n.t==="label"){const a=J(n.latex,n.size||16);r(n.x-a.w/2,n.y-a.h/2),r(n.x+a.w/2,n.y+a.h/2)}if(!Number.isFinite(i))throw new L("empty picture");const c=t-i,w=t-e,B=n=>{const a={...n};return a.t==="line"?(a.x1+=c,a.x2+=c,a.y1+=w,a.y2+=w):a.t==="poly"?a.pts=a.pts.map(_=>[_[0]+c,_[1]+w]):a.t==="rect"?(a.x+=c,a.y+=w):a.t==="ellipse"?(a.cx+=c,a.cy+=w):(a.t==="dot"||a.t==="label"||a.t==="ptext")&&(a.x+=c,a.y+=w),a};return{width:p-i+2*t,height:g-e+2*t,items:s.map(B)}}function mt(s,t,i=11){const e=.9299999999999999*T,p=[],g=(w,B)=>{const n=w*Math.PI/180;return[B*Math.cos(n),-B*Math.sin(n)]};p.push({t:"ellipse",cx:0,cy:0,rx:e,ry:e,sw:1.4,fill:"#ffffff"});for(let w=0;w<360;w+=30){const B=g(w,e*.87),n=g(w,e);p.push({t:"line",x1:B[0],y1:B[1],x2:n[0],y2:n[1],w:1,color:"#4d4d4d"})}for(let w=1;w<=12;w++){const B=g(90-30*w,e*.7);p.push({t:"label",latex:String(w),x:B[0],y:B[1],size:i,anchor:"c"})}const r=g(s,.72*.62*T),c=g(t,1.05*.62*T);return p.push({t:"line",x1:0,y1:0,x2:r[0],y2:r[1],w:2.4,arrow:!0,color:"#b30000"},{t:"line",x1:0,y1:0,x2:c[0],y2:c[1],w:1.6,arrow:!0,color:"#1f3f9f"},{t:"dot",x:0,y:0,r:2.2}),lt(p)}export{L as TikzError,mt as clockScene,K as colour,lt as fit,wt as shiftItem,dt as tikzToScene};
+// A small TikZ subset -> scene (src/figures/scene.js primitives), enough for the worksheet generator's own pictures:
+// \draw / \fill / \filldraw / \node with coordinates (x,y) (a:r) (name), --, cycle, rectangle, circle, grid, arc,
+// inline `node[...] {..}` on a segment, options draw, fill=, line width=, ->, circle/rectangle nodes with minimum size.
+// Units: 1 cm = 37.8 px (the scene's unit). Throws TikzError on anything else, so the caller can fall back.
+import { labelBox } from './figures/scene.js';
+
+export class TikzError extends Error {}
+const CM = 37.795;
+
+const COLORS = { black: [0, 0, 0], white: [255, 255, 255], red: [255, 0, 0], blue: [0, 0, 255], green: [0, 255, 0], yellow: [255, 255, 0], orange: [255, 128, 0], pink: [255, 191, 191], gray: [128, 128, 128], brown: [191, 128, 64], purple: [191, 0, 191], cyan: [0, 255, 255], magenta: [255, 0, 255] };
+const hex = (rgb) => rgb.map((v) => Math.round(Math.max(0, Math.min(255, v))).toString(16).padStart(2, '0')).join('');
+/** TikZ colour expression (black!30, red!80!black, yellow!35) -> RRGGBB. */
+export function colour(expr) {
+  const parts = String(expr).trim().split('!');
+  const base = COLORS[parts[0]];
+  if (!base) throw new TikzError('colour ' + expr);
+  if (parts.length === 1) return hex(base);
+  const p = parseFloat(parts[1]) / 100, other = parts[2] ? COLORS[parts[2]] : COLORS.white;
+  if (!other) throw new TikzError('colour ' + expr);
+  return hex(base.map((v, i) => v * p + other[i] * (1 - p)));
+}
+
+const dim = (s) => { const m = /^\s*(-?[\d.]+)\s*(cm|mm|pt|em|ex)?\s*$/.exec(s || ''); if (!m) throw new TikzError('dimension ' + s); return parseFloat(m[1]) * ({ cm: CM, mm: CM / 10, pt: CM / 28.45, em: 10, ex: 5 }[m[2] || 'cm']); };
+
+/** Split on `sep` at brace/bracket/paren depth 0. */
+function splitTop(s, sep) {
+  const out = []; let depth = 0, cur = '';
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (c === '\\') { cur += c + (s[++i] || ''); continue; }
+    if ('{[('.includes(c)) depth++; else if ('}])'.includes(c)) depth--;
+    if (c === sep && depth === 0) { out.push(cur); cur = ''; } else cur += c;
+  }
+  out.push(cur);
+  return out;
+}
+
+function parseOpts(str) {
+  const o = {};
+  for (const part of splitTop(str || '', ',')) {
+    const p = part.trim();
+    if (!p) continue;
+    const eq = p.indexOf('=');
+    if (eq < 0) o[p] = true; else o[p.slice(0, eq).trim()] = p.slice(eq + 1).trim();
+  }
+  return o;
+}
+
+const FLAGS = new Set(['draw', 'fill', 'circle', 'rectangle', 'rounded corners', 'thick', 'thin', 'dashed', 'dotted']);
+/** `\fill[red]` / `\draw[blue!50]`: a bare colour name among the options. */
+function colourOpt(opts) {
+  for (const k of Object.keys(opts)) { if (FLAGS.has(k) || opts[k] !== true) continue; try { return colour(k); } catch { /* not a colour */ } }
+  return null;
+}
+
+function nodeLatex(text) {
+  let t = text.replace(/\\(?:tiny|small|footnotesize|large|Large|LARGE|huge|Huge|bfseries|itshape|sffamily|normalsize)\b\s*/g, '').trim();
+  if (!t) return '';
+  if (/^\$[\s\S]*\$$/.test(t) && t.indexOf('$', 1) === t.length - 1) return t.slice(1, -1);
+  if (t.includes('$')) return t.replace(/\$([^$]*)\$/g, '$1');
+  return /^[\d\s+\-−×:=.,]*$/.test(t) ? t : `\\text{${t}}`;
+}
+
+const braceGroup = (s, i) => { let d = 0, j = i; for (; j < s.length; j++) { if (s[j] === '{') d++; else if (s[j] === '}' && --d === 0) break; } return [s.slice(i + 1, j), j + 1]; };
+const fmtNum = (x) => String(+x.toFixed(6));
+function listValues(list) {   // {a,b,c}  {0,45,...,315}  {1,...,5}
+  const items = splitTop(list, ',').map((x) => x.trim()).filter(Boolean), dots = items.indexOf('...');
+  if (dots < 0) return items;
+  const head = items.slice(0, dots).map(parseFloat), end = parseFloat(items[dots + 1]);
+  const step = head.length > 1 ? head[1] - head[0] : (end >= head[0] ? 1 : -1), out = [];
+  if (!step) throw new TikzError('foreach list');
+  for (let v = head[0], k = 0; (step > 0 ? v <= end + 1e-9 : v >= end - 1e-9) && k < 400; v += step, k++) out.push(fmtNum(v));
+  return out;
+}
+/** \foreach \a/\b in {..}{body} (or a single statement) written out for every value. */
+function expandForeach(src) {
+  for (let guard = 0; guard < 60; guard++) {
+    const m = /\\foreach\s+((?:\\[A-Za-z]+\/?)+)\s+in\s*\{/.exec(src);
+    if (!m) return src;
+    const names = m[1].split('/').filter(Boolean).map((v) => v.slice(1));
+    const [list, afterList] = braceGroup(src, m.index + m[0].length - 1);
+    let k = afterList; while (/\s/.test(src[k])) k++;
+    let body, end;
+    if (src[k] === '{') [body, end] = braceGroup(src, k); else { const e = src.indexOf(';', k); body = src.slice(k, e + 1); end = e + 1; }
+    const out = listValues(list).map((v) => {
+      const parts = names.length > 1 ? v.split('/') : [v];
+      return names.reduce((b, n, idx) => b.replace(new RegExp('\\\\' + n + '(?![A-Za-z])', 'g'), () => parts[idx]), body);
+    }).join('\n');
+    src = src.slice(0, m.index) + out + src.slice(end);
+  }
+  throw new TikzError('foreach');
+}
+/** \begin{scope}[shift={(x,y)}] ... \end{scope}: the shift written into the coordinates inside. */
+function expandScopes(src) {
+  for (let guard = 0; guard < 60; guard++) {
+    const m = /\\begin\{scope\}\s*(\[[^\n]*?\])?/.exec(src);
+    if (!m) return src;
+    const end = src.indexOf('\\end{scope}', m.index);
+    if (end < 0) throw new TikzError('scope');
+    const o = parseOpts((m[1] || '').slice(1, -1));
+    if (Object.keys(o).some((k) => k !== 'shift')) throw new TikzError('scope ' + Object.keys(o).join());
+    let dx = 0, dy = 0;
+    if (o.shift) { const sm = /\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)/.exec(o.shift); if (!sm) throw new TikzError('shift'); dx = parseFloat(sm[1]); dy = parseFloat(sm[2]); }
+    const body = src.slice(m.index + m[0].length, end).replace(/\(\s*(-?[\d.]+)\s*,\s*(-?[\d.]+)\s*\)/g, (_, a, b) => `(${fmtNum(parseFloat(a) + dx)},${fmtNum(parseFloat(b) + dy)})`);
+    src = src.slice(0, m.index) + body + src.slice(end + '\\end{scope}'.length);
+  }
+  throw new TikzError('scope');
+}
+const num = (t) => { const x = String(t).replace(/cm/g, '').trim(); if (!/^[-+*/().\d\s]+$/.test(x)) throw new TikzError('number ' + t); return Function(`return (${x})`)(); };   // 0.5*2, -0.2+0.1
+
+export function tikzToScene(code, { scale = 1, fs = 16, lw = 1.2, ink, icon } = {}) {
+  const S = CM * scale;
+  const items = [], nodes = new Map();
+  const pt = (x, y) => [x * S, -y * S];
+  let src = expandScopes(expandForeach(code.replace(/%[^\n]*/g, '')));
+
+  const coord = (tok, cur) => {
+    const m = /^\s*\(([^)]*)\)\s*$/.exec(tok);
+    if (!m) throw new TikzError('coordinate ' + tok);
+    const inner = m[1].trim();
+    if (/^[A-Za-z][\w.]*$/.test(inner)) { const n = nodes.get(inner); if (!n) throw new TikzError('node ' + inner); return { p: n.c, node: n }; }
+    if (inner.includes(':') && !inner.includes(',')) { const [aa, rr] = inner.split(':'); const a = num(aa) * Math.PI / 180, r = num(rr); return { p: pt(r * Math.cos(a), r * Math.sin(a)) }; }
+    const xy = splitTop(inner.replace(/[{}]/g, ''), ',');
+    if (xy.length === 2) return { p: pt(num(xy[0]), num(xy[1])) };
+    throw new TikzError('coordinate ' + inner);
+  };
+
+  const clip = (from, to, node) => {   // where the line from `from` towards `to` leaves the named node
+    if (!node) return to;
+    const d = [from[0] - to[0], from[1] - to[1]], L = Math.hypot(d[0], d[1]) || 1;
+    const u = [d[0] / L, d[1] / L];
+    if (node.shape === 'circle') return [to[0] + u[0] * node.r, to[1] + u[1] * node.r];
+    const t = Math.min(Math.abs(u[0]) > 1e-6 ? node.hw / Math.abs(u[0]) : 1e9, Math.abs(u[1]) > 1e-6 ? node.hh / Math.abs(u[1]) : 1e9);
+    return [to[0] + u[0] * t, to[1] + u[1] * t];
+  };
+
+  const addNode = (opts, name, c, text) => {
+    const im = /^\s*\\ic(O?)([A-Z][A-Za-z]*)(?:\[([\d.]+)\])?\s*$/.exec(text);   // a TikZ icon of the worksheet library as the node's content
+    if (im && icon) {
+      const code = icon(im[2].toLowerCase(), Boolean(im[1]));
+      if (code) {
+        const sc = im[3] ? parseFloat(im[3]) : 1, sub = tikzToScene(code, { scale: sc * scale, fs, lw: (0.6 + 0.55 * sc) * 1.33, ink: '#4a4a4a', icon });
+        const dx = c[0] - sub.width / 2, dy = c[1] - sub.height / 2;
+        for (const it of sub.items) items.push(shiftItem(it, dx, dy));
+        if (name) nodes.set(name, { c, shape: 'rect', r: 0, hw: sub.width / 2, hh: sub.height / 2 });
+        return;
+      }
+    }
+    if (/above|below|left|right/.test(Object.keys(opts).join(' '))) {   // node[below left] at p: the text sits beside the point, not on it
+      const k = Object.keys(opts).join(' '), tex0 = nodeLatex(text), b0 = tex0 ? labelBox(tex0, fs) : { w: 0, h: 0 };
+      c = [c[0] + (/right/.test(k) ? 1 : /left/.test(k) ? -1 : 0) * (b0.w / 2 + 4), c[1] + (/below/.test(k) ? 1 : /above/.test(k) ? -1 : 0) * (b0.h / 2 + 4)];
+    }
+    const pm = /\\wspic(?:\[([\d.]+)cm\])?\{ws-([0-9a-f-]+)\}/i.exec(text), pic = pm ? (pm[1] ? parseFloat(pm[1]) : 1) * CM : 0;   // an emoji picture in a node
+    const size = opts['minimum size'] ? dim(opts['minimum size']) * scale : 0;   // nodes follow the picture's scale, so boxes laid out on a scaled grid keep their gaps
+    const w0 = opts['minimum width'] ? dim(opts['minimum width']) * scale : size, h0 = opts['minimum height'] ? dim(opts['minimum height']) * scale : size;
+    const inner = opts['inner sep'] ? dim(opts['inner sep']) : 5;
+    const tex = pm ? '' : nodeLatex(text);
+    const plain = !pm && tex && /^\\text\{[^$\\]*\}$/.test(tex) && /[^\x00-\x7f]|[A-Za-z]{2}/.test(tex);   // words: plain text (keeps the letter spacing), not a formula
+    const box = tex && !plain ? labelBox(tex, fs * (/Large/.test(text) ? 1.3 : 1)) : plain ? { w: tex.length * fs * 0.5, h: fs * 1.3 } : { w: 0, h: 0 };
+    const shape = opts.circle ? 'circle' : 'rect';
+    const draw = Boolean(opts.draw);
+    const hw = Math.max(w0, box.w + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.w / 2, hh = Math.max(h0, box.h + 2 * inner, draw && pic ? pic + 2 * inner : 0) / 2 * (draw || size ? 1 : 0) || box.h / 2;
+    const r = Math.max(w0, h0, shape === 'circle' ? Math.max(box.w, box.h) + 2 * inner : 0) / 2;
+    if (draw) {
+      const sw = opts['line width'] ? dim(opts['line width']) : lw;
+      const fill = opts.fill ? '#' + colour(opts.fill) : undefined;
+      if (shape === 'circle') items.push({ t: 'ellipse', cx: c[0], cy: c[1], rx: r, ry: r, sw, fill });
+      else items.push({ t: 'rect', x: c[0] - hw, y: c[1] - hh, w: 2 * hw, h: 2 * hh, sw, fill });
+    }
+    if (tex && plain) items.push({ t: 'ptext', s: tex.slice(6, -1), x: c[0], y: c[1], size: fs * (/Large/.test(text) ? 1.3 : 1), color: '#222222' });
+    else if (tex) items.push({ t: 'label', latex: tex, x: c[0], y: c[1], size: fs * (/Large|huge/.test(opts.font || '') ? 1.35 : 1), anchor: 'c' });
+    if (pm) items.push({ t: 'ptext', s: String.fromCodePoint(...pm[2].split('-').map((h) => parseInt(h, 16))), x: c[0], y: c[1], size: pic * 0.8, font: 'Segoe UI Emoji' });
+    if (name) nodes.set(name, { c, shape, r: shape === 'circle' ? r : 0, hw: hw || pic / 2, hh: hh || pic / 2 });
+  };
+
+  const place = (pos, base, w, h) => {   // for node[above] {..} on a segment: shift the label away from the point
+    const dx = /right/.test(pos) ? 1 : /left/.test(pos) ? -1 : 0, dy = /above/.test(pos) ? -1 : /below/.test(pos) ? 1 : 0;
+    return [base[0] + dx * (w / 2 + 3), base[1] + dy * (h / 2 + 3)];
+  };
+
+  const placeBeside = (pos, mid, d, w, h) => {   // a label beside the middle of a segment, clear of the line (not on it)
+    const L = Math.hypot(d[0], d[1]) || 1;
+    let n = [-d[1] / L, d[0] / L];
+    const want = /above/.test(pos) ? (n[1] > 0 ? -1 : 1) : /below/.test(pos) ? (n[1] < 0 ? -1 : 1) : /right/.test(pos) ? (n[0] < 0 ? -1 : 1) : /left/.test(pos) ? (n[0] > 0 ? -1 : 1) : 0;
+    if (!want) return mid;
+    n = [n[0] * want, n[1] * want];
+    const off = Math.abs(n[0]) * w / 2 + Math.abs(n[1]) * h / 2 + 4;
+    return [mid[0] + n[0] * off, mid[1] + n[1] * off];
+  };
+
+  for (const raw of splitTop(src, ';')) {
+    const st = raw.trim();
+    if (!st) continue;
+    const head = /^\\(draw|fill|filldraw|node|path)\b\s*(\[[^\]]*\])?\s*([\s\S]*)$/.exec(st);
+    if (!head) throw new TikzError('statement ' + st.slice(0, 30));
+    const cmd = head[1], opts = parseOpts((head[2] || '').slice(1, -1)), rest = head[3].trim().replace(/\.\.\s*controls\s*(\([^)]*\))\s*(?:and\s*(\([^)]*\))\s*)?\.\.\s*(\([^)]*\))/g, (_, a, b, c) => ` ~BEZ${a}${b || a}${c} `);
+    const firstItem = items.length;
+    if (opts.wsdashline) { opts.draw = 'black!40'; opts['line width'] = '2.4pt'; }   // dotted path to trace
+    if (cmd === 'node') {
+      const m = /^(?:\(([^)]*)\)\s*)?at\s*(\([^)]*\))\s*\{([\s\S]*)\}$/.exec(rest);
+      if (!m) throw new TikzError('node ' + rest.slice(0, 30));
+      addNode(opts, m[1], coord(m[2]).p, m[3]);
+      continue;
+    }
+    const doDraw = cmd === 'draw' || cmd === 'filldraw' || opts.draw, doFill = cmd === 'fill' || cmd === 'filldraw' || opts.fill;
+    const bare = colourOpt(opts);
+    const fill = doFill ? '#' + (opts.fill ? colour(opts.fill) : cmd === 'fill' && bare ? bare : '000000') : undefined;
+    const sw = opts['line width'] ? dim(opts['line width']) : lw;
+    const arrow = Boolean(opts['->'] || opts['-stealth']);
+    const stroke = doDraw ? (opts.draw && opts.draw !== true ? '#' + colour(opts.draw) : cmd !== 'fill' && bare ? '#' + bare : ink) : undefined;
+    // tokenise the path
+    const toks = rest.match(/~BEZ\([^)]*\)\([^)]*\)\([^)]*\)|\(\s*[^()]*\)|--|\bcycle\b|\brectangle\b|\bcircle\b|\bellipse\b|\bgrid\b|\barc\b|\bnode\b\s*(?:\[[^\]]*\])?\s*(?:\([^)]*\))?\s*\{(?:[^{}]|\{[^{}]*\})*\}|\bto\b|\bsin\b|\bcos\b/g) || [];
+    let cur = null, curNode = null, i = 0, pending = null, pathPts = [], joined = false, wave = '';
+    const flush = () => {
+      if (pathPts.length > 1 && (doDraw || doFill)) items.push({ t: 'poly', pts: pathPts, closed: false, sw, fill, color: stroke, noStroke: !doDraw });
+      pathPts = [];
+    };
+    while (i < toks.length) {
+      const t = toks[i];
+      if (t === '--' || t === 'to') { joined = true; i++; continue; }
+      if (t === 'sin' || t === 'cos') { joined = true; wave = t; i++; continue; }
+      if (t.startsWith('~BEZ')) {   // .. controls p1 and p2 .. p3 : a cubic curve
+        if (!cur) throw new TikzError('curve start');
+        const [c1, c2, c3] = t.slice(4).match(/\([^)]*\)/g).map((q) => coord(q).p);
+        if (!pathPts.length) pathPts = [cur];
+        for (let k = 1; k <= 14; k++) { const u = k / 14, m = 1 - u; pathPts.push([m * m * m * cur[0] + 3 * m * m * u * c1[0] + 3 * m * u * u * c2[0] + u * u * u * c3[0], m * m * m * cur[1] + 3 * m * m * u * c1[1] + 3 * m * u * u * c2[1] + u * u * u * c3[1]]); }
+        cur = c3; i++; continue;
+      }
+      if (t === 'cycle') { if (pathPts.length) { items.push({ t: 'poly', pts: pathPts, closed: true, sw, fill, color: stroke }); pathPts = []; } i++; continue; }
+      if (t === 'rectangle') { const q = coord(toks[++i]).p; const x = Math.min(cur[0], q[0]), y = Math.min(cur[1], q[1]); items.push({ t: 'rect', x, y, w: Math.abs(q[0] - cur[0]), h: Math.abs(q[1] - cur[1]), sw, fill, color: stroke, noStroke: !doDraw }); cur = q; pathPts = []; i++; continue; }
+      if (t === 'circle') { const m = /\(\s*([\d.]+)\s*(cm)?\s*\)/.exec(toks[++i]); const r = parseFloat(m[1]) * S; items.push({ t: 'ellipse', cx: cur[0], cy: cur[1], rx: r, ry: r, sw, fill, color: stroke, noStroke: !doDraw }); pathPts = []; i++; continue; }
+      if (t === 'ellipse') { const m = /\(\s*([\d.]+)\s*(?:cm)?\s+and\s+([\d.]+)\s*(?:cm)?\s*\)/.exec(toks[++i]); if (!m) throw new TikzError('ellipse'); items.push({ t: 'ellipse', cx: cur[0], cy: cur[1], rx: parseFloat(m[1]) * S, ry: parseFloat(m[2]) * S, sw, fill, color: stroke, noStroke: !doDraw }); pathPts = []; i++; continue; }
+      if (t === 'grid') { const q = coord(toks[++i]).p; for (let x = Math.min(cur[0], q[0]); x <= Math.max(cur[0], q[0]) + 0.5; x += S) items.push({ t: 'line', x1: x, y1: cur[1], x2: x, y2: q[1], w: sw }); for (let y = Math.min(cur[1], q[1]); y <= Math.max(cur[1], q[1]) + 0.5; y += S) items.push({ t: 'line', x1: cur[0], y1: y, x2: q[0], y2: y, w: sw }); i++; continue; }
+      if (t === 'arc') { const m = /\(\s*(-?[\d.]+)\s*:\s*(-?[\d.]+)\s*:\s*([\d.]+)\s*\)/.exec(toks[++i]); const a1 = parseFloat(m[1]), a2 = parseFloat(m[2]), r = parseFloat(m[3]) * S; const c0 = [cur[0] - r * Math.cos(a1 * Math.PI / 180), cur[1] + r * Math.sin(a1 * Math.PI / 180)]; for (let k = 1; k <= 12; k++) { const a = (a1 + (a2 - a1) * k / 12) * Math.PI / 180; pathPts.push([c0[0] + r * Math.cos(a), c0[1] - r * Math.sin(a)]); } cur = pathPts[pathPts.length - 1]; i++; continue; }
+      if (/^node/.test(t)) {
+        const m = /^node\s*(\[[^\]]*\])?\s*(?:\(([^)]*)\)\s*)?\{([\s\S]*)\}$/.exec(t);
+        const o = parseOpts((m[1] || '').slice(1, -1));
+        if (cur && toks[i + 1] === undefined) addNode(o, m[2], cur, m[3]);   // node at the end of the path: at the current point
+        else if (cur) pending = { o, name: m[2], text: m[3] };   // node on a segment: at its middle (placed once the end point is known)
+        else addNode(o, m[2], cur, m[3]);
+        i++; continue;
+      }
+      const c = coord(t);
+      if (cur !== null && !joined) { flush(); cur = null; }   // a coordinate with no -- before it starts a new sub-path
+      joined = false;
+      if (cur === null) { cur = c.p; curNode = c.node; pathPts = [cur]; } else {
+        let from = clip(c.p, cur, curNode), to = clip(cur, c.p, c.node);
+        if (curNode || c.node) { flush(); pathPts = [from, to]; } else if (wave) {   // a quarter of a sine / cosine wave
+          for (let k = 1; k <= 10; k++) { const u = k / 10, y = wave === 'sin' ? Math.sin(u * Math.PI / 2) : 1 - Math.cos(u * Math.PI / 2); pathPts.push([cur[0] + (c.p[0] - cur[0]) * u, cur[1] + (c.p[1] - cur[1]) * y]); }
+          to = c.p; from = cur; wave = '';
+        } else { pathPts.push(c.p); to = c.p; from = cur; }
+        if (pending) {
+          const mid = [(from[0] + to[0]) / 2, (from[1] + to[1]) / 2], tex = nodeLatex(pending.text), b = tex ? labelBox(tex, fs) : { w: 0, h: 0 };
+          const pos = Object.keys(pending.o).filter((k) => /above|below|left|right/.test(k)).join(' ');
+          const p2 = placeBeside(pos, mid, [to[0] - from[0], to[1] - from[1]], b.w, b.h);
+          if (tex) items.push({ t: 'label', latex: tex, x: p2[0], y: p2[1], size: fs, anchor: 'c' });
+          pending = null;
+        }
+        if (arrow && (curNode || c.node)) { items.push({ t: 'line', x1: from[0], y1: from[1], x2: to[0], y2: to[1], w: sw, arrow: true }); pathPts = []; } else if (curNode || c.node) { items.push({ t: 'line', x1: from[0], y1: from[1], x2: to[0], y2: to[1], w: sw }); pathPts = []; }
+        cur = c.p; curNode = c.node;
+      }
+      i++;
+    }
+    if (arrow && pathPts.length > 1) { const a = pathPts[pathPts.length - 2], b = pathPts[pathPts.length - 1]; items.push({ t: 'line', x1: a[0], y1: a[1], x2: b[0], y2: b[1], w: sw, arrow: true }); pathPts = pathPts.slice(0, -1).length > 1 ? pathPts.slice(0, -1) : []; }
+    flush();
+    if (opts.wsdashline) for (let k = firstItem; k < items.length; k++) if (items[k].t !== 'label') items[k].dash = 'dot';
+  }
+  return fit(items);
+}
+
+export function shiftItem(it, dx, dy) {
+  const o = { ...it };
+  if (o.t === 'line') { o.x1 += dx; o.x2 += dx; o.y1 += dy; o.y2 += dy; } else if (o.t === 'poly') o.pts = o.pts.map((q) => [q[0] + dx, q[1] + dy]);
+  else if (o.t === 'rect') { o.x += dx; o.y += dy; } else if (o.t === 'ellipse') { o.cx += dx; o.cy += dy; } else if (o.t === 'dot' || o.t === 'label' || o.t === 'ptext') { o.x += dx; o.y += dy; }
+  return o;
+}
+/** Translate the items so the bounding box starts at (pad, pad); returns {width, height, items}. */
+export function fit(items, pad = 3) {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  const grow = (x, y) => { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); };
+  for (const it of items) {
+    if (it.t === 'line') { grow(it.x1, it.y1); grow(it.x2, it.y2); } else if (it.t === 'poly') it.pts.forEach((q) => grow(q[0], q[1]));
+    else if (it.t === 'rect') { grow(it.x, it.y); grow(it.x + it.w, it.y + it.h); } else if (it.t === 'ellipse') { grow(it.cx - it.rx, it.cy - it.ry); grow(it.cx + it.rx, it.cy + it.ry); } else if (it.t === 'dot') grow(it.x, it.y);
+    else if (it.t === 'ptext') { const hs = (it.size || 16) * 0.75; grow(it.x - hs, it.y - hs); grow(it.x + hs, it.y + hs); }
+    else if (it.t === 'label') { const b = labelBox(it.latex, it.size || 16); grow(it.x - b.w / 2, it.y - b.h / 2); grow(it.x + b.w / 2, it.y + b.h / 2); }
+  }
+  if (!Number.isFinite(x0)) throw new TikzError('empty picture');
+  const dx = pad - x0, dy = pad - y0;
+  const mv = (it) => {
+    const o = { ...it };
+    if (o.t === 'line') { o.x1 += dx; o.x2 += dx; o.y1 += dy; o.y2 += dy; } else if (o.t === 'poly') o.pts = o.pts.map((q) => [q[0] + dx, q[1] + dy]);
+    else if (o.t === 'rect') { o.x += dx; o.y += dy; } else if (o.t === 'ellipse') { o.cx += dx; o.cy += dy; } else if (o.t === 'dot' || o.t === 'label' || o.t === 'ptext') { o.x += dx; o.y += dy; }
+    return o;
+  };
+  return { width: x1 - x0 + 2 * pad, height: y1 - y0 + 2 * pad, items: items.map(mv) };
+}
+
+/** The clock face drawn by \wsclock{hourAngle}{minuteAngle} (angles as in TikZ: degrees, counter-clockwise from the x axis). */
+export function clockScene(hourDeg, minDeg, fs = 11) {
+  const R = 1.5 * 0.62 * CM, items = [];
+  const at = (deg, r) => { const a = deg * Math.PI / 180; return [r * Math.cos(a), -r * Math.sin(a)]; };
+  items.push({ t: 'ellipse', cx: 0, cy: 0, rx: R, ry: R, sw: 1.4, fill: '#ffffff' });
+  for (let a = 0; a < 360; a += 30) { const p = at(a, R * 0.87), q = at(a, R); items.push({ t: 'line', x1: p[0], y1: p[1], x2: q[0], y2: q[1], w: 1, color: '#4d4d4d' }); }
+  for (let n = 1; n <= 12; n++) { const p = at(90 - 30 * n, R * 0.7); items.push({ t: 'label', latex: String(n), x: p[0], y: p[1], size: fs, anchor: 'c' }); }
+  const h = at(hourDeg, 0.72 * 0.62 * CM), m = at(minDeg, 1.05 * 0.62 * CM);
+  items.push({ t: 'line', x1: 0, y1: 0, x2: h[0], y2: h[1], w: 2.4, arrow: true, color: '#b30000' }, { t: 'line', x1: 0, y1: 0, x2: m[0], y2: m[1], w: 1.6, arrow: true, color: '#1f3f9f' }, { t: 'dot', x: 0, y: 0, r: 2.2 });
+  return fit(items);
+}

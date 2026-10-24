@@ -1,1 +1,1198 @@
-import{escapeXml as B}from"./xml.js";const yt=["pStyle","keepNext","keepLines","pageBreakBefore","framePr","widowControl","numPr","suppressLineNumbers","pBdr","shd","tabs","suppressAutoHyphens","kinsoku","wordWrap","overflowPunct","topLinePunct","autoSpaceDE","autoSpaceDN","bidi","adjustRightInd","snapToGrid","spacing","ind","contextualSpacing","mirrorIndents","suppressOverlap","jc","textDirection","textAlignment","textboxTightWrap","outlineLvl","divId","cnfStyle","rPr","sectPr","pPrChange"];function I(t){const e=[];let n=0;for(;n<t.length;){const r=t.indexOf("<",n);if(r<0)break;if(t.startsWith("<!--",r)){n=t.indexOf("-->",r)+3;continue}const o=/^<([\w:.-]+)((?:\s+[^\s=/>]+\s*=\s*(?:"[^"]*"|'[^']*'))*)\s*(\/?)>/.exec(t.slice(r,r+4e3));if(!o){n=r+1;continue}const s=o[1];if(o[3]){e.push(t.slice(r,r+o[0].length)),n=r+o[0].length;continue}let i=1,l=r+o[0].length;const c=new RegExp("<".concat(s.replace(/[.]/g,"\\."),"(?=[\\s>/])|</").concat(s.replace(/[.]/g,"\\."),">"),"g");c.lastIndex=l;let p;for(;p=c.exec(t);)if(p[0][1]==="/"){if(--i===0){l=p.index+p[0].length;break}}else{const u=t.indexOf(">",p.index);t[u-1]!=="/"&&i++}if(i!==0)throw new Error("unbalanced <"+s+">");e.push(t.slice(r,l)),n=l}return e}const N=t=>/^<([\w:.-]+)/.exec(t)[1];function U(t){if(/^<w:p\b[^>]*\/>$/.test(t))return{open:t.replace(/\/>$/,">"),ppr:"",children:[]};const e=/^<w:p\b[^>]*>/.exec(t)[0];let n=t.slice(e.length,t.length-6),r="";const o=/^\s*<w:pPr>[\s\S]*?<\/w:pPr>|^\s*<w:pPr\/>/.exec(n);return o&&(r=o[0].trim(),n=n.slice(o[0].length)),{open:e,ppr:r,children:I(n)}}const At=t=>"".concat(t.open).concat(t.ppr).concat(t.children.join(""),"</w:p>");function at(t){return!t||t==="<w:pPr/>"?[]:I(t.replace(/^<w:pPr>/,"").replace(/<\/w:pPr>$/,""))}function W(t,e,n){const r=at(t).filter(o=>N(o)!=="w:"+e);if(n){const o=i=>{const l=yt.indexOf(i.replace(/^w:/,""));return l<0?999:l},s=r.findIndex(i=>o(N(i))>o("w:"+e));s<0?r.push(n):r.splice(s,0,n)}return r.length?"<w:pPr>".concat(r.join(""),"</w:pPr>"):""}const R=t=>{let e="";for(const n of t.matchAll(/<w:t\b[^>]*>([^<]*)<\/w:t>|<w:tab\/>|<w:br\b[^>]*\/>|<w:noBreakHyphen\/>/g))e+=n[1]!==void 0?V(n[1]):n[0]==="<w:tab/>"?"	":n[0].startsWith("<w:br")?"\n":"-";return e},V=t=>t.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&quot;/g,'"').replace(/&apos;/g,"'").replace(/&amp;/g,"&"),A=t=>/^<w:r[\s>]/.test(t),X=t=>/^<m:oMath(Para)?[\s>]/.test(t),E=t=>/<w:object\b|<w:drawing|<w:pict|<mc:AlternateContent/.test(t);function M(t){return A(t)?E(t)?"\uFFFC":R(t):X(t)?"\uFFFD":/^<w:hyperlink[\s>]/.test(t)?I(t.replace(/^<w:hyperlink\b[^>]*>/,"").replace(/<\/w:hyperlink>$/,"")).map(M).join(""):""}const q=t=>t.children.map(M).join("");function Ct(t,e){if(A(t)&&/<w:object\b/.test(t)){const n=/style="[^"]*width:([\d.]+)pt/.exec(t);return n?Number(n[1]):30}if(A(t)&&/<w:drawing/.test(t)){const n=/<wp:extent cx="(\d+)"/.exec(t);return n?Number(n[1])/12700:60}return X(t)?((t.match(/<m:t\b[^>]*>([^<]*)<\/m:t>/g)||[]).join("").replace(/<[^>]+>/g,"").length*.5+2)*e:[...M(t).replace(/\t/g,"")].length*e*.47}function z(t){const e=/(<pkg:part pkg:name="\/word\/document\.xml"[^>]*>\s*<pkg:xmlData>)([\s\S]*?)(<\/pkg:xmlData>)/.exec(t);if(!e)throw new Error("kh\xF4ng c\xF3 /word/document.xml");const n=e[2],r=/^([\s\S]*?<w:body>)([\s\S]*?)(<w:sectPr\b(?:(?!<w:sectPr)[\s\S])*?<\/w:sectPr>|<w:sectPr\/>)?(<\/w:body>[\s\S]*)$/.exec(n);if(!r)throw new Error("kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c w:body");const o=I(r[2]).map(s=>N(s)==="w:p"?{kind:"p",...U(s)}:{kind:"other",xml:s});return{pkg:t,dm:e,head:r[1],blocks:o,sectPr:r[3]||"",tail:r[4]}}function L(t,e=t.blocks){const n=e.map(i=>i.kind==="p"?At(i):i.xml).join(""),r=t.head+n+t.sectPr+t.tail,{pkg:o,dm:s}=t;return o.slice(0,s.index)+s[1]+r+s[3]+o.slice(s.index+s[0].length)}function Rt(t){const e=/<w:pgSz\b[^>]*w:w="(\d+)"/.exec(t.sectPr),n=/<w:pgMar\b[^>]*/.exec(t.sectPr);if(!e||!n)return 9638;const r=/w:left="(\d+)"/.exec(n[0]),o=/w:right="(\d+)"/.exec(n[0]);return Number(e[1])-Number(r?r[1]:1134)-Number(o?o[1]:1134)}const Et=/^\s*PH[AẦ]N\s+(I{1,3}V?|IV|V|[1-4])\b\s*[.:)]?/i,Q=/^\s*(C[âa]u|B[àa]i|Question)\s*(\d+)\s*([.:)\-–—]|\s+(?=[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ(]))/iu,et=/^\s*([A-D])\s*([.)])/,K=/^\s*([a-d])\s*\)/,qt=/^[\s\-–—_*.]*(h[ếe]t\b|the\s+end[\s\-–—_*.]*$|(bảng\s*)?đáp\s*án[^:：]{0,40}$|hướng\s*dẫn\s*chấm|cán\s*bộ\s*coi\s*thi)/i,ut=/^\s*(đáp\s*án|đáp\s*số|đs|kết\s*quả|trả\s*lời)\s*[:：]/i,Bt=/(sử\s*dụng|dựa\s*vào|dùng)\s+(chung\s+)?(thông\s*tin|dữ\s*kiện|đoạn|hình|bảng)[^.]{0,80}câu\s*\d+|(trả\s*lời|cho)\s+(các\s+)?câu\s*(hỏi\s*)?\d+\s*(,|và|đến|-|–)\s*\d+/i,Nt=/^\s*(tất\s*cả|cả\s+(ba|bốn|hai|\w+)\s+(đáp\s*án|ý|phương\s*án|câu)|không\s*có\s*(đáp\s*án|phương\s*án)|các\s*(đáp\s*án|phương\s*án|ý)\s*(trên|còn\s*lại)|all\s+of\s+(the\s+)?(above|these)|none\s+of\s+(the\s+)?(above|these)|neither\s+of\s+(the\s+)?(above|these))/i,Mt=/arrang|meaningful\s+(paragraph|letter|conversation|text|exchange)|sentences?\s+(to|in)\s+(make|form)/i,jt=/read\s+(the|a|an)\s+(following\s+)?(\w+\s+)?(passage|text|advertisement|notice|leaflet|announcement|e-?mail|letter|message|poster|flyer|brochure|article|extract|story|conversation|dialogue)|numbered\s+blank|\(\s*\d{1,2}\s*\)/i,Ot=/\b(both|either)\s+[A-D]\s+(and|or|&)\s+[A-D]\b|\b(A|B|C|D)\s*(,|và|&)\s*(A|B|C|D)\b.*(đúng|sai)|cả\s+[A-D]\s*(,|và)\s*[A-D]|(đáp\s*án|ý|phương\s*án)\s*[A-D]\b/i,Dt=t=>/đúng\s*sai|đúng\s*hoặc\s*sai/i.test(t)?"tf":/trả\s*lời\s*ngắn|ngắn/i.test(t)?"short":/nhiều\s*(phương\s*án|lựa\s*chọn)|trắc\s*nghiệm/i.test(t)?"mc":"other",ft=t=>{const e=/^([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(t||"");if(!e)return!1;const[n,r,o]=[e[1],e[2],e[3]].map(s=>parseInt(s,16));return n>=160&&r<=85&&o<=85&&n-Math.max(r,o)>=96},pt=/<w:color\b[^>]*\bw:val="([0-9a-fA-F]{6})"[^>]*\/>/g,_t=t=>{for(const e of t.matchAll(pt))if(ft(e[1]))return!0;return!1};function ht(t){return/<w:u\b(?![^>]*w:val="none")/.test(t)?"underline":_t(t)?"red":/<w:highlight\b(?![^>]*w:val="none")/.test(t)?"highlight":null}const It=t=>t.replace(/<w:u\b[^>]*\/>/g,"").replace(/<w:highlight\b[^>]*\/>/g,"").replace(pt,(e,n)=>ft(n)?"":e);function Tt(t,e){t=t.replace(/<w:lastRenderedPageBreak\/>/g,"");const n=/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?\s*<w:t\b[^>]*>([^<]*)<\/w:t>\s*<\/w:r>$/.exec(t);if(!n)return null;const r=V(n[3]),o=s=>s?"".concat(n[1]).concat(n[2]||"",'<w:t xml:space="preserve">').concat(B(s),"</w:t></w:r>"):"";return[o(r.slice(0,e)),o(r.slice(e))]}function Wt(t,e=et,n=!0){const r=t.children.slice(),o=[];let s=!1,i=!0;for(let c=0;c<r.length;c++){const p=r[c],u=M(p);if(A(p)&&!E(p)){const b=e.exec(u),a=o.length?String.fromCharCode(o[0].letter.charCodeAt(0)+o.length):null;if(b&&(!a||b[1]===a)&&(i||!s||/^[\s\u00A0]/.test(u)&&u.length>b[0].length)){const h=b[0].length,d=u.length-u.trimStart().length;if(d===0||!u.slice(0,d).trim()){const m=u.slice(0,h);if(h<u.length||/[A-Za-z]/.test(m)){const v=u.length>h?G(p,h):[p,""];if(!v)return{options:[],ok:!1};const y=v[0];o.push({at:c,letter:b[1],labelRun:y,rest:v[1]}),s=!0,i=!1;continue}}}}if(!u.replace(/[\s\t\u00A0]/g,""))(/\t|\s{2,}/.test(u)||u==="")&&(i=!0);else if(i=/\s$/.test(u),!o.length)return{options:[],ok:o.length>0};A(p)&&/<w:tab\/>/.test(p)&&(i=!0)}return o.length?{options:o.map((c,p)=>{const u=p+1<o.length?o[p+1].at:r.length;let f=[c.rest,...r.slice(c.at+1,u)].filter(Boolean);return{letter:c.letter,labelRun:c.labelRun,content:f}}),ok:!0}:{options:[],ok:!1}}function dt(t){const e=r=>A(r)&&!E(r)&&!R(r).replace(/[\s\t\u00A0]/g,"")&&!/<w:br\b/.test(r),n=t.slice();for(;n.length&&(e(n[n.length-1])||/^<w:(proofErr|bookmark\w*)\b/.test(n[n.length-1]));)n.pop();for(;n.length&&e(n[0]);)n.shift();return n}function H(t){const e=[];let n={title:"",kind:"mc",start:0,questions:[],blockIndex:-1};const r=a=>a.kind==="p"?q(a):"",o=[];let s=t.blocks.length,i=!1;const l=[];for(let a=0;a<t.blocks.length;a++){const h=r(t.blocks[a]);Q.test(h)?i=!0:i&&t.blocks[a].kind==="p"&&qt.test(h)&&l.push(a)}l.length&&l.length<=2&&(s=l[0]),t.blocks.slice(0,s).forEach((a,h)=>{const d=r(a);a.kind==="p"&&Et.test(d)?o.push({i:h,type:"part",t:d}):a.kind==="p"&&Q.test(d)&&o.push({i:h,type:"q",t:d,number:Number(Q.exec(d)[2])})});const c=a=>o.findIndex(h=>h.i===a),p=o.filter(a=>a.type==="q"),u=p.length>0&&p.filter(a=>/^\s*question/i.test(a.t)).length*2>p.length;o.forEach((a,h)=>{const d=h+1<o.length?o[h+1].i:s;if(a.type==="part"){n={title:a.t.trim(),kind:Dt(a.t),blockIndex:a.i,questions:[]},e.push(n);return}e.length||(n={title:"",kind:"mc",blockIndex:-1,questions:[]},e.push(n));const m={number:a.number,start:a.i,end:d,options:null,optionParas:[],statements:[],answer:null,flags:[]},v=n.kind,y=[];let $=a.i,T=!1;for(;$<d;$++){const g=t.blocks[$];if(g.kind!=="p")continue;const k=q(g);if(v==="mc"||v==="other"){const w=et.test(k)?Wt(g):{ok:!1};if(w.ok&&w.options[0].letter===(m.options?"ABCD"[m.options.length]:"A")||w.ok&&m.options&&"ABCD"[m.options.length]===w.options[0].letter){m.options=(m.options||[]).concat(w.options),m.optionParas.push($),T=!0;continue}T&&k.trim()&&m.options.length<4&&!m.flags.includes("complexOptions")&&m.flags.push("complexOptions")}if(v==="tf"){const w=K.exec(k);if(w){m.statements.push({block:$,letter:w[1]});continue}}if(ut.test(k)){m.answer={text:k.replace(ut,"").trim(),block:$};continue}!T&&$>a.i&&y.push(k)}if(m.stemEnd=m.optionParas.length?m.optionParas[0]:m.statements.length?m.statements[0].block:d,m.ownEnd=u&&m.optionParas.length?m.optionParas[m.optionParas.length-1]+1:d,Bt.test(r(t.blocks[a.i]))&&m.flags.push("shared"),m.options){const g=m.options.map(k=>k.letter).join("");(g!=="ABCD".slice(0,m.options.length)||m.options.length!==4)&&m.flags.push("optionCount:"+g),m.options.some(k=>Ot.test(k.content.map(M).join("")))&&m.flags.push("optionRefs")}else v==="mc"&&m.flags.push("noOptions");n.questions.push(m)});const f=u?zt(t,e.flatMap(a=>a.questions)):void 0;let b=0;if(u)for(const a of t.blocks.slice(0,s)){const h=a.kind==="p"?q(a):(a.xml.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g)||[]).map(d=>d.replace(/<[^>]+>/g,"")).join(" ");b+=(h.match(/\bQuestion\s*\d+/gi)||[]).length}return{parts:e.filter(a=>a.questions.length||a.blockIndex>=0),english:u,sections:f,expected:b,limit:s,detected:e.reduce((a,h)=>a+h.questions.length,0)}}function zt(t,e){const n=o=>o.kind!=="p"||!!q(o).trim(),r=[];e.forEach((o,s)=>{const i=s?e[s-1].ownEnd:0,l=o.start;(s===0||t.blocks.slice(i,l).some(n))&&r.push({index:r.length,lead:{from:i,to:l},questions:[],first:s===0}),r[r.length-1].questions.push(o)});for(const o of r){const s=t.blocks.slice(o.lead.from,o.lead.to),i=s.filter(f=>f.kind==="p").map(q).filter(f=>f.trim()),l=i.join("\n"),c=l.split(/\s+/).filter(Boolean).length,p=s.some(f=>f.kind!=="p"||f.children.some(E));let u="independent";Mt.test(l)?u="order":(jt.test(l)||!o.first&&(c>70||i.length>=3||p))&&(u="passage"),o.kind=u,o.mode=u==="independent"?"shuffle":"keep",o.firstNumber=o.questions[0].number,o.lastNumber=o.questions[o.questions.length-1].number,o.title=(i[i.length>1&&o.first?i.length-1:0]||"").trim().slice(0,90)}return r}function nt(t,e){const n=[],r=s=>s.statements.map(i=>{const c=t.blocks[i.block].children.find(p=>A(p)&&/[a-d]\s*\)/.test(R(p)));return c?!!ht(c):!1}),o=e.parts.some(s=>s.kind==="tf"&&s.questions.some(i=>r(i).some(Boolean)));for(const s of e.parts)for(const i of s.questions){const l={part:s.title,kind:s.kind,number:i.number};if(s.kind==="mc"||s.kind==="other"){const c=(i.options||[]).filter(p=>ht(p.labelRun)).map(p=>p.letter);l.value=c.length===1?c[0]:c.length?c.join(""):null,l.multiple=c.length>1,c.length>1&&c.length===(i.options||[]).length&&(l.value=null,l.multiple=!1)}else if(s.kind==="tf"){const c=r(i),p=!c.some(Boolean)&&o;l.value=c.some(Boolean)||p?i.statements.map((u,f)=>"".concat(u.letter).concat(c[f]?"\u0110":"S")).join(" "):null,l.tf=c.some(Boolean)||p?c.map(u=>u?"\u0110":"S"):null}else s.kind==="short"&&(l.value=i.answer?i.answer.text:null);n.push(l)}return n}const wt=/^(?:C[âa]u|Question)?\s*(\d{1,3})\s*[.:)]?$/i,st=t=>{const e=String(t).replace(/ /g," ").trim();if(/^[A-D]$/.test(e))return{kind:"mc",value:e};const n=e.replace(/\b[a-d]\s*[).:\-–]/gi,"").replace(/[\s,;\-–]/g,"");return/^[ĐSđs]{4}$/.test(n)?{kind:"tf",value:[...n].map(r=>/[Đđ]/.test(r)?"\u0110":"S")}:/^-?\d[\d.,/]*$/.test(e)?{kind:"short",value:e}:null};function Lt(t){return(t.match(/<w:tr\b[\s\S]*?<\/w:tr>/g)||[]).map(e=>(e.match(/<w:tc\b[\s\S]*?<\/w:tc>/g)||[]).map(n=>Z(n).replace(/\s+/g," ").trim()))}function Qt(t){const e={mc:new Map,tf:new Map,short:new Map},n=(s,i)=>{i&&!e[i.kind].has(s)&&e[i.kind].set(s,i.value)};let r="";for(const s of t){if(s.kind==="p"){r+=q(s)+"\n";continue}if(N(s.xml)!=="w:tbl")continue;const i=Lt(s.xml).filter(l=>l.some(Boolean));for(let l=0;l<i.length;l++){const c=i[l],p=c.slice(1).map(u=>wt.exec(u));if(c.length>=3&&p.every(Boolean)&&i[l+1]){const u=i[l+1];p.forEach((f,b)=>n(Number(f[1]),st(u[b+1]??""))),l++;continue}for(let u=0;u+1<c.length;u+=2){const f=wt.exec(c[u]);if(f)n(Number(f[1]),st(c[u+1]));else break}}}const o=(s,i)=>{r=r.replace(s,(l,...c)=>(i(c)," ".repeat(l.length)))};return o(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]\s*((?:[a-d]\s*[).:\-–]\s*[ĐSđs](?![\p{L}\d])[\s,;]*){4}|[ĐSđs](?:[\s,;\-–]*[ĐSđs]){3}(?![\p{L}\d]))/giu,s=>n(Number(s[0]),st(s[1]))),o(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]?\s*([A-D])(?![\p{L}\d])/gu,s=>n(Number(s[0]),{kind:"mc",value:s[1]})),o(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–=]\s*(-?\d[\d.,/]*)(?![\p{L}\d])/giu,s=>n(Number(s[0]),{kind:"short",value:s[1]})),e}const Ft=t=>{const e=/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(t);return e?"".concat(e[1]).concat(F(e[2]?e[2].trim():"",{u:'<w:u w:val="single"/>'})).concat(t.slice(e[0].length)):t};function mt(t,e,n){for(let r=0;r<t.children.length;r++){const o=t.children[r];if(!A(o)||E(o))continue;const s=R(o),i=e.exec(s);if(!i||i[1]!==n)continue;const l=s.length>i[0].length?G(o,i[0].length):[o,""];return l?(t.children.splice(r,1,Ft(l[0]),...l[1]?[l[1]]:[]),!0):!1}return!1}function ie(t){let e;try{e=z(t)}catch{return{pkg:t,changed:!1,count:0}}const n=H(e);let r=n.limit;if(r>=e.blocks.length){const u=e.blocks.map((f,b)=>[f,b]).filter(([f])=>f.kind==="other"&&N(f.xml)==="w:tbl").pop();r=u&&u[1]>(n.parts.flatMap(f=>f.questions).pop()||{start:0}).start?u[1]:r}if(r>=e.blocks.length)return{pkg:t,changed:!1,count:0};const o=Qt(e.blocks.slice(r));if(!o.mc.size&&!o.tf.size&&!o.short.size)return{pkg:t,changed:!1,count:0};const s=nt(e,n),i=[];let l=0,c=0;for(const u of n.parts)for(const f of u.questions){const b=s[c++];if(!(!b||b.value!==null&&b.value!==void 0)){if(u.kind==="mc"||u.kind==="other"){const a=o.mc.get(f.number);a&&f.options&&f.optionParas.some(h=>mt(e.blocks[h],/^\s*([A-D])\s*[.)]/,a))&&l++}else if(u.kind==="tf"){const a=o.tf.get(f.number);if(!a||a.length!==f.statements.length)continue;let h=!1;f.statements.forEach((d,m)=>{a[m]==="\u0110"&&mt(e.blocks[d.block],/^\s*([a-d])\s*\)/,d.letter)&&(h=!0)}),(h||a.every(d=>d==="S"))&&l++}else if(u.kind==="short"){const a=o.short.get(f.number);a&&(i.push([f.start,a]),l++)}}}if(!l)return{pkg:t,changed:!1,count:0};const p=e.blocks.slice();for(const[u,f]of i.sort((b,a)=>a[0]-b[0]))p.splice(u+1,0,{kind:"p",open:"<w:p>",ppr:"<w:pPr><w:rPr><w:vanish/></w:rPr></w:pPr>",children:['<w:r><w:rPr><w:vanish/></w:rPr><w:t xml:space="preserve">\u0110\xE1p \xE1n: '.concat(B(f),"</w:t></w:r>")]});return{pkg:L(e,p),changed:!0,count:l}}const rt=(t,e)=>{const n=/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(e);let r=n&&n[2]?n[2]:"";return r&&!/<w:b\b/.test(r)&&(r=F(r,{b:"<w:b/>"})),r||(r="<w:rPr><w:b/></w:rPr>"),"".concat(n?n[1]:"<w:r>").concat(r,"<w:t>").concat(t,".</w:t></w:r>")};function Ht(t,e){for(const r of t){const o=/<w:sz w:val="(\d+)"/.exec(r);if(o)return Number(o[1])/2}const n=/<w:sz w:val="(\d+)"/.exec(e&&e.ppr||"");return n?Number(n[1])/2:13}const bt='<w:r><w:t xml:space="preserve"> </w:t></w:r>',Gt="<w:r><w:tab/></w:r>";function gt(t,e,n,r="auto"){const o=Rt(t),s=Ht(e.flatMap(a=>a.content),n),i=e.map(a=>14+dt(a.content).reduce((h,d)=>h+Ct(d,s),0)),l=Math.max(...i)*20+120;let c=r==="auto"?l<=o/4?4:l<=o/2?2:1:Number(r);e.length<c&&(c=e.length);const p=W(n?n.ppr:"","tabs",null),u=c>1?"<w:tabs>".concat(Array.from({length:c-1},(a,h)=>'<w:tab w:val="left" w:pos="'.concat(Math.round(o/c*(h+1)),'"/>')).join(""),"</w:tabs>"):"",f=[];for(let a=0;a<e.length;a+=c)f.push(e.slice(a,a+c));return{paras:f.map((a,h)=>{const d=[];a.forEach((v,y)=>{y>0&&d.push(Gt);const $=dt(v.content),T=$.length&&A($[0])&&!E($[0])&&/^\s/.test(R($[0]));d.push(v.labelRun,...T?[]:[bt],...$)});let m=c>1?W(p,"tabs",u):p;return h<f.length-1&&(m=W(m,"keepNext","<w:keepNext/>")),{kind:"p",open:n?n.open.replace(/\s+w14:paraId="[^"]*"|\s+w14:textId="[^"]*"/g,""):"<w:p>",ppr:m,children:d}}),perLine:c}}function ot(t,e,{formatTemplate:n,word:r="keep"}={}){if(!t||!t.children)return!1;const o=q(t),s=Q.exec(o);if(!s)return!1;let i=0;const l=[];for(let w=0;w<t.children.length;w++){const P=t.children[w];if(A(P)&&!E(P)){const x=R(P);if(x.length>0){l.push({i:w,start:i,end:i+x.length,text:x,runXml:P}),i+=x.length;continue}}i+=M(P).length}const c=s.index,p=s.index+s[0].length,u=s[3]&&/[.:)]/.test(s[3])?s[3]:".",f=r==="C\xE2u"||r==="B\xE0i"?r:s[1],b="".concat(f," ").concat(e).concat(u),a=l.filter(w=>w.start<p&&w.end>c);if(!a.length)return!1;const h=w=>{if(!n)return w;const P=/<w:rPr>[\s\S]*?<\/w:rPr>/.exec(n);if(!P)return w;const x=/^(<w:r\b[^>]*>)(?:\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(w);return x?"".concat(x[1]).concat(P[0]).concat(w.slice(x[0].length)):w};if(a.length===1){const w=a[0],P=c-w.start,x=p-w.start;let C=w.text.slice(x).startsWith(" ")||w.text.slice(x).startsWith("	");if(!C&&x>=w.text.length)for(let J=w.i+1;J<t.children.length;J++){const vt=t.children[J],tt=M(vt);if(tt.length>0){(tt.startsWith(" ")||tt.startsWith("	"))&&(C=!0);break}}const j=!C,O=w.text.slice(0,P),S=w.text.slice(x),D=O+b+(j?" ":"")+S;let _=w.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/,'<w:t xml:space="preserve">'.concat(B(D),"</w:t>"));return n&&(_=h(_)),t.children[w.i]=_,!0}const d=a[0],m=a[a.length-1],v=d.text.slice(0,c-d.start),y=m.text.slice(p-m.start);let $=y.startsWith(" ")||y.startsWith("	");if(!$&&y.length===0)for(let w=m.i+1;w<t.children.length;w++){const P=t.children[w],x=M(P);if(x.length>0){(x.startsWith(" ")||x.startsWith("	"))&&($=!0);break}}const T=!$,g=v+b+(T?" ":"");let k=d.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/,'<w:t xml:space="preserve">'.concat(B(g),"</w:t>"));n&&(k=h(k)),t.children[d.i]=k;for(let w=1;w<a.length-1;w++)t.children[a[w].i]=a[w].runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/,"");return t.children[m.i]=m.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/,y?'<w:t xml:space="preserve">'.concat(B(y),"</w:t>"):""),!0}function Ut(t,{bold:e=!1,color:n="",brk:r=!1}={}){if(!t||!t.children||!(e||n||r))return!1;const o=Q.exec(q(t));if(!o)return!1;let s=o.index+(o[0].length-o[0].trimStart().length),i=o.index+o[0].length;for(;i>s&&/\s/.test(q(t)[i-1]);)i--;const l=f=>{let b=0;for(let a=0;a<t.children.length;a++){const h=t.children[a],d=M(h).length;if(f===b)return!0;if(f<b+d){if(!A(h)||E(h))return!1;const m=G(h,f-b);return!m||!m[0]||!m[1]?!1:(t.children.splice(a,1,m[0],m[1]),!0)}b+=d}return f===b};if(!l(i)||!l(s))return!1;const c={};e&&(c.b="<w:b/>"),n&&(c.color='<w:color w:val="'.concat(n,'"/>'));let p=0,u=-1;for(let f=0;f<t.children.length;f++){const b=t.children[f],a=M(b).length;if(p>=s&&p+a<=i&&a>0&&A(b)&&!E(b)&&Object.keys(c).length){const h=/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(b);h&&(t.children[f]="".concat(h[1]).concat(F(h[2]?h[2].trim():"",c)).concat(b.slice(h[0].length)))}p<i&&p+a>=i&&(u=f),p+=a}if(r&&u>=0&&u+1<t.children.length&&t.children.slice(u+1).some(b=>M(b).trim()||E(b)||X(b))){const b=t.children[u+1];A(b)&&!E(b)&&(t.children[u+1]=b.replace(/(<w:t\b[^>]*>)[ \u00a0\t]+/,"$1")),t.children.splice(u+1,0,"<w:r><w:br/></w:r>")}return!0}const Vt=["rStyle","rFonts","b","bCs","i","iCs","caps","smallCaps","strike","dstrike","outline","shadow","emboss","imprint","noProof","snapToGrid","vanish","webHidden","color","spacing","w","kern","position","sz","szCs","highlight","u","effect","bdr","shd","fitText","vertAlign","rtl","cs","em","lang","eastAsianLayout","specVanish","oMath"];function F(t,e){const n=t&&t!=="<w:rPr/>"?t.replace(/^\s*<w:rPr>/,"").replace(/<\/w:rPr>\s*$/,""):"",r=I(n).filter(s=>!(N(s).replace(/^w:/,"")in e)),o=s=>{const i=Vt.indexOf(s.replace(/^w:/,""));return i<0?999:i};for(const[s,i]of Object.entries(e)){const l=r.findIndex(c=>o(N(c))>o(s));l<0?r.push(i):r.splice(l,0,i)}return"<w:rPr>".concat(r.join(""),"</w:rPr>")}const Xt=t=>'<w:rFonts w:ascii="'.concat(B(t),'" w:hAnsi="').concat(B(t),'" w:eastAsia="').concat(B(t),'" w:cs="').concat(B(t),'"/>'),kt=t=>({sz:'<w:sz w:val="'.concat(Math.round(t*2),'"/>'),szCs:'<w:szCs w:val="'.concat(Math.round(t*2),'"/>')});function Kt(t,e,n){if(E(t)||/<w:sym\b/.test(t))return t;const r=/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?([\s\S]*)$/.exec(t);if(!r)return t;const o={};return e&&(o.rFonts=Xt(e)),n&&Object.assign(o,kt(n)),r[1]+F(r[2]||"",o)+r[3]}function Zt(t,e){const n=kt(e);let r=t.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g,o=>F(o,n));return r=r.replace(/<m:r>((?:\s*<m:rPr>[\s\S]*?<\/m:rPr>|\s*<m:rPr\/>)?)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?/g,(o,s,i)=>"<m:r>".concat(s).concat(F(i||"",n))),r}function xt(t,e){const n=e.mathSize==="text"?e.fontSize:e.mathSize;let r=0;return{children:t.map(s=>{if(A(s))return/<w:object\b/.test(s)&&r++,Kt(s,e.font,e.fontSize);if(X(s))return n?Zt(s,n):s;if(/^<w:hyperlink[\s>]/.test(s)){const i=/^<w:hyperlink\b[^>]*>/.exec(s)[0],l=I(s.slice(i.length,s.length-14)),c=xt(l,e);return r+=c.objects,i+c.children.join("")+"</w:hyperlink>"}return s}),objects:r}}function le(t,e={}){t=St(t).pkg;const n={questions:0,renumbered:0,relaid:0,retyped:0,objects:0,skipped:[],notes:[]};if(e.font||e.fontSize||e.mathSize){const u=z(t),f=H(u);for(const b of f.parts)for(const a of b.questions)for(let h=a.start;h<a.end;h++){const d=u.blocks[h];if(d.kind!=="p")continue;const m=xt(d.children,e);d.children=m.children,n.objects+=m.objects,n.retyped++}t=L(u)}const r=z(t),o=H(r),s=new Map;let i=0,l=null;for(const u of o.parts){e.renumber==="part"&&(i=0);for(const f of u.questions){n.questions++;const b=r.blocks[f.start],a=++i;if(!l){const d=b.children.find(m=>A(m)&&Q.test(R(m)));d&&(l=d)}const h=e.questionFormat?l:null;if(e.renumber&&(e.renumber==="continuous"||f.number!==a)?ot(b,a,{formatTemplate:h,word:e.labelWord})?n.renumbered++:n.skipped.push("C\xE2u ".concat(f.number,": kh\xF4ng t\xECm th\u1EA5y nh\xE3n \u201CC\xE2u\u201D / \u201CB\xE0i\u201D")):(e.renumber||e.questionFormat)&&ot(b,a,{formatTemplate:h,word:e.labelWord}),(e.qBold||e.qColor||e.qBreak)&&Ut(b,{bold:e.qBold,color:e.qColor,brk:e.qBreak}),e.keepNext)for(let d=f.start;d<f.stemEnd;d++)r.blocks[d].kind==="p"&&d+1<=f.stemEnd&&(f.options||f.statements.length)&&(r.blocks[d].ppr=W(r.blocks[d].ppr,"keepNext","<w:keepNext/>"));if(u.kind==="mc"&&f.options&&e.layout!==!1){if(f.flags.some(y=>y==="complexOptions"||y.startsWith("optionCount"))){n.skipped.push("C\xE2u ".concat(f.number,": ph\u01B0\u01A1ng \xE1n kh\xF4ng chu\u1EA9n (").concat(f.flags.join(", "),"), gi\u1EEF nguy\xEAn b\u1ED1 c\u1EE5c"));continue}const d=r.blocks[f.optionParas[0]],m=f.options.map((y,$)=>({...y,labelRun:e.labels===!1?y.labelRun:rt("ABCD"[$],y.labelRun)})),{paras:v}=gt(r,m,d,e.layout||"auto");s.set(f.optionParas[0],{paras:v,remove:f.optionParas.slice(1)}),n.relaid++}}}const c=[],p=new Set;for(const u of s.values())u.remove.forEach(f=>p.add(f));return r.blocks.forEach((u,f)=>{p.has(f)||(s.has(f)?c.push(...s.get(f).paras):c.push(u))}),{pkg:L(r,c),report:n}}const Z=t=>(t.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g)||[]).map(e=>V(e.replace(/<[^>]+>/g,""))).join(" ");function Yt(t){const e=[],n=r=>{for(const o of I(r)){const s=N(o);s==="w:p"?e.push(o):/^w:(tbl|tr|tc|sdt|sdtContent)$/.test(s)&&n(o.replace(/^<[^>]+>/,"").replace(/<\/[\w:]+>$/,""))}};return n(t),e}function G(t,e){t=t.replace(/<w:lastRenderedPageBreak\/>/g,"");const n=/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?([\s\S]*)<\/w:r>$/.exec(t);if(!n)return null;const r=I(n[3]),o=i=>i.length?"".concat(n[1]).concat(n[2]||"").concat(i.join(""),"</w:r>"):"";let s=0;for(let i=0;i<r.length;i++){const l=r[i],c=N(l);if(e===s)return[o(r.slice(0,i)),o(r.slice(i))];let p=0;if(c==="w:t"){const u=/^<w:t\b[^>]*?(?:\/>|>([^<]*)<\/w:t>)$/.exec(l);if(!u)return null;const f=V(u[1]||"");if(p=f.length,e<s+p){const b=a=>'<w:t xml:space="preserve">'.concat(B(a),"</w:t>");return[o([...r.slice(0,i),b(f.slice(0,e-s))]),o([b(f.slice(e-s)),...r.slice(i+1)])]}}else(c==="w:tab"||c==="w:br"||c==="w:noBreakHyphen")&&(p=1);s+=p}return e===s?[o(r),""]:null}function Pt(t,e){const n=s=>s.replace(/\s+w14:paraId="[^"]*"|\s+w14:textId="[^"]*"/g,""),r=(s,i)=>[{...t,children:s},{kind:"p",open:n(t.open),ppr:W(W(t.ppr,"numPr",null),"ind",null),children:i}];let o=0;for(let s=0;s<t.children.length;s++){const i=t.children[s],l=M(i).length;if(e===o)return r(t.children.slice(0,s),t.children.slice(s));if(e<o+l){if(!A(i)||E(i))return null;const c=G(i,e-o);return c?r([...t.children.slice(0,s),c[0]].filter(Boolean),[c[1],...t.children.slice(s+1)].filter(Boolean)):null}o+=l}return e===o?r(t.children,[]):null}const Jt="(?:Question|QUESTION|C[\xE2a]u|C\xC2U|B[\xE0a]i|B\xC0I)",it=/(?:Question|QUESTION|C[âa]u|CÂU)\s*\d+\s*[.:)]/g,$t=new RegExp("^\\s*".concat(Jt,"\\s*\\d+\\s*[.:)]")),te=/(?:^|[\s\u00A0])A\.(?=\s)[\s\S]*?\sB\.(?=\s)(?:[\s\S]*?\sC\.(?=\s))?/;function lt(t,e=!1,n=0){if(n>12)return[t];const r=q(t);for(const l of r.matchAll(it))if(l.index>0&&/\s/.test(r[l.index-1])&&r.slice(0,l.index).trim()){const c=Pt(t,l.index);if(c)return[...lt(c[0],!1,n+1),...lt(c[1],e,n+1)]}const o=$t.exec(r),s=o?r.slice(o[0].length):r;let i=te.exec(s);if(!i&&o&&e&&!/(?:^|\s)B\./.test(s)&&(i=/(?:^|[\s\u00A0])A\.(?=\s|$)/.exec(s)),i&&(o||i.index>0&&s.slice(0,i.index).trim())){const l=Pt(t,(o?o[0].length:0)+i.index+(/^[\s\u00A0]/.test(i[0])?1:0));if(l&&q(l[1]).trim())return[l[0],l[1]]}return[t]}function ee(t){let e=0;for(let n=0;n+1<t.children.length;n++){const r=t.children[n],o=t.children[n+1];if(!A(r)||!A(o)||E(r)||E(o)||!/^\s*[A-D]$/.test(R(r))||!/^[.)]/.test(R(o)))continue;const s=G(o,1);!s||!/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?\s*<w:t\b[^>]*>[^<]*<\/w:t>\s*<\/w:r>$/.test(r)||(t.children[n]=r.replace(/(<w:t\b[^>]*>)([^<]*)(<\/w:t>)/,(i,l,c,p)=>'<w:t xml:space="preserve">'.concat(c).concat(R(s[0])).concat(p)),t.children[n+1]=s[1],s[1]||t.children.splice(n+1,1),e++)}return e}function ne(t){const e=/<pkg:part pkg:name="\/word\/numbering\.xml"[^>]*>\s*<pkg:xmlData>([\s\S]*?)<\/pkg:xmlData>/.exec(t);if(!e)return null;const n={},r={};for(const o of e[1].matchAll(/<w:abstractNum\b[^>]*w:abstractNumId="(\d+)"[\s\S]*?<\/w:abstractNum>/g))for(const s of o[0].matchAll(/<w:lvl\b[^>]*w:ilvl="(\d+)"[\s\S]*?<\/w:lvl>/g)){const i=/<w:numFmt\b[^>]*w:val="(\w+)"/.exec(s[0]);(n[o[1]]=n[o[1]]||{})[s[1]]=i?i[1]:""}for(const o of e[1].matchAll(/<w:num\b[^>]*w:numId="(\d+)"[^>]*>\s*<w:abstractNumId\b[^>]*w:val="(\d+)"/g))r[o[1]]=o[2];return(o,s)=>(n[r[o]]||{})[s||"0"]==="upperLetter"}function se(t,e){let n=0,r=0;const o=s=>{for(const i of s.matchAll(/(?:^|[\s ])([A-D])\.(?=\s|$)/g))i[1]==="ABCD"[n]&&n++};for(const s of t){if(s.kind!=="p")continue;const i=q(s),l=$t.exec(i);if(l){n=0,o(i.slice(l[0].length));continue}const c=/<w:numPr>[\s\S]*?<\/w:numPr>/.exec(s.ppr||"");if(c&&e&&n<4&&e((/<w:numId\b[^>]*w:val="(\d+)"/.exec(c[0])||[])[1],(/<w:ilvl\b[^>]*w:val="(\d+)"/.exec(c[0])||[])[1])){const p=at(s.ppr).find(u=>N(u)==="w:rPr")||"";s.children=[rt("ABCD"[n],"<w:r>".concat(p,"</w:r>")),bt,...s.children],s.ppr=W(W(s.ppr,"numPr",null),"ind",null),n++,r++}o(i)}return r}function St(t){const e={tables:0,split:0,labels:0};let n;try{n=z(t)}catch{return{pkg:t,changed:!1,stats:e}}const r=l=>l.kind==="p"?q(l):Z(l.xml);if((n.blocks.map(r).join("\n").match(it)||[]).length<3)return{pkg:t,changed:!1,stats:e};let s=[];for(const l of n.blocks)if(l.kind==="other"&&N(l.xml)==="w:tbl"&&Z(l.xml).search(it)>=0&&/(?:^|\s)A\s?[.)]/.test(Z(l.xml))){for(const c of Yt(l.xml))s.push({kind:"p",...U(c)});e.tables++}else s.push(l);s=s.flatMap((l,c)=>{if(l.kind!=="p")return[l];e.split+=ee(l);const p=s[c+1],u=lt(l,!!(p&&p.kind==="p"&&/<w:numPr>/.test(p.ppr||"")));return e.split+=u.length-1,u}),e.labels=se(s,ne(t));const i=e.tables+e.split+e.labels>0;return{pkg:i?L(n,s):t,changed:i,stats:e}}function re(t){let e=t>>>0;return()=>{e=e+1831565813>>>0;let n=e;return n=Math.imul(n^n>>>15,n|1),n^=n+Math.imul(n^n>>>7,n|61),((n^n>>>14)>>>0)/4294967296}}function ct(t,e){for(let n=t.length-1;n>0;n--){const r=Math.floor(e()*(n+1));[t[n],t[r]]=[t[r],t[n]]}return t}function ce(t,e={}){t=St(t).pkg;const n=z(t),r=H(n),o=re(e.seed||1),s={pinnedQuestions:[],pinnedOptions:[],sharedParts:[],keptSections:[],questions:0,notes:[]},i=n.blocks.slice(),l=[],c=new Set,p=new Map;for(const g of r.parts)for(const k of g.questions)if(s.questions++,g.kind==="mc"&&k.options&&e.shuffleOptions!==!1){if(k.flags.some(S=>S==="complexOptions"||S.startsWith("optionCount")||S==="optionRefs")){s.pinnedQuestions.push(k.number);continue}const w=k.options.map((S,D)=>D),P=w.filter(S=>!Nt.test(k.options[S].content.map(M).join(""))),x=w.slice(),C=ct(P.slice(),o);P.forEach((S,D)=>{x[S]=C[D]}),P.length<4&&s.pinnedOptions.push(k.number);const j=x.map((S,D)=>({...k.options[S],labelRun:rt("ABCD"[D],k.options[S].labelRun)})),{paras:O}=gt(n,j,n.blocks[k.optionParas[0]],e.layout||"auto");p.set(k.optionParas[0],O),k.optionParas.slice(1).forEach(S=>c.add(S))}else if(g.kind==="tf"&&e.shuffleStatements&&k.statements.length===4){const w=k.statements.map(x=>n.blocks[x.block]);ct([0,1,2,3],o).forEach((x,C)=>{const j={...w[x],children:w[x].children.slice()},O=j.children.findIndex(S=>A(S)&&K.test(R(S)));if(O>=0){const S=j.children[O],D=K.exec(R(S)),_=Tt(S,D[0].length);_&&(j.children[O]=_[0].replace(/<w:t\b[^>]*>[^<]*<\/w:t>/,"<w:t>".concat("abcd"[C],")</w:t>")),_[1]&&j.children.splice(O+1,0,_[1]))}p.set(k.statements[C].block,[j])})}const u=new Map,f=[];if(e.shuffleQuestions!==!1){if(r.english)for(const g of r.sections)(e.sectionModes&&e.sectionModes[g.index]||g.mode)==="shuffle"?f.push(g.questions):g.questions.length>1&&s.keptSections.push("Question ".concat(g.firstNumber,"\u2013").concat(g.lastNumber));else for(const g of r.parts)if(!(g.questions.length<2)){if(g.questions.some(k=>k.flags.includes("shared"))){s.sharedParts.push(g.title||"(kh\xF4ng ti\xEAu \u0111\u1EC1)");continue}f.push(g.questions)}}for(const g of f){if(g.length<2)continue;const k=ct(g.map((P,x)=>x),o),w=g.map(P=>({start:P.start,end:P.ownEnd}));k.forEach((P,x)=>u.set(g[x].start,w[P]))}const b=(g,k)=>{for(let w=g;w<k;w++)c.has(w)||(p.has(w)?l.push(...p.get(w)):l.push(i[w]))},a=new Map(r.parts.flatMap(g=>g.questions).map(g=>[g.start,g])),h=Math.min(...a.keys(),n.blocks.length);b(0,h);let d=h;for(;d<n.blocks.length;){const g=a.get(d);if(g&&u.has(d)){const k=u.get(d);b(k.start,k.end),b(g.ownEnd,g.end)}else b(d,g?g.end:d+1);d=g?g.end:d+1}let m=L(n,l);const v=z(m),y=H(v);let $=0;for(const g of y.parts){e.renumber!=="continuous"&&($=0);for(const k of g.questions){$++,k.number=$;const w=v.blocks[k.start];ot(w,$,{word:e.labelWord})||s.notes.push("C\xE2u ".concat($,": kh\xF4ng \u0111\u1ED5i \u0111\u01B0\u1EE3c s\u1ED1 th\u1EE9 t\u1EF1"))}}const T=nt(v,y);if(e.code){let g=0;for(const k of v.blocks){if(k.kind!=="p")continue;k.children=k.children.map(P=>{if(!A(P))return P;const x=R(P);return!/Mã\s*đề/i.test(x)&&!/^\s*\d{2,4}\s*$/.test(x),P});const w=q(k);if(/Mã\s*đề\s*(thi)?\s*[:：]?\s*\d+/i.test(w)){let P=!1;k.children=k.children.map(x=>{if(!A(x))return x;const C=R(x);return/Mã\s*đề/i.test(C)?(P=!0,/\d/.test(C)?(g++,x.replace(/(<w:t\b[^>]*>)([^<]*?)(\d+)([^<]*<\/w:t>)/,(j,O,S,D,_)=>"".concat(O).concat(S).concat(e.code).concat(_))):x):P&&/^\s*\d+\s*$/.test(C)?(P=!1,g++,x.replace(/(<w:t\b[^>]*>)(\s*)\d+(\s*<\/w:t>)/,"$1$2".concat(e.code,"$3"))):x})}}g||s.notes.push("kh\xF4ng t\xECm th\u1EA5y \u201CM\xE3 \u0111\u1EC1\u201D \u0111\u1EC3 \u0111\u1ED5i s\u1ED1")}if(e.stripMarks!==!1)for(const g of y.parts)for(const k of g.questions){const w=P=>{const x=v.blocks[P];x.children=x.children.map(C=>A(C)&&(et.test(R(C))||K.test(R(C)))?It(C):C)};k.optionParas.forEach(w),k.statements.forEach(P=>w(P.block))}return m=L(v),{pkg:m,report:s,answers:T}}function ae(t){const e=["mc","tf","short","other"],n=[];for(const o of t)for(const s of e){const i=o.answers.filter(l=>l.kind===s);i.length&&n.push({code:o.code,kind:s,title:i[0].part,items:i.map(l=>({number:l.number,value:l.value}))})}const r=n.map(o=>[o.code,o.title||o.kind,...o.items.map(s=>"".concat(s.number,":").concat(s.value??"?"))].join(",")).join("\n");return{groups:n,csv:r}}const Y=(t,e,n)=>'<w:tc><w:tcPr><w:tcW w:w="'.concat(e,'" w:type="dxa"/></w:tcPr><w:p><w:pPr><w:spacing w:before="20" w:after="20"/><w:jc w:val="center"/></w:pPr><w:r>').concat(n?"<w:rPr><w:b/></w:rPr>":"",'<w:t xml:space="preserve">').concat(B(String(t)),"</w:t></w:r></w:p></w:tc>");function ue(t,e="B\u1EA2NG \u0110\xC1P \xC1N",n="C\xE2u"){const r="<w:tblBorders>"+["top","left","bottom","right","insideH","insideV"].map(l=>"<w:".concat(l,' w:val="single" w:sz="4" w:space="0" w:color="808080"/>')).join("")+"</w:tblBorders>";let o='<w:p><w:pPr><w:pageBreakBefore/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>'.concat(B(e),"</w:t></w:r></w:p>");const s=[...new Set(t.map(l=>String(l.code)))],i=new Map;for(const l of t){const c="".concat(l.kind,"|").concat(l.title||"");i.has(c)||i.set(c,{title:l.title||"",kind:l.kind,byCode:new Map});const p=i.get(c),u=String(l.code);p.byCode.has(u)||p.byCode.set(u,new Map);for(const f of l.items)p.byCode.get(u).set(f.number,f.value)}for(const l of i.values()){const c=[...new Set([...l.byCode.values()].flatMap(h=>[...h.keys()]))].sort((h,d)=>parseFloat(h)-parseFloat(d)||String(h).localeCompare(String(d))),p=s.filter(h=>l.byCode.has(h)),u=1300,f=Math.min(1800,Math.floor((9e3-u)/Math.max(1,p.length))),b="<w:tr><w:trPr><w:cantSplit/><w:tblHeader/></w:trPr>".concat(Y(n,u,!0)).concat(p.map(h=>Y(h?"M\xE3 ".concat(h):"\u0110\xE1p \xE1n",f,!0)).join(""),"</w:tr>"),a=c.map(h=>"<w:tr><w:trPr><w:cantSplit/></w:trPr>".concat(Y(h,u,!0)).concat(p.map(d=>Y(l.byCode.get(d).get(h)??"?",f,!1)).join(""),"</w:tr>")).join("");l.title&&(o+='<w:p><w:pPr><w:keepNext/><w:spacing w:before="120"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t xml:space="preserve">'.concat(B(l.title),"</w:t></w:r></w:p>")),o+='<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>'.concat(r,'</w:tblPr><w:tblGrid><w:gridCol w:w="').concat(u,'"/>').concat(p.map(()=>'<w:gridCol w:w="'.concat(f,'"/>')).join(""),"</w:tblGrid>").concat(b).concat(a,"</w:tbl><w:p/>")}return o}function fe(t,e){const n=z(t);return n.blocks.push(...I(e).map(r=>N(r)==="w:p"?{kind:"p",...U(r)}:{kind:"other",xml:r})),L(n)}function pe(t,e){const n=z(t);return n.blocks.unshift(...I(e).map(r=>N(r)==="w:p"?{kind:"p",...U(r)}:{kind:"other",xml:r})),L(n)}function he(t,e){const n=[];let r=0;for(const l of t.blocks)n.push(r),r+=l.kind==="p"?1:(l.xml.match(/<w:p[ >\/]/g)||[]).length;const o=nt(t,e),s=[];let i=0;for(const l of e.parts)for(const c of l.questions){const p=o[i++];if(p&&(p.value===null||p.value===void 0)){const u=(/^\s*PH[AẦ]N\s+([IVX\d]+)/i.exec(l.title)||[])[1];s.push({label:"".concat(u?"Ph\u1EA7n "+u+" \xB7 ":"","C\xE2u ").concat(c.number),kind:l.kind,number:c.number,block:c.start,paragraph:n[c.start]})}}return s}export{H as analyze,ae as answerTable,ue as answerTableXml,nt as answersOf,fe as appendToBody,ie as applyAnswerKey,L as buildBody,M as childText,ht as labelMark,gt as layoutOptions,le as normalize,q as paragraphText,Qt as parseAnswerKey,z as parseBody,St as prepareEnglish,pe as prependToBody,ot as renumberQuestionInParagraph,re as rng,ce as shuffleVersion,I as splitChildren,Ut as styleQuestionLabel,he as unansweredQuestions};
+// Multiple-choice exam tools on a flat-OPC body package: analyse (parts, questions, options, marked answers),
+// normalise (renumber, label format, aligned option layout), shuffle (versions) and answer-key tables.
+// Everything works on strings: runs, equations, pictures are moved around verbatim, never re-serialised.
+import { escapeXml } from './xml.js';
+
+const PPR_ORDER = ['pStyle', 'keepNext', 'keepLines', 'pageBreakBefore', 'framePr', 'widowControl', 'numPr', 'suppressLineNumbers', 'pBdr', 'shd', 'tabs',
+  'suppressAutoHyphens', 'kinsoku', 'wordWrap', 'overflowPunct', 'topLinePunct', 'autoSpaceDE', 'autoSpaceDN', 'bidi', 'adjustRightInd', 'snapToGrid',
+  'spacing', 'ind', 'contextualSpacing', 'mirrorIndents', 'suppressOverlap', 'jc', 'textDirection', 'textAlignment', 'textboxTightWrap', 'outlineLvl',
+  'divId', 'cnfStyle', 'rPr', 'sectPr', 'pPrChange'];
+
+// ---------------------------------------------------------------- low-level XML splitting
+/** Top-level child elements of an XML fragment as strings (text between them is dropped). */
+export function splitChildren(xml) {
+  const out = [];
+  let i = 0;
+  while (i < xml.length) {
+    const lt = xml.indexOf('<', i);
+    if (lt < 0) break;
+    if (xml.startsWith('<!--', lt)) { i = xml.indexOf('-->', lt) + 3; continue; }
+    const head = /^<([\w:.-]+)((?:\s+[^\s=/>]+\s*=\s*(?:"[^"]*"|'[^']*'))*)\s*(\/?)>/.exec(xml.slice(lt, lt + 4000));
+    if (!head) { i = lt + 1; continue; }
+    const name = head[1];
+    if (head[3]) { out.push(xml.slice(lt, lt + head[0].length)); i = lt + head[0].length; continue; }
+    let depth = 1, pos = lt + head[0].length;
+    const open = new RegExp(`<${name.replace(/[.]/g, '\\.')}(?=[\\s>/])|</${name.replace(/[.]/g, '\\.')}>`, 'g');
+    open.lastIndex = pos;
+    let m;
+    while ((m = open.exec(xml))) {
+      if (m[0][1] === '/') { if (--depth === 0) { pos = m.index + m[0].length; break; } } else {
+        const gt = xml.indexOf('>', m.index);
+        if (xml[gt - 1] !== '/') depth++;
+      }
+    }
+    if (depth !== 0) throw new Error('unbalanced <' + name + '>');
+    out.push(xml.slice(lt, pos));
+    i = pos;
+  }
+  return out;
+}
+const tagName = (s) => /^<([\w:.-]+)/.exec(s)[1];
+
+function parsePara(xml) {
+  if (/^<w:p\b[^>]*\/>$/.test(xml)) return { open: xml.replace(/\/>$/, '>'), ppr: '', children: [] };
+  const open = /^<w:p\b[^>]*>/.exec(xml)[0];
+  let inner = xml.slice(open.length, xml.length - 6);
+  let ppr = '';
+  const m = /^\s*<w:pPr>[\s\S]*?<\/w:pPr>|^\s*<w:pPr\/>/.exec(inner);
+  if (m) { ppr = m[0].trim(); inner = inner.slice(m[0].length); }
+  return { open, ppr, children: splitChildren(inner) };
+}
+const buildPara = (p) => `${p.open}${p.ppr}${p.children.join('')}</w:p>`;
+
+function pprChildren(ppr) {
+  if (!ppr || ppr === '<w:pPr/>') return [];
+  return splitChildren(ppr.replace(/^<w:pPr>/, '').replace(/<\/w:pPr>$/, ''));
+}
+function setPprChild(ppr, tag, xml) {   // xml null removes
+  const kids = pprChildren(ppr).filter((k) => tagName(k) !== 'w:' + tag);
+  if (xml) {
+    const rank = (t) => { const r = PPR_ORDER.indexOf(t.replace(/^w:/, '')); return r < 0 ? 999 : r; };
+    const at = kids.findIndex((k) => rank(tagName(k)) > rank('w:' + tag));
+    if (at < 0) kids.push(xml); else kids.splice(at, 0, xml);
+  }
+  return kids.length ? `<w:pPr>${kids.join('')}</w:pPr>` : '';
+}
+
+const runText = (run) => {
+  let t = '';
+  for (const m of run.matchAll(/<w:t\b[^>]*>([^<]*)<\/w:t>|<w:tab\/>|<w:br\b[^>]*\/>|<w:noBreakHyphen\/>/g)) t += m[1] !== undefined ? unesc(m[1]) : (m[0] === '<w:tab/>' ? '\t' : m[0].startsWith('<w:br') ? '\n' : '-');
+  return t;
+};
+const unesc = (s) => s.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, '&');
+const isRun = (c) => /^<w:r[\s>]/.test(c);
+const isMath = (c) => /^<m:oMath(Para)?[\s>]/.test(c);
+const hasObject = (c) => /<w:object\b|<w:drawing|<w:pict|<mc:AlternateContent/.test(c);
+
+/** Plain text of a child (runs only; equations and pictures count as one placeholder each). */
+export function childText(c) {
+  if (isRun(c)) return hasObject(c) ? '\uFFFC' : runText(c);
+  if (isMath(c)) return '\uFFFD';
+  if (/^<w:hyperlink[\s>]/.test(c)) return splitChildren(c.replace(/^<w:hyperlink\b[^>]*>/, '').replace(/<\/w:hyperlink>$/, '')).map(childText).join('');
+  return '';
+}
+export const paragraphText = (p) => p.children.map(childText).join('');
+
+/** Visual width in points of a child, from picture/object sizes or an average glyph width. */
+function childWidth(c, pt) {
+  if (isRun(c) && /<w:object\b/.test(c)) { const m = /style="[^"]*width:([\d.]+)pt/.exec(c); return m ? Number(m[1]) : 30; }
+  if (isRun(c) && /<w:drawing/.test(c)) { const m = /<wp:extent cx="(\d+)"/.exec(c); return m ? Number(m[1]) / 12700 : 60; }
+  if (isMath(c)) return ((c.match(/<m:t\b[^>]*>([^<]*)<\/m:t>/g) || []).join('').replace(/<[^>]+>/g, '').length * 0.5 + 2) * pt;
+  return [...childText(c).replace(/\t/g, '')].length * pt * 0.47;
+}
+
+// ---------------------------------------------------------------- body package <-> blocks
+export function parseBody(pkg) {
+  const dm = /(<pkg:part pkg:name="\/word\/document\.xml"[^>]*>\s*<pkg:xmlData>)([\s\S]*?)(<\/pkg:xmlData>)/.exec(pkg);
+  if (!dm) throw new Error('không có /word/document.xml');
+  const doc = dm[2];
+  const bm = /^([\s\S]*?<w:body>)([\s\S]*?)(<w:sectPr\b(?:(?!<w:sectPr)[\s\S])*?<\/w:sectPr>|<w:sectPr\/>)?(<\/w:body>[\s\S]*)$/.exec(doc);
+  if (!bm) throw new Error('không đọc được w:body');
+  const blocks = splitChildren(bm[2]).map((xml) => (tagName(xml) === 'w:p' ? { kind: 'p', ...parsePara(xml) } : { kind: 'other', xml }));
+  return { pkg, dm, head: bm[1], blocks, sectPr: bm[3] || '', tail: bm[4] };
+}
+
+export function buildBody(model, blocks = model.blocks) {
+  const body = blocks.map((b) => (b.kind === 'p' ? buildPara(b) : b.xml)).join('');
+  const doc = model.head + body + model.sectPr + model.tail;
+  const { pkg, dm } = model;
+  return pkg.slice(0, dm.index) + dm[1] + doc + dm[3] + pkg.slice(dm.index + dm[0].length);
+}
+
+function pageTextWidthTwips(model) {
+  const sz = /<w:pgSz\b[^>]*w:w="(\d+)"/.exec(model.sectPr), mar = /<w:pgMar\b[^>]*/.exec(model.sectPr);
+  if (!sz || !mar) return 9638;
+  const l = /w:left="(\d+)"/.exec(mar[0]), r = /w:right="(\d+)"/.exec(mar[0]);
+  return Number(sz[1]) - Number(l ? l[1] : 1134) - Number(r ? r[1] : 1134);
+}
+
+// ---------------------------------------------------------------- analysis
+const RE_PART = /^\s*PH[AẦ]N\s+(I{1,3}V?|IV|V|[1-4])\b\s*[.:)]?/i;
+const RE_QUESTION = /^\s*(C[âa]u|B[àa]i|Question)\s*(\d+)\s*([.:)\-–—]|\s+(?=[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ(]))/iu;
+const RE_OPT = /^\s*([A-D])\s*([.)])/;
+const RE_STMT = /^\s*([a-d])\s*\)/;
+const RE_END = /^[\s\-–—_*.]*(h[ếe]t\b|the\s+end[\s\-–—_*.]*$|(bảng\s*)?đáp\s*án[^:：]{0,40}$|hướng\s*dẫn\s*chấm|cán\s*bộ\s*coi\s*thi)/i;
+const RE_ANSWER_LINE = /^\s*(đáp\s*án|đáp\s*số|đs|kết\s*quả|trả\s*lời)\s*[:：]/i;
+const RE_SHARED = /(sử\s*dụng|dựa\s*vào|dùng)\s+(chung\s+)?(thông\s*tin|dữ\s*kiện|đoạn|hình|bảng)[^.]{0,80}câu\s*\d+|(trả\s*lời|cho)\s+(các\s+)?câu\s*(hỏi\s*)?\d+\s*(,|và|đến|-|–)\s*\d+/i;
+const RE_PINNED_OPTION = /^\s*(tất\s*cả|cả\s+(ba|bốn|hai|\w+)\s+(đáp\s*án|ý|phương\s*án|câu)|không\s*có\s*(đáp\s*án|phương\s*án)|các\s*(đáp\s*án|phương\s*án|ý)\s*(trên|còn\s*lại)|all\s+of\s+(the\s+)?(above|these)|none\s+of\s+(the\s+)?(above|these)|neither\s+of\s+(the\s+)?(above|these))/i;
+// English exams: instruction lines that mark how a group of questions behaves
+const RE_EN_ORDER = /arrang|meaningful\s+(paragraph|letter|conversation|text|exchange)|sentences?\s+(to|in)\s+(make|form)/i;
+const RE_EN_PASSAGE = /read\s+(the|a|an)\s+(following\s+)?(\w+\s+)?(passage|text|advertisement|notice|leaflet|announcement|e-?mail|letter|message|poster|flyer|brochure|article|extract|story|conversation|dialogue)|numbered\s+blank|\(\s*\d{1,2}\s*\)/i;
+const RE_OPTION_REF = /\b(both|either)\s+[A-D]\s+(and|or|&)\s+[A-D]\b|\b(A|B|C|D)\s*(,|và|&)\s*(A|B|C|D)\b.*(đúng|sai)|cả\s+[A-D]\s*(,|và)\s*[A-D]|(đáp\s*án|ý|phương\s*án)\s*[A-D]\b/i;
+
+const partKind = (text) => (/đúng\s*sai|đúng\s*hoặc\s*sai/i.test(text) ? 'tf' : /trả\s*lời\s*ngắn|ngắn/i.test(text) ? 'short' : /nhiều\s*(phương\s*án|lựa\s*chọn)|trắc\s*nghiệm/i.test(text) ? 'mc' : 'other');
+
+/** Is a w:color hex value "red" (any reddish shade: FF0000, C00000, ED1C24, FF3300, CC0000...)? */
+const isRedHex = (hex) => {
+  const m = /^([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex || '');
+  if (!m) return false;
+  const [r, g, b] = [m[1], m[2], m[3]].map((x) => parseInt(x, 16));
+  return r >= 0xa0 && g <= 0x55 && b <= 0x55 && r - Math.max(g, b) >= 0x60;
+};
+const RED_COLOR_TAG = /<w:color\b[^>]*\bw:val="([0-9a-fA-F]{6})"[^>]*\/>/g;
+const hasRedColor = (run) => { for (const m of run.matchAll(RED_COLOR_TAG)) if (isRedHex(m[1])) return true; return false; };
+
+/** Is the run a "marked as correct" label? underline, red text or highlight. */
+export function labelMark(run) {
+  if (/<w:u\b(?![^>]*w:val="none")/.test(run)) return 'underline';
+  if (hasRedColor(run)) return 'red';
+  if (/<w:highlight\b(?![^>]*w:val="none")/.test(run)) return 'highlight';
+  return null;
+}
+const stripMarks = (run) => run.replace(/<w:u\b[^>]*\/>/g, '').replace(/<w:highlight\b[^>]*\/>/g, '').replace(RED_COLOR_TAG, (tag, hex) => (isRedHex(hex) ? '' : tag));
+
+/** Split a simple run (rPr + one w:t) at a character offset of its text. Returns [left, right] or null. */
+function splitRun(run, at) {
+  run = run.replace(/<w:lastRenderedPageBreak\/>/g, '');   // a rendering hint only; Word rewrites it on save
+  const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?\s*<w:t\b[^>]*>([^<]*)<\/w:t>\s*<\/w:r>$/.exec(run);
+  if (!m) return null;
+  const text = unesc(m[3]);
+  const mk = (t) => (t ? `${m[1]}${m[2] || ''}<w:t xml:space="preserve">${escapeXml(t)}</w:t></w:r>` : '');
+  return [mk(text.slice(0, at)), mk(text.slice(at))];
+}
+
+/** Find option labels (A-D) inside one paragraph. Returns {options, ok}; splits runs where label and text share a run. */
+function findOptionsInParagraph(para, wanted = RE_OPT, upper = true) {
+  const kids = para.children.slice();
+  const found = [];
+  let seenContent = false, lastWasGap = true;
+  for (let i = 0; i < kids.length; i++) {
+    const c = kids[i];
+    const text = childText(c);
+    if (isRun(c) && !hasObject(c)) {
+      const m = wanted.exec(text);
+      const expected = found.length ? String.fromCharCode(found[0].letter.charCodeAt(0) + found.length) : null;
+      if (m && (!expected || m[1] === expected) && (lastWasGap || !seenContent || (/^[\s\u00A0]/.test(text) && text.length > m[0].length))) {
+        const labelEnd = m[0].length;
+        const lead = text.length - text.trimStart().length;
+        if (lead === 0 || !text.slice(0, lead).trim()) {
+          const labelText = text.slice(0, labelEnd);
+          if (labelEnd < text.length || /[A-Za-z]/.test(labelText)) {
+            const parts = text.length > labelEnd ? splitRunAt(c, labelEnd) : [c, ''];
+            if (!parts) return { options: [], ok: false };
+            const label = parts[0];
+            found.push({ at: i, letter: m[1], labelRun: label, rest: parts[1] });
+            seenContent = true; lastWasGap = false;
+            continue;
+          }
+        }
+      }
+    }
+    const gap = !text.replace(/[\s\t\u00A0]/g, '');
+    if (!gap) { lastWasGap = /\s$/.test(text); if (!found.length) return { options: [], ok: found.length > 0 }; } else if (/\t|\s{2,}/.test(text) || text === '') lastWasGap = true;
+    if (isRun(c) && /<w:tab\/>/.test(c)) lastWasGap = true;
+  }
+  if (!found.length) return { options: [], ok: false };
+  const opts = found.map((f, k) => {
+    const end = k + 1 < found.length ? found[k + 1].at : kids.length;
+    let content = [f.rest, ...kids.slice(f.at + 1, end)].filter(Boolean);
+    return { letter: f.letter, labelRun: f.labelRun, content };
+  });
+  return { options: opts, ok: true };
+}
+
+function trimContent(content) {   // drop trailing/leading empty runs and tab runs
+  const empty = (c) => isRun(c) && !hasObject(c) && !runText(c).replace(/[\s\t\u00A0]/g, '') && !/<w:br\b/.test(c);
+  const out = content.slice();
+  while (out.length && (empty(out[out.length - 1]) || /^<w:(proofErr|bookmark\w*)\b/.test(out[out.length - 1]))) out.pop();
+  while (out.length && empty(out[0])) out.shift();
+  return out;
+}
+
+/**
+ * Analyse the blocks into parts/questions. Question: {number, start, end (block indexes, end exclusive), stemEnd,
+ * options: [{letter,labelRun,content}] | null, optionParas:[blockIdx], statements, answer, flags: []}.
+ */
+export function analyze(model) {
+  const parts = [];
+  let part = { title: '', kind: 'mc', start: 0, questions: [], blockIndex: -1 };
+  const text = (b) => (b.kind === 'p' ? paragraphText(b) : '');
+  const starts = [];
+  // everything from the closing line ("--- HẾT ---", "ĐÁP ÁN", "LỜI GIẢI"...) on stays where it is and is not analysed
+  let limit = model.blocks.length, sawQuestion = false;
+  const enders = [];
+  for (let i = 0; i < model.blocks.length; i++) {
+    const t = text(model.blocks[i]);
+    if (RE_QUESTION.test(t)) sawQuestion = true;
+    else if (sawQuestion && model.blocks[i].kind === 'p' && RE_END.test(t)) enders.push(i);
+  }
+  if (enders.length && enders.length <= 2) limit = enders[0];   // a marker repeated after every question is a heading of a solution bank, not an end line
+  model.blocks.slice(0, limit).forEach((b, i) => {
+    const t = text(b);
+    if (b.kind === 'p' && RE_PART.test(t)) starts.push({ i, type: 'part', t });
+    else if (b.kind === 'p' && RE_QUESTION.test(t)) starts.push({ i, type: 'q', t, number: Number(RE_QUESTION.exec(t)[2]) });
+  });
+  const mark = (i) => starts.findIndex((s) => s.i === i);
+  const qStarts = starts.filter((s) => s.type === 'q');
+  const english = qStarts.length > 0 && qStarts.filter((s) => /^\s*question/i.test(s.t)).length * 2 > qStarts.length;
+  starts.forEach((s, k) => {
+    const next = k + 1 < starts.length ? starts[k + 1].i : limit;
+    if (s.type === 'part') {
+      part = { title: s.t.trim(), kind: partKind(s.t), blockIndex: s.i, questions: [] };
+      parts.push(part);
+      return;
+    }
+    if (!parts.length) { part = { title: '', kind: 'mc', blockIndex: -1, questions: [] }; parts.push(part); }
+    // trailing non-question blocks that really belong to the next part (e.g. page break / section) stay with this question
+    const q = { number: s.number, start: s.i, end: next, options: null, optionParas: [], statements: [], answer: null, flags: [] };
+    const kind = part.kind;
+    const stemText = [];
+    let i = s.i;
+    let optionsStarted = false;
+    for (; i < next; i++) {
+      const b = model.blocks[i];
+      if (b.kind !== 'p') continue;
+      const t = paragraphText(b);
+      if (kind === 'mc' || kind === 'other') {
+        const probe = RE_OPT.test(t) ? findOptionsInParagraph(b) : { ok: false };
+        if (probe.ok && probe.options[0].letter === (q.options ? 'ABCD'[q.options.length] : 'A') || (probe.ok && q.options && 'ABCD'[q.options.length] === probe.options[0].letter)) {
+          q.options = (q.options || []).concat(probe.options);
+          q.optionParas.push(i);
+          optionsStarted = true;
+          continue;
+        }
+        if (optionsStarted && t.trim() && q.options.length < 4 && !q.flags.includes('complexOptions')) q.flags.push('complexOptions');   // a paragraph inside the option list that is not an option; after D it is just trailing text (solution, notes)
+      }
+      if (kind === 'tf') {
+        const m = RE_STMT.exec(t);
+        if (m) { q.statements.push({ block: i, letter: m[1] }); continue; }
+      }
+      if (RE_ANSWER_LINE.test(t)) { q.answer = { text: t.replace(RE_ANSWER_LINE, '').trim(), block: i }; continue; }
+      if (!optionsStarted && i > s.i) stemText.push(t);
+    }
+    q.stemEnd = q.optionParas.length ? q.optionParas[0] : (q.statements.length ? q.statements[0].block : next);
+    // English: what follows the last option (instruction line, passage) belongs to the next group, so it must not travel with this question
+    q.ownEnd = english && q.optionParas.length ? q.optionParas[q.optionParas.length - 1] + 1 : next;
+    if (RE_SHARED.test(text(model.blocks[s.i]))) q.flags.push('shared');
+    if (q.options) {
+      const letters = q.options.map((o) => o.letter).join('');
+      if (letters !== 'ABCD'.slice(0, q.options.length) || q.options.length !== 4) q.flags.push('optionCount:' + letters);
+      if (q.options.some((o) => RE_OPTION_REF.test(o.content.map(childText).join('')))) q.flags.push('optionRefs');
+    } else if (kind === 'mc') q.flags.push('noOptions');
+    part.questions.push(q);
+  });
+  void mark;
+  const sections = english ? buildSections(model, parts.flatMap((p) => p.questions)) : undefined;
+  // English: how many "Question N" the text really contains (tables, glued onto other paragraphs...) versus how many were recognised
+  let expected = 0;
+  if (english) {
+    for (const b of model.blocks.slice(0, limit)) {
+      const x = b.kind === 'p' ? paragraphText(b) : (b.xml.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g) || []).map((s) => s.replace(/<[^>]+>/g, '')).join(' ');
+      expected += (x.match(/\bQuestion\s*\d+/gi) || []).length;
+    }
+  }
+  return { parts: parts.filter((p) => p.questions.length || p.blockIndex >= 0), english, sections, expected, limit, detected: parts.reduce((n, p) => n + p.questions.length, 0) };
+}
+
+/**
+ * English exam: consecutive questions under one instruction line / passage form a section. A section starts when text, a
+ * picture or a table sits between two questions. kind: 'independent' (shuffle the questions), 'passage' or 'order'
+ * (cloze, reading, sentence ordering: keep the order, only the options move). mode is the default for the kind.
+ */
+function buildSections(model, qs) {
+  const nonBlank = (b) => b.kind !== 'p' || Boolean(paragraphText(b).trim());
+  const secs = [];
+  qs.forEach((q, k) => {
+    const from = k ? qs[k - 1].ownEnd : 0, to = q.start;
+    if (k === 0 || model.blocks.slice(from, to).some(nonBlank)) secs.push({ index: secs.length, lead: { from, to }, questions: [], first: k === 0 });
+    secs[secs.length - 1].questions.push(q);
+  });
+  for (const s of secs) {
+    const lead = model.blocks.slice(s.lead.from, s.lead.to);
+    const paras = lead.filter((b) => b.kind === 'p').map(paragraphText).filter((t) => t.trim());
+    const text = paras.join('\n');
+    const words = text.split(/\s+/).filter(Boolean).length;
+    const rich = lead.some((b) => b.kind !== 'p' || b.children.some(hasObject));
+    let kind = 'independent';
+    if (RE_EN_ORDER.test(text)) kind = 'order';
+    else if (RE_EN_PASSAGE.test(text) || (!s.first && (words > 70 || paras.length >= 3 || rich))) kind = 'passage';
+    s.kind = kind;
+    s.mode = kind === 'independent' ? 'shuffle' : 'keep';
+    s.firstNumber = s.questions[0].number;
+    s.lastNumber = s.questions[s.questions.length - 1].number;
+    s.title = (paras[paras.length > 1 && s.first ? paras.length - 1 : 0] || '').trim().slice(0, 90);
+  }
+  return secs;
+}
+
+// ---------------------------------------------------------------- answers
+export function answersOf(model, analysis) {
+  const rows = [];
+  const tfMarks = (q) => q.statements.map((s) => {
+    const b = model.blocks[s.block];
+    const label = b.children.find((c) => isRun(c) && /[a-d]\s*\)/.test(runText(c)));
+    return label ? Boolean(labelMark(label)) : false;
+  });
+  const paperMarksTf = analysis.parts.some((pt) => pt.kind === 'tf' && pt.questions.some((q) => tfMarks(q).some(Boolean)));
+  for (const part of analysis.parts) {
+    for (const q of part.questions) {
+      const row = { part: part.title, kind: part.kind, number: q.number };
+      if (part.kind === 'mc' || part.kind === 'other') {
+        const marked = (q.options || []).filter((o) => labelMark(o.labelRun)).map((o) => o.letter);
+        row.value = marked.length === 1 ? marked[0] : marked.length ? marked.join('') : null;
+        row.multiple = marked.length > 1;
+        if (marked.length > 1 && marked.length === (q.options || []).length) { row.value = null; row.multiple = false; }   // every option "marked": underlined words (pronunciation), not an answer key
+      } else if (part.kind === 'tf') {
+        const marks = tfMarks(q);
+        // all four marked = ĐĐĐĐ; none marked = SSSS, but only once some other statement set in the paper is marked (else the paper simply has no key)
+        const none = !marks.some(Boolean) && paperMarksTf;
+        row.value = marks.some(Boolean) || none ? q.statements.map((s, i) => `${s.letter}${marks[i] ? 'Đ' : 'S'}`).join(' ') : null;
+        row.tf = marks.some(Boolean) || none ? marks.map((m) => (m ? 'Đ' : 'S')) : null;   // per statement a..d
+      } else if (part.kind === 'short') {
+        row.value = q.answer ? q.answer.text : null;
+      }
+      rows.push(row);
+    }
+  }
+  return rows;
+}
+
+// ---------------------------------------------------------------- answer key at the end of the paper
+// Papers often carry no marks on the options, only a key after the last question: a table ("Câu | 1 2 3 ... / Đáp án | A B C ..."),
+// a column table, or lines like "1.A 2.B 3.C" / "Câu 1: a) Đ b) S ..." / "Câu 1: 2,5". applyAnswerKey turns it into the marks the rest of
+// the code already understands (underlined option label, underlined true statement, hidden "Đáp án:" line) in the in-memory copy only.
+const KEY_NUM = /^(?:C[âa]u|Question)?\s*(\d{1,3})\s*[.:)]?$/i;
+const keyKind = (v) => {
+  const t = String(v).replace(/ /g, ' ').trim();
+  if (/^[A-D]$/.test(t)) return { kind: 'mc', value: t };
+  const tf = t.replace(/\b[a-d]\s*[).:\-–]/gi, '').replace(/[\s,;\-–]/g, '');
+  if (/^[ĐSđs]{4}$/.test(tf)) return { kind: 'tf', value: [...tf].map((c) => (/[Đđ]/.test(c) ? 'Đ' : 'S')) };
+  if (/^-?\d[\d.,/]*$/.test(t)) return { kind: 'short', value: t };
+  return null;
+};
+function keyTableRows(xml) {
+  return (xml.match(/<w:tr\b[\s\S]*?<\/w:tr>/g) || []).map((r) => (r.match(/<w:tc\b[\s\S]*?<\/w:tc>/g) || []).map((c) => xmlText(c).replace(/\s+/g, ' ').trim()));
+}
+/** {mc, tf, short}: Maps from question number to the answer written in the key; first occurrence wins. */
+export function parseAnswerKey(blocks) {
+  const key = { mc: new Map(), tf: new Map(), short: new Map() };
+  const put = (num, v) => { if (v && !key[v.kind].has(num)) key[v.kind].set(num, v.value); };
+  let text = '';
+  for (const b of blocks) {
+    if (b.kind === 'p') { text += paragraphText(b) + '\n'; continue; }
+    if (tagName(b.xml) !== 'w:tbl') continue;
+    const rows = keyTableRows(b.xml).filter((r) => r.some(Boolean));
+    for (let i = 0; i < rows.length; i++) {
+      const r = rows[i], nums = r.slice(1).map((c) => KEY_NUM.exec(c));
+      if (r.length >= 3 && nums.every(Boolean) && rows[i + 1]) {   // horizontal: numbers row, then answers row
+        const vals = rows[i + 1];
+        nums.forEach((m, k) => put(Number(m[1]), keyKind(vals[k + 1] ?? '')));
+        i++;
+        continue;
+      }
+      for (let k = 0; k + 1 < r.length; k += 2) { const m = KEY_NUM.exec(r[k]); if (m) put(Number(m[1]), keyKind(r[k + 1])); else break; }   // vertical: number | answer (| number | answer)
+    }
+  }
+  const take = (re, fn) => { text = text.replace(re, (all, ...g) => { fn(g); return ' '.repeat(all.length); }); };
+  take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]\s*((?:[a-d]\s*[).:\-–]\s*[ĐSđs](?![\p{L}\d])[\s,;]*){4}|[ĐSđs](?:[\s,;\-–]*[ĐSđs]){3}(?![\p{L}\d]))/giu, (g) => put(Number(g[0]), keyKind(g[1])));
+  take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–]?\s*([A-D])(?![\p{L}\d])/gu, (g) => put(Number(g[0]), { kind: 'mc', value: g[1] }));
+  take(/(?:C[âa]u\s*)?(\d{1,3})\s*[.:)\-–=]\s*(-?\d[\d.,/]*)(?![\p{L}\d])/giu, (g) => put(Number(g[0]), { kind: 'short', value: g[1] }));
+  return key;
+}
+
+const underlineRun = (run) => {
+  const h = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(run);
+  return h ? `${h[1]}${withRprChildren(h[2] ? h[2].trim() : '', { u: '<w:u w:val="single"/>' })}${run.slice(h[0].length)}` : run;
+};
+/** Underline the label run matching `re` (letter captured in group 1 must equal `letter`) inside paragraph p. */
+function markLabel(p, re, letter) {
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i];
+    if (!isRun(c) || hasObject(c)) continue;
+    const t = runText(c), m = re.exec(t);
+    if (!m || m[1] !== letter) continue;
+    const parts = t.length > m[0].length ? splitRunAt(c, m[0].length) : [c, ''];
+    if (!parts) return false;
+    p.children.splice(i, 1, underlineRun(parts[0]), ...(parts[1] ? [parts[1]] : []));
+    return true;
+  }
+  return false;
+}
+
+/** Mark answers from the key at the end of the paper on questions that carry no mark yet. Returns {pkg, changed, count}. */
+export function applyAnswerKey(pkg) {
+  let model;
+  try { model = parseBody(pkg); } catch { return { pkg, changed: false, count: 0 }; }
+  const analysis = analyze(model);
+  let from = analysis.limit;
+  if (from >= model.blocks.length) {   // no closing line: a table right after the last question may still be the key
+    const last = model.blocks.map((b, i) => [b, i]).filter(([b]) => b.kind === 'other' && tagName(b.xml) === 'w:tbl').pop();
+    from = last && last[1] > (analysis.parts.flatMap((x) => x.questions).pop() || { start: 0 }).start ? last[1] : from;
+  }
+  if (from >= model.blocks.length) return { pkg, changed: false, count: 0 };
+  const key = parseAnswerKey(model.blocks.slice(from));
+  if (!key.mc.size && !key.tf.size && !key.short.size) return { pkg, changed: false, count: 0 };
+  const rows = answersOf(model, analysis), inserts = [];
+  let count = 0, ri = 0;
+  for (const part of analysis.parts) {
+    for (const q of part.questions) {
+      const row = rows[ri++];
+      if (!row || (row.value !== null && row.value !== undefined)) continue;
+      if (part.kind === 'mc' || part.kind === 'other') {
+        const v = key.mc.get(q.number);
+        if (v && q.options && q.optionParas.some((pi) => markLabel(model.blocks[pi], /^\s*([A-D])\s*[.)]/, v))) count++;
+      } else if (part.kind === 'tf') {
+        const v = key.tf.get(q.number);
+        if (!v || v.length !== q.statements.length) continue;
+        let any = false;
+        q.statements.forEach((st, i) => { if (v[i] === 'Đ' && markLabel(model.blocks[st.block], /^\s*([a-d])\s*\)/, st.letter)) any = true; });
+        if (any || v.every((x) => x === 'S')) count++;
+      } else if (part.kind === 'short') {
+        const v = key.short.get(q.number);
+        if (v) { inserts.push([q.start, v]); count++; }
+      }
+    }
+  }
+  if (!count) return { pkg, changed: false, count: 0 };
+  const blocks = model.blocks.slice();
+  for (const [at, v] of inserts.sort((a, b) => b[0] - a[0])) {   // hidden "Đáp án: x" line, so it never prints on the paper
+    blocks.splice(at + 1, 0, { kind: 'p', open: '<w:p>', ppr: '<w:pPr><w:rPr><w:vanish/></w:rPr></w:pPr>', children: [`<w:r><w:rPr><w:vanish/></w:rPr><w:t xml:space="preserve">Đáp án: ${escapeXml(v)}</w:t></w:r>`] });
+  }
+  return { pkg: buildBody(model, blocks), changed: true, count };
+}
+
+// ---------------------------------------------------------------- option layout
+const labelRunFor = (letter, template) => {
+  const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(template);
+  let rpr = m && m[2] ? m[2] : '';
+  if (rpr && !/<w:b\b/.test(rpr)) rpr = withRprChildren(rpr, { b: '<w:b/>' });
+  if (!rpr) rpr = '<w:rPr><w:b/></w:rPr>';
+  return `${m ? m[1] : '<w:r>'}${rpr}<w:t>${letter}.</w:t></w:r>`;
+};
+
+function fontPt(content, para) {
+  for (const c of content) { const m = /<w:sz w:val="(\d+)"/.exec(c); if (m) return Number(m[1]) / 2; }
+  const m = /<w:sz w:val="(\d+)"/.exec(para && para.ppr || '');
+  return m ? Number(m[1]) / 2 : 13;
+}
+
+const SPACE_RUN = '<w:r><w:t xml:space="preserve"> </w:t></w:r>';
+const TAB_RUN = '<w:r><w:tab/></w:r>';
+
+/** Build the option paragraphs for one question. layout: 'auto' | 4 | 2 | 1 (options per line). */
+export function layoutOptions(model, options, templatePara, layout = 'auto') {
+  const W = pageTextWidthTwips(model);
+  const pt = fontPt(options.flatMap((o) => o.content), templatePara);
+  const widths = options.map((o) => 14 + trimContent(o.content).reduce((s, c) => s + childWidth(c, pt), 0));   // label ~14pt
+  const maxW = Math.max(...widths) * 20 + 120;
+  let per = layout === 'auto' ? (maxW <= W / 4 ? 4 : maxW <= W / 2 ? 2 : 1) : Number(layout);
+  if (options.length < per) per = options.length;
+  const base = setPprChild(templatePara ? templatePara.ppr : '', 'tabs', null);
+  const colTabs = per > 1 ? `<w:tabs>${Array.from({ length: per - 1 }, (_x, k) => `<w:tab w:val="left" w:pos="${Math.round(W / per * (k + 1))}"/>`).join('')}</w:tabs>` : '';
+  const lines = [];
+  for (let i = 0; i < options.length; i += per) lines.push(options.slice(i, i + per));
+  const paras = lines.map((line, li) => {
+    const kids = [];
+    line.forEach((o, k) => {
+      if (k > 0) kids.push(TAB_RUN);
+      const body = trimContent(o.content);
+      const lead = body.length && isRun(body[0]) && !hasObject(body[0]) && /^\s/.test(runText(body[0]));   // content already starts with a space
+      kids.push(o.labelRun, ...(lead ? [] : [SPACE_RUN]), ...body);
+    });
+    let ppr = per > 1 ? setPprChild(base, 'tabs', colTabs) : base;
+    if (li < lines.length - 1) ppr = setPprChild(ppr, 'keepNext', '<w:keepNext/>');
+    return { kind: 'p', open: templatePara ? templatePara.open.replace(/\s+w14:paraId="[^"]*"|\s+w14:textId="[^"]*"/g, '') : '<w:p>', ppr, children: kids };
+  });
+  return { paras, perLine: per };
+}
+
+// ---------------------------------------------------------------- normalise
+/**
+ * Renumbers the question label ("Câu N." / "Bài N.") in paragraph p, supporting single or multi-run labels.
+ * formatTemplate: optional run whose rPr formatting should be applied to the label run.
+ */
+export function renumberQuestionInParagraph(p, newNumber, { formatTemplate, word = 'keep' } = {}) {
+  if (!p || !p.children) return false;
+  const fullText = paragraphText(p);
+  const m = RE_QUESTION.exec(fullText);
+  if (!m) return false;
+
+  let charPos = 0;
+  const runMap = [];
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i];
+    if (isRun(c) && !hasObject(c)) {
+      const t = runText(c);
+      if (t.length > 0) {
+        runMap.push({ i, start: charPos, end: charPos + t.length, text: t, runXml: c });
+        charPos += t.length;
+        continue;
+      }
+    }
+    charPos += childText(c).length;
+  }
+
+  const matchStart = m.index;
+  const matchEnd = m.index + m[0].length;
+  const delim = (m[3] && /[.:)]/.test(m[3])) ? m[3] : '.';
+  const label = word === 'Câu' || word === 'Bài' ? word : m[1];   // 'keep': the word the document already uses (Câu / Bài / bài ...)
+  const replacementLabel = `${label} ${newNumber}${delim}`;
+
+  const affected = runMap.filter((r) => r.start < matchEnd && r.end > matchStart);
+  if (!affected.length) return false;
+
+  const applyFormat = (runXml) => {
+    if (!formatTemplate) return runXml;
+    const rprMatch = /<w:rPr>[\s\S]*?<\/w:rPr>/.exec(formatTemplate);
+    if (!rprMatch) return runXml;
+    const rHead = /^(<w:r\b[^>]*>)(?:\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(runXml);
+    if (!rHead) return runXml;
+    return `${rHead[1]}${rprMatch[0]}${runXml.slice(rHead[0].length)}`;
+  };
+
+  if (affected.length === 1) {
+    const r = affected[0];
+    const localStart = matchStart - r.start;
+    const localEnd = matchEnd - r.start;
+
+    let hasTrailingSpace = r.text.slice(localEnd).startsWith(' ') || r.text.slice(localEnd).startsWith('\t');
+    if (!hasTrailingSpace && localEnd >= r.text.length) {
+      for (let j = r.i + 1; j < p.children.length; j++) {
+        const nextRun = p.children[j];
+        const nt = childText(nextRun);
+        if (nt.length > 0) {
+          if (nt.startsWith(' ') || nt.startsWith('\t')) hasTrailingSpace = true;
+          break;
+        }
+      }
+    }
+    const needSpace = !hasTrailingSpace;
+
+    const before = r.text.slice(0, localStart);
+    const after = r.text.slice(localEnd);
+    const combined = before + replacementLabel + (needSpace ? ' ' : '') + after;
+    let newRun = r.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, `<w:t xml:space="preserve">${escapeXml(combined)}</w:t>`);
+    if (formatTemplate) newRun = applyFormat(newRun);
+    p.children[r.i] = newRun;
+    return true;
+  }
+
+  // Multi-run case:
+  const first = affected[0];
+  const last = affected[affected.length - 1];
+  const firstPrefix = first.text.slice(0, matchStart - first.start);
+  const lastSuffix = last.text.slice(matchEnd - last.start);
+
+  let hasTrailingSpace = lastSuffix.startsWith(' ') || lastSuffix.startsWith('\t');
+  if (!hasTrailingSpace && lastSuffix.length === 0) {
+    for (let j = last.i + 1; j < p.children.length; j++) {
+      const nextRun = p.children[j];
+      const nt = childText(nextRun);
+      if (nt.length > 0) {
+        if (nt.startsWith(' ') || nt.startsWith('\t')) hasTrailingSpace = true;
+        break;
+      }
+    }
+  }
+  const needSpace = !hasTrailingSpace;
+
+  const firstCombined = firstPrefix + replacementLabel + (needSpace ? ' ' : '');
+  let newFirstRun = first.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, `<w:t xml:space="preserve">${escapeXml(firstCombined)}</w:t>`);
+  if (formatTemplate) newFirstRun = applyFormat(newFirstRun);
+  p.children[first.i] = newFirstRun;
+
+  for (let k = 1; k < affected.length - 1; k++) {
+    p.children[affected[k].i] = affected[k].runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, '');
+  }
+
+  p.children[last.i] = last.runXml.replace(/<w:t\b[^>]*>[\s\S]*?<\/w:t>/, lastSuffix ? `<w:t xml:space="preserve">${escapeXml(lastSuffix)}</w:t>` : '');
+  return true;
+}
+
+
+/** Format the printed "Câu N." label of a question paragraph: bold, colour (hex without #), and/or a line break after it. Returns true if the label was found. */
+export function styleQuestionLabel(p, { bold = false, color = '', brk = false } = {}) {
+  if (!p || !p.children || !(bold || color || brk)) return false;
+  const m = RE_QUESTION.exec(paragraphText(p));
+  if (!m) return false;
+  let from = m.index + (m[0].length - m[0].trimStart().length), to = m.index + m[0].length;
+  // the delimiter group may be a lookahead-matched space: keep only the visible "Câu 3." part
+  while (to > from && /\s/.test(paragraphText(p)[to - 1])) to--;
+  const splitAt = (offset) => {   // make `offset` a boundary between two children
+    let pos = 0;
+    for (let i = 0; i < p.children.length; i++) {
+      const c = p.children[i], len = childText(c).length;
+      if (offset === pos) return true;
+      if (offset < pos + len) {
+        if (!isRun(c) || hasObject(c)) return false;
+        const parts = splitRunAt(c, offset - pos);
+        if (!parts || !parts[0] || !parts[1]) return false;
+        p.children.splice(i, 1, parts[0], parts[1]);
+        return true;
+      }
+      pos += len;
+    }
+    return offset === pos;
+  };
+  if (!splitAt(to) || !splitAt(from)) return false;
+  const set = {};
+  if (bold) set.b = '<w:b/>';
+  if (color) set.color = `<w:color w:val="${color}"/>`;
+  let pos = 0, lastIdx = -1;
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i], len = childText(c).length;
+    if (pos >= from && pos + len <= to && len > 0 && isRun(c) && !hasObject(c) && Object.keys(set).length) {
+      const h = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?/.exec(c);
+      if (h) p.children[i] = `${h[1]}${withRprChildren(h[2] ? h[2].trim() : '', set)}${c.slice(h[0].length)}`;
+    }
+    if (pos < to && pos + len >= to) lastIdx = i;
+    pos += len;
+  }
+  if (brk && lastIdx >= 0 && lastIdx + 1 < p.children.length) {
+    const rest = p.children.slice(lastIdx + 1);
+    if (rest.some((c) => childText(c).trim() || hasObject(c) || isMath(c))) {
+      const nxt = p.children[lastIdx + 1];
+      if (isRun(nxt) && !hasObject(nxt)) p.children[lastIdx + 1] = nxt.replace(/(<w:t\b[^>]*>)[ \u00a0\t]+/, '$1');
+      p.children.splice(lastIdx + 1, 0, '<w:r><w:br/></w:r>');
+    }
+  }
+  return true;
+}
+
+// ---------------------------------------------------------------- typography (font, text size, equation size)
+const RPR_ORDER = ['rStyle', 'rFonts', 'b', 'bCs', 'i', 'iCs', 'caps', 'smallCaps', 'strike', 'dstrike', 'outline', 'shadow', 'emboss', 'imprint', 'noProof', 'snapToGrid', 'vanish', 'webHidden', 'color', 'spacing', 'w', 'kern', 'position', 'sz', 'szCs', 'highlight', 'u', 'effect', 'bdr', 'shd', 'fitText', 'vertAlign', 'rtl', 'cs', 'em', 'lang', 'eastAsianLayout', 'specVanish', 'oMath'];
+/** rPr with the given children replaced (xml: {tag: element xml}); children keep the order the schema wants. */
+function withRprChildren(rpr, set) {
+  const inner = rpr && rpr !== '<w:rPr/>' ? rpr.replace(/^\s*<w:rPr>/, '').replace(/<\/w:rPr>\s*$/, '') : '';
+  const kids = splitChildren(inner).filter((k) => !(tagName(k).replace(/^w:/, '') in set));
+  const rank = (t) => { const r = RPR_ORDER.indexOf(t.replace(/^w:/, '')); return r < 0 ? 999 : r; };
+  for (const [tag, xml] of Object.entries(set)) {
+    const at = kids.findIndex((k) => rank(tagName(k)) > rank(tag));
+    if (at < 0) kids.push(xml); else kids.splice(at, 0, xml);
+  }
+  return `<w:rPr>${kids.join('')}</w:rPr>`;
+}
+const fontXml = (f) => `<w:rFonts w:ascii="${escapeXml(f)}" w:hAnsi="${escapeXml(f)}" w:eastAsia="${escapeXml(f)}" w:cs="${escapeXml(f)}"/>`;
+const sizeXml = (pt) => ({ sz: `<w:sz w:val="${Math.round(pt * 2)}"/>`, szCs: `<w:szCs w:val="${Math.round(pt * 2)}"/>` });
+
+/** An ordinary text run -> the run with the font / size set. Runs holding pictures, objects or symbols are left alone. */
+function typeRun(run, font, size) {
+  if (hasObject(run) || /<w:sym\b/.test(run)) return run;
+  const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?([\s\S]*)$/.exec(run);
+  if (!m) return run;
+  const set = {};
+  if (font) set.rFonts = fontXml(font);
+  if (size) Object.assign(set, sizeXml(size));
+  return m[1] + withRprChildren(m[2] || '', set) + m[3];
+}
+
+/** An equation (m:oMath / m:oMathPara) -> the same with the size of every math run (and bracket / fraction control) set. */
+function typeMath(xml, size) {
+  const set = sizeXml(size);
+  let out = xml.replace(/<w:rPr>[\s\S]*?<\/w:rPr>|<w:rPr\/>/g, (r) => withRprChildren(r, set));
+  out = out.replace(/<m:r>((?:\s*<m:rPr>[\s\S]*?<\/m:rPr>|\s*<m:rPr\/>)?)(\s*<w:rPr>[\s\S]*?<\/w:rPr>|\s*<w:rPr\/>)?/g, (m0, mr, wr) => `<m:r>${mr}${withRprChildren(wr || '', set)}`);
+  return out;
+}
+
+/**
+ * Paragraph children with the typography applied. opts: font (name | ''), fontSize (pt | 0), mathSize (pt | 0 | 'text').
+ * Returns {children, math: number of MathType-style objects whose size cannot be set here}.
+ */
+function typeChildren(children, opts) {
+  const mathSize = opts.mathSize === 'text' ? opts.fontSize : opts.mathSize;
+  let objects = 0;
+  const out = children.map((c) => {
+    if (isRun(c)) { if (/<w:object\b/.test(c)) objects++; return typeRun(c, opts.font, opts.fontSize); }
+    if (isMath(c)) return mathSize ? typeMath(c, mathSize) : c;
+    if (/^<w:hyperlink[\s>]/.test(c)) {
+      const open = /^<w:hyperlink\b[^>]*>/.exec(c)[0];
+      const inner = splitChildren(c.slice(open.length, c.length - '</w:hyperlink>'.length));
+      const r = typeChildren(inner, opts);
+      objects += r.objects;
+      return open + r.children.join('') + '</w:hyperlink>';
+    }
+    return c;
+  });
+  return { children: out, objects };
+}
+
+/**
+ * opts: renumber ('part'|'continuous'|false), labelWord ('keep'|'Câu'|'Bài': the word of the "Câu N." / "Bài N." label), labels (bool), questionFormat (bool: copy first "Câu" label format),
+ * layout ('auto'|4|2|1|false), keepNext (bool), font (name | ''), fontSize (pt | 0), mathSize (pt | 0 | 'text': same as fontSize). Returns {pkg, report}.
+ */
+export function normalize(pkg, opts = {}) {
+  pkg = prepareEnglish(pkg).pkg;
+  const report = { questions: 0, renumbered: 0, relaid: 0, retyped: 0, objects: 0, skipped: [], notes: [] };
+  if (opts.font || opts.fontSize || opts.mathSize) {   // first, so the option layout below measures the final text size
+    const m0 = parseBody(pkg), a0 = analyze(m0);
+    for (const part of a0.parts) {
+      for (const q of part.questions) {
+        for (let i = q.start; i < q.end; i++) {
+          const b = m0.blocks[i];
+          if (b.kind !== 'p') continue;
+          const r = typeChildren(b.children, opts);
+          b.children = r.children;
+          report.objects += r.objects;
+          report.retyped++;
+        }
+      }
+    }
+    pkg = buildBody(m0);
+  }
+  const model = parseBody(pkg);
+  const analysis = analyze(model);
+  const replacements = new Map();   // block index -> array of paragraphs (replace block)
+  let counter = 0, firstLabel = null;
+  for (const part of analysis.parts) {
+    if (opts.renumber === 'part') counter = 0;
+    for (const q of part.questions) {
+      report.questions++;
+      const b = model.blocks[q.start];
+      const newNumber = ++counter;
+      if (!firstLabel) {
+        const foundRun = b.children.find((c) => isRun(c) && RE_QUESTION.test(runText(c)));
+        if (foundRun) firstLabel = foundRun;
+      }
+      const fmt = opts.questionFormat ? firstLabel : null;
+      if (opts.renumber && (opts.renumber === 'continuous' || q.number !== newNumber)) {
+        const ok = renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt, word: opts.labelWord });
+        if (ok) report.renumbered++;
+        else report.skipped.push(`Câu ${q.number}: không tìm thấy nhãn “Câu” / “Bài”`);
+      } else if (opts.renumber || opts.questionFormat) {
+        renumberQuestionInParagraph(b, newNumber, { formatTemplate: fmt, word: opts.labelWord });
+      }
+      if (opts.qBold || opts.qColor || opts.qBreak) styleQuestionLabel(b, { bold: opts.qBold, color: opts.qColor, brk: opts.qBreak });
+      if (opts.keepNext) {
+        for (let i = q.start; i < q.stemEnd; i++) if (model.blocks[i].kind === 'p' && i + 1 <= q.stemEnd && (q.options || q.statements.length)) model.blocks[i].ppr = setPprChild(model.blocks[i].ppr, 'keepNext', '<w:keepNext/>');
+      }
+      if (part.kind === 'mc' && q.options && opts.layout !== false) {
+        if (q.flags.some((f) => f === 'complexOptions' || f.startsWith('optionCount'))) { report.skipped.push(`Câu ${q.number}: phương án không chuẩn (${q.flags.join(', ')}), giữ nguyên bố cục`); continue; }
+        const template = model.blocks[q.optionParas[0]];
+        const options = q.options.map((o, k) => ({ ...o, labelRun: opts.labels === false ? o.labelRun : labelRunFor('ABCD'[k], o.labelRun) }));
+        const { paras } = layoutOptions(model, options, template, opts.layout || 'auto');
+        replacements.set(q.optionParas[0], { paras, remove: q.optionParas.slice(1) });
+        report.relaid++;
+      }
+    }
+  }
+  const blocks = [];
+  const removed = new Set();
+  for (const r of replacements.values()) r.remove.forEach((i) => removed.add(i));
+  model.blocks.forEach((b, i) => {
+    if (removed.has(i)) return;
+    if (replacements.has(i)) blocks.push(...replacements.get(i).paras);
+    else blocks.push(b);
+  });
+  return { pkg: buildBody(model, blocks), report };
+}
+
+// ---------------------------------------------------------------- English layout preparation
+// English papers pasted from PDF keep questions in tables, glue "Question N." onto the previous paragraph and letter options with
+// automatic numbering. prepareEnglish rewrites them into the plain layout analyze() understands (the document itself is not touched).
+const xmlText = (x) => (x.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g) || []).map((s) => unesc(s.replace(/<[^>]+>/g, ''))).join(' ');
+
+/** Paragraphs of a table (or sdt), in reading order. */
+function collectParas(xml) {
+  const out = [];
+  const walk = (frag) => {
+    for (const c of splitChildren(frag)) {
+      const t = tagName(c);
+      if (t === 'w:p') out.push(c);
+      else if (/^w:(tbl|tr|tc|sdt|sdtContent)$/.test(t)) walk(c.replace(/^<[^>]+>/, '').replace(/<\/[\w:]+>$/, ''));
+    }
+  };
+  walk(xml);
+  return out;
+}
+
+/** Split a run (rPr + w:t / tab / br children) at a character offset. Returns [left, right] or null. */
+function splitRunAt(run, at) {
+  run = run.replace(/<w:lastRenderedPageBreak\/>/g, '');
+  const m = /^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?([\s\S]*)<\/w:r>$/.exec(run);
+  if (!m) return null;
+  const kids = splitChildren(m[3]);
+  const mk = (list) => (list.length ? `${m[1]}${m[2] || ''}${list.join('')}</w:r>` : '');
+  let pos = 0;
+  for (let k = 0; k < kids.length; k++) {
+    const e = kids[k], tn = tagName(e);
+    if (at === pos) return [mk(kids.slice(0, k)), mk(kids.slice(k))];
+    let len = 0;
+    if (tn === 'w:t') {
+      const tm = /^<w:t\b[^>]*?(?:\/>|>([^<]*)<\/w:t>)$/.exec(e);
+      if (!tm) return null;
+      const text = unesc(tm[1] || '');
+      len = text.length;
+      if (at < pos + len) {
+        const t = (s) => `<w:t xml:space="preserve">${escapeXml(s)}</w:t>`;
+        return [mk([...kids.slice(0, k), t(text.slice(0, at - pos))]), mk([t(text.slice(at - pos)), ...kids.slice(k + 1)])];
+      }
+    } else if (tn === 'w:tab' || tn === 'w:br' || tn === 'w:noBreakHyphen') len = 1;
+    pos += len;
+  }
+  return at === pos ? [mk(kids), ''] : null;
+}
+
+/** Split a paragraph at an offset of its paragraphText. Returns [first, second] or null (offset inside a picture, field, hyperlink...). */
+function splitParaAt(p, offset) {
+  const fresh = (open) => open.replace(/\s+w14:paraId="[^"]*"|\s+w14:textId="[^"]*"/g, '');
+  const done = (a, b) => [{ ...p, children: a }, { kind: 'p', open: fresh(p.open), ppr: setPprChild(setPprChild(p.ppr, 'numPr', null), 'ind', null), children: b }];
+  let pos = 0;
+  for (let i = 0; i < p.children.length; i++) {
+    const c = p.children[i], len = childText(c).length;
+    if (offset === pos) return done(p.children.slice(0, i), p.children.slice(i));
+    if (offset < pos + len) {
+      if (!isRun(c) || hasObject(c)) return null;
+      const parts = splitRunAt(c, offset - pos);
+      if (!parts) return null;
+      return done([...p.children.slice(0, i), parts[0]].filter(Boolean), [parts[1], ...p.children.slice(i + 1)].filter(Boolean));
+    }
+    pos += len;
+  }
+  return offset === pos ? done(p.children, []) : null;
+}
+
+// Question labels as printed ("Question 5." / "Câu 5." / "Bài 5."), capitalised: a lower-case "câu 5." inside a sentence is only a reference
+const QWORD = '(?:Question|QUESTION|C[âa]u|CÂU|B[àa]i|BÀI)';
+const RE_QN_GLOBAL = /(?:Question|QUESTION|C[âa]u|CÂU)\s*\d+\s*[.:)]/g;   // "Bài N." is too common inside lesson text to split on
+const RE_QLEAD = new RegExp(`^\\s*${QWORD}\\s*\\d+\\s*[.:)]`);
+const RE_ROW_ABCD = /(?:^|[\s\u00A0])A\.(?=\s)[\s\S]*?\sB\.(?=\s)(?:[\s\S]*?\sC\.(?=\s))?/;   // at least A and B; C-D may continue in the next paragraph
+/** Split off a "Question N." glued onto earlier text, and the first option label glued onto the stem. */
+function splitGlued(p, nextIsList = false, depth = 0) {
+  if (depth > 12) return [p];
+  const t = paragraphText(p);
+  for (const m of t.matchAll(RE_QN_GLOBAL)) {
+    if (m.index > 0 && /\s/.test(t[m.index - 1]) && t.slice(0, m.index).trim()) {
+      const parts = splitParaAt(p, m.index);
+      if (parts) return [...splitGlued(parts[0], false, depth + 1), ...splitGlued(parts[1], nextIsList, depth + 1)];
+    }
+  }
+  const q = RE_QLEAD.exec(t);
+  const rest = q ? t.slice(q[0].length) : t;
+  // an option row "A. ... B. ..." glued after the stem / last sentence; or just "A." when B-D follow as an automatic list
+  let om = RE_ROW_ABCD.exec(rest);
+  if (!om && q && nextIsList && !/(?:^|\s)B\./.test(rest)) om = /(?:^|[\s\u00A0])A\.(?=\s|$)/.exec(rest);
+  if (om && (q || (om.index > 0 && rest.slice(0, om.index).trim()))) {
+    const parts = splitParaAt(p, (q ? q[0].length : 0) + om.index + (/^[\s\u00A0]/.test(om[0]) ? 1 : 0));
+    if (parts && paragraphText(parts[1]).trim()) return [parts[0], parts[1]];
+  }
+  return [p];
+}
+
+/** A label whose dot sits in the next run ("C" + ". text") becomes one run "C." so the option can be recognised. */
+function joinSplitLabels(p) {
+  let n = 0;
+  for (let i = 0; i + 1 < p.children.length; i++) {
+    const c = p.children[i], d = p.children[i + 1];
+    if (!isRun(c) || !isRun(d) || hasObject(c) || hasObject(d) || !/^\s*[A-D]$/.test(runText(c)) || !/^[.)]/.test(runText(d))) continue;
+    const parts = splitRunAt(d, 1);
+    if (!parts || !/^(<w:r\b[^>]*>)(\s*<w:rPr>[\s\S]*?<\/w:rPr>)?\s*<w:t\b[^>]*>[^<]*<\/w:t>\s*<\/w:r>$/.test(c)) continue;
+    p.children[i] = c.replace(/(<w:t\b[^>]*>)([^<]*)(<\/w:t>)/, (_m, o, t, e) => `<w:t xml:space="preserve">${t}${runText(parts[0])}${e}`);
+    p.children[i + 1] = parts[1];
+    if (!parts[1]) p.children.splice(i + 1, 1);
+    n++;
+  }
+  return n;
+}
+
+/** Predicate (numId, ilvl) -> is it an A, B, C... list; from /word/numbering.xml of the package, null when absent. */
+function upperLetterLists(pkg) {
+  const m = /<pkg:part pkg:name="\/word\/numbering\.xml"[^>]*>\s*<pkg:xmlData>([\s\S]*?)<\/pkg:xmlData>/.exec(pkg);
+  if (!m) return null;
+  const abs = {}, num = {};
+  for (const a of m[1].matchAll(/<w:abstractNum\b[^>]*w:abstractNumId="(\d+)"[\s\S]*?<\/w:abstractNum>/g)) {
+    for (const l of a[0].matchAll(/<w:lvl\b[^>]*w:ilvl="(\d+)"[\s\S]*?<\/w:lvl>/g)) {
+      const f = /<w:numFmt\b[^>]*w:val="(\w+)"/.exec(l[0]);
+      (abs[a[1]] = abs[a[1]] || {})[l[1]] = f ? f[1] : '';
+    }
+  }
+  for (const n of m[1].matchAll(/<w:num\b[^>]*w:numId="(\d+)"[^>]*>\s*<w:abstractNumId\b[^>]*w:val="(\d+)"/g)) num[n[1]] = n[2];
+  return (numId, ilvl) => ((abs[num[numId]] || {})[ilvl || '0']) === 'upperLetter';
+}
+
+/** Make the automatic A. B. C. D. of option paragraphs literal text; the label takes the paragraph mark's formatting (so an underline / red mark still shows). */
+function materializeLetters(blocks, isUpper) {
+  let next = 0, made = 0;
+  const scan = (text) => { for (const m of text.matchAll(/(?:^|[\s ])([A-D])\.(?=\s|$)/g)) if (m[1] === 'ABCD'[next]) next++; };
+  for (const b of blocks) {
+    if (b.kind !== 'p') continue;
+    const t = paragraphText(b), q = RE_QLEAD.exec(t);
+    if (q) { next = 0; scan(t.slice(q[0].length)); continue; }
+    const np = /<w:numPr>[\s\S]*?<\/w:numPr>/.exec(b.ppr || '');
+    if (np && isUpper && next < 4 && isUpper((/<w:numId\b[^>]*w:val="(\d+)"/.exec(np[0]) || [])[1], (/<w:ilvl\b[^>]*w:val="(\d+)"/.exec(np[0]) || [])[1])) {
+      const mark = pprChildren(b.ppr).find((k) => tagName(k) === 'w:rPr') || '';
+      b.children = [labelRunFor('ABCD'[next], `<w:r>${mark}</w:r>`), SPACE_RUN, ...b.children];
+      b.ppr = setPprChild(setPprChild(b.ppr, 'numPr', null), 'ind', null);
+      next++; made++;
+    }
+    scan(t);
+  }
+  return made;
+}
+
+/** {pkg, changed, stats}: the package of an English paper in the plain layout, or the input unchanged for other papers. */
+export function prepareEnglish(pkg) {
+  const stats = { tables: 0, split: 0, labels: 0 };
+  let model;
+  try { model = parseBody(pkg); } catch (e) { return { pkg, changed: false, stats }; }
+  const textOf = (b) => (b.kind === 'p' ? paragraphText(b) : xmlText(b.xml));
+  const all = model.blocks.map(textOf).join('\n');
+  if ((all.match(RE_QN_GLOBAL) || []).length < 3) return { pkg, changed: false, stats };
+  let blocks = [];
+  for (const b of model.blocks) {
+    if (b.kind === 'other' && tagName(b.xml) === 'w:tbl' && xmlText(b.xml).search(RE_QN_GLOBAL) >= 0 && /(?:^|\s)A\s?[.)]/.test(xmlText(b.xml))) {
+      for (const x of collectParas(b.xml)) blocks.push({ kind: 'p', ...parsePara(x) });
+      stats.tables++;
+    } else blocks.push(b);
+  }
+  blocks = blocks.flatMap((b, i) => {
+    if (b.kind !== 'p') return [b];
+    stats.split += joinSplitLabels(b);
+    const nx = blocks[i + 1];
+    const parts = splitGlued(b, Boolean(nx && nx.kind === 'p' && /<w:numPr>/.test(nx.ppr || '')));
+    stats.split += parts.length - 1;
+    return parts;
+  });
+  stats.labels = materializeLetters(blocks, upperLetterLists(pkg));
+  const changed = stats.tables + stats.split + stats.labels > 0;
+  return { pkg: changed ? buildBody(model, blocks) : pkg, changed, stats };
+}
+
+// ---------------------------------------------------------------- shuffle
+export function rng(seed) {
+  let a = seed >>> 0;
+  return () => { a = (a + 0x6d2b79f5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+}
+function shuffleInPlace(arr, rand) {
+  for (let i = arr.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [arr[i], arr[j]] = [arr[j], arr[i]]; }
+  return arr;
+}
+
+/**
+ * Build one shuffled version. opts: seed, code (new Mã đề), shuffleQuestions, shuffleOptions, shuffleStatements,
+ * stripMarks, renumber, layout. Returns {pkg, report, answers}.
+ */
+export function shuffleVersion(pkg, opts = {}) {
+  pkg = prepareEnglish(pkg).pkg;
+  const model = parseBody(pkg);
+  const analysis = analyze(model);
+  const rand = rng(opts.seed || 1);
+  const report = { pinnedQuestions: [], pinnedOptions: [], sharedParts: [], keptSections: [], questions: 0, notes: [] };
+  const newBlocks = model.blocks.slice();
+  const outBlocks = [];
+  const consumed = new Set();
+  // 1. options (in place, before reordering questions)
+  const optionOut = new Map();
+  for (const part of analysis.parts) {
+    for (const q of part.questions) {
+      report.questions++;
+      if (part.kind === 'mc' && q.options && opts.shuffleOptions !== false) {
+        if (q.flags.some((f) => f === 'complexOptions' || f.startsWith('optionCount') || f === 'optionRefs')) { report.pinnedQuestions.push(q.number); continue; }
+        const idx = q.options.map((_o, i) => i);
+        const free = idx.filter((i) => !RE_PINNED_OPTION.test(q.options[i].content.map(childText).join('')));
+        const order = idx.slice();
+        const shuffled = shuffleInPlace(free.slice(), rand);
+        free.forEach((slot, k) => { order[slot] = shuffled[k]; });
+        if (free.length < 4) report.pinnedOptions.push(q.number);
+        const options = order.map((src, k) => ({ ...q.options[src], labelRun: labelRunFor('ABCD'[k], q.options[src].labelRun) }));
+        // the label run is copied from the source option, so an underline / red / highlight mark travels with it
+        const { paras } = layoutOptions(model, options, model.blocks[q.optionParas[0]], opts.layout || 'auto');
+        optionOut.set(q.optionParas[0], paras);
+        q.optionParas.slice(1).forEach((i) => consumed.add(i));
+      } else if (part.kind === 'tf' && opts.shuffleStatements && q.statements.length === 4) {
+        const stmts = q.statements.map((s) => model.blocks[s.block]);
+        const order = shuffleInPlace([0, 1, 2, 3], rand);
+        order.forEach((src, k) => {
+          const p = { ...stmts[src], children: stmts[src].children.slice() };
+          const li = p.children.findIndex((c) => isRun(c) && RE_STMT.test(runText(c)));
+          if (li >= 0) {
+            const run = p.children[li];
+            const mm = RE_STMT.exec(runText(run));
+            const sp = splitRun(run, mm[0].length);
+            if (sp) { p.children[li] = sp[0].replace(/<w:t\b[^>]*>[^<]*<\/w:t>/, `<w:t>${'abcd'[k]})</w:t>`); if (sp[1]) p.children.splice(li + 1, 0, sp[1]); }
+          }
+          optionOut.set(q.statements[k].block, [p]);
+        });
+      }
+    }
+  }
+  // 2. question order inside each part
+  const questionOrder = new Map();   // start block -> replaced content
+  const groups = [];   // lists of questions that may swap places
+  if (opts.shuffleQuestions !== false) {
+    if (analysis.english) {
+      // per section: independent questions are shuffled, passage / ordering sections keep their order (blank numbers, a-e sentences)
+      for (const sec of analysis.sections) {
+        const mode = (opts.sectionModes && opts.sectionModes[sec.index]) || sec.mode;
+        if (mode === 'shuffle') groups.push(sec.questions);
+        else if (sec.questions.length > 1) report.keptSections.push(`Question ${sec.firstNumber}–${sec.lastNumber}`);
+      }
+    } else {
+      for (const part of analysis.parts) {
+        if (part.questions.length < 2) continue;
+        if (part.questions.some((q) => q.flags.includes('shared'))) { report.sharedParts.push(part.title || '(không tiêu đề)'); continue; }
+        groups.push(part.questions);
+      }
+    }
+  }
+  for (const qs of groups) {
+    if (qs.length < 2) continue;
+    const order = shuffleInPlace(qs.map((_q, i) => i), rand);
+    const segments = qs.map((q) => ({ start: q.start, end: q.ownEnd }));   // the trailing instruction / passage stays where it is
+    order.forEach((src, k) => questionOrder.set(qs[k].start, segments[src]));
+  }
+  const emitRange = (start, end) => {
+    for (let i = start; i < end; i++) {
+      if (consumed.has(i)) continue;
+      if (optionOut.has(i)) outBlocks.push(...optionOut.get(i));
+      else outBlocks.push(newBlocks[i]);
+    }
+  };
+  const byStart = new Map(analysis.parts.flatMap((p) => p.questions).map((q) => [q.start, q]));
+  const firstQ = Math.min(...byStart.keys(), model.blocks.length);
+  emitRange(0, firstQ);
+  let i = firstQ;
+  while (i < model.blocks.length) {
+    const q = byStart.get(i);
+    if (q && questionOrder.has(i)) {
+      const seg = questionOrder.get(i);
+      emitRange(seg.start, seg.end);
+      emitRange(q.ownEnd, q.end);   // this slot's own tail (blank lines, next group's heading) does not move
+    } else emitRange(i, q ? q.end : i + 1);
+    i = q ? q.end : i + 1;
+  }
+  // 3. renumber, code, marks
+  let result = buildBody(model, outBlocks);
+  const stage = parseBody(result);
+  const st = analyze(stage);
+  let counter = 0;
+  for (const part of st.parts) {
+    if (opts.renumber !== 'continuous') counter = 0;
+    for (const q of part.questions) {
+      counter++;
+      q.number = counter;   // the key must use the new numbers
+      const b = stage.blocks[q.start];
+      const ok = renumberQuestionInParagraph(b, counter, { word: opts.labelWord });
+      if (!ok) report.notes.push(`Câu ${counter}: không đổi được số thứ tự`);
+    }
+  }
+  const answers = answersOf(stage, st);
+  if (opts.code) {
+    let replaced = 0;
+    for (const b of stage.blocks) {
+      if (b.kind !== 'p') continue;
+      b.children = b.children.map((c) => {
+        if (!isRun(c)) return c;
+        const t = runText(c);
+        if (!/Mã\s*đề/i.test(t) && !/^\s*\d{2,4}\s*$/.test(t)) return c;
+        return c;
+      });
+      const text = paragraphText(b);
+      if (/Mã\s*đề\s*(thi)?\s*[:：]?\s*\d+/i.test(text)) {
+        // the number may sit in its own run after the words "Mã đề:"
+        let seen = false;
+        b.children = b.children.map((c) => {
+          if (!isRun(c)) return c;
+          const t = runText(c);
+          if (/Mã\s*đề/i.test(t)) {
+            seen = true;
+            if (/\d/.test(t)) { replaced++; return c.replace(/(<w:t\b[^>]*>)([^<]*?)(\d+)([^<]*<\/w:t>)/, (_m, a, bb, _d, e) => `${a}${bb}${opts.code}${e}`); }
+            return c;
+          }
+          if (seen && /^\s*\d+\s*$/.test(t)) { seen = false; replaced++; return c.replace(/(<w:t\b[^>]*>)(\s*)\d+(\s*<\/w:t>)/, `$1$2${opts.code}$3`); }
+          return c;
+        });
+      }
+    }
+    if (!replaced) report.notes.push('không tìm thấy “Mã đề” để đổi số');
+  }
+  if (opts.stripMarks !== false) {
+    for (const part of st.parts) for (const q of part.questions) {
+      const touch = (blockIdx) => {
+        const b = stage.blocks[blockIdx];
+        b.children = b.children.map((c) => (isRun(c) && (RE_OPT.test(runText(c)) || RE_STMT.test(runText(c))) ? stripMarks(c) : c));
+      };
+      q.optionParas.forEach(touch);
+      q.statements.forEach((s) => touch(s.block));
+    }
+  }
+  result = buildBody(stage);
+  return { pkg: result, report, answers };
+}
+
+// ---------------------------------------------------------------- answer tables
+export function answerTable(rowsByVersion) {
+  // rowsByVersion: [{code, answers:[{part,kind,number,value}]}] -> {header, rows, csv}
+  const kinds = ['mc', 'tf', 'short', 'other'];
+  const out = [];
+  for (const v of rowsByVersion) {
+    for (const kind of kinds) {
+      const rows = v.answers.filter((a) => a.kind === kind);
+      if (!rows.length) continue;
+      out.push({ code: v.code, kind, title: rows[0].part, items: rows.map((r) => ({ number: r.number, value: r.value })) });
+    }
+  }
+  const csv = out.map((g) => [g.code, g.title || g.kind, ...g.items.map((i) => `${i.number}:${i.value ?? '?'}`)].join(',')).join('\n');
+  return { groups: out, csv };
+}
+
+const cell = (text, w, bold) => `<w:tc><w:tcPr><w:tcW w:w="${w}" w:type="dxa"/></w:tcPr><w:p><w:pPr><w:spacing w:before="20" w:after="20"/><w:jc w:val="center"/></w:pPr><w:r>${bold ? '<w:rPr><w:b/></w:rPr>' : ''}<w:t xml:space="preserve">${escapeXml(String(text))}</w:t></w:r></w:p></w:tc>`;
+
+/** WordprocessingML for the answer table(s): one table per part, first column = question, then one column per exam code. */
+export function answerTableXml(groups, title = 'BẢNG ĐÁP ÁN', word = 'Câu') {
+  const borders = '<w:tblBorders>' + ['top', 'left', 'bottom', 'right', 'insideH', 'insideV'].map((s) => `<w:${s} w:val="single" w:sz="4" w:space="0" w:color="808080"/>`).join('') + '</w:tblBorders>';
+  let xml = `<w:p><w:pPr><w:pageBreakBefore/><w:jc w:val="center"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t>${escapeXml(title)}</w:t></w:r></w:p>`;
+  const codes = [...new Set(groups.map((g) => String(g.code)))];
+  const sections = new Map();   // kind + title -> {title, kind, byCode: Map(code -> Map(number -> value))}
+  for (const g of groups) {
+    const key = `${g.kind}|${g.title || ''}`;
+    if (!sections.has(key)) sections.set(key, { title: g.title || '', kind: g.kind, byCode: new Map() });
+    const sec = sections.get(key), c = String(g.code);
+    if (!sec.byCode.has(c)) sec.byCode.set(c, new Map());
+    for (const it of g.items) sec.byCode.get(c).set(it.number, it.value);
+  }
+  for (const sec of sections.values()) {
+    const numbers = [...new Set([...sec.byCode.values()].flatMap((m) => [...m.keys()]))].sort((x, y) => parseFloat(x) - parseFloat(y) || String(x).localeCompare(String(y)));
+    const cols = codes.filter((c) => sec.byCode.has(c)), first = 1300, w = Math.min(1800, Math.floor((9000 - first) / Math.max(1, cols.length)));
+    const head = `<w:tr><w:trPr><w:cantSplit/><w:tblHeader/></w:trPr>${cell(word, first, true)}${cols.map((c) => cell(c ? `Mã ${c}` : 'Đáp án', w, true)).join('')}</w:tr>`;
+    const rows = numbers.map((n) => `<w:tr><w:trPr><w:cantSplit/></w:trPr>${cell(n, first, true)}${cols.map((c) => cell(sec.byCode.get(c).get(n) ?? '?', w, false)).join('')}</w:tr>`).join('');
+    if (sec.title) xml += `<w:p><w:pPr><w:keepNext/><w:spacing w:before="120"/></w:pPr><w:r><w:rPr><w:b/></w:rPr><w:t xml:space="preserve">${escapeXml(sec.title)}</w:t></w:r></w:p>`;
+    xml += `<w:tbl><w:tblPr><w:tblW w:w="0" w:type="auto"/>${borders}</w:tblPr><w:tblGrid><w:gridCol w:w="${first}"/>${cols.map(() => `<w:gridCol w:w="${w}"/>`).join('')}</w:tblGrid>${head}${rows}</w:tbl><w:p/>`;
+  }
+  return xml;
+}
+
+/** Append raw body XML (paragraphs/tables) to a package, before the final sectPr. */
+export function appendToBody(pkg, bodyXml) {
+  const model = parseBody(pkg);
+  model.blocks.push(...splitChildren(bodyXml).map((xml) => (tagName(xml) === 'w:p' ? { kind: 'p', ...parsePara(xml) } : { kind: 'other', xml })));
+  return buildBody(model);
+}
+
+/** Insert raw body XML (paragraphs/tables) at the start of a package's body. */
+export function prependToBody(pkg, bodyXml) {
+  const model = parseBody(pkg);
+  model.blocks.unshift(...splitChildren(bodyXml).map((xml) => (tagName(xml) === 'w:p' ? { kind: 'p', ...parsePara(xml) } : { kind: 'other', xml })));
+  return buildBody(model);
+}
+
+/** Questions without a marked answer, each with the index of its paragraph in Word's body.paragraphs (tables count too). */
+export function unansweredQuestions(model, analysis) {
+  const ordinal = [];
+  let n = 0;
+  for (const b of model.blocks) {
+    ordinal.push(n);
+    n += b.kind === 'p' ? 1 : (b.xml.match(/<w:p[ >\/]/g) || []).length;
+  }
+  const rows = answersOf(model, analysis), out = [];
+  let i = 0;
+  for (const part of analysis.parts) {
+    for (const q of part.questions) {
+      const row = rows[i++];
+      if (row && (row.value === null || row.value === undefined)) {
+        const roman = (/^\s*PH[AẦ]N\s+([IVX\d]+)/i.exec(part.title) || [])[1];
+        out.push({ label: `${roman ? 'Phần ' + roman + ' · ' : ''}Câu ${q.number}`, kind: part.kind, number: q.number, block: q.start, paragraph: ordinal[q.start] });
+      }
+    }
+  }
+  return out;
+}

@@ -1,1 +1,146 @@
-import{worksheetBody as j,bodyPackage as A,usedPictures as U,WORKSHEET_STYLES as I,WORKSHEET_THEMES as T}from"../src/worksheet-docx.js";const h=a=>String(a??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]),d=(a,c)=>'<label class="field"><span>'.concat(a,"</span>").concat(c,"</label>"),q=(a,c,t=!1)=>'<label class="switch"><input type="checkbox" id="'.concat(a,'"').concat(t?" checked":"",'><span class="switch-track"></span><span>').concat(c,"</span></label>");let f=null;function z(){return globalThis.Worksheet?Promise.resolve(globalThis.Worksheet):(f=f||new Promise((a,c)=>{const t=document.createElement("script");t.src=new URL("./vendor/worksheet.js",import.meta.url).href,t.onload=()=>globalThis.Worksheet?a(globalThis.Worksheet):c(new Error("th\u01B0 vi\u1EC7n phi\u1EBFu b\xE0i t\u1EADp kh\xF4ng kh\u1EDFi t\u1EA1o \u0111\u01B0\u1EE3c")),t.onerror=()=>{f=null,c(new Error("kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c th\u01B0 vi\u1EC7n phi\u1EBFu b\xE0i t\u1EADp"))},document.head.appendChild(t)}),f)}function K(a,c){a.innerHTML='\n    <div class="notice">T\u1EA1o phi\u1EBFu b\xE0i t\u1EADp c\xF3 \u0111\xE1p \xE1n: To\xE1n, Ti\u1EBFng Vi\u1EC7t, Ti\u1EBFng Anh l\u1EDBp 1\u20135 v\xE0 phi\u1EBFu cho b\xE9 m\u1EA7m non (t\u1EADp t\xF4, \u0111\u1EBFm, n\u1ED1i, t\xF4 m\xE0u). S\u1ED1 li\u1EC7u v\xE0 \u0111\xE1p \xE1n t\u1EF1 t\xEDnh; c\xF9ng \u201Cm\xE3 \u0111\u1EC1\u201D th\xEC ra c\xF9ng m\u1ED9t phi\u1EBFu. C\xF4ng th\u1EE9c l\xE0 c\xF4ng th\u1EE9c Word, s\u1EEDa \u0111\u01B0\u1EE3c.</div>\n    <fieldset><legend>Phi\u1EBFu</legend>\n      <div class="grid2">\n        '.concat(d("M\xF4n",'<select id="w-subject"><option value="math">To\xE1n</option><option value="vi">Ti\u1EBFng Vi\u1EC7t</option><option value="en">Ti\u1EBFng Anh</option><option value="pre">M\u1EA7m non (b\xE9 4\u20136 tu\u1ED5i)</option></select>'),"\n        ").concat(d("L\u1EDBp",'<select id="w-grade">'+[1,2,3,4,5].map(e=>'<option value="'.concat(e,'">L\u1EDBp ').concat(e,"</option>")).join("")+"</select>"),'\n      </div>\n      <div class="grid2">\n        ').concat(d("M\u1EE9c \u0111\u1ED9",'<select id="w-level"><option value="0">C\u01A1 b\u1EA3n</option><option value="1">N\xE2ng cao</option></select>'),"\n        ").concat(d("\u0110\u1ED9 d\xE0i",'<select id="w-size"><option value="short">Ng\u1EAFn (1 trang)</option><option value="normal" selected>V\u1EEBa</option><option value="long">D\xE0i</option></select>'),'\n      </div>\n      <div class="grid2">\n        ').concat(d("Ki\u1EC3u in",'<select id="w-color"><option value="color">M\xE0u</option><option value="bw">\u0110en tr\u1EAFng (ti\u1EBFt ki\u1EC7m m\u1EF1c)</option></select>'),"\n        ").concat(d("C\u1EE1 ch\u1EEF",'<select id="w-font">'+[12,13,14,16].map(e=>'<option value="'.concat(e,'"').concat(e===14?" selected":"",">").concat(e," pt</option>")).join("")+"</select>"),'\n      </div>\n      <div class="grid2">\n        ').concat(d("M\xE3 \u0111\u1EC1 (seed)",'<input type="number" id="w-seed" min="1" step="1">'),"\n        ").concat(d("S\u1ED1 m\xE3 \u0111\u1EC1",'<select id="w-versions"><option>1</option><option>2</option><option>3</option><option>4</option></select>'),"\n      </div>\n      ").concat(d("Ti\xEAu \u0111\u1EC1 (\u0111\u1EC3 tr\u1ED1ng = t\u1EF1 \u0111\u1EB7t)",'<input type="text" id="w-title" placeholder="vd. PHI\u1EBEU B\xC0I T\u1EACP CU\u1ED0I TU\u1EA6N 5">'),"\n      ").concat(d("Tr\u01B0\u1EDDng (t\xF9y ch\u1ECDn)",'<input type="text" id="w-school" placeholder="vd. Tr\u01B0\u1EDDng Ti\u1EC3u h\u1ECDc ...">'),'\n      <div class="field"><span>M\xE0u ch\u1EE7 \u0111\u1EA1o (theme): <b id="w-theme-name">').concat(h(T[0][1]),'</b></span>\n        <input type="hidden" id="w-theme" value="auto">\n        <div class="theme-grid" id="w-theme-grid" role="radiogroup" aria-label="M\xE0u ch\u1EE7 \u0111\u1EA1o">').concat(T.map(([e,n,o],s)=>'<button type="button" class="theme-dot'.concat(s?"":" on",'" data-v="').concat(e,'" data-n="').concat(h(n),'" role="radio" aria-checked="').concat(s?"false":"true",'" title="').concat(h(n),'" style="--c:').concat(o?"#"+o:"transparent",'"></button>')).join(""),"</div>\n      </div>\n      ").concat(d("Phong c\xE1ch tr\xECnh b\xE0y",'<select id="w-style">'+I.map(([e,n])=>'<option value="'.concat(e,'">').concat(h(n),"</option>")).join("")+"</select>"),"\n      ").concat(q("w-answers","Th\xEAm trang \u0111\xE1p \xE1n",!0),'\n    </fieldset>\n    <fieldset><legend>D\u1EA1ng b\xE0i</legend>\n      <div class="btns two"><button class="secondary" id="w-default">G\u1EE3i \xFD m\u1EB7c \u0111\u1ECBnh</button><button class="secondary" id="w-all">Ch\u1ECDn h\u1EBFt</button></div>\n      <div id="w-topics" class="muted">\u0110ang t\u1EA3i\u2026</div>\n      <div class="hint" id="w-skipped"></div>\n    </fieldset>\n    <div class="btns two"><button class="primary" id="w-insert">Ch\xE8n v\xE0o Word</button><button class="secondary" id="w-new">T\u1EA1o t\xE0i li\u1EC7u m\u1EDBi</button><button class="secondary" id="w-reroll">\u0110\u1ED5i \u0111\u1EC1 (m\xE3 \u0111\u1EC1 kh\xE1c)</button></div>\n    <div id="w-out"></div>');const t=e=>a.querySelector("#"+e);let p=null,b=[];const L=()=>{const e={};for(const n of Object.values(p.lib.items))e[n.id]=n.cp;return e},v=()=>t("w-theme")&&t("w-theme").value==="bw"?"bw":t("w-color").value,x=()=>t("w-level").selectedOptions[0].textContent;function P(){const e=t("w-subject").value==="pre",n=t("w-grade"),o=t("w-level"),s=n.dataset.pre==="1";e!==s&&(n.dataset.pre=e?"1":"",n.innerHTML=e?'<option value="0">M\u1EA7m non</option>':[1,2,3,4,5].map(l=>'<option value="'.concat(l,'">L\u1EDBp ').concat(l,"</option>")).join(""),o.innerHTML=e?'<option value="0">B\xE9 4 \u2013 5 tu\u1ED5i</option><option value="1">B\xE9 5 \u2013 6 tu\u1ED5i</option>':'<option value="0">C\u01A1 b\u1EA3n</option><option value="1">N\xE2ng cao</option>',t("w-font").value=e?"16":"14")}async function E(){const e=t("w-subject").value,n=Number(t("w-grade").value),o=Number(t("w-level").value),s=p.topicsFor(e,n,v()),l=new Set(p.defaultTopics(e,n,v()));b=[];const r=[];for(const i of s){let u=!1;try{const m=p.generate({subject:e,grade:n,level:o,color:v(),seed:1,size:"short",topics:[i.id],answers:!1});u=m.sheets[0].blocks.length>0&&j(m,{subject:e,grade:n,cps:L(),answers:!1}).skipped.length===0}catch{u=!1}u?b.push({...i,def:l.has(i.id)}):r.push(i.name)}t("w-topics").innerHTML=b.map(i=>'<label class="inline"><input type="checkbox" data-t="'.concat(h(i.id),'"').concat(i.def?" checked":"","> ").concat(h(i.name),"</label>")).join("")||"Kh\xF4ng c\xF3 d\u1EA1ng b\xE0i ph\xF9 h\u1EE3p.",t("w-skipped").textContent=r.length?"Ch\u01B0a chuy\u1EC3n \u0111\u01B0\u1EE3c sang Word: ".concat(r.join("; "),"."):""}const H=()=>[...a.querySelectorAll("#w-topics input[data-t]:checked")].map(e=>e.dataset.t),C=()=>{t("w-seed").value=String(Math.floor(Math.random()*9e5)+1e5)},$=new Map;async function N(e){if($.has(e))return $.get(e);const n=await(await fetch(new URL("./vendor/twemoji/".concat(e,".svg"),import.meta.url))).text(),o=new Image;await new Promise((i,u)=>{o.onload=i,o.onerror=u,o.src="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(n.replace("<svg ",'<svg width="96" height="96" '))});const s=document.createElement("canvas");s.width=s.height=96,s.getContext("2d").drawImage(o,0,0,96,96);const l=atob(s.toDataURL("image/png").split(",")[1]),r=new Uint8Array(l.length);for(let i=0;i<l.length;i++)r[i]=l.charCodeAt(i);return $.set(e,r),r}async function W(){const e=t("w-subject").value,n=Number(t("w-grade").value),o=H();if(!o.length)throw new Error("Ch\u1ECDn \xEDt nh\u1EA5t m\u1ED9t d\u1EA1ng b\xE0i.");const s=Number(t("w-versions").value),l=p.generate({subject:e,grade:n,level:Number(t("w-level").value),color:v(),seed:Number(t("w-seed").value)||1,size:t("w-size").value,topics:o,versions:s,answers:!0}),r=T.find(w=>w[0]===t("w-theme").value),i=r&&r[2]?"#"+r[2]:(p.SUBJECTS[e].palette||{}).main||"#1D6FB8",u=Number(t("w-font").value),m=L(),S=new Map,k=[];for(const w of U(l,m))try{const y=await N(w),g="rIdTw".concat(k.length+1);k.push({rid:g,png:y}),S.set(w,{rid:g,pt:u*2.1})}catch{}return{...j(l,{subject:e,grade:n,iconCode:(w,y)=>{try{const g=/\\begin\{tikzpicture\}\[[^\n]*\]\n([\s\S]*?)\n\\end\{tikzpicture\}/.exec(p.art.definition(w,y));return g?g[1]:null}catch{return null}},gradeLabel:e==="pre"?x():"",color:v(),fontPt:u,answers:t("w-answers").checked,cps:m,accent:i,style:t("w-style").value,pics:S,title:t("w-title").value.trim(),school:t("w-school").value.trim()}),images:k}}async function M(e){t("w-out").textContent="\u0110ang t\u1EA1o phi\u1EBFu\u2026";try{const{body:n,count:o,images:s}=await W(),l=A(n,s);e?await c.openAsNewDocument(l):await c.replaceSelection(l),t("w-out").innerHTML='<span class="ok">\u0110\xE3 '.concat(e?"t\u1EA1o t\xE0i li\u1EC7u m\u1EDBi":"ch\xE8n v\xE0o Word",": ").concat(o," c\xE2u.</span>")}catch(n){t("w-out").innerHTML='<span class="bad">L\u1ED7i: '.concat(h(n.message),"</span>")}}t("w-insert").addEventListener("click",()=>M(!1)),t("w-new").addEventListener("click",()=>M(!0)),t("w-reroll").addEventListener("click",()=>{C(),t("w-out").innerHTML='<span class="ok">\u0110\xE3 \u0111\u1ED5i m\xE3 \u0111\u1EC1; b\u1EA5m Ch\xE8n \u0111\u1EC3 t\u1EA1o phi\u1EBFu m\u1EDBi.</span>'}),t("w-default").addEventListener("click",()=>a.querySelectorAll("#w-topics input[data-t]").forEach(e=>{e.checked=b.find(n=>n.id===e.dataset.t)?.def})),t("w-all").addEventListener("click",()=>a.querySelectorAll("#w-topics input[data-t]").forEach(e=>{e.checked=!0}));for(const e of["w-subject","w-grade","w-level","w-color","w-theme"])t(e).addEventListener("change",()=>{e==="w-subject"&&P(),p&&E()});t("w-theme-grid").addEventListener("click",e=>{const n=e.target.closest(".theme-dot");if(n){for(const o of a.querySelectorAll(".theme-dot"))o.classList.toggle("on",o===n),o.setAttribute("aria-checked",o===n?"true":"false");t("w-theme").value=n.dataset.v,t("w-theme-name").textContent=n.dataset.n,t("w-theme").dispatchEvent(new Event("change"))}}),C(),z().then(e=>(p=e,E())).catch(e=>{t("w-topics").innerHTML='<span class="bad">'.concat(h(e.message),"</span>")})}export{K as mountWorksheet};
+// "Phiếu bài tập" tab: primary-school worksheets (Toán, Tiếng Việt, Tiếng Anh) generated by the worksheet library
+// (latex_bank/worksheet-lib) and written to Word as native content: numbered exercises, Word equations, answer page.
+import { worksheetBody, bodyPackage, usedPictures, WORKSHEET_STYLES, WORKSHEET_THEMES } from '../src/worksheet-docx.js';
+
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const field = (label, inner) => `<label class="field"><span>${label}</span>${inner}</label>`;
+const sw = (id, label, checked = false) => `<label class="switch"><input type="checkbox" id="${id}"${checked ? ' checked' : ''}><span class="switch-track"></span><span>${label}</span></label>`;
+
+let libPromise = null;
+function loadLib() {
+  if (globalThis.Worksheet) return Promise.resolve(globalThis.Worksheet);
+  libPromise = libPromise || new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = new URL('./vendor/worksheet.js', import.meta.url).href;
+    s.onload = () => (globalThis.Worksheet ? resolve(globalThis.Worksheet) : reject(new Error('thư viện phiếu bài tập không khởi tạo được')));
+    s.onerror = () => { libPromise = null; reject(new Error('không tải được thư viện phiếu bài tập')); };
+    document.head.appendChild(s);
+  });
+  return libPromise;
+}
+
+export function mountWorksheet(root, io) {
+  root.innerHTML = `
+    <div class="notice">Tạo phiếu bài tập có đáp án: Toán, Tiếng Việt, Tiếng Anh lớp 1–5 và phiếu cho bé mầm non (tập tô, đếm, nối, tô màu). Số liệu và đáp án tự tính; cùng “mã đề” thì ra cùng một phiếu. Công thức là công thức Word, sửa được.</div>
+    <fieldset><legend>Phiếu</legend>
+      <div class="grid2">
+        ${field('Môn', '<select id="w-subject"><option value="math">Toán</option><option value="vi">Tiếng Việt</option><option value="en">Tiếng Anh</option><option value="pre">Mầm non (bé 4–6 tuổi)</option></select>')}
+        ${field('Lớp', '<select id="w-grade">' + [1, 2, 3, 4, 5].map((g) => `<option value="${g}">Lớp ${g}</option>`).join('') + '</select>')}
+      </div>
+      <div class="grid2">
+        ${field('Mức độ', '<select id="w-level"><option value="0">Cơ bản</option><option value="1">Nâng cao</option></select>')}
+        ${field('Độ dài', '<select id="w-size"><option value="short">Ngắn (1 trang)</option><option value="normal" selected>Vừa</option><option value="long">Dài</option></select>')}
+      </div>
+      <div class="grid2">
+        ${field('Kiểu in', '<select id="w-color"><option value="color">Màu</option><option value="bw">Đen trắng (tiết kiệm mực)</option></select>')}
+        ${field('Cỡ chữ', '<select id="w-font">' + [12, 13, 14, 16].map((n) => `<option value="${n}"${n === 14 ? ' selected' : ''}>${n} pt</option>`).join('') + '</select>')}
+      </div>
+      <div class="grid2">
+        ${field('Mã đề (seed)', '<input type="number" id="w-seed" min="1" step="1">')}
+        ${field('Số mã đề', '<select id="w-versions"><option>1</option><option>2</option><option>3</option><option>4</option></select>')}
+      </div>
+      ${field('Tiêu đề (để trống = tự đặt)', '<input type="text" id="w-title" placeholder="vd. PHIẾU BÀI TẬP CUỐI TUẦN 5">')}
+      ${field('Trường (tùy chọn)', '<input type="text" id="w-school" placeholder="vd. Trường Tiểu học ...">')}
+      <div class="field"><span>Màu chủ đạo (theme): <b id="w-theme-name">${esc(WORKSHEET_THEMES[0][1])}</b></span>
+        <input type="hidden" id="w-theme" value="auto">
+        <div class="theme-grid" id="w-theme-grid" role="radiogroup" aria-label="Màu chủ đạo">${WORKSHEET_THEMES.map(([v, l, c], k) => `<button type="button" class="theme-dot${k ? '' : ' on'}" data-v="${v}" data-n="${esc(l)}" role="radio" aria-checked="${k ? 'false' : 'true'}" title="${esc(l)}" style="--c:${c ? '#' + c : 'transparent'}"></button>`).join('')}</div>
+      </div>
+      ${field('Phong cách trình bày', '<select id="w-style">' + WORKSHEET_STYLES.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('') + '</select>')}
+      ${sw('w-answers', 'Thêm trang đáp án', true)}
+    </fieldset>
+    <fieldset><legend>Dạng bài</legend>
+      <div class="btns two"><button class="secondary" id="w-default">Gợi ý mặc định</button><button class="secondary" id="w-all">Chọn hết</button></div>
+      <div id="w-topics" class="muted">Đang tải…</div>
+      <div class="hint" id="w-skipped"></div>
+    </fieldset>
+    <div class="btns two"><button class="primary" id="w-insert">Chèn vào Word</button><button class="secondary" id="w-new">Tạo tài liệu mới</button><button class="secondary" id="w-reroll">Đổi đề (mã đề khác)</button></div>
+    <div id="w-out"></div>`;
+  const $ = (id) => root.querySelector('#' + id);
+  let W = null, available = [];   // available: topics that can be written to Word
+
+  const cps = () => { const m = {}; for (const e of Object.values(W.lib.items)) m[e.id] = e.cp; return m; };
+  const mode = () => ($('w-theme') && $('w-theme').value === 'bw' ? 'bw' : $('w-color').value);   // theme "Đen trắng" = black and white print
+  const levelLabel = () => $('w-level').selectedOptions[0].textContent;
+  function syncSubject() {   // preschool has no grades: one "grade" and two age levels
+    const pre = $('w-subject').value === 'pre', g = $('w-grade'), l = $('w-level'), wasPre = g.dataset.pre === '1';
+    if (pre === wasPre) return;
+    g.dataset.pre = pre ? '1' : '';
+    g.innerHTML = pre ? '<option value="0">Mầm non</option>' : [1, 2, 3, 4, 5].map((n) => `<option value="${n}">Lớp ${n}</option>`).join('');
+    l.innerHTML = pre ? '<option value="0">Bé 4 – 5 tuổi</option><option value="1">Bé 5 – 6 tuổi</option>' : '<option value="0">Cơ bản</option><option value="1">Nâng cao</option>';
+    $('w-font').value = pre ? '16' : '14';
+  }
+
+  async function refreshTopics() {
+    const subject = $('w-subject').value, grade = Number($('w-grade').value), level = Number($('w-level').value);
+    const all = W.topicsFor(subject, grade, mode());
+    const defaults = new Set(W.defaultTopics(subject, grade, mode()));
+    available = []; const skipped = [];
+    for (const t of all) {
+      let ok = false;
+      try {
+        const r = W.generate({ subject, grade, level, color: mode(), seed: 1, size: 'short', topics: [t.id], answers: false });
+        ok = r.sheets[0].blocks.length > 0 && worksheetBody(r, { subject, grade, cps: cps(), answers: false }).skipped.length === 0;
+      } catch { ok = false; }
+      if (ok) available.push({ ...t, def: defaults.has(t.id) }); else skipped.push(t.name);
+    }
+    $('w-topics').innerHTML = available.map((t) => `<label class="inline"><input type="checkbox" data-t="${esc(t.id)}"${t.def ? ' checked' : ''}> ${esc(t.name)}</label>`).join('') || 'Không có dạng bài phù hợp.';
+    $('w-skipped').textContent = skipped.length ? `Chưa chuyển được sang Word: ${skipped.join('; ')}.` : '';
+  }
+  const chosen = () => [...root.querySelectorAll('#w-topics input[data-t]:checked')].map((c) => c.dataset.t);
+  const newSeed = () => { $('w-seed').value = String(Math.floor(Math.random() * 900000) + 100000); };
+
+  const pngCache = new Map();
+  async function twemojiPng(cp) {   // SVG of the Twemoji set -> transparent PNG (96 px)
+    if (pngCache.has(cp)) return pngCache.get(cp);
+    const svg = await (await fetch(new URL(`./vendor/twemoji/${cp}.svg`, import.meta.url))).text();
+    const img = new Image();
+    await new Promise((res, rej) => { img.onload = res; img.onerror = rej; img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg.replace('<svg ', '<svg width="96" height="96" ')); });
+    const c = document.createElement('canvas'); c.width = c.height = 96;
+    c.getContext('2d').drawImage(img, 0, 0, 96, 96);
+    const bin = atob(c.toDataURL('image/png').split(',')[1]), png = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) png[i] = bin.charCodeAt(i);
+    pngCache.set(cp, png);
+    return png;
+  }
+
+  async function build() {
+    const subject = $('w-subject').value, grade = Number($('w-grade').value);
+    const topics = chosen();
+    if (!topics.length) throw new Error('Chọn ít nhất một dạng bài.');
+    const versions = Number($('w-versions').value);
+    const r = W.generate({ subject, grade, level: Number($('w-level').value), color: mode(), seed: Number($('w-seed').value) || 1, size: $('w-size').value, topics, versions, answers: true });
+    const theme = WORKSHEET_THEMES.find((t) => t[0] === $('w-theme').value), accent = theme && theme[2] ? '#' + theme[2] : (W.SUBJECTS[subject].palette || {}).main || '#1D6FB8';
+    const fontPt = Number($('w-font').value), map = cps();
+    const pics = new Map(), images = [];
+    for (const cp of usedPictures(r, map)) {   // Twemoji pictures used by this sheet
+      try { const png = await twemojiPng(cp); const rid = `rIdTw${images.length + 1}`; images.push({ rid, png }); pics.set(cp, { rid, pt: fontPt * 2.1 }); } catch { /* falls back to the emoji character */ }
+    }
+    const iconCode = (id, outline) => { try { const m = /\\begin\{tikzpicture\}\[[^\n]*\]\n([\s\S]*?)\n\\end\{tikzpicture\}/.exec(W.art.definition(id, outline)); return m ? m[1] : null; } catch { return null; } };   // the generator's TikZ line drawings
+    const res = worksheetBody(r, { subject, grade, iconCode, gradeLabel: subject === 'pre' ? levelLabel() : '', color: mode(), fontPt, answers: $('w-answers').checked, cps: map, accent, style: $('w-style').value, pics, title: $('w-title').value.trim(), school: $('w-school').value.trim() });
+    return { ...res, images };
+  }
+  async function write(newDoc) {
+    $('w-out').textContent = 'Đang tạo phiếu…';
+    try {
+      const { body, count, images } = await build();
+      const pkg = bodyPackage(body, images);
+      if (newDoc) await io.openAsNewDocument(pkg); else await io.replaceSelection(pkg);
+      $('w-out').innerHTML = `<span class="ok">Đã ${newDoc ? 'tạo tài liệu mới' : 'chèn vào Word'}: ${count} câu.</span>`;
+    } catch (e) { $('w-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
+  }
+
+  $('w-insert').addEventListener('click', () => write(false));
+  $('w-new').addEventListener('click', () => write(true));
+  $('w-reroll').addEventListener('click', () => { newSeed(); $('w-out').innerHTML = '<span class="ok">Đã đổi mã đề; bấm Chèn để tạo phiếu mới.</span>'; });
+  $('w-default').addEventListener('click', () => root.querySelectorAll('#w-topics input[data-t]').forEach((c) => { c.checked = available.find((t) => t.id === c.dataset.t)?.def; }));
+  $('w-all').addEventListener('click', () => root.querySelectorAll('#w-topics input[data-t]').forEach((c) => { c.checked = true; }));
+  for (const id of ['w-subject', 'w-grade', 'w-level', 'w-color', 'w-theme']) $(id).addEventListener('change', () => { if (id === 'w-subject') syncSubject(); if (W) refreshTopics(); });
+  $('w-theme-grid').addEventListener('click', (ev) => {
+    const b = ev.target.closest('.theme-dot'); if (!b) return;
+    for (const d of root.querySelectorAll('.theme-dot')) { d.classList.toggle('on', d === b); d.setAttribute('aria-checked', d === b ? 'true' : 'false'); }
+    $('w-theme').value = b.dataset.v; $('w-theme-name').textContent = b.dataset.n;
+    $('w-theme').dispatchEvent(new Event('change'));
+  });
+  newSeed();
+  loadLib().then((lib) => { W = lib; return refreshTopics(); }).catch((e) => { $('w-topics').innerHTML = `<span class="bad">${esc(e.message)}</span>`; });
+}

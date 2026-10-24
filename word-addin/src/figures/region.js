@@ -1,1 +1,164 @@
-import{compile as at}from"./expr.js";import{niceStep as ot,numLatex as P}from"./svgkit.js";import{sceneToSvg as lt,labelBox as st}from"./scene.js";import{snap as j}from"./analysis.js";const rt=/(<=|>=|≤|≥|=<|=>|<|>|=)/;function ht(r){const n=rt.exec(r.replace(/\s+/g,""));if(!n)throw new Error("Thi\u1EBFu d\u1EA5u so s\xE1nh trong \u201C".concat(r,"\u201D"));const u=r.replace(/\s+/g,""),[d,l]=[u.slice(0,n.index),u.slice(n.index+n[0].length)],$={"<=":"\u2264","=<":"\u2264","\u2264":"\u2264",">=":"\u2265","=>":"\u2265","\u2265":"\u2265","<":"<",">":">","=":"="}[n[0]],b=at(d||"0",["x","y"]),e=at(l||"0",["x","y"]),a=(h,f)=>b(h,f)-e(h,f),s=a(0,0),i=a(1,0)-s,y=a(0,1)-s;for(const[h,f]of[[2,3],[-1.5,4],[5,-2]])if(Math.abs(a(h,f)-(i*h+y*f+s))>1e-6)throw new Error("\u201C".concat(r,"\u201D kh\xF4ng ph\u1EA3i b\u1EA5t ph\u01B0\u01A1ng tr\xECnh b\u1EADc nh\u1EA5t hai \u1EA9n"));if(Math.abs(i)<1e-12&&Math.abs(y)<1e-12)throw new Error("\u201C".concat(r,"\u201D kh\xF4ng ch\u1EE9a x, y"));return{a:j(i),b:j(y),c:j(s),rel:$,src:r}}function xt(r,n){const u=n.rel==="\u2264"||n.rel==="<"?-1:1,d=([$,b])=>u*(n.a*$+n.b*b+n.c),l=[];for(let $=0;$<r.length;$++){const b=r[$],e=r[($+1)%r.length],a=d(b),s=d(e);if(a>=-1e-12&&l.push(b),a>1e-12&&s<-1e-12||a<-1e-12&&s>1e-12){const i=a/(a-s);l.push([b[0]+(e[0]-b[0])*i,b[1]+(e[1]-b[1])*i])}}return l}function bt(r,n={}){const u=r.filter(t=>t.trim()).map(ht);if(!u.length)throw new Error("Nh\u1EADp \xEDt nh\u1EA5t m\u1ED9t b\u1EA5t ph\u01B0\u01A1ng tr\xECnh");const d=[[0,0]],l=[...u,{a:1,b:0,c:0},{a:0,b:1,c:0}];for(let t=0;t<l.length;t++)for(let o=t+1;o<l.length;o++){const g=l[t].a*l[o].b-l[o].a*l[t].b;Math.abs(g)>1e-12&&d.push([(l[t].b*l[o].c-l[o].b*l[t].c)/g,(l[o].a*l[t].c-l[t].a*l[o].c)/g])}for(const t of u)Math.abs(t.a)>1e-12&&d.push([-t.c/t.a,0]),Math.abs(t.b)>1e-12&&d.push([0,-t.c/t.b]);const $=d.map(t=>t[0]),b=d.map(t=>t[1]);let e=n.xmin??Math.min(...$),a=n.xmax??Math.max(...$),s=n.ymin??Math.min(...b),i=n.ymax??Math.max(...b);if(n.xmin===void 0){const t=Math.max(1,(a-e)*.25);e-=t,a+=t}if(n.ymin===void 0){const t=Math.max(1,(i-s)*.25);s-=t,i+=t}const y=n.width||420,h=n.height||340,f=34,z=22,C=16,B=26,m=t=>f+(t-e)/(a-e)*(y-f-z),M=t=>h-B-(t-s)/(i-s)*(h-C-B);let v=[[e,s],[a,s],[a,i],[e,i]];for(const t of u)t.rel!=="="&&(v=xt(v,t));const w=[],A=ot(a-e,9),D=ot(i-s,7);if(n.grid!==!1){for(let t=Math.ceil(e/A)*A;t<=a+1e-9;t+=A)w.push({t:"line",x1:m(t),y1:M(s),x2:m(t),y2:M(i),w:.5,color:"#dcdcdc"});for(let t=Math.ceil(s/D)*D;t<=i+1e-9;t+=D)w.push({t:"line",x1:m(e),y1:M(t),x2:m(a),y2:M(t),w:.5,color:"#dcdcdc"})}const U=n.mode||"hatch";if(v.length>=3&&U!=="hatch"&&w.push({t:"poly",pts:v.map(t=>[m(t[0]),M(t[1])]),closed:!0,fill:"#9ec9f5",sw:.1,color:"#9ec9f5",opacity:.55}),U==="hatch"){const o="#8a8a8a",g=[[f,C],[y-z,C],[y-z,h-B],[f,h-B]],L=v.length>=3?v.map(E=>[m(E[0]),M(E[1])]):[];for(let E=-h;E<y+h;E+=9){const x=it(E,g);if(!x)continue;const q=L.length?ft(x,L):null;q?(ct(x[0],q[0])>1&&w.push({t:"line",x1:x[0][0],y1:x[0][1],x2:q[0][0],y2:q[0][1],w:.6,color:o}),ct(q[1],x[1])>1&&w.push({t:"line",x1:q[1][0],y1:q[1][1],x2:x[1][0],y2:x[1][1],w:.6,color:o})):w.push({t:"line",x1:x[0][0],y1:x[0][1],x2:x[1][0],y2:x[1][1],w:.6,color:o})}}const S=e<=0&&a>=0?m(0):m(e),W=s<=0&&i>=0?M(0):M(s),K=[],Q=(t,o,g,L,E)=>{const x=st(t,E),q=L==="l"?o:L==="r"?o-x.w:o-x.w/2;K.push([q-2,g-x.h/2-2,q+x.w+2,g+x.h/2+2])};w.push({t:"line",x1:m(e)-4,y1:W,x2:m(a)+8,y2:W,w:1.3,arrow:!0},{t:"line",x1:S,y1:M(s)+4,x2:S,y2:M(i)-8,w:1.3,arrow:!0}),w.push({t:"label",latex:"x",x:m(a)+6,y:W+14,size:15},{t:"label",latex:"y",x:S+12,y:M(i)-6,size:15},{t:"label",latex:"O",x:S-9,y:W+12,size:14}),v.some(t=>Math.abs(t[0])<1e-9&&Math.abs(t[1])<1e-9)&&w.pop();for(let t=Math.ceil(e/A)*A;t<=a+1e-9;t+=A){const o=j(Math.round(t*1e6)/1e6);Math.abs(o)<1e-9||(w.push({t:"line",x1:m(o),y1:W-3,x2:m(o),y2:W+3,w:1},{t:"label",latex:P(o),x:m(o),y:W+15,size:12}),Q(P(o),m(o),W+15,"c",12))}for(let t=Math.ceil(s/D)*D;t<=i+1e-9;t+=D){const o=j(Math.round(t*1e6)/1e6);Math.abs(o)<1e-9||(w.push({t:"line",x1:S-3,y1:M(o),x2:S+3,y2:M(o),w:1},{t:"label",latex:P(o),x:S-7,y:M(o),size:12,anchor:"r"}),Q(P(o),S-7,M(o),"r",12))}if(u.forEach((t,o)=>{const g=[];Math.abs(t.b)>1e-12?g.push([e,-(t.a*e+t.c)/t.b],[a,-(t.a*a+t.c)/t.b]):g.push([-t.c/t.a,s],[-t.c/t.a,i]);const L=it(null,[[f,C],[y-z,C],[y-z,h-B],[f,h-B]],[[m(g[0][0]),M(g[0][1])],[m(g[1][0]),M(g[1][1])]]);if(L&&(w.push({t:"line",x1:L[0][0],y1:L[0][1],x2:L[1][0],y2:L[1][1],w:1.8,color:"#1a3d8f",dash:t.rel==="<"||t.rel===">"?"6 4":""}),n.labelLines!==!1)){const E=Math.min(y-z-14,Math.max(f+14,L[1][0]-4)),x=Math.min(h-B-10,Math.max(C+12,L[1][1]-12));w.push({t:"label",latex:"(d_{".concat(o+1,"})"),x:E,y:x,size:13,anchor:"r",halo:!0}),Q("(d_{".concat(o+1,"})"),E,x,"r",13)}}),v.length>=3&&n.vertices!==!1){const t=n.names||"ABCDEFGH".split("");let o=0;const g=v.reduce((c,p)=>c+p[0],0)/v.length,L=v.reduce((c,p)=>c+p[1],0)/v.length,E=w.filter(c=>c.t==="line"&&c.w>=1.5),x=c=>K.some(p=>!(c[2]<p[0]||c[0]>p[2]||c[3]<p[1]||c[1]>p[3])),q=c=>E.some(p=>{for(let k=0;k<=1;k+=.1){const R=p.x1+(p.x2-p.x1)*k,T=p.y1+(p.y2-p.y1)*k;if(R>c[0]&&R<c[2]&&T>c[1]&&T<c[3])return!0}return!1}),X=[];for(const c of v){const p=u.filter(R=>Math.abs(R.a*c[0]+R.b*c[1]+R.c)<1e-6*Math.max(1,Math.abs(R.c))).length,k=Math.abs(c[0]-e)<1e-9||Math.abs(c[0]-a)<1e-9||Math.abs(c[1]-s)<1e-9||Math.abs(c[1]-i)<1e-9;p<2&&k||p<1||X.push(c)}for(const c of X){const p=t[o++%t.length],k="".concat(p,"(").concat(P(j(c[0])),";").concat(P(j(c[1])),")"),R=12;w.push({t:"dot",x:m(c[0]),y:M(c[1]),r:3});const T=st(k,R),Y=[m(c[0])-m(g),M(c[1])-M(L)],Z=Math.atan2(Y[1],Y[0]);let F=null;for(const G of[0,.5,-.5,1,-1,1.6,-1.6,2.4,-2.4,Math.PI]){const H=Z+G,N=10+(Math.abs(G)>2?6:0),_=m(c[0])+Math.cos(H)*N,tt=M(c[1])+Math.sin(H)*N,O=Math.cos(H)>.35?"l":Math.cos(H)<-.35?"r":"c",et=O==="l"?_:O==="r"?_-T.w:_-T.w/2,J=Math.sin(H)>=0?tt:tt-T.h,I=[et-2,J-2,et+T.w+2,J+T.h+2],nt=I[0]>=f-6&&I[2]<=y-z+14&&I[1]>=C-8&&I[3]<=h-B+14;if(nt&&!x(I)&&!q(I)){F={box:I,x:_,y:J+T.h/2,anchor:O};break}!F&&nt&&!x(I)&&(F={box:I,x:_,y:J+T.h/2,anchor:O})}if(!F){const G=Z,H=m(c[0])+Math.cos(G)*12,N=M(c[1])+Math.sin(G)*12;F={box:[H,N,H+T.w,N+T.h],x:H,y:N,anchor:Math.cos(G)>0?"l":"r"}}K.push(F.box),w.push({t:"label",latex:k,x:F.x,y:F.y,size:R,anchor:F.anchor,halo:!0})}}const V={width:y,height:h,items:w};return{scene:V,svg:lt(V),width:y,height:h,polygon:v,empty:v.length<3,constraints:u}}const ct=(r,n)=>Math.hypot(r[0]-n[0],r[1]-n[1]);function it(r,n,u){const[d,l]=n[0],[$,b]=n[2];let e,a;u?(e=u[0],a=u[1]):(e=[r-l,l],a=[r-b,b]);let s=-1e9,i=1e9;const y=a[0]-e[0],h=a[1]-e[1],f=(z,C)=>{if(Math.abs(z)<1e-12)return C>=0;const B=C/z;return z<0?s=Math.max(s,B):i=Math.min(i,B),s<=i};return f(-y,e[0]-d)&&f(y,$-e[0])&&f(-h,e[1]-l)&&f(h,b-e[1])?[[e[0]+y*s,e[1]+h*s],[e[0]+y*i,e[1]+h*i]]:null}function ft(r,n){let u=0,d=1;const l=[r[1][0]-r[0][0],r[1][1]-r[0][1]],b=n.reduce((e,a,s)=>{const i=n[(s+1)%n.length];return e+(a[0]*i[1]-i[0]*a[1])},0)>0?1:-1;for(let e=0;e<n.length;e++){const a=n[e],s=n[(e+1)%n.length],i=-(s[1]-a[1])*b,y=(s[0]-a[0])*b,h=i*(r[0][0]-a[0])+y*(r[0][1]-a[1]),f=i*l[0]+y*l[1];if(Math.abs(f)<1e-12){if(h<0)return null;continue}const z=-h/f;if(f>0?u=Math.max(u,z):d=Math.min(d,z),u>d)return null}return[[r[0][0]+l[0]*u,r[0][1]+l[1]*u],[r[0][0]+l[0]*d,r[0][1]+l[1]*d]]}export{ht as parseInequality,bt as regionFigure};
+// Solution region (miền nghiệm) of a system of linear inequalities in x, y.
+import { compile } from './expr.js';
+import { niceStep, numLatex } from './svgkit.js';
+import { sceneToSvg, labelBox } from './scene.js';
+import { snap } from './analysis.js';
+
+const REL = /(<=|>=|≤|≥|=<|=>|<|>|=)/;
+
+export function parseInequality(src) {
+  const m = REL.exec(src.replace(/\s+/g, ''));
+  if (!m) throw new Error(`Thiếu dấu so sánh trong “${src}”`);
+  const clean = src.replace(/\s+/g, '');
+  const [l, r] = [clean.slice(0, m.index), clean.slice(m.index + m[0].length)];
+  const rel = { '<=': '≤', '=<': '≤', '≤': '≤', '>=': '≥', '=>': '≥', '≥': '≥', '<': '<', '>': '>', '=': '=' }[m[0]];
+  const gl = compile(l || '0', ['x', 'y']), gr = compile(r || '0', ['x', 'y']);
+  const g = (x, y) => gl(x, y) - gr(x, y);
+  const c = g(0, 0), a = g(1, 0) - c, b = g(0, 1) - c;
+  for (const [x, y] of [[2, 3], [-1.5, 4], [5, -2]]) if (Math.abs(g(x, y) - (a * x + b * y + c)) > 1e-6) throw new Error(`“${src}” không phải bất phương trình bậc nhất hai ẩn`);
+  if (Math.abs(a) < 1e-12 && Math.abs(b) < 1e-12) throw new Error(`“${src}” không chứa x, y`);
+  return { a: snap(a), b: snap(b), c: snap(c), rel, src };
+}
+
+function clip(poly, h) {   // keep a*x+b*y+c  <=0 (sign=-1) or >=0 (sign=+1)
+  const keep = h.rel === '≤' || h.rel === '<' ? -1 : 1, v = ([x, y]) => keep * (h.a * x + h.b * y + h.c);
+  const out = [];
+  for (let i = 0; i < poly.length; i++) {
+    const p = poly[i], q = poly[(i + 1) % poly.length], vp = v(p), vq = v(q);
+    if (vp >= -1e-12) out.push(p);
+    if ((vp > 1e-12 && vq < -1e-12) || (vp < -1e-12 && vq > 1e-12)) { const t = vp / (vp - vq); out.push([p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t]); }
+  }
+  return out;
+}
+
+export function regionFigure(lines, opts = {}) {
+  const hs = lines.filter((s) => s.trim()).map(parseInequality);
+  if (!hs.length) throw new Error('Nhập ít nhất một bất phương trình');
+  // window from the intersections of the boundary lines and the axes
+  const pts = [[0, 0]];
+  const all = [...hs, { a: 1, b: 0, c: 0 }, { a: 0, b: 1, c: 0 }];
+  for (let i = 0; i < all.length; i++) for (let j = i + 1; j < all.length; j++) {
+    const d = all[i].a * all[j].b - all[j].a * all[i].b;
+    if (Math.abs(d) > 1e-12) pts.push([(all[i].b * all[j].c - all[j].b * all[i].c) / d, (all[j].a * all[i].c - all[i].a * all[j].c) / d]);
+  }
+  for (const h of hs) { if (Math.abs(h.a) > 1e-12) pts.push([-h.c / h.a, 0]); if (Math.abs(h.b) > 1e-12) pts.push([0, -h.c / h.b]); }
+  const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+  let xmin = opts.xmin ?? Math.min(...xs), xmax = opts.xmax ?? Math.max(...xs), ymin = opts.ymin ?? Math.min(...ys), ymax = opts.ymax ?? Math.max(...ys);
+  if (opts.xmin === undefined) { const pad = Math.max(1, (xmax - xmin) * 0.25); xmin -= pad; xmax += pad; }
+  if (opts.ymin === undefined) { const pad = Math.max(1, (ymax - ymin) * 0.25); ymin -= pad; ymax += pad; }
+  const W = opts.width || 420, H = opts.height || 340, padL = 34, padR = 22, padT = 16, padB = 26;
+  const px = (x) => padL + (x - xmin) / (xmax - xmin) * (W - padL - padR), py = (y) => H - padB - (y - ymin) / (ymax - ymin) * (H - padT - padB);
+  let poly = [[xmin, ymin], [xmax, ymin], [xmax, ymax], [xmin, ymax]];
+  for (const h of hs) if (h.rel !== '=') poly = clip(poly, h);
+  const items = [];
+  const gx = niceStep(xmax - xmin, 9), gy = niceStep(ymax - ymin, 7);
+  if (opts.grid !== false) {
+    for (let x = Math.ceil(xmin / gx) * gx; x <= xmax + 1e-9; x += gx) items.push({ t: 'line', x1: px(x), y1: py(ymin), x2: px(x), y2: py(ymax), w: 0.5, color: '#dcdcdc' });
+    for (let y = Math.ceil(ymin / gy) * gy; y <= ymax + 1e-9; y += gy) items.push({ t: 'line', x1: px(xmin), y1: py(y), x2: px(xmax), y2: py(y), w: 0.5, color: '#dcdcdc' });
+  }
+  // the region: shaded, or hatch the rejected part (textbook style)
+  const mode = opts.mode || 'hatch';
+  if (poly.length >= 3 && mode !== 'hatch') items.push({ t: 'poly', pts: poly.map((p) => [px(p[0]), py(p[1])]), closed: true, fill: '#9ec9f5', sw: 0.1, color: '#9ec9f5', opacity: 0.55 });
+  if (mode === 'hatch') {
+    const step = 9, hatchColor = '#8a8a8a';
+    const full = [[padL, padT], [W - padR, padT], [W - padR, H - padB], [padL, H - padB]];
+    const inner = poly.length >= 3 ? poly.map((p) => [px(p[0]), py(p[1])]) : [];
+    for (let c = -(H); c < W + H; c += step) {   // lines x + y = c in pixel space, 45 degrees
+      const seg = clipLineToRect(c, full);
+      if (!seg) continue;
+      const inside = inner.length ? clipLineToConvex(seg, inner) : null;
+      if (!inside) items.push({ t: 'line', x1: seg[0][0], y1: seg[0][1], x2: seg[1][0], y2: seg[1][1], w: 0.6, color: hatchColor });
+      else {
+        if (dist(seg[0], inside[0]) > 1) items.push({ t: 'line', x1: seg[0][0], y1: seg[0][1], x2: inside[0][0], y2: inside[0][1], w: 0.6, color: hatchColor });
+        if (dist(inside[1], seg[1]) > 1) items.push({ t: 'line', x1: inside[1][0], y1: inside[1][1], x2: seg[1][0], y2: seg[1][1], w: 0.6, color: hatchColor });
+      }
+    }
+  }
+  const ax = xmin <= 0 && xmax >= 0 ? px(0) : px(xmin), ay = ymin <= 0 && ymax >= 0 ? py(0) : py(ymin);
+  const boxes = [];   // label boxes already on the figure, so new labels can avoid them
+  const claim = (latex, x, y, anchor, size) => { const b = labelBox(latex, size); const left = anchor === 'l' ? x : anchor === 'r' ? x - b.w : x - b.w / 2; boxes.push([left - 2, y - b.h / 2 - 2, left + b.w + 2, y + b.h / 2 + 2]); };
+  items.push({ t: 'line', x1: px(xmin) - 4, y1: ay, x2: px(xmax) + 8, y2: ay, w: 1.3, arrow: true }, { t: 'line', x1: ax, y1: py(ymin) + 4, x2: ax, y2: py(ymax) - 8, w: 1.3, arrow: true });
+  items.push({ t: 'label', latex: 'x', x: px(xmax) + 6, y: ay + 14, size: 15 }, { t: 'label', latex: 'y', x: ax + 12, y: py(ymax) - 6, size: 15 }, { t: 'label', latex: 'O', x: ax - 9, y: ay + 12, size: 14 });
+  if (poly.some((p) => Math.abs(p[0]) < 1e-9 && Math.abs(p[1]) < 1e-9)) items.pop();   // the vertex label already says (0; 0)
+  for (let x = Math.ceil(xmin / gx) * gx; x <= xmax + 1e-9; x += gx) { const v = snap(Math.round(x * 1e6) / 1e6); if (Math.abs(v) < 1e-9) continue; items.push({ t: 'line', x1: px(v), y1: ay - 3, x2: px(v), y2: ay + 3, w: 1 }, { t: 'label', latex: numLatex(v), x: px(v), y: ay + 15, size: 12 }); claim(numLatex(v), px(v), ay + 15, 'c', 12); }
+  for (let y = Math.ceil(ymin / gy) * gy; y <= ymax + 1e-9; y += gy) { const v = snap(Math.round(y * 1e6) / 1e6); if (Math.abs(v) < 1e-9) continue; items.push({ t: 'line', x1: ax - 3, y1: py(v), x2: ax + 3, y2: py(v), w: 1 }, { t: 'label', latex: numLatex(v), x: ax - 7, y: py(v), size: 12, anchor: 'r' }); claim(numLatex(v), ax - 7, py(v), 'r', 12); }
+  // boundary lines
+  hs.forEach((h, i) => {
+    const ends = [];
+    if (Math.abs(h.b) > 1e-12) { ends.push([xmin, -(h.a * xmin + h.c) / h.b], [xmax, -(h.a * xmax + h.c) / h.b]); } else ends.push([-h.c / h.a, ymin], [-h.c / h.a, ymax]);
+    const seg = clipLineToRect(null, [[padL, padT], [W - padR, padT], [W - padR, H - padB], [padL, H - padB]], [[px(ends[0][0]), py(ends[0][1])], [px(ends[1][0]), py(ends[1][1])]]);
+    if (!seg) return;
+    items.push({ t: 'line', x1: seg[0][0], y1: seg[0][1], x2: seg[1][0], y2: seg[1][1], w: 1.8, color: '#1a3d8f', dash: h.rel === '<' || h.rel === '>' ? '6 4' : '' });
+    if (opts.labelLines !== false) { const lx = Math.min(W - padR - 14, Math.max(padL + 14, seg[1][0] - 4)), ly = Math.min(H - padB - 10, Math.max(padT + 12, seg[1][1] - 12)); items.push({ t: 'label', latex: `(d_{${i + 1}})`, x: lx, y: ly, size: 13, anchor: 'r', halo: true }); claim(`(d_{${i + 1}})`, lx, ly, 'r', 13); }
+  });
+  // vertices of the region: a dot, its letter and coordinates, placed where nothing else is
+  if (poly.length >= 3 && opts.vertices !== false) {
+    const names = opts.names || 'ABCDEFGH'.split('');
+    let k = 0;
+    const cx = poly.reduce((s2, q) => s2 + q[0], 0) / poly.length, cy = poly.reduce((s2, q) => s2 + q[1], 0) / poly.length;
+    const segs = items.filter((it) => it.t === 'line' && it.w >= 1.5);
+    const hits = (b2) => boxes.some((o) => !(b2[2] < o[0] || b2[0] > o[2] || b2[3] < o[1] || b2[1] > o[3]));
+    const nearLine = (b2) => segs.some((l) => { for (let t = 0; t <= 1; t += 0.1) { const x = l.x1 + (l.x2 - l.x1) * t, y = l.y1 + (l.y2 - l.y1) * t; if (x > b2[0] && x < b2[2] && y > b2[1] && y < b2[3]) return true; } return false; });
+    const verts = [];
+    for (const q of poly) {
+      const onLines = hs.filter((h) => Math.abs(h.a * q[0] + h.b * q[1] + h.c) < 1e-6 * Math.max(1, Math.abs(h.c))).length;
+      const onWindow = Math.abs(q[0] - xmin) < 1e-9 || Math.abs(q[0] - xmax) < 1e-9 || Math.abs(q[1] - ymin) < 1e-9 || Math.abs(q[1] - ymax) < 1e-9;
+      if ((onLines < 2 && onWindow) || onLines < 1) continue;
+      verts.push(q);
+    }
+    for (const q of verts) {
+      const name = names[k++ % names.length], text = `${name}(${numLatex(snap(q[0]))};${numLatex(snap(q[1]))})`, size = 12;
+      items.push({ t: 'dot', x: px(q[0]), y: py(q[1]), r: 3 });
+      const bx = labelBox(text, size);
+      const away = [px(q[0]) - px(cx), py(q[1]) - py(cy)];
+      const base = Math.atan2(away[1], away[0]);
+      let best = null;
+      for (const turn of [0, 0.5, -0.5, 1, -1, 1.6, -1.6, 2.4, -2.4, Math.PI]) {
+        const ang = base + turn, dist = 10 + (Math.abs(turn) > 2 ? 6 : 0);
+        const cxp = px(q[0]) + Math.cos(ang) * dist, cyp = py(q[1]) + Math.sin(ang) * dist;
+        const anchor = Math.cos(ang) > 0.35 ? 'l' : Math.cos(ang) < -0.35 ? 'r' : 'c';
+        const left = anchor === 'l' ? cxp : anchor === 'r' ? cxp - bx.w : cxp - bx.w / 2;
+        const top = Math.sin(ang) >= 0 ? cyp : cyp - bx.h;
+        const box = [left - 2, top - 2, left + bx.w + 2, top + bx.h + 2];
+        const inside = box[0] >= padL - 6 && box[2] <= W - padR + 14 && box[1] >= padT - 8 && box[3] <= H - padB + 14;
+        if (inside && !hits(box) && !nearLine(box)) { best = { box, x: anchor === 'l' ? cxp : anchor === 'r' ? cxp : cxp, y: top + bx.h / 2, anchor }; break; }
+        if (!best && inside && !hits(box)) best = { box, x: cxp, y: top + bx.h / 2, anchor };
+      }
+      if (!best) { const ang = base, cxp = px(q[0]) + Math.cos(ang) * 12, cyp = py(q[1]) + Math.sin(ang) * 12; best = { box: [cxp, cyp, cxp + bx.w, cyp + bx.h], x: cxp, y: cyp, anchor: Math.cos(ang) > 0 ? 'l' : 'r' }; }
+      boxes.push(best.box);
+      items.push({ t: 'label', latex: text, x: best.x, y: best.y, size, anchor: best.anchor, halo: true });
+    }
+  }
+  const scene = { width: W, height: H, items };
+  return { scene, svg: sceneToSvg(scene), width: W, height: H, polygon: poly, empty: poly.length < 3, constraints: hs };
+}
+
+const dist = (p, q) => Math.hypot(p[0] - q[0], p[1] - q[1]);
+
+function clipLineToRect(c, rect, given) {   // the part of line x+y=c (or of the given segment's line) inside the rectangle
+  const [x0, y0] = rect[0], [x1, y1] = rect[2];
+  let p, q;
+  if (given) { p = given[0]; q = given[1]; } else { p = [c - y0, y0]; q = [c - y1, y1]; }
+  let t0 = -1e9, t1 = 1e9;
+  const dx = q[0] - p[0], dy = q[1] - p[1];
+  const upd = (pk, qk) => { if (Math.abs(pk) < 1e-12) return qk >= 0; const t = qk / pk; if (pk < 0) t0 = Math.max(t0, t); else t1 = Math.min(t1, t); return t0 <= t1; };
+  if (!(upd(-dx, p[0] - x0) && upd(dx, x1 - p[0]) && upd(-dy, p[1] - y0) && upd(dy, y1 - p[1]))) return null;
+  return [[p[0] + dx * t0, p[1] + dy * t0], [p[0] + dx * t1, p[1] + dy * t1]];
+}
+
+function clipLineToConvex(seg, poly) {   // intersection of a segment with a convex polygon (pixel space), or null
+  let t0 = 0, t1 = 1;
+  const d = [seg[1][0] - seg[0][0], seg[1][1] - seg[0][1]];
+  const area = poly.reduce((s, p, i) => { const q = poly[(i + 1) % poly.length]; return s + (p[0] * q[1] - q[0] * p[1]); }, 0);
+  const orient = area > 0 ? 1 : -1;
+  for (let i = 0; i < poly.length; i++) {
+    const a = poly[i], b = poly[(i + 1) % poly.length];
+    const nx = -(b[1] - a[1]) * orient, ny = (b[0] - a[0]) * orient;   // inward normal
+    const num = nx * (seg[0][0] - a[0]) + ny * (seg[0][1] - a[1]), den = nx * d[0] + ny * d[1];
+    if (Math.abs(den) < 1e-12) { if (num < 0) return null; continue; }
+    const t = -num / den;
+    if (den > 0) t0 = Math.max(t0, t); else t1 = Math.min(t1, t);
+    if (t0 > t1) return null;
+  }
+  return [[seg[0][0] + d[0] * t0, seg[0][1] + d[1] * t0], [seg[0][0] + d[0] * t1, seg[0][1] + d[1] * t1]];
+}

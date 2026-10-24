@@ -1,1 +1,180 @@
-import{nextStop as T}from"../src/latex-suggest.js";import{renderLatex as C}from"../src/mathrender.js";const g=(t,r,i,n)=>({id:t,label:r,icon:i,items:n}),v=[g("struct","\u0110\u1EA1i s\u1ED1","\\sqrt{x}",[["\\tfrac{a}{b}","\\frac{@}{}","Ph\xE2n s\u1ED1","phan so frac"],["\\sqrt{x}","\\sqrt{@}","C\u0103n b\u1EADc hai","can sqrt"],["\\sqrt[n]{x}","\\sqrt[@]{}","C\u0103n b\u1EADc n (\xF4 \u0111\u1EA7u: ch\u1EC9 s\u1ED1 n)","can bac n"],["x^{2}","^{@}","S\u1ED1 m\u0169","mu luy thua"],["x_{i}","_{@}","Ch\u1EC9 s\u1ED1 d\u01B0\u1EDBi","chi so duoi"],["x_{i}^{2}","_{@}^{}","Ch\u1EC9 s\u1ED1 d\u01B0\u1EDBi v\xE0 s\u1ED1 m\u0169",""],["\\left(x\\right)","\\left( @ \\right)","Ngo\u1EB7c tr\xF2n co gi\xE3n","ngoac tron"],["\\left[x\\right]","\\left[ @ \\right]","Ngo\u1EB7c vu\xF4ng co gi\xE3n","ngoac vuong"],["\\left\\{x\\right\\}","\\left\\{ @ \\right\\}","Ngo\u1EB7c nh\u1ECDn co gi\xE3n","ngoac nhon tap hop"],["\\left|x\\right|","\\left| @ \\right|","Gi\xE1 tr\u1ECB tuy\u1EC7t \u0111\u1ED1i","tri tuyet doi abs"],["\\overline{AB}","\\overline{@}","G\u1EA1ch tr\xEAn","gach tren"],["\\underline{x}","\\underline{@}","G\u1EA1ch d\u01B0\u1EDBi","gach duoi"],["\\boxed{x}","\\boxed{@}","Khung","khung"],["\\binom{n}{k}","\\binom{@}{}","T\u1ED5 h\u1EE3p","to hop binom"],["\\overbrace{x}^{n}","\\overbrace{@}^{}","Ngo\u1EB7c nh\u1ECDn tr\xEAn",""],["\\underbrace{x}_{n}","\\underbrace{@}_{}","Ngo\u1EB7c nh\u1ECDn d\u01B0\u1EDBi",""]]),g("calc","Gi\u1EA3i t\xEDch","\\int",[["\\int","\\int @ \\,\\mathrm{d}x","T\xEDch ph\xE2n b\u1EA5t \u0111\u1ECBnh","tich phan"],["\\int_a^b","\\int_{@}^{} \\,\\mathrm{d}x","T\xEDch ph\xE2n x\xE1c \u0111\u1ECBnh","tich phan xac dinh"],["\\sum_{i}^{n}","\\sum_{i=@}^{n}","T\u1ED5ng","tong sigma"],["\\prod","\\prod_{i=@}^{n}","T\xEDch","tich pi"],["\\lim_{x\\to a}","\\lim_{x \\to @}","Gi\u1EDBi h\u1EA1n","gioi han"],["\\lim_{x\\to\\infty}","\\lim_{x \\to +\\infty} @","Gi\u1EDBi h\u1EA1n t\u1EA1i +\u221E","gioi han vo cuc"],["f'","f'(@)","\u0110\u1EA1o h\xE0m","dao ham"],["\\tfrac{d}{dx}","\\frac{\\mathrm{d}}{\\mathrm{d}x} @","d/dx","dao ham"],["\\left.f\\right|_a^b","\\left. @ \\right|_{}^{}","Th\u1EBF c\u1EADn (F(x)|\u2090\u1D47)","the can"],["\\log_a","\\log_{@}","Logarit c\u01A1 s\u1ED1 a","logarit"],["\\ln","\\ln @","Logarit t\u1EF1 nhi\xEAn","ln"],["\\lg","\\lg @","Logarit th\u1EADp ph\xE2n","lg"],["\\sin","\\sin @","sin",""],["\\cos","\\cos @","cos",""],["\\tan","\\tan @","tan",""],["\\cot","\\cot @","cot",""],["\\max","\\max_{@}","Gi\xE1 tr\u1ECB l\u1EDBn nh\u1EA5t","max"],["\\min","\\min_{@}","Gi\xE1 tr\u1ECB nh\u1ECF nh\u1EA5t","min"],["\\infty","\\infty","V\xF4 c\u1EF1c","vo cuc"],["\\to","\\to ","Ti\u1EBFn t\u1EDBi","tien toi"],["\\xrightarrow{n}","\\xrightarrow{@}","M\u0169i t\xEAn c\xF3 ch\u1EEF",""]]),g("system","H\u1EC7 & ma tr\u1EADn","\\{\\begin{smallmatrix}x\\\\y\\end{smallmatrix}",[["\\scriptstyle\\begin{cases}a\\\\b\\end{cases}","\\left\\{ \\begin{array}{l} @ \\\\ \\end{array} \\right.","H\u1EC7 ph\u01B0\u01A1ng tr\xECnh (2 d\xF2ng)","he phuong trinh cases"],["\\scriptstyle\\left[\\begin{matrix}a\\\\b\\end{matrix}\\right.","\\left[ \\begin{array}{l} @ \\\\ \\end{array} \\right.","Ho\u1EB7c (ngo\u1EB7c vu\xF4ng, 2 d\xF2ng)","hoac"],["\\scriptstyle\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}","\\left( \\begin{array}{cc} @ & \\\\ & \\end{array} \\right)","Ma tr\u1EADn 2\xD72","ma tran"],["\\scriptstyle\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}","\\left[ \\begin{array}{cc} @ & \\\\ & \\end{array} \\right]","Ma tr\u1EADn vu\xF4ng 2\xD72",""],["\\scriptstyle\\begin{vmatrix}a&b\\\\c&d\\end{vmatrix}","\\left| \\begin{array}{cc} @ & \\\\ & \\end{array} \\right|","\u0110\u1ECBnh th\u1EE9c 2\xD72","dinh thuc"],["\\scriptscriptstyle\\begin{pmatrix}a&b&c\\\\d&e&f\\\\g&h&i\\end{pmatrix}","\\left( \\begin{array}{ccc} @ & & \\\\ & & \\\\ & & \\end{array} \\right)","Ma tr\u1EADn 3\xD73",""],["a \\\\ b"," \\\\ ","Xu\u1ED1ng d\xF2ng (trong h\u1EC7)","xuong dong"],["a & b"," & ","Sang c\u1ED9t (trong ma tr\u1EADn)",""]]),g("ops","Ph\xE9p to\xE1n & quan h\u1EC7","\\pm",[["\\pm","\\pm ","C\u1ED9ng tr\u1EEB","cong tru"],["\\mp","\\mp ","Tr\u1EEB c\u1ED9ng",""],["\\times","\\times ","Nh\xE2n","nhan"],["\\div","\\div ","Chia",""],["\\cdot","\\cdot ","Ch\u1EA5m nh\xE2n",""],["\\circ","\\circ ","H\u1EE3p (\u2218)",""],["=","=","B\u1EB1ng",""],["\\neq","\\neq ","Kh\xE1c","khac"],["\\approx","\\approx ","X\u1EA5p x\u1EC9","xap xi"],["\\equiv","\\equiv ","\u0110\u1ED3ng nh\u1EA5t / \u0111\u1ED3ng d\u01B0",""],["\\sim","\\sim ","\u0110\u1ED3ng d\u1EA1ng","dong dang"],["\\cong","\\cong ","B\u1EB1ng nhau (\u2245)",""],["<","<","Nh\u1ECF h\u01A1n",""],[">",">","L\u1EDBn h\u01A1n",""],["\\leq","\\leq ","Nh\u1ECF h\u01A1n ho\u1EB7c b\u1EB1ng",""],["\\geq","\\geq ","L\u1EDBn h\u01A1n ho\u1EB7c b\u1EB1ng",""],["\\ll","\\ll ","R\u1EA5t nh\u1ECF h\u01A1n",""],["\\gg","\\gg ","R\u1EA5t l\u1EDBn h\u01A1n",""],["\\propto","\\propto ","T\u1EC9 l\u1EC7 thu\u1EADn",""],["\\ldots","\\ldots ","Ba ch\u1EA5m d\u01B0\u1EDBi",""],["\\cdots","\\cdots ","Ba ch\u1EA5m gi\u1EEFa",""],["\\vdots","\\vdots ","Ba ch\u1EA5m d\u1ECDc",""]]),g("sets","T\u1EADp h\u1EE3p & logic","\\in",[["\\in","\\in ","Thu\u1ED9c","thuoc"],["\\notin","\\notin ","Kh\xF4ng thu\u1ED9c",""],["\\ni","\\ni ","Ch\u1EE9a ph\u1EA7n t\u1EED",""],["\\subset","\\subset ","T\u1EADp con","tap con"],["\\subseteq","\\subseteq ","T\u1EADp con ho\u1EB7c b\u1EB1ng",""],["\\supset","\\supset ","Ch\u1EE9a t\u1EADp",""],["\\cup","\\cup ","H\u1EE3p","hop"],["\\cap","\\cap ","Giao","giao"],["\\setminus","\\setminus ","Hi\u1EC7u t\u1EADp",""],["\\emptyset","\\emptyset ","T\u1EADp r\u1ED7ng","tap rong"],["\\mathbb{R}","\\mathbb{R}","T\u1EADp s\u1ED1 th\u1EF1c","so thuc"],["\\mathbb{N}","\\mathbb{N}","T\u1EADp s\u1ED1 t\u1EF1 nhi\xEAn",""],["\\mathbb{Z}","\\mathbb{Z}","T\u1EADp s\u1ED1 nguy\xEAn",""],["\\mathbb{Q}","\\mathbb{Q}","T\u1EADp s\u1ED1 h\u1EEFu t\u1EC9",""],["\\mathbb{C}","\\mathbb{C}","T\u1EADp s\u1ED1 ph\u1EE9c",""],["\\forall","\\forall ","V\u1EDBi m\u1ECDi","voi moi"],["\\exists","\\exists ","T\u1ED3n t\u1EA1i","ton tai"],["\\neg","\\neg ","Ph\u1EE7 \u0111\u1ECBnh",""],["\\wedge","\\wedge ","V\xE0",""],["\\vee","\\vee ","Ho\u1EB7c",""],["\\Rightarrow","\\Rightarrow ","Suy ra","suy ra"],["\\Leftarrow","\\Leftarrow ","K\xE9o theo ng\u01B0\u1EE3c",""],["\\Leftrightarrow","\\Leftrightarrow ","T\u01B0\u01A1ng \u0111\u01B0\u01A1ng","tuong duong"],["\\rightarrow","\\rightarrow ","M\u0169i t\xEAn ph\u1EA3i",""],["\\leftarrow","\\leftarrow ","M\u0169i t\xEAn tr\xE1i",""],["\\leftrightarrow","\\leftrightarrow ","M\u0169i t\xEAn hai chi\u1EC1u",""],["\\mapsto","\\mapsto ","\xC1nh x\u1EA1",""],["\\therefore","\\therefore ","V\u1EADy",""],["\\because","\\because ","V\xEC",""]]),g("geo","H\xECnh h\u1ECDc","\\angle",[["\\vec{u}","\\vec{@}","Vect\u01A1 (1 ch\u1EEF)","vecto"],["\\overrightarrow{AB}","\\overrightarrow{@}","Vect\u01A1 AB","vecto"],["|\\vec{AB}|","\\left| \\overrightarrow{@} \\right|","\u0110\u1ED9 d\xE0i vect\u01A1",""],["\\vec{a}\\cdot\\vec{b}","\\overrightarrow{@} \\cdot \\overrightarrow{}","T\xEDch v\xF4 h\u01B0\u1EDBng",""],["\\widehat{AB}","\\widehat{@}","G\xF3c (d\u1EA5u m\u0169)","goc"],["\\angle","\\angle ","K\xFD hi\u1EC7u g\xF3c \u2220",""],["{}^{\\circ}","^{\\circ}","\u0110\u1ED9 (\xB0)","do"],["\\overset{\\frown}{AB}","\\overset{\\frown}{@}","Cung AB","cung"],["\\triangle","\\triangle ","Tam gi\xE1c","tam giac"],["\\square","\\square ","H\xECnh vu\xF4ng",""],["\\perp","\\perp ","Vu\xF4ng g\xF3c","vuong goc"],["\\parallel","\\parallel ","Song song","song song"],["\\nparallel","\\nparallel ","Kh\xF4ng song song",""],["\\sim","\\sim ","\u0110\u1ED3ng d\u1EA1ng",""],["\\cong","\\cong ","B\u1EB1ng nhau (\u2245)",""]]),g("greek","Hy L\u1EA1p","\\alpha",[..."alpha beta gamma delta epsilon varepsilon zeta eta theta iota kappa lambda mu nu xi pi rho sigma tau upsilon phi varphi chi psi omega".split(" ").map(t=>["\\".concat(t),"\\".concat(t," "),t,"hy lap greek"]),..."Gamma Delta Theta Lambda Xi Pi Sigma Phi Psi Omega".split(" ").map(t=>["\\".concat(t),"\\".concat(t," "),t,"hy lap greek hoa"])]),g("space","Ch\u1EEF & kho\u1EA3ng c\xE1ch","\\mathbf{A}",[["\\text{ab}","\\text{@}","Ch\u1EEF th\u01B0\u1EDDng (v\u0103n b\u1EA3n)","van ban text"],["\\mathrm{d}","\\mathrm{@}","Ch\u1EEF \u0111\u1EE9ng","chu dung"],["\\mathbf{v}","\\mathbf{@}","Ch\u1EEF \u0111\u1EADm","chu dam"],["\\mathbb{R}","\\mathbb{@}","T\u1EADp s\u1ED1 (R, N, Z, Q, C)","tap so"],["\\mathcal{L}","\\mathcal{@}","Ch\u1EEF th\u01B0 ph\xE1p","thu phap"],["\\mathsf{A}","\\mathsf{@}","Ch\u1EEF kh\xF4ng ch\xE2n","khong chan"],["a\\,b","\\,","C\xE1ch m\u1ECFng","cach"],["a\\;b","\\;","C\xE1ch v\u1EEBa",""],["a\\quad b","\\quad ","C\xE1ch r\u1ED9ng",""],["a\\text{ }b","\\text{ }","D\u1EA5u c\xE1ch (v\u0103n b\u1EA3n)",""],["1{,}5","{,}","D\u1EA5u ph\u1EA9y th\u1EADp ph\xE2n (1{,}5)","thap phan"],[";","; ","Ch\u1EA5m ph\u1EA9y",""]])],x="texcraft-addin-recent-symbols",p=t=>String(t).replace(/[&<>"]/g,r=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[r]),y=t=>String(t).normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/đ/g,"d").toLowerCase(),f=new Map;function w(t){if(f.has(t))return f.get(t);let r;try{if(typeof katex>"u")throw new Error("no katex");r='<span class="tb-math">'.concat(katex.renderToString("\\displaystyle ".concat(t),{throwOnError:!0,output:"html",strict:"ignore"}),"</span>")}catch{try{const i=C(t,{fontSize:15,pad:1});r=i.svg.replace(/ width="[^"]*pt" height="[^"]*pt"/,' fill="currentColor" class="tb-svg" style="aspect-ratio:'.concat((i.width/i.height).toFixed(3),'"')).replace(/#000/g,"currentColor")}catch{r='<span class="tb-text">'.concat(p(t),"</span>")}}return typeof katex<"u"&&f.set(t,r),r}function S(t,r){const i=t.value,n=t.selectionStart??i.length,b=t.selectionEnd??n,d=i.slice(n,b);let c=r,o;const l=c.indexOf("@");l>=0?(c=c.replace("@",d),o=d?n+c.length:n+l):o=n+c.length;let s=i.slice(0,n)+c+i.slice(b);const m=s[n+c.length]||"";return/\\[A-Za-z]+$/.test(c)&&/[A-Za-z]/.test(m)&&(s=s.slice(0,n+c.length)+" "+s.slice(n+c.length),!d&&l<0&&(o+=1)),t.value=s,t.setSelectionRange(o,o),t.focus(),t.dispatchEvent(new Event("input",{bubbles:!0})),o}function $(t,r,{visual:i=null}={}){if(!t||!r)return;let n=[];try{n=JSON.parse(localStorage.getItem(x)||"[]")}catch{n=[]}const b=v.flatMap(e=>e.items.map(a=>({it:a,group:e.id}))),d=new Map(b.map(({it:e})=>[e[1],e]));let c="struct";t.innerHTML='\n    <div class="tb-search"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><input type="search" id="tb-q" placeholder="T\xECm k\xFD hi\u1EC7u: ph\xE2n s\u1ED1, t\xEDch ph\xE2n, vu\xF4ng g\xF3c\u2026" autocomplete="off"></div>\n    <div class="tb-recent" id="tb-recent" hidden><span class="tb-recent-label">G\u1EA7n \u0111\xE2y</span><div class="tb-grid" id="tb-recent-grid"></div></div>\n    <div class="tb-tabs" role="tablist">'.concat(v.map(e=>'<button type="button" role="tab" class="tb-tab" data-g="'.concat(e.id,'" title="').concat(p(e.label),'"><span class="tb-tab-icon">').concat(w(e.icon),'</span><span class="tb-tab-label">').concat(p(e.label),"</span></button>")).join(""),'</div>\n    <div class="tb-grid" id="tb-grid"></div>\n    <div class="tb-tip">B\xF4i \u0111en ch\u1EEF trong \xF4 LaTeX r\u1ED3i b\u1EA5m n\xFAt \u0111\u1EC3 bao ch\u1EEF \u0111\xF3 v\xE0o (v\xED d\u1EE5 b\xF4i <code>x+1</code> r\u1ED3i b\u1EA5m \u221A). Tab nh\u1EA3y gi\u1EEFa c\xE1c \xF4 tr\u1ED1ng.</div>');const o=t.querySelector("#tb-grid"),l=e=>'<button type="button" class="tb-btn'.concat(/begin\{[pbv]?matrix\}/.test(e[0])?" wide":"",'" data-s="').concat(p(e[1]),'" title="').concat(p(e[2]),"  \u2014  ").concat(p(e[1].replace("@","")),'">').concat(w(e[0]),"</button>"),s=e=>{o.innerHTML=e.length?e.map(l).join(""):'<div class="tb-empty">Kh\xF4ng c\xF3 k\xFD hi\u1EC7u ph\xF9 h\u1EE3p.</div>'},m=()=>{const e=n.map(a=>d.get(a)).filter(Boolean).slice(0,10);t.querySelector("#tb-recent").hidden=!e.length,t.querySelector("#tb-recent-grid").innerHTML=e.map(l).join("")},u=e=>{c=e,t.querySelectorAll(".tb-tab").forEach(a=>a.classList.toggle("active",a.dataset.g===e)),s(v.find(a=>a.id===e).items)};t.querySelector(".tb-tabs").addEventListener("click",e=>{const a=e.target.closest(".tb-tab");a&&(t.querySelector("#tb-q").value="",u(a.dataset.g))}),t.querySelector("#tb-q").addEventListener("input",e=>{const a=y(e.target.value.trim());if(!a){u(c);return}t.querySelectorAll(".tb-tab").forEach(h=>h.classList.remove("active")),s(b.filter(({it:h})=>y("".concat(h[2]," ").concat(h[3]," ").concat(h[1])).includes(a)).map(({it:h})=>h))}),t.addEventListener("mousedown",e=>{e.target.closest(".tb-btn")&&e.preventDefault()}),t.addEventListener("click",e=>{const a=e.target.closest(".tb-btn");if(!a)return;const h=a.dataset.s;i&&i.active()?i.insert(h):S(r,h),n=[h,...n.filter(q=>q!==h)].slice(0,12);try{localStorage.setItem(x,JSON.stringify(n))}catch{}m()}),u("struct"),m()}export{w as face,S as insertSnippet,$ as mountEditorToolbar};
+// Toolbar of the equation editor: grouped buttons showing the real rendered symbol (KaTeX), search, recent items,
+// insertion that wraps the selected text, templates with Tab stops.
+import { nextStop } from '../src/latex-suggest.js';
+import { renderLatex } from '../src/mathrender.js';
+
+// [face (LaTeX drawn on the button), snippet ("@" = caret / selected text), title, extra search words]
+const G = (id, label, icon, items) => ({ id, label, icon, items });
+const GROUPS = [
+  G('struct', 'Đại số', '\\sqrt{x}', [
+    ['\\tfrac{a}{b}', '\\frac{@}{}', 'Phân số', 'phan so frac'],
+    ['\\sqrt{x}', '\\sqrt{@}', 'Căn bậc hai', 'can sqrt'],
+    ['\\sqrt[n]{x}', '\\sqrt[@]{}', 'Căn bậc n (ô đầu: chỉ số n)', 'can bac n'],
+    ['x^{2}', '^{@}', 'Số mũ', 'mu luy thua'],
+    ['x_{i}', '_{@}', 'Chỉ số dưới', 'chi so duoi'],
+    ['x_{i}^{2}', '_{@}^{}', 'Chỉ số dưới và số mũ', ''],
+    ['\\left(x\\right)', '\\left( @ \\right)', 'Ngoặc tròn co giãn', 'ngoac tron'],
+    ['\\left[x\\right]', '\\left[ @ \\right]', 'Ngoặc vuông co giãn', 'ngoac vuong'],
+    ['\\left\\{x\\right\\}', '\\left\\{ @ \\right\\}', 'Ngoặc nhọn co giãn', 'ngoac nhon tap hop'],
+    ['\\left|x\\right|', '\\left| @ \\right|', 'Giá trị tuyệt đối', 'tri tuyet doi abs'],
+    ['\\overline{AB}', '\\overline{@}', 'Gạch trên', 'gach tren'],
+    ['\\underline{x}', '\\underline{@}', 'Gạch dưới', 'gach duoi'],
+    ['\\boxed{x}', '\\boxed{@}', 'Khung', 'khung'],
+    ['\\binom{n}{k}', '\\binom{@}{}', 'Tổ hợp', 'to hop binom'],
+    ['\\overbrace{x}^{n}', '\\overbrace{@}^{}', 'Ngoặc nhọn trên', ''],
+    ['\\underbrace{x}_{n}', '\\underbrace{@}_{}', 'Ngoặc nhọn dưới', ''],
+  ]),
+  G('calc', 'Giải tích', '\\int', [
+    ['\\int', '\\int @ \\,\\mathrm{d}x', 'Tích phân bất định', 'tich phan'],
+    ['\\int_a^b', '\\int_{@}^{} \\,\\mathrm{d}x', 'Tích phân xác định', 'tich phan xac dinh'],
+    ['\\sum_{i}^{n}', '\\sum_{i=@}^{n}', 'Tổng', 'tong sigma'],
+    ['\\prod', '\\prod_{i=@}^{n}', 'Tích', 'tich pi'],
+    ['\\lim_{x\\to a}', '\\lim_{x \\to @}', 'Giới hạn', 'gioi han'],
+    ['\\lim_{x\\to\\infty}', '\\lim_{x \\to +\\infty} @', 'Giới hạn tại +∞', 'gioi han vo cuc'],
+    ["f'", "f'(@)", 'Đạo hàm', 'dao ham'],
+    ['\\tfrac{d}{dx}', '\\frac{\\mathrm{d}}{\\mathrm{d}x} @', 'd/dx', 'dao ham'],
+    ['\\left.f\\right|_a^b', '\\left. @ \\right|_{}^{}', 'Thế cận (F(x)|ₐᵇ)', 'the can'],
+    ['\\log_a', '\\log_{@}', 'Logarit cơ số a', 'logarit'],
+    ['\\ln', '\\ln @', 'Logarit tự nhiên', 'ln'],
+    ['\\lg', '\\lg @', 'Logarit thập phân', 'lg'],
+    ['\\sin', '\\sin @', 'sin', ''], ['\\cos', '\\cos @', 'cos', ''], ['\\tan', '\\tan @', 'tan', ''], ['\\cot', '\\cot @', 'cot', ''],
+    ['\\max', '\\max_{@}', 'Giá trị lớn nhất', 'max'], ['\\min', '\\min_{@}', 'Giá trị nhỏ nhất', 'min'],
+    ['\\infty', '\\infty', 'Vô cực', 'vo cuc'],
+    ['\\to', '\\to ', 'Tiến tới', 'tien toi'],
+    ['\\xrightarrow{n}', '\\xrightarrow{@}', 'Mũi tên có chữ', ''],
+  ]),
+  G('system', 'Hệ & ma trận', '\\{\\begin{smallmatrix}x\\\\y\\end{smallmatrix}', [
+    ['\\scriptstyle\\begin{cases}a\\\\b\\end{cases}', '\\left\\{ \\begin{array}{l} @ \\\\ \\end{array} \\right.', 'Hệ phương trình (2 dòng)', 'he phuong trinh cases'],
+    ['\\scriptstyle\\left[\\begin{matrix}a\\\\b\\end{matrix}\\right.', '\\left[ \\begin{array}{l} @ \\\\ \\end{array} \\right.', 'Hoặc (ngoặc vuông, 2 dòng)', 'hoac'],
+    ['\\scriptstyle\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}', '\\left( \\begin{array}{cc} @ & \\\\ & \\end{array} \\right)', 'Ma trận 2×2', 'ma tran'],
+    ['\\scriptstyle\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix}', '\\left[ \\begin{array}{cc} @ & \\\\ & \\end{array} \\right]', 'Ma trận vuông 2×2', ''],
+    ['\\scriptstyle\\begin{vmatrix}a&b\\\\c&d\\end{vmatrix}', '\\left| \\begin{array}{cc} @ & \\\\ & \\end{array} \\right|', 'Định thức 2×2', 'dinh thuc'],
+    ['\\scriptscriptstyle\\begin{pmatrix}a&b&c\\\\d&e&f\\\\g&h&i\\end{pmatrix}', '\\left( \\begin{array}{ccc} @ & & \\\\ & & \\\\ & & \\end{array} \\right)', 'Ma trận 3×3', ''],
+    ['a \\\\ b', ' \\\\ ', 'Xuống dòng (trong hệ)', 'xuong dong'],
+    ['a & b', ' & ', 'Sang cột (trong ma trận)', ''],
+  ]),
+  G('ops', 'Phép toán & quan hệ', '\\pm', [
+    ['\\pm', '\\pm ', 'Cộng trừ', 'cong tru'], ['\\mp', '\\mp ', 'Trừ cộng', ''], ['\\times', '\\times ', 'Nhân', 'nhan'], ['\\div', '\\div ', 'Chia', ''], ['\\cdot', '\\cdot ', 'Chấm nhân', ''], ['\\circ', '\\circ ', 'Hợp (∘)', ''],
+    ['=', '=', 'Bằng', ''], ['\\neq', '\\neq ', 'Khác', 'khac'], ['\\approx', '\\approx ', 'Xấp xỉ', 'xap xi'], ['\\equiv', '\\equiv ', 'Đồng nhất / đồng dư', ''], ['\\sim', '\\sim ', 'Đồng dạng', 'dong dang'], ['\\cong', '\\cong ', 'Bằng nhau (≅)', ''],
+    ['<', '<', 'Nhỏ hơn', ''], ['>', '>', 'Lớn hơn', ''], ['\\leq', '\\leq ', 'Nhỏ hơn hoặc bằng', ''], ['\\geq', '\\geq ', 'Lớn hơn hoặc bằng', ''], ['\\ll', '\\ll ', 'Rất nhỏ hơn', ''], ['\\gg', '\\gg ', 'Rất lớn hơn', ''],
+    ['\\propto', '\\propto ', 'Tỉ lệ thuận', ''], ['\\ldots', '\\ldots ', 'Ba chấm dưới', ''], ['\\cdots', '\\cdots ', 'Ba chấm giữa', ''], ['\\vdots', '\\vdots ', 'Ba chấm dọc', ''],
+  ]),
+  G('sets', 'Tập hợp & logic', '\\in', [
+    ['\\in', '\\in ', 'Thuộc', 'thuoc'], ['\\notin', '\\notin ', 'Không thuộc', ''], ['\\ni', '\\ni ', 'Chứa phần tử', ''], ['\\subset', '\\subset ', 'Tập con', 'tap con'], ['\\subseteq', '\\subseteq ', 'Tập con hoặc bằng', ''], ['\\supset', '\\supset ', 'Chứa tập', ''],
+    ['\\cup', '\\cup ', 'Hợp', 'hop'], ['\\cap', '\\cap ', 'Giao', 'giao'], ['\\setminus', '\\setminus ', 'Hiệu tập', ''], ['\\emptyset', '\\emptyset ', 'Tập rỗng', 'tap rong'],
+    ['\\mathbb{R}', '\\mathbb{R}', 'Tập số thực', 'so thuc'], ['\\mathbb{N}', '\\mathbb{N}', 'Tập số tự nhiên', ''], ['\\mathbb{Z}', '\\mathbb{Z}', 'Tập số nguyên', ''], ['\\mathbb{Q}', '\\mathbb{Q}', 'Tập số hữu tỉ', ''], ['\\mathbb{C}', '\\mathbb{C}', 'Tập số phức', ''],
+    ['\\forall', '\\forall ', 'Với mọi', 'voi moi'], ['\\exists', '\\exists ', 'Tồn tại', 'ton tai'], ['\\neg', '\\neg ', 'Phủ định', ''], ['\\wedge', '\\wedge ', 'Và', ''], ['\\vee', '\\vee ', 'Hoặc', ''],
+    ['\\Rightarrow', '\\Rightarrow ', 'Suy ra', 'suy ra'], ['\\Leftarrow', '\\Leftarrow ', 'Kéo theo ngược', ''], ['\\Leftrightarrow', '\\Leftrightarrow ', 'Tương đương', 'tuong duong'], ['\\rightarrow', '\\rightarrow ', 'Mũi tên phải', ''], ['\\leftarrow', '\\leftarrow ', 'Mũi tên trái', ''], ['\\leftrightarrow', '\\leftrightarrow ', 'Mũi tên hai chiều', ''], ['\\mapsto', '\\mapsto ', 'Ánh xạ', ''],
+    ['\\therefore', '\\therefore ', 'Vậy', ''], ['\\because', '\\because ', 'Vì', ''],
+  ]),
+  G('geo', 'Hình học', '\\angle', [
+    ['\\vec{u}', '\\vec{@}', 'Vectơ (1 chữ)', 'vecto'], ['\\overrightarrow{AB}', '\\overrightarrow{@}', 'Vectơ AB', 'vecto'], ['|\\vec{AB}|', '\\left| \\overrightarrow{@} \\right|', 'Độ dài vectơ', ''],
+    ['\\vec{a}\\cdot\\vec{b}', '\\overrightarrow{@} \\cdot \\overrightarrow{}', 'Tích vô hướng', ''],
+    ['\\widehat{AB}', '\\widehat{@}', 'Góc (dấu mũ)', 'goc'], ['\\angle', '\\angle ', 'Ký hiệu góc ∠', ''], ['{}^{\\circ}', '^{\\circ}', 'Độ (°)', 'do'],
+    ['\\overset{\\frown}{AB}', '\\overset{\\frown}{@}', 'Cung AB', 'cung'], ['\\triangle', '\\triangle ', 'Tam giác', 'tam giac'], ['\\square', '\\square ', 'Hình vuông', ''],
+    ['\\perp', '\\perp ', 'Vuông góc', 'vuong goc'], ['\\parallel', '\\parallel ', 'Song song', 'song song'], ['\\nparallel', '\\nparallel ', 'Không song song', ''], ['\\sim', '\\sim ', 'Đồng dạng', ''], ['\\cong', '\\cong ', 'Bằng nhau (≅)', ''],
+  ]),
+  G('greek', 'Hy Lạp', '\\alpha', [...'alpha beta gamma delta epsilon varepsilon zeta eta theta iota kappa lambda mu nu xi pi rho sigma tau upsilon phi varphi chi psi omega'.split(' ').map((n) => [`\\${n}`, `\\${n} `, n, 'hy lap greek']),
+    ...'Gamma Delta Theta Lambda Xi Pi Sigma Phi Psi Omega'.split(' ').map((n) => [`\\${n}`, `\\${n} `, n, 'hy lap greek hoa'])]),
+  G('space', 'Chữ & khoảng cách', '\\mathbf{A}', [
+    ['\\text{ab}', '\\text{@}', 'Chữ thường (văn bản)', 'van ban text'],
+    ['\\mathrm{d}', '\\mathrm{@}', 'Chữ đứng', 'chu dung'],
+    ['\\mathbf{v}', '\\mathbf{@}', 'Chữ đậm', 'chu dam'],
+    ['\\mathbb{R}', '\\mathbb{@}', 'Tập số (R, N, Z, Q, C)', 'tap so'],
+    ['\\mathcal{L}', '\\mathcal{@}', 'Chữ thư pháp', 'thu phap'],
+    ['\\mathsf{A}', '\\mathsf{@}', 'Chữ không chân', 'khong chan'],
+    ['a\\,b', '\\,', 'Cách mỏng', 'cach'], ['a\\;b', '\\;', 'Cách vừa', ''], ['a\\quad b', '\\quad ', 'Cách rộng', ''], ['a\\text{ }b', '\\text{ }', 'Dấu cách (văn bản)', ''],
+    ['1{,}5', '{,}', 'Dấu phẩy thập phân (1{,}5)', 'thap phan'], [';', '; ', 'Chấm phẩy', ''],
+  ]),
+];
+
+const KEY_RECENT = 'texcraft-addin-recent-symbols';
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const strip = (s) => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').toLowerCase();
+
+const faceCache = new Map();
+/** The picture on a button: the symbol drawn by KaTeX, exactly as in the live preview (our own layout only as a fallback). */
+export function face(latex) {
+  if (faceCache.has(latex)) return faceCache.get(latex);
+  let out;
+  try {
+    if (typeof katex === 'undefined') throw new Error('no katex');
+    out = `<span class="tb-math">${katex.renderToString(`\\displaystyle ${latex}`, { throwOnError: true, output: 'html', strict: 'ignore' })}</span>`;
+  } catch {
+    try {
+      const r = renderLatex(latex, { fontSize: 15, pad: 1 });
+      out = r.svg.replace(/ width="[^"]*pt" height="[^"]*pt"/, ` fill="currentColor" class="tb-svg" style="aspect-ratio:${(r.width / r.height).toFixed(3)}"`).replace(/#000/g, 'currentColor');
+    } catch { out = `<span class="tb-text">${esc(latex)}</span>`; }
+  }
+  if (typeof katex !== 'undefined') faceCache.set(latex, out);
+  return out;
+}
+
+export function insertSnippet(field, snippet) {
+  const v = field.value, s = field.selectionStart ?? v.length, e = field.selectionEnd ?? s;
+  const selected = v.slice(s, e);
+  let text = snippet, caret;
+  const at = text.indexOf('@');
+  if (at >= 0) {
+    text = text.replace('@', selected);
+    caret = selected ? s + text.length : s + at;
+  } else caret = s + text.length;
+  let out = v.slice(0, s) + text + v.slice(e);
+  const next = out[s + text.length] || '';
+  if (/\\[A-Za-z]+$/.test(text) && /[A-Za-z]/.test(next)) { out = out.slice(0, s + text.length) + ' ' + out.slice(s + text.length); if (!selected && at < 0) caret += 1; }
+  field.value = out;
+  field.setSelectionRange(caret, caret);
+  field.focus();
+  field.dispatchEvent(new Event('input', { bubbles: true }));
+  return caret;
+}
+
+export function mountEditorToolbar(root, field, { visual = null } = {}) {
+  if (!root || !field) return;
+  let recent = [];
+  try { recent = JSON.parse(localStorage.getItem(KEY_RECENT) || '[]'); } catch { recent = []; }
+  const all = GROUPS.flatMap((g) => g.items.map((it) => ({ it, group: g.id })));
+  const byKey = new Map(all.map(({ it }) => [it[1], it]));
+  let active = 'struct';
+
+  root.innerHTML = `
+    <div class="tb-search"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><input type="search" id="tb-q" placeholder="Tìm ký hiệu: phân số, tích phân, vuông góc…" autocomplete="off"></div>
+    <div class="tb-recent" id="tb-recent" hidden><span class="tb-recent-label">Gần đây</span><div class="tb-grid" id="tb-recent-grid"></div></div>
+    <div class="tb-tabs" role="tablist">${GROUPS.map((g) => `<button type="button" role="tab" class="tb-tab" data-g="${g.id}" title="${esc(g.label)}"><span class="tb-tab-icon">${face(g.icon)}</span><span class="tb-tab-label">${esc(g.label)}</span></button>`).join('')}</div>
+    <div class="tb-grid" id="tb-grid"></div>
+    <div class="tb-tip">Bôi đen chữ trong ô LaTeX rồi bấm nút để bao chữ đó vào (ví dụ bôi <code>x+1</code> rồi bấm √). Tab nhảy giữa các ô trống.</div>`;
+
+  const grid = root.querySelector('#tb-grid');
+  const btn = (it) => `<button type="button" class="tb-btn${/begin\{[pbv]?matrix\}/.test(it[0]) ? ' wide' : ''}" data-s="${esc(it[1])}" title="${esc(it[2])}  —  ${esc(it[1].replace('@', ''))}">${face(it[0])}</button>`;
+  const renderGrid = (items) => { grid.innerHTML = items.length ? items.map(btn).join('') : '<div class="tb-empty">Không có ký hiệu phù hợp.</div>'; };
+  const renderRecent = () => {
+    const items = recent.map((k) => byKey.get(k)).filter(Boolean).slice(0, 10);
+    root.querySelector('#tb-recent').hidden = !items.length;
+    root.querySelector('#tb-recent-grid').innerHTML = items.map(btn).join('');
+  };
+  const showGroup = (id) => {
+    active = id;
+    root.querySelectorAll('.tb-tab').forEach((t) => t.classList.toggle('active', t.dataset.g === id));
+    renderGrid(GROUPS.find((g) => g.id === id).items);
+  };
+  root.querySelector('.tb-tabs').addEventListener('click', (ev) => { const t = ev.target.closest('.tb-tab'); if (t) { root.querySelector('#tb-q').value = ''; showGroup(t.dataset.g); } });
+  root.querySelector('#tb-q').addEventListener('input', (ev) => {
+    const q = strip(ev.target.value.trim());
+    if (!q) { showGroup(active); return; }
+    root.querySelectorAll('.tb-tab').forEach((t) => t.classList.remove('active'));
+    renderGrid(all.filter(({ it }) => strip(`${it[2]} ${it[3]} ${it[1]}`).includes(q)).map(({ it }) => it));
+  });
+  root.addEventListener('mousedown', (ev) => { if (ev.target.closest('.tb-btn')) ev.preventDefault(); });   // keep the caret / selection in the LaTeX box
+  root.addEventListener('click', (ev) => {
+    const b = ev.target.closest('.tb-btn');
+    if (!b) return;
+    const snippet = b.dataset.s;
+    if (visual && visual.active()) visual.insert(snippet); else insertSnippet(field, snippet);
+    recent = [snippet, ...recent.filter((k) => k !== snippet)].slice(0, 12);
+    try { localStorage.setItem(KEY_RECENT, JSON.stringify(recent)); } catch { /* ignore */ }
+    renderRecent();
+  });
+  showGroup('struct');
+  renderRecent();
+  void nextStop;
+}

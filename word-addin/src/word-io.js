@@ -1,1 +1,332 @@
-import{paragraphPackages as E}from"./ooxml.js";import{canReadCompressed as P,readCompressedPackage as $}from"./docx-package.js";const O=25,C=512*1024;let k="ch\u01B0a \u0111\u1ECDc";const B=()=>k;function f(t){if(t?.aborted){const e=new Error("\u0110\xE3 h\u1EE7y chuy\u1EC3n \u0111\u1ED5i.");throw e.name="AbortError",e}}function b(){const t=typeof Office<"u"?Office.context?.diagnostics?.platform||Office.context?.platform:"";return/^mac/i.test(String(t||""))?1:O}function v(t,e,n,r){const a=e.map(i=>i.index+1).sort((i,m)=>i-m),o=a.length===1?String(a[0]):"".concat(a[0],"\u2013").concat(a[a.length-1]),s=new Error("Kh\xF4ng ghi \u0111\u01B0\u1EE3c \u0111o\u1EA1n ".concat(o," (\u0111\xE3 ghi ").concat(n,"/").concat(r," \u0111o\u1EA1n): ").concat(t.message||t));return s.code=t.code,s.debugInfo=t.debugInfo,s}const z=()=>typeof Word<"u"&&typeof Office<"u";async function l(t){return Word.run(t)}async function W({scanOnly:t=!1}={}){if(typeof Office<"u"&&Office.context?.document?.getFileAsync&&P())try{const[e,n]=await Promise.all([$({scanOnly:t}),l(async r=>{const a=r.document.body.paragraphs;return a.load("items/$none"),await r.sync(),a.items.length})]);return k="DOCX (getFileAsync)",{pkg:e,paragraphCount:n}}catch(e){k="OOXML d\u1EF1 ph\xF2ng: "+e.message}else k="OOXML (host ch\u01B0a h\u1ED7 tr\u1EE3 \u0111\u1ECDc DOCX tr\u1EF1c ti\u1EBFp)";return l(async e=>{const n=e.document.body.getOoxml(),r=e.document.body.paragraphs;return r.load("items/$none"),await e.sync(),{pkg:n.value,paragraphCount:r.items.length}})}async function D(){return l(async t=>{const e=t.document.getSelection().paragraphs;return e.load("items/$none"),await t.sync(),e.items.length})}async function R({wholeParagraphs:t=!1}={}){return l(async e=>{const n=e.document.getSelection(),r=n.paragraphs,o=(t?r.getFirst().getRange("Whole").expandTo(r.getLast().getRange("Whole")):n).getOoxml();return r.load("items/$none"),await e.sync(),{pkg:o.value,paragraphCount:r.items.length}})}async function X(t,e=()=>{},{signal:n,scope:r={kind:"all"}}={}){f(n);let a;try{const{pkg:o,paragraphCount:s}=await(r.kind==="selection"?R({wholeParagraphs:!0}):W());f(n),a=E(o,s,t)}catch(o){if(o.name==="AbortError")throw o}return a!=null?(e(a.length,a.length),a):S(r,e,{signal:n})}async function H(){try{return await T()}catch{const t={};try{t.selPkg=(await R()).pkg}catch{}try{t.paraPkg=(await S({kind:"selection"}))[0]?.pkg}catch{}if(!t.selPkg&&!t.paraPkg)throw new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c v\xF9ng ch\u1ECDn t\u1EEB Word.");return t}}async function T(){try{return await l(async t=>{const e=t.document.getSelection(),n=e.paragraphs.getFirst();e.load&&e.load("isEmpty");const r=e.getOoxml(),a=n.getRange("Whole").getOoxml(),o=n.getRange("Start").expandTo(e.getRange("Start")).getOoxml(),s=e.getRange("Start").expandTo(n.getRange("End")).getOoxml();return await t.sync(),{selPkg:r.value,paraPkg:a.value,beforePkg:o.value,afterPkg:s.value,selectionEmpty:e.isEmpty}})}catch{}return l(async t=>{const e=t.document.getSelection();e.load&&e.load("isEmpty");const n=e.getOoxml(),r=e.paragraphs;r.load("items/$none"),await t.sync();const a=r.items[0],o=a?a.getRange("Whole").getOoxml():null;await t.sync();const s={selPkg:n.value,paraPkg:o?o.value:null,beforePkg:null,afterPkg:null,selectionEmpty:e.isEmpty};try{if(a){const i=a.getRange("Start").expandTo(e.getRange("Start")).getOoxml();await t.sync(),s.beforePkg=i.value}}catch{}try{if(a){const i=e.getRange("Start").expandTo(a.getRange("End")).getOoxml();await t.sync(),s.afterPkg=i.value}}catch{}return s})}async function K(){return l(async t=>{const e=t.document.getSelection().font;return e.load("size"),await t.sync(),Number(e.size)||0})}async function L(t){return l(async e=>{e.document.getSelection().insertOoxml(t,"Replace"),await e.sync()})}async function S(t,e=()=>{},{signal:n}={}){return f(n),l(async r=>{const a=t.kind==="selection"?r.document.getSelection().paragraphs:r.document.body.paragraphs;a.load("items/$none"),await r.sync();const o=t.kind==="indexes"?t.indexes:a.items.map((i,m)=>m),s=[];for(let i=0;i<o.length;i+=O){f(n);const m=o.slice(i,i+O);try{const d=m.map(h=>{const g=a.items[h];return b()===1?g.getRange("Whole").getOoxml():g.getOoxml()});await r.sync(),m.forEach((h,g)=>s.push({index:h,pkg:d[g].value}))}catch(d){for(const h of m){f(n);try{const g=await l(async u=>{const c=t.kind==="selection"?u.document.getSelection().paragraphs:u.document.body.paragraphs;c.load("items/$none"),await u.sync();const p=c.items[h];if(!p)throw new Error("V\u1ECB tr\xED \u0111o\u1EA1n \u0111\xE3 thay \u0111\u1ED5i. H\xE3y \u0111\u1ECDc l\u1EA1i t\xE0i li\u1EC7u.");const x=p.getRange("Whole").getOoxml();return await u.sync(),x.value});s.push({index:h,pkg:g})}catch(g){const u=new Error("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c \u0111o\u1EA1n ".concat(h+1).concat(t.kind==="selection"?" trong v\xF9ng ch\u1ECDn":"",": ").concat(g.message||g));throw u.code=g.code||d.code,u.debugInfo=g.debugInfo||d.debugInfo,u}}}e(Math.min(i+O,o.length),o.length)}return s})}async function M(t,e,n,r=()=>{},{signal:a}={}){return f(a),l(async o=>{const s=t.kind==="selection"?o.document.getSelection().paragraphs:o.document.body.paragraphs;s.load("items/$none");const i=o.document.body.paragraphs;i.load("items/$none"),await o.sync();const m=i.items.length,d=[...e].sort((c,p)=>p.index-c.index),h=new Set;for(const c of d){if(!Number.isInteger(c.index)||!s.items[c.index]||h.has(c.index))throw new Error("V\u1ECB tr\xED \u0111o\u1EA1n kh\xF4ng h\u1EE3p l\u1EC7 ho\u1EB7c tr\xF9ng l\u1EB7p: ".concat(c.index+1,". H\xE3y \u0111\u1ECDc l\u1EA1i t\xE0i li\u1EC7u."));h.add(c.index)}const g=b();for(let c=0;c<d.length;){f(a);const p=[];let x=0;for(;c+p.length<d.length&&p.length<g;){const y=d[c+p.length],w=y.pkg.length*2;if(p.length&&x+w>C)break;p.push(y),x+=w}try{for(const y of p){const w=s.items[y.index];(n==="paragraph"?w:w.getRange("Content")).insertOoxml(y.pkg,"Replace")}await o.sync()}catch(y){throw v(y,p,c,d.length)}c+=p.length,r(c,d.length),a&&c<d.length&&await new Promise(y=>setTimeout(y,0))}const u=o.document.body.paragraphs;return u.load("items/$none"),await o.sync(),{before:m,after:u.items.length}})}async function N(t){return l(async e=>{const n=e.document.body.paragraphs;n.load("items/$none"),await e.sync(),n.items[t]&&n.items[t].select(),await e.sync()})}async function V(t){return l(async e=>{e.document.body.insertOoxml(t,"End"),await e.sync()})}async function _(t){return l(async e=>{e.document.body.insertOoxml(t,"Replace"),await e.sync()})}async function Y(t,e){return l(async n=>{const r=n.document.body;r.insertOoxml(t,"Replace");const a=r.paragraphs;return a.load("items/$none"),await n.sync(),{before:e,after:a.items.length}})}async function j(t,{footerPkg:e=null}={}){return l(async n=>{const r=n.application.createDocument();if(r.body.insertOoxml(t,"Replace"),await n.sync(),e)try{r.sections.getFirst().getFooter("Primary").insertOoxml(e,"Replace"),await n.sync()}catch{}r.open(),await n.sync()})}export{B as bodyReadRoute,z as hasWord,V as insertAtEnd,j as openAsNewDocument,W as readBody,X as readConversionParagraphs,H as readCursorContext,S as readParagraphs,R as readSelection,_ as replaceBody,L as replaceSelection,N as selectParagraph,K as selectionFontSize,D as selectionParagraphCount,Y as writeBodySnapshot,M as writeParagraphs};
+// The only file that talks to Word (Office.js). Everything else works on flat-OPC strings, so it can be tested in node
+// and against taskpane/mock-word.js in a browser.
+import { paragraphPackages } from './ooxml.js';
+import { canReadCompressed, readCompressedPackage } from './docx-package.js';
+
+const BATCH = 25;
+const WRITE_BYTES = 512 * 1024;
+let lastReadRoute = 'chưa đọc';
+export const bodyReadRoute = () => lastReadRoute;
+
+function checkCancelled(signal) {
+  if (signal?.aborted) {
+    const error = new Error('Đã hủy chuyển đổi.');
+    error.name = 'AbortError';
+    throw error;
+  }
+}
+
+function writeBatchSize() {
+  // Keep the Mac path equivalent to a successful single-paragraph conversion.
+  const platform = typeof Office !== 'undefined' ? (Office.context?.diagnostics?.platform || Office.context?.platform) : '';
+  return /^mac/i.test(String(platform || '')) ? 1 : BATCH;
+}
+
+function paragraphWriteError(error, batch, completed, total) {
+  const indexes = batch.map(it => it.index + 1).sort((a, b) => a - b);
+  const location = indexes.length === 1 ? String(indexes[0]) : `${indexes[0]}–${indexes[indexes.length - 1]}`;
+  const out = new Error(`Không ghi được đoạn ${location} (đã ghi ${completed}/${total} đoạn): ${error.message || error}`);
+  out.code = error.code;
+  out.debugInfo = error.debugInfo;
+  return out;
+}
+
+export const hasWord = () => typeof Word !== 'undefined' && typeof Office !== 'undefined';
+
+async function run(fn) { return Word.run(fn); }
+
+export async function readBody({ scanOnly = false } = {}) {
+  if (typeof Office !== 'undefined' && Office.context?.document?.getFileAsync && canReadCompressed()) {
+    try {
+      const [pkg, paragraphCount] = await Promise.all([readCompressedPackage({ scanOnly }), run(async context => {
+        const paragraphs = context.document.body.paragraphs;
+        paragraphs.load('items/$none'); await context.sync();
+        return paragraphs.items.length;
+      })]);
+      lastReadRoute = 'DOCX (getFileAsync)';
+      return { pkg, paragraphCount };
+    } catch (error) { lastReadRoute = 'OOXML dự phòng: ' + error.message; }
+  } else {
+    lastReadRoute = 'OOXML (host chưa hỗ trợ đọc DOCX trực tiếp)';
+  }
+  return run(async (context) => {
+    const ox = context.document.body.getOoxml();
+    const paras = context.document.body.paragraphs;
+    paras.load('items/$none');
+    await context.sync();
+    return { pkg: ox.value, paragraphCount: paras.items.length };
+  });
+}
+
+export async function selectionParagraphCount() {
+  return run(async (context) => {
+    const paras = context.document.getSelection().paragraphs;
+    paras.load('items/$none');
+    await context.sync();
+    return paras.items.length;
+  });
+}
+
+export async function readSelection({ wholeParagraphs = false } = {}) {
+  return run(async (context) => {
+    const sel = context.document.getSelection();
+    const paras = sel.paragraphs;
+    // Conversion replaces entire paragraphs, including text outside a partial selection.
+    const range = wholeParagraphs
+      ? paras.getFirst().getRange('Whole').expandTo(paras.getLast().getRange('Whole'))
+      : sel;
+    const ox = range.getOoxml();
+    paras.load('items/$none');
+    await context.sync();
+    return { pkg: ox.value, paragraphCount: paras.items.length };
+  });
+}
+
+/** One body snapshot for flat documents; preserve host paragraph semantics for complex layouts. */
+export async function readConversionParagraphs(kinds, onProgress = () => {}, { signal, scope = { kind: 'all' } } = {}) {
+  checkCancelled(signal);
+  let items;
+  try {
+    const { pkg, paragraphCount } = await (scope.kind === 'selection' ? readSelection({ wholeParagraphs: true }) : readBody());
+    checkCancelled(signal);
+    items = paragraphPackages(pkg, paragraphCount, kinds);
+  } catch (error) {
+    if (error.name === 'AbortError') throw error;
+    /* A host may export individual paragraphs even when body export fails. */
+  }
+  if (items != null) { onProgress(items.length, items.length); return items; }
+  return readParagraphs(scope, onProgress, { signal });
+}
+
+/** OOXML around the cursor: the selection, its first paragraph, and that paragraph's start up to the selection start. */
+export async function readCursorContext() {
+  try { return await readCursorContextRanges(); } catch {
+    // Older hosts may not support ranges; automatic and manual loading share this fallback.
+    const ctx = {};
+    try { ctx.selPkg = (await readSelection()).pkg; } catch { /* try paragraph */ }
+    try { ctx.paraPkg = (await readParagraphs({ kind: 'selection' }))[0]?.pkg; } catch { /* selection may suffice */ }
+    if (!ctx.selPkg && !ctx.paraPkg) throw new Error('Không đọc được vùng chọn từ Word.');
+    return ctx;
+  }
+}
+
+async function readCursorContextRanges() {
+  // Fast path: one round trip for selection, paragraph and text before the cursor.
+  try {
+    return await run(async (context) => {
+      const sel = context.document.getSelection();
+      const para = sel.paragraphs.getFirst();
+      if (sel.load) sel.load('isEmpty');
+      const selOx = sel.getOoxml();
+      const paraOx = para.getRange('Whole').getOoxml();
+      const beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml();
+      const afterOx = sel.getRange('Start').expandTo(para.getRange('End')).getOoxml();
+      await context.sync();
+      return { selPkg: selOx.value, paraPkg: paraOx.value, beforePkg: beforeOx.value, afterPkg: afterOx.value, selectionEmpty: sel.isEmpty };
+    });
+  } catch { /* fall back to the step-by-step read below */ }
+  return run(async (context) => {
+    const sel = context.document.getSelection();
+    if (sel.load) sel.load('isEmpty');
+    const selOx = sel.getOoxml();
+    const paras = sel.paragraphs;
+    paras.load('items/$none');
+    await context.sync();
+    const para = paras.items[0];
+    const paraOx = para ? para.getRange('Whole').getOoxml() : null;
+    // Resolve the useful data before the optional range operation can fail at sync().
+    await context.sync();
+    const result = { selPkg: selOx.value, paraPkg: paraOx ? paraOx.value : null, beforePkg: null, afterPkg: null, selectionEmpty: sel.isEmpty };
+    try {
+      if (para) {
+        const beforeOx = para.getRange('Start').expandTo(sel.getRange('Start')).getOoxml();
+        await context.sync();
+        result.beforePkg = beforeOx.value;
+      }
+    } catch { /* cursor range unavailable: keep the selection and paragraph */ }
+    try {
+      if (para) {
+        const afterOx = sel.getRange('Start').expandTo(para.getRange('End')).getOoxml();
+        await context.sync();
+        result.afterPkg = afterOx.value;
+      }
+    } catch { /* prefix alone may still locate the equation */ }
+    return result;
+  });
+}
+
+/** Font size (points) at the cursor / of the selection; 0 when it is mixed or unknown. */
+export async function selectionFontSize() {
+  return run(async (context) => {
+    const font = context.document.getSelection().font;
+    font.load('size');
+    await context.sync();
+    return Number(font.size) || 0;
+  });
+}
+
+export async function replaceSelection(pkg) {
+  return run(async (context) => {
+    const sel = context.document.getSelection();
+    sel.insertOoxml(pkg, 'Replace');
+    await context.sync();
+  });
+}
+
+/** Read OOXML of paragraphs. scope: {kind:'selection'} | {kind:'indexes', indexes:[...]} | {kind:'all'}. onProgress(done,total). */
+export async function readParagraphs(scope, onProgress = () => {}, { signal } = {}) {
+  checkCancelled(signal);
+  return run(async (context) => {
+    const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
+    coll.load('items/$none');
+    await context.sync();
+    const idx = scope.kind === 'indexes' ? scope.indexes : coll.items.map((_p, i) => i);
+    const out = [];
+    for (let i = 0; i < idx.length; i += BATCH) {
+      checkCancelled(signal);
+      const slice = idx.slice(i, i + BATCH);
+      try {
+        // Word Mac can reject Paragraph.getOoxml for embedded MathType objects.
+        // Export the paragraph's full range instead, retaining its paragraph mark.
+        const calls = slice.map((k) => {
+          const p = coll.items[k];
+          return writeBatchSize() === 1 ? p.getRange('Whole').getOoxml() : p.getOoxml();
+        });
+        await context.sync();
+        slice.forEach((k, j) => out.push({ index: k, pkg: calls[j].value }));
+      } catch (batchError) {
+        // Read-only retries use fresh contexts: a rejected sync may poison the old one.
+        for (const k of slice) {
+          checkCancelled(signal);
+          try {
+            const pkg = await run(async retry => {
+              const paragraphs = scope.kind === 'selection' ? retry.document.getSelection().paragraphs : retry.document.body.paragraphs;
+              paragraphs.load('items/$none');
+              await retry.sync();
+              const p = paragraphs.items[k];
+              if (!p) throw new Error('Vị trí đoạn đã thay đổi. Hãy đọc lại tài liệu.');
+              const ox = p.getRange('Whole').getOoxml();
+              await retry.sync();
+              return ox.value;
+            });
+            out.push({ index: k, pkg });
+          } catch (error) {
+            const detail = new Error(`Không đọc được đoạn ${k + 1}${scope.kind === 'selection' ? ' trong vùng chọn' : ''}: ${error.message || error}`);
+            detail.code = error.code || batchError.code;
+            detail.debugInfo = error.debugInfo || batchError.debugInfo;
+            throw detail;
+          }
+        }
+      }
+      onProgress(Math.min(i + BATCH, idx.length), idx.length);
+    }
+    return out;
+  });
+}
+
+/**
+ * Replace paragraphs with new packages. items: [{index, pkg}] refer to the CURRENT document.
+ * Write backwards so paragraph insertion cannot shift an earlier target. mode: 'content' | 'paragraph'.
+ * Returns {before, after} paragraph counts so callers can spot stray paragraphs.
+ */
+export async function writeParagraphs(scope, items, mode, onProgress = () => {}, { signal } = {}) {
+  checkCancelled(signal);
+  return run(async (context) => {
+    const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
+    coll.load('items/$none');
+    const all = context.document.body.paragraphs;
+    all.load('items/$none');
+    await context.sync();
+    const before = all.items.length;
+    const ordered = [...items].sort((a, b) => b.index - a.index);
+    const seen = new Set();
+    for (const it of ordered) {
+      if (!Number.isInteger(it.index) || !coll.items[it.index] || seen.has(it.index)) {
+        throw new Error(`Vị trí đoạn không hợp lệ hoặc trùng lặp: ${it.index + 1}. Hãy đọc lại tài liệu.`);
+      }
+      seen.add(it.index);
+    }
+    const limit = writeBatchSize();
+    for (let i = 0; i < ordered.length;) {
+      checkCancelled(signal);
+      const batch = [];
+      let bytes = 0;
+      while (i + batch.length < ordered.length && batch.length < limit) {
+        const it = ordered[i + batch.length];
+        // UTF-16 size is a conservative estimate for these mostly XML/base64 packages.
+        const size = it.pkg.length * 2;
+        if (batch.length && bytes + size > WRITE_BYTES) break;
+        batch.push(it); bytes += size;
+      }
+      try {
+        for (const it of batch) {
+          const p = coll.items[it.index];
+          const target = mode === 'paragraph' ? p : p.getRange('Content');
+          target.insertOoxml(it.pkg, 'Replace');
+        }
+        await context.sync();
+      } catch (error) {
+        // A rejected sync may have applied some edits. Never retry the same write automatically.
+        throw paragraphWriteError(error, batch, i, ordered.length);
+      }
+      i += batch.length;
+      onProgress(i, ordered.length);
+      if (signal && i < ordered.length) await new Promise(resolve => setTimeout(resolve, 0));
+    }
+    const again = context.document.body.paragraphs;
+    again.load('items/$none');
+    await context.sync();
+    return { before, after: again.items.length };
+  });
+}
+
+export async function selectParagraph(index) {
+  return run(async (context) => {
+    const paras = context.document.body.paragraphs;
+    paras.load('items/$none');
+    await context.sync();
+    if (paras.items[index]) paras.items[index].select();
+    await context.sync();
+  });
+}
+
+export async function insertAtEnd(pkg) {
+  return run(async (context) => {
+    context.document.body.insertOoxml(pkg, 'End');
+    await context.sync();
+  });
+}
+
+export async function replaceBody(pkg) {
+  return run(async (context) => {
+    context.document.body.insertOoxml(pkg, 'Replace');
+    await context.sync();
+  });
+}
+
+/** Replace a snapshot in one OOXML insertion, preserving the package's tables and section properties. */
+export async function writeBodySnapshot(pkg, before) {
+  return run(async (context) => {
+    const body = context.document.body;
+    body.insertOoxml(pkg, 'Replace');
+    // Load the post-write count in the same sync, after the insertion command.
+    const paragraphs = body.paragraphs;
+    paragraphs.load('items/$none');
+    await context.sync();
+    return { before, after: paragraphs.items.length };
+  });
+}
+
+/** New document with the given body package (opens a window). Throws when the host cannot do it; the caller falls back. */
+export async function openAsNewDocument(pkg, { footerPkg = null } = {}) {
+  return run(async (context) => {
+    const doc = context.application.createDocument();
+    doc.body.insertOoxml(pkg, 'Replace');
+    await context.sync();
+    if (footerPkg) {   // footer of the first section; a failure here must not lose the exam itself
+      try { doc.sections.getFirst().getFooter('Primary').insertOoxml(footerPkg, 'Replace'); await context.sync(); } catch { /* footer not supported by this Word */ }
+    }
+    doc.open();
+    await context.sync();
+  });
+}

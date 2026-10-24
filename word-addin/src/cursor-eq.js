@@ -1,1 +1,33 @@
-import{scanPackage as d}from"./ooxml.js";const u=l=>l?d(l).equations.slice().sort((c,t)=>c.pos-t.pos):[];function w({selPkg:l,paraPkg:c,beforePkg:t,afterPkg:h,selectionEmpty:f}={}){const g=u(l),o=g.filter(e=>e.latex!==null);if(o.length&&(f===!1||f!==!0&&o.length===1))return{eq:o[0],how:"selection",count:o.length,index:0};const n=u(c),s=[...g,...n].filter(e=>e.error).map(e=>e.error);if(!n.length)return{eq:null,how:"none",found:0,errors:s};let i=0,p="paragraph";if(n.length>1){if(!t&&!h)return{eq:null,how:"none",found:n.length,errors:["Word ch\u01B0a cung c\u1EA5p v\u1ECB tr\xED con tr\u1ECF. H\xE3y b\xF4i \u0111en c\xF4ng th\u1EE9c c\u1EA7n l\u1EA5y.",...s]};const e=u(t).length,r=h?u(h).length:null,q=!t&&r!==null?n.length-r:e-(r===null||e+r>n.length?1:0);i=Math.min(Math.max(q,0),n.length-1),p="cursor"}const a=n[i];return a.latex===null?{eq:null,how:"none",found:n.length,errors:[a.error,...s].filter(Boolean)}:{eq:a,how:p,count:n.length,index:i}}export{w as pickEquation};
+// Which equation does the user mean? Word gives the OOXML of the selection, but a collapsed cursor inside an equation
+// selects nothing, so fall back to the paragraph and use the part of it before the cursor to count equations.
+import { scanPackage } from './ooxml.js';
+
+const list = (pkg) => (pkg ? scanPackage(pkg).equations.slice().sort((a, b) => a.pos - b.pos) : []);
+
+/**
+ * {selPkg, paraPkg, beforePkg}: OOXML of the selection, of its paragraph, and of the paragraph's start up to the cursor.
+ * Returns {eq, how: 'selection'|'paragraph'|'cursor'|'none', count, index, found, errors}.
+ */
+export function pickEquation({ selPkg, paraPkg, beforePkg, afterPkg, selectionEmpty } = {}) {
+  const sel = list(selPkg), selOk = sel.filter((e) => e.latex !== null);
+  if (selOk.length && (selectionEmpty === false || (selectionEmpty !== true && selOk.length === 1))) return { eq: selOk[0], how: 'selection', count: selOk.length, index: 0 };
+  const para = list(paraPkg);
+  const errors = [...sel, ...para].filter((e) => e.error).map((e) => e.error);
+  if (!para.length) return { eq: null, how: 'none', found: 0, errors };
+  let index = 0, how = 'paragraph';
+  if (para.length > 1) {
+    if (!beforePkg && !afterPkg) return { eq: null, how: 'none', found: para.length,
+      errors: ['Word chưa cung cấp vị trí con trỏ. Hãy bôi đen công thức cần lấy.', ...errors] };
+    const before = list(beforePkg).length;
+    // A cursor inside $...$ leaves an incomplete formula in the prefix. Native
+    // equations can instead be exported in BOTH halves. The suffix distinguishes them.
+    const after = afterPkg ? list(afterPkg).length : null;
+    const position = !beforePkg && after !== null ? para.length - after
+      : before - (after === null || before + after > para.length ? 1 : 0);
+    index = Math.min(Math.max(position, 0), para.length - 1);
+    how = 'cursor';
+  }
+  const eq = para[index];
+  if (eq.latex === null) return { eq: null, how: 'none', found: para.length, errors: [eq.error, ...errors].filter(Boolean) };
+  return { eq, how, count: para.length, index };
+}

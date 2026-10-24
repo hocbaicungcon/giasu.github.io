@@ -1,1 +1,66 @@
-import{MT_FONTS as f}from"../src/mtef-writer.js";import*as v from"../src/word-io.js";const m="texcraft.mt",r=["auto","10","10.5","11","12","13","14"];let e={font:"times",size:"auto",picture:"emf",layout:"classic"};try{Object.assign(e,JSON.parse(localStorage.getItem(m)||"{}"))}catch{}const p=()=>{try{localStorage.setItem(m,JSON.stringify(e))}catch{}};async function d(a=12){try{const i=await v.selectionFontSize();return i>0?i:a}catch{return a}}async function h({withFont:a=!0}={}){const i=e.size==="auto"?await d():Number(e.size);return{font:a?e.font:null,size:i,vector:e.picture!=="png",display:e.layout==="classic"}}const y=()=>e.layout==="classic",S=()=>({font:e.font,size:e.size==="auto"?"auto":Number(e.size),vector:e.picture!=="png",display:e.layout==="classic"}),b=()=>e.size==="auto"?d():Promise.resolve(Number(e.size));function z(a,{fontRow:i=!0,onChange:c}={}){a.classList.add("mt-settings"),a.innerHTML=(i?'<label class="field"><span>Ki\u1EC3u ch\u1EEF</span><select data-mt="font">'.concat(Object.entries(f).map(([s,t])=>'<option value="'.concat(s,'">').concat(t.label,"</option>")).join(""),"</select></label>"):"")+(i?'<label class="field"><span>Ki\u1EC3u hi\u1EC3n th\u1ECB</span><select data-mt="layout"><option value="classic">C\u1ED5 \u0111i\u1EC3n: c\u1EE1 l\u1EDBn nh\u01B0 ri\xEAng d\xF2ng</option><option value="compact">G\u1ECDn: nh\u1ECF theo d\xF2ng ch\u1EEF</option></select></label>':"")+(i?'<label class="field"><span>\u1EA2nh</span><select data-mt="picture"><option value="emf">Vector EMF (n\xE9t)</option><option value="png">\u1EA2nh PNG</option></select></label>':"")+'<label class="field"><span>C\u1EE1 ch\u1EEF</span><select data-mt="size">'.concat(r.map(s=>'<option value="'.concat(s,'">').concat(s==="auto"?"Theo v\u0103n b\u1EA3n (t\u1EF1 \u0111\u1ED9ng)":s+" pt","</option>")).join(""),'<option value="custom">S\u1ED1 kh\xE1c\u2026</option></select><input type="number" data-mt-custom min="4" max="200" step="0.5" placeholder="pt" style="width:70px;margin-left:6px" hidden></label>')+(i?'<div class="hint">Ki\u1EC3u ch\u1EEF c\xF3 t\xE1c d\u1EE5ng khi m\u1EDF l\u1EA1i b\u1EB1ng MathType; font ghi \u201Cc\u1EA7n c\xE0i font\u201D ph\u1EA3i c\xF3 tr\xEAn m\xE1y m\u1EDF t\xE0i li\u1EC7u.</div>':"");const l=()=>document.querySelectorAll(".mt-settings select").forEach(s=>{const t=String(e[s.dataset.mt]);if(s.dataset.mt!=="size"){s.value=t;return}const n=!r.includes(t)||u;s.value=n?"custom":t;const o=s.parentNode.querySelector("[data-mt-custom]");o&&(o.hidden=!n,n&&document.activeElement!==o&&(o.value=r.includes(t)?"":t))});let u=!1;a.addEventListener("input",s=>{const t=s.target.closest("[data-mt-custom]");if(!t)return;const n=parseFloat(String(t.value).replace(",","."));n>=4&&n<=200&&(e.size=String(n),p(),document.querySelectorAll(".mt-settings [data-mt-custom]").forEach(o=>{o!==t&&(o.value=t.value)}),c&&c())}),a.addEventListener("change",s=>{const t=s.target.closest("select[data-mt]");if(t){if(t.dataset.mt==="size"&&t.value==="custom"){u=!0,l();const n=t.parentNode.querySelector("[data-mt-custom]");n&&n.focus();return}u=!1,e[t.dataset.mt]=t.value,p(),l(),c&&c()}}),l()}export{y as classicLayout,b as figurePt,z as mountMtSettings,S as mtConvertOptions,h as mtOptions,d as surroundingPt};
+// Shared "font / size" choice for MathType objects and figure labels (kept in localStorage, synced between every panel that shows it).
+import { MT_FONTS } from '../src/mtef-writer.js';
+import * as io from '../src/word-io.js';
+
+const KEY = 'texcraft.mt';
+const SIZES = ['auto', '10', '10.5', '11', '12', '13', '14'];
+let state = { font: 'times', size: 'auto', picture: 'emf', layout: 'classic' };
+try { Object.assign(state, JSON.parse(localStorage.getItem(KEY) || '{}')); } catch { /* storage unavailable */ }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* ignore */ } };
+
+/** Font size (pt) of the text at the Word cursor; 12 when Word is not available. */
+export async function surroundingPt(fallback = 12) {
+  try { const v = await io.selectionFontSize(); return v > 0 ? v : fallback; } catch { return fallback; }
+}
+
+/** {font, size} ready for makeMathTypePackage: size 'auto' is resolved from the cursor. */
+export async function mtOptions({ withFont = true } = {}) {
+  const size = state.size === 'auto' ? await surroundingPt() : Number(state.size);
+  return { font: withFont ? state.font : null, size, vector: state.picture !== 'png', display: state.layout === 'classic' };
+}
+/** True when MathType objects are drawn in the classic style (full-size fractions and big operators even inline). */
+export const classicLayout = () => state.layout === 'classic';
+/** For convertNativeToMathType: 'auto' stays per-equation. */
+export const mtConvertOptions = () => ({ font: state.font, size: state.size === 'auto' ? 'auto' : Number(state.size), vector: state.picture !== 'png', display: state.layout === 'classic' });
+export const figurePt = () => (state.size === 'auto' ? surroundingPt() : Promise.resolve(Number(state.size)));
+
+/** Mount the two selects into `root`; onChange fires for any panel's change. */
+export function mountMtSettings(root, { fontRow = true, onChange } = {}) {
+  root.classList.add('mt-settings');
+  root.innerHTML = (fontRow ? `<label class="field"><span>Kiểu chữ</span><select data-mt="font">${Object.entries(MT_FONTS).map(([k, f]) => `<option value="${k}">${f.label}</option>`).join('')}</select></label>` : '') +
+    (fontRow ? `<label class="field"><span>Kiểu hiển thị</span><select data-mt="layout"><option value="classic">Cổ điển: cỡ lớn như riêng dòng</option><option value="compact">Gọn: nhỏ theo dòng chữ</option></select></label>` : '') +
+    (fontRow ? `<label class="field"><span>Ảnh</span><select data-mt="picture"><option value="emf">Vector EMF (nét)</option><option value="png">Ảnh PNG</option></select></label>` : '') +
+    `<label class="field"><span>Cỡ chữ</span><select data-mt="size">${SIZES.map((s) => `<option value="${s}">${s === 'auto' ? 'Theo văn bản (tự động)' : s + ' pt'}</option>`).join('')}<option value="custom">Số khác…</option></select><input type="number" data-mt-custom min="4" max="200" step="0.5" placeholder="pt" style="width:70px;margin-left:6px" hidden></label>` +
+    (fontRow ? '<div class="hint">Kiểu chữ có tác dụng khi mở lại bằng MathType; font ghi “cần cài font” phải có trên máy mở tài liệu.</div>' : '');
+  const sync = () => document.querySelectorAll('.mt-settings select').forEach((el) => {
+    const v = String(state[el.dataset.mt]);
+    if (el.dataset.mt !== 'size') { el.value = v; return; }
+    const custom = !SIZES.includes(v) || customOpen;
+    el.value = custom ? 'custom' : v;
+    const num = el.parentNode.querySelector('[data-mt-custom]');
+    if (num) { num.hidden = !custom; if (custom && document.activeElement !== num) num.value = SIZES.includes(v) ? '' : v; }
+  });
+  let customOpen = false;
+  root.addEventListener('input', (ev) => {
+    const num = ev.target.closest('[data-mt-custom]');
+    if (!num) return;
+    const n = parseFloat(String(num.value).replace(',', '.'));
+    if (!(n >= 4 && n <= 200)) return;
+    state.size = String(n); save();
+    document.querySelectorAll('.mt-settings [data-mt-custom]').forEach((o) => { if (o !== num) o.value = num.value; });
+    if (onChange) onChange();
+  });
+  root.addEventListener('change', (ev) => {
+    const el = ev.target.closest('select[data-mt]');
+    if (!el) return;
+    if (el.dataset.mt === 'size' && el.value === 'custom') {
+      customOpen = true; sync();
+      const num = el.parentNode.querySelector('[data-mt-custom]'); if (num) num.focus();
+      return;
+    }
+    customOpen = false;
+    state[el.dataset.mt] = el.value; save(); sync();
+    if (onChange) onChange();
+  });
+  sync();
+}

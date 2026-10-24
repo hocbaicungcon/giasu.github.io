@@ -1,1 +1,98 @@
-import{escapeXml as w}from"./xml.js";const b=(()=>{const o=new Uint32Array(256);for(let e=0;e<256;e++){let s=e;for(let c=0;c<8;c++)s=s&1?3988292384^s>>>1:s>>>1;o[e]=s>>>0}return o})(),k=o=>{let e=4294967295;for(let s=0;s<o.length;s++)e=b[(e^o[s])&255]^e>>>8;return(e^4294967295)>>>0},y=o=>new TextEncoder().encode(o);function I(o){const e=[],s=[];let c=0;for(const t of o){const n=y(t.name),r=typeof t.data=="string"?y(t.data):t.data,i=k(r),g=new Uint8Array(30+n.length),f=new DataView(g.buffer);f.setUint32(0,67324752,!0),f.setUint16(4,20,!0),f.setUint16(6,2048,!0),f.setUint16(8,0,!0),f.setUint16(10,0,!0),f.setUint16(12,33,!0),f.setUint32(14,i,!0),f.setUint32(18,r.length,!0),f.setUint32(22,r.length,!0),f.setUint16(26,n.length,!0),g.set(n,30);const u=new Uint8Array(46+n.length),m=new DataView(u.buffer);m.setUint32(0,33639248,!0),m.setUint16(4,20,!0),m.setUint16(6,20,!0),m.setUint16(8,2048,!0),m.setUint16(12,0,!0),m.setUint16(14,33,!0),m.setUint32(16,i,!0),m.setUint32(20,r.length,!0),m.setUint32(24,r.length,!0),m.setUint16(28,n.length,!0),m.setUint32(42,c,!0),u.set(n,46),e.push(g,r),s.push(u),c+=g.length+r.length}const d=s.reduce((t,n)=>t+n.length,0),p=new Uint8Array(22),a=new DataView(p.buffer);a.setUint32(0,101010256,!0),a.setUint16(8,o.length,!0),a.setUint16(10,o.length,!0),a.setUint32(12,d,!0),a.setUint32(16,c,!0);const x=[...e,...s,p],l=new Uint8Array(x.reduce((t,n)=>t+n.length,0));let h=0;for(const t of x)l.set(t,h),h+=t.length;return l}const F=o=>{let e="";for(o++;o>0;o=Math.floor((o-1)/26))e=String.fromCharCode(65+(o-1)%26)+e;return e};function T(o,e={}){const s=e.sheet||"Sheet1",c=(l,h,t)=>{if(l==null||l==="")return"";const n=h===0&&e.headerRow!==!1,r=t===0&&e.headerCol!==!1;return'<c r="'.concat(F(t)).concat(h+1,'" s="').concat(n||r?2:1,'" t="inlineStr"><is><t xml:space="preserve">').concat(w(String(l)),"</t></is></c>")},d=o.map((l,h)=>'<row r="'.concat(h+1,'">').concat(l.map((t,n)=>c(t,h,n)).join(""),"</row>")).join(""),p=(e.widths||[]).map(l=>'<col min="'.concat(l.from,'" max="').concat(l.to,'" width="').concat(l.width,'" customWidth="1"/>')).join(""),a='xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"',x=[{name:"[Content_Types].xml",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>'},{name:"_rels/.rels",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>'},{name:"xl/workbook.xml",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook '.concat(a,' xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="').concat(w(s.slice(0,31)),'" sheetId="1" r:id="rId1"/></sheets></workbook>')},{name:"xl/_rels/workbook.xml.rels",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'},{name:"xl/styles.xml",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet '.concat(a,'><fonts count="2"><font><sz val="11"/><name val="Arial"/></font><font><b/><sz val="11"/><name val="Arial"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFE8F0EC"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FF999999"/></left><right style="thin"><color rgb="FF999999"/></right><top style="thin"><color rgb="FF999999"/></top><bottom style="thin"><color rgb="FF999999"/></bottom><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="3"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment horizontal="center"/></xf><xf numFmtId="0" fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center"/></xf></cellXfs></styleSheet>')},{name:"xl/worksheets/sheet1.xml",data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet '.concat(a,">").concat(p?"<cols>".concat(p,"</cols>"):"","<sheetData>").concat(d,"</sheetData></worksheet>")}];return I(x)}function U(o,e){const s="\\",c=(t,n)=>t.kind==="tf"?t.tf?t.tf.map(r=>r==="\u0110"&&n?"D":r).join(n?",":""):"":t.value??"",d=e[0].answers;if(o==="giasu")return[["C\xE2u".concat(s,"M\xE3 \u0111\u1EC1"),...e.map(n=>n.code)],...d.map((n,r)=>[String(r+1),...e.map(i=>i.answers[r]?c(i.answers[r],!1):"")])];const p=["\u0110\u1EC1".concat(s,"c\xE2u")],a=e.map(()=>[]),x=d.map((t,n)=>({a:t,i:n})).filter(t=>t.a.kind==="mc"||t.a.kind==="other"),l=d.map((t,n)=>({a:t,i:n})).filter(t=>t.a.kind==="tf"),h=d.map((t,n)=>({a:t,i:n})).filter(t=>t.a.kind==="short");for(const{a:t,i:n}of x)p.push(String(t.number)),e.forEach((r,i)=>a[i].push(r.answers[n]?.value??""));for(const{a:t,i:n}of l)"abcd".split("").forEach((r,i)=>{p.push("".concat(t.number).concat(r)),e.forEach((g,f)=>{const u=g.answers[n]?.tf;a[f].push(u?u[i]==="\u0110"?"D":u[i]||"":"")})});for(const{a:t,i:n}of h)p.push(String(t.number)),e.forEach((r,i)=>a[i].push(r.answers[n]?.value??""));return[p,...e.map((t,n)=>[t.code,...a[n]])]}function C(o,e){const s=U(o,e);return T(s,{sheet:o==="giasu"?"GIASU.AI.VN":"TEXCRAFT",widths:o==="giasu"?[{from:1,to:1,width:12},{from:2,to:40,width:10}]:[{from:1,to:1,width:9},{from:2,to:73,width:4.5},{from:74,to:200,width:7}]})}const D=(o,e)=>U(o,e).map(s=>s.join("	")).join("\n");export{U as answerRows,D as answerTsv,C as answerXlsx,T as buildXlsx,I as zipStore};
+// Minimal .xlsx writer (stored zip + inline strings): enough for the two answer-key layouts, no dependencies.
+import { escapeXml } from './xml.js';
+
+const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+const crc32 = (d) => { let c = 0xffffffff; for (let i = 0; i < d.length; i++) c = CRC[(c ^ d[i]) & 255] ^ (c >>> 8); return (c ^ 0xffffffff) >>> 0; };
+const utf8 = (s) => new TextEncoder().encode(s);
+
+export function zipStore(files) {
+  const parts = [], central = [];
+  let offset = 0;
+  for (const f of files) {
+    const name = utf8(f.name), data = typeof f.data === 'string' ? utf8(f.data) : f.data, crc = crc32(data);
+    const local = new Uint8Array(30 + name.length);
+    const v = new DataView(local.buffer);
+    v.setUint32(0, 0x04034b50, true); v.setUint16(4, 20, true); v.setUint16(6, 0x0800, true); v.setUint16(8, 0, true);
+    v.setUint16(10, 0, true); v.setUint16(12, 0x21, true); v.setUint32(14, crc, true); v.setUint32(18, data.length, true); v.setUint32(22, data.length, true);
+    v.setUint16(26, name.length, true); local.set(name, 30);
+    const cen = new Uint8Array(46 + name.length);
+    const c = new DataView(cen.buffer);
+    c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true); c.setUint16(12, 0, true); c.setUint16(14, 0x21, true);
+    c.setUint32(16, crc, true); c.setUint32(20, data.length, true); c.setUint32(24, data.length, true); c.setUint16(28, name.length, true); c.setUint32(42, offset, true);
+    cen.set(name, 46);
+    parts.push(local, data); central.push(cen);
+    offset += local.length + data.length;
+  }
+  const cenSize = central.reduce((s, x) => s + x.length, 0);
+  const end = new Uint8Array(22), e = new DataView(end.buffer);
+  e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true); e.setUint32(12, cenSize, true); e.setUint32(16, offset, true);
+  const all = [...parts, ...central, end];
+  const out = new Uint8Array(all.reduce((s, x) => s + x.length, 0));
+  let p = 0;
+  for (const x of all) { out.set(x, p); p += x.length; }
+  return out;
+}
+
+const colName = (i) => { let s = ''; for (i++; i > 0; i = Math.floor((i - 1) / 26)) s = String.fromCharCode(65 + ((i - 1) % 26)) + s; return s; };
+
+/** rows: array of arrays of strings (null/'' = empty). opts: {sheet, widths: [{from,to,width}], headerRow, headerCol}. */
+export function buildXlsx(rows, opts = {}) {
+  const sheet = opts.sheet || 'Sheet1';
+  const cell = (v, r, c) => {
+    if (v === null || v === undefined || v === '') return '';
+    const head = r === 0 && opts.headerRow !== false, firstCol = c === 0 && opts.headerCol !== false;
+    return `<c r="${colName(c)}${r + 1}" s="${head || firstCol ? 2 : 1}" t="inlineStr"><is><t xml:space="preserve">${escapeXml(String(v))}</t></is></c>`;
+  };
+  const sheetData = rows.map((row, r) => `<row r="${r + 1}">${row.map((v, c) => cell(v, r, c)).join('')}</row>`).join('');
+  const cols = (opts.widths || []).map((w) => `<col min="${w.from}" max="${w.to}" width="${w.width}" customWidth="1"/>`).join('');
+  const ns = 'xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"';
+  const files = [
+    { name: '[Content_Types].xml', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>' },
+    { name: '_rels/.rels', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>' },
+    { name: 'xl/workbook.xml', data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook ${ns} xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="${escapeXml(sheet.slice(0, 31))}" sheetId="1" r:id="rId1"/></sheets></workbook>` },
+    { name: 'xl/_rels/workbook.xml.rels', data: '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>' },
+    { name: 'xl/styles.xml', data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet ${ns}><fonts count="2"><font><sz val="11"/><name val="Arial"/></font><font><b/><sz val="11"/><name val="Arial"/></font></fonts><fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FFE8F0EC"/></patternFill></fill></fills><borders count="2"><border><left/><right/><top/><bottom/><diagonal/></border><border><left style="thin"><color rgb="FF999999"/></left><right style="thin"><color rgb="FF999999"/></right><top style="thin"><color rgb="FF999999"/></top><bottom style="thin"><color rgb="FF999999"/></bottom><diagonal/></border></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="3"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyBorder="1" applyAlignment="1"><alignment horizontal="center"/></xf><xf numFmtId="0" fontId="1" fillId="2" borderId="1" xfId="0" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center"/></xf></cellXfs></styleSheet>` },
+    { name: 'xl/worksheets/sheet1.xml', data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet ${ns}>${cols ? `<cols>${cols}</cols>` : ''}<sheetData>${sheetData}</sheetData></worksheet>` },
+  ];
+  return zipStore(files);
+}
+
+/**
+ * Two answer-key layouts used by the school templates.
+ *  giasu:    rows = questions 1..N (continuous), columns = exam codes; true/false as "ĐSĐS"; sheet "GIASU.AI.VN", header "Câu\Mã đề".
+ *  texcraft: rows = exam codes, columns = 1..n, then 1a,1b,1c,1d.. for each true/false question, then the short answers; D/S as ASCII; sheet "TEXCRAFT", header "Đề\câu".
+ * versions: [{code, answers:[{kind, number, value, tf}]}] (answers in document order; every version has the same layout).
+ */
+export function answerRows(template, versions) {
+  const BS = '\\';
+  const cell = (a, ascii) => {
+    if (a.kind === 'tf') return a.tf ? a.tf.map((x) => (x === 'Đ' && ascii ? 'D' : x)).join(ascii ? ',' : '') : '';
+    return a.value ?? '';
+  };
+  const layout = versions[0].answers;
+  if (template === 'giasu') {
+    const header = [`Câu${BS}Mã đề`, ...versions.map((v) => v.code)];
+    return [header, ...layout.map((_a, i) => [String(i + 1), ...versions.map((v) => (v.answers[i] ? cell(v.answers[i], false) : ''))])];
+  }
+  const header = [`Đề${BS}câu`], perVersion = versions.map(() => []);
+  const mc = layout.map((a, i) => ({ a, i })).filter((x) => x.a.kind === 'mc' || x.a.kind === 'other');
+  const tf = layout.map((a, i) => ({ a, i })).filter((x) => x.a.kind === 'tf');
+  const short = layout.map((a, i) => ({ a, i })).filter((x) => x.a.kind === 'short');
+  for (const { a, i } of mc) { header.push(String(a.number)); versions.forEach((v, k) => perVersion[k].push(v.answers[i]?.value ?? '')); }
+  for (const { a, i } of tf) {
+    'abcd'.split('').forEach((l, j) => {
+      header.push(`${a.number}${l}`);
+      versions.forEach((v, k) => { const t = v.answers[i]?.tf; perVersion[k].push(t ? (t[j] === 'Đ' ? 'D' : t[j] || '') : ''); });
+    });
+  }
+  for (const { a, i } of short) { header.push(String(a.number)); versions.forEach((v, k) => perVersion[k].push(v.answers[i]?.value ?? '')); }
+  return [header, ...versions.map((v, k) => [v.code, ...perVersion[k]])];
+}
+
+export function answerXlsx(template, versions) {
+  const rows = answerRows(template, versions);
+  const wide = template === 'giasu' ? [{ from: 1, to: 1, width: 12 }, { from: 2, to: 40, width: 10 }] : [{ from: 1, to: 1, width: 9 }, { from: 2, to: 73, width: 4.5 }, { from: 74, to: 200, width: 7 }];
+  return buildXlsx(rows, { sheet: template === 'giasu' ? 'GIASU.AI.VN' : 'TEXCRAFT', widths: wide });
+}
+
+export const answerTsv = (template, versions) => answerRows(template, versions).map((r) => r.join('\t')).join('\n');

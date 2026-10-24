@@ -1,1 +1,181 @@
-import u from"./tables.js";import{FUNCTIONS as w,renderJoin as E,tidy as g}from"./mtef.js";import{parseXml as A,local as a,elements as d,textOf as C,descendants as P}from"./xml.js";class p extends Error{}const s="\\",h=(t,n)=>Object.prototype.hasOwnProperty.call(t,n),x=t=>/^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]$/u.test(t);function m(t,n,r){for(const e of d(t))if(a(e).endsWith("Pr")){for(const i of d(e))if(a(i)===n){const o=i.attrs["m:val"];return o!==void 0?o:i.attrs.val!==void 0?i.attrs.val:r!==void 0?r:"on"}}return r}function y(t){const n=t.codePointAt(0);if(h(u.GREEK_LOWER,t))return u.GREEK_LOWER[t];if(h(u.GREEK_UPPER,t))return u.GREEK_UPPER[t];if(h(u.SYMBOLS,String(n)))return u.SYMBOLS[String(n)];if(h(u.OMML_ESCAPES,t))return u.OMML_ESCAPES[t];if(n<128)return t;if(x(t))return"".concat(s,"text{").concat(t,"}");throw new p("unknown character U+"+n.toString(16).toUpperCase().padStart(4,"0"))}function _(t){let n="";for(const o of P(t))a(o)==="t"&&(n+=C(o));n||(n=t.children.filter(o=>typeof o=="string").join(""));let r=!1,e=!1;for(const o of d(t))if(a(o)==="rPr")for(const c of d(o))a(c)==="nor"&&(r=!0,e=!0),a(c)==="sty"&&c.attrs["m:val"]==="p"&&(r=!0);if(!n.trim()&&n)return[...n].map(o=>h(u.SPACES,String(o.codePointAt(0)))?u.SPACES[String(o.codePointAt(0))]:"".concat(s," "));if(e&&n)return["".concat(s,"text{").concat([...n].map(o=>h(u.TEXT_ESCAPES,o)?u.TEXT_ESCAPES[o]:o).join(""),"}")];if(r&&n&&/^[A-Za-z0-9 ]+$/.test(n))return[n.includes(" ")?"".concat(s,"text{").concat(n,"}"):"".concat(s,"mathrm{").concat(n,"}")];const i=[...n].filter(o=>!"\u200B\u2061\u2062".includes(o));return i.filter((o,c)=>!(o===" "&&(i[c-1]===","||i[c-1]===";"))).map(o=>/\s/.test(o)?h(u.SPACES,String(o.codePointAt(0)))?u.SPACES[String(o.codePointAt(0))]:"".concat(s," "):y(o))}const S=(t,n)=>d(t).filter(r=>!a(r).endsWith("Pr")&&(!n||n.includes(a(r))));function l(t){const n=[];for(const r of t)n.push(...M(r));return n}const b=t=>E(l(S(t)),!0);function f(t,n){for(const r of d(t))if(a(r)===n)return b(r);return""}function M(t){const n=a(t);if(n==="r")return _(t);if(["oMath","e","num","den","sub","sup","deg","lim","fName"].includes(n))return l(S(t));if(n==="f"){const r=f(t,"num"),e=f(t,"den"),i=m(t,"type","bar");return i==="noBar"?["".concat(s,"binom{").concat(r,"}{").concat(e,"}")]:i==="skw"||i==="lin"?["{".concat(r,"}/{").concat(e,"}")]:["".concat(s,"frac{").concat(r,"}{").concat(e,"}")]}if(["sSup","sSub","sSubSup","sPre"].includes(n)){let r=f(t,"e");const e=f(t,"sub");let i=f(t,"sup");if(n==="sPre")return["{}_{".concat(e,"}^{").concat(i,"}").concat(r)];const o=/^\\mathrm\{([A-Za-z]+)\}$/.exec(r);return o&&w.has(o[1])&&(r=s+o[1]),i==="^{".concat(s,"circ}")&&(i="".concat(s,"circ")),/[\^_]\S*$/.test(r)&&(n!=="sSub"&&i||n!=="sSup"&&e)&&(r="{".concat(r,"}")),[r+(e&&n!=="sSup"?"_{".concat(e,"}"):"")+(i&&n!=="sSub"?"^{".concat(i,"}"):"")]}if(n==="rad"){const r=f(t,"e"),e=f(t,"deg"),i=!["on","1","true"].includes(m(t,"degHide","off"));return[e&&i?"".concat(s,"sqrt[").concat(e,"]{").concat(r,"}"):"".concat(s,"sqrt{").concat(r,"}")]}if(n==="nary"){const r=m(t,"chr","\u222B"),e=u.NARY[r];if(e===void 0)throw new p("operator "+r);const i=f(t,"sub"),o=f(t,"sup"),c=f(t,"e");return[e+(i?"_{".concat(i,"}"):"")+(o?"^{".concat(o,"}"):"")+(c?" "+c:"")]}if(n==="d"){const r=m(t,"begChr","("),e=m(t,"endChr",")"),i=m(t,"sepChr","|");for(const $ of[r,e,i])if(!h(u.FENCE_CHARS,$))throw new p("fence "+$);const o=d(t).filter($=>a($)==="e").map($=>E(l(S($)),!0));if(o.length===1&&r==="("&&e===")"&&/^\\binom\{[^{}]*\}\{[^{}]*\}$/.test(o[0]))return[o[0]];const c=" ".concat(u.FENCE_CHARS[i].replace(/\./g,"|")," ");return["".concat(s,"left").concat(u.FENCE_CHARS[r]," ").concat(o.join(c)," ").concat(s,"right").concat(u.FENCE_CHARS[e])]}if(n==="func"){const r=f(t,"fName"),e=r.replace(/\\mathrm\{([^}]*)\}/g,"$1");return[w.has(e)?s+e:r,f(t,"e")]}if(n==="limLow"||n==="limUpp"){const r=f(t,"e"),e=f(t,"lim"),i=/^\\mathrm\{(lim|max|min|sup|inf)\}$/.exec(r);return["".concat(s,"lim"),"".concat(s,"max"),"".concat(s,"min"),"".concat(s,"sup"),"".concat(s,"inf")].includes(r)||i?[(i?s+i[1]:r)+(n==="limLow"?"_{".concat(e,"}"):"^{".concat(e,"}"))]:[n==="limLow"?"".concat(s,"underset{").concat(e,"}{").concat(r,"}"):"".concat(s,"overset{").concat(e,"}{").concat(r,"}")]}if(n==="acc"){const r=m(t,"chr","\u0302"),e=u.ACCENTS[r];if(e===void 0)throw new p("accent "+r);return["".concat(e,"{").concat(f(t,"e"),"}")]}if(n==="bar"){const r=f(t,"e");return[m(t,"pos","top")==="bot"?"".concat(s,"underline{").concat(r,"}"):"".concat(s,"overline{").concat(r,"}")]}if(n==="groupChr"){const r=f(t,"e"),e=m(t,"chr",void 0);return e==="\u2192"?["".concat(s,"overrightarrow{").concat(r,"}")]:e==="\u2190"?["".concat(s,"overleftarrow{").concat(r,"}")]:e==="\u2194"?["".concat(s,"overleftrightarrow{").concat(r,"}")]:[m(t,"pos","bot")==="top"?"".concat(s,"overbrace{").concat(r,"}"):"".concat(s,"underbrace{").concat(r,"}")]}if(n==="box"||n==="phant")return[f(t,"e")];if(n==="borderBox")return["".concat(s,"boxed{").concat(f(t,"e"),"}")];if(n==="m"){const r=d(t).filter(i=>a(i)==="mr").map(i=>d(i).filter(o=>a(o)==="e").map(b)),e=Math.max(0,...r.map(i=>i.length));if(!e)throw new p("empty matrix");return["".concat(s,"begin{array}{").concat("c".repeat(e),"} ").concat(r.map(i=>i.join(" & ")).join(" ".concat(s).concat(s," "))," ").concat(s,"end{array}")]}if(n==="eqArr"){const r=d(t).filter(e=>a(e)==="e").map(b);return["".concat(s,"begin{array}{l} ").concat(r.join(" ".concat(s).concat(s," "))," ").concat(s,"end{array}")]}if(n==="ctrlPr"||n==="rPr")return[];throw new p("element "+n)}function O(t){return E(l(S(t)),!0)}function N(t){const n=t.replace(/<(?!\/?m:)[^>]+>/g,"").replace(/&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)/g,"&amp;");let r;try{r=A("<root>".concat(n,"</root>"))}catch{throw new p("unreadable OMML")}if(!r)throw new p("unreadable OMML");const e=d(r).some($=>a($)==="oMathPara"),i=[...P(r)].filter($=>a($)==="oMath");if(!i.length)throw new p("no math");const o=i.map(O),c=o.length>1?g(o.filter($=>$).join(" ".concat(s).concat(s," ")),!0):g(o[0],!0);if(!c)throw new p("empty");return[c,e]}export{p as OmmlError,O as oMathToLatex,N as ommlToLatex};
+// Office Math (OMML) -> LaTeX. Port of core/omml.py with the same tables and rules (src/tables.js).
+// Deliberate deviations (kept small, all marked "JS:") improve native equations written by Word itself.
+import T from './tables.js';
+import { FUNCTIONS, renderJoin, tidy } from './mtef.js';
+import { parseXml, local, elements, textOf, descendants } from './xml.js';
+
+export class OmmlError extends Error {}
+const BS = '\\';
+const has = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
+const isAlpha = (s) => /^[A-Za-zÀ-ɏͰ-ϿЀ-ӿḀ-ỿ]$/u.test(s);
+
+function prop(element, name, dflt) {
+  for (const holder of elements(element)) {
+    if (local(holder).endsWith('Pr')) {
+      for (const item of elements(holder)) {
+        if (local(item) === name) {
+          const v = item.attrs['m:val'];
+          if (v !== undefined) return v;
+          return item.attrs.val !== undefined ? item.attrs.val : (dflt !== undefined ? dflt : 'on');
+        }
+      }
+    }
+  }
+  return dflt;
+}
+
+function charToken(char) {
+  const cp = char.codePointAt(0);
+  if (has(T.GREEK_LOWER, char)) return T.GREEK_LOWER[char];
+  if (has(T.GREEK_UPPER, char)) return T.GREEK_UPPER[char];
+  if (has(T.SYMBOLS, String(cp))) return T.SYMBOLS[String(cp)];
+  if (has(T.OMML_ESCAPES, char)) return T.OMML_ESCAPES[char];
+  if (cp < 128) return char;
+  if (isAlpha(char)) return `${BS}text{${char}}`;
+  throw new OmmlError('unknown character U+' + cp.toString(16).toUpperCase().padStart(4, '0'));
+}
+
+function run(element) {
+  let text = '';
+  for (const t of descendants(element)) if (local(t) === 't') text += textOf(t);
+  if (!text) text = element.children.filter((c) => typeof c === 'string').join('');
+  let plain = false, nor = false;
+  for (const holder of elements(element)) {
+    if (local(holder) === 'rPr') {
+      for (const item of elements(holder)) {
+        if (local(item) === 'nor') { plain = true; nor = true; }
+        if (local(item) === 'sty' && item.attrs['m:val'] === 'p') plain = true;
+      }
+    }
+  }
+  if (!text.trim() && text) return [...text].map((c) => (has(T.SPACES, String(c.codePointAt(0))) ? T.SPACES[String(c.codePointAt(0))] : `${BS} `));
+  // JS: normal text (<m:nor/>) is \text{...} whatever it holds, so find/replace rewrites it as text, not as italic letters
+  if (nor && text) return [`${BS}text{${[...text].map((c) => (has(T.TEXT_ESCAPES, c) ? T.TEXT_ESCAPES[c] : c)).join('')}}`];
+  if (plain && text && /^[A-Za-z0-9 ]+$/.test(text)) return [!text.includes(' ') ? `${BS}mathrm{${text}}` : `${BS}text{${text}}`];
+  // JS: a space typed inside a run is kept as a space (core/omml.py drops it, so "1, 2" would read back as 1{,}2)
+  const chars = [...text].filter((c) => !'\u200b\u2061\u2062'.includes(c));
+  // a plain space after a comma or semicolon is what the renderer adds itself
+  return chars.filter((c, i) => !(c === ' ' && (chars[i - 1] === ',' || chars[i - 1] === ';'))).map((c) => (/\s/.test(c) ? (has(T.SPACES, String(c.codePointAt(0))) ? T.SPACES[String(c.codePointAt(0))] : `${BS} `) : charToken(c)));
+}
+
+const children = (el, names) => elements(el).filter((c) => !local(c).endsWith('Pr') && (!names || names.includes(local(c))));
+function renderSeq(els) {
+  const tokens = [];
+  for (const c of els) tokens.push(...node(c));
+  return tokens;
+}
+const group = (el) => renderJoin(renderSeq(children(el)), true);
+function subOf(el, name) {
+  for (const c of elements(el)) if (local(c) === name) return group(c);
+  return '';
+}
+
+function node(el) {
+  const tag = local(el);
+  if (tag === 'r') return run(el);
+  if (['oMath', 'e', 'num', 'den', 'sub', 'sup', 'deg', 'lim', 'fName'].includes(tag)) return renderSeq(children(el));
+  if (tag === 'f') {
+    const num = subOf(el, 'num'), den = subOf(el, 'den');
+    const kind = prop(el, 'type', 'bar');
+    if (kind === 'noBar') return [`${BS}binom{${num}}{${den}}`];
+    if (kind === 'skw' || kind === 'lin') return [`{${num}}/{${den}}`];
+    return [`${BS}frac{${num}}{${den}}`];
+  }
+  if (['sSup', 'sSub', 'sSubSup', 'sPre'].includes(tag)) {
+    let base = subOf(el, 'e');
+    const sub = subOf(el, 'sub');
+    let sup = subOf(el, 'sup');
+    if (tag === 'sPre') return [`{}_{${sub}}^{${sup}}${base}`];
+    const fn = /^\\mathrm\{([A-Za-z]+)\}$/.exec(base);   // JS: \ln^2 x written as a script on a plain-text name
+    if (fn && FUNCTIONS.has(fn[1])) base = BS + fn[1];
+    if (sup === `^{${BS}circ}`) sup = `${BS}circ`;   // JS: a degree sign reads back as x^{\circ}, not x^{^{\circ}}
+    if (/[\^_]\S*$/.test(base) && ((tag !== 'sSub' && sup) || (tag !== 'sSup' && sub))) base = `{${base}}`;
+    return [base + (sub && tag !== 'sSup' ? `_{${sub}}` : '') + (sup && tag !== 'sSub' ? `^{${sup}}` : '')];
+  }
+  if (tag === 'rad') {
+    const body = subOf(el, 'e'), deg = subOf(el, 'deg');
+    const hide = !['on', '1', 'true'].includes(prop(el, 'degHide', 'off'));
+    return [deg && hide ? `${BS}sqrt[${deg}]{${body}}` : `${BS}sqrt{${body}}`];
+  }
+  if (tag === 'nary') {
+    const chr = prop(el, 'chr', '\u222b');
+    const op = T.NARY[chr];
+    if (op === undefined) throw new OmmlError('operator ' + chr);
+    const sub = subOf(el, 'sub'), sup = subOf(el, 'sup'), body = subOf(el, 'e');
+    return [op + (sub ? `_{${sub}}` : '') + (sup ? `^{${sup}}` : '') + (body ? ' ' + body : '')];
+  }
+  if (tag === 'd') {
+    const beg = prop(el, 'begChr', '('), end = prop(el, 'endChr', ')'), sep = prop(el, 'sepChr', '|');
+    for (const f of [beg, end, sep]) if (!has(T.FENCE_CHARS, f)) throw new OmmlError('fence ' + f);
+    const parts = elements(el).filter((i) => local(i) === 'e').map((i) => renderJoin(renderSeq(children(i)), true));
+    if (parts.length === 1 && beg === '(' && end === ')' && /^\\binom\{[^{}]*\}\{[^{}]*\}$/.test(parts[0])) return [parts[0]];
+    const separator = ` ${T.FENCE_CHARS[sep].replace(/\./g, '|')} `;
+    return [`${BS}left${T.FENCE_CHARS[beg]} ${parts.join(separator)} ${BS}right${T.FENCE_CHARS[end]}`];
+  }
+  if (tag === 'func') {
+    const name = subOf(el, 'fName');
+    const plain = name.replace(/\\mathrm\{([^}]*)\}/g, '$1');
+    const head = FUNCTIONS.has(plain) ? BS + plain : name;
+    return [head, subOf(el, 'e')];
+  }
+  if (tag === 'limLow' || tag === 'limUpp') {
+    const body = subOf(el, 'e'), lim = subOf(el, 'lim');
+    const named = /^\\mathrm\{(lim|max|min|sup|inf)\}$/.exec(body);   // JS: also for max/min/sup/inf written as plain text
+    if ([`${BS}lim`, `${BS}max`, `${BS}min`, `${BS}sup`, `${BS}inf`].includes(body) || named) {
+      return [(named ? BS + named[1] : body) + (tag === 'limLow' ? `_{${lim}}` : `^{${lim}}`)];
+    }
+    return [tag === 'limLow' ? `${BS}underset{${lim}}{${body}}` : `${BS}overset{${lim}}{${body}}`];
+  }
+  if (tag === 'acc') {
+    const chr = prop(el, 'chr', '\u0302');
+    const command = T.ACCENTS[chr];
+    if (command === undefined) throw new OmmlError('accent ' + chr);
+    return [`${command}{${subOf(el, 'e')}}`];
+  }
+  if (tag === 'bar') {
+    const body = subOf(el, 'e');
+    return [prop(el, 'pos', 'top') === 'bot' ? `${BS}underline{${body}}` : `${BS}overline{${body}}`];
+  }
+  if (tag === 'groupChr') {
+    const body = subOf(el, 'e');
+    const chr = prop(el, 'chr', undefined);
+    if (chr === '\u2192') return [`${BS}overrightarrow{${body}}`];   // JS: Word's long-arrow accents
+    if (chr === '\u2190') return [`${BS}overleftarrow{${body}}`];
+    if (chr === '\u2194') return [`${BS}overleftrightarrow{${body}}`];
+    return [prop(el, 'pos', 'bot') === 'top' ? `${BS}overbrace{${body}}` : `${BS}underbrace{${body}}`];
+  }
+  if (tag === 'box' || tag === 'phant') return [subOf(el, 'e')];
+  if (tag === 'borderBox') return [`${BS}boxed{${subOf(el, 'e')}}`];
+  if (tag === 'm') {
+    const rows = elements(el).filter((r) => local(r) === 'mr').map((r) => elements(r).filter((c) => local(c) === 'e').map(group));
+    const width = Math.max(0, ...rows.map((r) => r.length));
+    if (!width) throw new OmmlError('empty matrix');
+    return [`${BS}begin{array}{${'c'.repeat(width)}} ${rows.map((r) => r.join(' & ')).join(` ${BS}${BS} `)} ${BS}end{array}`];
+  }
+  if (tag === 'eqArr') {
+    const rows = elements(el).filter((i) => local(i) === 'e').map(group);
+    return [`${BS}begin{array}{l} ${rows.join(` ${BS}${BS} `)} ${BS}end{array}`];
+  }
+  if (tag === 'ctrlPr' || tag === 'rPr') return [];
+  throw new OmmlError('element ' + tag);
+}
+
+/** Render one parsed <m:oMath> element. */
+export function oMathToLatex(zone) {
+  return renderJoin(renderSeq(children(zone)), true);
+}
+
+/** OMML fragment text (an <m:oMath> or <m:oMathPara>) -> [latex, isDisplay]. */
+export function ommlToLatex(xml) {
+  const cleaned = xml.replace(/<(?!\/?m:)[^>]+>/g, '').replace(/&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)/g, '&amp;');
+  let root;
+  try { root = parseXml(`<root>${cleaned}</root>`); } catch (e) { throw new OmmlError('unreadable OMML'); }
+  if (!root) throw new OmmlError('unreadable OMML');
+  const display = elements(root).some((i) => local(i) === 'oMathPara');
+  const zones = [...descendants(root)].filter((i) => local(i) === 'oMath');
+  if (!zones.length) throw new OmmlError('no math');
+  const pieces = zones.map(oMathToLatex);
+  const latex = pieces.length > 1 ? tidy(pieces.filter((p) => p).join(` ${BS}${BS} `), true) : tidy(pieces[0], true);
+  if (!latex) throw new OmmlError('empty');
+  return [latex, display];
+}

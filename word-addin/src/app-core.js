@@ -1,1 +1,54 @@
-import{scanPackage as h,convertMathTypeInPackage as g,convertEquationsToLatexText as d,rewriteEquations as f,makeEquationPackage as m,latexToOmml as w}from"./ooxml.js";function k(a){const t=[],n=/<w:p[ >]/g;let o;for(;o=n.exec(a);)t.push(o.index);return t}const T=a=>(a.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g)||[]).map(t=>t.replace(/<[^>]+>/g,"")).join("");function v(a){const t=h(a),n=k(t.doc||""),o=n.map(r=>{const i=t.doc.indexOf("</w:p>",r);return i<0?t.doc.length:i+6}),e=new Map;return{equations:t.equations.map((r,i)=>{let p=0,u=n.length-1,c=-1;for(;p<=u;){const l=p+u>>1;n[l]<=r.pos?(c=l,p=l+1):u=l-1}c>=0&&!e.has(c)&&e.set(c,T(t.doc.slice(n[c],o[c])).slice(0,80));const x=e.get(c)||"";return{n:i,kind:r.kind,latex:r.latex,error:r.error,progId:r.progId,para:c,excerpt:x}}),paragraphTotal:n.length}}function y({find:a,replace:t,regex:n,matchCase:o}){if(!a)return null;let e;try{e=new RegExp(n?a:a.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),o?"g":"gi")}catch(r){throw new Error("Bi\u1EC3u th\u1EE9c ch\xEDnh quy kh\xF4ng h\u1EE3p l\u1EC7: "+r.message)}const s=n?t:t.replace(/\$/g,"$$$$");return r=>(e.lastIndex=0,e.test(r)?(e.lastIndex=0,r.replace(e,s)):null)}function E(a,t){const n=y(t);if(!n)return[];const o=[];for(const e of a.equations){if(e.latex===null||e.kind==="mathtype"&&t.includeMathType===!1)continue;const s=n(e.latex);s!==null&&s!==e.latex&&o.push({n:e.n,para:e.para,kind:e.kind,before:e.latex,after:s})}return o}import{convertNativeToMathType as q,makeMathTypePackage as P,browserRender as b}from"./mathtype-object.js";export{b as browserRender,d as convertEquationsToLatexText,g as convertMathTypeInPackage,q as convertNativeToMathType,w as latexToOmml,m as makeEquationPackage,P as makeMathTypePackage,y as makeTransform,k as paragraphOrdinals,E as previewReplace,f as rewriteEquations,v as scanBody,h as scanPackage};
+// Document-level logic shared by the task pane and the node tests: scan a body package into a flat equation list with
+// paragraph ordinals, build find/replace previews, and rewrite one paragraph package at a time.
+import { scanPackage, convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, makeEquationPackage, latexToOmml } from './ooxml.js';
+
+export function paragraphOrdinals(doc) {
+  const starts = [];
+  const re = /<w:p[ >]/g;
+  let m;
+  while ((m = re.exec(doc))) starts.push(m.index);
+  return starts;
+}
+
+const paraText = (xml) => (xml.match(/<w:t\b[^>]*>[^<]*<\/w:t>/g) || []).map((t) => t.replace(/<[^>]+>/g, '')).join('');
+
+/** Scan a whole-body package: equations with the ordinal and an excerpt of their paragraph. */
+export function scanBody(pkg) {
+  const scan = scanPackage(pkg);
+  const starts = paragraphOrdinals(scan.doc || '');
+  const ends = starts.map((s) => { const e = scan.doc.indexOf('</w:p>', s); return e < 0 ? scan.doc.length : e + 6; });
+  const excerpts = new Map();
+  const list = scan.equations.map((eq, n) => {
+    let lo = 0, hi = starts.length - 1, para = -1;
+    while (lo <= hi) { const mid = (lo + hi) >> 1; if (starts[mid] <= eq.pos) { para = mid; lo = mid + 1; } else hi = mid - 1; }
+    if (para >= 0 && !excerpts.has(para)) excerpts.set(para, paraText(scan.doc.slice(starts[para], ends[para])).slice(0, 80));
+    const excerpt = excerpts.get(para) || '';
+    return { n, kind: eq.kind, latex: eq.latex, error: eq.error, progId: eq.progId, para, excerpt };
+  });
+  return { equations: list, paragraphTotal: starts.length };
+}
+
+export function makeTransform({ find, replace, regex, matchCase }) {
+  if (!find) return null;
+  let re;
+  try { re = new RegExp(regex ? find : find.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), matchCase ? 'g' : 'gi'); } catch (e) { throw new Error('Biểu thức chính quy không hợp lệ: ' + e.message); }
+  const rep = regex ? replace : replace.replace(/\$/g, '$$$$');
+  return (latex) => { re.lastIndex = 0; if (!re.test(latex)) return null; re.lastIndex = 0; return latex.replace(re, rep); };
+}
+
+export function previewReplace(scanned, opts) {
+  const t = makeTransform(opts);
+  if (!t) return [];
+  const rows = [];
+  for (const eq of scanned.equations) {
+    if (eq.latex === null) continue;
+    if (eq.kind === 'mathtype' && opts.includeMathType === false) continue;
+    const after = t(eq.latex);
+    if (after !== null && after !== eq.latex) rows.push({ n: eq.n, para: eq.para, kind: eq.kind, before: eq.latex, after });
+  }
+  return rows;
+}
+
+export { convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml };
+
+export { convertNativeToMathType, makeMathTypePackage, browserRender } from './mathtype-object.js';

@@ -1,1 +1,703 @@
-import"./polyfills.js";import{mountMtSettings as st,mtOptions as V,mtConvertOptions as dt,classicLayout as Ht}from"./mt-settings.js";import*as u from"../src/word-io.js";import{attachLatexAutocomplete as Pt}from"./latex-autocomplete.js";import{mountEditorToolbar as Dt}from"./editor-toolbar.js";import{createVisualEditor as Bt}from"./visual-editor.js";import{pickEquation as lt}from"../src/cursor-eq.js";import{scanBody as Rt,convertMathTypeInPackage as N,convertEquationsToLatexText as ht,scanPackage as Kt,makeEquationPackage as Nt,latexToOmml as Ft,convertNativeToMathType as ut,makeMathTypePackage as It,browserRender as Y}from"../src/app-core.js";try{const t=navigator;(/[?&]lite\b/.test(location.search)||t.hardwareConcurrency&&t.hardwareConcurrency<=4||t.deviceMemory&&t.deviceMemory<=4||window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&document.documentElement.classList.add("lite")}catch{}const e=t=>document.getElementById(t),p=t=>String(t??"").replace(/[&<>"]/g,n=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[n]),h={scanned:null,lastBackup:null,examLoaded:!1};let Z=[];const pt=/[?&]edition=full\b/.test(location.search),mt=["eq","editor","exam","figures","about"];pt||document.querySelectorAll("nav button").forEach(t=>{mt.includes(t.dataset.tab)||t.remove()});function F(t,n=!0){!pt&&!mt.includes(t)&&(t="eq");const o=document.querySelector('nav button[data-tab="'.concat(t,'"]'));if(o){++$,clearTimeout(M),M=null,H=!1,document.querySelectorAll("nav button").forEach(a=>a.setAttribute("aria-selected",String(a===o))),document.querySelectorAll("section").forEach(a=>a.classList.toggle("active",a.id==="tab-"+t));try{o.scrollIntoView({block:"nearest",inline:"nearest"})}catch{}t==="figures"&&!h.figuresLoaded&&(h.figuresLoaded=!0,import("./figures-ui.js").then(a=>a.mountFigures(e("figures-root"),u)).catch(a=>{e("figures-root").textContent="Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c m\xF4-\u0111un h\xECnh v\u1EBD: "+a.message})),t==="worksheet"&&!h.worksheetLoaded&&(h.worksheetLoaded=!0,import("./worksheet-ui.js").then(a=>a.mountWorksheet(e("worksheet-root"),u)).catch(a=>{e("worksheet-root").textContent="Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c m\xF4-\u0111un phi\u1EBFu b\xE0i t\u1EADp: "+a.message})),t==="calc"&&!h.calcLoaded&&(h.calcLoaded=!0,import("./calc-ui.js").then(a=>a.mountCalc(e("calc-root"),u,{openEditor:c=>{e("editor-latex").value=c,F("editor",!1),v()}})).catch(a=>{e("calc-root").textContent="Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c m\xF4-\u0111un t\xEDnh to\xE1n: "+a.message})),t==="lms"&&!h.lmsLoaded&&(h.lmsLoaded=!0,import("./lms-ui.js").then(a=>a.mountLms(e("lms-root"),u)).catch(a=>{e("lms-root").textContent="Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c m\xF4-\u0111un LMS: "+a.message})),t==="exam"&&!h.examLoaded&&(h.examLoaded=!0,import("./exam-ui.js").then(a=>a.mountExam(e("exam-root"),u)).catch(a=>{e("exam-root").textContent="Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c m\xF4-\u0111un \u0111\u1EC1 thi: "+a.message})),t==="editor"&&(ee(),v(),n&&e("editor-auto")?.checked&&W())}}function gt(){const n=new URLSearchParams(window.location.search).get("tab")||window.location.hash.replace(/^#/,"");n&&F(n)}document.querySelectorAll("nav button").forEach(t=>t.addEventListener("click",()=>{F(t.dataset.tab)})),window.addEventListener("hashchange",gt),document.querySelector("nav").addEventListener("wheel",t=>{t.deltaY&&(t.currentTarget.scrollLeft+=t.deltaY,t.preventDefault())},{passive:!1}),window.__texcraftLoaded&&window.__texcraftLoaded();function ft(t,n){h.scanned=null,Z=[];const o=t.before===t.after;h.lastBackup=o?n:null,e("btn-restore").disabled=!o}function x(t,n,o){t.hidden=!1,t.max=o||1,t.value=n}async function jt(){e("btn-scan").disabled=!0,e("scan-summary").textContent="\u0110ang \u0111\u1ECDc t\xE0i li\u1EC7u\u2026";try{const t=Date.now(),{pkg:n,paragraphCount:o}=await u.readBody({scanOnly:!0}),a=Date.now()-t;e("scan-summary").textContent="\u0110ang ph\xE2n t\xEDch c\xF4ng th\u1EE9c\u2026",await new Promise(s=>setTimeout(s,0));const c=Date.now(),i=Rt(n);i.timing={readMs:a,parseMs:Date.now()-c},i.mapped=i.paragraphTotal===o,i.paragraphCount=o,h.scanned=i,yt()}catch(t){e("scan-summary").innerHTML='<span class="bad">L\u1ED7i khi \u0111\u1ECDc t\xE0i li\u1EC7u: '.concat(p(t.message),"</span>")}finally{e("btn-scan").disabled=!1}}function yt(){const t=h.scanned,n=t.equations.filter(r=>r.kind==="mathtype"),o=n.filter(r=>r.latex!==null).length,a=n.length-o,c=t.equations.filter(r=>r.kind==="latex"),i=t.equations.filter(r=>r.kind==="native");e("scan-summary").innerHTML="".concat(t.equations.length,' c\xF4ng th\u1EE9c: MathType <b class="ok">').concat(o,"</b>").concat(a?' (l\u1ED7i <b class="bad">'.concat(a,"</b>)"):"",', LaTeX <b class="warn">').concat(c.length,"</b>, Word <b>").concat(i.length,"</b>")+(t.mapped?"":' \xB7 <span class="warn">s\u1ED1 \u0111o\u1EA1n kh\xF4ng kh\u1EDBp ('.concat(t.paragraphTotal," \u2260 ").concat(t.paragraphCount,"); kh\xF4ng \u0111\u1ECBnh v\u1ECB t\u1EEBng \u0111o\u1EA1n t\u1EEB k\u1EBFt qu\u1EA3 qu\xE9t</span>"))+(t.timing?" \xB7 \u0111\u1ECDc ".concat((t.timing.readMs/1e3).toFixed(1)," gi\xE2y, ph\xE2n t\xEDch ").concat((t.timing.parseMs/1e3).toFixed(1)," gi\xE2y"):"");const s=e("only-bad").checked,f=t.equations.filter(r=>!s||r.latex===null);e("eq-table").tBodies[0].innerHTML=f.slice(0,600).map(r=>{let m="";return r.latex===null?m='<span class="badge bad" title="'.concat(p(r.error),'">kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c</span>'):r.kind==="mathtype"?m='<span class="badge ok">MathType</span>':r.kind==="latex"?m='<span class="badge warn">LaTeX</span>':m='<span class="badge native">Word</span>','<tr data-para="'.concat(r.para,'"><td>').concat(r.n+1,'</td><td class="muted">').concat(p(r.excerpt),"</td><td>").concat(r.latex===null?'<span class="muted">'.concat(p(r.error),"</span>"):'<span class="tex">'.concat(p(r.latex),"</span>"),"</td><td>").concat(m,"</td></tr>")}).join("")+(f.length>600?'<tr><td colspan="4" class="muted">\u2026 c\xF2n '.concat(f.length-600," d\xF2ng</td></tr>"):""),e("btn-convert").disabled=!1}e("btn-scan").addEventListener("click",jt),e("only-bad").addEventListener("change",()=>h.scanned&&yt()),e("eq-table").addEventListener("click",t=>{if(S)return;const n=t.target.closest("tr[data-para]");n&&h.scanned&&h.scanned.mapped&&u.hasWord()&&u.selectParagraph(Number(n.dataset.para)).catch(()=>{})});const vt=()=>e("opt-mode").checked?"paragraph":"content";st(e("mt-settings-convert")),st(e("mt-settings-editor"),{onChange:()=>v()});const _t=()=>{const t=document.querySelector("input[name=editor-format]:checked")?.value==="mathtype";e("mt-details").hidden=!t,v()};document.querySelectorAll("input[name=editor-format]").forEach(t=>t.addEventListener("change",_t));const G=()=>e("conv-src")?.value||"mathtype",kt=()=>e("conv-dst")?.value||"word",Xt={mathtype:"mathtype",latex:"latex",word:"native"},zt={"same:mathtype":"MathType \u2192 MathType: l\xE0m l\u1EA1i c\xE1c c\xF4ng th\u1EE9c MathType (v\xE0 c\xF4ng th\u1EE9c Word) trong ph\u1EA1m vi \u0111\xE3 ch\u1ECDn theo ki\u1EC3u ch\u1EEF v\xE0 c\u1EE1 ch\u1EEF \u1EDF tr\xEAn.","same:latex":"Ngu\u1ED3n v\xE0 \u0111\xEDch \u0111\u1EC1u l\xE0 LaTeX: kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n.","same:word":"Ngu\u1ED3n v\xE0 \u0111\xEDch \u0111\u1EC1u l\xE0 c\xF4ng th\u1EE9c Word: kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n.","mathtype:latex":"C\xF4ng th\u1EE9c MathType \u0111\u01B0\u1EE3c thay b\u1EB1ng m\xE3 LaTeX d\u1EA1ng $\u2026$.","word:latex":"C\xF4ng th\u1EE9c Word \u0111\u01B0\u1EE3c thay b\u1EB1ng m\xE3 LaTeX d\u1EA1ng $\u2026$ ($$\u2026$$ n\u1EBFu ri\xEAng d\xF2ng).","latex:mathtype":"M\xE3 LaTeX ($\u2026$, $$\u2026$$, \\(\u2026\\), \\[\u2026\\]) \u0111\u01B0\u1EE3c chuy\u1EC3n th\xE0nh \u0111\u1ED1i t\u01B0\u1EE3ng MathType m\u1EDBi (m\xE1y kh\xF4ng c\u1EA7n c\xE0i MathType \u0111\u1EC3 xem). C\xE1c c\xF4ng th\u1EE9c Word c\xF3 s\u1EB5n trong ph\u1EA1m vi c\u0169ng b\u1ECB \u0111\u1ED5i sang MathType.","word:mathtype":"C\xF4ng th\u1EE9c Word \u0111\u01B0\u1EE3c chuy\u1EC3n th\xE0nh \u0111\u1ED1i t\u01B0\u1EE3ng MathType m\u1EDBi (m\xE1y kh\xF4ng c\u1EA7n c\xE0i MathType \u0111\u1EC3 xem; s\u1EEDa b\u1EB1ng MathType khi c\xF3)."},Ut={latex:["mathtype","word"],word:["mathtype","latex"],mathtype:["mathtype","latex","word"]};function J(){const t=Ut[G()]||[],n=e("conv-dst");[...n.options].forEach(c=>{c.hidden=c.disabled=!t.includes(c.value)}),t.includes(n.value)||(n.value=t.includes("word")?"word":t[0]);const o=G(),a=kt();e("conv-hint").textContent=zt[o===a?"same:".concat(o):"".concat(o,":").concat(a)]||"",e("mt-settings-convert").hidden=a!=="mathtype",e("opt-display").closest("label").hidden=a!=="word"}e("conv-src").addEventListener("change",J),e("conv-dst").addEventListener("change",J),J();async function Vt(t,n,{kinds:o,signal:a}={}){return t==="selection"?{scope:{kind:"selection"},items:await u.readConversionParagraphs(o,n,{signal:a,scope:{kind:"selection"}})}:{scope:{kind:"all"},items:await u.readConversionParagraphs(o,n,{signal:a})}}let S=null;e("btn-cancel-convert").addEventListener("click",()=>{S&&(S.aborted=!0,e("btn-cancel-convert").disabled=!0,e("convert-summary").textContent="\u0110ang h\u1EE7y\u2026 ch\u1EDD thao t\xE1c hi\u1EC7n t\u1EA1i c\u1EE7a Word ho\xE0n t\u1EA5t.")});async function Yt(){if(S)return;if(!e("opt-backup").checked){e("convert-summary").innerHTML='<span class="warn">H\xE3y l\u01B0u m\u1ED9t b\u1EA3n sao t\xE0i li\u1EC7u r\u1ED3i tick \xF4 x\xE1c nh\u1EADn.</span>';return}const t=G(),n=kt();if(t===n&&t!=="mathtype"){e("convert-summary").innerHTML='<span class="warn">Ngu\u1ED3n v\xE0 \u0111\xEDch gi\u1ED1ng nhau: kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n.</span>';return}const o=t==="mathtype"&&n==="mathtype",a=new Set([Xt[t]]);n==="mathtype"&&a.add("native");const c=S={aborted:!1},i=[...document.querySelectorAll("#tab-eq button, #tab-eq input, #tab-eq select")].filter(l=>l.id!=="btn-cancel-convert").map(l=>[l,l.disabled]);i.forEach(([l])=>{l.disabled=!0}),e("btn-convert").hidden=!0,e("btn-cancel-convert").hidden=!1,e("btn-cancel-convert").disabled=!1;let s=0;const f=async()=>{if(await new Promise(l=>setTimeout(l,0)),c.aborted){const l=new Error("\u0110\xE3 h\u1EE7y chuy\u1EC3n \u0111\u1ED5i.");throw l.name="AbortError",l}},r=e("progress");x(r,0,1),e("convert-summary").textContent="\u0110ang \u0111\u1ECDc t\xE0i li\u1EC7u\u2026";let m="\u0111\u1ECDc t\xE0i li\u1EC7u";try{const l=document.querySelector("input[name=scope]:checked").value;if(l==="all"&&(n!=="word"||!e("opt-display").checked)){const g=Date.now(),d=await u.readBody(),y=Date.now()-g;await f();const b=Date.now();m="gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c",e("convert-summary").textContent="\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c\u2026",x(r,1,3),await new Promise(w=>setTimeout(w,0));let k;if(n==="mathtype"){const w={...dt(),defaultSize:(await V()).size};await f();const E=N(d.pkg,{convertMathType:o,convertLatex:t==="latex",display:!1}),C=await ut(E.pkg,{render:Y,...w,signal:c,onProgress:(rt,it)=>{x(r,rt,it),e("convert-summary").textContent="\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c ".concat(rt,"/").concat(it,"\u2026")}});k={...C,pkg:C.changed?C.pkg:E.pkg,changed:E.changed||C.changed,converted:C.changed?C.converted:E.converted,kept:[...E.kept,...C.kept]}}else n==="latex"?k=ht(d.pkg,{fromMathType:t==="mathtype",fromNative:t==="word"}):k=N(d.pkg,{convertMathType:t==="mathtype",convertLatex:t==="latex"});const z={},Wt=Date.now()-b;k.kept.forEach(w=>{z[w.reason]=(z[w.reason]||0)+1});const K=Object.entries(z).map(([w,E])=>"<li>".concat(p(w),": ").concat(E,"</li>")).join("");if(!k.changed){e("convert-summary").innerHTML="Kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n. Gi\u1EEF nguy\xEAn ".concat(k.kept.length," c\xF4ng th\u1EE9c.")+(K?"<ul>".concat(K,"</ul>"):"");return}await f(),m="ghi c\xF4ng th\u1EE9c v\xE0o Word",e("convert-summary").textContent="\u0110ang ghi ".concat(k.converted," c\xF4ng th\u1EE9c v\xE0o Word\u2026"),x(r,2,3);const Ot=Date.now(),U=await u.writeBodySnapshot(k.pkg,d.paragraphCount),At=Date.now()-Ot;ft(U,{scope:{kind:"body"},pkg:d.pkg,paragraphCount:d.paragraphCount}),x(r,3,3),e("convert-summary").innerHTML='<p><b class="ok">\u0110\xE3 chuy\u1EC3n '.concat(k.converted,"</b> c\xF4ng th\u1EE9c; gi\u1EEF nguy\xEAn ").concat(k.kept.length,".</p>")+"<p>\u0110\u1ECDc ".concat((y/1e3).toFixed(1)," gi\xE2y \xB7 chuy\u1EC3n ").concat((Wt/1e3).toFixed(1)," gi\xE2y \xB7 ghi ").concat((At/1e3).toFixed(1)," gi\xE2y.</p>")+(K?"<ul>".concat(K,"</ul>"):"")+(U.before!==U.after?'<p class="warn">S\u1ED1 \u0111o\u1EA1n \u0111\xE3 thay \u0111\u1ED5i. H\xE3y ki\u1EC3m tra b\u1ED1 c\u1EE5c; d\xF9ng Ho\xE0n t\xE1c ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao n\u1EBFu c\u1EA7n.</p>':"");return}e("convert-summary").textContent="\u0110ang \u0111\u1ECDc c\xE1c \u0111o\u1EA1n\u2026";const{scope:T,items:P}=await Vt(l,(g,d)=>x(r,g,d*2),{kinds:a,signal:c});await f(),m="gi\u1EA3i m\xE3 v\xE0 chuy\u1EC3n c\xF4ng th\u1EE9c",e("convert-summary").textContent="\u0110ang chuy\u1EC3n c\xF4ng th\u1EE9c\u2026";let at=0,j=0,_=0,O=0;const X={},D=[],ot=[],St=n==="mathtype"?{...dt(),defaultSize:(await V()).size}:null;let ct=Date.now();for(const g of P){c.aborted&&await f(),Date.now()-ct>=16&&(await new Promise(y=>setTimeout(y,0)),ct=Date.now(),c.aborted&&await f());let d;if(n==="mathtype"){const y=N(g.pkg,{convertMathType:o,convertLatex:t==="latex",display:!1}),b=await ut(y.pkg,{render:Y,...St});d={converted:b.converted,convertedLatex:y.convertedLatex||0,convertedMathType:0,kept:[...y.kept,...b.kept],changed:b.changed,pkg:b.changed?b.pkg:y.pkg},!b.changed&&y.changed&&(d.converted=y.converted)}else n==="latex"?d=ht(g.pkg,{fromMathType:t==="mathtype",fromNative:t==="word"}):d=N(g.pkg,{convertMathType:t==="mathtype",convertLatex:t==="latex",display:e("opt-display").checked});at+=d.converted,j+=d.convertedMathType||0,_+=d.convertedLatex||0,O+=d.kept.length,d.kept.forEach(y=>{X[y.reason]=(X[y.reason]||0)+1}),d.changed&&(D.push({index:g.index,pkg:d.pkg}),ot.push({index:g.index,pkg:g.pkg}))}const B=Object.entries(X).map(([g,d])=>"<li>".concat(p(g),": ").concat(d,"</li>")).join("");if(await f(),!D.length){e("convert-summary").innerHTML="Kh\xF4ng c\xF3 g\xEC \u0111\u1EC3 chuy\u1EC3n.".concat(O?" Gi\u1EEF nguy\xEAn: ".concat(O,"."):"")+(B?"<ul>".concat(B,"</ul>"):"");return}e("convert-summary").textContent="\u0110ang ghi ".concat(D.length," \u0111o\u1EA1n\u2026"),m="ghi c\xF4ng th\u1EE9c v\xE0o Word";const A=await u.writeParagraphs(T,D,vt(),(g,d)=>{s=g,x(r,d+g,d*2)},{signal:c});ft(A,{scope:T,items:ot,mode:vt()});const R=[];j&&R.push("".concat(j," MathType")),_&&R.push("".concat(_," LaTeX"));const qt=R.length?" (".concat(R.join(", "),")"):"";e("convert-summary").innerHTML='<p><b class="ok">\u0110\xE3 chuy\u1EC3n '.concat(at,"</b> c\xF4ng th\u1EE9c").concat(qt,'; <b class="').concat(O?"warn":"",'">gi\u1EEF nguy\xEAn ').concat(O,"</b>.</p>")+(B?"<ul>".concat(B,"</ul>"):"")+(A.before!==A.after?'<p class="warn">S\u1ED1 \u0111o\u1EA1n thay \u0111\u1ED5i '.concat(A.before," \u2192 ").concat(A.after,": Word c\xF3 th\u1EC3 \u0111\xE3 th\xEAm \u0111o\u1EA1n tr\u1ED1ng. N\xFAt \u201CKh\xF4i ph\u1EE5c\u201D b\u1ECB t\u1EAFt (kh\xF4ng an to\xE0n); h\xE3y d\xF9ng Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao.</p>"):"")}catch(l){if(l.name==="AbortError"){s&&(h.scanned=h.lastBackup=null,Z=[]),e("convert-summary").textContent=s?"\u0110\xE3 h\u1EE7y. \u0110\xE3 ghi ".concat(s," \u0111o\u1EA1n v\xE0o Word; d\xF9ng Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao n\u1EBFu mu\u1ED1n b\u1ECF c\xE1c thay \u0111\u1ED5i."):"\u0110\xE3 h\u1EE7y chuy\u1EC3n \u0111\u1ED5i. Ch\u01B0a ghi thay \u0111\u1ED5i v\xE0o t\xE0i li\u1EC7u.";return}m==="ghi c\xF4ng th\u1EE9c v\xE0o Word"&&(h.scanned=h.lastBackup=null,Z=[],e("btn-restore").disabled=!0);const T=typeof Office<"u"?Office.context?.diagnostics:null,P=[l.code,l.debugInfo?.errorLocation,T?.platform,T?.version].filter(Boolean).join(" \xB7 ");e("convert-summary").innerHTML='<span class="bad">L\u1ED7i khi '.concat(p(m),": ").concat(p(l.message)).concat(P?" (".concat(p(P),")"):"","</span>")+(m==="ghi c\xF4ng th\u1EE9c v\xE0o Word"?'<p class="warn">M\u1ED9t s\u1ED1 \u0111o\u1EA1n c\xF3 th\u1EC3 \u0111\xE3 \u0111\u01B0\u1EE3c ghi. H\xE3y Ho\xE0n t\xE1c (Ctrl/Cmd+Z) ho\u1EB7c m\u1EDF l\u1EA1i b\u1EA3n sao tr\u01B0\u1EDBc khi th\u1EED l\u1EA1i.</p>':"")}finally{S=null,i.forEach(([l,T])=>{l.disabled=T}),e("btn-convert").hidden=!1,e("btn-cancel-convert").hidden=!0,e("btn-restore").disabled=!h.lastBackup,r.hidden=!0}}e("btn-convert").addEventListener("click",Yt),e("btn-restore").addEventListener("click",async()=>{const t=h.lastBackup;if(t)try{t.scope.kind==="body"?await u.writeBodySnapshot(t.pkg,t.paragraphCount):await u.writeParagraphs(t.scope,t.items,t.mode,(n,o)=>x(e("progress"),n,o)),e("convert-summary").innerHTML='<span class="ok">\u0110\xE3 kh\xF4i ph\u1EE5c c\xE1c \u0111o\u1EA1n g\u1ED1c.</span>',e("btn-restore").disabled=!0}catch(n){e("convert-summary").innerHTML='<span class="bad">Kh\xF4ng kh\xF4i ph\u1EE5c \u0111\u01B0\u1EE3c: '.concat(p(n.message),"</span>")}});let L=null,Q=0;function v(){clearTimeout(Q),Q=setTimeout(bt,document.documentElement.classList.contains("lite")?220:60)}function bt(){L&&L.active()&&L.pull();const t=e("editor-latex")?.value.trim()||"",n=e("editor-preview");if(n){if(!t){n.innerHTML='<span class="muted" style="font-size:12px;font-style:italic">(Ch\u01B0a c\xF3 n\u1ED9i dung c\xF4ng th\u1EE9c)</span>';return}if(typeof katex<"u"&&katex.render)try{const a=document.querySelector("input[name=editor-format]:checked")?.value==="mathtype"&&Ht()&&!e("editor-display")?.checked;katex.render(a&&!/^\s*\\displaystyle/.test(t)?"\\displaystyle ".concat(t):t,n,{displayMode:e("editor-display")?.checked??!1,throwOnError:!1,output:"htmlAndMathml"})}catch(o){n.innerHTML='<span class="bad">L\u1ED7i c\xFA ph\xE1p: '.concat(p(o.message),"</span>")}else n.textContent=t}}function Zt(t){const n=e("editor-latex");if(!n)return;const o=n.selectionStart??n.value.length,a=n.selectionEnd??n.value.length,c=n.value.slice(0,o),i=n.value.slice(a);n.value=c+t+i;const s=o+t.length;n.setSelectionRange(s,s),n.focus(),v()}async function wt(t=!0,n=null,o=()=>!0){const a=e("editor-status");a&&(a.textContent="\u0110ang \u0111\u1ECDc c\xF4ng th\u1EE9c t\u1EEB Word\u2026");try{if(!n){const r=++$,m=e("editor-latex").value,l=await u.readCursorContext();if(r!==$||q||!e("tab-editor")?.classList.contains("active")||e("editor-latex").value!==m)return;n=lt(l)}if(!o())return;const c=n;if(!c.eq){if(c.errors&&c.errors.length&&c.found)throw new Error("C\xF4ng th\u1EE9c b\u1ECB l\u1ED7i: ".concat(c.errors[0]));a&&(a.innerHTML=t?'<span class="warn">Kh\xF4ng t\xECm th\u1EA5y c\xF4ng th\u1EE9c n\xE0o t\u1EA1i con tr\u1ECF / v\xF9ng ch\u1ECDn (\u0111o\u1EA1n n\xE0y kh\xF4ng c\xF3 c\xF4ng th\u1EE9c). B\u1EA1n c\xF3 th\u1EC3 t\u1EF1 so\u1EA1n b\xEAn d\u01B0\u1EDBi.</span>':"\u0110\u1EB7t con tr\u1ECF trong c\xF4ng th\u1EE9c r\u1ED3i b\u1EA5m \u201CL\u1EA5y t\u1EEB Word\u201D, ho\u1EB7c so\u1EA1n m\u1EDBi b\xEAn d\u01B0\u1EDBi.");return}const i=c.eq;e("editor-latex").value=i.latex,e("editor-display")&&(e("editor-display").checked=!i.inline),clearTimeout(Q),bt();const s=i.kind==="mathtype"?"MathType":i.kind==="native"?"Word Equation":"LaTeX",f=c.count>1?" \u2014 c\xF4ng th\u1EE9c ".concat(c.index+1,"/").concat(c.count).concat(c.how==="cursor"?" (g\u1EA7n con tr\u1ECF nh\u1EA5t)":""):"";a&&(a.innerHTML='<span class="ok">\u0110\xE3 n\u1EA1p c\xF4ng th\u1EE9c ('.concat(s,")").concat(f,':</span> <code style="font-size:11px">').concat(p(i.latex),"</code>"))}catch(c){a&&(a.innerHTML='<span class="bad">L\u1ED7i: '.concat(p(c.message),"</span>"))}}async function xt(){if(q)return;const t=e("editor-latex")?.value.trim(),n=e("editor-msg");if(!t){n&&(n.innerHTML='<span class="bad">Vui l\xF2ng nh\u1EADp m\xE3 LaTeX tr\u01B0\u1EDBc khi c\u1EADp nh\u1EADt.</span>');return}n&&(n.textContent="\u0110ang ch\xE8n v\xE0o Word\u2026"),q=!0,++$;try{const o=e("editor-display")?.checked??!1,a=document.querySelector("input[name=editor-format]:checked")?.value==="mathtype",c=a?await It(t,{render:Y,inline:!o,...await V()}):Nt(Ft(t,{display:o}));await u.replaceSelection(c),n&&(n.innerHTML='<span class="ok">\u0110\xE3 c\u1EADp nh\u1EADt c\xF4ng th\u1EE9c v\xE0o Word th\xE0nh c\xF4ng ('.concat(a?"\u0111\u1ED1i t\u01B0\u1EE3ng MathType":"chu\u1EA9n Word Equation",").</span>"))}catch(o){n&&(n.innerHTML='<span class="bad">L\u1ED7i: '.concat(p(o.message),"</span>"))}finally{q=!1,W()}}document.querySelectorAll(".sym-tab-btn").forEach(t=>{t.addEventListener("click",()=>{document.querySelectorAll(".sym-tab-btn").forEach(o=>o.classList.remove("active")),document.querySelectorAll(".sym-panel").forEach(o=>{o.classList.remove("active"),o.hidden=!0}),t.classList.add("active");const n=e("sym-group-"+t.dataset.group);n&&(n.classList.add("active"),n.hidden=!1)})}),document.querySelectorAll(".sym-btn").forEach(t=>{t.addEventListener("click",()=>{const n=t.dataset.ins;n&&Zt(n)})}),e("editor-latex")?.addEventListener("input",v),e("editor-display")?.addEventListener("change",v),e("btn-load-sel")?.addEventListener("click",()=>wt(!0)),e("btn-clear-editor")?.addEventListener("click",()=>{e("editor-latex").value="",v(),e("editor-msg")&&(e("editor-msg").textContent=""),e("editor-status")&&(e("editor-status").textContent="\u0110\u1EB7t con tr\u1ECF trong c\xF4ng th\u1EE9c r\u1ED3i b\u1EA5m \u201CL\u1EA5y t\u1EEB Word\u201D, ho\u1EB7c so\u1EA1n m\u1EDBi b\xEAn d\u01B0\u1EDBi.")}),e("btn-apply-editor")?.addEventListener("click",xt),e("editor-latex")?.addEventListener("keydown",t=>{(t.ctrlKey||t.metaKey)&&t.key==="Enter"&&(t.preventDefault(),xt())}),e("btn-env").addEventListener("click",()=>{const t=[];t.push("Office c\xF3: "+(typeof Office<"u")+", Word c\xF3: "+(typeof Word<"u")),t.push("C\xE1ch \u0111\u1ECDc t\xE0i li\u1EC7u: "+u.bodyReadRoute());try{const n=Office.context;t.push("host="+n.diagnostics?.host+" platform="+n.diagnostics?.platform+" version="+n.diagnostics?.version);for(const o of["1.1","1.2","1.3","1.4","1.5","1.6"])t.push("WordApi ".concat(o,": ").concat(n.requirements.isSetSupported("WordApi",o)))}catch(n){t.push("l\u1ED7i: "+n.message)}e("diag-log").textContent=t.join("\n")}),e("btn-dump").addEventListener("click",async()=>{try{const t=await u.readParagraphs({kind:"selection"}),n=[];for(const o of t.slice(0,3)){const a=[...o.pkg.matchAll(/pkg:name="([^"]+)"[^>]*>/g)].map(s=>s[1]),c=Kt(o.pkg);n.push("\u2014 \u0111o\u1EA1n ".concat(o.index,": g\xF3i ").concat(o.pkg.length," k\xFD t\u1EF1, ").concat(a.length," ph\u1EA7n:\n  ").concat(a.join("\n  "))),n.push("  c\xF4ng th\u1EE9c nh\u1EADn ra: ".concat(c.equations.map(s=>"".concat(s.kind,":").concat(s.latex??"\u2717 "+s.error)).join(" | ")||"kh\xF4ng c\xF3"));const i=/<w:body>([\s\S]*?)<\/w:body>/.exec(o.pkg);n.push("  w:body (400 k\xFD t\u1EF1 \u0111\u1EA7u): "+(i?i[1].slice(0,400):"?"))}e("diag-log").textContent=n.join("\n")||"Kh\xF4ng c\xF3 \u0111o\u1EA1n n\xE0o \u0111\u01B0\u1EE3c ch\u1ECDn."}catch(t){e("diag-log").textContent="L\u1ED7i: "+t.message}});function Gt(t){try{if(Office.context?.ui?.openBrowserWindow){Office.context.ui.openBrowserWindow(t);return}}catch{}let n=null;try{n=window.open(t,"_blank")}catch{}n||(location.href=t)}e("btn-guide").addEventListener("click",()=>Gt("https://giasu.ai.vn/word-addin/su-dung.html")),e("copy-acct").addEventListener("click",async()=>{try{await navigator.clipboard.writeText("4802518888"),e("acct-msg").textContent="\u0110\xE3 sao ch\xE9p"}catch{e("acct-msg").textContent="H\xE3y ch\u1ECDn v\xE0 sao ch\xE9p th\u1EE7 c\xF4ng"}});let M=null,Lt="",$=0,q=!1,tt=!1,H=!1,$t=0;const et=()=>!q&&e("editor-auto")?.checked&&e("tab-editor")?.classList.contains("active")&&!(document.hasFocus()&&(document.activeElement===e("editor-latex")||L?.focused()));async function Tt(t){if(et()){if(tt){H=!0;return}H=!1,tt=!0,$t=Date.now();try{const n=await u.readCursorContext();if(t!==$||!et())return;const o=lt(n);if(!o.eq)return;const a=JSON.stringify([o.eq.latex,o.eq.inline]);if(a===Lt&&e("editor-latex").value===o.eq.latex&&e("editor-display")?.checked===!o.eq.inline)return;Lt=a,await wt(!1,o,()=>t===$&&et())}catch{}finally{tt=!1,H&&(H=!1,M===null&&Tt($))}}}function W(){const t=++$;clearTimeout(M),M=null,!q&&(M=setTimeout(()=>(M=null,document.dispatchEvent(new CustomEvent("texcraft:selection")),Tt(t)),30))}let Et=!1,I=!1,Jt=0;function nt(){if(Et||I)return;const t=()=>{I=!1,++Jt<=3&&setTimeout(nt,1e3)};try{if(typeof Office>"u"||!Office.context?.document?.addHandlerAsync){t();return}I=!0,Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged,W,n=>{if(I=!1,n.status===Office.AsyncResultStatus.Failed){t();return}Et=!0,W()})}catch{t()}}window.addEventListener("blur",()=>{Date.now()-$t>600&&W()}),e("editor-auto")?.addEventListener("change",W);function Qt(){try{Office.addin&&Office.addin.setStartupBehavior&&Office.addin.setStartupBehavior(Office.StartupBehavior.load)}catch{}}function Ct(){try{if(!Office.actions?.associate)return;for(const t of["eq","editor","exam","about","figures","calc","worksheet"])Office.actions.associate("showTab_"+t,async()=>{F(t);try{await Office.addin.showAsTaskpane()}catch{}})}catch{}}async function te(){if(typeof Office<"u"&&Office.onReady){try{const t=Office.onReady().then(()=>{nt(),Ct()});await Promise.race([t,new Promise((n,o)=>setTimeout(()=>o(new Error("timeout")),4e3))])}catch{}Ct()}if(!u.hasWord()||typeof Office<"u"&&!Office.context?.host){const t=document.createElement("div");t.className="notice";try{if(!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)&&new URLSearchParams(location.search).get("mock")!=="1")throw new Error("Real Office APIs must not be replaced by the mock.");await(await import("./mock-word.js")).install(new URLSearchParams(location.search).get("doc")||"/fixtures/sample-body.xml"),t.textContent="Ch\u1EBF \u0111\u1ED9 th\u1EED (kh\xF4ng c\xF3 Word): d\xF9ng t\xE0i li\u1EC7u gi\u1EA3 l\u1EADp \u0111\u1ECDc t\u1EEB /fixtures. M\u1ECDi thay \u0111\u1ED5i ch\u1EC9 n\u1EB1m trong b\u1ED9 nh\u1EDB tr\xECnh duy\u1EC7t."}catch{t.textContent="Trang n\xE0y ch\u1EC9 ho\u1EA1t \u0111\u1ED9ng b\xEAn trong Word (Ch\xE8n \u2192 Add-ins). M\u1EDF n\xF3 t\u1EEB Word nh\xE9."}document.body.prepend(t)}try{/Mac|iPhone|iPad/.test(navigator.platform||navigator.userAgent)&&(e("apply-kbd").textContent="\u2318\u21A9")}catch{}nt(),Qt(),gt()}let Mt=!1;function ee(){if(Mt)return;Mt=!0,Pt(e("editor-latex"),{onChange:()=>v()}),L=Bt({host:e("editor-visual"),textarea:e("editor-latex"),onChange:()=>v()}),Dt(e("editor-toolbar"),e("editor-latex"),{visual:L});const t="texcraft-editor-input",n=async(a,c=!0)=>{try{await L.setActive(a==="visual",{focus:c})}catch(s){e("editor-msg").innerHTML='<span class="bad">Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c \xF4 nh\u1EADp tr\u1EF1c quan: '.concat(p(s.message),"</span>"),a="latex",await L.setActive(!1)}const i=document.querySelector("input[name=editor-input][value=".concat(a,"]"));i&&(i.checked=!0);try{localStorage.setItem(t,a)}catch{}v()};document.querySelectorAll("input[name=editor-input]").forEach(a=>a.addEventListener("change",()=>n(a.value)));let o="latex";try{o=localStorage.getItem(t)||"latex"}catch{}o==="visual"&&n("visual",!1)}async function ne(){const t=e("offline-status");try{if(!("serviceWorker"in navigator)){t&&(t.textContent="B\u1EA3n Word n\xE0y ch\u01B0a h\u1ED7 tr\u1EE3 l\u01B0u \u0111\u1EC3 d\xF9ng khi m\u1EA5t m\u1EA1ng.");return}if(/^(localhost|127\.0\.0\.1)$/.test(location.hostname)&&!/[?&]sw=1/.test(location.search)){t&&(t.textContent="Ch\u1EBF \u0111\u1ED9 ph\xE1t tri\u1EC3n: kh\xF4ng l\u01B0u b\u1EA3n offline.");return}const o=new URL("../sw.js",location.href);(await navigator.serviceWorker.register(o.href,{scope:new URL("../",location.href).pathname,updateViaCache:"none"})).update().catch(()=>{});const c=await navigator.serviceWorker.ready,i=()=>c.active&&c.active.postMessage("status");navigator.serviceWorker.addEventListener("message",s=>{s.data&&s.data.type==="status"&&t&&(t.innerHTML='<span class="ok">\u0110\xE3 l\u01B0u '.concat(s.data.files," t\u1EC7p \u0111\u1EC3 d\xF9ng khi m\u1EA5t m\u1EA1ng</span> (gi\u1EEF ").concat(s.data.maxAgeDays," ng\xE0y, t\u1EF1 l\xE0m m\u1EDBi khi c\xF3 m\u1EA1ng; b\u1EA3n ").concat(p(s.data.version),")."))}),i(),setTimeout(i,3e3)}catch(n){t&&(t.textContent="Kh\xF4ng b\u1EADt \u0111\u01B0\u1EE3c ch\u1EBF \u0111\u1ED9 offline: "+n.message)}}e("btn-offline-sympy")?.addEventListener("click",async()=>{const t=e("offline-sympy-status");try{await(await import("../src/sympy-bridge.js")).loadSympy(o=>{t.textContent=o}),t.innerHTML='<span class="ok">\u0110\xE3 t\u1EA3i SymPy; l\u1EA7n sau t\xEDnh to\xE1n \u0111\u01B0\u1EE3c khi m\u1EA5t m\u1EA1ng.</span>'}catch(n){t.innerHTML='<span class="bad">'.concat(p(n.message),"</span>")}}),ne(),te();
+import './polyfills.js';
+import { mountMtSettings, mtOptions, mtConvertOptions, classicLayout } from './mt-settings.js';
+import * as io from '../src/word-io.js';
+import { attachLatexAutocomplete } from './latex-autocomplete.js';
+import { mountEditorToolbar } from './editor-toolbar.js';
+import { createVisualEditor } from './visual-editor.js';
+import { pickEquation } from '../src/cursor-eq.js';
+import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
+
+// Weak machine (few cores / little RAM / reduced-motion / ?lite): drop animations and shadows via the .lite class.
+try {
+  const nav = navigator;
+  if (/[?&]lite\b/.test(location.search) || (nav.hardwareConcurrency && nav.hardwareConcurrency <= 4) || (nav.deviceMemory && nav.deviceMemory <= 4) || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) document.documentElement.classList.add('lite');
+} catch { /* old web view */ }
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const state = { scanned: null, lastBackup: null, examLoaded: false };
+let lastPreview = [];
+
+// ---------------------------------------------------------------- tabs
+// Public edition includes Soạn thảo for every teacher. Extra tools remain in ?edition=full (see manifest-full.xml).
+const FULL = /[?&]edition=full\b/.test(location.search);
+const LITE_TABS = ['eq', 'editor', 'exam', 'figures', 'about'];
+if (!FULL) document.querySelectorAll('nav button').forEach((b) => { if (!LITE_TABS.includes(b.dataset.tab)) b.remove(); });
+function switchTab(name, followSelection = true) {
+  if (!FULL && !LITE_TABS.includes(name)) name = 'eq';
+  const b = document.querySelector(`nav button[data-tab="${name}"]`);
+  if (!b) return;
+  ++selectionVersion;
+  clearTimeout(autoTimer);
+  autoTimer = null;
+  autoPending = false;
+  document.querySelectorAll('nav button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+  document.querySelectorAll('section').forEach((s) => s.classList.toggle('active', s.id === 'tab-' + name));
+  try { b.scrollIntoView({ block: 'nearest', inline: 'nearest' }); } catch { /* old web view */ }
+  if (name === 'figures' && !state.figuresLoaded) {
+    state.figuresLoaded = true;
+    import('./figures-ui.js').then((m) => m.mountFigures($('figures-root'), io)).catch((e) => { $('figures-root').textContent = 'Không tải được mô-đun hình vẽ: ' + e.message; });
+  }
+  if (name === 'worksheet' && !state.worksheetLoaded) {
+    state.worksheetLoaded = true;
+    import('./worksheet-ui.js').then((m) => m.mountWorksheet($('worksheet-root'), io)).catch((e) => { $('worksheet-root').textContent = 'Không tải được mô-đun phiếu bài tập: ' + e.message; });
+  }
+  if (name === 'calc' && !state.calcLoaded) {
+    state.calcLoaded = true;
+    import('./calc-ui.js').then((m) => m.mountCalc($('calc-root'), io, { openEditor: (latex) => { $('editor-latex').value = latex; switchTab('editor', false); renderEditorPreview(); } })).catch((e) => { $('calc-root').textContent = 'Không tải được mô-đun tính toán: ' + e.message; });
+  }
+  if (name === 'lms' && !state.lmsLoaded) {
+    state.lmsLoaded = true;
+    import('./lms-ui.js').then((m) => m.mountLms($('lms-root'), io)).catch((e) => { $('lms-root').textContent = 'Không tải được mô-đun LMS: ' + e.message; });
+  }
+  if (name === 'exam' && !state.examLoaded) {
+    state.examLoaded = true;
+    import('./exam-ui.js').then((m) => m.mountExam($('exam-root'), io)).catch((e) => { $('exam-root').textContent = 'Không tải được mô-đun đề thi: ' + e.message; });
+  }
+  if (name === 'editor') {
+    initEditor();
+    renderEditorPreview();
+    if (followSelection && $('editor-auto')?.checked) onSelectionChanged();
+  }
+}
+
+function checkUrlTab() {
+  const params = new URLSearchParams(window.location.search);
+  const tab = params.get('tab') || window.location.hash.replace(/^#/, '');
+  if (tab) switchTab(tab);
+}
+
+document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click', () => {
+  switchTab(b.dataset.tab);
+}));
+window.addEventListener('hashchange', checkUrlTab);
+// Mouse wheel scrolls the tab strip sideways (Windows has no horizontal wheel).
+document.querySelector('nav').addEventListener('wheel', (e) => { if (e.deltaY) { e.currentTarget.scrollLeft += e.deltaY; e.preventDefault(); } }, { passive: false });
+if (window.__texcraftLoaded) window.__texcraftLoaded();
+
+// After any write: previews are stale, and "restore" is only safe while paragraph numbering is unchanged.
+function afterWrite(res, backup) {
+  state.scanned = null;
+  lastPreview = [];
+  const same = res.before === res.after;
+  state.lastBackup = same ? backup : null;
+  $('btn-restore').disabled = !same;
+}
+
+function progress(el, done, total) { el.hidden = false; el.max = total || 1; el.value = done; }
+
+// ---------------------------------------------------------------- scan
+async function scan() {
+  $('btn-scan').disabled = true;
+  $('scan-summary').textContent = 'Đang đọc tài liệu…';
+  try {
+    const readStart = Date.now();
+    const { pkg, paragraphCount } = await io.readBody({ scanOnly: true });
+    const readMs = Date.now() - readStart;
+    $('scan-summary').textContent = 'Đang phân tích công thức…';
+    await new Promise(resolve => setTimeout(resolve, 0));
+    const parseStart = Date.now();
+    const scanned = scanBody(pkg);
+    scanned.timing = { readMs, parseMs: Date.now() - parseStart };
+    scanned.mapped = scanned.paragraphTotal === paragraphCount;
+    scanned.paragraphCount = paragraphCount;
+    state.scanned = scanned;
+    renderScan();
+  } catch (e) { $('scan-summary').innerHTML = `<span class="bad">Lỗi khi đọc tài liệu: ${esc(e.message)}</span>`; }
+  finally { $('btn-scan').disabled = false; }
+}
+
+function renderScan() {
+  const s = state.scanned;
+  const mt = s.equations.filter((e) => e.kind === 'mathtype');
+  const okMt = mt.filter((e) => e.latex !== null).length;
+  const badMt = mt.length - okMt;
+  const lx = s.equations.filter((e) => e.kind === 'latex');
+  const native = s.equations.filter((e) => e.kind === 'native');
+  $('scan-summary').innerHTML = `${s.equations.length} công thức: MathType <b class="ok">${okMt}</b>${badMt ? ` (lỗi <b class="bad">${badMt}</b>)` : ''}, LaTeX <b class="warn">${lx.length}</b>, Word <b>${native.length}</b>` +
+    (s.mapped ? '' : ` · <span class="warn">số đoạn không khớp (${s.paragraphTotal} ≠ ${s.paragraphCount}); không định vị từng đoạn từ kết quả quét</span>`) +
+    (s.timing ? ` · đọc ${(s.timing.readMs / 1000).toFixed(1)} giây, phân tích ${(s.timing.parseMs / 1000).toFixed(1)} giây` : '');
+  const only = $('only-bad').checked;
+  const rows = s.equations.filter((e) => !only || e.latex === null);
+  $('eq-table').tBodies[0].innerHTML = rows.slice(0, 600).map((e) => {
+    let badge = '';
+    if (e.latex === null) {
+      badge = `<span class="badge bad" title="${esc(e.error)}">không đọc được</span>`;
+    } else if (e.kind === 'mathtype') {
+      badge = '<span class="badge ok">MathType</span>';
+    } else if (e.kind === 'latex') {
+      badge = '<span class="badge warn">LaTeX</span>';
+    } else {
+      badge = '<span class="badge native">Word</span>';
+    }
+    return `<tr data-para="${e.para}"><td>${e.n + 1}</td><td class="muted">${esc(e.excerpt)}</td><td>${e.latex === null ? `<span class="muted">${esc(e.error)}</span>` : `<span class="tex">${esc(e.latex)}</span>`}</td><td>${badge}</td></tr>`;
+  }).join('') + (rows.length > 600 ? `<tr><td colspan="4" class="muted">… còn ${rows.length - 600} dòng</td></tr>` : '');
+  $('btn-convert').disabled = false;
+}
+$('btn-scan').addEventListener('click', scan);
+$('only-bad').addEventListener('change', () => state.scanned && renderScan());
+$('eq-table').addEventListener('click', (ev) => {
+  if (conversionJob) return;
+  const tr = ev.target.closest('tr[data-para]');
+  if (tr && state.scanned && state.scanned.mapped && io.hasWord()) io.selectParagraph(Number(tr.dataset.para)).catch(() => {});
+});
+
+// ---------------------------------------------------------------- convert
+const writeMode = () => ($('opt-mode').checked ? 'paragraph' : 'content');
+
+mountMtSettings($('mt-settings-convert'));
+mountMtSettings($('mt-settings-editor'), { onChange: () => renderEditorPreview() });
+const syncEditorFormat = () => { const mt = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype'; $('mt-details').hidden = !mt; renderEditorPreview(); };
+document.querySelectorAll('input[name=editor-format]').forEach((r) => r.addEventListener('change', syncEditorFormat));
+
+const convSrc = () => $('conv-src')?.value || 'mathtype';
+const convDst = () => $('conv-dst')?.value || 'word';
+const SRC_KIND = { mathtype: 'mathtype', latex: 'latex', word: 'native' };
+const CONV_HINTS = {
+  'same:mathtype': 'MathType → MathType: làm lại các công thức MathType (và công thức Word) trong phạm vi đã chọn theo kiểu chữ và cỡ chữ ở trên.',
+  'same:latex': 'Nguồn và đích đều là LaTeX: không có gì để chuyển.',
+  'same:word': 'Nguồn và đích đều là công thức Word: không có gì để chuyển.',
+  'mathtype:latex': 'Công thức MathType được thay bằng mã LaTeX dạng $…$.',
+  'word:latex': 'Công thức Word được thay bằng mã LaTeX dạng $…$ ($$…$$ nếu riêng dòng).',
+  'latex:mathtype': 'Mã LaTeX ($…$, $$…$$, \\(…\\), \\[…\\]) được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem). Các công thức Word có sẵn trong phạm vi cũng bị đổi sang MathType.',
+  'word:mathtype': 'Công thức Word được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem; sửa bằng MathType khi có).',
+};
+// valid targets for each source: LaTeX -> Word/MathType, Word -> LaTeX/MathType, MathType -> anything
+const DST_FOR = { latex: ['mathtype', 'word'], word: ['mathtype', 'latex'], mathtype: ['mathtype', 'latex', 'word'] };
+function syncConvertUi() {
+  const ok = DST_FOR[convSrc()] || [];
+  const dstEl = $('conv-dst');
+  [...dstEl.options].forEach((o) => { o.hidden = o.disabled = !ok.includes(o.value); });
+  if (!ok.includes(dstEl.value)) dstEl.value = ok.includes('word') ? 'word' : ok[0];
+  const s = convSrc(), d = convDst();
+  $('conv-hint').textContent = CONV_HINTS[s === d ? `same:${s}` : `${s}:${d}`] || '';
+  $('mt-settings-convert').hidden = d !== 'mathtype';
+  $('opt-display').closest('label').hidden = d !== 'word';
+}
+$('conv-src').addEventListener('change', syncConvertUi);
+$('conv-dst').addEventListener('change', syncConvertUi);
+syncConvertUi();
+
+async function paragraphsToProcess(scope, onProgress, { kinds: wanted, signal } = {}) {
+  if (scope === 'selection') return { scope: { kind: 'selection' }, items: await io.readConversionParagraphs(wanted, onProgress, { signal, scope: { kind: 'selection' } }) };
+  // Always use a fresh snapshot: a previous scan's indexes can be stale after editing in Word.
+  return { scope: { kind: 'all' }, items: await io.readConversionParagraphs(wanted, onProgress, { signal }) };
+}
+
+let conversionJob = null;
+$('btn-cancel-convert').addEventListener('click', () => {
+  if (!conversionJob) return;
+  conversionJob.aborted = true;
+  $('btn-cancel-convert').disabled = true;
+  $('convert-summary').textContent = 'Đang hủy… chờ thao tác hiện tại của Word hoàn tất.';
+});
+
+async function convert() {
+  if (conversionJob) return;
+  if (!$('opt-backup').checked) { $('convert-summary').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
+  const src = convSrc(), dst = convDst();
+  if (src === dst && src !== 'mathtype') { $('convert-summary').innerHTML = '<span class="warn">Nguồn và đích giống nhau: không có gì để chuyển.</span>'; return; }
+  const normalize = src === 'mathtype' && dst === 'mathtype';
+  // kinds of equations that take part (MathType→MathType also redoes Word equations; ->MathType goes through Word equations)
+  const kinds = new Set([SRC_KIND[src]]);
+  if (dst === 'mathtype') kinds.add('native');
+  const signal = conversionJob = { aborted: false };
+  const controls = [...document.querySelectorAll('#tab-eq button, #tab-eq input, #tab-eq select')]
+    .filter(el => el.id !== 'btn-cancel-convert').map(el => [el, el.disabled]);
+  controls.forEach(([el]) => { el.disabled = true; });
+  $('btn-convert').hidden = true;
+  $('btn-cancel-convert').hidden = false;
+  $('btn-cancel-convert').disabled = false;
+  let written = 0;
+  const checkpoint = async () => {
+    await new Promise(resolve => setTimeout(resolve, 0));
+    if (signal.aborted) {
+      const error = new Error('Đã hủy chuyển đổi.');
+      error.name = 'AbortError';
+      throw error;
+    }
+  };
+  const bar = $('progress');
+  progress(bar, 0, 1);
+  $('convert-summary').textContent = 'Đang đọc tài liệu…';
+  let phase = 'đọc tài liệu';
+  try {
+    const scopeName = document.querySelector('input[name=scope]:checked').value;
+    if (scopeName === 'all' && (dst !== 'word' || !$('opt-display').checked)) {
+      const readStart = Date.now();
+      const original = await io.readBody();
+      const readMs = Date.now() - readStart;
+      await checkpoint();
+      const convertStart = Date.now();
+      phase = 'giải mã và chuyển công thức';
+      $('convert-summary').textContent = 'Đang chuyển công thức…';
+      progress(bar, 1, 3);
+      await new Promise(resolve => setTimeout(resolve, 0));
+      let result;
+      if (dst === 'mathtype') {
+        const options = { ...mtConvertOptions(), defaultSize: (await mtOptions()).size };
+        await checkpoint();
+        const a = convertMathTypeInPackage(original.pkg, { convertMathType: normalize, convertLatex: src === 'latex', display: false });
+        const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...options, signal,
+          onProgress: (done, total) => {
+            progress(bar, done, total);
+            $('convert-summary').textContent = `Đang chuyển công thức ${done}/${total}…`;
+          } });
+        result = { ...b, pkg: b.changed ? b.pkg : a.pkg, changed: a.changed || b.changed,
+          converted: b.changed ? b.converted : a.converted, kept: [...a.kept, ...b.kept] };
+      } else if (dst === 'latex') {
+        result = convertEquationsToLatexText(original.pkg, { fromMathType: src === 'mathtype', fromNative: src === 'word' });
+      } else {
+        result = convertMathTypeInPackage(original.pkg, { convertMathType: src === 'mathtype', convertLatex: src === 'latex' });
+      }
+      const reasons = {};
+      const convertMs = Date.now() - convertStart;
+      result.kept.forEach(k => { reasons[k.reason] = (reasons[k.reason] || 0) + 1; });
+      const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
+      if (!result.changed) {
+        $('convert-summary').innerHTML = `Không có gì để chuyển. Giữ nguyên ${result.kept.length} công thức.` + (reasonList ? `<ul>${reasonList}</ul>` : '');
+        return;
+      }
+      await checkpoint();
+      phase = 'ghi công thức vào Word';
+      $('convert-summary').textContent = `Đang ghi ${result.converted} công thức vào Word…`;
+      progress(bar, 2, 3);
+      const writeStart = Date.now();
+      const res = await io.writeBodySnapshot(result.pkg, original.paragraphCount);
+      const writeMs = Date.now() - writeStart;
+      afterWrite(res, { scope: { kind: 'body' }, pkg: original.pkg, paragraphCount: original.paragraphCount });
+      progress(bar, 3, 3);
+      $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${result.converted}</b> công thức; giữ nguyên ${result.kept.length}.</p>` +
+        `<p>Đọc ${(readMs / 1000).toFixed(1)} giây · chuyển ${(convertMs / 1000).toFixed(1)} giây · ghi ${(writeMs / 1000).toFixed(1)} giây.</p>` +
+        (reasonList ? `<ul>${reasonList}</ul>` : '') +
+        (res.before !== res.after ? '<p class="warn">Số đoạn đã thay đổi. Hãy kiểm tra bố cục; dùng Hoàn tác hoặc mở lại bản sao nếu cần.</p>' : '');
+      return;
+    }
+    $('convert-summary').textContent = 'Đang đọc các đoạn…';
+    const { scope, items } = await paragraphsToProcess(scopeName, (d, t) => progress(bar, d, t * 2), { kinds, signal });
+    await checkpoint();
+    phase = 'giải mã và chuyển công thức';
+    $('convert-summary').textContent = 'Đang chuyển công thức…';
+    let converted = 0, convertedMathType = 0, convertedLatex = 0, kept = 0;
+    const reasons = {}, writes = [], backup = [];
+    // Resolve the cursor font once, rather than one Office round trip per paragraph.
+    const mathTypeOptions = dst === 'mathtype' ? { ...mtConvertOptions(), defaultSize: (await mtOptions()).size } : null;
+    let lastYield = Date.now();
+    for (const it of items) {
+      if (signal.aborted) await checkpoint();
+      if (Date.now() - lastYield >= 16) {
+        await new Promise((resolve) => setTimeout(resolve, 0));
+        lastYield = Date.now();
+        if (signal.aborted) await checkpoint();
+      }
+      let r;
+      if (dst === 'mathtype') {
+        // LaTeX text -> Word equation first, then every Word equation -> MathType object
+        const a = convertMathTypeInPackage(it.pkg, { convertMathType: normalize, convertLatex: src === 'latex', display: false });
+        const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...mathTypeOptions });
+        r = { converted: b.converted, convertedLatex: a.convertedLatex || 0, convertedMathType: 0, kept: [...a.kept, ...b.kept], changed: b.changed, pkg: b.changed ? b.pkg : a.pkg };
+        if (!b.changed && a.changed) r.converted = a.converted;
+      } else if (dst === 'latex') {
+        r = convertEquationsToLatexText(it.pkg, { fromMathType: src === 'mathtype', fromNative: src === 'word' });
+      } else {
+        r = convertMathTypeInPackage(it.pkg, { convertMathType: src === 'mathtype', convertLatex: src === 'latex', display: $('opt-display').checked });
+      }
+      converted += r.converted;
+      convertedMathType += (r.convertedMathType || 0);
+      convertedLatex += (r.convertedLatex || 0);
+      kept += r.kept.length;
+      r.kept.forEach((k) => { reasons[k.reason] = (reasons[k.reason] || 0) + 1; });
+      if (r.changed) { writes.push({ index: it.index, pkg: r.pkg }); backup.push({ index: it.index, pkg: it.pkg }); }
+    }
+    const reasonList = Object.entries(reasons).map(([k, v]) => `<li>${esc(k)}: ${v}</li>`).join('');
+    await checkpoint();
+    if (!writes.length) { $('convert-summary').innerHTML = `Không có gì để chuyển.${kept ? ` Giữ nguyên: ${kept}.` : ''}` + (reasonList ? `<ul>${reasonList}</ul>` : ''); return; }
+    $('convert-summary').textContent = `Đang ghi ${writes.length} đoạn…`;
+    phase = 'ghi công thức vào Word';
+    const res = await io.writeParagraphs(scope, writes, writeMode(), (d, t) => {
+      written = d;
+      progress(bar, t + d, t * 2);
+    }, { signal });
+    afterWrite(res, { scope, items: backup, mode: writeMode() });
+    const details = [];
+    if (convertedMathType) details.push(`${convertedMathType} MathType`);
+    if (convertedLatex) details.push(`${convertedLatex} LaTeX`);
+    const detailStr = details.length ? ` (${details.join(', ')})` : '';
+    $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${converted}</b> công thức${detailStr}; <b class="${kept ? 'warn' : ''}">giữ nguyên ${kept}</b>.</p>` +
+      (reasonList ? `<ul>${reasonList}</ul>` : '') +
+      (res.before !== res.after ? `<p class="warn">Số đoạn thay đổi ${res.before} → ${res.after}: Word có thể đã thêm đoạn trống. Nút “Khôi phục” bị tắt (không an toàn); hãy dùng Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao.</p>` : '');
+  } catch (e) {
+    if (e.name === 'AbortError') {
+      if (written) {
+        state.scanned = state.lastBackup = null;
+        lastPreview = [];
+      }
+      $('convert-summary').textContent = written
+        ? `Đã hủy. Đã ghi ${written} đoạn vào Word; dùng Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao nếu muốn bỏ các thay đổi.`
+        : 'Đã hủy chuyển đổi. Chưa ghi thay đổi vào tài liệu.';
+      return;
+    }
+    if (phase === 'ghi công thức vào Word') {
+      state.scanned = state.lastBackup = null;
+      lastPreview = [];
+      $('btn-restore').disabled = true;
+    }
+    const host = typeof Office !== 'undefined' ? Office.context?.diagnostics : null;
+    const info = [e.code, e.debugInfo?.errorLocation, host?.platform, host?.version].filter(Boolean).join(' · ');
+    $('convert-summary').innerHTML = `<span class="bad">Lỗi khi ${esc(phase)}: ${esc(e.message)}${info ? ` (${esc(info)})` : ''}</span>` +
+      (phase === 'ghi công thức vào Word' ? '<p class="warn">Một số đoạn có thể đã được ghi. Hãy Hoàn tác (Ctrl/Cmd+Z) hoặc mở lại bản sao trước khi thử lại.</p>' : '');
+  } finally {
+    conversionJob = null;
+    controls.forEach(([el, disabled]) => { el.disabled = disabled; });
+    $('btn-convert').hidden = false;
+    $('btn-cancel-convert').hidden = true;
+    $('btn-restore').disabled = !state.lastBackup;
+    bar.hidden = true;
+  }
+}
+$('btn-convert').addEventListener('click', convert);
+$('btn-restore').addEventListener('click', async () => {
+  const b = state.lastBackup;
+  if (!b) return;
+  try {
+    if (b.scope.kind === 'body') await io.writeBodySnapshot(b.pkg, b.paragraphCount);
+    else await io.writeParagraphs(b.scope, b.items, b.mode, (d, t) => progress($('progress'), d, t));
+    $('convert-summary').innerHTML = '<span class="ok">Đã khôi phục các đoạn gốc.</span>';
+    $('btn-restore').disabled = true;
+  } catch (e) { $('convert-summary').innerHTML = `<span class="bad">Không khôi phục được: ${esc(e.message)}</span>`; }
+});
+
+// ---------------------------------------------------------------- formula editor
+let visual = null;
+let previewTimer = 0;
+function renderEditorPreview() {   // coalesce keystrokes: one KaTeX render per pause (longer on weak machines)
+  clearTimeout(previewTimer);
+  previewTimer = setTimeout(renderEditorPreviewNow, document.documentElement.classList.contains('lite') ? 220 : 60);
+}
+function renderEditorPreviewNow() {
+  if (visual && visual.active()) visual.pull();
+  const tex = $('editor-latex')?.value.trim() || '';
+  const previewEl = $('editor-preview');
+  if (!previewEl) return;
+  if (!tex) {
+    previewEl.innerHTML = '<span class="muted" style="font-size:12px;font-style:italic">(Chưa có nội dung công thức)</span>';
+    return;
+  }
+  if (typeof katex !== 'undefined' && katex.render) {
+    try {
+      const asMt = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype';
+      const classic = asMt && classicLayout() && !($('editor-display')?.checked);   // the picture of a MathType object follows the chosen layout
+      katex.render(classic && !/^\s*\\displaystyle/.test(tex) ? `\\displaystyle ${tex}` : tex, previewEl, {
+        displayMode: $('editor-display')?.checked ?? false,
+        throwOnError: false,
+        output: 'htmlAndMathml'
+      });
+    } catch (e) {
+      previewEl.innerHTML = `<span class="bad">Lỗi cú pháp: ${esc(e.message)}</span>`;
+    }
+  } else {
+    previewEl.textContent = tex;
+  }
+}
+
+function insertSymbolAtCursor(text) {
+  const el = $('editor-latex');
+  if (!el) return;
+  const start = el.selectionStart ?? el.value.length;
+  const end = el.selectionEnd ?? el.value.length;
+  const before = el.value.slice(0, start);
+  const after = el.value.slice(end);
+  el.value = before + text + after;
+  const newPos = start + text.length;
+  el.setSelectionRange(newPos, newPos);
+  el.focus();
+  renderEditorPreview();
+}
+
+async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent = () => true) {
+  const statusEl = $('editor-status');
+  if (statusEl) statusEl.textContent = 'Đang đọc công thức từ Word…';
+  try {
+    if (!picked) {
+      const version = ++selectionVersion;
+      const draft = $('editor-latex').value;
+      const ctx = await io.readCursorContext();
+      if (version !== selectionVersion || applying || !$('tab-editor')?.classList.contains('active') || $('editor-latex').value !== draft) return;
+      picked = pickEquation(ctx);
+    }
+    if (!isCurrent()) return;
+    const r = picked;
+    if (!r.eq) {
+      if (r.errors && r.errors.length && r.found) throw new Error(`Công thức bị lỗi: ${r.errors[0]}`);
+      if (statusEl) statusEl.innerHTML = showNotice
+        ? '<span class="warn">Không tìm thấy công thức nào tại con trỏ / vùng chọn (đoạn này không có công thức). Bạn có thể tự soạn bên dưới.</span>'
+        : 'Đặt con trỏ trong công thức rồi bấm “Lấy từ Word”, hoặc soạn mới bên dưới.';
+      return;
+    }
+    const target = r.eq;
+    $('editor-latex').value = target.latex;
+    if ($('editor-display')) $('editor-display').checked = !target.inline;
+    clearTimeout(previewTimer);
+    renderEditorPreviewNow();
+    const kindLabel = target.kind === 'mathtype' ? 'MathType' : target.kind === 'native' ? 'Word Equation' : 'LaTeX';
+    const where = r.count > 1 ? ` — công thức ${r.index + 1}/${r.count}${r.how === 'cursor' ? ' (gần con trỏ nhất)' : ''}` : '';
+    if (statusEl) statusEl.innerHTML = `<span class="ok">Đã nạp công thức (${kindLabel})${where}:</span> <code style="font-size:11px">${esc(target.latex)}</code>`;
+  } catch (e) {
+    if (statusEl) statusEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
+  }
+}
+
+async function applyFormulaToWord() {
+  if (applying) return;
+  const tex = $('editor-latex')?.value.trim();
+  const msgEl = $('editor-msg');
+  if (!tex) {
+    if (msgEl) msgEl.innerHTML = '<span class="bad">Vui lòng nhập mã LaTeX trước khi cập nhật.</span>';
+    return;
+  }
+  if (msgEl) msgEl.textContent = 'Đang chèn vào Word…';
+  applying = true;
+  ++selectionVersion;
+  try {
+    const isDisplay = $('editor-display')?.checked ?? false;
+    const asMathType = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype';
+    const pkg = asMathType ? await makeMathTypePackage(tex, { render: browserRender, inline: !isDisplay, ...(await mtOptions()) }) : makeEquationPackage(latexToOmml(tex, { display: isDisplay }));
+    await io.replaceSelection(pkg);
+    if (msgEl) msgEl.innerHTML = `<span class="ok">Đã cập nhật công thức vào Word thành công (${asMathType ? 'đối tượng MathType' : 'chuẩn Word Equation'}).</span>`;
+  } catch (e) {
+    if (msgEl) msgEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
+  } finally {
+    applying = false;
+    onSelectionChanged();
+  }
+}
+
+// Palette tabs switching
+document.querySelectorAll('.sym-tab-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.sym-tab-btn').forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('.sym-panel').forEach((p) => { p.classList.remove('active'); p.hidden = true; });
+    btn.classList.add('active');
+    const panel = $('sym-group-' + btn.dataset.group);
+    if (panel) { panel.classList.add('active'); panel.hidden = false; }
+  });
+});
+
+// Palette buttons
+document.querySelectorAll('.sym-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const ins = btn.dataset.ins;
+    if (ins) insertSymbolAtCursor(ins);
+  });
+});
+
+// Editor events
+$('editor-latex')?.addEventListener('input', renderEditorPreview);
+$('editor-display')?.addEventListener('change', renderEditorPreview);
+$('btn-load-sel')?.addEventListener('click', () => loadFormulaFromWord(true));
+$('btn-clear-editor')?.addEventListener('click', () => {
+  $('editor-latex').value = '';
+  renderEditorPreview();
+  if ($('editor-msg')) $('editor-msg').textContent = '';
+  if ($('editor-status')) $('editor-status').textContent = 'Đặt con trỏ trong công thức rồi bấm “Lấy từ Word”, hoặc soạn mới bên dưới.';
+});
+$('btn-apply-editor')?.addEventListener('click', applyFormulaToWord);
+$('editor-latex')?.addEventListener('keydown', (ev) => {
+  if ((ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') {
+    ev.preventDefault();
+    applyFormulaToWord();
+  }
+});
+
+// ---------------------------------------------------------------- diagnostics
+$('btn-env').addEventListener('click', () => {
+  const lines = [];
+  lines.push('Office có: ' + (typeof Office !== 'undefined') + ', Word có: ' + (typeof Word !== 'undefined'));
+  lines.push('Cách đọc tài liệu: ' + io.bodyReadRoute());
+  try {
+    const c = Office.context;
+    lines.push('host=' + c.diagnostics?.host + ' platform=' + c.diagnostics?.platform + ' version=' + c.diagnostics?.version);
+    for (const v of ['1.1', '1.2', '1.3', '1.4', '1.5', '1.6']) lines.push(`WordApi ${v}: ${c.requirements.isSetSupported('WordApi', v)}`);
+  } catch (e) { lines.push('lỗi: ' + e.message); }
+  $('diag-log').textContent = lines.join('\n');
+});
+$('btn-dump').addEventListener('click', async () => {
+  try {
+    const items = await io.readParagraphs({ kind: 'selection' });
+    const out = [];
+    for (const it of items.slice(0, 3)) {
+      const names = [...it.pkg.matchAll(/pkg:name="([^"]+)"[^>]*>/g)].map((m) => m[1]);
+      const s = scanPackage(it.pkg);
+      out.push(`— đoạn ${it.index}: gói ${it.pkg.length} ký tự, ${names.length} phần:\n  ${names.join('\n  ')}`);
+      out.push(`  công thức nhận ra: ${s.equations.map((e) => `${e.kind}:${e.latex ?? ('✗ ' + e.error)}`).join(' | ') || 'không có'}`);
+      const body = /<w:body>([\s\S]*?)<\/w:body>/.exec(it.pkg);
+      out.push('  w:body (400 ký tự đầu): ' + (body ? body[1].slice(0, 400) : '?'));
+    }
+    $('diag-log').textContent = out.join('\n') || 'Không có đoạn nào được chọn.';
+  } catch (e) { $('diag-log').textContent = 'Lỗi: ' + e.message; }
+});
+
+// Word's task pane web view often ignores window.open; Office opens the system browser itself.
+function openExternal(url) {
+  try { if (Office.context?.ui?.openBrowserWindow) { Office.context.ui.openBrowserWindow(url); return; } } catch { /* fall through */ }
+  let w = null;
+  try { w = window.open(url, '_blank'); } catch { /* blocked */ }
+  if (!w) location.href = url;
+}
+$('btn-guide').addEventListener('click', () => openExternal('https://giasu.ai.vn/word-addin/su-dung.html'));
+$('copy-acct').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText('4802518888'); $('acct-msg').textContent = 'Đã sao chép'; } catch { $('acct-msg').textContent = 'Hãy chọn và sao chép thủ công'; }
+});
+
+// ---------------------------------------------------------------- boot (real Word, or the browser mock for development)
+// ---------------------------------------------------------------- auto-load the equation under the cursor
+let autoTimer = null, lastAutoSig = '', selectionVersion = 0, applying = false;
+let autoReading = false, autoPending = false, lastReadAt = 0;
+const canAutoLoad = () => !applying && $('editor-auto')?.checked && $('tab-editor')?.classList.contains('active') &&
+  !(document.hasFocus() && (document.activeElement === $('editor-latex') || visual?.focused()));
+async function refreshAutoSelection(version) {
+  if (!canAutoLoad()) return;
+  if (autoReading) { autoPending = true; return; }
+  autoPending = false;
+  autoReading = true;
+  lastReadAt = Date.now();
+  try {
+    const ctx = await io.readCursorContext();
+    if (version !== selectionVersion || !canAutoLoad()) return;
+    const r = pickEquation(ctx);
+    if (!r.eq) return;
+    const signature = JSON.stringify([r.eq.latex, r.eq.inline]);
+    if (signature === lastAutoSig && $('editor-latex').value === r.eq.latex && $('editor-display')?.checked === !r.eq.inline) return;
+    lastAutoSig = signature;
+    await loadFormulaFromWord(false, r, () => version === selectionVersion && canAutoLoad());
+  } catch { /* selection not readable: ignore */ }
+  finally {
+    autoReading = false;
+    if (autoPending) {
+      autoPending = false;
+      if (autoTimer === null) refreshAutoSelection(selectionVersion);
+    }
+  }
+}
+function onSelectionChanged() {
+  const version = ++selectionVersion;
+  clearTimeout(autoTimer);
+  autoTimer = null;
+  if (applying) return;
+  autoTimer = setTimeout(() => {
+    autoTimer = null;
+    // other tabs (Tính toán) listen to this event and read the cursor themselves
+    document.dispatchEvent(new CustomEvent('texcraft:selection'));
+    return refreshAutoSelection(version);
+  }, 30);
+}
+let selectionWatcherInstalled = false, selectionWatcherPending = false, selectionWatcherRetries = 0;
+function installSelectionWatcher() {
+  if (selectionWatcherInstalled || selectionWatcherPending) return;
+  const retry = () => {
+    selectionWatcherPending = false;
+    if (++selectionWatcherRetries <= 3) setTimeout(installSelectionWatcher, 1000);
+  };
+  try {
+    if (typeof Office === 'undefined' || !Office.context?.document?.addHandlerAsync) { retry(); return; }
+    selectionWatcherPending = true;
+    Office.context.document.addHandlerAsync(Office.EventType.DocumentSelectionChanged, onSelectionChanged, (result) => {
+      selectionWatcherPending = false;
+      if (result.status === Office.AsyncResultStatus.Failed) { retry(); return; }
+      selectionWatcherInstalled = true;
+      onSelectionChanged();
+    });
+  } catch { retry(); }
+}
+// Returning to Word can precede its selection event; refresh after the click settles.
+window.addEventListener('blur', () => { if (Date.now() - lastReadAt > 600) onSelectionChanged(); });   // no extra read when the click just triggered one
+$('editor-auto')?.addEventListener('change', onSelectionChanged);
+
+// Ask Word to load the add-in at startup, so the ribbon buttons are there after a restart (needs a Word that supports it).
+function requestStartupLoad() {
+  try {
+    if (Office.addin && Office.addin.setStartupBehavior) Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+  } catch { /* older Word: the add-in has to be inserted again (see README) */ }
+}
+
+// Ribbon buttons run in the same (shared) runtime as this pane: each one shows the pane and switches to its tab,
+// instead of Word opening one extra pane per button.
+function registerRibbonActions() {
+  try {
+    if (!Office.actions?.associate) return;
+    for (const t of ['eq', 'editor', 'exam', 'about', 'figures', 'calc', 'worksheet']) {
+      Office.actions.associate('showTab_' + t, async () => {
+        switchTab(t);
+        try { await Office.addin.showAsTaskpane(); } catch { /* already visible */ }
+      });
+    }
+  } catch { /* older Word: the buttons open panes by URL (?tab=) */ }
+}
+
+async function boot() {
+  if (typeof Office !== 'undefined' && Office.onReady) {
+    try {
+      const ready = Office.onReady().then(() => { installSelectionWatcher(); registerRibbonActions(); });
+      await Promise.race([ready, new Promise((_r, rej) => setTimeout(() => rej(new Error('timeout')), 4000))]);
+    } catch { /* not inside Office */ }
+    registerRibbonActions();
+  }
+  if (!io.hasWord() || (typeof Office !== 'undefined' && !Office.context?.host)) {
+    const note = document.createElement('div');
+    note.className = 'notice';
+    try {
+      if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname) && new URLSearchParams(location.search).get('mock') !== '1') throw new Error('Real Office APIs must not be replaced by the mock.');
+      const mock = await import('./mock-word.js');
+      await mock.install(new URLSearchParams(location.search).get('doc') || '/fixtures/sample-body.xml');
+      note.textContent = 'Chế độ thử (không có Word): dùng tài liệu giả lập đọc từ /fixtures. Mọi thay đổi chỉ nằm trong bộ nhớ trình duyệt.';
+    } catch {
+      note.textContent = 'Trang này chỉ hoạt động bên trong Word (Chèn → Add-ins). Mở nó từ Word nhé.';
+    }
+    document.body.prepend(note);
+  }
+  try { if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) $('apply-kbd').textContent = '⌘↩'; } catch { /* ignore */ }
+  installSelectionWatcher();
+  requestStartupLoad();
+  checkUrlTab();
+}
+let editorInitialized = false;
+function initEditor() {
+  if (editorInitialized) return;
+  editorInitialized = true;
+  attachLatexAutocomplete($('editor-latex'), { onChange: () => renderEditorPreview() });
+  visual = createVisualEditor({ host: $('editor-visual'), textarea: $('editor-latex'), onChange: () => renderEditorPreview() });
+  mountEditorToolbar($('editor-toolbar'), $('editor-latex'), { visual });
+  const KEY_IN = 'texcraft-editor-input';
+  const setInput = async (mode, focus = true) => {
+    try { await visual.setActive(mode === 'visual', { focus }); } catch (e) { $('editor-msg').innerHTML = `<span class="bad">Không tải được ô nhập trực quan: ${esc(e.message)}</span>`; mode = 'latex'; await visual.setActive(false); }
+    const r = document.querySelector(`input[name=editor-input][value=${mode}]`); if (r) r.checked = true;
+    try { localStorage.setItem(KEY_IN, mode); } catch { /* ignore */ }
+    renderEditorPreview();
+  };
+  document.querySelectorAll('input[name=editor-input]').forEach((r) => r.addEventListener('change', () => setInput(r.value)));
+  let saved = 'latex'; try { saved = localStorage.getItem(KEY_IN) || 'latex'; } catch { /* ignore */ }
+  if (saved === 'visual') setInput('visual', false);
+}
+// Offline use: a service worker keeps the add-in for ~30 days (not on localhost, unless ?sw=1 for testing)
+async function registerOffline() {
+  const note = $('offline-status');
+  try {
+    if (!('serviceWorker' in navigator)) { if (note) note.textContent = 'Bản Word này chưa hỗ trợ lưu để dùng khi mất mạng.'; return; }
+    const dev = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) && !/[?&]sw=1/.test(location.search);
+    if (dev) { if (note) note.textContent = 'Chế độ phát triển: không lưu bản offline.'; return; }
+    const base = new URL('../sw.js', location.href);
+    const registration = await navigator.serviceWorker.register(base.href, { scope: new URL('../', location.href).pathname, updateViaCache: 'none' });
+    // Ask for the latest worker even when this panel itself was served from the offline cache.
+    registration.update().catch(() => {});
+    const reg = await navigator.serviceWorker.ready;
+    const ask = () => reg.active && reg.active.postMessage('status');
+    navigator.serviceWorker.addEventListener('message', (ev) => { if (ev.data && ev.data.type === 'status' && note) note.innerHTML = `<span class="ok">Đã lưu ${ev.data.files} tệp để dùng khi mất mạng</span> (giữ ${ev.data.maxAgeDays} ngày, tự làm mới khi có mạng; bản ${esc(ev.data.version)}).`; });
+    ask(); setTimeout(ask, 3000);
+  } catch (e) { if (note) note.textContent = 'Không bật được chế độ offline: ' + e.message; }
+}
+$('btn-offline-sympy')?.addEventListener('click', async () => {
+  const st = $('offline-sympy-status');
+  try { const m = await import('../src/sympy-bridge.js'); await m.loadSympy((t) => { st.textContent = t; }); st.innerHTML = '<span class="ok">Đã tải SymPy; lần sau tính toán được khi mất mạng.</span>'; } catch (e) { st.innerHTML = `<span class="bad">${esc(e.message)}</span>`; }
+});
+registerOffline();
+boot();

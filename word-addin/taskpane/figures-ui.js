@@ -1,1 +1,161 @@
-import{variationTable as G,manualVariationTable as q}from"../src/figures/bbt.js";import{plotFunctions as O,PRESETS as E}from"../src/figures/plot.js";import{regionFigure as D}from"../src/figures/region.js";import{GEOMETRY as N}from"../src/figures/geometry.js";import{CHEMISTRY as j}from"../src/figures/chem.js";import{PHYSICS as W}from"../src/figures/physics.js";import{BIOLOGY as X}from"../src/figures/bio.js";import{sceneToPackage as K}from"../src/figures/scene.js";import{mountMtSettings as R,figurePt as V}from"./mt-settings.js";import{makePicturePackage as Y,svgToPngPx as M,downloadBlob as P}from"../src/picture.js";const r=o=>String(o??"").replace(/[&<>"]/g,p=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[p]),c=o=>o===""||o===null||o===void 0||Number.isNaN(Number(o))?void 0:Number(o),g=(o,p,$=!1)=>'<label class="switch"><input type="checkbox" id="'.concat(o,'"').concat($?" checked":"",'><span class="switch-track"></span><span>').concat(p,"</span></label>"),t=(o,p)=>'<label class="field"><span>'.concat(o,"</span>").concat(p,"</label>");function ie(o,p){const $=[["bbt","B\u1EA3ng bi\u1EBFn thi\xEAn"],["plot","\u0110\u1ED3 th\u1ECB"],["region","Mi\u1EC1n nghi\u1EC7m"],["geo","H\xECnh h\u1ECDc"],["chem","H\xF3a h\u1ECDc"],["phys","V\u1EADt l\xED"],["bio","Sinh h\u1ECDc"]],f={geo:N,chem:j,phys:W,bio:X};o.innerHTML='\n    <div class="grid2 fig-kind-row"><label class="field fig-kind"><span>Lo\u1EA1i h\xECnh</span><select id="fig-kind">'.concat($.map(([n,a])=>'<option value="'.concat(n,'">').concat(a,"</option>")).join(""),'</select></label><div id="fig-sub"></div></div>\n    <div id="fig-form"></div>\n    <div id="fig-error" class="bad"></div>\n    <div class="fig-preview" id="fig-preview"></div>\n    <div class="hint" id="fig-note"></div>\n    <div class="grid2 fig-opts">\n      <div id="fig-size"></div>\n      <label class="field"><span>Ki\u1EC3u h\xECnh s\u1EEDa \u0111\u01B0\u1EE3c</span><select id="fig-float"><option value="float">H\xECnh n\u1ED5i</option><option value="inline">C\xF9ng d\xF2ng ch\u1EEF</option></select></label>\n    </div>\n    <div class="btns fig-actions"><button class="primary" id="fig-insert" title="C\xE1c \u0111\u01B0\u1EDDng th\u1EB3ng, h\u1ED9p ch\u1EEF v\xE0 c\xF4ng th\u1EE9c Word nh\xF3m l\u1EA1i: b\u1EA5m v\xE0o \u0111\u1EC3 s\u1EEDa t\u1EEBng ph\u1EA7n trong Word">Ch\xE8n v\xE0o Word (h\xECnh s\u1EEDa \u0111\u01B0\u1EE3c)</button></div>\n    <div class="btns three fig-actions"><button class="secondary" id="fig-png">Ch\xE8n \u1EA3nh PNG</button><button class="secondary" id="fig-dl-png">T\u1EA3i PNG</button><button class="secondary" id="fig-dl-svg">T\u1EA3i SVG</button></div>\n    <div id="fig-out"></div>');const e=n=>o.querySelector("#"+n);R(e("fig-size"),{fontRow:!1,onChange:()=>T()});let k=12,d="bbt",s=null,H=null;const A={bbt:()=>'<label class="field sub-field"><span>C\xE1ch l\u1EADp</span><select id="b-mode"><option value="auto">T\u1EF1 \u0111\u1ED9ng v\u1EBD</option><option value="manual">T\u1EF1 nh\u1EADp</option></select></label>\n      <div id="b-auto">'.concat(t("H\xE0m s\u1ED1 y = f(x) (g\xF5 th\u01B0\u1EDDng ho\u1EB7c LaTeX)",'<input type="text" id="b-expr" value="x^3-3x+1" spellcheck="false" placeholder="vd. (2x+1)/(x-1), \\frac{2x+1}{x-1}, x^3-3x+1, \\sqrt{x}">'),'\n      <label class="field"><span>M\u1EABu c\xF3 s\u1EB5n</span><select id="b-preset"><option value="">\u2014 ch\u1ECDn m\u1EABu \u2014</option>').concat(E.map(n=>'<option value="'.concat(r(n.expr),'">').concat(r(n.label),"</option>")).join(""),'</select></label>\n      <div class="grid2">').concat(t("Kh\u1EA3o s\xE1t t\u1EEB x =",'<input type="number" id="b-lo" placeholder="\u2212\u221E">')).concat(t("\u0111\u1EBFn x =",'<input type="number" id="b-hi" placeholder="+\u221E">'),"</div>\n      ").concat(t("Ghi ch\xFA t\u1EADp x\xE1c \u0111\u1ECBnh (t\xF9y ch\u1ECDn)",'<input type="text" id="b-domain" placeholder="vd. TX\u0110: D = \u211D \\ {1}">'),'</div>\n      <div id="b-manual" hidden>\n        ').concat(t("D\xF2ng x (c\xE1ch nhau b\u1EDFi d\u1EA5u c\xE1ch)",'<input type="text" id="m-x" value="-inf -1 1 +inf" spellcheck="false">'),"\n        ").concat(t("D\xF2ng y' (d\u1EA5u t\u1EEBng kho\u1EA3ng, xen k\u1EBD 0 ho\u1EB7c ||)",'<input type="text" id="m-dy" value="+ 0 - 0 +" spellcheck="false">'),"\n        ").concat(t("D\xF2ng y (m\u1ED7i c\u1ED9t x m\u1ED9t gi\xE1 tr\u1ECB)",'<input type="text" id="m-y" value="-inf 3 -1 +inf" spellcheck="false">'),"\n        ").concat(t("Nh\xE3n h\xE0ng cu\u1ED1i",'<input type="text" id="m-label" value="f(x)" spellcheck="false">'),"\n        ").concat(t("Ghi ch\xFA (t\xF9y ch\u1ECDn)",'<input type="text" id="m-domain" placeholder="vd. TX\u0110: D = \u211D \\ {1}">'),"\n        <div class=\"hint\">Vi\u1EBFt <b>-inf</b>, <b>+inf</b> cho \u221E. D\xF2ng y' c\xF3 th\u1EC3 ch\u1EC9 g\u1ED3m c\xE1c d\u1EA5u (+ - +), ho\u1EB7c xen k\u1EBD d\u1EA5u v\u1EDBi <b>0</b> (c\u1EF1c tr\u1ECB) / <b>||</b> (kh\xF4ng x\xE1c \u0111\u1ECBnh), vd. <code>+ 0 - || -</code>. \u1EDE d\xF2ng y, c\u1ED9t gi\xE1n \u0111o\u1EA1n vi\u1EBFt <b>tr\xE1i|ph\u1EA3i</b>, vd. <code>-inf|+inf</code>. C\xF3 th\u1EC3 d\xF9ng LaTeX nh\u01B0 <code>\\frac{1}{2}</code>. Kho\u1EA3ng h\xE0m kh\xF4ng x\xE1c \u0111\u1ECBnh ghi <b>//</b> \u1EDF d\xF2ng y' (\u0111\u01B0\u1EE3c g\u1EA1ch ch\xE9o), vd. x: <code>-inf -2 2 +inf</code>, y': <code>- // +</code>, y: <code>0 +inf| |-inf 0</code> (b\u1ECF tr\u1ED1ng ph\xEDa kh\xF4ng c\xF3 gi\xE1 tr\u1ECB). M\u0169i t\xEAn l\xEAn/xu\u1ED1ng theo d\u1EA5u c\u1EE7a y'.</div>\n      </div>"),plot:()=>"".concat(t("H\xE0m s\u1ED1 (m\u1ED7i d\xF2ng m\u1ED9t h\xE0m; g\xF5 th\u01B0\u1EDDng ho\u1EB7c LaTeX, vd. \\frac{x+1}{x-1})",'<textarea id="p-expr" rows="2" spellcheck="false">x^3-3x+1</textarea>'),'\n      <label class="field"><span>M\u1EABu c\xF3 s\u1EB5n</span><select id="p-preset"><option value="">\u2014 ch\u1ECDn m\u1EABu \u2014</option>').concat(E.map(n=>'<option value="'.concat(n.id,'">').concat(r(n.label),"</option>")).join(""),'</select></label>\n      <div class="subhead">Kho\u1EA3ng gi\xE1 tr\u1ECB tr\xEAn c\xE1c tr\u1EE5c</div>\n      <div class="grid2">').concat(t("x nh\u1ECF nh\u1EA5t",'<input type="number" id="p-xmin" value="-3" step="any">')).concat(t("x l\u1EDBn nh\u1EA5t",'<input type="number" id="p-xmax" value="3" step="any">'),'</div>\n      <div class="grid2">').concat(t("y nh\u1ECF nh\u1EA5t",'<input type="number" id="p-ymin" placeholder="t\u1EF1 \u0111\u1ED9ng" step="any">')).concat(t("y l\u1EDBn nh\u1EA5t",'<input type="number" id="p-ymax" placeholder="t\u1EF1 \u0111\u1ED9ng" step="any">'),'</div>\n      <div class="subhead">Hi\u1EC3n th\u1ECB</div>\n      ').concat(g("p-grid","Hi\u1EC7n l\u01B0\u1EDBi",!0)).concat(g("p-asym","Ti\u1EC7m c\u1EADn \u0111\u1EE9ng (n\xE9t \u0111\u1EE9t)",!0)).concat(g("p-points","\u0110\xE1nh d\u1EA5u \u0111i\u1EC3m c\u1EF1c tr\u1ECB",!0)).concat(g("p-legend","Ghi t\xEAn h\xE0m s\u1ED1 (khi v\u1EBD nhi\u1EC1u h\xE0m)")),region:()=>"".concat(t("H\u1EC7 b\u1EA5t ph\u01B0\u01A1ng tr\xECnh (m\u1ED7i d\xF2ng m\u1ED9t b\u1EA5t ph\u01B0\u01A1ng tr\xECnh)",'<textarea id="r-ineq" rows="4" spellcheck="false">x+y<=4\n2x-y>=-2\nx>=0\ny>=0</textarea>'),'\n      <label class="field"><span>C\xE1ch th\u1EC3 hi\u1EC7n mi\u1EC1n nghi\u1EC7m</span><select id="r-mode"><option value="hatch">G\u1EA1ch b\u1ECF ph\u1EA7n kh\xF4ng thu\u1ED9c mi\u1EC1n nghi\u1EC7m</option><option value="fill">T\xF4 m\xE0u mi\u1EC1n nghi\u1EC7m</option></select></label>\n      <div class="grid2">').concat(t("x nh\u1ECF nh\u1EA5t",'<input type="number" id="r-xmin" placeholder="t\u1EF1 \u0111\u1ED9ng" step="any">')).concat(t("x l\u1EDBn nh\u1EA5t",'<input type="number" id="r-xmax" placeholder="t\u1EF1 \u0111\u1ED9ng" step="any">'),'</div>\n      <div class="grid2">').concat(t("y nh\u1ECF nh\u1EA5t",'<input type="number" id="r-ymin" placeholder="t\u1EF1 \u0111\u1ED9ng" step="any">')).concat(t("y l\u1EDBn nh\u1EA5t",'<input type="number" id="r-ymax" placeholder="t\u1EF1 \u0111\u1ED9ng" step="any">'),"</div>\n      ").concat(g("r-grid","Hi\u1EC7n l\u01B0\u1EDBi",!0)).concat(g("r-vertices","Ghi t\xEAn v\xE0 t\u1ECDa \u0111\u1ED9 c\xE1c \u0111\u1EC9nh",!0)).concat(g("r-lines","Ghi t\xEAn c\xE1c \u0111\u01B0\u1EDDng th\u1EB3ng (d\u2081), (d\u2082)\u2026",!0))};for(const[n,a]of Object.entries(f))A[n]=()=>'<label class="field sub-field"><span>H\xECnh</span><select id="g-kind">'.concat(a.map(i=>'<option value="'.concat(i.id,'">').concat(r(i.label),"</option>")).join(""),'</select></label><div id="g-opts"></div>');function L([n,a,i,h]){if(Array.isArray(i))return t(a,'<select data-opt="'.concat(n,'">').concat(i.map(([x,u])=>'<option value="'.concat(x,'">').concat(r(u),"</option>")).join(""),"</select>"));if(i&&i.num){const[x,u,v,l]=i.num;return t(a,'<input type="number" data-opt="'.concat(n,'" min="').concat(x,'" max="').concat(u,'" step="').concat(l||1,'" value="').concat(v,'">'))}return i&&"text"in i?t(a,'<input type="text" data-opt="'.concat(n,'" value="').concat(r(i.text),'" spellcheck="false">')):g("go-"+n,a,h??(d==="geo"?/^show/.test(n):!0))}function C(){const n=f[d].find(l=>l.id===e("g-kind").value),a=n.options.filter(l=>Array.isArray(l[2])),i=n.options.filter(l=>l[2]&&!Array.isArray(l[2])),h=n.options.filter(l=>!l[2]),x=n.names&&n.hint?'<div class="hint">'.concat(r(n.hint),"</div>"):"";e("g-opts").innerHTML=(a.length?'<div class="grid2 g-choices">'.concat(a.map(L).join(""),"</div>"):"")+(i.length?'<div class="'.concat(i.length>1?"grid2":"",'">').concat(i.map(L).join(""),"</div>"):"")+(n.names||n.namesLabel?t(n.namesLabel||"T\xEAn c\xE1c \u0111i\u1EC3m (c\xE1ch nhau b\u1EDFi d\u1EA5u ph\u1EA9y)",'<input type="text" id="g-names" value="'.concat(r(n.names||""),'" spellcheck="false" placeholder="').concat(r(n.names||""),'">'))+x:"")+(h.length?'<div class="sw-grid">'.concat(h.map(L).join(""),"</div>"):""),e("g-opts").querySelectorAll("input,select").forEach(l=>l.addEventListener("input",T));const u=d!=="geo"?null:{pyramid:{opt:"base",tri:"S,A,B,C",quad:"S,A,B,C,D"},prism:{opt:"kind",triangle:"A,B,C,A',B',C'",box:"A,B,C,D,A',B',C',D'",cube:"A,B,C,D,A',B',C',D'"},round:{opt:"kind",cone:"S,O,A",cylinder:"O,O',A",frustum:"O,O'",sphere:"O,A"}}[n.id],v=e("g-names");if(u&&v){const l=e("g-opts").querySelector('select[data-opt="'.concat(u.opt,'"]'));let y=u[l.value]||n.names;v.value=y,l.addEventListener("change",()=>{const w=u[l.value];w&&(v.value.trim()===y||!v.value.trim())&&(v.value=w),y=w||y,m()})}}function B(){if(d==="bbt")return e("b-mode").value==="manual"?q({x:e("m-x").value,dy:e("m-dy").value,y:e("m-y").value,label:e("m-label").value.trim()||"f(x)",fontPt:k,domain:e("m-domain").value.trim()}):G(e("b-expr").value,{lo:c(e("b-lo").value),hi:c(e("b-hi").value),domain:e("b-domain").value.trim(),fontPt:k});if(d==="plot"){const i=e("p-expr").value.split("\n").map(h=>h.trim()).filter(Boolean);if(!i.length)throw new Error("Nh\u1EADp \xEDt nh\u1EA5t m\u1ED9t h\xE0m s\u1ED1");return O(i,{xmin:c(e("p-xmin").value),xmax:c(e("p-xmax").value),ymin:c(e("p-ymin").value),ymax:c(e("p-ymax").value),grid:e("p-grid").checked,asymptotes:e("p-asym").checked,points:e("p-points").checked,legend:e("p-legend").checked})}if(d==="region"){const i=D(e("r-ineq").value.split("\n"),{mode:e("r-mode").value,xmin:c(e("r-xmin").value),xmax:c(e("r-xmax").value),ymin:c(e("r-ymin").value),ymax:c(e("r-ymax").value),grid:e("r-grid").checked,vertices:e("r-vertices").checked,labelLines:e("r-lines").checked});if(i.empty)throw new Error("H\u1EC7 b\u1EA5t ph\u01B0\u01A1ng tr\xECnh v\xF4 nghi\u1EC7m (mi\u1EC1n nghi\u1EC7m r\u1ED7ng) trong khung nh\xECn n\xE0y.");return i}const n=f[d].find(i=>i.id===e("g-kind").value),a={names:e("g-names")?e("g-names").value:""};return e("g-opts").querySelectorAll("[data-opt]").forEach(i=>{a[i.dataset.opt]=i.value}),e("g-opts").querySelectorAll('input[id^="go-"]').forEach(i=>{a[i.id.slice(3)]=i.checked}),n.make(a)}async function m(){e("fig-error").textContent="",d==="bbt"&&(k=await V());try{s=B(),e("fig-preview").innerHTML=s.svg,e("fig-note").textContent=s.note||""}catch(n){s=null,e("fig-note").textContent="",e("fig-error").textContent=n.message}["fig-insert","fig-png","fig-dl-png","fig-dl-svg"].forEach(n=>{e(n).disabled=!s})}function T(){clearTimeout(H),H=setTimeout(m,250)}function S(n){d=n,e("fig-size").hidden=n!=="bbt",e("fig-kind").value=n,e("fig-form").innerHTML=A[n](),e("fig-sub").innerHTML="";const a=e("fig-form").querySelector(".sub-field");a&&e("fig-sub").appendChild(a),e("fig-form").querySelectorAll("input,textarea,select").forEach(i=>i.addEventListener("input",T)),f[n]&&(e("g-kind").addEventListener("change",()=>{C(),m()}),C()),n==="bbt"&&e("b-mode").addEventListener("change",()=>{const i=e("b-mode").value==="manual";e("b-auto").hidden=i,e("b-manual").hidden=!i,m()}),n==="bbt"&&e("b-preset").addEventListener("change",()=>{e("b-preset").value&&(e("b-expr").value=e("b-preset").value,m())}),n==="plot"&&e("p-preset").addEventListener("change",()=>{const i=E.find(h=>h.id===e("p-preset").value);i&&(e("p-expr").value=i.expr,e("p-xmin").value=i.win[0],e("p-xmax").value=i.win[1],e("p-ymin").value=i.win[2],e("p-ymax").value=i.win[3],m())}),m()}e("fig-kind").addEventListener("change",()=>S(e("fig-kind").value));const b=()=>f[d]?f[d].find(n=>n.id===e("g-kind").value)?.label||"H\xECnh v\u1EBD":{bbt:"B\u1EA3ng bi\u1EBFn thi\xEAn",plot:"\u0110\u1ED3 th\u1ECB h\xE0m s\u1ED1",region:"Mi\u1EC1n nghi\u1EC7m"}[d];e("fig-insert").addEventListener("click",async()=>{try{await p.replaceSelection(K(s.scene,{name:b(),alt:b(),float:e("fig-float").value==="float"})),e("fig-out").innerHTML='<span class="ok">\u0110\xE3 ch\xE8n v\xE0o Word t\u1EA1i con tr\u1ECF (h\xECnh s\u1EEDa \u0111\u01B0\u1EE3c).</span>'}catch(n){e("fig-out").innerHTML='<span class="bad">L\u1ED7i: '.concat(r(n.message),"</span>")}}),e("fig-png").addEventListener("click",async()=>{try{const n=await M(s.svg,s.width,s.height,3);await p.replaceSelection(Y(n,{widthPt:s.width*.75,heightPt:s.height*.75,alt:b(),name:"Hinh",center:!0})),e("fig-out").innerHTML='<span class="ok">\u0110\xE3 ch\xE8n \u1EA3nh PNG v\xE0o Word.</span>'}catch(n){e("fig-out").innerHTML='<span class="bad">L\u1ED7i: '.concat(r(n.message),"</span>")}}),e("fig-dl-png").addEventListener("click",async()=>{try{P(await M(s.svg,s.width,s.height,3),"".concat(b(),".png"))}catch(n){e("fig-out").innerHTML='<span class="bad">L\u1ED7i: '.concat(r(n.message),"</span>")}}),e("fig-dl-svg").addEventListener("click",()=>P(new TextEncoder().encode(s.svg),"".concat(b(),".svg"),"image/svg+xml")),S("bbt")}export{ie as mountFigures};
+// "Hình vẽ" tab: variation table, graph, solution region, geometry figures. Insert into Word as editable shapes or as a picture.
+import { variationTable, manualVariationTable } from '../src/figures/bbt.js';
+import { plotFunctions, PRESETS } from '../src/figures/plot.js';
+import { regionFigure } from '../src/figures/region.js';
+import { GEOMETRY } from '../src/figures/geometry.js';
+import { CHEMISTRY } from '../src/figures/chem.js';
+import { PHYSICS } from '../src/figures/physics.js';
+import { BIOLOGY } from '../src/figures/bio.js';
+import { sceneToPackage } from '../src/figures/scene.js';
+import { mountMtSettings, figurePt } from './mt-settings.js';
+import { makePicturePackage, svgToPngPx, downloadBlob } from '../src/picture.js';
+
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const num = (v) => (v === '' || v === null || v === undefined || Number.isNaN(Number(v)) ? undefined : Number(v));
+const sw = (id, label, checked = false) => `<label class="switch"><input type="checkbox" id="${id}"${checked ? ' checked' : ''}><span class="switch-track"></span><span>${label}</span></label>`;
+const field = (label, inner) => `<label class="field"><span>${label}</span>${inner}</label>`;
+
+export function mountFigures(root, io) {
+  const kinds = [['bbt', 'Bảng biến thiên'], ['plot', 'Đồ thị'], ['region', 'Miền nghiệm'], ['geo', 'Hình học'], ['chem', 'Hóa học'], ['phys', 'Vật lí'], ['bio', 'Sinh học']];
+  const CATALOGS = { geo: GEOMETRY, chem: CHEMISTRY, phys: PHYSICS, bio: BIOLOGY };
+  root.innerHTML = `
+    <div class="grid2 fig-kind-row"><label class="field fig-kind"><span>Loại hình</span><select id="fig-kind">${kinds.map(([id, l]) => `<option value="${id}">${l}</option>`).join('')}</select></label><div id="fig-sub"></div></div>
+    <div id="fig-form"></div>
+    <div id="fig-error" class="bad"></div>
+    <div class="fig-preview" id="fig-preview"></div>
+    <div class="hint" id="fig-note"></div>
+    <div class="grid2 fig-opts">
+      <div id="fig-size"></div>
+      <label class="field"><span>Kiểu hình sửa được</span><select id="fig-float"><option value="float">Hình nổi</option><option value="inline">Cùng dòng chữ</option></select></label>
+    </div>
+    <div class="btns fig-actions"><button class="primary" id="fig-insert" title="Các đường thẳng, hộp chữ và công thức Word nhóm lại: bấm vào để sửa từng phần trong Word">Chèn vào Word (hình sửa được)</button></div>
+    <div class="btns three fig-actions"><button class="secondary" id="fig-png">Chèn ảnh PNG</button><button class="secondary" id="fig-dl-png">Tải PNG</button><button class="secondary" id="fig-dl-svg">Tải SVG</button></div>
+    <div id="fig-out"></div>`;
+  const $ = (id) => root.querySelector('#' + id);
+  mountMtSettings($('fig-size'), { fontRow: false, onChange: () => schedule() });
+  let fontPt = 12;
+  let kind = 'bbt', current = null, timer = null;
+
+  const forms = {
+    bbt: () => `<label class="field sub-field"><span>Cách lập</span><select id="b-mode"><option value="auto">Tự động vẽ</option><option value="manual">Tự nhập</option></select></label>
+      <div id="b-auto">${field('Hàm số y = f(x) (gõ thường hoặc LaTeX)', '<input type="text" id="b-expr" value="x^3-3x+1" spellcheck="false" placeholder="vd. (2x+1)/(x-1), \\frac{2x+1}{x-1}, x^3-3x+1, \\sqrt{x}">')}
+      <label class="field"><span>Mẫu có sẵn</span><select id="b-preset"><option value="">— chọn mẫu —</option>${PRESETS.map((p) => `<option value="${esc(p.expr)}">${esc(p.label)}</option>`).join('')}</select></label>
+      <div class="grid2">${field('Khảo sát từ x =', '<input type="number" id="b-lo" placeholder="−∞">')}${field('đến x =', '<input type="number" id="b-hi" placeholder="+∞">')}</div>
+      ${field('Ghi chú tập xác định (tùy chọn)', '<input type="text" id="b-domain" placeholder="vd. TXĐ: D = ℝ \\ {1}">')}</div>
+      <div id="b-manual" hidden>
+        ${field('Dòng x (cách nhau bởi dấu cách)', '<input type="text" id="m-x" value="-inf -1 1 +inf" spellcheck="false">')}
+        ${field("Dòng y' (dấu từng khoảng, xen kẽ 0 hoặc ||)", '<input type="text" id="m-dy" value="+ 0 - 0 +" spellcheck="false">')}
+        ${field('Dòng y (mỗi cột x một giá trị)', '<input type="text" id="m-y" value="-inf 3 -1 +inf" spellcheck="false">')}
+        ${field('Nhãn hàng cuối', '<input type="text" id="m-label" value="f(x)" spellcheck="false">')}
+        ${field('Ghi chú (tùy chọn)', '<input type="text" id="m-domain" placeholder="vd. TXĐ: D = ℝ \\ {1}">')}
+        <div class="hint">Viết <b>-inf</b>, <b>+inf</b> cho ∞. Dòng y' có thể chỉ gồm các dấu (+ - +), hoặc xen kẽ dấu với <b>0</b> (cực trị) / <b>||</b> (không xác định), vd. <code>+ 0 - || -</code>. Ở dòng y, cột gián đoạn viết <b>trái|phải</b>, vd. <code>-inf|+inf</code>. Có thể dùng LaTeX như <code>\\frac{1}{2}</code>. Khoảng hàm không xác định ghi <b>//</b> ở dòng y' (được gạch chéo), vd. x: <code>-inf -2 2 +inf</code>, y': <code>- // +</code>, y: <code>0 +inf| |-inf 0</code> (bỏ trống phía không có giá trị). Mũi tên lên/xuống theo dấu của y'.</div>
+      </div>`,
+    plot: () => `${field('Hàm số (mỗi dòng một hàm; gõ thường hoặc LaTeX, vd. \\frac{x+1}{x-1})', '<textarea id="p-expr" rows="2" spellcheck="false">x^3-3x+1</textarea>')}
+      <label class="field"><span>Mẫu có sẵn</span><select id="p-preset"><option value="">— chọn mẫu —</option>${PRESETS.map((p) => `<option value="${p.id}">${esc(p.label)}</option>`).join('')}</select></label>
+      <div class="subhead">Khoảng giá trị trên các trục</div>
+      <div class="grid2">${field('x nhỏ nhất', '<input type="number" id="p-xmin" value="-3" step="any">')}${field('x lớn nhất', '<input type="number" id="p-xmax" value="3" step="any">')}</div>
+      <div class="grid2">${field('y nhỏ nhất', '<input type="number" id="p-ymin" placeholder="tự động" step="any">')}${field('y lớn nhất', '<input type="number" id="p-ymax" placeholder="tự động" step="any">')}</div>
+      <div class="subhead">Hiển thị</div>
+      ${sw('p-grid', 'Hiện lưới', true)}${sw('p-asym', 'Tiệm cận đứng (nét đứt)', true)}${sw('p-points', 'Đánh dấu điểm cực trị', true)}${sw('p-legend', 'Ghi tên hàm số (khi vẽ nhiều hàm)')}`,
+    region: () => `${field('Hệ bất phương trình (mỗi dòng một bất phương trình)', '<textarea id="r-ineq" rows="4" spellcheck="false">x+y<=4\n2x-y>=-2\nx>=0\ny>=0</textarea>')}
+      <label class="field"><span>Cách thể hiện miền nghiệm</span><select id="r-mode"><option value="hatch">Gạch bỏ phần không thuộc miền nghiệm</option><option value="fill">Tô màu miền nghiệm</option></select></label>
+      <div class="grid2">${field('x nhỏ nhất', '<input type="number" id="r-xmin" placeholder="tự động" step="any">')}${field('x lớn nhất', '<input type="number" id="r-xmax" placeholder="tự động" step="any">')}</div>
+      <div class="grid2">${field('y nhỏ nhất', '<input type="number" id="r-ymin" placeholder="tự động" step="any">')}${field('y lớn nhất', '<input type="number" id="r-ymax" placeholder="tự động" step="any">')}</div>
+      ${sw('r-grid', 'Hiện lưới', true)}${sw('r-vertices', 'Ghi tên và tọa độ các đỉnh', true)}${sw('r-lines', 'Ghi tên các đường thẳng (d₁), (d₂)…', true)}`,
+  };
+  for (const [k, cat] of Object.entries(CATALOGS)) forms[k] = () => `<label class="field sub-field"><span>Hình</span><select id="g-kind">${cat.map((g) => `<option value="${g.id}">${esc(g.label)}</option>`).join('')}</select></label><div id="g-opts"></div>`;
+
+  // One option of a catalogue figure: [key, label, choices?, default?]. choices: array -> list, {num:[min,max,def,step]} -> number, {text:def} -> text; none -> switch.
+  function optionHtml([key, label, ch, def]) {
+    if (Array.isArray(ch)) return field(label, `<select data-opt="${key}">${ch.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join('')}</select>`);
+    if (ch && ch.num) { const [min, max, val, step] = ch.num; return field(label, `<input type="number" data-opt="${key}" min="${min}" max="${max}" step="${step || 1}" value="${val}">`); }
+    if (ch && 'text' in ch) return field(label, `<input type="text" data-opt="${key}" value="${esc(ch.text)}" spellcheck="false">`);
+    return sw('go-' + key, label, def ?? (kind === 'geo' ? /^show/.test(key) : true));
+  }
+  function geoOptions() {
+    const g = CATALOGS[kind].find((x) => x.id === $('g-kind').value);
+    const selects = g.options.filter((o) => Array.isArray(o[2])), others = g.options.filter((o) => o[2] && !Array.isArray(o[2])), flags = g.options.filter((o) => !o[2]);
+    const hint = g.names ? (g.hint ? `<div class="hint">${esc(g.hint)}</div>` : '') : '';
+    $('g-opts').innerHTML =
+      (selects.length ? `<div class="grid2 g-choices">${selects.map(optionHtml).join('')}</div>` : '') +
+      (others.length ? `<div class="${others.length > 1 ? 'grid2' : ''}">${others.map(optionHtml).join('')}</div>` : '') +
+      (g.names || g.namesLabel ? field(g.namesLabel || 'Tên các điểm (cách nhau bởi dấu phẩy)', `<input type="text" id="g-names" value="${esc(g.names || '')}" spellcheck="false" placeholder="${esc(g.names || '')}">`) + hint : '') +
+      (flags.length ? `<div class="sw-grid">${flags.map(optionHtml).join('')}</div>` : '');
+    $('g-opts').querySelectorAll('input,select').forEach((el) => el.addEventListener('input', schedule));
+    // default point names follow the chosen variant; a list the user has edited is kept
+    const NAMES = kind !== 'geo' ? null : {
+      pyramid: { opt: 'base', tri: 'S,A,B,C', quad: 'S,A,B,C,D' },
+      prism: { opt: 'kind', triangle: "A,B,C,A',B',C'", box: "A,B,C,D,A',B',C',D'", cube: "A,B,C,D,A',B',C',D'" },
+      round: { opt: 'kind', cone: 'S,O,A', cylinder: "O,O',A", frustum: "O,O'", sphere: 'O,A' },
+    }[g.id];
+    const namesEl = $('g-names');
+    if (NAMES && namesEl) {
+      const sel = $('g-opts').querySelector(`select[data-opt="${NAMES.opt}"]`);
+      let last = NAMES[sel.value] || g.names;
+      namesEl.value = last;
+      sel.addEventListener('change', () => { const next = NAMES[sel.value]; if (next && (namesEl.value.trim() === last || !namesEl.value.trim())) namesEl.value = next; last = next || last; render(); });
+    }
+  }
+
+  function build() {
+    if (kind === 'bbt') {
+      if ($('b-mode').value === 'manual') return manualVariationTable({ x: $('m-x').value, dy: $('m-dy').value, y: $('m-y').value, label: $('m-label').value.trim() || 'f(x)', fontPt, domain: $('m-domain').value.trim() });
+      const r = variationTable($('b-expr').value, { lo: num($('b-lo').value), hi: num($('b-hi').value), domain: $('b-domain').value.trim(), fontPt });
+      return r;
+    }
+    if (kind === 'plot') {
+      const exprs = $('p-expr').value.split('\n').map((s) => s.trim()).filter(Boolean);
+      if (!exprs.length) throw new Error('Nhập ít nhất một hàm số');
+      return plotFunctions(exprs, { xmin: num($('p-xmin').value), xmax: num($('p-xmax').value), ymin: num($('p-ymin').value), ymax: num($('p-ymax').value), grid: $('p-grid').checked, asymptotes: $('p-asym').checked, points: $('p-points').checked, legend: $('p-legend').checked });
+    }
+    if (kind === 'region') {
+      const r = regionFigure($('r-ineq').value.split('\n'), { mode: $('r-mode').value, xmin: num($('r-xmin').value), xmax: num($('r-xmax').value), ymin: num($('r-ymin').value), ymax: num($('r-ymax').value), grid: $('r-grid').checked, vertices: $('r-vertices').checked, labelLines: $('r-lines').checked });
+      if (r.empty) throw new Error('Hệ bất phương trình vô nghiệm (miền nghiệm rỗng) trong khung nhìn này.');
+      return r;
+    }
+    const g = CATALOGS[kind].find((x) => x.id === $('g-kind').value);
+    const o = { names: $('g-names') ? $('g-names').value : '' };
+    $('g-opts').querySelectorAll('[data-opt]').forEach((s) => { o[s.dataset.opt] = s.value; });
+    $('g-opts').querySelectorAll('input[id^="go-"]').forEach((c) => { o[c.id.slice(3)] = c.checked; });
+    return g.make(o);
+  }
+  async function render() {
+    $('fig-error').textContent = '';
+    if (kind === 'bbt') fontPt = await figurePt();
+    try { current = build(); $('fig-preview').innerHTML = current.svg; $('fig-note').textContent = current.note || ''; } catch (e) { current = null; $('fig-note').textContent = ''; $('fig-error').textContent = e.message; }
+    ['fig-insert', 'fig-png', 'fig-dl-png', 'fig-dl-svg'].forEach((id) => { $(id).disabled = !current; });
+  }
+  function schedule() { clearTimeout(timer); timer = setTimeout(render, 250); }
+
+  function show(k) {
+    kind = k;
+    $('fig-size').hidden = k !== 'bbt';
+    $('fig-kind').value = k;
+    $('fig-form').innerHTML = forms[k]();
+    $('fig-sub').innerHTML = '';
+    const sub = $('fig-form').querySelector('.sub-field'); if (sub) $('fig-sub').appendChild(sub);   // the variant select shares a row with the figure type
+    $('fig-form').querySelectorAll('input,textarea,select').forEach((el) => el.addEventListener('input', schedule));
+    if (CATALOGS[k]) { $('g-kind').addEventListener('change', () => { geoOptions(); render(); }); geoOptions(); }
+    if (k === 'bbt') $('b-mode').addEventListener('change', () => { const m = $('b-mode').value === 'manual'; $('b-auto').hidden = m; $('b-manual').hidden = !m; render(); });
+    if (k === 'bbt') $('b-preset').addEventListener('change', () => { if ($('b-preset').value) { $('b-expr').value = $('b-preset').value; render(); } });
+    if (k === 'plot') $('p-preset').addEventListener('change', () => {
+      const p = PRESETS.find((x) => x.id === $('p-preset').value);
+      if (!p) return;
+      $('p-expr').value = p.expr; $('p-xmin').value = p.win[0]; $('p-xmax').value = p.win[1]; $('p-ymin').value = p.win[2]; $('p-ymax').value = p.win[3];
+      render();
+    });
+    render();
+  }
+  $('fig-kind').addEventListener('change', () => show($('fig-kind').value));
+
+  const title = () => (CATALOGS[kind] ? (CATALOGS[kind].find((x) => x.id === $('g-kind').value)?.label || 'Hình vẽ') : { bbt: 'Bảng biến thiên', plot: 'Đồ thị hàm số', region: 'Miền nghiệm' }[kind]);
+  $('fig-insert').addEventListener('click', async () => {
+    try { await io.replaceSelection(sceneToPackage(current.scene, { name: title(), alt: title(), float: $('fig-float').value === 'float' })); $('fig-out').innerHTML = '<span class="ok">Đã chèn vào Word tại con trỏ (hình sửa được).</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
+  });
+  $('fig-png').addEventListener('click', async () => {
+    try { const png = await svgToPngPx(current.svg, current.width, current.height, 3); await io.replaceSelection(makePicturePackage(png, { widthPt: current.width * 0.75, heightPt: current.height * 0.75, alt: title(), name: 'Hinh', center: true })); $('fig-out').innerHTML = '<span class="ok">Đã chèn ảnh PNG vào Word.</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
+  });
+  $('fig-dl-png').addEventListener('click', async () => { try { downloadBlob(await svgToPngPx(current.svg, current.width, current.height, 3), `${title()}.png`); } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; } });
+  $('fig-dl-svg').addEventListener('click', () => downloadBlob(new TextEncoder().encode(current.svg), `${title()}.svg`, 'image/svg+xml'));
+  show('bbt');
+}

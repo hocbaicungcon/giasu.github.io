@@ -1,1 +1,375 @@
-import{Canvas as R,frame as K,P as a0,add as h,sub as A,mul as r,unit as W,len as o0,mid as s0,rot as H0,rad as L,arcPts as $,COLORS as y,list as _0}from"./sci-kit.js";const C0=e=>y[e.liquid]||"",u0=[["none","Kh\xF4ng c\xF3 ch\u1EA5t l\u1ECFng"],["water","Xanh lam nh\u1EA1t"],["pink","H\u1ED3ng"],["yellow","V\xE0ng"],["green","Xanh l\u1EE5c"],["orange","Cam"]],B=(e,n,a)=>e.poly(n,{fill:a,color:a,w:.5});function F(e,n,a,t=1,o=!0){const s=m=>n+m*t,i=m=>a+m*t;e.ellipse(n,i(-30),55*t,30*t,{fill:y.glass}),e.line([s(-45),i(-26)],[s(45),i(-26)],{w:.9,color:"#6b8fb5"}),e.rect(s(-12),i(-84),24*t,28*t,{fill:y.glass}),e.poly([[s(-19),i(-84)],[s(19),i(-84)],[s(14),i(-98)],[s(-14),i(-98)]],{fill:y.metal}),e.line([s(0),i(-98)],[s(0),i(-108)],{w:2}),o&&e.poly([[s(0),i(-140)],[s(-9),i(-120)],[s(-6),i(-108)],[s(6),i(-108)],[s(9),i(-120)]],{fill:y.orange,color:"#d9792b",w:1})}const p0=(e,n)=>[[0,-n/2],[e-n/2,-n/2],...$(e-n/2,0,n/2,n/2,90,-90,14),[0,n/2]],U=(e,n,a)=>e.map(t=>h(H0(t,n),a));function i0(e,n,a,t,o,s){const i=n+s;return[[e-t/2,n],[e-t/2,i],[e-o/2,a],[e+o/2,a],[e+t/2,i],[e+t/2,n]]}const Q=(e,n,a,t,o,s,i)=>{const m=n+s,u=(i-m)/(a-m);return(t+(o-t)*Math.max(0,Math.min(1,u)))/2};function l0(e,n,a,t,o,s,i,m,u){if(!u)return;const p=Q(n,a,t,o,s,i,m);B(e,[[n-p,m],[n-s/2,t],[n+s/2,t],[n+p,m]],u)}const J={tube:{name:"\u1ED0ng nghi\u1EC7m",draw(e,n,a){a&&B(e,[[n-28,130],[n-28,250],...$(n,250,28,28,180,360,14),[n+28,130]],a),e.path([[n-28,40],[n-28,250],...$(n,250,28,28,180,360,14),[n+28,40]]),e.line([n-34,40],[n+34,40]),a&&e.line([n-28,130],[n+28,130],{w:1})}},beaker:{name:"C\u1ED1c th\u1EE7y tinh",draw(e,n,a){a&&B(e,[[n-60,150],[n-60,260],[n+60,260],[n+60,150]],a),e.path([[n-68,64],[n-60,70],[n-60,260],[n+60,260],[n+60,70]]),a&&e.line([n-60,150],[n+60,150],{w:1}),[110,150,190,230].forEach((t,o)=>e.line([n-60,t],[n-(o%2?48:38),t],{w:1}))}},erlen:{name:"B\xECnh tam gi\xE1c",draw(e,n,a){l0(e,n,40,260,30,160,70,190,a),e.path(i0(n,40,260,30,160,70)),e.line([n-20,40],[n+20,40]),a&&e.line([n-Q(n,40,260,30,160,70,190),190],[n+Q(n,40,260,30,160,70,190),190],{w:1})}},round:{name:"B\xECnh c\u1EA7u \u0111\xE1y tr\xF2n",draw(e,n,a){const t=[n,190],o=80,s=Math.acos(15/80)*180/Math.PI;if(a&&B(e,$(t[0],t[1],o,o,180-Math.asin(20/80)*180/Math.PI+0,360+Math.asin(20/80)*180/Math.PI,28),a),e.path([[n-15,40],...$(t[0],t[1],o,o,180-s,360+s,40),[n+15,40]]),e.line([n-20,40],[n+20,40]),a){const i=Math.sqrt(6e3);e.line([n-i,170],[n+i,170],{w:1})}}},cylinder:{name:"\u1ED0ng \u0111ong",draw(e,n,a){a&&B(e,[[n-25,130],[n-25,270],[n+25,270],[n+25,130]],a),e.path([[n-25,30],[n-25,270],[n+25,270],[n+25,30]]),e.poly([[n-25,270],[n+25,270],[n+42,288],[n-42,288]],{fill:y.glass});for(let t=60,o=0;t<=250;t+=20,o++)e.line([n-25,t],[n-(o%2?14:5),t],{w:1});e.line([n-31,30],[n+31,30])}},funnel:{name:"Ph\u1EC5u",draw(e,n,a){e.path([[n-75,60],[n-10,190],[n-10,270]]),e.path([[n+75,60],[n+10,190],[n+10,270]]),e.line([n-75,60],[n+75,60]),a&&B(e,[[n-62,90],[n-6,195],[n+6,195],[n+62,90]],a)}},lamp:{name:"\u0110\xE8n c\u1ED3n",draw(e,n){F(e,n,280,1.15)}}};function d0(e={}){const n=J[e.kind]||J.tube,a=new R,t=130;return n.draw(a,t,e.kind==="lamp"?"":C0(e)),e.showName!==!1&&a.text(String(e.names||"").trim()||n.name,[t,312],{size:15}),K(a,260,330)}function h0(e,n,a,t){const o=U(p0(150,44),a,n),s=U([[88,-22],[128,-22],...$(128,0,22,22,90,-90,14),[88,22]],a,n);return B(e,s,t||y.gray),e.path(o),e.poly(U([[-4,-11],[22,-9],[22,9],[-4,11]],a,n),{fill:"#b98a5a",color:"#7a5a38"}),U([[50,0],[-24,0]],a,n)}function r0(e){const n=new R,a=600,t=360;B(n,[[41,245],[229,245],[229,319],[41,319]],y.water),n.path([[40,215],[40,320],[230,320],[230,215]]),B(n,[[109,205],[109,290],[151,290],[151,205]],y.water),n.path([[108,290],[108,142],...$(130,142,22,22,180,0,12),[152,290]]);const[o,s]=h0(n,a0(330,212),-12,e.solid?y.gray:y.yellow);return n.path([o,s,[s[0]-16,200],[200,200],[200,300],[130,300],[130,262]],{w:2.2,color:"#4a6a88"}),F(n,455,354),e.showName!==!1&&(n.note("H\u1ED7n h\u1EE3p ph\u1EA3n \u1EE9ng",[462,190],[440,110]),n.note("\u1ED0ng d\u1EABn kh\xED",[250,200],[250,150]),n.note("Kh\xED thu \u0111\u01B0\u1EE3c",[130,170],[200,105]),n.note("Ch\u1EADu n\u01B0\u1EDBc",[60,300],[60,338]),n.note("\u0110\xE8n c\u1ED3n",[508,330],[530,330]),n.note("N\xFAt cao su",[316,214],[316,258])),K(n,a,t)}function g0(e){const n=new R,a=600,t=360,o=e.collect!=="down",[s,i]=h0(n,a0(330,212),-12,y.yellow);return o?(n.path([[90,170],[90,330],[170,330],[170,170]]),n.path([s,i,[i[0]-16,200],[130,200],[130,310]],{w:2.2,color:"#4a6a88"}),n.text("Kh\xED",[130,250],{size:15}),e.showName!==!1&&n.note("B\xECnh thu kh\xED (\u0111\u1EC3 ng\u1EEDa)",[170,250],[190,250])):(n.path([[90,320],[90,180],[170,180],[170,320]]),n.path([s,i,[i[0]-16,250],[262,250],[262,345],[130,345],[130,200]],{w:2.2,color:"#4a6a88"}),n.text("Kh\xED",[150,215],{size:15,anchor:"c"}),e.showName!==!1&&n.note("B\xECnh thu kh\xED (\xFAp ng\u01B0\u1EE3c)",[170,270],[190,290])),F(n,455,354),e.showName!==!1&&(n.note("H\u1ED7n h\u1EE3p ph\u1EA3n \u1EE9ng",[462,190],[440,110]),n.note("\u0110\xE8n c\u1ED3n",[508,330],[530,330]),n.note("\u1ED0ng d\u1EABn kh\xED",o?[200,200]:[262,300],o?[200,150]:[284,300])),K(n,a,t)}function b0(e){const n=new R,a=440,t=370;return B(n,[[81,300],[81,339],[239,339],[239,300]],y.water),n.path([[80,230],[80,340],[240,340],[240,230]]),n.line([80,300],[240,300],{w:1}),B(n,[[104,106],[160,205],[160,205],[216,106]],y.yellow),n.poly([[88,100],[160,212],[232,100]],{dash:"4 3",w:1,color:"#666"}),n.path([[70,100],[150,215],[150,268]]),n.path([[250,100],[170,215],[170,268]]),n.line([70,100],[250,100]),n.line([225,40],[160,150],{w:3.2,color:"#4a6a88"}),[[160,283],[160,295]].forEach(o=>n.dot(o,2.4,"#4a90d9")),e.showName!==!1&&(n.note("Ph\u1EC5u l\u1ECDc",[250,100],[275,80]),n.note("Gi\u1EA5y l\u1ECDc",[232,118],[275,130]),n.note("\u0110\u0169a th\u1EE7y tinh",[215,55],[245,40]),n.note("Dung d\u1ECBch c\u1EA7n l\u1ECDc",[185,130],[275,170]),n.note("C\u1ED1c h\u1EE9ng (n\u01B0\u1EDBc l\u1ECDc)",[240,320],[262,320])),K(n,a,t)}function w0(e){const n=new R,a=640,t=372,o=[110,190],s=60,i=Math.acos(14/60)*180/Math.PI;B(n,$(o[0],o[1],s,s,180-Math.asin(10/60)*180/Math.PI,360+Math.asin(10/60)*180/Math.PI,24),y.water),n.path([[96,70],...$(o[0],o[1],s,s,180-i,360+i,36),[124,70]]),n.line([110,52],[110,206],{w:2,color:"#a33"}),n.circle([110,210],5,{fill:"#e5534b",color:"#a33",w:1});const m=[124,100],u=[430,205],p=W(A(u,m)),H=[-p[1],p[0]],M=h(m,r(p,10)),w=A(u,r(p,10));n.path([M,w],{w:2.2,color:"#4a6a88"}),[-14,14].forEach(k=>n.line(h(M,r(H,k)),h(w,r(H,k)),{w:1.5})),n.line(h(M,r(H,-14)),h(M,r(H,14)),{w:1.5}),n.line(h(w,r(H,-14)),h(w,r(H,14)),{w:1.5});const S=h(h(M,r(p,40)),r(H,-14)),E=h(A(w,r(p,40)),r(H,14));n.arrow(h(S,r(H,-6)),h(S,r(H,-40)),{w:1.8,color:"#2a7ac8"}),n.arrow(h(E,r(H,40)),h(E,r(H,6)),{w:1.8,color:"#2a7ac8"});const _=u[0]+12;return l0(n,_,235,350,28,110,40,330,y.water),n.path(i0(_,235,350,28,110,40)),n.path([A(u,r(p,6)),h(u,r(p,14)),[_,262]],{w:2.2,color:"#4a6a88"}),[[_,290]].forEach(k=>n.dot(k,2.4,"#4a90d9")),F(n,110,360,.72),e.showName!==!1&&(n.note("Nhi\u1EC7t k\u1EBF",[110,56],[140,38]),n.text("B\xECnh c\u1EA7u",[110,232],{size:13}),n.note("\u1ED0ng sinh h\xE0n",h(s0(M,w),r(H,14)),h(s0(M,w),[30,-62])),n.note("N\u01B0\u1EDBc ra",h(S,r(H,-40)),h(S,[24,-52])),n.note("N\u01B0\u1EDBc v\xE0o",h(E,r(H,40)),h(h(E,r(H,40)),[-24,26])),n.note("B\xECnh h\u1EE9ng",[_+55,330],[_+66,330]),n.note("\u0110\xE8n c\u1ED3n",[165,345],[185,345])),K(n,a,t)}function O0(e={}){return({gaswater:r0,gasair:g0,filter:b0,distill:w0}[e.kind]||r0)(e)}const x={H:{color:"#f4f4f4",r:.26,text:"#000"},C:{color:"#4a4f57",r:.36,text:"#fff"},O:{color:"#e5534b",r:.34,text:"#fff"},N:{color:"#4a6fd8",r:.34,text:"#fff"},Cl:{color:"#4cae5a",r:.44,text:"#fff"}},N0=(e,n)=>Array.from({length:6},(a,t)=>[e*Math.cos(L(n+60*t)),e*Math.sin(L(n+60*t))]);function M0(){const e=N0(1.2,0),n=[],a=[];e.forEach((t,o)=>{n.push(["C",t[0],t[1]])}),e.forEach((t,o)=>{n.push(["H",t[0]*1.8,t[1]*1.8])});for(let t=0;t<6;t++)a.push([t,(t+1)%6,t%2?1:2]),a.push([t,6+t,1]);return{atoms:n,bonds:a}}const v={h2o:{name:"N\u01B0\u1EDBc H\u2082O",f:"H_2O",atoms:[["O",0,0],["H",-.79,.61],["H",.79,.61]],bonds:[[0,1,1],[0,2,1]]},co2:{name:"Cacbon \u0111ioxit CO\u2082",f:"CO_2",atoms:[["O",-1.2,0],["C",0,0],["O",1.2,0]],bonds:[[0,1,2],[1,2,2]]},nh3:{name:"Amoniac NH\u2083",f:"NH_3",atoms:[["N",0,0],["H",0,-1],["H",-.87,.5],["H",.87,.5]],bonds:[[0,1,1],[0,2,1],[0,3,1]]},ch4:{name:"Metan CH\u2084",f:"CH_4",atoms:[["C",0,0],["H",0,-1],["H",0,1],["H",-1,0],["H",1,0]],bonds:[[0,1,1],[0,2,1],[0,3,1],[0,4,1]]},c2h6:{name:"Etan C\u2082H\u2086",f:"C_2H_6",atoms:[["C",-.75,0],["C",.75,0],["H",-.75,-1],["H",-.75,1],["H",-1.75,0],["H",.75,-1],["H",.75,1],["H",1.75,0]],bonds:[[0,1,1],[0,2,1],[0,3,1],[0,4,1],[1,5,1],[1,6,1],[1,7,1]]},c2h4:{name:"Etilen C\u2082H\u2084",f:"C_2H_4",atoms:[["C",-.7,0],["C",.7,0],["H",-1.3,-.85],["H",-1.3,.85],["H",1.3,-.85],["H",1.3,.85]],bonds:[[0,1,2],[0,2,1],[0,3,1],[1,4,1],[1,5,1]]},c2h2:{name:"Axetilen C\u2082H\u2082",f:"C_2H_2",atoms:[["H",-1.9,0],["C",-.65,0],["C",.65,0],["H",1.9,0]],bonds:[[0,1,1],[1,2,3],[2,3,1]]},c2h5oh:{name:"Etanol C\u2082H\u2085OH",f:"C_2H_5OH",atoms:[["C",-1.3,.1],["C",0,-.1],["O",1.3,.1],["H",2.1,.7],["H",-1.3,-.95],["H",-1.3,1.15],["H",-2.25,.1],["H",0,-1.15],["H",0,.95]],bonds:[[0,1,1],[1,2,1],[2,3,1],[0,4,1],[0,5,1],[0,6,1],[1,7,1],[1,8,1]]},c6h6:{name:"Benzen C\u2086H\u2086",f:"C_6H_6",...M0()},hcl:{name:"Hi\u0111ro clorua HCl",f:"HCl",atoms:[["H",-.75,0],["Cl",.75,0]],bonds:[[0,1,1]]},o2:{name:"Oxi O\u2082",f:"O_2",atoms:[["O",-.6,0],["O",.6,0]],bonds:[[0,1,2]]},n2:{name:"Nit\u01A1 N\u2082",f:"N_2",atoms:[["N",-.6,0],["N",.6,0]],bonds:[[0,1,3]]},h2:{name:"Hi\u0111ro H\u2082",f:"H_2",atoms:[["H",-.5,0],["H",.5,0]],bonds:[[0,1,1]]}},n0=e=>e.replace(/([A-Za-z]+)|_(\d+)/g,(n,a,t)=>a?"\\text{".concat(a,"}"):"_{".concat(t,"}")),y0=Object.entries(v).map(([e,n])=>[e,n.name]);function z0(e={}){const n=v[e.kind]||v.h2o,a=new R,t=e.style==="ball",o=t?78:74,s=n.atoms.map(_=>_[1]),i=n.atoms.map(_=>_[2]),m=1.2,u=Math.min(...s)-m,p=Math.max(...s)+m,H=Math.min(...i)-m,M=Math.max(...i)+m,w=Math.max(240,(p-u)*o),S=(M-H)*o+(e.showName!==!1?38:0),E=n.atoms.map(_=>[w/2+(_[1]-(u+p)/2)*o,(M-H)*o/2+(_[2]-(H+M)/2)*o]);for(const[_,k,I]of n.bonds){const G=E[_],D=E[k],j=W(A(D,G)),q=[-j[1],j[0]],V=t?0:x[n.atoms[_][0]].r*o*.85+3,Y=t?0:x[n.atoms[k][0]].r*o*.85+3,Z=h(G,r(j,V)),T=A(D,r(j,Y));(I===1?[0]:I===2?[-3.2,3.2]:[-5,0,5]).forEach(f=>a.line(h(Z,r(q,f)),h(T,r(q,f)),{w:t?4:1.8,color:t?"#9aa0a8":"#000"}))}return n.atoms.forEach(([_],k)=>{const I=x[_];t?(a.circle(E[k],I.r*o,{fill:I.color,color:"#333",w:1.2}),a.label("\\mathrm{".concat(_,"}"),E[k],{size:15+(_==="H"?-2:0)})):a.label("\\mathrm{".concat(_,"}"),E[k],{size:18})}),e.showName!==!1&&a.label(n0(n.f),[w/2,S-16],{size:20}),K(a,w,S)}const k0={CH_3:"H_3C",OH:"HO",NH_2:"H_2N",NO_2:"O_2N",COOH:"HOOC",CHO:"OHC"},b=(e,n={})=>({rings:[{c:[0,0],a0:-90}],subs:e,...n}),e0={benzene:{name:"Benzen",f:"C_6H_6",...b({})},toluene:{name:"Toluen",f:"C_6H_5CH_3",...b({0:"CH_3"})},ethylbenzene:{name:"Etylbenzen",f:"C_6H_5C_2H_5",...b({0:{chain:[[-90,1],[-30,1]]}})},styrene:{name:"Stiren",f:"C_6H_5CH=CH_2",...b({0:{chain:[[-90,1],[-30,2]]}})},phenol:{name:"Phenol",f:"C_6H_5OH",...b({0:"OH"})},aniline:{name:"Anilin",f:"C_6H_5NH_2",...b({0:"NH_2"})},chlorobenzene:{name:"Clobenzen",f:"C_6H_5Cl",...b({0:"Cl"})},bromobenzene:{name:"Brombenzen",f:"C_6H_5Br",...b({0:"Br"})},nitrobenzene:{name:"Nitrobenzen",f:"C_6H_5NO_2",...b({0:"NO_2"})},benzaldehyde:{name:"Benzan\u0111ehit",f:"C_6H_5CHO",...b({0:"CHO"})},benzoic:{name:"Axit benzoic",f:"C_6H_5COOH",...b({0:"COOH"})},o_xylene:{name:"o-Xilen",f:"C_6H_4(CH_3)_2",...b({0:"CH_3",1:"CH_3"})},m_xylene:{name:"m-Xilen",f:"C_6H_4(CH_3)_2",...b({0:"CH_3",2:"CH_3"})},p_xylene:{name:"p-Xilen",f:"C_6H_4(CH_3)_2",...b({0:"CH_3",3:"CH_3"})},o_cresol:{name:"o-Crezol",f:"CH_3C_6H_4OH",...b({0:"OH",1:"CH_3"})},m_cresol:{name:"m-Crezol",f:"CH_3C_6H_4OH",...b({0:"OH",2:"CH_3"})},p_cresol:{name:"p-Crezol",f:"CH_3C_6H_4OH",...b({0:"OH",3:"CH_3"})},tnt:{name:"2,4,6-Trinitrotoluen (TNT)",f:"C_6H_2(NO_2)_3CH_3",...b({0:"CH_3",1:"NO_2",3:"NO_2",5:"NO_2"})},picric:{name:"Axit picric (2,4,6-trinitrophenol)",f:"C_6H_2(NO_2)_3OH",...b({0:"OH",1:"NO_2",3:"NO_2",5:"NO_2"})},tribromophenol:{name:"2,4,6-Tribromphenol",f:"C_6H_2Br_3OH",...b({0:"OH",1:"Br",3:"Br",5:"Br"})},biphenyl:{name:"Biphenyl",f:"C_6H_5-C_6H_5",rings:[{c:[-1.5,0],a0:0},{c:[1.5,0],a0:0}],subs:{},link:[[0,0],[1,3]]},naphthalene:{name:"Naphtalen",f:"C_{10}H_8",fused:!0,subs:{}}},E0=Object.entries(e0).map(([e,n])=>[e,n.name]);function B0(e={}){const n=e0[e.kind]||e0.benzene,a=new R,t=34,o=e.style==="circle",s=1.8,i=[],m=[],u=[],p=(c,f)=>Array.from({length:6},(d,l)=>i.push([c[0]+t*Math.cos(L(f+60*l)),c[1]+t*Math.sin(L(f+60*l))])-1);if(n.fused){const c=Math.sqrt(3)*t,f=[-c/2,0],d=[c/2,0],l=p(f,-90),C=p(d,-90);C[5]=l[1],C[4]=l[2],i.length=C[3]+1;const z=[[l[0],l[1],f],[l[1],l[2],f],[l[2],l[3],f],[l[3],l[4],f],[l[4],l[5],f],[l[5],l[0],f],[C[0],C[1],d],[C[1],C[2],d],[C[2],C[3],d],[C[3],C[4],d],[C[5],C[0],d]],O=new Set([[l[0],l[5]],[l[3],l[4]],[l[1],l[2]],[C[0],C[1]],[C[2],C[3]]].map(([g,N])=>"".concat(Math.min(g,N),"-").concat(Math.max(g,N))));for(const[g,N,P]of z)m.push([g,N,!o&&O.has("".concat(Math.min(g,N),"-").concat(Math.max(g,N)))?2:1,P]);u.push(f,d)}else n.rings.forEach((c,f)=>{const d=p([c.c[0]*t,c.c[1]*t],c.a0);for(let l=0;l<6;l++)m.push([d[l],d[(l+1)%6],!o&&l%2===0?2:1,[c.c[0]*t,c.c[1]*t]]);u.push([c.c[0]*t,c.c[1]*t]),c.idx=d}),n.link&&m.push([n.rings[0].idx[n.link[0][1]],n.rings[1].idx[n.link[1][1]],1,null]);const H=[],M=n.fused?null:n.rings[0];for(const[c,f]of Object.entries(n.subs||{})){const d=M.idx[Number(c)],l=i[d],C=-90+60*Number(c);if(typeof f=="string"){const z=[Math.cos(L(C)),Math.sin(L(C))],O=h(l,r(z,t)),g=Math.cos(L(C))<-.1,N=Math.cos(L(C))>.1,P=g&&k0[f]||f;m.push([d,i.push(O)-1,1,null,!0]),H.push([n0(P),g?[O[0]-4,O[1]]:N?[O[0]+4,O[1]]:h(O,r(z,13)),g?"r":N?"l":"c"])}else{let z=d,O=l;for(const[g,N]of f.chain){const P=h(O,[t*Math.cos(L(g)),t*Math.sin(L(g))]),X=i.push(P)-1;m.push([z,X,N,null]),z=X,O=P}}}const w=30,S=i.map(c=>c[0]),E=i.map(c=>c[1]),_=H.map(([,c,f])=>[c[0]-(f==="r"?40:0),c[0]+(f==="l"?40:f==="c"?14:0)]).flat(),k=Math.min(...S,..._)-w,I=Math.max(...S,..._)+w,G=Math.min(...E)-w,D=Math.max(...E)+w,j=e.showName!==!1?40:0,q=Math.max(210,I-k,e.showName!==!1?(n.name.length+n.f.replace(/[_{}]/g,"").length)*9+50:0),V=D-G+j,Y=q/2-(k+I)/2,Z=-G,T=c=>[c[0]+Y,c[1]+Z];for(const[c,f,d,l,C]of m){let z=i[c],O=i[f];if(a.line(T(z),T(O),{w:s,color:"#000"}),d===2&&l){const g=W(A(O,z)),N=[-g[1],g[0]],P=A(l,r(h(z,O),.5)),X=N[0]*P[0]+N[1]*P[1]>=0?1:-1,t0=o0(A(O,z)),m0=h(h(z,r(g,t0*.14)),r(N,5.5*X)),f0=h(A(O,r(g,t0*.14)),r(N,5.5*X));a.line(T(m0),T(f0),{w:s,color:"#000"})}else if(d===2){const g=W(A(O,z)),N=[-g[1],g[0]];a.line(T(h(z,r(N,4))),T(h(O,r(N,4))),{w:s,color:"#000"})}}return o&&u.forEach(c=>a.circle(T(c),t*.62,{w:1.6,color:"#000"})),H.forEach(([c,f,d])=>a.label(c,T(f),{size:18,anchor:d})),e.showName!==!1&&a.label("\\text{".concat(n.name,"}\\ (").concat(n0(n.f),")"),[q/2,V-18],{size:17}),K(a,q,V)}const c0=["H","He","Li","Be","B","C","N","O","F","Ne","Na","Mg","Al","Si","P","S","Cl","Ar","K","Ca"],A0=["Hi\u0111ro","Heli","Liti","Beri","Bo","Cacbon","Nit\u01A1","Oxi","Flo","Neon","Natri","Magie","Nh\xF4m","Silic","Photpho","L\u01B0u hu\u1EF3nh","Clo","Agon","Kali","Canxi"],L0=c0.map((e,n)=>[String(n+1),"".concat(n+1," \u2013 ").concat(A0[n]," (").concat(e,")")]),S0=e=>{const n=[];for(const a of[2,8,8,2]){if(e<=0)break;const t=Math.min(a,e);n.push(t),e-=t}return n};function T0(e={}){const n=Math.max(1,Math.min(20,Number(e.z)||11)),a=S0(n),t=new R,o=30+26*a.length,s=2*o+60,i=2*o+60+(e.showName!==!1?34:0),m=[s/2,o+30];return a.forEach((u,p)=>{const H=30+26*(p+1)-6;t.circle(m,H,{w:1.2,color:"#666"});for(let M=0;M<u;M++){const w=L(-90+360*M/u+(p%2?180/u:0));t.dot([m[0]+H*Math.cos(w),m[1]+H*Math.sin(w)],4,"#2a6fc8")}}),t.circle(m,17,{fill:"#f08a4b",color:"#a85a22",w:1.4}),t.label("+".concat(n),m,{size:15}),e.showName!==!1&&t.label("\\text{".concat(c0[n-1],"}:\\ ").concat(a.join(",")),[s/2,i-14],{size:17}),K(t,s,i)}const $0=[{id:"labware",label:"D\u1EE5ng c\u1EE5 th\xED nghi\u1EC7m (m\u1ED9t d\u1EE5ng c\u1EE5)",make:d0,names:"",namesLabel:"T\xEAn ghi d\u01B0\u1EDBi h\xECnh (b\u1ECF tr\u1ED1ng = t\xEAn m\u1EB7c \u0111\u1ECBnh)",options:[["kind","D\u1EE5ng c\u1EE5",Object.entries(J).map(([e,n])=>[e,n.name])],["liquid","Ch\u1EA5t l\u1ECFng",u0],["showName","Ghi t\xEAn d\u1EE5ng c\u1EE5"]]},{id:"setup",label:"B\u1ED9 d\u1EE5ng c\u1EE5 th\xED nghi\u1EC7m",make:O0,names:"",options:[["kind","Th\xED nghi\u1EC7m",[["gaswater","\u0110i\u1EC1u ch\u1EBF kh\xED, thu b\u1EB1ng \u0111\u1EA9y n\u01B0\u1EDBc"],["gasair","\u0110i\u1EC1u ch\u1EBF kh\xED, thu b\u1EB1ng \u0111\u1EA9y kh\xF4ng kh\xED"],["filter","L\u1ECDc"],["distill","Ch\u01B0ng c\u1EA5t"]]],["collect","Thu kh\xED (\u0111\u1EA9y kh\xF4ng kh\xED)",[["up","Ng\u1EEDa b\xECnh (kh\xED n\u1EB7ng h\u01A1n kh\xF4ng kh\xED)"],["down","\xDAp b\xECnh (kh\xED nh\u1EB9 h\u01A1n kh\xF4ng kh\xED)"]]],["showName","Ghi t\xEAn c\xE1c d\u1EE5ng c\u1EE5"]]},{id:"molecule",label:"S\u01A1 \u0111\u1ED3 ph\xE2n t\u1EED",make:z0,names:"",options:[["kind","Ph\xE2n t\u1EED",y0],["style","Ki\u1EC3u",[["structural","C\xF4ng th\u1EE9c c\u1EA5u t\u1EA1o"],["ball","M\xF4 h\xECnh qu\u1EA3 c\u1EA7u \u2013 que"]]],["showName","Ghi c\xF4ng th\u1EE9c"]]},{id:"aromatic",label:"H\u1EE3p ch\u1EA5t th\u01A1m (v\xF2ng benzen)",make:B0,names:"",options:[["kind","Ch\u1EA5t",E0],["style","Ki\u1EC3u v\xF2ng",[["kekule","Kekul\xE9 (3 li\xEAn k\u1EBFt \u0111\xF4i)"],["circle","V\xF2ng tr\xF2n (h\u1EC7 th\u01A1m)"]]],["showName","Ghi t\xEAn v\xE0 c\xF4ng th\u1EE9c"]]},{id:"atom",label:"M\xF4 h\xECnh nguy\xEAn t\u1EED (Bo)",make:T0,names:"",options:[["z","Nguy\xEAn t\u1ED1 (Z = 1\u201320)",L0],["showName","Ghi k\xED hi\u1EC7u v\xE0 s\u1ED1 electron m\u1ED7i l\u1EDBp"]]}];export{E0 as AROMATIC_CHOICES,$0 as CHEMISTRY,L0 as ELEMENT_CHOICES,y0 as MOLECULE_CHOICES,B0 as aromatic,T0 as atomModel,d0 as labware,F as lamp,z0 as molecule,O0 as setup,S0 as shells};
+// Chemistry figures: laboratory glassware, experiment set-ups, molecule models and Bohr atom models.
+import { Canvas, frame, P, add, sub, mul, unit, len, mid, rot, rad, arcPts, COLORS, list } from './sci-kit.js';
+
+const liqColor = (o) => COLORS[o.liquid] || '';
+const LIQ = [['none', 'Không có chất lỏng'], ['water', 'Xanh lam nhạt'], ['pink', 'Hồng'], ['yellow', 'Vàng'], ['green', 'Xanh lục'], ['orange', 'Cam']];
+const fillPoly = (cv, pts, fill) => cv.poly(pts, { fill, color: fill, w: 0.5 });
+
+/** Alcohol lamp with its flame; (cx, yb) is the middle of the bottom; scale k. */
+export function lamp(cv, cx, yb, k = 1, flame = true) {
+  const X = (dx) => cx + dx * k, Y = (dy) => yb + dy * k;
+  cv.ellipse(cx, Y(-30), 55 * k, 30 * k, { fill: COLORS.glass });
+  cv.line([X(-45), Y(-26)], [X(45), Y(-26)], { w: 0.9, color: '#6b8fb5' });
+  cv.rect(X(-12), Y(-84), 24 * k, 28 * k, { fill: COLORS.glass });
+  cv.poly([[X(-19), Y(-84)], [X(19), Y(-84)], [X(14), Y(-98)], [X(-14), Y(-98)]], { fill: COLORS.metal });
+  cv.line([X(0), Y(-98)], [X(0), Y(-108)], { w: 2 });
+  if (flame) cv.poly([[X(0), Y(-140)], [X(-9), Y(-120)], [X(-6), Y(-108)], [X(6), Y(-108)], [X(9), Y(-120)]], { fill: COLORS.orange, color: '#d9792b', w: 1 });
+}
+
+/** Test tube: local frame with the mouth at the origin and the axis along +x; returns the outline in local coordinates. */
+const tubeLocal = (length, w) => [[0, -w / 2], [length - w / 2, -w / 2], ...arcPts(length - w / 2, 0, w / 2, w / 2, 90, -90, 14), [0, w / 2]];
+const place = (pts, deg, M) => pts.map((p) => add(rot(p, deg), M));
+
+function erlenPts(cx, top, bottom, neckW, baseW, neckLen) {
+  const ny = top + neckLen;
+  return [[cx - neckW / 2, top], [cx - neckW / 2, ny], [cx - baseW / 2, bottom], [cx + baseW / 2, bottom], [cx + neckW / 2, ny], [cx + neckW / 2, top]];
+}
+const erlenHalf = (cx, top, bottom, neckW, baseW, neckLen, y) => { const ny = top + neckLen, t = (y - ny) / (bottom - ny); return (neckW + (baseW - neckW) * Math.max(0, Math.min(1, t))) / 2; };
+function erlenLiquid(cv, cx, top, bottom, neckW, baseW, neckLen, level, fill) {
+  if (!fill) return;
+  const h = erlenHalf(cx, top, bottom, neckW, baseW, neckLen, level);
+  fillPoly(cv, [[cx - h, level], [cx - baseW / 2, bottom], [cx + baseW / 2, bottom], [cx + h, level]], fill);
+}
+
+// ---------------------------------------------------------------- single pieces of glassware
+const WARE = {
+  tube: { name: 'Ống nghiệm', draw(cv, cx, fill) {
+    if (fill) fillPoly(cv, [[cx - 28, 130], [cx - 28, 250], ...arcPts(cx, 250, 28, 28, 180, 360, 14), [cx + 28, 130]], fill);
+    cv.path([[cx - 28, 40], [cx - 28, 250], ...arcPts(cx, 250, 28, 28, 180, 360, 14), [cx + 28, 40]]);
+    cv.line([cx - 34, 40], [cx + 34, 40]);
+    if (fill) cv.line([cx - 28, 130], [cx + 28, 130], { w: 1 });
+  } },
+  beaker: { name: 'Cốc thủy tinh', draw(cv, cx, fill) {
+    if (fill) fillPoly(cv, [[cx - 60, 150], [cx - 60, 260], [cx + 60, 260], [cx + 60, 150]], fill);
+    cv.path([[cx - 68, 64], [cx - 60, 70], [cx - 60, 260], [cx + 60, 260], [cx + 60, 70]]);
+    if (fill) cv.line([cx - 60, 150], [cx + 60, 150], { w: 1 });
+    [110, 150, 190, 230].forEach((y, i) => cv.line([cx - 60, y], [cx - (i % 2 ? 48 : 38), y], { w: 1 }));
+  } },
+  erlen: { name: 'Bình tam giác', draw(cv, cx, fill) {
+    erlenLiquid(cv, cx, 40, 260, 30, 160, 70, 190, fill);
+    cv.path(erlenPts(cx, 40, 260, 30, 160, 70));
+    cv.line([cx - 20, 40], [cx + 20, 40]);
+    if (fill) cv.line([cx - erlenHalf(cx, 40, 260, 30, 160, 70, 190), 190], [cx + erlenHalf(cx, 40, 260, 30, 160, 70, 190), 190], { w: 1 });
+  } },
+  round: { name: 'Bình cầu đáy tròn', draw(cv, cx, fill) {
+    const c = [cx, 190], r = 80, a1 = Math.acos(15 / 80) * 180 / Math.PI;
+    if (fill) fillPoly(cv, arcPts(c[0], c[1], r, r, 180 - Math.asin(20 / 80) * 180 / Math.PI + 0, 360 + Math.asin(20 / 80) * 180 / Math.PI, 28), fill);
+    cv.path([[cx - 15, 40], ...arcPts(c[0], c[1], r, r, 180 - a1, 360 + a1, 40), [cx + 15, 40]]);
+    cv.line([cx - 20, 40], [cx + 20, 40]);
+    if (fill) { const dx = Math.sqrt(80 * 80 - 20 * 20); cv.line([cx - dx, 170], [cx + dx, 170], { w: 1 }); }
+  } },
+  cylinder: { name: 'Ống đong', draw(cv, cx, fill) {
+    if (fill) fillPoly(cv, [[cx - 25, 130], [cx - 25, 270], [cx + 25, 270], [cx + 25, 130]], fill);
+    cv.path([[cx - 25, 30], [cx - 25, 270], [cx + 25, 270], [cx + 25, 30]]);
+    cv.poly([[cx - 25, 270], [cx + 25, 270], [cx + 42, 288], [cx - 42, 288]], { fill: COLORS.glass });
+    for (let y = 60, i = 0; y <= 250; y += 20, i++) cv.line([cx - 25, y], [cx - (i % 2 ? 14 : 5), y], { w: 1 });
+    cv.line([cx - 31, 30], [cx + 31, 30]);
+  } },
+  funnel: { name: 'Phễu', draw(cv, cx, fill) {
+    cv.path([[cx - 75, 60], [cx - 10, 190], [cx - 10, 270]]);
+    cv.path([[cx + 75, 60], [cx + 10, 190], [cx + 10, 270]]);
+    cv.line([cx - 75, 60], [cx + 75, 60]);
+    if (fill) fillPoly(cv, [[cx - 62, 90], [cx - 6, 195], [cx + 6, 195], [cx + 62, 90]], fill);
+  } },
+  lamp: { name: 'Đèn cồn', draw(cv, cx) { lamp(cv, cx, 280, 1.15); } },
+};
+export function labware(o = {}) {
+  const w = WARE[o.kind] || WARE.tube, cv = new Canvas(), cx = 130;
+  w.draw(cv, cx, o.kind === 'lamp' ? '' : liqColor(o));
+  if (o.showName !== false) cv.text(String(o.names || '').trim() || w.name, [cx, 312], { size: 15 });
+  return frame(cv, 260, 330);
+}
+
+// ---------------------------------------------------------------- experiment set-ups
+function heatedTube(cv, M, deg, fill) {
+  const outline = place(tubeLocal(150, 44), deg, M);
+  const bottom = place([[88, -22], [128, -22], ...arcPts(128, 0, 22, 22, 90, -90, 14), [88, 22]], deg, M);
+  fillPoly(cv, bottom, fill || COLORS.gray);
+  cv.path(outline);
+  cv.poly(place([[-4, -11], [22, -9], [22, 9], [-4, 11]], deg, M), { fill: '#b98a5a', color: '#7a5a38' });
+  return place([[50, 0], [-24, 0]], deg, M);
+}
+
+function gasWater(o) {
+  const cv = new Canvas(), W = 600, H = 360;
+  fillPoly(cv, [[41, 245], [229, 245], [229, 319], [41, 319]], COLORS.water);
+  cv.path([[40, 215], [40, 320], [230, 320], [230, 215]]);
+  fillPoly(cv, [[109, 205], [109, 290], [151, 290], [151, 205]], COLORS.water);
+  cv.path([[108, 290], [108, 142], ...arcPts(130, 142, 22, 22, 180, 0, 12), [152, 290]]);
+  const [s, e] = heatedTube(cv, P(330, 212), -12, o.solid ? COLORS.gray : COLORS.yellow);
+  cv.path([s, e, [e[0] - 16, 200], [200, 200], [200, 300], [130, 300], [130, 262]], { w: 2.2, color: '#4a6a88' });
+  lamp(cv, 455, 354);
+  if (o.showName !== false) {
+    cv.note('Hỗn hợp phản ứng', [462, 190], [440, 110]);
+    cv.note('Ống dẫn khí', [250, 200], [250, 150]);
+    cv.note('Khí thu được', [130, 170], [200, 105]);
+    cv.note('Chậu nước', [60, 300], [60, 338]);
+    cv.note('Đèn cồn', [508, 330], [530, 330]);
+    cv.note('Nút cao su', [316, 214], [316, 258]);
+  }
+  return frame(cv, W, H);
+}
+
+function gasAir(o) {
+  const cv = new Canvas(), W = 600, H = 360, up = o.collect !== 'down';
+  const [s, e] = heatedTube(cv, P(330, 212), -12, COLORS.yellow);
+  if (up) {
+    cv.path([[90, 170], [90, 330], [170, 330], [170, 170]]);
+    cv.path([s, e, [e[0] - 16, 200], [130, 200], [130, 310]], { w: 2.2, color: '#4a6a88' });
+    cv.text('Khí', [130, 250], { size: 15 });
+    if (o.showName !== false) { cv.note('Bình thu khí (để ngửa)', [170, 250], [190, 250]); }
+  } else {
+    cv.path([[90, 320], [90, 180], [170, 180], [170, 320]]);
+    cv.path([s, e, [e[0] - 16, 250], [262, 250], [262, 345], [130, 345], [130, 200]], { w: 2.2, color: '#4a6a88' });
+    cv.text('Khí', [150, 215], { size: 15, anchor: 'c' });
+    if (o.showName !== false) { cv.note('Bình thu khí (úp ngược)', [170, 270], [190, 290]); }
+  }
+  lamp(cv, 455, 354);
+  if (o.showName !== false) {
+    cv.note('Hỗn hợp phản ứng', [462, 190], [440, 110]);
+    cv.note('Đèn cồn', [508, 330], [530, 330]);
+    cv.note('Ống dẫn khí', up ? [200, 200] : [262, 300], up ? [200, 150] : [284, 300]);
+  }
+  return frame(cv, W, H);
+}
+
+function filtration(o) {
+  const cv = new Canvas(), W = 440, H = 370;
+  fillPoly(cv, [[81, 300], [81, 339], [239, 339], [239, 300]], COLORS.water);
+  cv.path([[80, 230], [80, 340], [240, 340], [240, 230]]);
+  cv.line([80, 300], [240, 300], { w: 1 });
+  fillPoly(cv, [[104, 106], [160, 205], [160, 205], [216, 106]], COLORS.yellow);
+  cv.poly([[88, 100], [160, 212], [232, 100]], { dash: '4 3', w: 1, color: '#666' });
+  cv.path([[70, 100], [150, 215], [150, 268]]);
+  cv.path([[250, 100], [170, 215], [170, 268]]);
+  cv.line([70, 100], [250, 100]);
+  cv.line([225, 40], [160, 150], { w: 3.2, color: '#4a6a88' });
+  [[160, 283], [160, 295]].forEach((p) => cv.dot(p, 2.4, '#4a90d9'));
+  if (o.showName !== false) {
+    cv.note('Phễu lọc', [250, 100], [275, 80]);
+    cv.note('Giấy lọc', [232, 118], [275, 130]);
+    cv.note('Đũa thủy tinh', [215, 55], [245, 40]);
+    cv.note('Dung dịch cần lọc', [185, 130], [275, 170]);
+    cv.note('Cốc hứng (nước lọc)', [240, 320], [262, 320]);
+  }
+  return frame(cv, W, H);
+}
+
+function distillation(o) {
+  const cv = new Canvas(), W = 640, H = 372;
+  const c = [110, 190], r = 60, a1 = Math.acos(14 / 60) * 180 / Math.PI;
+  fillPoly(cv, arcPts(c[0], c[1], r, r, 180 - Math.asin(10 / 60) * 180 / Math.PI, 360 + Math.asin(10 / 60) * 180 / Math.PI, 24), COLORS.water);
+  cv.path([[96, 70], ...arcPts(c[0], c[1], r, r, 180 - a1, 360 + a1, 36), [124, 70]]);
+  cv.line([110, 52], [110, 206], { w: 2, color: '#a33' });
+  cv.circle([110, 210], 5, { fill: '#e5534b', color: '#a33', w: 1 });
+  // condenser: two jackets around an inner tube, sloping down to the right
+  const S = [124, 100], T = [430, 205], d = unit(sub(T, S)), n = [-d[1], d[0]];
+  const A = add(S, mul(d, 10)), B = sub(T, mul(d, 10));
+  cv.path([A, B], { w: 2.2, color: '#4a6a88' });
+  [-14, 14].forEach((k) => cv.line(add(A, mul(n, k)), add(B, mul(n, k)), { w: 1.5 }));
+  cv.line(add(A, mul(n, -14)), add(A, mul(n, 14)), { w: 1.5 });
+  cv.line(add(B, mul(n, -14)), add(B, mul(n, 14)), { w: 1.5 });
+  const wOut = add(add(A, mul(d, 40)), mul(n, -14)), wIn = add(sub(B, mul(d, 40)), mul(n, 14));
+  cv.arrow(add(wOut, mul(n, -6)), add(wOut, mul(n, -40)), { w: 1.8, color: '#2a7ac8' });
+  cv.arrow(add(wIn, mul(n, 40)), add(wIn, mul(n, 6)), { w: 1.8, color: '#2a7ac8' });
+  const ex = T[0] + 12;
+  erlenLiquid(cv, ex, 235, 350, 28, 110, 40, 330, COLORS.water);
+  cv.path(erlenPts(ex, 235, 350, 28, 110, 40));
+  cv.path([sub(T, mul(d, 6)), add(T, mul(d, 14)), [ex, 262]], { w: 2.2, color: '#4a6a88' });
+  [[ex, 290]].forEach((p) => cv.dot(p, 2.4, '#4a90d9'));
+  lamp(cv, 110, 360, 0.72);
+  if (o.showName !== false) {
+    cv.note('Nhiệt kế', [110, 56], [140, 38]);
+    cv.text('Bình cầu', [110, 232], { size: 13 });
+    cv.note('Ống sinh hàn', add(mid(A, B), mul(n, 14)), add(mid(A, B), [30, -62]));
+    cv.note('Nước ra', add(wOut, mul(n, -40)), add(wOut, [24, -52]));
+    cv.note('Nước vào', add(wIn, mul(n, 40)), add(add(wIn, mul(n, 40)), [-24, 26]));
+    cv.note('Bình hứng', [ex + 55, 330], [ex + 66, 330]);
+    cv.note('Đèn cồn', [165, 345], [185, 345]);
+  }
+  return frame(cv, W, H);
+}
+
+export function setup(o = {}) {
+  return ({ gaswater: gasWater, gasair: gasAir, filter: filtration, distill: distillation }[o.kind] || gasWater)(o);
+}
+
+// ---------------------------------------------------------------- molecules
+const EL = {
+  H: { color: '#f4f4f4', r: 0.26, text: '#000' }, C: { color: '#4a4f57', r: 0.36, text: '#fff' }, O: { color: '#e5534b', r: 0.34, text: '#fff' },
+  N: { color: '#4a6fd8', r: 0.34, text: '#fff' }, Cl: { color: '#4cae5a', r: 0.44, text: '#fff' },
+};
+const hex = (r, a0) => Array.from({ length: 6 }, (_x, i) => [r * Math.cos(rad(a0 + 60 * i)), r * Math.sin(rad(a0 + 60 * i))]);
+function benzene() {
+  const ring = hex(1.2, 0), atoms = [], bonds = [];
+  ring.forEach((p, i) => { atoms.push(['C', p[0], p[1]]); });
+  ring.forEach((p, i) => { atoms.push(['H', p[0] * 1.8, p[1] * 1.8]); });
+  for (let i = 0; i < 6; i++) { bonds.push([i, (i + 1) % 6, i % 2 ? 1 : 2]); bonds.push([i, 6 + i, 1]); }
+  return { atoms, bonds };
+}
+const MOLECULES = {
+  h2o: { name: 'Nước H₂O', f: 'H_2O', atoms: [['O', 0, 0], ['H', -0.79, 0.61], ['H', 0.79, 0.61]], bonds: [[0, 1, 1], [0, 2, 1]] },
+  co2: { name: 'Cacbon đioxit CO₂', f: 'CO_2', atoms: [['O', -1.2, 0], ['C', 0, 0], ['O', 1.2, 0]], bonds: [[0, 1, 2], [1, 2, 2]] },
+  nh3: { name: 'Amoniac NH₃', f: 'NH_3', atoms: [['N', 0, 0], ['H', 0, -1], ['H', -0.87, 0.5], ['H', 0.87, 0.5]], bonds: [[0, 1, 1], [0, 2, 1], [0, 3, 1]] },
+  ch4: { name: 'Metan CH₄', f: 'CH_4', atoms: [['C', 0, 0], ['H', 0, -1], ['H', 0, 1], ['H', -1, 0], ['H', 1, 0]], bonds: [[0, 1, 1], [0, 2, 1], [0, 3, 1], [0, 4, 1]] },
+  c2h6: { name: 'Etan C₂H₆', f: 'C_2H_6', atoms: [['C', -0.75, 0], ['C', 0.75, 0], ['H', -0.75, -1], ['H', -0.75, 1], ['H', -1.75, 0], ['H', 0.75, -1], ['H', 0.75, 1], ['H', 1.75, 0]], bonds: [[0, 1, 1], [0, 2, 1], [0, 3, 1], [0, 4, 1], [1, 5, 1], [1, 6, 1], [1, 7, 1]] },
+  c2h4: { name: 'Etilen C₂H₄', f: 'C_2H_4', atoms: [['C', -0.7, 0], ['C', 0.7, 0], ['H', -1.3, -0.85], ['H', -1.3, 0.85], ['H', 1.3, -0.85], ['H', 1.3, 0.85]], bonds: [[0, 1, 2], [0, 2, 1], [0, 3, 1], [1, 4, 1], [1, 5, 1]] },
+  c2h2: { name: 'Axetilen C₂H₂', f: 'C_2H_2', atoms: [['H', -1.9, 0], ['C', -0.65, 0], ['C', 0.65, 0], ['H', 1.9, 0]], bonds: [[0, 1, 1], [1, 2, 3], [2, 3, 1]] },
+  c2h5oh: { name: 'Etanol C₂H₅OH', f: 'C_2H_5OH', atoms: [['C', -1.3, 0.1], ['C', 0, -0.1], ['O', 1.3, 0.1], ['H', 2.1, 0.7], ['H', -1.3, -0.95], ['H', -1.3, 1.15], ['H', -2.25, 0.1], ['H', 0, -1.15], ['H', 0, 0.95]], bonds: [[0, 1, 1], [1, 2, 1], [2, 3, 1], [0, 4, 1], [0, 5, 1], [0, 6, 1], [1, 7, 1], [1, 8, 1]] },
+  c6h6: { name: 'Benzen C₆H₆', f: 'C_6H_6', ...benzene() },
+  hcl: { name: 'Hiđro clorua HCl', f: 'HCl', atoms: [['H', -0.75, 0], ['Cl', 0.75, 0]], bonds: [[0, 1, 1]] },
+  o2: { name: 'Oxi O₂', f: 'O_2', atoms: [['O', -0.6, 0], ['O', 0.6, 0]], bonds: [[0, 1, 2]] },
+  n2: { name: 'Nitơ N₂', f: 'N_2', atoms: [['N', -0.6, 0], ['N', 0.6, 0]], bonds: [[0, 1, 3]] },
+  h2: { name: 'Hiđro H₂', f: 'H_2', atoms: [['H', -0.5, 0], ['H', 0.5, 0]], bonds: [[0, 1, 1]] },
+};
+const chemTex = (f) => f.replace(/([A-Za-z]+)|_(\d+)/g, (_m, el, n) => (el ? `\\text{${el}}` : `_{${n}}`));
+export const MOLECULE_CHOICES = Object.entries(MOLECULES).map(([k, m]) => [k, m.name]);
+
+export function molecule(o = {}) {
+  const m = MOLECULES[o.kind] || MOLECULES.h2o, cv = new Canvas(), ball = o.style === 'ball', K = ball ? 78 : 74;
+  const xs = m.atoms.map((a) => a[1]), ys = m.atoms.map((a) => a[2]);
+  const pad = 1.2, minx = Math.min(...xs) - pad, maxx = Math.max(...xs) + pad, miny = Math.min(...ys) - pad, maxy = Math.max(...ys) + pad;
+  const W = Math.max(240, (maxx - minx) * K), H = (maxy - miny) * K + (o.showName !== false ? 38 : 0);
+  const pos = m.atoms.map((a) => [W / 2 + (a[1] - (minx + maxx) / 2) * K, (maxy - miny) * K / 2 + (a[2] - (miny + maxy) / 2) * K]);
+  for (const [i, j, order] of m.bonds) {
+    const a = pos[i], b = pos[j], d = unit(sub(b, a)), nrm = [-d[1], d[0]];
+    const ga = ball ? 0 : EL[m.atoms[i][0]].r * K * 0.85 + 3, gb = ball ? 0 : EL[m.atoms[j][0]].r * K * 0.85 + 3;
+    const A = add(a, mul(d, ga)), B = sub(b, mul(d, gb));
+    const offs = order === 1 ? [0] : order === 2 ? [-3.2, 3.2] : [-5, 0, 5];
+    offs.forEach((k) => cv.line(add(A, mul(nrm, k)), add(B, mul(nrm, k)), { w: ball ? 4 : 1.8, color: ball ? '#9aa0a8' : '#000' }));
+  }
+  m.atoms.forEach(([el], i) => {
+    const e = EL[el];
+    if (ball) { cv.circle(pos[i], e.r * K, { fill: e.color, color: '#333', w: 1.2 }); cv.label(`\\mathrm{${el}}`, pos[i], { size: 15 + (el === 'H' ? -2 : 0) }); }
+    else cv.label(`\\mathrm{${el}}`, pos[i], { size: 18 });
+  });
+  if (o.showName !== false) cv.label(chemTex(m.f), [W / 2, H - 16], { size: 20 });
+  return frame(cv, W, H);
+}
+
+
+// ---------------------------------------------------------------- aromatic compounds (benzene ring family), skeletal formulae
+const MIRROR = { CH_3: 'H_3C', OH: 'HO', NH_2: 'H_2N', NO_2: 'O_2N', COOH: 'HOOC', CHO: 'OHC' };
+/** Single ring, vertex 0 at the top, then clockwise; `subs` maps ring vertex -> label or chain of [dx-angle, order] bonds. */
+const ringOf = (subs, extra = {}) => ({ rings: [{ c: [0, 0], a0: -90 }], subs, ...extra });
+const AROMATICS = {
+  benzene: { name: 'Benzen', f: 'C_6H_6', ...ringOf({}) },
+  toluene: { name: 'Toluen', f: 'C_6H_5CH_3', ...ringOf({ 0: 'CH_3' }) },
+  ethylbenzene: { name: 'Etylbenzen', f: 'C_6H_5C_2H_5', ...ringOf({ 0: { chain: [[-90, 1], [-30, 1]] } }) },
+  styrene: { name: 'Stiren', f: 'C_6H_5CH=CH_2', ...ringOf({ 0: { chain: [[-90, 1], [-30, 2]] } }) },
+  phenol: { name: 'Phenol', f: 'C_6H_5OH', ...ringOf({ 0: 'OH' }) },
+  aniline: { name: 'Anilin', f: 'C_6H_5NH_2', ...ringOf({ 0: 'NH_2' }) },
+  chlorobenzene: { name: 'Clobenzen', f: 'C_6H_5Cl', ...ringOf({ 0: 'Cl' }) },
+  bromobenzene: { name: 'Brombenzen', f: 'C_6H_5Br', ...ringOf({ 0: 'Br' }) },
+  nitrobenzene: { name: 'Nitrobenzen', f: 'C_6H_5NO_2', ...ringOf({ 0: 'NO_2' }) },
+  benzaldehyde: { name: 'Benzanđehit', f: 'C_6H_5CHO', ...ringOf({ 0: 'CHO' }) },
+  benzoic: { name: 'Axit benzoic', f: 'C_6H_5COOH', ...ringOf({ 0: 'COOH' }) },
+  o_xylene: { name: 'o-Xilen', f: 'C_6H_4(CH_3)_2', ...ringOf({ 0: 'CH_3', 1: 'CH_3' }) },
+  m_xylene: { name: 'm-Xilen', f: 'C_6H_4(CH_3)_2', ...ringOf({ 0: 'CH_3', 2: 'CH_3' }) },
+  p_xylene: { name: 'p-Xilen', f: 'C_6H_4(CH_3)_2', ...ringOf({ 0: 'CH_3', 3: 'CH_3' }) },
+  o_cresol: { name: 'o-Crezol', f: 'CH_3C_6H_4OH', ...ringOf({ 0: 'OH', 1: 'CH_3' }) },
+  m_cresol: { name: 'm-Crezol', f: 'CH_3C_6H_4OH', ...ringOf({ 0: 'OH', 2: 'CH_3' }) },
+  p_cresol: { name: 'p-Crezol', f: 'CH_3C_6H_4OH', ...ringOf({ 0: 'OH', 3: 'CH_3' }) },
+  tnt: { name: '2,4,6-Trinitrotoluen (TNT)', f: 'C_6H_2(NO_2)_3CH_3', ...ringOf({ 0: 'CH_3', 1: 'NO_2', 3: 'NO_2', 5: 'NO_2' }) },
+  picric: { name: 'Axit picric (2,4,6-trinitrophenol)', f: 'C_6H_2(NO_2)_3OH', ...ringOf({ 0: 'OH', 1: 'NO_2', 3: 'NO_2', 5: 'NO_2' }) },
+  tribromophenol: { name: '2,4,6-Tribromphenol', f: 'C_6H_2Br_3OH', ...ringOf({ 0: 'OH', 1: 'Br', 3: 'Br', 5: 'Br' }) },
+  biphenyl: { name: 'Biphenyl', f: 'C_6H_5-C_6H_5', rings: [{ c: [-1.5, 0], a0: 0 }, { c: [1.5, 0], a0: 0 }], subs: {}, link: [[0, 0], [1, 3]] },
+  naphthalene: { name: 'Naphtalen', f: 'C_{10}H_8', fused: true, subs: {} },
+};
+export const AROMATIC_CHOICES = Object.entries(AROMATICS).map(([k, m]) => [k, m.name]);
+
+export function aromatic(o = {}) {
+  const m = AROMATICS[o.kind] || AROMATICS.benzene, cv = new Canvas(), R = 34, circle = o.style === 'circle', LW = 1.8;
+  const atoms = [], bonds = [], ringList = [];        // atoms: [x,y]; bonds: [i,j,order,centre]
+  const ringAtoms = (c, a0) => Array.from({ length: 6 }, (_x, i) => atoms.push([c[0] + R * Math.cos(rad(a0 + 60 * i)), c[1] + R * Math.sin(rad(a0 + 60 * i))]) - 1);
+  if (m.fused) {                                       // naphthalene: pointy-top rings sharing a vertical edge
+    const d = Math.sqrt(3) * R, cL = [-d / 2, 0], cR = [d / 2, 0];
+    // left ring atoms L0..L5, right ring R0..R5; the shared edge is L1-L2 (= R5-R4), so R4 and R5 reuse the left atoms
+    const L = ringAtoms(cL, -90), Rr = ringAtoms(cR, -90);
+    Rr[5] = L[1]; Rr[4] = L[2]; atoms.length = Rr[3] + 1;
+    const edges = [[L[0], L[1], cL], [L[1], L[2], cL], [L[2], L[3], cL], [L[3], L[4], cL], [L[4], L[5], cL], [L[5], L[0], cL],
+      [Rr[0], Rr[1], cR], [Rr[1], Rr[2], cR], [Rr[2], Rr[3], cR], [Rr[3], Rr[4], cR], [Rr[5], Rr[0], cR]];
+    // Kekulé: L0=L5, L3=L4, L1=L2 (shared), R0=R1, R2=R3
+    const dbls = new Set([[L[0], L[5]], [L[3], L[4]], [L[1], L[2]], [Rr[0], Rr[1]], [Rr[2], Rr[3]]].map(([i, j]) => `${Math.min(i, j)}-${Math.max(i, j)}`));
+    for (const [i, j, c] of edges) bonds.push([i, j, !circle && dbls.has(`${Math.min(i, j)}-${Math.max(i, j)}`) ? 2 : 1, c]);
+    ringList.push(cL, cR);
+  } else {
+    m.rings.forEach((r, ri) => {
+      const idx = ringAtoms([r.c[0] * R, r.c[1] * R], r.a0);
+      for (let i = 0; i < 6; i++) bonds.push([idx[i], idx[(i + 1) % 6], !circle && i % 2 === 0 ? 2 : 1, [r.c[0] * R, r.c[1] * R]]);
+      ringList.push([r.c[0] * R, r.c[1] * R]); r.idx = idx; void ri;
+    });
+    if (m.link) bonds.push([m.rings[0].idx[m.link[0][1]], m.rings[1].idx[m.link[1][1]], 1, null]);
+  }
+  // substituents on the first ring (vertex k at -90 + 60k degrees, clockwise)
+  const labels = [];
+  const ring0 = m.fused ? null : m.rings[0];
+  for (const [k, sub0] of Object.entries(m.subs || {})) {
+    const i = ring0.idx[Number(k)], p = atoms[i], ang = -90 + 60 * Number(k);
+    if (typeof sub0 === 'string') {
+      const dir = [Math.cos(rad(ang)), Math.sin(rad(ang))], end = add(p, mul(dir, R));
+      const left = Math.cos(rad(ang)) < -0.1, right = Math.cos(rad(ang)) > 0.1, text = left ? (MIRROR[sub0] || sub0) : sub0;
+      bonds.push([i, atoms.push(end) - 1, 1, null, true]);
+      labels.push([chemTex(text), left ? [end[0] - 4, end[1]] : right ? [end[0] + 4, end[1]] : add(end, mul(dir, 13)), left ? 'r' : right ? 'l' : 'c']);
+    } else {
+      let cur = i, a = p;
+      for (const [da, order] of sub0.chain) { const e = add(a, [R * Math.cos(rad(da)), R * Math.sin(rad(da))]); const j = atoms.push(e) - 1; bonds.push([cur, j, order, null]); cur = j; a = e; }
+    }
+  }
+  const pad = 30, xsAll = atoms.map((a) => a[0]), ysAll = atoms.map((a) => a[1]);
+  const lab = labels.map(([, p, an]) => [p[0] - (an === 'r' ? 40 : 0), p[0] + (an === 'l' ? 40 : an === 'c' ? 14 : 0)]).flat();
+  const minx = Math.min(...xsAll, ...lab) - pad, maxx = Math.max(...xsAll, ...lab) + pad, miny = Math.min(...ysAll) - pad, maxy = Math.max(...ysAll) + pad;
+  const nameH = o.showName !== false ? 40 : 0, W = Math.max(210, maxx - minx, o.showName !== false ? (m.name.length + m.f.replace(/[_{}]/g, '').length) * 9 + 50 : 0), H = maxy - miny + nameH;
+  const ox = W / 2 - (minx + maxx) / 2, oy = -miny;
+  const T = (p) => [p[0] + ox, p[1] + oy];
+  for (const [i, j, order, c, labelled] of bonds) {
+    let A = atoms[i], B = atoms[j];
+    void labelled;
+    cv.line(T(A), T(B), { w: LW, color: '#000' });
+    if (order === 2 && c) {
+      const d = unit(sub(B, A)), n = [-d[1], d[0]], ctr = sub(c, mul(add(A, B), 0.5)), sgn = (n[0] * ctr[0] + n[1] * ctr[1]) >= 0 ? 1 : -1, L = len(sub(B, A));
+      const a2 = add(add(A, mul(d, L * 0.14)), mul(n, 5.5 * sgn)), b2 = add(sub(B, mul(d, L * 0.14)), mul(n, 5.5 * sgn));
+      cv.line(T(a2), T(b2), { w: LW, color: '#000' });
+    } else if (order === 2) {                           // exocyclic C=C (styrene): second line to the left of travel
+      const d = unit(sub(B, A)), n = [-d[1], d[0]];
+      cv.line(T(add(A, mul(n, 4))), T(add(B, mul(n, 4))), { w: LW, color: '#000' });
+    }
+  }
+  if (circle) ringList.forEach((c) => cv.circle(T(c), R * 0.62, { w: 1.6, color: '#000' }));
+  labels.forEach(([tex, p, an]) => cv.label(tex, T(p), { size: 18, anchor: an }));
+  if (o.showName !== false) cv.label(`\\text{${m.name}}\\ (${chemTex(m.f)})`, [W / 2, H - 18], { size: 17 });
+  return frame(cv, W, H);
+}
+
+// ---------------------------------------------------------------- Bohr atom model
+const ELEMENTS = ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar', 'K', 'Ca'];
+const VN = ['Hiđro', 'Heli', 'Liti', 'Beri', 'Bo', 'Cacbon', 'Nitơ', 'Oxi', 'Flo', 'Neon', 'Natri', 'Magie', 'Nhôm', 'Silic', 'Photpho', 'Lưu huỳnh', 'Clo', 'Agon', 'Kali', 'Canxi'];
+export const ELEMENT_CHOICES = ELEMENTS.map((s, i) => [String(i + 1), `${i + 1} – ${VN[i]} (${s})`]);
+export const shells = (z) => { const out = []; for (const cap of [2, 8, 8, 2]) { if (z <= 0) break; const n = Math.min(cap, z); out.push(n); z -= n; } return out; };
+export function atomModel(o = {}) {
+  const z = Math.max(1, Math.min(20, Number(o.z) || 11)), sh = shells(z), cv = new Canvas();
+  const R = 30 + 26 * sh.length, W = 2 * R + 60, H = 2 * R + 60 + (o.showName !== false ? 34 : 0), c = [W / 2, R + 30];
+  sh.forEach((n, k) => {
+    const r = 30 + 26 * (k + 1) - 6;
+    cv.circle(c, r, { w: 1.2, color: '#666' });
+    for (let i = 0; i < n; i++) { const t = rad(-90 + 360 * i / n + (k % 2 ? 180 / n : 0)); cv.dot([c[0] + r * Math.cos(t), c[1] + r * Math.sin(t)], 4, '#2a6fc8'); }
+  });
+  cv.circle(c, 17, { fill: '#f08a4b', color: '#a85a22', w: 1.4 });
+  cv.label(`+${z}`, c, { size: 15 });
+  if (o.showName !== false) cv.label(`\\text{${ELEMENTS[z - 1]}}:\\ ${sh.join(",")}`, [W / 2, H - 14], { size: 17 });
+  return frame(cv, W, H);
+}
+
+export const CHEMISTRY = [
+  { id: 'labware', label: 'Dụng cụ thí nghiệm (một dụng cụ)', make: labware, names: '', namesLabel: 'Tên ghi dưới hình (bỏ trống = tên mặc định)',
+    options: [['kind', 'Dụng cụ', Object.entries(WARE).map(([k, v]) => [k, v.name])], ['liquid', 'Chất lỏng', LIQ], ['showName', 'Ghi tên dụng cụ']] },
+  { id: 'setup', label: 'Bộ dụng cụ thí nghiệm', make: setup, names: '',
+    options: [['kind', 'Thí nghiệm', [['gaswater', 'Điều chế khí, thu bằng đẩy nước'], ['gasair', 'Điều chế khí, thu bằng đẩy không khí'], ['filter', 'Lọc'], ['distill', 'Chưng cất']]], ['collect', 'Thu khí (đẩy không khí)', [['up', 'Ngửa bình (khí nặng hơn không khí)'], ['down', 'Úp bình (khí nhẹ hơn không khí)']]], ['showName', 'Ghi tên các dụng cụ']] },
+  { id: 'molecule', label: 'Sơ đồ phân tử', make: molecule, names: '',
+    options: [['kind', 'Phân tử', MOLECULE_CHOICES], ['style', 'Kiểu', [['structural', 'Công thức cấu tạo'], ['ball', 'Mô hình quả cầu – que']]], ['showName', 'Ghi công thức']] },
+  { id: 'aromatic', label: 'Hợp chất thơm (vòng benzen)', make: aromatic, names: '',
+    options: [['kind', 'Chất', AROMATIC_CHOICES], ['style', 'Kiểu vòng', [['kekule', 'Kekulé (3 liên kết đôi)'], ['circle', 'Vòng tròn (hệ thơm)']]], ['showName', 'Ghi tên và công thức']] },
+  { id: 'atom', label: 'Mô hình nguyên tử (Bo)', make: atomModel, names: '',
+    options: [['z', 'Nguyên tố (Z = 1–20)', ELEMENT_CHOICES], ['showName', 'Ghi kí hiệu và số electron mỗi lớp']] },
+];
+void len; void list;

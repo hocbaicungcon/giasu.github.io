@@ -1,6 +1,6 @@
 {
-  "totalLessons": 618,
-  "covered": 618,
+  "totalLessons": 620,
+  "covered": 620,
   "lessons": [
     {
       "slug": "chuan-hoa-cong-thuc-mathtype-macbook",
@@ -3667,7 +3667,7 @@
       "category": "Ngữ văn",
       "exploration": null,
       "cards": 4,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -4796,7 +4796,7 @@
       "slug": "ki-nang-lam-bai-doc-hieu-ngu-van",
       "category": "Ngữ văn",
       "exploration": null,
-      "cards": 1,
+      "cards": 4,
       "cloze": 0,
       "source": "article",
       "quiz": 0,
@@ -4813,12 +4813,32 @@
       "diagrams": 0
     },
     {
+      "slug": "link-tai-giao-an-powerpoint-ngu-van-10-kntt",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "link-tai-giao-an-powerpoint-ngu-van-11-kntt",
+      "category": "Ngữ văn",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
       "slug": "link-tai-giao-an-powerpoint-ngu-van-12-ca-3-bo-sach",
       "category": "Ngữ văn",
       "exploration": null,
-      "cards": 2,
+      "cards": 4,
       "cloze": 0,
-      "source": "resource",
+      "source": "article",
       "quiz": 0,
       "diagrams": 0
     },
@@ -5137,7 +5157,7 @@
       "category": "Ngữ văn",
       "exploration": null,
       "cards": 4,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -5147,7 +5167,7 @@
       "category": "Ngữ văn",
       "exploration": null,
       "cards": 4,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0
@@ -5157,7 +5177,7 @@
       "category": "Ngữ văn",
       "exploration": null,
       "cards": 4,
-      "cloze": 0,
+      "cloze": 1,
       "source": "article",
       "quiz": 0,
       "diagrams": 0

@@ -1,1 +1,211 @@
-import{latexToTree as u,normalizeNodes as f}from"./latex2omml.js";class n extends Error{}const d={alpha:"alpha",beta:"beta",gamma:"gamma",delta:"delta",theta:"theta",lambda:"lambda",mu:"mu",pi:"pi",phi:"phi",varphi:"phi",omega:"omega",sigma:"sigma",rho:"rho",tau:"tau"},p={sin:"sin",cos:"cos",tan:"tan",cot:"cot",sec:"sec",csc:"csc",arcsin:"asin",arccos:"acos",arctan:"atan",sinh:"sinh",cosh:"cosh",tanh:"tanh",ln:"log",exp:"exp",lg:"log10",max:"Max",min:"Min",det:"det",gcd:"gcd"},g={"\u2212":"-","\xD7":"*","\u22C5":"*","\xB7":"*","\xF7":"/","\u221E":"oo",\u03C0:"pi","\u2264":"<=","\u2265":">=","\u2260":"!=","\u2032":"'","\u2009":" ","\u2005":" "};function h(e){let r;try{r=u(e)}catch(s){throw new n("Kh\xF4ng \u0111\u1ECDc \u0111\u01B0\u1EE3c LaTeX: "+s.message)}return r.rows.map(s=>a(s)).join("\n")}function a(e){const r=f(e);let t="";for(const s of r)t+=l(s);return t}const x=e=>/^[A-Za-z0-9_.]+$/.test(e)?e:"(".concat(e,")");function l(e){switch(e.k){case"run":return[...e.text].map(r=>r===" "||r==="\xA0"?" ":g[r]??(d[r]||r)).join("").replace(/\{,\}/g,".");case"f":return"((".concat(a(e.num),")/(").concat(a(e.den),"))");case"rad":return e.deg?"(".concat(a(e.e),")**(1/(").concat(a(e.deg),"))"):"sqrt(".concat(a(e.e),")");case"script":{const r=l(e.base);return e.sup?"".concat(x(r),"**(").concat(a(e.sup),")"):e.sub?"".concat(r,"_").concat(a(e.sub).replace(/[^A-Za-z0-9]/g,"")):r}case"d":{const r=e.items.map(t=>a(t)).join(",");if(e.beg==="|"&&e.end==="|")return"Abs(".concat(r,")");if(e.beg==="("||e.beg==="["||e.beg==="{"||e.beg==="")return"(".concat(r,")");throw new n("Ngo\u1EB7c kh\xF4ng h\u1ED7 tr\u1EE3 trong bi\u1EC3u th\u1EE9c")}case"func":{const r=a(e.e);if(e.name==="log"){const t=e.sub?a(e.sub):"10";return"log(".concat(r,", ").concat(t,")")}if(p[e.name])return"".concat(p[e.name],"(").concat(r,")").concat(e.sup?"**(".concat(a(e.sup),")"):"");throw new n("H\xE0m \u201C".concat(e.name,"\u201D ch\u01B0a h\u1ED7 tr\u1EE3"))}case"nary":{if(e.op==="sum"||e.op==="prod"){const r=e.sub?a(e.sub):"",t=e.sup?a(e.sup):"",s=/^([A-Za-z])=(.+)$/.exec(r);if(!s||!t)throw new n("T\u1ED5ng c\u1EA7n c\u1EADn d\u1EA1ng i=1 v\xE0 c\u1EADn tr\xEAn");return"".concat(e.op==="sum"?"Sum":"Product","(").concat(a(e.e),",(").concat(s[1],",").concat(s[2],",").concat(t,")).doit()")}throw new n("H\xE3y d\xF9ng thao t\xE1c \u201CT\xEDch ph\xE2n / Nguy\xEAn h\xE0m\u201D thay v\xEC g\xF5 k\xFD hi\u1EC7u \u222B")}case"m":return"Matrix([".concat(e.rows.map(r=>"[".concat(r.map(t=>a(t)).join(","),"]")).join(","),"])");case"eqArr":return e.rows.map(r=>a(r[0])).join("\n");default:throw new n("Ch\u01B0a h\u1ED7 tr\u1EE3 c\u1EA5u tr\xFAc \u201C"+e.k+"\u201D trong bi\u1EC3u th\u1EE9c t\xEDnh to\xE1n")}}function _(e){const r=String(e).trim();if(!r)throw new n("Ch\u01B0a nh\u1EADp bi\u1EC3u th\u1EE9c");const t=/[\\{}]/.test(r)?h(r):r.replace(/[\u2212]/g,"-").replace(/[\u00d7\u00b7]/g,"*").replace(/\u00f7/g,"/").replace(/\u03c0/g,"pi").replace(/\u221e/g,"oo").replace(/\u00b2/g,"**2").replace(/\u00b3/g,"**3");return/[\[\]()]/.test(t)||/,\s/.test(t)?t:t.replace(/(\d),(\d)/g,"$1.$2")}const c="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/";let o=null,i=null;const y=e=>new Promise((r,t)=>{const s=document.createElement("script");s.src=e,s.onload=r,s.onerror=()=>{s.remove(),t(new Error("Kh\xF4ng t\u1EA3i \u0111\u01B0\u1EE3c "+e))},document.head.appendChild(s)});async function v(e=()=>{}){if(o)return o;if(i)return i;i=(async()=>{e("\u0110ang t\u1EA3i Python (Pyodide)\u2026 l\u1EA7n \u0111\u1EA7u c\xF3 th\u1EC3 m\u1EA5t 1\u20132 ph\xFAt"),typeof loadPyodide>"u"&&await y(c+"pyodide.js");const r=await loadPyodide({indexURL:c});return e("\u0110ang t\u1EA3i SymPy (kho\u1EA3ng 20 MB, ch\u1EC9 l\u1EA7n \u0111\u1EA7u)\u2026"),await r.loadPackage(["sympy"]),e("\u0110ang kh\u1EDFi t\u1EA1o\u2026"),r.runPython(b),o=r,r})();try{return await i}finally{i=null}}async function P(e,r,t){const s=await v(t);s.globals.set("_args",JSON.stringify({op:e,...r}));const m=s.runPython("run(_args)");return JSON.parse(m)}const b="\nimport json, sympy as sp\nfrom sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication_application, convert_xor\nT = standard_transformations + (implicit_multiplication_application, convert_xor)\nx, y, z, t, n = sp.symbols('x y z t n')\nLD = {'x': x, 'y': y, 'z': z, 't': t, 'n': n, 'e': sp.E, 'pi': sp.pi, 'oo': sp.oo, 'ln': sp.log, 'lg': lambda v: sp.log(v, 10), 'arcsin': sp.asin, 'arccos': sp.acos, 'arctan': sp.atan,\n      'abs': sp.Abs, 'sqrt': sp.sqrt, 'cbrt': sp.cbrt, 'Matrix': sp.Matrix, 'Sum': sp.Sum, 'Product': sp.Product, 'Abs': sp.Abs, 'log10': lambda v: sp.log(v, 10)}\ndef P(s):\n    return parse_expr(s, local_dict=LD, transformations=T)\ndef L(v):\n    return sp.latex(v, ln_notation=True, inv_trig_style='power' if False else 'abbreviated')\ndef VN(res, name='S'):\n    s = L(res)\n    if res.is_FiniteSet:\n        items = [L(v) for v in sorted(res, key=lambda q: float(q) if q.is_real and q.is_number else 0)]\n        return name + ' = \\\\left\\\\{' + ';\\\\ '.join(items) + '\\\\right\\\\}' if items else name + ' = \\\\varnothing'\n    if res == sp.S.EmptySet:\n        return name + ' = \\\\varnothing'\n    s = s.replace(', \\\\infty', '; +\\\\infty').replace(', ', '; ')\n    return name + ' = ' + s\ndef R(**kw):\n    return json.dumps(kw, ensure_ascii=False)\ndef var_of(a, default=None):\n    v = a.get('var') or default or 'x'\n    return sp.Symbol(v)\ndef relation(s):\n    for op in ('<=', '>=', '!=', '<', '>', '='):\n        if op in s:\n            l, r = s.split(op, 1)\n            return op, P(l), P(r)\n    return None, P(s), None\ndef run(raw):\n    a = json.loads(raw)\n    op = a['op']\n    try:\n        if op in ('simplify', 'expand', 'factor', 'apart', 'together', 'cancel', 'trigsimp', 'radsimp'):\n            e = P(a['expr'])\n            fn = {'simplify': sp.simplify, 'expand': sp.expand, 'factor': sp.factor, 'apart': lambda v: sp.apart(v, var_of(a)), 'together': sp.together, 'cancel': sp.cancel, 'trigsimp': sp.trigsimp, 'radsimp': sp.radsimp}[op]\n            res = fn(e)\n            return R(latex=L(res), text=str(res))\n        if op == 'diff':\n            e = P(a['expr']); v = var_of(a); k = int(a.get('order') or 1)\n            res = sp.diff(e, v, k)\n            return R(latex=L(res), text=str(res), simplified=L(sp.simplify(res)))\n        if op == 'integrate':\n            e = P(a['expr']); v = var_of(a)\n            res = sp.integrate(e, v)\n            if res.has(sp.Integral): return R(error='SymPy ch\u01B0a t\xECm \u0111\u01B0\u1EE3c nguy\xEAn h\xE0m d\u1EA1ng \u0111\xF3ng c\u1EE7a bi\u1EC3u th\u1EE9c n\xE0y.')\n            return R(latex=L(res) + ' + C', text=str(res) + ' + C')\n        if op == 'defint':\n            e = P(a['expr']); v = var_of(a)\n            lo, hi = P(a['lo']), P(a['hi'])\n            res = sp.integrate(e, (v, lo, hi))\n            if res.has(sp.Integral): return R(error='SymPy ch\u01B0a t\xEDnh \u0111\u01B0\u1EE3c t\xEDch ph\xE2n n\xE0y.')\n            return R(latex=L(res), text=str(res), numeric=L(sp.N(res, 8)))\n        if op == 'limit':\n            e = P(a['expr']); v = var_of(a); pt = P(a['point'])\n            d = a.get('dir') or '+-'\n            res = sp.limit(e, v, pt, d)\n            return R(latex=L(res), text=str(res))\n        if op == 'eval':\n            e = P(a['expr']); digits = int(a.get('digits') or 10)\n            res = sp.N(e, digits)\n            return R(latex=L(res), text=str(res), exact=L(sp.nsimplify(e)) )\n        if op == 'series':\n            e = P(a['expr']); v = var_of(a); pt = P(a.get('point') or '0'); k = int(a.get('order') or 6)\n            res = sp.series(e, v, pt, k)\n            return R(latex=L(res), text=str(res))\n        if op == 'solve':\n            lines = [s for s in a['expr'].split('\\n') if s.strip()]\n            v = var_of(a)\n            rel, l, r = relation(lines[0])\n            if rel in ('<', '>', '<=', '>='):\n                ineq = {'<': sp.StrictLessThan, '>': sp.StrictGreaterThan, '<=': sp.LessThan, '>=': sp.GreaterThan}[rel](l, r)\n                res = sp.solveset(ineq, v, domain=sp.S.Reals)\n                return R(latex=VN(res), text=str(res), kind='set', var=str(v))\n            eq = sp.Eq(l, r if r is not None else 0)\n            res = sp.solveset(eq, v, domain=sp.S.Reals)\n            sols = list(res) if res.is_FiniteSet else None\n            return R(latex=VN(res), text=str(res), kind='set', var=str(v), solutions=[L(s) for s in sols] if sols is not None else None, numeric=[L(sp.N(s, 6)) for s in sols] if sols else None)\n        if op == 'system':\n            eqs = []\n            syms = set()\n            for s in [s for s in a['expr'].split('\\n') if s.strip()]:\n                rel, l, r = relation(s)\n                eqs.append(sp.Eq(l, r if r is not None else 0)); syms |= (l.free_symbols | (r.free_symbols if r is not None else set()))\n            order = sorted(syms, key=lambda q: q.name)\n            res = sp.solve(eqs, order, dict=True)\n            def one(d): return ',\\\\ '.join(str(k) + ' = ' + L(v) for k, v in sorted(d.items(), key=lambda kv: str(kv[0])))\n            tex = ('\\\\text{ ho\u1EB7c }').join(one(d) for d in res) if res else '\\\\text{v\xF4 nghi\u1EC7m}'\n            return R(latex=tex, text=str(res), kind='system', solutions=[{str(k): L(v) for k, v in d.items()} for d in res])\n        if op == 'matrix':\n            m = P(a['expr'])\n            if isinstance(m, (list, tuple)): m = sp.Matrix(m)\n            if not isinstance(m, sp.MatrixBase): return R(error='Nh\u1EADp ma tr\u1EADn d\u1EA1ng [[1,2],[3,4]]')\n            what = a.get('what') or 'det'\n            res = {'det': lambda: m.det(), 'inv': lambda: m.inv(), 'rank': lambda: m.rank(), 'T': lambda: m.T, 'eigen': lambda: m.eigenvals(), 'rref': lambda: m.rref()[0]}[what]()\n            return R(latex=L(res), text=str(res))\n        if op == 'number':\n            k = sp.Integer(P(a['expr']))\n            what = a.get('what') or 'factor'\n            if what == 'factor': res = sp.factorint(k); return R(latex=' \\\\cdot '.join(f'{p}^{{{e}}}' if e > 1 else str(p) for p, e in sorted(res.items())), text=str(res))\n            if what == 'prime': return R(latex='\\\\text{' + ('l\xE0 s\u1ED1 nguy\xEAn t\u1ED1' if sp.isprime(k) else 'kh\xF4ng l\xE0 s\u1ED1 nguy\xEAn t\u1ED1') + '}', text=str(sp.isprime(k)))\n            if what == 'divisors': res = sp.divisors(k); return R(latex=L(res), text=str(res))\n        return R(error='Thao t\xE1c ch\u01B0a h\u1ED7 tr\u1EE3')\n    except Exception as ex:\n        return R(error=str(ex)[:300])\n";export{n as CalcError,b as PY_SOURCE,P as calc,h as latexToSympy,v as loadSympy,_ as normalizeInput};
+// SymPy in the browser (Pyodide, loaded on demand) + LaTeX -> SymPy text conversion for the "Tính toán" tab.
+import { latexToTree, normalizeNodes } from './latex2omml.js';
+
+export class CalcError extends Error {}
+
+const GREEK = { alpha: 'alpha', beta: 'beta', gamma: 'gamma', delta: 'delta', theta: 'theta', lambda: 'lambda', mu: 'mu', pi: 'pi', phi: 'phi', varphi: 'phi', omega: 'omega', sigma: 'sigma', rho: 'rho', tau: 'tau' };
+const FUNC = { sin: 'sin', cos: 'cos', tan: 'tan', cot: 'cot', sec: 'sec', csc: 'csc', arcsin: 'asin', arccos: 'acos', arctan: 'atan', sinh: 'sinh', cosh: 'cosh', tanh: 'tanh', ln: 'log', exp: 'exp', lg: 'log10', max: 'Max', min: 'Min', det: 'det', gcd: 'gcd' };
+const CHARS = { '−': '-', '×': '*', '⋅': '*', '·': '*', '÷': '/', '∞': 'oo', 'π': 'pi', '≤': '<=', '≥': '>=', '≠': '!=', '′': "'", ' ': ' ', ' ': ' ' };
+
+/** LaTeX -> text SymPy's parser understands (x**2, sqrt(...), Abs(...), oo ...). Throws CalcError for unsupported input. */
+export function latexToSympy(latex) {
+  let tree;
+  try { tree = latexToTree(latex); } catch (e) { throw new CalcError('Không đọc được LaTeX: ' + e.message); }
+  const rows = tree.rows.map((r) => plain(r));
+  return rows.join('\n');
+}
+
+function plain(nodes) {
+  const flat = normalizeNodes(nodes);
+  let out = '';
+  for (const n of flat) out += one(n);
+  return out;
+}
+const wrap = (s) => (/^[A-Za-z0-9_.]+$/.test(s) ? s : `(${s})`);
+
+function one(n) {
+  switch (n.k) {
+    case 'run': return [...n.text].map((c) => (c === ' ' || c === ' ' ? ' ' : (CHARS[c] ?? (GREEK[c] || c)))).join('').replace(/\{,\}/g, '.');
+    case 'f': return `((${plain(n.num)})/(${plain(n.den)}))`;
+    case 'rad': return n.deg ? `(${plain(n.e)})**(1/(${plain(n.deg)}))` : `sqrt(${plain(n.e)})`;
+    case 'script': {
+      const base = one(n.base);
+      if (n.sup) return `${wrap(base)}**(${plain(n.sup)})`;
+      if (n.sub) return `${base}_${plain(n.sub).replace(/[^A-Za-z0-9]/g, '')}`;
+      return base;
+    }
+    case 'd': {
+      const inner = n.items.map((it) => plain(it)).join(',');
+      if (n.beg === '|' && n.end === '|') return `Abs(${inner})`;
+      if (n.beg === '(' || n.beg === '[' || n.beg === '{' || n.beg === '') return `(${inner})`;
+      throw new CalcError('Ngoặc không hỗ trợ trong biểu thức');
+    }
+    case 'func': {
+      const arg = plain(n.e);
+      if (n.name === 'log') { const base = n.sub ? plain(n.sub) : '10'; return `log(${arg}, ${base})`; }
+      if (FUNC[n.name]) return `${FUNC[n.name]}(${arg})${n.sup ? `**(${plain(n.sup)})` : ''}`;
+      throw new CalcError(`Hàm “${n.name}” chưa hỗ trợ`);
+    }
+    case 'nary': {
+      if (n.op === 'sum' || n.op === 'prod') {
+        const lo = n.sub ? plain(n.sub) : '', hi = n.sup ? plain(n.sup) : '';
+        const m = /^([A-Za-z])=(.+)$/.exec(lo);
+        if (!m || !hi) throw new CalcError('Tổng cần cận dạng i=1 và cận trên');
+        return `${n.op === 'sum' ? 'Sum' : 'Product'}(${plain(n.e)},(${m[1]},${m[2]},${hi})).doit()`;
+      }
+      throw new CalcError('Hãy dùng thao tác “Tích phân / Nguyên hàm” thay vì gõ ký hiệu ∫');
+    }
+    case 'm': return `Matrix([${n.rows.map((r) => `[${r.map((c) => plain(c)).join(',')}]`).join(',')}])`;
+    case 'eqArr': return n.rows.map((r) => plain(r[0])).join('\n');
+    default: throw new CalcError('Chưa hỗ trợ cấu trúc “' + n.k + '” trong biểu thức tính toán');
+  }
+}
+
+/** Plain text typed by hand ("x^2+1", "2x(x-1)", "sin x") passes through; LaTeX (contains a backslash or braces) is converted. */
+export function normalizeInput(text) {
+  const t = String(text).trim();
+  if (!t) throw new CalcError('Chưa nhập biểu thức');
+  const plain = /[\\{}]/.test(t) ? latexToSympy(t) : t.replace(/[\u2212]/g, '-').replace(/[\u00d7\u00b7]/g, '*').replace(/\u00f7/g, '/').replace(/\u03c0/g, 'pi').replace(/\u221e/g, 'oo').replace(/\u00b2/g, '**2').replace(/\u00b3/g, '**3');
+  // 1,5 is a decimal only outside brackets and argument lists
+  return /[\[\]()]/.test(plain) || /,\s/.test(plain) ? plain : plain.replace(/(\d),(\d)/g, '$1.$2');
+}
+
+// ---------------------------------------------------------------- Pyodide + SymPy
+const PYODIDE = 'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/';
+let engine = null;
+let enginePromise = null;
+const script = (src) => new Promise((res, rej) => { const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = () => { s.remove(); rej(new Error('Không tải được ' + src)); }; document.head.appendChild(s); });
+
+export async function loadSympy(onStatus = () => {}) {
+  if (engine) return engine;
+  if (enginePromise) return enginePromise;
+  enginePromise = (async () => {
+  onStatus('Đang tải Python (Pyodide)… lần đầu có thể mất 1–2 phút');
+  if (typeof loadPyodide === 'undefined') await script(PYODIDE + 'pyodide.js');
+  const py = await loadPyodide({ indexURL: PYODIDE });
+  onStatus('Đang tải SymPy (khoảng 20 MB, chỉ lần đầu)…');
+  await py.loadPackage(['sympy']);
+  onStatus('Đang khởi tạo…');
+  py.runPython(PY_SOURCE);
+  engine = py;
+  return py;
+  })();
+  try { return await enginePromise; } finally { enginePromise = null; }
+}
+
+/** op: simplify | expand | factor | apart | together | diff | integrate | defint | limit | solve | system | inequality | eval | series | matrix | number. */
+export async function calc(op, args, onStatus) {
+  const py = await loadSympy(onStatus);
+  py.globals.set('_args', JSON.stringify({ op, ...args }));
+  const out = py.runPython('run(_args)');
+  return JSON.parse(out);
+}
+
+export const PY_SOURCE = `
+import json, sympy as sp
+from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication_application, convert_xor
+T = standard_transformations + (implicit_multiplication_application, convert_xor)
+x, y, z, t, n = sp.symbols('x y z t n')
+LD = {'x': x, 'y': y, 'z': z, 't': t, 'n': n, 'e': sp.E, 'pi': sp.pi, 'oo': sp.oo, 'ln': sp.log, 'lg': lambda v: sp.log(v, 10), 'arcsin': sp.asin, 'arccos': sp.acos, 'arctan': sp.atan,
+      'abs': sp.Abs, 'sqrt': sp.sqrt, 'cbrt': sp.cbrt, 'Matrix': sp.Matrix, 'Sum': sp.Sum, 'Product': sp.Product, 'Abs': sp.Abs, 'log10': lambda v: sp.log(v, 10)}
+def P(s):
+    return parse_expr(s, local_dict=LD, transformations=T)
+def L(v):
+    return sp.latex(v, ln_notation=True, inv_trig_style='power' if False else 'abbreviated')
+def VN(res, name='S'):
+    s = L(res)
+    if res.is_FiniteSet:
+        items = [L(v) for v in sorted(res, key=lambda q: float(q) if q.is_real and q.is_number else 0)]
+        return name + ' = \\\\left\\\\{' + ';\\\\ '.join(items) + '\\\\right\\\\}' if items else name + ' = \\\\varnothing'
+    if res == sp.S.EmptySet:
+        return name + ' = \\\\varnothing'
+    s = s.replace(', \\\\infty', '; +\\\\infty').replace(', ', '; ')
+    return name + ' = ' + s
+def R(**kw):
+    return json.dumps(kw, ensure_ascii=False)
+def var_of(a, default=None):
+    v = a.get('var') or default or 'x'
+    return sp.Symbol(v)
+def relation(s):
+    for op in ('<=', '>=', '!=', '<', '>', '='):
+        if op in s:
+            l, r = s.split(op, 1)
+            return op, P(l), P(r)
+    return None, P(s), None
+def run(raw):
+    a = json.loads(raw)
+    op = a['op']
+    try:
+        if op in ('simplify', 'expand', 'factor', 'apart', 'together', 'cancel', 'trigsimp', 'radsimp'):
+            e = P(a['expr'])
+            fn = {'simplify': sp.simplify, 'expand': sp.expand, 'factor': sp.factor, 'apart': lambda v: sp.apart(v, var_of(a)), 'together': sp.together, 'cancel': sp.cancel, 'trigsimp': sp.trigsimp, 'radsimp': sp.radsimp}[op]
+            res = fn(e)
+            return R(latex=L(res), text=str(res))
+        if op == 'diff':
+            e = P(a['expr']); v = var_of(a); k = int(a.get('order') or 1)
+            res = sp.diff(e, v, k)
+            return R(latex=L(res), text=str(res), simplified=L(sp.simplify(res)))
+        if op == 'integrate':
+            e = P(a['expr']); v = var_of(a)
+            res = sp.integrate(e, v)
+            if res.has(sp.Integral): return R(error='SymPy chưa tìm được nguyên hàm dạng đóng của biểu thức này.')
+            return R(latex=L(res) + ' + C', text=str(res) + ' + C')
+        if op == 'defint':
+            e = P(a['expr']); v = var_of(a)
+            lo, hi = P(a['lo']), P(a['hi'])
+            res = sp.integrate(e, (v, lo, hi))
+            if res.has(sp.Integral): return R(error='SymPy chưa tính được tích phân này.')
+            return R(latex=L(res), text=str(res), numeric=L(sp.N(res, 8)))
+        if op == 'limit':
+            e = P(a['expr']); v = var_of(a); pt = P(a['point'])
+            d = a.get('dir') or '+-'
+            res = sp.limit(e, v, pt, d)
+            return R(latex=L(res), text=str(res))
+        if op == 'eval':
+            e = P(a['expr']); digits = int(a.get('digits') or 10)
+            res = sp.N(e, digits)
+            return R(latex=L(res), text=str(res), exact=L(sp.nsimplify(e)) )
+        if op == 'series':
+            e = P(a['expr']); v = var_of(a); pt = P(a.get('point') or '0'); k = int(a.get('order') or 6)
+            res = sp.series(e, v, pt, k)
+            return R(latex=L(res), text=str(res))
+        if op == 'solve':
+            lines = [s for s in a['expr'].split('\\n') if s.strip()]
+            v = var_of(a)
+            rel, l, r = relation(lines[0])
+            if rel in ('<', '>', '<=', '>='):
+                ineq = {'<': sp.StrictLessThan, '>': sp.StrictGreaterThan, '<=': sp.LessThan, '>=': sp.GreaterThan}[rel](l, r)
+                res = sp.solveset(ineq, v, domain=sp.S.Reals)
+                return R(latex=VN(res), text=str(res), kind='set', var=str(v))
+            eq = sp.Eq(l, r if r is not None else 0)
+            res = sp.solveset(eq, v, domain=sp.S.Reals)
+            sols = list(res) if res.is_FiniteSet else None
+            return R(latex=VN(res), text=str(res), kind='set', var=str(v), solutions=[L(s) for s in sols] if sols is not None else None, numeric=[L(sp.N(s, 6)) for s in sols] if sols else None)
+        if op == 'system':
+            eqs = []
+            syms = set()
+            for s in [s for s in a['expr'].split('\\n') if s.strip()]:
+                rel, l, r = relation(s)
+                eqs.append(sp.Eq(l, r if r is not None else 0)); syms |= (l.free_symbols | (r.free_symbols if r is not None else set()))
+            order = sorted(syms, key=lambda q: q.name)
+            res = sp.solve(eqs, order, dict=True)
+            def one(d): return ',\\\\ '.join(str(k) + ' = ' + L(v) for k, v in sorted(d.items(), key=lambda kv: str(kv[0])))
+            tex = ('\\\\text{ hoặc }').join(one(d) for d in res) if res else '\\\\text{vô nghiệm}'
+            return R(latex=tex, text=str(res), kind='system', solutions=[{str(k): L(v) for k, v in d.items()} for d in res])
+        if op == 'matrix':
+            m = P(a['expr'])
+            if isinstance(m, (list, tuple)): m = sp.Matrix(m)
+            if not isinstance(m, sp.MatrixBase): return R(error='Nhập ma trận dạng [[1,2],[3,4]]')
+            what = a.get('what') or 'det'
+            res = {'det': lambda: m.det(), 'inv': lambda: m.inv(), 'rank': lambda: m.rank(), 'T': lambda: m.T, 'eigen': lambda: m.eigenvals(), 'rref': lambda: m.rref()[0]}[what]()
+            return R(latex=L(res), text=str(res))
+        if op == 'number':
+            k = sp.Integer(P(a['expr']))
+            what = a.get('what') or 'factor'
+            if what == 'factor': res = sp.factorint(k); return R(latex=' \\\\cdot '.join(f'{p}^{{{e}}}' if e > 1 else str(p) for p, e in sorted(res.items())), text=str(res))
+            if what == 'prime': return R(latex='\\\\text{' + ('là số nguyên tố' if sp.isprime(k) else 'không là số nguyên tố') + '}', text=str(sp.isprime(k)))
+            if what == 'divisors': res = sp.divisors(k); return R(latex=L(res), text=str(res))
+        return R(error='Thao tác chưa hỗ trợ')
+    except Exception as ex:
+        return R(error=str(ex)[:300])
+`;
