@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 450" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="shadow3" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Frame -->
+  <rect width="840" height="450" rx="16" fill="url(#bgGrad3)"/>
+  <rect x="1" y="1" width="838" height="448" rx="15" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Title -->
+  <text x="420" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#087858" text-anchor="middle">QUY ĐỊNH GIÁ ĐIỆN PHÒNG TRỌ SINH VIÊN &amp; NGƯỜI THUÊ NHÀ</text>
+  <text x="420" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Căn cứ theo Thông tư của Bộ Công Thương nhằm bảo vệ quyền lợi chính đáng cho người thuê trọ</text>
+
+  <!-- BOX 1: TRƯỜNG HỢP CÓ KÊ KHAI (4 NGƯỜI = 1 HỘ) -->
+  <g transform="translate(35, 90)" filter="url(#shadow3)">
+    <rect width="365" height="230" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="365" height="38" rx="12" fill="#087858"/>
+    <rect y="26" width="365" height="12" fill="#087858"/>
+    <text x="182" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">TRƯỜNG HỢP 1: KÊ KHAI ĐỦ CƯ TRÚ</text>
+
+    <text x="20" y="66" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b">• Điều kiện áp dụng:</text>
+    <text x="20" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#475569">Hợp đồng thuê từ 12 tháng + có xác nhận tạm trú</text>
+
+    <rect x="20" y="102" width="325" height="58" rx="8" fill="#e8f5ee" stroke="#b7dcc8"/>
+    <text x="182" y="124" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#087858" text-anchor="middle">CỨ 04 NGƯỜI = 01 HỘ TIÊU THỤ</text>
+    <text x="182" y="146" font-family="system-ui, sans-serif" font-size="11" fill="#334155" text-anchor="middle">Được cấp 1 định mức tính theo 6 bậc thang của EVN</text>
+
+    <text x="20" y="182" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• 1 người được tính 1/4 định mức của từng bậc</text>
+    <text x="20" y="202" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Hưởng trọn giá điện bậc 1 (1.893 đ) và bậc 2 (1.956 đ)</text>
+  </g>
+
+  <!-- BOX 2: TRƯỜNG HỢP KHÔNG KÊ KHAI ĐỦ (ÁP BẬC 3) -->
+  <g transform="translate(435, 90)" filter="url(#shadow3)">
+    <rect width="370" height="230" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <rect width="370" height="38" rx="12" fill="#1e293b"/>
+    <rect y="26" width="370" height="12" fill="#1e293b"/>
+    <text x="185" y="24" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">TRƯỜNG HỢP 2: THUÊ NGẮN HẠN &lt; 12 THÁNG</text>
+
+    <text x="20" y="66" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#1e293b">• Điều kiện áp dụng:</text>
+    <text x="20" y="86" font-family="system-ui, sans-serif" font-size="12" fill="#475569">Chủ nhà không kê khai hoặc người thuê dưới 1 năm</text>
+
+    <rect x="20" y="102" width="330" height="58" rx="8" fill="#fffbeb" stroke="#fde68a"/>
+    <text x="185" y="124" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#b45309" text-anchor="middle">ÁP DỤNG ĐƠN GIÁ BẬC 3 TOÀN BỘ</text>
+    <text x="185" y="146" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">2.271 đ/kWh (chưa VAT) ~ 2.453 đ (có VAT 8%)</text>
+
+    <text x="20" y="182" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Không được tính giá bậc 4, 5, 6 cao hơn</text>
+    <text x="20" y="202" font-family="system-ui, sans-serif" font-size="12" fill="#334155">• Áp dụng đồng đều cho mọi số điện ghi nhận tại công tơ</text>
+  </g>
+
+  <!-- BOTTOM WARNING BANNER -->
+  <g transform="translate(35, 338)" filter="url(#shadow3)">
+    <rect width="770" height="85" rx="10" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.2"/>
+    <text x="24" y="32" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">⚠️ LƯU Ý VỀ MỨC XỬ PHẠT CHỦ NHÀ TRỌ THU SAI QUY ĐỊNH</text>
+    <text x="24" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#7f1d1d">
+      Căn cứ khoản 6 Điều 12 Nghị định 134/2013/NĐ-CP (sửa đổi bởi Nghị định 17/2022/NĐ-CP):
+    </text>
+    <text x="24" y="72" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#991b1b">
+      Phạt tiền từ 20.000.000 đ đến 30.000.000 đ đối với hành vi thu tiền điện của người thuê nhà cao hơn giá quy định.
+    </text>
+  </g>
+</svg>

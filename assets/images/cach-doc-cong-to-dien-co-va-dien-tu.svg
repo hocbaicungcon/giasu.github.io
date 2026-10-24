@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 460" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="460" rx="16" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="838" height="458" rx="15" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- Title Banner -->
+  <text x="420" y="42" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#087858" text-anchor="middle">HƯỚNG DẪN CÁCH ĐỌC CHỈ SỐ CÔNG TƠ ĐIỆN CHUẨN XÁC</text>
+  <text x="420" y="68" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b" text-anchor="middle">Phân biệt chữ số nguyên (ghi nhận) và chữ số thập phân (không ghi) để tránh bị tính sai số điện</text>
+
+  <!-- CARD 1: CÔNG TƠ CƠ (1 PHA) -->
+  <g transform="translate(40, 95)" filter="url(#cardShadow)">
+    <rect width="360" height="325" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    
+    <!-- Header -->
+    <rect width="360" height="44" rx="14" fill="#087858"/>
+    <rect y="30" width="360" height="14" fill="#087858"/>
+    <text x="180" y="28" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">1. CÔNG TƠ CƠ TRUYỀN THỐNG</text>
+
+    <!-- Subtitle -->
+    <text x="180" y="70" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Dãy 6 chữ số: 5 chữ số ĐEN + 1 chữ số ĐỎ</text>
+
+    <!-- Dial Box Frame -->
+    <rect x="35" y="86" width="290" height="76" rx="8" fill="#1e293b"/>
+
+    <!-- Digits (Black for integer, Red for decimal) -->
+    <!-- Digit 1: 0 -->
+    <rect x="47" y="96" width="38" height="56" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="66" y="136" font-family="monospace" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">0</text>
+
+    <!-- Digit 2: 1 -->
+    <rect x="91" y="96" width="38" height="56" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="110" y="136" font-family="monospace" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+
+    <!-- Digit 3: 5 -->
+    <rect x="135" y="96" width="38" height="56" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="154" y="136" font-family="monospace" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+
+    <!-- Digit 4: 2 -->
+    <rect x="179" y="96" width="38" height="56" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="198" y="136" font-family="monospace" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">8</text>
+
+    <!-- Digit 5: 4 -->
+    <rect x="223" y="96" width="38" height="56" rx="4" fill="#0f172a" stroke="#334155"/>
+    <text x="242" y="136" font-family="monospace" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+
+    <!-- Digit 6: RED (Decimal digit) -->
+    <rect x="273" y="96" width="40" height="56" rx="4" fill="#dc2626" stroke="#b91c1c" stroke-width="2"/>
+    <text x="293" y="136" font-family="monospace" font-size="34" font-weight="bold" fill="#ffffff" text-anchor="middle">7</text>
+
+    <!-- Callout for Integer Part -->
+    <path d="M 47,172 L 261,172" stroke="#087858" stroke-width="2"/>
+    <circle cx="154" cy="172" r="3" fill="#087858"/>
+    <text x="154" y="192" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#087858" text-anchor="middle">PHẦN NGUYÊN: 03584 kWh</text>
+    <text x="154" y="208" font-family="system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">✓ Đây là chỉ số điện để ghi hóa đơn</text>
+
+    <!-- Callout for Decimal Part -->
+    <path d="M 293,172 L 293,186" stroke="#dc2626" stroke-width="2"/>
+    <circle cx="293" cy="172" r="3" fill="#dc2626"/>
+    <text x="293" y="202" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#dc2626" text-anchor="middle">,7 kWh</text>
+    <text x="293" y="218" font-family="system-ui, sans-serif" font-size="10" fill="#dc2626" text-anchor="middle">✗ Bỏ qua</text>
+
+    <!-- Result Box -->
+    <rect x="24" y="236" width="312" height="68" rx="8" fill="#e8f5ee" stroke="#b7dcc8"/>
+    <text x="180" y="258" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#087858" text-anchor="middle">CHỈ SỐ CHUẨN CẦN GHI: 3.584 kWh</text>
+    <text x="180" y="280" font-family="system-ui, sans-serif" font-size="11" fill="#334155" text-anchor="middle">Lưu ý: Không đọc thành 35.847 kWh (sẽ bị tăng 10 lần!)</text>
+  </g>
+
+  <!-- CARD 2: CÔNG TƠ ĐIỆN TỬ -->
+  <g transform="translate(440, 95)" filter="url(#cardShadow)">
+    <rect width="360" height="325" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Header -->
+    <rect width="360" height="44" rx="14" fill="#1e293b"/>
+    <rect y="30" width="360" height="14" fill="#1e293b"/>
+    <text x="180" y="28" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">2. CÔNG TƠ ĐIỆN TỬ HIỆN ĐẠI</text>
+
+    <!-- Subtitle -->
+    <text x="180" y="70" font-family="system-ui, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">Màn hình LCD điện tử hiển thị mã thông số</text>
+
+    <!-- LCD Display Screen -->
+    <rect x="35" y="86" width="290" height="76" rx="8" fill="#99b898" stroke="#688b68" stroke-width="2"/>
+    
+    <!-- Code on top of LCD -->
+    <text x="50" y="106" font-family="monospace" font-size="12" font-weight="bold" fill="#1a3b1a">OBIS: 1.8.0</text>
+    <text x="310" y="106" font-family="sans-serif" font-size="11" font-weight="bold" fill="#1a3b1a" text-anchor="end">kWh</text>
+
+    <!-- Main Digits -->
+    <text x="180" y="145" font-family="monospace" font-size="34" font-weight="bold" fill="#0f2b0f" text-anchor="middle">002485.6</text>
+
+    <!-- Callout explaining code -->
+    <text x="180" y="185" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#1e293b" text-anchor="middle">Mã OBIS 1.8.0: Tổng điện năng tiêu thụ (kWh)</text>
+    <text x="180" y="204" font-family="system-ui, sans-serif" font-size="11" fill="#475569" text-anchor="middle">Màn hình tự động chuyển đổi giữa kWh, V, A sau vài giây</text>
+
+    <!-- Result Box -->
+    <rect x="24" y="236" width="312" height="68" rx="8" fill="#f0f9ff" stroke="#bae6fd"/>
+    <text x="180" y="258" font-family="system-ui, sans-serif" font-size="13" font-weight="bold" fill="#0284c7" text-anchor="middle">CHỈ SỐ GHI HÓA ĐƠN: 2.485 kWh</text>
+    <text x="180" y="280" font-family="system-ui, sans-serif" font-size="11" fill="#334155" text-anchor="middle">Chữ số sau dấu chấm (.) là phần lẻ thập phân (0,6 kWh)</text>
+  </g>
+</svg>

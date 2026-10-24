@@ -135,6 +135,8 @@ body header :is(.nav-exams>summary,.nav-pill,.display-controls button){border-ra
 body header :is(.nav-exams>summary,.nav-pill,.display-controls button):hover,body header .nav-exams[open]>summary{background:#344e56;color:#8bd9e9}
 body header .nav-exams>summary{padding:7px 9px}
 body header .nav-pill{padding:7px 9px}
+body header .nav-search{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:6px;line-height:1}
+body header .nav-search svg{display:block}
 body header .grading-link:hover,body:has(.lesson-course) header .grading-link:hover{background:#344e56;color:#fff;padding-right:6px;border-radius:6px}
 body header .grading-link:hover .grading-label span{color:#8bd9e9}
 body header .brand:hover,body:has(.lesson-course) header .brand:hover{background:transparent;color:#fff;text-decoration:none}
