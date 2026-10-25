@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300">
+  <rect width="100%" height="100%" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="280" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#0f172a">BÀI TOÁN SƠN CÁC MẶT HÌNH LẬP PHƯƠNG (CẠNH n KHỐI NHỎ)</text>
+
+  <!-- Khối lập phương 3x3 Isometric -->
+  <g transform="translate(40, 50)">
+    <!-- Mặt trước (Front) -->
+    <!-- Ô (0,0) Đỉnh -->
+    <rect x="60" y="60" width="40" height="40" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+    <!-- Ô (1,0) Cạnh -->
+    <rect x="100" y="60" width="40" height="40" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <!-- Ô (2,0) Đỉnh -->
+    <rect x="140" y="60" width="40" height="40" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+    <!-- Ô (0,1) Cạnh -->
+    <rect x="60" y="100" width="40" height="40" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <!-- Ô (1,1) Tâm mặt -->
+    <rect x="100" y="100" width="40" height="40" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
+    <!-- Ô (2,1) Cạnh -->
+    <rect x="140" y="100" width="40" height="40" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <!-- Ô (0,2) Đỉnh -->
+    <rect x="60" y="140" width="40" height="40" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+    <!-- Ô (1,2) Cạnh -->
+    <rect x="100" y="140" width="40" height="40" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <!-- Ô (2,2) Đỉnh -->
+    <rect x="140" y="140" width="40" height="40" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+
+    <!-- Mặt trên (Top) -->
+    <!-- Hàng 1 -->
+    <polygon points="60,60 90,30 130,30 100,60" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <polygon points="100,60 130,30 170,30 140,60" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
+    <polygon points="140,60 170,30 210,30 180,60" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <!-- Hàng 2 phía trên -->
+    <polygon points="90,30 120,0 160,0 130,30" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+    <polygon points="130,30 160,0 200,0 170,30" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <polygon points="170,30 200,0 240,0 210,30" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+
+    <!-- Mặt phải (Right) -->
+    <polygon points="180,60 210,30 210,70 180,100" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <polygon points="180,100 210,70 210,110 180,140" fill="#60a5fa" stroke="#1d4ed8" stroke-width="1.5"/>
+    <polygon points="180,140 210,110 210,150 180,180" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+
+    <polygon points="210,30 240,0 240,40 210,70" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+    <polygon points="210,70 240,40 240,80 210,110" fill="#fbbf24" stroke="#d97706" stroke-width="1.5"/>
+    <polygon points="210,110 240,80 240,120 210,150" fill="#f87171" stroke="#b91c1c" stroke-width="1.5"/>
+  </g>
+
+  <!-- Bảng chú thích công thức bên phải -->
+  <g transform="translate(320, 55)">
+    <!-- Sơn 3 mặt -->
+    <rect x="0" y="0" width="16" height="16" rx="3" fill="#f87171" stroke="#b91c1c"/>
+    <text x="26" y="13" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#b91c1c">Sơn 3 mặt (8 góc đỉnh):</text>
+    <text x="26" y="32" font-family="system-ui, sans-serif" font-size="12" fill="#334155">Luôn bằng 8 khối</text>
+
+    <!-- Sơn 2 mặt -->
+    <rect x="0" y="48" width="16" height="16" rx="3" fill="#fbbf24" stroke="#d97706"/>
+    <text x="26" y="61" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#b45309">Sơn 2 mặt (ở 12 cạnh):</text>
+    <text x="26" y="80" font-family="system-ui, sans-serif" font-size="12" fill="#334155">12 × (n − 2) khối</text>
+
+    <!-- Sơn 1 mặt -->
+    <rect x="0" y="96" width="16" height="16" rx="3" fill="#60a5fa" stroke="#1d4ed8"/>
+    <text x="26" y="109" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1d4ed8">Sơn 1 mặt (ở 6 mặt ngoài):</text>
+    <text x="26" y="128" font-family="system-ui, sans-serif" font-size="12" fill="#334155">6 × (n − 2) × (n − 2) khối</text>
+
+    <!-- Không sơn mặt nào -->
+    <rect x="0" y="144" width="16" height="16" rx="3" fill="#e2e8f0" stroke="#64748b"/>
+    <text x="26" y="157" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#475569">Không sơn (ở lõi bên trong):</text>
+    <text x="26" y="176" font-family="system-ui, sans-serif" font-size="12" fill="#334155">(n − 2) × (n − 2) × (n − 2) khối</text>
+  </g>
+
+  <!-- Chân trang -->
+  <text x="280" y="278" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">Ví dụ: Với khối 3×3×3 (n = 3) → Sơn 3 mặt: 8; Sơn 2 mặt: 12; Sơn 1 mặt: 6; Không sơn: 1</text>
+</svg>

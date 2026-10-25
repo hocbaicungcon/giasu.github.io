@@ -1,7 +1,127 @@
 {
-  "totalLessons": 620,
-  "covered": 620,
+  "totalLessons": 632,
+  "covered": 632,
   "lessons": [
+    {
+      "slug": "bai-toan-danh-so-trang-sach-va-day-so-cach-deu-lop-4",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "bai-toan-son-hinh-lap-phuong-va-hinh-hop-chu-nhat-lop-5",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-bai-toan-ve-dien-tich-tam-giac-va-hinh-thang-lop-5",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-dang-toan-tinh-nhanh-lop-4-nang-cao",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cac-dang-toan-ve-ti-so-phan-tram-lop-5-nang-cao",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "tong-hop-ki-hieu-va-cong-thuc-toan-hoc-latex",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 3,
+      "source": "article",
+      "quiz": 2,
+      "diagrams": 0
+    },
+    {
+      "slug": "soan-thao-latex-nang-cao-hoa-hoc-va-chen-code-r",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 2,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-tim-hai-so-khi-biet-tong-ti-va-hieu-ti-lop-5",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 1,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "toan-tim-hai-so-khi-biet-tong-va-hieu-lop-4-nang-cao",
+      "category": "Toán học",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "phan-mem-go-cong-thuc-toan-hoc-latex",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 2,
+      "diagrams": 0
+    },
+    {
+      "slug": "giao-trinh-va-tai-lieu-tu-hoc-latex-pdf",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 2,
+      "diagrams": 0
+    },
+    {
+      "slug": "huong-dan-tu-hoc-latex-cho-nguoi-moi-bat-dau",
+      "category": "CNTT",
+      "exploration": null,
+      "cards": 4,
+      "cloze": 4,
+      "source": "article",
+      "quiz": 2,
+      "diagrams": 0
+    },
     {
       "slug": "chuan-hoa-cong-thuc-mathtype-macbook",
       "category": "CNTT",

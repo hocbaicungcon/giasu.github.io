@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="540" height="180">
+  <rect width="100%" height="100%" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="270" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0f172a">CƠ CẤU GIÁ BÁN TRONG BÀI TOÁN KINH DOANH CÓ LÃI</text>
+
+  <!-- Thanh biểu diễn Tiền vốn -->
+  <rect x="50" y="50" width="280" height="42" rx="4" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="190" y="76" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#1e40af">TIỀN VỐN (100% Tiền vốn)</text>
+
+  <!-- Thanh biểu diễn Tiền lãi -->
+  <rect x="330" y="50" width="160" height="42" rx="4" fill="#86efac" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="410" y="76" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#166534">TIỀN LÃI (20%)</text>
+
+  <!-- Mũi tên tổng hợp Giá bán -->
+  <path d="M 50 110 L 490 110" stroke="#0f172a" stroke-width="2"/>
+  <line x1="50" y1="105" x2="50" y2="115" stroke="#0f172a" stroke-width="2"/>
+  <line x1="490" y1="105" x2="490" y2="115" stroke="#0f172a" stroke-width="2"/>
+  <text x="270" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0f172a">GIÁ BÁN = TIỀN VỐN + TIỀN LÃI</text>
+
+  <!-- Chú thích -->
+  <text x="270" y="162" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Lãi theo vốn: Vốn là 100% → Bán là (100 + %lãi) | Lãi theo bán: Bán là 100% → Vốn là (100 − %lãi)</text>
+</svg>

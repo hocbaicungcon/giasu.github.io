@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 200" width="540" height="200">
+  <rect width="100%" height="100%" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="270" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0f172a">BẢO TOÀN KHỐI LƯỢNG CHẤT KHÔ TRONG BÀI TOÁN PHƠI SẤY</text>
+
+  <!-- Khối Hạt tươi -->
+  <rect x="50" y="50" width="150" height="100" rx="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <!-- Lớp nước trong hạt tươi -->
+  <rect x="50" y="50" width="150" height="28" rx="2" fill="#93c5fd" stroke="#2563eb" stroke-width="1"/>
+  <text x="125" y="69" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#1e40af">NƯỚC (25%)</text>
+  <text x="125" y="115" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#854d0e">CHẤT KHÔ (75%)</text>
+  <text x="125" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#334155">600 kg Hạt tươi</text>
+
+  <!-- Mũi tên bay hơi nước -->
+  <path d="M 230 64 C 255 40, 280 40, 305 64" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="4,3"/>
+  <polygon points="305,64 300,55 308,58" fill="#ef4444"/>
+  <text x="270" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#dc2626">Nước bay hơi</text>
+
+  <!-- Khối Hạt khô -->
+  <rect x="340" y="70" width="150" height="80" rx="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5"/>
+  <!-- Lớp nước trong hạt khô -->
+  <rect x="340" y="70" width="150" height="12" rx="2" fill="#93c5fd" stroke="#2563eb" stroke-width="1"/>
+  <text x="415" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#1e40af">Nước (10%)</text>
+  <text x="415" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#854d0e">CHẤT KHÔ (90%)</text>
+  <text x="415" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#334155">500 kg Hạt khô</text>
+
+  <!-- Chân trang -->
+  <text x="270" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Nguyên tắc: Khối lượng chất khô = 600 × 75% = 450 kg (không đổi) → Khối lượng hạt khô = 450 : 90% = 500 kg</text>
+</svg>
