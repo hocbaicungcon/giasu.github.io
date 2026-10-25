@@ -25,3 +25,16 @@ if(menu){
   desktop.addEventListener('change',()=>{clearTimeout(timer);group.open=false;});
  }
 }
+
+// Focus the library search for both navigation and repeated clicks on this page.
+const focusSearch=()=>{
+ if(location.hash!=='#search')return;
+ const search=document.querySelector('input#search');
+ if(search){if(document.body.classList.contains('menu-open'))toggle?.click();search.focus({preventScroll:true});search.scrollIntoView({block:'center'});}
+};
+window.addEventListener('hashchange',focusSearch);
+window.addEventListener('pageshow',focusSearch);
+document.querySelectorAll('a.nav-search').forEach(link=>link.addEventListener('click',()=>{
+ const target=new URL(link.href,location.href);
+ if(target.pathname===location.pathname&&target.hash==='#search')focusSearch();
+}));

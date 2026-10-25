@@ -378,6 +378,8 @@ aside h3 {
   transform: rotate(-8deg);
 }
 
+.art-symbol .ui-icon {display:block;width:1em;height:1em;vertical-align:initial}
+
 .art-grade {
   position: absolute;
   right: 17px;

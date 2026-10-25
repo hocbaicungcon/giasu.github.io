@@ -877,7 +877,7 @@ header .grading-free {position:absolute;right:8px;top:-8px;padding:2px 7px;borde
 header .grading-link:hover {background:#e3f4f2;border-color:#9bcdd0;color:#146d76}
 header .grading-link:focus-visible {outline:2px solid #1598b3;outline-offset:3px}
 @media(max-width:620px){
- header .nav{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:8px;height:auto;min-height:82px;padding-block:14px}
+ header .nav{display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;gap:8px;height:auto;min-height:82px;padding-block:14px}
  header .brand{justify-self:start;gap:7px;font-size:1rem;white-space:nowrap}
  header .brand>span{display:block}
  header .grading-link{justify-self:end;margin:0;gap:7px;padding:7px 11px 7px 9px;min-height:42px}

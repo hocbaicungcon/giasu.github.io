@@ -2,7 +2,7 @@
 /* Trang chủ: banner game ngay sau hero và hero gọn trên điện thoại */
 
 body main a.game-banner { position: relative; display: flex; align-items: center; flex-wrap: nowrap; gap: clamp(10px, 2.4vw, 22px); min-height: 0; margin: 0 auto; padding: 8px clamp(14px, 3vw, 28px) 14px; overflow: hidden; isolation: isolate; text-decoration: none; color: #fff; border-radius: 0; background: var(--brand-deep); box-shadow: none; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
-.game-banner:hover .gb-go { background: #ffa49e; }
+.game-banner:hover .gb-go { background: var(--brand-soft-hover); }
 .game-banner:focus-visible { outline: 3px solid var(--teal); outline-offset: -4px; }
 .gb-sky { position: relative; flex: none; width: 118px; height: 50px; }
 .gb-pet { position: absolute; bottom: -2px; width: 44px; height: auto; animation: pg-float 2.6s ease-in-out infinite; }
@@ -13,7 +13,7 @@ body main a.game-banner { position: relative; display: flex; align-items: center
 .gb-text { display: flex; flex: 1 1 auto; align-items: baseline; flex-wrap: wrap; gap: 0 12px; min-width: 0; }
 .gb-kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; color: var(--brand-cyan); }
 .gb-text strong { font-size: clamp(20px, 3.6vw, 26px); line-height: 1.2; font-weight: 700; color: #fff; }
-.gb-sub { font-size: 15px; font-weight: 400; color: #d2e3ec; }
+.gb-sub { font-size: 15px; font-weight: 400; color: #cbd5e1; }
 .gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 700; color: var(--brand-deep); background: var(--brand-coral); border-radius: 999px; box-shadow: none; white-space: nowrap; }
 html[data-theme="dark"] body .game-banner { background: var(--brand-deep); color: #fff; }
 

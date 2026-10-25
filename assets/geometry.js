@@ -1,8 +1,8 @@
-import {GeometryScene, measureAngle} from './geometry-interaction.js?v=8cf16fbfba6c';
-import './right-triangles.js?v=8cf16fbfba6c';
-import './interactive-figures.js?v=8cf16fbfba6c';
+import {GeometryScene, measureAngle} from './geometry-interaction.js';
+import './right-triangles.js';
+import './interactive-figures.js';
 /* credit: giasu.ai.vn */
-import {trianglePoints, triangleSasPoints, triangleAsaPoints} from './geometry-math.js?v=8cf16fbfba6c';
+import {trianglePoints, triangleSasPoints, triangleAsaPoints} from './geometry-math.js';
 const colors=['var(--diagram-coral)','var(--diagram-ink)','var(--diagram-gold)'];
 const line=(p,q,color,dashed=false)=>`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="${color}" stroke-width="3" ${dashed?'stroke-dasharray="7 4"':''}/>`;
 const labels=(points,names)=>points.map((p,i)=>`<circle cx="${p[0]}" cy="${p[1]}" r="3.5" fill="currentColor"/><text x="${p[0]}" y="${p[1]+(i===0?-15:24)}" text-anchor="middle">${names[i]}</text>`).join('');

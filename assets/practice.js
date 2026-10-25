@@ -1,6 +1,6 @@
 /* credit: giasu.ai.vn */
 /* Trang Luyện tập: sinh bài từ thư viện worksheet, làm và chấm trực tiếp trên web, in/tải phiếu PDF. */
-import {buildExercises,countItems,sameAnswer,sameLoose,parseTex,makeChoices,isLongAnswer} from './practice-core.js?v=8cf16fbfba6c';
+import {buildExercises,countItems,sameAnswer,sameLoose,parseTex,makeChoices,isLongAnswer} from './practice-core.js';
 
 const SUBJECTS = ['math', 'vi', 'en', 'zh', 'ja'];
 const LOOSE = new Set(['zh', 'ja']);              // pinyin/romaji: không bắt buộc dấu thanh, chấp nhận nhiều cách đọc

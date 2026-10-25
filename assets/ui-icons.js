@@ -1,5 +1,12 @@
 /* Shared vector icons for interface and lesson annotations. */
 const paths={
+ physics:'<ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(45 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-45 12 12)"/><circle cx="12" cy="12" r="1"/>',
+ history:'<path d="M4 5h16M6 5v14m4-14v14m4-14v14m4-14v14M3 21h18M3 5l9-3 9 3"/>',
+ compass:'<circle cx="12" cy="12" r="9"/><path d="m16 8-2 6-6 2 2-6z"/>',
+ civics:'<path d="M12 3v18M5 6h14M5 6l-3 7h6zm14 0-3 7h6zM8 21h8"/>',
+ technology:'<path d="M14 4a6 6 0 0 0-7 7L3 17a3 3 0 0 0 4 4l6-6a6 6 0 0 0 7-7l-4 4-4-4 4-4z"/>',
+ activity:'<circle cx="12" cy="4" r="2"/><path d="m5 9 7-2 7 2m-7-2v7m0 0-5 7m5-7 5 7"/>',
+ language:'<path d="M3 5h12M9 3v2m-4 3c1 4 4 7 8 9M12 5c-1 6-4 10-9 12m11 4 4-11 4 11m-6-4h4"/>',
  math:'<path d="M17 4H7l6 8-6 8h10"/>',
  book:'<path d="M12 5C8 3 5 3 2 4v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-3-1-6-1-10 1zM12 5v15"/>',
  globe:'<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/>',
@@ -30,4 +37,9 @@ export function vectorizeInterface(html){
   return part.replace(emoji,character=>plain?'':uiIcon(names[character.replace(/\uFE0F/g,'')]||'sparkle'));
  }).join('');
  return html.replace(/<!--VECTOR_PROTECTED_(\d+)-->/g,(_,index)=>protectedBlocks[Number(index)]);
+}
+
+export function subjectIcon(subject){
+ const names={'Toán học':'math','Ngữ văn':'book','Tiếng Việt':'book','Tiếng Anh':'language','Ngoại ngữ':'language','Vật lí':'physics','Hóa học':'flask','Sinh học':'leaf','Khoa học tự nhiên':'physics','Tin học':'computer','CNTT':'computer','Lịch sử':'history','Địa lí':'compass','Giáo dục KTPL':'civics','Công nghệ':'technology','Hoạt động trải nghiệm':'activity','Các môn khác':'book','Giải trí':'sparkle'};
+ return uiIcon(names[subject]||'book');
 }
