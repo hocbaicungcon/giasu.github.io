@@ -3873,36 +3873,6 @@
       "diagrams": 0
     },
     {
-      "slug": "cho-28-gam-hon-hop-x-gom-cu-va-ag-phan-ung-hoan-toan-voi-dung-dich-hno3-du",
-      "category": "Hóa học",
-      "exploration": null,
-      "cards": 1,
-      "cloze": 0,
-      "source": "article",
-      "quiz": 0,
-      "diagrams": 0
-    },
-    {
-      "slug": "cho-273-gam-hon-hop-x-gom-hai-este-no-don-chuc-tac-dung-vua-du-voi-dung-dich-koh-thu-duoc-308-gam-hon-hop",
-      "category": "Hóa học",
-      "exploration": null,
-      "cards": 1,
-      "cloze": 0,
-      "source": "article",
-      "quiz": 0,
-      "diagrams": 0
-    },
-    {
-      "slug": "cho-308-gam-hon-hop-x-gom-fe-feo-feco3-mg-mgo-va-mgco3-tac-dung-vua-du-voi-dung-dich-h2so4-loang-thu-duoc-784-lit-dktc-hon-hop-khi",
-      "category": "Hóa học",
-      "exploration": null,
-      "cards": 1,
-      "cloze": 0,
-      "source": "article",
-      "quiz": 0,
-      "diagrams": 0
-    },
-    {
       "slug": "cho-axit-cacboxylic-x-phan-ung-voi-chat-y-thu-duoc-mot-muoi-co-cong-thuc-phan-tu-c3h9o2n",
       "category": "Hóa học",
       "exploration": null,
@@ -4643,6 +4613,16 @@
       "diagrams": 0
     },
     {
+      "slug": "cho-28-gam-hon-hop-x-gom-cu-va-ag-phan-ung-hoan-toan-voi-dung-dich-hno3-du",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
       "slug": "hon-hop-e-gom-bon-este-deu-co-cong-thuc-c8h8o2-va-co-vong-benzen-cho-1632-gam-e-tac-dung-toi-da",
       "category": "Hóa học",
       "exploration": null,
@@ -4657,6 +4637,16 @@
       "category": "Hóa học",
       "exploration": null,
       "cards": 1,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-308-gam-hon-hop-x-gom-fe-feo-feco3-mg-mgo-va-mgco3-tac-dung-vua-du-voi-dung-dich-h2so4-loang-thu-duoc-784-lit-dktc-hon-hop-khi",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 3,
       "cloze": 0,
       "source": "article",
       "quiz": 0,
@@ -5467,6 +5457,16 @@
       "category": "CNTT",
       "exploration": null,
       "cards": 3,
+      "cloze": 0,
+      "source": "article",
+      "quiz": 0,
+      "diagrams": 0
+    },
+    {
+      "slug": "cho-273-gam-hon-hop-x-gom-hai-este-no-don-chuc-tac-dung-vua-du-voi-dung-dich-koh-thu-duoc-308-gam-hon-hop",
+      "category": "Hóa học",
+      "exploration": null,
+      "cards": 4,
       "cloze": 0,
       "source": "article",
       "quiz": 0,
