@@ -39,14 +39,14 @@ body .hero .mascot{background:#e5f1f5}
 body :is(.tag,.subject-pick>span){background:#e8f2f5;color:#476b76}
 body .lesson-course .geometry-canvas{background:#ffffff}
 body .geometry-readouts>*{background:#edf5f7}
-html[data-theme="dark"]{--paper:#111c30;--ink:#e2e8f0;--muted:#a8b6cc;--line:#334155;--teal:#a5bfff;--card-bg:#111c30;--bg-secondary:#1e2d46}
-html[data-theme="dark"] body,html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] main.lesson-course.article-wrap{background:#111c30;color:#e2e8f0}
-html[data-theme="dark"] body header,html[data-theme="dark"] body:has(.lesson-course) header{background:#17243b;border-color:#334155}
+html[data-theme="dark"]{--paper:#151d21;--ink:#e2e8f0;--muted:#a9bac1;--line:#334155;--teal:#77d7eb;--card-bg:#151d21;--bg-secondary:#253238}
+html[data-theme="dark"] body,html[data-theme="dark"] body:has(.lesson-course),html[data-theme="dark"] main.lesson-course.article-wrap{background:#151d21;color:#e2e8f0}
+html[data-theme="dark"] body header,html[data-theme="dark"] body:has(.lesson-course) header{background:#202b30;border-color:#334155}
 html[data-theme="dark"] body header :is(.brand,.brand-name,.nav-exams>summary,.display-controls button,.nav-pill){color:#e2e8f0}
-html[data-theme="dark"] .lesson-course .article-toc,html[data-theme="dark"] .course-toc-dialog{background:#17243b}
-html[data-theme="dark"] .course-sidebar-heading{background:#243550;color:#e2e8f0}
+html[data-theme="dark"] .lesson-course .article-toc,html[data-theme="dark"] .course-toc-dialog{background:#202b30}
+html[data-theme="dark"] .course-sidebar-heading{background:#2b3b42;color:#e2e8f0}
 html[data-theme="dark"] :is(.lesson-course .article-toc,.course-toc-dialog) .toc-nav a{color:#e2e8f0}
-html[data-theme="dark"] body .practice-answer{background:#243550}
+html[data-theme="dark"] body .practice-answer{background:#2b3b42}
 body .hero h1 .hero-accent,body .float-note,body main a:not(.primary){color:#146b80}
 body .float{box-shadow:none}
 body .grade-strip a,body .grade-bar a,body .grade-nav a{background:#e5f1f5;border-color:#ccdee4;color:#476068;border-radius:8px}

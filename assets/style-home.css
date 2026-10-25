@@ -14,7 +14,7 @@ body main a.game-banner { position: relative; display: flex; align-items: center
 .gb-kicker { font-size: 12px; font-weight: 700; letter-spacing: .12em; color: var(--brand-cyan); }
 .gb-text strong { font-size: clamp(20px, 3.6vw, 26px); line-height: 1.2; font-weight: 700; color: #fff; }
 .gb-sub { font-size: 15px; font-weight: 400; color: #cbd5e1; }
-.gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 700; color: var(--brand-deep); background: var(--brand-coral); border-radius: 999px; box-shadow: none; white-space: nowrap; }
+.gb-go { flex: none; margin-left: auto; padding: 6px 20px; font-size: 16px; font-weight: 700; color: var(--brand-deep); background: var(--brand-cyan); border-radius: 999px; box-shadow: none; white-space: nowrap; }
 html[data-theme="dark"] body .game-banner { background: var(--brand-deep); color: #fff; }
 
 @keyframes gb-fly { 0%, 100% { transform: translate(0, 0) rotate(0); } 50% { transform: translate(-10px, -8px) rotate(-6deg); } }

@@ -603,7 +603,7 @@ html[data-theme="dark"] :is(.hero,.subject-section,.about,.aside-note,.prose blo
 
 
 
-html[data-theme="dark"] :is(.tag,.fun-label,.category.active,.nav-pill,.fun-tile,.card-art,.float,.subject-pick>span,:where(#exam-nav) a,.library-sections a) {
+html[data-theme="dark"] :is(.tag,.fun-label,.category.active,.nav-pill:not(.nav-search),.fun-tile,.card-art,.float,.subject-pick>span,:where(#exam-nav) a,.library-sections a) {
   background:var(--dark-surface, #17211b);
   color:var(--dark-ink, #e5eee6);
   border-color:var(--dark-line, #304237);

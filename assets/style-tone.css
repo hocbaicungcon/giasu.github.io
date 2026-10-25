@@ -20,7 +20,7 @@ body .exam-toolbar .primary:hover,
 body .riddles .primary:hover { background: var(--tone-green-dark) !important; color: #fff !important; }
 body .exam-toolbar #submit-exam:hover { background: #ffa49e !important; color: #243b45 !important; }
 
-body header .nav-pill:hover { background: var(--tone-green-soft) !important; color: #285e6b !important; }
+body header .nav-pill:not(.nav-search):hover { background: var(--tone-green-soft) !important; color: #285e6b !important; }
 body header .display-controls button:hover { background: rgba(66, 202, 234, .12) !important; color: #8bd9e9 !important; }
 body header #site-menu > a:not(.nav-pill):hover,
 body header .nav-exams > summary:hover,
