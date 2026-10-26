@@ -155,7 +155,7 @@ export function mountFigures(root, io) {
   $('fig-png').addEventListener('click', async () => {
     try { const png = await svgToPngPx(current.svg, current.width, current.height, 3); await io.replaceSelection(makePicturePackage(png, { widthPt: current.width * 0.75, heightPt: current.height * 0.75, alt: title(), name: 'Hinh', center: true })); $('fig-out').innerHTML = '<span class="ok">Đã chèn ảnh PNG vào Word.</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
   });
-  $('fig-dl-png').addEventListener('click', async () => { try { downloadBlob(await svgToPngPx(current.svg, current.width, current.height, 3), `${title()}.png`); } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; } });
-  $('fig-dl-svg').addEventListener('click', () => downloadBlob(new TextEncoder().encode(current.svg), `${title()}.svg`, 'image/svg+xml'));
+  $('fig-dl-png').addEventListener('click', async () => { try { const r = await downloadBlob(await svgToPngPx(current.svg, current.width, current.height, 3), `${title()}.png`); if (r === 'copied') $('fig-out').innerHTML = '<span class="ok">Đã sao chép ảnh PNG vào clipboard: dán (Ctrl+V) vào Word.</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; } });
+  $('fig-dl-svg').addEventListener('click', async () => { try { const r = await downloadBlob(new TextEncoder().encode(current.svg), `${title()}.svg`, 'image/svg+xml'); if (r === 'copied') $('fig-out').innerHTML = '<span class="ok">Đã sao chép mã SVG vào clipboard.</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; } });
   show('bbt');
 }

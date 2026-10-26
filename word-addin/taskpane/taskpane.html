@@ -7,6 +7,23 @@
   <link rel="icon" href="icon-32.png">
   <link rel="stylesheet" href="katex/katex.min.css">
   <link rel="stylesheet" href="taskpane.css">
+  <script>
+// ES5 only: runs even in old Word web views that cannot load the module script below, and shows why nothing works.
+(function () {
+  var box = null, loaded = false;
+  window.__texcraftLoaded = function () { loaded = true; if (box) box.hidden = true; };
+  function show(msg) {
+    if (loaded) return;
+    box = box || document.getElementById('boot-error');
+    if (!box) { setTimeout(function () { show(msg); }, 500); return; }
+    box.hidden = false;
+    box.innerHTML = '<b>Add-in chưa khởi động được.</b> Hãy chụp màn hình khung này gửi cho tác giả.<br>' + String(msg).replace(/[<>&]/g, '') + '<br><small>' + navigator.userAgent.replace(/[<>&]/g, '') + '</small>';
+  }
+  window.addEventListener('error', function (e) { show((e.message || 'lỗi') + (e.filename ? ' @ ' + e.filename.split('/').slice(-2).join('/') + ':' + e.lineno : '')); });
+  window.addEventListener('unhandledrejection', function (e) { show('Promise: ' + (e.reason && e.reason.message || e.reason)); });
+  setTimeout(function () { if (!loaded) show('Chưa khởi động sau 8 giây (mạng chặn appsforoffice.microsoft.com hoặc cache Word bị hỏng: xóa thư mục Wef, xem hướng dẫn).'); }, 8000);
+})();
+</script>
   <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
   <script defer src="katex/katex.min.js"></script>
 </head>
@@ -131,21 +148,6 @@
 </section>
 
 <div id="boot-error" hidden style="margin:8px;padding:8px;border:1px solid #c00;background:#fff0f0;color:#600;font:12px/1.4 sans-serif;word-break:break-word"></div>
-<script>
-// ES5 only: runs even in old Word web views that cannot load the module script below, and shows why nothing works.
-(function () {
-  var box = document.getElementById('boot-error'), loaded = false;
-  window.__texcraftLoaded = function () { loaded = true; box.hidden = true; };
-  function show(msg) {
-    if (loaded) return;
-    box.hidden = false;
-    box.innerHTML = '<b>Add-in chưa khởi động được.</b> Hãy chụp màn hình khung này gửi cho tác giả.<br>' + String(msg).replace(/[<>&]/g, '') + '<br><small>' + navigator.userAgent.replace(/[<>&]/g, '') + '</small>';
-  }
-  window.addEventListener('error', function (e) { show((e.message || 'lỗi') + (e.filename ? ' @ ' + e.filename.split('/').slice(-2).join('/') + ':' + e.lineno : '')); });
-  window.addEventListener('unhandledrejection', function (e) { show('Promise: ' + (e.reason && e.reason.message || e.reason)); });
-  setTimeout(function () { if (!loaded) show('Script chính không chạy sau 6 giây (có thể file bị thiếu/cache cũ).'); }, 6000);
-})();
-</script>
 <script>
 // Pick the build by what this web view can parse: new Word (WebView2 / Chrome / Safari) runs the modern modules,
 // old Word (Edge 18) gets app.bundle.js, the same code lowered to ES2017 in one classic script.

@@ -4,7 +4,7 @@ import { DEFAULT_FORM, examHeaderXml, examEndXml, examFooterXml, simplePackage }
 import { scanPackage } from '../src/ooxml.js';
 import { buildExamPptx, preparePptxSource, PPTX_THEMES } from '../src/pptx.js';
 import { qrPayloads, renderQr } from '../src/answer-qr.js';
-import { makePicturePackage, canvasToPng, downloadBlob } from '../src/picture.js';
+import { makePicturePackage, canvasToPng, downloadBlob, inWord } from '../src/picture.js';
 
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
@@ -289,6 +289,7 @@ export function mountExam(root, io) {
   $('ex-export').addEventListener('click', async () => {
     const out = $('ex-shuffle-out');
     try {
+      if (inWord()) throw new Error('Word không cho tải tệp. Dùng “Sao chép bảng” rồi dán vào Excel, hoặc mở add-in trong trình duyệt để xuất file .xlsx.');
       const list = await exportVersions();
       const which = $('ex-xlsx').value === 'both' ? ['giasu', 'texcraft'] : [$('ex-xlsx').value];
       for (const t of which) {
@@ -326,7 +327,7 @@ export function mountExam(root, io) {
   });
   $('ex-qr-prev').addEventListener('click', () => { qrState.index = Math.max(0, qrState.index - 1); showQr(); });
   $('ex-qr-next').addEventListener('click', () => { qrState.index = Math.min(qrState.groups.length - 1, qrState.index + 1); showQr(); });
-  $('ex-qr-save').addEventListener('click', async () => downloadBlob(await canvasToPng($('ex-qr-canvas')), `QR-dap-an-${qrState.index + 1}.png`));
+  $('ex-qr-save').addEventListener('click', async () => { try { const r = await downloadBlob(await canvasToPng($('ex-qr-canvas')), `QR-dap-an-${qrState.index + 1}.png`); if (r === 'copied') $('ex-shuffle-out').innerHTML = '<span class="ok">Đã sao chép ảnh QR vào clipboard: dán (Ctrl+V) vào Word.</span>'; } catch (e) { fail($('ex-shuffle-out'), e); } });
   $('ex-qr-insert').addEventListener('click', async () => {
     try {
       const png = await canvasToPng($('ex-qr-canvas'));
@@ -358,6 +359,7 @@ export function mountExam(root, io) {
   $('ex-pptx-btn').addEventListener('click', async () => {
     const out = $('ex-pptx-out');
     try {
+      if (inWord()) throw new Error('Word không cho tải tệp nên không xuất được PowerPoint từ đây. Mở add-in trong trình duyệt (giasu.ai.vn/word-addin/taskpane/taskpane.html) để xuất.');
       out.innerHTML = '<span class="muted">Đang đọc tài liệu và tạo file PowerPoint…</span>';
       let pkg;
       const srcCode = $('ex-pptx-source')?.value;

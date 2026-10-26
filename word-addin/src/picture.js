@@ -23,11 +23,26 @@ export async function canvasToPng(canvas) {
   return out;
 }
 
-export function downloadBlob(bytes, filename, type = 'image/png') {
+/** True in an old Word web view (EdgeHTML "Edge/18" or IE "Trident"), where a blob download click can freeze Word. Current Word (WebView2) and Mac download fine. */
+export const inWord = () => { try { return typeof Office !== 'undefined' && !!(Office.context && Office.context.host) && /Trident|Edge\/\d/.test(navigator.userAgent); } catch { return false; } };
+
+/** Browser: download. Word: copy to the clipboard instead (PNG as image, SVG/HTML as text). Returns 'downloaded' | 'copied'. */
+export async function downloadBlob(bytes, filename, type = 'image/png') {
+  if (inWord()) {
+    try {
+      if (type === 'image/png' && window.ClipboardItem) await navigator.clipboard.write([new ClipboardItem({ [type]: new Blob([bytes], { type }) })]);
+      else if (/^(text\/|image\/svg)/.test(type)) await navigator.clipboard.writeText(new TextDecoder().decode(bytes));
+      else throw new Error('x');
+      return 'copied';
+    } catch { throw new Error('Word không cho tải tệp và không sao chép được vào clipboard. Dùng nút “Chèn” vào Word, hoặc mở add-in trong trình duyệt để tải.'); }
+  }
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(new Blob([bytes], { type }));
+  const url = URL.createObjectURL(new Blob([bytes], { type }));
+  a.href = url;
   a.download = filename;
   document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+  return 'downloaded';
 }
 
 /** Browser: SVG (px units) -> PNG bytes at `scale` x. */

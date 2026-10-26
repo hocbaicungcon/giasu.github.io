@@ -52,12 +52,12 @@ export function mountLms(root, io) {
     const f = $('lms-frame'); f.hidden = false; f.srcdoc = buildQuizHtml(quiz, options());
     f.scrollIntoView({ block: 'nearest' });
   });
-  $('lms-save').addEventListener('click', () => {
+  $('lms-save').addEventListener('click', async () => {
     if (!quiz) return;
     try {
       const o = options(), name = `${o.title.replace(/[\/\\?%*:|"<>]/g, '_') || 'BaiTracNghiem'}.html`;
-      downloadBlob(new TextEncoder().encode(buildQuizHtml(quiz, o)), name, 'text/html');
-      $('lms-out').innerHTML = `<span class="ok">Đã tạo <b>${esc(name)}</b>.</span> <span class="muted">Mở bằng trình duyệt hoặc tải lên LMS.</span>`;
+      const r = await downloadBlob(new TextEncoder().encode(buildQuizHtml(quiz, o)), name, 'text/html');
+      $('lms-out').innerHTML = r === 'copied' ? '<span class="ok">Word không tải tệp được: đã sao chép mã HTML vào clipboard.</span> <span class="muted">Dán vào Notepad, lưu thành .html.</span>' : `<span class="ok">Đã tạo <b>${esc(name)}</b>.</span> <span class="muted">Mở bằng trình duyệt hoặc tải lên LMS.</span>`;
     } catch (e) { fail(e); }
   });
 }

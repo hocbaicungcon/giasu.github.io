@@ -107,6 +107,17 @@
       <h2>3. Sử dụng trên Word Online (Trình duyệt Web)</h2>
       <p>Mở bất kỳ tài liệu nào trên Word Web (Office.com) → vào tab <b>Chèn (Insert) → Add-ins → My Add-ins → Upload My Add-in (Tải lên tiện ích của tôi)</b> → chọn file <code>manifest.xml</code> vừa tải về.</p>
 
+      <h2>4. Add-in cứ báo “loading” hoặc Word “Not responding”</h2>
+      <p>Trên bản Word cũ (dùng trình duyệt nhúng Edge/IE cũ), add-in không tải được tệp về máy; các nút tải sẽ sao chép vào clipboard để dán vào Word. Nếu Word đã bị treo và add-in cứ quay “loading”, hãy xóa bộ nhớ đệm của Office (Windows):</p>
+      <ol>
+        <li>Thoát hẳn Word (kiểm tra Task Manager không còn <code>WINWORD.EXE</code>).</li>
+        <li>Nhấn <b>Win + R</b>, dán <code>%LOCALAPPDATA%\Microsoft\Office\16.0\Wef\</code> rồi Enter.</li>
+        <li>Xóa toàn bộ tệp và thư mục bên trong <code>Wef</code>.</li>
+        <li>Mở lại Word và mở add-in từ <b>Chèn → Add-ins</b>.</li>
+      </ol>
+      <p>Để add-in chạy ổn định và tải được tệp trên Windows, hãy cài <b>Microsoft Edge WebView2 Runtime</b> (bản Evergreen Standalone Installer): <a href="https://developer.microsoft.com/microsoft-edge/webview2/#download" target="_blank" rel="noopener">developer.microsoft.com/microsoft-edge/webview2</a>. Cài xong, thoát hẳn Word rồi mở lại; Word sẽ tự dùng WebView2.</p>
+      <p>Trên Mac: xóa nội dung thư mục <code>~/Library/Containers/com.microsoft.Word/Data/Library/Caches/</code> và <code>~/Library/Containers/com.microsoft.Word/Data/Library/Application Support/Microsoft/Office/16.0/Wef/</code>.</p>
+
       <div class="note-box">
         <b>Khuyến nghị:</b> Khi thực hiện chuyển đổi công thức hoặc trộn đề số lượng lớn, thầy cô nên thao tác trên <b>bản sao</b> của tài liệu để an toàn tuyệt đối. Tác giả: <b>thầy Phan Văn Phương</b>, giáo viên THPT Xuân Trường B, Nam Định.
       </div>
