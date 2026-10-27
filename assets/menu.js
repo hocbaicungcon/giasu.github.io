@@ -2,7 +2,7 @@
 const toggle=document.querySelector('.menu-toggle');
 const menu=document.querySelector('#site-menu');
 if(toggle&&menu){
- const background=[...document.querySelectorAll('main,footer,.go-top,.site-share')];
+ const background=[...document.querySelectorAll('main,footer,.go-top,.site-share,.study-help')];
  const syncOverlay=()=>{const opened=document.body.classList.contains('menu-open')&&matchMedia('(max-width:950px)').matches;background.forEach(el=>el.inert=opened);};
  const close=()=>{toggle.setAttribute('aria-expanded','false');toggle.querySelector('b').textContent='Mở menu';document.body.classList.remove('menu-open');menu.querySelectorAll('details').forEach(d=>d.open=false);syncOverlay();};
  toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.querySelector('b').textContent=open?'Mở menu':'Đóng menu';document.documentElement.style.setProperty('--mobile-nav-height',document.querySelector('header').getBoundingClientRect().height+'px');document.body.classList.toggle('menu-open',!open);syncOverlay();});
@@ -38,3 +38,20 @@ document.querySelectorAll('a.nav-search').forEach(link=>link.addEventListener('c
  const target=new URL(link.href,location.href);
  if(target.pathname===location.pathname&&target.hash==='#search')focusSearch();
 }));
+
+// Match complete destinations so class and subject selections remain distinct.
+if(menu){
+ const current=new URL(location.href);
+ const normalize=path=>path.replace(/index\.html$/, '');
+ menu.querySelectorAll('a[href]').forEach(link=>{
+  const target=new URL(link.href,location.href);
+  if(target.origin!==current.origin||target.hash||normalize(target.pathname)!==normalize(current.pathname)||target.search!==current.search)return;
+  link.setAttribute('aria-current','page');
+  link.closest('details')?.classList.add('nav-current');
+ });
+}
+const studyHelp=document.querySelector('.study-help');
+if(studyHelp){
+ document.addEventListener('click',event=>{if(!studyHelp.contains(event.target))studyHelp.open=false;});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&studyHelp.open){studyHelp.open=false;studyHelp.querySelector('summary').focus();}});
+}
