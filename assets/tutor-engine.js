@@ -125,12 +125,6 @@ function longDiv(a, b) {
   return { lines, quo, rem: r };
 }
 
-const estimate = (a, op, b) => {
-  const r = (n) => { const d = String(Math.round(n)).length; if (d <= 1) return Math.round(n); const p = 10 ** (d - 1); return Math.round(n / p) * p; };
-  const ra = r(a), rb = r(b);
-  return { ra, rb, v: applyOp(ra, op, rb) };
-};
-
 /* ---------- Trả lời ---------- */
 const arith = (text) => {
   let s = text.replace(MINUS, '-').replace(/([\d)])\s*[xX*·×]\s*(?=[\d(])/g, '$1×').replace(/([\d)])\s*[:÷]\s*(?=[\d(])/g, '$1÷');
@@ -160,8 +154,7 @@ function arithmeticReply(tokens, given) {
   if (single) {
     const kind = OPNAME[op];
     hints.push(`Đây là phép ${kind}. ${op === '+' || op === '−' || op === '×' ? 'Em đặt tính thẳng cột (hàng đơn vị thẳng hàng đơn vị), tính từ phải sang trái.' : 'Em đặt phép chia, lấy từng chữ số của số bị chia từ trái sang phải.'}`);
-    const e = estimate(A, op, B);
-    if (op !== '÷' || B !== 0) hints.push(`Ước lượng trước: làm tròn ${fmt(A)} ≈ ${fmt(e.ra)}, ${fmt(B)} ≈ ${fmt(e.rb)}, nên kết quả khoảng ${fmt(e.v)}. Kết quả của em nên gần số đó.`);
+    hints.push({ '+': 'Cộng từng hàng, bắt đầu từ hàng đơn vị. Nếu tổng của một hàng từ 10 trở lên thì viết chữ số hàng đơn vị và nhớ 1 sang hàng bên trái.', '−': 'Trừ từng hàng, bắt đầu từ hàng đơn vị. Nếu chữ số trên nhỏ hơn chữ số dưới thì mượn 1 từ hàng bên trái (thành 10 ở hàng này).', '×': 'Nhân số thứ nhất lần lượt với từng chữ số của số thứ hai, bắt đầu từ hàng đơn vị. Mỗi dòng sau viết lùi sang trái một chữ số.', '÷': 'Chia từng bước: chia, nhân, trừ, rồi hạ chữ số tiếp theo xuống.' }[op]);
     if (op === '−' && A < B) { return { kind: 'error', title: 'Em xem lại đề nhé', intro: `${fmt(A)} nhỏ hơn ${fmt(B)} nên ở tiểu học mình chưa trừ được (chưa học số âm). Em kiểm tra xem có chép nhầm số bị trừ và số trừ không.`, hints: [], solution: [], answer: null }; }
     if (op === '÷') {
       const d = longDiv(A, B);

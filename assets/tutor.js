@@ -6,7 +6,7 @@ if (host && mount) {
   const root = new URL('../', import.meta.url);
   let engine = null, posts = null, built = false;
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
-  const SAMPLES = ['345 + 678', '2 + 3 × 4', '35 + 47 = 84', '1/2 + 1/3', 'Chu vi hình chữ nhật dài 8 cm rộng 5 cm', 'Tổng hai số là 100, hiệu là 20', 'Đổi 3 m ra cm', 'Bảng nhân 7'];
+  const SAMPLES = ['345 + 678', '2 + 3 × 4', '1/2 + 1/3', 'Đổi 3 m ra cm', 'Bảng nhân 7'];
 
   async function loadEngine() {
     if (!engine) engine = await import('./tutor-engine.js');
@@ -20,7 +20,6 @@ if (host && mount) {
 
   function build() {
     built = true;
-    const links = [...mount.querySelectorAll('a')];
     mount.textContent = '';
     const log = el('div', 'tutor-log'); log.setAttribute('role', 'log'); log.setAttribute('aria-live', 'polite'); log.setAttribute('aria-label', 'Cuộc trò chuyện với trợ lý');
     const chips = el('div', 'tutor-chips');
@@ -28,8 +27,7 @@ if (host && mount) {
     const input = el('input'); input.type = 'text'; input.maxLength = 400; input.placeholder = 'Gõ phép tính hoặc đề bài…'; input.setAttribute('aria-label', 'Đề bài của em');
     const send = el('button', null, 'Hỏi'); send.type = 'submit';
     form.append(input, send);
-    const foot = el('div', 'tutor-foot'); links.forEach((a) => foot.append(a));
-    mount.append(log, chips, form, foot);
+    mount.append(log, chips, form);
 
     const bubble = (cls) => { const b = el('div', 'tutor-msg ' + cls); log.append(b); return b; };
     const scroll = () => { log.scrollTop = log.scrollHeight; };
@@ -80,7 +78,7 @@ if (host && mount) {
         await loadEngine();
         const r = engine.tutorReply(q);
         if (r) render(r); else await fallback(q);
-      } catch { botText('Có lỗi nhỏ', 'Trợ lý đang gặp sự cố. Em dùng các đường dẫn bên dưới nhé.'); }
+      } catch { botText('Có lỗi nhỏ', 'Trợ lý đang gặp sự cố. Em thử lại sau nhé.'); }
     }
     form.addEventListener('submit', (e) => { e.preventDefault(); ask(input.value); });
     SAMPLES.forEach((s) => { const c = el('button', null, s); c.type = 'button'; c.onclick = () => ask(s); chips.append(c); });
