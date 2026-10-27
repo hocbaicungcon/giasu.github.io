@@ -32,4 +32,27 @@ body .about-page .prose{max-width:760px;margin:auto}
 .study-help-panel a{display:block;padding:12px 0;border-top:1px solid var(--line);color:var(--teal)}
 .study-help :focus-visible,.about-features a:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
 @media(max-width:600px){.about-features{grid-template-columns:1fr;gap:12px}.about-features > a{padding:20px}.study-help{left:12px}.study-help > summary{gap:10px}.study-help > summary > img{width:52px;height:52px}.study-help > summary > span{display:block;padding:10px 12px;font-size:13px;max-width:130px}.about-sections{justify-content:flex-start}}
+.study-help.tutor-ready .study-help-panel,.study-help[open] .study-help-panel{width:min(380px,calc(100vw - 24px))}
+.study-help-panel [data-tutor] > p{margin:0 0 12px}
+.tutor-log{height:min(340px,48vh);overflow-y:auto;display:flex;flex-direction:column;gap:10px;padding:2px 4px 2px 0;margin-bottom:10px}
+.tutor-msg{max-width:92%;padding:10px 14px;border-radius:16px;line-height:1.5;font-size:15px;overflow-wrap:anywhere}
+.tutor-msg p{margin:6px 0 0;color:inherit}
+.tutor-me{align-self:flex-end;background:var(--teal);color:var(--paper);border-bottom-right-radius:4px}
+.tutor-bot{align-self:flex-start;background:var(--bg-secondary);color:var(--ink);border:1px solid var(--line);border-bottom-left-radius:4px}
+.tutor-bot pre{margin:8px 0 0;padding:8px 10px;overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:10px;font:14px/1.45 ui-monospace,Menlo,Consolas,monospace;white-space:pre}
+.tutor-hint{padding-left:10px;border-left:3px solid var(--teal)}
+.tutor-answer{font-weight:700;color:var(--teal)}
+.tutor-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tutor-actions button,.tutor-chips button,.tutor-form button{font:inherit;font-size:14px;cursor:pointer;border:1px solid var(--teal);border-radius:999px;background:var(--paper);color:var(--teal);padding:6px 12px;min-height:36px}
+.tutor-actions button:hover:not(:disabled),.tutor-chips button:hover,.tutor-form button:hover{background:var(--teal);color:var(--paper)}
+.tutor-actions button:disabled{opacity:.55;cursor:default}
+.tutor-chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:6px}
+.tutor-chips button{flex:none;white-space:nowrap}
+.tutor-form{display:flex;gap:8px}
+.tutor-form input{flex:1;min-width:0;box-sizing:border-box;padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper);color:var(--ink);font:inherit;font-size:16px}
+.tutor-form button{background:var(--teal);color:var(--paper)}
+.tutor-links{margin:8px 0 0;padding-left:18px}
+.tutor-foot{margin-top:10px}
+.tutor-foot a{padding:8px 0;font-size:14px}
+@media(max-width:600px){.study-help-panel{padding:16px}.tutor-log{height:min(300px,42vh)}}
 @media print{.study-help,.about-sections{display:none!important}}

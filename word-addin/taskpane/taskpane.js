@@ -42,6 +42,10 @@ function switchTab(name, followSelection = true) {
     state.worksheetLoaded = true;
     import('./worksheet-ui.js').then((m) => m.mountWorksheet($('worksheet-root'), io)).catch((e) => { $('worksheet-root').textContent = 'Không tải được mô-đun phiếu bài tập: ' + e.message; });
   }
+  if (name === 'handwriting' && !state.handwritingLoaded) {
+    state.handwritingLoaded = true;
+    import('./handwriting-ui.js').then((m) => m.mountHandwriting($('handwriting-root'), io)).catch((e) => { $('handwriting-root').textContent = 'Không tải được mô-đun tập viết: ' + e.message; });
+  }
   if (name === 'calc' && !state.calcLoaded) {
     state.calcLoaded = true;
     import('./calc-ui.js').then((m) => m.mountCalc($('calc-root'), io, { openEditor: (latex) => { $('editor-latex').value = latex; switchTab('editor', false); renderEditorPreview(); } })).catch((e) => { $('calc-root').textContent = 'Không tải được mô-đun tính toán: ' + e.message; });
