@@ -349,12 +349,12 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="dark"] body {
-  background:var(--dark-surface, #17211b);
-  color:var(--dark-ink, #e5eee6);
+  background:var(--dark-surface, #162129);
+  color:var(--dark-ink, #e6eef3);
 }
 
 html[data-theme="dark"] a:hover {
-  color:var(--dark-ink, #e5eee6);
+  color:var(--dark-ink, #e6eef3);
 }
 
 @media(max-width:620px) {
@@ -370,7 +370,7 @@ html[data-theme="dark"] a:hover {
 
 /* Shared muted text; component-specific colors belong to their own modules. */
 html[data-theme="dark"] :is(.hero p,.card p,.about p,.aside-note p,.exam-policy,.back,.eyebrow,.overline:not(.mord),.exam-nav-group strong,.lesson-video figcaption,footer p) {
-  color:var(--dark-ink, #e5eee6);
+  color:var(--dark-ink, #e6eef3);
 }
 
 /* Máy cấu hình yếu: preferences.js đặt data-lite → tắt hoạt ảnh/hiệu ứng nặng */

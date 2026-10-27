@@ -1,6 +1,6 @@
-import './probability-sort.js?v=bf14f14ae43d';
-import './triangle-angles.js?v=bf14f14ae43d';
-import {gcd,divisors,quadratic,tossCoins,rationalNumber,linearFunction,equationBalance,derivativeTangent,pieChartModel,sampleDataItems,lineChartModel,movingAverage} from './exploration-models.js?v=bf14f14ae43d';
+import './probability-sort.js?v=62b2ede6941d';
+import './triangle-angles.js?v=62b2ede6941d';
+import {gcd,divisors,quadratic,tossCoins,rationalNumber,linearFunction,equationBalance,derivativeTangent,pieChartModel,sampleDataItems,lineChartModel,movingAverage} from './exploration-models.js?v=62b2ede6941d';
 const fmt=n=>Number(n.toFixed(2)).toLocaleString('vi');
 const svg=content=>`<svg viewBox="0 0 580 320" role="img" aria-label="Đồ thị thí nghiệm">${content}</svg>`;
 const button=(label,action)=>{const b=document.createElement('button');b.type='button';b.textContent=label;b.addEventListener('click',action);return b;};

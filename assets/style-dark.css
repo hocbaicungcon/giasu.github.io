@@ -12,7 +12,7 @@ html[data-theme="dark"] body .hero .float-book small{color:var(--muted)}
 html[data-theme="dark"] body .hero .orbit{border-color:var(--dark-line)}
 /* Subject choices are simple icon-and-text links, in both themes. */
 body .home-learning .subject-picks .subject-pick{background:transparent;border:0;box-shadow:none}
-body .home-learning .subject-picks .subject-pick:hover{background:transparent;border:0;color:#08758c}
+body .home-learning .subject-picks .subject-pick:hover{background:transparent;border:0;color:#0b8db3}
 html[data-theme="dark"] body .home-learning .subject-picks .subject-pick{background:transparent;border:0;color:#d8edf2;box-shadow:none}
 html[data-theme="dark"] body .home-learning .subject-picks .subject-pick:hover{background:transparent;color:#77d7eb}
 html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
@@ -22,8 +22,8 @@ html[data-theme="dark"] body :is(.prose,.exam-wrap) :is(h1,h2,h3,h4,legend,summa
 html[data-theme="dark"] body :is(.card,.related-card,.about,.aside-note,.article-heading) p{color:var(--muted)}
 html[data-theme="dark"] body :is(.tag,.category,.practice-gap-select,.practice-cloze .practice-gap-select){background:#2b3b42;color:#d8edf2;border-color:var(--line)}
 html[data-theme="dark"] body .quiz-option:has(input:checked){background:#354b54;color:#e5edf0;border-color:#77d7eb}
-html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle,.library-sections a.active){background:#08758c;color:#fff;border-color:#08758c}
-html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{background:#075c70;color:#fff}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle,.library-sections a.active){background:#0b8db3;color:#fff;border-color:#0b8db3}
+html[data-theme="dark"] body :is(.primary,.go-top,.share-toggle):hover{background:#0a7494;color:#fff}
 html[data-theme="dark"] body .prose a{color:#77d7eb}
 html[data-theme="dark"] body :is(.glossary-term,.practice-kicker,.related-action){color:#77d7eb}
 html[data-theme="dark"] body .glossary-popup{background:#253238;color:var(--ink);border-color:#45616b}
@@ -42,8 +42,8 @@ html[data-theme="dark"] body.grading-page :is(.button.ghost,.small,.manual-key-f
 html[data-theme="dark"] body.grading-page :is(.small.danger,#deleteExamKey,#deleteAllKeys){background:#382322;color:#ffada1;border-color:#71473f}
 html[data-theme="dark"] body.grading-page :is(.button,.small,.manual-key-form button,.key-choices button,#scanCameraButton,#deleteExamKey,#deleteAllKeys):disabled{background:var(--bg-secondary);color:var(--muted);border-color:#35464e}
 html[data-theme="dark"] body.grading-page .mobile-nav button[aria-current="page"]{background:#354b54;color:#d8edf2}
-html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton){background:#08758c;color:#fff}
-html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton):hover{background:#075c70;color:#fff}
+html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton){background:#0b8db3;color:#fff}
+html[data-theme="dark"] body.grading-page :is(.primary,#scanCameraButton):hover{background:#0a7494;color:#fff}
 body .home-learning .subject-section,body .home-learning .subject-row,body .home-learning .subject-picks{border:0;box-shadow:none}
 html[data-theme="dark"] body .home-learning .grade-nav-title{color:#a9bac1}
 html[data-theme="dark"] body .library .card .card-art,html[data-theme="dark"] body .related-card .related-card-art{background:#2b3b42;color:#e5edf0;border-color:#35464e}

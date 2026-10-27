@@ -1,7 +1,7 @@
 /* credit: giasu.ai.vn */
 /* Đồng bộ tông màu tương tác: hover, focus, trạng thái chọn dùng họ cyan của logo.
    Các quy tắc màu từ giao diện cũ nằm rải rác trong những tệp style-* khác được ghi đè tại đây (tệp nạp sau cùng). */
-:root { --tone-green: #006b85; --tone-green-dark: #00546a; --tone-green-soft: #e1f5fa; --tone-green-line: #67bed3; --tone-focus: #006b85; }
+:root { --tone-green: #0b8db3; --tone-green-dark: #0a7494; --tone-green-soft: #e1f5fa; --tone-green-line: #67bed3; --tone-focus: #0b8db3; }
 
 body :is(button, a, input, select, summary, .fun-player *):focus-visible,
 body .geometry-lab :is(button, input):focus-visible,
@@ -18,7 +18,7 @@ body :is(.primary, .go-top, .share-toggle):hover,
 body .share-toggle[aria-expanded="true"],
 body .exam-toolbar .primary:hover,
 body .riddles .primary:hover { background: var(--tone-green-dark) !important; color: #fff !important; }
-body .exam-toolbar #submit-exam:hover { background: #ffa49e !important; color: #243b45 !important; }
+body .exam-toolbar #submit-exam:hover { background: #0a7494 !important; color: #fff !important; }
 
 body header .nav-pill:not(.nav-search):hover { background: var(--tone-green-soft) !important; color: #285e6b !important; }
 body header .display-controls button:hover { background: rgba(66, 202, 234, .12) !important; color: #8bd9e9 !important; }
@@ -45,8 +45,8 @@ body :is(.fun-tile:hover, .fun-tile[href$="do-vui-tieng-anh.html"]:hover) { back
 html[data-theme="dark"] body :is(button, a):hover { color: #8bd9e9; }
 html[data-theme="dark"] body .prose button.glossary-term:hover { color: #8bd9e9 !important; }
 html[data-theme="dark"] body :is(.share-actions a, .share-actions button):hover { background: rgba(66, 202, 234, .22) !important; color: #8bd9e9 !important; }
-html[data-theme="dark"] body .exam-toolbar #submit-exam:hover { background: #ffa49e !important; }
-html[data-theme="dark"] body :is(.primary, .go-top, .share-toggle):hover { background: #10576a !important; }
+html[data-theme="dark"] body .exam-toolbar #submit-exam:hover { background: #0a7494 !important; }
+html[data-theme="dark"] body :is(.primary, .go-top, .share-toggle):hover { background: #0a7494 !important; }
 
 /* Quy tắc chung "button:hover, a:hover" đổi màu chữ khi rê chuột; các thành phần có nền màu riêng giữ nguyên màu chữ của chúng. */
 :is(.practice-page, .writing-page, .pg-game) :is([aria-pressed="true"], [aria-selected="true"]):hover,
@@ -54,6 +54,18 @@ html[data-theme="dark"] body :is(.primary, .go-top, .share-toggle):hover { backg
 .practice-page :is(.pg-controls, .pg-topic-tools, .pg-actions) :is(button, button.primary):hover,
 .wr-tools button:hover { color: #fff; }
 :is(.pg-tilebtn, .pg-m, .pg-level):hover { color: #2b2147; }
-:is(.hub-card, .wr-tile, .wr-level):hover { color: var(--ink, #243b45); }
+:is(.hub-card, .wr-tile, .wr-level):hover { color: var(--ink, #1f3341); }
 .wr-modes button:not([aria-pressed="true"]):hover, .wr-tabs button:not([aria-selected="true"]):hover, .pg-modes button:not([aria-selected="true"]):hover { color: var(--tone-green-dark); }
 .pg-icon:hover { color: #2b2147; }
+
+/* Mục lục: nền xanh đậm để tách rõ khỏi nội dung bài. */
+body :is(.lesson-course .article-toc, .course-toc-dialog) { background: #0f3b4e; color: #e6f6fb; border-color: #0b2e3d; }
+body :is(.course-sidebar-heading, .course-toc-dialog .course-sidebar-heading) { background: #0b2e3d; color: #ffffff; }
+body :is(.lesson-course .article-toc, .course-toc-dialog) .toc-title { color: #8fd9ee; }
+body :is(.lesson-course .article-toc, .course-toc-dialog) .toc-nav a { color: #d6eef6; }
+body :is(.lesson-course .article-toc, .course-toc-dialog) .toc-nav a:is(:hover, .active) { background: #42caea !important; color: #0b2e3d !important; font-weight: 700; }
+body :is(.lesson-course .article-toc, .course-toc-dialog) .toc-top-btn { color: #e6f6fb; border-color: #3f7f95; }
+body :is(.lesson-course .article-toc, .course-toc-dialog) .toc-top-btn:hover { background: #1c566c; color: #fff; }
+body .course-toc-close { color: #e6f6fb; }
+html[data-theme="dark"] body :is(.lesson-course .article-toc, .course-toc-dialog) { background: #0f3b4e; border-color: #1c566c; }
+html[data-theme="dark"] body :is(.lesson-course .article-toc, .course-toc-dialog) .toc-nav a { color: #d6eef6; }

@@ -1548,7 +1548,7 @@ html[data-theme="dark"] .load-more-btn {
 
 html[data-theme="dark"] .load-more-btn:hover {
   background: var(--teal);
-  color: #fff8e9;
+  color: #fff6ef;
   border-color: var(--teal);
   box-shadow: 0 6px 16px rgba(140, 91, 52, 0.25);
 }
@@ -1569,7 +1569,7 @@ html[data-theme="dark"] .page-btn:hover:not(:disabled) {
 
 html[data-theme="dark"] .page-btn.active {
   background: var(--teal);
-  color: #fff8e9;
+  color: #fff6ef;
   border-color: var(--teal);
   box-shadow: 0 2px 8px rgba(140, 91, 52, 0.35);
 }
@@ -1678,13 +1678,13 @@ html[data-theme="dark"] .grade-nav-item {
 
 html[data-theme="dark"] .grade-nav-item:hover {
   background: var(--teal);
-  color: #fff8e9;
+  color: #fff6ef;
   border-color: var(--teal);
 }
 
 html[data-theme="dark"] .grade-nav-item.active {
   background: var(--teal);
-  color: #fff8e9;
+  color: #fff6ef;
   border-color: var(--teal);
   box-shadow: 0 2px 8px rgba(140, 91, 52, 0.35);
 }

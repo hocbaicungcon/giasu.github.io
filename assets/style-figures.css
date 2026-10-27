@@ -1,5 +1,5 @@
 :root{--diagram-ink:#087858;--diagram-coral:#d94e48;--diagram-gold:#a66d15;--diagram-label:#263531;--diagram-outline:#75877c;--diagram-wash:rgba(8,120,88,.06)}
-html[data-theme="dark"]{--diagram-ink:#8be0b9;--diagram-coral:#ff9a8d;--diagram-gold:#f2c86d;--diagram-label:#e5eee6;--diagram-outline:#9eb4a5;--diagram-wash:rgba(139,224,185,.08)}
+html[data-theme="dark"]{--diagram-ink:#8be0b9;--diagram-coral:#ff9a8d;--diagram-gold:#f2c86d;--diagram-label:#e6eef3;--diagram-outline:#9eb4a5;--diagram-wash:rgba(139,224,185,.08)}
 body .prose :is(svg.lesson-diagram,.geometry-canvas,figure,.lesson-figure){background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
 body .prose div:has(>svg.lesson-diagram){background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
 body .prose svg.lesson-diagram{max-width:100%;height:auto;color:var(--diagram-ink)}

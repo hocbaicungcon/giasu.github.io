@@ -1,5 +1,5 @@
 /* credit: giasu.ai.vn */
-import {loadData,normalizeAnswer,choose} from './fun-data.js?v=bf14f14ae43d';
+import {loadData,normalizeAnswer,choose} from './fun-data.js?v=62b2ede6941d';
 const player=document.querySelector('.fun-player');
 const kind=player.dataset.kind, content=player.querySelector('.fun-content'), next=player.querySelector('.fun-next'), error=player.querySelector('.fun-error'), count=player.querySelector('.fun-count'), filters=[...player.querySelectorAll('[data-filter]')], form=player.querySelector('form'), result=player.querySelector('.riddle-result');
 let index, current, record;const cache=new Map();

@@ -702,7 +702,7 @@ html[data-theme="dark"] header .menu-toggle {
 
 html[data-theme="dark"] :is(.primary,.go-top,.library-sections a.active) {
   background: #8c5b34;
-  color: #fff8e9;
+  color: #fff6ef;
   border-color:var(--dark-line, #303e42);
 }
 
