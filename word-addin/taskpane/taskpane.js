@@ -4,6 +4,7 @@ import * as io from '../src/word-io.js';
 import { attachLatexAutocomplete } from './latex-autocomplete.js';
 import { mountEditorToolbar } from './editor-toolbar.js';
 import { createVisualEditor } from './visual-editor.js';
+import { formulaIssue } from './editor-validation.js';
 import { pickEquation } from '../src/cursor-eq.js';
 import { scanBody, previewReplace, makeTransform, convertMathTypeInPackage, convertEquationsToLatexText, rewriteEquations, scanPackage, makeEquationPackage, latexToOmml, convertNativeToMathType, makeMathTypePackage, browserRender } from '../src/app-core.js';
 
@@ -74,6 +75,10 @@ function checkUrlTab() {
 document.querySelectorAll('nav button').forEach((b) => b.addEventListener('click', () => {
   switchTab(b.dataset.tab);
 }));
+document.querySelectorAll('[data-start-tab]').forEach(button => button.addEventListener('click', () => {
+  $('getting-started').open = false;
+  switchTab(button.dataset.startTab);
+}));
 window.addEventListener('hashchange', checkUrlTab);
 // Mouse wheel scrolls the tab strip sideways (Windows has no horizontal wheel).
 document.querySelector('nav').addEventListener('wheel', (e) => { if (e.deltaY) { e.currentTarget.scrollLeft += e.deltaY; e.preventDefault(); } }, { passive: false });
@@ -82,6 +87,8 @@ if (window.__texcraftLoaded) window.__texcraftLoaded();
 // After any write: previews are stale, and "restore" is only safe while paragraph numbering is unchanged.
 function afterWrite(res, backup) {
   state.scanned = null;
+  $('eq-table').tBodies[0].innerHTML = '';
+  $('scan-summary').textContent = 'Tài liệu đã thay đổi. Hãy quét lại để xem công thức hiện tại.';
   lastPreview = [];
   const same = res.before === res.after;
   state.lastBackup = same ? backup : null;
@@ -92,11 +99,16 @@ function progress(el, done, total) { el.hidden = false; el.max = total || 1; el.
 
 // ---------------------------------------------------------------- scan
 async function scan() {
+  const scope = document.querySelector('input[name=scope]:checked').value;
   $('btn-scan').disabled = true;
+  state.scanned = null;
+  $('eq-table').tBodies[0].innerHTML = '';
+  syncConversionPlan();
+  document.querySelectorAll('input[name=scope]').forEach(el => { el.disabled = true; });
   $('scan-summary').textContent = 'Đang đọc tài liệu…';
   try {
     const readStart = Date.now();
-    const { pkg, paragraphCount } = await io.readBody({ scanOnly: true });
+    const { pkg, paragraphCount } = await (scope === 'selection' ? io.readSelection({ wholeParagraphs: true }) : io.readBody({ scanOnly: true }));
     const readMs = Date.now() - readStart;
     $('scan-summary').textContent = 'Đang phân tích công thức…';
     await new Promise(resolve => setTimeout(resolve, 0));
@@ -105,10 +117,15 @@ async function scan() {
     scanned.timing = { readMs, parseMs: Date.now() - parseStart };
     scanned.mapped = scanned.paragraphTotal === paragraphCount;
     scanned.paragraphCount = paragraphCount;
+    scanned.scope = scope;
     state.scanned = scanned;
     renderScan();
   } catch (e) { $('scan-summary').innerHTML = `<span class="bad">Lỗi khi đọc tài liệu: ${esc(e.message)}</span>`; }
-  finally { $('btn-scan').disabled = false; }
+  finally {
+    $('btn-scan').disabled = false;
+    document.querySelectorAll('input[name=scope]').forEach(el => { el.disabled = false; });
+    syncConversionPlan();
+  }
 }
 
 function renderScan() {
@@ -123,6 +140,10 @@ function renderScan() {
     (s.timing ? ` · đọc ${(s.timing.readMs / 1000).toFixed(1)} giây, phân tích ${(s.timing.parseMs / 1000).toFixed(1)} giây` : '');
   const only = $('only-bad').checked;
   const rows = s.equations.filter((e) => !only || e.latex === null);
+  $('scan-filter-status').textContent = `Đang hiển thị ${Math.min(rows.length, 600)}/${s.equations.length} công thức. Bộ lọc chỉ đổi danh sách hiển thị, không đổi phạm vi chuyển.`;
+  $('scan-empty').hidden = rows.length > 0;
+  $('scan-empty-text').textContent = only ? 'Không có công thức lỗi trong phạm vi đã quét.' : 'Không tìm thấy công thức trong phạm vi đã chọn.';
+  $('scan-show-all').hidden = !only;
   $('eq-table').tBodies[0].innerHTML = rows.slice(0, 600).map((e) => {
     let badge = '';
     if (e.latex === null) {
@@ -134,17 +155,37 @@ function renderScan() {
     } else {
       badge = '<span class="badge native">Word</span>';
     }
-    return `<tr data-para="${e.para}"><td>${e.n + 1}</td><td class="muted">${esc(e.excerpt)}</td><td>${e.latex === null ? `<span class="muted">${esc(e.error)}</span>` : `<span class="tex">${esc(e.latex)}</span>`}</td><td>${badge}</td></tr>`;
+    const formula = e.latex === null ? `<span class="muted">${esc(e.error)}</span>` :
+      `<span class="scan-formula" data-equation="${e.n}"></span><details><summary>Mã LaTeX</summary><code class="tex">${esc(e.latex)}</code></details>`;
+    const jump = s.scope === 'all' && s.mapped && io.hasWord() ? `<button class="secondary scan-jump" data-para="${e.para}">Đến vị trí</button>` : '';
+    return `<tr><td>${e.n + 1}</td><td class="muted">${esc(e.excerpt)}${jump}</td><td>${formula}</td><td>${badge}</td></tr>`;
   }).join('') + (rows.length > 600 ? `<tr><td colspan="4" class="muted">… còn ${rows.length - 600} dòng</td></tr>` : '');
-  $('btn-convert').disabled = false;
+  document.querySelectorAll('.scan-formula').forEach(el => {
+    const tex = s.equations[Number(el.dataset.equation)].latex;
+    if (typeof katex !== 'undefined' && katex.render) {
+      try { katex.render(tex, el, { throwOnError: false, output: 'htmlAndMathml' }); } catch { el.textContent = tex; }
+    } else el.textContent = tex;
+  });
+  syncConversionPlan();
 }
 $('btn-scan').addEventListener('click', scan);
 $('only-bad').addEventListener('change', () => state.scanned && renderScan());
+$('scan-show-all').addEventListener('click', () => { $('only-bad').checked = false; if (state.scanned) renderScan(); });
 $('eq-table').addEventListener('click', (ev) => {
   if (conversionJob) return;
-  const tr = ev.target.closest('tr[data-para]');
-  if (tr && state.scanned && state.scanned.mapped && io.hasWord()) io.selectParagraph(Number(tr.dataset.para)).catch(() => {});
+  const button = ev.target.closest('button[data-para]');
+  if (button && state.scanned?.scope === 'all' && state.scanned.mapped && io.hasWord()) io.selectParagraph(Number(button.dataset.para)).catch(() => {});
 });
+
+document.querySelectorAll('input[name=scope]').forEach(el => el.addEventListener('change', () => {
+  state.scanned = null;
+  $('eq-table').tBodies[0].innerHTML = '';
+  $('scan-summary').textContent = '';
+  $('convert-summary').textContent = '';
+  $('btn-scan').textContent = el.value === 'all' ? 'Quét toàn bộ tài liệu' : 'Quét đoạn đang chọn';
+  syncConversionPlan();
+}));
+$('opt-backup').addEventListener('change', syncConversionPlan);
 
 // ---------------------------------------------------------------- convert
 const writeMode = () => ($('opt-mode').checked ? 'paragraph' : 'content');
@@ -177,6 +218,24 @@ function syncConvertUi() {
   $('conv-hint').textContent = CONV_HINTS[s === d ? `same:${s}` : `${s}:${d}`] || '';
   $('mt-settings-convert').hidden = d !== 'mathtype';
   $('opt-display').closest('label').hidden = d !== 'word';
+  syncConversionPlan();
+}
+function syncConversionPlan() {
+  const s = state.scanned;
+  if (!s && $('scan-filter-status')) {
+    $('scan-filter-status').textContent = '';
+    $('scan-empty').hidden = true;
+  }
+  const scope = document.querySelector('input[name=scope]:checked').value;
+  const src = convSrc(), dst = convDst();
+  const count = s?.scope === scope ? s.equations.filter(e => e.latex !== null &&
+    (e.kind === SRC_KIND[src] || (dst === 'mathtype' && e.kind === 'native'))).length : 0;
+  $('conversion-plan').textContent = s?.scope === scope
+    ? `Theo lần quét: ${count} công thức có thể chuyển · ${scope === 'all' ? 'toàn bộ tài liệu' : 'đoạn đang chọn'}. Sẽ đọc lại trước khi ghi.`
+    : 'Quét phạm vi đã chọn trước khi chuyển.';
+  $('btn-convert').disabled = !s || s.scope !== scope || !count || !$('opt-backup').checked;
+  $('btn-convert').textContent = count ? `Chuyển ${count} công thức` : 'Chuyển công thức';
+  $('backup-hint').hidden = $('opt-backup').checked;
 }
 $('conv-src').addEventListener('change', syncConvertUi);
 $('conv-dst').addEventListener('change', syncConvertUi);
@@ -356,6 +415,7 @@ async function convert() {
     $('btn-convert').hidden = false;
     $('btn-cancel-convert').hidden = true;
     $('btn-restore').disabled = !state.lastBackup;
+    syncConversionPlan();
     bar.hidden = true;
   }
 }
@@ -367,20 +427,36 @@ $('btn-restore').addEventListener('click', async () => {
     if (b.scope.kind === 'body') await io.writeBodySnapshot(b.pkg, b.paragraphCount);
     else await io.writeParagraphs(b.scope, b.items, b.mode, (d, t) => progress($('progress'), d, t));
     $('convert-summary').innerHTML = '<span class="ok">Đã khôi phục các đoạn gốc.</span>';
+    state.scanned = state.lastBackup = null;
+    $('eq-table').tBodies[0].innerHTML = '';
+    $('scan-summary').textContent = 'Đã khôi phục. Hãy quét lại trước khi chuyển tiếp.';
+    syncConversionPlan();
     $('btn-restore').disabled = true;
   } catch (e) { $('convert-summary').innerHTML = `<span class="bad">Không khôi phục được: ${esc(e.message)}</span>`; }
+  finally { $('progress').hidden = true; }
 });
 
 // ---------------------------------------------------------------- formula editor
 let visual = null;
 let previewTimer = 0;
+function syncEditorAction(mode = 'replace') {
+  $('editor-action-label').textContent = mode === 'update' ? 'Cập nhật công thức đang chọn' : mode === 'insert' ? 'Chèn công thức mới' : 'Thay vùng chọn bằng công thức';
+  $('editor-action-status').textContent = mode === 'update' ? 'Thay công thức được bôi chọn trong Word.' : mode === 'insert'
+    ? 'Chèn tại con trỏ. Muốn sửa công thức cũ, hãy bôi chọn công thức đó trong Word.'
+    : 'Nội dung đang chọn trong Word sẽ được thay bằng công thức này.';
+}
 function renderEditorPreview() {   // coalesce keystrokes: one KaTeX render per pause (longer on weak machines)
+  $('btn-apply-editor').disabled = true;
   clearTimeout(previewTimer);
   previewTimer = setTimeout(renderEditorPreviewNow, document.documentElement.classList.contains('lite') ? 220 : 60);
 }
 function renderEditorPreviewNow() {
   if (visual && visual.active()) visual.pull();
   const tex = $('editor-latex')?.value.trim() || '';
+  const issue = formulaIssue(tex);
+  $('btn-apply-editor').disabled = applying || !!issue;
+  $('editor-validation').textContent = tex ? issue : '';
+  $('editor-latex').setAttribute('aria-invalid', String(!!tex && !!issue));
   const previewEl = $('editor-preview');
   if (!previewEl) return;
   if (!tex) {
@@ -427,10 +503,11 @@ async function loadFormulaFromWord(showNotice = true, picked = null, isCurrent =
       const draft = $('editor-latex').value;
       const ctx = await io.readCursorContext();
       if (version !== selectionVersion || applying || !$('tab-editor')?.classList.contains('active') || $('editor-latex').value !== draft) return;
-      picked = pickEquation(ctx);
+      picked = { ...pickEquation(ctx), selectionEmpty: ctx.selectionEmpty };
     }
     if (!isCurrent()) return;
     const r = picked;
+    syncEditorAction(r.how === 'selection' && r.count === 1 ? 'update' : r.selectionEmpty === true ? 'insert' : 'replace');
     if (!r.eq) {
       if (r.errors && r.errors.length && r.found) throw new Error(`Công thức bị lỗi: ${r.errors[0]}`);
       if (statusEl) statusEl.innerHTML = showNotice
@@ -455,23 +532,27 @@ async function applyFormulaToWord() {
   if (applying) return;
   const tex = $('editor-latex')?.value.trim();
   const msgEl = $('editor-msg');
-  if (!tex) {
-    if (msgEl) msgEl.innerHTML = '<span class="bad">Vui lòng nhập mã LaTeX trước khi cập nhật.</span>';
+  const issue = formulaIssue(tex);
+  if (issue) {
+    $('editor-validation').textContent = issue;
+    if (visual?.active()) visual.focus(); else $('editor-latex').focus();
     return;
   }
   if (msgEl) msgEl.textContent = 'Đang chèn vào Word…';
   applying = true;
+  $('btn-apply-editor').disabled = true;
   ++selectionVersion;
   try {
     const isDisplay = $('editor-display')?.checked ?? false;
     const asMathType = document.querySelector('input[name=editor-format]:checked')?.value === 'mathtype';
     const pkg = asMathType ? await makeMathTypePackage(tex, { render: browserRender, inline: !isDisplay, ...(await mtOptions()) }) : makeEquationPackage(latexToOmml(tex, { display: isDisplay }));
     await io.replaceSelection(pkg);
-    if (msgEl) msgEl.innerHTML = `<span class="ok">Đã cập nhật công thức vào Word thành công (${asMathType ? 'đối tượng MathType' : 'chuẩn Word Equation'}).</span>`;
+    if (msgEl) msgEl.innerHTML = '<span class="ok">Đã ghi công thức vào vị trí đang chọn trong Word.</span>';
   } catch (e) {
     if (msgEl) msgEl.innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`;
   } finally {
     applying = false;
+    renderEditorPreview();
     onSelectionChanged();
   }
 }
@@ -503,7 +584,7 @@ $('btn-clear-editor')?.addEventListener('click', () => {
   $('editor-latex').value = '';
   renderEditorPreview();
   if ($('editor-msg')) $('editor-msg').textContent = '';
-  if ($('editor-status')) $('editor-status').textContent = 'Đặt con trỏ trong công thức rồi bấm “Lấy từ Word”, hoặc soạn mới bên dưới.';
+  if ($('editor-status')) $('editor-status').textContent = 'Đã xóa ô nhập, công thức trong Word vẫn giữ nguyên. Muốn chèn mới, bấm vào vị trí muốn chèn trong Word.';
 });
 $('btn-apply-editor')?.addEventListener('click', applyFormulaToWord);
 $('editor-latex')?.addEventListener('keydown', (ev) => {
@@ -568,7 +649,8 @@ async function refreshAutoSelection(version) {
   try {
     const ctx = await io.readCursorContext();
     if (version !== selectionVersion || !canAutoLoad()) return;
-    const r = pickEquation(ctx);
+    const r = { ...pickEquation(ctx), selectionEmpty: ctx.selectionEmpty };
+    syncEditorAction(r.how === 'selection' && r.count === 1 ? 'update' : r.selectionEmpty === true ? 'insert' : 'replace');
     if (!r.eq) return;
     const signature = JSON.stringify([r.eq.latex, r.eq.inline]);
     if (signature === lastAutoSig && $('editor-latex').value === r.eq.latex && $('editor-display')?.checked === !r.eq.inline) return;
@@ -616,6 +698,15 @@ function installSelectionWatcher() {
 // Returning to Word can precede its selection event; refresh after the click settles.
 window.addEventListener('blur', () => { if (Date.now() - lastReadAt > 600) onSelectionChanged(); });   // no extra read when the click just triggered one
 $('editor-auto')?.addEventListener('change', onSelectionChanged);
+document.addEventListener('texcraft:selection', () => {
+  if (state.scanned?.scope === 'selection' && !conversionJob) {
+    state.scanned = null;
+    $('eq-table').tBodies[0].innerHTML = '';
+    $('scan-summary').textContent = 'Vùng chọn đã thay đổi. Hãy quét lại trước khi chuyển.';
+    syncConversionPlan();
+  }
+  syncEditorAction();
+});
 
 // Ask Word to load the add-in at startup, so the ribbon buttons are there after a restart (needs a Word that supports it).
 function requestStartupLoad() {
@@ -672,14 +763,26 @@ function initEditor() {
   visual = createVisualEditor({ host: $('editor-visual'), textarea: $('editor-latex'), onChange: () => renderEditorPreview() });
   mountEditorToolbar($('editor-toolbar'), $('editor-latex'), { visual });
   const KEY_IN = 'texcraft-editor-input';
+  let inputVersion = 0;
   const setInput = async (mode, focus = true) => {
-    try { await visual.setActive(mode === 'visual', { focus }); } catch (e) { $('editor-msg').innerHTML = `<span class="bad">Không tải được ô nhập trực quan: ${esc(e.message)}</span>`; mode = 'latex'; await visual.setActive(false); }
+    const version = ++inputVersion;
+    try { await visual.setActive(mode === 'visual', { focus }); } catch (e) {
+      if (version !== inputVersion) return;
+      $('editor-msg').innerHTML = `<span class="bad">Không tải được ô nhập trực quan: ${esc(e.message)}</span>`;
+      mode = 'latex'; await visual.setActive(false);
+    }
+    if (version !== inputVersion) return;
     const r = document.querySelector(`input[name=editor-input][value=${mode}]`); if (r) r.checked = true;
+    const tip = $('editor-toolbar').querySelector('.tb-tip');
+    if (tip) tip.textContent = mode === 'visual'
+      ? 'Gõ trực tiếp vào ô công thức hoặc chọn ký hiệu bên trên. Dùng Tab để chuyển giữa các ô trống.'
+      : 'Bôi đen mã LaTeX rồi chọn ký hiệu để bao phần đã chọn. Dùng Tab để chuyển giữa các ô trống.';
+    $('editor-preview').hidden = $('editor-preview-label').hidden = mode === 'visual';
     try { localStorage.setItem(KEY_IN, mode); } catch { /* ignore */ }
     renderEditorPreview();
   };
   document.querySelectorAll('input[name=editor-input]').forEach((r) => r.addEventListener('change', () => setInput(r.value)));
-  let saved = 'latex'; try { saved = localStorage.getItem(KEY_IN) || 'latex'; } catch { /* ignore */ }
+  let saved = 'visual'; try { saved = localStorage.getItem(KEY_IN) || 'visual'; } catch { /* ignore */ }
   if (saved === 'visual') setInput('visual', false);
 }
 // Offline use: a service worker keeps the add-in for ~30 days (not on localhost, unless ?sw=1 for testing)

@@ -41,63 +41,84 @@
 </nav>
 
 <section id="tab-eq" class="active">
+  <details class="getting-started" id="getting-started" open>
+    <summary>Thầy cô muốn làm gì?</summary>
+    <div class="start-actions">
+      <button class="secondary" data-start-tab="editor">Thêm công thức</button>
+      <button class="secondary" data-start-tab="eq">Chuyển công thức có sẵn</button>
+      <button class="secondary" data-start-tab="exam">Soạn đề</button>
+      <button class="secondary" data-start-tab="figures">Vẽ hình</button>
+    </div>
+    <p class="hint">Chọn một việc để bắt đầu. Nếu cần đổi công thức trong tài liệu, quét phạm vi bên dưới.</p>
+  </details>
   <div class="notice">Add-in chỉ ghi vào tài liệu khi bạn bấm nút <b>Chuyển</b>. Hãy làm việc trên <b>bản sao</b>; dùng Hoàn tác (Ctrl/Cmd+Z) hoặc nút “Khôi phục” bên dưới khi cần.</div>
-  <fieldset><legend>1. Quét</legend>
-    <div class="btns"><button class="primary" id="btn-scan">Quét toàn bộ tài liệu</button></div>
+  <fieldset><legend>1. Chọn phạm vi &amp; quét</legend>
+    <div class="seg-row"><div class="seg"><label class="seg-opt"><input type="radio" name="scope" value="selection" checked><span>Đoạn đang chọn</span></label><label class="seg-opt"><input type="radio" name="scope" value="all"><span>Toàn bộ tài liệu</span></label></div></div>
+    <p class="hint">Quét và chuyển cùng phạm vi. Với đoạn đang chọn, xử lý cả đoạn chứa vùng chọn.</p>
+    <div class="btns"><button class="primary" id="btn-scan">Quét đoạn đang chọn</button></div>
     <div id="scan-summary" class="muted scan-summary"></div>
     <label class="switch"><input type="checkbox" id="only-bad"><span class="switch-track"></span><span>Chỉ hiện công thức không đọc được</span></label>
-    <div class="scroll"><table id="eq-table"><thead><tr><th>#</th><th>Đoạn</th><th>LaTeX</th><th></th></tr></thead><tbody></tbody></table></div>
+    <div id="scan-filter-status" class="hint" role="status"></div>
+    <div id="scan-empty" class="empty-state" hidden><p id="scan-empty-text"></p><button class="secondary" id="scan-show-all">Xem tất cả công thức</button></div>
+    <div class="scroll" tabindex="0" role="region" aria-label="Kết quả quét công thức"><table id="eq-table"><thead><tr><th>#</th><th>Đoạn</th><th>Công thức</th><th>Loại</th></tr></thead><tbody></tbody></table></div>
   </fieldset>
   <fieldset><legend>2. Chuyển công thức</legend>
     <div class="field"><label for="conv-src">Chuyển từ</label><select id="conv-src"><option value="mathtype" selected>MathType</option><option value="latex">LaTeX</option><option value="word">Công thức Word</option></select></div>
     <div class="field"><label for="conv-dst">Chuyển sang</label><select id="conv-dst"><option value="mathtype">MathType</option><option value="latex">LaTeX</option><option value="word" selected>Công thức Word</option></select></div>
     <div id="mt-settings-convert" class="mt-box"></div>
     <div class="hint" id="conv-hint"></div>
-    <div class="subhead">Phạm vi</div>
-    <div class="seg-row"><div class="seg"><label class="seg-opt"><input type="radio" name="scope" value="selection" checked><span>Đoạn đang chọn</span></label><label class="seg-opt"><input type="radio" name="scope" value="all"><span>Toàn bộ tài liệu</span></label></div></div>
-    <div class="subhead">Tuỳ chọn</div>
+    <details class="mt-details"><summary>Tùy chọn nâng cao</summary>
     <label><input type="checkbox" id="opt-display" checked> Đoạn chỉ có một công thức → công thức riêng dòng (căn giữa)</label>
-    <label><input type="checkbox" id="opt-mode"> Thay cả đoạn (mặc định: thay phần nội dung, giữ dấu ¶)</label>
+    <label><input type="checkbox" id="opt-mode"> Thay cả đoạn, bao gồm định dạng đoạn</label>
+    <p class="hint">Mặc định giữ dấu kết thúc đoạn và chỉ thay nội dung.</p>
+    </details>
+  </fieldset>
+  <div class="action-dock" aria-label="Chuyển đổi công thức">
+    <div id="conversion-plan" class="hint" role="status" aria-live="polite">Quét phạm vi đã chọn trước khi chuyển.</div>
     <label><input type="checkbox" id="opt-backup"> Tôi đã lưu một bản sao tài liệu</label>
+    <div id="backup-hint" class="hint">Lưu bản sao và đánh dấu xác nhận để bật nút chuyển.</div>
     <div class="btns two conversion-actions"><button class="primary" id="btn-convert" disabled>Chuyển</button><button class="secondary" id="btn-cancel-convert" hidden>Hủy bỏ</button><button class="secondary" id="btn-restore" disabled>Khôi phục</button></div>
     <progress id="progress" value="0" max="1" hidden></progress>
     <div id="convert-summary" role="status" aria-live="polite"></div>
-  </fieldset>
+  </div>
 </section>
 
 <section id="tab-editor">
   <fieldset class="editor-compact">
     <legend>Soạn &amp; sửa công thức</legend>
+    <details class="inline-help"><summary>Cách thêm và sửa công thức</summary><ol><li>Muốn thêm mới: bấm vào vị trí muốn chèn trong Word.</li><li>Muốn sửa: bôi chọn công thức trong Word rồi bấm “Lấy từ Word”.</li><li>Chọn mẫu bên dưới, điền các ô; dùng Tab để chuyển ô. Kiểm tra nút ở đáy trước khi ghi.</li></ol></details>
     <div class="row" style="margin-bottom:4px">
       <button class="secondary tb-action" id="btn-load-sel" title="Nạp công thức đang chọn trong Word vào ô LaTeX" style="flex:1 1 0"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M3 2l9 5-4 1.2L6.8 13z'/></svg><span>Lấy từ Word</span></button>
-      <button class="secondary tb-action" id="btn-clear-editor" title="Xóa trắng ô LaTeX" style="flex:1 1 0"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M9.5 2.5l4 4-6 6H4l-1.5-1.5a1 1 0 010-1.4z'/><path d='M6 6l4 4'/><path d='M7.5 12.5H14'/></svg><span>Xóa trắng</span></button>
+      <button class="secondary tb-action" id="btn-clear-editor" title="Chỉ xóa ô nhập; công thức trong Word vẫn giữ nguyên" style="flex:1 1 0"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M9.5 2.5l4 4-6 6H4l-1.5-1.5a1 1 0 010-1.4z'/><path d='M6 6l4 4'/><path d='M7.5 12.5H14'/></svg><span>Xóa ô nhập</span></button>
     </div>
     <label class="inline" style="margin-bottom:2px;font-size:12.5px"><input type="checkbox" id="editor-auto" checked> Tự nạp khi bấm vào công thức trong Word</label>
     <div id="editor-status" class="muted" style="margin-bottom:2px;font-size:11.5px">Đặt con trỏ trong công thức rồi bấm “Lấy từ Word”, hoặc soạn mới bên dưới.</div>
 
-    <div class="field-label">Xem trước</div>
+    <div class="field-label" id="editor-preview-label">Xem trước</div>
     <div id="editor-preview" class="formula-preview"></div>
 
     <div class="ed-input-head"><span class="field-label">Nhập công thức</span><div class="seg"><label class="seg-opt"><input type="radio" name="editor-input" value="latex" checked><span>LaTeX</span></label><label class="seg-opt"><input type="radio" name="editor-input" value="visual"><span>Trực quan</span></label></div></div>
     <div id="editor-visual" hidden></div>
-    <textarea id="editor-latex" rows="2" placeholder="Nhập mã LaTeX, vd. \frac{-b \pm \sqrt{\Delta}}{2a}, hoặc bấm các nút bên dưới"></textarea>
+    <textarea id="editor-latex" aria-label="Nhập mã LaTeX" rows="2" placeholder="Nhập mã LaTeX, vd. \frac{-b \pm \sqrt{\Delta}}{2a}, hoặc bấm các nút bên dưới"></textarea>
+    <div id="editor-validation" class="bad" role="status" aria-live="polite"></div>
 
     <div id="editor-toolbar" class="editor-toolbar"></div>
-
+    <details class="mt-details" id="mt-details" hidden><summary>Tùy chọn MathType (kiểu chữ, cỡ chữ, kiểu hiển thị)</summary><div id="mt-settings-editor" class="mt-box"></div></details>
+  </fieldset>
+  <div class="action-dock" aria-label="Chèn công thức">
+    <div id="editor-action-status" class="hint">Công thức sẽ được chèn tại con trỏ hoặc thay vùng đang chọn.</div>
     <div class="ed-opts">
       <label class="switch"><input type="checkbox" id="editor-display"><span class="switch-track"></span><span>Riêng dòng</span></label>
-      <div class="seg-row"><span class="seg-title">Ghi dạng</span><div class="seg">
+      <div class="seg-row"><span class="seg-title">Định dạng</span><div class="seg">
         <label class="seg-opt"><input type="radio" name="editor-format" value="word" checked><span>Word</span></label>
         <label class="seg-opt"><input type="radio" name="editor-format" value="mathtype"><span>MathType</span></label>
       </div></div>
     </div>
-    <details class="mt-details" id="mt-details" hidden><summary>Tùy chọn MathType (kiểu chữ, cỡ chữ, kiểu hiển thị)</summary><div id="mt-settings-editor" class="mt-box"></div></details>
-
     <div class="row">
-      <button class="primary" id="btn-apply-editor" style="flex:1"><svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d='M3 8.5l3.2 3.2L13 5'/></svg> Cập nhật / Chèn vào Word <kbd class="kbd" id="apply-kbd">Ctrl+Enter</kbd></button>
+      <button class="primary" id="btn-apply-editor" style="flex:1"><span id="editor-action-label">Chèn vào vùng chọn</span> <kbd class="kbd" id="apply-kbd">Ctrl+Enter</kbd></button>
     </div>
     <div id="editor-msg" style="margin-top:6px"></div>
-  </fieldset>
+  </div>
 </section>
 
 <section id="tab-figures">

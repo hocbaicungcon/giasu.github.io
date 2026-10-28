@@ -140,7 +140,7 @@ export function mountEditorToolbar(root, field, { visual = null } = {}) {
   root.innerHTML = `
     <div class="tb-search"><svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L14 14"/></svg><input type="search" id="tb-q" placeholder="Tìm ký hiệu: phân số, tích phân, vuông góc…" autocomplete="off"></div>
     <div class="tb-recent" id="tb-recent" hidden><span class="tb-recent-label">Gần đây</span><div class="tb-grid" id="tb-recent-grid"></div></div>
-    <div class="tb-tabs" role="tablist">${GROUPS.map((g) => `<button type="button" role="tab" class="tb-tab" data-g="${g.id}" title="${esc(g.label)}"><span class="tb-tab-icon">${face(g.icon)}</span><span class="tb-tab-label">${esc(g.label)}</span></button>`).join('')}</div>
+    <div class="tb-tabs"><label class="field"><span>Nhóm ký hiệu</span><select id="tb-group">${GROUPS.map((g) => `<option value="${g.id}">${esc(g.id === 'struct' ? 'Phân số, căn, số mũ & ngoặc' : g.label)}</option>`).join('')}</select></label></div>
     <div class="tb-grid" id="tb-grid"></div>
     <div class="tb-tip">Bôi đen chữ trong ô LaTeX rồi bấm nút để bao chữ đó vào (ví dụ bôi <code>x+1</code> rồi bấm √). Tab nhảy giữa các ô trống.</div>`;
 
@@ -154,10 +154,11 @@ export function mountEditorToolbar(root, field, { visual = null } = {}) {
   };
   const showGroup = (id) => {
     active = id;
+    root.querySelector('#tb-group').value = id;
     root.querySelectorAll('.tb-tab').forEach((t) => t.classList.toggle('active', t.dataset.g === id));
     renderGrid(GROUPS.find((g) => g.id === id).items);
   };
-  root.querySelector('.tb-tabs').addEventListener('click', (ev) => { const t = ev.target.closest('.tb-tab'); if (t) { root.querySelector('#tb-q').value = ''; showGroup(t.dataset.g); } });
+  root.querySelector('#tb-group').addEventListener('change', ev => { root.querySelector('#tb-q').value = ''; showGroup(ev.target.value); });
   root.querySelector('#tb-q').addEventListener('input', (ev) => {
     const q = strip(ev.target.value.trim());
     if (!q) { showGroup(active); return; }

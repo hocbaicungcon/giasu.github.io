@@ -19,9 +19,10 @@ export function mountFigures(root, io) {
   const kinds = [['bbt', 'Bảng biến thiên'], ['plot', 'Đồ thị'], ['region', 'Miền nghiệm'], ['geo', 'Hình học'], ['chem', 'Hóa học'], ['phys', 'Vật lí'], ['bio', 'Sinh học']];
   const CATALOGS = { geo: GEOMETRY, chem: CHEMISTRY, phys: PHYSICS, bio: BIOLOGY };
   root.innerHTML = `
+    <details class="inline-help"><summary>Cách vẽ và chèn hình</summary><p>Chọn loại hình, chọn mẫu hoặc nhập dữ liệu, rồi xem hình bên dưới. Bấm vào vị trí muốn chèn trong Word trước khi bấm “Chèn vào Word”.</p></details>
     <div class="grid2 fig-kind-row"><label class="field fig-kind"><span>Loại hình</span><select id="fig-kind">${kinds.map(([id, l]) => `<option value="${id}">${l}</option>`).join('')}</select></label><div id="fig-sub"></div></div>
     <div id="fig-form"></div>
-    <div id="fig-error" class="bad"></div>
+    <div id="fig-error" class="bad" role="status" aria-live="polite"></div>
     <div class="fig-preview" id="fig-preview"></div>
     <div class="hint" id="fig-note"></div>
     <div class="grid2 fig-opts">
@@ -34,7 +35,7 @@ export function mountFigures(root, io) {
   const $ = (id) => root.querySelector('#' + id);
   mountMtSettings($('fig-size'), { fontRow: false, onChange: () => schedule() });
   let fontPt = 12;
-  let kind = 'bbt', current = null, timer = null;
+  let kind = 'bbt', current = null, timer = null, renderVersion = 0;
 
   const forms = {
     bbt: () => `<label class="field sub-field"><span>Cách lập</span><select id="b-mode"><option value="auto">Tự động vẽ</option><option value="manual">Tự nhập</option></select></label>
@@ -120,12 +121,27 @@ export function mountFigures(root, io) {
     return g.make(o);
   }
   async function render() {
+    const version = ++renderVersion;
+    current = null;
+    ['fig-insert', 'fig-png', 'fig-dl-png', 'fig-dl-svg'].forEach(id => { $(id).disabled = true; });
     $('fig-error').textContent = '';
     if (kind === 'bbt') fontPt = await figurePt();
-    try { current = build(); $('fig-preview').innerHTML = current.svg; $('fig-note').textContent = current.note || ''; } catch (e) { current = null; $('fig-note').textContent = ''; $('fig-error').textContent = e.message; }
+    if (version !== renderVersion) return;
+    try { current = build(); $('fig-preview').innerHTML = current.svg; $('fig-note').textContent = current.note || ''; } catch (e) {
+      current = null;
+      $('fig-note').textContent = '';
+      $('fig-preview').innerHTML = '<p class="muted">Chưa có hình hợp lệ. Sửa dữ liệu bên trên để xem hình mới.</p>';
+      $('fig-error').textContent = `${e.message}. Thầy cô hãy kiểm tra dữ liệu vừa nhập${kind === 'bbt' ? ', ví dụ: x² - 3x + 1' : ''}.`;
+    }
     ['fig-insert', 'fig-png', 'fig-dl-png', 'fig-dl-svg'].forEach((id) => { $(id).disabled = !current; });
   }
-  function schedule() { clearTimeout(timer); timer = setTimeout(render, 250); }
+  function schedule() {
+    ++renderVersion;
+    current = null;
+    ['fig-insert', 'fig-png', 'fig-dl-png', 'fig-dl-svg'].forEach(id => { $(id).disabled = true; });
+    $('fig-preview').innerHTML = '<p class="muted">Đang cập nhật hình theo dữ liệu vừa nhập…</p>';
+    clearTimeout(timer); timer = setTimeout(render, 250);
+  }
 
   function show(k) {
     kind = k;

@@ -637,6 +637,49 @@ section { max-width: 780px; margin-left: auto; margin-right: auto; }
 #tab-eq #btn-scan { min-height: 36px; }
 #btn-cancel-convert { color: var(--bad); border-color: var(--bad); }
 #btn-cancel-convert:hover:not(:disabled) { color: var(--bad); border-color: var(--bad); background: var(--code); }
+.action-dock {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  padding: 8px 12px max(8px, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+  box-shadow: 0 -3px 12px rgba(0, 0, 0, .06);
+  max-height: 45vh;
+  overflow-y: auto;
+}
+#tab-eq, #tab-editor { padding-bottom: 230px; }
+.action-dock .hint { margin: 2px 0; }
+.action-dock .btns { margin: 6px 0 0; }
+.action-dock .ed-opts { margin: 4px 0; }
+.action-dock [role=status]:not(:empty) { margin-top: 4px; }
+#editor-msg, #convert-summary { max-height: 70px; overflow: auto; }
+#tab-eq .scroll { max-height: min(240px, 30vh); }
+.scan-formula { display: block; max-width: 100%; overflow: auto; padding: 4px 0; }
+#eq-table details { margin-top: 3px; }
+#eq-table code { overflow-wrap: anywhere; white-space: normal; }
+.scan-jump { display: block; margin-top: 4px; }
+.getting-started, .inline-help { border: 1px solid var(--line); border-radius: 8px; padding: 8px; margin: 0 0 10px; background: var(--card-bg); }
+.getting-started summary, .inline-help summary { cursor: pointer; font-weight: 600; }
+.inline-help p, .inline-help ol { margin: 8px 0; }
+.inline-help ol { padding-left: 20px; }
+.start-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-top: 8px; }
+.start-actions button { white-space: normal; min-height: 42px; }
+.empty-state { padding: 10px; background: var(--code); border-radius: 8px; margin-bottom: 6px; }
+.empty-state p { margin: 0 0 8px; }
+.editor-toolbar .tb-tabs { display: block; overflow: visible; }
+.editor-toolbar .tb-tabs .field { margin: 2px 0 6px; }
+#editor-validation:empty { display: none; }
+#editor-validation { margin: 6px 0; line-height: 1.5; }
+.answer-check { padding: 12px; border: 2px solid var(--warn); border-radius: 8px; background: var(--card-bg); margin: 10px 0; scroll-margin-top: 50px; }
+.exam-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; margin: 10px 0; }
+.exam-tabs button[aria-pressed=true], .exam-tabs button[aria-pressed=true]:hover { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
+@media (min-width: 600px) { .exam-tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .row > button { flex: 1 1 124px; }
 .orig-row input[type=text] { flex: 0 0 72px; }
 @media (max-width: 340px) { .grid3 { grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); } .btns.two { grid-template-columns: repeat(auto-fit, minmax(124px, 1fr)); } }
