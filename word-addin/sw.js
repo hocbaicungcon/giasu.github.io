@@ -1,6 +1,6 @@
 // Service worker: keeps the add-in (pages, scripts, icons, KaTeX, QR libraries) and the big CDN files it needs
 // (Office.js, Pyodide/SymPy) for about 30 days, so it opens without a network. Generated into sw.js by tools/build-sw.mjs.
-const VERSION = '725dc26067';
+const VERSION = '789024b24e';
 const CACHE = 'texcraft-app-' + VERSION, RUNTIME = 'texcraft-runtime', META = 'texcraft-meta';
 const MAX_AGE = 30 * 24 * 3600 * 1000;
 const FILES = [
@@ -18,6 +18,7 @@ const FILES = [
  "./src/latex-suggest.js",
  "./src/latex2omml.js",
  "./src/lms.js",
+ "./src/markdown.js",
  "./src/mathrender.js",
  "./src/mathtype-object.js",
  "./src/mathtype-template.js",

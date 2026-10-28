@@ -1,3 +1,4 @@
+import { convertMarkdownInPackage } from '../src/markdown.js';
 import './polyfills.js';
 import { mountMtSettings, mtOptions, mtConvertOptions, classicLayout } from './mt-settings.js';
 import * as io from '../src/word-io.js';
@@ -114,6 +115,7 @@ async function scan() {
     await new Promise(resolve => setTimeout(resolve, 0));
     const parseStart = Date.now();
     const scanned = scanBody(pkg);
+    scanned.markdownBlocks = convertMarkdownInPackage(pkg, { countOnly: true }).markdownBlocks;
     scanned.timing = { readMs, parseMs: Date.now() - parseStart };
     scanned.mapped = scanned.paragraphTotal === paragraphCount;
     scanned.paragraphCount = paragraphCount;
@@ -199,6 +201,8 @@ const convSrc = () => $('conv-src')?.value || 'mathtype';
 const convDst = () => $('conv-dst')?.value || 'word';
 const SRC_KIND = { mathtype: 'mathtype', latex: 'latex', word: 'native' };
 const CONV_HINTS = {
+  'markdown:word': 'Nên bôi chọn phần Markdown vừa dán. Chuyển thành tiêu đề, chữ đậm/nghiêng, danh sách, bảng Word và công thức Word. Khối mã giữ nguyên dạng mã; ảnh và công thức Word có sẵn được giữ lại.',
+  'markdown:mathtype': 'Nên bôi chọn phần Markdown vừa dán. Chuyển thành định dạng Word và công thức LaTeX thành MathType. Các công thức Word có sẵn trong phạm vi cũng chuyển sang MathType.',
   'same:mathtype': 'MathType → MathType: làm lại các công thức MathType (và công thức Word) trong phạm vi đã chọn theo kiểu chữ và cỡ chữ ở trên.',
   'same:latex': 'Nguồn và đích đều là LaTeX: không có gì để chuyển.',
   'same:word': 'Nguồn và đích đều là công thức Word: không có gì để chuyển.',
@@ -208,7 +212,7 @@ const CONV_HINTS = {
   'word:mathtype': 'Công thức Word được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem; sửa bằng MathType khi có).',
 };
 // valid targets for each source: LaTeX -> Word/MathType, Word -> LaTeX/MathType, MathType -> anything
-const DST_FOR = { latex: ['mathtype', 'word'], word: ['mathtype', 'latex'], mathtype: ['mathtype', 'latex', 'word'] };
+const DST_FOR = { markdown: ['mathtype', 'word'], latex: ['mathtype', 'word'], word: ['mathtype', 'latex'], mathtype: ['mathtype', 'latex', 'word'] };
 function syncConvertUi() {
   const ok = DST_FOR[convSrc()] || [];
   const dstEl = $('conv-dst');
@@ -217,7 +221,7 @@ function syncConvertUi() {
   const s = convSrc(), d = convDst();
   $('conv-hint').textContent = CONV_HINTS[s === d ? `same:${s}` : `${s}:${d}`] || '';
   $('mt-settings-convert').hidden = d !== 'mathtype';
-  $('opt-display').closest('label').hidden = d !== 'word';
+  $('opt-display').closest('label').hidden = d !== 'word' || s === 'markdown';
   syncConversionPlan();
 }
 function syncConversionPlan() {
@@ -228,13 +232,13 @@ function syncConversionPlan() {
   }
   const scope = document.querySelector('input[name=scope]:checked').value;
   const src = convSrc(), dst = convDst();
-  const count = s?.scope === scope ? s.equations.filter(e => e.latex !== null &&
-    (e.kind === SRC_KIND[src] || (dst === 'mathtype' && e.kind === 'native'))).length : 0;
+  const count = s?.scope === scope ? (src === 'markdown' ? s.markdownBlocks : s.equations.filter(e => e.latex !== null &&
+    (e.kind === SRC_KIND[src] || (dst === 'mathtype' && e.kind === 'native'))).length) : 0;
   $('conversion-plan').textContent = s?.scope === scope
-    ? `Theo lần quét: ${count} công thức có thể chuyển · ${scope === 'all' ? 'toàn bộ tài liệu' : 'đoạn đang chọn'}. Sẽ đọc lại trước khi ghi.`
+    ? `Theo lần quét: ${count} ${src === 'markdown' ? 'đoạn Markdown' : 'công thức có thể chuyển'} · ${scope === 'all' ? 'toàn bộ tài liệu' : 'đoạn đang chọn'}. Sẽ đọc lại trước khi ghi.`
     : 'Quét phạm vi đã chọn trước khi chuyển.';
   $('btn-convert').disabled = !s || s.scope !== scope || !count || !$('opt-backup').checked;
-  $('btn-convert').textContent = count ? `Chuyển ${count} công thức` : 'Chuyển công thức';
+  $('btn-convert').textContent = count ? `Chuyển ${count} ${src === 'markdown' ? 'đoạn Markdown' : 'công thức'}` : 'Chuyển công thức';
   $('backup-hint').hidden = $('opt-backup').checked;
 }
 $('conv-src').addEventListener('change', syncConvertUi);
@@ -286,9 +290,9 @@ async function convert() {
   let phase = 'đọc tài liệu';
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
-    if (scopeName === 'all') {
+    if (scopeName === 'all' || src === 'markdown') {
       const readStart = Date.now();
-      const original = await io.readBody();
+      const original = await (scopeName === 'selection' ? io.readSelection({ wholeParagraphs: true }) : io.readBody());
       const readMs = Date.now() - readStart;
       await checkpoint();
       const convertStart = Date.now();
@@ -297,10 +301,12 @@ async function convert() {
       progress(bar, 1, 3);
       await new Promise(resolve => setTimeout(resolve, 0));
       let result;
+      const markdown = src === 'markdown' ? convertMarkdownInPackage(original.pkg) : null;
+      const inputPkg = markdown?.pkg || original.pkg;
       if (dst === 'mathtype') {
         const options = { ...mtConvertOptions(), defaultSize: (await mtOptions()).size };
         await checkpoint();
-        const a = convertMathTypeInPackage(original.pkg, { convertMathType: normalize, convertLatex: src === 'latex', display: false });
+        const a = convertMathTypeInPackage(inputPkg, { convertMathType: normalize, convertLatex: src === 'latex', display: false });
         const b = await convertNativeToMathType(a.pkg, { render: browserRender, ...options, signal,
           onProgress: (done, total) => {
             progress(bar, done, total);
@@ -308,10 +314,16 @@ async function convert() {
           } });
         result = { ...b, pkg: b.changed ? b.pkg : a.pkg, changed: a.changed || b.changed,
           converted: b.changed ? b.converted : a.converted, kept: [...a.kept, ...b.kept] };
+      } else if (markdown) {
+        result = markdown;
       } else if (dst === 'latex') {
         result = convertEquationsToLatexText(original.pkg, { fromMathType: src === 'mathtype', fromNative: src === 'word' });
       } else {
         result = convertMathTypeInPackage(original.pkg, { convertMathType: src === 'mathtype', convertLatex: src === 'latex', display: $('opt-display').checked });
+      }
+      if (markdown && dst === 'mathtype') {
+        result.changed ||= markdown.changed;
+        result.kept.push(...markdown.kept);
       }
       const reasons = {};
       const convertMs = Date.now() - convertStart;
@@ -323,17 +335,18 @@ async function convert() {
       }
       await checkpoint();
       phase = 'ghi công thức vào Word';
-      $('convert-summary').textContent = `Đang ghi ${result.converted} công thức vào Word…`;
+      $('convert-summary').textContent = `Đang ghi ${markdown ? 'văn bản và ' : ''}${result.converted} công thức vào Word…`;
       progress(bar, 2, 3);
       const writeStart = Date.now();
-      const res = await io.writeBodySnapshot(result.pkg, original.paragraphCount);
+      const res = await (scopeName === 'selection' ? io.writeSelectionSnapshot(result.pkg, original.paragraphCount) : io.writeBodySnapshot(result.pkg, original.paragraphCount));
       const writeMs = Date.now() - writeStart;
-      afterWrite(res, { scope: { kind: 'body' }, pkg: original.pkg, paragraphCount: original.paragraphCount });
+      afterWrite(res, { scope: { kind: scopeName === 'selection' ? 'markdown-selection' : 'body' }, pkg: original.pkg, paragraphCount: original.paragraphCount });
+      if (scopeName === 'selection') { state.lastBackup = null; $('btn-restore').disabled = true; }
       progress(bar, 3, 3);
-      $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${result.converted}</b> công thức; giữ nguyên ${result.kept.length}.</p>` +
+      $('convert-summary').innerHTML = `<p>${markdown ? `Đã định dạng ${markdown.markdownBlocks} đoạn Markdown; ` : ''}<b class="ok">Đã chuyển ${result.converted}</b> công thức; giữ nguyên ${result.kept.length}.</p>` +
         `<p>Đọc ${(readMs / 1000).toFixed(1)} giây · chuyển ${(convertMs / 1000).toFixed(1)} giây · ghi ${(writeMs / 1000).toFixed(1)} giây.</p>` +
         (reasonList ? `<ul>${reasonList}</ul>` : '') +
-        (res.before !== res.after ? '<p class="warn">Số đoạn đã thay đổi. Hãy kiểm tra bố cục; dùng Hoàn tác hoặc mở lại bản sao nếu cần.</p>' : '');
+        (scopeName === 'selection' ? '<p>Có thể dùng Hoàn tác (Ctrl/Cmd+Z) để khôi phục phần đã chọn.</p>' : res.before !== res.after ? '<p class="warn">Số đoạn đã thay đổi. Hãy kiểm tra bố cục; dùng Hoàn tác hoặc mở lại bản sao nếu cần.</p>' : '');
       return;
     }
     $('convert-summary').textContent = 'Đang đọc các đoạn…';

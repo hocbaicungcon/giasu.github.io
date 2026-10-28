@@ -330,3 +330,15 @@ export async function openAsNewDocument(pkg, { footerPkg = null } = {}) {
     await context.sync();
   });
 }
+
+/** Replace the same whole-paragraph selection exported for Markdown conversion. */
+export async function writeSelectionSnapshot(pkg, before) {
+  return run(async context => {
+    const paragraphs = context.document.getSelection().paragraphs;
+    const range = paragraphs.getFirst().getRange('Whole').expandTo(paragraphs.getLast().getRange('Whole'));
+    range.insertOoxml(pkg, 'Replace');
+    await context.sync();
+    // Markdown can add/remove paragraphs; its selection backup is handled by Word Undo.
+    return { before, after: null };
+  });
+}
