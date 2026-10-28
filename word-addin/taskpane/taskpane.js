@@ -286,7 +286,7 @@ async function convert() {
   let phase = 'đọc tài liệu';
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
-    if (scopeName === 'all' && (dst !== 'word' || !$('opt-display').checked)) {
+    if (scopeName === 'all') {
       const readStart = Date.now();
       const original = await io.readBody();
       const readMs = Date.now() - readStart;
@@ -311,7 +311,7 @@ async function convert() {
       } else if (dst === 'latex') {
         result = convertEquationsToLatexText(original.pkg, { fromMathType: src === 'mathtype', fromNative: src === 'word' });
       } else {
-        result = convertMathTypeInPackage(original.pkg, { convertMathType: src === 'mathtype', convertLatex: src === 'latex' });
+        result = convertMathTypeInPackage(original.pkg, { convertMathType: src === 'mathtype', convertLatex: src === 'latex', display: $('opt-display').checked });
       }
       const reasons = {};
       const convertMs = Date.now() - convertStart;

@@ -360,14 +360,36 @@ export function convertLatexInPara(paraXml, options = {}) {
   return { xml: `${open}${newChildren.join('')}</w:p>`, converted: convertedTotal };
 }
 
+// Track leaf paragraphs: text boxes can contain paragraphs inside a drawing run.
+// A non-greedy paragraph regex would cut the outer paragraph at the inner closing tag.
+function leafParagraphs(doc) {
+  const stack = [], spans = [];
+  const tags = /<w:p\b[^>]*>|<\/w:p>/g;
+  let m;
+  while ((m = tags.exec(doc))) {
+    if (m[0] === '</w:p>') {
+      const p = stack.pop();
+      if (p && !p.nested) spans.push({ start: p.start, end: tags.lastIndex });
+    } else {
+      if (stack.length) stack[stack.length - 1].nested = true;
+      if (!m[0].endsWith('/>')) stack.push({ start: m.index, nested: false });
+    }
+  }
+  return spans;
+}
+
 export function convertLatexInDoc(doc, options = {}) {
   let converted = 0;
-  const newDoc = doc.replace(/<w:p\b[\s\S]*?<\/w:p>/g, (pXml) => {
-    const res = convertLatexInPara(pXml, options);
+  const chunks = [];
+  let cursor = 0;
+  for (const p of leafParagraphs(doc)) {
+    const res = convertLatexInPara(doc.slice(p.start, p.end), options);
+    chunks.push(doc.slice(cursor, p.start), res.xml);
+    cursor = p.end;
     converted += res.converted;
-    return res.xml;
-  });
-  return { doc: newDoc, converted };
+  }
+  chunks.push(doc.slice(cursor));
+  return { doc: chunks.join(''), converted };
 }
 
 function paragraphIsEquationOnly(doc, objects) {
@@ -405,7 +427,18 @@ export function convertMathTypeInPackage(pkg, options = {}) {
 
   if (convertMt) {
     const targets = equations.map((eq, idx) => ({ eq, idx })).filter(({ eq }) => eq.kind === 'mathtype');
-    const mathObjects = targets.length;
+    const displayPositions = new Set();
+    if (options.display) {
+      let i = 0;
+      for (const p of leafParagraphs(doc)) {
+        while (i < targets.length && targets[i].eq.pos < p.start) i++;
+        const first = i;
+        while (i < targets.length && targets[i].eq.pos < p.end) i++;
+        if (i - first === 1 && paragraphIsEquationOnly(doc.slice(p.start, p.end), 1)) {
+          displayPositions.add(targets[first].eq.pos);
+        }
+      }
+    }
     const removedRel = new Set();
     const edits = [];
     for (const { eq, idx } of targets) {
@@ -413,7 +446,7 @@ export function convertMathTypeInPackage(pkg, options = {}) {
       if (eq.latex === null) { result.kept.push({ reason: eq.error }); continue; }
       let omml;
       try {
-        const display = Boolean(options.display) && paragraphIsEquationOnly(doc, mathObjects);
+        const display = displayPositions.has(eq.pos);
         omml = latexToOmml(eq.latex, { display });
       } catch (e) { result.kept.push({ reason: 'LaTeX→OMML: ' + e.message, latex: eq.latex }); continue; }
       const run = eq.obj.run;
