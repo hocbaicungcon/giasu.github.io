@@ -14,7 +14,7 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
   function build(){
     dialog=el('dialog','ed-overlay');dialog.setAttribute('aria-label','Chỉnh sửa bài đã chấm');
     const stage=el('div','ed-stage'),canvas=el('canvas','ed-image');stage.append(canvas);
-    const top=el('header','ed-top'),cancel=el('button','ed-btn','✕ Hủy'),title=el('b','ed-title','Chỉnh sửa bài đã chấm'),save=el('button','ed-btn ed-primary','Lưu');
+    const top=el('div','ed-top'),cancel=el('button','ed-btn','✕ Hủy'),title=el('b','ed-title','Chỉnh sửa bài đã chấm'),save=el('button','ed-btn ed-primary','Lưu');
     cancel.type=save.type='button';top.append(cancel,title,save);
     const panel=el('section','ed-panel');
     const head=el('div','ed-head'),sbdLabel=el('label','ed-field','Số báo danh'),sbd=el('input');sbd.type='text';sbd.inputMode='numeric';sbd.maxLength=8;sbd.placeholder='Chưa đọc';sbdLabel.append(sbd);
@@ -27,7 +27,7 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
     const body=el('div','ed-body');
     panel.append(head,note,body);
     const showBtn=el('button','ed-btn ed-show','Hiện bảng');showBtn.type='button';showBtn.hidden=true;
-    const bar=el('footer','ed-bar');
+    const bar=el('div','ed-bar');
     const alphaWrap=el('label','ed-alpha','Độ đục'),alpha=el('input');alpha.type='range';alpha.min=MIN_ALPHA;alpha.max=MAX_ALPHA;alpha.step=1;alpha.setAttribute('aria-label','Độ đục của bảng');
     const alphaValue=el('output','','75%');alphaWrap.append(alpha,alphaValue);
     const mk=(text,label)=>{const b=el('button','ed-btn ed-tool',text);b.type='button';b.setAttribute('aria-label',label);b.title=label;return b;};

@@ -1,6 +1,6 @@
 /* credit: giasu.ai.vn */
-import {sorting,compareItems} from './sort.js?v=2d52887e7b52';
-import {matchesSubject} from './subject-groups.js?v=2d52887e7b52';
+import {sorting,compareItems} from './sort.js?v=e35dce0e4a6f';
+import {matchesSubject} from './subject-groups.js?v=e35dce0e4a6f';
 
 (async()=>{
   const $=s=>document.querySelector(s), cards=[...document.querySelectorAll('.card')];

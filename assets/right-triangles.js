@@ -1,5 +1,5 @@
-import {rightTriangle} from './right-triangles-model.js?v=2d52887e7b52';
-import {GeometryScene} from './geometry-interaction.js?v=2d52887e7b52';
+import {rightTriangle} from './right-triangles-model.js?v=e35dce0e4a6f';
+import {GeometryScene} from './geometry-interaction.js?v=e35dce0e4a6f';
 document.querySelectorAll('[data-geometry="right-triangles"]').forEach(lab=>{
  const svg=lab.querySelector('svg'),a=lab.querySelector('[data-leg="a"]'),b=lab.querySelector('[data-leg="b"]'),overlay=lab.querySelector('[data-overlay]'),criterion=lab.querySelector('[data-criterion]'),status=lab.querySelector('[role="status"]'),narrow=matchMedia('(max-width:620px)');
  let origin=[65,260];
