@@ -364,7 +364,7 @@ function deleteCurrentRecord() {
 }
 $('deleteCurrentRecord').onclick = deleteCurrentRecord;
 const editOverlay = window.ChamTNEditOverlay.create({
-  G, assess, format, getRecord: current, counts: () => [count(0), count(1), count(2)], examCodes: () => exams.map(exam => exam.code),
+  G, OMR, assess, format, getRecord: current, counts: () => [count(0), count(1), count(2)], examCodes: () => exams.map(exam => exam.code),
   onCommit(record, draft) {
     if (!records.includes(record)) return;
     if (!record.omrOriginal) record.omrOriginal = { answers: JSON.parse(JSON.stringify(record.answers)), flags: JSON.parse(JSON.stringify(record.flags)), studentId: record.studentId || '', keyCode: record.keyCode || '' };

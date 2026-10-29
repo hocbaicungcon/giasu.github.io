@@ -223,21 +223,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://giasu.ai.vn/_h_dark.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://giasu.ai.vn/_h_light.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://giasu.ai.vn/_harness.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://giasu.ai.vn/bai-viet/1-so-dien-bang-bao-nhieu-kwh-cach-tinh-va-doc-cong-to-dien.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>

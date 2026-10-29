@@ -8,12 +8,12 @@ function storedAlpha(){try{const v=Number(localStorage.getItem(ALPHA_KEY));retur
 function saveAlpha(v){try{localStorage.setItem(ALPHA_KEY,String(v));}catch(_){}}
 
 // Chỉnh sửa trên bản nháp: assess/grade dùng lại logic chấm của trang, không chạy lại OMR.
-function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
+function create({G,OMR,getRecord,assess,format,counts,examCodes,onCommit}){
   let dialog=null,draft=null,original=null,controller=null,dirty=false,cells=[],refs={},view={s:1,x:0,y:0,base:1},returnFocus=null;
 
   function build(){
     dialog=el('dialog','ed-overlay');dialog.setAttribute('aria-label','Chỉnh sửa bài đã chấm');
-    const stage=el('div','ed-stage'),canvas=el('canvas','ed-image');stage.append(canvas);
+    const stage=el('div','ed-stage'),world=el('div','ed-world'),canvas=el('canvas','ed-image'),layer=el('div','ed-layer');world.append(canvas,layer);stage.append(world);
     const top=el('div','ed-top'),cancel=el('button','ed-btn','✕ Hủy'),title=el('b','ed-title','Chỉnh sửa bài đã chấm'),save=el('button','ed-btn ed-primary','Lưu');
     cancel.type=save.type='button';top.append(cancel,title,save);
     const panel=el('section','ed-panel');
@@ -27,6 +27,9 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
     const body=el('div','ed-body');
     panel.append(head,note,body);
     const showBtn=el('button','ed-btn ed-show','Hiện bảng');showBtn.type='button';showBtn.hidden=true;
+    const popup=el('div','ed-popup'),pop=el('div','ed-pop'),popHead=el('div','ed-pophead'),popTitle=el('b'),popClose=el('button','ed-btn ed-tool','✕'),popBody=el('div','ed-popcontent');
+    popClose.type='button';popClose.setAttribute('aria-label','Đóng');popHead.append(popTitle,popClose);pop.append(popHead,popBody);popup.append(pop);popup.hidden=true;
+    popClose.onclick=()=>closeQuestion();popup.addEventListener('click',e=>{if(e.target===popup)closeQuestion();});
     const bar=el('div','ed-bar');
     const alphaWrap=el('label','ed-alpha','Độ đục'),alpha=el('input');alpha.type='range';alpha.min=MIN_ALPHA;alpha.max=MAX_ALPHA;alpha.step=1;alpha.setAttribute('aria-label','Độ đục của bảng');
     const alphaValue=el('output','','75%');alphaWrap.append(alpha,alphaValue);
@@ -34,17 +37,16 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
     const zoomOut=mk('−','Thu nhỏ ảnh'),zoomIn=mk('+','Phóng to ảnh'),reset=mk('⟲','Đặt lại vị trí và tỷ lệ ảnh'),toggle=mk('Ẩn bảng','Ẩn hoặc hiện bảng chỉnh sửa');
     toggle.classList.add('ed-wide');
     bar.append(alphaWrap,zoomOut,zoomIn,reset,toggle);
-    dialog.append(stage,top,panel,showBtn,bar);
+    dialog.append(stage,top,panel,showBtn,bar,popup);
     document.body.append(dialog);
-    refs={stage,canvas,cancel,save,panel,sbd,code,codeLabel,paperName,detectedCode,total,totalLabel,parts,note,body,showBtn,alpha,alphaValue,zoomOut,zoomIn,reset,toggle};
+    refs={popup,popTitle,popBody,stage,world,layer,canvas,cancel,save,panel,sbd,code,codeLabel,paperName,detectedCode,total,totalLabel,parts,note,body,showBtn,alpha,alphaValue,zoomOut,zoomIn,reset,toggle};
   }
 
   // ---- ảnh nền: zoom / pan ----
-  function applyView(){refs.canvas.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.s})`;}
+  function applyView(){refs.world.style.transform=`translate(${view.x}px,${view.y}px) scale(${view.base*view.s})`;}
   function fit(){
     const {stage,canvas}=refs,w=stage.clientWidth,h=stage.clientHeight;if(!w||!h||!canvas.width)return;
     view.base=Math.min(w/canvas.width,h/canvas.height);
-    canvas.style.width=canvas.width*view.base+'px';canvas.style.height=canvas.height*view.base+'px';
     view.s=1;view.x=(w-canvas.width*view.base)/2;view.y=(h-canvas.height*view.base)/2;applyView();
   }
   function zoomAt(factor,cx,cy){
@@ -55,7 +57,7 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
   function bindGestures(signal){
     const {stage}=refs,pointers=new Map();let lastDist=0;
     const local=e=>{const r=stage.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top];};
-    stage.addEventListener('pointerdown',e=>{stage.setPointerCapture(e.pointerId);pointers.set(e.pointerId,local(e));lastDist=0;},{signal});
+    stage.addEventListener('pointerdown',e=>{if(e.target.closest('.ed-mk')&&!pointers.size)return;stage.setPointerCapture(e.pointerId);pointers.set(e.pointerId,local(e));lastDist=0;},{signal});
     stage.addEventListener('pointermove',e=>{
       if(!pointers.has(e.pointerId))return;
       const prev=pointers.get(e.pointerId),now=local(e);pointers.set(e.pointerId,now);
@@ -91,6 +93,7 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
     const value=p2?draft.answers.p2[i][j]:draft.answers[part][i],flag=p2?draft.flags.p2[i]?.[j]:draft.flags[part][i];
     if(part==='p3'){
       const validKey=G.validKey('p3',key)&&!G.ignored('p3',key),ok=validKey&&value!==''&&G.isCorrect('p3',value,key);
+      if(cell.node.value!==String(value??'')&&document.activeElement!==cell.node)cell.node.value=value??'';
       setCls(cell.node,'ed-ok',ok);setCls(cell.node,'ed-bad',validKey&&value!==''&&!ok);
       setCls(cell.row,'ed-warn',value===''||flag);cell.hintNode.textContent=validKey&&!ok&&key!=='O'?`Đáp án: ${key}`:'';
       return;
@@ -138,14 +141,59 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
       section.append(grid);refs.body.append(section);
     });
   }
+  function buildSheetMarks(profile){
+    refs.layer.replaceChildren();
+    for(const cell of cells){
+      if(cell.part==='p3'&&!cell.popup){
+        const pos=OMR.choicePosition('p3',cell.i,undefined,'',profile),btn=el('button','ed-mk ed-mkrect');btn.type='button';
+        btn.style.left=pos.x-35+'px';btn.style.top=pos.y-35+'px';btn.setAttribute('aria-label',`Phiếu: câu ${cell.i+1} trả lời ngắn`);
+        btn.onclick=()=>openQuestion('p3',cell.i);refs.layer.append(btn);continue;
+      }
+      if(!cell.pick)continue;
+      for(const option of cell.part==='p1'?['A','B','C','D']:['Đ','S']){
+        const pos=OMR.choicePosition(cell.part,cell.i,cell.j,option,profile),btn=el('button','ed-mk');btn.type='button';
+        btn.style.left=pos.x+'px';btn.style.top=pos.y+'px';
+        btn.setAttribute('aria-label',`Phiếu: câu ${cell.i+1}${cell.j===undefined?'':' ý '+'abcd'[cell.j]} ${option}`);
+        btn.onclick=()=>openQuestion(cell.part,cell.i);cell.buttons.push({btn,option});refs.layer.append(btn);
+      }
+    }
+  }
+  let popupStart=-1;
+  function closeQuestion(){
+    if(popupStart>=0){cells.splice(popupStart);popupStart=-1;}
+    refs.popup.hidden=true;refs.popBody.replaceChildren();
+  }
+  // Popup phóng to riêng một câu: dùng lại choiceGroup nên cùng trạng thái nháp, cùng màu và vòng vàng đáp án đúng.
+  function openQuestion(part,i){
+    closeQuestion();popupStart=cells.length;
+    const p=part,row=el('div','ed-q ed-popq'),box=el('div','ed-popbox');
+    refs.popTitle.textContent=`Câu ${i+1} · Phần ${p==='p1'?'I':p==='p2'?'II':'III'}`;
+    if(p==='p3'){
+      const wrap=shortAnswer(p,i,row),input=wrap.querySelector('input'),pad=el('div','ed-pad');
+      wrap.classList.add('ed-bigshort');cells[cells.length-1].popup=true;input.inputMode='none';
+      const type=fn=>{input.value=fn(input.value).slice(0,8);input.dispatchEvent(new Event('input'));};
+      for(const k of ['7','8','9','4','5','6','1','2','3','-','0',',','⌫','Xóa']){
+        const b=el('button','ed-btn ed-key',k);b.type='button';b.setAttribute('aria-label',k==='⌫'?'Xóa một ký tự':k==='Xóa'?'Xóa hết':k);
+        b.onclick=()=>type(v=>k==='⌫'?v.slice(0,-1):k==='Xóa'?'':v+k);pad.append(b);
+      }
+      box.append(wrap,pad);box.classList.add('ed-pop3');
+    }
+    else if(p==='p1')box.append(choiceGroup(p,i,undefined,['A','B','C','D'],row));
+    else for(let j=0;j<4;j++){const line=el('div','ed-subline'),group=choiceGroup(p,i,j,['Đ','S'],row);line.append(el('span','ed-letter','abcd'[j]),group);box.append(line);}
+    if(p!=='p3')box.classList.add(p==='p1'?'ed-pop1':'ed-pop2');
+    refs.popBody.append(box);refs.popup.hidden=false;paintNew(popupStart);
+    refs.popBody.querySelector('button')?.focus();
+  }
+  function paintNew(from){const item=assessDraft();for(let k=from;k<cells.length;k++)paintCell(cells[k],item.keys);}
   function choiceGroup(part,i,j,options,row){
     const group=el('div','ed-choices'),cell={part,i,j,row,buttons:[]};
     const get=()=>j===undefined?draft.answers[part][i]:draft.answers[part][i][j];
+    cell.pick=option=>{set(get()===option?'':option);touch({part,i});};
     const set=v=>{if(j===undefined){draft.answers[part][i]=v;draft.flags[part][i]='';}else{draft.answers[part][i][j]=v;draft.flags[part][i][j]='';}};
     for(const option of options){
       const btn=el('button','ed-opt',option);btn.type='button';
       btn.setAttribute('aria-label',`Câu ${i+1}${j===undefined?'':' ý '+'abcd'[j]}: ${option}`);
-      btn.onclick=()=>{set(get()===option?'':option);touch({part,i});};
+      btn.onclick=()=>cell.pick(option);
       cell.buttons.push({btn,option});group.append(btn);
     }
     cells.push(cell);return group;
@@ -163,8 +211,8 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
   function setAlpha(v){dialog.style.setProperty('--panel-alpha',String(v/100));refs.alphaValue.textContent=v+'%';refs.alpha.value=v;}
   function close(){
     if(!dialog?.open)return;
-    controller?.abort();controller=null;dialog.close();document.body.classList.remove('ed-open');
-    refs.canvas.width=refs.canvas.height=0;refs.body.replaceChildren();cells=[];draft=original=null;
+    closeQuestion();controller?.abort();controller=null;dialog.close();document.body.classList.remove('ed-open');
+    refs.canvas.width=refs.canvas.height=0;refs.layer.replaceChildren();refs.body.replaceChildren();cells=[];draft=original=null;
     returnFocus?.focus?.();returnFocus=null;
   }
   function requestClose(){if(!dirty||confirm('Bỏ các thay đổi chưa lưu?'))close();}
@@ -174,8 +222,11 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
     returnFocus=document.activeElement;
     original=record;
     draft={...record,answers:clone(record.answers),flags:clone(record.flags)};dirty=false;
-    refs.canvas.width=record.source.width;refs.canvas.height=record.source.height;
-    refs.canvas.getContext('2d').drawImage(record.source,0,0);
+    const aligned=record.points?.length===4&&OMR&&record.profile;let rectified=null;
+    if(aligned){try{rectified=OMR.rectify(record.source.getContext('2d').getImageData(0,0,record.source.width,record.source.height),record.points);}catch(_){rectified=null;}}
+    if(rectified){refs.canvas.width=rectified.width;refs.canvas.height=rectified.height;refs.canvas.getContext('2d').putImageData(new ImageData(rectified.data,rectified.width,rectified.height),0,0);}
+    else{refs.canvas.width=record.source.width;refs.canvas.height=record.source.height;refs.canvas.getContext('2d').drawImage(record.source,0,0);}
+    refs.world.style.width=refs.canvas.width+'px';refs.world.style.height=refs.canvas.height+'px';
     refs.paperName.textContent=record.label;refs.detectedCode.textContent=record.examCode||'Chưa đọc được';
     refs.sbd.value=record.studentId||'';
     const codes=examCodes();refs.codeLabel.hidden=!codes.length;refs.code.replaceChildren();
@@ -185,7 +236,7 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
       for(const c of codes){const o=el('option','',`Mã đề ${c}`);o.value=c;refs.code.append(o);}
       refs.code.value=record.keyCode||'';
     }
-    renderBody();setAlpha(storedAlpha());setPanelHidden(false);
+    renderBody();if(rectified)buildSheetMarks(record.profile);else refs.layer.replaceChildren();setAlpha(storedAlpha());setPanelHidden(false);
     controller=new AbortController();const {signal}=controller;
     refs.sbd.addEventListener('input',()=>{draft.studentId=refs.sbd.value;dirty=true;},{signal});
     refs.code.addEventListener('change',()=>{
@@ -200,7 +251,7 @@ function create({G,getRecord,assess,format,counts,examCodes,onCommit}){
     refs.showBtn.addEventListener('click',()=>setPanelHidden(false),{signal});
     refs.cancel.addEventListener('click',requestClose,{signal});
     refs.save.addEventListener('click',()=>{const target=original,data=draft;close();onCommit(target,data);},{signal});
-    dialog.addEventListener('cancel',e=>{e.preventDefault();requestClose();},{signal});
+    dialog.addEventListener('cancel',e=>{e.preventDefault();if(!refs.popup.hidden)closeQuestion();else requestClose();},{signal});
     window.addEventListener('resize',fit,{signal});window.addEventListener('orientationchange',fit,{signal});
     bindGestures(signal);
     document.body.classList.add('ed-open');dialog.showModal();fit();refreshAll();

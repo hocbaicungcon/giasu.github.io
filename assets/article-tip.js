@@ -1,5 +1,5 @@
 /* credit: giasu.ai.vn */
-import {loadData,choose} from './fun-data.js?v=e35dce0e4a6f';
+import {loadData,choose} from './fun-data.js?v=f281b1108ae7';
 const target=document.querySelector('[data-study-tip]');
 if(target)try{
  const {count,chunkSize}=await loadData('tips-meta');let previous=-1;
