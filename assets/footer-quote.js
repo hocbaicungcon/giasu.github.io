@@ -1,5 +1,5 @@
 /* credit: giasu.ai.vn */
-import {loadData,choose} from './fun-data.js?v=62b2ede6941d';
+import {loadData,choose} from './fun-data.js?v=2d52887e7b52';
 const target=document.querySelector('[data-footer-quote]');
 try{
  const {count,chunkSize}=await loadData('quotes-meta');let previous=-1;

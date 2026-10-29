@@ -1,5 +1,5 @@
 /* credit: giasu.ai.vn */
-import {sorting,compareItems} from './sort.js?v=62b2ede6941d';
+import {sorting,compareItems} from './sort.js?v=2d52887e7b52';
 const cards=[...document.querySelectorAll('.exam-card')];
 const exams=JSON.parse(document.getElementById('exam-catalog-data').textContent);
 const bySlug=new Map(exams.map(e=>[e.slug,e]));

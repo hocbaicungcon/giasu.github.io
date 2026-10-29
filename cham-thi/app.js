@@ -85,7 +85,7 @@ function updateButtons() {
   $('undoCorners').classList.toggle('hidden', !cornerHistory.active(r)); $('cancelCorners').classList.toggle('hidden', !cornerHistory.active(r));
   $('undoCorners').disabled = !cornerHistory.canUndo(r) || loading; $('cancelCorners').disabled = !r || loading; $('clearBatch').disabled = !records.length && !clearFailed || exporting;
   $('newBatch').disabled = !records.length && !clearFailed || exporting;
-  $('deleteCurrentRecord').disabled = !r || loading || exporting;
+  $('deleteCurrentRecord').disabled = !r || loading || exporting; $('editFullscreen').disabled = !r?.answers || !r.source || loading;
   for (const id of ['exportExcel', 'exportSummaryPdf', 'exportAnnotatedPdf', 'exportAnnotatedZip', 'exportImage']) $(id).disabled = !records.length || !!errors.length || loading || exporting;
 }
 let scoreRefreshTimer = null;
@@ -363,6 +363,18 @@ function deleteCurrentRecord() {
   }
 }
 $('deleteCurrentRecord').onclick = deleteCurrentRecord;
+const editOverlay = window.ChamTNEditOverlay.create({
+  G, assess, format, getRecord: current, counts: () => [count(0), count(1), count(2)], examCodes: () => exams.map(exam => exam.code),
+  onCommit(record, draft) {
+    if (!records.includes(record)) return;
+    if (!record.omrOriginal) record.omrOriginal = { answers: JSON.parse(JSON.stringify(record.answers)), flags: JSON.parse(JSON.stringify(record.flags)), studentId: record.studentId || '', keyCode: record.keyCode || '' };
+    record.answers = draft.answers; record.flags = draft.flags;
+    if ((draft.studentId || '') !== (record.studentId || '')) { record.studentId = draft.studentId; record.studentEdited = true; }
+    if (draft.keyCode && draft.keyCode !== record.keyCode) { $('gradedExamSelect').value = draft.keyCode; $('gradedExamSelect').dispatchEvent(new Event('change')); }
+    renderAnswers(); refresh();
+  }
+});
+$('editFullscreen').onclick = () => editOverlay.open();
 function draw() {
   const r = current(); canvas.classList.toggle('annotated', annotatedView);
   window.ChamTNIcons.label($('viewAnnotated'), annotatedView ? 'Xem ảnh gốc' : 'Xem bài đã chấm', 'eye');
