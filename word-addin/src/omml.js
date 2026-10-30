@@ -128,9 +128,14 @@ function node(el) {
   }
   if (tag === 'acc') {
     const chr = prop(el, 'chr', '\u0302');
-    const command = T.ACCENTS[chr];
+    const body = subOf(el, 'e');
+    // OMML has one accent kind for both short and extensible TeX accents.
+    // Preserve the extensible form over a group when exporting to MathType.
+    const grouped = [...body.replace(/\s/g, '')].length > 1;
+    const command = grouped && chr === '\u0302' ? `${BS}widehat`
+      : grouped && chr === '\u20d7' ? `${BS}overrightarrow` : T.ACCENTS[chr];
     if (command === undefined) throw new OmmlError('accent ' + chr);
-    return [`${command}{${subOf(el, 'e')}}`];
+    return [`${command}{${body}}`];
   }
   if (tag === 'bar') {
     const body = subOf(el, 'e');

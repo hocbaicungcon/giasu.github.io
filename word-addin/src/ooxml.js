@@ -253,7 +253,12 @@ function isLikelyLatex(rawInner) {
   if (s.includes('\\')) return true;
   if (/^\d+(?:(?:[.,]|\{[.,]\})\d+)?$/.test(s)) return true;
   if (/[=+\-*/^_<>≤≥≠≈∈∉⊂⊃∪∩∅√∫∑∏~()]/.test(s)) return true;
-  if (/^[a-zA-Z0-9_'^]+$/.test(s)) return true;
+  // Geometry labels and bracket notation need no TeX command or operator.
+  // Keep tokens symbolic: punctuation in a price like "$100.00 và $200.00"
+  // must not make the text between the currency signs look like an equation.
+  const symbols = /^[a-zA-Z0-9_'′″]+(?:\s*[.,;:|]\s*[a-zA-Z0-9_'′″]+)*$/;
+  if (symbols.test(s)) return true;
+  if (s.startsWith('[') && s.endsWith(']') && symbols.test(s.slice(1, -1).trim())) return true;
   return false;
 }
 

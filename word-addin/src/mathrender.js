@@ -200,11 +200,12 @@ function nodeBox(n, fs, level) {
       const bottom = n.pos === 'bot', sw = Math.max(0.5, fs * 0.05);
       const arrow = n.chr === '⃗' || n.chr === '→';
       const hat = n.chr === '̂';
+      const hatHalf = n.wide ? body.w / 2 : Math.min(body.w / 2, fs * 0.2);
       return { w: body.w, a: body.a + (bottom ? 0 : fs * 0.22), d: body.d + (bottom ? fs * 0.18 : 0), draw: (x, y) => {
         let s = body.draw(x, y);
         const yy = bottom ? y + body.d + fs * 0.1 : y - body.a - fs * 0.1;
         if (arrow) s += line(x, yy, x + body.w, yy, sw) + `<path d="M${x + body.w - fs * 0.18} ${yy - fs * 0.1} L${x + body.w} ${yy} L${x + body.w - fs * 0.18} ${yy + fs * 0.1}" fill="none" stroke="#000" stroke-width="${sw}"/>`;
-        else if (hat) s += `<path d="M${x + body.w / 2 - fs * 0.2} ${yy + fs * 0.08} L${x + body.w / 2} ${yy - fs * 0.08} L${x + body.w / 2 + fs * 0.2} ${yy + fs * 0.08}" fill="none" stroke="#000" stroke-width="${sw}"/>`;
+        else if (hat) s += `<path d="M${x + body.w / 2 - hatHalf} ${yy + fs * 0.08} L${x + body.w / 2} ${yy - fs * 0.08} L${x + body.w / 2 + hatHalf} ${yy + fs * 0.08}" fill="none" stroke="#000" stroke-width="${sw}"/>`;
         else s += line(x, yy, x + body.w, yy, sw);
         return s;
       } };

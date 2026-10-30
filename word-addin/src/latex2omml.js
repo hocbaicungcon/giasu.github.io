@@ -202,7 +202,7 @@ class Parser {
     if (name === 'overbrace') return { k: 'groupChr', pos: 'top', chr: '\u23de', e: this.arg() };
     if (name === 'underbrace') return { k: 'groupChr', pos: 'bot', chr: '\u23df', e: this.arg() };
     if (has(LONG_ARROW, name)) return { k: 'groupChr', pos: 'top', chr: LONG_ARROW[name], e: this.arg() };
-    if (has(ACCENT, name)) return { k: 'acc', chr: ACCENT[name], e: this.arg() };
+    if (has(ACCENT, name)) return { k: 'acc', chr: ACCENT[name], wide: name === 'widehat' || name === 'widetilde' || name === 'overrightarrow', e: this.arg() };
     if (name === 'boxed' || name === 'fbox') return { k: 'box', e: this.arg() };
     if (name === 'overset' || name === 'stackrel') { const lim = this.arg(); return { k: 'lim', upp: true, lim, e: this.arg() }; }
     if (name === 'underset') { const lim = this.arg(); return { k: 'lim', upp: false, lim, e: this.arg() }; }
@@ -487,7 +487,7 @@ function mmlNode(n) {
       return head + '<mo>&#x2061;</mo>' + r(n.e);
     }
     case 'lim': return n.upp ? `<mover>${r(n.e)}${r(n.lim)}</mover>` : `<munder>${r(n.e)}${r(n.lim)}</munder>`;
-    case 'acc': return `<mover accent="true">${r(n.e)}<mo>${escapeXml(n.chr)}</mo></mover>`;
+    case 'acc': return `<mover accent="true">${r(n.e)}<mo${n.wide ? ' stretchy="true"' : ''}>${escapeXml(n.chr)}</mo></mover>`;
     case 'bar': return n.pos === 'bot' ? `<munder>${r(n.e)}<mo>&#x2015;</mo></munder>` : `<mover>${r(n.e)}<mo>&#x2015;</mo></mover>`;
     case 'groupChr': return n.pos === 'top' ? `<mover>${r(n.e)}<mo>${escapeXml(n.chr)}</mo></mover>` : `<munder>${r(n.e)}<mo>${escapeXml(n.chr)}</mo></munder>`;
     case 'box': return `<menclose notation="box">${r(n.e)}</menclose>`;

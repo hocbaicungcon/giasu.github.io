@@ -205,7 +205,7 @@ function node(w, n) {
     }
     case 'acc':
       if (n.chr === '\u20d7') return w.template(31, 2, () => { slotLine(w, n.e); w.char(EXPAND, 0x20d7); });
-      if (n.chr === '\u0302') return w.template(33, 0, () => { slotLine(w, n.e); w.char(EXPAND, 0x302); });
+      if (n.chr === '\u0302') return w.template(32, 0, () => { slotLine(w, n.e); w.char(EXPAND, 0x302); });
       return fail('accent U+' + n.chr.codePointAt(0).toString(16));
     case 'bar': return w.template(n.pos === 'bot' ? 12 : 13, n.pos === 'bot' ? 1 : 0, () => slotLine(w, n.e));
     case 'box': return w.template(37, 30, () => slotLine(w, n.e));
