@@ -6,7 +6,8 @@ import { GEOMETRY } from '../src/figures/geometry.js';
 import { CHEMISTRY } from '../src/figures/chem.js';
 import { PHYSICS } from '../src/figures/physics.js';
 import { BIOLOGY } from '../src/figures/bio.js';
-import { sceneToPackage } from '../src/figures/scene.js';
+import { tikzToScene, TikzError } from '../src/tikz.js';
+import { sceneToPackage, sceneToSvg } from '../src/figures/scene.js';
 import { mountMtSettings, figurePt } from './mt-settings.js';
 import { makePicturePackage, svgToPngPx, downloadBlob } from '../src/picture.js';
 
@@ -16,7 +17,7 @@ const sw = (id, label, checked = false) => `<label class="switch"><input type="c
 const field = (label, inner) => `<label class="field"><span>${label}</span>${inner}</label>`;
 
 export function mountFigures(root, io) {
-  const kinds = [['bbt', 'Bảng biến thiên'], ['plot', 'Đồ thị'], ['region', 'Miền nghiệm'], ['geo', 'Hình học'], ['chem', 'Hóa học'], ['phys', 'Vật lí'], ['bio', 'Sinh học']];
+  const kinds = [['bbt', 'Bảng biến thiên'], ['plot', 'Đồ thị'], ['region', 'Miền nghiệm'], ['geo', 'Hình học'], ['chem', 'Hóa học'], ['phys', 'Vật lí'], ['bio', 'Sinh học'], ['tikz', 'Mã TikZ']];
   const CATALOGS = { geo: GEOMETRY, chem: CHEMISTRY, phys: PHYSICS, bio: BIOLOGY };
   root.innerHTML = `
     <details class="inline-help"><summary>Cách vẽ và chèn hình</summary><p>Chọn loại hình, chọn mẫu hoặc nhập dữ liệu, rồi xem hình bên dưới. Bấm vào vị trí muốn chèn trong Word trước khi bấm “Chèn vào Word”.</p></details>
@@ -51,6 +52,8 @@ export function mountFigures(root, io) {
         ${field('Ghi chú (tùy chọn)', '<input type="text" id="m-domain" placeholder="vd. TXĐ: D = ℝ \\ {1}">')}
         <div class="hint">Viết <b>-inf</b>, <b>+inf</b> cho ∞. Dòng y' có thể chỉ gồm các dấu (+ - +), hoặc xen kẽ dấu với <b>0</b> (cực trị) / <b>||</b> (không xác định), vd. <code>+ 0 - || -</code>. Ở dòng y, cột gián đoạn viết <b>trái|phải</b>, vd. <code>-inf|+inf</code>. Có thể dùng LaTeX như <code>\\frac{1}{2}</code>. Khoảng hàm không xác định ghi <b>//</b> ở dòng y' (được gạch chéo), vd. x: <code>-inf -2 2 +inf</code>, y': <code>- // +</code>, y: <code>0 +inf| |-inf 0</code> (bỏ trống phía không có giá trị). Mũi tên lên/xuống theo dấu của y'.</div>
       </div>`,
+    tikz: () => `${field('Mã TikZ (dán \\begin{tikzpicture}…\\end{tikzpicture} hoặc chỉ các lệnh \\draw, \\node…)', '<textarea id="t-code" rows="9" spellcheck="false" placeholder="\\begin{tikzpicture}\n  \\draw (0,0) -- (4,0) -- (1,3) -- cycle;\n  \\node[below left] at (0,0) {$A$};\n\\end{tikzpicture}">\\begin{tikzpicture}[scale=1]\n  \\coordinate (A) at (0,0);\n  \\coordinate (B) at (4,0);\n  \\coordinate (C) at (1,3);\n  \\draw[thick] (A) -- (B) -- (C) -- cycle;\n  \\draw[dashed] (C) -- (1,0);\n  \\fill (A) circle (1.5pt); \\fill (B) circle (1.5pt); \\fill (C) circle (1.5pt);\n  \\node[below left] at (A) {$A$};\n  \\node[below right] at (B) {$B$};\n  \\node[above] at (C) {$C$};\n\\end{tikzpicture}</textarea>')}
+      <div class="hint">Không cần cài LaTeX: add-in tự vẽ lại hình từ mã TikZ ngay trên máy. Hỗ trợ: <code>\\draw</code>, <code>\\fill</code>, <code>\\filldraw</code>, <code>\\node</code>, <code>\\coordinate</code>, <code>\\foreach</code>, <code>scope</code>; nét <code>--</code>, <code>cycle</code>, <code>circle</code>, <code>ellipse</code>, <code>arc</code>, <code>rectangle</code>, <code>grid</code>, <code>.. controls ..</code>; <code>thick</code>, <code>dashed</code>, <code>-&gt;</code>, màu, <code>scale</code>. Hỗ trợ cả tkz-euclide: <code>\\tkzDefPoints</code>, <code>\\tkzDefPoint</code>, <code>\\tkzDefMidPoint</code>, <code>\\tkzDefLine</code>, <code>\\tkzDefTriangleCenter</code>, <code>\\tkzDefPointBy</code>, <code>\\tkzInterLL/LC/CC</code>, <code>\\tkzDrawPolygon/Segment/Line/Circle/Arc/Points</code>, <code>\\tkzLabelPoints</code>, <code>\\tkzMarkRightAngle/Angle/Segment</code>, <code>\\tkzFillPolygon</code>…. Chưa hỗ trợ <code>calc</code>, <code>plot</code>, <code>pgfplots</code>.</div>`,
     plot: () => `${field('Hàm số (mỗi dòng một hàm; gõ thường hoặc LaTeX, vd. \\frac{x+1}{x-1})', '<textarea id="p-expr" rows="2" spellcheck="false">x^3-3x+1</textarea>')}
       <label class="field"><span>Mẫu có sẵn</span><select id="p-preset"><option value="">— chọn mẫu —</option>${PRESETS.map((p) => `<option value="${p.id}">${esc(p.label)}</option>`).join('')}</select></label>
       <div class="subhead">Khoảng giá trị trên các trục</div>
@@ -114,6 +117,18 @@ export function mountFigures(root, io) {
       if (r.empty) throw new Error('Hệ bất phương trình vô nghiệm (miền nghiệm rỗng) trong khung nhìn này.');
       return r;
     }
+    if (kind === 'tikz') {
+      const code = $('t-code').value;
+      if (!code.trim()) throw new Error('Nhập mã TikZ');
+      const sm = /\\begin\{tikzpicture\}\s*\[[^\]]*?\bscale\s*=\s*([\d.]+)/.exec(code);
+      let sc;
+      try { sc = tikzToScene(code, { scale: sm ? parseFloat(sm[1]) : 1, fs: 16 }); } catch (e) {
+        if (e instanceof TikzError) throw new Error(`Chưa hỗ trợ đoạn TikZ này (${e.message}). Hãy đơn giản hóa hoặc bỏ lệnh đó`);
+        throw e;
+      }
+      const scene = { width: sc.width, height: sc.height, items: sc.items };
+      return { scene, svg: sceneToSvg(scene), width: sc.width, height: sc.height, note: 'Hình dựng từ mã TikZ; có thể chèn dạng hình sửa được hoặc ảnh PNG.' };
+    }
     const g = CATALOGS[kind].find((x) => x.id === $('g-kind').value);
     const o = { names: $('g-names') ? $('g-names').value : '' };
     $('g-opts').querySelectorAll('[data-opt]').forEach((s) => { o[s.dataset.opt] = s.value; });
@@ -164,7 +179,7 @@ export function mountFigures(root, io) {
   }
   $('fig-kind').addEventListener('change', () => show($('fig-kind').value));
 
-  const title = () => (CATALOGS[kind] ? (CATALOGS[kind].find((x) => x.id === $('g-kind').value)?.label || 'Hình vẽ') : { bbt: 'Bảng biến thiên', plot: 'Đồ thị hàm số', region: 'Miền nghiệm' }[kind]);
+  const title = () => (CATALOGS[kind] ? (CATALOGS[kind].find((x) => x.id === $('g-kind').value)?.label || 'Hình vẽ') : { bbt: 'Bảng biến thiên', plot: 'Đồ thị hàm số', region: 'Miền nghiệm', tikz: 'Hình TikZ' }[kind]);
   $('fig-insert').addEventListener('click', async () => {
     try { await io.replaceSelection(sceneToPackage(current.scene, { name: title(), alt: title(), float: $('fig-float').value === 'float' })); $('fig-out').innerHTML = '<span class="ok">Đã chèn vào Word tại con trỏ (hình sửa được).</span>'; } catch (e) { $('fig-out').innerHTML = `<span class="bad">Lỗi: ${esc(e.message)}</span>`; }
   });

@@ -1,6 +1,6 @@
 // Service worker: keeps the add-in (pages, scripts, icons, KaTeX, QR libraries) and the big CDN files it needs
 // (Office.js, Pyodide/SymPy) for about 30 days, so it opens without a network. Generated into sw.js by tools/build-sw.mjs.
-const VERSION = 'c46efcce8b';
+const VERSION = '82a536ba4a';
 const CACHE = 'texcraft-app-' + VERSION, RUNTIME = 'texcraft-runtime', META = 'texcraft-meta';
 const MAX_AGE = 30 * 24 * 3600 * 1000;
 const FILES = [
@@ -33,6 +33,7 @@ const FILES = [
  "./src/sympy-bridge.js",
  "./src/tables.js",
  "./src/tikz.js",
+ "./src/tkz-euclide.js",
  "./src/ttf.js",
  "./src/word-io.js",
  "./src/worksheet-docx.js",

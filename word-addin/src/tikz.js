@@ -3,6 +3,7 @@
 // inline `node[...] {..}` on a segment, options draw, fill=, line width=, ->, circle/rectangle nodes with minimum size.
 // Units: 1 cm = 37.8 px (the scene's unit). Throws TikzError on anything else, so the caller can fall back.
 import { labelBox } from './figures/scene.js';
+import { tkzToTikz } from './tkz-euclide.js';
 
 export class TikzError extends Error {}
 const CM = 37.795;
@@ -108,17 +109,33 @@ function expandScopes(src) {
 }
 const num = (t) => { const x = String(t).replace(/cm/g, '').trim(); if (!/^[-+*/().\d\s]+$/.test(x)) throw new TikzError('number ' + t); return Function(`return (${x})`)(); };   // 0.5*2, -0.2+0.1
 
+/** Pasted TikZ -> the statements the interpreter knows: wrapper/libraries dropped, \def macros substituted, \coordinate -> empty named node, `\node at (p) [opts] {..}` -> `\node[opts] at (p) {..}`. */
+function prepare(code) {
+  if (/\\tkz[A-Za-z]/.test(code)) { try { code = tkzToTikz(code); } catch (e) { throw new TikzError(e.message); } }
+  let s = code.replace(/\\usetikzlibrary\s*\{[^}]*\}/g, '').replace(/\\usepackage[^\n]*/g, '').replace(/\\tikzset\s*\{(?:[^{}]|\{[^{}]*\})*\}/g, '')
+    .replace(/\\begin\{tikzpicture\}\s*(\[[^\]]*\])?/g, '').replace(/\\end\{tikzpicture\}/g, '');
+  for (let g = 0; g < 30; g++) {
+    const m = /\\def\s*\\([A-Za-z]+)\s*\{([^{}]*)\}/.exec(s);
+    if (!m) break;
+    s = s.slice(0, m.index) + s.slice(m.index + m[0].length);
+    s = s.replace(new RegExp('\\\\' + m[1] + '(?![A-Za-z])', 'g'), () => m[2]);
+  }
+  return s.replace(/\\coordinate\s*(?:\[[^\]]*\])?\s*(\([^)]*\))\s*at\s*(\([^)]*\))/g, '\\node $1 at $2 {}')
+    .replace(/\\node\s*(\([^)]*\))?\s*at\s*(\([^)]*\))\s*(\[[^\]]*\])\s*\{/g, (_, n, at, o) => `\\node${o} ${n ? n + ' ' : ''}at ${at} {`)
+    .replace(/\\node\s*(\[[^\]]*\])?\s*at\s*(\([^)]*\))/g, '\\node$1 at $2');
+}
+
 export function tikzToScene(code, { scale = 1, fs = 16, lw = 1.2, ink, icon } = {}) {
   const S = CM * scale;
   const items = [], nodes = new Map();
   const pt = (x, y) => [x * S, -y * S];
-  let src = expandScopes(expandForeach(code.replace(/%[^\n]*/g, '')));
+  let src = expandScopes(expandForeach(prepare(code.replace(/%[^\n]*/g, ''))));
 
   const coord = (tok, cur) => {
     const m = /^\s*\(([^)]*)\)\s*$/.exec(tok);
     if (!m) throw new TikzError('coordinate ' + tok);
     const inner = m[1].trim();
-    if (/^[A-Za-z][\w.]*$/.test(inner)) { const n = nodes.get(inner); if (!n) throw new TikzError('node ' + inner); return { p: n.c, node: n }; }
+    if (/^[A-Za-z][\w.']*$/.test(inner)) { const n = nodes.get(inner); if (!n) throw new TikzError('node ' + inner); return { p: n.c, node: n.hw || n.hh || n.r ? n : undefined }; }
     if (inner.includes(':') && !inner.includes(',')) { const [aa, rr] = inner.split(':'); const a = num(aa) * Math.PI / 180, r = num(rr); return { p: pt(r * Math.cos(a), r * Math.sin(a)) }; }
     const xy = splitTop(inner.replace(/[{}]/g, ''), ',');
     if (xy.length === 2) return { p: pt(num(xy[0]), num(xy[1])) };
@@ -205,8 +222,8 @@ export function tikzToScene(code, { scale = 1, fs = 16, lw = 1.2, ink, icon } = 
     const doDraw = cmd === 'draw' || cmd === 'filldraw' || opts.draw, doFill = cmd === 'fill' || cmd === 'filldraw' || opts.fill;
     const bare = colourOpt(opts);
     const fill = doFill ? '#' + (opts.fill ? colour(opts.fill) : cmd === 'fill' && bare ? bare : '000000') : undefined;
-    const sw = opts['line width'] ? dim(opts['line width']) : lw;
-    const arrow = Boolean(opts['->'] || opts['-stealth']);
+    const sw = opts['line width'] ? dim(opts['line width']) : lw * (opts['ultra thick'] ? 4 : opts['very thick'] ? 3 : opts.thick ? 2 : opts['very thin'] || opts['ultra thin'] ? 0.4 : opts.thin ? 0.6 : 1);
+    const arrow = Boolean(opts['->'] || opts['-stealth'] || opts['-latex'] || opts['-to']);
     const stroke = doDraw ? (opts.draw && opts.draw !== true ? '#' + colour(opts.draw) : cmd !== 'fill' && bare ? '#' + bare : ink) : undefined;
     // tokenise the path
     const toks = rest.match(/~BEZ\([^)]*\)\([^)]*\)\([^)]*\)|\(\s*[^()]*\)|--|\bcycle\b|\brectangle\b|\bcircle\b|\bellipse\b|\bgrid\b|\barc\b|\bnode\b\s*(?:\[[^\]]*\])?\s*(?:\([^)]*\))?\s*\{(?:[^{}]|\{[^{}]*\})*\}|\bto\b|\bsin\b|\bcos\b/g) || [];
@@ -228,7 +245,7 @@ export function tikzToScene(code, { scale = 1, fs = 16, lw = 1.2, ink, icon } = 
       }
       if (t === 'cycle') { if (pathPts.length) { items.push({ t: 'poly', pts: pathPts, closed: true, sw, fill, color: stroke }); pathPts = []; } i++; continue; }
       if (t === 'rectangle') { const q = coord(toks[++i]).p; const x = Math.min(cur[0], q[0]), y = Math.min(cur[1], q[1]); items.push({ t: 'rect', x, y, w: Math.abs(q[0] - cur[0]), h: Math.abs(q[1] - cur[1]), sw, fill, color: stroke, noStroke: !doDraw }); cur = q; pathPts = []; i++; continue; }
-      if (t === 'circle') { const m = /\(\s*([\d.]+)\s*(cm)?\s*\)/.exec(toks[++i]); const r = parseFloat(m[1]) * S; items.push({ t: 'ellipse', cx: cur[0], cy: cur[1], rx: r, ry: r, sw, fill, color: stroke, noStroke: !doDraw }); pathPts = []; i++; continue; }
+      if (t === 'circle') { const m = /\(\s*([\d.]+\s*(?:cm|mm|pt)?)\s*\)/.exec(toks[++i]); if (!m) throw new TikzError('circle'); const r = /[a-z]/.test(m[1]) ? dim(m[1]) * scale : parseFloat(m[1]) * S; items.push({ t: 'ellipse', cx: cur[0], cy: cur[1], rx: r, ry: r, sw, fill, color: stroke, noStroke: !doDraw }); pathPts = []; i++; continue; }
       if (t === 'ellipse') { const m = /\(\s*([\d.]+)\s*(?:cm)?\s+and\s+([\d.]+)\s*(?:cm)?\s*\)/.exec(toks[++i]); if (!m) throw new TikzError('ellipse'); items.push({ t: 'ellipse', cx: cur[0], cy: cur[1], rx: parseFloat(m[1]) * S, ry: parseFloat(m[2]) * S, sw, fill, color: stroke, noStroke: !doDraw }); pathPts = []; i++; continue; }
       if (t === 'grid') { const q = coord(toks[++i]).p; for (let x = Math.min(cur[0], q[0]); x <= Math.max(cur[0], q[0]) + 0.5; x += S) items.push({ t: 'line', x1: x, y1: cur[1], x2: x, y2: q[1], w: sw }); for (let y = Math.min(cur[1], q[1]); y <= Math.max(cur[1], q[1]) + 0.5; y += S) items.push({ t: 'line', x1: cur[0], y1: y, x2: q[0], y2: y, w: sw }); i++; continue; }
       if (t === 'arc') { const m = /\(\s*(-?[\d.]+)\s*:\s*(-?[\d.]+)\s*:\s*([\d.]+)\s*\)/.exec(toks[++i]); const a1 = parseFloat(m[1]), a2 = parseFloat(m[2]), r = parseFloat(m[3]) * S; const c0 = [cur[0] - r * Math.cos(a1 * Math.PI / 180), cur[1] + r * Math.sin(a1 * Math.PI / 180)]; for (let k = 1; k <= 12; k++) { const a = (a1 + (a2 - a1) * k / 12) * Math.PI / 180; pathPts.push([c0[0] + r * Math.cos(a), c0[1] - r * Math.sin(a)]); } cur = pathPts[pathPts.length - 1]; i++; continue; }
@@ -263,6 +280,8 @@ export function tikzToScene(code, { scale = 1, fs = 16, lw = 1.2, ink, icon } = 
     }
     if (arrow && pathPts.length > 1) { const a = pathPts[pathPts.length - 2], b = pathPts[pathPts.length - 1]; items.push({ t: 'line', x1: a[0], y1: a[1], x2: b[0], y2: b[1], w: sw, arrow: true }); pathPts = pathPts.slice(0, -1).length > 1 ? pathPts.slice(0, -1) : []; }
     flush();
+    const dash = opts.dashed ? '6 4' : opts.dotted ? 'dot' : null;
+    if (dash) for (let k = firstItem; k < items.length; k++) if (items[k].t !== 'label' && items[k].t !== 'ptext') items[k].dash = dash;
     if (opts.wsdashline) for (let k = firstItem; k < items.length; k++) if (items[k].t !== 'label') items[k].dash = 'dot';
   }
   return fit(items);
