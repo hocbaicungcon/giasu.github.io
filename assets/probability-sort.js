@@ -1,4 +1,4 @@
-import {probabilityEvents,moveEvent,isProbabilityOrder} from './exploration-models.js?v=f281b1108ae7';
+import {probabilityEvents,moveEvent,isProbabilityOrder} from './exploration-models.js?v=81974b4a2997';
 const initial=['six','impossible','coin','certain','double','five'];
 const icons={die:'<rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="8" cy="8" r="1"/><circle cx="16" cy="16" r="1"/><circle cx="12" cy="12" r="1"/>',coin:'<circle cx="12" cy="12" r="9"/><path d="M12 6v12m-3-9h5a2 2 0 0 1 0 4h-4"/>'};
 const svg=path=>`<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;

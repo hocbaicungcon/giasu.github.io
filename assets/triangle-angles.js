@@ -1,4 +1,4 @@
-import {GeometryScene,measureAngle} from './geometry-interaction.js?v=f281b1108ae7';
+import {GeometryScene,measureAngle} from './geometry-interaction.js?v=81974b4a2997';
 for(const root of document.querySelectorAll('[data-exploration="triangle-angles"]')){
  const stage=root.querySelector('[data-exploration-stage]');
  stage.innerHTML='<svg viewBox="0 0 560 320" class="triangle-angle-canvas" role="img" aria-label="Tam giác ABC; kéo đỉnh A để thay đổi hình"><title>Tổng ba góc trong tam giác</title></svg><div class="exploration-controls"><label>Vị trí ngang của A<input type="range" min="40" max="520" value="230" data-coordinate="x"></label><label>Độ cao của A<input type="range" min="40" max="230" value="80" data-coordinate="y"></label><label>Dự đoán tổng ba góc (độ)<input type="number" min="0" max="540" data-prediction></label><button type="button" data-check>Kiểm tra</button><button type="button" data-reset>Đặt lại</button></div><p data-feedback role="status"></p>';
