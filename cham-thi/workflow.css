@@ -30,3 +30,5 @@
  .grading-page .key .import-controls>button{flex:1}
  .grading-page .config-grid{grid-template-columns:1fr}
 }
+
+.grading-page .workflow-more .grading-guide{display:block;margin-top:0}
