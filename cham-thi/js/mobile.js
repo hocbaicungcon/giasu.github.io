@@ -37,16 +37,20 @@
   }
   const keyPanel = document.querySelector('.panel.key');
   const configuration = document.querySelector('.configuration');
-  const settings = disclosure('Số câu & thang điểm', [configuration], keyPanel, keyPanel.querySelector('.section-head').nextSibling);
+  const settings = disclosure('1. Nhập số câu và thang điểm', [configuration], keyPanel, keyPanel.querySelector('.section-head').nextSibling);
   const summary = document.getElementById('examSummary');
-  const updateSummary = () => { settings.querySelector('summary').textContent = 'Số câu & thang điểm · ' + summary.textContent; };
+  const updateSummary = () => { settings.querySelector('summary').textContent = '1. Nhập số câu và thang điểm · ' + summary.textContent; };
   new MutationObserver(updateSummary).observe(summary, { childList: true, subtree: true, characterData: true }); updateSummary();
-  disclosure('QR, phiếu mẫu & hướng dẫn nhập', [...keyPanel.querySelectorAll(':scope > .hint')].filter(node => !node.id), keyPanel, document.getElementById('importStatus'));
+  const qrDetails = disclosure('Cách 2: Nhập bằng QR · phiếu mẫu & hướng dẫn', [...keyPanel.querySelectorAll(':scope > .hint')].filter(node => !node.id), keyPanel, document.getElementById('importStatus'));
   // Các nút QR có id để các luồng nhập cũ tiếp tục hoạt động.
-  const qrDetails = keyPanel.querySelectorAll('.workflow-more')[1];
   qrDetails.append(document.getElementById('createAnswerQr'), document.getElementById('openQrImport'));
-  disclosure('Nhập trực tiếp / sửa đáp án từng câu', [keyPanel.querySelector('.manual-key-form'), document.getElementById('manualKeyStatus'), ...[1, 2, 3].map(i => document.getElementById('keyWrap' + i))], keyPanel);
-  disclosure('Quản lý / xóa đáp án', [keyPanel.querySelector('.key-delete-actions')], keyPanel);
+  const manualDetails = disclosure('Cách 3: Nhập trực tiếp / sửa từng câu', [keyPanel.querySelector('.manual-key-form'), document.getElementById('manualKeyStatus'), ...[1, 2, 3].map(i => document.getElementById('keyWrap' + i))], keyPanel);
+  const answerMethods = document.createElement('section'); answerMethods.className = 'workflow-more';
+  const methodsTitle = document.createElement('h3'); methodsTitle.textContent = '2. Nhập đáp án theo một trong 3 cách sau:';
+  const fileTitle = document.createElement('h4'); fileTitle.textContent = 'Cách 1: Tải tệp Excel, PDF hoặc Word';
+  keyPanel.insertBefore(answerMethods, keyPanel.querySelector('.import-controls'));
+  answerMethods.append(methodsTitle, fileTitle, keyPanel.querySelector('.import-controls'), document.getElementById('importStatus'), qrDetails, manualDetails, document.getElementById('examPicker'), document.getElementById('examInfo'));
+  disclosure('3. Quản lí/xóa đáp án', [keyPanel.querySelector('.key-delete-actions')], keyPanel);
   const scan = document.querySelector('.panel.scan');
   disclosure('Tùy chọn quét & căn góc thủ công', [...scan.querySelectorAll('.preview-setting, .sound-setting, .manual-help, .scan-status, .scan-actions, .scan-utilities')], scan);
   const batch = document.getElementById('batchPanel'), exports = batch.querySelector('.export-actions');
