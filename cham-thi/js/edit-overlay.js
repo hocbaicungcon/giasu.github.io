@@ -40,7 +40,7 @@ function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,on
     bar.append(alphaWrap,zoomOut,zoomIn,reset,toggle);
     dialog.append(stage,top,panel,bar,popup);
     document.body.append(dialog);
-    refs={prev,next,title,popup,popTitle,popBody,stage,world,layer,canvas,cancel,save,panel,sbd,code,codeLabel,paperName,detectedCode,total,totalLabel,parts,note,body,alpha,alphaValue,zoomOut,zoomIn,reset,toggle};
+    refs={prev,next,title,popup,popTitle,popBody,stage,world,layer,canvas,cancel,save,panel,sbd,code,codeLabel,paperName,detectedCode,total,totalLabel,parts,note,body,alphaWrap,alpha,alphaValue,zoomOut,zoomIn,reset,toggle};
   }
 
   // ---- ảnh nền: zoom / pan ----
@@ -48,7 +48,7 @@ function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,on
   // Căn vừa khít phần có nội dung của phiếu (bỏ lề trắng), tránh thanh trên/dưới.
   function fit(){
     const {stage,canvas}=refs,w=stage.clientWidth,H=stage.clientHeight;if(!w||!H||!canvas.width)return;
-    const top=dialog.querySelector('.ed-top').offsetHeight,bottom=dialog.querySelector('.ed-bar').offsetHeight,h=Math.max(100,H-top-bottom);
+    const top=0,h=H;
     const box=view.box||{x:0,y:0,w:canvas.width,h:canvas.height};
     view.base=Math.min(w/box.w,h/box.h);view.s=1;
     view.x=(w-box.w*view.base)/2-box.x*view.base;view.y=top+(h-box.h*view.base)/2-box.y*view.base;applyView();
@@ -286,7 +286,7 @@ function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,on
   }
 
   // ---- mở / đóng ----
-  function setPanelHidden(hidden){refs.panel.hidden=hidden;refs.toggle.textContent=hidden?'Hiện bảng':'Ẩn bảng';}
+  function setPanelHidden(hidden){refs.panel.hidden=hidden;dialog.classList.toggle('ed-image-only',hidden);refs.toggle.textContent=hidden?'Hiện bảng':'Ẩn bảng';if(dialog.open)fit();}
   function setAlpha(v){dialog.style.setProperty('--panel-alpha',String(v/100));refs.alphaValue.textContent=v+'%';refs.alpha.value=v;}
   function close(){
     if(!dialog?.open)return;
@@ -317,12 +317,15 @@ function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,on
     const ids=getIds(),index=ids.indexOf(record.id);
     refs.title.textContent=`${record.label} · ${index+1}/${ids.length}`;refs.prev.disabled=index<=0;refs.next.disabled=index<0||index>=ids.length-1;
     renderBody();if(rectified)buildSheetMarks(record.profile);else{sheetProfile='';refs.layer.replaceChildren();}
+    setPanelHidden(!!rectified);refs.toggle.hidden=!!rectified;refs.alphaWrap.hidden=!!rectified;
+    refs.note.textContent=rectified?'':'Ảnh chưa căn được: sửa đáp án bằng bảng bên dưới.';
   }
   function open(){
     const record=getRecord();if(!record?.answers||!record.source)return;
+    if(dialog?.open)return;
     if(!dialog)build();
     returnFocus=document.activeElement;
-    load(record);setAlpha(storedAlpha());setPanelHidden(false);
+    load(record);setAlpha(storedAlpha());
     controller=new AbortController();const {signal}=controller;
     refs.sbd.addEventListener('input',()=>{draft.studentId=refs.sbd.value;dirty=true;},{signal});
     refs.code.addEventListener('change',()=>{

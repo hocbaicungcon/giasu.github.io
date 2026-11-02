@@ -89,3 +89,28 @@ body.ed-open{overflow:hidden}
 .ed-mid .ed-title{flex:0 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ed-mid .ed-tool{font-size:22px;padding:0}.ed-mid .ed-tool:disabled{opacity:.35}
 .ed-ask{display:flex;flex-direction:column;gap:8px}.ed-ask .ed-btn{min-height:50px;font-size:16px}
+
+/* Ảnh và bảng có vùng riêng, không chồng lên nhau. */
+.ed-overlay[open]{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,42%);grid-template-rows:auto minmax(0,1fr) auto;grid-template-areas:"top top" "image panel" "bar bar";height:100vh;height:100dvh}
+.ed-overlay .ed-top{grid-area:top;position:relative;inset:auto}
+.ed-overlay .ed-stage{grid-area:image;position:relative;inset:auto;min-width:0;min-height:0}
+.ed-overlay .ed-panel{grid-area:panel;position:relative;inset:auto;width:100%;max-width:none;min-width:0;min-height:0;margin:0;border-radius:0;background:rgba(var(--ed-panel),var(--panel-alpha,.75))}
+.ed-overlay .ed-bar{grid-area:bar;position:relative;inset:auto}
+.ed-overlay .ed-body{min-height:0}
+.ed-overlay.ed-image-only{grid-template-columns:minmax(0,1fr);grid-template-areas:"top" "image" "bar"}
+@media(max-width:700px){
+ .ed-overlay[open]{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1.2fr) minmax(0,1fr) auto;grid-template-areas:"top" "image" "panel" "bar"}
+ .ed-overlay.ed-image-only{grid-template-rows:auto minmax(0,1fr) auto;grid-template-areas:"top" "image" "bar"}
+ .ed-overlay .ed-head{grid-template-columns:repeat(3,minmax(0,1fr));padding:6px;gap:4px}
+ .ed-overlay .ed-head .ed-field:first-child{display:none}
+ .ed-overlay .ed-score{grid-column:span 2;flex-direction:row;align-items:center;gap:6px;flex-wrap:wrap}
+ .ed-overlay .ed-score strong{font-size:22px}
+ .ed-overlay .ed-partscores{font-size:11px}
+}
+.download-ready{width:min(480px,calc(100% - 24px));max-height:85dvh;overflow:auto;border:0;border-radius:16px;padding:20px;color:#16323b;background:#fff;line-height:1.6}
+.download-ready::backdrop{background:#0008}
+.download-ready p{overflow-wrap:anywhere}
+.download-ready .download-actions{display:flex;gap:10px;flex-wrap:wrap}
+
+.ed-overlay .ed-bar [hidden]{display:none}
+.ed-overlay.ed-image-only .ed-bar::before{content:"Bấm vào câu trên ảnh để sửa · Chụm hai ngón để phóng to";font-size:12px;color:var(--ed-muted);flex:1;min-width:0}

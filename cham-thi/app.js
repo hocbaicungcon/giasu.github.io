@@ -814,7 +814,26 @@ function refresh() {
   }
 }
 function download(data, filename, type) {
-  const url = URL.createObjectURL(new Blob([data], { type })), link = document.createElement('a'); link.href = url; link.download = filename; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  const url = URL.createObjectURL(new Blob([data], { type })), link = document.createElement('a');
+  link.href = url; link.download = filename;
+  document.body.append(link); link.click(); link.remove();
+  const mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if (!mobile) { setTimeout(() => URL.revokeObjectURL(url), 60000); return; }
+  const dialog = document.createElement('dialog'); dialog.className = 'download-ready';
+  dialog.setAttribute('aria-label', 'Tệp vừa yêu cầu tải');
+  const heading = document.createElement('h2'); heading.textContent = 'Tìm tệp vừa tải';
+  const name = document.createElement('p'); name.textContent = filename;
+  const help = document.createElement('p');
+  help.textContent = /iPhone|iPad|iPod/i.test(navigator.userAgent) || navigator.platform === 'MacIntel'
+    ? 'Trong Safari, bấm nút tải xuống (↓) để xem tiến trình và mở tệp. Hoặc mở ứng dụng Tệp → Duyệt → thư mục Tải về (Downloads) tại vị trí đã chọn trong cài đặt Safari.'
+    : 'Trong Chrome, mở menu ⋮ → Tệp đã tải xuống (Downloads), rồi bấm tên tệp. Bạn cũng có thể mở ứng dụng Tệp / Quản lý tệp → Download.';
+  const note = document.createElement('p'); note.textContent = 'Trang web không thể tự mở thư mục Download hoặc xác nhận tải đã hoàn tất. Nếu trình duyệt yêu cầu xác nhận, hãy chọn Tải xuống.';
+  const actions = document.createElement('div'); actions.className = 'download-actions';
+  const open = document.createElement('a'); open.className = 'button'; open.textContent = 'Mở tệp vừa tạo'; open.href = url; open.target = '_blank'; open.rel = 'noopener';
+  const close = document.createElement('button'); close.type = 'button'; close.className = 'button'; close.textContent = 'Đóng'; close.onclick = () => dialog.close();
+  actions.append(open, close); dialog.append(heading, name, help, note, actions); document.body.append(dialog);
+  dialog.addEventListener('close', () => { dialog.remove(); setTimeout(() => URL.revokeObjectURL(url), 60000); }, { once: true });
+  dialog.showModal();
 }
 async function exportReport(type) {
   if (!records.length || G.validateConfig(config()).length) return;

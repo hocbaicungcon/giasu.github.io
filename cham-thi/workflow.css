@@ -1,0 +1,32 @@
+/* Một nhiệm vụ trên mỗi màn hình, trên cả điện thoại và máy tính. */
+.grading-page .hero{display:none!important}
+.grading-page main{display:flex;flex-direction:column;gap:16px;max-width:1000px}
+.grading-page .steps{display:contents}
+.grading-page .panel{margin-top:0}
+.grading-page[data-mobile-view="setup"] .scan,.grading-page[data-mobile-view="setup"] .batch-panel,.grading-page[data-mobile-view="setup"] .results,
+.grading-page[data-mobile-view="scan"] .key,.grading-page[data-mobile-view="scan"] .batch-panel,.grading-page[data-mobile-view="scan"] .results,
+.grading-page[data-mobile-view="results"] .steps{display:none!important}
+.grading-page[data-mobile-view="setup"] main .steps{display:contents}
+.grading-page .configuration{padding:12px;margin:12px 0 0}
+.grading-page .configuration .section-head{display:none}
+.grading-page .workflow-more{padding:12px 0;border-top:1px solid #dce4e7}
+.grading-page .workflow-more>summary{cursor:pointer;font-weight:600;color:inherit;min-height:32px;line-height:1.5}
+.grading-page .workflow-more[open]>summary{margin-bottom:12px}
+.grading-page .workflow-next{display:block;width:100%;margin-top:20px}
+.grading-page .mobile-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;background:var(--surface,#fff);padding:12px max(16px,calc((100% - 960px)/2));position:sticky;top:0;z-index:30;border-bottom:1px solid #dce4e7}
+.grading-page .mobile-nav button{display:flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:10px 6px;background:transparent;color:#57717a;font:600 15px/1.3 inherit;cursor:pointer;min-height:48px}
+.grading-page .mobile-nav button[aria-current]{background:#e4f1ed;color:#205a49}
+.grading-page .mobile-nav button .flow-number{display:inline-grid;place-items:center;width:26px;height:26px;border:1px solid currentColor;border-radius:50%;font-size:14px;flex:none}
+.grading-page .mobile-nav button .nav-label{font-size:14px;line-height:1.3}
+.grading-page .mobile-empty:not([hidden]){display:block;text-align:center;padding:30px}
+.grading-page .export-actions{display:flex;flex-wrap:wrap}
+.grading-page .export-actions>*{flex:1;min-width:180px}
+.grading-page #answers{margin-top:12px}
+@media(max-width:600px){
+ .grading-page .mobile-nav{position:fixed;top:auto;bottom:0;padding:6px 8px calc(6px + env(safe-area-inset-bottom));gap:4px}
+ .grading-page .mobile-nav button{flex-direction:column;gap:4px;padding:4px;font-size:12px}
+ .grading-page .mobile-nav button .nav-label{font-size:12px}
+ .grading-page .key .import-controls{display:flex;gap:8px}
+ .grading-page .key .import-controls>button{flex:1}
+ .grading-page .config-grid{grid-template-columns:1fr}
+}
