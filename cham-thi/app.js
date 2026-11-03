@@ -36,8 +36,10 @@ const previousModes = [1, 2, 3].map(i => $('mode' + i).value);
 const format = (value, digits = 2) => value.toLocaleString('vi-VN', { maximumFractionDigits: digits });
 const emptyKeys = () => ({ p1: [], p2: [], p3: [] });
 const current = () => records.find(record => record.id === activeId);
+let editFromViewer = false;
 const paperViewer = window.ChamTNPaperViewer.create({
   dialog: $('paperViewer'),
+  edit: id => { selectRecord(id); editFromViewer = true; editOverlay.open(); },
   download: async (id,type) => {
     const record=records.find(record=>record.id===id);if(!record)throw new Error('Phiếu không còn trong danh sách.');
     const label=record.label.replace(/\.[a-z0-9]{2,5}(?=\s|$)/gi,'').replace(/[^\p{L}\p{N}._-]+/gu,'-').slice(0,90)||'bai-lam';
@@ -365,6 +367,7 @@ function deleteCurrentRecord() {
 $('deleteCurrentRecord').onclick = deleteCurrentRecord;
 const editOverlay = window.ChamTNEditOverlay.create({
   G, OMR, assess, format, getRecord: current, getIds: () => records.filter(r => r.answers && r.source).map(r => r.id), select: selectRecord, counts: () => [count(0), count(1), count(2)], examCodes: () => exams.map(exam => exam.code),
+  onClose(id) { if (editFromViewer) { editFromViewer = false; if (records.some(record => record.id === id)) paperViewer.open(id); } },
   onCommit(record, draft) {
     if (!records.includes(record)) return;
     if (!record.omrOriginal) record.omrOriginal = { answers: JSON.parse(JSON.stringify(record.answers)), flags: JSON.parse(JSON.stringify(record.flags)), studentId: record.studentId || '', keyCode: record.keyCode || '' };
@@ -374,7 +377,7 @@ const editOverlay = window.ChamTNEditOverlay.create({
     renderAnswers(); refresh();
   }
 });
-$('editFullscreen').onclick = () => editOverlay.open();
+$('editFullscreen').onclick = () => { const record = current(); if (record?.answers) paperViewer.open(record.id); };
 function draw() {
   const r = current(); canvas.classList.toggle('annotated', annotatedView);
   window.ChamTNIcons.label($('viewAnnotated'), annotatedView ? 'Xem ảnh gốc' : 'Xem bài đã chấm', 'eye');
@@ -773,15 +776,17 @@ function refresh() {
     if (item.record.answers) {
       const thumb = document.createElement('button'); thumb.type = 'button'; thumb.className = 'paper-thumb';
       thumb.setAttribute('aria-label', `Xem toàn màn hình ${item.record.label}`);
+      if (item.record.id === activeId) thumb.setAttribute('aria-current', 'true');
       const picture = document.createElement('canvas'); picture.width = 70; picture.height = 99;
       picture.getContext('2d').drawImage(item.record.source,0,0,70,99);
-      const caption = document.createElement('span'); caption.textContent = `Bài ${records.indexOf(item.record)+1}${item.result?.scores ? ' · '+format(item.result.total)+' điểm' : ''}`;
+      const caption = document.createElement('span'); caption.textContent = `${item.record.studentId ? 'SBD ' + item.record.studentId : 'Bài ' + (records.indexOf(item.record)+1)}${item.result?.scores ? ' · '+format(item.result.total)+' điểm' : ''}`;
       thumb.append(picture,caption); thumb.onclick = () => paperViewer.open(item.record.id); $('batchThumbnails').appendChild(thumb);
     }
     const row = document.createElement('tr'); if (item.record.id === activeId) row.className = 'selected';
-    const cell = document.createElement('td'), button = document.createElement('button'); button.textContent = item.record.label; button.onclick = () => selectRecord(item.record.id); cell.appendChild(button); row.appendChild(cell);
-    for (const value of [item.record.studentId || '—', item.record.keyCode || item.record.examCode || '—', ...(item.result?.scores?.map(v => format(v)) || ['—', '—', '—']), item.result?.scores ? format(item.result.total) : '—', item.status + (reviewIssues(item.record).length ? ' · ' + reviewIssues(item.record).map(issue => issue.label).join(', ') : '')]) { const td = document.createElement('td'); td.textContent = value; row.appendChild(td); }
-    row.lastChild.className = 'status-cell'; $('batchRows').appendChild(row);
+    const cell = document.createElement('td'), button = document.createElement('button'); button.textContent = item.record.label; button.onclick = () => { if (item.record.answers) paperViewer.open(item.record.id); else selectRecord(item.record.id); }; cell.appendChild(button); row.appendChild(cell);
+    const shortStatus = item.result?.configErrors?.length ? 'Lỗi cấu hình' : !item.record.answers ? 'Chưa đọc phiếu' : !item.result?.scores ? 'Chưa tính điểm' : item.result.warnings.length ? 'Thiếu đáp án' : reviewIssues(item.record).length || (item.record.studentUncertain && !item.record.studentEdited) || (item.record.examUncertain && exams.length) ? 'Cần xem lại' : 'Đã chấm';
+    for (const value of [item.record.studentId || '—', item.record.keyCode || item.record.examCode || '—', ...(item.result?.scores?.map(v => format(v)) || ['—', '—', '—']), item.result?.scores ? format(item.result.total) : '—', shortStatus]) { const td = document.createElement('td'); td.textContent = value; row.appendChild(td); }
+    row.lastChild.className = 'status-cell'; row.lastChild.title = item.status; $('batchRows').appendChild(row);
   }
   if (r?.answers) {
     const item = items.find(item => item.record.id === r.id), result = item.result;

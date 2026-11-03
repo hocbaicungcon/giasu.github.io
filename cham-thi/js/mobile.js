@@ -38,19 +38,34 @@
   const keyPanel = document.querySelector('.panel.key');
   const configuration = document.querySelector('.configuration');
   const settings = disclosure('1. Nhập số câu và thang điểm', [configuration], keyPanel, keyPanel.querySelector('.section-head').nextSibling);
+  settings.classList.add('workflow-settings');
+  const done = document.createElement('button'); done.type = 'button'; done.className = 'button primary workflow-done'; done.textContent = 'Xong';
+  done.addEventListener('click', () => {
+    const invalid = [...configuration.querySelectorAll('input, select')].find(input => !input.checkValidity());
+    if (invalid) { invalid.reportValidity(); return; }
+    const error = document.getElementById('configError');
+    if (error.textContent.trim()) { error.scrollIntoView({ block: 'center', behavior: 'smooth' }); return; }
+    settings.open = false;
+    settings.querySelector('summary').focus();
+  });
+  configuration.append(done);
   const summary = document.getElementById('examSummary');
   const updateSummary = () => { settings.querySelector('summary').textContent = '1. Nhập số câu và thang điểm · ' + summary.textContent; };
   new MutationObserver(updateSummary).observe(summary, { childList: true, subtree: true, characterData: true }); updateSummary();
   const qrDetails = disclosure('Cách 2: Nhập bằng QR · phiếu mẫu & hướng dẫn', [...keyPanel.querySelectorAll(':scope > .hint')].filter(node => !node.id), keyPanel, document.getElementById('importStatus'));
   // Các nút QR có id để các luồng nhập cũ tiếp tục hoạt động.
+  qrDetails.classList.add('workflow-qr');
   qrDetails.append(document.getElementById('createAnswerQr'), document.getElementById('openQrImport'));
   const manualDetails = disclosure('Cách 3: Nhập trực tiếp / sửa từng câu', [keyPanel.querySelector('.manual-key-form'), document.getElementById('manualKeyStatus'), ...[1, 2, 3].map(i => document.getElementById('keyWrap' + i))], keyPanel);
-  const answerMethods = document.createElement('section'); answerMethods.className = 'workflow-more';
+  manualDetails.classList.add('workflow-manual');
+  const answerMethods = document.createElement('section'); answerMethods.className = 'workflow-more workflow-methods';
   const methodsTitle = document.createElement('h3'); methodsTitle.textContent = '2. Nhập đáp án theo một trong 3 cách sau:';
   const fileTitle = document.createElement('h4'); fileTitle.textContent = 'Cách 1: Tải tệp Excel, PDF hoặc Word';
   keyPanel.insertBefore(answerMethods, keyPanel.querySelector('.import-controls'));
-  answerMethods.append(methodsTitle, fileTitle, keyPanel.querySelector('.import-controls'), document.getElementById('importStatus'), qrDetails, manualDetails, document.getElementById('examPicker'), document.getElementById('examInfo'));
-  disclosure('3. Quản lí/xóa đáp án', [keyPanel.querySelector('.key-delete-actions')], keyPanel);
+  const fileMethod = document.createElement('div'); fileMethod.className = 'workflow-file';
+  fileMethod.append(fileTitle, keyPanel.querySelector('.import-controls'));
+  answerMethods.append(methodsTitle, fileMethod, document.getElementById('importStatus'), qrDetails, manualDetails, document.getElementById('examPicker'), document.getElementById('examInfo'));
+  disclosure('3. Quản lí/xóa đáp án', [keyPanel.querySelector('.key-delete-actions')], keyPanel).classList.add('workflow-management');
   const scan = document.querySelector('.panel.scan');
   disclosure('Tùy chọn quét & căn góc thủ công', [...scan.querySelectorAll('.preview-setting, .sound-setting, .manual-help, .scan-status, .scan-actions, .scan-utilities')], scan);
   const batch = document.getElementById('batchPanel'), exports = batch.querySelector('.export-actions');
@@ -59,9 +74,6 @@
   const results = document.getElementById('results');
   disclosure('Sửa đáp án bằng bảng', [document.getElementById('answers'), document.getElementById('deleteCurrentRecord')], results);
   document.getElementById('editFullscreen').classList.add('primary', 'button');
-  document.getElementById('batchListDisclosure').open = true;
-  const thumbnails = document.getElementById('batchThumbnails');
-  disclosure('Xem ảnh thu nhỏ', [thumbnails], document.getElementById('batchListDisclosure'), thumbnails);
   disclosure('Hướng dẫn sử dụng & câu hỏi thường gặp', [document.getElementById('huong-dan')], document.getElementById('main'));
   for (const [parent, view, text] of [[keyPanel, 'scan', 'Tiếp tục → Quét bài'], [scan, 'results', 'Xem điểm →']]) {
     const button = document.createElement('button'); button.type = 'button'; button.className = 'button primary workflow-next'; button.dataset.view = view; button.textContent = text; parent.append(button);

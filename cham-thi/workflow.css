@@ -32,3 +32,79 @@
 }
 
 .grading-page .workflow-more .grading-guide{display:block;margin-top:0}
+
+/* Màu hỗ trợ nhận biết; mỗi mục vẫn có số và tên rõ ràng. */
+.grading-page .workflow-more{--section-rgb:100,116,139;margin:12px 0;padding:14px;border:1px solid rgba(var(--section-rgb),.3);border-left:4px solid rgb(var(--section-rgb));border-radius:12px;background:rgba(var(--section-rgb),.07)}
+.grading-page .workflow-settings{--section-rgb:20,148,122}
+.grading-page .workflow-methods,.grading-page .workflow-file{--section-rgb:62,139,210}
+.grading-page .workflow-qr{--section-rgb:153,111,213}
+.grading-page .workflow-manual{--section-rgb:30,157,173}
+.grading-page .workflow-management{--section-rgb:205,143,52}
+.grading-page .workflow-file{padding:12px;margin:12px 0;border-left:4px solid rgb(var(--section-rgb));border-radius:8px;background:rgba(var(--section-rgb),.07)}
+.grading-page .workflow-methods>h3,.grading-page .workflow-file>h4{margin:0 0 12px;line-height:1.5}
+.grading-page .workflow-done{display:block;min-width:120px;margin:16px 0 0 auto}
+.grading-page .configuration .part-config:nth-child(1){border-top:4px solid #3e8bd2}
+.grading-page .configuration .part-config:nth-child(2){border-top:4px solid #996fd5}
+.grading-page .configuration .part-config:nth-child(3){border-top:4px solid #cd8f34}
+.grading-page #keyWrap1,.grading-page #keyWrap2,.grading-page #keyWrap3{padding:12px;border-radius:8px;border-left:4px solid #3e8bd2;margin-top:14px}
+.grading-page #keyWrap2{border-color:#996fd5}
+.grading-page #keyWrap3{border-color:#cd8f34}
+
+.grading-page .paper-viewer-top>div{flex:1;min-width:0}
+.grading-page .paper-viewer-top .paper-edit{flex:none;min-width:64px;min-height:44px;color:#fff;background:#287b65;border:1px solid #65b89f;margin-left:8px}
+.grading-page #batchListDisclosure>h3{margin:16px 0 12px;font-size:18px}
+.grading-page #batchThumbnails{margin-bottom:16px}
+
+/* Bảng màu riêng của quy trình chấm thi, theo theme đang chọn. */
+body.grading-page{--grading-surface:#fff;--grading-soft:#f3f7fa;--grading-ink:#233b47;--grading-line:#cddbe2;--grading-important:#fff2cc;--grading-important-ink:#654200;--grading-important-line:#c58a19}
+html[data-theme="dark"] body.grading-page{--grading-surface:#202b30;--grading-soft:#29373e;--grading-ink:#e0edf2;--grading-line:#465b65;--grading-important:#423619;--grading-important-ink:#ffe4a1;--grading-important-line:#d3a340}
+body.grading-page .key>.workflow-more{padding:16px;margin:12px 0}
+body.grading-page .key>.workflow-more>summary,body.grading-page .workflow-methods>h3{font-size:18px;font-weight:700;line-height:1.45;min-height:28px;margin:0}
+body.grading-page .workflow-methods>.workflow-more{padding:12px;margin:10px 0}
+body.grading-page .workflow-methods>.workflow-more>summary,body.grading-page .workflow-file>h4{font-size:16px;font-weight:600;line-height:1.45;min-height:24px;margin:0}
+body.grading-page .workflow-file{padding:12px;margin:12px 0}
+body.grading-page .workflow-file>.import-controls{margin-top:12px}
+body.grading-page .configuration{padding:0;margin-top:16px;background:transparent;border:0}
+body.grading-page .configuration .config-grid{align-items:start;gap:12px}
+body.grading-page .configuration .part-config{min-width:0;padding:12px;background:var(--grading-surface);color:var(--grading-ink);border-color:var(--grading-line)}
+body.grading-page .configuration .part-config:nth-child(1){border-top-color:#3e8bd2}
+body.grading-page .configuration .part-config:nth-child(2){border-top-color:#996fd5}
+body.grading-page .configuration .part-config:nth-child(3){border-top-color:#cd8f34}
+body.grading-page .configuration .part-config .config-row{background:transparent;color:var(--grading-ink)}
+body.grading-page .configuration :is(input,select){background:var(--grading-surface);color:var(--grading-ink);border-color:var(--grading-line)}
+body.grading-page .configuration .grading-rule{display:flex;flex-direction:column;gap:8px;margin-top:12px;padding:12px;border:2px solid var(--grading-important-line);border-radius:10px;background:var(--grading-important);color:var(--grading-important-ink);font-weight:700}
+body.grading-page .configuration .grading-rule select{min-height:44px;border:2px solid var(--grading-important-line);font-weight:700;width:100%;max-width:100%}
+body.grading-page .configuration .grading-rule small{color:inherit;font-size:13px;font-weight:400;line-height:1.4}
+body.grading-page #batchListDisclosure,body.grading-page #reviewDisclosure,body.grading-page #reviewDisclosure>summary{background:var(--grading-surface);color:var(--grading-ink);border-color:var(--grading-line)}
+body.grading-page #batchListDisclosure :is(h3,th,td){color:var(--grading-ink)}
+body.grading-page #batchListDisclosure th{background:var(--grading-soft)}
+body.grading-page #batchListDisclosure td{background:var(--grading-surface);border-color:var(--grading-line)}
+body.grading-page #batchListDisclosure .table-scroll{border-color:var(--grading-line)}
+body.grading-page #batchListDisclosure .batch-thumb{background:var(--grading-soft);color:var(--grading-ink);border-color:var(--grading-line)}
+body.grading-page #batchListDisclosure .status-cell{white-space:nowrap;width:120px}
+html[data-theme="dark"] body.grading-page .key :is(input,select,textarea){background:var(--grading-surface);color:var(--grading-ink);border-color:var(--grading-line)}
+html[data-theme="dark"] body.grading-page .configuration .part-config,html[data-theme="dark"] body.grading-page .configuration .part-config .config-row{background:var(--grading-surface);color:var(--grading-ink)}
+html[data-theme="dark"] body.grading-page .configuration .grading-rule{color:var(--grading-important-ink)}
+@media(max-width:600px){body.grading-page .key>.workflow-more{padding:12px}body.grading-page .key>.workflow-more>summary,body.grading-page .workflow-methods>h3{font-size:17px}}
+
+body.grading-page .configuration .part-config legend,body.grading-page .configuration .part-config legend small{color:var(--grading-ink)}
+
+body.grading-page .results .scorebar>div{background:var(--grading-soft);border:1px solid var(--grading-line);border-top:3px solid #3e8bd2}
+body.grading-page .results .scorebar>div:nth-child(3){border-top-color:#996fd5}
+body.grading-page .results .scorebar>div:nth-child(4){border-top-color:#cd8f34}
+body.grading-page .results .scorebar small{color:var(--grading-ink);font-size:11px;opacity:.85}
+body.grading-page .results .scorebar strong{color:var(--grading-ink);font-size:24px;font-weight:700;white-space:nowrap;line-height:1.35}
+body.grading-page .results .scorebar>div:first-child{background:#164e63;border-color:#28758e}
+body.grading-page .results .scorebar>div:first-child small{color:#d8edf6;opacity:1}
+body.grading-page .results .scorebar>div:first-child strong{color:#fff}
+@media(max-width:600px){body.grading-page .results .scorebar strong{font-size:18px}body.grading-page .results .scorebar small{font-size:10px}}
+
+body.grading-page .configuration .hint{color:var(--grading-ink);opacity:.85}
+html[data-theme="dark"] body.grading-page :is(.results,.configuration) .warning:not(:empty){color:var(--grading-important-ink);background:var(--grading-important);border-left:3px solid var(--grading-important-line);border-radius:6px;padding:10px 12px}
+
+body.grading-page #batchListDisclosure .paper-thumb{background:var(--grading-soft);color:var(--grading-ink);border-color:var(--grading-line)}
+body.grading-page #batchListDisclosure .paper-thumb[aria-current]{border:2px solid #58a7d8;box-shadow:0 0 0 2px rgba(88,167,216,.2)}
+body.grading-page #batchListDisclosure .paper-thumb span{color:inherit;line-height:1.4}
+body.grading-page #batchListDisclosure tr.selected td{background:rgba(62,139,210,.12)}
+body.grading-page #batchListDisclosure td:nth-child(7){font-weight:700;font-size:16px}
+body.grading-page #batchListDisclosure td button{color:inherit;min-height:44px}

@@ -4,10 +4,12 @@ function swipeDirection(dx,dy,duration=0){
  if(duration>1600||Math.max(Math.abs(dx),Math.abs(dy))<45)return 0;
  return Math.abs(dx)>Math.abs(dy)?(dx>0?1:-1):(dy<0?1:-1);
 }
-function create({dialog,getIds,render,download}){
+function create({dialog,getIds,render,download,edit}){
  const stage=dialog.querySelector('.paper-viewer-stage'),canvas=dialog.querySelector('canvas');
  const previous=dialog.querySelector('[data-paper-prev]'),next=dialog.querySelector('[data-paper-next]');
  let currentId='',start=null,returnFocus=null,downloading=false;
+ const editButton=dialog.querySelector('[data-paper-edit]');
+ if(editButton)editButton.onclick=()=>{if(!currentId||!edit)return;const id=currentId;dialog.close();edit(id);};
  const downloads=Array.from(dialog.querySelectorAll('[data-paper-download]')),status=dialog.querySelector('[data-paper-download-status]');
  for(const button of downloads)button.onclick=async()=>{
   if(downloading||!currentId)return;const id=currentId;downloading=true;downloads.forEach(b=>b.disabled=true);status.textContent='Đang tạo ảnh…';
@@ -21,6 +23,7 @@ function create({dialog,getIds,render,download}){
   dialog.querySelector('[data-paper-title]').textContent=item.label;
   dialog.querySelector('[data-paper-counter]').textContent=`${index+1} / ${ids.length}${item.score?' · '+item.score:''}`;
   previous.disabled=index===0;next.disabled=index===ids.length-1;
+  if(editButton)editButton.disabled=!edit||item.editable===false;
  }
  function move(direction){const ids=getIds(),index=ids.indexOf(currentId),target=index+direction;if(target>=0&&target<ids.length)show(ids[target]);}
  previous.onclick=()=>move(-1);next.onclick=()=>move(1);

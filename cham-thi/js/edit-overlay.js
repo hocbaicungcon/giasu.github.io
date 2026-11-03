@@ -8,7 +8,7 @@ function storedAlpha(){try{const v=Number(localStorage.getItem(ALPHA_KEY));retur
 function saveAlpha(v){try{localStorage.setItem(ALPHA_KEY,String(v));}catch(_){}}
 
 // Chỉnh sửa trên bản nháp: assess/grade dùng lại logic chấm của trang, không chạy lại OMR.
-function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,onCommit}){
+function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,onCommit,onClose}){
   let codes=[],dialog=null,draft=null,original=null,controller=null,dirty=false,cells=[],refs={},view={s:1,x:0,y:0,base:1,box:null},returnFocus=null;
 
   function build(){
@@ -290,9 +290,10 @@ function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,on
   function setAlpha(v){dialog.style.setProperty('--panel-alpha',String(v/100));refs.alphaValue.textContent=v+'%';refs.alpha.value=v;}
   function close(){
     if(!dialog?.open)return;
+    const closedId=original?.id;
     closeQuestion();sheetProfile='';controller?.abort();controller=null;dialog.close();document.body.classList.remove('ed-open');
     refs.canvas.width=refs.canvas.height=0;refs.layer.replaceChildren();refs.body.replaceChildren();cells=[];draft=original=null;
-    returnFocus?.focus?.();returnFocus=null;
+    returnFocus?.focus?.();returnFocus=null;onClose?.(closedId);
   }
   async function requestClose(){
     if(dirty&&await ask('Bỏ các thay đổi chưa lưu?',[['Bỏ thay đổi','discard',true],['Ở lại','cancel']])!=='discard')return;
@@ -340,7 +341,7 @@ function create({G,OMR,getRecord,getIds,select,assess,format,counts,examCodes,on
     refs.cancel.addEventListener('click',requestClose,{signal});
     refs.prev.addEventListener('click',()=>navigate(-1),{signal});refs.next.addEventListener('click',()=>navigate(1),{signal});
     dialog.addEventListener('keydown',e=>{if(!refs.popup.hidden||/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName))return;if(e.key==='ArrowLeft')navigate(-1);else if(e.key==='ArrowRight')navigate(1);},{signal});
-    refs.save.addEventListener('click',()=>{const target=original,data=draft,changed=dirty;close();if(changed)onCommit(target,data);},{signal});
+    refs.save.addEventListener('click',()=>{const target=original,data=draft,changed=dirty;if(changed)onCommit(target,data);close();},{signal});
     dialog.addEventListener('cancel',e=>{e.preventDefault();if(!refs.popup.hidden)closeQuestion();else requestClose();},{signal});
     const refit=()=>{if(Math.abs(view.s-1)<.02)fit();};window.addEventListener('resize',refit,{signal});window.addEventListener('orientationchange',()=>setTimeout(fit,250),{signal});
     bindGestures(signal);
