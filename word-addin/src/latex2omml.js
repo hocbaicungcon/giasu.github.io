@@ -81,6 +81,10 @@ class Parser {
     for (;;) {
       this.ws();
       const c = this.s[this.i];
+      if (c === BS && (atom.k === 'pendNary' || atom.k === 'pendFunc')) {   // \lim\limits_{..}: the modifier belongs to the operator
+        const m = /^\\(?:no)?limits(?![A-Za-z])/.exec(this.s.slice(this.i));
+        if (m) { this.i += m[0].length; continue; }
+      }
       if (c === '^' && !sup) { this.i++; sup = this.arg(true); } else if (c === '_' && !sub) { this.i++; sub = this.arg(true); } else break;
     }
     if (atom.k === 'pendNary' || atom.k === 'pendFunc') { atom.sub = sub; atom.sup = sup; return atom; }
