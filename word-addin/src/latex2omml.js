@@ -189,10 +189,11 @@ class Parser {
       return this.run(this.raw().replace(/\\([%&#$_{}])/g, '$1').replace(/\\ /g, ' '), 'nor');
     }
     if (name === 'mathrm' || name === 'operatorname' || name === 'mathbf' || name === 'boldsymbol' || name === 'mathit' || name === 'bm' ||
-        name === 'mathbb' || name === 'mathcal' || name === 'mathsf' || name === 'mathtt' || name === 'mathfrak' || name === 'textbf' || name === 'mathscr') {
+        name === 'mathbb' || name === 'mathcal' || name === 'mathsf' || name === 'mathtt' || name === 'mathfrak' || name === 'textbf' || name === 'mathscr' ||
+        name === 'textit' || name === 'emph' || name === 'textsf' || name === 'texttt' || name === 'textsl') {
       const body = this.arg();
       if (name === 'operatorname') return { k: 'pendFunc', name: nodesText(body), plain: true };
-      const sty = { mathrm: 'p', mathbf: 'b', boldsymbol: 'b', bm: 'b', textbf: 'b', mathit: 'i', mathsf: 'p', mathtt: 'p', mathbb: 'dbl', mathcal: 'scr', mathfrak: 'fra', mathscr: 'scr' }[name];
+      const sty = { mathrm: 'p', mathbf: 'b', boldsymbol: 'b', bm: 'b', textbf: 'b', mathit: 'i', mathsf: 'p', mathtt: 'p', mathbb: 'dbl', mathcal: 'scr', mathfrak: 'fra', mathscr: 'scr', textit: 'i', emph: 'i', textsl: 'i', textsf: 'p', texttt: 'p' }[name];
       return { k: 'group', nodes: styled(body, sty, name === 'mathbb') };
     }
     if (has(NARY_OPS, name)) return { k: 'pendNary', op: name, sub: null, sup: null };
