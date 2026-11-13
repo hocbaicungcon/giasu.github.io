@@ -221,7 +221,7 @@
         <bt:String id="GroupMath" DefaultValue="Công thức"/>
         <bt:String id="GroupFigs" DefaultValue="Hình, phiếu, đề"/>
         <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
-        <bt:String id="Label_eq" DefaultValue="Công thức"/>
+        <bt:String id="Label_eq" DefaultValue="Chuyển đổi"/>
         <bt:String id="Label_editor" DefaultValue="Soạn thảo"/>
         <bt:String id="Label_exam" DefaultValue="Đề thi"/>
         <bt:String id="Label_about" DefaultValue="Giới thiệu"/>
@@ -231,7 +231,7 @@
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
-        <bt:String id="Desc_eq" DefaultValue="Quét tài liệu, chuyển đổi công thức giữa MathType, công thức Word và LaTeX."/>
+        <bt:String id="Desc_eq" DefaultValue="Quét tài liệu, chuyển đổi hàng loạt công thức (MathType, Word, LaTeX) và hình vẽ TikZ."/>
         <bt:String id="Desc_editor" DefaultValue="Soạn hoặc sửa công thức bằng LaTeX có xem trước, ghi vào Word hoặc MathType."/>
         <bt:String id="Desc_exam" DefaultValue="Chuẩn hóa câu hỏi, trộn đề, bảng đáp án Excel và bài trình chiếu PPTX."/>
         <bt:String id="Desc_about" DefaultValue="Thông tin tác giả, website và ủng hộ."/>
@@ -440,7 +440,7 @@
         <bt:String id="GroupMath" DefaultValue="Công thức"/>
         <bt:String id="GroupFigs" DefaultValue="Hình, phiếu, đề"/>
         <bt:String id="Button" DefaultValue="Công thức &amp; đề thi"/>
-        <bt:String id="Label_eq" DefaultValue="Công thức"/>
+        <bt:String id="Label_eq" DefaultValue="Chuyển đổi"/>
         <bt:String id="Label_editor" DefaultValue="Soạn thảo"/>
         <bt:String id="Label_exam" DefaultValue="Đề thi"/>
         <bt:String id="Label_about" DefaultValue="Giới thiệu"/>
@@ -450,7 +450,7 @@
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="Desc" DefaultValue="Đọc, chuyển và sửa hàng loạt phương trình MathType; chuẩn hóa và trộn đề."/>
-        <bt:String id="Desc_eq" DefaultValue="Quét tài liệu, chuyển đổi công thức giữa MathType, công thức Word và LaTeX."/>
+        <bt:String id="Desc_eq" DefaultValue="Quét tài liệu, chuyển đổi hàng loạt công thức (MathType, Word, LaTeX) và hình vẽ TikZ."/>
         <bt:String id="Desc_editor" DefaultValue="Soạn hoặc sửa công thức bằng LaTeX có xem trước, ghi vào Word hoặc MathType."/>
         <bt:String id="Desc_exam" DefaultValue="Chuẩn hóa câu hỏi, trộn đề, bảng đáp án Excel và bài trình chiếu PPTX."/>
         <bt:String id="Desc_about" DefaultValue="Thông tin tác giả, website và ủng hộ."/>
