@@ -342,3 +342,35 @@ export async function writeSelectionSnapshot(pkg, before) {
     return { before, after: null };
   });
 }
+
+/** Plain text of every paragraph in the body (or selection). */
+export async function readParagraphTexts(scope = { kind: 'all' }) {
+  return run(async (context) => {
+    const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
+    coll.load('items/text');
+    await context.sync();
+    return coll.items.map((p) => p.text);
+  });
+}
+
+/**
+ * Replace paragraph ranges [{start,end,pkg}] (indexes into the same scope snapshot) by OOXML packages.
+ * Works from the last block to the first so earlier indexes stay valid.
+ */
+export async function replaceParagraphRanges(scope, items, onProgress = () => {}, { signal } = {}) {
+  let done = 0;
+  for (const it of [...items].sort((a, b) => b.start - a.start)) {
+    checkCancelled(signal);
+    await run(async (context) => {
+      const coll = scope.kind === 'selection' ? context.document.getSelection().paragraphs : context.document.body.paragraphs;
+      coll.load('items/$none');
+      await context.sync();
+      const first = coll.items[it.start], last = coll.items[it.end];
+      if (!first || !last) throw new Error('Tài liệu đã thay đổi sau khi quét; hãy quét lại.');
+      first.getRange('Start').expandTo(last.getRange('End')).insertOoxml(it.pkg, 'Replace');
+      await context.sync();
+    });
+    onProgress(++done, items.length);
+  }
+  return done;
+}

@@ -218,11 +218,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://giasu.ai.vn/word-addin/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://giasu.ai.vn/bai-viet/1-so-dien-bang-bao-nhieu-kwh-cach-tinh-va-doc-cong-to-dien.html</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -6945,21 +6940,6 @@
   <url>
     <loc>https://giasu.ai.vn/bai-viet/xet-cac-phat-bieu-sau-1-de-phan-biet-anilin-va-ancol-etylic-ta-co-the-dung-dung-dich-naoh.html</loc>
     <lastmod>2024-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://giasu.ai.vn/word-addin/huong-dan.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://giasu.ai.vn/word-addin/su-dung.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://giasu.ai.vn/word-addin/taskpane/taskpane.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

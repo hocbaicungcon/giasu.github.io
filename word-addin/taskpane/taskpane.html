@@ -45,7 +45,7 @@
     <summary>Thầy cô muốn làm gì?</summary>
     <div class="start-actions">
       <button class="secondary" data-start-tab="editor">Thêm công thức</button>
-      <button class="secondary" data-start-tab="eq">Chuyển công thức có sẵn</button>
+      <button class="secondary" data-start-tab="eq">Chuyển đổi hàng loạt</button>
       <button class="secondary" data-start-tab="exam">Soạn đề</button>
       <button class="secondary" data-start-tab="figures">Vẽ hình</button>
     </div>
@@ -62,9 +62,9 @@
     <div id="scan-empty" class="empty-state" hidden><p id="scan-empty-text"></p><button class="secondary" id="scan-show-all">Xem tất cả công thức</button></div>
     <div class="scroll" tabindex="0" role="region" aria-label="Kết quả quét công thức"><table id="eq-table"><thead><tr><th>#</th><th>Đoạn</th><th>Công thức</th><th>Loại</th></tr></thead><tbody></tbody></table></div>
   </fieldset>
-  <fieldset><legend>2. Chuyển công thức</legend>
-    <div class="field"><label for="conv-src">Chuyển từ</label><select id="conv-src"><option value="mathtype" selected>MathType</option><option value="latex">LaTeX</option><option value="markdown">Markdown (kèm LaTeX)</option><option value="word">Công thức Word</option></select></div>
-    <div class="field"><label for="conv-dst">Chuyển sang</label><select id="conv-dst"><option value="mathtype">MathType</option><option value="latex">LaTeX</option><option value="word" selected>Công thức Word</option></select></div>
+  <fieldset><legend>2. Chuyển đổi</legend>
+    <div class="field"><label for="conv-src">Chuyển từ</label><select id="conv-src"><option value="mathtype" selected>MathType</option><option value="latex">LaTeX</option><option value="markdown">Markdown (kèm LaTeX)</option><option value="word">Công thức Word</option><option value="tikz">Mã TikZ (hình vẽ)</option></select></div>
+    <div class="field"><label for="conv-dst">Chuyển sang</label><select id="conv-dst"><option value="mathtype">MathType</option><option value="latex">LaTeX</option><option value="word" selected>Công thức Word</option><option value="figure" hidden disabled>Hình vẽ Word (sửa được)</option><option value="png" hidden disabled>Ảnh PNG</option></select></div>
     <div id="mt-settings-convert" class="mt-box"></div>
     <div class="hint" id="conv-hint"></div>
     <details class="mt-details"><summary>Tùy chọn nâng cao</summary>
@@ -73,7 +73,7 @@
     <p class="hint">Mặc định giữ dấu kết thúc đoạn và chỉ thay nội dung.</p>
     </details>
   </fieldset>
-  <div class="action-dock" aria-label="Chuyển đổi công thức">
+  <div class="action-dock" aria-label="Chuyển đổi">
     <div id="conversion-plan" class="hint" role="status" aria-live="polite">Quét phạm vi đã chọn trước khi chuyển.</div>
     <label><input type="checkbox" id="opt-backup"> Tôi đã lưu một bản sao tài liệu</label>
     <div id="backup-hint" class="hint">Lưu bản sao và đánh dấu xác nhận để bật nút chuyển.</div>

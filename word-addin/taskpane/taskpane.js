@@ -2,6 +2,10 @@ import { convertMarkdownInPackage } from '../src/markdown.js';
 import './polyfills.js';
 import { mountMtSettings, mtOptions, mtConvertOptions, classicLayout } from './mt-settings.js';
 import * as io from '../src/word-io.js';
+import { findTikzBlocks } from '../src/tikz-batch.js';
+import { tikzToScene } from '../src/tikz.js';
+import { sceneToPackage, sceneToSvg } from '../src/figures/scene.js';
+import { makePicturePackage, svgToPngPx } from '../src/picture.js';
 import { attachLatexAutocomplete } from './latex-autocomplete.js';
 import { mountEditorToolbar } from './editor-toolbar.js';
 import { createVisualEditor } from './visual-editor.js';
@@ -108,6 +112,13 @@ async function scan() {
   document.querySelectorAll('input[name=scope]').forEach(el => { el.disabled = true; });
   $('scan-summary').textContent = 'Đang đọc tài liệu…';
   try {
+    if (convSrc() === 'tikz') {
+      const texts = await io.readParagraphTexts({ kind: scope === 'selection' ? 'selection' : 'all' });
+      const { blocks, skipped } = findTikzBlocks(texts);
+      state.scanned = { tikz: blocks, tikzSkipped: skipped, equations: [], markdownBlocks: 0, scope, mode: 'tikz', paragraphCount: texts.length };
+      renderTikzScan();
+      return;
+    }
     const readStart = Date.now();
     const { pkg, paragraphCount } = await (scope === 'selection' ? io.readSelection({ wholeParagraphs: true }) : io.readBody({ scanOnly: true }));
     const readMs = Date.now() - readStart;
@@ -130,7 +141,18 @@ async function scan() {
   }
 }
 
+function renderTikzScan() {
+  const s = state.scanned;
+  $('scan-summary').innerHTML = `Tìm thấy <b class="ok">${s.tikz.length}</b> hình TikZ` + (s.tikzSkipped.length ? ` · <span class="warn">bỏ qua ${s.tikzSkipped.length}</span>` : '');
+  $('scan-filter-status').textContent = '';
+  $('scan-empty').hidden = true;
+  const rows = [...s.tikz.map((b, i) => `<tr><td>${i + 1}</td><td class="muted">Đoạn ${b.start + 1}–${b.end + 1}</td><td><code class="tex">${esc(b.code.slice(0, 120))}${b.code.length > 120 ? '…' : ''}</code></td><td><span class="badge ok">TikZ</span></td></tr>`),
+    ...s.tikzSkipped.map((k) => `<tr><td>–</td><td class="muted">Đoạn ${k.start + 1}</td><td class="muted">${esc(k.reason)}</td><td><span class="badge bad">bỏ qua</span></td></tr>`)];
+  $('eq-table').tBodies[0].innerHTML = rows.join('');
+  syncConversionPlan();
+}
 function renderScan() {
+  if (state.scanned?.mode === 'tikz') return renderTikzScan();
   const s = state.scanned;
   const mt = s.equations.filter((e) => e.kind === 'mathtype');
   const okMt = mt.filter((e) => e.latex !== null).length;
@@ -201,6 +223,8 @@ const convSrc = () => $('conv-src')?.value || 'mathtype';
 const convDst = () => $('conv-dst')?.value || 'word';
 const SRC_KIND = { mathtype: 'mathtype', latex: 'latex', word: 'native' };
 const CONV_HINTS = {
+  'tikz:figure': 'Tự nhận diện mọi môi trường \\begin{tikzpicture}…\\end{tikzpicture} (kể cả tkz-euclide) và thay bằng hình vẽ Word sửa được tại chính vị trí đó. Mã nào chưa hỗ trợ sẽ được giữ nguyên.',
+  'tikz:png': 'Tự nhận diện mọi môi trường \\begin{tikzpicture}…\\end{tikzpicture} và thay bằng ảnh PNG tại chính vị trí đó. Mã nào chưa hỗ trợ sẽ được giữ nguyên.',
   'markdown:word': 'Nên bôi chọn phần Markdown vừa dán. Chuyển thành tiêu đề, chữ đậm/nghiêng, danh sách, bảng Word và công thức Word. Khối mã giữ nguyên dạng mã; ảnh và công thức Word có sẵn được giữ lại.',
   'markdown:mathtype': 'Nên bôi chọn phần Markdown vừa dán. Chuyển thành định dạng Word và công thức LaTeX thành MathType. Các công thức Word có sẵn trong phạm vi cũng chuyển sang MathType.',
   'same:mathtype': 'MathType → MathType: làm lại các công thức MathType (và công thức Word) trong phạm vi đã chọn theo kiểu chữ và cỡ chữ ở trên.',
@@ -212,16 +236,19 @@ const CONV_HINTS = {
   'word:mathtype': 'Công thức Word được chuyển thành đối tượng MathType mới (máy không cần cài MathType để xem; sửa bằng MathType khi có).',
 };
 // valid targets for each source: LaTeX -> Word/MathType, Word -> LaTeX/MathType, MathType -> anything
-const DST_FOR = { markdown: ['mathtype', 'word'], latex: ['mathtype', 'word'], word: ['mathtype', 'latex'], mathtype: ['mathtype', 'latex', 'word'] };
+const DST_FOR = { tikz: ['figure', 'png'], markdown: ['mathtype', 'word'], latex: ['mathtype', 'word'], word: ['mathtype', 'latex'], mathtype: ['mathtype', 'latex', 'word'] };
 function syncConvertUi() {
   const ok = DST_FOR[convSrc()] || [];
   const dstEl = $('conv-dst');
   [...dstEl.options].forEach((o) => { o.hidden = o.disabled = !ok.includes(o.value); });
   if (!ok.includes(dstEl.value)) dstEl.value = ok.includes('word') ? 'word' : ok[0];
   const s = convSrc(), d = convDst();
+  const wantTikz = s === 'tikz';
+  if (state.scanned && (state.scanned.mode === 'tikz') !== wantTikz) { state.scanned = null; $('eq-table').tBodies[0].innerHTML = ''; $('scan-summary').textContent = ''; }
   $('conv-hint').textContent = CONV_HINTS[s === d ? `same:${s}` : `${s}:${d}`] || '';
   $('mt-settings-convert').hidden = d !== 'mathtype';
-  $('opt-display').closest('label').hidden = d !== 'word' || s === 'markdown';
+  $('opt-mode').closest('label').hidden = wantTikz;
+  $('opt-display').closest('label').hidden = d !== 'word' || s === 'markdown' || wantTikz;
   syncConversionPlan();
 }
 function syncConversionPlan() {
@@ -232,13 +259,13 @@ function syncConversionPlan() {
   }
   const scope = document.querySelector('input[name=scope]:checked').value;
   const src = convSrc(), dst = convDst();
-  const count = s?.scope === scope ? (src === 'markdown' ? s.markdownBlocks : s.equations.filter(e => e.latex !== null &&
+  const count = s?.scope === scope ? (src === 'tikz' ? (s.tikz?.length || 0) : src === 'markdown' ? s.markdownBlocks : s.equations.filter(e => e.latex !== null &&
     (e.kind === SRC_KIND[src] || (dst === 'mathtype' && e.kind === 'native'))).length) : 0;
   $('conversion-plan').textContent = s?.scope === scope
-    ? `Theo lần quét: ${count} ${src === 'markdown' ? 'đoạn Markdown' : 'công thức có thể chuyển'} · ${scope === 'all' ? 'toàn bộ tài liệu' : 'đoạn đang chọn'}. Sẽ đọc lại trước khi ghi.`
+    ? `Theo lần quét: ${count} ${src === 'tikz' ? 'hình TikZ' : src === 'markdown' ? 'đoạn Markdown' : 'công thức có thể chuyển'} · ${scope === 'all' ? 'toàn bộ tài liệu' : 'đoạn đang chọn'}. Sẽ đọc lại trước khi ghi.`
     : 'Quét phạm vi đã chọn trước khi chuyển.';
   $('btn-convert').disabled = !s || s.scope !== scope || !count || !$('opt-backup').checked;
-  $('btn-convert').textContent = count ? `Chuyển ${count} ${src === 'markdown' ? 'đoạn Markdown' : 'công thức'}` : 'Chuyển công thức';
+  $('btn-convert').textContent = count ? `Chuyển ${count} ${src === 'tikz' ? 'hình TikZ' : src === 'markdown' ? 'đoạn Markdown' : 'công thức'}` : 'Chuyển';
   $('backup-hint').hidden = $('opt-backup').checked;
 }
 $('conv-src').addEventListener('change', syncConvertUi);
@@ -263,7 +290,7 @@ async function convert() {
   if (conversionJob) return;
   if (!$('opt-backup').checked) { $('convert-summary').innerHTML = '<span class="warn">Hãy lưu một bản sao tài liệu rồi tick ô xác nhận.</span>'; return; }
   const src = convSrc(), dst = convDst();
-  if (src === dst && src !== 'mathtype') { $('convert-summary').innerHTML = '<span class="warn">Nguồn và đích giống nhau: không có gì để chuyển.</span>'; return; }
+  if (src === dst && src !== 'mathtype' && src !== 'tikz') { $('convert-summary').innerHTML = '<span class="warn">Nguồn và đích giống nhau: không có gì để chuyển.</span>'; return; }
   const normalize = src === 'mathtype' && dst === 'mathtype';
   // kinds of equations that take part (MathType→MathType also redoes Word equations; ->MathType goes through Word equations)
   const kinds = new Set([SRC_KIND[src]]);
@@ -290,6 +317,38 @@ async function convert() {
   let phase = 'đọc tài liệu';
   try {
     const scopeName = document.querySelector('input[name=scope]:checked').value;
+    if (src === 'tikz') {
+      const sc = { kind: scopeName === 'selection' ? 'selection' : 'all' };
+      const { blocks } = findTikzBlocks(await io.readParagraphTexts(sc));
+      await checkpoint();
+      phase = 'dựng hình từ mã TikZ';
+      const items = [], failed = [];
+      for (const b of blocks) {
+        await checkpoint();
+        try {
+          const sm = /\\begin\{tikzpicture\}\s*\[[^\]]*?\bscale\s*=\s*([\d.]+)/.exec(b.code);
+          const t = tikzToScene(b.code, { scale: sm ? parseFloat(sm[1]) : 1, fs: 16 });
+          const scene = { width: t.width, height: t.height, items: t.items };
+          let pkg;
+          if (dst === 'png') {
+            const png = await svgToPngPx(sceneToSvg(scene), t.width, t.height, 3);
+            pkg = makePicturePackage(png, { widthPt: t.width * 0.75, heightPt: t.height * 0.75, alt: 'Hình TikZ', name: 'Hinh', center: true });
+          } else pkg = sceneToPackage(scene, { name: 'Hình TikZ', alt: 'Hình TikZ' });
+          items.push({ start: b.start, end: b.end, pkg });
+        } catch (e) { failed.push(`Đoạn ${b.start + 1}: ${e.message}`); }
+        progress(bar, items.length + failed.length, blocks.length * 2);
+      }
+      if (!items.length) { $('convert-summary').innerHTML = `Không có hình nào chuyển được.` + (failed.length ? `<ul>${failed.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''); return; }
+      phase = 'ghi công thức vào Word';
+      $('convert-summary').textContent = `Đang chèn ${items.length} hình…`;
+      await io.replaceParagraphRanges(sc, items, (d, t) => { written = d; progress(bar, blocks.length + d, blocks.length * 2); }, { signal });
+      state.scanned = state.lastBackup = null;
+      $('btn-restore').disabled = true;
+      $('eq-table').tBodies[0].innerHTML = '';
+      $('convert-summary').innerHTML = `<p><b class="ok">Đã chuyển ${items.length}</b> hình TikZ thành ${dst === 'png' ? 'ảnh PNG' : 'hình vẽ Word'}; <b class="${failed.length ? 'warn' : ''}">giữ nguyên ${failed.length}</b>.</p>` +
+        (failed.length ? `<ul>${failed.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : '') + '<p>Có thể dùng Hoàn tác (Ctrl/Cmd+Z) để khôi phục.</p>';
+      return;
+    }
     if (scopeName === 'all' || src === 'markdown') {
       const readStart = Date.now();
       const original = await (scopeName === 'selection' ? io.readSelection({ wholeParagraphs: true }) : io.readBody());
